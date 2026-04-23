@@ -12,9 +12,11 @@ async function main() {
 
 	const parsed = (await resp.json()) as Json;
 
-	generateTypescript(parsed);
-	generateRust(parsed);
-	generateGo(parsed);
+	await Promise.all([
+		generateTypescript(parsed),
+		generateRust(parsed),
+		generateGo(parsed),
+	]);
 }
 
 await main();

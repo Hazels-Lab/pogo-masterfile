@@ -1,40 +1,36 @@
 import * as path from "node:path";
-import type { GameMasterEntryRaw, Json } from "./types";
+import type { GeneratorCliConfig } from "./codegen-core";
+import {
+	createNamedShapeRenderContext,
+	createShapeKey,
+	createUniqueName,
+	dedupeByKey,
+	filterGameMasterEntries,
+	inferObjectShapeProperties,
+	mergeObjectShapeProperties,
+	parseGeneratorCliArgs,
+	summarizeTemplateFilters,
+} from "./codegen-core";
+import type {
+	BaseGeneratorCliOptions,
+	GameMasterEntryRaw,
+	Json,
+	NamedShapeRenderContext,
+	ShapeProperty,
+} from "./types";
 
-// Usage examples:
-//   tsx generate-game-master-types.ts --input ./GAME_MASTER.json --output ./GAME_MASTER.generated.ts --all
-//   tsx generate-game-master-types.ts --input ./GAME_MASTER.json --output ./avatar.types.ts --prefix AVATAR_
-//   tsx generate-game-master-types.ts --input ./GAME_MASTER.json --output ./mixed.types.ts --prefix AVATAR_ --prefix AR_
-//   tsx generate-game-master-types.ts --input ./GAME_MASTER.json --output ./gates.types.ts --match FEATURE_GATE
-//
-// Notes:
-// - --all includes every templateId in the file.
-// - --prefix X includes templateIds that start with X. Can be repeated.
-// - --match X includes templateIds that contain X. Can be repeated.
-// - If no filter flags are provided, the script defaults to --all.
-
- type Shape =
+type Shape =
 	| { kind: "null" }
 	| { kind: "boolean" }
 	| { kind: "number" }
 	| { kind: "string" }
 	| { kind: "array"; element: Shape }
-	| { kind: "object"; props: Map<string, { shape: Shape; optional: boolean }> }
+	| { kind: "object"; props: Map<string, ShapeProperty<Shape>> }
 	| { kind: "union"; variants: Shape[] };
 
-interface CliOptions {
-	inputPath: string;
-	outputPath: string;
-	includeAll: boolean;
-	prefixes: string[];
-	matches: string[];
-}
+interface CliOptions extends BaseGeneratorCliOptions {}
 
-interface RenderContext {
-	declarations: string[];
-	seenNames: Set<string>;
-	emittedShapes: Map<string, string>;
-}
+type RenderContext = NamedShapeRenderContext;
 
 const RESERVED = new Set([
 	"string",
@@ -60,113 +56,36 @@ const RESERVED = new Set([
 	"await",
 ]);
 
-function parseArgs(argv: string[]): CliOptions {
-	let inputPath = path.resolve("GAME_MASTER.json");
-	let outputPath = path.resolve(
-		process.cwd(),
-		"./packages/typescript/index.ts",
-	);
-	let includeAll = false;
-	const prefixes: string[] = [];
-	const matches: string[] = [];
+const TYPESCRIPT_CLI_CONFIG = {
+	description: "Generate TypeScript types from a GAME_MASTER.json file.",
+	examples: [
+		"tsx generate-game-master-types.ts --input ./GAME_MASTER.json --output ./all.types.ts --all",
+		"tsx generate-game-master-types.ts --input ./GAME_MASTER.json --output ./avatar.types.ts --prefix AVATAR_",
+		"tsx generate-game-master-types.ts --input ./GAME_MASTER.json --output ./filtered.types.ts --prefix AVATAR_ --match FEATURE_GATE",
+	],
+	defaults: {
+		inputPath: path.resolve("GAME_MASTER.json"),
+		outputPath: path.resolve(process.cwd(), "./packages/typescript/index.ts"),
+		includeAll: false,
+		prefixes: [],
+		matches: [],
+	},
+} satisfies GeneratorCliConfig<CliOptions>;
 
-	for (let i = 0; i < argv.length; i += 1) {
-		const arg = argv[i];
-
-		switch (arg) {
-			case "--input":
-			case "-i": {
-				const value = argv[++i];
-				if (!value) throw new Error("Missing value for --input");
-				inputPath = path.resolve(value);
-				break;
-			}
-			case "--output":
-			case "-o": {
-				const value = argv[++i];
-				if (!value) throw new Error("Missing value for --output");
-				outputPath = path.resolve(value);
-				break;
-			}
-			case "--all":
-				includeAll = true;
-				break;
-			case "--prefix": {
-				const value = argv[++i];
-				if (!value) throw new Error("Missing value for --prefix");
-				prefixes.push(value);
-				break;
-			}
-			case "--match": {
-				const value = argv[++i];
-				if (!value) throw new Error("Missing value for --match");
-				matches.push(value);
-				break;
-			}
-			case "--help":
-			case "-h":
-				printHelpAndExit();
-				break;
-			default:
-				throw new Error(`Unknown argument: ${arg}`);
-		}
-	}
-
-	if (!includeAll && prefixes.length === 0 && matches.length === 0) {
-		includeAll = true;
-	}
-
-	return {
-		inputPath,
-		outputPath,
-		includeAll,
-		prefixes,
-		matches,
-	};
+export function parseTypescriptArgs(argv: string[]): CliOptions {
+	return parseGeneratorCliArgs(argv, TYPESCRIPT_CLI_CONFIG);
 }
 
-function printHelpAndExit(): never {
-	const help = `
-Generate TypeScript types from a GAME_MASTER.json file.
-
-Options:
-  --input,  -i <path>   Path to GAME_MASTER.json
-  --output, -o <path>   Path to generated .ts file
-  --all                 Include all templateIds
-  --prefix <value>      Include templateIds starting with the given prefix (repeatable)
-  --match <value>       Include templateIds containing the given substring (repeatable)
-  --help,   -h          Show this help
-
-Examples:
-  tsx generate-game-master-types.ts --input ./GAME_MASTER.json --output ./all.types.ts --all
-  tsx generate-game-master-types.ts --input ./GAME_MASTER.json --output ./avatar.types.ts --prefix AVATAR_
-  tsx generate-game-master-types.ts --input ./GAME_MASTER.json --output ./filtered.types.ts --prefix AVATAR_ --match FEATURE_GATE
-`.trim();
-
-	console.log(help);
-	process.exit(0);
+function isObjectShape(
+	shape: Shape,
+): shape is Extract<Shape, { kind: "object" }> {
+	return shape.kind === "object";
 }
 
-function isObject(value: Json): value is { [key: string]: Json } {
-	return typeof value === "object" && value !== null && !Array.isArray(value);
-}
-
-function stableStringify(value: unknown): string {
-	if (value === null || typeof value !== "object") {
-		return JSON.stringify(value);
-	}
-
-	if (Array.isArray(value)) {
-		return `[${value.map(stableStringify).join(",")}]`;
-	}
-
-	const entries = Object.entries(value as Record<string, unknown>).sort(
-		([a], [b]) => a.localeCompare(b),
-	);
-
-	return `{${entries
-		.map(([key, child]) => `${JSON.stringify(key)}:${stableStringify(child)}`)
-		.join(",")}}`;
+function isUnionShape(
+	shape: Shape,
+): shape is Extract<Shape, { kind: "union" }> {
+	return shape.kind === "union";
 }
 
 function serializeShape(shape: Shape): unknown {
@@ -183,13 +102,17 @@ function serializeShape(shape: Shape): unknown {
 				kind: "union",
 				variants: shape.variants
 					.map(serializeShape)
-					.sort((a, b) => stableStringify(a).localeCompare(stableStringify(b))),
+					.sort((left, right) =>
+						createShapeKey(left, (value) => value).localeCompare(
+							createShapeKey(right, (value) => value),
+						),
+					),
 			};
 		case "object":
 			return {
 				kind: "object",
 				props: [...shape.props.entries()]
-					.sort(([a], [b]) => a.localeCompare(b))
+					.sort(([left], [right]) => left.localeCompare(right))
 					.map(([key, value]) => [
 						key,
 						{ optional: value.optional, shape: serializeShape(value.shape) },
@@ -199,22 +122,29 @@ function serializeShape(shape: Shape): unknown {
 }
 
 function shapeKey(shape: Shape): string {
-	return stableStringify(serializeShape(shape));
+	return createShapeKey(shape, serializeShape);
 }
 
 function dedupeShapes(shapes: Shape[]): Shape[] {
-	const seen = new Map<string, Shape>();
-	for (const shape of shapes) {
-		seen.set(shapeKey(shape), shape);
-	}
-	return [...seen.values()];
+	return dedupeByKey(shapes, shapeKey);
 }
 
 function inferShape(value: Json): Shape {
-	if (value === null) return { kind: "null" };
-	if (typeof value === "boolean") return { kind: "boolean" };
-	if (typeof value === "number") return { kind: "number" };
-	if (typeof value === "string") return { kind: "string" };
+	if (value === null) {
+		return { kind: "null" };
+	}
+
+	if (typeof value === "boolean") {
+		return { kind: "boolean" };
+	}
+
+	if (typeof value === "number") {
+		return { kind: "number" };
+	}
+
+	if (typeof value === "string") {
+		return { kind: "string" };
+	}
 
 	if (Array.isArray(value)) {
 		if (value.length === 0) {
@@ -225,63 +155,49 @@ function inferShape(value: Json): Shape {
 		return { kind: "array", element: mergedElement };
 	}
 
-	const props = new Map<string, { shape: Shape; optional: boolean }>();
-	for (const [key, child] of Object.entries(value)) {
-		props.set(key, { shape: inferShape(child), optional: false });
-	}
-	return { kind: "object", props };
+	return {
+		kind: "object",
+		props: inferObjectShapeProperties(value, inferShape),
+	};
 }
 
-function mergeShapes(a: Shape, b: Shape): Shape {
-	if (shapeKey(a) === shapeKey(b)) {
-		return a;
+function mergeShapes(left: Shape, right: Shape): Shape {
+	if (shapeKey(left) === shapeKey(right)) {
+		return left;
 	}
 
-	if (a.kind === "union") {
+	if (isUnionShape(left)) {
 		return {
 			kind: "union",
 			variants: dedupeShapes([
-				...a.variants,
-				...(b.kind === "union" ? b.variants : [b]),
+				...left.variants,
+				...(isUnionShape(right) ? right.variants : [right]),
 			]),
 		};
 	}
 
-	if (b.kind === "union") {
+	if (isUnionShape(right)) {
 		return {
 			kind: "union",
-			variants: dedupeShapes([a, ...b.variants]),
+			variants: dedupeShapes([left, ...right.variants]),
 		};
 	}
 
-	if (a.kind === "object" && b.kind === "object") {
-		const keys = new Set([...a.props.keys(), ...b.props.keys()]);
-		const props = new Map<string, { shape: Shape; optional: boolean }>();
-
-		for (const key of keys) {
-			const left = a.props.get(key);
-			const right = b.props.get(key);
-
-			if (left && right) {
-				props.set(key, {
-					shape: mergeShapes(left.shape, right.shape),
-					optional: left.optional || right.optional,
-				});
-			} else if (left) {
-				props.set(key, { shape: left.shape, optional: true });
-			} else if (right) {
-				props.set(key, { shape: right.shape, optional: true });
-			}
-		}
-
-		return { kind: "object", props };
+	if (isObjectShape(left) && isObjectShape(right)) {
+		return {
+			kind: "object",
+			props: mergeObjectShapeProperties(left.props, right.props, mergeShapes),
+		};
 	}
 
-	if (a.kind === "array" && b.kind === "array") {
-		return { kind: "array", element: mergeShapes(a.element, b.element) };
+	if (left.kind === "array" && right.kind === "array") {
+		return {
+			kind: "array",
+			element: mergeShapes(left.element, right.element),
+		};
 	}
 
-	return { kind: "union", variants: dedupeShapes([a, b]) };
+	return { kind: "union", variants: dedupeShapes([left, right]) };
 }
 
 function sanitizeIdentifier(input: string): string {
@@ -305,16 +221,7 @@ function quoteProp(key: string): string {
 }
 
 function uniqueName(base: string, ctx: RenderContext): string {
-	let name = base;
-	let counter = 2;
-
-	while (ctx.seenNames.has(name)) {
-		name = `${base}${counter}`;
-		counter += 1;
-	}
-
-	ctx.seenNames.add(name);
-	return name;
+	return createUniqueName(base, ctx.seenNames);
 }
 
 function renderShape(
@@ -324,6 +231,7 @@ function renderShape(
 ): string {
 	const key = shapeKey(shape);
 	const existing = ctx.emittedShapes.get(key);
+
 	if (existing) {
 		return existing;
 	}
@@ -337,12 +245,14 @@ function renderShape(
 			return "number";
 		case "string":
 			return "string";
-		case "union": {
-			if (shape.variants.length === 0) return "unknown";
+		case "union":
+			if (shape.variants.length === 0) {
+				return "unknown";
+			}
+
 			return dedupeShapes(shape.variants)
 				.map((variant) => renderShape(variant, suggestedName, ctx))
 				.join(" | ");
-		}
 		case "array": {
 			const elementType = renderShape(
 				shape.element,
@@ -356,7 +266,7 @@ function renderShape(
 			ctx.emittedShapes.set(key, interfaceName);
 
 			const body = [...shape.props.entries()]
-				.sort(([a], [b]) => a.localeCompare(b))
+				.sort(([left], [right]) => left.localeCompare(right))
 				.map(([key, value]) => {
 					const propType = renderShape(
 						value.shape,
@@ -374,54 +284,18 @@ function renderShape(
 	}
 }
 
-function shouldIncludeTemplateId(
-	templateId: string,
-	options: CliOptions,
-): boolean {
-	if (options.includeAll) {
-		return true;
-	}
-
-	if (options.prefixes.some((prefix) => templateId.startsWith(prefix))) {
-		return true;
-	}
-
-	if (options.matches.some((match) => templateId.includes(match))) {
-		return true;
-	}
-
-	return false;
-}
-
-function buildTypes(
+export function buildTypescriptOutput(
 	entries: GameMasterEntryRaw[],
 	options: CliOptions,
 ): string {
-	const filteredEntries = entries
-		.filter(
-			(entry) =>
-				entry &&
-				typeof entry.templateId === "string" &&
-				isObject(entry.data as Json),
-		)
-		.filter((entry) => shouldIncludeTemplateId(entry.templateId, options));
-
-	if (filteredEntries.length === 0) {
-		throw new Error("No matching templateIds found for the selected filters.");
-	}
-
-	const ctx: RenderContext = {
-		declarations: [],
-		seenNames: new Set(),
-		emittedShapes: new Map(),
-	};
-
+	const filteredEntries = filterGameMasterEntries(entries, options);
+	const ctx = createNamedShapeRenderContext();
 	const entryTypeNames: string[] = [];
 	const byTemplateIdLines: string[] = [];
 
 	for (const entry of filteredEntries) {
 		const interfaceBase = sanitizeIdentifier(entry.templateId);
-		const dataShape = inferShape(entry.data as Json);
+		const dataShape = inferShape(entry.data);
 		const dataTypeName = renderShape(dataShape, `${interfaceBase}Data`, ctx);
 		const entryTypeName = uniqueName(`${interfaceBase}Entry`, ctx);
 
@@ -430,7 +304,7 @@ function buildTypes(
 				`export interface ${entryTypeName} {`,
 				`  templateId: ${JSON.stringify(entry.templateId)};`,
 				`  data: ${dataTypeName};`,
-				`}`,
+				"}",
 			].join("\n"),
 		);
 
@@ -440,19 +314,11 @@ function buildTypes(
 		);
 	}
 
-	const filterSummary = [
-		options.includeAll ? "all" : null,
-		...options.prefixes.map((prefix) => `prefix:${prefix}`),
-		...options.matches.map((match) => `match:${match}`),
-	]
-		.filter(Boolean)
-		.join(", ");
-
 	return [
 		"/* eslint-disable */",
 		"// Auto-generated from GAME_MASTER.json",
 		"// Do not edit by hand.",
-		`// Filters: ${filterSummary}`,
+		`// Filters: ${summarizeTemplateFilters(options)}`,
 		`// Entries emitted: ${filteredEntries.length}`,
 		"",
 		...ctx.declarations,
@@ -467,18 +333,16 @@ function buildTypes(
 	].join("\n");
 }
 
-export function generateTypescript(parsed: Json): void {
-	const options = parseArgs(process.argv.slice(2));
-	// const raw = fs.readFileSync(options.inputPath, "utf8");
-	// const parsed = JSON.parse(raw) as Json;
+export async function generateTypescript(parsed: Json): Promise<void> {
+	const options = parseTypescriptArgs(process.argv.slice(2));
 
 	if (!Array.isArray(parsed)) {
 		throw new Error("Expected GAME_MASTER root to be an array.");
 	}
 
 	const entries = parsed as unknown as GameMasterEntryRaw[];
-	const output = buildTypes(entries, options);
-	Bun.write(options.outputPath, output);
+	const output = buildTypescriptOutput(entries, options);
+	await Bun.write(options.outputPath, output);
 
 	console.log(`Wrote ${options.outputPath}`);
 }
