@@ -2,19 +2,26 @@ import { spawnSync } from "node:child_process";
 import * as fs from "node:fs";
 import * as os from "node:os";
 import * as path from "node:path";
-import type { GeneratorCliConfig } from "./codegen-core";
+import type {
+	GeneratedFileBundle,
+	GeneratorCliConfig,
+	TemplateIdGroup,
+} from "./codegen-core";
 import {
 	createFlagOption,
+	createGeneratedSiblingFileName,
 	createNamedShapeRenderContext,
 	createShapeKey,
 	createUniqueName,
 	createValueOption,
 	dedupeByKey,
 	filterGameMasterEntries,
+	groupEntriesByTemplateIdFirstWord,
 	inferObjectShapeProperties,
 	mergeObjectShapeProperties,
 	parseGeneratorCliArgs,
 	toPascalCase,
+	writeGeneratedFileBundle,
 } from "./codegen-core";
 import type {
 	BaseGeneratorCliOptions,
@@ -44,6 +51,13 @@ interface CliOptions extends BaseGeneratorCliOptions {
 
 interface RenderContext extends NamedShapeRenderContext {
 	options: CliOptions;
+}
+
+interface GoGroupModuleOutput {
+	fileName: string;
+	content: string;
+	markerLines: string[];
+	decodeCases: string[];
 }
 
 const GO_RESERVED = new Set([
@@ -336,7 +350,7 @@ function uniqueName(base: string, ctx: RenderContext): string {
 function pointerIfAppropriate(typeName: string): string {
 	if (
 		typeName.startsWith("[]") ||
-		typeName === "json.RawMessage" ||
+		typeName === "MasterfileRawData" ||
 		typeName.startsWith("map[") ||
 		typeName.startsWith("*")
 	) {
@@ -354,7 +368,7 @@ function goTypeForUnion(
 	const variants = dedupeShapes(shape.variants);
 
 	if (variants.length === 0) {
-		return "json.RawMessage";
+		return "MasterfileRawData";
 	}
 
 	const nonNull = variants.filter(
@@ -371,7 +385,7 @@ function goTypeForUnion(
 	const kinds = new Set(nonNull.map((variant) => variant.kind));
 	if (kinds.size === 1 && first) {
 		if (first.kind === "object" || first.kind === "array") {
-			return "json.RawMessage";
+			return "MasterfileRawData";
 		}
 
 		if (first.kind === "number") {
@@ -393,7 +407,7 @@ function goTypeForUnion(
 		return renderShape(first, suggestedName, ctx);
 	}
 
-	return "json.RawMessage";
+	return "MasterfileRawData";
 }
 
 function renderShape(
@@ -410,7 +424,7 @@ function renderShape(
 
 	switch (shape.kind) {
 		case "null":
-			return "json.RawMessage";
+			return "MasterfileRawData";
 		case "boolean":
 			return "bool";
 		case "number":
@@ -462,14 +476,22 @@ export function buildGoOutput(
 	entries: GameMasterEntryRaw[],
 	options: CliOptions,
 ): string {
-	const filteredEntries = filterGameMasterEntries(entries, options);
+	return buildGoFiles(entries, options).barrelContent;
+}
+
+function buildGoGroupModule(
+	group: TemplateIdGroup,
+	options: CliOptions,
+	seenNames: Set<string>,
+): GoGroupModuleOutput {
 	const ctx: RenderContext = {
 		...createNamedShapeRenderContext(),
+		seenNames,
 		options,
 	};
 	const dataTypeNames: Array<{ templateId: string; typeName: string }> = [];
 
-	for (const entry of filteredEntries) {
+	for (const entry of group.entries) {
 		const typeBase = `${toPascalCase(entry.templateId)}Data`;
 		const dataShape = inferShape(entry.data, options);
 		const dataTypeName = renderShape(dataShape, typeBase, ctx);
@@ -483,58 +505,97 @@ export function buildGoOutput(
 	const uniqueDataTypeNames = [
 		...new Set(dataTypeNames.map(({ typeName }) => typeName)),
 	];
-	const markerLines = uniqueDataTypeNames.map(
-		(typeName) =>
-			`func (${receiverName(typeName)} ${typeName}) isGameMasterEntryData() {}`,
-	);
-	const decodeCases = dataTypeNames.map(({ templateId, typeName }) =>
-		[
-			`\tcase ${JSON.stringify(templateId)}:`,
-			`\t\tvar v ${typeName}`,
-			`\t\tif err := json.Unmarshal(e.Data, &v); err != nil {`,
-			"\t\t\treturn nil, err",
-			"\t\t}",
-			"\t\treturn v, nil",
+
+	return {
+		fileName: createGeneratedSiblingFileName(options.outputPath, group.key),
+		content: [
+			"// Auto-generated from GAME_MASTER.json",
+			"// Do not edit by hand.",
+			`// Group: ${group.key}`,
+			`// Entries emitted: ${group.entries.length}`,
+			`// Integer strategy: ${options.integerStrategy}`,
+			"",
+			`package ${options.packageName}`,
+			"",
+			...ctx.declarations,
+			"",
 		].join("\n"),
+		markerLines: uniqueDataTypeNames.map(
+			(typeName) =>
+				`func (${receiverName(typeName)} ${typeName}) isMasterfileEntryData() {}`,
+		),
+		decodeCases: dataTypeNames.map(({ templateId, typeName }) =>
+			[
+				`\tcase ${JSON.stringify(templateId)}:`,
+				`\t\tvar v ${typeName}`,
+				`\t\tif err := json.Unmarshal(e.Data, &v); err != nil {`,
+				"\t\t\treturn nil, err",
+				"\t\t}",
+				"\t\treturn v, nil",
+			].join("\n"),
+		),
+	};
+}
+
+export function buildGoFiles(
+	entries: GameMasterEntryRaw[],
+	options: CliOptions,
+): GeneratedFileBundle {
+	const filteredEntries = filterGameMasterEntries(entries, options);
+	const groups = groupEntriesByTemplateIdFirstWord(filteredEntries);
+	const seenNames = new Set<string>();
+	const modules = groups.map((group) =>
+		buildGoGroupModule(group, options, seenNames),
 	);
 
-	return [
-		"// Auto-generated from GAME_MASTER.json",
-		"// Do not edit by hand.",
-		`// Entries emitted: ${filteredEntries.length}`,
-		`// Integer strategy: ${options.integerStrategy}`,
-		"",
-		`package ${options.packageName}`,
-		"",
-		"import (",
-		'\t"encoding/json"',
-		'\t"fmt"',
-		")",
-		"",
-		...ctx.declarations,
-		"",
-		"type GameMasterEntryData interface {",
-		"\tisGameMasterEntryData()",
-		"}",
-		"",
-		...markerLines,
-		"",
-		"type GameMasterEntry struct {",
-		'\tTemplateID string          `json:"templateId"`',
-		'\tData       json.RawMessage `json:"data"`',
-		"}",
-		"",
-		"type GameMaster []GameMasterEntry",
-		"",
-		"func (e GameMasterEntry) DecodeData() (GameMasterEntryData, error) {",
-		"\tswitch e.TemplateID {",
-		...decodeCases,
-		"\tdefault:",
-		'\t\treturn nil, fmt.Errorf("unknown templateId: %s", e.TemplateID)',
-		"\t}",
-		"}",
-		"",
-	].join("\n");
+	return {
+		barrelContent: [
+			"// Auto-generated from GAME_MASTER.json",
+			"// Do not edit by hand.",
+			`// Entries emitted: ${filteredEntries.length}`,
+			`// Groups emitted: ${groups.length}`,
+			`// Integer strategy: ${options.integerStrategy}`,
+			"",
+			`package ${options.packageName}`,
+			"",
+			"import (",
+			'\t"encoding/json"',
+			'\t"fmt"',
+			")",
+			"",
+			"type MasterfileRawData = json.RawMessage",
+			"",
+			"type MasterfileEntryData interface {",
+			"\tisMasterfileEntryData()",
+			"}",
+			"",
+			"type GameMasterEntryData = MasterfileEntryData",
+			"",
+			...modules.flatMap((module) => module.markerLines),
+			"",
+			"type MasterfileEntry struct {",
+			'\tTemplateID string          `json:"templateId"`',
+			'\tData       MasterfileRawData `json:"data"`',
+			"}",
+			"",
+			"type GameMasterEntry = MasterfileEntry",
+			"type Masterfile []MasterfileEntry",
+			"type GameMaster = Masterfile",
+			"",
+			"func (e MasterfileEntry) DecodeData() (MasterfileEntryData, error) {",
+			"\tswitch e.TemplateID {",
+			...modules.flatMap((module) => module.decodeCases),
+			"\tdefault:",
+			'\t\treturn nil, fmt.Errorf("unknown templateId: %s", e.TemplateID)',
+			"\t}",
+			"}",
+			"",
+		].join("\n"),
+		files: modules.map((module) => ({
+			fileName: module.fileName,
+			content: module.content,
+		})),
+	};
 }
 
 function receiverName(typeName: string): string {
@@ -542,7 +603,11 @@ function receiverName(typeName: string): string {
 	return /^[a-z]$/.test(first) ? first : "x";
 }
 
-function validateGoOutput(outputPath: string, packageName: string): void {
+function validateGoOutput(
+	outputPath: string,
+	packageName: string,
+	bundle: GeneratedFileBundle,
+): void {
 	const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "gm-go-"));
 	const goModPath = path.join(tempDir, "go.mod");
 	const sourcePath = path.join(tempDir, path.basename(outputPath));
@@ -552,7 +617,10 @@ function validateGoOutput(outputPath: string, packageName: string): void {
 		`module example.com/${packageName}\n\ngo 1.22\n`,
 		"utf8",
 	);
-	fs.copyFileSync(outputPath, sourcePath);
+	fs.writeFileSync(sourcePath, bundle.barrelContent, "utf8");
+	for (const file of bundle.files) {
+		fs.writeFileSync(path.join(tempDir, file.fileName), file.content, "utf8");
+	}
 
 	const formatResult = spawnSync("gofmt", ["-w", sourcePath], {
 		cwd: tempDir,
@@ -585,14 +653,19 @@ export async function generateGo(parsed: Json): Promise<void> {
 	}
 
 	const entries = parsed as unknown as GameMasterEntryRaw[];
-	const output = buildGoOutput(entries, options);
-	await Bun.write(options.outputPath, output);
+	const bundle = buildGoFiles(entries, options);
+	const writtenPaths = await writeGeneratedFileBundle(
+		options.outputPath,
+		bundle,
+	);
 
 	if (options.validate) {
-		validateGoOutput(options.outputPath, options.packageName);
+		validateGoOutput(options.outputPath, options.packageName, bundle);
 	}
 
-	console.log(`Wrote ${options.outputPath}`);
+	console.log(
+		`Wrote ${options.outputPath} and ${writtenPaths.length - 1} grouped Go files`,
+	);
 	if (options.validate) {
 		console.log("Validated with gofmt and go build");
 	}

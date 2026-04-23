@@ -2,20 +2,27 @@ import { spawnSync } from "node:child_process";
 import * as fs from "node:fs";
 import * as os from "node:os";
 import * as path from "node:path";
-import type { GeneratorCliConfig } from "./codegen-core";
+import type {
+	GeneratedFileBundle,
+	GeneratorCliConfig,
+	TemplateIdGroup,
+} from "./codegen-core";
 import {
 	createFlagOption,
+	createGeneratedSiblingFileName,
 	createNamedShapeRenderContext,
 	createShapeKey,
 	createUniqueName,
 	createValueOption,
 	dedupeByKey,
 	filterGameMasterEntries,
+	groupEntriesByTemplateIdFirstWord,
 	inferObjectShapeProperties,
 	mergeObjectShapeProperties,
 	parseGeneratorCliArgs,
 	summarizeTemplateFilters,
 	toPascalCase,
+	writeGeneratedFileBundle,
 } from "./codegen-core";
 import type {
 	BaseGeneratorCliOptions,
@@ -45,6 +52,13 @@ interface CliOptions extends BaseGeneratorCliOptions {
 
 interface RenderContext extends NamedShapeRenderContext {
 	options: CliOptions;
+}
+
+interface RustGroupModuleOutput {
+	fileName: string;
+	moduleName: string;
+	content: string;
+	enumVariants: string[];
 }
 
 const RUST_RESERVED = new Set([
@@ -98,7 +112,7 @@ const RUST_CLI_CONFIG = {
 	],
 	defaults: {
 		inputPath: path.resolve("GAME_MASTER.json"),
-		outputPath: path.resolve(process.cwd(), "./packages/rust/lib.rs"),
+		outputPath: path.resolve(process.cwd(), "./packages/rust/src/lib.rs"),
 		includeAll: false,
 		prefixes: [],
 		matches: [],
@@ -480,14 +494,26 @@ export function buildRustOutput(
 	entries: GameMasterEntryRaw[],
 	options: CliOptions,
 ): string {
-	const filteredEntries = filterGameMasterEntries(entries, options);
+	return buildRustFiles(entries, options).barrelContent;
+}
+
+function toRustModuleName(groupKey: string): string {
+	return `generated_${groupKey.replace(/[^a-z0-9]+/g, "_")}`;
+}
+
+function buildRustGroupModule(
+	group: TemplateIdGroup,
+	options: CliOptions,
+	seenNames: Set<string>,
+): RustGroupModuleOutput {
 	const ctx: RenderContext = {
 		...createNamedShapeRenderContext(),
+		seenNames,
 		options,
 	};
 	const enumVariants: string[] = [];
 
-	for (const entry of filteredEntries) {
+	for (const entry of group.entries) {
 		const variantBase = toPascalCase(entry.templateId);
 		const dataShape = inferShape(entry.data, options);
 		const dataTypeName = renderShape(dataShape, `${variantBase}Data`, ctx);
@@ -501,30 +527,77 @@ export function buildRustOutput(
 		);
 	}
 
-	return [
-		"// Auto-generated from GAME_MASTER.json",
-		"// Do not edit by hand.",
-		`// Filters: ${summarizeTemplateFilters(options)}`,
-		`// Entries emitted: ${filteredEntries.length}`,
-		`// Integer strategy: ${options.integerStrategy}`,
-		`// Derive Default: ${options.deriveDefault}`,
-		"",
-		"use serde::{Deserialize, Serialize};",
-		"",
-		...ctx.declarations,
-		"",
-		deriveLine(options),
-		'#[serde(tag = "templateId", content = "data")]',
-		"pub enum GameMasterEntry {",
-		...enumVariants,
-		"}",
-		"",
-		"pub type GameMaster = Vec<GameMasterEntry>;",
-		"",
-	].join("\n");
+	return {
+		fileName: createGeneratedSiblingFileName(options.outputPath, group.key),
+		moduleName: toRustModuleName(group.key),
+		content: [
+			"// Auto-generated from GAME_MASTER.json",
+			"// Do not edit by hand.",
+			`// Group: ${group.key}`,
+			`// Filters: ${summarizeTemplateFilters(options)}`,
+			`// Entries emitted: ${group.entries.length}`,
+			`// Integer strategy: ${options.integerStrategy}`,
+			`// Derive Default: ${options.deriveDefault}`,
+			"",
+			"use serde::{Deserialize, Serialize};",
+			"",
+			...ctx.declarations,
+			"",
+		].join("\n"),
+		enumVariants,
+	};
 }
 
-function validateRustOutput(outputPath: string): void {
+export function buildRustFiles(
+	entries: GameMasterEntryRaw[],
+	options: CliOptions,
+): GeneratedFileBundle {
+	const filteredEntries = filterGameMasterEntries(entries, options);
+	const groups = groupEntriesByTemplateIdFirstWord(filteredEntries);
+	const seenNames = new Set<string>();
+	const modules = groups.map((group) =>
+		buildRustGroupModule(group, options, seenNames),
+	);
+	const enumVariants = modules.flatMap((module) => module.enumVariants);
+
+	return {
+		barrelContent: [
+			"// Auto-generated from GAME_MASTER.json",
+			"// Do not edit by hand.",
+			`// Filters: ${summarizeTemplateFilters(options)}`,
+			`// Entries emitted: ${filteredEntries.length}`,
+			`// Groups emitted: ${groups.length}`,
+			`// Integer strategy: ${options.integerStrategy}`,
+			`// Derive Default: ${options.deriveDefault}`,
+			"",
+			"use serde::{Deserialize, Serialize};",
+			"",
+			...modules.flatMap((module) => [
+				`#[path = ${JSON.stringify(module.fileName)}]`,
+				`pub mod ${module.moduleName};`,
+				`pub use ${module.moduleName}::*;`,
+				"",
+			]),
+			"",
+			deriveLine(options),
+			'#[serde(tag = "templateId", content = "data")]',
+			"pub enum MasterfileEntry {",
+			...enumVariants,
+			"}",
+			"",
+			"pub type GameMasterEntry = MasterfileEntry;",
+			"pub type Masterfile = Vec<MasterfileEntry>;",
+			"pub type GameMaster = Masterfile;",
+			"",
+		].join("\n"),
+		files: modules.map((module) => ({
+			fileName: module.fileName,
+			content: module.content,
+		})),
+	};
+}
+
+function validateRustOutput(bundle: GeneratedFileBundle): void {
 	const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "gm-rs-"));
 	const cargoTomlPath = path.join(tempDir, "Cargo.toml");
 	const srcDir = path.join(tempDir, "src");
@@ -545,7 +618,10 @@ function validateRustOutput(outputPath: string): void {
 		].join("\n"),
 		"utf8",
 	);
-	fs.copyFileSync(outputPath, path.join(srcDir, "lib.rs"));
+	fs.writeFileSync(path.join(srcDir, "lib.rs"), bundle.barrelContent, "utf8");
+	for (const file of bundle.files) {
+		fs.writeFileSync(path.join(srcDir, file.fileName), file.content, "utf8");
+	}
 
 	const result = spawnSync("cargo", ["check", "--quiet"], {
 		cwd: tempDir,
@@ -567,14 +643,19 @@ export async function generateRust(parsed: Json): Promise<void> {
 	}
 
 	const entries = parsed as unknown as GameMasterEntryRaw[];
-	const output = buildRustOutput(entries, options);
-	await Bun.write(options.outputPath, output);
+	const bundle = buildRustFiles(entries, options);
+	const writtenPaths = await writeGeneratedFileBundle(
+		options.outputPath,
+		bundle,
+	);
 
 	if (options.validate) {
-		validateRustOutput(options.outputPath);
+		validateRustOutput(bundle);
 	}
 
-	console.log(`Wrote ${options.outputPath}`);
+	console.log(
+		`Wrote ${options.outputPath} and ${writtenPaths.length - 1} grouped Rust files`,
+	);
 	if (options.validate) {
 		console.log("Validated with cargo check");
 	}

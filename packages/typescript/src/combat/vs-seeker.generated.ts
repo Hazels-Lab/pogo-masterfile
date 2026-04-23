@@ -1,0 +1,367 @@
+/* eslint-disable */
+// Auto-generated from GAME_MASTER.json
+// Do not edit by hand.
+// Group: combat/vs-seeker
+// Filters: all
+// Entries emitted: 48
+
+export interface Vs_seeker_loot_per_win_settings_rank_10_freedatavsseekerlootrewarditemitem {
+  count: number;
+  stardust: boolean;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_10_freedatavsseekerlootrewarditem {
+  item: Vs_seeker_loot_per_win_settings_rank_10_freedatavsseekerlootrewarditemitem;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_10_freedatavsseekerloot {
+  rankLevel: number;
+  reward: (Vs_seeker_loot_per_win_settings_rank_10_freedatavsseekerlootrewarditem)[];
+}
+export interface Vs_seeker_loot_per_win_settings_rank_10_freedata {
+  templateId: string;
+  vsSeekerLoot: Vs_seeker_loot_per_win_settings_rank_10_freedatavsseekerloot;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_10_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_10_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_10_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_10_premiumdatavsseekerloot {
+  rankLevel: number;
+  reward: (Vs_seeker_loot_per_win_settings_rank_10_freedatavsseekerlootrewarditem)[];
+  rewardTrack: string;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_10_premiumdata {
+  templateId: string;
+  vsSeekerLoot: Vs_seeker_loot_per_win_settings_rank_10_premiumdatavsseekerloot;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_10_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_10_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_10_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_11_freedatavsseekerlootrewarditemitem {
+  count: number;
+  item?: string;
+  stardust?: boolean;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_11_freedatavsseekerlootrewarditem {
+  item?: Vs_seeker_loot_per_win_settings_rank_11_freedatavsseekerlootrewarditemitem;
+  itemRankingLootTableCount?: number;
+  pokemonReward?: boolean;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_11_freedatavsseekerloot {
+  rankLevel: number;
+  reward: (Vs_seeker_loot_per_win_settings_rank_11_freedatavsseekerlootrewarditem)[];
+}
+export interface Vs_seeker_loot_per_win_settings_rank_11_freedata {
+  templateId: string;
+  vsSeekerLoot: Vs_seeker_loot_per_win_settings_rank_11_freedatavsseekerloot;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_11_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_11_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_11_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_11_premiumdatavsseekerloot {
+  rankLevel: number;
+  reward: (Vs_seeker_loot_per_win_settings_rank_11_freedatavsseekerlootrewarditem)[];
+  rewardTrack: string;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_11_premiumdata {
+  templateId: string;
+  vsSeekerLoot: Vs_seeker_loot_per_win_settings_rank_11_premiumdatavsseekerloot;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_11_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_11_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_11_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_12_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_12_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_11_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_12_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_12_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_11_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_13_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_13_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_11_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_13_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_13_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_11_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_14_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_14_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_11_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_14_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_14_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_11_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_15_freedatavsseekerlootrewarditemitem {
+  count: number;
+  item: string;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_15_freedatavsseekerlootrewarditem {
+  item: Vs_seeker_loot_per_win_settings_rank_15_freedatavsseekerlootrewarditemitem;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_15_freedatavsseekerloot {
+  rankLevel: number;
+  reward: (Vs_seeker_loot_per_win_settings_rank_15_freedatavsseekerlootrewarditem)[];
+}
+export interface Vs_seeker_loot_per_win_settings_rank_15_freedata {
+  templateId: string;
+  vsSeekerLoot: Vs_seeker_loot_per_win_settings_rank_15_freedatavsseekerloot;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_15_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_15_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_15_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_15_premiumdatavsseekerloot {
+  rankLevel: number;
+  reward: (Vs_seeker_loot_per_win_settings_rank_15_freedatavsseekerlootrewarditem)[];
+  rewardTrack: string;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_15_premiumdata {
+  templateId: string;
+  vsSeekerLoot: Vs_seeker_loot_per_win_settings_rank_15_premiumdatavsseekerloot;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_15_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_15_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_15_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_16_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_16_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_11_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_16_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_16_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_11_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_17_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_17_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_11_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_17_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_17_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_11_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_18_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_18_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_11_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_18_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_18_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_11_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_19_freedatavsseekerlootrewarditem {
+  pokemonReward: boolean;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_19_freedatavsseekerloot {
+  rankLevel: number;
+  reward: (Vs_seeker_loot_per_win_settings_rank_19_freedatavsseekerlootrewarditem)[];
+}
+export interface Vs_seeker_loot_per_win_settings_rank_19_freedata {
+  templateId: string;
+  vsSeekerLoot: Vs_seeker_loot_per_win_settings_rank_19_freedatavsseekerloot;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_19_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_19_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_19_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_19_premiumdatavsseekerloot {
+  rankLevel: number;
+  reward: (Vs_seeker_loot_per_win_settings_rank_19_freedatavsseekerlootrewarditem)[];
+  rewardTrack: string;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_19_premiumdata {
+  templateId: string;
+  vsSeekerLoot: Vs_seeker_loot_per_win_settings_rank_19_premiumdatavsseekerloot;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_19_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_19_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_19_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_1_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_1_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_11_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_1_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_1_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_11_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_20_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_20_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_11_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_20_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_20_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_11_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_21_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_21_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_11_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_21_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_21_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_11_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_22_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_22_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_11_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_22_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_22_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_11_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_23_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_23_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_11_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_23_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_23_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_11_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_24_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_24_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_11_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_24_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_24_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_11_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_2_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_2_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_11_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_2_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_2_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_11_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_3_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_3_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_11_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_3_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_3_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_11_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_4_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_4_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_11_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_4_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_4_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_11_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_5_freedatavsseekerlootrewarditem {
+  itemRankingLootTableCount: number;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_5_freedatavsseekerloot {
+  rankLevel: number;
+  reward: (Vs_seeker_loot_per_win_settings_rank_5_freedatavsseekerlootrewarditem)[];
+}
+export interface Vs_seeker_loot_per_win_settings_rank_5_freedata {
+  templateId: string;
+  vsSeekerLoot: Vs_seeker_loot_per_win_settings_rank_5_freedatavsseekerloot;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_5_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_5_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_5_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_5_premiumdatavsseekerloot {
+  rankLevel: number;
+  reward: (Vs_seeker_loot_per_win_settings_rank_5_freedatavsseekerlootrewarditem)[];
+  rewardTrack: string;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_5_premiumdata {
+  templateId: string;
+  vsSeekerLoot: Vs_seeker_loot_per_win_settings_rank_5_premiumdatavsseekerloot;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_5_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_5_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_5_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_6_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_6_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_11_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_6_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_6_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_11_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_7_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_7_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_11_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_7_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_7_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_11_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_8_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_8_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_11_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_8_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_8_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_11_premiumdata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_9_freeEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_9_FREE";
+  data: Vs_seeker_loot_per_win_settings_rank_11_freedata;
+}
+export interface Vs_seeker_loot_per_win_settings_rank_9_premiumEntry {
+  templateId: "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_9_PREMIUM";
+  data: Vs_seeker_loot_per_win_settings_rank_11_premiumdata;
+}
+
+export interface CombatVsSeekerMasterfileByTemplateId {
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_10_FREE": Vs_seeker_loot_per_win_settings_rank_10_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_10_PREMIUM": Vs_seeker_loot_per_win_settings_rank_10_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_11_FREE": Vs_seeker_loot_per_win_settings_rank_11_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_11_PREMIUM": Vs_seeker_loot_per_win_settings_rank_11_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_12_FREE": Vs_seeker_loot_per_win_settings_rank_12_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_12_PREMIUM": Vs_seeker_loot_per_win_settings_rank_12_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_13_FREE": Vs_seeker_loot_per_win_settings_rank_13_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_13_PREMIUM": Vs_seeker_loot_per_win_settings_rank_13_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_14_FREE": Vs_seeker_loot_per_win_settings_rank_14_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_14_PREMIUM": Vs_seeker_loot_per_win_settings_rank_14_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_15_FREE": Vs_seeker_loot_per_win_settings_rank_15_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_15_PREMIUM": Vs_seeker_loot_per_win_settings_rank_15_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_16_FREE": Vs_seeker_loot_per_win_settings_rank_16_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_16_PREMIUM": Vs_seeker_loot_per_win_settings_rank_16_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_17_FREE": Vs_seeker_loot_per_win_settings_rank_17_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_17_PREMIUM": Vs_seeker_loot_per_win_settings_rank_17_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_18_FREE": Vs_seeker_loot_per_win_settings_rank_18_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_18_PREMIUM": Vs_seeker_loot_per_win_settings_rank_18_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_19_FREE": Vs_seeker_loot_per_win_settings_rank_19_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_19_PREMIUM": Vs_seeker_loot_per_win_settings_rank_19_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_1_FREE": Vs_seeker_loot_per_win_settings_rank_1_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_1_PREMIUM": Vs_seeker_loot_per_win_settings_rank_1_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_20_FREE": Vs_seeker_loot_per_win_settings_rank_20_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_20_PREMIUM": Vs_seeker_loot_per_win_settings_rank_20_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_21_FREE": Vs_seeker_loot_per_win_settings_rank_21_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_21_PREMIUM": Vs_seeker_loot_per_win_settings_rank_21_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_22_FREE": Vs_seeker_loot_per_win_settings_rank_22_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_22_PREMIUM": Vs_seeker_loot_per_win_settings_rank_22_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_23_FREE": Vs_seeker_loot_per_win_settings_rank_23_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_23_PREMIUM": Vs_seeker_loot_per_win_settings_rank_23_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_24_FREE": Vs_seeker_loot_per_win_settings_rank_24_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_24_PREMIUM": Vs_seeker_loot_per_win_settings_rank_24_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_2_FREE": Vs_seeker_loot_per_win_settings_rank_2_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_2_PREMIUM": Vs_seeker_loot_per_win_settings_rank_2_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_3_FREE": Vs_seeker_loot_per_win_settings_rank_3_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_3_PREMIUM": Vs_seeker_loot_per_win_settings_rank_3_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_4_FREE": Vs_seeker_loot_per_win_settings_rank_4_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_4_PREMIUM": Vs_seeker_loot_per_win_settings_rank_4_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_5_FREE": Vs_seeker_loot_per_win_settings_rank_5_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_5_PREMIUM": Vs_seeker_loot_per_win_settings_rank_5_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_6_FREE": Vs_seeker_loot_per_win_settings_rank_6_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_6_PREMIUM": Vs_seeker_loot_per_win_settings_rank_6_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_7_FREE": Vs_seeker_loot_per_win_settings_rank_7_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_7_PREMIUM": Vs_seeker_loot_per_win_settings_rank_7_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_8_FREE": Vs_seeker_loot_per_win_settings_rank_8_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_8_PREMIUM": Vs_seeker_loot_per_win_settings_rank_8_premiumEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_9_FREE": Vs_seeker_loot_per_win_settings_rank_9_freeEntry;
+  "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_9_PREMIUM": Vs_seeker_loot_per_win_settings_rank_9_premiumEntry;
+}
+
+export type CombatVsSeekerMasterfileEntry = Vs_seeker_loot_per_win_settings_rank_10_freeEntry | Vs_seeker_loot_per_win_settings_rank_10_premiumEntry | Vs_seeker_loot_per_win_settings_rank_11_freeEntry | Vs_seeker_loot_per_win_settings_rank_11_premiumEntry | Vs_seeker_loot_per_win_settings_rank_12_freeEntry | Vs_seeker_loot_per_win_settings_rank_12_premiumEntry | Vs_seeker_loot_per_win_settings_rank_13_freeEntry | Vs_seeker_loot_per_win_settings_rank_13_premiumEntry | Vs_seeker_loot_per_win_settings_rank_14_freeEntry | Vs_seeker_loot_per_win_settings_rank_14_premiumEntry | Vs_seeker_loot_per_win_settings_rank_15_freeEntry | Vs_seeker_loot_per_win_settings_rank_15_premiumEntry | Vs_seeker_loot_per_win_settings_rank_16_freeEntry | Vs_seeker_loot_per_win_settings_rank_16_premiumEntry | Vs_seeker_loot_per_win_settings_rank_17_freeEntry | Vs_seeker_loot_per_win_settings_rank_17_premiumEntry | Vs_seeker_loot_per_win_settings_rank_18_freeEntry | Vs_seeker_loot_per_win_settings_rank_18_premiumEntry | Vs_seeker_loot_per_win_settings_rank_19_freeEntry | Vs_seeker_loot_per_win_settings_rank_19_premiumEntry | Vs_seeker_loot_per_win_settings_rank_1_freeEntry | Vs_seeker_loot_per_win_settings_rank_1_premiumEntry | Vs_seeker_loot_per_win_settings_rank_20_freeEntry | Vs_seeker_loot_per_win_settings_rank_20_premiumEntry | Vs_seeker_loot_per_win_settings_rank_21_freeEntry | Vs_seeker_loot_per_win_settings_rank_21_premiumEntry | Vs_seeker_loot_per_win_settings_rank_22_freeEntry | Vs_seeker_loot_per_win_settings_rank_22_premiumEntry | Vs_seeker_loot_per_win_settings_rank_23_freeEntry | Vs_seeker_loot_per_win_settings_rank_23_premiumEntry | Vs_seeker_loot_per_win_settings_rank_24_freeEntry | Vs_seeker_loot_per_win_settings_rank_24_premiumEntry | Vs_seeker_loot_per_win_settings_rank_2_freeEntry | Vs_seeker_loot_per_win_settings_rank_2_premiumEntry | Vs_seeker_loot_per_win_settings_rank_3_freeEntry | Vs_seeker_loot_per_win_settings_rank_3_premiumEntry | Vs_seeker_loot_per_win_settings_rank_4_freeEntry | Vs_seeker_loot_per_win_settings_rank_4_premiumEntry | Vs_seeker_loot_per_win_settings_rank_5_freeEntry | Vs_seeker_loot_per_win_settings_rank_5_premiumEntry | Vs_seeker_loot_per_win_settings_rank_6_freeEntry | Vs_seeker_loot_per_win_settings_rank_6_premiumEntry | Vs_seeker_loot_per_win_settings_rank_7_freeEntry | Vs_seeker_loot_per_win_settings_rank_7_premiumEntry | Vs_seeker_loot_per_win_settings_rank_8_freeEntry | Vs_seeker_loot_per_win_settings_rank_8_premiumEntry | Vs_seeker_loot_per_win_settings_rank_9_freeEntry | Vs_seeker_loot_per_win_settings_rank_9_premiumEntry;

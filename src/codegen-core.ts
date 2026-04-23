@@ -1,3 +1,4 @@
+import * as fs from "node:fs";
 import * as path from "node:path";
 import type {
 	BaseGeneratorCliOptions,
@@ -39,6 +40,22 @@ export interface GeneratorCliConfig<TOptions extends BaseGeneratorCliOptions> {
 	examples: string[];
 	defaults: TOptions;
 	extraOptions?: CliOptionDefinition<TOptions>[];
+}
+
+export interface GeneratedFile {
+	fileName: string;
+	content: string;
+}
+
+export interface GeneratedFileBundle {
+	barrelContent: string;
+	files: GeneratedFile[];
+}
+
+export interface TemplateIdGroup {
+	key: string;
+	typeName: string;
+	entries: GameMasterEntryRaw[];
 }
 
 export function createFlagOption<TOptions extends BaseGeneratorCliOptions>(
@@ -405,4 +422,128 @@ export function toPascalCase(input: string): string {
 		.replace(/^[^a-zA-Z]+/, "T");
 
 	return cleaned || "Anonymous";
+}
+
+export function extractTemplateIdFirstWord(templateId: string): string {
+	const firstWord = templateId.match(/[A-Za-z0-9]+/)?.[0];
+	return firstWord || "misc";
+}
+
+export function toGeneratedFileSegment(input: string): string {
+	const normalized = input
+		.toLowerCase()
+		.replace(/[^a-z0-9]+/g, "-")
+		.replace(/-+/g, "-")
+		.replace(/^-+|-+$/g, "");
+
+	return normalized || "misc";
+}
+
+export function groupEntriesByTemplateIdFirstWord(
+	entries: GameMasterEntryRaw[],
+): TemplateIdGroup[] {
+	const groups = new Map<string, TemplateIdGroup>();
+
+	for (const entry of entries) {
+		const firstWord = extractTemplateIdFirstWord(entry.templateId);
+		const key = toGeneratedFileSegment(firstWord);
+		const existing = groups.get(key);
+
+		if (existing) {
+			existing.entries.push(entry);
+			continue;
+		}
+
+		groups.set(key, {
+			key,
+			typeName: toPascalCase(firstWord),
+			entries: [entry],
+		});
+	}
+
+	return [...groups.values()];
+}
+
+export function createGeneratedSiblingFileName(
+	outputPath: string,
+	groupKey: string,
+): string {
+	const extension = path.extname(outputPath);
+	const stem = path.basename(outputPath, extension);
+	return `${stem}.${groupKey}.generated${extension}`;
+}
+
+export function isGeneratedSiblingFile(
+	outputPath: string,
+	fileName: string,
+): boolean {
+	const extension = path.extname(outputPath);
+	const stem = path.basename(outputPath, extension);
+
+	return (
+		fileName.startsWith(`${stem}.`) &&
+		fileName.endsWith(`.generated${extension}`)
+	);
+}
+
+async function listGeneratedFilesRecursive(
+	rootDir: string,
+	extension: string,
+	currentDir = rootDir,
+): Promise<string[]> {
+	const entries = await fs.promises.readdir(currentDir, {
+		withFileTypes: true,
+	});
+	const files: string[] = [];
+
+	for (const entry of entries) {
+		const entryPath = path.join(currentDir, entry.name);
+
+		if (entry.isDirectory()) {
+			files.push(
+				...(await listGeneratedFilesRecursive(rootDir, extension, entryPath)),
+			);
+			continue;
+		}
+
+		if (entry.isFile() && entry.name.endsWith(`.generated${extension}`)) {
+			files.push(path.relative(rootDir, entryPath));
+		}
+	}
+
+	return files;
+}
+
+export async function writeGeneratedFileBundle(
+	outputPath: string,
+	bundle: GeneratedFileBundle,
+): Promise<string[]> {
+	const outputDir = path.dirname(outputPath);
+	await fs.promises.mkdir(outputDir, { recursive: true });
+	const nextGeneratedFiles = new Set(bundle.files.map((file) => file.fileName));
+	const extension = path.extname(outputPath);
+	const existingGeneratedFiles = await listGeneratedFilesRecursive(
+		outputDir,
+		extension,
+	);
+
+	await Promise.all(
+		existingGeneratedFiles
+			.filter((fileName) => !nextGeneratedFiles.has(fileName))
+			.map((fileName) => fs.promises.unlink(path.join(outputDir, fileName))),
+	);
+
+	await Bun.write(outputPath, bundle.barrelContent);
+	await Promise.all(
+		bundle.files.map(async (file) => {
+			const filePath = path.join(outputDir, file.fileName);
+			await fs.promises.mkdir(path.dirname(filePath), { recursive: true });
+			await Bun.write(filePath, file.content);
+		}),
+	);
+
+	return [
+		outputPath,
+		...bundle.files.map((file) => path.join(outputDir, file.fileName)),
+	];
 }

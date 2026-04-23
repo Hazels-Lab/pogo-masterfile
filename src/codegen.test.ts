@@ -1,188 +1,204 @@
 import { describe, expect, test } from "bun:test";
 import { filterGameMasterEntries } from "./codegen-core";
-import { buildGoOutput, parseGoArgs } from "./go";
-import { buildRustOutput, parseRustArgs } from "./rust";
+import { parseGoArgs } from "./go";
+import { parseRustArgs } from "./rust";
 import type { GameMasterEntryRaw } from "./types";
-import { buildTypescriptOutput, parseTypescriptArgs } from "./typescript";
+import {
+	buildTypescriptFiles,
+	buildTypescriptOutput,
+	parseTypescriptArgs,
+} from "./typescript";
 
 const FIXTURE_ENTRIES: GameMasterEntryRaw[] = [
 	{
-		templateId: "AVATAR_POSE",
+		templateId: "V0002_POKEMON_IVYSAUR",
 		data: {
-			enabled: true,
-			items: [{ item: "hat" }, { item: "shirt", count: 2 }],
-			score: 1,
-			default: "x",
+			templateId: "V0002_POKEMON_IVYSAUR",
+			pokemonSettings: {
+				pokemonId: "IVYSAUR",
+				familyId: "FAMILY_BULBASAUR",
+				stats: {
+					baseAttack: 151,
+				},
+			},
+		},
+	},
+	{
+		templateId: "V0002_POKEMON_IVYSAUR_NORMAL",
+		data: {
+			templateId: "V0002_POKEMON_IVYSAUR_NORMAL",
+			pokemonSettings: {
+				pokemonId: "IVYSAUR",
+				familyId: "FAMILY_BULBASAUR",
+				form: "IVYSAUR_NORMAL",
+				stats: {
+					baseAttack: 151,
+				},
+			},
+		},
+	},
+	{
+		templateId: "EXTENDED_V0002_POKEMON_IVYSAUR",
+		data: {
+			pokemonExtendedSettings: {
+				uniqueId: "IVYSAUR",
+				sizeSettings: {
+					xxsLowerBound: 0.8,
+				},
+			},
+		},
+	},
+	{
+		templateId: "SPAWN_V0002_POKEMON_IVYSAUR",
+		data: {
+			genderSettings: {
+				pokemon: "IVYSAUR",
+				gender: {
+					malePercent: 0.875,
+					femalePercent: 0.125,
+				},
+			},
+		},
+	},
+	{
+		templateId: "V0001_FAMILY_BULBASAUR",
+		data: {
+			pokemonFamily: {
+				familyId: "FAMILY_BULBASAUR",
+			},
+		},
+	},
+	{
+		templateId: "POKEMON_TYPE_BUG",
+		data: {
+			typeEffective: {
+				attackScalar: [1],
+				attackType: "POKEMON_TYPE_BUG",
+			},
+		},
+	},
+	{
+		templateId: "POKEMON_SCALE_SETTINGS_BATTLE_POKEMON_SCALE",
+		data: {
+			pokemonScaleSettings: {
+				minHeight: 0.5,
+				maxHeight: 1.5,
+				pokemonScaleMode: "BATTLE",
+			},
+		},
+	},
+	{
+		templateId: "POKEMON_HOME_SETTINGS",
+		data: {
+			pokemonHomeSettings: {
+				playerMinLevel: 15,
+			},
+		},
+	},
+	{
+		templateId: "POKEMON_TAG_SETTINGS",
+		data: {
+			pokemonTagSettings: {
+				maxNumTagsAllowed: 100,
+				minPlayerLevelForPokemonTagging: 8,
+				colorBinding: [],
+			},
+		},
+	},
+	{
+		templateId: "POKEMON_UPGRADE_SETTINGS",
+		data: {
+			pokemonUpgrades: {
+				allowedLevelsAbovePlayer: 10,
+			},
+		},
+	},
+	{
+		templateId: "MOVE_VINE_WHIP_FAST",
+		data: {
+			moveSettings: {
+				power: 5,
+			},
+		},
+	},
+	{
+		templateId: "ITEM_POKE_BALL",
+		data: {
+			itemSettings: {
+				itemType: "ITEM_TYPE_POKE_BALL",
+			},
+		},
+	},
+	{
+		templateId: "AVATAR_TEST",
+		data: {
+			avatarCustomization: {
+				enabled: true,
+			},
 		},
 	},
 	{
 		templateId: "FEATURE_GATE_MAIN",
 		data: {
-			state: null,
-			values: [1, 2.5],
-		},
-	},
-	{
-		templateId: "AR_TEMPLATE",
-		data: {
-			flag: false,
+			featureGate: {
+				status: 1,
+			},
 		},
 	},
 ];
 
-const EXPECTED_TYPESCRIPT_OUTPUT = `/* eslint-disable */
+const EXPECTED_POKEMON_SETTINGS_GEN1_FILE = `/* eslint-disable */
 // Auto-generated from GAME_MASTER.json
 // Do not edit by hand.
-// Filters: prefix:AVATAR_, match:FEATURE_GATE
+// Group: pokemon/settings/gen1
+// Filters: all
 // Entries emitted: 2
 
-export interface Avatar_posedataitemsitem {
-  count?: number;
-  item: string;
+export interface V0002_pokemon_ivysaurdatapokemonsettingsstats {
+  baseAttack: number;
 }
-export interface Avatar_posedata {
-  "default": string;
-  enabled: boolean;
-  items: (Avatar_posedataitemsitem)[];
-  score: number;
+export interface V0002_pokemon_ivysaurdatapokemonsettings {
+  familyId: string;
+  pokemonId: string;
+  stats: V0002_pokemon_ivysaurdatapokemonsettingsstats;
 }
-export interface Avatar_poseEntry {
-  templateId: "AVATAR_POSE";
-  data: Avatar_posedata;
+export interface V0002_pokemon_ivysaurdata {
+  pokemonSettings: V0002_pokemon_ivysaurdatapokemonsettings;
+  templateId: string;
 }
-export interface Feature_gate_maindata {
-  state: null;
-  values: (number)[];
+export interface V0002_pokemon_ivysaurEntry {
+  templateId: "V0002_POKEMON_IVYSAUR";
+  data: V0002_pokemon_ivysaurdata;
 }
-export interface Feature_gate_mainEntry {
-  templateId: "FEATURE_GATE_MAIN";
-  data: Feature_gate_maindata;
+export interface V0002_pokemon_ivysaur_normaldatapokemonsettings {
+  familyId: string;
+  form: string;
+  pokemonId: string;
+  stats: V0002_pokemon_ivysaurdatapokemonsettingsstats;
 }
-
-export interface GameMasterByTemplateId {
-  "AVATAR_POSE": Avatar_poseEntry;
-  "FEATURE_GATE_MAIN": Feature_gate_mainEntry;
+export interface V0002_pokemon_ivysaur_normaldata {
+  pokemonSettings: V0002_pokemon_ivysaur_normaldatapokemonsettings;
+  templateId: string;
 }
-
-export type GameMasterEntry = Avatar_poseEntry | Feature_gate_mainEntry;
-export type GameMaster = GameMasterEntry[];
-`;
-
-const EXPECTED_GO_OUTPUT = `// Auto-generated from GAME_MASTER.json
-// Do not edit by hand.
-// Entries emitted: 3
-// Integer strategy: smart
-
-package pkgweirdname
-
-import (
-	"encoding/json"
-	"fmt"
-)
-
-type Avatarposedataitemsitem struct {
-	Count *uint64 \`json:"count,omitempty"\`
-	Item string \`json:"item"\`
-}
-type Avatarposedata struct {
-	DefaultField string \`json:"default"\`
-	Enabled bool \`json:"enabled"\`
-	Items []Avatarposedataitemsitem \`json:"items"\`
-	Score uint64 \`json:"score"\`
-}
-type Featuregatemaindata struct {
-	State json.RawMessage \`json:"state"\`
-	Values []float64 \`json:"values"\`
-}
-type Artemplatedata struct {
-	Flag bool \`json:"flag"\`
+export interface V0002_pokemon_ivysaur_normalEntry {
+  templateId: "V0002_POKEMON_IVYSAUR_NORMAL";
+  data: V0002_pokemon_ivysaur_normaldata;
 }
 
-type GameMasterEntryData interface {
-	isGameMasterEntryData()
+export interface PokemonSettingsGen1MasterfileByTemplateId {
+  "V0002_POKEMON_IVYSAUR": V0002_pokemon_ivysaurEntry;
+  "V0002_POKEMON_IVYSAUR_NORMAL": V0002_pokemon_ivysaur_normalEntry;
 }
 
-func (a Avatarposedata) isGameMasterEntryData() {}
-func (f Featuregatemaindata) isGameMasterEntryData() {}
-func (a Artemplatedata) isGameMasterEntryData() {}
-
-type GameMasterEntry struct {
-	TemplateID string          \`json:"templateId"\`
-	Data       json.RawMessage \`json:"data"\`
+export interface PokemonSettingsGen1ByDexId {
+  "0002": V0002_pokemon_ivysaurEntry | V0002_pokemon_ivysaur_normalEntry;
 }
 
-type GameMaster []GameMasterEntry
-
-func (e GameMasterEntry) DecodeData() (GameMasterEntryData, error) {
-	switch e.TemplateID {
-	case "AVATAR_POSE":
-		var v Avatarposedata
-		if err := json.Unmarshal(e.Data, &v); err != nil {
-			return nil, err
-		}
-		return v, nil
-	case "FEATURE_GATE_MAIN":
-		var v Featuregatemaindata
-		if err := json.Unmarshal(e.Data, &v); err != nil {
-			return nil, err
-		}
-		return v, nil
-	case "AR_TEMPLATE":
-		var v Artemplatedata
-		if err := json.Unmarshal(e.Data, &v); err != nil {
-			return nil, err
-		}
-		return v, nil
-	default:
-		return nil, fmt.Errorf("unknown templateId: %s", e.TemplateID)
-	}
-}
-`;
-
-const EXPECTED_RUST_OUTPUT = `// Auto-generated from GAME_MASTER.json
-// Do not edit by hand.
-// Filters: all
-// Entries emitted: 3
-// Integer strategy: smart
-// Derive Default: true
-
-use serde::{Deserialize, Serialize};
-
-#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, Default)]
-pub struct Avatarposedataitemsitem {
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub count: Option<u64>,
-    pub item: String,
-}
-#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, Default)]
-pub struct Avatarposedata {
-    pub default: String,
-    pub enabled: bool,
-    pub items: Vec<Avatarposedataitemsitem>,
-    pub score: u64,
-}
-#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, Default)]
-pub struct Featuregatemaindata {
-    pub state: Option<serde_json::Value>,
-    pub values: Vec<f64>,
-}
-#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, Default)]
-pub struct Artemplatedata {
-    pub flag: bool,
+export interface PokemonSettingsGen1ByPokemonId {
+  "IVYSAUR": V0002_pokemon_ivysaurEntry | V0002_pokemon_ivysaur_normalEntry;
 }
 
-#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, Default)]
-#[serde(tag = "templateId", content = "data")]
-pub enum GameMasterEntry {
-    #[serde(rename = "AVATAR_POSE")]
-    AvatarPose(Avatarposedata),
-    #[serde(rename = "FEATURE_GATE_MAIN")]
-    FeatureGateMain(Featuregatemaindata),
-    #[serde(rename = "AR_TEMPLATE")]
-    ArTemplate(Artemplatedata),
-}
-
-pub type GameMaster = Vec<GameMasterEntry>;
+export type PokemonSettingsGen1MasterfileEntry = V0002_pokemon_ivysaurEntry | V0002_pokemon_ivysaur_normalEntry;
 `;
 
 describe("codegen refactor parity", () => {
@@ -199,7 +215,7 @@ describe("codegen refactor parity", () => {
 			"--prefix",
 			"AVATAR_",
 			"--prefix",
-			"AR_",
+			"SPAWN_",
 			"--match",
 			"FEATURE_GATE",
 		]);
@@ -216,7 +232,7 @@ describe("codegen refactor parity", () => {
 		]);
 
 		expect(typescriptOptions.includeAll).toBe(false);
-		expect(typescriptOptions.prefixes).toEqual(["AVATAR_", "AR_"]);
+		expect(typescriptOptions.prefixes).toEqual(["AVATAR_", "SPAWN_"]);
 		expect(typescriptOptions.matches).toEqual(["FEATURE_GATE"]);
 		expect(goOptions.includeAll).toBe(true);
 		expect(goOptions.packageName).toBe("pkgweirdname");
@@ -237,40 +253,130 @@ describe("codegen refactor parity", () => {
 			],
 			{
 				includeAll: false,
-				prefixes: ["AVATAR_"],
+				prefixes: ["V0002_", "SPAWN_"],
 				matches: ["FEATURE_GATE"],
 			},
 		);
 
 		expect(filtered.map((entry) => entry.templateId)).toEqual([
-			"AVATAR_POSE",
+			"V0002_POKEMON_IVYSAUR",
+			"V0002_POKEMON_IVYSAUR_NORMAL",
+			"SPAWN_V0002_POKEMON_IVYSAUR",
 			"FEATURE_GATE_MAIN",
 		]);
 	});
 
-	test("TypeScript output stays byte-for-byte the same for the fixture", () => {
-		const options = parseTypescriptArgs([
-			"--prefix",
-			"AVATAR_",
-			"--match",
-			"FEATURE_GATE",
+	test("TypeScript output uses semantic families and explicit Pokemon modules", () => {
+		const options = parseTypescriptArgs(["--all"]);
+		const bundle = buildTypescriptFiles(FIXTURE_ENTRIES, options);
+		const fileNames = bundle.files.map((file) => file.fileName).sort();
+		const fileMap = new Map(
+			bundle.files.map((file) => [file.fileName, file.content]),
+		);
+
+		expect(fileNames).toEqual([
+			"avatar/customization.generated.ts",
+			"items/settings.generated.ts",
+			"misc.generated.ts",
+			"moves/settings.generated.ts",
+			"pokemon/extended/gen1.generated.ts",
+			"pokemon/family.generated.ts",
+			"pokemon/gender/gen1.generated.ts",
+			"pokemon/home.generated.ts",
+			"pokemon/scale.generated.ts",
+			"pokemon/settings/gen1.generated.ts",
+			"pokemon/tags.generated.ts",
+			"pokemon/type-chart.generated.ts",
+			"pokemon/upgrades.generated.ts",
 		]);
+		expect(
+			fileNames.some((fileName) => fileName.includes("pokemon/misc")),
+		).toBe(false);
+
+		expect(fileMap.get("pokemon/settings/gen1.generated.ts")?.trim()).toBe(
+			EXPECTED_POKEMON_SETTINGS_GEN1_FILE.trim(),
+		);
+		expect(fileMap.get("pokemon/extended/gen1.generated.ts")).toContain(
+			"export interface PokemonExtendedGen1ByPokemonId {",
+		);
+		expect(fileMap.get("pokemon/gender/gen1.generated.ts")).toContain(
+			'  "IVYSAUR": Spawn_v0002_pokemon_ivysaurEntry;',
+		);
+		expect(fileMap.get("pokemon/type-chart.generated.ts")).toContain(
+			'templateId: "POKEMON_TYPE_BUG";',
+		);
+		expect(fileMap.get("misc.generated.ts")).toContain(
+			'templateId: "FEATURE_GATE_MAIN";',
+		);
+	});
+
+	test("TypeScript barrel exports normalized aliases and lookup types", () => {
+		const options = parseTypescriptArgs(["--all"]);
 		const output = buildTypescriptOutput(FIXTURE_ENTRIES, options);
 
-		expect(output.trim()).toBe(EXPECTED_TYPESCRIPT_OUTPUT.trim());
+		expect(output).toContain(
+			'import type POGOProtos from "@na-ji/pogo-protos";',
+		);
+		expect(output).toContain(
+			'export * from "./pokemon/settings/gen1.generated";',
+		);
+		expect(output).toContain(
+			"export type PokemonMasterfileEntry = PokemonSettingsGen1MasterfileEntry | PokemonExtendedGen1MasterfileEntry | PokemonGenderGen1MasterfileEntry | PokemonFamilyMasterfileEntry | PokemonTypeChartMasterfileEntry | PokemonScaleMasterfileEntry | PokemonHomeMasterfileEntry | PokemonTagsMasterfileEntry | PokemonUpgradesMasterfileEntry;",
+		);
+		expect(output).toContain(
+			"export interface PokemonSettingsByTemplateId extends PokemonSettingsGen1MasterfileByTemplateId {}",
+		);
+		expect(output).toContain(
+			'export interface PokemonSettingsByDexId {\n  "0002": PokemonSettingsGen1ByDexId["0002"];\n}',
+		);
+		expect(output).toContain(
+			'export interface PokemonSettingsByPokemonId {\n  "IVYSAUR": PokemonSettingsGen1ByPokemonId["IVYSAUR"];\n}',
+		);
+		expect(output).toContain(
+			'export interface PokemonExtendedByPokemonId {\n  "IVYSAUR": PokemonExtendedGen1ByPokemonId["IVYSAUR"];\n}',
+		);
+		expect(output).toContain(
+			'export interface PokemonGenderByPokemonId {\n  "IVYSAUR": PokemonGenderGen1ByPokemonId["IVYSAUR"];\n}',
+		);
+		expect(output).toContain(
+			"export type MoveMasterfileEntry = MovesSettingsMasterfileEntry;",
+		);
+		expect(output).toContain(
+			"export type ItemMasterfileEntry = ItemsSettingsMasterfileEntry;",
+		);
+		expect(output).toContain(
+			"export type NormalizedPokemonSettings = POGOProtos.Rpc.IPokemonSettingsProto;",
+		);
+		expect(output).toContain(
+			"export type NormalizedMoveSettings = POGOProtos.Rpc.IMoveSettingsProto;",
+		);
+		expect(output).toContain(
+			"export type NormalizedItemSettings = POGOProtos.Rpc.IItemSettingsProto;",
+		);
+		expect(output).toContain(
+			"export type NormalizedPokemonSettingsByTemplateId = {",
+		);
 	});
 
-	test("Go output stays byte-for-byte the same for the fixture", () => {
-		const options = parseGoArgs(["--all", "--package", "123 weird-name"]);
-		const output = buildGoOutput(FIXTURE_ENTRIES, options);
+	test("TypeScript routes three-digit dex templateIds into the correct generation bucket", () => {
+		const options = parseTypescriptArgs(["--all"]);
+		const bundle = buildTypescriptFiles(
+			[
+				{
+					templateId: "EXTENDED_V999_POKEMON_GIMMIGHOUL",
+					data: {
+						pokemonExtendedSettings: {
+							uniqueId: "GIMMIGHOUL",
+						},
+					},
+				},
+			],
+			options,
+		);
 
-		expect(output.trim()).toBe(EXPECTED_GO_OUTPUT.trim());
-	});
-
-	test("Rust output stays byte-for-byte the same for the fixture", () => {
-		const options = parseRustArgs(["--all", "--derive-default"]);
-		const output = buildRustOutput(FIXTURE_ENTRIES, options);
-
-		expect(output.trim()).toBe(EXPECTED_RUST_OUTPUT.trim());
+		expect(bundle.files.map((file) => file.fileName)).toEqual([
+			"pokemon/extended/gen9.generated.ts",
+		]);
+		expect(bundle.barrelContent).not.toContain("PokemonExtendedSpecial");
 	});
 });

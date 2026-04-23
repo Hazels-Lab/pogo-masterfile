@@ -1,5 +1,3 @@
-import { generateGo } from "./go";
-import { generateRust } from "./rust";
 import type { Json } from "./types";
 import { generateTypescript } from "./typescript";
 
@@ -14,8 +12,8 @@ async function main() {
 
 	await Promise.all([
 		generateTypescript(parsed),
-		generateRust(parsed),
-		generateGo(parsed),
+		// generateRust(parsed),
+		// generateGo(parsed),
 	]);
 }
 
