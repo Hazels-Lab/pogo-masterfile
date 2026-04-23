@@ -22,6 +22,34 @@ export interface Forms_v0001_pokemon_bulbasaurEntry {
   templateId: "FORMS_V0001_POKEMON_BULBASAUR";
   data: Forms_v0001_pokemon_bulbasaurdata;
 }
+export interface Forms_v0004_pokemon_charmanderEntry {
+  templateId: "FORMS_V0004_POKEMON_CHARMANDER";
+  data: Forms_v0001_pokemon_bulbasaurdata;
+}
+export interface Forms_v0007_pokemon_squirtleEntry {
+  templateId: "FORMS_V0007_POKEMON_SQUIRTLE";
+  data: Forms_v0001_pokemon_bulbasaurdata;
+}
+export interface Forms_v0150_pokemon_mewtwoEntry {
+  templateId: "FORMS_V0150_POKEMON_MEWTWO";
+  data: Forms_v0001_pokemon_bulbasaurdata;
+}
+export interface Forms_v0225_pokemon_delibirdEntry {
+  templateId: "FORMS_V0225_POKEMON_DELIBIRD";
+  data: Forms_v0001_pokemon_bulbasaurdata;
+}
+export interface Forms_v0302_pokemon_sableyeEntry {
+  templateId: "FORMS_V0302_POKEMON_SABLEYE";
+  data: Forms_v0001_pokemon_bulbasaurdata;
+}
+export interface Forms_v0613_pokemon_cubchooEntry {
+  templateId: "FORMS_V0613_POKEMON_CUBCHOO";
+  data: Forms_v0001_pokemon_bulbasaurdata;
+}
+export interface Forms_v0614_pokemon_bearticEntry {
+  templateId: "FORMS_V0614_POKEMON_BEARTIC";
+  data: Forms_v0001_pokemon_bulbasaurdata;
+}
 export interface Forms_v0002_pokemon_ivysaurdataformsettingsformsitem {
   form: string;
 }
@@ -37,61 +65,13 @@ export interface Forms_v0002_pokemon_ivysaurEntry {
   templateId: "FORMS_V0002_POKEMON_IVYSAUR";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0003_pokemon_venusaurdataformsettingsformsitem {
-  assetBundleSuffix?: string;
-  form: string;
-}
-export interface Forms_v0003_pokemon_venusaurdataformsettings {
-  forms: (Forms_v0003_pokemon_venusaurdataformsettingsformsitem)[];
-  pokemon: string;
-}
-export interface Forms_v0003_pokemon_venusaurdata {
-  formSettings: Forms_v0003_pokemon_venusaurdataformsettings;
-  templateId: string;
-}
-export interface Forms_v0003_pokemon_venusaurEntry {
-  templateId: "FORMS_V0003_POKEMON_VENUSAUR";
-  data: Forms_v0003_pokemon_venusaurdata;
-}
-export interface Forms_v0004_pokemon_charmanderEntry {
-  templateId: "FORMS_V0004_POKEMON_CHARMANDER";
-  data: Forms_v0001_pokemon_bulbasaurdata;
-}
 export interface Forms_v0005_pokemon_charmeleonEntry {
   templateId: "FORMS_V0005_POKEMON_CHARMELEON";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0006_pokemon_charizardEntry {
-  templateId: "FORMS_V0006_POKEMON_CHARIZARD";
-  data: Forms_v0003_pokemon_venusaurdata;
-}
-export interface Forms_v0007_pokemon_squirtleEntry {
-  templateId: "FORMS_V0007_POKEMON_SQUIRTLE";
-  data: Forms_v0001_pokemon_bulbasaurdata;
-}
 export interface Forms_v0008_pokemon_wartortleEntry {
   templateId: "FORMS_V0008_POKEMON_WARTORTLE";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0009_pokemon_blastoiseEntry {
-  templateId: "FORMS_V0009_POKEMON_BLASTOISE";
-  data: Forms_v0003_pokemon_venusaurdata;
-}
-export interface Forms_v0010_pokemon_caterpiedataformsettingsformsitem {
-  form: string | number;
-  isCostume?: boolean;
-}
-export interface Forms_v0010_pokemon_caterpiedataformsettings {
-  forms: (Forms_v0010_pokemon_caterpiedataformsettingsformsitem)[];
-  pokemon: string;
-}
-export interface Forms_v0010_pokemon_caterpiedata {
-  formSettings: Forms_v0010_pokemon_caterpiedataformsettings;
-  templateId: string;
-}
-export interface Forms_v0010_pokemon_caterpieEntry {
-  templateId: "FORMS_V0010_POKEMON_CATERPIE";
-  data: Forms_v0010_pokemon_caterpiedata;
 }
 export interface Forms_v0011_pokemon_metapodEntry {
   templateId: "FORMS_V0011_POKEMON_METAPOD";
@@ -125,26 +105,6 @@ export interface Forms_v0018_pokemon_pidgeotEntry {
   templateId: "FORMS_V0018_POKEMON_PIDGEOT";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0019_pokemon_rattatadataformsettingsformsitem {
-  assetBundleValue?: number;
-  form: string;
-}
-export interface Forms_v0019_pokemon_rattatadataformsettings {
-  forms: (Forms_v0019_pokemon_rattatadataformsettingsformsitem)[];
-  pokemon: string;
-}
-export interface Forms_v0019_pokemon_rattatadata {
-  formSettings: Forms_v0019_pokemon_rattatadataformsettings;
-  templateId: string;
-}
-export interface Forms_v0019_pokemon_rattataEntry {
-  templateId: "FORMS_V0019_POKEMON_RATTATA";
-  data: Forms_v0019_pokemon_rattatadata;
-}
-export interface Forms_v0020_pokemon_raticateEntry {
-  templateId: "FORMS_V0020_POKEMON_RATICATE";
-  data: Forms_v0019_pokemon_rattatadata;
-}
 export interface Forms_v0021_pokemon_spearowEntry {
   templateId: "FORMS_V0021_POKEMON_SPEAROW";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -160,36 +120,6 @@ export interface Forms_v0023_pokemon_ekansEntry {
 export interface Forms_v0024_pokemon_arbokEntry {
   templateId: "FORMS_V0024_POKEMON_ARBOK";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0025_pokemon_pikachudataformsettingsformsitem {
-  assetBundleSuffix?: string;
-  assetBundleValue?: number;
-  form: string | number;
-  isCostume?: boolean;
-}
-export interface Forms_v0025_pokemon_pikachudataformsettings {
-  forms: (Forms_v0025_pokemon_pikachudataformsettingsformsitem)[];
-  pokemon: string;
-}
-export interface Forms_v0025_pokemon_pikachudata {
-  formSettings: Forms_v0025_pokemon_pikachudataformsettings;
-  templateId: string;
-}
-export interface Forms_v0025_pokemon_pikachuEntry {
-  templateId: "FORMS_V0025_POKEMON_PIKACHU";
-  data: Forms_v0025_pokemon_pikachudata;
-}
-export interface Forms_v0026_pokemon_raichuEntry {
-  templateId: "FORMS_V0026_POKEMON_RAICHU";
-  data: Forms_v0019_pokemon_rattatadata;
-}
-export interface Forms_v0027_pokemon_sandshrewEntry {
-  templateId: "FORMS_V0027_POKEMON_SANDSHREW";
-  data: Forms_v0019_pokemon_rattatadata;
-}
-export interface Forms_v0028_pokemon_sandslashEntry {
-  templateId: "FORMS_V0028_POKEMON_SANDSLASH";
-  data: Forms_v0019_pokemon_rattatadata;
 }
 export interface Forms_v0029_pokemon_nidoranEntry {
   templateId: "FORMS_V0029_POKEMON_NIDORAN";
@@ -222,14 +152,6 @@ export interface Forms_v0035_pokemon_clefairyEntry {
 export interface Forms_v0036_pokemon_clefableEntry {
   templateId: "FORMS_V0036_POKEMON_CLEFABLE";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0037_pokemon_vulpixEntry {
-  templateId: "FORMS_V0037_POKEMON_VULPIX";
-  data: Forms_v0019_pokemon_rattatadata;
-}
-export interface Forms_v0038_pokemon_ninetalesEntry {
-  templateId: "FORMS_V0038_POKEMON_NINETALES";
-  data: Forms_v0019_pokemon_rattatadata;
 }
 export interface Forms_v0039_pokemon_jigglypuffEntry {
   templateId: "FORMS_V0039_POKEMON_JIGGLYPUFF";
@@ -274,22 +196,6 @@ export interface Forms_v0048_pokemon_venonatEntry {
 export interface Forms_v0049_pokemon_venomothEntry {
   templateId: "FORMS_V0049_POKEMON_VENOMOTH";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0050_pokemon_diglettEntry {
-  templateId: "FORMS_V0050_POKEMON_DIGLETT";
-  data: Forms_v0019_pokemon_rattatadata;
-}
-export interface Forms_v0051_pokemon_dugtrioEntry {
-  templateId: "FORMS_V0051_POKEMON_DUGTRIO";
-  data: Forms_v0019_pokemon_rattatadata;
-}
-export interface Forms_v0052_pokemon_meowthEntry {
-  templateId: "FORMS_V0052_POKEMON_MEOWTH";
-  data: Forms_v0019_pokemon_rattatadata;
-}
-export interface Forms_v0053_pokemon_persianEntry {
-  templateId: "FORMS_V0053_POKEMON_PERSIAN";
-  data: Forms_v0019_pokemon_rattatadata;
 }
 export interface Forms_v0054_pokemon_psyduckEntry {
   templateId: "FORMS_V0054_POKEMON_PSYDUCK";
@@ -371,48 +277,6 @@ export interface Forms_v0073_pokemon_tentacruelEntry {
   templateId: "FORMS_V0073_POKEMON_TENTACRUEL";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0074_pokemon_geodudeEntry {
-  templateId: "FORMS_V0074_POKEMON_GEODUDE";
-  data: Forms_v0019_pokemon_rattatadata;
-}
-export interface Forms_v0075_pokemon_gravelerEntry {
-  templateId: "FORMS_V0075_POKEMON_GRAVELER";
-  data: Forms_v0019_pokemon_rattatadata;
-}
-export interface Forms_v0076_pokemon_golemEntry {
-  templateId: "FORMS_V0076_POKEMON_GOLEM";
-  data: Forms_v0019_pokemon_rattatadata;
-}
-export interface Forms_v0077_pokemon_ponytaEntry {
-  templateId: "FORMS_V0077_POKEMON_PONYTA";
-  data: Forms_v0019_pokemon_rattatadata;
-}
-export interface Forms_v0078_pokemon_rapidashEntry {
-  templateId: "FORMS_V0078_POKEMON_RAPIDASH";
-  data: Forms_v0019_pokemon_rattatadata;
-}
-export interface Forms_v0079_pokemon_slowpokedataformsettingsformsitem {
-  assetBundleSuffix?: string;
-  assetBundleValue?: number;
-  form: string;
-  isCostume?: boolean;
-}
-export interface Forms_v0079_pokemon_slowpokedataformsettings {
-  forms: (Forms_v0079_pokemon_slowpokedataformsettingsformsitem)[];
-  pokemon: string;
-}
-export interface Forms_v0079_pokemon_slowpokedata {
-  formSettings: Forms_v0079_pokemon_slowpokedataformsettings;
-  templateId: string;
-}
-export interface Forms_v0079_pokemon_slowpokeEntry {
-  templateId: "FORMS_V0079_POKEMON_SLOWPOKE";
-  data: Forms_v0079_pokemon_slowpokedata;
-}
-export interface Forms_v0080_pokemon_slowbroEntry {
-  templateId: "FORMS_V0080_POKEMON_SLOWBRO";
-  data: Forms_v0079_pokemon_slowpokedata;
-}
 export interface Forms_v0081_pokemon_magnemiteEntry {
   templateId: "FORMS_V0081_POKEMON_MAGNEMITE";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -420,10 +284,6 @@ export interface Forms_v0081_pokemon_magnemiteEntry {
 export interface Forms_v0082_pokemon_magnetonEntry {
   templateId: "FORMS_V0082_POKEMON_MAGNETON";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0083_pokemon_farfetchdEntry {
-  templateId: "FORMS_V0083_POKEMON_FARFETCHD";
-  data: Forms_v0019_pokemon_rattatadata;
 }
 export interface Forms_v0084_pokemon_doduoEntry {
   templateId: "FORMS_V0084_POKEMON_DODUO";
@@ -441,14 +301,6 @@ export interface Forms_v0087_pokemon_dewgongEntry {
   templateId: "FORMS_V0087_POKEMON_DEWGONG";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0088_pokemon_grimerEntry {
-  templateId: "FORMS_V0088_POKEMON_GRIMER";
-  data: Forms_v0019_pokemon_rattatadata;
-}
-export interface Forms_v0089_pokemon_mukEntry {
-  templateId: "FORMS_V0089_POKEMON_MUK";
-  data: Forms_v0019_pokemon_rattatadata;
-}
 export interface Forms_v0090_pokemon_shellderEntry {
   templateId: "FORMS_V0090_POKEMON_SHELLDER";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -464,23 +316,6 @@ export interface Forms_v0092_pokemon_gastlyEntry {
 export interface Forms_v0093_pokemon_haunterEntry {
   templateId: "FORMS_V0093_POKEMON_HAUNTER";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0094_pokemon_gengardataformsettingsformsitem {
-  assetBundleValue?: number;
-  form: string;
-  isCostume?: boolean;
-}
-export interface Forms_v0094_pokemon_gengardataformsettings {
-  forms: (Forms_v0094_pokemon_gengardataformsettingsformsitem)[];
-  pokemon: string;
-}
-export interface Forms_v0094_pokemon_gengardata {
-  formSettings: Forms_v0094_pokemon_gengardataformsettings;
-  templateId: string;
-}
-export interface Forms_v0094_pokemon_gengarEntry {
-  templateId: "FORMS_V0094_POKEMON_GENGAR";
-  data: Forms_v0094_pokemon_gengardata;
 }
 export interface Forms_v0095_pokemon_onixEntry {
   templateId: "FORMS_V0095_POKEMON_ONIX";
@@ -514,17 +349,9 @@ export interface Forms_v0102_pokemon_exeggcuteEntry {
   templateId: "FORMS_V0102_POKEMON_EXEGGCUTE";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0103_pokemon_exeggutorEntry {
-  templateId: "FORMS_V0103_POKEMON_EXEGGUTOR";
-  data: Forms_v0019_pokemon_rattatadata;
-}
 export interface Forms_v0104_pokemon_cuboneEntry {
   templateId: "FORMS_V0104_POKEMON_CUBONE";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0105_pokemon_marowakEntry {
-  templateId: "FORMS_V0105_POKEMON_MAROWAK";
-  data: Forms_v0019_pokemon_rattatadata;
 }
 export interface Forms_v0106_pokemon_hitmonleeEntry {
   templateId: "FORMS_V0106_POKEMON_HITMONLEE";
@@ -541,10 +368,6 @@ export interface Forms_v0108_pokemon_lickitungEntry {
 export interface Forms_v0109_pokemon_koffingEntry {
   templateId: "FORMS_V0109_POKEMON_KOFFING";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0110_pokemon_weezingEntry {
-  templateId: "FORMS_V0110_POKEMON_WEEZING";
-  data: Forms_v0019_pokemon_rattatadata;
 }
 export interface Forms_v0111_pokemon_rhyhornEntry {
   templateId: "FORMS_V0111_POKEMON_RHYHORN";
@@ -590,10 +413,6 @@ export interface Forms_v0121_pokemon_starmieEntry {
   templateId: "FORMS_V0121_POKEMON_STARMIE";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0122_pokemon_mr_mimeEntry {
-  templateId: "FORMS_V0122_POKEMON_MR_MIME";
-  data: Forms_v0019_pokemon_rattatadata;
-}
 export interface Forms_v0123_pokemon_scytherEntry {
   templateId: "FORMS_V0123_POKEMON_SCYTHER";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -625,30 +444,6 @@ export interface Forms_v0129_pokemon_magikarpEntry {
 export interface Forms_v0130_pokemon_gyaradosEntry {
   templateId: "FORMS_V0130_POKEMON_GYARADOS";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0131_pokemon_laprasdataformsettingsformsitem {
-  form: string;
-  isCostume?: boolean;
-}
-export interface Forms_v0131_pokemon_laprasdataformsettings {
-  forms: (Forms_v0131_pokemon_laprasdataformsettingsformsitem)[];
-  pokemon: string;
-}
-export interface Forms_v0131_pokemon_laprasdata {
-  formSettings: Forms_v0131_pokemon_laprasdataformsettings;
-  templateId: string;
-}
-export interface Forms_v0131_pokemon_laprasEntry {
-  templateId: "FORMS_V0131_POKEMON_LAPRAS";
-  data: Forms_v0131_pokemon_laprasdata;
-}
-export interface Forms_v0132_pokemon_dittoEntry {
-  templateId: "FORMS_V0132_POKEMON_DITTO";
-  data: Forms_v0131_pokemon_laprasdata;
-}
-export interface Forms_v0133_pokemon_eeveeEntry {
-  templateId: "FORMS_V0133_POKEMON_EEVEE";
-  data: Forms_v0131_pokemon_laprasdata;
 }
 export interface Forms_v0134_pokemon_vaporeonEntry {
   templateId: "FORMS_V0134_POKEMON_VAPOREON";
@@ -682,26 +477,6 @@ export interface Forms_v0141_pokemon_kabutopsEntry {
   templateId: "FORMS_V0141_POKEMON_KABUTOPS";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0142_pokemon_aerodactylEntry {
-  templateId: "FORMS_V0142_POKEMON_AERODACTYL";
-  data: Forms_v0131_pokemon_laprasdata;
-}
-export interface Forms_v0143_pokemon_snorlaxEntry {
-  templateId: "FORMS_V0143_POKEMON_SNORLAX";
-  data: Forms_v0131_pokemon_laprasdata;
-}
-export interface Forms_v0144_pokemon_articunoEntry {
-  templateId: "FORMS_V0144_POKEMON_ARTICUNO";
-  data: Forms_v0019_pokemon_rattatadata;
-}
-export interface Forms_v0145_pokemon_zapdosEntry {
-  templateId: "FORMS_V0145_POKEMON_ZAPDOS";
-  data: Forms_v0019_pokemon_rattatadata;
-}
-export interface Forms_v0146_pokemon_moltresEntry {
-  templateId: "FORMS_V0146_POKEMON_MOLTRES";
-  data: Forms_v0019_pokemon_rattatadata;
-}
 export interface Forms_v0147_pokemon_dratiniEntry {
   templateId: "FORMS_V0147_POKEMON_DRATINI";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -713,10 +488,6 @@ export interface Forms_v0148_pokemon_dragonairEntry {
 export interface Forms_v0149_pokemon_dragoniteEntry {
   templateId: "FORMS_V0149_POKEMON_DRAGONITE";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0150_pokemon_mewtwoEntry {
-  templateId: "FORMS_V0150_POKEMON_MEWTWO";
-  data: Forms_v0001_pokemon_bulbasaurdata;
 }
 export interface Forms_v0151_pokemon_mewEntry {
   templateId: "FORMS_V0151_POKEMON_MEW";
@@ -854,10 +625,6 @@ export interface Forms_v0184_pokemon_azumarillEntry {
   templateId: "FORMS_V0184_POKEMON_AZUMARILL";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0185_pokemon_sudowoodoEntry {
-  templateId: "FORMS_V0185_POKEMON_SUDOWOODO";
-  data: Forms_v0094_pokemon_gengardata;
-}
 export interface Forms_v0186_pokemon_politoedEntry {
   templateId: "FORMS_V0186_POKEMON_POLITOED";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -898,41 +665,13 @@ export interface Forms_v0195_pokemon_quagsireEntry {
   templateId: "FORMS_V0195_POKEMON_QUAGSIRE";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0196_pokemon_espeonEntry {
-  templateId: "FORMS_V0196_POKEMON_ESPEON";
-  data: Forms_v0131_pokemon_laprasdata;
-}
-export interface Forms_v0197_pokemon_umbreonEntry {
-  templateId: "FORMS_V0197_POKEMON_UMBREON";
-  data: Forms_v0131_pokemon_laprasdata;
-}
 export interface Forms_v0198_pokemon_murkrowEntry {
   templateId: "FORMS_V0198_POKEMON_MURKROW";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0199_pokemon_slowkingEntry {
-  templateId: "FORMS_V0199_POKEMON_SLOWKING";
-  data: Forms_v0094_pokemon_gengardata;
-}
 export interface Forms_v0200_pokemon_misdreavusEntry {
   templateId: "FORMS_V0200_POKEMON_MISDREAVUS";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0201_pokemon_unowndataformsettingsformsitem {
-  assetBundleValue: number;
-  form: string;
-}
-export interface Forms_v0201_pokemon_unowndataformsettings {
-  forms: (Forms_v0201_pokemon_unowndataformsettingsformsitem)[];
-  pokemon: string;
-}
-export interface Forms_v0201_pokemon_unowndata {
-  formSettings: Forms_v0201_pokemon_unowndataformsettings;
-  templateId: string;
-}
-export interface Forms_v0201_pokemon_unownEntry {
-  templateId: "FORMS_V0201_POKEMON_UNOWN";
-  data: Forms_v0201_pokemon_unowndata;
 }
 export interface Forms_v0202_pokemon_wobbuffetEntry {
   templateId: "FORMS_V0202_POKEMON_WOBBUFFET";
@@ -1014,10 +753,6 @@ export interface Forms_v0221_pokemon_piloswineEntry {
   templateId: "FORMS_V0221_POKEMON_PILOSWINE";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0222_pokemon_corsolaEntry {
-  templateId: "FORMS_V0222_POKEMON_CORSOLA";
-  data: Forms_v0010_pokemon_caterpiedata;
-}
 export interface Forms_v0223_pokemon_remoraidEntry {
   templateId: "FORMS_V0223_POKEMON_REMORAID";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -1025,10 +760,6 @@ export interface Forms_v0223_pokemon_remoraidEntry {
 export interface Forms_v0224_pokemon_octilleryEntry {
   templateId: "FORMS_V0224_POKEMON_OCTILLERY";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0225_pokemon_delibirdEntry {
-  templateId: "FORMS_V0225_POKEMON_DELIBIRD";
-  data: Forms_v0001_pokemon_bulbasaurdata;
 }
 export interface Forms_v0226_pokemon_mantineEntry {
   templateId: "FORMS_V0226_POKEMON_MANTINE";
@@ -1178,14 +909,6 @@ export interface Forms_v0262_pokemon_mightyenaEntry {
   templateId: "FORMS_V0262_POKEMON_MIGHTYENA";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0263_pokemon_zigzagoonEntry {
-  templateId: "FORMS_V0263_POKEMON_ZIGZAGOON";
-  data: Forms_v0019_pokemon_rattatadata;
-}
-export interface Forms_v0264_pokemon_linooneEntry {
-  templateId: "FORMS_V0264_POKEMON_LINOONE";
-  data: Forms_v0019_pokemon_rattatadata;
-}
 export interface Forms_v0265_pokemon_wurmpleEntry {
   templateId: "FORMS_V0265_POKEMON_WURMPLE";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -1334,10 +1057,6 @@ export interface Forms_v0301_pokemon_delcattyEntry {
   templateId: "FORMS_V0301_POKEMON_DELCATTY";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0302_pokemon_sableyeEntry {
-  templateId: "FORMS_V0302_POKEMON_SABLEYE";
-  data: Forms_v0001_pokemon_bulbasaurdata;
-}
 export interface Forms_v0303_pokemon_mawileEntry {
   templateId: "FORMS_V0303_POKEMON_MAWILE";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -1434,10 +1153,6 @@ export interface Forms_v0326_pokemon_grumpigEntry {
   templateId: "FORMS_V0326_POKEMON_GRUMPIG";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0327_pokemon_spindaEntry {
-  templateId: "FORMS_V0327_POKEMON_SPINDA";
-  data: Forms_v0201_pokemon_unowndata;
-}
 export interface Forms_v0328_pokemon_trapinchEntry {
   templateId: "FORMS_V0328_POKEMON_TRAPINCH";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -1529,10 +1244,6 @@ export interface Forms_v0349_pokemon_feebasEntry {
 export interface Forms_v0350_pokemon_miloticEntry {
   templateId: "FORMS_V0350_POKEMON_MILOTIC";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0351_pokemon_castformEntry {
-  templateId: "FORMS_V0351_POKEMON_CASTFORM";
-  data: Forms_v0201_pokemon_unowndata;
 }
 export interface Forms_v0352_pokemon_kecleonEntry {
   templateId: "FORMS_V0352_POKEMON_KECLEON";
@@ -1670,10 +1381,6 @@ export interface Forms_v0385_pokemon_jirachiEntry {
   templateId: "FORMS_V0385_POKEMON_JIRACHI";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0386_pokemon_deoxysEntry {
-  templateId: "FORMS_V0386_POKEMON_DEOXYS";
-  data: Forms_v0201_pokemon_unowndata;
-}
 export interface Forms_v0387_pokemon_turtwigEntry {
   templateId: "FORMS_V0387_POKEMON_TURTWIG";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -1774,14 +1481,6 @@ export interface Forms_v0411_pokemon_bastiodonEntry {
   templateId: "FORMS_V0411_POKEMON_BASTIODON";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0412_pokemon_burmyEntry {
-  templateId: "FORMS_V0412_POKEMON_BURMY";
-  data: Forms_v0201_pokemon_unowndata;
-}
-export interface Forms_v0413_pokemon_wormadamEntry {
-  templateId: "FORMS_V0413_POKEMON_WORMADAM";
-  data: Forms_v0201_pokemon_unowndata;
-}
 export interface Forms_v0414_pokemon_mothimEntry {
   templateId: "FORMS_V0414_POKEMON_MOTHIM";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -1809,18 +1508,6 @@ export interface Forms_v0419_pokemon_floatzelEntry {
 export interface Forms_v0420_pokemon_cherubiEntry {
   templateId: "FORMS_V0420_POKEMON_CHERUBI";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0421_pokemon_cherrimEntry {
-  templateId: "FORMS_V0421_POKEMON_CHERRIM";
-  data: Forms_v0201_pokemon_unowndata;
-}
-export interface Forms_v0422_pokemon_shellosEntry {
-  templateId: "FORMS_V0422_POKEMON_SHELLOS";
-  data: Forms_v0201_pokemon_unowndata;
-}
-export interface Forms_v0423_pokemon_gastrodonEntry {
-  templateId: "FORMS_V0423_POKEMON_GASTRODON";
-  data: Forms_v0201_pokemon_unowndata;
 }
 export interface Forms_v0424_pokemon_ambipomEntry {
   templateId: "FORMS_V0424_POKEMON_AMBIPOM";
@@ -2042,10 +1729,6 @@ export interface Forms_v0478_pokemon_froslassEntry {
   templateId: "FORMS_V0478_POKEMON_FROSLASS";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0479_pokemon_rotomEntry {
-  templateId: "FORMS_V0479_POKEMON_ROTOM";
-  data: Forms_v0201_pokemon_unowndata;
-}
 export interface Forms_v0480_pokemon_uxieEntry {
   templateId: "FORMS_V0480_POKEMON_UXIE";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -2058,14 +1741,6 @@ export interface Forms_v0482_pokemon_azelfEntry {
   templateId: "FORMS_V0482_POKEMON_AZELF";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0483_pokemon_dialgaEntry {
-  templateId: "FORMS_V0483_POKEMON_DIALGA";
-  data: Forms_v0201_pokemon_unowndata;
-}
-export interface Forms_v0484_pokemon_palkiaEntry {
-  templateId: "FORMS_V0484_POKEMON_PALKIA";
-  data: Forms_v0201_pokemon_unowndata;
-}
 export interface Forms_v0485_pokemon_heatranEntry {
   templateId: "FORMS_V0485_POKEMON_HEATRAN";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -2073,10 +1748,6 @@ export interface Forms_v0485_pokemon_heatranEntry {
 export interface Forms_v0486_pokemon_regigigasEntry {
   templateId: "FORMS_V0486_POKEMON_REGIGIGAS";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0487_pokemon_giratinaEntry {
-  templateId: "FORMS_V0487_POKEMON_GIRATINA";
-  data: Forms_v0201_pokemon_unowndata;
 }
 export interface Forms_v0488_pokemon_cresseliaEntry {
   templateId: "FORMS_V0488_POKEMON_CRESSELIA";
@@ -2093,14 +1764,6 @@ export interface Forms_v0490_pokemon_manaphyEntry {
 export interface Forms_v0491_pokemon_darkraiEntry {
   templateId: "FORMS_V0491_POKEMON_DARKRAI";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0492_pokemon_shayminEntry {
-  templateId: "FORMS_V0492_POKEMON_SHAYMIN";
-  data: Forms_v0201_pokemon_unowndata;
-}
-export interface Forms_v0493_pokemon_arceusEntry {
-  templateId: "FORMS_V0493_POKEMON_ARCEUS";
-  data: Forms_v0201_pokemon_unowndata;
 }
 export interface Forms_v0494_pokemon_victiniEntry {
   templateId: "FORMS_V0494_POKEMON_VICTINI";
@@ -2326,10 +1989,6 @@ export interface Forms_v0549_pokemon_lilligantEntry {
   templateId: "FORMS_V0549_POKEMON_LILLIGANT";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0550_pokemon_basculinEntry {
-  templateId: "FORMS_V0550_POKEMON_BASCULIN";
-  data: Forms_v0019_pokemon_rattatadata;
-}
 export interface Forms_v0551_pokemon_sandileEntry {
   templateId: "FORMS_V0551_POKEMON_SANDILE";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -2341,14 +2000,6 @@ export interface Forms_v0552_pokemon_krokorokEntry {
 export interface Forms_v0553_pokemon_krookodileEntry {
   templateId: "FORMS_V0553_POKEMON_KROOKODILE";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0554_pokemon_darumakaEntry {
-  templateId: "FORMS_V0554_POKEMON_DARUMAKA";
-  data: Forms_v0019_pokemon_rattatadata;
-}
-export interface Forms_v0555_pokemon_darmanitanEntry {
-  templateId: "FORMS_V0555_POKEMON_DARMANITAN";
-  data: Forms_v0201_pokemon_unowndata;
 }
 export interface Forms_v0556_pokemon_maractusEntry {
   templateId: "FORMS_V0556_POKEMON_MARACTUS";
@@ -2373,10 +2024,6 @@ export interface Forms_v0560_pokemon_scraftyEntry {
 export interface Forms_v0561_pokemon_sigilyphEntry {
   templateId: "FORMS_V0561_POKEMON_SIGILYPH";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0562_pokemon_yamaskEntry {
-  templateId: "FORMS_V0562_POKEMON_YAMASK";
-  data: Forms_v0019_pokemon_rattatadata;
 }
 export interface Forms_v0563_pokemon_cofagrigusEntry {
   templateId: "FORMS_V0563_POKEMON_COFAGRIGUS";
@@ -2466,14 +2113,6 @@ export interface Forms_v0584_pokemon_vanilluxeEntry {
   templateId: "FORMS_V0584_POKEMON_VANILLUXE";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0585_pokemon_deerlingEntry {
-  templateId: "FORMS_V0585_POKEMON_DEERLING";
-  data: Forms_v0201_pokemon_unowndata;
-}
-export interface Forms_v0586_pokemon_sawsbuckEntry {
-  templateId: "FORMS_V0586_POKEMON_SAWSBUCK";
-  data: Forms_v0201_pokemon_unowndata;
-}
 export interface Forms_v0587_pokemon_emolgaEntry {
   templateId: "FORMS_V0587_POKEMON_EMOLGA";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -2493,14 +2132,6 @@ export interface Forms_v0590_pokemon_foongusEntry {
 export interface Forms_v0591_pokemon_amoongussEntry {
   templateId: "FORMS_V0591_POKEMON_AMOONGUSS";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0592_pokemon_frillishEntry {
-  templateId: "FORMS_V0592_POKEMON_FRILLISH";
-  data: Forms_v0019_pokemon_rattatadata;
-}
-export interface Forms_v0593_pokemon_jellicentEntry {
-  templateId: "FORMS_V0593_POKEMON_JELLICENT";
-  data: Forms_v0019_pokemon_rattatadata;
 }
 export interface Forms_v0594_pokemon_alomomolaEntry {
   templateId: "FORMS_V0594_POKEMON_ALOMOMOLA";
@@ -2578,14 +2209,6 @@ export interface Forms_v0612_pokemon_haxorusEntry {
   templateId: "FORMS_V0612_POKEMON_HAXORUS";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0613_pokemon_cubchooEntry {
-  templateId: "FORMS_V0613_POKEMON_CUBCHOO";
-  data: Forms_v0001_pokemon_bulbasaurdata;
-}
-export interface Forms_v0614_pokemon_bearticEntry {
-  templateId: "FORMS_V0614_POKEMON_BEARTIC";
-  data: Forms_v0001_pokemon_bulbasaurdata;
-}
 export interface Forms_v0615_pokemon_cryogonalEntry {
   templateId: "FORMS_V0615_POKEMON_CRYOGONAL";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -2597,10 +2220,6 @@ export interface Forms_v0616_pokemon_shelmetEntry {
 export interface Forms_v0617_pokemon_accelgorEntry {
   templateId: "FORMS_V0617_POKEMON_ACCELGOR";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0618_pokemon_stunfiskEntry {
-  templateId: "FORMS_V0618_POKEMON_STUNFISK";
-  data: Forms_v0019_pokemon_rattatadata;
 }
 export interface Forms_v0619_pokemon_mienfooEntry {
   templateId: "FORMS_V0619_POKEMON_MIENFOO";
@@ -2690,14 +2309,6 @@ export interface Forms_v0640_pokemon_virizionEntry {
   templateId: "FORMS_V0640_POKEMON_VIRIZION";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0641_pokemon_tornadusEntry {
-  templateId: "FORMS_V0641_POKEMON_TORNADUS";
-  data: Forms_v0201_pokemon_unowndata;
-}
-export interface Forms_v0642_pokemon_thundurusEntry {
-  templateId: "FORMS_V0642_POKEMON_THUNDURUS";
-  data: Forms_v0201_pokemon_unowndata;
-}
 export interface Forms_v0643_pokemon_reshiramEntry {
   templateId: "FORMS_V0643_POKEMON_RESHIRAM";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -2705,26 +2316,6 @@ export interface Forms_v0643_pokemon_reshiramEntry {
 export interface Forms_v0644_pokemon_zekromEntry {
   templateId: "FORMS_V0644_POKEMON_ZEKROM";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0645_pokemon_landorusEntry {
-  templateId: "FORMS_V0645_POKEMON_LANDORUS";
-  data: Forms_v0201_pokemon_unowndata;
-}
-export interface Forms_v0646_pokemon_kyuremEntry {
-  templateId: "FORMS_V0646_POKEMON_KYUREM";
-  data: Forms_v0201_pokemon_unowndata;
-}
-export interface Forms_v0647_pokemon_keldeoEntry {
-  templateId: "FORMS_V0647_POKEMON_KELDEO";
-  data: Forms_v0201_pokemon_unowndata;
-}
-export interface Forms_v0648_pokemon_meloettaEntry {
-  templateId: "FORMS_V0648_POKEMON_MELOETTA";
-  data: Forms_v0201_pokemon_unowndata;
-}
-export interface Forms_v0649_pokemon_genesectEntry {
-  templateId: "FORMS_V0649_POKEMON_GENESECT";
-  data: Forms_v0201_pokemon_unowndata;
 }
 export interface Forms_v0650_pokemon_chespinEntry {
   templateId: "FORMS_V0650_POKEMON_CHESPIN";
@@ -2798,10 +2389,6 @@ export interface Forms_v0667_pokemon_litleoEntry {
   templateId: "FORMS_V0667_POKEMON_LITLEO";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0668_pokemon_pyroarEntry {
-  templateId: "FORMS_V0668_POKEMON_PYROAR";
-  data: Forms_v0019_pokemon_rattatadata;
-}
 export interface Forms_v0669_pokemon_flabebeEntry {
   templateId: "FORMS_V0669_POKEMON_FLABEBE";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -2830,17 +2417,9 @@ export interface Forms_v0675_pokemon_pangoroEntry {
   templateId: "FORMS_V0675_POKEMON_PANGORO";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0676_pokemon_furfrouEntry {
-  templateId: "FORMS_V0676_POKEMON_FURFROU";
-  data: Forms_v0201_pokemon_unowndata;
-}
 export interface Forms_v0677_pokemon_espurrEntry {
   templateId: "FORMS_V0677_POKEMON_ESPURR";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0678_pokemon_meowsticEntry {
-  templateId: "FORMS_V0678_POKEMON_MEOWSTIC";
-  data: Forms_v0019_pokemon_rattatadata;
 }
 export interface Forms_v0679_pokemon_honedgeEntry {
   templateId: "FORMS_V0679_POKEMON_HONEDGE";
@@ -2966,14 +2545,6 @@ export interface Forms_v0709_pokemon_trevenantEntry {
   templateId: "FORMS_V0709_POKEMON_TREVENANT";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0710_pokemon_pumpkabooEntry {
-  templateId: "FORMS_V0710_POKEMON_PUMPKABOO";
-  data: Forms_v0019_pokemon_rattatadata;
-}
-export interface Forms_v0711_pokemon_gourgeistEntry {
-  templateId: "FORMS_V0711_POKEMON_GOURGEIST";
-  data: Forms_v0019_pokemon_rattatadata;
-}
 export interface Forms_v0712_pokemon_bergmiteEntry {
   templateId: "FORMS_V0712_POKEMON_BERGMITE";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -2998,17 +2569,9 @@ export interface Forms_v0717_pokemon_yveltalEntry {
   templateId: "FORMS_V0717_POKEMON_YVELTAL";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0718_pokemon_zygardeEntry {
-  templateId: "FORMS_V0718_POKEMON_ZYGARDE";
-  data: Forms_v0019_pokemon_rattatadata;
-}
 export interface Forms_v0719_pokemon_diancieEntry {
   templateId: "FORMS_V0719_POKEMON_DIANCIE";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0720_pokemon_hoopaEntry {
-  templateId: "FORMS_V0720_POKEMON_HOOPA";
-  data: Forms_v0019_pokemon_rattatadata;
 }
 export interface Forms_v0721_pokemon_volcanionEntry {
   templateId: "FORMS_V0721_POKEMON_VOLCANION";
@@ -3073,14 +2636,6 @@ export interface Forms_v0735_pokemon_gumshoosEntry {
 export interface Forms_v0736_pokemon_grubbinEntry {
   templateId: "FORMS_V0736_POKEMON_GRUBBIN";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0737_pokemon_charjabugEntry {
-  templateId: "FORMS_V0737_POKEMON_CHARJABUG";
-  data: Forms_v0094_pokemon_gengardata;
-}
-export interface Forms_v0738_pokemon_vikavoltEntry {
-  templateId: "FORMS_V0738_POKEMON_VIKAVOLT";
-  data: Forms_v0094_pokemon_gengardata;
 }
 export interface Forms_v0739_pokemon_crabrawlerEntry {
   templateId: "FORMS_V0739_POKEMON_CRABRAWLER";
@@ -3166,10 +2721,6 @@ export interface Forms_v0759_pokemon_stuffulEntry {
   templateId: "FORMS_V0759_POKEMON_STUFFUL";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0760_pokemon_bewearEntry {
-  templateId: "FORMS_V0760_POKEMON_BEWEAR";
-  data: Forms_v0131_pokemon_laprasdata;
-}
 export interface Forms_v0761_pokemon_bounsweetEntry {
   templateId: "FORMS_V0761_POKEMON_BOUNSWEET";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -3217,10 +2768,6 @@ export interface Forms_v0771_pokemon_pyukumukuEntry {
 export interface Forms_v0772_pokemon_type_nullEntry {
   templateId: "FORMS_V0772_POKEMON_TYPE_NULL";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0773_pokemon_silvallyEntry {
-  templateId: "FORMS_V0773_POKEMON_SILVALLY";
-  data: Forms_v0201_pokemon_unowndata;
 }
 export interface Forms_v0774_pokemon_miniorEntry {
   templateId: "FORMS_V0774_POKEMON_MINIOR";
@@ -3542,26 +3089,6 @@ export interface Forms_v0853_pokemon_grapploctEntry {
   templateId: "FORMS_V0853_POKEMON_GRAPPLOCT";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0854_pokemon_sinisteadataformsettingsformsitemsillouetteobfuscationgroup {
-  groupNumber: number;
-  overrideDisplayForm: string;
-}
-export interface Forms_v0854_pokemon_sinisteadataformsettingsformsitem {
-  form: string;
-  sillouetteObfuscationGroup: Forms_v0854_pokemon_sinisteadataformsettingsformsitemsillouetteobfuscationgroup;
-}
-export interface Forms_v0854_pokemon_sinisteadataformsettings {
-  forms: (Forms_v0854_pokemon_sinisteadataformsettingsformsitem)[];
-  pokemon: string;
-}
-export interface Forms_v0854_pokemon_sinisteadata {
-  formSettings: Forms_v0854_pokemon_sinisteadataformsettings;
-  templateId: string;
-}
-export interface Forms_v0854_pokemon_sinisteaEntry {
-  templateId: "FORMS_V0854_POKEMON_SINISTEA";
-  data: Forms_v0854_pokemon_sinisteadata;
-}
 export interface Forms_v0855_pokemon_polteageistEntry {
   templateId: "FORMS_V0855_POKEMON_POLTEAGEIST";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -3590,29 +3117,9 @@ export interface Forms_v0861_pokemon_grimmsnarlEntry {
   templateId: "FORMS_V0861_POKEMON_GRIMMSNARL";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0862_pokemon_obstagoonEntry {
-  templateId: "FORMS_V0862_POKEMON_OBSTAGOON";
-  data: Forms_v0201_pokemon_unowndata;
-}
-export interface Forms_v0863_pokemon_perrserkerEntry {
-  templateId: "FORMS_V0863_POKEMON_PERRSERKER";
-  data: Forms_v0201_pokemon_unowndata;
-}
 export interface Forms_v0864_pokemon_cursolaEntry {
   templateId: "FORMS_V0864_POKEMON_CURSOLA";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0865_pokemon_sirfetchdEntry {
-  templateId: "FORMS_V0865_POKEMON_SIRFETCHD";
-  data: Forms_v0201_pokemon_unowndata;
-}
-export interface Forms_v0866_pokemon_mr_rimeEntry {
-  templateId: "FORMS_V0866_POKEMON_MR_RIME";
-  data: Forms_v0201_pokemon_unowndata;
-}
-export interface Forms_v0867_pokemon_runerigusEntry {
-  templateId: "FORMS_V0867_POKEMON_RUNERIGUS";
-  data: Forms_v0201_pokemon_unowndata;
 }
 export interface Forms_v0868_pokemon_milceryEntry {
   templateId: "FORMS_V0868_POKEMON_MILCERY";
@@ -3621,10 +3128,6 @@ export interface Forms_v0868_pokemon_milceryEntry {
 export interface Forms_v0869_pokemon_alcremieEntry {
   templateId: "FORMS_V0869_POKEMON_ALCREMIE";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v0870_pokemon_falinksEntry {
-  templateId: "FORMS_V0870_POKEMON_FALINKS";
-  data: Forms_v0131_pokemon_laprasdata;
 }
 export interface Forms_v0871_pokemon_pincurchinEntry {
   templateId: "FORMS_V0871_POKEMON_PINCURCHIN";
@@ -4070,10 +3573,6 @@ export interface Forms_v0981_pokemon_farigirafEntry {
   templateId: "FORMS_V0981_POKEMON_FARIGIRAF";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0982_pokemon_dudunsparceEntry {
-  templateId: "FORMS_V0982_POKEMON_DUDUNSPARCE";
-  data: Forms_v0854_pokemon_sinisteadata;
-}
 export interface Forms_v0983_pokemon_kingambitEntry {
   templateId: "FORMS_V0983_POKEMON_KINGAMBIT";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -4138,10 +3637,6 @@ export interface Forms_v0998_pokemon_baxcaliburEntry {
   templateId: "FORMS_V0998_POKEMON_BAXCALIBUR";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v0999_pokemon_gimmighoulEntry {
-  templateId: "FORMS_V0999_POKEMON_GIMMIGHOUL";
-  data: Forms_v0131_pokemon_laprasdata;
-}
 export interface Forms_v1000_pokemon_gholdengoEntry {
   templateId: "FORMS_V1000_POKEMON_GHOLDENGO";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -4190,10 +3685,6 @@ export interface Forms_v1011_pokemon_dipplinEntry {
   templateId: "FORMS_V1011_POKEMON_DIPPLIN";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
-export interface Forms_v1012_pokemon_poltchageistEntry {
-  templateId: "FORMS_V1012_POKEMON_POLTCHAGEIST";
-  data: Forms_v0854_pokemon_sinisteadata;
-}
 export interface Forms_v1013_pokemon_sinistchaEntry {
   templateId: "FORMS_V1013_POKEMON_SINISTCHA";
   data: Forms_v0002_pokemon_ivysaurdata;
@@ -4209,17 +3700,6 @@ export interface Forms_v1015_pokemon_munkidoriEntry {
 export interface Forms_v1016_pokemon_fezandipitiEntry {
   templateId: "FORMS_V1016_POKEMON_FEZANDIPITI";
   data: Forms_v0002_pokemon_ivysaurdata;
-}
-export interface Forms_v1017_pokemon_ogerpondataformsettings {
-  pokemon: string;
-}
-export interface Forms_v1017_pokemon_ogerpondata {
-  formSettings: Forms_v1017_pokemon_ogerpondataformsettings;
-  templateId: string;
-}
-export interface Forms_v1017_pokemon_ogerponEntry {
-  templateId: "FORMS_V1017_POKEMON_OGERPON";
-  data: Forms_v1017_pokemon_ogerpondata;
 }
 export interface Forms_v1018_pokemon_archaludonEntry {
   templateId: "FORMS_V1018_POKEMON_ARCHALUDON";
@@ -4253,18 +3733,539 @@ export interface Forms_v1025_pokemon_pecharuntEntry {
   templateId: "FORMS_V1025_POKEMON_PECHARUNT";
   data: Forms_v0002_pokemon_ivysaurdata;
 }
+export interface Forms_v0003_pokemon_venusaurdataformsettingsformsitem {
+  assetBundleSuffix?: string;
+  form: string;
+}
+export interface Forms_v0003_pokemon_venusaurdataformsettings {
+  forms: (Forms_v0003_pokemon_venusaurdataformsettingsformsitem)[];
+  pokemon: string;
+}
+export interface Forms_v0003_pokemon_venusaurdata {
+  formSettings: Forms_v0003_pokemon_venusaurdataformsettings;
+  templateId: string;
+}
+export interface Forms_v0003_pokemon_venusaurEntry {
+  templateId: "FORMS_V0003_POKEMON_VENUSAUR";
+  data: Forms_v0003_pokemon_venusaurdata;
+}
+export interface Forms_v0006_pokemon_charizardEntry {
+  templateId: "FORMS_V0006_POKEMON_CHARIZARD";
+  data: Forms_v0003_pokemon_venusaurdata;
+}
+export interface Forms_v0009_pokemon_blastoiseEntry {
+  templateId: "FORMS_V0009_POKEMON_BLASTOISE";
+  data: Forms_v0003_pokemon_venusaurdata;
+}
+export interface Forms_v0010_pokemon_caterpiedataformsettingsformsitem {
+  form: string | number;
+  isCostume?: boolean;
+}
+export interface Forms_v0010_pokemon_caterpiedataformsettings {
+  forms: (Forms_v0010_pokemon_caterpiedataformsettingsformsitem)[];
+  pokemon: string;
+}
+export interface Forms_v0010_pokemon_caterpiedata {
+  formSettings: Forms_v0010_pokemon_caterpiedataformsettings;
+  templateId: string;
+}
+export interface Forms_v0010_pokemon_caterpieEntry {
+  templateId: "FORMS_V0010_POKEMON_CATERPIE";
+  data: Forms_v0010_pokemon_caterpiedata;
+}
+export interface Forms_v0222_pokemon_corsolaEntry {
+  templateId: "FORMS_V0222_POKEMON_CORSOLA";
+  data: Forms_v0010_pokemon_caterpiedata;
+}
+export interface Forms_v0019_pokemon_rattatadataformsettingsformsitem {
+  assetBundleValue?: number;
+  form: string;
+}
+export interface Forms_v0019_pokemon_rattatadataformsettings {
+  forms: (Forms_v0019_pokemon_rattatadataformsettingsformsitem)[];
+  pokemon: string;
+}
+export interface Forms_v0019_pokemon_rattatadata {
+  formSettings: Forms_v0019_pokemon_rattatadataformsettings;
+  templateId: string;
+}
+export interface Forms_v0019_pokemon_rattataEntry {
+  templateId: "FORMS_V0019_POKEMON_RATTATA";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0020_pokemon_raticateEntry {
+  templateId: "FORMS_V0020_POKEMON_RATICATE";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0026_pokemon_raichuEntry {
+  templateId: "FORMS_V0026_POKEMON_RAICHU";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0027_pokemon_sandshrewEntry {
+  templateId: "FORMS_V0027_POKEMON_SANDSHREW";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0028_pokemon_sandslashEntry {
+  templateId: "FORMS_V0028_POKEMON_SANDSLASH";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0037_pokemon_vulpixEntry {
+  templateId: "FORMS_V0037_POKEMON_VULPIX";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0038_pokemon_ninetalesEntry {
+  templateId: "FORMS_V0038_POKEMON_NINETALES";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0050_pokemon_diglettEntry {
+  templateId: "FORMS_V0050_POKEMON_DIGLETT";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0051_pokemon_dugtrioEntry {
+  templateId: "FORMS_V0051_POKEMON_DUGTRIO";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0052_pokemon_meowthEntry {
+  templateId: "FORMS_V0052_POKEMON_MEOWTH";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0053_pokemon_persianEntry {
+  templateId: "FORMS_V0053_POKEMON_PERSIAN";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0074_pokemon_geodudeEntry {
+  templateId: "FORMS_V0074_POKEMON_GEODUDE";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0075_pokemon_gravelerEntry {
+  templateId: "FORMS_V0075_POKEMON_GRAVELER";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0076_pokemon_golemEntry {
+  templateId: "FORMS_V0076_POKEMON_GOLEM";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0077_pokemon_ponytaEntry {
+  templateId: "FORMS_V0077_POKEMON_PONYTA";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0078_pokemon_rapidashEntry {
+  templateId: "FORMS_V0078_POKEMON_RAPIDASH";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0083_pokemon_farfetchdEntry {
+  templateId: "FORMS_V0083_POKEMON_FARFETCHD";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0088_pokemon_grimerEntry {
+  templateId: "FORMS_V0088_POKEMON_GRIMER";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0089_pokemon_mukEntry {
+  templateId: "FORMS_V0089_POKEMON_MUK";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0103_pokemon_exeggutorEntry {
+  templateId: "FORMS_V0103_POKEMON_EXEGGUTOR";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0105_pokemon_marowakEntry {
+  templateId: "FORMS_V0105_POKEMON_MAROWAK";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0110_pokemon_weezingEntry {
+  templateId: "FORMS_V0110_POKEMON_WEEZING";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0122_pokemon_mr_mimeEntry {
+  templateId: "FORMS_V0122_POKEMON_MR_MIME";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0144_pokemon_articunoEntry {
+  templateId: "FORMS_V0144_POKEMON_ARTICUNO";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0145_pokemon_zapdosEntry {
+  templateId: "FORMS_V0145_POKEMON_ZAPDOS";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0146_pokemon_moltresEntry {
+  templateId: "FORMS_V0146_POKEMON_MOLTRES";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0263_pokemon_zigzagoonEntry {
+  templateId: "FORMS_V0263_POKEMON_ZIGZAGOON";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0264_pokemon_linooneEntry {
+  templateId: "FORMS_V0264_POKEMON_LINOONE";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0550_pokemon_basculinEntry {
+  templateId: "FORMS_V0550_POKEMON_BASCULIN";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0554_pokemon_darumakaEntry {
+  templateId: "FORMS_V0554_POKEMON_DARUMAKA";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0562_pokemon_yamaskEntry {
+  templateId: "FORMS_V0562_POKEMON_YAMASK";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0592_pokemon_frillishEntry {
+  templateId: "FORMS_V0592_POKEMON_FRILLISH";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0593_pokemon_jellicentEntry {
+  templateId: "FORMS_V0593_POKEMON_JELLICENT";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0618_pokemon_stunfiskEntry {
+  templateId: "FORMS_V0618_POKEMON_STUNFISK";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0668_pokemon_pyroarEntry {
+  templateId: "FORMS_V0668_POKEMON_PYROAR";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0678_pokemon_meowsticEntry {
+  templateId: "FORMS_V0678_POKEMON_MEOWSTIC";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0710_pokemon_pumpkabooEntry {
+  templateId: "FORMS_V0710_POKEMON_PUMPKABOO";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0711_pokemon_gourgeistEntry {
+  templateId: "FORMS_V0711_POKEMON_GOURGEIST";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0718_pokemon_zygardeEntry {
+  templateId: "FORMS_V0718_POKEMON_ZYGARDE";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0720_pokemon_hoopaEntry {
+  templateId: "FORMS_V0720_POKEMON_HOOPA";
+  data: Forms_v0019_pokemon_rattatadata;
+}
+export interface Forms_v0025_pokemon_pikachudataformsettingsformsitem {
+  assetBundleSuffix?: string;
+  assetBundleValue?: number;
+  form: string | number;
+  isCostume?: boolean;
+}
+export interface Forms_v0025_pokemon_pikachudataformsettings {
+  forms: (Forms_v0025_pokemon_pikachudataformsettingsformsitem)[];
+  pokemon: string;
+}
+export interface Forms_v0025_pokemon_pikachudata {
+  formSettings: Forms_v0025_pokemon_pikachudataformsettings;
+  templateId: string;
+}
+export interface Forms_v0025_pokemon_pikachuEntry {
+  templateId: "FORMS_V0025_POKEMON_PIKACHU";
+  data: Forms_v0025_pokemon_pikachudata;
+}
+export interface Forms_v0079_pokemon_slowpokedataformsettingsformsitem {
+  assetBundleSuffix?: string;
+  assetBundleValue?: number;
+  form: string;
+  isCostume?: boolean;
+}
+export interface Forms_v0079_pokemon_slowpokedataformsettings {
+  forms: (Forms_v0079_pokemon_slowpokedataformsettingsformsitem)[];
+  pokemon: string;
+}
+export interface Forms_v0079_pokemon_slowpokedata {
+  formSettings: Forms_v0079_pokemon_slowpokedataformsettings;
+  templateId: string;
+}
+export interface Forms_v0079_pokemon_slowpokeEntry {
+  templateId: "FORMS_V0079_POKEMON_SLOWPOKE";
+  data: Forms_v0079_pokemon_slowpokedata;
+}
+export interface Forms_v0080_pokemon_slowbroEntry {
+  templateId: "FORMS_V0080_POKEMON_SLOWBRO";
+  data: Forms_v0079_pokemon_slowpokedata;
+}
+export interface Forms_v0094_pokemon_gengardataformsettingsformsitem {
+  assetBundleValue?: number;
+  form: string;
+  isCostume?: boolean;
+}
+export interface Forms_v0094_pokemon_gengardataformsettings {
+  forms: (Forms_v0094_pokemon_gengardataformsettingsformsitem)[];
+  pokemon: string;
+}
+export interface Forms_v0094_pokemon_gengardata {
+  formSettings: Forms_v0094_pokemon_gengardataformsettings;
+  templateId: string;
+}
+export interface Forms_v0094_pokemon_gengarEntry {
+  templateId: "FORMS_V0094_POKEMON_GENGAR";
+  data: Forms_v0094_pokemon_gengardata;
+}
+export interface Forms_v0185_pokemon_sudowoodoEntry {
+  templateId: "FORMS_V0185_POKEMON_SUDOWOODO";
+  data: Forms_v0094_pokemon_gengardata;
+}
+export interface Forms_v0199_pokemon_slowkingEntry {
+  templateId: "FORMS_V0199_POKEMON_SLOWKING";
+  data: Forms_v0094_pokemon_gengardata;
+}
+export interface Forms_v0737_pokemon_charjabugEntry {
+  templateId: "FORMS_V0737_POKEMON_CHARJABUG";
+  data: Forms_v0094_pokemon_gengardata;
+}
+export interface Forms_v0738_pokemon_vikavoltEntry {
+  templateId: "FORMS_V0738_POKEMON_VIKAVOLT";
+  data: Forms_v0094_pokemon_gengardata;
+}
+export interface Forms_v0131_pokemon_laprasdataformsettingsformsitem {
+  form: string;
+  isCostume?: boolean;
+}
+export interface Forms_v0131_pokemon_laprasdataformsettings {
+  forms: (Forms_v0131_pokemon_laprasdataformsettingsformsitem)[];
+  pokemon: string;
+}
+export interface Forms_v0131_pokemon_laprasdata {
+  formSettings: Forms_v0131_pokemon_laprasdataformsettings;
+  templateId: string;
+}
+export interface Forms_v0131_pokemon_laprasEntry {
+  templateId: "FORMS_V0131_POKEMON_LAPRAS";
+  data: Forms_v0131_pokemon_laprasdata;
+}
+export interface Forms_v0132_pokemon_dittoEntry {
+  templateId: "FORMS_V0132_POKEMON_DITTO";
+  data: Forms_v0131_pokemon_laprasdata;
+}
+export interface Forms_v0133_pokemon_eeveeEntry {
+  templateId: "FORMS_V0133_POKEMON_EEVEE";
+  data: Forms_v0131_pokemon_laprasdata;
+}
+export interface Forms_v0142_pokemon_aerodactylEntry {
+  templateId: "FORMS_V0142_POKEMON_AERODACTYL";
+  data: Forms_v0131_pokemon_laprasdata;
+}
+export interface Forms_v0143_pokemon_snorlaxEntry {
+  templateId: "FORMS_V0143_POKEMON_SNORLAX";
+  data: Forms_v0131_pokemon_laprasdata;
+}
+export interface Forms_v0196_pokemon_espeonEntry {
+  templateId: "FORMS_V0196_POKEMON_ESPEON";
+  data: Forms_v0131_pokemon_laprasdata;
+}
+export interface Forms_v0197_pokemon_umbreonEntry {
+  templateId: "FORMS_V0197_POKEMON_UMBREON";
+  data: Forms_v0131_pokemon_laprasdata;
+}
+export interface Forms_v0760_pokemon_bewearEntry {
+  templateId: "FORMS_V0760_POKEMON_BEWEAR";
+  data: Forms_v0131_pokemon_laprasdata;
+}
+export interface Forms_v0870_pokemon_falinksEntry {
+  templateId: "FORMS_V0870_POKEMON_FALINKS";
+  data: Forms_v0131_pokemon_laprasdata;
+}
+export interface Forms_v0999_pokemon_gimmighoulEntry {
+  templateId: "FORMS_V0999_POKEMON_GIMMIGHOUL";
+  data: Forms_v0131_pokemon_laprasdata;
+}
+export interface Forms_v0201_pokemon_unowndataformsettingsformsitem {
+  assetBundleValue: number;
+  form: string;
+}
+export interface Forms_v0201_pokemon_unowndataformsettings {
+  forms: (Forms_v0201_pokemon_unowndataformsettingsformsitem)[];
+  pokemon: string;
+}
+export interface Forms_v0201_pokemon_unowndata {
+  formSettings: Forms_v0201_pokemon_unowndataformsettings;
+  templateId: string;
+}
+export interface Forms_v0201_pokemon_unownEntry {
+  templateId: "FORMS_V0201_POKEMON_UNOWN";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0327_pokemon_spindaEntry {
+  templateId: "FORMS_V0327_POKEMON_SPINDA";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0351_pokemon_castformEntry {
+  templateId: "FORMS_V0351_POKEMON_CASTFORM";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0386_pokemon_deoxysEntry {
+  templateId: "FORMS_V0386_POKEMON_DEOXYS";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0412_pokemon_burmyEntry {
+  templateId: "FORMS_V0412_POKEMON_BURMY";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0413_pokemon_wormadamEntry {
+  templateId: "FORMS_V0413_POKEMON_WORMADAM";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0421_pokemon_cherrimEntry {
+  templateId: "FORMS_V0421_POKEMON_CHERRIM";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0422_pokemon_shellosEntry {
+  templateId: "FORMS_V0422_POKEMON_SHELLOS";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0423_pokemon_gastrodonEntry {
+  templateId: "FORMS_V0423_POKEMON_GASTRODON";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0479_pokemon_rotomEntry {
+  templateId: "FORMS_V0479_POKEMON_ROTOM";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0483_pokemon_dialgaEntry {
+  templateId: "FORMS_V0483_POKEMON_DIALGA";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0484_pokemon_palkiaEntry {
+  templateId: "FORMS_V0484_POKEMON_PALKIA";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0487_pokemon_giratinaEntry {
+  templateId: "FORMS_V0487_POKEMON_GIRATINA";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0492_pokemon_shayminEntry {
+  templateId: "FORMS_V0492_POKEMON_SHAYMIN";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0493_pokemon_arceusEntry {
+  templateId: "FORMS_V0493_POKEMON_ARCEUS";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0555_pokemon_darmanitanEntry {
+  templateId: "FORMS_V0555_POKEMON_DARMANITAN";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0585_pokemon_deerlingEntry {
+  templateId: "FORMS_V0585_POKEMON_DEERLING";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0586_pokemon_sawsbuckEntry {
+  templateId: "FORMS_V0586_POKEMON_SAWSBUCK";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0641_pokemon_tornadusEntry {
+  templateId: "FORMS_V0641_POKEMON_TORNADUS";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0642_pokemon_thundurusEntry {
+  templateId: "FORMS_V0642_POKEMON_THUNDURUS";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0645_pokemon_landorusEntry {
+  templateId: "FORMS_V0645_POKEMON_LANDORUS";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0646_pokemon_kyuremEntry {
+  templateId: "FORMS_V0646_POKEMON_KYUREM";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0647_pokemon_keldeoEntry {
+  templateId: "FORMS_V0647_POKEMON_KELDEO";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0648_pokemon_meloettaEntry {
+  templateId: "FORMS_V0648_POKEMON_MELOETTA";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0649_pokemon_genesectEntry {
+  templateId: "FORMS_V0649_POKEMON_GENESECT";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0676_pokemon_furfrouEntry {
+  templateId: "FORMS_V0676_POKEMON_FURFROU";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0773_pokemon_silvallyEntry {
+  templateId: "FORMS_V0773_POKEMON_SILVALLY";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0862_pokemon_obstagoonEntry {
+  templateId: "FORMS_V0862_POKEMON_OBSTAGOON";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0863_pokemon_perrserkerEntry {
+  templateId: "FORMS_V0863_POKEMON_PERRSERKER";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0865_pokemon_sirfetchdEntry {
+  templateId: "FORMS_V0865_POKEMON_SIRFETCHD";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0866_pokemon_mr_rimeEntry {
+  templateId: "FORMS_V0866_POKEMON_MR_RIME";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0867_pokemon_runerigusEntry {
+  templateId: "FORMS_V0867_POKEMON_RUNERIGUS";
+  data: Forms_v0201_pokemon_unowndata;
+}
+export interface Forms_v0854_pokemon_sinisteadataformsettingsformsitemsillouetteobfuscationgroup {
+  groupNumber: number;
+  overrideDisplayForm: string;
+}
+export interface Forms_v0854_pokemon_sinisteadataformsettingsformsitem {
+  form: string;
+  sillouetteObfuscationGroup: Forms_v0854_pokemon_sinisteadataformsettingsformsitemsillouetteobfuscationgroup;
+}
+export interface Forms_v0854_pokemon_sinisteadataformsettings {
+  forms: (Forms_v0854_pokemon_sinisteadataformsettingsformsitem)[];
+  pokemon: string;
+}
+export interface Forms_v0854_pokemon_sinisteadata {
+  formSettings: Forms_v0854_pokemon_sinisteadataformsettings;
+  templateId: string;
+}
+export interface Forms_v0854_pokemon_sinisteaEntry {
+  templateId: "FORMS_V0854_POKEMON_SINISTEA";
+  data: Forms_v0854_pokemon_sinisteadata;
+}
+export interface Forms_v0982_pokemon_dudunsparceEntry {
+  templateId: "FORMS_V0982_POKEMON_DUDUNSPARCE";
+  data: Forms_v0854_pokemon_sinisteadata;
+}
+export interface Forms_v1012_pokemon_poltchageistEntry {
+  templateId: "FORMS_V1012_POKEMON_POLTCHAGEIST";
+  data: Forms_v0854_pokemon_sinisteadata;
+}
+export interface Forms_v1017_pokemon_ogerpondataformsettings {
+  pokemon: string;
+}
+export interface Forms_v1017_pokemon_ogerpondata {
+  formSettings: Forms_v1017_pokemon_ogerpondataformsettings;
+  templateId: string;
+}
+export interface Forms_v1017_pokemon_ogerponEntry {
+  templateId: "FORMS_V1017_POKEMON_OGERPON";
+  data: Forms_v1017_pokemon_ogerpondata;
+}
 
 export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0001_POKEMON_BULBASAUR": Forms_v0001_pokemon_bulbasaurEntry;
-  "FORMS_V0002_POKEMON_IVYSAUR": Forms_v0002_pokemon_ivysaurEntry;
-  "FORMS_V0003_POKEMON_VENUSAUR": Forms_v0003_pokemon_venusaurEntry;
   "FORMS_V0004_POKEMON_CHARMANDER": Forms_v0004_pokemon_charmanderEntry;
-  "FORMS_V0005_POKEMON_CHARMELEON": Forms_v0005_pokemon_charmeleonEntry;
-  "FORMS_V0006_POKEMON_CHARIZARD": Forms_v0006_pokemon_charizardEntry;
   "FORMS_V0007_POKEMON_SQUIRTLE": Forms_v0007_pokemon_squirtleEntry;
+  "FORMS_V0150_POKEMON_MEWTWO": Forms_v0150_pokemon_mewtwoEntry;
+  "FORMS_V0225_POKEMON_DELIBIRD": Forms_v0225_pokemon_delibirdEntry;
+  "FORMS_V0302_POKEMON_SABLEYE": Forms_v0302_pokemon_sableyeEntry;
+  "FORMS_V0613_POKEMON_CUBCHOO": Forms_v0613_pokemon_cubchooEntry;
+  "FORMS_V0614_POKEMON_BEARTIC": Forms_v0614_pokemon_bearticEntry;
+  "FORMS_V0002_POKEMON_IVYSAUR": Forms_v0002_pokemon_ivysaurEntry;
+  "FORMS_V0005_POKEMON_CHARMELEON": Forms_v0005_pokemon_charmeleonEntry;
   "FORMS_V0008_POKEMON_WARTORTLE": Forms_v0008_pokemon_wartortleEntry;
-  "FORMS_V0009_POKEMON_BLASTOISE": Forms_v0009_pokemon_blastoiseEntry;
-  "FORMS_V0010_POKEMON_CATERPIE": Forms_v0010_pokemon_caterpieEntry;
   "FORMS_V0011_POKEMON_METAPOD": Forms_v0011_pokemon_metapodEntry;
   "FORMS_V0012_POKEMON_BUTTERFREE": Forms_v0012_pokemon_butterfreeEntry;
   "FORMS_V0013_POKEMON_WEEDLE": Forms_v0013_pokemon_weedleEntry;
@@ -4273,16 +4274,10 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0016_POKEMON_PIDGEY": Forms_v0016_pokemon_pidgeyEntry;
   "FORMS_V0017_POKEMON_PIDGEOTTO": Forms_v0017_pokemon_pidgeottoEntry;
   "FORMS_V0018_POKEMON_PIDGEOT": Forms_v0018_pokemon_pidgeotEntry;
-  "FORMS_V0019_POKEMON_RATTATA": Forms_v0019_pokemon_rattataEntry;
-  "FORMS_V0020_POKEMON_RATICATE": Forms_v0020_pokemon_raticateEntry;
   "FORMS_V0021_POKEMON_SPEAROW": Forms_v0021_pokemon_spearowEntry;
   "FORMS_V0022_POKEMON_FEAROW": Forms_v0022_pokemon_fearowEntry;
   "FORMS_V0023_POKEMON_EKANS": Forms_v0023_pokemon_ekansEntry;
   "FORMS_V0024_POKEMON_ARBOK": Forms_v0024_pokemon_arbokEntry;
-  "FORMS_V0025_POKEMON_PIKACHU": Forms_v0025_pokemon_pikachuEntry;
-  "FORMS_V0026_POKEMON_RAICHU": Forms_v0026_pokemon_raichuEntry;
-  "FORMS_V0027_POKEMON_SANDSHREW": Forms_v0027_pokemon_sandshrewEntry;
-  "FORMS_V0028_POKEMON_SANDSLASH": Forms_v0028_pokemon_sandslashEntry;
   "FORMS_V0029_POKEMON_NIDORAN": Forms_v0029_pokemon_nidoranEntry;
   "FORMS_V0030_POKEMON_NIDORINA": Forms_v0030_pokemon_nidorinaEntry;
   "FORMS_V0031_POKEMON_NIDOQUEEN": Forms_v0031_pokemon_nidoqueenEntry;
@@ -4291,8 +4286,6 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0034_POKEMON_NIDOKING": Forms_v0034_pokemon_nidokingEntry;
   "FORMS_V0035_POKEMON_CLEFAIRY": Forms_v0035_pokemon_clefairyEntry;
   "FORMS_V0036_POKEMON_CLEFABLE": Forms_v0036_pokemon_clefableEntry;
-  "FORMS_V0037_POKEMON_VULPIX": Forms_v0037_pokemon_vulpixEntry;
-  "FORMS_V0038_POKEMON_NINETALES": Forms_v0038_pokemon_ninetalesEntry;
   "FORMS_V0039_POKEMON_JIGGLYPUFF": Forms_v0039_pokemon_jigglypuffEntry;
   "FORMS_V0040_POKEMON_WIGGLYTUFF": Forms_v0040_pokemon_wigglytuffEntry;
   "FORMS_V0041_POKEMON_ZUBAT": Forms_v0041_pokemon_zubatEntry;
@@ -4304,10 +4297,6 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0047_POKEMON_PARASECT": Forms_v0047_pokemon_parasectEntry;
   "FORMS_V0048_POKEMON_VENONAT": Forms_v0048_pokemon_venonatEntry;
   "FORMS_V0049_POKEMON_VENOMOTH": Forms_v0049_pokemon_venomothEntry;
-  "FORMS_V0050_POKEMON_DIGLETT": Forms_v0050_pokemon_diglettEntry;
-  "FORMS_V0051_POKEMON_DUGTRIO": Forms_v0051_pokemon_dugtrioEntry;
-  "FORMS_V0052_POKEMON_MEOWTH": Forms_v0052_pokemon_meowthEntry;
-  "FORMS_V0053_POKEMON_PERSIAN": Forms_v0053_pokemon_persianEntry;
   "FORMS_V0054_POKEMON_PSYDUCK": Forms_v0054_pokemon_psyduckEntry;
   "FORMS_V0055_POKEMON_GOLDUCK": Forms_v0055_pokemon_golduckEntry;
   "FORMS_V0056_POKEMON_MANKEY": Forms_v0056_pokemon_mankeyEntry;
@@ -4328,27 +4317,16 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0071_POKEMON_VICTREEBEL": Forms_v0071_pokemon_victreebelEntry;
   "FORMS_V0072_POKEMON_TENTACOOL": Forms_v0072_pokemon_tentacoolEntry;
   "FORMS_V0073_POKEMON_TENTACRUEL": Forms_v0073_pokemon_tentacruelEntry;
-  "FORMS_V0074_POKEMON_GEODUDE": Forms_v0074_pokemon_geodudeEntry;
-  "FORMS_V0075_POKEMON_GRAVELER": Forms_v0075_pokemon_gravelerEntry;
-  "FORMS_V0076_POKEMON_GOLEM": Forms_v0076_pokemon_golemEntry;
-  "FORMS_V0077_POKEMON_PONYTA": Forms_v0077_pokemon_ponytaEntry;
-  "FORMS_V0078_POKEMON_RAPIDASH": Forms_v0078_pokemon_rapidashEntry;
-  "FORMS_V0079_POKEMON_SLOWPOKE": Forms_v0079_pokemon_slowpokeEntry;
-  "FORMS_V0080_POKEMON_SLOWBRO": Forms_v0080_pokemon_slowbroEntry;
   "FORMS_V0081_POKEMON_MAGNEMITE": Forms_v0081_pokemon_magnemiteEntry;
   "FORMS_V0082_POKEMON_MAGNETON": Forms_v0082_pokemon_magnetonEntry;
-  "FORMS_V0083_POKEMON_FARFETCHD": Forms_v0083_pokemon_farfetchdEntry;
   "FORMS_V0084_POKEMON_DODUO": Forms_v0084_pokemon_doduoEntry;
   "FORMS_V0085_POKEMON_DODRIO": Forms_v0085_pokemon_dodrioEntry;
   "FORMS_V0086_POKEMON_SEEL": Forms_v0086_pokemon_seelEntry;
   "FORMS_V0087_POKEMON_DEWGONG": Forms_v0087_pokemon_dewgongEntry;
-  "FORMS_V0088_POKEMON_GRIMER": Forms_v0088_pokemon_grimerEntry;
-  "FORMS_V0089_POKEMON_MUK": Forms_v0089_pokemon_mukEntry;
   "FORMS_V0090_POKEMON_SHELLDER": Forms_v0090_pokemon_shellderEntry;
   "FORMS_V0091_POKEMON_CLOYSTER": Forms_v0091_pokemon_cloysterEntry;
   "FORMS_V0092_POKEMON_GASTLY": Forms_v0092_pokemon_gastlyEntry;
   "FORMS_V0093_POKEMON_HAUNTER": Forms_v0093_pokemon_haunterEntry;
-  "FORMS_V0094_POKEMON_GENGAR": Forms_v0094_pokemon_gengarEntry;
   "FORMS_V0095_POKEMON_ONIX": Forms_v0095_pokemon_onixEntry;
   "FORMS_V0096_POKEMON_DROWZEE": Forms_v0096_pokemon_drowzeeEntry;
   "FORMS_V0097_POKEMON_HYPNO": Forms_v0097_pokemon_hypnoEntry;
@@ -4357,14 +4335,11 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0100_POKEMON_VOLTORB": Forms_v0100_pokemon_voltorbEntry;
   "FORMS_V0101_POKEMON_ELECTRODE": Forms_v0101_pokemon_electrodeEntry;
   "FORMS_V0102_POKEMON_EXEGGCUTE": Forms_v0102_pokemon_exeggcuteEntry;
-  "FORMS_V0103_POKEMON_EXEGGUTOR": Forms_v0103_pokemon_exeggutorEntry;
   "FORMS_V0104_POKEMON_CUBONE": Forms_v0104_pokemon_cuboneEntry;
-  "FORMS_V0105_POKEMON_MAROWAK": Forms_v0105_pokemon_marowakEntry;
   "FORMS_V0106_POKEMON_HITMONLEE": Forms_v0106_pokemon_hitmonleeEntry;
   "FORMS_V0107_POKEMON_HITMONCHAN": Forms_v0107_pokemon_hitmonchanEntry;
   "FORMS_V0108_POKEMON_LICKITUNG": Forms_v0108_pokemon_lickitungEntry;
   "FORMS_V0109_POKEMON_KOFFING": Forms_v0109_pokemon_koffingEntry;
-  "FORMS_V0110_POKEMON_WEEZING": Forms_v0110_pokemon_weezingEntry;
   "FORMS_V0111_POKEMON_RHYHORN": Forms_v0111_pokemon_rhyhornEntry;
   "FORMS_V0112_POKEMON_RHYDON": Forms_v0112_pokemon_rhydonEntry;
   "FORMS_V0113_POKEMON_CHANSEY": Forms_v0113_pokemon_chanseyEntry;
@@ -4376,7 +4351,6 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0119_POKEMON_SEAKING": Forms_v0119_pokemon_seakingEntry;
   "FORMS_V0120_POKEMON_STARYU": Forms_v0120_pokemon_staryuEntry;
   "FORMS_V0121_POKEMON_STARMIE": Forms_v0121_pokemon_starmieEntry;
-  "FORMS_V0122_POKEMON_MR_MIME": Forms_v0122_pokemon_mr_mimeEntry;
   "FORMS_V0123_POKEMON_SCYTHER": Forms_v0123_pokemon_scytherEntry;
   "FORMS_V0124_POKEMON_JYNX": Forms_v0124_pokemon_jynxEntry;
   "FORMS_V0125_POKEMON_ELECTABUZZ": Forms_v0125_pokemon_electabuzzEntry;
@@ -4385,9 +4359,6 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0128_POKEMON_TAUROS": Forms_v0128_pokemon_taurosEntry;
   "FORMS_V0129_POKEMON_MAGIKARP": Forms_v0129_pokemon_magikarpEntry;
   "FORMS_V0130_POKEMON_GYARADOS": Forms_v0130_pokemon_gyaradosEntry;
-  "FORMS_V0131_POKEMON_LAPRAS": Forms_v0131_pokemon_laprasEntry;
-  "FORMS_V0132_POKEMON_DITTO": Forms_v0132_pokemon_dittoEntry;
-  "FORMS_V0133_POKEMON_EEVEE": Forms_v0133_pokemon_eeveeEntry;
   "FORMS_V0134_POKEMON_VAPOREON": Forms_v0134_pokemon_vaporeonEntry;
   "FORMS_V0135_POKEMON_JOLTEON": Forms_v0135_pokemon_jolteonEntry;
   "FORMS_V0136_POKEMON_FLAREON": Forms_v0136_pokemon_flareonEntry;
@@ -4396,15 +4367,9 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0139_POKEMON_OMASTAR": Forms_v0139_pokemon_omastarEntry;
   "FORMS_V0140_POKEMON_KABUTO": Forms_v0140_pokemon_kabutoEntry;
   "FORMS_V0141_POKEMON_KABUTOPS": Forms_v0141_pokemon_kabutopsEntry;
-  "FORMS_V0142_POKEMON_AERODACTYL": Forms_v0142_pokemon_aerodactylEntry;
-  "FORMS_V0143_POKEMON_SNORLAX": Forms_v0143_pokemon_snorlaxEntry;
-  "FORMS_V0144_POKEMON_ARTICUNO": Forms_v0144_pokemon_articunoEntry;
-  "FORMS_V0145_POKEMON_ZAPDOS": Forms_v0145_pokemon_zapdosEntry;
-  "FORMS_V0146_POKEMON_MOLTRES": Forms_v0146_pokemon_moltresEntry;
   "FORMS_V0147_POKEMON_DRATINI": Forms_v0147_pokemon_dratiniEntry;
   "FORMS_V0148_POKEMON_DRAGONAIR": Forms_v0148_pokemon_dragonairEntry;
   "FORMS_V0149_POKEMON_DRAGONITE": Forms_v0149_pokemon_dragoniteEntry;
-  "FORMS_V0150_POKEMON_MEWTWO": Forms_v0150_pokemon_mewtwoEntry;
   "FORMS_V0151_POKEMON_MEW": Forms_v0151_pokemon_mewEntry;
   "FORMS_V0152_POKEMON_CHIKORITA": Forms_v0152_pokemon_chikoritaEntry;
   "FORMS_V0153_POKEMON_BAYLEEF": Forms_v0153_pokemon_bayleefEntry;
@@ -4439,7 +4404,6 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0182_POKEMON_BELLOSSOM": Forms_v0182_pokemon_bellossomEntry;
   "FORMS_V0183_POKEMON_MARILL": Forms_v0183_pokemon_marillEntry;
   "FORMS_V0184_POKEMON_AZUMARILL": Forms_v0184_pokemon_azumarillEntry;
-  "FORMS_V0185_POKEMON_SUDOWOODO": Forms_v0185_pokemon_sudowoodoEntry;
   "FORMS_V0186_POKEMON_POLITOED": Forms_v0186_pokemon_politoedEntry;
   "FORMS_V0187_POKEMON_HOPPIP": Forms_v0187_pokemon_hoppipEntry;
   "FORMS_V0188_POKEMON_SKIPLOOM": Forms_v0188_pokemon_skiploomEntry;
@@ -4450,12 +4414,8 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0193_POKEMON_YANMA": Forms_v0193_pokemon_yanmaEntry;
   "FORMS_V0194_POKEMON_WOOPER": Forms_v0194_pokemon_wooperEntry;
   "FORMS_V0195_POKEMON_QUAGSIRE": Forms_v0195_pokemon_quagsireEntry;
-  "FORMS_V0196_POKEMON_ESPEON": Forms_v0196_pokemon_espeonEntry;
-  "FORMS_V0197_POKEMON_UMBREON": Forms_v0197_pokemon_umbreonEntry;
   "FORMS_V0198_POKEMON_MURKROW": Forms_v0198_pokemon_murkrowEntry;
-  "FORMS_V0199_POKEMON_SLOWKING": Forms_v0199_pokemon_slowkingEntry;
   "FORMS_V0200_POKEMON_MISDREAVUS": Forms_v0200_pokemon_misdreavusEntry;
-  "FORMS_V0201_POKEMON_UNOWN": Forms_v0201_pokemon_unownEntry;
   "FORMS_V0202_POKEMON_WOBBUFFET": Forms_v0202_pokemon_wobbuffetEntry;
   "FORMS_V0203_POKEMON_GIRAFARIG": Forms_v0203_pokemon_girafarigEntry;
   "FORMS_V0204_POKEMON_PINECO": Forms_v0204_pokemon_pinecoEntry;
@@ -4476,10 +4436,8 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0219_POKEMON_MAGCARGO": Forms_v0219_pokemon_magcargoEntry;
   "FORMS_V0220_POKEMON_SWINUB": Forms_v0220_pokemon_swinubEntry;
   "FORMS_V0221_POKEMON_PILOSWINE": Forms_v0221_pokemon_piloswineEntry;
-  "FORMS_V0222_POKEMON_CORSOLA": Forms_v0222_pokemon_corsolaEntry;
   "FORMS_V0223_POKEMON_REMORAID": Forms_v0223_pokemon_remoraidEntry;
   "FORMS_V0224_POKEMON_OCTILLERY": Forms_v0224_pokemon_octilleryEntry;
-  "FORMS_V0225_POKEMON_DELIBIRD": Forms_v0225_pokemon_delibirdEntry;
   "FORMS_V0226_POKEMON_MANTINE": Forms_v0226_pokemon_mantineEntry;
   "FORMS_V0227_POKEMON_SKARMORY": Forms_v0227_pokemon_skarmoryEntry;
   "FORMS_V0228_POKEMON_HOUNDOUR": Forms_v0228_pokemon_houndourEntry;
@@ -4517,8 +4475,6 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0260_POKEMON_SWAMPERT": Forms_v0260_pokemon_swampertEntry;
   "FORMS_V0261_POKEMON_POOCHYENA": Forms_v0261_pokemon_poochyenaEntry;
   "FORMS_V0262_POKEMON_MIGHTYENA": Forms_v0262_pokemon_mightyenaEntry;
-  "FORMS_V0263_POKEMON_ZIGZAGOON": Forms_v0263_pokemon_zigzagoonEntry;
-  "FORMS_V0264_POKEMON_LINOONE": Forms_v0264_pokemon_linooneEntry;
   "FORMS_V0265_POKEMON_WURMPLE": Forms_v0265_pokemon_wurmpleEntry;
   "FORMS_V0266_POKEMON_SILCOON": Forms_v0266_pokemon_silcoonEntry;
   "FORMS_V0267_POKEMON_BEAUTIFLY": Forms_v0267_pokemon_beautiflyEntry;
@@ -4556,7 +4512,6 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0299_POKEMON_NOSEPASS": Forms_v0299_pokemon_nosepassEntry;
   "FORMS_V0300_POKEMON_SKITTY": Forms_v0300_pokemon_skittyEntry;
   "FORMS_V0301_POKEMON_DELCATTY": Forms_v0301_pokemon_delcattyEntry;
-  "FORMS_V0302_POKEMON_SABLEYE": Forms_v0302_pokemon_sableyeEntry;
   "FORMS_V0303_POKEMON_MAWILE": Forms_v0303_pokemon_mawileEntry;
   "FORMS_V0304_POKEMON_ARON": Forms_v0304_pokemon_aronEntry;
   "FORMS_V0305_POKEMON_LAIRON": Forms_v0305_pokemon_laironEntry;
@@ -4581,7 +4536,6 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0324_POKEMON_TORKOAL": Forms_v0324_pokemon_torkoalEntry;
   "FORMS_V0325_POKEMON_SPOINK": Forms_v0325_pokemon_spoinkEntry;
   "FORMS_V0326_POKEMON_GRUMPIG": Forms_v0326_pokemon_grumpigEntry;
-  "FORMS_V0327_POKEMON_SPINDA": Forms_v0327_pokemon_spindaEntry;
   "FORMS_V0328_POKEMON_TRAPINCH": Forms_v0328_pokemon_trapinchEntry;
   "FORMS_V0329_POKEMON_VIBRAVA": Forms_v0329_pokemon_vibravaEntry;
   "FORMS_V0330_POKEMON_FLYGON": Forms_v0330_pokemon_flygonEntry;
@@ -4605,7 +4559,6 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0348_POKEMON_ARMALDO": Forms_v0348_pokemon_armaldoEntry;
   "FORMS_V0349_POKEMON_FEEBAS": Forms_v0349_pokemon_feebasEntry;
   "FORMS_V0350_POKEMON_MILOTIC": Forms_v0350_pokemon_miloticEntry;
-  "FORMS_V0351_POKEMON_CASTFORM": Forms_v0351_pokemon_castformEntry;
   "FORMS_V0352_POKEMON_KECLEON": Forms_v0352_pokemon_kecleonEntry;
   "FORMS_V0353_POKEMON_SHUPPET": Forms_v0353_pokemon_shuppetEntry;
   "FORMS_V0354_POKEMON_BANETTE": Forms_v0354_pokemon_banetteEntry;
@@ -4640,7 +4593,6 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0383_POKEMON_GROUDON": Forms_v0383_pokemon_groudonEntry;
   "FORMS_V0384_POKEMON_RAYQUAZA": Forms_v0384_pokemon_rayquazaEntry;
   "FORMS_V0385_POKEMON_JIRACHI": Forms_v0385_pokemon_jirachiEntry;
-  "FORMS_V0386_POKEMON_DEOXYS": Forms_v0386_pokemon_deoxysEntry;
   "FORMS_V0387_POKEMON_TURTWIG": Forms_v0387_pokemon_turtwigEntry;
   "FORMS_V0388_POKEMON_GROTLE": Forms_v0388_pokemon_grotleEntry;
   "FORMS_V0389_POKEMON_TORTERRA": Forms_v0389_pokemon_torterraEntry;
@@ -4666,8 +4618,6 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0409_POKEMON_RAMPARDOS": Forms_v0409_pokemon_rampardosEntry;
   "FORMS_V0410_POKEMON_SHIELDON": Forms_v0410_pokemon_shieldonEntry;
   "FORMS_V0411_POKEMON_BASTIODON": Forms_v0411_pokemon_bastiodonEntry;
-  "FORMS_V0412_POKEMON_BURMY": Forms_v0412_pokemon_burmyEntry;
-  "FORMS_V0413_POKEMON_WORMADAM": Forms_v0413_pokemon_wormadamEntry;
   "FORMS_V0414_POKEMON_MOTHIM": Forms_v0414_pokemon_mothimEntry;
   "FORMS_V0415_POKEMON_COMBEE": Forms_v0415_pokemon_combeeEntry;
   "FORMS_V0416_POKEMON_VESPIQUEN": Forms_v0416_pokemon_vespiquenEntry;
@@ -4675,9 +4625,6 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0418_POKEMON_BUIZEL": Forms_v0418_pokemon_buizelEntry;
   "FORMS_V0419_POKEMON_FLOATZEL": Forms_v0419_pokemon_floatzelEntry;
   "FORMS_V0420_POKEMON_CHERUBI": Forms_v0420_pokemon_cherubiEntry;
-  "FORMS_V0421_POKEMON_CHERRIM": Forms_v0421_pokemon_cherrimEntry;
-  "FORMS_V0422_POKEMON_SHELLOS": Forms_v0422_pokemon_shellosEntry;
-  "FORMS_V0423_POKEMON_GASTRODON": Forms_v0423_pokemon_gastrodonEntry;
   "FORMS_V0424_POKEMON_AMBIPOM": Forms_v0424_pokemon_ambipomEntry;
   "FORMS_V0425_POKEMON_DRIFLOON": Forms_v0425_pokemon_drifloonEntry;
   "FORMS_V0426_POKEMON_DRIFBLIM": Forms_v0426_pokemon_drifblimEntry;
@@ -4733,21 +4680,15 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0476_POKEMON_PROBOPASS": Forms_v0476_pokemon_probopassEntry;
   "FORMS_V0477_POKEMON_DUSKNOIR": Forms_v0477_pokemon_dusknoirEntry;
   "FORMS_V0478_POKEMON_FROSLASS": Forms_v0478_pokemon_froslassEntry;
-  "FORMS_V0479_POKEMON_ROTOM": Forms_v0479_pokemon_rotomEntry;
   "FORMS_V0480_POKEMON_UXIE": Forms_v0480_pokemon_uxieEntry;
   "FORMS_V0481_POKEMON_MESPRIT": Forms_v0481_pokemon_mespritEntry;
   "FORMS_V0482_POKEMON_AZELF": Forms_v0482_pokemon_azelfEntry;
-  "FORMS_V0483_POKEMON_DIALGA": Forms_v0483_pokemon_dialgaEntry;
-  "FORMS_V0484_POKEMON_PALKIA": Forms_v0484_pokemon_palkiaEntry;
   "FORMS_V0485_POKEMON_HEATRAN": Forms_v0485_pokemon_heatranEntry;
   "FORMS_V0486_POKEMON_REGIGIGAS": Forms_v0486_pokemon_regigigasEntry;
-  "FORMS_V0487_POKEMON_GIRATINA": Forms_v0487_pokemon_giratinaEntry;
   "FORMS_V0488_POKEMON_CRESSELIA": Forms_v0488_pokemon_cresseliaEntry;
   "FORMS_V0489_POKEMON_PHIONE": Forms_v0489_pokemon_phioneEntry;
   "FORMS_V0490_POKEMON_MANAPHY": Forms_v0490_pokemon_manaphyEntry;
   "FORMS_V0491_POKEMON_DARKRAI": Forms_v0491_pokemon_darkraiEntry;
-  "FORMS_V0492_POKEMON_SHAYMIN": Forms_v0492_pokemon_shayminEntry;
-  "FORMS_V0493_POKEMON_ARCEUS": Forms_v0493_pokemon_arceusEntry;
   "FORMS_V0494_POKEMON_VICTINI": Forms_v0494_pokemon_victiniEntry;
   "FORMS_V0495_POKEMON_SNIVY": Forms_v0495_pokemon_snivyEntry;
   "FORMS_V0496_POKEMON_SERVINE": Forms_v0496_pokemon_servineEntry;
@@ -4804,19 +4745,15 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0547_POKEMON_WHIMSICOTT": Forms_v0547_pokemon_whimsicottEntry;
   "FORMS_V0548_POKEMON_PETILIL": Forms_v0548_pokemon_petililEntry;
   "FORMS_V0549_POKEMON_LILLIGANT": Forms_v0549_pokemon_lilligantEntry;
-  "FORMS_V0550_POKEMON_BASCULIN": Forms_v0550_pokemon_basculinEntry;
   "FORMS_V0551_POKEMON_SANDILE": Forms_v0551_pokemon_sandileEntry;
   "FORMS_V0552_POKEMON_KROKOROK": Forms_v0552_pokemon_krokorokEntry;
   "FORMS_V0553_POKEMON_KROOKODILE": Forms_v0553_pokemon_krookodileEntry;
-  "FORMS_V0554_POKEMON_DARUMAKA": Forms_v0554_pokemon_darumakaEntry;
-  "FORMS_V0555_POKEMON_DARMANITAN": Forms_v0555_pokemon_darmanitanEntry;
   "FORMS_V0556_POKEMON_MARACTUS": Forms_v0556_pokemon_maractusEntry;
   "FORMS_V0557_POKEMON_DWEBBLE": Forms_v0557_pokemon_dwebbleEntry;
   "FORMS_V0558_POKEMON_CRUSTLE": Forms_v0558_pokemon_crustleEntry;
   "FORMS_V0559_POKEMON_SCRAGGY": Forms_v0559_pokemon_scraggyEntry;
   "FORMS_V0560_POKEMON_SCRAFTY": Forms_v0560_pokemon_scraftyEntry;
   "FORMS_V0561_POKEMON_SIGILYPH": Forms_v0561_pokemon_sigilyphEntry;
-  "FORMS_V0562_POKEMON_YAMASK": Forms_v0562_pokemon_yamaskEntry;
   "FORMS_V0563_POKEMON_COFAGRIGUS": Forms_v0563_pokemon_cofagrigusEntry;
   "FORMS_V0564_POKEMON_TIRTOUGA": Forms_v0564_pokemon_tirtougaEntry;
   "FORMS_V0565_POKEMON_CARRACOSTA": Forms_v0565_pokemon_carracostaEntry;
@@ -4839,15 +4776,11 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0582_POKEMON_VANILLITE": Forms_v0582_pokemon_vanilliteEntry;
   "FORMS_V0583_POKEMON_VANILLISH": Forms_v0583_pokemon_vanillishEntry;
   "FORMS_V0584_POKEMON_VANILLUXE": Forms_v0584_pokemon_vanilluxeEntry;
-  "FORMS_V0585_POKEMON_DEERLING": Forms_v0585_pokemon_deerlingEntry;
-  "FORMS_V0586_POKEMON_SAWSBUCK": Forms_v0586_pokemon_sawsbuckEntry;
   "FORMS_V0587_POKEMON_EMOLGA": Forms_v0587_pokemon_emolgaEntry;
   "FORMS_V0588_POKEMON_KARRABLAST": Forms_v0588_pokemon_karrablastEntry;
   "FORMS_V0589_POKEMON_ESCAVALIER": Forms_v0589_pokemon_escavalierEntry;
   "FORMS_V0590_POKEMON_FOONGUS": Forms_v0590_pokemon_foongusEntry;
   "FORMS_V0591_POKEMON_AMOONGUSS": Forms_v0591_pokemon_amoongussEntry;
-  "FORMS_V0592_POKEMON_FRILLISH": Forms_v0592_pokemon_frillishEntry;
-  "FORMS_V0593_POKEMON_JELLICENT": Forms_v0593_pokemon_jellicentEntry;
   "FORMS_V0594_POKEMON_ALOMOMOLA": Forms_v0594_pokemon_alomomolaEntry;
   "FORMS_V0595_POKEMON_JOLTIK": Forms_v0595_pokemon_joltikEntry;
   "FORMS_V0596_POKEMON_GALVANTULA": Forms_v0596_pokemon_galvantulaEntry;
@@ -4867,12 +4800,9 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0610_POKEMON_AXEW": Forms_v0610_pokemon_axewEntry;
   "FORMS_V0611_POKEMON_FRAXURE": Forms_v0611_pokemon_fraxureEntry;
   "FORMS_V0612_POKEMON_HAXORUS": Forms_v0612_pokemon_haxorusEntry;
-  "FORMS_V0613_POKEMON_CUBCHOO": Forms_v0613_pokemon_cubchooEntry;
-  "FORMS_V0614_POKEMON_BEARTIC": Forms_v0614_pokemon_bearticEntry;
   "FORMS_V0615_POKEMON_CRYOGONAL": Forms_v0615_pokemon_cryogonalEntry;
   "FORMS_V0616_POKEMON_SHELMET": Forms_v0616_pokemon_shelmetEntry;
   "FORMS_V0617_POKEMON_ACCELGOR": Forms_v0617_pokemon_accelgorEntry;
-  "FORMS_V0618_POKEMON_STUNFISK": Forms_v0618_pokemon_stunfiskEntry;
   "FORMS_V0619_POKEMON_MIENFOO": Forms_v0619_pokemon_mienfooEntry;
   "FORMS_V0620_POKEMON_MIENSHAO": Forms_v0620_pokemon_mienshaoEntry;
   "FORMS_V0621_POKEMON_DRUDDIGON": Forms_v0621_pokemon_druddigonEntry;
@@ -4895,15 +4825,8 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0638_POKEMON_COBALION": Forms_v0638_pokemon_cobalionEntry;
   "FORMS_V0639_POKEMON_TERRAKION": Forms_v0639_pokemon_terrakionEntry;
   "FORMS_V0640_POKEMON_VIRIZION": Forms_v0640_pokemon_virizionEntry;
-  "FORMS_V0641_POKEMON_TORNADUS": Forms_v0641_pokemon_tornadusEntry;
-  "FORMS_V0642_POKEMON_THUNDURUS": Forms_v0642_pokemon_thundurusEntry;
   "FORMS_V0643_POKEMON_RESHIRAM": Forms_v0643_pokemon_reshiramEntry;
   "FORMS_V0644_POKEMON_ZEKROM": Forms_v0644_pokemon_zekromEntry;
-  "FORMS_V0645_POKEMON_LANDORUS": Forms_v0645_pokemon_landorusEntry;
-  "FORMS_V0646_POKEMON_KYUREM": Forms_v0646_pokemon_kyuremEntry;
-  "FORMS_V0647_POKEMON_KELDEO": Forms_v0647_pokemon_keldeoEntry;
-  "FORMS_V0648_POKEMON_MELOETTA": Forms_v0648_pokemon_meloettaEntry;
-  "FORMS_V0649_POKEMON_GENESECT": Forms_v0649_pokemon_genesectEntry;
   "FORMS_V0650_POKEMON_CHESPIN": Forms_v0650_pokemon_chespinEntry;
   "FORMS_V0651_POKEMON_QUILLADIN": Forms_v0651_pokemon_quilladinEntry;
   "FORMS_V0652_POKEMON_CHESNAUGHT": Forms_v0652_pokemon_chesnaughtEntry;
@@ -4922,7 +4845,6 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0665_POKEMON_SPEWPA": Forms_v0665_pokemon_spewpaEntry;
   "FORMS_V0666_POKEMON_VIVILLON": Forms_v0666_pokemon_vivillonEntry;
   "FORMS_V0667_POKEMON_LITLEO": Forms_v0667_pokemon_litleoEntry;
-  "FORMS_V0668_POKEMON_PYROAR": Forms_v0668_pokemon_pyroarEntry;
   "FORMS_V0669_POKEMON_FLABEBE": Forms_v0669_pokemon_flabebeEntry;
   "FORMS_V0670_POKEMON_FLOETTE": Forms_v0670_pokemon_floetteEntry;
   "FORMS_V0671_POKEMON_FLORGES": Forms_v0671_pokemon_florgesEntry;
@@ -4930,9 +4852,7 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0673_POKEMON_GOGOAT": Forms_v0673_pokemon_gogoatEntry;
   "FORMS_V0674_POKEMON_PANCHAM": Forms_v0674_pokemon_panchamEntry;
   "FORMS_V0675_POKEMON_PANGORO": Forms_v0675_pokemon_pangoroEntry;
-  "FORMS_V0676_POKEMON_FURFROU": Forms_v0676_pokemon_furfrouEntry;
   "FORMS_V0677_POKEMON_ESPURR": Forms_v0677_pokemon_espurrEntry;
-  "FORMS_V0678_POKEMON_MEOWSTIC": Forms_v0678_pokemon_meowsticEntry;
   "FORMS_V0679_POKEMON_HONEDGE": Forms_v0679_pokemon_honedgeEntry;
   "FORMS_V0680_POKEMON_DOUBLADE": Forms_v0680_pokemon_doubladeEntry;
   "FORMS_V0681_POKEMON_AEGISLASH": Forms_v0681_pokemon_aegislashEntry;
@@ -4964,17 +4884,13 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0707_POKEMON_KLEFKI": Forms_v0707_pokemon_klefkiEntry;
   "FORMS_V0708_POKEMON_PHANTUMP": Forms_v0708_pokemon_phantumpEntry;
   "FORMS_V0709_POKEMON_TREVENANT": Forms_v0709_pokemon_trevenantEntry;
-  "FORMS_V0710_POKEMON_PUMPKABOO": Forms_v0710_pokemon_pumpkabooEntry;
-  "FORMS_V0711_POKEMON_GOURGEIST": Forms_v0711_pokemon_gourgeistEntry;
   "FORMS_V0712_POKEMON_BERGMITE": Forms_v0712_pokemon_bergmiteEntry;
   "FORMS_V0713_POKEMON_AVALUGG": Forms_v0713_pokemon_avaluggEntry;
   "FORMS_V0714_POKEMON_NOIBAT": Forms_v0714_pokemon_noibatEntry;
   "FORMS_V0715_POKEMON_NOIVERN": Forms_v0715_pokemon_noivernEntry;
   "FORMS_V0716_POKEMON_XERNEAS": Forms_v0716_pokemon_xerneasEntry;
   "FORMS_V0717_POKEMON_YVELTAL": Forms_v0717_pokemon_yveltalEntry;
-  "FORMS_V0718_POKEMON_ZYGARDE": Forms_v0718_pokemon_zygardeEntry;
   "FORMS_V0719_POKEMON_DIANCIE": Forms_v0719_pokemon_diancieEntry;
-  "FORMS_V0720_POKEMON_HOOPA": Forms_v0720_pokemon_hoopaEntry;
   "FORMS_V0721_POKEMON_VOLCANION": Forms_v0721_pokemon_volcanionEntry;
   "FORMS_V0722_POKEMON_ROWLET": Forms_v0722_pokemon_rowletEntry;
   "FORMS_V0723_POKEMON_DARTRIX": Forms_v0723_pokemon_dartrixEntry;
@@ -4991,8 +4907,6 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0734_POKEMON_YUNGOOS": Forms_v0734_pokemon_yungoosEntry;
   "FORMS_V0735_POKEMON_GUMSHOOS": Forms_v0735_pokemon_gumshoosEntry;
   "FORMS_V0736_POKEMON_GRUBBIN": Forms_v0736_pokemon_grubbinEntry;
-  "FORMS_V0737_POKEMON_CHARJABUG": Forms_v0737_pokemon_charjabugEntry;
-  "FORMS_V0738_POKEMON_VIKAVOLT": Forms_v0738_pokemon_vikavoltEntry;
   "FORMS_V0739_POKEMON_CRABRAWLER": Forms_v0739_pokemon_crabrawlerEntry;
   "FORMS_V0740_POKEMON_CRABOMINABLE": Forms_v0740_pokemon_crabominableEntry;
   "FORMS_V0741_POKEMON_ORICORIO": Forms_v0741_pokemon_oricorioEntry;
@@ -5014,7 +4928,6 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0757_POKEMON_SALANDIT": Forms_v0757_pokemon_salanditEntry;
   "FORMS_V0758_POKEMON_SALAZZLE": Forms_v0758_pokemon_salazzleEntry;
   "FORMS_V0759_POKEMON_STUFFUL": Forms_v0759_pokemon_stuffulEntry;
-  "FORMS_V0760_POKEMON_BEWEAR": Forms_v0760_pokemon_bewearEntry;
   "FORMS_V0761_POKEMON_BOUNSWEET": Forms_v0761_pokemon_bounsweetEntry;
   "FORMS_V0762_POKEMON_STEENEE": Forms_v0762_pokemon_steeneeEntry;
   "FORMS_V0763_POKEMON_TSAREENA": Forms_v0763_pokemon_tsareenaEntry;
@@ -5027,7 +4940,6 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0770_POKEMON_PALOSSAND": Forms_v0770_pokemon_palossandEntry;
   "FORMS_V0771_POKEMON_PYUKUMUKU": Forms_v0771_pokemon_pyukumukuEntry;
   "FORMS_V0772_POKEMON_TYPE_NULL": Forms_v0772_pokemon_type_nullEntry;
-  "FORMS_V0773_POKEMON_SILVALLY": Forms_v0773_pokemon_silvallyEntry;
   "FORMS_V0774_POKEMON_MINIOR": Forms_v0774_pokemon_miniorEntry;
   "FORMS_V0775_POKEMON_KOMALA": Forms_v0775_pokemon_komalaEntry;
   "FORMS_V0776_POKEMON_TURTONATOR": Forms_v0776_pokemon_turtonatorEntry;
@@ -5108,7 +5020,6 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0851_POKEMON_CENTISKORCH": Forms_v0851_pokemon_centiskorchEntry;
   "FORMS_V0852_POKEMON_CLOBBOPUS": Forms_v0852_pokemon_clobbopusEntry;
   "FORMS_V0853_POKEMON_GRAPPLOCT": Forms_v0853_pokemon_grapploctEntry;
-  "FORMS_V0854_POKEMON_SINISTEA": Forms_v0854_pokemon_sinisteaEntry;
   "FORMS_V0855_POKEMON_POLTEAGEIST": Forms_v0855_pokemon_polteageistEntry;
   "FORMS_V0856_POKEMON_HATENNA": Forms_v0856_pokemon_hatennaEntry;
   "FORMS_V0857_POKEMON_HATTREM": Forms_v0857_pokemon_hattremEntry;
@@ -5116,15 +5027,9 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0859_POKEMON_IMPIDIMP": Forms_v0859_pokemon_impidimpEntry;
   "FORMS_V0860_POKEMON_MORGREM": Forms_v0860_pokemon_morgremEntry;
   "FORMS_V0861_POKEMON_GRIMMSNARL": Forms_v0861_pokemon_grimmsnarlEntry;
-  "FORMS_V0862_POKEMON_OBSTAGOON": Forms_v0862_pokemon_obstagoonEntry;
-  "FORMS_V0863_POKEMON_PERRSERKER": Forms_v0863_pokemon_perrserkerEntry;
   "FORMS_V0864_POKEMON_CURSOLA": Forms_v0864_pokemon_cursolaEntry;
-  "FORMS_V0865_POKEMON_SIRFETCHD": Forms_v0865_pokemon_sirfetchdEntry;
-  "FORMS_V0866_POKEMON_MR_RIME": Forms_v0866_pokemon_mr_rimeEntry;
-  "FORMS_V0867_POKEMON_RUNERIGUS": Forms_v0867_pokemon_runerigusEntry;
   "FORMS_V0868_POKEMON_MILCERY": Forms_v0868_pokemon_milceryEntry;
   "FORMS_V0869_POKEMON_ALCREMIE": Forms_v0869_pokemon_alcremieEntry;
-  "FORMS_V0870_POKEMON_FALINKS": Forms_v0870_pokemon_falinksEntry;
   "FORMS_V0871_POKEMON_PINCURCHIN": Forms_v0871_pokemon_pincurchinEntry;
   "FORMS_V0872_POKEMON_SNOM": Forms_v0872_pokemon_snomEntry;
   "FORMS_V0873_POKEMON_FROSMOTH": Forms_v0873_pokemon_frosmothEntry;
@@ -5236,7 +5141,6 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0979_POKEMON_ANNIHILAPE": Forms_v0979_pokemon_annihilapeEntry;
   "FORMS_V0980_POKEMON_CLODSIRE": Forms_v0980_pokemon_clodsireEntry;
   "FORMS_V0981_POKEMON_FARIGIRAF": Forms_v0981_pokemon_farigirafEntry;
-  "FORMS_V0982_POKEMON_DUDUNSPARCE": Forms_v0982_pokemon_dudunsparceEntry;
   "FORMS_V0983_POKEMON_KINGAMBIT": Forms_v0983_pokemon_kingambitEntry;
   "FORMS_V0984_POKEMON_GREATTUSK": Forms_v0984_pokemon_greattuskEntry;
   "FORMS_V0985_POKEMON_SCREAMTAIL": Forms_v0985_pokemon_screamtailEntry;
@@ -5253,7 +5157,6 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V0996_POKEMON_FRIGIBAX": Forms_v0996_pokemon_frigibaxEntry;
   "FORMS_V0997_POKEMON_ARCTIBAX": Forms_v0997_pokemon_arctibaxEntry;
   "FORMS_V0998_POKEMON_BAXCALIBUR": Forms_v0998_pokemon_baxcaliburEntry;
-  "FORMS_V0999_POKEMON_GIMMIGHOUL": Forms_v0999_pokemon_gimmighoulEntry;
   "FORMS_V1000_POKEMON_GHOLDENGO": Forms_v1000_pokemon_gholdengoEntry;
   "FORMS_V1001_POKEMON_WOCHIEN": Forms_v1001_pokemon_wochienEntry;
   "FORMS_V1002_POKEMON_CHIENPAO": Forms_v1002_pokemon_chienpaoEntry;
@@ -5266,12 +5169,10 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V1009_POKEMON_WALKINGWAKE": Forms_v1009_pokemon_walkingwakeEntry;
   "FORMS_V1010_POKEMON_IRONLEAVES": Forms_v1010_pokemon_ironleavesEntry;
   "FORMS_V1011_POKEMON_DIPPLIN": Forms_v1011_pokemon_dipplinEntry;
-  "FORMS_V1012_POKEMON_POLTCHAGEIST": Forms_v1012_pokemon_poltchageistEntry;
   "FORMS_V1013_POKEMON_SINISTCHA": Forms_v1013_pokemon_sinistchaEntry;
   "FORMS_V1014_POKEMON_OKIDOGI": Forms_v1014_pokemon_okidogiEntry;
   "FORMS_V1015_POKEMON_MUNKIDORI": Forms_v1015_pokemon_munkidoriEntry;
   "FORMS_V1016_POKEMON_FEZANDIPITI": Forms_v1016_pokemon_fezandipitiEntry;
-  "FORMS_V1017_POKEMON_OGERPON": Forms_v1017_pokemon_ogerponEntry;
   "FORMS_V1018_POKEMON_ARCHALUDON": Forms_v1018_pokemon_archaludonEntry;
   "FORMS_V1019_POKEMON_HYDRAPPLE": Forms_v1019_pokemon_hydrappleEntry;
   "FORMS_V1020_POKEMON_GOUGINGFIRE": Forms_v1020_pokemon_gougingfireEntry;
@@ -5280,6 +5181,105 @@ export interface FormsSettingsMasterfileByTemplateId {
   "FORMS_V1023_POKEMON_IRONCROWN": Forms_v1023_pokemon_ironcrownEntry;
   "FORMS_V1024_POKEMON_TERAPAGOS": Forms_v1024_pokemon_terapagosEntry;
   "FORMS_V1025_POKEMON_PECHARUNT": Forms_v1025_pokemon_pecharuntEntry;
+  "FORMS_V0003_POKEMON_VENUSAUR": Forms_v0003_pokemon_venusaurEntry;
+  "FORMS_V0006_POKEMON_CHARIZARD": Forms_v0006_pokemon_charizardEntry;
+  "FORMS_V0009_POKEMON_BLASTOISE": Forms_v0009_pokemon_blastoiseEntry;
+  "FORMS_V0010_POKEMON_CATERPIE": Forms_v0010_pokemon_caterpieEntry;
+  "FORMS_V0222_POKEMON_CORSOLA": Forms_v0222_pokemon_corsolaEntry;
+  "FORMS_V0019_POKEMON_RATTATA": Forms_v0019_pokemon_rattataEntry;
+  "FORMS_V0020_POKEMON_RATICATE": Forms_v0020_pokemon_raticateEntry;
+  "FORMS_V0026_POKEMON_RAICHU": Forms_v0026_pokemon_raichuEntry;
+  "FORMS_V0027_POKEMON_SANDSHREW": Forms_v0027_pokemon_sandshrewEntry;
+  "FORMS_V0028_POKEMON_SANDSLASH": Forms_v0028_pokemon_sandslashEntry;
+  "FORMS_V0037_POKEMON_VULPIX": Forms_v0037_pokemon_vulpixEntry;
+  "FORMS_V0038_POKEMON_NINETALES": Forms_v0038_pokemon_ninetalesEntry;
+  "FORMS_V0050_POKEMON_DIGLETT": Forms_v0050_pokemon_diglettEntry;
+  "FORMS_V0051_POKEMON_DUGTRIO": Forms_v0051_pokemon_dugtrioEntry;
+  "FORMS_V0052_POKEMON_MEOWTH": Forms_v0052_pokemon_meowthEntry;
+  "FORMS_V0053_POKEMON_PERSIAN": Forms_v0053_pokemon_persianEntry;
+  "FORMS_V0074_POKEMON_GEODUDE": Forms_v0074_pokemon_geodudeEntry;
+  "FORMS_V0075_POKEMON_GRAVELER": Forms_v0075_pokemon_gravelerEntry;
+  "FORMS_V0076_POKEMON_GOLEM": Forms_v0076_pokemon_golemEntry;
+  "FORMS_V0077_POKEMON_PONYTA": Forms_v0077_pokemon_ponytaEntry;
+  "FORMS_V0078_POKEMON_RAPIDASH": Forms_v0078_pokemon_rapidashEntry;
+  "FORMS_V0083_POKEMON_FARFETCHD": Forms_v0083_pokemon_farfetchdEntry;
+  "FORMS_V0088_POKEMON_GRIMER": Forms_v0088_pokemon_grimerEntry;
+  "FORMS_V0089_POKEMON_MUK": Forms_v0089_pokemon_mukEntry;
+  "FORMS_V0103_POKEMON_EXEGGUTOR": Forms_v0103_pokemon_exeggutorEntry;
+  "FORMS_V0105_POKEMON_MAROWAK": Forms_v0105_pokemon_marowakEntry;
+  "FORMS_V0110_POKEMON_WEEZING": Forms_v0110_pokemon_weezingEntry;
+  "FORMS_V0122_POKEMON_MR_MIME": Forms_v0122_pokemon_mr_mimeEntry;
+  "FORMS_V0144_POKEMON_ARTICUNO": Forms_v0144_pokemon_articunoEntry;
+  "FORMS_V0145_POKEMON_ZAPDOS": Forms_v0145_pokemon_zapdosEntry;
+  "FORMS_V0146_POKEMON_MOLTRES": Forms_v0146_pokemon_moltresEntry;
+  "FORMS_V0263_POKEMON_ZIGZAGOON": Forms_v0263_pokemon_zigzagoonEntry;
+  "FORMS_V0264_POKEMON_LINOONE": Forms_v0264_pokemon_linooneEntry;
+  "FORMS_V0550_POKEMON_BASCULIN": Forms_v0550_pokemon_basculinEntry;
+  "FORMS_V0554_POKEMON_DARUMAKA": Forms_v0554_pokemon_darumakaEntry;
+  "FORMS_V0562_POKEMON_YAMASK": Forms_v0562_pokemon_yamaskEntry;
+  "FORMS_V0592_POKEMON_FRILLISH": Forms_v0592_pokemon_frillishEntry;
+  "FORMS_V0593_POKEMON_JELLICENT": Forms_v0593_pokemon_jellicentEntry;
+  "FORMS_V0618_POKEMON_STUNFISK": Forms_v0618_pokemon_stunfiskEntry;
+  "FORMS_V0668_POKEMON_PYROAR": Forms_v0668_pokemon_pyroarEntry;
+  "FORMS_V0678_POKEMON_MEOWSTIC": Forms_v0678_pokemon_meowsticEntry;
+  "FORMS_V0710_POKEMON_PUMPKABOO": Forms_v0710_pokemon_pumpkabooEntry;
+  "FORMS_V0711_POKEMON_GOURGEIST": Forms_v0711_pokemon_gourgeistEntry;
+  "FORMS_V0718_POKEMON_ZYGARDE": Forms_v0718_pokemon_zygardeEntry;
+  "FORMS_V0720_POKEMON_HOOPA": Forms_v0720_pokemon_hoopaEntry;
+  "FORMS_V0025_POKEMON_PIKACHU": Forms_v0025_pokemon_pikachuEntry;
+  "FORMS_V0079_POKEMON_SLOWPOKE": Forms_v0079_pokemon_slowpokeEntry;
+  "FORMS_V0080_POKEMON_SLOWBRO": Forms_v0080_pokemon_slowbroEntry;
+  "FORMS_V0094_POKEMON_GENGAR": Forms_v0094_pokemon_gengarEntry;
+  "FORMS_V0185_POKEMON_SUDOWOODO": Forms_v0185_pokemon_sudowoodoEntry;
+  "FORMS_V0199_POKEMON_SLOWKING": Forms_v0199_pokemon_slowkingEntry;
+  "FORMS_V0737_POKEMON_CHARJABUG": Forms_v0737_pokemon_charjabugEntry;
+  "FORMS_V0738_POKEMON_VIKAVOLT": Forms_v0738_pokemon_vikavoltEntry;
+  "FORMS_V0131_POKEMON_LAPRAS": Forms_v0131_pokemon_laprasEntry;
+  "FORMS_V0132_POKEMON_DITTO": Forms_v0132_pokemon_dittoEntry;
+  "FORMS_V0133_POKEMON_EEVEE": Forms_v0133_pokemon_eeveeEntry;
+  "FORMS_V0142_POKEMON_AERODACTYL": Forms_v0142_pokemon_aerodactylEntry;
+  "FORMS_V0143_POKEMON_SNORLAX": Forms_v0143_pokemon_snorlaxEntry;
+  "FORMS_V0196_POKEMON_ESPEON": Forms_v0196_pokemon_espeonEntry;
+  "FORMS_V0197_POKEMON_UMBREON": Forms_v0197_pokemon_umbreonEntry;
+  "FORMS_V0760_POKEMON_BEWEAR": Forms_v0760_pokemon_bewearEntry;
+  "FORMS_V0870_POKEMON_FALINKS": Forms_v0870_pokemon_falinksEntry;
+  "FORMS_V0999_POKEMON_GIMMIGHOUL": Forms_v0999_pokemon_gimmighoulEntry;
+  "FORMS_V0201_POKEMON_UNOWN": Forms_v0201_pokemon_unownEntry;
+  "FORMS_V0327_POKEMON_SPINDA": Forms_v0327_pokemon_spindaEntry;
+  "FORMS_V0351_POKEMON_CASTFORM": Forms_v0351_pokemon_castformEntry;
+  "FORMS_V0386_POKEMON_DEOXYS": Forms_v0386_pokemon_deoxysEntry;
+  "FORMS_V0412_POKEMON_BURMY": Forms_v0412_pokemon_burmyEntry;
+  "FORMS_V0413_POKEMON_WORMADAM": Forms_v0413_pokemon_wormadamEntry;
+  "FORMS_V0421_POKEMON_CHERRIM": Forms_v0421_pokemon_cherrimEntry;
+  "FORMS_V0422_POKEMON_SHELLOS": Forms_v0422_pokemon_shellosEntry;
+  "FORMS_V0423_POKEMON_GASTRODON": Forms_v0423_pokemon_gastrodonEntry;
+  "FORMS_V0479_POKEMON_ROTOM": Forms_v0479_pokemon_rotomEntry;
+  "FORMS_V0483_POKEMON_DIALGA": Forms_v0483_pokemon_dialgaEntry;
+  "FORMS_V0484_POKEMON_PALKIA": Forms_v0484_pokemon_palkiaEntry;
+  "FORMS_V0487_POKEMON_GIRATINA": Forms_v0487_pokemon_giratinaEntry;
+  "FORMS_V0492_POKEMON_SHAYMIN": Forms_v0492_pokemon_shayminEntry;
+  "FORMS_V0493_POKEMON_ARCEUS": Forms_v0493_pokemon_arceusEntry;
+  "FORMS_V0555_POKEMON_DARMANITAN": Forms_v0555_pokemon_darmanitanEntry;
+  "FORMS_V0585_POKEMON_DEERLING": Forms_v0585_pokemon_deerlingEntry;
+  "FORMS_V0586_POKEMON_SAWSBUCK": Forms_v0586_pokemon_sawsbuckEntry;
+  "FORMS_V0641_POKEMON_TORNADUS": Forms_v0641_pokemon_tornadusEntry;
+  "FORMS_V0642_POKEMON_THUNDURUS": Forms_v0642_pokemon_thundurusEntry;
+  "FORMS_V0645_POKEMON_LANDORUS": Forms_v0645_pokemon_landorusEntry;
+  "FORMS_V0646_POKEMON_KYUREM": Forms_v0646_pokemon_kyuremEntry;
+  "FORMS_V0647_POKEMON_KELDEO": Forms_v0647_pokemon_keldeoEntry;
+  "FORMS_V0648_POKEMON_MELOETTA": Forms_v0648_pokemon_meloettaEntry;
+  "FORMS_V0649_POKEMON_GENESECT": Forms_v0649_pokemon_genesectEntry;
+  "FORMS_V0676_POKEMON_FURFROU": Forms_v0676_pokemon_furfrouEntry;
+  "FORMS_V0773_POKEMON_SILVALLY": Forms_v0773_pokemon_silvallyEntry;
+  "FORMS_V0862_POKEMON_OBSTAGOON": Forms_v0862_pokemon_obstagoonEntry;
+  "FORMS_V0863_POKEMON_PERRSERKER": Forms_v0863_pokemon_perrserkerEntry;
+  "FORMS_V0865_POKEMON_SIRFETCHD": Forms_v0865_pokemon_sirfetchdEntry;
+  "FORMS_V0866_POKEMON_MR_RIME": Forms_v0866_pokemon_mr_rimeEntry;
+  "FORMS_V0867_POKEMON_RUNERIGUS": Forms_v0867_pokemon_runerigusEntry;
+  "FORMS_V0854_POKEMON_SINISTEA": Forms_v0854_pokemon_sinisteaEntry;
+  "FORMS_V0982_POKEMON_DUDUNSPARCE": Forms_v0982_pokemon_dudunsparceEntry;
+  "FORMS_V1012_POKEMON_POLTCHAGEIST": Forms_v1012_pokemon_poltchageistEntry;
+  "FORMS_V1017_POKEMON_OGERPON": Forms_v1017_pokemon_ogerponEntry;
 }
 
-export type FormsSettingsMasterfileEntry = Forms_v0001_pokemon_bulbasaurEntry | Forms_v0002_pokemon_ivysaurEntry | Forms_v0003_pokemon_venusaurEntry | Forms_v0004_pokemon_charmanderEntry | Forms_v0005_pokemon_charmeleonEntry | Forms_v0006_pokemon_charizardEntry | Forms_v0007_pokemon_squirtleEntry | Forms_v0008_pokemon_wartortleEntry | Forms_v0009_pokemon_blastoiseEntry | Forms_v0010_pokemon_caterpieEntry | Forms_v0011_pokemon_metapodEntry | Forms_v0012_pokemon_butterfreeEntry | Forms_v0013_pokemon_weedleEntry | Forms_v0014_pokemon_kakunaEntry | Forms_v0015_pokemon_beedrillEntry | Forms_v0016_pokemon_pidgeyEntry | Forms_v0017_pokemon_pidgeottoEntry | Forms_v0018_pokemon_pidgeotEntry | Forms_v0019_pokemon_rattataEntry | Forms_v0020_pokemon_raticateEntry | Forms_v0021_pokemon_spearowEntry | Forms_v0022_pokemon_fearowEntry | Forms_v0023_pokemon_ekansEntry | Forms_v0024_pokemon_arbokEntry | Forms_v0025_pokemon_pikachuEntry | Forms_v0026_pokemon_raichuEntry | Forms_v0027_pokemon_sandshrewEntry | Forms_v0028_pokemon_sandslashEntry | Forms_v0029_pokemon_nidoranEntry | Forms_v0030_pokemon_nidorinaEntry | Forms_v0031_pokemon_nidoqueenEntry | Forms_v0032_pokemon_nidoranEntry | Forms_v0033_pokemon_nidorinoEntry | Forms_v0034_pokemon_nidokingEntry | Forms_v0035_pokemon_clefairyEntry | Forms_v0036_pokemon_clefableEntry | Forms_v0037_pokemon_vulpixEntry | Forms_v0038_pokemon_ninetalesEntry | Forms_v0039_pokemon_jigglypuffEntry | Forms_v0040_pokemon_wigglytuffEntry | Forms_v0041_pokemon_zubatEntry | Forms_v0042_pokemon_golbatEntry | Forms_v0043_pokemon_oddishEntry | Forms_v0044_pokemon_gloomEntry | Forms_v0045_pokemon_vileplumeEntry | Forms_v0046_pokemon_parasEntry | Forms_v0047_pokemon_parasectEntry | Forms_v0048_pokemon_venonatEntry | Forms_v0049_pokemon_venomothEntry | Forms_v0050_pokemon_diglettEntry | Forms_v0051_pokemon_dugtrioEntry | Forms_v0052_pokemon_meowthEntry | Forms_v0053_pokemon_persianEntry | Forms_v0054_pokemon_psyduckEntry | Forms_v0055_pokemon_golduckEntry | Forms_v0056_pokemon_mankeyEntry | Forms_v0057_pokemon_primeapeEntry | Forms_v0058_pokemon_growlitheEntry | Forms_v0059_pokemon_arcanineEntry | Forms_v0060_pokemon_poliwagEntry | Forms_v0061_pokemon_poliwhirlEntry | Forms_v0062_pokemon_poliwrathEntry | Forms_v0063_pokemon_abraEntry | Forms_v0064_pokemon_kadabraEntry | Forms_v0065_pokemon_alakazamEntry | Forms_v0066_pokemon_machopEntry | Forms_v0067_pokemon_machokeEntry | Forms_v0068_pokemon_machampEntry | Forms_v0069_pokemon_bellsproutEntry | Forms_v0070_pokemon_weepinbellEntry | Forms_v0071_pokemon_victreebelEntry | Forms_v0072_pokemon_tentacoolEntry | Forms_v0073_pokemon_tentacruelEntry | Forms_v0074_pokemon_geodudeEntry | Forms_v0075_pokemon_gravelerEntry | Forms_v0076_pokemon_golemEntry | Forms_v0077_pokemon_ponytaEntry | Forms_v0078_pokemon_rapidashEntry | Forms_v0079_pokemon_slowpokeEntry | Forms_v0080_pokemon_slowbroEntry | Forms_v0081_pokemon_magnemiteEntry | Forms_v0082_pokemon_magnetonEntry | Forms_v0083_pokemon_farfetchdEntry | Forms_v0084_pokemon_doduoEntry | Forms_v0085_pokemon_dodrioEntry | Forms_v0086_pokemon_seelEntry | Forms_v0087_pokemon_dewgongEntry | Forms_v0088_pokemon_grimerEntry | Forms_v0089_pokemon_mukEntry | Forms_v0090_pokemon_shellderEntry | Forms_v0091_pokemon_cloysterEntry | Forms_v0092_pokemon_gastlyEntry | Forms_v0093_pokemon_haunterEntry | Forms_v0094_pokemon_gengarEntry | Forms_v0095_pokemon_onixEntry | Forms_v0096_pokemon_drowzeeEntry | Forms_v0097_pokemon_hypnoEntry | Forms_v0098_pokemon_krabbyEntry | Forms_v0099_pokemon_kinglerEntry | Forms_v0100_pokemon_voltorbEntry | Forms_v0101_pokemon_electrodeEntry | Forms_v0102_pokemon_exeggcuteEntry | Forms_v0103_pokemon_exeggutorEntry | Forms_v0104_pokemon_cuboneEntry | Forms_v0105_pokemon_marowakEntry | Forms_v0106_pokemon_hitmonleeEntry | Forms_v0107_pokemon_hitmonchanEntry | Forms_v0108_pokemon_lickitungEntry | Forms_v0109_pokemon_koffingEntry | Forms_v0110_pokemon_weezingEntry | Forms_v0111_pokemon_rhyhornEntry | Forms_v0112_pokemon_rhydonEntry | Forms_v0113_pokemon_chanseyEntry | Forms_v0114_pokemon_tangelaEntry | Forms_v0115_pokemon_kangaskhanEntry | Forms_v0116_pokemon_horseaEntry | Forms_v0117_pokemon_seadraEntry | Forms_v0118_pokemon_goldeenEntry | Forms_v0119_pokemon_seakingEntry | Forms_v0120_pokemon_staryuEntry | Forms_v0121_pokemon_starmieEntry | Forms_v0122_pokemon_mr_mimeEntry | Forms_v0123_pokemon_scytherEntry | Forms_v0124_pokemon_jynxEntry | Forms_v0125_pokemon_electabuzzEntry | Forms_v0126_pokemon_magmarEntry | Forms_v0127_pokemon_pinsirEntry | Forms_v0128_pokemon_taurosEntry | Forms_v0129_pokemon_magikarpEntry | Forms_v0130_pokemon_gyaradosEntry | Forms_v0131_pokemon_laprasEntry | Forms_v0132_pokemon_dittoEntry | Forms_v0133_pokemon_eeveeEntry | Forms_v0134_pokemon_vaporeonEntry | Forms_v0135_pokemon_jolteonEntry | Forms_v0136_pokemon_flareonEntry | Forms_v0137_pokemon_porygonEntry | Forms_v0138_pokemon_omanyteEntry | Forms_v0139_pokemon_omastarEntry | Forms_v0140_pokemon_kabutoEntry | Forms_v0141_pokemon_kabutopsEntry | Forms_v0142_pokemon_aerodactylEntry | Forms_v0143_pokemon_snorlaxEntry | Forms_v0144_pokemon_articunoEntry | Forms_v0145_pokemon_zapdosEntry | Forms_v0146_pokemon_moltresEntry | Forms_v0147_pokemon_dratiniEntry | Forms_v0148_pokemon_dragonairEntry | Forms_v0149_pokemon_dragoniteEntry | Forms_v0150_pokemon_mewtwoEntry | Forms_v0151_pokemon_mewEntry | Forms_v0152_pokemon_chikoritaEntry | Forms_v0153_pokemon_bayleefEntry | Forms_v0154_pokemon_meganiumEntry | Forms_v0155_pokemon_cyndaquilEntry | Forms_v0156_pokemon_quilavaEntry | Forms_v0157_pokemon_typhlosionEntry | Forms_v0158_pokemon_totodileEntry | Forms_v0159_pokemon_croconawEntry | Forms_v0160_pokemon_feraligatrEntry | Forms_v0161_pokemon_sentretEntry | Forms_v0162_pokemon_furretEntry | Forms_v0163_pokemon_hoothootEntry | Forms_v0164_pokemon_noctowlEntry | Forms_v0165_pokemon_ledybaEntry | Forms_v0166_pokemon_ledianEntry | Forms_v0167_pokemon_spinarakEntry | Forms_v0168_pokemon_ariadosEntry | Forms_v0169_pokemon_crobatEntry | Forms_v0170_pokemon_chinchouEntry | Forms_v0171_pokemon_lanturnEntry | Forms_v0172_pokemon_pichuEntry | Forms_v0173_pokemon_cleffaEntry | Forms_v0174_pokemon_igglybuffEntry | Forms_v0175_pokemon_togepiEntry | Forms_v0176_pokemon_togeticEntry | Forms_v0177_pokemon_natuEntry | Forms_v0178_pokemon_xatuEntry | Forms_v0179_pokemon_mareepEntry | Forms_v0180_pokemon_flaaffyEntry | Forms_v0181_pokemon_ampharosEntry | Forms_v0182_pokemon_bellossomEntry | Forms_v0183_pokemon_marillEntry | Forms_v0184_pokemon_azumarillEntry | Forms_v0185_pokemon_sudowoodoEntry | Forms_v0186_pokemon_politoedEntry | Forms_v0187_pokemon_hoppipEntry | Forms_v0188_pokemon_skiploomEntry | Forms_v0189_pokemon_jumpluffEntry | Forms_v0190_pokemon_aipomEntry | Forms_v0191_pokemon_sunkernEntry | Forms_v0192_pokemon_sunfloraEntry | Forms_v0193_pokemon_yanmaEntry | Forms_v0194_pokemon_wooperEntry | Forms_v0195_pokemon_quagsireEntry | Forms_v0196_pokemon_espeonEntry | Forms_v0197_pokemon_umbreonEntry | Forms_v0198_pokemon_murkrowEntry | Forms_v0199_pokemon_slowkingEntry | Forms_v0200_pokemon_misdreavusEntry | Forms_v0201_pokemon_unownEntry | Forms_v0202_pokemon_wobbuffetEntry | Forms_v0203_pokemon_girafarigEntry | Forms_v0204_pokemon_pinecoEntry | Forms_v0205_pokemon_forretressEntry | Forms_v0206_pokemon_dunsparceEntry | Forms_v0207_pokemon_gligarEntry | Forms_v0208_pokemon_steelixEntry | Forms_v0209_pokemon_snubbullEntry | Forms_v0210_pokemon_granbullEntry | Forms_v0211_pokemon_qwilfishEntry | Forms_v0212_pokemon_scizorEntry | Forms_v0213_pokemon_shuckleEntry | Forms_v0214_pokemon_heracrossEntry | Forms_v0215_pokemon_sneaselEntry | Forms_v0216_pokemon_teddiursaEntry | Forms_v0217_pokemon_ursaringEntry | Forms_v0218_pokemon_slugmaEntry | Forms_v0219_pokemon_magcargoEntry | Forms_v0220_pokemon_swinubEntry | Forms_v0221_pokemon_piloswineEntry | Forms_v0222_pokemon_corsolaEntry | Forms_v0223_pokemon_remoraidEntry | Forms_v0224_pokemon_octilleryEntry | Forms_v0225_pokemon_delibirdEntry | Forms_v0226_pokemon_mantineEntry | Forms_v0227_pokemon_skarmoryEntry | Forms_v0228_pokemon_houndourEntry | Forms_v0229_pokemon_houndoomEntry | Forms_v0230_pokemon_kingdraEntry | Forms_v0231_pokemon_phanpyEntry | Forms_v0232_pokemon_donphanEntry | Forms_v0233_pokemon_porygon2Entry | Forms_v0234_pokemon_stantlerEntry | Forms_v0235_pokemon_smeargleEntry | Forms_v0236_pokemon_tyrogueEntry | Forms_v0237_pokemon_hitmontopEntry | Forms_v0238_pokemon_smoochumEntry | Forms_v0239_pokemon_elekidEntry | Forms_v0240_pokemon_magbyEntry | Forms_v0241_pokemon_miltankEntry | Forms_v0242_pokemon_blisseyEntry | Forms_v0243_pokemon_raikouEntry | Forms_v0244_pokemon_enteiEntry | Forms_v0245_pokemon_suicuneEntry | Forms_v0246_pokemon_larvitarEntry | Forms_v0247_pokemon_pupitarEntry | Forms_v0248_pokemon_tyranitarEntry | Forms_v0249_pokemon_lugiaEntry | Forms_v0250_pokemon_ho_ohEntry | Forms_v0251_pokemon_celebiEntry | Forms_v0252_pokemon_treeckoEntry | Forms_v0253_pokemon_grovyleEntry | Forms_v0254_pokemon_sceptileEntry | Forms_v0255_pokemon_torchicEntry | Forms_v0256_pokemon_combuskenEntry | Forms_v0257_pokemon_blazikenEntry | Forms_v0258_pokemon_mudkipEntry | Forms_v0259_pokemon_marshtompEntry | Forms_v0260_pokemon_swampertEntry | Forms_v0261_pokemon_poochyenaEntry | Forms_v0262_pokemon_mightyenaEntry | Forms_v0263_pokemon_zigzagoonEntry | Forms_v0264_pokemon_linooneEntry | Forms_v0265_pokemon_wurmpleEntry | Forms_v0266_pokemon_silcoonEntry | Forms_v0267_pokemon_beautiflyEntry | Forms_v0268_pokemon_cascoonEntry | Forms_v0269_pokemon_dustoxEntry | Forms_v0270_pokemon_lotadEntry | Forms_v0271_pokemon_lombreEntry | Forms_v0272_pokemon_ludicoloEntry | Forms_v0273_pokemon_seedotEntry | Forms_v0274_pokemon_nuzleafEntry | Forms_v0275_pokemon_shiftryEntry | Forms_v0276_pokemon_taillowEntry | Forms_v0277_pokemon_swellowEntry | Forms_v0278_pokemon_wingullEntry | Forms_v0279_pokemon_pelipperEntry | Forms_v0280_pokemon_raltsEntry | Forms_v0281_pokemon_kirliaEntry | Forms_v0282_pokemon_gardevoirEntry | Forms_v0283_pokemon_surskitEntry | Forms_v0284_pokemon_masquerainEntry | Forms_v0285_pokemon_shroomishEntry | Forms_v0286_pokemon_breloomEntry | Forms_v0287_pokemon_slakothEntry | Forms_v0288_pokemon_vigorothEntry | Forms_v0289_pokemon_slakingEntry | Forms_v0290_pokemon_nincadaEntry | Forms_v0291_pokemon_ninjaskEntry | Forms_v0292_pokemon_shedinjaEntry | Forms_v0293_pokemon_whismurEntry | Forms_v0294_pokemon_loudredEntry | Forms_v0295_pokemon_exploudEntry | Forms_v0296_pokemon_makuhitaEntry | Forms_v0297_pokemon_hariyamaEntry | Forms_v0298_pokemon_azurillEntry | Forms_v0299_pokemon_nosepassEntry | Forms_v0300_pokemon_skittyEntry | Forms_v0301_pokemon_delcattyEntry | Forms_v0302_pokemon_sableyeEntry | Forms_v0303_pokemon_mawileEntry | Forms_v0304_pokemon_aronEntry | Forms_v0305_pokemon_laironEntry | Forms_v0306_pokemon_aggronEntry | Forms_v0307_pokemon_medititeEntry | Forms_v0308_pokemon_medichamEntry | Forms_v0309_pokemon_electrikeEntry | Forms_v0310_pokemon_manectricEntry | Forms_v0311_pokemon_plusleEntry | Forms_v0312_pokemon_minunEntry | Forms_v0313_pokemon_volbeatEntry | Forms_v0314_pokemon_illumiseEntry | Forms_v0315_pokemon_roseliaEntry | Forms_v0316_pokemon_gulpinEntry | Forms_v0317_pokemon_swalotEntry | Forms_v0318_pokemon_carvanhaEntry | Forms_v0319_pokemon_sharpedoEntry | Forms_v0320_pokemon_wailmerEntry | Forms_v0321_pokemon_wailordEntry | Forms_v0322_pokemon_numelEntry | Forms_v0323_pokemon_cameruptEntry | Forms_v0324_pokemon_torkoalEntry | Forms_v0325_pokemon_spoinkEntry | Forms_v0326_pokemon_grumpigEntry | Forms_v0327_pokemon_spindaEntry | Forms_v0328_pokemon_trapinchEntry | Forms_v0329_pokemon_vibravaEntry | Forms_v0330_pokemon_flygonEntry | Forms_v0331_pokemon_cacneaEntry | Forms_v0332_pokemon_cacturneEntry | Forms_v0333_pokemon_swabluEntry | Forms_v0334_pokemon_altariaEntry | Forms_v0335_pokemon_zangooseEntry | Forms_v0336_pokemon_seviperEntry | Forms_v0337_pokemon_lunatoneEntry | Forms_v0338_pokemon_solrockEntry | Forms_v0339_pokemon_barboachEntry | Forms_v0340_pokemon_whiscashEntry | Forms_v0341_pokemon_corphishEntry | Forms_v0342_pokemon_crawdauntEntry | Forms_v0343_pokemon_baltoyEntry | Forms_v0344_pokemon_claydolEntry | Forms_v0345_pokemon_lileepEntry | Forms_v0346_pokemon_cradilyEntry | Forms_v0347_pokemon_anorithEntry | Forms_v0348_pokemon_armaldoEntry | Forms_v0349_pokemon_feebasEntry | Forms_v0350_pokemon_miloticEntry | Forms_v0351_pokemon_castformEntry | Forms_v0352_pokemon_kecleonEntry | Forms_v0353_pokemon_shuppetEntry | Forms_v0354_pokemon_banetteEntry | Forms_v0355_pokemon_duskullEntry | Forms_v0356_pokemon_dusclopsEntry | Forms_v0357_pokemon_tropiusEntry | Forms_v0358_pokemon_chimechoEntry | Forms_v0359_pokemon_absolEntry | Forms_v0360_pokemon_wynautEntry | Forms_v0361_pokemon_snoruntEntry | Forms_v0362_pokemon_glalieEntry | Forms_v0363_pokemon_sphealEntry | Forms_v0364_pokemon_sealeoEntry | Forms_v0365_pokemon_walreinEntry | Forms_v0366_pokemon_clamperlEntry | Forms_v0367_pokemon_huntailEntry | Forms_v0368_pokemon_gorebyssEntry | Forms_v0369_pokemon_relicanthEntry | Forms_v0370_pokemon_luvdiscEntry | Forms_v0371_pokemon_bagonEntry | Forms_v0372_pokemon_shelgonEntry | Forms_v0373_pokemon_salamenceEntry | Forms_v0374_pokemon_beldumEntry | Forms_v0375_pokemon_metangEntry | Forms_v0376_pokemon_metagrossEntry | Forms_v0377_pokemon_regirockEntry | Forms_v0378_pokemon_regiceEntry | Forms_v0379_pokemon_registeelEntry | Forms_v0380_pokemon_latiasEntry | Forms_v0381_pokemon_latiosEntry | Forms_v0382_pokemon_kyogreEntry | Forms_v0383_pokemon_groudonEntry | Forms_v0384_pokemon_rayquazaEntry | Forms_v0385_pokemon_jirachiEntry | Forms_v0386_pokemon_deoxysEntry | Forms_v0387_pokemon_turtwigEntry | Forms_v0388_pokemon_grotleEntry | Forms_v0389_pokemon_torterraEntry | Forms_v0390_pokemon_chimcharEntry | Forms_v0391_pokemon_monfernoEntry | Forms_v0392_pokemon_infernapeEntry | Forms_v0393_pokemon_piplupEntry | Forms_v0394_pokemon_prinplupEntry | Forms_v0395_pokemon_empoleonEntry | Forms_v0396_pokemon_starlyEntry | Forms_v0397_pokemon_staraviaEntry | Forms_v0398_pokemon_staraptorEntry | Forms_v0399_pokemon_bidoofEntry | Forms_v0400_pokemon_bibarelEntry | Forms_v0401_pokemon_kricketotEntry | Forms_v0402_pokemon_kricketuneEntry | Forms_v0403_pokemon_shinxEntry | Forms_v0404_pokemon_luxioEntry | Forms_v0405_pokemon_luxrayEntry | Forms_v0406_pokemon_budewEntry | Forms_v0407_pokemon_roseradeEntry | Forms_v0408_pokemon_cranidosEntry | Forms_v0409_pokemon_rampardosEntry | Forms_v0410_pokemon_shieldonEntry | Forms_v0411_pokemon_bastiodonEntry | Forms_v0412_pokemon_burmyEntry | Forms_v0413_pokemon_wormadamEntry | Forms_v0414_pokemon_mothimEntry | Forms_v0415_pokemon_combeeEntry | Forms_v0416_pokemon_vespiquenEntry | Forms_v0417_pokemon_pachirisuEntry | Forms_v0418_pokemon_buizelEntry | Forms_v0419_pokemon_floatzelEntry | Forms_v0420_pokemon_cherubiEntry | Forms_v0421_pokemon_cherrimEntry | Forms_v0422_pokemon_shellosEntry | Forms_v0423_pokemon_gastrodonEntry | Forms_v0424_pokemon_ambipomEntry | Forms_v0425_pokemon_drifloonEntry | Forms_v0426_pokemon_drifblimEntry | Forms_v0427_pokemon_bunearyEntry | Forms_v0428_pokemon_lopunnyEntry | Forms_v0429_pokemon_mismagiusEntry | Forms_v0430_pokemon_honchkrowEntry | Forms_v0431_pokemon_glameowEntry | Forms_v0432_pokemon_puruglyEntry | Forms_v0433_pokemon_chinglingEntry | Forms_v0434_pokemon_stunkyEntry | Forms_v0435_pokemon_skuntankEntry | Forms_v0436_pokemon_bronzorEntry | Forms_v0437_pokemon_bronzongEntry | Forms_v0438_pokemon_bonslyEntry | Forms_v0439_pokemon_mime_jrEntry | Forms_v0440_pokemon_happinyEntry | Forms_v0441_pokemon_chatotEntry | Forms_v0442_pokemon_spiritombEntry | Forms_v0443_pokemon_gibleEntry | Forms_v0444_pokemon_gabiteEntry | Forms_v0445_pokemon_garchompEntry | Forms_v0446_pokemon_munchlaxEntry | Forms_v0447_pokemon_rioluEntry | Forms_v0448_pokemon_lucarioEntry | Forms_v0449_pokemon_hippopotasEntry | Forms_v0450_pokemon_hippowdonEntry | Forms_v0451_pokemon_skorupiEntry | Forms_v0452_pokemon_drapionEntry | Forms_v0453_pokemon_croagunkEntry | Forms_v0454_pokemon_toxicroakEntry | Forms_v0455_pokemon_carnivineEntry | Forms_v0456_pokemon_finneonEntry | Forms_v0457_pokemon_lumineonEntry | Forms_v0458_pokemon_mantykeEntry | Forms_v0459_pokemon_snoverEntry | Forms_v0460_pokemon_abomasnowEntry | Forms_v0461_pokemon_weavileEntry | Forms_v0462_pokemon_magnezoneEntry | Forms_v0463_pokemon_lickilickyEntry | Forms_v0464_pokemon_rhyperiorEntry | Forms_v0465_pokemon_tangrowthEntry | Forms_v0466_pokemon_electivireEntry | Forms_v0467_pokemon_magmortarEntry | Forms_v0468_pokemon_togekissEntry | Forms_v0469_pokemon_yanmegaEntry | Forms_v0470_pokemon_leafeonEntry | Forms_v0471_pokemon_glaceonEntry | Forms_v0472_pokemon_gliscorEntry | Forms_v0473_pokemon_mamoswineEntry | Forms_v0474_pokemon_porygon_zEntry | Forms_v0475_pokemon_galladeEntry | Forms_v0476_pokemon_probopassEntry | Forms_v0477_pokemon_dusknoirEntry | Forms_v0478_pokemon_froslassEntry | Forms_v0479_pokemon_rotomEntry | Forms_v0480_pokemon_uxieEntry | Forms_v0481_pokemon_mespritEntry | Forms_v0482_pokemon_azelfEntry | Forms_v0483_pokemon_dialgaEntry | Forms_v0484_pokemon_palkiaEntry | Forms_v0485_pokemon_heatranEntry | Forms_v0486_pokemon_regigigasEntry | Forms_v0487_pokemon_giratinaEntry | Forms_v0488_pokemon_cresseliaEntry | Forms_v0489_pokemon_phioneEntry | Forms_v0490_pokemon_manaphyEntry | Forms_v0491_pokemon_darkraiEntry | Forms_v0492_pokemon_shayminEntry | Forms_v0493_pokemon_arceusEntry | Forms_v0494_pokemon_victiniEntry | Forms_v0495_pokemon_snivyEntry | Forms_v0496_pokemon_servineEntry | Forms_v0497_pokemon_serperiorEntry | Forms_v0498_pokemon_tepigEntry | Forms_v0499_pokemon_pigniteEntry | Forms_v0500_pokemon_emboarEntry | Forms_v0501_pokemon_oshawottEntry | Forms_v0502_pokemon_dewottEntry | Forms_v0503_pokemon_samurottEntry | Forms_v0504_pokemon_patratEntry | Forms_v0505_pokemon_watchogEntry | Forms_v0506_pokemon_lillipupEntry | Forms_v0507_pokemon_herdierEntry | Forms_v0508_pokemon_stoutlandEntry | Forms_v0509_pokemon_purrloinEntry | Forms_v0510_pokemon_liepardEntry | Forms_v0511_pokemon_pansageEntry | Forms_v0512_pokemon_simisageEntry | Forms_v0513_pokemon_pansearEntry | Forms_v0514_pokemon_simisearEntry | Forms_v0515_pokemon_panpourEntry | Forms_v0516_pokemon_simipourEntry | Forms_v0517_pokemon_munnaEntry | Forms_v0518_pokemon_musharnaEntry | Forms_v0519_pokemon_pidoveEntry | Forms_v0520_pokemon_tranquillEntry | Forms_v0521_pokemon_unfezantEntry | Forms_v0522_pokemon_blitzleEntry | Forms_v0523_pokemon_zebstrikaEntry | Forms_v0524_pokemon_roggenrolaEntry | Forms_v0525_pokemon_boldoreEntry | Forms_v0526_pokemon_gigalithEntry | Forms_v0527_pokemon_woobatEntry | Forms_v0528_pokemon_swoobatEntry | Forms_v0529_pokemon_drilburEntry | Forms_v0530_pokemon_excadrillEntry | Forms_v0531_pokemon_audinoEntry | Forms_v0532_pokemon_timburrEntry | Forms_v0533_pokemon_gurdurrEntry | Forms_v0534_pokemon_conkeldurrEntry | Forms_v0535_pokemon_tympoleEntry | Forms_v0536_pokemon_palpitoadEntry | Forms_v0537_pokemon_seismitoadEntry | Forms_v0538_pokemon_throhEntry | Forms_v0539_pokemon_sawkEntry | Forms_v0540_pokemon_sewaddleEntry | Forms_v0541_pokemon_swadloonEntry | Forms_v0542_pokemon_leavannyEntry | Forms_v0543_pokemon_venipedeEntry | Forms_v0544_pokemon_whirlipedeEntry | Forms_v0545_pokemon_scolipedeEntry | Forms_v0546_pokemon_cottoneeEntry | Forms_v0547_pokemon_whimsicottEntry | Forms_v0548_pokemon_petililEntry | Forms_v0549_pokemon_lilligantEntry | Forms_v0550_pokemon_basculinEntry | Forms_v0551_pokemon_sandileEntry | Forms_v0552_pokemon_krokorokEntry | Forms_v0553_pokemon_krookodileEntry | Forms_v0554_pokemon_darumakaEntry | Forms_v0555_pokemon_darmanitanEntry | Forms_v0556_pokemon_maractusEntry | Forms_v0557_pokemon_dwebbleEntry | Forms_v0558_pokemon_crustleEntry | Forms_v0559_pokemon_scraggyEntry | Forms_v0560_pokemon_scraftyEntry | Forms_v0561_pokemon_sigilyphEntry | Forms_v0562_pokemon_yamaskEntry | Forms_v0563_pokemon_cofagrigusEntry | Forms_v0564_pokemon_tirtougaEntry | Forms_v0565_pokemon_carracostaEntry | Forms_v0566_pokemon_archenEntry | Forms_v0567_pokemon_archeopsEntry | Forms_v0568_pokemon_trubbishEntry | Forms_v0569_pokemon_garbodorEntry | Forms_v0570_pokemon_zoruaEntry | Forms_v0571_pokemon_zoroarkEntry | Forms_v0572_pokemon_minccinoEntry | Forms_v0573_pokemon_cinccinoEntry | Forms_v0574_pokemon_gothitaEntry | Forms_v0575_pokemon_gothoritaEntry | Forms_v0576_pokemon_gothitelleEntry | Forms_v0577_pokemon_solosisEntry | Forms_v0578_pokemon_duosionEntry | Forms_v0579_pokemon_reuniclusEntry | Forms_v0580_pokemon_ducklettEntry | Forms_v0581_pokemon_swannaEntry | Forms_v0582_pokemon_vanilliteEntry | Forms_v0583_pokemon_vanillishEntry | Forms_v0584_pokemon_vanilluxeEntry | Forms_v0585_pokemon_deerlingEntry | Forms_v0586_pokemon_sawsbuckEntry | Forms_v0587_pokemon_emolgaEntry | Forms_v0588_pokemon_karrablastEntry | Forms_v0589_pokemon_escavalierEntry | Forms_v0590_pokemon_foongusEntry | Forms_v0591_pokemon_amoongussEntry | Forms_v0592_pokemon_frillishEntry | Forms_v0593_pokemon_jellicentEntry | Forms_v0594_pokemon_alomomolaEntry | Forms_v0595_pokemon_joltikEntry | Forms_v0596_pokemon_galvantulaEntry | Forms_v0597_pokemon_ferroseedEntry | Forms_v0598_pokemon_ferrothornEntry | Forms_v0599_pokemon_klinkEntry | Forms_v0600_pokemon_klangEntry | Forms_v0601_pokemon_klinklangEntry | Forms_v0602_pokemon_tynamoEntry | Forms_v0603_pokemon_eelektrikEntry | Forms_v0604_pokemon_eelektrossEntry | Forms_v0605_pokemon_elgyemEntry | Forms_v0606_pokemon_beheeyemEntry | Forms_v0607_pokemon_litwickEntry | Forms_v0608_pokemon_lampentEntry | Forms_v0609_pokemon_chandelureEntry | Forms_v0610_pokemon_axewEntry | Forms_v0611_pokemon_fraxureEntry | Forms_v0612_pokemon_haxorusEntry | Forms_v0613_pokemon_cubchooEntry | Forms_v0614_pokemon_bearticEntry | Forms_v0615_pokemon_cryogonalEntry | Forms_v0616_pokemon_shelmetEntry | Forms_v0617_pokemon_accelgorEntry | Forms_v0618_pokemon_stunfiskEntry | Forms_v0619_pokemon_mienfooEntry | Forms_v0620_pokemon_mienshaoEntry | Forms_v0621_pokemon_druddigonEntry | Forms_v0622_pokemon_golettEntry | Forms_v0623_pokemon_golurkEntry | Forms_v0624_pokemon_pawniardEntry | Forms_v0625_pokemon_bisharpEntry | Forms_v0626_pokemon_bouffalantEntry | Forms_v0627_pokemon_ruffletEntry | Forms_v0628_pokemon_braviaryEntry | Forms_v0629_pokemon_vullabyEntry | Forms_v0630_pokemon_mandibuzzEntry | Forms_v0631_pokemon_heatmorEntry | Forms_v0632_pokemon_durantEntry | Forms_v0633_pokemon_deinoEntry | Forms_v0634_pokemon_zweilousEntry | Forms_v0635_pokemon_hydreigonEntry | Forms_v0636_pokemon_larvestaEntry | Forms_v0637_pokemon_volcaronaEntry | Forms_v0638_pokemon_cobalionEntry | Forms_v0639_pokemon_terrakionEntry | Forms_v0640_pokemon_virizionEntry | Forms_v0641_pokemon_tornadusEntry | Forms_v0642_pokemon_thundurusEntry | Forms_v0643_pokemon_reshiramEntry | Forms_v0644_pokemon_zekromEntry | Forms_v0645_pokemon_landorusEntry | Forms_v0646_pokemon_kyuremEntry | Forms_v0647_pokemon_keldeoEntry | Forms_v0648_pokemon_meloettaEntry | Forms_v0649_pokemon_genesectEntry | Forms_v0650_pokemon_chespinEntry | Forms_v0651_pokemon_quilladinEntry | Forms_v0652_pokemon_chesnaughtEntry | Forms_v0653_pokemon_fennekinEntry | Forms_v0654_pokemon_braixenEntry | Forms_v0655_pokemon_delphoxEntry | Forms_v0656_pokemon_froakieEntry | Forms_v0657_pokemon_frogadierEntry | Forms_v0658_pokemon_greninjaEntry | Forms_v0659_pokemon_bunnelbyEntry | Forms_v0660_pokemon_diggersbyEntry | Forms_v0661_pokemon_fletchlingEntry | Forms_v0662_pokemon_fletchinderEntry | Forms_v0663_pokemon_talonflameEntry | Forms_v0664_pokemon_scatterbugEntry | Forms_v0665_pokemon_spewpaEntry | Forms_v0666_pokemon_vivillonEntry | Forms_v0667_pokemon_litleoEntry | Forms_v0668_pokemon_pyroarEntry | Forms_v0669_pokemon_flabebeEntry | Forms_v0670_pokemon_floetteEntry | Forms_v0671_pokemon_florgesEntry | Forms_v0672_pokemon_skiddoEntry | Forms_v0673_pokemon_gogoatEntry | Forms_v0674_pokemon_panchamEntry | Forms_v0675_pokemon_pangoroEntry | Forms_v0676_pokemon_furfrouEntry | Forms_v0677_pokemon_espurrEntry | Forms_v0678_pokemon_meowsticEntry | Forms_v0679_pokemon_honedgeEntry | Forms_v0680_pokemon_doubladeEntry | Forms_v0681_pokemon_aegislashEntry | Forms_v0682_pokemon_spritzeeEntry | Forms_v0683_pokemon_aromatisseEntry | Forms_v0684_pokemon_swirlixEntry | Forms_v0685_pokemon_slurpuffEntry | Forms_v0686_pokemon_inkayEntry | Forms_v0687_pokemon_malamarEntry | Forms_v0688_pokemon_binacleEntry | Forms_v0689_pokemon_barbaracleEntry | Forms_v0690_pokemon_skrelpEntry | Forms_v0691_pokemon_dragalgeEntry | Forms_v0692_pokemon_clauncherEntry | Forms_v0693_pokemon_clawitzerEntry | Forms_v0694_pokemon_helioptileEntry | Forms_v0695_pokemon_helioliskEntry | Forms_v0696_pokemon_tyruntEntry | Forms_v0697_pokemon_tyrantrumEntry | Forms_v0698_pokemon_amauraEntry | Forms_v0699_pokemon_aurorusEntry | Forms_v0700_pokemon_sylveonEntry | Forms_v0701_pokemon_hawluchaEntry | Forms_v0702_pokemon_dedenneEntry | Forms_v0703_pokemon_carbinkEntry | Forms_v0704_pokemon_goomyEntry | Forms_v0705_pokemon_sliggooEntry | Forms_v0706_pokemon_goodraEntry | Forms_v0707_pokemon_klefkiEntry | Forms_v0708_pokemon_phantumpEntry | Forms_v0709_pokemon_trevenantEntry | Forms_v0710_pokemon_pumpkabooEntry | Forms_v0711_pokemon_gourgeistEntry | Forms_v0712_pokemon_bergmiteEntry | Forms_v0713_pokemon_avaluggEntry | Forms_v0714_pokemon_noibatEntry | Forms_v0715_pokemon_noivernEntry | Forms_v0716_pokemon_xerneasEntry | Forms_v0717_pokemon_yveltalEntry | Forms_v0718_pokemon_zygardeEntry | Forms_v0719_pokemon_diancieEntry | Forms_v0720_pokemon_hoopaEntry | Forms_v0721_pokemon_volcanionEntry | Forms_v0722_pokemon_rowletEntry | Forms_v0723_pokemon_dartrixEntry | Forms_v0724_pokemon_decidueyeEntry | Forms_v0725_pokemon_littenEntry | Forms_v0726_pokemon_torracatEntry | Forms_v0727_pokemon_incineroarEntry | Forms_v0728_pokemon_popplioEntry | Forms_v0729_pokemon_brionneEntry | Forms_v0730_pokemon_primarinaEntry | Forms_v0731_pokemon_pikipekEntry | Forms_v0732_pokemon_trumbeakEntry | Forms_v0733_pokemon_toucannonEntry | Forms_v0734_pokemon_yungoosEntry | Forms_v0735_pokemon_gumshoosEntry | Forms_v0736_pokemon_grubbinEntry | Forms_v0737_pokemon_charjabugEntry | Forms_v0738_pokemon_vikavoltEntry | Forms_v0739_pokemon_crabrawlerEntry | Forms_v0740_pokemon_crabominableEntry | Forms_v0741_pokemon_oricorioEntry | Forms_v0742_pokemon_cutieflyEntry | Forms_v0743_pokemon_ribombeeEntry | Forms_v0744_pokemon_rockruffEntry | Forms_v0745_pokemon_lycanrocEntry | Forms_v0746_pokemon_wishiwashiEntry | Forms_v0747_pokemon_mareanieEntry | Forms_v0748_pokemon_toxapexEntry | Forms_v0749_pokemon_mudbrayEntry | Forms_v0750_pokemon_mudsdaleEntry | Forms_v0751_pokemon_dewpiderEntry | Forms_v0752_pokemon_araquanidEntry | Forms_v0753_pokemon_fomantisEntry | Forms_v0754_pokemon_lurantisEntry | Forms_v0755_pokemon_morelullEntry | Forms_v0756_pokemon_shiinoticEntry | Forms_v0757_pokemon_salanditEntry | Forms_v0758_pokemon_salazzleEntry | Forms_v0759_pokemon_stuffulEntry | Forms_v0760_pokemon_bewearEntry | Forms_v0761_pokemon_bounsweetEntry | Forms_v0762_pokemon_steeneeEntry | Forms_v0763_pokemon_tsareenaEntry | Forms_v0764_pokemon_comfeyEntry | Forms_v0765_pokemon_oranguruEntry | Forms_v0766_pokemon_passimianEntry | Forms_v0767_pokemon_wimpodEntry | Forms_v0768_pokemon_golisopodEntry | Forms_v0769_pokemon_sandygastEntry | Forms_v0770_pokemon_palossandEntry | Forms_v0771_pokemon_pyukumukuEntry | Forms_v0772_pokemon_type_nullEntry | Forms_v0773_pokemon_silvallyEntry | Forms_v0774_pokemon_miniorEntry | Forms_v0775_pokemon_komalaEntry | Forms_v0776_pokemon_turtonatorEntry | Forms_v0777_pokemon_togedemaruEntry | Forms_v0778_pokemon_mimikyuEntry | Forms_v0779_pokemon_bruxishEntry | Forms_v0780_pokemon_drampaEntry | Forms_v0781_pokemon_dhelmiseEntry | Forms_v0782_pokemon_jangmo_oEntry | Forms_v0783_pokemon_hakamo_oEntry | Forms_v0784_pokemon_kommo_oEntry | Forms_v0785_pokemon_tapu_kokoEntry | Forms_v0786_pokemon_tapu_leleEntry | Forms_v0787_pokemon_tapu_buluEntry | Forms_v0788_pokemon_tapu_finiEntry | Forms_v0789_pokemon_cosmogEntry | Forms_v0790_pokemon_cosmoemEntry | Forms_v0791_pokemon_solgaleoEntry | Forms_v0792_pokemon_lunalaEntry | Forms_v0793_pokemon_nihilegoEntry | Forms_v0794_pokemon_buzzwoleEntry | Forms_v0795_pokemon_pheromosaEntry | Forms_v0796_pokemon_xurkitreeEntry | Forms_v0797_pokemon_celesteelaEntry | Forms_v0798_pokemon_kartanaEntry | Forms_v0799_pokemon_guzzlordEntry | Forms_v0800_pokemon_necrozmaEntry | Forms_v0801_pokemon_magearnaEntry | Forms_v0802_pokemon_marshadowEntry | Forms_v0803_pokemon_poipoleEntry | Forms_v0804_pokemon_naganadelEntry | Forms_v0805_pokemon_stakatakaEntry | Forms_v0806_pokemon_blacephalonEntry | Forms_v0807_pokemon_zeraoraEntry | Forms_v0808_pokemon_meltanEntry | Forms_v0809_pokemon_melmetalEntry | Forms_v0810_pokemon_grookeyEntry | Forms_v0811_pokemon_thwackeyEntry | Forms_v0812_pokemon_rillaboomEntry | Forms_v0813_pokemon_scorbunnyEntry | Forms_v0814_pokemon_rabootEntry | Forms_v0815_pokemon_cinderaceEntry | Forms_v0816_pokemon_sobbleEntry | Forms_v0817_pokemon_drizzileEntry | Forms_v0818_pokemon_inteleonEntry | Forms_v0819_pokemon_skwovetEntry | Forms_v0820_pokemon_greedentEntry | Forms_v0821_pokemon_rookideeEntry | Forms_v0822_pokemon_corvisquireEntry | Forms_v0823_pokemon_corviknightEntry | Forms_v0824_pokemon_blipbugEntry | Forms_v0825_pokemon_dottlerEntry | Forms_v0826_pokemon_orbeetleEntry | Forms_v0827_pokemon_nickitEntry | Forms_v0828_pokemon_thievulEntry | Forms_v0829_pokemon_gossifleurEntry | Forms_v0830_pokemon_eldegossEntry | Forms_v0831_pokemon_woolooEntry | Forms_v0832_pokemon_dubwoolEntry | Forms_v0833_pokemon_chewtleEntry | Forms_v0834_pokemon_drednawEntry | Forms_v0835_pokemon_yamperEntry | Forms_v0836_pokemon_boltundEntry | Forms_v0837_pokemon_rolycolyEntry | Forms_v0838_pokemon_carkolEntry | Forms_v0839_pokemon_coalossalEntry | Forms_v0840_pokemon_applinEntry | Forms_v0841_pokemon_flappleEntry | Forms_v0842_pokemon_appletunEntry | Forms_v0843_pokemon_silicobraEntry | Forms_v0844_pokemon_sandacondaEntry | Forms_v0845_pokemon_cramorantEntry | Forms_v0846_pokemon_arrokudaEntry | Forms_v0847_pokemon_barraskewdaEntry | Forms_v0848_pokemon_toxelEntry | Forms_v0849_pokemon_toxtricityEntry | Forms_v0850_pokemon_sizzlipedeEntry | Forms_v0851_pokemon_centiskorchEntry | Forms_v0852_pokemon_clobbopusEntry | Forms_v0853_pokemon_grapploctEntry | Forms_v0854_pokemon_sinisteaEntry | Forms_v0855_pokemon_polteageistEntry | Forms_v0856_pokemon_hatennaEntry | Forms_v0857_pokemon_hattremEntry | Forms_v0858_pokemon_hattereneEntry | Forms_v0859_pokemon_impidimpEntry | Forms_v0860_pokemon_morgremEntry | Forms_v0861_pokemon_grimmsnarlEntry | Forms_v0862_pokemon_obstagoonEntry | Forms_v0863_pokemon_perrserkerEntry | Forms_v0864_pokemon_cursolaEntry | Forms_v0865_pokemon_sirfetchdEntry | Forms_v0866_pokemon_mr_rimeEntry | Forms_v0867_pokemon_runerigusEntry | Forms_v0868_pokemon_milceryEntry | Forms_v0869_pokemon_alcremieEntry | Forms_v0870_pokemon_falinksEntry | Forms_v0871_pokemon_pincurchinEntry | Forms_v0872_pokemon_snomEntry | Forms_v0873_pokemon_frosmothEntry | Forms_v0874_pokemon_stonjournerEntry | Forms_v0875_pokemon_eiscueEntry | Forms_v0876_pokemon_indeedeeEntry | Forms_v0877_pokemon_morpekoEntry | Forms_v0878_pokemon_cufantEntry | Forms_v0879_pokemon_copperajahEntry | Forms_v0880_pokemon_dracozoltEntry | Forms_v0881_pokemon_arctozoltEntry | Forms_v0882_pokemon_dracovishEntry | Forms_v0883_pokemon_arctovishEntry | Forms_v0884_pokemon_duraludonEntry | Forms_v0885_pokemon_dreepyEntry | Forms_v0886_pokemon_drakloakEntry | Forms_v0887_pokemon_dragapultEntry | Forms_v0888_pokemon_zacianEntry | Forms_v0889_pokemon_zamazentaEntry | Forms_v0890_pokemon_eternatusEntry | Forms_v0891_pokemon_kubfuEntry | Forms_v0892_pokemon_urshifuEntry | Forms_v0893_pokemon_zarudeEntry | Forms_v0894_pokemon_regielekiEntry | Forms_v0895_pokemon_regidragoEntry | Forms_v0896_pokemon_glastrierEntry | Forms_v0897_pokemon_spectrierEntry | Forms_v0898_pokemon_calyrexEntry | Forms_v0899_pokemon_wyrdeerEntry | Forms_v0900_pokemon_kleavorEntry | Forms_v0901_pokemon_ursalunaEntry | Forms_v0902_pokemon_basculegionEntry | Forms_v0903_pokemon_sneaslerEntry | Forms_v0904_pokemon_overqwilEntry | Forms_v0905_pokemon_enamorusEntry | Forms_v0906_pokemon_sprigatitoEntry | Forms_v0907_pokemon_floragatoEntry | Forms_v0908_pokemon_meowscaradaEntry | Forms_v0909_pokemon_fuecocoEntry | Forms_v0910_pokemon_crocalorEntry | Forms_v0911_pokemon_skeledirgeEntry | Forms_v0912_pokemon_quaxlyEntry | Forms_v0913_pokemon_quaxwellEntry | Forms_v0914_pokemon_quaquavalEntry | Forms_v0915_pokemon_lechonkEntry | Forms_v0916_pokemon_oinkologneEntry | Forms_v0917_pokemon_tarountulaEntry | Forms_v0918_pokemon_spidopsEntry | Forms_v0919_pokemon_nymbleEntry | Forms_v0920_pokemon_lokixEntry | Forms_v0921_pokemon_pawmiEntry | Forms_v0922_pokemon_pawmoEntry | Forms_v0923_pokemon_pawmotEntry | Forms_v0924_pokemon_tandemausEntry | Forms_v0925_pokemon_mausholdEntry | Forms_v0926_pokemon_fidoughEntry | Forms_v0927_pokemon_dachsbunEntry | Forms_v0928_pokemon_smolivEntry | Forms_v0929_pokemon_dollivEntry | Forms_v0930_pokemon_arbolivaEntry | Forms_v0931_pokemon_squawkabillyEntry | Forms_v0932_pokemon_nacliEntry | Forms_v0933_pokemon_naclstackEntry | Forms_v0934_pokemon_garganaclEntry | Forms_v0935_pokemon_charcadetEntry | Forms_v0936_pokemon_armarougeEntry | Forms_v0937_pokemon_ceruledgeEntry | Forms_v0938_pokemon_tadbulbEntry | Forms_v0939_pokemon_belliboltEntry | Forms_v0940_pokemon_wattrelEntry | Forms_v0941_pokemon_kilowattrelEntry | Forms_v0942_pokemon_maschiffEntry | Forms_v0943_pokemon_mabosstiffEntry | Forms_v0944_pokemon_shroodleEntry | Forms_v0945_pokemon_grafaiaiEntry | Forms_v0946_pokemon_bramblinEntry | Forms_v0947_pokemon_brambleghastEntry | Forms_v0948_pokemon_toedscoolEntry | Forms_v0949_pokemon_toedscruelEntry | Forms_v0950_pokemon_klawfEntry | Forms_v0951_pokemon_capsakidEntry | Forms_v0952_pokemon_scovillainEntry | Forms_v0953_pokemon_rellorEntry | Forms_v0954_pokemon_rabscaEntry | Forms_v0955_pokemon_flittleEntry | Forms_v0956_pokemon_espathraEntry | Forms_v0957_pokemon_tinkatinkEntry | Forms_v0958_pokemon_tinkatuffEntry | Forms_v0959_pokemon_tinkatonEntry | Forms_v0960_pokemon_wiglettEntry | Forms_v0961_pokemon_wugtrioEntry | Forms_v0962_pokemon_bombirdierEntry | Forms_v0963_pokemon_finizenEntry | Forms_v0964_pokemon_palafinEntry | Forms_v0965_pokemon_varoomEntry | Forms_v0966_pokemon_revavroomEntry | Forms_v0967_pokemon_cyclizarEntry | Forms_v0968_pokemon_orthwormEntry | Forms_v0969_pokemon_glimmetEntry | Forms_v0970_pokemon_glimmoraEntry | Forms_v0971_pokemon_greavardEntry | Forms_v0972_pokemon_houndstoneEntry | Forms_v0973_pokemon_flamigoEntry | Forms_v0974_pokemon_cetoddleEntry | Forms_v0975_pokemon_cetitanEntry | Forms_v0976_pokemon_veluzaEntry | Forms_v0977_pokemon_dondozoEntry | Forms_v0978_pokemon_tatsugiriEntry | Forms_v0979_pokemon_annihilapeEntry | Forms_v0980_pokemon_clodsireEntry | Forms_v0981_pokemon_farigirafEntry | Forms_v0982_pokemon_dudunsparceEntry | Forms_v0983_pokemon_kingambitEntry | Forms_v0984_pokemon_greattuskEntry | Forms_v0985_pokemon_screamtailEntry | Forms_v0986_pokemon_brutebonnetEntry | Forms_v0987_pokemon_fluttermaneEntry | Forms_v0988_pokemon_slitherwingEntry | Forms_v0989_pokemon_sandyshocksEntry | Forms_v0990_pokemon_irontreadsEntry | Forms_v0991_pokemon_ironbundleEntry | Forms_v0992_pokemon_ironhandsEntry | Forms_v0993_pokemon_ironjugulisEntry | Forms_v0994_pokemon_ironmothEntry | Forms_v0995_pokemon_ironthornsEntry | Forms_v0996_pokemon_frigibaxEntry | Forms_v0997_pokemon_arctibaxEntry | Forms_v0998_pokemon_baxcaliburEntry | Forms_v0999_pokemon_gimmighoulEntry | Forms_v1000_pokemon_gholdengoEntry | Forms_v1001_pokemon_wochienEntry | Forms_v1002_pokemon_chienpaoEntry | Forms_v1003_pokemon_tingluEntry | Forms_v1004_pokemon_chiyuEntry | Forms_v1005_pokemon_roaringmoonEntry | Forms_v1006_pokemon_ironvaliantEntry | Forms_v1007_pokemon_koraidonEntry | Forms_v1008_pokemon_miraidonEntry | Forms_v1009_pokemon_walkingwakeEntry | Forms_v1010_pokemon_ironleavesEntry | Forms_v1011_pokemon_dipplinEntry | Forms_v1012_pokemon_poltchageistEntry | Forms_v1013_pokemon_sinistchaEntry | Forms_v1014_pokemon_okidogiEntry | Forms_v1015_pokemon_munkidoriEntry | Forms_v1016_pokemon_fezandipitiEntry | Forms_v1017_pokemon_ogerponEntry | Forms_v1018_pokemon_archaludonEntry | Forms_v1019_pokemon_hydrappleEntry | Forms_v1020_pokemon_gougingfireEntry | Forms_v1021_pokemon_ragingboltEntry | Forms_v1022_pokemon_ironboulderEntry | Forms_v1023_pokemon_ironcrownEntry | Forms_v1024_pokemon_terapagosEntry | Forms_v1025_pokemon_pecharuntEntry;
+export type FormsSettingsMasterfileEntry = Forms_v0001_pokemon_bulbasaurEntry | Forms_v0004_pokemon_charmanderEntry | Forms_v0007_pokemon_squirtleEntry | Forms_v0150_pokemon_mewtwoEntry | Forms_v0225_pokemon_delibirdEntry | Forms_v0302_pokemon_sableyeEntry | Forms_v0613_pokemon_cubchooEntry | Forms_v0614_pokemon_bearticEntry | Forms_v0002_pokemon_ivysaurEntry | Forms_v0005_pokemon_charmeleonEntry | Forms_v0008_pokemon_wartortleEntry | Forms_v0011_pokemon_metapodEntry | Forms_v0012_pokemon_butterfreeEntry | Forms_v0013_pokemon_weedleEntry | Forms_v0014_pokemon_kakunaEntry | Forms_v0015_pokemon_beedrillEntry | Forms_v0016_pokemon_pidgeyEntry | Forms_v0017_pokemon_pidgeottoEntry | Forms_v0018_pokemon_pidgeotEntry | Forms_v0021_pokemon_spearowEntry | Forms_v0022_pokemon_fearowEntry | Forms_v0023_pokemon_ekansEntry | Forms_v0024_pokemon_arbokEntry | Forms_v0029_pokemon_nidoranEntry | Forms_v0030_pokemon_nidorinaEntry | Forms_v0031_pokemon_nidoqueenEntry | Forms_v0032_pokemon_nidoranEntry | Forms_v0033_pokemon_nidorinoEntry | Forms_v0034_pokemon_nidokingEntry | Forms_v0035_pokemon_clefairyEntry | Forms_v0036_pokemon_clefableEntry | Forms_v0039_pokemon_jigglypuffEntry | Forms_v0040_pokemon_wigglytuffEntry | Forms_v0041_pokemon_zubatEntry | Forms_v0042_pokemon_golbatEntry | Forms_v0043_pokemon_oddishEntry | Forms_v0044_pokemon_gloomEntry | Forms_v0045_pokemon_vileplumeEntry | Forms_v0046_pokemon_parasEntry | Forms_v0047_pokemon_parasectEntry | Forms_v0048_pokemon_venonatEntry | Forms_v0049_pokemon_venomothEntry | Forms_v0054_pokemon_psyduckEntry | Forms_v0055_pokemon_golduckEntry | Forms_v0056_pokemon_mankeyEntry | Forms_v0057_pokemon_primeapeEntry | Forms_v0058_pokemon_growlitheEntry | Forms_v0059_pokemon_arcanineEntry | Forms_v0060_pokemon_poliwagEntry | Forms_v0061_pokemon_poliwhirlEntry | Forms_v0062_pokemon_poliwrathEntry | Forms_v0063_pokemon_abraEntry | Forms_v0064_pokemon_kadabraEntry | Forms_v0065_pokemon_alakazamEntry | Forms_v0066_pokemon_machopEntry | Forms_v0067_pokemon_machokeEntry | Forms_v0068_pokemon_machampEntry | Forms_v0069_pokemon_bellsproutEntry | Forms_v0070_pokemon_weepinbellEntry | Forms_v0071_pokemon_victreebelEntry | Forms_v0072_pokemon_tentacoolEntry | Forms_v0073_pokemon_tentacruelEntry | Forms_v0081_pokemon_magnemiteEntry | Forms_v0082_pokemon_magnetonEntry | Forms_v0084_pokemon_doduoEntry | Forms_v0085_pokemon_dodrioEntry | Forms_v0086_pokemon_seelEntry | Forms_v0087_pokemon_dewgongEntry | Forms_v0090_pokemon_shellderEntry | Forms_v0091_pokemon_cloysterEntry | Forms_v0092_pokemon_gastlyEntry | Forms_v0093_pokemon_haunterEntry | Forms_v0095_pokemon_onixEntry | Forms_v0096_pokemon_drowzeeEntry | Forms_v0097_pokemon_hypnoEntry | Forms_v0098_pokemon_krabbyEntry | Forms_v0099_pokemon_kinglerEntry | Forms_v0100_pokemon_voltorbEntry | Forms_v0101_pokemon_electrodeEntry | Forms_v0102_pokemon_exeggcuteEntry | Forms_v0104_pokemon_cuboneEntry | Forms_v0106_pokemon_hitmonleeEntry | Forms_v0107_pokemon_hitmonchanEntry | Forms_v0108_pokemon_lickitungEntry | Forms_v0109_pokemon_koffingEntry | Forms_v0111_pokemon_rhyhornEntry | Forms_v0112_pokemon_rhydonEntry | Forms_v0113_pokemon_chanseyEntry | Forms_v0114_pokemon_tangelaEntry | Forms_v0115_pokemon_kangaskhanEntry | Forms_v0116_pokemon_horseaEntry | Forms_v0117_pokemon_seadraEntry | Forms_v0118_pokemon_goldeenEntry | Forms_v0119_pokemon_seakingEntry | Forms_v0120_pokemon_staryuEntry | Forms_v0121_pokemon_starmieEntry | Forms_v0123_pokemon_scytherEntry | Forms_v0124_pokemon_jynxEntry | Forms_v0125_pokemon_electabuzzEntry | Forms_v0126_pokemon_magmarEntry | Forms_v0127_pokemon_pinsirEntry | Forms_v0128_pokemon_taurosEntry | Forms_v0129_pokemon_magikarpEntry | Forms_v0130_pokemon_gyaradosEntry | Forms_v0134_pokemon_vaporeonEntry | Forms_v0135_pokemon_jolteonEntry | Forms_v0136_pokemon_flareonEntry | Forms_v0137_pokemon_porygonEntry | Forms_v0138_pokemon_omanyteEntry | Forms_v0139_pokemon_omastarEntry | Forms_v0140_pokemon_kabutoEntry | Forms_v0141_pokemon_kabutopsEntry | Forms_v0147_pokemon_dratiniEntry | Forms_v0148_pokemon_dragonairEntry | Forms_v0149_pokemon_dragoniteEntry | Forms_v0151_pokemon_mewEntry | Forms_v0152_pokemon_chikoritaEntry | Forms_v0153_pokemon_bayleefEntry | Forms_v0154_pokemon_meganiumEntry | Forms_v0155_pokemon_cyndaquilEntry | Forms_v0156_pokemon_quilavaEntry | Forms_v0157_pokemon_typhlosionEntry | Forms_v0158_pokemon_totodileEntry | Forms_v0159_pokemon_croconawEntry | Forms_v0160_pokemon_feraligatrEntry | Forms_v0161_pokemon_sentretEntry | Forms_v0162_pokemon_furretEntry | Forms_v0163_pokemon_hoothootEntry | Forms_v0164_pokemon_noctowlEntry | Forms_v0165_pokemon_ledybaEntry | Forms_v0166_pokemon_ledianEntry | Forms_v0167_pokemon_spinarakEntry | Forms_v0168_pokemon_ariadosEntry | Forms_v0169_pokemon_crobatEntry | Forms_v0170_pokemon_chinchouEntry | Forms_v0171_pokemon_lanturnEntry | Forms_v0172_pokemon_pichuEntry | Forms_v0173_pokemon_cleffaEntry | Forms_v0174_pokemon_igglybuffEntry | Forms_v0175_pokemon_togepiEntry | Forms_v0176_pokemon_togeticEntry | Forms_v0177_pokemon_natuEntry | Forms_v0178_pokemon_xatuEntry | Forms_v0179_pokemon_mareepEntry | Forms_v0180_pokemon_flaaffyEntry | Forms_v0181_pokemon_ampharosEntry | Forms_v0182_pokemon_bellossomEntry | Forms_v0183_pokemon_marillEntry | Forms_v0184_pokemon_azumarillEntry | Forms_v0186_pokemon_politoedEntry | Forms_v0187_pokemon_hoppipEntry | Forms_v0188_pokemon_skiploomEntry | Forms_v0189_pokemon_jumpluffEntry | Forms_v0190_pokemon_aipomEntry | Forms_v0191_pokemon_sunkernEntry | Forms_v0192_pokemon_sunfloraEntry | Forms_v0193_pokemon_yanmaEntry | Forms_v0194_pokemon_wooperEntry | Forms_v0195_pokemon_quagsireEntry | Forms_v0198_pokemon_murkrowEntry | Forms_v0200_pokemon_misdreavusEntry | Forms_v0202_pokemon_wobbuffetEntry | Forms_v0203_pokemon_girafarigEntry | Forms_v0204_pokemon_pinecoEntry | Forms_v0205_pokemon_forretressEntry | Forms_v0206_pokemon_dunsparceEntry | Forms_v0207_pokemon_gligarEntry | Forms_v0208_pokemon_steelixEntry | Forms_v0209_pokemon_snubbullEntry | Forms_v0210_pokemon_granbullEntry | Forms_v0211_pokemon_qwilfishEntry | Forms_v0212_pokemon_scizorEntry | Forms_v0213_pokemon_shuckleEntry | Forms_v0214_pokemon_heracrossEntry | Forms_v0215_pokemon_sneaselEntry | Forms_v0216_pokemon_teddiursaEntry | Forms_v0217_pokemon_ursaringEntry | Forms_v0218_pokemon_slugmaEntry | Forms_v0219_pokemon_magcargoEntry | Forms_v0220_pokemon_swinubEntry | Forms_v0221_pokemon_piloswineEntry | Forms_v0223_pokemon_remoraidEntry | Forms_v0224_pokemon_octilleryEntry | Forms_v0226_pokemon_mantineEntry | Forms_v0227_pokemon_skarmoryEntry | Forms_v0228_pokemon_houndourEntry | Forms_v0229_pokemon_houndoomEntry | Forms_v0230_pokemon_kingdraEntry | Forms_v0231_pokemon_phanpyEntry | Forms_v0232_pokemon_donphanEntry | Forms_v0233_pokemon_porygon2Entry | Forms_v0234_pokemon_stantlerEntry | Forms_v0235_pokemon_smeargleEntry | Forms_v0236_pokemon_tyrogueEntry | Forms_v0237_pokemon_hitmontopEntry | Forms_v0238_pokemon_smoochumEntry | Forms_v0239_pokemon_elekidEntry | Forms_v0240_pokemon_magbyEntry | Forms_v0241_pokemon_miltankEntry | Forms_v0242_pokemon_blisseyEntry | Forms_v0243_pokemon_raikouEntry | Forms_v0244_pokemon_enteiEntry | Forms_v0245_pokemon_suicuneEntry | Forms_v0246_pokemon_larvitarEntry | Forms_v0247_pokemon_pupitarEntry | Forms_v0248_pokemon_tyranitarEntry | Forms_v0249_pokemon_lugiaEntry | Forms_v0250_pokemon_ho_ohEntry | Forms_v0251_pokemon_celebiEntry | Forms_v0252_pokemon_treeckoEntry | Forms_v0253_pokemon_grovyleEntry | Forms_v0254_pokemon_sceptileEntry | Forms_v0255_pokemon_torchicEntry | Forms_v0256_pokemon_combuskenEntry | Forms_v0257_pokemon_blazikenEntry | Forms_v0258_pokemon_mudkipEntry | Forms_v0259_pokemon_marshtompEntry | Forms_v0260_pokemon_swampertEntry | Forms_v0261_pokemon_poochyenaEntry | Forms_v0262_pokemon_mightyenaEntry | Forms_v0265_pokemon_wurmpleEntry | Forms_v0266_pokemon_silcoonEntry | Forms_v0267_pokemon_beautiflyEntry | Forms_v0268_pokemon_cascoonEntry | Forms_v0269_pokemon_dustoxEntry | Forms_v0270_pokemon_lotadEntry | Forms_v0271_pokemon_lombreEntry | Forms_v0272_pokemon_ludicoloEntry | Forms_v0273_pokemon_seedotEntry | Forms_v0274_pokemon_nuzleafEntry | Forms_v0275_pokemon_shiftryEntry | Forms_v0276_pokemon_taillowEntry | Forms_v0277_pokemon_swellowEntry | Forms_v0278_pokemon_wingullEntry | Forms_v0279_pokemon_pelipperEntry | Forms_v0280_pokemon_raltsEntry | Forms_v0281_pokemon_kirliaEntry | Forms_v0282_pokemon_gardevoirEntry | Forms_v0283_pokemon_surskitEntry | Forms_v0284_pokemon_masquerainEntry | Forms_v0285_pokemon_shroomishEntry | Forms_v0286_pokemon_breloomEntry | Forms_v0287_pokemon_slakothEntry | Forms_v0288_pokemon_vigorothEntry | Forms_v0289_pokemon_slakingEntry | Forms_v0290_pokemon_nincadaEntry | Forms_v0291_pokemon_ninjaskEntry | Forms_v0292_pokemon_shedinjaEntry | Forms_v0293_pokemon_whismurEntry | Forms_v0294_pokemon_loudredEntry | Forms_v0295_pokemon_exploudEntry | Forms_v0296_pokemon_makuhitaEntry | Forms_v0297_pokemon_hariyamaEntry | Forms_v0298_pokemon_azurillEntry | Forms_v0299_pokemon_nosepassEntry | Forms_v0300_pokemon_skittyEntry | Forms_v0301_pokemon_delcattyEntry | Forms_v0303_pokemon_mawileEntry | Forms_v0304_pokemon_aronEntry | Forms_v0305_pokemon_laironEntry | Forms_v0306_pokemon_aggronEntry | Forms_v0307_pokemon_medititeEntry | Forms_v0308_pokemon_medichamEntry | Forms_v0309_pokemon_electrikeEntry | Forms_v0310_pokemon_manectricEntry | Forms_v0311_pokemon_plusleEntry | Forms_v0312_pokemon_minunEntry | Forms_v0313_pokemon_volbeatEntry | Forms_v0314_pokemon_illumiseEntry | Forms_v0315_pokemon_roseliaEntry | Forms_v0316_pokemon_gulpinEntry | Forms_v0317_pokemon_swalotEntry | Forms_v0318_pokemon_carvanhaEntry | Forms_v0319_pokemon_sharpedoEntry | Forms_v0320_pokemon_wailmerEntry | Forms_v0321_pokemon_wailordEntry | Forms_v0322_pokemon_numelEntry | Forms_v0323_pokemon_cameruptEntry | Forms_v0324_pokemon_torkoalEntry | Forms_v0325_pokemon_spoinkEntry | Forms_v0326_pokemon_grumpigEntry | Forms_v0328_pokemon_trapinchEntry | Forms_v0329_pokemon_vibravaEntry | Forms_v0330_pokemon_flygonEntry | Forms_v0331_pokemon_cacneaEntry | Forms_v0332_pokemon_cacturneEntry | Forms_v0333_pokemon_swabluEntry | Forms_v0334_pokemon_altariaEntry | Forms_v0335_pokemon_zangooseEntry | Forms_v0336_pokemon_seviperEntry | Forms_v0337_pokemon_lunatoneEntry | Forms_v0338_pokemon_solrockEntry | Forms_v0339_pokemon_barboachEntry | Forms_v0340_pokemon_whiscashEntry | Forms_v0341_pokemon_corphishEntry | Forms_v0342_pokemon_crawdauntEntry | Forms_v0343_pokemon_baltoyEntry | Forms_v0344_pokemon_claydolEntry | Forms_v0345_pokemon_lileepEntry | Forms_v0346_pokemon_cradilyEntry | Forms_v0347_pokemon_anorithEntry | Forms_v0348_pokemon_armaldoEntry | Forms_v0349_pokemon_feebasEntry | Forms_v0350_pokemon_miloticEntry | Forms_v0352_pokemon_kecleonEntry | Forms_v0353_pokemon_shuppetEntry | Forms_v0354_pokemon_banetteEntry | Forms_v0355_pokemon_duskullEntry | Forms_v0356_pokemon_dusclopsEntry | Forms_v0357_pokemon_tropiusEntry | Forms_v0358_pokemon_chimechoEntry | Forms_v0359_pokemon_absolEntry | Forms_v0360_pokemon_wynautEntry | Forms_v0361_pokemon_snoruntEntry | Forms_v0362_pokemon_glalieEntry | Forms_v0363_pokemon_sphealEntry | Forms_v0364_pokemon_sealeoEntry | Forms_v0365_pokemon_walreinEntry | Forms_v0366_pokemon_clamperlEntry | Forms_v0367_pokemon_huntailEntry | Forms_v0368_pokemon_gorebyssEntry | Forms_v0369_pokemon_relicanthEntry | Forms_v0370_pokemon_luvdiscEntry | Forms_v0371_pokemon_bagonEntry | Forms_v0372_pokemon_shelgonEntry | Forms_v0373_pokemon_salamenceEntry | Forms_v0374_pokemon_beldumEntry | Forms_v0375_pokemon_metangEntry | Forms_v0376_pokemon_metagrossEntry | Forms_v0377_pokemon_regirockEntry | Forms_v0378_pokemon_regiceEntry | Forms_v0379_pokemon_registeelEntry | Forms_v0380_pokemon_latiasEntry | Forms_v0381_pokemon_latiosEntry | Forms_v0382_pokemon_kyogreEntry | Forms_v0383_pokemon_groudonEntry | Forms_v0384_pokemon_rayquazaEntry | Forms_v0385_pokemon_jirachiEntry | Forms_v0387_pokemon_turtwigEntry | Forms_v0388_pokemon_grotleEntry | Forms_v0389_pokemon_torterraEntry | Forms_v0390_pokemon_chimcharEntry | Forms_v0391_pokemon_monfernoEntry | Forms_v0392_pokemon_infernapeEntry | Forms_v0393_pokemon_piplupEntry | Forms_v0394_pokemon_prinplupEntry | Forms_v0395_pokemon_empoleonEntry | Forms_v0396_pokemon_starlyEntry | Forms_v0397_pokemon_staraviaEntry | Forms_v0398_pokemon_staraptorEntry | Forms_v0399_pokemon_bidoofEntry | Forms_v0400_pokemon_bibarelEntry | Forms_v0401_pokemon_kricketotEntry | Forms_v0402_pokemon_kricketuneEntry | Forms_v0403_pokemon_shinxEntry | Forms_v0404_pokemon_luxioEntry | Forms_v0405_pokemon_luxrayEntry | Forms_v0406_pokemon_budewEntry | Forms_v0407_pokemon_roseradeEntry | Forms_v0408_pokemon_cranidosEntry | Forms_v0409_pokemon_rampardosEntry | Forms_v0410_pokemon_shieldonEntry | Forms_v0411_pokemon_bastiodonEntry | Forms_v0414_pokemon_mothimEntry | Forms_v0415_pokemon_combeeEntry | Forms_v0416_pokemon_vespiquenEntry | Forms_v0417_pokemon_pachirisuEntry | Forms_v0418_pokemon_buizelEntry | Forms_v0419_pokemon_floatzelEntry | Forms_v0420_pokemon_cherubiEntry | Forms_v0424_pokemon_ambipomEntry | Forms_v0425_pokemon_drifloonEntry | Forms_v0426_pokemon_drifblimEntry | Forms_v0427_pokemon_bunearyEntry | Forms_v0428_pokemon_lopunnyEntry | Forms_v0429_pokemon_mismagiusEntry | Forms_v0430_pokemon_honchkrowEntry | Forms_v0431_pokemon_glameowEntry | Forms_v0432_pokemon_puruglyEntry | Forms_v0433_pokemon_chinglingEntry | Forms_v0434_pokemon_stunkyEntry | Forms_v0435_pokemon_skuntankEntry | Forms_v0436_pokemon_bronzorEntry | Forms_v0437_pokemon_bronzongEntry | Forms_v0438_pokemon_bonslyEntry | Forms_v0439_pokemon_mime_jrEntry | Forms_v0440_pokemon_happinyEntry | Forms_v0441_pokemon_chatotEntry | Forms_v0442_pokemon_spiritombEntry | Forms_v0443_pokemon_gibleEntry | Forms_v0444_pokemon_gabiteEntry | Forms_v0445_pokemon_garchompEntry | Forms_v0446_pokemon_munchlaxEntry | Forms_v0447_pokemon_rioluEntry | Forms_v0448_pokemon_lucarioEntry | Forms_v0449_pokemon_hippopotasEntry | Forms_v0450_pokemon_hippowdonEntry | Forms_v0451_pokemon_skorupiEntry | Forms_v0452_pokemon_drapionEntry | Forms_v0453_pokemon_croagunkEntry | Forms_v0454_pokemon_toxicroakEntry | Forms_v0455_pokemon_carnivineEntry | Forms_v0456_pokemon_finneonEntry | Forms_v0457_pokemon_lumineonEntry | Forms_v0458_pokemon_mantykeEntry | Forms_v0459_pokemon_snoverEntry | Forms_v0460_pokemon_abomasnowEntry | Forms_v0461_pokemon_weavileEntry | Forms_v0462_pokemon_magnezoneEntry | Forms_v0463_pokemon_lickilickyEntry | Forms_v0464_pokemon_rhyperiorEntry | Forms_v0465_pokemon_tangrowthEntry | Forms_v0466_pokemon_electivireEntry | Forms_v0467_pokemon_magmortarEntry | Forms_v0468_pokemon_togekissEntry | Forms_v0469_pokemon_yanmegaEntry | Forms_v0470_pokemon_leafeonEntry | Forms_v0471_pokemon_glaceonEntry | Forms_v0472_pokemon_gliscorEntry | Forms_v0473_pokemon_mamoswineEntry | Forms_v0474_pokemon_porygon_zEntry | Forms_v0475_pokemon_galladeEntry | Forms_v0476_pokemon_probopassEntry | Forms_v0477_pokemon_dusknoirEntry | Forms_v0478_pokemon_froslassEntry | Forms_v0480_pokemon_uxieEntry | Forms_v0481_pokemon_mespritEntry | Forms_v0482_pokemon_azelfEntry | Forms_v0485_pokemon_heatranEntry | Forms_v0486_pokemon_regigigasEntry | Forms_v0488_pokemon_cresseliaEntry | Forms_v0489_pokemon_phioneEntry | Forms_v0490_pokemon_manaphyEntry | Forms_v0491_pokemon_darkraiEntry | Forms_v0494_pokemon_victiniEntry | Forms_v0495_pokemon_snivyEntry | Forms_v0496_pokemon_servineEntry | Forms_v0497_pokemon_serperiorEntry | Forms_v0498_pokemon_tepigEntry | Forms_v0499_pokemon_pigniteEntry | Forms_v0500_pokemon_emboarEntry | Forms_v0501_pokemon_oshawottEntry | Forms_v0502_pokemon_dewottEntry | Forms_v0503_pokemon_samurottEntry | Forms_v0504_pokemon_patratEntry | Forms_v0505_pokemon_watchogEntry | Forms_v0506_pokemon_lillipupEntry | Forms_v0507_pokemon_herdierEntry | Forms_v0508_pokemon_stoutlandEntry | Forms_v0509_pokemon_purrloinEntry | Forms_v0510_pokemon_liepardEntry | Forms_v0511_pokemon_pansageEntry | Forms_v0512_pokemon_simisageEntry | Forms_v0513_pokemon_pansearEntry | Forms_v0514_pokemon_simisearEntry | Forms_v0515_pokemon_panpourEntry | Forms_v0516_pokemon_simipourEntry | Forms_v0517_pokemon_munnaEntry | Forms_v0518_pokemon_musharnaEntry | Forms_v0519_pokemon_pidoveEntry | Forms_v0520_pokemon_tranquillEntry | Forms_v0521_pokemon_unfezantEntry | Forms_v0522_pokemon_blitzleEntry | Forms_v0523_pokemon_zebstrikaEntry | Forms_v0524_pokemon_roggenrolaEntry | Forms_v0525_pokemon_boldoreEntry | Forms_v0526_pokemon_gigalithEntry | Forms_v0527_pokemon_woobatEntry | Forms_v0528_pokemon_swoobatEntry | Forms_v0529_pokemon_drilburEntry | Forms_v0530_pokemon_excadrillEntry | Forms_v0531_pokemon_audinoEntry | Forms_v0532_pokemon_timburrEntry | Forms_v0533_pokemon_gurdurrEntry | Forms_v0534_pokemon_conkeldurrEntry | Forms_v0535_pokemon_tympoleEntry | Forms_v0536_pokemon_palpitoadEntry | Forms_v0537_pokemon_seismitoadEntry | Forms_v0538_pokemon_throhEntry | Forms_v0539_pokemon_sawkEntry | Forms_v0540_pokemon_sewaddleEntry | Forms_v0541_pokemon_swadloonEntry | Forms_v0542_pokemon_leavannyEntry | Forms_v0543_pokemon_venipedeEntry | Forms_v0544_pokemon_whirlipedeEntry | Forms_v0545_pokemon_scolipedeEntry | Forms_v0546_pokemon_cottoneeEntry | Forms_v0547_pokemon_whimsicottEntry | Forms_v0548_pokemon_petililEntry | Forms_v0549_pokemon_lilligantEntry | Forms_v0551_pokemon_sandileEntry | Forms_v0552_pokemon_krokorokEntry | Forms_v0553_pokemon_krookodileEntry | Forms_v0556_pokemon_maractusEntry | Forms_v0557_pokemon_dwebbleEntry | Forms_v0558_pokemon_crustleEntry | Forms_v0559_pokemon_scraggyEntry | Forms_v0560_pokemon_scraftyEntry | Forms_v0561_pokemon_sigilyphEntry | Forms_v0563_pokemon_cofagrigusEntry | Forms_v0564_pokemon_tirtougaEntry | Forms_v0565_pokemon_carracostaEntry | Forms_v0566_pokemon_archenEntry | Forms_v0567_pokemon_archeopsEntry | Forms_v0568_pokemon_trubbishEntry | Forms_v0569_pokemon_garbodorEntry | Forms_v0570_pokemon_zoruaEntry | Forms_v0571_pokemon_zoroarkEntry | Forms_v0572_pokemon_minccinoEntry | Forms_v0573_pokemon_cinccinoEntry | Forms_v0574_pokemon_gothitaEntry | Forms_v0575_pokemon_gothoritaEntry | Forms_v0576_pokemon_gothitelleEntry | Forms_v0577_pokemon_solosisEntry | Forms_v0578_pokemon_duosionEntry | Forms_v0579_pokemon_reuniclusEntry | Forms_v0580_pokemon_ducklettEntry | Forms_v0581_pokemon_swannaEntry | Forms_v0582_pokemon_vanilliteEntry | Forms_v0583_pokemon_vanillishEntry | Forms_v0584_pokemon_vanilluxeEntry | Forms_v0587_pokemon_emolgaEntry | Forms_v0588_pokemon_karrablastEntry | Forms_v0589_pokemon_escavalierEntry | Forms_v0590_pokemon_foongusEntry | Forms_v0591_pokemon_amoongussEntry | Forms_v0594_pokemon_alomomolaEntry | Forms_v0595_pokemon_joltikEntry | Forms_v0596_pokemon_galvantulaEntry | Forms_v0597_pokemon_ferroseedEntry | Forms_v0598_pokemon_ferrothornEntry | Forms_v0599_pokemon_klinkEntry | Forms_v0600_pokemon_klangEntry | Forms_v0601_pokemon_klinklangEntry | Forms_v0602_pokemon_tynamoEntry | Forms_v0603_pokemon_eelektrikEntry | Forms_v0604_pokemon_eelektrossEntry | Forms_v0605_pokemon_elgyemEntry | Forms_v0606_pokemon_beheeyemEntry | Forms_v0607_pokemon_litwickEntry | Forms_v0608_pokemon_lampentEntry | Forms_v0609_pokemon_chandelureEntry | Forms_v0610_pokemon_axewEntry | Forms_v0611_pokemon_fraxureEntry | Forms_v0612_pokemon_haxorusEntry | Forms_v0615_pokemon_cryogonalEntry | Forms_v0616_pokemon_shelmetEntry | Forms_v0617_pokemon_accelgorEntry | Forms_v0619_pokemon_mienfooEntry | Forms_v0620_pokemon_mienshaoEntry | Forms_v0621_pokemon_druddigonEntry | Forms_v0622_pokemon_golettEntry | Forms_v0623_pokemon_golurkEntry | Forms_v0624_pokemon_pawniardEntry | Forms_v0625_pokemon_bisharpEntry | Forms_v0626_pokemon_bouffalantEntry | Forms_v0627_pokemon_ruffletEntry | Forms_v0628_pokemon_braviaryEntry | Forms_v0629_pokemon_vullabyEntry | Forms_v0630_pokemon_mandibuzzEntry | Forms_v0631_pokemon_heatmorEntry | Forms_v0632_pokemon_durantEntry | Forms_v0633_pokemon_deinoEntry | Forms_v0634_pokemon_zweilousEntry | Forms_v0635_pokemon_hydreigonEntry | Forms_v0636_pokemon_larvestaEntry | Forms_v0637_pokemon_volcaronaEntry | Forms_v0638_pokemon_cobalionEntry | Forms_v0639_pokemon_terrakionEntry | Forms_v0640_pokemon_virizionEntry | Forms_v0643_pokemon_reshiramEntry | Forms_v0644_pokemon_zekromEntry | Forms_v0650_pokemon_chespinEntry | Forms_v0651_pokemon_quilladinEntry | Forms_v0652_pokemon_chesnaughtEntry | Forms_v0653_pokemon_fennekinEntry | Forms_v0654_pokemon_braixenEntry | Forms_v0655_pokemon_delphoxEntry | Forms_v0656_pokemon_froakieEntry | Forms_v0657_pokemon_frogadierEntry | Forms_v0658_pokemon_greninjaEntry | Forms_v0659_pokemon_bunnelbyEntry | Forms_v0660_pokemon_diggersbyEntry | Forms_v0661_pokemon_fletchlingEntry | Forms_v0662_pokemon_fletchinderEntry | Forms_v0663_pokemon_talonflameEntry | Forms_v0664_pokemon_scatterbugEntry | Forms_v0665_pokemon_spewpaEntry | Forms_v0666_pokemon_vivillonEntry | Forms_v0667_pokemon_litleoEntry | Forms_v0669_pokemon_flabebeEntry | Forms_v0670_pokemon_floetteEntry | Forms_v0671_pokemon_florgesEntry | Forms_v0672_pokemon_skiddoEntry | Forms_v0673_pokemon_gogoatEntry | Forms_v0674_pokemon_panchamEntry | Forms_v0675_pokemon_pangoroEntry | Forms_v0677_pokemon_espurrEntry | Forms_v0679_pokemon_honedgeEntry | Forms_v0680_pokemon_doubladeEntry | Forms_v0681_pokemon_aegislashEntry | Forms_v0682_pokemon_spritzeeEntry | Forms_v0683_pokemon_aromatisseEntry | Forms_v0684_pokemon_swirlixEntry | Forms_v0685_pokemon_slurpuffEntry | Forms_v0686_pokemon_inkayEntry | Forms_v0687_pokemon_malamarEntry | Forms_v0688_pokemon_binacleEntry | Forms_v0689_pokemon_barbaracleEntry | Forms_v0690_pokemon_skrelpEntry | Forms_v0691_pokemon_dragalgeEntry | Forms_v0692_pokemon_clauncherEntry | Forms_v0693_pokemon_clawitzerEntry | Forms_v0694_pokemon_helioptileEntry | Forms_v0695_pokemon_helioliskEntry | Forms_v0696_pokemon_tyruntEntry | Forms_v0697_pokemon_tyrantrumEntry | Forms_v0698_pokemon_amauraEntry | Forms_v0699_pokemon_aurorusEntry | Forms_v0700_pokemon_sylveonEntry | Forms_v0701_pokemon_hawluchaEntry | Forms_v0702_pokemon_dedenneEntry | Forms_v0703_pokemon_carbinkEntry | Forms_v0704_pokemon_goomyEntry | Forms_v0705_pokemon_sliggooEntry | Forms_v0706_pokemon_goodraEntry | Forms_v0707_pokemon_klefkiEntry | Forms_v0708_pokemon_phantumpEntry | Forms_v0709_pokemon_trevenantEntry | Forms_v0712_pokemon_bergmiteEntry | Forms_v0713_pokemon_avaluggEntry | Forms_v0714_pokemon_noibatEntry | Forms_v0715_pokemon_noivernEntry | Forms_v0716_pokemon_xerneasEntry | Forms_v0717_pokemon_yveltalEntry | Forms_v0719_pokemon_diancieEntry | Forms_v0721_pokemon_volcanionEntry | Forms_v0722_pokemon_rowletEntry | Forms_v0723_pokemon_dartrixEntry | Forms_v0724_pokemon_decidueyeEntry | Forms_v0725_pokemon_littenEntry | Forms_v0726_pokemon_torracatEntry | Forms_v0727_pokemon_incineroarEntry | Forms_v0728_pokemon_popplioEntry | Forms_v0729_pokemon_brionneEntry | Forms_v0730_pokemon_primarinaEntry | Forms_v0731_pokemon_pikipekEntry | Forms_v0732_pokemon_trumbeakEntry | Forms_v0733_pokemon_toucannonEntry | Forms_v0734_pokemon_yungoosEntry | Forms_v0735_pokemon_gumshoosEntry | Forms_v0736_pokemon_grubbinEntry | Forms_v0739_pokemon_crabrawlerEntry | Forms_v0740_pokemon_crabominableEntry | Forms_v0741_pokemon_oricorioEntry | Forms_v0742_pokemon_cutieflyEntry | Forms_v0743_pokemon_ribombeeEntry | Forms_v0744_pokemon_rockruffEntry | Forms_v0745_pokemon_lycanrocEntry | Forms_v0746_pokemon_wishiwashiEntry | Forms_v0747_pokemon_mareanieEntry | Forms_v0748_pokemon_toxapexEntry | Forms_v0749_pokemon_mudbrayEntry | Forms_v0750_pokemon_mudsdaleEntry | Forms_v0751_pokemon_dewpiderEntry | Forms_v0752_pokemon_araquanidEntry | Forms_v0753_pokemon_fomantisEntry | Forms_v0754_pokemon_lurantisEntry | Forms_v0755_pokemon_morelullEntry | Forms_v0756_pokemon_shiinoticEntry | Forms_v0757_pokemon_salanditEntry | Forms_v0758_pokemon_salazzleEntry | Forms_v0759_pokemon_stuffulEntry | Forms_v0761_pokemon_bounsweetEntry | Forms_v0762_pokemon_steeneeEntry | Forms_v0763_pokemon_tsareenaEntry | Forms_v0764_pokemon_comfeyEntry | Forms_v0765_pokemon_oranguruEntry | Forms_v0766_pokemon_passimianEntry | Forms_v0767_pokemon_wimpodEntry | Forms_v0768_pokemon_golisopodEntry | Forms_v0769_pokemon_sandygastEntry | Forms_v0770_pokemon_palossandEntry | Forms_v0771_pokemon_pyukumukuEntry | Forms_v0772_pokemon_type_nullEntry | Forms_v0774_pokemon_miniorEntry | Forms_v0775_pokemon_komalaEntry | Forms_v0776_pokemon_turtonatorEntry | Forms_v0777_pokemon_togedemaruEntry | Forms_v0778_pokemon_mimikyuEntry | Forms_v0779_pokemon_bruxishEntry | Forms_v0780_pokemon_drampaEntry | Forms_v0781_pokemon_dhelmiseEntry | Forms_v0782_pokemon_jangmo_oEntry | Forms_v0783_pokemon_hakamo_oEntry | Forms_v0784_pokemon_kommo_oEntry | Forms_v0785_pokemon_tapu_kokoEntry | Forms_v0786_pokemon_tapu_leleEntry | Forms_v0787_pokemon_tapu_buluEntry | Forms_v0788_pokemon_tapu_finiEntry | Forms_v0789_pokemon_cosmogEntry | Forms_v0790_pokemon_cosmoemEntry | Forms_v0791_pokemon_solgaleoEntry | Forms_v0792_pokemon_lunalaEntry | Forms_v0793_pokemon_nihilegoEntry | Forms_v0794_pokemon_buzzwoleEntry | Forms_v0795_pokemon_pheromosaEntry | Forms_v0796_pokemon_xurkitreeEntry | Forms_v0797_pokemon_celesteelaEntry | Forms_v0798_pokemon_kartanaEntry | Forms_v0799_pokemon_guzzlordEntry | Forms_v0800_pokemon_necrozmaEntry | Forms_v0801_pokemon_magearnaEntry | Forms_v0802_pokemon_marshadowEntry | Forms_v0803_pokemon_poipoleEntry | Forms_v0804_pokemon_naganadelEntry | Forms_v0805_pokemon_stakatakaEntry | Forms_v0806_pokemon_blacephalonEntry | Forms_v0807_pokemon_zeraoraEntry | Forms_v0808_pokemon_meltanEntry | Forms_v0809_pokemon_melmetalEntry | Forms_v0810_pokemon_grookeyEntry | Forms_v0811_pokemon_thwackeyEntry | Forms_v0812_pokemon_rillaboomEntry | Forms_v0813_pokemon_scorbunnyEntry | Forms_v0814_pokemon_rabootEntry | Forms_v0815_pokemon_cinderaceEntry | Forms_v0816_pokemon_sobbleEntry | Forms_v0817_pokemon_drizzileEntry | Forms_v0818_pokemon_inteleonEntry | Forms_v0819_pokemon_skwovetEntry | Forms_v0820_pokemon_greedentEntry | Forms_v0821_pokemon_rookideeEntry | Forms_v0822_pokemon_corvisquireEntry | Forms_v0823_pokemon_corviknightEntry | Forms_v0824_pokemon_blipbugEntry | Forms_v0825_pokemon_dottlerEntry | Forms_v0826_pokemon_orbeetleEntry | Forms_v0827_pokemon_nickitEntry | Forms_v0828_pokemon_thievulEntry | Forms_v0829_pokemon_gossifleurEntry | Forms_v0830_pokemon_eldegossEntry | Forms_v0831_pokemon_woolooEntry | Forms_v0832_pokemon_dubwoolEntry | Forms_v0833_pokemon_chewtleEntry | Forms_v0834_pokemon_drednawEntry | Forms_v0835_pokemon_yamperEntry | Forms_v0836_pokemon_boltundEntry | Forms_v0837_pokemon_rolycolyEntry | Forms_v0838_pokemon_carkolEntry | Forms_v0839_pokemon_coalossalEntry | Forms_v0840_pokemon_applinEntry | Forms_v0841_pokemon_flappleEntry | Forms_v0842_pokemon_appletunEntry | Forms_v0843_pokemon_silicobraEntry | Forms_v0844_pokemon_sandacondaEntry | Forms_v0845_pokemon_cramorantEntry | Forms_v0846_pokemon_arrokudaEntry | Forms_v0847_pokemon_barraskewdaEntry | Forms_v0848_pokemon_toxelEntry | Forms_v0849_pokemon_toxtricityEntry | Forms_v0850_pokemon_sizzlipedeEntry | Forms_v0851_pokemon_centiskorchEntry | Forms_v0852_pokemon_clobbopusEntry | Forms_v0853_pokemon_grapploctEntry | Forms_v0855_pokemon_polteageistEntry | Forms_v0856_pokemon_hatennaEntry | Forms_v0857_pokemon_hattremEntry | Forms_v0858_pokemon_hattereneEntry | Forms_v0859_pokemon_impidimpEntry | Forms_v0860_pokemon_morgremEntry | Forms_v0861_pokemon_grimmsnarlEntry | Forms_v0864_pokemon_cursolaEntry | Forms_v0868_pokemon_milceryEntry | Forms_v0869_pokemon_alcremieEntry | Forms_v0871_pokemon_pincurchinEntry | Forms_v0872_pokemon_snomEntry | Forms_v0873_pokemon_frosmothEntry | Forms_v0874_pokemon_stonjournerEntry | Forms_v0875_pokemon_eiscueEntry | Forms_v0876_pokemon_indeedeeEntry | Forms_v0877_pokemon_morpekoEntry | Forms_v0878_pokemon_cufantEntry | Forms_v0879_pokemon_copperajahEntry | Forms_v0880_pokemon_dracozoltEntry | Forms_v0881_pokemon_arctozoltEntry | Forms_v0882_pokemon_dracovishEntry | Forms_v0883_pokemon_arctovishEntry | Forms_v0884_pokemon_duraludonEntry | Forms_v0885_pokemon_dreepyEntry | Forms_v0886_pokemon_drakloakEntry | Forms_v0887_pokemon_dragapultEntry | Forms_v0888_pokemon_zacianEntry | Forms_v0889_pokemon_zamazentaEntry | Forms_v0890_pokemon_eternatusEntry | Forms_v0891_pokemon_kubfuEntry | Forms_v0892_pokemon_urshifuEntry | Forms_v0893_pokemon_zarudeEntry | Forms_v0894_pokemon_regielekiEntry | Forms_v0895_pokemon_regidragoEntry | Forms_v0896_pokemon_glastrierEntry | Forms_v0897_pokemon_spectrierEntry | Forms_v0898_pokemon_calyrexEntry | Forms_v0899_pokemon_wyrdeerEntry | Forms_v0900_pokemon_kleavorEntry | Forms_v0901_pokemon_ursalunaEntry | Forms_v0902_pokemon_basculegionEntry | Forms_v0903_pokemon_sneaslerEntry | Forms_v0904_pokemon_overqwilEntry | Forms_v0905_pokemon_enamorusEntry | Forms_v0906_pokemon_sprigatitoEntry | Forms_v0907_pokemon_floragatoEntry | Forms_v0908_pokemon_meowscaradaEntry | Forms_v0909_pokemon_fuecocoEntry | Forms_v0910_pokemon_crocalorEntry | Forms_v0911_pokemon_skeledirgeEntry | Forms_v0912_pokemon_quaxlyEntry | Forms_v0913_pokemon_quaxwellEntry | Forms_v0914_pokemon_quaquavalEntry | Forms_v0915_pokemon_lechonkEntry | Forms_v0916_pokemon_oinkologneEntry | Forms_v0917_pokemon_tarountulaEntry | Forms_v0918_pokemon_spidopsEntry | Forms_v0919_pokemon_nymbleEntry | Forms_v0920_pokemon_lokixEntry | Forms_v0921_pokemon_pawmiEntry | Forms_v0922_pokemon_pawmoEntry | Forms_v0923_pokemon_pawmotEntry | Forms_v0924_pokemon_tandemausEntry | Forms_v0925_pokemon_mausholdEntry | Forms_v0926_pokemon_fidoughEntry | Forms_v0927_pokemon_dachsbunEntry | Forms_v0928_pokemon_smolivEntry | Forms_v0929_pokemon_dollivEntry | Forms_v0930_pokemon_arbolivaEntry | Forms_v0931_pokemon_squawkabillyEntry | Forms_v0932_pokemon_nacliEntry | Forms_v0933_pokemon_naclstackEntry | Forms_v0934_pokemon_garganaclEntry | Forms_v0935_pokemon_charcadetEntry | Forms_v0936_pokemon_armarougeEntry | Forms_v0937_pokemon_ceruledgeEntry | Forms_v0938_pokemon_tadbulbEntry | Forms_v0939_pokemon_belliboltEntry | Forms_v0940_pokemon_wattrelEntry | Forms_v0941_pokemon_kilowattrelEntry | Forms_v0942_pokemon_maschiffEntry | Forms_v0943_pokemon_mabosstiffEntry | Forms_v0944_pokemon_shroodleEntry | Forms_v0945_pokemon_grafaiaiEntry | Forms_v0946_pokemon_bramblinEntry | Forms_v0947_pokemon_brambleghastEntry | Forms_v0948_pokemon_toedscoolEntry | Forms_v0949_pokemon_toedscruelEntry | Forms_v0950_pokemon_klawfEntry | Forms_v0951_pokemon_capsakidEntry | Forms_v0952_pokemon_scovillainEntry | Forms_v0953_pokemon_rellorEntry | Forms_v0954_pokemon_rabscaEntry | Forms_v0955_pokemon_flittleEntry | Forms_v0956_pokemon_espathraEntry | Forms_v0957_pokemon_tinkatinkEntry | Forms_v0958_pokemon_tinkatuffEntry | Forms_v0959_pokemon_tinkatonEntry | Forms_v0960_pokemon_wiglettEntry | Forms_v0961_pokemon_wugtrioEntry | Forms_v0962_pokemon_bombirdierEntry | Forms_v0963_pokemon_finizenEntry | Forms_v0964_pokemon_palafinEntry | Forms_v0965_pokemon_varoomEntry | Forms_v0966_pokemon_revavroomEntry | Forms_v0967_pokemon_cyclizarEntry | Forms_v0968_pokemon_orthwormEntry | Forms_v0969_pokemon_glimmetEntry | Forms_v0970_pokemon_glimmoraEntry | Forms_v0971_pokemon_greavardEntry | Forms_v0972_pokemon_houndstoneEntry | Forms_v0973_pokemon_flamigoEntry | Forms_v0974_pokemon_cetoddleEntry | Forms_v0975_pokemon_cetitanEntry | Forms_v0976_pokemon_veluzaEntry | Forms_v0977_pokemon_dondozoEntry | Forms_v0978_pokemon_tatsugiriEntry | Forms_v0979_pokemon_annihilapeEntry | Forms_v0980_pokemon_clodsireEntry | Forms_v0981_pokemon_farigirafEntry | Forms_v0983_pokemon_kingambitEntry | Forms_v0984_pokemon_greattuskEntry | Forms_v0985_pokemon_screamtailEntry | Forms_v0986_pokemon_brutebonnetEntry | Forms_v0987_pokemon_fluttermaneEntry | Forms_v0988_pokemon_slitherwingEntry | Forms_v0989_pokemon_sandyshocksEntry | Forms_v0990_pokemon_irontreadsEntry | Forms_v0991_pokemon_ironbundleEntry | Forms_v0992_pokemon_ironhandsEntry | Forms_v0993_pokemon_ironjugulisEntry | Forms_v0994_pokemon_ironmothEntry | Forms_v0995_pokemon_ironthornsEntry | Forms_v0996_pokemon_frigibaxEntry | Forms_v0997_pokemon_arctibaxEntry | Forms_v0998_pokemon_baxcaliburEntry | Forms_v1000_pokemon_gholdengoEntry | Forms_v1001_pokemon_wochienEntry | Forms_v1002_pokemon_chienpaoEntry | Forms_v1003_pokemon_tingluEntry | Forms_v1004_pokemon_chiyuEntry | Forms_v1005_pokemon_roaringmoonEntry | Forms_v1006_pokemon_ironvaliantEntry | Forms_v1007_pokemon_koraidonEntry | Forms_v1008_pokemon_miraidonEntry | Forms_v1009_pokemon_walkingwakeEntry | Forms_v1010_pokemon_ironleavesEntry | Forms_v1011_pokemon_dipplinEntry | Forms_v1013_pokemon_sinistchaEntry | Forms_v1014_pokemon_okidogiEntry | Forms_v1015_pokemon_munkidoriEntry | Forms_v1016_pokemon_fezandipitiEntry | Forms_v1018_pokemon_archaludonEntry | Forms_v1019_pokemon_hydrappleEntry | Forms_v1020_pokemon_gougingfireEntry | Forms_v1021_pokemon_ragingboltEntry | Forms_v1022_pokemon_ironboulderEntry | Forms_v1023_pokemon_ironcrownEntry | Forms_v1024_pokemon_terapagosEntry | Forms_v1025_pokemon_pecharuntEntry | Forms_v0003_pokemon_venusaurEntry | Forms_v0006_pokemon_charizardEntry | Forms_v0009_pokemon_blastoiseEntry | Forms_v0010_pokemon_caterpieEntry | Forms_v0222_pokemon_corsolaEntry | Forms_v0019_pokemon_rattataEntry | Forms_v0020_pokemon_raticateEntry | Forms_v0026_pokemon_raichuEntry | Forms_v0027_pokemon_sandshrewEntry | Forms_v0028_pokemon_sandslashEntry | Forms_v0037_pokemon_vulpixEntry | Forms_v0038_pokemon_ninetalesEntry | Forms_v0050_pokemon_diglettEntry | Forms_v0051_pokemon_dugtrioEntry | Forms_v0052_pokemon_meowthEntry | Forms_v0053_pokemon_persianEntry | Forms_v0074_pokemon_geodudeEntry | Forms_v0075_pokemon_gravelerEntry | Forms_v0076_pokemon_golemEntry | Forms_v0077_pokemon_ponytaEntry | Forms_v0078_pokemon_rapidashEntry | Forms_v0083_pokemon_farfetchdEntry | Forms_v0088_pokemon_grimerEntry | Forms_v0089_pokemon_mukEntry | Forms_v0103_pokemon_exeggutorEntry | Forms_v0105_pokemon_marowakEntry | Forms_v0110_pokemon_weezingEntry | Forms_v0122_pokemon_mr_mimeEntry | Forms_v0144_pokemon_articunoEntry | Forms_v0145_pokemon_zapdosEntry | Forms_v0146_pokemon_moltresEntry | Forms_v0263_pokemon_zigzagoonEntry | Forms_v0264_pokemon_linooneEntry | Forms_v0550_pokemon_basculinEntry | Forms_v0554_pokemon_darumakaEntry | Forms_v0562_pokemon_yamaskEntry | Forms_v0592_pokemon_frillishEntry | Forms_v0593_pokemon_jellicentEntry | Forms_v0618_pokemon_stunfiskEntry | Forms_v0668_pokemon_pyroarEntry | Forms_v0678_pokemon_meowsticEntry | Forms_v0710_pokemon_pumpkabooEntry | Forms_v0711_pokemon_gourgeistEntry | Forms_v0718_pokemon_zygardeEntry | Forms_v0720_pokemon_hoopaEntry | Forms_v0025_pokemon_pikachuEntry | Forms_v0079_pokemon_slowpokeEntry | Forms_v0080_pokemon_slowbroEntry | Forms_v0094_pokemon_gengarEntry | Forms_v0185_pokemon_sudowoodoEntry | Forms_v0199_pokemon_slowkingEntry | Forms_v0737_pokemon_charjabugEntry | Forms_v0738_pokemon_vikavoltEntry | Forms_v0131_pokemon_laprasEntry | Forms_v0132_pokemon_dittoEntry | Forms_v0133_pokemon_eeveeEntry | Forms_v0142_pokemon_aerodactylEntry | Forms_v0143_pokemon_snorlaxEntry | Forms_v0196_pokemon_espeonEntry | Forms_v0197_pokemon_umbreonEntry | Forms_v0760_pokemon_bewearEntry | Forms_v0870_pokemon_falinksEntry | Forms_v0999_pokemon_gimmighoulEntry | Forms_v0201_pokemon_unownEntry | Forms_v0327_pokemon_spindaEntry | Forms_v0351_pokemon_castformEntry | Forms_v0386_pokemon_deoxysEntry | Forms_v0412_pokemon_burmyEntry | Forms_v0413_pokemon_wormadamEntry | Forms_v0421_pokemon_cherrimEntry | Forms_v0422_pokemon_shellosEntry | Forms_v0423_pokemon_gastrodonEntry | Forms_v0479_pokemon_rotomEntry | Forms_v0483_pokemon_dialgaEntry | Forms_v0484_pokemon_palkiaEntry | Forms_v0487_pokemon_giratinaEntry | Forms_v0492_pokemon_shayminEntry | Forms_v0493_pokemon_arceusEntry | Forms_v0555_pokemon_darmanitanEntry | Forms_v0585_pokemon_deerlingEntry | Forms_v0586_pokemon_sawsbuckEntry | Forms_v0641_pokemon_tornadusEntry | Forms_v0642_pokemon_thundurusEntry | Forms_v0645_pokemon_landorusEntry | Forms_v0646_pokemon_kyuremEntry | Forms_v0647_pokemon_keldeoEntry | Forms_v0648_pokemon_meloettaEntry | Forms_v0649_pokemon_genesectEntry | Forms_v0676_pokemon_furfrouEntry | Forms_v0773_pokemon_silvallyEntry | Forms_v0862_pokemon_obstagoonEntry | Forms_v0863_pokemon_perrserkerEntry | Forms_v0865_pokemon_sirfetchdEntry | Forms_v0866_pokemon_mr_rimeEntry | Forms_v0867_pokemon_runerigusEntry | Forms_v0854_pokemon_sinisteaEntry | Forms_v0982_pokemon_dudunsparceEntry | Forms_v1012_pokemon_poltchageistEntry | Forms_v1017_pokemon_ogerponEntry;

@@ -5,6 +5,8 @@
 // Filters: all
 // Entries emitted: 416
 
+import type { PokemonGenderShared2, PokemonGenderShared6, PokemonGenderShared7, PokemonGenderShared8 } from "./shared.generated";
+
 export interface Spawn_v0001_pokemon_bulbasaurdatagendersettingsgender {
   femalePercent: number;
   malePercent: number;
@@ -117,47 +119,13 @@ export interface Spawn_v0010_pokemon_caterpieEntry {
   templateId: "SPAWN_V0010_POKEMON_CATERPIE";
   data: Spawn_v0001_pokemon_bulbasaurdata;
 }
-export interface Spawn_v0010_pokemon_caterpie_gofest_2026datagendersettings {
-  form: number;
-  gender: Spawn_v0001_pokemon_bulbasaurdatagendersettingsgender;
-  pokemon: string;
-}
-export interface Spawn_v0010_pokemon_caterpie_gofest_2026data {
-  genderSettings: Spawn_v0010_pokemon_caterpie_gofest_2026datagendersettings;
-  templateId: string;
-}
-export interface Spawn_v0010_pokemon_caterpie_gofest_2026Entry {
-  templateId: "SPAWN_V0010_POKEMON_CATERPIE_GOFEST_2026";
-  data: Spawn_v0010_pokemon_caterpie_gofest_2026data;
-}
-export interface Spawn_v0010_pokemon_caterpie_normaldatagendersettings {
-  form: string;
-  gender: Spawn_v0001_pokemon_bulbasaurdatagendersettingsgender;
-  pokemon: string;
-}
-export interface Spawn_v0010_pokemon_caterpie_normaldata {
-  genderSettings: Spawn_v0010_pokemon_caterpie_normaldatagendersettings;
-  templateId: string;
-}
-export interface Spawn_v0010_pokemon_caterpie_normalEntry {
-  templateId: "SPAWN_V0010_POKEMON_CATERPIE_NORMAL";
-  data: Spawn_v0010_pokemon_caterpie_normaldata;
-}
 export interface Spawn_v0011_pokemon_metapodEntry {
   templateId: "SPAWN_V0011_POKEMON_METAPOD";
   data: Spawn_v0001_pokemon_bulbasaurdata;
 }
-export interface Spawn_v0011_pokemon_metapod_normalEntry {
-  templateId: "SPAWN_V0011_POKEMON_METAPOD_NORMAL";
-  data: Spawn_v0010_pokemon_caterpie_normaldata;
-}
 export interface Spawn_v0012_pokemon_butterfreeEntry {
   templateId: "SPAWN_V0012_POKEMON_BUTTERFREE";
   data: Spawn_v0001_pokemon_bulbasaurdata;
-}
-export interface Spawn_v0012_pokemon_butterfree_normalEntry {
-  templateId: "SPAWN_V0012_POKEMON_BUTTERFREE_NORMAL";
-  data: Spawn_v0010_pokemon_caterpie_normaldata;
 }
 export interface Spawn_v0013_pokemon_weedleEntry {
   templateId: "SPAWN_V0013_POKEMON_WEEDLE";
@@ -275,47 +243,9 @@ export interface Spawn_v0025_pokemon_pikachu_bb_2026Entry {
   templateId: "SPAWN_V0025_POKEMON_PIKACHU_BB_2026";
   data: Spawn_v0001_pokemon_bulbasaurdata;
 }
-export interface Spawn_v0025_pokemon_pikachu_copy_2019datagendersettingsgender {
-  malePercent: number;
-}
-export interface Spawn_v0025_pokemon_pikachu_copy_2019datagendersettings {
-  gender: Spawn_v0025_pokemon_pikachu_copy_2019datagendersettingsgender;
-  pokemon: string;
-}
-export interface Spawn_v0025_pokemon_pikachu_copy_2019data {
-  genderSettings: Spawn_v0025_pokemon_pikachu_copy_2019datagendersettings;
-  templateId: string;
-}
-export interface Spawn_v0025_pokemon_pikachu_copy_2019Entry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_COPY_2019";
-  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
-}
 export interface Spawn_v0025_pokemon_pikachu_costume_2020Entry {
   templateId: "SPAWN_V0025_POKEMON_PIKACHU_COSTUME_2020";
   data: Spawn_v0001_pokemon_bulbasaurdata;
-}
-export interface Spawn_v0025_pokemon_pikachu_diwali_2024datagendersettingsgender {
-  femalePercent: number;
-}
-export interface Spawn_v0025_pokemon_pikachu_diwali_2024datagendersettings {
-  gender: Spawn_v0025_pokemon_pikachu_diwali_2024datagendersettingsgender;
-  pokemon: string;
-}
-export interface Spawn_v0025_pokemon_pikachu_diwali_2024data {
-  genderSettings: Spawn_v0025_pokemon_pikachu_diwali_2024datagendersettings;
-  templateId: string;
-}
-export interface Spawn_v0025_pokemon_pikachu_diwali_2024Entry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_DIWALI_2024";
-  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
-}
-export interface Spawn_v0025_pokemon_pikachu_doctorEntry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_DOCTOR";
-  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
-}
-export interface Spawn_v0025_pokemon_pikachu_fall_2019Entry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_FALL_2019";
-  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
 }
 export interface Spawn_v0025_pokemon_pikachu_flying_01Entry {
   templateId: "SPAWN_V0025_POKEMON_PIKACHU_FLYING_01";
@@ -377,74 +307,6 @@ export interface Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_yellowEntry {
   templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2025_MONOCLE_YELLOW";
   data: Spawn_v0001_pokemon_bulbasaurdata;
 }
-export interface Spawn_v0025_pokemon_pikachu_gofest_2026_cap_blueEntry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2026_CAP_BLUE";
-  data: Spawn_v0010_pokemon_caterpie_gofest_2026data;
-}
-export interface Spawn_v0025_pokemon_pikachu_gofest_2026_cap_redEntry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2026_CAP_RED";
-  data: Spawn_v0010_pokemon_caterpie_gofest_2026data;
-}
-export interface Spawn_v0025_pokemon_pikachu_gofest_2026_cap_yellowEntry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2026_CAP_YELLOW";
-  data: Spawn_v0010_pokemon_caterpie_gofest_2026data;
-}
-export interface Spawn_v0025_pokemon_pikachu_gotour_2024_aEntry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2024_A";
-  data: Spawn_v0010_pokemon_caterpie_normaldata;
-}
-export interface Spawn_v0025_pokemon_pikachu_gotour_2024_a_02Entry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2024_A_02";
-  data: Spawn_v0010_pokemon_caterpie_normaldata;
-}
-export interface Spawn_v0025_pokemon_pikachu_gotour_2024_bEntry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2024_B";
-  data: Spawn_v0010_pokemon_caterpie_normaldata;
-}
-export interface Spawn_v0025_pokemon_pikachu_gotour_2024_b_02Entry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2024_B_02";
-  data: Spawn_v0010_pokemon_caterpie_normaldata;
-}
-export interface Spawn_v0025_pokemon_pikachu_gotour_2025_aEntry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2025_A";
-  data: Spawn_v0010_pokemon_caterpie_normaldata;
-}
-export interface Spawn_v0025_pokemon_pikachu_gotour_2025_a_02Entry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2025_A_02";
-  data: Spawn_v0010_pokemon_caterpie_normaldata;
-}
-export interface Spawn_v0025_pokemon_pikachu_gotour_2025_bEntry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2025_B";
-  data: Spawn_v0010_pokemon_caterpie_normaldata;
-}
-export interface Spawn_v0025_pokemon_pikachu_gotour_2025_b_02Entry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2025_B_02";
-  data: Spawn_v0010_pokemon_caterpie_normaldata;
-}
-export interface Spawn_v0025_pokemon_pikachu_gotour_2026_aEntry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_A";
-  data: Spawn_v0010_pokemon_caterpie_normaldata;
-}
-export interface Spawn_v0025_pokemon_pikachu_gotour_2026_a_02Entry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_A_02";
-  data: Spawn_v0010_pokemon_caterpie_normaldata;
-}
-export interface Spawn_v0025_pokemon_pikachu_gotour_2026_bEntry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_B";
-  data: Spawn_v0010_pokemon_caterpie_normaldata;
-}
-export interface Spawn_v0025_pokemon_pikachu_gotour_2026_b_02Entry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_B_02";
-  data: Spawn_v0010_pokemon_caterpie_normaldata;
-}
-export interface Spawn_v0025_pokemon_pikachu_gotour_2026_cEntry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_C";
-  data: Spawn_v0010_pokemon_caterpie_normaldata;
-}
-export interface Spawn_v0025_pokemon_pikachu_gotour_2026_c_02Entry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_C_02";
-  data: Spawn_v0010_pokemon_caterpie_normaldata;
-}
 export interface Spawn_v0025_pokemon_pikachu_horizonsEntry {
   templateId: "SPAWN_V0025_POKEMON_PIKACHU_HORIZONS";
   data: Spawn_v0001_pokemon_bulbasaurdata;
@@ -457,30 +319,9 @@ export interface Spawn_v0025_pokemon_pikachu_kariyushiEntry {
   templateId: "SPAWN_V0025_POKEMON_PIKACHU_KARIYUSHI";
   data: Spawn_v0001_pokemon_bulbasaurdata;
 }
-export interface Spawn_v0025_pokemon_pikachu_kurtaEntry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_KURTA";
-  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
-}
 export interface Spawn_v0025_pokemon_pikachu_normalEntry {
   templateId: "SPAWN_V0025_POKEMON_PIKACHU_NORMAL";
   data: Spawn_v0001_pokemon_bulbasaurdata;
-}
-export interface Spawn_v0025_pokemon_pikachu_pop_stardatagendersettings {
-  form: string;
-  gender: Spawn_v0025_pokemon_pikachu_diwali_2024datagendersettingsgender;
-  pokemon: string;
-}
-export interface Spawn_v0025_pokemon_pikachu_pop_stardata {
-  genderSettings: Spawn_v0025_pokemon_pikachu_pop_stardatagendersettings;
-  templateId: string;
-}
-export interface Spawn_v0025_pokemon_pikachu_pop_starEntry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_POP_STAR";
-  data: Spawn_v0025_pokemon_pikachu_pop_stardata;
-}
-export interface Spawn_v0025_pokemon_pikachu_rock_starEntry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_ROCK_STAR";
-  data: Spawn_v0025_pokemon_pikachu_pop_stardata;
 }
 export interface Spawn_v0025_pokemon_pikachu_summer_2023_aEntry {
   templateId: "SPAWN_V0025_POKEMON_PIKACHU_SUMMER_2023_A";
@@ -513,10 +354,6 @@ export interface Spawn_v0025_pokemon_pikachu_tshirt_02Entry {
 export interface Spawn_v0025_pokemon_pikachu_tshirt_03Entry {
   templateId: "SPAWN_V0025_POKEMON_PIKACHU_TSHIRT_03";
   data: Spawn_v0001_pokemon_bulbasaurdata;
-}
-export interface Spawn_v0025_pokemon_pikachu_vs_2019Entry {
-  templateId: "SPAWN_V0025_POKEMON_PIKACHU_VS_2019";
-  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
 }
 export interface Spawn_v0025_pokemon_pikachu_wcs_2022Entry {
   templateId: "SPAWN_V0025_POKEMON_PIKACHU_WCS_2022";
@@ -573,54 +410,6 @@ export interface Spawn_v0028_pokemon_sandslash_alolaEntry {
 export interface Spawn_v0028_pokemon_sandslash_normalEntry {
   templateId: "SPAWN_V0028_POKEMON_SANDSLASH_NORMAL";
   data: Spawn_v0001_pokemon_bulbasaurdata;
-}
-export interface Spawn_v0029_pokemon_nidoranEntry {
-  templateId: "SPAWN_V0029_POKEMON_NIDORAN";
-  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
-}
-export interface Spawn_v0029_pokemon_nidoran_normalEntry {
-  templateId: "SPAWN_V0029_POKEMON_NIDORAN_NORMAL";
-  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
-}
-export interface Spawn_v0030_pokemon_nidorinaEntry {
-  templateId: "SPAWN_V0030_POKEMON_NIDORINA";
-  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
-}
-export interface Spawn_v0030_pokemon_nidorina_normalEntry {
-  templateId: "SPAWN_V0030_POKEMON_NIDORINA_NORMAL";
-  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
-}
-export interface Spawn_v0031_pokemon_nidoqueenEntry {
-  templateId: "SPAWN_V0031_POKEMON_NIDOQUEEN";
-  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
-}
-export interface Spawn_v0031_pokemon_nidoqueen_normalEntry {
-  templateId: "SPAWN_V0031_POKEMON_NIDOQUEEN_NORMAL";
-  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
-}
-export interface Spawn_v0032_pokemon_nidoranEntry {
-  templateId: "SPAWN_V0032_POKEMON_NIDORAN";
-  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
-}
-export interface Spawn_v0032_pokemon_nidoran_normalEntry {
-  templateId: "SPAWN_V0032_POKEMON_NIDORAN_NORMAL";
-  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
-}
-export interface Spawn_v0033_pokemon_nidorinoEntry {
-  templateId: "SPAWN_V0033_POKEMON_NIDORINO";
-  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
-}
-export interface Spawn_v0033_pokemon_nidorino_normalEntry {
-  templateId: "SPAWN_V0033_POKEMON_NIDORINO_NORMAL";
-  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
-}
-export interface Spawn_v0034_pokemon_nidokingEntry {
-  templateId: "SPAWN_V0034_POKEMON_NIDOKING";
-  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
-}
-export interface Spawn_v0034_pokemon_nidoking_normalEntry {
-  templateId: "SPAWN_V0034_POKEMON_NIDOKING_NORMAL";
-  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
 }
 export interface Spawn_v0035_pokemon_clefairyEntry {
   templateId: "SPAWN_V0035_POKEMON_CLEFAIRY";
@@ -1066,33 +855,6 @@ export interface Spawn_v0080_pokemon_slowbro_normalEntry {
   templateId: "SPAWN_V0080_POKEMON_SLOWBRO_NORMAL";
   data: Spawn_v0001_pokemon_bulbasaurdata;
 }
-export interface Spawn_v0081_pokemon_magnemitedatagendersettingsgender {
-  genderlessPercent: number;
-}
-export interface Spawn_v0081_pokemon_magnemitedatagendersettings {
-  gender: Spawn_v0081_pokemon_magnemitedatagendersettingsgender;
-  pokemon: string;
-}
-export interface Spawn_v0081_pokemon_magnemitedata {
-  genderSettings: Spawn_v0081_pokemon_magnemitedatagendersettings;
-  templateId: string;
-}
-export interface Spawn_v0081_pokemon_magnemiteEntry {
-  templateId: "SPAWN_V0081_POKEMON_MAGNEMITE";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0081_pokemon_magnemite_normalEntry {
-  templateId: "SPAWN_V0081_POKEMON_MAGNEMITE_NORMAL";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0082_pokemon_magnetonEntry {
-  templateId: "SPAWN_V0082_POKEMON_MAGNETON";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0082_pokemon_magneton_normalEntry {
-  templateId: "SPAWN_V0082_POKEMON_MAGNETON_NORMAL";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
 export interface Spawn_v0083_pokemon_farfetchdEntry {
   templateId: "SPAWN_V0083_POKEMON_FARFETCHD";
   data: Spawn_v0001_pokemon_bulbasaurdata;
@@ -1181,17 +943,9 @@ export interface Spawn_v0092_pokemon_gastlyEntry {
   templateId: "SPAWN_V0092_POKEMON_GASTLY";
   data: Spawn_v0001_pokemon_bulbasaurdata;
 }
-export interface Spawn_v0092_pokemon_gastly_normalEntry {
-  templateId: "SPAWN_V0092_POKEMON_GASTLY_NORMAL";
-  data: Spawn_v0010_pokemon_caterpie_normaldata;
-}
 export interface Spawn_v0093_pokemon_haunterEntry {
   templateId: "SPAWN_V0093_POKEMON_HAUNTER";
   data: Spawn_v0001_pokemon_bulbasaurdata;
-}
-export interface Spawn_v0093_pokemon_haunter_normalEntry {
-  templateId: "SPAWN_V0093_POKEMON_HAUNTER_NORMAL";
-  data: Spawn_v0010_pokemon_caterpie_normaldata;
 }
 export interface Spawn_v0094_pokemon_gengarEntry {
   templateId: "SPAWN_V0094_POKEMON_GENGAR";
@@ -1245,30 +999,6 @@ export interface Spawn_v0099_pokemon_kingler_normalEntry {
   templateId: "SPAWN_V0099_POKEMON_KINGLER_NORMAL";
   data: Spawn_v0001_pokemon_bulbasaurdata;
 }
-export interface Spawn_v0100_pokemon_voltorbEntry {
-  templateId: "SPAWN_V0100_POKEMON_VOLTORB";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0100_pokemon_voltorb_hisuianEntry {
-  templateId: "SPAWN_V0100_POKEMON_VOLTORB_HISUIAN";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0100_pokemon_voltorb_normalEntry {
-  templateId: "SPAWN_V0100_POKEMON_VOLTORB_NORMAL";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0101_pokemon_electrodeEntry {
-  templateId: "SPAWN_V0101_POKEMON_ELECTRODE";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0101_pokemon_electrode_hisuianEntry {
-  templateId: "SPAWN_V0101_POKEMON_ELECTRODE_HISUIAN";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0101_pokemon_electrode_normalEntry {
-  templateId: "SPAWN_V0101_POKEMON_ELECTRODE_NORMAL";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
 export interface Spawn_v0102_pokemon_exeggcuteEntry {
   templateId: "SPAWN_V0102_POKEMON_EXEGGCUTE";
   data: Spawn_v0001_pokemon_bulbasaurdata;
@@ -1308,22 +1038,6 @@ export interface Spawn_v0105_pokemon_marowak_alolaEntry {
 export interface Spawn_v0105_pokemon_marowak_normalEntry {
   templateId: "SPAWN_V0105_POKEMON_MAROWAK_NORMAL";
   data: Spawn_v0001_pokemon_bulbasaurdata;
-}
-export interface Spawn_v0106_pokemon_hitmonleeEntry {
-  templateId: "SPAWN_V0106_POKEMON_HITMONLEE";
-  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
-}
-export interface Spawn_v0106_pokemon_hitmonlee_normalEntry {
-  templateId: "SPAWN_V0106_POKEMON_HITMONLEE_NORMAL";
-  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
-}
-export interface Spawn_v0107_pokemon_hitmonchanEntry {
-  templateId: "SPAWN_V0107_POKEMON_HITMONCHAN";
-  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
-}
-export interface Spawn_v0107_pokemon_hitmonchan_normalEntry {
-  templateId: "SPAWN_V0107_POKEMON_HITMONCHAN_NORMAL";
-  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
 }
 export interface Spawn_v0108_pokemon_lickitungEntry {
   templateId: "SPAWN_V0108_POKEMON_LICKITUNG";
@@ -1369,14 +1083,6 @@ export interface Spawn_v0112_pokemon_rhydon_normalEntry {
   templateId: "SPAWN_V0112_POKEMON_RHYDON_NORMAL";
   data: Spawn_v0001_pokemon_bulbasaurdata;
 }
-export interface Spawn_v0113_pokemon_chanseyEntry {
-  templateId: "SPAWN_V0113_POKEMON_CHANSEY";
-  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
-}
-export interface Spawn_v0113_pokemon_chansey_normalEntry {
-  templateId: "SPAWN_V0113_POKEMON_CHANSEY_NORMAL";
-  data: Spawn_v0025_pokemon_pikachu_pop_stardata;
-}
 export interface Spawn_v0114_pokemon_tangelaEntry {
   templateId: "SPAWN_V0114_POKEMON_TANGELA";
   data: Spawn_v0001_pokemon_bulbasaurdata;
@@ -1384,14 +1090,6 @@ export interface Spawn_v0114_pokemon_tangelaEntry {
 export interface Spawn_v0114_pokemon_tangela_normalEntry {
   templateId: "SPAWN_V0114_POKEMON_TANGELA_NORMAL";
   data: Spawn_v0001_pokemon_bulbasaurdata;
-}
-export interface Spawn_v0115_pokemon_kangaskhanEntry {
-  templateId: "SPAWN_V0115_POKEMON_KANGASKHAN";
-  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
-}
-export interface Spawn_v0115_pokemon_kangaskhan_normalEntry {
-  templateId: "SPAWN_V0115_POKEMON_KANGASKHAN_NORMAL";
-  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
 }
 export interface Spawn_v0116_pokemon_horseaEntry {
   templateId: "SPAWN_V0116_POKEMON_HORSEA";
@@ -1425,22 +1123,6 @@ export interface Spawn_v0119_pokemon_seaking_normalEntry {
   templateId: "SPAWN_V0119_POKEMON_SEAKING_NORMAL";
   data: Spawn_v0001_pokemon_bulbasaurdata;
 }
-export interface Spawn_v0120_pokemon_staryuEntry {
-  templateId: "SPAWN_V0120_POKEMON_STARYU";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0120_pokemon_staryu_normalEntry {
-  templateId: "SPAWN_V0120_POKEMON_STARYU_NORMAL";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0121_pokemon_starmieEntry {
-  templateId: "SPAWN_V0121_POKEMON_STARMIE";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0121_pokemon_starmie_normalEntry {
-  templateId: "SPAWN_V0121_POKEMON_STARMIE_NORMAL";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
 export interface Spawn_v0122_pokemon_mr_mimeEntry {
   templateId: "SPAWN_V0122_POKEMON_MR_MIME";
   data: Spawn_v0001_pokemon_bulbasaurdata;
@@ -1460,14 +1142,6 @@ export interface Spawn_v0123_pokemon_scytherEntry {
 export interface Spawn_v0123_pokemon_scyther_normalEntry {
   templateId: "SPAWN_V0123_POKEMON_SCYTHER_NORMAL";
   data: Spawn_v0001_pokemon_bulbasaurdata;
-}
-export interface Spawn_v0124_pokemon_jynxEntry {
-  templateId: "SPAWN_V0124_POKEMON_JYNX";
-  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
-}
-export interface Spawn_v0124_pokemon_jynx_normalEntry {
-  templateId: "SPAWN_V0124_POKEMON_JYNX_NORMAL";
-  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
 }
 export interface Spawn_v0125_pokemon_electabuzzEntry {
   templateId: "SPAWN_V0125_POKEMON_ELECTABUZZ";
@@ -1492,35 +1166,6 @@ export interface Spawn_v0127_pokemon_pinsirEntry {
 export interface Spawn_v0127_pokemon_pinsir_normalEntry {
   templateId: "SPAWN_V0127_POKEMON_PINSIR_NORMAL";
   data: Spawn_v0001_pokemon_bulbasaurdata;
-}
-export interface Spawn_v0128_pokemon_taurosEntry {
-  templateId: "SPAWN_V0128_POKEMON_TAUROS";
-  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
-}
-export interface Spawn_v0128_pokemon_tauros_normaldatagendersettings {
-  form: string;
-  gender: Spawn_v0025_pokemon_pikachu_copy_2019datagendersettingsgender;
-  pokemon: string;
-}
-export interface Spawn_v0128_pokemon_tauros_normaldata {
-  genderSettings: Spawn_v0128_pokemon_tauros_normaldatagendersettings;
-  templateId: string;
-}
-export interface Spawn_v0128_pokemon_tauros_normalEntry {
-  templateId: "SPAWN_V0128_POKEMON_TAUROS_NORMAL";
-  data: Spawn_v0128_pokemon_tauros_normaldata;
-}
-export interface Spawn_v0128_pokemon_tauros_paldea_aquaEntry {
-  templateId: "SPAWN_V0128_POKEMON_TAUROS_PALDEA_AQUA";
-  data: Spawn_v0128_pokemon_tauros_normaldata;
-}
-export interface Spawn_v0128_pokemon_tauros_paldea_blazeEntry {
-  templateId: "SPAWN_V0128_POKEMON_TAUROS_PALDEA_BLAZE";
-  data: Spawn_v0128_pokemon_tauros_normaldata;
-}
-export interface Spawn_v0128_pokemon_tauros_paldea_combatEntry {
-  templateId: "SPAWN_V0128_POKEMON_TAUROS_PALDEA_COMBAT";
-  data: Spawn_v0128_pokemon_tauros_normaldata;
 }
 export interface Spawn_v0129_pokemon_magikarpEntry {
   templateId: "SPAWN_V0129_POKEMON_MAGIKARP";
@@ -1549,22 +1194,6 @@ export interface Spawn_v0131_pokemon_lapras_costume_2020Entry {
 export interface Spawn_v0131_pokemon_lapras_normalEntry {
   templateId: "SPAWN_V0131_POKEMON_LAPRAS_NORMAL";
   data: Spawn_v0001_pokemon_bulbasaurdata;
-}
-export interface Spawn_v0132_pokemon_dittoEntry {
-  templateId: "SPAWN_V0132_POKEMON_DITTO";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0132_pokemon_ditto_normalEntry {
-  templateId: "SPAWN_V0132_POKEMON_DITTO_NORMAL";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0132_pokemon_ditto_spring_2026_aEntry {
-  templateId: "SPAWN_V0132_POKEMON_DITTO_SPRING_2026_A";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0132_pokemon_ditto_spring_2026_bEntry {
-  templateId: "SPAWN_V0132_POKEMON_DITTO_SPRING_2026_B";
-  data: Spawn_v0081_pokemon_magnemitedata;
 }
 export interface Spawn_v0133_pokemon_eeveeEntry {
   templateId: "SPAWN_V0133_POKEMON_EEVEE";
@@ -1605,14 +1234,6 @@ export interface Spawn_v0136_pokemon_flareonEntry {
 export interface Spawn_v0136_pokemon_flareon_normalEntry {
   templateId: "SPAWN_V0136_POKEMON_FLAREON_NORMAL";
   data: Spawn_v0001_pokemon_bulbasaurdata;
-}
-export interface Spawn_v0137_pokemon_porygonEntry {
-  templateId: "SPAWN_V0137_POKEMON_PORYGON";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0137_pokemon_porygon_normalEntry {
-  templateId: "SPAWN_V0137_POKEMON_PORYGON_NORMAL";
-  data: Spawn_v0081_pokemon_magnemitedata;
 }
 export interface Spawn_v0138_pokemon_omanyteEntry {
   templateId: "SPAWN_V0138_POKEMON_OMANYTE";
@@ -1666,46 +1287,6 @@ export interface Spawn_v0143_pokemon_snorlax_normalEntry {
   templateId: "SPAWN_V0143_POKEMON_SNORLAX_NORMAL";
   data: Spawn_v0001_pokemon_bulbasaurdata;
 }
-export interface Spawn_v0143_pokemon_snorlax_wildarea_2024Entry {
-  templateId: "SPAWN_V0143_POKEMON_SNORLAX_WILDAREA_2024";
-  data: Spawn_v0010_pokemon_caterpie_normaldata;
-}
-export interface Spawn_v0144_pokemon_articunoEntry {
-  templateId: "SPAWN_V0144_POKEMON_ARTICUNO";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0144_pokemon_articuno_galarianEntry {
-  templateId: "SPAWN_V0144_POKEMON_ARTICUNO_GALARIAN";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0144_pokemon_articuno_normalEntry {
-  templateId: "SPAWN_V0144_POKEMON_ARTICUNO_NORMAL";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0145_pokemon_zapdosEntry {
-  templateId: "SPAWN_V0145_POKEMON_ZAPDOS";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0145_pokemon_zapdos_galarianEntry {
-  templateId: "SPAWN_V0145_POKEMON_ZAPDOS_GALARIAN";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0145_pokemon_zapdos_normalEntry {
-  templateId: "SPAWN_V0145_POKEMON_ZAPDOS_NORMAL";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0146_pokemon_moltresEntry {
-  templateId: "SPAWN_V0146_POKEMON_MOLTRES";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0146_pokemon_moltres_galarianEntry {
-  templateId: "SPAWN_V0146_POKEMON_MOLTRES_GALARIAN";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
-export interface Spawn_v0146_pokemon_moltres_normalEntry {
-  templateId: "SPAWN_V0146_POKEMON_MOLTRES_NORMAL";
-  data: Spawn_v0081_pokemon_magnemitedata;
-}
 export interface Spawn_v0147_pokemon_dratiniEntry {
   templateId: "SPAWN_V0147_POKEMON_DRATINI";
   data: Spawn_v0001_pokemon_bulbasaurdata;
@@ -1730,26 +1311,278 @@ export interface Spawn_v0149_pokemon_dragonite_normalEntry {
   templateId: "SPAWN_V0149_POKEMON_DRAGONITE_NORMAL";
   data: Spawn_v0001_pokemon_bulbasaurdata;
 }
-export interface Spawn_v0150_pokemon_mewtwoEntry {
-  templateId: "SPAWN_V0150_POKEMON_MEWTWO";
-  data: Spawn_v0081_pokemon_magnemitedata;
+export interface Spawn_v0010_pokemon_caterpie_normaldatagendersettings {
+  form: string;
+  gender: Spawn_v0001_pokemon_bulbasaurdatagendersettingsgender;
+  pokemon: string;
 }
-export interface Spawn_v0150_pokemon_mewtwo_aEntry {
-  templateId: "SPAWN_V0150_POKEMON_MEWTWO_A";
-  data: Spawn_v0081_pokemon_magnemitedata;
+export interface Spawn_v0010_pokemon_caterpie_normaldata {
+  genderSettings: Spawn_v0010_pokemon_caterpie_normaldatagendersettings;
+  templateId: string;
 }
-export interface Spawn_v0150_pokemon_mewtwo_normalEntry {
-  templateId: "SPAWN_V0150_POKEMON_MEWTWO_NORMAL";
-  data: Spawn_v0081_pokemon_magnemitedata;
+export interface Spawn_v0010_pokemon_caterpie_normalEntry {
+  templateId: "SPAWN_V0010_POKEMON_CATERPIE_NORMAL";
+  data: Spawn_v0010_pokemon_caterpie_normaldata;
 }
-export interface Spawn_v0151_pokemon_mewEntry {
-  templateId: "SPAWN_V0151_POKEMON_MEW";
-  data: Spawn_v0081_pokemon_magnemitedata;
+export interface Spawn_v0011_pokemon_metapod_normalEntry {
+  templateId: "SPAWN_V0011_POKEMON_METAPOD_NORMAL";
+  data: Spawn_v0010_pokemon_caterpie_normaldata;
 }
-export interface Spawn_v0151_pokemon_mew_normalEntry {
-  templateId: "SPAWN_V0151_POKEMON_MEW_NORMAL";
-  data: Spawn_v0081_pokemon_magnemitedata;
+export interface Spawn_v0012_pokemon_butterfree_normalEntry {
+  templateId: "SPAWN_V0012_POKEMON_BUTTERFREE_NORMAL";
+  data: Spawn_v0010_pokemon_caterpie_normaldata;
 }
+export interface Spawn_v0025_pokemon_pikachu_gotour_2024_aEntry {
+  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2024_A";
+  data: Spawn_v0010_pokemon_caterpie_normaldata;
+}
+export interface Spawn_v0025_pokemon_pikachu_gotour_2024_a_02Entry {
+  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2024_A_02";
+  data: Spawn_v0010_pokemon_caterpie_normaldata;
+}
+export interface Spawn_v0025_pokemon_pikachu_gotour_2024_bEntry {
+  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2024_B";
+  data: Spawn_v0010_pokemon_caterpie_normaldata;
+}
+export interface Spawn_v0025_pokemon_pikachu_gotour_2024_b_02Entry {
+  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2024_B_02";
+  data: Spawn_v0010_pokemon_caterpie_normaldata;
+}
+export interface Spawn_v0025_pokemon_pikachu_gotour_2025_aEntry {
+  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2025_A";
+  data: Spawn_v0010_pokemon_caterpie_normaldata;
+}
+export interface Spawn_v0025_pokemon_pikachu_gotour_2025_a_02Entry {
+  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2025_A_02";
+  data: Spawn_v0010_pokemon_caterpie_normaldata;
+}
+export interface Spawn_v0025_pokemon_pikachu_gotour_2025_bEntry {
+  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2025_B";
+  data: Spawn_v0010_pokemon_caterpie_normaldata;
+}
+export interface Spawn_v0025_pokemon_pikachu_gotour_2025_b_02Entry {
+  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2025_B_02";
+  data: Spawn_v0010_pokemon_caterpie_normaldata;
+}
+export interface Spawn_v0025_pokemon_pikachu_gotour_2026_aEntry {
+  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_A";
+  data: Spawn_v0010_pokemon_caterpie_normaldata;
+}
+export interface Spawn_v0025_pokemon_pikachu_gotour_2026_a_02Entry {
+  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_A_02";
+  data: Spawn_v0010_pokemon_caterpie_normaldata;
+}
+export interface Spawn_v0025_pokemon_pikachu_gotour_2026_bEntry {
+  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_B";
+  data: Spawn_v0010_pokemon_caterpie_normaldata;
+}
+export interface Spawn_v0025_pokemon_pikachu_gotour_2026_b_02Entry {
+  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_B_02";
+  data: Spawn_v0010_pokemon_caterpie_normaldata;
+}
+export interface Spawn_v0025_pokemon_pikachu_gotour_2026_cEntry {
+  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_C";
+  data: Spawn_v0010_pokemon_caterpie_normaldata;
+}
+export interface Spawn_v0025_pokemon_pikachu_gotour_2026_c_02Entry {
+  templateId: "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_C_02";
+  data: Spawn_v0010_pokemon_caterpie_normaldata;
+}
+export interface Spawn_v0092_pokemon_gastly_normalEntry {
+  templateId: "SPAWN_V0092_POKEMON_GASTLY_NORMAL";
+  data: Spawn_v0010_pokemon_caterpie_normaldata;
+}
+export interface Spawn_v0093_pokemon_haunter_normalEntry {
+  templateId: "SPAWN_V0093_POKEMON_HAUNTER_NORMAL";
+  data: Spawn_v0010_pokemon_caterpie_normaldata;
+}
+export interface Spawn_v0143_pokemon_snorlax_wildarea_2024Entry {
+  templateId: "SPAWN_V0143_POKEMON_SNORLAX_WILDAREA_2024";
+  data: Spawn_v0010_pokemon_caterpie_normaldata;
+}
+export interface Spawn_v0025_pokemon_pikachu_copy_2019datagendersettingsgender {
+  malePercent: number;
+}
+export interface Spawn_v0025_pokemon_pikachu_copy_2019datagendersettings {
+  gender: Spawn_v0025_pokemon_pikachu_copy_2019datagendersettingsgender;
+  pokemon: string;
+}
+export interface Spawn_v0025_pokemon_pikachu_copy_2019data {
+  genderSettings: Spawn_v0025_pokemon_pikachu_copy_2019datagendersettings;
+  templateId: string;
+}
+export interface Spawn_v0025_pokemon_pikachu_copy_2019Entry {
+  templateId: "SPAWN_V0025_POKEMON_PIKACHU_COPY_2019";
+  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
+}
+export interface Spawn_v0025_pokemon_pikachu_fall_2019Entry {
+  templateId: "SPAWN_V0025_POKEMON_PIKACHU_FALL_2019";
+  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
+}
+export interface Spawn_v0025_pokemon_pikachu_kurtaEntry {
+  templateId: "SPAWN_V0025_POKEMON_PIKACHU_KURTA";
+  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
+}
+export interface Spawn_v0032_pokemon_nidoranEntry {
+  templateId: "SPAWN_V0032_POKEMON_NIDORAN";
+  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
+}
+export interface Spawn_v0032_pokemon_nidoran_normalEntry {
+  templateId: "SPAWN_V0032_POKEMON_NIDORAN_NORMAL";
+  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
+}
+export interface Spawn_v0033_pokemon_nidorinoEntry {
+  templateId: "SPAWN_V0033_POKEMON_NIDORINO";
+  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
+}
+export interface Spawn_v0033_pokemon_nidorino_normalEntry {
+  templateId: "SPAWN_V0033_POKEMON_NIDORINO_NORMAL";
+  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
+}
+export interface Spawn_v0034_pokemon_nidokingEntry {
+  templateId: "SPAWN_V0034_POKEMON_NIDOKING";
+  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
+}
+export interface Spawn_v0034_pokemon_nidoking_normalEntry {
+  templateId: "SPAWN_V0034_POKEMON_NIDOKING_NORMAL";
+  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
+}
+export interface Spawn_v0106_pokemon_hitmonleeEntry {
+  templateId: "SPAWN_V0106_POKEMON_HITMONLEE";
+  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
+}
+export interface Spawn_v0106_pokemon_hitmonlee_normalEntry {
+  templateId: "SPAWN_V0106_POKEMON_HITMONLEE_NORMAL";
+  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
+}
+export interface Spawn_v0107_pokemon_hitmonchanEntry {
+  templateId: "SPAWN_V0107_POKEMON_HITMONCHAN";
+  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
+}
+export interface Spawn_v0107_pokemon_hitmonchan_normalEntry {
+  templateId: "SPAWN_V0107_POKEMON_HITMONCHAN_NORMAL";
+  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
+}
+export interface Spawn_v0128_pokemon_taurosEntry {
+  templateId: "SPAWN_V0128_POKEMON_TAUROS";
+  data: Spawn_v0025_pokemon_pikachu_copy_2019data;
+}
+export interface Spawn_v0025_pokemon_pikachu_diwali_2024datagendersettingsgender {
+  femalePercent: number;
+}
+export interface Spawn_v0025_pokemon_pikachu_diwali_2024datagendersettings {
+  gender: Spawn_v0025_pokemon_pikachu_diwali_2024datagendersettingsgender;
+  pokemon: string;
+}
+export interface Spawn_v0025_pokemon_pikachu_diwali_2024data {
+  genderSettings: Spawn_v0025_pokemon_pikachu_diwali_2024datagendersettings;
+  templateId: string;
+}
+export interface Spawn_v0025_pokemon_pikachu_diwali_2024Entry {
+  templateId: "SPAWN_V0025_POKEMON_PIKACHU_DIWALI_2024";
+  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
+}
+export interface Spawn_v0025_pokemon_pikachu_doctorEntry {
+  templateId: "SPAWN_V0025_POKEMON_PIKACHU_DOCTOR";
+  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
+}
+export interface Spawn_v0025_pokemon_pikachu_vs_2019Entry {
+  templateId: "SPAWN_V0025_POKEMON_PIKACHU_VS_2019";
+  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
+}
+export interface Spawn_v0029_pokemon_nidoranEntry {
+  templateId: "SPAWN_V0029_POKEMON_NIDORAN";
+  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
+}
+export interface Spawn_v0029_pokemon_nidoran_normalEntry {
+  templateId: "SPAWN_V0029_POKEMON_NIDORAN_NORMAL";
+  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
+}
+export interface Spawn_v0030_pokemon_nidorinaEntry {
+  templateId: "SPAWN_V0030_POKEMON_NIDORINA";
+  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
+}
+export interface Spawn_v0030_pokemon_nidorina_normalEntry {
+  templateId: "SPAWN_V0030_POKEMON_NIDORINA_NORMAL";
+  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
+}
+export interface Spawn_v0031_pokemon_nidoqueenEntry {
+  templateId: "SPAWN_V0031_POKEMON_NIDOQUEEN";
+  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
+}
+export interface Spawn_v0031_pokemon_nidoqueen_normalEntry {
+  templateId: "SPAWN_V0031_POKEMON_NIDOQUEEN_NORMAL";
+  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
+}
+export interface Spawn_v0113_pokemon_chanseyEntry {
+  templateId: "SPAWN_V0113_POKEMON_CHANSEY";
+  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
+}
+export interface Spawn_v0115_pokemon_kangaskhanEntry {
+  templateId: "SPAWN_V0115_POKEMON_KANGASKHAN";
+  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
+}
+export interface Spawn_v0115_pokemon_kangaskhan_normalEntry {
+  templateId: "SPAWN_V0115_POKEMON_KANGASKHAN_NORMAL";
+  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
+}
+export interface Spawn_v0124_pokemon_jynxEntry {
+  templateId: "SPAWN_V0124_POKEMON_JYNX";
+  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
+}
+export interface Spawn_v0124_pokemon_jynx_normalEntry {
+  templateId: "SPAWN_V0124_POKEMON_JYNX_NORMAL";
+  data: Spawn_v0025_pokemon_pikachu_diwali_2024data;
+}
+
+export type PokemonGenderCaterpieGofestT = PokemonGenderShared2<"SPAWN_V0010_POKEMON_CATERPIE_GOFEST_2026", "CATERPIE">;
+export type PokemonGenderPikachuGofestTCapBlue = PokemonGenderShared2<"SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2026_CAP_BLUE", "PIKACHU">;
+export type PokemonGenderPikachuGofestTCapRed = PokemonGenderShared2<"SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2026_CAP_RED", "PIKACHU">;
+export type PokemonGenderPikachuGofestTCapYellow = PokemonGenderShared2<"SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2026_CAP_YELLOW", "PIKACHU">;
+
+export type PokemonGenderPikachuPopStar = PokemonGenderShared6<"SPAWN_V0025_POKEMON_PIKACHU_POP_STAR", "PIKACHU_POP_STAR", "PIKACHU">;
+export type PokemonGenderPikachuRockStar = PokemonGenderShared6<"SPAWN_V0025_POKEMON_PIKACHU_ROCK_STAR", "PIKACHU_ROCK_STAR", "PIKACHU">;
+export type PokemonGenderChanseyNormal = PokemonGenderShared6<"SPAWN_V0113_POKEMON_CHANSEY_NORMAL", "CHANSEY_NORMAL", "CHANSEY">;
+
+export type PokemonGenderMagnemite = PokemonGenderShared7<"SPAWN_V0081_POKEMON_MAGNEMITE", "MAGNEMITE">;
+export type PokemonGenderMagnemiteNormal = PokemonGenderShared7<"SPAWN_V0081_POKEMON_MAGNEMITE_NORMAL", "MAGNEMITE">;
+export type PokemonGenderMagneton = PokemonGenderShared7<"SPAWN_V0082_POKEMON_MAGNETON", "MAGNETON">;
+export type PokemonGenderMagnetonNormal = PokemonGenderShared7<"SPAWN_V0082_POKEMON_MAGNETON_NORMAL", "MAGNETON">;
+export type PokemonGenderVoltorb = PokemonGenderShared7<"SPAWN_V0100_POKEMON_VOLTORB", "VOLTORB">;
+export type PokemonGenderVoltorbHisuian = PokemonGenderShared7<"SPAWN_V0100_POKEMON_VOLTORB_HISUIAN", "VOLTORB">;
+export type PokemonGenderVoltorbNormal = PokemonGenderShared7<"SPAWN_V0100_POKEMON_VOLTORB_NORMAL", "VOLTORB">;
+export type PokemonGenderElectrode = PokemonGenderShared7<"SPAWN_V0101_POKEMON_ELECTRODE", "ELECTRODE">;
+export type PokemonGenderElectrodeHisuian = PokemonGenderShared7<"SPAWN_V0101_POKEMON_ELECTRODE_HISUIAN", "ELECTRODE">;
+export type PokemonGenderElectrodeNormal = PokemonGenderShared7<"SPAWN_V0101_POKEMON_ELECTRODE_NORMAL", "ELECTRODE">;
+export type PokemonGenderStaryu = PokemonGenderShared7<"SPAWN_V0120_POKEMON_STARYU", "STARYU">;
+export type PokemonGenderStaryuNormal = PokemonGenderShared7<"SPAWN_V0120_POKEMON_STARYU_NORMAL", "STARYU">;
+export type PokemonGenderStarmie = PokemonGenderShared7<"SPAWN_V0121_POKEMON_STARMIE", "STARMIE">;
+export type PokemonGenderStarmieNormal = PokemonGenderShared7<"SPAWN_V0121_POKEMON_STARMIE_NORMAL", "STARMIE">;
+export type PokemonGenderDitto = PokemonGenderShared7<"SPAWN_V0132_POKEMON_DITTO", "DITTO">;
+export type PokemonGenderDittoNormal = PokemonGenderShared7<"SPAWN_V0132_POKEMON_DITTO_NORMAL", "DITTO">;
+export type PokemonGenderDittoSpringTA = PokemonGenderShared7<"SPAWN_V0132_POKEMON_DITTO_SPRING_2026_A", "DITTO">;
+export type PokemonGenderDittoSpringTB = PokemonGenderShared7<"SPAWN_V0132_POKEMON_DITTO_SPRING_2026_B", "DITTO">;
+export type PokemonGenderPorygon = PokemonGenderShared7<"SPAWN_V0137_POKEMON_PORYGON", "PORYGON">;
+export type PokemonGenderPorygonNormal = PokemonGenderShared7<"SPAWN_V0137_POKEMON_PORYGON_NORMAL", "PORYGON">;
+export type PokemonGenderArticuno = PokemonGenderShared7<"SPAWN_V0144_POKEMON_ARTICUNO", "ARTICUNO">;
+export type PokemonGenderArticunoGalarian = PokemonGenderShared7<"SPAWN_V0144_POKEMON_ARTICUNO_GALARIAN", "ARTICUNO">;
+export type PokemonGenderArticunoNormal = PokemonGenderShared7<"SPAWN_V0144_POKEMON_ARTICUNO_NORMAL", "ARTICUNO">;
+export type PokemonGenderZapdos = PokemonGenderShared7<"SPAWN_V0145_POKEMON_ZAPDOS", "ZAPDOS">;
+export type PokemonGenderZapdosGalarian = PokemonGenderShared7<"SPAWN_V0145_POKEMON_ZAPDOS_GALARIAN", "ZAPDOS">;
+export type PokemonGenderZapdosNormal = PokemonGenderShared7<"SPAWN_V0145_POKEMON_ZAPDOS_NORMAL", "ZAPDOS">;
+export type PokemonGenderMoltres = PokemonGenderShared7<"SPAWN_V0146_POKEMON_MOLTRES", "MOLTRES">;
+export type PokemonGenderMoltresGalarian = PokemonGenderShared7<"SPAWN_V0146_POKEMON_MOLTRES_GALARIAN", "MOLTRES">;
+export type PokemonGenderMoltresNormal = PokemonGenderShared7<"SPAWN_V0146_POKEMON_MOLTRES_NORMAL", "MOLTRES">;
+export type PokemonGenderMewtwo = PokemonGenderShared7<"SPAWN_V0150_POKEMON_MEWTWO", "MEWTWO">;
+export type PokemonGenderMewtwoA = PokemonGenderShared7<"SPAWN_V0150_POKEMON_MEWTWO_A", "MEWTWO">;
+export type PokemonGenderMewtwoNormal = PokemonGenderShared7<"SPAWN_V0150_POKEMON_MEWTWO_NORMAL", "MEWTWO">;
+export type PokemonGenderMew = PokemonGenderShared7<"SPAWN_V0151_POKEMON_MEW", "MEW">;
+export type PokemonGenderMewNormal = PokemonGenderShared7<"SPAWN_V0151_POKEMON_MEW_NORMAL", "MEW">;
+
+export type PokemonGenderTaurosNormal = PokemonGenderShared8<"SPAWN_V0128_POKEMON_TAUROS_NORMAL", "TAUROS_NORMAL", "TAUROS">;
+export type PokemonGenderTaurosPaldeaAqua = PokemonGenderShared8<"SPAWN_V0128_POKEMON_TAUROS_PALDEA_AQUA", "TAUROS_PALDEA_AQUA", "TAUROS">;
+export type PokemonGenderTaurosPaldeaBlaze = PokemonGenderShared8<"SPAWN_V0128_POKEMON_TAUROS_PALDEA_BLAZE", "TAUROS_PALDEA_BLAZE", "TAUROS">;
+export type PokemonGenderTaurosPaldeaCombat = PokemonGenderShared8<"SPAWN_V0128_POKEMON_TAUROS_PALDEA_COMBAT", "TAUROS_PALDEA_COMBAT", "TAUROS">;
 
 export interface PokemonGenderGen1MasterfileByTemplateId {
   "SPAWN_V0001_POKEMON_BULBASAUR": Spawn_v0001_pokemon_bulbasaurEntry;
@@ -1777,12 +1610,8 @@ export interface PokemonGenderGen1MasterfileByTemplateId {
   "SPAWN_V0009_POKEMON_BLASTOISE_COPY_2019": Spawn_v0009_pokemon_blastoise_copy_2019Entry;
   "SPAWN_V0009_POKEMON_BLASTOISE_NORMAL": Spawn_v0009_pokemon_blastoise_normalEntry;
   "SPAWN_V0010_POKEMON_CATERPIE": Spawn_v0010_pokemon_caterpieEntry;
-  "SPAWN_V0010_POKEMON_CATERPIE_GOFEST_2026": Spawn_v0010_pokemon_caterpie_gofest_2026Entry;
-  "SPAWN_V0010_POKEMON_CATERPIE_NORMAL": Spawn_v0010_pokemon_caterpie_normalEntry;
   "SPAWN_V0011_POKEMON_METAPOD": Spawn_v0011_pokemon_metapodEntry;
-  "SPAWN_V0011_POKEMON_METAPOD_NORMAL": Spawn_v0011_pokemon_metapod_normalEntry;
   "SPAWN_V0012_POKEMON_BUTTERFREE": Spawn_v0012_pokemon_butterfreeEntry;
-  "SPAWN_V0012_POKEMON_BUTTERFREE_NORMAL": Spawn_v0012_pokemon_butterfree_normalEntry;
   "SPAWN_V0013_POKEMON_WEEDLE": Spawn_v0013_pokemon_weedleEntry;
   "SPAWN_V0013_POKEMON_WEEDLE_NORMAL": Spawn_v0013_pokemon_weedle_normalEntry;
   "SPAWN_V0014_POKEMON_KAKUNA": Spawn_v0014_pokemon_kakunaEntry;
@@ -1812,11 +1641,7 @@ export interface PokemonGenderGen1MasterfileByTemplateId {
   "SPAWN_V0025_POKEMON_PIKACHU": Spawn_v0025_pokemon_pikachuEntry;
   "SPAWN_V0025_POKEMON_PIKACHU_ADVENTURE_HAT_2020": Spawn_v0025_pokemon_pikachu_adventure_hat_2020Entry;
   "SPAWN_V0025_POKEMON_PIKACHU_BB_2026": Spawn_v0025_pokemon_pikachu_bb_2026Entry;
-  "SPAWN_V0025_POKEMON_PIKACHU_COPY_2019": Spawn_v0025_pokemon_pikachu_copy_2019Entry;
   "SPAWN_V0025_POKEMON_PIKACHU_COSTUME_2020": Spawn_v0025_pokemon_pikachu_costume_2020Entry;
-  "SPAWN_V0025_POKEMON_PIKACHU_DIWALI_2024": Spawn_v0025_pokemon_pikachu_diwali_2024Entry;
-  "SPAWN_V0025_POKEMON_PIKACHU_DOCTOR": Spawn_v0025_pokemon_pikachu_doctorEntry;
-  "SPAWN_V0025_POKEMON_PIKACHU_FALL_2019": Spawn_v0025_pokemon_pikachu_fall_2019Entry;
   "SPAWN_V0025_POKEMON_PIKACHU_FLYING_01": Spawn_v0025_pokemon_pikachu_flying_01Entry;
   "SPAWN_V0025_POKEMON_PIKACHU_FLYING_02": Spawn_v0025_pokemon_pikachu_flying_02Entry;
   "SPAWN_V0025_POKEMON_PIKACHU_FLYING_03": Spawn_v0025_pokemon_pikachu_flying_03Entry;
@@ -1832,30 +1657,10 @@ export interface PokemonGenderGen1MasterfileByTemplateId {
   "SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2025_MONOCLE_BLUE": Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_blueEntry;
   "SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2025_MONOCLE_RED": Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_redEntry;
   "SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2025_MONOCLE_YELLOW": Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_yellowEntry;
-  "SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2026_CAP_BLUE": Spawn_v0025_pokemon_pikachu_gofest_2026_cap_blueEntry;
-  "SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2026_CAP_RED": Spawn_v0025_pokemon_pikachu_gofest_2026_cap_redEntry;
-  "SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2026_CAP_YELLOW": Spawn_v0025_pokemon_pikachu_gofest_2026_cap_yellowEntry;
-  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2024_A": Spawn_v0025_pokemon_pikachu_gotour_2024_aEntry;
-  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2024_A_02": Spawn_v0025_pokemon_pikachu_gotour_2024_a_02Entry;
-  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2024_B": Spawn_v0025_pokemon_pikachu_gotour_2024_bEntry;
-  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2024_B_02": Spawn_v0025_pokemon_pikachu_gotour_2024_b_02Entry;
-  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2025_A": Spawn_v0025_pokemon_pikachu_gotour_2025_aEntry;
-  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2025_A_02": Spawn_v0025_pokemon_pikachu_gotour_2025_a_02Entry;
-  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2025_B": Spawn_v0025_pokemon_pikachu_gotour_2025_bEntry;
-  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2025_B_02": Spawn_v0025_pokemon_pikachu_gotour_2025_b_02Entry;
-  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_A": Spawn_v0025_pokemon_pikachu_gotour_2026_aEntry;
-  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_A_02": Spawn_v0025_pokemon_pikachu_gotour_2026_a_02Entry;
-  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_B": Spawn_v0025_pokemon_pikachu_gotour_2026_bEntry;
-  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_B_02": Spawn_v0025_pokemon_pikachu_gotour_2026_b_02Entry;
-  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_C": Spawn_v0025_pokemon_pikachu_gotour_2026_cEntry;
-  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_C_02": Spawn_v0025_pokemon_pikachu_gotour_2026_c_02Entry;
   "SPAWN_V0025_POKEMON_PIKACHU_HORIZONS": Spawn_v0025_pokemon_pikachu_horizonsEntry;
   "SPAWN_V0025_POKEMON_PIKACHU_JEJU": Spawn_v0025_pokemon_pikachu_jejuEntry;
   "SPAWN_V0025_POKEMON_PIKACHU_KARIYUSHI": Spawn_v0025_pokemon_pikachu_kariyushiEntry;
-  "SPAWN_V0025_POKEMON_PIKACHU_KURTA": Spawn_v0025_pokemon_pikachu_kurtaEntry;
   "SPAWN_V0025_POKEMON_PIKACHU_NORMAL": Spawn_v0025_pokemon_pikachu_normalEntry;
-  "SPAWN_V0025_POKEMON_PIKACHU_POP_STAR": Spawn_v0025_pokemon_pikachu_pop_starEntry;
-  "SPAWN_V0025_POKEMON_PIKACHU_ROCK_STAR": Spawn_v0025_pokemon_pikachu_rock_starEntry;
   "SPAWN_V0025_POKEMON_PIKACHU_SUMMER_2023_A": Spawn_v0025_pokemon_pikachu_summer_2023_aEntry;
   "SPAWN_V0025_POKEMON_PIKACHU_SUMMER_2023_B": Spawn_v0025_pokemon_pikachu_summer_2023_bEntry;
   "SPAWN_V0025_POKEMON_PIKACHU_SUMMER_2023_C": Spawn_v0025_pokemon_pikachu_summer_2023_cEntry;
@@ -1864,7 +1669,6 @@ export interface PokemonGenderGen1MasterfileByTemplateId {
   "SPAWN_V0025_POKEMON_PIKACHU_TSHIRT_01": Spawn_v0025_pokemon_pikachu_tshirt_01Entry;
   "SPAWN_V0025_POKEMON_PIKACHU_TSHIRT_02": Spawn_v0025_pokemon_pikachu_tshirt_02Entry;
   "SPAWN_V0025_POKEMON_PIKACHU_TSHIRT_03": Spawn_v0025_pokemon_pikachu_tshirt_03Entry;
-  "SPAWN_V0025_POKEMON_PIKACHU_VS_2019": Spawn_v0025_pokemon_pikachu_vs_2019Entry;
   "SPAWN_V0025_POKEMON_PIKACHU_WCS_2022": Spawn_v0025_pokemon_pikachu_wcs_2022Entry;
   "SPAWN_V0025_POKEMON_PIKACHU_WCS_2023": Spawn_v0025_pokemon_pikachu_wcs_2023Entry;
   "SPAWN_V0025_POKEMON_PIKACHU_WCS_2024": Spawn_v0025_pokemon_pikachu_wcs_2024Entry;
@@ -1879,18 +1683,6 @@ export interface PokemonGenderGen1MasterfileByTemplateId {
   "SPAWN_V0028_POKEMON_SANDSLASH": Spawn_v0028_pokemon_sandslashEntry;
   "SPAWN_V0028_POKEMON_SANDSLASH_ALOLA": Spawn_v0028_pokemon_sandslash_alolaEntry;
   "SPAWN_V0028_POKEMON_SANDSLASH_NORMAL": Spawn_v0028_pokemon_sandslash_normalEntry;
-  "SPAWN_V0029_POKEMON_NIDORAN": Spawn_v0029_pokemon_nidoranEntry;
-  "SPAWN_V0029_POKEMON_NIDORAN_NORMAL": Spawn_v0029_pokemon_nidoran_normalEntry;
-  "SPAWN_V0030_POKEMON_NIDORINA": Spawn_v0030_pokemon_nidorinaEntry;
-  "SPAWN_V0030_POKEMON_NIDORINA_NORMAL": Spawn_v0030_pokemon_nidorina_normalEntry;
-  "SPAWN_V0031_POKEMON_NIDOQUEEN": Spawn_v0031_pokemon_nidoqueenEntry;
-  "SPAWN_V0031_POKEMON_NIDOQUEEN_NORMAL": Spawn_v0031_pokemon_nidoqueen_normalEntry;
-  "SPAWN_V0032_POKEMON_NIDORAN": Spawn_v0032_pokemon_nidoranEntry;
-  "SPAWN_V0032_POKEMON_NIDORAN_NORMAL": Spawn_v0032_pokemon_nidoran_normalEntry;
-  "SPAWN_V0033_POKEMON_NIDORINO": Spawn_v0033_pokemon_nidorinoEntry;
-  "SPAWN_V0033_POKEMON_NIDORINO_NORMAL": Spawn_v0033_pokemon_nidorino_normalEntry;
-  "SPAWN_V0034_POKEMON_NIDOKING": Spawn_v0034_pokemon_nidokingEntry;
-  "SPAWN_V0034_POKEMON_NIDOKING_NORMAL": Spawn_v0034_pokemon_nidoking_normalEntry;
   "SPAWN_V0035_POKEMON_CLEFAIRY": Spawn_v0035_pokemon_clefairyEntry;
   "SPAWN_V0035_POKEMON_CLEFAIRY_NORMAL": Spawn_v0035_pokemon_clefairy_normalEntry;
   "SPAWN_V0036_POKEMON_CLEFABLE": Spawn_v0036_pokemon_clefableEntry;
@@ -2002,10 +1794,6 @@ export interface PokemonGenderGen1MasterfileByTemplateId {
   "SPAWN_V0080_POKEMON_SLOWBRO_2021": Spawn_v0080_pokemon_slowbro_2021Entry;
   "SPAWN_V0080_POKEMON_SLOWBRO_GALARIAN": Spawn_v0080_pokemon_slowbro_galarianEntry;
   "SPAWN_V0080_POKEMON_SLOWBRO_NORMAL": Spawn_v0080_pokemon_slowbro_normalEntry;
-  "SPAWN_V0081_POKEMON_MAGNEMITE": Spawn_v0081_pokemon_magnemiteEntry;
-  "SPAWN_V0081_POKEMON_MAGNEMITE_NORMAL": Spawn_v0081_pokemon_magnemite_normalEntry;
-  "SPAWN_V0082_POKEMON_MAGNETON": Spawn_v0082_pokemon_magnetonEntry;
-  "SPAWN_V0082_POKEMON_MAGNETON_NORMAL": Spawn_v0082_pokemon_magneton_normalEntry;
   "SPAWN_V0083_POKEMON_FARFETCHD": Spawn_v0083_pokemon_farfetchdEntry;
   "SPAWN_V0083_POKEMON_FARFETCHD_GALARIAN": Spawn_v0083_pokemon_farfetchd_galarianEntry;
   "SPAWN_V0083_POKEMON_FARFETCHD_NORMAL": Spawn_v0083_pokemon_farfetchd_normalEntry;
@@ -2028,9 +1816,7 @@ export interface PokemonGenderGen1MasterfileByTemplateId {
   "SPAWN_V0091_POKEMON_CLOYSTER": Spawn_v0091_pokemon_cloysterEntry;
   "SPAWN_V0091_POKEMON_CLOYSTER_NORMAL": Spawn_v0091_pokemon_cloyster_normalEntry;
   "SPAWN_V0092_POKEMON_GASTLY": Spawn_v0092_pokemon_gastlyEntry;
-  "SPAWN_V0092_POKEMON_GASTLY_NORMAL": Spawn_v0092_pokemon_gastly_normalEntry;
   "SPAWN_V0093_POKEMON_HAUNTER": Spawn_v0093_pokemon_haunterEntry;
-  "SPAWN_V0093_POKEMON_HAUNTER_NORMAL": Spawn_v0093_pokemon_haunter_normalEntry;
   "SPAWN_V0094_POKEMON_GENGAR": Spawn_v0094_pokemon_gengarEntry;
   "SPAWN_V0094_POKEMON_GENGAR_COSTUME_2020": Spawn_v0094_pokemon_gengar_costume_2020Entry;
   "SPAWN_V0094_POKEMON_GENGAR_NORMAL": Spawn_v0094_pokemon_gengar_normalEntry;
@@ -2044,12 +1830,6 @@ export interface PokemonGenderGen1MasterfileByTemplateId {
   "SPAWN_V0098_POKEMON_KRABBY_NORMAL": Spawn_v0098_pokemon_krabby_normalEntry;
   "SPAWN_V0099_POKEMON_KINGLER": Spawn_v0099_pokemon_kinglerEntry;
   "SPAWN_V0099_POKEMON_KINGLER_NORMAL": Spawn_v0099_pokemon_kingler_normalEntry;
-  "SPAWN_V0100_POKEMON_VOLTORB": Spawn_v0100_pokemon_voltorbEntry;
-  "SPAWN_V0100_POKEMON_VOLTORB_HISUIAN": Spawn_v0100_pokemon_voltorb_hisuianEntry;
-  "SPAWN_V0100_POKEMON_VOLTORB_NORMAL": Spawn_v0100_pokemon_voltorb_normalEntry;
-  "SPAWN_V0101_POKEMON_ELECTRODE": Spawn_v0101_pokemon_electrodeEntry;
-  "SPAWN_V0101_POKEMON_ELECTRODE_HISUIAN": Spawn_v0101_pokemon_electrode_hisuianEntry;
-  "SPAWN_V0101_POKEMON_ELECTRODE_NORMAL": Spawn_v0101_pokemon_electrode_normalEntry;
   "SPAWN_V0102_POKEMON_EXEGGCUTE": Spawn_v0102_pokemon_exeggcuteEntry;
   "SPAWN_V0102_POKEMON_EXEGGCUTE_NORMAL": Spawn_v0102_pokemon_exeggcute_normalEntry;
   "SPAWN_V0103_POKEMON_EXEGGUTOR": Spawn_v0103_pokemon_exeggutorEntry;
@@ -2060,10 +1840,6 @@ export interface PokemonGenderGen1MasterfileByTemplateId {
   "SPAWN_V0105_POKEMON_MAROWAK": Spawn_v0105_pokemon_marowakEntry;
   "SPAWN_V0105_POKEMON_MAROWAK_ALOLA": Spawn_v0105_pokemon_marowak_alolaEntry;
   "SPAWN_V0105_POKEMON_MAROWAK_NORMAL": Spawn_v0105_pokemon_marowak_normalEntry;
-  "SPAWN_V0106_POKEMON_HITMONLEE": Spawn_v0106_pokemon_hitmonleeEntry;
-  "SPAWN_V0106_POKEMON_HITMONLEE_NORMAL": Spawn_v0106_pokemon_hitmonlee_normalEntry;
-  "SPAWN_V0107_POKEMON_HITMONCHAN": Spawn_v0107_pokemon_hitmonchanEntry;
-  "SPAWN_V0107_POKEMON_HITMONCHAN_NORMAL": Spawn_v0107_pokemon_hitmonchan_normalEntry;
   "SPAWN_V0108_POKEMON_LICKITUNG": Spawn_v0108_pokemon_lickitungEntry;
   "SPAWN_V0108_POKEMON_LICKITUNG_NORMAL": Spawn_v0108_pokemon_lickitung_normalEntry;
   "SPAWN_V0109_POKEMON_KOFFING": Spawn_v0109_pokemon_koffingEntry;
@@ -2075,12 +1851,8 @@ export interface PokemonGenderGen1MasterfileByTemplateId {
   "SPAWN_V0111_POKEMON_RHYHORN_NORMAL": Spawn_v0111_pokemon_rhyhorn_normalEntry;
   "SPAWN_V0112_POKEMON_RHYDON": Spawn_v0112_pokemon_rhydonEntry;
   "SPAWN_V0112_POKEMON_RHYDON_NORMAL": Spawn_v0112_pokemon_rhydon_normalEntry;
-  "SPAWN_V0113_POKEMON_CHANSEY": Spawn_v0113_pokemon_chanseyEntry;
-  "SPAWN_V0113_POKEMON_CHANSEY_NORMAL": Spawn_v0113_pokemon_chansey_normalEntry;
   "SPAWN_V0114_POKEMON_TANGELA": Spawn_v0114_pokemon_tangelaEntry;
   "SPAWN_V0114_POKEMON_TANGELA_NORMAL": Spawn_v0114_pokemon_tangela_normalEntry;
-  "SPAWN_V0115_POKEMON_KANGASKHAN": Spawn_v0115_pokemon_kangaskhanEntry;
-  "SPAWN_V0115_POKEMON_KANGASKHAN_NORMAL": Spawn_v0115_pokemon_kangaskhan_normalEntry;
   "SPAWN_V0116_POKEMON_HORSEA": Spawn_v0116_pokemon_horseaEntry;
   "SPAWN_V0116_POKEMON_HORSEA_NORMAL": Spawn_v0116_pokemon_horsea_normalEntry;
   "SPAWN_V0117_POKEMON_SEADRA": Spawn_v0117_pokemon_seadraEntry;
@@ -2089,28 +1861,17 @@ export interface PokemonGenderGen1MasterfileByTemplateId {
   "SPAWN_V0118_POKEMON_GOLDEEN_NORMAL": Spawn_v0118_pokemon_goldeen_normalEntry;
   "SPAWN_V0119_POKEMON_SEAKING": Spawn_v0119_pokemon_seakingEntry;
   "SPAWN_V0119_POKEMON_SEAKING_NORMAL": Spawn_v0119_pokemon_seaking_normalEntry;
-  "SPAWN_V0120_POKEMON_STARYU": Spawn_v0120_pokemon_staryuEntry;
-  "SPAWN_V0120_POKEMON_STARYU_NORMAL": Spawn_v0120_pokemon_staryu_normalEntry;
-  "SPAWN_V0121_POKEMON_STARMIE": Spawn_v0121_pokemon_starmieEntry;
-  "SPAWN_V0121_POKEMON_STARMIE_NORMAL": Spawn_v0121_pokemon_starmie_normalEntry;
   "SPAWN_V0122_POKEMON_MR_MIME": Spawn_v0122_pokemon_mr_mimeEntry;
   "SPAWN_V0122_POKEMON_MR_MIME_GALARIAN": Spawn_v0122_pokemon_mr_mime_galarianEntry;
   "SPAWN_V0122_POKEMON_MR_MIME_NORMAL": Spawn_v0122_pokemon_mr_mime_normalEntry;
   "SPAWN_V0123_POKEMON_SCYTHER": Spawn_v0123_pokemon_scytherEntry;
   "SPAWN_V0123_POKEMON_SCYTHER_NORMAL": Spawn_v0123_pokemon_scyther_normalEntry;
-  "SPAWN_V0124_POKEMON_JYNX": Spawn_v0124_pokemon_jynxEntry;
-  "SPAWN_V0124_POKEMON_JYNX_NORMAL": Spawn_v0124_pokemon_jynx_normalEntry;
   "SPAWN_V0125_POKEMON_ELECTABUZZ": Spawn_v0125_pokemon_electabuzzEntry;
   "SPAWN_V0125_POKEMON_ELECTABUZZ_NORMAL": Spawn_v0125_pokemon_electabuzz_normalEntry;
   "SPAWN_V0126_POKEMON_MAGMAR": Spawn_v0126_pokemon_magmarEntry;
   "SPAWN_V0126_POKEMON_MAGMAR_NORMAL": Spawn_v0126_pokemon_magmar_normalEntry;
   "SPAWN_V0127_POKEMON_PINSIR": Spawn_v0127_pokemon_pinsirEntry;
   "SPAWN_V0127_POKEMON_PINSIR_NORMAL": Spawn_v0127_pokemon_pinsir_normalEntry;
-  "SPAWN_V0128_POKEMON_TAUROS": Spawn_v0128_pokemon_taurosEntry;
-  "SPAWN_V0128_POKEMON_TAUROS_NORMAL": Spawn_v0128_pokemon_tauros_normalEntry;
-  "SPAWN_V0128_POKEMON_TAUROS_PALDEA_AQUA": Spawn_v0128_pokemon_tauros_paldea_aquaEntry;
-  "SPAWN_V0128_POKEMON_TAUROS_PALDEA_BLAZE": Spawn_v0128_pokemon_tauros_paldea_blazeEntry;
-  "SPAWN_V0128_POKEMON_TAUROS_PALDEA_COMBAT": Spawn_v0128_pokemon_tauros_paldea_combatEntry;
   "SPAWN_V0129_POKEMON_MAGIKARP": Spawn_v0129_pokemon_magikarpEntry;
   "SPAWN_V0129_POKEMON_MAGIKARP_NORMAL": Spawn_v0129_pokemon_magikarp_normalEntry;
   "SPAWN_V0130_POKEMON_GYARADOS": Spawn_v0130_pokemon_gyaradosEntry;
@@ -2118,10 +1879,6 @@ export interface PokemonGenderGen1MasterfileByTemplateId {
   "SPAWN_V0131_POKEMON_LAPRAS": Spawn_v0131_pokemon_laprasEntry;
   "SPAWN_V0131_POKEMON_LAPRAS_COSTUME_2020": Spawn_v0131_pokemon_lapras_costume_2020Entry;
   "SPAWN_V0131_POKEMON_LAPRAS_NORMAL": Spawn_v0131_pokemon_lapras_normalEntry;
-  "SPAWN_V0132_POKEMON_DITTO": Spawn_v0132_pokemon_dittoEntry;
-  "SPAWN_V0132_POKEMON_DITTO_NORMAL": Spawn_v0132_pokemon_ditto_normalEntry;
-  "SPAWN_V0132_POKEMON_DITTO_SPRING_2026_A": Spawn_v0132_pokemon_ditto_spring_2026_aEntry;
-  "SPAWN_V0132_POKEMON_DITTO_SPRING_2026_B": Spawn_v0132_pokemon_ditto_spring_2026_bEntry;
   "SPAWN_V0133_POKEMON_EEVEE": Spawn_v0133_pokemon_eeveeEntry;
   "SPAWN_V0133_POKEMON_EEVEE_GOFEST_2024_MTIARA": Spawn_v0133_pokemon_eevee_gofest_2024_mtiaraEntry;
   "SPAWN_V0133_POKEMON_EEVEE_GOFEST_2024_STIARA": Spawn_v0133_pokemon_eevee_gofest_2024_stiaraEntry;
@@ -2132,8 +1889,6 @@ export interface PokemonGenderGen1MasterfileByTemplateId {
   "SPAWN_V0135_POKEMON_JOLTEON_NORMAL": Spawn_v0135_pokemon_jolteon_normalEntry;
   "SPAWN_V0136_POKEMON_FLAREON": Spawn_v0136_pokemon_flareonEntry;
   "SPAWN_V0136_POKEMON_FLAREON_NORMAL": Spawn_v0136_pokemon_flareon_normalEntry;
-  "SPAWN_V0137_POKEMON_PORYGON": Spawn_v0137_pokemon_porygonEntry;
-  "SPAWN_V0137_POKEMON_PORYGON_NORMAL": Spawn_v0137_pokemon_porygon_normalEntry;
   "SPAWN_V0138_POKEMON_OMANYTE": Spawn_v0138_pokemon_omanyteEntry;
   "SPAWN_V0138_POKEMON_OMANYTE_NORMAL": Spawn_v0138_pokemon_omanyte_normalEntry;
   "SPAWN_V0139_POKEMON_OMASTAR": Spawn_v0139_pokemon_omastarEntry;
@@ -2147,27 +1902,105 @@ export interface PokemonGenderGen1MasterfileByTemplateId {
   "SPAWN_V0142_POKEMON_AERODACTYL_SUMMER_2023": Spawn_v0142_pokemon_aerodactyl_summer_2023Entry;
   "SPAWN_V0143_POKEMON_SNORLAX": Spawn_v0143_pokemon_snorlaxEntry;
   "SPAWN_V0143_POKEMON_SNORLAX_NORMAL": Spawn_v0143_pokemon_snorlax_normalEntry;
-  "SPAWN_V0143_POKEMON_SNORLAX_WILDAREA_2024": Spawn_v0143_pokemon_snorlax_wildarea_2024Entry;
-  "SPAWN_V0144_POKEMON_ARTICUNO": Spawn_v0144_pokemon_articunoEntry;
-  "SPAWN_V0144_POKEMON_ARTICUNO_GALARIAN": Spawn_v0144_pokemon_articuno_galarianEntry;
-  "SPAWN_V0144_POKEMON_ARTICUNO_NORMAL": Spawn_v0144_pokemon_articuno_normalEntry;
-  "SPAWN_V0145_POKEMON_ZAPDOS": Spawn_v0145_pokemon_zapdosEntry;
-  "SPAWN_V0145_POKEMON_ZAPDOS_GALARIAN": Spawn_v0145_pokemon_zapdos_galarianEntry;
-  "SPAWN_V0145_POKEMON_ZAPDOS_NORMAL": Spawn_v0145_pokemon_zapdos_normalEntry;
-  "SPAWN_V0146_POKEMON_MOLTRES": Spawn_v0146_pokemon_moltresEntry;
-  "SPAWN_V0146_POKEMON_MOLTRES_GALARIAN": Spawn_v0146_pokemon_moltres_galarianEntry;
-  "SPAWN_V0146_POKEMON_MOLTRES_NORMAL": Spawn_v0146_pokemon_moltres_normalEntry;
   "SPAWN_V0147_POKEMON_DRATINI": Spawn_v0147_pokemon_dratiniEntry;
   "SPAWN_V0147_POKEMON_DRATINI_NORMAL": Spawn_v0147_pokemon_dratini_normalEntry;
   "SPAWN_V0148_POKEMON_DRAGONAIR": Spawn_v0148_pokemon_dragonairEntry;
   "SPAWN_V0148_POKEMON_DRAGONAIR_NORMAL": Spawn_v0148_pokemon_dragonair_normalEntry;
   "SPAWN_V0149_POKEMON_DRAGONITE": Spawn_v0149_pokemon_dragoniteEntry;
   "SPAWN_V0149_POKEMON_DRAGONITE_NORMAL": Spawn_v0149_pokemon_dragonite_normalEntry;
-  "SPAWN_V0150_POKEMON_MEWTWO": Spawn_v0150_pokemon_mewtwoEntry;
-  "SPAWN_V0150_POKEMON_MEWTWO_A": Spawn_v0150_pokemon_mewtwo_aEntry;
-  "SPAWN_V0150_POKEMON_MEWTWO_NORMAL": Spawn_v0150_pokemon_mewtwo_normalEntry;
-  "SPAWN_V0151_POKEMON_MEW": Spawn_v0151_pokemon_mewEntry;
-  "SPAWN_V0151_POKEMON_MEW_NORMAL": Spawn_v0151_pokemon_mew_normalEntry;
+  "SPAWN_V0010_POKEMON_CATERPIE_GOFEST_2026": PokemonGenderCaterpieGofestT;
+  "SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2026_CAP_BLUE": PokemonGenderPikachuGofestTCapBlue;
+  "SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2026_CAP_RED": PokemonGenderPikachuGofestTCapRed;
+  "SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2026_CAP_YELLOW": PokemonGenderPikachuGofestTCapYellow;
+  "SPAWN_V0010_POKEMON_CATERPIE_NORMAL": Spawn_v0010_pokemon_caterpie_normalEntry;
+  "SPAWN_V0011_POKEMON_METAPOD_NORMAL": Spawn_v0011_pokemon_metapod_normalEntry;
+  "SPAWN_V0012_POKEMON_BUTTERFREE_NORMAL": Spawn_v0012_pokemon_butterfree_normalEntry;
+  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2024_A": Spawn_v0025_pokemon_pikachu_gotour_2024_aEntry;
+  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2024_A_02": Spawn_v0025_pokemon_pikachu_gotour_2024_a_02Entry;
+  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2024_B": Spawn_v0025_pokemon_pikachu_gotour_2024_bEntry;
+  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2024_B_02": Spawn_v0025_pokemon_pikachu_gotour_2024_b_02Entry;
+  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2025_A": Spawn_v0025_pokemon_pikachu_gotour_2025_aEntry;
+  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2025_A_02": Spawn_v0025_pokemon_pikachu_gotour_2025_a_02Entry;
+  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2025_B": Spawn_v0025_pokemon_pikachu_gotour_2025_bEntry;
+  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2025_B_02": Spawn_v0025_pokemon_pikachu_gotour_2025_b_02Entry;
+  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_A": Spawn_v0025_pokemon_pikachu_gotour_2026_aEntry;
+  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_A_02": Spawn_v0025_pokemon_pikachu_gotour_2026_a_02Entry;
+  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_B": Spawn_v0025_pokemon_pikachu_gotour_2026_bEntry;
+  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_B_02": Spawn_v0025_pokemon_pikachu_gotour_2026_b_02Entry;
+  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_C": Spawn_v0025_pokemon_pikachu_gotour_2026_cEntry;
+  "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_C_02": Spawn_v0025_pokemon_pikachu_gotour_2026_c_02Entry;
+  "SPAWN_V0092_POKEMON_GASTLY_NORMAL": Spawn_v0092_pokemon_gastly_normalEntry;
+  "SPAWN_V0093_POKEMON_HAUNTER_NORMAL": Spawn_v0093_pokemon_haunter_normalEntry;
+  "SPAWN_V0143_POKEMON_SNORLAX_WILDAREA_2024": Spawn_v0143_pokemon_snorlax_wildarea_2024Entry;
+  "SPAWN_V0025_POKEMON_PIKACHU_COPY_2019": Spawn_v0025_pokemon_pikachu_copy_2019Entry;
+  "SPAWN_V0025_POKEMON_PIKACHU_FALL_2019": Spawn_v0025_pokemon_pikachu_fall_2019Entry;
+  "SPAWN_V0025_POKEMON_PIKACHU_KURTA": Spawn_v0025_pokemon_pikachu_kurtaEntry;
+  "SPAWN_V0032_POKEMON_NIDORAN": Spawn_v0032_pokemon_nidoranEntry;
+  "SPAWN_V0032_POKEMON_NIDORAN_NORMAL": Spawn_v0032_pokemon_nidoran_normalEntry;
+  "SPAWN_V0033_POKEMON_NIDORINO": Spawn_v0033_pokemon_nidorinoEntry;
+  "SPAWN_V0033_POKEMON_NIDORINO_NORMAL": Spawn_v0033_pokemon_nidorino_normalEntry;
+  "SPAWN_V0034_POKEMON_NIDOKING": Spawn_v0034_pokemon_nidokingEntry;
+  "SPAWN_V0034_POKEMON_NIDOKING_NORMAL": Spawn_v0034_pokemon_nidoking_normalEntry;
+  "SPAWN_V0106_POKEMON_HITMONLEE": Spawn_v0106_pokemon_hitmonleeEntry;
+  "SPAWN_V0106_POKEMON_HITMONLEE_NORMAL": Spawn_v0106_pokemon_hitmonlee_normalEntry;
+  "SPAWN_V0107_POKEMON_HITMONCHAN": Spawn_v0107_pokemon_hitmonchanEntry;
+  "SPAWN_V0107_POKEMON_HITMONCHAN_NORMAL": Spawn_v0107_pokemon_hitmonchan_normalEntry;
+  "SPAWN_V0128_POKEMON_TAUROS": Spawn_v0128_pokemon_taurosEntry;
+  "SPAWN_V0025_POKEMON_PIKACHU_DIWALI_2024": Spawn_v0025_pokemon_pikachu_diwali_2024Entry;
+  "SPAWN_V0025_POKEMON_PIKACHU_DOCTOR": Spawn_v0025_pokemon_pikachu_doctorEntry;
+  "SPAWN_V0025_POKEMON_PIKACHU_VS_2019": Spawn_v0025_pokemon_pikachu_vs_2019Entry;
+  "SPAWN_V0029_POKEMON_NIDORAN": Spawn_v0029_pokemon_nidoranEntry;
+  "SPAWN_V0029_POKEMON_NIDORAN_NORMAL": Spawn_v0029_pokemon_nidoran_normalEntry;
+  "SPAWN_V0030_POKEMON_NIDORINA": Spawn_v0030_pokemon_nidorinaEntry;
+  "SPAWN_V0030_POKEMON_NIDORINA_NORMAL": Spawn_v0030_pokemon_nidorina_normalEntry;
+  "SPAWN_V0031_POKEMON_NIDOQUEEN": Spawn_v0031_pokemon_nidoqueenEntry;
+  "SPAWN_V0031_POKEMON_NIDOQUEEN_NORMAL": Spawn_v0031_pokemon_nidoqueen_normalEntry;
+  "SPAWN_V0113_POKEMON_CHANSEY": Spawn_v0113_pokemon_chanseyEntry;
+  "SPAWN_V0115_POKEMON_KANGASKHAN": Spawn_v0115_pokemon_kangaskhanEntry;
+  "SPAWN_V0115_POKEMON_KANGASKHAN_NORMAL": Spawn_v0115_pokemon_kangaskhan_normalEntry;
+  "SPAWN_V0124_POKEMON_JYNX": Spawn_v0124_pokemon_jynxEntry;
+  "SPAWN_V0124_POKEMON_JYNX_NORMAL": Spawn_v0124_pokemon_jynx_normalEntry;
+  "SPAWN_V0025_POKEMON_PIKACHU_POP_STAR": PokemonGenderPikachuPopStar;
+  "SPAWN_V0025_POKEMON_PIKACHU_ROCK_STAR": PokemonGenderPikachuRockStar;
+  "SPAWN_V0113_POKEMON_CHANSEY_NORMAL": PokemonGenderChanseyNormal;
+  "SPAWN_V0081_POKEMON_MAGNEMITE": PokemonGenderMagnemite;
+  "SPAWN_V0081_POKEMON_MAGNEMITE_NORMAL": PokemonGenderMagnemiteNormal;
+  "SPAWN_V0082_POKEMON_MAGNETON": PokemonGenderMagneton;
+  "SPAWN_V0082_POKEMON_MAGNETON_NORMAL": PokemonGenderMagnetonNormal;
+  "SPAWN_V0100_POKEMON_VOLTORB": PokemonGenderVoltorb;
+  "SPAWN_V0100_POKEMON_VOLTORB_HISUIAN": PokemonGenderVoltorbHisuian;
+  "SPAWN_V0100_POKEMON_VOLTORB_NORMAL": PokemonGenderVoltorbNormal;
+  "SPAWN_V0101_POKEMON_ELECTRODE": PokemonGenderElectrode;
+  "SPAWN_V0101_POKEMON_ELECTRODE_HISUIAN": PokemonGenderElectrodeHisuian;
+  "SPAWN_V0101_POKEMON_ELECTRODE_NORMAL": PokemonGenderElectrodeNormal;
+  "SPAWN_V0120_POKEMON_STARYU": PokemonGenderStaryu;
+  "SPAWN_V0120_POKEMON_STARYU_NORMAL": PokemonGenderStaryuNormal;
+  "SPAWN_V0121_POKEMON_STARMIE": PokemonGenderStarmie;
+  "SPAWN_V0121_POKEMON_STARMIE_NORMAL": PokemonGenderStarmieNormal;
+  "SPAWN_V0132_POKEMON_DITTO": PokemonGenderDitto;
+  "SPAWN_V0132_POKEMON_DITTO_NORMAL": PokemonGenderDittoNormal;
+  "SPAWN_V0132_POKEMON_DITTO_SPRING_2026_A": PokemonGenderDittoSpringTA;
+  "SPAWN_V0132_POKEMON_DITTO_SPRING_2026_B": PokemonGenderDittoSpringTB;
+  "SPAWN_V0137_POKEMON_PORYGON": PokemonGenderPorygon;
+  "SPAWN_V0137_POKEMON_PORYGON_NORMAL": PokemonGenderPorygonNormal;
+  "SPAWN_V0144_POKEMON_ARTICUNO": PokemonGenderArticuno;
+  "SPAWN_V0144_POKEMON_ARTICUNO_GALARIAN": PokemonGenderArticunoGalarian;
+  "SPAWN_V0144_POKEMON_ARTICUNO_NORMAL": PokemonGenderArticunoNormal;
+  "SPAWN_V0145_POKEMON_ZAPDOS": PokemonGenderZapdos;
+  "SPAWN_V0145_POKEMON_ZAPDOS_GALARIAN": PokemonGenderZapdosGalarian;
+  "SPAWN_V0145_POKEMON_ZAPDOS_NORMAL": PokemonGenderZapdosNormal;
+  "SPAWN_V0146_POKEMON_MOLTRES": PokemonGenderMoltres;
+  "SPAWN_V0146_POKEMON_MOLTRES_GALARIAN": PokemonGenderMoltresGalarian;
+  "SPAWN_V0146_POKEMON_MOLTRES_NORMAL": PokemonGenderMoltresNormal;
+  "SPAWN_V0150_POKEMON_MEWTWO": PokemonGenderMewtwo;
+  "SPAWN_V0150_POKEMON_MEWTWO_A": PokemonGenderMewtwoA;
+  "SPAWN_V0150_POKEMON_MEWTWO_NORMAL": PokemonGenderMewtwoNormal;
+  "SPAWN_V0151_POKEMON_MEW": PokemonGenderMew;
+  "SPAWN_V0151_POKEMON_MEW_NORMAL": PokemonGenderMewNormal;
+  "SPAWN_V0128_POKEMON_TAUROS_NORMAL": PokemonGenderTaurosNormal;
+  "SPAWN_V0128_POKEMON_TAUROS_PALDEA_AQUA": PokemonGenderTaurosPaldeaAqua;
+  "SPAWN_V0128_POKEMON_TAUROS_PALDEA_BLAZE": PokemonGenderTaurosPaldeaBlaze;
+  "SPAWN_V0128_POKEMON_TAUROS_PALDEA_COMBAT": PokemonGenderTaurosPaldeaCombat;
 }
 
 export interface PokemonGenderGen1ByDexId {
@@ -2180,7 +2013,7 @@ export interface PokemonGenderGen1ByDexId {
   "0007": Spawn_v0007_pokemon_squirtleEntry | Spawn_v0007_pokemon_squirtle_fall_2019Entry | Spawn_v0007_pokemon_squirtle_normalEntry;
   "0008": Spawn_v0008_pokemon_wartortleEntry | Spawn_v0008_pokemon_wartortle_normalEntry;
   "0009": Spawn_v0009_pokemon_blastoiseEntry | Spawn_v0009_pokemon_blastoise_copy_2019Entry | Spawn_v0009_pokemon_blastoise_normalEntry;
-  "0010": Spawn_v0010_pokemon_caterpieEntry | Spawn_v0010_pokemon_caterpie_gofest_2026Entry | Spawn_v0010_pokemon_caterpie_normalEntry;
+  "0010": Spawn_v0010_pokemon_caterpieEntry | PokemonGenderCaterpieGofestT | Spawn_v0010_pokemon_caterpie_normalEntry;
   "0011": Spawn_v0011_pokemon_metapodEntry | Spawn_v0011_pokemon_metapod_normalEntry;
   "0012": Spawn_v0012_pokemon_butterfreeEntry | Spawn_v0012_pokemon_butterfree_normalEntry;
   "0013": Spawn_v0013_pokemon_weedleEntry | Spawn_v0013_pokemon_weedle_normalEntry;
@@ -2195,7 +2028,7 @@ export interface PokemonGenderGen1ByDexId {
   "0022": Spawn_v0022_pokemon_fearowEntry | Spawn_v0022_pokemon_fearow_normalEntry;
   "0023": Spawn_v0023_pokemon_ekansEntry | Spawn_v0023_pokemon_ekans_normalEntry;
   "0024": Spawn_v0024_pokemon_arbokEntry | Spawn_v0024_pokemon_arbok_normalEntry;
-  "0025": Spawn_v0025_pokemon_pikachuEntry | Spawn_v0025_pokemon_pikachu_adventure_hat_2020Entry | Spawn_v0025_pokemon_pikachu_bb_2026Entry | Spawn_v0025_pokemon_pikachu_copy_2019Entry | Spawn_v0025_pokemon_pikachu_costume_2020Entry | Spawn_v0025_pokemon_pikachu_diwali_2024Entry | Spawn_v0025_pokemon_pikachu_doctorEntry | Spawn_v0025_pokemon_pikachu_fall_2019Entry | Spawn_v0025_pokemon_pikachu_flying_01Entry | Spawn_v0025_pokemon_pikachu_flying_02Entry | Spawn_v0025_pokemon_pikachu_flying_03Entry | Spawn_v0025_pokemon_pikachu_flying_04Entry | Spawn_v0025_pokemon_pikachu_flying_5th_annivEntry | Spawn_v0025_pokemon_pikachu_flying_okinawaEntry | Spawn_v0025_pokemon_pikachu_gofest_2022Entry | Spawn_v0025_pokemon_pikachu_gofest_2024_mtiaraEntry | Spawn_v0025_pokemon_pikachu_gofest_2024_stiaraEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_goggles_blueEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_goggles_redEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_goggles_yellowEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_blueEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_redEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_yellowEntry | Spawn_v0025_pokemon_pikachu_gofest_2026_cap_blueEntry | Spawn_v0025_pokemon_pikachu_gofest_2026_cap_redEntry | Spawn_v0025_pokemon_pikachu_gofest_2026_cap_yellowEntry | Spawn_v0025_pokemon_pikachu_gotour_2024_aEntry | Spawn_v0025_pokemon_pikachu_gotour_2024_a_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2024_bEntry | Spawn_v0025_pokemon_pikachu_gotour_2024_b_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2025_aEntry | Spawn_v0025_pokemon_pikachu_gotour_2025_a_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2025_bEntry | Spawn_v0025_pokemon_pikachu_gotour_2025_b_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2026_aEntry | Spawn_v0025_pokemon_pikachu_gotour_2026_a_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2026_bEntry | Spawn_v0025_pokemon_pikachu_gotour_2026_b_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2026_cEntry | Spawn_v0025_pokemon_pikachu_gotour_2026_c_02Entry | Spawn_v0025_pokemon_pikachu_horizonsEntry | Spawn_v0025_pokemon_pikachu_jejuEntry | Spawn_v0025_pokemon_pikachu_kariyushiEntry | Spawn_v0025_pokemon_pikachu_kurtaEntry | Spawn_v0025_pokemon_pikachu_normalEntry | Spawn_v0025_pokemon_pikachu_pop_starEntry | Spawn_v0025_pokemon_pikachu_rock_starEntry | Spawn_v0025_pokemon_pikachu_summer_2023_aEntry | Spawn_v0025_pokemon_pikachu_summer_2023_bEntry | Spawn_v0025_pokemon_pikachu_summer_2023_cEntry | Spawn_v0025_pokemon_pikachu_summer_2023_dEntry | Spawn_v0025_pokemon_pikachu_summer_2023_eEntry | Spawn_v0025_pokemon_pikachu_tshirt_01Entry | Spawn_v0025_pokemon_pikachu_tshirt_02Entry | Spawn_v0025_pokemon_pikachu_tshirt_03Entry | Spawn_v0025_pokemon_pikachu_vs_2019Entry | Spawn_v0025_pokemon_pikachu_wcs_2022Entry | Spawn_v0025_pokemon_pikachu_wcs_2023Entry | Spawn_v0025_pokemon_pikachu_wcs_2024Entry | Spawn_v0025_pokemon_pikachu_wcs_2025Entry | Spawn_v0025_pokemon_pikachu_winter_2020Entry;
+  "0025": Spawn_v0025_pokemon_pikachuEntry | Spawn_v0025_pokemon_pikachu_adventure_hat_2020Entry | Spawn_v0025_pokemon_pikachu_bb_2026Entry | Spawn_v0025_pokemon_pikachu_costume_2020Entry | Spawn_v0025_pokemon_pikachu_flying_01Entry | Spawn_v0025_pokemon_pikachu_flying_02Entry | Spawn_v0025_pokemon_pikachu_flying_03Entry | Spawn_v0025_pokemon_pikachu_flying_04Entry | Spawn_v0025_pokemon_pikachu_flying_5th_annivEntry | Spawn_v0025_pokemon_pikachu_flying_okinawaEntry | Spawn_v0025_pokemon_pikachu_gofest_2022Entry | Spawn_v0025_pokemon_pikachu_gofest_2024_mtiaraEntry | Spawn_v0025_pokemon_pikachu_gofest_2024_stiaraEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_goggles_blueEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_goggles_redEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_goggles_yellowEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_blueEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_redEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_yellowEntry | Spawn_v0025_pokemon_pikachu_horizonsEntry | Spawn_v0025_pokemon_pikachu_jejuEntry | Spawn_v0025_pokemon_pikachu_kariyushiEntry | Spawn_v0025_pokemon_pikachu_normalEntry | Spawn_v0025_pokemon_pikachu_summer_2023_aEntry | Spawn_v0025_pokemon_pikachu_summer_2023_bEntry | Spawn_v0025_pokemon_pikachu_summer_2023_cEntry | Spawn_v0025_pokemon_pikachu_summer_2023_dEntry | Spawn_v0025_pokemon_pikachu_summer_2023_eEntry | Spawn_v0025_pokemon_pikachu_tshirt_01Entry | Spawn_v0025_pokemon_pikachu_tshirt_02Entry | Spawn_v0025_pokemon_pikachu_tshirt_03Entry | Spawn_v0025_pokemon_pikachu_wcs_2022Entry | Spawn_v0025_pokemon_pikachu_wcs_2023Entry | Spawn_v0025_pokemon_pikachu_wcs_2024Entry | Spawn_v0025_pokemon_pikachu_wcs_2025Entry | Spawn_v0025_pokemon_pikachu_winter_2020Entry | PokemonGenderPikachuGofestTCapBlue | PokemonGenderPikachuGofestTCapRed | PokemonGenderPikachuGofestTCapYellow | Spawn_v0025_pokemon_pikachu_gotour_2024_aEntry | Spawn_v0025_pokemon_pikachu_gotour_2024_a_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2024_bEntry | Spawn_v0025_pokemon_pikachu_gotour_2024_b_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2025_aEntry | Spawn_v0025_pokemon_pikachu_gotour_2025_a_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2025_bEntry | Spawn_v0025_pokemon_pikachu_gotour_2025_b_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2026_aEntry | Spawn_v0025_pokemon_pikachu_gotour_2026_a_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2026_bEntry | Spawn_v0025_pokemon_pikachu_gotour_2026_b_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2026_cEntry | Spawn_v0025_pokemon_pikachu_gotour_2026_c_02Entry | Spawn_v0025_pokemon_pikachu_copy_2019Entry | Spawn_v0025_pokemon_pikachu_fall_2019Entry | Spawn_v0025_pokemon_pikachu_kurtaEntry | Spawn_v0025_pokemon_pikachu_diwali_2024Entry | Spawn_v0025_pokemon_pikachu_doctorEntry | Spawn_v0025_pokemon_pikachu_vs_2019Entry | PokemonGenderPikachuPopStar | PokemonGenderPikachuRockStar;
   "0026": Spawn_v0026_pokemon_raichuEntry | Spawn_v0026_pokemon_raichu_alolaEntry | Spawn_v0026_pokemon_raichu_normalEntry;
   "0027": Spawn_v0027_pokemon_sandshrewEntry | Spawn_v0027_pokemon_sandshrew_alolaEntry | Spawn_v0027_pokemon_sandshrew_normalEntry;
   "0028": Spawn_v0028_pokemon_sandslashEntry | Spawn_v0028_pokemon_sandslash_alolaEntry | Spawn_v0028_pokemon_sandslash_normalEntry;
@@ -2251,8 +2084,8 @@ export interface PokemonGenderGen1ByDexId {
   "0078": Spawn_v0078_pokemon_rapidashEntry | Spawn_v0078_pokemon_rapidash_galarianEntry | Spawn_v0078_pokemon_rapidash_normalEntry;
   "0079": Spawn_v0079_pokemon_slowpokeEntry | Spawn_v0079_pokemon_slowpoke_2020Entry | Spawn_v0079_pokemon_slowpoke_galarianEntry | Spawn_v0079_pokemon_slowpoke_normalEntry;
   "0080": Spawn_v0080_pokemon_slowbroEntry | Spawn_v0080_pokemon_slowbro_2021Entry | Spawn_v0080_pokemon_slowbro_galarianEntry | Spawn_v0080_pokemon_slowbro_normalEntry;
-  "0081": Spawn_v0081_pokemon_magnemiteEntry | Spawn_v0081_pokemon_magnemite_normalEntry;
-  "0082": Spawn_v0082_pokemon_magnetonEntry | Spawn_v0082_pokemon_magneton_normalEntry;
+  "0081": PokemonGenderMagnemite | PokemonGenderMagnemiteNormal;
+  "0082": PokemonGenderMagneton | PokemonGenderMagnetonNormal;
   "0083": Spawn_v0083_pokemon_farfetchdEntry | Spawn_v0083_pokemon_farfetchd_galarianEntry | Spawn_v0083_pokemon_farfetchd_normalEntry;
   "0084": Spawn_v0084_pokemon_doduoEntry | Spawn_v0084_pokemon_doduo_normalEntry;
   "0085": Spawn_v0085_pokemon_dodrioEntry | Spawn_v0085_pokemon_dodrio_normalEntry;
@@ -2270,8 +2103,8 @@ export interface PokemonGenderGen1ByDexId {
   "0097": Spawn_v0097_pokemon_hypnoEntry | Spawn_v0097_pokemon_hypno_normalEntry;
   "0098": Spawn_v0098_pokemon_krabbyEntry | Spawn_v0098_pokemon_krabby_normalEntry;
   "0099": Spawn_v0099_pokemon_kinglerEntry | Spawn_v0099_pokemon_kingler_normalEntry;
-  "0100": Spawn_v0100_pokemon_voltorbEntry | Spawn_v0100_pokemon_voltorb_hisuianEntry | Spawn_v0100_pokemon_voltorb_normalEntry;
-  "0101": Spawn_v0101_pokemon_electrodeEntry | Spawn_v0101_pokemon_electrode_hisuianEntry | Spawn_v0101_pokemon_electrode_normalEntry;
+  "0100": PokemonGenderVoltorb | PokemonGenderVoltorbHisuian | PokemonGenderVoltorbNormal;
+  "0101": PokemonGenderElectrode | PokemonGenderElectrodeHisuian | PokemonGenderElectrodeNormal;
   "0102": Spawn_v0102_pokemon_exeggcuteEntry | Spawn_v0102_pokemon_exeggcute_normalEntry;
   "0103": Spawn_v0103_pokemon_exeggutorEntry | Spawn_v0103_pokemon_exeggutor_alolaEntry | Spawn_v0103_pokemon_exeggutor_normalEntry;
   "0104": Spawn_v0104_pokemon_cuboneEntry | Spawn_v0104_pokemon_cubone_normalEntry;
@@ -2283,45 +2116,45 @@ export interface PokemonGenderGen1ByDexId {
   "0110": Spawn_v0110_pokemon_weezingEntry | Spawn_v0110_pokemon_weezing_galarianEntry | Spawn_v0110_pokemon_weezing_normalEntry;
   "0111": Spawn_v0111_pokemon_rhyhornEntry | Spawn_v0111_pokemon_rhyhorn_normalEntry;
   "0112": Spawn_v0112_pokemon_rhydonEntry | Spawn_v0112_pokemon_rhydon_normalEntry;
-  "0113": Spawn_v0113_pokemon_chanseyEntry | Spawn_v0113_pokemon_chansey_normalEntry;
+  "0113": Spawn_v0113_pokemon_chanseyEntry | PokemonGenderChanseyNormal;
   "0114": Spawn_v0114_pokemon_tangelaEntry | Spawn_v0114_pokemon_tangela_normalEntry;
   "0115": Spawn_v0115_pokemon_kangaskhanEntry | Spawn_v0115_pokemon_kangaskhan_normalEntry;
   "0116": Spawn_v0116_pokemon_horseaEntry | Spawn_v0116_pokemon_horsea_normalEntry;
   "0117": Spawn_v0117_pokemon_seadraEntry | Spawn_v0117_pokemon_seadra_normalEntry;
   "0118": Spawn_v0118_pokemon_goldeenEntry | Spawn_v0118_pokemon_goldeen_normalEntry;
   "0119": Spawn_v0119_pokemon_seakingEntry | Spawn_v0119_pokemon_seaking_normalEntry;
-  "0120": Spawn_v0120_pokemon_staryuEntry | Spawn_v0120_pokemon_staryu_normalEntry;
-  "0121": Spawn_v0121_pokemon_starmieEntry | Spawn_v0121_pokemon_starmie_normalEntry;
+  "0120": PokemonGenderStaryu | PokemonGenderStaryuNormal;
+  "0121": PokemonGenderStarmie | PokemonGenderStarmieNormal;
   "0122": Spawn_v0122_pokemon_mr_mimeEntry | Spawn_v0122_pokemon_mr_mime_galarianEntry | Spawn_v0122_pokemon_mr_mime_normalEntry;
   "0123": Spawn_v0123_pokemon_scytherEntry | Spawn_v0123_pokemon_scyther_normalEntry;
   "0124": Spawn_v0124_pokemon_jynxEntry | Spawn_v0124_pokemon_jynx_normalEntry;
   "0125": Spawn_v0125_pokemon_electabuzzEntry | Spawn_v0125_pokemon_electabuzz_normalEntry;
   "0126": Spawn_v0126_pokemon_magmarEntry | Spawn_v0126_pokemon_magmar_normalEntry;
   "0127": Spawn_v0127_pokemon_pinsirEntry | Spawn_v0127_pokemon_pinsir_normalEntry;
-  "0128": Spawn_v0128_pokemon_taurosEntry | Spawn_v0128_pokemon_tauros_normalEntry | Spawn_v0128_pokemon_tauros_paldea_aquaEntry | Spawn_v0128_pokemon_tauros_paldea_blazeEntry | Spawn_v0128_pokemon_tauros_paldea_combatEntry;
+  "0128": Spawn_v0128_pokemon_taurosEntry | PokemonGenderTaurosNormal | PokemonGenderTaurosPaldeaAqua | PokemonGenderTaurosPaldeaBlaze | PokemonGenderTaurosPaldeaCombat;
   "0129": Spawn_v0129_pokemon_magikarpEntry | Spawn_v0129_pokemon_magikarp_normalEntry;
   "0130": Spawn_v0130_pokemon_gyaradosEntry | Spawn_v0130_pokemon_gyarados_normalEntry;
   "0131": Spawn_v0131_pokemon_laprasEntry | Spawn_v0131_pokemon_lapras_costume_2020Entry | Spawn_v0131_pokemon_lapras_normalEntry;
-  "0132": Spawn_v0132_pokemon_dittoEntry | Spawn_v0132_pokemon_ditto_normalEntry | Spawn_v0132_pokemon_ditto_spring_2026_aEntry | Spawn_v0132_pokemon_ditto_spring_2026_bEntry;
+  "0132": PokemonGenderDitto | PokemonGenderDittoNormal | PokemonGenderDittoSpringTA | PokemonGenderDittoSpringTB;
   "0133": Spawn_v0133_pokemon_eeveeEntry | Spawn_v0133_pokemon_eevee_gofest_2024_mtiaraEntry | Spawn_v0133_pokemon_eevee_gofest_2024_stiaraEntry | Spawn_v0133_pokemon_eevee_normalEntry;
   "0134": Spawn_v0134_pokemon_vaporeonEntry | Spawn_v0134_pokemon_vaporeon_normalEntry;
   "0135": Spawn_v0135_pokemon_jolteonEntry | Spawn_v0135_pokemon_jolteon_normalEntry;
   "0136": Spawn_v0136_pokemon_flareonEntry | Spawn_v0136_pokemon_flareon_normalEntry;
-  "0137": Spawn_v0137_pokemon_porygonEntry | Spawn_v0137_pokemon_porygon_normalEntry;
+  "0137": PokemonGenderPorygon | PokemonGenderPorygonNormal;
   "0138": Spawn_v0138_pokemon_omanyteEntry | Spawn_v0138_pokemon_omanyte_normalEntry;
   "0139": Spawn_v0139_pokemon_omastarEntry | Spawn_v0139_pokemon_omastar_normalEntry;
   "0140": Spawn_v0140_pokemon_kabutoEntry | Spawn_v0140_pokemon_kabuto_normalEntry;
   "0141": Spawn_v0141_pokemon_kabutopsEntry | Spawn_v0141_pokemon_kabutops_normalEntry;
   "0142": Spawn_v0142_pokemon_aerodactylEntry | Spawn_v0142_pokemon_aerodactyl_normalEntry | Spawn_v0142_pokemon_aerodactyl_summer_2023Entry;
   "0143": Spawn_v0143_pokemon_snorlaxEntry | Spawn_v0143_pokemon_snorlax_normalEntry | Spawn_v0143_pokemon_snorlax_wildarea_2024Entry;
-  "0144": Spawn_v0144_pokemon_articunoEntry | Spawn_v0144_pokemon_articuno_galarianEntry | Spawn_v0144_pokemon_articuno_normalEntry;
-  "0145": Spawn_v0145_pokemon_zapdosEntry | Spawn_v0145_pokemon_zapdos_galarianEntry | Spawn_v0145_pokemon_zapdos_normalEntry;
-  "0146": Spawn_v0146_pokemon_moltresEntry | Spawn_v0146_pokemon_moltres_galarianEntry | Spawn_v0146_pokemon_moltres_normalEntry;
+  "0144": PokemonGenderArticuno | PokemonGenderArticunoGalarian | PokemonGenderArticunoNormal;
+  "0145": PokemonGenderZapdos | PokemonGenderZapdosGalarian | PokemonGenderZapdosNormal;
+  "0146": PokemonGenderMoltres | PokemonGenderMoltresGalarian | PokemonGenderMoltresNormal;
   "0147": Spawn_v0147_pokemon_dratiniEntry | Spawn_v0147_pokemon_dratini_normalEntry;
   "0148": Spawn_v0148_pokemon_dragonairEntry | Spawn_v0148_pokemon_dragonair_normalEntry;
   "0149": Spawn_v0149_pokemon_dragoniteEntry | Spawn_v0149_pokemon_dragonite_normalEntry;
-  "0150": Spawn_v0150_pokemon_mewtwoEntry | Spawn_v0150_pokemon_mewtwo_aEntry | Spawn_v0150_pokemon_mewtwo_normalEntry;
-  "0151": Spawn_v0151_pokemon_mewEntry | Spawn_v0151_pokemon_mew_normalEntry;
+  "0150": PokemonGenderMewtwo | PokemonGenderMewtwoA | PokemonGenderMewtwoNormal;
+  "0151": PokemonGenderMew | PokemonGenderMewNormal;
 }
 
 export interface PokemonGenderGen1ByPokemonId {
@@ -2330,14 +2163,14 @@ export interface PokemonGenderGen1ByPokemonId {
   "ALAKAZAM": Spawn_v0065_pokemon_alakazamEntry | Spawn_v0065_pokemon_alakazam_normalEntry;
   "ARBOK": Spawn_v0024_pokemon_arbokEntry | Spawn_v0024_pokemon_arbok_normalEntry;
   "ARCANINE": Spawn_v0059_pokemon_arcanineEntry | Spawn_v0059_pokemon_arcanine_hisuianEntry | Spawn_v0059_pokemon_arcanine_normalEntry;
-  "ARTICUNO": Spawn_v0144_pokemon_articunoEntry | Spawn_v0144_pokemon_articuno_galarianEntry | Spawn_v0144_pokemon_articuno_normalEntry;
+  "ARTICUNO": PokemonGenderArticuno | PokemonGenderArticunoGalarian | PokemonGenderArticunoNormal;
   "BEEDRILL": Spawn_v0015_pokemon_beedrillEntry | Spawn_v0015_pokemon_beedrill_normalEntry;
   "BELLSPROUT": Spawn_v0069_pokemon_bellsproutEntry | Spawn_v0069_pokemon_bellsprout_normalEntry;
   "BLASTOISE": Spawn_v0009_pokemon_blastoiseEntry | Spawn_v0009_pokemon_blastoise_copy_2019Entry | Spawn_v0009_pokemon_blastoise_normalEntry;
   "BULBASAUR": Spawn_v0001_pokemon_bulbasaurEntry | Spawn_v0001_pokemon_bulbasaur_fall_2019Entry | Spawn_v0001_pokemon_bulbasaur_normalEntry;
   "BUTTERFREE": Spawn_v0012_pokemon_butterfreeEntry | Spawn_v0012_pokemon_butterfree_normalEntry;
-  "CATERPIE": Spawn_v0010_pokemon_caterpieEntry | Spawn_v0010_pokemon_caterpie_gofest_2026Entry | Spawn_v0010_pokemon_caterpie_normalEntry;
-  "CHANSEY": Spawn_v0113_pokemon_chanseyEntry | Spawn_v0113_pokemon_chansey_normalEntry;
+  "CATERPIE": Spawn_v0010_pokemon_caterpieEntry | PokemonGenderCaterpieGofestT | Spawn_v0010_pokemon_caterpie_normalEntry;
+  "CHANSEY": Spawn_v0113_pokemon_chanseyEntry | PokemonGenderChanseyNormal;
   "CHARIZARD": Spawn_v0006_pokemon_charizardEntry | Spawn_v0006_pokemon_charizard_copy_2019Entry | Spawn_v0006_pokemon_charizard_normalEntry;
   "CHARMANDER": Spawn_v0004_pokemon_charmanderEntry | Spawn_v0004_pokemon_charmander_fall_2019Entry | Spawn_v0004_pokemon_charmander_normalEntry;
   "CHARMELEON": Spawn_v0005_pokemon_charmeleonEntry | Spawn_v0005_pokemon_charmeleon_normalEntry;
@@ -2347,7 +2180,7 @@ export interface PokemonGenderGen1ByPokemonId {
   "CUBONE": Spawn_v0104_pokemon_cuboneEntry | Spawn_v0104_pokemon_cubone_normalEntry;
   "DEWGONG": Spawn_v0087_pokemon_dewgongEntry | Spawn_v0087_pokemon_dewgong_normalEntry;
   "DIGLETT": Spawn_v0050_pokemon_diglettEntry | Spawn_v0050_pokemon_diglett_alolaEntry | Spawn_v0050_pokemon_diglett_normalEntry;
-  "DITTO": Spawn_v0132_pokemon_dittoEntry | Spawn_v0132_pokemon_ditto_normalEntry | Spawn_v0132_pokemon_ditto_spring_2026_aEntry | Spawn_v0132_pokemon_ditto_spring_2026_bEntry;
+  "DITTO": PokemonGenderDitto | PokemonGenderDittoNormal | PokemonGenderDittoSpringTA | PokemonGenderDittoSpringTB;
   "DODRIO": Spawn_v0085_pokemon_dodrioEntry | Spawn_v0085_pokemon_dodrio_normalEntry;
   "DODUO": Spawn_v0084_pokemon_doduoEntry | Spawn_v0084_pokemon_doduo_normalEntry;
   "DRAGONAIR": Spawn_v0148_pokemon_dragonairEntry | Spawn_v0148_pokemon_dragonair_normalEntry;
@@ -2358,7 +2191,7 @@ export interface PokemonGenderGen1ByPokemonId {
   "EEVEE": Spawn_v0133_pokemon_eeveeEntry | Spawn_v0133_pokemon_eevee_gofest_2024_mtiaraEntry | Spawn_v0133_pokemon_eevee_gofest_2024_stiaraEntry | Spawn_v0133_pokemon_eevee_normalEntry;
   "EKANS": Spawn_v0023_pokemon_ekansEntry | Spawn_v0023_pokemon_ekans_normalEntry;
   "ELECTABUZZ": Spawn_v0125_pokemon_electabuzzEntry | Spawn_v0125_pokemon_electabuzz_normalEntry;
-  "ELECTRODE": Spawn_v0101_pokemon_electrodeEntry | Spawn_v0101_pokemon_electrode_hisuianEntry | Spawn_v0101_pokemon_electrode_normalEntry;
+  "ELECTRODE": PokemonGenderElectrode | PokemonGenderElectrodeHisuian | PokemonGenderElectrodeNormal;
   "EXEGGCUTE": Spawn_v0102_pokemon_exeggcuteEntry | Spawn_v0102_pokemon_exeggcute_normalEntry;
   "EXEGGUTOR": Spawn_v0103_pokemon_exeggutorEntry | Spawn_v0103_pokemon_exeggutor_alolaEntry | Spawn_v0103_pokemon_exeggutor_normalEntry;
   "FARFETCHD": Spawn_v0083_pokemon_farfetchdEntry | Spawn_v0083_pokemon_farfetchd_galarianEntry | Spawn_v0083_pokemon_farfetchd_normalEntry;
@@ -2400,15 +2233,15 @@ export interface PokemonGenderGen1ByPokemonId {
   "MACHOP": Spawn_v0066_pokemon_machopEntry | Spawn_v0066_pokemon_machop_normalEntry;
   "MAGIKARP": Spawn_v0129_pokemon_magikarpEntry | Spawn_v0129_pokemon_magikarp_normalEntry;
   "MAGMAR": Spawn_v0126_pokemon_magmarEntry | Spawn_v0126_pokemon_magmar_normalEntry;
-  "MAGNEMITE": Spawn_v0081_pokemon_magnemiteEntry | Spawn_v0081_pokemon_magnemite_normalEntry;
-  "MAGNETON": Spawn_v0082_pokemon_magnetonEntry | Spawn_v0082_pokemon_magneton_normalEntry;
+  "MAGNEMITE": PokemonGenderMagnemite | PokemonGenderMagnemiteNormal;
+  "MAGNETON": PokemonGenderMagneton | PokemonGenderMagnetonNormal;
   "MANKEY": Spawn_v0056_pokemon_mankeyEntry | Spawn_v0056_pokemon_mankey_normalEntry;
   "MAROWAK": Spawn_v0105_pokemon_marowakEntry | Spawn_v0105_pokemon_marowak_alolaEntry | Spawn_v0105_pokemon_marowak_normalEntry;
   "MEOWTH": Spawn_v0052_pokemon_meowthEntry | Spawn_v0052_pokemon_meowth_alolaEntry | Spawn_v0052_pokemon_meowth_galarianEntry | Spawn_v0052_pokemon_meowth_normalEntry;
   "METAPOD": Spawn_v0011_pokemon_metapodEntry | Spawn_v0011_pokemon_metapod_normalEntry;
-  "MEW": Spawn_v0151_pokemon_mewEntry | Spawn_v0151_pokemon_mew_normalEntry;
-  "MEWTWO": Spawn_v0150_pokemon_mewtwoEntry | Spawn_v0150_pokemon_mewtwo_aEntry | Spawn_v0150_pokemon_mewtwo_normalEntry;
-  "MOLTRES": Spawn_v0146_pokemon_moltresEntry | Spawn_v0146_pokemon_moltres_galarianEntry | Spawn_v0146_pokemon_moltres_normalEntry;
+  "MEW": PokemonGenderMew | PokemonGenderMewNormal;
+  "MEWTWO": PokemonGenderMewtwo | PokemonGenderMewtwoA | PokemonGenderMewtwoNormal;
+  "MOLTRES": PokemonGenderMoltres | PokemonGenderMoltresGalarian | PokemonGenderMoltresNormal;
   "MR_MIME": Spawn_v0122_pokemon_mr_mimeEntry | Spawn_v0122_pokemon_mr_mime_galarianEntry | Spawn_v0122_pokemon_mr_mime_normalEntry;
   "MUK": Spawn_v0089_pokemon_mukEntry | Spawn_v0089_pokemon_muk_alolaEntry | Spawn_v0089_pokemon_muk_normalEntry;
   "NIDOKING": Spawn_v0034_pokemon_nidokingEntry | Spawn_v0034_pokemon_nidoking_normalEntry;
@@ -2428,13 +2261,13 @@ export interface PokemonGenderGen1ByPokemonId {
   "PIDGEOT": Spawn_v0018_pokemon_pidgeotEntry | Spawn_v0018_pokemon_pidgeot_normalEntry;
   "PIDGEOTTO": Spawn_v0017_pokemon_pidgeottoEntry | Spawn_v0017_pokemon_pidgeotto_normalEntry;
   "PIDGEY": Spawn_v0016_pokemon_pidgeyEntry | Spawn_v0016_pokemon_pidgey_normalEntry;
-  "PIKACHU": Spawn_v0025_pokemon_pikachuEntry | Spawn_v0025_pokemon_pikachu_adventure_hat_2020Entry | Spawn_v0025_pokemon_pikachu_bb_2026Entry | Spawn_v0025_pokemon_pikachu_copy_2019Entry | Spawn_v0025_pokemon_pikachu_costume_2020Entry | Spawn_v0025_pokemon_pikachu_diwali_2024Entry | Spawn_v0025_pokemon_pikachu_doctorEntry | Spawn_v0025_pokemon_pikachu_fall_2019Entry | Spawn_v0025_pokemon_pikachu_flying_01Entry | Spawn_v0025_pokemon_pikachu_flying_02Entry | Spawn_v0025_pokemon_pikachu_flying_03Entry | Spawn_v0025_pokemon_pikachu_flying_04Entry | Spawn_v0025_pokemon_pikachu_flying_5th_annivEntry | Spawn_v0025_pokemon_pikachu_flying_okinawaEntry | Spawn_v0025_pokemon_pikachu_gofest_2022Entry | Spawn_v0025_pokemon_pikachu_gofest_2024_mtiaraEntry | Spawn_v0025_pokemon_pikachu_gofest_2024_stiaraEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_goggles_blueEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_goggles_redEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_goggles_yellowEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_blueEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_redEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_yellowEntry | Spawn_v0025_pokemon_pikachu_gofest_2026_cap_blueEntry | Spawn_v0025_pokemon_pikachu_gofest_2026_cap_redEntry | Spawn_v0025_pokemon_pikachu_gofest_2026_cap_yellowEntry | Spawn_v0025_pokemon_pikachu_gotour_2024_aEntry | Spawn_v0025_pokemon_pikachu_gotour_2024_a_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2024_bEntry | Spawn_v0025_pokemon_pikachu_gotour_2024_b_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2025_aEntry | Spawn_v0025_pokemon_pikachu_gotour_2025_a_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2025_bEntry | Spawn_v0025_pokemon_pikachu_gotour_2025_b_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2026_aEntry | Spawn_v0025_pokemon_pikachu_gotour_2026_a_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2026_bEntry | Spawn_v0025_pokemon_pikachu_gotour_2026_b_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2026_cEntry | Spawn_v0025_pokemon_pikachu_gotour_2026_c_02Entry | Spawn_v0025_pokemon_pikachu_horizonsEntry | Spawn_v0025_pokemon_pikachu_jejuEntry | Spawn_v0025_pokemon_pikachu_kariyushiEntry | Spawn_v0025_pokemon_pikachu_kurtaEntry | Spawn_v0025_pokemon_pikachu_normalEntry | Spawn_v0025_pokemon_pikachu_pop_starEntry | Spawn_v0025_pokemon_pikachu_rock_starEntry | Spawn_v0025_pokemon_pikachu_summer_2023_aEntry | Spawn_v0025_pokemon_pikachu_summer_2023_bEntry | Spawn_v0025_pokemon_pikachu_summer_2023_cEntry | Spawn_v0025_pokemon_pikachu_summer_2023_dEntry | Spawn_v0025_pokemon_pikachu_summer_2023_eEntry | Spawn_v0025_pokemon_pikachu_tshirt_01Entry | Spawn_v0025_pokemon_pikachu_tshirt_02Entry | Spawn_v0025_pokemon_pikachu_tshirt_03Entry | Spawn_v0025_pokemon_pikachu_vs_2019Entry | Spawn_v0025_pokemon_pikachu_wcs_2022Entry | Spawn_v0025_pokemon_pikachu_wcs_2023Entry | Spawn_v0025_pokemon_pikachu_wcs_2024Entry | Spawn_v0025_pokemon_pikachu_wcs_2025Entry | Spawn_v0025_pokemon_pikachu_winter_2020Entry;
+  "PIKACHU": Spawn_v0025_pokemon_pikachuEntry | Spawn_v0025_pokemon_pikachu_adventure_hat_2020Entry | Spawn_v0025_pokemon_pikachu_bb_2026Entry | Spawn_v0025_pokemon_pikachu_costume_2020Entry | Spawn_v0025_pokemon_pikachu_flying_01Entry | Spawn_v0025_pokemon_pikachu_flying_02Entry | Spawn_v0025_pokemon_pikachu_flying_03Entry | Spawn_v0025_pokemon_pikachu_flying_04Entry | Spawn_v0025_pokemon_pikachu_flying_5th_annivEntry | Spawn_v0025_pokemon_pikachu_flying_okinawaEntry | Spawn_v0025_pokemon_pikachu_gofest_2022Entry | Spawn_v0025_pokemon_pikachu_gofest_2024_mtiaraEntry | Spawn_v0025_pokemon_pikachu_gofest_2024_stiaraEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_goggles_blueEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_goggles_redEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_goggles_yellowEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_blueEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_redEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_yellowEntry | Spawn_v0025_pokemon_pikachu_horizonsEntry | Spawn_v0025_pokemon_pikachu_jejuEntry | Spawn_v0025_pokemon_pikachu_kariyushiEntry | Spawn_v0025_pokemon_pikachu_normalEntry | Spawn_v0025_pokemon_pikachu_summer_2023_aEntry | Spawn_v0025_pokemon_pikachu_summer_2023_bEntry | Spawn_v0025_pokemon_pikachu_summer_2023_cEntry | Spawn_v0025_pokemon_pikachu_summer_2023_dEntry | Spawn_v0025_pokemon_pikachu_summer_2023_eEntry | Spawn_v0025_pokemon_pikachu_tshirt_01Entry | Spawn_v0025_pokemon_pikachu_tshirt_02Entry | Spawn_v0025_pokemon_pikachu_tshirt_03Entry | Spawn_v0025_pokemon_pikachu_wcs_2022Entry | Spawn_v0025_pokemon_pikachu_wcs_2023Entry | Spawn_v0025_pokemon_pikachu_wcs_2024Entry | Spawn_v0025_pokemon_pikachu_wcs_2025Entry | Spawn_v0025_pokemon_pikachu_winter_2020Entry | PokemonGenderPikachuGofestTCapBlue | PokemonGenderPikachuGofestTCapRed | PokemonGenderPikachuGofestTCapYellow | Spawn_v0025_pokemon_pikachu_gotour_2024_aEntry | Spawn_v0025_pokemon_pikachu_gotour_2024_a_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2024_bEntry | Spawn_v0025_pokemon_pikachu_gotour_2024_b_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2025_aEntry | Spawn_v0025_pokemon_pikachu_gotour_2025_a_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2025_bEntry | Spawn_v0025_pokemon_pikachu_gotour_2025_b_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2026_aEntry | Spawn_v0025_pokemon_pikachu_gotour_2026_a_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2026_bEntry | Spawn_v0025_pokemon_pikachu_gotour_2026_b_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2026_cEntry | Spawn_v0025_pokemon_pikachu_gotour_2026_c_02Entry | Spawn_v0025_pokemon_pikachu_copy_2019Entry | Spawn_v0025_pokemon_pikachu_fall_2019Entry | Spawn_v0025_pokemon_pikachu_kurtaEntry | Spawn_v0025_pokemon_pikachu_diwali_2024Entry | Spawn_v0025_pokemon_pikachu_doctorEntry | Spawn_v0025_pokemon_pikachu_vs_2019Entry | PokemonGenderPikachuPopStar | PokemonGenderPikachuRockStar;
   "PINSIR": Spawn_v0127_pokemon_pinsirEntry | Spawn_v0127_pokemon_pinsir_normalEntry;
   "POLIWAG": Spawn_v0060_pokemon_poliwagEntry | Spawn_v0060_pokemon_poliwag_normalEntry;
   "POLIWHIRL": Spawn_v0061_pokemon_poliwhirlEntry | Spawn_v0061_pokemon_poliwhirl_normalEntry;
   "POLIWRATH": Spawn_v0062_pokemon_poliwrathEntry | Spawn_v0062_pokemon_poliwrath_normalEntry;
   "PONYTA": Spawn_v0077_pokemon_ponytaEntry | Spawn_v0077_pokemon_ponyta_galarianEntry | Spawn_v0077_pokemon_ponyta_normalEntry;
-  "PORYGON": Spawn_v0137_pokemon_porygonEntry | Spawn_v0137_pokemon_porygon_normalEntry;
+  "PORYGON": PokemonGenderPorygon | PokemonGenderPorygonNormal;
   "PRIMEAPE": Spawn_v0057_pokemon_primeapeEntry | Spawn_v0057_pokemon_primeape_normalEntry;
   "PSYDUCK": Spawn_v0054_pokemon_psyduckEntry | Spawn_v0054_pokemon_psyduck_normalEntry | Spawn_v0054_pokemon_psyduck_swim_2025Entry;
   "RAICHU": Spawn_v0026_pokemon_raichuEntry | Spawn_v0026_pokemon_raichu_alolaEntry | Spawn_v0026_pokemon_raichu_normalEntry;
@@ -2455,10 +2288,10 @@ export interface PokemonGenderGen1ByPokemonId {
   "SNORLAX": Spawn_v0143_pokemon_snorlaxEntry | Spawn_v0143_pokemon_snorlax_normalEntry | Spawn_v0143_pokemon_snorlax_wildarea_2024Entry;
   "SPEAROW": Spawn_v0021_pokemon_spearowEntry | Spawn_v0021_pokemon_spearow_normalEntry;
   "SQUIRTLE": Spawn_v0007_pokemon_squirtleEntry | Spawn_v0007_pokemon_squirtle_fall_2019Entry | Spawn_v0007_pokemon_squirtle_normalEntry;
-  "STARMIE": Spawn_v0121_pokemon_starmieEntry | Spawn_v0121_pokemon_starmie_normalEntry;
-  "STARYU": Spawn_v0120_pokemon_staryuEntry | Spawn_v0120_pokemon_staryu_normalEntry;
+  "STARMIE": PokemonGenderStarmie | PokemonGenderStarmieNormal;
+  "STARYU": PokemonGenderStaryu | PokemonGenderStaryuNormal;
   "TANGELA": Spawn_v0114_pokemon_tangelaEntry | Spawn_v0114_pokemon_tangela_normalEntry;
-  "TAUROS": Spawn_v0128_pokemon_taurosEntry | Spawn_v0128_pokemon_tauros_normalEntry | Spawn_v0128_pokemon_tauros_paldea_aquaEntry | Spawn_v0128_pokemon_tauros_paldea_blazeEntry | Spawn_v0128_pokemon_tauros_paldea_combatEntry;
+  "TAUROS": Spawn_v0128_pokemon_taurosEntry | PokemonGenderTaurosNormal | PokemonGenderTaurosPaldeaAqua | PokemonGenderTaurosPaldeaBlaze | PokemonGenderTaurosPaldeaCombat;
   "TENTACOOL": Spawn_v0072_pokemon_tentacoolEntry | Spawn_v0072_pokemon_tentacool_normalEntry;
   "TENTACRUEL": Spawn_v0073_pokemon_tentacruelEntry | Spawn_v0073_pokemon_tentacruel_normalEntry;
   "VAPOREON": Spawn_v0134_pokemon_vaporeonEntry | Spawn_v0134_pokemon_vaporeon_normalEntry;
@@ -2467,15 +2300,15 @@ export interface PokemonGenderGen1ByPokemonId {
   "VENUSAUR": Spawn_v0003_pokemon_venusaurEntry | Spawn_v0003_pokemon_venusaur_copy_2019Entry | Spawn_v0003_pokemon_venusaur_normalEntry;
   "VICTREEBEL": Spawn_v0071_pokemon_victreebelEntry | Spawn_v0071_pokemon_victreebel_normalEntry;
   "VILEPLUME": Spawn_v0045_pokemon_vileplumeEntry | Spawn_v0045_pokemon_vileplume_normalEntry;
-  "VOLTORB": Spawn_v0100_pokemon_voltorbEntry | Spawn_v0100_pokemon_voltorb_hisuianEntry | Spawn_v0100_pokemon_voltorb_normalEntry;
+  "VOLTORB": PokemonGenderVoltorb | PokemonGenderVoltorbHisuian | PokemonGenderVoltorbNormal;
   "VULPIX": Spawn_v0037_pokemon_vulpixEntry | Spawn_v0037_pokemon_vulpix_alolaEntry | Spawn_v0037_pokemon_vulpix_normalEntry;
   "WARTORTLE": Spawn_v0008_pokemon_wartortleEntry | Spawn_v0008_pokemon_wartortle_normalEntry;
   "WEEDLE": Spawn_v0013_pokemon_weedleEntry | Spawn_v0013_pokemon_weedle_normalEntry;
   "WEEPINBELL": Spawn_v0070_pokemon_weepinbellEntry | Spawn_v0070_pokemon_weepinbell_normalEntry;
   "WEEZING": Spawn_v0110_pokemon_weezingEntry | Spawn_v0110_pokemon_weezing_galarianEntry | Spawn_v0110_pokemon_weezing_normalEntry;
   "WIGGLYTUFF": Spawn_v0040_pokemon_wigglytuffEntry | Spawn_v0040_pokemon_wigglytuff_normalEntry;
-  "ZAPDOS": Spawn_v0145_pokemon_zapdosEntry | Spawn_v0145_pokemon_zapdos_galarianEntry | Spawn_v0145_pokemon_zapdos_normalEntry;
+  "ZAPDOS": PokemonGenderZapdos | PokemonGenderZapdosGalarian | PokemonGenderZapdosNormal;
   "ZUBAT": Spawn_v0041_pokemon_zubatEntry | Spawn_v0041_pokemon_zubat_normalEntry;
 }
 
-export type PokemonGenderGen1MasterfileEntry = Spawn_v0001_pokemon_bulbasaurEntry | Spawn_v0001_pokemon_bulbasaur_fall_2019Entry | Spawn_v0001_pokemon_bulbasaur_normalEntry | Spawn_v0002_pokemon_ivysaurEntry | Spawn_v0002_pokemon_ivysaur_normalEntry | Spawn_v0003_pokemon_venusaurEntry | Spawn_v0003_pokemon_venusaur_copy_2019Entry | Spawn_v0003_pokemon_venusaur_normalEntry | Spawn_v0004_pokemon_charmanderEntry | Spawn_v0004_pokemon_charmander_fall_2019Entry | Spawn_v0004_pokemon_charmander_normalEntry | Spawn_v0005_pokemon_charmeleonEntry | Spawn_v0005_pokemon_charmeleon_normalEntry | Spawn_v0006_pokemon_charizardEntry | Spawn_v0006_pokemon_charizard_copy_2019Entry | Spawn_v0006_pokemon_charizard_normalEntry | Spawn_v0007_pokemon_squirtleEntry | Spawn_v0007_pokemon_squirtle_fall_2019Entry | Spawn_v0007_pokemon_squirtle_normalEntry | Spawn_v0008_pokemon_wartortleEntry | Spawn_v0008_pokemon_wartortle_normalEntry | Spawn_v0009_pokemon_blastoiseEntry | Spawn_v0009_pokemon_blastoise_copy_2019Entry | Spawn_v0009_pokemon_blastoise_normalEntry | Spawn_v0010_pokemon_caterpieEntry | Spawn_v0010_pokemon_caterpie_gofest_2026Entry | Spawn_v0010_pokemon_caterpie_normalEntry | Spawn_v0011_pokemon_metapodEntry | Spawn_v0011_pokemon_metapod_normalEntry | Spawn_v0012_pokemon_butterfreeEntry | Spawn_v0012_pokemon_butterfree_normalEntry | Spawn_v0013_pokemon_weedleEntry | Spawn_v0013_pokemon_weedle_normalEntry | Spawn_v0014_pokemon_kakunaEntry | Spawn_v0014_pokemon_kakuna_normalEntry | Spawn_v0015_pokemon_beedrillEntry | Spawn_v0015_pokemon_beedrill_normalEntry | Spawn_v0016_pokemon_pidgeyEntry | Spawn_v0016_pokemon_pidgey_normalEntry | Spawn_v0017_pokemon_pidgeottoEntry | Spawn_v0017_pokemon_pidgeotto_normalEntry | Spawn_v0018_pokemon_pidgeotEntry | Spawn_v0018_pokemon_pidgeot_normalEntry | Spawn_v0019_pokemon_rattataEntry | Spawn_v0019_pokemon_rattata_alolaEntry | Spawn_v0019_pokemon_rattata_normalEntry | Spawn_v0020_pokemon_raticateEntry | Spawn_v0020_pokemon_raticate_alolaEntry | Spawn_v0020_pokemon_raticate_normalEntry | Spawn_v0021_pokemon_spearowEntry | Spawn_v0021_pokemon_spearow_normalEntry | Spawn_v0022_pokemon_fearowEntry | Spawn_v0022_pokemon_fearow_normalEntry | Spawn_v0023_pokemon_ekansEntry | Spawn_v0023_pokemon_ekans_normalEntry | Spawn_v0024_pokemon_arbokEntry | Spawn_v0024_pokemon_arbok_normalEntry | Spawn_v0025_pokemon_pikachuEntry | Spawn_v0025_pokemon_pikachu_adventure_hat_2020Entry | Spawn_v0025_pokemon_pikachu_bb_2026Entry | Spawn_v0025_pokemon_pikachu_copy_2019Entry | Spawn_v0025_pokemon_pikachu_costume_2020Entry | Spawn_v0025_pokemon_pikachu_diwali_2024Entry | Spawn_v0025_pokemon_pikachu_doctorEntry | Spawn_v0025_pokemon_pikachu_fall_2019Entry | Spawn_v0025_pokemon_pikachu_flying_01Entry | Spawn_v0025_pokemon_pikachu_flying_02Entry | Spawn_v0025_pokemon_pikachu_flying_03Entry | Spawn_v0025_pokemon_pikachu_flying_04Entry | Spawn_v0025_pokemon_pikachu_flying_5th_annivEntry | Spawn_v0025_pokemon_pikachu_flying_okinawaEntry | Spawn_v0025_pokemon_pikachu_gofest_2022Entry | Spawn_v0025_pokemon_pikachu_gofest_2024_mtiaraEntry | Spawn_v0025_pokemon_pikachu_gofest_2024_stiaraEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_goggles_blueEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_goggles_redEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_goggles_yellowEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_blueEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_redEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_yellowEntry | Spawn_v0025_pokemon_pikachu_gofest_2026_cap_blueEntry | Spawn_v0025_pokemon_pikachu_gofest_2026_cap_redEntry | Spawn_v0025_pokemon_pikachu_gofest_2026_cap_yellowEntry | Spawn_v0025_pokemon_pikachu_gotour_2024_aEntry | Spawn_v0025_pokemon_pikachu_gotour_2024_a_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2024_bEntry | Spawn_v0025_pokemon_pikachu_gotour_2024_b_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2025_aEntry | Spawn_v0025_pokemon_pikachu_gotour_2025_a_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2025_bEntry | Spawn_v0025_pokemon_pikachu_gotour_2025_b_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2026_aEntry | Spawn_v0025_pokemon_pikachu_gotour_2026_a_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2026_bEntry | Spawn_v0025_pokemon_pikachu_gotour_2026_b_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2026_cEntry | Spawn_v0025_pokemon_pikachu_gotour_2026_c_02Entry | Spawn_v0025_pokemon_pikachu_horizonsEntry | Spawn_v0025_pokemon_pikachu_jejuEntry | Spawn_v0025_pokemon_pikachu_kariyushiEntry | Spawn_v0025_pokemon_pikachu_kurtaEntry | Spawn_v0025_pokemon_pikachu_normalEntry | Spawn_v0025_pokemon_pikachu_pop_starEntry | Spawn_v0025_pokemon_pikachu_rock_starEntry | Spawn_v0025_pokemon_pikachu_summer_2023_aEntry | Spawn_v0025_pokemon_pikachu_summer_2023_bEntry | Spawn_v0025_pokemon_pikachu_summer_2023_cEntry | Spawn_v0025_pokemon_pikachu_summer_2023_dEntry | Spawn_v0025_pokemon_pikachu_summer_2023_eEntry | Spawn_v0025_pokemon_pikachu_tshirt_01Entry | Spawn_v0025_pokemon_pikachu_tshirt_02Entry | Spawn_v0025_pokemon_pikachu_tshirt_03Entry | Spawn_v0025_pokemon_pikachu_vs_2019Entry | Spawn_v0025_pokemon_pikachu_wcs_2022Entry | Spawn_v0025_pokemon_pikachu_wcs_2023Entry | Spawn_v0025_pokemon_pikachu_wcs_2024Entry | Spawn_v0025_pokemon_pikachu_wcs_2025Entry | Spawn_v0025_pokemon_pikachu_winter_2020Entry | Spawn_v0026_pokemon_raichuEntry | Spawn_v0026_pokemon_raichu_alolaEntry | Spawn_v0026_pokemon_raichu_normalEntry | Spawn_v0027_pokemon_sandshrewEntry | Spawn_v0027_pokemon_sandshrew_alolaEntry | Spawn_v0027_pokemon_sandshrew_normalEntry | Spawn_v0028_pokemon_sandslashEntry | Spawn_v0028_pokemon_sandslash_alolaEntry | Spawn_v0028_pokemon_sandslash_normalEntry | Spawn_v0029_pokemon_nidoranEntry | Spawn_v0029_pokemon_nidoran_normalEntry | Spawn_v0030_pokemon_nidorinaEntry | Spawn_v0030_pokemon_nidorina_normalEntry | Spawn_v0031_pokemon_nidoqueenEntry | Spawn_v0031_pokemon_nidoqueen_normalEntry | Spawn_v0032_pokemon_nidoranEntry | Spawn_v0032_pokemon_nidoran_normalEntry | Spawn_v0033_pokemon_nidorinoEntry | Spawn_v0033_pokemon_nidorino_normalEntry | Spawn_v0034_pokemon_nidokingEntry | Spawn_v0034_pokemon_nidoking_normalEntry | Spawn_v0035_pokemon_clefairyEntry | Spawn_v0035_pokemon_clefairy_normalEntry | Spawn_v0036_pokemon_clefableEntry | Spawn_v0036_pokemon_clefable_normalEntry | Spawn_v0037_pokemon_vulpixEntry | Spawn_v0037_pokemon_vulpix_alolaEntry | Spawn_v0037_pokemon_vulpix_normalEntry | Spawn_v0038_pokemon_ninetalesEntry | Spawn_v0038_pokemon_ninetales_alolaEntry | Spawn_v0038_pokemon_ninetales_normalEntry | Spawn_v0039_pokemon_jigglypuffEntry | Spawn_v0039_pokemon_jigglypuff_normalEntry | Spawn_v0040_pokemon_wigglytuffEntry | Spawn_v0040_pokemon_wigglytuff_normalEntry | Spawn_v0041_pokemon_zubatEntry | Spawn_v0041_pokemon_zubat_normalEntry | Spawn_v0042_pokemon_golbatEntry | Spawn_v0042_pokemon_golbat_normalEntry | Spawn_v0043_pokemon_oddishEntry | Spawn_v0043_pokemon_oddish_normalEntry | Spawn_v0044_pokemon_gloomEntry | Spawn_v0044_pokemon_gloom_normalEntry | Spawn_v0045_pokemon_vileplumeEntry | Spawn_v0045_pokemon_vileplume_normalEntry | Spawn_v0046_pokemon_parasEntry | Spawn_v0046_pokemon_paras_normalEntry | Spawn_v0047_pokemon_parasectEntry | Spawn_v0047_pokemon_parasect_normalEntry | Spawn_v0048_pokemon_venonatEntry | Spawn_v0048_pokemon_venonat_normalEntry | Spawn_v0049_pokemon_venomothEntry | Spawn_v0049_pokemon_venomoth_normalEntry | Spawn_v0050_pokemon_diglettEntry | Spawn_v0050_pokemon_diglett_alolaEntry | Spawn_v0050_pokemon_diglett_normalEntry | Spawn_v0051_pokemon_dugtrioEntry | Spawn_v0051_pokemon_dugtrio_alolaEntry | Spawn_v0051_pokemon_dugtrio_normalEntry | Spawn_v0052_pokemon_meowthEntry | Spawn_v0052_pokemon_meowth_alolaEntry | Spawn_v0052_pokemon_meowth_galarianEntry | Spawn_v0052_pokemon_meowth_normalEntry | Spawn_v0053_pokemon_persianEntry | Spawn_v0053_pokemon_persian_alolaEntry | Spawn_v0053_pokemon_persian_normalEntry | Spawn_v0054_pokemon_psyduckEntry | Spawn_v0054_pokemon_psyduck_normalEntry | Spawn_v0054_pokemon_psyduck_swim_2025Entry | Spawn_v0055_pokemon_golduckEntry | Spawn_v0055_pokemon_golduck_normalEntry | Spawn_v0056_pokemon_mankeyEntry | Spawn_v0056_pokemon_mankey_normalEntry | Spawn_v0057_pokemon_primeapeEntry | Spawn_v0057_pokemon_primeape_normalEntry | Spawn_v0058_pokemon_growlitheEntry | Spawn_v0058_pokemon_growlithe_hisuianEntry | Spawn_v0058_pokemon_growlithe_normalEntry | Spawn_v0059_pokemon_arcanineEntry | Spawn_v0059_pokemon_arcanine_hisuianEntry | Spawn_v0059_pokemon_arcanine_normalEntry | Spawn_v0060_pokemon_poliwagEntry | Spawn_v0060_pokemon_poliwag_normalEntry | Spawn_v0061_pokemon_poliwhirlEntry | Spawn_v0061_pokemon_poliwhirl_normalEntry | Spawn_v0062_pokemon_poliwrathEntry | Spawn_v0062_pokemon_poliwrath_normalEntry | Spawn_v0063_pokemon_abraEntry | Spawn_v0063_pokemon_abra_normalEntry | Spawn_v0064_pokemon_kadabraEntry | Spawn_v0064_pokemon_kadabra_normalEntry | Spawn_v0065_pokemon_alakazamEntry | Spawn_v0065_pokemon_alakazam_normalEntry | Spawn_v0066_pokemon_machopEntry | Spawn_v0066_pokemon_machop_normalEntry | Spawn_v0067_pokemon_machokeEntry | Spawn_v0067_pokemon_machoke_normalEntry | Spawn_v0068_pokemon_machampEntry | Spawn_v0068_pokemon_machamp_normalEntry | Spawn_v0069_pokemon_bellsproutEntry | Spawn_v0069_pokemon_bellsprout_normalEntry | Spawn_v0070_pokemon_weepinbellEntry | Spawn_v0070_pokemon_weepinbell_normalEntry | Spawn_v0071_pokemon_victreebelEntry | Spawn_v0071_pokemon_victreebel_normalEntry | Spawn_v0072_pokemon_tentacoolEntry | Spawn_v0072_pokemon_tentacool_normalEntry | Spawn_v0073_pokemon_tentacruelEntry | Spawn_v0073_pokemon_tentacruel_normalEntry | Spawn_v0074_pokemon_geodudeEntry | Spawn_v0074_pokemon_geodude_alolaEntry | Spawn_v0074_pokemon_geodude_normalEntry | Spawn_v0075_pokemon_gravelerEntry | Spawn_v0075_pokemon_graveler_alolaEntry | Spawn_v0075_pokemon_graveler_normalEntry | Spawn_v0076_pokemon_golemEntry | Spawn_v0076_pokemon_golem_alolaEntry | Spawn_v0076_pokemon_golem_normalEntry | Spawn_v0077_pokemon_ponytaEntry | Spawn_v0077_pokemon_ponyta_galarianEntry | Spawn_v0077_pokemon_ponyta_normalEntry | Spawn_v0078_pokemon_rapidashEntry | Spawn_v0078_pokemon_rapidash_galarianEntry | Spawn_v0078_pokemon_rapidash_normalEntry | Spawn_v0079_pokemon_slowpokeEntry | Spawn_v0079_pokemon_slowpoke_2020Entry | Spawn_v0079_pokemon_slowpoke_galarianEntry | Spawn_v0079_pokemon_slowpoke_normalEntry | Spawn_v0080_pokemon_slowbroEntry | Spawn_v0080_pokemon_slowbro_2021Entry | Spawn_v0080_pokemon_slowbro_galarianEntry | Spawn_v0080_pokemon_slowbro_normalEntry | Spawn_v0081_pokemon_magnemiteEntry | Spawn_v0081_pokemon_magnemite_normalEntry | Spawn_v0082_pokemon_magnetonEntry | Spawn_v0082_pokemon_magneton_normalEntry | Spawn_v0083_pokemon_farfetchdEntry | Spawn_v0083_pokemon_farfetchd_galarianEntry | Spawn_v0083_pokemon_farfetchd_normalEntry | Spawn_v0084_pokemon_doduoEntry | Spawn_v0084_pokemon_doduo_normalEntry | Spawn_v0085_pokemon_dodrioEntry | Spawn_v0085_pokemon_dodrio_normalEntry | Spawn_v0086_pokemon_seelEntry | Spawn_v0086_pokemon_seel_normalEntry | Spawn_v0087_pokemon_dewgongEntry | Spawn_v0087_pokemon_dewgong_normalEntry | Spawn_v0088_pokemon_grimerEntry | Spawn_v0088_pokemon_grimer_alolaEntry | Spawn_v0088_pokemon_grimer_normalEntry | Spawn_v0089_pokemon_mukEntry | Spawn_v0089_pokemon_muk_alolaEntry | Spawn_v0089_pokemon_muk_normalEntry | Spawn_v0090_pokemon_shellderEntry | Spawn_v0090_pokemon_shellder_normalEntry | Spawn_v0091_pokemon_cloysterEntry | Spawn_v0091_pokemon_cloyster_normalEntry | Spawn_v0092_pokemon_gastlyEntry | Spawn_v0092_pokemon_gastly_normalEntry | Spawn_v0093_pokemon_haunterEntry | Spawn_v0093_pokemon_haunter_normalEntry | Spawn_v0094_pokemon_gengarEntry | Spawn_v0094_pokemon_gengar_costume_2020Entry | Spawn_v0094_pokemon_gengar_normalEntry | Spawn_v0095_pokemon_onixEntry | Spawn_v0095_pokemon_onix_normalEntry | Spawn_v0096_pokemon_drowzeeEntry | Spawn_v0096_pokemon_drowzee_normalEntry | Spawn_v0097_pokemon_hypnoEntry | Spawn_v0097_pokemon_hypno_normalEntry | Spawn_v0098_pokemon_krabbyEntry | Spawn_v0098_pokemon_krabby_normalEntry | Spawn_v0099_pokemon_kinglerEntry | Spawn_v0099_pokemon_kingler_normalEntry | Spawn_v0100_pokemon_voltorbEntry | Spawn_v0100_pokemon_voltorb_hisuianEntry | Spawn_v0100_pokemon_voltorb_normalEntry | Spawn_v0101_pokemon_electrodeEntry | Spawn_v0101_pokemon_electrode_hisuianEntry | Spawn_v0101_pokemon_electrode_normalEntry | Spawn_v0102_pokemon_exeggcuteEntry | Spawn_v0102_pokemon_exeggcute_normalEntry | Spawn_v0103_pokemon_exeggutorEntry | Spawn_v0103_pokemon_exeggutor_alolaEntry | Spawn_v0103_pokemon_exeggutor_normalEntry | Spawn_v0104_pokemon_cuboneEntry | Spawn_v0104_pokemon_cubone_normalEntry | Spawn_v0105_pokemon_marowakEntry | Spawn_v0105_pokemon_marowak_alolaEntry | Spawn_v0105_pokemon_marowak_normalEntry | Spawn_v0106_pokemon_hitmonleeEntry | Spawn_v0106_pokemon_hitmonlee_normalEntry | Spawn_v0107_pokemon_hitmonchanEntry | Spawn_v0107_pokemon_hitmonchan_normalEntry | Spawn_v0108_pokemon_lickitungEntry | Spawn_v0108_pokemon_lickitung_normalEntry | Spawn_v0109_pokemon_koffingEntry | Spawn_v0109_pokemon_koffing_normalEntry | Spawn_v0110_pokemon_weezingEntry | Spawn_v0110_pokemon_weezing_galarianEntry | Spawn_v0110_pokemon_weezing_normalEntry | Spawn_v0111_pokemon_rhyhornEntry | Spawn_v0111_pokemon_rhyhorn_normalEntry | Spawn_v0112_pokemon_rhydonEntry | Spawn_v0112_pokemon_rhydon_normalEntry | Spawn_v0113_pokemon_chanseyEntry | Spawn_v0113_pokemon_chansey_normalEntry | Spawn_v0114_pokemon_tangelaEntry | Spawn_v0114_pokemon_tangela_normalEntry | Spawn_v0115_pokemon_kangaskhanEntry | Spawn_v0115_pokemon_kangaskhan_normalEntry | Spawn_v0116_pokemon_horseaEntry | Spawn_v0116_pokemon_horsea_normalEntry | Spawn_v0117_pokemon_seadraEntry | Spawn_v0117_pokemon_seadra_normalEntry | Spawn_v0118_pokemon_goldeenEntry | Spawn_v0118_pokemon_goldeen_normalEntry | Spawn_v0119_pokemon_seakingEntry | Spawn_v0119_pokemon_seaking_normalEntry | Spawn_v0120_pokemon_staryuEntry | Spawn_v0120_pokemon_staryu_normalEntry | Spawn_v0121_pokemon_starmieEntry | Spawn_v0121_pokemon_starmie_normalEntry | Spawn_v0122_pokemon_mr_mimeEntry | Spawn_v0122_pokemon_mr_mime_galarianEntry | Spawn_v0122_pokemon_mr_mime_normalEntry | Spawn_v0123_pokemon_scytherEntry | Spawn_v0123_pokemon_scyther_normalEntry | Spawn_v0124_pokemon_jynxEntry | Spawn_v0124_pokemon_jynx_normalEntry | Spawn_v0125_pokemon_electabuzzEntry | Spawn_v0125_pokemon_electabuzz_normalEntry | Spawn_v0126_pokemon_magmarEntry | Spawn_v0126_pokemon_magmar_normalEntry | Spawn_v0127_pokemon_pinsirEntry | Spawn_v0127_pokemon_pinsir_normalEntry | Spawn_v0128_pokemon_taurosEntry | Spawn_v0128_pokemon_tauros_normalEntry | Spawn_v0128_pokemon_tauros_paldea_aquaEntry | Spawn_v0128_pokemon_tauros_paldea_blazeEntry | Spawn_v0128_pokemon_tauros_paldea_combatEntry | Spawn_v0129_pokemon_magikarpEntry | Spawn_v0129_pokemon_magikarp_normalEntry | Spawn_v0130_pokemon_gyaradosEntry | Spawn_v0130_pokemon_gyarados_normalEntry | Spawn_v0131_pokemon_laprasEntry | Spawn_v0131_pokemon_lapras_costume_2020Entry | Spawn_v0131_pokemon_lapras_normalEntry | Spawn_v0132_pokemon_dittoEntry | Spawn_v0132_pokemon_ditto_normalEntry | Spawn_v0132_pokemon_ditto_spring_2026_aEntry | Spawn_v0132_pokemon_ditto_spring_2026_bEntry | Spawn_v0133_pokemon_eeveeEntry | Spawn_v0133_pokemon_eevee_gofest_2024_mtiaraEntry | Spawn_v0133_pokemon_eevee_gofest_2024_stiaraEntry | Spawn_v0133_pokemon_eevee_normalEntry | Spawn_v0134_pokemon_vaporeonEntry | Spawn_v0134_pokemon_vaporeon_normalEntry | Spawn_v0135_pokemon_jolteonEntry | Spawn_v0135_pokemon_jolteon_normalEntry | Spawn_v0136_pokemon_flareonEntry | Spawn_v0136_pokemon_flareon_normalEntry | Spawn_v0137_pokemon_porygonEntry | Spawn_v0137_pokemon_porygon_normalEntry | Spawn_v0138_pokemon_omanyteEntry | Spawn_v0138_pokemon_omanyte_normalEntry | Spawn_v0139_pokemon_omastarEntry | Spawn_v0139_pokemon_omastar_normalEntry | Spawn_v0140_pokemon_kabutoEntry | Spawn_v0140_pokemon_kabuto_normalEntry | Spawn_v0141_pokemon_kabutopsEntry | Spawn_v0141_pokemon_kabutops_normalEntry | Spawn_v0142_pokemon_aerodactylEntry | Spawn_v0142_pokemon_aerodactyl_normalEntry | Spawn_v0142_pokemon_aerodactyl_summer_2023Entry | Spawn_v0143_pokemon_snorlaxEntry | Spawn_v0143_pokemon_snorlax_normalEntry | Spawn_v0143_pokemon_snorlax_wildarea_2024Entry | Spawn_v0144_pokemon_articunoEntry | Spawn_v0144_pokemon_articuno_galarianEntry | Spawn_v0144_pokemon_articuno_normalEntry | Spawn_v0145_pokemon_zapdosEntry | Spawn_v0145_pokemon_zapdos_galarianEntry | Spawn_v0145_pokemon_zapdos_normalEntry | Spawn_v0146_pokemon_moltresEntry | Spawn_v0146_pokemon_moltres_galarianEntry | Spawn_v0146_pokemon_moltres_normalEntry | Spawn_v0147_pokemon_dratiniEntry | Spawn_v0147_pokemon_dratini_normalEntry | Spawn_v0148_pokemon_dragonairEntry | Spawn_v0148_pokemon_dragonair_normalEntry | Spawn_v0149_pokemon_dragoniteEntry | Spawn_v0149_pokemon_dragonite_normalEntry | Spawn_v0150_pokemon_mewtwoEntry | Spawn_v0150_pokemon_mewtwo_aEntry | Spawn_v0150_pokemon_mewtwo_normalEntry | Spawn_v0151_pokemon_mewEntry | Spawn_v0151_pokemon_mew_normalEntry;
+export type PokemonGenderGen1MasterfileEntry = Spawn_v0001_pokemon_bulbasaurEntry | Spawn_v0001_pokemon_bulbasaur_fall_2019Entry | Spawn_v0001_pokemon_bulbasaur_normalEntry | Spawn_v0002_pokemon_ivysaurEntry | Spawn_v0002_pokemon_ivysaur_normalEntry | Spawn_v0003_pokemon_venusaurEntry | Spawn_v0003_pokemon_venusaur_copy_2019Entry | Spawn_v0003_pokemon_venusaur_normalEntry | Spawn_v0004_pokemon_charmanderEntry | Spawn_v0004_pokemon_charmander_fall_2019Entry | Spawn_v0004_pokemon_charmander_normalEntry | Spawn_v0005_pokemon_charmeleonEntry | Spawn_v0005_pokemon_charmeleon_normalEntry | Spawn_v0006_pokemon_charizardEntry | Spawn_v0006_pokemon_charizard_copy_2019Entry | Spawn_v0006_pokemon_charizard_normalEntry | Spawn_v0007_pokemon_squirtleEntry | Spawn_v0007_pokemon_squirtle_fall_2019Entry | Spawn_v0007_pokemon_squirtle_normalEntry | Spawn_v0008_pokemon_wartortleEntry | Spawn_v0008_pokemon_wartortle_normalEntry | Spawn_v0009_pokemon_blastoiseEntry | Spawn_v0009_pokemon_blastoise_copy_2019Entry | Spawn_v0009_pokemon_blastoise_normalEntry | Spawn_v0010_pokemon_caterpieEntry | Spawn_v0011_pokemon_metapodEntry | Spawn_v0012_pokemon_butterfreeEntry | Spawn_v0013_pokemon_weedleEntry | Spawn_v0013_pokemon_weedle_normalEntry | Spawn_v0014_pokemon_kakunaEntry | Spawn_v0014_pokemon_kakuna_normalEntry | Spawn_v0015_pokemon_beedrillEntry | Spawn_v0015_pokemon_beedrill_normalEntry | Spawn_v0016_pokemon_pidgeyEntry | Spawn_v0016_pokemon_pidgey_normalEntry | Spawn_v0017_pokemon_pidgeottoEntry | Spawn_v0017_pokemon_pidgeotto_normalEntry | Spawn_v0018_pokemon_pidgeotEntry | Spawn_v0018_pokemon_pidgeot_normalEntry | Spawn_v0019_pokemon_rattataEntry | Spawn_v0019_pokemon_rattata_alolaEntry | Spawn_v0019_pokemon_rattata_normalEntry | Spawn_v0020_pokemon_raticateEntry | Spawn_v0020_pokemon_raticate_alolaEntry | Spawn_v0020_pokemon_raticate_normalEntry | Spawn_v0021_pokemon_spearowEntry | Spawn_v0021_pokemon_spearow_normalEntry | Spawn_v0022_pokemon_fearowEntry | Spawn_v0022_pokemon_fearow_normalEntry | Spawn_v0023_pokemon_ekansEntry | Spawn_v0023_pokemon_ekans_normalEntry | Spawn_v0024_pokemon_arbokEntry | Spawn_v0024_pokemon_arbok_normalEntry | Spawn_v0025_pokemon_pikachuEntry | Spawn_v0025_pokemon_pikachu_adventure_hat_2020Entry | Spawn_v0025_pokemon_pikachu_bb_2026Entry | Spawn_v0025_pokemon_pikachu_costume_2020Entry | Spawn_v0025_pokemon_pikachu_flying_01Entry | Spawn_v0025_pokemon_pikachu_flying_02Entry | Spawn_v0025_pokemon_pikachu_flying_03Entry | Spawn_v0025_pokemon_pikachu_flying_04Entry | Spawn_v0025_pokemon_pikachu_flying_5th_annivEntry | Spawn_v0025_pokemon_pikachu_flying_okinawaEntry | Spawn_v0025_pokemon_pikachu_gofest_2022Entry | Spawn_v0025_pokemon_pikachu_gofest_2024_mtiaraEntry | Spawn_v0025_pokemon_pikachu_gofest_2024_stiaraEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_goggles_blueEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_goggles_redEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_goggles_yellowEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_blueEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_redEntry | Spawn_v0025_pokemon_pikachu_gofest_2025_monocle_yellowEntry | Spawn_v0025_pokemon_pikachu_horizonsEntry | Spawn_v0025_pokemon_pikachu_jejuEntry | Spawn_v0025_pokemon_pikachu_kariyushiEntry | Spawn_v0025_pokemon_pikachu_normalEntry | Spawn_v0025_pokemon_pikachu_summer_2023_aEntry | Spawn_v0025_pokemon_pikachu_summer_2023_bEntry | Spawn_v0025_pokemon_pikachu_summer_2023_cEntry | Spawn_v0025_pokemon_pikachu_summer_2023_dEntry | Spawn_v0025_pokemon_pikachu_summer_2023_eEntry | Spawn_v0025_pokemon_pikachu_tshirt_01Entry | Spawn_v0025_pokemon_pikachu_tshirt_02Entry | Spawn_v0025_pokemon_pikachu_tshirt_03Entry | Spawn_v0025_pokemon_pikachu_wcs_2022Entry | Spawn_v0025_pokemon_pikachu_wcs_2023Entry | Spawn_v0025_pokemon_pikachu_wcs_2024Entry | Spawn_v0025_pokemon_pikachu_wcs_2025Entry | Spawn_v0025_pokemon_pikachu_winter_2020Entry | Spawn_v0026_pokemon_raichuEntry | Spawn_v0026_pokemon_raichu_alolaEntry | Spawn_v0026_pokemon_raichu_normalEntry | Spawn_v0027_pokemon_sandshrewEntry | Spawn_v0027_pokemon_sandshrew_alolaEntry | Spawn_v0027_pokemon_sandshrew_normalEntry | Spawn_v0028_pokemon_sandslashEntry | Spawn_v0028_pokemon_sandslash_alolaEntry | Spawn_v0028_pokemon_sandslash_normalEntry | Spawn_v0035_pokemon_clefairyEntry | Spawn_v0035_pokemon_clefairy_normalEntry | Spawn_v0036_pokemon_clefableEntry | Spawn_v0036_pokemon_clefable_normalEntry | Spawn_v0037_pokemon_vulpixEntry | Spawn_v0037_pokemon_vulpix_alolaEntry | Spawn_v0037_pokemon_vulpix_normalEntry | Spawn_v0038_pokemon_ninetalesEntry | Spawn_v0038_pokemon_ninetales_alolaEntry | Spawn_v0038_pokemon_ninetales_normalEntry | Spawn_v0039_pokemon_jigglypuffEntry | Spawn_v0039_pokemon_jigglypuff_normalEntry | Spawn_v0040_pokemon_wigglytuffEntry | Spawn_v0040_pokemon_wigglytuff_normalEntry | Spawn_v0041_pokemon_zubatEntry | Spawn_v0041_pokemon_zubat_normalEntry | Spawn_v0042_pokemon_golbatEntry | Spawn_v0042_pokemon_golbat_normalEntry | Spawn_v0043_pokemon_oddishEntry | Spawn_v0043_pokemon_oddish_normalEntry | Spawn_v0044_pokemon_gloomEntry | Spawn_v0044_pokemon_gloom_normalEntry | Spawn_v0045_pokemon_vileplumeEntry | Spawn_v0045_pokemon_vileplume_normalEntry | Spawn_v0046_pokemon_parasEntry | Spawn_v0046_pokemon_paras_normalEntry | Spawn_v0047_pokemon_parasectEntry | Spawn_v0047_pokemon_parasect_normalEntry | Spawn_v0048_pokemon_venonatEntry | Spawn_v0048_pokemon_venonat_normalEntry | Spawn_v0049_pokemon_venomothEntry | Spawn_v0049_pokemon_venomoth_normalEntry | Spawn_v0050_pokemon_diglettEntry | Spawn_v0050_pokemon_diglett_alolaEntry | Spawn_v0050_pokemon_diglett_normalEntry | Spawn_v0051_pokemon_dugtrioEntry | Spawn_v0051_pokemon_dugtrio_alolaEntry | Spawn_v0051_pokemon_dugtrio_normalEntry | Spawn_v0052_pokemon_meowthEntry | Spawn_v0052_pokemon_meowth_alolaEntry | Spawn_v0052_pokemon_meowth_galarianEntry | Spawn_v0052_pokemon_meowth_normalEntry | Spawn_v0053_pokemon_persianEntry | Spawn_v0053_pokemon_persian_alolaEntry | Spawn_v0053_pokemon_persian_normalEntry | Spawn_v0054_pokemon_psyduckEntry | Spawn_v0054_pokemon_psyduck_normalEntry | Spawn_v0054_pokemon_psyduck_swim_2025Entry | Spawn_v0055_pokemon_golduckEntry | Spawn_v0055_pokemon_golduck_normalEntry | Spawn_v0056_pokemon_mankeyEntry | Spawn_v0056_pokemon_mankey_normalEntry | Spawn_v0057_pokemon_primeapeEntry | Spawn_v0057_pokemon_primeape_normalEntry | Spawn_v0058_pokemon_growlitheEntry | Spawn_v0058_pokemon_growlithe_hisuianEntry | Spawn_v0058_pokemon_growlithe_normalEntry | Spawn_v0059_pokemon_arcanineEntry | Spawn_v0059_pokemon_arcanine_hisuianEntry | Spawn_v0059_pokemon_arcanine_normalEntry | Spawn_v0060_pokemon_poliwagEntry | Spawn_v0060_pokemon_poliwag_normalEntry | Spawn_v0061_pokemon_poliwhirlEntry | Spawn_v0061_pokemon_poliwhirl_normalEntry | Spawn_v0062_pokemon_poliwrathEntry | Spawn_v0062_pokemon_poliwrath_normalEntry | Spawn_v0063_pokemon_abraEntry | Spawn_v0063_pokemon_abra_normalEntry | Spawn_v0064_pokemon_kadabraEntry | Spawn_v0064_pokemon_kadabra_normalEntry | Spawn_v0065_pokemon_alakazamEntry | Spawn_v0065_pokemon_alakazam_normalEntry | Spawn_v0066_pokemon_machopEntry | Spawn_v0066_pokemon_machop_normalEntry | Spawn_v0067_pokemon_machokeEntry | Spawn_v0067_pokemon_machoke_normalEntry | Spawn_v0068_pokemon_machampEntry | Spawn_v0068_pokemon_machamp_normalEntry | Spawn_v0069_pokemon_bellsproutEntry | Spawn_v0069_pokemon_bellsprout_normalEntry | Spawn_v0070_pokemon_weepinbellEntry | Spawn_v0070_pokemon_weepinbell_normalEntry | Spawn_v0071_pokemon_victreebelEntry | Spawn_v0071_pokemon_victreebel_normalEntry | Spawn_v0072_pokemon_tentacoolEntry | Spawn_v0072_pokemon_tentacool_normalEntry | Spawn_v0073_pokemon_tentacruelEntry | Spawn_v0073_pokemon_tentacruel_normalEntry | Spawn_v0074_pokemon_geodudeEntry | Spawn_v0074_pokemon_geodude_alolaEntry | Spawn_v0074_pokemon_geodude_normalEntry | Spawn_v0075_pokemon_gravelerEntry | Spawn_v0075_pokemon_graveler_alolaEntry | Spawn_v0075_pokemon_graveler_normalEntry | Spawn_v0076_pokemon_golemEntry | Spawn_v0076_pokemon_golem_alolaEntry | Spawn_v0076_pokemon_golem_normalEntry | Spawn_v0077_pokemon_ponytaEntry | Spawn_v0077_pokemon_ponyta_galarianEntry | Spawn_v0077_pokemon_ponyta_normalEntry | Spawn_v0078_pokemon_rapidashEntry | Spawn_v0078_pokemon_rapidash_galarianEntry | Spawn_v0078_pokemon_rapidash_normalEntry | Spawn_v0079_pokemon_slowpokeEntry | Spawn_v0079_pokemon_slowpoke_2020Entry | Spawn_v0079_pokemon_slowpoke_galarianEntry | Spawn_v0079_pokemon_slowpoke_normalEntry | Spawn_v0080_pokemon_slowbroEntry | Spawn_v0080_pokemon_slowbro_2021Entry | Spawn_v0080_pokemon_slowbro_galarianEntry | Spawn_v0080_pokemon_slowbro_normalEntry | Spawn_v0083_pokemon_farfetchdEntry | Spawn_v0083_pokemon_farfetchd_galarianEntry | Spawn_v0083_pokemon_farfetchd_normalEntry | Spawn_v0084_pokemon_doduoEntry | Spawn_v0084_pokemon_doduo_normalEntry | Spawn_v0085_pokemon_dodrioEntry | Spawn_v0085_pokemon_dodrio_normalEntry | Spawn_v0086_pokemon_seelEntry | Spawn_v0086_pokemon_seel_normalEntry | Spawn_v0087_pokemon_dewgongEntry | Spawn_v0087_pokemon_dewgong_normalEntry | Spawn_v0088_pokemon_grimerEntry | Spawn_v0088_pokemon_grimer_alolaEntry | Spawn_v0088_pokemon_grimer_normalEntry | Spawn_v0089_pokemon_mukEntry | Spawn_v0089_pokemon_muk_alolaEntry | Spawn_v0089_pokemon_muk_normalEntry | Spawn_v0090_pokemon_shellderEntry | Spawn_v0090_pokemon_shellder_normalEntry | Spawn_v0091_pokemon_cloysterEntry | Spawn_v0091_pokemon_cloyster_normalEntry | Spawn_v0092_pokemon_gastlyEntry | Spawn_v0093_pokemon_haunterEntry | Spawn_v0094_pokemon_gengarEntry | Spawn_v0094_pokemon_gengar_costume_2020Entry | Spawn_v0094_pokemon_gengar_normalEntry | Spawn_v0095_pokemon_onixEntry | Spawn_v0095_pokemon_onix_normalEntry | Spawn_v0096_pokemon_drowzeeEntry | Spawn_v0096_pokemon_drowzee_normalEntry | Spawn_v0097_pokemon_hypnoEntry | Spawn_v0097_pokemon_hypno_normalEntry | Spawn_v0098_pokemon_krabbyEntry | Spawn_v0098_pokemon_krabby_normalEntry | Spawn_v0099_pokemon_kinglerEntry | Spawn_v0099_pokemon_kingler_normalEntry | Spawn_v0102_pokemon_exeggcuteEntry | Spawn_v0102_pokemon_exeggcute_normalEntry | Spawn_v0103_pokemon_exeggutorEntry | Spawn_v0103_pokemon_exeggutor_alolaEntry | Spawn_v0103_pokemon_exeggutor_normalEntry | Spawn_v0104_pokemon_cuboneEntry | Spawn_v0104_pokemon_cubone_normalEntry | Spawn_v0105_pokemon_marowakEntry | Spawn_v0105_pokemon_marowak_alolaEntry | Spawn_v0105_pokemon_marowak_normalEntry | Spawn_v0108_pokemon_lickitungEntry | Spawn_v0108_pokemon_lickitung_normalEntry | Spawn_v0109_pokemon_koffingEntry | Spawn_v0109_pokemon_koffing_normalEntry | Spawn_v0110_pokemon_weezingEntry | Spawn_v0110_pokemon_weezing_galarianEntry | Spawn_v0110_pokemon_weezing_normalEntry | Spawn_v0111_pokemon_rhyhornEntry | Spawn_v0111_pokemon_rhyhorn_normalEntry | Spawn_v0112_pokemon_rhydonEntry | Spawn_v0112_pokemon_rhydon_normalEntry | Spawn_v0114_pokemon_tangelaEntry | Spawn_v0114_pokemon_tangela_normalEntry | Spawn_v0116_pokemon_horseaEntry | Spawn_v0116_pokemon_horsea_normalEntry | Spawn_v0117_pokemon_seadraEntry | Spawn_v0117_pokemon_seadra_normalEntry | Spawn_v0118_pokemon_goldeenEntry | Spawn_v0118_pokemon_goldeen_normalEntry | Spawn_v0119_pokemon_seakingEntry | Spawn_v0119_pokemon_seaking_normalEntry | Spawn_v0122_pokemon_mr_mimeEntry | Spawn_v0122_pokemon_mr_mime_galarianEntry | Spawn_v0122_pokemon_mr_mime_normalEntry | Spawn_v0123_pokemon_scytherEntry | Spawn_v0123_pokemon_scyther_normalEntry | Spawn_v0125_pokemon_electabuzzEntry | Spawn_v0125_pokemon_electabuzz_normalEntry | Spawn_v0126_pokemon_magmarEntry | Spawn_v0126_pokemon_magmar_normalEntry | Spawn_v0127_pokemon_pinsirEntry | Spawn_v0127_pokemon_pinsir_normalEntry | Spawn_v0129_pokemon_magikarpEntry | Spawn_v0129_pokemon_magikarp_normalEntry | Spawn_v0130_pokemon_gyaradosEntry | Spawn_v0130_pokemon_gyarados_normalEntry | Spawn_v0131_pokemon_laprasEntry | Spawn_v0131_pokemon_lapras_costume_2020Entry | Spawn_v0131_pokemon_lapras_normalEntry | Spawn_v0133_pokemon_eeveeEntry | Spawn_v0133_pokemon_eevee_gofest_2024_mtiaraEntry | Spawn_v0133_pokemon_eevee_gofest_2024_stiaraEntry | Spawn_v0133_pokemon_eevee_normalEntry | Spawn_v0134_pokemon_vaporeonEntry | Spawn_v0134_pokemon_vaporeon_normalEntry | Spawn_v0135_pokemon_jolteonEntry | Spawn_v0135_pokemon_jolteon_normalEntry | Spawn_v0136_pokemon_flareonEntry | Spawn_v0136_pokemon_flareon_normalEntry | Spawn_v0138_pokemon_omanyteEntry | Spawn_v0138_pokemon_omanyte_normalEntry | Spawn_v0139_pokemon_omastarEntry | Spawn_v0139_pokemon_omastar_normalEntry | Spawn_v0140_pokemon_kabutoEntry | Spawn_v0140_pokemon_kabuto_normalEntry | Spawn_v0141_pokemon_kabutopsEntry | Spawn_v0141_pokemon_kabutops_normalEntry | Spawn_v0142_pokemon_aerodactylEntry | Spawn_v0142_pokemon_aerodactyl_normalEntry | Spawn_v0142_pokemon_aerodactyl_summer_2023Entry | Spawn_v0143_pokemon_snorlaxEntry | Spawn_v0143_pokemon_snorlax_normalEntry | Spawn_v0147_pokemon_dratiniEntry | Spawn_v0147_pokemon_dratini_normalEntry | Spawn_v0148_pokemon_dragonairEntry | Spawn_v0148_pokemon_dragonair_normalEntry | Spawn_v0149_pokemon_dragoniteEntry | Spawn_v0149_pokemon_dragonite_normalEntry | PokemonGenderCaterpieGofestT | PokemonGenderPikachuGofestTCapBlue | PokemonGenderPikachuGofestTCapRed | PokemonGenderPikachuGofestTCapYellow | Spawn_v0010_pokemon_caterpie_normalEntry | Spawn_v0011_pokemon_metapod_normalEntry | Spawn_v0012_pokemon_butterfree_normalEntry | Spawn_v0025_pokemon_pikachu_gotour_2024_aEntry | Spawn_v0025_pokemon_pikachu_gotour_2024_a_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2024_bEntry | Spawn_v0025_pokemon_pikachu_gotour_2024_b_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2025_aEntry | Spawn_v0025_pokemon_pikachu_gotour_2025_a_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2025_bEntry | Spawn_v0025_pokemon_pikachu_gotour_2025_b_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2026_aEntry | Spawn_v0025_pokemon_pikachu_gotour_2026_a_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2026_bEntry | Spawn_v0025_pokemon_pikachu_gotour_2026_b_02Entry | Spawn_v0025_pokemon_pikachu_gotour_2026_cEntry | Spawn_v0025_pokemon_pikachu_gotour_2026_c_02Entry | Spawn_v0092_pokemon_gastly_normalEntry | Spawn_v0093_pokemon_haunter_normalEntry | Spawn_v0143_pokemon_snorlax_wildarea_2024Entry | Spawn_v0025_pokemon_pikachu_copy_2019Entry | Spawn_v0025_pokemon_pikachu_fall_2019Entry | Spawn_v0025_pokemon_pikachu_kurtaEntry | Spawn_v0032_pokemon_nidoranEntry | Spawn_v0032_pokemon_nidoran_normalEntry | Spawn_v0033_pokemon_nidorinoEntry | Spawn_v0033_pokemon_nidorino_normalEntry | Spawn_v0034_pokemon_nidokingEntry | Spawn_v0034_pokemon_nidoking_normalEntry | Spawn_v0106_pokemon_hitmonleeEntry | Spawn_v0106_pokemon_hitmonlee_normalEntry | Spawn_v0107_pokemon_hitmonchanEntry | Spawn_v0107_pokemon_hitmonchan_normalEntry | Spawn_v0128_pokemon_taurosEntry | Spawn_v0025_pokemon_pikachu_diwali_2024Entry | Spawn_v0025_pokemon_pikachu_doctorEntry | Spawn_v0025_pokemon_pikachu_vs_2019Entry | Spawn_v0029_pokemon_nidoranEntry | Spawn_v0029_pokemon_nidoran_normalEntry | Spawn_v0030_pokemon_nidorinaEntry | Spawn_v0030_pokemon_nidorina_normalEntry | Spawn_v0031_pokemon_nidoqueenEntry | Spawn_v0031_pokemon_nidoqueen_normalEntry | Spawn_v0113_pokemon_chanseyEntry | Spawn_v0115_pokemon_kangaskhanEntry | Spawn_v0115_pokemon_kangaskhan_normalEntry | Spawn_v0124_pokemon_jynxEntry | Spawn_v0124_pokemon_jynx_normalEntry | PokemonGenderPikachuPopStar | PokemonGenderPikachuRockStar | PokemonGenderChanseyNormal | PokemonGenderMagnemite | PokemonGenderMagnemiteNormal | PokemonGenderMagneton | PokemonGenderMagnetonNormal | PokemonGenderVoltorb | PokemonGenderVoltorbHisuian | PokemonGenderVoltorbNormal | PokemonGenderElectrode | PokemonGenderElectrodeHisuian | PokemonGenderElectrodeNormal | PokemonGenderStaryu | PokemonGenderStaryuNormal | PokemonGenderStarmie | PokemonGenderStarmieNormal | PokemonGenderDitto | PokemonGenderDittoNormal | PokemonGenderDittoSpringTA | PokemonGenderDittoSpringTB | PokemonGenderPorygon | PokemonGenderPorygonNormal | PokemonGenderArticuno | PokemonGenderArticunoGalarian | PokemonGenderArticunoNormal | PokemonGenderZapdos | PokemonGenderZapdosGalarian | PokemonGenderZapdosNormal | PokemonGenderMoltres | PokemonGenderMoltresGalarian | PokemonGenderMoltresNormal | PokemonGenderMewtwo | PokemonGenderMewtwoA | PokemonGenderMewtwoNormal | PokemonGenderMew | PokemonGenderMewNormal | PokemonGenderTaurosNormal | PokemonGenderTaurosPaldeaAqua | PokemonGenderTaurosPaldeaBlaze | PokemonGenderTaurosPaldeaCombat;

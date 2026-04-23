@@ -5,332 +5,11 @@
 // Filters: all
 // Entries emitted: 237
 
-export interface V0650_pokemon_chespindatapokemonsettingscamera {
+import type { PokemonSettingsShared1002, PokemonSettingsShared1003, PokemonSettingsShared1026, PokemonSettingsShared1027, PokemonSettingsShared1051, PokemonSettingsShared1054, PokemonSettingsShared942, PokemonSettingsShared943, PokemonSettingsShared944, PokemonSettingsShared945, PokemonSettingsShared946, PokemonSettingsShared947, PokemonSettingsShared964, PokemonSettingsShared965, PokemonSettingsShared967, PokemonSettingsShared969, PokemonSettingsShared973, PokemonSettingsShared975, PokemonSettingsShared977, PokemonSettingsShared979, PokemonSettingsShared989, PokemonSettingsShared993, PokemonSettingsShared999 } from "./shared.generated";
+
+export interface V0654_pokemon_braixendatapokemonsettingscamera {
   cylinderHeightM: number;
   cylinderRadiusM: number;
-}
-export interface V0650_pokemon_chespindatapokemonsettingsencounter {
-  attackProbability: number;
-  attackTimerS: number;
-  cameraDistance: number;
-  collisionHeadRadiusM: number;
-  collisionHeightM: number;
-  collisionRadiusM: number;
-  dodgeDistance: number;
-  dodgeDurationS: number;
-  dodgeProbability: number;
-  jumpTimeS: number;
-  maxPokemonActionFrequencyS: number;
-  minPokemonActionFrequencyS: number;
-  movementTimerS: number;
-  movementType: string;
-  shadowAttackProbability: number;
-  shadowBaseCaptureRate: number;
-  shadowDodgeProbability: number;
-}
-export interface V0650_pokemon_chespindatapokemonsettingsevolutionbranchitem {
-  candyCost: number;
-  candyCostPurified: number;
-  evolution: string;
-}
-export interface V0650_pokemon_chespindatapokemonsettingsibfc {
-
-}
-export interface V0650_pokemon_chespindatapokemonsettingsshadow {
-  purificationCandyNeeded: number;
-  purificationStardustNeeded: number;
-  purifiedChargeMove: string;
-  shadowChargeMove: string;
-}
-export interface V0650_pokemon_chespindatapokemonsettingsstats {
-  baseAttack: number;
-  baseDefense: number;
-  baseStamina: number;
-}
-export interface V0650_pokemon_chespindatapokemonsettingsthirdmove {
-  candyToUnlock: number;
-  stardustToUnlock: number;
-}
-export interface V0650_pokemon_chespindatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0650_pokemon_chespindatapokemonsettingsencounter;
-  evolutionBranch: (V0650_pokemon_chespindatapokemonsettingsevolutionbranchitem)[];
-  familyId: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0650_pokemon_chespindata {
-  pokemonSettings: V0650_pokemon_chespindatapokemonsettings;
-  templateId: string;
-}
-export interface V0650_pokemon_chespinEntry {
-  templateId: "V0650_POKEMON_CHESPIN";
-  data: V0650_pokemon_chespindata;
-}
-export interface V0650_pokemon_chespin_normaldatapokemonsettingsevolutionbranchitem {
-  candyCost: number;
-  candyCostPurified: number;
-  evolution: string;
-  form: string;
-}
-export interface V0650_pokemon_chespin_normaldatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0650_pokemon_chespindatapokemonsettingsencounter;
-  evolutionBranch: (V0650_pokemon_chespin_normaldatapokemonsettingsevolutionbranchitem)[];
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0650_pokemon_chespin_normaldata {
-  pokemonSettings: V0650_pokemon_chespin_normaldatapokemonsettings;
-  templateId: string;
-}
-export interface V0650_pokemon_chespin_normalEntry {
-  templateId: "V0650_POKEMON_CHESPIN_NORMAL";
-  data: V0650_pokemon_chespin_normaldata;
-}
-export interface V0651_pokemon_quilladindatapokemonsettingsencounter {
-  attackProbability: number;
-  attackTimerS: number;
-  bonusCandyCaptureReward: number;
-  bonusStardustCaptureReward: number;
-  bonusXlCandyCaptureReward: number;
-  cameraDistance: number;
-  collisionHeadRadiusM: number;
-  collisionHeightM: number;
-  collisionRadiusM: number;
-  dodgeDistance: number;
-  dodgeDurationS: number;
-  dodgeProbability: number;
-  jumpTimeS: number;
-  maxPokemonActionFrequencyS: number;
-  minPokemonActionFrequencyS: number;
-  movementTimerS: number;
-  movementType: string;
-  shadowAttackProbability: number;
-  shadowBaseCaptureRate: number;
-  shadowDodgeProbability: number;
-}
-export interface V0651_pokemon_quilladindatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0651_pokemon_quilladindatapokemonsettingsencounter;
-  evolutionBranch: (V0650_pokemon_chespindatapokemonsettingsevolutionbranchitem)[];
-  familyId: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0651_pokemon_quilladindata {
-  pokemonSettings: V0651_pokemon_quilladindatapokemonsettings;
-  templateId: string;
-}
-export interface V0651_pokemon_quilladinEntry {
-  templateId: "V0651_POKEMON_QUILLADIN";
-  data: V0651_pokemon_quilladindata;
-}
-export interface V0651_pokemon_quilladin_normaldatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0651_pokemon_quilladindatapokemonsettingsencounter;
-  evolutionBranch: (V0650_pokemon_chespin_normaldatapokemonsettingsevolutionbranchitem)[];
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0651_pokemon_quilladin_normaldata {
-  pokemonSettings: V0651_pokemon_quilladin_normaldatapokemonsettings;
-  templateId: string;
-}
-export interface V0651_pokemon_quilladin_normalEntry {
-  templateId: "V0651_POKEMON_QUILLADIN_NORMAL";
-  data: V0651_pokemon_quilladin_normaldata;
-}
-export interface V0652_pokemon_chesnaughtdatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyScale: number;
-  buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  eliteCinematicMove: (string)[];
-  encounter: V0651_pokemon_quilladindatapokemonsettingsencounter;
-  familyId: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  weightStdDev: number;
-}
-export interface V0652_pokemon_chesnaughtdata {
-  pokemonSettings: V0652_pokemon_chesnaughtdatapokemonsettings;
-  templateId: string;
-}
-export interface V0652_pokemon_chesnaughtEntry {
-  templateId: "V0652_POKEMON_CHESNAUGHT";
-  data: V0652_pokemon_chesnaughtdata;
-}
-export interface V0652_pokemon_chesnaught_normaldatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyScale: number;
-  buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  eliteCinematicMove: (string)[];
-  encounter: V0651_pokemon_quilladindatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  weightStdDev: number;
-}
-export interface V0652_pokemon_chesnaught_normaldata {
-  pokemonSettings: V0652_pokemon_chesnaught_normaldatapokemonsettings;
-  templateId: string;
-}
-export interface V0652_pokemon_chesnaught_normalEntry {
-  templateId: "V0652_POKEMON_CHESNAUGHT_NORMAL";
-  data: V0652_pokemon_chesnaught_normaldata;
-}
-export interface V0653_pokemon_fennekinEntry {
-  templateId: "V0653_POKEMON_FENNEKIN";
-  data: V0650_pokemon_chespindata;
-}
-export interface V0653_pokemon_fennekin_normalEntry {
-  templateId: "V0653_POKEMON_FENNEKIN_NORMAL";
-  data: V0650_pokemon_chespin_normaldata;
 }
 export interface V0654_pokemon_braixendatapokemonsettingsencounter {
   attackProbability: number;
@@ -352,6 +31,29 @@ export interface V0654_pokemon_braixendatapokemonsettingsencounter {
   shadowBaseCaptureRate: number;
   shadowDodgeProbability: number;
 }
+export interface V0654_pokemon_braixendatapokemonsettingsevolutionbranchitem {
+  candyCost: number;
+  candyCostPurified: number;
+  evolution: string;
+}
+export interface V0654_pokemon_braixendatapokemonsettingsibfc {
+
+}
+export interface V0654_pokemon_braixendatapokemonsettingsshadow {
+  purificationCandyNeeded: number;
+  purificationStardustNeeded: number;
+  purifiedChargeMove: string;
+  shadowChargeMove: string;
+}
+export interface V0654_pokemon_braixendatapokemonsettingsstats {
+  baseAttack: number;
+  baseDefense: number;
+  baseStamina: number;
+}
+export interface V0654_pokemon_braixendatapokemonsettingsthirdmove {
+  candyToUnlock: number;
+  stardustToUnlock: number;
+}
 export interface V0654_pokemon_braixendatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
@@ -359,13 +61,13 @@ export interface V0654_pokemon_braixendatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0654_pokemon_braixendatapokemonsettingsencounter;
-  evolutionBranch: (V0650_pokemon_chespindatapokemonsettingsevolutionbranchitem)[];
+  evolutionBranch: (V0654_pokemon_braixendatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -378,9 +80,9 @@ export interface V0654_pokemon_braixendatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -392,6 +94,12 @@ export interface V0654_pokemon_braixenEntry {
   templateId: "V0654_POKEMON_BRAIXEN";
   data: V0654_pokemon_braixendata;
 }
+export interface V0654_pokemon_braixen_normaldatapokemonsettingsevolutionbranchitem {
+  candyCost: number;
+  candyCostPurified: number;
+  evolution: string;
+  form: string;
+}
 export interface V0654_pokemon_braixen_normaldatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
@@ -399,14 +107,14 @@ export interface V0654_pokemon_braixen_normaldatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0654_pokemon_braixendatapokemonsettingsencounter;
-  evolutionBranch: (V0650_pokemon_chespin_normaldatapokemonsettingsevolutionbranchitem)[];
+  evolutionBranch: (V0654_pokemon_braixen_normaldatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -419,9 +127,9 @@ export interface V0654_pokemon_braixen_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -433,13 +141,24 @@ export interface V0654_pokemon_braixen_normalEntry {
   templateId: "V0654_POKEMON_BRAIXEN_NORMAL";
   data: V0654_pokemon_braixen_normaldata;
 }
-export interface V0655_pokemon_delphoxEntry {
-  templateId: "V0655_POKEMON_DELPHOX";
-  data: V0652_pokemon_chesnaughtdata;
-}
-export interface V0655_pokemon_delphox_normalEntry {
-  templateId: "V0655_POKEMON_DELPHOX_NORMAL";
-  data: V0652_pokemon_chesnaught_normaldata;
+export interface V0656_pokemon_froakiedatapokemonsettingsencounter {
+  attackProbability: number;
+  attackTimerS: number;
+  cameraDistance: number;
+  collisionHeadRadiusM: number;
+  collisionHeightM: number;
+  collisionRadiusM: number;
+  dodgeDistance: number;
+  dodgeDurationS: number;
+  dodgeProbability: number;
+  jumpTimeS: number;
+  maxPokemonActionFrequencyS: number;
+  minPokemonActionFrequencyS: number;
+  movementTimerS: number;
+  movementType: string;
+  shadowAttackProbability: number;
+  shadowBaseCaptureRate: number;
+  shadowDodgeProbability: number;
 }
 export interface V0656_pokemon_froakiedatapokemonsettings {
   animationTime: (number)[];
@@ -449,13 +168,13 @@ export interface V0656_pokemon_froakiedatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0650_pokemon_chespindatapokemonsettingsencounter;
-  evolutionBranch: (V0650_pokemon_chespindatapokemonsettingsevolutionbranchitem)[];
+  encounter: V0656_pokemon_froakiedatapokemonsettingsencounter;
+  evolutionBranch: (V0654_pokemon_braixendatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -467,9 +186,9 @@ export interface V0656_pokemon_froakiedatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -489,14 +208,14 @@ export interface V0656_pokemon_froakie_normaldatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0650_pokemon_chespindatapokemonsettingsencounter;
-  evolutionBranch: (V0650_pokemon_chespin_normaldatapokemonsettingsevolutionbranchitem)[];
+  encounter: V0656_pokemon_froakiedatapokemonsettingsencounter;
+  evolutionBranch: (V0654_pokemon_braixen_normaldatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -508,9 +227,9 @@ export interface V0656_pokemon_froakie_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -522,13 +241,27 @@ export interface V0656_pokemon_froakie_normalEntry {
   templateId: "V0656_POKEMON_FROAKIE_NORMAL";
   data: V0656_pokemon_froakie_normaldata;
 }
-export interface V0657_pokemon_frogadierEntry {
-  templateId: "V0657_POKEMON_FROGADIER";
-  data: V0651_pokemon_quilladindata;
-}
-export interface V0657_pokemon_frogadier_normalEntry {
-  templateId: "V0657_POKEMON_FROGADIER_NORMAL";
-  data: V0651_pokemon_quilladin_normaldata;
+export interface V0658_pokemon_greninjadatapokemonsettingsencounter {
+  attackProbability: number;
+  attackTimerS: number;
+  bonusCandyCaptureReward: number;
+  bonusStardustCaptureReward: number;
+  bonusXlCandyCaptureReward: number;
+  cameraDistance: number;
+  collisionHeadRadiusM: number;
+  collisionHeightM: number;
+  collisionRadiusM: number;
+  dodgeDistance: number;
+  dodgeDurationS: number;
+  dodgeProbability: number;
+  jumpTimeS: number;
+  maxPokemonActionFrequencyS: number;
+  minPokemonActionFrequencyS: number;
+  movementTimerS: number;
+  movementType: string;
+  shadowAttackProbability: number;
+  shadowBaseCaptureRate: number;
+  shadowDodgeProbability: number;
 }
 export interface V0658_pokemon_greninjadatapokemonsettings {
   animationTime: (number)[];
@@ -538,13 +271,13 @@ export interface V0658_pokemon_greninjadatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddyScale: number;
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   eliteCinematicMove: (string)[];
-  encounter: V0651_pokemon_quilladindatapokemonsettingsencounter;
+  encounter: V0658_pokemon_greninjadatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -558,9 +291,9 @@ export interface V0658_pokemon_greninjadatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -581,14 +314,14 @@ export interface V0658_pokemon_greninja_normaldatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddyScale: number;
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   eliteCinematicMove: (string)[];
-  encounter: V0651_pokemon_quilladindatapokemonsettingsencounter;
+  encounter: V0658_pokemon_greninjadatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -602,9 +335,9 @@ export interface V0658_pokemon_greninja_normaldatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -641,13 +374,13 @@ export interface V0659_pokemon_bunnelbydatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0659_pokemon_bunnelbydatapokemonsettingsencounter;
-  evolutionBranch: (V0650_pokemon_chespindatapokemonsettingsevolutionbranchitem)[];
+  evolutionBranch: (V0654_pokemon_braixendatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -659,9 +392,9 @@ export interface V0659_pokemon_bunnelbydatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -680,14 +413,14 @@ export interface V0659_pokemon_bunnelby_normaldatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0659_pokemon_bunnelbydatapokemonsettingsencounter;
-  evolutionBranch: (V0650_pokemon_chespin_normaldatapokemonsettingsevolutionbranchitem)[];
+  evolutionBranch: (V0654_pokemon_braixen_normaldatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -699,9 +432,9 @@ export interface V0659_pokemon_bunnelby_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -721,12 +454,12 @@ export interface V0660_pokemon_diggersbydatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddyScale: number;
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0651_pokemon_quilladindatapokemonsettingsencounter;
+  encounter: V0658_pokemon_greninjadatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -739,9 +472,9 @@ export interface V0660_pokemon_diggersbydatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -762,13 +495,13 @@ export interface V0660_pokemon_diggersby_normaldatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddyScale: number;
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0651_pokemon_quilladindatapokemonsettingsencounter;
+  encounter: V0658_pokemon_greninjadatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -781,9 +514,9 @@ export interface V0660_pokemon_diggersby_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -819,13 +552,13 @@ export interface V0661_pokemon_fletchlingdatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0661_pokemon_fletchlingdatapokemonsettingsencounter;
-  evolutionBranch: (V0650_pokemon_chespindatapokemonsettingsevolutionbranchitem)[];
+  evolutionBranch: (V0654_pokemon_braixendatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -836,9 +569,9 @@ export interface V0661_pokemon_fletchlingdatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -857,14 +590,14 @@ export interface V0661_pokemon_fletchling_normaldatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0661_pokemon_fletchlingdatapokemonsettingsencounter;
-  evolutionBranch: (V0650_pokemon_chespin_normaldatapokemonsettingsevolutionbranchitem)[];
+  evolutionBranch: (V0654_pokemon_braixen_normaldatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -875,9 +608,9 @@ export interface V0661_pokemon_fletchling_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -898,13 +631,13 @@ export interface V0662_pokemon_fletchinderdatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddyScale: number;
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0651_pokemon_quilladindatapokemonsettingsencounter;
-  evolutionBranch: (V0650_pokemon_chespindatapokemonsettingsevolutionbranchitem)[];
+  encounter: V0658_pokemon_greninjadatapokemonsettingsencounter;
+  evolutionBranch: (V0654_pokemon_braixendatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   irisPhotoEmote1: string;
   isDeployable: boolean;
   isTradable: boolean;
@@ -918,9 +651,9 @@ export interface V0662_pokemon_fletchinderdatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   useIrisFlyingPlacement: boolean;
@@ -942,14 +675,14 @@ export interface V0662_pokemon_fletchinder_normaldatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddyScale: number;
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0651_pokemon_quilladindatapokemonsettingsencounter;
-  evolutionBranch: (V0650_pokemon_chespin_normaldatapokemonsettingsevolutionbranchitem)[];
+  encounter: V0658_pokemon_greninjadatapokemonsettingsencounter;
+  evolutionBranch: (V0654_pokemon_braixen_normaldatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   irisPhotoEmote1: string;
   isDeployable: boolean;
   isTradable: boolean;
@@ -963,9 +696,9 @@ export interface V0662_pokemon_fletchinder_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   useIrisFlyingPlacement: boolean;
@@ -987,13 +720,13 @@ export interface V0663_pokemon_talonflamedatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddyScale: number;
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   eliteQuickMove: (string)[];
-  encounter: V0651_pokemon_quilladindatapokemonsettingsencounter;
+  encounter: V0658_pokemon_greninjadatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   irisPhotoEmote1: string;
   isDeployable: boolean;
   isTradable: boolean;
@@ -1007,9 +740,9 @@ export interface V0663_pokemon_talonflamedatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   useIrisFlyingPlacement: boolean;
@@ -1031,14 +764,14 @@ export interface V0663_pokemon_talonflame_normaldatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddyScale: number;
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   eliteQuickMove: (string)[];
-  encounter: V0651_pokemon_quilladindatapokemonsettingsencounter;
+  encounter: V0658_pokemon_greninjadatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   irisPhotoEmote1: string;
   isDeployable: boolean;
   isTradable: boolean;
@@ -1052,9 +785,9 @@ export interface V0663_pokemon_talonflame_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   useIrisFlyingPlacement: boolean;
@@ -1067,174 +800,6 @@ export interface V0663_pokemon_talonflame_normaldata {
 export interface V0663_pokemon_talonflame_normalEntry {
   templateId: "V0663_POKEMON_TALONFLAME_NORMAL";
   data: V0663_pokemon_talonflame_normaldata;
-}
-export interface V0664_pokemon_scatterbugdatapokemonsettingsencounter {
-  attackProbability: number;
-  attackTimerS: number;
-  cameraDistance: number;
-  collisionHeadRadiusM: number;
-  collisionHeightM: number;
-  collisionRadiusM: number;
-  dodgeProbability: number;
-  jumpTimeS: number;
-  maxPokemonActionFrequencyS: number;
-  minPokemonActionFrequencyS: number;
-  movementTimerS: number;
-  movementType: string;
-}
-export interface V0664_pokemon_scatterbugdatapokemonsettingsevolutionbranchitem {
-  candyCost: number;
-  evolution: string;
-}
-export interface V0664_pokemon_scatterbugdatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbugdatapokemonsettingsevolutionbranchitem)[];
-  familyId: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0664_pokemon_scatterbugdata {
-  pokemonSettings: V0664_pokemon_scatterbugdatapokemonsettings;
-  templateId: string;
-}
-export interface V0664_pokemon_scatterbugEntry {
-  templateId: "V0664_POKEMON_SCATTERBUG";
-  data: V0664_pokemon_scatterbugdata;
-}
-export interface V0664_pokemon_scatterbug_archipelagodatapokemonsettingsevolutionbranchitem {
-  candyCost: number;
-  evolution: string;
-  form: string;
-}
-export interface V0664_pokemon_scatterbug_archipelagodatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbug_archipelagodatapokemonsettingsevolutionbranchitem)[];
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0664_pokemon_scatterbug_archipelagodata {
-  pokemonSettings: V0664_pokemon_scatterbug_archipelagodatapokemonsettings;
-  templateId: string;
-}
-export interface V0664_pokemon_scatterbug_archipelagoEntry {
-  templateId: "V0664_POKEMON_SCATTERBUG_ARCHIPELAGO";
-  data: V0664_pokemon_scatterbug_archipelagodata;
-}
-export interface V0664_pokemon_scatterbug_continentalEntry {
-  templateId: "V0664_POKEMON_SCATTERBUG_CONTINENTAL";
-  data: V0664_pokemon_scatterbug_archipelagodata;
-}
-export interface V0664_pokemon_scatterbug_elegantEntry {
-  templateId: "V0664_POKEMON_SCATTERBUG_ELEGANT";
-  data: V0664_pokemon_scatterbug_archipelagodata;
-}
-export interface V0664_pokemon_scatterbug_fancyEntry {
-  templateId: "V0664_POKEMON_SCATTERBUG_FANCY";
-  data: V0664_pokemon_scatterbug_archipelagodata;
-}
-export interface V0664_pokemon_scatterbug_gardenEntry {
-  templateId: "V0664_POKEMON_SCATTERBUG_GARDEN";
-  data: V0664_pokemon_scatterbug_archipelagodata;
-}
-export interface V0664_pokemon_scatterbug_high_plainsEntry {
-  templateId: "V0664_POKEMON_SCATTERBUG_HIGH_PLAINS";
-  data: V0664_pokemon_scatterbug_archipelagodata;
-}
-export interface V0664_pokemon_scatterbug_icy_snowEntry {
-  templateId: "V0664_POKEMON_SCATTERBUG_ICY_SNOW";
-  data: V0664_pokemon_scatterbug_archipelagodata;
-}
-export interface V0664_pokemon_scatterbug_jungleEntry {
-  templateId: "V0664_POKEMON_SCATTERBUG_JUNGLE";
-  data: V0664_pokemon_scatterbug_archipelagodata;
-}
-export interface V0664_pokemon_scatterbug_marineEntry {
-  templateId: "V0664_POKEMON_SCATTERBUG_MARINE";
-  data: V0664_pokemon_scatterbug_archipelagodata;
-}
-export interface V0664_pokemon_scatterbug_meadowEntry {
-  templateId: "V0664_POKEMON_SCATTERBUG_MEADOW";
-  data: V0664_pokemon_scatterbug_archipelagodata;
-}
-export interface V0664_pokemon_scatterbug_modernEntry {
-  templateId: "V0664_POKEMON_SCATTERBUG_MODERN";
-  data: V0664_pokemon_scatterbug_archipelagodata;
-}
-export interface V0664_pokemon_scatterbug_monsoonEntry {
-  templateId: "V0664_POKEMON_SCATTERBUG_MONSOON";
-  data: V0664_pokemon_scatterbug_archipelagodata;
-}
-export interface V0664_pokemon_scatterbug_oceanEntry {
-  templateId: "V0664_POKEMON_SCATTERBUG_OCEAN";
-  data: V0664_pokemon_scatterbug_archipelagodata;
-}
-export interface V0664_pokemon_scatterbug_pokeballEntry {
-  templateId: "V0664_POKEMON_SCATTERBUG_POKEBALL";
-  data: V0664_pokemon_scatterbug_archipelagodata;
-}
-export interface V0664_pokemon_scatterbug_polarEntry {
-  templateId: "V0664_POKEMON_SCATTERBUG_POLAR";
-  data: V0664_pokemon_scatterbug_archipelagodata;
-}
-export interface V0664_pokemon_scatterbug_riverEntry {
-  templateId: "V0664_POKEMON_SCATTERBUG_RIVER";
-  data: V0664_pokemon_scatterbug_archipelagodata;
-}
-export interface V0664_pokemon_scatterbug_sandstormEntry {
-  templateId: "V0664_POKEMON_SCATTERBUG_SANDSTORM";
-  data: V0664_pokemon_scatterbug_archipelagodata;
-}
-export interface V0664_pokemon_scatterbug_savannaEntry {
-  templateId: "V0664_POKEMON_SCATTERBUG_SAVANNA";
-  data: V0664_pokemon_scatterbug_archipelagodata;
-}
-export interface V0664_pokemon_scatterbug_sunEntry {
-  templateId: "V0664_POKEMON_SCATTERBUG_SUN";
-  data: V0664_pokemon_scatterbug_archipelagodata;
-}
-export interface V0664_pokemon_scatterbug_tundraEntry {
-  templateId: "V0664_POKEMON_SCATTERBUG_TUNDRA";
-  data: V0664_pokemon_scatterbug_archipelagodata;
 }
 export interface V0665_pokemon_spewpadatapokemonsettingsencounter {
   attackProbability: number;
@@ -1251,16 +816,20 @@ export interface V0665_pokemon_spewpadatapokemonsettingsencounter {
   minPokemonActionFrequencyS: number;
   movementTimerS: number;
 }
+export interface V0665_pokemon_spewpadatapokemonsettingsevolutionbranchitem {
+  candyCost: number;
+  evolution: string;
+}
 export interface V0665_pokemon_spewpadatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0665_pokemon_spewpadatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbugdatapokemonsettingsevolutionbranchitem)[];
+  evolutionBranch: (V0665_pokemon_spewpadatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -1273,8 +842,8 @@ export interface V0665_pokemon_spewpadatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -1285,118 +854,6 @@ export interface V0665_pokemon_spewpadata {
 export interface V0665_pokemon_spewpaEntry {
   templateId: "V0665_POKEMON_SPEWPA";
   data: V0665_pokemon_spewpadata;
-}
-export interface V0665_pokemon_spewpa_archipelagodatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0665_pokemon_spewpadatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbug_archipelagodatapokemonsettingsevolutionbranchitem)[];
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0665_pokemon_spewpa_archipelagodata {
-  pokemonSettings: V0665_pokemon_spewpa_archipelagodatapokemonsettings;
-  templateId: string;
-}
-export interface V0665_pokemon_spewpa_archipelagoEntry {
-  templateId: "V0665_POKEMON_SPEWPA_ARCHIPELAGO";
-  data: V0665_pokemon_spewpa_archipelagodata;
-}
-export interface V0665_pokemon_spewpa_continentalEntry {
-  templateId: "V0665_POKEMON_SPEWPA_CONTINENTAL";
-  data: V0665_pokemon_spewpa_archipelagodata;
-}
-export interface V0665_pokemon_spewpa_elegantEntry {
-  templateId: "V0665_POKEMON_SPEWPA_ELEGANT";
-  data: V0665_pokemon_spewpa_archipelagodata;
-}
-export interface V0665_pokemon_spewpa_fancyEntry {
-  templateId: "V0665_POKEMON_SPEWPA_FANCY";
-  data: V0665_pokemon_spewpa_archipelagodata;
-}
-export interface V0665_pokemon_spewpa_gardenEntry {
-  templateId: "V0665_POKEMON_SPEWPA_GARDEN";
-  data: V0665_pokemon_spewpa_archipelagodata;
-}
-export interface V0665_pokemon_spewpa_high_plainsEntry {
-  templateId: "V0665_POKEMON_SPEWPA_HIGH_PLAINS";
-  data: V0665_pokemon_spewpa_archipelagodata;
-}
-export interface V0665_pokemon_spewpa_icy_snowEntry {
-  templateId: "V0665_POKEMON_SPEWPA_ICY_SNOW";
-  data: V0665_pokemon_spewpa_archipelagodata;
-}
-export interface V0665_pokemon_spewpa_jungleEntry {
-  templateId: "V0665_POKEMON_SPEWPA_JUNGLE";
-  data: V0665_pokemon_spewpa_archipelagodata;
-}
-export interface V0665_pokemon_spewpa_marineEntry {
-  templateId: "V0665_POKEMON_SPEWPA_MARINE";
-  data: V0665_pokemon_spewpa_archipelagodata;
-}
-export interface V0665_pokemon_spewpa_meadowEntry {
-  templateId: "V0665_POKEMON_SPEWPA_MEADOW";
-  data: V0665_pokemon_spewpa_archipelagodata;
-}
-export interface V0665_pokemon_spewpa_modernEntry {
-  templateId: "V0665_POKEMON_SPEWPA_MODERN";
-  data: V0665_pokemon_spewpa_archipelagodata;
-}
-export interface V0665_pokemon_spewpa_monsoonEntry {
-  templateId: "V0665_POKEMON_SPEWPA_MONSOON";
-  data: V0665_pokemon_spewpa_archipelagodata;
-}
-export interface V0665_pokemon_spewpa_oceanEntry {
-  templateId: "V0665_POKEMON_SPEWPA_OCEAN";
-  data: V0665_pokemon_spewpa_archipelagodata;
-}
-export interface V0665_pokemon_spewpa_pokeballEntry {
-  templateId: "V0665_POKEMON_SPEWPA_POKEBALL";
-  data: V0665_pokemon_spewpa_archipelagodata;
-}
-export interface V0665_pokemon_spewpa_polarEntry {
-  templateId: "V0665_POKEMON_SPEWPA_POLAR";
-  data: V0665_pokemon_spewpa_archipelagodata;
-}
-export interface V0665_pokemon_spewpa_riverEntry {
-  templateId: "V0665_POKEMON_SPEWPA_RIVER";
-  data: V0665_pokemon_spewpa_archipelagodata;
-}
-export interface V0665_pokemon_spewpa_sandstormEntry {
-  templateId: "V0665_POKEMON_SPEWPA_SANDSTORM";
-  data: V0665_pokemon_spewpa_archipelagodata;
-}
-export interface V0665_pokemon_spewpa_savannaEntry {
-  templateId: "V0665_POKEMON_SPEWPA_SAVANNA";
-  data: V0665_pokemon_spewpa_archipelagodata;
-}
-export interface V0665_pokemon_spewpa_sunEntry {
-  templateId: "V0665_POKEMON_SPEWPA_SUN";
-  data: V0665_pokemon_spewpa_archipelagodata;
-}
-export interface V0665_pokemon_spewpa_tundraEntry {
-  templateId: "V0665_POKEMON_SPEWPA_TUNDRA";
-  data: V0665_pokemon_spewpa_archipelagodata;
 }
 export interface V0666_pokemon_vivillondatapokemonsettingscamera {
   cylinderGroundM: number;
@@ -1434,7 +891,7 @@ export interface V0666_pokemon_vivillondatapokemonsettings {
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -1448,8 +905,8 @@ export interface V0666_pokemon_vivillondatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -1461,126 +918,6 @@ export interface V0666_pokemon_vivillondata {
 export interface V0666_pokemon_vivillonEntry {
   templateId: "V0666_POKEMON_VIVILLON";
   data: V0666_pokemon_vivillondata;
-}
-export interface V0666_pokemon_vivillon_archipelagodatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyPortraitOffset: (number)[];
-  buddyScale: number;
-  buddySize: string;
-  camera: V0666_pokemon_vivillondatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  useIrisFlyingPlacement: boolean;
-  weightStdDev: number;
-}
-export interface V0666_pokemon_vivillon_archipelagodata {
-  pokemonSettings: V0666_pokemon_vivillon_archipelagodatapokemonsettings;
-  templateId: string;
-}
-export interface V0666_pokemon_vivillon_archipelagoEntry {
-  templateId: "V0666_POKEMON_VIVILLON_ARCHIPELAGO";
-  data: V0666_pokemon_vivillon_archipelagodata;
-}
-export interface V0666_pokemon_vivillon_continentalEntry {
-  templateId: "V0666_POKEMON_VIVILLON_CONTINENTAL";
-  data: V0666_pokemon_vivillon_archipelagodata;
-}
-export interface V0666_pokemon_vivillon_elegantEntry {
-  templateId: "V0666_POKEMON_VIVILLON_ELEGANT";
-  data: V0666_pokemon_vivillon_archipelagodata;
-}
-export interface V0666_pokemon_vivillon_fancyEntry {
-  templateId: "V0666_POKEMON_VIVILLON_FANCY";
-  data: V0666_pokemon_vivillon_archipelagodata;
-}
-export interface V0666_pokemon_vivillon_gardenEntry {
-  templateId: "V0666_POKEMON_VIVILLON_GARDEN";
-  data: V0666_pokemon_vivillon_archipelagodata;
-}
-export interface V0666_pokemon_vivillon_high_plainsEntry {
-  templateId: "V0666_POKEMON_VIVILLON_HIGH_PLAINS";
-  data: V0666_pokemon_vivillon_archipelagodata;
-}
-export interface V0666_pokemon_vivillon_icy_snowEntry {
-  templateId: "V0666_POKEMON_VIVILLON_ICY_SNOW";
-  data: V0666_pokemon_vivillon_archipelagodata;
-}
-export interface V0666_pokemon_vivillon_jungleEntry {
-  templateId: "V0666_POKEMON_VIVILLON_JUNGLE";
-  data: V0666_pokemon_vivillon_archipelagodata;
-}
-export interface V0666_pokemon_vivillon_marineEntry {
-  templateId: "V0666_POKEMON_VIVILLON_MARINE";
-  data: V0666_pokemon_vivillon_archipelagodata;
-}
-export interface V0666_pokemon_vivillon_meadowEntry {
-  templateId: "V0666_POKEMON_VIVILLON_MEADOW";
-  data: V0666_pokemon_vivillon_archipelagodata;
-}
-export interface V0666_pokemon_vivillon_modernEntry {
-  templateId: "V0666_POKEMON_VIVILLON_MODERN";
-  data: V0666_pokemon_vivillon_archipelagodata;
-}
-export interface V0666_pokemon_vivillon_monsoonEntry {
-  templateId: "V0666_POKEMON_VIVILLON_MONSOON";
-  data: V0666_pokemon_vivillon_archipelagodata;
-}
-export interface V0666_pokemon_vivillon_oceanEntry {
-  templateId: "V0666_POKEMON_VIVILLON_OCEAN";
-  data: V0666_pokemon_vivillon_archipelagodata;
-}
-export interface V0666_pokemon_vivillon_pokeballEntry {
-  templateId: "V0666_POKEMON_VIVILLON_POKEBALL";
-  data: V0666_pokemon_vivillon_archipelagodata;
-}
-export interface V0666_pokemon_vivillon_polarEntry {
-  templateId: "V0666_POKEMON_VIVILLON_POLAR";
-  data: V0666_pokemon_vivillon_archipelagodata;
-}
-export interface V0666_pokemon_vivillon_riverEntry {
-  templateId: "V0666_POKEMON_VIVILLON_RIVER";
-  data: V0666_pokemon_vivillon_archipelagodata;
-}
-export interface V0666_pokemon_vivillon_sandstormEntry {
-  templateId: "V0666_POKEMON_VIVILLON_SANDSTORM";
-  data: V0666_pokemon_vivillon_archipelagodata;
-}
-export interface V0666_pokemon_vivillon_savannaEntry {
-  templateId: "V0666_POKEMON_VIVILLON_SAVANNA";
-  data: V0666_pokemon_vivillon_archipelagodata;
-}
-export interface V0666_pokemon_vivillon_sunEntry {
-  templateId: "V0666_POKEMON_VIVILLON_SUN";
-  data: V0666_pokemon_vivillon_archipelagodata;
-}
-export interface V0666_pokemon_vivillon_tundraEntry {
-  templateId: "V0666_POKEMON_VIVILLON_TUNDRA";
-  data: V0666_pokemon_vivillon_archipelagodata;
 }
 export interface V0667_pokemon_litleodatapokemonsettingsencounter {
   attackProbability: number;
@@ -1611,13 +948,13 @@ export interface V0667_pokemon_litleodatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0667_pokemon_litleodatapokemonsettingsencounter;
   evolutionBranch: (V0667_pokemon_litleodatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -1629,8 +966,8 @@ export interface V0667_pokemon_litleodatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -1650,14 +987,14 @@ export interface V0667_pokemon_litleo_normaldatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0667_pokemon_litleodatapokemonsettingsencounter;
   evolutionBranch: (V0667_pokemon_litleodatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -1669,8 +1006,8 @@ export interface V0667_pokemon_litleo_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -1686,12 +1023,12 @@ export interface V0667_pokemon_litleo_normalEntry {
 export interface V0668_pokemon_pyroardatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -1704,8 +1041,8 @@ export interface V0668_pokemon_pyroardatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -1718,18 +1055,13 @@ export interface V0668_pokemon_pyroarEntry {
   templateId: "V0668_POKEMON_PYROAR";
   data: V0668_pokemon_pyroardata;
 }
-export interface V0668_pokemon_pyroar_femaledatapokemonsettingsencounter {
+export interface V0669_pokemon_flabebedatapokemonsettingsencounter {
   attackProbability: number;
   attackTimerS: number;
-  bonusCandyCaptureReward: number;
-  bonusStardustCaptureReward: number;
-  bonusXlCandyCaptureReward: number;
   cameraDistance: number;
   collisionHeadRadiusM: number;
   collisionHeightM: number;
   collisionRadiusM: number;
-  dodgeDistance: number;
-  dodgeDurationS: number;
   dodgeProbability: number;
   jumpTimeS: number;
   maxPokemonActionFrequencyS: number;
@@ -1737,50 +1069,10 @@ export interface V0668_pokemon_pyroar_femaledatapokemonsettingsencounter {
   movementTimerS: number;
   movementType: string;
 }
-export interface V0668_pokemon_pyroar_femaledatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyScale: number;
-  buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0668_pokemon_pyroar_femaledatapokemonsettingsencounter;
-  familyId: string;
+export interface V0669_pokemon_flabebedatapokemonsettingsevolutionbranchitem {
+  candyCost: number;
+  evolution: string;
   form: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  weightStdDev: number;
-}
-export interface V0668_pokemon_pyroar_femaledata {
-  pokemonSettings: V0668_pokemon_pyroar_femaledatapokemonsettings;
-  templateId: string;
-}
-export interface V0668_pokemon_pyroar_femaleEntry {
-  templateId: "V0668_POKEMON_PYROAR_FEMALE";
-  data: V0668_pokemon_pyroar_femaledata;
-}
-export interface V0668_pokemon_pyroar_normalEntry {
-  templateId: "V0668_POKEMON_PYROAR_NORMAL";
-  data: V0668_pokemon_pyroar_femaledata;
 }
 export interface V0669_pokemon_flabebedatapokemonsettings {
   animationTime: (number)[];
@@ -1790,11 +1082,11 @@ export interface V0669_pokemon_flabebedatapokemonsettings {
   buddyScale: number;
   camera: V0666_pokemon_vivillondatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbug_archipelagodatapokemonsettingsevolutionbranchitem)[];
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
+  evolutionBranch: (V0669_pokemon_flabebedatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -1806,8 +1098,8 @@ export interface V0669_pokemon_flabebedatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -1818,62 +1110,6 @@ export interface V0669_pokemon_flabebedata {
 export interface V0669_pokemon_flabebeEntry {
   templateId: "V0669_POKEMON_FLABEBE";
   data: V0669_pokemon_flabebedata;
-}
-export interface V0669_pokemon_flabebe_bluedatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyPortraitOffset: (number)[];
-  buddyScale: number;
-  camera: V0666_pokemon_vivillondatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbug_archipelagodatapokemonsettingsevolutionbranchitem)[];
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  irisFlyingHeightLimitMeters: number;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  useIrisFlyingPlacement: boolean;
-  weightStdDev: number;
-}
-export interface V0669_pokemon_flabebe_bluedata {
-  pokemonSettings: V0669_pokemon_flabebe_bluedatapokemonsettings;
-  templateId: string;
-}
-export interface V0669_pokemon_flabebe_blueEntry {
-  templateId: "V0669_POKEMON_FLABEBE_BLUE";
-  data: V0669_pokemon_flabebe_bluedata;
-}
-export interface V0669_pokemon_flabebe_orangeEntry {
-  templateId: "V0669_POKEMON_FLABEBE_ORANGE";
-  data: V0669_pokemon_flabebe_bluedata;
-}
-export interface V0669_pokemon_flabebe_redEntry {
-  templateId: "V0669_POKEMON_FLABEBE_RED";
-  data: V0669_pokemon_flabebe_bluedata;
-}
-export interface V0669_pokemon_flabebe_whiteEntry {
-  templateId: "V0669_POKEMON_FLABEBE_WHITE";
-  data: V0669_pokemon_flabebe_bluedata;
-}
-export interface V0669_pokemon_flabebe_yellowEntry {
-  templateId: "V0669_POKEMON_FLABEBE_YELLOW";
-  data: V0669_pokemon_flabebe_bluedata;
 }
 export interface V0670_pokemon_floettedatapokemonsettingsevolutionbranchitemquestdisplayitem {
   questRequirementTemplateId: string;
@@ -1896,7 +1132,7 @@ export interface V0670_pokemon_floettedatapokemonsettings {
   evolutionBranch: (V0670_pokemon_floettedatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -1909,8 +1145,8 @@ export interface V0670_pokemon_floettedatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -1921,63 +1157,6 @@ export interface V0670_pokemon_floettedata {
 export interface V0670_pokemon_floetteEntry {
   templateId: "V0670_POKEMON_FLOETTE";
   data: V0670_pokemon_floettedata;
-}
-export interface V0670_pokemon_floette_bluedatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyPortraitOffset: (number)[];
-  buddyScale: number;
-  camera: V0666_pokemon_vivillondatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
-  evolutionBranch: (V0670_pokemon_floettedatapokemonsettingsevolutionbranchitem)[];
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  irisFlyingHeightLimitMeters: number;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  useIrisFlyingPlacement: boolean;
-  weightStdDev: number;
-}
-export interface V0670_pokemon_floette_bluedata {
-  pokemonSettings: V0670_pokemon_floette_bluedatapokemonsettings;
-  templateId: string;
-}
-export interface V0670_pokemon_floette_blueEntry {
-  templateId: "V0670_POKEMON_FLOETTE_BLUE";
-  data: V0670_pokemon_floette_bluedata;
-}
-export interface V0670_pokemon_floette_orangeEntry {
-  templateId: "V0670_POKEMON_FLOETTE_ORANGE";
-  data: V0670_pokemon_floette_bluedata;
-}
-export interface V0670_pokemon_floette_redEntry {
-  templateId: "V0670_POKEMON_FLOETTE_RED";
-  data: V0670_pokemon_floette_bluedata;
-}
-export interface V0670_pokemon_floette_whiteEntry {
-  templateId: "V0670_POKEMON_FLOETTE_WHITE";
-  data: V0670_pokemon_floette_bluedata;
-}
-export interface V0670_pokemon_floette_yellowEntry {
-  templateId: "V0670_POKEMON_FLOETTE_YELLOW";
-  data: V0670_pokemon_floette_bluedata;
 }
 export interface V0671_pokemon_florgesdatapokemonsettings {
   animationTime: (number)[];
@@ -1991,7 +1170,7 @@ export interface V0671_pokemon_florgesdatapokemonsettings {
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -2004,8 +1183,8 @@ export interface V0671_pokemon_florgesdatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -2017,63 +1196,6 @@ export interface V0671_pokemon_florgesEntry {
   templateId: "V0671_POKEMON_FLORGES";
   data: V0671_pokemon_florgesdata;
 }
-export interface V0671_pokemon_florges_bluedatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyScale: number;
-  camera: V0666_pokemon_vivillondatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  eliteCinematicMove: (string)[];
-  encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  irisFlyingHeightLimitMeters: number;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  useIrisFlyingPlacement: boolean;
-  weightStdDev: number;
-}
-export interface V0671_pokemon_florges_bluedata {
-  pokemonSettings: V0671_pokemon_florges_bluedatapokemonsettings;
-  templateId: string;
-}
-export interface V0671_pokemon_florges_blueEntry {
-  templateId: "V0671_POKEMON_FLORGES_BLUE";
-  data: V0671_pokemon_florges_bluedata;
-}
-export interface V0671_pokemon_florges_orangeEntry {
-  templateId: "V0671_POKEMON_FLORGES_ORANGE";
-  data: V0671_pokemon_florges_bluedata;
-}
-export interface V0671_pokemon_florges_redEntry {
-  templateId: "V0671_POKEMON_FLORGES_RED";
-  data: V0671_pokemon_florges_bluedata;
-}
-export interface V0671_pokemon_florges_whiteEntry {
-  templateId: "V0671_POKEMON_FLORGES_WHITE";
-  data: V0671_pokemon_florges_bluedata;
-}
-export interface V0671_pokemon_florges_yellowEntry {
-  templateId: "V0671_POKEMON_FLORGES_YELLOW";
-  data: V0671_pokemon_florges_bluedata;
-}
 export interface V0672_pokemon_skiddodatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
@@ -2081,13 +1203,13 @@ export interface V0672_pokemon_skiddodatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbugdatapokemonsettingsevolutionbranchitem)[];
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
+  evolutionBranch: (V0665_pokemon_spewpadatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -2100,8 +1222,8 @@ export interface V0672_pokemon_skiddodatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -2120,14 +1242,14 @@ export interface V0672_pokemon_skiddo_normaldatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbug_archipelagodatapokemonsettingsevolutionbranchitem)[];
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
+  evolutionBranch: (V0669_pokemon_flabebedatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -2140,8 +1262,8 @@ export interface V0672_pokemon_skiddo_normaldatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -2160,12 +1282,12 @@ export interface V0673_pokemon_gogoatdatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -2179,8 +1301,8 @@ export interface V0673_pokemon_gogoatdatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -2199,13 +1321,13 @@ export interface V0673_pokemon_gogoat_normaldatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -2219,8 +1341,8 @@ export interface V0673_pokemon_gogoat_normaldatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -2240,13 +1362,13 @@ export interface V0674_pokemon_panchamdatapokemonsettingsevolutionbranchitem {
 export interface V0674_pokemon_panchamdatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
   evolutionBranch: (V0674_pokemon_panchamdatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -2258,8 +1380,8 @@ export interface V0674_pokemon_panchamdatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -2274,14 +1396,14 @@ export interface V0674_pokemon_panchamEntry {
 export interface V0674_pokemon_pancham_normaldatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
   evolutionBranch: (V0670_pokemon_floettedatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -2293,8 +1415,8 @@ export interface V0674_pokemon_pancham_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -2310,12 +1432,12 @@ export interface V0675_pokemon_pangorodatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -2328,8 +1450,8 @@ export interface V0675_pokemon_pangorodatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -2346,13 +1468,13 @@ export interface V0675_pokemon_pangoro_normaldatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -2365,8 +1487,8 @@ export interface V0675_pokemon_pangoro_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -2386,13 +1508,13 @@ export interface V0676_pokemon_furfroudatapokemonsettingsformchangeitem {
 }
 export interface V0676_pokemon_furfroudatapokemonsettings {
   animationTime: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
   familyId: string;
   formChange: (V0676_pokemon_furfroudatapokemonsettingsformchangeitem)[];
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -2405,8 +1527,8 @@ export interface V0676_pokemon_furfroudatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -2418,77 +1540,6 @@ export interface V0676_pokemon_furfrouEntry {
   templateId: "V0676_POKEMON_FURFROU";
   data: V0676_pokemon_furfroudata;
 }
-export interface V0676_pokemon_furfrou_dandydatapokemonsettings {
-  animationTime: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  formChange: (V0676_pokemon_furfroudatapokemonsettingsformchangeitem)[];
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0676_pokemon_furfrou_dandydata {
-  pokemonSettings: V0676_pokemon_furfrou_dandydatapokemonsettings;
-  templateId: string;
-}
-export interface V0676_pokemon_furfrou_dandyEntry {
-  templateId: "V0676_POKEMON_FURFROU_DANDY";
-  data: V0676_pokemon_furfrou_dandydata;
-}
-export interface V0676_pokemon_furfrou_debutanteEntry {
-  templateId: "V0676_POKEMON_FURFROU_DEBUTANTE";
-  data: V0676_pokemon_furfrou_dandydata;
-}
-export interface V0676_pokemon_furfrou_diamondEntry {
-  templateId: "V0676_POKEMON_FURFROU_DIAMOND";
-  data: V0676_pokemon_furfrou_dandydata;
-}
-export interface V0676_pokemon_furfrou_heartEntry {
-  templateId: "V0676_POKEMON_FURFROU_HEART";
-  data: V0676_pokemon_furfrou_dandydata;
-}
-export interface V0676_pokemon_furfrou_kabukiEntry {
-  templateId: "V0676_POKEMON_FURFROU_KABUKI";
-  data: V0676_pokemon_furfrou_dandydata;
-}
-export interface V0676_pokemon_furfrou_la_reineEntry {
-  templateId: "V0676_POKEMON_FURFROU_LA_REINE";
-  data: V0676_pokemon_furfrou_dandydata;
-}
-export interface V0676_pokemon_furfrou_matronEntry {
-  templateId: "V0676_POKEMON_FURFROU_MATRON";
-  data: V0676_pokemon_furfrou_dandydata;
-}
-export interface V0676_pokemon_furfrou_naturalEntry {
-  templateId: "V0676_POKEMON_FURFROU_NATURAL";
-  data: V0676_pokemon_furfrou_dandydata;
-}
-export interface V0676_pokemon_furfrou_pharaohEntry {
-  templateId: "V0676_POKEMON_FURFROU_PHARAOH";
-  data: V0676_pokemon_furfrou_dandydata;
-}
-export interface V0676_pokemon_furfrou_starEntry {
-  templateId: "V0676_POKEMON_FURFROU_STAR";
-  data: V0676_pokemon_furfrou_dandydata;
-}
 export interface V0677_pokemon_espurrdatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
@@ -2496,13 +1547,13 @@ export interface V0677_pokemon_espurrdatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0667_pokemon_litleodatapokemonsettingsencounter;
   evolutionBranch: (V0667_pokemon_litleodatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -2514,8 +1565,8 @@ export interface V0677_pokemon_espurrdatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -2534,14 +1585,14 @@ export interface V0677_pokemon_espurr_normaldatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0667_pokemon_litleodatapokemonsettingsencounter;
   evolutionBranch: (V0667_pokemon_litleodatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -2553,8 +1604,8 @@ export interface V0677_pokemon_espurr_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -2573,12 +1624,12 @@ export interface V0678_pokemon_meowsticdatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -2591,8 +1642,8 @@ export interface V0678_pokemon_meowsticdatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -2604,59 +1655,16 @@ export interface V0678_pokemon_meowsticEntry {
   templateId: "V0678_POKEMON_MEOWSTIC";
   data: V0678_pokemon_meowsticdata;
 }
-export interface V0678_pokemon_meowstic_femaledatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0678_pokemon_meowstic_femaledata {
-  pokemonSettings: V0678_pokemon_meowstic_femaledatapokemonsettings;
-  templateId: string;
-}
-export interface V0678_pokemon_meowstic_femaleEntry {
-  templateId: "V0678_POKEMON_MEOWSTIC_FEMALE";
-  data: V0678_pokemon_meowstic_femaledata;
-}
-export interface V0678_pokemon_meowstic_normalEntry {
-  templateId: "V0678_POKEMON_MEOWSTIC_NORMAL";
-  data: V0678_pokemon_meowstic_femaledata;
-}
 export interface V0679_pokemon_honedgedatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
   camera: V0666_pokemon_vivillondatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbugdatapokemonsettingsevolutionbranchitem)[];
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
+  evolutionBranch: (V0665_pokemon_spewpadatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -2668,8 +1676,8 @@ export interface V0679_pokemon_honedgedatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -2687,12 +1695,12 @@ export interface V0679_pokemon_honedge_normaldatapokemonsettings {
   breadTierGroup: string;
   camera: V0666_pokemon_vivillondatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbug_archipelagodatapokemonsettingsevolutionbranchitem)[];
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
+  evolutionBranch: (V0669_pokemon_flabebedatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -2704,8 +1712,8 @@ export interface V0679_pokemon_honedge_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -2724,10 +1732,10 @@ export interface V0680_pokemon_doubladedatapokemonsettings {
   camera: V0666_pokemon_vivillondatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbug_archipelagodatapokemonsettingsevolutionbranchitem)[];
+  evolutionBranch: (V0669_pokemon_flabebedatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -2741,8 +1749,8 @@ export interface V0680_pokemon_doubladedatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -2761,11 +1769,11 @@ export interface V0680_pokemon_doublade_normaldatapokemonsettings {
   camera: V0666_pokemon_vivillondatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbug_archipelagodatapokemonsettingsevolutionbranchitem)[];
+  evolutionBranch: (V0669_pokemon_flabebedatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -2779,8 +1787,8 @@ export interface V0680_pokemon_doublade_normaldatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -2809,7 +1817,7 @@ export interface V0681_pokemon_aegislashdatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
   buddyPortraitOffset: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
   familyId: string;
@@ -2828,8 +1836,8 @@ export interface V0681_pokemon_aegislashdatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -2842,58 +1850,16 @@ export interface V0681_pokemon_aegislashEntry {
   templateId: "V0681_POKEMON_AEGISLASH";
   data: V0681_pokemon_aegislashdata;
 }
-export interface V0681_pokemon_aegislash_bladedatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  buddyPortraitOffset: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  weightStdDev: number;
-}
-export interface V0681_pokemon_aegislash_bladedata {
-  pokemonSettings: V0681_pokemon_aegislash_bladedatapokemonsettings;
-  templateId: string;
-}
-export interface V0681_pokemon_aegislash_bladeEntry {
-  templateId: "V0681_POKEMON_AEGISLASH_BLADE";
-  data: V0681_pokemon_aegislash_bladedata;
-}
-export interface V0681_pokemon_aegislash_shieldEntry {
-  templateId: "V0681_POKEMON_AEGISLASH_SHIELD";
-  data: V0681_pokemon_aegislash_bladedata;
-}
 export interface V0682_pokemon_spritzeedatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
   camera: V0666_pokemon_vivillondatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
   evolutionBranch: (V0674_pokemon_panchamdatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -2905,8 +1871,8 @@ export interface V0682_pokemon_spritzeedatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -2923,12 +1889,12 @@ export interface V0682_pokemon_spritzee_normaldatapokemonsettings {
   breadTierGroup: string;
   camera: V0666_pokemon_vivillondatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
   evolutionBranch: (V0670_pokemon_floettedatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -2940,8 +1906,8 @@ export interface V0682_pokemon_spritzee_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -2953,79 +1919,6 @@ export interface V0682_pokemon_spritzee_normalEntry {
   templateId: "V0682_POKEMON_SPRITZEE_NORMAL";
   data: V0682_pokemon_spritzee_normaldata;
 }
-export interface V0683_pokemon_aromatissedatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
-  familyId: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0683_pokemon_aromatissedata {
-  pokemonSettings: V0683_pokemon_aromatissedatapokemonsettings;
-  templateId: string;
-}
-export interface V0683_pokemon_aromatisseEntry {
-  templateId: "V0683_POKEMON_AROMATISSE";
-  data: V0683_pokemon_aromatissedata;
-}
-export interface V0683_pokemon_aromatisse_normaldatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0683_pokemon_aromatisse_normaldata {
-  pokemonSettings: V0683_pokemon_aromatisse_normaldatapokemonsettings;
-  templateId: string;
-}
-export interface V0683_pokemon_aromatisse_normalEntry {
-  templateId: "V0683_POKEMON_AROMATISSE_NORMAL";
-  data: V0683_pokemon_aromatisse_normaldata;
-}
 export interface V0684_pokemon_swirlixdatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
@@ -3034,13 +1927,13 @@ export interface V0684_pokemon_swirlixdatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
   evolutionBranch: (V0674_pokemon_panchamdatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3052,8 +1945,8 @@ export interface V0684_pokemon_swirlixdatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -3073,14 +1966,14 @@ export interface V0684_pokemon_swirlix_normaldatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
   evolutionBranch: (V0670_pokemon_floettedatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3092,8 +1985,8 @@ export interface V0684_pokemon_swirlix_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -3105,14 +1998,6 @@ export interface V0684_pokemon_swirlix_normalEntry {
   templateId: "V0684_POKEMON_SWIRLIX_NORMAL";
   data: V0684_pokemon_swirlix_normaldata;
 }
-export interface V0685_pokemon_slurpuffEntry {
-  templateId: "V0685_POKEMON_SLURPUFF";
-  data: V0683_pokemon_aromatissedata;
-}
-export interface V0685_pokemon_slurpuff_normalEntry {
-  templateId: "V0685_POKEMON_SLURPUFF_NORMAL";
-  data: V0683_pokemon_aromatisse_normaldata;
-}
 export interface V0686_pokemon_inkaydatapokemonsettingsevolutionbranchitem {
   candyCost: number;
   candyCostPurified: number;
@@ -3123,13 +2008,13 @@ export interface V0686_pokemon_inkaydatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
   buddyWalkedMegaEnergyAward: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0659_pokemon_bunnelbydatapokemonsettingsencounter;
   evolutionBranch: (V0686_pokemon_inkaydatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3141,9 +2026,9 @@ export interface V0686_pokemon_inkaydatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -3167,14 +2052,14 @@ export interface V0686_pokemon_inkay_normaldatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
   buddyWalkedMegaEnergyAward: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0659_pokemon_bunnelbydatapokemonsettingsencounter;
   evolutionBranch: (V0686_pokemon_inkay_normaldatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3186,9 +2071,9 @@ export interface V0686_pokemon_inkay_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -3212,7 +2097,7 @@ export interface V0687_pokemon_malamardatapokemonsettingstempevooverridesitem {
   camera: V0666_pokemon_vivillondatapokemonsettingscamera;
   modelHeight: number;
   modelScaleV2: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
   tempEvoId: string;
   typeOverride1: string;
   typeOverride2: string;
@@ -3225,13 +2110,13 @@ export interface V0687_pokemon_malamardatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddySize: string;
   buddyWalkedMegaEnergyAward: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0654_pokemon_braixendatapokemonsettingsencounter;
   evolutionBranch: (V0687_pokemon_malamardatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3244,10 +2129,10 @@ export interface V0687_pokemon_malamardatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
   tempEvoOverrides: (V0687_pokemon_malamardatapokemonsettingstempevooverridesitem)[];
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -3268,14 +2153,14 @@ export interface V0687_pokemon_malamar_normaldatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddySize: string;
   buddyWalkedMegaEnergyAward: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0654_pokemon_braixendatapokemonsettingsencounter;
   evolutionBranch: (V0687_pokemon_malamardatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3288,10 +2173,10 @@ export interface V0687_pokemon_malamar_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
   tempEvoOverrides: (V0687_pokemon_malamardatapokemonsettingstempevooverridesitem)[];
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -3322,13 +2207,13 @@ export interface V0688_pokemon_binacledatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0688_pokemon_binacledatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbugdatapokemonsettingsevolutionbranchitem)[];
+  evolutionBranch: (V0665_pokemon_spewpadatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3340,8 +2225,8 @@ export interface V0688_pokemon_binacledatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -3360,14 +2245,14 @@ export interface V0688_pokemon_binacle_normaldatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0688_pokemon_binacledatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbug_archipelagodatapokemonsettingsevolutionbranchitem)[];
+  evolutionBranch: (V0669_pokemon_flabebedatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3379,8 +2264,8 @@ export interface V0688_pokemon_binacle_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -3398,12 +2283,12 @@ export interface V0689_pokemon_barbaracledatapokemonsettings {
   breadTierGroup: string;
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3416,8 +2301,8 @@ export interface V0689_pokemon_barbaracledatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -3435,13 +2320,13 @@ export interface V0689_pokemon_barbaracle_normaldatapokemonsettings {
   breadTierGroup: string;
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3454,8 +2339,8 @@ export interface V0689_pokemon_barbaracle_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -3475,10 +2360,10 @@ export interface V0690_pokemon_skrelpdatapokemonsettings {
   camera: V0666_pokemon_vivillondatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0667_pokemon_litleodatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbugdatapokemonsettingsevolutionbranchitem)[];
+  evolutionBranch: (V0665_pokemon_spewpadatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3490,8 +2375,8 @@ export interface V0690_pokemon_skrelpdatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -3511,11 +2396,11 @@ export interface V0690_pokemon_skrelp_normaldatapokemonsettings {
   camera: V0666_pokemon_vivillondatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0667_pokemon_litleodatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbug_archipelagodatapokemonsettingsevolutionbranchitem)[];
+  evolutionBranch: (V0669_pokemon_flabebedatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3527,8 +2412,8 @@ export interface V0690_pokemon_skrelp_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -3541,6 +2426,25 @@ export interface V0690_pokemon_skrelp_normalEntry {
   templateId: "V0690_POKEMON_SKRELP_NORMAL";
   data: V0690_pokemon_skrelp_normaldata;
 }
+export interface V0691_pokemon_dragalgedatapokemonsettingsencounter {
+  attackProbability: number;
+  attackTimerS: number;
+  bonusCandyCaptureReward: number;
+  bonusStardustCaptureReward: number;
+  bonusXlCandyCaptureReward: number;
+  cameraDistance: number;
+  collisionHeadRadiusM: number;
+  collisionHeightM: number;
+  collisionRadiusM: number;
+  dodgeDistance: number;
+  dodgeDurationS: number;
+  dodgeProbability: number;
+  jumpTimeS: number;
+  maxPokemonActionFrequencyS: number;
+  minPokemonActionFrequencyS: number;
+  movementTimerS: number;
+  movementType: string;
+}
 export interface V0691_pokemon_dragalgedatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
@@ -3550,10 +2454,10 @@ export interface V0691_pokemon_dragalgedatapokemonsettings {
   buddySize: string;
   camera: V0666_pokemon_vivillondatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0668_pokemon_pyroar_femaledatapokemonsettingsencounter;
+  encounter: V0691_pokemon_dragalgedatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3566,8 +2470,8 @@ export interface V0691_pokemon_dragalgedatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -3589,11 +2493,11 @@ export interface V0691_pokemon_dragalge_normaldatapokemonsettings {
   buddySize: string;
   camera: V0666_pokemon_vivillondatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0668_pokemon_pyroar_femaledatapokemonsettingsencounter;
+  encounter: V0691_pokemon_dragalgedatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3606,8 +2510,8 @@ export interface V0691_pokemon_dragalge_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -3620,14 +2524,6 @@ export interface V0691_pokemon_dragalge_normalEntry {
   templateId: "V0691_POKEMON_DRAGALGE_NORMAL";
   data: V0691_pokemon_dragalge_normaldata;
 }
-export interface V0692_pokemon_clauncherEntry {
-  templateId: "V0692_POKEMON_CLAUNCHER";
-  data: V0664_pokemon_scatterbugdata;
-}
-export interface V0692_pokemon_clauncher_normalEntry {
-  templateId: "V0692_POKEMON_CLAUNCHER_NORMAL";
-  data: V0664_pokemon_scatterbug_archipelagodata;
-}
 export interface V0693_pokemon_clawitzerdatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
@@ -3636,7 +2532,7 @@ export interface V0693_pokemon_clawitzerdatapokemonsettings {
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3649,8 +2545,8 @@ export interface V0693_pokemon_clawitzerdatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -3671,7 +2567,7 @@ export interface V0693_pokemon_clawitzer_normaldatapokemonsettings {
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3684,8 +2580,8 @@ export interface V0693_pokemon_clawitzer_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -3706,13 +2602,13 @@ export interface V0694_pokemon_helioptiledatapokemonsettingsevolutionbranchitem 
 export interface V0694_pokemon_helioptiledatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0659_pokemon_bunnelbydatapokemonsettingsencounter;
   evolutionBranch: (V0694_pokemon_helioptiledatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3724,9 +2620,9 @@ export interface V0694_pokemon_helioptiledatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -3749,14 +2645,14 @@ export interface V0694_pokemon_helioptile_normaldatapokemonsettingsevolutionbran
 export interface V0694_pokemon_helioptile_normaldatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0659_pokemon_bunnelbydatapokemonsettingsencounter;
   evolutionBranch: (V0694_pokemon_helioptile_normaldatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3768,9 +2664,9 @@ export interface V0694_pokemon_helioptile_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -3788,12 +2684,12 @@ export interface V0695_pokemon_helioliskdatapokemonsettings {
   breadTierGroup: string;
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0654_pokemon_braixendatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3806,9 +2702,9 @@ export interface V0695_pokemon_helioliskdatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -3826,13 +2722,13 @@ export interface V0695_pokemon_heliolisk_normaldatapokemonsettings {
   breadTierGroup: string;
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0654_pokemon_braixendatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3845,9 +2741,9 @@ export interface V0695_pokemon_heliolisk_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -3874,13 +2770,13 @@ export interface V0696_pokemon_tyruntdatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0659_pokemon_bunnelbydatapokemonsettingsencounter;
   evolutionBranch: (V0696_pokemon_tyruntdatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3893,9 +2789,9 @@ export interface V0696_pokemon_tyruntdatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -3923,14 +2819,14 @@ export interface V0696_pokemon_tyrunt_normaldatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0659_pokemon_bunnelbydatapokemonsettingsencounter;
   evolutionBranch: (V0696_pokemon_tyrunt_normaldatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -3943,9 +2839,9 @@ export interface V0696_pokemon_tyrunt_normaldatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -3957,93 +2853,6 @@ export interface V0696_pokemon_tyrunt_normaldata {
 export interface V0696_pokemon_tyrunt_normalEntry {
   templateId: "V0696_POKEMON_TYRUNT_NORMAL";
   data: V0696_pokemon_tyrunt_normaldata;
-}
-export interface V0697_pokemon_tyrantrumdatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyPortraitOffset: (number)[];
-  buddyScale: number;
-  buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0654_pokemon_braixendatapokemonsettingsencounter;
-  familyId: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  weightStdDev: number;
-}
-export interface V0697_pokemon_tyrantrumdata {
-  pokemonSettings: V0697_pokemon_tyrantrumdatapokemonsettings;
-  templateId: string;
-}
-export interface V0697_pokemon_tyrantrumEntry {
-  templateId: "V0697_POKEMON_TYRANTRUM";
-  data: V0697_pokemon_tyrantrumdata;
-}
-export interface V0697_pokemon_tyrantrum_normaldatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyPortraitOffset: (number)[];
-  buddyScale: number;
-  buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0654_pokemon_braixendatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  weightStdDev: number;
-}
-export interface V0697_pokemon_tyrantrum_normaldata {
-  pokemonSettings: V0697_pokemon_tyrantrum_normaldatapokemonsettings;
-  templateId: string;
-}
-export interface V0697_pokemon_tyrantrum_normalEntry {
-  templateId: "V0697_POKEMON_TYRANTRUM_NORMAL";
-  data: V0697_pokemon_tyrantrum_normaldata;
 }
 export interface V0698_pokemon_amauradatapokemonsettingsencounter {
   attackProbability: number;
@@ -4075,13 +2884,13 @@ export interface V0698_pokemon_amauradatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0698_pokemon_amauradatapokemonsettingsencounter;
   evolutionBranch: (V0698_pokemon_amauradatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4094,9 +2903,9 @@ export interface V0698_pokemon_amauradatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -4124,14 +2933,14 @@ export interface V0698_pokemon_amaura_normaldatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0698_pokemon_amauradatapokemonsettingsencounter;
   evolutionBranch: (V0698_pokemon_amaura_normaldatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4144,9 +2953,9 @@ export interface V0698_pokemon_amaura_normaldatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -4159,27 +2968,19 @@ export interface V0698_pokemon_amaura_normalEntry {
   templateId: "V0698_POKEMON_AMAURA_NORMAL";
   data: V0698_pokemon_amaura_normaldata;
 }
-export interface V0699_pokemon_aurorusEntry {
-  templateId: "V0699_POKEMON_AURORUS";
-  data: V0697_pokemon_tyrantrumdata;
-}
-export interface V0699_pokemon_aurorus_normalEntry {
-  templateId: "V0699_POKEMON_AURORUS_NORMAL";
-  data: V0697_pokemon_tyrantrum_normaldata;
-}
 export interface V0700_pokemon_sylveondatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   eliteCinematicMove: (string)[];
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4192,8 +2993,8 @@ export interface V0700_pokemon_sylveondatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -4211,14 +3012,14 @@ export interface V0700_pokemon_sylveon_normaldatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   eliteCinematicMove: (string)[];
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4231,8 +3032,8 @@ export interface V0700_pokemon_sylveon_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -4247,12 +3048,12 @@ export interface V0700_pokemon_sylveon_normalEntry {
 export interface V0701_pokemon_hawluchadatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4264,8 +3065,8 @@ export interface V0701_pokemon_hawluchadatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -4281,13 +3082,13 @@ export interface V0701_pokemon_hawluchaEntry {
 export interface V0701_pokemon_hawlucha_normaldatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4299,8 +3100,8 @@ export interface V0701_pokemon_hawlucha_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -4317,12 +3118,12 @@ export interface V0702_pokemon_dedennedatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
   buddyPortraitOffset: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4334,8 +3135,8 @@ export interface V0702_pokemon_dedennedatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -4352,13 +3153,13 @@ export interface V0702_pokemon_dedenne_normaldatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
   buddyPortraitOffset: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4370,8 +3171,8 @@ export interface V0702_pokemon_dedenne_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -4393,10 +3194,10 @@ export interface V0703_pokemon_carbinkdatapokemonsettings {
   buddyPortraitOffset: (number)[];
   camera: V0666_pokemon_vivillondatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4409,8 +3210,8 @@ export interface V0703_pokemon_carbinkdatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -4432,11 +3233,11 @@ export interface V0703_pokemon_carbink_normaldatapokemonsettings {
   buddyPortraitOffset: (number)[];
   camera: V0666_pokemon_vivillondatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4449,8 +3250,8 @@ export interface V0703_pokemon_carbink_normaldatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -4469,13 +3270,13 @@ export interface V0704_pokemon_goomydatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbugdatapokemonsettingsevolutionbranchitem)[];
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
+  evolutionBranch: (V0665_pokemon_spewpadatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4487,8 +3288,8 @@ export interface V0704_pokemon_goomydatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -4506,14 +3307,14 @@ export interface V0704_pokemon_goomy_normaldatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbug_archipelagodatapokemonsettingsevolutionbranchitem)[];
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
+  evolutionBranch: (V0669_pokemon_flabebedatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4525,8 +3326,8 @@ export interface V0704_pokemon_goomy_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -4549,13 +3350,13 @@ export interface V0705_pokemon_sliggoodatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
   evolutionBranch: (V0705_pokemon_sliggoodatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4568,8 +3369,8 @@ export interface V0705_pokemon_sliggoodatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -4593,14 +3394,14 @@ export interface V0705_pokemon_sliggoo_normaldatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
   evolutionBranch: (V0705_pokemon_sliggoo_normaldatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4613,8 +3414,8 @@ export interface V0705_pokemon_sliggoo_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -4632,13 +3433,13 @@ export interface V0706_pokemon_goodradatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   eliteCinematicMove: (string)[];
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4651,8 +3452,8 @@ export interface V0706_pokemon_goodradatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -4670,14 +3471,14 @@ export interface V0706_pokemon_goodra_normaldatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   eliteCinematicMove: (string)[];
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4690,8 +3491,8 @@ export interface V0706_pokemon_goodra_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -4716,7 +3517,7 @@ export interface V0707_pokemon_klefkidatapokemonsettings {
   encounter: V0667_pokemon_litleodatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4728,8 +3529,8 @@ export interface V0707_pokemon_klefkidatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -4756,7 +3557,7 @@ export interface V0707_pokemon_klefki_normaldatapokemonsettings {
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4768,8 +3569,8 @@ export interface V0707_pokemon_klefki_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -4797,7 +3598,7 @@ export interface V0708_pokemon_phantumpdatapokemonsettings {
   evolutionBranch: (V0708_pokemon_phantumpdatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4809,9 +3610,9 @@ export interface V0708_pokemon_phantumpdatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -4841,7 +3642,7 @@ export interface V0708_pokemon_phantump_normaldatapokemonsettings {
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4853,9 +3654,9 @@ export interface V0708_pokemon_phantump_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -4894,12 +3695,12 @@ export interface V0709_pokemon_trevenantdatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0709_pokemon_trevenantdatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4912,9 +3713,9 @@ export interface V0709_pokemon_trevenantdatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -4934,13 +3735,13 @@ export interface V0709_pokemon_trevenant_normaldatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0709_pokemon_trevenantdatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -4953,9 +3754,9 @@ export interface V0709_pokemon_trevenant_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  shadow: V0650_pokemon_chespindatapokemonsettingsshadow;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  shadow: V0654_pokemon_braixendatapokemonsettingsshadow;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -4995,11 +3796,11 @@ export interface V0710_pokemon_pumpkaboodatapokemonsettings {
   buddyOffsetMale: (number)[];
   camera: V0666_pokemon_vivillondatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
   evolutionBranch: (V0710_pokemon_pumpkaboodatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -5013,8 +3814,8 @@ export interface V0710_pokemon_pumpkaboodatapokemonsettings {
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
   sizeSettings: V0710_pokemon_pumpkaboodatapokemonsettingssizesettings;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -5027,55 +3828,6 @@ export interface V0710_pokemon_pumpkabooEntry {
   templateId: "V0710_POKEMON_PUMPKABOO";
   data: V0710_pokemon_pumpkaboodata;
 }
-export interface V0710_pokemon_pumpkaboo_averagedatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  camera: V0666_pokemon_vivillondatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
-  evolutionBranch: (V0710_pokemon_pumpkaboodatapokemonsettingsevolutionbranchitem)[];
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  sizeSettings: V0710_pokemon_pumpkaboodatapokemonsettingssizesettings;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  weightStdDev: number;
-}
-export interface V0710_pokemon_pumpkaboo_averagedata {
-  pokemonSettings: V0710_pokemon_pumpkaboo_averagedatapokemonsettings;
-  templateId: string;
-}
-export interface V0710_pokemon_pumpkaboo_averageEntry {
-  templateId: "V0710_POKEMON_PUMPKABOO_AVERAGE";
-  data: V0710_pokemon_pumpkaboo_averagedata;
-}
-export interface V0710_pokemon_pumpkaboo_largeEntry {
-  templateId: "V0710_POKEMON_PUMPKABOO_LARGE";
-  data: V0710_pokemon_pumpkaboo_averagedata;
-}
-export interface V0710_pokemon_pumpkaboo_smallEntry {
-  templateId: "V0710_POKEMON_PUMPKABOO_SMALL";
-  data: V0710_pokemon_pumpkaboo_averagedata;
-}
 export interface V0710_pokemon_pumpkaboo_superdatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
@@ -5085,12 +3837,12 @@ export interface V0710_pokemon_pumpkaboo_superdatapokemonsettings {
   buddyPortraitOffset: (number)[];
   camera: V0666_pokemon_vivillondatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
   evolutionBranch: (V0710_pokemon_pumpkaboodatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -5104,8 +3856,8 @@ export interface V0710_pokemon_pumpkaboo_superdatapokemonsettings {
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
   sizeSettings: V0710_pokemon_pumpkaboodatapokemonsettingssizesettings;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -5125,12 +3877,12 @@ export interface V0711_pokemon_gourgeistdatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -5144,8 +3896,8 @@ export interface V0711_pokemon_gourgeistdatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   sizeSettings: V0710_pokemon_pumpkaboodatapokemonsettingssizesettings;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -5158,55 +3910,6 @@ export interface V0711_pokemon_gourgeistEntry {
   templateId: "V0711_POKEMON_GOURGEIST";
   data: V0711_pokemon_gourgeistdata;
 }
-export interface V0711_pokemon_gourgeist_averagedatapokemonsettings {
-  animationTime: (number)[];
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyPortraitOffset: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScale: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  sizeSettings: V0710_pokemon_pumpkaboodatapokemonsettingssizesettings;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  weightStdDev: number;
-}
-export interface V0711_pokemon_gourgeist_averagedata {
-  pokemonSettings: V0711_pokemon_gourgeist_averagedatapokemonsettings;
-  templateId: string;
-}
-export interface V0711_pokemon_gourgeist_averageEntry {
-  templateId: "V0711_POKEMON_GOURGEIST_AVERAGE";
-  data: V0711_pokemon_gourgeist_averagedata;
-}
-export interface V0711_pokemon_gourgeist_largeEntry {
-  templateId: "V0711_POKEMON_GOURGEIST_LARGE";
-  data: V0711_pokemon_gourgeist_averagedata;
-}
-export interface V0711_pokemon_gourgeist_smallEntry {
-  templateId: "V0711_POKEMON_GOURGEIST_SMALL";
-  data: V0711_pokemon_gourgeist_averagedata;
-}
 export interface V0711_pokemon_gourgeist_superdatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
@@ -5215,13 +3918,13 @@ export interface V0711_pokemon_gourgeist_superdatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0666_pokemon_vivillondatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -5236,8 +3939,8 @@ export interface V0711_pokemon_gourgeist_superdatapokemonsettings {
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
   sizeSettings: V0710_pokemon_pumpkaboodatapokemonsettingssizesettings;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -5257,13 +3960,13 @@ export interface V0712_pokemon_bergmitedatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbugdatapokemonsettingsevolutionbranchitem)[];
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
+  evolutionBranch: (V0665_pokemon_spewpadatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -5275,8 +3978,8 @@ export interface V0712_pokemon_bergmitedatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -5295,14 +3998,14 @@ export interface V0712_pokemon_bergmite_normaldatapokemonsettings {
   buddyOffsetFemale: (number)[];
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0664_pokemon_scatterbugdatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbug_archipelagodatapokemonsettingsevolutionbranchitem)[];
+  encounter: V0669_pokemon_flabebedatapokemonsettingsencounter;
+  evolutionBranch: (V0669_pokemon_flabebedatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -5314,8 +4017,8 @@ export interface V0712_pokemon_bergmite_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -5335,12 +4038,12 @@ export interface V0713_pokemon_avaluggdatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0665_pokemon_spewpadatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -5354,8 +4057,8 @@ export interface V0713_pokemon_avaluggdatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -5375,7 +4078,7 @@ export interface V0713_pokemon_avalugg_hisuiandatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   combatDefaultCameraAngle: (number)[];
   combatOpponentFocusCameraAngle: (number)[];
@@ -5386,7 +4089,7 @@ export interface V0713_pokemon_avalugg_hisuiandatapokemonsettings {
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -5400,8 +4103,8 @@ export interface V0713_pokemon_avalugg_hisuiandatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -5422,13 +4125,13 @@ export interface V0713_pokemon_avalugg_normaldatapokemonsettings {
   buddyOffsetMale: (number)[];
   buddyPortraitOffset: (number)[];
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0665_pokemon_spewpadatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isDeployable: boolean;
   isTradable: boolean;
   isTransferable: boolean;
@@ -5442,8 +4145,8 @@ export interface V0713_pokemon_avalugg_normaldatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -5471,10 +4174,10 @@ export interface V0714_pokemon_noibatdatapokemonsettings {
   combatPlayerPokemonPositionOffset: (number)[];
   combatShoulderCameraAngle: (number)[];
   encounter: V0667_pokemon_litleodatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbugdatapokemonsettingsevolutionbranchitem)[];
+  evolutionBranch: (V0665_pokemon_spewpadatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   irisPhotoEmote1: string;
   isDeployable: boolean;
   isTradable: boolean;
@@ -5487,8 +4190,8 @@ export interface V0714_pokemon_noibatdatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   useIrisFlyingPlacement: boolean;
@@ -5518,11 +4221,11 @@ export interface V0714_pokemon_noibat_normaldatapokemonsettings {
   combatPlayerPokemonPositionOffset: (number)[];
   combatShoulderCameraAngle: (number)[];
   encounter: V0667_pokemon_litleodatapokemonsettingsencounter;
-  evolutionBranch: (V0664_pokemon_scatterbug_archipelagodatapokemonsettingsevolutionbranchitem)[];
+  evolutionBranch: (V0669_pokemon_flabebedatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   irisPhotoEmote1: string;
   isDeployable: boolean;
   isTradable: boolean;
@@ -5535,8 +4238,8 @@ export interface V0714_pokemon_noibat_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   useIrisFlyingPlacement: boolean;
@@ -5561,10 +4264,10 @@ export interface V0715_pokemon_noiverndatapokemonsettings {
   camera: V0666_pokemon_vivillondatapokemonsettingscamera;
   cinematicMoves: (string)[];
   eliteCinematicMove: (string)[];
-  encounter: V0668_pokemon_pyroar_femaledatapokemonsettingsencounter;
+  encounter: V0691_pokemon_dragalgedatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   irisPhotoEmote1: string;
   isDeployable: boolean;
   isTradable: boolean;
@@ -5578,8 +4281,8 @@ export interface V0715_pokemon_noiverndatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   useIrisFlyingPlacement: boolean;
@@ -5604,11 +4307,11 @@ export interface V0715_pokemon_noivern_normaldatapokemonsettings {
   camera: V0666_pokemon_vivillondatapokemonsettingscamera;
   cinematicMoves: (string)[];
   eliteCinematicMove: (string)[];
-  encounter: V0668_pokemon_pyroar_femaledatapokemonsettingsencounter;
+  encounter: V0691_pokemon_dragalgedatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   irisPhotoEmote1: string;
   isDeployable: boolean;
   isTradable: boolean;
@@ -5622,8 +4325,8 @@ export interface V0715_pokemon_noivern_normaldatapokemonsettings {
   pokedexWeightKg: number;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   useIrisFlyingPlacement: boolean;
@@ -5656,13 +4359,13 @@ export interface V0716_pokemon_xerneasdatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
   buddyGroupNumber: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   eliteQuickMove: (string)[];
   encounter: V0716_pokemon_xerneasdatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isTradable: boolean;
   isTransferable: boolean;
   kmBuddyDistance: number;
@@ -5674,8 +4377,8 @@ export interface V0716_pokemon_xerneasdatapokemonsettings {
   pokemonClass: string;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -5691,14 +4394,14 @@ export interface V0716_pokemon_xerneas_normaldatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
   buddyGroupNumber: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   eliteQuickMove: (string)[];
   encounter: V0716_pokemon_xerneasdatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isTradable: boolean;
   isTransferable: boolean;
   kmBuddyDistance: number;
@@ -5710,8 +4413,8 @@ export interface V0716_pokemon_xerneas_normaldatapokemonsettings {
   pokemonClass: string;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   weightStdDev: number;
 }
@@ -5752,7 +4455,7 @@ export interface V0717_pokemon_yveltaldatapokemonsettings {
   encounter: V0717_pokemon_yveltaldatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   irisPhotoEmote1: string;
   isTradable: boolean;
   isTransferable: boolean;
@@ -5765,8 +4468,8 @@ export interface V0717_pokemon_yveltaldatapokemonsettings {
   pokemonClass: string;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   useIrisFlyingPlacement: boolean;
@@ -5793,7 +4496,7 @@ export interface V0717_pokemon_yveltal_normaldatapokemonsettings {
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   irisPhotoEmote1: string;
   isTradable: boolean;
   isTransferable: boolean;
@@ -5806,8 +4509,8 @@ export interface V0717_pokemon_yveltal_normaldatapokemonsettings {
   pokemonClass: string;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   useIrisFlyingPlacement: boolean;
@@ -5846,7 +4549,7 @@ export interface V0718_pokemon_zygardedatapokemonsettings {
   breadTierGroup: string;
   buddyGroupNumber: number;
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   disableTransferToPokemonHome: boolean;
   encounter: V0718_pokemon_zygardedatapokemonsettingsencounter;
@@ -5854,7 +4557,7 @@ export interface V0718_pokemon_zygardedatapokemonsettings {
   evolutionIds: (string)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   kmBuddyDistance: number;
   modelHeight: number;
   modelScaleV2: number;
@@ -5864,8 +4567,8 @@ export interface V0718_pokemon_zygardedatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -5888,7 +4591,7 @@ export interface V0718_pokemon_zygarde_completedatapokemonsettings {
   buddyGroupNumber: number;
   buddyScale: number;
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   disableTransferToPokemonHome: boolean;
   encounter: V0718_pokemon_zygardedatapokemonsettingsencounter;
@@ -5897,7 +4600,7 @@ export interface V0718_pokemon_zygarde_completedatapokemonsettings {
   form: string;
   formChange: (V0676_pokemon_furfroudatapokemonsettingsformchangeitem)[];
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   kmBuddyDistance: number;
   modelHeight: number;
   modelScaleV2: number;
@@ -5907,8 +4610,8 @@ export interface V0718_pokemon_zygarde_completedatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -5934,7 +4637,7 @@ export interface V0718_pokemon_zygarde_complete_fifty_percentdatapokemonsettings
   buddyGroupNumber: number;
   buddyScale: number;
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   disableTransferToPokemonHome: boolean;
   encounter: V0718_pokemon_zygardedatapokemonsettingsencounter;
@@ -5942,7 +4645,7 @@ export interface V0718_pokemon_zygarde_complete_fifty_percentdatapokemonsettings
   form: string;
   formChange: (V0718_pokemon_zygarde_complete_fifty_percentdatapokemonsettingsformchangeitem)[];
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   kmBuddyDistance: number;
   modelHeight: number;
   modelScaleV2: number;
@@ -5952,8 +4655,8 @@ export interface V0718_pokemon_zygarde_complete_fifty_percentdatapokemonsettings
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -5976,7 +4679,7 @@ export interface V0718_pokemon_zygarde_complete_ten_percentdatapokemonsettings {
   breadTierGroup: string;
   buddyGroupNumber: number;
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   disableTransferToPokemonHome: boolean;
   encounter: V0718_pokemon_zygardedatapokemonsettingsencounter;
@@ -5984,7 +4687,7 @@ export interface V0718_pokemon_zygarde_complete_ten_percentdatapokemonsettings {
   form: string;
   formChange: (V0718_pokemon_zygarde_complete_ten_percentdatapokemonsettingsformchangeitem)[];
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   kmBuddyDistance: number;
   modelHeight: number;
   modelScaleV2: number;
@@ -5994,8 +4697,8 @@ export interface V0718_pokemon_zygarde_complete_ten_percentdatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -6014,7 +4717,7 @@ export interface V0718_pokemon_zygarde_fifty_percentdatapokemonsettings {
   buddyGroupNumber: number;
   buddyScale: number;
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   disableTransferToPokemonHome: boolean;
   encounter: V0718_pokemon_zygardedatapokemonsettingsencounter;
@@ -6023,7 +4726,7 @@ export interface V0718_pokemon_zygarde_fifty_percentdatapokemonsettings {
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   kmBuddyDistance: number;
   modelHeight: number;
   modelScaleV2: number;
@@ -6033,8 +4736,8 @@ export interface V0718_pokemon_zygarde_fifty_percentdatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -6052,7 +4755,7 @@ export interface V0718_pokemon_zygarde_ten_percentdatapokemonsettings {
   breadTierGroup: string;
   buddyGroupNumber: number;
   buddyScale: number;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   disableTransferToPokemonHome: boolean;
   encounter: V0718_pokemon_zygardedatapokemonsettingsencounter;
@@ -6061,7 +4764,7 @@ export interface V0718_pokemon_zygarde_ten_percentdatapokemonsettings {
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   kmBuddyDistance: number;
   modelHeight: number;
   modelScaleV2: number;
@@ -6071,8 +4774,8 @@ export interface V0718_pokemon_zygarde_ten_percentdatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -6110,7 +4813,7 @@ export interface V0719_pokemon_dianciedatapokemonsettings {
   evolutionBranch: (V0687_pokemon_malamardatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   kmBuddyDistance: number;
   modelHeight: number;
   modelScale: number;
@@ -6121,9 +4824,9 @@ export interface V0719_pokemon_dianciedatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
   tempEvoOverrides: (V0687_pokemon_malamardatapokemonsettingstempevooverridesitem)[];
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -6149,7 +4852,7 @@ export interface V0719_pokemon_diancie_normaldatapokemonsettings {
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   kmBuddyDistance: number;
   modelHeight: number;
   modelScale: number;
@@ -6160,9 +4863,9 @@ export interface V0719_pokemon_diancie_normaldatapokemonsettings {
   pokemonId: string;
   quickMoves: (string)[];
   raidBossDistanceOffset: number;
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
   tempEvoOverrides: (V0687_pokemon_malamardatapokemonsettingstempevooverridesitem)[];
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -6192,13 +4895,13 @@ export interface V0720_pokemon_hoopadatapokemonsettingsencounter {
 export interface V0720_pokemon_hoopadatapokemonsettings {
   animationTime: (number)[];
   breadTierGroup: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0720_pokemon_hoopadatapokemonsettingsencounter;
   familyId: string;
   formChange: (V0676_pokemon_furfroudatapokemonsettingsformchangeitem)[];
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isTransferable: boolean;
   kmBuddyDistance: number;
   modelHeight: number;
@@ -6209,8 +4912,8 @@ export interface V0720_pokemon_hoopadatapokemonsettings {
   pokemonClass: string;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -6233,7 +4936,7 @@ export interface V0720_pokemon_hoopa_confineddatapokemonsettings {
   form: string;
   formChange: (V0676_pokemon_furfroudatapokemonsettingsformchangeitem)[];
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isTransferable: boolean;
   kmBuddyDistance: number;
   modelHeight: number;
@@ -6244,8 +4947,8 @@ export interface V0720_pokemon_hoopa_confineddatapokemonsettings {
   pokemonClass: string;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   useIrisFlyingPlacement: boolean;
@@ -6290,7 +4993,7 @@ export interface V0720_pokemon_hoopa_unbounddatapokemonsettings {
   form: string;
   formChange: (V0676_pokemon_furfroudatapokemonsettingsformchangeitem)[];
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   isTransferable: boolean;
   kmBuddyDistance: number;
   modelHeight: number;
@@ -6301,8 +5004,8 @@ export interface V0720_pokemon_hoopa_unbounddatapokemonsettings {
   pokemonClass: string;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   useIrisFlyingPlacement: boolean;
@@ -6325,12 +5028,12 @@ export interface V0721_pokemon_volcaniondatapokemonsettings {
   buddyPortraitOffset: (number)[];
   buddyScale: number;
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0716_pokemon_xerneasdatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   kmBuddyDistance: number;
   modelHeight: number;
   modelScale: number;
@@ -6340,8 +5043,8 @@ export interface V0721_pokemon_volcaniondatapokemonsettings {
   pokemonClass: string;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -6363,13 +5066,13 @@ export interface V0721_pokemon_volcanion_normaldatapokemonsettings {
   buddyPortraitOffset: (number)[];
   buddyScale: number;
   buddySize: string;
-  camera: V0650_pokemon_chespindatapokemonsettingscamera;
+  camera: V0654_pokemon_braixendatapokemonsettingscamera;
   cinematicMoves: (string)[];
   encounter: V0716_pokemon_xerneasdatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
-  ibfc: V0650_pokemon_chespindatapokemonsettingsibfc;
+  ibfc: V0654_pokemon_braixendatapokemonsettingsibfc;
   kmBuddyDistance: number;
   modelHeight: number;
   modelScale: number;
@@ -6379,8 +5082,8 @@ export interface V0721_pokemon_volcanion_normaldatapokemonsettings {
   pokemonClass: string;
   pokemonId: string;
   quickMoves: (string)[];
-  stats: V0650_pokemon_chespindatapokemonsettingsstats;
-  thirdMove: V0650_pokemon_chespindatapokemonsettingsthirdmove;
+  stats: V0654_pokemon_braixendatapokemonsettingsstats;
+  thirdMove: V0654_pokemon_braixendatapokemonsettingsthirdmove;
   "type": string;
   type2: string;
   weightStdDev: number;
@@ -6394,23 +5097,166 @@ export interface V0721_pokemon_volcanion_normalEntry {
   data: V0721_pokemon_volcanion_normaldata;
 }
 
+export type PokemonSettingsChespin = PokemonSettingsShared942<"V0650_POKEMON_CHESPIN", "CHESPIN">;
+export type PokemonSettingsFennekin = PokemonSettingsShared942<"V0653_POKEMON_FENNEKIN", "FENNEKIN">;
+
+export type PokemonSettingsChespinNormal = PokemonSettingsShared943<"V0650_POKEMON_CHESPIN_NORMAL", "CHESPIN_NORMAL", "CHESPIN">;
+export type PokemonSettingsFennekinNormal = PokemonSettingsShared943<"V0653_POKEMON_FENNEKIN_NORMAL", "FENNEKIN_NORMAL", "FENNEKIN">;
+
+export type PokemonSettingsQuilladin = PokemonSettingsShared944<"V0651_POKEMON_QUILLADIN", "QUILLADIN">;
+export type PokemonSettingsFrogadier = PokemonSettingsShared944<"V0657_POKEMON_FROGADIER", "FROGADIER">;
+
+export type PokemonSettingsQuilladinNormal = PokemonSettingsShared945<"V0651_POKEMON_QUILLADIN_NORMAL", "QUILLADIN_NORMAL", "QUILLADIN">;
+export type PokemonSettingsFrogadierNormal = PokemonSettingsShared945<"V0657_POKEMON_FROGADIER_NORMAL", "FROGADIER_NORMAL", "FROGADIER">;
+
+export type PokemonSettingsChesnaught = PokemonSettingsShared946<"V0652_POKEMON_CHESNAUGHT", "CHESNAUGHT">;
+export type PokemonSettingsDelphox = PokemonSettingsShared946<"V0655_POKEMON_DELPHOX", "DELPHOX">;
+
+export type PokemonSettingsChesnaughtNormal = PokemonSettingsShared947<"V0652_POKEMON_CHESNAUGHT_NORMAL", "CHESNAUGHT_NORMAL", "CHESNAUGHT">;
+export type PokemonSettingsDelphoxNormal = PokemonSettingsShared947<"V0655_POKEMON_DELPHOX_NORMAL", "DELPHOX_NORMAL", "DELPHOX">;
+
+export type PokemonSettingsScatterbug = PokemonSettingsShared964<"V0664_POKEMON_SCATTERBUG", "SCATTERBUG">;
+export type PokemonSettingsClauncher = PokemonSettingsShared964<"V0692_POKEMON_CLAUNCHER", "CLAUNCHER">;
+
+export type PokemonSettingsScatterbugArchipelago = PokemonSettingsShared965<"V0664_POKEMON_SCATTERBUG_ARCHIPELAGO", "SCATTERBUG_ARCHIPELAGO", "SCATTERBUG">;
+export type PokemonSettingsScatterbugContinental = PokemonSettingsShared965<"V0664_POKEMON_SCATTERBUG_CONTINENTAL", "SCATTERBUG_CONTINENTAL", "SCATTERBUG">;
+export type PokemonSettingsScatterbugElegant = PokemonSettingsShared965<"V0664_POKEMON_SCATTERBUG_ELEGANT", "SCATTERBUG_ELEGANT", "SCATTERBUG">;
+export type PokemonSettingsScatterbugFancy = PokemonSettingsShared965<"V0664_POKEMON_SCATTERBUG_FANCY", "SCATTERBUG_FANCY", "SCATTERBUG">;
+export type PokemonSettingsScatterbugGarden = PokemonSettingsShared965<"V0664_POKEMON_SCATTERBUG_GARDEN", "SCATTERBUG_GARDEN", "SCATTERBUG">;
+export type PokemonSettingsScatterbugHighPlains = PokemonSettingsShared965<"V0664_POKEMON_SCATTERBUG_HIGH_PLAINS", "SCATTERBUG_HIGH_PLAINS", "SCATTERBUG">;
+export type PokemonSettingsScatterbugIcySnow = PokemonSettingsShared965<"V0664_POKEMON_SCATTERBUG_ICY_SNOW", "SCATTERBUG_ICY_SNOW", "SCATTERBUG">;
+export type PokemonSettingsScatterbugJungle = PokemonSettingsShared965<"V0664_POKEMON_SCATTERBUG_JUNGLE", "SCATTERBUG_JUNGLE", "SCATTERBUG">;
+export type PokemonSettingsScatterbugMarine = PokemonSettingsShared965<"V0664_POKEMON_SCATTERBUG_MARINE", "SCATTERBUG_MARINE", "SCATTERBUG">;
+export type PokemonSettingsScatterbugMeadow = PokemonSettingsShared965<"V0664_POKEMON_SCATTERBUG_MEADOW", "SCATTERBUG_MEADOW", "SCATTERBUG">;
+export type PokemonSettingsScatterbugModern = PokemonSettingsShared965<"V0664_POKEMON_SCATTERBUG_MODERN", "SCATTERBUG_MODERN", "SCATTERBUG">;
+export type PokemonSettingsScatterbugMonsoon = PokemonSettingsShared965<"V0664_POKEMON_SCATTERBUG_MONSOON", "SCATTERBUG_MONSOON", "SCATTERBUG">;
+export type PokemonSettingsScatterbugOcean = PokemonSettingsShared965<"V0664_POKEMON_SCATTERBUG_OCEAN", "SCATTERBUG_OCEAN", "SCATTERBUG">;
+export type PokemonSettingsScatterbugPokeball = PokemonSettingsShared965<"V0664_POKEMON_SCATTERBUG_POKEBALL", "SCATTERBUG_POKEBALL", "SCATTERBUG">;
+export type PokemonSettingsScatterbugPolar = PokemonSettingsShared965<"V0664_POKEMON_SCATTERBUG_POLAR", "SCATTERBUG_POLAR", "SCATTERBUG">;
+export type PokemonSettingsScatterbugRiver = PokemonSettingsShared965<"V0664_POKEMON_SCATTERBUG_RIVER", "SCATTERBUG_RIVER", "SCATTERBUG">;
+export type PokemonSettingsScatterbugSandstorm = PokemonSettingsShared965<"V0664_POKEMON_SCATTERBUG_SANDSTORM", "SCATTERBUG_SANDSTORM", "SCATTERBUG">;
+export type PokemonSettingsScatterbugSavanna = PokemonSettingsShared965<"V0664_POKEMON_SCATTERBUG_SAVANNA", "SCATTERBUG_SAVANNA", "SCATTERBUG">;
+export type PokemonSettingsScatterbugSun = PokemonSettingsShared965<"V0664_POKEMON_SCATTERBUG_SUN", "SCATTERBUG_SUN", "SCATTERBUG">;
+export type PokemonSettingsScatterbugTundra = PokemonSettingsShared965<"V0664_POKEMON_SCATTERBUG_TUNDRA", "SCATTERBUG_TUNDRA", "SCATTERBUG">;
+export type PokemonSettingsClauncherNormal = PokemonSettingsShared965<"V0692_POKEMON_CLAUNCHER_NORMAL", "CLAUNCHER_NORMAL", "CLAUNCHER">;
+
+export type PokemonSettingsArchipelago = PokemonSettingsShared967<"V0665_POKEMON_SPEWPA_ARCHIPELAGO", "SPEWPA_ARCHIPELAGO">;
+export type PokemonSettingsContinental = PokemonSettingsShared967<"V0665_POKEMON_SPEWPA_CONTINENTAL", "SPEWPA_CONTINENTAL">;
+export type PokemonSettingsElegant = PokemonSettingsShared967<"V0665_POKEMON_SPEWPA_ELEGANT", "SPEWPA_ELEGANT">;
+export type PokemonSettingsFancy = PokemonSettingsShared967<"V0665_POKEMON_SPEWPA_FANCY", "SPEWPA_FANCY">;
+export type PokemonSettingsGarden = PokemonSettingsShared967<"V0665_POKEMON_SPEWPA_GARDEN", "SPEWPA_GARDEN">;
+export type PokemonSettingsHighPlains = PokemonSettingsShared967<"V0665_POKEMON_SPEWPA_HIGH_PLAINS", "SPEWPA_HIGH_PLAINS">;
+export type PokemonSettingsIcySnow = PokemonSettingsShared967<"V0665_POKEMON_SPEWPA_ICY_SNOW", "SPEWPA_ICY_SNOW">;
+export type PokemonSettingsJungle = PokemonSettingsShared967<"V0665_POKEMON_SPEWPA_JUNGLE", "SPEWPA_JUNGLE">;
+export type PokemonSettingsMarine = PokemonSettingsShared967<"V0665_POKEMON_SPEWPA_MARINE", "SPEWPA_MARINE">;
+export type PokemonSettingsMeadow = PokemonSettingsShared967<"V0665_POKEMON_SPEWPA_MEADOW", "SPEWPA_MEADOW">;
+export type PokemonSettingsModern = PokemonSettingsShared967<"V0665_POKEMON_SPEWPA_MODERN", "SPEWPA_MODERN">;
+export type PokemonSettingsMonsoon = PokemonSettingsShared967<"V0665_POKEMON_SPEWPA_MONSOON", "SPEWPA_MONSOON">;
+export type PokemonSettingsOcean = PokemonSettingsShared967<"V0665_POKEMON_SPEWPA_OCEAN", "SPEWPA_OCEAN">;
+export type PokemonSettingsPokeball = PokemonSettingsShared967<"V0665_POKEMON_SPEWPA_POKEBALL", "SPEWPA_POKEBALL">;
+export type PokemonSettingsPolar = PokemonSettingsShared967<"V0665_POKEMON_SPEWPA_POLAR", "SPEWPA_POLAR">;
+export type PokemonSettingsRiver = PokemonSettingsShared967<"V0665_POKEMON_SPEWPA_RIVER", "SPEWPA_RIVER">;
+export type PokemonSettingsSandstorm = PokemonSettingsShared967<"V0665_POKEMON_SPEWPA_SANDSTORM", "SPEWPA_SANDSTORM">;
+export type PokemonSettingsSavanna = PokemonSettingsShared967<"V0665_POKEMON_SPEWPA_SAVANNA", "SPEWPA_SAVANNA">;
+export type PokemonSettingsSun = PokemonSettingsShared967<"V0665_POKEMON_SPEWPA_SUN", "SPEWPA_SUN">;
+export type PokemonSettingsTundra = PokemonSettingsShared967<"V0665_POKEMON_SPEWPA_TUNDRA", "SPEWPA_TUNDRA">;
+
+export type PokemonSettingsArchipelago2 = PokemonSettingsShared969<"V0666_POKEMON_VIVILLON_ARCHIPELAGO", "VIVILLON_ARCHIPELAGO">;
+export type PokemonSettingsContinental2 = PokemonSettingsShared969<"V0666_POKEMON_VIVILLON_CONTINENTAL", "VIVILLON_CONTINENTAL">;
+export type PokemonSettingsElegant2 = PokemonSettingsShared969<"V0666_POKEMON_VIVILLON_ELEGANT", "VIVILLON_ELEGANT">;
+export type PokemonSettingsFancy2 = PokemonSettingsShared969<"V0666_POKEMON_VIVILLON_FANCY", "VIVILLON_FANCY">;
+export type PokemonSettingsGarden2 = PokemonSettingsShared969<"V0666_POKEMON_VIVILLON_GARDEN", "VIVILLON_GARDEN">;
+export type PokemonSettingsHighPlains2 = PokemonSettingsShared969<"V0666_POKEMON_VIVILLON_HIGH_PLAINS", "VIVILLON_HIGH_PLAINS">;
+export type PokemonSettingsIcySnow2 = PokemonSettingsShared969<"V0666_POKEMON_VIVILLON_ICY_SNOW", "VIVILLON_ICY_SNOW">;
+export type PokemonSettingsJungle2 = PokemonSettingsShared969<"V0666_POKEMON_VIVILLON_JUNGLE", "VIVILLON_JUNGLE">;
+export type PokemonSettingsMarine2 = PokemonSettingsShared969<"V0666_POKEMON_VIVILLON_MARINE", "VIVILLON_MARINE">;
+export type PokemonSettingsMeadow2 = PokemonSettingsShared969<"V0666_POKEMON_VIVILLON_MEADOW", "VIVILLON_MEADOW">;
+export type PokemonSettingsModern2 = PokemonSettingsShared969<"V0666_POKEMON_VIVILLON_MODERN", "VIVILLON_MODERN">;
+export type PokemonSettingsMonsoon2 = PokemonSettingsShared969<"V0666_POKEMON_VIVILLON_MONSOON", "VIVILLON_MONSOON">;
+export type PokemonSettingsOcean2 = PokemonSettingsShared969<"V0666_POKEMON_VIVILLON_OCEAN", "VIVILLON_OCEAN">;
+export type PokemonSettingsPokeball2 = PokemonSettingsShared969<"V0666_POKEMON_VIVILLON_POKEBALL", "VIVILLON_POKEBALL">;
+export type PokemonSettingsPolar2 = PokemonSettingsShared969<"V0666_POKEMON_VIVILLON_POLAR", "VIVILLON_POLAR">;
+export type PokemonSettingsRiver2 = PokemonSettingsShared969<"V0666_POKEMON_VIVILLON_RIVER", "VIVILLON_RIVER">;
+export type PokemonSettingsSandstorm2 = PokemonSettingsShared969<"V0666_POKEMON_VIVILLON_SANDSTORM", "VIVILLON_SANDSTORM">;
+export type PokemonSettingsSavanna2 = PokemonSettingsShared969<"V0666_POKEMON_VIVILLON_SAVANNA", "VIVILLON_SAVANNA">;
+export type PokemonSettingsSun2 = PokemonSettingsShared969<"V0666_POKEMON_VIVILLON_SUN", "VIVILLON_SUN">;
+export type PokemonSettingsTundra2 = PokemonSettingsShared969<"V0666_POKEMON_VIVILLON_TUNDRA", "VIVILLON_TUNDRA">;
+
+export type PokemonSettingsFemale = PokemonSettingsShared973<"V0668_POKEMON_PYROAR_FEMALE", "PYROAR_FEMALE">;
+export type PokemonSettingsNormal = PokemonSettingsShared973<"V0668_POKEMON_PYROAR_NORMAL", "PYROAR_NORMAL">;
+
+export type PokemonSettingsBlue = PokemonSettingsShared975<"V0669_POKEMON_FLABEBE_BLUE", "FLABEBE_BLUE">;
+export type PokemonSettingsOrange = PokemonSettingsShared975<"V0669_POKEMON_FLABEBE_ORANGE", "FLABEBE_ORANGE">;
+export type PokemonSettingsRed = PokemonSettingsShared975<"V0669_POKEMON_FLABEBE_RED", "FLABEBE_RED">;
+export type PokemonSettingsWhite = PokemonSettingsShared975<"V0669_POKEMON_FLABEBE_WHITE", "FLABEBE_WHITE">;
+export type PokemonSettingsYellow = PokemonSettingsShared975<"V0669_POKEMON_FLABEBE_YELLOW", "FLABEBE_YELLOW">;
+
+export type PokemonSettingsBlue2 = PokemonSettingsShared977<"V0670_POKEMON_FLOETTE_BLUE", "FLOETTE_BLUE">;
+export type PokemonSettingsOrange2 = PokemonSettingsShared977<"V0670_POKEMON_FLOETTE_ORANGE", "FLOETTE_ORANGE">;
+export type PokemonSettingsRed2 = PokemonSettingsShared977<"V0670_POKEMON_FLOETTE_RED", "FLOETTE_RED">;
+export type PokemonSettingsWhite2 = PokemonSettingsShared977<"V0670_POKEMON_FLOETTE_WHITE", "FLOETTE_WHITE">;
+export type PokemonSettingsYellow2 = PokemonSettingsShared977<"V0670_POKEMON_FLOETTE_YELLOW", "FLOETTE_YELLOW">;
+
+export type PokemonSettingsBlue3 = PokemonSettingsShared979<"V0671_POKEMON_FLORGES_BLUE", "FLORGES_BLUE">;
+export type PokemonSettingsOrange3 = PokemonSettingsShared979<"V0671_POKEMON_FLORGES_ORANGE", "FLORGES_ORANGE">;
+export type PokemonSettingsRed3 = PokemonSettingsShared979<"V0671_POKEMON_FLORGES_RED", "FLORGES_RED">;
+export type PokemonSettingsWhite3 = PokemonSettingsShared979<"V0671_POKEMON_FLORGES_WHITE", "FLORGES_WHITE">;
+export type PokemonSettingsYellow3 = PokemonSettingsShared979<"V0671_POKEMON_FLORGES_YELLOW", "FLORGES_YELLOW">;
+
+export type PokemonSettingsDandy = PokemonSettingsShared989<"V0676_POKEMON_FURFROU_DANDY", "FURFROU_DANDY">;
+export type PokemonSettingsDebutante = PokemonSettingsShared989<"V0676_POKEMON_FURFROU_DEBUTANTE", "FURFROU_DEBUTANTE">;
+export type PokemonSettingsDiamond = PokemonSettingsShared989<"V0676_POKEMON_FURFROU_DIAMOND", "FURFROU_DIAMOND">;
+export type PokemonSettingsHeart = PokemonSettingsShared989<"V0676_POKEMON_FURFROU_HEART", "FURFROU_HEART">;
+export type PokemonSettingsKabuki = PokemonSettingsShared989<"V0676_POKEMON_FURFROU_KABUKI", "FURFROU_KABUKI">;
+export type PokemonSettingsLaReine = PokemonSettingsShared989<"V0676_POKEMON_FURFROU_LA_REINE", "FURFROU_LA_REINE">;
+export type PokemonSettingsMatron = PokemonSettingsShared989<"V0676_POKEMON_FURFROU_MATRON", "FURFROU_MATRON">;
+export type PokemonSettingsNatural = PokemonSettingsShared989<"V0676_POKEMON_FURFROU_NATURAL", "FURFROU_NATURAL">;
+export type PokemonSettingsPharaoh = PokemonSettingsShared989<"V0676_POKEMON_FURFROU_PHARAOH", "FURFROU_PHARAOH">;
+export type PokemonSettingsStar = PokemonSettingsShared989<"V0676_POKEMON_FURFROU_STAR", "FURFROU_STAR">;
+
+export type PokemonSettingsFemale2 = PokemonSettingsShared993<"V0678_POKEMON_MEOWSTIC_FEMALE", "MEOWSTIC_FEMALE">;
+export type PokemonSettingsNormal2 = PokemonSettingsShared993<"V0678_POKEMON_MEOWSTIC_NORMAL", "MEOWSTIC_NORMAL">;
+
+export type PokemonSettingsBlade = PokemonSettingsShared999<"V0681_POKEMON_AEGISLASH_BLADE", "AEGISLASH_BLADE">;
+export type PokemonSettingsShield = PokemonSettingsShared999<"V0681_POKEMON_AEGISLASH_SHIELD", "AEGISLASH_SHIELD">;
+
+export type PokemonSettingsAromatisse = PokemonSettingsShared1002<"V0683_POKEMON_AROMATISSE", "AROMATISSE">;
+export type PokemonSettingsSlurpuff = PokemonSettingsShared1002<"V0685_POKEMON_SLURPUFF", "SLURPUFF">;
+
+export type PokemonSettingsAromatisseNormal = PokemonSettingsShared1003<"V0683_POKEMON_AROMATISSE_NORMAL", "AROMATISSE_NORMAL", "AROMATISSE">;
+export type PokemonSettingsSlurpuffNormal = PokemonSettingsShared1003<"V0685_POKEMON_SLURPUFF_NORMAL", "SLURPUFF_NORMAL", "SLURPUFF">;
+
+export type PokemonSettingsTyrantrum = PokemonSettingsShared1026<"V0697_POKEMON_TYRANTRUM", "TYRANTRUM">;
+export type PokemonSettingsAurorus = PokemonSettingsShared1026<"V0699_POKEMON_AURORUS", "AURORUS">;
+
+export type PokemonSettingsTyrantrumNormal = PokemonSettingsShared1027<"V0697_POKEMON_TYRANTRUM_NORMAL", "TYRANTRUM_NORMAL", "TYRANTRUM">;
+export type PokemonSettingsAurorusNormal = PokemonSettingsShared1027<"V0699_POKEMON_AURORUS_NORMAL", "AURORUS_NORMAL", "AURORUS">;
+
+export type PokemonSettingsAverage = PokemonSettingsShared1051<"V0710_POKEMON_PUMPKABOO_AVERAGE", "PUMPKABOO_AVERAGE">;
+export type PokemonSettingsLarge = PokemonSettingsShared1051<"V0710_POKEMON_PUMPKABOO_LARGE", "PUMPKABOO_LARGE">;
+export type PokemonSettingsSmall = PokemonSettingsShared1051<"V0710_POKEMON_PUMPKABOO_SMALL", "PUMPKABOO_SMALL">;
+
+export type PokemonSettingsAverage2 = PokemonSettingsShared1054<"V0711_POKEMON_GOURGEIST_AVERAGE", "GOURGEIST_AVERAGE">;
+export type PokemonSettingsLarge2 = PokemonSettingsShared1054<"V0711_POKEMON_GOURGEIST_LARGE", "GOURGEIST_LARGE">;
+export type PokemonSettingsSmall2 = PokemonSettingsShared1054<"V0711_POKEMON_GOURGEIST_SMALL", "GOURGEIST_SMALL">;
+
 export interface PokemonSettingsGen6MasterfileByTemplateId {
-  "V0650_POKEMON_CHESPIN": V0650_pokemon_chespinEntry;
-  "V0650_POKEMON_CHESPIN_NORMAL": V0650_pokemon_chespin_normalEntry;
-  "V0651_POKEMON_QUILLADIN": V0651_pokemon_quilladinEntry;
-  "V0651_POKEMON_QUILLADIN_NORMAL": V0651_pokemon_quilladin_normalEntry;
-  "V0652_POKEMON_CHESNAUGHT": V0652_pokemon_chesnaughtEntry;
-  "V0652_POKEMON_CHESNAUGHT_NORMAL": V0652_pokemon_chesnaught_normalEntry;
-  "V0653_POKEMON_FENNEKIN": V0653_pokemon_fennekinEntry;
-  "V0653_POKEMON_FENNEKIN_NORMAL": V0653_pokemon_fennekin_normalEntry;
+  "V0650_POKEMON_CHESPIN": PokemonSettingsChespin;
+  "V0653_POKEMON_FENNEKIN": PokemonSettingsFennekin;
+  "V0650_POKEMON_CHESPIN_NORMAL": PokemonSettingsChespinNormal;
+  "V0653_POKEMON_FENNEKIN_NORMAL": PokemonSettingsFennekinNormal;
+  "V0651_POKEMON_QUILLADIN": PokemonSettingsQuilladin;
+  "V0657_POKEMON_FROGADIER": PokemonSettingsFrogadier;
+  "V0651_POKEMON_QUILLADIN_NORMAL": PokemonSettingsQuilladinNormal;
+  "V0657_POKEMON_FROGADIER_NORMAL": PokemonSettingsFrogadierNormal;
+  "V0652_POKEMON_CHESNAUGHT": PokemonSettingsChesnaught;
+  "V0655_POKEMON_DELPHOX": PokemonSettingsDelphox;
+  "V0652_POKEMON_CHESNAUGHT_NORMAL": PokemonSettingsChesnaughtNormal;
+  "V0655_POKEMON_DELPHOX_NORMAL": PokemonSettingsDelphoxNormal;
   "V0654_POKEMON_BRAIXEN": V0654_pokemon_braixenEntry;
   "V0654_POKEMON_BRAIXEN_NORMAL": V0654_pokemon_braixen_normalEntry;
-  "V0655_POKEMON_DELPHOX": V0655_pokemon_delphoxEntry;
-  "V0655_POKEMON_DELPHOX_NORMAL": V0655_pokemon_delphox_normalEntry;
   "V0656_POKEMON_FROAKIE": V0656_pokemon_froakieEntry;
   "V0656_POKEMON_FROAKIE_NORMAL": V0656_pokemon_froakie_normalEntry;
-  "V0657_POKEMON_FROGADIER": V0657_pokemon_frogadierEntry;
-  "V0657_POKEMON_FROGADIER_NORMAL": V0657_pokemon_frogadier_normalEntry;
   "V0658_POKEMON_GRENINJA": V0658_pokemon_greninjaEntry;
   "V0658_POKEMON_GRENINJA_NORMAL": V0658_pokemon_greninja_normalEntry;
   "V0659_POKEMON_BUNNELBY": V0659_pokemon_bunnelbyEntry;
@@ -6423,92 +5269,94 @@ export interface PokemonSettingsGen6MasterfileByTemplateId {
   "V0662_POKEMON_FLETCHINDER_NORMAL": V0662_pokemon_fletchinder_normalEntry;
   "V0663_POKEMON_TALONFLAME": V0663_pokemon_talonflameEntry;
   "V0663_POKEMON_TALONFLAME_NORMAL": V0663_pokemon_talonflame_normalEntry;
-  "V0664_POKEMON_SCATTERBUG": V0664_pokemon_scatterbugEntry;
-  "V0664_POKEMON_SCATTERBUG_ARCHIPELAGO": V0664_pokemon_scatterbug_archipelagoEntry;
-  "V0664_POKEMON_SCATTERBUG_CONTINENTAL": V0664_pokemon_scatterbug_continentalEntry;
-  "V0664_POKEMON_SCATTERBUG_ELEGANT": V0664_pokemon_scatterbug_elegantEntry;
-  "V0664_POKEMON_SCATTERBUG_FANCY": V0664_pokemon_scatterbug_fancyEntry;
-  "V0664_POKEMON_SCATTERBUG_GARDEN": V0664_pokemon_scatterbug_gardenEntry;
-  "V0664_POKEMON_SCATTERBUG_HIGH_PLAINS": V0664_pokemon_scatterbug_high_plainsEntry;
-  "V0664_POKEMON_SCATTERBUG_ICY_SNOW": V0664_pokemon_scatterbug_icy_snowEntry;
-  "V0664_POKEMON_SCATTERBUG_JUNGLE": V0664_pokemon_scatterbug_jungleEntry;
-  "V0664_POKEMON_SCATTERBUG_MARINE": V0664_pokemon_scatterbug_marineEntry;
-  "V0664_POKEMON_SCATTERBUG_MEADOW": V0664_pokemon_scatterbug_meadowEntry;
-  "V0664_POKEMON_SCATTERBUG_MODERN": V0664_pokemon_scatterbug_modernEntry;
-  "V0664_POKEMON_SCATTERBUG_MONSOON": V0664_pokemon_scatterbug_monsoonEntry;
-  "V0664_POKEMON_SCATTERBUG_OCEAN": V0664_pokemon_scatterbug_oceanEntry;
-  "V0664_POKEMON_SCATTERBUG_POKEBALL": V0664_pokemon_scatterbug_pokeballEntry;
-  "V0664_POKEMON_SCATTERBUG_POLAR": V0664_pokemon_scatterbug_polarEntry;
-  "V0664_POKEMON_SCATTERBUG_RIVER": V0664_pokemon_scatterbug_riverEntry;
-  "V0664_POKEMON_SCATTERBUG_SANDSTORM": V0664_pokemon_scatterbug_sandstormEntry;
-  "V0664_POKEMON_SCATTERBUG_SAVANNA": V0664_pokemon_scatterbug_savannaEntry;
-  "V0664_POKEMON_SCATTERBUG_SUN": V0664_pokemon_scatterbug_sunEntry;
-  "V0664_POKEMON_SCATTERBUG_TUNDRA": V0664_pokemon_scatterbug_tundraEntry;
+  "V0664_POKEMON_SCATTERBUG": PokemonSettingsScatterbug;
+  "V0692_POKEMON_CLAUNCHER": PokemonSettingsClauncher;
+  "V0664_POKEMON_SCATTERBUG_ARCHIPELAGO": PokemonSettingsScatterbugArchipelago;
+  "V0664_POKEMON_SCATTERBUG_CONTINENTAL": PokemonSettingsScatterbugContinental;
+  "V0664_POKEMON_SCATTERBUG_ELEGANT": PokemonSettingsScatterbugElegant;
+  "V0664_POKEMON_SCATTERBUG_FANCY": PokemonSettingsScatterbugFancy;
+  "V0664_POKEMON_SCATTERBUG_GARDEN": PokemonSettingsScatterbugGarden;
+  "V0664_POKEMON_SCATTERBUG_HIGH_PLAINS": PokemonSettingsScatterbugHighPlains;
+  "V0664_POKEMON_SCATTERBUG_ICY_SNOW": PokemonSettingsScatterbugIcySnow;
+  "V0664_POKEMON_SCATTERBUG_JUNGLE": PokemonSettingsScatterbugJungle;
+  "V0664_POKEMON_SCATTERBUG_MARINE": PokemonSettingsScatterbugMarine;
+  "V0664_POKEMON_SCATTERBUG_MEADOW": PokemonSettingsScatterbugMeadow;
+  "V0664_POKEMON_SCATTERBUG_MODERN": PokemonSettingsScatterbugModern;
+  "V0664_POKEMON_SCATTERBUG_MONSOON": PokemonSettingsScatterbugMonsoon;
+  "V0664_POKEMON_SCATTERBUG_OCEAN": PokemonSettingsScatterbugOcean;
+  "V0664_POKEMON_SCATTERBUG_POKEBALL": PokemonSettingsScatterbugPokeball;
+  "V0664_POKEMON_SCATTERBUG_POLAR": PokemonSettingsScatterbugPolar;
+  "V0664_POKEMON_SCATTERBUG_RIVER": PokemonSettingsScatterbugRiver;
+  "V0664_POKEMON_SCATTERBUG_SANDSTORM": PokemonSettingsScatterbugSandstorm;
+  "V0664_POKEMON_SCATTERBUG_SAVANNA": PokemonSettingsScatterbugSavanna;
+  "V0664_POKEMON_SCATTERBUG_SUN": PokemonSettingsScatterbugSun;
+  "V0664_POKEMON_SCATTERBUG_TUNDRA": PokemonSettingsScatterbugTundra;
+  "V0692_POKEMON_CLAUNCHER_NORMAL": PokemonSettingsClauncherNormal;
   "V0665_POKEMON_SPEWPA": V0665_pokemon_spewpaEntry;
-  "V0665_POKEMON_SPEWPA_ARCHIPELAGO": V0665_pokemon_spewpa_archipelagoEntry;
-  "V0665_POKEMON_SPEWPA_CONTINENTAL": V0665_pokemon_spewpa_continentalEntry;
-  "V0665_POKEMON_SPEWPA_ELEGANT": V0665_pokemon_spewpa_elegantEntry;
-  "V0665_POKEMON_SPEWPA_FANCY": V0665_pokemon_spewpa_fancyEntry;
-  "V0665_POKEMON_SPEWPA_GARDEN": V0665_pokemon_spewpa_gardenEntry;
-  "V0665_POKEMON_SPEWPA_HIGH_PLAINS": V0665_pokemon_spewpa_high_plainsEntry;
-  "V0665_POKEMON_SPEWPA_ICY_SNOW": V0665_pokemon_spewpa_icy_snowEntry;
-  "V0665_POKEMON_SPEWPA_JUNGLE": V0665_pokemon_spewpa_jungleEntry;
-  "V0665_POKEMON_SPEWPA_MARINE": V0665_pokemon_spewpa_marineEntry;
-  "V0665_POKEMON_SPEWPA_MEADOW": V0665_pokemon_spewpa_meadowEntry;
-  "V0665_POKEMON_SPEWPA_MODERN": V0665_pokemon_spewpa_modernEntry;
-  "V0665_POKEMON_SPEWPA_MONSOON": V0665_pokemon_spewpa_monsoonEntry;
-  "V0665_POKEMON_SPEWPA_OCEAN": V0665_pokemon_spewpa_oceanEntry;
-  "V0665_POKEMON_SPEWPA_POKEBALL": V0665_pokemon_spewpa_pokeballEntry;
-  "V0665_POKEMON_SPEWPA_POLAR": V0665_pokemon_spewpa_polarEntry;
-  "V0665_POKEMON_SPEWPA_RIVER": V0665_pokemon_spewpa_riverEntry;
-  "V0665_POKEMON_SPEWPA_SANDSTORM": V0665_pokemon_spewpa_sandstormEntry;
-  "V0665_POKEMON_SPEWPA_SAVANNA": V0665_pokemon_spewpa_savannaEntry;
-  "V0665_POKEMON_SPEWPA_SUN": V0665_pokemon_spewpa_sunEntry;
-  "V0665_POKEMON_SPEWPA_TUNDRA": V0665_pokemon_spewpa_tundraEntry;
+  "V0665_POKEMON_SPEWPA_ARCHIPELAGO": PokemonSettingsArchipelago;
+  "V0665_POKEMON_SPEWPA_CONTINENTAL": PokemonSettingsContinental;
+  "V0665_POKEMON_SPEWPA_ELEGANT": PokemonSettingsElegant;
+  "V0665_POKEMON_SPEWPA_FANCY": PokemonSettingsFancy;
+  "V0665_POKEMON_SPEWPA_GARDEN": PokemonSettingsGarden;
+  "V0665_POKEMON_SPEWPA_HIGH_PLAINS": PokemonSettingsHighPlains;
+  "V0665_POKEMON_SPEWPA_ICY_SNOW": PokemonSettingsIcySnow;
+  "V0665_POKEMON_SPEWPA_JUNGLE": PokemonSettingsJungle;
+  "V0665_POKEMON_SPEWPA_MARINE": PokemonSettingsMarine;
+  "V0665_POKEMON_SPEWPA_MEADOW": PokemonSettingsMeadow;
+  "V0665_POKEMON_SPEWPA_MODERN": PokemonSettingsModern;
+  "V0665_POKEMON_SPEWPA_MONSOON": PokemonSettingsMonsoon;
+  "V0665_POKEMON_SPEWPA_OCEAN": PokemonSettingsOcean;
+  "V0665_POKEMON_SPEWPA_POKEBALL": PokemonSettingsPokeball;
+  "V0665_POKEMON_SPEWPA_POLAR": PokemonSettingsPolar;
+  "V0665_POKEMON_SPEWPA_RIVER": PokemonSettingsRiver;
+  "V0665_POKEMON_SPEWPA_SANDSTORM": PokemonSettingsSandstorm;
+  "V0665_POKEMON_SPEWPA_SAVANNA": PokemonSettingsSavanna;
+  "V0665_POKEMON_SPEWPA_SUN": PokemonSettingsSun;
+  "V0665_POKEMON_SPEWPA_TUNDRA": PokemonSettingsTundra;
   "V0666_POKEMON_VIVILLON": V0666_pokemon_vivillonEntry;
-  "V0666_POKEMON_VIVILLON_ARCHIPELAGO": V0666_pokemon_vivillon_archipelagoEntry;
-  "V0666_POKEMON_VIVILLON_CONTINENTAL": V0666_pokemon_vivillon_continentalEntry;
-  "V0666_POKEMON_VIVILLON_ELEGANT": V0666_pokemon_vivillon_elegantEntry;
-  "V0666_POKEMON_VIVILLON_FANCY": V0666_pokemon_vivillon_fancyEntry;
-  "V0666_POKEMON_VIVILLON_GARDEN": V0666_pokemon_vivillon_gardenEntry;
-  "V0666_POKEMON_VIVILLON_HIGH_PLAINS": V0666_pokemon_vivillon_high_plainsEntry;
-  "V0666_POKEMON_VIVILLON_ICY_SNOW": V0666_pokemon_vivillon_icy_snowEntry;
-  "V0666_POKEMON_VIVILLON_JUNGLE": V0666_pokemon_vivillon_jungleEntry;
-  "V0666_POKEMON_VIVILLON_MARINE": V0666_pokemon_vivillon_marineEntry;
-  "V0666_POKEMON_VIVILLON_MEADOW": V0666_pokemon_vivillon_meadowEntry;
-  "V0666_POKEMON_VIVILLON_MODERN": V0666_pokemon_vivillon_modernEntry;
-  "V0666_POKEMON_VIVILLON_MONSOON": V0666_pokemon_vivillon_monsoonEntry;
-  "V0666_POKEMON_VIVILLON_OCEAN": V0666_pokemon_vivillon_oceanEntry;
-  "V0666_POKEMON_VIVILLON_POKEBALL": V0666_pokemon_vivillon_pokeballEntry;
-  "V0666_POKEMON_VIVILLON_POLAR": V0666_pokemon_vivillon_polarEntry;
-  "V0666_POKEMON_VIVILLON_RIVER": V0666_pokemon_vivillon_riverEntry;
-  "V0666_POKEMON_VIVILLON_SANDSTORM": V0666_pokemon_vivillon_sandstormEntry;
-  "V0666_POKEMON_VIVILLON_SAVANNA": V0666_pokemon_vivillon_savannaEntry;
-  "V0666_POKEMON_VIVILLON_SUN": V0666_pokemon_vivillon_sunEntry;
-  "V0666_POKEMON_VIVILLON_TUNDRA": V0666_pokemon_vivillon_tundraEntry;
+  "V0666_POKEMON_VIVILLON_ARCHIPELAGO": PokemonSettingsArchipelago2;
+  "V0666_POKEMON_VIVILLON_CONTINENTAL": PokemonSettingsContinental2;
+  "V0666_POKEMON_VIVILLON_ELEGANT": PokemonSettingsElegant2;
+  "V0666_POKEMON_VIVILLON_FANCY": PokemonSettingsFancy2;
+  "V0666_POKEMON_VIVILLON_GARDEN": PokemonSettingsGarden2;
+  "V0666_POKEMON_VIVILLON_HIGH_PLAINS": PokemonSettingsHighPlains2;
+  "V0666_POKEMON_VIVILLON_ICY_SNOW": PokemonSettingsIcySnow2;
+  "V0666_POKEMON_VIVILLON_JUNGLE": PokemonSettingsJungle2;
+  "V0666_POKEMON_VIVILLON_MARINE": PokemonSettingsMarine2;
+  "V0666_POKEMON_VIVILLON_MEADOW": PokemonSettingsMeadow2;
+  "V0666_POKEMON_VIVILLON_MODERN": PokemonSettingsModern2;
+  "V0666_POKEMON_VIVILLON_MONSOON": PokemonSettingsMonsoon2;
+  "V0666_POKEMON_VIVILLON_OCEAN": PokemonSettingsOcean2;
+  "V0666_POKEMON_VIVILLON_POKEBALL": PokemonSettingsPokeball2;
+  "V0666_POKEMON_VIVILLON_POLAR": PokemonSettingsPolar2;
+  "V0666_POKEMON_VIVILLON_RIVER": PokemonSettingsRiver2;
+  "V0666_POKEMON_VIVILLON_SANDSTORM": PokemonSettingsSandstorm2;
+  "V0666_POKEMON_VIVILLON_SAVANNA": PokemonSettingsSavanna2;
+  "V0666_POKEMON_VIVILLON_SUN": PokemonSettingsSun2;
+  "V0666_POKEMON_VIVILLON_TUNDRA": PokemonSettingsTundra2;
   "V0667_POKEMON_LITLEO": V0667_pokemon_litleoEntry;
   "V0667_POKEMON_LITLEO_NORMAL": V0667_pokemon_litleo_normalEntry;
   "V0668_POKEMON_PYROAR": V0668_pokemon_pyroarEntry;
-  "V0668_POKEMON_PYROAR_FEMALE": V0668_pokemon_pyroar_femaleEntry;
-  "V0668_POKEMON_PYROAR_NORMAL": V0668_pokemon_pyroar_normalEntry;
+  "V0668_POKEMON_PYROAR_FEMALE": PokemonSettingsFemale;
+  "V0668_POKEMON_PYROAR_NORMAL": PokemonSettingsNormal;
   "V0669_POKEMON_FLABEBE": V0669_pokemon_flabebeEntry;
-  "V0669_POKEMON_FLABEBE_BLUE": V0669_pokemon_flabebe_blueEntry;
-  "V0669_POKEMON_FLABEBE_ORANGE": V0669_pokemon_flabebe_orangeEntry;
-  "V0669_POKEMON_FLABEBE_RED": V0669_pokemon_flabebe_redEntry;
-  "V0669_POKEMON_FLABEBE_WHITE": V0669_pokemon_flabebe_whiteEntry;
-  "V0669_POKEMON_FLABEBE_YELLOW": V0669_pokemon_flabebe_yellowEntry;
+  "V0669_POKEMON_FLABEBE_BLUE": PokemonSettingsBlue;
+  "V0669_POKEMON_FLABEBE_ORANGE": PokemonSettingsOrange;
+  "V0669_POKEMON_FLABEBE_RED": PokemonSettingsRed;
+  "V0669_POKEMON_FLABEBE_WHITE": PokemonSettingsWhite;
+  "V0669_POKEMON_FLABEBE_YELLOW": PokemonSettingsYellow;
   "V0670_POKEMON_FLOETTE": V0670_pokemon_floetteEntry;
-  "V0670_POKEMON_FLOETTE_BLUE": V0670_pokemon_floette_blueEntry;
-  "V0670_POKEMON_FLOETTE_ORANGE": V0670_pokemon_floette_orangeEntry;
-  "V0670_POKEMON_FLOETTE_RED": V0670_pokemon_floette_redEntry;
-  "V0670_POKEMON_FLOETTE_WHITE": V0670_pokemon_floette_whiteEntry;
-  "V0670_POKEMON_FLOETTE_YELLOW": V0670_pokemon_floette_yellowEntry;
+  "V0670_POKEMON_FLOETTE_BLUE": PokemonSettingsBlue2;
+  "V0670_POKEMON_FLOETTE_ORANGE": PokemonSettingsOrange2;
+  "V0670_POKEMON_FLOETTE_RED": PokemonSettingsRed2;
+  "V0670_POKEMON_FLOETTE_WHITE": PokemonSettingsWhite2;
+  "V0670_POKEMON_FLOETTE_YELLOW": PokemonSettingsYellow2;
   "V0671_POKEMON_FLORGES": V0671_pokemon_florgesEntry;
-  "V0671_POKEMON_FLORGES_BLUE": V0671_pokemon_florges_blueEntry;
-  "V0671_POKEMON_FLORGES_ORANGE": V0671_pokemon_florges_orangeEntry;
-  "V0671_POKEMON_FLORGES_RED": V0671_pokemon_florges_redEntry;
-  "V0671_POKEMON_FLORGES_WHITE": V0671_pokemon_florges_whiteEntry;
-  "V0671_POKEMON_FLORGES_YELLOW": V0671_pokemon_florges_yellowEntry;
+  "V0671_POKEMON_FLORGES_BLUE": PokemonSettingsBlue3;
+  "V0671_POKEMON_FLORGES_ORANGE": PokemonSettingsOrange3;
+  "V0671_POKEMON_FLORGES_RED": PokemonSettingsRed3;
+  "V0671_POKEMON_FLORGES_WHITE": PokemonSettingsWhite3;
+  "V0671_POKEMON_FLORGES_YELLOW": PokemonSettingsYellow3;
   "V0672_POKEMON_SKIDDO": V0672_pokemon_skiddoEntry;
   "V0672_POKEMON_SKIDDO_NORMAL": V0672_pokemon_skiddo_normalEntry;
   "V0673_POKEMON_GOGOAT": V0673_pokemon_gogoatEntry;
@@ -6518,36 +5366,36 @@ export interface PokemonSettingsGen6MasterfileByTemplateId {
   "V0675_POKEMON_PANGORO": V0675_pokemon_pangoroEntry;
   "V0675_POKEMON_PANGORO_NORMAL": V0675_pokemon_pangoro_normalEntry;
   "V0676_POKEMON_FURFROU": V0676_pokemon_furfrouEntry;
-  "V0676_POKEMON_FURFROU_DANDY": V0676_pokemon_furfrou_dandyEntry;
-  "V0676_POKEMON_FURFROU_DEBUTANTE": V0676_pokemon_furfrou_debutanteEntry;
-  "V0676_POKEMON_FURFROU_DIAMOND": V0676_pokemon_furfrou_diamondEntry;
-  "V0676_POKEMON_FURFROU_HEART": V0676_pokemon_furfrou_heartEntry;
-  "V0676_POKEMON_FURFROU_KABUKI": V0676_pokemon_furfrou_kabukiEntry;
-  "V0676_POKEMON_FURFROU_LA_REINE": V0676_pokemon_furfrou_la_reineEntry;
-  "V0676_POKEMON_FURFROU_MATRON": V0676_pokemon_furfrou_matronEntry;
-  "V0676_POKEMON_FURFROU_NATURAL": V0676_pokemon_furfrou_naturalEntry;
-  "V0676_POKEMON_FURFROU_PHARAOH": V0676_pokemon_furfrou_pharaohEntry;
-  "V0676_POKEMON_FURFROU_STAR": V0676_pokemon_furfrou_starEntry;
+  "V0676_POKEMON_FURFROU_DANDY": PokemonSettingsDandy;
+  "V0676_POKEMON_FURFROU_DEBUTANTE": PokemonSettingsDebutante;
+  "V0676_POKEMON_FURFROU_DIAMOND": PokemonSettingsDiamond;
+  "V0676_POKEMON_FURFROU_HEART": PokemonSettingsHeart;
+  "V0676_POKEMON_FURFROU_KABUKI": PokemonSettingsKabuki;
+  "V0676_POKEMON_FURFROU_LA_REINE": PokemonSettingsLaReine;
+  "V0676_POKEMON_FURFROU_MATRON": PokemonSettingsMatron;
+  "V0676_POKEMON_FURFROU_NATURAL": PokemonSettingsNatural;
+  "V0676_POKEMON_FURFROU_PHARAOH": PokemonSettingsPharaoh;
+  "V0676_POKEMON_FURFROU_STAR": PokemonSettingsStar;
   "V0677_POKEMON_ESPURR": V0677_pokemon_espurrEntry;
   "V0677_POKEMON_ESPURR_NORMAL": V0677_pokemon_espurr_normalEntry;
   "V0678_POKEMON_MEOWSTIC": V0678_pokemon_meowsticEntry;
-  "V0678_POKEMON_MEOWSTIC_FEMALE": V0678_pokemon_meowstic_femaleEntry;
-  "V0678_POKEMON_MEOWSTIC_NORMAL": V0678_pokemon_meowstic_normalEntry;
+  "V0678_POKEMON_MEOWSTIC_FEMALE": PokemonSettingsFemale2;
+  "V0678_POKEMON_MEOWSTIC_NORMAL": PokemonSettingsNormal2;
   "V0679_POKEMON_HONEDGE": V0679_pokemon_honedgeEntry;
   "V0679_POKEMON_HONEDGE_NORMAL": V0679_pokemon_honedge_normalEntry;
   "V0680_POKEMON_DOUBLADE": V0680_pokemon_doubladeEntry;
   "V0680_POKEMON_DOUBLADE_NORMAL": V0680_pokemon_doublade_normalEntry;
   "V0681_POKEMON_AEGISLASH": V0681_pokemon_aegislashEntry;
-  "V0681_POKEMON_AEGISLASH_BLADE": V0681_pokemon_aegislash_bladeEntry;
-  "V0681_POKEMON_AEGISLASH_SHIELD": V0681_pokemon_aegislash_shieldEntry;
+  "V0681_POKEMON_AEGISLASH_BLADE": PokemonSettingsBlade;
+  "V0681_POKEMON_AEGISLASH_SHIELD": PokemonSettingsShield;
   "V0682_POKEMON_SPRITZEE": V0682_pokemon_spritzeeEntry;
   "V0682_POKEMON_SPRITZEE_NORMAL": V0682_pokemon_spritzee_normalEntry;
-  "V0683_POKEMON_AROMATISSE": V0683_pokemon_aromatisseEntry;
-  "V0683_POKEMON_AROMATISSE_NORMAL": V0683_pokemon_aromatisse_normalEntry;
+  "V0683_POKEMON_AROMATISSE": PokemonSettingsAromatisse;
+  "V0685_POKEMON_SLURPUFF": PokemonSettingsSlurpuff;
+  "V0683_POKEMON_AROMATISSE_NORMAL": PokemonSettingsAromatisseNormal;
+  "V0685_POKEMON_SLURPUFF_NORMAL": PokemonSettingsSlurpuffNormal;
   "V0684_POKEMON_SWIRLIX": V0684_pokemon_swirlixEntry;
   "V0684_POKEMON_SWIRLIX_NORMAL": V0684_pokemon_swirlix_normalEntry;
-  "V0685_POKEMON_SLURPUFF": V0685_pokemon_slurpuffEntry;
-  "V0685_POKEMON_SLURPUFF_NORMAL": V0685_pokemon_slurpuff_normalEntry;
   "V0686_POKEMON_INKAY": V0686_pokemon_inkayEntry;
   "V0686_POKEMON_INKAY_NORMAL": V0686_pokemon_inkay_normalEntry;
   "V0687_POKEMON_MALAMAR": V0687_pokemon_malamarEntry;
@@ -6560,8 +5408,6 @@ export interface PokemonSettingsGen6MasterfileByTemplateId {
   "V0690_POKEMON_SKRELP_NORMAL": V0690_pokemon_skrelp_normalEntry;
   "V0691_POKEMON_DRAGALGE": V0691_pokemon_dragalgeEntry;
   "V0691_POKEMON_DRAGALGE_NORMAL": V0691_pokemon_dragalge_normalEntry;
-  "V0692_POKEMON_CLAUNCHER": V0692_pokemon_clauncherEntry;
-  "V0692_POKEMON_CLAUNCHER_NORMAL": V0692_pokemon_clauncher_normalEntry;
   "V0693_POKEMON_CLAWITZER": V0693_pokemon_clawitzerEntry;
   "V0693_POKEMON_CLAWITZER_NORMAL": V0693_pokemon_clawitzer_normalEntry;
   "V0694_POKEMON_HELIOPTILE": V0694_pokemon_helioptileEntry;
@@ -6570,12 +5416,12 @@ export interface PokemonSettingsGen6MasterfileByTemplateId {
   "V0695_POKEMON_HELIOLISK_NORMAL": V0695_pokemon_heliolisk_normalEntry;
   "V0696_POKEMON_TYRUNT": V0696_pokemon_tyruntEntry;
   "V0696_POKEMON_TYRUNT_NORMAL": V0696_pokemon_tyrunt_normalEntry;
-  "V0697_POKEMON_TYRANTRUM": V0697_pokemon_tyrantrumEntry;
-  "V0697_POKEMON_TYRANTRUM_NORMAL": V0697_pokemon_tyrantrum_normalEntry;
+  "V0697_POKEMON_TYRANTRUM": PokemonSettingsTyrantrum;
+  "V0699_POKEMON_AURORUS": PokemonSettingsAurorus;
+  "V0697_POKEMON_TYRANTRUM_NORMAL": PokemonSettingsTyrantrumNormal;
+  "V0699_POKEMON_AURORUS_NORMAL": PokemonSettingsAurorusNormal;
   "V0698_POKEMON_AMAURA": V0698_pokemon_amauraEntry;
   "V0698_POKEMON_AMAURA_NORMAL": V0698_pokemon_amaura_normalEntry;
-  "V0699_POKEMON_AURORUS": V0699_pokemon_aurorusEntry;
-  "V0699_POKEMON_AURORUS_NORMAL": V0699_pokemon_aurorus_normalEntry;
   "V0700_POKEMON_SYLVEON": V0700_pokemon_sylveonEntry;
   "V0700_POKEMON_SYLVEON_NORMAL": V0700_pokemon_sylveon_normalEntry;
   "V0701_POKEMON_HAWLUCHA": V0701_pokemon_hawluchaEntry;
@@ -6597,14 +5443,14 @@ export interface PokemonSettingsGen6MasterfileByTemplateId {
   "V0709_POKEMON_TREVENANT": V0709_pokemon_trevenantEntry;
   "V0709_POKEMON_TREVENANT_NORMAL": V0709_pokemon_trevenant_normalEntry;
   "V0710_POKEMON_PUMPKABOO": V0710_pokemon_pumpkabooEntry;
-  "V0710_POKEMON_PUMPKABOO_AVERAGE": V0710_pokemon_pumpkaboo_averageEntry;
-  "V0710_POKEMON_PUMPKABOO_LARGE": V0710_pokemon_pumpkaboo_largeEntry;
-  "V0710_POKEMON_PUMPKABOO_SMALL": V0710_pokemon_pumpkaboo_smallEntry;
+  "V0710_POKEMON_PUMPKABOO_AVERAGE": PokemonSettingsAverage;
+  "V0710_POKEMON_PUMPKABOO_LARGE": PokemonSettingsLarge;
+  "V0710_POKEMON_PUMPKABOO_SMALL": PokemonSettingsSmall;
   "V0710_POKEMON_PUMPKABOO_SUPER": V0710_pokemon_pumpkaboo_superEntry;
   "V0711_POKEMON_GOURGEIST": V0711_pokemon_gourgeistEntry;
-  "V0711_POKEMON_GOURGEIST_AVERAGE": V0711_pokemon_gourgeist_averageEntry;
-  "V0711_POKEMON_GOURGEIST_LARGE": V0711_pokemon_gourgeist_largeEntry;
-  "V0711_POKEMON_GOURGEIST_SMALL": V0711_pokemon_gourgeist_smallEntry;
+  "V0711_POKEMON_GOURGEIST_AVERAGE": PokemonSettingsAverage2;
+  "V0711_POKEMON_GOURGEIST_LARGE": PokemonSettingsLarge2;
+  "V0711_POKEMON_GOURGEIST_SMALL": PokemonSettingsSmall2;
   "V0711_POKEMON_GOURGEIST_SUPER": V0711_pokemon_gourgeist_superEntry;
   "V0712_POKEMON_BERGMITE": V0712_pokemon_bergmiteEntry;
   "V0712_POKEMON_BERGMITE_NORMAL": V0712_pokemon_bergmite_normalEntry;
@@ -6635,56 +5481,56 @@ export interface PokemonSettingsGen6MasterfileByTemplateId {
 }
 
 export interface PokemonSettingsGen6ByDexId {
-  "0650": V0650_pokemon_chespinEntry | V0650_pokemon_chespin_normalEntry;
-  "0651": V0651_pokemon_quilladinEntry | V0651_pokemon_quilladin_normalEntry;
-  "0652": V0652_pokemon_chesnaughtEntry | V0652_pokemon_chesnaught_normalEntry;
-  "0653": V0653_pokemon_fennekinEntry | V0653_pokemon_fennekin_normalEntry;
+  "0650": PokemonSettingsChespin | PokemonSettingsChespinNormal;
+  "0651": PokemonSettingsQuilladin | PokemonSettingsQuilladinNormal;
+  "0652": PokemonSettingsChesnaught | PokemonSettingsChesnaughtNormal;
+  "0653": PokemonSettingsFennekin | PokemonSettingsFennekinNormal;
   "0654": V0654_pokemon_braixenEntry | V0654_pokemon_braixen_normalEntry;
-  "0655": V0655_pokemon_delphoxEntry | V0655_pokemon_delphox_normalEntry;
+  "0655": PokemonSettingsDelphox | PokemonSettingsDelphoxNormal;
   "0656": V0656_pokemon_froakieEntry | V0656_pokemon_froakie_normalEntry;
-  "0657": V0657_pokemon_frogadierEntry | V0657_pokemon_frogadier_normalEntry;
+  "0657": PokemonSettingsFrogadier | PokemonSettingsFrogadierNormal;
   "0658": V0658_pokemon_greninjaEntry | V0658_pokemon_greninja_normalEntry;
   "0659": V0659_pokemon_bunnelbyEntry | V0659_pokemon_bunnelby_normalEntry;
   "0660": V0660_pokemon_diggersbyEntry | V0660_pokemon_diggersby_normalEntry;
   "0661": V0661_pokemon_fletchlingEntry | V0661_pokemon_fletchling_normalEntry;
   "0662": V0662_pokemon_fletchinderEntry | V0662_pokemon_fletchinder_normalEntry;
   "0663": V0663_pokemon_talonflameEntry | V0663_pokemon_talonflame_normalEntry;
-  "0664": V0664_pokemon_scatterbugEntry | V0664_pokemon_scatterbug_archipelagoEntry | V0664_pokemon_scatterbug_continentalEntry | V0664_pokemon_scatterbug_elegantEntry | V0664_pokemon_scatterbug_fancyEntry | V0664_pokemon_scatterbug_gardenEntry | V0664_pokemon_scatterbug_high_plainsEntry | V0664_pokemon_scatterbug_icy_snowEntry | V0664_pokemon_scatterbug_jungleEntry | V0664_pokemon_scatterbug_marineEntry | V0664_pokemon_scatterbug_meadowEntry | V0664_pokemon_scatterbug_modernEntry | V0664_pokemon_scatterbug_monsoonEntry | V0664_pokemon_scatterbug_oceanEntry | V0664_pokemon_scatterbug_pokeballEntry | V0664_pokemon_scatterbug_polarEntry | V0664_pokemon_scatterbug_riverEntry | V0664_pokemon_scatterbug_sandstormEntry | V0664_pokemon_scatterbug_savannaEntry | V0664_pokemon_scatterbug_sunEntry | V0664_pokemon_scatterbug_tundraEntry;
-  "0665": V0665_pokemon_spewpaEntry | V0665_pokemon_spewpa_archipelagoEntry | V0665_pokemon_spewpa_continentalEntry | V0665_pokemon_spewpa_elegantEntry | V0665_pokemon_spewpa_fancyEntry | V0665_pokemon_spewpa_gardenEntry | V0665_pokemon_spewpa_high_plainsEntry | V0665_pokemon_spewpa_icy_snowEntry | V0665_pokemon_spewpa_jungleEntry | V0665_pokemon_spewpa_marineEntry | V0665_pokemon_spewpa_meadowEntry | V0665_pokemon_spewpa_modernEntry | V0665_pokemon_spewpa_monsoonEntry | V0665_pokemon_spewpa_oceanEntry | V0665_pokemon_spewpa_pokeballEntry | V0665_pokemon_spewpa_polarEntry | V0665_pokemon_spewpa_riverEntry | V0665_pokemon_spewpa_sandstormEntry | V0665_pokemon_spewpa_savannaEntry | V0665_pokemon_spewpa_sunEntry | V0665_pokemon_spewpa_tundraEntry;
-  "0666": V0666_pokemon_vivillonEntry | V0666_pokemon_vivillon_archipelagoEntry | V0666_pokemon_vivillon_continentalEntry | V0666_pokemon_vivillon_elegantEntry | V0666_pokemon_vivillon_fancyEntry | V0666_pokemon_vivillon_gardenEntry | V0666_pokemon_vivillon_high_plainsEntry | V0666_pokemon_vivillon_icy_snowEntry | V0666_pokemon_vivillon_jungleEntry | V0666_pokemon_vivillon_marineEntry | V0666_pokemon_vivillon_meadowEntry | V0666_pokemon_vivillon_modernEntry | V0666_pokemon_vivillon_monsoonEntry | V0666_pokemon_vivillon_oceanEntry | V0666_pokemon_vivillon_pokeballEntry | V0666_pokemon_vivillon_polarEntry | V0666_pokemon_vivillon_riverEntry | V0666_pokemon_vivillon_sandstormEntry | V0666_pokemon_vivillon_savannaEntry | V0666_pokemon_vivillon_sunEntry | V0666_pokemon_vivillon_tundraEntry;
+  "0664": PokemonSettingsScatterbug | PokemonSettingsScatterbugArchipelago | PokemonSettingsScatterbugContinental | PokemonSettingsScatterbugElegant | PokemonSettingsScatterbugFancy | PokemonSettingsScatterbugGarden | PokemonSettingsScatterbugHighPlains | PokemonSettingsScatterbugIcySnow | PokemonSettingsScatterbugJungle | PokemonSettingsScatterbugMarine | PokemonSettingsScatterbugMeadow | PokemonSettingsScatterbugModern | PokemonSettingsScatterbugMonsoon | PokemonSettingsScatterbugOcean | PokemonSettingsScatterbugPokeball | PokemonSettingsScatterbugPolar | PokemonSettingsScatterbugRiver | PokemonSettingsScatterbugSandstorm | PokemonSettingsScatterbugSavanna | PokemonSettingsScatterbugSun | PokemonSettingsScatterbugTundra;
+  "0665": V0665_pokemon_spewpaEntry | PokemonSettingsArchipelago | PokemonSettingsContinental | PokemonSettingsElegant | PokemonSettingsFancy | PokemonSettingsGarden | PokemonSettingsHighPlains | PokemonSettingsIcySnow | PokemonSettingsJungle | PokemonSettingsMarine | PokemonSettingsMeadow | PokemonSettingsModern | PokemonSettingsMonsoon | PokemonSettingsOcean | PokemonSettingsPokeball | PokemonSettingsPolar | PokemonSettingsRiver | PokemonSettingsSandstorm | PokemonSettingsSavanna | PokemonSettingsSun | PokemonSettingsTundra;
+  "0666": V0666_pokemon_vivillonEntry | PokemonSettingsArchipelago2 | PokemonSettingsContinental2 | PokemonSettingsElegant2 | PokemonSettingsFancy2 | PokemonSettingsGarden2 | PokemonSettingsHighPlains2 | PokemonSettingsIcySnow2 | PokemonSettingsJungle2 | PokemonSettingsMarine2 | PokemonSettingsMeadow2 | PokemonSettingsModern2 | PokemonSettingsMonsoon2 | PokemonSettingsOcean2 | PokemonSettingsPokeball2 | PokemonSettingsPolar2 | PokemonSettingsRiver2 | PokemonSettingsSandstorm2 | PokemonSettingsSavanna2 | PokemonSettingsSun2 | PokemonSettingsTundra2;
   "0667": V0667_pokemon_litleoEntry | V0667_pokemon_litleo_normalEntry;
-  "0668": V0668_pokemon_pyroarEntry | V0668_pokemon_pyroar_femaleEntry | V0668_pokemon_pyroar_normalEntry;
-  "0669": V0669_pokemon_flabebeEntry | V0669_pokemon_flabebe_blueEntry | V0669_pokemon_flabebe_orangeEntry | V0669_pokemon_flabebe_redEntry | V0669_pokemon_flabebe_whiteEntry | V0669_pokemon_flabebe_yellowEntry;
-  "0670": V0670_pokemon_floetteEntry | V0670_pokemon_floette_blueEntry | V0670_pokemon_floette_orangeEntry | V0670_pokemon_floette_redEntry | V0670_pokemon_floette_whiteEntry | V0670_pokemon_floette_yellowEntry;
-  "0671": V0671_pokemon_florgesEntry | V0671_pokemon_florges_blueEntry | V0671_pokemon_florges_orangeEntry | V0671_pokemon_florges_redEntry | V0671_pokemon_florges_whiteEntry | V0671_pokemon_florges_yellowEntry;
+  "0668": V0668_pokemon_pyroarEntry | PokemonSettingsFemale | PokemonSettingsNormal;
+  "0669": V0669_pokemon_flabebeEntry | PokemonSettingsBlue | PokemonSettingsOrange | PokemonSettingsRed | PokemonSettingsWhite | PokemonSettingsYellow;
+  "0670": V0670_pokemon_floetteEntry | PokemonSettingsBlue2 | PokemonSettingsOrange2 | PokemonSettingsRed2 | PokemonSettingsWhite2 | PokemonSettingsYellow2;
+  "0671": V0671_pokemon_florgesEntry | PokemonSettingsBlue3 | PokemonSettingsOrange3 | PokemonSettingsRed3 | PokemonSettingsWhite3 | PokemonSettingsYellow3;
   "0672": V0672_pokemon_skiddoEntry | V0672_pokemon_skiddo_normalEntry;
   "0673": V0673_pokemon_gogoatEntry | V0673_pokemon_gogoat_normalEntry;
   "0674": V0674_pokemon_panchamEntry | V0674_pokemon_pancham_normalEntry;
   "0675": V0675_pokemon_pangoroEntry | V0675_pokemon_pangoro_normalEntry;
-  "0676": V0676_pokemon_furfrouEntry | V0676_pokemon_furfrou_dandyEntry | V0676_pokemon_furfrou_debutanteEntry | V0676_pokemon_furfrou_diamondEntry | V0676_pokemon_furfrou_heartEntry | V0676_pokemon_furfrou_kabukiEntry | V0676_pokemon_furfrou_la_reineEntry | V0676_pokemon_furfrou_matronEntry | V0676_pokemon_furfrou_naturalEntry | V0676_pokemon_furfrou_pharaohEntry | V0676_pokemon_furfrou_starEntry;
+  "0676": V0676_pokemon_furfrouEntry | PokemonSettingsDandy | PokemonSettingsDebutante | PokemonSettingsDiamond | PokemonSettingsHeart | PokemonSettingsKabuki | PokemonSettingsLaReine | PokemonSettingsMatron | PokemonSettingsNatural | PokemonSettingsPharaoh | PokemonSettingsStar;
   "0677": V0677_pokemon_espurrEntry | V0677_pokemon_espurr_normalEntry;
-  "0678": V0678_pokemon_meowsticEntry | V0678_pokemon_meowstic_femaleEntry | V0678_pokemon_meowstic_normalEntry;
+  "0678": V0678_pokemon_meowsticEntry | PokemonSettingsFemale2 | PokemonSettingsNormal2;
   "0679": V0679_pokemon_honedgeEntry | V0679_pokemon_honedge_normalEntry;
   "0680": V0680_pokemon_doubladeEntry | V0680_pokemon_doublade_normalEntry;
-  "0681": V0681_pokemon_aegislashEntry | V0681_pokemon_aegislash_bladeEntry | V0681_pokemon_aegislash_shieldEntry;
+  "0681": V0681_pokemon_aegislashEntry | PokemonSettingsBlade | PokemonSettingsShield;
   "0682": V0682_pokemon_spritzeeEntry | V0682_pokemon_spritzee_normalEntry;
-  "0683": V0683_pokemon_aromatisseEntry | V0683_pokemon_aromatisse_normalEntry;
+  "0683": PokemonSettingsAromatisse | PokemonSettingsAromatisseNormal;
   "0684": V0684_pokemon_swirlixEntry | V0684_pokemon_swirlix_normalEntry;
-  "0685": V0685_pokemon_slurpuffEntry | V0685_pokemon_slurpuff_normalEntry;
+  "0685": PokemonSettingsSlurpuff | PokemonSettingsSlurpuffNormal;
   "0686": V0686_pokemon_inkayEntry | V0686_pokemon_inkay_normalEntry;
   "0687": V0687_pokemon_malamarEntry | V0687_pokemon_malamar_normalEntry;
   "0688": V0688_pokemon_binacleEntry | V0688_pokemon_binacle_normalEntry;
   "0689": V0689_pokemon_barbaracleEntry | V0689_pokemon_barbaracle_normalEntry;
   "0690": V0690_pokemon_skrelpEntry | V0690_pokemon_skrelp_normalEntry;
   "0691": V0691_pokemon_dragalgeEntry | V0691_pokemon_dragalge_normalEntry;
-  "0692": V0692_pokemon_clauncherEntry | V0692_pokemon_clauncher_normalEntry;
+  "0692": PokemonSettingsClauncher | PokemonSettingsClauncherNormal;
   "0693": V0693_pokemon_clawitzerEntry | V0693_pokemon_clawitzer_normalEntry;
   "0694": V0694_pokemon_helioptileEntry | V0694_pokemon_helioptile_normalEntry;
   "0695": V0695_pokemon_helioliskEntry | V0695_pokemon_heliolisk_normalEntry;
   "0696": V0696_pokemon_tyruntEntry | V0696_pokemon_tyrunt_normalEntry;
-  "0697": V0697_pokemon_tyrantrumEntry | V0697_pokemon_tyrantrum_normalEntry;
+  "0697": PokemonSettingsTyrantrum | PokemonSettingsTyrantrumNormal;
   "0698": V0698_pokemon_amauraEntry | V0698_pokemon_amaura_normalEntry;
-  "0699": V0699_pokemon_aurorusEntry | V0699_pokemon_aurorus_normalEntry;
+  "0699": PokemonSettingsAurorus | PokemonSettingsAurorusNormal;
   "0700": V0700_pokemon_sylveonEntry | V0700_pokemon_sylveon_normalEntry;
   "0701": V0701_pokemon_hawluchaEntry | V0701_pokemon_hawlucha_normalEntry;
   "0702": V0702_pokemon_dedenneEntry | V0702_pokemon_dedenne_normalEntry;
@@ -6695,8 +5541,8 @@ export interface PokemonSettingsGen6ByDexId {
   "0707": V0707_pokemon_klefkiEntry | V0707_pokemon_klefki_normalEntry;
   "0708": V0708_pokemon_phantumpEntry | V0708_pokemon_phantump_normalEntry;
   "0709": V0709_pokemon_trevenantEntry | V0709_pokemon_trevenant_normalEntry;
-  "0710": V0710_pokemon_pumpkabooEntry | V0710_pokemon_pumpkaboo_averageEntry | V0710_pokemon_pumpkaboo_largeEntry | V0710_pokemon_pumpkaboo_smallEntry | V0710_pokemon_pumpkaboo_superEntry;
-  "0711": V0711_pokemon_gourgeistEntry | V0711_pokemon_gourgeist_averageEntry | V0711_pokemon_gourgeist_largeEntry | V0711_pokemon_gourgeist_smallEntry | V0711_pokemon_gourgeist_superEntry;
+  "0710": V0710_pokemon_pumpkabooEntry | PokemonSettingsAverage | PokemonSettingsLarge | PokemonSettingsSmall | V0710_pokemon_pumpkaboo_superEntry;
+  "0711": V0711_pokemon_gourgeistEntry | PokemonSettingsAverage2 | PokemonSettingsLarge2 | PokemonSettingsSmall2 | V0711_pokemon_gourgeist_superEntry;
   "0712": V0712_pokemon_bergmiteEntry | V0712_pokemon_bergmite_normalEntry;
   "0713": V0713_pokemon_avaluggEntry | V0713_pokemon_avalugg_hisuianEntry | V0713_pokemon_avalugg_normalEntry;
   "0714": V0714_pokemon_noibatEntry | V0714_pokemon_noibat_normalEntry;
@@ -6710,10 +5556,10 @@ export interface PokemonSettingsGen6ByDexId {
 }
 
 export interface PokemonSettingsGen6ByPokemonId {
-  "AEGISLASH": V0681_pokemon_aegislashEntry | V0681_pokemon_aegislash_bladeEntry | V0681_pokemon_aegislash_shieldEntry;
+  "AEGISLASH": V0681_pokemon_aegislashEntry | PokemonSettingsBlade | PokemonSettingsShield;
   "AMAURA": V0698_pokemon_amauraEntry | V0698_pokemon_amaura_normalEntry;
-  "AROMATISSE": V0683_pokemon_aromatisseEntry | V0683_pokemon_aromatisse_normalEntry;
-  "AURORUS": V0699_pokemon_aurorusEntry | V0699_pokemon_aurorus_normalEntry;
+  "AROMATISSE": PokemonSettingsAromatisse | PokemonSettingsAromatisseNormal;
+  "AURORUS": PokemonSettingsAurorus | PokemonSettingsAurorusNormal;
   "AVALUGG": V0713_pokemon_avaluggEntry | V0713_pokemon_avalugg_hisuianEntry | V0713_pokemon_avalugg_normalEntry;
   "BARBARACLE": V0689_pokemon_barbaracleEntry | V0689_pokemon_barbaracle_normalEntry;
   "BERGMITE": V0712_pokemon_bergmiteEntry | V0712_pokemon_bergmite_normalEntry;
@@ -6721,30 +5567,30 @@ export interface PokemonSettingsGen6ByPokemonId {
   "BRAIXEN": V0654_pokemon_braixenEntry | V0654_pokemon_braixen_normalEntry;
   "BUNNELBY": V0659_pokemon_bunnelbyEntry | V0659_pokemon_bunnelby_normalEntry;
   "CARBINK": V0703_pokemon_carbinkEntry | V0703_pokemon_carbink_normalEntry;
-  "CHESNAUGHT": V0652_pokemon_chesnaughtEntry | V0652_pokemon_chesnaught_normalEntry;
-  "CHESPIN": V0650_pokemon_chespinEntry | V0650_pokemon_chespin_normalEntry;
-  "CLAUNCHER": V0692_pokemon_clauncherEntry | V0692_pokemon_clauncher_normalEntry;
+  "CHESNAUGHT": PokemonSettingsChesnaught | PokemonSettingsChesnaughtNormal;
+  "CHESPIN": PokemonSettingsChespin | PokemonSettingsChespinNormal;
+  "CLAUNCHER": PokemonSettingsClauncher | PokemonSettingsClauncherNormal;
   "CLAWITZER": V0693_pokemon_clawitzerEntry | V0693_pokemon_clawitzer_normalEntry;
   "DEDENNE": V0702_pokemon_dedenneEntry | V0702_pokemon_dedenne_normalEntry;
-  "DELPHOX": V0655_pokemon_delphoxEntry | V0655_pokemon_delphox_normalEntry;
+  "DELPHOX": PokemonSettingsDelphox | PokemonSettingsDelphoxNormal;
   "DIANCIE": V0719_pokemon_diancieEntry | V0719_pokemon_diancie_normalEntry;
   "DIGGERSBY": V0660_pokemon_diggersbyEntry | V0660_pokemon_diggersby_normalEntry;
   "DOUBLADE": V0680_pokemon_doubladeEntry | V0680_pokemon_doublade_normalEntry;
   "DRAGALGE": V0691_pokemon_dragalgeEntry | V0691_pokemon_dragalge_normalEntry;
   "ESPURR": V0677_pokemon_espurrEntry | V0677_pokemon_espurr_normalEntry;
-  "FENNEKIN": V0653_pokemon_fennekinEntry | V0653_pokemon_fennekin_normalEntry;
-  "FLABEBE": V0669_pokemon_flabebeEntry | V0669_pokemon_flabebe_blueEntry | V0669_pokemon_flabebe_orangeEntry | V0669_pokemon_flabebe_redEntry | V0669_pokemon_flabebe_whiteEntry | V0669_pokemon_flabebe_yellowEntry;
+  "FENNEKIN": PokemonSettingsFennekin | PokemonSettingsFennekinNormal;
+  "FLABEBE": V0669_pokemon_flabebeEntry | PokemonSettingsBlue | PokemonSettingsOrange | PokemonSettingsRed | PokemonSettingsWhite | PokemonSettingsYellow;
   "FLETCHINDER": V0662_pokemon_fletchinderEntry | V0662_pokemon_fletchinder_normalEntry;
   "FLETCHLING": V0661_pokemon_fletchlingEntry | V0661_pokemon_fletchling_normalEntry;
-  "FLOETTE": V0670_pokemon_floetteEntry | V0670_pokemon_floette_blueEntry | V0670_pokemon_floette_orangeEntry | V0670_pokemon_floette_redEntry | V0670_pokemon_floette_whiteEntry | V0670_pokemon_floette_yellowEntry;
-  "FLORGES": V0671_pokemon_florgesEntry | V0671_pokemon_florges_blueEntry | V0671_pokemon_florges_orangeEntry | V0671_pokemon_florges_redEntry | V0671_pokemon_florges_whiteEntry | V0671_pokemon_florges_yellowEntry;
+  "FLOETTE": V0670_pokemon_floetteEntry | PokemonSettingsBlue2 | PokemonSettingsOrange2 | PokemonSettingsRed2 | PokemonSettingsWhite2 | PokemonSettingsYellow2;
+  "FLORGES": V0671_pokemon_florgesEntry | PokemonSettingsBlue3 | PokemonSettingsOrange3 | PokemonSettingsRed3 | PokemonSettingsWhite3 | PokemonSettingsYellow3;
   "FROAKIE": V0656_pokemon_froakieEntry | V0656_pokemon_froakie_normalEntry;
-  "FROGADIER": V0657_pokemon_frogadierEntry | V0657_pokemon_frogadier_normalEntry;
-  "FURFROU": V0676_pokemon_furfrouEntry | V0676_pokemon_furfrou_dandyEntry | V0676_pokemon_furfrou_debutanteEntry | V0676_pokemon_furfrou_diamondEntry | V0676_pokemon_furfrou_heartEntry | V0676_pokemon_furfrou_kabukiEntry | V0676_pokemon_furfrou_la_reineEntry | V0676_pokemon_furfrou_matronEntry | V0676_pokemon_furfrou_naturalEntry | V0676_pokemon_furfrou_pharaohEntry | V0676_pokemon_furfrou_starEntry;
+  "FROGADIER": PokemonSettingsFrogadier | PokemonSettingsFrogadierNormal;
+  "FURFROU": V0676_pokemon_furfrouEntry | PokemonSettingsDandy | PokemonSettingsDebutante | PokemonSettingsDiamond | PokemonSettingsHeart | PokemonSettingsKabuki | PokemonSettingsLaReine | PokemonSettingsMatron | PokemonSettingsNatural | PokemonSettingsPharaoh | PokemonSettingsStar;
   "GOGOAT": V0673_pokemon_gogoatEntry | V0673_pokemon_gogoat_normalEntry;
   "GOODRA": V0706_pokemon_goodraEntry | V0706_pokemon_goodra_normalEntry;
   "GOOMY": V0704_pokemon_goomyEntry | V0704_pokemon_goomy_normalEntry;
-  "GOURGEIST": V0711_pokemon_gourgeistEntry | V0711_pokemon_gourgeist_averageEntry | V0711_pokemon_gourgeist_largeEntry | V0711_pokemon_gourgeist_smallEntry | V0711_pokemon_gourgeist_superEntry;
+  "GOURGEIST": V0711_pokemon_gourgeistEntry | PokemonSettingsAverage2 | PokemonSettingsLarge2 | PokemonSettingsSmall2 | V0711_pokemon_gourgeist_superEntry;
   "GRENINJA": V0658_pokemon_greninjaEntry | V0658_pokemon_greninja_normalEntry;
   "HAWLUCHA": V0701_pokemon_hawluchaEntry | V0701_pokemon_hawlucha_normalEntry;
   "HELIOLISK": V0695_pokemon_helioliskEntry | V0695_pokemon_heliolisk_normalEntry;
@@ -6755,33 +5601,33 @@ export interface PokemonSettingsGen6ByPokemonId {
   "KLEFKI": V0707_pokemon_klefkiEntry | V0707_pokemon_klefki_normalEntry;
   "LITLEO": V0667_pokemon_litleoEntry | V0667_pokemon_litleo_normalEntry;
   "MALAMAR": V0687_pokemon_malamarEntry | V0687_pokemon_malamar_normalEntry;
-  "MEOWSTIC": V0678_pokemon_meowsticEntry | V0678_pokemon_meowstic_femaleEntry | V0678_pokemon_meowstic_normalEntry;
+  "MEOWSTIC": V0678_pokemon_meowsticEntry | PokemonSettingsFemale2 | PokemonSettingsNormal2;
   "NOIBAT": V0714_pokemon_noibatEntry | V0714_pokemon_noibat_normalEntry;
   "NOIVERN": V0715_pokemon_noivernEntry | V0715_pokemon_noivern_normalEntry;
   "PANCHAM": V0674_pokemon_panchamEntry | V0674_pokemon_pancham_normalEntry;
   "PANGORO": V0675_pokemon_pangoroEntry | V0675_pokemon_pangoro_normalEntry;
   "PHANTUMP": V0708_pokemon_phantumpEntry | V0708_pokemon_phantump_normalEntry;
-  "PUMPKABOO": V0710_pokemon_pumpkabooEntry | V0710_pokemon_pumpkaboo_averageEntry | V0710_pokemon_pumpkaboo_largeEntry | V0710_pokemon_pumpkaboo_smallEntry | V0710_pokemon_pumpkaboo_superEntry;
-  "PYROAR": V0668_pokemon_pyroarEntry | V0668_pokemon_pyroar_femaleEntry | V0668_pokemon_pyroar_normalEntry;
-  "QUILLADIN": V0651_pokemon_quilladinEntry | V0651_pokemon_quilladin_normalEntry;
-  "SCATTERBUG": V0664_pokemon_scatterbugEntry | V0664_pokemon_scatterbug_archipelagoEntry | V0664_pokemon_scatterbug_continentalEntry | V0664_pokemon_scatterbug_elegantEntry | V0664_pokemon_scatterbug_fancyEntry | V0664_pokemon_scatterbug_gardenEntry | V0664_pokemon_scatterbug_high_plainsEntry | V0664_pokemon_scatterbug_icy_snowEntry | V0664_pokemon_scatterbug_jungleEntry | V0664_pokemon_scatterbug_marineEntry | V0664_pokemon_scatterbug_meadowEntry | V0664_pokemon_scatterbug_modernEntry | V0664_pokemon_scatterbug_monsoonEntry | V0664_pokemon_scatterbug_oceanEntry | V0664_pokemon_scatterbug_pokeballEntry | V0664_pokemon_scatterbug_polarEntry | V0664_pokemon_scatterbug_riverEntry | V0664_pokemon_scatterbug_sandstormEntry | V0664_pokemon_scatterbug_savannaEntry | V0664_pokemon_scatterbug_sunEntry | V0664_pokemon_scatterbug_tundraEntry;
+  "PUMPKABOO": V0710_pokemon_pumpkabooEntry | PokemonSettingsAverage | PokemonSettingsLarge | PokemonSettingsSmall | V0710_pokemon_pumpkaboo_superEntry;
+  "PYROAR": V0668_pokemon_pyroarEntry | PokemonSettingsFemale | PokemonSettingsNormal;
+  "QUILLADIN": PokemonSettingsQuilladin | PokemonSettingsQuilladinNormal;
+  "SCATTERBUG": PokemonSettingsScatterbug | PokemonSettingsScatterbugArchipelago | PokemonSettingsScatterbugContinental | PokemonSettingsScatterbugElegant | PokemonSettingsScatterbugFancy | PokemonSettingsScatterbugGarden | PokemonSettingsScatterbugHighPlains | PokemonSettingsScatterbugIcySnow | PokemonSettingsScatterbugJungle | PokemonSettingsScatterbugMarine | PokemonSettingsScatterbugMeadow | PokemonSettingsScatterbugModern | PokemonSettingsScatterbugMonsoon | PokemonSettingsScatterbugOcean | PokemonSettingsScatterbugPokeball | PokemonSettingsScatterbugPolar | PokemonSettingsScatterbugRiver | PokemonSettingsScatterbugSandstorm | PokemonSettingsScatterbugSavanna | PokemonSettingsScatterbugSun | PokemonSettingsScatterbugTundra;
   "SKIDDO": V0672_pokemon_skiddoEntry | V0672_pokemon_skiddo_normalEntry;
   "SKRELP": V0690_pokemon_skrelpEntry | V0690_pokemon_skrelp_normalEntry;
   "SLIGGOO": V0705_pokemon_sliggooEntry | V0705_pokemon_sliggoo_normalEntry;
-  "SLURPUFF": V0685_pokemon_slurpuffEntry | V0685_pokemon_slurpuff_normalEntry;
-  "SPEWPA": V0665_pokemon_spewpaEntry | V0665_pokemon_spewpa_archipelagoEntry | V0665_pokemon_spewpa_continentalEntry | V0665_pokemon_spewpa_elegantEntry | V0665_pokemon_spewpa_fancyEntry | V0665_pokemon_spewpa_gardenEntry | V0665_pokemon_spewpa_high_plainsEntry | V0665_pokemon_spewpa_icy_snowEntry | V0665_pokemon_spewpa_jungleEntry | V0665_pokemon_spewpa_marineEntry | V0665_pokemon_spewpa_meadowEntry | V0665_pokemon_spewpa_modernEntry | V0665_pokemon_spewpa_monsoonEntry | V0665_pokemon_spewpa_oceanEntry | V0665_pokemon_spewpa_pokeballEntry | V0665_pokemon_spewpa_polarEntry | V0665_pokemon_spewpa_riverEntry | V0665_pokemon_spewpa_sandstormEntry | V0665_pokemon_spewpa_savannaEntry | V0665_pokemon_spewpa_sunEntry | V0665_pokemon_spewpa_tundraEntry;
+  "SLURPUFF": PokemonSettingsSlurpuff | PokemonSettingsSlurpuffNormal;
+  "SPEWPA": V0665_pokemon_spewpaEntry | PokemonSettingsArchipelago | PokemonSettingsContinental | PokemonSettingsElegant | PokemonSettingsFancy | PokemonSettingsGarden | PokemonSettingsHighPlains | PokemonSettingsIcySnow | PokemonSettingsJungle | PokemonSettingsMarine | PokemonSettingsMeadow | PokemonSettingsModern | PokemonSettingsMonsoon | PokemonSettingsOcean | PokemonSettingsPokeball | PokemonSettingsPolar | PokemonSettingsRiver | PokemonSettingsSandstorm | PokemonSettingsSavanna | PokemonSettingsSun | PokemonSettingsTundra;
   "SPRITZEE": V0682_pokemon_spritzeeEntry | V0682_pokemon_spritzee_normalEntry;
   "SWIRLIX": V0684_pokemon_swirlixEntry | V0684_pokemon_swirlix_normalEntry;
   "SYLVEON": V0700_pokemon_sylveonEntry | V0700_pokemon_sylveon_normalEntry;
   "TALONFLAME": V0663_pokemon_talonflameEntry | V0663_pokemon_talonflame_normalEntry;
   "TREVENANT": V0709_pokemon_trevenantEntry | V0709_pokemon_trevenant_normalEntry;
-  "TYRANTRUM": V0697_pokemon_tyrantrumEntry | V0697_pokemon_tyrantrum_normalEntry;
+  "TYRANTRUM": PokemonSettingsTyrantrum | PokemonSettingsTyrantrumNormal;
   "TYRUNT": V0696_pokemon_tyruntEntry | V0696_pokemon_tyrunt_normalEntry;
-  "VIVILLON": V0666_pokemon_vivillonEntry | V0666_pokemon_vivillon_archipelagoEntry | V0666_pokemon_vivillon_continentalEntry | V0666_pokemon_vivillon_elegantEntry | V0666_pokemon_vivillon_fancyEntry | V0666_pokemon_vivillon_gardenEntry | V0666_pokemon_vivillon_high_plainsEntry | V0666_pokemon_vivillon_icy_snowEntry | V0666_pokemon_vivillon_jungleEntry | V0666_pokemon_vivillon_marineEntry | V0666_pokemon_vivillon_meadowEntry | V0666_pokemon_vivillon_modernEntry | V0666_pokemon_vivillon_monsoonEntry | V0666_pokemon_vivillon_oceanEntry | V0666_pokemon_vivillon_pokeballEntry | V0666_pokemon_vivillon_polarEntry | V0666_pokemon_vivillon_riverEntry | V0666_pokemon_vivillon_sandstormEntry | V0666_pokemon_vivillon_savannaEntry | V0666_pokemon_vivillon_sunEntry | V0666_pokemon_vivillon_tundraEntry;
+  "VIVILLON": V0666_pokemon_vivillonEntry | PokemonSettingsArchipelago2 | PokemonSettingsContinental2 | PokemonSettingsElegant2 | PokemonSettingsFancy2 | PokemonSettingsGarden2 | PokemonSettingsHighPlains2 | PokemonSettingsIcySnow2 | PokemonSettingsJungle2 | PokemonSettingsMarine2 | PokemonSettingsMeadow2 | PokemonSettingsModern2 | PokemonSettingsMonsoon2 | PokemonSettingsOcean2 | PokemonSettingsPokeball2 | PokemonSettingsPolar2 | PokemonSettingsRiver2 | PokemonSettingsSandstorm2 | PokemonSettingsSavanna2 | PokemonSettingsSun2 | PokemonSettingsTundra2;
   "VOLCANION": V0721_pokemon_volcanionEntry | V0721_pokemon_volcanion_normalEntry;
   "XERNEAS": V0716_pokemon_xerneasEntry | V0716_pokemon_xerneas_normalEntry;
   "YVELTAL": V0717_pokemon_yveltalEntry | V0717_pokemon_yveltal_normalEntry;
   "ZYGARDE": V0718_pokemon_zygardeEntry | V0718_pokemon_zygarde_completeEntry | V0718_pokemon_zygarde_complete_fifty_percentEntry | V0718_pokemon_zygarde_complete_ten_percentEntry | V0718_pokemon_zygarde_fifty_percentEntry | V0718_pokemon_zygarde_ten_percentEntry;
 }
 
-export type PokemonSettingsGen6MasterfileEntry = V0650_pokemon_chespinEntry | V0650_pokemon_chespin_normalEntry | V0651_pokemon_quilladinEntry | V0651_pokemon_quilladin_normalEntry | V0652_pokemon_chesnaughtEntry | V0652_pokemon_chesnaught_normalEntry | V0653_pokemon_fennekinEntry | V0653_pokemon_fennekin_normalEntry | V0654_pokemon_braixenEntry | V0654_pokemon_braixen_normalEntry | V0655_pokemon_delphoxEntry | V0655_pokemon_delphox_normalEntry | V0656_pokemon_froakieEntry | V0656_pokemon_froakie_normalEntry | V0657_pokemon_frogadierEntry | V0657_pokemon_frogadier_normalEntry | V0658_pokemon_greninjaEntry | V0658_pokemon_greninja_normalEntry | V0659_pokemon_bunnelbyEntry | V0659_pokemon_bunnelby_normalEntry | V0660_pokemon_diggersbyEntry | V0660_pokemon_diggersby_normalEntry | V0661_pokemon_fletchlingEntry | V0661_pokemon_fletchling_normalEntry | V0662_pokemon_fletchinderEntry | V0662_pokemon_fletchinder_normalEntry | V0663_pokemon_talonflameEntry | V0663_pokemon_talonflame_normalEntry | V0664_pokemon_scatterbugEntry | V0664_pokemon_scatterbug_archipelagoEntry | V0664_pokemon_scatterbug_continentalEntry | V0664_pokemon_scatterbug_elegantEntry | V0664_pokemon_scatterbug_fancyEntry | V0664_pokemon_scatterbug_gardenEntry | V0664_pokemon_scatterbug_high_plainsEntry | V0664_pokemon_scatterbug_icy_snowEntry | V0664_pokemon_scatterbug_jungleEntry | V0664_pokemon_scatterbug_marineEntry | V0664_pokemon_scatterbug_meadowEntry | V0664_pokemon_scatterbug_modernEntry | V0664_pokemon_scatterbug_monsoonEntry | V0664_pokemon_scatterbug_oceanEntry | V0664_pokemon_scatterbug_pokeballEntry | V0664_pokemon_scatterbug_polarEntry | V0664_pokemon_scatterbug_riverEntry | V0664_pokemon_scatterbug_sandstormEntry | V0664_pokemon_scatterbug_savannaEntry | V0664_pokemon_scatterbug_sunEntry | V0664_pokemon_scatterbug_tundraEntry | V0665_pokemon_spewpaEntry | V0665_pokemon_spewpa_archipelagoEntry | V0665_pokemon_spewpa_continentalEntry | V0665_pokemon_spewpa_elegantEntry | V0665_pokemon_spewpa_fancyEntry | V0665_pokemon_spewpa_gardenEntry | V0665_pokemon_spewpa_high_plainsEntry | V0665_pokemon_spewpa_icy_snowEntry | V0665_pokemon_spewpa_jungleEntry | V0665_pokemon_spewpa_marineEntry | V0665_pokemon_spewpa_meadowEntry | V0665_pokemon_spewpa_modernEntry | V0665_pokemon_spewpa_monsoonEntry | V0665_pokemon_spewpa_oceanEntry | V0665_pokemon_spewpa_pokeballEntry | V0665_pokemon_spewpa_polarEntry | V0665_pokemon_spewpa_riverEntry | V0665_pokemon_spewpa_sandstormEntry | V0665_pokemon_spewpa_savannaEntry | V0665_pokemon_spewpa_sunEntry | V0665_pokemon_spewpa_tundraEntry | V0666_pokemon_vivillonEntry | V0666_pokemon_vivillon_archipelagoEntry | V0666_pokemon_vivillon_continentalEntry | V0666_pokemon_vivillon_elegantEntry | V0666_pokemon_vivillon_fancyEntry | V0666_pokemon_vivillon_gardenEntry | V0666_pokemon_vivillon_high_plainsEntry | V0666_pokemon_vivillon_icy_snowEntry | V0666_pokemon_vivillon_jungleEntry | V0666_pokemon_vivillon_marineEntry | V0666_pokemon_vivillon_meadowEntry | V0666_pokemon_vivillon_modernEntry | V0666_pokemon_vivillon_monsoonEntry | V0666_pokemon_vivillon_oceanEntry | V0666_pokemon_vivillon_pokeballEntry | V0666_pokemon_vivillon_polarEntry | V0666_pokemon_vivillon_riverEntry | V0666_pokemon_vivillon_sandstormEntry | V0666_pokemon_vivillon_savannaEntry | V0666_pokemon_vivillon_sunEntry | V0666_pokemon_vivillon_tundraEntry | V0667_pokemon_litleoEntry | V0667_pokemon_litleo_normalEntry | V0668_pokemon_pyroarEntry | V0668_pokemon_pyroar_femaleEntry | V0668_pokemon_pyroar_normalEntry | V0669_pokemon_flabebeEntry | V0669_pokemon_flabebe_blueEntry | V0669_pokemon_flabebe_orangeEntry | V0669_pokemon_flabebe_redEntry | V0669_pokemon_flabebe_whiteEntry | V0669_pokemon_flabebe_yellowEntry | V0670_pokemon_floetteEntry | V0670_pokemon_floette_blueEntry | V0670_pokemon_floette_orangeEntry | V0670_pokemon_floette_redEntry | V0670_pokemon_floette_whiteEntry | V0670_pokemon_floette_yellowEntry | V0671_pokemon_florgesEntry | V0671_pokemon_florges_blueEntry | V0671_pokemon_florges_orangeEntry | V0671_pokemon_florges_redEntry | V0671_pokemon_florges_whiteEntry | V0671_pokemon_florges_yellowEntry | V0672_pokemon_skiddoEntry | V0672_pokemon_skiddo_normalEntry | V0673_pokemon_gogoatEntry | V0673_pokemon_gogoat_normalEntry | V0674_pokemon_panchamEntry | V0674_pokemon_pancham_normalEntry | V0675_pokemon_pangoroEntry | V0675_pokemon_pangoro_normalEntry | V0676_pokemon_furfrouEntry | V0676_pokemon_furfrou_dandyEntry | V0676_pokemon_furfrou_debutanteEntry | V0676_pokemon_furfrou_diamondEntry | V0676_pokemon_furfrou_heartEntry | V0676_pokemon_furfrou_kabukiEntry | V0676_pokemon_furfrou_la_reineEntry | V0676_pokemon_furfrou_matronEntry | V0676_pokemon_furfrou_naturalEntry | V0676_pokemon_furfrou_pharaohEntry | V0676_pokemon_furfrou_starEntry | V0677_pokemon_espurrEntry | V0677_pokemon_espurr_normalEntry | V0678_pokemon_meowsticEntry | V0678_pokemon_meowstic_femaleEntry | V0678_pokemon_meowstic_normalEntry | V0679_pokemon_honedgeEntry | V0679_pokemon_honedge_normalEntry | V0680_pokemon_doubladeEntry | V0680_pokemon_doublade_normalEntry | V0681_pokemon_aegislashEntry | V0681_pokemon_aegislash_bladeEntry | V0681_pokemon_aegislash_shieldEntry | V0682_pokemon_spritzeeEntry | V0682_pokemon_spritzee_normalEntry | V0683_pokemon_aromatisseEntry | V0683_pokemon_aromatisse_normalEntry | V0684_pokemon_swirlixEntry | V0684_pokemon_swirlix_normalEntry | V0685_pokemon_slurpuffEntry | V0685_pokemon_slurpuff_normalEntry | V0686_pokemon_inkayEntry | V0686_pokemon_inkay_normalEntry | V0687_pokemon_malamarEntry | V0687_pokemon_malamar_normalEntry | V0688_pokemon_binacleEntry | V0688_pokemon_binacle_normalEntry | V0689_pokemon_barbaracleEntry | V0689_pokemon_barbaracle_normalEntry | V0690_pokemon_skrelpEntry | V0690_pokemon_skrelp_normalEntry | V0691_pokemon_dragalgeEntry | V0691_pokemon_dragalge_normalEntry | V0692_pokemon_clauncherEntry | V0692_pokemon_clauncher_normalEntry | V0693_pokemon_clawitzerEntry | V0693_pokemon_clawitzer_normalEntry | V0694_pokemon_helioptileEntry | V0694_pokemon_helioptile_normalEntry | V0695_pokemon_helioliskEntry | V0695_pokemon_heliolisk_normalEntry | V0696_pokemon_tyruntEntry | V0696_pokemon_tyrunt_normalEntry | V0697_pokemon_tyrantrumEntry | V0697_pokemon_tyrantrum_normalEntry | V0698_pokemon_amauraEntry | V0698_pokemon_amaura_normalEntry | V0699_pokemon_aurorusEntry | V0699_pokemon_aurorus_normalEntry | V0700_pokemon_sylveonEntry | V0700_pokemon_sylveon_normalEntry | V0701_pokemon_hawluchaEntry | V0701_pokemon_hawlucha_normalEntry | V0702_pokemon_dedenneEntry | V0702_pokemon_dedenne_normalEntry | V0703_pokemon_carbinkEntry | V0703_pokemon_carbink_normalEntry | V0704_pokemon_goomyEntry | V0704_pokemon_goomy_normalEntry | V0705_pokemon_sliggooEntry | V0705_pokemon_sliggoo_normalEntry | V0706_pokemon_goodraEntry | V0706_pokemon_goodra_normalEntry | V0707_pokemon_klefkiEntry | V0707_pokemon_klefki_normalEntry | V0708_pokemon_phantumpEntry | V0708_pokemon_phantump_normalEntry | V0709_pokemon_trevenantEntry | V0709_pokemon_trevenant_normalEntry | V0710_pokemon_pumpkabooEntry | V0710_pokemon_pumpkaboo_averageEntry | V0710_pokemon_pumpkaboo_largeEntry | V0710_pokemon_pumpkaboo_smallEntry | V0710_pokemon_pumpkaboo_superEntry | V0711_pokemon_gourgeistEntry | V0711_pokemon_gourgeist_averageEntry | V0711_pokemon_gourgeist_largeEntry | V0711_pokemon_gourgeist_smallEntry | V0711_pokemon_gourgeist_superEntry | V0712_pokemon_bergmiteEntry | V0712_pokemon_bergmite_normalEntry | V0713_pokemon_avaluggEntry | V0713_pokemon_avalugg_hisuianEntry | V0713_pokemon_avalugg_normalEntry | V0714_pokemon_noibatEntry | V0714_pokemon_noibat_normalEntry | V0715_pokemon_noivernEntry | V0715_pokemon_noivern_normalEntry | V0716_pokemon_xerneasEntry | V0716_pokemon_xerneas_normalEntry | V0717_pokemon_yveltalEntry | V0717_pokemon_yveltal_normalEntry | V0718_pokemon_zygardeEntry | V0718_pokemon_zygarde_completeEntry | V0718_pokemon_zygarde_complete_fifty_percentEntry | V0718_pokemon_zygarde_complete_ten_percentEntry | V0718_pokemon_zygarde_fifty_percentEntry | V0718_pokemon_zygarde_ten_percentEntry | V0719_pokemon_diancieEntry | V0719_pokemon_diancie_normalEntry | V0720_pokemon_hoopaEntry | V0720_pokemon_hoopa_confinedEntry | V0720_pokemon_hoopa_unboundEntry | V0721_pokemon_volcanionEntry | V0721_pokemon_volcanion_normalEntry;
+export type PokemonSettingsGen6MasterfileEntry = PokemonSettingsChespin | PokemonSettingsFennekin | PokemonSettingsChespinNormal | PokemonSettingsFennekinNormal | PokemonSettingsQuilladin | PokemonSettingsFrogadier | PokemonSettingsQuilladinNormal | PokemonSettingsFrogadierNormal | PokemonSettingsChesnaught | PokemonSettingsDelphox | PokemonSettingsChesnaughtNormal | PokemonSettingsDelphoxNormal | V0654_pokemon_braixenEntry | V0654_pokemon_braixen_normalEntry | V0656_pokemon_froakieEntry | V0656_pokemon_froakie_normalEntry | V0658_pokemon_greninjaEntry | V0658_pokemon_greninja_normalEntry | V0659_pokemon_bunnelbyEntry | V0659_pokemon_bunnelby_normalEntry | V0660_pokemon_diggersbyEntry | V0660_pokemon_diggersby_normalEntry | V0661_pokemon_fletchlingEntry | V0661_pokemon_fletchling_normalEntry | V0662_pokemon_fletchinderEntry | V0662_pokemon_fletchinder_normalEntry | V0663_pokemon_talonflameEntry | V0663_pokemon_talonflame_normalEntry | PokemonSettingsScatterbug | PokemonSettingsClauncher | PokemonSettingsScatterbugArchipelago | PokemonSettingsScatterbugContinental | PokemonSettingsScatterbugElegant | PokemonSettingsScatterbugFancy | PokemonSettingsScatterbugGarden | PokemonSettingsScatterbugHighPlains | PokemonSettingsScatterbugIcySnow | PokemonSettingsScatterbugJungle | PokemonSettingsScatterbugMarine | PokemonSettingsScatterbugMeadow | PokemonSettingsScatterbugModern | PokemonSettingsScatterbugMonsoon | PokemonSettingsScatterbugOcean | PokemonSettingsScatterbugPokeball | PokemonSettingsScatterbugPolar | PokemonSettingsScatterbugRiver | PokemonSettingsScatterbugSandstorm | PokemonSettingsScatterbugSavanna | PokemonSettingsScatterbugSun | PokemonSettingsScatterbugTundra | PokemonSettingsClauncherNormal | V0665_pokemon_spewpaEntry | PokemonSettingsArchipelago | PokemonSettingsContinental | PokemonSettingsElegant | PokemonSettingsFancy | PokemonSettingsGarden | PokemonSettingsHighPlains | PokemonSettingsIcySnow | PokemonSettingsJungle | PokemonSettingsMarine | PokemonSettingsMeadow | PokemonSettingsModern | PokemonSettingsMonsoon | PokemonSettingsOcean | PokemonSettingsPokeball | PokemonSettingsPolar | PokemonSettingsRiver | PokemonSettingsSandstorm | PokemonSettingsSavanna | PokemonSettingsSun | PokemonSettingsTundra | V0666_pokemon_vivillonEntry | PokemonSettingsArchipelago2 | PokemonSettingsContinental2 | PokemonSettingsElegant2 | PokemonSettingsFancy2 | PokemonSettingsGarden2 | PokemonSettingsHighPlains2 | PokemonSettingsIcySnow2 | PokemonSettingsJungle2 | PokemonSettingsMarine2 | PokemonSettingsMeadow2 | PokemonSettingsModern2 | PokemonSettingsMonsoon2 | PokemonSettingsOcean2 | PokemonSettingsPokeball2 | PokemonSettingsPolar2 | PokemonSettingsRiver2 | PokemonSettingsSandstorm2 | PokemonSettingsSavanna2 | PokemonSettingsSun2 | PokemonSettingsTundra2 | V0667_pokemon_litleoEntry | V0667_pokemon_litleo_normalEntry | V0668_pokemon_pyroarEntry | PokemonSettingsFemale | PokemonSettingsNormal | V0669_pokemon_flabebeEntry | PokemonSettingsBlue | PokemonSettingsOrange | PokemonSettingsRed | PokemonSettingsWhite | PokemonSettingsYellow | V0670_pokemon_floetteEntry | PokemonSettingsBlue2 | PokemonSettingsOrange2 | PokemonSettingsRed2 | PokemonSettingsWhite2 | PokemonSettingsYellow2 | V0671_pokemon_florgesEntry | PokemonSettingsBlue3 | PokemonSettingsOrange3 | PokemonSettingsRed3 | PokemonSettingsWhite3 | PokemonSettingsYellow3 | V0672_pokemon_skiddoEntry | V0672_pokemon_skiddo_normalEntry | V0673_pokemon_gogoatEntry | V0673_pokemon_gogoat_normalEntry | V0674_pokemon_panchamEntry | V0674_pokemon_pancham_normalEntry | V0675_pokemon_pangoroEntry | V0675_pokemon_pangoro_normalEntry | V0676_pokemon_furfrouEntry | PokemonSettingsDandy | PokemonSettingsDebutante | PokemonSettingsDiamond | PokemonSettingsHeart | PokemonSettingsKabuki | PokemonSettingsLaReine | PokemonSettingsMatron | PokemonSettingsNatural | PokemonSettingsPharaoh | PokemonSettingsStar | V0677_pokemon_espurrEntry | V0677_pokemon_espurr_normalEntry | V0678_pokemon_meowsticEntry | PokemonSettingsFemale2 | PokemonSettingsNormal2 | V0679_pokemon_honedgeEntry | V0679_pokemon_honedge_normalEntry | V0680_pokemon_doubladeEntry | V0680_pokemon_doublade_normalEntry | V0681_pokemon_aegislashEntry | PokemonSettingsBlade | PokemonSettingsShield | V0682_pokemon_spritzeeEntry | V0682_pokemon_spritzee_normalEntry | PokemonSettingsAromatisse | PokemonSettingsSlurpuff | PokemonSettingsAromatisseNormal | PokemonSettingsSlurpuffNormal | V0684_pokemon_swirlixEntry | V0684_pokemon_swirlix_normalEntry | V0686_pokemon_inkayEntry | V0686_pokemon_inkay_normalEntry | V0687_pokemon_malamarEntry | V0687_pokemon_malamar_normalEntry | V0688_pokemon_binacleEntry | V0688_pokemon_binacle_normalEntry | V0689_pokemon_barbaracleEntry | V0689_pokemon_barbaracle_normalEntry | V0690_pokemon_skrelpEntry | V0690_pokemon_skrelp_normalEntry | V0691_pokemon_dragalgeEntry | V0691_pokemon_dragalge_normalEntry | V0693_pokemon_clawitzerEntry | V0693_pokemon_clawitzer_normalEntry | V0694_pokemon_helioptileEntry | V0694_pokemon_helioptile_normalEntry | V0695_pokemon_helioliskEntry | V0695_pokemon_heliolisk_normalEntry | V0696_pokemon_tyruntEntry | V0696_pokemon_tyrunt_normalEntry | PokemonSettingsTyrantrum | PokemonSettingsAurorus | PokemonSettingsTyrantrumNormal | PokemonSettingsAurorusNormal | V0698_pokemon_amauraEntry | V0698_pokemon_amaura_normalEntry | V0700_pokemon_sylveonEntry | V0700_pokemon_sylveon_normalEntry | V0701_pokemon_hawluchaEntry | V0701_pokemon_hawlucha_normalEntry | V0702_pokemon_dedenneEntry | V0702_pokemon_dedenne_normalEntry | V0703_pokemon_carbinkEntry | V0703_pokemon_carbink_normalEntry | V0704_pokemon_goomyEntry | V0704_pokemon_goomy_normalEntry | V0705_pokemon_sliggooEntry | V0705_pokemon_sliggoo_normalEntry | V0706_pokemon_goodraEntry | V0706_pokemon_goodra_normalEntry | V0707_pokemon_klefkiEntry | V0707_pokemon_klefki_normalEntry | V0708_pokemon_phantumpEntry | V0708_pokemon_phantump_normalEntry | V0709_pokemon_trevenantEntry | V0709_pokemon_trevenant_normalEntry | V0710_pokemon_pumpkabooEntry | PokemonSettingsAverage | PokemonSettingsLarge | PokemonSettingsSmall | V0710_pokemon_pumpkaboo_superEntry | V0711_pokemon_gourgeistEntry | PokemonSettingsAverage2 | PokemonSettingsLarge2 | PokemonSettingsSmall2 | V0711_pokemon_gourgeist_superEntry | V0712_pokemon_bergmiteEntry | V0712_pokemon_bergmite_normalEntry | V0713_pokemon_avaluggEntry | V0713_pokemon_avalugg_hisuianEntry | V0713_pokemon_avalugg_normalEntry | V0714_pokemon_noibatEntry | V0714_pokemon_noibat_normalEntry | V0715_pokemon_noivernEntry | V0715_pokemon_noivern_normalEntry | V0716_pokemon_xerneasEntry | V0716_pokemon_xerneas_normalEntry | V0717_pokemon_yveltalEntry | V0717_pokemon_yveltal_normalEntry | V0718_pokemon_zygardeEntry | V0718_pokemon_zygarde_completeEntry | V0718_pokemon_zygarde_complete_fifty_percentEntry | V0718_pokemon_zygarde_complete_ten_percentEntry | V0718_pokemon_zygarde_fifty_percentEntry | V0718_pokemon_zygarde_ten_percentEntry | V0719_pokemon_diancieEntry | V0719_pokemon_diancie_normalEntry | V0720_pokemon_hoopaEntry | V0720_pokemon_hoopa_confinedEntry | V0720_pokemon_hoopa_unboundEntry | V0721_pokemon_volcanionEntry | V0721_pokemon_volcanion_normalEntry;

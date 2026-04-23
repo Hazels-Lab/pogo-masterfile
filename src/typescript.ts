@@ -81,6 +81,68 @@ interface StaticRouteDefinition {
 	unionNames: string[];
 }
 
+interface ErgonomicValueSample {
+	templateId: string;
+	value: Json;
+}
+
+interface ErgonomicCluster {
+	key: string;
+	aliasBaseName: string;
+	internalBaseName: string;
+	aliasSuffixes: string[];
+	entries: ClassifiedEntry[];
+	node: ErgonomicObjectNode;
+	correlatedPathKeys: Set<string>;
+	genericParams: ErgonomicGenericParam[];
+}
+
+interface ErgonomicObjectNode {
+	kind: "object";
+	props: Array<ErgonomicProperty>;
+}
+
+interface ErgonomicProperty {
+	key: string;
+	type: ErgonomicTypeNode;
+}
+
+interface ErgonomicGenericParam {
+	pathKey: string;
+	name: string;
+	valuesByTemplateId: Map<string, string>;
+}
+
+interface ErgonomicClusterRenderPlan {
+	scopeKey: string;
+	cluster: ErgonomicCluster;
+	sharedFileName?: string;
+	sharedImportPath?: string;
+}
+
+interface SharedModuleOutput {
+	fileName: string;
+	content: string;
+}
+
+interface ClusterSectionOutput {
+	lines: string[];
+	entryInfos: EntryTypeInfo[];
+	importSpecifiers: Map<string, Set<string>>;
+}
+
+type ErgonomicTypeNode =
+	| ErgonomicObjectNode
+	| { kind: "null" }
+	| { kind: "boolean" }
+	| { kind: "number" }
+	| { kind: "string" }
+	| { kind: "string-literal"; value: string }
+	| { kind: "generic-ref"; name: string }
+	| { kind: "array"; element: ErgonomicTypeNode }
+	| { kind: "tuple"; items: ErgonomicTypeNode[] }
+	| { kind: "unknown" };
+
 const RESERVED = new Set([
 	"string",
 	"number",
@@ -562,6 +624,63 @@ function sanitizeIdentifier(input: string): string {
 	return RESERVED.has(fallback) ? `${fallback}Type` : fallback;
 }
 
+function toPascalIdentifier(input: string): string {
+	const cleaned = input
+		.replace(/([a-z0-9])([A-Z])/g, "$1 $2")
+		.replace(/[^a-zA-Z0-9]+/g, " ")
+		.trim()
+		.split(/\s+/)
+		.filter(Boolean)
+		.map((part) => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase())
+		.join("")
+		.replace(/^[^a-zA-Z]+/, "T");
+
+	const fallback = cleaned || "Anonymous";
+	return RESERVED.has(fallback) ? `${fallback}Type` : fallback;
+}
+
+function isVersionToken(token: string): boolean {
+	return /^V\d+$/i.test(token);
+}
+
+function getTemplateIdNameTokens(templateId: string): string[] {
+	return templateId
+		.split(/[^A-Za-z0-9]+/g)
+		.filter(Boolean)
+		.filter((token) => !isVersionToken(token));
+}
+
+function getCommonTokenPrefix(tokenLists: string[][]): string[] {
+	const first = tokenLists[0];
+
+	if (!first) {
+		return [];
+	}
+
+	const prefix: string[] = [];
+
+	for (let index = 0; index < first.length; index += 1) {
+		const token = first[index];
+
+		if (!token) {
+			break;
+		}
+
+		if (tokenLists.every((tokens) => tokens[index] === token)) {
+			prefix.push(token);
+			continue;
+		}
+
+		break;
+	}
+
+	return prefix;
+}
+
+function getPathKey(path: string[]): string {
+	return path.join(".");
+}
+
 function quoteProp(key: string): string {
 	return /^[A-Za-z_$][A-Za-z0-9_$]*$/.test(key) && !RESERVED.has(key)
 		? key
@@ -933,17 +1052,669 @@ function buildValueMap(
 	return valueMap;
 }
 
-function buildTypescriptGroupModule(
-	classifiedEntries: ClassifiedEntry[],
-	route: ModuleRoute,
-	options: CliOptions,
-): GroupModuleOutput {
-	const ctx = createNamedShapeRenderContext();
-	const entryTypeNames: string[] = [];
-	const byTemplateIdLines: string[] = [];
-	const entryInfos: EntryTypeInfo[] = [];
+function buildClusterKey(classifiedEntry: ClassifiedEntry): string {
+	const payload = getDataPayload(
+		classifiedEntry.entry,
+		classifiedEntry.payloadKey,
+	);
 
-	for (const classifiedEntry of classifiedEntries) {
+	if (!payload) {
+		return `${classifiedEntry.payloadKey}:missing`;
+	}
+
+	return `${classifiedEntry.payloadKey}:${shapeKey(inferShape(payload))}`;
+}
+
+function getSharedPokemonScopeKey(route: ModuleRoute): string | undefined {
+	if (route.family !== "pokemon") {
+		return undefined;
+	}
+
+	const subfamily = route.segments[1];
+
+	return subfamily === "settings" ||
+		subfamily === "extended" ||
+		subfamily === "gender"
+		? route.segments.slice(0, 2).join("/")
+		: undefined;
+}
+
+function getSharedScopeAliasBaseName(scopeKey: string): string {
+	switch (scopeKey) {
+		case "pokemon/settings":
+			return "PokemonSettings";
+		case "pokemon/extended":
+			return "PokemonExtended";
+		case "pokemon/gender":
+			return "PokemonGender";
+		default:
+			return scopeKey
+				.split("/")
+				.map((segment) => toPascalCase(segment))
+				.join("");
+	}
+}
+
+function shouldBuildLocalErgonomicPlan(route: ModuleRoute): boolean {
+	return route.key === "pokemon/type-chart";
+}
+
+function getNameTokens(value: string): string[] {
+	return value
+		.split(/[^A-Za-z0-9]+/g)
+		.filter(Boolean)
+		.filter((token) => !isVersionToken(token))
+		.map((token) => token.toUpperCase());
+}
+
+function isTemplateDerivedString(value: string, templateId: string): boolean {
+	const valueTokens = getNameTokens(value);
+	const templateTokens = getNameTokens(templateId);
+
+	if (valueTokens.length === 0 || templateTokens.length === 0) {
+		return false;
+	}
+
+	let searchIndex = 0;
+
+	for (const valueToken of valueTokens) {
+		const foundIndex = templateTokens.indexOf(valueToken, searchIndex);
+
+		if (foundIndex === -1) {
+			return false;
+		}
+
+		searchIndex = foundIndex + 1;
+	}
+
+	return true;
+}
+
+function buildAliasSuffixes(entries: ClassifiedEntry[]): string[] | null {
+	const tokenLists = entries.map((entry) =>
+		getTemplateIdNameTokens(entry.entry.templateId),
+	);
+	const commonTokens = getCommonTokenPrefix(tokenLists);
+	const aliasSuffixes = entries.map((entry) => {
+		const suffixTokens = getTemplateIdNameTokens(entry.entry.templateId).slice(
+			commonTokens.length,
+		);
+
+		if (suffixTokens.length === 0) {
+			return null;
+		}
+
+		return suffixTokens.map((token) => toPascalIdentifier(token)).join("");
+	});
+
+	if (
+		aliasSuffixes.some(
+			(aliasSuffix): aliasSuffix is null =>
+				aliasSuffix === null || aliasSuffix.length === 0,
+		)
+	) {
+		return null;
+	}
+
+	return new Set(aliasSuffixes).size === aliasSuffixes.length
+		? aliasSuffixes
+		: null;
+}
+
+function buildLocalAliasBaseName(entries: ClassifiedEntry[]): string | null {
+	const tokenLists = entries.map((entry) =>
+		getTemplateIdNameTokens(entry.entry.templateId),
+	);
+	const meaningfulTokens = getCommonTokenPrefix(tokenLists).filter(
+		(token) => token.length >= 3,
+	);
+
+	return meaningfulTokens.length === 0
+		? null
+		: meaningfulTokens.map((token) => toPascalIdentifier(token)).join("");
+}
+
+function hasTupleNode(node: ErgonomicTypeNode): boolean {
+	switch (node.kind) {
+		case "tuple":
+			return true;
+		case "array":
+			return hasTupleNode(node.element);
+		case "object":
+			return node.props.some((prop) => hasTupleNode(prop.type));
+		default:
+			return false;
+	}
+}
+
+function createGenericParamName(
+	path: string[],
+	seenNames: Set<string>,
+): string {
+	const propKey = [...path]
+		.reverse()
+		.find((segment) => !/^\d+$/.test(segment) && segment !== "item");
+
+	return createUniqueName(
+		`T${toPascalIdentifier(propKey ?? "Value")}`,
+		seenNames,
+	);
+}
+
+function buildErgonomicTypeNode(
+	samples: ErgonomicValueSample[],
+	path: string[],
+	correlatedPathKeys: Set<string>,
+	genericParamsByPath: Map<string, ErgonomicGenericParam>,
+	seenGenericNames: Set<string>,
+): ErgonomicTypeNode | null {
+	if (samples.length === 0) {
+		return { kind: "unknown" };
+	}
+
+	if (samples.every((sample) => sample.value === null)) {
+		return { kind: "null" };
+	}
+
+	if (samples.every((sample) => typeof sample.value === "boolean")) {
+		return { kind: "boolean" };
+	}
+
+	if (samples.every((sample) => typeof sample.value === "number")) {
+		return { kind: "number" };
+	}
+
+	if (samples.every((sample) => typeof sample.value === "string")) {
+		const values = [...new Set(samples.map((sample) => sample.value))];
+
+		if (
+			samples.every(
+				(sample): sample is ErgonomicValueSample & { value: string } =>
+					typeof sample.value === "string" &&
+					sample.value === sample.templateId,
+			)
+		) {
+			correlatedPathKeys.add(getPathKey(path));
+			return { kind: "generic-ref", name: "TTemplateId" };
+		}
+
+		if (
+			values.length > 1 &&
+			samples.every(
+				(sample): sample is ErgonomicValueSample & { value: string } =>
+					typeof sample.value === "string" &&
+					isTemplateDerivedString(sample.value, sample.templateId),
+			)
+		) {
+			const pathKey = getPathKey(path);
+			const existing = genericParamsByPath.get(pathKey);
+
+			if (existing) {
+				correlatedPathKeys.add(pathKey);
+				return { kind: "generic-ref", name: existing.name };
+			}
+
+			const genericParam: ErgonomicGenericParam = {
+				pathKey,
+				name: createGenericParamName(path, seenGenericNames),
+				valuesByTemplateId: new Map(
+					samples.map((sample) => [
+						sample.templateId,
+						JSON.stringify(sample.value),
+					]),
+				),
+			};
+			genericParamsByPath.set(pathKey, genericParam);
+			correlatedPathKeys.add(pathKey);
+			return { kind: "generic-ref", name: genericParam.name };
+		}
+
+		if (values.length === 1) {
+			const onlyValue = values[0];
+
+			if (typeof onlyValue === "string") {
+				return { kind: "string-literal", value: onlyValue };
+			}
+		}
+
+		return { kind: "string" };
+	}
+
+	if (samples.every((sample) => Array.isArray(sample.value))) {
+		const arrays = samples.map((sample) => sample.value);
+		const flattened = samples.flatMap((sample) => {
+			const value = sample.value;
+
+			if (!Array.isArray(value)) {
+				return [];
+			}
+
+			return value.map((item) => ({
+				templateId: sample.templateId,
+				value: item,
+			}));
+		});
+		const lengths = [...new Set(arrays.map((array) => array.length))];
+
+		if (lengths.length === 1) {
+			const tupleLength = lengths[0];
+
+			if (typeof tupleLength !== "number") {
+				return null;
+			}
+
+			const tupleItems = Array.from({ length: tupleLength }, (_, index) =>
+				buildErgonomicTypeNode(
+					samples.map((sample) => {
+						const value = sample.value;
+
+						if (!Array.isArray(value)) {
+							throw new Error("Expected array sample when building tuple.");
+						}
+
+						return {
+							templateId: sample.templateId,
+							value: value[index] ?? null,
+						};
+					}),
+					[...path, `${index}`],
+					correlatedPathKeys,
+					genericParamsByPath,
+					seenGenericNames,
+				),
+			);
+
+			if (
+				tupleItems.every((item): item is ErgonomicTypeNode => item !== null)
+			) {
+				return {
+					kind: "tuple",
+					items: tupleItems,
+				};
+			}
+		}
+		const elementNode = buildErgonomicTypeNode(
+			flattened,
+			[...path, "item"],
+			correlatedPathKeys,
+			genericParamsByPath,
+			seenGenericNames,
+		);
+
+		return {
+			kind: "array",
+			element: elementNode ?? { kind: "unknown" },
+		};
+	}
+
+	if (
+		samples.every(
+			(sample) =>
+				sample.value !== null &&
+				typeof sample.value === "object" &&
+				!Array.isArray(sample.value),
+		)
+	) {
+		const objects = samples.map((sample) => sample.value as JsonObject);
+		const firstKeys = Object.keys(objects[0] ?? {}).sort();
+		const hasMatchingKeys = objects.every((value) => {
+			const keys = Object.keys(value).sort();
+			return (
+				keys.length === firstKeys.length &&
+				keys.every((key, index) => key === firstKeys[index])
+			);
+		});
+
+		if (!hasMatchingKeys) {
+			return null;
+		}
+
+		return {
+			kind: "object",
+			props: firstKeys.map((key) => {
+				const childNode = buildErgonomicTypeNode(
+					samples.map((sample) => {
+						const value = sample.value;
+
+						if (
+							value === null ||
+							typeof value !== "object" ||
+							Array.isArray(value)
+						) {
+							throw new Error("Expected object sample when building props.");
+						}
+
+						return {
+							templateId: sample.templateId,
+							value: value[key] ?? null,
+						};
+					}),
+					[...path, key],
+					correlatedPathKeys,
+					genericParamsByPath,
+					seenGenericNames,
+				);
+
+				if (!childNode) {
+					throw new Error(`Expected child node for ${key}.`);
+				}
+
+				return {
+					key,
+					type: childNode,
+				};
+			}),
+		};
+	}
+
+	return null;
+}
+
+function buildErgonomicCluster(
+	entries: ClassifiedEntry[],
+	key: string,
+	aliasBaseName: string,
+	internalBaseName: string,
+): ErgonomicCluster | null {
+	if (entries.length < 2) {
+		return null;
+	}
+
+	const aliasSuffixes = buildAliasSuffixes(entries);
+
+	if (!aliasSuffixes) {
+		return null;
+	}
+
+	const correlatedPathKeys = new Set<string>();
+	const genericParamsByPath = new Map<string, ErgonomicGenericParam>();
+	const seenGenericNames = new Set(["TTemplateId"]);
+	const node = buildErgonomicTypeNode(
+		entries.map((entry) => ({
+			templateId: entry.entry.templateId,
+			value: entry.entry.data,
+		})),
+		[],
+		correlatedPathKeys,
+		genericParamsByPath,
+		seenGenericNames,
+	);
+
+	if (!node || node.kind !== "object") {
+		return null;
+	}
+
+	if (
+		![...correlatedPathKeys].some((pathKey) => pathKey !== "templateId") &&
+		!hasTupleNode(node)
+	) {
+		return null;
+	}
+
+	return {
+		key,
+		aliasBaseName,
+		internalBaseName,
+		aliasSuffixes,
+		correlatedPathKeys,
+		entries,
+		node,
+		genericParams: [...genericParamsByPath.values()],
+	};
+}
+
+function renderGenericParamDeclaration(cluster: ErgonomicCluster): string {
+	return [
+		"TTemplateId extends string",
+		...cluster.genericParams.map((param) => `${param.name} extends string`),
+	].join(", ");
+}
+
+function renderGenericParamArguments(cluster: ErgonomicCluster): string {
+	return [
+		"TTemplateId",
+		...cluster.genericParams.map((param) => param.name),
+	].join(", ");
+}
+
+function renderEntryGenericArguments(
+	cluster: ErgonomicCluster,
+	templateId: string,
+): string {
+	const args = [
+		JSON.stringify(templateId),
+		...cluster.genericParams.map((param) => {
+			const value = param.valuesByTemplateId.get(templateId);
+
+			if (!value) {
+				throw new Error(
+					`Expected generic value for ${param.name} on ${templateId}.`,
+				);
+			}
+
+			return value;
+		}),
+	];
+
+	return args.join(", ");
+}
+
+function renderErgonomicTypeRef(
+	cluster: ErgonomicCluster,
+	node: ErgonomicTypeNode,
+	parentName: string,
+	propKey: string,
+	declarations: string[],
+	seenNames: Set<string>,
+): string {
+	switch (node.kind) {
+		case "null":
+			return "null";
+		case "boolean":
+			return "boolean";
+		case "number":
+			return "number";
+		case "string":
+			return "string";
+		case "string-literal":
+			return JSON.stringify(node.value);
+		case "generic-ref":
+			return node.name;
+		case "unknown":
+			return "unknown";
+		case "array": {
+			const elementType = renderErgonomicTypeRef(
+				cluster,
+				node.element,
+				`${parentName}${toPascalIdentifier(propKey)}`,
+				`${propKey}Item`,
+				declarations,
+				seenNames,
+			);
+			return `(${elementType})[]`;
+		}
+		case "tuple": {
+			if (node.items.length === 0) {
+				return "[]";
+			}
+
+			return [
+				"[",
+				...node.items.map(
+					(item) =>
+						`  ${renderErgonomicTypeRef(
+							cluster,
+							item,
+							`${parentName}${toPascalIdentifier(propKey)}`,
+							`${propKey}Item`,
+							declarations,
+							seenNames,
+						)},`,
+				),
+				"]",
+			].join("\n");
+		}
+		case "object": {
+			const rawName = `${parentName}${toPascalIdentifier(propKey)}`;
+			const interfaceName = createUniqueName(rawName, seenNames);
+			renderErgonomicObjectInterface(
+				cluster,
+				node,
+				interfaceName,
+				interfaceName,
+				declarations,
+				seenNames,
+			);
+			return `${interfaceName}<${renderGenericParamArguments(cluster)}>`;
+		}
+	}
+}
+
+function renderErgonomicObjectInterface(
+	cluster: ErgonomicCluster,
+	node: ErgonomicObjectNode,
+	interfaceName: string,
+	childBaseName: string,
+	declarations: string[],
+	seenNames: Set<string>,
+): void {
+	const existing = declarations.find((declaration) =>
+		declaration.startsWith(`export interface ${interfaceName}<`),
+	);
+
+	if (existing) {
+		return;
+	}
+
+	const body = node.props
+		.map((prop) => {
+			const propType = renderErgonomicTypeRef(
+				cluster,
+				prop.type,
+				childBaseName,
+				prop.key,
+				declarations,
+				seenNames,
+			);
+
+			return `  ${quoteProp(prop.key)}: ${propType};`;
+		})
+		.join("\n");
+
+	declarations.push(
+		[
+			`export interface ${interfaceName}<${renderGenericParamDeclaration(cluster)}> {`,
+			body,
+			"}",
+		].join("\n"),
+	);
+}
+
+function buildErgonomicBaseLines(
+	cluster: ErgonomicCluster,
+	baseName: string,
+	seenNames: Set<string>,
+): string[] {
+	const declarations: string[] = [];
+	const dataName = `${baseName}Data`;
+
+	renderErgonomicObjectInterface(
+		cluster,
+		cluster.node,
+		dataName,
+		baseName,
+		declarations,
+		seenNames,
+	);
+
+	return [
+		`export interface ${baseName}<${renderGenericParamDeclaration(cluster)}> {`,
+		"  templateId: TTemplateId;",
+		`  data: ${dataName}<${renderGenericParamArguments(cluster)}>;`,
+		"}",
+		"",
+		...declarations,
+	];
+}
+
+function buildErgonomicAliasSection(
+	cluster: ErgonomicCluster,
+	entries: ClassifiedEntry[],
+	referencedBaseName: string,
+	aliasBaseName: string,
+	route: ModuleRoute,
+	seenNames: Set<string>,
+	includeClusterHelpers: boolean,
+	sharedImportPath?: string,
+): ClusterSectionOutput {
+	const aliasNames: string[] = [];
+	const entryInfos: EntryTypeInfo[] = [];
+	const importSpecifiers = new Map<string, Set<string>>();
+
+	if (sharedImportPath) {
+		importSpecifiers.set(sharedImportPath, new Set([referencedBaseName]));
+	}
+
+	const aliasLines = entries.map((entry) => {
+		const index = cluster.entries.indexOf(entry);
+		const suffixName = cluster.aliasSuffixes[index];
+
+		if (!suffixName) {
+			throw new Error("Expected ergonomic alias suffix for cluster entry.");
+		}
+
+		const entryTypeName = createUniqueName(
+			`${aliasBaseName}${suffixName}`,
+			seenNames,
+		);
+		aliasNames.push(entryTypeName);
+		entryInfos.push({
+			templateId: entry.entry.templateId,
+			entryTypeName,
+			...getIdentityInfo(entry.entry, route.identityLookupKind),
+		});
+
+		return `export type ${entryTypeName} = ${referencedBaseName}<${renderEntryGenericArguments(cluster, entry.entry.templateId)}>;`;
+	});
+
+	return {
+		lines: includeClusterHelpers
+			? [
+					...aliasLines,
+					"",
+					`export type ${aliasBaseName}MasterfileEntry = ${joinTypeUnion(aliasNames)};`,
+					`export type ${aliasBaseName}TemplateId = ${aliasBaseName}MasterfileEntry["templateId"];`,
+				]
+			: aliasLines,
+		entryInfos,
+		importSpecifiers,
+	};
+}
+
+function mergeImportSpecifiers(
+	target: Map<string, Set<string>>,
+	source: Map<string, Set<string>>,
+): void {
+	for (const [importPath, names] of source.entries()) {
+		const existing = target.get(importPath);
+
+		if (existing) {
+			for (const name of names) {
+				existing.add(name);
+			}
+			continue;
+		}
+
+		target.set(importPath, new Set(names));
+	}
+}
+
+function buildRawClusterEntryInfos(
+	classifiedEntries: ClassifiedEntry[],
+	ctx: RenderContext,
+	route: ModuleRoute,
+): EntryTypeInfo[] {
+	return classifiedEntries.map((classifiedEntry) => {
 		const { entry } = classifiedEntry;
 		const interfaceBase = sanitizeIdentifier(entry.templateId);
 		const dataShape = inferShape(entry.data);
@@ -962,15 +1733,238 @@ function buildTypescriptGroupModule(
 			].join("\n"),
 		);
 
-		entryTypeNames.push(entryTypeName);
-		byTemplateIdLines.push(
-			`  ${JSON.stringify(entry.templateId)}: ${entryTypeName};`,
-		);
-		entryInfos.push({
+		return {
 			templateId: entry.templateId,
 			entryTypeName,
 			...getIdentityInfo(entry, route.identityLookupKind),
+		};
+	});
+}
+
+function buildErgonomicPlanKey(scopeKey: string, clusterKey: string): string {
+	return `${scopeKey}::${clusterKey}`;
+}
+
+function buildErgonomicPlans(
+	classifiedEntries: ClassifiedEntry[],
+	options: CliOptions,
+): {
+	planByKey: Map<string, ErgonomicClusterRenderPlan>;
+	sharedModules: SharedModuleOutput[];
+} {
+	const groupedByScope = new Map<string, ClassifiedEntry[]>();
+
+	for (const entry of classifiedEntries) {
+		const scopeKey = getSharedPokemonScopeKey(entry.route) ?? entry.route.key;
+		const existing = groupedByScope.get(scopeKey);
+
+		if (existing) {
+			existing.push(entry);
+			continue;
+		}
+
+		groupedByScope.set(scopeKey, [entry]);
+	}
+
+	const planByKey = new Map<string, ErgonomicClusterRenderPlan>();
+	const sharedModules: SharedModuleOutput[] = [];
+
+	for (const [scopeKey, scopeEntries] of groupedByScope.entries()) {
+		const firstEntry = scopeEntries[0];
+
+		if (!firstEntry) {
+			continue;
+		}
+
+		const sharedScopeKey = getSharedPokemonScopeKey(firstEntry.route);
+		const clusterEntries = new Map<string, ClassifiedEntry[]>();
+
+		for (const entry of scopeEntries) {
+			const clusterKey = buildClusterKey(entry);
+			const existing = clusterEntries.get(clusterKey);
+
+			if (existing) {
+				existing.push(entry);
+				continue;
+			}
+
+			clusterEntries.set(clusterKey, [entry]);
+		}
+
+		const seenBaseNames = new Set<string>();
+		const plans = [...clusterEntries.entries()]
+			.sort(([left], [right]) =>
+				(clusterEntries.get(left)?.[0]?.entry.templateId ?? "").localeCompare(
+					clusterEntries.get(right)?.[0]?.entry.templateId ?? "",
+				),
+			)
+			.flatMap(([clusterKey, entries]) => {
+				const aliasBaseName =
+					sharedScopeKey !== undefined
+						? getSharedScopeAliasBaseName(sharedScopeKey)
+						: shouldBuildLocalErgonomicPlan(firstEntry.route)
+							? buildLocalAliasBaseName(entries)
+							: null;
+
+				if (!aliasBaseName) {
+					return [];
+				}
+
+				const internalBaseName =
+					sharedScopeKey !== undefined
+						? createUniqueName(`${aliasBaseName}Shared`, seenBaseNames)
+						: createUniqueName(aliasBaseName, seenBaseNames);
+				const cluster = buildErgonomicCluster(
+					entries,
+					clusterKey,
+					aliasBaseName,
+					internalBaseName,
+				);
+
+				if (!cluster) {
+					return [];
+				}
+
+				return [
+					{
+						scopeKey,
+						cluster,
+						sharedFileName:
+							sharedScopeKey !== undefined
+								? `${sharedScopeKey}/shared.generated.ts`
+								: undefined,
+						sharedImportPath:
+							sharedScopeKey !== undefined ? "./shared.generated" : undefined,
+					} satisfies ErgonomicClusterRenderPlan,
+				];
+			});
+
+		for (const plan of plans) {
+			planByKey.set(buildErgonomicPlanKey(scopeKey, plan.cluster.key), plan);
+		}
+
+		if (sharedScopeKey === undefined || plans.length === 0) {
+			continue;
+		}
+
+		const sharedSeenNames = new Set<string>();
+		const sections = plans.map((plan) =>
+			buildErgonomicBaseLines(
+				plan.cluster,
+				plan.cluster.internalBaseName,
+				sharedSeenNames,
+			),
+		);
+		const totalEntries = plans.reduce(
+			(count, plan) => count + plan.cluster.entries.length,
+			0,
+		);
+
+		sharedModules.push({
+			fileName: `${sharedScopeKey}/shared.generated.ts`,
+			content: [
+				"/* eslint-disable */",
+				"// Auto-generated from GAME_MASTER.json",
+				"// Do not edit by hand.",
+				`// Group: ${sharedScopeKey}/shared`,
+				`// Filters: ${summarizeTemplateFilters(options)}`,
+				`// Entries emitted: ${totalEntries}`,
+				"",
+				...sections.flatMap((section, index) =>
+					index === 0 ? section : ["", ...section],
+				),
+				"",
+			].join("\n"),
 		});
+	}
+
+	return {
+		planByKey,
+		sharedModules,
+	};
+}
+
+function buildTypescriptGroupModule(
+	classifiedEntries: ClassifiedEntry[],
+	route: ModuleRoute,
+	options: CliOptions,
+	planByKey: Map<string, ErgonomicClusterRenderPlan>,
+): GroupModuleOutput {
+	const ctx = createNamedShapeRenderContext();
+	const entryTypeNames: string[] = [];
+	const byTemplateIdLines: string[] = [];
+	const entryInfos: EntryTypeInfo[] = [];
+	const importSpecifiers = new Map<string, Set<string>>();
+	const clusterSections: string[][] = [];
+	const groupedClusters = new Map<string, ClassifiedEntry[]>();
+
+	for (const classifiedEntry of classifiedEntries) {
+		const clusterKey = buildClusterKey(classifiedEntry);
+		const existing = groupedClusters.get(clusterKey);
+
+		if (existing) {
+			existing.push(classifiedEntry);
+			continue;
+		}
+
+		groupedClusters.set(clusterKey, [classifiedEntry]);
+	}
+
+	for (const [clusterKey, clusterEntries] of [
+		...groupedClusters.entries(),
+	].sort(([left], [right]) =>
+		(groupedClusters.get(left)?.[0]?.entry.templateId ?? "").localeCompare(
+			groupedClusters.get(right)?.[0]?.entry.templateId ?? "",
+		),
+	)) {
+		const scopeKey = getSharedPokemonScopeKey(route) ?? route.key;
+		const plan = planByKey.get(buildErgonomicPlanKey(scopeKey, clusterKey));
+
+		if (plan?.sharedFileName && plan.sharedImportPath) {
+			const section = buildErgonomicAliasSection(
+				plan.cluster,
+				clusterEntries,
+				plan.cluster.internalBaseName,
+				plan.cluster.aliasBaseName,
+				route,
+				ctx.seenNames,
+				false,
+				plan.sharedImportPath,
+			);
+			clusterSections.push(section.lines);
+			entryInfos.push(...section.entryInfos);
+			mergeImportSpecifiers(importSpecifiers, section.importSpecifiers);
+			continue;
+		}
+
+		if (plan) {
+			const baseLines = buildErgonomicBaseLines(
+				plan.cluster,
+				plan.cluster.internalBaseName,
+				ctx.seenNames,
+			);
+			const section = buildErgonomicAliasSection(
+				plan.cluster,
+				clusterEntries,
+				plan.cluster.internalBaseName,
+				plan.cluster.aliasBaseName,
+				route,
+				ctx.seenNames,
+				true,
+			);
+			clusterSections.push([...baseLines, "", ...section.lines]);
+			entryInfos.push(...section.entryInfos);
+			continue;
+		}
+
+		entryInfos.push(...buildRawClusterEntryInfos(clusterEntries, ctx, route));
+	}
+
+	for (const entryInfo of entryInfos) {
+		entryTypeNames.push(entryInfo.entryTypeName);
+		byTemplateIdLines.push(
+			`  ${JSON.stringify(entryInfo.templateId)}: ${entryInfo.entryTypeName};`,
+		);
 	}
 
 	const moduleBaseName = route.typeName;
@@ -1007,8 +2001,23 @@ function buildTypescriptGroupModule(
 			`// Filters: ${summarizeTemplateFilters(options)}`,
 			`// Entries emitted: ${classifiedEntries.length}`,
 			"",
+			...[...importSpecifiers.entries()]
+				.sort(([left], [right]) => left.localeCompare(right))
+				.map(
+					([importPath, names]) =>
+						`import type { ${[...names].sort((left, right) => left.localeCompare(right)).join(", ")} } from ${JSON.stringify(importPath)};`,
+				),
+			...(importSpecifiers.size > 0 ? [""] : []),
 			...ctx.declarations,
-			"",
+			...(ctx.declarations.length > 0 && clusterSections.length > 0
+				? [""]
+				: []),
+			...clusterSections.flatMap((section, index) =>
+				index === 0 ? section : ["", ...section],
+			),
+			...(ctx.declarations.length > 0 || clusterSections.length > 0
+				? [""]
+				: []),
 			`export interface ${byTemplateIdName} {`,
 			...byTemplateIdLines,
 			"}",
@@ -1034,6 +2043,10 @@ function buildModuleImportLine(module: GroupModuleOutput): string {
 	];
 
 	return `import type { ${importedNames.join(", ")} } from ${JSON.stringify(module.importPath)};`;
+}
+
+function shouldReExportModuleFromBarrel(module: GroupModuleOutput): boolean {
+	return getSharedPokemonScopeKey(module.route) === undefined;
 }
 
 function buildFamilyUnionLines(
@@ -1072,6 +2085,10 @@ export function buildTypescriptFiles(
 ): GeneratedFileBundle {
 	const filteredEntries = filterGameMasterEntries(entries, options);
 	const classifiedEntries = filteredEntries.map(classifyTypescriptEntry);
+	const { planByKey, sharedModules } = buildErgonomicPlans(
+		classifiedEntries,
+		options,
+	);
 	const groupedEntries = new Map<string, ClassifiedEntry[]>();
 
 	for (const classifiedEntry of classifiedEntries) {
@@ -1096,6 +2113,7 @@ export function buildTypescriptFiles(
 				moduleEntries,
 				firstEntry.route,
 				options,
+				planByKey,
 			);
 		})
 		.sort((left, right) => compareRouteSegments(left.route, right.route));
@@ -1123,9 +2141,9 @@ export function buildTypescriptFiles(
 			`// Entries emitted: ${filteredEntries.length}`,
 			`// Groups emitted: ${modules.length}`,
 			"",
-			...modules.map(
-				(module) => `export * from ${JSON.stringify(module.importPath)};`,
-			),
+			...modules
+				.filter(shouldReExportModuleFromBarrel)
+				.map((module) => `export * from ${JSON.stringify(module.importPath)};`),
 			"",
 			'import type POGOProtos from "@na-ji/pogo-protos";',
 			...modules.map(buildModuleImportLine),
@@ -1230,10 +2248,13 @@ export function buildTypescriptFiles(
 			"};",
 			"",
 		].join("\n"),
-		files: modules.map((module) => ({
-			fileName: module.fileName,
-			content: module.content,
-		})),
+		files: [
+			...sharedModules,
+			...modules.map((module) => ({
+				fileName: module.fileName,
+				content: module.content,
+			})),
+		].sort((left, right) => left.fileName.localeCompare(right.fileName)),
 	};
 }
 

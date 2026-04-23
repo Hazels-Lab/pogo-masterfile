@@ -107,6 +107,18 @@ export interface Combat_ranking_settings_s27Entry {
   templateId: "COMBAT_RANKING_SETTINGS_S27";
   data: Combat_ranking_settings_s10data;
 }
+export interface Combat_ranking_settings_s29Entry {
+  templateId: "COMBAT_RANKING_SETTINGS_S29";
+  data: Combat_ranking_settings_s10data;
+}
+export interface Combat_ranking_settings_s8Entry {
+  templateId: "COMBAT_RANKING_SETTINGS_S8";
+  data: Combat_ranking_settings_s10data;
+}
+export interface Combat_ranking_settings_s9Entry {
+  templateId: "COMBAT_RANKING_SETTINGS_S9";
+  data: Combat_ranking_settings_s10data;
+}
 export interface Combat_ranking_settings_s28datacombatrankingprotosettings {
   minRankToDisplayRating: number;
   minRatingRequired: number;
@@ -120,18 +132,6 @@ export interface Combat_ranking_settings_s28data {
 export interface Combat_ranking_settings_s28Entry {
   templateId: "COMBAT_RANKING_SETTINGS_S28";
   data: Combat_ranking_settings_s28data;
-}
-export interface Combat_ranking_settings_s29Entry {
-  templateId: "COMBAT_RANKING_SETTINGS_S29";
-  data: Combat_ranking_settings_s10data;
-}
-export interface Combat_ranking_settings_s8Entry {
-  templateId: "COMBAT_RANKING_SETTINGS_S8";
-  data: Combat_ranking_settings_s10data;
-}
-export interface Combat_ranking_settings_s9Entry {
-  templateId: "COMBAT_RANKING_SETTINGS_S9";
-  data: Combat_ranking_settings_s10data;
 }
 
 export interface CombatRankingMasterfileByTemplateId {
@@ -152,10 +152,10 @@ export interface CombatRankingMasterfileByTemplateId {
   "COMBAT_RANKING_SETTINGS_S25": Combat_ranking_settings_s25Entry;
   "COMBAT_RANKING_SETTINGS_S26": Combat_ranking_settings_s26Entry;
   "COMBAT_RANKING_SETTINGS_S27": Combat_ranking_settings_s27Entry;
-  "COMBAT_RANKING_SETTINGS_S28": Combat_ranking_settings_s28Entry;
   "COMBAT_RANKING_SETTINGS_S29": Combat_ranking_settings_s29Entry;
   "COMBAT_RANKING_SETTINGS_S8": Combat_ranking_settings_s8Entry;
   "COMBAT_RANKING_SETTINGS_S9": Combat_ranking_settings_s9Entry;
+  "COMBAT_RANKING_SETTINGS_S28": Combat_ranking_settings_s28Entry;
 }
 
-export type CombatRankingMasterfileEntry = Combat_ranking_settingsEntry | Combat_ranking_settings_s10Entry | Combat_ranking_settings_s13Entry | Combat_ranking_settings_s14Entry | Combat_ranking_settings_s15Entry | Combat_ranking_settings_s16Entry | Combat_ranking_settings_s17Entry | Combat_ranking_settings_s18Entry | Combat_ranking_settings_s19Entry | Combat_ranking_settings_s20Entry | Combat_ranking_settings_s21Entry | Combat_ranking_settings_s22Entry | Combat_ranking_settings_s23Entry | Combat_ranking_settings_s24Entry | Combat_ranking_settings_s25Entry | Combat_ranking_settings_s26Entry | Combat_ranking_settings_s27Entry | Combat_ranking_settings_s28Entry | Combat_ranking_settings_s29Entry | Combat_ranking_settings_s8Entry | Combat_ranking_settings_s9Entry;
+export type CombatRankingMasterfileEntry = Combat_ranking_settingsEntry | Combat_ranking_settings_s10Entry | Combat_ranking_settings_s13Entry | Combat_ranking_settings_s14Entry | Combat_ranking_settings_s15Entry | Combat_ranking_settings_s16Entry | Combat_ranking_settings_s17Entry | Combat_ranking_settings_s18Entry | Combat_ranking_settings_s19Entry | Combat_ranking_settings_s20Entry | Combat_ranking_settings_s21Entry | Combat_ranking_settings_s22Entry | Combat_ranking_settings_s23Entry | Combat_ranking_settings_s24Entry | Combat_ranking_settings_s25Entry | Combat_ranking_settings_s26Entry | Combat_ranking_settings_s27Entry | Combat_ranking_settings_s29Entry | Combat_ranking_settings_s8Entry | Combat_ranking_settings_s9Entry | Combat_ranking_settings_s28Entry;

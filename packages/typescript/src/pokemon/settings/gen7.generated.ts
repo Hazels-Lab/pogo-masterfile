@@ -5,6 +5,8 @@
 // Filters: all
 // Entries emitted: 215
 
+import type { PokemonSettingsShared1095, PokemonSettingsShared1096, PokemonSettingsShared1097, PokemonSettingsShared1098, PokemonSettingsShared1109, PokemonSettingsShared1110, PokemonSettingsShared1114, PokemonSettingsShared1116, PokemonSettingsShared1121, PokemonSettingsShared1122, PokemonSettingsShared1130, PokemonSettingsShared1131, PokemonSettingsShared1137, PokemonSettingsShared1138, PokemonSettingsShared1139, PokemonSettingsShared1140, PokemonSettingsShared1158, PokemonSettingsShared1167, PokemonSettingsShared1168, PokemonSettingsShared1182, PokemonSettingsShared1184, PokemonSettingsShared1192, PokemonSettingsShared1203, PokemonSettingsShared1204, PokemonSettingsShared1215, PokemonSettingsShared1216, PokemonSettingsShared1231 } from "./shared.generated";
+
 export interface V0722_pokemon_rowletdatapokemonsettingscamera {
   cylinderHeightM: number;
   cylinderRadiusM: number;
@@ -650,158 +652,6 @@ export interface V0727_pokemon_incineroar_normalEntry {
   templateId: "V0727_POKEMON_INCINEROAR_NORMAL";
   data: V0727_pokemon_incineroar_normaldata;
 }
-export interface V0728_pokemon_poppliodatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0722_pokemon_rowletdatapokemonsettingsencounter;
-  evolutionBranch: (V0722_pokemon_rowletdatapokemonsettingsevolutionbranchitem)[];
-  familyId: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0728_pokemon_poppliodata {
-  pokemonSettings: V0728_pokemon_poppliodatapokemonsettings;
-  templateId: string;
-}
-export interface V0728_pokemon_popplioEntry {
-  templateId: "V0728_POKEMON_POPPLIO";
-  data: V0728_pokemon_poppliodata;
-}
-export interface V0728_pokemon_popplio_normaldatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0722_pokemon_rowletdatapokemonsettingsencounter;
-  evolutionBranch: (V0722_pokemon_rowlet_normaldatapokemonsettingsevolutionbranchitem)[];
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0728_pokemon_popplio_normaldata {
-  pokemonSettings: V0728_pokemon_popplio_normaldatapokemonsettings;
-  templateId: string;
-}
-export interface V0728_pokemon_popplio_normalEntry {
-  templateId: "V0728_POKEMON_POPPLIO_NORMAL";
-  data: V0728_pokemon_popplio_normaldata;
-}
-export interface V0729_pokemon_brionnedatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0723_pokemon_dartrixdatapokemonsettingsencounter;
-  evolutionBranch: (V0722_pokemon_rowletdatapokemonsettingsevolutionbranchitem)[];
-  familyId: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0729_pokemon_brionnedata {
-  pokemonSettings: V0729_pokemon_brionnedatapokemonsettings;
-  templateId: string;
-}
-export interface V0729_pokemon_brionneEntry {
-  templateId: "V0729_POKEMON_BRIONNE";
-  data: V0729_pokemon_brionnedata;
-}
-export interface V0729_pokemon_brionne_normaldatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0723_pokemon_dartrixdatapokemonsettingsencounter;
-  evolutionBranch: (V0722_pokemon_rowlet_normaldatapokemonsettingsevolutionbranchitem)[];
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0729_pokemon_brionne_normaldata {
-  pokemonSettings: V0729_pokemon_brionne_normaldatapokemonsettings;
-  templateId: string;
-}
-export interface V0729_pokemon_brionne_normalEntry {
-  templateId: "V0729_POKEMON_BRIONNE_NORMAL";
-  data: V0729_pokemon_brionne_normaldata;
-}
 export interface V0730_pokemon_primarinadatapokemonsettings {
   breadTierGroup: string;
   buddyGroupNumber: number;
@@ -1281,83 +1131,6 @@ export interface V0734_pokemon_yungoos_normalEntry {
   templateId: "V0734_POKEMON_YUNGOOS_NORMAL";
   data: V0734_pokemon_yungoos_normaldata;
 }
-export interface V0735_pokemon_gumshoosdatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyPortraitOffset: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0723_pokemon_dartrixdatapokemonsettingsencounter;
-  familyId: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0735_pokemon_gumshoosdata {
-  pokemonSettings: V0735_pokemon_gumshoosdatapokemonsettings;
-  templateId: string;
-}
-export interface V0735_pokemon_gumshoosEntry {
-  templateId: "V0735_POKEMON_GUMSHOOS";
-  data: V0735_pokemon_gumshoosdata;
-}
-export interface V0735_pokemon_gumshoos_normaldatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyPortraitOffset: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0723_pokemon_dartrixdatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0735_pokemon_gumshoos_normaldata {
-  pokemonSettings: V0735_pokemon_gumshoos_normaldatapokemonsettings;
-  templateId: string;
-}
-export interface V0735_pokemon_gumshoos_normalEntry {
-  templateId: "V0735_POKEMON_GUMSHOOS_NORMAL";
-  data: V0735_pokemon_gumshoos_normaldata;
-}
 export interface V0736_pokemon_grubbindatapokemonsettings {
   breadTierGroup: string;
   buddyGroupNumber: number;
@@ -1485,60 +1258,6 @@ export interface V0737_pokemon_charjabugEntry {
   templateId: "V0737_POKEMON_CHARJABUG";
   data: V0737_pokemon_charjabugdata;
 }
-export interface V0737_pokemon_charjabug_normaldatapokemonsettingsevolutionbranchitem {
-  candyCost: number;
-  candyCostPurified: number;
-  evolution: string;
-  form: string;
-  lureItemRequirement: string;
-}
-export interface V0737_pokemon_charjabug_normaldatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyPortraitOffset: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  eliteQuickMove: (string)[];
-  encounter: V0732_pokemon_trumbeakdatapokemonsettingsencounter;
-  evolutionBranch: (V0737_pokemon_charjabug_normaldatapokemonsettingsevolutionbranchitem)[];
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  shadow: V0731_pokemon_pikipekdatapokemonsettingsshadow;
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  weightStdDev: number;
-}
-export interface V0737_pokemon_charjabug_normaldata {
-  pokemonSettings: V0737_pokemon_charjabug_normaldatapokemonsettings;
-  templateId: string;
-}
-export interface V0737_pokemon_charjabug_normalEntry {
-  templateId: "V0737_POKEMON_CHARJABUG_NORMAL";
-  data: V0737_pokemon_charjabug_normaldata;
-}
-export interface V0737_pokemon_charjabug_winter_2025Entry {
-  templateId: "V0737_POKEMON_CHARJABUG_WINTER_2025";
-  data: V0737_pokemon_charjabug_normaldata;
-}
 export interface V0738_pokemon_vikavoltdatapokemonsettings {
   breadTierGroup: string;
   buddyGroupNumber: number;
@@ -1581,54 +1300,6 @@ export interface V0738_pokemon_vikavoltdata {
 export interface V0738_pokemon_vikavoltEntry {
   templateId: "V0738_POKEMON_VIKAVOLT";
   data: V0738_pokemon_vikavoltdata;
-}
-export interface V0738_pokemon_vikavolt_normaldatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyPortraitOffset: (number)[];
-  buddyScale: number;
-  buddySize: string;
-  camera: V0732_pokemon_trumbeakdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  eliteQuickMove: (string)[];
-  encounter: V0732_pokemon_trumbeakdatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  shadow: V0731_pokemon_pikipekdatapokemonsettingsshadow;
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  useIrisFlyingPlacement: boolean;
-  weightStdDev: number;
-}
-export interface V0738_pokemon_vikavolt_normaldata {
-  pokemonSettings: V0738_pokemon_vikavolt_normaldatapokemonsettings;
-  templateId: string;
-}
-export interface V0738_pokemon_vikavolt_normalEntry {
-  templateId: "V0738_POKEMON_VIKAVOLT_NORMAL";
-  data: V0738_pokemon_vikavolt_normaldata;
-}
-export interface V0738_pokemon_vikavolt_winter_2025Entry {
-  templateId: "V0738_POKEMON_VIKAVOLT_WINTER_2025";
-  data: V0738_pokemon_vikavolt_normaldata;
 }
 export interface V0739_pokemon_crabrawlerdatapokemonsettingsevolutionbranchitem {
   candyCost: number;
@@ -1796,91 +1467,6 @@ export interface V0740_pokemon_crabominable_normaldata {
 export interface V0740_pokemon_crabominable_normalEntry {
   templateId: "V0740_POKEMON_CRABOMINABLE_NORMAL";
   data: V0740_pokemon_crabominable_normaldata;
-}
-export interface V0741_pokemon_oricoriodatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0722_pokemon_rowletdatapokemonsettingsencounter;
-  familyId: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  weightStdDev: number;
-}
-export interface V0741_pokemon_oricoriodata {
-  pokemonSettings: V0741_pokemon_oricoriodatapokemonsettings;
-  templateId: string;
-}
-export interface V0741_pokemon_oricorioEntry {
-  templateId: "V0741_POKEMON_ORICORIO";
-  data: V0741_pokemon_oricoriodata;
-}
-export interface V0741_pokemon_oricorio_bailedatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0722_pokemon_rowletdatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  weightStdDev: number;
-}
-export interface V0741_pokemon_oricorio_bailedata {
-  pokemonSettings: V0741_pokemon_oricorio_bailedatapokemonsettings;
-  templateId: string;
-}
-export interface V0741_pokemon_oricorio_baileEntry {
-  templateId: "V0741_POKEMON_ORICORIO_BAILE";
-  data: V0741_pokemon_oricorio_bailedata;
-}
-export interface V0741_pokemon_oricorio_pauEntry {
-  templateId: "V0741_POKEMON_ORICORIO_PAU";
-  data: V0741_pokemon_oricorio_bailedata;
-}
-export interface V0741_pokemon_oricorio_pompomEntry {
-  templateId: "V0741_POKEMON_ORICORIO_POMPOM";
-  data: V0741_pokemon_oricorio_bailedata;
-}
-export interface V0741_pokemon_oricorio_sensuEntry {
-  templateId: "V0741_POKEMON_ORICORIO_SENSU";
-  data: V0741_pokemon_oricorio_bailedata;
 }
 export interface V0742_pokemon_cutieflydatapokemonsettings {
   breadTierGroup: string;
@@ -2172,89 +1758,6 @@ export interface V0744_pokemon_rockruff_normalEntry {
   templateId: "V0744_POKEMON_ROCKRUFF_NORMAL";
   data: V0744_pokemon_rockruff_normaldata;
 }
-export interface V0745_pokemon_lycanrocdatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyPortraitOffset: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0723_pokemon_dartrixdatapokemonsettingsencounter;
-  familyId: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0745_pokemon_lycanrocdata {
-  pokemonSettings: V0745_pokemon_lycanrocdatapokemonsettings;
-  templateId: string;
-}
-export interface V0745_pokemon_lycanrocEntry {
-  templateId: "V0745_POKEMON_LYCANROC";
-  data: V0745_pokemon_lycanrocdata;
-}
-export interface V0745_pokemon_lycanroc_duskdatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyPortraitOffset: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0723_pokemon_dartrixdatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0745_pokemon_lycanroc_duskdata {
-  pokemonSettings: V0745_pokemon_lycanroc_duskdatapokemonsettings;
-  templateId: string;
-}
-export interface V0745_pokemon_lycanroc_duskEntry {
-  templateId: "V0745_POKEMON_LYCANROC_DUSK";
-  data: V0745_pokemon_lycanroc_duskdata;
-}
-export interface V0745_pokemon_lycanroc_middayEntry {
-  templateId: "V0745_POKEMON_LYCANROC_MIDDAY";
-  data: V0745_pokemon_lycanroc_duskdata;
-}
-export interface V0745_pokemon_lycanroc_midnightEntry {
-  templateId: "V0745_POKEMON_LYCANROC_MIDNIGHT";
-  data: V0745_pokemon_lycanroc_duskdata;
-}
 export interface V0746_pokemon_wishiwashidatapokemonsettings {
   breadTierGroup: string;
   buddyGroupNumber: number;
@@ -2437,166 +1940,6 @@ export interface V0747_pokemon_mareanie_normaldata {
 export interface V0747_pokemon_mareanie_normalEntry {
   templateId: "V0747_POKEMON_MAREANIE_NORMAL";
   data: V0747_pokemon_mareanie_normaldata;
-}
-export interface V0748_pokemon_toxapexdatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0723_pokemon_dartrixdatapokemonsettingsencounter;
-  familyId: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  weightStdDev: number;
-}
-export interface V0748_pokemon_toxapexdata {
-  pokemonSettings: V0748_pokemon_toxapexdatapokemonsettings;
-  templateId: string;
-}
-export interface V0748_pokemon_toxapexEntry {
-  templateId: "V0748_POKEMON_TOXAPEX";
-  data: V0748_pokemon_toxapexdata;
-}
-export interface V0748_pokemon_toxapex_normaldatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0723_pokemon_dartrixdatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  weightStdDev: number;
-}
-export interface V0748_pokemon_toxapex_normaldata {
-  pokemonSettings: V0748_pokemon_toxapex_normaldatapokemonsettings;
-  templateId: string;
-}
-export interface V0748_pokemon_toxapex_normalEntry {
-  templateId: "V0748_POKEMON_TOXAPEX_NORMAL";
-  data: V0748_pokemon_toxapex_normaldata;
-}
-export interface V0749_pokemon_mudbraydatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyPortraitOffset: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0722_pokemon_rowletdatapokemonsettingsencounter;
-  evolutionBranch: (V0722_pokemon_rowletdatapokemonsettingsevolutionbranchitem)[];
-  familyId: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0749_pokemon_mudbraydata {
-  pokemonSettings: V0749_pokemon_mudbraydatapokemonsettings;
-  templateId: string;
-}
-export interface V0749_pokemon_mudbrayEntry {
-  templateId: "V0749_POKEMON_MUDBRAY";
-  data: V0749_pokemon_mudbraydata;
-}
-export interface V0749_pokemon_mudbray_normaldatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyPortraitOffset: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0722_pokemon_rowletdatapokemonsettingsencounter;
-  evolutionBranch: (V0722_pokemon_rowlet_normaldatapokemonsettingsevolutionbranchitem)[];
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0749_pokemon_mudbray_normaldata {
-  pokemonSettings: V0749_pokemon_mudbray_normaldatapokemonsettings;
-  templateId: string;
-}
-export interface V0749_pokemon_mudbray_normalEntry {
-  templateId: "V0749_POKEMON_MUDBRAY_NORMAL";
-  data: V0749_pokemon_mudbray_normaldata;
-}
-export interface V0750_pokemon_mudsdaleEntry {
-  templateId: "V0750_POKEMON_MUDSDALE";
-  data: V0735_pokemon_gumshoosdata;
-}
-export interface V0750_pokemon_mudsdale_normalEntry {
-  templateId: "V0750_POKEMON_MUDSDALE_NORMAL";
-  data: V0735_pokemon_gumshoos_normaldata;
 }
 export interface V0751_pokemon_dewpiderdatapokemonsettings {
   breadTierGroup: string;
@@ -2846,14 +2189,6 @@ export interface V0753_pokemon_fomantis_normaldata {
 export interface V0753_pokemon_fomantis_normalEntry {
   templateId: "V0753_POKEMON_FOMANTIS_NORMAL";
   data: V0753_pokemon_fomantis_normaldata;
-}
-export interface V0754_pokemon_lurantisEntry {
-  templateId: "V0754_POKEMON_LURANTIS";
-  data: V0735_pokemon_gumshoosdata;
-}
-export interface V0754_pokemon_lurantis_normalEntry {
-  templateId: "V0754_POKEMON_LURANTIS_NORMAL";
-  data: V0735_pokemon_gumshoos_normaldata;
 }
 export interface V0755_pokemon_morelulldatapokemonsettingsencounter {
   attackProbability: number;
@@ -3368,65 +2703,6 @@ export interface V0760_pokemon_bewearEntry {
   templateId: "V0760_POKEMON_BEWEAR";
   data: V0760_pokemon_beweardata;
 }
-export interface V0760_pokemon_bewear_normaldatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyPortraitOffset: (number)[];
-  buddyScale: number;
-  buddySize: string;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  combatDefaultCameraAngle: (number)[];
-  combatOpponentFocusCameraAngle: (number)[];
-  combatPlayerFocusCameraAngle: (number)[];
-  combatPlayerPokemonPositionOffset: (number)[];
-  combatShoulderCameraAngle: (number)[];
-  eliteCinematicMove: (string)[];
-  encounter: V0732_pokemon_trumbeakdatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  parentPokemonId: string;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  shadow: V0731_pokemon_pikipekdatapokemonsettingsshadow;
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  weightStdDev: number;
-}
-export interface V0760_pokemon_bewear_normaldata {
-  pokemonSettings: V0760_pokemon_bewear_normaldatapokemonsettings;
-  templateId: string;
-}
-export interface V0760_pokemon_bewear_normalEntry {
-  templateId: "V0760_POKEMON_BEWEAR_NORMAL";
-  data: V0760_pokemon_bewear_normaldata;
-}
-export interface V0760_pokemon_bewear_wildarea_2025Entry {
-  templateId: "V0760_POKEMON_BEWEAR_WILDAREA_2025";
-  data: V0760_pokemon_bewear_normaldata;
-}
-export interface V0761_pokemon_bounsweetEntry {
-  templateId: "V0761_POKEMON_BOUNSWEET";
-  data: V0749_pokemon_mudbraydata;
-}
-export interface V0761_pokemon_bounsweet_normalEntry {
-  templateId: "V0761_POKEMON_BOUNSWEET_NORMAL";
-  data: V0749_pokemon_mudbray_normaldata;
-}
 export interface V0762_pokemon_steeneedatapokemonsettings {
   breadTierGroup: string;
   buddyGroupNumber: number;
@@ -3728,81 +3004,6 @@ export interface V0765_pokemon_oranguru_normaldata {
 export interface V0765_pokemon_oranguru_normalEntry {
   templateId: "V0765_POKEMON_ORANGURU_NORMAL";
   data: V0765_pokemon_oranguru_normaldata;
-}
-export interface V0766_pokemon_passimiandatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyPortraitOffset: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0722_pokemon_rowletdatapokemonsettingsencounter;
-  familyId: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0766_pokemon_passimiandata {
-  pokemonSettings: V0766_pokemon_passimiandatapokemonsettings;
-  templateId: string;
-}
-export interface V0766_pokemon_passimianEntry {
-  templateId: "V0766_POKEMON_PASSIMIAN";
-  data: V0766_pokemon_passimiandata;
-}
-export interface V0766_pokemon_passimian_normaldatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyPortraitOffset: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0722_pokemon_rowletdatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0766_pokemon_passimian_normaldata {
-  pokemonSettings: V0766_pokemon_passimian_normaldatapokemonsettings;
-  templateId: string;
-}
-export interface V0766_pokemon_passimian_normalEntry {
-  templateId: "V0766_POKEMON_PASSIMIAN_NORMAL";
-  data: V0766_pokemon_passimian_normaldata;
 }
 export interface V0767_pokemon_wimpoddatapokemonsettings {
   breadTierGroup: string;
@@ -4351,110 +3552,6 @@ export interface V0773_pokemon_silvallyEntry {
   templateId: "V0773_POKEMON_SILVALLY";
   data: V0773_pokemon_silvallydata;
 }
-export interface V0773_pokemon_silvally_bugdatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  cinematicMoves: (string)[];
-  encounter: V0773_pokemon_silvallydatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonClass: string;
-  pokemonId: string;
-  quickMoves: (string)[];
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  weightStdDev: number;
-}
-export interface V0773_pokemon_silvally_bugdata {
-  pokemonSettings: V0773_pokemon_silvally_bugdatapokemonsettings;
-  templateId: string;
-}
-export interface V0773_pokemon_silvally_bugEntry {
-  templateId: "V0773_POKEMON_SILVALLY_BUG";
-  data: V0773_pokemon_silvally_bugdata;
-}
-export interface V0773_pokemon_silvally_darkEntry {
-  templateId: "V0773_POKEMON_SILVALLY_DARK";
-  data: V0773_pokemon_silvally_bugdata;
-}
-export interface V0773_pokemon_silvally_dragonEntry {
-  templateId: "V0773_POKEMON_SILVALLY_DRAGON";
-  data: V0773_pokemon_silvally_bugdata;
-}
-export interface V0773_pokemon_silvally_electricEntry {
-  templateId: "V0773_POKEMON_SILVALLY_ELECTRIC";
-  data: V0773_pokemon_silvally_bugdata;
-}
-export interface V0773_pokemon_silvally_fairyEntry {
-  templateId: "V0773_POKEMON_SILVALLY_FAIRY";
-  data: V0773_pokemon_silvally_bugdata;
-}
-export interface V0773_pokemon_silvally_fightingEntry {
-  templateId: "V0773_POKEMON_SILVALLY_FIGHTING";
-  data: V0773_pokemon_silvally_bugdata;
-}
-export interface V0773_pokemon_silvally_fireEntry {
-  templateId: "V0773_POKEMON_SILVALLY_FIRE";
-  data: V0773_pokemon_silvally_bugdata;
-}
-export interface V0773_pokemon_silvally_flyingEntry {
-  templateId: "V0773_POKEMON_SILVALLY_FLYING";
-  data: V0773_pokemon_silvally_bugdata;
-}
-export interface V0773_pokemon_silvally_ghostEntry {
-  templateId: "V0773_POKEMON_SILVALLY_GHOST";
-  data: V0773_pokemon_silvally_bugdata;
-}
-export interface V0773_pokemon_silvally_grassEntry {
-  templateId: "V0773_POKEMON_SILVALLY_GRASS";
-  data: V0773_pokemon_silvally_bugdata;
-}
-export interface V0773_pokemon_silvally_groundEntry {
-  templateId: "V0773_POKEMON_SILVALLY_GROUND";
-  data: V0773_pokemon_silvally_bugdata;
-}
-export interface V0773_pokemon_silvally_iceEntry {
-  templateId: "V0773_POKEMON_SILVALLY_ICE";
-  data: V0773_pokemon_silvally_bugdata;
-}
-export interface V0773_pokemon_silvally_normalEntry {
-  templateId: "V0773_POKEMON_SILVALLY_NORMAL";
-  data: V0773_pokemon_silvally_bugdata;
-}
-export interface V0773_pokemon_silvally_poisonEntry {
-  templateId: "V0773_POKEMON_SILVALLY_POISON";
-  data: V0773_pokemon_silvally_bugdata;
-}
-export interface V0773_pokemon_silvally_psychicEntry {
-  templateId: "V0773_POKEMON_SILVALLY_PSYCHIC";
-  data: V0773_pokemon_silvally_bugdata;
-}
-export interface V0773_pokemon_silvally_rockEntry {
-  templateId: "V0773_POKEMON_SILVALLY_ROCK";
-  data: V0773_pokemon_silvally_bugdata;
-}
-export interface V0773_pokemon_silvally_steelEntry {
-  templateId: "V0773_POKEMON_SILVALLY_STEEL";
-  data: V0773_pokemon_silvally_bugdata;
-}
-export interface V0773_pokemon_silvally_waterEntry {
-  templateId: "V0773_POKEMON_SILVALLY_WATER";
-  data: V0773_pokemon_silvally_bugdata;
-}
 export interface V0774_pokemon_miniordatapokemonsettingsencounter {
   attackProbability: number;
   cameraDistance: number;
@@ -4500,67 +3597,6 @@ export interface V0774_pokemon_miniordata {
 export interface V0774_pokemon_miniorEntry {
   templateId: "V0774_POKEMON_MINIOR";
   data: V0774_pokemon_miniordata;
-}
-export interface V0774_pokemon_minior_bluedatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  cinematicMoves: (string)[];
-  encounter: V0774_pokemon_miniordatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  weightStdDev: number;
-}
-export interface V0774_pokemon_minior_bluedata {
-  pokemonSettings: V0774_pokemon_minior_bluedatapokemonsettings;
-  templateId: string;
-}
-export interface V0774_pokemon_minior_blueEntry {
-  templateId: "V0774_POKEMON_MINIOR_BLUE";
-  data: V0774_pokemon_minior_bluedata;
-}
-export interface V0774_pokemon_minior_greenEntry {
-  templateId: "V0774_POKEMON_MINIOR_GREEN";
-  data: V0774_pokemon_minior_bluedata;
-}
-export interface V0774_pokemon_minior_indigoEntry {
-  templateId: "V0774_POKEMON_MINIOR_INDIGO";
-  data: V0774_pokemon_minior_bluedata;
-}
-export interface V0774_pokemon_minior_orangeEntry {
-  templateId: "V0774_POKEMON_MINIOR_ORANGE";
-  data: V0774_pokemon_minior_bluedata;
-}
-export interface V0774_pokemon_minior_redEntry {
-  templateId: "V0774_POKEMON_MINIOR_RED";
-  data: V0774_pokemon_minior_bluedata;
-}
-export interface V0774_pokemon_minior_violetEntry {
-  templateId: "V0774_POKEMON_MINIOR_VIOLET";
-  data: V0774_pokemon_minior_bluedata;
-}
-export interface V0774_pokemon_minior_yellowEntry {
-  templateId: "V0774_POKEMON_MINIOR_YELLOW";
-  data: V0774_pokemon_minior_bluedata;
 }
 export interface V0775_pokemon_komaladatapokemonsettings {
   breadTierGroup: string;
@@ -4839,49 +3875,6 @@ export interface V0778_pokemon_mimikyuEntry {
   templateId: "V0778_POKEMON_MIMIKYU";
   data: V0778_pokemon_mimikyudata;
 }
-export interface V0778_pokemon_mimikyu_busteddatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyPortraitOffset: (number)[];
-  buddyPortraitRotation: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0769_pokemon_sandygastdatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isDeployable: boolean;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonId: string;
-  quickMoves: (string)[];
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  weightStdDev: number;
-}
-export interface V0778_pokemon_mimikyu_busteddata {
-  pokemonSettings: V0778_pokemon_mimikyu_busteddatapokemonsettings;
-  templateId: string;
-}
-export interface V0778_pokemon_mimikyu_bustedEntry {
-  templateId: "V0778_POKEMON_MIMIKYU_BUSTED";
-  data: V0778_pokemon_mimikyu_busteddata;
-}
-export interface V0778_pokemon_mimikyu_disguisedEntry {
-  templateId: "V0778_POKEMON_MIMIKYU_DISGUISED";
-  data: V0778_pokemon_mimikyu_busteddata;
-}
 export interface V0779_pokemon_bruxishdatapokemonsettings {
   breadTierGroup: string;
   buddyGroupNumber: number;
@@ -5111,14 +4104,6 @@ export interface V0781_pokemon_dhelmise_normalEntry {
   templateId: "V0781_POKEMON_DHELMISE_NORMAL";
   data: V0781_pokemon_dhelmise_normaldata;
 }
-export interface V0782_pokemon_jangmo_oEntry {
-  templateId: "V0782_POKEMON_JANGMO_O";
-  data: V0728_pokemon_poppliodata;
-}
-export interface V0782_pokemon_jangmo_o_normalEntry {
-  templateId: "V0782_POKEMON_JANGMO_O_NORMAL";
-  data: V0728_pokemon_popplio_normaldata;
-}
 export interface V0783_pokemon_hakamo_odatapokemonsettings {
   breadTierGroup: string;
   buddyGroupNumber: number;
@@ -5277,7 +4262,7 @@ export interface V0784_pokemon_kommo_o_normalEntry {
   templateId: "V0784_POKEMON_KOMMO_O_NORMAL";
   data: V0784_pokemon_kommo_o_normaldata;
 }
-export interface V0785_pokemon_tapu_kokodatapokemonsettingsencounter {
+export interface V0789_pokemon_cosmogdatapokemonsettingsencounter {
   attackProbability: number;
   bonusXlCandyCaptureReward: number;
   cameraDistance: number;
@@ -5292,111 +4277,6 @@ export interface V0785_pokemon_tapu_kokodatapokemonsettingsencounter {
   minPokemonActionFrequencyS: number;
   movementType: string;
 }
-export interface V0785_pokemon_tapu_kokodatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyPortraitOffset: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  eliteCinematicMove: (string)[];
-  encounter: V0785_pokemon_tapu_kokodatapokemonsettingsencounter;
-  familyId: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonClass: string;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  useIrisFlyingPlacement: boolean;
-  weightStdDev: number;
-}
-export interface V0785_pokemon_tapu_kokodata {
-  pokemonSettings: V0785_pokemon_tapu_kokodatapokemonsettings;
-  templateId: string;
-}
-export interface V0785_pokemon_tapu_kokoEntry {
-  templateId: "V0785_POKEMON_TAPU_KOKO";
-  data: V0785_pokemon_tapu_kokodata;
-}
-export interface V0785_pokemon_tapu_koko_normaldatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyPortraitOffset: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  eliteCinematicMove: (string)[];
-  encounter: V0785_pokemon_tapu_kokodatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonClass: string;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  useIrisFlyingPlacement: boolean;
-  weightStdDev: number;
-}
-export interface V0785_pokemon_tapu_koko_normaldata {
-  pokemonSettings: V0785_pokemon_tapu_koko_normaldatapokemonsettings;
-  templateId: string;
-}
-export interface V0785_pokemon_tapu_koko_normalEntry {
-  templateId: "V0785_POKEMON_TAPU_KOKO_NORMAL";
-  data: V0785_pokemon_tapu_koko_normaldata;
-}
-export interface V0786_pokemon_tapu_leleEntry {
-  templateId: "V0786_POKEMON_TAPU_LELE";
-  data: V0785_pokemon_tapu_kokodata;
-}
-export interface V0786_pokemon_tapu_lele_normalEntry {
-  templateId: "V0786_POKEMON_TAPU_LELE_NORMAL";
-  data: V0785_pokemon_tapu_koko_normaldata;
-}
-export interface V0787_pokemon_tapu_buluEntry {
-  templateId: "V0787_POKEMON_TAPU_BULU";
-  data: V0785_pokemon_tapu_kokodata;
-}
-export interface V0787_pokemon_tapu_bulu_normalEntry {
-  templateId: "V0787_POKEMON_TAPU_BULU_NORMAL";
-  data: V0785_pokemon_tapu_koko_normaldata;
-}
-export interface V0788_pokemon_tapu_finiEntry {
-  templateId: "V0788_POKEMON_TAPU_FINI";
-  data: V0785_pokemon_tapu_kokodata;
-}
-export interface V0788_pokemon_tapu_fini_normalEntry {
-  templateId: "V0788_POKEMON_TAPU_FINI_NORMAL";
-  data: V0785_pokemon_tapu_koko_normaldata;
-}
 export interface V0789_pokemon_cosmogdatapokemonsettings {
   breadTierGroup: string;
   buddyGroupNumber: number;
@@ -5405,7 +4285,7 @@ export interface V0789_pokemon_cosmogdatapokemonsettings {
   buddyScale: number;
   camera: V0732_pokemon_trumbeakdatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0785_pokemon_tapu_kokodatapokemonsettingsencounter;
+  encounter: V0789_pokemon_cosmogdatapokemonsettingsencounter;
   evolutionBranch: (V0722_pokemon_rowletdatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
@@ -5443,7 +4323,7 @@ export interface V0789_pokemon_cosmog_normaldatapokemonsettings {
   buddyScale: number;
   camera: V0732_pokemon_trumbeakdatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0785_pokemon_tapu_kokodatapokemonsettingsencounter;
+  encounter: V0789_pokemon_cosmogdatapokemonsettingsencounter;
   evolutionBranch: (V0722_pokemon_rowlet_normaldatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
@@ -5490,7 +4370,7 @@ export interface V0790_pokemon_cosmoemdatapokemonsettings {
   buddyScale: number;
   camera: V0732_pokemon_trumbeakdatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0785_pokemon_tapu_kokodatapokemonsettingsencounter;
+  encounter: V0789_pokemon_cosmogdatapokemonsettingsencounter;
   evolutionBranch: (V0790_pokemon_cosmoemdatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   heightStdDev: number;
@@ -5530,7 +4410,7 @@ export interface V0790_pokemon_cosmoem_normaldatapokemonsettings {
   buddyScale: number;
   camera: V0732_pokemon_trumbeakdatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0785_pokemon_tapu_kokodatapokemonsettingsencounter;
+  encounter: V0789_pokemon_cosmogdatapokemonsettingsencounter;
   evolutionBranch: (V0744_pokemon_rockruffdatapokemonsettingsevolutionbranchitem)[];
   familyId: string;
   form: string;
@@ -5571,7 +4451,7 @@ export interface V0791_pokemon_solgaleodatapokemonsettings {
   buddyScale: number;
   camera: V0722_pokemon_rowletdatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0785_pokemon_tapu_kokodatapokemonsettingsencounter;
+  encounter: V0789_pokemon_cosmogdatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
   ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
@@ -5610,7 +4490,7 @@ export interface V0791_pokemon_solgaleo_normaldatapokemonsettings {
   buddyScale: number;
   camera: V0722_pokemon_rowletdatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0785_pokemon_tapu_kokodatapokemonsettingsencounter;
+  encounter: V0789_pokemon_cosmogdatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
@@ -5651,7 +4531,7 @@ export interface V0792_pokemon_lunaladatapokemonsettings {
   buddySize: string;
   camera: V0732_pokemon_trumbeakdatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0785_pokemon_tapu_kokodatapokemonsettingsencounter;
+  encounter: V0789_pokemon_cosmogdatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
   ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
@@ -5692,7 +4572,7 @@ export interface V0792_pokemon_lunala_normaldatapokemonsettings {
   buddySize: string;
   camera: V0732_pokemon_trumbeakdatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0785_pokemon_tapu_kokodatapokemonsettingsencounter;
+  encounter: V0789_pokemon_cosmogdatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
@@ -5734,7 +4614,7 @@ export interface V0793_pokemon_nihilegodatapokemonsettings {
   buddySize: string;
   camera: V0732_pokemon_trumbeakdatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0785_pokemon_tapu_kokodatapokemonsettingsencounter;
+  encounter: V0789_pokemon_cosmogdatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
   ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
@@ -5773,7 +4653,7 @@ export interface V0793_pokemon_nihilego_normaldatapokemonsettings {
   buddySize: string;
   camera: V0732_pokemon_trumbeakdatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0785_pokemon_tapu_kokodatapokemonsettingsencounter;
+  encounter: V0789_pokemon_cosmogdatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
@@ -5803,85 +4683,6 @@ export interface V0793_pokemon_nihilego_normalEntry {
   templateId: "V0793_POKEMON_NIHILEGO_NORMAL";
   data: V0793_pokemon_nihilego_normaldata;
 }
-export interface V0794_pokemon_buzzwoledatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyPortraitOffset: (number)[];
-  buddyScale: number;
-  buddySize: string;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0785_pokemon_tapu_kokodatapokemonsettingsencounter;
-  familyId: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonClass: string;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  weightStdDev: number;
-}
-export interface V0794_pokemon_buzzwoledata {
-  pokemonSettings: V0794_pokemon_buzzwoledatapokemonsettings;
-  templateId: string;
-}
-export interface V0794_pokemon_buzzwoleEntry {
-  templateId: "V0794_POKEMON_BUZZWOLE";
-  data: V0794_pokemon_buzzwoledata;
-}
-export interface V0794_pokemon_buzzwole_normaldatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyPortraitOffset: (number)[];
-  buddyScale: number;
-  buddySize: string;
-  camera: V0722_pokemon_rowletdatapokemonsettingscamera;
-  cinematicMoves: (string)[];
-  encounter: V0785_pokemon_tapu_kokodatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  isTradable: boolean;
-  isTransferable: boolean;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonClass: string;
-  pokemonId: string;
-  quickMoves: (string)[];
-  raidBossDistanceOffset: number;
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  weightStdDev: number;
-}
-export interface V0794_pokemon_buzzwole_normaldata {
-  pokemonSettings: V0794_pokemon_buzzwole_normaldatapokemonsettings;
-  templateId: string;
-}
-export interface V0794_pokemon_buzzwole_normalEntry {
-  templateId: "V0794_POKEMON_BUZZWOLE_NORMAL";
-  data: V0794_pokemon_buzzwole_normaldata;
-}
 export interface V0795_pokemon_pheromosadatapokemonsettings {
   breadTierGroup: string;
   buddyGroupNumber: number;
@@ -5891,7 +4692,7 @@ export interface V0795_pokemon_pheromosadatapokemonsettings {
   buddySize: string;
   camera: V0722_pokemon_rowletdatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0785_pokemon_tapu_kokodatapokemonsettingsencounter;
+  encounter: V0789_pokemon_cosmogdatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
   ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
@@ -5928,7 +4729,7 @@ export interface V0795_pokemon_pheromosa_normaldatapokemonsettings {
   buddySize: string;
   camera: V0722_pokemon_rowletdatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0785_pokemon_tapu_kokodatapokemonsettingsencounter;
+  encounter: V0789_pokemon_cosmogdatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
@@ -5967,7 +4768,7 @@ export interface V0796_pokemon_xurkitreedatapokemonsettings {
   buddySize: string;
   camera: V0722_pokemon_rowletdatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0785_pokemon_tapu_kokodatapokemonsettingsencounter;
+  encounter: V0789_pokemon_cosmogdatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
   ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
@@ -6005,7 +4806,7 @@ export interface V0796_pokemon_xurkitree_normaldatapokemonsettings {
   buddySize: string;
   camera: V0722_pokemon_rowletdatapokemonsettingscamera;
   cinematicMoves: (string)[];
-  encounter: V0785_pokemon_tapu_kokodatapokemonsettingsencounter;
+  encounter: V0789_pokemon_cosmogdatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
@@ -6033,14 +4834,6 @@ export interface V0796_pokemon_xurkitree_normaldata {
 export interface V0796_pokemon_xurkitree_normalEntry {
   templateId: "V0796_POKEMON_XURKITREE_NORMAL";
   data: V0796_pokemon_xurkitree_normaldata;
-}
-export interface V0797_pokemon_celesteelaEntry {
-  templateId: "V0797_POKEMON_CELESTEELA";
-  data: V0794_pokemon_buzzwoledata;
-}
-export interface V0797_pokemon_celesteela_normalEntry {
-  templateId: "V0797_POKEMON_CELESTEELA_NORMAL";
-  data: V0794_pokemon_buzzwole_normaldata;
 }
 export interface V0798_pokemon_kartanadatapokemonsettingsencounter {
   attackProbability: number;
@@ -6143,7 +4936,7 @@ export interface V0799_pokemon_guzzlorddatapokemonsettings {
   cinematicMoves: (string)[];
   combatOpponentFocusCameraAngle: (number)[];
   combatPlayerFocusCameraAngle: (number)[];
-  encounter: V0785_pokemon_tapu_kokodatapokemonsettingsencounter;
+  encounter: V0789_pokemon_cosmogdatapokemonsettingsencounter;
   familyId: string;
   heightStdDev: number;
   ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
@@ -6184,7 +4977,7 @@ export interface V0799_pokemon_guzzlord_normaldatapokemonsettings {
   cinematicMoves: (string)[];
   combatOpponentFocusCameraAngle: (number)[];
   combatPlayerFocusCameraAngle: (number)[];
-  encounter: V0785_pokemon_tapu_kokodatapokemonsettingsencounter;
+  encounter: V0789_pokemon_cosmogdatapokemonsettingsencounter;
   familyId: string;
   form: string;
   heightStdDev: number;
@@ -6476,45 +5269,6 @@ export interface V0801_pokemon_magearnaEntry {
   templateId: "V0801_POKEMON_MAGEARNA";
   data: V0801_pokemon_magearnadata;
 }
-export interface V0801_pokemon_magearna_normaldatapokemonsettings {
-  breadTierGroup: string;
-  buddyGroupNumber: number;
-  buddyOffsetFemale: (number)[];
-  buddyOffsetMale: (number)[];
-  buddyScale: number;
-  camera: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  cinematicMoves: (string)[];
-  encounter: V0772_pokemon_type_nulldatapokemonsettingsencounter;
-  familyId: string;
-  form: string;
-  heightStdDev: number;
-  ibfc: V0722_pokemon_rowletdatapokemonsettingsibfc;
-  kmBuddyDistance: number;
-  modelHeight: number;
-  modelScaleV2: number;
-  pokedexHeightM: number;
-  pokedexWeightKg: number;
-  pokemonClass: string;
-  pokemonId: string;
-  quickMoves: (string)[];
-  stats: V0722_pokemon_rowletdatapokemonsettingsstats;
-  thirdMove: V0722_pokemon_rowletdatapokemonsettingsthirdmove;
-  "type": string;
-  type2: string;
-  weightStdDev: number;
-}
-export interface V0801_pokemon_magearna_normaldata {
-  pokemonSettings: V0801_pokemon_magearna_normaldatapokemonsettings;
-  templateId: string;
-}
-export interface V0801_pokemon_magearna_normalEntry {
-  templateId: "V0801_POKEMON_MAGEARNA_NORMAL";
-  data: V0801_pokemon_magearna_normaldata;
-}
-export interface V0801_pokemon_magearna_original_colorEntry {
-  templateId: "V0801_POKEMON_MAGEARNA_ORIGINAL_COLOR";
-  data: V0801_pokemon_magearna_normaldata;
-}
 export interface V0802_pokemon_marshadowdatapokemonsettings {
   breadTierGroup: string;
   buddyGroupNumber: number;
@@ -6751,14 +5505,6 @@ export interface V0804_pokemon_naganadel_normaldata {
 export interface V0804_pokemon_naganadel_normalEntry {
   templateId: "V0804_POKEMON_NAGANADEL_NORMAL";
   data: V0804_pokemon_naganadel_normaldata;
-}
-export interface V0805_pokemon_stakatakaEntry {
-  templateId: "V0805_POKEMON_STAKATAKA";
-  data: V0794_pokemon_buzzwoledata;
-}
-export interface V0805_pokemon_stakataka_normalEntry {
-  templateId: "V0805_POKEMON_STAKATAKA_NORMAL";
-  data: V0794_pokemon_buzzwole_normaldata;
 }
 export interface V0806_pokemon_blacephalondatapokemonsettings {
   breadTierGroup: string;
@@ -7135,6 +5881,111 @@ export interface V0809_pokemon_melmetal_normalEntry {
   data: V0809_pokemon_melmetal_normaldata;
 }
 
+export type PokemonSettingsPopplio = PokemonSettingsShared1095<"V0728_POKEMON_POPPLIO", "POPPLIO">;
+export type PokemonSettingsJangmoO = PokemonSettingsShared1095<"V0782_POKEMON_JANGMO_O", "JANGMO_O">;
+
+export type PokemonSettingsPopplioNormal = PokemonSettingsShared1096<"V0728_POKEMON_POPPLIO_NORMAL", "POPPLIO_NORMAL", "POPPLIO">;
+export type PokemonSettingsJangmoONormal = PokemonSettingsShared1096<"V0782_POKEMON_JANGMO_O_NORMAL", "JANGMO_O_NORMAL", "JANGMO_O">;
+
+export type PokemonSettingsBrionne = PokemonSettingsShared1097<"V0729_POKEMON_BRIONNE", "BRIONNE">;
+
+export type PokemonSettingsBrionneNormal = PokemonSettingsShared1098<"V0729_POKEMON_BRIONNE_NORMAL", "BRIONNE_NORMAL", "BRIONNE">;
+
+export type PokemonSettingsGumshoos = PokemonSettingsShared1109<"V0735_POKEMON_GUMSHOOS", "GUMSHOOS">;
+export type PokemonSettingsMudsdale = PokemonSettingsShared1109<"V0750_POKEMON_MUDSDALE", "MUDSDALE">;
+export type PokemonSettingsLurantis = PokemonSettingsShared1109<"V0754_POKEMON_LURANTIS", "LURANTIS">;
+
+export type PokemonSettingsGumshoosNormal = PokemonSettingsShared1110<"V0735_POKEMON_GUMSHOOS_NORMAL", "GUMSHOOS_NORMAL", "GUMSHOOS">;
+export type PokemonSettingsMudsdaleNormal = PokemonSettingsShared1110<"V0750_POKEMON_MUDSDALE_NORMAL", "MUDSDALE_NORMAL", "MUDSDALE">;
+export type PokemonSettingsLurantisNormal = PokemonSettingsShared1110<"V0754_POKEMON_LURANTIS_NORMAL", "LURANTIS_NORMAL", "LURANTIS">;
+
+export type PokemonSettingsNormal = PokemonSettingsShared1114<"V0737_POKEMON_CHARJABUG_NORMAL", "CHARJABUG_NORMAL">;
+export type PokemonSettingsWinterT = PokemonSettingsShared1114<"V0737_POKEMON_CHARJABUG_WINTER_2025", "CHARJABUG_WINTER_2025">;
+
+export type PokemonSettingsNormal2 = PokemonSettingsShared1116<"V0738_POKEMON_VIKAVOLT_NORMAL", "VIKAVOLT_NORMAL">;
+export type PokemonSettingsWinterT2 = PokemonSettingsShared1116<"V0738_POKEMON_VIKAVOLT_WINTER_2025", "VIKAVOLT_WINTER_2025">;
+
+export type PokemonSettingsOricorio = PokemonSettingsShared1121<"V0741_POKEMON_ORICORIO", "ORICORIO">;
+
+export type PokemonSettingsOricorioBaile = PokemonSettingsShared1122<"V0741_POKEMON_ORICORIO_BAILE", "ORICORIO_BAILE", "ORICORIO">;
+export type PokemonSettingsOricorioPau = PokemonSettingsShared1122<"V0741_POKEMON_ORICORIO_PAU", "ORICORIO_PAU", "ORICORIO">;
+export type PokemonSettingsOricorioPompom = PokemonSettingsShared1122<"V0741_POKEMON_ORICORIO_POMPOM", "ORICORIO_POMPOM", "ORICORIO">;
+export type PokemonSettingsOricorioSensu = PokemonSettingsShared1122<"V0741_POKEMON_ORICORIO_SENSU", "ORICORIO_SENSU", "ORICORIO">;
+
+export type PokemonSettingsLycanroc = PokemonSettingsShared1130<"V0745_POKEMON_LYCANROC", "LYCANROC">;
+
+export type PokemonSettingsLycanrocDusk = PokemonSettingsShared1131<"V0745_POKEMON_LYCANROC_DUSK", "LYCANROC_DUSK", "LYCANROC">;
+export type PokemonSettingsLycanrocMidday = PokemonSettingsShared1131<"V0745_POKEMON_LYCANROC_MIDDAY", "LYCANROC_MIDDAY", "LYCANROC">;
+export type PokemonSettingsLycanrocMidnight = PokemonSettingsShared1131<"V0745_POKEMON_LYCANROC_MIDNIGHT", "LYCANROC_MIDNIGHT", "LYCANROC">;
+
+export type PokemonSettingsToxapex = PokemonSettingsShared1137<"V0748_POKEMON_TOXAPEX", "TOXAPEX">;
+
+export type PokemonSettingsToxapexNormal = PokemonSettingsShared1138<"V0748_POKEMON_TOXAPEX_NORMAL", "TOXAPEX_NORMAL", "TOXAPEX">;
+
+export type PokemonSettingsMudbray = PokemonSettingsShared1139<"V0749_POKEMON_MUDBRAY", "MUDBRAY">;
+export type PokemonSettingsBounsweet = PokemonSettingsShared1139<"V0761_POKEMON_BOUNSWEET", "BOUNSWEET">;
+
+export type PokemonSettingsMudbrayNormal = PokemonSettingsShared1140<"V0749_POKEMON_MUDBRAY_NORMAL", "MUDBRAY_NORMAL", "MUDBRAY">;
+export type PokemonSettingsBounsweetNormal = PokemonSettingsShared1140<"V0761_POKEMON_BOUNSWEET_NORMAL", "BOUNSWEET_NORMAL", "BOUNSWEET">;
+
+export type PokemonSettingsNormal3 = PokemonSettingsShared1158<"V0760_POKEMON_BEWEAR_NORMAL", "BEWEAR_NORMAL">;
+export type PokemonSettingsWildareaT = PokemonSettingsShared1158<"V0760_POKEMON_BEWEAR_WILDAREA_2025", "BEWEAR_WILDAREA_2025">;
+
+export type PokemonSettingsPassimian = PokemonSettingsShared1167<"V0766_POKEMON_PASSIMIAN", "PASSIMIAN">;
+
+export type PokemonSettingsPassimianNormal = PokemonSettingsShared1168<"V0766_POKEMON_PASSIMIAN_NORMAL", "PASSIMIAN_NORMAL", "PASSIMIAN">;
+
+export type PokemonSettingsBug = PokemonSettingsShared1182<"V0773_POKEMON_SILVALLY_BUG", "SILVALLY_BUG">;
+export type PokemonSettingsDark = PokemonSettingsShared1182<"V0773_POKEMON_SILVALLY_DARK", "SILVALLY_DARK">;
+export type PokemonSettingsDragon = PokemonSettingsShared1182<"V0773_POKEMON_SILVALLY_DRAGON", "SILVALLY_DRAGON">;
+export type PokemonSettingsElectric = PokemonSettingsShared1182<"V0773_POKEMON_SILVALLY_ELECTRIC", "SILVALLY_ELECTRIC">;
+export type PokemonSettingsFairy = PokemonSettingsShared1182<"V0773_POKEMON_SILVALLY_FAIRY", "SILVALLY_FAIRY">;
+export type PokemonSettingsFighting = PokemonSettingsShared1182<"V0773_POKEMON_SILVALLY_FIGHTING", "SILVALLY_FIGHTING">;
+export type PokemonSettingsFire = PokemonSettingsShared1182<"V0773_POKEMON_SILVALLY_FIRE", "SILVALLY_FIRE">;
+export type PokemonSettingsFlying = PokemonSettingsShared1182<"V0773_POKEMON_SILVALLY_FLYING", "SILVALLY_FLYING">;
+export type PokemonSettingsGhost = PokemonSettingsShared1182<"V0773_POKEMON_SILVALLY_GHOST", "SILVALLY_GHOST">;
+export type PokemonSettingsGrass = PokemonSettingsShared1182<"V0773_POKEMON_SILVALLY_GRASS", "SILVALLY_GRASS">;
+export type PokemonSettingsGround = PokemonSettingsShared1182<"V0773_POKEMON_SILVALLY_GROUND", "SILVALLY_GROUND">;
+export type PokemonSettingsIce = PokemonSettingsShared1182<"V0773_POKEMON_SILVALLY_ICE", "SILVALLY_ICE">;
+export type PokemonSettingsNormal4 = PokemonSettingsShared1182<"V0773_POKEMON_SILVALLY_NORMAL", "SILVALLY_NORMAL">;
+export type PokemonSettingsPoison = PokemonSettingsShared1182<"V0773_POKEMON_SILVALLY_POISON", "SILVALLY_POISON">;
+export type PokemonSettingsPsychic = PokemonSettingsShared1182<"V0773_POKEMON_SILVALLY_PSYCHIC", "SILVALLY_PSYCHIC">;
+export type PokemonSettingsRock = PokemonSettingsShared1182<"V0773_POKEMON_SILVALLY_ROCK", "SILVALLY_ROCK">;
+export type PokemonSettingsSteel = PokemonSettingsShared1182<"V0773_POKEMON_SILVALLY_STEEL", "SILVALLY_STEEL">;
+export type PokemonSettingsWater = PokemonSettingsShared1182<"V0773_POKEMON_SILVALLY_WATER", "SILVALLY_WATER">;
+
+export type PokemonSettingsBlue = PokemonSettingsShared1184<"V0774_POKEMON_MINIOR_BLUE", "MINIOR_BLUE">;
+export type PokemonSettingsGreen = PokemonSettingsShared1184<"V0774_POKEMON_MINIOR_GREEN", "MINIOR_GREEN">;
+export type PokemonSettingsIndigo = PokemonSettingsShared1184<"V0774_POKEMON_MINIOR_INDIGO", "MINIOR_INDIGO">;
+export type PokemonSettingsOrange = PokemonSettingsShared1184<"V0774_POKEMON_MINIOR_ORANGE", "MINIOR_ORANGE">;
+export type PokemonSettingsRed = PokemonSettingsShared1184<"V0774_POKEMON_MINIOR_RED", "MINIOR_RED">;
+export type PokemonSettingsViolet = PokemonSettingsShared1184<"V0774_POKEMON_MINIOR_VIOLET", "MINIOR_VIOLET">;
+export type PokemonSettingsYellow = PokemonSettingsShared1184<"V0774_POKEMON_MINIOR_YELLOW", "MINIOR_YELLOW">;
+
+export type PokemonSettingsBusted = PokemonSettingsShared1192<"V0778_POKEMON_MIMIKYU_BUSTED", "MIMIKYU_BUSTED">;
+export type PokemonSettingsDisguised = PokemonSettingsShared1192<"V0778_POKEMON_MIMIKYU_DISGUISED", "MIMIKYU_DISGUISED">;
+
+export type PokemonSettingsKoko = PokemonSettingsShared1203<"V0785_POKEMON_TAPU_KOKO", "TAPU_KOKO">;
+export type PokemonSettingsLele = PokemonSettingsShared1203<"V0786_POKEMON_TAPU_LELE", "TAPU_LELE">;
+export type PokemonSettingsBulu = PokemonSettingsShared1203<"V0787_POKEMON_TAPU_BULU", "TAPU_BULU">;
+export type PokemonSettingsFini = PokemonSettingsShared1203<"V0788_POKEMON_TAPU_FINI", "TAPU_FINI">;
+
+export type PokemonSettingsKokoNormal = PokemonSettingsShared1204<"V0785_POKEMON_TAPU_KOKO_NORMAL", "TAPU_KOKO_NORMAL", "TAPU_KOKO">;
+export type PokemonSettingsLeleNormal = PokemonSettingsShared1204<"V0786_POKEMON_TAPU_LELE_NORMAL", "TAPU_LELE_NORMAL", "TAPU_LELE">;
+export type PokemonSettingsBuluNormal = PokemonSettingsShared1204<"V0787_POKEMON_TAPU_BULU_NORMAL", "TAPU_BULU_NORMAL", "TAPU_BULU">;
+export type PokemonSettingsFiniNormal = PokemonSettingsShared1204<"V0788_POKEMON_TAPU_FINI_NORMAL", "TAPU_FINI_NORMAL", "TAPU_FINI">;
+
+export type PokemonSettingsBuzzwole = PokemonSettingsShared1215<"V0794_POKEMON_BUZZWOLE", "BUZZWOLE">;
+export type PokemonSettingsCelesteela = PokemonSettingsShared1215<"V0797_POKEMON_CELESTEELA", "CELESTEELA">;
+export type PokemonSettingsStakataka = PokemonSettingsShared1215<"V0805_POKEMON_STAKATAKA", "STAKATAKA">;
+
+export type PokemonSettingsBuzzwoleNormal = PokemonSettingsShared1216<"V0794_POKEMON_BUZZWOLE_NORMAL", "BUZZWOLE_NORMAL", "BUZZWOLE">;
+export type PokemonSettingsCelesteelaNormal = PokemonSettingsShared1216<"V0797_POKEMON_CELESTEELA_NORMAL", "CELESTEELA_NORMAL", "CELESTEELA">;
+export type PokemonSettingsStakatakaNormal = PokemonSettingsShared1216<"V0805_POKEMON_STAKATAKA_NORMAL", "STAKATAKA_NORMAL", "STAKATAKA">;
+
+export type PokemonSettingsNormal5 = PokemonSettingsShared1231<"V0801_POKEMON_MAGEARNA_NORMAL", "MAGEARNA_NORMAL">;
+export type PokemonSettingsOriginalColor = PokemonSettingsShared1231<"V0801_POKEMON_MAGEARNA_ORIGINAL_COLOR", "MAGEARNA_ORIGINAL_COLOR">;
+
 export interface PokemonSettingsGen7MasterfileByTemplateId {
   "V0722_POKEMON_ROWLET": V0722_pokemon_rowletEntry;
   "V0722_POKEMON_ROWLET_NORMAL": V0722_pokemon_rowlet_normalEntry;
@@ -7149,10 +6000,12 @@ export interface PokemonSettingsGen7MasterfileByTemplateId {
   "V0726_POKEMON_TORRACAT_NORMAL": V0726_pokemon_torracat_normalEntry;
   "V0727_POKEMON_INCINEROAR": V0727_pokemon_incineroarEntry;
   "V0727_POKEMON_INCINEROAR_NORMAL": V0727_pokemon_incineroar_normalEntry;
-  "V0728_POKEMON_POPPLIO": V0728_pokemon_popplioEntry;
-  "V0728_POKEMON_POPPLIO_NORMAL": V0728_pokemon_popplio_normalEntry;
-  "V0729_POKEMON_BRIONNE": V0729_pokemon_brionneEntry;
-  "V0729_POKEMON_BRIONNE_NORMAL": V0729_pokemon_brionne_normalEntry;
+  "V0728_POKEMON_POPPLIO": PokemonSettingsPopplio;
+  "V0782_POKEMON_JANGMO_O": PokemonSettingsJangmoO;
+  "V0728_POKEMON_POPPLIO_NORMAL": PokemonSettingsPopplioNormal;
+  "V0782_POKEMON_JANGMO_O_NORMAL": PokemonSettingsJangmoONormal;
+  "V0729_POKEMON_BRIONNE": PokemonSettingsBrionne;
+  "V0729_POKEMON_BRIONNE_NORMAL": PokemonSettingsBrionneNormal;
   "V0730_POKEMON_PRIMARINA": V0730_pokemon_primarinaEntry;
   "V0730_POKEMON_PRIMARINA_NORMAL": V0730_pokemon_primarina_normalEntry;
   "V0731_POKEMON_PIKIPEK": V0731_pokemon_pikipekEntry;
@@ -7163,25 +6016,29 @@ export interface PokemonSettingsGen7MasterfileByTemplateId {
   "V0733_POKEMON_TOUCANNON_NORMAL": V0733_pokemon_toucannon_normalEntry;
   "V0734_POKEMON_YUNGOOS": V0734_pokemon_yungoosEntry;
   "V0734_POKEMON_YUNGOOS_NORMAL": V0734_pokemon_yungoos_normalEntry;
-  "V0735_POKEMON_GUMSHOOS": V0735_pokemon_gumshoosEntry;
-  "V0735_POKEMON_GUMSHOOS_NORMAL": V0735_pokemon_gumshoos_normalEntry;
+  "V0735_POKEMON_GUMSHOOS": PokemonSettingsGumshoos;
+  "V0750_POKEMON_MUDSDALE": PokemonSettingsMudsdale;
+  "V0754_POKEMON_LURANTIS": PokemonSettingsLurantis;
+  "V0735_POKEMON_GUMSHOOS_NORMAL": PokemonSettingsGumshoosNormal;
+  "V0750_POKEMON_MUDSDALE_NORMAL": PokemonSettingsMudsdaleNormal;
+  "V0754_POKEMON_LURANTIS_NORMAL": PokemonSettingsLurantisNormal;
   "V0736_POKEMON_GRUBBIN": V0736_pokemon_grubbinEntry;
   "V0736_POKEMON_GRUBBIN_NORMAL": V0736_pokemon_grubbin_normalEntry;
   "V0737_POKEMON_CHARJABUG": V0737_pokemon_charjabugEntry;
-  "V0737_POKEMON_CHARJABUG_NORMAL": V0737_pokemon_charjabug_normalEntry;
-  "V0737_POKEMON_CHARJABUG_WINTER_2025": V0737_pokemon_charjabug_winter_2025Entry;
+  "V0737_POKEMON_CHARJABUG_NORMAL": PokemonSettingsNormal;
+  "V0737_POKEMON_CHARJABUG_WINTER_2025": PokemonSettingsWinterT;
   "V0738_POKEMON_VIKAVOLT": V0738_pokemon_vikavoltEntry;
-  "V0738_POKEMON_VIKAVOLT_NORMAL": V0738_pokemon_vikavolt_normalEntry;
-  "V0738_POKEMON_VIKAVOLT_WINTER_2025": V0738_pokemon_vikavolt_winter_2025Entry;
+  "V0738_POKEMON_VIKAVOLT_NORMAL": PokemonSettingsNormal2;
+  "V0738_POKEMON_VIKAVOLT_WINTER_2025": PokemonSettingsWinterT2;
   "V0739_POKEMON_CRABRAWLER": V0739_pokemon_crabrawlerEntry;
   "V0739_POKEMON_CRABRAWLER_NORMAL": V0739_pokemon_crabrawler_normalEntry;
   "V0740_POKEMON_CRABOMINABLE": V0740_pokemon_crabominableEntry;
   "V0740_POKEMON_CRABOMINABLE_NORMAL": V0740_pokemon_crabominable_normalEntry;
-  "V0741_POKEMON_ORICORIO": V0741_pokemon_oricorioEntry;
-  "V0741_POKEMON_ORICORIO_BAILE": V0741_pokemon_oricorio_baileEntry;
-  "V0741_POKEMON_ORICORIO_PAU": V0741_pokemon_oricorio_pauEntry;
-  "V0741_POKEMON_ORICORIO_POMPOM": V0741_pokemon_oricorio_pompomEntry;
-  "V0741_POKEMON_ORICORIO_SENSU": V0741_pokemon_oricorio_sensuEntry;
+  "V0741_POKEMON_ORICORIO": PokemonSettingsOricorio;
+  "V0741_POKEMON_ORICORIO_BAILE": PokemonSettingsOricorioBaile;
+  "V0741_POKEMON_ORICORIO_PAU": PokemonSettingsOricorioPau;
+  "V0741_POKEMON_ORICORIO_POMPOM": PokemonSettingsOricorioPompom;
+  "V0741_POKEMON_ORICORIO_SENSU": PokemonSettingsOricorioSensu;
   "V0742_POKEMON_CUTIEFLY": V0742_pokemon_cutieflyEntry;
   "V0742_POKEMON_CUTIEFLY_NORMAL": V0742_pokemon_cutiefly_normalEntry;
   "V0743_POKEMON_RIBOMBEE": V0743_pokemon_ribombeeEntry;
@@ -7189,29 +6046,27 @@ export interface PokemonSettingsGen7MasterfileByTemplateId {
   "V0744_POKEMON_ROCKRUFF": V0744_pokemon_rockruffEntry;
   "V0744_POKEMON_ROCKRUFF_DUSK": V0744_pokemon_rockruff_duskEntry;
   "V0744_POKEMON_ROCKRUFF_NORMAL": V0744_pokemon_rockruff_normalEntry;
-  "V0745_POKEMON_LYCANROC": V0745_pokemon_lycanrocEntry;
-  "V0745_POKEMON_LYCANROC_DUSK": V0745_pokemon_lycanroc_duskEntry;
-  "V0745_POKEMON_LYCANROC_MIDDAY": V0745_pokemon_lycanroc_middayEntry;
-  "V0745_POKEMON_LYCANROC_MIDNIGHT": V0745_pokemon_lycanroc_midnightEntry;
+  "V0745_POKEMON_LYCANROC": PokemonSettingsLycanroc;
+  "V0745_POKEMON_LYCANROC_DUSK": PokemonSettingsLycanrocDusk;
+  "V0745_POKEMON_LYCANROC_MIDDAY": PokemonSettingsLycanrocMidday;
+  "V0745_POKEMON_LYCANROC_MIDNIGHT": PokemonSettingsLycanrocMidnight;
   "V0746_POKEMON_WISHIWASHI": V0746_pokemon_wishiwashiEntry;
   "V0746_POKEMON_WISHIWASHI_SCHOOL": V0746_pokemon_wishiwashi_schoolEntry;
   "V0746_POKEMON_WISHIWASHI_SOLO": V0746_pokemon_wishiwashi_soloEntry;
   "V0747_POKEMON_MAREANIE": V0747_pokemon_mareanieEntry;
   "V0747_POKEMON_MAREANIE_NORMAL": V0747_pokemon_mareanie_normalEntry;
-  "V0748_POKEMON_TOXAPEX": V0748_pokemon_toxapexEntry;
-  "V0748_POKEMON_TOXAPEX_NORMAL": V0748_pokemon_toxapex_normalEntry;
-  "V0749_POKEMON_MUDBRAY": V0749_pokemon_mudbrayEntry;
-  "V0749_POKEMON_MUDBRAY_NORMAL": V0749_pokemon_mudbray_normalEntry;
-  "V0750_POKEMON_MUDSDALE": V0750_pokemon_mudsdaleEntry;
-  "V0750_POKEMON_MUDSDALE_NORMAL": V0750_pokemon_mudsdale_normalEntry;
+  "V0748_POKEMON_TOXAPEX": PokemonSettingsToxapex;
+  "V0748_POKEMON_TOXAPEX_NORMAL": PokemonSettingsToxapexNormal;
+  "V0749_POKEMON_MUDBRAY": PokemonSettingsMudbray;
+  "V0761_POKEMON_BOUNSWEET": PokemonSettingsBounsweet;
+  "V0749_POKEMON_MUDBRAY_NORMAL": PokemonSettingsMudbrayNormal;
+  "V0761_POKEMON_BOUNSWEET_NORMAL": PokemonSettingsBounsweetNormal;
   "V0751_POKEMON_DEWPIDER": V0751_pokemon_dewpiderEntry;
   "V0751_POKEMON_DEWPIDER_NORMAL": V0751_pokemon_dewpider_normalEntry;
   "V0752_POKEMON_ARAQUANID": V0752_pokemon_araquanidEntry;
   "V0752_POKEMON_ARAQUANID_NORMAL": V0752_pokemon_araquanid_normalEntry;
   "V0753_POKEMON_FOMANTIS": V0753_pokemon_fomantisEntry;
   "V0753_POKEMON_FOMANTIS_NORMAL": V0753_pokemon_fomantis_normalEntry;
-  "V0754_POKEMON_LURANTIS": V0754_pokemon_lurantisEntry;
-  "V0754_POKEMON_LURANTIS_NORMAL": V0754_pokemon_lurantis_normalEntry;
   "V0755_POKEMON_MORELULL": V0755_pokemon_morelullEntry;
   "V0755_POKEMON_MORELULL_NORMAL": V0755_pokemon_morelull_normalEntry;
   "V0756_POKEMON_SHIINOTIC": V0756_pokemon_shiinoticEntry;
@@ -7223,10 +6078,8 @@ export interface PokemonSettingsGen7MasterfileByTemplateId {
   "V0759_POKEMON_STUFFUL": V0759_pokemon_stuffulEntry;
   "V0759_POKEMON_STUFFUL_NORMAL": V0759_pokemon_stufful_normalEntry;
   "V0760_POKEMON_BEWEAR": V0760_pokemon_bewearEntry;
-  "V0760_POKEMON_BEWEAR_NORMAL": V0760_pokemon_bewear_normalEntry;
-  "V0760_POKEMON_BEWEAR_WILDAREA_2025": V0760_pokemon_bewear_wildarea_2025Entry;
-  "V0761_POKEMON_BOUNSWEET": V0761_pokemon_bounsweetEntry;
-  "V0761_POKEMON_BOUNSWEET_NORMAL": V0761_pokemon_bounsweet_normalEntry;
+  "V0760_POKEMON_BEWEAR_NORMAL": PokemonSettingsNormal3;
+  "V0760_POKEMON_BEWEAR_WILDAREA_2025": PokemonSettingsWildareaT;
   "V0762_POKEMON_STEENEE": V0762_pokemon_steeneeEntry;
   "V0762_POKEMON_STEENEE_NORMAL": V0762_pokemon_steenee_normalEntry;
   "V0763_POKEMON_TSAREENA": V0763_pokemon_tsareenaEntry;
@@ -7235,8 +6088,8 @@ export interface PokemonSettingsGen7MasterfileByTemplateId {
   "V0764_POKEMON_COMFEY_NORMAL": V0764_pokemon_comfey_normalEntry;
   "V0765_POKEMON_ORANGURU": V0765_pokemon_oranguruEntry;
   "V0765_POKEMON_ORANGURU_NORMAL": V0765_pokemon_oranguru_normalEntry;
-  "V0766_POKEMON_PASSIMIAN": V0766_pokemon_passimianEntry;
-  "V0766_POKEMON_PASSIMIAN_NORMAL": V0766_pokemon_passimian_normalEntry;
+  "V0766_POKEMON_PASSIMIAN": PokemonSettingsPassimian;
+  "V0766_POKEMON_PASSIMIAN_NORMAL": PokemonSettingsPassimianNormal;
   "V0767_POKEMON_WIMPOD": V0767_pokemon_wimpodEntry;
   "V0767_POKEMON_WIMPOD_NORMAL": V0767_pokemon_wimpod_normalEntry;
   "V0768_POKEMON_GOLISOPOD": V0768_pokemon_golisopodEntry;
@@ -7250,32 +6103,32 @@ export interface PokemonSettingsGen7MasterfileByTemplateId {
   "V0772_POKEMON_TYPE_NULL": V0772_pokemon_type_nullEntry;
   "V0772_POKEMON_TYPE_NULL_NORMAL": V0772_pokemon_type_null_normalEntry;
   "V0773_POKEMON_SILVALLY": V0773_pokemon_silvallyEntry;
-  "V0773_POKEMON_SILVALLY_BUG": V0773_pokemon_silvally_bugEntry;
-  "V0773_POKEMON_SILVALLY_DARK": V0773_pokemon_silvally_darkEntry;
-  "V0773_POKEMON_SILVALLY_DRAGON": V0773_pokemon_silvally_dragonEntry;
-  "V0773_POKEMON_SILVALLY_ELECTRIC": V0773_pokemon_silvally_electricEntry;
-  "V0773_POKEMON_SILVALLY_FAIRY": V0773_pokemon_silvally_fairyEntry;
-  "V0773_POKEMON_SILVALLY_FIGHTING": V0773_pokemon_silvally_fightingEntry;
-  "V0773_POKEMON_SILVALLY_FIRE": V0773_pokemon_silvally_fireEntry;
-  "V0773_POKEMON_SILVALLY_FLYING": V0773_pokemon_silvally_flyingEntry;
-  "V0773_POKEMON_SILVALLY_GHOST": V0773_pokemon_silvally_ghostEntry;
-  "V0773_POKEMON_SILVALLY_GRASS": V0773_pokemon_silvally_grassEntry;
-  "V0773_POKEMON_SILVALLY_GROUND": V0773_pokemon_silvally_groundEntry;
-  "V0773_POKEMON_SILVALLY_ICE": V0773_pokemon_silvally_iceEntry;
-  "V0773_POKEMON_SILVALLY_NORMAL": V0773_pokemon_silvally_normalEntry;
-  "V0773_POKEMON_SILVALLY_POISON": V0773_pokemon_silvally_poisonEntry;
-  "V0773_POKEMON_SILVALLY_PSYCHIC": V0773_pokemon_silvally_psychicEntry;
-  "V0773_POKEMON_SILVALLY_ROCK": V0773_pokemon_silvally_rockEntry;
-  "V0773_POKEMON_SILVALLY_STEEL": V0773_pokemon_silvally_steelEntry;
-  "V0773_POKEMON_SILVALLY_WATER": V0773_pokemon_silvally_waterEntry;
+  "V0773_POKEMON_SILVALLY_BUG": PokemonSettingsBug;
+  "V0773_POKEMON_SILVALLY_DARK": PokemonSettingsDark;
+  "V0773_POKEMON_SILVALLY_DRAGON": PokemonSettingsDragon;
+  "V0773_POKEMON_SILVALLY_ELECTRIC": PokemonSettingsElectric;
+  "V0773_POKEMON_SILVALLY_FAIRY": PokemonSettingsFairy;
+  "V0773_POKEMON_SILVALLY_FIGHTING": PokemonSettingsFighting;
+  "V0773_POKEMON_SILVALLY_FIRE": PokemonSettingsFire;
+  "V0773_POKEMON_SILVALLY_FLYING": PokemonSettingsFlying;
+  "V0773_POKEMON_SILVALLY_GHOST": PokemonSettingsGhost;
+  "V0773_POKEMON_SILVALLY_GRASS": PokemonSettingsGrass;
+  "V0773_POKEMON_SILVALLY_GROUND": PokemonSettingsGround;
+  "V0773_POKEMON_SILVALLY_ICE": PokemonSettingsIce;
+  "V0773_POKEMON_SILVALLY_NORMAL": PokemonSettingsNormal4;
+  "V0773_POKEMON_SILVALLY_POISON": PokemonSettingsPoison;
+  "V0773_POKEMON_SILVALLY_PSYCHIC": PokemonSettingsPsychic;
+  "V0773_POKEMON_SILVALLY_ROCK": PokemonSettingsRock;
+  "V0773_POKEMON_SILVALLY_STEEL": PokemonSettingsSteel;
+  "V0773_POKEMON_SILVALLY_WATER": PokemonSettingsWater;
   "V0774_POKEMON_MINIOR": V0774_pokemon_miniorEntry;
-  "V0774_POKEMON_MINIOR_BLUE": V0774_pokemon_minior_blueEntry;
-  "V0774_POKEMON_MINIOR_GREEN": V0774_pokemon_minior_greenEntry;
-  "V0774_POKEMON_MINIOR_INDIGO": V0774_pokemon_minior_indigoEntry;
-  "V0774_POKEMON_MINIOR_ORANGE": V0774_pokemon_minior_orangeEntry;
-  "V0774_POKEMON_MINIOR_RED": V0774_pokemon_minior_redEntry;
-  "V0774_POKEMON_MINIOR_VIOLET": V0774_pokemon_minior_violetEntry;
-  "V0774_POKEMON_MINIOR_YELLOW": V0774_pokemon_minior_yellowEntry;
+  "V0774_POKEMON_MINIOR_BLUE": PokemonSettingsBlue;
+  "V0774_POKEMON_MINIOR_GREEN": PokemonSettingsGreen;
+  "V0774_POKEMON_MINIOR_INDIGO": PokemonSettingsIndigo;
+  "V0774_POKEMON_MINIOR_ORANGE": PokemonSettingsOrange;
+  "V0774_POKEMON_MINIOR_RED": PokemonSettingsRed;
+  "V0774_POKEMON_MINIOR_VIOLET": PokemonSettingsViolet;
+  "V0774_POKEMON_MINIOR_YELLOW": PokemonSettingsYellow;
   "V0775_POKEMON_KOMALA": V0775_pokemon_komalaEntry;
   "V0775_POKEMON_KOMALA_NORMAL": V0775_pokemon_komala_normalEntry;
   "V0776_POKEMON_TURTONATOR": V0776_pokemon_turtonatorEntry;
@@ -7283,28 +6136,26 @@ export interface PokemonSettingsGen7MasterfileByTemplateId {
   "V0777_POKEMON_TOGEDEMARU": V0777_pokemon_togedemaruEntry;
   "V0777_POKEMON_TOGEDEMARU_NORMAL": V0777_pokemon_togedemaru_normalEntry;
   "V0778_POKEMON_MIMIKYU": V0778_pokemon_mimikyuEntry;
-  "V0778_POKEMON_MIMIKYU_BUSTED": V0778_pokemon_mimikyu_bustedEntry;
-  "V0778_POKEMON_MIMIKYU_DISGUISED": V0778_pokemon_mimikyu_disguisedEntry;
+  "V0778_POKEMON_MIMIKYU_BUSTED": PokemonSettingsBusted;
+  "V0778_POKEMON_MIMIKYU_DISGUISED": PokemonSettingsDisguised;
   "V0779_POKEMON_BRUXISH": V0779_pokemon_bruxishEntry;
   "V0779_POKEMON_BRUXISH_NORMAL": V0779_pokemon_bruxish_normalEntry;
   "V0780_POKEMON_DRAMPA": V0780_pokemon_drampaEntry;
   "V0780_POKEMON_DRAMPA_NORMAL": V0780_pokemon_drampa_normalEntry;
   "V0781_POKEMON_DHELMISE": V0781_pokemon_dhelmiseEntry;
   "V0781_POKEMON_DHELMISE_NORMAL": V0781_pokemon_dhelmise_normalEntry;
-  "V0782_POKEMON_JANGMO_O": V0782_pokemon_jangmo_oEntry;
-  "V0782_POKEMON_JANGMO_O_NORMAL": V0782_pokemon_jangmo_o_normalEntry;
   "V0783_POKEMON_HAKAMO_O": V0783_pokemon_hakamo_oEntry;
   "V0783_POKEMON_HAKAMO_O_NORMAL": V0783_pokemon_hakamo_o_normalEntry;
   "V0784_POKEMON_KOMMO_O": V0784_pokemon_kommo_oEntry;
   "V0784_POKEMON_KOMMO_O_NORMAL": V0784_pokemon_kommo_o_normalEntry;
-  "V0785_POKEMON_TAPU_KOKO": V0785_pokemon_tapu_kokoEntry;
-  "V0785_POKEMON_TAPU_KOKO_NORMAL": V0785_pokemon_tapu_koko_normalEntry;
-  "V0786_POKEMON_TAPU_LELE": V0786_pokemon_tapu_leleEntry;
-  "V0786_POKEMON_TAPU_LELE_NORMAL": V0786_pokemon_tapu_lele_normalEntry;
-  "V0787_POKEMON_TAPU_BULU": V0787_pokemon_tapu_buluEntry;
-  "V0787_POKEMON_TAPU_BULU_NORMAL": V0787_pokemon_tapu_bulu_normalEntry;
-  "V0788_POKEMON_TAPU_FINI": V0788_pokemon_tapu_finiEntry;
-  "V0788_POKEMON_TAPU_FINI_NORMAL": V0788_pokemon_tapu_fini_normalEntry;
+  "V0785_POKEMON_TAPU_KOKO": PokemonSettingsKoko;
+  "V0786_POKEMON_TAPU_LELE": PokemonSettingsLele;
+  "V0787_POKEMON_TAPU_BULU": PokemonSettingsBulu;
+  "V0788_POKEMON_TAPU_FINI": PokemonSettingsFini;
+  "V0785_POKEMON_TAPU_KOKO_NORMAL": PokemonSettingsKokoNormal;
+  "V0786_POKEMON_TAPU_LELE_NORMAL": PokemonSettingsLeleNormal;
+  "V0787_POKEMON_TAPU_BULU_NORMAL": PokemonSettingsBuluNormal;
+  "V0788_POKEMON_TAPU_FINI_NORMAL": PokemonSettingsFiniNormal;
   "V0789_POKEMON_COSMOG": V0789_pokemon_cosmogEntry;
   "V0789_POKEMON_COSMOG_NORMAL": V0789_pokemon_cosmog_normalEntry;
   "V0790_POKEMON_COSMOEM": V0790_pokemon_cosmoemEntry;
@@ -7315,14 +6166,16 @@ export interface PokemonSettingsGen7MasterfileByTemplateId {
   "V0792_POKEMON_LUNALA_NORMAL": V0792_pokemon_lunala_normalEntry;
   "V0793_POKEMON_NIHILEGO": V0793_pokemon_nihilegoEntry;
   "V0793_POKEMON_NIHILEGO_NORMAL": V0793_pokemon_nihilego_normalEntry;
-  "V0794_POKEMON_BUZZWOLE": V0794_pokemon_buzzwoleEntry;
-  "V0794_POKEMON_BUZZWOLE_NORMAL": V0794_pokemon_buzzwole_normalEntry;
+  "V0794_POKEMON_BUZZWOLE": PokemonSettingsBuzzwole;
+  "V0797_POKEMON_CELESTEELA": PokemonSettingsCelesteela;
+  "V0805_POKEMON_STAKATAKA": PokemonSettingsStakataka;
+  "V0794_POKEMON_BUZZWOLE_NORMAL": PokemonSettingsBuzzwoleNormal;
+  "V0797_POKEMON_CELESTEELA_NORMAL": PokemonSettingsCelesteelaNormal;
+  "V0805_POKEMON_STAKATAKA_NORMAL": PokemonSettingsStakatakaNormal;
   "V0795_POKEMON_PHEROMOSA": V0795_pokemon_pheromosaEntry;
   "V0795_POKEMON_PHEROMOSA_NORMAL": V0795_pokemon_pheromosa_normalEntry;
   "V0796_POKEMON_XURKITREE": V0796_pokemon_xurkitreeEntry;
   "V0796_POKEMON_XURKITREE_NORMAL": V0796_pokemon_xurkitree_normalEntry;
-  "V0797_POKEMON_CELESTEELA": V0797_pokemon_celesteelaEntry;
-  "V0797_POKEMON_CELESTEELA_NORMAL": V0797_pokemon_celesteela_normalEntry;
   "V0798_POKEMON_KARTANA": V0798_pokemon_kartanaEntry;
   "V0798_POKEMON_KARTANA_NORMAL": V0798_pokemon_kartana_normalEntry;
   "V0799_POKEMON_GUZZLORD": V0799_pokemon_guzzlordEntry;
@@ -7333,16 +6186,14 @@ export interface PokemonSettingsGen7MasterfileByTemplateId {
   "V0800_POKEMON_NECROZMA_NORMAL": V0800_pokemon_necrozma_normalEntry;
   "V0800_POKEMON_NECROZMA_ULTRA": V0800_pokemon_necrozma_ultraEntry;
   "V0801_POKEMON_MAGEARNA": V0801_pokemon_magearnaEntry;
-  "V0801_POKEMON_MAGEARNA_NORMAL": V0801_pokemon_magearna_normalEntry;
-  "V0801_POKEMON_MAGEARNA_ORIGINAL_COLOR": V0801_pokemon_magearna_original_colorEntry;
+  "V0801_POKEMON_MAGEARNA_NORMAL": PokemonSettingsNormal5;
+  "V0801_POKEMON_MAGEARNA_ORIGINAL_COLOR": PokemonSettingsOriginalColor;
   "V0802_POKEMON_MARSHADOW": V0802_pokemon_marshadowEntry;
   "V0802_POKEMON_MARSHADOW_NORMAL": V0802_pokemon_marshadow_normalEntry;
   "V0803_POKEMON_POIPOLE": V0803_pokemon_poipoleEntry;
   "V0803_POKEMON_POIPOLE_NORMAL": V0803_pokemon_poipole_normalEntry;
   "V0804_POKEMON_NAGANADEL": V0804_pokemon_naganadelEntry;
   "V0804_POKEMON_NAGANADEL_NORMAL": V0804_pokemon_naganadel_normalEntry;
-  "V0805_POKEMON_STAKATAKA": V0805_pokemon_stakatakaEntry;
-  "V0805_POKEMON_STAKATAKA_NORMAL": V0805_pokemon_stakataka_normalEntry;
   "V0806_POKEMON_BLACEPHALON": V0806_pokemon_blacephalonEntry;
   "V0806_POKEMON_BLACEPHALON_NORMAL": V0806_pokemon_blacephalon_normalEntry;
   "V0807_POKEMON_ZERAORA": V0807_pokemon_zeraoraEntry;
@@ -7360,84 +6211,84 @@ export interface PokemonSettingsGen7ByDexId {
   "0725": V0725_pokemon_littenEntry | V0725_pokemon_litten_normalEntry;
   "0726": V0726_pokemon_torracatEntry | V0726_pokemon_torracat_normalEntry;
   "0727": V0727_pokemon_incineroarEntry | V0727_pokemon_incineroar_normalEntry;
-  "0728": V0728_pokemon_popplioEntry | V0728_pokemon_popplio_normalEntry;
-  "0729": V0729_pokemon_brionneEntry | V0729_pokemon_brionne_normalEntry;
+  "0728": PokemonSettingsPopplio | PokemonSettingsPopplioNormal;
+  "0729": PokemonSettingsBrionne | PokemonSettingsBrionneNormal;
   "0730": V0730_pokemon_primarinaEntry | V0730_pokemon_primarina_normalEntry;
   "0731": V0731_pokemon_pikipekEntry | V0731_pokemon_pikipek_normalEntry;
   "0732": V0732_pokemon_trumbeakEntry | V0732_pokemon_trumbeak_normalEntry;
   "0733": V0733_pokemon_toucannonEntry | V0733_pokemon_toucannon_normalEntry;
   "0734": V0734_pokemon_yungoosEntry | V0734_pokemon_yungoos_normalEntry;
-  "0735": V0735_pokemon_gumshoosEntry | V0735_pokemon_gumshoos_normalEntry;
+  "0735": PokemonSettingsGumshoos | PokemonSettingsGumshoosNormal;
   "0736": V0736_pokemon_grubbinEntry | V0736_pokemon_grubbin_normalEntry;
-  "0737": V0737_pokemon_charjabugEntry | V0737_pokemon_charjabug_normalEntry | V0737_pokemon_charjabug_winter_2025Entry;
-  "0738": V0738_pokemon_vikavoltEntry | V0738_pokemon_vikavolt_normalEntry | V0738_pokemon_vikavolt_winter_2025Entry;
+  "0737": V0737_pokemon_charjabugEntry | PokemonSettingsNormal | PokemonSettingsWinterT;
+  "0738": V0738_pokemon_vikavoltEntry | PokemonSettingsNormal2 | PokemonSettingsWinterT2;
   "0739": V0739_pokemon_crabrawlerEntry | V0739_pokemon_crabrawler_normalEntry;
   "0740": V0740_pokemon_crabominableEntry | V0740_pokemon_crabominable_normalEntry;
-  "0741": V0741_pokemon_oricorioEntry | V0741_pokemon_oricorio_baileEntry | V0741_pokemon_oricorio_pauEntry | V0741_pokemon_oricorio_pompomEntry | V0741_pokemon_oricorio_sensuEntry;
+  "0741": PokemonSettingsOricorio | PokemonSettingsOricorioBaile | PokemonSettingsOricorioPau | PokemonSettingsOricorioPompom | PokemonSettingsOricorioSensu;
   "0742": V0742_pokemon_cutieflyEntry | V0742_pokemon_cutiefly_normalEntry;
   "0743": V0743_pokemon_ribombeeEntry | V0743_pokemon_ribombee_normalEntry;
   "0744": V0744_pokemon_rockruffEntry | V0744_pokemon_rockruff_duskEntry | V0744_pokemon_rockruff_normalEntry;
-  "0745": V0745_pokemon_lycanrocEntry | V0745_pokemon_lycanroc_duskEntry | V0745_pokemon_lycanroc_middayEntry | V0745_pokemon_lycanroc_midnightEntry;
+  "0745": PokemonSettingsLycanroc | PokemonSettingsLycanrocDusk | PokemonSettingsLycanrocMidday | PokemonSettingsLycanrocMidnight;
   "0746": V0746_pokemon_wishiwashiEntry | V0746_pokemon_wishiwashi_schoolEntry | V0746_pokemon_wishiwashi_soloEntry;
   "0747": V0747_pokemon_mareanieEntry | V0747_pokemon_mareanie_normalEntry;
-  "0748": V0748_pokemon_toxapexEntry | V0748_pokemon_toxapex_normalEntry;
-  "0749": V0749_pokemon_mudbrayEntry | V0749_pokemon_mudbray_normalEntry;
-  "0750": V0750_pokemon_mudsdaleEntry | V0750_pokemon_mudsdale_normalEntry;
+  "0748": PokemonSettingsToxapex | PokemonSettingsToxapexNormal;
+  "0749": PokemonSettingsMudbray | PokemonSettingsMudbrayNormal;
+  "0750": PokemonSettingsMudsdale | PokemonSettingsMudsdaleNormal;
   "0751": V0751_pokemon_dewpiderEntry | V0751_pokemon_dewpider_normalEntry;
   "0752": V0752_pokemon_araquanidEntry | V0752_pokemon_araquanid_normalEntry;
   "0753": V0753_pokemon_fomantisEntry | V0753_pokemon_fomantis_normalEntry;
-  "0754": V0754_pokemon_lurantisEntry | V0754_pokemon_lurantis_normalEntry;
+  "0754": PokemonSettingsLurantis | PokemonSettingsLurantisNormal;
   "0755": V0755_pokemon_morelullEntry | V0755_pokemon_morelull_normalEntry;
   "0756": V0756_pokemon_shiinoticEntry | V0756_pokemon_shiinotic_normalEntry;
   "0757": V0757_pokemon_salanditEntry | V0757_pokemon_salandit_normalEntry;
   "0758": V0758_pokemon_salazzleEntry | V0758_pokemon_salazzle_normalEntry;
   "0759": V0759_pokemon_stuffulEntry | V0759_pokemon_stufful_normalEntry;
-  "0760": V0760_pokemon_bewearEntry | V0760_pokemon_bewear_normalEntry | V0760_pokemon_bewear_wildarea_2025Entry;
-  "0761": V0761_pokemon_bounsweetEntry | V0761_pokemon_bounsweet_normalEntry;
+  "0760": V0760_pokemon_bewearEntry | PokemonSettingsNormal3 | PokemonSettingsWildareaT;
+  "0761": PokemonSettingsBounsweet | PokemonSettingsBounsweetNormal;
   "0762": V0762_pokemon_steeneeEntry | V0762_pokemon_steenee_normalEntry;
   "0763": V0763_pokemon_tsareenaEntry | V0763_pokemon_tsareena_normalEntry;
   "0764": V0764_pokemon_comfeyEntry | V0764_pokemon_comfey_normalEntry;
   "0765": V0765_pokemon_oranguruEntry | V0765_pokemon_oranguru_normalEntry;
-  "0766": V0766_pokemon_passimianEntry | V0766_pokemon_passimian_normalEntry;
+  "0766": PokemonSettingsPassimian | PokemonSettingsPassimianNormal;
   "0767": V0767_pokemon_wimpodEntry | V0767_pokemon_wimpod_normalEntry;
   "0768": V0768_pokemon_golisopodEntry | V0768_pokemon_golisopod_normalEntry;
   "0769": V0769_pokemon_sandygastEntry | V0769_pokemon_sandygast_normalEntry;
   "0770": V0770_pokemon_palossandEntry | V0770_pokemon_palossand_normalEntry;
   "0771": V0771_pokemon_pyukumukuEntry | V0771_pokemon_pyukumuku_normalEntry;
   "0772": V0772_pokemon_type_nullEntry | V0772_pokemon_type_null_normalEntry;
-  "0773": V0773_pokemon_silvallyEntry | V0773_pokemon_silvally_bugEntry | V0773_pokemon_silvally_darkEntry | V0773_pokemon_silvally_dragonEntry | V0773_pokemon_silvally_electricEntry | V0773_pokemon_silvally_fairyEntry | V0773_pokemon_silvally_fightingEntry | V0773_pokemon_silvally_fireEntry | V0773_pokemon_silvally_flyingEntry | V0773_pokemon_silvally_ghostEntry | V0773_pokemon_silvally_grassEntry | V0773_pokemon_silvally_groundEntry | V0773_pokemon_silvally_iceEntry | V0773_pokemon_silvally_normalEntry | V0773_pokemon_silvally_poisonEntry | V0773_pokemon_silvally_psychicEntry | V0773_pokemon_silvally_rockEntry | V0773_pokemon_silvally_steelEntry | V0773_pokemon_silvally_waterEntry;
-  "0774": V0774_pokemon_miniorEntry | V0774_pokemon_minior_blueEntry | V0774_pokemon_minior_greenEntry | V0774_pokemon_minior_indigoEntry | V0774_pokemon_minior_orangeEntry | V0774_pokemon_minior_redEntry | V0774_pokemon_minior_violetEntry | V0774_pokemon_minior_yellowEntry;
+  "0773": V0773_pokemon_silvallyEntry | PokemonSettingsBug | PokemonSettingsDark | PokemonSettingsDragon | PokemonSettingsElectric | PokemonSettingsFairy | PokemonSettingsFighting | PokemonSettingsFire | PokemonSettingsFlying | PokemonSettingsGhost | PokemonSettingsGrass | PokemonSettingsGround | PokemonSettingsIce | PokemonSettingsNormal4 | PokemonSettingsPoison | PokemonSettingsPsychic | PokemonSettingsRock | PokemonSettingsSteel | PokemonSettingsWater;
+  "0774": V0774_pokemon_miniorEntry | PokemonSettingsBlue | PokemonSettingsGreen | PokemonSettingsIndigo | PokemonSettingsOrange | PokemonSettingsRed | PokemonSettingsViolet | PokemonSettingsYellow;
   "0775": V0775_pokemon_komalaEntry | V0775_pokemon_komala_normalEntry;
   "0776": V0776_pokemon_turtonatorEntry | V0776_pokemon_turtonator_normalEntry;
   "0777": V0777_pokemon_togedemaruEntry | V0777_pokemon_togedemaru_normalEntry;
-  "0778": V0778_pokemon_mimikyuEntry | V0778_pokemon_mimikyu_bustedEntry | V0778_pokemon_mimikyu_disguisedEntry;
+  "0778": V0778_pokemon_mimikyuEntry | PokemonSettingsBusted | PokemonSettingsDisguised;
   "0779": V0779_pokemon_bruxishEntry | V0779_pokemon_bruxish_normalEntry;
   "0780": V0780_pokemon_drampaEntry | V0780_pokemon_drampa_normalEntry;
   "0781": V0781_pokemon_dhelmiseEntry | V0781_pokemon_dhelmise_normalEntry;
-  "0782": V0782_pokemon_jangmo_oEntry | V0782_pokemon_jangmo_o_normalEntry;
+  "0782": PokemonSettingsJangmoO | PokemonSettingsJangmoONormal;
   "0783": V0783_pokemon_hakamo_oEntry | V0783_pokemon_hakamo_o_normalEntry;
   "0784": V0784_pokemon_kommo_oEntry | V0784_pokemon_kommo_o_normalEntry;
-  "0785": V0785_pokemon_tapu_kokoEntry | V0785_pokemon_tapu_koko_normalEntry;
-  "0786": V0786_pokemon_tapu_leleEntry | V0786_pokemon_tapu_lele_normalEntry;
-  "0787": V0787_pokemon_tapu_buluEntry | V0787_pokemon_tapu_bulu_normalEntry;
-  "0788": V0788_pokemon_tapu_finiEntry | V0788_pokemon_tapu_fini_normalEntry;
+  "0785": PokemonSettingsKoko | PokemonSettingsKokoNormal;
+  "0786": PokemonSettingsLele | PokemonSettingsLeleNormal;
+  "0787": PokemonSettingsBulu | PokemonSettingsBuluNormal;
+  "0788": PokemonSettingsFini | PokemonSettingsFiniNormal;
   "0789": V0789_pokemon_cosmogEntry | V0789_pokemon_cosmog_normalEntry;
   "0790": V0790_pokemon_cosmoemEntry | V0790_pokemon_cosmoem_normalEntry;
   "0791": V0791_pokemon_solgaleoEntry | V0791_pokemon_solgaleo_normalEntry;
   "0792": V0792_pokemon_lunalaEntry | V0792_pokemon_lunala_normalEntry;
   "0793": V0793_pokemon_nihilegoEntry | V0793_pokemon_nihilego_normalEntry;
-  "0794": V0794_pokemon_buzzwoleEntry | V0794_pokemon_buzzwole_normalEntry;
+  "0794": PokemonSettingsBuzzwole | PokemonSettingsBuzzwoleNormal;
   "0795": V0795_pokemon_pheromosaEntry | V0795_pokemon_pheromosa_normalEntry;
   "0796": V0796_pokemon_xurkitreeEntry | V0796_pokemon_xurkitree_normalEntry;
-  "0797": V0797_pokemon_celesteelaEntry | V0797_pokemon_celesteela_normalEntry;
+  "0797": PokemonSettingsCelesteela | PokemonSettingsCelesteelaNormal;
   "0798": V0798_pokemon_kartanaEntry | V0798_pokemon_kartana_normalEntry;
   "0799": V0799_pokemon_guzzlordEntry | V0799_pokemon_guzzlord_normalEntry;
   "0800": V0800_pokemon_necrozmaEntry | V0800_pokemon_necrozma_dawn_wingsEntry | V0800_pokemon_necrozma_dusk_maneEntry | V0800_pokemon_necrozma_normalEntry | V0800_pokemon_necrozma_ultraEntry;
-  "0801": V0801_pokemon_magearnaEntry | V0801_pokemon_magearna_normalEntry | V0801_pokemon_magearna_original_colorEntry;
+  "0801": V0801_pokemon_magearnaEntry | PokemonSettingsNormal5 | PokemonSettingsOriginalColor;
   "0802": V0802_pokemon_marshadowEntry | V0802_pokemon_marshadow_normalEntry;
   "0803": V0803_pokemon_poipoleEntry | V0803_pokemon_poipole_normalEntry;
   "0804": V0804_pokemon_naganadelEntry | V0804_pokemon_naganadel_normalEntry;
-  "0805": V0805_pokemon_stakatakaEntry | V0805_pokemon_stakataka_normalEntry;
+  "0805": PokemonSettingsStakataka | PokemonSettingsStakatakaNormal;
   "0806": V0806_pokemon_blacephalonEntry | V0806_pokemon_blacephalon_normalEntry;
   "0807": V0807_pokemon_zeraoraEntry | V0807_pokemon_zeraora_normalEntry;
   "0808": V0808_pokemon_meltanEntry | V0808_pokemon_meltan_normalEntry;
@@ -7446,14 +6297,14 @@ export interface PokemonSettingsGen7ByDexId {
 
 export interface PokemonSettingsGen7ByPokemonId {
   "ARAQUANID": V0752_pokemon_araquanidEntry | V0752_pokemon_araquanid_normalEntry;
-  "BEWEAR": V0760_pokemon_bewearEntry | V0760_pokemon_bewear_normalEntry | V0760_pokemon_bewear_wildarea_2025Entry;
+  "BEWEAR": V0760_pokemon_bewearEntry | PokemonSettingsNormal3 | PokemonSettingsWildareaT;
   "BLACEPHALON": V0806_pokemon_blacephalonEntry | V0806_pokemon_blacephalon_normalEntry;
-  "BOUNSWEET": V0761_pokemon_bounsweetEntry | V0761_pokemon_bounsweet_normalEntry;
-  "BRIONNE": V0729_pokemon_brionneEntry | V0729_pokemon_brionne_normalEntry;
+  "BOUNSWEET": PokemonSettingsBounsweet | PokemonSettingsBounsweetNormal;
+  "BRIONNE": PokemonSettingsBrionne | PokemonSettingsBrionneNormal;
   "BRUXISH": V0779_pokemon_bruxishEntry | V0779_pokemon_bruxish_normalEntry;
-  "BUZZWOLE": V0794_pokemon_buzzwoleEntry | V0794_pokemon_buzzwole_normalEntry;
-  "CELESTEELA": V0797_pokemon_celesteelaEntry | V0797_pokemon_celesteela_normalEntry;
-  "CHARJABUG": V0737_pokemon_charjabugEntry | V0737_pokemon_charjabug_normalEntry | V0737_pokemon_charjabug_winter_2025Entry;
+  "BUZZWOLE": PokemonSettingsBuzzwole | PokemonSettingsBuzzwoleNormal;
+  "CELESTEELA": PokemonSettingsCelesteela | PokemonSettingsCelesteelaNormal;
+  "CHARJABUG": V0737_pokemon_charjabugEntry | PokemonSettingsNormal | PokemonSettingsWinterT;
   "COMFEY": V0764_pokemon_comfeyEntry | V0764_pokemon_comfey_normalEntry;
   "COSMOEM": V0790_pokemon_cosmoemEntry | V0790_pokemon_cosmoem_normalEntry;
   "COSMOG": V0789_pokemon_cosmogEntry | V0789_pokemon_cosmog_normalEntry;
@@ -7468,39 +6319,39 @@ export interface PokemonSettingsGen7ByPokemonId {
   "FOMANTIS": V0753_pokemon_fomantisEntry | V0753_pokemon_fomantis_normalEntry;
   "GOLISOPOD": V0768_pokemon_golisopodEntry | V0768_pokemon_golisopod_normalEntry;
   "GRUBBIN": V0736_pokemon_grubbinEntry | V0736_pokemon_grubbin_normalEntry;
-  "GUMSHOOS": V0735_pokemon_gumshoosEntry | V0735_pokemon_gumshoos_normalEntry;
+  "GUMSHOOS": PokemonSettingsGumshoos | PokemonSettingsGumshoosNormal;
   "GUZZLORD": V0799_pokemon_guzzlordEntry | V0799_pokemon_guzzlord_normalEntry;
   "HAKAMO_O": V0783_pokemon_hakamo_oEntry | V0783_pokemon_hakamo_o_normalEntry;
   "INCINEROAR": V0727_pokemon_incineroarEntry | V0727_pokemon_incineroar_normalEntry;
-  "JANGMO_O": V0782_pokemon_jangmo_oEntry | V0782_pokemon_jangmo_o_normalEntry;
+  "JANGMO_O": PokemonSettingsJangmoO | PokemonSettingsJangmoONormal;
   "KARTANA": V0798_pokemon_kartanaEntry | V0798_pokemon_kartana_normalEntry;
   "KOMALA": V0775_pokemon_komalaEntry | V0775_pokemon_komala_normalEntry;
   "KOMMO_O": V0784_pokemon_kommo_oEntry | V0784_pokemon_kommo_o_normalEntry;
   "LITTEN": V0725_pokemon_littenEntry | V0725_pokemon_litten_normalEntry;
   "LUNALA": V0792_pokemon_lunalaEntry | V0792_pokemon_lunala_normalEntry;
-  "LURANTIS": V0754_pokemon_lurantisEntry | V0754_pokemon_lurantis_normalEntry;
-  "LYCANROC": V0745_pokemon_lycanrocEntry | V0745_pokemon_lycanroc_duskEntry | V0745_pokemon_lycanroc_middayEntry | V0745_pokemon_lycanroc_midnightEntry;
-  "MAGEARNA": V0801_pokemon_magearnaEntry | V0801_pokemon_magearna_normalEntry | V0801_pokemon_magearna_original_colorEntry;
+  "LURANTIS": PokemonSettingsLurantis | PokemonSettingsLurantisNormal;
+  "LYCANROC": PokemonSettingsLycanroc | PokemonSettingsLycanrocDusk | PokemonSettingsLycanrocMidday | PokemonSettingsLycanrocMidnight;
+  "MAGEARNA": V0801_pokemon_magearnaEntry | PokemonSettingsNormal5 | PokemonSettingsOriginalColor;
   "MAREANIE": V0747_pokemon_mareanieEntry | V0747_pokemon_mareanie_normalEntry;
   "MARSHADOW": V0802_pokemon_marshadowEntry | V0802_pokemon_marshadow_normalEntry;
   "MELMETAL": V0809_pokemon_melmetalEntry | V0809_pokemon_melmetal_normalEntry;
   "MELTAN": V0808_pokemon_meltanEntry | V0808_pokemon_meltan_normalEntry;
-  "MIMIKYU": V0778_pokemon_mimikyuEntry | V0778_pokemon_mimikyu_bustedEntry | V0778_pokemon_mimikyu_disguisedEntry;
-  "MINIOR": V0774_pokemon_miniorEntry | V0774_pokemon_minior_blueEntry | V0774_pokemon_minior_greenEntry | V0774_pokemon_minior_indigoEntry | V0774_pokemon_minior_orangeEntry | V0774_pokemon_minior_redEntry | V0774_pokemon_minior_violetEntry | V0774_pokemon_minior_yellowEntry;
+  "MIMIKYU": V0778_pokemon_mimikyuEntry | PokemonSettingsBusted | PokemonSettingsDisguised;
+  "MINIOR": V0774_pokemon_miniorEntry | PokemonSettingsBlue | PokemonSettingsGreen | PokemonSettingsIndigo | PokemonSettingsOrange | PokemonSettingsRed | PokemonSettingsViolet | PokemonSettingsYellow;
   "MORELULL": V0755_pokemon_morelullEntry | V0755_pokemon_morelull_normalEntry;
-  "MUDBRAY": V0749_pokemon_mudbrayEntry | V0749_pokemon_mudbray_normalEntry;
-  "MUDSDALE": V0750_pokemon_mudsdaleEntry | V0750_pokemon_mudsdale_normalEntry;
+  "MUDBRAY": PokemonSettingsMudbray | PokemonSettingsMudbrayNormal;
+  "MUDSDALE": PokemonSettingsMudsdale | PokemonSettingsMudsdaleNormal;
   "NAGANADEL": V0804_pokemon_naganadelEntry | V0804_pokemon_naganadel_normalEntry;
   "NECROZMA": V0800_pokemon_necrozmaEntry | V0800_pokemon_necrozma_dawn_wingsEntry | V0800_pokemon_necrozma_dusk_maneEntry | V0800_pokemon_necrozma_normalEntry | V0800_pokemon_necrozma_ultraEntry;
   "NIHILEGO": V0793_pokemon_nihilegoEntry | V0793_pokemon_nihilego_normalEntry;
   "ORANGURU": V0765_pokemon_oranguruEntry | V0765_pokemon_oranguru_normalEntry;
-  "ORICORIO": V0741_pokemon_oricorioEntry | V0741_pokemon_oricorio_baileEntry | V0741_pokemon_oricorio_pauEntry | V0741_pokemon_oricorio_pompomEntry | V0741_pokemon_oricorio_sensuEntry;
+  "ORICORIO": PokemonSettingsOricorio | PokemonSettingsOricorioBaile | PokemonSettingsOricorioPau | PokemonSettingsOricorioPompom | PokemonSettingsOricorioSensu;
   "PALOSSAND": V0770_pokemon_palossandEntry | V0770_pokemon_palossand_normalEntry;
-  "PASSIMIAN": V0766_pokemon_passimianEntry | V0766_pokemon_passimian_normalEntry;
+  "PASSIMIAN": PokemonSettingsPassimian | PokemonSettingsPassimianNormal;
   "PHEROMOSA": V0795_pokemon_pheromosaEntry | V0795_pokemon_pheromosa_normalEntry;
   "PIKIPEK": V0731_pokemon_pikipekEntry | V0731_pokemon_pikipek_normalEntry;
   "POIPOLE": V0803_pokemon_poipoleEntry | V0803_pokemon_poipole_normalEntry;
-  "POPPLIO": V0728_pokemon_popplioEntry | V0728_pokemon_popplio_normalEntry;
+  "POPPLIO": PokemonSettingsPopplio | PokemonSettingsPopplioNormal;
   "PRIMARINA": V0730_pokemon_primarinaEntry | V0730_pokemon_primarina_normalEntry;
   "PYUKUMUKU": V0771_pokemon_pyukumukuEntry | V0771_pokemon_pyukumuku_normalEntry;
   "RIBOMBEE": V0743_pokemon_ribombeeEntry | V0743_pokemon_ribombee_normalEntry;
@@ -7510,24 +6361,24 @@ export interface PokemonSettingsGen7ByPokemonId {
   "SALAZZLE": V0758_pokemon_salazzleEntry | V0758_pokemon_salazzle_normalEntry;
   "SANDYGAST": V0769_pokemon_sandygastEntry | V0769_pokemon_sandygast_normalEntry;
   "SHIINOTIC": V0756_pokemon_shiinoticEntry | V0756_pokemon_shiinotic_normalEntry;
-  "SILVALLY": V0773_pokemon_silvallyEntry | V0773_pokemon_silvally_bugEntry | V0773_pokemon_silvally_darkEntry | V0773_pokemon_silvally_dragonEntry | V0773_pokemon_silvally_electricEntry | V0773_pokemon_silvally_fairyEntry | V0773_pokemon_silvally_fightingEntry | V0773_pokemon_silvally_fireEntry | V0773_pokemon_silvally_flyingEntry | V0773_pokemon_silvally_ghostEntry | V0773_pokemon_silvally_grassEntry | V0773_pokemon_silvally_groundEntry | V0773_pokemon_silvally_iceEntry | V0773_pokemon_silvally_normalEntry | V0773_pokemon_silvally_poisonEntry | V0773_pokemon_silvally_psychicEntry | V0773_pokemon_silvally_rockEntry | V0773_pokemon_silvally_steelEntry | V0773_pokemon_silvally_waterEntry;
+  "SILVALLY": V0773_pokemon_silvallyEntry | PokemonSettingsBug | PokemonSettingsDark | PokemonSettingsDragon | PokemonSettingsElectric | PokemonSettingsFairy | PokemonSettingsFighting | PokemonSettingsFire | PokemonSettingsFlying | PokemonSettingsGhost | PokemonSettingsGrass | PokemonSettingsGround | PokemonSettingsIce | PokemonSettingsNormal4 | PokemonSettingsPoison | PokemonSettingsPsychic | PokemonSettingsRock | PokemonSettingsSteel | PokemonSettingsWater;
   "SOLGALEO": V0791_pokemon_solgaleoEntry | V0791_pokemon_solgaleo_normalEntry;
-  "STAKATAKA": V0805_pokemon_stakatakaEntry | V0805_pokemon_stakataka_normalEntry;
+  "STAKATAKA": PokemonSettingsStakataka | PokemonSettingsStakatakaNormal;
   "STEENEE": V0762_pokemon_steeneeEntry | V0762_pokemon_steenee_normalEntry;
   "STUFFUL": V0759_pokemon_stuffulEntry | V0759_pokemon_stufful_normalEntry;
-  "TAPU_BULU": V0787_pokemon_tapu_buluEntry | V0787_pokemon_tapu_bulu_normalEntry;
-  "TAPU_FINI": V0788_pokemon_tapu_finiEntry | V0788_pokemon_tapu_fini_normalEntry;
-  "TAPU_KOKO": V0785_pokemon_tapu_kokoEntry | V0785_pokemon_tapu_koko_normalEntry;
-  "TAPU_LELE": V0786_pokemon_tapu_leleEntry | V0786_pokemon_tapu_lele_normalEntry;
+  "TAPU_BULU": PokemonSettingsBulu | PokemonSettingsBuluNormal;
+  "TAPU_FINI": PokemonSettingsFini | PokemonSettingsFiniNormal;
+  "TAPU_KOKO": PokemonSettingsKoko | PokemonSettingsKokoNormal;
+  "TAPU_LELE": PokemonSettingsLele | PokemonSettingsLeleNormal;
   "TOGEDEMARU": V0777_pokemon_togedemaruEntry | V0777_pokemon_togedemaru_normalEntry;
   "TORRACAT": V0726_pokemon_torracatEntry | V0726_pokemon_torracat_normalEntry;
   "TOUCANNON": V0733_pokemon_toucannonEntry | V0733_pokemon_toucannon_normalEntry;
-  "TOXAPEX": V0748_pokemon_toxapexEntry | V0748_pokemon_toxapex_normalEntry;
+  "TOXAPEX": PokemonSettingsToxapex | PokemonSettingsToxapexNormal;
   "TRUMBEAK": V0732_pokemon_trumbeakEntry | V0732_pokemon_trumbeak_normalEntry;
   "TSAREENA": V0763_pokemon_tsareenaEntry | V0763_pokemon_tsareena_normalEntry;
   "TURTONATOR": V0776_pokemon_turtonatorEntry | V0776_pokemon_turtonator_normalEntry;
   "TYPE_NULL": V0772_pokemon_type_nullEntry | V0772_pokemon_type_null_normalEntry;
-  "VIKAVOLT": V0738_pokemon_vikavoltEntry | V0738_pokemon_vikavolt_normalEntry | V0738_pokemon_vikavolt_winter_2025Entry;
+  "VIKAVOLT": V0738_pokemon_vikavoltEntry | PokemonSettingsNormal2 | PokemonSettingsWinterT2;
   "WIMPOD": V0767_pokemon_wimpodEntry | V0767_pokemon_wimpod_normalEntry;
   "WISHIWASHI": V0746_pokemon_wishiwashiEntry | V0746_pokemon_wishiwashi_schoolEntry | V0746_pokemon_wishiwashi_soloEntry;
   "XURKITREE": V0796_pokemon_xurkitreeEntry | V0796_pokemon_xurkitree_normalEntry;
@@ -7535,4 +6386,4 @@ export interface PokemonSettingsGen7ByPokemonId {
   "ZERAORA": V0807_pokemon_zeraoraEntry | V0807_pokemon_zeraora_normalEntry;
 }
 
-export type PokemonSettingsGen7MasterfileEntry = V0722_pokemon_rowletEntry | V0722_pokemon_rowlet_normalEntry | V0723_pokemon_dartrixEntry | V0723_pokemon_dartrix_normalEntry | V0724_pokemon_decidueyeEntry | V0724_pokemon_decidueye_hisuianEntry | V0724_pokemon_decidueye_normalEntry | V0725_pokemon_littenEntry | V0725_pokemon_litten_normalEntry | V0726_pokemon_torracatEntry | V0726_pokemon_torracat_normalEntry | V0727_pokemon_incineroarEntry | V0727_pokemon_incineroar_normalEntry | V0728_pokemon_popplioEntry | V0728_pokemon_popplio_normalEntry | V0729_pokemon_brionneEntry | V0729_pokemon_brionne_normalEntry | V0730_pokemon_primarinaEntry | V0730_pokemon_primarina_normalEntry | V0731_pokemon_pikipekEntry | V0731_pokemon_pikipek_normalEntry | V0732_pokemon_trumbeakEntry | V0732_pokemon_trumbeak_normalEntry | V0733_pokemon_toucannonEntry | V0733_pokemon_toucannon_normalEntry | V0734_pokemon_yungoosEntry | V0734_pokemon_yungoos_normalEntry | V0735_pokemon_gumshoosEntry | V0735_pokemon_gumshoos_normalEntry | V0736_pokemon_grubbinEntry | V0736_pokemon_grubbin_normalEntry | V0737_pokemon_charjabugEntry | V0737_pokemon_charjabug_normalEntry | V0737_pokemon_charjabug_winter_2025Entry | V0738_pokemon_vikavoltEntry | V0738_pokemon_vikavolt_normalEntry | V0738_pokemon_vikavolt_winter_2025Entry | V0739_pokemon_crabrawlerEntry | V0739_pokemon_crabrawler_normalEntry | V0740_pokemon_crabominableEntry | V0740_pokemon_crabominable_normalEntry | V0741_pokemon_oricorioEntry | V0741_pokemon_oricorio_baileEntry | V0741_pokemon_oricorio_pauEntry | V0741_pokemon_oricorio_pompomEntry | V0741_pokemon_oricorio_sensuEntry | V0742_pokemon_cutieflyEntry | V0742_pokemon_cutiefly_normalEntry | V0743_pokemon_ribombeeEntry | V0743_pokemon_ribombee_normalEntry | V0744_pokemon_rockruffEntry | V0744_pokemon_rockruff_duskEntry | V0744_pokemon_rockruff_normalEntry | V0745_pokemon_lycanrocEntry | V0745_pokemon_lycanroc_duskEntry | V0745_pokemon_lycanroc_middayEntry | V0745_pokemon_lycanroc_midnightEntry | V0746_pokemon_wishiwashiEntry | V0746_pokemon_wishiwashi_schoolEntry | V0746_pokemon_wishiwashi_soloEntry | V0747_pokemon_mareanieEntry | V0747_pokemon_mareanie_normalEntry | V0748_pokemon_toxapexEntry | V0748_pokemon_toxapex_normalEntry | V0749_pokemon_mudbrayEntry | V0749_pokemon_mudbray_normalEntry | V0750_pokemon_mudsdaleEntry | V0750_pokemon_mudsdale_normalEntry | V0751_pokemon_dewpiderEntry | V0751_pokemon_dewpider_normalEntry | V0752_pokemon_araquanidEntry | V0752_pokemon_araquanid_normalEntry | V0753_pokemon_fomantisEntry | V0753_pokemon_fomantis_normalEntry | V0754_pokemon_lurantisEntry | V0754_pokemon_lurantis_normalEntry | V0755_pokemon_morelullEntry | V0755_pokemon_morelull_normalEntry | V0756_pokemon_shiinoticEntry | V0756_pokemon_shiinotic_normalEntry | V0757_pokemon_salanditEntry | V0757_pokemon_salandit_normalEntry | V0758_pokemon_salazzleEntry | V0758_pokemon_salazzle_normalEntry | V0759_pokemon_stuffulEntry | V0759_pokemon_stufful_normalEntry | V0760_pokemon_bewearEntry | V0760_pokemon_bewear_normalEntry | V0760_pokemon_bewear_wildarea_2025Entry | V0761_pokemon_bounsweetEntry | V0761_pokemon_bounsweet_normalEntry | V0762_pokemon_steeneeEntry | V0762_pokemon_steenee_normalEntry | V0763_pokemon_tsareenaEntry | V0763_pokemon_tsareena_normalEntry | V0764_pokemon_comfeyEntry | V0764_pokemon_comfey_normalEntry | V0765_pokemon_oranguruEntry | V0765_pokemon_oranguru_normalEntry | V0766_pokemon_passimianEntry | V0766_pokemon_passimian_normalEntry | V0767_pokemon_wimpodEntry | V0767_pokemon_wimpod_normalEntry | V0768_pokemon_golisopodEntry | V0768_pokemon_golisopod_normalEntry | V0769_pokemon_sandygastEntry | V0769_pokemon_sandygast_normalEntry | V0770_pokemon_palossandEntry | V0770_pokemon_palossand_normalEntry | V0771_pokemon_pyukumukuEntry | V0771_pokemon_pyukumuku_normalEntry | V0772_pokemon_type_nullEntry | V0772_pokemon_type_null_normalEntry | V0773_pokemon_silvallyEntry | V0773_pokemon_silvally_bugEntry | V0773_pokemon_silvally_darkEntry | V0773_pokemon_silvally_dragonEntry | V0773_pokemon_silvally_electricEntry | V0773_pokemon_silvally_fairyEntry | V0773_pokemon_silvally_fightingEntry | V0773_pokemon_silvally_fireEntry | V0773_pokemon_silvally_flyingEntry | V0773_pokemon_silvally_ghostEntry | V0773_pokemon_silvally_grassEntry | V0773_pokemon_silvally_groundEntry | V0773_pokemon_silvally_iceEntry | V0773_pokemon_silvally_normalEntry | V0773_pokemon_silvally_poisonEntry | V0773_pokemon_silvally_psychicEntry | V0773_pokemon_silvally_rockEntry | V0773_pokemon_silvally_steelEntry | V0773_pokemon_silvally_waterEntry | V0774_pokemon_miniorEntry | V0774_pokemon_minior_blueEntry | V0774_pokemon_minior_greenEntry | V0774_pokemon_minior_indigoEntry | V0774_pokemon_minior_orangeEntry | V0774_pokemon_minior_redEntry | V0774_pokemon_minior_violetEntry | V0774_pokemon_minior_yellowEntry | V0775_pokemon_komalaEntry | V0775_pokemon_komala_normalEntry | V0776_pokemon_turtonatorEntry | V0776_pokemon_turtonator_normalEntry | V0777_pokemon_togedemaruEntry | V0777_pokemon_togedemaru_normalEntry | V0778_pokemon_mimikyuEntry | V0778_pokemon_mimikyu_bustedEntry | V0778_pokemon_mimikyu_disguisedEntry | V0779_pokemon_bruxishEntry | V0779_pokemon_bruxish_normalEntry | V0780_pokemon_drampaEntry | V0780_pokemon_drampa_normalEntry | V0781_pokemon_dhelmiseEntry | V0781_pokemon_dhelmise_normalEntry | V0782_pokemon_jangmo_oEntry | V0782_pokemon_jangmo_o_normalEntry | V0783_pokemon_hakamo_oEntry | V0783_pokemon_hakamo_o_normalEntry | V0784_pokemon_kommo_oEntry | V0784_pokemon_kommo_o_normalEntry | V0785_pokemon_tapu_kokoEntry | V0785_pokemon_tapu_koko_normalEntry | V0786_pokemon_tapu_leleEntry | V0786_pokemon_tapu_lele_normalEntry | V0787_pokemon_tapu_buluEntry | V0787_pokemon_tapu_bulu_normalEntry | V0788_pokemon_tapu_finiEntry | V0788_pokemon_tapu_fini_normalEntry | V0789_pokemon_cosmogEntry | V0789_pokemon_cosmog_normalEntry | V0790_pokemon_cosmoemEntry | V0790_pokemon_cosmoem_normalEntry | V0791_pokemon_solgaleoEntry | V0791_pokemon_solgaleo_normalEntry | V0792_pokemon_lunalaEntry | V0792_pokemon_lunala_normalEntry | V0793_pokemon_nihilegoEntry | V0793_pokemon_nihilego_normalEntry | V0794_pokemon_buzzwoleEntry | V0794_pokemon_buzzwole_normalEntry | V0795_pokemon_pheromosaEntry | V0795_pokemon_pheromosa_normalEntry | V0796_pokemon_xurkitreeEntry | V0796_pokemon_xurkitree_normalEntry | V0797_pokemon_celesteelaEntry | V0797_pokemon_celesteela_normalEntry | V0798_pokemon_kartanaEntry | V0798_pokemon_kartana_normalEntry | V0799_pokemon_guzzlordEntry | V0799_pokemon_guzzlord_normalEntry | V0800_pokemon_necrozmaEntry | V0800_pokemon_necrozma_dawn_wingsEntry | V0800_pokemon_necrozma_dusk_maneEntry | V0800_pokemon_necrozma_normalEntry | V0800_pokemon_necrozma_ultraEntry | V0801_pokemon_magearnaEntry | V0801_pokemon_magearna_normalEntry | V0801_pokemon_magearna_original_colorEntry | V0802_pokemon_marshadowEntry | V0802_pokemon_marshadow_normalEntry | V0803_pokemon_poipoleEntry | V0803_pokemon_poipole_normalEntry | V0804_pokemon_naganadelEntry | V0804_pokemon_naganadel_normalEntry | V0805_pokemon_stakatakaEntry | V0805_pokemon_stakataka_normalEntry | V0806_pokemon_blacephalonEntry | V0806_pokemon_blacephalon_normalEntry | V0807_pokemon_zeraoraEntry | V0807_pokemon_zeraora_normalEntry | V0808_pokemon_meltanEntry | V0808_pokemon_meltan_normalEntry | V0809_pokemon_melmetalEntry | V0809_pokemon_melmetal_normalEntry;
+export type PokemonSettingsGen7MasterfileEntry = V0722_pokemon_rowletEntry | V0722_pokemon_rowlet_normalEntry | V0723_pokemon_dartrixEntry | V0723_pokemon_dartrix_normalEntry | V0724_pokemon_decidueyeEntry | V0724_pokemon_decidueye_hisuianEntry | V0724_pokemon_decidueye_normalEntry | V0725_pokemon_littenEntry | V0725_pokemon_litten_normalEntry | V0726_pokemon_torracatEntry | V0726_pokemon_torracat_normalEntry | V0727_pokemon_incineroarEntry | V0727_pokemon_incineroar_normalEntry | PokemonSettingsPopplio | PokemonSettingsJangmoO | PokemonSettingsPopplioNormal | PokemonSettingsJangmoONormal | PokemonSettingsBrionne | PokemonSettingsBrionneNormal | V0730_pokemon_primarinaEntry | V0730_pokemon_primarina_normalEntry | V0731_pokemon_pikipekEntry | V0731_pokemon_pikipek_normalEntry | V0732_pokemon_trumbeakEntry | V0732_pokemon_trumbeak_normalEntry | V0733_pokemon_toucannonEntry | V0733_pokemon_toucannon_normalEntry | V0734_pokemon_yungoosEntry | V0734_pokemon_yungoos_normalEntry | PokemonSettingsGumshoos | PokemonSettingsMudsdale | PokemonSettingsLurantis | PokemonSettingsGumshoosNormal | PokemonSettingsMudsdaleNormal | PokemonSettingsLurantisNormal | V0736_pokemon_grubbinEntry | V0736_pokemon_grubbin_normalEntry | V0737_pokemon_charjabugEntry | PokemonSettingsNormal | PokemonSettingsWinterT | V0738_pokemon_vikavoltEntry | PokemonSettingsNormal2 | PokemonSettingsWinterT2 | V0739_pokemon_crabrawlerEntry | V0739_pokemon_crabrawler_normalEntry | V0740_pokemon_crabominableEntry | V0740_pokemon_crabominable_normalEntry | PokemonSettingsOricorio | PokemonSettingsOricorioBaile | PokemonSettingsOricorioPau | PokemonSettingsOricorioPompom | PokemonSettingsOricorioSensu | V0742_pokemon_cutieflyEntry | V0742_pokemon_cutiefly_normalEntry | V0743_pokemon_ribombeeEntry | V0743_pokemon_ribombee_normalEntry | V0744_pokemon_rockruffEntry | V0744_pokemon_rockruff_duskEntry | V0744_pokemon_rockruff_normalEntry | PokemonSettingsLycanroc | PokemonSettingsLycanrocDusk | PokemonSettingsLycanrocMidday | PokemonSettingsLycanrocMidnight | V0746_pokemon_wishiwashiEntry | V0746_pokemon_wishiwashi_schoolEntry | V0746_pokemon_wishiwashi_soloEntry | V0747_pokemon_mareanieEntry | V0747_pokemon_mareanie_normalEntry | PokemonSettingsToxapex | PokemonSettingsToxapexNormal | PokemonSettingsMudbray | PokemonSettingsBounsweet | PokemonSettingsMudbrayNormal | PokemonSettingsBounsweetNormal | V0751_pokemon_dewpiderEntry | V0751_pokemon_dewpider_normalEntry | V0752_pokemon_araquanidEntry | V0752_pokemon_araquanid_normalEntry | V0753_pokemon_fomantisEntry | V0753_pokemon_fomantis_normalEntry | V0755_pokemon_morelullEntry | V0755_pokemon_morelull_normalEntry | V0756_pokemon_shiinoticEntry | V0756_pokemon_shiinotic_normalEntry | V0757_pokemon_salanditEntry | V0757_pokemon_salandit_normalEntry | V0758_pokemon_salazzleEntry | V0758_pokemon_salazzle_normalEntry | V0759_pokemon_stuffulEntry | V0759_pokemon_stufful_normalEntry | V0760_pokemon_bewearEntry | PokemonSettingsNormal3 | PokemonSettingsWildareaT | V0762_pokemon_steeneeEntry | V0762_pokemon_steenee_normalEntry | V0763_pokemon_tsareenaEntry | V0763_pokemon_tsareena_normalEntry | V0764_pokemon_comfeyEntry | V0764_pokemon_comfey_normalEntry | V0765_pokemon_oranguruEntry | V0765_pokemon_oranguru_normalEntry | PokemonSettingsPassimian | PokemonSettingsPassimianNormal | V0767_pokemon_wimpodEntry | V0767_pokemon_wimpod_normalEntry | V0768_pokemon_golisopodEntry | V0768_pokemon_golisopod_normalEntry | V0769_pokemon_sandygastEntry | V0769_pokemon_sandygast_normalEntry | V0770_pokemon_palossandEntry | V0770_pokemon_palossand_normalEntry | V0771_pokemon_pyukumukuEntry | V0771_pokemon_pyukumuku_normalEntry | V0772_pokemon_type_nullEntry | V0772_pokemon_type_null_normalEntry | V0773_pokemon_silvallyEntry | PokemonSettingsBug | PokemonSettingsDark | PokemonSettingsDragon | PokemonSettingsElectric | PokemonSettingsFairy | PokemonSettingsFighting | PokemonSettingsFire | PokemonSettingsFlying | PokemonSettingsGhost | PokemonSettingsGrass | PokemonSettingsGround | PokemonSettingsIce | PokemonSettingsNormal4 | PokemonSettingsPoison | PokemonSettingsPsychic | PokemonSettingsRock | PokemonSettingsSteel | PokemonSettingsWater | V0774_pokemon_miniorEntry | PokemonSettingsBlue | PokemonSettingsGreen | PokemonSettingsIndigo | PokemonSettingsOrange | PokemonSettingsRed | PokemonSettingsViolet | PokemonSettingsYellow | V0775_pokemon_komalaEntry | V0775_pokemon_komala_normalEntry | V0776_pokemon_turtonatorEntry | V0776_pokemon_turtonator_normalEntry | V0777_pokemon_togedemaruEntry | V0777_pokemon_togedemaru_normalEntry | V0778_pokemon_mimikyuEntry | PokemonSettingsBusted | PokemonSettingsDisguised | V0779_pokemon_bruxishEntry | V0779_pokemon_bruxish_normalEntry | V0780_pokemon_drampaEntry | V0780_pokemon_drampa_normalEntry | V0781_pokemon_dhelmiseEntry | V0781_pokemon_dhelmise_normalEntry | V0783_pokemon_hakamo_oEntry | V0783_pokemon_hakamo_o_normalEntry | V0784_pokemon_kommo_oEntry | V0784_pokemon_kommo_o_normalEntry | PokemonSettingsKoko | PokemonSettingsLele | PokemonSettingsBulu | PokemonSettingsFini | PokemonSettingsKokoNormal | PokemonSettingsLeleNormal | PokemonSettingsBuluNormal | PokemonSettingsFiniNormal | V0789_pokemon_cosmogEntry | V0789_pokemon_cosmog_normalEntry | V0790_pokemon_cosmoemEntry | V0790_pokemon_cosmoem_normalEntry | V0791_pokemon_solgaleoEntry | V0791_pokemon_solgaleo_normalEntry | V0792_pokemon_lunalaEntry | V0792_pokemon_lunala_normalEntry | V0793_pokemon_nihilegoEntry | V0793_pokemon_nihilego_normalEntry | PokemonSettingsBuzzwole | PokemonSettingsCelesteela | PokemonSettingsStakataka | PokemonSettingsBuzzwoleNormal | PokemonSettingsCelesteelaNormal | PokemonSettingsStakatakaNormal | V0795_pokemon_pheromosaEntry | V0795_pokemon_pheromosa_normalEntry | V0796_pokemon_xurkitreeEntry | V0796_pokemon_xurkitree_normalEntry | V0798_pokemon_kartanaEntry | V0798_pokemon_kartana_normalEntry | V0799_pokemon_guzzlordEntry | V0799_pokemon_guzzlord_normalEntry | V0800_pokemon_necrozmaEntry | V0800_pokemon_necrozma_dawn_wingsEntry | V0800_pokemon_necrozma_dusk_maneEntry | V0800_pokemon_necrozma_normalEntry | V0800_pokemon_necrozma_ultraEntry | V0801_pokemon_magearnaEntry | PokemonSettingsNormal5 | PokemonSettingsOriginalColor | V0802_pokemon_marshadowEntry | V0802_pokemon_marshadow_normalEntry | V0803_pokemon_poipoleEntry | V0803_pokemon_poipole_normalEntry | V0804_pokemon_naganadelEntry | V0804_pokemon_naganadel_normalEntry | V0806_pokemon_blacephalonEntry | V0806_pokemon_blacephalon_normalEntry | V0807_pokemon_zeraoraEntry | V0807_pokemon_zeraora_normalEntry | V0808_pokemon_meltanEntry | V0808_pokemon_meltan_normalEntry | V0809_pokemon_melmetalEntry | V0809_pokemon_melmetal_normalEntry;

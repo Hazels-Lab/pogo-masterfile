@@ -1,4 +1,6 @@
 import { describe, expect, test } from "bun:test";
+import * as fs from "node:fs";
+import * as path from "node:path";
 import { filterGameMasterEntries } from "./codegen-core";
 import { parseGoArgs } from "./go";
 import { parseRustArgs } from "./rust";
@@ -72,8 +74,26 @@ const FIXTURE_ENTRIES: GameMasterEntryRaw[] = [
 		templateId: "POKEMON_TYPE_BUG",
 		data: {
 			typeEffective: {
-				attackScalar: [1],
+				attackScalar: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
 				attackType: "POKEMON_TYPE_BUG",
+			},
+		},
+	},
+	{
+		templateId: "POKEMON_TYPE_DARK",
+		data: {
+			typeEffective: {
+				attackScalar: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+				attackType: "POKEMON_TYPE_DARK",
+			},
+		},
+	},
+	{
+		templateId: "POKEMON_TYPE_WATER",
+		data: {
+			typeEffective: {
+				attackScalar: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+				attackType: "POKEMON_TYPE_WATER",
 			},
 		},
 	},
@@ -142,6 +162,33 @@ const FIXTURE_ENTRIES: GameMasterEntryRaw[] = [
 		data: {
 			featureGate: {
 				status: 1,
+			},
+		},
+	},
+];
+
+const SHARED_GENDER_FIXTURE_ENTRIES: GameMasterEntryRaw[] = [
+	{
+		templateId: "SPAWN_V0001_POKEMON_BULBASAUR",
+		data: {
+			genderSettings: {
+				pokemon: "BULBASAUR",
+				gender: {
+					malePercent: 0.875,
+					femalePercent: 0.125,
+				},
+			},
+		},
+	},
+	{
+		templateId: "SPAWN_V0152_POKEMON_CHIKORITA",
+		data: {
+			genderSettings: {
+				pokemon: "CHIKORITA",
+				gender: {
+					malePercent: 0.875,
+					femalePercent: 0.125,
+				},
 			},
 		},
 	},
@@ -303,7 +350,22 @@ describe("codegen refactor parity", () => {
 			'  "IVYSAUR": Spawn_v0002_pokemon_ivysaurEntry;',
 		);
 		expect(fileMap.get("pokemon/type-chart.generated.ts")).toContain(
-			'templateId: "POKEMON_TYPE_BUG";',
+			"export interface PokemonType<TTemplateId extends string> {",
+		);
+		expect(fileMap.get("pokemon/type-chart.generated.ts")).not.toContain(
+			"export interface Pokemon_type_bugEntry {",
+		);
+		expect(fileMap.get("pokemon/type-chart.generated.ts")).toContain(
+			"export interface PokemonTypeTypeEffective<TTemplateId extends string> {",
+		);
+		expect(fileMap.get("pokemon/type-chart.generated.ts")).toContain(
+			"  attackType: TTemplateId;",
+		);
+		expect(fileMap.get("pokemon/type-chart.generated.ts")).toContain(
+			'export type PokemonTypeBug = PokemonType<"POKEMON_TYPE_BUG">;',
+		);
+		expect(fileMap.get("pokemon/type-chart.generated.ts")).toContain(
+			'export type PokemonTypeTemplateId = PokemonTypeMasterfileEntry["templateId"];',
 		);
 		expect(fileMap.get("misc.generated.ts")).toContain(
 			'templateId: "FEATURE_GATE_MAIN";',
@@ -317,9 +379,10 @@ describe("codegen refactor parity", () => {
 		expect(output).toContain(
 			'import type POGOProtos from "@na-ji/pogo-protos";',
 		);
-		expect(output).toContain(
+		expect(output).not.toContain(
 			'export * from "./pokemon/settings/gen1.generated";',
 		);
+		expect(output).toContain('export * from "./pokemon/type-chart.generated";');
 		expect(output).toContain(
 			"export type PokemonMasterfileEntry = PokemonSettingsGen1MasterfileEntry | PokemonExtendedGen1MasterfileEntry | PokemonGenderGen1MasterfileEntry | PokemonFamilyMasterfileEntry | PokemonTypeChartMasterfileEntry | PokemonScaleMasterfileEntry | PokemonHomeMasterfileEntry | PokemonTagsMasterfileEntry | PokemonUpgradesMasterfileEntry;",
 		);
@@ -378,5 +441,160 @@ describe("codegen refactor parity", () => {
 			"pokemon/extended/gen9.generated.ts",
 		]);
 		expect(bundle.barrelContent).not.toContain("PokemonExtendedSpecial");
+	});
+
+	test("TypeScript keeps non-Pokemon local clusters on the raw fallback path", () => {
+		const options = parseTypescriptArgs(["--all"]);
+		const bundle = buildTypescriptFiles(
+			[
+				{
+					templateId: "TEST_WIDGET_ALPHA",
+					data: {
+						testWidget: {
+							correlatedId: "TEST_WIDGET_ALPHA",
+							label: "alpha",
+							values: [1, 2],
+						},
+					},
+				},
+				{
+					templateId: "TEST_WIDGET_BETA",
+					data: {
+						testWidget: {
+							correlatedId: "TEST_WIDGET_BETA",
+							label: "beta",
+							values: [1, 2, 3],
+						},
+					},
+				},
+			],
+			options,
+		);
+		const miscFile = bundle.files.find(
+			(file) => file.fileName === "misc.generated.ts",
+		);
+
+		expect(miscFile?.content).not.toContain("export interface TestWidget<");
+		expect(miscFile?.content).toContain('templateId: "TEST_WIDGET_ALPHA";');
+		expect(miscFile?.content).toContain('templateId: "TEST_WIDGET_BETA";');
+	});
+
+	test("TypeScript skips beautification for mixed-shape singleton clusters", () => {
+		const options = parseTypescriptArgs(["--all"]);
+		const bundle = buildTypescriptFiles(
+			[
+				{
+					templateId: "TEST_WIDGET_ALPHA",
+					data: {
+						testWidget: {
+							correlatedId: "TEST_WIDGET_ALPHA",
+							values: [1, 2],
+						},
+					},
+				},
+				{
+					templateId: "TEST_WIDGET_BETA",
+					data: {
+						testWidget: {
+							correlatedId: "TEST_WIDGET_BETA",
+							extra: true,
+							values: [1, 2],
+						},
+					},
+				},
+			],
+			options,
+		);
+		const miscFile = bundle.files.find(
+			(file) => file.fileName === "misc.generated.ts",
+		);
+
+		expect(miscFile?.content).not.toContain(
+			"export interface TestWidget<TTemplateId extends string> {",
+		);
+	});
+
+	test("TypeScript emits shared Pokemon gender bases across generation files", () => {
+		const options = parseTypescriptArgs(["--all"]);
+		const bundle = buildTypescriptFiles(SHARED_GENDER_FIXTURE_ENTRIES, options);
+		const fileMap = new Map(
+			bundle.files.map((file) => [file.fileName, file.content]),
+		);
+
+		expect(bundle.files.map((file) => file.fileName).sort()).toEqual([
+			"pokemon/gender/gen1.generated.ts",
+			"pokemon/gender/gen2.generated.ts",
+			"pokemon/gender/shared.generated.ts",
+		]);
+		expect(fileMap.get("pokemon/gender/shared.generated.ts")).toContain(
+			"// Group: pokemon/gender/shared",
+		);
+		expect(fileMap.get("pokemon/gender/shared.generated.ts")).toContain(
+			"export interface PokemonGenderShared<TTemplateId extends string, TPokemon extends string> {",
+		);
+		expect(fileMap.get("pokemon/gender/gen1.generated.ts")).toContain(
+			'import type { PokemonGenderShared } from "./shared.generated";',
+		);
+		expect(fileMap.get("pokemon/gender/gen1.generated.ts")).toContain(
+			'export type PokemonGenderBulbasaur = PokemonGenderShared<"SPAWN_V0001_POKEMON_BULBASAUR", "BULBASAUR">;',
+		);
+		expect(fileMap.get("pokemon/gender/gen1.generated.ts")).not.toContain(
+			"export interface Spawn_v0001_pokemon_bulbasaurEntry {",
+		);
+		expect(fileMap.get("pokemon/gender/gen2.generated.ts")).toContain(
+			'export type PokemonGenderChikorita = PokemonGenderShared<"SPAWN_V0152_POKEMON_CHIKORITA", "CHIKORITA">;',
+		);
+	});
+
+	test("generated ergonomic helpers compile in a consumer import", () => {
+		const options = parseTypescriptArgs(["--all"]);
+		const bundle = buildTypescriptFiles(FIXTURE_ENTRIES, options);
+		const tempDir = fs.mkdtempSync(
+			path.join(process.cwd(), "node_modules/.tmp-pogo-types-"),
+		);
+
+		try {
+			const outputRoot = path.join(tempDir, "generated");
+
+			for (const file of bundle.files) {
+				const targetPath = path.join(outputRoot, file.fileName);
+				fs.mkdirSync(path.dirname(targetPath), { recursive: true });
+				fs.writeFileSync(targetPath, file.content);
+			}
+
+			const indexPath = path.join(outputRoot, "index.ts");
+			fs.writeFileSync(indexPath, bundle.barrelContent);
+
+			const consumerPath = path.join(tempDir, "consumer.ts");
+			fs.writeFileSync(
+				consumerPath,
+				[
+					`import type { PokemonTypeMasterfileEntry, PokemonTypeTemplateId } from ${JSON.stringify(indexPath.replace(/\.ts$/, ""))};`,
+					"declare const entry: PokemonTypeMasterfileEntry;",
+					"const templateId: PokemonTypeTemplateId = entry.templateId;",
+					"void templateId;",
+				].join("\n"),
+			);
+
+			const tscPath = path.resolve("./node_modules/.bin/tsc");
+			const result = Bun.spawnSync([
+				tscPath,
+				"--noEmit",
+				"--moduleResolution",
+				"bundler",
+				"--module",
+				"Preserve",
+				"--target",
+				"ESNext",
+				"--verbatimModuleSyntax",
+				"--strict",
+				"--skipLibCheck",
+				consumerPath,
+			]);
+
+			expect(result.exitCode).toBe(0);
+		} finally {
+			fs.rmSync(tempDir, { force: true, recursive: true });
+		}
 	});
 });

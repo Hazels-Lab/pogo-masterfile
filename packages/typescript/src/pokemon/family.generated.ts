@@ -26,6 +26,186 @@ export interface V0007_family_squirtleEntry {
   templateId: "V0007_FAMILY_SQUIRTLE";
   data: V0001_family_bulbasaurdata;
 }
+export interface V0013_family_weedleEntry {
+  templateId: "V0013_FAMILY_WEEDLE";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0016_family_pidgeyEntry {
+  templateId: "V0016_FAMILY_PIDGEY";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0063_family_abraEntry {
+  templateId: "V0063_FAMILY_ABRA";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0069_family_bellsproutEntry {
+  templateId: "V0069_FAMILY_BELLSPROUT";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0079_family_slowpokeEntry {
+  templateId: "V0079_FAMILY_SLOWPOKE";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0092_family_gastlyEntry {
+  templateId: "V0092_FAMILY_GASTLY";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0095_family_onixEntry {
+  templateId: "V0095_FAMILY_ONIX";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0115_family_kangaskhanEntry {
+  templateId: "V0115_FAMILY_KANGASKHAN";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0123_family_scytherEntry {
+  templateId: "V0123_FAMILY_SCYTHER";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0127_family_pinsirEntry {
+  templateId: "V0127_FAMILY_PINSIR";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0129_family_magikarpEntry {
+  templateId: "V0129_FAMILY_MAGIKARP";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0142_family_aerodactylEntry {
+  templateId: "V0142_FAMILY_AERODACTYL";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0147_family_dratiniEntry {
+  templateId: "V0147_FAMILY_DRATINI";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0179_family_mareepEntry {
+  templateId: "V0179_FAMILY_MAREEP";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0214_family_heracrossEntry {
+  templateId: "V0214_FAMILY_HERACROSS";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0228_family_houndourEntry {
+  templateId: "V0228_FAMILY_HOUNDOUR";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0246_family_larvitarEntry {
+  templateId: "V0246_FAMILY_LARVITAR";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0252_family_treeckoEntry {
+  templateId: "V0252_FAMILY_TREECKO";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0255_family_torchicEntry {
+  templateId: "V0255_FAMILY_TORCHIC";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0258_family_mudkipEntry {
+  templateId: "V0258_FAMILY_MUDKIP";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0302_family_sableyeEntry {
+  templateId: "V0302_FAMILY_SABLEYE";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0303_family_mawileEntry {
+  templateId: "V0303_FAMILY_MAWILE";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0304_family_aronEntry {
+  templateId: "V0304_FAMILY_ARON";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0307_family_medititeEntry {
+  templateId: "V0307_FAMILY_MEDITITE";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0309_family_electrikeEntry {
+  templateId: "V0309_FAMILY_ELECTRIKE";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0318_family_carvanhaEntry {
+  templateId: "V0318_FAMILY_CARVANHA";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0322_family_numelEntry {
+  templateId: "V0322_FAMILY_NUMEL";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0333_family_swabluEntry {
+  templateId: "V0333_FAMILY_SWABLU";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0353_family_shuppetEntry {
+  templateId: "V0353_FAMILY_SHUPPET";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0359_family_absolEntry {
+  templateId: "V0359_FAMILY_ABSOL";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0361_family_snoruntEntry {
+  templateId: "V0361_FAMILY_SNORUNT";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0371_family_bagonEntry {
+  templateId: "V0371_FAMILY_BAGON";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0374_family_beldumEntry {
+  templateId: "V0374_FAMILY_BELDUM";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0380_family_latiasEntry {
+  templateId: "V0380_FAMILY_LATIAS";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0381_family_latiosEntry {
+  templateId: "V0381_FAMILY_LATIOS";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0382_family_kyogreEntry {
+  templateId: "V0382_FAMILY_KYOGRE";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0383_family_groudonEntry {
+  templateId: "V0383_FAMILY_GROUDON";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0384_family_rayquazaEntry {
+  templateId: "V0384_FAMILY_RAYQUAZA";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0427_family_bunearyEntry {
+  templateId: "V0427_FAMILY_BUNEARY";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0443_family_gibleEntry {
+  templateId: "V0443_FAMILY_GIBLE";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0448_family_lucarioEntry {
+  templateId: "V0448_FAMILY_LUCARIO";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0459_family_snoverEntry {
+  templateId: "V0459_FAMILY_SNOVER";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0531_family_audinoEntry {
+  templateId: "V0531_FAMILY_AUDINO";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0686_family_inkayEntry {
+  templateId: "V0686_FAMILY_INKAY";
+  data: V0001_family_bulbasaurdata;
+}
+export interface V0719_family_diancieEntry {
+  templateId: "V0719_FAMILY_DIANCIE";
+  data: V0001_family_bulbasaurdata;
+}
 export interface V0010_family_caterpiedatapokemonfamily {
   candyPerXlCandy: number;
   familyId: string;
@@ -37,14 +217,6 @@ export interface V0010_family_caterpiedata {
 export interface V0010_family_caterpieEntry {
   templateId: "V0010_FAMILY_CATERPIE";
   data: V0010_family_caterpiedata;
-}
-export interface V0013_family_weedleEntry {
-  templateId: "V0013_FAMILY_WEEDLE";
-  data: V0001_family_bulbasaurdata;
-}
-export interface V0016_family_pidgeyEntry {
-  templateId: "V0016_FAMILY_PIDGEY";
-  data: V0001_family_bulbasaurdata;
 }
 export interface V0019_family_rattataEntry {
   templateId: "V0019_FAMILY_RATTATA";
@@ -126,17 +298,9 @@ export interface V0060_family_poliwagEntry {
   templateId: "V0060_FAMILY_POLIWAG";
   data: V0010_family_caterpiedata;
 }
-export interface V0063_family_abraEntry {
-  templateId: "V0063_FAMILY_ABRA";
-  data: V0001_family_bulbasaurdata;
-}
 export interface V0066_family_machopEntry {
   templateId: "V0066_FAMILY_MACHOP";
   data: V0010_family_caterpiedata;
-}
-export interface V0069_family_bellsproutEntry {
-  templateId: "V0069_FAMILY_BELLSPROUT";
-  data: V0001_family_bulbasaurdata;
 }
 export interface V0072_family_tentacoolEntry {
   templateId: "V0072_FAMILY_TENTACOOL";
@@ -149,10 +313,6 @@ export interface V0074_family_geodudeEntry {
 export interface V0077_family_ponytaEntry {
   templateId: "V0077_FAMILY_PONYTA";
   data: V0010_family_caterpiedata;
-}
-export interface V0079_family_slowpokeEntry {
-  templateId: "V0079_FAMILY_SLOWPOKE";
-  data: V0001_family_bulbasaurdata;
 }
 export interface V0081_family_magnemiteEntry {
   templateId: "V0081_FAMILY_MAGNEMITE";
@@ -177,14 +337,6 @@ export interface V0088_family_grimerEntry {
 export interface V0090_family_shellderEntry {
   templateId: "V0090_FAMILY_SHELLDER";
   data: V0010_family_caterpiedata;
-}
-export interface V0092_family_gastlyEntry {
-  templateId: "V0092_FAMILY_GASTLY";
-  data: V0001_family_bulbasaurdata;
-}
-export interface V0095_family_onixEntry {
-  templateId: "V0095_FAMILY_ONIX";
-  data: V0001_family_bulbasaurdata;
 }
 export interface V0096_family_drowzeeEntry {
   templateId: "V0096_FAMILY_DROWZEE";
@@ -226,10 +378,6 @@ export interface V0114_family_tangelaEntry {
   templateId: "V0114_FAMILY_TANGELA";
   data: V0010_family_caterpiedata;
 }
-export interface V0115_family_kangaskhanEntry {
-  templateId: "V0115_FAMILY_KANGASKHAN";
-  data: V0001_family_bulbasaurdata;
-}
 export interface V0116_family_horseaEntry {
   templateId: "V0116_FAMILY_HORSEA";
   data: V0010_family_caterpiedata;
@@ -246,10 +394,6 @@ export interface V0122_family_mr_mimeEntry {
   templateId: "V0122_FAMILY_MR_MIME";
   data: V0010_family_caterpiedata;
 }
-export interface V0123_family_scytherEntry {
-  templateId: "V0123_FAMILY_SCYTHER";
-  data: V0001_family_bulbasaurdata;
-}
 export interface V0124_family_jynxEntry {
   templateId: "V0124_FAMILY_JYNX";
   data: V0010_family_caterpiedata;
@@ -262,17 +406,9 @@ export interface V0126_family_magmarEntry {
   templateId: "V0126_FAMILY_MAGMAR";
   data: V0010_family_caterpiedata;
 }
-export interface V0127_family_pinsirEntry {
-  templateId: "V0127_FAMILY_PINSIR";
-  data: V0001_family_bulbasaurdata;
-}
 export interface V0128_family_taurosEntry {
   templateId: "V0128_FAMILY_TAUROS";
   data: V0010_family_caterpiedata;
-}
-export interface V0129_family_magikarpEntry {
-  templateId: "V0129_FAMILY_MAGIKARP";
-  data: V0001_family_bulbasaurdata;
 }
 export interface V0131_family_laprasEntry {
   templateId: "V0131_FAMILY_LAPRAS";
@@ -298,10 +434,6 @@ export interface V0140_family_kabutoEntry {
   templateId: "V0140_FAMILY_KABUTO";
   data: V0010_family_caterpiedata;
 }
-export interface V0142_family_aerodactylEntry {
-  templateId: "V0142_FAMILY_AERODACTYL";
-  data: V0001_family_bulbasaurdata;
-}
 export interface V0143_family_snorlaxEntry {
   templateId: "V0143_FAMILY_SNORLAX";
   data: V0010_family_caterpiedata;
@@ -317,10 +449,6 @@ export interface V0145_family_zapdosEntry {
 export interface V0146_family_moltresEntry {
   templateId: "V0146_FAMILY_MOLTRES";
   data: V0010_family_caterpiedata;
-}
-export interface V0147_family_dratiniEntry {
-  templateId: "V0147_FAMILY_DRATINI";
-  data: V0001_family_bulbasaurdata;
 }
 export interface V0150_family_mewtwoEntry {
   templateId: "V0150_FAMILY_MEWTWO";
@@ -369,10 +497,6 @@ export interface V0175_family_togepiEntry {
 export interface V0177_family_natuEntry {
   templateId: "V0177_FAMILY_NATU";
   data: V0010_family_caterpiedata;
-}
-export interface V0179_family_mareepEntry {
-  templateId: "V0179_FAMILY_MAREEP";
-  data: V0001_family_bulbasaurdata;
 }
 export interface V0183_family_marillEntry {
   templateId: "V0183_FAMILY_MARILL";
@@ -446,10 +570,6 @@ export interface V0213_family_shuckleEntry {
   templateId: "V0213_FAMILY_SHUCKLE";
   data: V0010_family_caterpiedata;
 }
-export interface V0214_family_heracrossEntry {
-  templateId: "V0214_FAMILY_HERACROSS";
-  data: V0001_family_bulbasaurdata;
-}
 export interface V0215_family_sneaselEntry {
   templateId: "V0215_FAMILY_SNEASEL";
   data: V0010_family_caterpiedata;
@@ -486,10 +606,6 @@ export interface V0227_family_skarmoryEntry {
   templateId: "V0227_FAMILY_SKARMORY";
   data: V0010_family_caterpiedata;
 }
-export interface V0228_family_houndourEntry {
-  templateId: "V0228_FAMILY_HOUNDOUR";
-  data: V0001_family_bulbasaurdata;
-}
 export interface V0231_family_phanpyEntry {
   templateId: "V0231_FAMILY_PHANPY";
   data: V0010_family_caterpiedata;
@@ -522,10 +638,6 @@ export interface V0245_family_suicuneEntry {
   templateId: "V0245_FAMILY_SUICUNE";
   data: V0010_family_caterpiedata;
 }
-export interface V0246_family_larvitarEntry {
-  templateId: "V0246_FAMILY_LARVITAR";
-  data: V0001_family_bulbasaurdata;
-}
 export interface V0249_family_lugiaEntry {
   templateId: "V0249_FAMILY_LUGIA";
   data: V0010_family_caterpiedata;
@@ -537,18 +649,6 @@ export interface V0250_family_ho_ohEntry {
 export interface V0251_family_celebiEntry {
   templateId: "V0251_FAMILY_CELEBI";
   data: V0010_family_caterpiedata;
-}
-export interface V0252_family_treeckoEntry {
-  templateId: "V0252_FAMILY_TREECKO";
-  data: V0001_family_bulbasaurdata;
-}
-export interface V0255_family_torchicEntry {
-  templateId: "V0255_FAMILY_TORCHIC";
-  data: V0001_family_bulbasaurdata;
-}
-export interface V0258_family_mudkipEntry {
-  templateId: "V0258_FAMILY_MUDKIP";
-  data: V0001_family_bulbasaurdata;
 }
 export interface V0261_family_poochyenaEntry {
   templateId: "V0261_FAMILY_POOCHYENA";
@@ -577,19 +677,6 @@ export interface V0276_family_taillowEntry {
 export interface V0278_family_wingullEntry {
   templateId: "V0278_FAMILY_WINGULL";
   data: V0010_family_caterpiedata;
-}
-export interface V0280_family_raltsdatapokemonfamily {
-  candyPerXlCandy: number;
-  familyId: string;
-  megaEvolvablePokemonIds: (string)[];
-}
-export interface V0280_family_raltsdata {
-  pokemonFamily: V0280_family_raltsdatapokemonfamily;
-  templateId: string;
-}
-export interface V0280_family_raltsEntry {
-  templateId: "V0280_FAMILY_RALTS";
-  data: V0280_family_raltsdata;
 }
 export interface V0283_family_surskitEntry {
   templateId: "V0283_FAMILY_SURSKIT";
@@ -623,26 +710,6 @@ export interface V0300_family_skittyEntry {
   templateId: "V0300_FAMILY_SKITTY";
   data: V0010_family_caterpiedata;
 }
-export interface V0302_family_sableyeEntry {
-  templateId: "V0302_FAMILY_SABLEYE";
-  data: V0001_family_bulbasaurdata;
-}
-export interface V0303_family_mawileEntry {
-  templateId: "V0303_FAMILY_MAWILE";
-  data: V0001_family_bulbasaurdata;
-}
-export interface V0304_family_aronEntry {
-  templateId: "V0304_FAMILY_ARON";
-  data: V0001_family_bulbasaurdata;
-}
-export interface V0307_family_medititeEntry {
-  templateId: "V0307_FAMILY_MEDITITE";
-  data: V0001_family_bulbasaurdata;
-}
-export interface V0309_family_electrikeEntry {
-  templateId: "V0309_FAMILY_ELECTRIKE";
-  data: V0001_family_bulbasaurdata;
-}
 export interface V0311_family_plusleEntry {
   templateId: "V0311_FAMILY_PLUSLE";
   data: V0010_family_caterpiedata;
@@ -667,17 +734,9 @@ export interface V0316_family_gulpinEntry {
   templateId: "V0316_FAMILY_GULPIN";
   data: V0010_family_caterpiedata;
 }
-export interface V0318_family_carvanhaEntry {
-  templateId: "V0318_FAMILY_CARVANHA";
-  data: V0001_family_bulbasaurdata;
-}
 export interface V0320_family_wailmerEntry {
   templateId: "V0320_FAMILY_WAILMER";
   data: V0010_family_caterpiedata;
-}
-export interface V0322_family_numelEntry {
-  templateId: "V0322_FAMILY_NUMEL";
-  data: V0001_family_bulbasaurdata;
 }
 export interface V0324_family_torkoalEntry {
   templateId: "V0324_FAMILY_TORKOAL";
@@ -698,10 +757,6 @@ export interface V0328_family_trapinchEntry {
 export interface V0331_family_cacneaEntry {
   templateId: "V0331_FAMILY_CACNEA";
   data: V0010_family_caterpiedata;
-}
-export interface V0333_family_swabluEntry {
-  templateId: "V0333_FAMILY_SWABLU";
-  data: V0001_family_bulbasaurdata;
 }
 export interface V0335_family_zangooseEntry {
   templateId: "V0335_FAMILY_ZANGOOSE";
@@ -751,10 +806,6 @@ export interface V0352_family_kecleonEntry {
   templateId: "V0352_FAMILY_KECLEON";
   data: V0010_family_caterpiedata;
 }
-export interface V0353_family_shuppetEntry {
-  templateId: "V0353_FAMILY_SHUPPET";
-  data: V0001_family_bulbasaurdata;
-}
 export interface V0355_family_duskullEntry {
   templateId: "V0355_FAMILY_DUSKULL";
   data: V0010_family_caterpiedata;
@@ -766,14 +817,6 @@ export interface V0357_family_tropiusEntry {
 export interface V0358_family_chimechoEntry {
   templateId: "V0358_FAMILY_CHIMECHO";
   data: V0010_family_caterpiedata;
-}
-export interface V0359_family_absolEntry {
-  templateId: "V0359_FAMILY_ABSOL";
-  data: V0001_family_bulbasaurdata;
-}
-export interface V0361_family_snoruntEntry {
-  templateId: "V0361_FAMILY_SNORUNT";
-  data: V0001_family_bulbasaurdata;
 }
 export interface V0363_family_sphealEntry {
   templateId: "V0363_FAMILY_SPHEAL";
@@ -791,14 +834,6 @@ export interface V0370_family_luvdiscEntry {
   templateId: "V0370_FAMILY_LUVDISC";
   data: V0010_family_caterpiedata;
 }
-export interface V0371_family_bagonEntry {
-  templateId: "V0371_FAMILY_BAGON";
-  data: V0001_family_bulbasaurdata;
-}
-export interface V0374_family_beldumEntry {
-  templateId: "V0374_FAMILY_BELDUM";
-  data: V0001_family_bulbasaurdata;
-}
 export interface V0377_family_regirockEntry {
   templateId: "V0377_FAMILY_REGIROCK";
   data: V0010_family_caterpiedata;
@@ -810,26 +845,6 @@ export interface V0378_family_regiceEntry {
 export interface V0379_family_registeelEntry {
   templateId: "V0379_FAMILY_REGISTEEL";
   data: V0010_family_caterpiedata;
-}
-export interface V0380_family_latiasEntry {
-  templateId: "V0380_FAMILY_LATIAS";
-  data: V0001_family_bulbasaurdata;
-}
-export interface V0381_family_latiosEntry {
-  templateId: "V0381_FAMILY_LATIOS";
-  data: V0001_family_bulbasaurdata;
-}
-export interface V0382_family_kyogreEntry {
-  templateId: "V0382_FAMILY_KYOGRE";
-  data: V0001_family_bulbasaurdata;
-}
-export interface V0383_family_groudonEntry {
-  templateId: "V0383_FAMILY_GROUDON";
-  data: V0001_family_bulbasaurdata;
-}
-export interface V0384_family_rayquazaEntry {
-  templateId: "V0384_FAMILY_RAYQUAZA";
-  data: V0001_family_bulbasaurdata;
 }
 export interface V0385_family_jirachiEntry {
   templateId: "V0385_FAMILY_JIRACHI";
@@ -903,10 +918,6 @@ export interface V0425_family_drifloonEntry {
   templateId: "V0425_FAMILY_DRIFLOON";
   data: V0010_family_caterpiedata;
 }
-export interface V0427_family_bunearyEntry {
-  templateId: "V0427_FAMILY_BUNEARY";
-  data: V0001_family_bulbasaurdata;
-}
 export interface V0431_family_glameowEntry {
   templateId: "V0431_FAMILY_GLAMEOW";
   data: V0010_family_caterpiedata;
@@ -927,14 +938,6 @@ export interface V0442_family_spiritombEntry {
   templateId: "V0442_FAMILY_SPIRITOMB";
   data: V0010_family_caterpiedata;
 }
-export interface V0443_family_gibleEntry {
-  templateId: "V0443_FAMILY_GIBLE";
-  data: V0001_family_bulbasaurdata;
-}
-export interface V0448_family_lucarioEntry {
-  templateId: "V0448_FAMILY_LUCARIO";
-  data: V0001_family_bulbasaurdata;
-}
 export interface V0449_family_hippopotasEntry {
   templateId: "V0449_FAMILY_HIPPOPOTAS";
   data: V0010_family_caterpiedata;
@@ -954,10 +957,6 @@ export interface V0455_family_carnivineEntry {
 export interface V0456_family_finneonEntry {
   templateId: "V0456_FAMILY_FINNEON";
   data: V0010_family_caterpiedata;
-}
-export interface V0459_family_snoverEntry {
-  templateId: "V0459_FAMILY_SNOVER";
-  data: V0001_family_bulbasaurdata;
 }
 export interface V0479_family_rotomEntry {
   templateId: "V0479_FAMILY_ROTOM";
@@ -1082,10 +1081,6 @@ export interface V0527_family_woobatEntry {
 export interface V0529_family_drilburEntry {
   templateId: "V0529_FAMILY_DRILBUR";
   data: V0010_family_caterpiedata;
-}
-export interface V0531_family_audinoEntry {
-  templateId: "V0531_FAMILY_AUDINO";
-  data: V0001_family_bulbasaurdata;
 }
 export interface V0532_family_timburrEntry {
   templateId: "V0532_FAMILY_TIMBURR";
@@ -1407,10 +1402,6 @@ export interface V0684_family_swirlixEntry {
   templateId: "V0684_FAMILY_SWIRLIX";
   data: V0010_family_caterpiedata;
 }
-export interface V0686_family_inkayEntry {
-  templateId: "V0686_FAMILY_INKAY";
-  data: V0001_family_bulbasaurdata;
-}
 export interface V0688_family_binacleEntry {
   templateId: "V0688_FAMILY_BINACLE";
   data: V0010_family_caterpiedata;
@@ -1482,10 +1473,6 @@ export interface V0717_family_yveltalEntry {
 export interface V0718_family_zygardeEntry {
   templateId: "V0718_FAMILY_ZYGARDE";
   data: V0010_family_caterpiedata;
-}
-export interface V0719_family_diancieEntry {
-  templateId: "V0719_FAMILY_DIANCIE";
-  data: V0001_family_bulbasaurdata;
 }
 export interface V0720_family_hoopaEntry {
   templateId: "V0720_FAMILY_HOOPA";
@@ -2195,14 +2182,70 @@ export interface V1025_family_pecharuntEntry {
   templateId: "V1025_FAMILY_PECHARUNT";
   data: V0010_family_caterpiedata;
 }
+export interface V0280_family_raltsdatapokemonfamily {
+  candyPerXlCandy: number;
+  familyId: string;
+  megaEvolvablePokemonIds: (string)[];
+}
+export interface V0280_family_raltsdata {
+  pokemonFamily: V0280_family_raltsdatapokemonfamily;
+  templateId: string;
+}
+export interface V0280_family_raltsEntry {
+  templateId: "V0280_FAMILY_RALTS";
+  data: V0280_family_raltsdata;
+}
 
 export interface PokemonFamilyMasterfileByTemplateId {
   "V0001_FAMILY_BULBASAUR": V0001_family_bulbasaurEntry;
   "V0004_FAMILY_CHARMANDER": V0004_family_charmanderEntry;
   "V0007_FAMILY_SQUIRTLE": V0007_family_squirtleEntry;
-  "V0010_FAMILY_CATERPIE": V0010_family_caterpieEntry;
   "V0013_FAMILY_WEEDLE": V0013_family_weedleEntry;
   "V0016_FAMILY_PIDGEY": V0016_family_pidgeyEntry;
+  "V0063_FAMILY_ABRA": V0063_family_abraEntry;
+  "V0069_FAMILY_BELLSPROUT": V0069_family_bellsproutEntry;
+  "V0079_FAMILY_SLOWPOKE": V0079_family_slowpokeEntry;
+  "V0092_FAMILY_GASTLY": V0092_family_gastlyEntry;
+  "V0095_FAMILY_ONIX": V0095_family_onixEntry;
+  "V0115_FAMILY_KANGASKHAN": V0115_family_kangaskhanEntry;
+  "V0123_FAMILY_SCYTHER": V0123_family_scytherEntry;
+  "V0127_FAMILY_PINSIR": V0127_family_pinsirEntry;
+  "V0129_FAMILY_MAGIKARP": V0129_family_magikarpEntry;
+  "V0142_FAMILY_AERODACTYL": V0142_family_aerodactylEntry;
+  "V0147_FAMILY_DRATINI": V0147_family_dratiniEntry;
+  "V0179_FAMILY_MAREEP": V0179_family_mareepEntry;
+  "V0214_FAMILY_HERACROSS": V0214_family_heracrossEntry;
+  "V0228_FAMILY_HOUNDOUR": V0228_family_houndourEntry;
+  "V0246_FAMILY_LARVITAR": V0246_family_larvitarEntry;
+  "V0252_FAMILY_TREECKO": V0252_family_treeckoEntry;
+  "V0255_FAMILY_TORCHIC": V0255_family_torchicEntry;
+  "V0258_FAMILY_MUDKIP": V0258_family_mudkipEntry;
+  "V0302_FAMILY_SABLEYE": V0302_family_sableyeEntry;
+  "V0303_FAMILY_MAWILE": V0303_family_mawileEntry;
+  "V0304_FAMILY_ARON": V0304_family_aronEntry;
+  "V0307_FAMILY_MEDITITE": V0307_family_medititeEntry;
+  "V0309_FAMILY_ELECTRIKE": V0309_family_electrikeEntry;
+  "V0318_FAMILY_CARVANHA": V0318_family_carvanhaEntry;
+  "V0322_FAMILY_NUMEL": V0322_family_numelEntry;
+  "V0333_FAMILY_SWABLU": V0333_family_swabluEntry;
+  "V0353_FAMILY_SHUPPET": V0353_family_shuppetEntry;
+  "V0359_FAMILY_ABSOL": V0359_family_absolEntry;
+  "V0361_FAMILY_SNORUNT": V0361_family_snoruntEntry;
+  "V0371_FAMILY_BAGON": V0371_family_bagonEntry;
+  "V0374_FAMILY_BELDUM": V0374_family_beldumEntry;
+  "V0380_FAMILY_LATIAS": V0380_family_latiasEntry;
+  "V0381_FAMILY_LATIOS": V0381_family_latiosEntry;
+  "V0382_FAMILY_KYOGRE": V0382_family_kyogreEntry;
+  "V0383_FAMILY_GROUDON": V0383_family_groudonEntry;
+  "V0384_FAMILY_RAYQUAZA": V0384_family_rayquazaEntry;
+  "V0427_FAMILY_BUNEARY": V0427_family_bunearyEntry;
+  "V0443_FAMILY_GIBLE": V0443_family_gibleEntry;
+  "V0448_FAMILY_LUCARIO": V0448_family_lucarioEntry;
+  "V0459_FAMILY_SNOVER": V0459_family_snoverEntry;
+  "V0531_FAMILY_AUDINO": V0531_family_audinoEntry;
+  "V0686_FAMILY_INKAY": V0686_family_inkayEntry;
+  "V0719_FAMILY_DIANCIE": V0719_family_diancieEntry;
+  "V0010_FAMILY_CATERPIE": V0010_family_caterpieEntry;
   "V0019_FAMILY_RATTATA": V0019_family_rattataEntry;
   "V0021_FAMILY_SPEAROW": V0021_family_spearowEntry;
   "V0023_FAMILY_EKANS": V0023_family_ekansEntry;
@@ -2223,21 +2266,16 @@ export interface PokemonFamilyMasterfileByTemplateId {
   "V0056_FAMILY_MANKEY": V0056_family_mankeyEntry;
   "V0058_FAMILY_GROWLITHE": V0058_family_growlitheEntry;
   "V0060_FAMILY_POLIWAG": V0060_family_poliwagEntry;
-  "V0063_FAMILY_ABRA": V0063_family_abraEntry;
   "V0066_FAMILY_MACHOP": V0066_family_machopEntry;
-  "V0069_FAMILY_BELLSPROUT": V0069_family_bellsproutEntry;
   "V0072_FAMILY_TENTACOOL": V0072_family_tentacoolEntry;
   "V0074_FAMILY_GEODUDE": V0074_family_geodudeEntry;
   "V0077_FAMILY_PONYTA": V0077_family_ponytaEntry;
-  "V0079_FAMILY_SLOWPOKE": V0079_family_slowpokeEntry;
   "V0081_FAMILY_MAGNEMITE": V0081_family_magnemiteEntry;
   "V0083_FAMILY_FARFETCHD": V0083_family_farfetchdEntry;
   "V0084_FAMILY_DODUO": V0084_family_doduoEntry;
   "V0086_FAMILY_SEEL": V0086_family_seelEntry;
   "V0088_FAMILY_GRIMER": V0088_family_grimerEntry;
   "V0090_FAMILY_SHELLDER": V0090_family_shellderEntry;
-  "V0092_FAMILY_GASTLY": V0092_family_gastlyEntry;
-  "V0095_FAMILY_ONIX": V0095_family_onixEntry;
   "V0096_FAMILY_DROWZEE": V0096_family_drowzeeEntry;
   "V0098_FAMILY_KRABBY": V0098_family_krabbyEntry;
   "V0100_FAMILY_VOLTORB": V0100_family_voltorbEntry;
@@ -2248,30 +2286,24 @@ export interface PokemonFamilyMasterfileByTemplateId {
   "V0111_FAMILY_RHYHORN": V0111_family_rhyhornEntry;
   "V0113_FAMILY_CHANSEY": V0113_family_chanseyEntry;
   "V0114_FAMILY_TANGELA": V0114_family_tangelaEntry;
-  "V0115_FAMILY_KANGASKHAN": V0115_family_kangaskhanEntry;
   "V0116_FAMILY_HORSEA": V0116_family_horseaEntry;
   "V0118_FAMILY_GOLDEEN": V0118_family_goldeenEntry;
   "V0120_FAMILY_STARYU": V0120_family_staryuEntry;
   "V0122_FAMILY_MR_MIME": V0122_family_mr_mimeEntry;
-  "V0123_FAMILY_SCYTHER": V0123_family_scytherEntry;
   "V0124_FAMILY_JYNX": V0124_family_jynxEntry;
   "V0125_FAMILY_ELECTABUZZ": V0125_family_electabuzzEntry;
   "V0126_FAMILY_MAGMAR": V0126_family_magmarEntry;
-  "V0127_FAMILY_PINSIR": V0127_family_pinsirEntry;
   "V0128_FAMILY_TAUROS": V0128_family_taurosEntry;
-  "V0129_FAMILY_MAGIKARP": V0129_family_magikarpEntry;
   "V0131_FAMILY_LAPRAS": V0131_family_laprasEntry;
   "V0132_FAMILY_DITTO": V0132_family_dittoEntry;
   "V0133_FAMILY_EEVEE": V0133_family_eeveeEntry;
   "V0137_FAMILY_PORYGON": V0137_family_porygonEntry;
   "V0138_FAMILY_OMANYTE": V0138_family_omanyteEntry;
   "V0140_FAMILY_KABUTO": V0140_family_kabutoEntry;
-  "V0142_FAMILY_AERODACTYL": V0142_family_aerodactylEntry;
   "V0143_FAMILY_SNORLAX": V0143_family_snorlaxEntry;
   "V0144_FAMILY_ARTICUNO": V0144_family_articunoEntry;
   "V0145_FAMILY_ZAPDOS": V0145_family_zapdosEntry;
   "V0146_FAMILY_MOLTRES": V0146_family_moltresEntry;
-  "V0147_FAMILY_DRATINI": V0147_family_dratiniEntry;
   "V0150_FAMILY_MEWTWO": V0150_family_mewtwoEntry;
   "V0151_FAMILY_MEW": V0151_family_mewEntry;
   "V0152_FAMILY_CHIKORITA": V0152_family_chikoritaEntry;
@@ -2284,7 +2316,6 @@ export interface PokemonFamilyMasterfileByTemplateId {
   "V0170_FAMILY_CHINCHOU": V0170_family_chinchouEntry;
   "V0175_FAMILY_TOGEPI": V0175_family_togepiEntry;
   "V0177_FAMILY_NATU": V0177_family_natuEntry;
-  "V0179_FAMILY_MAREEP": V0179_family_mareepEntry;
   "V0183_FAMILY_MARILL": V0183_family_marillEntry;
   "V0185_FAMILY_SUDOWOODO": V0185_family_sudowoodoEntry;
   "V0187_FAMILY_HOPPIP": V0187_family_hoppipEntry;
@@ -2303,7 +2334,6 @@ export interface PokemonFamilyMasterfileByTemplateId {
   "V0209_FAMILY_SNUBBULL": V0209_family_snubbullEntry;
   "V0211_FAMILY_QWILFISH": V0211_family_qwilfishEntry;
   "V0213_FAMILY_SHUCKLE": V0213_family_shuckleEntry;
-  "V0214_FAMILY_HERACROSS": V0214_family_heracrossEntry;
   "V0215_FAMILY_SNEASEL": V0215_family_sneaselEntry;
   "V0216_FAMILY_TEDDIURSA": V0216_family_teddiursaEntry;
   "V0218_FAMILY_SLUGMA": V0218_family_slugmaEntry;
@@ -2313,7 +2343,6 @@ export interface PokemonFamilyMasterfileByTemplateId {
   "V0225_FAMILY_DELIBIRD": V0225_family_delibirdEntry;
   "V0226_FAMILY_MANTINE": V0226_family_mantineEntry;
   "V0227_FAMILY_SKARMORY": V0227_family_skarmoryEntry;
-  "V0228_FAMILY_HOUNDOUR": V0228_family_houndourEntry;
   "V0231_FAMILY_PHANPY": V0231_family_phanpyEntry;
   "V0234_FAMILY_STANTLER": V0234_family_stantlerEntry;
   "V0235_FAMILY_SMEARGLE": V0235_family_smeargleEntry;
@@ -2322,13 +2351,9 @@ export interface PokemonFamilyMasterfileByTemplateId {
   "V0243_FAMILY_RAIKOU": V0243_family_raikouEntry;
   "V0244_FAMILY_ENTEI": V0244_family_enteiEntry;
   "V0245_FAMILY_SUICUNE": V0245_family_suicuneEntry;
-  "V0246_FAMILY_LARVITAR": V0246_family_larvitarEntry;
   "V0249_FAMILY_LUGIA": V0249_family_lugiaEntry;
   "V0250_FAMILY_HO_OH": V0250_family_ho_ohEntry;
   "V0251_FAMILY_CELEBI": V0251_family_celebiEntry;
-  "V0252_FAMILY_TREECKO": V0252_family_treeckoEntry;
-  "V0255_FAMILY_TORCHIC": V0255_family_torchicEntry;
-  "V0258_FAMILY_MUDKIP": V0258_family_mudkipEntry;
   "V0261_FAMILY_POOCHYENA": V0261_family_poochyenaEntry;
   "V0263_FAMILY_ZIGZAGOON": V0263_family_zigzagoonEntry;
   "V0265_FAMILY_WURMPLE": V0265_family_wurmpleEntry;
@@ -2336,7 +2361,6 @@ export interface PokemonFamilyMasterfileByTemplateId {
   "V0273_FAMILY_SEEDOT": V0273_family_seedotEntry;
   "V0276_FAMILY_TAILLOW": V0276_family_taillowEntry;
   "V0278_FAMILY_WINGULL": V0278_family_wingullEntry;
-  "V0280_FAMILY_RALTS": V0280_family_raltsEntry;
   "V0283_FAMILY_SURSKIT": V0283_family_surskitEntry;
   "V0285_FAMILY_SHROOMISH": V0285_family_shroomishEntry;
   "V0287_FAMILY_SLAKOTH": V0287_family_slakothEntry;
@@ -2345,26 +2369,18 @@ export interface PokemonFamilyMasterfileByTemplateId {
   "V0296_FAMILY_MAKUHITA": V0296_family_makuhitaEntry;
   "V0299_FAMILY_NOSEPASS": V0299_family_nosepassEntry;
   "V0300_FAMILY_SKITTY": V0300_family_skittyEntry;
-  "V0302_FAMILY_SABLEYE": V0302_family_sableyeEntry;
-  "V0303_FAMILY_MAWILE": V0303_family_mawileEntry;
-  "V0304_FAMILY_ARON": V0304_family_aronEntry;
-  "V0307_FAMILY_MEDITITE": V0307_family_medititeEntry;
-  "V0309_FAMILY_ELECTRIKE": V0309_family_electrikeEntry;
   "V0311_FAMILY_PLUSLE": V0311_family_plusleEntry;
   "V0312_FAMILY_MINUN": V0312_family_minunEntry;
   "V0313_FAMILY_VOLBEAT": V0313_family_volbeatEntry;
   "V0314_FAMILY_ILLUMISE": V0314_family_illumiseEntry;
   "V0315_FAMILY_ROSELIA": V0315_family_roseliaEntry;
   "V0316_FAMILY_GULPIN": V0316_family_gulpinEntry;
-  "V0318_FAMILY_CARVANHA": V0318_family_carvanhaEntry;
   "V0320_FAMILY_WAILMER": V0320_family_wailmerEntry;
-  "V0322_FAMILY_NUMEL": V0322_family_numelEntry;
   "V0324_FAMILY_TORKOAL": V0324_family_torkoalEntry;
   "V0325_FAMILY_SPOINK": V0325_family_spoinkEntry;
   "V0327_FAMILY_SPINDA": V0327_family_spindaEntry;
   "V0328_FAMILY_TRAPINCH": V0328_family_trapinchEntry;
   "V0331_FAMILY_CACNEA": V0331_family_cacneaEntry;
-  "V0333_FAMILY_SWABLU": V0333_family_swabluEntry;
   "V0335_FAMILY_ZANGOOSE": V0335_family_zangooseEntry;
   "V0336_FAMILY_SEVIPER": V0336_family_seviperEntry;
   "V0337_FAMILY_LUNATONE": V0337_family_lunatoneEntry;
@@ -2377,26 +2393,16 @@ export interface PokemonFamilyMasterfileByTemplateId {
   "V0349_FAMILY_FEEBAS": V0349_family_feebasEntry;
   "V0351_FAMILY_CASTFORM": V0351_family_castformEntry;
   "V0352_FAMILY_KECLEON": V0352_family_kecleonEntry;
-  "V0353_FAMILY_SHUPPET": V0353_family_shuppetEntry;
   "V0355_FAMILY_DUSKULL": V0355_family_duskullEntry;
   "V0357_FAMILY_TROPIUS": V0357_family_tropiusEntry;
   "V0358_FAMILY_CHIMECHO": V0358_family_chimechoEntry;
-  "V0359_FAMILY_ABSOL": V0359_family_absolEntry;
-  "V0361_FAMILY_SNORUNT": V0361_family_snoruntEntry;
   "V0363_FAMILY_SPHEAL": V0363_family_sphealEntry;
   "V0366_FAMILY_CLAMPERL": V0366_family_clamperlEntry;
   "V0369_FAMILY_RELICANTH": V0369_family_relicanthEntry;
   "V0370_FAMILY_LUVDISC": V0370_family_luvdiscEntry;
-  "V0371_FAMILY_BAGON": V0371_family_bagonEntry;
-  "V0374_FAMILY_BELDUM": V0374_family_beldumEntry;
   "V0377_FAMILY_REGIROCK": V0377_family_regirockEntry;
   "V0378_FAMILY_REGICE": V0378_family_regiceEntry;
   "V0379_FAMILY_REGISTEEL": V0379_family_registeelEntry;
-  "V0380_FAMILY_LATIAS": V0380_family_latiasEntry;
-  "V0381_FAMILY_LATIOS": V0381_family_latiosEntry;
-  "V0382_FAMILY_KYOGRE": V0382_family_kyogreEntry;
-  "V0383_FAMILY_GROUDON": V0383_family_groudonEntry;
-  "V0384_FAMILY_RAYQUAZA": V0384_family_rayquazaEntry;
   "V0385_FAMILY_JIRACHI": V0385_family_jirachiEntry;
   "V0386_FAMILY_DEOXYS": V0386_family_deoxysEntry;
   "V0387_FAMILY_TURTWIG": V0387_family_turtwigEntry;
@@ -2415,20 +2421,16 @@ export interface PokemonFamilyMasterfileByTemplateId {
   "V0420_FAMILY_CHERUBI": V0420_family_cherubiEntry;
   "V0422_FAMILY_SHELLOS": V0422_family_shellosEntry;
   "V0425_FAMILY_DRIFLOON": V0425_family_drifloonEntry;
-  "V0427_FAMILY_BUNEARY": V0427_family_bunearyEntry;
   "V0431_FAMILY_GLAMEOW": V0431_family_glameowEntry;
   "V0434_FAMILY_STUNKY": V0434_family_stunkyEntry;
   "V0436_FAMILY_BRONZOR": V0436_family_bronzorEntry;
   "V0441_FAMILY_CHATOT": V0441_family_chatotEntry;
   "V0442_FAMILY_SPIRITOMB": V0442_family_spiritombEntry;
-  "V0443_FAMILY_GIBLE": V0443_family_gibleEntry;
-  "V0448_FAMILY_LUCARIO": V0448_family_lucarioEntry;
   "V0449_FAMILY_HIPPOPOTAS": V0449_family_hippopotasEntry;
   "V0451_FAMILY_SKORUPI": V0451_family_skorupiEntry;
   "V0453_FAMILY_CROAGUNK": V0453_family_croagunkEntry;
   "V0455_FAMILY_CARNIVINE": V0455_family_carnivineEntry;
   "V0456_FAMILY_FINNEON": V0456_family_finneonEntry;
-  "V0459_FAMILY_SNOVER": V0459_family_snoverEntry;
   "V0479_FAMILY_ROTOM": V0479_family_rotomEntry;
   "V0480_FAMILY_UXIE": V0480_family_uxieEntry;
   "V0481_FAMILY_MESPRIT": V0481_family_mespritEntry;
@@ -2460,7 +2462,6 @@ export interface PokemonFamilyMasterfileByTemplateId {
   "V0524_FAMILY_ROGGENROLA": V0524_family_roggenrolaEntry;
   "V0527_FAMILY_WOOBAT": V0527_family_woobatEntry;
   "V0529_FAMILY_DRILBUR": V0529_family_drilburEntry;
-  "V0531_FAMILY_AUDINO": V0531_family_audinoEntry;
   "V0532_FAMILY_TIMBURR": V0532_family_timburrEntry;
   "V0535_FAMILY_TYMPOLE": V0535_family_tympoleEntry;
   "V0538_FAMILY_THROH": V0538_family_throhEntry;
@@ -2541,7 +2542,6 @@ export interface PokemonFamilyMasterfileByTemplateId {
   "V0679_FAMILY_HONEDGE": V0679_family_honedgeEntry;
   "V0682_FAMILY_SPRITZEE": V0682_family_spritzeeEntry;
   "V0684_FAMILY_SWIRLIX": V0684_family_swirlixEntry;
-  "V0686_FAMILY_INKAY": V0686_family_inkayEntry;
   "V0688_FAMILY_BINACLE": V0688_family_binacleEntry;
   "V0690_FAMILY_SKRELP": V0690_family_skrelpEntry;
   "V0692_FAMILY_CLAUNCHER": V0692_family_clauncherEntry;
@@ -2560,7 +2560,6 @@ export interface PokemonFamilyMasterfileByTemplateId {
   "V0716_FAMILY_XERNEAS": V0716_family_xerneasEntry;
   "V0717_FAMILY_YVELTAL": V0717_family_yveltalEntry;
   "V0718_FAMILY_ZYGARDE": V0718_family_zygardeEntry;
-  "V0719_FAMILY_DIANCIE": V0719_family_diancieEntry;
   "V0720_FAMILY_HOOPA": V0720_family_hoopaEntry;
   "V0721_FAMILY_VOLCANION": V0721_family_volcanionEntry;
   "V0722_FAMILY_ROWLET": V0722_family_rowletEntry;
@@ -2738,6 +2737,7 @@ export interface PokemonFamilyMasterfileByTemplateId {
   "V1023_FAMILY_IRONCROWN": V1023_family_ironcrownEntry;
   "V1024_FAMILY_TERAPAGOS": V1024_family_terapagosEntry;
   "V1025_FAMILY_PECHARUNT": V1025_family_pecharuntEntry;
+  "V0280_FAMILY_RALTS": V0280_family_raltsEntry;
 }
 
-export type PokemonFamilyMasterfileEntry = V0001_family_bulbasaurEntry | V0004_family_charmanderEntry | V0007_family_squirtleEntry | V0010_family_caterpieEntry | V0013_family_weedleEntry | V0016_family_pidgeyEntry | V0019_family_rattataEntry | V0021_family_spearowEntry | V0023_family_ekansEntry | V0025_family_pikachuEntry | V0027_family_sandshrewEntry | V0029_family_nidoranEntry | V0032_family_nidoranEntry | V0035_family_clefairyEntry | V0037_family_vulpixEntry | V0039_family_jigglypuffEntry | V0041_family_zubatEntry | V0043_family_oddishEntry | V0046_family_parasEntry | V0048_family_venonatEntry | V0050_family_diglettEntry | V0052_family_meowthEntry | V0054_family_psyduckEntry | V0056_family_mankeyEntry | V0058_family_growlitheEntry | V0060_family_poliwagEntry | V0063_family_abraEntry | V0066_family_machopEntry | V0069_family_bellsproutEntry | V0072_family_tentacoolEntry | V0074_family_geodudeEntry | V0077_family_ponytaEntry | V0079_family_slowpokeEntry | V0081_family_magnemiteEntry | V0083_family_farfetchdEntry | V0084_family_doduoEntry | V0086_family_seelEntry | V0088_family_grimerEntry | V0090_family_shellderEntry | V0092_family_gastlyEntry | V0095_family_onixEntry | V0096_family_drowzeeEntry | V0098_family_krabbyEntry | V0100_family_voltorbEntry | V0102_family_exeggcuteEntry | V0104_family_cuboneEntry | V0108_family_lickitungEntry | V0109_family_koffingEntry | V0111_family_rhyhornEntry | V0113_family_chanseyEntry | V0114_family_tangelaEntry | V0115_family_kangaskhanEntry | V0116_family_horseaEntry | V0118_family_goldeenEntry | V0120_family_staryuEntry | V0122_family_mr_mimeEntry | V0123_family_scytherEntry | V0124_family_jynxEntry | V0125_family_electabuzzEntry | V0126_family_magmarEntry | V0127_family_pinsirEntry | V0128_family_taurosEntry | V0129_family_magikarpEntry | V0131_family_laprasEntry | V0132_family_dittoEntry | V0133_family_eeveeEntry | V0137_family_porygonEntry | V0138_family_omanyteEntry | V0140_family_kabutoEntry | V0142_family_aerodactylEntry | V0143_family_snorlaxEntry | V0144_family_articunoEntry | V0145_family_zapdosEntry | V0146_family_moltresEntry | V0147_family_dratiniEntry | V0150_family_mewtwoEntry | V0151_family_mewEntry | V0152_family_chikoritaEntry | V0155_family_cyndaquilEntry | V0158_family_totodileEntry | V0161_family_sentretEntry | V0163_family_hoothootEntry | V0165_family_ledybaEntry | V0167_family_spinarakEntry | V0170_family_chinchouEntry | V0175_family_togepiEntry | V0177_family_natuEntry | V0179_family_mareepEntry | V0183_family_marillEntry | V0185_family_sudowoodoEntry | V0187_family_hoppipEntry | V0190_family_aipomEntry | V0191_family_sunkernEntry | V0193_family_yanmaEntry | V0194_family_wooperEntry | V0198_family_murkrowEntry | V0200_family_misdreavusEntry | V0201_family_unownEntry | V0202_family_wobbuffetEntry | V0203_family_girafarigEntry | V0204_family_pinecoEntry | V0206_family_dunsparceEntry | V0207_family_gligarEntry | V0209_family_snubbullEntry | V0211_family_qwilfishEntry | V0213_family_shuckleEntry | V0214_family_heracrossEntry | V0215_family_sneaselEntry | V0216_family_teddiursaEntry | V0218_family_slugmaEntry | V0220_family_swinubEntry | V0222_family_corsolaEntry | V0223_family_remoraidEntry | V0225_family_delibirdEntry | V0226_family_mantineEntry | V0227_family_skarmoryEntry | V0228_family_houndourEntry | V0231_family_phanpyEntry | V0234_family_stantlerEntry | V0235_family_smeargleEntry | V0236_family_tyrogueEntry | V0241_family_miltankEntry | V0243_family_raikouEntry | V0244_family_enteiEntry | V0245_family_suicuneEntry | V0246_family_larvitarEntry | V0249_family_lugiaEntry | V0250_family_ho_ohEntry | V0251_family_celebiEntry | V0252_family_treeckoEntry | V0255_family_torchicEntry | V0258_family_mudkipEntry | V0261_family_poochyenaEntry | V0263_family_zigzagoonEntry | V0265_family_wurmpleEntry | V0270_family_lotadEntry | V0273_family_seedotEntry | V0276_family_taillowEntry | V0278_family_wingullEntry | V0280_family_raltsEntry | V0283_family_surskitEntry | V0285_family_shroomishEntry | V0287_family_slakothEntry | V0290_family_nincadaEntry | V0293_family_whismurEntry | V0296_family_makuhitaEntry | V0299_family_nosepassEntry | V0300_family_skittyEntry | V0302_family_sableyeEntry | V0303_family_mawileEntry | V0304_family_aronEntry | V0307_family_medititeEntry | V0309_family_electrikeEntry | V0311_family_plusleEntry | V0312_family_minunEntry | V0313_family_volbeatEntry | V0314_family_illumiseEntry | V0315_family_roseliaEntry | V0316_family_gulpinEntry | V0318_family_carvanhaEntry | V0320_family_wailmerEntry | V0322_family_numelEntry | V0324_family_torkoalEntry | V0325_family_spoinkEntry | V0327_family_spindaEntry | V0328_family_trapinchEntry | V0331_family_cacneaEntry | V0333_family_swabluEntry | V0335_family_zangooseEntry | V0336_family_seviperEntry | V0337_family_lunatoneEntry | V0338_family_solrockEntry | V0339_family_barboachEntry | V0341_family_corphishEntry | V0343_family_baltoyEntry | V0345_family_lileepEntry | V0347_family_anorithEntry | V0349_family_feebasEntry | V0351_family_castformEntry | V0352_family_kecleonEntry | V0353_family_shuppetEntry | V0355_family_duskullEntry | V0357_family_tropiusEntry | V0358_family_chimechoEntry | V0359_family_absolEntry | V0361_family_snoruntEntry | V0363_family_sphealEntry | V0366_family_clamperlEntry | V0369_family_relicanthEntry | V0370_family_luvdiscEntry | V0371_family_bagonEntry | V0374_family_beldumEntry | V0377_family_regirockEntry | V0378_family_regiceEntry | V0379_family_registeelEntry | V0380_family_latiasEntry | V0381_family_latiosEntry | V0382_family_kyogreEntry | V0383_family_groudonEntry | V0384_family_rayquazaEntry | V0385_family_jirachiEntry | V0386_family_deoxysEntry | V0387_family_turtwigEntry | V0390_family_chimcharEntry | V0393_family_piplupEntry | V0396_family_starlyEntry | V0399_family_bidoofEntry | V0401_family_kricketotEntry | V0403_family_shinxEntry | V0408_family_cranidosEntry | V0410_family_shieldonEntry | V0412_family_burmyEntry | V0415_family_combeeEntry | V0417_family_pachirisuEntry | V0418_family_buizelEntry | V0420_family_cherubiEntry | V0422_family_shellosEntry | V0425_family_drifloonEntry | V0427_family_bunearyEntry | V0431_family_glameowEntry | V0434_family_stunkyEntry | V0436_family_bronzorEntry | V0441_family_chatotEntry | V0442_family_spiritombEntry | V0443_family_gibleEntry | V0448_family_lucarioEntry | V0449_family_hippopotasEntry | V0451_family_skorupiEntry | V0453_family_croagunkEntry | V0455_family_carnivineEntry | V0456_family_finneonEntry | V0459_family_snoverEntry | V0479_family_rotomEntry | V0480_family_uxieEntry | V0481_family_mespritEntry | V0482_family_azelfEntry | V0483_family_dialgaEntry | V0484_family_palkiaEntry | V0485_family_heatranEntry | V0486_family_regigigasEntry | V0487_family_giratinaEntry | V0488_family_cresseliaEntry | V0489_family_phioneEntry | V0490_family_manaphyEntry | V0491_family_darkraiEntry | V0492_family_shayminEntry | V0493_family_arceusEntry | V0494_family_victiniEntry | V0495_family_snivyEntry | V0498_family_tepigEntry | V0501_family_oshawottEntry | V0504_family_patratEntry | V0506_family_lillipupEntry | V0509_family_purrloinEntry | V0511_family_pansageEntry | V0513_family_pansearEntry | V0515_family_panpourEntry | V0517_family_munnaEntry | V0519_family_pidoveEntry | V0522_family_blitzleEntry | V0524_family_roggenrolaEntry | V0527_family_woobatEntry | V0529_family_drilburEntry | V0531_family_audinoEntry | V0532_family_timburrEntry | V0535_family_tympoleEntry | V0538_family_throhEntry | V0539_family_sawkEntry | V0540_family_sewaddleEntry | V0543_family_venipedeEntry | V0546_family_cottoneeEntry | V0548_family_petililEntry | V0550_family_basculinEntry | V0551_family_sandileEntry | V0554_family_darumakaEntry | V0556_family_maractusEntry | V0557_family_dwebbleEntry | V0559_family_scraggyEntry | V0561_family_sigilyphEntry | V0562_family_yamaskEntry | V0564_family_tirtougaEntry | V0566_family_archenEntry | V0568_family_trubbishEntry | V0570_family_zoruaEntry | V0572_family_minccinoEntry | V0574_family_gothitaEntry | V0577_family_solosisEntry | V0580_family_ducklettEntry | V0582_family_vanilliteEntry | V0585_family_deerlingEntry | V0587_family_emolgaEntry | V0588_family_karrablastEntry | V0590_family_foongusEntry | V0592_family_frillishEntry | V0594_family_alomomolaEntry | V0595_family_joltikEntry | V0597_family_ferroseedEntry | V0599_family_klinkEntry | V0602_family_tynamoEntry | V0605_family_elgyemEntry | V0607_family_litwickEntry | V0610_family_axewEntry | V0613_family_cubchooEntry | V0615_family_cryogonalEntry | V0616_family_shelmetEntry | V0618_family_stunfiskEntry | V0619_family_mienfooEntry | V0621_family_druddigonEntry | V0622_family_golettEntry | V0624_family_pawniardEntry | V0626_family_bouffalantEntry | V0627_family_ruffletEntry | V0629_family_vullabyEntry | V0631_family_heatmorEntry | V0632_family_durantEntry | V0633_family_deinoEntry | V0636_family_larvestaEntry | V0638_family_cobalionEntry | V0639_family_terrakionEntry | V0640_family_virizionEntry | V0641_family_tornadusEntry | V0642_family_thundurusEntry | V0643_family_reshiramEntry | V0644_family_zekromEntry | V0645_family_landorusEntry | V0646_family_kyuremEntry | V0647_family_keldeoEntry | V0648_family_meloettaEntry | V0649_family_genesectEntry | V0650_family_chespinEntry | V0653_family_fennekinEntry | V0656_family_froakieEntry | V0659_family_bunnelbyEntry | V0661_family_fletchlingEntry | V0664_family_scatterbugEntry | V0667_family_litleoEntry | V0669_family_flabebeEntry | V0672_family_skiddoEntry | V0674_family_panchamEntry | V0676_family_furfrouEntry | V0677_family_espurrEntry | V0679_family_honedgeEntry | V0682_family_spritzeeEntry | V0684_family_swirlixEntry | V0686_family_inkayEntry | V0688_family_binacleEntry | V0690_family_skrelpEntry | V0692_family_clauncherEntry | V0694_family_helioptileEntry | V0696_family_tyruntEntry | V0698_family_amauraEntry | V0701_family_hawluchaEntry | V0702_family_dedenneEntry | V0703_family_carbinkEntry | V0704_family_goomyEntry | V0707_family_klefkiEntry | V0708_family_phantumpEntry | V0710_family_pumpkabooEntry | V0712_family_bergmiteEntry | V0714_family_noibatEntry | V0716_family_xerneasEntry | V0717_family_yveltalEntry | V0718_family_zygardeEntry | V0719_family_diancieEntry | V0720_family_hoopaEntry | V0721_family_volcanionEntry | V0722_family_rowletEntry | V0725_family_littenEntry | V0728_family_popplioEntry | V0731_family_pikipekEntry | V0734_family_yungoosEntry | V0736_family_grubbinEntry | V0739_family_crabrawlerEntry | V0741_family_oricorioEntry | V0742_family_cutieflyEntry | V0744_family_rockruffEntry | V0746_family_wishiwashiEntry | V0747_family_mareanieEntry | V0749_family_mudbrayEntry | V0751_family_dewpiderEntry | V0753_family_fomantisEntry | V0755_family_morelullEntry | V0757_family_salanditEntry | V0759_family_stuffulEntry | V0761_family_bounsweetEntry | V0764_family_comfeyEntry | V0765_family_oranguruEntry | V0766_family_passimianEntry | V0767_family_wimpodEntry | V0769_family_sandygastEntry | V0771_family_pyukumukuEntry | V0772_family_type_nullEntry | V0774_family_miniorEntry | V0775_family_komalaEntry | V0776_family_turtonatorEntry | V0777_family_togedemaruEntry | V0778_family_mimikyuEntry | V0779_family_bruxishEntry | V0780_family_drampaEntry | V0781_family_dhelmiseEntry | V0782_family_jangmo_oEntry | V0785_family_tapu_kokoEntry | V0786_family_tapu_leleEntry | V0787_family_tapu_buluEntry | V0788_family_tapu_finiEntry | V0789_family_cosmogEntry | V0793_family_nihilegoEntry | V0794_family_buzzwoleEntry | V0795_family_pheromosaEntry | V0796_family_xurkitreeEntry | V0797_family_celesteelaEntry | V0798_family_kartanaEntry | V0799_family_guzzlordEntry | V0800_family_necrozmaEntry | V0801_family_magearnaEntry | V0802_family_marshadowEntry | V0803_family_poipoleEntry | V0805_family_stakatakaEntry | V0806_family_blacephalonEntry | V0807_family_zeraoraEntry | V0808_family_meltanEntry | V0810_family_grookeyEntry | V0813_family_scorbunnyEntry | V0816_family_sobbleEntry | V0819_family_skwovetEntry | V0821_family_rookideeEntry | V0824_family_blipbugEntry | V0827_family_nickitEntry | V0829_family_gossifleurEntry | V0831_family_woolooEntry | V0833_family_chewtleEntry | V0835_family_yamperEntry | V0837_family_rolycolyEntry | V0840_family_applinEntry | V0843_family_silicobraEntry | V0845_family_cramorantEntry | V0846_family_arrokudaEntry | V0848_family_toxelEntry | V0850_family_sizzlipedeEntry | V0852_family_clobbopusEntry | V0854_family_sinisteaEntry | V0856_family_hatennaEntry | V0859_family_impidimpEntry | V0868_family_milceryEntry | V0870_family_falinksEntry | V0871_family_pincurchinEntry | V0872_family_snomEntry | V0874_family_stonjournerEntry | V0875_family_eiscueEntry | V0876_family_indeedeeEntry | V0877_family_morpekoEntry | V0878_family_cufantEntry | V0880_family_dracozoltEntry | V0881_family_arctozoltEntry | V0882_family_dracovishEntry | V0883_family_arctovishEntry | V0884_family_duraludonEntry | V0885_family_dreepyEntry | V0888_family_zacianEntry | V0889_family_zamazentaEntry | V0890_family_eternatusEntry | V0891_family_kubfuEntry | V0893_family_zarudeEntry | V0894_family_regielekiEntry | V0895_family_regidragoEntry | V0896_family_glastrierEntry | V0897_family_spectrierEntry | V0898_family_calyrexEntry | V0905_family_enamorusEntry | V0906_family_sprigatitoEntry | V0909_family_fuecocoEntry | V0912_family_quaxlyEntry | V0915_family_lechonkEntry | V0917_family_tarountulaEntry | V0919_family_nymbleEntry | V0921_family_pawmiEntry | V0924_family_tandemausEntry | V0926_family_fidoughEntry | V0928_family_smolivEntry | V0931_family_squawkabillyEntry | V0932_family_nacliEntry | V0935_family_charcadetEntry | V0938_family_tadbulbEntry | V0940_family_wattrelEntry | V0942_family_maschiffEntry | V0944_family_shroodleEntry | V0946_family_bramblinEntry | V0948_family_toedscoolEntry | V0950_family_klawfEntry | V0951_family_capsakidEntry | V0953_family_rellorEntry | V0955_family_flittleEntry | V0957_family_tinkatinkEntry | V0960_family_wiglettEntry | V0962_family_bombirdierEntry | V0963_family_finizenEntry | V0965_family_varoomEntry | V0967_family_cyclizarEntry | V0968_family_orthwormEntry | V0969_family_glimmetEntry | V0971_family_greavardEntry | V0973_family_flamigoEntry | V0974_family_cetoddleEntry | V0976_family_veluzaEntry | V0977_family_dondozoEntry | V0978_family_tatsugiriEntry | V0984_family_greattuskEntry | V0985_family_screamtailEntry | V0986_family_brutebonnetEntry | V0987_family_fluttermaneEntry | V0988_family_slitherwingEntry | V0989_family_sandyshocksEntry | V0990_family_irontreadsEntry | V0991_family_ironbundleEntry | V0992_family_ironhandsEntry | V0993_family_ironjugulisEntry | V0994_family_ironmothEntry | V0995_family_ironthornsEntry | V0996_family_frigibaxEntry | V0999_family_gimmighoulEntry | V1001_family_wochienEntry | V1002_family_chienpaoEntry | V1003_family_tingluEntry | V1004_family_chiyuEntry | V1005_family_roaringmoonEntry | V1006_family_ironvaliantEntry | V1007_family_koraidonEntry | V1008_family_miraidonEntry | V1009_family_walkingwakeEntry | V1010_family_ironleavesEntry | V1012_family_poltchageistEntry | V1014_family_okidogiEntry | V1015_family_munkidoriEntry | V1016_family_fezandipitiEntry | V1017_family_ogerponEntry | V1020_family_gougingfireEntry | V1021_family_ragingboltEntry | V1022_family_ironboulderEntry | V1023_family_ironcrownEntry | V1024_family_terapagosEntry | V1025_family_pecharuntEntry;
+export type PokemonFamilyMasterfileEntry = V0001_family_bulbasaurEntry | V0004_family_charmanderEntry | V0007_family_squirtleEntry | V0013_family_weedleEntry | V0016_family_pidgeyEntry | V0063_family_abraEntry | V0069_family_bellsproutEntry | V0079_family_slowpokeEntry | V0092_family_gastlyEntry | V0095_family_onixEntry | V0115_family_kangaskhanEntry | V0123_family_scytherEntry | V0127_family_pinsirEntry | V0129_family_magikarpEntry | V0142_family_aerodactylEntry | V0147_family_dratiniEntry | V0179_family_mareepEntry | V0214_family_heracrossEntry | V0228_family_houndourEntry | V0246_family_larvitarEntry | V0252_family_treeckoEntry | V0255_family_torchicEntry | V0258_family_mudkipEntry | V0302_family_sableyeEntry | V0303_family_mawileEntry | V0304_family_aronEntry | V0307_family_medititeEntry | V0309_family_electrikeEntry | V0318_family_carvanhaEntry | V0322_family_numelEntry | V0333_family_swabluEntry | V0353_family_shuppetEntry | V0359_family_absolEntry | V0361_family_snoruntEntry | V0371_family_bagonEntry | V0374_family_beldumEntry | V0380_family_latiasEntry | V0381_family_latiosEntry | V0382_family_kyogreEntry | V0383_family_groudonEntry | V0384_family_rayquazaEntry | V0427_family_bunearyEntry | V0443_family_gibleEntry | V0448_family_lucarioEntry | V0459_family_snoverEntry | V0531_family_audinoEntry | V0686_family_inkayEntry | V0719_family_diancieEntry | V0010_family_caterpieEntry | V0019_family_rattataEntry | V0021_family_spearowEntry | V0023_family_ekansEntry | V0025_family_pikachuEntry | V0027_family_sandshrewEntry | V0029_family_nidoranEntry | V0032_family_nidoranEntry | V0035_family_clefairyEntry | V0037_family_vulpixEntry | V0039_family_jigglypuffEntry | V0041_family_zubatEntry | V0043_family_oddishEntry | V0046_family_parasEntry | V0048_family_venonatEntry | V0050_family_diglettEntry | V0052_family_meowthEntry | V0054_family_psyduckEntry | V0056_family_mankeyEntry | V0058_family_growlitheEntry | V0060_family_poliwagEntry | V0066_family_machopEntry | V0072_family_tentacoolEntry | V0074_family_geodudeEntry | V0077_family_ponytaEntry | V0081_family_magnemiteEntry | V0083_family_farfetchdEntry | V0084_family_doduoEntry | V0086_family_seelEntry | V0088_family_grimerEntry | V0090_family_shellderEntry | V0096_family_drowzeeEntry | V0098_family_krabbyEntry | V0100_family_voltorbEntry | V0102_family_exeggcuteEntry | V0104_family_cuboneEntry | V0108_family_lickitungEntry | V0109_family_koffingEntry | V0111_family_rhyhornEntry | V0113_family_chanseyEntry | V0114_family_tangelaEntry | V0116_family_horseaEntry | V0118_family_goldeenEntry | V0120_family_staryuEntry | V0122_family_mr_mimeEntry | V0124_family_jynxEntry | V0125_family_electabuzzEntry | V0126_family_magmarEntry | V0128_family_taurosEntry | V0131_family_laprasEntry | V0132_family_dittoEntry | V0133_family_eeveeEntry | V0137_family_porygonEntry | V0138_family_omanyteEntry | V0140_family_kabutoEntry | V0143_family_snorlaxEntry | V0144_family_articunoEntry | V0145_family_zapdosEntry | V0146_family_moltresEntry | V0150_family_mewtwoEntry | V0151_family_mewEntry | V0152_family_chikoritaEntry | V0155_family_cyndaquilEntry | V0158_family_totodileEntry | V0161_family_sentretEntry | V0163_family_hoothootEntry | V0165_family_ledybaEntry | V0167_family_spinarakEntry | V0170_family_chinchouEntry | V0175_family_togepiEntry | V0177_family_natuEntry | V0183_family_marillEntry | V0185_family_sudowoodoEntry | V0187_family_hoppipEntry | V0190_family_aipomEntry | V0191_family_sunkernEntry | V0193_family_yanmaEntry | V0194_family_wooperEntry | V0198_family_murkrowEntry | V0200_family_misdreavusEntry | V0201_family_unownEntry | V0202_family_wobbuffetEntry | V0203_family_girafarigEntry | V0204_family_pinecoEntry | V0206_family_dunsparceEntry | V0207_family_gligarEntry | V0209_family_snubbullEntry | V0211_family_qwilfishEntry | V0213_family_shuckleEntry | V0215_family_sneaselEntry | V0216_family_teddiursaEntry | V0218_family_slugmaEntry | V0220_family_swinubEntry | V0222_family_corsolaEntry | V0223_family_remoraidEntry | V0225_family_delibirdEntry | V0226_family_mantineEntry | V0227_family_skarmoryEntry | V0231_family_phanpyEntry | V0234_family_stantlerEntry | V0235_family_smeargleEntry | V0236_family_tyrogueEntry | V0241_family_miltankEntry | V0243_family_raikouEntry | V0244_family_enteiEntry | V0245_family_suicuneEntry | V0249_family_lugiaEntry | V0250_family_ho_ohEntry | V0251_family_celebiEntry | V0261_family_poochyenaEntry | V0263_family_zigzagoonEntry | V0265_family_wurmpleEntry | V0270_family_lotadEntry | V0273_family_seedotEntry | V0276_family_taillowEntry | V0278_family_wingullEntry | V0283_family_surskitEntry | V0285_family_shroomishEntry | V0287_family_slakothEntry | V0290_family_nincadaEntry | V0293_family_whismurEntry | V0296_family_makuhitaEntry | V0299_family_nosepassEntry | V0300_family_skittyEntry | V0311_family_plusleEntry | V0312_family_minunEntry | V0313_family_volbeatEntry | V0314_family_illumiseEntry | V0315_family_roseliaEntry | V0316_family_gulpinEntry | V0320_family_wailmerEntry | V0324_family_torkoalEntry | V0325_family_spoinkEntry | V0327_family_spindaEntry | V0328_family_trapinchEntry | V0331_family_cacneaEntry | V0335_family_zangooseEntry | V0336_family_seviperEntry | V0337_family_lunatoneEntry | V0338_family_solrockEntry | V0339_family_barboachEntry | V0341_family_corphishEntry | V0343_family_baltoyEntry | V0345_family_lileepEntry | V0347_family_anorithEntry | V0349_family_feebasEntry | V0351_family_castformEntry | V0352_family_kecleonEntry | V0355_family_duskullEntry | V0357_family_tropiusEntry | V0358_family_chimechoEntry | V0363_family_sphealEntry | V0366_family_clamperlEntry | V0369_family_relicanthEntry | V0370_family_luvdiscEntry | V0377_family_regirockEntry | V0378_family_regiceEntry | V0379_family_registeelEntry | V0385_family_jirachiEntry | V0386_family_deoxysEntry | V0387_family_turtwigEntry | V0390_family_chimcharEntry | V0393_family_piplupEntry | V0396_family_starlyEntry | V0399_family_bidoofEntry | V0401_family_kricketotEntry | V0403_family_shinxEntry | V0408_family_cranidosEntry | V0410_family_shieldonEntry | V0412_family_burmyEntry | V0415_family_combeeEntry | V0417_family_pachirisuEntry | V0418_family_buizelEntry | V0420_family_cherubiEntry | V0422_family_shellosEntry | V0425_family_drifloonEntry | V0431_family_glameowEntry | V0434_family_stunkyEntry | V0436_family_bronzorEntry | V0441_family_chatotEntry | V0442_family_spiritombEntry | V0449_family_hippopotasEntry | V0451_family_skorupiEntry | V0453_family_croagunkEntry | V0455_family_carnivineEntry | V0456_family_finneonEntry | V0479_family_rotomEntry | V0480_family_uxieEntry | V0481_family_mespritEntry | V0482_family_azelfEntry | V0483_family_dialgaEntry | V0484_family_palkiaEntry | V0485_family_heatranEntry | V0486_family_regigigasEntry | V0487_family_giratinaEntry | V0488_family_cresseliaEntry | V0489_family_phioneEntry | V0490_family_manaphyEntry | V0491_family_darkraiEntry | V0492_family_shayminEntry | V0493_family_arceusEntry | V0494_family_victiniEntry | V0495_family_snivyEntry | V0498_family_tepigEntry | V0501_family_oshawottEntry | V0504_family_patratEntry | V0506_family_lillipupEntry | V0509_family_purrloinEntry | V0511_family_pansageEntry | V0513_family_pansearEntry | V0515_family_panpourEntry | V0517_family_munnaEntry | V0519_family_pidoveEntry | V0522_family_blitzleEntry | V0524_family_roggenrolaEntry | V0527_family_woobatEntry | V0529_family_drilburEntry | V0532_family_timburrEntry | V0535_family_tympoleEntry | V0538_family_throhEntry | V0539_family_sawkEntry | V0540_family_sewaddleEntry | V0543_family_venipedeEntry | V0546_family_cottoneeEntry | V0548_family_petililEntry | V0550_family_basculinEntry | V0551_family_sandileEntry | V0554_family_darumakaEntry | V0556_family_maractusEntry | V0557_family_dwebbleEntry | V0559_family_scraggyEntry | V0561_family_sigilyphEntry | V0562_family_yamaskEntry | V0564_family_tirtougaEntry | V0566_family_archenEntry | V0568_family_trubbishEntry | V0570_family_zoruaEntry | V0572_family_minccinoEntry | V0574_family_gothitaEntry | V0577_family_solosisEntry | V0580_family_ducklettEntry | V0582_family_vanilliteEntry | V0585_family_deerlingEntry | V0587_family_emolgaEntry | V0588_family_karrablastEntry | V0590_family_foongusEntry | V0592_family_frillishEntry | V0594_family_alomomolaEntry | V0595_family_joltikEntry | V0597_family_ferroseedEntry | V0599_family_klinkEntry | V0602_family_tynamoEntry | V0605_family_elgyemEntry | V0607_family_litwickEntry | V0610_family_axewEntry | V0613_family_cubchooEntry | V0615_family_cryogonalEntry | V0616_family_shelmetEntry | V0618_family_stunfiskEntry | V0619_family_mienfooEntry | V0621_family_druddigonEntry | V0622_family_golettEntry | V0624_family_pawniardEntry | V0626_family_bouffalantEntry | V0627_family_ruffletEntry | V0629_family_vullabyEntry | V0631_family_heatmorEntry | V0632_family_durantEntry | V0633_family_deinoEntry | V0636_family_larvestaEntry | V0638_family_cobalionEntry | V0639_family_terrakionEntry | V0640_family_virizionEntry | V0641_family_tornadusEntry | V0642_family_thundurusEntry | V0643_family_reshiramEntry | V0644_family_zekromEntry | V0645_family_landorusEntry | V0646_family_kyuremEntry | V0647_family_keldeoEntry | V0648_family_meloettaEntry | V0649_family_genesectEntry | V0650_family_chespinEntry | V0653_family_fennekinEntry | V0656_family_froakieEntry | V0659_family_bunnelbyEntry | V0661_family_fletchlingEntry | V0664_family_scatterbugEntry | V0667_family_litleoEntry | V0669_family_flabebeEntry | V0672_family_skiddoEntry | V0674_family_panchamEntry | V0676_family_furfrouEntry | V0677_family_espurrEntry | V0679_family_honedgeEntry | V0682_family_spritzeeEntry | V0684_family_swirlixEntry | V0688_family_binacleEntry | V0690_family_skrelpEntry | V0692_family_clauncherEntry | V0694_family_helioptileEntry | V0696_family_tyruntEntry | V0698_family_amauraEntry | V0701_family_hawluchaEntry | V0702_family_dedenneEntry | V0703_family_carbinkEntry | V0704_family_goomyEntry | V0707_family_klefkiEntry | V0708_family_phantumpEntry | V0710_family_pumpkabooEntry | V0712_family_bergmiteEntry | V0714_family_noibatEntry | V0716_family_xerneasEntry | V0717_family_yveltalEntry | V0718_family_zygardeEntry | V0720_family_hoopaEntry | V0721_family_volcanionEntry | V0722_family_rowletEntry | V0725_family_littenEntry | V0728_family_popplioEntry | V0731_family_pikipekEntry | V0734_family_yungoosEntry | V0736_family_grubbinEntry | V0739_family_crabrawlerEntry | V0741_family_oricorioEntry | V0742_family_cutieflyEntry | V0744_family_rockruffEntry | V0746_family_wishiwashiEntry | V0747_family_mareanieEntry | V0749_family_mudbrayEntry | V0751_family_dewpiderEntry | V0753_family_fomantisEntry | V0755_family_morelullEntry | V0757_family_salanditEntry | V0759_family_stuffulEntry | V0761_family_bounsweetEntry | V0764_family_comfeyEntry | V0765_family_oranguruEntry | V0766_family_passimianEntry | V0767_family_wimpodEntry | V0769_family_sandygastEntry | V0771_family_pyukumukuEntry | V0772_family_type_nullEntry | V0774_family_miniorEntry | V0775_family_komalaEntry | V0776_family_turtonatorEntry | V0777_family_togedemaruEntry | V0778_family_mimikyuEntry | V0779_family_bruxishEntry | V0780_family_drampaEntry | V0781_family_dhelmiseEntry | V0782_family_jangmo_oEntry | V0785_family_tapu_kokoEntry | V0786_family_tapu_leleEntry | V0787_family_tapu_buluEntry | V0788_family_tapu_finiEntry | V0789_family_cosmogEntry | V0793_family_nihilegoEntry | V0794_family_buzzwoleEntry | V0795_family_pheromosaEntry | V0796_family_xurkitreeEntry | V0797_family_celesteelaEntry | V0798_family_kartanaEntry | V0799_family_guzzlordEntry | V0800_family_necrozmaEntry | V0801_family_magearnaEntry | V0802_family_marshadowEntry | V0803_family_poipoleEntry | V0805_family_stakatakaEntry | V0806_family_blacephalonEntry | V0807_family_zeraoraEntry | V0808_family_meltanEntry | V0810_family_grookeyEntry | V0813_family_scorbunnyEntry | V0816_family_sobbleEntry | V0819_family_skwovetEntry | V0821_family_rookideeEntry | V0824_family_blipbugEntry | V0827_family_nickitEntry | V0829_family_gossifleurEntry | V0831_family_woolooEntry | V0833_family_chewtleEntry | V0835_family_yamperEntry | V0837_family_rolycolyEntry | V0840_family_applinEntry | V0843_family_silicobraEntry | V0845_family_cramorantEntry | V0846_family_arrokudaEntry | V0848_family_toxelEntry | V0850_family_sizzlipedeEntry | V0852_family_clobbopusEntry | V0854_family_sinisteaEntry | V0856_family_hatennaEntry | V0859_family_impidimpEntry | V0868_family_milceryEntry | V0870_family_falinksEntry | V0871_family_pincurchinEntry | V0872_family_snomEntry | V0874_family_stonjournerEntry | V0875_family_eiscueEntry | V0876_family_indeedeeEntry | V0877_family_morpekoEntry | V0878_family_cufantEntry | V0880_family_dracozoltEntry | V0881_family_arctozoltEntry | V0882_family_dracovishEntry | V0883_family_arctovishEntry | V0884_family_duraludonEntry | V0885_family_dreepyEntry | V0888_family_zacianEntry | V0889_family_zamazentaEntry | V0890_family_eternatusEntry | V0891_family_kubfuEntry | V0893_family_zarudeEntry | V0894_family_regielekiEntry | V0895_family_regidragoEntry | V0896_family_glastrierEntry | V0897_family_spectrierEntry | V0898_family_calyrexEntry | V0905_family_enamorusEntry | V0906_family_sprigatitoEntry | V0909_family_fuecocoEntry | V0912_family_quaxlyEntry | V0915_family_lechonkEntry | V0917_family_tarountulaEntry | V0919_family_nymbleEntry | V0921_family_pawmiEntry | V0924_family_tandemausEntry | V0926_family_fidoughEntry | V0928_family_smolivEntry | V0931_family_squawkabillyEntry | V0932_family_nacliEntry | V0935_family_charcadetEntry | V0938_family_tadbulbEntry | V0940_family_wattrelEntry | V0942_family_maschiffEntry | V0944_family_shroodleEntry | V0946_family_bramblinEntry | V0948_family_toedscoolEntry | V0950_family_klawfEntry | V0951_family_capsakidEntry | V0953_family_rellorEntry | V0955_family_flittleEntry | V0957_family_tinkatinkEntry | V0960_family_wiglettEntry | V0962_family_bombirdierEntry | V0963_family_finizenEntry | V0965_family_varoomEntry | V0967_family_cyclizarEntry | V0968_family_orthwormEntry | V0969_family_glimmetEntry | V0971_family_greavardEntry | V0973_family_flamigoEntry | V0974_family_cetoddleEntry | V0976_family_veluzaEntry | V0977_family_dondozoEntry | V0978_family_tatsugiriEntry | V0984_family_greattuskEntry | V0985_family_screamtailEntry | V0986_family_brutebonnetEntry | V0987_family_fluttermaneEntry | V0988_family_slitherwingEntry | V0989_family_sandyshocksEntry | V0990_family_irontreadsEntry | V0991_family_ironbundleEntry | V0992_family_ironhandsEntry | V0993_family_ironjugulisEntry | V0994_family_ironmothEntry | V0995_family_ironthornsEntry | V0996_family_frigibaxEntry | V0999_family_gimmighoulEntry | V1001_family_wochienEntry | V1002_family_chienpaoEntry | V1003_family_tingluEntry | V1004_family_chiyuEntry | V1005_family_roaringmoonEntry | V1006_family_ironvaliantEntry | V1007_family_koraidonEntry | V1008_family_miraidonEntry | V1009_family_walkingwakeEntry | V1010_family_ironleavesEntry | V1012_family_poltchageistEntry | V1014_family_okidogiEntry | V1015_family_munkidoriEntry | V1016_family_fezandipitiEntry | V1017_family_ogerponEntry | V1020_family_gougingfireEntry | V1021_family_ragingboltEntry | V1022_family_ironboulderEntry | V1023_family_ironcrownEntry | V1024_family_terapagosEntry | V1025_family_pecharuntEntry | V0280_family_raltsEntry;

@@ -39,6 +39,42 @@ export interface Level_71_capEntry {
   templateId: "LEVEL_71_CAP";
   data: Level_71_capdata;
 }
+export interface Level_72_capEntry {
+  templateId: "LEVEL_72_CAP";
+  data: Level_71_capdata;
+}
+export interface Level_73_capEntry {
+  templateId: "LEVEL_73_CAP";
+  data: Level_71_capdata;
+}
+export interface Level_74_capEntry {
+  templateId: "LEVEL_74_CAP";
+  data: Level_71_capdata;
+}
+export interface Level_75_capEntry {
+  templateId: "LEVEL_75_CAP";
+  data: Level_71_capdata;
+}
+export interface Level_76_capEntry {
+  templateId: "LEVEL_76_CAP";
+  data: Level_71_capdata;
+}
+export interface Level_77_capEntry {
+  templateId: "LEVEL_77_CAP";
+  data: Level_71_capdata;
+}
+export interface Level_78_capEntry {
+  templateId: "LEVEL_78_CAP";
+  data: Level_71_capdata;
+}
+export interface Level_79_capEntry {
+  templateId: "LEVEL_79_CAP";
+  data: Level_71_capdata;
+}
+export interface Level_80_capEntry {
+  templateId: "LEVEL_80_CAP";
+  data: Level_71_capdata;
+}
 export interface Level_71_cap_sub_0dataclientquesttemplatequestgoalconditionitemwithbadgetype {
   badgeRank: number;
   badgeTypesToExclude: (string)[];
@@ -79,6 +115,42 @@ export interface Level_71_cap_sub_0Entry {
   templateId: "LEVEL_71_CAP_SUB_0";
   data: Level_71_cap_sub_0data;
 }
+export interface Level_72_cap_sub_0Entry {
+  templateId: "LEVEL_72_CAP_SUB_0";
+  data: Level_71_cap_sub_0data;
+}
+export interface Level_73_cap_sub_0Entry {
+  templateId: "LEVEL_73_CAP_SUB_0";
+  data: Level_71_cap_sub_0data;
+}
+export interface Level_74_cap_sub_0Entry {
+  templateId: "LEVEL_74_CAP_SUB_0";
+  data: Level_71_cap_sub_0data;
+}
+export interface Level_75_cap_sub_0Entry {
+  templateId: "LEVEL_75_CAP_SUB_0";
+  data: Level_71_cap_sub_0data;
+}
+export interface Level_76_cap_sub_0Entry {
+  templateId: "LEVEL_76_CAP_SUB_0";
+  data: Level_71_cap_sub_0data;
+}
+export interface Level_77_cap_sub_0Entry {
+  templateId: "LEVEL_77_CAP_SUB_0";
+  data: Level_71_cap_sub_0data;
+}
+export interface Level_78_cap_sub_0Entry {
+  templateId: "LEVEL_78_CAP_SUB_0";
+  data: Level_71_cap_sub_0data;
+}
+export interface Level_79_cap_sub_0Entry {
+  templateId: "LEVEL_79_CAP_SUB_0";
+  data: Level_71_cap_sub_0data;
+}
+export interface Level_80_cap_sub_0Entry {
+  templateId: "LEVEL_80_CAP_SUB_0";
+  data: Level_71_cap_sub_0data;
+}
 export interface Level_71_cap_sub_1dataclientquesttemplatequestgoalconditionitem {
   "type": string;
 }
@@ -104,6 +176,34 @@ export interface Level_71_cap_sub_1data {
 }
 export interface Level_71_cap_sub_1Entry {
   templateId: "LEVEL_71_CAP_SUB_1";
+  data: Level_71_cap_sub_1data;
+}
+export interface Level_71_cap_sub_3Entry {
+  templateId: "LEVEL_71_CAP_SUB_3";
+  data: Level_71_cap_sub_1data;
+}
+export interface Level_72_cap_sub_1Entry {
+  templateId: "LEVEL_72_CAP_SUB_1";
+  data: Level_71_cap_sub_1data;
+}
+export interface Level_72_cap_sub_2Entry {
+  templateId: "LEVEL_72_CAP_SUB_2";
+  data: Level_71_cap_sub_1data;
+}
+export interface Level_73_cap_sub_3Entry {
+  templateId: "LEVEL_73_CAP_SUB_3";
+  data: Level_71_cap_sub_1data;
+}
+export interface Level_76_cap_sub_3Entry {
+  templateId: "LEVEL_76_CAP_SUB_3";
+  data: Level_71_cap_sub_1data;
+}
+export interface Level_79_cap_sub_3Entry {
+  templateId: "LEVEL_79_CAP_SUB_3";
+  data: Level_71_cap_sub_1data;
+}
+export interface Level_80_cap_sub_3Entry {
+  templateId: "LEVEL_80_CAP_SUB_3";
   data: Level_71_cap_sub_1data;
 }
 export interface Level_71_cap_sub_2dataclientquesttemplatequestgoalconditionitemwiththrowtype {
@@ -137,25 +237,13 @@ export interface Level_71_cap_sub_2Entry {
   templateId: "LEVEL_71_CAP_SUB_2";
   data: Level_71_cap_sub_2data;
 }
-export interface Level_71_cap_sub_3Entry {
-  templateId: "LEVEL_71_CAP_SUB_3";
-  data: Level_71_cap_sub_1data;
+export interface Level_75_cap_sub_2Entry {
+  templateId: "LEVEL_75_CAP_SUB_2";
+  data: Level_71_cap_sub_2data;
 }
-export interface Level_72_capEntry {
-  templateId: "LEVEL_72_CAP";
-  data: Level_71_capdata;
-}
-export interface Level_72_cap_sub_0Entry {
-  templateId: "LEVEL_72_CAP_SUB_0";
-  data: Level_71_cap_sub_0data;
-}
-export interface Level_72_cap_sub_1Entry {
-  templateId: "LEVEL_72_CAP_SUB_1";
-  data: Level_71_cap_sub_1data;
-}
-export interface Level_72_cap_sub_2Entry {
-  templateId: "LEVEL_72_CAP_SUB_2";
-  data: Level_71_cap_sub_1data;
+export interface Level_80_cap_sub_2Entry {
+  templateId: "LEVEL_80_CAP_SUB_2";
+  data: Level_71_cap_sub_2data;
 }
 export interface Level_72_cap_sub_3dataclientquesttemplatequestgoal {
   target: number;
@@ -180,16 +268,40 @@ export interface Level_72_cap_sub_3Entry {
   templateId: "LEVEL_72_CAP_SUB_3";
   data: Level_72_cap_sub_3data;
 }
-export interface Level_73_capEntry {
-  templateId: "LEVEL_73_CAP";
-  data: Level_71_capdata;
-}
-export interface Level_73_cap_sub_0Entry {
-  templateId: "LEVEL_73_CAP_SUB_0";
-  data: Level_71_cap_sub_0data;
-}
 export interface Level_73_cap_sub_1Entry {
   templateId: "LEVEL_73_CAP_SUB_1";
+  data: Level_72_cap_sub_3data;
+}
+export interface Level_74_cap_sub_1Entry {
+  templateId: "LEVEL_74_CAP_SUB_1";
+  data: Level_72_cap_sub_3data;
+}
+export interface Level_74_cap_sub_2Entry {
+  templateId: "LEVEL_74_CAP_SUB_2";
+  data: Level_72_cap_sub_3data;
+}
+export interface Level_75_cap_sub_1Entry {
+  templateId: "LEVEL_75_CAP_SUB_1";
+  data: Level_72_cap_sub_3data;
+}
+export interface Level_75_cap_sub_3Entry {
+  templateId: "LEVEL_75_CAP_SUB_3";
+  data: Level_72_cap_sub_3data;
+}
+export interface Level_76_cap_sub_2Entry {
+  templateId: "LEVEL_76_CAP_SUB_2";
+  data: Level_72_cap_sub_3data;
+}
+export interface Level_78_cap_sub_1Entry {
+  templateId: "LEVEL_78_CAP_SUB_1";
+  data: Level_72_cap_sub_3data;
+}
+export interface Level_78_cap_sub_2Entry {
+  templateId: "LEVEL_78_CAP_SUB_2";
+  data: Level_72_cap_sub_3data;
+}
+export interface Level_79_cap_sub_2Entry {
+  templateId: "LEVEL_79_CAP_SUB_2";
   data: Level_72_cap_sub_3data;
 }
 export interface Level_73_cap_sub_2dataclientquesttemplatequestgoalconditionitemwithpokemonlevel {
@@ -223,25 +335,9 @@ export interface Level_73_cap_sub_2Entry {
   templateId: "LEVEL_73_CAP_SUB_2";
   data: Level_73_cap_sub_2data;
 }
-export interface Level_73_cap_sub_3Entry {
-  templateId: "LEVEL_73_CAP_SUB_3";
-  data: Level_71_cap_sub_1data;
-}
-export interface Level_74_capEntry {
-  templateId: "LEVEL_74_CAP";
-  data: Level_71_capdata;
-}
-export interface Level_74_cap_sub_0Entry {
-  templateId: "LEVEL_74_CAP_SUB_0";
-  data: Level_71_cap_sub_0data;
-}
-export interface Level_74_cap_sub_1Entry {
-  templateId: "LEVEL_74_CAP_SUB_1";
-  data: Level_72_cap_sub_3data;
-}
-export interface Level_74_cap_sub_2Entry {
-  templateId: "LEVEL_74_CAP_SUB_2";
-  data: Level_72_cap_sub_3data;
+export interface Level_77_cap_sub_1Entry {
+  templateId: "LEVEL_77_CAP_SUB_1";
+  data: Level_73_cap_sub_2data;
 }
 export interface Level_74_cap_sub_3dataclientquesttemplatequestgoalconditionitemwithquestcontext {
   context: string;
@@ -274,33 +370,9 @@ export interface Level_74_cap_sub_3Entry {
   templateId: "LEVEL_74_CAP_SUB_3";
   data: Level_74_cap_sub_3data;
 }
-export interface Level_75_capEntry {
-  templateId: "LEVEL_75_CAP";
-  data: Level_71_capdata;
-}
-export interface Level_75_cap_sub_0Entry {
-  templateId: "LEVEL_75_CAP_SUB_0";
-  data: Level_71_cap_sub_0data;
-}
-export interface Level_75_cap_sub_1Entry {
-  templateId: "LEVEL_75_CAP_SUB_1";
-  data: Level_72_cap_sub_3data;
-}
-export interface Level_75_cap_sub_2Entry {
-  templateId: "LEVEL_75_CAP_SUB_2";
-  data: Level_71_cap_sub_2data;
-}
-export interface Level_75_cap_sub_3Entry {
-  templateId: "LEVEL_75_CAP_SUB_3";
-  data: Level_72_cap_sub_3data;
-}
-export interface Level_76_capEntry {
-  templateId: "LEVEL_76_CAP";
-  data: Level_71_capdata;
-}
-export interface Level_76_cap_sub_0Entry {
-  templateId: "LEVEL_76_CAP_SUB_0";
-  data: Level_71_cap_sub_0data;
+export interface Level_78_cap_sub_3Entry {
+  templateId: "LEVEL_78_CAP_SUB_3";
+  data: Level_74_cap_sub_3data;
 }
 export interface Level_76_cap_sub_1dataclientquesttemplatequestgoalconditionitemwithinvasioncharacter {
   category: (string)[];
@@ -333,25 +405,9 @@ export interface Level_76_cap_sub_1Entry {
   templateId: "LEVEL_76_CAP_SUB_1";
   data: Level_76_cap_sub_1data;
 }
-export interface Level_76_cap_sub_2Entry {
-  templateId: "LEVEL_76_CAP_SUB_2";
-  data: Level_72_cap_sub_3data;
-}
-export interface Level_76_cap_sub_3Entry {
-  templateId: "LEVEL_76_CAP_SUB_3";
-  data: Level_71_cap_sub_1data;
-}
-export interface Level_77_capEntry {
-  templateId: "LEVEL_77_CAP";
-  data: Level_71_capdata;
-}
-export interface Level_77_cap_sub_0Entry {
-  templateId: "LEVEL_77_CAP_SUB_0";
-  data: Level_71_cap_sub_0data;
-}
-export interface Level_77_cap_sub_1Entry {
-  templateId: "LEVEL_77_CAP_SUB_1";
-  data: Level_73_cap_sub_2data;
+export interface Level_79_cap_sub_1Entry {
+  templateId: "LEVEL_79_CAP_SUB_1";
+  data: Level_76_cap_sub_1data;
 }
 export interface Level_77_cap_sub_2dataclientquesttemplatequestgoalconditionitemwithcombattype {
   combatType: (string)[];
@@ -384,6 +440,10 @@ export interface Level_77_cap_sub_2Entry {
   templateId: "LEVEL_77_CAP_SUB_2";
   data: Level_77_cap_sub_2data;
 }
+export interface Level_80_cap_sub_1Entry {
+  templateId: "LEVEL_80_CAP_SUB_1";
+  data: Level_77_cap_sub_2data;
+}
 export interface Level_77_cap_sub_3dataclientquesttemplatequestgoalconditionitemwithdistance {
   distanceKm: number;
 }
@@ -414,66 +474,6 @@ export interface Level_77_cap_sub_3data {
 export interface Level_77_cap_sub_3Entry {
   templateId: "LEVEL_77_CAP_SUB_3";
   data: Level_77_cap_sub_3data;
-}
-export interface Level_78_capEntry {
-  templateId: "LEVEL_78_CAP";
-  data: Level_71_capdata;
-}
-export interface Level_78_cap_sub_0Entry {
-  templateId: "LEVEL_78_CAP_SUB_0";
-  data: Level_71_cap_sub_0data;
-}
-export interface Level_78_cap_sub_1Entry {
-  templateId: "LEVEL_78_CAP_SUB_1";
-  data: Level_72_cap_sub_3data;
-}
-export interface Level_78_cap_sub_2Entry {
-  templateId: "LEVEL_78_CAP_SUB_2";
-  data: Level_72_cap_sub_3data;
-}
-export interface Level_78_cap_sub_3Entry {
-  templateId: "LEVEL_78_CAP_SUB_3";
-  data: Level_74_cap_sub_3data;
-}
-export interface Level_79_capEntry {
-  templateId: "LEVEL_79_CAP";
-  data: Level_71_capdata;
-}
-export interface Level_79_cap_sub_0Entry {
-  templateId: "LEVEL_79_CAP_SUB_0";
-  data: Level_71_cap_sub_0data;
-}
-export interface Level_79_cap_sub_1Entry {
-  templateId: "LEVEL_79_CAP_SUB_1";
-  data: Level_76_cap_sub_1data;
-}
-export interface Level_79_cap_sub_2Entry {
-  templateId: "LEVEL_79_CAP_SUB_2";
-  data: Level_72_cap_sub_3data;
-}
-export interface Level_79_cap_sub_3Entry {
-  templateId: "LEVEL_79_CAP_SUB_3";
-  data: Level_71_cap_sub_1data;
-}
-export interface Level_80_capEntry {
-  templateId: "LEVEL_80_CAP";
-  data: Level_71_capdata;
-}
-export interface Level_80_cap_sub_0Entry {
-  templateId: "LEVEL_80_CAP_SUB_0";
-  data: Level_71_cap_sub_0data;
-}
-export interface Level_80_cap_sub_1Entry {
-  templateId: "LEVEL_80_CAP_SUB_1";
-  data: Level_77_cap_sub_2data;
-}
-export interface Level_80_cap_sub_2Entry {
-  templateId: "LEVEL_80_CAP_SUB_2";
-  data: Level_71_cap_sub_2data;
-}
-export interface Level_80_cap_sub_3Entry {
-  templateId: "LEVEL_80_CAP_SUB_3";
-  data: Level_71_cap_sub_1data;
 }
 export interface Weekly_challenge_party_questdataclientquesttemplatequestquestrewardsitem {
   friendshipPoints?: number;
@@ -591,55 +591,55 @@ export interface Weekly_challenge_party_quest_week4Entry {
 
 export interface QuestsClientMasterfileByTemplateId {
   "LEVEL_71_CAP": Level_71_capEntry;
-  "LEVEL_71_CAP_SUB_0": Level_71_cap_sub_0Entry;
-  "LEVEL_71_CAP_SUB_1": Level_71_cap_sub_1Entry;
-  "LEVEL_71_CAP_SUB_2": Level_71_cap_sub_2Entry;
-  "LEVEL_71_CAP_SUB_3": Level_71_cap_sub_3Entry;
   "LEVEL_72_CAP": Level_72_capEntry;
+  "LEVEL_73_CAP": Level_73_capEntry;
+  "LEVEL_74_CAP": Level_74_capEntry;
+  "LEVEL_75_CAP": Level_75_capEntry;
+  "LEVEL_76_CAP": Level_76_capEntry;
+  "LEVEL_77_CAP": Level_77_capEntry;
+  "LEVEL_78_CAP": Level_78_capEntry;
+  "LEVEL_79_CAP": Level_79_capEntry;
+  "LEVEL_80_CAP": Level_80_capEntry;
+  "LEVEL_71_CAP_SUB_0": Level_71_cap_sub_0Entry;
   "LEVEL_72_CAP_SUB_0": Level_72_cap_sub_0Entry;
+  "LEVEL_73_CAP_SUB_0": Level_73_cap_sub_0Entry;
+  "LEVEL_74_CAP_SUB_0": Level_74_cap_sub_0Entry;
+  "LEVEL_75_CAP_SUB_0": Level_75_cap_sub_0Entry;
+  "LEVEL_76_CAP_SUB_0": Level_76_cap_sub_0Entry;
+  "LEVEL_77_CAP_SUB_0": Level_77_cap_sub_0Entry;
+  "LEVEL_78_CAP_SUB_0": Level_78_cap_sub_0Entry;
+  "LEVEL_79_CAP_SUB_0": Level_79_cap_sub_0Entry;
+  "LEVEL_80_CAP_SUB_0": Level_80_cap_sub_0Entry;
+  "LEVEL_71_CAP_SUB_1": Level_71_cap_sub_1Entry;
+  "LEVEL_71_CAP_SUB_3": Level_71_cap_sub_3Entry;
   "LEVEL_72_CAP_SUB_1": Level_72_cap_sub_1Entry;
   "LEVEL_72_CAP_SUB_2": Level_72_cap_sub_2Entry;
-  "LEVEL_72_CAP_SUB_3": Level_72_cap_sub_3Entry;
-  "LEVEL_73_CAP": Level_73_capEntry;
-  "LEVEL_73_CAP_SUB_0": Level_73_cap_sub_0Entry;
-  "LEVEL_73_CAP_SUB_1": Level_73_cap_sub_1Entry;
-  "LEVEL_73_CAP_SUB_2": Level_73_cap_sub_2Entry;
   "LEVEL_73_CAP_SUB_3": Level_73_cap_sub_3Entry;
-  "LEVEL_74_CAP": Level_74_capEntry;
-  "LEVEL_74_CAP_SUB_0": Level_74_cap_sub_0Entry;
+  "LEVEL_76_CAP_SUB_3": Level_76_cap_sub_3Entry;
+  "LEVEL_79_CAP_SUB_3": Level_79_cap_sub_3Entry;
+  "LEVEL_80_CAP_SUB_3": Level_80_cap_sub_3Entry;
+  "LEVEL_71_CAP_SUB_2": Level_71_cap_sub_2Entry;
+  "LEVEL_75_CAP_SUB_2": Level_75_cap_sub_2Entry;
+  "LEVEL_80_CAP_SUB_2": Level_80_cap_sub_2Entry;
+  "LEVEL_72_CAP_SUB_3": Level_72_cap_sub_3Entry;
+  "LEVEL_73_CAP_SUB_1": Level_73_cap_sub_1Entry;
   "LEVEL_74_CAP_SUB_1": Level_74_cap_sub_1Entry;
   "LEVEL_74_CAP_SUB_2": Level_74_cap_sub_2Entry;
-  "LEVEL_74_CAP_SUB_3": Level_74_cap_sub_3Entry;
-  "LEVEL_75_CAP": Level_75_capEntry;
-  "LEVEL_75_CAP_SUB_0": Level_75_cap_sub_0Entry;
   "LEVEL_75_CAP_SUB_1": Level_75_cap_sub_1Entry;
-  "LEVEL_75_CAP_SUB_2": Level_75_cap_sub_2Entry;
   "LEVEL_75_CAP_SUB_3": Level_75_cap_sub_3Entry;
-  "LEVEL_76_CAP": Level_76_capEntry;
-  "LEVEL_76_CAP_SUB_0": Level_76_cap_sub_0Entry;
-  "LEVEL_76_CAP_SUB_1": Level_76_cap_sub_1Entry;
   "LEVEL_76_CAP_SUB_2": Level_76_cap_sub_2Entry;
-  "LEVEL_76_CAP_SUB_3": Level_76_cap_sub_3Entry;
-  "LEVEL_77_CAP": Level_77_capEntry;
-  "LEVEL_77_CAP_SUB_0": Level_77_cap_sub_0Entry;
-  "LEVEL_77_CAP_SUB_1": Level_77_cap_sub_1Entry;
-  "LEVEL_77_CAP_SUB_2": Level_77_cap_sub_2Entry;
-  "LEVEL_77_CAP_SUB_3": Level_77_cap_sub_3Entry;
-  "LEVEL_78_CAP": Level_78_capEntry;
-  "LEVEL_78_CAP_SUB_0": Level_78_cap_sub_0Entry;
   "LEVEL_78_CAP_SUB_1": Level_78_cap_sub_1Entry;
   "LEVEL_78_CAP_SUB_2": Level_78_cap_sub_2Entry;
-  "LEVEL_78_CAP_SUB_3": Level_78_cap_sub_3Entry;
-  "LEVEL_79_CAP": Level_79_capEntry;
-  "LEVEL_79_CAP_SUB_0": Level_79_cap_sub_0Entry;
-  "LEVEL_79_CAP_SUB_1": Level_79_cap_sub_1Entry;
   "LEVEL_79_CAP_SUB_2": Level_79_cap_sub_2Entry;
-  "LEVEL_79_CAP_SUB_3": Level_79_cap_sub_3Entry;
-  "LEVEL_80_CAP": Level_80_capEntry;
-  "LEVEL_80_CAP_SUB_0": Level_80_cap_sub_0Entry;
+  "LEVEL_73_CAP_SUB_2": Level_73_cap_sub_2Entry;
+  "LEVEL_77_CAP_SUB_1": Level_77_cap_sub_1Entry;
+  "LEVEL_74_CAP_SUB_3": Level_74_cap_sub_3Entry;
+  "LEVEL_78_CAP_SUB_3": Level_78_cap_sub_3Entry;
+  "LEVEL_76_CAP_SUB_1": Level_76_cap_sub_1Entry;
+  "LEVEL_79_CAP_SUB_1": Level_79_cap_sub_1Entry;
+  "LEVEL_77_CAP_SUB_2": Level_77_cap_sub_2Entry;
   "LEVEL_80_CAP_SUB_1": Level_80_cap_sub_1Entry;
-  "LEVEL_80_CAP_SUB_2": Level_80_cap_sub_2Entry;
-  "LEVEL_80_CAP_SUB_3": Level_80_cap_sub_3Entry;
+  "LEVEL_77_CAP_SUB_3": Level_77_cap_sub_3Entry;
   "WEEKLY_CHALLENGE_PARTY_QUEST": Weekly_challenge_party_questEntry;
   "WEEKLY_CHALLENGE_PARTY_QUEST_WEEK1": Weekly_challenge_party_quest_week1Entry;
   "WEEKLY_CHALLENGE_PARTY_QUEST_WEEK2": Weekly_challenge_party_quest_week2Entry;
@@ -647,4 +647,4 @@ export interface QuestsClientMasterfileByTemplateId {
   "WEEKLY_CHALLENGE_PARTY_QUEST_WEEK4": Weekly_challenge_party_quest_week4Entry;
 }
 
-export type QuestsClientMasterfileEntry = Level_71_capEntry | Level_71_cap_sub_0Entry | Level_71_cap_sub_1Entry | Level_71_cap_sub_2Entry | Level_71_cap_sub_3Entry | Level_72_capEntry | Level_72_cap_sub_0Entry | Level_72_cap_sub_1Entry | Level_72_cap_sub_2Entry | Level_72_cap_sub_3Entry | Level_73_capEntry | Level_73_cap_sub_0Entry | Level_73_cap_sub_1Entry | Level_73_cap_sub_2Entry | Level_73_cap_sub_3Entry | Level_74_capEntry | Level_74_cap_sub_0Entry | Level_74_cap_sub_1Entry | Level_74_cap_sub_2Entry | Level_74_cap_sub_3Entry | Level_75_capEntry | Level_75_cap_sub_0Entry | Level_75_cap_sub_1Entry | Level_75_cap_sub_2Entry | Level_75_cap_sub_3Entry | Level_76_capEntry | Level_76_cap_sub_0Entry | Level_76_cap_sub_1Entry | Level_76_cap_sub_2Entry | Level_76_cap_sub_3Entry | Level_77_capEntry | Level_77_cap_sub_0Entry | Level_77_cap_sub_1Entry | Level_77_cap_sub_2Entry | Level_77_cap_sub_3Entry | Level_78_capEntry | Level_78_cap_sub_0Entry | Level_78_cap_sub_1Entry | Level_78_cap_sub_2Entry | Level_78_cap_sub_3Entry | Level_79_capEntry | Level_79_cap_sub_0Entry | Level_79_cap_sub_1Entry | Level_79_cap_sub_2Entry | Level_79_cap_sub_3Entry | Level_80_capEntry | Level_80_cap_sub_0Entry | Level_80_cap_sub_1Entry | Level_80_cap_sub_2Entry | Level_80_cap_sub_3Entry | Weekly_challenge_party_questEntry | Weekly_challenge_party_quest_week1Entry | Weekly_challenge_party_quest_week2Entry | Weekly_challenge_party_quest_week3Entry | Weekly_challenge_party_quest_week4Entry;
+export type QuestsClientMasterfileEntry = Level_71_capEntry | Level_72_capEntry | Level_73_capEntry | Level_74_capEntry | Level_75_capEntry | Level_76_capEntry | Level_77_capEntry | Level_78_capEntry | Level_79_capEntry | Level_80_capEntry | Level_71_cap_sub_0Entry | Level_72_cap_sub_0Entry | Level_73_cap_sub_0Entry | Level_74_cap_sub_0Entry | Level_75_cap_sub_0Entry | Level_76_cap_sub_0Entry | Level_77_cap_sub_0Entry | Level_78_cap_sub_0Entry | Level_79_cap_sub_0Entry | Level_80_cap_sub_0Entry | Level_71_cap_sub_1Entry | Level_71_cap_sub_3Entry | Level_72_cap_sub_1Entry | Level_72_cap_sub_2Entry | Level_73_cap_sub_3Entry | Level_76_cap_sub_3Entry | Level_79_cap_sub_3Entry | Level_80_cap_sub_3Entry | Level_71_cap_sub_2Entry | Level_75_cap_sub_2Entry | Level_80_cap_sub_2Entry | Level_72_cap_sub_3Entry | Level_73_cap_sub_1Entry | Level_74_cap_sub_1Entry | Level_74_cap_sub_2Entry | Level_75_cap_sub_1Entry | Level_75_cap_sub_3Entry | Level_76_cap_sub_2Entry | Level_78_cap_sub_1Entry | Level_78_cap_sub_2Entry | Level_79_cap_sub_2Entry | Level_73_cap_sub_2Entry | Level_77_cap_sub_1Entry | Level_74_cap_sub_3Entry | Level_78_cap_sub_3Entry | Level_76_cap_sub_1Entry | Level_79_cap_sub_1Entry | Level_77_cap_sub_2Entry | Level_80_cap_sub_1Entry | Level_77_cap_sub_3Entry | Weekly_challenge_party_questEntry | Weekly_challenge_party_quest_week1Entry | Weekly_challenge_party_quest_week2Entry | Weekly_challenge_party_quest_week3Entry | Weekly_challenge_party_quest_week4Entry;

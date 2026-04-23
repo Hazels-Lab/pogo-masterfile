@@ -24,6 +24,10 @@ export interface Energy_costs_pokemon_class_mythicEntry {
   templateId: "ENERGY_COSTS_POKEMON_CLASS_MYTHIC";
   data: Energy_costs_pokemon_class_legendarydata;
 }
+export interface Energy_costs_pokemon_class_ultra_beastEntry {
+  templateId: "ENERGY_COSTS_POKEMON_CLASS_ULTRA_BEAST";
+  data: Energy_costs_pokemon_class_legendarydata;
+}
 export interface Energy_costs_pokemon_class_normaldatapokemonhomeenergycosts {
   base: number;
   cp1001To2000: number;
@@ -37,10 +41,6 @@ export interface Energy_costs_pokemon_class_normaldata {
 export interface Energy_costs_pokemon_class_normalEntry {
   templateId: "ENERGY_COSTS_POKEMON_CLASS_NORMAL";
   data: Energy_costs_pokemon_class_normaldata;
-}
-export interface Energy_costs_pokemon_class_ultra_beastEntry {
-  templateId: "ENERGY_COSTS_POKEMON_CLASS_ULTRA_BEAST";
-  data: Energy_costs_pokemon_class_legendarydata;
 }
 export interface Pokemon_home_settingsdatapokemonhomesettings {
   energySkuId: string;
@@ -101,8 +101,8 @@ export interface V0649_pokemon_genesect_home_form_reversionEntry {
 export interface PokemonHomeMasterfileByTemplateId {
   "ENERGY_COSTS_POKEMON_CLASS_LEGENDARY": Energy_costs_pokemon_class_legendaryEntry;
   "ENERGY_COSTS_POKEMON_CLASS_MYTHIC": Energy_costs_pokemon_class_mythicEntry;
-  "ENERGY_COSTS_POKEMON_CLASS_NORMAL": Energy_costs_pokemon_class_normalEntry;
   "ENERGY_COSTS_POKEMON_CLASS_ULTRA_BEAST": Energy_costs_pokemon_class_ultra_beastEntry;
+  "ENERGY_COSTS_POKEMON_CLASS_NORMAL": Energy_costs_pokemon_class_normalEntry;
   "POKEMON_HOME_SETTINGS": Pokemon_home_settingsEntry;
   "V0351_POKEMON_CASTFORM_HOME_FORM_REVERSION": V0351_pokemon_castform_home_form_reversionEntry;
   "V0421_CHERRIM_HOME_FORM_REVERSION": V0421_cherrim_home_form_reversionEntry;
@@ -113,4 +113,4 @@ export interface PokemonHomeMasterfileByTemplateId {
   "V0649_POKEMON_GENESECT_HOME_FORM_REVERSION": V0649_pokemon_genesect_home_form_reversionEntry;
 }
 
-export type PokemonHomeMasterfileEntry = Energy_costs_pokemon_class_legendaryEntry | Energy_costs_pokemon_class_mythicEntry | Energy_costs_pokemon_class_normalEntry | Energy_costs_pokemon_class_ultra_beastEntry | Pokemon_home_settingsEntry | V0351_pokemon_castform_home_form_reversionEntry | V0421_cherrim_home_form_reversionEntry | V0487_pokemon_giratina_home_reversionEntry | V0555_pokemon_darmanitan_home_form_reversionEntry | V0647_pokemon_keldeo_home_form_reversionEntry | V0648_pokemon_meloetta_home_form_reversionEntry | V0649_pokemon_genesect_home_form_reversionEntry;
+export type PokemonHomeMasterfileEntry = Energy_costs_pokemon_class_legendaryEntry | Energy_costs_pokemon_class_mythicEntry | Energy_costs_pokemon_class_ultra_beastEntry | Energy_costs_pokemon_class_normalEntry | Pokemon_home_settingsEntry | V0351_pokemon_castform_home_form_reversionEntry | V0421_cherrim_home_form_reversionEntry | V0487_pokemon_giratina_home_reversionEntry | V0555_pokemon_darmanitan_home_form_reversionEntry | V0647_pokemon_keldeo_home_form_reversionEntry | V0648_pokemon_meloetta_home_form_reversionEntry | V0649_pokemon_genesect_home_form_reversionEntry;

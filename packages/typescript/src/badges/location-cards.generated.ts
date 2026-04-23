@@ -73,19 +73,6 @@ export interface Lc_2024_losangeles_gotour_001Entry {
   templateId: "LC_2024_LOSANGELES_GOTOUR_001";
   data: Lc_2023_barcelona_citysafari_001data;
 }
-export interface Lc_2024_madrid_gofest_001datalocationcardsettings {
-  cardType: string;
-  imageUrl: string;
-  locationCard: string;
-}
-export interface Lc_2024_madrid_gofest_001data {
-  locationCardSettings: Lc_2024_madrid_gofest_001datalocationcardsettings;
-  templateId: string;
-}
-export interface Lc_2024_madrid_gofest_001Entry {
-  templateId: "LC_2024_MADRID_GOFEST_001";
-  data: Lc_2024_madrid_gofest_001data;
-}
 export interface Lc_2024_milan_citysafari_001Entry {
   templateId: "LC_2024_MILAN_CITYSAFARI_001";
   data: Lc_2023_barcelona_citysafari_001data;
@@ -150,10 +137,6 @@ export interface Lc_2024_mumbai_citysafari_001Entry {
   templateId: "LC_2024_MUMBAI_CITYSAFARI_001";
   data: Lc_2023_barcelona_citysafari_001data;
 }
-export interface Lc_2024_nyc_gofest_001Entry {
-  templateId: "LC_2024_NYC_GOFEST_001";
-  data: Lc_2024_madrid_gofest_001data;
-}
 export interface Lc_2024_santiago_citysafari_001Entry {
   templateId: "LC_2024_SANTIAGO_CITYSAFARI_001";
   data: Lc_2023_barcelona_citysafari_001data;
@@ -161,10 +144,6 @@ export interface Lc_2024_santiago_citysafari_001Entry {
 export interface Lc_2024_saopaulo_citysafari_001Entry {
   templateId: "LC_2024_SAOPAULO_CITYSAFARI_001";
   data: Lc_2023_barcelona_citysafari_001data;
-}
-export interface Lc_2024_sendai_gofest_001Entry {
-  templateId: "LC_2024_SENDAI_GOFEST_001";
-  data: Lc_2024_madrid_gofest_001data;
 }
 export interface Lc_2024_singapore_citysafari_001Entry {
   templateId: "LC_2024_SINGAPORE_CITYSAFARI_001";
@@ -222,10 +201,6 @@ export interface Lc_2025_jangheung_summer_festivalEntry {
   templateId: "LC_2025_JANGHEUNG_SUMMER_FESTIVAL";
   data: Lc_2023_barcelona_citysafari_001data;
 }
-export interface Lc_2025_jerseycity_gofest_001Entry {
-  templateId: "LC_2025_JERSEYCITY_GOFEST_001";
-  data: Lc_2024_madrid_gofest_001data;
-}
 export interface Lc_2025_kr_pyeongchang_winter_festivalEntry {
   templateId: "LC_2025_KR_PYEONGCHANG_WINTER_FESTIVAL";
   data: Lc_2023_barcelona_citysafari_001data;
@@ -234,17 +209,9 @@ export interface Lc_2025_london_roadtrip_001Entry {
   templateId: "LC_2025_LONDON_ROADTRIP_001";
   data: Lc_2023_barcelona_citysafari_001data;
 }
-export interface Lc_2025_losangeles_gotour_001Entry {
-  templateId: "LC_2025_LOSANGELES_GOTOUR_001";
-  data: Lc_2024_madrid_gofest_001data;
-}
 export interface Lc_2025_manchester_roadtrip_001Entry {
   templateId: "LC_2025_MANCHESTER_ROADTRIP_001";
   data: Lc_2023_barcelona_citysafari_001data;
-}
-export interface Lc_2025_newtaipeicity_gotour_001Entry {
-  templateId: "LC_2025_NEWTAIPEICITY_GOTOUR_001";
-  data: Lc_2024_madrid_gofest_001data;
 }
 export interface Lc_2025_nfl_001Entry {
   templateId: "LC_2025_NFL_001";
@@ -262,10 +229,6 @@ export interface Lc_2025_osaka_event_003Entry {
   templateId: "LC_2025_OSAKA_EVENT_003";
   data: Lc_2023_barcelona_citysafari_001data;
 }
-export interface Lc_2025_osaka_gofest_001Entry {
-  templateId: "LC_2025_OSAKA_GOFEST_001";
-  data: Lc_2024_madrid_gofest_001data;
-}
 export interface Lc_2025_paris_001Entry {
   templateId: "LC_2025_PARIS_001";
   data: Lc_2023_barcelona_citysafari_001data;
@@ -273,10 +236,6 @@ export interface Lc_2025_paris_001Entry {
 export interface Lc_2025_paris_002Entry {
   templateId: "LC_2025_PARIS_002";
   data: Lc_2023_barcelona_citysafari_001data;
-}
-export interface Lc_2025_paris_gofest_001Entry {
-  templateId: "LC_2025_PARIS_GOFEST_001";
-  data: Lc_2024_madrid_gofest_001data;
 }
 export interface Lc_2025_paris_roadtrip_001Entry {
   templateId: "LC_2025_PARIS_ROADTRIP_001";
@@ -301,10 +260,6 @@ export interface Lc_2025_vancouver_citysafari_001Entry {
 export interface Lc_2026_cologne_carnival_001Entry {
   templateId: "LC_2026_COLOGNE_CARNIVAL_001";
   data: Lc_2023_barcelona_citysafari_001data;
-}
-export interface Lc_2026_losangeles_gotour_001Entry {
-  templateId: "LC_2026_LOSANGELES_GOTOUR_001";
-  data: Lc_2024_madrid_gofest_001data;
 }
 export interface Lc_2026_npb_001Entry {
   templateId: "LC_2026_NPB_001";
@@ -365,10 +320,6 @@ export interface Lc_2026_ppk_001Entry {
 export interface Lc_2026_riodejaneiro_carnival_001Entry {
   templateId: "LC_2026_RIODEJANEIRO_CARNIVAL_001";
   data: Lc_2023_barcelona_citysafari_001data;
-}
-export interface Lc_2026_tainan_gotour_001Entry {
-  templateId: "LC_2026_TAINAN_GOTOUR_001";
-  data: Lc_2024_madrid_gofest_001data;
 }
 export interface Lc_citysafari2025_buenosairesEntry {
   templateId: "LC_CITYSAFARI2025_BUENOSAIRES";
@@ -554,8 +505,85 @@ export interface Lc_pokelid_yamaguchiEntry {
   templateId: "LC_POKELID_YAMAGUCHI";
   data: Lc_2023_barcelona_citysafari_001data;
 }
+export interface Lc_specialbackground_extra_2025_02Entry {
+  templateId: "LC_SPECIALBACKGROUND_EXTRA_2025_02";
+  data: Lc_2023_barcelona_citysafari_001data;
+}
+export interface Lc_specialbackground_kr2025_lotte_01Entry {
+  templateId: "LC_SPECIALBACKGROUND_KR2025_LOTTE_01";
+  data: Lc_2023_barcelona_citysafari_001data;
+}
+export interface Lc_2024_madrid_gofest_001datalocationcardsettings {
+  cardType: string;
+  imageUrl: string;
+  locationCard: string;
+}
+export interface Lc_2024_madrid_gofest_001data {
+  locationCardSettings: Lc_2024_madrid_gofest_001datalocationcardsettings;
+  templateId: string;
+}
+export interface Lc_2024_madrid_gofest_001Entry {
+  templateId: "LC_2024_MADRID_GOFEST_001";
+  data: Lc_2024_madrid_gofest_001data;
+}
+export interface Lc_2024_nyc_gofest_001Entry {
+  templateId: "LC_2024_NYC_GOFEST_001";
+  data: Lc_2024_madrid_gofest_001data;
+}
+export interface Lc_2024_sendai_gofest_001Entry {
+  templateId: "LC_2024_SENDAI_GOFEST_001";
+  data: Lc_2024_madrid_gofest_001data;
+}
+export interface Lc_2025_jerseycity_gofest_001Entry {
+  templateId: "LC_2025_JERSEYCITY_GOFEST_001";
+  data: Lc_2024_madrid_gofest_001data;
+}
+export interface Lc_2025_losangeles_gotour_001Entry {
+  templateId: "LC_2025_LOSANGELES_GOTOUR_001";
+  data: Lc_2024_madrid_gofest_001data;
+}
+export interface Lc_2025_newtaipeicity_gotour_001Entry {
+  templateId: "LC_2025_NEWTAIPEICITY_GOTOUR_001";
+  data: Lc_2024_madrid_gofest_001data;
+}
+export interface Lc_2025_osaka_gofest_001Entry {
+  templateId: "LC_2025_OSAKA_GOFEST_001";
+  data: Lc_2024_madrid_gofest_001data;
+}
+export interface Lc_2025_paris_gofest_001Entry {
+  templateId: "LC_2025_PARIS_GOFEST_001";
+  data: Lc_2024_madrid_gofest_001data;
+}
+export interface Lc_2026_losangeles_gotour_001Entry {
+  templateId: "LC_2026_LOSANGELES_GOTOUR_001";
+  data: Lc_2024_madrid_gofest_001data;
+}
+export interface Lc_2026_tainan_gotour_001Entry {
+  templateId: "LC_2026_TAINAN_GOTOUR_001";
+  data: Lc_2024_madrid_gofest_001data;
+}
 export interface Lc_specialbackground_2024_decembercdrecapEntry {
   templateId: "LC_SPECIALBACKGROUND_2024_DECEMBERCDRECAP";
+  data: Lc_2024_madrid_gofest_001data;
+}
+export interface Lc_specialbackground_2024_global_gowa_001Entry {
+  templateId: "LC_SPECIALBACKGROUND_2024_GLOBAL_GOWA_001";
+  data: Lc_2024_madrid_gofest_001data;
+}
+export interface Lc_specialbackground_2025_season17Entry {
+  templateId: "LC_SPECIALBACKGROUND_2025_SEASON17";
+  data: Lc_2024_madrid_gofest_001data;
+}
+export interface Lc_specialbackground_con2025Entry {
+  templateId: "LC_SPECIALBACKGROUND_CON2025";
+  data: Lc_2024_madrid_gofest_001data;
+}
+export interface Lc_specialbackground_observatory_exhibition_tourEntry {
+  templateId: "LC_SPECIALBACKGROUND_OBSERVATORY_EXHIBITION_TOUR";
+  data: Lc_2024_madrid_gofest_001data;
+}
+export interface Lc_specialbackground_pok2026Entry {
+  templateId: "LC_SPECIALBACKGROUND_POK2026";
   data: Lc_2024_madrid_gofest_001data;
 }
 export interface Lc_specialbackground_2024_global_gofest_radiance_001datalocationcardsettings {
@@ -575,10 +603,6 @@ export interface Lc_specialbackground_2024_global_gofest_radiance_001Entry {
 export interface Lc_specialbackground_2024_global_gofest_umbra_001Entry {
   templateId: "LC_SPECIALBACKGROUND_2024_GLOBAL_GOFEST_UMBRA_001";
   data: Lc_specialbackground_2024_global_gofest_radiance_001data;
-}
-export interface Lc_specialbackground_2024_global_gowa_001Entry {
-  templateId: "LC_SPECIALBACKGROUND_2024_GLOBAL_GOWA_001";
-  data: Lc_2024_madrid_gofest_001data;
 }
 export interface Lc_specialbackground_2025_9thanniversaryEntry {
   templateId: "LC_SPECIALBACKGROUND_2025_9THANNIVERSARY";
@@ -652,10 +676,6 @@ export interface Lc_specialbackground_2025_s18Entry {
   templateId: "LC_SPECIALBACKGROUND_2025_S18";
   data: Lc_specialbackground_2024_global_gofest_radiance_001data;
 }
-export interface Lc_specialbackground_2025_season17Entry {
-  templateId: "LC_SPECIALBACKGROUND_2025_SEASON17";
-  data: Lc_2024_madrid_gofest_001data;
-}
 export interface Lc_specialbackground_2025_season19Entry {
   templateId: "LC_SPECIALBACKGROUND_2025_SEASON19";
   data: Lc_specialbackground_2024_global_gofest_radiance_001data;
@@ -671,19 +691,6 @@ export interface Lc_specialbackground_2026_communitydayEntry {
 export interface Lc_specialbackground_2026_global_diamond_001Entry {
   templateId: "LC_SPECIALBACKGROUND_2026_GLOBAL_DIAMOND_001";
   data: Lc_specialbackground_2024_global_gofest_radiance_001data;
-}
-export interface Lc_specialbackground_2026_global_gofest_001datalocationcardsettings {
-  cardType: string;
-  imageUrl: string;
-  locationCard: number;
-}
-export interface Lc_specialbackground_2026_global_gofest_001data {
-  locationCardSettings: Lc_specialbackground_2026_global_gofest_001datalocationcardsettings;
-  templateId: string;
-}
-export interface Lc_specialbackground_2026_global_gofest_001Entry {
-  templateId: "LC_SPECIALBACKGROUND_2026_GLOBAL_GOFEST_001";
-  data: Lc_specialbackground_2026_global_gofest_001data;
 }
 export interface Lc_specialbackground_2026_global_gold_001Entry {
   templateId: "LC_SPECIALBACKGROUND_2026_GLOBAL_GOLD_001";
@@ -717,29 +724,9 @@ export interface Lc_specialbackground_2026_global_y_001Entry {
   templateId: "LC_SPECIALBACKGROUND_2026_GLOBAL_Y_001";
   data: Lc_specialbackground_2024_global_gofest_radiance_001data;
 }
-export interface Lc_specialbackground_con2025Entry {
-  templateId: "LC_SPECIALBACKGROUND_CON2025";
-  data: Lc_2024_madrid_gofest_001data;
-}
 export interface Lc_specialbackground_extra_2025_01Entry {
   templateId: "LC_SPECIALBACKGROUND_EXTRA_2025_01";
   data: Lc_specialbackground_2024_global_gofest_radiance_001data;
-}
-export interface Lc_specialbackground_extra_2025_02Entry {
-  templateId: "LC_SPECIALBACKGROUND_EXTRA_2025_02";
-  data: Lc_2023_barcelona_citysafari_001data;
-}
-export interface Lc_specialbackground_kr2025_lotte_01Entry {
-  templateId: "LC_SPECIALBACKGROUND_KR2025_LOTTE_01";
-  data: Lc_2023_barcelona_citysafari_001data;
-}
-export interface Lc_specialbackground_observatory_exhibition_tourEntry {
-  templateId: "LC_SPECIALBACKGROUND_OBSERVATORY_EXHIBITION_TOUR";
-  data: Lc_2024_madrid_gofest_001data;
-}
-export interface Lc_specialbackground_pok2026Entry {
-  templateId: "LC_SPECIALBACKGROUND_POK2026";
-  data: Lc_2024_madrid_gofest_001data;
 }
 export interface Lc_specialbackground_team_blueEntry {
   templateId: "LC_SPECIALBACKGROUND_TEAM_BLUE";
@@ -765,6 +752,19 @@ export interface Lc_special_background_2024_global_gofest_ultra_wormhole_001Entr
   templateId: "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_ULTRA_WORMHOLE_001";
   data: Lc_specialbackground_2024_global_gofest_radiance_001data;
 }
+export interface Lc_specialbackground_2026_global_gofest_001datalocationcardsettings {
+  cardType: string;
+  imageUrl: string;
+  locationCard: number;
+}
+export interface Lc_specialbackground_2026_global_gofest_001data {
+  locationCardSettings: Lc_specialbackground_2026_global_gofest_001datalocationcardsettings;
+  templateId: string;
+}
+export interface Lc_specialbackground_2026_global_gofest_001Entry {
+  templateId: "LC_SPECIALBACKGROUND_2026_GLOBAL_GOFEST_001";
+  data: Lc_specialbackground_2026_global_gofest_001data;
+}
 
 export interface BadgesLocationCardsMasterfileByTemplateId {
   "LC_2023_BARCELONA_CITYSAFARI_001": Lc_2023_barcelona_citysafari_001Entry;
@@ -782,7 +782,6 @@ export interface BadgesLocationCardsMasterfileByTemplateId {
   "LC_2024_INCHEON_SAFARI_ZONE_001": Lc_2024_incheon_safari_zone_001Entry;
   "LC_2024_JAKARTA_AIRADVENTURES_001": Lc_2024_jakarta_airadventures_001Entry;
   "LC_2024_LOSANGELES_GOTOUR_001": Lc_2024_losangeles_gotour_001Entry;
-  "LC_2024_MADRID_GOFEST_001": Lc_2024_madrid_gofest_001Entry;
   "LC_2024_MILAN_CITYSAFARI_001": Lc_2024_milan_citysafari_001Entry;
   "LC_2024_MLB_001": Lc_2024_mlb_001Entry;
   "LC_2024_MLB_002": Lc_2024_mlb_002Entry;
@@ -799,10 +798,8 @@ export interface BadgesLocationCardsMasterfileByTemplateId {
   "LC_2024_MLB_013": Lc_2024_mlb_013Entry;
   "LC_2024_MLB_014": Lc_2024_mlb_014Entry;
   "LC_2024_MUMBAI_CITYSAFARI_001": Lc_2024_mumbai_citysafari_001Entry;
-  "LC_2024_NYC_GOFEST_001": Lc_2024_nyc_gofest_001Entry;
   "LC_2024_SANTIAGO_CITYSAFARI_001": Lc_2024_santiago_citysafari_001Entry;
   "LC_2024_SAOPAULO_CITYSAFARI_001": Lc_2024_saopaulo_citysafari_001Entry;
-  "LC_2024_SENDAI_GOFEST_001": Lc_2024_sendai_gofest_001Entry;
   "LC_2024_SINGAPORE_CITYSAFARI_001": Lc_2024_singapore_citysafari_001Entry;
   "LC_2024_SURABAYA_AIRADVENTURES_001": Lc_2024_surabaya_airadventures_001Entry;
   "LC_2024_TAINAN_CITYSAFARI_001": Lc_2024_tainan_citysafari_001Entry;
@@ -817,27 +814,21 @@ export interface BadgesLocationCardsMasterfileByTemplateId {
   "LC_2025_GOWA_NAGASAKI": Lc_2025_gowa_nagasakiEntry;
   "LC_2025_HAGUE_ROADTRIP_001": Lc_2025_hague_roadtrip_001Entry;
   "LC_2025_JANGHEUNG_SUMMER_FESTIVAL": Lc_2025_jangheung_summer_festivalEntry;
-  "LC_2025_JERSEYCITY_GOFEST_001": Lc_2025_jerseycity_gofest_001Entry;
   "LC_2025_KR_PYEONGCHANG_WINTER_FESTIVAL": Lc_2025_kr_pyeongchang_winter_festivalEntry;
   "LC_2025_LONDON_ROADTRIP_001": Lc_2025_london_roadtrip_001Entry;
-  "LC_2025_LOSANGELES_GOTOUR_001": Lc_2025_losangeles_gotour_001Entry;
   "LC_2025_MANCHESTER_ROADTRIP_001": Lc_2025_manchester_roadtrip_001Entry;
-  "LC_2025_NEWTAIPEICITY_GOTOUR_001": Lc_2025_newtaipeicity_gotour_001Entry;
   "LC_2025_NFL_001": Lc_2025_nfl_001Entry;
   "LC_2025_OSAKA_EVENT_001": Lc_2025_osaka_event_001Entry;
   "LC_2025_OSAKA_EVENT_002": Lc_2025_osaka_event_002Entry;
   "LC_2025_OSAKA_EVENT_003": Lc_2025_osaka_event_003Entry;
-  "LC_2025_OSAKA_GOFEST_001": Lc_2025_osaka_gofest_001Entry;
   "LC_2025_PARIS_001": Lc_2025_paris_001Entry;
   "LC_2025_PARIS_002": Lc_2025_paris_002Entry;
-  "LC_2025_PARIS_GOFEST_001": Lc_2025_paris_gofest_001Entry;
   "LC_2025_PARIS_ROADTRIP_001": Lc_2025_paris_roadtrip_001Entry;
   "LC_2025_TAIPEICITY_AMUSEMENT_PARK": Lc_2025_taipeicity_amusement_parkEntry;
   "LC_2025_VALENCIA_CITYSAFARI_001": Lc_2025_valencia_citysafari_001Entry;
   "LC_2025_VALENCIA_ROADTRIP_001": Lc_2025_valencia_roadtrip_001Entry;
   "LC_2025_VANCOUVER_CITYSAFARI_001": Lc_2025_vancouver_citysafari_001Entry;
   "LC_2026_COLOGNE_CARNIVAL_001": Lc_2026_cologne_carnival_001Entry;
-  "LC_2026_LOSANGELES_GOTOUR_001": Lc_2026_losangeles_gotour_001Entry;
   "LC_2026_NPB_001": Lc_2026_npb_001Entry;
   "LC_2026_NPB_002": Lc_2026_npb_002Entry;
   "LC_2026_NPB_003": Lc_2026_npb_003Entry;
@@ -853,7 +844,6 @@ export interface BadgesLocationCardsMasterfileByTemplateId {
   "LC_2026_NPB_013": Lc_2026_npb_013Entry;
   "LC_2026_PPK_001": Lc_2026_ppk_001Entry;
   "LC_2026_RIODEJANEIRO_CARNIVAL_001": Lc_2026_riodejaneiro_carnival_001Entry;
-  "LC_2026_TAINAN_GOTOUR_001": Lc_2026_tainan_gotour_001Entry;
   "LC_CITYSAFARI2025_BUENOSAIRES": Lc_citysafari2025_buenosairesEntry;
   "LC_CITYSAFARI2025_MIAMI": Lc_citysafari2025_miamiEntry;
   "LC_CITYSAFARI2025_SYDNEY": Lc_citysafari2025_sydneyEntry;
@@ -900,10 +890,26 @@ export interface BadgesLocationCardsMasterfileByTemplateId {
   "LC_POKELID_WAKAYAMA": Lc_pokelid_wakayamaEntry;
   "LC_POKELID_YAMAGATA": Lc_pokelid_yamagataEntry;
   "LC_POKELID_YAMAGUCHI": Lc_pokelid_yamaguchiEntry;
+  "LC_SPECIALBACKGROUND_EXTRA_2025_02": Lc_specialbackground_extra_2025_02Entry;
+  "LC_SPECIALBACKGROUND_KR2025_LOTTE_01": Lc_specialbackground_kr2025_lotte_01Entry;
+  "LC_2024_MADRID_GOFEST_001": Lc_2024_madrid_gofest_001Entry;
+  "LC_2024_NYC_GOFEST_001": Lc_2024_nyc_gofest_001Entry;
+  "LC_2024_SENDAI_GOFEST_001": Lc_2024_sendai_gofest_001Entry;
+  "LC_2025_JERSEYCITY_GOFEST_001": Lc_2025_jerseycity_gofest_001Entry;
+  "LC_2025_LOSANGELES_GOTOUR_001": Lc_2025_losangeles_gotour_001Entry;
+  "LC_2025_NEWTAIPEICITY_GOTOUR_001": Lc_2025_newtaipeicity_gotour_001Entry;
+  "LC_2025_OSAKA_GOFEST_001": Lc_2025_osaka_gofest_001Entry;
+  "LC_2025_PARIS_GOFEST_001": Lc_2025_paris_gofest_001Entry;
+  "LC_2026_LOSANGELES_GOTOUR_001": Lc_2026_losangeles_gotour_001Entry;
+  "LC_2026_TAINAN_GOTOUR_001": Lc_2026_tainan_gotour_001Entry;
   "LC_SPECIALBACKGROUND_2024_DECEMBERCDRECAP": Lc_specialbackground_2024_decembercdrecapEntry;
+  "LC_SPECIALBACKGROUND_2024_GLOBAL_GOWA_001": Lc_specialbackground_2024_global_gowa_001Entry;
+  "LC_SPECIALBACKGROUND_2025_SEASON17": Lc_specialbackground_2025_season17Entry;
+  "LC_SPECIALBACKGROUND_CON2025": Lc_specialbackground_con2025Entry;
+  "LC_SPECIALBACKGROUND_OBSERVATORY_EXHIBITION_TOUR": Lc_specialbackground_observatory_exhibition_tourEntry;
+  "LC_SPECIALBACKGROUND_POK2026": Lc_specialbackground_pok2026Entry;
   "LC_SPECIALBACKGROUND_2024_GLOBAL_GOFEST_RADIANCE_001": Lc_specialbackground_2024_global_gofest_radiance_001Entry;
   "LC_SPECIALBACKGROUND_2024_GLOBAL_GOFEST_UMBRA_001": Lc_specialbackground_2024_global_gofest_umbra_001Entry;
-  "LC_SPECIALBACKGROUND_2024_GLOBAL_GOWA_001": Lc_specialbackground_2024_global_gowa_001Entry;
   "LC_SPECIALBACKGROUND_2025_9THANNIVERSARY": Lc_specialbackground_2025_9thanniversaryEntry;
   "LC_SPECIALBACKGROUND_2025_GLOBAL_ENIGMA_001": Lc_specialbackground_2025_global_enigma_001Entry;
   "LC_SPECIALBACKGROUND_2025_GLOBAL_GOFEST_DD_001": Lc_specialbackground_2025_global_gofest_dd_001Entry;
@@ -922,12 +928,10 @@ export interface BadgesLocationCardsMasterfileByTemplateId {
   "LC_SPECIALBACKGROUND_2025_GLOBAL_GOTOUR_WHITE_001": Lc_specialbackground_2025_global_gotour_white_001Entry;
   "LC_SPECIALBACKGROUND_2025_GOWA_GLOBAL": Lc_specialbackground_2025_gowa_globalEntry;
   "LC_SPECIALBACKGROUND_2025_S18": Lc_specialbackground_2025_s18Entry;
-  "LC_SPECIALBACKGROUND_2025_SEASON17": Lc_specialbackground_2025_season17Entry;
   "LC_SPECIALBACKGROUND_2025_SEASON19": Lc_specialbackground_2025_season19Entry;
   "LC_SPECIALBACKGROUND_2025_SEASON20": Lc_specialbackground_2025_season20Entry;
   "LC_SPECIALBACKGROUND_2026_COMMUNITYDAY": Lc_specialbackground_2026_communitydayEntry;
   "LC_SPECIALBACKGROUND_2026_GLOBAL_DIAMOND_001": Lc_specialbackground_2026_global_diamond_001Entry;
-  "LC_SPECIALBACKGROUND_2026_GLOBAL_GOFEST_001": Lc_specialbackground_2026_global_gofest_001Entry;
   "LC_SPECIALBACKGROUND_2026_GLOBAL_GOLD_001": Lc_specialbackground_2026_global_gold_001Entry;
   "LC_SPECIALBACKGROUND_2026_GLOBAL_MEGA_001": Lc_specialbackground_2026_global_mega_001Entry;
   "LC_SPECIALBACKGROUND_2026_GLOBAL_PEARL_001": Lc_specialbackground_2026_global_pearl_001Entry;
@@ -936,18 +940,14 @@ export interface BadgesLocationCardsMasterfileByTemplateId {
   "LC_SPECIALBACKGROUND_2026_GLOBAL_SILVER_001": Lc_specialbackground_2026_global_silver_001Entry;
   "LC_SPECIALBACKGROUND_2026_GLOBAL_X_001": Lc_specialbackground_2026_global_x_001Entry;
   "LC_SPECIALBACKGROUND_2026_GLOBAL_Y_001": Lc_specialbackground_2026_global_y_001Entry;
-  "LC_SPECIALBACKGROUND_CON2025": Lc_specialbackground_con2025Entry;
   "LC_SPECIALBACKGROUND_EXTRA_2025_01": Lc_specialbackground_extra_2025_01Entry;
-  "LC_SPECIALBACKGROUND_EXTRA_2025_02": Lc_specialbackground_extra_2025_02Entry;
-  "LC_SPECIALBACKGROUND_KR2025_LOTTE_01": Lc_specialbackground_kr2025_lotte_01Entry;
-  "LC_SPECIALBACKGROUND_OBSERVATORY_EXHIBITION_TOUR": Lc_specialbackground_observatory_exhibition_tourEntry;
-  "LC_SPECIALBACKGROUND_POK2026": Lc_specialbackground_pok2026Entry;
   "LC_SPECIALBACKGROUND_TEAM_BLUE": Lc_specialbackground_team_blueEntry;
   "LC_SPECIALBACKGROUND_TEAM_RED": Lc_specialbackground_team_redEntry;
   "LC_SPECIALBACKGROUND_TEAM_YELLOW": Lc_specialbackground_team_yellowEntry;
   "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_MOON_ULTRA_WORMHOLE_001": Lc_special_background_2024_global_gofest_moon_ultra_wormhole_001Entry;
   "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_SUN_ULTRA_WORMHOLE_001": Lc_special_background_2024_global_gofest_sun_ultra_wormhole_001Entry;
   "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_ULTRA_WORMHOLE_001": Lc_special_background_2024_global_gofest_ultra_wormhole_001Entry;
+  "LC_SPECIALBACKGROUND_2026_GLOBAL_GOFEST_001": Lc_specialbackground_2026_global_gofest_001Entry;
 }
 
-export type BadgesLocationCardsMasterfileEntry = Lc_2023_barcelona_citysafari_001Entry | Lc_2023_jeju_airadventures_001Entry | Lc_2023_lasvegas_gotour_001Entry | Lc_2023_london_gofest_001Entry | Lc_2023_mexicocity_citysafari_001Entry | Lc_2023_nyc_gofest_001Entry | Lc_2023_osaka_gofest_001Entry | Lc_2023_seoul_citysafari_001Entry | Lc_2024_bali_airadventures_001Entry | Lc_2024_fukuoka_gowa_001Entry | Lc_2024_hongkong_citysafari_001Entry | Lc_2024_honolulu_world_championships_001Entry | Lc_2024_incheon_safari_zone_001Entry | Lc_2024_jakarta_airadventures_001Entry | Lc_2024_losangeles_gotour_001Entry | Lc_2024_madrid_gofest_001Entry | Lc_2024_milan_citysafari_001Entry | Lc_2024_mlb_001Entry | Lc_2024_mlb_002Entry | Lc_2024_mlb_003Entry | Lc_2024_mlb_004Entry | Lc_2024_mlb_005Entry | Lc_2024_mlb_006Entry | Lc_2024_mlb_007Entry | Lc_2024_mlb_008Entry | Lc_2024_mlb_009Entry | Lc_2024_mlb_010Entry | Lc_2024_mlb_011Entry | Lc_2024_mlb_012Entry | Lc_2024_mlb_013Entry | Lc_2024_mlb_014Entry | Lc_2024_mumbai_citysafari_001Entry | Lc_2024_nyc_gofest_001Entry | Lc_2024_santiago_citysafari_001Entry | Lc_2024_saopaulo_citysafari_001Entry | Lc_2024_sendai_gofest_001Entry | Lc_2024_singapore_citysafari_001Entry | Lc_2024_surabaya_airadventures_001Entry | Lc_2024_tainan_citysafari_001Entry | Lc_2024_yogyakarta_airadventures_001Entry | Lc_2025_amsterdam_citysafari_001Entry | Lc_2025_anaheim_world_championships_001Entry | Lc_2025_bangkok_citysafari_001Entry | Lc_2025_berlin_roadtrip_001Entry | Lc_2025_cancun_citysafari_001Entry | Lc_2025_cherry_blossom_festivalEntry | Lc_2025_cologne_roadtrip_001Entry | Lc_2025_gowa_nagasakiEntry | Lc_2025_hague_roadtrip_001Entry | Lc_2025_jangheung_summer_festivalEntry | Lc_2025_jerseycity_gofest_001Entry | Lc_2025_kr_pyeongchang_winter_festivalEntry | Lc_2025_london_roadtrip_001Entry | Lc_2025_losangeles_gotour_001Entry | Lc_2025_manchester_roadtrip_001Entry | Lc_2025_newtaipeicity_gotour_001Entry | Lc_2025_nfl_001Entry | Lc_2025_osaka_event_001Entry | Lc_2025_osaka_event_002Entry | Lc_2025_osaka_event_003Entry | Lc_2025_osaka_gofest_001Entry | Lc_2025_paris_001Entry | Lc_2025_paris_002Entry | Lc_2025_paris_gofest_001Entry | Lc_2025_paris_roadtrip_001Entry | Lc_2025_taipeicity_amusement_parkEntry | Lc_2025_valencia_citysafari_001Entry | Lc_2025_valencia_roadtrip_001Entry | Lc_2025_vancouver_citysafari_001Entry | Lc_2026_cologne_carnival_001Entry | Lc_2026_losangeles_gotour_001Entry | Lc_2026_npb_001Entry | Lc_2026_npb_002Entry | Lc_2026_npb_003Entry | Lc_2026_npb_004Entry | Lc_2026_npb_005Entry | Lc_2026_npb_006Entry | Lc_2026_npb_007Entry | Lc_2026_npb_008Entry | Lc_2026_npb_009Entry | Lc_2026_npb_010Entry | Lc_2026_npb_011Entry | Lc_2026_npb_012Entry | Lc_2026_npb_013Entry | Lc_2026_ppk_001Entry | Lc_2026_riodejaneiro_carnival_001Entry | Lc_2026_tainan_gotour_001Entry | Lc_citysafari2025_buenosairesEntry | Lc_citysafari2025_miamiEntry | Lc_citysafari2025_sydneyEntry | Lc_id_car_free_dayEntry | Lc_jeju_stamp_rallyEntry | Lc_pokelid_aichiEntry | Lc_pokelid_akitaEntry | Lc_pokelid_aomoriEntry | Lc_pokelid_chibaEntry | Lc_pokelid_ehimeEntry | Lc_pokelid_fukuiEntry | Lc_pokelid_fukuokaEntry | Lc_pokelid_fukushimaEntry | Lc_pokelid_gifuEntry | Lc_pokelid_hokkaidoEntry | Lc_pokelid_hyogoEntry | Lc_pokelid_ibarakiEntry | Lc_pokelid_ishikawaEntry | Lc_pokelid_iwateEntry | Lc_pokelid_kagawaEntry | Lc_pokelid_kagoshimaEntry | Lc_pokelid_kanagawaEntry | Lc_pokelid_kochiEntry | Lc_pokelid_kyotoEntry | Lc_pokelid_mieEntry | Lc_pokelid_miyagiEntry | Lc_pokelid_miyazakiEntry | Lc_pokelid_nagasakiEntry | Lc_pokelid_naraEntry | Lc_pokelid_niigataEntry | Lc_pokelid_okayamaEntry | Lc_pokelid_okinawaEntry | Lc_pokelid_osakaEntry | Lc_pokelid_sagaEntry | Lc_pokelid_saitamaEntry | Lc_pokelid_shigaEntry | Lc_pokelid_shimaneEntry | Lc_pokelid_shizuokaEntry | Lc_pokelid_tochigiEntry | Lc_pokelid_tokushimaEntry | Lc_pokelid_tokyoEntry | Lc_pokelid_tottoriEntry | Lc_pokelid_toyamaEntry | Lc_pokelid_wakayamaEntry | Lc_pokelid_yamagataEntry | Lc_pokelid_yamaguchiEntry | Lc_specialbackground_2024_decembercdrecapEntry | Lc_specialbackground_2024_global_gofest_radiance_001Entry | Lc_specialbackground_2024_global_gofest_umbra_001Entry | Lc_specialbackground_2024_global_gowa_001Entry | Lc_specialbackground_2025_9thanniversaryEntry | Lc_specialbackground_2025_global_enigma_001Entry | Lc_specialbackground_2025_global_gofest_dd_001Entry | Lc_specialbackground_2025_global_gofest_regi_001Entry | Lc_specialbackground_2025_global_gofest_regi_002Entry | Lc_specialbackground_2025_global_gofest_regi_003Entry | Lc_specialbackground_2025_global_gofest_regi_004Entry | Lc_specialbackground_2025_global_gofest_regi_005Entry | Lc_specialbackground_2025_global_gofest_regi_006Entry | Lc_specialbackground_2025_global_gofest_shield_001Entry | Lc_specialbackground_2025_global_gofest_shield_crowned_001Entry | Lc_specialbackground_2025_global_gofest_sword_001Entry | Lc_specialbackground_2025_global_gofest_sword_crowned_001Entry | Lc_specialbackground_2025_global_gotour_black_001Entry | Lc_specialbackground_2025_global_gotour_black_white_001Entry | Lc_specialbackground_2025_global_gotour_white_001Entry | Lc_specialbackground_2025_gowa_globalEntry | Lc_specialbackground_2025_s18Entry | Lc_specialbackground_2025_season17Entry | Lc_specialbackground_2025_season19Entry | Lc_specialbackground_2025_season20Entry | Lc_specialbackground_2026_communitydayEntry | Lc_specialbackground_2026_global_diamond_001Entry | Lc_specialbackground_2026_global_gofest_001Entry | Lc_specialbackground_2026_global_gold_001Entry | Lc_specialbackground_2026_global_mega_001Entry | Lc_specialbackground_2026_global_pearl_001Entry | Lc_specialbackground_2026_global_ruby_001Entry | Lc_specialbackground_2026_global_sapphire_001Entry | Lc_specialbackground_2026_global_silver_001Entry | Lc_specialbackground_2026_global_x_001Entry | Lc_specialbackground_2026_global_y_001Entry | Lc_specialbackground_con2025Entry | Lc_specialbackground_extra_2025_01Entry | Lc_specialbackground_extra_2025_02Entry | Lc_specialbackground_kr2025_lotte_01Entry | Lc_specialbackground_observatory_exhibition_tourEntry | Lc_specialbackground_pok2026Entry | Lc_specialbackground_team_blueEntry | Lc_specialbackground_team_redEntry | Lc_specialbackground_team_yellowEntry | Lc_special_background_2024_global_gofest_moon_ultra_wormhole_001Entry | Lc_special_background_2024_global_gofest_sun_ultra_wormhole_001Entry | Lc_special_background_2024_global_gofest_ultra_wormhole_001Entry;
+export type BadgesLocationCardsMasterfileEntry = Lc_2023_barcelona_citysafari_001Entry | Lc_2023_jeju_airadventures_001Entry | Lc_2023_lasvegas_gotour_001Entry | Lc_2023_london_gofest_001Entry | Lc_2023_mexicocity_citysafari_001Entry | Lc_2023_nyc_gofest_001Entry | Lc_2023_osaka_gofest_001Entry | Lc_2023_seoul_citysafari_001Entry | Lc_2024_bali_airadventures_001Entry | Lc_2024_fukuoka_gowa_001Entry | Lc_2024_hongkong_citysafari_001Entry | Lc_2024_honolulu_world_championships_001Entry | Lc_2024_incheon_safari_zone_001Entry | Lc_2024_jakarta_airadventures_001Entry | Lc_2024_losangeles_gotour_001Entry | Lc_2024_milan_citysafari_001Entry | Lc_2024_mlb_001Entry | Lc_2024_mlb_002Entry | Lc_2024_mlb_003Entry | Lc_2024_mlb_004Entry | Lc_2024_mlb_005Entry | Lc_2024_mlb_006Entry | Lc_2024_mlb_007Entry | Lc_2024_mlb_008Entry | Lc_2024_mlb_009Entry | Lc_2024_mlb_010Entry | Lc_2024_mlb_011Entry | Lc_2024_mlb_012Entry | Lc_2024_mlb_013Entry | Lc_2024_mlb_014Entry | Lc_2024_mumbai_citysafari_001Entry | Lc_2024_santiago_citysafari_001Entry | Lc_2024_saopaulo_citysafari_001Entry | Lc_2024_singapore_citysafari_001Entry | Lc_2024_surabaya_airadventures_001Entry | Lc_2024_tainan_citysafari_001Entry | Lc_2024_yogyakarta_airadventures_001Entry | Lc_2025_amsterdam_citysafari_001Entry | Lc_2025_anaheim_world_championships_001Entry | Lc_2025_bangkok_citysafari_001Entry | Lc_2025_berlin_roadtrip_001Entry | Lc_2025_cancun_citysafari_001Entry | Lc_2025_cherry_blossom_festivalEntry | Lc_2025_cologne_roadtrip_001Entry | Lc_2025_gowa_nagasakiEntry | Lc_2025_hague_roadtrip_001Entry | Lc_2025_jangheung_summer_festivalEntry | Lc_2025_kr_pyeongchang_winter_festivalEntry | Lc_2025_london_roadtrip_001Entry | Lc_2025_manchester_roadtrip_001Entry | Lc_2025_nfl_001Entry | Lc_2025_osaka_event_001Entry | Lc_2025_osaka_event_002Entry | Lc_2025_osaka_event_003Entry | Lc_2025_paris_001Entry | Lc_2025_paris_002Entry | Lc_2025_paris_roadtrip_001Entry | Lc_2025_taipeicity_amusement_parkEntry | Lc_2025_valencia_citysafari_001Entry | Lc_2025_valencia_roadtrip_001Entry | Lc_2025_vancouver_citysafari_001Entry | Lc_2026_cologne_carnival_001Entry | Lc_2026_npb_001Entry | Lc_2026_npb_002Entry | Lc_2026_npb_003Entry | Lc_2026_npb_004Entry | Lc_2026_npb_005Entry | Lc_2026_npb_006Entry | Lc_2026_npb_007Entry | Lc_2026_npb_008Entry | Lc_2026_npb_009Entry | Lc_2026_npb_010Entry | Lc_2026_npb_011Entry | Lc_2026_npb_012Entry | Lc_2026_npb_013Entry | Lc_2026_ppk_001Entry | Lc_2026_riodejaneiro_carnival_001Entry | Lc_citysafari2025_buenosairesEntry | Lc_citysafari2025_miamiEntry | Lc_citysafari2025_sydneyEntry | Lc_id_car_free_dayEntry | Lc_jeju_stamp_rallyEntry | Lc_pokelid_aichiEntry | Lc_pokelid_akitaEntry | Lc_pokelid_aomoriEntry | Lc_pokelid_chibaEntry | Lc_pokelid_ehimeEntry | Lc_pokelid_fukuiEntry | Lc_pokelid_fukuokaEntry | Lc_pokelid_fukushimaEntry | Lc_pokelid_gifuEntry | Lc_pokelid_hokkaidoEntry | Lc_pokelid_hyogoEntry | Lc_pokelid_ibarakiEntry | Lc_pokelid_ishikawaEntry | Lc_pokelid_iwateEntry | Lc_pokelid_kagawaEntry | Lc_pokelid_kagoshimaEntry | Lc_pokelid_kanagawaEntry | Lc_pokelid_kochiEntry | Lc_pokelid_kyotoEntry | Lc_pokelid_mieEntry | Lc_pokelid_miyagiEntry | Lc_pokelid_miyazakiEntry | Lc_pokelid_nagasakiEntry | Lc_pokelid_naraEntry | Lc_pokelid_niigataEntry | Lc_pokelid_okayamaEntry | Lc_pokelid_okinawaEntry | Lc_pokelid_osakaEntry | Lc_pokelid_sagaEntry | Lc_pokelid_saitamaEntry | Lc_pokelid_shigaEntry | Lc_pokelid_shimaneEntry | Lc_pokelid_shizuokaEntry | Lc_pokelid_tochigiEntry | Lc_pokelid_tokushimaEntry | Lc_pokelid_tokyoEntry | Lc_pokelid_tottoriEntry | Lc_pokelid_toyamaEntry | Lc_pokelid_wakayamaEntry | Lc_pokelid_yamagataEntry | Lc_pokelid_yamaguchiEntry | Lc_specialbackground_extra_2025_02Entry | Lc_specialbackground_kr2025_lotte_01Entry | Lc_2024_madrid_gofest_001Entry | Lc_2024_nyc_gofest_001Entry | Lc_2024_sendai_gofest_001Entry | Lc_2025_jerseycity_gofest_001Entry | Lc_2025_losangeles_gotour_001Entry | Lc_2025_newtaipeicity_gotour_001Entry | Lc_2025_osaka_gofest_001Entry | Lc_2025_paris_gofest_001Entry | Lc_2026_losangeles_gotour_001Entry | Lc_2026_tainan_gotour_001Entry | Lc_specialbackground_2024_decembercdrecapEntry | Lc_specialbackground_2024_global_gowa_001Entry | Lc_specialbackground_2025_season17Entry | Lc_specialbackground_con2025Entry | Lc_specialbackground_observatory_exhibition_tourEntry | Lc_specialbackground_pok2026Entry | Lc_specialbackground_2024_global_gofest_radiance_001Entry | Lc_specialbackground_2024_global_gofest_umbra_001Entry | Lc_specialbackground_2025_9thanniversaryEntry | Lc_specialbackground_2025_global_enigma_001Entry | Lc_specialbackground_2025_global_gofest_dd_001Entry | Lc_specialbackground_2025_global_gofest_regi_001Entry | Lc_specialbackground_2025_global_gofest_regi_002Entry | Lc_specialbackground_2025_global_gofest_regi_003Entry | Lc_specialbackground_2025_global_gofest_regi_004Entry | Lc_specialbackground_2025_global_gofest_regi_005Entry | Lc_specialbackground_2025_global_gofest_regi_006Entry | Lc_specialbackground_2025_global_gofest_shield_001Entry | Lc_specialbackground_2025_global_gofest_shield_crowned_001Entry | Lc_specialbackground_2025_global_gofest_sword_001Entry | Lc_specialbackground_2025_global_gofest_sword_crowned_001Entry | Lc_specialbackground_2025_global_gotour_black_001Entry | Lc_specialbackground_2025_global_gotour_black_white_001Entry | Lc_specialbackground_2025_global_gotour_white_001Entry | Lc_specialbackground_2025_gowa_globalEntry | Lc_specialbackground_2025_s18Entry | Lc_specialbackground_2025_season19Entry | Lc_specialbackground_2025_season20Entry | Lc_specialbackground_2026_communitydayEntry | Lc_specialbackground_2026_global_diamond_001Entry | Lc_specialbackground_2026_global_gold_001Entry | Lc_specialbackground_2026_global_mega_001Entry | Lc_specialbackground_2026_global_pearl_001Entry | Lc_specialbackground_2026_global_ruby_001Entry | Lc_specialbackground_2026_global_sapphire_001Entry | Lc_specialbackground_2026_global_silver_001Entry | Lc_specialbackground_2026_global_x_001Entry | Lc_specialbackground_2026_global_y_001Entry | Lc_specialbackground_extra_2025_01Entry | Lc_specialbackground_team_blueEntry | Lc_specialbackground_team_redEntry | Lc_specialbackground_team_yellowEntry | Lc_special_background_2024_global_gofest_moon_ultra_wormhole_001Entry | Lc_special_background_2024_global_gofest_sun_ultra_wormhole_001Entry | Lc_special_background_2024_global_gofest_ultra_wormhole_001Entry | Lc_specialbackground_2026_global_gofest_001Entry;

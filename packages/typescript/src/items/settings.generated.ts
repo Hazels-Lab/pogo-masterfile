@@ -33,6 +33,22 @@ export interface Fusion_resource_white_kyuremEntry {
   templateId: "FUSION_RESOURCE_WHITE_KYUREM";
   data: Fusion_resource_black_kyuremdata;
 }
+export interface Item_beansEntry {
+  templateId: "ITEM_BEANS";
+  data: Fusion_resource_black_kyuremdata;
+}
+export interface Item_breakfastEntry {
+  templateId: "ITEM_BREAKFAST";
+  data: Fusion_resource_black_kyuremdata;
+}
+export interface Item_enhanced_currencyEntry {
+  templateId: "ITEM_ENHANCED_CURRENCY";
+  data: Fusion_resource_black_kyuremdata;
+}
+export interface Item_other_evolution_stone_aEntry {
+  templateId: "ITEM_OTHER_EVOLUTION_STONE_A";
+  data: Fusion_resource_black_kyuremdata;
+}
 export interface Item_battle_pass_ticketdataitemsettingsglobaleventticket {
   clientEventEndTimeUtcMs: string;
   clientEventStartTimeUtcMs: string;
@@ -55,10 +71,6 @@ export interface Item_battle_pass_ticketEntry {
   templateId: "ITEM_BATTLE_PASS_TICKET";
   data: Item_battle_pass_ticketdata;
 }
-export interface Item_beansEntry {
-  templateId: "ITEM_BEANS";
-  data: Fusion_resource_black_kyuremdata;
-}
 export interface Item_beast_balldataitemsettings {
   category: string;
   dropTrainerLevel: number;
@@ -71,6 +83,150 @@ export interface Item_beast_balldata {
 }
 export interface Item_beast_ballEntry {
   templateId: "ITEM_BEAST_BALL";
+  data: Item_beast_balldata;
+}
+export interface Item_dragon_scaleEntry {
+  templateId: "ITEM_DRAGON_SCALE";
+  data: Item_beast_balldata;
+}
+export interface Item_free_raid_ticketEntry {
+  templateId: "ITEM_FREE_RAID_TICKET";
+  data: Item_beast_balldata;
+}
+export interface Item_friend_gift_boxEntry {
+  templateId: "ITEM_FRIEND_GIFT_BOX";
+  data: Item_beast_balldata;
+}
+export interface Item_gen4_evolution_stoneEntry {
+  templateId: "ITEM_GEN4_EVOLUTION_STONE";
+  data: Item_beast_balldata;
+}
+export interface Item_gen5_evolution_stoneEntry {
+  templateId: "ITEM_GEN5_EVOLUTION_STONE";
+  data: Item_beast_balldata;
+}
+export interface Item_great_ballEntry {
+  templateId: "ITEM_GREAT_BALL";
+  data: Item_beast_balldata;
+}
+export interface Item_kings_rockEntry {
+  templateId: "ITEM_KINGS_ROCK";
+  data: Item_beast_balldata;
+}
+export interface Item_master_ballEntry {
+  templateId: "ITEM_MASTER_BALL";
+  data: Item_beast_balldata;
+}
+export interface Item_max_boostEntry {
+  templateId: "ITEM_MAX_BOOST";
+  data: Item_beast_balldata;
+}
+export interface Item_metal_coatEntry {
+  templateId: "ITEM_METAL_COAT";
+  data: Item_beast_balldata;
+}
+export interface Item_move_reroll_elite_fast_attackEntry {
+  templateId: "ITEM_MOVE_REROLL_ELITE_FAST_ATTACK";
+  data: Item_beast_balldata;
+}
+export interface Item_move_reroll_elite_special_attackEntry {
+  templateId: "ITEM_MOVE_REROLL_ELITE_SPECIAL_ATTACK";
+  data: Item_beast_balldata;
+}
+export interface Item_move_reroll_fast_attackEntry {
+  templateId: "ITEM_MOVE_REROLL_FAST_ATTACK";
+  data: Item_beast_balldata;
+}
+export interface Item_move_reroll_special_attackEntry {
+  templateId: "ITEM_MOVE_REROLL_SPECIAL_ATTACK";
+  data: Item_beast_balldata;
+}
+export interface Item_paid_raid_ticketEntry {
+  templateId: "ITEM_PAID_RAID_TICKET";
+  data: Item_beast_balldata;
+}
+export interface Item_poke_ballEntry {
+  templateId: "ITEM_POKE_BALL";
+  data: Item_beast_balldata;
+}
+export interface Item_premier_ballEntry {
+  templateId: "ITEM_PREMIER_BALL";
+  data: Item_beast_balldata;
+}
+export interface Item_rare_candyEntry {
+  templateId: "ITEM_RARE_CANDY";
+  data: Item_beast_balldata;
+}
+export interface Item_remote_raid_ticketEntry {
+  templateId: "ITEM_REMOTE_RAID_TICKET";
+  data: Item_beast_balldata;
+}
+export interface Item_route_makerEntry {
+  templateId: "ITEM_ROUTE_MAKER";
+  data: Item_beast_balldata;
+}
+export interface Item_sticker_inventoryEntry {
+  templateId: "ITEM_STICKER_INVENTORY";
+  data: Item_beast_balldata;
+}
+export interface Item_sun_stoneEntry {
+  templateId: "ITEM_SUN_STONE";
+  data: Item_beast_balldata;
+}
+export interface Item_team_changeEntry {
+  templateId: "ITEM_TEAM_CHANGE";
+  data: Item_beast_balldata;
+}
+export interface Item_troy_diskEntry {
+  templateId: "ITEM_TROY_DISK";
+  data: Item_beast_balldata;
+}
+export interface Item_troy_disk_glacialEntry {
+  templateId: "ITEM_TROY_DISK_GLACIAL";
+  data: Item_beast_balldata;
+}
+export interface Item_troy_disk_magneticEntry {
+  templateId: "ITEM_TROY_DISK_MAGNETIC";
+  data: Item_beast_balldata;
+}
+export interface Item_troy_disk_mossyEntry {
+  templateId: "ITEM_TROY_DISK_MOSSY";
+  data: Item_beast_balldata;
+}
+export interface Item_troy_disk_rainyEntry {
+  templateId: "ITEM_TROY_DISK_RAINY";
+  data: Item_beast_balldata;
+}
+export interface Item_ultra_ballEntry {
+  templateId: "ITEM_ULTRA_BALL";
+  data: Item_beast_balldata;
+}
+export interface Item_up_gradeEntry {
+  templateId: "ITEM_UP_GRADE";
+  data: Item_beast_balldata;
+}
+export interface Item_wild_ballEntry {
+  templateId: "ITEM_WILD_BALL";
+  data: Item_beast_balldata;
+}
+export interface Item_wild_ball_premierEntry {
+  templateId: "ITEM_WILD_BALL_PREMIER";
+  data: Item_beast_balldata;
+}
+export interface Item_xl_rare_candyEntry {
+  templateId: "ITEM_XL_RARE_CANDY";
+  data: Item_beast_balldata;
+}
+export interface Item_x_attackEntry {
+  templateId: "ITEM_X_ATTACK";
+  data: Item_beast_balldata;
+}
+export interface Item_x_defenseEntry {
+  templateId: "ITEM_X_DEFENSE";
+  data: Item_beast_balldata;
+}
+export interface Item_x_miracleEntry {
+  templateId: "ITEM_X_MIRACLE";
   data: Item_beast_balldata;
 }
 export interface Item_bluk_berrydataitemsettingsfood {
@@ -93,17 +249,9 @@ export interface Item_bluk_berryEntry {
   templateId: "ITEM_BLUK_BERRY";
   data: Item_bluk_berrydata;
 }
-export interface Item_breakfastEntry {
-  templateId: "ITEM_BREAKFAST";
-  data: Fusion_resource_black_kyuremdata;
-}
-export interface Item_dragon_scaleEntry {
-  templateId: "ITEM_DRAGON_SCALE";
-  data: Item_beast_balldata;
-}
-export interface Item_enhanced_currencyEntry {
-  templateId: "ITEM_ENHANCED_CURRENCY";
-  data: Fusion_resource_black_kyuremdata;
+export interface Item_wepar_berryEntry {
+  templateId: "ITEM_WEPAR_BERRY";
+  data: Item_bluk_berrydata;
 }
 export interface Item_enhanced_currency_holderdataitemsettings {
   category: string;
@@ -140,6 +288,10 @@ export interface Item_event_pass_point_go_fest_01Entry {
   templateId: "ITEM_EVENT_PASS_POINT_GO_FEST_01";
   data: Item_event_pass_point_go_fest_01data;
 }
+export interface Item_event_pass_point_go_tour_02Entry {
+  templateId: "ITEM_EVENT_PASS_POINT_GO_TOUR_02";
+  data: Item_event_pass_point_go_fest_01data;
+}
 export interface Item_event_pass_point_go_fest_02dataitemsettingstimeperiodcountersplayeractivity {
   limit: number;
 }
@@ -167,10 +319,6 @@ export interface Item_event_pass_point_go_fest_02Entry {
 export interface Item_event_pass_point_go_tour_01Entry {
   templateId: "ITEM_EVENT_PASS_POINT_GO_TOUR_01";
   data: Item_event_pass_point_go_fest_02data;
-}
-export interface Item_event_pass_point_go_tour_02Entry {
-  templateId: "ITEM_EVENT_PASS_POINT_GO_TOUR_02";
-  data: Item_event_pass_point_go_fest_01data;
 }
 export interface Item_event_pass_point_go_wild_area_01Entry {
   templateId: "ITEM_EVENT_PASS_POINT_GO_WILD_AREA_01";
@@ -200,6 +348,14 @@ export interface Item_event_pass_point_live_ops_06Entry {
   templateId: "ITEM_EVENT_PASS_POINT_LIVE_OPS_06";
   data: Item_event_pass_point_go_fest_02data;
 }
+export interface Item_event_pass_point_live_ops_08Entry {
+  templateId: "ITEM_EVENT_PASS_POINT_LIVE_OPS_08";
+  data: Item_event_pass_point_go_fest_02data;
+}
+export interface Item_event_pass_point_monthly_03Entry {
+  templateId: "ITEM_EVENT_PASS_POINT_MONTHLY_03";
+  data: Item_event_pass_point_go_fest_02data;
+}
 export interface Item_event_pass_point_live_ops_07dataitemsettings {
   category: string;
   eventPassPoint: Item_event_pass_point_go_fest_01dataitemsettingseventpasspoint;
@@ -217,9 +373,9 @@ export interface Item_event_pass_point_live_ops_07Entry {
   templateId: "ITEM_EVENT_PASS_POINT_LIVE_OPS_07";
   data: Item_event_pass_point_live_ops_07data;
 }
-export interface Item_event_pass_point_live_ops_08Entry {
-  templateId: "ITEM_EVENT_PASS_POINT_LIVE_OPS_08";
-  data: Item_event_pass_point_go_fest_02data;
+export interface Item_event_pass_point_monthly_02Entry {
+  templateId: "ITEM_EVENT_PASS_POINT_MONTHLY_02";
+  data: Item_event_pass_point_live_ops_07data;
 }
 export interface Item_event_pass_point_monthly_01dataitemsettings {
   category: string;
@@ -239,14 +395,6 @@ export interface Item_event_pass_point_monthly_01data {
 export interface Item_event_pass_point_monthly_01Entry {
   templateId: "ITEM_EVENT_PASS_POINT_MONTHLY_01";
   data: Item_event_pass_point_monthly_01data;
-}
-export interface Item_event_pass_point_monthly_02Entry {
-  templateId: "ITEM_EVENT_PASS_POINT_MONTHLY_02";
-  data: Item_event_pass_point_live_ops_07data;
-}
-export interface Item_event_pass_point_monthly_03Entry {
-  templateId: "ITEM_EVENT_PASS_POINT_MONTHLY_03";
-  data: Item_event_pass_point_go_fest_02data;
 }
 export interface Item_event_ticket_02dataitemsettingsglobaleventticketiconrewardsitem {
   exp?: number;
@@ -311,6 +459,22 @@ export interface Item_event_ticket_02_to_giftEntry {
   templateId: "ITEM_EVENT_TICKET_02_TO_GIFT";
   data: Item_event_ticket_02_to_giftdata;
 }
+export interface Item_event_ticket_03_to_giftEntry {
+  templateId: "ITEM_EVENT_TICKET_03_TO_GIFT";
+  data: Item_event_ticket_02_to_giftdata;
+}
+export interface Item_event_ticket_09_to_giftEntry {
+  templateId: "ITEM_EVENT_TICKET_09_TO_GIFT";
+  data: Item_event_ticket_02_to_giftdata;
+}
+export interface Item_event_ticket_10_to_giftEntry {
+  templateId: "ITEM_EVENT_TICKET_10_TO_GIFT";
+  data: Item_event_ticket_02_to_giftdata;
+}
+export interface Item_global_event_ticket_to_giftEntry {
+  templateId: "ITEM_GLOBAL_EVENT_TICKET_TO_GIFT";
+  data: Item_event_ticket_02_to_giftdata;
+}
 export interface Item_event_ticket_03dataitemsettingsglobaleventticketiconrewardsitemitem {
   amount: number;
   item: string;
@@ -359,10 +523,6 @@ export interface Item_event_ticket_03Entry {
   templateId: "ITEM_EVENT_TICKET_03";
   data: Item_event_ticket_03data;
 }
-export interface Item_event_ticket_03_to_giftEntry {
-  templateId: "ITEM_EVENT_TICKET_03_TO_GIFT";
-  data: Item_event_ticket_02_to_giftdata;
-}
 export interface Item_event_ticket_04dataitemsettingsglobaleventticketiconrewardsitem {
   pokemonEncounter: Item_event_ticket_03dataitemsettingsglobaleventticketiconrewardsitempokemonencounter;
   "type": string;
@@ -399,6 +559,10 @@ export interface Item_event_ticket_04Entry {
   templateId: "ITEM_EVENT_TICKET_04";
   data: Item_event_ticket_04data;
 }
+export interface Item_evergreen_ticketEntry {
+  templateId: "ITEM_EVERGREEN_TICKET";
+  data: Item_event_ticket_04data;
+}
 export interface Item_event_ticket_04_to_giftdataitemsettings {
   category: string;
   descriptionOverride: string;
@@ -413,6 +577,22 @@ export interface Item_event_ticket_04_to_giftdata {
 }
 export interface Item_event_ticket_04_to_giftEntry {
   templateId: "ITEM_EVENT_TICKET_04_TO_GIFT";
+  data: Item_event_ticket_04_to_giftdata;
+}
+export interface Item_event_ticket_07_to_giftEntry {
+  templateId: "ITEM_EVENT_TICKET_07_TO_GIFT";
+  data: Item_event_ticket_04_to_giftdata;
+}
+export interface Item_event_ticket_08_to_giftEntry {
+  templateId: "ITEM_EVENT_TICKET_08_TO_GIFT";
+  data: Item_event_ticket_04_to_giftdata;
+}
+export interface Item_event_ticket_pink_to_giftEntry {
+  templateId: "ITEM_EVENT_TICKET_PINK_TO_GIFT";
+  data: Item_event_ticket_04_to_giftdata;
+}
+export interface Item_evergreen_ticket_to_giftEntry {
+  templateId: "ITEM_EVERGREEN_TICKET_TO_GIFT";
   data: Item_event_ticket_04_to_giftdata;
 }
 export interface Item_event_ticket_05dataitemsettingsglobaleventticketiconrewardsitem {
@@ -452,6 +632,14 @@ export interface Item_event_ticket_05Entry {
   templateId: "ITEM_EVENT_TICKET_05";
   data: Item_event_ticket_05data;
 }
+export interface Item_event_ticket_06Entry {
+  templateId: "ITEM_EVENT_TICKET_06";
+  data: Item_event_ticket_05data;
+}
+export interface Item_global_event_ticketEntry {
+  templateId: "ITEM_GLOBAL_EVENT_TICKET";
+  data: Item_event_ticket_05data;
+}
 export interface Item_event_ticket_05_to_giftdataitemsettingsglobaleventticket {
   backgroundImageUrl: string;
   clientEventEndTimeUtcMs: string;
@@ -478,10 +666,6 @@ export interface Item_event_ticket_05_to_giftdata {
 export interface Item_event_ticket_05_to_giftEntry {
   templateId: "ITEM_EVENT_TICKET_05_TO_GIFT";
   data: Item_event_ticket_05_to_giftdata;
-}
-export interface Item_event_ticket_06Entry {
-  templateId: "ITEM_EVENT_TICKET_06";
-  data: Item_event_ticket_05data;
 }
 export interface Item_event_ticket_07dataitemsettingsglobaleventticketiconrewardsitem {
   item: Item_event_ticket_03dataitemsettingsglobaleventticketiconrewardsitemitem;
@@ -517,10 +701,6 @@ export interface Item_event_ticket_07data {
 export interface Item_event_ticket_07Entry {
   templateId: "ITEM_EVENT_TICKET_07";
   data: Item_event_ticket_07data;
-}
-export interface Item_event_ticket_07_to_giftEntry {
-  templateId: "ITEM_EVENT_TICKET_07_TO_GIFT";
-  data: Item_event_ticket_04_to_giftdata;
 }
 export interface Item_event_ticket_08dataitemsettingsglobaleventticketiconrewardsitemcandy {
   amount: number;
@@ -574,10 +754,6 @@ export interface Item_event_ticket_08Entry {
   templateId: "ITEM_EVENT_TICKET_08";
   data: Item_event_ticket_08data;
 }
-export interface Item_event_ticket_08_to_giftEntry {
-  templateId: "ITEM_EVENT_TICKET_08_TO_GIFT";
-  data: Item_event_ticket_04_to_giftdata;
-}
 export interface Item_event_ticket_09dataitemsettingsglobaleventticketiconrewardsitemitem {
   amount?: number;
   item: string;
@@ -617,10 +793,6 @@ export interface Item_event_ticket_09data {
 export interface Item_event_ticket_09Entry {
   templateId: "ITEM_EVENT_TICKET_09";
   data: Item_event_ticket_09data;
-}
-export interface Item_event_ticket_09_to_giftEntry {
-  templateId: "ITEM_EVENT_TICKET_09_TO_GIFT";
-  data: Item_event_ticket_02_to_giftdata;
 }
 export interface Item_event_ticket_10dataitemsettingsglobaleventticketiconrewardsitempokemonencounterpokemondisplay {
   form: string;
@@ -668,10 +840,6 @@ export interface Item_event_ticket_10data {
 export interface Item_event_ticket_10Entry {
   templateId: "ITEM_EVENT_TICKET_10";
   data: Item_event_ticket_10data;
-}
-export interface Item_event_ticket_10_to_giftEntry {
-  templateId: "ITEM_EVENT_TICKET_10_TO_GIFT";
-  data: Item_event_ticket_02_to_giftdata;
 }
 export interface Item_event_ticket_graydataitemsettingsglobaleventticketiconrewardsitem {
   item?: Item_event_ticket_03dataitemsettingsglobaleventticketiconrewardsitemitem;
@@ -750,34 +918,6 @@ export interface Item_event_ticket_pinkEntry {
   templateId: "ITEM_EVENT_TICKET_PINK";
   data: Item_event_ticket_pinkdata;
 }
-export interface Item_event_ticket_pink_to_giftEntry {
-  templateId: "ITEM_EVENT_TICKET_PINK_TO_GIFT";
-  data: Item_event_ticket_04_to_giftdata;
-}
-export interface Item_evergreen_ticketEntry {
-  templateId: "ITEM_EVERGREEN_TICKET";
-  data: Item_event_ticket_04data;
-}
-export interface Item_evergreen_ticket_to_giftEntry {
-  templateId: "ITEM_EVERGREEN_TICKET_TO_GIFT";
-  data: Item_event_ticket_04_to_giftdata;
-}
-export interface Item_free_raid_ticketEntry {
-  templateId: "ITEM_FREE_RAID_TICKET";
-  data: Item_beast_balldata;
-}
-export interface Item_friend_gift_boxEntry {
-  templateId: "ITEM_FRIEND_GIFT_BOX";
-  data: Item_beast_balldata;
-}
-export interface Item_gen4_evolution_stoneEntry {
-  templateId: "ITEM_GEN4_EVOLUTION_STONE";
-  data: Item_beast_balldata;
-}
-export interface Item_gen5_evolution_stoneEntry {
-  templateId: "ITEM_GEN5_EVOLUTION_STONE";
-  data: Item_beast_balldata;
-}
 export interface Item_giovanni_mapdataitemsettingsincidentticket {
   ignoreFullInventory: boolean;
 }
@@ -796,13 +936,13 @@ export interface Item_giovanni_mapEntry {
   templateId: "ITEM_GIOVANNI_MAP";
   data: Item_giovanni_mapdata;
 }
-export interface Item_global_event_ticketEntry {
-  templateId: "ITEM_GLOBAL_EVENT_TICKET";
-  data: Item_event_ticket_05data;
+export interface Item_leader_mapEntry {
+  templateId: "ITEM_LEADER_MAP";
+  data: Item_giovanni_mapdata;
 }
-export interface Item_global_event_ticket_to_giftEntry {
-  templateId: "ITEM_GLOBAL_EVENT_TICKET_TO_GIFT";
-  data: Item_event_ticket_02_to_giftdata;
+export interface Item_shadow_gemEntry {
+  templateId: "ITEM_SHADOW_GEM";
+  data: Item_giovanni_mapdata;
 }
 export interface Item_golden_pinap_berrydataitemsettingsfood {
   berryMultiplier: number;
@@ -834,9 +974,17 @@ export interface Item_golden_razz_berryEntry {
   templateId: "ITEM_GOLDEN_RAZZ_BERRY";
   data: Item_golden_pinap_berrydata;
 }
-export interface Item_great_ballEntry {
-  templateId: "ITEM_GREAT_BALL";
-  data: Item_beast_balldata;
+export interface Item_nanab_berryEntry {
+  templateId: "ITEM_NANAB_BERRY";
+  data: Item_golden_pinap_berrydata;
+}
+export interface Item_pinap_berryEntry {
+  templateId: "ITEM_PINAP_BERRY";
+  data: Item_golden_pinap_berrydata;
+}
+export interface Item_razz_berryEntry {
+  templateId: "ITEM_RAZZ_BERRY";
+  data: Item_golden_pinap_berrydata;
 }
 export interface Item_hyper_potiondataitemsettingspotion {
   staAmount: number;
@@ -856,6 +1004,14 @@ export interface Item_hyper_potionEntry {
   templateId: "ITEM_HYPER_POTION";
   data: Item_hyper_potiondata;
 }
+export interface Item_potionEntry {
+  templateId: "ITEM_POTION";
+  data: Item_hyper_potiondata;
+}
+export interface Item_super_potionEntry {
+  templateId: "ITEM_SUPER_POTION";
+  data: Item_hyper_potiondata;
+}
 export interface Item_incense_beluga_boxdataitemsettingsincense {
   incenseLifetimeSeconds: number;
   spawnTableProbability: number;
@@ -873,6 +1029,10 @@ export interface Item_incense_beluga_boxdata {
 }
 export interface Item_incense_beluga_boxEntry {
   templateId: "ITEM_INCENSE_BELUGA_BOX";
+  data: Item_incense_beluga_boxdata;
+}
+export interface Item_incense_sparklyEntry {
+  templateId: "ITEM_INCENSE_SPARKLY";
   data: Item_incense_beluga_boxdata;
 }
 export interface Item_incense_daily_adventuredataitemsettings {
@@ -917,10 +1077,6 @@ export interface Item_incense_ordinaryEntry {
   templateId: "ITEM_INCENSE_ORDINARY";
   data: Item_incense_ordinarydata;
 }
-export interface Item_incense_sparklyEntry {
-  templateId: "ITEM_INCENSE_SPARKLY";
-  data: Item_incense_beluga_boxdata;
-}
 export interface Item_incubator_basicdataitemsettingseggincubator {
   distanceMultiplier: number;
   incubatorType: string;
@@ -939,6 +1095,10 @@ export interface Item_incubator_basicdata {
 }
 export interface Item_incubator_basicEntry {
   templateId: "ITEM_INCUBATOR_BASIC";
+  data: Item_incubator_basicdata;
+}
+export interface Item_incubator_superEntry {
+  templateId: "ITEM_INCUBATOR_SUPER";
   data: Item_incubator_basicdata;
 }
 export interface Item_incubator_basic_unlimiteddataitemsettingseggincubator {
@@ -976,10 +1136,6 @@ export interface Item_incubator_specialdata {
 export interface Item_incubator_specialEntry {
   templateId: "ITEM_INCUBATOR_SPECIAL";
   data: Item_incubator_specialdata;
-}
-export interface Item_incubator_superEntry {
-  templateId: "ITEM_INCUBATOR_SUPER";
-  data: Item_incubator_basicdata;
 }
 export interface Item_incubator_timeddataitemsettingseggincubatorexpiredincubatorreplacement {
   incubatorReplacement: string;
@@ -1026,13 +1182,13 @@ export interface Item_item_storage_upgradeEntry {
   templateId: "ITEM_ITEM_STORAGE_UPGRADE";
   data: Item_item_storage_upgradedata;
 }
-export interface Item_kings_rockEntry {
-  templateId: "ITEM_KINGS_ROCK";
-  data: Item_beast_balldata;
+export interface Item_pokemon_storage_upgradeEntry {
+  templateId: "ITEM_POKEMON_STORAGE_UPGRADE";
+  data: Item_item_storage_upgradedata;
 }
-export interface Item_leader_mapEntry {
-  templateId: "ITEM_LEADER_MAP";
-  data: Item_giovanni_mapdata;
+export interface Item_postcard_storage_upgradeEntry {
+  templateId: "ITEM_POSTCARD_STORAGE_UPGRADE";
+  data: Item_item_storage_upgradedata;
 }
 export interface Item_leader_map_fragmentdataitemsettingsincidentticket {
   upgradedItem: string;
@@ -1051,6 +1207,10 @@ export interface Item_leader_map_fragmentdata {
 }
 export interface Item_leader_map_fragmentEntry {
   templateId: "ITEM_LEADER_MAP_FRAGMENT";
+  data: Item_leader_map_fragmentdata;
+}
+export interface Item_shadow_gem_fragmentEntry {
+  templateId: "ITEM_SHADOW_GEM_FRAGMENT";
   data: Item_leader_map_fragmentdata;
 }
 export interface Item_lucky_eggdataitemsettingsxpboost {
@@ -1085,14 +1245,6 @@ export interface Item_lucky_friend_applicatorEntry {
   templateId: "ITEM_LUCKY_FRIEND_APPLICATOR";
   data: Item_lucky_friend_applicatordata;
 }
-export interface Item_master_ballEntry {
-  templateId: "ITEM_MASTER_BALL";
-  data: Item_beast_balldata;
-}
-export interface Item_max_boostEntry {
-  templateId: "ITEM_MAX_BOOST";
-  data: Item_beast_balldata;
-}
 export interface Item_max_potiondataitemsettingspotion {
   staPercent: number;
 }
@@ -1126,21 +1278,9 @@ export interface Item_max_reviveEntry {
   templateId: "ITEM_MAX_REVIVE";
   data: Item_max_revivedata;
 }
-export interface Item_metal_coatEntry {
-  templateId: "ITEM_METAL_COAT";
-  data: Item_beast_balldata;
-}
-export interface Item_move_reroll_elite_fast_attackEntry {
-  templateId: "ITEM_MOVE_REROLL_ELITE_FAST_ATTACK";
-  data: Item_beast_balldata;
-}
-export interface Item_move_reroll_elite_special_attackEntry {
-  templateId: "ITEM_MOVE_REROLL_ELITE_SPECIAL_ATTACK";
-  data: Item_beast_balldata;
-}
-export interface Item_move_reroll_fast_attackEntry {
-  templateId: "ITEM_MOVE_REROLL_FAST_ATTACK";
-  data: Item_beast_balldata;
+export interface Item_reviveEntry {
+  templateId: "ITEM_REVIVE";
+  data: Item_max_revivedata;
 }
 export interface Item_move_reroll_other_special_attack_adataitemsettings {
   category: string;
@@ -1156,10 +1296,6 @@ export interface Item_move_reroll_other_special_attack_aEntry {
   templateId: "ITEM_MOVE_REROLL_OTHER_SPECIAL_ATTACK_A";
   data: Item_move_reroll_other_special_attack_adata;
 }
-export interface Item_move_reroll_special_attackEntry {
-  templateId: "ITEM_MOVE_REROLL_SPECIAL_ATTACK";
-  data: Item_beast_balldata;
-}
 export interface Item_mpdataitemsettings {
   category: string;
   dropTrainerLevel: number;
@@ -1173,6 +1309,14 @@ export interface Item_mpdata {
 }
 export interface Item_mpEntry {
   templateId: "ITEM_MP";
+  data: Item_mpdata;
+}
+export interface Item_soft_sfidaEntry {
+  templateId: "ITEM_SOFT_SFIDA";
+  data: Item_mpdata;
+}
+export interface Item_special_cameraEntry {
+  templateId: "ITEM_SPECIAL_CAMERA";
   data: Item_mpdata;
 }
 export interface Item_mp_replenishdataitemsettingsreplenishmp {
@@ -1193,14 +1337,6 @@ export interface Item_mp_replenishdata {
 export interface Item_mp_replenishEntry {
   templateId: "ITEM_MP_REPLENISH";
   data: Item_mp_replenishdata;
-}
-export interface Item_nanab_berryEntry {
-  templateId: "ITEM_NANAB_BERRY";
-  data: Item_golden_pinap_berrydata;
-}
-export interface Item_other_evolution_stone_aEntry {
-  templateId: "ITEM_OTHER_EVOLUTION_STONE_A";
-  data: Fusion_resource_black_kyuremdata;
 }
 export interface Item_other_evolution_stone_maple_adataitemsettings {
   category: string;
@@ -1226,14 +1362,6 @@ export interface Item_other_evolution_stone_maple_cEntry {
   templateId: "ITEM_OTHER_EVOLUTION_STONE_MAPLE_C";
   data: Item_other_evolution_stone_maple_adata;
 }
-export interface Item_paid_raid_ticketEntry {
-  templateId: "ITEM_PAID_RAID_TICKET";
-  data: Item_beast_balldata;
-}
-export interface Item_pinap_berryEntry {
-  templateId: "ITEM_PINAP_BERRY";
-  data: Item_golden_pinap_berrydata;
-}
 export interface Item_poffindataitemsettingsfood {
   mapDurationMs: string;
   numBuddyAffectionPoints: number;
@@ -1254,14 +1382,6 @@ export interface Item_poffinEntry {
   templateId: "ITEM_POFFIN";
   data: Item_poffindata;
 }
-export interface Item_pokemon_storage_upgradeEntry {
-  templateId: "ITEM_POKEMON_STORAGE_UPGRADE";
-  data: Item_item_storage_upgradedata;
-}
-export interface Item_poke_ballEntry {
-  templateId: "ITEM_POKE_BALL";
-  data: Item_beast_balldata;
-}
 export interface Item_postcard_inventorydataitemsettings {
   category: string;
   descriptionOverride: string;
@@ -1277,30 +1397,6 @@ export interface Item_postcard_inventorydata {
 export interface Item_postcard_inventoryEntry {
   templateId: "ITEM_POSTCARD_INVENTORY";
   data: Item_postcard_inventorydata;
-}
-export interface Item_postcard_storage_upgradeEntry {
-  templateId: "ITEM_POSTCARD_STORAGE_UPGRADE";
-  data: Item_item_storage_upgradedata;
-}
-export interface Item_potionEntry {
-  templateId: "ITEM_POTION";
-  data: Item_hyper_potiondata;
-}
-export interface Item_premier_ballEntry {
-  templateId: "ITEM_PREMIER_BALL";
-  data: Item_beast_balldata;
-}
-export interface Item_rare_candyEntry {
-  templateId: "ITEM_RARE_CANDY";
-  data: Item_beast_balldata;
-}
-export interface Item_razz_berryEntry {
-  templateId: "ITEM_RAZZ_BERRY";
-  data: Item_golden_pinap_berrydata;
-}
-export interface Item_remote_raid_ticketEntry {
-  templateId: "ITEM_REMOTE_RAID_TICKET";
-  data: Item_beast_balldata;
 }
 export interface Item_resource_crowned_zaciandataitemsettings {
   category: string;
@@ -1323,22 +1419,6 @@ export interface Item_resource_crowned_zamazentaEntry {
   templateId: "ITEM_RESOURCE_CROWNED_ZAMAZENTA";
   data: Item_resource_crowned_zaciandata;
 }
-export interface Item_reviveEntry {
-  templateId: "ITEM_REVIVE";
-  data: Item_max_revivedata;
-}
-export interface Item_route_makerEntry {
-  templateId: "ITEM_ROUTE_MAKER";
-  data: Item_beast_balldata;
-}
-export interface Item_shadow_gemEntry {
-  templateId: "ITEM_SHADOW_GEM";
-  data: Item_giovanni_mapdata;
-}
-export interface Item_shadow_gem_fragmentEntry {
-  templateId: "ITEM_SHADOW_GEM_FRAGMENT";
-  data: Item_leader_map_fragmentdata;
-}
 export interface Item_single_stat_increasedataitemsettingsstatincrease {
   statsToIncreaseLimit: number;
 }
@@ -1357,13 +1437,9 @@ export interface Item_single_stat_increaseEntry {
   templateId: "ITEM_SINGLE_STAT_INCREASE";
   data: Item_single_stat_increasedata;
 }
-export interface Item_soft_sfidaEntry {
-  templateId: "ITEM_SOFT_SFIDA";
-  data: Item_mpdata;
-}
-export interface Item_special_cameraEntry {
-  templateId: "ITEM_SPECIAL_CAMERA";
-  data: Item_mpdata;
+export interface Item_triple_stat_increaseEntry {
+  templateId: "ITEM_TRIPLE_STAT_INCREASE";
+  data: Item_single_stat_increasedata;
 }
 export interface Item_star_piecedataitemsettingsstardustboost {
   boostDurationMs: number;
@@ -1383,22 +1459,6 @@ export interface Item_star_piecedata {
 export interface Item_star_pieceEntry {
   templateId: "ITEM_STAR_PIECE";
   data: Item_star_piecedata;
-}
-export interface Item_sticker_inventoryEntry {
-  templateId: "ITEM_STICKER_INVENTORY";
-  data: Item_beast_balldata;
-}
-export interface Item_sun_stoneEntry {
-  templateId: "ITEM_SUN_STONE";
-  data: Item_beast_balldata;
-}
-export interface Item_super_potionEntry {
-  templateId: "ITEM_SUPER_POTION";
-  data: Item_hyper_potiondata;
-}
-export interface Item_team_changeEntry {
-  templateId: "ITEM_TEAM_CHANGE";
-  data: Item_beast_balldata;
 }
 export interface Item_ticket_city_safari_00dataitemsettingsglobaleventticket {
   clientEventEndTimeUtcMs: string;
@@ -1446,30 +1506,6 @@ export interface Item_ticket_city_safari_04Entry {
   templateId: "ITEM_TICKET_CITY_SAFARI_04";
   data: Item_ticket_city_safari_04data;
 }
-export interface Item_triple_stat_increaseEntry {
-  templateId: "ITEM_TRIPLE_STAT_INCREASE";
-  data: Item_single_stat_increasedata;
-}
-export interface Item_troy_diskEntry {
-  templateId: "ITEM_TROY_DISK";
-  data: Item_beast_balldata;
-}
-export interface Item_troy_disk_glacialEntry {
-  templateId: "ITEM_TROY_DISK_GLACIAL";
-  data: Item_beast_balldata;
-}
-export interface Item_troy_disk_magneticEntry {
-  templateId: "ITEM_TROY_DISK_MAGNETIC";
-  data: Item_beast_balldata;
-}
-export interface Item_troy_disk_mossyEntry {
-  templateId: "ITEM_TROY_DISK_MOSSY";
-  data: Item_beast_balldata;
-}
-export interface Item_troy_disk_rainyEntry {
-  templateId: "ITEM_TROY_DISK_RAINY";
-  data: Item_beast_balldata;
-}
 export interface Item_troy_disk_sparklydataitemsettings {
   category: string;
   dropTrainerLevel: number;
@@ -1485,60 +1521,61 @@ export interface Item_troy_disk_sparklyEntry {
   templateId: "ITEM_TROY_DISK_SPARKLY";
   data: Item_troy_disk_sparklydata;
 }
-export interface Item_ultra_ballEntry {
-  templateId: "ITEM_ULTRA_BALL";
-  data: Item_beast_balldata;
-}
-export interface Item_up_gradeEntry {
-  templateId: "ITEM_UP_GRADE";
-  data: Item_beast_balldata;
-}
-export interface Item_wepar_berryEntry {
-  templateId: "ITEM_WEPAR_BERRY";
-  data: Item_bluk_berrydata;
-}
-export interface Item_wild_ballEntry {
-  templateId: "ITEM_WILD_BALL";
-  data: Item_beast_balldata;
-}
-export interface Item_wild_ball_premierEntry {
-  templateId: "ITEM_WILD_BALL_PREMIER";
-  data: Item_beast_balldata;
-}
-export interface Item_xl_rare_candyEntry {
-  templateId: "ITEM_XL_RARE_CANDY";
-  data: Item_beast_balldata;
-}
-export interface Item_x_attackEntry {
-  templateId: "ITEM_X_ATTACK";
-  data: Item_beast_balldata;
-}
-export interface Item_x_defenseEntry {
-  templateId: "ITEM_X_DEFENSE";
-  data: Item_beast_balldata;
-}
-export interface Item_x_miracleEntry {
-  templateId: "ITEM_X_MIRACLE";
-  data: Item_beast_balldata;
-}
 
 export interface ItemsSettingsMasterfileByTemplateId {
   "FUSION_RESOURCE_BLACK_KYUREM": Fusion_resource_black_kyuremEntry;
   "FUSION_RESOURCE_DAWNWINGS_NECROZMA": Fusion_resource_dawnwings_necrozmaEntry;
   "FUSION_RESOURCE_DUSKMANE_NECROZMA": Fusion_resource_duskmane_necrozmaEntry;
   "FUSION_RESOURCE_WHITE_KYUREM": Fusion_resource_white_kyuremEntry;
-  "ITEM_BATTLE_PASS_TICKET": Item_battle_pass_ticketEntry;
   "ITEM_BEANS": Item_beansEntry;
-  "ITEM_BEAST_BALL": Item_beast_ballEntry;
-  "ITEM_BLUK_BERRY": Item_bluk_berryEntry;
   "ITEM_BREAKFAST": Item_breakfastEntry;
-  "ITEM_DRAGON_SCALE": Item_dragon_scaleEntry;
   "ITEM_ENHANCED_CURRENCY": Item_enhanced_currencyEntry;
+  "ITEM_OTHER_EVOLUTION_STONE_A": Item_other_evolution_stone_aEntry;
+  "ITEM_BATTLE_PASS_TICKET": Item_battle_pass_ticketEntry;
+  "ITEM_BEAST_BALL": Item_beast_ballEntry;
+  "ITEM_DRAGON_SCALE": Item_dragon_scaleEntry;
+  "ITEM_FREE_RAID_TICKET": Item_free_raid_ticketEntry;
+  "ITEM_FRIEND_GIFT_BOX": Item_friend_gift_boxEntry;
+  "ITEM_GEN4_EVOLUTION_STONE": Item_gen4_evolution_stoneEntry;
+  "ITEM_GEN5_EVOLUTION_STONE": Item_gen5_evolution_stoneEntry;
+  "ITEM_GREAT_BALL": Item_great_ballEntry;
+  "ITEM_KINGS_ROCK": Item_kings_rockEntry;
+  "ITEM_MASTER_BALL": Item_master_ballEntry;
+  "ITEM_MAX_BOOST": Item_max_boostEntry;
+  "ITEM_METAL_COAT": Item_metal_coatEntry;
+  "ITEM_MOVE_REROLL_ELITE_FAST_ATTACK": Item_move_reroll_elite_fast_attackEntry;
+  "ITEM_MOVE_REROLL_ELITE_SPECIAL_ATTACK": Item_move_reroll_elite_special_attackEntry;
+  "ITEM_MOVE_REROLL_FAST_ATTACK": Item_move_reroll_fast_attackEntry;
+  "ITEM_MOVE_REROLL_SPECIAL_ATTACK": Item_move_reroll_special_attackEntry;
+  "ITEM_PAID_RAID_TICKET": Item_paid_raid_ticketEntry;
+  "ITEM_POKE_BALL": Item_poke_ballEntry;
+  "ITEM_PREMIER_BALL": Item_premier_ballEntry;
+  "ITEM_RARE_CANDY": Item_rare_candyEntry;
+  "ITEM_REMOTE_RAID_TICKET": Item_remote_raid_ticketEntry;
+  "ITEM_ROUTE_MAKER": Item_route_makerEntry;
+  "ITEM_STICKER_INVENTORY": Item_sticker_inventoryEntry;
+  "ITEM_SUN_STONE": Item_sun_stoneEntry;
+  "ITEM_TEAM_CHANGE": Item_team_changeEntry;
+  "ITEM_TROY_DISK": Item_troy_diskEntry;
+  "ITEM_TROY_DISK_GLACIAL": Item_troy_disk_glacialEntry;
+  "ITEM_TROY_DISK_MAGNETIC": Item_troy_disk_magneticEntry;
+  "ITEM_TROY_DISK_MOSSY": Item_troy_disk_mossyEntry;
+  "ITEM_TROY_DISK_RAINY": Item_troy_disk_rainyEntry;
+  "ITEM_ULTRA_BALL": Item_ultra_ballEntry;
+  "ITEM_UP_GRADE": Item_up_gradeEntry;
+  "ITEM_WILD_BALL": Item_wild_ballEntry;
+  "ITEM_WILD_BALL_PREMIER": Item_wild_ball_premierEntry;
+  "ITEM_XL_RARE_CANDY": Item_xl_rare_candyEntry;
+  "ITEM_X_ATTACK": Item_x_attackEntry;
+  "ITEM_X_DEFENSE": Item_x_defenseEntry;
+  "ITEM_X_MIRACLE": Item_x_miracleEntry;
+  "ITEM_BLUK_BERRY": Item_bluk_berryEntry;
+  "ITEM_WEPAR_BERRY": Item_wepar_berryEntry;
   "ITEM_ENHANCED_CURRENCY_HOLDER": Item_enhanced_currency_holderEntry;
   "ITEM_EVENT_PASS_POINT_GO_FEST_01": Item_event_pass_point_go_fest_01Entry;
+  "ITEM_EVENT_PASS_POINT_GO_TOUR_02": Item_event_pass_point_go_tour_02Entry;
   "ITEM_EVENT_PASS_POINT_GO_FEST_02": Item_event_pass_point_go_fest_02Entry;
   "ITEM_EVENT_PASS_POINT_GO_TOUR_01": Item_event_pass_point_go_tour_01Entry;
-  "ITEM_EVENT_PASS_POINT_GO_TOUR_02": Item_event_pass_point_go_tour_02Entry;
   "ITEM_EVENT_PASS_POINT_GO_WILD_AREA_01": Item_event_pass_point_go_wild_area_01Entry;
   "ITEM_EVENT_PASS_POINT_LIVE_OPS_01": Item_event_pass_point_live_ops_01Entry;
   "ITEM_EVENT_PASS_POINT_LIVE_OPS_02": Item_event_pass_point_live_ops_02Entry;
@@ -1546,124 +1583,87 @@ export interface ItemsSettingsMasterfileByTemplateId {
   "ITEM_EVENT_PASS_POINT_LIVE_OPS_04": Item_event_pass_point_live_ops_04Entry;
   "ITEM_EVENT_PASS_POINT_LIVE_OPS_05": Item_event_pass_point_live_ops_05Entry;
   "ITEM_EVENT_PASS_POINT_LIVE_OPS_06": Item_event_pass_point_live_ops_06Entry;
-  "ITEM_EVENT_PASS_POINT_LIVE_OPS_07": Item_event_pass_point_live_ops_07Entry;
   "ITEM_EVENT_PASS_POINT_LIVE_OPS_08": Item_event_pass_point_live_ops_08Entry;
-  "ITEM_EVENT_PASS_POINT_MONTHLY_01": Item_event_pass_point_monthly_01Entry;
-  "ITEM_EVENT_PASS_POINT_MONTHLY_02": Item_event_pass_point_monthly_02Entry;
   "ITEM_EVENT_PASS_POINT_MONTHLY_03": Item_event_pass_point_monthly_03Entry;
+  "ITEM_EVENT_PASS_POINT_LIVE_OPS_07": Item_event_pass_point_live_ops_07Entry;
+  "ITEM_EVENT_PASS_POINT_MONTHLY_02": Item_event_pass_point_monthly_02Entry;
+  "ITEM_EVENT_PASS_POINT_MONTHLY_01": Item_event_pass_point_monthly_01Entry;
   "ITEM_EVENT_TICKET_02": Item_event_ticket_02Entry;
   "ITEM_EVENT_TICKET_02_TO_GIFT": Item_event_ticket_02_to_giftEntry;
-  "ITEM_EVENT_TICKET_03": Item_event_ticket_03Entry;
   "ITEM_EVENT_TICKET_03_TO_GIFT": Item_event_ticket_03_to_giftEntry;
-  "ITEM_EVENT_TICKET_04": Item_event_ticket_04Entry;
-  "ITEM_EVENT_TICKET_04_TO_GIFT": Item_event_ticket_04_to_giftEntry;
-  "ITEM_EVENT_TICKET_05": Item_event_ticket_05Entry;
-  "ITEM_EVENT_TICKET_05_TO_GIFT": Item_event_ticket_05_to_giftEntry;
-  "ITEM_EVENT_TICKET_06": Item_event_ticket_06Entry;
-  "ITEM_EVENT_TICKET_07": Item_event_ticket_07Entry;
-  "ITEM_EVENT_TICKET_07_TO_GIFT": Item_event_ticket_07_to_giftEntry;
-  "ITEM_EVENT_TICKET_08": Item_event_ticket_08Entry;
-  "ITEM_EVENT_TICKET_08_TO_GIFT": Item_event_ticket_08_to_giftEntry;
-  "ITEM_EVENT_TICKET_09": Item_event_ticket_09Entry;
   "ITEM_EVENT_TICKET_09_TO_GIFT": Item_event_ticket_09_to_giftEntry;
-  "ITEM_EVENT_TICKET_10": Item_event_ticket_10Entry;
   "ITEM_EVENT_TICKET_10_TO_GIFT": Item_event_ticket_10_to_giftEntry;
+  "ITEM_GLOBAL_EVENT_TICKET_TO_GIFT": Item_global_event_ticket_to_giftEntry;
+  "ITEM_EVENT_TICKET_03": Item_event_ticket_03Entry;
+  "ITEM_EVENT_TICKET_04": Item_event_ticket_04Entry;
+  "ITEM_EVERGREEN_TICKET": Item_evergreen_ticketEntry;
+  "ITEM_EVENT_TICKET_04_TO_GIFT": Item_event_ticket_04_to_giftEntry;
+  "ITEM_EVENT_TICKET_07_TO_GIFT": Item_event_ticket_07_to_giftEntry;
+  "ITEM_EVENT_TICKET_08_TO_GIFT": Item_event_ticket_08_to_giftEntry;
+  "ITEM_EVENT_TICKET_PINK_TO_GIFT": Item_event_ticket_pink_to_giftEntry;
+  "ITEM_EVERGREEN_TICKET_TO_GIFT": Item_evergreen_ticket_to_giftEntry;
+  "ITEM_EVENT_TICKET_05": Item_event_ticket_05Entry;
+  "ITEM_EVENT_TICKET_06": Item_event_ticket_06Entry;
+  "ITEM_GLOBAL_EVENT_TICKET": Item_global_event_ticketEntry;
+  "ITEM_EVENT_TICKET_05_TO_GIFT": Item_event_ticket_05_to_giftEntry;
+  "ITEM_EVENT_TICKET_07": Item_event_ticket_07Entry;
+  "ITEM_EVENT_TICKET_08": Item_event_ticket_08Entry;
+  "ITEM_EVENT_TICKET_09": Item_event_ticket_09Entry;
+  "ITEM_EVENT_TICKET_10": Item_event_ticket_10Entry;
   "ITEM_EVENT_TICKET_GRAY": Item_event_ticket_grayEntry;
   "ITEM_EVENT_TICKET_PINK": Item_event_ticket_pinkEntry;
-  "ITEM_EVENT_TICKET_PINK_TO_GIFT": Item_event_ticket_pink_to_giftEntry;
-  "ITEM_EVERGREEN_TICKET": Item_evergreen_ticketEntry;
-  "ITEM_EVERGREEN_TICKET_TO_GIFT": Item_evergreen_ticket_to_giftEntry;
-  "ITEM_FREE_RAID_TICKET": Item_free_raid_ticketEntry;
-  "ITEM_FRIEND_GIFT_BOX": Item_friend_gift_boxEntry;
-  "ITEM_GEN4_EVOLUTION_STONE": Item_gen4_evolution_stoneEntry;
-  "ITEM_GEN5_EVOLUTION_STONE": Item_gen5_evolution_stoneEntry;
   "ITEM_GIOVANNI_MAP": Item_giovanni_mapEntry;
-  "ITEM_GLOBAL_EVENT_TICKET": Item_global_event_ticketEntry;
-  "ITEM_GLOBAL_EVENT_TICKET_TO_GIFT": Item_global_event_ticket_to_giftEntry;
+  "ITEM_LEADER_MAP": Item_leader_mapEntry;
+  "ITEM_SHADOW_GEM": Item_shadow_gemEntry;
   "ITEM_GOLDEN_PINAP_BERRY": Item_golden_pinap_berryEntry;
   "ITEM_GOLDEN_RAZZ_BERRY": Item_golden_razz_berryEntry;
-  "ITEM_GREAT_BALL": Item_great_ballEntry;
+  "ITEM_NANAB_BERRY": Item_nanab_berryEntry;
+  "ITEM_PINAP_BERRY": Item_pinap_berryEntry;
+  "ITEM_RAZZ_BERRY": Item_razz_berryEntry;
   "ITEM_HYPER_POTION": Item_hyper_potionEntry;
+  "ITEM_POTION": Item_potionEntry;
+  "ITEM_SUPER_POTION": Item_super_potionEntry;
   "ITEM_INCENSE_BELUGA_BOX": Item_incense_beluga_boxEntry;
+  "ITEM_INCENSE_SPARKLY": Item_incense_sparklyEntry;
   "ITEM_INCENSE_DAILY_ADVENTURE": Item_incense_daily_adventureEntry;
   "ITEM_INCENSE_DAY_BONUS": Item_incense_day_bonusEntry;
   "ITEM_INCENSE_NIGHT_BONUS": Item_incense_night_bonusEntry;
   "ITEM_INCENSE_ORDINARY": Item_incense_ordinaryEntry;
-  "ITEM_INCENSE_SPARKLY": Item_incense_sparklyEntry;
   "ITEM_INCUBATOR_BASIC": Item_incubator_basicEntry;
+  "ITEM_INCUBATOR_SUPER": Item_incubator_superEntry;
   "ITEM_INCUBATOR_BASIC_UNLIMITED": Item_incubator_basic_unlimitedEntry;
   "ITEM_INCUBATOR_SPECIAL": Item_incubator_specialEntry;
-  "ITEM_INCUBATOR_SUPER": Item_incubator_superEntry;
   "ITEM_INCUBATOR_TIMED": Item_incubator_timedEntry;
   "ITEM_ITEM_STORAGE_UPGRADE": Item_item_storage_upgradeEntry;
-  "ITEM_KINGS_ROCK": Item_kings_rockEntry;
-  "ITEM_LEADER_MAP": Item_leader_mapEntry;
+  "ITEM_POKEMON_STORAGE_UPGRADE": Item_pokemon_storage_upgradeEntry;
+  "ITEM_POSTCARD_STORAGE_UPGRADE": Item_postcard_storage_upgradeEntry;
   "ITEM_LEADER_MAP_FRAGMENT": Item_leader_map_fragmentEntry;
+  "ITEM_SHADOW_GEM_FRAGMENT": Item_shadow_gem_fragmentEntry;
   "ITEM_LUCKY_EGG": Item_lucky_eggEntry;
   "ITEM_LUCKY_FRIEND_APPLICATOR": Item_lucky_friend_applicatorEntry;
-  "ITEM_MASTER_BALL": Item_master_ballEntry;
-  "ITEM_MAX_BOOST": Item_max_boostEntry;
   "ITEM_MAX_POTION": Item_max_potionEntry;
   "ITEM_MAX_REVIVE": Item_max_reviveEntry;
-  "ITEM_METAL_COAT": Item_metal_coatEntry;
-  "ITEM_MOVE_REROLL_ELITE_FAST_ATTACK": Item_move_reroll_elite_fast_attackEntry;
-  "ITEM_MOVE_REROLL_ELITE_SPECIAL_ATTACK": Item_move_reroll_elite_special_attackEntry;
-  "ITEM_MOVE_REROLL_FAST_ATTACK": Item_move_reroll_fast_attackEntry;
+  "ITEM_REVIVE": Item_reviveEntry;
   "ITEM_MOVE_REROLL_OTHER_SPECIAL_ATTACK_A": Item_move_reroll_other_special_attack_aEntry;
-  "ITEM_MOVE_REROLL_SPECIAL_ATTACK": Item_move_reroll_special_attackEntry;
   "ITEM_MP": Item_mpEntry;
+  "ITEM_SOFT_SFIDA": Item_soft_sfidaEntry;
+  "ITEM_SPECIAL_CAMERA": Item_special_cameraEntry;
   "ITEM_MP_REPLENISH": Item_mp_replenishEntry;
-  "ITEM_NANAB_BERRY": Item_nanab_berryEntry;
-  "ITEM_OTHER_EVOLUTION_STONE_A": Item_other_evolution_stone_aEntry;
   "ITEM_OTHER_EVOLUTION_STONE_MAPLE_A": Item_other_evolution_stone_maple_aEntry;
   "ITEM_OTHER_EVOLUTION_STONE_MAPLE_B": Item_other_evolution_stone_maple_bEntry;
   "ITEM_OTHER_EVOLUTION_STONE_MAPLE_C": Item_other_evolution_stone_maple_cEntry;
-  "ITEM_PAID_RAID_TICKET": Item_paid_raid_ticketEntry;
-  "ITEM_PINAP_BERRY": Item_pinap_berryEntry;
   "ITEM_POFFIN": Item_poffinEntry;
-  "ITEM_POKEMON_STORAGE_UPGRADE": Item_pokemon_storage_upgradeEntry;
-  "ITEM_POKE_BALL": Item_poke_ballEntry;
   "ITEM_POSTCARD_INVENTORY": Item_postcard_inventoryEntry;
-  "ITEM_POSTCARD_STORAGE_UPGRADE": Item_postcard_storage_upgradeEntry;
-  "ITEM_POTION": Item_potionEntry;
-  "ITEM_PREMIER_BALL": Item_premier_ballEntry;
-  "ITEM_RARE_CANDY": Item_rare_candyEntry;
-  "ITEM_RAZZ_BERRY": Item_razz_berryEntry;
-  "ITEM_REMOTE_RAID_TICKET": Item_remote_raid_ticketEntry;
   "ITEM_RESOURCE_CROWNED_ZACIAN": Item_resource_crowned_zacianEntry;
   "ITEM_RESOURCE_CROWNED_ZAMAZENTA": Item_resource_crowned_zamazentaEntry;
-  "ITEM_REVIVE": Item_reviveEntry;
-  "ITEM_ROUTE_MAKER": Item_route_makerEntry;
-  "ITEM_SHADOW_GEM": Item_shadow_gemEntry;
-  "ITEM_SHADOW_GEM_FRAGMENT": Item_shadow_gem_fragmentEntry;
   "ITEM_SINGLE_STAT_INCREASE": Item_single_stat_increaseEntry;
-  "ITEM_SOFT_SFIDA": Item_soft_sfidaEntry;
-  "ITEM_SPECIAL_CAMERA": Item_special_cameraEntry;
+  "ITEM_TRIPLE_STAT_INCREASE": Item_triple_stat_increaseEntry;
   "ITEM_STAR_PIECE": Item_star_pieceEntry;
-  "ITEM_STICKER_INVENTORY": Item_sticker_inventoryEntry;
-  "ITEM_SUN_STONE": Item_sun_stoneEntry;
-  "ITEM_SUPER_POTION": Item_super_potionEntry;
-  "ITEM_TEAM_CHANGE": Item_team_changeEntry;
   "ITEM_TICKET_CITY_SAFARI_00": Item_ticket_city_safari_00Entry;
   "ITEM_TICKET_CITY_SAFARI_01": Item_ticket_city_safari_01Entry;
   "ITEM_TICKET_CITY_SAFARI_02": Item_ticket_city_safari_02Entry;
   "ITEM_TICKET_CITY_SAFARI_04": Item_ticket_city_safari_04Entry;
-  "ITEM_TRIPLE_STAT_INCREASE": Item_triple_stat_increaseEntry;
-  "ITEM_TROY_DISK": Item_troy_diskEntry;
-  "ITEM_TROY_DISK_GLACIAL": Item_troy_disk_glacialEntry;
-  "ITEM_TROY_DISK_MAGNETIC": Item_troy_disk_magneticEntry;
-  "ITEM_TROY_DISK_MOSSY": Item_troy_disk_mossyEntry;
-  "ITEM_TROY_DISK_RAINY": Item_troy_disk_rainyEntry;
   "ITEM_TROY_DISK_SPARKLY": Item_troy_disk_sparklyEntry;
-  "ITEM_ULTRA_BALL": Item_ultra_ballEntry;
-  "ITEM_UP_GRADE": Item_up_gradeEntry;
-  "ITEM_WEPAR_BERRY": Item_wepar_berryEntry;
-  "ITEM_WILD_BALL": Item_wild_ballEntry;
-  "ITEM_WILD_BALL_PREMIER": Item_wild_ball_premierEntry;
-  "ITEM_XL_RARE_CANDY": Item_xl_rare_candyEntry;
-  "ITEM_X_ATTACK": Item_x_attackEntry;
-  "ITEM_X_DEFENSE": Item_x_defenseEntry;
-  "ITEM_X_MIRACLE": Item_x_miracleEntry;
 }
 
-export type ItemsSettingsMasterfileEntry = Fusion_resource_black_kyuremEntry | Fusion_resource_dawnwings_necrozmaEntry | Fusion_resource_duskmane_necrozmaEntry | Fusion_resource_white_kyuremEntry | Item_battle_pass_ticketEntry | Item_beansEntry | Item_beast_ballEntry | Item_bluk_berryEntry | Item_breakfastEntry | Item_dragon_scaleEntry | Item_enhanced_currencyEntry | Item_enhanced_currency_holderEntry | Item_event_pass_point_go_fest_01Entry | Item_event_pass_point_go_fest_02Entry | Item_event_pass_point_go_tour_01Entry | Item_event_pass_point_go_tour_02Entry | Item_event_pass_point_go_wild_area_01Entry | Item_event_pass_point_live_ops_01Entry | Item_event_pass_point_live_ops_02Entry | Item_event_pass_point_live_ops_03Entry | Item_event_pass_point_live_ops_04Entry | Item_event_pass_point_live_ops_05Entry | Item_event_pass_point_live_ops_06Entry | Item_event_pass_point_live_ops_07Entry | Item_event_pass_point_live_ops_08Entry | Item_event_pass_point_monthly_01Entry | Item_event_pass_point_monthly_02Entry | Item_event_pass_point_monthly_03Entry | Item_event_ticket_02Entry | Item_event_ticket_02_to_giftEntry | Item_event_ticket_03Entry | Item_event_ticket_03_to_giftEntry | Item_event_ticket_04Entry | Item_event_ticket_04_to_giftEntry | Item_event_ticket_05Entry | Item_event_ticket_05_to_giftEntry | Item_event_ticket_06Entry | Item_event_ticket_07Entry | Item_event_ticket_07_to_giftEntry | Item_event_ticket_08Entry | Item_event_ticket_08_to_giftEntry | Item_event_ticket_09Entry | Item_event_ticket_09_to_giftEntry | Item_event_ticket_10Entry | Item_event_ticket_10_to_giftEntry | Item_event_ticket_grayEntry | Item_event_ticket_pinkEntry | Item_event_ticket_pink_to_giftEntry | Item_evergreen_ticketEntry | Item_evergreen_ticket_to_giftEntry | Item_free_raid_ticketEntry | Item_friend_gift_boxEntry | Item_gen4_evolution_stoneEntry | Item_gen5_evolution_stoneEntry | Item_giovanni_mapEntry | Item_global_event_ticketEntry | Item_global_event_ticket_to_giftEntry | Item_golden_pinap_berryEntry | Item_golden_razz_berryEntry | Item_great_ballEntry | Item_hyper_potionEntry | Item_incense_beluga_boxEntry | Item_incense_daily_adventureEntry | Item_incense_day_bonusEntry | Item_incense_night_bonusEntry | Item_incense_ordinaryEntry | Item_incense_sparklyEntry | Item_incubator_basicEntry | Item_incubator_basic_unlimitedEntry | Item_incubator_specialEntry | Item_incubator_superEntry | Item_incubator_timedEntry | Item_item_storage_upgradeEntry | Item_kings_rockEntry | Item_leader_mapEntry | Item_leader_map_fragmentEntry | Item_lucky_eggEntry | Item_lucky_friend_applicatorEntry | Item_master_ballEntry | Item_max_boostEntry | Item_max_potionEntry | Item_max_reviveEntry | Item_metal_coatEntry | Item_move_reroll_elite_fast_attackEntry | Item_move_reroll_elite_special_attackEntry | Item_move_reroll_fast_attackEntry | Item_move_reroll_other_special_attack_aEntry | Item_move_reroll_special_attackEntry | Item_mpEntry | Item_mp_replenishEntry | Item_nanab_berryEntry | Item_other_evolution_stone_aEntry | Item_other_evolution_stone_maple_aEntry | Item_other_evolution_stone_maple_bEntry | Item_other_evolution_stone_maple_cEntry | Item_paid_raid_ticketEntry | Item_pinap_berryEntry | Item_poffinEntry | Item_pokemon_storage_upgradeEntry | Item_poke_ballEntry | Item_postcard_inventoryEntry | Item_postcard_storage_upgradeEntry | Item_potionEntry | Item_premier_ballEntry | Item_rare_candyEntry | Item_razz_berryEntry | Item_remote_raid_ticketEntry | Item_resource_crowned_zacianEntry | Item_resource_crowned_zamazentaEntry | Item_reviveEntry | Item_route_makerEntry | Item_shadow_gemEntry | Item_shadow_gem_fragmentEntry | Item_single_stat_increaseEntry | Item_soft_sfidaEntry | Item_special_cameraEntry | Item_star_pieceEntry | Item_sticker_inventoryEntry | Item_sun_stoneEntry | Item_super_potionEntry | Item_team_changeEntry | Item_ticket_city_safari_00Entry | Item_ticket_city_safari_01Entry | Item_ticket_city_safari_02Entry | Item_ticket_city_safari_04Entry | Item_triple_stat_increaseEntry | Item_troy_diskEntry | Item_troy_disk_glacialEntry | Item_troy_disk_magneticEntry | Item_troy_disk_mossyEntry | Item_troy_disk_rainyEntry | Item_troy_disk_sparklyEntry | Item_ultra_ballEntry | Item_up_gradeEntry | Item_wepar_berryEntry | Item_wild_ballEntry | Item_wild_ball_premierEntry | Item_xl_rare_candyEntry | Item_x_attackEntry | Item_x_defenseEntry | Item_x_miracleEntry;
+export type ItemsSettingsMasterfileEntry = Fusion_resource_black_kyuremEntry | Fusion_resource_dawnwings_necrozmaEntry | Fusion_resource_duskmane_necrozmaEntry | Fusion_resource_white_kyuremEntry | Item_beansEntry | Item_breakfastEntry | Item_enhanced_currencyEntry | Item_other_evolution_stone_aEntry | Item_battle_pass_ticketEntry | Item_beast_ballEntry | Item_dragon_scaleEntry | Item_free_raid_ticketEntry | Item_friend_gift_boxEntry | Item_gen4_evolution_stoneEntry | Item_gen5_evolution_stoneEntry | Item_great_ballEntry | Item_kings_rockEntry | Item_master_ballEntry | Item_max_boostEntry | Item_metal_coatEntry | Item_move_reroll_elite_fast_attackEntry | Item_move_reroll_elite_special_attackEntry | Item_move_reroll_fast_attackEntry | Item_move_reroll_special_attackEntry | Item_paid_raid_ticketEntry | Item_poke_ballEntry | Item_premier_ballEntry | Item_rare_candyEntry | Item_remote_raid_ticketEntry | Item_route_makerEntry | Item_sticker_inventoryEntry | Item_sun_stoneEntry | Item_team_changeEntry | Item_troy_diskEntry | Item_troy_disk_glacialEntry | Item_troy_disk_magneticEntry | Item_troy_disk_mossyEntry | Item_troy_disk_rainyEntry | Item_ultra_ballEntry | Item_up_gradeEntry | Item_wild_ballEntry | Item_wild_ball_premierEntry | Item_xl_rare_candyEntry | Item_x_attackEntry | Item_x_defenseEntry | Item_x_miracleEntry | Item_bluk_berryEntry | Item_wepar_berryEntry | Item_enhanced_currency_holderEntry | Item_event_pass_point_go_fest_01Entry | Item_event_pass_point_go_tour_02Entry | Item_event_pass_point_go_fest_02Entry | Item_event_pass_point_go_tour_01Entry | Item_event_pass_point_go_wild_area_01Entry | Item_event_pass_point_live_ops_01Entry | Item_event_pass_point_live_ops_02Entry | Item_event_pass_point_live_ops_03Entry | Item_event_pass_point_live_ops_04Entry | Item_event_pass_point_live_ops_05Entry | Item_event_pass_point_live_ops_06Entry | Item_event_pass_point_live_ops_08Entry | Item_event_pass_point_monthly_03Entry | Item_event_pass_point_live_ops_07Entry | Item_event_pass_point_monthly_02Entry | Item_event_pass_point_monthly_01Entry | Item_event_ticket_02Entry | Item_event_ticket_02_to_giftEntry | Item_event_ticket_03_to_giftEntry | Item_event_ticket_09_to_giftEntry | Item_event_ticket_10_to_giftEntry | Item_global_event_ticket_to_giftEntry | Item_event_ticket_03Entry | Item_event_ticket_04Entry | Item_evergreen_ticketEntry | Item_event_ticket_04_to_giftEntry | Item_event_ticket_07_to_giftEntry | Item_event_ticket_08_to_giftEntry | Item_event_ticket_pink_to_giftEntry | Item_evergreen_ticket_to_giftEntry | Item_event_ticket_05Entry | Item_event_ticket_06Entry | Item_global_event_ticketEntry | Item_event_ticket_05_to_giftEntry | Item_event_ticket_07Entry | Item_event_ticket_08Entry | Item_event_ticket_09Entry | Item_event_ticket_10Entry | Item_event_ticket_grayEntry | Item_event_ticket_pinkEntry | Item_giovanni_mapEntry | Item_leader_mapEntry | Item_shadow_gemEntry | Item_golden_pinap_berryEntry | Item_golden_razz_berryEntry | Item_nanab_berryEntry | Item_pinap_berryEntry | Item_razz_berryEntry | Item_hyper_potionEntry | Item_potionEntry | Item_super_potionEntry | Item_incense_beluga_boxEntry | Item_incense_sparklyEntry | Item_incense_daily_adventureEntry | Item_incense_day_bonusEntry | Item_incense_night_bonusEntry | Item_incense_ordinaryEntry | Item_incubator_basicEntry | Item_incubator_superEntry | Item_incubator_basic_unlimitedEntry | Item_incubator_specialEntry | Item_incubator_timedEntry | Item_item_storage_upgradeEntry | Item_pokemon_storage_upgradeEntry | Item_postcard_storage_upgradeEntry | Item_leader_map_fragmentEntry | Item_shadow_gem_fragmentEntry | Item_lucky_eggEntry | Item_lucky_friend_applicatorEntry | Item_max_potionEntry | Item_max_reviveEntry | Item_reviveEntry | Item_move_reroll_other_special_attack_aEntry | Item_mpEntry | Item_soft_sfidaEntry | Item_special_cameraEntry | Item_mp_replenishEntry | Item_other_evolution_stone_maple_aEntry | Item_other_evolution_stone_maple_bEntry | Item_other_evolution_stone_maple_cEntry | Item_poffinEntry | Item_postcard_inventoryEntry | Item_resource_crowned_zacianEntry | Item_resource_crowned_zamazentaEntry | Item_single_stat_increaseEntry | Item_triple_stat_increaseEntry | Item_star_pieceEntry | Item_ticket_city_safari_00Entry | Item_ticket_city_safari_01Entry | Item_ticket_city_safari_02Entry | Item_ticket_city_safari_04Entry | Item_troy_disk_sparklyEntry;
