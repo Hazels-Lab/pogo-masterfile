@@ -6,7 +6,7 @@ export interface BuddyLevelSettings<T extends string> {
 export interface BuddyLevelSettingsData<T extends string> {
 	templateId: T;
 	buddyLevelSettings: {
-		level: "BUDDY_LEVEL_0" | "BUDDY_LEVEL_1" | "BUDDY_LEVEL_2" | "BUDDY_LEVEL_3" | "BUDDY_LEVEL_4";
+		level: T;
 		minNonCumulativePointsRequired?: 1 | 70 | 150 | 300;
 		unlockedTraits?: Array<"BEST_BUDDY_ASSET" | "CP_BOOST" | "EMOTION_INDICATOR" | "ENCOUNTER_CAMEO" | "FIND_ATTRACTIVE_POIS" | "MAP_DEPLOY" | "PICK_UP_CONSUMABLES" | "PICK_UP_SOUVENIRS" | "TRAINING">;
 	};

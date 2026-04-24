@@ -7,7 +7,7 @@ export interface FortPowerUpLevelSettingsData<T extends string> {
 	templateId: T;
 	fortPowerUpLevelSettings: {
 		additionalLevelPowerupDurationMs?: 43200000 | 172800000;
-		level: "FORT_POWER_UP_LEVEL_0" | "FORT_POWER_UP_LEVEL_1" | "FORT_POWER_UP_LEVEL_2" | "FORT_POWER_UP_LEVEL_3";
+		level: T;
 		minPowerUpPointsRequired?: 50 | 100 | 250;
 		powerupLevelRewards?: Array<"FORT_POWER_UP_LEVEL_REWARD_BUDDY_BONUS_HEART" | "FORT_POWER_UP_REWARD_BONUS_ITEM_ON_SPIN" | "FORT_POWER_UP_REWARD_BONUS_RAID_POKEBALLS">;
 	};

@@ -24,6 +24,10 @@ describe("emitGroupFile", () => {
 		);
 		expect(output).toContain("typeEffective: {");
 		expect(output).toContain("attackScalar: [");
+		expect(output).toContain("attackType: T;");
+		expect(output).not.toContain(
+			`attackType: "POKEMON_TYPE_BUG" | "POKEMON_TYPE_DARK";`,
+		);
 		expect(output).not.toContain("typeEffective: unknown;");
 		expect(output).toContain(
 			'export type TypeEffectiveBug = TypeEffective<"POKEMON_TYPE_BUG">;',

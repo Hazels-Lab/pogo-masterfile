@@ -46,6 +46,10 @@ export interface UnionType {
 	variants: InferredType[];
 }
 
+export interface TemplateIdReferenceType {
+	kind: "templateIdReference";
+}
+
 export type InferredType =
 	| NullType
 	| BooleanType
@@ -54,7 +58,8 @@ export type InferredType =
 	| ObjectType
 	| TupleType
 	| ArrayType
-	| UnionType;
+	| UnionType
+	| TemplateIdReferenceType;
 
 export class InferenceBuilder {
 	readonly #values: unknown[] = [];
@@ -229,5 +234,7 @@ function variantSortKey(type: InferredType): string {
 			return "6-array";
 		case "union":
 			return "7-union";
+		case "templateIdReference":
+			return "8-templateIdReference";
 	}
 }

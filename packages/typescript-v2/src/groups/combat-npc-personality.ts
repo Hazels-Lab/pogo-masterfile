@@ -10,7 +10,7 @@ export interface CombatNpcPersonalityData<T extends string> {
 		defensiveMinimumScore?: 1;
 		offensiveMaximumScore: 0.75 | 1;
 		offensiveMinimumScore: 0.5 | 0.75 | 1;
-		personalityName: "TRAINER_PERSONALITY_EASY" | "TRAINER_PERSONALITY_HARD" | "TRAINER_PERSONALITY_MEDIUM";
+		personalityName: T;
 		specialChance: 0.33 | 0.66 | 1;
 		superEffectiveChance: 0.25 | 0.66 | 1;
 	};

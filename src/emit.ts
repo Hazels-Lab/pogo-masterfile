@@ -3,13 +3,16 @@ import type { InferredProperty, InferredType } from "./infer.ts";
 import { inferJsonType, inferJsonTypes } from "./infer.ts";
 import { aliasSuffix, deriveGroupAliases, groupName } from "./naming.ts";
 
+interface TemplateValue {
+	templateId: string;
+	value: unknown;
+}
+
 export function emitGroupFile(group: Group): string {
 	const gName = groupName(group.discriminator);
 	const sortedIds = [...group.entries].map((e) => e.templateId).sort();
 	const aliases = deriveGroupAliases(sortedIds);
-	const payloadType = inferJsonTypes(
-		group.entries.map((entry) => entry.data[group.discriminator]),
-	);
+	const payloadType = inferGroupPayloadType(group);
 
 	const lines: string[] = [];
 	lines.push(`export interface ${gName}<T extends string> {`);
@@ -103,6 +106,8 @@ function renderType(type: InferredType): string[] {
 			return renderArrayType(type.element);
 		case "union":
 			return renderUnionType(type.variants);
+		case "templateIdReference":
+			return ["T"];
 		case "null":
 		case "boolean":
 		case "number":
@@ -172,6 +177,8 @@ function renderInlineType(type: InferredType): string | undefined {
 			}
 			return undefined;
 		}
+		case "templateIdReference":
+			return "T";
 	}
 }
 
@@ -222,6 +229,102 @@ function renderUnionType(variants: InferredType[]): string[] {
 		const [firstLine, ...rest] = lines;
 		return [`| ${firstLine}`, ...rest];
 	});
+}
+
+function inferGroupPayloadType(group: Group): InferredType {
+	return inferTemplateAwareValues(
+		group.entries.map((entry) => ({
+			templateId: entry.templateId,
+			value: entry.data[group.discriminator],
+		})),
+	);
+}
+
+function inferTemplateAwareValues(
+	values: readonly TemplateValue[],
+): InferredType {
+	if (
+		values.length > 0 &&
+		values.every(({ templateId, value }) => value === templateId)
+	) {
+		return { kind: "templateIdReference" };
+	}
+
+	if (values.every(({ value }) => Array.isArray(value))) {
+		return inferTemplateAwareArrays(
+			values as Array<{ templateId: string; value: unknown[] }>,
+		);
+	}
+
+	if (values.every(({ value }) => isJsonObject(value))) {
+		return inferTemplateAwareObjects(
+			values as Array<{ templateId: string; value: Record<string, unknown> }>,
+		);
+	}
+
+	return inferJsonTypes(values.map(({ value }) => value));
+}
+
+function inferTemplateAwareArrays(
+	values: ReadonlyArray<{ templateId: string; value: unknown[] }>,
+): InferredType {
+	const firstLength = values[0]?.value.length ?? 0;
+	const isFixedLength = values.every(
+		({ value }) => value.length === firstLength,
+	);
+	if (isFixedLength) {
+		return {
+			kind: "tuple",
+			items: Array.from({ length: firstLength }, (_, index) =>
+				inferTemplateAwareValues(
+					values.map(({ templateId, value }) => ({
+						templateId,
+						value: value[index],
+					})),
+				),
+			),
+		};
+	}
+
+	return {
+		kind: "array",
+		element: inferTemplateAwareValues(
+			values.flatMap(({ templateId, value }) =>
+				value.map((item) => ({ templateId, value: item })),
+			),
+		),
+	};
+}
+
+function inferTemplateAwareObjects(
+	values: ReadonlyArray<{ templateId: string; value: Record<string, unknown> }>,
+): InferredType {
+	const propertyValues = new Map<string, TemplateValue[]>();
+	const propertyCounts = new Map<string, number>();
+
+	for (const { templateId, value } of values) {
+		for (const [key, propertyValue] of Object.entries(value)) {
+			const collected = propertyValues.get(key);
+			const templateValue = { templateId, value: propertyValue };
+			if (collected) collected.push(templateValue);
+			else propertyValues.set(key, [templateValue]);
+			propertyCounts.set(key, (propertyCounts.get(key) ?? 0) + 1);
+		}
+	}
+
+	const properties = [...propertyValues.entries()]
+		.sort(([a], [b]) => a.localeCompare(b))
+		.map(([name, observedValues]) => ({
+			name,
+			type: inferTemplateAwareValues(observedValues),
+			optional: propertyCounts.get(name) !== values.length,
+		}));
+
+	return { kind: "object", properties };
+}
+
+function isJsonObject(value: unknown): value is Record<string, unknown> {
+	return typeof value === "object" && value !== null && !Array.isArray(value);
 }
 
 function isIdentifierName(value: string): boolean {

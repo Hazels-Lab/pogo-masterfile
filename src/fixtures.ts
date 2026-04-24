@@ -14,6 +14,7 @@ export const MOCK_MASTERFILE = [
 				attackScalar: [
 					1, 1.6, 1, 0.625, 1, 1, 1, 1, 1, 1, 1.6, 1, 0.625, 1, 1, 1, 1, 1,
 				],
+				attackType: "POKEMON_TYPE_BUG",
 			},
 		},
 	},
@@ -25,6 +26,7 @@ export const MOCK_MASTERFILE = [
 				attackScalar: [
 					1, 1, 1, 1, 1, 1.6, 1, 1, 1, 0.625, 1, 1, 1.6, 1, 1, 0.625, 1, 1,
 				],
+				attackType: "POKEMON_TYPE_DARK",
 			},
 		},
 	},

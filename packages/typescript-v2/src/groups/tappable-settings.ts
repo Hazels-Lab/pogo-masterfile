@@ -11,7 +11,7 @@ export interface TappableSettingsData<T extends string> {
 		movementRespawnThresholdMeters?: 5;
 		removeWhenTapped?: true;
 		spawnAngleDegrees?: 45;
-		tappableAssetKey?: "TAPPABLE_TYPE_HAT" | "TAPPABLE_TYPE_MAPLE" | "TAPPABLE_TYPE_POKEBALL";
+		tappableAssetKey?: T;
 		"type"?: "TAPPABLE_TYPE_BREAKFAST";
 		visibleRadiusMeters: 150;
 	};
