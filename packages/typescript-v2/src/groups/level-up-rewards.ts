@@ -1,10 +1,10 @@
-export interface LevelUpRewards<T extends string> {
-	templateId: T;
-	data: LevelUpRewardsData<T>;
+export interface LevelUpRewards<TemplateID extends string> {
+	templateId: TemplateID;
+	data: LevelUpRewardsData<TemplateID>;
 }
 
-export interface LevelUpRewardsData<T extends string> {
-	templateId: T;
+export interface LevelUpRewardsData<TemplateID extends string> {
+	templateId: TemplateID;
 	levelUpRewards: {
 		clientOverrideDisplayOrder?: true;
 		featuresUnlocked?: Array<"FEATURE_CANDY_XL" | "FEATURE_COMBAT_LEAGUE" | "FEATURE_EGG_HATCHING" | "FEATURE_EGG_SPECIAL" | "FEATURE_GYM" | "FEATURE_LUCKY_CHANCE_INCREASE" | "FEATURE_MAX_BATTLE" | "FEATURE_MEGA" | "FEATURE_PARTY_PLAY" | "FEATURE_POKESTOP_NOMINATION" | "FEATURE_RAID" | "FEATURE_ROCKET" | "FEATURE_ROUTES" | "FEATURE_ROUTES_CREATION" | "FEATURE_TAG" | "FEATURE_TRADE" | "FEATURE_WEEKLY_CHALLENGES">;

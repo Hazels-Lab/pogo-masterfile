@@ -1,10 +1,10 @@
-export interface QuestSettings<T extends string> {
-	templateId: T;
-	data: QuestSettingsData<T>;
+export interface QuestSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: QuestSettingsData<TemplateID>;
 }
 
-export interface QuestSettingsData<T extends string> {
-	templateId: T;
+export interface QuestSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	questSettings: {
 		dailyQuest: {
 			bonusMultiplier?: 2;
@@ -12,7 +12,7 @@ export interface QuestSettingsData<T extends string> {
 			streakBonusMultiplier?: 3;
 			streakLength: 7;
 		};
-		questType: T;
+		questType: TemplateID;
 	};
 }
 

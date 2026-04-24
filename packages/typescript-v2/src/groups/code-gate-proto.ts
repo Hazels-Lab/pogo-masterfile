@@ -1,10 +1,10 @@
-export interface CodeGateProto<T extends string> {
-	templateId: T;
-	data: CodeGateProtoData<T>;
+export interface CodeGateProto<TemplateID extends string> {
+	templateId: TemplateID;
+	data: CodeGateProtoData<TemplateID>;
 }
 
-export interface CodeGateProtoData<T extends string> {
-	templateId: T;
+export interface CodeGateProtoData<TemplateID extends string> {
+	templateId: TemplateID;
 	codeGateProto: {
 		isEnabled: true;
 		subCodeGateList?: {

@@ -1,10 +1,10 @@
-export interface EvolutionQuestTemplate<T extends string> {
-	templateId: T;
-	data: EvolutionQuestTemplateData<T>;
+export interface EvolutionQuestTemplate<TemplateID extends string> {
+	templateId: TemplateID;
+	data: EvolutionQuestTemplateData<TemplateID>;
 }
 
-export interface EvolutionQuestTemplateData<T extends string> {
-	templateId: T;
+export interface EvolutionQuestTemplateData<TemplateID extends string> {
+	templateId: TemplateID;
 	evolutionQuestTemplate: {
 		context: "EVOLUTION_QUEST";
 		display: {
@@ -34,7 +34,7 @@ export interface EvolutionQuestTemplateData<T extends string> {
 				target: 1 | 5 | 7 | 10 | 15 | 20 | 25 | 30 | 32 | 70;
 			}
 		];
-		questTemplateId: T;
+		questTemplateId: TemplateID;
 		questType: "QUEST_BUDDY_EARN_AFFECTION_POINTS" | "QUEST_BUDDY_EVOLUTION_WALK" | "QUEST_BUDDY_FEED" | "QUEST_CATCH_POKEMON" | "QUEST_COMPLETE_BATTLE" | "QUEST_COMPLETE_RAID_BATTLE" | "QUEST_FIGHT_POKEMON" | "QUEST_LAND_THROW" | "QUEST_USE_INCENSE";
 	};
 }

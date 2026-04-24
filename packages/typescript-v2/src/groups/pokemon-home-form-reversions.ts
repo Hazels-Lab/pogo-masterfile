@@ -1,10 +1,10 @@
-export interface PokemonHomeFormReversions<T extends string> {
-	templateId: T;
-	data: PokemonHomeFormReversionsData<T>;
+export interface PokemonHomeFormReversions<TemplateID extends string> {
+	templateId: TemplateID;
+	data: PokemonHomeFormReversionsData<TemplateID>;
 }
 
-export interface PokemonHomeFormReversionsData<T extends string> {
-	templateId: T;
+export interface PokemonHomeFormReversionsData<TemplateID extends string> {
+	templateId: TemplateID;
 	pokemonHomeFormReversions: {
 		formMapping: Array<
 			{

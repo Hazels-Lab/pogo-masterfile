@@ -1,10 +1,10 @@
-export interface LanguageSettings<T extends string> {
-	templateId: T;
-	data: LanguageSettingsData<T>;
+export interface LanguageSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: LanguageSettingsData<TemplateID>;
 }
 
-export interface LanguageSettingsData<T extends string> {
-	templateId: T;
+export interface LanguageSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	languageSettings: {
 		isEnabled: true;
 		language: "Hindi" | "Indonesian" | "spanishlatinamerican";

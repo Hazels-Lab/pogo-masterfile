@@ -1,13 +1,13 @@
-export interface FortPowerUpLevelSettings<T extends string> {
-	templateId: T;
-	data: FortPowerUpLevelSettingsData<T>;
+export interface FortPowerUpLevelSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: FortPowerUpLevelSettingsData<TemplateID>;
 }
 
-export interface FortPowerUpLevelSettingsData<T extends string> {
-	templateId: T;
+export interface FortPowerUpLevelSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	fortPowerUpLevelSettings: {
 		additionalLevelPowerupDurationMs?: 43200000 | 172800000;
-		level: T;
+		level: TemplateID;
 		minPowerUpPointsRequired?: 50 | 100 | 250;
 		powerupLevelRewards?: Array<"FORT_POWER_UP_LEVEL_REWARD_BUDDY_BONUS_HEART" | "FORT_POWER_UP_REWARD_BONUS_ITEM_ON_SPIN" | "FORT_POWER_UP_REWARD_BONUS_RAID_POKEBALLS">;
 	};

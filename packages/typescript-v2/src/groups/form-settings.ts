@@ -1,10 +1,10 @@
-export interface FormSettings<T extends string> {
-	templateId: T;
-	data: FormSettingsData<T>;
+export interface FormSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: FormSettingsData<TemplateID>;
 }
 
-export interface FormSettingsData<T extends string> {
-	templateId: T;
+export interface FormSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	formSettings: {
 		forms?: Array<
 			{

@@ -1,10 +1,10 @@
-export interface IapItemDisplay<T extends string> {
-	templateId: T;
-	data: IapItemDisplayData<T>;
+export interface IapItemDisplay<TemplateID extends string> {
+	templateId: TemplateID;
+	data: IapItemDisplayData<TemplateID>;
 }
 
-export interface IapItemDisplayData<T extends string> {
-	templateId: T;
+export interface IapItemDisplayData<TemplateID extends string> {
+	templateId: TemplateID;
 	iapItemDisplay: {
 		category?: "IAP_CATEGORY_BUNDLE" | "IAP_CATEGORY_FLAIR_BUNDLE" | "IAP_CATEGORY_FREE" | "IAP_CATEGORY_GLOBAL_EVENT_TICKET" | "IAP_CATEGORY_ITEMS" | "IAP_CATEGORY_POKECOINS" | "IAP_CATEGORY_STICKER" | "IAP_CATEGORY_TRANSPORTER_ENERGY" | "IAP_CATEGORY_UPGRADES";
 		description?: "battle_pass_ticket_IAP_description" | "event_pass_plus_points_6_ranks_description" | "first_time_gym_team_intro|2" | "gofest_2025_finale_deluxe_event_pass_track_unlock_description" | "gofest_2025_finale_deluxe_event_pass_track_unlock_plus_points_description" | "gosafariball.10_description" | "gosafariball.25_description" | "gosafariball.50_description" | "gotour_2025_deluxe_event_pass_track_unlock_description" | "gotour_2025_deluxe_event_pass_track_unlock_plus_points_description" | "iris_flair_free_description" | "item_event_ticket_gray_details_FinalJustice2025" | "item_ticket_city_safari_00_desc" | "item_ticket_city_safari_01_desc" | "item_ticket_city_safari_02_desc" | "MAXPOTION.5_DESCRIPTION" | "MAXREVIVE.3_DESCRIPTION" | "POSTCARD_EXPANSION_1_description" | "text_rewards_key_GOWA25";

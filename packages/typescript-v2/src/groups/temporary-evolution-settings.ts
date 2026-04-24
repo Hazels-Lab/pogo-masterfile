@@ -1,10 +1,10 @@
-export interface TemporaryEvolutionSettings<T extends string> {
-	templateId: T;
-	data: TemporaryEvolutionSettingsData<T>;
+export interface TemporaryEvolutionSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: TemporaryEvolutionSettingsData<TemplateID>;
 }
 
-export interface TemporaryEvolutionSettingsData<T extends string> {
-	templateId: T;
+export interface TemporaryEvolutionSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	temporaryEvolutionSettings: {
 		pokemonId: "ABOMASNOW" | "ABSOL" | "AERODACTYL" | "AGGRON" | "ALAKAZAM" | "ALTARIA" | "AMPHAROS" | "AUDINO" | "BANETTE" | "BEEDRILL" | "BLASTOISE" | "BLAZIKEN" | "CAMERUPT" | "CHARIZARD" | "DIANCIE" | "DRAGONITE" | "GALLADE" | "GARCHOMP" | "GARDEVOIR" | "GENGAR" | "GLALIE" | "GROUDON" | "GYARADOS" | "HERACROSS" | "HOUNDOOM" | "KANGASKHAN" | "KYOGRE" | "LATIAS" | "LATIOS" | "LOPUNNY" | "LUCARIO" | "MALAMAR" | "MANECTRIC" | "MAWILE" | "MEDICHAM" | "METAGROSS" | "PIDGEOT" | "PINSIR" | "RAYQUAZA" | "SABLEYE" | "SALAMENCE" | "SCEPTILE" | "SCIZOR" | "SHARPEDO" | "SLOWBRO" | "STEELIX" | "SWAMPERT" | "TYRANITAR" | "VENUSAUR" | "VICTREEBEL";
 		temporaryEvolutions: Array<

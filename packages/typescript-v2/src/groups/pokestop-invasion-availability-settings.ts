@@ -1,10 +1,10 @@
-export interface PokestopInvasionAvailabilitySettings<T extends string> {
-	templateId: T;
-	data: PokestopInvasionAvailabilitySettingsData<T>;
+export interface PokestopInvasionAvailabilitySettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: PokestopInvasionAvailabilitySettingsData<TemplateID>;
 }
 
-export interface PokestopInvasionAvailabilitySettingsData<T extends string> {
-	templateId: T;
+export interface PokestopInvasionAvailabilitySettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	pokestopInvasionAvailabilitySettings: {
 		availabilityEndMinute: "1320";
 		availabilityStartMinute: "360";

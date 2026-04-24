@@ -1,10 +1,10 @@
-export interface PartyPlayGeneralSettings<T extends string> {
-	templateId: T;
-	data: PartyPlayGeneralSettingsData<T>;
+export interface PartyPlayGeneralSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: PartyPlayGeneralSettingsData<TemplateID>;
 }
 
-export interface PartyPlayGeneralSettingsData<T extends string> {
-	templateId: T;
+export interface PartyPlayGeneralSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	partyPlayGeneralSettings: {
 		complianceZonesEnabled?: true;
 		creationToStartTimeoutMs?: "600000";

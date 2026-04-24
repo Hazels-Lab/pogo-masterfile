@@ -1,10 +1,10 @@
-export interface ItemExpirationSettings<T extends string> {
-	templateId: T;
-	data: ItemExpirationSettingsData<T>;
+export interface ItemExpirationSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: ItemExpirationSettingsData<TemplateID>;
 }
 
-export interface ItemExpirationSettingsData<T extends string> {
-	templateId: T;
+export interface ItemExpirationSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	itemExpirationSettings: {
 		consolationItems?: {
 			lootItem: [

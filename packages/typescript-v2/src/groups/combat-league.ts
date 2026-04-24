@@ -1,10 +1,10 @@
-export interface CombatLeague<T extends string> {
-	templateId: T;
-	data: CombatLeagueData<T>;
+export interface CombatLeague<TemplateID extends string> {
+	templateId: TemplateID;
+	data: CombatLeagueData<TemplateID>;
 }
 
-export interface CombatLeagueData<T extends string> {
-	templateId: T;
+export interface CombatLeagueData<TemplateID extends string> {
+	templateId: TemplateID;
 	combatLeague: {
 		allowTempEvos?: true;
 		badgeType: "BADGE_GREAT_LEAGUE" | "BADGE_MASTER_LEAGUE" | "BADGE_ULTRA_LEAGUE";

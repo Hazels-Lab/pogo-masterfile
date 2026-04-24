@@ -1,13 +1,13 @@
-export interface BuddyEmotionLevelSettings<T extends string> {
-	templateId: T;
-	data: BuddyEmotionLevelSettingsData<T>;
+export interface BuddyEmotionLevelSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: BuddyEmotionLevelSettingsData<TemplateID>;
 }
 
-export interface BuddyEmotionLevelSettingsData<T extends string> {
-	templateId: T;
+export interface BuddyEmotionLevelSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	buddyEmotionLevelSettings: {
 		emotionAnimation: "BUDDY_ANIMATION_HAPPY" | "BUDDY_ANIMATION_HATE";
-		emotionLevel: T;
+		emotionLevel: TemplateID;
 		minEmotionPointsRequired?: 1 | 2 | 4 | 8 | 16 | 32;
 	};
 }

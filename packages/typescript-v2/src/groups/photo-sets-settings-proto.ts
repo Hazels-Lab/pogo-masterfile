@@ -1,10 +1,10 @@
-export interface PhotoSetsSettingsProto<T extends string> {
-	templateId: T;
-	data: PhotoSetsSettingsProtoData<T>;
+export interface PhotoSetsSettingsProto<TemplateID extends string> {
+	templateId: TemplateID;
+	data: PhotoSetsSettingsProtoData<TemplateID>;
 }
 
-export interface PhotoSetsSettingsProtoData<T extends string> {
-	templateId: T;
+export interface PhotoSetsSettingsProtoData<TemplateID extends string> {
+	templateId: TemplateID;
 	photoSetsSettingsProto: {
 		displayOrder: 1 | 10 | 11 | 12 | 30 | 40 | 286 | 522 | 779 | 808 | 1803 | 2572 | 10240;
 		frameColor: "Beachside" | "BusyBugs" | "Fighting" | "FloralFriends" | "GreenShoots" | "Halloween" | "Museum" | "Nightfall" | "PinkPals" | "RainyDay" | "Safarizone" | "SummerVibes" | "TinyBuddies" | "UkiyoEuphoria";

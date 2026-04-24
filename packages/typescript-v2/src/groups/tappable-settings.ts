@@ -1,17 +1,17 @@
-export interface TappableSettings<T extends string> {
-	templateId: T;
-	data: TappableSettingsData<T>;
+export interface TappableSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: TappableSettingsData<TemplateID>;
 }
 
-export interface TappableSettingsData<T extends string> {
-	templateId: T;
+export interface TappableSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	tappableSettings: {
 		avgTappablesInView?: 1;
 		buddyFovDegress?: 130;
 		movementRespawnThresholdMeters?: 5;
 		removeWhenTapped?: true;
 		spawnAngleDegrees?: 45;
-		tappableAssetKey?: T;
+		tappableAssetKey?: TemplateID;
 		"type"?: "TAPPABLE_TYPE_BREAKFAST";
 		visibleRadiusMeters: 150;
 	};

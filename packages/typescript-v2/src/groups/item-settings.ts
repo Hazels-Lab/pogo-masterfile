@@ -1,10 +1,10 @@
-export interface ItemSettings<T extends string> {
-	templateId: T;
-	data: ItemSettingsData<T>;
+export interface ItemSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: ItemSettingsData<TemplateID>;
 }
 
-export interface ItemSettingsData<T extends string> {
-	templateId: T;
+export interface ItemSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	itemSettings: {
 		category: "ITEM_CATEGORY_BOOST" | "ITEM_CATEGORY_BREAD" | "ITEM_CATEGORY_BUDDY_EXCLUSIVE_FOOD" | "ITEM_CATEGORY_CAMERA" | "ITEM_CATEGORY_CANDY" | "ITEM_CATEGORY_DISK" | "ITEM_CATEGORY_ENHANCED_CURRENCY" | "ITEM_CATEGORY_ENHANCED_CURRENCY_HOLDER" | "ITEM_CATEGORY_EVENT_PASS_POINT" | "ITEM_CATEGORY_EVOLUTION_REQUIREMENT" | "ITEM_CATEGORY_FOOD" | "ITEM_CATEGORY_FRIEND_GIFT_BOX" | "ITEM_CATEGORY_GLOBAL_EVENT_TICKET" | "ITEM_CATEGORY_INCENSE" | "ITEM_CATEGORY_INCIDENT_TICKET" | "ITEM_CATEGORY_INCUBATOR" | "ITEM_CATEGORY_INVENTORY_UPGRADE" | "ITEM_CATEGORY_MEDICINE" | "ITEM_CATEGORY_MOVE_REROLL" | "ITEM_CATEGORY_MP" | "ITEM_CATEGORY_POKEBALL" | "ITEM_CATEGORY_POSTCARD_INVENTORY" | "ITEM_CATEGORY_RAID_TICKET" | "ITEM_CATEGORY_ROUTE_MAKER" | "ITEM_CATEGORY_STARDUST_BOOST" | "ITEM_CATEGORY_STAT_INCREASE" | "ITEM_CATEGORY_STICKER" | "ITEM_CATEGORY_TEAM_CHANGE" | "ITEM_CATEGORY_UTILITES" | "ITEM_CATEGORY_XP_BOOST";
 		descriptionOverride?: "item_event_ticket_02_details_CATCH_MASTERY_ORICORIO" | "item_event_ticket_05_desc_GMAX_PIKACHU_MAX_BATTLE" | "item_event_ticket_06_desc_ENTEI_SHADOW_RAID_DAY" | "item_event_ticket_06_desc_REPLAY_GO_BIGGER" | "item_event_ticket_07_desc_masterball25" | "item_event_ticket_07_details_masterball25" | "ITEM_EVENT_TICKET_09_desc_fashionRaidDay26" | "ITEM_EVENT_TICKET_09_details_fashionRaidDay26" | "item_event_ticket_evergreen_desc_IntoTDepths26" | "item_event_ticket_evergreen_desc_PawPrint_20250620" | "item_event_ticket_evergreen_desc_Riolu0426" | "item_event_ticket_evergreen_details_GOWA2024GSBEA" | "item_event_ticket_evergreen_details_IntoTDepths26" | "item_event_ticket_evergreen_details_Riolu0426" | "item_event_ticket_gray_desc_FinalJustice2025" | "item_event_ticket_pink_details_CD_Tinkatink26" | "item_event_ticket_pink_details_WaterRRD26" | "item_global_event_ticket_details_GOTour2026" | "item_postcard_inventory_desc_stamp";
@@ -94,7 +94,7 @@ export interface ItemSettingsData<T extends string> {
 			upgradeType: "INCREASE_ITEM_STORAGE" | "INCREASE_POKEMON_STORAGE" | "INCREASE_POSTCARD_STORAGE";
 		};
 		itemCap?: 1 | 12 | 300 | 600 | 6000 | 9999 | 10000 | 999999;
-		itemId: T;
+		itemId: TemplateID;
 		itemType: "ITEM_TYPE_BATTLE" | "ITEM_TYPE_BREAKFAST" | "ITEM_TYPE_CAMERA" | "ITEM_TYPE_CANDY" | "ITEM_TYPE_DISK" | "ITEM_TYPE_ENHANCED_CURRENCY" | "ITEM_TYPE_ENHANCED_CURRENCY_HOLDER" | "ITEM_TYPE_EVENT_PASS_POINT" | "ITEM_TYPE_EVOLUTION_REQUIREMENT" | "ITEM_TYPE_FOOD" | "ITEM_TYPE_FRIEND_BOOST" | "ITEM_TYPE_FRIEND_GIFT_BOX" | "ITEM_TYPE_GLOBAL_EVENT_TICKET" | "ITEM_TYPE_INCENSE" | "ITEM_TYPE_INCIDENT_TICKET" | "ITEM_TYPE_INCUBATOR" | "ITEM_TYPE_INVENTORY_UPGRADE" | "ITEM_TYPE_MOVE_REROLL" | "ITEM_TYPE_MP" | "ITEM_TYPE_MP_REPLENISH" | "ITEM_TYPE_POKEBALL" | "ITEM_TYPE_POSTCARD_INVENTORY" | "ITEM_TYPE_POTION" | "ITEM_TYPE_RAID_TICKET" | "ITEM_TYPE_REVIVE" | "ITEM_TYPE_ROUTE_MAKER" | "ITEM_TYPE_SOFT_SFIDA" | "ITEM_TYPE_STARDUST_BOOST" | "ITEM_TYPE_STAT_INCREASE" | "ITEM_TYPE_STICKER_INVENTORY" | "ITEM_TYPE_TEAM_CHANGE" | "ITEM_TYPE_XP_BOOST";
 		nameOverride?: "general1.ticket_CD_Tinkatink26_title" | "general1.ticket._GOWA2024GSBEA_title" | "general1.ticket.2_WaterRRD26_title" | "general1.ticket.4_Riolu0426_title" | "general1.ticket.5_IntoTDepths26_title" | "general1.ticket.5.ENTEI_SHADOW_RAID_DAY" | "general2.ticket.6.REPLAY_GO_BIGGER" | "general2.ticket.7_masterball25_title" | "general2.ticket.9_fashionRaidDay26_title" | "general2.ticket2.CATCH_MASTERY_ORICORIO" | "general2.ticket5.GMAX_PIKACHU_MAX_BATTLE" | "GOTour_2026_ticket_title" | "ITEM_EVENT_PASS_POINT_LIVE_OPS_01_name" | "item_postcard_inventory_name_stamp";
 		potion?: {

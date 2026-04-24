@@ -1,13 +1,13 @@
-export interface BadgeSettings<T extends string> {
-	templateId: T;
-	data: BadgeSettingsData<T>;
+export interface BadgeSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: BadgeSettingsData<TemplateID>;
 }
 
-export interface BadgeSettingsData<T extends string> {
-	templateId: T;
+export interface BadgeSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	badgeSettings: {
 		badgeRank: 2 | 5;
-		badgeType: T;
+		badgeType: TemplateID;
 		captureReward?: [
 			Record<string, never>,
 			Record<string, never>,

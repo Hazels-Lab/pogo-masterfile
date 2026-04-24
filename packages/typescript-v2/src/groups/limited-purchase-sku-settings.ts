@@ -1,10 +1,10 @@
-export interface LimitedPurchaseSkuSettings<T extends string> {
-	templateId: T;
-	data: LimitedPurchaseSkuSettingsData<T>;
+export interface LimitedPurchaseSkuSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: LimitedPurchaseSkuSettingsData<TemplateID>;
 }
 
-export interface LimitedPurchaseSkuSettingsData<T extends string> {
-	templateId: T;
+export interface LimitedPurchaseSkuSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	limitedPurchaseSkuSettings: {
 		chronoUnit?: "DAY";
 		lootTableId?: "BUNDLE_GENERAL1_FREE1_1_LOOT_TABLE";

@@ -1,10 +1,10 @@
-export interface InvasionNpcDisplaySettings<T extends string> {
-	templateId: T;
-	data: InvasionNpcDisplaySettingsData<T>;
+export interface InvasionNpcDisplaySettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: InvasionNpcDisplaySettingsData<TemplateID>;
 }
 
-export interface InvasionNpcDisplaySettingsData<T extends string> {
-	templateId: T;
+export interface InvasionNpcDisplaySettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	invasionNpcDisplaySettings: {
 		avatar: {
 			avatar?: 1 | 2;

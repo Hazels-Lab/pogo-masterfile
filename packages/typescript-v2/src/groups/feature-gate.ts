@@ -1,10 +1,10 @@
-export interface FeatureGate<T extends string> {
-	templateId: T;
-	data: FeatureGateData<T>;
+export interface FeatureGate<TemplateID extends string> {
+	templateId: TemplateID;
+	data: FeatureGateData<TemplateID>;
 }
 
-export interface FeatureGateData<T extends string> {
-	templateId: T;
+export interface FeatureGateData<TemplateID extends string> {
+	templateId: TemplateID;
 	featureGate: {
 		rolloutPercentage: 100;
 		status: 1 | 24 | 29825861 | 41414141 | 87970808 | 216426293 | 1827323905;

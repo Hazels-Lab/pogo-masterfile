@@ -1,10 +1,10 @@
-export interface VnextBattleConfig<T extends string> {
-	templateId: T;
-	data: VnextBattleConfigData<T>;
+export interface VnextBattleConfig<TemplateID extends string> {
+	templateId: TemplateID;
+	data: VnextBattleConfigData<TemplateID>;
 }
 
-export interface VnextBattleConfigData<T extends string> {
-	templateId: T;
+export interface VnextBattleConfigData<TemplateID extends string> {
+	templateId: TemplateID;
 	vnextBattleConfig: {
 		maxBattleConfig: {
 			badNetworkWarningThresholdTurns?: "12";

@@ -1,10 +1,10 @@
-export interface FriendshipMilestoneSettings<T extends string> {
-	templateId: T;
-	data: FriendshipMilestoneSettingsData<T>;
+export interface FriendshipMilestoneSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: FriendshipMilestoneSettingsData<TemplateID>;
 }
 
-export interface FriendshipMilestoneSettingsData<T extends string> {
-	templateId: T;
+export interface FriendshipMilestoneSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	friendshipMilestoneSettings: {
 		attackBonusPercentage: 1 | 1.03 | 1.05 | 1.07 | 1.1 | 1.12;
 		milestoneXpReward: 1000 | 3000 | 10000 | 50000 | 100000 | 150000;

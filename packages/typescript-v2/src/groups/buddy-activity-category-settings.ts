@@ -1,12 +1,12 @@
-export interface BuddyActivityCategorySettings<T extends string> {
-	templateId: T;
-	data: BuddyActivityCategorySettingsData<T>;
+export interface BuddyActivityCategorySettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: BuddyActivityCategorySettingsData<TemplateID>;
 }
 
-export interface BuddyActivityCategorySettingsData<T extends string> {
-	templateId: T;
+export interface BuddyActivityCategorySettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	buddyActivityCategorySettings: {
-		activityCategory: T;
+		activityCategory: TemplateID;
 		maxPointsPerDay: 1 | 3 | 6;
 	};
 }

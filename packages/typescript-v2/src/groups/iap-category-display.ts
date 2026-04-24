@@ -1,10 +1,10 @@
-export interface IapCategoryDisplay<T extends string> {
-	templateId: T;
-	data: IapCategoryDisplayData<T>;
+export interface IapCategoryDisplay<TemplateID extends string> {
+	templateId: TemplateID;
+	data: IapCategoryDisplayData<TemplateID>;
 }
 
-export interface IapCategoryDisplayData<T extends string> {
-	templateId: T;
+export interface IapCategoryDisplayData<TemplateID extends string> {
+	templateId: TemplateID;
 	iapCategoryDisplay: {
 		bannerEnabled?: true;
 		bannerTitle?: "shop_category_global_events" | "shop_limited_time";

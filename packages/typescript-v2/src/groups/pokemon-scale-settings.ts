@@ -1,10 +1,10 @@
-export interface PokemonScaleSettings<T extends string> {
-	templateId: T;
-	data: PokemonScaleSettingsData<T>;
+export interface PokemonScaleSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: PokemonScaleSettingsData<TemplateID>;
 }
 
-export interface PokemonScaleSettingsData<T extends string> {
-	templateId: T;
+export interface PokemonScaleSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	pokemonScaleSettings: {
 		maxHeight: 3.6 | 4.2 | 4.35 | 8 | 10;
 		minHeight: 0.31 | 0.8 | 1.3 | 2.3 | 4;

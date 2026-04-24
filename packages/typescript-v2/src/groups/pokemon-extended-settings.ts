@@ -1,10 +1,10 @@
-export interface PokemonExtendedSettings<T extends string> {
-	templateId: T;
-	data: PokemonExtendedSettingsData<T>;
+export interface PokemonExtendedSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: PokemonExtendedSettingsData<TemplateID>;
 }
 
-export interface PokemonExtendedSettingsData<T extends string> {
-	templateId: T;
+export interface PokemonExtendedSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	pokemonExtendedSettings: {
 		breadOverrides?: Array<
 			{

@@ -1,10 +1,10 @@
-export interface BreadMoveLevelSettings<T extends string> {
-	templateId: T;
-	data: BreadMoveLevelSettingsData<T>;
+export interface BreadMoveLevelSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: BreadMoveLevelSettingsData<TemplateID>;
 }
 
-export interface BreadMoveLevelSettingsData<T extends string> {
-	templateId: T;
+export interface BreadMoveLevelSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	breadMoveLevelSettings: {
 		aSettings: [
 			{

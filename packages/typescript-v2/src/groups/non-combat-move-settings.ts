@@ -1,10 +1,10 @@
-export interface NonCombatMoveSettings<T extends string> {
-	templateId: T;
-	data: NonCombatMoveSettingsData<T>;
+export interface NonCombatMoveSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: NonCombatMoveSettingsData<TemplateID>;
 }
 
-export interface NonCombatMoveSettingsData<T extends string> {
-	templateId: T;
+export interface NonCombatMoveSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	nonCombatMoveSettings: {
 		bonusEffect: {
 			attackDefenseBonus?: {

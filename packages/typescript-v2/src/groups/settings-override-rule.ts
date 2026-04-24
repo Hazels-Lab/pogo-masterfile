@@ -1,10 +1,10 @@
-export interface SettingsOverrideRule<T extends string> {
-	templateId: T;
-	data: SettingsOverrideRuleData<T>;
+export interface SettingsOverrideRule<TemplateID extends string> {
+	templateId: TemplateID;
+	data: SettingsOverrideRuleData<TemplateID>;
 }
 
-export interface SettingsOverrideRuleData<T extends string> {
-	templateId: T;
+export interface SettingsOverrideRuleData<TemplateID extends string> {
+	templateId: TemplateID;
 	settingsOverrideRule: {
 		fusedDepthEnabled?: "TRUE";
 		meshingEnabled?: "FALSE" | "TRUE";

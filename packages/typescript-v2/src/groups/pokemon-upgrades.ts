@@ -1,10 +1,10 @@
-export interface PokemonUpgrades<T extends string> {
-	templateId: T;
-	data: PokemonUpgradesData<T>;
+export interface PokemonUpgrades<TemplateID extends string> {
+	templateId: TemplateID;
+	data: PokemonUpgradesData<TemplateID>;
 }
 
-export interface PokemonUpgradesData<T extends string> {
-	templateId: T;
+export interface PokemonUpgradesData<TemplateID extends string> {
+	templateId: TemplateID;
 	pokemonUpgrades: {
 		allowedLevelsAbovePlayer: 10;
 		candyCost: [

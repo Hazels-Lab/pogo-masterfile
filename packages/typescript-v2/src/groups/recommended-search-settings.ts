@@ -1,10 +1,10 @@
-export interface RecommendedSearchSettings<T extends string> {
-	templateId: T;
-	data: RecommendedSearchSettingsData<T>;
+export interface RecommendedSearchSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: RecommendedSearchSettingsData<TemplateID>;
 }
 
-export interface RecommendedSearchSettingsData<T extends string> {
-	templateId: T;
+export interface RecommendedSearchSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	recommendedSearchSettings: {
 		appendSearchString?: "0*,1*,2*" | "3*,4*";
 		searchKey?: "badge_pokedex_entries_title" | "filter_key_evolve_mega" | "filter_key_hatched" | "filter_key_legendary" | "filter_key_shiny" | "filter_key_traded" | "pokemon_info_evolve_button" | "pokemon_type_normal";

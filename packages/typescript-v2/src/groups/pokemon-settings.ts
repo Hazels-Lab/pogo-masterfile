@@ -1,10 +1,10 @@
-export interface PokemonSettings<T extends string> {
-	templateId: T;
-	data: PokemonSettingsData<T>;
+export interface PokemonSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: PokemonSettingsData<TemplateID>;
 }
 
-export interface PokemonSettingsData<T extends string> {
-	templateId: T;
+export interface PokemonSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	pokemonSettings: {
 		allowNoevolveEvolution?: [
 			"APRIL_2020_NOEVOLVE" | "FALL_2020_NOEVOLVE" | "FALL_2022" | "FALL_2022_NOEVOLVE" | "JAN_2020_NOEVOLVE" | "JAN_2022_NOEVOLVE"

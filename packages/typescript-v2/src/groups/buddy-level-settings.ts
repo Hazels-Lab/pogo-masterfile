@@ -1,12 +1,12 @@
-export interface BuddyLevelSettings<T extends string> {
-	templateId: T;
-	data: BuddyLevelSettingsData<T>;
+export interface BuddyLevelSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: BuddyLevelSettingsData<TemplateID>;
 }
 
-export interface BuddyLevelSettingsData<T extends string> {
-	templateId: T;
+export interface BuddyLevelSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	buddyLevelSettings: {
-		level: T;
+		level: TemplateID;
 		minNonCumulativePointsRequired?: 1 | 70 | 150 | 300;
 		unlockedTraits?: Array<"BEST_BUDDY_ASSET" | "CP_BOOST" | "EMOTION_INDICATOR" | "ENCOUNTER_CAMEO" | "FIND_ATTRACTIVE_POIS" | "MAP_DEPLOY" | "PICK_UP_CONSUMABLES" | "PICK_UP_SOUVENIRS" | "TRAINING">;
 	};

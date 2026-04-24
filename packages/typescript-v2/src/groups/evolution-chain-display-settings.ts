@@ -1,10 +1,10 @@
-export interface EvolutionChainDisplaySettings<T extends string> {
-	templateId: T;
-	data: EvolutionChainDisplaySettingsData<T>;
+export interface EvolutionChainDisplaySettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: EvolutionChainDisplaySettingsData<TemplateID>;
 }
 
-export interface EvolutionChainDisplaySettingsData<T extends string> {
-	templateId: T;
+export interface EvolutionChainDisplaySettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	evolutionChainDisplaySettings: {
 		evolutionChains?: Array<
 			{

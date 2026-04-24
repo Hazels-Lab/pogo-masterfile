@@ -1,10 +1,10 @@
-export interface MegaEvoLevelSettings<T extends string> {
-	templateId: T;
-	data: MegaEvoLevelSettingsData<T>;
+export interface MegaEvoLevelSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: MegaEvoLevelSettingsData<TemplateID>;
 }
 
-export interface MegaEvoLevelSettingsData<T extends string> {
-	templateId: T;
+export interface MegaEvoLevelSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	megaEvoLevelSettings: {
 		cooldown: {
 			bypassCostInitial: 5 | 10 | 15 | 20 | 30 | 40 | 60 | 80 | 100 | 200 | 300 | 400 | 500;

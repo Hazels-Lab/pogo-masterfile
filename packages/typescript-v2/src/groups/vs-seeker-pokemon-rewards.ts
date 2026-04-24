@@ -1,10 +1,10 @@
-export interface VsSeekerPokemonRewards<T extends string> {
-	templateId: T;
-	data: VsSeekerPokemonRewardsData<T>;
+export interface VsSeekerPokemonRewards<TemplateID extends string> {
+	templateId: TemplateID;
+	data: VsSeekerPokemonRewardsData<TemplateID>;
 }
 
-export interface VsSeekerPokemonRewardsData<T extends string> {
-	templateId: T;
+export interface VsSeekerPokemonRewardsData<TemplateID extends string> {
+	templateId: TemplateID;
 	vsSeekerPokemonRewards: {
 		availablePokemon: [
 			{

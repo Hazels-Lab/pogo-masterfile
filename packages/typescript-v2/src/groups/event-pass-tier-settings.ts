@@ -1,10 +1,10 @@
-export interface EventPassTierSettings<T extends string> {
-	templateId: T;
-	data: EventPassTierSettingsData<T>;
+export interface EventPassTierSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: EventPassTierSettingsData<TemplateID>;
 }
 
-export interface EventPassTierSettingsData<T extends string> {
-	templateId: T;
+export interface EventPassTierSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	eventPassTierSettings: {
 		activeBonusDisplaySettings?: {
 			bonusBoxes: Array<

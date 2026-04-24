@@ -8,6 +8,8 @@ interface TemplateValue {
 	value: unknown;
 }
 
+const TEMPLATE_GENERIC = `TemplateID`;
+
 export function emitGroupFile(group: Group): string {
 	const gName = groupName(group.discriminator);
 	const sortedIds = [...group.entries].map((e) => e.templateId).sort();
@@ -15,13 +17,15 @@ export function emitGroupFile(group: Group): string {
 	const payloadType = inferGroupPayloadType(group);
 
 	const lines: string[] = [];
-	lines.push(`export interface ${gName}<T extends string> {`);
-	lines.push(`\ttemplateId: T;`);
-	lines.push(`\tdata: ${gName}Data<T>;`);
+	lines.push(`export interface ${gName}<${TEMPLATE_GENERIC} extends string> {`);
+	lines.push(`\ttemplateId: ${TEMPLATE_GENERIC};`);
+	lines.push(`\tdata: ${gName}Data<${TEMPLATE_GENERIC}>;`);
 	lines.push(`}`);
 	lines.push(``);
-	lines.push(`export interface ${gName}Data<T extends string> {`);
-	lines.push(`\ttemplateId: T;`);
+	lines.push(
+		`export interface ${gName}Data<${TEMPLATE_GENERIC} extends string> {`,
+	);
+	lines.push(`\ttemplateId: ${TEMPLATE_GENERIC};`);
 	lines.push(...renderProperty(group.discriminator, payloadType, false, "\t"));
 	lines.push(`}`);
 	lines.push(``);
@@ -107,7 +111,7 @@ function renderType(type: InferredType): string[] {
 		case "union":
 			return renderUnionType(type.variants);
 		case "templateIdReference":
-			return ["T"];
+			return [TEMPLATE_GENERIC];
 		case "null":
 		case "boolean":
 		case "number":
@@ -178,7 +182,7 @@ function renderInlineType(type: InferredType): string | undefined {
 			return undefined;
 		}
 		case "templateIdReference":
-			return "T";
+			return TEMPLATE_GENERIC;
 	}
 }
 

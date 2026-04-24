@@ -1,10 +1,10 @@
-export interface AvatarGroupOrderSettings<T extends string> {
-	templateId: T;
-	data: AvatarGroupOrderSettingsData<T>;
+export interface AvatarGroupOrderSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: AvatarGroupOrderSettingsData<TemplateID>;
 }
 
-export interface AvatarGroupOrderSettingsData<T extends string> {
-	templateId: T;
+export interface AvatarGroupOrderSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	avatarGroupOrderSettings: {
 		group: Array<
 			{

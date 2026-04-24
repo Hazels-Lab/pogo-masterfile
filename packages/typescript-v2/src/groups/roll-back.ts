@@ -1,10 +1,10 @@
-export interface RollBack<T extends string> {
-	templateId: T;
-	data: RollBackData<T>;
+export interface RollBack<TemplateID extends string> {
+	templateId: TemplateID;
+	data: RollBackData<TemplateID>;
 }
 
-export interface RollBackData<T extends string> {
-	templateId: T;
+export interface RollBackData<TemplateID extends string> {
+	templateId: TemplateID;
 	rollBack: {
 		rollbackPercentage: 100;
 	};

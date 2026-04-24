@@ -1,10 +1,10 @@
-export interface TypeEffective<T extends string> {
-	templateId: T;
-	data: TypeEffectiveData<T>;
+export interface TypeEffective<TemplateID extends string> {
+	templateId: TemplateID;
+	data: TypeEffectiveData<TemplateID>;
 }
 
-export interface TypeEffectiveData<T extends string> {
-	templateId: T;
+export interface TypeEffectiveData<TemplateID extends string> {
+	templateId: TemplateID;
 	typeEffective: {
 		attackScalar: [
 			0.390625 | 1 | 1.6,
@@ -26,7 +26,7 @@ export interface TypeEffectiveData<T extends string> {
 			0.390625 | 0.625 | 1 | 1.6,
 			0.390625 | 0.625 | 1 | 1.6
 		];
-		attackType: T;
+		attackType: TemplateID;
 	};
 }
 

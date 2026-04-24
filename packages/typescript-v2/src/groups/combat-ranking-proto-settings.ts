@@ -1,10 +1,10 @@
-export interface CombatRankingProtoSettings<T extends string> {
-	templateId: T;
-	data: CombatRankingProtoSettingsData<T>;
+export interface CombatRankingProtoSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: CombatRankingProtoSettingsData<TemplateID>;
 }
 
-export interface CombatRankingProtoSettingsData<T extends string> {
-	templateId: T;
+export interface CombatRankingProtoSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	combatRankingProtoSettings: {
 		minRankToDisplayRating: 11 | 17 | 20 | 24;
 		minRatingRequired?: 8 | 9 | 10 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29;

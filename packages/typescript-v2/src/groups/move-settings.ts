@@ -1,10 +1,10 @@
-export interface MoveSettings<T extends string> {
-	templateId: T;
-	data: MoveSettingsData<T>;
+export interface MoveSettings<TemplateID extends string> {
+	templateId: TemplateID;
+	data: MoveSettingsData<TemplateID>;
 }
 
-export interface MoveSettingsData<T extends string> {
-	templateId: T;
+export interface MoveSettingsData<TemplateID extends string> {
+	templateId: TemplateID;
 	moveSettings: {
 		accuracyChance: 1;
 		animationId: 4 | 5;

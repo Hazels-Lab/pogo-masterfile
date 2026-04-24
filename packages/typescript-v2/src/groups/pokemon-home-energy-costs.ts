@@ -1,10 +1,10 @@
-export interface PokemonHomeEnergyCosts<T extends string> {
-	templateId: T;
-	data: PokemonHomeEnergyCostsData<T>;
+export interface PokemonHomeEnergyCosts<TemplateID extends string> {
+	templateId: TemplateID;
+	data: PokemonHomeEnergyCostsData<TemplateID>;
 }
 
-export interface PokemonHomeEnergyCostsData<T extends string> {
-	templateId: T;
+export interface PokemonHomeEnergyCostsData<TemplateID extends string> {
+	templateId: TemplateID;
 	pokemonHomeEnergyCosts: {
 		base: 10 | 1000 | 2000;
 		cp1001To2000: 100 | 300 | 500;

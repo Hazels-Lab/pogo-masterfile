@@ -1,10 +1,10 @@
-export interface CombatNpcTrainer<T extends string> {
-	templateId: T;
-	data: CombatNpcTrainerData<T>;
+export interface CombatNpcTrainer<TemplateID extends string> {
+	templateId: TemplateID;
+	data: CombatNpcTrainerData<TemplateID>;
 }
 
-export interface CombatNpcTrainerData<T extends string> {
-	templateId: T;
+export interface CombatNpcTrainerData<TemplateID extends string> {
+	templateId: TemplateID;
 	combatNpcTrainer: {
 		availablePokemon: [
 			{

@@ -1,10 +1,10 @@
-export interface CombatMove<T extends string> {
-	templateId: T;
-	data: CombatMoveData<T>;
+export interface CombatMove<TemplateID extends string> {
+	templateId: TemplateID;
+	data: CombatMoveData<TemplateID>;
 }
 
-export interface CombatMoveData<T extends string> {
-	templateId: T;
+export interface CombatMoveData<TemplateID extends string> {
+	templateId: TemplateID;
 	combatMove: {
 		buffs?: {
 			attackerAttackStatStageChange?: -2 | -1 | 1 | 2;

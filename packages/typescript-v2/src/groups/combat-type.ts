@@ -1,10 +1,10 @@
-export interface CombatType<T extends string> {
-	templateId: T;
-	data: CombatTypeData<T>;
+export interface CombatType<TemplateID extends string> {
+	templateId: TemplateID;
+	data: CombatTypeData<TemplateID>;
 }
 
-export interface CombatTypeData<T extends string> {
-	templateId: T;
+export interface CombatTypeData<TemplateID extends string> {
+	templateId: TemplateID;
 	combatType: {
 		excellentLevelThreshold: 0.95;
 		greatLevelThreshold: 0.6 | 0.7;
