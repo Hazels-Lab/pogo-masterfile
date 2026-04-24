@@ -158,6 +158,53 @@ describe("emitMiscFile", () => {
 		const xyzIdx = output.indexOf("XyzSettings");
 		expect(itemIdx).toBeLessThan(xyzIdx);
 	});
+
+	test("emits MiscMasterfileEntry union + MiscTemplateID alias at the end, sorted", () => {
+		const mixed: Group[] = [
+			{
+				discriminator: "xyzSettings",
+				entries: [
+					{
+						templateId: "XYZ_SETTINGS",
+						data: { templateId: "XYZ_SETTINGS", xyzSettings: {} },
+					},
+				],
+			},
+			{
+				discriminator: "accessibilitySettings",
+				entries: [
+					{
+						templateId: "ACCESSIBILITY_CLIENT_SETTINGS",
+						data: {
+							templateId: "ACCESSIBILITY_CLIENT_SETTINGS",
+							accessibilitySettings: {},
+						},
+					},
+				],
+			},
+		];
+
+		const output = emitMiscFile(mixed);
+		expect(output).toContain("export type MiscMasterfileEntry =");
+		expect(output).toContain("| AccessibilitySettings");
+		expect(output).toContain("| XyzSettings;");
+		expect(output).toContain(
+			`export type MiscTemplateID = MiscMasterfileEntry["templateId"];`,
+		);
+
+		// Union members follow the interface definitions
+		const lastInterfaceIdx = output.lastIndexOf("export interface");
+		const unionIdx = output.indexOf("export type MiscMasterfileEntry");
+		expect(unionIdx).toBeGreaterThan(lastInterfaceIdx);
+	});
+
+	test("emits MiscMasterfileEntry = never when there are no singletons", () => {
+		const output = emitMiscFile([]);
+		expect(output).toContain("export type MiscMasterfileEntry = never;");
+		expect(output).toContain(
+			`export type MiscTemplateID = MiscMasterfileEntry["templateId"];`,
+		);
+	});
 });
 
 describe("kebabCase", () => {
@@ -200,5 +247,20 @@ describe("emitIndexFile", () => {
 		expect(output).toContain(
 			`export type MasterfileTemplateID = MasterfileEntry["templateId"];`,
 		);
+	});
+
+	test("imports MiscMasterfileEntry and includes it at the end of the MasterfileEntry union", () => {
+		const output = emitIndexFile(["typeEffective", "pokemonSettings"]);
+		expect(output).toContain(
+			`import type { MiscMasterfileEntry } from "./groups/misc.ts";`,
+		);
+		expect(output).toContain("| MiscMasterfileEntry;");
+
+		// Misc is last in the union:
+		const miscIdx = output.indexOf("| MiscMasterfileEntry;");
+		const pokemonIdx = output.indexOf("| PokemonSettingsMasterfileEntry");
+		const typeIdx = output.indexOf("| TypeEffectiveMasterfileEntry");
+		expect(miscIdx).toBeGreaterThan(pokemonIdx);
+		expect(miscIdx).toBeGreaterThan(typeIdx);
 	});
 });

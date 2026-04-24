@@ -67,6 +67,20 @@ export function emitMiscFile(singletons: Group[]): string {
 		lines.push(`}`);
 		lines.push(``);
 	}
+	// Global union of all singletons + stubs, for `MasterfileEntry` composition.
+	if (named.length === 0) {
+		lines.push(`export type MiscMasterfileEntry = never;`);
+	} else {
+		lines.push(`export type MiscMasterfileEntry =`);
+		named.forEach(({ name }, i) => {
+			const suffix = i === named.length - 1 ? ";" : "";
+			lines.push(`\t| ${name}${suffix}`);
+		});
+	}
+	lines.push(``);
+	lines.push(`export type MiscTemplateID = MiscMasterfileEntry["templateId"];`);
+	lines.push(``);
+
 	return lines.join("\n");
 }
 
@@ -90,13 +104,14 @@ export function emitIndexFile(multiEntryDiscriminators: string[]): string {
 			`import type { ${name}MasterfileEntry } from "./groups/${kebabCase(disc)}.ts";`,
 		);
 	}
+	lines.push(`import type { MiscMasterfileEntry } from "./groups/misc.ts";`);
 	lines.push(``);
 	lines.push(`export type MasterfileEntry =`);
-	sorted.forEach((disc, i) => {
+	for (const disc of sorted) {
 		const name = groupName(disc);
-		const suffix = i === sorted.length - 1 ? ";" : "";
-		lines.push(`\t| ${name}MasterfileEntry${suffix}`);
-	});
+		lines.push(`\t| ${name}MasterfileEntry`);
+	}
+	lines.push(`\t| MiscMasterfileEntry;`);
 	lines.push(``);
 	lines.push(
 		`export type MasterfileTemplateID = MasterfileEntry["templateId"];`,

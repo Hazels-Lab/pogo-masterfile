@@ -118,6 +118,7 @@ import type { VnextBattleConfigMasterfileEntry } from "./groups/vnext-battle-con
 import type { VsSeekerLootMasterfileEntry } from "./groups/vs-seeker-loot.ts";
 import type { VsSeekerPokemonRewardsMasterfileEntry } from "./groups/vs-seeker-pokemon-rewards.ts";
 import type { WeatherAffinitiesMasterfileEntry } from "./groups/weather-affinities.ts";
+import type { MiscMasterfileEntry } from "./groups/misc.ts";
 
 export type MasterfileEntry =
 	| AvatarCustomizationMasterfileEntry
@@ -178,6 +179,7 @@ export type MasterfileEntry =
 	| VnextBattleConfigMasterfileEntry
 	| VsSeekerLootMasterfileEntry
 	| VsSeekerPokemonRewardsMasterfileEntry
-	| WeatherAffinitiesMasterfileEntry;
+	| WeatherAffinitiesMasterfileEntry
+	| MiscMasterfileEntry;
 
 export type MasterfileTemplateID = MasterfileEntry["templateId"];
