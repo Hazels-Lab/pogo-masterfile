@@ -22,3 +22,42 @@ export function aliasSuffix(templateId: string, prefix: string): string {
 		.map((w) => w[0]!.toUpperCase() + w.slice(1).toLowerCase())
 		.join("");
 }
+
+export function deriveGroupAliases(templateIds: string[]): Map<string, string> {
+	const prefix = sharedPrefix(templateIds);
+	const result = new Map<string, string>();
+	const suffixToIds = new Map<string, string[]>();
+
+	for (const id of templateIds) {
+		const suffix = aliasSuffix(id, prefix);
+		const bucket = suffixToIds.get(suffix);
+		if (bucket) bucket.push(id);
+		else suffixToIds.set(suffix, [id]);
+	}
+
+	for (const [suffix, ids] of suffixToIds) {
+		if (ids.length === 1) {
+			result.set(ids[0]!, suffix);
+			continue;
+		}
+		// Collision: re-derive from whole templateId.
+		const reDerived = new Map<string, string[]>();
+		for (const id of ids) {
+			const s = aliasSuffix(id, "");
+			const bucket = reDerived.get(s);
+			if (bucket) bucket.push(id);
+			else reDerived.set(s, [id]);
+		}
+		for (const [s, idList] of reDerived) {
+			if (idList.length === 1) {
+				result.set(idList[0]!, s);
+			} else {
+				// Still colliding — tie-break with numeric suffix, lexicographic order.
+				const sorted = [...idList].sort();
+				sorted.forEach((id, i) => result.set(id, `${s}${i}`));
+			}
+		}
+	}
+
+	return result;
+}

@@ -1,5 +1,6 @@
 import { describe, expect, test } from "bun:test";
 import { groupName, sharedPrefix, aliasSuffix } from "./naming.ts";
+import { deriveGroupAliases } from "./naming.ts";
 
 describe("groupName", () => {
 	test("PascalCases a camelCase discriminator", () => {
@@ -63,5 +64,32 @@ describe("aliasSuffix", () => {
 
 	test("handles all-lowercase tails", () => {
 		expect(aliasSuffix("x_foo_bar_baz", "x_")).toBe("FooBarBaz");
+	});
+});
+
+describe("deriveGroupAliases", () => {
+	test("returns a map from templateId to clean alias suffix when no collisions", () => {
+		const map = deriveGroupAliases(["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK"]);
+		expect(map.get("POKEMON_TYPE_BUG")).toBe("Bug");
+		expect(map.get("POKEMON_TYPE_DARK")).toBe("Dark");
+	});
+
+	test("collision fallback does not disturb non-colliding entries", () => {
+		const map = deriveGroupAliases([
+			"PREFIX_ALPHA",
+			"PREFIX_BETA",
+			"PREFIX_GAMMA",
+		]);
+		expect(map.get("PREFIX_ALPHA")).toBe("Alpha");
+		expect(map.get("PREFIX_BETA")).toBe("Beta");
+		expect(map.get("PREFIX_GAMMA")).toBe("Gamma");
+	});
+
+	test("breaks further ties with a numeric suffix in lexicographic order", () => {
+		const map = deriveGroupAliases(["COLLIDE_FOO", "COLLIDE_bar", "COLLIDE_foo"]);
+		expect(map.get("COLLIDE_bar")).toBe("Bar"); // no collision → clean suffix
+		// COLLIDE_FOO vs COLLIDE_foo → both yield CollideFoo; tie-break lexicographically.
+		expect(map.get("COLLIDE_FOO")).toBe("CollideFoo0");
+		expect(map.get("COLLIDE_foo")).toBe("CollideFoo1");
 	});
 });
