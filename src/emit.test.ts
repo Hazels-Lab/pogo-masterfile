@@ -1,11 +1,11 @@
 import { describe, expect, test } from "bun:test";
-import type { Group } from "./group.ts";
 import {
 	emitGroupFile,
 	emitIndexFile,
 	emitMiscFile,
 	kebabCase,
 } from "./emit.ts";
+import type { Group } from "./group.ts";
 
 describe("emitGroupFile", () => {
 	test("emits generic interface + per-entry aliases + union + TemplateID for a multi-entry group", () => {
@@ -39,9 +39,7 @@ describe("emitGroupFile", () => {
 		expect(output).toContain(
 			'export type TypeEffectiveDark = TypeEffective<"POKEMON_TYPE_DARK">;',
 		);
-		expect(output).toContain(
-			"export type TypeEffectiveMasterfileEntry =",
-		);
+		expect(output).toContain("export type TypeEffectiveMasterfileEntry =");
 		expect(output).toContain("| TypeEffectiveBug");
 		expect(output).toContain("| TypeEffectiveDark");
 		expect(output).toContain(
@@ -225,8 +223,12 @@ describe("emitIndexFile", () => {
 		const output = emitIndexFile(multiEntryGroupNames);
 
 		// Exports are sorted:
-		expect(output).toContain(`export type * from "./groups/pokemon-settings.ts";`);
-		expect(output).toContain(`export type * from "./groups/type-effective.ts";`);
+		expect(output).toContain(
+			`export type * from "./groups/pokemon-settings.ts";`,
+		);
+		expect(output).toContain(
+			`export type * from "./groups/type-effective.ts";`,
+		);
 		expect(output).toContain(`export type * from "./groups/misc.ts";`);
 		const pokeIdx = output.indexOf("pokemon-settings");
 		const typeIdx = output.indexOf("type-effective");

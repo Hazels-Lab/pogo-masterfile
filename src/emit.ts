@@ -3,9 +3,7 @@ import { aliasSuffix, deriveGroupAliases, groupName } from "./naming.ts";
 
 export function emitGroupFile(group: Group): string {
 	const gName = groupName(group.discriminator);
-	const sortedIds = [...group.entries]
-		.map((e) => e.templateId)
-		.sort();
+	const sortedIds = [...group.entries].map((e) => e.templateId).sort();
 	const aliases = deriveGroupAliases(sortedIds);
 
 	const lines: string[] = [];

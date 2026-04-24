@@ -1,18 +1,20 @@
 {
-  "name": "pogo-masterfile-types",
-  "module": "src/generate.ts",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "generate": "bun run src/generate.ts",
-    "test": "bun test",
-    "typecheck": "tsc --noEmit"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^2.4.12",
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^6.0.3"
-  }
+	"name": "pogo-masterfile-types",
+	"module": "src/generate.ts",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"generate": "bun run src/generate.ts",
+		"test": "bun test",
+		"typecheck": "tsc --noEmit",
+		"lint": "biome check",
+		"format": "biome check --write --unsafe"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.12",
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^6.0.3"
+	}
 }

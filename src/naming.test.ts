@@ -1,6 +1,10 @@
 import { describe, expect, test } from "bun:test";
-import { groupName, sharedPrefix, aliasSuffix } from "./naming.ts";
-import { deriveGroupAliases } from "./naming.ts";
+import {
+	aliasSuffix,
+	deriveGroupAliases,
+	groupName,
+	sharedPrefix,
+} from "./naming.ts";
 
 describe("groupName", () => {
 	test("PascalCases a camelCase discriminator", () => {
@@ -34,9 +38,9 @@ describe("sharedPrefix", () => {
 
 	test("handles case where one id is a full prefix of another", () => {
 		// Common prefix is "POKEMON_BULBASAUR" (no trailing _), truncate to last _ → "POKEMON_"
-		expect(
-			sharedPrefix(["POKEMON_BULBASAUR", "POKEMON_BULBASAUR_SHINY"]),
-		).toBe("POKEMON_");
+		expect(sharedPrefix(["POKEMON_BULBASAUR", "POKEMON_BULBASAUR_SHINY"])).toBe(
+			"POKEMON_",
+		);
 	});
 });
 
@@ -86,7 +90,11 @@ describe("deriveGroupAliases", () => {
 	});
 
 	test("breaks further ties with a numeric suffix in lexicographic order", () => {
-		const map = deriveGroupAliases(["COLLIDE_FOO", "COLLIDE_bar", "COLLIDE_foo"]);
+		const map = deriveGroupAliases([
+			"COLLIDE_FOO",
+			"COLLIDE_bar",
+			"COLLIDE_foo",
+		]);
 		expect(map.get("COLLIDE_bar")).toBe("Bar"); // no collision → clean suffix
 		// COLLIDE_FOO vs COLLIDE_foo → both yield CollideFoo; tie-break lexicographically.
 		expect(map.get("COLLIDE_FOO")).toBe("CollideFoo0");
