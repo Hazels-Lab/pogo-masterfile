@@ -1,0 +1,29 @@
+export type Entry = {
+	templateId: string;
+	data: Record<string, unknown>;
+};
+
+export type Group = {
+	discriminator: string;
+	entries: Entry[];
+};
+
+export function groupEntries(entries: Entry[]): Map<string, Group> {
+	const groups = new Map<string, Group>();
+	for (const entry of entries) {
+		const keys = Object.keys(entry.data).filter((k) => k !== "templateId");
+		if (keys.length !== 1) {
+			throw new Error(
+				`Entry ${entry.templateId} has ${keys.length} non-templateId data keys, expected 1`,
+			);
+		}
+		const disc = keys[0]!;
+		let group = groups.get(disc);
+		if (!group) {
+			group = { discriminator: disc, entries: [] };
+			groups.set(disc, group);
+		}
+		group.entries.push(entry);
+	}
+	return groups;
+}
