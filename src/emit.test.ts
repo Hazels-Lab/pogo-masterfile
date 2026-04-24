@@ -5,23 +5,13 @@ import {
 	emitMiscFile,
 	kebabCase,
 } from "./emit.ts";
+import { MOCK_MASTERFILE } from "./fixtures.ts";
 import type { Group } from "./group.ts";
+import { groupEntries } from "./group.ts";
 
 describe("emitGroupFile", () => {
 	test("emits generic interface + per-entry aliases + union + TemplateID for a multi-entry group", () => {
-		const group: Group = {
-			discriminator: "typeEffective",
-			entries: [
-				{
-					templateId: "POKEMON_TYPE_BUG",
-					data: { templateId: "POKEMON_TYPE_BUG", typeEffective: {} },
-				},
-				{
-					templateId: "POKEMON_TYPE_DARK",
-					data: { templateId: "POKEMON_TYPE_DARK", typeEffective: {} },
-				},
-			],
-		};
+		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
 
 		const output = emitGroupFile(group);
 
@@ -32,7 +22,9 @@ describe("emitGroupFile", () => {
 		expect(output).toContain(
 			"export interface TypeEffectiveData<T extends string> {",
 		);
-		expect(output).toContain("typeEffective: unknown;");
+		expect(output).toContain("typeEffective: {");
+		expect(output).toContain("attackScalar: [");
+		expect(output).not.toContain("typeEffective: unknown;");
 		expect(output).toContain(
 			'export type TypeEffectiveBug = TypeEffective<"POKEMON_TYPE_BUG">;',
 		);
@@ -69,6 +61,17 @@ describe("emitGroupFile", () => {
 		expect(waterIdx).toBeGreaterThan(-1);
 		expect(bugIdx).toBeLessThan(waterIdx);
 	});
+
+	test("renders variable arrays and optional nested properties from inferred group payloads", () => {
+		const group = groupEntries(MOCK_MASTERFILE).get("pokemonSettings")!;
+
+		const output = emitGroupFile(group);
+
+		expect(output).toContain(`forms: Array<"NORMAL" | "SHADOW">;`);
+		expect(output).toContain(`familyId: "FAMILY_BULBASAUR";`);
+		expect(output).toContain("shadowBoost?: null;");
+		expect(output).not.toContain(": unknown;");
+	});
 });
 
 describe("emitMiscFile", () => {
@@ -100,7 +103,7 @@ describe("emitMiscFile", () => {
 		const output = emitMiscFile(singletons);
 		expect(output).toContain("export interface AccessibilitySettings {");
 		expect(output).toContain('templateId: "ACCESSIBILITY_CLIENT_SETTINGS";');
-		expect(output).toContain("accessibilitySettings: unknown;");
+		expect(output).toContain("accessibilitySettings: Record<string, never>;");
 		expect(output).toContain("export interface XyzSettings {");
 
 		// Alphabetical order:
@@ -125,6 +128,20 @@ describe("emitMiscFile", () => {
 		const output = emitMiscFile(stubs);
 		expect(output).toContain("export interface ItemCurrencyValues {");
 		expect(output).toContain('templateId: "ITEM_CURRENCY_VALUES";');
+		expect(output).not.toContain(": unknown;");
+	});
+
+	test("emits inferred singleton payloads with exact scalar literals", () => {
+		const accessibility = groupEntries(MOCK_MASTERFILE).get(
+			"accessibilitySettings",
+		)!;
+
+		const output = emitMiscFile([accessibility]);
+
+		expect(output).toContain("accessibilitySettings: {");
+		expect(output).toContain("enabled: true;");
+		expect(output).toContain(`mode: "default";`);
+		expect(output).toContain("scale: 1;");
 		expect(output).not.toContain(": unknown;");
 	});
 
