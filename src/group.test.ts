@@ -22,9 +22,10 @@ describe("groupEntries", () => {
 		];
 		const groups = groupEntries(entries);
 		expect(groups.size).toBe(1);
-		const g = groups.get("ITEM_CURRENCY_VALUES")!;
-		expect(g.discriminator).toBe("ITEM_CURRENCY_VALUES");
-		expect(g.entries).toHaveLength(1);
+		const g = groups.get("ITEM_CURRENCY_VALUES");
+		expect(g).toBeDefined();
+		expect(g?.discriminator).toBe("ITEM_CURRENCY_VALUES");
+		expect(g?.entries).toHaveLength(1);
 	});
 
 	test("throws when entry has more than 1 non-templateId data key", () => {
