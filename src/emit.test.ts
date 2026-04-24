@@ -1,6 +1,11 @@
 import { describe, expect, test } from "bun:test";
 import type { Group } from "./group.ts";
-import { emitGroupFile, emitMiscFile, emitIndexFile, kebabCase } from "./emit.ts";
+import {
+	emitGroupFile,
+	emitIndexFile,
+	emitMiscFile,
+	kebabCase,
+} from "./emit.ts";
 
 describe("emitGroupFile", () => {
 	test("emits generic interface + per-entry aliases + union + TemplateID for a multi-entry group", () => {
