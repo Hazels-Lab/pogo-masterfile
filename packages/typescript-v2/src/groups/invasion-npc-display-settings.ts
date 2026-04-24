@@ -1,0 +1,148 @@
+export interface InvasionNpcDisplaySettings<T extends string> {
+	templateId: T;
+	data: InvasionNpcDisplaySettingsData<T>;
+}
+
+export interface InvasionNpcDisplaySettingsData<T extends string> {
+	templateId: T;
+	invasionNpcDisplaySettings: unknown;
+}
+
+export type InvasionNpcDisplaySettingsBlanche = InvasionNpcDisplaySettings<"CHARACTER_BLANCHE">;
+export type InvasionNpcDisplaySettingsBugGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_BUG_GRUNT_FEMALE">;
+export type InvasionNpcDisplaySettingsBugGruntMale = InvasionNpcDisplaySettings<"CHARACTER_BUG_GRUNT_MALE">;
+export type InvasionNpcDisplaySettingsCandela = InvasionNpcDisplaySettings<"CHARACTER_CANDELA">;
+export type InvasionNpcDisplaySettingsDarkGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_DARK_GRUNT_FEMALE">;
+export type InvasionNpcDisplaySettingsDarkGruntMale = InvasionNpcDisplaySettings<"CHARACTER_DARK_GRUNT_MALE">;
+export type InvasionNpcDisplaySettingsDecoyGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_DECOY_GRUNT_FEMALE">;
+export type InvasionNpcDisplaySettingsDecoyGruntMale = InvasionNpcDisplaySettings<"CHARACTER_DECOY_GRUNT_MALE">;
+export type InvasionNpcDisplaySettingsDragonGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_DRAGON_GRUNT_FEMALE">;
+export type InvasionNpcDisplaySettingsDragonGruntMale = InvasionNpcDisplaySettings<"CHARACTER_DRAGON_GRUNT_MALE">;
+export type InvasionNpcDisplaySettingsElectricGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_ELECTRIC_GRUNT_FEMALE">;
+export type InvasionNpcDisplaySettingsElectricGruntMale = InvasionNpcDisplaySettings<"CHARACTER_ELECTRIC_GRUNT_MALE">;
+export type InvasionNpcDisplaySettingsEventArloUnticketed = InvasionNpcDisplaySettings<"CHARACTER_EVENT_ARLO_UNTICKETED">;
+export type InvasionNpcDisplaySettingsEventCliffUnticketed = InvasionNpcDisplaySettings<"CHARACTER_EVENT_CLIFF_UNTICKETED">;
+export type InvasionNpcDisplaySettingsEventGiovanniUnticketed = InvasionNpcDisplaySettings<"CHARACTER_EVENT_GIOVANNI_UNTICKETED">;
+export type InvasionNpcDisplaySettingsEventNpc0 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_0">;
+export type InvasionNpcDisplaySettingsEventNpc1 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_1">;
+export type InvasionNpcDisplaySettingsEventNpc10 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_10">;
+export type InvasionNpcDisplaySettingsEventNpc2 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_2">;
+export type InvasionNpcDisplaySettingsEventNpc3 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_3">;
+export type InvasionNpcDisplaySettingsEventNpc4 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_4">;
+export type InvasionNpcDisplaySettingsEventNpc5 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_5">;
+export type InvasionNpcDisplaySettingsEventNpc6 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_6">;
+export type InvasionNpcDisplaySettingsEventNpc7 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_7">;
+export type InvasionNpcDisplaySettingsEventNpc8 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_8">;
+export type InvasionNpcDisplaySettingsEventNpc9 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_9">;
+export type InvasionNpcDisplaySettingsEventSierraUnticketed = InvasionNpcDisplaySettings<"CHARACTER_EVENT_SIERRA_UNTICKETED">;
+export type InvasionNpcDisplaySettingsExecutiveArlo = InvasionNpcDisplaySettings<"CHARACTER_EXECUTIVE_ARLO">;
+export type InvasionNpcDisplaySettingsExecutiveCliff = InvasionNpcDisplaySettings<"CHARACTER_EXECUTIVE_CLIFF">;
+export type InvasionNpcDisplaySettingsExecutiveSierra = InvasionNpcDisplaySettings<"CHARACTER_EXECUTIVE_SIERRA">;
+export type InvasionNpcDisplaySettingsExplorer = InvasionNpcDisplaySettings<"CHARACTER_EXPLORER">;
+export type InvasionNpcDisplaySettingsFairyGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_FAIRY_GRUNT_FEMALE">;
+export type InvasionNpcDisplaySettingsFairyGruntMale = InvasionNpcDisplaySettings<"CHARACTER_FAIRY_GRUNT_MALE">;
+export type InvasionNpcDisplaySettingsFightingGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_FIGHTING_GRUNT_FEMALE">;
+export type InvasionNpcDisplaySettingsFightingGruntMale = InvasionNpcDisplaySettings<"CHARACTER_FIGHTING_GRUNT_MALE">;
+export type InvasionNpcDisplaySettingsFireGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_FIRE_GRUNT_FEMALE">;
+export type InvasionNpcDisplaySettingsFireGruntMale = InvasionNpcDisplaySettings<"CHARACTER_FIRE_GRUNT_MALE">;
+export type InvasionNpcDisplaySettingsFlyingGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_FLYING_GRUNT_FEMALE">;
+export type InvasionNpcDisplaySettingsFlyingGruntMale = InvasionNpcDisplaySettings<"CHARACTER_FLYING_GRUNT_MALE">;
+export type InvasionNpcDisplaySettingsGhostGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_GHOST_GRUNT_FEMALE">;
+export type InvasionNpcDisplaySettingsGhostGruntMale = InvasionNpcDisplaySettings<"CHARACTER_GHOST_GRUNT_MALE">;
+export type InvasionNpcDisplaySettingsGiovanni = InvasionNpcDisplaySettings<"CHARACTER_GIOVANNI">;
+export type InvasionNpcDisplaySettingsGrassGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_GRASS_GRUNT_FEMALE">;
+export type InvasionNpcDisplaySettingsGrassGruntMale = InvasionNpcDisplaySettings<"CHARACTER_GRASS_GRUNT_MALE">;
+export type InvasionNpcDisplaySettingsGroundGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_GROUND_GRUNT_FEMALE">;
+export type InvasionNpcDisplaySettingsGroundGruntMale = InvasionNpcDisplaySettings<"CHARACTER_GROUND_GRUNT_MALE">;
+export type InvasionNpcDisplaySettingsGruntbFemale = InvasionNpcDisplaySettings<"CHARACTER_GRUNTB_FEMALE">;
+export type InvasionNpcDisplaySettingsGruntbMale = InvasionNpcDisplaySettings<"CHARACTER_GRUNTB_MALE">;
+export type InvasionNpcDisplaySettingsGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_GRUNT_FEMALE">;
+export type InvasionNpcDisplaySettingsGruntMale = InvasionNpcDisplaySettings<"CHARACTER_GRUNT_MALE">;
+export type InvasionNpcDisplaySettingsIceGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_ICE_GRUNT_FEMALE">;
+export type InvasionNpcDisplaySettingsIceGruntMale = InvasionNpcDisplaySettings<"CHARACTER_ICE_GRUNT_MALE">;
+export type InvasionNpcDisplaySettingsMetalGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_METAL_GRUNT_FEMALE">;
+export type InvasionNpcDisplaySettingsMetalGruntMale = InvasionNpcDisplaySettings<"CHARACTER_METAL_GRUNT_MALE">;
+export type InvasionNpcDisplaySettingsNormalGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_NORMAL_GRUNT_FEMALE">;
+export type InvasionNpcDisplaySettingsNormalGruntMale = InvasionNpcDisplaySettings<"CHARACTER_NORMAL_GRUNT_MALE">;
+export type InvasionNpcDisplaySettingsPoisonGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_POISON_GRUNT_FEMALE">;
+export type InvasionNpcDisplaySettingsPoisonGruntMale = InvasionNpcDisplaySettings<"CHARACTER_POISON_GRUNT_MALE">;
+export type InvasionNpcDisplaySettingsPsychicGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_PSYCHIC_GRUNT_FEMALE">;
+export type InvasionNpcDisplaySettingsPsychicGruntMale = InvasionNpcDisplaySettings<"CHARACTER_PSYCHIC_GRUNT_MALE">;
+export type InvasionNpcDisplaySettingsRockGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_ROCK_GRUNT_FEMALE">;
+export type InvasionNpcDisplaySettingsRockGruntMale = InvasionNpcDisplaySettings<"CHARACTER_ROCK_GRUNT_MALE">;
+export type InvasionNpcDisplaySettingsSpark = InvasionNpcDisplaySettings<"CHARACTER_SPARK">;
+export type InvasionNpcDisplaySettingsWaterGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_WATER_GRUNT_FEMALE">;
+export type InvasionNpcDisplaySettingsWaterGruntMale = InvasionNpcDisplaySettings<"CHARACTER_WATER_GRUNT_MALE">;
+export type InvasionNpcDisplaySettingsWillow = InvasionNpcDisplaySettings<"CHARACTER_WILLOW">;
+export type InvasionNpcDisplaySettingsWillowb = InvasionNpcDisplaySettings<"CHARACTER_WILLOWB">;
+
+export type InvasionNpcDisplaySettingsMasterfileEntry =
+	| InvasionNpcDisplaySettingsBlanche
+	| InvasionNpcDisplaySettingsBugGruntFemale
+	| InvasionNpcDisplaySettingsBugGruntMale
+	| InvasionNpcDisplaySettingsCandela
+	| InvasionNpcDisplaySettingsDarkGruntFemale
+	| InvasionNpcDisplaySettingsDarkGruntMale
+	| InvasionNpcDisplaySettingsDecoyGruntFemale
+	| InvasionNpcDisplaySettingsDecoyGruntMale
+	| InvasionNpcDisplaySettingsDragonGruntFemale
+	| InvasionNpcDisplaySettingsDragonGruntMale
+	| InvasionNpcDisplaySettingsElectricGruntFemale
+	| InvasionNpcDisplaySettingsElectricGruntMale
+	| InvasionNpcDisplaySettingsEventArloUnticketed
+	| InvasionNpcDisplaySettingsEventCliffUnticketed
+	| InvasionNpcDisplaySettingsEventGiovanniUnticketed
+	| InvasionNpcDisplaySettingsEventNpc0
+	| InvasionNpcDisplaySettingsEventNpc1
+	| InvasionNpcDisplaySettingsEventNpc10
+	| InvasionNpcDisplaySettingsEventNpc2
+	| InvasionNpcDisplaySettingsEventNpc3
+	| InvasionNpcDisplaySettingsEventNpc4
+	| InvasionNpcDisplaySettingsEventNpc5
+	| InvasionNpcDisplaySettingsEventNpc6
+	| InvasionNpcDisplaySettingsEventNpc7
+	| InvasionNpcDisplaySettingsEventNpc8
+	| InvasionNpcDisplaySettingsEventNpc9
+	| InvasionNpcDisplaySettingsEventSierraUnticketed
+	| InvasionNpcDisplaySettingsExecutiveArlo
+	| InvasionNpcDisplaySettingsExecutiveCliff
+	| InvasionNpcDisplaySettingsExecutiveSierra
+	| InvasionNpcDisplaySettingsExplorer
+	| InvasionNpcDisplaySettingsFairyGruntFemale
+	| InvasionNpcDisplaySettingsFairyGruntMale
+	| InvasionNpcDisplaySettingsFightingGruntFemale
+	| InvasionNpcDisplaySettingsFightingGruntMale
+	| InvasionNpcDisplaySettingsFireGruntFemale
+	| InvasionNpcDisplaySettingsFireGruntMale
+	| InvasionNpcDisplaySettingsFlyingGruntFemale
+	| InvasionNpcDisplaySettingsFlyingGruntMale
+	| InvasionNpcDisplaySettingsGhostGruntFemale
+	| InvasionNpcDisplaySettingsGhostGruntMale
+	| InvasionNpcDisplaySettingsGiovanni
+	| InvasionNpcDisplaySettingsGrassGruntFemale
+	| InvasionNpcDisplaySettingsGrassGruntMale
+	| InvasionNpcDisplaySettingsGroundGruntFemale
+	| InvasionNpcDisplaySettingsGroundGruntMale
+	| InvasionNpcDisplaySettingsGruntbFemale
+	| InvasionNpcDisplaySettingsGruntbMale
+	| InvasionNpcDisplaySettingsGruntFemale
+	| InvasionNpcDisplaySettingsGruntMale
+	| InvasionNpcDisplaySettingsIceGruntFemale
+	| InvasionNpcDisplaySettingsIceGruntMale
+	| InvasionNpcDisplaySettingsMetalGruntFemale
+	| InvasionNpcDisplaySettingsMetalGruntMale
+	| InvasionNpcDisplaySettingsNormalGruntFemale
+	| InvasionNpcDisplaySettingsNormalGruntMale
+	| InvasionNpcDisplaySettingsPoisonGruntFemale
+	| InvasionNpcDisplaySettingsPoisonGruntMale
+	| InvasionNpcDisplaySettingsPsychicGruntFemale
+	| InvasionNpcDisplaySettingsPsychicGruntMale
+	| InvasionNpcDisplaySettingsRockGruntFemale
+	| InvasionNpcDisplaySettingsRockGruntMale
+	| InvasionNpcDisplaySettingsSpark
+	| InvasionNpcDisplaySettingsWaterGruntFemale
+	| InvasionNpcDisplaySettingsWaterGruntMale
+	| InvasionNpcDisplaySettingsWillow
+	| InvasionNpcDisplaySettingsWillowb;
+
+export type InvasionNpcDisplaySettingsTemplateID = InvasionNpcDisplaySettingsMasterfileEntry["templateId"];

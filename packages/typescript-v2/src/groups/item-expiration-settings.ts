@@ -1,0 +1,58 @@
+export interface ItemExpirationSettings<T extends string> {
+	templateId: T;
+	data: ItemExpirationSettingsData<T>;
+}
+
+export interface ItemExpirationSettingsData<T extends string> {
+	templateId: T;
+	itemExpirationSettings: unknown;
+}
+
+export type ItemExpirationSettingsEventPassPointGoFest01 = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_GO_FEST_01">;
+export type ItemExpirationSettingsEventPassPointGoFest02 = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_GO_FEST_02">;
+export type ItemExpirationSettingsEventPassPointGoTour01 = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_GO_TOUR_01">;
+export type ItemExpirationSettingsEventPassPointGoTour02 = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_GO_TOUR_02">;
+export type ItemExpirationSettingsEventPassPointGoWildArea01 = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_GO_WILD_AREA_01">;
+export type ItemExpirationSettingsEventPassPointLiveOps01 = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_LIVE_OPS_01">;
+export type ItemExpirationSettingsEventPassPointLiveOps02 = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_LIVE_OPS_02">;
+export type ItemExpirationSettingsEventPassPointLiveOps03 = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_LIVE_OPS_03">;
+export type ItemExpirationSettingsEventPassPointLiveOps04 = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_LIVE_OPS_04">;
+export type ItemExpirationSettingsEventPassPointLiveOps05 = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_LIVE_OPS_05">;
+export type ItemExpirationSettingsEventPassPointLiveOps06 = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_LIVE_OPS_06">;
+export type ItemExpirationSettingsEventPassPointLiveOps07 = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_LIVE_OPS_07">;
+export type ItemExpirationSettingsEventPassPointLiveOps08 = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_LIVE_OPS_08">;
+export type ItemExpirationSettingsEventPassPointMonthly01 = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_MONTHLY_01">;
+export type ItemExpirationSettingsEventPassPointMonthly02 = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_MONTHLY_02">;
+export type ItemExpirationSettingsEventPassPointMonthly03 = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_MONTHLY_03">;
+export type ItemExpirationSettingsIncubatorTimed = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_INCUBATOR_TIMED">;
+export type ItemExpirationSettingsLuckyFriendApplicator = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_LUCKY_FRIEND_APPLICATOR">;
+export type ItemExpirationSettingsSingleStatIncrease = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_SINGLE_STAT_INCREASE">;
+export type ItemExpirationSettingsTripleStatIncrease = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_TRIPLE_STAT_INCREASE">;
+export type ItemExpirationSettingsWildBall = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_WILD_BALL">;
+export type ItemExpirationSettingsWildBallPremier = ItemExpirationSettings<"ITEM_EXPIRATION_ITEM_WILD_BALL_PREMIER">;
+
+export type ItemExpirationSettingsMasterfileEntry =
+	| ItemExpirationSettingsEventPassPointGoFest01
+	| ItemExpirationSettingsEventPassPointGoFest02
+	| ItemExpirationSettingsEventPassPointGoTour01
+	| ItemExpirationSettingsEventPassPointGoTour02
+	| ItemExpirationSettingsEventPassPointGoWildArea01
+	| ItemExpirationSettingsEventPassPointLiveOps01
+	| ItemExpirationSettingsEventPassPointLiveOps02
+	| ItemExpirationSettingsEventPassPointLiveOps03
+	| ItemExpirationSettingsEventPassPointLiveOps04
+	| ItemExpirationSettingsEventPassPointLiveOps05
+	| ItemExpirationSettingsEventPassPointLiveOps06
+	| ItemExpirationSettingsEventPassPointLiveOps07
+	| ItemExpirationSettingsEventPassPointLiveOps08
+	| ItemExpirationSettingsEventPassPointMonthly01
+	| ItemExpirationSettingsEventPassPointMonthly02
+	| ItemExpirationSettingsEventPassPointMonthly03
+	| ItemExpirationSettingsIncubatorTimed
+	| ItemExpirationSettingsLuckyFriendApplicator
+	| ItemExpirationSettingsSingleStatIncrease
+	| ItemExpirationSettingsTripleStatIncrease
+	| ItemExpirationSettingsWildBall
+	| ItemExpirationSettingsWildBallPremier;
+
+export type ItemExpirationSettingsTemplateID = ItemExpirationSettingsMasterfileEntry["templateId"];

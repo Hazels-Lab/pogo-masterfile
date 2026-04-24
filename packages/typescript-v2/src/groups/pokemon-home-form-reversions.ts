@@ -1,0 +1,28 @@
+export interface PokemonHomeFormReversions<T extends string> {
+	templateId: T;
+	data: PokemonHomeFormReversionsData<T>;
+}
+
+export interface PokemonHomeFormReversionsData<T extends string> {
+	templateId: T;
+	pokemonHomeFormReversions: unknown;
+}
+
+export type PokemonHomeFormReversionsV0351PokemonCastformHomeFormReversion = PokemonHomeFormReversions<"V0351_POKEMON_CASTFORM_HOME_FORM_REVERSION">;
+export type PokemonHomeFormReversionsV0421CherrimHomeFormReversion = PokemonHomeFormReversions<"V0421_CHERRIM_HOME_FORM_REVERSION">;
+export type PokemonHomeFormReversionsV0487PokemonGiratinaHomeReversion = PokemonHomeFormReversions<"V0487_POKEMON_GIRATINA_HOME_REVERSION">;
+export type PokemonHomeFormReversionsV0555PokemonDarmanitanHomeFormReversion = PokemonHomeFormReversions<"V0555_POKEMON_DARMANITAN_HOME_FORM_REVERSION">;
+export type PokemonHomeFormReversionsV0647PokemonKeldeoHomeFormReversion = PokemonHomeFormReversions<"V0647_POKEMON_KELDEO_HOME_FORM_REVERSION">;
+export type PokemonHomeFormReversionsV0648PokemonMeloettaHomeFormReversion = PokemonHomeFormReversions<"V0648_POKEMON_MELOETTA_HOME_FORM_REVERSION">;
+export type PokemonHomeFormReversionsV0649PokemonGenesectHomeFormReversion = PokemonHomeFormReversions<"V0649_POKEMON_GENESECT_HOME_FORM_REVERSION">;
+
+export type PokemonHomeFormReversionsMasterfileEntry =
+	| PokemonHomeFormReversionsV0351PokemonCastformHomeFormReversion
+	| PokemonHomeFormReversionsV0421CherrimHomeFormReversion
+	| PokemonHomeFormReversionsV0487PokemonGiratinaHomeReversion
+	| PokemonHomeFormReversionsV0555PokemonDarmanitanHomeFormReversion
+	| PokemonHomeFormReversionsV0647PokemonKeldeoHomeFormReversion
+	| PokemonHomeFormReversionsV0648PokemonMeloettaHomeFormReversion
+	| PokemonHomeFormReversionsV0649PokemonGenesectHomeFormReversion;
+
+export type PokemonHomeFormReversionsTemplateID = PokemonHomeFormReversionsMasterfileEntry["templateId"];

@@ -1,0 +1,4934 @@
+export interface PokemonSettings<T extends string> {
+	templateId: T;
+	data: PokemonSettingsData<T>;
+}
+
+export interface PokemonSettingsData<T extends string> {
+	templateId: T;
+	pokemonSettings: unknown;
+}
+
+export type PokemonSettingsV0001PokemonBulbasaur = PokemonSettings<"V0001_POKEMON_BULBASAUR">;
+export type PokemonSettingsV0001PokemonBulbasaurFall2019 = PokemonSettings<"V0001_POKEMON_BULBASAUR_FALL_2019">;
+export type PokemonSettingsV0001PokemonBulbasaurNormal = PokemonSettings<"V0001_POKEMON_BULBASAUR_NORMAL">;
+export type PokemonSettingsV0002PokemonIvysaur = PokemonSettings<"V0002_POKEMON_IVYSAUR">;
+export type PokemonSettingsV0002PokemonIvysaurNormal = PokemonSettings<"V0002_POKEMON_IVYSAUR_NORMAL">;
+export type PokemonSettingsV0003PokemonVenusaur = PokemonSettings<"V0003_POKEMON_VENUSAUR">;
+export type PokemonSettingsV0003PokemonVenusaurCopy2019 = PokemonSettings<"V0003_POKEMON_VENUSAUR_COPY_2019">;
+export type PokemonSettingsV0003PokemonVenusaurNormal = PokemonSettings<"V0003_POKEMON_VENUSAUR_NORMAL">;
+export type PokemonSettingsV0004PokemonCharmander = PokemonSettings<"V0004_POKEMON_CHARMANDER">;
+export type PokemonSettingsV0004PokemonCharmanderFall2019 = PokemonSettings<"V0004_POKEMON_CHARMANDER_FALL_2019">;
+export type PokemonSettingsV0004PokemonCharmanderNormal = PokemonSettings<"V0004_POKEMON_CHARMANDER_NORMAL">;
+export type PokemonSettingsV0005PokemonCharmeleon = PokemonSettings<"V0005_POKEMON_CHARMELEON">;
+export type PokemonSettingsV0005PokemonCharmeleonNormal = PokemonSettings<"V0005_POKEMON_CHARMELEON_NORMAL">;
+export type PokemonSettingsV0006PokemonCharizard = PokemonSettings<"V0006_POKEMON_CHARIZARD">;
+export type PokemonSettingsV0006PokemonCharizardCopy2019 = PokemonSettings<"V0006_POKEMON_CHARIZARD_COPY_2019">;
+export type PokemonSettingsV0006PokemonCharizardNormal = PokemonSettings<"V0006_POKEMON_CHARIZARD_NORMAL">;
+export type PokemonSettingsV0007PokemonSquirtle = PokemonSettings<"V0007_POKEMON_SQUIRTLE">;
+export type PokemonSettingsV0007PokemonSquirtleFall2019 = PokemonSettings<"V0007_POKEMON_SQUIRTLE_FALL_2019">;
+export type PokemonSettingsV0007PokemonSquirtleNormal = PokemonSettings<"V0007_POKEMON_SQUIRTLE_NORMAL">;
+export type PokemonSettingsV0008PokemonWartortle = PokemonSettings<"V0008_POKEMON_WARTORTLE">;
+export type PokemonSettingsV0008PokemonWartortleNormal = PokemonSettings<"V0008_POKEMON_WARTORTLE_NORMAL">;
+export type PokemonSettingsV0009PokemonBlastoise = PokemonSettings<"V0009_POKEMON_BLASTOISE">;
+export type PokemonSettingsV0009PokemonBlastoiseCopy2019 = PokemonSettings<"V0009_POKEMON_BLASTOISE_COPY_2019">;
+export type PokemonSettingsV0009PokemonBlastoiseNormal = PokemonSettings<"V0009_POKEMON_BLASTOISE_NORMAL">;
+export type PokemonSettingsV0010PokemonCaterpie = PokemonSettings<"V0010_POKEMON_CATERPIE">;
+export type PokemonSettingsV0010PokemonCaterpieGofest2026 = PokemonSettings<"V0010_POKEMON_CATERPIE_GOFEST_2026">;
+export type PokemonSettingsV0010PokemonCaterpieNormal = PokemonSettings<"V0010_POKEMON_CATERPIE_NORMAL">;
+export type PokemonSettingsV0011PokemonMetapod = PokemonSettings<"V0011_POKEMON_METAPOD">;
+export type PokemonSettingsV0011PokemonMetapodNormal = PokemonSettings<"V0011_POKEMON_METAPOD_NORMAL">;
+export type PokemonSettingsV0012PokemonButterfree = PokemonSettings<"V0012_POKEMON_BUTTERFREE">;
+export type PokemonSettingsV0012PokemonButterfreeNormal = PokemonSettings<"V0012_POKEMON_BUTTERFREE_NORMAL">;
+export type PokemonSettingsV0013PokemonWeedle = PokemonSettings<"V0013_POKEMON_WEEDLE">;
+export type PokemonSettingsV0013PokemonWeedleNormal = PokemonSettings<"V0013_POKEMON_WEEDLE_NORMAL">;
+export type PokemonSettingsV0014PokemonKakuna = PokemonSettings<"V0014_POKEMON_KAKUNA">;
+export type PokemonSettingsV0014PokemonKakunaNormal = PokemonSettings<"V0014_POKEMON_KAKUNA_NORMAL">;
+export type PokemonSettingsV0015PokemonBeedrill = PokemonSettings<"V0015_POKEMON_BEEDRILL">;
+export type PokemonSettingsV0015PokemonBeedrillNormal = PokemonSettings<"V0015_POKEMON_BEEDRILL_NORMAL">;
+export type PokemonSettingsV0016PokemonPidgey = PokemonSettings<"V0016_POKEMON_PIDGEY">;
+export type PokemonSettingsV0016PokemonPidgeyNormal = PokemonSettings<"V0016_POKEMON_PIDGEY_NORMAL">;
+export type PokemonSettingsV0017PokemonPidgeotto = PokemonSettings<"V0017_POKEMON_PIDGEOTTO">;
+export type PokemonSettingsV0017PokemonPidgeottoNormal = PokemonSettings<"V0017_POKEMON_PIDGEOTTO_NORMAL">;
+export type PokemonSettingsV0018PokemonPidgeot = PokemonSettings<"V0018_POKEMON_PIDGEOT">;
+export type PokemonSettingsV0018PokemonPidgeotNormal = PokemonSettings<"V0018_POKEMON_PIDGEOT_NORMAL">;
+export type PokemonSettingsV0019PokemonRattata = PokemonSettings<"V0019_POKEMON_RATTATA">;
+export type PokemonSettingsV0019PokemonRattataAlola = PokemonSettings<"V0019_POKEMON_RATTATA_ALOLA">;
+export type PokemonSettingsV0019PokemonRattataNormal = PokemonSettings<"V0019_POKEMON_RATTATA_NORMAL">;
+export type PokemonSettingsV0020PokemonRaticate = PokemonSettings<"V0020_POKEMON_RATICATE">;
+export type PokemonSettingsV0020PokemonRaticateAlola = PokemonSettings<"V0020_POKEMON_RATICATE_ALOLA">;
+export type PokemonSettingsV0020PokemonRaticateNormal = PokemonSettings<"V0020_POKEMON_RATICATE_NORMAL">;
+export type PokemonSettingsV0021PokemonSpearow = PokemonSettings<"V0021_POKEMON_SPEAROW">;
+export type PokemonSettingsV0021PokemonSpearowNormal = PokemonSettings<"V0021_POKEMON_SPEAROW_NORMAL">;
+export type PokemonSettingsV0022PokemonFearow = PokemonSettings<"V0022_POKEMON_FEAROW">;
+export type PokemonSettingsV0022PokemonFearowNormal = PokemonSettings<"V0022_POKEMON_FEAROW_NORMAL">;
+export type PokemonSettingsV0023PokemonEkans = PokemonSettings<"V0023_POKEMON_EKANS">;
+export type PokemonSettingsV0023PokemonEkansNormal = PokemonSettings<"V0023_POKEMON_EKANS_NORMAL">;
+export type PokemonSettingsV0024PokemonArbok = PokemonSettings<"V0024_POKEMON_ARBOK">;
+export type PokemonSettingsV0024PokemonArbokNormal = PokemonSettings<"V0024_POKEMON_ARBOK_NORMAL">;
+export type PokemonSettingsV0025PokemonPikachu = PokemonSettings<"V0025_POKEMON_PIKACHU">;
+export type PokemonSettingsV0025PokemonPikachuAdventureHat2020 = PokemonSettings<"V0025_POKEMON_PIKACHU_ADVENTURE_HAT_2020">;
+export type PokemonSettingsV0025PokemonPikachuBb2026 = PokemonSettings<"V0025_POKEMON_PIKACHU_BB_2026">;
+export type PokemonSettingsV0025PokemonPikachuCopy2019 = PokemonSettings<"V0025_POKEMON_PIKACHU_COPY_2019">;
+export type PokemonSettingsV0025PokemonPikachuCostume2020 = PokemonSettings<"V0025_POKEMON_PIKACHU_COSTUME_2020">;
+export type PokemonSettingsV0025PokemonPikachuDiwali2024 = PokemonSettings<"V0025_POKEMON_PIKACHU_DIWALI_2024">;
+export type PokemonSettingsV0025PokemonPikachuDoctor = PokemonSettings<"V0025_POKEMON_PIKACHU_DOCTOR">;
+export type PokemonSettingsV0025PokemonPikachuFall2019 = PokemonSettings<"V0025_POKEMON_PIKACHU_FALL_2019">;
+export type PokemonSettingsV0025PokemonPikachuFlying01 = PokemonSettings<"V0025_POKEMON_PIKACHU_FLYING_01">;
+export type PokemonSettingsV0025PokemonPikachuFlying02 = PokemonSettings<"V0025_POKEMON_PIKACHU_FLYING_02">;
+export type PokemonSettingsV0025PokemonPikachuFlying03 = PokemonSettings<"V0025_POKEMON_PIKACHU_FLYING_03">;
+export type PokemonSettingsV0025PokemonPikachuFlying04 = PokemonSettings<"V0025_POKEMON_PIKACHU_FLYING_04">;
+export type PokemonSettingsV0025PokemonPikachuFlying5thAnniv = PokemonSettings<"V0025_POKEMON_PIKACHU_FLYING_5TH_ANNIV">;
+export type PokemonSettingsV0025PokemonPikachuFlyingOkinawa = PokemonSettings<"V0025_POKEMON_PIKACHU_FLYING_OKINAWA">;
+export type PokemonSettingsV0025PokemonPikachuGofest2022 = PokemonSettings<"V0025_POKEMON_PIKACHU_GOFEST_2022">;
+export type PokemonSettingsV0025PokemonPikachuGofest2024Mtiara = PokemonSettings<"V0025_POKEMON_PIKACHU_GOFEST_2024_MTIARA">;
+export type PokemonSettingsV0025PokemonPikachuGofest2024Stiara = PokemonSettings<"V0025_POKEMON_PIKACHU_GOFEST_2024_STIARA">;
+export type PokemonSettingsV0025PokemonPikachuGofest2025GogglesBlue = PokemonSettings<"V0025_POKEMON_PIKACHU_GOFEST_2025_GOGGLES_BLUE">;
+export type PokemonSettingsV0025PokemonPikachuGofest2025GogglesRed = PokemonSettings<"V0025_POKEMON_PIKACHU_GOFEST_2025_GOGGLES_RED">;
+export type PokemonSettingsV0025PokemonPikachuGofest2025GogglesYellow = PokemonSettings<"V0025_POKEMON_PIKACHU_GOFEST_2025_GOGGLES_YELLOW">;
+export type PokemonSettingsV0025PokemonPikachuGofest2025MonocleBlue = PokemonSettings<"V0025_POKEMON_PIKACHU_GOFEST_2025_MONOCLE_BLUE">;
+export type PokemonSettingsV0025PokemonPikachuGofest2025MonocleRed = PokemonSettings<"V0025_POKEMON_PIKACHU_GOFEST_2025_MONOCLE_RED">;
+export type PokemonSettingsV0025PokemonPikachuGofest2025MonocleYellow = PokemonSettings<"V0025_POKEMON_PIKACHU_GOFEST_2025_MONOCLE_YELLOW">;
+export type PokemonSettingsV0025PokemonPikachuGofest2026CapBlue = PokemonSettings<"V0025_POKEMON_PIKACHU_GOFEST_2026_CAP_BLUE">;
+export type PokemonSettingsV0025PokemonPikachuGofest2026CapRed = PokemonSettings<"V0025_POKEMON_PIKACHU_GOFEST_2026_CAP_RED">;
+export type PokemonSettingsV0025PokemonPikachuGofest2026CapYellow = PokemonSettings<"V0025_POKEMON_PIKACHU_GOFEST_2026_CAP_YELLOW">;
+export type PokemonSettingsV0025PokemonPikachuGotour2024A = PokemonSettings<"V0025_POKEMON_PIKACHU_GOTOUR_2024_A">;
+export type PokemonSettingsV0025PokemonPikachuGotour2024A02 = PokemonSettings<"V0025_POKEMON_PIKACHU_GOTOUR_2024_A_02">;
+export type PokemonSettingsV0025PokemonPikachuGotour2024B = PokemonSettings<"V0025_POKEMON_PIKACHU_GOTOUR_2024_B">;
+export type PokemonSettingsV0025PokemonPikachuGotour2024B02 = PokemonSettings<"V0025_POKEMON_PIKACHU_GOTOUR_2024_B_02">;
+export type PokemonSettingsV0025PokemonPikachuGotour2025A = PokemonSettings<"V0025_POKEMON_PIKACHU_GOTOUR_2025_A">;
+export type PokemonSettingsV0025PokemonPikachuGotour2025A02 = PokemonSettings<"V0025_POKEMON_PIKACHU_GOTOUR_2025_A_02">;
+export type PokemonSettingsV0025PokemonPikachuGotour2025B = PokemonSettings<"V0025_POKEMON_PIKACHU_GOTOUR_2025_B">;
+export type PokemonSettingsV0025PokemonPikachuGotour2025B02 = PokemonSettings<"V0025_POKEMON_PIKACHU_GOTOUR_2025_B_02">;
+export type PokemonSettingsV0025PokemonPikachuGotour2026A = PokemonSettings<"V0025_POKEMON_PIKACHU_GOTOUR_2026_A">;
+export type PokemonSettingsV0025PokemonPikachuGotour2026A02 = PokemonSettings<"V0025_POKEMON_PIKACHU_GOTOUR_2026_A_02">;
+export type PokemonSettingsV0025PokemonPikachuGotour2026B = PokemonSettings<"V0025_POKEMON_PIKACHU_GOTOUR_2026_B">;
+export type PokemonSettingsV0025PokemonPikachuGotour2026B02 = PokemonSettings<"V0025_POKEMON_PIKACHU_GOTOUR_2026_B_02">;
+export type PokemonSettingsV0025PokemonPikachuGotour2026C = PokemonSettings<"V0025_POKEMON_PIKACHU_GOTOUR_2026_C">;
+export type PokemonSettingsV0025PokemonPikachuGotour2026C02 = PokemonSettings<"V0025_POKEMON_PIKACHU_GOTOUR_2026_C_02">;
+export type PokemonSettingsV0025PokemonPikachuHorizons = PokemonSettings<"V0025_POKEMON_PIKACHU_HORIZONS">;
+export type PokemonSettingsV0025PokemonPikachuJeju = PokemonSettings<"V0025_POKEMON_PIKACHU_JEJU">;
+export type PokemonSettingsV0025PokemonPikachuKariyushi = PokemonSettings<"V0025_POKEMON_PIKACHU_KARIYUSHI">;
+export type PokemonSettingsV0025PokemonPikachuKurta = PokemonSettings<"V0025_POKEMON_PIKACHU_KURTA">;
+export type PokemonSettingsV0025PokemonPikachuNormal = PokemonSettings<"V0025_POKEMON_PIKACHU_NORMAL">;
+export type PokemonSettingsV0025PokemonPikachuPopStar = PokemonSettings<"V0025_POKEMON_PIKACHU_POP_STAR">;
+export type PokemonSettingsV0025PokemonPikachuRockStar = PokemonSettings<"V0025_POKEMON_PIKACHU_ROCK_STAR">;
+export type PokemonSettingsV0025PokemonPikachuSummer2023A = PokemonSettings<"V0025_POKEMON_PIKACHU_SUMMER_2023_A">;
+export type PokemonSettingsV0025PokemonPikachuSummer2023B = PokemonSettings<"V0025_POKEMON_PIKACHU_SUMMER_2023_B">;
+export type PokemonSettingsV0025PokemonPikachuSummer2023C = PokemonSettings<"V0025_POKEMON_PIKACHU_SUMMER_2023_C">;
+export type PokemonSettingsV0025PokemonPikachuSummer2023D = PokemonSettings<"V0025_POKEMON_PIKACHU_SUMMER_2023_D">;
+export type PokemonSettingsV0025PokemonPikachuSummer2023E = PokemonSettings<"V0025_POKEMON_PIKACHU_SUMMER_2023_E">;
+export type PokemonSettingsV0025PokemonPikachuTshirt01 = PokemonSettings<"V0025_POKEMON_PIKACHU_TSHIRT_01">;
+export type PokemonSettingsV0025PokemonPikachuTshirt02 = PokemonSettings<"V0025_POKEMON_PIKACHU_TSHIRT_02">;
+export type PokemonSettingsV0025PokemonPikachuTshirt03 = PokemonSettings<"V0025_POKEMON_PIKACHU_TSHIRT_03">;
+export type PokemonSettingsV0025PokemonPikachuVs2019 = PokemonSettings<"V0025_POKEMON_PIKACHU_VS_2019">;
+export type PokemonSettingsV0025PokemonPikachuWcs2022 = PokemonSettings<"V0025_POKEMON_PIKACHU_WCS_2022">;
+export type PokemonSettingsV0025PokemonPikachuWcs2023 = PokemonSettings<"V0025_POKEMON_PIKACHU_WCS_2023">;
+export type PokemonSettingsV0025PokemonPikachuWcs2024 = PokemonSettings<"V0025_POKEMON_PIKACHU_WCS_2024">;
+export type PokemonSettingsV0025PokemonPikachuWcs2025 = PokemonSettings<"V0025_POKEMON_PIKACHU_WCS_2025">;
+export type PokemonSettingsV0025PokemonPikachuWinter2020 = PokemonSettings<"V0025_POKEMON_PIKACHU_WINTER_2020">;
+export type PokemonSettingsV0026PokemonRaichu = PokemonSettings<"V0026_POKEMON_RAICHU">;
+export type PokemonSettingsV0026PokemonRaichuAlola = PokemonSettings<"V0026_POKEMON_RAICHU_ALOLA">;
+export type PokemonSettingsV0026PokemonRaichuNormal = PokemonSettings<"V0026_POKEMON_RAICHU_NORMAL">;
+export type PokemonSettingsV0027PokemonSandshrew = PokemonSettings<"V0027_POKEMON_SANDSHREW">;
+export type PokemonSettingsV0027PokemonSandshrewAlola = PokemonSettings<"V0027_POKEMON_SANDSHREW_ALOLA">;
+export type PokemonSettingsV0027PokemonSandshrewNormal = PokemonSettings<"V0027_POKEMON_SANDSHREW_NORMAL">;
+export type PokemonSettingsV0028PokemonSandslash = PokemonSettings<"V0028_POKEMON_SANDSLASH">;
+export type PokemonSettingsV0028PokemonSandslashAlola = PokemonSettings<"V0028_POKEMON_SANDSLASH_ALOLA">;
+export type PokemonSettingsV0028PokemonSandslashNormal = PokemonSettings<"V0028_POKEMON_SANDSLASH_NORMAL">;
+export type PokemonSettingsV0029PokemonNidoran = PokemonSettings<"V0029_POKEMON_NIDORAN">;
+export type PokemonSettingsV0029PokemonNidoranNormal = PokemonSettings<"V0029_POKEMON_NIDORAN_NORMAL">;
+export type PokemonSettingsV0030PokemonNidorina = PokemonSettings<"V0030_POKEMON_NIDORINA">;
+export type PokemonSettingsV0030PokemonNidorinaNormal = PokemonSettings<"V0030_POKEMON_NIDORINA_NORMAL">;
+export type PokemonSettingsV0031PokemonNidoqueen = PokemonSettings<"V0031_POKEMON_NIDOQUEEN">;
+export type PokemonSettingsV0031PokemonNidoqueenNormal = PokemonSettings<"V0031_POKEMON_NIDOQUEEN_NORMAL">;
+export type PokemonSettingsV0032PokemonNidoran = PokemonSettings<"V0032_POKEMON_NIDORAN">;
+export type PokemonSettingsV0032PokemonNidoranNormal = PokemonSettings<"V0032_POKEMON_NIDORAN_NORMAL">;
+export type PokemonSettingsV0033PokemonNidorino = PokemonSettings<"V0033_POKEMON_NIDORINO">;
+export type PokemonSettingsV0033PokemonNidorinoNormal = PokemonSettings<"V0033_POKEMON_NIDORINO_NORMAL">;
+export type PokemonSettingsV0034PokemonNidoking = PokemonSettings<"V0034_POKEMON_NIDOKING">;
+export type PokemonSettingsV0034PokemonNidokingNormal = PokemonSettings<"V0034_POKEMON_NIDOKING_NORMAL">;
+export type PokemonSettingsV0035PokemonClefairy = PokemonSettings<"V0035_POKEMON_CLEFAIRY">;
+export type PokemonSettingsV0035PokemonClefairyNormal = PokemonSettings<"V0035_POKEMON_CLEFAIRY_NORMAL">;
+export type PokemonSettingsV0036PokemonClefable = PokemonSettings<"V0036_POKEMON_CLEFABLE">;
+export type PokemonSettingsV0036PokemonClefableNormal = PokemonSettings<"V0036_POKEMON_CLEFABLE_NORMAL">;
+export type PokemonSettingsV0037PokemonVulpix = PokemonSettings<"V0037_POKEMON_VULPIX">;
+export type PokemonSettingsV0037PokemonVulpixAlola = PokemonSettings<"V0037_POKEMON_VULPIX_ALOLA">;
+export type PokemonSettingsV0037PokemonVulpixNormal = PokemonSettings<"V0037_POKEMON_VULPIX_NORMAL">;
+export type PokemonSettingsV0038PokemonNinetales = PokemonSettings<"V0038_POKEMON_NINETALES">;
+export type PokemonSettingsV0038PokemonNinetalesAlola = PokemonSettings<"V0038_POKEMON_NINETALES_ALOLA">;
+export type PokemonSettingsV0038PokemonNinetalesNormal = PokemonSettings<"V0038_POKEMON_NINETALES_NORMAL">;
+export type PokemonSettingsV0039PokemonJigglypuff = PokemonSettings<"V0039_POKEMON_JIGGLYPUFF">;
+export type PokemonSettingsV0039PokemonJigglypuffNormal = PokemonSettings<"V0039_POKEMON_JIGGLYPUFF_NORMAL">;
+export type PokemonSettingsV0040PokemonWigglytuff = PokemonSettings<"V0040_POKEMON_WIGGLYTUFF">;
+export type PokemonSettingsV0040PokemonWigglytuffNormal = PokemonSettings<"V0040_POKEMON_WIGGLYTUFF_NORMAL">;
+export type PokemonSettingsV0041PokemonZubat = PokemonSettings<"V0041_POKEMON_ZUBAT">;
+export type PokemonSettingsV0041PokemonZubatNormal = PokemonSettings<"V0041_POKEMON_ZUBAT_NORMAL">;
+export type PokemonSettingsV0042PokemonGolbat = PokemonSettings<"V0042_POKEMON_GOLBAT">;
+export type PokemonSettingsV0042PokemonGolbatNormal = PokemonSettings<"V0042_POKEMON_GOLBAT_NORMAL">;
+export type PokemonSettingsV0043PokemonOddish = PokemonSettings<"V0043_POKEMON_ODDISH">;
+export type PokemonSettingsV0043PokemonOddishNormal = PokemonSettings<"V0043_POKEMON_ODDISH_NORMAL">;
+export type PokemonSettingsV0044PokemonGloom = PokemonSettings<"V0044_POKEMON_GLOOM">;
+export type PokemonSettingsV0044PokemonGloomNormal = PokemonSettings<"V0044_POKEMON_GLOOM_NORMAL">;
+export type PokemonSettingsV0045PokemonVileplume = PokemonSettings<"V0045_POKEMON_VILEPLUME">;
+export type PokemonSettingsV0045PokemonVileplumeNormal = PokemonSettings<"V0045_POKEMON_VILEPLUME_NORMAL">;
+export type PokemonSettingsV0046PokemonParas = PokemonSettings<"V0046_POKEMON_PARAS">;
+export type PokemonSettingsV0046PokemonParasNormal = PokemonSettings<"V0046_POKEMON_PARAS_NORMAL">;
+export type PokemonSettingsV0047PokemonParasect = PokemonSettings<"V0047_POKEMON_PARASECT">;
+export type PokemonSettingsV0047PokemonParasectNormal = PokemonSettings<"V0047_POKEMON_PARASECT_NORMAL">;
+export type PokemonSettingsV0048PokemonVenonat = PokemonSettings<"V0048_POKEMON_VENONAT">;
+export type PokemonSettingsV0048PokemonVenonatNormal = PokemonSettings<"V0048_POKEMON_VENONAT_NORMAL">;
+export type PokemonSettingsV0049PokemonVenomoth = PokemonSettings<"V0049_POKEMON_VENOMOTH">;
+export type PokemonSettingsV0049PokemonVenomothNormal = PokemonSettings<"V0049_POKEMON_VENOMOTH_NORMAL">;
+export type PokemonSettingsV0050PokemonDiglett = PokemonSettings<"V0050_POKEMON_DIGLETT">;
+export type PokemonSettingsV0050PokemonDiglettAlola = PokemonSettings<"V0050_POKEMON_DIGLETT_ALOLA">;
+export type PokemonSettingsV0050PokemonDiglettNormal = PokemonSettings<"V0050_POKEMON_DIGLETT_NORMAL">;
+export type PokemonSettingsV0051PokemonDugtrio = PokemonSettings<"V0051_POKEMON_DUGTRIO">;
+export type PokemonSettingsV0051PokemonDugtrioAlola = PokemonSettings<"V0051_POKEMON_DUGTRIO_ALOLA">;
+export type PokemonSettingsV0051PokemonDugtrioNormal = PokemonSettings<"V0051_POKEMON_DUGTRIO_NORMAL">;
+export type PokemonSettingsV0052PokemonMeowth = PokemonSettings<"V0052_POKEMON_MEOWTH">;
+export type PokemonSettingsV0052PokemonMeowthAlola = PokemonSettings<"V0052_POKEMON_MEOWTH_ALOLA">;
+export type PokemonSettingsV0052PokemonMeowthGalarian = PokemonSettings<"V0052_POKEMON_MEOWTH_GALARIAN">;
+export type PokemonSettingsV0052PokemonMeowthNormal = PokemonSettings<"V0052_POKEMON_MEOWTH_NORMAL">;
+export type PokemonSettingsV0053PokemonPersian = PokemonSettings<"V0053_POKEMON_PERSIAN">;
+export type PokemonSettingsV0053PokemonPersianAlola = PokemonSettings<"V0053_POKEMON_PERSIAN_ALOLA">;
+export type PokemonSettingsV0053PokemonPersianNormal = PokemonSettings<"V0053_POKEMON_PERSIAN_NORMAL">;
+export type PokemonSettingsV0054PokemonPsyduck = PokemonSettings<"V0054_POKEMON_PSYDUCK">;
+export type PokemonSettingsV0054PokemonPsyduckNormal = PokemonSettings<"V0054_POKEMON_PSYDUCK_NORMAL">;
+export type PokemonSettingsV0054PokemonPsyduckSwim2025 = PokemonSettings<"V0054_POKEMON_PSYDUCK_SWIM_2025">;
+export type PokemonSettingsV0055PokemonGolduck = PokemonSettings<"V0055_POKEMON_GOLDUCK">;
+export type PokemonSettingsV0055PokemonGolduckNormal = PokemonSettings<"V0055_POKEMON_GOLDUCK_NORMAL">;
+export type PokemonSettingsV0056PokemonMankey = PokemonSettings<"V0056_POKEMON_MANKEY">;
+export type PokemonSettingsV0056PokemonMankeyNormal = PokemonSettings<"V0056_POKEMON_MANKEY_NORMAL">;
+export type PokemonSettingsV0057PokemonPrimeape = PokemonSettings<"V0057_POKEMON_PRIMEAPE">;
+export type PokemonSettingsV0057PokemonPrimeapeNormal = PokemonSettings<"V0057_POKEMON_PRIMEAPE_NORMAL">;
+export type PokemonSettingsV0058PokemonGrowlithe = PokemonSettings<"V0058_POKEMON_GROWLITHE">;
+export type PokemonSettingsV0058PokemonGrowlitheHisuian = PokemonSettings<"V0058_POKEMON_GROWLITHE_HISUIAN">;
+export type PokemonSettingsV0058PokemonGrowlitheNormal = PokemonSettings<"V0058_POKEMON_GROWLITHE_NORMAL">;
+export type PokemonSettingsV0059PokemonArcanine = PokemonSettings<"V0059_POKEMON_ARCANINE">;
+export type PokemonSettingsV0059PokemonArcanineHisuian = PokemonSettings<"V0059_POKEMON_ARCANINE_HISUIAN">;
+export type PokemonSettingsV0059PokemonArcanineNormal = PokemonSettings<"V0059_POKEMON_ARCANINE_NORMAL">;
+export type PokemonSettingsV0060PokemonPoliwag = PokemonSettings<"V0060_POKEMON_POLIWAG">;
+export type PokemonSettingsV0060PokemonPoliwagNormal = PokemonSettings<"V0060_POKEMON_POLIWAG_NORMAL">;
+export type PokemonSettingsV0061PokemonPoliwhirl = PokemonSettings<"V0061_POKEMON_POLIWHIRL">;
+export type PokemonSettingsV0061PokemonPoliwhirlNormal = PokemonSettings<"V0061_POKEMON_POLIWHIRL_NORMAL">;
+export type PokemonSettingsV0062PokemonPoliwrath = PokemonSettings<"V0062_POKEMON_POLIWRATH">;
+export type PokemonSettingsV0062PokemonPoliwrathNormal = PokemonSettings<"V0062_POKEMON_POLIWRATH_NORMAL">;
+export type PokemonSettingsV0063PokemonAbra = PokemonSettings<"V0063_POKEMON_ABRA">;
+export type PokemonSettingsV0063PokemonAbraNormal = PokemonSettings<"V0063_POKEMON_ABRA_NORMAL">;
+export type PokemonSettingsV0064PokemonKadabra = PokemonSettings<"V0064_POKEMON_KADABRA">;
+export type PokemonSettingsV0064PokemonKadabraNormal = PokemonSettings<"V0064_POKEMON_KADABRA_NORMAL">;
+export type PokemonSettingsV0065PokemonAlakazam = PokemonSettings<"V0065_POKEMON_ALAKAZAM">;
+export type PokemonSettingsV0065PokemonAlakazamNormal = PokemonSettings<"V0065_POKEMON_ALAKAZAM_NORMAL">;
+export type PokemonSettingsV0066PokemonMachop = PokemonSettings<"V0066_POKEMON_MACHOP">;
+export type PokemonSettingsV0066PokemonMachopNormal = PokemonSettings<"V0066_POKEMON_MACHOP_NORMAL">;
+export type PokemonSettingsV0067PokemonMachoke = PokemonSettings<"V0067_POKEMON_MACHOKE">;
+export type PokemonSettingsV0067PokemonMachokeNormal = PokemonSettings<"V0067_POKEMON_MACHOKE_NORMAL">;
+export type PokemonSettingsV0068PokemonMachamp = PokemonSettings<"V0068_POKEMON_MACHAMP">;
+export type PokemonSettingsV0068PokemonMachampNormal = PokemonSettings<"V0068_POKEMON_MACHAMP_NORMAL">;
+export type PokemonSettingsV0069PokemonBellsprout = PokemonSettings<"V0069_POKEMON_BELLSPROUT">;
+export type PokemonSettingsV0069PokemonBellsproutNormal = PokemonSettings<"V0069_POKEMON_BELLSPROUT_NORMAL">;
+export type PokemonSettingsV0070PokemonWeepinbell = PokemonSettings<"V0070_POKEMON_WEEPINBELL">;
+export type PokemonSettingsV0070PokemonWeepinbellNormal = PokemonSettings<"V0070_POKEMON_WEEPINBELL_NORMAL">;
+export type PokemonSettingsV0071PokemonVictreebel = PokemonSettings<"V0071_POKEMON_VICTREEBEL">;
+export type PokemonSettingsV0071PokemonVictreebelNormal = PokemonSettings<"V0071_POKEMON_VICTREEBEL_NORMAL">;
+export type PokemonSettingsV0072PokemonTentacool = PokemonSettings<"V0072_POKEMON_TENTACOOL">;
+export type PokemonSettingsV0072PokemonTentacoolNormal = PokemonSettings<"V0072_POKEMON_TENTACOOL_NORMAL">;
+export type PokemonSettingsV0073PokemonTentacruel = PokemonSettings<"V0073_POKEMON_TENTACRUEL">;
+export type PokemonSettingsV0073PokemonTentacruelNormal = PokemonSettings<"V0073_POKEMON_TENTACRUEL_NORMAL">;
+export type PokemonSettingsV0074PokemonGeodude = PokemonSettings<"V0074_POKEMON_GEODUDE">;
+export type PokemonSettingsV0074PokemonGeodudeAlola = PokemonSettings<"V0074_POKEMON_GEODUDE_ALOLA">;
+export type PokemonSettingsV0074PokemonGeodudeNormal = PokemonSettings<"V0074_POKEMON_GEODUDE_NORMAL">;
+export type PokemonSettingsV0075PokemonGraveler = PokemonSettings<"V0075_POKEMON_GRAVELER">;
+export type PokemonSettingsV0075PokemonGravelerAlola = PokemonSettings<"V0075_POKEMON_GRAVELER_ALOLA">;
+export type PokemonSettingsV0075PokemonGravelerNormal = PokemonSettings<"V0075_POKEMON_GRAVELER_NORMAL">;
+export type PokemonSettingsV0076PokemonGolem = PokemonSettings<"V0076_POKEMON_GOLEM">;
+export type PokemonSettingsV0076PokemonGolemAlola = PokemonSettings<"V0076_POKEMON_GOLEM_ALOLA">;
+export type PokemonSettingsV0076PokemonGolemNormal = PokemonSettings<"V0076_POKEMON_GOLEM_NORMAL">;
+export type PokemonSettingsV0077PokemonPonyta = PokemonSettings<"V0077_POKEMON_PONYTA">;
+export type PokemonSettingsV0077PokemonPonytaGalarian = PokemonSettings<"V0077_POKEMON_PONYTA_GALARIAN">;
+export type PokemonSettingsV0077PokemonPonytaNormal = PokemonSettings<"V0077_POKEMON_PONYTA_NORMAL">;
+export type PokemonSettingsV0078PokemonRapidash = PokemonSettings<"V0078_POKEMON_RAPIDASH">;
+export type PokemonSettingsV0078PokemonRapidashGalarian = PokemonSettings<"V0078_POKEMON_RAPIDASH_GALARIAN">;
+export type PokemonSettingsV0078PokemonRapidashNormal = PokemonSettings<"V0078_POKEMON_RAPIDASH_NORMAL">;
+export type PokemonSettingsV0079PokemonSlowpoke = PokemonSettings<"V0079_POKEMON_SLOWPOKE">;
+export type PokemonSettingsV0079PokemonSlowpoke2020 = PokemonSettings<"V0079_POKEMON_SLOWPOKE_2020">;
+export type PokemonSettingsV0079PokemonSlowpokeGalarian = PokemonSettings<"V0079_POKEMON_SLOWPOKE_GALARIAN">;
+export type PokemonSettingsV0079PokemonSlowpokeNormal = PokemonSettings<"V0079_POKEMON_SLOWPOKE_NORMAL">;
+export type PokemonSettingsV0080PokemonSlowbro = PokemonSettings<"V0080_POKEMON_SLOWBRO">;
+export type PokemonSettingsV0080PokemonSlowbro2021 = PokemonSettings<"V0080_POKEMON_SLOWBRO_2021">;
+export type PokemonSettingsV0080PokemonSlowbroGalarian = PokemonSettings<"V0080_POKEMON_SLOWBRO_GALARIAN">;
+export type PokemonSettingsV0080PokemonSlowbroNormal = PokemonSettings<"V0080_POKEMON_SLOWBRO_NORMAL">;
+export type PokemonSettingsV0081PokemonMagnemite = PokemonSettings<"V0081_POKEMON_MAGNEMITE">;
+export type PokemonSettingsV0081PokemonMagnemiteNormal = PokemonSettings<"V0081_POKEMON_MAGNEMITE_NORMAL">;
+export type PokemonSettingsV0082PokemonMagneton = PokemonSettings<"V0082_POKEMON_MAGNETON">;
+export type PokemonSettingsV0082PokemonMagnetonNormal = PokemonSettings<"V0082_POKEMON_MAGNETON_NORMAL">;
+export type PokemonSettingsV0083PokemonFarfetchd = PokemonSettings<"V0083_POKEMON_FARFETCHD">;
+export type PokemonSettingsV0083PokemonFarfetchdGalarian = PokemonSettings<"V0083_POKEMON_FARFETCHD_GALARIAN">;
+export type PokemonSettingsV0083PokemonFarfetchdNormal = PokemonSettings<"V0083_POKEMON_FARFETCHD_NORMAL">;
+export type PokemonSettingsV0084PokemonDoduo = PokemonSettings<"V0084_POKEMON_DODUO">;
+export type PokemonSettingsV0084PokemonDoduoNormal = PokemonSettings<"V0084_POKEMON_DODUO_NORMAL">;
+export type PokemonSettingsV0085PokemonDodrio = PokemonSettings<"V0085_POKEMON_DODRIO">;
+export type PokemonSettingsV0085PokemonDodrioNormal = PokemonSettings<"V0085_POKEMON_DODRIO_NORMAL">;
+export type PokemonSettingsV0086PokemonSeel = PokemonSettings<"V0086_POKEMON_SEEL">;
+export type PokemonSettingsV0086PokemonSeelNormal = PokemonSettings<"V0086_POKEMON_SEEL_NORMAL">;
+export type PokemonSettingsV0087PokemonDewgong = PokemonSettings<"V0087_POKEMON_DEWGONG">;
+export type PokemonSettingsV0087PokemonDewgongNormal = PokemonSettings<"V0087_POKEMON_DEWGONG_NORMAL">;
+export type PokemonSettingsV0088PokemonGrimer = PokemonSettings<"V0088_POKEMON_GRIMER">;
+export type PokemonSettingsV0088PokemonGrimerAlola = PokemonSettings<"V0088_POKEMON_GRIMER_ALOLA">;
+export type PokemonSettingsV0088PokemonGrimerNormal = PokemonSettings<"V0088_POKEMON_GRIMER_NORMAL">;
+export type PokemonSettingsV0089PokemonMuk = PokemonSettings<"V0089_POKEMON_MUK">;
+export type PokemonSettingsV0089PokemonMukAlola = PokemonSettings<"V0089_POKEMON_MUK_ALOLA">;
+export type PokemonSettingsV0089PokemonMukNormal = PokemonSettings<"V0089_POKEMON_MUK_NORMAL">;
+export type PokemonSettingsV0090PokemonShellder = PokemonSettings<"V0090_POKEMON_SHELLDER">;
+export type PokemonSettingsV0090PokemonShellderNormal = PokemonSettings<"V0090_POKEMON_SHELLDER_NORMAL">;
+export type PokemonSettingsV0091PokemonCloyster = PokemonSettings<"V0091_POKEMON_CLOYSTER">;
+export type PokemonSettingsV0091PokemonCloysterNormal = PokemonSettings<"V0091_POKEMON_CLOYSTER_NORMAL">;
+export type PokemonSettingsV0092PokemonGastly = PokemonSettings<"V0092_POKEMON_GASTLY">;
+export type PokemonSettingsV0092PokemonGastlyNormal = PokemonSettings<"V0092_POKEMON_GASTLY_NORMAL">;
+export type PokemonSettingsV0093PokemonHaunter = PokemonSettings<"V0093_POKEMON_HAUNTER">;
+export type PokemonSettingsV0093PokemonHaunterNormal = PokemonSettings<"V0093_POKEMON_HAUNTER_NORMAL">;
+export type PokemonSettingsV0094PokemonGengar = PokemonSettings<"V0094_POKEMON_GENGAR">;
+export type PokemonSettingsV0094PokemonGengarCostume2020 = PokemonSettings<"V0094_POKEMON_GENGAR_COSTUME_2020">;
+export type PokemonSettingsV0094PokemonGengarNormal = PokemonSettings<"V0094_POKEMON_GENGAR_NORMAL">;
+export type PokemonSettingsV0095PokemonOnix = PokemonSettings<"V0095_POKEMON_ONIX">;
+export type PokemonSettingsV0095PokemonOnixNormal = PokemonSettings<"V0095_POKEMON_ONIX_NORMAL">;
+export type PokemonSettingsV0096PokemonDrowzee = PokemonSettings<"V0096_POKEMON_DROWZEE">;
+export type PokemonSettingsV0096PokemonDrowzeeNormal = PokemonSettings<"V0096_POKEMON_DROWZEE_NORMAL">;
+export type PokemonSettingsV0097PokemonHypno = PokemonSettings<"V0097_POKEMON_HYPNO">;
+export type PokemonSettingsV0097PokemonHypnoNormal = PokemonSettings<"V0097_POKEMON_HYPNO_NORMAL">;
+export type PokemonSettingsV0098PokemonKrabby = PokemonSettings<"V0098_POKEMON_KRABBY">;
+export type PokemonSettingsV0098PokemonKrabbyNormal = PokemonSettings<"V0098_POKEMON_KRABBY_NORMAL">;
+export type PokemonSettingsV0099PokemonKingler = PokemonSettings<"V0099_POKEMON_KINGLER">;
+export type PokemonSettingsV0099PokemonKinglerNormal = PokemonSettings<"V0099_POKEMON_KINGLER_NORMAL">;
+export type PokemonSettingsV0100PokemonVoltorb = PokemonSettings<"V0100_POKEMON_VOLTORB">;
+export type PokemonSettingsV0100PokemonVoltorbHisuian = PokemonSettings<"V0100_POKEMON_VOLTORB_HISUIAN">;
+export type PokemonSettingsV0100PokemonVoltorbNormal = PokemonSettings<"V0100_POKEMON_VOLTORB_NORMAL">;
+export type PokemonSettingsV0101PokemonElectrode = PokemonSettings<"V0101_POKEMON_ELECTRODE">;
+export type PokemonSettingsV0101PokemonElectrodeHisuian = PokemonSettings<"V0101_POKEMON_ELECTRODE_HISUIAN">;
+export type PokemonSettingsV0101PokemonElectrodeNormal = PokemonSettings<"V0101_POKEMON_ELECTRODE_NORMAL">;
+export type PokemonSettingsV0102PokemonExeggcute = PokemonSettings<"V0102_POKEMON_EXEGGCUTE">;
+export type PokemonSettingsV0102PokemonExeggcuteNormal = PokemonSettings<"V0102_POKEMON_EXEGGCUTE_NORMAL">;
+export type PokemonSettingsV0103PokemonExeggutor = PokemonSettings<"V0103_POKEMON_EXEGGUTOR">;
+export type PokemonSettingsV0103PokemonExeggutorAlola = PokemonSettings<"V0103_POKEMON_EXEGGUTOR_ALOLA">;
+export type PokemonSettingsV0103PokemonExeggutorNormal = PokemonSettings<"V0103_POKEMON_EXEGGUTOR_NORMAL">;
+export type PokemonSettingsV0104PokemonCubone = PokemonSettings<"V0104_POKEMON_CUBONE">;
+export type PokemonSettingsV0104PokemonCuboneNormal = PokemonSettings<"V0104_POKEMON_CUBONE_NORMAL">;
+export type PokemonSettingsV0105PokemonMarowak = PokemonSettings<"V0105_POKEMON_MAROWAK">;
+export type PokemonSettingsV0105PokemonMarowakAlola = PokemonSettings<"V0105_POKEMON_MAROWAK_ALOLA">;
+export type PokemonSettingsV0105PokemonMarowakNormal = PokemonSettings<"V0105_POKEMON_MAROWAK_NORMAL">;
+export type PokemonSettingsV0106PokemonHitmonlee = PokemonSettings<"V0106_POKEMON_HITMONLEE">;
+export type PokemonSettingsV0106PokemonHitmonleeNormal = PokemonSettings<"V0106_POKEMON_HITMONLEE_NORMAL">;
+export type PokemonSettingsV0107PokemonHitmonchan = PokemonSettings<"V0107_POKEMON_HITMONCHAN">;
+export type PokemonSettingsV0107PokemonHitmonchanNormal = PokemonSettings<"V0107_POKEMON_HITMONCHAN_NORMAL">;
+export type PokemonSettingsV0108PokemonLickitung = PokemonSettings<"V0108_POKEMON_LICKITUNG">;
+export type PokemonSettingsV0108PokemonLickitungNormal = PokemonSettings<"V0108_POKEMON_LICKITUNG_NORMAL">;
+export type PokemonSettingsV0109PokemonKoffing = PokemonSettings<"V0109_POKEMON_KOFFING">;
+export type PokemonSettingsV0109PokemonKoffingNormal = PokemonSettings<"V0109_POKEMON_KOFFING_NORMAL">;
+export type PokemonSettingsV0110PokemonWeezing = PokemonSettings<"V0110_POKEMON_WEEZING">;
+export type PokemonSettingsV0110PokemonWeezingGalarian = PokemonSettings<"V0110_POKEMON_WEEZING_GALARIAN">;
+export type PokemonSettingsV0110PokemonWeezingNormal = PokemonSettings<"V0110_POKEMON_WEEZING_NORMAL">;
+export type PokemonSettingsV0111PokemonRhyhorn = PokemonSettings<"V0111_POKEMON_RHYHORN">;
+export type PokemonSettingsV0111PokemonRhyhornNormal = PokemonSettings<"V0111_POKEMON_RHYHORN_NORMAL">;
+export type PokemonSettingsV0112PokemonRhydon = PokemonSettings<"V0112_POKEMON_RHYDON">;
+export type PokemonSettingsV0112PokemonRhydonNormal = PokemonSettings<"V0112_POKEMON_RHYDON_NORMAL">;
+export type PokemonSettingsV0113PokemonChansey = PokemonSettings<"V0113_POKEMON_CHANSEY">;
+export type PokemonSettingsV0113PokemonChanseyNormal = PokemonSettings<"V0113_POKEMON_CHANSEY_NORMAL">;
+export type PokemonSettingsV0114PokemonTangela = PokemonSettings<"V0114_POKEMON_TANGELA">;
+export type PokemonSettingsV0114PokemonTangelaNormal = PokemonSettings<"V0114_POKEMON_TANGELA_NORMAL">;
+export type PokemonSettingsV0115PokemonKangaskhan = PokemonSettings<"V0115_POKEMON_KANGASKHAN">;
+export type PokemonSettingsV0115PokemonKangaskhanNormal = PokemonSettings<"V0115_POKEMON_KANGASKHAN_NORMAL">;
+export type PokemonSettingsV0116PokemonHorsea = PokemonSettings<"V0116_POKEMON_HORSEA">;
+export type PokemonSettingsV0116PokemonHorseaNormal = PokemonSettings<"V0116_POKEMON_HORSEA_NORMAL">;
+export type PokemonSettingsV0117PokemonSeadra = PokemonSettings<"V0117_POKEMON_SEADRA">;
+export type PokemonSettingsV0117PokemonSeadraNormal = PokemonSettings<"V0117_POKEMON_SEADRA_NORMAL">;
+export type PokemonSettingsV0118PokemonGoldeen = PokemonSettings<"V0118_POKEMON_GOLDEEN">;
+export type PokemonSettingsV0118PokemonGoldeenNormal = PokemonSettings<"V0118_POKEMON_GOLDEEN_NORMAL">;
+export type PokemonSettingsV0119PokemonSeaking = PokemonSettings<"V0119_POKEMON_SEAKING">;
+export type PokemonSettingsV0119PokemonSeakingNormal = PokemonSettings<"V0119_POKEMON_SEAKING_NORMAL">;
+export type PokemonSettingsV0120PokemonStaryu = PokemonSettings<"V0120_POKEMON_STARYU">;
+export type PokemonSettingsV0120PokemonStaryuNormal = PokemonSettings<"V0120_POKEMON_STARYU_NORMAL">;
+export type PokemonSettingsV0121PokemonStarmie = PokemonSettings<"V0121_POKEMON_STARMIE">;
+export type PokemonSettingsV0121PokemonStarmieNormal = PokemonSettings<"V0121_POKEMON_STARMIE_NORMAL">;
+export type PokemonSettingsV0122PokemonMrMime = PokemonSettings<"V0122_POKEMON_MR_MIME">;
+export type PokemonSettingsV0122PokemonMrMimeGalarian = PokemonSettings<"V0122_POKEMON_MR_MIME_GALARIAN">;
+export type PokemonSettingsV0122PokemonMrMimeNormal = PokemonSettings<"V0122_POKEMON_MR_MIME_NORMAL">;
+export type PokemonSettingsV0123PokemonScyther = PokemonSettings<"V0123_POKEMON_SCYTHER">;
+export type PokemonSettingsV0123PokemonScytherNormal = PokemonSettings<"V0123_POKEMON_SCYTHER_NORMAL">;
+export type PokemonSettingsV0124PokemonJynx = PokemonSettings<"V0124_POKEMON_JYNX">;
+export type PokemonSettingsV0124PokemonJynxNormal = PokemonSettings<"V0124_POKEMON_JYNX_NORMAL">;
+export type PokemonSettingsV0125PokemonElectabuzz = PokemonSettings<"V0125_POKEMON_ELECTABUZZ">;
+export type PokemonSettingsV0125PokemonElectabuzzNormal = PokemonSettings<"V0125_POKEMON_ELECTABUZZ_NORMAL">;
+export type PokemonSettingsV0126PokemonMagmar = PokemonSettings<"V0126_POKEMON_MAGMAR">;
+export type PokemonSettingsV0126PokemonMagmarNormal = PokemonSettings<"V0126_POKEMON_MAGMAR_NORMAL">;
+export type PokemonSettingsV0127PokemonPinsir = PokemonSettings<"V0127_POKEMON_PINSIR">;
+export type PokemonSettingsV0127PokemonPinsirNormal = PokemonSettings<"V0127_POKEMON_PINSIR_NORMAL">;
+export type PokemonSettingsV0128PokemonTauros = PokemonSettings<"V0128_POKEMON_TAUROS">;
+export type PokemonSettingsV0128PokemonTaurosNormal = PokemonSettings<"V0128_POKEMON_TAUROS_NORMAL">;
+export type PokemonSettingsV0128PokemonTaurosPaldeaAqua = PokemonSettings<"V0128_POKEMON_TAUROS_PALDEA_AQUA">;
+export type PokemonSettingsV0128PokemonTaurosPaldeaBlaze = PokemonSettings<"V0128_POKEMON_TAUROS_PALDEA_BLAZE">;
+export type PokemonSettingsV0128PokemonTaurosPaldeaCombat = PokemonSettings<"V0128_POKEMON_TAUROS_PALDEA_COMBAT">;
+export type PokemonSettingsV0129PokemonMagikarp = PokemonSettings<"V0129_POKEMON_MAGIKARP">;
+export type PokemonSettingsV0129PokemonMagikarpNormal = PokemonSettings<"V0129_POKEMON_MAGIKARP_NORMAL">;
+export type PokemonSettingsV0130PokemonGyarados = PokemonSettings<"V0130_POKEMON_GYARADOS">;
+export type PokemonSettingsV0130PokemonGyaradosNormal = PokemonSettings<"V0130_POKEMON_GYARADOS_NORMAL">;
+export type PokemonSettingsV0131PokemonLapras = PokemonSettings<"V0131_POKEMON_LAPRAS">;
+export type PokemonSettingsV0131PokemonLaprasCostume2020 = PokemonSettings<"V0131_POKEMON_LAPRAS_COSTUME_2020">;
+export type PokemonSettingsV0131PokemonLaprasNormal = PokemonSettings<"V0131_POKEMON_LAPRAS_NORMAL">;
+export type PokemonSettingsV0132PokemonDitto = PokemonSettings<"V0132_POKEMON_DITTO">;
+export type PokemonSettingsV0132PokemonDittoNormal = PokemonSettings<"V0132_POKEMON_DITTO_NORMAL">;
+export type PokemonSettingsV0132PokemonDittoSpring2026A = PokemonSettings<"V0132_POKEMON_DITTO_SPRING_2026_A">;
+export type PokemonSettingsV0132PokemonDittoSpring2026B = PokemonSettings<"V0132_POKEMON_DITTO_SPRING_2026_B">;
+export type PokemonSettingsV0133PokemonEevee = PokemonSettings<"V0133_POKEMON_EEVEE">;
+export type PokemonSettingsV0133PokemonEeveeGofest2024Mtiara = PokemonSettings<"V0133_POKEMON_EEVEE_GOFEST_2024_MTIARA">;
+export type PokemonSettingsV0133PokemonEeveeGofest2024Stiara = PokemonSettings<"V0133_POKEMON_EEVEE_GOFEST_2024_STIARA">;
+export type PokemonSettingsV0133PokemonEeveeNormal = PokemonSettings<"V0133_POKEMON_EEVEE_NORMAL">;
+export type PokemonSettingsV0134PokemonVaporeon = PokemonSettings<"V0134_POKEMON_VAPOREON">;
+export type PokemonSettingsV0134PokemonVaporeonNormal = PokemonSettings<"V0134_POKEMON_VAPOREON_NORMAL">;
+export type PokemonSettingsV0135PokemonJolteon = PokemonSettings<"V0135_POKEMON_JOLTEON">;
+export type PokemonSettingsV0135PokemonJolteonNormal = PokemonSettings<"V0135_POKEMON_JOLTEON_NORMAL">;
+export type PokemonSettingsV0136PokemonFlareon = PokemonSettings<"V0136_POKEMON_FLAREON">;
+export type PokemonSettingsV0136PokemonFlareonNormal = PokemonSettings<"V0136_POKEMON_FLAREON_NORMAL">;
+export type PokemonSettingsV0137PokemonPorygon = PokemonSettings<"V0137_POKEMON_PORYGON">;
+export type PokemonSettingsV0137PokemonPorygonNormal = PokemonSettings<"V0137_POKEMON_PORYGON_NORMAL">;
+export type PokemonSettingsV0138PokemonOmanyte = PokemonSettings<"V0138_POKEMON_OMANYTE">;
+export type PokemonSettingsV0138PokemonOmanyteNormal = PokemonSettings<"V0138_POKEMON_OMANYTE_NORMAL">;
+export type PokemonSettingsV0139PokemonOmastar = PokemonSettings<"V0139_POKEMON_OMASTAR">;
+export type PokemonSettingsV0139PokemonOmastarNormal = PokemonSettings<"V0139_POKEMON_OMASTAR_NORMAL">;
+export type PokemonSettingsV0140PokemonKabuto = PokemonSettings<"V0140_POKEMON_KABUTO">;
+export type PokemonSettingsV0140PokemonKabutoNormal = PokemonSettings<"V0140_POKEMON_KABUTO_NORMAL">;
+export type PokemonSettingsV0141PokemonKabutops = PokemonSettings<"V0141_POKEMON_KABUTOPS">;
+export type PokemonSettingsV0141PokemonKabutopsNormal = PokemonSettings<"V0141_POKEMON_KABUTOPS_NORMAL">;
+export type PokemonSettingsV0142PokemonAerodactyl = PokemonSettings<"V0142_POKEMON_AERODACTYL">;
+export type PokemonSettingsV0142PokemonAerodactylNormal = PokemonSettings<"V0142_POKEMON_AERODACTYL_NORMAL">;
+export type PokemonSettingsV0142PokemonAerodactylSummer2023 = PokemonSettings<"V0142_POKEMON_AERODACTYL_SUMMER_2023">;
+export type PokemonSettingsV0143PokemonSnorlax = PokemonSettings<"V0143_POKEMON_SNORLAX">;
+export type PokemonSettingsV0143PokemonSnorlaxNormal = PokemonSettings<"V0143_POKEMON_SNORLAX_NORMAL">;
+export type PokemonSettingsV0143PokemonSnorlaxWildarea2024 = PokemonSettings<"V0143_POKEMON_SNORLAX_WILDAREA_2024">;
+export type PokemonSettingsV0144PokemonArticuno = PokemonSettings<"V0144_POKEMON_ARTICUNO">;
+export type PokemonSettingsV0144PokemonArticunoGalarian = PokemonSettings<"V0144_POKEMON_ARTICUNO_GALARIAN">;
+export type PokemonSettingsV0144PokemonArticunoNormal = PokemonSettings<"V0144_POKEMON_ARTICUNO_NORMAL">;
+export type PokemonSettingsV0145PokemonZapdos = PokemonSettings<"V0145_POKEMON_ZAPDOS">;
+export type PokemonSettingsV0145PokemonZapdosGalarian = PokemonSettings<"V0145_POKEMON_ZAPDOS_GALARIAN">;
+export type PokemonSettingsV0145PokemonZapdosNormal = PokemonSettings<"V0145_POKEMON_ZAPDOS_NORMAL">;
+export type PokemonSettingsV0146PokemonMoltres = PokemonSettings<"V0146_POKEMON_MOLTRES">;
+export type PokemonSettingsV0146PokemonMoltresGalarian = PokemonSettings<"V0146_POKEMON_MOLTRES_GALARIAN">;
+export type PokemonSettingsV0146PokemonMoltresNormal = PokemonSettings<"V0146_POKEMON_MOLTRES_NORMAL">;
+export type PokemonSettingsV0147PokemonDratini = PokemonSettings<"V0147_POKEMON_DRATINI">;
+export type PokemonSettingsV0147PokemonDratiniNormal = PokemonSettings<"V0147_POKEMON_DRATINI_NORMAL">;
+export type PokemonSettingsV0148PokemonDragonair = PokemonSettings<"V0148_POKEMON_DRAGONAIR">;
+export type PokemonSettingsV0148PokemonDragonairNormal = PokemonSettings<"V0148_POKEMON_DRAGONAIR_NORMAL">;
+export type PokemonSettingsV0149PokemonDragonite = PokemonSettings<"V0149_POKEMON_DRAGONITE">;
+export type PokemonSettingsV0149PokemonDragoniteNormal = PokemonSettings<"V0149_POKEMON_DRAGONITE_NORMAL">;
+export type PokemonSettingsV0150PokemonMewtwo = PokemonSettings<"V0150_POKEMON_MEWTWO">;
+export type PokemonSettingsV0150PokemonMewtwoA = PokemonSettings<"V0150_POKEMON_MEWTWO_A">;
+export type PokemonSettingsV0150PokemonMewtwoNormal = PokemonSettings<"V0150_POKEMON_MEWTWO_NORMAL">;
+export type PokemonSettingsV0151PokemonMew = PokemonSettings<"V0151_POKEMON_MEW">;
+export type PokemonSettingsV0151PokemonMewNormal = PokemonSettings<"V0151_POKEMON_MEW_NORMAL">;
+export type PokemonSettingsV0152PokemonChikorita = PokemonSettings<"V0152_POKEMON_CHIKORITA">;
+export type PokemonSettingsV0152PokemonChikoritaNormal = PokemonSettings<"V0152_POKEMON_CHIKORITA_NORMAL">;
+export type PokemonSettingsV0153PokemonBayleef = PokemonSettings<"V0153_POKEMON_BAYLEEF">;
+export type PokemonSettingsV0153PokemonBayleefNormal = PokemonSettings<"V0153_POKEMON_BAYLEEF_NORMAL">;
+export type PokemonSettingsV0154PokemonMeganium = PokemonSettings<"V0154_POKEMON_MEGANIUM">;
+export type PokemonSettingsV0154PokemonMeganiumNormal = PokemonSettings<"V0154_POKEMON_MEGANIUM_NORMAL">;
+export type PokemonSettingsV0155PokemonCyndaquil = PokemonSettings<"V0155_POKEMON_CYNDAQUIL">;
+export type PokemonSettingsV0155PokemonCyndaquilNormal = PokemonSettings<"V0155_POKEMON_CYNDAQUIL_NORMAL">;
+export type PokemonSettingsV0156PokemonQuilava = PokemonSettings<"V0156_POKEMON_QUILAVA">;
+export type PokemonSettingsV0156PokemonQuilavaNormal = PokemonSettings<"V0156_POKEMON_QUILAVA_NORMAL">;
+export type PokemonSettingsV0157PokemonTyphlosion = PokemonSettings<"V0157_POKEMON_TYPHLOSION">;
+export type PokemonSettingsV0157PokemonTyphlosionHisuian = PokemonSettings<"V0157_POKEMON_TYPHLOSION_HISUIAN">;
+export type PokemonSettingsV0157PokemonTyphlosionNormal = PokemonSettings<"V0157_POKEMON_TYPHLOSION_NORMAL">;
+export type PokemonSettingsV0158PokemonTotodile = PokemonSettings<"V0158_POKEMON_TOTODILE">;
+export type PokemonSettingsV0158PokemonTotodileNormal = PokemonSettings<"V0158_POKEMON_TOTODILE_NORMAL">;
+export type PokemonSettingsV0159PokemonCroconaw = PokemonSettings<"V0159_POKEMON_CROCONAW">;
+export type PokemonSettingsV0159PokemonCroconawNormal = PokemonSettings<"V0159_POKEMON_CROCONAW_NORMAL">;
+export type PokemonSettingsV0160PokemonFeraligatr = PokemonSettings<"V0160_POKEMON_FERALIGATR">;
+export type PokemonSettingsV0160PokemonFeraligatrNormal = PokemonSettings<"V0160_POKEMON_FERALIGATR_NORMAL">;
+export type PokemonSettingsV0161PokemonSentret = PokemonSettings<"V0161_POKEMON_SENTRET">;
+export type PokemonSettingsV0161PokemonSentretNormal = PokemonSettings<"V0161_POKEMON_SENTRET_NORMAL">;
+export type PokemonSettingsV0162PokemonFurret = PokemonSettings<"V0162_POKEMON_FURRET">;
+export type PokemonSettingsV0162PokemonFurretNormal = PokemonSettings<"V0162_POKEMON_FURRET_NORMAL">;
+export type PokemonSettingsV0163PokemonHoothoot = PokemonSettings<"V0163_POKEMON_HOOTHOOT">;
+export type PokemonSettingsV0163PokemonHoothootNormal = PokemonSettings<"V0163_POKEMON_HOOTHOOT_NORMAL">;
+export type PokemonSettingsV0164PokemonNoctowl = PokemonSettings<"V0164_POKEMON_NOCTOWL">;
+export type PokemonSettingsV0164PokemonNoctowlNormal = PokemonSettings<"V0164_POKEMON_NOCTOWL_NORMAL">;
+export type PokemonSettingsV0165PokemonLedyba = PokemonSettings<"V0165_POKEMON_LEDYBA">;
+export type PokemonSettingsV0165PokemonLedybaNormal = PokemonSettings<"V0165_POKEMON_LEDYBA_NORMAL">;
+export type PokemonSettingsV0166PokemonLedian = PokemonSettings<"V0166_POKEMON_LEDIAN">;
+export type PokemonSettingsV0166PokemonLedianNormal = PokemonSettings<"V0166_POKEMON_LEDIAN_NORMAL">;
+export type PokemonSettingsV0167PokemonSpinarak = PokemonSettings<"V0167_POKEMON_SPINARAK">;
+export type PokemonSettingsV0167PokemonSpinarakNormal = PokemonSettings<"V0167_POKEMON_SPINARAK_NORMAL">;
+export type PokemonSettingsV0168PokemonAriados = PokemonSettings<"V0168_POKEMON_ARIADOS">;
+export type PokemonSettingsV0168PokemonAriadosNormal = PokemonSettings<"V0168_POKEMON_ARIADOS_NORMAL">;
+export type PokemonSettingsV0169PokemonCrobat = PokemonSettings<"V0169_POKEMON_CROBAT">;
+export type PokemonSettingsV0169PokemonCrobatNormal = PokemonSettings<"V0169_POKEMON_CROBAT_NORMAL">;
+export type PokemonSettingsV0170PokemonChinchou = PokemonSettings<"V0170_POKEMON_CHINCHOU">;
+export type PokemonSettingsV0170PokemonChinchouNormal = PokemonSettings<"V0170_POKEMON_CHINCHOU_NORMAL">;
+export type PokemonSettingsV0171PokemonLanturn = PokemonSettings<"V0171_POKEMON_LANTURN">;
+export type PokemonSettingsV0171PokemonLanturnNormal = PokemonSettings<"V0171_POKEMON_LANTURN_NORMAL">;
+export type PokemonSettingsV0172PokemonPichu = PokemonSettings<"V0172_POKEMON_PICHU">;
+export type PokemonSettingsV0172PokemonPichuNormal = PokemonSettings<"V0172_POKEMON_PICHU_NORMAL">;
+export type PokemonSettingsV0173PokemonCleffa = PokemonSettings<"V0173_POKEMON_CLEFFA">;
+export type PokemonSettingsV0173PokemonCleffaNormal = PokemonSettings<"V0173_POKEMON_CLEFFA_NORMAL">;
+export type PokemonSettingsV0174PokemonIgglybuff = PokemonSettings<"V0174_POKEMON_IGGLYBUFF">;
+export type PokemonSettingsV0174PokemonIgglybuffNormal = PokemonSettings<"V0174_POKEMON_IGGLYBUFF_NORMAL">;
+export type PokemonSettingsV0175PokemonTogepi = PokemonSettings<"V0175_POKEMON_TOGEPI">;
+export type PokemonSettingsV0175PokemonTogepiNormal = PokemonSettings<"V0175_POKEMON_TOGEPI_NORMAL">;
+export type PokemonSettingsV0176PokemonTogetic = PokemonSettings<"V0176_POKEMON_TOGETIC">;
+export type PokemonSettingsV0176PokemonTogeticNormal = PokemonSettings<"V0176_POKEMON_TOGETIC_NORMAL">;
+export type PokemonSettingsV0177PokemonNatu = PokemonSettings<"V0177_POKEMON_NATU">;
+export type PokemonSettingsV0177PokemonNatuNormal = PokemonSettings<"V0177_POKEMON_NATU_NORMAL">;
+export type PokemonSettingsV0178PokemonXatu = PokemonSettings<"V0178_POKEMON_XATU">;
+export type PokemonSettingsV0178PokemonXatuNormal = PokemonSettings<"V0178_POKEMON_XATU_NORMAL">;
+export type PokemonSettingsV0179PokemonMareep = PokemonSettings<"V0179_POKEMON_MAREEP">;
+export type PokemonSettingsV0179PokemonMareepNormal = PokemonSettings<"V0179_POKEMON_MAREEP_NORMAL">;
+export type PokemonSettingsV0180PokemonFlaaffy = PokemonSettings<"V0180_POKEMON_FLAAFFY">;
+export type PokemonSettingsV0180PokemonFlaaffyNormal = PokemonSettings<"V0180_POKEMON_FLAAFFY_NORMAL">;
+export type PokemonSettingsV0181PokemonAmpharos = PokemonSettings<"V0181_POKEMON_AMPHAROS">;
+export type PokemonSettingsV0181PokemonAmpharosNormal = PokemonSettings<"V0181_POKEMON_AMPHAROS_NORMAL">;
+export type PokemonSettingsV0182PokemonBellossom = PokemonSettings<"V0182_POKEMON_BELLOSSOM">;
+export type PokemonSettingsV0182PokemonBellossomNormal = PokemonSettings<"V0182_POKEMON_BELLOSSOM_NORMAL">;
+export type PokemonSettingsV0183PokemonMarill = PokemonSettings<"V0183_POKEMON_MARILL">;
+export type PokemonSettingsV0183PokemonMarillNormal = PokemonSettings<"V0183_POKEMON_MARILL_NORMAL">;
+export type PokemonSettingsV0184PokemonAzumarill = PokemonSettings<"V0184_POKEMON_AZUMARILL">;
+export type PokemonSettingsV0184PokemonAzumarillNormal = PokemonSettings<"V0184_POKEMON_AZUMARILL_NORMAL">;
+export type PokemonSettingsV0185PokemonSudowoodo = PokemonSettings<"V0185_POKEMON_SUDOWOODO">;
+export type PokemonSettingsV0185PokemonSudowoodoNormal = PokemonSettings<"V0185_POKEMON_SUDOWOODO_NORMAL">;
+export type PokemonSettingsV0185PokemonSudowoodoWinter2025 = PokemonSettings<"V0185_POKEMON_SUDOWOODO_WINTER_2025">;
+export type PokemonSettingsV0186PokemonPolitoed = PokemonSettings<"V0186_POKEMON_POLITOED">;
+export type PokemonSettingsV0186PokemonPolitoedNormal = PokemonSettings<"V0186_POKEMON_POLITOED_NORMAL">;
+export type PokemonSettingsV0187PokemonHoppip = PokemonSettings<"V0187_POKEMON_HOPPIP">;
+export type PokemonSettingsV0187PokemonHoppipNormal = PokemonSettings<"V0187_POKEMON_HOPPIP_NORMAL">;
+export type PokemonSettingsV0188PokemonSkiploom = PokemonSettings<"V0188_POKEMON_SKIPLOOM">;
+export type PokemonSettingsV0188PokemonSkiploomNormal = PokemonSettings<"V0188_POKEMON_SKIPLOOM_NORMAL">;
+export type PokemonSettingsV0189PokemonJumpluff = PokemonSettings<"V0189_POKEMON_JUMPLUFF">;
+export type PokemonSettingsV0189PokemonJumpluffNormal = PokemonSettings<"V0189_POKEMON_JUMPLUFF_NORMAL">;
+export type PokemonSettingsV0190PokemonAipom = PokemonSettings<"V0190_POKEMON_AIPOM">;
+export type PokemonSettingsV0190PokemonAipomNormal = PokemonSettings<"V0190_POKEMON_AIPOM_NORMAL">;
+export type PokemonSettingsV0191PokemonSunkern = PokemonSettings<"V0191_POKEMON_SUNKERN">;
+export type PokemonSettingsV0191PokemonSunkernNormal = PokemonSettings<"V0191_POKEMON_SUNKERN_NORMAL">;
+export type PokemonSettingsV0192PokemonSunflora = PokemonSettings<"V0192_POKEMON_SUNFLORA">;
+export type PokemonSettingsV0192PokemonSunfloraNormal = PokemonSettings<"V0192_POKEMON_SUNFLORA_NORMAL">;
+export type PokemonSettingsV0193PokemonYanma = PokemonSettings<"V0193_POKEMON_YANMA">;
+export type PokemonSettingsV0193PokemonYanmaNormal = PokemonSettings<"V0193_POKEMON_YANMA_NORMAL">;
+export type PokemonSettingsV0194PokemonWooper = PokemonSettings<"V0194_POKEMON_WOOPER">;
+export type PokemonSettingsV0194PokemonWooperNormal = PokemonSettings<"V0194_POKEMON_WOOPER_NORMAL">;
+export type PokemonSettingsV0194PokemonWooperPaldea = PokemonSettings<"V0194_POKEMON_WOOPER_PALDEA">;
+export type PokemonSettingsV0195PokemonQuagsire = PokemonSettings<"V0195_POKEMON_QUAGSIRE">;
+export type PokemonSettingsV0195PokemonQuagsireNormal = PokemonSettings<"V0195_POKEMON_QUAGSIRE_NORMAL">;
+export type PokemonSettingsV0196PokemonEspeon = PokemonSettings<"V0196_POKEMON_ESPEON">;
+export type PokemonSettingsV0196PokemonEspeonGofest2024Sscarf = PokemonSettings<"V0196_POKEMON_ESPEON_GOFEST_2024_SSCARF">;
+export type PokemonSettingsV0196PokemonEspeonNormal = PokemonSettings<"V0196_POKEMON_ESPEON_NORMAL">;
+export type PokemonSettingsV0197PokemonUmbreon = PokemonSettings<"V0197_POKEMON_UMBREON">;
+export type PokemonSettingsV0197PokemonUmbreonGofest2024Mscarf = PokemonSettings<"V0197_POKEMON_UMBREON_GOFEST_2024_MSCARF">;
+export type PokemonSettingsV0197PokemonUmbreonNormal = PokemonSettings<"V0197_POKEMON_UMBREON_NORMAL">;
+export type PokemonSettingsV0198PokemonMurkrow = PokemonSettings<"V0198_POKEMON_MURKROW">;
+export type PokemonSettingsV0198PokemonMurkrowNormal = PokemonSettings<"V0198_POKEMON_MURKROW_NORMAL">;
+export type PokemonSettingsV0199PokemonSlowking = PokemonSettings<"V0199_POKEMON_SLOWKING">;
+export type PokemonSettingsV0199PokemonSlowking2022 = PokemonSettings<"V0199_POKEMON_SLOWKING_2022">;
+export type PokemonSettingsV0199PokemonSlowkingGalarian = PokemonSettings<"V0199_POKEMON_SLOWKING_GALARIAN">;
+export type PokemonSettingsV0199PokemonSlowkingNormal = PokemonSettings<"V0199_POKEMON_SLOWKING_NORMAL">;
+export type PokemonSettingsV0200PokemonMisdreavus = PokemonSettings<"V0200_POKEMON_MISDREAVUS">;
+export type PokemonSettingsV0200PokemonMisdreavusNormal = PokemonSettings<"V0200_POKEMON_MISDREAVUS_NORMAL">;
+export type PokemonSettingsV0201PokemonUnown = PokemonSettings<"V0201_POKEMON_UNOWN">;
+export type PokemonSettingsV0201PokemonUnownA = PokemonSettings<"V0201_POKEMON_UNOWN_A">;
+export type PokemonSettingsV0201PokemonUnownB = PokemonSettings<"V0201_POKEMON_UNOWN_B">;
+export type PokemonSettingsV0201PokemonUnownC = PokemonSettings<"V0201_POKEMON_UNOWN_C">;
+export type PokemonSettingsV0201PokemonUnownD = PokemonSettings<"V0201_POKEMON_UNOWN_D">;
+export type PokemonSettingsV0201PokemonUnownE = PokemonSettings<"V0201_POKEMON_UNOWN_E">;
+export type PokemonSettingsV0201PokemonUnownExclamationPoint = PokemonSettings<"V0201_POKEMON_UNOWN_EXCLAMATION_POINT">;
+export type PokemonSettingsV0201PokemonUnownF = PokemonSettings<"V0201_POKEMON_UNOWN_F">;
+export type PokemonSettingsV0201PokemonUnownG = PokemonSettings<"V0201_POKEMON_UNOWN_G">;
+export type PokemonSettingsV0201PokemonUnownH = PokemonSettings<"V0201_POKEMON_UNOWN_H">;
+export type PokemonSettingsV0201PokemonUnownI = PokemonSettings<"V0201_POKEMON_UNOWN_I">;
+export type PokemonSettingsV0201PokemonUnownJ = PokemonSettings<"V0201_POKEMON_UNOWN_J">;
+export type PokemonSettingsV0201PokemonUnownK = PokemonSettings<"V0201_POKEMON_UNOWN_K">;
+export type PokemonSettingsV0201PokemonUnownL = PokemonSettings<"V0201_POKEMON_UNOWN_L">;
+export type PokemonSettingsV0201PokemonUnownM = PokemonSettings<"V0201_POKEMON_UNOWN_M">;
+export type PokemonSettingsV0201PokemonUnownN = PokemonSettings<"V0201_POKEMON_UNOWN_N">;
+export type PokemonSettingsV0201PokemonUnownO = PokemonSettings<"V0201_POKEMON_UNOWN_O">;
+export type PokemonSettingsV0201PokemonUnownP = PokemonSettings<"V0201_POKEMON_UNOWN_P">;
+export type PokemonSettingsV0201PokemonUnownQ = PokemonSettings<"V0201_POKEMON_UNOWN_Q">;
+export type PokemonSettingsV0201PokemonUnownQuestionMark = PokemonSettings<"V0201_POKEMON_UNOWN_QUESTION_MARK">;
+export type PokemonSettingsV0201PokemonUnownR = PokemonSettings<"V0201_POKEMON_UNOWN_R">;
+export type PokemonSettingsV0201PokemonUnownS = PokemonSettings<"V0201_POKEMON_UNOWN_S">;
+export type PokemonSettingsV0201PokemonUnownT = PokemonSettings<"V0201_POKEMON_UNOWN_T">;
+export type PokemonSettingsV0201PokemonUnownU = PokemonSettings<"V0201_POKEMON_UNOWN_U">;
+export type PokemonSettingsV0201PokemonUnownV = PokemonSettings<"V0201_POKEMON_UNOWN_V">;
+export type PokemonSettingsV0201PokemonUnownW = PokemonSettings<"V0201_POKEMON_UNOWN_W">;
+export type PokemonSettingsV0201PokemonUnownX = PokemonSettings<"V0201_POKEMON_UNOWN_X">;
+export type PokemonSettingsV0201PokemonUnownY = PokemonSettings<"V0201_POKEMON_UNOWN_Y">;
+export type PokemonSettingsV0201PokemonUnownZ = PokemonSettings<"V0201_POKEMON_UNOWN_Z">;
+export type PokemonSettingsV0202PokemonWobbuffet = PokemonSettings<"V0202_POKEMON_WOBBUFFET">;
+export type PokemonSettingsV0202PokemonWobbuffetNormal = PokemonSettings<"V0202_POKEMON_WOBBUFFET_NORMAL">;
+export type PokemonSettingsV0203PokemonGirafarig = PokemonSettings<"V0203_POKEMON_GIRAFARIG">;
+export type PokemonSettingsV0203PokemonGirafarigNormal = PokemonSettings<"V0203_POKEMON_GIRAFARIG_NORMAL">;
+export type PokemonSettingsV0204PokemonPineco = PokemonSettings<"V0204_POKEMON_PINECO">;
+export type PokemonSettingsV0204PokemonPinecoNormal = PokemonSettings<"V0204_POKEMON_PINECO_NORMAL">;
+export type PokemonSettingsV0205PokemonForretress = PokemonSettings<"V0205_POKEMON_FORRETRESS">;
+export type PokemonSettingsV0205PokemonForretressNormal = PokemonSettings<"V0205_POKEMON_FORRETRESS_NORMAL">;
+export type PokemonSettingsV0206PokemonDunsparce = PokemonSettings<"V0206_POKEMON_DUNSPARCE">;
+export type PokemonSettingsV0206PokemonDunsparceNormal = PokemonSettings<"V0206_POKEMON_DUNSPARCE_NORMAL">;
+export type PokemonSettingsV0207PokemonGligar = PokemonSettings<"V0207_POKEMON_GLIGAR">;
+export type PokemonSettingsV0207PokemonGligarNormal = PokemonSettings<"V0207_POKEMON_GLIGAR_NORMAL">;
+export type PokemonSettingsV0208PokemonSteelix = PokemonSettings<"V0208_POKEMON_STEELIX">;
+export type PokemonSettingsV0208PokemonSteelixNormal = PokemonSettings<"V0208_POKEMON_STEELIX_NORMAL">;
+export type PokemonSettingsV0209PokemonSnubbull = PokemonSettings<"V0209_POKEMON_SNUBBULL">;
+export type PokemonSettingsV0209PokemonSnubbullNormal = PokemonSettings<"V0209_POKEMON_SNUBBULL_NORMAL">;
+export type PokemonSettingsV0210PokemonGranbull = PokemonSettings<"V0210_POKEMON_GRANBULL">;
+export type PokemonSettingsV0210PokemonGranbullNormal = PokemonSettings<"V0210_POKEMON_GRANBULL_NORMAL">;
+export type PokemonSettingsV0211PokemonQwilfish = PokemonSettings<"V0211_POKEMON_QWILFISH">;
+export type PokemonSettingsV0211PokemonQwilfishHisuian = PokemonSettings<"V0211_POKEMON_QWILFISH_HISUIAN">;
+export type PokemonSettingsV0211PokemonQwilfishNormal = PokemonSettings<"V0211_POKEMON_QWILFISH_NORMAL">;
+export type PokemonSettingsV0212PokemonScizor = PokemonSettings<"V0212_POKEMON_SCIZOR">;
+export type PokemonSettingsV0212PokemonScizorNormal = PokemonSettings<"V0212_POKEMON_SCIZOR_NORMAL">;
+export type PokemonSettingsV0213PokemonShuckle = PokemonSettings<"V0213_POKEMON_SHUCKLE">;
+export type PokemonSettingsV0213PokemonShuckleNormal = PokemonSettings<"V0213_POKEMON_SHUCKLE_NORMAL">;
+export type PokemonSettingsV0214PokemonHeracross = PokemonSettings<"V0214_POKEMON_HERACROSS">;
+export type PokemonSettingsV0214PokemonHeracrossNormal = PokemonSettings<"V0214_POKEMON_HERACROSS_NORMAL">;
+export type PokemonSettingsV0215PokemonSneasel = PokemonSettings<"V0215_POKEMON_SNEASEL">;
+export type PokemonSettingsV0215PokemonSneaselHisuian = PokemonSettings<"V0215_POKEMON_SNEASEL_HISUIAN">;
+export type PokemonSettingsV0215PokemonSneaselNormal = PokemonSettings<"V0215_POKEMON_SNEASEL_NORMAL">;
+export type PokemonSettingsV0216PokemonTeddiursa = PokemonSettings<"V0216_POKEMON_TEDDIURSA">;
+export type PokemonSettingsV0216PokemonTeddiursaNormal = PokemonSettings<"V0216_POKEMON_TEDDIURSA_NORMAL">;
+export type PokemonSettingsV0217PokemonUrsaring = PokemonSettings<"V0217_POKEMON_URSARING">;
+export type PokemonSettingsV0217PokemonUrsaringNormal = PokemonSettings<"V0217_POKEMON_URSARING_NORMAL">;
+export type PokemonSettingsV0218PokemonSlugma = PokemonSettings<"V0218_POKEMON_SLUGMA">;
+export type PokemonSettingsV0218PokemonSlugmaNormal = PokemonSettings<"V0218_POKEMON_SLUGMA_NORMAL">;
+export type PokemonSettingsV0219PokemonMagcargo = PokemonSettings<"V0219_POKEMON_MAGCARGO">;
+export type PokemonSettingsV0219PokemonMagcargoNormal = PokemonSettings<"V0219_POKEMON_MAGCARGO_NORMAL">;
+export type PokemonSettingsV0220PokemonSwinub = PokemonSettings<"V0220_POKEMON_SWINUB">;
+export type PokemonSettingsV0220PokemonSwinubNormal = PokemonSettings<"V0220_POKEMON_SWINUB_NORMAL">;
+export type PokemonSettingsV0221PokemonPiloswine = PokemonSettings<"V0221_POKEMON_PILOSWINE">;
+export type PokemonSettingsV0221PokemonPiloswineNormal = PokemonSettings<"V0221_POKEMON_PILOSWINE_NORMAL">;
+export type PokemonSettingsV0222PokemonCorsola = PokemonSettings<"V0222_POKEMON_CORSOLA">;
+export type PokemonSettingsV0222PokemonCorsolaGalarian = PokemonSettings<"V0222_POKEMON_CORSOLA_GALARIAN">;
+export type PokemonSettingsV0222PokemonCorsolaNormal = PokemonSettings<"V0222_POKEMON_CORSOLA_NORMAL">;
+export type PokemonSettingsV0222PokemonCorsolaSpring2026 = PokemonSettings<"V0222_POKEMON_CORSOLA_SPRING_2026">;
+export type PokemonSettingsV0223PokemonRemoraid = PokemonSettings<"V0223_POKEMON_REMORAID">;
+export type PokemonSettingsV0223PokemonRemoraidNormal = PokemonSettings<"V0223_POKEMON_REMORAID_NORMAL">;
+export type PokemonSettingsV0224PokemonOctillery = PokemonSettings<"V0224_POKEMON_OCTILLERY">;
+export type PokemonSettingsV0224PokemonOctilleryNormal = PokemonSettings<"V0224_POKEMON_OCTILLERY_NORMAL">;
+export type PokemonSettingsV0225PokemonDelibird = PokemonSettings<"V0225_POKEMON_DELIBIRD">;
+export type PokemonSettingsV0225PokemonDelibirdNormal = PokemonSettings<"V0225_POKEMON_DELIBIRD_NORMAL">;
+export type PokemonSettingsV0225PokemonDelibirdWinter2020 = PokemonSettings<"V0225_POKEMON_DELIBIRD_WINTER_2020">;
+export type PokemonSettingsV0226PokemonMantine = PokemonSettings<"V0226_POKEMON_MANTINE">;
+export type PokemonSettingsV0226PokemonMantineNormal = PokemonSettings<"V0226_POKEMON_MANTINE_NORMAL">;
+export type PokemonSettingsV0227PokemonSkarmory = PokemonSettings<"V0227_POKEMON_SKARMORY">;
+export type PokemonSettingsV0227PokemonSkarmoryNormal = PokemonSettings<"V0227_POKEMON_SKARMORY_NORMAL">;
+export type PokemonSettingsV0228PokemonHoundour = PokemonSettings<"V0228_POKEMON_HOUNDOUR">;
+export type PokemonSettingsV0228PokemonHoundourNormal = PokemonSettings<"V0228_POKEMON_HOUNDOUR_NORMAL">;
+export type PokemonSettingsV0229PokemonHoundoom = PokemonSettings<"V0229_POKEMON_HOUNDOOM">;
+export type PokemonSettingsV0229PokemonHoundoomNormal = PokemonSettings<"V0229_POKEMON_HOUNDOOM_NORMAL">;
+export type PokemonSettingsV0230PokemonKingdra = PokemonSettings<"V0230_POKEMON_KINGDRA">;
+export type PokemonSettingsV0230PokemonKingdraNormal = PokemonSettings<"V0230_POKEMON_KINGDRA_NORMAL">;
+export type PokemonSettingsV0231PokemonPhanpy = PokemonSettings<"V0231_POKEMON_PHANPY">;
+export type PokemonSettingsV0231PokemonPhanpyNormal = PokemonSettings<"V0231_POKEMON_PHANPY_NORMAL">;
+export type PokemonSettingsV0232PokemonDonphan = PokemonSettings<"V0232_POKEMON_DONPHAN">;
+export type PokemonSettingsV0232PokemonDonphanNormal = PokemonSettings<"V0232_POKEMON_DONPHAN_NORMAL">;
+export type PokemonSettingsV0233PokemonPorygon2 = PokemonSettings<"V0233_POKEMON_PORYGON2">;
+export type PokemonSettingsV0233PokemonPorygon2Normal = PokemonSettings<"V0233_POKEMON_PORYGON2_NORMAL">;
+export type PokemonSettingsV0234PokemonStantler = PokemonSettings<"V0234_POKEMON_STANTLER">;
+export type PokemonSettingsV0234PokemonStantlerNormal = PokemonSettings<"V0234_POKEMON_STANTLER_NORMAL">;
+export type PokemonSettingsV0235PokemonSmeargle = PokemonSettings<"V0235_POKEMON_SMEARGLE">;
+export type PokemonSettingsV0235PokemonSmeargleNormal = PokemonSettings<"V0235_POKEMON_SMEARGLE_NORMAL">;
+export type PokemonSettingsV0236PokemonTyrogue = PokemonSettings<"V0236_POKEMON_TYROGUE">;
+export type PokemonSettingsV0236PokemonTyrogueNormal = PokemonSettings<"V0236_POKEMON_TYROGUE_NORMAL">;
+export type PokemonSettingsV0237PokemonHitmontop = PokemonSettings<"V0237_POKEMON_HITMONTOP">;
+export type PokemonSettingsV0237PokemonHitmontopNormal = PokemonSettings<"V0237_POKEMON_HITMONTOP_NORMAL">;
+export type PokemonSettingsV0238PokemonSmoochum = PokemonSettings<"V0238_POKEMON_SMOOCHUM">;
+export type PokemonSettingsV0238PokemonSmoochumNormal = PokemonSettings<"V0238_POKEMON_SMOOCHUM_NORMAL">;
+export type PokemonSettingsV0239PokemonElekid = PokemonSettings<"V0239_POKEMON_ELEKID">;
+export type PokemonSettingsV0239PokemonElekidNormal = PokemonSettings<"V0239_POKEMON_ELEKID_NORMAL">;
+export type PokemonSettingsV0240PokemonMagby = PokemonSettings<"V0240_POKEMON_MAGBY">;
+export type PokemonSettingsV0240PokemonMagbyNormal = PokemonSettings<"V0240_POKEMON_MAGBY_NORMAL">;
+export type PokemonSettingsV0241PokemonMiltank = PokemonSettings<"V0241_POKEMON_MILTANK">;
+export type PokemonSettingsV0241PokemonMiltankNormal = PokemonSettings<"V0241_POKEMON_MILTANK_NORMAL">;
+export type PokemonSettingsV0242PokemonBlissey = PokemonSettings<"V0242_POKEMON_BLISSEY">;
+export type PokemonSettingsV0242PokemonBlisseyNormal = PokemonSettings<"V0242_POKEMON_BLISSEY_NORMAL">;
+export type PokemonSettingsV0243PokemonRaikou = PokemonSettings<"V0243_POKEMON_RAIKOU">;
+export type PokemonSettingsV0243PokemonRaikouNormal = PokemonSettings<"V0243_POKEMON_RAIKOU_NORMAL">;
+export type PokemonSettingsV0243PokemonRaikouS = PokemonSettings<"V0243_POKEMON_RAIKOU_S">;
+export type PokemonSettingsV0244PokemonEntei = PokemonSettings<"V0244_POKEMON_ENTEI">;
+export type PokemonSettingsV0244PokemonEnteiNormal = PokemonSettings<"V0244_POKEMON_ENTEI_NORMAL">;
+export type PokemonSettingsV0244PokemonEnteiS = PokemonSettings<"V0244_POKEMON_ENTEI_S">;
+export type PokemonSettingsV0245PokemonSuicune = PokemonSettings<"V0245_POKEMON_SUICUNE">;
+export type PokemonSettingsV0245PokemonSuicuneNormal = PokemonSettings<"V0245_POKEMON_SUICUNE_NORMAL">;
+export type PokemonSettingsV0245PokemonSuicuneS = PokemonSettings<"V0245_POKEMON_SUICUNE_S">;
+export type PokemonSettingsV0246PokemonLarvitar = PokemonSettings<"V0246_POKEMON_LARVITAR">;
+export type PokemonSettingsV0246PokemonLarvitarNormal = PokemonSettings<"V0246_POKEMON_LARVITAR_NORMAL">;
+export type PokemonSettingsV0247PokemonPupitar = PokemonSettings<"V0247_POKEMON_PUPITAR">;
+export type PokemonSettingsV0247PokemonPupitarNormal = PokemonSettings<"V0247_POKEMON_PUPITAR_NORMAL">;
+export type PokemonSettingsV0248PokemonTyranitar = PokemonSettings<"V0248_POKEMON_TYRANITAR">;
+export type PokemonSettingsV0248PokemonTyranitarNormal = PokemonSettings<"V0248_POKEMON_TYRANITAR_NORMAL">;
+export type PokemonSettingsV0249PokemonLugia = PokemonSettings<"V0249_POKEMON_LUGIA">;
+export type PokemonSettingsV0249PokemonLugiaNormal = PokemonSettings<"V0249_POKEMON_LUGIA_NORMAL">;
+export type PokemonSettingsV0249PokemonLugiaS = PokemonSettings<"V0249_POKEMON_LUGIA_S">;
+export type PokemonSettingsV0250PokemonHoOh = PokemonSettings<"V0250_POKEMON_HO_OH">;
+export type PokemonSettingsV0250PokemonHoOhNormal = PokemonSettings<"V0250_POKEMON_HO_OH_NORMAL">;
+export type PokemonSettingsV0250PokemonHoOhS = PokemonSettings<"V0250_POKEMON_HO_OH_S">;
+export type PokemonSettingsV0251PokemonCelebi = PokemonSettings<"V0251_POKEMON_CELEBI">;
+export type PokemonSettingsV0251PokemonCelebiNormal = PokemonSettings<"V0251_POKEMON_CELEBI_NORMAL">;
+export type PokemonSettingsV0252PokemonTreecko = PokemonSettings<"V0252_POKEMON_TREECKO">;
+export type PokemonSettingsV0252PokemonTreeckoNormal = PokemonSettings<"V0252_POKEMON_TREECKO_NORMAL">;
+export type PokemonSettingsV0253PokemonGrovyle = PokemonSettings<"V0253_POKEMON_GROVYLE">;
+export type PokemonSettingsV0253PokemonGrovyleNormal = PokemonSettings<"V0253_POKEMON_GROVYLE_NORMAL">;
+export type PokemonSettingsV0254PokemonSceptile = PokemonSettings<"V0254_POKEMON_SCEPTILE">;
+export type PokemonSettingsV0254PokemonSceptileNormal = PokemonSettings<"V0254_POKEMON_SCEPTILE_NORMAL">;
+export type PokemonSettingsV0255PokemonTorchic = PokemonSettings<"V0255_POKEMON_TORCHIC">;
+export type PokemonSettingsV0255PokemonTorchicNormal = PokemonSettings<"V0255_POKEMON_TORCHIC_NORMAL">;
+export type PokemonSettingsV0256PokemonCombusken = PokemonSettings<"V0256_POKEMON_COMBUSKEN">;
+export type PokemonSettingsV0256PokemonCombuskenNormal = PokemonSettings<"V0256_POKEMON_COMBUSKEN_NORMAL">;
+export type PokemonSettingsV0257PokemonBlaziken = PokemonSettings<"V0257_POKEMON_BLAZIKEN">;
+export type PokemonSettingsV0257PokemonBlazikenNormal = PokemonSettings<"V0257_POKEMON_BLAZIKEN_NORMAL">;
+export type PokemonSettingsV0258PokemonMudkip = PokemonSettings<"V0258_POKEMON_MUDKIP">;
+export type PokemonSettingsV0258PokemonMudkipNormal = PokemonSettings<"V0258_POKEMON_MUDKIP_NORMAL">;
+export type PokemonSettingsV0259PokemonMarshtomp = PokemonSettings<"V0259_POKEMON_MARSHTOMP">;
+export type PokemonSettingsV0259PokemonMarshtompNormal = PokemonSettings<"V0259_POKEMON_MARSHTOMP_NORMAL">;
+export type PokemonSettingsV0260PokemonSwampert = PokemonSettings<"V0260_POKEMON_SWAMPERT">;
+export type PokemonSettingsV0260PokemonSwampertNormal = PokemonSettings<"V0260_POKEMON_SWAMPERT_NORMAL">;
+export type PokemonSettingsV0261PokemonPoochyena = PokemonSettings<"V0261_POKEMON_POOCHYENA">;
+export type PokemonSettingsV0261PokemonPoochyenaNormal = PokemonSettings<"V0261_POKEMON_POOCHYENA_NORMAL">;
+export type PokemonSettingsV0262PokemonMightyena = PokemonSettings<"V0262_POKEMON_MIGHTYENA">;
+export type PokemonSettingsV0262PokemonMightyenaNormal = PokemonSettings<"V0262_POKEMON_MIGHTYENA_NORMAL">;
+export type PokemonSettingsV0263PokemonZigzagoon = PokemonSettings<"V0263_POKEMON_ZIGZAGOON">;
+export type PokemonSettingsV0263PokemonZigzagoonGalarian = PokemonSettings<"V0263_POKEMON_ZIGZAGOON_GALARIAN">;
+export type PokemonSettingsV0263PokemonZigzagoonNormal = PokemonSettings<"V0263_POKEMON_ZIGZAGOON_NORMAL">;
+export type PokemonSettingsV0264PokemonLinoone = PokemonSettings<"V0264_POKEMON_LINOONE">;
+export type PokemonSettingsV0264PokemonLinooneGalarian = PokemonSettings<"V0264_POKEMON_LINOONE_GALARIAN">;
+export type PokemonSettingsV0264PokemonLinooneNormal = PokemonSettings<"V0264_POKEMON_LINOONE_NORMAL">;
+export type PokemonSettingsV0265PokemonWurmple = PokemonSettings<"V0265_POKEMON_WURMPLE">;
+export type PokemonSettingsV0265PokemonWurmpleNormal = PokemonSettings<"V0265_POKEMON_WURMPLE_NORMAL">;
+export type PokemonSettingsV0266PokemonSilcoon = PokemonSettings<"V0266_POKEMON_SILCOON">;
+export type PokemonSettingsV0266PokemonSilcoonNormal = PokemonSettings<"V0266_POKEMON_SILCOON_NORMAL">;
+export type PokemonSettingsV0267PokemonBeautifly = PokemonSettings<"V0267_POKEMON_BEAUTIFLY">;
+export type PokemonSettingsV0267PokemonBeautiflyNormal = PokemonSettings<"V0267_POKEMON_BEAUTIFLY_NORMAL">;
+export type PokemonSettingsV0268PokemonCascoon = PokemonSettings<"V0268_POKEMON_CASCOON">;
+export type PokemonSettingsV0268PokemonCascoonNormal = PokemonSettings<"V0268_POKEMON_CASCOON_NORMAL">;
+export type PokemonSettingsV0269PokemonDustox = PokemonSettings<"V0269_POKEMON_DUSTOX">;
+export type PokemonSettingsV0269PokemonDustoxNormal = PokemonSettings<"V0269_POKEMON_DUSTOX_NORMAL">;
+export type PokemonSettingsV0270PokemonLotad = PokemonSettings<"V0270_POKEMON_LOTAD">;
+export type PokemonSettingsV0270PokemonLotadNormal = PokemonSettings<"V0270_POKEMON_LOTAD_NORMAL">;
+export type PokemonSettingsV0271PokemonLombre = PokemonSettings<"V0271_POKEMON_LOMBRE">;
+export type PokemonSettingsV0271PokemonLombreNormal = PokemonSettings<"V0271_POKEMON_LOMBRE_NORMAL">;
+export type PokemonSettingsV0272PokemonLudicolo = PokemonSettings<"V0272_POKEMON_LUDICOLO">;
+export type PokemonSettingsV0272PokemonLudicoloNormal = PokemonSettings<"V0272_POKEMON_LUDICOLO_NORMAL">;
+export type PokemonSettingsV0273PokemonSeedot = PokemonSettings<"V0273_POKEMON_SEEDOT">;
+export type PokemonSettingsV0273PokemonSeedotNormal = PokemonSettings<"V0273_POKEMON_SEEDOT_NORMAL">;
+export type PokemonSettingsV0274PokemonNuzleaf = PokemonSettings<"V0274_POKEMON_NUZLEAF">;
+export type PokemonSettingsV0274PokemonNuzleafNormal = PokemonSettings<"V0274_POKEMON_NUZLEAF_NORMAL">;
+export type PokemonSettingsV0275PokemonShiftry = PokemonSettings<"V0275_POKEMON_SHIFTRY">;
+export type PokemonSettingsV0275PokemonShiftryNormal = PokemonSettings<"V0275_POKEMON_SHIFTRY_NORMAL">;
+export type PokemonSettingsV0276PokemonTaillow = PokemonSettings<"V0276_POKEMON_TAILLOW">;
+export type PokemonSettingsV0276PokemonTaillowNormal = PokemonSettings<"V0276_POKEMON_TAILLOW_NORMAL">;
+export type PokemonSettingsV0277PokemonSwellow = PokemonSettings<"V0277_POKEMON_SWELLOW">;
+export type PokemonSettingsV0277PokemonSwellowNormal = PokemonSettings<"V0277_POKEMON_SWELLOW_NORMAL">;
+export type PokemonSettingsV0278PokemonWingull = PokemonSettings<"V0278_POKEMON_WINGULL">;
+export type PokemonSettingsV0278PokemonWingullNormal = PokemonSettings<"V0278_POKEMON_WINGULL_NORMAL">;
+export type PokemonSettingsV0279PokemonPelipper = PokemonSettings<"V0279_POKEMON_PELIPPER">;
+export type PokemonSettingsV0279PokemonPelipperNormal = PokemonSettings<"V0279_POKEMON_PELIPPER_NORMAL">;
+export type PokemonSettingsV0280PokemonRalts = PokemonSettings<"V0280_POKEMON_RALTS">;
+export type PokemonSettingsV0280PokemonRaltsNormal = PokemonSettings<"V0280_POKEMON_RALTS_NORMAL">;
+export type PokemonSettingsV0281PokemonKirlia = PokemonSettings<"V0281_POKEMON_KIRLIA">;
+export type PokemonSettingsV0281PokemonKirliaNormal = PokemonSettings<"V0281_POKEMON_KIRLIA_NORMAL">;
+export type PokemonSettingsV0282PokemonGardevoir = PokemonSettings<"V0282_POKEMON_GARDEVOIR">;
+export type PokemonSettingsV0282PokemonGardevoirNormal = PokemonSettings<"V0282_POKEMON_GARDEVOIR_NORMAL">;
+export type PokemonSettingsV0283PokemonSurskit = PokemonSettings<"V0283_POKEMON_SURSKIT">;
+export type PokemonSettingsV0283PokemonSurskitNormal = PokemonSettings<"V0283_POKEMON_SURSKIT_NORMAL">;
+export type PokemonSettingsV0284PokemonMasquerain = PokemonSettings<"V0284_POKEMON_MASQUERAIN">;
+export type PokemonSettingsV0284PokemonMasquerainNormal = PokemonSettings<"V0284_POKEMON_MASQUERAIN_NORMAL">;
+export type PokemonSettingsV0285PokemonShroomish = PokemonSettings<"V0285_POKEMON_SHROOMISH">;
+export type PokemonSettingsV0285PokemonShroomishNormal = PokemonSettings<"V0285_POKEMON_SHROOMISH_NORMAL">;
+export type PokemonSettingsV0286PokemonBreloom = PokemonSettings<"V0286_POKEMON_BRELOOM">;
+export type PokemonSettingsV0286PokemonBreloomNormal = PokemonSettings<"V0286_POKEMON_BRELOOM_NORMAL">;
+export type PokemonSettingsV0287PokemonSlakoth = PokemonSettings<"V0287_POKEMON_SLAKOTH">;
+export type PokemonSettingsV0287PokemonSlakothNormal = PokemonSettings<"V0287_POKEMON_SLAKOTH_NORMAL">;
+export type PokemonSettingsV0288PokemonVigoroth = PokemonSettings<"V0288_POKEMON_VIGOROTH">;
+export type PokemonSettingsV0288PokemonVigorothNormal = PokemonSettings<"V0288_POKEMON_VIGOROTH_NORMAL">;
+export type PokemonSettingsV0289PokemonSlaking = PokemonSettings<"V0289_POKEMON_SLAKING">;
+export type PokemonSettingsV0289PokemonSlakingNormal = PokemonSettings<"V0289_POKEMON_SLAKING_NORMAL">;
+export type PokemonSettingsV0290PokemonNincada = PokemonSettings<"V0290_POKEMON_NINCADA">;
+export type PokemonSettingsV0290PokemonNincadaNormal = PokemonSettings<"V0290_POKEMON_NINCADA_NORMAL">;
+export type PokemonSettingsV0291PokemonNinjask = PokemonSettings<"V0291_POKEMON_NINJASK">;
+export type PokemonSettingsV0291PokemonNinjaskNormal = PokemonSettings<"V0291_POKEMON_NINJASK_NORMAL">;
+export type PokemonSettingsV0292PokemonShedinja = PokemonSettings<"V0292_POKEMON_SHEDINJA">;
+export type PokemonSettingsV0292PokemonShedinjaNormal = PokemonSettings<"V0292_POKEMON_SHEDINJA_NORMAL">;
+export type PokemonSettingsV0293PokemonWhismur = PokemonSettings<"V0293_POKEMON_WHISMUR">;
+export type PokemonSettingsV0293PokemonWhismurNormal = PokemonSettings<"V0293_POKEMON_WHISMUR_NORMAL">;
+export type PokemonSettingsV0294PokemonLoudred = PokemonSettings<"V0294_POKEMON_LOUDRED">;
+export type PokemonSettingsV0294PokemonLoudredNormal = PokemonSettings<"V0294_POKEMON_LOUDRED_NORMAL">;
+export type PokemonSettingsV0295PokemonExploud = PokemonSettings<"V0295_POKEMON_EXPLOUD">;
+export type PokemonSettingsV0295PokemonExploudNormal = PokemonSettings<"V0295_POKEMON_EXPLOUD_NORMAL">;
+export type PokemonSettingsV0296PokemonMakuhita = PokemonSettings<"V0296_POKEMON_MAKUHITA">;
+export type PokemonSettingsV0296PokemonMakuhitaNormal = PokemonSettings<"V0296_POKEMON_MAKUHITA_NORMAL">;
+export type PokemonSettingsV0297PokemonHariyama = PokemonSettings<"V0297_POKEMON_HARIYAMA">;
+export type PokemonSettingsV0297PokemonHariyamaNormal = PokemonSettings<"V0297_POKEMON_HARIYAMA_NORMAL">;
+export type PokemonSettingsV0298PokemonAzurill = PokemonSettings<"V0298_POKEMON_AZURILL">;
+export type PokemonSettingsV0298PokemonAzurillNormal = PokemonSettings<"V0298_POKEMON_AZURILL_NORMAL">;
+export type PokemonSettingsV0299PokemonNosepass = PokemonSettings<"V0299_POKEMON_NOSEPASS">;
+export type PokemonSettingsV0299PokemonNosepassNormal = PokemonSettings<"V0299_POKEMON_NOSEPASS_NORMAL">;
+export type PokemonSettingsV0300PokemonSkitty = PokemonSettings<"V0300_POKEMON_SKITTY">;
+export type PokemonSettingsV0300PokemonSkittyNormal = PokemonSettings<"V0300_POKEMON_SKITTY_NORMAL">;
+export type PokemonSettingsV0301PokemonDelcatty = PokemonSettings<"V0301_POKEMON_DELCATTY">;
+export type PokemonSettingsV0301PokemonDelcattyNormal = PokemonSettings<"V0301_POKEMON_DELCATTY_NORMAL">;
+export type PokemonSettingsV0302PokemonSableye = PokemonSettings<"V0302_POKEMON_SABLEYE">;
+export type PokemonSettingsV0302PokemonSableyeCostume2020 = PokemonSettings<"V0302_POKEMON_SABLEYE_COSTUME_2020">;
+export type PokemonSettingsV0302PokemonSableyeNormal = PokemonSettings<"V0302_POKEMON_SABLEYE_NORMAL">;
+export type PokemonSettingsV0303PokemonMawile = PokemonSettings<"V0303_POKEMON_MAWILE">;
+export type PokemonSettingsV0303PokemonMawileNormal = PokemonSettings<"V0303_POKEMON_MAWILE_NORMAL">;
+export type PokemonSettingsV0304PokemonAron = PokemonSettings<"V0304_POKEMON_ARON">;
+export type PokemonSettingsV0304PokemonAronNormal = PokemonSettings<"V0304_POKEMON_ARON_NORMAL">;
+export type PokemonSettingsV0305PokemonLairon = PokemonSettings<"V0305_POKEMON_LAIRON">;
+export type PokemonSettingsV0305PokemonLaironNormal = PokemonSettings<"V0305_POKEMON_LAIRON_NORMAL">;
+export type PokemonSettingsV0306PokemonAggron = PokemonSettings<"V0306_POKEMON_AGGRON">;
+export type PokemonSettingsV0306PokemonAggronNormal = PokemonSettings<"V0306_POKEMON_AGGRON_NORMAL">;
+export type PokemonSettingsV0307PokemonMeditite = PokemonSettings<"V0307_POKEMON_MEDITITE">;
+export type PokemonSettingsV0307PokemonMedititeNormal = PokemonSettings<"V0307_POKEMON_MEDITITE_NORMAL">;
+export type PokemonSettingsV0308PokemonMedicham = PokemonSettings<"V0308_POKEMON_MEDICHAM">;
+export type PokemonSettingsV0308PokemonMedichamNormal = PokemonSettings<"V0308_POKEMON_MEDICHAM_NORMAL">;
+export type PokemonSettingsV0309PokemonElectrike = PokemonSettings<"V0309_POKEMON_ELECTRIKE">;
+export type PokemonSettingsV0309PokemonElectrikeNormal = PokemonSettings<"V0309_POKEMON_ELECTRIKE_NORMAL">;
+export type PokemonSettingsV0310PokemonManectric = PokemonSettings<"V0310_POKEMON_MANECTRIC">;
+export type PokemonSettingsV0310PokemonManectricNormal = PokemonSettings<"V0310_POKEMON_MANECTRIC_NORMAL">;
+export type PokemonSettingsV0311PokemonPlusle = PokemonSettings<"V0311_POKEMON_PLUSLE">;
+export type PokemonSettingsV0311PokemonPlusleNormal = PokemonSettings<"V0311_POKEMON_PLUSLE_NORMAL">;
+export type PokemonSettingsV0312PokemonMinun = PokemonSettings<"V0312_POKEMON_MINUN">;
+export type PokemonSettingsV0312PokemonMinunNormal = PokemonSettings<"V0312_POKEMON_MINUN_NORMAL">;
+export type PokemonSettingsV0313PokemonVolbeat = PokemonSettings<"V0313_POKEMON_VOLBEAT">;
+export type PokemonSettingsV0313PokemonVolbeatNormal = PokemonSettings<"V0313_POKEMON_VOLBEAT_NORMAL">;
+export type PokemonSettingsV0314PokemonIllumise = PokemonSettings<"V0314_POKEMON_ILLUMISE">;
+export type PokemonSettingsV0314PokemonIllumiseNormal = PokemonSettings<"V0314_POKEMON_ILLUMISE_NORMAL">;
+export type PokemonSettingsV0315PokemonRoselia = PokemonSettings<"V0315_POKEMON_ROSELIA">;
+export type PokemonSettingsV0315PokemonRoseliaNormal = PokemonSettings<"V0315_POKEMON_ROSELIA_NORMAL">;
+export type PokemonSettingsV0316PokemonGulpin = PokemonSettings<"V0316_POKEMON_GULPIN">;
+export type PokemonSettingsV0316PokemonGulpinNormal = PokemonSettings<"V0316_POKEMON_GULPIN_NORMAL">;
+export type PokemonSettingsV0317PokemonSwalot = PokemonSettings<"V0317_POKEMON_SWALOT">;
+export type PokemonSettingsV0317PokemonSwalotNormal = PokemonSettings<"V0317_POKEMON_SWALOT_NORMAL">;
+export type PokemonSettingsV0318PokemonCarvanha = PokemonSettings<"V0318_POKEMON_CARVANHA">;
+export type PokemonSettingsV0318PokemonCarvanhaNormal = PokemonSettings<"V0318_POKEMON_CARVANHA_NORMAL">;
+export type PokemonSettingsV0319PokemonSharpedo = PokemonSettings<"V0319_POKEMON_SHARPEDO">;
+export type PokemonSettingsV0319PokemonSharpedoNormal = PokemonSettings<"V0319_POKEMON_SHARPEDO_NORMAL">;
+export type PokemonSettingsV0320PokemonWailmer = PokemonSettings<"V0320_POKEMON_WAILMER">;
+export type PokemonSettingsV0320PokemonWailmerNormal = PokemonSettings<"V0320_POKEMON_WAILMER_NORMAL">;
+export type PokemonSettingsV0321PokemonWailord = PokemonSettings<"V0321_POKEMON_WAILORD">;
+export type PokemonSettingsV0321PokemonWailordNormal = PokemonSettings<"V0321_POKEMON_WAILORD_NORMAL">;
+export type PokemonSettingsV0322PokemonNumel = PokemonSettings<"V0322_POKEMON_NUMEL">;
+export type PokemonSettingsV0322PokemonNumelNormal = PokemonSettings<"V0322_POKEMON_NUMEL_NORMAL">;
+export type PokemonSettingsV0323PokemonCamerupt = PokemonSettings<"V0323_POKEMON_CAMERUPT">;
+export type PokemonSettingsV0323PokemonCameruptNormal = PokemonSettings<"V0323_POKEMON_CAMERUPT_NORMAL">;
+export type PokemonSettingsV0324PokemonTorkoal = PokemonSettings<"V0324_POKEMON_TORKOAL">;
+export type PokemonSettingsV0324PokemonTorkoalNormal = PokemonSettings<"V0324_POKEMON_TORKOAL_NORMAL">;
+export type PokemonSettingsV0325PokemonSpoink = PokemonSettings<"V0325_POKEMON_SPOINK">;
+export type PokemonSettingsV0325PokemonSpoinkNormal = PokemonSettings<"V0325_POKEMON_SPOINK_NORMAL">;
+export type PokemonSettingsV0326PokemonGrumpig = PokemonSettings<"V0326_POKEMON_GRUMPIG">;
+export type PokemonSettingsV0326PokemonGrumpigNormal = PokemonSettings<"V0326_POKEMON_GRUMPIG_NORMAL">;
+export type PokemonSettingsV0327PokemonSpinda = PokemonSettings<"V0327_POKEMON_SPINDA">;
+export type PokemonSettingsV0327PokemonSpinda00 = PokemonSettings<"V0327_POKEMON_SPINDA_00">;
+export type PokemonSettingsV0327PokemonSpinda01 = PokemonSettings<"V0327_POKEMON_SPINDA_01">;
+export type PokemonSettingsV0327PokemonSpinda02 = PokemonSettings<"V0327_POKEMON_SPINDA_02">;
+export type PokemonSettingsV0327PokemonSpinda03 = PokemonSettings<"V0327_POKEMON_SPINDA_03">;
+export type PokemonSettingsV0327PokemonSpinda04 = PokemonSettings<"V0327_POKEMON_SPINDA_04">;
+export type PokemonSettingsV0327PokemonSpinda05 = PokemonSettings<"V0327_POKEMON_SPINDA_05">;
+export type PokemonSettingsV0327PokemonSpinda06 = PokemonSettings<"V0327_POKEMON_SPINDA_06">;
+export type PokemonSettingsV0327PokemonSpinda07 = PokemonSettings<"V0327_POKEMON_SPINDA_07">;
+export type PokemonSettingsV0327PokemonSpinda08 = PokemonSettings<"V0327_POKEMON_SPINDA_08">;
+export type PokemonSettingsV0327PokemonSpinda09 = PokemonSettings<"V0327_POKEMON_SPINDA_09">;
+export type PokemonSettingsV0327PokemonSpinda10 = PokemonSettings<"V0327_POKEMON_SPINDA_10">;
+export type PokemonSettingsV0327PokemonSpinda11 = PokemonSettings<"V0327_POKEMON_SPINDA_11">;
+export type PokemonSettingsV0327PokemonSpinda12 = PokemonSettings<"V0327_POKEMON_SPINDA_12">;
+export type PokemonSettingsV0327PokemonSpinda13 = PokemonSettings<"V0327_POKEMON_SPINDA_13">;
+export type PokemonSettingsV0327PokemonSpinda14 = PokemonSettings<"V0327_POKEMON_SPINDA_14">;
+export type PokemonSettingsV0327PokemonSpinda15 = PokemonSettings<"V0327_POKEMON_SPINDA_15">;
+export type PokemonSettingsV0327PokemonSpinda16 = PokemonSettings<"V0327_POKEMON_SPINDA_16">;
+export type PokemonSettingsV0327PokemonSpinda17 = PokemonSettings<"V0327_POKEMON_SPINDA_17">;
+export type PokemonSettingsV0327PokemonSpinda18 = PokemonSettings<"V0327_POKEMON_SPINDA_18">;
+export type PokemonSettingsV0327PokemonSpinda19 = PokemonSettings<"V0327_POKEMON_SPINDA_19">;
+export type PokemonSettingsV0328PokemonTrapinch = PokemonSettings<"V0328_POKEMON_TRAPINCH">;
+export type PokemonSettingsV0328PokemonTrapinchNormal = PokemonSettings<"V0328_POKEMON_TRAPINCH_NORMAL">;
+export type PokemonSettingsV0329PokemonVibrava = PokemonSettings<"V0329_POKEMON_VIBRAVA">;
+export type PokemonSettingsV0329PokemonVibravaNormal = PokemonSettings<"V0329_POKEMON_VIBRAVA_NORMAL">;
+export type PokemonSettingsV0330PokemonFlygon = PokemonSettings<"V0330_POKEMON_FLYGON">;
+export type PokemonSettingsV0330PokemonFlygonNormal = PokemonSettings<"V0330_POKEMON_FLYGON_NORMAL">;
+export type PokemonSettingsV0331PokemonCacnea = PokemonSettings<"V0331_POKEMON_CACNEA">;
+export type PokemonSettingsV0331PokemonCacneaNormal = PokemonSettings<"V0331_POKEMON_CACNEA_NORMAL">;
+export type PokemonSettingsV0332PokemonCacturne = PokemonSettings<"V0332_POKEMON_CACTURNE">;
+export type PokemonSettingsV0332PokemonCacturneNormal = PokemonSettings<"V0332_POKEMON_CACTURNE_NORMAL">;
+export type PokemonSettingsV0333PokemonSwablu = PokemonSettings<"V0333_POKEMON_SWABLU">;
+export type PokemonSettingsV0333PokemonSwabluNormal = PokemonSettings<"V0333_POKEMON_SWABLU_NORMAL">;
+export type PokemonSettingsV0334PokemonAltaria = PokemonSettings<"V0334_POKEMON_ALTARIA">;
+export type PokemonSettingsV0334PokemonAltariaNormal = PokemonSettings<"V0334_POKEMON_ALTARIA_NORMAL">;
+export type PokemonSettingsV0335PokemonZangoose = PokemonSettings<"V0335_POKEMON_ZANGOOSE">;
+export type PokemonSettingsV0335PokemonZangooseNormal = PokemonSettings<"V0335_POKEMON_ZANGOOSE_NORMAL">;
+export type PokemonSettingsV0336PokemonSeviper = PokemonSettings<"V0336_POKEMON_SEVIPER">;
+export type PokemonSettingsV0336PokemonSeviperNormal = PokemonSettings<"V0336_POKEMON_SEVIPER_NORMAL">;
+export type PokemonSettingsV0337PokemonLunatone = PokemonSettings<"V0337_POKEMON_LUNATONE">;
+export type PokemonSettingsV0337PokemonLunatoneNormal = PokemonSettings<"V0337_POKEMON_LUNATONE_NORMAL">;
+export type PokemonSettingsV0338PokemonSolrock = PokemonSettings<"V0338_POKEMON_SOLROCK">;
+export type PokemonSettingsV0338PokemonSolrockNormal = PokemonSettings<"V0338_POKEMON_SOLROCK_NORMAL">;
+export type PokemonSettingsV0339PokemonBarboach = PokemonSettings<"V0339_POKEMON_BARBOACH">;
+export type PokemonSettingsV0339PokemonBarboachNormal = PokemonSettings<"V0339_POKEMON_BARBOACH_NORMAL">;
+export type PokemonSettingsV0340PokemonWhiscash = PokemonSettings<"V0340_POKEMON_WHISCASH">;
+export type PokemonSettingsV0340PokemonWhiscashNormal = PokemonSettings<"V0340_POKEMON_WHISCASH_NORMAL">;
+export type PokemonSettingsV0341PokemonCorphish = PokemonSettings<"V0341_POKEMON_CORPHISH">;
+export type PokemonSettingsV0341PokemonCorphishNormal = PokemonSettings<"V0341_POKEMON_CORPHISH_NORMAL">;
+export type PokemonSettingsV0342PokemonCrawdaunt = PokemonSettings<"V0342_POKEMON_CRAWDAUNT">;
+export type PokemonSettingsV0342PokemonCrawdauntNormal = PokemonSettings<"V0342_POKEMON_CRAWDAUNT_NORMAL">;
+export type PokemonSettingsV0343PokemonBaltoy = PokemonSettings<"V0343_POKEMON_BALTOY">;
+export type PokemonSettingsV0343PokemonBaltoyNormal = PokemonSettings<"V0343_POKEMON_BALTOY_NORMAL">;
+export type PokemonSettingsV0344PokemonClaydol = PokemonSettings<"V0344_POKEMON_CLAYDOL">;
+export type PokemonSettingsV0344PokemonClaydolNormal = PokemonSettings<"V0344_POKEMON_CLAYDOL_NORMAL">;
+export type PokemonSettingsV0345PokemonLileep = PokemonSettings<"V0345_POKEMON_LILEEP">;
+export type PokemonSettingsV0345PokemonLileepNormal = PokemonSettings<"V0345_POKEMON_LILEEP_NORMAL">;
+export type PokemonSettingsV0346PokemonCradily = PokemonSettings<"V0346_POKEMON_CRADILY">;
+export type PokemonSettingsV0346PokemonCradilyNormal = PokemonSettings<"V0346_POKEMON_CRADILY_NORMAL">;
+export type PokemonSettingsV0347PokemonAnorith = PokemonSettings<"V0347_POKEMON_ANORITH">;
+export type PokemonSettingsV0347PokemonAnorithNormal = PokemonSettings<"V0347_POKEMON_ANORITH_NORMAL">;
+export type PokemonSettingsV0348PokemonArmaldo = PokemonSettings<"V0348_POKEMON_ARMALDO">;
+export type PokemonSettingsV0348PokemonArmaldoNormal = PokemonSettings<"V0348_POKEMON_ARMALDO_NORMAL">;
+export type PokemonSettingsV0349PokemonFeebas = PokemonSettings<"V0349_POKEMON_FEEBAS">;
+export type PokemonSettingsV0349PokemonFeebasNormal = PokemonSettings<"V0349_POKEMON_FEEBAS_NORMAL">;
+export type PokemonSettingsV0350PokemonMilotic = PokemonSettings<"V0350_POKEMON_MILOTIC">;
+export type PokemonSettingsV0350PokemonMiloticNormal = PokemonSettings<"V0350_POKEMON_MILOTIC_NORMAL">;
+export type PokemonSettingsV0351PokemonCastform = PokemonSettings<"V0351_POKEMON_CASTFORM">;
+export type PokemonSettingsV0351PokemonCastformNormal = PokemonSettings<"V0351_POKEMON_CASTFORM_NORMAL">;
+export type PokemonSettingsV0351PokemonCastformRainy = PokemonSettings<"V0351_POKEMON_CASTFORM_RAINY">;
+export type PokemonSettingsV0351PokemonCastformSnowy = PokemonSettings<"V0351_POKEMON_CASTFORM_SNOWY">;
+export type PokemonSettingsV0351PokemonCastformSunny = PokemonSettings<"V0351_POKEMON_CASTFORM_SUNNY">;
+export type PokemonSettingsV0352PokemonKecleon = PokemonSettings<"V0352_POKEMON_KECLEON">;
+export type PokemonSettingsV0352PokemonKecleonNormal = PokemonSettings<"V0352_POKEMON_KECLEON_NORMAL">;
+export type PokemonSettingsV0353PokemonShuppet = PokemonSettings<"V0353_POKEMON_SHUPPET">;
+export type PokemonSettingsV0353PokemonShuppetNormal = PokemonSettings<"V0353_POKEMON_SHUPPET_NORMAL">;
+export type PokemonSettingsV0354PokemonBanette = PokemonSettings<"V0354_POKEMON_BANETTE">;
+export type PokemonSettingsV0354PokemonBanetteNormal = PokemonSettings<"V0354_POKEMON_BANETTE_NORMAL">;
+export type PokemonSettingsV0355PokemonDuskull = PokemonSettings<"V0355_POKEMON_DUSKULL">;
+export type PokemonSettingsV0355PokemonDuskullNormal = PokemonSettings<"V0355_POKEMON_DUSKULL_NORMAL">;
+export type PokemonSettingsV0356PokemonDusclops = PokemonSettings<"V0356_POKEMON_DUSCLOPS">;
+export type PokemonSettingsV0356PokemonDusclopsNormal = PokemonSettings<"V0356_POKEMON_DUSCLOPS_NORMAL">;
+export type PokemonSettingsV0357PokemonTropius = PokemonSettings<"V0357_POKEMON_TROPIUS">;
+export type PokemonSettingsV0357PokemonTropiusNormal = PokemonSettings<"V0357_POKEMON_TROPIUS_NORMAL">;
+export type PokemonSettingsV0358PokemonChimecho = PokemonSettings<"V0358_POKEMON_CHIMECHO">;
+export type PokemonSettingsV0358PokemonChimechoNormal = PokemonSettings<"V0358_POKEMON_CHIMECHO_NORMAL">;
+export type PokemonSettingsV0359PokemonAbsol = PokemonSettings<"V0359_POKEMON_ABSOL">;
+export type PokemonSettingsV0359PokemonAbsolNormal = PokemonSettings<"V0359_POKEMON_ABSOL_NORMAL">;
+export type PokemonSettingsV0360PokemonWynaut = PokemonSettings<"V0360_POKEMON_WYNAUT">;
+export type PokemonSettingsV0360PokemonWynautNormal = PokemonSettings<"V0360_POKEMON_WYNAUT_NORMAL">;
+export type PokemonSettingsV0361PokemonSnorunt = PokemonSettings<"V0361_POKEMON_SNORUNT">;
+export type PokemonSettingsV0361PokemonSnoruntNormal = PokemonSettings<"V0361_POKEMON_SNORUNT_NORMAL">;
+export type PokemonSettingsV0362PokemonGlalie = PokemonSettings<"V0362_POKEMON_GLALIE">;
+export type PokemonSettingsV0362PokemonGlalieNormal = PokemonSettings<"V0362_POKEMON_GLALIE_NORMAL">;
+export type PokemonSettingsV0363PokemonSpheal = PokemonSettings<"V0363_POKEMON_SPHEAL">;
+export type PokemonSettingsV0363PokemonSphealNormal = PokemonSettings<"V0363_POKEMON_SPHEAL_NORMAL">;
+export type PokemonSettingsV0364PokemonSealeo = PokemonSettings<"V0364_POKEMON_SEALEO">;
+export type PokemonSettingsV0364PokemonSealeoNormal = PokemonSettings<"V0364_POKEMON_SEALEO_NORMAL">;
+export type PokemonSettingsV0365PokemonWalrein = PokemonSettings<"V0365_POKEMON_WALREIN">;
+export type PokemonSettingsV0365PokemonWalreinNormal = PokemonSettings<"V0365_POKEMON_WALREIN_NORMAL">;
+export type PokemonSettingsV0366PokemonClamperl = PokemonSettings<"V0366_POKEMON_CLAMPERL">;
+export type PokemonSettingsV0366PokemonClamperlNormal = PokemonSettings<"V0366_POKEMON_CLAMPERL_NORMAL">;
+export type PokemonSettingsV0367PokemonHuntail = PokemonSettings<"V0367_POKEMON_HUNTAIL">;
+export type PokemonSettingsV0367PokemonHuntailNormal = PokemonSettings<"V0367_POKEMON_HUNTAIL_NORMAL">;
+export type PokemonSettingsV0368PokemonGorebyss = PokemonSettings<"V0368_POKEMON_GOREBYSS">;
+export type PokemonSettingsV0368PokemonGorebyssNormal = PokemonSettings<"V0368_POKEMON_GOREBYSS_NORMAL">;
+export type PokemonSettingsV0369PokemonRelicanth = PokemonSettings<"V0369_POKEMON_RELICANTH">;
+export type PokemonSettingsV0369PokemonRelicanthNormal = PokemonSettings<"V0369_POKEMON_RELICANTH_NORMAL">;
+export type PokemonSettingsV0370PokemonLuvdisc = PokemonSettings<"V0370_POKEMON_LUVDISC">;
+export type PokemonSettingsV0370PokemonLuvdiscNormal = PokemonSettings<"V0370_POKEMON_LUVDISC_NORMAL">;
+export type PokemonSettingsV0371PokemonBagon = PokemonSettings<"V0371_POKEMON_BAGON">;
+export type PokemonSettingsV0371PokemonBagonNormal = PokemonSettings<"V0371_POKEMON_BAGON_NORMAL">;
+export type PokemonSettingsV0372PokemonShelgon = PokemonSettings<"V0372_POKEMON_SHELGON">;
+export type PokemonSettingsV0372PokemonShelgonNormal = PokemonSettings<"V0372_POKEMON_SHELGON_NORMAL">;
+export type PokemonSettingsV0373PokemonSalamence = PokemonSettings<"V0373_POKEMON_SALAMENCE">;
+export type PokemonSettingsV0373PokemonSalamenceNormal = PokemonSettings<"V0373_POKEMON_SALAMENCE_NORMAL">;
+export type PokemonSettingsV0374PokemonBeldum = PokemonSettings<"V0374_POKEMON_BELDUM">;
+export type PokemonSettingsV0374PokemonBeldumNormal = PokemonSettings<"V0374_POKEMON_BELDUM_NORMAL">;
+export type PokemonSettingsV0375PokemonMetang = PokemonSettings<"V0375_POKEMON_METANG">;
+export type PokemonSettingsV0375PokemonMetangNormal = PokemonSettings<"V0375_POKEMON_METANG_NORMAL">;
+export type PokemonSettingsV0376PokemonMetagross = PokemonSettings<"V0376_POKEMON_METAGROSS">;
+export type PokemonSettingsV0376PokemonMetagrossNormal = PokemonSettings<"V0376_POKEMON_METAGROSS_NORMAL">;
+export type PokemonSettingsV0377PokemonRegirock = PokemonSettings<"V0377_POKEMON_REGIROCK">;
+export type PokemonSettingsV0377PokemonRegirockNormal = PokemonSettings<"V0377_POKEMON_REGIROCK_NORMAL">;
+export type PokemonSettingsV0378PokemonRegice = PokemonSettings<"V0378_POKEMON_REGICE">;
+export type PokemonSettingsV0378PokemonRegiceNormal = PokemonSettings<"V0378_POKEMON_REGICE_NORMAL">;
+export type PokemonSettingsV0379PokemonRegisteel = PokemonSettings<"V0379_POKEMON_REGISTEEL">;
+export type PokemonSettingsV0379PokemonRegisteelNormal = PokemonSettings<"V0379_POKEMON_REGISTEEL_NORMAL">;
+export type PokemonSettingsV0380PokemonLatias = PokemonSettings<"V0380_POKEMON_LATIAS">;
+export type PokemonSettingsV0380PokemonLatiasNormal = PokemonSettings<"V0380_POKEMON_LATIAS_NORMAL">;
+export type PokemonSettingsV0380PokemonLatiasS = PokemonSettings<"V0380_POKEMON_LATIAS_S">;
+export type PokemonSettingsV0381PokemonLatios = PokemonSettings<"V0381_POKEMON_LATIOS">;
+export type PokemonSettingsV0381PokemonLatiosNormal = PokemonSettings<"V0381_POKEMON_LATIOS_NORMAL">;
+export type PokemonSettingsV0381PokemonLatiosS = PokemonSettings<"V0381_POKEMON_LATIOS_S">;
+export type PokemonSettingsV0382PokemonKyogre = PokemonSettings<"V0382_POKEMON_KYOGRE">;
+export type PokemonSettingsV0382PokemonKyogreNormal = PokemonSettings<"V0382_POKEMON_KYOGRE_NORMAL">;
+export type PokemonSettingsV0383PokemonGroudon = PokemonSettings<"V0383_POKEMON_GROUDON">;
+export type PokemonSettingsV0383PokemonGroudonNormal = PokemonSettings<"V0383_POKEMON_GROUDON_NORMAL">;
+export type PokemonSettingsV0384PokemonRayquaza = PokemonSettings<"V0384_POKEMON_RAYQUAZA">;
+export type PokemonSettingsV0384PokemonRayquazaNormal = PokemonSettings<"V0384_POKEMON_RAYQUAZA_NORMAL">;
+export type PokemonSettingsV0385PokemonJirachi = PokemonSettings<"V0385_POKEMON_JIRACHI">;
+export type PokemonSettingsV0385PokemonJirachiNormal = PokemonSettings<"V0385_POKEMON_JIRACHI_NORMAL">;
+export type PokemonSettingsV0386PokemonDeoxys = PokemonSettings<"V0386_POKEMON_DEOXYS">;
+export type PokemonSettingsV0386PokemonDeoxysAttack = PokemonSettings<"V0386_POKEMON_DEOXYS_ATTACK">;
+export type PokemonSettingsV0386PokemonDeoxysDefense = PokemonSettings<"V0386_POKEMON_DEOXYS_DEFENSE">;
+export type PokemonSettingsV0386PokemonDeoxysNormal = PokemonSettings<"V0386_POKEMON_DEOXYS_NORMAL">;
+export type PokemonSettingsV0386PokemonDeoxysSpeed = PokemonSettings<"V0386_POKEMON_DEOXYS_SPEED">;
+export type PokemonSettingsV0387PokemonTurtwig = PokemonSettings<"V0387_POKEMON_TURTWIG">;
+export type PokemonSettingsV0387PokemonTurtwigNormal = PokemonSettings<"V0387_POKEMON_TURTWIG_NORMAL">;
+export type PokemonSettingsV0388PokemonGrotle = PokemonSettings<"V0388_POKEMON_GROTLE">;
+export type PokemonSettingsV0388PokemonGrotleNormal = PokemonSettings<"V0388_POKEMON_GROTLE_NORMAL">;
+export type PokemonSettingsV0389PokemonTorterra = PokemonSettings<"V0389_POKEMON_TORTERRA">;
+export type PokemonSettingsV0389PokemonTorterraNormal = PokemonSettings<"V0389_POKEMON_TORTERRA_NORMAL">;
+export type PokemonSettingsV0390PokemonChimchar = PokemonSettings<"V0390_POKEMON_CHIMCHAR">;
+export type PokemonSettingsV0390PokemonChimcharNormal = PokemonSettings<"V0390_POKEMON_CHIMCHAR_NORMAL">;
+export type PokemonSettingsV0391PokemonMonferno = PokemonSettings<"V0391_POKEMON_MONFERNO">;
+export type PokemonSettingsV0391PokemonMonfernoNormal = PokemonSettings<"V0391_POKEMON_MONFERNO_NORMAL">;
+export type PokemonSettingsV0392PokemonInfernape = PokemonSettings<"V0392_POKEMON_INFERNAPE">;
+export type PokemonSettingsV0392PokemonInfernapeNormal = PokemonSettings<"V0392_POKEMON_INFERNAPE_NORMAL">;
+export type PokemonSettingsV0393PokemonPiplup = PokemonSettings<"V0393_POKEMON_PIPLUP">;
+export type PokemonSettingsV0393PokemonPiplupNormal = PokemonSettings<"V0393_POKEMON_PIPLUP_NORMAL">;
+export type PokemonSettingsV0394PokemonPrinplup = PokemonSettings<"V0394_POKEMON_PRINPLUP">;
+export type PokemonSettingsV0394PokemonPrinplupNormal = PokemonSettings<"V0394_POKEMON_PRINPLUP_NORMAL">;
+export type PokemonSettingsV0395PokemonEmpoleon = PokemonSettings<"V0395_POKEMON_EMPOLEON">;
+export type PokemonSettingsV0395PokemonEmpoleonNormal = PokemonSettings<"V0395_POKEMON_EMPOLEON_NORMAL">;
+export type PokemonSettingsV0396PokemonStarly = PokemonSettings<"V0396_POKEMON_STARLY">;
+export type PokemonSettingsV0396PokemonStarlyNormal = PokemonSettings<"V0396_POKEMON_STARLY_NORMAL">;
+export type PokemonSettingsV0397PokemonStaravia = PokemonSettings<"V0397_POKEMON_STARAVIA">;
+export type PokemonSettingsV0397PokemonStaraviaNormal = PokemonSettings<"V0397_POKEMON_STARAVIA_NORMAL">;
+export type PokemonSettingsV0398PokemonStaraptor = PokemonSettings<"V0398_POKEMON_STARAPTOR">;
+export type PokemonSettingsV0398PokemonStaraptorNormal = PokemonSettings<"V0398_POKEMON_STARAPTOR_NORMAL">;
+export type PokemonSettingsV0399PokemonBidoof = PokemonSettings<"V0399_POKEMON_BIDOOF">;
+export type PokemonSettingsV0399PokemonBidoofNormal = PokemonSettings<"V0399_POKEMON_BIDOOF_NORMAL">;
+export type PokemonSettingsV0400PokemonBibarel = PokemonSettings<"V0400_POKEMON_BIBAREL">;
+export type PokemonSettingsV0400PokemonBibarelNormal = PokemonSettings<"V0400_POKEMON_BIBAREL_NORMAL">;
+export type PokemonSettingsV0401PokemonKricketot = PokemonSettings<"V0401_POKEMON_KRICKETOT">;
+export type PokemonSettingsV0401PokemonKricketotNormal = PokemonSettings<"V0401_POKEMON_KRICKETOT_NORMAL">;
+export type PokemonSettingsV0402PokemonKricketune = PokemonSettings<"V0402_POKEMON_KRICKETUNE">;
+export type PokemonSettingsV0402PokemonKricketuneNormal = PokemonSettings<"V0402_POKEMON_KRICKETUNE_NORMAL">;
+export type PokemonSettingsV0403PokemonShinx = PokemonSettings<"V0403_POKEMON_SHINX">;
+export type PokemonSettingsV0403PokemonShinxNormal = PokemonSettings<"V0403_POKEMON_SHINX_NORMAL">;
+export type PokemonSettingsV0404PokemonLuxio = PokemonSettings<"V0404_POKEMON_LUXIO">;
+export type PokemonSettingsV0404PokemonLuxioNormal = PokemonSettings<"V0404_POKEMON_LUXIO_NORMAL">;
+export type PokemonSettingsV0405PokemonLuxray = PokemonSettings<"V0405_POKEMON_LUXRAY">;
+export type PokemonSettingsV0405PokemonLuxrayNormal = PokemonSettings<"V0405_POKEMON_LUXRAY_NORMAL">;
+export type PokemonSettingsV0406PokemonBudew = PokemonSettings<"V0406_POKEMON_BUDEW">;
+export type PokemonSettingsV0406PokemonBudewNormal = PokemonSettings<"V0406_POKEMON_BUDEW_NORMAL">;
+export type PokemonSettingsV0407PokemonRoserade = PokemonSettings<"V0407_POKEMON_ROSERADE">;
+export type PokemonSettingsV0407PokemonRoseradeNormal = PokemonSettings<"V0407_POKEMON_ROSERADE_NORMAL">;
+export type PokemonSettingsV0408PokemonCranidos = PokemonSettings<"V0408_POKEMON_CRANIDOS">;
+export type PokemonSettingsV0408PokemonCranidosNormal = PokemonSettings<"V0408_POKEMON_CRANIDOS_NORMAL">;
+export type PokemonSettingsV0409PokemonRampardos = PokemonSettings<"V0409_POKEMON_RAMPARDOS">;
+export type PokemonSettingsV0409PokemonRampardosNormal = PokemonSettings<"V0409_POKEMON_RAMPARDOS_NORMAL">;
+export type PokemonSettingsV0410PokemonShieldon = PokemonSettings<"V0410_POKEMON_SHIELDON">;
+export type PokemonSettingsV0410PokemonShieldonNormal = PokemonSettings<"V0410_POKEMON_SHIELDON_NORMAL">;
+export type PokemonSettingsV0411PokemonBastiodon = PokemonSettings<"V0411_POKEMON_BASTIODON">;
+export type PokemonSettingsV0411PokemonBastiodonNormal = PokemonSettings<"V0411_POKEMON_BASTIODON_NORMAL">;
+export type PokemonSettingsV0412PokemonBurmy = PokemonSettings<"V0412_POKEMON_BURMY">;
+export type PokemonSettingsV0412PokemonBurmyPlant = PokemonSettings<"V0412_POKEMON_BURMY_PLANT">;
+export type PokemonSettingsV0412PokemonBurmySandy = PokemonSettings<"V0412_POKEMON_BURMY_SANDY">;
+export type PokemonSettingsV0412PokemonBurmyTrash = PokemonSettings<"V0412_POKEMON_BURMY_TRASH">;
+export type PokemonSettingsV0413PokemonWormadam = PokemonSettings<"V0413_POKEMON_WORMADAM">;
+export type PokemonSettingsV0413PokemonWormadamPlant = PokemonSettings<"V0413_POKEMON_WORMADAM_PLANT">;
+export type PokemonSettingsV0413PokemonWormadamSandy = PokemonSettings<"V0413_POKEMON_WORMADAM_SANDY">;
+export type PokemonSettingsV0413PokemonWormadamTrash = PokemonSettings<"V0413_POKEMON_WORMADAM_TRASH">;
+export type PokemonSettingsV0414PokemonMothim = PokemonSettings<"V0414_POKEMON_MOTHIM">;
+export type PokemonSettingsV0414PokemonMothimNormal = PokemonSettings<"V0414_POKEMON_MOTHIM_NORMAL">;
+export type PokemonSettingsV0415PokemonCombee = PokemonSettings<"V0415_POKEMON_COMBEE">;
+export type PokemonSettingsV0415PokemonCombeeNormal = PokemonSettings<"V0415_POKEMON_COMBEE_NORMAL">;
+export type PokemonSettingsV0416PokemonVespiquen = PokemonSettings<"V0416_POKEMON_VESPIQUEN">;
+export type PokemonSettingsV0416PokemonVespiquenNormal = PokemonSettings<"V0416_POKEMON_VESPIQUEN_NORMAL">;
+export type PokemonSettingsV0417PokemonPachirisu = PokemonSettings<"V0417_POKEMON_PACHIRISU">;
+export type PokemonSettingsV0417PokemonPachirisuNormal = PokemonSettings<"V0417_POKEMON_PACHIRISU_NORMAL">;
+export type PokemonSettingsV0418PokemonBuizel = PokemonSettings<"V0418_POKEMON_BUIZEL">;
+export type PokemonSettingsV0418PokemonBuizelNormal = PokemonSettings<"V0418_POKEMON_BUIZEL_NORMAL">;
+export type PokemonSettingsV0419PokemonFloatzel = PokemonSettings<"V0419_POKEMON_FLOATZEL">;
+export type PokemonSettingsV0419PokemonFloatzelNormal = PokemonSettings<"V0419_POKEMON_FLOATZEL_NORMAL">;
+export type PokemonSettingsV0420PokemonCherubi = PokemonSettings<"V0420_POKEMON_CHERUBI">;
+export type PokemonSettingsV0420PokemonCherubiNormal = PokemonSettings<"V0420_POKEMON_CHERUBI_NORMAL">;
+export type PokemonSettingsV0421PokemonCherrim = PokemonSettings<"V0421_POKEMON_CHERRIM">;
+export type PokemonSettingsV0421PokemonCherrimOvercast = PokemonSettings<"V0421_POKEMON_CHERRIM_OVERCAST">;
+export type PokemonSettingsV0421PokemonCherrimSunny = PokemonSettings<"V0421_POKEMON_CHERRIM_SUNNY">;
+export type PokemonSettingsV0422PokemonShellos = PokemonSettings<"V0422_POKEMON_SHELLOS">;
+export type PokemonSettingsV0422PokemonShellosEastSea = PokemonSettings<"V0422_POKEMON_SHELLOS_EAST_SEA">;
+export type PokemonSettingsV0422PokemonShellosWestSea = PokemonSettings<"V0422_POKEMON_SHELLOS_WEST_SEA">;
+export type PokemonSettingsV0423PokemonGastrodon = PokemonSettings<"V0423_POKEMON_GASTRODON">;
+export type PokemonSettingsV0423PokemonGastrodonEastSea = PokemonSettings<"V0423_POKEMON_GASTRODON_EAST_SEA">;
+export type PokemonSettingsV0423PokemonGastrodonWestSea = PokemonSettings<"V0423_POKEMON_GASTRODON_WEST_SEA">;
+export type PokemonSettingsV0424PokemonAmbipom = PokemonSettings<"V0424_POKEMON_AMBIPOM">;
+export type PokemonSettingsV0424PokemonAmbipomNormal = PokemonSettings<"V0424_POKEMON_AMBIPOM_NORMAL">;
+export type PokemonSettingsV0425PokemonDrifloon = PokemonSettings<"V0425_POKEMON_DRIFLOON">;
+export type PokemonSettingsV0425PokemonDrifloonNormal = PokemonSettings<"V0425_POKEMON_DRIFLOON_NORMAL">;
+export type PokemonSettingsV0426PokemonDrifblim = PokemonSettings<"V0426_POKEMON_DRIFBLIM">;
+export type PokemonSettingsV0426PokemonDrifblimNormal = PokemonSettings<"V0426_POKEMON_DRIFBLIM_NORMAL">;
+export type PokemonSettingsV0427PokemonBuneary = PokemonSettings<"V0427_POKEMON_BUNEARY">;
+export type PokemonSettingsV0427PokemonBunearyNormal = PokemonSettings<"V0427_POKEMON_BUNEARY_NORMAL">;
+export type PokemonSettingsV0428PokemonLopunny = PokemonSettings<"V0428_POKEMON_LOPUNNY">;
+export type PokemonSettingsV0428PokemonLopunnyNormal = PokemonSettings<"V0428_POKEMON_LOPUNNY_NORMAL">;
+export type PokemonSettingsV0429PokemonMismagius = PokemonSettings<"V0429_POKEMON_MISMAGIUS">;
+export type PokemonSettingsV0429PokemonMismagiusNormal = PokemonSettings<"V0429_POKEMON_MISMAGIUS_NORMAL">;
+export type PokemonSettingsV0430PokemonHonchkrow = PokemonSettings<"V0430_POKEMON_HONCHKROW">;
+export type PokemonSettingsV0430PokemonHonchkrowNormal = PokemonSettings<"V0430_POKEMON_HONCHKROW_NORMAL">;
+export type PokemonSettingsV0431PokemonGlameow = PokemonSettings<"V0431_POKEMON_GLAMEOW">;
+export type PokemonSettingsV0431PokemonGlameowNormal = PokemonSettings<"V0431_POKEMON_GLAMEOW_NORMAL">;
+export type PokemonSettingsV0432PokemonPurugly = PokemonSettings<"V0432_POKEMON_PURUGLY">;
+export type PokemonSettingsV0432PokemonPuruglyNormal = PokemonSettings<"V0432_POKEMON_PURUGLY_NORMAL">;
+export type PokemonSettingsV0433PokemonChingling = PokemonSettings<"V0433_POKEMON_CHINGLING">;
+export type PokemonSettingsV0433PokemonChinglingNormal = PokemonSettings<"V0433_POKEMON_CHINGLING_NORMAL">;
+export type PokemonSettingsV0434PokemonStunky = PokemonSettings<"V0434_POKEMON_STUNKY">;
+export type PokemonSettingsV0434PokemonStunkyNormal = PokemonSettings<"V0434_POKEMON_STUNKY_NORMAL">;
+export type PokemonSettingsV0435PokemonSkuntank = PokemonSettings<"V0435_POKEMON_SKUNTANK">;
+export type PokemonSettingsV0435PokemonSkuntankNormal = PokemonSettings<"V0435_POKEMON_SKUNTANK_NORMAL">;
+export type PokemonSettingsV0436PokemonBronzor = PokemonSettings<"V0436_POKEMON_BRONZOR">;
+export type PokemonSettingsV0436PokemonBronzorNormal = PokemonSettings<"V0436_POKEMON_BRONZOR_NORMAL">;
+export type PokemonSettingsV0437PokemonBronzong = PokemonSettings<"V0437_POKEMON_BRONZONG">;
+export type PokemonSettingsV0437PokemonBronzongNormal = PokemonSettings<"V0437_POKEMON_BRONZONG_NORMAL">;
+export type PokemonSettingsV0438PokemonBonsly = PokemonSettings<"V0438_POKEMON_BONSLY">;
+export type PokemonSettingsV0438PokemonBonslyNormal = PokemonSettings<"V0438_POKEMON_BONSLY_NORMAL">;
+export type PokemonSettingsV0439PokemonMimeJr = PokemonSettings<"V0439_POKEMON_MIME_JR">;
+export type PokemonSettingsV0439PokemonMimeJrNormal = PokemonSettings<"V0439_POKEMON_MIME_JR_NORMAL">;
+export type PokemonSettingsV0440PokemonHappiny = PokemonSettings<"V0440_POKEMON_HAPPINY">;
+export type PokemonSettingsV0440PokemonHappinyNormal = PokemonSettings<"V0440_POKEMON_HAPPINY_NORMAL">;
+export type PokemonSettingsV0441PokemonChatot = PokemonSettings<"V0441_POKEMON_CHATOT">;
+export type PokemonSettingsV0441PokemonChatotNormal = PokemonSettings<"V0441_POKEMON_CHATOT_NORMAL">;
+export type PokemonSettingsV0442PokemonSpiritomb = PokemonSettings<"V0442_POKEMON_SPIRITOMB">;
+export type PokemonSettingsV0442PokemonSpiritombNormal = PokemonSettings<"V0442_POKEMON_SPIRITOMB_NORMAL">;
+export type PokemonSettingsV0443PokemonGible = PokemonSettings<"V0443_POKEMON_GIBLE">;
+export type PokemonSettingsV0443PokemonGibleNormal = PokemonSettings<"V0443_POKEMON_GIBLE_NORMAL">;
+export type PokemonSettingsV0444PokemonGabite = PokemonSettings<"V0444_POKEMON_GABITE">;
+export type PokemonSettingsV0444PokemonGabiteNormal = PokemonSettings<"V0444_POKEMON_GABITE_NORMAL">;
+export type PokemonSettingsV0445PokemonGarchomp = PokemonSettings<"V0445_POKEMON_GARCHOMP">;
+export type PokemonSettingsV0445PokemonGarchompNormal = PokemonSettings<"V0445_POKEMON_GARCHOMP_NORMAL">;
+export type PokemonSettingsV0446PokemonMunchlax = PokemonSettings<"V0446_POKEMON_MUNCHLAX">;
+export type PokemonSettingsV0446PokemonMunchlaxNormal = PokemonSettings<"V0446_POKEMON_MUNCHLAX_NORMAL">;
+export type PokemonSettingsV0447PokemonRiolu = PokemonSettings<"V0447_POKEMON_RIOLU">;
+export type PokemonSettingsV0447PokemonRioluNormal = PokemonSettings<"V0447_POKEMON_RIOLU_NORMAL">;
+export type PokemonSettingsV0448PokemonLucario = PokemonSettings<"V0448_POKEMON_LUCARIO">;
+export type PokemonSettingsV0448PokemonLucarioNormal = PokemonSettings<"V0448_POKEMON_LUCARIO_NORMAL">;
+export type PokemonSettingsV0449PokemonHippopotas = PokemonSettings<"V0449_POKEMON_HIPPOPOTAS">;
+export type PokemonSettingsV0449PokemonHippopotasNormal = PokemonSettings<"V0449_POKEMON_HIPPOPOTAS_NORMAL">;
+export type PokemonSettingsV0450PokemonHippowdon = PokemonSettings<"V0450_POKEMON_HIPPOWDON">;
+export type PokemonSettingsV0450PokemonHippowdonNormal = PokemonSettings<"V0450_POKEMON_HIPPOWDON_NORMAL">;
+export type PokemonSettingsV0451PokemonSkorupi = PokemonSettings<"V0451_POKEMON_SKORUPI">;
+export type PokemonSettingsV0451PokemonSkorupiNormal = PokemonSettings<"V0451_POKEMON_SKORUPI_NORMAL">;
+export type PokemonSettingsV0452PokemonDrapion = PokemonSettings<"V0452_POKEMON_DRAPION">;
+export type PokemonSettingsV0452PokemonDrapionNormal = PokemonSettings<"V0452_POKEMON_DRAPION_NORMAL">;
+export type PokemonSettingsV0453PokemonCroagunk = PokemonSettings<"V0453_POKEMON_CROAGUNK">;
+export type PokemonSettingsV0453PokemonCroagunkNormal = PokemonSettings<"V0453_POKEMON_CROAGUNK_NORMAL">;
+export type PokemonSettingsV0454PokemonToxicroak = PokemonSettings<"V0454_POKEMON_TOXICROAK">;
+export type PokemonSettingsV0454PokemonToxicroakNormal = PokemonSettings<"V0454_POKEMON_TOXICROAK_NORMAL">;
+export type PokemonSettingsV0455PokemonCarnivine = PokemonSettings<"V0455_POKEMON_CARNIVINE">;
+export type PokemonSettingsV0455PokemonCarnivineNormal = PokemonSettings<"V0455_POKEMON_CARNIVINE_NORMAL">;
+export type PokemonSettingsV0456PokemonFinneon = PokemonSettings<"V0456_POKEMON_FINNEON">;
+export type PokemonSettingsV0456PokemonFinneonNormal = PokemonSettings<"V0456_POKEMON_FINNEON_NORMAL">;
+export type PokemonSettingsV0457PokemonLumineon = PokemonSettings<"V0457_POKEMON_LUMINEON">;
+export type PokemonSettingsV0457PokemonLumineonNormal = PokemonSettings<"V0457_POKEMON_LUMINEON_NORMAL">;
+export type PokemonSettingsV0458PokemonMantyke = PokemonSettings<"V0458_POKEMON_MANTYKE">;
+export type PokemonSettingsV0458PokemonMantykeNormal = PokemonSettings<"V0458_POKEMON_MANTYKE_NORMAL">;
+export type PokemonSettingsV0459PokemonSnover = PokemonSettings<"V0459_POKEMON_SNOVER">;
+export type PokemonSettingsV0459PokemonSnoverNormal = PokemonSettings<"V0459_POKEMON_SNOVER_NORMAL">;
+export type PokemonSettingsV0460PokemonAbomasnow = PokemonSettings<"V0460_POKEMON_ABOMASNOW">;
+export type PokemonSettingsV0460PokemonAbomasnowNormal = PokemonSettings<"V0460_POKEMON_ABOMASNOW_NORMAL">;
+export type PokemonSettingsV0461PokemonWeavile = PokemonSettings<"V0461_POKEMON_WEAVILE">;
+export type PokemonSettingsV0461PokemonWeavileNormal = PokemonSettings<"V0461_POKEMON_WEAVILE_NORMAL">;
+export type PokemonSettingsV0462PokemonMagnezone = PokemonSettings<"V0462_POKEMON_MAGNEZONE">;
+export type PokemonSettingsV0462PokemonMagnezoneNormal = PokemonSettings<"V0462_POKEMON_MAGNEZONE_NORMAL">;
+export type PokemonSettingsV0463PokemonLickilicky = PokemonSettings<"V0463_POKEMON_LICKILICKY">;
+export type PokemonSettingsV0463PokemonLickilickyNormal = PokemonSettings<"V0463_POKEMON_LICKILICKY_NORMAL">;
+export type PokemonSettingsV0464PokemonRhyperior = PokemonSettings<"V0464_POKEMON_RHYPERIOR">;
+export type PokemonSettingsV0464PokemonRhyperiorNormal = PokemonSettings<"V0464_POKEMON_RHYPERIOR_NORMAL">;
+export type PokemonSettingsV0465PokemonTangrowth = PokemonSettings<"V0465_POKEMON_TANGROWTH">;
+export type PokemonSettingsV0465PokemonTangrowthNormal = PokemonSettings<"V0465_POKEMON_TANGROWTH_NORMAL">;
+export type PokemonSettingsV0466PokemonElectivire = PokemonSettings<"V0466_POKEMON_ELECTIVIRE">;
+export type PokemonSettingsV0466PokemonElectivireNormal = PokemonSettings<"V0466_POKEMON_ELECTIVIRE_NORMAL">;
+export type PokemonSettingsV0467PokemonMagmortar = PokemonSettings<"V0467_POKEMON_MAGMORTAR">;
+export type PokemonSettingsV0467PokemonMagmortarNormal = PokemonSettings<"V0467_POKEMON_MAGMORTAR_NORMAL">;
+export type PokemonSettingsV0468PokemonTogekiss = PokemonSettings<"V0468_POKEMON_TOGEKISS">;
+export type PokemonSettingsV0468PokemonTogekissNormal = PokemonSettings<"V0468_POKEMON_TOGEKISS_NORMAL">;
+export type PokemonSettingsV0469PokemonYanmega = PokemonSettings<"V0469_POKEMON_YANMEGA">;
+export type PokemonSettingsV0469PokemonYanmegaNormal = PokemonSettings<"V0469_POKEMON_YANMEGA_NORMAL">;
+export type PokemonSettingsV0470PokemonLeafeon = PokemonSettings<"V0470_POKEMON_LEAFEON">;
+export type PokemonSettingsV0470PokemonLeafeonNormal = PokemonSettings<"V0470_POKEMON_LEAFEON_NORMAL">;
+export type PokemonSettingsV0471PokemonGlaceon = PokemonSettings<"V0471_POKEMON_GLACEON">;
+export type PokemonSettingsV0471PokemonGlaceonNormal = PokemonSettings<"V0471_POKEMON_GLACEON_NORMAL">;
+export type PokemonSettingsV0472PokemonGliscor = PokemonSettings<"V0472_POKEMON_GLISCOR">;
+export type PokemonSettingsV0472PokemonGliscorNormal = PokemonSettings<"V0472_POKEMON_GLISCOR_NORMAL">;
+export type PokemonSettingsV0473PokemonMamoswine = PokemonSettings<"V0473_POKEMON_MAMOSWINE">;
+export type PokemonSettingsV0473PokemonMamoswineNormal = PokemonSettings<"V0473_POKEMON_MAMOSWINE_NORMAL">;
+export type PokemonSettingsV0474PokemonPorygonZ = PokemonSettings<"V0474_POKEMON_PORYGON_Z">;
+export type PokemonSettingsV0474PokemonPorygonZNormal = PokemonSettings<"V0474_POKEMON_PORYGON_Z_NORMAL">;
+export type PokemonSettingsV0475PokemonGallade = PokemonSettings<"V0475_POKEMON_GALLADE">;
+export type PokemonSettingsV0475PokemonGalladeNormal = PokemonSettings<"V0475_POKEMON_GALLADE_NORMAL">;
+export type PokemonSettingsV0476PokemonProbopass = PokemonSettings<"V0476_POKEMON_PROBOPASS">;
+export type PokemonSettingsV0476PokemonProbopassNormal = PokemonSettings<"V0476_POKEMON_PROBOPASS_NORMAL">;
+export type PokemonSettingsV0477PokemonDusknoir = PokemonSettings<"V0477_POKEMON_DUSKNOIR">;
+export type PokemonSettingsV0477PokemonDusknoirNormal = PokemonSettings<"V0477_POKEMON_DUSKNOIR_NORMAL">;
+export type PokemonSettingsV0478PokemonFroslass = PokemonSettings<"V0478_POKEMON_FROSLASS">;
+export type PokemonSettingsV0478PokemonFroslassNormal = PokemonSettings<"V0478_POKEMON_FROSLASS_NORMAL">;
+export type PokemonSettingsV0479PokemonRotom = PokemonSettings<"V0479_POKEMON_ROTOM">;
+export type PokemonSettingsV0479PokemonRotomFan = PokemonSettings<"V0479_POKEMON_ROTOM_FAN">;
+export type PokemonSettingsV0479PokemonRotomFrost = PokemonSettings<"V0479_POKEMON_ROTOM_FROST">;
+export type PokemonSettingsV0479PokemonRotomHeat = PokemonSettings<"V0479_POKEMON_ROTOM_HEAT">;
+export type PokemonSettingsV0479PokemonRotomMow = PokemonSettings<"V0479_POKEMON_ROTOM_MOW">;
+export type PokemonSettingsV0479PokemonRotomNormal = PokemonSettings<"V0479_POKEMON_ROTOM_NORMAL">;
+export type PokemonSettingsV0479PokemonRotomWash = PokemonSettings<"V0479_POKEMON_ROTOM_WASH">;
+export type PokemonSettingsV0480PokemonUxie = PokemonSettings<"V0480_POKEMON_UXIE">;
+export type PokemonSettingsV0480PokemonUxieNormal = PokemonSettings<"V0480_POKEMON_UXIE_NORMAL">;
+export type PokemonSettingsV0481PokemonMesprit = PokemonSettings<"V0481_POKEMON_MESPRIT">;
+export type PokemonSettingsV0481PokemonMespritNormal = PokemonSettings<"V0481_POKEMON_MESPRIT_NORMAL">;
+export type PokemonSettingsV0482PokemonAzelf = PokemonSettings<"V0482_POKEMON_AZELF">;
+export type PokemonSettingsV0482PokemonAzelfNormal = PokemonSettings<"V0482_POKEMON_AZELF_NORMAL">;
+export type PokemonSettingsV0483PokemonDialga = PokemonSettings<"V0483_POKEMON_DIALGA">;
+export type PokemonSettingsV0483PokemonDialgaNormal = PokemonSettings<"V0483_POKEMON_DIALGA_NORMAL">;
+export type PokemonSettingsV0483PokemonDialgaOrigin = PokemonSettings<"V0483_POKEMON_DIALGA_ORIGIN">;
+export type PokemonSettingsV0484PokemonPalkia = PokemonSettings<"V0484_POKEMON_PALKIA">;
+export type PokemonSettingsV0484PokemonPalkiaNormal = PokemonSettings<"V0484_POKEMON_PALKIA_NORMAL">;
+export type PokemonSettingsV0484PokemonPalkiaOrigin = PokemonSettings<"V0484_POKEMON_PALKIA_ORIGIN">;
+export type PokemonSettingsV0485PokemonHeatran = PokemonSettings<"V0485_POKEMON_HEATRAN">;
+export type PokemonSettingsV0485PokemonHeatranNormal = PokemonSettings<"V0485_POKEMON_HEATRAN_NORMAL">;
+export type PokemonSettingsV0486PokemonRegigigas = PokemonSettings<"V0486_POKEMON_REGIGIGAS">;
+export type PokemonSettingsV0486PokemonRegigigasNormal = PokemonSettings<"V0486_POKEMON_REGIGIGAS_NORMAL">;
+export type PokemonSettingsV0487PokemonGiratina = PokemonSettings<"V0487_POKEMON_GIRATINA">;
+export type PokemonSettingsV0487PokemonGiratinaAltered = PokemonSettings<"V0487_POKEMON_GIRATINA_ALTERED">;
+export type PokemonSettingsV0487PokemonGiratinaOrigin = PokemonSettings<"V0487_POKEMON_GIRATINA_ORIGIN">;
+export type PokemonSettingsV0488PokemonCresselia = PokemonSettings<"V0488_POKEMON_CRESSELIA">;
+export type PokemonSettingsV0488PokemonCresseliaNormal = PokemonSettings<"V0488_POKEMON_CRESSELIA_NORMAL">;
+export type PokemonSettingsV0489PokemonPhione = PokemonSettings<"V0489_POKEMON_PHIONE">;
+export type PokemonSettingsV0489PokemonPhioneNormal = PokemonSettings<"V0489_POKEMON_PHIONE_NORMAL">;
+export type PokemonSettingsV0490PokemonManaphy = PokemonSettings<"V0490_POKEMON_MANAPHY">;
+export type PokemonSettingsV0490PokemonManaphyNormal = PokemonSettings<"V0490_POKEMON_MANAPHY_NORMAL">;
+export type PokemonSettingsV0491PokemonDarkrai = PokemonSettings<"V0491_POKEMON_DARKRAI">;
+export type PokemonSettingsV0491PokemonDarkraiNormal = PokemonSettings<"V0491_POKEMON_DARKRAI_NORMAL">;
+export type PokemonSettingsV0492PokemonShaymin = PokemonSettings<"V0492_POKEMON_SHAYMIN">;
+export type PokemonSettingsV0492PokemonShayminLand = PokemonSettings<"V0492_POKEMON_SHAYMIN_LAND">;
+export type PokemonSettingsV0492PokemonShayminSky = PokemonSettings<"V0492_POKEMON_SHAYMIN_SKY">;
+export type PokemonSettingsV0493PokemonArceus = PokemonSettings<"V0493_POKEMON_ARCEUS">;
+export type PokemonSettingsV0493PokemonArceusBug = PokemonSettings<"V0493_POKEMON_ARCEUS_BUG">;
+export type PokemonSettingsV0493PokemonArceusDark = PokemonSettings<"V0493_POKEMON_ARCEUS_DARK">;
+export type PokemonSettingsV0493PokemonArceusDragon = PokemonSettings<"V0493_POKEMON_ARCEUS_DRAGON">;
+export type PokemonSettingsV0493PokemonArceusElectric = PokemonSettings<"V0493_POKEMON_ARCEUS_ELECTRIC">;
+export type PokemonSettingsV0493PokemonArceusFairy = PokemonSettings<"V0493_POKEMON_ARCEUS_FAIRY">;
+export type PokemonSettingsV0493PokemonArceusFighting = PokemonSettings<"V0493_POKEMON_ARCEUS_FIGHTING">;
+export type PokemonSettingsV0493PokemonArceusFire = PokemonSettings<"V0493_POKEMON_ARCEUS_FIRE">;
+export type PokemonSettingsV0493PokemonArceusFlying = PokemonSettings<"V0493_POKEMON_ARCEUS_FLYING">;
+export type PokemonSettingsV0493PokemonArceusGhost = PokemonSettings<"V0493_POKEMON_ARCEUS_GHOST">;
+export type PokemonSettingsV0493PokemonArceusGrass = PokemonSettings<"V0493_POKEMON_ARCEUS_GRASS">;
+export type PokemonSettingsV0493PokemonArceusGround = PokemonSettings<"V0493_POKEMON_ARCEUS_GROUND">;
+export type PokemonSettingsV0493PokemonArceusIce = PokemonSettings<"V0493_POKEMON_ARCEUS_ICE">;
+export type PokemonSettingsV0493PokemonArceusNormal = PokemonSettings<"V0493_POKEMON_ARCEUS_NORMAL">;
+export type PokemonSettingsV0493PokemonArceusPoison = PokemonSettings<"V0493_POKEMON_ARCEUS_POISON">;
+export type PokemonSettingsV0493PokemonArceusPsychic = PokemonSettings<"V0493_POKEMON_ARCEUS_PSYCHIC">;
+export type PokemonSettingsV0493PokemonArceusRock = PokemonSettings<"V0493_POKEMON_ARCEUS_ROCK">;
+export type PokemonSettingsV0493PokemonArceusSteel = PokemonSettings<"V0493_POKEMON_ARCEUS_STEEL">;
+export type PokemonSettingsV0493PokemonArceusWater = PokemonSettings<"V0493_POKEMON_ARCEUS_WATER">;
+export type PokemonSettingsV0494PokemonVictini = PokemonSettings<"V0494_POKEMON_VICTINI">;
+export type PokemonSettingsV0494PokemonVictiniNormal = PokemonSettings<"V0494_POKEMON_VICTINI_NORMAL">;
+export type PokemonSettingsV0495PokemonSnivy = PokemonSettings<"V0495_POKEMON_SNIVY">;
+export type PokemonSettingsV0495PokemonSnivyNormal = PokemonSettings<"V0495_POKEMON_SNIVY_NORMAL">;
+export type PokemonSettingsV0496PokemonServine = PokemonSettings<"V0496_POKEMON_SERVINE">;
+export type PokemonSettingsV0496PokemonServineNormal = PokemonSettings<"V0496_POKEMON_SERVINE_NORMAL">;
+export type PokemonSettingsV0497PokemonSerperior = PokemonSettings<"V0497_POKEMON_SERPERIOR">;
+export type PokemonSettingsV0497PokemonSerperiorNormal = PokemonSettings<"V0497_POKEMON_SERPERIOR_NORMAL">;
+export type PokemonSettingsV0498PokemonTepig = PokemonSettings<"V0498_POKEMON_TEPIG">;
+export type PokemonSettingsV0498PokemonTepigNormal = PokemonSettings<"V0498_POKEMON_TEPIG_NORMAL">;
+export type PokemonSettingsV0499PokemonPignite = PokemonSettings<"V0499_POKEMON_PIGNITE">;
+export type PokemonSettingsV0499PokemonPigniteNormal = PokemonSettings<"V0499_POKEMON_PIGNITE_NORMAL">;
+export type PokemonSettingsV0500PokemonEmboar = PokemonSettings<"V0500_POKEMON_EMBOAR">;
+export type PokemonSettingsV0500PokemonEmboarNormal = PokemonSettings<"V0500_POKEMON_EMBOAR_NORMAL">;
+export type PokemonSettingsV0501PokemonOshawott = PokemonSettings<"V0501_POKEMON_OSHAWOTT">;
+export type PokemonSettingsV0501PokemonOshawottNormal = PokemonSettings<"V0501_POKEMON_OSHAWOTT_NORMAL">;
+export type PokemonSettingsV0502PokemonDewott = PokemonSettings<"V0502_POKEMON_DEWOTT">;
+export type PokemonSettingsV0502PokemonDewottNormal = PokemonSettings<"V0502_POKEMON_DEWOTT_NORMAL">;
+export type PokemonSettingsV0503PokemonSamurott = PokemonSettings<"V0503_POKEMON_SAMUROTT">;
+export type PokemonSettingsV0503PokemonSamurottHisuian = PokemonSettings<"V0503_POKEMON_SAMUROTT_HISUIAN">;
+export type PokemonSettingsV0503PokemonSamurottNormal = PokemonSettings<"V0503_POKEMON_SAMUROTT_NORMAL">;
+export type PokemonSettingsV0504PokemonPatrat = PokemonSettings<"V0504_POKEMON_PATRAT">;
+export type PokemonSettingsV0504PokemonPatratNormal = PokemonSettings<"V0504_POKEMON_PATRAT_NORMAL">;
+export type PokemonSettingsV0505PokemonWatchog = PokemonSettings<"V0505_POKEMON_WATCHOG">;
+export type PokemonSettingsV0505PokemonWatchogNormal = PokemonSettings<"V0505_POKEMON_WATCHOG_NORMAL">;
+export type PokemonSettingsV0506PokemonLillipup = PokemonSettings<"V0506_POKEMON_LILLIPUP">;
+export type PokemonSettingsV0506PokemonLillipupNormal = PokemonSettings<"V0506_POKEMON_LILLIPUP_NORMAL">;
+export type PokemonSettingsV0507PokemonHerdier = PokemonSettings<"V0507_POKEMON_HERDIER">;
+export type PokemonSettingsV0507PokemonHerdierNormal = PokemonSettings<"V0507_POKEMON_HERDIER_NORMAL">;
+export type PokemonSettingsV0508PokemonStoutland = PokemonSettings<"V0508_POKEMON_STOUTLAND">;
+export type PokemonSettingsV0508PokemonStoutlandNormal = PokemonSettings<"V0508_POKEMON_STOUTLAND_NORMAL">;
+export type PokemonSettingsV0509PokemonPurrloin = PokemonSettings<"V0509_POKEMON_PURRLOIN">;
+export type PokemonSettingsV0509PokemonPurrloinNormal = PokemonSettings<"V0509_POKEMON_PURRLOIN_NORMAL">;
+export type PokemonSettingsV0510PokemonLiepard = PokemonSettings<"V0510_POKEMON_LIEPARD">;
+export type PokemonSettingsV0510PokemonLiepardNormal = PokemonSettings<"V0510_POKEMON_LIEPARD_NORMAL">;
+export type PokemonSettingsV0511PokemonPansage = PokemonSettings<"V0511_POKEMON_PANSAGE">;
+export type PokemonSettingsV0511PokemonPansageNormal = PokemonSettings<"V0511_POKEMON_PANSAGE_NORMAL">;
+export type PokemonSettingsV0512PokemonSimisage = PokemonSettings<"V0512_POKEMON_SIMISAGE">;
+export type PokemonSettingsV0512PokemonSimisageNormal = PokemonSettings<"V0512_POKEMON_SIMISAGE_NORMAL">;
+export type PokemonSettingsV0513PokemonPansear = PokemonSettings<"V0513_POKEMON_PANSEAR">;
+export type PokemonSettingsV0513PokemonPansearNormal = PokemonSettings<"V0513_POKEMON_PANSEAR_NORMAL">;
+export type PokemonSettingsV0514PokemonSimisear = PokemonSettings<"V0514_POKEMON_SIMISEAR">;
+export type PokemonSettingsV0514PokemonSimisearNormal = PokemonSettings<"V0514_POKEMON_SIMISEAR_NORMAL">;
+export type PokemonSettingsV0515PokemonPanpour = PokemonSettings<"V0515_POKEMON_PANPOUR">;
+export type PokemonSettingsV0515PokemonPanpourNormal = PokemonSettings<"V0515_POKEMON_PANPOUR_NORMAL">;
+export type PokemonSettingsV0516PokemonSimipour = PokemonSettings<"V0516_POKEMON_SIMIPOUR">;
+export type PokemonSettingsV0516PokemonSimipourNormal = PokemonSettings<"V0516_POKEMON_SIMIPOUR_NORMAL">;
+export type PokemonSettingsV0517PokemonMunna = PokemonSettings<"V0517_POKEMON_MUNNA">;
+export type PokemonSettingsV0517PokemonMunnaNormal = PokemonSettings<"V0517_POKEMON_MUNNA_NORMAL">;
+export type PokemonSettingsV0518PokemonMusharna = PokemonSettings<"V0518_POKEMON_MUSHARNA">;
+export type PokemonSettingsV0518PokemonMusharnaNormal = PokemonSettings<"V0518_POKEMON_MUSHARNA_NORMAL">;
+export type PokemonSettingsV0519PokemonPidove = PokemonSettings<"V0519_POKEMON_PIDOVE">;
+export type PokemonSettingsV0519PokemonPidoveNormal = PokemonSettings<"V0519_POKEMON_PIDOVE_NORMAL">;
+export type PokemonSettingsV0520PokemonTranquill = PokemonSettings<"V0520_POKEMON_TRANQUILL">;
+export type PokemonSettingsV0520PokemonTranquillNormal = PokemonSettings<"V0520_POKEMON_TRANQUILL_NORMAL">;
+export type PokemonSettingsV0521PokemonUnfezant = PokemonSettings<"V0521_POKEMON_UNFEZANT">;
+export type PokemonSettingsV0521PokemonUnfezantNormal = PokemonSettings<"V0521_POKEMON_UNFEZANT_NORMAL">;
+export type PokemonSettingsV0522PokemonBlitzle = PokemonSettings<"V0522_POKEMON_BLITZLE">;
+export type PokemonSettingsV0522PokemonBlitzleNormal = PokemonSettings<"V0522_POKEMON_BLITZLE_NORMAL">;
+export type PokemonSettingsV0523PokemonZebstrika = PokemonSettings<"V0523_POKEMON_ZEBSTRIKA">;
+export type PokemonSettingsV0523PokemonZebstrikaNormal = PokemonSettings<"V0523_POKEMON_ZEBSTRIKA_NORMAL">;
+export type PokemonSettingsV0524PokemonRoggenrola = PokemonSettings<"V0524_POKEMON_ROGGENROLA">;
+export type PokemonSettingsV0524PokemonRoggenrolaNormal = PokemonSettings<"V0524_POKEMON_ROGGENROLA_NORMAL">;
+export type PokemonSettingsV0525PokemonBoldore = PokemonSettings<"V0525_POKEMON_BOLDORE">;
+export type PokemonSettingsV0525PokemonBoldoreNormal = PokemonSettings<"V0525_POKEMON_BOLDORE_NORMAL">;
+export type PokemonSettingsV0526PokemonGigalith = PokemonSettings<"V0526_POKEMON_GIGALITH">;
+export type PokemonSettingsV0526PokemonGigalithNormal = PokemonSettings<"V0526_POKEMON_GIGALITH_NORMAL">;
+export type PokemonSettingsV0527PokemonWoobat = PokemonSettings<"V0527_POKEMON_WOOBAT">;
+export type PokemonSettingsV0527PokemonWoobatNormal = PokemonSettings<"V0527_POKEMON_WOOBAT_NORMAL">;
+export type PokemonSettingsV0528PokemonSwoobat = PokemonSettings<"V0528_POKEMON_SWOOBAT">;
+export type PokemonSettingsV0528PokemonSwoobatNormal = PokemonSettings<"V0528_POKEMON_SWOOBAT_NORMAL">;
+export type PokemonSettingsV0529PokemonDrilbur = PokemonSettings<"V0529_POKEMON_DRILBUR">;
+export type PokemonSettingsV0529PokemonDrilburNormal = PokemonSettings<"V0529_POKEMON_DRILBUR_NORMAL">;
+export type PokemonSettingsV0530PokemonExcadrill = PokemonSettings<"V0530_POKEMON_EXCADRILL">;
+export type PokemonSettingsV0530PokemonExcadrillNormal = PokemonSettings<"V0530_POKEMON_EXCADRILL_NORMAL">;
+export type PokemonSettingsV0531PokemonAudino = PokemonSettings<"V0531_POKEMON_AUDINO">;
+export type PokemonSettingsV0531PokemonAudinoNormal = PokemonSettings<"V0531_POKEMON_AUDINO_NORMAL">;
+export type PokemonSettingsV0532PokemonTimburr = PokemonSettings<"V0532_POKEMON_TIMBURR">;
+export type PokemonSettingsV0532PokemonTimburrNormal = PokemonSettings<"V0532_POKEMON_TIMBURR_NORMAL">;
+export type PokemonSettingsV0533PokemonGurdurr = PokemonSettings<"V0533_POKEMON_GURDURR">;
+export type PokemonSettingsV0533PokemonGurdurrNormal = PokemonSettings<"V0533_POKEMON_GURDURR_NORMAL">;
+export type PokemonSettingsV0534PokemonConkeldurr = PokemonSettings<"V0534_POKEMON_CONKELDURR">;
+export type PokemonSettingsV0534PokemonConkeldurrNormal = PokemonSettings<"V0534_POKEMON_CONKELDURR_NORMAL">;
+export type PokemonSettingsV0535PokemonTympole = PokemonSettings<"V0535_POKEMON_TYMPOLE">;
+export type PokemonSettingsV0535PokemonTympoleNormal = PokemonSettings<"V0535_POKEMON_TYMPOLE_NORMAL">;
+export type PokemonSettingsV0536PokemonPalpitoad = PokemonSettings<"V0536_POKEMON_PALPITOAD">;
+export type PokemonSettingsV0536PokemonPalpitoadNormal = PokemonSettings<"V0536_POKEMON_PALPITOAD_NORMAL">;
+export type PokemonSettingsV0537PokemonSeismitoad = PokemonSettings<"V0537_POKEMON_SEISMITOAD">;
+export type PokemonSettingsV0537PokemonSeismitoadNormal = PokemonSettings<"V0537_POKEMON_SEISMITOAD_NORMAL">;
+export type PokemonSettingsV0538PokemonThroh = PokemonSettings<"V0538_POKEMON_THROH">;
+export type PokemonSettingsV0538PokemonThrohNormal = PokemonSettings<"V0538_POKEMON_THROH_NORMAL">;
+export type PokemonSettingsV0539PokemonSawk = PokemonSettings<"V0539_POKEMON_SAWK">;
+export type PokemonSettingsV0539PokemonSawkNormal = PokemonSettings<"V0539_POKEMON_SAWK_NORMAL">;
+export type PokemonSettingsV0540PokemonSewaddle = PokemonSettings<"V0540_POKEMON_SEWADDLE">;
+export type PokemonSettingsV0540PokemonSewaddleNormal = PokemonSettings<"V0540_POKEMON_SEWADDLE_NORMAL">;
+export type PokemonSettingsV0541PokemonSwadloon = PokemonSettings<"V0541_POKEMON_SWADLOON">;
+export type PokemonSettingsV0541PokemonSwadloonNormal = PokemonSettings<"V0541_POKEMON_SWADLOON_NORMAL">;
+export type PokemonSettingsV0542PokemonLeavanny = PokemonSettings<"V0542_POKEMON_LEAVANNY">;
+export type PokemonSettingsV0542PokemonLeavannyNormal = PokemonSettings<"V0542_POKEMON_LEAVANNY_NORMAL">;
+export type PokemonSettingsV0543PokemonVenipede = PokemonSettings<"V0543_POKEMON_VENIPEDE">;
+export type PokemonSettingsV0543PokemonVenipedeNormal = PokemonSettings<"V0543_POKEMON_VENIPEDE_NORMAL">;
+export type PokemonSettingsV0544PokemonWhirlipede = PokemonSettings<"V0544_POKEMON_WHIRLIPEDE">;
+export type PokemonSettingsV0544PokemonWhirlipedeNormal = PokemonSettings<"V0544_POKEMON_WHIRLIPEDE_NORMAL">;
+export type PokemonSettingsV0545PokemonScolipede = PokemonSettings<"V0545_POKEMON_SCOLIPEDE">;
+export type PokemonSettingsV0545PokemonScolipedeNormal = PokemonSettings<"V0545_POKEMON_SCOLIPEDE_NORMAL">;
+export type PokemonSettingsV0546PokemonCottonee = PokemonSettings<"V0546_POKEMON_COTTONEE">;
+export type PokemonSettingsV0546PokemonCottoneeNormal = PokemonSettings<"V0546_POKEMON_COTTONEE_NORMAL">;
+export type PokemonSettingsV0547PokemonWhimsicott = PokemonSettings<"V0547_POKEMON_WHIMSICOTT">;
+export type PokemonSettingsV0547PokemonWhimsicottNormal = PokemonSettings<"V0547_POKEMON_WHIMSICOTT_NORMAL">;
+export type PokemonSettingsV0548PokemonPetilil = PokemonSettings<"V0548_POKEMON_PETILIL">;
+export type PokemonSettingsV0548PokemonPetililNormal = PokemonSettings<"V0548_POKEMON_PETILIL_NORMAL">;
+export type PokemonSettingsV0549PokemonLilligant = PokemonSettings<"V0549_POKEMON_LILLIGANT">;
+export type PokemonSettingsV0549PokemonLilligantHisuian = PokemonSettings<"V0549_POKEMON_LILLIGANT_HISUIAN">;
+export type PokemonSettingsV0549PokemonLilligantNormal = PokemonSettings<"V0549_POKEMON_LILLIGANT_NORMAL">;
+export type PokemonSettingsV0550PokemonBasculin = PokemonSettings<"V0550_POKEMON_BASCULIN">;
+export type PokemonSettingsV0550PokemonBasculinBlueStriped = PokemonSettings<"V0550_POKEMON_BASCULIN_BLUE_STRIPED">;
+export type PokemonSettingsV0550PokemonBasculinRedStriped = PokemonSettings<"V0550_POKEMON_BASCULIN_RED_STRIPED">;
+export type PokemonSettingsV0550PokemonBasculinWhiteStriped = PokemonSettings<"V0550_POKEMON_BASCULIN_WHITE_STRIPED">;
+export type PokemonSettingsV0551PokemonSandile = PokemonSettings<"V0551_POKEMON_SANDILE">;
+export type PokemonSettingsV0551PokemonSandileNormal = PokemonSettings<"V0551_POKEMON_SANDILE_NORMAL">;
+export type PokemonSettingsV0552PokemonKrokorok = PokemonSettings<"V0552_POKEMON_KROKOROK">;
+export type PokemonSettingsV0552PokemonKrokorokNormal = PokemonSettings<"V0552_POKEMON_KROKOROK_NORMAL">;
+export type PokemonSettingsV0553PokemonKrookodile = PokemonSettings<"V0553_POKEMON_KROOKODILE">;
+export type PokemonSettingsV0553PokemonKrookodileNormal = PokemonSettings<"V0553_POKEMON_KROOKODILE_NORMAL">;
+export type PokemonSettingsV0554PokemonDarumaka = PokemonSettings<"V0554_POKEMON_DARUMAKA">;
+export type PokemonSettingsV0554PokemonDarumakaGalarian = PokemonSettings<"V0554_POKEMON_DARUMAKA_GALARIAN">;
+export type PokemonSettingsV0554PokemonDarumakaNormal = PokemonSettings<"V0554_POKEMON_DARUMAKA_NORMAL">;
+export type PokemonSettingsV0555PokemonDarmanitan = PokemonSettings<"V0555_POKEMON_DARMANITAN">;
+export type PokemonSettingsV0555PokemonDarmanitanGalarianStandard = PokemonSettings<"V0555_POKEMON_DARMANITAN_GALARIAN_STANDARD">;
+export type PokemonSettingsV0555PokemonDarmanitanGalarianZen = PokemonSettings<"V0555_POKEMON_DARMANITAN_GALARIAN_ZEN">;
+export type PokemonSettingsV0555PokemonDarmanitanStandard = PokemonSettings<"V0555_POKEMON_DARMANITAN_STANDARD">;
+export type PokemonSettingsV0555PokemonDarmanitanZen = PokemonSettings<"V0555_POKEMON_DARMANITAN_ZEN">;
+export type PokemonSettingsV0556PokemonMaractus = PokemonSettings<"V0556_POKEMON_MARACTUS">;
+export type PokemonSettingsV0556PokemonMaractusNormal = PokemonSettings<"V0556_POKEMON_MARACTUS_NORMAL">;
+export type PokemonSettingsV0557PokemonDwebble = PokemonSettings<"V0557_POKEMON_DWEBBLE">;
+export type PokemonSettingsV0557PokemonDwebbleNormal = PokemonSettings<"V0557_POKEMON_DWEBBLE_NORMAL">;
+export type PokemonSettingsV0558PokemonCrustle = PokemonSettings<"V0558_POKEMON_CRUSTLE">;
+export type PokemonSettingsV0558PokemonCrustleNormal = PokemonSettings<"V0558_POKEMON_CRUSTLE_NORMAL">;
+export type PokemonSettingsV0559PokemonScraggy = PokemonSettings<"V0559_POKEMON_SCRAGGY">;
+export type PokemonSettingsV0559PokemonScraggyNormal = PokemonSettings<"V0559_POKEMON_SCRAGGY_NORMAL">;
+export type PokemonSettingsV0560PokemonScrafty = PokemonSettings<"V0560_POKEMON_SCRAFTY">;
+export type PokemonSettingsV0560PokemonScraftyNormal = PokemonSettings<"V0560_POKEMON_SCRAFTY_NORMAL">;
+export type PokemonSettingsV0561PokemonSigilyph = PokemonSettings<"V0561_POKEMON_SIGILYPH">;
+export type PokemonSettingsV0561PokemonSigilyphNormal = PokemonSettings<"V0561_POKEMON_SIGILYPH_NORMAL">;
+export type PokemonSettingsV0562PokemonYamask = PokemonSettings<"V0562_POKEMON_YAMASK">;
+export type PokemonSettingsV0562PokemonYamaskGalarian = PokemonSettings<"V0562_POKEMON_YAMASK_GALARIAN">;
+export type PokemonSettingsV0562PokemonYamaskNormal = PokemonSettings<"V0562_POKEMON_YAMASK_NORMAL">;
+export type PokemonSettingsV0563PokemonCofagrigus = PokemonSettings<"V0563_POKEMON_COFAGRIGUS">;
+export type PokemonSettingsV0563PokemonCofagrigusNormal = PokemonSettings<"V0563_POKEMON_COFAGRIGUS_NORMAL">;
+export type PokemonSettingsV0564PokemonTirtouga = PokemonSettings<"V0564_POKEMON_TIRTOUGA">;
+export type PokemonSettingsV0564PokemonTirtougaNormal = PokemonSettings<"V0564_POKEMON_TIRTOUGA_NORMAL">;
+export type PokemonSettingsV0565PokemonCarracosta = PokemonSettings<"V0565_POKEMON_CARRACOSTA">;
+export type PokemonSettingsV0565PokemonCarracostaNormal = PokemonSettings<"V0565_POKEMON_CARRACOSTA_NORMAL">;
+export type PokemonSettingsV0566PokemonArchen = PokemonSettings<"V0566_POKEMON_ARCHEN">;
+export type PokemonSettingsV0566PokemonArchenNormal = PokemonSettings<"V0566_POKEMON_ARCHEN_NORMAL">;
+export type PokemonSettingsV0567PokemonArcheops = PokemonSettings<"V0567_POKEMON_ARCHEOPS">;
+export type PokemonSettingsV0567PokemonArcheopsNormal = PokemonSettings<"V0567_POKEMON_ARCHEOPS_NORMAL">;
+export type PokemonSettingsV0568PokemonTrubbish = PokemonSettings<"V0568_POKEMON_TRUBBISH">;
+export type PokemonSettingsV0568PokemonTrubbishNormal = PokemonSettings<"V0568_POKEMON_TRUBBISH_NORMAL">;
+export type PokemonSettingsV0569PokemonGarbodor = PokemonSettings<"V0569_POKEMON_GARBODOR">;
+export type PokemonSettingsV0569PokemonGarbodorNormal = PokemonSettings<"V0569_POKEMON_GARBODOR_NORMAL">;
+export type PokemonSettingsV0570PokemonZorua = PokemonSettings<"V0570_POKEMON_ZORUA">;
+export type PokemonSettingsV0570PokemonZoruaHisuian = PokemonSettings<"V0570_POKEMON_ZORUA_HISUIAN">;
+export type PokemonSettingsV0570PokemonZoruaNormal = PokemonSettings<"V0570_POKEMON_ZORUA_NORMAL">;
+export type PokemonSettingsV0571PokemonZoroark = PokemonSettings<"V0571_POKEMON_ZOROARK">;
+export type PokemonSettingsV0571PokemonZoroarkHisuian = PokemonSettings<"V0571_POKEMON_ZOROARK_HISUIAN">;
+export type PokemonSettingsV0571PokemonZoroarkNormal = PokemonSettings<"V0571_POKEMON_ZOROARK_NORMAL">;
+export type PokemonSettingsV0572PokemonMinccino = PokemonSettings<"V0572_POKEMON_MINCCINO">;
+export type PokemonSettingsV0572PokemonMinccinoNormal = PokemonSettings<"V0572_POKEMON_MINCCINO_NORMAL">;
+export type PokemonSettingsV0573PokemonCinccino = PokemonSettings<"V0573_POKEMON_CINCCINO">;
+export type PokemonSettingsV0573PokemonCinccinoNormal = PokemonSettings<"V0573_POKEMON_CINCCINO_NORMAL">;
+export type PokemonSettingsV0574PokemonGothita = PokemonSettings<"V0574_POKEMON_GOTHITA">;
+export type PokemonSettingsV0574PokemonGothitaNormal = PokemonSettings<"V0574_POKEMON_GOTHITA_NORMAL">;
+export type PokemonSettingsV0575PokemonGothorita = PokemonSettings<"V0575_POKEMON_GOTHORITA">;
+export type PokemonSettingsV0575PokemonGothoritaNormal = PokemonSettings<"V0575_POKEMON_GOTHORITA_NORMAL">;
+export type PokemonSettingsV0576PokemonGothitelle = PokemonSettings<"V0576_POKEMON_GOTHITELLE">;
+export type PokemonSettingsV0576PokemonGothitelleNormal = PokemonSettings<"V0576_POKEMON_GOTHITELLE_NORMAL">;
+export type PokemonSettingsV0577PokemonSolosis = PokemonSettings<"V0577_POKEMON_SOLOSIS">;
+export type PokemonSettingsV0577PokemonSolosisNormal = PokemonSettings<"V0577_POKEMON_SOLOSIS_NORMAL">;
+export type PokemonSettingsV0578PokemonDuosion = PokemonSettings<"V0578_POKEMON_DUOSION">;
+export type PokemonSettingsV0578PokemonDuosionNormal = PokemonSettings<"V0578_POKEMON_DUOSION_NORMAL">;
+export type PokemonSettingsV0579PokemonReuniclus = PokemonSettings<"V0579_POKEMON_REUNICLUS">;
+export type PokemonSettingsV0579PokemonReuniclusNormal = PokemonSettings<"V0579_POKEMON_REUNICLUS_NORMAL">;
+export type PokemonSettingsV0580PokemonDucklett = PokemonSettings<"V0580_POKEMON_DUCKLETT">;
+export type PokemonSettingsV0580PokemonDucklettNormal = PokemonSettings<"V0580_POKEMON_DUCKLETT_NORMAL">;
+export type PokemonSettingsV0581PokemonSwanna = PokemonSettings<"V0581_POKEMON_SWANNA">;
+export type PokemonSettingsV0581PokemonSwannaNormal = PokemonSettings<"V0581_POKEMON_SWANNA_NORMAL">;
+export type PokemonSettingsV0582PokemonVanillite = PokemonSettings<"V0582_POKEMON_VANILLITE">;
+export type PokemonSettingsV0582PokemonVanilliteNormal = PokemonSettings<"V0582_POKEMON_VANILLITE_NORMAL">;
+export type PokemonSettingsV0583PokemonVanillish = PokemonSettings<"V0583_POKEMON_VANILLISH">;
+export type PokemonSettingsV0583PokemonVanillishNormal = PokemonSettings<"V0583_POKEMON_VANILLISH_NORMAL">;
+export type PokemonSettingsV0584PokemonVanilluxe = PokemonSettings<"V0584_POKEMON_VANILLUXE">;
+export type PokemonSettingsV0584PokemonVanilluxeNormal = PokemonSettings<"V0584_POKEMON_VANILLUXE_NORMAL">;
+export type PokemonSettingsV0585PokemonDeerling = PokemonSettings<"V0585_POKEMON_DEERLING">;
+export type PokemonSettingsV0585PokemonDeerlingAutumn = PokemonSettings<"V0585_POKEMON_DEERLING_AUTUMN">;
+export type PokemonSettingsV0585PokemonDeerlingSpring = PokemonSettings<"V0585_POKEMON_DEERLING_SPRING">;
+export type PokemonSettingsV0585PokemonDeerlingSummer = PokemonSettings<"V0585_POKEMON_DEERLING_SUMMER">;
+export type PokemonSettingsV0585PokemonDeerlingWinter = PokemonSettings<"V0585_POKEMON_DEERLING_WINTER">;
+export type PokemonSettingsV0586PokemonSawsbuck = PokemonSettings<"V0586_POKEMON_SAWSBUCK">;
+export type PokemonSettingsV0586PokemonSawsbuckAutumn = PokemonSettings<"V0586_POKEMON_SAWSBUCK_AUTUMN">;
+export type PokemonSettingsV0586PokemonSawsbuckSpring = PokemonSettings<"V0586_POKEMON_SAWSBUCK_SPRING">;
+export type PokemonSettingsV0586PokemonSawsbuckSummer = PokemonSettings<"V0586_POKEMON_SAWSBUCK_SUMMER">;
+export type PokemonSettingsV0586PokemonSawsbuckWinter = PokemonSettings<"V0586_POKEMON_SAWSBUCK_WINTER">;
+export type PokemonSettingsV0587PokemonEmolga = PokemonSettings<"V0587_POKEMON_EMOLGA">;
+export type PokemonSettingsV0587PokemonEmolgaNormal = PokemonSettings<"V0587_POKEMON_EMOLGA_NORMAL">;
+export type PokemonSettingsV0588PokemonKarrablast = PokemonSettings<"V0588_POKEMON_KARRABLAST">;
+export type PokemonSettingsV0588PokemonKarrablastNormal = PokemonSettings<"V0588_POKEMON_KARRABLAST_NORMAL">;
+export type PokemonSettingsV0589PokemonEscavalier = PokemonSettings<"V0589_POKEMON_ESCAVALIER">;
+export type PokemonSettingsV0589PokemonEscavalierNormal = PokemonSettings<"V0589_POKEMON_ESCAVALIER_NORMAL">;
+export type PokemonSettingsV0590PokemonFoongus = PokemonSettings<"V0590_POKEMON_FOONGUS">;
+export type PokemonSettingsV0590PokemonFoongusNormal = PokemonSettings<"V0590_POKEMON_FOONGUS_NORMAL">;
+export type PokemonSettingsV0591PokemonAmoonguss = PokemonSettings<"V0591_POKEMON_AMOONGUSS">;
+export type PokemonSettingsV0591PokemonAmoongussNormal = PokemonSettings<"V0591_POKEMON_AMOONGUSS_NORMAL">;
+export type PokemonSettingsV0592PokemonFrillish = PokemonSettings<"V0592_POKEMON_FRILLISH">;
+export type PokemonSettingsV0592PokemonFrillishFemale = PokemonSettings<"V0592_POKEMON_FRILLISH_FEMALE">;
+export type PokemonSettingsV0592PokemonFrillishNormal = PokemonSettings<"V0592_POKEMON_FRILLISH_NORMAL">;
+export type PokemonSettingsV0593PokemonJellicent = PokemonSettings<"V0593_POKEMON_JELLICENT">;
+export type PokemonSettingsV0593PokemonJellicentFemale = PokemonSettings<"V0593_POKEMON_JELLICENT_FEMALE">;
+export type PokemonSettingsV0593PokemonJellicentNormal = PokemonSettings<"V0593_POKEMON_JELLICENT_NORMAL">;
+export type PokemonSettingsV0594PokemonAlomomola = PokemonSettings<"V0594_POKEMON_ALOMOMOLA">;
+export type PokemonSettingsV0594PokemonAlomomolaNormal = PokemonSettings<"V0594_POKEMON_ALOMOMOLA_NORMAL">;
+export type PokemonSettingsV0595PokemonJoltik = PokemonSettings<"V0595_POKEMON_JOLTIK">;
+export type PokemonSettingsV0595PokemonJoltikNormal = PokemonSettings<"V0595_POKEMON_JOLTIK_NORMAL">;
+export type PokemonSettingsV0596PokemonGalvantula = PokemonSettings<"V0596_POKEMON_GALVANTULA">;
+export type PokemonSettingsV0596PokemonGalvantulaNormal = PokemonSettings<"V0596_POKEMON_GALVANTULA_NORMAL">;
+export type PokemonSettingsV0597PokemonFerroseed = PokemonSettings<"V0597_POKEMON_FERROSEED">;
+export type PokemonSettingsV0597PokemonFerroseedNormal = PokemonSettings<"V0597_POKEMON_FERROSEED_NORMAL">;
+export type PokemonSettingsV0598PokemonFerrothorn = PokemonSettings<"V0598_POKEMON_FERROTHORN">;
+export type PokemonSettingsV0598PokemonFerrothornNormal = PokemonSettings<"V0598_POKEMON_FERROTHORN_NORMAL">;
+export type PokemonSettingsV0599PokemonKlink = PokemonSettings<"V0599_POKEMON_KLINK">;
+export type PokemonSettingsV0599PokemonKlinkNormal = PokemonSettings<"V0599_POKEMON_KLINK_NORMAL">;
+export type PokemonSettingsV0600PokemonKlang = PokemonSettings<"V0600_POKEMON_KLANG">;
+export type PokemonSettingsV0600PokemonKlangNormal = PokemonSettings<"V0600_POKEMON_KLANG_NORMAL">;
+export type PokemonSettingsV0601PokemonKlinklang = PokemonSettings<"V0601_POKEMON_KLINKLANG">;
+export type PokemonSettingsV0601PokemonKlinklangNormal = PokemonSettings<"V0601_POKEMON_KLINKLANG_NORMAL">;
+export type PokemonSettingsV0602PokemonTynamo = PokemonSettings<"V0602_POKEMON_TYNAMO">;
+export type PokemonSettingsV0602PokemonTynamoNormal = PokemonSettings<"V0602_POKEMON_TYNAMO_NORMAL">;
+export type PokemonSettingsV0603PokemonEelektrik = PokemonSettings<"V0603_POKEMON_EELEKTRIK">;
+export type PokemonSettingsV0603PokemonEelektrikNormal = PokemonSettings<"V0603_POKEMON_EELEKTRIK_NORMAL">;
+export type PokemonSettingsV0604PokemonEelektross = PokemonSettings<"V0604_POKEMON_EELEKTROSS">;
+export type PokemonSettingsV0604PokemonEelektrossNormal = PokemonSettings<"V0604_POKEMON_EELEKTROSS_NORMAL">;
+export type PokemonSettingsV0605PokemonElgyem = PokemonSettings<"V0605_POKEMON_ELGYEM">;
+export type PokemonSettingsV0605PokemonElgyemNormal = PokemonSettings<"V0605_POKEMON_ELGYEM_NORMAL">;
+export type PokemonSettingsV0606PokemonBeheeyem = PokemonSettings<"V0606_POKEMON_BEHEEYEM">;
+export type PokemonSettingsV0606PokemonBeheeyemNormal = PokemonSettings<"V0606_POKEMON_BEHEEYEM_NORMAL">;
+export type PokemonSettingsV0607PokemonLitwick = PokemonSettings<"V0607_POKEMON_LITWICK">;
+export type PokemonSettingsV0607PokemonLitwickNormal = PokemonSettings<"V0607_POKEMON_LITWICK_NORMAL">;
+export type PokemonSettingsV0608PokemonLampent = PokemonSettings<"V0608_POKEMON_LAMPENT">;
+export type PokemonSettingsV0608PokemonLampentNormal = PokemonSettings<"V0608_POKEMON_LAMPENT_NORMAL">;
+export type PokemonSettingsV0609PokemonChandelure = PokemonSettings<"V0609_POKEMON_CHANDELURE">;
+export type PokemonSettingsV0609PokemonChandelureNormal = PokemonSettings<"V0609_POKEMON_CHANDELURE_NORMAL">;
+export type PokemonSettingsV0610PokemonAxew = PokemonSettings<"V0610_POKEMON_AXEW">;
+export type PokemonSettingsV0610PokemonAxewNormal = PokemonSettings<"V0610_POKEMON_AXEW_NORMAL">;
+export type PokemonSettingsV0611PokemonFraxure = PokemonSettings<"V0611_POKEMON_FRAXURE">;
+export type PokemonSettingsV0611PokemonFraxureNormal = PokemonSettings<"V0611_POKEMON_FRAXURE_NORMAL">;
+export type PokemonSettingsV0612PokemonHaxorus = PokemonSettings<"V0612_POKEMON_HAXORUS">;
+export type PokemonSettingsV0612PokemonHaxorusNormal = PokemonSettings<"V0612_POKEMON_HAXORUS_NORMAL">;
+export type PokemonSettingsV0613PokemonCubchoo = PokemonSettings<"V0613_POKEMON_CUBCHOO">;
+export type PokemonSettingsV0613PokemonCubchooNormal = PokemonSettings<"V0613_POKEMON_CUBCHOO_NORMAL">;
+export type PokemonSettingsV0613PokemonCubchooWinter2020 = PokemonSettings<"V0613_POKEMON_CUBCHOO_WINTER_2020">;
+export type PokemonSettingsV0614PokemonBeartic = PokemonSettings<"V0614_POKEMON_BEARTIC">;
+export type PokemonSettingsV0614PokemonBearticNormal = PokemonSettings<"V0614_POKEMON_BEARTIC_NORMAL">;
+export type PokemonSettingsV0614PokemonBearticWinter2020 = PokemonSettings<"V0614_POKEMON_BEARTIC_WINTER_2020">;
+export type PokemonSettingsV0615PokemonCryogonal = PokemonSettings<"V0615_POKEMON_CRYOGONAL">;
+export type PokemonSettingsV0615PokemonCryogonalNormal = PokemonSettings<"V0615_POKEMON_CRYOGONAL_NORMAL">;
+export type PokemonSettingsV0616PokemonShelmet = PokemonSettings<"V0616_POKEMON_SHELMET">;
+export type PokemonSettingsV0616PokemonShelmetNormal = PokemonSettings<"V0616_POKEMON_SHELMET_NORMAL">;
+export type PokemonSettingsV0617PokemonAccelgor = PokemonSettings<"V0617_POKEMON_ACCELGOR">;
+export type PokemonSettingsV0617PokemonAccelgorNormal = PokemonSettings<"V0617_POKEMON_ACCELGOR_NORMAL">;
+export type PokemonSettingsV0618PokemonStunfisk = PokemonSettings<"V0618_POKEMON_STUNFISK">;
+export type PokemonSettingsV0618PokemonStunfiskGalarian = PokemonSettings<"V0618_POKEMON_STUNFISK_GALARIAN">;
+export type PokemonSettingsV0618PokemonStunfiskNormal = PokemonSettings<"V0618_POKEMON_STUNFISK_NORMAL">;
+export type PokemonSettingsV0619PokemonMienfoo = PokemonSettings<"V0619_POKEMON_MIENFOO">;
+export type PokemonSettingsV0619PokemonMienfooNormal = PokemonSettings<"V0619_POKEMON_MIENFOO_NORMAL">;
+export type PokemonSettingsV0620PokemonMienshao = PokemonSettings<"V0620_POKEMON_MIENSHAO">;
+export type PokemonSettingsV0620PokemonMienshaoNormal = PokemonSettings<"V0620_POKEMON_MIENSHAO_NORMAL">;
+export type PokemonSettingsV0621PokemonDruddigon = PokemonSettings<"V0621_POKEMON_DRUDDIGON">;
+export type PokemonSettingsV0621PokemonDruddigonNormal = PokemonSettings<"V0621_POKEMON_DRUDDIGON_NORMAL">;
+export type PokemonSettingsV0622PokemonGolett = PokemonSettings<"V0622_POKEMON_GOLETT">;
+export type PokemonSettingsV0622PokemonGolettNormal = PokemonSettings<"V0622_POKEMON_GOLETT_NORMAL">;
+export type PokemonSettingsV0623PokemonGolurk = PokemonSettings<"V0623_POKEMON_GOLURK">;
+export type PokemonSettingsV0623PokemonGolurkNormal = PokemonSettings<"V0623_POKEMON_GOLURK_NORMAL">;
+export type PokemonSettingsV0624PokemonPawniard = PokemonSettings<"V0624_POKEMON_PAWNIARD">;
+export type PokemonSettingsV0624PokemonPawniardNormal = PokemonSettings<"V0624_POKEMON_PAWNIARD_NORMAL">;
+export type PokemonSettingsV0625PokemonBisharp = PokemonSettings<"V0625_POKEMON_BISHARP">;
+export type PokemonSettingsV0625PokemonBisharpNormal = PokemonSettings<"V0625_POKEMON_BISHARP_NORMAL">;
+export type PokemonSettingsV0626PokemonBouffalant = PokemonSettings<"V0626_POKEMON_BOUFFALANT">;
+export type PokemonSettingsV0626PokemonBouffalantNormal = PokemonSettings<"V0626_POKEMON_BOUFFALANT_NORMAL">;
+export type PokemonSettingsV0627PokemonRufflet = PokemonSettings<"V0627_POKEMON_RUFFLET">;
+export type PokemonSettingsV0627PokemonRuffletNormal = PokemonSettings<"V0627_POKEMON_RUFFLET_NORMAL">;
+export type PokemonSettingsV0628PokemonBraviary = PokemonSettings<"V0628_POKEMON_BRAVIARY">;
+export type PokemonSettingsV0628PokemonBraviaryHisuian = PokemonSettings<"V0628_POKEMON_BRAVIARY_HISUIAN">;
+export type PokemonSettingsV0628PokemonBraviaryNormal = PokemonSettings<"V0628_POKEMON_BRAVIARY_NORMAL">;
+export type PokemonSettingsV0629PokemonVullaby = PokemonSettings<"V0629_POKEMON_VULLABY">;
+export type PokemonSettingsV0629PokemonVullabyNormal = PokemonSettings<"V0629_POKEMON_VULLABY_NORMAL">;
+export type PokemonSettingsV0630PokemonMandibuzz = PokemonSettings<"V0630_POKEMON_MANDIBUZZ">;
+export type PokemonSettingsV0630PokemonMandibuzzNormal = PokemonSettings<"V0630_POKEMON_MANDIBUZZ_NORMAL">;
+export type PokemonSettingsV0631PokemonHeatmor = PokemonSettings<"V0631_POKEMON_HEATMOR">;
+export type PokemonSettingsV0631PokemonHeatmorNormal = PokemonSettings<"V0631_POKEMON_HEATMOR_NORMAL">;
+export type PokemonSettingsV0632PokemonDurant = PokemonSettings<"V0632_POKEMON_DURANT">;
+export type PokemonSettingsV0632PokemonDurantNormal = PokemonSettings<"V0632_POKEMON_DURANT_NORMAL">;
+export type PokemonSettingsV0633PokemonDeino = PokemonSettings<"V0633_POKEMON_DEINO">;
+export type PokemonSettingsV0633PokemonDeinoNormal = PokemonSettings<"V0633_POKEMON_DEINO_NORMAL">;
+export type PokemonSettingsV0634PokemonZweilous = PokemonSettings<"V0634_POKEMON_ZWEILOUS">;
+export type PokemonSettingsV0634PokemonZweilousNormal = PokemonSettings<"V0634_POKEMON_ZWEILOUS_NORMAL">;
+export type PokemonSettingsV0635PokemonHydreigon = PokemonSettings<"V0635_POKEMON_HYDREIGON">;
+export type PokemonSettingsV0635PokemonHydreigonNormal = PokemonSettings<"V0635_POKEMON_HYDREIGON_NORMAL">;
+export type PokemonSettingsV0636PokemonLarvesta = PokemonSettings<"V0636_POKEMON_LARVESTA">;
+export type PokemonSettingsV0636PokemonLarvestaNormal = PokemonSettings<"V0636_POKEMON_LARVESTA_NORMAL">;
+export type PokemonSettingsV0637PokemonVolcarona = PokemonSettings<"V0637_POKEMON_VOLCARONA">;
+export type PokemonSettingsV0637PokemonVolcaronaNormal = PokemonSettings<"V0637_POKEMON_VOLCARONA_NORMAL">;
+export type PokemonSettingsV0638PokemonCobalion = PokemonSettings<"V0638_POKEMON_COBALION">;
+export type PokemonSettingsV0638PokemonCobalionNormal = PokemonSettings<"V0638_POKEMON_COBALION_NORMAL">;
+export type PokemonSettingsV0639PokemonTerrakion = PokemonSettings<"V0639_POKEMON_TERRAKION">;
+export type PokemonSettingsV0639PokemonTerrakionNormal = PokemonSettings<"V0639_POKEMON_TERRAKION_NORMAL">;
+export type PokemonSettingsV0640PokemonVirizion = PokemonSettings<"V0640_POKEMON_VIRIZION">;
+export type PokemonSettingsV0640PokemonVirizionNormal = PokemonSettings<"V0640_POKEMON_VIRIZION_NORMAL">;
+export type PokemonSettingsV0641PokemonTornadus = PokemonSettings<"V0641_POKEMON_TORNADUS">;
+export type PokemonSettingsV0641PokemonTornadusIncarnate = PokemonSettings<"V0641_POKEMON_TORNADUS_INCARNATE">;
+export type PokemonSettingsV0641PokemonTornadusTherian = PokemonSettings<"V0641_POKEMON_TORNADUS_THERIAN">;
+export type PokemonSettingsV0642PokemonThundurus = PokemonSettings<"V0642_POKEMON_THUNDURUS">;
+export type PokemonSettingsV0642PokemonThundurusIncarnate = PokemonSettings<"V0642_POKEMON_THUNDURUS_INCARNATE">;
+export type PokemonSettingsV0642PokemonThundurusTherian = PokemonSettings<"V0642_POKEMON_THUNDURUS_THERIAN">;
+export type PokemonSettingsV0643PokemonReshiram = PokemonSettings<"V0643_POKEMON_RESHIRAM">;
+export type PokemonSettingsV0643PokemonReshiramNormal = PokemonSettings<"V0643_POKEMON_RESHIRAM_NORMAL">;
+export type PokemonSettingsV0644PokemonZekrom = PokemonSettings<"V0644_POKEMON_ZEKROM">;
+export type PokemonSettingsV0644PokemonZekromNormal = PokemonSettings<"V0644_POKEMON_ZEKROM_NORMAL">;
+export type PokemonSettingsV0645PokemonLandorus = PokemonSettings<"V0645_POKEMON_LANDORUS">;
+export type PokemonSettingsV0645PokemonLandorusIncarnate = PokemonSettings<"V0645_POKEMON_LANDORUS_INCARNATE">;
+export type PokemonSettingsV0645PokemonLandorusTherian = PokemonSettings<"V0645_POKEMON_LANDORUS_THERIAN">;
+export type PokemonSettingsV0646PokemonKyurem = PokemonSettings<"V0646_POKEMON_KYUREM">;
+export type PokemonSettingsV0646PokemonKyuremBlack = PokemonSettings<"V0646_POKEMON_KYUREM_BLACK">;
+export type PokemonSettingsV0646PokemonKyuremNormal = PokemonSettings<"V0646_POKEMON_KYUREM_NORMAL">;
+export type PokemonSettingsV0646PokemonKyuremWhite = PokemonSettings<"V0646_POKEMON_KYUREM_WHITE">;
+export type PokemonSettingsV0647PokemonKeldeo = PokemonSettings<"V0647_POKEMON_KELDEO">;
+export type PokemonSettingsV0647PokemonKeldeoOrdinary = PokemonSettings<"V0647_POKEMON_KELDEO_ORDINARY">;
+export type PokemonSettingsV0647PokemonKeldeoResolute = PokemonSettings<"V0647_POKEMON_KELDEO_RESOLUTE">;
+export type PokemonSettingsV0648PokemonMeloetta = PokemonSettings<"V0648_POKEMON_MELOETTA">;
+export type PokemonSettingsV0648PokemonMeloettaAria = PokemonSettings<"V0648_POKEMON_MELOETTA_ARIA">;
+export type PokemonSettingsV0648PokemonMeloettaPirouette = PokemonSettings<"V0648_POKEMON_MELOETTA_PIROUETTE">;
+export type PokemonSettingsV0649PokemonGenesect = PokemonSettings<"V0649_POKEMON_GENESECT">;
+export type PokemonSettingsV0649PokemonGenesectBurn = PokemonSettings<"V0649_POKEMON_GENESECT_BURN">;
+export type PokemonSettingsV0649PokemonGenesectChill = PokemonSettings<"V0649_POKEMON_GENESECT_CHILL">;
+export type PokemonSettingsV0649PokemonGenesectDouse = PokemonSettings<"V0649_POKEMON_GENESECT_DOUSE">;
+export type PokemonSettingsV0649PokemonGenesectNormal = PokemonSettings<"V0649_POKEMON_GENESECT_NORMAL">;
+export type PokemonSettingsV0649PokemonGenesectShock = PokemonSettings<"V0649_POKEMON_GENESECT_SHOCK">;
+export type PokemonSettingsV0650PokemonChespin = PokemonSettings<"V0650_POKEMON_CHESPIN">;
+export type PokemonSettingsV0650PokemonChespinNormal = PokemonSettings<"V0650_POKEMON_CHESPIN_NORMAL">;
+export type PokemonSettingsV0651PokemonQuilladin = PokemonSettings<"V0651_POKEMON_QUILLADIN">;
+export type PokemonSettingsV0651PokemonQuilladinNormal = PokemonSettings<"V0651_POKEMON_QUILLADIN_NORMAL">;
+export type PokemonSettingsV0652PokemonChesnaught = PokemonSettings<"V0652_POKEMON_CHESNAUGHT">;
+export type PokemonSettingsV0652PokemonChesnaughtNormal = PokemonSettings<"V0652_POKEMON_CHESNAUGHT_NORMAL">;
+export type PokemonSettingsV0653PokemonFennekin = PokemonSettings<"V0653_POKEMON_FENNEKIN">;
+export type PokemonSettingsV0653PokemonFennekinNormal = PokemonSettings<"V0653_POKEMON_FENNEKIN_NORMAL">;
+export type PokemonSettingsV0654PokemonBraixen = PokemonSettings<"V0654_POKEMON_BRAIXEN">;
+export type PokemonSettingsV0654PokemonBraixenNormal = PokemonSettings<"V0654_POKEMON_BRAIXEN_NORMAL">;
+export type PokemonSettingsV0655PokemonDelphox = PokemonSettings<"V0655_POKEMON_DELPHOX">;
+export type PokemonSettingsV0655PokemonDelphoxNormal = PokemonSettings<"V0655_POKEMON_DELPHOX_NORMAL">;
+export type PokemonSettingsV0656PokemonFroakie = PokemonSettings<"V0656_POKEMON_FROAKIE">;
+export type PokemonSettingsV0656PokemonFroakieNormal = PokemonSettings<"V0656_POKEMON_FROAKIE_NORMAL">;
+export type PokemonSettingsV0657PokemonFrogadier = PokemonSettings<"V0657_POKEMON_FROGADIER">;
+export type PokemonSettingsV0657PokemonFrogadierNormal = PokemonSettings<"V0657_POKEMON_FROGADIER_NORMAL">;
+export type PokemonSettingsV0658PokemonGreninja = PokemonSettings<"V0658_POKEMON_GRENINJA">;
+export type PokemonSettingsV0658PokemonGreninjaNormal = PokemonSettings<"V0658_POKEMON_GRENINJA_NORMAL">;
+export type PokemonSettingsV0659PokemonBunnelby = PokemonSettings<"V0659_POKEMON_BUNNELBY">;
+export type PokemonSettingsV0659PokemonBunnelbyNormal = PokemonSettings<"V0659_POKEMON_BUNNELBY_NORMAL">;
+export type PokemonSettingsV0660PokemonDiggersby = PokemonSettings<"V0660_POKEMON_DIGGERSBY">;
+export type PokemonSettingsV0660PokemonDiggersbyNormal = PokemonSettings<"V0660_POKEMON_DIGGERSBY_NORMAL">;
+export type PokemonSettingsV0661PokemonFletchling = PokemonSettings<"V0661_POKEMON_FLETCHLING">;
+export type PokemonSettingsV0661PokemonFletchlingNormal = PokemonSettings<"V0661_POKEMON_FLETCHLING_NORMAL">;
+export type PokemonSettingsV0662PokemonFletchinder = PokemonSettings<"V0662_POKEMON_FLETCHINDER">;
+export type PokemonSettingsV0662PokemonFletchinderNormal = PokemonSettings<"V0662_POKEMON_FLETCHINDER_NORMAL">;
+export type PokemonSettingsV0663PokemonTalonflame = PokemonSettings<"V0663_POKEMON_TALONFLAME">;
+export type PokemonSettingsV0663PokemonTalonflameNormal = PokemonSettings<"V0663_POKEMON_TALONFLAME_NORMAL">;
+export type PokemonSettingsV0664PokemonScatterbug = PokemonSettings<"V0664_POKEMON_SCATTERBUG">;
+export type PokemonSettingsV0664PokemonScatterbugArchipelago = PokemonSettings<"V0664_POKEMON_SCATTERBUG_ARCHIPELAGO">;
+export type PokemonSettingsV0664PokemonScatterbugContinental = PokemonSettings<"V0664_POKEMON_SCATTERBUG_CONTINENTAL">;
+export type PokemonSettingsV0664PokemonScatterbugElegant = PokemonSettings<"V0664_POKEMON_SCATTERBUG_ELEGANT">;
+export type PokemonSettingsV0664PokemonScatterbugFancy = PokemonSettings<"V0664_POKEMON_SCATTERBUG_FANCY">;
+export type PokemonSettingsV0664PokemonScatterbugGarden = PokemonSettings<"V0664_POKEMON_SCATTERBUG_GARDEN">;
+export type PokemonSettingsV0664PokemonScatterbugHighPlains = PokemonSettings<"V0664_POKEMON_SCATTERBUG_HIGH_PLAINS">;
+export type PokemonSettingsV0664PokemonScatterbugIcySnow = PokemonSettings<"V0664_POKEMON_SCATTERBUG_ICY_SNOW">;
+export type PokemonSettingsV0664PokemonScatterbugJungle = PokemonSettings<"V0664_POKEMON_SCATTERBUG_JUNGLE">;
+export type PokemonSettingsV0664PokemonScatterbugMarine = PokemonSettings<"V0664_POKEMON_SCATTERBUG_MARINE">;
+export type PokemonSettingsV0664PokemonScatterbugMeadow = PokemonSettings<"V0664_POKEMON_SCATTERBUG_MEADOW">;
+export type PokemonSettingsV0664PokemonScatterbugModern = PokemonSettings<"V0664_POKEMON_SCATTERBUG_MODERN">;
+export type PokemonSettingsV0664PokemonScatterbugMonsoon = PokemonSettings<"V0664_POKEMON_SCATTERBUG_MONSOON">;
+export type PokemonSettingsV0664PokemonScatterbugOcean = PokemonSettings<"V0664_POKEMON_SCATTERBUG_OCEAN">;
+export type PokemonSettingsV0664PokemonScatterbugPokeball = PokemonSettings<"V0664_POKEMON_SCATTERBUG_POKEBALL">;
+export type PokemonSettingsV0664PokemonScatterbugPolar = PokemonSettings<"V0664_POKEMON_SCATTERBUG_POLAR">;
+export type PokemonSettingsV0664PokemonScatterbugRiver = PokemonSettings<"V0664_POKEMON_SCATTERBUG_RIVER">;
+export type PokemonSettingsV0664PokemonScatterbugSandstorm = PokemonSettings<"V0664_POKEMON_SCATTERBUG_SANDSTORM">;
+export type PokemonSettingsV0664PokemonScatterbugSavanna = PokemonSettings<"V0664_POKEMON_SCATTERBUG_SAVANNA">;
+export type PokemonSettingsV0664PokemonScatterbugSun = PokemonSettings<"V0664_POKEMON_SCATTERBUG_SUN">;
+export type PokemonSettingsV0664PokemonScatterbugTundra = PokemonSettings<"V0664_POKEMON_SCATTERBUG_TUNDRA">;
+export type PokemonSettingsV0665PokemonSpewpa = PokemonSettings<"V0665_POKEMON_SPEWPA">;
+export type PokemonSettingsV0665PokemonSpewpaArchipelago = PokemonSettings<"V0665_POKEMON_SPEWPA_ARCHIPELAGO">;
+export type PokemonSettingsV0665PokemonSpewpaContinental = PokemonSettings<"V0665_POKEMON_SPEWPA_CONTINENTAL">;
+export type PokemonSettingsV0665PokemonSpewpaElegant = PokemonSettings<"V0665_POKEMON_SPEWPA_ELEGANT">;
+export type PokemonSettingsV0665PokemonSpewpaFancy = PokemonSettings<"V0665_POKEMON_SPEWPA_FANCY">;
+export type PokemonSettingsV0665PokemonSpewpaGarden = PokemonSettings<"V0665_POKEMON_SPEWPA_GARDEN">;
+export type PokemonSettingsV0665PokemonSpewpaHighPlains = PokemonSettings<"V0665_POKEMON_SPEWPA_HIGH_PLAINS">;
+export type PokemonSettingsV0665PokemonSpewpaIcySnow = PokemonSettings<"V0665_POKEMON_SPEWPA_ICY_SNOW">;
+export type PokemonSettingsV0665PokemonSpewpaJungle = PokemonSettings<"V0665_POKEMON_SPEWPA_JUNGLE">;
+export type PokemonSettingsV0665PokemonSpewpaMarine = PokemonSettings<"V0665_POKEMON_SPEWPA_MARINE">;
+export type PokemonSettingsV0665PokemonSpewpaMeadow = PokemonSettings<"V0665_POKEMON_SPEWPA_MEADOW">;
+export type PokemonSettingsV0665PokemonSpewpaModern = PokemonSettings<"V0665_POKEMON_SPEWPA_MODERN">;
+export type PokemonSettingsV0665PokemonSpewpaMonsoon = PokemonSettings<"V0665_POKEMON_SPEWPA_MONSOON">;
+export type PokemonSettingsV0665PokemonSpewpaOcean = PokemonSettings<"V0665_POKEMON_SPEWPA_OCEAN">;
+export type PokemonSettingsV0665PokemonSpewpaPokeball = PokemonSettings<"V0665_POKEMON_SPEWPA_POKEBALL">;
+export type PokemonSettingsV0665PokemonSpewpaPolar = PokemonSettings<"V0665_POKEMON_SPEWPA_POLAR">;
+export type PokemonSettingsV0665PokemonSpewpaRiver = PokemonSettings<"V0665_POKEMON_SPEWPA_RIVER">;
+export type PokemonSettingsV0665PokemonSpewpaSandstorm = PokemonSettings<"V0665_POKEMON_SPEWPA_SANDSTORM">;
+export type PokemonSettingsV0665PokemonSpewpaSavanna = PokemonSettings<"V0665_POKEMON_SPEWPA_SAVANNA">;
+export type PokemonSettingsV0665PokemonSpewpaSun = PokemonSettings<"V0665_POKEMON_SPEWPA_SUN">;
+export type PokemonSettingsV0665PokemonSpewpaTundra = PokemonSettings<"V0665_POKEMON_SPEWPA_TUNDRA">;
+export type PokemonSettingsV0666PokemonVivillon = PokemonSettings<"V0666_POKEMON_VIVILLON">;
+export type PokemonSettingsV0666PokemonVivillonArchipelago = PokemonSettings<"V0666_POKEMON_VIVILLON_ARCHIPELAGO">;
+export type PokemonSettingsV0666PokemonVivillonContinental = PokemonSettings<"V0666_POKEMON_VIVILLON_CONTINENTAL">;
+export type PokemonSettingsV0666PokemonVivillonElegant = PokemonSettings<"V0666_POKEMON_VIVILLON_ELEGANT">;
+export type PokemonSettingsV0666PokemonVivillonFancy = PokemonSettings<"V0666_POKEMON_VIVILLON_FANCY">;
+export type PokemonSettingsV0666PokemonVivillonGarden = PokemonSettings<"V0666_POKEMON_VIVILLON_GARDEN">;
+export type PokemonSettingsV0666PokemonVivillonHighPlains = PokemonSettings<"V0666_POKEMON_VIVILLON_HIGH_PLAINS">;
+export type PokemonSettingsV0666PokemonVivillonIcySnow = PokemonSettings<"V0666_POKEMON_VIVILLON_ICY_SNOW">;
+export type PokemonSettingsV0666PokemonVivillonJungle = PokemonSettings<"V0666_POKEMON_VIVILLON_JUNGLE">;
+export type PokemonSettingsV0666PokemonVivillonMarine = PokemonSettings<"V0666_POKEMON_VIVILLON_MARINE">;
+export type PokemonSettingsV0666PokemonVivillonMeadow = PokemonSettings<"V0666_POKEMON_VIVILLON_MEADOW">;
+export type PokemonSettingsV0666PokemonVivillonModern = PokemonSettings<"V0666_POKEMON_VIVILLON_MODERN">;
+export type PokemonSettingsV0666PokemonVivillonMonsoon = PokemonSettings<"V0666_POKEMON_VIVILLON_MONSOON">;
+export type PokemonSettingsV0666PokemonVivillonOcean = PokemonSettings<"V0666_POKEMON_VIVILLON_OCEAN">;
+export type PokemonSettingsV0666PokemonVivillonPokeball = PokemonSettings<"V0666_POKEMON_VIVILLON_POKEBALL">;
+export type PokemonSettingsV0666PokemonVivillonPolar = PokemonSettings<"V0666_POKEMON_VIVILLON_POLAR">;
+export type PokemonSettingsV0666PokemonVivillonRiver = PokemonSettings<"V0666_POKEMON_VIVILLON_RIVER">;
+export type PokemonSettingsV0666PokemonVivillonSandstorm = PokemonSettings<"V0666_POKEMON_VIVILLON_SANDSTORM">;
+export type PokemonSettingsV0666PokemonVivillonSavanna = PokemonSettings<"V0666_POKEMON_VIVILLON_SAVANNA">;
+export type PokemonSettingsV0666PokemonVivillonSun = PokemonSettings<"V0666_POKEMON_VIVILLON_SUN">;
+export type PokemonSettingsV0666PokemonVivillonTundra = PokemonSettings<"V0666_POKEMON_VIVILLON_TUNDRA">;
+export type PokemonSettingsV0667PokemonLitleo = PokemonSettings<"V0667_POKEMON_LITLEO">;
+export type PokemonSettingsV0667PokemonLitleoNormal = PokemonSettings<"V0667_POKEMON_LITLEO_NORMAL">;
+export type PokemonSettingsV0668PokemonPyroar = PokemonSettings<"V0668_POKEMON_PYROAR">;
+export type PokemonSettingsV0668PokemonPyroarFemale = PokemonSettings<"V0668_POKEMON_PYROAR_FEMALE">;
+export type PokemonSettingsV0668PokemonPyroarNormal = PokemonSettings<"V0668_POKEMON_PYROAR_NORMAL">;
+export type PokemonSettingsV0669PokemonFlabebe = PokemonSettings<"V0669_POKEMON_FLABEBE">;
+export type PokemonSettingsV0669PokemonFlabebeBlue = PokemonSettings<"V0669_POKEMON_FLABEBE_BLUE">;
+export type PokemonSettingsV0669PokemonFlabebeOrange = PokemonSettings<"V0669_POKEMON_FLABEBE_ORANGE">;
+export type PokemonSettingsV0669PokemonFlabebeRed = PokemonSettings<"V0669_POKEMON_FLABEBE_RED">;
+export type PokemonSettingsV0669PokemonFlabebeWhite = PokemonSettings<"V0669_POKEMON_FLABEBE_WHITE">;
+export type PokemonSettingsV0669PokemonFlabebeYellow = PokemonSettings<"V0669_POKEMON_FLABEBE_YELLOW">;
+export type PokemonSettingsV0670PokemonFloette = PokemonSettings<"V0670_POKEMON_FLOETTE">;
+export type PokemonSettingsV0670PokemonFloetteBlue = PokemonSettings<"V0670_POKEMON_FLOETTE_BLUE">;
+export type PokemonSettingsV0670PokemonFloetteOrange = PokemonSettings<"V0670_POKEMON_FLOETTE_ORANGE">;
+export type PokemonSettingsV0670PokemonFloetteRed = PokemonSettings<"V0670_POKEMON_FLOETTE_RED">;
+export type PokemonSettingsV0670PokemonFloetteWhite = PokemonSettings<"V0670_POKEMON_FLOETTE_WHITE">;
+export type PokemonSettingsV0670PokemonFloetteYellow = PokemonSettings<"V0670_POKEMON_FLOETTE_YELLOW">;
+export type PokemonSettingsV0671PokemonFlorges = PokemonSettings<"V0671_POKEMON_FLORGES">;
+export type PokemonSettingsV0671PokemonFlorgesBlue = PokemonSettings<"V0671_POKEMON_FLORGES_BLUE">;
+export type PokemonSettingsV0671PokemonFlorgesOrange = PokemonSettings<"V0671_POKEMON_FLORGES_ORANGE">;
+export type PokemonSettingsV0671PokemonFlorgesRed = PokemonSettings<"V0671_POKEMON_FLORGES_RED">;
+export type PokemonSettingsV0671PokemonFlorgesWhite = PokemonSettings<"V0671_POKEMON_FLORGES_WHITE">;
+export type PokemonSettingsV0671PokemonFlorgesYellow = PokemonSettings<"V0671_POKEMON_FLORGES_YELLOW">;
+export type PokemonSettingsV0672PokemonSkiddo = PokemonSettings<"V0672_POKEMON_SKIDDO">;
+export type PokemonSettingsV0672PokemonSkiddoNormal = PokemonSettings<"V0672_POKEMON_SKIDDO_NORMAL">;
+export type PokemonSettingsV0673PokemonGogoat = PokemonSettings<"V0673_POKEMON_GOGOAT">;
+export type PokemonSettingsV0673PokemonGogoatNormal = PokemonSettings<"V0673_POKEMON_GOGOAT_NORMAL">;
+export type PokemonSettingsV0674PokemonPancham = PokemonSettings<"V0674_POKEMON_PANCHAM">;
+export type PokemonSettingsV0674PokemonPanchamNormal = PokemonSettings<"V0674_POKEMON_PANCHAM_NORMAL">;
+export type PokemonSettingsV0675PokemonPangoro = PokemonSettings<"V0675_POKEMON_PANGORO">;
+export type PokemonSettingsV0675PokemonPangoroNormal = PokemonSettings<"V0675_POKEMON_PANGORO_NORMAL">;
+export type PokemonSettingsV0676PokemonFurfrou = PokemonSettings<"V0676_POKEMON_FURFROU">;
+export type PokemonSettingsV0676PokemonFurfrouDandy = PokemonSettings<"V0676_POKEMON_FURFROU_DANDY">;
+export type PokemonSettingsV0676PokemonFurfrouDebutante = PokemonSettings<"V0676_POKEMON_FURFROU_DEBUTANTE">;
+export type PokemonSettingsV0676PokemonFurfrouDiamond = PokemonSettings<"V0676_POKEMON_FURFROU_DIAMOND">;
+export type PokemonSettingsV0676PokemonFurfrouHeart = PokemonSettings<"V0676_POKEMON_FURFROU_HEART">;
+export type PokemonSettingsV0676PokemonFurfrouKabuki = PokemonSettings<"V0676_POKEMON_FURFROU_KABUKI">;
+export type PokemonSettingsV0676PokemonFurfrouLaReine = PokemonSettings<"V0676_POKEMON_FURFROU_LA_REINE">;
+export type PokemonSettingsV0676PokemonFurfrouMatron = PokemonSettings<"V0676_POKEMON_FURFROU_MATRON">;
+export type PokemonSettingsV0676PokemonFurfrouNatural = PokemonSettings<"V0676_POKEMON_FURFROU_NATURAL">;
+export type PokemonSettingsV0676PokemonFurfrouPharaoh = PokemonSettings<"V0676_POKEMON_FURFROU_PHARAOH">;
+export type PokemonSettingsV0676PokemonFurfrouStar = PokemonSettings<"V0676_POKEMON_FURFROU_STAR">;
+export type PokemonSettingsV0677PokemonEspurr = PokemonSettings<"V0677_POKEMON_ESPURR">;
+export type PokemonSettingsV0677PokemonEspurrNormal = PokemonSettings<"V0677_POKEMON_ESPURR_NORMAL">;
+export type PokemonSettingsV0678PokemonMeowstic = PokemonSettings<"V0678_POKEMON_MEOWSTIC">;
+export type PokemonSettingsV0678PokemonMeowsticFemale = PokemonSettings<"V0678_POKEMON_MEOWSTIC_FEMALE">;
+export type PokemonSettingsV0678PokemonMeowsticNormal = PokemonSettings<"V0678_POKEMON_MEOWSTIC_NORMAL">;
+export type PokemonSettingsV0679PokemonHonedge = PokemonSettings<"V0679_POKEMON_HONEDGE">;
+export type PokemonSettingsV0679PokemonHonedgeNormal = PokemonSettings<"V0679_POKEMON_HONEDGE_NORMAL">;
+export type PokemonSettingsV0680PokemonDoublade = PokemonSettings<"V0680_POKEMON_DOUBLADE">;
+export type PokemonSettingsV0680PokemonDoubladeNormal = PokemonSettings<"V0680_POKEMON_DOUBLADE_NORMAL">;
+export type PokemonSettingsV0681PokemonAegislash = PokemonSettings<"V0681_POKEMON_AEGISLASH">;
+export type PokemonSettingsV0681PokemonAegislashBlade = PokemonSettings<"V0681_POKEMON_AEGISLASH_BLADE">;
+export type PokemonSettingsV0681PokemonAegislashShield = PokemonSettings<"V0681_POKEMON_AEGISLASH_SHIELD">;
+export type PokemonSettingsV0682PokemonSpritzee = PokemonSettings<"V0682_POKEMON_SPRITZEE">;
+export type PokemonSettingsV0682PokemonSpritzeeNormal = PokemonSettings<"V0682_POKEMON_SPRITZEE_NORMAL">;
+export type PokemonSettingsV0683PokemonAromatisse = PokemonSettings<"V0683_POKEMON_AROMATISSE">;
+export type PokemonSettingsV0683PokemonAromatisseNormal = PokemonSettings<"V0683_POKEMON_AROMATISSE_NORMAL">;
+export type PokemonSettingsV0684PokemonSwirlix = PokemonSettings<"V0684_POKEMON_SWIRLIX">;
+export type PokemonSettingsV0684PokemonSwirlixNormal = PokemonSettings<"V0684_POKEMON_SWIRLIX_NORMAL">;
+export type PokemonSettingsV0685PokemonSlurpuff = PokemonSettings<"V0685_POKEMON_SLURPUFF">;
+export type PokemonSettingsV0685PokemonSlurpuffNormal = PokemonSettings<"V0685_POKEMON_SLURPUFF_NORMAL">;
+export type PokemonSettingsV0686PokemonInkay = PokemonSettings<"V0686_POKEMON_INKAY">;
+export type PokemonSettingsV0686PokemonInkayNormal = PokemonSettings<"V0686_POKEMON_INKAY_NORMAL">;
+export type PokemonSettingsV0687PokemonMalamar = PokemonSettings<"V0687_POKEMON_MALAMAR">;
+export type PokemonSettingsV0687PokemonMalamarNormal = PokemonSettings<"V0687_POKEMON_MALAMAR_NORMAL">;
+export type PokemonSettingsV0688PokemonBinacle = PokemonSettings<"V0688_POKEMON_BINACLE">;
+export type PokemonSettingsV0688PokemonBinacleNormal = PokemonSettings<"V0688_POKEMON_BINACLE_NORMAL">;
+export type PokemonSettingsV0689PokemonBarbaracle = PokemonSettings<"V0689_POKEMON_BARBARACLE">;
+export type PokemonSettingsV0689PokemonBarbaracleNormal = PokemonSettings<"V0689_POKEMON_BARBARACLE_NORMAL">;
+export type PokemonSettingsV0690PokemonSkrelp = PokemonSettings<"V0690_POKEMON_SKRELP">;
+export type PokemonSettingsV0690PokemonSkrelpNormal = PokemonSettings<"V0690_POKEMON_SKRELP_NORMAL">;
+export type PokemonSettingsV0691PokemonDragalge = PokemonSettings<"V0691_POKEMON_DRAGALGE">;
+export type PokemonSettingsV0691PokemonDragalgeNormal = PokemonSettings<"V0691_POKEMON_DRAGALGE_NORMAL">;
+export type PokemonSettingsV0692PokemonClauncher = PokemonSettings<"V0692_POKEMON_CLAUNCHER">;
+export type PokemonSettingsV0692PokemonClauncherNormal = PokemonSettings<"V0692_POKEMON_CLAUNCHER_NORMAL">;
+export type PokemonSettingsV0693PokemonClawitzer = PokemonSettings<"V0693_POKEMON_CLAWITZER">;
+export type PokemonSettingsV0693PokemonClawitzerNormal = PokemonSettings<"V0693_POKEMON_CLAWITZER_NORMAL">;
+export type PokemonSettingsV0694PokemonHelioptile = PokemonSettings<"V0694_POKEMON_HELIOPTILE">;
+export type PokemonSettingsV0694PokemonHelioptileNormal = PokemonSettings<"V0694_POKEMON_HELIOPTILE_NORMAL">;
+export type PokemonSettingsV0695PokemonHeliolisk = PokemonSettings<"V0695_POKEMON_HELIOLISK">;
+export type PokemonSettingsV0695PokemonHelioliskNormal = PokemonSettings<"V0695_POKEMON_HELIOLISK_NORMAL">;
+export type PokemonSettingsV0696PokemonTyrunt = PokemonSettings<"V0696_POKEMON_TYRUNT">;
+export type PokemonSettingsV0696PokemonTyruntNormal = PokemonSettings<"V0696_POKEMON_TYRUNT_NORMAL">;
+export type PokemonSettingsV0697PokemonTyrantrum = PokemonSettings<"V0697_POKEMON_TYRANTRUM">;
+export type PokemonSettingsV0697PokemonTyrantrumNormal = PokemonSettings<"V0697_POKEMON_TYRANTRUM_NORMAL">;
+export type PokemonSettingsV0698PokemonAmaura = PokemonSettings<"V0698_POKEMON_AMAURA">;
+export type PokemonSettingsV0698PokemonAmauraNormal = PokemonSettings<"V0698_POKEMON_AMAURA_NORMAL">;
+export type PokemonSettingsV0699PokemonAurorus = PokemonSettings<"V0699_POKEMON_AURORUS">;
+export type PokemonSettingsV0699PokemonAurorusNormal = PokemonSettings<"V0699_POKEMON_AURORUS_NORMAL">;
+export type PokemonSettingsV0700PokemonSylveon = PokemonSettings<"V0700_POKEMON_SYLVEON">;
+export type PokemonSettingsV0700PokemonSylveonNormal = PokemonSettings<"V0700_POKEMON_SYLVEON_NORMAL">;
+export type PokemonSettingsV0701PokemonHawlucha = PokemonSettings<"V0701_POKEMON_HAWLUCHA">;
+export type PokemonSettingsV0701PokemonHawluchaNormal = PokemonSettings<"V0701_POKEMON_HAWLUCHA_NORMAL">;
+export type PokemonSettingsV0702PokemonDedenne = PokemonSettings<"V0702_POKEMON_DEDENNE">;
+export type PokemonSettingsV0702PokemonDedenneNormal = PokemonSettings<"V0702_POKEMON_DEDENNE_NORMAL">;
+export type PokemonSettingsV0703PokemonCarbink = PokemonSettings<"V0703_POKEMON_CARBINK">;
+export type PokemonSettingsV0703PokemonCarbinkNormal = PokemonSettings<"V0703_POKEMON_CARBINK_NORMAL">;
+export type PokemonSettingsV0704PokemonGoomy = PokemonSettings<"V0704_POKEMON_GOOMY">;
+export type PokemonSettingsV0704PokemonGoomyNormal = PokemonSettings<"V0704_POKEMON_GOOMY_NORMAL">;
+export type PokemonSettingsV0705PokemonSliggoo = PokemonSettings<"V0705_POKEMON_SLIGGOO">;
+export type PokemonSettingsV0705PokemonSliggooNormal = PokemonSettings<"V0705_POKEMON_SLIGGOO_NORMAL">;
+export type PokemonSettingsV0706PokemonGoodra = PokemonSettings<"V0706_POKEMON_GOODRA">;
+export type PokemonSettingsV0706PokemonGoodraNormal = PokemonSettings<"V0706_POKEMON_GOODRA_NORMAL">;
+export type PokemonSettingsV0707PokemonKlefki = PokemonSettings<"V0707_POKEMON_KLEFKI">;
+export type PokemonSettingsV0707PokemonKlefkiNormal = PokemonSettings<"V0707_POKEMON_KLEFKI_NORMAL">;
+export type PokemonSettingsV0708PokemonPhantump = PokemonSettings<"V0708_POKEMON_PHANTUMP">;
+export type PokemonSettingsV0708PokemonPhantumpNormal = PokemonSettings<"V0708_POKEMON_PHANTUMP_NORMAL">;
+export type PokemonSettingsV0709PokemonTrevenant = PokemonSettings<"V0709_POKEMON_TREVENANT">;
+export type PokemonSettingsV0709PokemonTrevenantNormal = PokemonSettings<"V0709_POKEMON_TREVENANT_NORMAL">;
+export type PokemonSettingsV0710PokemonPumpkaboo = PokemonSettings<"V0710_POKEMON_PUMPKABOO">;
+export type PokemonSettingsV0710PokemonPumpkabooAverage = PokemonSettings<"V0710_POKEMON_PUMPKABOO_AVERAGE">;
+export type PokemonSettingsV0710PokemonPumpkabooLarge = PokemonSettings<"V0710_POKEMON_PUMPKABOO_LARGE">;
+export type PokemonSettingsV0710PokemonPumpkabooSmall = PokemonSettings<"V0710_POKEMON_PUMPKABOO_SMALL">;
+export type PokemonSettingsV0710PokemonPumpkabooSuper = PokemonSettings<"V0710_POKEMON_PUMPKABOO_SUPER">;
+export type PokemonSettingsV0711PokemonGourgeist = PokemonSettings<"V0711_POKEMON_GOURGEIST">;
+export type PokemonSettingsV0711PokemonGourgeistAverage = PokemonSettings<"V0711_POKEMON_GOURGEIST_AVERAGE">;
+export type PokemonSettingsV0711PokemonGourgeistLarge = PokemonSettings<"V0711_POKEMON_GOURGEIST_LARGE">;
+export type PokemonSettingsV0711PokemonGourgeistSmall = PokemonSettings<"V0711_POKEMON_GOURGEIST_SMALL">;
+export type PokemonSettingsV0711PokemonGourgeistSuper = PokemonSettings<"V0711_POKEMON_GOURGEIST_SUPER">;
+export type PokemonSettingsV0712PokemonBergmite = PokemonSettings<"V0712_POKEMON_BERGMITE">;
+export type PokemonSettingsV0712PokemonBergmiteNormal = PokemonSettings<"V0712_POKEMON_BERGMITE_NORMAL">;
+export type PokemonSettingsV0713PokemonAvalugg = PokemonSettings<"V0713_POKEMON_AVALUGG">;
+export type PokemonSettingsV0713PokemonAvaluggHisuian = PokemonSettings<"V0713_POKEMON_AVALUGG_HISUIAN">;
+export type PokemonSettingsV0713PokemonAvaluggNormal = PokemonSettings<"V0713_POKEMON_AVALUGG_NORMAL">;
+export type PokemonSettingsV0714PokemonNoibat = PokemonSettings<"V0714_POKEMON_NOIBAT">;
+export type PokemonSettingsV0714PokemonNoibatNormal = PokemonSettings<"V0714_POKEMON_NOIBAT_NORMAL">;
+export type PokemonSettingsV0715PokemonNoivern = PokemonSettings<"V0715_POKEMON_NOIVERN">;
+export type PokemonSettingsV0715PokemonNoivernNormal = PokemonSettings<"V0715_POKEMON_NOIVERN_NORMAL">;
+export type PokemonSettingsV0716PokemonXerneas = PokemonSettings<"V0716_POKEMON_XERNEAS">;
+export type PokemonSettingsV0716PokemonXerneasNormal = PokemonSettings<"V0716_POKEMON_XERNEAS_NORMAL">;
+export type PokemonSettingsV0717PokemonYveltal = PokemonSettings<"V0717_POKEMON_YVELTAL">;
+export type PokemonSettingsV0717PokemonYveltalNormal = PokemonSettings<"V0717_POKEMON_YVELTAL_NORMAL">;
+export type PokemonSettingsV0718PokemonZygarde = PokemonSettings<"V0718_POKEMON_ZYGARDE">;
+export type PokemonSettingsV0718PokemonZygardeComplete = PokemonSettings<"V0718_POKEMON_ZYGARDE_COMPLETE">;
+export type PokemonSettingsV0718PokemonZygardeCompleteFiftyPercent = PokemonSettings<"V0718_POKEMON_ZYGARDE_COMPLETE_FIFTY_PERCENT">;
+export type PokemonSettingsV0718PokemonZygardeCompleteTenPercent = PokemonSettings<"V0718_POKEMON_ZYGARDE_COMPLETE_TEN_PERCENT">;
+export type PokemonSettingsV0718PokemonZygardeFiftyPercent = PokemonSettings<"V0718_POKEMON_ZYGARDE_FIFTY_PERCENT">;
+export type PokemonSettingsV0718PokemonZygardeTenPercent = PokemonSettings<"V0718_POKEMON_ZYGARDE_TEN_PERCENT">;
+export type PokemonSettingsV0719PokemonDiancie = PokemonSettings<"V0719_POKEMON_DIANCIE">;
+export type PokemonSettingsV0719PokemonDiancieNormal = PokemonSettings<"V0719_POKEMON_DIANCIE_NORMAL">;
+export type PokemonSettingsV0720PokemonHoopa = PokemonSettings<"V0720_POKEMON_HOOPA">;
+export type PokemonSettingsV0720PokemonHoopaConfined = PokemonSettings<"V0720_POKEMON_HOOPA_CONFINED">;
+export type PokemonSettingsV0720PokemonHoopaUnbound = PokemonSettings<"V0720_POKEMON_HOOPA_UNBOUND">;
+export type PokemonSettingsV0721PokemonVolcanion = PokemonSettings<"V0721_POKEMON_VOLCANION">;
+export type PokemonSettingsV0721PokemonVolcanionNormal = PokemonSettings<"V0721_POKEMON_VOLCANION_NORMAL">;
+export type PokemonSettingsV0722PokemonRowlet = PokemonSettings<"V0722_POKEMON_ROWLET">;
+export type PokemonSettingsV0722PokemonRowletNormal = PokemonSettings<"V0722_POKEMON_ROWLET_NORMAL">;
+export type PokemonSettingsV0723PokemonDartrix = PokemonSettings<"V0723_POKEMON_DARTRIX">;
+export type PokemonSettingsV0723PokemonDartrixNormal = PokemonSettings<"V0723_POKEMON_DARTRIX_NORMAL">;
+export type PokemonSettingsV0724PokemonDecidueye = PokemonSettings<"V0724_POKEMON_DECIDUEYE">;
+export type PokemonSettingsV0724PokemonDecidueyeHisuian = PokemonSettings<"V0724_POKEMON_DECIDUEYE_HISUIAN">;
+export type PokemonSettingsV0724PokemonDecidueyeNormal = PokemonSettings<"V0724_POKEMON_DECIDUEYE_NORMAL">;
+export type PokemonSettingsV0725PokemonLitten = PokemonSettings<"V0725_POKEMON_LITTEN">;
+export type PokemonSettingsV0725PokemonLittenNormal = PokemonSettings<"V0725_POKEMON_LITTEN_NORMAL">;
+export type PokemonSettingsV0726PokemonTorracat = PokemonSettings<"V0726_POKEMON_TORRACAT">;
+export type PokemonSettingsV0726PokemonTorracatNormal = PokemonSettings<"V0726_POKEMON_TORRACAT_NORMAL">;
+export type PokemonSettingsV0727PokemonIncineroar = PokemonSettings<"V0727_POKEMON_INCINEROAR">;
+export type PokemonSettingsV0727PokemonIncineroarNormal = PokemonSettings<"V0727_POKEMON_INCINEROAR_NORMAL">;
+export type PokemonSettingsV0728PokemonPopplio = PokemonSettings<"V0728_POKEMON_POPPLIO">;
+export type PokemonSettingsV0728PokemonPopplioNormal = PokemonSettings<"V0728_POKEMON_POPPLIO_NORMAL">;
+export type PokemonSettingsV0729PokemonBrionne = PokemonSettings<"V0729_POKEMON_BRIONNE">;
+export type PokemonSettingsV0729PokemonBrionneNormal = PokemonSettings<"V0729_POKEMON_BRIONNE_NORMAL">;
+export type PokemonSettingsV0730PokemonPrimarina = PokemonSettings<"V0730_POKEMON_PRIMARINA">;
+export type PokemonSettingsV0730PokemonPrimarinaNormal = PokemonSettings<"V0730_POKEMON_PRIMARINA_NORMAL">;
+export type PokemonSettingsV0731PokemonPikipek = PokemonSettings<"V0731_POKEMON_PIKIPEK">;
+export type PokemonSettingsV0731PokemonPikipekNormal = PokemonSettings<"V0731_POKEMON_PIKIPEK_NORMAL">;
+export type PokemonSettingsV0732PokemonTrumbeak = PokemonSettings<"V0732_POKEMON_TRUMBEAK">;
+export type PokemonSettingsV0732PokemonTrumbeakNormal = PokemonSettings<"V0732_POKEMON_TRUMBEAK_NORMAL">;
+export type PokemonSettingsV0733PokemonToucannon = PokemonSettings<"V0733_POKEMON_TOUCANNON">;
+export type PokemonSettingsV0733PokemonToucannonNormal = PokemonSettings<"V0733_POKEMON_TOUCANNON_NORMAL">;
+export type PokemonSettingsV0734PokemonYungoos = PokemonSettings<"V0734_POKEMON_YUNGOOS">;
+export type PokemonSettingsV0734PokemonYungoosNormal = PokemonSettings<"V0734_POKEMON_YUNGOOS_NORMAL">;
+export type PokemonSettingsV0735PokemonGumshoos = PokemonSettings<"V0735_POKEMON_GUMSHOOS">;
+export type PokemonSettingsV0735PokemonGumshoosNormal = PokemonSettings<"V0735_POKEMON_GUMSHOOS_NORMAL">;
+export type PokemonSettingsV0736PokemonGrubbin = PokemonSettings<"V0736_POKEMON_GRUBBIN">;
+export type PokemonSettingsV0736PokemonGrubbinNormal = PokemonSettings<"V0736_POKEMON_GRUBBIN_NORMAL">;
+export type PokemonSettingsV0737PokemonCharjabug = PokemonSettings<"V0737_POKEMON_CHARJABUG">;
+export type PokemonSettingsV0737PokemonCharjabugNormal = PokemonSettings<"V0737_POKEMON_CHARJABUG_NORMAL">;
+export type PokemonSettingsV0737PokemonCharjabugWinter2025 = PokemonSettings<"V0737_POKEMON_CHARJABUG_WINTER_2025">;
+export type PokemonSettingsV0738PokemonVikavolt = PokemonSettings<"V0738_POKEMON_VIKAVOLT">;
+export type PokemonSettingsV0738PokemonVikavoltNormal = PokemonSettings<"V0738_POKEMON_VIKAVOLT_NORMAL">;
+export type PokemonSettingsV0738PokemonVikavoltWinter2025 = PokemonSettings<"V0738_POKEMON_VIKAVOLT_WINTER_2025">;
+export type PokemonSettingsV0739PokemonCrabrawler = PokemonSettings<"V0739_POKEMON_CRABRAWLER">;
+export type PokemonSettingsV0739PokemonCrabrawlerNormal = PokemonSettings<"V0739_POKEMON_CRABRAWLER_NORMAL">;
+export type PokemonSettingsV0740PokemonCrabominable = PokemonSettings<"V0740_POKEMON_CRABOMINABLE">;
+export type PokemonSettingsV0740PokemonCrabominableNormal = PokemonSettings<"V0740_POKEMON_CRABOMINABLE_NORMAL">;
+export type PokemonSettingsV0741PokemonOricorio = PokemonSettings<"V0741_POKEMON_ORICORIO">;
+export type PokemonSettingsV0741PokemonOricorioBaile = PokemonSettings<"V0741_POKEMON_ORICORIO_BAILE">;
+export type PokemonSettingsV0741PokemonOricorioPau = PokemonSettings<"V0741_POKEMON_ORICORIO_PAU">;
+export type PokemonSettingsV0741PokemonOricorioPompom = PokemonSettings<"V0741_POKEMON_ORICORIO_POMPOM">;
+export type PokemonSettingsV0741PokemonOricorioSensu = PokemonSettings<"V0741_POKEMON_ORICORIO_SENSU">;
+export type PokemonSettingsV0742PokemonCutiefly = PokemonSettings<"V0742_POKEMON_CUTIEFLY">;
+export type PokemonSettingsV0742PokemonCutieflyNormal = PokemonSettings<"V0742_POKEMON_CUTIEFLY_NORMAL">;
+export type PokemonSettingsV0743PokemonRibombee = PokemonSettings<"V0743_POKEMON_RIBOMBEE">;
+export type PokemonSettingsV0743PokemonRibombeeNormal = PokemonSettings<"V0743_POKEMON_RIBOMBEE_NORMAL">;
+export type PokemonSettingsV0744PokemonRockruff = PokemonSettings<"V0744_POKEMON_ROCKRUFF">;
+export type PokemonSettingsV0744PokemonRockruffDusk = PokemonSettings<"V0744_POKEMON_ROCKRUFF_DUSK">;
+export type PokemonSettingsV0744PokemonRockruffNormal = PokemonSettings<"V0744_POKEMON_ROCKRUFF_NORMAL">;
+export type PokemonSettingsV0745PokemonLycanroc = PokemonSettings<"V0745_POKEMON_LYCANROC">;
+export type PokemonSettingsV0745PokemonLycanrocDusk = PokemonSettings<"V0745_POKEMON_LYCANROC_DUSK">;
+export type PokemonSettingsV0745PokemonLycanrocMidday = PokemonSettings<"V0745_POKEMON_LYCANROC_MIDDAY">;
+export type PokemonSettingsV0745PokemonLycanrocMidnight = PokemonSettings<"V0745_POKEMON_LYCANROC_MIDNIGHT">;
+export type PokemonSettingsV0746PokemonWishiwashi = PokemonSettings<"V0746_POKEMON_WISHIWASHI">;
+export type PokemonSettingsV0746PokemonWishiwashiSchool = PokemonSettings<"V0746_POKEMON_WISHIWASHI_SCHOOL">;
+export type PokemonSettingsV0746PokemonWishiwashiSolo = PokemonSettings<"V0746_POKEMON_WISHIWASHI_SOLO">;
+export type PokemonSettingsV0747PokemonMareanie = PokemonSettings<"V0747_POKEMON_MAREANIE">;
+export type PokemonSettingsV0747PokemonMareanieNormal = PokemonSettings<"V0747_POKEMON_MAREANIE_NORMAL">;
+export type PokemonSettingsV0748PokemonToxapex = PokemonSettings<"V0748_POKEMON_TOXAPEX">;
+export type PokemonSettingsV0748PokemonToxapexNormal = PokemonSettings<"V0748_POKEMON_TOXAPEX_NORMAL">;
+export type PokemonSettingsV0749PokemonMudbray = PokemonSettings<"V0749_POKEMON_MUDBRAY">;
+export type PokemonSettingsV0749PokemonMudbrayNormal = PokemonSettings<"V0749_POKEMON_MUDBRAY_NORMAL">;
+export type PokemonSettingsV0750PokemonMudsdale = PokemonSettings<"V0750_POKEMON_MUDSDALE">;
+export type PokemonSettingsV0750PokemonMudsdaleNormal = PokemonSettings<"V0750_POKEMON_MUDSDALE_NORMAL">;
+export type PokemonSettingsV0751PokemonDewpider = PokemonSettings<"V0751_POKEMON_DEWPIDER">;
+export type PokemonSettingsV0751PokemonDewpiderNormal = PokemonSettings<"V0751_POKEMON_DEWPIDER_NORMAL">;
+export type PokemonSettingsV0752PokemonAraquanid = PokemonSettings<"V0752_POKEMON_ARAQUANID">;
+export type PokemonSettingsV0752PokemonAraquanidNormal = PokemonSettings<"V0752_POKEMON_ARAQUANID_NORMAL">;
+export type PokemonSettingsV0753PokemonFomantis = PokemonSettings<"V0753_POKEMON_FOMANTIS">;
+export type PokemonSettingsV0753PokemonFomantisNormal = PokemonSettings<"V0753_POKEMON_FOMANTIS_NORMAL">;
+export type PokemonSettingsV0754PokemonLurantis = PokemonSettings<"V0754_POKEMON_LURANTIS">;
+export type PokemonSettingsV0754PokemonLurantisNormal = PokemonSettings<"V0754_POKEMON_LURANTIS_NORMAL">;
+export type PokemonSettingsV0755PokemonMorelull = PokemonSettings<"V0755_POKEMON_MORELULL">;
+export type PokemonSettingsV0755PokemonMorelullNormal = PokemonSettings<"V0755_POKEMON_MORELULL_NORMAL">;
+export type PokemonSettingsV0756PokemonShiinotic = PokemonSettings<"V0756_POKEMON_SHIINOTIC">;
+export type PokemonSettingsV0756PokemonShiinoticNormal = PokemonSettings<"V0756_POKEMON_SHIINOTIC_NORMAL">;
+export type PokemonSettingsV0757PokemonSalandit = PokemonSettings<"V0757_POKEMON_SALANDIT">;
+export type PokemonSettingsV0757PokemonSalanditNormal = PokemonSettings<"V0757_POKEMON_SALANDIT_NORMAL">;
+export type PokemonSettingsV0758PokemonSalazzle = PokemonSettings<"V0758_POKEMON_SALAZZLE">;
+export type PokemonSettingsV0758PokemonSalazzleNormal = PokemonSettings<"V0758_POKEMON_SALAZZLE_NORMAL">;
+export type PokemonSettingsV0759PokemonStufful = PokemonSettings<"V0759_POKEMON_STUFFUL">;
+export type PokemonSettingsV0759PokemonStuffulNormal = PokemonSettings<"V0759_POKEMON_STUFFUL_NORMAL">;
+export type PokemonSettingsV0760PokemonBewear = PokemonSettings<"V0760_POKEMON_BEWEAR">;
+export type PokemonSettingsV0760PokemonBewearNormal = PokemonSettings<"V0760_POKEMON_BEWEAR_NORMAL">;
+export type PokemonSettingsV0760PokemonBewearWildarea2025 = PokemonSettings<"V0760_POKEMON_BEWEAR_WILDAREA_2025">;
+export type PokemonSettingsV0761PokemonBounsweet = PokemonSettings<"V0761_POKEMON_BOUNSWEET">;
+export type PokemonSettingsV0761PokemonBounsweetNormal = PokemonSettings<"V0761_POKEMON_BOUNSWEET_NORMAL">;
+export type PokemonSettingsV0762PokemonSteenee = PokemonSettings<"V0762_POKEMON_STEENEE">;
+export type PokemonSettingsV0762PokemonSteeneeNormal = PokemonSettings<"V0762_POKEMON_STEENEE_NORMAL">;
+export type PokemonSettingsV0763PokemonTsareena = PokemonSettings<"V0763_POKEMON_TSAREENA">;
+export type PokemonSettingsV0763PokemonTsareenaNormal = PokemonSettings<"V0763_POKEMON_TSAREENA_NORMAL">;
+export type PokemonSettingsV0764PokemonComfey = PokemonSettings<"V0764_POKEMON_COMFEY">;
+export type PokemonSettingsV0764PokemonComfeyNormal = PokemonSettings<"V0764_POKEMON_COMFEY_NORMAL">;
+export type PokemonSettingsV0765PokemonOranguru = PokemonSettings<"V0765_POKEMON_ORANGURU">;
+export type PokemonSettingsV0765PokemonOranguruNormal = PokemonSettings<"V0765_POKEMON_ORANGURU_NORMAL">;
+export type PokemonSettingsV0766PokemonPassimian = PokemonSettings<"V0766_POKEMON_PASSIMIAN">;
+export type PokemonSettingsV0766PokemonPassimianNormal = PokemonSettings<"V0766_POKEMON_PASSIMIAN_NORMAL">;
+export type PokemonSettingsV0767PokemonWimpod = PokemonSettings<"V0767_POKEMON_WIMPOD">;
+export type PokemonSettingsV0767PokemonWimpodNormal = PokemonSettings<"V0767_POKEMON_WIMPOD_NORMAL">;
+export type PokemonSettingsV0768PokemonGolisopod = PokemonSettings<"V0768_POKEMON_GOLISOPOD">;
+export type PokemonSettingsV0768PokemonGolisopodNormal = PokemonSettings<"V0768_POKEMON_GOLISOPOD_NORMAL">;
+export type PokemonSettingsV0769PokemonSandygast = PokemonSettings<"V0769_POKEMON_SANDYGAST">;
+export type PokemonSettingsV0769PokemonSandygastNormal = PokemonSettings<"V0769_POKEMON_SANDYGAST_NORMAL">;
+export type PokemonSettingsV0770PokemonPalossand = PokemonSettings<"V0770_POKEMON_PALOSSAND">;
+export type PokemonSettingsV0770PokemonPalossandNormal = PokemonSettings<"V0770_POKEMON_PALOSSAND_NORMAL">;
+export type PokemonSettingsV0771PokemonPyukumuku = PokemonSettings<"V0771_POKEMON_PYUKUMUKU">;
+export type PokemonSettingsV0771PokemonPyukumukuNormal = PokemonSettings<"V0771_POKEMON_PYUKUMUKU_NORMAL">;
+export type PokemonSettingsV0772PokemonTypeNull = PokemonSettings<"V0772_POKEMON_TYPE_NULL">;
+export type PokemonSettingsV0772PokemonTypeNullNormal = PokemonSettings<"V0772_POKEMON_TYPE_NULL_NORMAL">;
+export type PokemonSettingsV0773PokemonSilvally = PokemonSettings<"V0773_POKEMON_SILVALLY">;
+export type PokemonSettingsV0773PokemonSilvallyBug = PokemonSettings<"V0773_POKEMON_SILVALLY_BUG">;
+export type PokemonSettingsV0773PokemonSilvallyDark = PokemonSettings<"V0773_POKEMON_SILVALLY_DARK">;
+export type PokemonSettingsV0773PokemonSilvallyDragon = PokemonSettings<"V0773_POKEMON_SILVALLY_DRAGON">;
+export type PokemonSettingsV0773PokemonSilvallyElectric = PokemonSettings<"V0773_POKEMON_SILVALLY_ELECTRIC">;
+export type PokemonSettingsV0773PokemonSilvallyFairy = PokemonSettings<"V0773_POKEMON_SILVALLY_FAIRY">;
+export type PokemonSettingsV0773PokemonSilvallyFighting = PokemonSettings<"V0773_POKEMON_SILVALLY_FIGHTING">;
+export type PokemonSettingsV0773PokemonSilvallyFire = PokemonSettings<"V0773_POKEMON_SILVALLY_FIRE">;
+export type PokemonSettingsV0773PokemonSilvallyFlying = PokemonSettings<"V0773_POKEMON_SILVALLY_FLYING">;
+export type PokemonSettingsV0773PokemonSilvallyGhost = PokemonSettings<"V0773_POKEMON_SILVALLY_GHOST">;
+export type PokemonSettingsV0773PokemonSilvallyGrass = PokemonSettings<"V0773_POKEMON_SILVALLY_GRASS">;
+export type PokemonSettingsV0773PokemonSilvallyGround = PokemonSettings<"V0773_POKEMON_SILVALLY_GROUND">;
+export type PokemonSettingsV0773PokemonSilvallyIce = PokemonSettings<"V0773_POKEMON_SILVALLY_ICE">;
+export type PokemonSettingsV0773PokemonSilvallyNormal = PokemonSettings<"V0773_POKEMON_SILVALLY_NORMAL">;
+export type PokemonSettingsV0773PokemonSilvallyPoison = PokemonSettings<"V0773_POKEMON_SILVALLY_POISON">;
+export type PokemonSettingsV0773PokemonSilvallyPsychic = PokemonSettings<"V0773_POKEMON_SILVALLY_PSYCHIC">;
+export type PokemonSettingsV0773PokemonSilvallyRock = PokemonSettings<"V0773_POKEMON_SILVALLY_ROCK">;
+export type PokemonSettingsV0773PokemonSilvallySteel = PokemonSettings<"V0773_POKEMON_SILVALLY_STEEL">;
+export type PokemonSettingsV0773PokemonSilvallyWater = PokemonSettings<"V0773_POKEMON_SILVALLY_WATER">;
+export type PokemonSettingsV0774PokemonMinior = PokemonSettings<"V0774_POKEMON_MINIOR">;
+export type PokemonSettingsV0774PokemonMiniorBlue = PokemonSettings<"V0774_POKEMON_MINIOR_BLUE">;
+export type PokemonSettingsV0774PokemonMiniorGreen = PokemonSettings<"V0774_POKEMON_MINIOR_GREEN">;
+export type PokemonSettingsV0774PokemonMiniorIndigo = PokemonSettings<"V0774_POKEMON_MINIOR_INDIGO">;
+export type PokemonSettingsV0774PokemonMiniorOrange = PokemonSettings<"V0774_POKEMON_MINIOR_ORANGE">;
+export type PokemonSettingsV0774PokemonMiniorRed = PokemonSettings<"V0774_POKEMON_MINIOR_RED">;
+export type PokemonSettingsV0774PokemonMiniorViolet = PokemonSettings<"V0774_POKEMON_MINIOR_VIOLET">;
+export type PokemonSettingsV0774PokemonMiniorYellow = PokemonSettings<"V0774_POKEMON_MINIOR_YELLOW">;
+export type PokemonSettingsV0775PokemonKomala = PokemonSettings<"V0775_POKEMON_KOMALA">;
+export type PokemonSettingsV0775PokemonKomalaNormal = PokemonSettings<"V0775_POKEMON_KOMALA_NORMAL">;
+export type PokemonSettingsV0776PokemonTurtonator = PokemonSettings<"V0776_POKEMON_TURTONATOR">;
+export type PokemonSettingsV0776PokemonTurtonatorNormal = PokemonSettings<"V0776_POKEMON_TURTONATOR_NORMAL">;
+export type PokemonSettingsV0777PokemonTogedemaru = PokemonSettings<"V0777_POKEMON_TOGEDEMARU">;
+export type PokemonSettingsV0777PokemonTogedemaruNormal = PokemonSettings<"V0777_POKEMON_TOGEDEMARU_NORMAL">;
+export type PokemonSettingsV0778PokemonMimikyu = PokemonSettings<"V0778_POKEMON_MIMIKYU">;
+export type PokemonSettingsV0778PokemonMimikyuBusted = PokemonSettings<"V0778_POKEMON_MIMIKYU_BUSTED">;
+export type PokemonSettingsV0778PokemonMimikyuDisguised = PokemonSettings<"V0778_POKEMON_MIMIKYU_DISGUISED">;
+export type PokemonSettingsV0779PokemonBruxish = PokemonSettings<"V0779_POKEMON_BRUXISH">;
+export type PokemonSettingsV0779PokemonBruxishNormal = PokemonSettings<"V0779_POKEMON_BRUXISH_NORMAL">;
+export type PokemonSettingsV0780PokemonDrampa = PokemonSettings<"V0780_POKEMON_DRAMPA">;
+export type PokemonSettingsV0780PokemonDrampaNormal = PokemonSettings<"V0780_POKEMON_DRAMPA_NORMAL">;
+export type PokemonSettingsV0781PokemonDhelmise = PokemonSettings<"V0781_POKEMON_DHELMISE">;
+export type PokemonSettingsV0781PokemonDhelmiseNormal = PokemonSettings<"V0781_POKEMON_DHELMISE_NORMAL">;
+export type PokemonSettingsV0782PokemonJangmoO = PokemonSettings<"V0782_POKEMON_JANGMO_O">;
+export type PokemonSettingsV0782PokemonJangmoONormal = PokemonSettings<"V0782_POKEMON_JANGMO_O_NORMAL">;
+export type PokemonSettingsV0783PokemonHakamoO = PokemonSettings<"V0783_POKEMON_HAKAMO_O">;
+export type PokemonSettingsV0783PokemonHakamoONormal = PokemonSettings<"V0783_POKEMON_HAKAMO_O_NORMAL">;
+export type PokemonSettingsV0784PokemonKommoO = PokemonSettings<"V0784_POKEMON_KOMMO_O">;
+export type PokemonSettingsV0784PokemonKommoONormal = PokemonSettings<"V0784_POKEMON_KOMMO_O_NORMAL">;
+export type PokemonSettingsV0785PokemonTapuKoko = PokemonSettings<"V0785_POKEMON_TAPU_KOKO">;
+export type PokemonSettingsV0785PokemonTapuKokoNormal = PokemonSettings<"V0785_POKEMON_TAPU_KOKO_NORMAL">;
+export type PokemonSettingsV0786PokemonTapuLele = PokemonSettings<"V0786_POKEMON_TAPU_LELE">;
+export type PokemonSettingsV0786PokemonTapuLeleNormal = PokemonSettings<"V0786_POKEMON_TAPU_LELE_NORMAL">;
+export type PokemonSettingsV0787PokemonTapuBulu = PokemonSettings<"V0787_POKEMON_TAPU_BULU">;
+export type PokemonSettingsV0787PokemonTapuBuluNormal = PokemonSettings<"V0787_POKEMON_TAPU_BULU_NORMAL">;
+export type PokemonSettingsV0788PokemonTapuFini = PokemonSettings<"V0788_POKEMON_TAPU_FINI">;
+export type PokemonSettingsV0788PokemonTapuFiniNormal = PokemonSettings<"V0788_POKEMON_TAPU_FINI_NORMAL">;
+export type PokemonSettingsV0789PokemonCosmog = PokemonSettings<"V0789_POKEMON_COSMOG">;
+export type PokemonSettingsV0789PokemonCosmogNormal = PokemonSettings<"V0789_POKEMON_COSMOG_NORMAL">;
+export type PokemonSettingsV0790PokemonCosmoem = PokemonSettings<"V0790_POKEMON_COSMOEM">;
+export type PokemonSettingsV0790PokemonCosmoemNormal = PokemonSettings<"V0790_POKEMON_COSMOEM_NORMAL">;
+export type PokemonSettingsV0791PokemonSolgaleo = PokemonSettings<"V0791_POKEMON_SOLGALEO">;
+export type PokemonSettingsV0791PokemonSolgaleoNormal = PokemonSettings<"V0791_POKEMON_SOLGALEO_NORMAL">;
+export type PokemonSettingsV0792PokemonLunala = PokemonSettings<"V0792_POKEMON_LUNALA">;
+export type PokemonSettingsV0792PokemonLunalaNormal = PokemonSettings<"V0792_POKEMON_LUNALA_NORMAL">;
+export type PokemonSettingsV0793PokemonNihilego = PokemonSettings<"V0793_POKEMON_NIHILEGO">;
+export type PokemonSettingsV0793PokemonNihilegoNormal = PokemonSettings<"V0793_POKEMON_NIHILEGO_NORMAL">;
+export type PokemonSettingsV0794PokemonBuzzwole = PokemonSettings<"V0794_POKEMON_BUZZWOLE">;
+export type PokemonSettingsV0794PokemonBuzzwoleNormal = PokemonSettings<"V0794_POKEMON_BUZZWOLE_NORMAL">;
+export type PokemonSettingsV0795PokemonPheromosa = PokemonSettings<"V0795_POKEMON_PHEROMOSA">;
+export type PokemonSettingsV0795PokemonPheromosaNormal = PokemonSettings<"V0795_POKEMON_PHEROMOSA_NORMAL">;
+export type PokemonSettingsV0796PokemonXurkitree = PokemonSettings<"V0796_POKEMON_XURKITREE">;
+export type PokemonSettingsV0796PokemonXurkitreeNormal = PokemonSettings<"V0796_POKEMON_XURKITREE_NORMAL">;
+export type PokemonSettingsV0797PokemonCelesteela = PokemonSettings<"V0797_POKEMON_CELESTEELA">;
+export type PokemonSettingsV0797PokemonCelesteelaNormal = PokemonSettings<"V0797_POKEMON_CELESTEELA_NORMAL">;
+export type PokemonSettingsV0798PokemonKartana = PokemonSettings<"V0798_POKEMON_KARTANA">;
+export type PokemonSettingsV0798PokemonKartanaNormal = PokemonSettings<"V0798_POKEMON_KARTANA_NORMAL">;
+export type PokemonSettingsV0799PokemonGuzzlord = PokemonSettings<"V0799_POKEMON_GUZZLORD">;
+export type PokemonSettingsV0799PokemonGuzzlordNormal = PokemonSettings<"V0799_POKEMON_GUZZLORD_NORMAL">;
+export type PokemonSettingsV0800PokemonNecrozma = PokemonSettings<"V0800_POKEMON_NECROZMA">;
+export type PokemonSettingsV0800PokemonNecrozmaDawnWings = PokemonSettings<"V0800_POKEMON_NECROZMA_DAWN_WINGS">;
+export type PokemonSettingsV0800PokemonNecrozmaDuskMane = PokemonSettings<"V0800_POKEMON_NECROZMA_DUSK_MANE">;
+export type PokemonSettingsV0800PokemonNecrozmaNormal = PokemonSettings<"V0800_POKEMON_NECROZMA_NORMAL">;
+export type PokemonSettingsV0800PokemonNecrozmaUltra = PokemonSettings<"V0800_POKEMON_NECROZMA_ULTRA">;
+export type PokemonSettingsV0801PokemonMagearna = PokemonSettings<"V0801_POKEMON_MAGEARNA">;
+export type PokemonSettingsV0801PokemonMagearnaNormal = PokemonSettings<"V0801_POKEMON_MAGEARNA_NORMAL">;
+export type PokemonSettingsV0801PokemonMagearnaOriginalColor = PokemonSettings<"V0801_POKEMON_MAGEARNA_ORIGINAL_COLOR">;
+export type PokemonSettingsV0802PokemonMarshadow = PokemonSettings<"V0802_POKEMON_MARSHADOW">;
+export type PokemonSettingsV0802PokemonMarshadowNormal = PokemonSettings<"V0802_POKEMON_MARSHADOW_NORMAL">;
+export type PokemonSettingsV0803PokemonPoipole = PokemonSettings<"V0803_POKEMON_POIPOLE">;
+export type PokemonSettingsV0803PokemonPoipoleNormal = PokemonSettings<"V0803_POKEMON_POIPOLE_NORMAL">;
+export type PokemonSettingsV0804PokemonNaganadel = PokemonSettings<"V0804_POKEMON_NAGANADEL">;
+export type PokemonSettingsV0804PokemonNaganadelNormal = PokemonSettings<"V0804_POKEMON_NAGANADEL_NORMAL">;
+export type PokemonSettingsV0805PokemonStakataka = PokemonSettings<"V0805_POKEMON_STAKATAKA">;
+export type PokemonSettingsV0805PokemonStakatakaNormal = PokemonSettings<"V0805_POKEMON_STAKATAKA_NORMAL">;
+export type PokemonSettingsV0806PokemonBlacephalon = PokemonSettings<"V0806_POKEMON_BLACEPHALON">;
+export type PokemonSettingsV0806PokemonBlacephalonNormal = PokemonSettings<"V0806_POKEMON_BLACEPHALON_NORMAL">;
+export type PokemonSettingsV0807PokemonZeraora = PokemonSettings<"V0807_POKEMON_ZERAORA">;
+export type PokemonSettingsV0807PokemonZeraoraNormal = PokemonSettings<"V0807_POKEMON_ZERAORA_NORMAL">;
+export type PokemonSettingsV0808PokemonMeltan = PokemonSettings<"V0808_POKEMON_MELTAN">;
+export type PokemonSettingsV0808PokemonMeltanNormal = PokemonSettings<"V0808_POKEMON_MELTAN_NORMAL">;
+export type PokemonSettingsV0809PokemonMelmetal = PokemonSettings<"V0809_POKEMON_MELMETAL">;
+export type PokemonSettingsV0809PokemonMelmetalNormal = PokemonSettings<"V0809_POKEMON_MELMETAL_NORMAL">;
+export type PokemonSettingsV0810PokemonGrookey = PokemonSettings<"V0810_POKEMON_GROOKEY">;
+export type PokemonSettingsV0810PokemonGrookeyNormal = PokemonSettings<"V0810_POKEMON_GROOKEY_NORMAL">;
+export type PokemonSettingsV0811PokemonThwackey = PokemonSettings<"V0811_POKEMON_THWACKEY">;
+export type PokemonSettingsV0811PokemonThwackeyNormal = PokemonSettings<"V0811_POKEMON_THWACKEY_NORMAL">;
+export type PokemonSettingsV0812PokemonRillaboom = PokemonSettings<"V0812_POKEMON_RILLABOOM">;
+export type PokemonSettingsV0812PokemonRillaboomNormal = PokemonSettings<"V0812_POKEMON_RILLABOOM_NORMAL">;
+export type PokemonSettingsV0813PokemonScorbunny = PokemonSettings<"V0813_POKEMON_SCORBUNNY">;
+export type PokemonSettingsV0813PokemonScorbunnyNormal = PokemonSettings<"V0813_POKEMON_SCORBUNNY_NORMAL">;
+export type PokemonSettingsV0814PokemonRaboot = PokemonSettings<"V0814_POKEMON_RABOOT">;
+export type PokemonSettingsV0814PokemonRabootNormal = PokemonSettings<"V0814_POKEMON_RABOOT_NORMAL">;
+export type PokemonSettingsV0815PokemonCinderace = PokemonSettings<"V0815_POKEMON_CINDERACE">;
+export type PokemonSettingsV0815PokemonCinderaceNormal = PokemonSettings<"V0815_POKEMON_CINDERACE_NORMAL">;
+export type PokemonSettingsV0816PokemonSobble = PokemonSettings<"V0816_POKEMON_SOBBLE">;
+export type PokemonSettingsV0816PokemonSobbleNormal = PokemonSettings<"V0816_POKEMON_SOBBLE_NORMAL">;
+export type PokemonSettingsV0817PokemonDrizzile = PokemonSettings<"V0817_POKEMON_DRIZZILE">;
+export type PokemonSettingsV0817PokemonDrizzileNormal = PokemonSettings<"V0817_POKEMON_DRIZZILE_NORMAL">;
+export type PokemonSettingsV0818PokemonInteleon = PokemonSettings<"V0818_POKEMON_INTELEON">;
+export type PokemonSettingsV0818PokemonInteleonNormal = PokemonSettings<"V0818_POKEMON_INTELEON_NORMAL">;
+export type PokemonSettingsV0819PokemonSkwovet = PokemonSettings<"V0819_POKEMON_SKWOVET">;
+export type PokemonSettingsV0819PokemonSkwovetNormal = PokemonSettings<"V0819_POKEMON_SKWOVET_NORMAL">;
+export type PokemonSettingsV0820PokemonGreedent = PokemonSettings<"V0820_POKEMON_GREEDENT">;
+export type PokemonSettingsV0820PokemonGreedentNormal = PokemonSettings<"V0820_POKEMON_GREEDENT_NORMAL">;
+export type PokemonSettingsV0821PokemonRookidee = PokemonSettings<"V0821_POKEMON_ROOKIDEE">;
+export type PokemonSettingsV0821PokemonRookideeNormal = PokemonSettings<"V0821_POKEMON_ROOKIDEE_NORMAL">;
+export type PokemonSettingsV0822PokemonCorvisquire = PokemonSettings<"V0822_POKEMON_CORVISQUIRE">;
+export type PokemonSettingsV0822PokemonCorvisquireNormal = PokemonSettings<"V0822_POKEMON_CORVISQUIRE_NORMAL">;
+export type PokemonSettingsV0823PokemonCorviknight = PokemonSettings<"V0823_POKEMON_CORVIKNIGHT">;
+export type PokemonSettingsV0823PokemonCorviknightNormal = PokemonSettings<"V0823_POKEMON_CORVIKNIGHT_NORMAL">;
+export type PokemonSettingsV0824PokemonBlipbug = PokemonSettings<"V0824_POKEMON_BLIPBUG">;
+export type PokemonSettingsV0824PokemonBlipbugNormal = PokemonSettings<"V0824_POKEMON_BLIPBUG_NORMAL">;
+export type PokemonSettingsV0825PokemonDottler = PokemonSettings<"V0825_POKEMON_DOTTLER">;
+export type PokemonSettingsV0825PokemonDottlerNormal = PokemonSettings<"V0825_POKEMON_DOTTLER_NORMAL">;
+export type PokemonSettingsV0826PokemonOrbeetle = PokemonSettings<"V0826_POKEMON_ORBEETLE">;
+export type PokemonSettingsV0826PokemonOrbeetleNormal = PokemonSettings<"V0826_POKEMON_ORBEETLE_NORMAL">;
+export type PokemonSettingsV0827PokemonNickit = PokemonSettings<"V0827_POKEMON_NICKIT">;
+export type PokemonSettingsV0827PokemonNickitNormal = PokemonSettings<"V0827_POKEMON_NICKIT_NORMAL">;
+export type PokemonSettingsV0828PokemonThievul = PokemonSettings<"V0828_POKEMON_THIEVUL">;
+export type PokemonSettingsV0828PokemonThievulNormal = PokemonSettings<"V0828_POKEMON_THIEVUL_NORMAL">;
+export type PokemonSettingsV0829PokemonGossifleur = PokemonSettings<"V0829_POKEMON_GOSSIFLEUR">;
+export type PokemonSettingsV0829PokemonGossifleurNormal = PokemonSettings<"V0829_POKEMON_GOSSIFLEUR_NORMAL">;
+export type PokemonSettingsV0830PokemonEldegoss = PokemonSettings<"V0830_POKEMON_ELDEGOSS">;
+export type PokemonSettingsV0830PokemonEldegossNormal = PokemonSettings<"V0830_POKEMON_ELDEGOSS_NORMAL">;
+export type PokemonSettingsV0831PokemonWooloo = PokemonSettings<"V0831_POKEMON_WOOLOO">;
+export type PokemonSettingsV0831PokemonWoolooNormal = PokemonSettings<"V0831_POKEMON_WOOLOO_NORMAL">;
+export type PokemonSettingsV0832PokemonDubwool = PokemonSettings<"V0832_POKEMON_DUBWOOL">;
+export type PokemonSettingsV0832PokemonDubwoolNormal = PokemonSettings<"V0832_POKEMON_DUBWOOL_NORMAL">;
+export type PokemonSettingsV0833PokemonChewtle = PokemonSettings<"V0833_POKEMON_CHEWTLE">;
+export type PokemonSettingsV0833PokemonChewtleNormal = PokemonSettings<"V0833_POKEMON_CHEWTLE_NORMAL">;
+export type PokemonSettingsV0834PokemonDrednaw = PokemonSettings<"V0834_POKEMON_DREDNAW">;
+export type PokemonSettingsV0834PokemonDrednawNormal = PokemonSettings<"V0834_POKEMON_DREDNAW_NORMAL">;
+export type PokemonSettingsV0835PokemonYamper = PokemonSettings<"V0835_POKEMON_YAMPER">;
+export type PokemonSettingsV0835PokemonYamperNormal = PokemonSettings<"V0835_POKEMON_YAMPER_NORMAL">;
+export type PokemonSettingsV0836PokemonBoltund = PokemonSettings<"V0836_POKEMON_BOLTUND">;
+export type PokemonSettingsV0836PokemonBoltundNormal = PokemonSettings<"V0836_POKEMON_BOLTUND_NORMAL">;
+export type PokemonSettingsV0837PokemonRolycoly = PokemonSettings<"V0837_POKEMON_ROLYCOLY">;
+export type PokemonSettingsV0837PokemonRolycolyNormal = PokemonSettings<"V0837_POKEMON_ROLYCOLY_NORMAL">;
+export type PokemonSettingsV0838PokemonCarkol = PokemonSettings<"V0838_POKEMON_CARKOL">;
+export type PokemonSettingsV0838PokemonCarkolNormal = PokemonSettings<"V0838_POKEMON_CARKOL_NORMAL">;
+export type PokemonSettingsV0839PokemonCoalossal = PokemonSettings<"V0839_POKEMON_COALOSSAL">;
+export type PokemonSettingsV0839PokemonCoalossalNormal = PokemonSettings<"V0839_POKEMON_COALOSSAL_NORMAL">;
+export type PokemonSettingsV0840PokemonApplin = PokemonSettings<"V0840_POKEMON_APPLIN">;
+export type PokemonSettingsV0840PokemonApplinNormal = PokemonSettings<"V0840_POKEMON_APPLIN_NORMAL">;
+export type PokemonSettingsV0841PokemonFlapple = PokemonSettings<"V0841_POKEMON_FLAPPLE">;
+export type PokemonSettingsV0841PokemonFlappleNormal = PokemonSettings<"V0841_POKEMON_FLAPPLE_NORMAL">;
+export type PokemonSettingsV0842PokemonAppletun = PokemonSettings<"V0842_POKEMON_APPLETUN">;
+export type PokemonSettingsV0842PokemonAppletunNormal = PokemonSettings<"V0842_POKEMON_APPLETUN_NORMAL">;
+export type PokemonSettingsV0843PokemonSilicobra = PokemonSettings<"V0843_POKEMON_SILICOBRA">;
+export type PokemonSettingsV0843PokemonSilicobraNormal = PokemonSettings<"V0843_POKEMON_SILICOBRA_NORMAL">;
+export type PokemonSettingsV0844PokemonSandaconda = PokemonSettings<"V0844_POKEMON_SANDACONDA">;
+export type PokemonSettingsV0844PokemonSandacondaNormal = PokemonSettings<"V0844_POKEMON_SANDACONDA_NORMAL">;
+export type PokemonSettingsV0845PokemonCramorant = PokemonSettings<"V0845_POKEMON_CRAMORANT">;
+export type PokemonSettingsV0845PokemonCramorantNormal = PokemonSettings<"V0845_POKEMON_CRAMORANT_NORMAL">;
+export type PokemonSettingsV0846PokemonArrokuda = PokemonSettings<"V0846_POKEMON_ARROKUDA">;
+export type PokemonSettingsV0846PokemonArrokudaNormal = PokemonSettings<"V0846_POKEMON_ARROKUDA_NORMAL">;
+export type PokemonSettingsV0847PokemonBarraskewda = PokemonSettings<"V0847_POKEMON_BARRASKEWDA">;
+export type PokemonSettingsV0847PokemonBarraskewdaNormal = PokemonSettings<"V0847_POKEMON_BARRASKEWDA_NORMAL">;
+export type PokemonSettingsV0848PokemonToxel = PokemonSettings<"V0848_POKEMON_TOXEL">;
+export type PokemonSettingsV0848PokemonToxelNormal = PokemonSettings<"V0848_POKEMON_TOXEL_NORMAL">;
+export type PokemonSettingsV0849PokemonToxtricity = PokemonSettings<"V0849_POKEMON_TOXTRICITY">;
+export type PokemonSettingsV0849PokemonToxtricityAmped = PokemonSettings<"V0849_POKEMON_TOXTRICITY_AMPED">;
+export type PokemonSettingsV0849PokemonToxtricityLowKey = PokemonSettings<"V0849_POKEMON_TOXTRICITY_LOW_KEY">;
+export type PokemonSettingsV0850PokemonSizzlipede = PokemonSettings<"V0850_POKEMON_SIZZLIPEDE">;
+export type PokemonSettingsV0850PokemonSizzlipedeNormal = PokemonSettings<"V0850_POKEMON_SIZZLIPEDE_NORMAL">;
+export type PokemonSettingsV0851PokemonCentiskorch = PokemonSettings<"V0851_POKEMON_CENTISKORCH">;
+export type PokemonSettingsV0851PokemonCentiskorchNormal = PokemonSettings<"V0851_POKEMON_CENTISKORCH_NORMAL">;
+export type PokemonSettingsV0852PokemonClobbopus = PokemonSettings<"V0852_POKEMON_CLOBBOPUS">;
+export type PokemonSettingsV0852PokemonClobbopusNormal = PokemonSettings<"V0852_POKEMON_CLOBBOPUS_NORMAL">;
+export type PokemonSettingsV0853PokemonGrapploct = PokemonSettings<"V0853_POKEMON_GRAPPLOCT">;
+export type PokemonSettingsV0853PokemonGrapploctNormal = PokemonSettings<"V0853_POKEMON_GRAPPLOCT_NORMAL">;
+export type PokemonSettingsV0854PokemonSinistea = PokemonSettings<"V0854_POKEMON_SINISTEA">;
+export type PokemonSettingsV0854PokemonSinisteaAntique = PokemonSettings<"V0854_POKEMON_SINISTEA_ANTIQUE">;
+export type PokemonSettingsV0854PokemonSinisteaPhony = PokemonSettings<"V0854_POKEMON_SINISTEA_PHONY">;
+export type PokemonSettingsV0855PokemonPolteageist = PokemonSettings<"V0855_POKEMON_POLTEAGEIST">;
+export type PokemonSettingsV0855PokemonPolteageistAntique = PokemonSettings<"V0855_POKEMON_POLTEAGEIST_ANTIQUE">;
+export type PokemonSettingsV0855PokemonPolteageistPhony = PokemonSettings<"V0855_POKEMON_POLTEAGEIST_PHONY">;
+export type PokemonSettingsV0856PokemonHatenna = PokemonSettings<"V0856_POKEMON_HATENNA">;
+export type PokemonSettingsV0856PokemonHatennaNormal = PokemonSettings<"V0856_POKEMON_HATENNA_NORMAL">;
+export type PokemonSettingsV0857PokemonHattrem = PokemonSettings<"V0857_POKEMON_HATTREM">;
+export type PokemonSettingsV0857PokemonHattremNormal = PokemonSettings<"V0857_POKEMON_HATTREM_NORMAL">;
+export type PokemonSettingsV0858PokemonHatterene = PokemonSettings<"V0858_POKEMON_HATTERENE">;
+export type PokemonSettingsV0858PokemonHattereneNormal = PokemonSettings<"V0858_POKEMON_HATTERENE_NORMAL">;
+export type PokemonSettingsV0859PokemonImpidimp = PokemonSettings<"V0859_POKEMON_IMPIDIMP">;
+export type PokemonSettingsV0859PokemonImpidimpNormal = PokemonSettings<"V0859_POKEMON_IMPIDIMP_NORMAL">;
+export type PokemonSettingsV0860PokemonMorgrem = PokemonSettings<"V0860_POKEMON_MORGREM">;
+export type PokemonSettingsV0860PokemonMorgremNormal = PokemonSettings<"V0860_POKEMON_MORGREM_NORMAL">;
+export type PokemonSettingsV0861PokemonGrimmsnarl = PokemonSettings<"V0861_POKEMON_GRIMMSNARL">;
+export type PokemonSettingsV0861PokemonGrimmsnarlNormal = PokemonSettings<"V0861_POKEMON_GRIMMSNARL_NORMAL">;
+export type PokemonSettingsV0862PokemonObstagoon = PokemonSettings<"V0862_POKEMON_OBSTAGOON">;
+export type PokemonSettingsV0862PokemonObstagoonNormal = PokemonSettings<"V0862_POKEMON_OBSTAGOON_NORMAL">;
+export type PokemonSettingsV0863PokemonPerrserker = PokemonSettings<"V0863_POKEMON_PERRSERKER">;
+export type PokemonSettingsV0863PokemonPerrserkerNormal = PokemonSettings<"V0863_POKEMON_PERRSERKER_NORMAL">;
+export type PokemonSettingsV0864PokemonCursola = PokemonSettings<"V0864_POKEMON_CURSOLA">;
+export type PokemonSettingsV0864PokemonCursolaNormal = PokemonSettings<"V0864_POKEMON_CURSOLA_NORMAL">;
+export type PokemonSettingsV0865PokemonSirfetchd = PokemonSettings<"V0865_POKEMON_SIRFETCHD">;
+export type PokemonSettingsV0865PokemonSirfetchdNormal = PokemonSettings<"V0865_POKEMON_SIRFETCHD_NORMAL">;
+export type PokemonSettingsV0866PokemonMrRime = PokemonSettings<"V0866_POKEMON_MR_RIME">;
+export type PokemonSettingsV0866PokemonMrRimeNormal = PokemonSettings<"V0866_POKEMON_MR_RIME_NORMAL">;
+export type PokemonSettingsV0867PokemonRunerigus = PokemonSettings<"V0867_POKEMON_RUNERIGUS">;
+export type PokemonSettingsV0867PokemonRunerigusNormal = PokemonSettings<"V0867_POKEMON_RUNERIGUS_NORMAL">;
+export type PokemonSettingsV0868PokemonMilcery = PokemonSettings<"V0868_POKEMON_MILCERY">;
+export type PokemonSettingsV0868PokemonMilceryNormal = PokemonSettings<"V0868_POKEMON_MILCERY_NORMAL">;
+export type PokemonSettingsV0869PokemonAlcremie = PokemonSettings<"V0869_POKEMON_ALCREMIE">;
+export type PokemonSettingsV0869PokemonAlcremieNormal = PokemonSettings<"V0869_POKEMON_ALCREMIE_NORMAL">;
+export type PokemonSettingsV0870PokemonFalinks = PokemonSettings<"V0870_POKEMON_FALINKS">;
+export type PokemonSettingsV0870PokemonFalinksGofest2025TrainConductor = PokemonSettings<"V0870_POKEMON_FALINKS_GOFEST_2025_TRAIN_CONDUCTOR">;
+export type PokemonSettingsV0870PokemonFalinksNormal = PokemonSettings<"V0870_POKEMON_FALINKS_NORMAL">;
+export type PokemonSettingsV0871PokemonPincurchin = PokemonSettings<"V0871_POKEMON_PINCURCHIN">;
+export type PokemonSettingsV0871PokemonPincurchinNormal = PokemonSettings<"V0871_POKEMON_PINCURCHIN_NORMAL">;
+export type PokemonSettingsV0872PokemonSnom = PokemonSettings<"V0872_POKEMON_SNOM">;
+export type PokemonSettingsV0872PokemonSnomNormal = PokemonSettings<"V0872_POKEMON_SNOM_NORMAL">;
+export type PokemonSettingsV0873PokemonFrosmoth = PokemonSettings<"V0873_POKEMON_FROSMOTH">;
+export type PokemonSettingsV0873PokemonFrosmothNormal = PokemonSettings<"V0873_POKEMON_FROSMOTH_NORMAL">;
+export type PokemonSettingsV0874PokemonStonjourner = PokemonSettings<"V0874_POKEMON_STONJOURNER">;
+export type PokemonSettingsV0874PokemonStonjournerNormal = PokemonSettings<"V0874_POKEMON_STONJOURNER_NORMAL">;
+export type PokemonSettingsV0875PokemonEiscue = PokemonSettings<"V0875_POKEMON_EISCUE">;
+export type PokemonSettingsV0875PokemonEiscueIce = PokemonSettings<"V0875_POKEMON_EISCUE_ICE">;
+export type PokemonSettingsV0875PokemonEiscueNoice = PokemonSettings<"V0875_POKEMON_EISCUE_NOICE">;
+export type PokemonSettingsV0876PokemonIndeedee = PokemonSettings<"V0876_POKEMON_INDEEDEE">;
+export type PokemonSettingsV0876PokemonIndeedeeFemale = PokemonSettings<"V0876_POKEMON_INDEEDEE_FEMALE">;
+export type PokemonSettingsV0876PokemonIndeedeeMale = PokemonSettings<"V0876_POKEMON_INDEEDEE_MALE">;
+export type PokemonSettingsV0877PokemonMorpeko = PokemonSettings<"V0877_POKEMON_MORPEKO">;
+export type PokemonSettingsV0877PokemonMorpekoFullBelly = PokemonSettings<"V0877_POKEMON_MORPEKO_FULL_BELLY">;
+export type PokemonSettingsV0877PokemonMorpekoHangry = PokemonSettings<"V0877_POKEMON_MORPEKO_HANGRY">;
+export type PokemonSettingsV0878PokemonCufant = PokemonSettings<"V0878_POKEMON_CUFANT">;
+export type PokemonSettingsV0878PokemonCufantNormal = PokemonSettings<"V0878_POKEMON_CUFANT_NORMAL">;
+export type PokemonSettingsV0879PokemonCopperajah = PokemonSettings<"V0879_POKEMON_COPPERAJAH">;
+export type PokemonSettingsV0879PokemonCopperajahNormal = PokemonSettings<"V0879_POKEMON_COPPERAJAH_NORMAL">;
+export type PokemonSettingsV0880PokemonDracozolt = PokemonSettings<"V0880_POKEMON_DRACOZOLT">;
+export type PokemonSettingsV0880PokemonDracozoltNormal = PokemonSettings<"V0880_POKEMON_DRACOZOLT_NORMAL">;
+export type PokemonSettingsV0881PokemonArctozolt = PokemonSettings<"V0881_POKEMON_ARCTOZOLT">;
+export type PokemonSettingsV0881PokemonArctozoltNormal = PokemonSettings<"V0881_POKEMON_ARCTOZOLT_NORMAL">;
+export type PokemonSettingsV0882PokemonDracovish = PokemonSettings<"V0882_POKEMON_DRACOVISH">;
+export type PokemonSettingsV0882PokemonDracovishNormal = PokemonSettings<"V0882_POKEMON_DRACOVISH_NORMAL">;
+export type PokemonSettingsV0883PokemonArctovish = PokemonSettings<"V0883_POKEMON_ARCTOVISH">;
+export type PokemonSettingsV0883PokemonArctovishNormal = PokemonSettings<"V0883_POKEMON_ARCTOVISH_NORMAL">;
+export type PokemonSettingsV0884PokemonDuraludon = PokemonSettings<"V0884_POKEMON_DURALUDON">;
+export type PokemonSettingsV0884PokemonDuraludonNormal = PokemonSettings<"V0884_POKEMON_DURALUDON_NORMAL">;
+export type PokemonSettingsV0885PokemonDreepy = PokemonSettings<"V0885_POKEMON_DREEPY">;
+export type PokemonSettingsV0885PokemonDreepyNormal = PokemonSettings<"V0885_POKEMON_DREEPY_NORMAL">;
+export type PokemonSettingsV0886PokemonDrakloak = PokemonSettings<"V0886_POKEMON_DRAKLOAK">;
+export type PokemonSettingsV0886PokemonDrakloakNormal = PokemonSettings<"V0886_POKEMON_DRAKLOAK_NORMAL">;
+export type PokemonSettingsV0887PokemonDragapult = PokemonSettings<"V0887_POKEMON_DRAGAPULT">;
+export type PokemonSettingsV0887PokemonDragapultNormal = PokemonSettings<"V0887_POKEMON_DRAGAPULT_NORMAL">;
+export type PokemonSettingsV0888PokemonZacian = PokemonSettings<"V0888_POKEMON_ZACIAN">;
+export type PokemonSettingsV0888PokemonZacianCrownedSword = PokemonSettings<"V0888_POKEMON_ZACIAN_CROWNED_SWORD">;
+export type PokemonSettingsV0888PokemonZacianHero = PokemonSettings<"V0888_POKEMON_ZACIAN_HERO">;
+export type PokemonSettingsV0889PokemonZamazenta = PokemonSettings<"V0889_POKEMON_ZAMAZENTA">;
+export type PokemonSettingsV0889PokemonZamazentaCrownedShield = PokemonSettings<"V0889_POKEMON_ZAMAZENTA_CROWNED_SHIELD">;
+export type PokemonSettingsV0889PokemonZamazentaHero = PokemonSettings<"V0889_POKEMON_ZAMAZENTA_HERO">;
+export type PokemonSettingsV0890PokemonEternatus = PokemonSettings<"V0890_POKEMON_ETERNATUS">;
+export type PokemonSettingsV0890PokemonEternatusEternamax = PokemonSettings<"V0890_POKEMON_ETERNATUS_ETERNAMAX">;
+export type PokemonSettingsV0890PokemonEternatusNormal = PokemonSettings<"V0890_POKEMON_ETERNATUS_NORMAL">;
+export type PokemonSettingsV0891PokemonKubfu = PokemonSettings<"V0891_POKEMON_KUBFU">;
+export type PokemonSettingsV0891PokemonKubfuNormal = PokemonSettings<"V0891_POKEMON_KUBFU_NORMAL">;
+export type PokemonSettingsV0892PokemonUrshifu = PokemonSettings<"V0892_POKEMON_URSHIFU">;
+export type PokemonSettingsV0892PokemonUrshifuRapidStrike = PokemonSettings<"V0892_POKEMON_URSHIFU_RAPID_STRIKE">;
+export type PokemonSettingsV0892PokemonUrshifuSingleStrike = PokemonSettings<"V0892_POKEMON_URSHIFU_SINGLE_STRIKE">;
+export type PokemonSettingsV0893PokemonZarude = PokemonSettings<"V0893_POKEMON_ZARUDE">;
+export type PokemonSettingsV0893PokemonZarudeNormal = PokemonSettings<"V0893_POKEMON_ZARUDE_NORMAL">;
+export type PokemonSettingsV0894PokemonRegieleki = PokemonSettings<"V0894_POKEMON_REGIELEKI">;
+export type PokemonSettingsV0894PokemonRegielekiNormal = PokemonSettings<"V0894_POKEMON_REGIELEKI_NORMAL">;
+export type PokemonSettingsV0895PokemonRegidrago = PokemonSettings<"V0895_POKEMON_REGIDRAGO">;
+export type PokemonSettingsV0895PokemonRegidragoNormal = PokemonSettings<"V0895_POKEMON_REGIDRAGO_NORMAL">;
+export type PokemonSettingsV0896PokemonGlastrier = PokemonSettings<"V0896_POKEMON_GLASTRIER">;
+export type PokemonSettingsV0896PokemonGlastrierNormal = PokemonSettings<"V0896_POKEMON_GLASTRIER_NORMAL">;
+export type PokemonSettingsV0897PokemonSpectrier = PokemonSettings<"V0897_POKEMON_SPECTRIER">;
+export type PokemonSettingsV0897PokemonSpectrierNormal = PokemonSettings<"V0897_POKEMON_SPECTRIER_NORMAL">;
+export type PokemonSettingsV0898PokemonCalyrex = PokemonSettings<"V0898_POKEMON_CALYREX">;
+export type PokemonSettingsV0898PokemonCalyrexIceRider = PokemonSettings<"V0898_POKEMON_CALYREX_ICE_RIDER">;
+export type PokemonSettingsV0898PokemonCalyrexNormal = PokemonSettings<"V0898_POKEMON_CALYREX_NORMAL">;
+export type PokemonSettingsV0898PokemonCalyrexShadowRider = PokemonSettings<"V0898_POKEMON_CALYREX_SHADOW_RIDER">;
+export type PokemonSettingsV0899PokemonWyrdeer = PokemonSettings<"V0899_POKEMON_WYRDEER">;
+export type PokemonSettingsV0899PokemonWyrdeerNormal = PokemonSettings<"V0899_POKEMON_WYRDEER_NORMAL">;
+export type PokemonSettingsV0900PokemonKleavor = PokemonSettings<"V0900_POKEMON_KLEAVOR">;
+export type PokemonSettingsV0900PokemonKleavorNormal = PokemonSettings<"V0900_POKEMON_KLEAVOR_NORMAL">;
+export type PokemonSettingsV0901PokemonUrsaluna = PokemonSettings<"V0901_POKEMON_URSALUNA">;
+export type PokemonSettingsV0901PokemonUrsalunaNormal = PokemonSettings<"V0901_POKEMON_URSALUNA_NORMAL">;
+export type PokemonSettingsV0903PokemonSneasler = PokemonSettings<"V0903_POKEMON_SNEASLER">;
+export type PokemonSettingsV0903PokemonSneaslerNormal = PokemonSettings<"V0903_POKEMON_SNEASLER_NORMAL">;
+export type PokemonSettingsV0904PokemonOverqwil = PokemonSettings<"V0904_POKEMON_OVERQWIL">;
+export type PokemonSettingsV0904PokemonOverqwilNormal = PokemonSettings<"V0904_POKEMON_OVERQWIL_NORMAL">;
+export type PokemonSettingsV0905PokemonEnamorus = PokemonSettings<"V0905_POKEMON_ENAMORUS">;
+export type PokemonSettingsV0905PokemonEnamorusIncarnate = PokemonSettings<"V0905_POKEMON_ENAMORUS_INCARNATE">;
+export type PokemonSettingsV0905PokemonEnamorusTherian = PokemonSettings<"V0905_POKEMON_ENAMORUS_THERIAN">;
+export type PokemonSettingsV0906PokemonSprigatito = PokemonSettings<"V0906_POKEMON_SPRIGATITO">;
+export type PokemonSettingsV0906PokemonSprigatitoNormal = PokemonSettings<"V0906_POKEMON_SPRIGATITO_NORMAL">;
+export type PokemonSettingsV0907PokemonFloragato = PokemonSettings<"V0907_POKEMON_FLORAGATO">;
+export type PokemonSettingsV0907PokemonFloragatoNormal = PokemonSettings<"V0907_POKEMON_FLORAGATO_NORMAL">;
+export type PokemonSettingsV0908PokemonMeowscarada = PokemonSettings<"V0908_POKEMON_MEOWSCARADA">;
+export type PokemonSettingsV0908PokemonMeowscaradaNormal = PokemonSettings<"V0908_POKEMON_MEOWSCARADA_NORMAL">;
+export type PokemonSettingsV0909PokemonFuecoco = PokemonSettings<"V0909_POKEMON_FUECOCO">;
+export type PokemonSettingsV0909PokemonFuecocoNormal = PokemonSettings<"V0909_POKEMON_FUECOCO_NORMAL">;
+export type PokemonSettingsV0910PokemonCrocalor = PokemonSettings<"V0910_POKEMON_CROCALOR">;
+export type PokemonSettingsV0910PokemonCrocalorNormal = PokemonSettings<"V0910_POKEMON_CROCALOR_NORMAL">;
+export type PokemonSettingsV0911PokemonSkeledirge = PokemonSettings<"V0911_POKEMON_SKELEDIRGE">;
+export type PokemonSettingsV0911PokemonSkeledirgeNormal = PokemonSettings<"V0911_POKEMON_SKELEDIRGE_NORMAL">;
+export type PokemonSettingsV0912PokemonQuaxly = PokemonSettings<"V0912_POKEMON_QUAXLY">;
+export type PokemonSettingsV0912PokemonQuaxlyNormal = PokemonSettings<"V0912_POKEMON_QUAXLY_NORMAL">;
+export type PokemonSettingsV0913PokemonQuaxwell = PokemonSettings<"V0913_POKEMON_QUAXWELL">;
+export type PokemonSettingsV0913PokemonQuaxwellNormal = PokemonSettings<"V0913_POKEMON_QUAXWELL_NORMAL">;
+export type PokemonSettingsV0914PokemonQuaquaval = PokemonSettings<"V0914_POKEMON_QUAQUAVAL">;
+export type PokemonSettingsV0914PokemonQuaquavalNormal = PokemonSettings<"V0914_POKEMON_QUAQUAVAL_NORMAL">;
+export type PokemonSettingsV0915PokemonLechonk = PokemonSettings<"V0915_POKEMON_LECHONK">;
+export type PokemonSettingsV0915PokemonLechonkNormal = PokemonSettings<"V0915_POKEMON_LECHONK_NORMAL">;
+export type PokemonSettingsV0916PokemonOinkologne = PokemonSettings<"V0916_POKEMON_OINKOLOGNE">;
+export type PokemonSettingsV0916PokemonOinkologneFemale = PokemonSettings<"V0916_POKEMON_OINKOLOGNE_FEMALE">;
+export type PokemonSettingsV0916PokemonOinkologneNormal = PokemonSettings<"V0916_POKEMON_OINKOLOGNE_NORMAL">;
+export type PokemonSettingsV0917PokemonTarountula = PokemonSettings<"V0917_POKEMON_TAROUNTULA">;
+export type PokemonSettingsV0917PokemonTarountulaNormal = PokemonSettings<"V0917_POKEMON_TAROUNTULA_NORMAL">;
+export type PokemonSettingsV0918PokemonSpidops = PokemonSettings<"V0918_POKEMON_SPIDOPS">;
+export type PokemonSettingsV0918PokemonSpidopsNormal = PokemonSettings<"V0918_POKEMON_SPIDOPS_NORMAL">;
+export type PokemonSettingsV0919PokemonNymble = PokemonSettings<"V0919_POKEMON_NYMBLE">;
+export type PokemonSettingsV0919PokemonNymbleNormal = PokemonSettings<"V0919_POKEMON_NYMBLE_NORMAL">;
+export type PokemonSettingsV0920PokemonLokix = PokemonSettings<"V0920_POKEMON_LOKIX">;
+export type PokemonSettingsV0920PokemonLokixNormal = PokemonSettings<"V0920_POKEMON_LOKIX_NORMAL">;
+export type PokemonSettingsV0921PokemonPawmi = PokemonSettings<"V0921_POKEMON_PAWMI">;
+export type PokemonSettingsV0921PokemonPawmiNormal = PokemonSettings<"V0921_POKEMON_PAWMI_NORMAL">;
+export type PokemonSettingsV0922PokemonPawmo = PokemonSettings<"V0922_POKEMON_PAWMO">;
+export type PokemonSettingsV0922PokemonPawmoNormal = PokemonSettings<"V0922_POKEMON_PAWMO_NORMAL">;
+export type PokemonSettingsV0923PokemonPawmot = PokemonSettings<"V0923_POKEMON_PAWMOT">;
+export type PokemonSettingsV0923PokemonPawmotNormal = PokemonSettings<"V0923_POKEMON_PAWMOT_NORMAL">;
+export type PokemonSettingsV0924PokemonTandemaus = PokemonSettings<"V0924_POKEMON_TANDEMAUS">;
+export type PokemonSettingsV0924PokemonTandemausNormal = PokemonSettings<"V0924_POKEMON_TANDEMAUS_NORMAL">;
+export type PokemonSettingsV0925PokemonMaushold = PokemonSettings<"V0925_POKEMON_MAUSHOLD">;
+export type PokemonSettingsV0925PokemonMausholdFamilyOfFour = PokemonSettings<"V0925_POKEMON_MAUSHOLD_FAMILY_OF_FOUR">;
+export type PokemonSettingsV0925PokemonMausholdFamilyOfThree = PokemonSettings<"V0925_POKEMON_MAUSHOLD_FAMILY_OF_THREE">;
+export type PokemonSettingsV0926PokemonFidough = PokemonSettings<"V0926_POKEMON_FIDOUGH">;
+export type PokemonSettingsV0926PokemonFidoughNormal = PokemonSettings<"V0926_POKEMON_FIDOUGH_NORMAL">;
+export type PokemonSettingsV0927PokemonDachsbun = PokemonSettings<"V0927_POKEMON_DACHSBUN">;
+export type PokemonSettingsV0927PokemonDachsbunNormal = PokemonSettings<"V0927_POKEMON_DACHSBUN_NORMAL">;
+export type PokemonSettingsV0928PokemonSmoliv = PokemonSettings<"V0928_POKEMON_SMOLIV">;
+export type PokemonSettingsV0928PokemonSmolivNormal = PokemonSettings<"V0928_POKEMON_SMOLIV_NORMAL">;
+export type PokemonSettingsV0929PokemonDolliv = PokemonSettings<"V0929_POKEMON_DOLLIV">;
+export type PokemonSettingsV0929PokemonDollivNormal = PokemonSettings<"V0929_POKEMON_DOLLIV_NORMAL">;
+export type PokemonSettingsV0930PokemonArboliva = PokemonSettings<"V0930_POKEMON_ARBOLIVA">;
+export type PokemonSettingsV0930PokemonArbolivaNormal = PokemonSettings<"V0930_POKEMON_ARBOLIVA_NORMAL">;
+export type PokemonSettingsV0931PokemonSquawkabilly = PokemonSettings<"V0931_POKEMON_SQUAWKABILLY">;
+export type PokemonSettingsV0931PokemonSquawkabillyBlue = PokemonSettings<"V0931_POKEMON_SQUAWKABILLY_BLUE">;
+export type PokemonSettingsV0931PokemonSquawkabillyGreen = PokemonSettings<"V0931_POKEMON_SQUAWKABILLY_GREEN">;
+export type PokemonSettingsV0931PokemonSquawkabillyWhite = PokemonSettings<"V0931_POKEMON_SQUAWKABILLY_WHITE">;
+export type PokemonSettingsV0931PokemonSquawkabillyYellow = PokemonSettings<"V0931_POKEMON_SQUAWKABILLY_YELLOW">;
+export type PokemonSettingsV0932PokemonNacli = PokemonSettings<"V0932_POKEMON_NACLI">;
+export type PokemonSettingsV0932PokemonNacliNormal = PokemonSettings<"V0932_POKEMON_NACLI_NORMAL">;
+export type PokemonSettingsV0933PokemonNaclstack = PokemonSettings<"V0933_POKEMON_NACLSTACK">;
+export type PokemonSettingsV0933PokemonNaclstackNormal = PokemonSettings<"V0933_POKEMON_NACLSTACK_NORMAL">;
+export type PokemonSettingsV0934PokemonGarganacl = PokemonSettings<"V0934_POKEMON_GARGANACL">;
+export type PokemonSettingsV0934PokemonGarganaclNormal = PokemonSettings<"V0934_POKEMON_GARGANACL_NORMAL">;
+export type PokemonSettingsV0935PokemonCharcadet = PokemonSettings<"V0935_POKEMON_CHARCADET">;
+export type PokemonSettingsV0935PokemonCharcadetNormal = PokemonSettings<"V0935_POKEMON_CHARCADET_NORMAL">;
+export type PokemonSettingsV0936PokemonArmarouge = PokemonSettings<"V0936_POKEMON_ARMAROUGE">;
+export type PokemonSettingsV0936PokemonArmarougeNormal = PokemonSettings<"V0936_POKEMON_ARMAROUGE_NORMAL">;
+export type PokemonSettingsV0937PokemonCeruledge = PokemonSettings<"V0937_POKEMON_CERULEDGE">;
+export type PokemonSettingsV0937PokemonCeruledgeNormal = PokemonSettings<"V0937_POKEMON_CERULEDGE_NORMAL">;
+export type PokemonSettingsV0938PokemonTadbulb = PokemonSettings<"V0938_POKEMON_TADBULB">;
+export type PokemonSettingsV0938PokemonTadbulbNormal = PokemonSettings<"V0938_POKEMON_TADBULB_NORMAL">;
+export type PokemonSettingsV0939PokemonBellibolt = PokemonSettings<"V0939_POKEMON_BELLIBOLT">;
+export type PokemonSettingsV0939PokemonBelliboltNormal = PokemonSettings<"V0939_POKEMON_BELLIBOLT_NORMAL">;
+export type PokemonSettingsV0940PokemonWattrel = PokemonSettings<"V0940_POKEMON_WATTREL">;
+export type PokemonSettingsV0940PokemonWattrelNormal = PokemonSettings<"V0940_POKEMON_WATTREL_NORMAL">;
+export type PokemonSettingsV0941PokemonKilowattrel = PokemonSettings<"V0941_POKEMON_KILOWATTREL">;
+export type PokemonSettingsV0941PokemonKilowattrelNormal = PokemonSettings<"V0941_POKEMON_KILOWATTREL_NORMAL">;
+export type PokemonSettingsV0942PokemonMaschiff = PokemonSettings<"V0942_POKEMON_MASCHIFF">;
+export type PokemonSettingsV0942PokemonMaschiffNormal = PokemonSettings<"V0942_POKEMON_MASCHIFF_NORMAL">;
+export type PokemonSettingsV0943PokemonMabosstiff = PokemonSettings<"V0943_POKEMON_MABOSSTIFF">;
+export type PokemonSettingsV0943PokemonMabosstiffNormal = PokemonSettings<"V0943_POKEMON_MABOSSTIFF_NORMAL">;
+export type PokemonSettingsV0944PokemonShroodle = PokemonSettings<"V0944_POKEMON_SHROODLE">;
+export type PokemonSettingsV0944PokemonShroodleNormal = PokemonSettings<"V0944_POKEMON_SHROODLE_NORMAL">;
+export type PokemonSettingsV0945PokemonGrafaiai = PokemonSettings<"V0945_POKEMON_GRAFAIAI">;
+export type PokemonSettingsV0945PokemonGrafaiaiNormal = PokemonSettings<"V0945_POKEMON_GRAFAIAI_NORMAL">;
+export type PokemonSettingsV0946PokemonBramblin = PokemonSettings<"V0946_POKEMON_BRAMBLIN">;
+export type PokemonSettingsV0946PokemonBramblinNormal = PokemonSettings<"V0946_POKEMON_BRAMBLIN_NORMAL">;
+export type PokemonSettingsV0947PokemonBrambleghast = PokemonSettings<"V0947_POKEMON_BRAMBLEGHAST">;
+export type PokemonSettingsV0947PokemonBrambleghastNormal = PokemonSettings<"V0947_POKEMON_BRAMBLEGHAST_NORMAL">;
+export type PokemonSettingsV0948PokemonToedscool = PokemonSettings<"V0948_POKEMON_TOEDSCOOL">;
+export type PokemonSettingsV0948PokemonToedscoolNormal = PokemonSettings<"V0948_POKEMON_TOEDSCOOL_NORMAL">;
+export type PokemonSettingsV0949PokemonToedscruel = PokemonSettings<"V0949_POKEMON_TOEDSCRUEL">;
+export type PokemonSettingsV0949PokemonToedscruelNormal = PokemonSettings<"V0949_POKEMON_TOEDSCRUEL_NORMAL">;
+export type PokemonSettingsV0950PokemonKlawf = PokemonSettings<"V0950_POKEMON_KLAWF">;
+export type PokemonSettingsV0950PokemonKlawfNormal = PokemonSettings<"V0950_POKEMON_KLAWF_NORMAL">;
+export type PokemonSettingsV0951PokemonCapsakid = PokemonSettings<"V0951_POKEMON_CAPSAKID">;
+export type PokemonSettingsV0951PokemonCapsakidNormal = PokemonSettings<"V0951_POKEMON_CAPSAKID_NORMAL">;
+export type PokemonSettingsV0952PokemonScovillain = PokemonSettings<"V0952_POKEMON_SCOVILLAIN">;
+export type PokemonSettingsV0952PokemonScovillainNormal = PokemonSettings<"V0952_POKEMON_SCOVILLAIN_NORMAL">;
+export type PokemonSettingsV0953PokemonRellor = PokemonSettings<"V0953_POKEMON_RELLOR">;
+export type PokemonSettingsV0953PokemonRellorNormal = PokemonSettings<"V0953_POKEMON_RELLOR_NORMAL">;
+export type PokemonSettingsV0954PokemonRabsca = PokemonSettings<"V0954_POKEMON_RABSCA">;
+export type PokemonSettingsV0954PokemonRabscaNormal = PokemonSettings<"V0954_POKEMON_RABSCA_NORMAL">;
+export type PokemonSettingsV0955PokemonFlittle = PokemonSettings<"V0955_POKEMON_FLITTLE">;
+export type PokemonSettingsV0955PokemonFlittleNormal = PokemonSettings<"V0955_POKEMON_FLITTLE_NORMAL">;
+export type PokemonSettingsV0956PokemonEspathra = PokemonSettings<"V0956_POKEMON_ESPATHRA">;
+export type PokemonSettingsV0956PokemonEspathraNormal = PokemonSettings<"V0956_POKEMON_ESPATHRA_NORMAL">;
+export type PokemonSettingsV0957PokemonTinkatink = PokemonSettings<"V0957_POKEMON_TINKATINK">;
+export type PokemonSettingsV0957PokemonTinkatinkNormal = PokemonSettings<"V0957_POKEMON_TINKATINK_NORMAL">;
+export type PokemonSettingsV0958PokemonTinkatuff = PokemonSettings<"V0958_POKEMON_TINKATUFF">;
+export type PokemonSettingsV0958PokemonTinkatuffNormal = PokemonSettings<"V0958_POKEMON_TINKATUFF_NORMAL">;
+export type PokemonSettingsV0959PokemonTinkaton = PokemonSettings<"V0959_POKEMON_TINKATON">;
+export type PokemonSettingsV0959PokemonTinkatonNormal = PokemonSettings<"V0959_POKEMON_TINKATON_NORMAL">;
+export type PokemonSettingsV0960PokemonWiglett = PokemonSettings<"V0960_POKEMON_WIGLETT">;
+export type PokemonSettingsV0960PokemonWiglettNormal = PokemonSettings<"V0960_POKEMON_WIGLETT_NORMAL">;
+export type PokemonSettingsV0961PokemonWugtrio = PokemonSettings<"V0961_POKEMON_WUGTRIO">;
+export type PokemonSettingsV0961PokemonWugtrioNormal = PokemonSettings<"V0961_POKEMON_WUGTRIO_NORMAL">;
+export type PokemonSettingsV0962PokemonBombirdier = PokemonSettings<"V0962_POKEMON_BOMBIRDIER">;
+export type PokemonSettingsV0962PokemonBombirdierNormal = PokemonSettings<"V0962_POKEMON_BOMBIRDIER_NORMAL">;
+export type PokemonSettingsV0963PokemonFinizen = PokemonSettings<"V0963_POKEMON_FINIZEN">;
+export type PokemonSettingsV0963PokemonFinizenNormal = PokemonSettings<"V0963_POKEMON_FINIZEN_NORMAL">;
+export type PokemonSettingsV0964PokemonPalafin = PokemonSettings<"V0964_POKEMON_PALAFIN">;
+export type PokemonSettingsV0964PokemonPalafinHero = PokemonSettings<"V0964_POKEMON_PALAFIN_HERO">;
+export type PokemonSettingsV0964PokemonPalafinZero = PokemonSettings<"V0964_POKEMON_PALAFIN_ZERO">;
+export type PokemonSettingsV0965PokemonVaroom = PokemonSettings<"V0965_POKEMON_VAROOM">;
+export type PokemonSettingsV0965PokemonVaroomNormal = PokemonSettings<"V0965_POKEMON_VAROOM_NORMAL">;
+export type PokemonSettingsV0966PokemonRevavroom = PokemonSettings<"V0966_POKEMON_REVAVROOM">;
+export type PokemonSettingsV0966PokemonRevavroomNormal = PokemonSettings<"V0966_POKEMON_REVAVROOM_NORMAL">;
+export type PokemonSettingsV0967PokemonCyclizar = PokemonSettings<"V0967_POKEMON_CYCLIZAR">;
+export type PokemonSettingsV0967PokemonCyclizarNormal = PokemonSettings<"V0967_POKEMON_CYCLIZAR_NORMAL">;
+export type PokemonSettingsV0968PokemonOrthworm = PokemonSettings<"V0968_POKEMON_ORTHWORM">;
+export type PokemonSettingsV0968PokemonOrthwormNormal = PokemonSettings<"V0968_POKEMON_ORTHWORM_NORMAL">;
+export type PokemonSettingsV0969PokemonGlimmet = PokemonSettings<"V0969_POKEMON_GLIMMET">;
+export type PokemonSettingsV0969PokemonGlimmetNormal = PokemonSettings<"V0969_POKEMON_GLIMMET_NORMAL">;
+export type PokemonSettingsV0970PokemonGlimmora = PokemonSettings<"V0970_POKEMON_GLIMMORA">;
+export type PokemonSettingsV0970PokemonGlimmoraNormal = PokemonSettings<"V0970_POKEMON_GLIMMORA_NORMAL">;
+export type PokemonSettingsV0971PokemonGreavard = PokemonSettings<"V0971_POKEMON_GREAVARD">;
+export type PokemonSettingsV0971PokemonGreavardNormal = PokemonSettings<"V0971_POKEMON_GREAVARD_NORMAL">;
+export type PokemonSettingsV0972PokemonHoundstone = PokemonSettings<"V0972_POKEMON_HOUNDSTONE">;
+export type PokemonSettingsV0972PokemonHoundstoneNormal = PokemonSettings<"V0972_POKEMON_HOUNDSTONE_NORMAL">;
+export type PokemonSettingsV0973PokemonFlamigo = PokemonSettings<"V0973_POKEMON_FLAMIGO">;
+export type PokemonSettingsV0973PokemonFlamigoNormal = PokemonSettings<"V0973_POKEMON_FLAMIGO_NORMAL">;
+export type PokemonSettingsV0974PokemonCetoddle = PokemonSettings<"V0974_POKEMON_CETODDLE">;
+export type PokemonSettingsV0974PokemonCetoddleNormal = PokemonSettings<"V0974_POKEMON_CETODDLE_NORMAL">;
+export type PokemonSettingsV0975PokemonCetitan = PokemonSettings<"V0975_POKEMON_CETITAN">;
+export type PokemonSettingsV0975PokemonCetitanNormal = PokemonSettings<"V0975_POKEMON_CETITAN_NORMAL">;
+export type PokemonSettingsV0976PokemonVeluza = PokemonSettings<"V0976_POKEMON_VELUZA">;
+export type PokemonSettingsV0976PokemonVeluzaNormal = PokemonSettings<"V0976_POKEMON_VELUZA_NORMAL">;
+export type PokemonSettingsV0977PokemonDondozo = PokemonSettings<"V0977_POKEMON_DONDOZO">;
+export type PokemonSettingsV0977PokemonDondozoNormal = PokemonSettings<"V0977_POKEMON_DONDOZO_NORMAL">;
+export type PokemonSettingsV0978PokemonTatsugiri = PokemonSettings<"V0978_POKEMON_TATSUGIRI">;
+export type PokemonSettingsV0978PokemonTatsugiriCurly = PokemonSettings<"V0978_POKEMON_TATSUGIRI_CURLY">;
+export type PokemonSettingsV0978PokemonTatsugiriDroopy = PokemonSettings<"V0978_POKEMON_TATSUGIRI_DROOPY">;
+export type PokemonSettingsV0978PokemonTatsugiriStretchy = PokemonSettings<"V0978_POKEMON_TATSUGIRI_STRETCHY">;
+export type PokemonSettingsV0979PokemonAnnihilape = PokemonSettings<"V0979_POKEMON_ANNIHILAPE">;
+export type PokemonSettingsV0979PokemonAnnihilapeNormal = PokemonSettings<"V0979_POKEMON_ANNIHILAPE_NORMAL">;
+export type PokemonSettingsV0980PokemonClodsire = PokemonSettings<"V0980_POKEMON_CLODSIRE">;
+export type PokemonSettingsV0980PokemonClodsireNormal = PokemonSettings<"V0980_POKEMON_CLODSIRE_NORMAL">;
+export type PokemonSettingsV0981PokemonFarigiraf = PokemonSettings<"V0981_POKEMON_FARIGIRAF">;
+export type PokemonSettingsV0981PokemonFarigirafNormal = PokemonSettings<"V0981_POKEMON_FARIGIRAF_NORMAL">;
+export type PokemonSettingsV0982PokemonDudunsparce = PokemonSettings<"V0982_POKEMON_DUDUNSPARCE">;
+export type PokemonSettingsV0982PokemonDudunsparceThree = PokemonSettings<"V0982_POKEMON_DUDUNSPARCE_THREE">;
+export type PokemonSettingsV0982PokemonDudunsparceTwo = PokemonSettings<"V0982_POKEMON_DUDUNSPARCE_TWO">;
+export type PokemonSettingsV0983PokemonKingambit = PokemonSettings<"V0983_POKEMON_KINGAMBIT">;
+export type PokemonSettingsV0983PokemonKingambitNormal = PokemonSettings<"V0983_POKEMON_KINGAMBIT_NORMAL">;
+export type PokemonSettingsV0984PokemonGreattusk = PokemonSettings<"V0984_POKEMON_GREATTUSK">;
+export type PokemonSettingsV0984PokemonGreattuskNormal = PokemonSettings<"V0984_POKEMON_GREATTUSK_NORMAL">;
+export type PokemonSettingsV0985PokemonScreamtail = PokemonSettings<"V0985_POKEMON_SCREAMTAIL">;
+export type PokemonSettingsV0985PokemonScreamtailNormal = PokemonSettings<"V0985_POKEMON_SCREAMTAIL_NORMAL">;
+export type PokemonSettingsV0986PokemonBrutebonnet = PokemonSettings<"V0986_POKEMON_BRUTEBONNET">;
+export type PokemonSettingsV0986PokemonBrutebonnetNormal = PokemonSettings<"V0986_POKEMON_BRUTEBONNET_NORMAL">;
+export type PokemonSettingsV0987PokemonFluttermane = PokemonSettings<"V0987_POKEMON_FLUTTERMANE">;
+export type PokemonSettingsV0987PokemonFluttermaneNormal = PokemonSettings<"V0987_POKEMON_FLUTTERMANE_NORMAL">;
+export type PokemonSettingsV0988PokemonSlitherwing = PokemonSettings<"V0988_POKEMON_SLITHERWING">;
+export type PokemonSettingsV0988PokemonSlitherwingNormal = PokemonSettings<"V0988_POKEMON_SLITHERWING_NORMAL">;
+export type PokemonSettingsV0989PokemonSandyshocks = PokemonSettings<"V0989_POKEMON_SANDYSHOCKS">;
+export type PokemonSettingsV0989PokemonSandyshocksNormal = PokemonSettings<"V0989_POKEMON_SANDYSHOCKS_NORMAL">;
+export type PokemonSettingsV0990PokemonIrontreads = PokemonSettings<"V0990_POKEMON_IRONTREADS">;
+export type PokemonSettingsV0990PokemonIrontreadsNormal = PokemonSettings<"V0990_POKEMON_IRONTREADS_NORMAL">;
+export type PokemonSettingsV0991PokemonIronbundle = PokemonSettings<"V0991_POKEMON_IRONBUNDLE">;
+export type PokemonSettingsV0991PokemonIronbundleNormal = PokemonSettings<"V0991_POKEMON_IRONBUNDLE_NORMAL">;
+export type PokemonSettingsV0992PokemonIronhands = PokemonSettings<"V0992_POKEMON_IRONHANDS">;
+export type PokemonSettingsV0992PokemonIronhandsNormal = PokemonSettings<"V0992_POKEMON_IRONHANDS_NORMAL">;
+export type PokemonSettingsV0993PokemonIronjugulis = PokemonSettings<"V0993_POKEMON_IRONJUGULIS">;
+export type PokemonSettingsV0993PokemonIronjugulisNormal = PokemonSettings<"V0993_POKEMON_IRONJUGULIS_NORMAL">;
+export type PokemonSettingsV0994PokemonIronmoth = PokemonSettings<"V0994_POKEMON_IRONMOTH">;
+export type PokemonSettingsV0994PokemonIronmothNormal = PokemonSettings<"V0994_POKEMON_IRONMOTH_NORMAL">;
+export type PokemonSettingsV0995PokemonIronthorns = PokemonSettings<"V0995_POKEMON_IRONTHORNS">;
+export type PokemonSettingsV0995PokemonIronthornsNormal = PokemonSettings<"V0995_POKEMON_IRONTHORNS_NORMAL">;
+export type PokemonSettingsV0996PokemonFrigibax = PokemonSettings<"V0996_POKEMON_FRIGIBAX">;
+export type PokemonSettingsV0996PokemonFrigibaxNormal = PokemonSettings<"V0996_POKEMON_FRIGIBAX_NORMAL">;
+export type PokemonSettingsV0997PokemonArctibax = PokemonSettings<"V0997_POKEMON_ARCTIBAX">;
+export type PokemonSettingsV0997PokemonArctibaxNormal = PokemonSettings<"V0997_POKEMON_ARCTIBAX_NORMAL">;
+export type PokemonSettingsV0998PokemonBaxcalibur = PokemonSettings<"V0998_POKEMON_BAXCALIBUR">;
+export type PokemonSettingsV0998PokemonBaxcaliburNormal = PokemonSettings<"V0998_POKEMON_BAXCALIBUR_NORMAL">;
+export type PokemonSettingsV0999PokemonGimmighoul = PokemonSettings<"V0999_POKEMON_GIMMIGHOUL">;
+export type PokemonSettingsV0999PokemonGimmighoulCoinA1 = PokemonSettings<"V0999_POKEMON_GIMMIGHOUL_COIN_A1">;
+export type PokemonSettingsV0999PokemonGimmighoulNormal = PokemonSettings<"V0999_POKEMON_GIMMIGHOUL_NORMAL">;
+export type PokemonSettingsV1000PokemonGholdengo = PokemonSettings<"V1000_POKEMON_GHOLDENGO">;
+export type PokemonSettingsV1000PokemonGholdengoNormal = PokemonSettings<"V1000_POKEMON_GHOLDENGO_NORMAL">;
+export type PokemonSettingsV1001PokemonWochien = PokemonSettings<"V1001_POKEMON_WOCHIEN">;
+export type PokemonSettingsV1001PokemonWochienNormal = PokemonSettings<"V1001_POKEMON_WOCHIEN_NORMAL">;
+export type PokemonSettingsV1002PokemonChienpao = PokemonSettings<"V1002_POKEMON_CHIENPAO">;
+export type PokemonSettingsV1002PokemonChienpaoNormal = PokemonSettings<"V1002_POKEMON_CHIENPAO_NORMAL">;
+export type PokemonSettingsV1003PokemonTinglu = PokemonSettings<"V1003_POKEMON_TINGLU">;
+export type PokemonSettingsV1003PokemonTingluNormal = PokemonSettings<"V1003_POKEMON_TINGLU_NORMAL">;
+export type PokemonSettingsV1004PokemonChiyu = PokemonSettings<"V1004_POKEMON_CHIYU">;
+export type PokemonSettingsV1004PokemonChiyuNormal = PokemonSettings<"V1004_POKEMON_CHIYU_NORMAL">;
+export type PokemonSettingsV1005PokemonRoaringmoon = PokemonSettings<"V1005_POKEMON_ROARINGMOON">;
+export type PokemonSettingsV1005PokemonRoaringmoonNormal = PokemonSettings<"V1005_POKEMON_ROARINGMOON_NORMAL">;
+export type PokemonSettingsV1006PokemonIronvaliant = PokemonSettings<"V1006_POKEMON_IRONVALIANT">;
+export type PokemonSettingsV1006PokemonIronvaliantNormal = PokemonSettings<"V1006_POKEMON_IRONVALIANT_NORMAL">;
+export type PokemonSettingsV1007PokemonKoraidon = PokemonSettings<"V1007_POKEMON_KORAIDON">;
+export type PokemonSettingsV1007PokemonKoraidonApex = PokemonSettings<"V1007_POKEMON_KORAIDON_APEX">;
+export type PokemonSettingsV1008PokemonMiraidon = PokemonSettings<"V1008_POKEMON_MIRAIDON">;
+export type PokemonSettingsV1008PokemonMiraidonUltimate = PokemonSettings<"V1008_POKEMON_MIRAIDON_ULTIMATE">;
+export type PokemonSettingsV1009PokemonWalkingwake = PokemonSettings<"V1009_POKEMON_WALKINGWAKE">;
+export type PokemonSettingsV1009PokemonWalkingwakeNormal = PokemonSettings<"V1009_POKEMON_WALKINGWAKE_NORMAL">;
+export type PokemonSettingsV1010PokemonIronleaves = PokemonSettings<"V1010_POKEMON_IRONLEAVES">;
+export type PokemonSettingsV1010PokemonIronleavesNormal = PokemonSettings<"V1010_POKEMON_IRONLEAVES_NORMAL">;
+export type PokemonSettingsV1011PokemonDipplin = PokemonSettings<"V1011_POKEMON_DIPPLIN">;
+export type PokemonSettingsV1011PokemonDipplinNormal = PokemonSettings<"V1011_POKEMON_DIPPLIN_NORMAL">;
+export type PokemonSettingsV1012PokemonPoltchageist = PokemonSettings<"V1012_POKEMON_POLTCHAGEIST">;
+export type PokemonSettingsV1012PokemonPoltchageistArtisan = PokemonSettings<"V1012_POKEMON_POLTCHAGEIST_ARTISAN">;
+export type PokemonSettingsV1012PokemonPoltchageistCounterfeit = PokemonSettings<"V1012_POKEMON_POLTCHAGEIST_COUNTERFEIT">;
+export type PokemonSettingsV1013PokemonSinistcha = PokemonSettings<"V1013_POKEMON_SINISTCHA">;
+export type PokemonSettingsV1013PokemonSinistchaMasterpiece = PokemonSettings<"V1013_POKEMON_SINISTCHA_MASTERPIECE">;
+export type PokemonSettingsV1013PokemonSinistchaUnremarkable = PokemonSettings<"V1013_POKEMON_SINISTCHA_UNREMARKABLE">;
+export type PokemonSettingsV1014PokemonOkidogi = PokemonSettings<"V1014_POKEMON_OKIDOGI">;
+export type PokemonSettingsV1014PokemonOkidogiNormal = PokemonSettings<"V1014_POKEMON_OKIDOGI_NORMAL">;
+export type PokemonSettingsV1015PokemonMunkidori = PokemonSettings<"V1015_POKEMON_MUNKIDORI">;
+export type PokemonSettingsV1015PokemonMunkidoriNormal = PokemonSettings<"V1015_POKEMON_MUNKIDORI_NORMAL">;
+export type PokemonSettingsV1016PokemonFezandipiti = PokemonSettings<"V1016_POKEMON_FEZANDIPITI">;
+export type PokemonSettingsV1016PokemonFezandipitiNormal = PokemonSettings<"V1016_POKEMON_FEZANDIPITI_NORMAL">;
+export type PokemonSettingsV1017PokemonOgerpon = PokemonSettings<"V1017_POKEMON_OGERPON">;
+export type PokemonSettingsV1018PokemonArchaludon = PokemonSettings<"V1018_POKEMON_ARCHALUDON">;
+export type PokemonSettingsV1018PokemonArchaludonNormal = PokemonSettings<"V1018_POKEMON_ARCHALUDON_NORMAL">;
+export type PokemonSettingsV1019PokemonHydrapple = PokemonSettings<"V1019_POKEMON_HYDRAPPLE">;
+export type PokemonSettingsV1019PokemonHydrappleNormal = PokemonSettings<"V1019_POKEMON_HYDRAPPLE_NORMAL">;
+export type PokemonSettingsV1020PokemonGougingfire = PokemonSettings<"V1020_POKEMON_GOUGINGFIRE">;
+export type PokemonSettingsV1020PokemonGougingfireNormal = PokemonSettings<"V1020_POKEMON_GOUGINGFIRE_NORMAL">;
+export type PokemonSettingsV1021PokemonRagingbolt = PokemonSettings<"V1021_POKEMON_RAGINGBOLT">;
+export type PokemonSettingsV1021PokemonRagingboltNormal = PokemonSettings<"V1021_POKEMON_RAGINGBOLT_NORMAL">;
+export type PokemonSettingsV1022PokemonIronboulder = PokemonSettings<"V1022_POKEMON_IRONBOULDER">;
+export type PokemonSettingsV1022PokemonIronboulderNormal = PokemonSettings<"V1022_POKEMON_IRONBOULDER_NORMAL">;
+export type PokemonSettingsV1023PokemonIroncrown = PokemonSettings<"V1023_POKEMON_IRONCROWN">;
+export type PokemonSettingsV1023PokemonIroncrownNormal = PokemonSettings<"V1023_POKEMON_IRONCROWN_NORMAL">;
+export type PokemonSettingsV1024PokemonTerapagos = PokemonSettings<"V1024_POKEMON_TERAPAGOS">;
+export type PokemonSettingsV1024PokemonTerapagosNormal = PokemonSettings<"V1024_POKEMON_TERAPAGOS_NORMAL">;
+export type PokemonSettingsV1025PokemonPecharunt = PokemonSettings<"V1025_POKEMON_PECHARUNT">;
+export type PokemonSettingsV1025PokemonPecharuntNormal = PokemonSettings<"V1025_POKEMON_PECHARUNT_NORMAL">;
+
+export type PokemonSettingsMasterfileEntry =
+	| PokemonSettingsV0001PokemonBulbasaur
+	| PokemonSettingsV0001PokemonBulbasaurFall2019
+	| PokemonSettingsV0001PokemonBulbasaurNormal
+	| PokemonSettingsV0002PokemonIvysaur
+	| PokemonSettingsV0002PokemonIvysaurNormal
+	| PokemonSettingsV0003PokemonVenusaur
+	| PokemonSettingsV0003PokemonVenusaurCopy2019
+	| PokemonSettingsV0003PokemonVenusaurNormal
+	| PokemonSettingsV0004PokemonCharmander
+	| PokemonSettingsV0004PokemonCharmanderFall2019
+	| PokemonSettingsV0004PokemonCharmanderNormal
+	| PokemonSettingsV0005PokemonCharmeleon
+	| PokemonSettingsV0005PokemonCharmeleonNormal
+	| PokemonSettingsV0006PokemonCharizard
+	| PokemonSettingsV0006PokemonCharizardCopy2019
+	| PokemonSettingsV0006PokemonCharizardNormal
+	| PokemonSettingsV0007PokemonSquirtle
+	| PokemonSettingsV0007PokemonSquirtleFall2019
+	| PokemonSettingsV0007PokemonSquirtleNormal
+	| PokemonSettingsV0008PokemonWartortle
+	| PokemonSettingsV0008PokemonWartortleNormal
+	| PokemonSettingsV0009PokemonBlastoise
+	| PokemonSettingsV0009PokemonBlastoiseCopy2019
+	| PokemonSettingsV0009PokemonBlastoiseNormal
+	| PokemonSettingsV0010PokemonCaterpie
+	| PokemonSettingsV0010PokemonCaterpieGofest2026
+	| PokemonSettingsV0010PokemonCaterpieNormal
+	| PokemonSettingsV0011PokemonMetapod
+	| PokemonSettingsV0011PokemonMetapodNormal
+	| PokemonSettingsV0012PokemonButterfree
+	| PokemonSettingsV0012PokemonButterfreeNormal
+	| PokemonSettingsV0013PokemonWeedle
+	| PokemonSettingsV0013PokemonWeedleNormal
+	| PokemonSettingsV0014PokemonKakuna
+	| PokemonSettingsV0014PokemonKakunaNormal
+	| PokemonSettingsV0015PokemonBeedrill
+	| PokemonSettingsV0015PokemonBeedrillNormal
+	| PokemonSettingsV0016PokemonPidgey
+	| PokemonSettingsV0016PokemonPidgeyNormal
+	| PokemonSettingsV0017PokemonPidgeotto
+	| PokemonSettingsV0017PokemonPidgeottoNormal
+	| PokemonSettingsV0018PokemonPidgeot
+	| PokemonSettingsV0018PokemonPidgeotNormal
+	| PokemonSettingsV0019PokemonRattata
+	| PokemonSettingsV0019PokemonRattataAlola
+	| PokemonSettingsV0019PokemonRattataNormal
+	| PokemonSettingsV0020PokemonRaticate
+	| PokemonSettingsV0020PokemonRaticateAlola
+	| PokemonSettingsV0020PokemonRaticateNormal
+	| PokemonSettingsV0021PokemonSpearow
+	| PokemonSettingsV0021PokemonSpearowNormal
+	| PokemonSettingsV0022PokemonFearow
+	| PokemonSettingsV0022PokemonFearowNormal
+	| PokemonSettingsV0023PokemonEkans
+	| PokemonSettingsV0023PokemonEkansNormal
+	| PokemonSettingsV0024PokemonArbok
+	| PokemonSettingsV0024PokemonArbokNormal
+	| PokemonSettingsV0025PokemonPikachu
+	| PokemonSettingsV0025PokemonPikachuAdventureHat2020
+	| PokemonSettingsV0025PokemonPikachuBb2026
+	| PokemonSettingsV0025PokemonPikachuCopy2019
+	| PokemonSettingsV0025PokemonPikachuCostume2020
+	| PokemonSettingsV0025PokemonPikachuDiwali2024
+	| PokemonSettingsV0025PokemonPikachuDoctor
+	| PokemonSettingsV0025PokemonPikachuFall2019
+	| PokemonSettingsV0025PokemonPikachuFlying01
+	| PokemonSettingsV0025PokemonPikachuFlying02
+	| PokemonSettingsV0025PokemonPikachuFlying03
+	| PokemonSettingsV0025PokemonPikachuFlying04
+	| PokemonSettingsV0025PokemonPikachuFlying5thAnniv
+	| PokemonSettingsV0025PokemonPikachuFlyingOkinawa
+	| PokemonSettingsV0025PokemonPikachuGofest2022
+	| PokemonSettingsV0025PokemonPikachuGofest2024Mtiara
+	| PokemonSettingsV0025PokemonPikachuGofest2024Stiara
+	| PokemonSettingsV0025PokemonPikachuGofest2025GogglesBlue
+	| PokemonSettingsV0025PokemonPikachuGofest2025GogglesRed
+	| PokemonSettingsV0025PokemonPikachuGofest2025GogglesYellow
+	| PokemonSettingsV0025PokemonPikachuGofest2025MonocleBlue
+	| PokemonSettingsV0025PokemonPikachuGofest2025MonocleRed
+	| PokemonSettingsV0025PokemonPikachuGofest2025MonocleYellow
+	| PokemonSettingsV0025PokemonPikachuGofest2026CapBlue
+	| PokemonSettingsV0025PokemonPikachuGofest2026CapRed
+	| PokemonSettingsV0025PokemonPikachuGofest2026CapYellow
+	| PokemonSettingsV0025PokemonPikachuGotour2024A
+	| PokemonSettingsV0025PokemonPikachuGotour2024A02
+	| PokemonSettingsV0025PokemonPikachuGotour2024B
+	| PokemonSettingsV0025PokemonPikachuGotour2024B02
+	| PokemonSettingsV0025PokemonPikachuGotour2025A
+	| PokemonSettingsV0025PokemonPikachuGotour2025A02
+	| PokemonSettingsV0025PokemonPikachuGotour2025B
+	| PokemonSettingsV0025PokemonPikachuGotour2025B02
+	| PokemonSettingsV0025PokemonPikachuGotour2026A
+	| PokemonSettingsV0025PokemonPikachuGotour2026A02
+	| PokemonSettingsV0025PokemonPikachuGotour2026B
+	| PokemonSettingsV0025PokemonPikachuGotour2026B02
+	| PokemonSettingsV0025PokemonPikachuGotour2026C
+	| PokemonSettingsV0025PokemonPikachuGotour2026C02
+	| PokemonSettingsV0025PokemonPikachuHorizons
+	| PokemonSettingsV0025PokemonPikachuJeju
+	| PokemonSettingsV0025PokemonPikachuKariyushi
+	| PokemonSettingsV0025PokemonPikachuKurta
+	| PokemonSettingsV0025PokemonPikachuNormal
+	| PokemonSettingsV0025PokemonPikachuPopStar
+	| PokemonSettingsV0025PokemonPikachuRockStar
+	| PokemonSettingsV0025PokemonPikachuSummer2023A
+	| PokemonSettingsV0025PokemonPikachuSummer2023B
+	| PokemonSettingsV0025PokemonPikachuSummer2023C
+	| PokemonSettingsV0025PokemonPikachuSummer2023D
+	| PokemonSettingsV0025PokemonPikachuSummer2023E
+	| PokemonSettingsV0025PokemonPikachuTshirt01
+	| PokemonSettingsV0025PokemonPikachuTshirt02
+	| PokemonSettingsV0025PokemonPikachuTshirt03
+	| PokemonSettingsV0025PokemonPikachuVs2019
+	| PokemonSettingsV0025PokemonPikachuWcs2022
+	| PokemonSettingsV0025PokemonPikachuWcs2023
+	| PokemonSettingsV0025PokemonPikachuWcs2024
+	| PokemonSettingsV0025PokemonPikachuWcs2025
+	| PokemonSettingsV0025PokemonPikachuWinter2020
+	| PokemonSettingsV0026PokemonRaichu
+	| PokemonSettingsV0026PokemonRaichuAlola
+	| PokemonSettingsV0026PokemonRaichuNormal
+	| PokemonSettingsV0027PokemonSandshrew
+	| PokemonSettingsV0027PokemonSandshrewAlola
+	| PokemonSettingsV0027PokemonSandshrewNormal
+	| PokemonSettingsV0028PokemonSandslash
+	| PokemonSettingsV0028PokemonSandslashAlola
+	| PokemonSettingsV0028PokemonSandslashNormal
+	| PokemonSettingsV0029PokemonNidoran
+	| PokemonSettingsV0029PokemonNidoranNormal
+	| PokemonSettingsV0030PokemonNidorina
+	| PokemonSettingsV0030PokemonNidorinaNormal
+	| PokemonSettingsV0031PokemonNidoqueen
+	| PokemonSettingsV0031PokemonNidoqueenNormal
+	| PokemonSettingsV0032PokemonNidoran
+	| PokemonSettingsV0032PokemonNidoranNormal
+	| PokemonSettingsV0033PokemonNidorino
+	| PokemonSettingsV0033PokemonNidorinoNormal
+	| PokemonSettingsV0034PokemonNidoking
+	| PokemonSettingsV0034PokemonNidokingNormal
+	| PokemonSettingsV0035PokemonClefairy
+	| PokemonSettingsV0035PokemonClefairyNormal
+	| PokemonSettingsV0036PokemonClefable
+	| PokemonSettingsV0036PokemonClefableNormal
+	| PokemonSettingsV0037PokemonVulpix
+	| PokemonSettingsV0037PokemonVulpixAlola
+	| PokemonSettingsV0037PokemonVulpixNormal
+	| PokemonSettingsV0038PokemonNinetales
+	| PokemonSettingsV0038PokemonNinetalesAlola
+	| PokemonSettingsV0038PokemonNinetalesNormal
+	| PokemonSettingsV0039PokemonJigglypuff
+	| PokemonSettingsV0039PokemonJigglypuffNormal
+	| PokemonSettingsV0040PokemonWigglytuff
+	| PokemonSettingsV0040PokemonWigglytuffNormal
+	| PokemonSettingsV0041PokemonZubat
+	| PokemonSettingsV0041PokemonZubatNormal
+	| PokemonSettingsV0042PokemonGolbat
+	| PokemonSettingsV0042PokemonGolbatNormal
+	| PokemonSettingsV0043PokemonOddish
+	| PokemonSettingsV0043PokemonOddishNormal
+	| PokemonSettingsV0044PokemonGloom
+	| PokemonSettingsV0044PokemonGloomNormal
+	| PokemonSettingsV0045PokemonVileplume
+	| PokemonSettingsV0045PokemonVileplumeNormal
+	| PokemonSettingsV0046PokemonParas
+	| PokemonSettingsV0046PokemonParasNormal
+	| PokemonSettingsV0047PokemonParasect
+	| PokemonSettingsV0047PokemonParasectNormal
+	| PokemonSettingsV0048PokemonVenonat
+	| PokemonSettingsV0048PokemonVenonatNormal
+	| PokemonSettingsV0049PokemonVenomoth
+	| PokemonSettingsV0049PokemonVenomothNormal
+	| PokemonSettingsV0050PokemonDiglett
+	| PokemonSettingsV0050PokemonDiglettAlola
+	| PokemonSettingsV0050PokemonDiglettNormal
+	| PokemonSettingsV0051PokemonDugtrio
+	| PokemonSettingsV0051PokemonDugtrioAlola
+	| PokemonSettingsV0051PokemonDugtrioNormal
+	| PokemonSettingsV0052PokemonMeowth
+	| PokemonSettingsV0052PokemonMeowthAlola
+	| PokemonSettingsV0052PokemonMeowthGalarian
+	| PokemonSettingsV0052PokemonMeowthNormal
+	| PokemonSettingsV0053PokemonPersian
+	| PokemonSettingsV0053PokemonPersianAlola
+	| PokemonSettingsV0053PokemonPersianNormal
+	| PokemonSettingsV0054PokemonPsyduck
+	| PokemonSettingsV0054PokemonPsyduckNormal
+	| PokemonSettingsV0054PokemonPsyduckSwim2025
+	| PokemonSettingsV0055PokemonGolduck
+	| PokemonSettingsV0055PokemonGolduckNormal
+	| PokemonSettingsV0056PokemonMankey
+	| PokemonSettingsV0056PokemonMankeyNormal
+	| PokemonSettingsV0057PokemonPrimeape
+	| PokemonSettingsV0057PokemonPrimeapeNormal
+	| PokemonSettingsV0058PokemonGrowlithe
+	| PokemonSettingsV0058PokemonGrowlitheHisuian
+	| PokemonSettingsV0058PokemonGrowlitheNormal
+	| PokemonSettingsV0059PokemonArcanine
+	| PokemonSettingsV0059PokemonArcanineHisuian
+	| PokemonSettingsV0059PokemonArcanineNormal
+	| PokemonSettingsV0060PokemonPoliwag
+	| PokemonSettingsV0060PokemonPoliwagNormal
+	| PokemonSettingsV0061PokemonPoliwhirl
+	| PokemonSettingsV0061PokemonPoliwhirlNormal
+	| PokemonSettingsV0062PokemonPoliwrath
+	| PokemonSettingsV0062PokemonPoliwrathNormal
+	| PokemonSettingsV0063PokemonAbra
+	| PokemonSettingsV0063PokemonAbraNormal
+	| PokemonSettingsV0064PokemonKadabra
+	| PokemonSettingsV0064PokemonKadabraNormal
+	| PokemonSettingsV0065PokemonAlakazam
+	| PokemonSettingsV0065PokemonAlakazamNormal
+	| PokemonSettingsV0066PokemonMachop
+	| PokemonSettingsV0066PokemonMachopNormal
+	| PokemonSettingsV0067PokemonMachoke
+	| PokemonSettingsV0067PokemonMachokeNormal
+	| PokemonSettingsV0068PokemonMachamp
+	| PokemonSettingsV0068PokemonMachampNormal
+	| PokemonSettingsV0069PokemonBellsprout
+	| PokemonSettingsV0069PokemonBellsproutNormal
+	| PokemonSettingsV0070PokemonWeepinbell
+	| PokemonSettingsV0070PokemonWeepinbellNormal
+	| PokemonSettingsV0071PokemonVictreebel
+	| PokemonSettingsV0071PokemonVictreebelNormal
+	| PokemonSettingsV0072PokemonTentacool
+	| PokemonSettingsV0072PokemonTentacoolNormal
+	| PokemonSettingsV0073PokemonTentacruel
+	| PokemonSettingsV0073PokemonTentacruelNormal
+	| PokemonSettingsV0074PokemonGeodude
+	| PokemonSettingsV0074PokemonGeodudeAlola
+	| PokemonSettingsV0074PokemonGeodudeNormal
+	| PokemonSettingsV0075PokemonGraveler
+	| PokemonSettingsV0075PokemonGravelerAlola
+	| PokemonSettingsV0075PokemonGravelerNormal
+	| PokemonSettingsV0076PokemonGolem
+	| PokemonSettingsV0076PokemonGolemAlola
+	| PokemonSettingsV0076PokemonGolemNormal
+	| PokemonSettingsV0077PokemonPonyta
+	| PokemonSettingsV0077PokemonPonytaGalarian
+	| PokemonSettingsV0077PokemonPonytaNormal
+	| PokemonSettingsV0078PokemonRapidash
+	| PokemonSettingsV0078PokemonRapidashGalarian
+	| PokemonSettingsV0078PokemonRapidashNormal
+	| PokemonSettingsV0079PokemonSlowpoke
+	| PokemonSettingsV0079PokemonSlowpoke2020
+	| PokemonSettingsV0079PokemonSlowpokeGalarian
+	| PokemonSettingsV0079PokemonSlowpokeNormal
+	| PokemonSettingsV0080PokemonSlowbro
+	| PokemonSettingsV0080PokemonSlowbro2021
+	| PokemonSettingsV0080PokemonSlowbroGalarian
+	| PokemonSettingsV0080PokemonSlowbroNormal
+	| PokemonSettingsV0081PokemonMagnemite
+	| PokemonSettingsV0081PokemonMagnemiteNormal
+	| PokemonSettingsV0082PokemonMagneton
+	| PokemonSettingsV0082PokemonMagnetonNormal
+	| PokemonSettingsV0083PokemonFarfetchd
+	| PokemonSettingsV0083PokemonFarfetchdGalarian
+	| PokemonSettingsV0083PokemonFarfetchdNormal
+	| PokemonSettingsV0084PokemonDoduo
+	| PokemonSettingsV0084PokemonDoduoNormal
+	| PokemonSettingsV0085PokemonDodrio
+	| PokemonSettingsV0085PokemonDodrioNormal
+	| PokemonSettingsV0086PokemonSeel
+	| PokemonSettingsV0086PokemonSeelNormal
+	| PokemonSettingsV0087PokemonDewgong
+	| PokemonSettingsV0087PokemonDewgongNormal
+	| PokemonSettingsV0088PokemonGrimer
+	| PokemonSettingsV0088PokemonGrimerAlola
+	| PokemonSettingsV0088PokemonGrimerNormal
+	| PokemonSettingsV0089PokemonMuk
+	| PokemonSettingsV0089PokemonMukAlola
+	| PokemonSettingsV0089PokemonMukNormal
+	| PokemonSettingsV0090PokemonShellder
+	| PokemonSettingsV0090PokemonShellderNormal
+	| PokemonSettingsV0091PokemonCloyster
+	| PokemonSettingsV0091PokemonCloysterNormal
+	| PokemonSettingsV0092PokemonGastly
+	| PokemonSettingsV0092PokemonGastlyNormal
+	| PokemonSettingsV0093PokemonHaunter
+	| PokemonSettingsV0093PokemonHaunterNormal
+	| PokemonSettingsV0094PokemonGengar
+	| PokemonSettingsV0094PokemonGengarCostume2020
+	| PokemonSettingsV0094PokemonGengarNormal
+	| PokemonSettingsV0095PokemonOnix
+	| PokemonSettingsV0095PokemonOnixNormal
+	| PokemonSettingsV0096PokemonDrowzee
+	| PokemonSettingsV0096PokemonDrowzeeNormal
+	| PokemonSettingsV0097PokemonHypno
+	| PokemonSettingsV0097PokemonHypnoNormal
+	| PokemonSettingsV0098PokemonKrabby
+	| PokemonSettingsV0098PokemonKrabbyNormal
+	| PokemonSettingsV0099PokemonKingler
+	| PokemonSettingsV0099PokemonKinglerNormal
+	| PokemonSettingsV0100PokemonVoltorb
+	| PokemonSettingsV0100PokemonVoltorbHisuian
+	| PokemonSettingsV0100PokemonVoltorbNormal
+	| PokemonSettingsV0101PokemonElectrode
+	| PokemonSettingsV0101PokemonElectrodeHisuian
+	| PokemonSettingsV0101PokemonElectrodeNormal
+	| PokemonSettingsV0102PokemonExeggcute
+	| PokemonSettingsV0102PokemonExeggcuteNormal
+	| PokemonSettingsV0103PokemonExeggutor
+	| PokemonSettingsV0103PokemonExeggutorAlola
+	| PokemonSettingsV0103PokemonExeggutorNormal
+	| PokemonSettingsV0104PokemonCubone
+	| PokemonSettingsV0104PokemonCuboneNormal
+	| PokemonSettingsV0105PokemonMarowak
+	| PokemonSettingsV0105PokemonMarowakAlola
+	| PokemonSettingsV0105PokemonMarowakNormal
+	| PokemonSettingsV0106PokemonHitmonlee
+	| PokemonSettingsV0106PokemonHitmonleeNormal
+	| PokemonSettingsV0107PokemonHitmonchan
+	| PokemonSettingsV0107PokemonHitmonchanNormal
+	| PokemonSettingsV0108PokemonLickitung
+	| PokemonSettingsV0108PokemonLickitungNormal
+	| PokemonSettingsV0109PokemonKoffing
+	| PokemonSettingsV0109PokemonKoffingNormal
+	| PokemonSettingsV0110PokemonWeezing
+	| PokemonSettingsV0110PokemonWeezingGalarian
+	| PokemonSettingsV0110PokemonWeezingNormal
+	| PokemonSettingsV0111PokemonRhyhorn
+	| PokemonSettingsV0111PokemonRhyhornNormal
+	| PokemonSettingsV0112PokemonRhydon
+	| PokemonSettingsV0112PokemonRhydonNormal
+	| PokemonSettingsV0113PokemonChansey
+	| PokemonSettingsV0113PokemonChanseyNormal
+	| PokemonSettingsV0114PokemonTangela
+	| PokemonSettingsV0114PokemonTangelaNormal
+	| PokemonSettingsV0115PokemonKangaskhan
+	| PokemonSettingsV0115PokemonKangaskhanNormal
+	| PokemonSettingsV0116PokemonHorsea
+	| PokemonSettingsV0116PokemonHorseaNormal
+	| PokemonSettingsV0117PokemonSeadra
+	| PokemonSettingsV0117PokemonSeadraNormal
+	| PokemonSettingsV0118PokemonGoldeen
+	| PokemonSettingsV0118PokemonGoldeenNormal
+	| PokemonSettingsV0119PokemonSeaking
+	| PokemonSettingsV0119PokemonSeakingNormal
+	| PokemonSettingsV0120PokemonStaryu
+	| PokemonSettingsV0120PokemonStaryuNormal
+	| PokemonSettingsV0121PokemonStarmie
+	| PokemonSettingsV0121PokemonStarmieNormal
+	| PokemonSettingsV0122PokemonMrMime
+	| PokemonSettingsV0122PokemonMrMimeGalarian
+	| PokemonSettingsV0122PokemonMrMimeNormal
+	| PokemonSettingsV0123PokemonScyther
+	| PokemonSettingsV0123PokemonScytherNormal
+	| PokemonSettingsV0124PokemonJynx
+	| PokemonSettingsV0124PokemonJynxNormal
+	| PokemonSettingsV0125PokemonElectabuzz
+	| PokemonSettingsV0125PokemonElectabuzzNormal
+	| PokemonSettingsV0126PokemonMagmar
+	| PokemonSettingsV0126PokemonMagmarNormal
+	| PokemonSettingsV0127PokemonPinsir
+	| PokemonSettingsV0127PokemonPinsirNormal
+	| PokemonSettingsV0128PokemonTauros
+	| PokemonSettingsV0128PokemonTaurosNormal
+	| PokemonSettingsV0128PokemonTaurosPaldeaAqua
+	| PokemonSettingsV0128PokemonTaurosPaldeaBlaze
+	| PokemonSettingsV0128PokemonTaurosPaldeaCombat
+	| PokemonSettingsV0129PokemonMagikarp
+	| PokemonSettingsV0129PokemonMagikarpNormal
+	| PokemonSettingsV0130PokemonGyarados
+	| PokemonSettingsV0130PokemonGyaradosNormal
+	| PokemonSettingsV0131PokemonLapras
+	| PokemonSettingsV0131PokemonLaprasCostume2020
+	| PokemonSettingsV0131PokemonLaprasNormal
+	| PokemonSettingsV0132PokemonDitto
+	| PokemonSettingsV0132PokemonDittoNormal
+	| PokemonSettingsV0132PokemonDittoSpring2026A
+	| PokemonSettingsV0132PokemonDittoSpring2026B
+	| PokemonSettingsV0133PokemonEevee
+	| PokemonSettingsV0133PokemonEeveeGofest2024Mtiara
+	| PokemonSettingsV0133PokemonEeveeGofest2024Stiara
+	| PokemonSettingsV0133PokemonEeveeNormal
+	| PokemonSettingsV0134PokemonVaporeon
+	| PokemonSettingsV0134PokemonVaporeonNormal
+	| PokemonSettingsV0135PokemonJolteon
+	| PokemonSettingsV0135PokemonJolteonNormal
+	| PokemonSettingsV0136PokemonFlareon
+	| PokemonSettingsV0136PokemonFlareonNormal
+	| PokemonSettingsV0137PokemonPorygon
+	| PokemonSettingsV0137PokemonPorygonNormal
+	| PokemonSettingsV0138PokemonOmanyte
+	| PokemonSettingsV0138PokemonOmanyteNormal
+	| PokemonSettingsV0139PokemonOmastar
+	| PokemonSettingsV0139PokemonOmastarNormal
+	| PokemonSettingsV0140PokemonKabuto
+	| PokemonSettingsV0140PokemonKabutoNormal
+	| PokemonSettingsV0141PokemonKabutops
+	| PokemonSettingsV0141PokemonKabutopsNormal
+	| PokemonSettingsV0142PokemonAerodactyl
+	| PokemonSettingsV0142PokemonAerodactylNormal
+	| PokemonSettingsV0142PokemonAerodactylSummer2023
+	| PokemonSettingsV0143PokemonSnorlax
+	| PokemonSettingsV0143PokemonSnorlaxNormal
+	| PokemonSettingsV0143PokemonSnorlaxWildarea2024
+	| PokemonSettingsV0144PokemonArticuno
+	| PokemonSettingsV0144PokemonArticunoGalarian
+	| PokemonSettingsV0144PokemonArticunoNormal
+	| PokemonSettingsV0145PokemonZapdos
+	| PokemonSettingsV0145PokemonZapdosGalarian
+	| PokemonSettingsV0145PokemonZapdosNormal
+	| PokemonSettingsV0146PokemonMoltres
+	| PokemonSettingsV0146PokemonMoltresGalarian
+	| PokemonSettingsV0146PokemonMoltresNormal
+	| PokemonSettingsV0147PokemonDratini
+	| PokemonSettingsV0147PokemonDratiniNormal
+	| PokemonSettingsV0148PokemonDragonair
+	| PokemonSettingsV0148PokemonDragonairNormal
+	| PokemonSettingsV0149PokemonDragonite
+	| PokemonSettingsV0149PokemonDragoniteNormal
+	| PokemonSettingsV0150PokemonMewtwo
+	| PokemonSettingsV0150PokemonMewtwoA
+	| PokemonSettingsV0150PokemonMewtwoNormal
+	| PokemonSettingsV0151PokemonMew
+	| PokemonSettingsV0151PokemonMewNormal
+	| PokemonSettingsV0152PokemonChikorita
+	| PokemonSettingsV0152PokemonChikoritaNormal
+	| PokemonSettingsV0153PokemonBayleef
+	| PokemonSettingsV0153PokemonBayleefNormal
+	| PokemonSettingsV0154PokemonMeganium
+	| PokemonSettingsV0154PokemonMeganiumNormal
+	| PokemonSettingsV0155PokemonCyndaquil
+	| PokemonSettingsV0155PokemonCyndaquilNormal
+	| PokemonSettingsV0156PokemonQuilava
+	| PokemonSettingsV0156PokemonQuilavaNormal
+	| PokemonSettingsV0157PokemonTyphlosion
+	| PokemonSettingsV0157PokemonTyphlosionHisuian
+	| PokemonSettingsV0157PokemonTyphlosionNormal
+	| PokemonSettingsV0158PokemonTotodile
+	| PokemonSettingsV0158PokemonTotodileNormal
+	| PokemonSettingsV0159PokemonCroconaw
+	| PokemonSettingsV0159PokemonCroconawNormal
+	| PokemonSettingsV0160PokemonFeraligatr
+	| PokemonSettingsV0160PokemonFeraligatrNormal
+	| PokemonSettingsV0161PokemonSentret
+	| PokemonSettingsV0161PokemonSentretNormal
+	| PokemonSettingsV0162PokemonFurret
+	| PokemonSettingsV0162PokemonFurretNormal
+	| PokemonSettingsV0163PokemonHoothoot
+	| PokemonSettingsV0163PokemonHoothootNormal
+	| PokemonSettingsV0164PokemonNoctowl
+	| PokemonSettingsV0164PokemonNoctowlNormal
+	| PokemonSettingsV0165PokemonLedyba
+	| PokemonSettingsV0165PokemonLedybaNormal
+	| PokemonSettingsV0166PokemonLedian
+	| PokemonSettingsV0166PokemonLedianNormal
+	| PokemonSettingsV0167PokemonSpinarak
+	| PokemonSettingsV0167PokemonSpinarakNormal
+	| PokemonSettingsV0168PokemonAriados
+	| PokemonSettingsV0168PokemonAriadosNormal
+	| PokemonSettingsV0169PokemonCrobat
+	| PokemonSettingsV0169PokemonCrobatNormal
+	| PokemonSettingsV0170PokemonChinchou
+	| PokemonSettingsV0170PokemonChinchouNormal
+	| PokemonSettingsV0171PokemonLanturn
+	| PokemonSettingsV0171PokemonLanturnNormal
+	| PokemonSettingsV0172PokemonPichu
+	| PokemonSettingsV0172PokemonPichuNormal
+	| PokemonSettingsV0173PokemonCleffa
+	| PokemonSettingsV0173PokemonCleffaNormal
+	| PokemonSettingsV0174PokemonIgglybuff
+	| PokemonSettingsV0174PokemonIgglybuffNormal
+	| PokemonSettingsV0175PokemonTogepi
+	| PokemonSettingsV0175PokemonTogepiNormal
+	| PokemonSettingsV0176PokemonTogetic
+	| PokemonSettingsV0176PokemonTogeticNormal
+	| PokemonSettingsV0177PokemonNatu
+	| PokemonSettingsV0177PokemonNatuNormal
+	| PokemonSettingsV0178PokemonXatu
+	| PokemonSettingsV0178PokemonXatuNormal
+	| PokemonSettingsV0179PokemonMareep
+	| PokemonSettingsV0179PokemonMareepNormal
+	| PokemonSettingsV0180PokemonFlaaffy
+	| PokemonSettingsV0180PokemonFlaaffyNormal
+	| PokemonSettingsV0181PokemonAmpharos
+	| PokemonSettingsV0181PokemonAmpharosNormal
+	| PokemonSettingsV0182PokemonBellossom
+	| PokemonSettingsV0182PokemonBellossomNormal
+	| PokemonSettingsV0183PokemonMarill
+	| PokemonSettingsV0183PokemonMarillNormal
+	| PokemonSettingsV0184PokemonAzumarill
+	| PokemonSettingsV0184PokemonAzumarillNormal
+	| PokemonSettingsV0185PokemonSudowoodo
+	| PokemonSettingsV0185PokemonSudowoodoNormal
+	| PokemonSettingsV0185PokemonSudowoodoWinter2025
+	| PokemonSettingsV0186PokemonPolitoed
+	| PokemonSettingsV0186PokemonPolitoedNormal
+	| PokemonSettingsV0187PokemonHoppip
+	| PokemonSettingsV0187PokemonHoppipNormal
+	| PokemonSettingsV0188PokemonSkiploom
+	| PokemonSettingsV0188PokemonSkiploomNormal
+	| PokemonSettingsV0189PokemonJumpluff
+	| PokemonSettingsV0189PokemonJumpluffNormal
+	| PokemonSettingsV0190PokemonAipom
+	| PokemonSettingsV0190PokemonAipomNormal
+	| PokemonSettingsV0191PokemonSunkern
+	| PokemonSettingsV0191PokemonSunkernNormal
+	| PokemonSettingsV0192PokemonSunflora
+	| PokemonSettingsV0192PokemonSunfloraNormal
+	| PokemonSettingsV0193PokemonYanma
+	| PokemonSettingsV0193PokemonYanmaNormal
+	| PokemonSettingsV0194PokemonWooper
+	| PokemonSettingsV0194PokemonWooperNormal
+	| PokemonSettingsV0194PokemonWooperPaldea
+	| PokemonSettingsV0195PokemonQuagsire
+	| PokemonSettingsV0195PokemonQuagsireNormal
+	| PokemonSettingsV0196PokemonEspeon
+	| PokemonSettingsV0196PokemonEspeonGofest2024Sscarf
+	| PokemonSettingsV0196PokemonEspeonNormal
+	| PokemonSettingsV0197PokemonUmbreon
+	| PokemonSettingsV0197PokemonUmbreonGofest2024Mscarf
+	| PokemonSettingsV0197PokemonUmbreonNormal
+	| PokemonSettingsV0198PokemonMurkrow
+	| PokemonSettingsV0198PokemonMurkrowNormal
+	| PokemonSettingsV0199PokemonSlowking
+	| PokemonSettingsV0199PokemonSlowking2022
+	| PokemonSettingsV0199PokemonSlowkingGalarian
+	| PokemonSettingsV0199PokemonSlowkingNormal
+	| PokemonSettingsV0200PokemonMisdreavus
+	| PokemonSettingsV0200PokemonMisdreavusNormal
+	| PokemonSettingsV0201PokemonUnown
+	| PokemonSettingsV0201PokemonUnownA
+	| PokemonSettingsV0201PokemonUnownB
+	| PokemonSettingsV0201PokemonUnownC
+	| PokemonSettingsV0201PokemonUnownD
+	| PokemonSettingsV0201PokemonUnownE
+	| PokemonSettingsV0201PokemonUnownExclamationPoint
+	| PokemonSettingsV0201PokemonUnownF
+	| PokemonSettingsV0201PokemonUnownG
+	| PokemonSettingsV0201PokemonUnownH
+	| PokemonSettingsV0201PokemonUnownI
+	| PokemonSettingsV0201PokemonUnownJ
+	| PokemonSettingsV0201PokemonUnownK
+	| PokemonSettingsV0201PokemonUnownL
+	| PokemonSettingsV0201PokemonUnownM
+	| PokemonSettingsV0201PokemonUnownN
+	| PokemonSettingsV0201PokemonUnownO
+	| PokemonSettingsV0201PokemonUnownP
+	| PokemonSettingsV0201PokemonUnownQ
+	| PokemonSettingsV0201PokemonUnownQuestionMark
+	| PokemonSettingsV0201PokemonUnownR
+	| PokemonSettingsV0201PokemonUnownS
+	| PokemonSettingsV0201PokemonUnownT
+	| PokemonSettingsV0201PokemonUnownU
+	| PokemonSettingsV0201PokemonUnownV
+	| PokemonSettingsV0201PokemonUnownW
+	| PokemonSettingsV0201PokemonUnownX
+	| PokemonSettingsV0201PokemonUnownY
+	| PokemonSettingsV0201PokemonUnownZ
+	| PokemonSettingsV0202PokemonWobbuffet
+	| PokemonSettingsV0202PokemonWobbuffetNormal
+	| PokemonSettingsV0203PokemonGirafarig
+	| PokemonSettingsV0203PokemonGirafarigNormal
+	| PokemonSettingsV0204PokemonPineco
+	| PokemonSettingsV0204PokemonPinecoNormal
+	| PokemonSettingsV0205PokemonForretress
+	| PokemonSettingsV0205PokemonForretressNormal
+	| PokemonSettingsV0206PokemonDunsparce
+	| PokemonSettingsV0206PokemonDunsparceNormal
+	| PokemonSettingsV0207PokemonGligar
+	| PokemonSettingsV0207PokemonGligarNormal
+	| PokemonSettingsV0208PokemonSteelix
+	| PokemonSettingsV0208PokemonSteelixNormal
+	| PokemonSettingsV0209PokemonSnubbull
+	| PokemonSettingsV0209PokemonSnubbullNormal
+	| PokemonSettingsV0210PokemonGranbull
+	| PokemonSettingsV0210PokemonGranbullNormal
+	| PokemonSettingsV0211PokemonQwilfish
+	| PokemonSettingsV0211PokemonQwilfishHisuian
+	| PokemonSettingsV0211PokemonQwilfishNormal
+	| PokemonSettingsV0212PokemonScizor
+	| PokemonSettingsV0212PokemonScizorNormal
+	| PokemonSettingsV0213PokemonShuckle
+	| PokemonSettingsV0213PokemonShuckleNormal
+	| PokemonSettingsV0214PokemonHeracross
+	| PokemonSettingsV0214PokemonHeracrossNormal
+	| PokemonSettingsV0215PokemonSneasel
+	| PokemonSettingsV0215PokemonSneaselHisuian
+	| PokemonSettingsV0215PokemonSneaselNormal
+	| PokemonSettingsV0216PokemonTeddiursa
+	| PokemonSettingsV0216PokemonTeddiursaNormal
+	| PokemonSettingsV0217PokemonUrsaring
+	| PokemonSettingsV0217PokemonUrsaringNormal
+	| PokemonSettingsV0218PokemonSlugma
+	| PokemonSettingsV0218PokemonSlugmaNormal
+	| PokemonSettingsV0219PokemonMagcargo
+	| PokemonSettingsV0219PokemonMagcargoNormal
+	| PokemonSettingsV0220PokemonSwinub
+	| PokemonSettingsV0220PokemonSwinubNormal
+	| PokemonSettingsV0221PokemonPiloswine
+	| PokemonSettingsV0221PokemonPiloswineNormal
+	| PokemonSettingsV0222PokemonCorsola
+	| PokemonSettingsV0222PokemonCorsolaGalarian
+	| PokemonSettingsV0222PokemonCorsolaNormal
+	| PokemonSettingsV0222PokemonCorsolaSpring2026
+	| PokemonSettingsV0223PokemonRemoraid
+	| PokemonSettingsV0223PokemonRemoraidNormal
+	| PokemonSettingsV0224PokemonOctillery
+	| PokemonSettingsV0224PokemonOctilleryNormal
+	| PokemonSettingsV0225PokemonDelibird
+	| PokemonSettingsV0225PokemonDelibirdNormal
+	| PokemonSettingsV0225PokemonDelibirdWinter2020
+	| PokemonSettingsV0226PokemonMantine
+	| PokemonSettingsV0226PokemonMantineNormal
+	| PokemonSettingsV0227PokemonSkarmory
+	| PokemonSettingsV0227PokemonSkarmoryNormal
+	| PokemonSettingsV0228PokemonHoundour
+	| PokemonSettingsV0228PokemonHoundourNormal
+	| PokemonSettingsV0229PokemonHoundoom
+	| PokemonSettingsV0229PokemonHoundoomNormal
+	| PokemonSettingsV0230PokemonKingdra
+	| PokemonSettingsV0230PokemonKingdraNormal
+	| PokemonSettingsV0231PokemonPhanpy
+	| PokemonSettingsV0231PokemonPhanpyNormal
+	| PokemonSettingsV0232PokemonDonphan
+	| PokemonSettingsV0232PokemonDonphanNormal
+	| PokemonSettingsV0233PokemonPorygon2
+	| PokemonSettingsV0233PokemonPorygon2Normal
+	| PokemonSettingsV0234PokemonStantler
+	| PokemonSettingsV0234PokemonStantlerNormal
+	| PokemonSettingsV0235PokemonSmeargle
+	| PokemonSettingsV0235PokemonSmeargleNormal
+	| PokemonSettingsV0236PokemonTyrogue
+	| PokemonSettingsV0236PokemonTyrogueNormal
+	| PokemonSettingsV0237PokemonHitmontop
+	| PokemonSettingsV0237PokemonHitmontopNormal
+	| PokemonSettingsV0238PokemonSmoochum
+	| PokemonSettingsV0238PokemonSmoochumNormal
+	| PokemonSettingsV0239PokemonElekid
+	| PokemonSettingsV0239PokemonElekidNormal
+	| PokemonSettingsV0240PokemonMagby
+	| PokemonSettingsV0240PokemonMagbyNormal
+	| PokemonSettingsV0241PokemonMiltank
+	| PokemonSettingsV0241PokemonMiltankNormal
+	| PokemonSettingsV0242PokemonBlissey
+	| PokemonSettingsV0242PokemonBlisseyNormal
+	| PokemonSettingsV0243PokemonRaikou
+	| PokemonSettingsV0243PokemonRaikouNormal
+	| PokemonSettingsV0243PokemonRaikouS
+	| PokemonSettingsV0244PokemonEntei
+	| PokemonSettingsV0244PokemonEnteiNormal
+	| PokemonSettingsV0244PokemonEnteiS
+	| PokemonSettingsV0245PokemonSuicune
+	| PokemonSettingsV0245PokemonSuicuneNormal
+	| PokemonSettingsV0245PokemonSuicuneS
+	| PokemonSettingsV0246PokemonLarvitar
+	| PokemonSettingsV0246PokemonLarvitarNormal
+	| PokemonSettingsV0247PokemonPupitar
+	| PokemonSettingsV0247PokemonPupitarNormal
+	| PokemonSettingsV0248PokemonTyranitar
+	| PokemonSettingsV0248PokemonTyranitarNormal
+	| PokemonSettingsV0249PokemonLugia
+	| PokemonSettingsV0249PokemonLugiaNormal
+	| PokemonSettingsV0249PokemonLugiaS
+	| PokemonSettingsV0250PokemonHoOh
+	| PokemonSettingsV0250PokemonHoOhNormal
+	| PokemonSettingsV0250PokemonHoOhS
+	| PokemonSettingsV0251PokemonCelebi
+	| PokemonSettingsV0251PokemonCelebiNormal
+	| PokemonSettingsV0252PokemonTreecko
+	| PokemonSettingsV0252PokemonTreeckoNormal
+	| PokemonSettingsV0253PokemonGrovyle
+	| PokemonSettingsV0253PokemonGrovyleNormal
+	| PokemonSettingsV0254PokemonSceptile
+	| PokemonSettingsV0254PokemonSceptileNormal
+	| PokemonSettingsV0255PokemonTorchic
+	| PokemonSettingsV0255PokemonTorchicNormal
+	| PokemonSettingsV0256PokemonCombusken
+	| PokemonSettingsV0256PokemonCombuskenNormal
+	| PokemonSettingsV0257PokemonBlaziken
+	| PokemonSettingsV0257PokemonBlazikenNormal
+	| PokemonSettingsV0258PokemonMudkip
+	| PokemonSettingsV0258PokemonMudkipNormal
+	| PokemonSettingsV0259PokemonMarshtomp
+	| PokemonSettingsV0259PokemonMarshtompNormal
+	| PokemonSettingsV0260PokemonSwampert
+	| PokemonSettingsV0260PokemonSwampertNormal
+	| PokemonSettingsV0261PokemonPoochyena
+	| PokemonSettingsV0261PokemonPoochyenaNormal
+	| PokemonSettingsV0262PokemonMightyena
+	| PokemonSettingsV0262PokemonMightyenaNormal
+	| PokemonSettingsV0263PokemonZigzagoon
+	| PokemonSettingsV0263PokemonZigzagoonGalarian
+	| PokemonSettingsV0263PokemonZigzagoonNormal
+	| PokemonSettingsV0264PokemonLinoone
+	| PokemonSettingsV0264PokemonLinooneGalarian
+	| PokemonSettingsV0264PokemonLinooneNormal
+	| PokemonSettingsV0265PokemonWurmple
+	| PokemonSettingsV0265PokemonWurmpleNormal
+	| PokemonSettingsV0266PokemonSilcoon
+	| PokemonSettingsV0266PokemonSilcoonNormal
+	| PokemonSettingsV0267PokemonBeautifly
+	| PokemonSettingsV0267PokemonBeautiflyNormal
+	| PokemonSettingsV0268PokemonCascoon
+	| PokemonSettingsV0268PokemonCascoonNormal
+	| PokemonSettingsV0269PokemonDustox
+	| PokemonSettingsV0269PokemonDustoxNormal
+	| PokemonSettingsV0270PokemonLotad
+	| PokemonSettingsV0270PokemonLotadNormal
+	| PokemonSettingsV0271PokemonLombre
+	| PokemonSettingsV0271PokemonLombreNormal
+	| PokemonSettingsV0272PokemonLudicolo
+	| PokemonSettingsV0272PokemonLudicoloNormal
+	| PokemonSettingsV0273PokemonSeedot
+	| PokemonSettingsV0273PokemonSeedotNormal
+	| PokemonSettingsV0274PokemonNuzleaf
+	| PokemonSettingsV0274PokemonNuzleafNormal
+	| PokemonSettingsV0275PokemonShiftry
+	| PokemonSettingsV0275PokemonShiftryNormal
+	| PokemonSettingsV0276PokemonTaillow
+	| PokemonSettingsV0276PokemonTaillowNormal
+	| PokemonSettingsV0277PokemonSwellow
+	| PokemonSettingsV0277PokemonSwellowNormal
+	| PokemonSettingsV0278PokemonWingull
+	| PokemonSettingsV0278PokemonWingullNormal
+	| PokemonSettingsV0279PokemonPelipper
+	| PokemonSettingsV0279PokemonPelipperNormal
+	| PokemonSettingsV0280PokemonRalts
+	| PokemonSettingsV0280PokemonRaltsNormal
+	| PokemonSettingsV0281PokemonKirlia
+	| PokemonSettingsV0281PokemonKirliaNormal
+	| PokemonSettingsV0282PokemonGardevoir
+	| PokemonSettingsV0282PokemonGardevoirNormal
+	| PokemonSettingsV0283PokemonSurskit
+	| PokemonSettingsV0283PokemonSurskitNormal
+	| PokemonSettingsV0284PokemonMasquerain
+	| PokemonSettingsV0284PokemonMasquerainNormal
+	| PokemonSettingsV0285PokemonShroomish
+	| PokemonSettingsV0285PokemonShroomishNormal
+	| PokemonSettingsV0286PokemonBreloom
+	| PokemonSettingsV0286PokemonBreloomNormal
+	| PokemonSettingsV0287PokemonSlakoth
+	| PokemonSettingsV0287PokemonSlakothNormal
+	| PokemonSettingsV0288PokemonVigoroth
+	| PokemonSettingsV0288PokemonVigorothNormal
+	| PokemonSettingsV0289PokemonSlaking
+	| PokemonSettingsV0289PokemonSlakingNormal
+	| PokemonSettingsV0290PokemonNincada
+	| PokemonSettingsV0290PokemonNincadaNormal
+	| PokemonSettingsV0291PokemonNinjask
+	| PokemonSettingsV0291PokemonNinjaskNormal
+	| PokemonSettingsV0292PokemonShedinja
+	| PokemonSettingsV0292PokemonShedinjaNormal
+	| PokemonSettingsV0293PokemonWhismur
+	| PokemonSettingsV0293PokemonWhismurNormal
+	| PokemonSettingsV0294PokemonLoudred
+	| PokemonSettingsV0294PokemonLoudredNormal
+	| PokemonSettingsV0295PokemonExploud
+	| PokemonSettingsV0295PokemonExploudNormal
+	| PokemonSettingsV0296PokemonMakuhita
+	| PokemonSettingsV0296PokemonMakuhitaNormal
+	| PokemonSettingsV0297PokemonHariyama
+	| PokemonSettingsV0297PokemonHariyamaNormal
+	| PokemonSettingsV0298PokemonAzurill
+	| PokemonSettingsV0298PokemonAzurillNormal
+	| PokemonSettingsV0299PokemonNosepass
+	| PokemonSettingsV0299PokemonNosepassNormal
+	| PokemonSettingsV0300PokemonSkitty
+	| PokemonSettingsV0300PokemonSkittyNormal
+	| PokemonSettingsV0301PokemonDelcatty
+	| PokemonSettingsV0301PokemonDelcattyNormal
+	| PokemonSettingsV0302PokemonSableye
+	| PokemonSettingsV0302PokemonSableyeCostume2020
+	| PokemonSettingsV0302PokemonSableyeNormal
+	| PokemonSettingsV0303PokemonMawile
+	| PokemonSettingsV0303PokemonMawileNormal
+	| PokemonSettingsV0304PokemonAron
+	| PokemonSettingsV0304PokemonAronNormal
+	| PokemonSettingsV0305PokemonLairon
+	| PokemonSettingsV0305PokemonLaironNormal
+	| PokemonSettingsV0306PokemonAggron
+	| PokemonSettingsV0306PokemonAggronNormal
+	| PokemonSettingsV0307PokemonMeditite
+	| PokemonSettingsV0307PokemonMedititeNormal
+	| PokemonSettingsV0308PokemonMedicham
+	| PokemonSettingsV0308PokemonMedichamNormal
+	| PokemonSettingsV0309PokemonElectrike
+	| PokemonSettingsV0309PokemonElectrikeNormal
+	| PokemonSettingsV0310PokemonManectric
+	| PokemonSettingsV0310PokemonManectricNormal
+	| PokemonSettingsV0311PokemonPlusle
+	| PokemonSettingsV0311PokemonPlusleNormal
+	| PokemonSettingsV0312PokemonMinun
+	| PokemonSettingsV0312PokemonMinunNormal
+	| PokemonSettingsV0313PokemonVolbeat
+	| PokemonSettingsV0313PokemonVolbeatNormal
+	| PokemonSettingsV0314PokemonIllumise
+	| PokemonSettingsV0314PokemonIllumiseNormal
+	| PokemonSettingsV0315PokemonRoselia
+	| PokemonSettingsV0315PokemonRoseliaNormal
+	| PokemonSettingsV0316PokemonGulpin
+	| PokemonSettingsV0316PokemonGulpinNormal
+	| PokemonSettingsV0317PokemonSwalot
+	| PokemonSettingsV0317PokemonSwalotNormal
+	| PokemonSettingsV0318PokemonCarvanha
+	| PokemonSettingsV0318PokemonCarvanhaNormal
+	| PokemonSettingsV0319PokemonSharpedo
+	| PokemonSettingsV0319PokemonSharpedoNormal
+	| PokemonSettingsV0320PokemonWailmer
+	| PokemonSettingsV0320PokemonWailmerNormal
+	| PokemonSettingsV0321PokemonWailord
+	| PokemonSettingsV0321PokemonWailordNormal
+	| PokemonSettingsV0322PokemonNumel
+	| PokemonSettingsV0322PokemonNumelNormal
+	| PokemonSettingsV0323PokemonCamerupt
+	| PokemonSettingsV0323PokemonCameruptNormal
+	| PokemonSettingsV0324PokemonTorkoal
+	| PokemonSettingsV0324PokemonTorkoalNormal
+	| PokemonSettingsV0325PokemonSpoink
+	| PokemonSettingsV0325PokemonSpoinkNormal
+	| PokemonSettingsV0326PokemonGrumpig
+	| PokemonSettingsV0326PokemonGrumpigNormal
+	| PokemonSettingsV0327PokemonSpinda
+	| PokemonSettingsV0327PokemonSpinda00
+	| PokemonSettingsV0327PokemonSpinda01
+	| PokemonSettingsV0327PokemonSpinda02
+	| PokemonSettingsV0327PokemonSpinda03
+	| PokemonSettingsV0327PokemonSpinda04
+	| PokemonSettingsV0327PokemonSpinda05
+	| PokemonSettingsV0327PokemonSpinda06
+	| PokemonSettingsV0327PokemonSpinda07
+	| PokemonSettingsV0327PokemonSpinda08
+	| PokemonSettingsV0327PokemonSpinda09
+	| PokemonSettingsV0327PokemonSpinda10
+	| PokemonSettingsV0327PokemonSpinda11
+	| PokemonSettingsV0327PokemonSpinda12
+	| PokemonSettingsV0327PokemonSpinda13
+	| PokemonSettingsV0327PokemonSpinda14
+	| PokemonSettingsV0327PokemonSpinda15
+	| PokemonSettingsV0327PokemonSpinda16
+	| PokemonSettingsV0327PokemonSpinda17
+	| PokemonSettingsV0327PokemonSpinda18
+	| PokemonSettingsV0327PokemonSpinda19
+	| PokemonSettingsV0328PokemonTrapinch
+	| PokemonSettingsV0328PokemonTrapinchNormal
+	| PokemonSettingsV0329PokemonVibrava
+	| PokemonSettingsV0329PokemonVibravaNormal
+	| PokemonSettingsV0330PokemonFlygon
+	| PokemonSettingsV0330PokemonFlygonNormal
+	| PokemonSettingsV0331PokemonCacnea
+	| PokemonSettingsV0331PokemonCacneaNormal
+	| PokemonSettingsV0332PokemonCacturne
+	| PokemonSettingsV0332PokemonCacturneNormal
+	| PokemonSettingsV0333PokemonSwablu
+	| PokemonSettingsV0333PokemonSwabluNormal
+	| PokemonSettingsV0334PokemonAltaria
+	| PokemonSettingsV0334PokemonAltariaNormal
+	| PokemonSettingsV0335PokemonZangoose
+	| PokemonSettingsV0335PokemonZangooseNormal
+	| PokemonSettingsV0336PokemonSeviper
+	| PokemonSettingsV0336PokemonSeviperNormal
+	| PokemonSettingsV0337PokemonLunatone
+	| PokemonSettingsV0337PokemonLunatoneNormal
+	| PokemonSettingsV0338PokemonSolrock
+	| PokemonSettingsV0338PokemonSolrockNormal
+	| PokemonSettingsV0339PokemonBarboach
+	| PokemonSettingsV0339PokemonBarboachNormal
+	| PokemonSettingsV0340PokemonWhiscash
+	| PokemonSettingsV0340PokemonWhiscashNormal
+	| PokemonSettingsV0341PokemonCorphish
+	| PokemonSettingsV0341PokemonCorphishNormal
+	| PokemonSettingsV0342PokemonCrawdaunt
+	| PokemonSettingsV0342PokemonCrawdauntNormal
+	| PokemonSettingsV0343PokemonBaltoy
+	| PokemonSettingsV0343PokemonBaltoyNormal
+	| PokemonSettingsV0344PokemonClaydol
+	| PokemonSettingsV0344PokemonClaydolNormal
+	| PokemonSettingsV0345PokemonLileep
+	| PokemonSettingsV0345PokemonLileepNormal
+	| PokemonSettingsV0346PokemonCradily
+	| PokemonSettingsV0346PokemonCradilyNormal
+	| PokemonSettingsV0347PokemonAnorith
+	| PokemonSettingsV0347PokemonAnorithNormal
+	| PokemonSettingsV0348PokemonArmaldo
+	| PokemonSettingsV0348PokemonArmaldoNormal
+	| PokemonSettingsV0349PokemonFeebas
+	| PokemonSettingsV0349PokemonFeebasNormal
+	| PokemonSettingsV0350PokemonMilotic
+	| PokemonSettingsV0350PokemonMiloticNormal
+	| PokemonSettingsV0351PokemonCastform
+	| PokemonSettingsV0351PokemonCastformNormal
+	| PokemonSettingsV0351PokemonCastformRainy
+	| PokemonSettingsV0351PokemonCastformSnowy
+	| PokemonSettingsV0351PokemonCastformSunny
+	| PokemonSettingsV0352PokemonKecleon
+	| PokemonSettingsV0352PokemonKecleonNormal
+	| PokemonSettingsV0353PokemonShuppet
+	| PokemonSettingsV0353PokemonShuppetNormal
+	| PokemonSettingsV0354PokemonBanette
+	| PokemonSettingsV0354PokemonBanetteNormal
+	| PokemonSettingsV0355PokemonDuskull
+	| PokemonSettingsV0355PokemonDuskullNormal
+	| PokemonSettingsV0356PokemonDusclops
+	| PokemonSettingsV0356PokemonDusclopsNormal
+	| PokemonSettingsV0357PokemonTropius
+	| PokemonSettingsV0357PokemonTropiusNormal
+	| PokemonSettingsV0358PokemonChimecho
+	| PokemonSettingsV0358PokemonChimechoNormal
+	| PokemonSettingsV0359PokemonAbsol
+	| PokemonSettingsV0359PokemonAbsolNormal
+	| PokemonSettingsV0360PokemonWynaut
+	| PokemonSettingsV0360PokemonWynautNormal
+	| PokemonSettingsV0361PokemonSnorunt
+	| PokemonSettingsV0361PokemonSnoruntNormal
+	| PokemonSettingsV0362PokemonGlalie
+	| PokemonSettingsV0362PokemonGlalieNormal
+	| PokemonSettingsV0363PokemonSpheal
+	| PokemonSettingsV0363PokemonSphealNormal
+	| PokemonSettingsV0364PokemonSealeo
+	| PokemonSettingsV0364PokemonSealeoNormal
+	| PokemonSettingsV0365PokemonWalrein
+	| PokemonSettingsV0365PokemonWalreinNormal
+	| PokemonSettingsV0366PokemonClamperl
+	| PokemonSettingsV0366PokemonClamperlNormal
+	| PokemonSettingsV0367PokemonHuntail
+	| PokemonSettingsV0367PokemonHuntailNormal
+	| PokemonSettingsV0368PokemonGorebyss
+	| PokemonSettingsV0368PokemonGorebyssNormal
+	| PokemonSettingsV0369PokemonRelicanth
+	| PokemonSettingsV0369PokemonRelicanthNormal
+	| PokemonSettingsV0370PokemonLuvdisc
+	| PokemonSettingsV0370PokemonLuvdiscNormal
+	| PokemonSettingsV0371PokemonBagon
+	| PokemonSettingsV0371PokemonBagonNormal
+	| PokemonSettingsV0372PokemonShelgon
+	| PokemonSettingsV0372PokemonShelgonNormal
+	| PokemonSettingsV0373PokemonSalamence
+	| PokemonSettingsV0373PokemonSalamenceNormal
+	| PokemonSettingsV0374PokemonBeldum
+	| PokemonSettingsV0374PokemonBeldumNormal
+	| PokemonSettingsV0375PokemonMetang
+	| PokemonSettingsV0375PokemonMetangNormal
+	| PokemonSettingsV0376PokemonMetagross
+	| PokemonSettingsV0376PokemonMetagrossNormal
+	| PokemonSettingsV0377PokemonRegirock
+	| PokemonSettingsV0377PokemonRegirockNormal
+	| PokemonSettingsV0378PokemonRegice
+	| PokemonSettingsV0378PokemonRegiceNormal
+	| PokemonSettingsV0379PokemonRegisteel
+	| PokemonSettingsV0379PokemonRegisteelNormal
+	| PokemonSettingsV0380PokemonLatias
+	| PokemonSettingsV0380PokemonLatiasNormal
+	| PokemonSettingsV0380PokemonLatiasS
+	| PokemonSettingsV0381PokemonLatios
+	| PokemonSettingsV0381PokemonLatiosNormal
+	| PokemonSettingsV0381PokemonLatiosS
+	| PokemonSettingsV0382PokemonKyogre
+	| PokemonSettingsV0382PokemonKyogreNormal
+	| PokemonSettingsV0383PokemonGroudon
+	| PokemonSettingsV0383PokemonGroudonNormal
+	| PokemonSettingsV0384PokemonRayquaza
+	| PokemonSettingsV0384PokemonRayquazaNormal
+	| PokemonSettingsV0385PokemonJirachi
+	| PokemonSettingsV0385PokemonJirachiNormal
+	| PokemonSettingsV0386PokemonDeoxys
+	| PokemonSettingsV0386PokemonDeoxysAttack
+	| PokemonSettingsV0386PokemonDeoxysDefense
+	| PokemonSettingsV0386PokemonDeoxysNormal
+	| PokemonSettingsV0386PokemonDeoxysSpeed
+	| PokemonSettingsV0387PokemonTurtwig
+	| PokemonSettingsV0387PokemonTurtwigNormal
+	| PokemonSettingsV0388PokemonGrotle
+	| PokemonSettingsV0388PokemonGrotleNormal
+	| PokemonSettingsV0389PokemonTorterra
+	| PokemonSettingsV0389PokemonTorterraNormal
+	| PokemonSettingsV0390PokemonChimchar
+	| PokemonSettingsV0390PokemonChimcharNormal
+	| PokemonSettingsV0391PokemonMonferno
+	| PokemonSettingsV0391PokemonMonfernoNormal
+	| PokemonSettingsV0392PokemonInfernape
+	| PokemonSettingsV0392PokemonInfernapeNormal
+	| PokemonSettingsV0393PokemonPiplup
+	| PokemonSettingsV0393PokemonPiplupNormal
+	| PokemonSettingsV0394PokemonPrinplup
+	| PokemonSettingsV0394PokemonPrinplupNormal
+	| PokemonSettingsV0395PokemonEmpoleon
+	| PokemonSettingsV0395PokemonEmpoleonNormal
+	| PokemonSettingsV0396PokemonStarly
+	| PokemonSettingsV0396PokemonStarlyNormal
+	| PokemonSettingsV0397PokemonStaravia
+	| PokemonSettingsV0397PokemonStaraviaNormal
+	| PokemonSettingsV0398PokemonStaraptor
+	| PokemonSettingsV0398PokemonStaraptorNormal
+	| PokemonSettingsV0399PokemonBidoof
+	| PokemonSettingsV0399PokemonBidoofNormal
+	| PokemonSettingsV0400PokemonBibarel
+	| PokemonSettingsV0400PokemonBibarelNormal
+	| PokemonSettingsV0401PokemonKricketot
+	| PokemonSettingsV0401PokemonKricketotNormal
+	| PokemonSettingsV0402PokemonKricketune
+	| PokemonSettingsV0402PokemonKricketuneNormal
+	| PokemonSettingsV0403PokemonShinx
+	| PokemonSettingsV0403PokemonShinxNormal
+	| PokemonSettingsV0404PokemonLuxio
+	| PokemonSettingsV0404PokemonLuxioNormal
+	| PokemonSettingsV0405PokemonLuxray
+	| PokemonSettingsV0405PokemonLuxrayNormal
+	| PokemonSettingsV0406PokemonBudew
+	| PokemonSettingsV0406PokemonBudewNormal
+	| PokemonSettingsV0407PokemonRoserade
+	| PokemonSettingsV0407PokemonRoseradeNormal
+	| PokemonSettingsV0408PokemonCranidos
+	| PokemonSettingsV0408PokemonCranidosNormal
+	| PokemonSettingsV0409PokemonRampardos
+	| PokemonSettingsV0409PokemonRampardosNormal
+	| PokemonSettingsV0410PokemonShieldon
+	| PokemonSettingsV0410PokemonShieldonNormal
+	| PokemonSettingsV0411PokemonBastiodon
+	| PokemonSettingsV0411PokemonBastiodonNormal
+	| PokemonSettingsV0412PokemonBurmy
+	| PokemonSettingsV0412PokemonBurmyPlant
+	| PokemonSettingsV0412PokemonBurmySandy
+	| PokemonSettingsV0412PokemonBurmyTrash
+	| PokemonSettingsV0413PokemonWormadam
+	| PokemonSettingsV0413PokemonWormadamPlant
+	| PokemonSettingsV0413PokemonWormadamSandy
+	| PokemonSettingsV0413PokemonWormadamTrash
+	| PokemonSettingsV0414PokemonMothim
+	| PokemonSettingsV0414PokemonMothimNormal
+	| PokemonSettingsV0415PokemonCombee
+	| PokemonSettingsV0415PokemonCombeeNormal
+	| PokemonSettingsV0416PokemonVespiquen
+	| PokemonSettingsV0416PokemonVespiquenNormal
+	| PokemonSettingsV0417PokemonPachirisu
+	| PokemonSettingsV0417PokemonPachirisuNormal
+	| PokemonSettingsV0418PokemonBuizel
+	| PokemonSettingsV0418PokemonBuizelNormal
+	| PokemonSettingsV0419PokemonFloatzel
+	| PokemonSettingsV0419PokemonFloatzelNormal
+	| PokemonSettingsV0420PokemonCherubi
+	| PokemonSettingsV0420PokemonCherubiNormal
+	| PokemonSettingsV0421PokemonCherrim
+	| PokemonSettingsV0421PokemonCherrimOvercast
+	| PokemonSettingsV0421PokemonCherrimSunny
+	| PokemonSettingsV0422PokemonShellos
+	| PokemonSettingsV0422PokemonShellosEastSea
+	| PokemonSettingsV0422PokemonShellosWestSea
+	| PokemonSettingsV0423PokemonGastrodon
+	| PokemonSettingsV0423PokemonGastrodonEastSea
+	| PokemonSettingsV0423PokemonGastrodonWestSea
+	| PokemonSettingsV0424PokemonAmbipom
+	| PokemonSettingsV0424PokemonAmbipomNormal
+	| PokemonSettingsV0425PokemonDrifloon
+	| PokemonSettingsV0425PokemonDrifloonNormal
+	| PokemonSettingsV0426PokemonDrifblim
+	| PokemonSettingsV0426PokemonDrifblimNormal
+	| PokemonSettingsV0427PokemonBuneary
+	| PokemonSettingsV0427PokemonBunearyNormal
+	| PokemonSettingsV0428PokemonLopunny
+	| PokemonSettingsV0428PokemonLopunnyNormal
+	| PokemonSettingsV0429PokemonMismagius
+	| PokemonSettingsV0429PokemonMismagiusNormal
+	| PokemonSettingsV0430PokemonHonchkrow
+	| PokemonSettingsV0430PokemonHonchkrowNormal
+	| PokemonSettingsV0431PokemonGlameow
+	| PokemonSettingsV0431PokemonGlameowNormal
+	| PokemonSettingsV0432PokemonPurugly
+	| PokemonSettingsV0432PokemonPuruglyNormal
+	| PokemonSettingsV0433PokemonChingling
+	| PokemonSettingsV0433PokemonChinglingNormal
+	| PokemonSettingsV0434PokemonStunky
+	| PokemonSettingsV0434PokemonStunkyNormal
+	| PokemonSettingsV0435PokemonSkuntank
+	| PokemonSettingsV0435PokemonSkuntankNormal
+	| PokemonSettingsV0436PokemonBronzor
+	| PokemonSettingsV0436PokemonBronzorNormal
+	| PokemonSettingsV0437PokemonBronzong
+	| PokemonSettingsV0437PokemonBronzongNormal
+	| PokemonSettingsV0438PokemonBonsly
+	| PokemonSettingsV0438PokemonBonslyNormal
+	| PokemonSettingsV0439PokemonMimeJr
+	| PokemonSettingsV0439PokemonMimeJrNormal
+	| PokemonSettingsV0440PokemonHappiny
+	| PokemonSettingsV0440PokemonHappinyNormal
+	| PokemonSettingsV0441PokemonChatot
+	| PokemonSettingsV0441PokemonChatotNormal
+	| PokemonSettingsV0442PokemonSpiritomb
+	| PokemonSettingsV0442PokemonSpiritombNormal
+	| PokemonSettingsV0443PokemonGible
+	| PokemonSettingsV0443PokemonGibleNormal
+	| PokemonSettingsV0444PokemonGabite
+	| PokemonSettingsV0444PokemonGabiteNormal
+	| PokemonSettingsV0445PokemonGarchomp
+	| PokemonSettingsV0445PokemonGarchompNormal
+	| PokemonSettingsV0446PokemonMunchlax
+	| PokemonSettingsV0446PokemonMunchlaxNormal
+	| PokemonSettingsV0447PokemonRiolu
+	| PokemonSettingsV0447PokemonRioluNormal
+	| PokemonSettingsV0448PokemonLucario
+	| PokemonSettingsV0448PokemonLucarioNormal
+	| PokemonSettingsV0449PokemonHippopotas
+	| PokemonSettingsV0449PokemonHippopotasNormal
+	| PokemonSettingsV0450PokemonHippowdon
+	| PokemonSettingsV0450PokemonHippowdonNormal
+	| PokemonSettingsV0451PokemonSkorupi
+	| PokemonSettingsV0451PokemonSkorupiNormal
+	| PokemonSettingsV0452PokemonDrapion
+	| PokemonSettingsV0452PokemonDrapionNormal
+	| PokemonSettingsV0453PokemonCroagunk
+	| PokemonSettingsV0453PokemonCroagunkNormal
+	| PokemonSettingsV0454PokemonToxicroak
+	| PokemonSettingsV0454PokemonToxicroakNormal
+	| PokemonSettingsV0455PokemonCarnivine
+	| PokemonSettingsV0455PokemonCarnivineNormal
+	| PokemonSettingsV0456PokemonFinneon
+	| PokemonSettingsV0456PokemonFinneonNormal
+	| PokemonSettingsV0457PokemonLumineon
+	| PokemonSettingsV0457PokemonLumineonNormal
+	| PokemonSettingsV0458PokemonMantyke
+	| PokemonSettingsV0458PokemonMantykeNormal
+	| PokemonSettingsV0459PokemonSnover
+	| PokemonSettingsV0459PokemonSnoverNormal
+	| PokemonSettingsV0460PokemonAbomasnow
+	| PokemonSettingsV0460PokemonAbomasnowNormal
+	| PokemonSettingsV0461PokemonWeavile
+	| PokemonSettingsV0461PokemonWeavileNormal
+	| PokemonSettingsV0462PokemonMagnezone
+	| PokemonSettingsV0462PokemonMagnezoneNormal
+	| PokemonSettingsV0463PokemonLickilicky
+	| PokemonSettingsV0463PokemonLickilickyNormal
+	| PokemonSettingsV0464PokemonRhyperior
+	| PokemonSettingsV0464PokemonRhyperiorNormal
+	| PokemonSettingsV0465PokemonTangrowth
+	| PokemonSettingsV0465PokemonTangrowthNormal
+	| PokemonSettingsV0466PokemonElectivire
+	| PokemonSettingsV0466PokemonElectivireNormal
+	| PokemonSettingsV0467PokemonMagmortar
+	| PokemonSettingsV0467PokemonMagmortarNormal
+	| PokemonSettingsV0468PokemonTogekiss
+	| PokemonSettingsV0468PokemonTogekissNormal
+	| PokemonSettingsV0469PokemonYanmega
+	| PokemonSettingsV0469PokemonYanmegaNormal
+	| PokemonSettingsV0470PokemonLeafeon
+	| PokemonSettingsV0470PokemonLeafeonNormal
+	| PokemonSettingsV0471PokemonGlaceon
+	| PokemonSettingsV0471PokemonGlaceonNormal
+	| PokemonSettingsV0472PokemonGliscor
+	| PokemonSettingsV0472PokemonGliscorNormal
+	| PokemonSettingsV0473PokemonMamoswine
+	| PokemonSettingsV0473PokemonMamoswineNormal
+	| PokemonSettingsV0474PokemonPorygonZ
+	| PokemonSettingsV0474PokemonPorygonZNormal
+	| PokemonSettingsV0475PokemonGallade
+	| PokemonSettingsV0475PokemonGalladeNormal
+	| PokemonSettingsV0476PokemonProbopass
+	| PokemonSettingsV0476PokemonProbopassNormal
+	| PokemonSettingsV0477PokemonDusknoir
+	| PokemonSettingsV0477PokemonDusknoirNormal
+	| PokemonSettingsV0478PokemonFroslass
+	| PokemonSettingsV0478PokemonFroslassNormal
+	| PokemonSettingsV0479PokemonRotom
+	| PokemonSettingsV0479PokemonRotomFan
+	| PokemonSettingsV0479PokemonRotomFrost
+	| PokemonSettingsV0479PokemonRotomHeat
+	| PokemonSettingsV0479PokemonRotomMow
+	| PokemonSettingsV0479PokemonRotomNormal
+	| PokemonSettingsV0479PokemonRotomWash
+	| PokemonSettingsV0480PokemonUxie
+	| PokemonSettingsV0480PokemonUxieNormal
+	| PokemonSettingsV0481PokemonMesprit
+	| PokemonSettingsV0481PokemonMespritNormal
+	| PokemonSettingsV0482PokemonAzelf
+	| PokemonSettingsV0482PokemonAzelfNormal
+	| PokemonSettingsV0483PokemonDialga
+	| PokemonSettingsV0483PokemonDialgaNormal
+	| PokemonSettingsV0483PokemonDialgaOrigin
+	| PokemonSettingsV0484PokemonPalkia
+	| PokemonSettingsV0484PokemonPalkiaNormal
+	| PokemonSettingsV0484PokemonPalkiaOrigin
+	| PokemonSettingsV0485PokemonHeatran
+	| PokemonSettingsV0485PokemonHeatranNormal
+	| PokemonSettingsV0486PokemonRegigigas
+	| PokemonSettingsV0486PokemonRegigigasNormal
+	| PokemonSettingsV0487PokemonGiratina
+	| PokemonSettingsV0487PokemonGiratinaAltered
+	| PokemonSettingsV0487PokemonGiratinaOrigin
+	| PokemonSettingsV0488PokemonCresselia
+	| PokemonSettingsV0488PokemonCresseliaNormal
+	| PokemonSettingsV0489PokemonPhione
+	| PokemonSettingsV0489PokemonPhioneNormal
+	| PokemonSettingsV0490PokemonManaphy
+	| PokemonSettingsV0490PokemonManaphyNormal
+	| PokemonSettingsV0491PokemonDarkrai
+	| PokemonSettingsV0491PokemonDarkraiNormal
+	| PokemonSettingsV0492PokemonShaymin
+	| PokemonSettingsV0492PokemonShayminLand
+	| PokemonSettingsV0492PokemonShayminSky
+	| PokemonSettingsV0493PokemonArceus
+	| PokemonSettingsV0493PokemonArceusBug
+	| PokemonSettingsV0493PokemonArceusDark
+	| PokemonSettingsV0493PokemonArceusDragon
+	| PokemonSettingsV0493PokemonArceusElectric
+	| PokemonSettingsV0493PokemonArceusFairy
+	| PokemonSettingsV0493PokemonArceusFighting
+	| PokemonSettingsV0493PokemonArceusFire
+	| PokemonSettingsV0493PokemonArceusFlying
+	| PokemonSettingsV0493PokemonArceusGhost
+	| PokemonSettingsV0493PokemonArceusGrass
+	| PokemonSettingsV0493PokemonArceusGround
+	| PokemonSettingsV0493PokemonArceusIce
+	| PokemonSettingsV0493PokemonArceusNormal
+	| PokemonSettingsV0493PokemonArceusPoison
+	| PokemonSettingsV0493PokemonArceusPsychic
+	| PokemonSettingsV0493PokemonArceusRock
+	| PokemonSettingsV0493PokemonArceusSteel
+	| PokemonSettingsV0493PokemonArceusWater
+	| PokemonSettingsV0494PokemonVictini
+	| PokemonSettingsV0494PokemonVictiniNormal
+	| PokemonSettingsV0495PokemonSnivy
+	| PokemonSettingsV0495PokemonSnivyNormal
+	| PokemonSettingsV0496PokemonServine
+	| PokemonSettingsV0496PokemonServineNormal
+	| PokemonSettingsV0497PokemonSerperior
+	| PokemonSettingsV0497PokemonSerperiorNormal
+	| PokemonSettingsV0498PokemonTepig
+	| PokemonSettingsV0498PokemonTepigNormal
+	| PokemonSettingsV0499PokemonPignite
+	| PokemonSettingsV0499PokemonPigniteNormal
+	| PokemonSettingsV0500PokemonEmboar
+	| PokemonSettingsV0500PokemonEmboarNormal
+	| PokemonSettingsV0501PokemonOshawott
+	| PokemonSettingsV0501PokemonOshawottNormal
+	| PokemonSettingsV0502PokemonDewott
+	| PokemonSettingsV0502PokemonDewottNormal
+	| PokemonSettingsV0503PokemonSamurott
+	| PokemonSettingsV0503PokemonSamurottHisuian
+	| PokemonSettingsV0503PokemonSamurottNormal
+	| PokemonSettingsV0504PokemonPatrat
+	| PokemonSettingsV0504PokemonPatratNormal
+	| PokemonSettingsV0505PokemonWatchog
+	| PokemonSettingsV0505PokemonWatchogNormal
+	| PokemonSettingsV0506PokemonLillipup
+	| PokemonSettingsV0506PokemonLillipupNormal
+	| PokemonSettingsV0507PokemonHerdier
+	| PokemonSettingsV0507PokemonHerdierNormal
+	| PokemonSettingsV0508PokemonStoutland
+	| PokemonSettingsV0508PokemonStoutlandNormal
+	| PokemonSettingsV0509PokemonPurrloin
+	| PokemonSettingsV0509PokemonPurrloinNormal
+	| PokemonSettingsV0510PokemonLiepard
+	| PokemonSettingsV0510PokemonLiepardNormal
+	| PokemonSettingsV0511PokemonPansage
+	| PokemonSettingsV0511PokemonPansageNormal
+	| PokemonSettingsV0512PokemonSimisage
+	| PokemonSettingsV0512PokemonSimisageNormal
+	| PokemonSettingsV0513PokemonPansear
+	| PokemonSettingsV0513PokemonPansearNormal
+	| PokemonSettingsV0514PokemonSimisear
+	| PokemonSettingsV0514PokemonSimisearNormal
+	| PokemonSettingsV0515PokemonPanpour
+	| PokemonSettingsV0515PokemonPanpourNormal
+	| PokemonSettingsV0516PokemonSimipour
+	| PokemonSettingsV0516PokemonSimipourNormal
+	| PokemonSettingsV0517PokemonMunna
+	| PokemonSettingsV0517PokemonMunnaNormal
+	| PokemonSettingsV0518PokemonMusharna
+	| PokemonSettingsV0518PokemonMusharnaNormal
+	| PokemonSettingsV0519PokemonPidove
+	| PokemonSettingsV0519PokemonPidoveNormal
+	| PokemonSettingsV0520PokemonTranquill
+	| PokemonSettingsV0520PokemonTranquillNormal
+	| PokemonSettingsV0521PokemonUnfezant
+	| PokemonSettingsV0521PokemonUnfezantNormal
+	| PokemonSettingsV0522PokemonBlitzle
+	| PokemonSettingsV0522PokemonBlitzleNormal
+	| PokemonSettingsV0523PokemonZebstrika
+	| PokemonSettingsV0523PokemonZebstrikaNormal
+	| PokemonSettingsV0524PokemonRoggenrola
+	| PokemonSettingsV0524PokemonRoggenrolaNormal
+	| PokemonSettingsV0525PokemonBoldore
+	| PokemonSettingsV0525PokemonBoldoreNormal
+	| PokemonSettingsV0526PokemonGigalith
+	| PokemonSettingsV0526PokemonGigalithNormal
+	| PokemonSettingsV0527PokemonWoobat
+	| PokemonSettingsV0527PokemonWoobatNormal
+	| PokemonSettingsV0528PokemonSwoobat
+	| PokemonSettingsV0528PokemonSwoobatNormal
+	| PokemonSettingsV0529PokemonDrilbur
+	| PokemonSettingsV0529PokemonDrilburNormal
+	| PokemonSettingsV0530PokemonExcadrill
+	| PokemonSettingsV0530PokemonExcadrillNormal
+	| PokemonSettingsV0531PokemonAudino
+	| PokemonSettingsV0531PokemonAudinoNormal
+	| PokemonSettingsV0532PokemonTimburr
+	| PokemonSettingsV0532PokemonTimburrNormal
+	| PokemonSettingsV0533PokemonGurdurr
+	| PokemonSettingsV0533PokemonGurdurrNormal
+	| PokemonSettingsV0534PokemonConkeldurr
+	| PokemonSettingsV0534PokemonConkeldurrNormal
+	| PokemonSettingsV0535PokemonTympole
+	| PokemonSettingsV0535PokemonTympoleNormal
+	| PokemonSettingsV0536PokemonPalpitoad
+	| PokemonSettingsV0536PokemonPalpitoadNormal
+	| PokemonSettingsV0537PokemonSeismitoad
+	| PokemonSettingsV0537PokemonSeismitoadNormal
+	| PokemonSettingsV0538PokemonThroh
+	| PokemonSettingsV0538PokemonThrohNormal
+	| PokemonSettingsV0539PokemonSawk
+	| PokemonSettingsV0539PokemonSawkNormal
+	| PokemonSettingsV0540PokemonSewaddle
+	| PokemonSettingsV0540PokemonSewaddleNormal
+	| PokemonSettingsV0541PokemonSwadloon
+	| PokemonSettingsV0541PokemonSwadloonNormal
+	| PokemonSettingsV0542PokemonLeavanny
+	| PokemonSettingsV0542PokemonLeavannyNormal
+	| PokemonSettingsV0543PokemonVenipede
+	| PokemonSettingsV0543PokemonVenipedeNormal
+	| PokemonSettingsV0544PokemonWhirlipede
+	| PokemonSettingsV0544PokemonWhirlipedeNormal
+	| PokemonSettingsV0545PokemonScolipede
+	| PokemonSettingsV0545PokemonScolipedeNormal
+	| PokemonSettingsV0546PokemonCottonee
+	| PokemonSettingsV0546PokemonCottoneeNormal
+	| PokemonSettingsV0547PokemonWhimsicott
+	| PokemonSettingsV0547PokemonWhimsicottNormal
+	| PokemonSettingsV0548PokemonPetilil
+	| PokemonSettingsV0548PokemonPetililNormal
+	| PokemonSettingsV0549PokemonLilligant
+	| PokemonSettingsV0549PokemonLilligantHisuian
+	| PokemonSettingsV0549PokemonLilligantNormal
+	| PokemonSettingsV0550PokemonBasculin
+	| PokemonSettingsV0550PokemonBasculinBlueStriped
+	| PokemonSettingsV0550PokemonBasculinRedStriped
+	| PokemonSettingsV0550PokemonBasculinWhiteStriped
+	| PokemonSettingsV0551PokemonSandile
+	| PokemonSettingsV0551PokemonSandileNormal
+	| PokemonSettingsV0552PokemonKrokorok
+	| PokemonSettingsV0552PokemonKrokorokNormal
+	| PokemonSettingsV0553PokemonKrookodile
+	| PokemonSettingsV0553PokemonKrookodileNormal
+	| PokemonSettingsV0554PokemonDarumaka
+	| PokemonSettingsV0554PokemonDarumakaGalarian
+	| PokemonSettingsV0554PokemonDarumakaNormal
+	| PokemonSettingsV0555PokemonDarmanitan
+	| PokemonSettingsV0555PokemonDarmanitanGalarianStandard
+	| PokemonSettingsV0555PokemonDarmanitanGalarianZen
+	| PokemonSettingsV0555PokemonDarmanitanStandard
+	| PokemonSettingsV0555PokemonDarmanitanZen
+	| PokemonSettingsV0556PokemonMaractus
+	| PokemonSettingsV0556PokemonMaractusNormal
+	| PokemonSettingsV0557PokemonDwebble
+	| PokemonSettingsV0557PokemonDwebbleNormal
+	| PokemonSettingsV0558PokemonCrustle
+	| PokemonSettingsV0558PokemonCrustleNormal
+	| PokemonSettingsV0559PokemonScraggy
+	| PokemonSettingsV0559PokemonScraggyNormal
+	| PokemonSettingsV0560PokemonScrafty
+	| PokemonSettingsV0560PokemonScraftyNormal
+	| PokemonSettingsV0561PokemonSigilyph
+	| PokemonSettingsV0561PokemonSigilyphNormal
+	| PokemonSettingsV0562PokemonYamask
+	| PokemonSettingsV0562PokemonYamaskGalarian
+	| PokemonSettingsV0562PokemonYamaskNormal
+	| PokemonSettingsV0563PokemonCofagrigus
+	| PokemonSettingsV0563PokemonCofagrigusNormal
+	| PokemonSettingsV0564PokemonTirtouga
+	| PokemonSettingsV0564PokemonTirtougaNormal
+	| PokemonSettingsV0565PokemonCarracosta
+	| PokemonSettingsV0565PokemonCarracostaNormal
+	| PokemonSettingsV0566PokemonArchen
+	| PokemonSettingsV0566PokemonArchenNormal
+	| PokemonSettingsV0567PokemonArcheops
+	| PokemonSettingsV0567PokemonArcheopsNormal
+	| PokemonSettingsV0568PokemonTrubbish
+	| PokemonSettingsV0568PokemonTrubbishNormal
+	| PokemonSettingsV0569PokemonGarbodor
+	| PokemonSettingsV0569PokemonGarbodorNormal
+	| PokemonSettingsV0570PokemonZorua
+	| PokemonSettingsV0570PokemonZoruaHisuian
+	| PokemonSettingsV0570PokemonZoruaNormal
+	| PokemonSettingsV0571PokemonZoroark
+	| PokemonSettingsV0571PokemonZoroarkHisuian
+	| PokemonSettingsV0571PokemonZoroarkNormal
+	| PokemonSettingsV0572PokemonMinccino
+	| PokemonSettingsV0572PokemonMinccinoNormal
+	| PokemonSettingsV0573PokemonCinccino
+	| PokemonSettingsV0573PokemonCinccinoNormal
+	| PokemonSettingsV0574PokemonGothita
+	| PokemonSettingsV0574PokemonGothitaNormal
+	| PokemonSettingsV0575PokemonGothorita
+	| PokemonSettingsV0575PokemonGothoritaNormal
+	| PokemonSettingsV0576PokemonGothitelle
+	| PokemonSettingsV0576PokemonGothitelleNormal
+	| PokemonSettingsV0577PokemonSolosis
+	| PokemonSettingsV0577PokemonSolosisNormal
+	| PokemonSettingsV0578PokemonDuosion
+	| PokemonSettingsV0578PokemonDuosionNormal
+	| PokemonSettingsV0579PokemonReuniclus
+	| PokemonSettingsV0579PokemonReuniclusNormal
+	| PokemonSettingsV0580PokemonDucklett
+	| PokemonSettingsV0580PokemonDucklettNormal
+	| PokemonSettingsV0581PokemonSwanna
+	| PokemonSettingsV0581PokemonSwannaNormal
+	| PokemonSettingsV0582PokemonVanillite
+	| PokemonSettingsV0582PokemonVanilliteNormal
+	| PokemonSettingsV0583PokemonVanillish
+	| PokemonSettingsV0583PokemonVanillishNormal
+	| PokemonSettingsV0584PokemonVanilluxe
+	| PokemonSettingsV0584PokemonVanilluxeNormal
+	| PokemonSettingsV0585PokemonDeerling
+	| PokemonSettingsV0585PokemonDeerlingAutumn
+	| PokemonSettingsV0585PokemonDeerlingSpring
+	| PokemonSettingsV0585PokemonDeerlingSummer
+	| PokemonSettingsV0585PokemonDeerlingWinter
+	| PokemonSettingsV0586PokemonSawsbuck
+	| PokemonSettingsV0586PokemonSawsbuckAutumn
+	| PokemonSettingsV0586PokemonSawsbuckSpring
+	| PokemonSettingsV0586PokemonSawsbuckSummer
+	| PokemonSettingsV0586PokemonSawsbuckWinter
+	| PokemonSettingsV0587PokemonEmolga
+	| PokemonSettingsV0587PokemonEmolgaNormal
+	| PokemonSettingsV0588PokemonKarrablast
+	| PokemonSettingsV0588PokemonKarrablastNormal
+	| PokemonSettingsV0589PokemonEscavalier
+	| PokemonSettingsV0589PokemonEscavalierNormal
+	| PokemonSettingsV0590PokemonFoongus
+	| PokemonSettingsV0590PokemonFoongusNormal
+	| PokemonSettingsV0591PokemonAmoonguss
+	| PokemonSettingsV0591PokemonAmoongussNormal
+	| PokemonSettingsV0592PokemonFrillish
+	| PokemonSettingsV0592PokemonFrillishFemale
+	| PokemonSettingsV0592PokemonFrillishNormal
+	| PokemonSettingsV0593PokemonJellicent
+	| PokemonSettingsV0593PokemonJellicentFemale
+	| PokemonSettingsV0593PokemonJellicentNormal
+	| PokemonSettingsV0594PokemonAlomomola
+	| PokemonSettingsV0594PokemonAlomomolaNormal
+	| PokemonSettingsV0595PokemonJoltik
+	| PokemonSettingsV0595PokemonJoltikNormal
+	| PokemonSettingsV0596PokemonGalvantula
+	| PokemonSettingsV0596PokemonGalvantulaNormal
+	| PokemonSettingsV0597PokemonFerroseed
+	| PokemonSettingsV0597PokemonFerroseedNormal
+	| PokemonSettingsV0598PokemonFerrothorn
+	| PokemonSettingsV0598PokemonFerrothornNormal
+	| PokemonSettingsV0599PokemonKlink
+	| PokemonSettingsV0599PokemonKlinkNormal
+	| PokemonSettingsV0600PokemonKlang
+	| PokemonSettingsV0600PokemonKlangNormal
+	| PokemonSettingsV0601PokemonKlinklang
+	| PokemonSettingsV0601PokemonKlinklangNormal
+	| PokemonSettingsV0602PokemonTynamo
+	| PokemonSettingsV0602PokemonTynamoNormal
+	| PokemonSettingsV0603PokemonEelektrik
+	| PokemonSettingsV0603PokemonEelektrikNormal
+	| PokemonSettingsV0604PokemonEelektross
+	| PokemonSettingsV0604PokemonEelektrossNormal
+	| PokemonSettingsV0605PokemonElgyem
+	| PokemonSettingsV0605PokemonElgyemNormal
+	| PokemonSettingsV0606PokemonBeheeyem
+	| PokemonSettingsV0606PokemonBeheeyemNormal
+	| PokemonSettingsV0607PokemonLitwick
+	| PokemonSettingsV0607PokemonLitwickNormal
+	| PokemonSettingsV0608PokemonLampent
+	| PokemonSettingsV0608PokemonLampentNormal
+	| PokemonSettingsV0609PokemonChandelure
+	| PokemonSettingsV0609PokemonChandelureNormal
+	| PokemonSettingsV0610PokemonAxew
+	| PokemonSettingsV0610PokemonAxewNormal
+	| PokemonSettingsV0611PokemonFraxure
+	| PokemonSettingsV0611PokemonFraxureNormal
+	| PokemonSettingsV0612PokemonHaxorus
+	| PokemonSettingsV0612PokemonHaxorusNormal
+	| PokemonSettingsV0613PokemonCubchoo
+	| PokemonSettingsV0613PokemonCubchooNormal
+	| PokemonSettingsV0613PokemonCubchooWinter2020
+	| PokemonSettingsV0614PokemonBeartic
+	| PokemonSettingsV0614PokemonBearticNormal
+	| PokemonSettingsV0614PokemonBearticWinter2020
+	| PokemonSettingsV0615PokemonCryogonal
+	| PokemonSettingsV0615PokemonCryogonalNormal
+	| PokemonSettingsV0616PokemonShelmet
+	| PokemonSettingsV0616PokemonShelmetNormal
+	| PokemonSettingsV0617PokemonAccelgor
+	| PokemonSettingsV0617PokemonAccelgorNormal
+	| PokemonSettingsV0618PokemonStunfisk
+	| PokemonSettingsV0618PokemonStunfiskGalarian
+	| PokemonSettingsV0618PokemonStunfiskNormal
+	| PokemonSettingsV0619PokemonMienfoo
+	| PokemonSettingsV0619PokemonMienfooNormal
+	| PokemonSettingsV0620PokemonMienshao
+	| PokemonSettingsV0620PokemonMienshaoNormal
+	| PokemonSettingsV0621PokemonDruddigon
+	| PokemonSettingsV0621PokemonDruddigonNormal
+	| PokemonSettingsV0622PokemonGolett
+	| PokemonSettingsV0622PokemonGolettNormal
+	| PokemonSettingsV0623PokemonGolurk
+	| PokemonSettingsV0623PokemonGolurkNormal
+	| PokemonSettingsV0624PokemonPawniard
+	| PokemonSettingsV0624PokemonPawniardNormal
+	| PokemonSettingsV0625PokemonBisharp
+	| PokemonSettingsV0625PokemonBisharpNormal
+	| PokemonSettingsV0626PokemonBouffalant
+	| PokemonSettingsV0626PokemonBouffalantNormal
+	| PokemonSettingsV0627PokemonRufflet
+	| PokemonSettingsV0627PokemonRuffletNormal
+	| PokemonSettingsV0628PokemonBraviary
+	| PokemonSettingsV0628PokemonBraviaryHisuian
+	| PokemonSettingsV0628PokemonBraviaryNormal
+	| PokemonSettingsV0629PokemonVullaby
+	| PokemonSettingsV0629PokemonVullabyNormal
+	| PokemonSettingsV0630PokemonMandibuzz
+	| PokemonSettingsV0630PokemonMandibuzzNormal
+	| PokemonSettingsV0631PokemonHeatmor
+	| PokemonSettingsV0631PokemonHeatmorNormal
+	| PokemonSettingsV0632PokemonDurant
+	| PokemonSettingsV0632PokemonDurantNormal
+	| PokemonSettingsV0633PokemonDeino
+	| PokemonSettingsV0633PokemonDeinoNormal
+	| PokemonSettingsV0634PokemonZweilous
+	| PokemonSettingsV0634PokemonZweilousNormal
+	| PokemonSettingsV0635PokemonHydreigon
+	| PokemonSettingsV0635PokemonHydreigonNormal
+	| PokemonSettingsV0636PokemonLarvesta
+	| PokemonSettingsV0636PokemonLarvestaNormal
+	| PokemonSettingsV0637PokemonVolcarona
+	| PokemonSettingsV0637PokemonVolcaronaNormal
+	| PokemonSettingsV0638PokemonCobalion
+	| PokemonSettingsV0638PokemonCobalionNormal
+	| PokemonSettingsV0639PokemonTerrakion
+	| PokemonSettingsV0639PokemonTerrakionNormal
+	| PokemonSettingsV0640PokemonVirizion
+	| PokemonSettingsV0640PokemonVirizionNormal
+	| PokemonSettingsV0641PokemonTornadus
+	| PokemonSettingsV0641PokemonTornadusIncarnate
+	| PokemonSettingsV0641PokemonTornadusTherian
+	| PokemonSettingsV0642PokemonThundurus
+	| PokemonSettingsV0642PokemonThundurusIncarnate
+	| PokemonSettingsV0642PokemonThundurusTherian
+	| PokemonSettingsV0643PokemonReshiram
+	| PokemonSettingsV0643PokemonReshiramNormal
+	| PokemonSettingsV0644PokemonZekrom
+	| PokemonSettingsV0644PokemonZekromNormal
+	| PokemonSettingsV0645PokemonLandorus
+	| PokemonSettingsV0645PokemonLandorusIncarnate
+	| PokemonSettingsV0645PokemonLandorusTherian
+	| PokemonSettingsV0646PokemonKyurem
+	| PokemonSettingsV0646PokemonKyuremBlack
+	| PokemonSettingsV0646PokemonKyuremNormal
+	| PokemonSettingsV0646PokemonKyuremWhite
+	| PokemonSettingsV0647PokemonKeldeo
+	| PokemonSettingsV0647PokemonKeldeoOrdinary
+	| PokemonSettingsV0647PokemonKeldeoResolute
+	| PokemonSettingsV0648PokemonMeloetta
+	| PokemonSettingsV0648PokemonMeloettaAria
+	| PokemonSettingsV0648PokemonMeloettaPirouette
+	| PokemonSettingsV0649PokemonGenesect
+	| PokemonSettingsV0649PokemonGenesectBurn
+	| PokemonSettingsV0649PokemonGenesectChill
+	| PokemonSettingsV0649PokemonGenesectDouse
+	| PokemonSettingsV0649PokemonGenesectNormal
+	| PokemonSettingsV0649PokemonGenesectShock
+	| PokemonSettingsV0650PokemonChespin
+	| PokemonSettingsV0650PokemonChespinNormal
+	| PokemonSettingsV0651PokemonQuilladin
+	| PokemonSettingsV0651PokemonQuilladinNormal
+	| PokemonSettingsV0652PokemonChesnaught
+	| PokemonSettingsV0652PokemonChesnaughtNormal
+	| PokemonSettingsV0653PokemonFennekin
+	| PokemonSettingsV0653PokemonFennekinNormal
+	| PokemonSettingsV0654PokemonBraixen
+	| PokemonSettingsV0654PokemonBraixenNormal
+	| PokemonSettingsV0655PokemonDelphox
+	| PokemonSettingsV0655PokemonDelphoxNormal
+	| PokemonSettingsV0656PokemonFroakie
+	| PokemonSettingsV0656PokemonFroakieNormal
+	| PokemonSettingsV0657PokemonFrogadier
+	| PokemonSettingsV0657PokemonFrogadierNormal
+	| PokemonSettingsV0658PokemonGreninja
+	| PokemonSettingsV0658PokemonGreninjaNormal
+	| PokemonSettingsV0659PokemonBunnelby
+	| PokemonSettingsV0659PokemonBunnelbyNormal
+	| PokemonSettingsV0660PokemonDiggersby
+	| PokemonSettingsV0660PokemonDiggersbyNormal
+	| PokemonSettingsV0661PokemonFletchling
+	| PokemonSettingsV0661PokemonFletchlingNormal
+	| PokemonSettingsV0662PokemonFletchinder
+	| PokemonSettingsV0662PokemonFletchinderNormal
+	| PokemonSettingsV0663PokemonTalonflame
+	| PokemonSettingsV0663PokemonTalonflameNormal
+	| PokemonSettingsV0664PokemonScatterbug
+	| PokemonSettingsV0664PokemonScatterbugArchipelago
+	| PokemonSettingsV0664PokemonScatterbugContinental
+	| PokemonSettingsV0664PokemonScatterbugElegant
+	| PokemonSettingsV0664PokemonScatterbugFancy
+	| PokemonSettingsV0664PokemonScatterbugGarden
+	| PokemonSettingsV0664PokemonScatterbugHighPlains
+	| PokemonSettingsV0664PokemonScatterbugIcySnow
+	| PokemonSettingsV0664PokemonScatterbugJungle
+	| PokemonSettingsV0664PokemonScatterbugMarine
+	| PokemonSettingsV0664PokemonScatterbugMeadow
+	| PokemonSettingsV0664PokemonScatterbugModern
+	| PokemonSettingsV0664PokemonScatterbugMonsoon
+	| PokemonSettingsV0664PokemonScatterbugOcean
+	| PokemonSettingsV0664PokemonScatterbugPokeball
+	| PokemonSettingsV0664PokemonScatterbugPolar
+	| PokemonSettingsV0664PokemonScatterbugRiver
+	| PokemonSettingsV0664PokemonScatterbugSandstorm
+	| PokemonSettingsV0664PokemonScatterbugSavanna
+	| PokemonSettingsV0664PokemonScatterbugSun
+	| PokemonSettingsV0664PokemonScatterbugTundra
+	| PokemonSettingsV0665PokemonSpewpa
+	| PokemonSettingsV0665PokemonSpewpaArchipelago
+	| PokemonSettingsV0665PokemonSpewpaContinental
+	| PokemonSettingsV0665PokemonSpewpaElegant
+	| PokemonSettingsV0665PokemonSpewpaFancy
+	| PokemonSettingsV0665PokemonSpewpaGarden
+	| PokemonSettingsV0665PokemonSpewpaHighPlains
+	| PokemonSettingsV0665PokemonSpewpaIcySnow
+	| PokemonSettingsV0665PokemonSpewpaJungle
+	| PokemonSettingsV0665PokemonSpewpaMarine
+	| PokemonSettingsV0665PokemonSpewpaMeadow
+	| PokemonSettingsV0665PokemonSpewpaModern
+	| PokemonSettingsV0665PokemonSpewpaMonsoon
+	| PokemonSettingsV0665PokemonSpewpaOcean
+	| PokemonSettingsV0665PokemonSpewpaPokeball
+	| PokemonSettingsV0665PokemonSpewpaPolar
+	| PokemonSettingsV0665PokemonSpewpaRiver
+	| PokemonSettingsV0665PokemonSpewpaSandstorm
+	| PokemonSettingsV0665PokemonSpewpaSavanna
+	| PokemonSettingsV0665PokemonSpewpaSun
+	| PokemonSettingsV0665PokemonSpewpaTundra
+	| PokemonSettingsV0666PokemonVivillon
+	| PokemonSettingsV0666PokemonVivillonArchipelago
+	| PokemonSettingsV0666PokemonVivillonContinental
+	| PokemonSettingsV0666PokemonVivillonElegant
+	| PokemonSettingsV0666PokemonVivillonFancy
+	| PokemonSettingsV0666PokemonVivillonGarden
+	| PokemonSettingsV0666PokemonVivillonHighPlains
+	| PokemonSettingsV0666PokemonVivillonIcySnow
+	| PokemonSettingsV0666PokemonVivillonJungle
+	| PokemonSettingsV0666PokemonVivillonMarine
+	| PokemonSettingsV0666PokemonVivillonMeadow
+	| PokemonSettingsV0666PokemonVivillonModern
+	| PokemonSettingsV0666PokemonVivillonMonsoon
+	| PokemonSettingsV0666PokemonVivillonOcean
+	| PokemonSettingsV0666PokemonVivillonPokeball
+	| PokemonSettingsV0666PokemonVivillonPolar
+	| PokemonSettingsV0666PokemonVivillonRiver
+	| PokemonSettingsV0666PokemonVivillonSandstorm
+	| PokemonSettingsV0666PokemonVivillonSavanna
+	| PokemonSettingsV0666PokemonVivillonSun
+	| PokemonSettingsV0666PokemonVivillonTundra
+	| PokemonSettingsV0667PokemonLitleo
+	| PokemonSettingsV0667PokemonLitleoNormal
+	| PokemonSettingsV0668PokemonPyroar
+	| PokemonSettingsV0668PokemonPyroarFemale
+	| PokemonSettingsV0668PokemonPyroarNormal
+	| PokemonSettingsV0669PokemonFlabebe
+	| PokemonSettingsV0669PokemonFlabebeBlue
+	| PokemonSettingsV0669PokemonFlabebeOrange
+	| PokemonSettingsV0669PokemonFlabebeRed
+	| PokemonSettingsV0669PokemonFlabebeWhite
+	| PokemonSettingsV0669PokemonFlabebeYellow
+	| PokemonSettingsV0670PokemonFloette
+	| PokemonSettingsV0670PokemonFloetteBlue
+	| PokemonSettingsV0670PokemonFloetteOrange
+	| PokemonSettingsV0670PokemonFloetteRed
+	| PokemonSettingsV0670PokemonFloetteWhite
+	| PokemonSettingsV0670PokemonFloetteYellow
+	| PokemonSettingsV0671PokemonFlorges
+	| PokemonSettingsV0671PokemonFlorgesBlue
+	| PokemonSettingsV0671PokemonFlorgesOrange
+	| PokemonSettingsV0671PokemonFlorgesRed
+	| PokemonSettingsV0671PokemonFlorgesWhite
+	| PokemonSettingsV0671PokemonFlorgesYellow
+	| PokemonSettingsV0672PokemonSkiddo
+	| PokemonSettingsV0672PokemonSkiddoNormal
+	| PokemonSettingsV0673PokemonGogoat
+	| PokemonSettingsV0673PokemonGogoatNormal
+	| PokemonSettingsV0674PokemonPancham
+	| PokemonSettingsV0674PokemonPanchamNormal
+	| PokemonSettingsV0675PokemonPangoro
+	| PokemonSettingsV0675PokemonPangoroNormal
+	| PokemonSettingsV0676PokemonFurfrou
+	| PokemonSettingsV0676PokemonFurfrouDandy
+	| PokemonSettingsV0676PokemonFurfrouDebutante
+	| PokemonSettingsV0676PokemonFurfrouDiamond
+	| PokemonSettingsV0676PokemonFurfrouHeart
+	| PokemonSettingsV0676PokemonFurfrouKabuki
+	| PokemonSettingsV0676PokemonFurfrouLaReine
+	| PokemonSettingsV0676PokemonFurfrouMatron
+	| PokemonSettingsV0676PokemonFurfrouNatural
+	| PokemonSettingsV0676PokemonFurfrouPharaoh
+	| PokemonSettingsV0676PokemonFurfrouStar
+	| PokemonSettingsV0677PokemonEspurr
+	| PokemonSettingsV0677PokemonEspurrNormal
+	| PokemonSettingsV0678PokemonMeowstic
+	| PokemonSettingsV0678PokemonMeowsticFemale
+	| PokemonSettingsV0678PokemonMeowsticNormal
+	| PokemonSettingsV0679PokemonHonedge
+	| PokemonSettingsV0679PokemonHonedgeNormal
+	| PokemonSettingsV0680PokemonDoublade
+	| PokemonSettingsV0680PokemonDoubladeNormal
+	| PokemonSettingsV0681PokemonAegislash
+	| PokemonSettingsV0681PokemonAegislashBlade
+	| PokemonSettingsV0681PokemonAegislashShield
+	| PokemonSettingsV0682PokemonSpritzee
+	| PokemonSettingsV0682PokemonSpritzeeNormal
+	| PokemonSettingsV0683PokemonAromatisse
+	| PokemonSettingsV0683PokemonAromatisseNormal
+	| PokemonSettingsV0684PokemonSwirlix
+	| PokemonSettingsV0684PokemonSwirlixNormal
+	| PokemonSettingsV0685PokemonSlurpuff
+	| PokemonSettingsV0685PokemonSlurpuffNormal
+	| PokemonSettingsV0686PokemonInkay
+	| PokemonSettingsV0686PokemonInkayNormal
+	| PokemonSettingsV0687PokemonMalamar
+	| PokemonSettingsV0687PokemonMalamarNormal
+	| PokemonSettingsV0688PokemonBinacle
+	| PokemonSettingsV0688PokemonBinacleNormal
+	| PokemonSettingsV0689PokemonBarbaracle
+	| PokemonSettingsV0689PokemonBarbaracleNormal
+	| PokemonSettingsV0690PokemonSkrelp
+	| PokemonSettingsV0690PokemonSkrelpNormal
+	| PokemonSettingsV0691PokemonDragalge
+	| PokemonSettingsV0691PokemonDragalgeNormal
+	| PokemonSettingsV0692PokemonClauncher
+	| PokemonSettingsV0692PokemonClauncherNormal
+	| PokemonSettingsV0693PokemonClawitzer
+	| PokemonSettingsV0693PokemonClawitzerNormal
+	| PokemonSettingsV0694PokemonHelioptile
+	| PokemonSettingsV0694PokemonHelioptileNormal
+	| PokemonSettingsV0695PokemonHeliolisk
+	| PokemonSettingsV0695PokemonHelioliskNormal
+	| PokemonSettingsV0696PokemonTyrunt
+	| PokemonSettingsV0696PokemonTyruntNormal
+	| PokemonSettingsV0697PokemonTyrantrum
+	| PokemonSettingsV0697PokemonTyrantrumNormal
+	| PokemonSettingsV0698PokemonAmaura
+	| PokemonSettingsV0698PokemonAmauraNormal
+	| PokemonSettingsV0699PokemonAurorus
+	| PokemonSettingsV0699PokemonAurorusNormal
+	| PokemonSettingsV0700PokemonSylveon
+	| PokemonSettingsV0700PokemonSylveonNormal
+	| PokemonSettingsV0701PokemonHawlucha
+	| PokemonSettingsV0701PokemonHawluchaNormal
+	| PokemonSettingsV0702PokemonDedenne
+	| PokemonSettingsV0702PokemonDedenneNormal
+	| PokemonSettingsV0703PokemonCarbink
+	| PokemonSettingsV0703PokemonCarbinkNormal
+	| PokemonSettingsV0704PokemonGoomy
+	| PokemonSettingsV0704PokemonGoomyNormal
+	| PokemonSettingsV0705PokemonSliggoo
+	| PokemonSettingsV0705PokemonSliggooNormal
+	| PokemonSettingsV0706PokemonGoodra
+	| PokemonSettingsV0706PokemonGoodraNormal
+	| PokemonSettingsV0707PokemonKlefki
+	| PokemonSettingsV0707PokemonKlefkiNormal
+	| PokemonSettingsV0708PokemonPhantump
+	| PokemonSettingsV0708PokemonPhantumpNormal
+	| PokemonSettingsV0709PokemonTrevenant
+	| PokemonSettingsV0709PokemonTrevenantNormal
+	| PokemonSettingsV0710PokemonPumpkaboo
+	| PokemonSettingsV0710PokemonPumpkabooAverage
+	| PokemonSettingsV0710PokemonPumpkabooLarge
+	| PokemonSettingsV0710PokemonPumpkabooSmall
+	| PokemonSettingsV0710PokemonPumpkabooSuper
+	| PokemonSettingsV0711PokemonGourgeist
+	| PokemonSettingsV0711PokemonGourgeistAverage
+	| PokemonSettingsV0711PokemonGourgeistLarge
+	| PokemonSettingsV0711PokemonGourgeistSmall
+	| PokemonSettingsV0711PokemonGourgeistSuper
+	| PokemonSettingsV0712PokemonBergmite
+	| PokemonSettingsV0712PokemonBergmiteNormal
+	| PokemonSettingsV0713PokemonAvalugg
+	| PokemonSettingsV0713PokemonAvaluggHisuian
+	| PokemonSettingsV0713PokemonAvaluggNormal
+	| PokemonSettingsV0714PokemonNoibat
+	| PokemonSettingsV0714PokemonNoibatNormal
+	| PokemonSettingsV0715PokemonNoivern
+	| PokemonSettingsV0715PokemonNoivernNormal
+	| PokemonSettingsV0716PokemonXerneas
+	| PokemonSettingsV0716PokemonXerneasNormal
+	| PokemonSettingsV0717PokemonYveltal
+	| PokemonSettingsV0717PokemonYveltalNormal
+	| PokemonSettingsV0718PokemonZygarde
+	| PokemonSettingsV0718PokemonZygardeComplete
+	| PokemonSettingsV0718PokemonZygardeCompleteFiftyPercent
+	| PokemonSettingsV0718PokemonZygardeCompleteTenPercent
+	| PokemonSettingsV0718PokemonZygardeFiftyPercent
+	| PokemonSettingsV0718PokemonZygardeTenPercent
+	| PokemonSettingsV0719PokemonDiancie
+	| PokemonSettingsV0719PokemonDiancieNormal
+	| PokemonSettingsV0720PokemonHoopa
+	| PokemonSettingsV0720PokemonHoopaConfined
+	| PokemonSettingsV0720PokemonHoopaUnbound
+	| PokemonSettingsV0721PokemonVolcanion
+	| PokemonSettingsV0721PokemonVolcanionNormal
+	| PokemonSettingsV0722PokemonRowlet
+	| PokemonSettingsV0722PokemonRowletNormal
+	| PokemonSettingsV0723PokemonDartrix
+	| PokemonSettingsV0723PokemonDartrixNormal
+	| PokemonSettingsV0724PokemonDecidueye
+	| PokemonSettingsV0724PokemonDecidueyeHisuian
+	| PokemonSettingsV0724PokemonDecidueyeNormal
+	| PokemonSettingsV0725PokemonLitten
+	| PokemonSettingsV0725PokemonLittenNormal
+	| PokemonSettingsV0726PokemonTorracat
+	| PokemonSettingsV0726PokemonTorracatNormal
+	| PokemonSettingsV0727PokemonIncineroar
+	| PokemonSettingsV0727PokemonIncineroarNormal
+	| PokemonSettingsV0728PokemonPopplio
+	| PokemonSettingsV0728PokemonPopplioNormal
+	| PokemonSettingsV0729PokemonBrionne
+	| PokemonSettingsV0729PokemonBrionneNormal
+	| PokemonSettingsV0730PokemonPrimarina
+	| PokemonSettingsV0730PokemonPrimarinaNormal
+	| PokemonSettingsV0731PokemonPikipek
+	| PokemonSettingsV0731PokemonPikipekNormal
+	| PokemonSettingsV0732PokemonTrumbeak
+	| PokemonSettingsV0732PokemonTrumbeakNormal
+	| PokemonSettingsV0733PokemonToucannon
+	| PokemonSettingsV0733PokemonToucannonNormal
+	| PokemonSettingsV0734PokemonYungoos
+	| PokemonSettingsV0734PokemonYungoosNormal
+	| PokemonSettingsV0735PokemonGumshoos
+	| PokemonSettingsV0735PokemonGumshoosNormal
+	| PokemonSettingsV0736PokemonGrubbin
+	| PokemonSettingsV0736PokemonGrubbinNormal
+	| PokemonSettingsV0737PokemonCharjabug
+	| PokemonSettingsV0737PokemonCharjabugNormal
+	| PokemonSettingsV0737PokemonCharjabugWinter2025
+	| PokemonSettingsV0738PokemonVikavolt
+	| PokemonSettingsV0738PokemonVikavoltNormal
+	| PokemonSettingsV0738PokemonVikavoltWinter2025
+	| PokemonSettingsV0739PokemonCrabrawler
+	| PokemonSettingsV0739PokemonCrabrawlerNormal
+	| PokemonSettingsV0740PokemonCrabominable
+	| PokemonSettingsV0740PokemonCrabominableNormal
+	| PokemonSettingsV0741PokemonOricorio
+	| PokemonSettingsV0741PokemonOricorioBaile
+	| PokemonSettingsV0741PokemonOricorioPau
+	| PokemonSettingsV0741PokemonOricorioPompom
+	| PokemonSettingsV0741PokemonOricorioSensu
+	| PokemonSettingsV0742PokemonCutiefly
+	| PokemonSettingsV0742PokemonCutieflyNormal
+	| PokemonSettingsV0743PokemonRibombee
+	| PokemonSettingsV0743PokemonRibombeeNormal
+	| PokemonSettingsV0744PokemonRockruff
+	| PokemonSettingsV0744PokemonRockruffDusk
+	| PokemonSettingsV0744PokemonRockruffNormal
+	| PokemonSettingsV0745PokemonLycanroc
+	| PokemonSettingsV0745PokemonLycanrocDusk
+	| PokemonSettingsV0745PokemonLycanrocMidday
+	| PokemonSettingsV0745PokemonLycanrocMidnight
+	| PokemonSettingsV0746PokemonWishiwashi
+	| PokemonSettingsV0746PokemonWishiwashiSchool
+	| PokemonSettingsV0746PokemonWishiwashiSolo
+	| PokemonSettingsV0747PokemonMareanie
+	| PokemonSettingsV0747PokemonMareanieNormal
+	| PokemonSettingsV0748PokemonToxapex
+	| PokemonSettingsV0748PokemonToxapexNormal
+	| PokemonSettingsV0749PokemonMudbray
+	| PokemonSettingsV0749PokemonMudbrayNormal
+	| PokemonSettingsV0750PokemonMudsdale
+	| PokemonSettingsV0750PokemonMudsdaleNormal
+	| PokemonSettingsV0751PokemonDewpider
+	| PokemonSettingsV0751PokemonDewpiderNormal
+	| PokemonSettingsV0752PokemonAraquanid
+	| PokemonSettingsV0752PokemonAraquanidNormal
+	| PokemonSettingsV0753PokemonFomantis
+	| PokemonSettingsV0753PokemonFomantisNormal
+	| PokemonSettingsV0754PokemonLurantis
+	| PokemonSettingsV0754PokemonLurantisNormal
+	| PokemonSettingsV0755PokemonMorelull
+	| PokemonSettingsV0755PokemonMorelullNormal
+	| PokemonSettingsV0756PokemonShiinotic
+	| PokemonSettingsV0756PokemonShiinoticNormal
+	| PokemonSettingsV0757PokemonSalandit
+	| PokemonSettingsV0757PokemonSalanditNormal
+	| PokemonSettingsV0758PokemonSalazzle
+	| PokemonSettingsV0758PokemonSalazzleNormal
+	| PokemonSettingsV0759PokemonStufful
+	| PokemonSettingsV0759PokemonStuffulNormal
+	| PokemonSettingsV0760PokemonBewear
+	| PokemonSettingsV0760PokemonBewearNormal
+	| PokemonSettingsV0760PokemonBewearWildarea2025
+	| PokemonSettingsV0761PokemonBounsweet
+	| PokemonSettingsV0761PokemonBounsweetNormal
+	| PokemonSettingsV0762PokemonSteenee
+	| PokemonSettingsV0762PokemonSteeneeNormal
+	| PokemonSettingsV0763PokemonTsareena
+	| PokemonSettingsV0763PokemonTsareenaNormal
+	| PokemonSettingsV0764PokemonComfey
+	| PokemonSettingsV0764PokemonComfeyNormal
+	| PokemonSettingsV0765PokemonOranguru
+	| PokemonSettingsV0765PokemonOranguruNormal
+	| PokemonSettingsV0766PokemonPassimian
+	| PokemonSettingsV0766PokemonPassimianNormal
+	| PokemonSettingsV0767PokemonWimpod
+	| PokemonSettingsV0767PokemonWimpodNormal
+	| PokemonSettingsV0768PokemonGolisopod
+	| PokemonSettingsV0768PokemonGolisopodNormal
+	| PokemonSettingsV0769PokemonSandygast
+	| PokemonSettingsV0769PokemonSandygastNormal
+	| PokemonSettingsV0770PokemonPalossand
+	| PokemonSettingsV0770PokemonPalossandNormal
+	| PokemonSettingsV0771PokemonPyukumuku
+	| PokemonSettingsV0771PokemonPyukumukuNormal
+	| PokemonSettingsV0772PokemonTypeNull
+	| PokemonSettingsV0772PokemonTypeNullNormal
+	| PokemonSettingsV0773PokemonSilvally
+	| PokemonSettingsV0773PokemonSilvallyBug
+	| PokemonSettingsV0773PokemonSilvallyDark
+	| PokemonSettingsV0773PokemonSilvallyDragon
+	| PokemonSettingsV0773PokemonSilvallyElectric
+	| PokemonSettingsV0773PokemonSilvallyFairy
+	| PokemonSettingsV0773PokemonSilvallyFighting
+	| PokemonSettingsV0773PokemonSilvallyFire
+	| PokemonSettingsV0773PokemonSilvallyFlying
+	| PokemonSettingsV0773PokemonSilvallyGhost
+	| PokemonSettingsV0773PokemonSilvallyGrass
+	| PokemonSettingsV0773PokemonSilvallyGround
+	| PokemonSettingsV0773PokemonSilvallyIce
+	| PokemonSettingsV0773PokemonSilvallyNormal
+	| PokemonSettingsV0773PokemonSilvallyPoison
+	| PokemonSettingsV0773PokemonSilvallyPsychic
+	| PokemonSettingsV0773PokemonSilvallyRock
+	| PokemonSettingsV0773PokemonSilvallySteel
+	| PokemonSettingsV0773PokemonSilvallyWater
+	| PokemonSettingsV0774PokemonMinior
+	| PokemonSettingsV0774PokemonMiniorBlue
+	| PokemonSettingsV0774PokemonMiniorGreen
+	| PokemonSettingsV0774PokemonMiniorIndigo
+	| PokemonSettingsV0774PokemonMiniorOrange
+	| PokemonSettingsV0774PokemonMiniorRed
+	| PokemonSettingsV0774PokemonMiniorViolet
+	| PokemonSettingsV0774PokemonMiniorYellow
+	| PokemonSettingsV0775PokemonKomala
+	| PokemonSettingsV0775PokemonKomalaNormal
+	| PokemonSettingsV0776PokemonTurtonator
+	| PokemonSettingsV0776PokemonTurtonatorNormal
+	| PokemonSettingsV0777PokemonTogedemaru
+	| PokemonSettingsV0777PokemonTogedemaruNormal
+	| PokemonSettingsV0778PokemonMimikyu
+	| PokemonSettingsV0778PokemonMimikyuBusted
+	| PokemonSettingsV0778PokemonMimikyuDisguised
+	| PokemonSettingsV0779PokemonBruxish
+	| PokemonSettingsV0779PokemonBruxishNormal
+	| PokemonSettingsV0780PokemonDrampa
+	| PokemonSettingsV0780PokemonDrampaNormal
+	| PokemonSettingsV0781PokemonDhelmise
+	| PokemonSettingsV0781PokemonDhelmiseNormal
+	| PokemonSettingsV0782PokemonJangmoO
+	| PokemonSettingsV0782PokemonJangmoONormal
+	| PokemonSettingsV0783PokemonHakamoO
+	| PokemonSettingsV0783PokemonHakamoONormal
+	| PokemonSettingsV0784PokemonKommoO
+	| PokemonSettingsV0784PokemonKommoONormal
+	| PokemonSettingsV0785PokemonTapuKoko
+	| PokemonSettingsV0785PokemonTapuKokoNormal
+	| PokemonSettingsV0786PokemonTapuLele
+	| PokemonSettingsV0786PokemonTapuLeleNormal
+	| PokemonSettingsV0787PokemonTapuBulu
+	| PokemonSettingsV0787PokemonTapuBuluNormal
+	| PokemonSettingsV0788PokemonTapuFini
+	| PokemonSettingsV0788PokemonTapuFiniNormal
+	| PokemonSettingsV0789PokemonCosmog
+	| PokemonSettingsV0789PokemonCosmogNormal
+	| PokemonSettingsV0790PokemonCosmoem
+	| PokemonSettingsV0790PokemonCosmoemNormal
+	| PokemonSettingsV0791PokemonSolgaleo
+	| PokemonSettingsV0791PokemonSolgaleoNormal
+	| PokemonSettingsV0792PokemonLunala
+	| PokemonSettingsV0792PokemonLunalaNormal
+	| PokemonSettingsV0793PokemonNihilego
+	| PokemonSettingsV0793PokemonNihilegoNormal
+	| PokemonSettingsV0794PokemonBuzzwole
+	| PokemonSettingsV0794PokemonBuzzwoleNormal
+	| PokemonSettingsV0795PokemonPheromosa
+	| PokemonSettingsV0795PokemonPheromosaNormal
+	| PokemonSettingsV0796PokemonXurkitree
+	| PokemonSettingsV0796PokemonXurkitreeNormal
+	| PokemonSettingsV0797PokemonCelesteela
+	| PokemonSettingsV0797PokemonCelesteelaNormal
+	| PokemonSettingsV0798PokemonKartana
+	| PokemonSettingsV0798PokemonKartanaNormal
+	| PokemonSettingsV0799PokemonGuzzlord
+	| PokemonSettingsV0799PokemonGuzzlordNormal
+	| PokemonSettingsV0800PokemonNecrozma
+	| PokemonSettingsV0800PokemonNecrozmaDawnWings
+	| PokemonSettingsV0800PokemonNecrozmaDuskMane
+	| PokemonSettingsV0800PokemonNecrozmaNormal
+	| PokemonSettingsV0800PokemonNecrozmaUltra
+	| PokemonSettingsV0801PokemonMagearna
+	| PokemonSettingsV0801PokemonMagearnaNormal
+	| PokemonSettingsV0801PokemonMagearnaOriginalColor
+	| PokemonSettingsV0802PokemonMarshadow
+	| PokemonSettingsV0802PokemonMarshadowNormal
+	| PokemonSettingsV0803PokemonPoipole
+	| PokemonSettingsV0803PokemonPoipoleNormal
+	| PokemonSettingsV0804PokemonNaganadel
+	| PokemonSettingsV0804PokemonNaganadelNormal
+	| PokemonSettingsV0805PokemonStakataka
+	| PokemonSettingsV0805PokemonStakatakaNormal
+	| PokemonSettingsV0806PokemonBlacephalon
+	| PokemonSettingsV0806PokemonBlacephalonNormal
+	| PokemonSettingsV0807PokemonZeraora
+	| PokemonSettingsV0807PokemonZeraoraNormal
+	| PokemonSettingsV0808PokemonMeltan
+	| PokemonSettingsV0808PokemonMeltanNormal
+	| PokemonSettingsV0809PokemonMelmetal
+	| PokemonSettingsV0809PokemonMelmetalNormal
+	| PokemonSettingsV0810PokemonGrookey
+	| PokemonSettingsV0810PokemonGrookeyNormal
+	| PokemonSettingsV0811PokemonThwackey
+	| PokemonSettingsV0811PokemonThwackeyNormal
+	| PokemonSettingsV0812PokemonRillaboom
+	| PokemonSettingsV0812PokemonRillaboomNormal
+	| PokemonSettingsV0813PokemonScorbunny
+	| PokemonSettingsV0813PokemonScorbunnyNormal
+	| PokemonSettingsV0814PokemonRaboot
+	| PokemonSettingsV0814PokemonRabootNormal
+	| PokemonSettingsV0815PokemonCinderace
+	| PokemonSettingsV0815PokemonCinderaceNormal
+	| PokemonSettingsV0816PokemonSobble
+	| PokemonSettingsV0816PokemonSobbleNormal
+	| PokemonSettingsV0817PokemonDrizzile
+	| PokemonSettingsV0817PokemonDrizzileNormal
+	| PokemonSettingsV0818PokemonInteleon
+	| PokemonSettingsV0818PokemonInteleonNormal
+	| PokemonSettingsV0819PokemonSkwovet
+	| PokemonSettingsV0819PokemonSkwovetNormal
+	| PokemonSettingsV0820PokemonGreedent
+	| PokemonSettingsV0820PokemonGreedentNormal
+	| PokemonSettingsV0821PokemonRookidee
+	| PokemonSettingsV0821PokemonRookideeNormal
+	| PokemonSettingsV0822PokemonCorvisquire
+	| PokemonSettingsV0822PokemonCorvisquireNormal
+	| PokemonSettingsV0823PokemonCorviknight
+	| PokemonSettingsV0823PokemonCorviknightNormal
+	| PokemonSettingsV0824PokemonBlipbug
+	| PokemonSettingsV0824PokemonBlipbugNormal
+	| PokemonSettingsV0825PokemonDottler
+	| PokemonSettingsV0825PokemonDottlerNormal
+	| PokemonSettingsV0826PokemonOrbeetle
+	| PokemonSettingsV0826PokemonOrbeetleNormal
+	| PokemonSettingsV0827PokemonNickit
+	| PokemonSettingsV0827PokemonNickitNormal
+	| PokemonSettingsV0828PokemonThievul
+	| PokemonSettingsV0828PokemonThievulNormal
+	| PokemonSettingsV0829PokemonGossifleur
+	| PokemonSettingsV0829PokemonGossifleurNormal
+	| PokemonSettingsV0830PokemonEldegoss
+	| PokemonSettingsV0830PokemonEldegossNormal
+	| PokemonSettingsV0831PokemonWooloo
+	| PokemonSettingsV0831PokemonWoolooNormal
+	| PokemonSettingsV0832PokemonDubwool
+	| PokemonSettingsV0832PokemonDubwoolNormal
+	| PokemonSettingsV0833PokemonChewtle
+	| PokemonSettingsV0833PokemonChewtleNormal
+	| PokemonSettingsV0834PokemonDrednaw
+	| PokemonSettingsV0834PokemonDrednawNormal
+	| PokemonSettingsV0835PokemonYamper
+	| PokemonSettingsV0835PokemonYamperNormal
+	| PokemonSettingsV0836PokemonBoltund
+	| PokemonSettingsV0836PokemonBoltundNormal
+	| PokemonSettingsV0837PokemonRolycoly
+	| PokemonSettingsV0837PokemonRolycolyNormal
+	| PokemonSettingsV0838PokemonCarkol
+	| PokemonSettingsV0838PokemonCarkolNormal
+	| PokemonSettingsV0839PokemonCoalossal
+	| PokemonSettingsV0839PokemonCoalossalNormal
+	| PokemonSettingsV0840PokemonApplin
+	| PokemonSettingsV0840PokemonApplinNormal
+	| PokemonSettingsV0841PokemonFlapple
+	| PokemonSettingsV0841PokemonFlappleNormal
+	| PokemonSettingsV0842PokemonAppletun
+	| PokemonSettingsV0842PokemonAppletunNormal
+	| PokemonSettingsV0843PokemonSilicobra
+	| PokemonSettingsV0843PokemonSilicobraNormal
+	| PokemonSettingsV0844PokemonSandaconda
+	| PokemonSettingsV0844PokemonSandacondaNormal
+	| PokemonSettingsV0845PokemonCramorant
+	| PokemonSettingsV0845PokemonCramorantNormal
+	| PokemonSettingsV0846PokemonArrokuda
+	| PokemonSettingsV0846PokemonArrokudaNormal
+	| PokemonSettingsV0847PokemonBarraskewda
+	| PokemonSettingsV0847PokemonBarraskewdaNormal
+	| PokemonSettingsV0848PokemonToxel
+	| PokemonSettingsV0848PokemonToxelNormal
+	| PokemonSettingsV0849PokemonToxtricity
+	| PokemonSettingsV0849PokemonToxtricityAmped
+	| PokemonSettingsV0849PokemonToxtricityLowKey
+	| PokemonSettingsV0850PokemonSizzlipede
+	| PokemonSettingsV0850PokemonSizzlipedeNormal
+	| PokemonSettingsV0851PokemonCentiskorch
+	| PokemonSettingsV0851PokemonCentiskorchNormal
+	| PokemonSettingsV0852PokemonClobbopus
+	| PokemonSettingsV0852PokemonClobbopusNormal
+	| PokemonSettingsV0853PokemonGrapploct
+	| PokemonSettingsV0853PokemonGrapploctNormal
+	| PokemonSettingsV0854PokemonSinistea
+	| PokemonSettingsV0854PokemonSinisteaAntique
+	| PokemonSettingsV0854PokemonSinisteaPhony
+	| PokemonSettingsV0855PokemonPolteageist
+	| PokemonSettingsV0855PokemonPolteageistAntique
+	| PokemonSettingsV0855PokemonPolteageistPhony
+	| PokemonSettingsV0856PokemonHatenna
+	| PokemonSettingsV0856PokemonHatennaNormal
+	| PokemonSettingsV0857PokemonHattrem
+	| PokemonSettingsV0857PokemonHattremNormal
+	| PokemonSettingsV0858PokemonHatterene
+	| PokemonSettingsV0858PokemonHattereneNormal
+	| PokemonSettingsV0859PokemonImpidimp
+	| PokemonSettingsV0859PokemonImpidimpNormal
+	| PokemonSettingsV0860PokemonMorgrem
+	| PokemonSettingsV0860PokemonMorgremNormal
+	| PokemonSettingsV0861PokemonGrimmsnarl
+	| PokemonSettingsV0861PokemonGrimmsnarlNormal
+	| PokemonSettingsV0862PokemonObstagoon
+	| PokemonSettingsV0862PokemonObstagoonNormal
+	| PokemonSettingsV0863PokemonPerrserker
+	| PokemonSettingsV0863PokemonPerrserkerNormal
+	| PokemonSettingsV0864PokemonCursola
+	| PokemonSettingsV0864PokemonCursolaNormal
+	| PokemonSettingsV0865PokemonSirfetchd
+	| PokemonSettingsV0865PokemonSirfetchdNormal
+	| PokemonSettingsV0866PokemonMrRime
+	| PokemonSettingsV0866PokemonMrRimeNormal
+	| PokemonSettingsV0867PokemonRunerigus
+	| PokemonSettingsV0867PokemonRunerigusNormal
+	| PokemonSettingsV0868PokemonMilcery
+	| PokemonSettingsV0868PokemonMilceryNormal
+	| PokemonSettingsV0869PokemonAlcremie
+	| PokemonSettingsV0869PokemonAlcremieNormal
+	| PokemonSettingsV0870PokemonFalinks
+	| PokemonSettingsV0870PokemonFalinksGofest2025TrainConductor
+	| PokemonSettingsV0870PokemonFalinksNormal
+	| PokemonSettingsV0871PokemonPincurchin
+	| PokemonSettingsV0871PokemonPincurchinNormal
+	| PokemonSettingsV0872PokemonSnom
+	| PokemonSettingsV0872PokemonSnomNormal
+	| PokemonSettingsV0873PokemonFrosmoth
+	| PokemonSettingsV0873PokemonFrosmothNormal
+	| PokemonSettingsV0874PokemonStonjourner
+	| PokemonSettingsV0874PokemonStonjournerNormal
+	| PokemonSettingsV0875PokemonEiscue
+	| PokemonSettingsV0875PokemonEiscueIce
+	| PokemonSettingsV0875PokemonEiscueNoice
+	| PokemonSettingsV0876PokemonIndeedee
+	| PokemonSettingsV0876PokemonIndeedeeFemale
+	| PokemonSettingsV0876PokemonIndeedeeMale
+	| PokemonSettingsV0877PokemonMorpeko
+	| PokemonSettingsV0877PokemonMorpekoFullBelly
+	| PokemonSettingsV0877PokemonMorpekoHangry
+	| PokemonSettingsV0878PokemonCufant
+	| PokemonSettingsV0878PokemonCufantNormal
+	| PokemonSettingsV0879PokemonCopperajah
+	| PokemonSettingsV0879PokemonCopperajahNormal
+	| PokemonSettingsV0880PokemonDracozolt
+	| PokemonSettingsV0880PokemonDracozoltNormal
+	| PokemonSettingsV0881PokemonArctozolt
+	| PokemonSettingsV0881PokemonArctozoltNormal
+	| PokemonSettingsV0882PokemonDracovish
+	| PokemonSettingsV0882PokemonDracovishNormal
+	| PokemonSettingsV0883PokemonArctovish
+	| PokemonSettingsV0883PokemonArctovishNormal
+	| PokemonSettingsV0884PokemonDuraludon
+	| PokemonSettingsV0884PokemonDuraludonNormal
+	| PokemonSettingsV0885PokemonDreepy
+	| PokemonSettingsV0885PokemonDreepyNormal
+	| PokemonSettingsV0886PokemonDrakloak
+	| PokemonSettingsV0886PokemonDrakloakNormal
+	| PokemonSettingsV0887PokemonDragapult
+	| PokemonSettingsV0887PokemonDragapultNormal
+	| PokemonSettingsV0888PokemonZacian
+	| PokemonSettingsV0888PokemonZacianCrownedSword
+	| PokemonSettingsV0888PokemonZacianHero
+	| PokemonSettingsV0889PokemonZamazenta
+	| PokemonSettingsV0889PokemonZamazentaCrownedShield
+	| PokemonSettingsV0889PokemonZamazentaHero
+	| PokemonSettingsV0890PokemonEternatus
+	| PokemonSettingsV0890PokemonEternatusEternamax
+	| PokemonSettingsV0890PokemonEternatusNormal
+	| PokemonSettingsV0891PokemonKubfu
+	| PokemonSettingsV0891PokemonKubfuNormal
+	| PokemonSettingsV0892PokemonUrshifu
+	| PokemonSettingsV0892PokemonUrshifuRapidStrike
+	| PokemonSettingsV0892PokemonUrshifuSingleStrike
+	| PokemonSettingsV0893PokemonZarude
+	| PokemonSettingsV0893PokemonZarudeNormal
+	| PokemonSettingsV0894PokemonRegieleki
+	| PokemonSettingsV0894PokemonRegielekiNormal
+	| PokemonSettingsV0895PokemonRegidrago
+	| PokemonSettingsV0895PokemonRegidragoNormal
+	| PokemonSettingsV0896PokemonGlastrier
+	| PokemonSettingsV0896PokemonGlastrierNormal
+	| PokemonSettingsV0897PokemonSpectrier
+	| PokemonSettingsV0897PokemonSpectrierNormal
+	| PokemonSettingsV0898PokemonCalyrex
+	| PokemonSettingsV0898PokemonCalyrexIceRider
+	| PokemonSettingsV0898PokemonCalyrexNormal
+	| PokemonSettingsV0898PokemonCalyrexShadowRider
+	| PokemonSettingsV0899PokemonWyrdeer
+	| PokemonSettingsV0899PokemonWyrdeerNormal
+	| PokemonSettingsV0900PokemonKleavor
+	| PokemonSettingsV0900PokemonKleavorNormal
+	| PokemonSettingsV0901PokemonUrsaluna
+	| PokemonSettingsV0901PokemonUrsalunaNormal
+	| PokemonSettingsV0903PokemonSneasler
+	| PokemonSettingsV0903PokemonSneaslerNormal
+	| PokemonSettingsV0904PokemonOverqwil
+	| PokemonSettingsV0904PokemonOverqwilNormal
+	| PokemonSettingsV0905PokemonEnamorus
+	| PokemonSettingsV0905PokemonEnamorusIncarnate
+	| PokemonSettingsV0905PokemonEnamorusTherian
+	| PokemonSettingsV0906PokemonSprigatito
+	| PokemonSettingsV0906PokemonSprigatitoNormal
+	| PokemonSettingsV0907PokemonFloragato
+	| PokemonSettingsV0907PokemonFloragatoNormal
+	| PokemonSettingsV0908PokemonMeowscarada
+	| PokemonSettingsV0908PokemonMeowscaradaNormal
+	| PokemonSettingsV0909PokemonFuecoco
+	| PokemonSettingsV0909PokemonFuecocoNormal
+	| PokemonSettingsV0910PokemonCrocalor
+	| PokemonSettingsV0910PokemonCrocalorNormal
+	| PokemonSettingsV0911PokemonSkeledirge
+	| PokemonSettingsV0911PokemonSkeledirgeNormal
+	| PokemonSettingsV0912PokemonQuaxly
+	| PokemonSettingsV0912PokemonQuaxlyNormal
+	| PokemonSettingsV0913PokemonQuaxwell
+	| PokemonSettingsV0913PokemonQuaxwellNormal
+	| PokemonSettingsV0914PokemonQuaquaval
+	| PokemonSettingsV0914PokemonQuaquavalNormal
+	| PokemonSettingsV0915PokemonLechonk
+	| PokemonSettingsV0915PokemonLechonkNormal
+	| PokemonSettingsV0916PokemonOinkologne
+	| PokemonSettingsV0916PokemonOinkologneFemale
+	| PokemonSettingsV0916PokemonOinkologneNormal
+	| PokemonSettingsV0917PokemonTarountula
+	| PokemonSettingsV0917PokemonTarountulaNormal
+	| PokemonSettingsV0918PokemonSpidops
+	| PokemonSettingsV0918PokemonSpidopsNormal
+	| PokemonSettingsV0919PokemonNymble
+	| PokemonSettingsV0919PokemonNymbleNormal
+	| PokemonSettingsV0920PokemonLokix
+	| PokemonSettingsV0920PokemonLokixNormal
+	| PokemonSettingsV0921PokemonPawmi
+	| PokemonSettingsV0921PokemonPawmiNormal
+	| PokemonSettingsV0922PokemonPawmo
+	| PokemonSettingsV0922PokemonPawmoNormal
+	| PokemonSettingsV0923PokemonPawmot
+	| PokemonSettingsV0923PokemonPawmotNormal
+	| PokemonSettingsV0924PokemonTandemaus
+	| PokemonSettingsV0924PokemonTandemausNormal
+	| PokemonSettingsV0925PokemonMaushold
+	| PokemonSettingsV0925PokemonMausholdFamilyOfFour
+	| PokemonSettingsV0925PokemonMausholdFamilyOfThree
+	| PokemonSettingsV0926PokemonFidough
+	| PokemonSettingsV0926PokemonFidoughNormal
+	| PokemonSettingsV0927PokemonDachsbun
+	| PokemonSettingsV0927PokemonDachsbunNormal
+	| PokemonSettingsV0928PokemonSmoliv
+	| PokemonSettingsV0928PokemonSmolivNormal
+	| PokemonSettingsV0929PokemonDolliv
+	| PokemonSettingsV0929PokemonDollivNormal
+	| PokemonSettingsV0930PokemonArboliva
+	| PokemonSettingsV0930PokemonArbolivaNormal
+	| PokemonSettingsV0931PokemonSquawkabilly
+	| PokemonSettingsV0931PokemonSquawkabillyBlue
+	| PokemonSettingsV0931PokemonSquawkabillyGreen
+	| PokemonSettingsV0931PokemonSquawkabillyWhite
+	| PokemonSettingsV0931PokemonSquawkabillyYellow
+	| PokemonSettingsV0932PokemonNacli
+	| PokemonSettingsV0932PokemonNacliNormal
+	| PokemonSettingsV0933PokemonNaclstack
+	| PokemonSettingsV0933PokemonNaclstackNormal
+	| PokemonSettingsV0934PokemonGarganacl
+	| PokemonSettingsV0934PokemonGarganaclNormal
+	| PokemonSettingsV0935PokemonCharcadet
+	| PokemonSettingsV0935PokemonCharcadetNormal
+	| PokemonSettingsV0936PokemonArmarouge
+	| PokemonSettingsV0936PokemonArmarougeNormal
+	| PokemonSettingsV0937PokemonCeruledge
+	| PokemonSettingsV0937PokemonCeruledgeNormal
+	| PokemonSettingsV0938PokemonTadbulb
+	| PokemonSettingsV0938PokemonTadbulbNormal
+	| PokemonSettingsV0939PokemonBellibolt
+	| PokemonSettingsV0939PokemonBelliboltNormal
+	| PokemonSettingsV0940PokemonWattrel
+	| PokemonSettingsV0940PokemonWattrelNormal
+	| PokemonSettingsV0941PokemonKilowattrel
+	| PokemonSettingsV0941PokemonKilowattrelNormal
+	| PokemonSettingsV0942PokemonMaschiff
+	| PokemonSettingsV0942PokemonMaschiffNormal
+	| PokemonSettingsV0943PokemonMabosstiff
+	| PokemonSettingsV0943PokemonMabosstiffNormal
+	| PokemonSettingsV0944PokemonShroodle
+	| PokemonSettingsV0944PokemonShroodleNormal
+	| PokemonSettingsV0945PokemonGrafaiai
+	| PokemonSettingsV0945PokemonGrafaiaiNormal
+	| PokemonSettingsV0946PokemonBramblin
+	| PokemonSettingsV0946PokemonBramblinNormal
+	| PokemonSettingsV0947PokemonBrambleghast
+	| PokemonSettingsV0947PokemonBrambleghastNormal
+	| PokemonSettingsV0948PokemonToedscool
+	| PokemonSettingsV0948PokemonToedscoolNormal
+	| PokemonSettingsV0949PokemonToedscruel
+	| PokemonSettingsV0949PokemonToedscruelNormal
+	| PokemonSettingsV0950PokemonKlawf
+	| PokemonSettingsV0950PokemonKlawfNormal
+	| PokemonSettingsV0951PokemonCapsakid
+	| PokemonSettingsV0951PokemonCapsakidNormal
+	| PokemonSettingsV0952PokemonScovillain
+	| PokemonSettingsV0952PokemonScovillainNormal
+	| PokemonSettingsV0953PokemonRellor
+	| PokemonSettingsV0953PokemonRellorNormal
+	| PokemonSettingsV0954PokemonRabsca
+	| PokemonSettingsV0954PokemonRabscaNormal
+	| PokemonSettingsV0955PokemonFlittle
+	| PokemonSettingsV0955PokemonFlittleNormal
+	| PokemonSettingsV0956PokemonEspathra
+	| PokemonSettingsV0956PokemonEspathraNormal
+	| PokemonSettingsV0957PokemonTinkatink
+	| PokemonSettingsV0957PokemonTinkatinkNormal
+	| PokemonSettingsV0958PokemonTinkatuff
+	| PokemonSettingsV0958PokemonTinkatuffNormal
+	| PokemonSettingsV0959PokemonTinkaton
+	| PokemonSettingsV0959PokemonTinkatonNormal
+	| PokemonSettingsV0960PokemonWiglett
+	| PokemonSettingsV0960PokemonWiglettNormal
+	| PokemonSettingsV0961PokemonWugtrio
+	| PokemonSettingsV0961PokemonWugtrioNormal
+	| PokemonSettingsV0962PokemonBombirdier
+	| PokemonSettingsV0962PokemonBombirdierNormal
+	| PokemonSettingsV0963PokemonFinizen
+	| PokemonSettingsV0963PokemonFinizenNormal
+	| PokemonSettingsV0964PokemonPalafin
+	| PokemonSettingsV0964PokemonPalafinHero
+	| PokemonSettingsV0964PokemonPalafinZero
+	| PokemonSettingsV0965PokemonVaroom
+	| PokemonSettingsV0965PokemonVaroomNormal
+	| PokemonSettingsV0966PokemonRevavroom
+	| PokemonSettingsV0966PokemonRevavroomNormal
+	| PokemonSettingsV0967PokemonCyclizar
+	| PokemonSettingsV0967PokemonCyclizarNormal
+	| PokemonSettingsV0968PokemonOrthworm
+	| PokemonSettingsV0968PokemonOrthwormNormal
+	| PokemonSettingsV0969PokemonGlimmet
+	| PokemonSettingsV0969PokemonGlimmetNormal
+	| PokemonSettingsV0970PokemonGlimmora
+	| PokemonSettingsV0970PokemonGlimmoraNormal
+	| PokemonSettingsV0971PokemonGreavard
+	| PokemonSettingsV0971PokemonGreavardNormal
+	| PokemonSettingsV0972PokemonHoundstone
+	| PokemonSettingsV0972PokemonHoundstoneNormal
+	| PokemonSettingsV0973PokemonFlamigo
+	| PokemonSettingsV0973PokemonFlamigoNormal
+	| PokemonSettingsV0974PokemonCetoddle
+	| PokemonSettingsV0974PokemonCetoddleNormal
+	| PokemonSettingsV0975PokemonCetitan
+	| PokemonSettingsV0975PokemonCetitanNormal
+	| PokemonSettingsV0976PokemonVeluza
+	| PokemonSettingsV0976PokemonVeluzaNormal
+	| PokemonSettingsV0977PokemonDondozo
+	| PokemonSettingsV0977PokemonDondozoNormal
+	| PokemonSettingsV0978PokemonTatsugiri
+	| PokemonSettingsV0978PokemonTatsugiriCurly
+	| PokemonSettingsV0978PokemonTatsugiriDroopy
+	| PokemonSettingsV0978PokemonTatsugiriStretchy
+	| PokemonSettingsV0979PokemonAnnihilape
+	| PokemonSettingsV0979PokemonAnnihilapeNormal
+	| PokemonSettingsV0980PokemonClodsire
+	| PokemonSettingsV0980PokemonClodsireNormal
+	| PokemonSettingsV0981PokemonFarigiraf
+	| PokemonSettingsV0981PokemonFarigirafNormal
+	| PokemonSettingsV0982PokemonDudunsparce
+	| PokemonSettingsV0982PokemonDudunsparceThree
+	| PokemonSettingsV0982PokemonDudunsparceTwo
+	| PokemonSettingsV0983PokemonKingambit
+	| PokemonSettingsV0983PokemonKingambitNormal
+	| PokemonSettingsV0984PokemonGreattusk
+	| PokemonSettingsV0984PokemonGreattuskNormal
+	| PokemonSettingsV0985PokemonScreamtail
+	| PokemonSettingsV0985PokemonScreamtailNormal
+	| PokemonSettingsV0986PokemonBrutebonnet
+	| PokemonSettingsV0986PokemonBrutebonnetNormal
+	| PokemonSettingsV0987PokemonFluttermane
+	| PokemonSettingsV0987PokemonFluttermaneNormal
+	| PokemonSettingsV0988PokemonSlitherwing
+	| PokemonSettingsV0988PokemonSlitherwingNormal
+	| PokemonSettingsV0989PokemonSandyshocks
+	| PokemonSettingsV0989PokemonSandyshocksNormal
+	| PokemonSettingsV0990PokemonIrontreads
+	| PokemonSettingsV0990PokemonIrontreadsNormal
+	| PokemonSettingsV0991PokemonIronbundle
+	| PokemonSettingsV0991PokemonIronbundleNormal
+	| PokemonSettingsV0992PokemonIronhands
+	| PokemonSettingsV0992PokemonIronhandsNormal
+	| PokemonSettingsV0993PokemonIronjugulis
+	| PokemonSettingsV0993PokemonIronjugulisNormal
+	| PokemonSettingsV0994PokemonIronmoth
+	| PokemonSettingsV0994PokemonIronmothNormal
+	| PokemonSettingsV0995PokemonIronthorns
+	| PokemonSettingsV0995PokemonIronthornsNormal
+	| PokemonSettingsV0996PokemonFrigibax
+	| PokemonSettingsV0996PokemonFrigibaxNormal
+	| PokemonSettingsV0997PokemonArctibax
+	| PokemonSettingsV0997PokemonArctibaxNormal
+	| PokemonSettingsV0998PokemonBaxcalibur
+	| PokemonSettingsV0998PokemonBaxcaliburNormal
+	| PokemonSettingsV0999PokemonGimmighoul
+	| PokemonSettingsV0999PokemonGimmighoulCoinA1
+	| PokemonSettingsV0999PokemonGimmighoulNormal
+	| PokemonSettingsV1000PokemonGholdengo
+	| PokemonSettingsV1000PokemonGholdengoNormal
+	| PokemonSettingsV1001PokemonWochien
+	| PokemonSettingsV1001PokemonWochienNormal
+	| PokemonSettingsV1002PokemonChienpao
+	| PokemonSettingsV1002PokemonChienpaoNormal
+	| PokemonSettingsV1003PokemonTinglu
+	| PokemonSettingsV1003PokemonTingluNormal
+	| PokemonSettingsV1004PokemonChiyu
+	| PokemonSettingsV1004PokemonChiyuNormal
+	| PokemonSettingsV1005PokemonRoaringmoon
+	| PokemonSettingsV1005PokemonRoaringmoonNormal
+	| PokemonSettingsV1006PokemonIronvaliant
+	| PokemonSettingsV1006PokemonIronvaliantNormal
+	| PokemonSettingsV1007PokemonKoraidon
+	| PokemonSettingsV1007PokemonKoraidonApex
+	| PokemonSettingsV1008PokemonMiraidon
+	| PokemonSettingsV1008PokemonMiraidonUltimate
+	| PokemonSettingsV1009PokemonWalkingwake
+	| PokemonSettingsV1009PokemonWalkingwakeNormal
+	| PokemonSettingsV1010PokemonIronleaves
+	| PokemonSettingsV1010PokemonIronleavesNormal
+	| PokemonSettingsV1011PokemonDipplin
+	| PokemonSettingsV1011PokemonDipplinNormal
+	| PokemonSettingsV1012PokemonPoltchageist
+	| PokemonSettingsV1012PokemonPoltchageistArtisan
+	| PokemonSettingsV1012PokemonPoltchageistCounterfeit
+	| PokemonSettingsV1013PokemonSinistcha
+	| PokemonSettingsV1013PokemonSinistchaMasterpiece
+	| PokemonSettingsV1013PokemonSinistchaUnremarkable
+	| PokemonSettingsV1014PokemonOkidogi
+	| PokemonSettingsV1014PokemonOkidogiNormal
+	| PokemonSettingsV1015PokemonMunkidori
+	| PokemonSettingsV1015PokemonMunkidoriNormal
+	| PokemonSettingsV1016PokemonFezandipiti
+	| PokemonSettingsV1016PokemonFezandipitiNormal
+	| PokemonSettingsV1017PokemonOgerpon
+	| PokemonSettingsV1018PokemonArchaludon
+	| PokemonSettingsV1018PokemonArchaludonNormal
+	| PokemonSettingsV1019PokemonHydrapple
+	| PokemonSettingsV1019PokemonHydrappleNormal
+	| PokemonSettingsV1020PokemonGougingfire
+	| PokemonSettingsV1020PokemonGougingfireNormal
+	| PokemonSettingsV1021PokemonRagingbolt
+	| PokemonSettingsV1021PokemonRagingboltNormal
+	| PokemonSettingsV1022PokemonIronboulder
+	| PokemonSettingsV1022PokemonIronboulderNormal
+	| PokemonSettingsV1023PokemonIroncrown
+	| PokemonSettingsV1023PokemonIroncrownNormal
+	| PokemonSettingsV1024PokemonTerapagos
+	| PokemonSettingsV1024PokemonTerapagosNormal
+	| PokemonSettingsV1025PokemonPecharunt
+	| PokemonSettingsV1025PokemonPecharuntNormal;
+
+export type PokemonSettingsTemplateID = PokemonSettingsMasterfileEntry["templateId"];

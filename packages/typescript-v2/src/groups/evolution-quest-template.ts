@@ -1,0 +1,88 @@
+export interface EvolutionQuestTemplate<T extends string> {
+	templateId: T;
+	data: EvolutionQuestTemplateData<T>;
+}
+
+export interface EvolutionQuestTemplateData<T extends string> {
+	templateId: T;
+	evolutionQuestTemplate: unknown;
+}
+
+export type EvolutionQuestTemplateAnnihilapeCdEvolutionQuest = EvolutionQuestTemplate<"ANNIHILAPE_CD_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateAnnihilapeEvolutionQuest = EvolutionQuestTemplate<"ANNIHILAPE_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateBisharpKingambitEvolutionQuest = EvolutionQuestTemplate<"BISHARP_KINGAMBIT_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateChanseyEvolutionQuest = EvolutionQuestTemplate<"CHANSEY_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateCharcadetArmarougeEvolutionQuest = EvolutionQuestTemplate<"CHARCADET_ARMAROUGE_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateCharcadetCeruledgeEvolutionQuest = EvolutionQuestTemplate<"CHARCADET_CERULEDGE_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateDipplinEvolutionQuest = EvolutionQuestTemplate<"DIPPLIN_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateEspeonCdEvolutionQuest = EvolutionQuestTemplate<"ESPEON_CD_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateEspeonEvolutionQuest = EvolutionQuestTemplate<"ESPEON_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateFlorgesCdEvolutionQuest = EvolutionQuestTemplate<"FLORGES_CD_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateFlorgesEvolutionQuest = EvolutionQuestTemplate<"FLORGES_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateKubfuRapidStrikeEvolutionQuest = EvolutionQuestTemplate<"KUBFU_RAPID_STRIKE_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateKubfuSingleStrikeEvolutionQuest = EvolutionQuestTemplate<"KUBFU_SINGLE_STRIKE_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateMiloticEvolutionQuest = EvolutionQuestTemplate<"MILOTIC_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateMrMimeEvolutionQuest = EvolutionQuestTemplate<"MR_MIME_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateNaganadelEvolutionQuest = EvolutionQuestTemplate<"NAGANADEL_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateOverqwilEvolutionQuest = EvolutionQuestTemplate<"OVERQWIL_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplatePanchamBuddyEventEvolutionQuest = EvolutionQuestTemplate<"PANCHAM_BUDDY_EVENT_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplatePanchamEvolutionQuest = EvolutionQuestTemplate<"PANCHAM_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplatePawmotBuddyEventEvolutionQuest = EvolutionQuestTemplate<"PAWMOT_BUDDY_EVENT_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplatePawmotCdEvolutionQuest = EvolutionQuestTemplate<"PAWMOT_CD_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplatePawmotEvolutionQuest = EvolutionQuestTemplate<"PAWMOT_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateRunerigusEvolutionQuest = EvolutionQuestTemplate<"RUNERIGUS_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateSirfetchdEvolutionQuest = EvolutionQuestTemplate<"SIRFETCHD_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateSlowbroGEvolutionQuest = EvolutionQuestTemplate<"SLOWBRO_G_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateSlowkingGEvolutionQuest = EvolutionQuestTemplate<"SLOWKING_G_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateSneaslerEvolutionQuest = EvolutionQuestTemplate<"SNEASLER_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateSnomFrosmothEvolutionQuest = EvolutionQuestTemplate<"SNOM_FROSMOTH_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateSpritzeeEvolutionQuest = EvolutionQuestTemplate<"SPRITZEE_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateSudowoodoEvolutionQuest = EvolutionQuestTemplate<"SUDOWOODO_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateSwirlixEvolutionQuest = EvolutionQuestTemplate<"SWIRLIX_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateSwoobatEvolutionQuest = EvolutionQuestTemplate<"SWOOBAT_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateSylveonBuddyEventEvolutionQuest = EvolutionQuestTemplate<"SYLVEON_BUDDY_EVENT_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateSylveonCdEvolutionQuest = EvolutionQuestTemplate<"SYLVEON_CD_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateSylveonEvolutionQuest = EvolutionQuestTemplate<"SYLVEON_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateUmbreonCdEvolutionQuest = EvolutionQuestTemplate<"UMBREON_CD_EVOLUTION_QUEST">;
+export type EvolutionQuestTemplateUmbreonEvolutionQuest = EvolutionQuestTemplate<"UMBREON_EVOLUTION_QUEST">;
+
+export type EvolutionQuestTemplateMasterfileEntry =
+	| EvolutionQuestTemplateAnnihilapeCdEvolutionQuest
+	| EvolutionQuestTemplateAnnihilapeEvolutionQuest
+	| EvolutionQuestTemplateBisharpKingambitEvolutionQuest
+	| EvolutionQuestTemplateChanseyEvolutionQuest
+	| EvolutionQuestTemplateCharcadetArmarougeEvolutionQuest
+	| EvolutionQuestTemplateCharcadetCeruledgeEvolutionQuest
+	| EvolutionQuestTemplateDipplinEvolutionQuest
+	| EvolutionQuestTemplateEspeonCdEvolutionQuest
+	| EvolutionQuestTemplateEspeonEvolutionQuest
+	| EvolutionQuestTemplateFlorgesCdEvolutionQuest
+	| EvolutionQuestTemplateFlorgesEvolutionQuest
+	| EvolutionQuestTemplateKubfuRapidStrikeEvolutionQuest
+	| EvolutionQuestTemplateKubfuSingleStrikeEvolutionQuest
+	| EvolutionQuestTemplateMiloticEvolutionQuest
+	| EvolutionQuestTemplateMrMimeEvolutionQuest
+	| EvolutionQuestTemplateNaganadelEvolutionQuest
+	| EvolutionQuestTemplateOverqwilEvolutionQuest
+	| EvolutionQuestTemplatePanchamBuddyEventEvolutionQuest
+	| EvolutionQuestTemplatePanchamEvolutionQuest
+	| EvolutionQuestTemplatePawmotBuddyEventEvolutionQuest
+	| EvolutionQuestTemplatePawmotCdEvolutionQuest
+	| EvolutionQuestTemplatePawmotEvolutionQuest
+	| EvolutionQuestTemplateRunerigusEvolutionQuest
+	| EvolutionQuestTemplateSirfetchdEvolutionQuest
+	| EvolutionQuestTemplateSlowbroGEvolutionQuest
+	| EvolutionQuestTemplateSlowkingGEvolutionQuest
+	| EvolutionQuestTemplateSneaslerEvolutionQuest
+	| EvolutionQuestTemplateSnomFrosmothEvolutionQuest
+	| EvolutionQuestTemplateSpritzeeEvolutionQuest
+	| EvolutionQuestTemplateSudowoodoEvolutionQuest
+	| EvolutionQuestTemplateSwirlixEvolutionQuest
+	| EvolutionQuestTemplateSwoobatEvolutionQuest
+	| EvolutionQuestTemplateSylveonBuddyEventEvolutionQuest
+	| EvolutionQuestTemplateSylveonCdEvolutionQuest
+	| EvolutionQuestTemplateSylveonEvolutionQuest
+	| EvolutionQuestTemplateUmbreonCdEvolutionQuest
+	| EvolutionQuestTemplateUmbreonEvolutionQuest;
+
+export type EvolutionQuestTemplateTemplateID = EvolutionQuestTemplateMasterfileEntry["templateId"];

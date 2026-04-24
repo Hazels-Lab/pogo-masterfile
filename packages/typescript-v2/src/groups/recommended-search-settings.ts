@@ -1,0 +1,34 @@
+export interface RecommendedSearchSettings<T extends string> {
+	templateId: T;
+	data: RecommendedSearchSettingsData<T>;
+}
+
+export interface RecommendedSearchSettingsData<T extends string> {
+	templateId: T;
+	recommendedSearchSettings: unknown;
+}
+
+export type RecommendedSearchSettingsAppraisalIvHigh = RecommendedSearchSettings<"RECOMMENDED_SEARCH_APPRAISAL_IV_HIGH">;
+export type RecommendedSearchSettingsAppraisalIvLow = RecommendedSearchSettings<"RECOMMENDED_SEARCH_APPRAISAL_IV_LOW">;
+export type RecommendedSearchSettingsAppraisalLabelEvolveMega = RecommendedSearchSettings<"RECOMMENDED_SEARCH_APPRAISAL_LABEL_EVOLVE_MEGA">;
+export type RecommendedSearchSettingsBadgeKantoRegion = RecommendedSearchSettings<"RECOMMENDED_SEARCH_BADGE_KANTO_REGION">;
+export type RecommendedSearchSettingsFilterLabelEvolvable = RecommendedSearchSettings<"RECOMMENDED_SEARCH_FILTER_LABEL_EVOLVABLE">;
+export type RecommendedSearchSettingsFilterLabelHatched = RecommendedSearchSettings<"RECOMMENDED_SEARCH_FILTER_LABEL_HATCHED">;
+export type RecommendedSearchSettingsFilterLabelLegendary = RecommendedSearchSettings<"RECOMMENDED_SEARCH_FILTER_LABEL_LEGENDARY">;
+export type RecommendedSearchSettingsFilterLabelShiny = RecommendedSearchSettings<"RECOMMENDED_SEARCH_FILTER_LABEL_SHINY">;
+export type RecommendedSearchSettingsFilterLabelTraded = RecommendedSearchSettings<"RECOMMENDED_SEARCH_FILTER_LABEL_TRADED">;
+export type RecommendedSearchSettingsPokemonTypeNormal = RecommendedSearchSettings<"RECOMMENDED_SEARCH_POKEMON_TYPE_NORMAL">;
+
+export type RecommendedSearchSettingsMasterfileEntry =
+	| RecommendedSearchSettingsAppraisalIvHigh
+	| RecommendedSearchSettingsAppraisalIvLow
+	| RecommendedSearchSettingsAppraisalLabelEvolveMega
+	| RecommendedSearchSettingsBadgeKantoRegion
+	| RecommendedSearchSettingsFilterLabelEvolvable
+	| RecommendedSearchSettingsFilterLabelHatched
+	| RecommendedSearchSettingsFilterLabelLegendary
+	| RecommendedSearchSettingsFilterLabelShiny
+	| RecommendedSearchSettingsFilterLabelTraded
+	| RecommendedSearchSettingsPokemonTypeNormal;
+
+export type RecommendedSearchSettingsTemplateID = RecommendedSearchSettingsMasterfileEntry["templateId"];
