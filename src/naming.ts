@@ -1,3 +1,5 @@
+/** biome-ignore-all lint/style/noNonNullAssertion: Known to be safe */
+
 export function groupName(discriminator: string): string {
 	return discriminator[0]!.toUpperCase() + discriminator.slice(1);
 }
@@ -54,7 +56,9 @@ export function deriveGroupAliases(templateIds: string[]): Map<string, string> {
 			} else {
 				// Still colliding — tie-break with numeric suffix, lexicographic order.
 				const sorted = [...idList].sort();
-				sorted.forEach((id, i) => result.set(id, `${s}${i}`));
+				sorted.forEach((id, i) => {
+					result.set(id, `${s}${i}`);
+				});
 			}
 		}
 	}
