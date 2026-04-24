@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
 import type { Group } from "./group.ts";
-import { emitGroupFile, emitMiscFile } from "./emit.ts";
+import { emitGroupFile, emitMiscFile, emitIndexFile, kebabCase } from "./emit.ts";
 
 describe("emitGroupFile", () => {
 	test("emits generic interface + per-entry aliases + union + TemplateID for a multi-entry group", () => {
@@ -104,5 +104,48 @@ describe("emitMiscFile", () => {
 		const aIdx = output.indexOf("AccessibilitySettings");
 		const xIdx = output.indexOf("XyzSettings");
 		expect(aIdx).toBeLessThan(xIdx);
+	});
+});
+
+describe("kebabCase", () => {
+	test("converts camelCase to kebab-case", () => {
+		expect(kebabCase("typeEffective")).toBe("type-effective");
+		expect(kebabCase("pokemonSettings")).toBe("pokemon-settings");
+		expect(kebabCase("iapItemDisplay")).toBe("iap-item-display");
+	});
+
+	test("passes through all-lowercase strings unchanged", () => {
+		expect(kebabCase("misc")).toBe("misc");
+	});
+});
+
+describe("emitIndexFile", () => {
+	test("re-exports groups (kebab-case filenames) + misc, defines MasterfileEntry union + MasterfileTemplateID", () => {
+		const multiEntryGroupNames = ["typeEffective", "pokemonSettings"];
+		const output = emitIndexFile(multiEntryGroupNames);
+
+		// Exports are sorted:
+		expect(output).toContain(`export type * from "./groups/pokemon-settings.ts";`);
+		expect(output).toContain(`export type * from "./groups/type-effective.ts";`);
+		expect(output).toContain(`export type * from "./groups/misc.ts";`);
+		const pokeIdx = output.indexOf("pokemon-settings");
+		const typeIdx = output.indexOf("type-effective");
+		expect(pokeIdx).toBeLessThan(typeIdx);
+
+		// Imports for the global union:
+		expect(output).toContain(
+			`import type { PokemonSettingsMasterfileEntry } from "./groups/pokemon-settings.ts";`,
+		);
+		expect(output).toContain(
+			`import type { TypeEffectiveMasterfileEntry } from "./groups/type-effective.ts";`,
+		);
+
+		// Global union and TemplateID alias:
+		expect(output).toContain("export type MasterfileEntry =");
+		expect(output).toContain("| PokemonSettingsMasterfileEntry");
+		expect(output).toContain("| TypeEffectiveMasterfileEntry");
+		expect(output).toContain(
+			`export type MasterfileTemplateID = MasterfileEntry["templateId"];`,
+		);
 	});
 });

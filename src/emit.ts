@@ -61,3 +61,39 @@ export function emitMiscFile(singletons: Group[]): string {
 	}
 	return lines.join("\n");
 }
+
+export function kebabCase(camelCase: string): string {
+	return camelCase.replace(/[A-Z]/g, (m) => `-${m.toLowerCase()}`);
+}
+
+export function emitIndexFile(multiEntryDiscriminators: string[]): string {
+	const sorted = [...multiEntryDiscriminators].sort();
+	const lines: string[] = [];
+
+	for (const disc of sorted) {
+		lines.push(`export type * from "./groups/${kebabCase(disc)}.ts";`);
+	}
+	lines.push(`export type * from "./groups/misc.ts";`);
+	lines.push(``);
+
+	for (const disc of sorted) {
+		const name = groupName(disc);
+		lines.push(
+			`import type { ${name}MasterfileEntry } from "./groups/${kebabCase(disc)}.ts";`,
+		);
+	}
+	lines.push(``);
+	lines.push(`export type MasterfileEntry =`);
+	sorted.forEach((disc, i) => {
+		const name = groupName(disc);
+		const suffix = i === sorted.length - 1 ? ";" : "";
+		lines.push(`\t| ${name}MasterfileEntry${suffix}`);
+	});
+	lines.push(``);
+	lines.push(
+		`export type MasterfileTemplateID = MasterfileEntry["templateId"];`,
+	);
+	lines.push(``);
+
+	return lines.join("\n");
+}
