@@ -7,19 +7,33 @@ export interface LevelUpRewardsData<TemplateID extends string> {
 	templateId: TemplateID;
 	levelUpRewards: {
 		clientOverrideDisplayOrder?: true;
-		featuresUnlocked?: Array<"FEATURE_CANDY_XL" | "FEATURE_COMBAT_LEAGUE" | "FEATURE_EGG_HATCHING" | "FEATURE_EGG_SPECIAL" | "FEATURE_GYM" | "FEATURE_LUCKY_CHANCE_INCREASE" | "FEATURE_MAX_BATTLE" | "FEATURE_MEGA" | "FEATURE_PARTY_PLAY" | "FEATURE_POKESTOP_NOMINATION" | "FEATURE_RAID" | "FEATURE_ROCKET" | "FEATURE_ROUTES" | "FEATURE_ROUTES_CREATION" | "FEATURE_TAG" | "FEATURE_TRADE" | "FEATURE_WEEKLY_CHALLENGES">;
+		featuresUnlocked?: Array<LevelUpRewardsFeaturesUnlocked>;
 		isBackfill?: true;
-		items: Array<"ITEM_GIFTBOX_STORAGE_UPGRADE_EARNED" | "ITEM_GOLDEN_RAZZ_BERRY" | "ITEM_GREAT_BALL" | "ITEM_HYPER_POTION" | "ITEM_INCENSE_ORDINARY" | "ITEM_INCUBATOR_BASIC" | "ITEM_INCUBATOR_SUPER" | "ITEM_ITEM_STORAGE_UPGRADE_EARNED" | "ITEM_LUCKY_EGG" | "ITEM_MASTER_BALL" | "ITEM_MAX_BOOST" | "ITEM_MAX_POTION" | "ITEM_MAX_REVIVE" | "ITEM_MOVE_REROLL_ELITE_FAST_ATTACK" | "ITEM_MOVE_REROLL_ELITE_SPECIAL_ATTACK" | "ITEM_MOVE_REROLL_FAST_ATTACK" | "ITEM_MP_REPLENISH" | "ITEM_NANAB_BERRY" | "ITEM_PAID_RAID_TICKET" | "ITEM_PINAP_BERRY" | "ITEM_POKE_BALL" | "ITEM_POKEMON_STORAGE_UPGRADE_EARNED" | "ITEM_POSTCARD_STORAGE_UPGRADE_EARNED" | "ITEM_POTION" | "ITEM_RAZZ_BERRY" | "ITEM_REVIVE" | "ITEM_STAR_PIECE" | "ITEM_SUPER_POTION" | "ITEM_TROY_DISK" | "ITEM_ULTRA_BALL" | "ITEM_XL_RARE_CANDY">;
-		itemsCount: Array<1 | 2 | 3 | 4 | 5 | 6 | 7 | 10 | 15 | 20 | 25 | 30 | 35 | 50 | 70 | 75 | 80 | 100>;
-		itemsUnlocked?: Array<"ITEM_GOLDEN_PINAP_BERRY" | "ITEM_GOLDEN_RAZZ_BERRY" | "ITEM_GREAT_BALL" | "ITEM_HYPER_POTION" | "ITEM_INCENSE_DAILY_ADVENTURE" | "ITEM_MAX_POTION" | "ITEM_MAX_REVIVE" | "ITEM_MOVE_REROLL_FAST_ATTACK" | "ITEM_MOVE_REROLL_SPECIAL_ATTACK" | "ITEM_NANAB_BERRY" | "ITEM_PINAP_BERRY" | "ITEM_POTION" | "ITEM_RAZZ_BERRY" | "ITEM_REVIVE" | "ITEM_SUPER_POTION" | "ITEM_TROY_DISK" | "ITEM_ULTRA_BALL">;
-		level: 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | 40 | 41 | 42 | 43 | 44 | 45 | 46 | 47 | 48 | 49 | 50 | 51 | 52 | 53 | 54 | 55 | 56 | 57 | 58 | 59 | 60 | 61 | 62 | 63 | 64 | 65 | 66 | 67 | 68 | 69 | 70 | 71 | 72 | 73 | 74 | 75 | 76 | 77 | 78 | 79 | 80;
+		items: Array<LevelUpRewardsItems>;
+		itemsCount: Array<LevelUpRewardsItemsCount>;
+		itemsUnlocked?: Array<LevelUpRewardsItemsUnlocked>;
+		level: LevelUpRewardsLevel;
 		neutralAvatarItemTemplates?: {
-			displayTemplateId: "N_DISPLAY_n_glasses_lvl73-visorspecs_0" | "N_DISPLAY_n_hair_lvl79-urbanphantom_0" | "N_DISPLAY_n_hat_pokeballitems-basic_0" | "N_DISPLAY_n_hat_pokeballitems-great_0" | "N_DISPLAY_n_hat_pokeballitems-ultra_0" | "N_DISPLAY_n_pants_lvl75-techtrousers_0" | "N_DISPLAY_n_pose_lvl77" | "N_DISPLAY_n_shirt_lvl80-circuitjacket_0" | "N_DISPLAY_n_shirt_pokeballitems-basic_0" | "N_DISPLAY_n_shirt_pokeballitems-great_0" | "N_DISPLAY_n_shirt_pokeballitems-ultra_0" | "N_DISPLAY_n_shoes_lvl71-cyberkicks_0" | "N_DISPLAY_n_shoes_pokeballitems-basic_0" | "N_DISPLAY_n_shoes_pokeballitems-great_0" | "N_DISPLAY_n_shoes_pokeballitems-ultra_0";
-			itemTemplateId: "N_AVATAR_n_glasses_lvl73-visorspecs_0" | "N_AVATAR_n_hair_lvl79-urbanphantom_0" | "N_AVATAR_n_hat_pokeballitems-basic_0" | "N_AVATAR_n_hat_pokeballitems-great_0" | "N_AVATAR_n_hat_pokeballitems-ultra_0" | "N_AVATAR_n_pants_lvl75-techtrousers_0" | "N_AVATAR_n_pose_lvl77" | "N_AVATAR_n_shirt_lvl80-circuitjacket_0" | "N_AVATAR_n_shirt_pokeballitems-basic_0" | "N_AVATAR_n_shirt_pokeballitems-great_0" | "N_AVATAR_n_shirt_pokeballitems-ultra_0" | "N_AVATAR_n_shoes_lvl71-cyberkicks_0" | "N_AVATAR_n_shoes_pokeballitems-basic_0" | "N_AVATAR_n_shoes_pokeballitems-great_0" | "N_AVATAR_n_shoes_pokeballitems-ultra_0";
+			displayTemplateId: LevelUpRewardsNeutralAvatarItemTemplatesDisplayTemplateID;
+			itemTemplateId: LevelUpRewardsNeutralAvatarItemTemplatesItemTemplateID;
 		};
 		obLevelUpRewardsNumber9?: 0.01;
 	};
 }
+
+export type LevelUpRewardsFeaturesUnlocked = "FEATURE_CANDY_XL" | "FEATURE_COMBAT_LEAGUE" | "FEATURE_EGG_HATCHING" | "FEATURE_EGG_SPECIAL" | "FEATURE_GYM" | "FEATURE_LUCKY_CHANCE_INCREASE" | "FEATURE_MAX_BATTLE" | "FEATURE_MEGA" | "FEATURE_PARTY_PLAY" | "FEATURE_POKESTOP_NOMINATION" | "FEATURE_RAID" | "FEATURE_ROCKET" | "FEATURE_ROUTES" | "FEATURE_ROUTES_CREATION" | "FEATURE_TAG" | "FEATURE_TRADE" | "FEATURE_WEEKLY_CHALLENGES";
+
+export type LevelUpRewardsItems = "ITEM_GIFTBOX_STORAGE_UPGRADE_EARNED" | "ITEM_GOLDEN_RAZZ_BERRY" | "ITEM_GREAT_BALL" | "ITEM_HYPER_POTION" | "ITEM_INCENSE_ORDINARY" | "ITEM_INCUBATOR_BASIC" | "ITEM_INCUBATOR_SUPER" | "ITEM_ITEM_STORAGE_UPGRADE_EARNED" | "ITEM_LUCKY_EGG" | "ITEM_MASTER_BALL" | "ITEM_MAX_BOOST" | "ITEM_MAX_POTION" | "ITEM_MAX_REVIVE" | "ITEM_MOVE_REROLL_ELITE_FAST_ATTACK" | "ITEM_MOVE_REROLL_ELITE_SPECIAL_ATTACK" | "ITEM_MOVE_REROLL_FAST_ATTACK" | "ITEM_MP_REPLENISH" | "ITEM_NANAB_BERRY" | "ITEM_PAID_RAID_TICKET" | "ITEM_PINAP_BERRY" | "ITEM_POKE_BALL" | "ITEM_POKEMON_STORAGE_UPGRADE_EARNED" | "ITEM_POSTCARD_STORAGE_UPGRADE_EARNED" | "ITEM_POTION" | "ITEM_RAZZ_BERRY" | "ITEM_REVIVE" | "ITEM_STAR_PIECE" | "ITEM_SUPER_POTION" | "ITEM_TROY_DISK" | "ITEM_ULTRA_BALL" | "ITEM_XL_RARE_CANDY";
+
+export type LevelUpRewardsItemsCount = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 10 | 15 | 20 | 25 | 30 | 35 | 50 | 70 | 75 | 80 | 100;
+
+export type LevelUpRewardsItemsUnlocked = "ITEM_GOLDEN_PINAP_BERRY" | "ITEM_GOLDEN_RAZZ_BERRY" | "ITEM_GREAT_BALL" | "ITEM_HYPER_POTION" | "ITEM_INCENSE_DAILY_ADVENTURE" | "ITEM_MAX_POTION" | "ITEM_MAX_REVIVE" | "ITEM_MOVE_REROLL_FAST_ATTACK" | "ITEM_MOVE_REROLL_SPECIAL_ATTACK" | "ITEM_NANAB_BERRY" | "ITEM_PINAP_BERRY" | "ITEM_POTION" | "ITEM_RAZZ_BERRY" | "ITEM_REVIVE" | "ITEM_SUPER_POTION" | "ITEM_TROY_DISK" | "ITEM_ULTRA_BALL";
+
+export type LevelUpRewardsLevel = 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | 40 | 41 | 42 | 43 | 44 | 45 | 46 | 47 | 48 | 49 | 50 | 51 | 52 | 53 | 54 | 55 | 56 | 57 | 58 | 59 | 60 | 61 | 62 | 63 | 64 | 65 | 66 | 67 | 68 | 69 | 70 | 71 | 72 | 73 | 74 | 75 | 76 | 77 | 78 | 79 | 80;
+
+export type LevelUpRewardsNeutralAvatarItemTemplatesDisplayTemplateID = "N_DISPLAY_n_glasses_lvl73-visorspecs_0" | "N_DISPLAY_n_hair_lvl79-urbanphantom_0" | "N_DISPLAY_n_hat_pokeballitems-basic_0" | "N_DISPLAY_n_hat_pokeballitems-great_0" | "N_DISPLAY_n_hat_pokeballitems-ultra_0" | "N_DISPLAY_n_pants_lvl75-techtrousers_0" | "N_DISPLAY_n_pose_lvl77" | "N_DISPLAY_n_shirt_lvl80-circuitjacket_0" | "N_DISPLAY_n_shirt_pokeballitems-basic_0" | "N_DISPLAY_n_shirt_pokeballitems-great_0" | "N_DISPLAY_n_shirt_pokeballitems-ultra_0" | "N_DISPLAY_n_shoes_lvl71-cyberkicks_0" | "N_DISPLAY_n_shoes_pokeballitems-basic_0" | "N_DISPLAY_n_shoes_pokeballitems-great_0" | "N_DISPLAY_n_shoes_pokeballitems-ultra_0";
+
+export type LevelUpRewardsNeutralAvatarItemTemplatesItemTemplateID = "N_AVATAR_n_glasses_lvl73-visorspecs_0" | "N_AVATAR_n_hair_lvl79-urbanphantom_0" | "N_AVATAR_n_hat_pokeballitems-basic_0" | "N_AVATAR_n_hat_pokeballitems-great_0" | "N_AVATAR_n_hat_pokeballitems-ultra_0" | "N_AVATAR_n_pants_lvl75-techtrousers_0" | "N_AVATAR_n_pose_lvl77" | "N_AVATAR_n_shirt_lvl80-circuitjacket_0" | "N_AVATAR_n_shirt_pokeballitems-basic_0" | "N_AVATAR_n_shirt_pokeballitems-great_0" | "N_AVATAR_n_shirt_pokeballitems-ultra_0" | "N_AVATAR_n_shoes_lvl71-cyberkicks_0" | "N_AVATAR_n_shoes_pokeballitems-basic_0" | "N_AVATAR_n_shoes_pokeballitems-great_0" | "N_AVATAR_n_shoes_pokeballitems-ultra_0";
 
 export type LevelUpRewardsAwardsLevel10 = LevelUpRewards<"AWARDS_LEVEL_10">;
 export type LevelUpRewardsAwardsLevel11 = LevelUpRewards<"AWARDS_LEVEL_11">;

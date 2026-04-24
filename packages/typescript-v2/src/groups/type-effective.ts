@@ -6,29 +6,31 @@ export interface TypeEffective<TemplateID extends string> {
 export interface TypeEffectiveData<TemplateID extends string> {
 	templateId: TemplateID;
 	typeEffective: {
-		attackScalar: [
-			0.390625 | 1 | 1.6,
-			0.625 | 1 | 1.6,
-			0.390625 | 0.625 | 1 | 1.6,
-			0.625 | 1 | 1.6,
-			0.390625 | 0.625 | 1 | 1.6,
-			0.625 | 1 | 1.6,
-			0.625 | 1 | 1.6,
-			0.390625 | 0.625 | 1 | 1.6,
-			0.390625 | 0.625 | 1 | 1.6,
-			0.625 | 1 | 1.6,
-			0.625 | 1 | 1.6,
-			0.625 | 1 | 1.6,
-			0.625 | 1 | 1.6,
-			0.625 | 1 | 1.6,
-			0.625 | 1 | 1.6,
-			0.625 | 1 | 1.6,
-			0.390625 | 0.625 | 1 | 1.6,
-			0.390625 | 0.625 | 1 | 1.6
-		];
+		attackScalar: TypeEffectiveAttackScalar;
 		attackType: TemplateID;
 	};
 }
+
+export type TypeEffectiveAttackScalar = [
+	0.390625 | 1 | 1.6,
+	0.625 | 1 | 1.6,
+	0.390625 | 0.625 | 1 | 1.6,
+	0.625 | 1 | 1.6,
+	0.390625 | 0.625 | 1 | 1.6,
+	0.625 | 1 | 1.6,
+	0.625 | 1 | 1.6,
+	0.390625 | 0.625 | 1 | 1.6,
+	0.390625 | 0.625 | 1 | 1.6,
+	0.625 | 1 | 1.6,
+	0.625 | 1 | 1.6,
+	0.625 | 1 | 1.6,
+	0.625 | 1 | 1.6,
+	0.625 | 1 | 1.6,
+	0.625 | 1 | 1.6,
+	0.625 | 1 | 1.6,
+	0.390625 | 0.625 | 1 | 1.6,
+	0.390625 | 0.625 | 1 | 1.6
+];
 
 export type TypeEffectiveBug = TypeEffective<"POKEMON_TYPE_BUG">;
 export type TypeEffectiveDark = TypeEffective<"POKEMON_TYPE_DARK">;

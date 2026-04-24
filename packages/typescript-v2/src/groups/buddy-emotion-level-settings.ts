@@ -6,11 +6,15 @@ export interface BuddyEmotionLevelSettings<TemplateID extends string> {
 export interface BuddyEmotionLevelSettingsData<TemplateID extends string> {
 	templateId: TemplateID;
 	buddyEmotionLevelSettings: {
-		emotionAnimation: "BUDDY_ANIMATION_HAPPY" | "BUDDY_ANIMATION_HATE";
+		emotionAnimation: BuddyEmotionLevelSettingsEmotionAnimation;
 		emotionLevel: TemplateID;
-		minEmotionPointsRequired?: 1 | 2 | 4 | 8 | 16 | 32;
+		minEmotionPointsRequired?: BuddyEmotionLevelSettingsMinEmotionPointsRequired;
 	};
 }
+
+export type BuddyEmotionLevelSettingsEmotionAnimation = "BUDDY_ANIMATION_HAPPY" | "BUDDY_ANIMATION_HATE";
+
+export type BuddyEmotionLevelSettingsMinEmotionPointsRequired = 1 | 2 | 4 | 8 | 16 | 32;
 
 export type BuddyEmotionLevelSettings0 = BuddyEmotionLevelSettings<"BUDDY_EMOTION_LEVEL_0">;
 export type BuddyEmotionLevelSettings1 = BuddyEmotionLevelSettings<"BUDDY_EMOTION_LEVEL_1">;

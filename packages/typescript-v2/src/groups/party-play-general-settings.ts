@@ -18,13 +18,8 @@ export interface PartyPlayGeneralSettingsData<TemplateID extends string> {
 		maxInvitesPerPlayer?: 10;
 		maxPartySize?: 4;
 		maxStackedEncounterReward?: 1;
-		minPlayerLevel: 13 | 21;
-		notificationMilestones?: [
-			0.25,
-			0.5,
-			0.75,
-			1
-		];
+		minPlayerLevel: PartyPlayGeneralSettingsMinPlayerLevel;
+		notificationMilestones?: PartyPlayGeneralSettingsNotificationMilestones;
 		partyCatchTagsEnabled?: true;
 		partyExpiryDurationMs?: "10800000";
 		partyExpiryWarningMinutes?: 10;
@@ -69,6 +64,15 @@ export interface PartyPlayGeneralSettingsData<TemplateID extends string> {
 		sendInviteEnabled?: true;
 	};
 }
+
+export type PartyPlayGeneralSettingsMinPlayerLevel = 13 | 21;
+
+export type PartyPlayGeneralSettingsNotificationMilestones = [
+	0.25,
+	0.5,
+	0.75,
+	1
+];
 
 export type PartyPlayGeneralSettingsPartyPlayGeneralSettings = PartyPlayGeneralSettings<"PARTY_PLAY_GENERAL_SETTINGS">;
 export type PartyPlayGeneralSettingsWeeklyChallengeGeneralSettings = PartyPlayGeneralSettings<"WEEKLY_CHALLENGE_GENERAL_SETTINGS">;

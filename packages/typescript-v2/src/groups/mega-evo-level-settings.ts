@@ -7,29 +7,45 @@ export interface MegaEvoLevelSettingsData<TemplateID extends string> {
 	templateId: TemplateID;
 	megaEvoLevelSettings: {
 		cooldown: {
-			bypassCostInitial: 5 | 10 | 15 | 20 | 30 | 40 | 60 | 80 | 100 | 200 | 300 | 400 | 500;
+			bypassCostInitial: MegaEvoLevelSettingsCooldownBypassCostInitial;
 			bypassCostRoundingValue: 1;
-			durationMs: "1209600000" | "259200000" | "432000000" | "604800000" | "86400000";
+			durationMs: MegaEvoLevelSettingsCooldownDurationMs;
 		};
 		effects: {
 			differentTypeAttackBoost: 1.1;
 			sameTypeAttackBoost: 1.3;
-			sameTypeExtraCatchCandy: 1 | 2 | 3;
-			sameTypeExtraCatchCandyXlChance?: 0.1 | 0.25 | 0.3;
-			sameTypeExtraCatchXp?: 50 | 100 | 200;
+			sameTypeExtraCatchCandy: MegaEvoLevelSettingsEffectsSameTypeExtraCatchCandy;
+			sameTypeExtraCatchCandyXlChance?: MegaEvoLevelSettingsEffectsSameTypeExtraCatchCandyXlChance;
+			sameTypeExtraCatchXp?: MegaEvoLevelSettingsEffectsSameTypeExtraCatchXp;
 			selfCpBoostAdditionalLevel?: 2;
 		};
 		ftueExpirationTimestamp?: "1775001600000";
-		level?: 1 | 2 | 3 | 4;
+		level?: MegaEvoLevelSettingsLevel;
 		megaEnergyCostToUnlock?: 5000;
-		pokemonId?: "ALTARIA" | "BANETTE" | "BEEDRILL" | "DIANCIE" | "DRAGONITE" | "GARCHOMP" | "GROUDON" | "GYARADOS" | "HOUNDOOM" | "KYOGRE" | "LATIAS" | "LATIOS" | "MALAMAR" | "MANECTRIC" | "MEDICHAM" | "METAGROSS" | "MEWTWO" | "PIDGEOT" | "RAYQUAZA" | "SABLEYE" | "SALAMENCE" | "SLOWBRO" | "TYRANITAR" | "VICTREEBEL";
+		pokemonId?: MegaEvoLevelSettingsPokemonID;
 		progression: {
 			pointsLimitPerPeriod: 1;
 			pointsPerMegaEvoAction: 1;
-			pointsRequired?: 1 | 7 | 30;
+			pointsRequired?: MegaEvoLevelSettingsProgressionPointsRequired;
 		};
 	};
 }
+
+export type MegaEvoLevelSettingsCooldownBypassCostInitial = 5 | 10 | 15 | 20 | 30 | 40 | 60 | 80 | 100 | 200 | 300 | 400 | 500;
+
+export type MegaEvoLevelSettingsCooldownDurationMs = "1209600000" | "259200000" | "432000000" | "604800000" | "86400000";
+
+export type MegaEvoLevelSettingsEffectsSameTypeExtraCatchCandy = 1 | 2 | 3;
+
+export type MegaEvoLevelSettingsEffectsSameTypeExtraCatchCandyXlChance = 0.1 | 0.25 | 0.3;
+
+export type MegaEvoLevelSettingsEffectsSameTypeExtraCatchXp = 50 | 100 | 200;
+
+export type MegaEvoLevelSettingsLevel = 1 | 2 | 3 | 4;
+
+export type MegaEvoLevelSettingsPokemonID = "ALTARIA" | "BANETTE" | "BEEDRILL" | "DIANCIE" | "DRAGONITE" | "GARCHOMP" | "GROUDON" | "GYARADOS" | "HOUNDOOM" | "KYOGRE" | "LATIAS" | "LATIOS" | "MALAMAR" | "MANECTRIC" | "MEDICHAM" | "METAGROSS" | "MEWTWO" | "PIDGEOT" | "RAYQUAZA" | "SABLEYE" | "SALAMENCE" | "SLOWBRO" | "TYRANITAR" | "VICTREEBEL";
+
+export type MegaEvoLevelSettingsProgressionPointsRequired = 1 | 7 | 30;
 
 export type MegaEvoLevelSettings0 = MegaEvoLevelSettings<"MEGA_EVOLUTION_LEVEL_0">;
 export type MegaEvoLevelSettings0V0015PokemonBeedrill = MegaEvoLevelSettings<"MEGA_EVOLUTION_LEVEL_0_V0015_POKEMON_BEEDRILL">;

@@ -7,10 +7,14 @@ export interface BuddyLevelSettingsData<TemplateID extends string> {
 	templateId: TemplateID;
 	buddyLevelSettings: {
 		level: TemplateID;
-		minNonCumulativePointsRequired?: 1 | 70 | 150 | 300;
-		unlockedTraits?: Array<"BEST_BUDDY_ASSET" | "CP_BOOST" | "EMOTION_INDICATOR" | "ENCOUNTER_CAMEO" | "FIND_ATTRACTIVE_POIS" | "MAP_DEPLOY" | "PICK_UP_CONSUMABLES" | "PICK_UP_SOUVENIRS" | "TRAINING">;
+		minNonCumulativePointsRequired?: BuddyLevelSettingsMinNonCumulativePointsRequired;
+		unlockedTraits?: Array<BuddyLevelSettingsUnlockedTraits>;
 	};
 }
+
+export type BuddyLevelSettingsMinNonCumulativePointsRequired = 1 | 70 | 150 | 300;
+
+export type BuddyLevelSettingsUnlockedTraits = "BEST_BUDDY_ASSET" | "CP_BOOST" | "EMOTION_INDICATOR" | "ENCOUNTER_CAMEO" | "FIND_ATTRACTIVE_POIS" | "MAP_DEPLOY" | "PICK_UP_CONSUMABLES" | "PICK_UP_SOUVENIRS" | "TRAINING";
 
 export type BuddyLevelSettings0 = BuddyLevelSettings<"BUDDY_LEVEL_0">;
 export type BuddyLevelSettings1 = BuddyLevelSettings<"BUDDY_LEVEL_1">;

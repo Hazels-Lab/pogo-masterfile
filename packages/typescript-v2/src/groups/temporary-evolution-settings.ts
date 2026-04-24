@@ -6,15 +6,21 @@ export interface TemporaryEvolutionSettings<TemplateID extends string> {
 export interface TemporaryEvolutionSettingsData<TemplateID extends string> {
 	templateId: TemplateID;
 	temporaryEvolutionSettings: {
-		pokemonId: "ABOMASNOW" | "ABSOL" | "AERODACTYL" | "AGGRON" | "ALAKAZAM" | "ALTARIA" | "AMPHAROS" | "AUDINO" | "BANETTE" | "BEEDRILL" | "BLASTOISE" | "BLAZIKEN" | "CAMERUPT" | "CHARIZARD" | "DIANCIE" | "DRAGONITE" | "GALLADE" | "GARCHOMP" | "GARDEVOIR" | "GENGAR" | "GLALIE" | "GROUDON" | "GYARADOS" | "HERACROSS" | "HOUNDOOM" | "KANGASKHAN" | "KYOGRE" | "LATIAS" | "LATIOS" | "LOPUNNY" | "LUCARIO" | "MALAMAR" | "MANECTRIC" | "MAWILE" | "MEDICHAM" | "METAGROSS" | "PIDGEOT" | "PINSIR" | "RAYQUAZA" | "SABLEYE" | "SALAMENCE" | "SCEPTILE" | "SCIZOR" | "SHARPEDO" | "SLOWBRO" | "STEELIX" | "SWAMPERT" | "TYRANITAR" | "VENUSAUR" | "VICTREEBEL";
+		pokemonId: TemporaryEvolutionSettingsPokemonID;
 		temporaryEvolutions: Array<
 			{
-				assetBundleValue: 51 | 52;
-				temporaryEvolutionId: "TEMP_EVOLUTION_MEGA" | "TEMP_EVOLUTION_MEGA_X" | "TEMP_EVOLUTION_MEGA_Y" | "TEMP_EVOLUTION_PRIMAL";
+				assetBundleValue: TemporaryEvolutionSettingsTemporaryEvolutionsAssetBundleValue;
+				temporaryEvolutionId: TemporaryEvolutionSettingsTemporaryEvolutionsTemporaryEvolutionID;
 			}
 		>;
 	};
 }
+
+export type TemporaryEvolutionSettingsPokemonID = "ABOMASNOW" | "ABSOL" | "AERODACTYL" | "AGGRON" | "ALAKAZAM" | "ALTARIA" | "AMPHAROS" | "AUDINO" | "BANETTE" | "BEEDRILL" | "BLASTOISE" | "BLAZIKEN" | "CAMERUPT" | "CHARIZARD" | "DIANCIE" | "DRAGONITE" | "GALLADE" | "GARCHOMP" | "GARDEVOIR" | "GENGAR" | "GLALIE" | "GROUDON" | "GYARADOS" | "HERACROSS" | "HOUNDOOM" | "KANGASKHAN" | "KYOGRE" | "LATIAS" | "LATIOS" | "LOPUNNY" | "LUCARIO" | "MALAMAR" | "MANECTRIC" | "MAWILE" | "MEDICHAM" | "METAGROSS" | "PIDGEOT" | "PINSIR" | "RAYQUAZA" | "SABLEYE" | "SALAMENCE" | "SCEPTILE" | "SCIZOR" | "SHARPEDO" | "SLOWBRO" | "STEELIX" | "SWAMPERT" | "TYRANITAR" | "VENUSAUR" | "VICTREEBEL";
+
+export type TemporaryEvolutionSettingsTemporaryEvolutionsAssetBundleValue = 51 | 52;
+
+export type TemporaryEvolutionSettingsTemporaryEvolutionsTemporaryEvolutionID = "TEMP_EVOLUTION_MEGA" | "TEMP_EVOLUTION_MEGA_X" | "TEMP_EVOLUTION_MEGA_Y" | "TEMP_EVOLUTION_PRIMAL";
 
 export type TemporaryEvolutionSettingsV0003PokemonVenusaur = TemporaryEvolutionSettings<"TEMPORARY_EVOLUTION_V0003_POKEMON_VENUSAUR">;
 export type TemporaryEvolutionSettingsV0006PokemonCharizard = TemporaryEvolutionSettings<"TEMPORARY_EVOLUTION_V0006_POKEMON_CHARIZARD">;

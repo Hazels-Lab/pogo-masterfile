@@ -6,16 +6,28 @@ export interface FriendshipMilestoneSettings<TemplateID extends string> {
 export interface FriendshipMilestoneSettingsData<TemplateID extends string> {
 	templateId: TemplateID;
 	friendshipMilestoneSettings: {
-		attackBonusPercentage: 1 | 1.03 | 1.05 | 1.07 | 1.1 | 1.12;
-		milestoneXpReward: 1000 | 3000 | 10000 | 50000 | 100000 | 150000;
-		minPointsToReach?: 1 | 7 | 30 | 90;
-		raidBallBonus?: 1 | 2 | 4;
+		attackBonusPercentage: FriendshipMilestoneSettingsAttackBonusPercentage;
+		milestoneXpReward: FriendshipMilestoneSettingsMilestoneXpReward;
+		minPointsToReach?: FriendshipMilestoneSettingsMinPointsToReach;
+		raidBallBonus?: FriendshipMilestoneSettingsRaidBallBonus;
 		relativePointsToReach?: 90;
-		tradingDiscount?: 0.2 | 0.92 | 0.96;
+		tradingDiscount?: FriendshipMilestoneSettingsTradingDiscount;
 		unlockedLuckyFriendApplicator?: true;
-		unlockedTrading: Array<"FORM_NON_POKEDEX" | "GMAX_IN_POKEDEX" | "GMAX_NON_POKEDEX" | "LEGENDARY_NON_POKEDEX" | "REGIONAL_NON_POKEDEX" | "REGULAR_IN_POKEDEX" | "REGULAR_NON_POKEDEX" | "SHINY_NON_POKEDEX" | "SPECIAL_IN_POKEDEX">;
+		unlockedTrading: Array<FriendshipMilestoneSettingsUnlockedTrading>;
 	};
 }
+
+export type FriendshipMilestoneSettingsAttackBonusPercentage = 1 | 1.03 | 1.05 | 1.07 | 1.1 | 1.12;
+
+export type FriendshipMilestoneSettingsMilestoneXpReward = 1000 | 3000 | 10000 | 50000 | 100000 | 150000;
+
+export type FriendshipMilestoneSettingsMinPointsToReach = 1 | 7 | 30 | 90;
+
+export type FriendshipMilestoneSettingsRaidBallBonus = 1 | 2 | 4;
+
+export type FriendshipMilestoneSettingsTradingDiscount = 0.2 | 0.92 | 0.96;
+
+export type FriendshipMilestoneSettingsUnlockedTrading = "FORM_NON_POKEDEX" | "GMAX_IN_POKEDEX" | "GMAX_NON_POKEDEX" | "LEGENDARY_NON_POKEDEX" | "REGIONAL_NON_POKEDEX" | "REGULAR_IN_POKEDEX" | "REGULAR_NON_POKEDEX" | "SHINY_NON_POKEDEX" | "SPECIAL_IN_POKEDEX";
 
 export type FriendshipMilestoneSettings0 = FriendshipMilestoneSettings<"FRIENDSHIP_LEVEL_0">;
 export type FriendshipMilestoneSettings1 = FriendshipMilestoneSettings<"FRIENDSHIP_LEVEL_1">;

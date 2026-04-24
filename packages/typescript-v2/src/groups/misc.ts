@@ -5972,6 +5972,13 @@ export interface PtcOauthSettings {
 	};
 }
 
+export interface QuestDialogueInboxSettings {
+	templateId: "QUEST_DIALOGUE_INBOX_SETTINGS";
+	data: {
+		templateId: "QUEST_DIALOGUE_INBOX_SETTINGS";
+	};
+}
+
 export interface QuickInviteSettings {
 	templateId: "QUICK_INVITE_SETTINGS_RAID";
 	data: {
@@ -7341,6 +7348,7 @@ export type MiscMasterfileEntry =
 	| PowerUpPokestopsSettings
 	| PrimalEvoSettings
 	| PtcOauthSettings
+	| QuestDialogueInboxSettings
 	| QuickInviteSettings
 	| RaidEntryCostSettings
 	| RaidLobbyCounterSettings

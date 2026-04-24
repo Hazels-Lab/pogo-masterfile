@@ -7,9 +7,11 @@ export interface BuddyActivityCategorySettingsData<TemplateID extends string> {
 	templateId: TemplateID;
 	buddyActivityCategorySettings: {
 		activityCategory: TemplateID;
-		maxPointsPerDay: 1 | 3 | 6;
+		maxPointsPerDay: BuddyActivityCategorySettingsMaxPointsPerDay;
 	};
 }
+
+export type BuddyActivityCategorySettingsMaxPointsPerDay = 1 | 3 | 6;
 
 export type BuddyActivityCategorySettingsBattle = BuddyActivityCategorySettings<"BUDDY_CATEGORY_BATTLE">;
 export type BuddyActivityCategorySettingsBonus = BuddyActivityCategorySettings<"BUDDY_CATEGORY_BONUS">;

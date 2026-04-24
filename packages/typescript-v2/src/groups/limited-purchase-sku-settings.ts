@@ -8,11 +8,15 @@ export interface LimitedPurchaseSkuSettingsData<TemplateID extends string> {
 	limitedPurchaseSkuSettings: {
 		chronoUnit?: "DAY";
 		lootTableId?: "BUNDLE_GENERAL1_FREE1_1_LOOT_TABLE";
-		purchaseLimit: 1 | 3 | 5;
+		purchaseLimit: LimitedPurchaseSkuSettingsPurchaseLimit;
 		resetInterval?: 1;
-		version?: 1 | 2 | 3 | 9 | 10 | 11 | 12 | 13 | 14 | 16 | 18 | 19 | 22 | 30 | 33 | 41 | 45 | 57 | 64;
+		version?: LimitedPurchaseSkuSettingsVersion;
 	};
 }
+
+export type LimitedPurchaseSkuSettingsPurchaseLimit = 1 | 3 | 5;
+
+export type LimitedPurchaseSkuSettingsVersion = 1 | 2 | 3 | 9 | 10 | 11 | 12 | 13 | 14 | 16 | 18 | 19 | 22 | 30 | 33 | 41 | 45 | 57 | 64;
 
 export type LimitedPurchaseSkuSettingsBundleFlairFirsttime1 = LimitedPurchaseSkuSettings<"LPSKU_bundle.flair.firsttime.1">;
 export type LimitedPurchaseSkuSettingsBundleGeneral1Free1 = LimitedPurchaseSkuSettings<"LPSKU_bundle.general1.free.1">;

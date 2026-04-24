@@ -7,9 +7,11 @@ export interface LanguageSettingsData<TemplateID extends string> {
 	templateId: TemplateID;
 	languageSettings: {
 		isEnabled: true;
-		language: "Hindi" | "Indonesian" | "spanishlatinamerican";
+		language: LanguageSettingsLanguage;
 	};
 }
+
+export type LanguageSettingsLanguage = "Hindi" | "Indonesian" | "spanishlatinamerican";
 
 export type LanguageSettingsHindi = LanguageSettings<"Hindi">;
 export type LanguageSettingsIndonesian = LanguageSettings<"Indonesian">;

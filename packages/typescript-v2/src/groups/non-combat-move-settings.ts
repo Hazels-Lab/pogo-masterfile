@@ -8,39 +8,20 @@ export interface NonCombatMoveSettingsData<TemplateID extends string> {
 	nonCombatMoveSettings: {
 		bonusEffect: {
 			attackDefenseBonus?: {
-				attributes: [
-					{
-						attackMultiplier?: 1.1;
-						combatTypes: [
-							"COMBAT_TYPE_RAID"
-						];
-						defenseMultiplier?: 1.1;
-					},
-					{
-						attackMultiplier?: 1.05;
-						combatTypes: [
-							"COMBAT_TYPE_DMAX",
-							"COMBAT_TYPE_GMAX"
-						];
-						defenseMultiplier?: 1.05;
-					}
-				];
+				attributes: NonCombatMoveSettingsBonusEffectAttackDefenseBonusAttributes;
 			};
 			dayNightBonus?: {
-				incenseItem: "ITEM_INCENSE_DAY_BONUS" | "ITEM_INCENSE_NIGHT_BONUS";
+				incenseItem: NonCombatMoveSettingsBonusEffectDayNightBonusIncenseItem;
 			};
 			maxMoveBonus?: {
-				excludedPokedexIds: [
-					"ZACIAN",
-					"ZAMAZENTA"
-				];
+				excludedPokedexIds: NonCombatMoveSettingsBonusEffectMaxMoveBonusExcludedPokedexIds;
 				numAllMaxMoveLevelIncrease: 1;
 			};
 			slowFreezeBonus?: {
-				catchCircleOuterTimeScaleOverride: 0.5 | 4;
-				catchCircleSpeedChangeThreshold: 1 | 1.6;
-				catchCircleTimeScaleOverride: 0.2 | 0.5;
-				catchRateIncreaseMultiplier: 1.25 | 1.5;
+				catchCircleOuterTimeScaleOverride: NonCombatMoveSettingsBonusEffectSlowFreezeBonusCatchCircleOuterTimeScaleOverride;
+				catchCircleSpeedChangeThreshold: NonCombatMoveSettingsBonusEffectSlowFreezeBonusCatchCircleSpeedChangeThreshold;
+				catchCircleTimeScaleOverride: NonCombatMoveSettingsBonusEffectSlowFreezeBonusCatchCircleTimeScaleOverride;
+				catchRateIncreaseMultiplier: NonCombatMoveSettingsBonusEffectSlowFreezeBonusCatchRateIncreaseMultiplier;
 			};
 			spaceBonus?: {
 				encounterRangeMeters: 80;
@@ -48,26 +29,71 @@ export interface NonCombatMoveSettingsData<TemplateID extends string> {
 				serverAllowableEncounterRangeMeters: 350;
 			};
 			timeBonus?: {
-				affectedItems: [
-					"ITEM_INCENSE_ORDINARY",
-					"ITEM_INCENSE_DAILY_ADVENTURE",
-					"ITEM_STAR_PIECE",
-					"ITEM_LUCKY_EGG"
-				];
+				affectedItems: NonCombatMoveSettingsBonusEffectTimeBonusAffectedItems;
 			};
 		};
-		bonusType: "ATTACK_BONUS" | "DAY_BONUS" | "DEFENSE_BONUS" | "FREEZE_BONUS" | "MAX_MOVE_BONUS" | "NIGHT_BONUS" | "SLOW_BONUS" | "SPACE_BONUS" | "TIME_BONUS";
+		bonusType: NonCombatMoveSettingsBonusType;
 		cost: {
-			candyCost: 3 | 5 | 30;
-			stardustCost: 3000 | 5000;
+			candyCost: NonCombatMoveSettingsCostCandyCost;
+			stardustCost: NonCombatMoveSettingsCostStardustCost;
 		};
-		durationMs: "360000" | "600000";
+		durationMs: NonCombatMoveSettingsDurationMs;
 		enableMultiUse: true;
 		enableNonCombatMove: true;
 		extraDurationMs: "4000";
-		uniqueId: "BEHEMOTH_BASH" | "BEHEMOTH_BLADE" | "DYNAMAX_CANNON" | "FREEZE_SHOCK" | "ICE_BURN" | "MOONGEIST_BEAM" | "ROAR_OF_TIME" | "SPACIAL_REND" | "SUNSTEEL_STRIKE";
+		uniqueId: NonCombatMoveSettingsUniqueID;
 	};
 }
+
+export type NonCombatMoveSettingsBonusEffectAttackDefenseBonusAttributes = [
+	{
+		attackMultiplier?: 1.1;
+		combatTypes: [
+			"COMBAT_TYPE_RAID"
+		];
+		defenseMultiplier?: 1.1;
+	},
+	{
+		attackMultiplier?: 1.05;
+		combatTypes: [
+			"COMBAT_TYPE_DMAX",
+			"COMBAT_TYPE_GMAX"
+		];
+		defenseMultiplier?: 1.05;
+	}
+];
+
+export type NonCombatMoveSettingsBonusEffectDayNightBonusIncenseItem = "ITEM_INCENSE_DAY_BONUS" | "ITEM_INCENSE_NIGHT_BONUS";
+
+export type NonCombatMoveSettingsBonusEffectMaxMoveBonusExcludedPokedexIds = [
+	"ZACIAN",
+	"ZAMAZENTA"
+];
+
+export type NonCombatMoveSettingsBonusEffectSlowFreezeBonusCatchCircleOuterTimeScaleOverride = 0.5 | 4;
+
+export type NonCombatMoveSettingsBonusEffectSlowFreezeBonusCatchCircleSpeedChangeThreshold = 1 | 1.6;
+
+export type NonCombatMoveSettingsBonusEffectSlowFreezeBonusCatchCircleTimeScaleOverride = 0.2 | 0.5;
+
+export type NonCombatMoveSettingsBonusEffectSlowFreezeBonusCatchRateIncreaseMultiplier = 1.25 | 1.5;
+
+export type NonCombatMoveSettingsBonusEffectTimeBonusAffectedItems = [
+	"ITEM_INCENSE_ORDINARY",
+	"ITEM_INCENSE_DAILY_ADVENTURE",
+	"ITEM_STAR_PIECE",
+	"ITEM_LUCKY_EGG"
+];
+
+export type NonCombatMoveSettingsBonusType = "ATTACK_BONUS" | "DAY_BONUS" | "DEFENSE_BONUS" | "FREEZE_BONUS" | "MAX_MOVE_BONUS" | "NIGHT_BONUS" | "SLOW_BONUS" | "SPACE_BONUS" | "TIME_BONUS";
+
+export type NonCombatMoveSettingsCostCandyCost = 3 | 5 | 30;
+
+export type NonCombatMoveSettingsCostStardustCost = 3000 | 5000;
+
+export type NonCombatMoveSettingsDurationMs = "360000" | "600000";
+
+export type NonCombatMoveSettingsUniqueID = "BEHEMOTH_BASH" | "BEHEMOTH_BLADE" | "DYNAMAX_CANNON" | "FREEZE_SHOCK" | "ICE_BURN" | "MOONGEIST_BEAM" | "ROAR_OF_TIME" | "SPACIAL_REND" | "SUNSTEEL_STRIKE";
 
 export type NonCombatMoveSettingsV0388MoveSpacialRend = NonCombatMoveSettings<"NON_COMBAT_V0388_MOVE_SPACIAL_REND">;
 export type NonCombatMoveSettingsV0394MoveRoarOfTime = NonCombatMoveSettings<"NON_COMBAT_V0394_MOVE_ROAR_OF_TIME">;
