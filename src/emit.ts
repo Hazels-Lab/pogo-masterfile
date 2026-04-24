@@ -13,7 +13,7 @@ interface PlannedAlias {
 	pathKey: string;
 	name: string;
 	type: InferredType;
-	wrapsArrayElement: boolean;
+	arrayWrapperCount: number;
 }
 
 interface AliasPlan {
@@ -136,7 +136,9 @@ export function emitMiscFile(singletons: Group[]): string {
 function renderType(type: InferredType, context: RenderContext): string[] {
 	const plannedAlias = context.aliases.byPath.get(aliasPathKey(context.path));
 	if (plannedAlias) {
-		if (plannedAlias.wrapsArrayElement) return [`Array<${plannedAlias.name}>`];
+		if (plannedAlias.arrayWrapperCount > 0) {
+			return [wrapArrayType(plannedAlias.name, plannedAlias.arrayWrapperCount)];
+		}
 		return [plannedAlias.name];
 	}
 
@@ -299,7 +301,7 @@ function planTypeAliases(
 	reservedNames: ReadonlySet<string>,
 ): AliasPlan {
 	const candidates: Array<Omit<PlannedAlias, "name">> = [];
-	collectAliasCandidates(payloadType, [], candidates);
+	collectAliasCandidates(payloadType, [], candidates, 0);
 	const sorted = candidates.sort((a, b) => a.pathKey.localeCompare(b.pathKey));
 	const usedNames = new Set(reservedNames);
 	const aliases = sorted.map((candidate) => {
@@ -321,13 +323,14 @@ function collectAliasCandidates(
 	type: InferredType,
 	path: string[],
 	candidates: Array<Omit<PlannedAlias, "name">>,
+	arrayWrapperCount: number,
 ): void {
 	if (path.length > 0 && isAliasWorthyType(type)) {
 		candidates.push({
 			path,
 			pathKey: aliasPathKey(path),
 			type,
-			wrapsArrayElement: false,
+			arrayWrapperCount,
 		});
 		return;
 	}
@@ -338,22 +341,19 @@ function collectAliasCandidates(
 				property.type,
 				[...path, property.name],
 				candidates,
+				0,
 			);
 		}
 		return;
 	}
 
 	if (type.kind === "array") {
-		if (path.length > 0 && isAliasWorthyType(type.element)) {
-			candidates.push({
-				path,
-				pathKey: aliasPathKey(path),
-				type: type.element,
-				wrapsArrayElement: true,
-			});
-			return;
-		}
-		collectAliasCandidates(type.element, path, candidates);
+		collectAliasCandidates(
+			type.element,
+			path,
+			candidates,
+			arrayWrapperCount + 1,
+		);
 	}
 }
 
@@ -401,6 +401,14 @@ function aliasNameSegment(segment: string): string {
 			})
 			.join("") || "Root"
 	);
+}
+
+function wrapArrayType(typeName: string, wrapperCount: number): string {
+	let rendered = typeName;
+	for (let i = 0; i < wrapperCount; i += 1) {
+		rendered = `Array<${rendered}>`;
+	}
+	return rendered;
 }
 
 function renderAliasDefinitions(plan: AliasPlan): string[] {

@@ -208,6 +208,38 @@ describe("emitGroupFile", () => {
 			`export type DotSettingsAB2 = "inner-one" | "inner-two";`,
 		);
 	});
+
+	test("preserves nested variable array layers when aliasing innermost literals", () => {
+		const group: Group = {
+			discriminator: "matrixSettings",
+			entries: [
+				{
+					templateId: "MATRIX_ONE",
+					data: {
+						templateId: "MATRIX_ONE",
+						matrixSettings: {
+							matrix: [["A"], ["B", "A"]],
+						},
+					},
+				},
+				{
+					templateId: "MATRIX_TWO",
+					data: {
+						templateId: "MATRIX_TWO",
+						matrixSettings: {
+							matrix: [["B"]],
+						},
+					},
+				},
+			],
+		};
+
+		const output = emitGroupFile(group);
+
+		expect(output).toContain("matrix: Array<Array<MatrixSettingsMatrix>>;");
+		expect(output).toContain(`export type MatrixSettingsMatrix = "A" | "B";`);
+		expect(output).not.toContain("matrix: Array<MatrixSettingsMatrix>;");
+	});
 });
 
 describe("emitMiscFile", () => {
