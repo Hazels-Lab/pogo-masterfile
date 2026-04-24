@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { groupName, sharedPrefix } from "./naming.ts";
+import { groupName, sharedPrefix, aliasSuffix } from "./naming.ts";
 
 describe("groupName", () => {
 	test("PascalCases a camelCase discriminator", () => {
@@ -36,5 +36,32 @@ describe("sharedPrefix", () => {
 		expect(
 			sharedPrefix(["POKEMON_BULBASAUR", "POKEMON_BULBASAUR_SHINY"]),
 		).toBe("POKEMON_");
+	});
+});
+
+describe("aliasSuffix", () => {
+	test("strips prefix and PascalCases the remainder", () => {
+		expect(aliasSuffix("POKEMON_TYPE_BUG", "POKEMON_TYPE_")).toBe("Bug");
+		expect(aliasSuffix("POKEMON_TYPE_DRAGON", "POKEMON_TYPE_")).toBe("Dragon");
+	});
+
+	test("PascalCases mixed-case templateIds", () => {
+		expect(aliasSuffix("AVATAR_f_backpack_one", "AVATAR_")).toBe(
+			"FBackpackOne",
+		);
+	});
+
+	test("returns Root when suffix would be empty", () => {
+		expect(aliasSuffix("PREFIX_", "PREFIX_")).toBe("Root");
+	});
+
+	test("falls back to whole id when no prefix stripped", () => {
+		expect(aliasSuffix("V0001_POKEMON_BULBASAUR", "")).toBe(
+			"V0001PokemonBulbasaur",
+		);
+	});
+
+	test("handles all-lowercase tails", () => {
+		expect(aliasSuffix("x_foo_bar_baz", "x_")).toBe("FooBarBaz");
 	});
 });
