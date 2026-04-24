@@ -103,6 +103,111 @@ describe("emitGroupFile", () => {
 		expect(output).toContain("shadowBoost?: null;");
 		expect(output).not.toContain(": unknown;");
 	});
+
+	test("renders tuple aliases without out-of-scope TemplateID references", () => {
+		const group: Group = {
+			discriminator: "tupleMirror",
+			entries: [
+				{
+					templateId: "TUPLE_ONE",
+					data: {
+						templateId: "TUPLE_ONE",
+						tupleMirror: { ids: ["TUPLE_ONE"] },
+					},
+				},
+				{
+					templateId: "TUPLE_TWO",
+					data: {
+						templateId: "TUPLE_TWO",
+						tupleMirror: { ids: ["TUPLE_TWO"] },
+					},
+				},
+			],
+		};
+
+		const output = emitGroupFile(group);
+		const aliasStart = output.indexOf("export type TupleMirrorIds = [");
+		const aliasEnd = output.indexOf("];", aliasStart);
+		const aliasBlock = output.slice(aliasStart, aliasEnd + 2);
+
+		expect(output).toContain("ids: TupleMirrorIds;");
+		expect(aliasBlock).toContain(`"TUPLE_ONE" | "TUPLE_TWO"`);
+		expect(aliasBlock).not.toContain("TemplateID");
+	});
+
+	test("suffixes planned aliases that collide with exported module names", () => {
+		const group: Group = {
+			discriminator: "nameCollision",
+			entries: [
+				{
+					templateId: "BUG",
+					data: {
+						templateId: "BUG",
+						nameCollision: { bug: "one", data: "first" },
+					},
+				},
+				{
+					templateId: "DARK",
+					data: {
+						templateId: "DARK",
+						nameCollision: { bug: "two", data: "second" },
+					},
+				},
+			],
+		};
+
+		const output = emitGroupFile(group);
+
+		expect(output).toContain(`bug: NameCollisionBug2;`);
+		expect(output).toContain(`data: NameCollisionData2;`);
+		expect(output).toContain(
+			`export type NameCollisionBug = NameCollision<"BUG">;`,
+		);
+		expect(output).toContain(`export type NameCollisionBug2 = "one" | "two";`);
+		expect(output).toContain(
+			`export type NameCollisionData2 = "first" | "second";`,
+		);
+		expect(output).not.toContain(`export type NameCollisionData = "first"`);
+	});
+
+	test("keeps dotted JSON keys distinct from nested property paths", () => {
+		const group: Group = {
+			discriminator: "dotSettings",
+			entries: [
+				{
+					templateId: "DOT_ONE",
+					data: {
+						templateId: "DOT_ONE",
+						dotSettings: {
+							a: { b: "inner-one" },
+							"a.b": "direct-one",
+						},
+					},
+				},
+				{
+					templateId: "DOT_TWO",
+					data: {
+						templateId: "DOT_TWO",
+						dotSettings: {
+							a: { b: "inner-two" },
+							"a.b": "direct-two",
+						},
+					},
+				},
+			],
+		};
+
+		const output = emitGroupFile(group);
+
+		expect(output).toContain("b: DotSettingsAB2;");
+		expect(output).toContain(`"a.b": DotSettingsAB;`);
+		expect(output).toContain(
+			`export type DotSettingsAB = "direct-one" | "direct-two";`,
+		);
+		expect(output).toContain(
+			`export type DotSettingsAB2 = "inner-one" | "inner-two";`,
+		);
+	});
 });
 
 describe("emitMiscFile", () => {

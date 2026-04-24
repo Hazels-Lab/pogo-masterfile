@@ -37,7 +37,11 @@ export function emitGroupFile(group: Group): string {
 	const sortedIds = [...group.entries].map((e) => e.templateId).sort();
 	const aliases = deriveGroupAliases(sortedIds);
 	const payloadType = inferGroupPayloadType(group);
-	const aliasPlan = planTypeAliases(gName, payloadType);
+	const aliasPlan = planTypeAliases(
+		gName,
+		payloadType,
+		moduleReservedNames(gName, sortedIds, aliases),
+	);
 
 	const lines: string[] = [];
 	lines.push(`export interface ${gName}<${TEMPLATE_GENERIC} extends string> {`);
@@ -292,18 +296,19 @@ function renderUnionType(
 function planTypeAliases(
 	groupDisplayName: string,
 	payloadType: InferredType,
+	reservedNames: ReadonlySet<string>,
 ): AliasPlan {
 	const candidates: Array<Omit<PlannedAlias, "name">> = [];
 	collectAliasCandidates(payloadType, [], candidates);
 	const sorted = candidates.sort((a, b) => a.pathKey.localeCompare(b.pathKey));
-	const nameCounts = new Map<string, number>();
+	const usedNames = new Set(reservedNames);
 	const aliases = sorted.map((candidate) => {
 		const baseName = aliasNameForPath(groupDisplayName, candidate.path);
-		const count = nameCounts.get(baseName) ?? 0;
-		nameCounts.set(baseName, count + 1);
+		const name = availableAliasName(baseName, usedNames);
+		usedNames.add(name);
 		return {
 			...candidate,
-			name: count === 0 ? baseName : `${baseName}${count + 1}`,
+			name,
 		};
 	});
 	return {
@@ -371,7 +376,7 @@ function isAliasWorthyType(type: InferredType): boolean {
 }
 
 function aliasPathKey(path: readonly string[]): string {
-	return path.join(".");
+	return JSON.stringify(path);
 }
 
 function aliasNameForPath(
@@ -427,6 +432,38 @@ function renderAliasDefinitions(plan: AliasPlan): string[] {
 		lines.push(``);
 	}
 	return lines;
+}
+
+function moduleReservedNames(
+	groupDisplayName: string,
+	sortedTemplateIds: readonly string[],
+	entryAliases: ReadonlyMap<string, string>,
+): Set<string> {
+	const names = new Set([
+		groupDisplayName,
+		`${groupDisplayName}Data`,
+		`${groupDisplayName}MasterfileEntry`,
+		`${groupDisplayName}TemplateID`,
+	]);
+
+	for (const id of sortedTemplateIds) {
+		names.add(`${groupDisplayName}${entryAliases.get(id)!}`);
+	}
+
+	return names;
+}
+
+function availableAliasName(
+	baseName: string,
+	usedNames: ReadonlySet<string>,
+): string {
+	if (!usedNames.has(baseName)) return baseName;
+
+	let suffix = 2;
+	while (usedNames.has(`${baseName}${suffix}`)) {
+		suffix += 1;
+	}
+	return `${baseName}${suffix}`;
 }
 
 function inferGroupPayloadType(group: Group): InferredType {
@@ -485,7 +522,7 @@ function inferTemplateAwareArrays(
 						templateId,
 						value: value[index],
 					})),
-					path,
+					path.length > 0 ? [...path, String(index)] : path,
 				),
 			),
 		};
