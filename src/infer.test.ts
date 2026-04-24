@@ -46,16 +46,14 @@ describe("inferJsonTypes", () => {
 
 		expect(inferred.items).toHaveLength(18);
 		for (const item of inferred.items) {
-			if (item.kind !== "number") throw new Error("Expected numeric tuple item");
+			if (item.kind !== "number")
+				throw new Error("Expected numeric tuple item");
 			expect(item.numericKind).toBe("float");
 		}
 	});
 
 	test("infers mixed-length arrays as variable arrays", () => {
-		const inferred = inferJsonTypes([
-			["a"],
-			["a", "b"],
-		]);
+		const inferred = inferJsonTypes([["a"], ["a", "b"]]);
 		if (inferred.kind !== "array") throw new Error("Expected array type");
 
 		expect(inferred.element.kind).toBe("string");
@@ -95,7 +93,11 @@ describe("inferJsonTypes", () => {
 
 describe("InferenceBuilder", () => {
 	test("incrementally collects values before building the inferred type", () => {
-		const inferred = new InferenceBuilder().add(false).add(true).add(true).build();
+		const inferred = new InferenceBuilder()
+			.add(false)
+			.add(true)
+			.add(true)
+			.build();
 		if (inferred.kind !== "boolean") throw new Error("Expected boolean type");
 
 		expect(inferred.literals).toEqual([false, true]);

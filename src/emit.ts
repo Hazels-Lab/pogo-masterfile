@@ -65,7 +65,9 @@ export function emitMiscFile(singletons: Group[]): string {
 		lines.push(`\t\ttemplateId: "${entry.templateId}";`);
 		if (!isStub) {
 			const payloadType = inferJsonType(entry.data[group.discriminator]);
-			lines.push(...renderProperty(group.discriminator, payloadType, false, "\t\t"));
+			lines.push(
+				...renderProperty(group.discriminator, payloadType, false, "\t\t"),
+			);
 		}
 		lines.push(`\t};`);
 		lines.push(`}`);
@@ -151,7 +153,10 @@ function renderInlineType(type: InferredType): string | undefined {
 		case "number":
 			return type.literals.map(String).join(" | ") || "number";
 		case "string":
-			return type.literals.map((value) => JSON.stringify(value)).join(" | ") || "string";
+			return (
+				type.literals.map((value) => JSON.stringify(value)).join(" | ") ||
+				"string"
+			);
 		case "object":
 			return type.properties.length === 0 ? "Record<string, never>" : undefined;
 		case "tuple":
@@ -175,7 +180,9 @@ function renderObjectType(properties: InferredProperty[]): string[] {
 
 	const lines = ["{"];
 	for (const property of properties) {
-		lines.push(...renderProperty(property.name, property.type, property.optional, "\t"));
+		lines.push(
+			...renderProperty(property.name, property.type, property.optional, "\t"),
+		);
 	}
 	lines.push("}");
 	return lines;
