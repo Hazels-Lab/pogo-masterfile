@@ -15,6 +15,15 @@ export const MOCK_MASTERFILE = [
 					1, 1.6, 1, 0.625, 1, 1, 1, 1, 1, 1, 1.6, 1, 0.625, 1, 1, 1, 1, 1,
 				],
 				attackType: "POKEMON_TYPE_BUG",
+				effectGroup: {
+					accuracyChance: 1,
+					nested: {
+						combatType: "POKEMON_TYPE_BUG",
+					},
+					tags: ["fast"],
+					typeCode: "BUG",
+					windows: [0, 250],
+				},
 			},
 		},
 	},
@@ -27,6 +36,15 @@ export const MOCK_MASTERFILE = [
 					1, 1, 1, 1, 1, 1.6, 1, 1, 1, 0.625, 1, 1, 1.6, 1, 1, 0.625, 1, 1,
 				],
 				attackType: "POKEMON_TYPE_DARK",
+				effectGroup: {
+					accuracyChance: 1,
+					nested: {
+						combatType: "POKEMON_TYPE_DARK",
+					},
+					tags: ["fast", "charged"],
+					typeCode: "DARK",
+					windows: [0, 300],
+				},
 			},
 		},
 	},

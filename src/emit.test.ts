@@ -16,17 +16,40 @@ describe("emitGroupFile", () => {
 		const output = emitGroupFile(group);
 
 		expect(output).toContain(
-			"export interface TypeEffective<T extends string> {",
+			"export interface TypeEffective<TemplateID extends string> {",
 		);
-		expect(output).toContain("data: TypeEffectiveData<T>;");
+		expect(output).toContain("data: TypeEffectiveData<TemplateID>;");
 		expect(output).toContain(
-			"export interface TypeEffectiveData<T extends string> {",
+			"export interface TypeEffectiveData<TemplateID extends string> {",
 		);
 		expect(output).toContain("typeEffective: {");
-		expect(output).toContain("attackScalar: [");
-		expect(output).toContain("attackType: T;");
+		expect(output).toContain("attackScalar: TypeEffectiveAttackScalar;");
+		expect(output).toContain("export type TypeEffectiveAttackScalar = [");
+		expect(output).toContain("attackType: TemplateID;");
 		expect(output).not.toContain(
 			`attackType: "POKEMON_TYPE_BUG" | "POKEMON_TYPE_DARK";`,
+		);
+		expect(output).toContain("effectGroup: {");
+		expect(output).toContain("typeCode: TypeEffectiveEffectGroupTypeCode;");
+		expect(output).toContain("windows: TypeEffectiveEffectGroupWindows;");
+		expect(output).toContain(
+			"combatType: TypeEffectiveEffectGroupNestedCombatType;",
+		);
+		expect(output).toContain("tags: Array<TypeEffectiveEffectGroupTags>;");
+		expect(output).toContain(
+			`export type TypeEffectiveEffectGroupTypeCode = "BUG" | "DARK";`,
+		);
+		expect(output).toContain("export type TypeEffectiveEffectGroupWindows = [");
+		expect(output).toContain(
+			`export type TypeEffectiveEffectGroupNestedCombatType = "POKEMON_TYPE_BUG" | "POKEMON_TYPE_DARK";`,
+		);
+		expect(output).toContain(
+			`export type TypeEffectiveEffectGroupTags = "charged" | "fast";`,
+		);
+		expect(output).toContain("accuracyChance: 1;");
+		expect(output).not.toContain(`typeCode: "BUG" | "DARK";`);
+		expect(output).not.toContain(
+			`combatType: "POKEMON_TYPE_BUG" | "POKEMON_TYPE_DARK";`,
 		);
 		expect(output).not.toContain("typeEffective: unknown;");
 		expect(output).toContain(
@@ -71,7 +94,11 @@ describe("emitGroupFile", () => {
 
 		const output = emitGroupFile(group);
 
-		expect(output).toContain(`forms: Array<"NORMAL" | "SHADOW">;`);
+		expect(output).toContain("forms: Array<PokemonSettingsForms>;");
+		expect(output).toContain(
+			`export type PokemonSettingsForms = "NORMAL" | "SHADOW";`,
+		);
+		expect(output).not.toContain(`forms: Array<"NORMAL" | "SHADOW">;`);
 		expect(output).toContain(`familyId: "FAMILY_BULBASAUR";`);
 		expect(output).toContain("shadowBoost?: null;");
 		expect(output).not.toContain(": unknown;");
