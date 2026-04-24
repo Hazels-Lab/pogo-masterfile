@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
 import type { Group } from "./group.ts";
-import { emitGroupFile } from "./emit.ts";
+import { emitGroupFile, emitMiscFile } from "./emit.ts";
 
 describe("emitGroupFile", () => {
 	test("emits generic interface + per-entry aliases + union + TemplateID for a multi-entry group", () => {
@@ -65,5 +65,44 @@ describe("emitGroupFile", () => {
 		expect(bugIdx).toBeGreaterThan(-1);
 		expect(waterIdx).toBeGreaterThan(-1);
 		expect(bugIdx).toBeLessThan(waterIdx);
+	});
+});
+
+describe("emitMiscFile", () => {
+	test("emits a concrete interface (not generic) per singleton group, sorted by interface name", () => {
+		const singletons: Group[] = [
+			{
+				discriminator: "xyzSettings",
+				entries: [
+					{
+						templateId: "XYZ_SETTINGS",
+						data: { templateId: "XYZ_SETTINGS", xyzSettings: {} },
+					},
+				],
+			},
+			{
+				discriminator: "accessibilitySettings",
+				entries: [
+					{
+						templateId: "ACCESSIBILITY_CLIENT_SETTINGS",
+						data: {
+							templateId: "ACCESSIBILITY_CLIENT_SETTINGS",
+							accessibilitySettings: {},
+						},
+					},
+				],
+			},
+		];
+
+		const output = emitMiscFile(singletons);
+		expect(output).toContain("export interface AccessibilitySettings {");
+		expect(output).toContain('templateId: "ACCESSIBILITY_CLIENT_SETTINGS";');
+		expect(output).toContain("accessibilitySettings: unknown;");
+		expect(output).toContain("export interface XyzSettings {");
+
+		// Alphabetical order:
+		const aIdx = output.indexOf("AccessibilitySettings");
+		const xIdx = output.indexOf("XyzSettings");
+		expect(aIdx).toBeLessThan(xIdx);
 	});
 });

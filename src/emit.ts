@@ -40,3 +40,24 @@ export function emitGroupFile(group: Group): string {
 
 	return lines.join("\n");
 }
+
+export function emitMiscFile(singletons: Group[]): string {
+	const sorted = [...singletons].sort((a, b) =>
+		groupName(a.discriminator).localeCompare(groupName(b.discriminator)),
+	);
+
+	const lines: string[] = [];
+	for (const g of sorted) {
+		const entry = g.entries[0]!;
+		const name = groupName(g.discriminator);
+		lines.push(`export interface ${name} {`);
+		lines.push(`\ttemplateId: "${entry.templateId}";`);
+		lines.push(`\tdata: {`);
+		lines.push(`\t\ttemplateId: "${entry.templateId}";`);
+		lines.push(`\t\t${g.discriminator}: unknown;`);
+		lines.push(`\t};`);
+		lines.push(`}`);
+		lines.push(``);
+	}
+	return lines.join("\n");
+}
