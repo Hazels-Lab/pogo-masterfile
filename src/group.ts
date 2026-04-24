@@ -1,12 +1,12 @@
-export type Entry = {
+export interface Entry {
 	templateId: string;
 	data: Record<string, unknown>;
-};
+}
 
-export type Group = {
+export interface Group {
 	discriminator: string;
 	entries: Entry[];
-};
+}
 
 export function groupEntries(entries: Entry[]): Map<string, Group> {
 	const groups = new Map<string, Group>();
