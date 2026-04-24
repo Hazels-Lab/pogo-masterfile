@@ -1,5 +1,6 @@
 import { describe, expect, test } from "bun:test";
 import { MOCK_MASTERFILE } from "./fixtures.ts";
+import type { Entry } from "./group.ts";
 import { groupEntries } from "./group.ts";
 
 describe("groupEntries", () => {
@@ -12,22 +13,24 @@ describe("groupEntries", () => {
 		expect(groups.get("accessibilitySettings")?.entries.length).toBe(1);
 	});
 
-	test("throws when an entry has zero non-templateId data keys", () => {
-		expect(() =>
-			groupEntries([
-				{ templateId: "BROKEN", data: { templateId: "BROKEN" } },
-			]),
-		).toThrow(/BROKEN/);
+	test("routes 0-key stub entries to their own bucket keyed by templateId", () => {
+		const entries: Entry[] = [
+			{
+				templateId: "ITEM_CURRENCY_VALUES",
+				data: { templateId: "ITEM_CURRENCY_VALUES" },
+			},
+		];
+		const groups = groupEntries(entries);
+		expect(groups.size).toBe(1);
+		const g = groups.get("ITEM_CURRENCY_VALUES")!;
+		expect(g.discriminator).toBe("ITEM_CURRENCY_VALUES");
+		expect(g.entries).toHaveLength(1);
 	});
 
-	test("throws when an entry has two or more non-templateId data keys", () => {
-		expect(() =>
-			groupEntries([
-				{
-					templateId: "BROKEN_TWO",
-					data: { templateId: "BROKEN_TWO", a: {}, b: {} },
-				},
-			]),
-		).toThrow(/BROKEN_TWO/);
+	test("throws when entry has more than 1 non-templateId data key", () => {
+		const entries: Entry[] = [
+			{ templateId: "X", data: { templateId: "X", foo: {}, bar: {} } },
+		];
+		expect(() => groupEntries(entries)).toThrow(/2 non-templateId/);
 	});
 });

@@ -110,6 +110,54 @@ describe("emitMiscFile", () => {
 		const xIdx = output.indexOf("XyzSettings");
 		expect(aIdx).toBeLessThan(xIdx);
 	});
+
+	test("emits stub interfaces without the discriminator field when data has only templateId", () => {
+		const stubs: Group[] = [
+			{
+				discriminator: "ITEM_CURRENCY_VALUES",
+				entries: [
+					{
+						templateId: "ITEM_CURRENCY_VALUES",
+						data: { templateId: "ITEM_CURRENCY_VALUES" },
+					},
+				],
+			},
+		];
+
+		const output = emitMiscFile(stubs);
+		expect(output).toContain("export interface ItemCurrencyValues {");
+		expect(output).toContain('templateId: "ITEM_CURRENCY_VALUES";');
+		expect(output).not.toContain(": unknown;");
+	});
+
+	test("sorts stubs and regular singletons together by interface name", () => {
+		const mixed: Group[] = [
+			{
+				discriminator: "xyzSettings",
+				entries: [
+					{
+						templateId: "XYZ_SETTINGS",
+						data: { templateId: "XYZ_SETTINGS", xyzSettings: {} },
+					},
+				],
+			},
+			{
+				discriminator: "ITEM_CURRENCY_VALUES",
+				entries: [
+					{
+						templateId: "ITEM_CURRENCY_VALUES",
+						data: { templateId: "ITEM_CURRENCY_VALUES" },
+					},
+				],
+			},
+		];
+
+		const output = emitMiscFile(mixed);
+		// ItemCurrencyValues (stub, 'I') sorts before XyzSettings (regular, 'X')
+		const itemIdx = output.indexOf("ItemCurrencyValues");
+		const xyzIdx = output.indexOf("XyzSettings");
+		expect(itemIdx).toBeLessThan(xyzIdx);
+	});
 });
 
 describe("kebabCase", () => {

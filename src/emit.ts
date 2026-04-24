@@ -1,5 +1,5 @@
 import type { Group } from "./group.ts";
-import { deriveGroupAliases, groupName } from "./naming.ts";
+import { aliasSuffix, deriveGroupAliases, groupName } from "./naming.ts";
 
 export function emitGroupFile(group: Group): string {
 	const gName = groupName(group.discriminator);
@@ -42,19 +42,27 @@ export function emitGroupFile(group: Group): string {
 }
 
 export function emitMiscFile(singletons: Group[]): string {
-	const sorted = [...singletons].sort((a, b) =>
-		groupName(a.discriminator).localeCompare(groupName(b.discriminator)),
-	);
+	// Precompute names + stub flag so the sort comparator is cheap.
+	const named = singletons.map((g) => {
+		const entry = g.entries[0]!;
+		const dataKeys = Object.keys(entry.data).filter((k) => k !== "templateId");
+		const isStub = dataKeys.length === 0;
+		const name = isStub
+			? aliasSuffix(entry.templateId, "")
+			: groupName(g.discriminator);
+		return { group: g, entry, name, isStub };
+	});
+	named.sort((a, b) => a.name.localeCompare(b.name));
 
 	const lines: string[] = [];
-	for (const g of sorted) {
-		const entry = g.entries[0]!;
-		const name = groupName(g.discriminator);
+	for (const { group, entry, name, isStub } of named) {
 		lines.push(`export interface ${name} {`);
 		lines.push(`\ttemplateId: "${entry.templateId}";`);
 		lines.push(`\tdata: {`);
 		lines.push(`\t\ttemplateId: "${entry.templateId}";`);
-		lines.push(`\t\t${g.discriminator}: unknown;`);
+		if (!isStub) {
+			lines.push(`\t\t${group.discriminator}: unknown;`);
+		}
 		lines.push(`\t};`);
 		lines.push(`}`);
 		lines.push(``);
