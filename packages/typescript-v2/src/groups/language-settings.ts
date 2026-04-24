@@ -5,7 +5,10 @@ export interface LanguageSettings<T extends string> {
 
 export interface LanguageSettingsData<T extends string> {
 	templateId: T;
-	languageSettings: unknown;
+	languageSettings: {
+		isEnabled: true;
+		language: "Hindi" | "Indonesian" | "spanishlatinamerican";
+	};
 }
 
 export type LanguageSettingsHindi = LanguageSettings<"Hindi">;

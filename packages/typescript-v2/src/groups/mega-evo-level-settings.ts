@@ -5,7 +5,30 @@ export interface MegaEvoLevelSettings<T extends string> {
 
 export interface MegaEvoLevelSettingsData<T extends string> {
 	templateId: T;
-	megaEvoLevelSettings: unknown;
+	megaEvoLevelSettings: {
+		cooldown: {
+			bypassCostInitial: 5 | 10 | 15 | 20 | 30 | 40 | 60 | 80 | 100 | 200 | 300 | 400 | 500;
+			bypassCostRoundingValue: 1;
+			durationMs: "1209600000" | "259200000" | "432000000" | "604800000" | "86400000";
+		};
+		effects: {
+			differentTypeAttackBoost: 1.1;
+			sameTypeAttackBoost: 1.3;
+			sameTypeExtraCatchCandy: 1 | 2 | 3;
+			sameTypeExtraCatchCandyXlChance?: 0.1 | 0.25 | 0.3;
+			sameTypeExtraCatchXp?: 50 | 100 | 200;
+			selfCpBoostAdditionalLevel?: 2;
+		};
+		ftueExpirationTimestamp?: "1775001600000";
+		level?: 1 | 2 | 3 | 4;
+		megaEnergyCostToUnlock?: 5000;
+		pokemonId?: "ALTARIA" | "BANETTE" | "BEEDRILL" | "DIANCIE" | "DRAGONITE" | "GARCHOMP" | "GROUDON" | "GYARADOS" | "HOUNDOOM" | "KYOGRE" | "LATIAS" | "LATIOS" | "MALAMAR" | "MANECTRIC" | "MEDICHAM" | "METAGROSS" | "MEWTWO" | "PIDGEOT" | "RAYQUAZA" | "SABLEYE" | "SALAMENCE" | "SLOWBRO" | "TYRANITAR" | "VICTREEBEL";
+		progression: {
+			pointsLimitPerPeriod: 1;
+			pointsPerMegaEvoAction: 1;
+			pointsRequired?: 1 | 7 | 30;
+		};
+	};
 }
 
 export type MegaEvoLevelSettings0 = MegaEvoLevelSettings<"MEGA_EVOLUTION_LEVEL_0">;

@@ -5,7 +5,15 @@ export interface TemporaryEvolutionSettings<T extends string> {
 
 export interface TemporaryEvolutionSettingsData<T extends string> {
 	templateId: T;
-	temporaryEvolutionSettings: unknown;
+	temporaryEvolutionSettings: {
+		pokemonId: "ABOMASNOW" | "ABSOL" | "AERODACTYL" | "AGGRON" | "ALAKAZAM" | "ALTARIA" | "AMPHAROS" | "AUDINO" | "BANETTE" | "BEEDRILL" | "BLASTOISE" | "BLAZIKEN" | "CAMERUPT" | "CHARIZARD" | "DIANCIE" | "DRAGONITE" | "GALLADE" | "GARCHOMP" | "GARDEVOIR" | "GENGAR" | "GLALIE" | "GROUDON" | "GYARADOS" | "HERACROSS" | "HOUNDOOM" | "KANGASKHAN" | "KYOGRE" | "LATIAS" | "LATIOS" | "LOPUNNY" | "LUCARIO" | "MALAMAR" | "MANECTRIC" | "MAWILE" | "MEDICHAM" | "METAGROSS" | "PIDGEOT" | "PINSIR" | "RAYQUAZA" | "SABLEYE" | "SALAMENCE" | "SCEPTILE" | "SCIZOR" | "SHARPEDO" | "SLOWBRO" | "STEELIX" | "SWAMPERT" | "TYRANITAR" | "VENUSAUR" | "VICTREEBEL";
+		temporaryEvolutions: Array<
+			{
+				assetBundleValue: 51 | 52;
+				temporaryEvolutionId: "TEMP_EVOLUTION_MEGA" | "TEMP_EVOLUTION_MEGA_X" | "TEMP_EVOLUTION_MEGA_Y" | "TEMP_EVOLUTION_PRIMAL";
+			}
+		>;
+	};
 }
 
 export type TemporaryEvolutionSettingsV0003PokemonVenusaur = TemporaryEvolutionSettings<"TEMPORARY_EVOLUTION_V0003_POKEMON_VENUSAUR">;

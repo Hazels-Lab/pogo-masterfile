@@ -5,7 +5,22 @@ export interface CombatRankingProtoSettings<T extends string> {
 
 export interface CombatRankingProtoSettingsData<T extends string> {
 	templateId: T;
-	combatRankingProtoSettings: unknown;
+	combatRankingProtoSettings: {
+		minRankToDisplayRating: 11 | 17 | 20 | 24;
+		minRatingRequired?: 8 | 9 | 10 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29;
+		rankLevel: Array<
+			{
+				additionalTotalBattlesRequired?: 5;
+				additionalWinsRequired?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 12 | 13 | 14 | 15 | 17 | 18 | 19 | 20 | 25;
+				minRatingRequired?: 2000 | 2500 | 2750 | 3000 | 9999;
+				rankLevel: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24;
+			}
+		>;
+		requiredForRewards: {
+			additionalTotalBattlesRequired: 5;
+			rankLevel: 1;
+		};
+	};
 }
 
 export type CombatRankingProtoSettingsSettings = CombatRankingProtoSettings<"COMBAT_RANKING_SETTINGS">;

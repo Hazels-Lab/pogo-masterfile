@@ -5,7 +5,11 @@ export interface PokemonScaleSettings<T extends string> {
 
 export interface PokemonScaleSettingsData<T extends string> {
 	templateId: T;
-	pokemonScaleSettings: unknown;
+	pokemonScaleSettings: {
+		maxHeight: 3.6 | 4.2 | 4.35 | 8 | 10;
+		minHeight: 0.31 | 0.8 | 1.3 | 2.3 | 4;
+		pokemonScaleMode?: "BattlePokemonScale" | "GuiScale" | "GymTopperScale" | "MapPokemonScale" | "RaidBossScale";
+	};
 }
 
 export type PokemonScaleSettingsBattlePokemonScale = PokemonScaleSettings<"POKEMON_SCALE_SETTINGS_BATTLE_POKEMON_SCALE">;

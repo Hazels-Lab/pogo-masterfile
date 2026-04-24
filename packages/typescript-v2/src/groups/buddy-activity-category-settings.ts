@@ -5,7 +5,10 @@ export interface BuddyActivityCategorySettings<T extends string> {
 
 export interface BuddyActivityCategorySettingsData<T extends string> {
 	templateId: T;
-	buddyActivityCategorySettings: unknown;
+	buddyActivityCategorySettings: {
+		activityCategory: "BUDDY_CATEGORY_BATTLE" | "BUDDY_CATEGORY_BONUS" | "BUDDY_CATEGORY_CARE" | "BUDDY_CATEGORY_EXPLORE" | "BUDDY_CATEGORY_FEED" | "BUDDY_CATEGORY_ROUTE" | "BUDDY_CATEGORY_SNAPSHOT" | "BUDDY_CATEGORY_WALK";
+		maxPointsPerDay: 1 | 3 | 6;
+	};
 }
 
 export type BuddyActivityCategorySettingsBattle = BuddyActivityCategorySettings<"BUDDY_CATEGORY_BATTLE">;

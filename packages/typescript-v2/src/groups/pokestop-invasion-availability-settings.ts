@@ -5,7 +5,10 @@ export interface PokestopInvasionAvailabilitySettings<T extends string> {
 
 export interface PokestopInvasionAvailabilitySettingsData<T extends string> {
 	templateId: T;
-	pokestopInvasionAvailabilitySettings: unknown;
+	pokestopInvasionAvailabilitySettings: {
+		availabilityEndMinute: "1320";
+		availabilityStartMinute: "360";
+	};
 }
 
 export type PokestopInvasionAvailabilitySettingsFriday = PokestopInvasionAvailabilitySettings<"INVASION_AVAILABILITY_SETTINGS_FRIDAY">;

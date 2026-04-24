@@ -5,7 +5,16 @@ export interface TappableSettings<T extends string> {
 
 export interface TappableSettingsData<T extends string> {
 	templateId: T;
-	tappableSettings: unknown;
+	tappableSettings: {
+		avgTappablesInView?: 1;
+		buddyFovDegress?: 130;
+		movementRespawnThresholdMeters?: 5;
+		removeWhenTapped?: true;
+		spawnAngleDegrees?: 45;
+		tappableAssetKey?: "TAPPABLE_TYPE_HAT" | "TAPPABLE_TYPE_MAPLE" | "TAPPABLE_TYPE_POKEBALL";
+		"type"?: "TAPPABLE_TYPE_BREAKFAST";
+		visibleRadiusMeters: 150;
+	};
 }
 
 export type TappableSettingsSettings = TappableSettings<"TAPPABLE_SETTINGS">;

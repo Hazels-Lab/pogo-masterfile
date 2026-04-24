@@ -5,7 +5,15 @@ export interface CombatNpcPersonality<T extends string> {
 
 export interface CombatNpcPersonalityData<T extends string> {
 	templateId: T;
-	combatNpcPersonality: unknown;
+	combatNpcPersonality: {
+		defensiveMaximumScore?: 1;
+		defensiveMinimumScore?: 1;
+		offensiveMaximumScore: 0.75 | 1;
+		offensiveMinimumScore: 0.5 | 0.75 | 1;
+		personalityName: "TRAINER_PERSONALITY_EASY" | "TRAINER_PERSONALITY_HARD" | "TRAINER_PERSONALITY_MEDIUM";
+		specialChance: 0.33 | 0.66 | 1;
+		superEffectiveChance: 0.25 | 0.66 | 1;
+	};
 }
 
 export type CombatNpcPersonalityEasy = CombatNpcPersonality<"TRAINER_PERSONALITY_EASY">;

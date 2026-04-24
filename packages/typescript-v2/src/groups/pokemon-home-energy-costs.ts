@@ -5,7 +5,13 @@ export interface PokemonHomeEnergyCosts<T extends string> {
 
 export interface PokemonHomeEnergyCostsData<T extends string> {
 	templateId: T;
-	pokemonHomeEnergyCosts: unknown;
+	pokemonHomeEnergyCosts: {
+		base: 10 | 1000 | 2000;
+		cp1001To2000: 100 | 300 | 500;
+		cp2001ToInf: 300 | 500 | 700;
+		pokemonClass?: "POKEMON_CLASS_LEGENDARY" | "POKEMON_CLASS_MYTHIC" | "POKEMON_CLASS_ULTRA_BEAST";
+		shiny: 1990 | 8000 | 9000;
+	};
 }
 
 export type PokemonHomeEnergyCostsLegendary = PokemonHomeEnergyCosts<"ENERGY_COSTS_POKEMON_CLASS_LEGENDARY">;

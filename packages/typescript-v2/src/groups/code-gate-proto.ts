@@ -5,7 +5,13 @@ export interface CodeGateProto<T extends string> {
 
 export interface CodeGateProtoData<T extends string> {
 	templateId: T;
-	codeGateProto: unknown;
+	codeGateProto: {
+		isEnabled: true;
+		subCodeGateList?: {
+			isEnabled?: true;
+			name: "LEADER_VNEXT_CODE_GATE" | "show_move_effectiveness" | "trade_sub_code_gate" | "UNLIMITED_PLAYER_ACTIVITY_REWARDS_SUB_CODE_GATE";
+		};
+	};
 }
 
 export type CodeGateProtoBattleAccessibilityCodeGate = CodeGateProto<"BATTLE_ACCESSIBILITY_CODE_GATE">;

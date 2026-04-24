@@ -5,7 +5,13 @@ export interface LimitedPurchaseSkuSettings<T extends string> {
 
 export interface LimitedPurchaseSkuSettingsData<T extends string> {
 	templateId: T;
-	limitedPurchaseSkuSettings: unknown;
+	limitedPurchaseSkuSettings: {
+		chronoUnit?: "DAY";
+		lootTableId?: "BUNDLE_GENERAL1_FREE1_1_LOOT_TABLE";
+		purchaseLimit: 1 | 3 | 5;
+		resetInterval?: 1;
+		version?: 1 | 2 | 3 | 9 | 10 | 11 | 12 | 13 | 14 | 16 | 18 | 19 | 22 | 30 | 33 | 41 | 45 | 57 | 64;
+	};
 }
 
 export type LimitedPurchaseSkuSettingsBundleFlairFirsttime1 = LimitedPurchaseSkuSettings<"LPSKU_bundle.flair.firsttime.1">;

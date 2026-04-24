@@ -5,7 +5,9 @@ export interface RollBack<T extends string> {
 
 export interface RollBackData<T extends string> {
 	templateId: T;
-	rollBack: unknown;
+	rollBack: {
+		rollbackPercentage: 100;
+	};
 }
 
 export type RollBackAndroidSensorsRollBack = RollBack<"ANDROID_SENSORS_ROLL_BACK">;

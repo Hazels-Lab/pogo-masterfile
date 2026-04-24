@@ -5,7 +5,71 @@ export interface BreadMoveLevelSettings<T extends string> {
 
 export interface BreadMoveLevelSettingsData<T extends string> {
 	templateId: T;
-	breadMoveLevelSettings: unknown;
+	breadMoveLevelSettings: {
+		aSettings: [
+			{
+				candyCost: 1;
+				mpCost?: 1;
+				stardustCost?: 1;
+			},
+			{
+				candyCost: 100 | 110 | 120 | 130 | 1200;
+				mpCost?: 600;
+				stardustCost?: 50000;
+				xpRewards: 6000;
+			},
+			{
+				candyCost?: 1200;
+				mpCost?: 800;
+				stardustCost?: 100000;
+				xlCandyCost: 40 | 45 | 50 | 55 | 320;
+				xpRewards: 8000;
+			}
+		];
+		bSettings: [
+			{
+				candyCost: 50 | 60 | 70 | 80 | 400;
+				mpCost?: 400;
+				stardustCost?: 25000;
+				xpRewards: 4000;
+			},
+			{
+				candyCost: 100 | 110 | 120 | 130 | 1200;
+				mpCost?: 600;
+				stardustCost?: 50000;
+				xpRewards: 6000;
+			},
+			{
+				candyCost?: 1200;
+				mpCost?: 800;
+				stardustCost?: 100000;
+				xlCandyCost: 40 | 45 | 50 | 55 | 320;
+				xpRewards: 8000;
+			}
+		];
+		cSettings: [
+			{
+				candyCost: 50 | 60 | 70 | 80 | 400;
+				mpCost?: 400;
+				stardustCost?: 25000;
+				xpRewards: 4000;
+			},
+			{
+				candyCost: 100 | 110 | 120 | 130 | 1200;
+				mpCost?: 600;
+				stardustCost?: 50000;
+				xpRewards: 6000;
+			},
+			{
+				candyCost?: 1200;
+				mpCost?: 800;
+				stardustCost?: 100000;
+				xlCandyCost: 40 | 45 | 50 | 55 | 320;
+				xpRewards: 8000;
+			}
+		];
+		group: 7 | 8 | "GROUP_1" | "GROUP_2" | "GROUP_3" | "GROUP_4";
+	};
 }
 
 export type BreadMoveLevelSettings1 = BreadMoveLevelSettings<"BREAD_MOVE_LEVEL_SETTINGS_GROUP_1">;

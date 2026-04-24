@@ -5,7 +5,63 @@ export interface EventPassTierSettings<T extends string> {
 
 export interface EventPassTierSettingsData<T extends string> {
 	templateId: T;
-	eventPassTierSettings: unknown;
+	eventPassTierSettings: {
+		activeBonusDisplaySettings?: {
+			bonusBoxes: Array<
+				{
+					iconType: "GIFT" | "INCENSE" | "LUCKY_EGG" | "STARDUST";
+					text: "dai_duration_double" | "gift_open_more_daily" | "gift_send_more_daily" | "gift_storage_more" | "hatch_stardust_double" | "hatch_xp_double";
+				}
+			>;
+		};
+		bonusSettings?: {
+			bonusBoxes: Array<
+				{
+					iconType: "GIFT" | "INCENSE" | "LUCKY_EGG" | "STARDUST";
+					text: "dai_duration_double" | "gift_open_more_daily" | "gift_send_more_daily" | "gift_storage_more" | "hatch_stardust_double" | "hatch_xp_double";
+				}
+			>;
+			eventName: "season_pass_milestone_bonus_title_01" | "season_pass_milestone_bonus_title_02" | "season_pass_milestone_bonus_title_03";
+		};
+		minPointsRequired?: 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | 1000 | 1100 | 1200 | 1300 | 1400 | 1500 | 1600 | 1700 | 1800 | 1900 | 2000 | 2100 | 2200 | 2300 | 2400 | 2500 | 2600 | 2700 | 2800 | 2900 | 3000 | 3100 | 3200 | 3300 | 3400 | 3500 | 3600 | 3700 | 3800 | 3900 | 4000 | 4100 | 4200 | 4300 | 4400 | 4500 | 4600 | 4700 | 4800 | 4900 | 5000 | 5100 | 5200 | 5300 | 5400 | 5500 | 5600 | 5700 | 5800 | 5900 | 6000 | 6100 | 6200 | 6300 | 6400 | 6500 | 6600 | 6700 | 6800 | 6900 | 7000 | 7100 | 7200 | 7300 | 7400 | 7500 | 7600 | 7700 | 7800 | 7900 | 8000 | 8100 | 8200 | 8300 | 8400 | 8500 | 8600 | 8700 | 8800 | 8900 | 9000 | 9100 | 9200 | 9300 | 9400 | 9500 | 9600 | 9700 | 9800 | 9900 | 10000 | 10100 | 10200 | 10300 | 10400 | 10500 | 10600 | 10700 | 10800 | 10900 | 11000 | 11100 | 11200 | 11300 | 11400 | 11500 | 11600 | 11700 | 11800 | 11900 | 12000 | 12100 | 12200 | 12300 | 12400 | 12500 | 12600 | 12700 | 12800 | 12900 | 13000 | 13100 | 13200 | 13300 | 13400 | 13500 | 13600 | 13700 | 13800 | 13900 | 14000 | 14100 | 14200 | 14300 | 14400 | 14500 | 14600 | 14700 | 14800 | 14900 | 15000 | 15100 | 15200 | 15300 | 15400 | 15500 | 15600 | 15700 | 15800 | 15900 | 16000 | 16100 | 16200 | 16300 | 16400 | 16500 | 16600 | 16700 | 16800 | 16900 | 17000 | 17100 | 17200 | 17300 | 17400 | 17500 | 17600 | 17700 | 17800 | 17900 | 18000 | 18100 | 18200 | 18300 | 18400 | 18500 | 18600 | 18700 | 18800 | 18900 | 19000 | 19100 | 19200 | 19300 | 19400 | 19500 | 19600 | 19700 | 19800 | 19900 | 20000 | 20100 | 20200 | 20300 | 20400 | 20500 | 20600 | 20700 | 20800 | 20900;
+		rank: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | 40 | 41 | 42 | 43 | 44 | 45 | 46 | 47 | 48 | 49 | 50 | 51 | 52 | 53 | 54 | 55 | 56 | 57 | 58 | 59 | 60 | 61 | 62 | 63 | 64 | 65 | 66 | 67 | 68 | 69 | 70 | 71 | 72 | 73 | 74 | 75 | 76 | 77 | 78 | 79 | 80 | 81 | 82 | 83 | 84 | 85 | 86 | 87 | 88 | 89 | 90 | 91 | 92 | 93 | 94 | 95 | 96 | 97 | 98 | 99 | 100 | 101 | 102 | 103 | 104 | 105 | 106 | 107 | 108 | 109 | 110 | 111 | 112 | 113 | 114 | 115 | 116 | 117 | 118 | 119 | 120 | 121 | 122 | 123 | 124 | 125 | 126 | 127 | 128 | 129 | 130 | 131 | 132 | 133 | 134 | 135 | 136 | 137 | 138 | 139 | 140 | 141 | 142 | 143 | 144 | 145 | 146 | 147 | 148 | 149 | 150 | 151 | 152 | 153 | 154 | 155 | 156 | 157 | 158 | 159 | 160 | 161 | 162 | 163 | 164 | 165 | 166 | 167 | 168 | 169 | 170 | 171 | 172 | 173 | 174 | 175 | 176 | 177 | 178 | 179 | 180 | 181 | 182 | 183 | 184 | 185 | 186 | 187 | 188 | 189 | 190 | 191 | 192 | 193 | 194 | 195 | 196 | 197 | 198 | 199 | 200 | 201 | 202 | 203 | 204 | 205 | 206 | 207 | 208 | 209 | 210;
+		rewards?: Array<
+			{
+				candy?: {
+					amount: 3 | 5 | 10;
+					pokemonId: "AXEW" | "BELDUM" | "BINACLE" | "BLIPBUG" | "COMBEE" | "DRUDDIGON" | "DUCKLETT" | "ENTEI" | "EXEGGCUTE" | "FOONGUS" | "GIRAFARIG" | "GROWLITHE" | "HATENNA" | "HOPPIP" | "PHANPY" | "POLTCHAGEIST" | "ROCKRUFF" | "ROGGENROLA" | "SINISTEA" | "SIZZLIPEDE" | "SKIDDO" | "SLOWPOKE" | "SNOM" | "TEPIG" | "WOOPER";
+				};
+				exp?: 500 | 750 | 1000 | 1500 | 2000 | 2250 | 2500 | 3000 | 4500 | 5000 | 6000 | 10000;
+				item?: {
+					amount: 1 | 2 | 3 | 5 | 10 | 15 | 25 | 40 | 50 | 100 | 200 | 400 | 800;
+					item: "ITEM_GOLDEN_PINAP_BERRY" | "ITEM_GOLDEN_RAZZ_BERRY" | "ITEM_GREAT_BALL" | "ITEM_INCENSE_ORDINARY" | "ITEM_INCUBATOR_BASIC" | "ITEM_INCUBATOR_SUPER" | "ITEM_LEADER_MAP_FRAGMENT" | "ITEM_LUCKY_EGG" | "ITEM_LUCKY_FRIEND_APPLICATOR" | "ITEM_MOVE_REROLL_FAST_ATTACK" | "ITEM_MOVE_REROLL_SPECIAL_ATTACK" | "ITEM_MP" | "ITEM_NANAB_BERRY" | "ITEM_PAID_RAID_TICKET" | "ITEM_POFFIN" | "ITEM_POKE_BALL" | "ITEM_RARE_CANDY" | "ITEM_RAZZ_BERRY" | "ITEM_STAR_PIECE" | "ITEM_TROY_DISK" | "ITEM_ULTRA_BALL" | "ITEM_XL_RARE_CANDY";
+				};
+				playerAttribute?: {
+					durationMins: 131487;
+					key: "april2026_season_pass_entitlement" | "april2026_season_pass_rank_01" | "april2026_season_pass_rank_02" | "april2026_season_pass_rank_03";
+				};
+				pokemonEncounter?: {
+					isFeaturedPokemon: true;
+					pokemonDisplay?: {
+						breadModeEnum?: "BREAD_MODE";
+						form: "AMOONGUSS_NORMAL" | "BELDUM_NORMAL" | "BINACLE_NORMAL" | "BLIPBUG_NORMAL" | "COMBEE_NORMAL" | "DRUDDIGON_NORMAL" | "ENTEI_NORMAL" | "EXEGGUTOR_ALOLA" | "FRAXURE_NORMAL" | "GIRAFARIG_NORMAL" | "GROWLITHE_NORMAL" | "HATENNA_NORMAL" | "JUMPLUFF_NORMAL" | "PHANPY_NORMAL" | "ROCKRUFF_NORMAL" | "ROGGENROLA_NORMAL" | "SIZZLIPEDE_NORMAL" | "SKIDDO_NORMAL" | "SLOWPOKE_GALARIAN" | "SLOWPOKE_NORMAL" | "SNOM_NORMAL" | "SWANNA_NORMAL" | "TEPIG_NORMAL" | "WOOPER_NORMAL" | "WOOPER_PALDEA";
+					};
+					pokemonId: "AMOONGUSS" | "BELDUM" | "BINACLE" | "BLIPBUG" | "COMBEE" | "DRUDDIGON" | "ENTEI" | "EXEGGUTOR" | "FRAXURE" | "GIRAFARIG" | "GROWLITHE" | "HATENNA" | "JUMPLUFF" | "PHANPY" | "POLTCHAGEIST" | "ROCKRUFF" | "ROGGENROLA" | "SINISTEA" | "SIZZLIPEDE" | "SKIDDO" | "SLOWPOKE" | "SNOM" | "SWANNA" | "TEPIG" | "WOOPER";
+					statsLimitsOverride?: {
+						maxPokemonLevel: 20;
+						minPokemonLevel: 20;
+					};
+				};
+				stardust?: 50 | 100 | 500 | 750 | 1000 | 1500 | 2000 | 2250 | 2500 | 3000 | 4500 | 5000 | 6000 | 7500 | 10000;
+				"type": "CANDY" | "EXPERIENCE" | "ITEM" | "PLAYER_ATTRIBUTE" | "POKEMON_ENCOUNTER" | "STARDUST" | "XL_CANDY";
+				xlCandy?: {
+					amount: 3;
+					pokemonId: "AXEW" | "BELDUM" | "COMBEE" | "DUCKLETT" | "ENTEI" | "EXEGGCUTE" | "GIRAFARIG" | "GROWLITHE" | "HATENNA" | "PHANPY" | "ROGGENROLA" | "SINISTEA" | "SIZZLIPEDE" | "SKIDDO" | "SLOWPOKE" | "SNOM" | "TEPIG" | "WOOPER";
+				};
+			}
+		>;
+		track: "FREE" | "PREMIUM";
+	};
 }
 
 export type EventPassTierSettings100Free = EventPassTierSettings<"EVENT_PASS_APRIL2026_SEASON_100_FREE">;

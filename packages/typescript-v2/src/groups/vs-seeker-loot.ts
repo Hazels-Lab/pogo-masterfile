@@ -5,7 +5,57 @@ export interface VsSeekerLoot<T extends string> {
 
 export interface VsSeekerLootData<T extends string> {
 	templateId: T;
-	vsSeekerLoot: unknown;
+	vsSeekerLoot: {
+		rankLevel: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24;
+		reward: [
+			{
+				item?: {
+					count: 2 | 3 | 1200 | 1320 | 1480 | 1600 | 1720 | 1880 | 2120 | 2280 | 2400 | 2640 | 2800 | 2920 | 2960 | 3000 | 3080 | 3200 | 3440 | 3480 | 3600 | 3760 | 4240 | 4560 | 4800 | 5600 | 5840 | 6000 | 6160 | 6960 | 7200;
+					item?: "ITEM_RARE_CANDY";
+					stardust?: true;
+				};
+				itemRankingLootTableCount?: 1;
+				pokemonReward?: true;
+			},
+			{
+				item?: {
+					count: 2 | 3 | 3000 | 6000;
+					item?: "ITEM_RARE_CANDY";
+					stardust?: true;
+				};
+				itemRankingLootTableCount?: 1;
+				pokemonReward?: true;
+			},
+			{
+				item?: {
+					count: 2 | 3 | 3000 | 6000;
+					item?: "ITEM_RARE_CANDY";
+					stardust?: true;
+				};
+				itemRankingLootTableCount?: 1;
+				pokemonReward?: true;
+			},
+			{
+				item?: {
+					count: 2 | 3 | 3000 | 6000;
+					item?: "ITEM_RARE_CANDY";
+					stardust?: true;
+				};
+				itemRankingLootTableCount?: 1;
+				pokemonReward?: true;
+			},
+			{
+				item?: {
+					count: 2 | 3 | 2400 | 2640 | 2960 | 3000 | 3200 | 3440 | 3760 | 4240 | 4560 | 4800 | 5280 | 5600 | 5840 | 5920 | 6000 | 6160 | 6400 | 6880 | 6960 | 7200 | 7520 | 8480 | 9120 | 9600 | 11200 | 11680 | 12320 | 13920 | 14400;
+					item?: "ITEM_RARE_CANDY";
+					stardust?: true;
+				};
+				itemRankingLootTableCount?: 1;
+				pokemonReward?: true;
+			}
+		];
+		rewardTrack?: "PREMIUM";
+	};
 }
 
 export type VsSeekerLoot10Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_10_FREE">;

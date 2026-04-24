@@ -5,7 +5,15 @@ export interface QuestSettings<T extends string> {
 
 export interface QuestSettingsData<T extends string> {
 	templateId: T;
-	questSettings: unknown;
+	questSettings: {
+		dailyQuest: {
+			bonusMultiplier?: 2;
+			bucketsPerDay: 1;
+			streakBonusMultiplier?: 3;
+			streakLength: 7;
+		};
+		questType: "QUEST_FIRST_CATCH_OF_THE_DAY" | "QUEST_FIRST_POKESTOP_OF_THE_DAY" | "QUEST_FIRST_ROUTE_OF_THE_DAY";
+	};
 }
 
 export type QuestSettingsCatchOfTheDay = QuestSettings<"QUEST_FIRST_CATCH_OF_THE_DAY">;
