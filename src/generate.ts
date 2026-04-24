@@ -12,7 +12,7 @@ import { writeOutput } from "./write.ts";
 const GAME_MASTER_URL =
 	"https://raw.githubusercontent.com/alexelgt/game_masters/refs/heads/master/GAME_MASTER.json";
 
-const OUT_DIR = join(import.meta.dir, "..", "packages", "typescript-v2", "src");
+const OUT_DIR = join(import.meta.dir, "..", "packages", "typescript", "src");
 
 async function fetchMasterfile(): Promise<Entry[]> {
 	const resp = await fetch(GAME_MASTER_URL);
