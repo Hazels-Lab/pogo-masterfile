@@ -11,38 +11,7 @@ import {
 } from "./invariants.ts";
 import { aliasSuffix, deriveGroupAliases, groupName } from "./naming.ts";
 
-interface TemplateValue {
-	templateId: string;
-	value: unknown;
-}
-
-interface PlannedAlias {
-	path: string[];
-	pathKey: string;
-	name: string;
-	type: InferredType;
-	arrayWrapperCount: number;
-}
-
-interface AliasPlan {
-	aliases: PlannedAlias[];
-	byPath: Map<string, PlannedAlias>;
-}
-
-interface RenderContext {
-	aliases: AliasPlan;
-	path: string[];
-}
-
 const TEMPLATE_GENERIC = `TemplateID`;
-const EMPTY_ALIAS_PLAN: AliasPlan = {
-	aliases: [],
-	byPath: new Map<string, PlannedAlias>(),
-};
-const EMPTY_CONTEXT: RenderContext = {
-	aliases: EMPTY_ALIAS_PLAN,
-	path: [],
-};
 
 export function emitGroupFile(group: Group): string {
 	const gName = groupName(group.discriminator);
@@ -72,7 +41,7 @@ export function emitGroupFile(group: Group): string {
 		lines.push(`\t\t${discName}: TData;`);
 	} else {
 		const invariantsType = invariantsToInferredType(invariants);
-		const invariantsLines = renderType(invariantsType, EMPTY_CONTEXT);
+		const invariantsLines = renderType(invariantsType);
 		if (invariantsLines.length === 1) {
 			lines.push(`\t\t${discName}: TData & ${invariantsLines[0]};`);
 		} else {
@@ -120,7 +89,7 @@ function renderXDataInterface(name: string, type: InferredType): string[] {
 	if (type.kind === "object" && type.properties.length === 0) {
 		return [`export interface ${name} {}`];
 	}
-	const typeLines = renderType(type, EMPTY_CONTEXT);
+	const typeLines = renderType(type);
 	// typeLines shape: ["{", "\t...", ..., "}"]
 	const lines: string[] = [];
 	lines.push(`export interface ${name} ${typeLines[0]}`);
@@ -148,7 +117,7 @@ function renderVariantAlias(
 	}
 
 	const literalType = inferJsonType(stripped);
-	const literalLines = renderType(literalType, EMPTY_CONTEXT);
+	const literalLines = renderType(literalType);
 
 	const lines: string[] = [`export type ${typeName} = ${gName}<`];
 	lines.push(`\t"${entry.templateId}",`);
@@ -182,12 +151,7 @@ export function emitMiscFile(singletons: Group[]): string {
 		lines.push(`\t\ttemplateId: "${entry.templateId}";`);
 		if (!isStub) {
 			const payloadType = inferJsonType(entry.data[group.discriminator]);
-			lines.push(
-				...renderProperty(group.discriminator, payloadType, false, "\t\t", {
-					aliases: EMPTY_ALIAS_PLAN,
-					path: [],
-				}),
-			);
+			lines.push(...renderProperty(group.discriminator, payloadType, false, "\t\t"));
 		}
 		lines.push(`\t};`);
 		lines.push(`}`);
@@ -210,27 +174,19 @@ export function emitMiscFile(singletons: Group[]): string {
 	return lines.join("\n");
 }
 
-function renderType(type: InferredType, context: RenderContext): string[] {
-	const plannedAlias = context.aliases.byPath.get(aliasPathKey(context.path));
-	if (plannedAlias) {
-		if (plannedAlias.arrayWrapperCount > 0) {
-			return [wrapArrayType(plannedAlias.name, plannedAlias.arrayWrapperCount)];
-		}
-		return [plannedAlias.name];
-	}
-
+function renderType(type: InferredType): string[] {
 	const inline = renderInlineType(type);
 	if (inline) return [inline];
 
 	switch (type.kind) {
 		case "object":
-			return renderObjectType(type.properties, context);
+			return renderObjectType(type.properties);
 		case "tuple":
-			return renderTupleType(type.items, context);
+			return renderTupleType(type.items);
 		case "array":
-			return renderArrayType(type.element, context);
+			return renderArrayType(type.element);
 		case "union":
-			return renderUnionType(type.variants, context);
+			return renderUnionType(type.variants);
 		case "templateIdReference":
 			return [TEMPLATE_GENERIC];
 		case "null":
@@ -241,14 +197,8 @@ function renderType(type: InferredType, context: RenderContext): string[] {
 	}
 }
 
-function renderProperty(
-	name: string,
-	type: InferredType,
-	optional: boolean,
-	indent: string,
-	context: RenderContext,
-): string[] {
-	const typeLines = renderType(type, context);
+function renderProperty(name: string, type: InferredType, optional: boolean, indent: string): string[] {
+	const typeLines = renderType(type);
 	const property = `${renderPropertyName(name)}${optional ? "?" : ""}`;
 	if (typeLines.length === 1) {
 		return [`${indent}${property}: ${typeLines[0]};`];
@@ -305,28 +255,23 @@ function renderInlineType(type: InferredType): string | undefined {
 	}
 }
 
-function renderObjectType(properties: InferredProperty[], context: RenderContext): string[] {
+function renderObjectType(properties: InferredProperty[]): string[] {
 	if (properties.length === 0) return ["Record<string, never>"];
 
 	const lines = ["{"];
 	for (const property of properties) {
-		lines.push(
-			...renderProperty(property.name, property.type, property.optional, "\t", {
-				...context,
-				path: [...context.path, property.name],
-			}),
-		);
+		lines.push(...renderProperty(property.name, property.type, property.optional, "\t"));
 	}
 	lines.push("}");
 	return lines;
 }
 
-function renderTupleType(items: InferredType[], context: RenderContext): string[] {
+function renderTupleType(items: InferredType[]): string[] {
 	if (items.length === 0) return ["[]"];
 
 	const lines = ["["];
 	items.forEach((item, index) => {
-		const itemLines = renderType(item, context);
+		const itemLines = renderType(item);
 		const suffix = index === items.length - 1 ? "" : ",";
 		if (itemLines.length === 1) {
 			lines.push(`\t${itemLines[0]}${suffix}`);
@@ -342,274 +287,23 @@ function renderTupleType(items: InferredType[], context: RenderContext): string[
 	return lines;
 }
 
-function renderArrayType(element: InferredType, context: RenderContext): string[] {
-	const elementLines = renderType(element, context);
+function renderArrayType(element: InferredType): string[] {
+	const elementLines = renderType(element);
 	if (elementLines.length === 1) return [`Array<${elementLines[0]}>`];
 
 	return ["Array<", ...elementLines.map((line) => `\t${line}`), ">"];
 }
 
-function renderUnionType(variants: InferredType[], context: RenderContext): string[] {
+function renderUnionType(variants: InferredType[]): string[] {
 	return variants.flatMap((variant) => {
-		const lines = renderType(variant, context);
+		const lines = renderType(variant);
 		const [firstLine, ...rest] = lines;
 		return [`| ${firstLine}`, ...rest];
 	});
 }
 
-function planTypeAliases(
-	groupDisplayName: string,
-	payloadType: InferredType,
-	reservedNames: ReadonlySet<string>,
-): AliasPlan {
-	const candidates: Array<Omit<PlannedAlias, "name">> = [];
-	collectAliasCandidates(payloadType, [], candidates, 0);
-	const sorted = candidates.sort((a, b) => a.pathKey.localeCompare(b.pathKey));
-	const usedNames = new Set(reservedNames);
-	const aliases = sorted.map((candidate) => {
-		const baseName = aliasNameForPath(groupDisplayName, candidate.path);
-		const name = availableAliasName(baseName, usedNames);
-		usedNames.add(name);
-		return {
-			...candidate,
-			name,
-		};
-	});
-	return {
-		aliases,
-		byPath: new Map(aliases.map((alias) => [alias.pathKey, alias])),
-	};
-}
-
-function collectAliasCandidates(
-	type: InferredType,
-	path: string[],
-	candidates: Array<Omit<PlannedAlias, "name">>,
-	arrayWrapperCount: number,
-): void {
-	if (path.length > 0 && isAliasWorthyType(type)) {
-		candidates.push({
-			path,
-			pathKey: aliasPathKey(path),
-			type,
-			arrayWrapperCount,
-		});
-		return;
-	}
-
-	if (type.kind === "object") {
-		for (const property of type.properties) {
-			collectAliasCandidates(property.type, [...path, property.name], candidates, 0);
-		}
-		return;
-	}
-
-	if (type.kind === "array") {
-		collectAliasCandidates(type.element, path, candidates, arrayWrapperCount + 1);
-	}
-}
-
-function isAliasWorthyType(type: InferredType): boolean {
-	switch (type.kind) {
-		case "boolean":
-		case "number":
-		case "string":
-			return type.literals.length > 1;
-		case "tuple":
-			return type.items.length > 0;
-		case "union":
-			return type.variants.length > 1;
-		case "array":
-		case "object":
-		case "null":
-		case "templateIdReference":
-			return false;
-	}
-}
-
-function aliasPathKey(path: readonly string[]): string {
-	return JSON.stringify(path);
-}
-
-function aliasNameForPath(groupDisplayName: string, path: readonly string[]): string {
-	return `${groupDisplayName}${path.map(aliasNameSegment).join("")}`;
-}
-
-function aliasNameSegment(segment: string): string {
-	const words = segment
-		.replace(/([a-z0-9])([A-Z])/g, "$1 $2")
-		.replace(/([A-Z]+)([A-Z][a-z])/g, "$1 $2")
-		.split(/[^a-zA-Z0-9]+/)
-		.filter(Boolean);
-
-	return (
-		words
-			.map((word) => {
-				if (word.toLowerCase() === "id") return "ID";
-				return `${word[0]!.toUpperCase()}${word.slice(1).toLowerCase()}`;
-			})
-			.join("") || "Root"
-	);
-}
-
-function wrapArrayType(typeName: string, wrapperCount: number): string {
-	let rendered = typeName;
-	for (let i = 0; i < wrapperCount; i += 1) {
-		rendered = `Array<${rendered}>`;
-	}
-	return rendered;
-}
-
-function renderAliasDefinitions(plan: AliasPlan): string[] {
-	const lines: string[] = [];
-	for (const alias of plan.aliases) {
-		const typeLines = renderType(alias.type, {
-			aliases: EMPTY_ALIAS_PLAN,
-			path: alias.path,
-		});
-		if (typeLines.length === 1) {
-			lines.push(`export type ${alias.name} = ${typeLines[0]};`);
-			lines.push(``);
-			continue;
-		}
-		if (typeLines[0]?.startsWith("| ")) {
-			lines.push(`export type ${alias.name} =`);
-			typeLines.forEach((line, index) => {
-				const suffix = index === typeLines.length - 1 ? ";" : "";
-				lines.push(`\t${line}${suffix}`);
-			});
-			lines.push(``);
-			continue;
-		}
-		lines.push(`export type ${alias.name} = ${typeLines[0]}`);
-		for (const line of typeLines.slice(1, -1)) {
-			lines.push(line);
-		}
-		lines.push(`${typeLines[typeLines.length - 1]};`);
-		lines.push(``);
-	}
-	return lines;
-}
-
-function moduleReservedNames(
-	groupDisplayName: string,
-	sortedTemplateIds: readonly string[],
-	entryAliases: ReadonlyMap<string, string>,
-): Set<string> {
-	const names = new Set([
-		groupDisplayName,
-		`${groupDisplayName}Data`,
-		`${groupDisplayName}MasterfileEntry`,
-		`${groupDisplayName}TemplateID`,
-	]);
-
-	for (const id of sortedTemplateIds) {
-		names.add(`${groupDisplayName}${entryAliases.get(id)!}`);
-	}
-
-	return names;
-}
-
-function availableAliasName(baseName: string, usedNames: ReadonlySet<string>): string {
-	if (!usedNames.has(baseName)) return baseName;
-
-	let suffix = 2;
-	while (usedNames.has(`${baseName}${suffix}`)) {
-		suffix += 1;
-	}
-	return `${baseName}${suffix}`;
-}
-
 function inferGroupPayloadType(group: Group): InferredType {
-	return inferTemplateAwareValues(
-		group.entries.map((entry) => ({
-			templateId: entry.templateId,
-			value: entry.data[group.discriminator],
-		})),
-		[],
-	);
-}
-
-function inferTemplateAwareValues(values: readonly TemplateValue[], path: readonly string[]): InferredType {
-	if (
-		isTemplateIdMirrorPath(path) &&
-		values.length > 0 &&
-		values.every(({ templateId, value }) => value === templateId)
-	) {
-		return { kind: "templateIdReference" };
-	}
-
-	if (values.every(({ value }) => Array.isArray(value))) {
-		return inferTemplateAwareArrays(values as Array<{ templateId: string; value: unknown[] }>, path);
-	}
-
-	if (values.every(({ value }) => isJsonObject(value))) {
-		return inferTemplateAwareObjects(values as Array<{ templateId: string; value: Record<string, unknown> }>, path);
-	}
-
-	return inferJsonTypes(values.map(({ value }) => value));
-}
-
-function inferTemplateAwareArrays(
-	values: ReadonlyArray<{ templateId: string; value: unknown[] }>,
-	path: readonly string[],
-): InferredType {
-	const firstLength = values[0]?.value.length ?? 0;
-	const isFixedLength = values.every(({ value }) => value.length === firstLength);
-	if (isFixedLength) {
-		return {
-			kind: "tuple",
-			items: Array.from({ length: firstLength }, (_, index) =>
-				inferTemplateAwareValues(
-					values.map(({ templateId, value }) => ({
-						templateId,
-						value: value[index],
-					})),
-					path.length > 0 ? [...path, String(index)] : path,
-				),
-			),
-		};
-	}
-
-	return {
-		kind: "array",
-		element: inferTemplateAwareValues(
-			values.flatMap(({ templateId, value }) => value.map((item) => ({ templateId, value: item }))),
-			path,
-		),
-	};
-}
-
-function inferTemplateAwareObjects(
-	values: ReadonlyArray<{ templateId: string; value: Record<string, unknown> }>,
-	path: readonly string[],
-): InferredType {
-	const propertyValues = new Map<string, TemplateValue[]>();
-	const propertyCounts = new Map<string, number>();
-
-	for (const { templateId, value } of values) {
-		for (const [key, propertyValue] of Object.entries(value)) {
-			const collected = propertyValues.get(key);
-			const templateValue = { templateId, value: propertyValue };
-			if (collected) collected.push(templateValue);
-			else propertyValues.set(key, [templateValue]);
-			propertyCounts.set(key, (propertyCounts.get(key) ?? 0) + 1);
-		}
-	}
-
-	const properties = [...propertyValues.entries()]
-		.sort(([a], [b]) => a.localeCompare(b))
-		.map(([name, observedValues]) => ({
-			name,
-			type: inferTemplateAwareValues(observedValues, [...path, name]),
-			optional: propertyCounts.get(name) !== values.length,
-		}));
-
-	return { kind: "object", properties };
-}
-
-function isTemplateIdMirrorPath(path: readonly string[]): boolean {
-	return path.length <= 1;
+	return inferJsonTypes(group.entries.map((entry) => entry.data[group.discriminator]));
 }
 
 function isJsonObject(value: unknown): value is Record<string, unknown> {
