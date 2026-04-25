@@ -19,9 +19,7 @@ describe("writeOutput", () => {
 			]),
 			outDir,
 		);
-		expect(readFileSync(join(outDir, "groups/foo.ts"), "utf8")).toContain(
-			"Foo",
-		);
+		expect(readFileSync(join(outDir, "groups/foo.ts"), "utf8")).toContain("Foo");
 		expect(readFileSync(join(outDir, "index.ts"), "utf8")).toContain("foo");
 		rmSync(outDir, { recursive: true, force: true });
 	});

@@ -39,15 +39,12 @@ describe("inferJsonTypes", () => {
 	});
 
 	test("infers a TypeEffective-style attackScalar as an 18-float tuple", () => {
-		const inferred = inferJsonType([
-			1, 1.6, 1, 0.625, 1, 1, 1, 1, 1, 1, 1.6, 1, 0.625, 1, 1, 1, 1, 1,
-		]);
+		const inferred = inferJsonType([1, 1.6, 1, 0.625, 1, 1, 1, 1, 1, 1, 1.6, 1, 0.625, 1, 1, 1, 1, 1]);
 		if (inferred.kind !== "tuple") throw new Error("Expected tuple type");
 
 		expect(inferred.items).toHaveLength(18);
 		for (const item of inferred.items) {
-			if (item.kind !== "number")
-				throw new Error("Expected numeric tuple item");
+			if (item.kind !== "number") throw new Error("Expected numeric tuple item");
 			expect(item.numericKind).toBe("float");
 		}
 	});
@@ -60,10 +57,7 @@ describe("inferJsonTypes", () => {
 	});
 
 	test("marks object fields optional when missing from at least one object", () => {
-		const inferred = inferJsonTypes([
-			{ always: 1, sometimes: "yes" },
-			{ always: 2 },
-		]);
+		const inferred = inferJsonTypes([{ always: 1, sometimes: "yes" }, { always: 2 }]);
 		if (inferred.kind !== "object") throw new Error("Expected object type");
 
 		expect(inferred.properties).toEqual([
@@ -84,20 +78,13 @@ describe("inferJsonTypes", () => {
 		const inferred = inferJsonTypes([null, "enabled"]);
 		if (inferred.kind !== "union") throw new Error("Expected union type");
 
-		expect(inferred.variants).toEqual([
-			{ kind: "null" },
-			{ kind: "string", literals: ["enabled"] },
-		]);
+		expect(inferred.variants).toEqual([{ kind: "null" }, { kind: "string", literals: ["enabled"] }]);
 	});
 });
 
 describe("InferenceBuilder", () => {
 	test("incrementally collects values before building the inferred type", () => {
-		const inferred = new InferenceBuilder()
-			.add(false)
-			.add(true)
-			.add(true)
-			.build();
+		const inferred = new InferenceBuilder().add(false).add(true).add(true).build();
 		if (inferred.kind !== "boolean") throw new Error("Expected boolean type");
 
 		expect(inferred.literals).toEqual([false, true]);

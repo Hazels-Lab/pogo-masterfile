@@ -13,9 +13,7 @@ export function groupEntries(entries: Entry[]): Map<string, Group> {
 	for (const entry of entries) {
 		const keys = Object.keys(entry.data).filter((k) => k !== "templateId");
 		if (keys.length > 1) {
-			throw new Error(
-				`Entry ${entry.templateId} has ${keys.length} non-templateId data keys, expected 0 or 1`,
-			);
+			throw new Error(`Entry ${entry.templateId} has ${keys.length} non-templateId data keys, expected 0 or 1`);
 		}
 		// Stub entries (0 keys) bucket under their templateId.
 		// Real camelCase discriminators cannot collide with SCREAMING_SNAKE templateIds.

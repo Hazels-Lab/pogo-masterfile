@@ -18,9 +18,7 @@ export function aliasSuffix(templateId: string, prefix: string): string {
 	if (tail === "") return "Root";
 	const parts = tail.split(/[^a-zA-Z0-9]+/).filter(Boolean);
 	if (parts.length === 0) return "Root";
-	return parts
-		.map((w) => w[0]!.toUpperCase() + w.slice(1).toLowerCase())
-		.join("");
+	return parts.map((w) => w[0]!.toUpperCase() + w.slice(1).toLowerCase()).join("");
 }
 
 export function deriveGroupAliases(templateIds: string[]): Map<string, string> {

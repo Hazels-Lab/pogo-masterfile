@@ -29,9 +29,7 @@ describe("groupEntries", () => {
 	});
 
 	test("throws when entry has more than 1 non-templateId data key", () => {
-		const entries: Entry[] = [
-			{ templateId: "X", data: { templateId: "X", foo: {}, bar: {} } },
-		];
+		const entries: Entry[] = [{ templateId: "X", data: { templateId: "X", foo: {}, bar: {} } }];
 		expect(() => groupEntries(entries)).toThrow(/2 non-templateId/);
 	});
 });

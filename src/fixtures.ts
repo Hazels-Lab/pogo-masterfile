@@ -11,9 +11,7 @@ export const MOCK_MASTERFILE = [
 		data: {
 			templateId: "POKEMON_TYPE_BUG",
 			typeEffective: {
-				attackScalar: [
-					1, 1.6, 1, 0.625, 1, 1, 1, 1, 1, 1, 1.6, 1, 0.625, 1, 1, 1, 1, 1,
-				],
+				attackScalar: [1, 1.6, 1, 0.625, 1, 1, 1, 1, 1, 1, 1.6, 1, 0.625, 1, 1, 1, 1, 1],
 				attackType: "POKEMON_TYPE_BUG",
 				effectGroup: {
 					accuracyChance: 1,
@@ -32,9 +30,7 @@ export const MOCK_MASTERFILE = [
 		data: {
 			templateId: "POKEMON_TYPE_DARK",
 			typeEffective: {
-				attackScalar: [
-					1, 1, 1, 1, 1, 1.6, 1, 1, 1, 0.625, 1, 1, 1.6, 1, 1, 0.625, 1, 1,
-				],
+				attackScalar: [1, 1, 1, 1, 1, 1.6, 1, 1, 1, 0.625, 1, 1, 1.6, 1, 1, 0.625, 1, 1],
 				attackType: "POKEMON_TYPE_DARK",
 				effectGroup: {
 					accuracyChance: 1,

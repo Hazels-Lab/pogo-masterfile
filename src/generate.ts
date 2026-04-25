@@ -1,16 +1,10 @@
 import { join } from "node:path";
-import {
-	emitGroupFile,
-	emitIndexFile,
-	emitMiscFile,
-	kebabCase,
-} from "./emit.ts";
+import { emitGroupFile, emitIndexFile, emitMiscFile, kebabCase } from "./emit.ts";
 import type { Entry, Group } from "./group.ts";
 import { groupEntries } from "./group.ts";
 import { writeOutput } from "./write.ts";
 
-const GAME_MASTER_URL =
-	"https://raw.githubusercontent.com/alexelgt/game_masters/refs/heads/master/GAME_MASTER.json";
+const GAME_MASTER_URL = "https://raw.githubusercontent.com/alexelgt/game_masters/refs/heads/master/GAME_MASTER.json";
 
 const OUT_DIR = join(import.meta.dir, "..", "packages", "typescript", "src");
 
