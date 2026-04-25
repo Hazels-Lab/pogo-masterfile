@@ -1,21 +1,38 @@
-export interface LanguageSettings<TemplateID extends string> {
+export interface LanguageSettings<
+	TemplateID extends string = string,
+	TData extends LanguageSettingsData = LanguageSettingsData,
+> {
 	templateId: TemplateID;
-	data: LanguageSettingsData<TemplateID>;
-}
-
-export interface LanguageSettingsData<TemplateID extends string> {
-	templateId: TemplateID;
-	languageSettings: {
-		isEnabled: true;
-		language: LanguageSettingsLanguage;
+	data: {
+		templateId: TemplateID;
+		languageSettings: TData & {
+			isEnabled: true;
+		};
 	};
 }
 
-export type LanguageSettingsLanguage = "Hindi" | "Indonesian" | "spanishlatinamerican";
+export interface LanguageSettingsData {
+	language?: string;
+}
 
-export type LanguageSettingsHindi = LanguageSettings<"Hindi">;
-export type LanguageSettingsIndonesian = LanguageSettings<"Indonesian">;
-export type LanguageSettingsLatam = LanguageSettings<"LATAM">;
+export type LanguageSettingsHindi = LanguageSettings<
+	"Hindi",
+	{
+		language: "Hindi";
+	}
+>;
+export type LanguageSettingsIndonesian = LanguageSettings<
+	"Indonesian",
+	{
+		language: "Indonesian";
+	}
+>;
+export type LanguageSettingsLatam = LanguageSettings<
+	"LATAM",
+	{
+		language: "spanishlatinamerican";
+	}
+>;
 
 export type LanguageSettingsMasterfileEntry =
 	| LanguageSettingsHindi

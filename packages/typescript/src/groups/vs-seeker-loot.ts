@@ -1,115 +1,1611 @@
-export interface VsSeekerLoot<TemplateID extends string> {
+export interface VsSeekerLoot<TemplateID extends string = string, TData extends VsSeekerLootData = VsSeekerLootData> {
 	templateId: TemplateID;
-	data: VsSeekerLootData<TemplateID>;
-}
-
-export interface VsSeekerLootData<TemplateID extends string> {
-	templateId: TemplateID;
-	vsSeekerLoot: {
-		rankLevel: VsSeekerLootRankLevel;
-		reward: VsSeekerLootReward;
-		rewardTrack?: "PREMIUM";
+	data: {
+		templateId: TemplateID;
+		vsSeekerLoot: TData;
 	};
 }
 
-export type VsSeekerLootRankLevel = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24;
+export interface VsSeekerLootData {
+	rankLevel?: number;
+	reward?: [
+		{
+			item?: {
+				count: number;
+				item?: string;
+				stardust?: boolean;
+			};
+			itemRankingLootTableCount?: number;
+			pokemonReward?: boolean;
+		},
+		{
+			item?: {
+				count: number;
+				item?: string;
+				stardust?: boolean;
+			};
+			itemRankingLootTableCount?: number;
+			pokemonReward?: boolean;
+		},
+		{
+			item?: {
+				count: number;
+				item?: string;
+				stardust?: boolean;
+			};
+			itemRankingLootTableCount?: number;
+			pokemonReward?: boolean;
+		},
+		{
+			item?: {
+				count: number;
+				item?: string;
+				stardust?: boolean;
+			};
+			itemRankingLootTableCount?: number;
+			pokemonReward?: boolean;
+		},
+		{
+			item?: {
+				count: number;
+				item?: string;
+				stardust?: boolean;
+			};
+			itemRankingLootTableCount?: number;
+			pokemonReward?: boolean;
+		},
+	];
+	rewardTrack?: string;
+}
 
-export type VsSeekerLootReward = [
+export type VsSeekerLoot10Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_10_FREE",
 	{
-		item?: {
-			count: 2 | 3 | 1200 | 1320 | 1480 | 1600 | 1720 | 1880 | 2120 | 2280 | 2400 | 2640 | 2800 | 2920 | 2960 | 3000 | 3080 | 3200 | 3440 | 3480 | 3600 | 3760 | 4240 | 4560 | 4800 | 5600 | 5840 | 6000 | 6160 | 6960 | 7200;
-			item?: "ITEM_RARE_CANDY";
-			stardust?: true;
-		};
-		itemRankingLootTableCount?: 1;
-		pokemonReward?: true;
-	},
-	{
-		item?: {
-			count: 2 | 3 | 3000 | 6000;
-			item?: "ITEM_RARE_CANDY";
-			stardust?: true;
-		};
-		itemRankingLootTableCount?: 1;
-		pokemonReward?: true;
-	},
-	{
-		item?: {
-			count: 2 | 3 | 3000 | 6000;
-			item?: "ITEM_RARE_CANDY";
-			stardust?: true;
-		};
-		itemRankingLootTableCount?: 1;
-		pokemonReward?: true;
-	},
-	{
-		item?: {
-			count: 2 | 3 | 3000 | 6000;
-			item?: "ITEM_RARE_CANDY";
-			stardust?: true;
-		};
-		itemRankingLootTableCount?: 1;
-		pokemonReward?: true;
-	},
-	{
-		item?: {
-			count: 2 | 3 | 2400 | 2640 | 2960 | 3000 | 3200 | 3440 | 3760 | 4240 | 4560 | 4800 | 5280 | 5600 | 5840 | 5920 | 6000 | 6160 | 6400 | 6880 | 6960 | 7200 | 7520 | 8480 | 9120 | 9600 | 11200 | 11680 | 12320 | 13920 | 14400;
-			item?: "ITEM_RARE_CANDY";
-			stardust?: true;
-		};
-		itemRankingLootTableCount?: 1;
-		pokemonReward?: true;
+		rankLevel: 10;
+		reward: [
+			{
+				item: {
+					count: 3000;
+					stardust: true;
+				};
+			},
+			{
+				item: {
+					count: 3000;
+					stardust: true;
+				};
+			},
+			{
+				item: {
+					count: 3000;
+					stardust: true;
+				};
+			},
+			{
+				item: {
+					count: 3000;
+					stardust: true;
+				};
+			},
+			{
+				item: {
+					count: 3000;
+					stardust: true;
+				};
+			},
+		];
 	}
-];
-
-export type VsSeekerLoot10Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_10_FREE">;
-export type VsSeekerLoot10Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_10_PREMIUM">;
-export type VsSeekerLoot11Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_11_FREE">;
-export type VsSeekerLoot11Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_11_PREMIUM">;
-export type VsSeekerLoot12Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_12_FREE">;
-export type VsSeekerLoot12Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_12_PREMIUM">;
-export type VsSeekerLoot13Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_13_FREE">;
-export type VsSeekerLoot13Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_13_PREMIUM">;
-export type VsSeekerLoot14Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_14_FREE">;
-export type VsSeekerLoot14Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_14_PREMIUM">;
-export type VsSeekerLoot15Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_15_FREE">;
-export type VsSeekerLoot15Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_15_PREMIUM">;
-export type VsSeekerLoot16Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_16_FREE">;
-export type VsSeekerLoot16Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_16_PREMIUM">;
-export type VsSeekerLoot17Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_17_FREE">;
-export type VsSeekerLoot17Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_17_PREMIUM">;
-export type VsSeekerLoot18Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_18_FREE">;
-export type VsSeekerLoot18Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_18_PREMIUM">;
-export type VsSeekerLoot19Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_19_FREE">;
-export type VsSeekerLoot19Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_19_PREMIUM">;
-export type VsSeekerLoot1Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_1_FREE">;
-export type VsSeekerLoot1Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_1_PREMIUM">;
-export type VsSeekerLoot20Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_20_FREE">;
-export type VsSeekerLoot20Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_20_PREMIUM">;
-export type VsSeekerLoot21Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_21_FREE">;
-export type VsSeekerLoot21Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_21_PREMIUM">;
-export type VsSeekerLoot22Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_22_FREE">;
-export type VsSeekerLoot22Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_22_PREMIUM">;
-export type VsSeekerLoot23Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_23_FREE">;
-export type VsSeekerLoot23Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_23_PREMIUM">;
-export type VsSeekerLoot24Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_24_FREE">;
-export type VsSeekerLoot24Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_24_PREMIUM">;
-export type VsSeekerLoot2Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_2_FREE">;
-export type VsSeekerLoot2Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_2_PREMIUM">;
-export type VsSeekerLoot3Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_3_FREE">;
-export type VsSeekerLoot3Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_3_PREMIUM">;
-export type VsSeekerLoot4Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_4_FREE">;
-export type VsSeekerLoot4Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_4_PREMIUM">;
-export type VsSeekerLoot5Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_5_FREE">;
-export type VsSeekerLoot5Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_5_PREMIUM">;
-export type VsSeekerLoot6Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_6_FREE">;
-export type VsSeekerLoot6Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_6_PREMIUM">;
-export type VsSeekerLoot7Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_7_FREE">;
-export type VsSeekerLoot7Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_7_PREMIUM">;
-export type VsSeekerLoot8Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_8_FREE">;
-export type VsSeekerLoot8Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_8_PREMIUM">;
-export type VsSeekerLoot9Free = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_9_FREE">;
-export type VsSeekerLoot9Premium = VsSeekerLoot<"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_9_PREMIUM">;
+>;
+export type VsSeekerLoot10Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_10_PREMIUM",
+	{
+		rankLevel: 10;
+		reward: [
+			{
+				item: {
+					count: 6000;
+					stardust: true;
+				};
+			},
+			{
+				item: {
+					count: 6000;
+					stardust: true;
+				};
+			},
+			{
+				item: {
+					count: 6000;
+					stardust: true;
+				};
+			},
+			{
+				item: {
+					count: 6000;
+					stardust: true;
+				};
+			},
+			{
+				item: {
+					count: 6000;
+					stardust: true;
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot11Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_11_FREE",
+	{
+		rankLevel: 11;
+		reward: [
+			{
+				item: {
+					count: 2120;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 4240;
+					stardust: true;
+				};
+			},
+		];
+	}
+>;
+export type VsSeekerLoot11Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_11_PREMIUM",
+	{
+		rankLevel: 11;
+		reward: [
+			{
+				item: {
+					count: 4240;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 8480;
+					stardust: true;
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot12Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_12_FREE",
+	{
+		rankLevel: 12;
+		reward: [
+			{
+				item: {
+					count: 2120;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 4240;
+					stardust: true;
+				};
+			},
+		];
+	}
+>;
+export type VsSeekerLoot12Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_12_PREMIUM",
+	{
+		rankLevel: 12;
+		reward: [
+			{
+				item: {
+					count: 4240;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 8480;
+					stardust: true;
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot13Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_13_FREE",
+	{
+		rankLevel: 13;
+		reward: [
+			{
+				item: {
+					count: 2280;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 4560;
+					stardust: true;
+				};
+			},
+		];
+	}
+>;
+export type VsSeekerLoot13Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_13_PREMIUM",
+	{
+		rankLevel: 13;
+		reward: [
+			{
+				item: {
+					count: 4560;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 9120;
+					stardust: true;
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot14Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_14_FREE",
+	{
+		rankLevel: 14;
+		reward: [
+			{
+				item: {
+					count: 2400;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 4800;
+					stardust: true;
+				};
+			},
+		];
+	}
+>;
+export type VsSeekerLoot14Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_14_PREMIUM",
+	{
+		rankLevel: 14;
+		reward: [
+			{
+				item: {
+					count: 4800;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 9600;
+					stardust: true;
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot15Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_15_FREE",
+	{
+		rankLevel: 15;
+		reward: [
+			{
+				item: {
+					count: 2;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 2;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 2;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 2;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 2;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+		];
+	}
+>;
+export type VsSeekerLoot15Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_15_PREMIUM",
+	{
+		rankLevel: 15;
+		reward: [
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot16Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_16_FREE",
+	{
+		rankLevel: 16;
+		reward: [
+			{
+				item: {
+					count: 2800;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 5600;
+					stardust: true;
+				};
+			},
+		];
+	}
+>;
+export type VsSeekerLoot16Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_16_PREMIUM",
+	{
+		rankLevel: 16;
+		reward: [
+			{
+				item: {
+					count: 5600;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 11200;
+					stardust: true;
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot17Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_17_FREE",
+	{
+		rankLevel: 17;
+		reward: [
+			{
+				item: {
+					count: 2920;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 5840;
+					stardust: true;
+				};
+			},
+		];
+	}
+>;
+export type VsSeekerLoot17Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_17_PREMIUM",
+	{
+		rankLevel: 17;
+		reward: [
+			{
+				item: {
+					count: 5840;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 11680;
+					stardust: true;
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot18Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_18_FREE",
+	{
+		rankLevel: 18;
+		reward: [
+			{
+				item: {
+					count: 3080;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 6160;
+					stardust: true;
+				};
+			},
+		];
+	}
+>;
+export type VsSeekerLoot18Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_18_PREMIUM",
+	{
+		rankLevel: 18;
+		reward: [
+			{
+				item: {
+					count: 6160;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 12320;
+					stardust: true;
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot19Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_19_FREE",
+	{
+		rankLevel: 19;
+		reward: [
+			{
+				pokemonReward: true;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				pokemonReward: true;
+			},
+		];
+	}
+>;
+export type VsSeekerLoot19Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_19_PREMIUM",
+	{
+		rankLevel: 19;
+		reward: [
+			{
+				pokemonReward: true;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				pokemonReward: true;
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot1Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_1_FREE",
+	{
+		rankLevel: 1;
+		reward: [
+			{
+				item: {
+					count: 1200;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 2400;
+					stardust: true;
+				};
+			},
+		];
+	}
+>;
+export type VsSeekerLoot1Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_1_PREMIUM",
+	{
+		rankLevel: 1;
+		reward: [
+			{
+				item: {
+					count: 2400;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 4800;
+					stardust: true;
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot20Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_20_FREE",
+	{
+		rankLevel: 20;
+		reward: [
+			{
+				item: {
+					count: 3480;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 6960;
+					stardust: true;
+				};
+			},
+		];
+	}
+>;
+export type VsSeekerLoot20Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_20_PREMIUM",
+	{
+		rankLevel: 20;
+		reward: [
+			{
+				item: {
+					count: 6960;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 13920;
+					stardust: true;
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot21Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_21_FREE",
+	{
+		rankLevel: 21;
+		reward: [
+			{
+				item: {
+					count: 3600;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 7200;
+					stardust: true;
+				};
+			},
+		];
+	}
+>;
+export type VsSeekerLoot21Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_21_PREMIUM",
+	{
+		rankLevel: 21;
+		reward: [
+			{
+				item: {
+					count: 7200;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 14400;
+					stardust: true;
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot22Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_22_FREE",
+	{
+		rankLevel: 22;
+		reward: [
+			{
+				item: {
+					count: 3600;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 7200;
+					stardust: true;
+				};
+			},
+		];
+	}
+>;
+export type VsSeekerLoot22Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_22_PREMIUM",
+	{
+		rankLevel: 22;
+		reward: [
+			{
+				item: {
+					count: 7200;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 14400;
+					stardust: true;
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot23Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_23_FREE",
+	{
+		rankLevel: 23;
+		reward: [
+			{
+				item: {
+					count: 3600;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 7200;
+					stardust: true;
+				};
+			},
+		];
+	}
+>;
+export type VsSeekerLoot23Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_23_PREMIUM",
+	{
+		rankLevel: 23;
+		reward: [
+			{
+				item: {
+					count: 7200;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 14400;
+					stardust: true;
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot24Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_24_FREE",
+	{
+		rankLevel: 24;
+		reward: [
+			{
+				item: {
+					count: 3600;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 7200;
+					stardust: true;
+				};
+			},
+		];
+	}
+>;
+export type VsSeekerLoot24Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_24_PREMIUM",
+	{
+		rankLevel: 24;
+		reward: [
+			{
+				item: {
+					count: 7200;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 14400;
+					stardust: true;
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot2Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_2_FREE",
+	{
+		rankLevel: 2;
+		reward: [
+			{
+				item: {
+					count: 1320;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 2640;
+					stardust: true;
+				};
+			},
+		];
+	}
+>;
+export type VsSeekerLoot2Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_2_PREMIUM",
+	{
+		rankLevel: 2;
+		reward: [
+			{
+				item: {
+					count: 2640;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 5280;
+					stardust: true;
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot3Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_3_FREE",
+	{
+		rankLevel: 3;
+		reward: [
+			{
+				item: {
+					count: 1320;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 2640;
+					stardust: true;
+				};
+			},
+		];
+	}
+>;
+export type VsSeekerLoot3Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_3_PREMIUM",
+	{
+		rankLevel: 3;
+		reward: [
+			{
+				item: {
+					count: 2640;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 5280;
+					stardust: true;
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot4Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_4_FREE",
+	{
+		rankLevel: 4;
+		reward: [
+			{
+				item: {
+					count: 1480;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 2960;
+					stardust: true;
+				};
+			},
+		];
+	}
+>;
+export type VsSeekerLoot4Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_4_PREMIUM",
+	{
+		rankLevel: 4;
+		reward: [
+			{
+				item: {
+					count: 2960;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 5920;
+					stardust: true;
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot5Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_5_FREE",
+	{
+		rankLevel: 5;
+		reward: [
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+		];
+	}
+>;
+export type VsSeekerLoot5Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_5_PREMIUM",
+	{
+		rankLevel: 5;
+		reward: [
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot6Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_6_FREE",
+	{
+		rankLevel: 6;
+		reward: [
+			{
+				item: {
+					count: 1600;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 3200;
+					stardust: true;
+				};
+			},
+		];
+	}
+>;
+export type VsSeekerLoot6Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_6_PREMIUM",
+	{
+		rankLevel: 6;
+		reward: [
+			{
+				item: {
+					count: 3200;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 6400;
+					stardust: true;
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot7Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_7_FREE",
+	{
+		rankLevel: 7;
+		reward: [
+			{
+				item: {
+					count: 1720;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 3440;
+					stardust: true;
+				};
+			},
+		];
+	}
+>;
+export type VsSeekerLoot7Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_7_PREMIUM",
+	{
+		rankLevel: 7;
+		reward: [
+			{
+				item: {
+					count: 3440;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 6880;
+					stardust: true;
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot8Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_8_FREE",
+	{
+		rankLevel: 8;
+		reward: [
+			{
+				item: {
+					count: 1720;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 3440;
+					stardust: true;
+				};
+			},
+		];
+	}
+>;
+export type VsSeekerLoot8Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_8_PREMIUM",
+	{
+		rankLevel: 8;
+		reward: [
+			{
+				item: {
+					count: 3440;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 6880;
+					stardust: true;
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
+export type VsSeekerLoot9Free = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_9_FREE",
+	{
+		rankLevel: 9;
+		reward: [
+			{
+				item: {
+					count: 1880;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 3760;
+					stardust: true;
+				};
+			},
+		];
+	}
+>;
+export type VsSeekerLoot9Premium = VsSeekerLoot<
+	"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_9_PREMIUM",
+	{
+		rankLevel: 9;
+		reward: [
+			{
+				item: {
+					count: 3760;
+					stardust: true;
+				};
+			},
+			{
+				itemRankingLootTableCount: 1;
+			},
+			{
+				pokemonReward: true;
+			},
+			{
+				item: {
+					count: 3;
+					item: "ITEM_RARE_CANDY";
+				};
+			},
+			{
+				item: {
+					count: 7520;
+					stardust: true;
+				};
+			},
+		];
+		rewardTrack: "PREMIUM";
+	}
+>;
 
 export type VsSeekerLootMasterfileEntry =
 	| VsSeekerLoot10Free

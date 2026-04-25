@@ -33,7 +33,7 @@ export interface AddressablePokemonSettings {
 				"ZIGZAGOON",
 				"GARDEVOIR",
 				"FLYGON",
-				"MELOETTA"
+				"MELOETTA",
 			];
 		};
 	};
@@ -154,7 +154,7 @@ export interface ArPhotoFeatureFlags {
 				"IRONBOULDER",
 				"IRONCROWN",
 				"TERAPAGOS",
-				"PECHARUNT"
+				"PECHARUNT",
 			];
 			incentives: [
 				{
@@ -164,7 +164,7 @@ export interface ArPhotoFeatureFlags {
 				{
 					incentiveIconName: "tx_coin_pouch_pokeball";
 					incentiveStringKey: "incentive_pokeball_30_and_pokecoin_100_key";
-				}
+				},
 			];
 			incentivesEnabled: true;
 			isFeatureEnabled: true;
@@ -173,63 +173,43 @@ export interface ArPhotoFeatureFlags {
 			newDaysCutoff: 3;
 			pokemonWithExcludedForms: [
 				{
-					excludedForms: [
-						"VENUSAUR_COPY_2019"
-					];
+					excludedForms: ["VENUSAUR_COPY_2019"];
 					pokemonId: "VENUSAUR";
 				},
 				{
-					excludedForms: [
-						"CHARIZARD_COPY_2019"
-					];
+					excludedForms: ["CHARIZARD_COPY_2019"];
 					pokemonId: "CHARIZARD";
 				},
 				{
-					excludedForms: [
-						"BLASTOISE_COPY_2019"
-					];
+					excludedForms: ["BLASTOISE_COPY_2019"];
 					pokemonId: "BLASTOISE";
 				},
 				{
-					excludedForms: [
-						"PIKACHU_COPY_2019"
-					];
+					excludedForms: ["PIKACHU_COPY_2019"];
 					pokemonId: "PIKACHU";
 				},
 				{
-					excludedForms: [
-						"PSYDUCK_SWIM_2025"
-					];
+					excludedForms: ["PSYDUCK_SWIM_2025"];
 					pokemonId: "PSYDUCK";
 				},
 				{
-					excludedForms: [
-						"RAIKOU_S"
-					];
+					excludedForms: ["RAIKOU_S"];
 					pokemonId: "RAIKOU";
 				},
 				{
-					excludedForms: [
-						"ENTEI_S"
-					];
+					excludedForms: ["ENTEI_S"];
 					pokemonId: "ENTEI";
 				},
 				{
-					excludedForms: [
-						"SUICUNE_S"
-					];
+					excludedForms: ["SUICUNE_S"];
 					pokemonId: "SUICUNE";
 				},
 				{
-					excludedForms: [
-						"LUGIA_S"
-					];
+					excludedForms: ["LUGIA_S"];
 					pokemonId: "LUGIA";
 				},
 				{
-					excludedForms: [
-						"HO_OH_S"
-					];
+					excludedForms: ["HO_OH_S"];
 					pokemonId: "HO_OH";
 				},
 				{
@@ -252,20 +232,16 @@ export interface ArPhotoFeatureFlags {
 						"SPINDA_16",
 						"SPINDA_17",
 						"SPINDA_18",
-						"SPINDA_19"
+						"SPINDA_19",
 					];
 					pokemonId: "SPINDA";
 				},
 				{
-					excludedForms: [
-						"LATIAS_S"
-					];
+					excludedForms: ["LATIAS_S"];
 					pokemonId: "LATIAS";
 				},
 				{
-					excludedForms: [
-						"LATIOS_S"
-					];
+					excludedForms: ["LATIOS_S"];
 					pokemonId: "LATIOS";
 				},
 				{
@@ -287,49 +263,32 @@ export interface ArPhotoFeatureFlags {
 						"ARCEUS_PSYCHIC",
 						"ARCEUS_ROCK",
 						"ARCEUS_STEEL",
-						"ARCEUS_WATER"
+						"ARCEUS_WATER",
 					];
 					pokemonId: "ARCEUS";
 				},
 				{
-					excludedForms: [
-						"DARMANITAN_ZEN",
-						"DARMANITAN_GALARIAN_ZEN"
-					];
+					excludedForms: ["DARMANITAN_ZEN", "DARMANITAN_GALARIAN_ZEN"];
 					pokemonId: "DARMANITAN";
 				},
 				{
-					excludedForms: [
-						"FRILLISH_FEMALE"
-					];
+					excludedForms: ["FRILLISH_FEMALE"];
 					pokemonId: "FRILLISH";
 				},
 				{
-					excludedForms: [
-						"JELLICENT_FEMALE"
-					];
+					excludedForms: ["JELLICENT_FEMALE"];
 					pokemonId: "JELLICENT";
 				},
 				{
-					excludedForms: [
-						"KELDEO_RESOLUTE"
-					];
+					excludedForms: ["KELDEO_RESOLUTE"];
 					pokemonId: "KELDEO";
 				},
 				{
-					excludedForms: [
-						"MELOETTA_PIROUETTE"
-					];
+					excludedForms: ["MELOETTA_PIROUETTE"];
 					pokemonId: "MELOETTA";
 				},
 				{
-					excludedForms: [
-						"GENESECT_BURN",
-						"GENESECT_CHILL",
-						"GENESECT_DOUSE",
-						"GENESECT_DOUSE",
-						"GENESECT_SHOCK"
-					];
+					excludedForms: ["GENESECT_BURN", "GENESECT_CHILL", "GENESECT_DOUSE", "GENESECT_DOUSE", "GENESECT_SHOCK"];
 					pokemonId: "GENESECT";
 				},
 				{
@@ -352,7 +311,7 @@ export interface ArPhotoFeatureFlags {
 						"SCATTERBUG_SANDSTORM",
 						"SCATTERBUG_SAVANNA",
 						"SCATTERBUG_SUN",
-						"SCATTERBUG_TUNDRA"
+						"SCATTERBUG_TUNDRA",
 					];
 					pokemonId: "SCATTERBUG";
 				},
@@ -376,41 +335,24 @@ export interface ArPhotoFeatureFlags {
 						"SPEWPA_SANDSTORM",
 						"SPEWPA_SAVANNA",
 						"SPEWPA_SUN",
-						"SPEWPA_TUNDRA"
+						"SPEWPA_TUNDRA",
 					];
 					pokemonId: "SPEWPA";
 				},
 				{
-					excludedForms: [
-						"PYROAR_FEMALE"
-					];
+					excludedForms: ["PYROAR_FEMALE"];
 					pokemonId: "PYROAR";
 				},
 				{
-					excludedForms: [
-						"FLABEBE_BLUE",
-						"FLABEBE_ORANGE",
-						"FLABEBE_WHITE",
-						"FLABEBE_YELLOW"
-					];
+					excludedForms: ["FLABEBE_BLUE", "FLABEBE_ORANGE", "FLABEBE_WHITE", "FLABEBE_YELLOW"];
 					pokemonId: "FLABEBE";
 				},
 				{
-					excludedForms: [
-						"FLOETTE_BLUE",
-						"FLOETTE_ORANGE",
-						"FLOETTE_WHITE",
-						"FLOETTE_YELLOW"
-					];
+					excludedForms: ["FLOETTE_BLUE", "FLOETTE_ORANGE", "FLOETTE_WHITE", "FLOETTE_YELLOW"];
 					pokemonId: "FLOETTE";
 				},
 				{
-					excludedForms: [
-						"FLORGES_BLUE",
-						"FLORGES_ORANGE",
-						"FLORGES_WHITE",
-						"FLORGES_YELLOW"
-					];
+					excludedForms: ["FLORGES_BLUE", "FLORGES_ORANGE", "FLORGES_WHITE", "FLORGES_YELLOW"];
 					pokemonId: "FLORGES";
 				},
 				{
@@ -423,123 +365,82 @@ export interface ArPhotoFeatureFlags {
 						"FURFROU_DANDY",
 						"FURFROU_LA_REINE",
 						"FURFROU_KABUKI",
-						"FURFROU_PHARAOH"
+						"FURFROU_PHARAOH",
 					];
 					pokemonId: "FURFROU";
 				},
 				{
-					excludedForms: [
-						"MEOWSTIC_FEMALE"
-					];
+					excludedForms: ["MEOWSTIC_FEMALE"];
 					pokemonId: "MEOWSTIC";
 				},
 				{
-					excludedForms: [
-						"PUMPKABOO_LARGE",
-						"PUMPKABOO_SMALL",
-						"PUMPKABOO_SUPER"
-					];
+					excludedForms: ["PUMPKABOO_LARGE", "PUMPKABOO_SMALL", "PUMPKABOO_SUPER"];
 					pokemonId: "PUMPKABOO";
 				},
 				{
-					excludedForms: [
-						"GOURGEIST_LARGE",
-						"GOURGEIST_SMALL",
-						"GOURGEIST_SUPER"
-					];
+					excludedForms: ["GOURGEIST_LARGE", "GOURGEIST_SMALL", "GOURGEIST_SUPER"];
 					pokemonId: "GOURGEIST";
 				},
 				{
-					excludedForms: [
-						"ZYGARDE_FIFTY_PERCENT",
-						"ZYGARDE_TEN_PERCENT"
-					];
+					excludedForms: ["ZYGARDE_FIFTY_PERCENT", "ZYGARDE_TEN_PERCENT"];
 					pokemonId: "ZYGARDE";
 				},
 				{
-					excludedForms: [
-						"ROCKRUFF_DUSK"
-					];
+					excludedForms: ["ROCKRUFF_DUSK"];
 					pokemonId: "ROCKRUFF";
 				},
 				{
-					excludedForms: [
-						"WISHIWASHI_SCHOOL"
-					];
+					excludedForms: ["WISHIWASHI_SCHOOL"];
 					pokemonId: "WISHIWASHI";
 				},
 				{
-					excludedForms: [
-						"MIMIKYU_BUSTED"
-					];
+					excludedForms: ["MIMIKYU_BUSTED"];
 					pokemonId: "MIMIKYU";
 				},
 				{
-					excludedForms: [
-						"NECROZMA_ULTRA"
-					];
+					excludedForms: ["NECROZMA_ULTRA"];
 					pokemonId: "NECROZMA";
 				},
 				{
-					excludedForms: [
-						"SINISTEA_ANTIQUE"
-					];
+					excludedForms: ["SINISTEA_ANTIQUE"];
 					pokemonId: "SINISTEA";
 				},
 				{
-					excludedForms: [
-						"POLTEAGEIST_ANTIQUE"
-					];
+					excludedForms: ["POLTEAGEIST_ANTIQUE"];
 					pokemonId: "POLTEAGEIST";
 				},
 				{
-					excludedForms: [
-						"INDEEDEE_FEMALE"
-					];
+					excludedForms: ["INDEEDEE_FEMALE"];
 					pokemonId: "INDEEDEE";
 				},
 				{
-					excludedForms: [
-						"ETERNATUS_ETERNAMAX"
-					];
+					excludedForms: ["ETERNATUS_ETERNAMAX"];
 					pokemonId: "ETERNATUS";
 				},
 				{
-					excludedForms: [
-						"OINKOLOGNE_FEMALE"
-					];
+					excludedForms: ["OINKOLOGNE_FEMALE"];
 					pokemonId: "OINKOLOGNE";
 				},
 				{
-					excludedForms: [
-						"MAUSHOLD_FAMILY_OF_FOUR"
-					];
+					excludedForms: ["MAUSHOLD_FAMILY_OF_FOUR"];
 					pokemonId: "MAUSHOLD";
 				},
 				{
-					excludedForms: [
-						"DUDUNSPARCE_THREE"
-					];
+					excludedForms: ["DUDUNSPARCE_THREE"];
 					pokemonId: "DUDUNSPARCE";
 				},
 				{
-					excludedForms: [
-						"POLTCHAGEIST_ARTISAN"
-					];
+					excludedForms: ["POLTCHAGEIST_ARTISAN"];
 					pokemonId: "POLTCHAGEIST";
 				},
 				{
-					excludedForms: [
-						"SINISTCHA_MASTERPIECE"
-					];
+					excludedForms: ["SINISTCHA_MASTERPIECE"];
 					pokemonId: "SINISTCHA";
 				},
 				{
-					excludedForms: [
-						"GIMMIGHOUL_NORMAL"
-					];
+					excludedForms: ["GIMMIGHOUL_NORMAL"];
 					pokemonId: "GIMMIGHOUL";
-				}
+				},
 			];
 			preLoginDeviceAllowList: [
 				"eeef41808b1ea6b81ba2816ae45813b87fa00ec62581f43fe382880fe0afdca0",
@@ -547,7 +448,7 @@ export interface ArPhotoFeatureFlags {
 				"3f200621fe1107fc08766965c8efc20d7ca145bc8acff71f7e4b4c484a513a2f",
 				"d24f6de5ab288a106d3e286fdc96c2629919214bbfd944a8a31a9ad9453d4388",
 				"0c691fb70e5064fb1a717ab41b4c029bd49d00882ec45dd926ab7256231919ae",
-				"bc440d794a6463a6e83b88ee3832ae8ae58d543177198b8940ba354856cb1429"
+				"bc440d794a6463a6e83b88ee3832ae8ae58d543177198b8940ba354856cb1429",
 			];
 			preLoginMetricsEnabled: -1374928056;
 			preLoginRollOutRatio: 1;
@@ -661,7 +562,7 @@ export interface BattleHubBadgeSettings {
 				"BADGE_ULTRA_LEAGUE",
 				"BADGE_MASTER_LEAGUE",
 				"BADGE_BATTLE_TRAINING_WON",
-				"BADGE_ROCKET_GRUNTS_DEFEATED"
+				"BADGE_ROCKET_GRUNTS_DEFEATED",
 			];
 		};
 	};
@@ -675,31 +576,19 @@ export interface BattleHubOrderSettings {
 			section: [
 				{
 					mainSection: "SECTION_VS_SEEKER";
-					subsection: [
-						"SUBSECTION_VS_CHARGING",
-						"SUBSECTION_VS_FREE",
-						"SUBSECTION_VS_PREMIUM"
-					];
-				}
+					subsection: ["SUBSECTION_VS_CHARGING", "SUBSECTION_VS_FREE", "SUBSECTION_VS_PREMIUM"];
+				},
 			];
 			sectionGroup: [
 				{
-					section: [
-						"SECTION_VS_SEEKER",
-						"SECTION_CURR_SEASON",
-						"SECTION_LAST_SEASON"
-					];
+					section: ["SECTION_VS_SEEKER", "SECTION_CURR_SEASON", "SECTION_LAST_SEASON"];
 				},
 				{
-					section: [
-						"SECTION_QR_CODE"
-					];
+					section: ["SECTION_QR_CODE"];
 				},
 				{
-					section: [
-						"SECTION_TEAM_LEADERS"
-					];
-				}
+					section: ["SECTION_TEAM_LEADERS"];
+				},
 			];
 		};
 	};
@@ -711,39 +600,16 @@ export interface BattleInputBufferSettings {
 		templateId: "DEFAULT_BATTLE_INPUT_BUFFER_SETTINGS";
 		battleInputBufferSettings: {
 			breadInputBufferPriorityList: {
-				eventPriority: [
-					"DODGE",
-					"SWAP_POKEMON"
-				];
-				priorityEventTypeList: [
-					"DODGE",
-					"SWAP_POKEMON",
-					"CHARGE_ATTACK"
-				];
+				eventPriority: ["DODGE", "SWAP_POKEMON"];
+				priorityEventTypeList: ["DODGE", "SWAP_POKEMON", "CHARGE_ATTACK"];
 			};
 			combatInputBufferPriorityList: {
-				eventPriority: [
-					"SWAP_POKEMON"
-				];
-				priorityEventTypeList: [
-					"SWAP_POKEMON",
-					"CHARGE_ATTACK"
-				];
+				eventPriority: ["SWAP_POKEMON"];
+				priorityEventTypeList: ["SWAP_POKEMON", "CHARGE_ATTACK"];
 			};
 			raidsInputBufferPriorityList: {
-				eventPriority: [
-					"ACTOR_ABILITY",
-					"ITEM",
-					"DODGE",
-					"SWAP_POKEMON"
-				];
-				priorityEventTypeList: [
-					"ACTOR_ABILITY",
-					"ITEM",
-					"DODGE",
-					"SWAP_POKEMON",
-					"CHARGE_ATTACK"
-				];
+				eventPriority: ["ACTOR_ABILITY", "ITEM", "DODGE", "SWAP_POKEMON"];
+				priorityEventTypeList: ["ACTOR_ABILITY", "ITEM", "DODGE", "SWAP_POKEMON", "CHARGE_ATTACK"];
 			};
 		};
 	};
@@ -805,13 +671,8 @@ export interface BelugaPokemonWhitelist {
 	data: {
 		templateId: "BELUGA_POKEMON_WHITELIST";
 		belugaPokemonWhitelist: {
-			additionalPokemonAllowed: [
-				"MELTAN",
-				"MELMETAL"
-			];
-			costumesAllowed: [
-				"COSTUME_UNSET"
-			];
+			additionalPokemonAllowed: ["MELTAN", "MELMETAL"];
+			costumesAllowed: ["COSTUME_UNSET"];
 			maxAllowedPokemonPokedexNumber: 150;
 		};
 	};
@@ -845,7 +706,7 @@ export interface BreadBattleClientSettings {
 			maxPlayersPerBreadDoughLobby: 100;
 			maxPlayersPerBreadLobby: 4;
 			maxPlayersToPrepareBreadDoughLobby: 98;
-			maxRemoteBreadBattlePassesAllowed: 10;
+			maxRemoteBreadBattlePassesAllowed: 20;
 			maxRemotePlayersPerBreadDoughLobby: 100;
 			maxRemotePlayersPerBreadLobby: 4;
 			minPlayersToPrepareBreadLobby: 1;
@@ -914,76 +775,76 @@ export interface BreadMoveMappings {
 			mappings: [
 				{
 					move: "VN_BM_001";
-					"type": "POKEMON_TYPE_FIRE";
+					type: "POKEMON_TYPE_FIRE";
 				},
 				{
 					move: "VN_BM_002";
-					"type": "POKEMON_TYPE_BUG";
+					type: "POKEMON_TYPE_BUG";
 				},
 				{
 					move: "VN_BM_003";
-					"type": "POKEMON_TYPE_ELECTRIC";
+					type: "POKEMON_TYPE_ELECTRIC";
 				},
 				{
 					move: "VN_BM_004";
-					"type": "POKEMON_TYPE_NORMAL";
+					type: "POKEMON_TYPE_NORMAL";
 				},
 				{
 					move: "VN_BM_005";
-					"type": "POKEMON_TYPE_FIGHTING";
+					type: "POKEMON_TYPE_FIGHTING";
 				},
 				{
 					move: "VN_BM_006";
-					"type": "POKEMON_TYPE_GHOST";
+					type: "POKEMON_TYPE_GHOST";
 				},
 				{
 					move: "VN_BM_007";
-					"type": "POKEMON_TYPE_ICE";
+					type: "POKEMON_TYPE_ICE";
 				},
 				{
 					move: "VN_BM_008";
-					"type": "POKEMON_TYPE_POISON";
+					type: "POKEMON_TYPE_POISON";
 				},
 				{
 					move: "VN_BM_009";
-					"type": "POKEMON_TYPE_WATER";
+					type: "POKEMON_TYPE_WATER";
 				},
 				{
 					move: "VN_BM_010";
-					"type": "POKEMON_TYPE_FLYING";
+					type: "POKEMON_TYPE_FLYING";
 				},
 				{
 					move: "VN_BM_011";
-					"type": "POKEMON_TYPE_FAIRY";
+					type: "POKEMON_TYPE_FAIRY";
 				},
 				{
 					move: "VN_BM_012";
-					"type": "POKEMON_TYPE_DRAGON";
+					type: "POKEMON_TYPE_DRAGON";
 				},
 				{
 					move: "VN_BM_013";
-					"type": "POKEMON_TYPE_PSYCHIC";
+					type: "POKEMON_TYPE_PSYCHIC";
 				},
 				{
 					move: "VN_BM_014";
-					"type": "POKEMON_TYPE_ROCK";
+					type: "POKEMON_TYPE_ROCK";
 				},
 				{
 					move: "VN_BM_015";
-					"type": "POKEMON_TYPE_GROUND";
+					type: "POKEMON_TYPE_GROUND";
 				},
 				{
 					move: "VN_BM_016";
-					"type": "POKEMON_TYPE_DARK";
+					type: "POKEMON_TYPE_DARK";
 				},
 				{
 					move: "VN_BM_017";
-					"type": "POKEMON_TYPE_GRASS";
+					type: "POKEMON_TYPE_GRASS";
 				},
 				{
 					move: "VN_BM_018";
-					"type": "POKEMON_TYPE_STEEL";
-				}
+					type: "POKEMON_TYPE_STEEL";
+				},
 			];
 		};
 	};
@@ -1016,9 +877,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 2.59;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "BULBASAUR";
 				},
@@ -1043,9 +904,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.86;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "IVYSAUR";
 				},
@@ -1090,9 +951,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.46;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "VENUSAUR";
 				},
@@ -1117,9 +978,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 3.02;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "CHARMANDER";
 				},
@@ -1144,9 +1005,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 2.26;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "CHARMELEON";
 				},
@@ -1185,9 +1046,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.7;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "CHARIZARD";
 				},
@@ -1212,9 +1073,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 3.58;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "SQUIRTLE";
 				},
@@ -1239,9 +1100,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 2.33;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "WARTORTLE";
 				},
@@ -1282,9 +1143,9 @@ export interface BreadPokemonScalingSettings {
 										scale: 1.38;
 										xOffset: 0.5;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "BLASTOISE";
 				},
@@ -1306,9 +1167,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 2.75;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "MACHOP";
 				},
@@ -1330,9 +1191,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.75;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "MACHOKE";
 				},
@@ -1354,9 +1215,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.64;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "MACHAMP";
 				},
@@ -1381,9 +1242,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 2;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "GASTLY";
 				},
@@ -1405,9 +1266,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.33;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "HAUNTER";
 				},
@@ -1432,9 +1293,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.41;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "GENGAR";
 				},
@@ -1456,9 +1317,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.45;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "GENGAR";
 				},
@@ -1480,9 +1341,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 2.55;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "KRABBY";
 				},
@@ -1504,9 +1365,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.7;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "KINGLER";
 				},
@@ -1528,9 +1389,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 10;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "LAPRAS";
 				},
@@ -1552,9 +1413,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.02;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "LAPRAS";
 				},
@@ -1576,9 +1437,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 3.61;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "BELDUM";
 				},
@@ -1600,9 +1461,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.61;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "METANG";
 				},
@@ -1624,9 +1485,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "METAGROSS";
 				},
@@ -1651,9 +1512,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 5.33;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "DRILBUR";
 				},
@@ -1675,9 +1536,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 3.29;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "EXCADRILL";
 				},
@@ -1698,9 +1559,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.35;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "CRYOGONAL";
 				},
@@ -1724,9 +1585,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 5.33;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "GROOKEY";
 				},
@@ -1750,9 +1611,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 2.41;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "THWACKEY";
 				},
@@ -1774,9 +1635,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.23;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "RILLABOOM";
 				},
@@ -1797,9 +1658,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.45;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "RILLABOOM";
 				},
@@ -1823,9 +1684,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 5.33;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "SCORBUNNY";
 				},
@@ -1849,9 +1710,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 3.02;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "RABOOT";
 				},
@@ -1875,9 +1736,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.76;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "CINDERACE";
 				},
@@ -1901,9 +1762,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 2.1;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "CINDERACE";
 				},
@@ -1927,9 +1788,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 5.33;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "SOBBLE";
 				},
@@ -1953,9 +1814,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 2.59;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "DRIZZILE";
 				},
@@ -1979,9 +1840,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.3;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "INTELEON";
 				},
@@ -2002,9 +1863,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 2.29;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "INTELEON";
 				},
@@ -2028,9 +1889,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 5.33;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "SKWOVET";
 				},
@@ -2054,9 +1915,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 3.45;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "GREEDENT";
 				},
@@ -2077,9 +1938,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 3.02;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "WOOLOO";
 				},
@@ -2100,9 +1961,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.79;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "DUBWOOL";
 				},
@@ -2126,9 +1987,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 4.27;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "TOXEL";
 				},
@@ -2153,9 +2014,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.54;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "TOXTRICITY";
 				},
@@ -2180,9 +2041,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.54;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "TOXTRICITY";
 				},
@@ -2208,9 +2069,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.63;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "TOXTRICITY";
 				},
@@ -2236,9 +2097,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.63;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "TOXTRICITY";
 				},
@@ -2259,9 +2120,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.08;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "FALINKS";
 				},
@@ -2283,9 +2144,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.51;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "KINGLER";
 				},
@@ -2307,9 +2168,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 3;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "DARUMAKA";
 				},
@@ -2331,9 +2192,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.9;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "DARMANITAN";
 				},
@@ -2355,9 +2216,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 5.52;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "PIDOVE";
 				},
@@ -2379,9 +2240,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 2.6;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "TRANQUILL";
 				},
@@ -2403,9 +2264,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 2.12;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "UNFEZANT";
 				},
@@ -2427,9 +2288,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "ARTICUNO";
 				},
@@ -2451,9 +2312,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "ZAPDOS";
 				},
@@ -2475,9 +2336,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 0.8;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "MOLTRES";
 				},
@@ -2498,9 +2359,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 3.89;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "KUBFU";
 				},
@@ -2522,9 +2383,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.65;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "URSHIFU";
 				},
@@ -2546,9 +2407,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.65;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "URSHIFU";
 				},
@@ -2570,9 +2431,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "RAIKOU";
 				},
@@ -2594,9 +2455,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "ENTEI";
 				},
@@ -2618,9 +2479,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "SUICUNE";
 				},
@@ -2641,9 +2502,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 7.86;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "CATERPIE";
 				},
@@ -2663,9 +2524,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 2.59;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "METAPOD";
 				},
@@ -2686,9 +2547,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 2.45;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "BUTTERFREE";
 				},
@@ -2709,9 +2570,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 2.12;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "CHANSEY";
 				},
@@ -2732,9 +2593,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.69;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "PASSIMIAN";
 				},
@@ -2756,9 +2617,9 @@ export interface BreadPokemonScalingSettings {
 									breadStationVisualData: {
 										scale: 1.1;
 									};
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "SNORLAX";
 				},
@@ -2774,12 +2635,12 @@ export interface BreadPokemonScalingSettings {
 										yOffset: 9.74;
 									};
 									breadMode: 4;
-								}
+								},
 							];
-						}
+						},
 					];
 					pokemonId: "ETERNATUS";
-				}
+				},
 			];
 		};
 	};
@@ -2793,229 +2654,164 @@ export interface BreadSettings {
 			allowedSourdoughPokemon: [
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"VENUSAUR_NORMAL"
-					];
+					form: ["VENUSAUR_NORMAL"];
 					pokemonId: "VENUSAUR";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"CHARIZARD_NORMAL"
-					];
+					form: ["CHARIZARD_NORMAL"];
 					pokemonId: "CHARIZARD";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"BLASTOISE_NORMAL"
-					];
+					form: ["BLASTOISE_NORMAL"];
 					pokemonId: "BLASTOISE";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"BUTTERFREE_NORMAL"
-					];
+					form: ["BUTTERFREE_NORMAL"];
 					pokemonId: "BUTTERFREE";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"PIKACHU_NORMAL"
-					];
+					form: ["PIKACHU_NORMAL"];
 					pokemonId: "PIKACHU";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"MEOWTH_NORMAL"
-					];
+					form: ["MEOWTH_NORMAL"];
 					pokemonId: "MEOWTH";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"MACHAMP_NORMAL"
-					];
+					form: ["MACHAMP_NORMAL"];
 					pokemonId: "MACHAMP";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"GENGAR_NORMAL"
-					];
+					form: ["GENGAR_NORMAL"];
 					pokemonId: "GENGAR";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"KINGLER_NORMAL"
-					];
+					form: ["KINGLER_NORMAL"];
 					pokemonId: "KINGLER";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"LAPRAS_NORMAL"
-					];
+					form: ["LAPRAS_NORMAL"];
 					pokemonId: "LAPRAS";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"EEVEE_NORMAL"
-					];
+					form: ["EEVEE_NORMAL"];
 					pokemonId: "EEVEE";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"SNORLAX_NORMAL"
-					];
+					form: ["SNORLAX_NORMAL"];
 					pokemonId: "SNORLAX";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"GARBODOR_NORMAL"
-					];
+					form: ["GARBODOR_NORMAL"];
 					pokemonId: "GARBODOR";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"MELMETAL_NORMAL"
-					];
+					form: ["MELMETAL_NORMAL"];
 					pokemonId: "MELMETAL";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"FORM_UNSET"
-					];
+					form: ["FORM_UNSET"];
 					pokemonId: "RILLABOOM";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"FORM_UNSET"
-					];
+					form: ["FORM_UNSET"];
 					pokemonId: "CINDERACE";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"FORM_UNSET"
-					];
+					form: ["FORM_UNSET"];
 					pokemonId: "INTELEON";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"FORM_UNSET"
-					];
+					form: ["FORM_UNSET"];
 					pokemonId: "CORVIKNIGHT";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"FORM_UNSET"
-					];
+					form: ["FORM_UNSET"];
 					pokemonId: "ORBEETLE";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"FORM_UNSET"
-					];
+					form: ["FORM_UNSET"];
 					pokemonId: "DREDNAW";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"FORM_UNSET"
-					];
+					form: ["FORM_UNSET"];
 					pokemonId: "COALOSSAL";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"FORM_UNSET"
-					];
+					form: ["FORM_UNSET"];
 					pokemonId: "FLAPPLE";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"FORM_UNSET"
-					];
+					form: ["FORM_UNSET"];
 					pokemonId: "APPLETUN";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"FORM_UNSET"
-					];
+					form: ["FORM_UNSET"];
 					pokemonId: "SANDACONDA";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"TOXTRICITY_LOW_KEY",
-						"TOXTRICITY_AMPED"
-					];
+					form: ["TOXTRICITY_LOW_KEY", "TOXTRICITY_AMPED"];
 					pokemonId: "TOXTRICITY";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"FORM_UNSET"
-					];
+					form: ["FORM_UNSET"];
 					pokemonId: "CENTISKORCH";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"FORM_UNSET"
-					];
+					form: ["FORM_UNSET"];
 					pokemonId: "HATTERENE";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"FORM_UNSET"
-					];
+					form: ["FORM_UNSET"];
 					pokemonId: "GRIMMSNARL";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"FORM_UNSET"
-					];
+					form: ["FORM_UNSET"];
 					pokemonId: "ALCREMIE";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"FORM_UNSET"
-					];
+					form: ["FORM_UNSET"];
 					pokemonId: "COPPERAJAH";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE";
-					form: [
-						"URSHIFU_SINGLE_STRIKE"
-					];
+					form: ["URSHIFU_SINGLE_STRIKE"];
 					pokemonId: "URSHIFU";
 				},
 				{
 					breadMode: "BREAD_DOUGH_MODE_2";
-					form: [
-						"URSHIFU_RAPID_STRIKE"
-					];
+					form: ["URSHIFU_RAPID_STRIKE"];
 					pokemonId: "URSHIFU";
-				}
+				},
 			];
 			breadBattleAvailability: {
 				breadBattleAvailabilityEndMinute: 1260;
@@ -3072,7 +2868,7 @@ export interface BuddyInteractionSettings {
 				"ITEM_PINAP_BERRY",
 				"ITEM_GOLDEN_RAZZ_BERRY",
 				"ITEM_GOLDEN_PINAP_BERRY",
-				"ITEM_POFFIN"
+				"ITEM_POFFIN",
 			];
 		};
 	};
@@ -3136,7 +2932,7 @@ export interface ButterflyCollectorSettings {
 				"VIVILLON_REGION_SANDSTORM",
 				"VIVILLON_REGION_SAVANNA",
 				"VIVILLON_REGION_SUN",
-				"VIVILLON_REGION_TUNDRA"
+				"VIVILLON_REGION_TUNDRA",
 			];
 			version: 1;
 		};
@@ -3208,7 +3004,7 @@ export interface CombatCompetitiveSeasonSettings {
 				"1764709200000",
 				"1772571600000",
 				"1780430400000",
-				"4070980800000"
+				"4070980800000",
 			];
 		};
 	};
@@ -3222,7 +3018,7 @@ export interface CombatLeagueSettings {
 			combatLeagueTemplateId: [
 				"COMBAT_LEAGUE_DEFAULT_GREAT",
 				"COMBAT_LEAGUE_DEFAULT_ULTRA",
-				"COMBAT_LEAGUE_DEFAULT_MASTER"
+				"COMBAT_LEAGUE_DEFAULT_MASTER",
 			];
 		};
 	};
@@ -3262,7 +3058,7 @@ export interface CombatSettings {
 				18,
 				19,
 				20,
-				22
+				22,
 			];
 			combatFeatureFlags: {
 				realDeviceTimeEnabled: true;
@@ -3297,28 +3093,8 @@ export interface CombatStatStageSettings {
 	data: {
 		templateId: "COMBAT_STAT_STAGE_SETTINGS";
 		combatStatStageSettings: {
-			attackBuffMultiplier: [
-				0.5,
-				0.5714286,
-				0.6666667,
-				0.8,
-				1,
-				1.25,
-				1.5,
-				1.75,
-				2
-			];
-			defenseBuffMultiplier: [
-				0.5,
-				0.5714286,
-				0.6666667,
-				0.8,
-				1,
-				1.25,
-				1.5,
-				1.75,
-				2
-			];
+			attackBuffMultiplier: [0.5, 0.5714286, 0.6666667, 0.8, 1, 1.25, 1.5, 1.75, 2];
+			defenseBuffMultiplier: [0.5, 0.5714286, 0.6666667, 0.8, 1, 1.25, 1.5, 1.75, 2];
 			maximumStatStage: 4;
 			minimumStatStage: -4;
 		};
@@ -3346,7 +3122,7 @@ export interface ContestSettings {
 					length: "LONG";
 					maxDurationMs: "2419200000";
 					minDurationMs: "345600000";
-				}
+				},
 			];
 			contestLimits: [
 				{
@@ -3356,7 +3132,7 @@ export interface ContestSettings {
 					};
 					contestOccurrence: "DAILY";
 					perContestMaxEntries: 150;
-				}
+				},
 			];
 			contestScoreCoefficient: [
 				{
@@ -3366,7 +3142,7 @@ export interface ContestSettings {
 						weightCoefficient: 150;
 						xxlAdjustmentFactor: 1;
 					};
-				}
+				},
 			];
 			contestWarmupAndCooldownDurationsMs: [
 				{
@@ -3378,7 +3154,7 @@ export interface ContestSettings {
 					contestOccurrence: "HOURLY";
 					cycleCooldownDurationMs: "600000";
 					cycleWarmupDurationMs: "600000";
-				}
+				},
 			];
 			defaultContestMaxEntries: 200;
 			defaultCycleCooldownDurationMs: "600000";
@@ -3451,7 +3227,7 @@ export interface ConversationSettings {
 					appraisalKey: "appraise_sinistcha_unremarkable";
 					form: "SINISTCHA_UNREMARKABLE";
 					id: "SINISTCHA";
-				}
+				},
 			];
 		};
 	};
@@ -3481,7 +3257,7 @@ export interface DailyAdventureIncenseSettings {
 					{
 						count: 30;
 						item: "ITEM_POKE_BALL";
-					}
+					},
 				];
 			};
 			pokeballGrantThreshold: 30;
@@ -3495,14 +3271,8 @@ export interface DeepLinkingSettings {
 	data: {
 		templateId: "DEEP_LINKING_SETTINGS";
 		deepLinkingSettings: {
-			actionsThatExecuteBeforeMapLoads: [
-				"FILL_REFERRAL_CODE",
-				34
-			];
-			actionsThatIgnoreMinLevel: [
-				"FILL_REFERRAL_CODE",
-				34
-			];
+			actionsThatExecuteBeforeMapLoads: ["FILL_REFERRAL_CODE", 34];
+			actionsThatIgnoreMinLevel: ["FILL_REFERRAL_CODE", 34];
 			iosActionButtonEnabled: true;
 			minPlayerLevelForExternalLink: 5;
 			minPlayerLevelForNotificationLink: 5;
@@ -3562,7 +3332,7 @@ export interface EventPassSettings {
 						iconType: "RAID";
 						quantity: 100;
 						text: "quest_win_raid_singular";
-					}
+					},
 				];
 				eventPassTitleKey: "season_pass_base_track_title_april";
 				eventPassTrackUpgradeDescriptions: [
@@ -3571,17 +3341,13 @@ export interface EventPassSettings {
 						eventDurationKey: "season_pass_april2026_event_duration";
 						eventPassTrackToUpgradeTo: "PREMIUM";
 						passTrackUpgradeHeaderDescription: "season_pass_april2026_track_upgrade_header_description";
-						ranksToHighlightRewards: [
-							94,
-							99,
-							100
-						];
+						ranksToHighlightRewards: [94, 99, 100];
 						trackUnlockImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe.png";
 						trackUnlockPlusPointsImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe_plus.png";
 						trackUnlockPlusPointsSkuId: "pgorelease.month2_deluxe_event_pass_track_unlock_plus_points";
 						trackUnlockSkuId: "pgorelease.month2_deluxe_event_pass_track_unlock";
 						upgradeDescriptionKey: "season_pass_april2026_upgrade_description";
-					}
+					},
 				];
 				headerIconUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FS22_MemoriesInMotion_Logo.png";
 				premiumRewardBannerBottom: "event_pass_premium_reward_banner_bottom_text";
@@ -3606,7 +3372,7 @@ export interface EventPassSettings {
 					badge: "BADGE_EVENT_0175";
 					track: "PREMIUM";
 					trackTitleKey: "season_pass_premium_track_title_april";
-				}
+				},
 			];
 		};
 	};
@@ -3617,17 +3383,7 @@ export interface EventPlannerPopularNotificationSettings {
 	data: {
 		templateId: "EVENT_PLANNER_POPULAR_RAID_RSVP_SETTINGS";
 		eventPlannerPopularNotificationSettings: {
-			battleLevels: [
-				4,
-				5,
-				6,
-				7,
-				8,
-				9,
-				10,
-				14,
-				15
-			];
+			battleLevels: [4, 5, 6, 7, 8, 9, 10, 14, 15];
 			firstScanOffsetSeconds: "60";
 			maxNotifPerDay: 3;
 			nearbyPoiThreshold: 4;
@@ -3689,7 +3445,7 @@ export interface GiftingSettings {
 				{
 					multiplier: 4;
 					randomWeight: 0.1;
-				}
+				},
 			];
 			stardustPerGift: 50;
 		};
@@ -3716,7 +3472,7 @@ export interface GuiSearchSettings {
 				"tr-TR,2",
 				"hi-IN,2",
 				"id-ID,2",
-				"es-MX,2"
+				"es-MX,2",
 			];
 			guiSearchEnabled: true;
 			maxNumberFavoriteSearches: 12;
@@ -3738,11 +3494,7 @@ export interface GymBadgeSettings {
 			loseAllBattlesScore: 5;
 			pokemonDeployScore: 100;
 			raidBattleWinningScore: 1000;
-			target: [
-				500,
-				4000,
-				30000
-			];
+			target: [500, 4000, 30000];
 		};
 	};
 }
@@ -3762,15 +3514,9 @@ export interface IapSettings {
 	data: {
 		templateId: "IAP_SETTINGS";
 		iapSettings: {
-			dailyDefenderBonusCurrency: [
-				"STARDUST",
-				"POKECOIN"
-			];
+			dailyDefenderBonusCurrency: ["STARDUST", "POKECOIN"];
 			dailyDefenderBonusMaxDefenders: 10;
-			dailyDefenderBonusPerPokemon: [
-				500,
-				10
-			];
+			dailyDefenderBonusPerPokemon: [500, 10];
 			minTimeBetweenClaimsMs: "75600000";
 			prohibitPurchaseInTestEnvirnment: true;
 		};
@@ -3847,7 +3593,7 @@ export interface IncidentPrioritySettings {
 				{
 					displayType: "INCIDENT_CONTEST";
 					priority: 7;
-				}
+				},
 			];
 		};
 	};
@@ -3869,7 +3615,7 @@ export interface IncidentVisibilitySettings {
 				"CHARACTER_EVENT_NPC_7",
 				"CHARACTER_EVENT_NPC_8",
 				"CHARACTER_EVENT_NPC_9",
-				"CHARACTER_EVENT_NPC_10"
+				"CHARACTER_EVENT_NPC_10",
 			];
 		};
 	};
@@ -3885,7 +3631,7 @@ export interface InventorySettings {
 				"PARTY_SELECT",
 				"SPONSORED_GIFT_INVENTORY_FULL",
 				"COMBAT_HUB_INVENTORY_FULL",
-				"QUICK_SHOP_INVENTORY_FULL"
+				"QUICK_SHOP_INVENTORY_FULL",
 			];
 			bagUpgradeBannerEnabled: true;
 			bagUpgradeTimerStages: [
@@ -3900,7 +3646,7 @@ export interface InventorySettings {
 				},
 				{
 					dismissStageSecs: 7776000;
-				}
+				},
 			];
 			baseBagItems: 350;
 			baseDailyAdventureEggs: 1;
@@ -3950,7 +3696,7 @@ export interface IrisSocialSettings {
 				"NIHILEGO",
 				"UNOWN",
 				"ZAPDOS",
-				"MOLTRES"
+				"MOLTRES",
 			];
 			combinedShadowsEnabled: true;
 			enableSqcGuidance: true;
@@ -4112,7 +3858,7 @@ export interface IrisSocialSettings {
 				"REVAVROOM",
 				"CLODSIRE",
 				"IRONHANDS",
-				"KARTANA"
+				"KARTANA",
 			];
 			localizationGuidancePathEnabled: true;
 			localizationTimeoutDurationMs: "12000";
@@ -4322,7 +4068,7 @@ export interface IrisSocialUxFunnelSettings {
 				{
 					event: 50;
 					stepNumber: 52;
-				}
+				},
 			];
 			uxFunnelVersion: 1;
 		};
@@ -4343,38 +4089,26 @@ export interface ItemInventoryUpdateSettings {
 		itemInventoryUpdateSettings: {
 			categoryProto: [
 				{
-					category: [
-						"ITEM_CATEGORY_EXPIRING"
-					];
+					category: ["ITEM_CATEGORY_EXPIRING"];
 					categoryName: "item_bag_expiring_soon";
 				},
 				{
-					category: [
-						"ITEM_CATEGORY_MEDICINE"
-					];
+					category: ["ITEM_CATEGORY_MEDICINE"];
 					categoryName: "item_bag_category_medicine";
 					sortOrder: 1;
 				},
 				{
-					category: [
-						"ITEM_CATEGORY_POKEBALL"
-					];
+					category: ["ITEM_CATEGORY_POKEBALL"];
 					categoryName: "item_bag_category_pokeballs";
 					sortOrder: 2;
 				},
 				{
-					category: [
-						"ITEM_CATEGORY_FOOD"
-					];
+					category: ["ITEM_CATEGORY_FOOD"];
 					categoryName: "item_bag_category_berries";
 					sortOrder: 3;
 				},
 				{
-					category: [
-						"ITEM_CATEGORY_FRIEND_GIFT_BOX",
-						"ITEM_CATEGORY_STICKER",
-						"ITEM_CATEGORY_POSTCARD_INVENTORY"
-					];
+					category: ["ITEM_CATEGORY_FRIEND_GIFT_BOX", "ITEM_CATEGORY_STICKER", "ITEM_CATEGORY_POSTCARD_INVENTORY"];
 					categoryName: "item_bag_category_gifts";
 					sortOrder: 4;
 				},
@@ -4383,7 +4117,7 @@ export interface ItemInventoryUpdateSettings {
 						"ITEM_CATEGORY_INCENSE",
 						"ITEM_CATEGORY_BOOST",
 						"ITEM_CATEGORY_STARDUST_BOOST",
-						"ITEM_CATEGORY_XP_BOOST"
+						"ITEM_CATEGORY_XP_BOOST",
 					];
 					categoryName: "item_bag_category_boosts";
 					sortOrder: 5;
@@ -4396,7 +4130,7 @@ export interface ItemInventoryUpdateSettings {
 						"ITEM_CATEGORY_TEAM_CHANGE",
 						"ITEM_CATEGORY_INCUBATOR",
 						"ITEM_CATEGORY_INCIDENT_TICKET",
-						"ITEM_CATEGORY_BREAD"
+						"ITEM_CATEGORY_BREAD",
 					];
 					categoryName: "item_bag_category_other";
 					sortOrder: 6;
@@ -4405,15 +4139,13 @@ export interface ItemInventoryUpdateSettings {
 					category: [
 						"ITEM_CATEGORY_RAID_TICKET",
 						"ITEM_CATEGORY_GLOBAL_EVENT_TICKET",
-						"ITEM_CATEGORY_EVENT_TICKET_GIFT"
+						"ITEM_CATEGORY_EVENT_TICKET_GIFT",
 					];
 					categoryName: "item_bag_category_passes";
 					sortOrder: 7;
 				},
 				{
-					category: [
-						"ITEM_CATEGORY_DISK"
-					];
+					category: ["ITEM_CATEGORY_DISK"];
 					categoryName: "item_bag_category_lures";
 					sortOrder: 8;
 				},
@@ -4422,25 +4154,21 @@ export interface ItemInventoryUpdateSettings {
 						"ITEM_CATEGORY_CAMERA",
 						"ITEM_CATEGORY_ROUTE_MAKER",
 						"ITEM_CATEGORY_UTILITES",
-						"ITEM_CATEGORY_ENHANCED_CURRENCY_HOLDER"
+						"ITEM_CATEGORY_ENHANCED_CURRENCY_HOLDER",
 					];
 					categoryName: "item_bag_category_key_items";
 					sortOrder: 9;
 				},
 				{
-					category: [
-						"ITEM_CATEGORY_MOVE_REROLL"
-					];
+					category: ["ITEM_CATEGORY_MOVE_REROLL"];
 					categoryName: "item_bag_category_tm";
 					sortOrder: 10;
 				},
 				{
-					category: [
-						"ITEM_CATEGORY_EVOLUTION_REQUIREMENT"
-					];
+					category: ["ITEM_CATEGORY_EVOLUTION_REQUIREMENT"];
 					categoryName: "item_bag_category_evolution";
 					sortOrder: 11;
-				}
+				},
 			];
 		};
 	};
@@ -4589,7 +4317,7 @@ export interface MpSettings {
 					battleLevel: 8;
 					breadBattleCatchMpCost: 800;
 					breadBattleRemoteCatchMpCost: 800;
-				}
+				},
 			];
 			debugAllowRemoveWalkQuest: true;
 			ftueMpCapacity: 250;
@@ -4597,9 +4325,9 @@ export interface MpSettings {
 			mpCapacity: 1500;
 			mpClaimParticleSpeedMultiplier: 1;
 			numExtraMpFromFirstLootStation: 20;
-			numMetersGoal: 2000;
+			numMetersGoal: 500;
 			numMpFromLootStation: 100;
-			numMpFromWalkQuest: 300;
+			numMpFromWalkQuest: 600;
 		};
 	};
 }
@@ -4721,7 +4449,7 @@ export interface NeutralAvatarSettings {
 							green: 1;
 							keyPosition: 1;
 							red: 1;
-						}
+						},
 					];
 				};
 				eyeSelection: {
@@ -4769,7 +4497,7 @@ export interface NeutralAvatarSettings {
 							green: 0.47450984;
 							keyPosition: 1;
 							red: 0.7294118;
-						}
+						},
 					];
 				};
 				headSelection: {
@@ -4812,7 +4540,7 @@ export interface NeutralAvatarSettings {
 							green: 0.82745105;
 							keyPosition: 0.9000076;
 							red: 1;
-						}
+						},
 					];
 				};
 			};
@@ -4893,7 +4621,7 @@ export interface NeutralAvatarSettings {
 							green: 1;
 							keyPosition: 1;
 							red: 1;
-						}
+						},
 					];
 				};
 				eyeSelection: {
@@ -4942,7 +4670,7 @@ export interface NeutralAvatarSettings {
 							green: 0.454902;
 							keyPosition: 1;
 							red: 0.5176471;
-						}
+						},
 					];
 				};
 				headSelection: {
@@ -4991,7 +4719,7 @@ export interface NeutralAvatarSettings {
 							green: 0.9442348;
 							keyPosition: 0.9649958;
 							red: 1;
-						}
+						},
 					];
 				};
 			};
@@ -5068,7 +4796,7 @@ export interface NeutralAvatarSettings {
 							green: 1;
 							keyPosition: 1;
 							red: 1;
-						}
+						},
 					];
 				};
 				eyeSelection: {
@@ -5117,7 +4845,7 @@ export interface NeutralAvatarSettings {
 							green: 0.454902;
 							keyPosition: 1;
 							red: 0.5176471;
-						}
+						},
 					];
 				};
 				headSelection: {
@@ -5166,7 +4894,7 @@ export interface NeutralAvatarSettings {
 							green: 0.9442348;
 							keyPosition: 0.9649958;
 							red: 1;
-						}
+						},
 					];
 				};
 			};
@@ -5226,7 +4954,7 @@ export interface PartyDarkLaunchSettings {
 				{
 					waitTimeMs: 16000;
 					weight: 25;
-				}
+				},
 			];
 			leavePartyProbablity: [
 				{
@@ -5244,7 +4972,7 @@ export interface PartyDarkLaunchSettings {
 				{
 					maxDurationMs: 16000;
 					weight: 25;
-				}
+				},
 			];
 			probabilityToCreatePercent: 50;
 			rolloutPlayersPerBillion: 1000000000;
@@ -5274,7 +5002,7 @@ export interface PartyIapBoostsSettings {
 					dailyContributionLimit: 4;
 					durationMultiplier: 0.5;
 					supportedItemTypes: "ITEM_LUCKY_EGG";
-				}
+				},
 			];
 		};
 	};
@@ -5298,11 +5026,7 @@ export interface PhotoSettings {
 	data: {
 		templateId: "PHOTO_SETTINGS";
 		photoSettings: {
-			bannerImageUrl: [
-				"PokemonSetsHeaderImage01",
-				"PokemonSetsHeaderImage02",
-				"PokemonSetsHeaderImage03"
-			];
+			bannerImageUrl: ["PokemonSetsHeaderImage01", "PokemonSetsHeaderImage02", "PokemonSetsHeaderImage03"];
 			irisFlags: 2011175120;
 			isIrisEnabled: true;
 			screenCaptureSize: 2;
@@ -5328,7 +5052,7 @@ export interface PlannerSettings {
 						{
 							messageSendBeforeEventSeconds: 600;
 							messageSendTime: "TIMESLOT_EARLY";
-						}
+						},
 					];
 					rsvpBonusTimeWindowMinutes: 17;
 					rsvpClearInventoryMinutes: 30;
@@ -5347,14 +5071,14 @@ export interface PlannerSettings {
 						{
 							messageSendBeforeEventSeconds: 600;
 							messageSendTime: "TIMESLOT_EARLY";
-						}
+						},
 					];
 					rsvpBonusTimeWindowMinutes: 32;
 					rsvpClearInventoryMinutes: 30;
 					rsvpInviteEnabled: true;
 					rsvpTimeslotDurationSeconds: 300;
 					timeslotGapSeconds: 600;
-				}
+				},
 			];
 			maxPendingRsvpInvites: 10;
 			maxRsvpDisplayDistanceM: 4000;
@@ -5466,7 +5190,7 @@ export interface PlayerLevel {
 				0.8653,
 				0.8653,
 				0.8653,
-				0.8653
+				0.8653,
 			];
 			extendedPlayerLevelThreshold: 70;
 			levelRequirementsV2Enabled: true;
@@ -5474,16 +5198,7 @@ export interface PlayerLevel {
 			maxEggPlayerLevel: 20;
 			maxEncounterPlayerLevel: 30;
 			maxQuestEncounterPlayerLevel: 15;
-			milestoneLevels: [
-				10,
-				20,
-				30,
-				40,
-				50,
-				60,
-				70,
-				80
-			];
+			milestoneLevels: [10, 20, 30, 40, 50, 60, 70, 80];
 			rankNum: [
 				1,
 				1,
@@ -5564,7 +5279,7 @@ export interface PlayerLevel {
 				1,
 				1,
 				1,
-				1
+				1,
 			];
 			requiredExperience: [
 				0,
@@ -5646,7 +5361,7 @@ export interface PlayerLevel {
 				158353000,
 				172353000,
 				187353000,
-				203353000
+				203353000,
 			];
 			smoreFtueImageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Smores_Launch_KeyArt_v8_1024x512_ingame.jpg";
 			xpRewardV2Enabled: true;
@@ -5687,7 +5402,7 @@ export interface PokeballThrowPropertySettings {
 					overshootCorrection: 0.8;
 					throwProertiesCategory: "BREAD";
 					undershootCorrection: 0.5;
-				}
+				},
 			];
 		};
 	};
@@ -5763,7 +5478,7 @@ export interface PokedexCategoriesSettings {
 				{
 					milestoneGoal: 10;
 					pokedexCategory: "FOUR_STAR";
-				}
+				},
 			];
 			searchEnabled: true;
 			showDexAfterNewFormEnabled: true;
@@ -5807,13 +5522,7 @@ export interface PokedexV2Settings {
 		templateId: "POKEDEX_V2_SETTINGS";
 		pokedexV2Settings: {
 			maxTrackedPokemon: 1;
-			pokemonAlertExcluded: [
-				"DITTO",
-				"ZORUA",
-				"ZOROARK",
-				"SMEARGLE",
-				"KECLEON"
-			];
+			pokemonAlertExcluded: ["DITTO", "ZORUA", "ZOROARK", "SMEARGLE", "KECLEON"];
 		};
 	};
 }
@@ -5878,7 +5587,7 @@ export interface PokemonTagSettings {
 				{
 					color: "POKEMON_TAG_COLOR_BLACK";
 					hexCode: "#3C3C3C";
-				}
+				},
 			];
 			maxNumTagsAllowed: 100;
 			minPlayerLevelForPokemonTagging: 14;
@@ -5932,29 +5641,17 @@ export interface PrimalEvoSettings {
 			maxCandyHoardSize: 9999;
 			typeBoosts: [
 				{
-					boostType: [
-						"POKEMON_TYPE_ELECTRIC",
-						"POKEMON_TYPE_WATER",
-						"POKEMON_TYPE_BUG"
-					];
+					boostType: ["POKEMON_TYPE_ELECTRIC", "POKEMON_TYPE_WATER", "POKEMON_TYPE_BUG"];
 					pokemonId: "KYOGRE";
 				},
 				{
-					boostType: [
-						"POKEMON_TYPE_GRASS",
-						"POKEMON_TYPE_FIRE",
-						"POKEMON_TYPE_GROUND"
-					];
+					boostType: ["POKEMON_TYPE_GRASS", "POKEMON_TYPE_FIRE", "POKEMON_TYPE_GROUND"];
 					pokemonId: "GROUDON";
 				},
 				{
-					boostType: [
-						"POKEMON_TYPE_FLYING",
-						"POKEMON_TYPE_DRAGON",
-						"POKEMON_TYPE_PSYCHIC"
-					];
+					boostType: ["POKEMON_TYPE_FLYING", "POKEMON_TYPE_DRAGON", "POKEMON_TYPE_PSYCHIC"];
 					pokemonId: "RAYQUAZA";
-				}
+				},
 			];
 		};
 	};
@@ -6045,27 +5742,17 @@ export interface RaidSettings {
 			pokemonMusicOverrides: [
 				{
 					battleMusicKey: "GoFest2025_Raid_Battle";
-					forms: [
-						"ZACIAN_HERO",
-						"ZACIAN_CROWNED_SWORD"
-					];
+					forms: ["ZACIAN_HERO", "ZACIAN_CROWNED_SWORD"];
 					pokemon: "ZACIAN";
 				},
 				{
 					battleMusicKey: "GoFest2025_Raid_Battle";
-					forms: [
-						"ZAMAZENTA_HERO",
-						"ZAMAZENTA_CROWNED_SHIELD"
-					];
+					forms: ["ZAMAZENTA_HERO", "ZAMAZENTA_CROWNED_SHIELD"];
 					pokemon: "ZAMAZENTA";
 				},
 				{
 					battleMusicKey: "GoTour2025Music01";
-					forms: [
-						"KYUREM_BLACK",
-						"KYUREM_WHITE",
-						"KYUREM_NORMAL"
-					];
+					forms: ["KYUREM_BLACK", "KYUREM_WHITE", "KYUREM_NORMAL"];
 					pokemon: "KYUREM";
 				},
 				{
@@ -6078,12 +5765,7 @@ export interface RaidSettings {
 				},
 				{
 					battleMusicKey: "GoFest2024Music_Battle";
-					forms: [
-						"NECROZMA_NORMAL",
-						"NECROZMA_DUSK_MANE",
-						"NECROZMA_DAWN_WINGS",
-						"NECROZMA_ULTRA"
-					];
+					forms: ["NECROZMA_NORMAL", "NECROZMA_DUSK_MANE", "NECROZMA_DAWN_WINGS", "NECROZMA_ULTRA"];
 					pokemon: "NECROZMA";
 				},
 				{
@@ -6104,24 +5786,18 @@ export interface RaidSettings {
 				},
 				{
 					battleMusicKey: "GoTour2024Music01";
-					forms: [
-						"PALKIA_NORMAL",
-						"PALKIA_ORIGIN"
-					];
+					forms: ["PALKIA_NORMAL", "PALKIA_ORIGIN"];
 					pokemon: "PALKIA";
 				},
 				{
 					battleMusicKey: "GoTour2024Music01";
-					forms: [
-						"DIALGA_NORMAL",
-						"DIALGA_ORIGIN"
-					];
+					forms: ["DIALGA_NORMAL", "DIALGA_ORIGIN"];
 					pokemon: "DIALGA";
 				},
 				{
 					battleMusicKey: "GoTour2023Music02";
 					pokemon: "RAYQUAZA";
-				}
+				},
 			];
 			popupTimeMs: 30000;
 			raidFeatureFlags: {
@@ -6147,20 +5823,14 @@ export interface RaidSettings {
 				{
 					battleMusicKey: "RocketBossCombatMusic";
 					raidLevel: "RAID_LEVEL_5_SHADOW";
-				}
+				},
 			];
 			remoteDamageModifier: 1;
 			remoteRaidDistanceValidation: true;
 			remoteRaidEnabled: true;
 			remoteRaidsMinPlayerLevel: 5;
-			unsupportedRaidLevelsForFriendInvites: [
-				"RAID_LEVEL_EXTENDED_EGG",
-				"RAID_LEVEL_4"
-			];
-			unsupportedRemoteRaidLevels: [
-				"RAID_LEVEL_EXTENDED_EGG",
-				"RAID_LEVEL_4"
-			];
+			unsupportedRaidLevelsForFriendInvites: ["RAID_LEVEL_EXTENDED_EGG", "RAID_LEVEL_4"];
+			unsupportedRemoteRaidLevels: ["RAID_LEVEL_EXTENDED_EGG", "RAID_LEVEL_4"];
 		};
 	};
 }
@@ -6190,7 +5860,7 @@ export interface ReferralSettings {
 					description: "welcome_remote_raid_desc";
 					featureName: "welcome_remote_raid_name";
 					iconType: "RAID";
-				}
+				},
 			];
 		};
 	};
@@ -6217,12 +5887,7 @@ export interface RouteBadgeSettings {
 	data: {
 		templateId: "ROUTE_BADGE_SETTINGS";
 		routeBadgeSettings: {
-			target: [
-				0,
-				5,
-				20,
-				100
-			];
+			target: [0, 5, 20, 100];
 		};
 	};
 }
@@ -6250,7 +5915,7 @@ export interface RouteCreationSettings {
 				"route_tag_hilly",
 				"route_tag_flat",
 				"route_tag_easy_going",
-				"route_tag_intense"
+				"route_tag_intense",
 			];
 			durationBufferS: 120;
 			durationDistanceToSpeedMultiplier: 1.3;
@@ -6307,34 +5972,25 @@ export interface RoutePinSettings {
 			maxPinsPerRoute: 6;
 			pinMessage: [
 				{
-					category: [
-						"PIN_CATEGORY_1",
-						"PIN_CATEGORY_UNSET"
-					];
+					category: ["PIN_CATEGORY_1", "PIN_CATEGORY_UNSET"];
 					key: "route_pin_test_message_pikachu";
 					levelRequired: 3;
 				},
 				{
-					category: [
-						"PIN_CATEGORY_1"
-					];
+					category: ["PIN_CATEGORY_1"];
 					key: "route_pin_test_message_charmander";
 					levelRequired: 3;
 				},
 				{
-					category: [
-						"PIN_CATEGORY_2"
-					];
+					category: ["PIN_CATEGORY_2"];
 					key: "route_pin_test_message_squirtle";
 					levelRequired: 3;
 				},
 				{
-					category: [
-						"PIN_CATEGORY_1"
-					];
+					category: ["PIN_CATEGORY_1"];
 					key: "route_pin_test_message_bulbasaur";
 					levelRequired: 3;
-				}
+				},
 			];
 			playerMax: 10;
 		};
@@ -6723,7 +6379,7 @@ export interface SourdoughMoveMappingSettings {
 					form: "INTELEON_NORMAL";
 					move: "VN_BM_049";
 					pokemonId: "INTELEON";
-				}
+				},
 			];
 		};
 	};
@@ -6766,7 +6422,7 @@ export interface SquashSettings {
 	data: {
 		templateId: "REMOTE_RAID_LIMIT_SETTINGS";
 		squashSettings: {
-			dailySquashLimit: 10;
+			dailySquashLimit: 20;
 			enabled: true;
 		};
 	};
@@ -6777,12 +6433,7 @@ export interface StampCollectionSettings {
 	data: {
 		templateId: "STAMP_COLLECTION_SETTINGS";
 		stampCollectionSettings: {
-			defaultColorPool: [
-				"#2200CF",
-				"#F14400",
-				"#28AF3C",
-				"#FF9D00"
-			];
+			defaultColorPool: ["#2200CF", "#F14400", "#28AF3C", "#FF9D00"];
 			giftingMinFriendshipLevel: 2;
 			minPlayerLevel: 5;
 			version: -6344194;
@@ -6876,7 +6527,7 @@ export interface StationedPokemonTableSettings {
 				{
 					numBoostIcons: 4;
 					numStationed: 20;
-				}
+				},
 			];
 		};
 	};
@@ -6929,7 +6580,7 @@ export interface StickerCategorySettings {
 					category: "DECORATIONS";
 					preferredCategoryIcon: "flair_sticker_category";
 					sortOrder: 7;
-				}
+				},
 			];
 		};
 	};
@@ -6946,7 +6597,7 @@ export interface StyleShopSettings {
 				"m_shirt_genderlessskirt_00_bundle_icon",
 				"f_shirt_genderlessskirt_00_bundle_icon",
 				"m_backpack_lunalaitems_00_bundle_icon",
-				"f_backpack_lunalaitems_00_bundle_icon"
+				"f_backpack_lunalaitems_00_bundle_icon",
 			];
 			setsEnabled: true;
 			v2Enabled: true;
@@ -7003,13 +6654,13 @@ export interface TutorialSettings {
 						{
 							count: 3;
 							itemId: "ITEM_REVIVE";
-						}
+						},
 					];
 					tutorial: "POTION_AND_REVIVE_TUTORIAL_INTRODUCED";
 				},
 				{
 					tutorial: 183;
-				}
+				},
 			];
 			typeEffectivenessTipsEnabled: true;
 		};
@@ -7094,7 +6745,7 @@ export interface VsSeekerClientSettings {
 				"COMBAT_LEAGUE_VS_SEEKER_GREAT",
 				"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
 				"COMBAT_LEAGUE_VS_SEEKER_MASTER",
-				"COMBAT_LEAGUE_VS_SEEKER_GREAT_PVP_NEXT_PREVIEW"
+				"COMBAT_LEAGUE_VS_SEEKER_GREAT_PVP_NEXT_PREVIEW",
 			];
 		};
 	};
@@ -7117,26 +6768,17 @@ export interface VsSeekerScheduleSettings {
 						{
 							endTimeMs: "1773172800000";
 							startTimeMs: "1772571600000";
-							vsSeekerLeagueTempalteId: [
-								"COMBAT_LEAGUE_VS_SEEKER_GREAT",
-								"COMBAT_LEAGUE_VS_SEEKER_GREAT_KANTO"
-							];
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_GREAT_KANTO"];
 						},
 						{
 							endTimeMs: "1773777600000";
 							startTimeMs: "1773172800000";
-							vsSeekerLeagueTempalteId: [
-								"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
-								"COMBAT_LEAGUE_VS_SEEKER_SPRING_GREAT"
-							];
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_SPRING_GREAT"];
 						},
 						{
 							endTimeMs: "1774382400000";
 							startTimeMs: "1773777600000";
-							vsSeekerLeagueTempalteId: [
-								"COMBAT_LEAGUE_VS_SEEKER_MASTER",
-								"COMBAT_LEAGUE_VS_SEEKER_GREAT_JUNGLE"
-							];
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_MASTER", "COMBAT_LEAGUE_VS_SEEKER_GREAT_JUNGLE"];
 						},
 						{
 							endTimeMs: "1774987200000";
@@ -7144,32 +6786,23 @@ export interface VsSeekerScheduleSettings {
 							vsSeekerLeagueTempalteId: [
 								"COMBAT_LEAGUE_VS_SEEKER_GREAT",
 								"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
-								"COMBAT_LEAGUE_VS_SEEKER_MASTER"
+								"COMBAT_LEAGUE_VS_SEEKER_MASTER",
 							];
 						},
 						{
 							endTimeMs: "1775592000000";
 							startTimeMs: "1774987200000";
-							vsSeekerLeagueTempalteId: [
-								"COMBAT_LEAGUE_VS_SEEKER_GREAT",
-								"COMBAT_LEAGUE_VS_SEEKER_GREAT_ELECTRIC"
-							];
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_GREAT_ELECTRIC"];
 						},
 						{
 							endTimeMs: "1776196800000";
 							startTimeMs: "1775592000000";
-							vsSeekerLeagueTempalteId: [
-								"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
-								"COMBAT_LEAGUE_VS_SEEKER_GREAT_FANTASY"
-							];
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_GREAT_FANTASY"];
 						},
 						{
 							endTimeMs: "1776801600000";
 							startTimeMs: "1776196800000";
-							vsSeekerLeagueTempalteId: [
-								"COMBAT_LEAGUE_VS_SEEKER_MASTER",
-								"COMBAT_LEAGUE_VS_SEEKER_SPRING_GREAT"
-							];
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_MASTER", "COMBAT_LEAGUE_VS_SEEKER_SPRING_GREAT"];
 						},
 						{
 							endTimeMs: "1777406400000";
@@ -7177,32 +6810,23 @@ export interface VsSeekerScheduleSettings {
 							vsSeekerLeagueTempalteId: [
 								"COMBAT_LEAGUE_VS_SEEKER_GREAT",
 								"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
-								"COMBAT_LEAGUE_VS_SEEKER_MASTER"
+								"COMBAT_LEAGUE_VS_SEEKER_MASTER",
 							];
 						},
 						{
 							endTimeMs: "1778011200000";
 							startTimeMs: "1777406400000";
-							vsSeekerLeagueTempalteId: [
-								"COMBAT_LEAGUE_VS_SEEKER_GREAT",
-								"COMBAT_LEAGUE_VS_SEEKER_GREAT_FANTASY"
-							];
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_GREAT_FANTASY"];
 						},
 						{
 							endTimeMs: "1778616000000";
 							startTimeMs: "1778011200000";
-							vsSeekerLeagueTempalteId: [
-								"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
-								"COMBAT_LEAGUE_VS_SEEKER_GREAT_JUNGLE"
-							];
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_GREAT_JUNGLE"];
 						},
 						{
 							endTimeMs: "1779220800000";
 							startTimeMs: "1778616000000";
-							vsSeekerLeagueTempalteId: [
-								"COMBAT_LEAGUE_VS_SEEKER_MASTER",
-								"COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S22"
-							];
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_MASTER", "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S22"];
 						},
 						{
 							endTimeMs: "1779825600000";
@@ -7210,7 +6834,7 @@ export interface VsSeekerScheduleSettings {
 							vsSeekerLeagueTempalteId: [
 								"COMBAT_LEAGUE_VS_SEEKER_GREAT",
 								"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
-								"COMBAT_LEAGUE_VS_SEEKER_MASTER"
+								"COMBAT_LEAGUE_VS_SEEKER_MASTER",
 							];
 						},
 						{
@@ -7219,11 +6843,11 @@ export interface VsSeekerScheduleSettings {
 							vsSeekerLeagueTempalteId: [
 								"COMBAT_LEAGUE_VS_SEEKER_GREAT",
 								"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
-								"COMBAT_LEAGUE_VS_SEEKER_MASTER"
+								"COMBAT_LEAGUE_VS_SEEKER_MASTER",
 							];
-						}
+						},
 					];
-				}
+				},
 			];
 		};
 	};

@@ -1,162 +1,1236 @@
-export interface InvasionNpcDisplaySettings<TemplateID extends string> {
+export interface InvasionNpcDisplaySettings<
+	TemplateID extends string = string,
+	TData extends InvasionNpcDisplaySettingsData = InvasionNpcDisplaySettingsData,
+> {
 	templateId: TemplateID;
-	data: InvasionNpcDisplaySettingsData<TemplateID>;
-}
-
-export interface InvasionNpcDisplaySettingsData<TemplateID extends string> {
-	templateId: TemplateID;
-	invasionNpcDisplaySettings: {
-		avatar: {
-			avatar?: InvasionNpcDisplaySettingsAvatarAvatar;
-			avatarBackpack?: InvasionNpcDisplaySettingsAvatarAvatarBackpack;
-			avatarBelt?: InvasionNpcDisplaySettingsAvatarAvatarBelt;
-			avatarEyes?: InvasionNpcDisplaySettingsAvatarAvatarEyes;
-			avatarFace?: InvasionNpcDisplaySettingsAvatarAvatarFace;
-			avatarGlasses?: InvasionNpcDisplaySettingsAvatarAvatarGlasses;
-			avatarGloves?: InvasionNpcDisplaySettingsAvatarAvatarGloves;
-			avatarHair?: InvasionNpcDisplaySettingsAvatarAvatarHair;
-			avatarHat?: InvasionNpcDisplaySettingsAvatarAvatarHat;
-			avatarNecklace?: InvasionNpcDisplaySettingsAvatarAvatarNecklace;
-			avatarPants?: InvasionNpcDisplaySettingsAvatarAvatarPants;
-			avatarPose?: InvasionNpcDisplaySettingsAvatarAvatarPose;
-			avatarShirt?: InvasionNpcDisplaySettingsAvatarAvatarShirt;
-			avatarShoes?: InvasionNpcDisplaySettingsAvatarAvatarShoes;
-			avatarSocks?: InvasionNpcDisplaySettingsAvatarAvatarSocks;
-			skin?: InvasionNpcDisplaySettingsAvatarSkin;
-		};
-		backdropImageBundle?: InvasionNpcDisplaySettingsBackdropImageBundle;
-		customCombatMusic?: InvasionNpcDisplaySettingsCustomCombatMusic;
-		customIncidentMusic?: InvasionNpcDisplaySettingsCustomIncidentMusic;
-		iconUrl: InvasionNpcDisplaySettingsIconUrl;
-		isMale?: true;
-		modelName: InvasionNpcDisplaySettingsModelName;
-		tipsType?: InvasionNpcDisplaySettingsTipsType;
-		trainerName: InvasionNpcDisplaySettingsTrainerName;
-		trainerQuote: InvasionNpcDisplaySettingsTrainerQuote;
-		trainerTitle: InvasionNpcDisplaySettingsTrainerTitle;
-		tutorialOnLossString?: InvasionNpcDisplaySettingsTutorialOnLossString;
+	data: {
+		templateId: TemplateID;
+		invasionNpcDisplaySettings: TData;
 	};
 }
 
-export type InvasionNpcDisplaySettingsAvatarAvatar = 1 | 2;
+export interface InvasionNpcDisplaySettingsData {
+	avatar?: {
+		avatar?: number;
+		avatarBackpack?: string;
+		avatarBelt?: string;
+		avatarEyes?: string;
+		avatarFace?: string;
+		avatarGlasses?: string;
+		avatarGloves?: string;
+		avatarHair?: string;
+		avatarHat?: string;
+		avatarNecklace?: string;
+		avatarPants?: string;
+		avatarPose?: string;
+		avatarShirt?: string;
+		avatarShoes?: string;
+		avatarSocks?: string;
+		skin?: number;
+	};
+	backdropImageBundle?: string;
+	customCombatMusic?: string;
+	customIncidentMusic?: string;
+	iconUrl?: string;
+	isMale?: boolean;
+	modelName?: string;
+	tipsType?: string;
+	trainerName?: string;
+	trainerQuote?: string;
+	trainerTitle?: string;
+	tutorialOnLossString?: string;
+}
 
-export type InvasionNpcDisplaySettingsAvatarAvatarBackpack = "AVATAR_f_backpack_default_3" | "AVATAR_f_backpack_snapcamera" | "AVATAR_f_backpack_swshdlc2costume" | "AVATAR_f_backpack_ultra_0" | "AVATAR_m_backpack_empty" | "AVATAR_m_backpack_gengar_0" | "AVATAR_m_backpack_guitarcasebackpack";
-
-export type InvasionNpcDisplaySettingsAvatarAvatarBelt = "AVATAR_f_belt_empty" | "AVATAR_m_belt_empty";
-
-export type InvasionNpcDisplaySettingsAvatarAvatarEyes = "AVATAR_f_eyes_1" | "AVATAR_f_eyes_3" | "AVATAR_m_eyes_3";
-
-export type InvasionNpcDisplaySettingsAvatarAvatarFace = "AVATAR_f_face_empty" | "AVATAR_m_face_empty";
-
-export type InvasionNpcDisplaySettingsAvatarAvatarGlasses = "AVATAR_f_glasses_empty" | "AVATAR_f_glasses_teardrop_0" | "AVATAR_m_glasses_3d" | "AVATAR_m_glasses_empty" | "AVATAR_m_glasses_roundsunglasses";
-
-export type InvasionNpcDisplaySettingsAvatarAvatarGloves = "AVATAR_f_gloves_default_0" | "AVATAR_f_gloves_frlg_0" | "AVATAR_f_gloves_swshdlc2costume" | "AVATAR_m_gloves_default_0" | "AVATAR_m_gloves_gymleader_0" | "AVATAR_m_gloves_swshuniformdragon";
-
-export type InvasionNpcDisplaySettingsAvatarAvatarHair = "AVATAR_f_hair_default_19" | "AVATAR_f_hair_default_4" | "AVATAR_f_hair_default_7" | "AVATAR_f_hair_default_8" | "AVATAR_m_hair_default_10" | "AVATAR_m_hair_default_2" | "AVATAR_m_hair_default_5";
-
-export type InvasionNpcDisplaySettingsAvatarAvatarHat = "AVATAR_f_hat_laprasbandana" | "AVATAR_f_hat_movie2020" | "AVATAR_f_hat_pkmncap_1" | "AVATAR_f_hat_sylveonitems" | "AVATAR_m_hat_default_1" | "AVATAR_m_hat_empty" | "AVATAR_m_hat_munnapack_1" | "AVATAR_m_hat_sableyegoggles";
-
-export type InvasionNpcDisplaySettingsAvatarAvatarNecklace = "AVATAR_f_necklace_empty" | "AVATAR_f_necklace_heart_0" | "AVATAR_m_necklace_empty";
-
-export type InvasionNpcDisplaySettingsAvatarAvatarPants = "AVATAR_f_pants_acetrainerbw" | "AVATAR_f_pants_misty" | "AVATAR_f_pants_ultra_0" | "AVATAR_m_pants_mewtwo" | "AVATAR_m_pants_skinnyjeans_0" | "AVATAR_m_pants_teamcandela" | "AVATAR_m_pants_teamrocket_0";
-
-export type InvasionNpcDisplaySettingsAvatarAvatarPose = "AVATAR_f_pose_05" | "AVATAR_f_pose_10" | "AVATAR_f_pose_11" | "AVATAR_f_pose_19" | "AVATAR_m_pose_02" | "AVATAR_m_pose_05" | "AVATAR_m_pose_31" | "AVATAR_m_pose_empty";
-
-export type InvasionNpcDisplaySettingsAvatarAvatarShirt = "AVATAR_f_shirt_battlegirl_0" | "AVATAR_f_shirt_regiicejersies" | "AVATAR_f_shirt_ruinmaniac" | "AVATAR_f_shirt_teamaqua" | "AVATAR_m_shirt_acetrainersm" | "AVATAR_m_shirt_mewtwo" | "AVATAR_m_shirt_pkmnshirts_201" | "AVATAR_m_shirt_pkmnshirts2021_01";
-
-export type InvasionNpcDisplaySettingsAvatarAvatarShoes = "AVATAR_f_shoes_pikachulibre" | "AVATAR_f_shoes_ss" | "AVATAR_f_shoes_sylveonitems" | "AVATAR_f_shoes_teamrocket_1" | "AVATAR_m_shoes_acetrainersm" | "AVATAR_m_shoes_mewtwo" | "AVATAR_m_shoes_registeeljersies" | "AVATAR_m_shoes_steven";
-
-export type InvasionNpcDisplaySettingsAvatarAvatarSocks = "AVATAR_f_socks_default_0" | "AVATAR_f_socks_empty" | "AVATAR_f_socks_swshuniformdefault" | "AVATAR_f_socks_teamaqua" | "AVATAR_m_socks_default_0" | "AVATAR_m_socks_default_3" | "AVATAR_m_socks_empty";
-
-export type InvasionNpcDisplaySettingsAvatarSkin = 1 | 2 | 3 | 5 | 6 | 8 | 9 | 10;
-
-export type InvasionNpcDisplaySettingsBackdropImageBundle = "combat_blanche_backdrop" | "combat_candela_backdrop" | "combat_spark_backdrop";
-
-export type InvasionNpcDisplaySettingsCustomCombatMusic = "CombatMusic" | "GoTour2022Music02";
-
-export type InvasionNpcDisplaySettingsCustomIncidentMusic = "CombatLeaguePickerMusic" | "QuestMusic";
-
-export type InvasionNpcDisplaySettingsIconUrl = "https://prodholoholo-public-images.nianticlabs.com/Icon_Blanche.png" | "https://prodholoholo-public-images.nianticlabs.com/Icon_Candela.png" | "https://storage.googleapis.com/prod-public-images/Icon_Arlo.png" | "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png" | "https://storage.googleapis.com/prod-public-images/Icon_Cliff.png" | "https://storage.googleapis.com/prod-public-images/Icon_Giovanni.png" | "https://storage.googleapis.com/prod-public-images/Icon_Sierra.png" | "https://storage.googleapis.com/prod-public-images/Icon_Spark.png";
-
-export type InvasionNpcDisplaySettingsModelName = "combat_blanche" | "combat_candela" | "combat_execblue" | "combat_execred" | "combat_execyellow" | "combat_explorer" | "combat_giovanni" | "combat_spark" | "f_combat_grunt" | "f_combat_gruntb" | "m_combat_grunt" | "m_combat_gruntb" | "player_female" | "player_male";
-
-export type InvasionNpcDisplaySettingsTipsType = "POKEMON_TYPE_BUG" | "POKEMON_TYPE_DARK" | "POKEMON_TYPE_DRAGON" | "POKEMON_TYPE_ELECTRIC" | "POKEMON_TYPE_FAIRY" | "POKEMON_TYPE_FIGHTING" | "POKEMON_TYPE_FIRE" | "POKEMON_TYPE_FLYING" | "POKEMON_TYPE_GHOST" | "POKEMON_TYPE_GRASS" | "POKEMON_TYPE_GROUND" | "POKEMON_TYPE_ICE" | "POKEMON_TYPE_NORMAL" | "POKEMON_TYPE_POISON" | "POKEMON_TYPE_PSYCHIC" | "POKEMON_TYPE_ROCK" | "POKEMON_TYPE_STEEL" | "POKEMON_TYPE_WATER";
-
-export type InvasionNpcDisplaySettingsTrainerName = "combat_arlo_name" | "combat_blanche" | "combat_candela" | "combat_cliff_name" | "combat_giovanni_name" | "combat_grunt_bf_name" | "combat_grunt_bm_name" | "combat_grunt_decoy_name" | "combat_grunt_name" | "combat_sierra_name" | "combat_spark" | "event_fashion_week_sept21_npc00_title" | "event_fashion_week_sept21_npc01_title" | "event_fashion_week_sept21_npc02_title" | "event_fashion_week_sept21_npc03_title" | "event_fashion_week_sept21_npc04_title" | "event_fashion_week_sept21_npc05_title" | "event_fashion_week_sept21_npc06_title" | "event_fashion_week_sept21_npc07_title" | "gotoursik_elitefour_b_name" | "gotoursik_elitefour_c_name" | "gotoursik_elitefour_d_name" | "routes_NPC_explorer";
-
-export type InvasionNpcDisplaySettingsTrainerQuote = "{grunt_dynamic_quote}" | "combat_arlo_quote" | "combat_blanche_quote" | "combat_candela_quote" | "combat_cliff_quote" | "combat_giovanni_quote" | "combat_grunt_decoy_quote" | "combat_grunt_quote_bug" | "combat_grunt_quote_dark" | "combat_grunt_quote_dragon" | "combat_grunt_quote_electric" | "combat_grunt_quote_fairy" | "combat_grunt_quote_fighting" | "combat_grunt_quote_fire" | "combat_grunt_quote_flying" | "combat_grunt_quote_ghost" | "combat_grunt_quote_grass" | "combat_grunt_quote_ground" | "combat_grunt_quote_ice" | "combat_grunt_quote_normal" | "combat_grunt_quote_poison" | "combat_grunt_quote_psychic" | "combat_grunt_quote_rock" | "combat_grunt_quote_steel" | "combat_grunt_quote_water" | "combat_sierra_quote" | "combat_spark_quote" | "event_fashion_week_sept21_npc00_combat_quote" | "event_fashion_week_sept21_npc01_combat_quote" | "event_fashion_week_sept21_npc02_combat_quote" | "event_fashion_week_sept21_npc03_combat_quote" | "event_fashion_week_sept21_npc04_combat_quote" | "event_fashion_week_sept21_npc05_combat_quote" | "event_fashion_week_sept21_npc06_combat_quote" | "event_fashion_week_sept21_npc07_combat_quote" | "gotoursik_elitefour_b_quote" | "gotoursik_elitefour_c_quote" | "gotoursik_elitefour_d_quote" | "grunt_bf_combat_quote" | "grunt_bm_combat_quote";
-
-export type InvasionNpcDisplaySettingsTrainerTitle = "combat_arlo_title" | "combat_blanche_title" | "combat_candela_title" | "combat_cliff_title" | "combat_giovanni_title" | "combat_grunt_decoy_title" | "combat_grunt_title" | "combat_sierra_title" | "combat_spark_title" | "event_fashion_challenger_title" | "event_wcs_challenger_title" | "gotoursik_elitefour_title" | "routes_NPC_activity_ge";
-
-export type InvasionNpcDisplaySettingsTutorialOnLossString = "{grunt_dynamic_tutorial}" | "event_gotour_2021_npc00_victory__female_speaker" | "event_gotour_2021_npc00_victory__male_speaker" | "type_tutorial_bug" | "type_tutorial_dark" | "type_tutorial_dragon" | "type_tutorial_electric" | "type_tutorial_fairy" | "type_tutorial_fighting" | "type_tutorial_fire" | "type_tutorial_flying" | "type_tutorial_ghost" | "type_tutorial_grass" | "type_tutorial_ground" | "type_tutorial_ice" | "type_tutorial_normal" | "type_tutorial_poison" | "type_tutorial_psychic" | "type_tutorial_rock" | "type_tutorial_steel" | "type_tutorial_water";
-
-export type InvasionNpcDisplaySettingsBlanche = InvasionNpcDisplaySettings<"CHARACTER_BLANCHE">;
-export type InvasionNpcDisplaySettingsBugGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_BUG_GRUNT_FEMALE">;
-export type InvasionNpcDisplaySettingsBugGruntMale = InvasionNpcDisplaySettings<"CHARACTER_BUG_GRUNT_MALE">;
-export type InvasionNpcDisplaySettingsCandela = InvasionNpcDisplaySettings<"CHARACTER_CANDELA">;
-export type InvasionNpcDisplaySettingsDarkGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_DARK_GRUNT_FEMALE">;
-export type InvasionNpcDisplaySettingsDarkGruntMale = InvasionNpcDisplaySettings<"CHARACTER_DARK_GRUNT_MALE">;
-export type InvasionNpcDisplaySettingsDecoyGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_DECOY_GRUNT_FEMALE">;
-export type InvasionNpcDisplaySettingsDecoyGruntMale = InvasionNpcDisplaySettings<"CHARACTER_DECOY_GRUNT_MALE">;
-export type InvasionNpcDisplaySettingsDragonGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_DRAGON_GRUNT_FEMALE">;
-export type InvasionNpcDisplaySettingsDragonGruntMale = InvasionNpcDisplaySettings<"CHARACTER_DRAGON_GRUNT_MALE">;
-export type InvasionNpcDisplaySettingsElectricGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_ELECTRIC_GRUNT_FEMALE">;
-export type InvasionNpcDisplaySettingsElectricGruntMale = InvasionNpcDisplaySettings<"CHARACTER_ELECTRIC_GRUNT_MALE">;
-export type InvasionNpcDisplaySettingsEventArloUnticketed = InvasionNpcDisplaySettings<"CHARACTER_EVENT_ARLO_UNTICKETED">;
-export type InvasionNpcDisplaySettingsEventCliffUnticketed = InvasionNpcDisplaySettings<"CHARACTER_EVENT_CLIFF_UNTICKETED">;
-export type InvasionNpcDisplaySettingsEventGiovanniUnticketed = InvasionNpcDisplaySettings<"CHARACTER_EVENT_GIOVANNI_UNTICKETED">;
-export type InvasionNpcDisplaySettingsEventNpc0 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_0">;
-export type InvasionNpcDisplaySettingsEventNpc1 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_1">;
-export type InvasionNpcDisplaySettingsEventNpc10 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_10">;
-export type InvasionNpcDisplaySettingsEventNpc2 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_2">;
-export type InvasionNpcDisplaySettingsEventNpc3 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_3">;
-export type InvasionNpcDisplaySettingsEventNpc4 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_4">;
-export type InvasionNpcDisplaySettingsEventNpc5 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_5">;
-export type InvasionNpcDisplaySettingsEventNpc6 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_6">;
-export type InvasionNpcDisplaySettingsEventNpc7 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_7">;
-export type InvasionNpcDisplaySettingsEventNpc8 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_8">;
-export type InvasionNpcDisplaySettingsEventNpc9 = InvasionNpcDisplaySettings<"CHARACTER_EVENT_NPC_9">;
-export type InvasionNpcDisplaySettingsEventSierraUnticketed = InvasionNpcDisplaySettings<"CHARACTER_EVENT_SIERRA_UNTICKETED">;
-export type InvasionNpcDisplaySettingsExecutiveArlo = InvasionNpcDisplaySettings<"CHARACTER_EXECUTIVE_ARLO">;
-export type InvasionNpcDisplaySettingsExecutiveCliff = InvasionNpcDisplaySettings<"CHARACTER_EXECUTIVE_CLIFF">;
-export type InvasionNpcDisplaySettingsExecutiveSierra = InvasionNpcDisplaySettings<"CHARACTER_EXECUTIVE_SIERRA">;
-export type InvasionNpcDisplaySettingsExplorer = InvasionNpcDisplaySettings<"CHARACTER_EXPLORER">;
-export type InvasionNpcDisplaySettingsFairyGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_FAIRY_GRUNT_FEMALE">;
-export type InvasionNpcDisplaySettingsFairyGruntMale = InvasionNpcDisplaySettings<"CHARACTER_FAIRY_GRUNT_MALE">;
-export type InvasionNpcDisplaySettingsFightingGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_FIGHTING_GRUNT_FEMALE">;
-export type InvasionNpcDisplaySettingsFightingGruntMale = InvasionNpcDisplaySettings<"CHARACTER_FIGHTING_GRUNT_MALE">;
-export type InvasionNpcDisplaySettingsFireGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_FIRE_GRUNT_FEMALE">;
-export type InvasionNpcDisplaySettingsFireGruntMale = InvasionNpcDisplaySettings<"CHARACTER_FIRE_GRUNT_MALE">;
-export type InvasionNpcDisplaySettingsFlyingGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_FLYING_GRUNT_FEMALE">;
-export type InvasionNpcDisplaySettingsFlyingGruntMale = InvasionNpcDisplaySettings<"CHARACTER_FLYING_GRUNT_MALE">;
-export type InvasionNpcDisplaySettingsGhostGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_GHOST_GRUNT_FEMALE">;
-export type InvasionNpcDisplaySettingsGhostGruntMale = InvasionNpcDisplaySettings<"CHARACTER_GHOST_GRUNT_MALE">;
-export type InvasionNpcDisplaySettingsGiovanni = InvasionNpcDisplaySettings<"CHARACTER_GIOVANNI">;
-export type InvasionNpcDisplaySettingsGrassGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_GRASS_GRUNT_FEMALE">;
-export type InvasionNpcDisplaySettingsGrassGruntMale = InvasionNpcDisplaySettings<"CHARACTER_GRASS_GRUNT_MALE">;
-export type InvasionNpcDisplaySettingsGroundGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_GROUND_GRUNT_FEMALE">;
-export type InvasionNpcDisplaySettingsGroundGruntMale = InvasionNpcDisplaySettings<"CHARACTER_GROUND_GRUNT_MALE">;
-export type InvasionNpcDisplaySettingsGruntbFemale = InvasionNpcDisplaySettings<"CHARACTER_GRUNTB_FEMALE">;
-export type InvasionNpcDisplaySettingsGruntbMale = InvasionNpcDisplaySettings<"CHARACTER_GRUNTB_MALE">;
-export type InvasionNpcDisplaySettingsGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_GRUNT_FEMALE">;
-export type InvasionNpcDisplaySettingsGruntMale = InvasionNpcDisplaySettings<"CHARACTER_GRUNT_MALE">;
-export type InvasionNpcDisplaySettingsIceGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_ICE_GRUNT_FEMALE">;
-export type InvasionNpcDisplaySettingsIceGruntMale = InvasionNpcDisplaySettings<"CHARACTER_ICE_GRUNT_MALE">;
-export type InvasionNpcDisplaySettingsMetalGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_METAL_GRUNT_FEMALE">;
-export type InvasionNpcDisplaySettingsMetalGruntMale = InvasionNpcDisplaySettings<"CHARACTER_METAL_GRUNT_MALE">;
-export type InvasionNpcDisplaySettingsNormalGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_NORMAL_GRUNT_FEMALE">;
-export type InvasionNpcDisplaySettingsNormalGruntMale = InvasionNpcDisplaySettings<"CHARACTER_NORMAL_GRUNT_MALE">;
-export type InvasionNpcDisplaySettingsPoisonGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_POISON_GRUNT_FEMALE">;
-export type InvasionNpcDisplaySettingsPoisonGruntMale = InvasionNpcDisplaySettings<"CHARACTER_POISON_GRUNT_MALE">;
-export type InvasionNpcDisplaySettingsPsychicGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_PSYCHIC_GRUNT_FEMALE">;
-export type InvasionNpcDisplaySettingsPsychicGruntMale = InvasionNpcDisplaySettings<"CHARACTER_PSYCHIC_GRUNT_MALE">;
-export type InvasionNpcDisplaySettingsRockGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_ROCK_GRUNT_FEMALE">;
-export type InvasionNpcDisplaySettingsRockGruntMale = InvasionNpcDisplaySettings<"CHARACTER_ROCK_GRUNT_MALE">;
-export type InvasionNpcDisplaySettingsSpark = InvasionNpcDisplaySettings<"CHARACTER_SPARK">;
-export type InvasionNpcDisplaySettingsWaterGruntFemale = InvasionNpcDisplaySettings<"CHARACTER_WATER_GRUNT_FEMALE">;
-export type InvasionNpcDisplaySettingsWaterGruntMale = InvasionNpcDisplaySettings<"CHARACTER_WATER_GRUNT_MALE">;
-export type InvasionNpcDisplaySettingsWillow = InvasionNpcDisplaySettings<"CHARACTER_WILLOW">;
-export type InvasionNpcDisplaySettingsWillowb = InvasionNpcDisplaySettings<"CHARACTER_WILLOWB">;
+export type InvasionNpcDisplaySettingsBlanche = InvasionNpcDisplaySettings<
+	"CHARACTER_BLANCHE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		backdropImageBundle: "combat_blanche_backdrop";
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		modelName: "combat_blanche";
+		trainerName: "combat_blanche";
+		trainerQuote: "combat_blanche_quote";
+		trainerTitle: "combat_blanche_title";
+	}
+>;
+export type InvasionNpcDisplaySettingsBugGruntFemale = InvasionNpcDisplaySettings<
+	"CHARACTER_BUG_GRUNT_FEMALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://prodholoholo-public-images.nianticlabs.com/Icon_Blanche.png";
+		modelName: "f_combat_grunt";
+		tipsType: "POKEMON_TYPE_BUG";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_bug";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_bug";
+	}
+>;
+export type InvasionNpcDisplaySettingsBugGruntMale = InvasionNpcDisplaySettings<
+	"CHARACTER_BUG_GRUNT_MALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://prodholoholo-public-images.nianticlabs.com/Icon_Blanche.png";
+		isMale: true;
+		modelName: "m_combat_grunt";
+		tipsType: "POKEMON_TYPE_BUG";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_bug";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_bug";
+	}
+>;
+export type InvasionNpcDisplaySettingsCandela = InvasionNpcDisplaySettings<
+	"CHARACTER_CANDELA",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		backdropImageBundle: "combat_candela_backdrop";
+		iconUrl: "https://prodholoholo-public-images.nianticlabs.com/Icon_Candela.png";
+		modelName: "combat_candela";
+		trainerName: "combat_candela";
+		trainerQuote: "combat_candela_quote";
+		trainerTitle: "combat_candela_title";
+	}
+>;
+export type InvasionNpcDisplaySettingsDarkGruntFemale = InvasionNpcDisplaySettings<
+	"CHARACTER_DARK_GRUNT_FEMALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://prodholoholo-public-images.nianticlabs.com/Icon_Blanche.png";
+		modelName: "f_combat_grunt";
+		tipsType: "POKEMON_TYPE_DARK";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_dark";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_dark";
+	}
+>;
+export type InvasionNpcDisplaySettingsDarkGruntMale = InvasionNpcDisplaySettings<
+	"CHARACTER_DARK_GRUNT_MALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		isMale: true;
+		modelName: "m_combat_grunt";
+		tipsType: "POKEMON_TYPE_DARK";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_dark";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_dark";
+	}
+>;
+export type InvasionNpcDisplaySettingsDecoyGruntFemale = InvasionNpcDisplaySettings<
+	"CHARACTER_DECOY_GRUNT_FEMALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://prodholoholo-public-images.nianticlabs.com/Icon_Blanche.png";
+		modelName: "f_combat_grunt";
+		trainerName: "combat_grunt_decoy_name";
+		trainerQuote: "combat_grunt_decoy_quote";
+		trainerTitle: "combat_grunt_decoy_title";
+		tutorialOnLossString: "type_tutorial_normal";
+	}
+>;
+export type InvasionNpcDisplaySettingsDecoyGruntMale = InvasionNpcDisplaySettings<
+	"CHARACTER_DECOY_GRUNT_MALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		isMale: true;
+		modelName: "m_combat_grunt";
+		trainerName: "combat_grunt_decoy_name";
+		trainerQuote: "combat_grunt_decoy_quote";
+		trainerTitle: "combat_grunt_decoy_title";
+		tutorialOnLossString: "type_tutorial_normal";
+	}
+>;
+export type InvasionNpcDisplaySettingsDragonGruntFemale = InvasionNpcDisplaySettings<
+	"CHARACTER_DRAGON_GRUNT_FEMALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		modelName: "f_combat_grunt";
+		tipsType: "POKEMON_TYPE_DRAGON";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_dragon";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_dragon";
+	}
+>;
+export type InvasionNpcDisplaySettingsDragonGruntMale = InvasionNpcDisplaySettings<
+	"CHARACTER_DRAGON_GRUNT_MALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		isMale: true;
+		modelName: "m_combat_grunt";
+		tipsType: "POKEMON_TYPE_DRAGON";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_dragon";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_dragon";
+	}
+>;
+export type InvasionNpcDisplaySettingsElectricGruntFemale = InvasionNpcDisplaySettings<
+	"CHARACTER_ELECTRIC_GRUNT_FEMALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		modelName: "f_combat_grunt";
+		tipsType: "POKEMON_TYPE_ELECTRIC";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_electric";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_electric";
+	}
+>;
+export type InvasionNpcDisplaySettingsElectricGruntMale = InvasionNpcDisplaySettings<
+	"CHARACTER_ELECTRIC_GRUNT_MALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		isMale: true;
+		modelName: "m_combat_grunt";
+		tipsType: "POKEMON_TYPE_ELECTRIC";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_electric";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_electric";
+	}
+>;
+export type InvasionNpcDisplaySettingsEventArloUnticketed = InvasionNpcDisplaySettings<
+	"CHARACTER_EVENT_ARLO_UNTICKETED",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Arlo.png";
+		isMale: true;
+		modelName: "combat_execred";
+		trainerName: "combat_arlo_name";
+		trainerQuote: "combat_arlo_quote";
+		trainerTitle: "combat_arlo_title";
+		tutorialOnLossString: "type_tutorial_steel";
+	}
+>;
+export type InvasionNpcDisplaySettingsEventCliffUnticketed = InvasionNpcDisplaySettings<
+	"CHARACTER_EVENT_CLIFF_UNTICKETED",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Cliff.png";
+		isMale: true;
+		modelName: "combat_execblue";
+		trainerName: "combat_cliff_name";
+		trainerQuote: "combat_cliff_quote";
+		trainerTitle: "combat_cliff_title";
+		tutorialOnLossString: "type_tutorial_rock";
+	}
+>;
+export type InvasionNpcDisplaySettingsEventGiovanniUnticketed = InvasionNpcDisplaySettings<
+	"CHARACTER_EVENT_GIOVANNI_UNTICKETED",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Giovanni.png";
+		isMale: true;
+		modelName: "combat_giovanni";
+		trainerName: "combat_giovanni_name";
+		trainerQuote: "combat_giovanni_quote";
+		trainerTitle: "combat_giovanni_title";
+		tutorialOnLossString: "type_tutorial_ground";
+	}
+>;
+export type InvasionNpcDisplaySettingsEventNpc0 = InvasionNpcDisplaySettings<
+	"CHARACTER_EVENT_NPC_0",
+	{
+		avatar: {
+			avatarBackpack: "AVATAR_m_backpack_guitarcasebackpack";
+			avatarBelt: "AVATAR_m_belt_empty";
+			avatarEyes: "AVATAR_m_eyes_3";
+			avatarFace: "AVATAR_m_face_empty";
+			avatarGlasses: "AVATAR_m_glasses_empty";
+			avatarGloves: "AVATAR_m_gloves_swshuniformdragon";
+			avatarHair: "AVATAR_m_hair_default_2";
+			avatarHat: "AVATAR_m_hat_default_1";
+			avatarNecklace: "AVATAR_m_necklace_empty";
+			avatarPants: "AVATAR_m_pants_skinnyjeans_0";
+			avatarPose: "AVATAR_m_pose_02";
+			avatarShirt: "AVATAR_m_shirt_acetrainersm";
+			avatarShoes: "AVATAR_m_shoes_acetrainersm";
+			avatarSocks: "AVATAR_m_socks_empty";
+			skin: 8;
+		};
+		backdropImageBundle: "combat_spark_backdrop";
+		customCombatMusic: "CombatMusic";
+		customIncidentMusic: "CombatLeaguePickerMusic";
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Spark.png";
+		isMale: true;
+		modelName: "player_male";
+		trainerName: "event_fashion_week_sept21_npc00_title";
+		trainerQuote: "event_fashion_week_sept21_npc00_combat_quote";
+		trainerTitle: "event_fashion_challenger_title";
+		tutorialOnLossString: "event_gotour_2021_npc00_victory__male_speaker";
+	}
+>;
+export type InvasionNpcDisplaySettingsEventNpc1 = InvasionNpcDisplaySettings<
+	"CHARACTER_EVENT_NPC_1",
+	{
+		avatar: {
+			avatar: 1;
+			avatarBackpack: "AVATAR_f_backpack_default_3";
+			avatarBelt: "AVATAR_f_belt_empty";
+			avatarEyes: "AVATAR_f_eyes_3";
+			avatarFace: "AVATAR_f_face_empty";
+			avatarGlasses: "AVATAR_f_glasses_empty";
+			avatarGloves: "AVATAR_f_gloves_default_0";
+			avatarHair: "AVATAR_f_hair_default_4";
+			avatarHat: "AVATAR_f_hat_sylveonitems";
+			avatarNecklace: "AVATAR_f_necklace_empty";
+			avatarPants: "AVATAR_f_pants_ultra_0";
+			avatarPose: "AVATAR_f_pose_10";
+			avatarShirt: "AVATAR_f_shirt_teamaqua";
+			avatarShoes: "AVATAR_f_shoes_sylveonitems";
+			avatarSocks: "AVATAR_f_socks_teamaqua";
+			skin: 3;
+		};
+		backdropImageBundle: "combat_blanche_backdrop";
+		customCombatMusic: "CombatMusic";
+		customIncidentMusic: "CombatLeaguePickerMusic";
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		isMale: true;
+		modelName: "player_female";
+		trainerName: "event_fashion_week_sept21_npc01_title";
+		trainerQuote: "event_fashion_week_sept21_npc01_combat_quote";
+		trainerTitle: "event_fashion_challenger_title";
+		tutorialOnLossString: "event_gotour_2021_npc00_victory__female_speaker";
+	}
+>;
+export type InvasionNpcDisplaySettingsEventNpc10 = InvasionNpcDisplaySettings<
+	"CHARACTER_EVENT_NPC_10",
+	{
+		avatar: {
+			avatar: 1;
+			avatarBackpack: "AVATAR_f_backpack_snapcamera";
+			avatarBelt: "AVATAR_f_belt_empty";
+			avatarEyes: "AVATAR_f_eyes_3";
+			avatarFace: "AVATAR_f_face_empty";
+			avatarGlasses: "AVATAR_f_glasses_teardrop_0";
+			avatarGloves: "AVATAR_f_gloves_frlg_0";
+			avatarHair: "AVATAR_f_hair_default_19";
+			avatarHat: "AVATAR_f_hat_pkmncap_1";
+			avatarNecklace: "AVATAR_f_necklace_empty";
+			avatarPants: "AVATAR_f_pants_acetrainerbw";
+			avatarPose: "AVATAR_f_pose_05";
+			avatarShirt: "AVATAR_f_shirt_battlegirl_0";
+			avatarShoes: "AVATAR_f_shoes_pikachulibre";
+			avatarSocks: "AVATAR_f_socks_empty";
+			skin: 3;
+		};
+		backdropImageBundle: "combat_spark_backdrop";
+		customCombatMusic: "GoTour2022Music02";
+		customIncidentMusic: "CombatLeaguePickerMusic";
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Spark.png";
+		modelName: "player_female";
+		trainerName: "gotoursik_elitefour_d_name";
+		trainerQuote: "gotoursik_elitefour_d_quote";
+		trainerTitle: "gotoursik_elitefour_title";
+		tutorialOnLossString: "type_tutorial_fire";
+	}
+>;
+export type InvasionNpcDisplaySettingsEventNpc2 = InvasionNpcDisplaySettings<
+	"CHARACTER_EVENT_NPC_2",
+	{
+		avatar: {
+			avatar: 1;
+			avatarBackpack: "AVATAR_m_backpack_guitarcasebackpack";
+			avatarEyes: "AVATAR_m_eyes_3";
+			avatarFace: "AVATAR_m_face_empty";
+			avatarGlasses: "AVATAR_m_glasses_3d";
+			avatarGloves: "AVATAR_m_gloves_default_0";
+			avatarHair: "AVATAR_m_hair_default_2";
+			avatarHat: "AVATAR_m_hat_munnapack_1";
+			avatarPants: "AVATAR_m_pants_teamcandela";
+			avatarPose: "AVATAR_m_pose_31";
+			avatarShirt: "AVATAR_m_shirt_pkmnshirts_201";
+			avatarShoes: "AVATAR_m_shoes_registeeljersies";
+			avatarSocks: "AVATAR_m_socks_default_0";
+			skin: 5;
+		};
+		backdropImageBundle: "combat_spark_backdrop";
+		customCombatMusic: "CombatMusic";
+		customIncidentMusic: "CombatLeaguePickerMusic";
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Spark.png";
+		modelName: "player_female";
+		trainerName: "event_fashion_week_sept21_npc02_title";
+		trainerQuote: "event_fashion_week_sept21_npc02_combat_quote";
+		trainerTitle: "event_fashion_challenger_title";
+		tutorialOnLossString: "event_gotour_2021_npc00_victory__male_speaker";
+	}
+>;
+export type InvasionNpcDisplaySettingsEventNpc3 = InvasionNpcDisplaySettings<
+	"CHARACTER_EVENT_NPC_3",
+	{
+		avatar: {
+			avatar: 1;
+			avatarBackpack: "AVATAR_m_backpack_empty";
+			avatarEyes: "AVATAR_m_eyes_3";
+			avatarFace: "AVATAR_m_face_empty";
+			avatarGlasses: "AVATAR_m_glasses_roundsunglasses";
+			avatarGloves: "AVATAR_m_gloves_default_0";
+			avatarHair: "AVATAR_m_hair_default_10";
+			avatarHat: "AVATAR_m_hat_empty";
+			avatarPants: "AVATAR_m_pants_mewtwo";
+			avatarPose: "AVATAR_m_pose_empty";
+			avatarShirt: "AVATAR_m_shirt_mewtwo";
+			avatarShoes: "AVATAR_m_shoes_mewtwo";
+			avatarSocks: "AVATAR_m_socks_default_0";
+			skin: 3;
+		};
+		backdropImageBundle: "combat_spark_backdrop";
+		customCombatMusic: "CombatMusic";
+		customIncidentMusic: "CombatLeaguePickerMusic";
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Spark.png";
+		modelName: "player_female";
+		trainerName: "event_fashion_week_sept21_npc03_title";
+		trainerQuote: "event_fashion_week_sept21_npc03_combat_quote";
+		trainerTitle: "event_fashion_challenger_title";
+		tutorialOnLossString: "event_gotour_2021_npc00_victory__male_speaker";
+	}
+>;
+export type InvasionNpcDisplaySettingsEventNpc4 = InvasionNpcDisplaySettings<
+	"CHARACTER_EVENT_NPC_4",
+	{
+		avatar: {
+			avatar: 1;
+			avatarBackpack: "AVATAR_f_backpack_swshdlc2costume";
+			avatarBelt: "AVATAR_f_belt_empty";
+			avatarEyes: "AVATAR_f_eyes_1";
+			avatarFace: "AVATAR_f_face_empty";
+			avatarGlasses: "AVATAR_f_glasses_empty";
+			avatarGloves: "AVATAR_f_gloves_swshdlc2costume";
+			avatarHair: "AVATAR_f_hair_default_8";
+			avatarHat: "AVATAR_f_hat_laprasbandana";
+			avatarNecklace: "AVATAR_f_necklace_heart_0";
+			avatarPants: "AVATAR_f_pants_ultra_0";
+			avatarPose: "AVATAR_f_pose_11";
+			avatarShirt: "AVATAR_f_shirt_ruinmaniac";
+			avatarShoes: "AVATAR_f_shoes_ss";
+			avatarSocks: "AVATAR_f_socks_swshuniformdefault";
+			skin: 6;
+		};
+		backdropImageBundle: "combat_candela_backdrop";
+		customCombatMusic: "CombatMusic";
+		customIncidentMusic: "CombatLeaguePickerMusic";
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Spark.png";
+		isMale: true;
+		modelName: "player_female";
+		trainerName: "event_fashion_week_sept21_npc04_title";
+		trainerQuote: "event_fashion_week_sept21_npc04_combat_quote";
+		trainerTitle: "event_fashion_challenger_title";
+		tutorialOnLossString: "event_gotour_2021_npc00_victory__female_speaker";
+	}
+>;
+export type InvasionNpcDisplaySettingsEventNpc5 = InvasionNpcDisplaySettings<
+	"CHARACTER_EVENT_NPC_5",
+	{
+		avatar: {
+			avatarBackpack: "AVATAR_m_backpack_guitarcasebackpack";
+			avatarEyes: "AVATAR_m_eyes_3";
+			avatarFace: "AVATAR_m_face_empty";
+			avatarGlasses: "AVATAR_m_glasses_3d";
+			avatarGloves: "AVATAR_m_gloves_default_0";
+			avatarHair: "AVATAR_m_hair_default_2";
+			avatarHat: "AVATAR_m_hat_munnapack_1";
+			avatarPants: "AVATAR_m_pants_teamcandela";
+			avatarPose: "AVATAR_m_pose_31";
+			avatarShirt: "AVATAR_m_shirt_pkmnshirts_201";
+			avatarShoes: "AVATAR_m_shoes_registeeljersies";
+			avatarSocks: "AVATAR_m_socks_default_0";
+			skin: 2;
+		};
+		backdropImageBundle: "combat_spark_backdrop";
+		customCombatMusic: "CombatMusic";
+		customIncidentMusic: "CombatLeaguePickerMusic";
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Spark.png";
+		isMale: true;
+		modelName: "player_male";
+		trainerName: "event_fashion_week_sept21_npc05_title";
+		trainerQuote: "event_fashion_week_sept21_npc05_combat_quote";
+		trainerTitle: "event_fashion_challenger_title";
+		tutorialOnLossString: "event_gotour_2021_npc00_victory__male_speaker";
+	}
+>;
+export type InvasionNpcDisplaySettingsEventNpc6 = InvasionNpcDisplaySettings<
+	"CHARACTER_EVENT_NPC_6",
+	{
+		avatar: {
+			avatar: 1;
+			avatarBackpack: "AVATAR_m_backpack_guitarcasebackpack";
+			avatarEyes: "AVATAR_m_eyes_3";
+			avatarFace: "AVATAR_m_face_empty";
+			avatarGlasses: "AVATAR_m_glasses_3d";
+			avatarGloves: "AVATAR_m_gloves_default_0";
+			avatarHair: "AVATAR_m_hair_default_2";
+			avatarHat: "AVATAR_m_hat_munnapack_1";
+			avatarPants: "AVATAR_m_pants_teamcandela";
+			avatarPose: "AVATAR_m_pose_31";
+			avatarShirt: "AVATAR_m_shirt_pkmnshirts_201";
+			avatarShoes: "AVATAR_m_shoes_registeeljersies";
+			avatarSocks: "AVATAR_m_socks_default_0";
+			skin: 6;
+		};
+		backdropImageBundle: "combat_blanche_backdrop";
+		customCombatMusic: "CombatMusic";
+		customIncidentMusic: "CombatLeaguePickerMusic";
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		modelName: "player_female";
+		trainerName: "event_fashion_week_sept21_npc06_title";
+		trainerQuote: "event_fashion_week_sept21_npc06_combat_quote";
+		trainerTitle: "event_wcs_challenger_title";
+		tutorialOnLossString: "event_gotour_2021_npc00_victory__female_speaker";
+	}
+>;
+export type InvasionNpcDisplaySettingsEventNpc7 = InvasionNpcDisplaySettings<
+	"CHARACTER_EVENT_NPC_7",
+	{
+		avatar: {
+			avatar: 1;
+			avatarBackpack: "AVATAR_m_backpack_empty";
+			avatarEyes: "AVATAR_m_eyes_3";
+			avatarFace: "AVATAR_m_face_empty";
+			avatarGlasses: "AVATAR_m_glasses_roundsunglasses";
+			avatarGloves: "AVATAR_m_gloves_default_0";
+			avatarHair: "AVATAR_m_hair_default_10";
+			avatarHat: "AVATAR_m_hat_empty";
+			avatarPants: "AVATAR_m_pants_mewtwo";
+			avatarPose: "AVATAR_m_pose_empty";
+			avatarShirt: "AVATAR_m_shirt_mewtwo";
+			avatarShoes: "AVATAR_m_shoes_mewtwo";
+			avatarSocks: "AVATAR_m_socks_default_0";
+			skin: 1;
+		};
+		backdropImageBundle: "combat_spark_backdrop";
+		customCombatMusic: "CombatMusic";
+		customIncidentMusic: "CombatLeaguePickerMusic";
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Spark.png";
+		modelName: "player_female";
+		trainerName: "event_fashion_week_sept21_npc07_title";
+		trainerQuote: "event_fashion_week_sept21_npc07_combat_quote";
+		trainerTitle: "event_wcs_challenger_title";
+		tutorialOnLossString: "event_gotour_2021_npc00_victory__male_speaker";
+	}
+>;
+export type InvasionNpcDisplaySettingsEventNpc8 = InvasionNpcDisplaySettings<
+	"CHARACTER_EVENT_NPC_8",
+	{
+		avatar: {
+			avatarBackpack: "AVATAR_m_backpack_gengar_0";
+			avatarEyes: "AVATAR_m_eyes_3";
+			avatarGlasses: "AVATAR_m_glasses_empty";
+			avatarGloves: "AVATAR_m_gloves_gymleader_0";
+			avatarHair: "AVATAR_m_hair_default_5";
+			avatarHat: "AVATAR_m_hat_sableyegoggles";
+			avatarPants: "AVATAR_m_pants_teamrocket_0";
+			avatarPose: "AVATAR_m_pose_05";
+			avatarShirt: "AVATAR_m_shirt_pkmnshirts2021_01";
+			avatarShoes: "AVATAR_m_shoes_steven";
+			avatarSocks: "AVATAR_m_socks_default_3";
+			skin: 10;
+		};
+		backdropImageBundle: "combat_blanche_backdrop";
+		customCombatMusic: "GoTour2022Music02";
+		customIncidentMusic: "CombatLeaguePickerMusic";
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		isMale: true;
+		modelName: "player_male";
+		trainerName: "gotoursik_elitefour_b_name";
+		trainerQuote: "gotoursik_elitefour_b_quote";
+		trainerTitle: "gotoursik_elitefour_title";
+		tutorialOnLossString: "type_tutorial_poison";
+	}
+>;
+export type InvasionNpcDisplaySettingsEventNpc9 = InvasionNpcDisplaySettings<
+	"CHARACTER_EVENT_NPC_9",
+	{
+		avatar: {
+			avatar: 1;
+			avatarBackpack: "AVATAR_f_backpack_ultra_0";
+			avatarBelt: "AVATAR_f_belt_empty";
+			avatarEyes: "AVATAR_f_eyes_3";
+			avatarFace: "AVATAR_f_face_empty";
+			avatarGlasses: "AVATAR_f_glasses_empty";
+			avatarGloves: "AVATAR_f_gloves_frlg_0";
+			avatarHair: "AVATAR_f_hair_default_7";
+			avatarHat: "AVATAR_f_hat_movie2020";
+			avatarNecklace: "AVATAR_f_necklace_empty";
+			avatarPants: "AVATAR_f_pants_misty";
+			avatarPose: "AVATAR_f_pose_19";
+			avatarShirt: "AVATAR_f_shirt_regiicejersies";
+			avatarShoes: "AVATAR_f_shoes_teamrocket_1";
+			avatarSocks: "AVATAR_f_socks_default_0";
+			skin: 9;
+		};
+		backdropImageBundle: "combat_spark_backdrop";
+		customCombatMusic: "GoTour2022Music02";
+		customIncidentMusic: "CombatLeaguePickerMusic";
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Spark.png";
+		modelName: "player_female";
+		trainerName: "gotoursik_elitefour_c_name";
+		trainerQuote: "gotoursik_elitefour_c_quote";
+		trainerTitle: "gotoursik_elitefour_title";
+		tutorialOnLossString: "type_tutorial_water";
+	}
+>;
+export type InvasionNpcDisplaySettingsEventSierraUnticketed = InvasionNpcDisplaySettings<
+	"CHARACTER_EVENT_SIERRA_UNTICKETED",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Sierra.png";
+		modelName: "combat_execyellow";
+		trainerName: "combat_sierra_name";
+		trainerQuote: "combat_sierra_quote";
+		trainerTitle: "combat_sierra_title";
+		tutorialOnLossString: "type_tutorial_dark";
+	}
+>;
+export type InvasionNpcDisplaySettingsExecutiveArlo = InvasionNpcDisplaySettings<
+	"CHARACTER_EXECUTIVE_ARLO",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Arlo.png";
+		isMale: true;
+		modelName: "combat_execred";
+		trainerName: "combat_arlo_name";
+		trainerQuote: "combat_arlo_quote";
+		trainerTitle: "combat_arlo_title";
+		tutorialOnLossString: "type_tutorial_steel";
+	}
+>;
+export type InvasionNpcDisplaySettingsExecutiveCliff = InvasionNpcDisplaySettings<
+	"CHARACTER_EXECUTIVE_CLIFF",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Cliff.png";
+		isMale: true;
+		modelName: "combat_execblue";
+		trainerName: "combat_cliff_name";
+		trainerQuote: "combat_cliff_quote";
+		trainerTitle: "combat_cliff_title";
+		tutorialOnLossString: "type_tutorial_rock";
+	}
+>;
+export type InvasionNpcDisplaySettingsExecutiveSierra = InvasionNpcDisplaySettings<
+	"CHARACTER_EXECUTIVE_SIERRA",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Sierra.png";
+		modelName: "combat_execyellow";
+		trainerName: "combat_sierra_name";
+		trainerQuote: "combat_sierra_quote";
+		trainerTitle: "combat_sierra_title";
+		tutorialOnLossString: "type_tutorial_dark";
+	}
+>;
+export type InvasionNpcDisplaySettingsExplorer = InvasionNpcDisplaySettings<
+	"CHARACTER_EXPLORER",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		backdropImageBundle: "combat_spark_backdrop";
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Spark.png";
+		isMale: true;
+		modelName: "combat_explorer";
+		trainerName: "routes_NPC_explorer";
+		trainerQuote: "combat_spark_quote";
+		trainerTitle: "routes_NPC_activity_ge";
+	}
+>;
+export type InvasionNpcDisplaySettingsFairyGruntFemale = InvasionNpcDisplaySettings<
+	"CHARACTER_FAIRY_GRUNT_FEMALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		modelName: "f_combat_grunt";
+		tipsType: "POKEMON_TYPE_FAIRY";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_fairy";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_fairy";
+	}
+>;
+export type InvasionNpcDisplaySettingsFairyGruntMale = InvasionNpcDisplaySettings<
+	"CHARACTER_FAIRY_GRUNT_MALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		isMale: true;
+		modelName: "m_combat_grunt";
+		tipsType: "POKEMON_TYPE_FAIRY";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_fairy";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_fairy";
+	}
+>;
+export type InvasionNpcDisplaySettingsFightingGruntFemale = InvasionNpcDisplaySettings<
+	"CHARACTER_FIGHTING_GRUNT_FEMALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		modelName: "f_combat_grunt";
+		tipsType: "POKEMON_TYPE_FIGHTING";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_fighting";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_fighting";
+	}
+>;
+export type InvasionNpcDisplaySettingsFightingGruntMale = InvasionNpcDisplaySettings<
+	"CHARACTER_FIGHTING_GRUNT_MALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		isMale: true;
+		modelName: "m_combat_grunt";
+		tipsType: "POKEMON_TYPE_FIGHTING";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_fighting";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_fighting";
+	}
+>;
+export type InvasionNpcDisplaySettingsFireGruntFemale = InvasionNpcDisplaySettings<
+	"CHARACTER_FIRE_GRUNT_FEMALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		modelName: "f_combat_grunt";
+		tipsType: "POKEMON_TYPE_FIRE";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_fire";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_fire";
+	}
+>;
+export type InvasionNpcDisplaySettingsFireGruntMale = InvasionNpcDisplaySettings<
+	"CHARACTER_FIRE_GRUNT_MALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		isMale: true;
+		modelName: "m_combat_grunt";
+		tipsType: "POKEMON_TYPE_FIRE";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_fire";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_fire";
+	}
+>;
+export type InvasionNpcDisplaySettingsFlyingGruntFemale = InvasionNpcDisplaySettings<
+	"CHARACTER_FLYING_GRUNT_FEMALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		modelName: "f_combat_grunt";
+		tipsType: "POKEMON_TYPE_FLYING";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_flying";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_flying";
+	}
+>;
+export type InvasionNpcDisplaySettingsFlyingGruntMale = InvasionNpcDisplaySettings<
+	"CHARACTER_FLYING_GRUNT_MALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		isMale: true;
+		modelName: "m_combat_grunt";
+		tipsType: "POKEMON_TYPE_FLYING";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_flying";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_flying";
+	}
+>;
+export type InvasionNpcDisplaySettingsGhostGruntFemale = InvasionNpcDisplaySettings<
+	"CHARACTER_GHOST_GRUNT_FEMALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		modelName: "f_combat_grunt";
+		tipsType: "POKEMON_TYPE_GHOST";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_ghost";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_ghost";
+	}
+>;
+export type InvasionNpcDisplaySettingsGhostGruntMale = InvasionNpcDisplaySettings<
+	"CHARACTER_GHOST_GRUNT_MALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		isMale: true;
+		modelName: "m_combat_grunt";
+		tipsType: "POKEMON_TYPE_GHOST";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_ghost";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_ghost";
+	}
+>;
+export type InvasionNpcDisplaySettingsGiovanni = InvasionNpcDisplaySettings<
+	"CHARACTER_GIOVANNI",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Giovanni.png";
+		isMale: true;
+		modelName: "combat_giovanni";
+		trainerName: "combat_giovanni_name";
+		trainerQuote: "combat_giovanni_quote";
+		trainerTitle: "combat_giovanni_title";
+		tutorialOnLossString: "type_tutorial_ground";
+	}
+>;
+export type InvasionNpcDisplaySettingsGrassGruntFemale = InvasionNpcDisplaySettings<
+	"CHARACTER_GRASS_GRUNT_FEMALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		modelName: "f_combat_grunt";
+		tipsType: "POKEMON_TYPE_GRASS";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_grass";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_grass";
+	}
+>;
+export type InvasionNpcDisplaySettingsGrassGruntMale = InvasionNpcDisplaySettings<
+	"CHARACTER_GRASS_GRUNT_MALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		isMale: true;
+		modelName: "m_combat_grunt";
+		tipsType: "POKEMON_TYPE_GRASS";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_grass";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_grass";
+	}
+>;
+export type InvasionNpcDisplaySettingsGroundGruntFemale = InvasionNpcDisplaySettings<
+	"CHARACTER_GROUND_GRUNT_FEMALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		modelName: "f_combat_grunt";
+		tipsType: "POKEMON_TYPE_GROUND";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_ground";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_ground";
+	}
+>;
+export type InvasionNpcDisplaySettingsGroundGruntMale = InvasionNpcDisplaySettings<
+	"CHARACTER_GROUND_GRUNT_MALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		isMale: true;
+		modelName: "m_combat_grunt";
+		tipsType: "POKEMON_TYPE_GROUND";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_ground";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_ground";
+	}
+>;
+export type InvasionNpcDisplaySettingsGruntbFemale = InvasionNpcDisplaySettings<
+	"CHARACTER_GRUNTB_FEMALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Giovanni.png";
+		modelName: "f_combat_gruntb";
+		trainerName: "combat_grunt_bf_name";
+		trainerQuote: "grunt_bf_combat_quote";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "{grunt_dynamic_tutorial}";
+	}
+>;
+export type InvasionNpcDisplaySettingsGruntbMale = InvasionNpcDisplaySettings<
+	"CHARACTER_GRUNTB_MALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Giovanni.png";
+		isMale: true;
+		modelName: "m_combat_gruntb";
+		trainerName: "combat_grunt_bm_name";
+		trainerQuote: "grunt_bm_combat_quote";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "{grunt_dynamic_tutorial}";
+	}
+>;
+export type InvasionNpcDisplaySettingsGruntFemale = InvasionNpcDisplaySettings<
+	"CHARACTER_GRUNT_FEMALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		modelName: "f_combat_grunt";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "{grunt_dynamic_quote}";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "{grunt_dynamic_tutorial}";
+	}
+>;
+export type InvasionNpcDisplaySettingsGruntMale = InvasionNpcDisplaySettings<
+	"CHARACTER_GRUNT_MALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		isMale: true;
+		modelName: "m_combat_grunt";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "{grunt_dynamic_quote}";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "{grunt_dynamic_tutorial}";
+	}
+>;
+export type InvasionNpcDisplaySettingsIceGruntFemale = InvasionNpcDisplaySettings<
+	"CHARACTER_ICE_GRUNT_FEMALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		modelName: "f_combat_grunt";
+		tipsType: "POKEMON_TYPE_ICE";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_ice";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_ice";
+	}
+>;
+export type InvasionNpcDisplaySettingsIceGruntMale = InvasionNpcDisplaySettings<
+	"CHARACTER_ICE_GRUNT_MALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		isMale: true;
+		modelName: "m_combat_grunt";
+		tipsType: "POKEMON_TYPE_ICE";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_ice";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_ice";
+	}
+>;
+export type InvasionNpcDisplaySettingsMetalGruntFemale = InvasionNpcDisplaySettings<
+	"CHARACTER_METAL_GRUNT_FEMALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		modelName: "f_combat_grunt";
+		tipsType: "POKEMON_TYPE_STEEL";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_steel";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_steel";
+	}
+>;
+export type InvasionNpcDisplaySettingsMetalGruntMale = InvasionNpcDisplaySettings<
+	"CHARACTER_METAL_GRUNT_MALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		isMale: true;
+		modelName: "m_combat_grunt";
+		tipsType: "POKEMON_TYPE_STEEL";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_steel";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_steel";
+	}
+>;
+export type InvasionNpcDisplaySettingsNormalGruntFemale = InvasionNpcDisplaySettings<
+	"CHARACTER_NORMAL_GRUNT_FEMALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		modelName: "f_combat_grunt";
+		tipsType: "POKEMON_TYPE_NORMAL";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_normal";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_normal";
+	}
+>;
+export type InvasionNpcDisplaySettingsNormalGruntMale = InvasionNpcDisplaySettings<
+	"CHARACTER_NORMAL_GRUNT_MALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		isMale: true;
+		modelName: "m_combat_grunt";
+		tipsType: "POKEMON_TYPE_NORMAL";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_normal";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_normal";
+	}
+>;
+export type InvasionNpcDisplaySettingsPoisonGruntFemale = InvasionNpcDisplaySettings<
+	"CHARACTER_POISON_GRUNT_FEMALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		modelName: "f_combat_grunt";
+		tipsType: "POKEMON_TYPE_POISON";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_poison";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_poison";
+	}
+>;
+export type InvasionNpcDisplaySettingsPoisonGruntMale = InvasionNpcDisplaySettings<
+	"CHARACTER_POISON_GRUNT_MALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		isMale: true;
+		modelName: "m_combat_grunt";
+		tipsType: "POKEMON_TYPE_POISON";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_poison";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_poison";
+	}
+>;
+export type InvasionNpcDisplaySettingsPsychicGruntFemale = InvasionNpcDisplaySettings<
+	"CHARACTER_PSYCHIC_GRUNT_FEMALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		modelName: "f_combat_grunt";
+		tipsType: "POKEMON_TYPE_PSYCHIC";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_psychic";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_psychic";
+	}
+>;
+export type InvasionNpcDisplaySettingsPsychicGruntMale = InvasionNpcDisplaySettings<
+	"CHARACTER_PSYCHIC_GRUNT_MALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		isMale: true;
+		modelName: "m_combat_grunt";
+		tipsType: "POKEMON_TYPE_PSYCHIC";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_psychic";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_psychic";
+	}
+>;
+export type InvasionNpcDisplaySettingsRockGruntFemale = InvasionNpcDisplaySettings<
+	"CHARACTER_ROCK_GRUNT_FEMALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		modelName: "f_combat_grunt";
+		tipsType: "POKEMON_TYPE_ROCK";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_rock";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_rock";
+	}
+>;
+export type InvasionNpcDisplaySettingsRockGruntMale = InvasionNpcDisplaySettings<
+	"CHARACTER_ROCK_GRUNT_MALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		isMale: true;
+		modelName: "m_combat_grunt";
+		tipsType: "POKEMON_TYPE_ROCK";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_rock";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_rock";
+	}
+>;
+export type InvasionNpcDisplaySettingsSpark = InvasionNpcDisplaySettings<
+	"CHARACTER_SPARK",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		backdropImageBundle: "combat_spark_backdrop";
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Spark.png";
+		isMale: true;
+		modelName: "combat_spark";
+		trainerName: "combat_spark";
+		trainerQuote: "combat_spark_quote";
+		trainerTitle: "combat_spark_title";
+	}
+>;
+export type InvasionNpcDisplaySettingsWaterGruntFemale = InvasionNpcDisplaySettings<
+	"CHARACTER_WATER_GRUNT_FEMALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		modelName: "f_combat_grunt";
+		tipsType: "POKEMON_TYPE_WATER";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_water";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_water";
+	}
+>;
+export type InvasionNpcDisplaySettingsWaterGruntMale = InvasionNpcDisplaySettings<
+	"CHARACTER_WATER_GRUNT_MALE",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		isMale: true;
+		modelName: "m_combat_grunt";
+		tipsType: "POKEMON_TYPE_WATER";
+		trainerName: "combat_grunt_name";
+		trainerQuote: "combat_grunt_quote_water";
+		trainerTitle: "combat_grunt_title";
+		tutorialOnLossString: "type_tutorial_water";
+	}
+>;
+export type InvasionNpcDisplaySettingsWillow = InvasionNpcDisplaySettings<
+	"CHARACTER_WILLOW",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		customIncidentMusic: "QuestMusic";
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		modelName: "combat_blanche";
+		trainerName: "combat_blanche";
+		trainerQuote: "combat_blanche_quote";
+		trainerTitle: "combat_blanche_title";
+	}
+>;
+export type InvasionNpcDisplaySettingsWillowb = InvasionNpcDisplaySettings<
+	"CHARACTER_WILLOWB",
+	{
+		avatar: {
+			avatar: 2;
+		};
+		customIncidentMusic: "QuestMusic";
+		iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png";
+		modelName: "combat_blanche";
+		trainerName: "combat_blanche";
+		trainerQuote: "combat_blanche_quote";
+		trainerTitle: "combat_blanche_title";
+	}
+>;
 
 export type InvasionNpcDisplaySettingsMasterfileEntry =
 	| InvasionNpcDisplaySettingsBlanche

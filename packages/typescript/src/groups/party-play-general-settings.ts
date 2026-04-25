@@ -1,33 +1,104 @@
-export interface PartyPlayGeneralSettings<TemplateID extends string> {
+export interface PartyPlayGeneralSettings<
+	TemplateID extends string = string,
+	TData extends PartyPlayGeneralSettingsData = PartyPlayGeneralSettingsData,
+> {
 	templateId: TemplateID;
-	data: PartyPlayGeneralSettingsData<TemplateID>;
+	data: {
+		templateId: TemplateID;
+		partyPlayGeneralSettings: TData & {
+			enabled: true;
+			fallbackPartyQuestEnabled: true;
+			friendRequestsEnabled: true;
+		};
+	};
 }
 
-export interface PartyPlayGeneralSettingsData<TemplateID extends string> {
-	templateId: TemplateID;
-	partyPlayGeneralSettings: {
-		complianceZonesEnabled?: true;
-		creationToStartTimeoutMs?: "600000";
-		enabled: true;
-		enabledFriendStatusIncrease?: true;
-		enablePartyRaidInformation?: true;
-		fallbackPartyQuestEnabled: true;
-		friendRequestsEnabled: true;
-		inviteExpirationMs?: 86400000;
-		matchmakingEnabled?: true;
-		maxInvitesPerPlayer?: 10;
-		maxPartySize?: 4;
-		maxStackedEncounterReward?: 1;
-		minPlayerLevel: PartyPlayGeneralSettingsMinPlayerLevel;
-		notificationMilestones?: PartyPlayGeneralSettingsNotificationMilestones;
-		partyCatchTagsEnabled?: true;
-		partyExpiryDurationMs?: "10800000";
-		partyExpiryWarningMinutes?: 10;
-		partyIapBoostsEnabled?: true;
-		partyNewQuestNotificationV2Enabled?: true;
-		partyQuestEncounterRewardEnabled?: true;
-		partyRewardGracePeriodMs?: "604800000";
-		partySchedulingSettings?: {
+export interface PartyPlayGeneralSettingsData {
+	complianceZonesEnabled?: boolean;
+	creationToStartTimeoutMs?: string;
+	enabledFriendStatusIncrease?: boolean;
+	enablePartyRaidInformation?: boolean;
+	inviteExpirationMs?: number;
+	matchmakingEnabled?: boolean;
+	maxInvitesPerPlayer?: number;
+	maxPartySize?: number;
+	maxStackedEncounterReward?: number;
+	minPlayerLevel?: number;
+	notificationMilestones?: [number, number, number, number];
+	partyCatchTagsEnabled?: boolean;
+	partyExpiryDurationMs?: string;
+	partyExpiryWarningMinutes?: number;
+	partyIapBoostsEnabled?: boolean;
+	partyNewQuestNotificationV2Enabled?: boolean;
+	partyQuestEncounterRewardEnabled?: boolean;
+	partyRewardGracePeriodMs?: string;
+	partySchedulingSettings?: {
+		recurringChallengeSchedule?: {
+			dayAndTimeEndTime?: {
+				dayOfWeek?: number;
+				hourOfDay?: number;
+			};
+			dayAndTimeStartTime?: {
+				dayOfWeek?: number;
+				hourOfDay?: number;
+			};
+			maxNumChallengePerCycle?: number;
+			nearEndNotification?: {
+				avalibleWindowHours?: number;
+				enabled?: boolean;
+				isLocal?: boolean;
+				time?: {
+					dayOfWeek?: number;
+					hourOfDay?: number;
+				};
+			};
+			startNotification?: {
+				avalibleWindowHours?: number;
+				enabled?: boolean;
+				isLocal?: boolean;
+				time?: {
+					dayOfWeek?: number;
+					hourOfDay?: number;
+				};
+			};
+			timezoneId?: string;
+		};
+	};
+	pgDeliveryMechanic?: string;
+	restartPartyRejoinPromptEnabled?: boolean;
+	sendInviteEnabled?: boolean;
+}
+
+export type PartyPlayGeneralSettingsPartyPlayGeneralSettings = PartyPlayGeneralSettings<
+	"PARTY_PLAY_GENERAL_SETTINGS",
+	{
+		complianceZonesEnabled: true;
+		creationToStartTimeoutMs: "600000";
+		enabledFriendStatusIncrease: true;
+		enablePartyRaidInformation: true;
+		maxStackedEncounterReward: 1;
+		minPlayerLevel: 21;
+		partyCatchTagsEnabled: true;
+		partyExpiryDurationMs: "10800000";
+		partyExpiryWarningMinutes: 10;
+		partyIapBoostsEnabled: true;
+		partyNewQuestNotificationV2Enabled: true;
+		partyQuestEncounterRewardEnabled: true;
+		pgDeliveryMechanic: "POLLING_BIT";
+		restartPartyRejoinPromptEnabled: true;
+	}
+>;
+export type PartyPlayGeneralSettingsWeeklyChallengeGeneralSettings = PartyPlayGeneralSettings<
+	"WEEKLY_CHALLENGE_GENERAL_SETTINGS",
+	{
+		inviteExpirationMs: 86400000;
+		matchmakingEnabled: true;
+		maxInvitesPerPlayer: 10;
+		maxPartySize: 4;
+		minPlayerLevel: 13;
+		notificationMilestones: [0.25, 0.5, 0.75, 1];
+		partyRewardGracePeriodMs: "604800000";
+		partySchedulingSettings: {
 			recurringChallengeSchedule: {
 				dayAndTimeEndTime: {
 					dayOfWeek: 2;
@@ -59,23 +130,9 @@ export interface PartyPlayGeneralSettingsData<TemplateID extends string> {
 				timezoneId: "UTC";
 			};
 		};
-		pgDeliveryMechanic?: "POLLING_BIT";
-		restartPartyRejoinPromptEnabled?: true;
-		sendInviteEnabled?: true;
-	};
-}
-
-export type PartyPlayGeneralSettingsMinPlayerLevel = 13 | 21;
-
-export type PartyPlayGeneralSettingsNotificationMilestones = [
-	0.25,
-	0.5,
-	0.75,
-	1
-];
-
-export type PartyPlayGeneralSettingsPartyPlayGeneralSettings = PartyPlayGeneralSettings<"PARTY_PLAY_GENERAL_SETTINGS">;
-export type PartyPlayGeneralSettingsWeeklyChallengeGeneralSettings = PartyPlayGeneralSettings<"WEEKLY_CHALLENGE_GENERAL_SETTINGS">;
+		sendInviteEnabled: true;
+	}
+>;
 
 export type PartyPlayGeneralSettingsMasterfileEntry =
 	| PartyPlayGeneralSettingsPartyPlayGeneralSettings

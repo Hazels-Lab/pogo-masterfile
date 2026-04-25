@@ -1,147 +1,248 @@
-export interface PokemonUpgrades<TemplateID extends string> {
+export interface PokemonUpgrades<
+	TemplateID extends string = string,
+	TData extends PokemonUpgradesData = PokemonUpgradesData,
+> {
 	templateId: TemplateID;
-	data: PokemonUpgradesData<TemplateID>;
-}
-
-export interface PokemonUpgradesData<TemplateID extends string> {
-	templateId: TemplateID;
-	pokemonUpgrades: {
-		allowedLevelsAbovePlayer: 10;
-		candyCost: PokemonUpgradesCandyCost;
-		defaultCpBoostAdditionalLevel: 1;
-		maxNormalUpgradeLevel: 50;
-		purifiedCandyMultiplier: 0.9;
-		purifiedStardustMultiplier: 0.9;
-		shadowCandyMultiplier: 1.2;
-		shadowStardustMultiplier: 1.2;
-		stardustCost: PokemonUpgradesStardustCost;
-		upgradesPerLevel: 2;
-		xlCandyCost: PokemonUpgradesXlCandyCost;
-		xlCandyMinPlayerLevel: 31;
-		xlCandyMinPokemonLevel: 40;
+	data: {
+		templateId: TemplateID;
+		pokemonUpgrades: TData & {
+			allowedLevelsAbovePlayer: 10;
+			defaultCpBoostAdditionalLevel: 1;
+			maxNormalUpgradeLevel: 50;
+			purifiedCandyMultiplier: 0.9;
+			purifiedStardustMultiplier: 0.9;
+			shadowCandyMultiplier: 1.2;
+			shadowStardustMultiplier: 1.2;
+			stardustCost: [
+				200,
+				200,
+				400,
+				400,
+				600,
+				600,
+				800,
+				800,
+				1000,
+				1000,
+				1300,
+				1300,
+				1600,
+				1600,
+				1900,
+				1900,
+				2200,
+				2200,
+				2500,
+				2500,
+				3000,
+				3000,
+				3500,
+				3500,
+				4000,
+				4000,
+				4500,
+				4500,
+				5000,
+				5000,
+				6000,
+				6000,
+				7000,
+				7000,
+				8000,
+				8000,
+				9000,
+				9000,
+				10000,
+				10000,
+				11000,
+				11000,
+				12000,
+				12000,
+				13000,
+				13000,
+				14000,
+				14000,
+				15000,
+			];
+			upgradesPerLevel: 2;
+			xlCandyMinPlayerLevel: 31;
+			xlCandyMinPokemonLevel: 40;
+		};
 	};
 }
 
-export type PokemonUpgradesCandyCost = [
-	1 | 30,
-	1 | 30,
-	1 | 30,
-	1 | 30,
-	1 | 30,
-	1 | 30,
-	1 | 30,
-	1 | 30,
-	1 | 30,
-	1 | 30,
-	2 | 60,
-	2 | 60,
-	2 | 60,
-	2 | 60,
-	2 | 60,
-	2 | 60,
-	2 | 60,
-	2 | 60,
-	2 | 60,
-	2 | 60,
-	3 | 90,
-	3 | 90,
-	3 | 90,
-	3 | 90,
-	3 | 90,
-	4 | 120,
-	4 | 120,
-	4 | 120,
-	4 | 120,
-	4 | 120,
-	6 | 175,
-	6 | 175,
-	8 | 225,
-	8 | 225,
-	10 | 300,
-	10 | 300,
-	12 | 375,
-	12 | 375,
-	15 | 890,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0
-];
+export interface PokemonUpgradesData {
+	candyCost?: [
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+		number,
+	];
+	xlCandyCost?: [number, number, number, number, number, number, number, number, number, number];
+}
 
-export type PokemonUpgradesStardustCost = [
-	200,
-	200,
-	400,
-	400,
-	600,
-	600,
-	800,
-	800,
-	1000,
-	1000,
-	1300,
-	1300,
-	1600,
-	1600,
-	1900,
-	1900,
-	2200,
-	2200,
-	2500,
-	2500,
-	3000,
-	3000,
-	3500,
-	3500,
-	4000,
-	4000,
-	4500,
-	4500,
-	5000,
-	5000,
-	6000,
-	6000,
-	7000,
-	7000,
-	8000,
-	8000,
-	9000,
-	9000,
-	10000,
-	10000,
-	11000,
-	11000,
-	12000,
-	12000,
-	13000,
-	13000,
-	14000,
-	14000,
-	15000
-];
-
-export type PokemonUpgradesXlCandyCost = [
-	10 | 100,
-	10 | 100,
-	12 | 200,
-	12 | 200,
-	15 | 400,
-	15 | 400,
-	17 | 635,
-	17 | 635,
-	20 | 890,
-	20 | 890
-];
-
-export type PokemonUpgradesOverrideSettingsV0890PokemonEternatus = PokemonUpgrades<"POKEMON_UPGRADE_OVERRIDE_SETTINGS_V0890_POKEMON_ETERNATUS">;
-export type PokemonUpgradesSettings = PokemonUpgrades<"POKEMON_UPGRADE_SETTINGS">;
+export type PokemonUpgradesOverrideSettingsV0890PokemonEternatus = PokemonUpgrades<
+	"POKEMON_UPGRADE_OVERRIDE_SETTINGS_V0890_POKEMON_ETERNATUS",
+	{
+		candyCost: [
+			30,
+			30,
+			30,
+			30,
+			30,
+			30,
+			30,
+			30,
+			30,
+			30,
+			60,
+			60,
+			60,
+			60,
+			60,
+			60,
+			60,
+			60,
+			60,
+			60,
+			90,
+			90,
+			90,
+			90,
+			90,
+			120,
+			120,
+			120,
+			120,
+			120,
+			175,
+			175,
+			225,
+			225,
+			300,
+			300,
+			375,
+			375,
+			890,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+		];
+		xlCandyCost: [100, 100, 200, 200, 400, 400, 635, 635, 890, 890];
+	}
+>;
+export type PokemonUpgradesSettings = PokemonUpgrades<
+	"POKEMON_UPGRADE_SETTINGS",
+	{
+		candyCost: [
+			1,
+			1,
+			1,
+			1,
+			1,
+			1,
+			1,
+			1,
+			1,
+			1,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			3,
+			3,
+			3,
+			3,
+			3,
+			4,
+			4,
+			4,
+			4,
+			4,
+			6,
+			6,
+			8,
+			8,
+			10,
+			10,
+			12,
+			12,
+			15,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+		];
+		xlCandyCost: [10, 10, 12, 12, 15, 15, 17, 17, 20, 20];
+	}
+>;
 
 export type PokemonUpgradesMasterfileEntry =
 	| PokemonUpgradesOverrideSettingsV0890PokemonEternatus

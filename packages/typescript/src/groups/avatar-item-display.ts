@@ -1,1656 +1,11127 @@
-export interface AvatarItemDisplay<TemplateID extends string> {
+export interface AvatarItemDisplay<
+	TemplateID extends string = string,
+	TData extends AvatarItemDisplayData = AvatarItemDisplayData,
+> {
 	templateId: TemplateID;
-	data: AvatarItemDisplayData<TemplateID>;
-}
-
-export interface AvatarItemDisplayData<TemplateID extends string> {
-	templateId: TemplateID;
-	avatarItemDisplay: {
-		displayStringId?: AvatarItemDisplayDisplayStringID;
-		iconAddress: AvatarItemDisplayIconAddress;
+	data: {
+		templateId: TemplateID;
+		avatarItemDisplay: TData;
 	};
 }
 
-export type AvatarItemDisplayDisplayStringID = "AVATAR_AlolanExeggutorHat" | "avatar_backpack_blackkyurem" | "avatar_backpack_eggincubator" | "avatar_backpack_goruckgengar" | "avatar_backpack_goruckpikachu" | "avatar_backpack_goruckwobbuffet" | "avatar_backpack_s22blue" | "avatar_backpack_tatsugiricurly" | "avatar_backpack_tatsugiridroopy" | "avatar_backpack_tatsugiristretchy" | "avatar_backpack_whitekyurem" | "avatar_bag_charjabug" | "avatar_bag_pinapberry" | "AVATAR_baggypants" | "AVATAR_darkbaggyjacket" | "avatar_glasses_ditto" | "avatar_glasses_wcs2024champion" | "avatar_gloves_dynamaxbandwhite" | "avatar_gloves_gblallister" | "avatar_gloves_teamyell" | "avatar_gloves_wristbandblue" | "avatar_gloves_wristbandred" | "avatar_gloves_wristbandwhite" | "avatar_gloves_wristbandyellow" | "avatar_hat_applinheadband" | "avatar_hat_captainpikachu" | "avatar_hat_eternatus" | "avatar_hat_flowercrown" | "avatar_hat_halloween2024" | "avatar_hat_kyurem" | "avatar_hat_mlbballcap" | "avatar_hat_mlbbrewers" | "avatar_hat_mlbdiamondbacks" | "avatar_hat_mlbgiants" | "avatar_hat_mlbguardians" | "avatar_hat_mlbmariners" | "avatar_hat_mlbmarlins" | "avatar_hat_mlbmets" | "avatar_hat_mlbnationals" | "avatar_hat_mlborioles" | "avatar_hat_mlbpadres" | "avatar_hat_mlbrangers" | "avatar_hat_mlbrays" | "avatar_hat_mlbredsox" | "avatar_hat_mlbtwins" | "avatar_hat_mlbwhitesox" | "avatar_hat_partyhat" | "avatar_hat_snom" | "avatar_hat_suitblue" | "avatar_hat_suitred" | "avatar_hat_suityellow" | "avatar_hat_wcs2024" | "avatar_hat_wcs2025champion" | "avatar_hat_wcs2025visor" | "avatar_hat_xerneas" | "avatar_hats_mustard" | "AVATAR_KomalaBackpack" | "AVATAR_LanaOutfit" | "AVATAR_LanaPose" | "AVATAR_LanaShoes" | "AVATAR_LanaWig" | "AVATAR_lightbaggyjacket" | "AVATAR_LucarioMask" | "AVATAR_m_shirt_gofest2024gray_00_bundle_icon" | "avatar_mask_gblallister" | "avatar_mask_toxelfacemask" | "avatar_mask_zacian" | "avatar_mask_zamazenta" | "avatar_n_backpack_clemont" | "avatar_n_glasses_clemont" | "avatar_n_glasses_lvl73-visorspecs_0" | "avatar_n_hat_communityambassador" | "avatar_n_hat_pokeballitems-basic_0" | "avatar_n_hat_pokeballitems-great_0" | "avatar_n_hat_pokeballitems-ultra_0" | "avatar_n_hat_polteageist" | "avatar_n_hat_zacostume_a" | "avatar_n_hat_zacostume_b" | "avatar_n_pants_lvl75-techtrousers_0" | "avatar_n_pose_communityambassador" | "avatar_n_shirt_bewear" | "avatar_n_shirt_clemont" | "avatar_n_shirt_concierge" | "avatar_n_shirt_dudunsparce" | "avatar_n_shirt_gowa2025" | "avatar_n_shirt_gowa2025purple" | "avatar_n_shirt_lvl80-circuitjacket_0" | "avatar_n_shirt_pokeballitems-basic_0" | "avatar_n_shirt_pokeballitems-great_0" | "avatar_n_shirt_pokeballitems-ultra_0" | "avatar_n_shirt_shinykeldeotshirt" | "avatar_n_shirt_zacostume_a" | "avatar_n_shirt_zacostume_b" | "avatar_n_shoes_clemont" | "avatar_n_shoes_lvl71-cyberkicks_0" | "avatar_n_shoes_pokeballitems-basic_0" | "avatar_n_shoes_pokeballitems-great_0" | "avatar_n_shoes_pokeballitems-ultra_0" | "avatar_n_shoes_zacostume_a" | "avatar_n_shoes_zacostume_b" | "AVATAR_NecrozmaGlasses" | "AVATAR_NecrozmaJacket" | "AVATAR_NecrozmaPants" | "AVATAR_NecrozmaShoes" | "avatar_pants_bwpants" | "avatar_pants_eternatus" | "avatar_pants_gbl19" | "avatar_pants_gblgrimsley" | "avatar_pants_grusha" | "avatar_pants_mustard" | "avatar_pants_plaidpants" | "avatar_pants_s22blue" | "avatar_pants_suit" | "avatar_pants_teamyellpants" | "avatar_pants_teamyellskirt" | "avatar_pants_wcs2024champion" | "avatar_pants_wcs2025champion" | "avatar_pose_carnival" | "avatar_pose_concierge" | "avatar_pose_determined" | "avatar_pose_exploration" | "avatar_pose_gbl19" | "avatar_pose_gblallister" | "avatar_pose_gblgrimsley" | "avatar_pose_gofest2025" | "avatar_pose_grusha" | "avatar_pose_heart" | "avatar_pose_icecream" | "avatar_pose_legacy50" | "avatar_pose_mustard" | "avatar_pose_paperplane" | "avatar_pose_penpal" | "avatar_pose_plant" | "avatar_pose_pokeballbuddy" | "avatar_pose_rapidstrike" | "avatar_pose_runway" | "avatar_pose_s20gbl" | "avatar_pose_s22blue" | "avatar_pose_safariball" | "avatar_pose_singlestrike" | "avatar_pose_teacup" | "avatar_pose_tinkaton" | "avatar_pose_wcs2024" | "avatar_shirt_applinapron" | "avatar_shirt_bwhoodie" | "avatar_shirt_eternatus" | "avatar_shirt_gbl19" | "avatar_shirt_gblallister" | "avatar_shirt_gblgrimsley" | "avatar_shirt_gofest2025black" | "avatar_shirt_gofest2025cream" | "avatar_shirt_gotour_black" | "avatar_shirt_gotour_grey" | "avatar_shirt_gotour2025black" | "avatar_shirt_gotour2025gray" | "avatar_shirt_gotour2025white" | "avatar_shirt_gowatshirt2024" | "avatar_shirt_grusha" | "avatar_shirt_halloween2024" | "avatar_shirt_marshtompsweater" | "avatar_shirt_mimikyu_hoodoff" | "avatar_shirt_mimikyu_hoodon" | "avatar_shirt_morpekofullbelly" | "avatar_shirt_morpekohangry" | "avatar_shirt_mustard" | "avatar_shirt_plaidtop" | "avatar_shirt_s22blue" | "avatar_shirt_scolipede" | "avatar_shirt_shinydiancie" | "avatar_shirt_shinymeloetta" | "avatar_shirt_staryusweater" | "avatar_shirt_suitblue" | "avatar_shirt_suitred" | "avatar_shirt_suityellow" | "avatar_shirt_sweatersudowoodo" | "avatar_shirt_teamyellcrop" | "avatar_shirt_teamyellshirt" | "avatar_shirt_volcanion" | "avatar_shirt_wcs2024" | "avatar_shirt_wcs2024champion" | "avatar_shirt_wcs2025champion" | "avatar_shirt_wcs2025jersey" | "avatar_shirt_wcs2025white" | "avatar_shirt_wcs2025yellow" | "avatar_shirt_wcsregional2025" | "avatar_shirt_wooloojacket" | "avatar_shirt_yveltal" | "avatar_shirt_zygarde" | "avatar_shoes_blacephelon" | "avatar_shoes_eternatus" | "avatar_shoes_gbl19" | "avatar_shoes_gblallister" | "avatar_shoes_gblgrimsley" | "avatar_shoes_grusha" | "avatar_shoes_marathon" | "avatar_shoes_mustard" | "avatar_shoes_s22blue" | "avatar_shoes_sizzlipedeboots" | "avatar_shoes_teamyell" | "avatar_shoes_wcs2024champion" | "AVATAR_TandemausHoodie" | "AVATAR_TandemausSlippers" | "avatar_tshirt_wcs2024blue" | "avatar_tshirt_wcs2024white" | "m_backpack_eggbackpack_0_icon_display_name" | "m_backpack_eggbackpack_1_icon_display_name" | "m_backpack_eggbackpack_2_icon_display_name" | "n__glasses_drpikachu_0_display_name" | "n_backpack_alolaitemslittenbp_0_display_name" | "n_backpack_alolaitemspoppliobp_0_display_name" | "n_backpack_alolaitemsrowletbp_0_display_name" | "n_backpack_animegou_0_display_name" | "n_backpack_backpacker_0_display_name" | "n_backpack_combeebackpack_0_display_name" | "n_backpack_combeebackpack_1_display_name" | "n_backpack_cute_0_display_name" | "n_backpack_dedenneitems_0_display_name" | "n_backpack_default_a_0_display_name" | "n_backpack_default_b_0_display_name" | "n_backpack_default-new_0_display_name" | "n_backpack_dp_0_display_name" | "n_backpack_eggbackpack_0_display_name" | "n_backpack_eggbackpack_1_display_name" | "n_backpack_eggbackpack_2_display_name" | "n_backpack_frlg_a_0_display_name" | "n_backpack_frlg_b_0_display_name" | "n_backpack_genesecteventitem_0_display_name" | "n_backpack_gengar_0_display_name" | "n_backpack_giratinaitems_0_display_name" | "n_backpack_guccibackpack_0_display_name" | "n_backpack_guitarcasebackpack_0_display_name" | "n_backpack_hgss_a_0_display_name" | "n_backpack_hgss_b_0_display_name" | "n_backpack_hououbackpack_0_display_name" | "n_backpack_kakureonpouch_0_display_name" | "n_backpack_longchampbp_0_display_name" | "n_backpack_lunalaitems_0_display_name" | "n_backpack_lunarnewyr_0_display_name" | "n_backpack_mimikyubp_0_display_name" | "n_backpack_movie2020_0_display_name" | "n_backpack_nike2021_0_display_name" | "n_backpack_pamobackpack_0_display_name" | "n_backpack_pkmnhoodie001_0_display_name" | "n_backpack_pkmnhoodie004_0_display_name" | "n_backpack_pkmnhoodie007_0_display_name" | "n_backpack_ruinmaniac_0_display_name" | "n_backpack_snapcamera_0_display_name" | "n_backpack_ss_a_0_display_name" | "n_backpack_ss_b_0_display_name" | "n_backpack_svcostumescarletschool_0_display_name" | "n_backpack_svcostumevioletschool_0_display_name" | "n_backpack_svdlc1_0_display_name" | "n_backpack_svdlc2spring_0_display_name" | "n_backpack_swshdlc2costume_a_0_display_name" | "n_backpack_swshdlc2costume_b_0_display_name" | "n_backpack_swshdlccostume_a_0_display_name" | "n_backpack_swshdlccostume_b_0_display_name" | "n_backpack_togepibackpack_0_display_name" | "n_backpack_ultra_a_0_display_name" | "n_backpack_ultra_b_0_display_name" | "n_backpack_unequip_0_display_name" | "n_backpack_verizon2021_0_display_name" | "n_backpack_zubatbp_0_display_name" | "n_belt_acetrainerbw_0_display_name" | "n_belt_default_a_0_display_name" | "n_belt_simple_3_display_name" | "n_belt_teamrocket_0_display_name" | "n_belt_teamrocket_1_display_name" | "n_belt_unequip_0_display_name" | "n_face_3dmask_0_display_name" | "n_face_3dmask_1_display_name" | "n_face_3dmask_2_display_name" | "n_face_banettemask_0_display_name" | "n_face_dayofthedead_0_display_name" | "n_face_defaultmask_0_display_name" | "n_face_facestickerghostpika_0_display_name" | "n_face_facestickerpikachu_0_display_name" | "n_face_facestickerpokeball_0_display_name" | "n_face_festofcolors_0_display_name" | "n_face_festofcolors_1_display_name" | "n_face_festofcolors_2_display_name" | "n_face_gracidea_0_display_name" | "n_face_holiday2022santacostumes_0_display_name" | "n_face_pikachumask_0_display_name" | "n_face_sableyemask_0_display_name" | "n_face_teamskull_0_display_name" | "n_face_unequip_0_display_name" | "n_face_verizon2020mask_0_display_name" | "n_glasses_3d_0_display_name" | "n_glasses_cutieflysleepmask_0_display_name" | "n_glasses_divingsuit_0_display_name" | "n_glasses_frillishglasses_0_display_name" | "n_glasses_fw2022_0_display_name" | "n_glasses_gimmighoulitems_0_display_name" | "n_glasses_goteamrocketarlo_0_display_name" | "n_glasses_grandoakglasses_0_display_name" | "n_glasses_jogger_0_display_name" | "n_glasses_lugiaglasses_0_display_name" | "n_glasses_lv40glasses_0_display_name" | "n_glasses_mask_1_display_name" | "n_glasses_newyear2022_0_display_name" | "n_glasses_newyearglasses2020_0_display_name" | "n_glasses_newyearglasses2021_0_display_name" | "n_glasses_obstagoonitems_0_display_name" | "n_glasses_roundsunglasses_0_display_name" | "n_glasses_teardrop_0_display_name" | "n_glasses_thick_4_display_name" | "n_glasses_unequip_0_display_name" | "n_gloves_acetrainersm_0_display_name" | "n_gloves_battlegirl_0_display_name" | "n_gloves_bea_0_display_name" | "n_gloves_bwn_0_display_name" | "n_gloves_default_a_0_display_name" | "n_gloves_default_b_0_display_name" | "n_gloves_default-new_0_display_name" | "n_gloves_delibird_0_display_name" | "n_gloves_frlg_a_0_display_name" | "n_gloves_frlg_b_0_display_name" | "n_gloves_geeta_0_display_name" | "n_gloves_giovanni_0_display_name" | "n_gloves_guzma_0_display_name" | "n_gloves_gymleader_a_0_display_name" | "n_gloves_gymleader_b_0_display_name" | "n_gloves_hoopabangle_a_0_display_name" | "n_gloves_jogger_0_display_name" | "n_gloves_korrina_0_display_name" | "n_gloves_lysandre_0_display_name" | "n_gloves_megabangle_0_display_name" | "n_gloves_megabangle_1_display_name" | "n_gloves_megabangle_2_display_name" | "n_gloves_megabangle_3_display_name" | "n_gloves_megabangle_4_display_name" | "n_gloves_obstagoonitems_0_display_name" | "n_gloves_palmer_0_display_name" | "n_gloves_profwillowoutfit_0_display_name" | "n_gloves_stevenfirst_0_display_name" | "n_gloves_svdlc2spring_0_display_name" | "n_gloves_swshdlc2costume_0_display_name" | "n_gloves_swshdlccostume_0_display_name" | "n_gloves_swshuniformchampion_0_display_name" | "n_gloves_swshuniformdark_0_display_name" | "n_gloves_swshuniformdefault_0_display_name" | "n_gloves_swshuniformdragon_0_display_name" | "n_gloves_teamaqua_a_0_display_name" | "n_gloves_teamaqua_b_0_display_name" | "n_gloves_teammagma_0_display_name" | "n_gloves_teamrocket_0_display_name" | "n_gloves_teamspark_a_0_display_name" | "n_gloves_teamspark_b_0_display_name" | "n_gloves_unequip_0_display_name" | "n_gloves_wintergloves2023_0_display_name" | "N_GO_Fest _Pose_Alola Greeting" | "n_hat_6thanniversary_a_0_display_name" | "n_hat_6thanniversary_b_0_display_name" | "n_hat_acetrainersm_a_0_display_name" | "n_hat_acetrainersm_b_0_display_name" | "n_hat_adventure_0_display_name" | "n_hat_aseries_0_display_name" | "n_hat_bea_a_0_display_name" | "n_hat_bea_b_0_display_name" | "n_hat_bidoofhat_0_display_name" | "n_hat_bounsweetitems_0_display_name" | "n_hat_bwn_0_display_name" | "n_hat_casket_0_display_name" | "n_hat_cetoddlehat_0_display_name" | "n_hat_clay_0_display_name" | "n_hat_cofagrigusitems_0_display_name" | "n_hat_cosmog_0_display_name" | "n_hat_cubonehat_0_display_name" | "n_hat_darumakahat_0_display_name" | "n_hat_dedenneitems_0_display_name" | "n_hat_default_a_0_display_name" | "n_hat_default_a_6_display_name" | "n_hat_default_b_0_display_name" | "n_hat_deino_0_display_name" | "n_hat_delibird_0_display_name" | "n_hat_detectivepikachu_0_display_name" | "n_hat_diancie_0_display_name" | "n_hat_dp_a_0_display_name" | "n_hat_dp_b_0_display_name" | "n_hat_drifloon_0_display_name" | "n_hat_drpikachu_0_display_name" | "n_hat_dusclopsmummy_0_display_name" | "n_hat_earringsburmyplant_0_display_name" | "n_hat_earringsburmysandy_0_display_name" | "n_hat_earringsburmytrash_0_display_name" | "n_hat_eeveecap_0_display_name" | "n_hat_elesa_0_display_name" | "n_hat_fedora_1_display_name" | "n_hat_fisher_0_display_name" | "n_hat_flabebepack_0_display_name" | "n_hat_fragment_0_display_name" | "n_hat_frlg_a_0_display_name" | "n_hat_frlg_b_0_display_name" | "n_hat_furfrouwig_0_display_name" | "n_hat_fw2022_0_display_name" | "n_hat_galarfarfetchditems_0_display_name" | "n_hat_genesecteventitem_0_display_name" | "n_hat_gengar_0_display_name" | "n_hat_gimmighoulitems_0_display_name" | "n_hat_giratinaitems_0_display_name" | "n_hat_gladion_0_display_name" | "n_hat_gofest-pikachuvisor_0_display_name" | "n_hat_gofest24mooncrownprepurchase_0_display_name" | "n_hat_gofest24suncrownprepurchase_0_display_name" | "n_hat_goomy_0_display_name" | "n_hat_greavardwig_0_display_name" | "n_hat_greencoat_0_display_name" | "n_hat_growlithehelmet_0_display_name" | "n_hat_gtr2024eeveefanmask_0_display_name" | "n_hat_gtr2024pikachufanmask_0_display_name" | "n_hat_guccihat_0_display_name" | "n_hat_guzma_0_display_name" | "n_hat_gyaradoscap_0_display_name" | "n_hat_hgss_a_0_display_name" | "n_hat_hgss_b_0_display_name" | "n_hat_holiday2022santacostumes_0_display_name" | "n_hat_holidaybeanie_0_display_name" | "n_hat_hoopaearmuffs_0_display_name" | "n_hat_ingo_0_display_name" | "n_hat_jogger_0_display_name" | "n_hat_kantotourcapgreen_0_display_name" | "n_hat_kantotourcapred_0_display_name" | "n_hat_knitted_1_display_name" | "n_hat_korrina_0_display_name" | "n_hat_laprasbandana_a_0_display_name" | "n_hat_laprasbandana_b_0_display_name" | "n_hat_lasecuritycorps_0_display_name" | "n_hat_legendofarceus_a_0_display_name" | "n_hat_legendofarceus_b_0_display_name" | "n_hat_litwickhat_0_display_name" | "n_hat_loneearrings_0_display_name" | "n_hat_lvl50cap_0_display_name" | "n_hat_magikarp_0_display_name" | "n_hat_mareaniehat_0_display_name" | "n_hat_megalopunnyitems_0_display_name" | "n_hat_megarayquaza_0_display_name" | "n_hat_meltan_0_display_name" | "n_hat_meltanearrings_0_display_name" | "n_hat_mewtwo_a_0_display_name" | "n_hat_mewtwo_b_0_display_name" | "n_hat_mimikyu_0_display_name" | "n_hat_mismagius_0_display_name" | "n_hat_movie2020_0_display_name" | "n_hat_munnapack_0_display_name" | "n_hat_munnapack_1_display_name" | "n_hat_newyear2022_0_display_name" | "n_hat_newyearhat2021_0_display_name" | "n_hat_newyearhat2023_0_display_name" | "n_hat_nihilegoitems_0_display_name" | "n_hat_noibat_0_display_name" | "n_hat_obstagoonitems_0_display_name" | "n_hat_oras_a_0_display_name" | "n_hat_oras_b_0_display_name" | "n_hat_oricoriopink_0_display_name" | "n_hat_oricoriopurple_0_display_name" | "n_hat_oricoriored_0_display_name" | "n_hat_oricorioyellow_0_display_name" | "n_hat_partneritemsjan2024hat_0_display_name" | "n_hat_phantump_0_display_name" | "n_hat_pikachucap_0_display_name" | "n_hat_pikachufan_0_display_name" | "n_hat_pikachulibre_0_display_name" | "n_hat_pikachupumpkinhead_0_display_name" | "n_hat_pkmncap_0_display_name" | "n_hat_pkmncap_1_display_name" | "n_hat_pkmncap_2_display_name" | "n_hat_poipole_0_display_name" | "n_hat_profwillowoutfit_0_display_name" | "n_hat_regiicejersies_0_display_name" | "n_hat_regirockjersies_0_display_name" | "n_hat_registeeljersies_0_display_name" | "n_hat_ruinmaniac_a_0_display_name" | "n_hat_ruinmaniac_b_0_display_name" | "n_hat_sableyegoggles_0_display_name" | "n_hat_samsungsummer2020_0_display_name" | "n_hat_sandygasthat_0_display_name" | "n_hat_shayminhat_0_display_name" | "n_hat_slowpoketailshirts_0_display_name" | "n_hat_snorlaxnightcap_0_display_name" | "n_hat_solgaleoitems_0_display_name" | "n_hat_ss_a_0_display_name" | "n_hat_ss_b_0_display_name" | "n_hat_stantlerheadband_0_display_name" | "n_hat_strawhat_0_display_name" | "n_hat_summer2023_0_display_name" | "n_hat_svcostumescarletschool_0_display_name" | "n_hat_svcostumevioletschool_0_display_name" | "n_hat_swshdlc2costume_0_display_name" | "n_hat_swshuniformchampion_0_display_name" | "n_hat_sylveonitems_a_0_display_name" | "n_hat_sylveonitems_b_0_display_name" | "n_hat_tcgcollabtshirtandcap_0_display_name" | "n_hat_teamaqua_0_display_name" | "n_hat_teamleadercap_0_display_name" | "n_hat_teamleadercap_1_display_name" | "n_hat_teamleadercap_2_display_name" | "n_hat_teamrocket_0_display_name" | "n_hat_teamrocketcap_0_display_name" | "n_hat_teamskull_0_display_name" | "n_hat_tophat_0_display_name" | "n_hat_ultra_a_0_display_name" | "n_hat_ultra_b_0_display_name" | "n_hat_ultrareconsquad_0_display_name" | "n_hat_ultrareconsquadb_0_display_name" | "n_hat_unequip_0_display_name" | "n_hat_verizon2021_0_display_name" | "n_hat_wcs2022winnersitems_0_display_name" | "n_hat_whimsicottearmuff_0_display_name" | "n_hat_willowglasses_0 _display_name" | "n_hat_woobatearrings_0_display_name" | "n_hat_yamaskhat_0_display_name" | "n_hat_yamaskmask_0_display_name" | "n_hat_zubathat_0_display_name" | "N_Marshadow_Tee" | "N_Naganadel_Backpack" | "N_Naganadel_Jacket" | "N_Naganadel_Pants" | "n_necklace_default_0_display_name" | "n_necklace_heart_0_display_name" | "n_necklace_star_0_display_name" | "n_necklace_unequip_0_display_name" | "n_pants_6thanniversary_0_display_name" | "n_pants_7thanniversary_0_display_name" | "n_pants_acetrainerbw_a_0_display_name" | "n_pants_acetrainerbw_b_0_display_name" | "n_pants_acetrainersm_0_display_name" | "n_pants_animegou_0_display_name" | "n_pants_backpacker_a_0_display_name" | "n_pants_backpacker_b_0_display_name" | "n_pants_battlegirl_0_display_name" | "n_pants_bounsweetitems_0_display_name" | "n_pants_brock_0_display_name" | "n_pants_bwn_0_display_name" | "n_pants_casual_b_0_display_name" | "n_pants_casual_b_1_display_name" | "n_pants_clay_0_display_name" | "n_pants_default_a_0_display_name" | "n_pants_default_b_0_display_name" | "n_pants_default-new_0_display_name" | "n_pants_denimfashionweek2023_0_display_name" | "n_pants_dp_a_0_display_name" | "n_pants_dp_b_0_display_name" | "n_pants_elesa_0_display_name" | "n_pants_fashionweek2022_0_display_name" | "n_pants_fisher_0_display_name" | "n_pants_flabebepack_0_display_name" | "n_pants_frlg_a_0_display_name" | "n_pants_frlg_b_0_display_name" | "n_pants_fw2022_a_0_display_name" | "n_pants_fw2022_b_0_display_name" | "n_pants_geeta_0_display_name" | "n_pants_genderlessskirt_0_display_name" | "n_pants_giovanni_0_display_name" | "n_pants_gladion_0_display_name" | "n_pants_gothitelleitems_0_display_name" | "n_pants_green_a_0_display_name" | "n_pants_green_b_0_display_name" | "n_pants_greencoat_0_display_name" | "n_pants_guzma_0_display_name" | "n_pants_gymleader_a_0_display_name" | "n_pants_gymleader_b_0_display_name" | "n_pants_hala_0_display_name" | "n_pants_hgss_a_0_display_name" | "n_pants_hgss_b_0_display_name" | "n_pants_jogger_0_display_name" | "n_pants_korrina_0_display_name" | "n_pants_loosepants_0_display_name" | "n_pants_lunalaitems_0_display_name" | "n_pants_luvdiscpack_a_0_display_name" | "n_pants_luvdiscpack_b_0_display_name" | "n_pants_lysandre_0_display_name" | "n_pants_mewtwo_a_0_display_name" | "n_pants_mewtwo_b_0_display_name" | "n_pants_miniskirt_3_display_name" | "n_pants_miniskirt-wave_2_display_name" | "n_pants_misty_0_display_name" | "n_pants_munnapack_0_display_name" | "n_pants_neon-stripes_1_display_name" | "n_pants_newyear2022_0_display_name" | "n_pants_oras_a_0_display_name" | "n_pants_oras_b_0_display_name" | "n_pants_pajamas2022_0_display_name" | "n_pants_palmer_0_display_name" | "n_pants_pikachufan_a_0_display_name" | "n_pants_pikachufan_b_0_display_name" | "n_pants_pikachulibre_a_0_display_name" | "n_pants_pikachulibre_b_0_display_name" | "n_pants_profwillowoutfit_0_display_name" | "n_pants_pumpkabooitems_0_display_name" | "n_pants_regiicejersies_0_display_name" | "n_pants_regirockjersies_0_display_name" | "n_pants_registeeljersies_0_display_name" | "n_pants_shorts_3_display_name" | "n_pants_skinnyjeans_a_0_display_name" | "n_pants_skinnyjeans_b_0_display_name" | "n_pants_ss_0_display_name" | "n_pants_steven_0_display_name" | "n_pants_stevenfirst_0_display_name" | "n_pants_sweats_0_display_name" | "n_pants_swshuniformchampion_0_display_name" | "n_pants_swshuniformdark_a_0_display_name" | "n_pants_swshuniformdark_b_0_display_name" | "n_pants_swshuniformdefault_a_0_display_name" | "n_pants_swshuniformdefault_b_0_display_name" | "n_pants_swshuniformdragon_a_0_display_name" | "n_pants_swshuniformdragon_b_0_display_name" | "n_pants_teamaqua_a_0_display_name" | "n_pants_teamaqua_b_0_display_name" | "n_pants_teamblanche_a_0_display_name" | "n_pants_teamblanche_b_0_display_name" | "n_pants_teamcandela_a_0_display_name" | "n_pants_teamcandela_b_0_display_name" | "n_pants_teammagma_a_0_display_name" | "n_pants_teammagma_b_0_display_name" | "n_pants_teamrocket_a_0_display_name" | "n_pants_teamrocket_b_0_display_name" | "n_pants_teamskull_a_0_display_name" | "n_pants_teamskull_b_0_display_name" | "n_pants_teamspark_a_0_display_name" | "n_pants_teamspark_b_0_display_name" | "n_pants_turbine_2_display_name" | "n_pants_ultra_a_0_display_name" | "n_pants_ultra_b_0_display_name" | "n_pants_veterantrainerxy_a_0_display_name" | "n_pants_veterantrainerxy_b_0_display_name" | "n_pants_wcs2022winnersitems_0_display_name" | "n_pose_001_display_name" | "n_pose_002_display_name" | "n_pose_003_display_name" | "n_pose_004_display_name" | "n_pose_005_display_name" | "n_pose_006_display_name" | "n_pose_007_display_name" | "n_pose_008_display_name" | "n_pose_009_display_name" | "n_pose_010_display_name" | "n_pose_011_display_name" | "n_pose_012_display_name" | "n_pose_013_display_name" | "n_pose_014_display_name" | "n_pose_015_display_name" | "n_pose_016_display_name" | "n_pose_017_display_name" | "n_pose_018_display_name" | "n_pose_019_display_name" | "n_pose_020_display_name" | "n_pose_021_display_name" | "n_pose_022_display_name" | "n_pose_023_display_name" | "n_pose_024_display_name" | "n_pose_025_display_name" | "n_pose_026_display_name" | "n_pose_027_display_name" | "n_pose_028_display_name" | "n_pose_029_display_name" | "n_pose_030_display_name" | "n_pose_031_display_name" | "n_pose_032_a_display_name" | "n_pose_032_display_name" | "n_pose_033_display_name" | "n_pose_034_display_name" | "n_pose_035_display_name" | "n_pose_036_display_name" | "n_pose_037_display_name" | "n_pose_038_display_name" | "n_pose_039_display_name" | "n_pose_040_display_name" | "n_pose_041_display_name" | "n_pose_042_display_name" | "n_pose_043_display_name" | "n_pose_044_display_name" | "n_pose_045_display_name" | "n_pose_046_display_name" | "n_pose_047_display_name" | "n_pose_048_display_name" | "n_pose_049_display_name" | "n_pose_050_display_name" | "n_pose_051_display_name" | "n_pose_052_display_name" | "n_pose_053_display_name" | "n_pose_054_display_name" | "n_pose_055_display_name" | "n_pose_056_display_name" | "n_pose_057_display_name" | "n_pose_058_display_name" | "n_pose_059_display_name" | "n_pose_060_display_name" | "n_pose_061_display_name" | "n_pose_062_display_name" | "n_pose_empty_display_name" | "n_pose_idle_a_display_name" | "n_pose_idle_b_display_name" | "n_shirt_6thanniversary_a_0_display_name" | "n_shirt_6thanniversary_b_0_display_name" | "n_shirt_7thanniversary_0_display_name" | "n_shirt_acetrainerbw_a_0_display_name" | "n_shirt_acetrainerbw_b_0_display_name" | "n_shirt_acetrainersm_a_0_display_name" | "n_shirt_acetrainersm_b_0_display_name" | "n_shirt_alolacomfey_0_display_name" | "n_shirt_animegou_0_display_name" | "n_shirt_aseries_0_display_name" | "n_shirt_backpacker_a_0_display_name" | "n_shirt_backpacker_b_0_display_name" | "n_shirt_ballguy_0_display_name" | "n_shirt_battlegirl_0_display_name" | "n_shirt_bea_a_0_display_name" | "n_shirt_bea_b_0_display_name" | "n_shirt_blazer_0_display_name" | "n_shirt_bounsweetitems_a_0_display_name" | "n_shirt_bounsweetitems_b_0_display_name" | "n_shirt_brock_0_display_name" | "n_shirt_buttondown_0_display_name" | "n_shirt_buzzwoleitems_0_display_name" | "n_shirt_bwn_0_display_name" | "n_shirt_casual_a_0_display_name" | "n_shirt_casual_a_1_display_name" | "n_shirt_casual_a_2_display_name" | "n_shirt_casual_a_3_display_name" | "n_shirt_casual_b_0_display_name" | "n_shirt_casual_b_1_display_name" | "n_shirt_casual_b_2_display_name" | "n_shirt_casual_b_3_display_name" | "n_shirt_celebi_0_display_name" | "n_shirt_chimcharonesie_0_display_name" | "n_shirt_clay_0_display_name" | "n_shirt_cofagrigusitems_0_display_name" | "n_shirt_cosmog_0_display_name" | "n_shirt_cowichansweater_0_display_name" | "n_shirt_dayofdead_0_display_name" | "n_shirt_default_a_1_display_name" | "n_shirt_default_b_0_display_name" | "n_shirt_default_b_1_display_name" | "n_shirt_default_b_2_display_name" | "n_shirt_default_b_3_display_name" | "n_shirt_default-new_0_display_name" | "n_shirt_delibird_0_display_name" | "n_shirt_delibirdonesie_0_display_name" | "n_shirt_denimfashionweek2023_0_display_name" | "n_shirt_denimjacket_0_display_name" | "n_shirt_detectivepikachu_0_display_name" | "n_shirt_diancie_0_display_name" | "n_shirt_divingsuit_0_display_name" | "n_shirt_diwali2021_0_display_name" | "n_shirt_dp_a_0_display_name" | "n_shirt_dp_b_0_display_name" | "n_shirt_drifblim_0_display_name" | "n_shirt_dusclopsmummy_0_display_name" | "n_shirt_earthday-2018_0_display_name" | "n_shirt_eeveestshirt-00_0_display_name" | "n_shirt_eeveestshirt-01_0_display_name" | "n_shirt_eeveestshirt-02_0_display_name" | "n_shirt_eeveestshirt-03_0_display_name" | "n_shirt_eeveestshirt-04_0_display_name" | "n_shirt_eeveestshirt-05_0_display_name" | "n_shirt_eeveestshirt-06_0_display_name" | "n_shirt_eeveestshirt-07_0_display_name" | "n_shirt_eeveestshirt-08_0_display_name" | "n_shirt_elesa_a_0_display_name" | "n_shirt_elesa_b_0_display_name" | "n_shirt_fashionweek2022_0_display_name" | "n_shirt_festivaloflights-00_0_display_name" | "n_shirt_festivaloflights-01_0_display_name" | "n_shirt_fisher_0_display_name" | "n_shirt_flabebepack_0_display_name" | "n_shirt_fragment_0_display_name" | "n_shirt_frlg_a_0_display_name" | "n_shirt_frlg_b_0_display_name" | "n_shirt_fw2022_a_0_display_name" | "n_shirt_fw2022_b_0_display_name" | "n_shirt_galarfarfetchditems_0_display_name" | "n_shirt_galaxyoutfit_a_0_display_name" | "n_shirt_galaxyoutfit_b_0_display_name" | "n_shirt_geeta_0_display_name" | "n_shirt_genderlessskirt_0_display_name" | "n_shirt_gengar_0_display_name" | "n_shirt_gengaronesie_0_display_name" | "n_shirt_giovanni_a_0_display_name" | "n_shirt_giovanni_b_0_display_name" | "n_shirt_giratinaitems_0_display_name" | "n_shirt_gladion_0_display_name" | "n_shirt_gofest-2019_0_display_name" | "n_shirt_gofest-2020_0_display_name" | "n_shirt_gofest-2021_0_display_name" | "n_shirt_gofest2022_0_display_name" | "n_shirt_gofest2023_0_display_name" | "n_shirt_gofest24_display_name" | "n_shirt_gofest24eventexclusive_display_name" | "n_shirt_gofestglobal2023_0_display_name" | "n_shirt_goteamrocketarlo_a_0_display_name" | "n_shirt_goteamrocketarlo_b_0_display_name" | "n_shirt_goteamrocketcliff_a_0_display_name" | "n_shirt_goteamrocketcliff_b_0_display_name" | "n_shirt_goteamrocketsierra_a_0_display_name" | "n_shirt_goteamrocketsierra_b_0_display_name" | "n_shirt_gothitelleitems_0_display_name" | "n_shirt_gotour2023_0_display_name" | "n_shirt_gotour2024_0_display_name" | "n_shirt_greedentsweater_0_display_name" | "n_shirt_green_0_display_name" | "n_shirt_greencoat_0_display_name" | "n_shirt_gtrtshirt2022_0_display_name" | "n_shirt_gtrtshirt2022_1_display_name" | "n_shirt_guccitshirts_0_display_name" | "n_shirt_guzma_0_display_name" | "n_shirt_gymleader_a_0_display_name" | "n_shirt_gymleader_b_0_display_name" | "n_shirt_hala_0_display_name" | "n_shirt_happi_0_display_name" | "n_shirt_happi_1_display_name" | "n_shirt_happi_2_display_name" | "n_shirt_hgss_a_0_display_name" | "n_shirt_hgss_b_0_display_name" | "n_shirt_holiday2022santacostumes_0_display_name" | "n_shirt_holifestival2021black_0_display_name" | "n_shirt_holifestival2021white_0_display_name" | "n_shirt_hoopaunboundtshirt_0_display_name" | "n_shirt_ingo_0_display_name" | "n_shirt_ingress_0_display_name" | "n_shirt_ingress-e_0_display_name" | "n_shirt_ingress-r_0_display_name" | "n_shirt_jacket-newyear2022_0_display_name" | "n_shirt_james_b_0_display_name" | "n_shirt_jessie_0_display_name" | "n_shirt_jirachi_0_display_name" | "n_shirt_jogger_0_display_name" | "n_shirt_keldeotshirt_0_display_name" | "n_shirt_korrina_a_0_display_name" | "n_shirt_korrina_b_0_display_name" | "n_shirt_ladiamondoutfit_a_0_display_name" | "n_shirt_ladiamondoutfit_b_0_display_name" | "n_shirt_lapearloutfit_a_0_display_name" | "n_shirt_lapearloutfit_b_0_display_name" | "n_shirt_lasecuritycorps_a_0_display_name" | "n_shirt_lasecuritycorps_b_0_display_name" | "n_shirt_latias-latios_0_display_name" | "n_shirt_legendofarceus_a_0_display_name" | "n_shirt_legendofarceus_b_0_display_name" | "n_shirt_longsleeves-charizard_0_display_name" | "n_shirt_longsleeves-pikachu_0_display_name" | "n_shirt_luvdiscpack_a_0_display_name" | "n_shirt_luvdiscpack_b_0_display_name" | "n_shirt_lvl50_0_display_name" | "n_shirt_lysandre_0_display_name" | "n_shirt_megalopunnyitems_0_display_name" | "n_shirt_megarayquaza_0_display_name" | "n_shirt_melmetaljacket_0_display_name" | "n_shirt_melmetalvest_0_display_name" | "n_shirt_meloettatshirt_0_display_name" | "n_shirt_meltan_0_display_name" | "n_shirt_mew_0_display_name" | "n_shirt_mewtwo_a_0_display_name" | "n_shirt_mewtwo_b_0_display_name" | "n_shirt_misty_0_display_name" | "n_shirt_movie2020jessiejames_a_0_display_name" | "n_shirt_movie2020jessiejames_b_0_display_name" | "n_shirt_munnapack_a_0_display_name" | "n_shirt_munnapack_b_0_display_name" | "n_shirt_nike2021_0_display_name" | "n_shirt_ocshirt-045_a_0_display_name" | "n_shirt_ocshirt-045_b_0_display_name" | "n_shirt_ocshirt-108_a_0_display_name" | "n_shirt_ocshirt-108_b_0_display_name" | "n_shirt_ocshirt-129_a_0_display_name" | "n_shirt_ocshirt-129_b_0_display_name" | "n_shirt_ocshirt-143_a_0_display_name" | "n_shirt_ocshirt-143_b_0_display_name" | "n_shirt_oras_a_0_display_name" | "n_shirt_oras_b_0_display_name" | "n_shirt_pajamas2022_0_display_name" | "n_shirt_palmer_0_display_name" | "n_shirt_partneritemsjan2024hoodie_0_display_name" | "n_shirt_partneritemsjan2024tshirt_0_display_name" | "n_shirt_pikachufan_a_0_display_name" | "n_shirt_pikachufan_b_0_display_name" | "n_shirt_pikachulibre_a_0_display_name" | "n_shirt_pikachulibre_b_0_display_name" | "n_shirt_pikachuonesie_0_display_name" | "n_shirt_pinpukuhoodie_0_display_name" | "n_shirt_pipluponesie_0_display_name" | "n_shirt_pkmnhoodie001_0_display_name" | "n_shirt_pkmnhoodie004_0_display_name" | "n_shirt_pkmnhoodie007_0_display_name" | "n_shirt_pkmnshirts-165_0_display_name" | "n_shirt_pkmnshirts-188_0_display_name" | "n_shirt_pkmnshirts-201_0_display_name" | "n_shirt_pkmnshirts-238_0_display_name" | "n_shirt_pkmnshirts2021_0_display_name" | "n_shirt_pkmnshirts2021_1_display_name" | "n_shirt_pkmnshirts2021_2_display_name" | "n_shirt_poloshirt_0_display_name" | "n_shirt_poloshirt_1_display_name" | "n_shirt_poloshirt_2_display_name" | "n_shirt_profwillowoutfit_0_display_name" | "n_shirt_projectguitar_0_display_name" | "n_shirt_pumpkabooitems_0_display_name" | "n_shirt_regiicejersies_0_display_name" | "n_shirt_regirockjersies_0_display_name" | "n_shirt_registeeljersies_0_display_name" | "n_shirt_reuniclusitems_0_display_name" | "n_shirt_ruinmaniac_a_0_display_name" | "n_shirt_ruinmaniac_b_0_display_name" | "n_shirt_safarizone2020_a_0_display_name" | "n_shirt_safarizone2020_b_0_display_name" | "n_shirt_samsungsummer2020_0_display_name" | "n_shirt_shayminlandtshirt_0_display_name" | "n_shirt_shayminskytshirt_0_display_name" | "n_shirt_shinymewtshirts_0_display_name" | "n_shirt_slowpokeshirts_0_display_name" | "n_shirt_slowpoketailshirts_0_display_name" | "n_shirt_snorlaxonesie_0_display_name" | "n_shirt_spiritomb_0_display_name" | "n_shirt_spring2021gulpin_a_0_display_name" | "n_shirt_spring2021gulpin_b_0_display_name" | "n_shirt_spring2021plusle_a_0_display_name" | "n_shirt_spring2021plusle_b_0_display_name" | "n_shirt_ss_a_0_display_name" | "n_shirt_ss_b_0_display_name" | "n_shirt_steven_0_display_name" | "n_shirt_stevenfirst_0_display_name" | "n_shirt_sukajanblastoise_0_display_name" | "n_shirt_sukajancharizard_0_display_name" | "n_shirt_sukajanhouou_0_display_name" | "n_shirt_sukajanlugia_0_display_name" | "n_shirt_sukajanvenusaur_0_display_name" | "n_shirt_summer2023_0_display_name" | "n_shirt_sustainability2021_a_0_display_name" | "n_shirt_sustainability2021_b_0_display_name" | "n_shirt_svcostumescarletschool_0_display_name" | "n_shirt_svcostumevioletschool_0_display_name" | "n_shirt_svdlc1_0_display_name" | "n_shirt_svdlc2fall_0_display_name" | "n_shirt_svdlc2spring_0_display_name" | "n_shirt_sweater-30_2_display_name" | "n_shirt_sweater-instinct_0_display_name" | "n_shirt_sweater-mystic_0_display_name" | "n_shirt_sweater-valor_0_display_name" | "n_shirt_sweatshirt-sporty_0_display_name" | "n_shirt_sweatshirt-streak_0_display_name" | "n_shirt_swshdlc2costume_0_display_name" | "n_shirt_swshdlccostume_a_0_display_name" | "n_shirt_swshdlccostume_b_0_display_name" | "n_shirt_swshuniformchampion_0_display_name" | "n_shirt_swshuniformdark_a_0_display_name" | "n_shirt_swshuniformdark_b_0_display_name" | "n_shirt_swshuniformdefault_0_display_name" | "n_shirt_swshuniformdragon_0_display_name" | "n_shirt_sylveonitems_0_display_name" | "n_shirt_tanktop_2_display_name" | "n_shirt_tanktop-charizard_2_display_name" | "n_shirt_tanktop-pikachu_2_display_name" | "n_shirt_tcgcollabtshirtandcap_0_display_name" | "n_shirt_teamaqua_a_0_display_name" | "n_shirt_teamaqua_b_0_display_name" | "n_shirt_teamblanche_a_0_display_name" | "n_shirt_teamblanche_b_0_display_name" | "n_shirt_teamcandela_a_0_display_name" | "n_shirt_teamcandela_b_0_display_name" | "n_shirt_teammagma_a_0_display_name" | "n_shirt_teammagma_b_0_display_name" | "n_shirt_teamrocket_a_0_display_name" | "n_shirt_teamrocket_a_1_display_name" | "n_shirt_teamrocket_b_0_display_name" | "n_shirt_teamrocket_b_1_display_name" | "n_shirt_teamskull_0_display_name" | "n_shirt_teamspark_a_0_display_name" | "n_shirt_teamspark_b_0_display_name" | "n_shirt_togepihoodie_0_display_name" | "n_shirt_tracksuitsgroudon_0_display_name" | "n_shirt_tracksuitskyogre_0_display_name" | "n_shirt_tshirt_cycling_0_display_name" | "n_shirt_tshirt_pikachu_0_display_name" | "n_shirt_tshirt-fest-chicago-2017_0_display_name" | "n_shirt_tshirt-fest-chicago-2018_0_display_name" | "n_shirt_tshirt-geometric_0_display_name" | "n_shirt_tshirt-global-goals-2017_0_display_name" | "n_shirt_tshirt-instinct_0_display_name" | "n_shirt_tshirt-mystic_0_display_name" | "n_shirt_tshirt-valor_0_display_name" | "n_shirt_turtleneck-30_0_display_name" | "n_shirt_turtwigonesie_0_display_name" | "n_shirt_ultra_a_0_display_name" | "n_shirt_ultra_b_0_display_name" | "n_shirt_ultrareconsquad_b_0_display_name" | "n_shirt_uniqlotshirts_0_display_name" | "n_shirt_uniqlotshirts_1_display_name" | "n_shirt_uniqlotshirts_2_display_name" | "n_shirt_unwto_0_display_name" | "n_shirt_valentine2023_0_display_name" | "n_shirt_verizon2020_0_display_name" | "n_shirt_veterantrainerxy_a_0_display_name" | "n_shirt_veterantrainerxy_b_0_display_name" | "n_shirt_victinitshirts_0_display_name" | "n_shirt_wcs2022_0_display_name" | "n_shirt_wcs2022tshirtbulu_0_display_name" | "n_shirt_wcs2022tshirtred_0_display_name" | "n_shirt_wcs2022winnersitems_0_display_name" | "n_shirt_wcs2023_0_display_name" | "n_shirt_wcs2023promotshirt-0_0_display_name" | "n_shirt_wcs2023promotshirt-1_0_display_name" | "n_shirt_wcs2023sukajan_0_display_name" | "n_shirt_wcs2023winnersitems_0_display_name" | "n_shirt_wcsyokohama_0_display_name" | "n_shirt_whitecoat_0_display_name" | "n_shirt_wintersweater2023_0_display_name" | "n_shirt_zoruaonesie_0_display_name" | "n_shoes_6thanniversary_a_0_display_name" | "n_shoes_6thanniversary_b_0_display_name" | "n_shoes_acetrainerbw_a_0_display_name" | "n_shoes_acetrainerbw_b_0_display_name" | "n_shoes_acetrainersm_a_0_display_name" | "n_shoes_acetrainersm_b_0_display_name" | "n_shoes_animegou_0_display_name" | "n_shoes_backpacker_a_0_display_name" | "n_shoes_backpacker_b_0_display_name" | "n_shoes_battlegirl_0_display_name" | "n_shoes_brock_0_display_name" | "n_shoes_bwn_0_display_name" | "n_shoes_carbink_0_display_name" | "n_shoes_clay_0_display_name" | "n_shoes_coolboots_0_display_name" | "n_shoes_dedenneitems_0_display_name" | "n_shoes_default_a_0_display_name" | "n_shoes_default_b_0_display_name" | "n_shoes_default-new_0_display_name" | "n_shoes_delibird_0_display_name" | "n_shoes_dp_a_0_display_name" | "n_shoes_dp_b_0_display_name" | "n_shoes_elesa_a_0_display_name" | "n_shoes_elesa_b_0_display_name" | "n_shoes_fashionweek2022_0_display_name" | "n_shoes_fisher_0_display_name" | "n_shoes_frlg_a_0_display_name" | "n_shoes_frlg_b_0_display_name" | "n_shoes_fw2022_0_display_name" | "n_shoes_geeta_0_display_name" | "n_shoes_giovanni_a_0_display_name" | "n_shoes_giovanni_b_0_display_name" | "n_shoes_gladion_0_display_name" | "n_shoes_gothitelleitems_0_display_name" | "n_shoes_green_a_0_display_name" | "n_shoes_green_b_0_display_name" | "n_shoes_gymleader_0_display_name" | "n_shoes_hala_0_display_name" | "n_shoes_hgss_a_0_display_name" | "n_shoes_hgss_b_0_display_name" | "n_shoes_ingo_0_display_name" | "n_shoes_jogger_0_display_name" | "n_shoes_korrina_0_display_name" | "n_shoes_ladiamondoutfit_a_0_display_name" | "n_shoes_ladiamondoutfit_b_0_display_name" | "n_shoes_lapearloutfit_a_0_display_name" | "n_shoes_lapearloutfit_b_0_display_name" | "n_shoes_legendofarceus_a_0_display_name" | "n_shoes_legendofarceus_b_0_display_name" | "n_shoes_loosepants_0_display_name" | "n_shoes_luvdiscpack_0_display_name" | "n_shoes_lysandre_0_display_name" | "n_shoes_megalopunnyitems_0_display_name" | "n_shoes_melmetalshoes_0_display_name" | "n_shoes_mewtwo_0_display_name" | "n_shoes_misty_0_display_name" | "n_shoes_newyear2022_0_display_name" | "n_shoes_nike2021_0_display_name" | "n_shoes_oras_a_0_display_name" | "n_shoes_oras_b_0_display_name" | "n_shoes_pajamas2022_0_display_name" | "n_shoes_palmer_0_display_name" | "n_shoes_pikachufan_0_display_name" | "n_shoes_pikachulibre_0_display_name" | "n_shoes_profwillowoutfit_0_display_name" | "n_shoes_regiicejersies_0_display_name" | "n_shoes_regirockjersies_0_display_name" | "n_shoes_registeeljersies_0_display_name" | "n_shoes_reuniclusitems_0_display_name" | "n_shoes_ruinmaniac_a_0_display_name" | "n_shoes_ruinmaniac_b_0_display_name" | "n_shoes_sandals_0_display_name" | "n_shoes_solgaleoitems_0_display_name" | "n_shoes_ss_a_0_display_name" | "n_shoes_ss_b_0_display_name" | "n_shoes_steven_0_display_name" | "n_shoes_stevenfirst_0_display_name" | "n_shoes_svcostumescarletschool_0_display_name" | "n_shoes_svcostumevioletschool_0_display_name" | "n_shoes_svdlc1_0_display_name" | "n_shoes_svdlc2spring_0_display_name" | "n_shoes_swshdlc2costume_0_display_name" | "n_shoes_swshdlccostume_0_display_name" | "n_shoes_swshuniformdark_0_display_name" | "n_shoes_swshuniformdefault_0_display_name" | "n_shoes_swshuniformdragon_0_display_name" | "n_shoes_sylveonitems_0_display_name" | "n_shoes_teamaqua_0_display_name" | "n_shoes_teamblanche_a_0_display_name" | "n_shoes_teamblanche_b_0_display_name" | "n_shoes_teamcandela_a_0_display_name" | "n_shoes_teamcandela_b_0_display_name" | "n_shoes_teammagma_a_0_display_name" | "n_shoes_teammagma_b_0_display_name" | "n_shoes_teamrocket_a_0_display_name" | "n_shoes_teamrocket_a_1_display_name" | "n_shoes_teamrocket_b_0_display_name" | "n_shoes_teamrocket_b_1_display_name" | "n_shoes_teamskull_a_0_display_name" | "n_shoes_teamskull_b_0_display_name" | "n_shoes_teamspark_a_0_display_name" | "n_shoes_teamspark_b_0_display_name" | "n_shoes_ultra_a_0_display_name" | "n_shoes_ultra_b_0_display_name" | "n_shoes_ultrareconsquad_0_display_name" | "n_shoes_unequip_0_display_name" | "n_shoes_veterantrainerxy_a_0_display_name" | "n_shoes_veterantrainerxy_b_0_display_name" | "n_shoes_wcs2022winnersitems_0_display_name" | "n_shoes_wcs2023winnersitems_0_display_name" | "n_shoes_winterboots_0_display_name" | "n_shoes_winterboots_1_display_name" | "n_shoes_winterboots_2_display_name" | "n_shoes_winterboots_3_display_name" | "n_shoes_winterboots2023_0_display_name" | "n_socks_default_a_0_display_name" | "n_socks_default_b_0_display_name" | "n_socks_fw2022_a_0_display_name" | "n_socks_fw2022_b_0_display_name" | "n_socks_hgss_0_display_name" | "n_socks_sneakersocks_0_display_name" | "n_socks_sneakersocks_1_display_name" | "n_socks_sollunaitems_0_display_name" | "n_socks_swshuniformdefault_0_display_name" | "n_socks_swshuniformdragon_0_display_name" | "n_socks_teamaqua_0_display_name" | "n_socks_thighhighs_0_display_name" | "n_socks_unequip_0_display_name" | "N_WCSTee_Regional";
+export interface AvatarItemDisplayData {
+	displayStringId?: string;
+	iconAddress?: string;
+}
 
-export type AvatarItemDisplayIconAddress = "f_poses_empty_icon" | "m_backpack_eggbackpack_0_icon" | "m_backpack_eggbackpack_1_icon" | "m_backpack_eggbackpack_2_icon" | "m_poses_empty_icon" | "n_backpack_alolaitemslittenbp_0_icon" | "n_backpack_alolaitemspoppliobp_0_icon" | "n_backpack_alolaitemsrowletbp_0_icon" | "n_backpack_animegou_0_icon" | "n_backpack_backpacker_0_icon" | "n_backpack_blackkyuremitem_0_icon" | "n_backpack_charjabug_0_icon" | "n_backpack_clemont_0_icon" | "n_backpack_combeebackpack_0_icon" | "n_backpack_combeebackpack_1_icon" | "n_backpack_cute_0_icon" | "n_backpack_dedenneitems_0_icon" | "n_backpack_default_a_0_icon" | "n_backpack_default_a_1_icon" | "n_backpack_default_a_2_icon" | "n_backpack_default_a_3_icon" | "n_backpack_default_b_0_icon" | "n_backpack_default_b_1_icon" | "n_backpack_default_b_2_icon" | "n_backpack_default_b_3_icon" | "n_backpack_default_b_4_icon" | "n_backpack_default_b_5_icon" | "n_backpack_defaultnew_0_icon" | "n_backpack_dp_0_icon" | "n_backpack_egg-incubator_0_icon" | "n_backpack_eggbackpack_0_icon" | "n_backpack_eggbackpack_1_icon" | "n_backpack_eggbackpack_2_icon" | "n_backpack_empty_0_icon" | "n_backpack_frlg_a_0_icon" | "n_backpack_frlg_b_0_icon" | "n_backpack_genesecteventitem_0_icon" | "n_backpack_gengar_0_icon" | "n_backpack_giratinaitems_0_icon" | "n_backpack_goruckgengar_0_icon" | "n_backpack_goruckpikachu_0_icon" | "n_backpack_goruckwobbuffet_0_icon" | "n_backpack_greenpikavee_0_icon" | "n_backpack_guccibackpack_0_icon" | "n_backpack_guitarcasebackpack_0_icon" | "n_backpack_hgss_a_0_icon" | "n_backpack_hgss_b_0_icon" | "n_backpack_hououbackpack_0_icon" | "n_backpack_kakureonpouch_0_icon" | "n_backpack_komala_0_icon" | "n_backpack_longchampbp_0_icon" | "n_backpack_lunalaitems_0_icon" | "n_backpack_lunarnewyr_0_icon" | "n_backpack_mimikyubp_0_icon" | "n_backpack_movie2020_0_icon" | "n_backpack_naganadelaitems_0_icon" | "n_backpack_nike2021_0_icon" | "n_backpack_pamobackpack_0_icon" | "n_backpack_pinap_0_icon" | "n_backpack_pkmnhoodie001_0_icon" | "n_backpack_pkmnhoodie004_0_icon" | "n_backpack_pkmnhoodie007_0_icon" | "n_backpack_ruinmaniac_0_icon" | "n_backpack_snapcamera_0_icon" | "n_backpack_ss_a_0_icon" | "n_backpack_ss_b_0_icon" | "n_backpack_svcostumescarletschool_0_icon" | "n_backpack_svcostumevioletschool_0_icon" | "n_backpack_svdlc1_0_icon" | "n_backpack_svdlc2spring_0_icon" | "n_backpack_swshdlc2costume_a_0_icon" | "n_backpack_swshdlc2costume_b_0_icon" | "n_backpack_swshdlccostume_a_0_icon" | "n_backpack_swshdlccostume_b_0_icon" | "n_backpack_tatsugiribackpack-curly_0_icon" | "n_backpack_tatsugiribackpack-droopy_0_icon" | "n_backpack_tatsugiribackpack-stretchy_0_icon" | "n_backpack_togepibackpack_0_icon" | "n_backpack_ultra_a_0_icon" | "n_backpack_ultra_b_0_icon" | "n_backpack_verizon2021_0_icon" | "n_backpack_whitekyuremitem_0_icon" | "n_backpack_zubatbp_0_icon" | "n_belt_acetrainerbw_0_icon" | "n_belt_default_a_0_icon" | "n_belt_default_a_1_icon" | "n_belt_default_a_2_icon" | "n_belt_default_a_3_icon" | "n_belt_default_a_4_icon" | "n_belt_default_a_5_icon" | "n_belt_default_a_6_icon" | "n_belt_default_a_7_icon" | "n_belt_default_a_8_icon" | "n_belt_empty_0_icon" | "n_belt_simple_0_icon" | "n_belt_simple_1_icon" | "n_belt_simple_2_icon" | "n_belt_simple_3_icon" | "n_belt_teamrocket_0_icon" | "n_belt_teamrocket_1_icon" | "n_face_3dmask_0_icon" | "n_face_3dmask_1_icon" | "n_face_3dmask_2_icon" | "n_face_allister_0_icon" | "n_face_banettemask_0_icon" | "n_face_dayofthedead_0_icon" | "n_face_defaultmask_0_icon" | "n_face_empty_0_icon" | "n_face_facestickerghostpika_0_icon" | "n_face_facestickerpikachu_0_icon" | "n_face_facestickerpokeball_0_icon" | "n_face_festofcolors_0_icon" | "n_face_festofcolors_1_icon" | "n_face_festofcolors_2_icon" | "n_face_gracidea_0_icon" | "n_face_holiday2022santacostumes_0_icon" | "n_face_pikachumask_0_icon" | "n_face_sableyemask_0_icon" | "n_face_teamskull_0_icon" | "n_face_toxelmask_0_icon" | "n_face_verizon2020mask_0_icon" | "n_glasses_3d_0_icon" | "n_glasses_clemont_0_icon" | "n_glasses_cutieflysleepmask_0_icon" | "n_glasses_dittoeyewear_0_icon" | "n_glasses_divingsuit_0_icon" | "n_glasses_drpikachu_0_icon" | "n_glasses_empty_0_icon" | "n_glasses_frillishglasses_0_icon" | "n_glasses_fw2022_0_icon" | "n_glasses_gimmighoulitems_0_icon" | "n_glasses_goteamrocketarlo_0_icon" | "n_glasses_grandoakglasses_0_icon" | "n_glasses_jogger_0_icon" | "n_glasses_lugiaglasses_0_icon" | "n_glasses_lv40glasses_0_icon" | "n_glasses_lvl73-visorspecs_0_icon" | "n_glasses_mask_0_icon" | "n_glasses_mask_1_icon" | "n_glasses_necrozmaitems_0_icon" | "n_glasses_newyearglasses2020_0_icon" | "n_glasses_newyearglasses2021_0_icon" | "n_glasses_newyearglasses2022_0_icon" | "n_glasses_obstagoonitems_0_icon" | "n_glasses_roundsunglasses_0_icon" | "n_glasses_teardrop_0_icon" | "n_glasses_thick_0_icon" | "n_glasses_thick_1_icon" | "n_glasses_thick_2_icon" | "n_glasses_thick_3_icon" | "n_glasses_thick_4_icon" | "n_glasses_wcs2024winnersitems_0_icon" | "n_gloves_acetrainersm_0_icon" | "n_gloves_allister_0_icon" | "n_gloves_battlegirl_0_icon" | "n_gloves_bea_0_icon" | "n_gloves_bwn_0_icon" | "n_gloves_default_a_0_icon" | "n_gloves_default_a_1_icon" | "n_gloves_default_a_2_icon" | "n_gloves_default_a_3_icon" | "n_gloves_default_b_0_icon" | "n_gloves_default_b_1_icon" | "n_gloves_default_b_2_icon" | "n_gloves_default_b_3_icon" | "n_gloves_defaultnew_0_icon" | "n_gloves_delibird_0_icon" | "n_gloves_dynamaxswsh_0_icon" | "n_gloves_empty_0_icon" | "n_gloves_frlg_a_0_icon" | "n_gloves_frlg_b_0_icon" | "n_gloves_geeta_0_icon" | "n_gloves_giovanni_0_icon" | "n_gloves_guzma_0_icon" | "n_gloves_gymleader_a_0_icon" | "n_gloves_gymleader_b_0_icon" | "n_gloves_hoopabangle_0_icon" | "n_gloves_jogger_0_icon" | "n_gloves_korrina_0_icon" | "n_gloves_lysandre_0_icon" | "n_gloves_megabangle_0_icon" | "n_gloves_megabangle_1_icon" | "n_gloves_megabangle_2_icon" | "n_gloves_megabangle_3_icon" | "n_gloves_megabangle_4_icon" | "n_gloves_obstagoonitems_0_icon" | "n_gloves_palmer_0_icon" | "n_gloves_profwillowoutfit_0_icon" | "n_gloves_stevenfirst_0_icon" | "n_gloves_svdlc2spring_0_icon" | "n_gloves_swshdlc2costume_0_icon" | "n_gloves_swshdlccostume_0_icon" | "n_gloves_swshuniformchampion_0_icon" | "n_gloves_swshuniformdark_0_icon" | "n_gloves_swshuniformdefault_0_icon" | "n_gloves_swshuniformdragon_0_icon" | "n_gloves_teamaqua_a_0_icon" | "n_gloves_teamaqua_b_0_icon" | "n_gloves_teammagma_0_icon" | "n_gloves_teamrocket_0_icon" | "n_gloves_teamspark_a_0_icon" | "n_gloves_teamspark_b_0_icon" | "n_gloves_teamwristband_0_icon" | "n_gloves_teamwristband_1_icon" | "n_gloves_teamwristband_2_icon" | "n_gloves_teamwristband_3_icon" | "n_gloves_teamyellgrunts_0_icon" | "n_gloves_wintergloves2023_0_icon" | "n_gradient_eye_0_icon" | "n_gradient_eye_1_icon" | "n_gradient_eye_10_icon" | "n_gradient_eye_11_icon" | "n_gradient_eye_12_icon" | "n_gradient_eye_13_icon" | "n_gradient_eye_14_icon" | "n_gradient_eye_15_icon" | "n_gradient_eye_16_icon" | "n_gradient_eye_17_icon" | "n_gradient_eye_18_icon" | "n_gradient_eye_19_icon" | "n_gradient_eye_2_icon" | "n_gradient_eye_3_icon" | "n_gradient_eye_4_icon" | "n_gradient_eye_5_icon" | "n_gradient_eye_6_icon" | "n_gradient_eye_7_icon" | "n_gradient_eye_8_icon" | "n_gradient_eye_9_icon" | "n_gradient_hair_0_icon" | "n_gradient_hair_1_icon" | "n_gradient_hair_10_icon" | "n_gradient_hair_11_icon" | "n_gradient_hair_12_icon" | "n_gradient_hair_13_icon" | "n_gradient_hair_14_icon" | "n_gradient_hair_15_icon" | "n_gradient_hair_16_icon" | "n_gradient_hair_17_icon" | "n_gradient_hair_18_icon" | "n_gradient_hair_19_icon" | "n_gradient_hair_2_icon" | "n_gradient_hair_20_icon" | "n_gradient_hair_21_icon" | "n_gradient_hair_22_icon" | "n_gradient_hair_23_icon" | "n_gradient_hair_24_icon" | "n_gradient_hair_25_icon" | "n_gradient_hair_26_icon" | "n_gradient_hair_27_icon" | "n_gradient_hair_28_icon" | "n_gradient_hair_29_icon" | "n_gradient_hair_3_icon" | "n_gradient_hair_30_icon" | "n_gradient_hair_31_icon" | "n_gradient_hair_4_icon" | "n_gradient_hair_5_icon" | "n_gradient_hair_6_icon" | "n_gradient_hair_7_icon" | "n_gradient_hair_8_icon" | "n_gradient_hair_9_icon" | "n_gradient_testeye_0_icon" | "n_gradient_testeye_1_icon" | "n_gradient_testhair_0_icon" | "n_gradient_testhair_1_icon" | "n_hair_coilyshort_0_icon" | "n_hair_curlymedium_0_icon" | "n_hair_default_a_0_icon" | "n_hair_default_b_0_icon" | "n_hair_grimmsnarl_0_icon" | "n_hair_kinkymedium_0_icon" | "n_hair_kinkyshort_0_icon" | "n_hair_lvl79-synthfade_0_icon" | "n_hair_lvl79-urbanphantom_0_icon" | "n_hair_mohawk-0_0_icon" | "n_hair_mohawk-1_0_icon" | "n_hair_morgrem_0_icon" | "n_hair_straightlong_0_icon" | "n_hair_straightmedium_0_icon" | "n_hair_straightshort_0_icon" | "n_hair_testhair-0_0_icon" | "n_hair_testhair-1_0_icon" | "n_hair_wavylong_0_icon" | "n_hair_wavymedium_0_icon" | "n_hair_wavyshort_0_icon" | "n_hair_zacian_0_icon" | "n_hair_zamazenta_0_icon" | "n_hat_6thanniversary_a_0_icon" | "n_hat_6thanniversary_b_0_icon" | "n_hat_acetrainersm_a_0_icon" | "n_hat_acetrainersm_b_0_icon" | "n_hat_adventure_0_icon" | "n_hat_alolanexeggutorhat_0_icon" | "n_hat_applinitems_0_icon" | "n_hat_aseries_0_icon" | "n_hat_bea_a_0_icon" | "n_hat_bea_b_0_icon" | "n_hat_bidoofhat_0_icon" | "n_hat_bounsweetitems_0_icon" | "n_hat_burmyearrings11_0_icon" | "n_hat_burmyearrings12_0_icon" | "n_hat_burmyearrings13_0_icon" | "n_hat_bwn_0_icon" | "n_hat_captainpikachu_0_icon" | "n_hat_casket_0_icon" | "n_hat_cetoddlehat_0_icon" | "n_hat_clay_0_icon" | "n_hat_cofagrigusitems_0_icon" | "n_hat_communityambassador_0_icon" | "n_hat_cosmog_0_icon" | "n_hat_crownmoon_0_icon" | "n_hat_crownsun_0_icon" | "n_hat_cubonehat_0_icon" | "n_hat_darumakahat_0_icon" | "n_hat_dedenneitems_0_icon" | "n_hat_default_a_0_icon" | "n_hat_default_a_1_icon" | "n_hat_default_a_2_icon" | "n_hat_default_a_3_icon" | "n_hat_default_a_4_icon" | "n_hat_default_a_5_icon" | "n_hat_default_a_6_icon" | "n_hat_default_a_7_icon" | "n_hat_default_b_0_icon" | "n_hat_default_b_1_icon" | "n_hat_default_b_2_icon" | "n_hat_default_b_3_icon" | "n_hat_default_b_4_icon" | "n_hat_default_b_5_icon" | "n_hat_deino_0_icon" | "n_hat_delibird_0_icon" | "n_hat_detectivepikachu_0_icon" | "n_hat_diancie_0_icon" | "n_hat_dp_a_0_icon" | "n_hat_dp_b_0_icon" | "n_hat_drifloon_0_icon" | "n_hat_drpikachu_0_icon" | "n_hat_dusclopsmummy_0_icon" | "n_hat_eeveecap_0_icon" | "n_hat_elesa_0_icon" | "n_hat_empty_0_icon" | "n_hat_eternatussuit_0_icon" | "n_hat_fedora_0_icon" | "n_hat_fedora_1_icon" | "n_hat_fisher_0_icon" | "n_hat_flabebepack_0_icon" | "n_hat_flowercrown_0_icon" | "n_hat_fragment_0_icon" | "n_hat_frlg_a_0_icon" | "n_hat_frlg_b_0_icon" | "n_hat_furfrouwig_0_icon" | "n_hat_fw2022_0_icon" | "n_hat_galarfarfetchditems_0_icon" | "n_hat_genesecteventitem_0_icon" | "n_hat_gengar_0_icon" | "n_hat_gimmighoulitems_0_icon" | "n_hat_giratinaitems_0_icon" | "n_hat_gladion_0_icon" | "n_hat_gofestpikachuvisor_0_icon" | "n_hat_goomy_0_icon" | "n_hat_greavardwig_0_icon" | "n_hat_greencoat_0_icon" | "n_hat_growlithehelmet_0_icon" | "n_hat_gtr2024eeveefanmask_0_icon" | "n_hat_gtr2024pikachufanmask_0_icon" | "n_hat_guccihat_0_icon" | "n_hat_guzma_0_icon" | "n_hat_gyaradoscap_0_icon" | "n_hat_halloween2024_0_icon" | "n_hat_hgss_a_0_icon" | "n_hat_hgss_b_0_icon" | "n_hat_holiday2022santacostumes_0_icon" | "n_hat_holidaybeanie_0_icon" | "n_hat_hoopaearmuffs_0_icon" | "n_hat_ingo_0_icon" | "n_hat_jogger_0_icon" | "n_hat_kantotourcapgreen_0_icon" | "n_hat_kantotourcapred_0_icon" | "n_hat_knitted_0_icon" | "n_hat_knitted_1_icon" | "n_hat_korrina_0_icon" | "n_hat_kyuremhat_0_icon" | "n_hat_lana_0_icon" | "n_hat_laprasbandana_a_0_icon" | "n_hat_laprasbandana_b_0_icon" | "n_hat_lasecuritycorps_0_icon" | "n_hat_legendofarceus_a_0_icon" | "n_hat_legendofarceus_b_0_icon" | "n_hat_litwickhat_0_icon" | "n_hat_loneearrings_0_icon" | "n_hat_lucariomask_0_icon" | "n_hat_lvl50cap_0_icon" | "n_hat_magikarp_0_icon" | "n_hat_mareaniehat_0_icon" | "n_hat_megalopunnyitems_0_icon" | "n_hat_megarayquaza_0_icon" | "n_hat_meltan_0_icon" | "n_hat_meltanearrings_0_icon" | "n_hat_mewtwo_a_0_icon" | "n_hat_mewtwo_b_0_icon" | "n_hat_mimikyu_0_icon" | "n_hat_mismagius_0_icon" | "n_hat_mlb_0_icon" | "n_hat_mlb-brewers_0_icon" | "n_hat_mlb-diamondbacks_0_icon" | "n_hat_mlb-giants_0_icon" | "n_hat_mlb-guardians_0_icon" | "n_hat_mlb-mariners_0_icon" | "n_hat_mlb-marlins_0_icon" | "n_hat_mlb-mets_0_icon" | "n_hat_mlb-nationals_0_icon" | "n_hat_mlb-orioles_0_icon" | "n_hat_mlb-padres_0_icon" | "n_hat_mlb-rangers_0_icon" | "n_hat_mlb-rays_0_icon" | "n_hat_mlb-redsox_0_icon" | "n_hat_mlb-twins_0_icon" | "n_hat_mlb-whitesox_0_icon" | "n_hat_movie2020_0_icon" | "n_hat_munnapack_0_icon" | "n_hat_munnapack_1_icon" | "n_hat_mustard_0_icon" | "n_hat_newyear2022_0_icon" | "n_hat_newyearhat2021_0_icon" | "n_hat_newyearhat2023_0_icon" | "n_hat_nihilegoitems_0_icon" | "n_hat_noibat_0_icon" | "n_hat_obstagoonitems_0_icon" | "n_hat_oras_a_0_icon" | "n_hat_oras_b_0_icon" | "n_hat_oricoriopink_0_icon" | "n_hat_oricoriopurple_0_icon" | "n_hat_oricoriored_0_icon" | "n_hat_oricorioyellow_0_icon" | "n_hat_partneritemsjan2024hat_0_icon" | "n_hat_partyhat_0_icon" | "n_hat_phantump_0_icon" | "n_hat_pikachubutler-blue_0_icon" | "n_hat_pikachubutler-red_0_icon" | "n_hat_pikachubutler-yellow_0_icon" | "n_hat_pikachucap_0_icon" | "n_hat_pikachufan_0_icon" | "n_hat_pikachulibre_0_icon" | "n_hat_pikachupumpkinhead_0_icon" | "n_hat_pkmncap_0_icon" | "n_hat_pkmncap_1_icon" | "n_hat_pkmncap_2_icon" | "n_hat_poipole_0_icon" | "n_hat_pokeballitems-basic_0_icon" | "n_hat_pokeballitems-great_0_icon" | "n_hat_pokeballitems-ultra_0_icon" | "n_hat_polteageisthat_0_icon" | "n_hat_profwillowoutfit_0_icon" | "n_hat_regiicejersies_0_icon" | "n_hat_regirockjersies_0_icon" | "n_hat_registeeljersies_0_icon" | "n_hat_ruinmaniac_a_0_icon" | "n_hat_ruinmaniac_b_0_icon" | "n_hat_sableyegoggles_0_icon" | "n_hat_samsungsummer2020_0_icon" | "n_hat_sandygasthat_0_icon" | "n_hat_shayminhat_0_icon" | "n_hat_slowpoketailshirts_0_icon" | "n_hat_snombeanie_0_icon" | "n_hat_snorlaxnightcap_0_icon" | "n_hat_solgaleoitems_0_icon" | "n_hat_ss_a_0_icon" | "n_hat_ss_b_0_icon" | "n_hat_stantlerheadband_0_icon" | "n_hat_strawhat_0_icon" | "n_hat_summer2023_0_icon" | "n_hat_svcostumescarletschool_0_icon" | "n_hat_svcostumevioletschool_0_icon" | "n_hat_swshdlc2costume_0_icon" | "n_hat_swshuniformchampion_0_icon" | "n_hat_sylveonitems_a_0_icon" | "n_hat_sylveonitems_b_0_icon" | "n_hat_tcgcollabtshirtandcap_0_icon" | "n_hat_teamaqua_0_icon" | "n_hat_teamleadercap_0_icon" | "n_hat_teamleadercap_1_icon" | "n_hat_teamleadercap_2_icon" | "n_hat_teamrocket_0_icon" | "n_hat_teamrocketcap_0_icon" | "n_hat_teamskull_0_icon" | "n_hat_tophat_0_icon" | "n_hat_ultra_a_0_icon" | "n_hat_ultra_b_0_icon" | "n_hat_ultrareconsquad_0_icon" | "n_hat_ultrareconsquadb_0_icon" | "n_hat_verizon2021_0_icon" | "n_hat_wcs2022winnersitems_0_icon" | "n_hat_wcs2024paiditems_0_icon" | "n_hat_wcs2025_0_icon" | "n_hat_wcs2025winnersitems_0_icon" | "n_hat_whimsicottearmuff_0_icon" | "n_hat_willowglasses_0_icon" | "n_hat_woobatearrings_0_icon" | "n_hat_xerneasitems_0_icon" | "n_hat_yamaskhat_0_icon" | "n_hat_yamaskmask_0_icon" | "n_hat_zacianmask_0_icon" | "n_hat_zacostume_a_0_icon" | "n_hat_zacostume_b_0_icon" | "n_hat_zamazentamask_0_icon" | "n_hat_zubathat_0_icon" | "n_necklace_default_0_icon" | "n_necklace_default_1_icon" | "n_necklace_empty_0_icon" | "n_necklace_heart_0_icon" | "n_necklace_star_0_icon" | "n_pants_6thanniversary_0_icon" | "n_pants_7thanniversary_0_icon" | "n_pants_acetrainerbw_a_0_icon" | "n_pants_acetrainerbw_b_0_icon" | "n_pants_acetrainersm_0_icon" | "n_pants_animegou_0_icon" | "n_pants_backpacker_a_0_icon" | "n_pants_backpacker_b_0_icon" | "n_pants_battlegirl_0_icon" | "n_pants_blackwhite_0_icon" | "n_pants_bounsweetitems_0_icon" | "n_pants_brock_0_icon" | "n_pants_bwn_0_icon" | "n_pants_casual_a_0_icon" | "n_pants_casual_a_1_icon" | "n_pants_casual_b_0_icon" | "n_pants_casual_b_1_icon" | "n_pants_clay_0_icon" | "n_pants_default_a_0_icon" | "n_pants_default_a_1_icon" | "n_pants_default_a_2_icon" | "n_pants_default_a_3_icon" | "n_pants_default_a_4_icon" | "n_pants_default_a_5_icon" | "n_pants_default_b_0_icon" | "n_pants_defaultnew_0_icon" | "n_pants_denimfashionweek2023_0_icon" | "n_pants_dp_a_0_icon" | "n_pants_dp_b_0_icon" | "n_pants_elesa_0_icon" | "n_pants_eternatussuit_0_icon" | "n_pants_fashionweek2022_0_icon" | "n_pants_fashionweek2025_0_icon" | "n_pants_fisher_0_icon" | "n_pants_flabebepack_0_icon" | "n_pants_frlg_a_0_icon" | "n_pants_frlg_b_0_icon" | "n_pants_fw2022_a_0_icon" | "n_pants_fw2022_b_0_icon" | "n_pants_geeta_0_icon" | "n_pants_genderlessskirt_0_icon" | "n_pants_giovanni_0_icon" | "n_pants_gladion_0_icon" | "n_pants_gothitelleitems_0_icon" | "n_pants_green_a_0_icon" | "n_pants_green_b_0_icon" | "n_pants_greencoat_0_icon" | "n_pants_greenpikavee_0_icon" | "n_pants_grimsley_0_icon" | "n_pants_grusha_0_icon" | "n_pants_guzma_0_icon" | "n_pants_gymleader_a_0_icon" | "n_pants_gymleader_a_1_icon" | "n_pants_gymleader_a_2_icon" | "n_pants_gymleader_b_0_icon" | "n_pants_gymleader_b_1_icon" | "n_pants_gymleader_b_2_icon" | "n_pants_hala_0_icon" | "n_pants_hgss_a_0_icon" | "n_pants_hgss_b_0_icon" | "n_pants_ingo_0_icon" | "n_pants_jogger_0_icon" | "n_pants_korrina_0_icon" | "n_pants_loose-fitting_0_icon" | "n_pants_loosepants_0_icon" | "n_pants_lunalaitems_0_icon" | "n_pants_luvdiscpack_a_0_icon" | "n_pants_luvdiscpack_b_0_icon" | "n_pants_lvl75-techtrousers_0_icon" | "n_pants_lysandre_0_icon" | "n_pants_mewtwo_a_0_icon" | "n_pants_mewtwo_b_0_icon" | "n_pants_miniskirt_0_icon" | "n_pants_miniskirt_1_icon" | "n_pants_miniskirt_2_icon" | "n_pants_miniskirt_3_icon" | "n_pants_miniskirt-wave_0_icon" | "n_pants_miniskirt-wave_1_icon" | "n_pants_miniskirt-wave_2_icon" | "n_pants_misty_0_icon" | "n_pants_munnapack_0_icon" | "n_pants_mustard_0_icon" | "n_pants_naganadelaitems_0_icon" | "n_pants_necrozmaitems_0_icon" | "n_pants_neon-solid_0_icon" | "n_pants_neon-solid_1_icon" | "n_pants_neon-solid_2_icon" | "n_pants_neon-stripes_0_icon" | "n_pants_neon-stripes_1_icon" | "n_pants_newyear2022_0_icon" | "n_pants_oras_a_0_icon" | "n_pants_oras_b_0_icon" | "n_pants_pajamas2022_0_icon" | "n_pants_pajamas2022_1_icon" | "n_pants_palmer_0_icon" | "n_pants_pikachubutler_0_icon" | "n_pants_pikachufan_a_0_icon" | "n_pants_pikachufan_b_0_icon" | "n_pants_pikachulibre_a_0_icon" | "n_pants_pikachulibre_b_0_icon" | "n_pants_profwillowoutfit_0_icon" | "n_pants_pumpkabooitems_0_icon" | "n_pants_regiicejersies_0_icon" | "n_pants_regirockjersies_0_icon" | "n_pants_registeeljersies_0_icon" | "n_pants_s19gbl_0_icon" | "n_pants_shorts_0_icon" | "n_pants_shorts_1_icon" | "n_pants_shorts_2_icon" | "n_pants_shorts_3_icon" | "n_pants_skinnyjeans_a_0_icon" | "n_pants_skinnyjeans_b_0_icon" | "n_pants_skinnyjeans_b_1_icon" | "n_pants_skinnyjeans_b_2_icon" | "n_pants_ss_0_icon" | "n_pants_steven_0_icon" | "n_pants_stevenfirst_0_icon" | "n_pants_sweats_0_icon" | "n_pants_sweats_1_icon" | "n_pants_sweats_2_icon" | "n_pants_sweats_3_icon" | "n_pants_sweats_4_icon" | "n_pants_swshuniformchampion_0_icon" | "n_pants_swshuniformdark_a_0_icon" | "n_pants_swshuniformdark_b_0_icon" | "n_pants_swshuniformdefault_a_0_icon" | "n_pants_swshuniformdefault_b_0_icon" | "n_pants_swshuniformdragon_a_0_icon" | "n_pants_swshuniformdragon_b_0_icon" | "n_pants_teamaqua_a_0_icon" | "n_pants_teamaqua_b_0_icon" | "n_pants_teamblanche_a_0_icon" | "n_pants_teamblanche_b_0_icon" | "n_pants_teamcandela_a_0_icon" | "n_pants_teamcandela_b_0_icon" | "n_pants_teammagma_a_0_icon" | "n_pants_teammagma_b_0_icon" | "n_pants_teamrocket_a_0_icon" | "n_pants_teamrocket_b_0_icon" | "n_pants_teamskull_a_0_icon" | "n_pants_teamskull_b_0_icon" | "n_pants_teamspark_a_0_icon" | "n_pants_teamspark_b_0_icon" | "n_pants_teamyellgrunts-pants_0_icon" | "n_pants_teamyellgrunts-skirt_0_icon" | "n_pants_turbine_0_icon" | "n_pants_turbine_1_icon" | "n_pants_turbine_2_icon" | "n_pants_ultra_a_0_icon" | "n_pants_ultra_b_0_icon" | "n_pants_veterantrainerxy_a_0_icon" | "n_pants_veterantrainerxy_b_0_icon" | "n_pants_wcs2022winnersitems_0_icon" | "n_pants_wcs2024winnersitems_0_icon" | "n_pants_wcs2025winnersitems_0_icon" | "n_pose_039_icon" | "n_pose_065_icon" | "n_pose_066_icon" | "n_pose_067_icon" | "n_pose_068_icon" | "n_pose_buddypokeball_icon" | "n_pose_carnival_icon" | "n_pose_communityambassador_icon" | "n_pose_concierge_icon" | "n_pose_fashionweek2025_icon" | "n_pose_gofest2025_icon" | "n_pose_growingup_icon" | "n_pose_grusha_icon" | "n_pose_heart_icon" | "n_pose_idle_icon" | "n_pose_legacy50_icon" | "n_pose_lvl77_icon" | "n_pose_mustard_icon" | "n_pose_penpal_icon" | "n_pose_s16finale_icon" | "n_pose_s19gbl_icon" | "n_pose_s20gbl_icon" | "n_pose_s22gbl_icon" | "n_pose_sustainability_icon" | "n_pose_teapot_icon" | "n_pose_tinkatonhammer_icon" | "n_pose_urshifurapidstrike_icon" | "n_pose_urshifusinglestrike_icon" | "n_pose_waterfestival_icon" | "n_shirt_6thanniversary_a_0_icon" | "n_shirt_6thanniversary_b_0_icon" | "n_shirt_7thanniversary_0_icon" | "n_shirt_acetrainerbw_a_0_icon" | "n_shirt_acetrainerbw_b_0_icon" | "n_shirt_acetrainersm_a_0_icon" | "n_shirt_acetrainersm_b_0_icon" | "n_shirt_allister_0_icon" | "n_shirt_alolacomfey_0_icon" | "n_shirt_animegou_0_icon" | "n_shirt_applinitems_0_icon" | "n_shirt_aseries_0_icon" | "n_shirt_backpacker_a_0_icon" | "n_shirt_backpacker_b_0_icon" | "n_shirt_ballguy_0_icon" | "n_shirt_battlegirl_0_icon" | "n_shirt_bea_a_0_icon" | "n_shirt_bea_b_0_icon" | "n_shirt_bewearcostume_0_icon" | "n_shirt_blackwhite_0_icon" | "n_shirt_blazer_0_icon" | "n_shirt_bounsweetitems_a_0_icon" | "n_shirt_bounsweetitems_b_0_icon" | "n_shirt_brock_0_icon" | "n_shirt_buttondown_0_icon" | "n_shirt_buzzwoleitems_0_icon" | "n_shirt_bwn_0_icon" | "n_shirt_casual_a_0_icon" | "n_shirt_casual_a_1_icon" | "n_shirt_casual_a_2_icon" | "n_shirt_casual_a_3_icon" | "n_shirt_casual_b_0_icon" | "n_shirt_casual_b_1_icon" | "n_shirt_casual_b_2_icon" | "n_shirt_casual_b_3_icon" | "n_shirt_celebi_0_icon" | "n_shirt_chimcharonesie_0_icon" | "n_shirt_clay_0_icon" | "n_shirt_clemont_0_icon" | "n_shirt_cofagrigusitems_0_icon" | "n_shirt_concierge_0_icon" | "n_shirt_cosmog_0_icon" | "n_shirt_cowichansweater_0_icon" | "n_shirt_dayofdead_0_icon" | "n_shirt_default_1_icon" | "n_shirt_default_3_icon" | "n_shirt_default_a_0_icon" | "n_shirt_default_a_1_icon" | "n_shirt_default_a_2_icon" | "n_shirt_default_a_3_icon" | "n_shirt_default_a_4_icon" | "n_shirt_default_a_5_icon" | "n_shirt_default_a_6_icon" | "n_shirt_default_a_7_icon" | "n_shirt_default_a_8_icon" | "n_shirt_default_b_0_icon" | "n_shirt_default_b_2_icon" | "n_shirt_default_b_4_icon" | "n_shirt_default_b_5_icon" | "n_shirt_default_b_6_icon" | "n_shirt_default_b_7_icon" | "n_shirt_default_b_8_icon" | "n_shirt_defaultnew_0_icon" | "n_shirt_delibird_0_icon" | "n_shirt_delibirdonesie_0_icon" | "n_shirt_denimfashionweek2023_0_icon" | "n_shirt_denimjacket_0_icon" | "n_shirt_detectivepikachu_0_icon" | "n_shirt_diancie_0_icon" | "n_shirt_disguise-hoodoff_0_icon" | "n_shirt_disguise-hoodon_0_icon" | "n_shirt_divingsuit_0_icon" | "n_shirt_diwali2021_0_icon" | "n_shirt_dp_a_0_icon" | "n_shirt_dp_b_0_icon" | "n_shirt_drifblim_0_icon" | "n_shirt_dudunsparceitem_0_icon" | "n_shirt_dusclopsmummy_0_icon" | "n_shirt_earthday_2018_icon" | "n_shirt_eeveestshirt_0_icon" | "n_shirt_eeveestshirt_1_icon" | "n_shirt_eeveestshirt_2_icon" | "n_shirt_eeveestshirt_3_icon" | "n_shirt_eeveestshirt_4_icon" | "n_shirt_eeveestshirt_5_icon" | "n_shirt_eeveestshirt_6_icon" | "n_shirt_eeveestshirt_7_icon" | "n_shirt_eeveestshirt_8_icon" | "n_shirt_elesa_a_0_icon" | "n_shirt_elesa_b_0_icon" | "n_shirt_eternatussuit_0_icon" | "n_shirt_fashionweek2022_0_icon" | "n_shirt_fashionweek2025_0_icon" | "n_shirt_festivaloflights_0_icon" | "n_shirt_festivaloflights_1_icon" | "n_shirt_fisher_0_icon" | "n_shirt_flabebepack_0_icon" | "n_shirt_fragment_0_icon" | "n_shirt_frlg_a_0_icon" | "n_shirt_frlg_b_0_icon" | "n_shirt_fw2022_a_0_icon" | "n_shirt_fw2022_b_0_icon" | "n_shirt_galarfarfetchditems_0_icon" | "n_shirt_galaxyoutfit_a_0_icon" | "n_shirt_galaxyoutfit_b_0_icon" | "n_shirt_geeta_0_icon" | "n_shirt_genderlessskirt_0_icon" | "n_shirt_gengar_0_icon" | "n_shirt_gengaronesie_0_icon" | "n_shirt_giovanni_a_0_icon" | "n_shirt_giovanni_b_0_icon" | "n_shirt_giratinaitems_0_icon" | "n_shirt_gladion_0_icon" | "n_shirt_gofest_2019_icon" | "n_shirt_gofest2020_0_icon" | "n_shirt_gofest2021_0_icon" | "n_shirt_gofest2022_0_icon" | "n_shirt_gofest2023_0_icon" | "n_shirt_gofest2024darkgray_0_icon" | "n_shirt_gofest2024gray_0_icon" | "n_shirt_gofest2024purple_0_icon" | "n_shirt_gofest2025_0_icon" | "n_shirt_gofest2025cream_0_icon" | "n_shirt_gofestglobal2023_0_icon" | "n_shirt_goteamrocketarlo_a_0_icon" | "n_shirt_goteamrocketarlo_b_0_icon" | "n_shirt_goteamrocketcliff_a_0_icon" | "n_shirt_goteamrocketcliff_b_0_icon" | "n_shirt_goteamrocketsierra_a_0_icon" | "n_shirt_goteamrocketsierra_b_0_icon" | "n_shirt_gothitelleitems_0_icon" | "n_shirt_gotour2023_0_icon" | "n_shirt_gotour2024_0_icon" | "n_shirt_gotour2025_0_icon" | "n_shirt_gotour2025_1_icon" | "n_shirt_gotour2025_2_icon" | "n_shirt_gotour2026-black_0_icon" | "n_shirt_gotour2026-gray_0_icon" | "n_shirt_gowa2024_0_icon" | "n_shirt_gowa2025_0_icon" | "n_shirt_gowa2025_1_icon" | "n_shirt_greedentsweater_0_icon" | "n_shirt_green_0_icon" | "n_shirt_greencoat_0_icon" | "n_shirt_greenpikavee_0_icon" | "n_shirt_grimsley_0_icon" | "n_shirt_grusha_0_icon" | "n_shirt_gtrtshirt2022_0_icon" | "n_shirt_gtrtshirt2022_1_icon" | "n_shirt_guccitshirts_0_icon" | "n_shirt_guzma_0_icon" | "n_shirt_gymleader_a_0_icon" | "n_shirt_gymleader_a_1_icon" | "n_shirt_gymleader_a_2_icon" | "n_shirt_gymleader_b_0_icon" | "n_shirt_gymleader_b_1_icon" | "n_shirt_gymleader_b_2_icon" | "n_shirt_hala_0_icon" | "n_shirt_halloween2024_0_icon" | "n_shirt_happi_0_icon" | "n_shirt_happi_1_icon" | "n_shirt_happi_2_icon" | "n_shirt_hgss_a_0_icon" | "n_shirt_hgss_b_0_icon" | "n_shirt_holiday2022santacostumes_0_icon" | "n_shirt_holiday2024-marshtompsweater_0_icon" | "n_shirt_holiday2024-staryusweater_0_icon" | "n_shirt_holiday2024-wooloojacket_0_icon" | "n_shirt_holifestival2021black_0_icon" | "n_shirt_holifestival2021white_0_icon" | "n_shirt_hoopaunboundtshirt_0_icon" | "n_shirt_ingo_0_icon" | "n_shirt_ingress_0_icon" | "n_shirt_ingresse_0_icon" | "n_shirt_ingressr_0_icon" | "n_shirt_james_0_icon" | "n_shirt_jessie_0_icon" | "n_shirt_jirachi_0_icon" | "n_shirt_jogger_0_icon" | "n_shirt_keldeotshirt_0_icon" | "n_shirt_korrina_a_0_icon" | "n_shirt_korrina_b_0_icon" | "n_shirt_ladiamondoutfit_a_0_icon" | "n_shirt_ladiamondoutfit_b_0_icon" | "n_shirt_lana_0_icon" | "n_shirt_lapearloutfit_a_0_icon" | "n_shirt_lapearloutfit_b_0_icon" | "n_shirt_lasecuritycorps_a_0_icon" | "n_shirt_lasecuritycorps_b_0_icon" | "n_shirt_latiaslatios_0_icon" | "n_shirt_legendofarceus_a_0_icon" | "n_shirt_legendofarceus_b_0_icon" | "n_shirt_longsleeves-charizard_0_icon" | "n_shirt_longsleeves-charizard_1_icon" | "n_shirt_longsleeves-charizard_2_icon" | "n_shirt_longsleeves-pikachu_0_icon" | "n_shirt_longsleeves-pikachu_1_icon" | "n_shirt_longsleeves-pikachu_2_icon" | "n_shirt_loose-fitting_0_icon" | "n_shirt_loose-fitting_1_icon" | "n_shirt_luvdiscpack_a_0_icon" | "n_shirt_luvdiscpack_b_0_icon" | "n_shirt_lvl50_0_icon" | "n_shirt_lvl50_1_icon" | "n_shirt_lvl80-circuitjacket_0_icon" | "n_shirt_lysandre_0_icon" | "n_shirt_marshadowtshirt_0_icon" | "n_shirt_megalopunnyitems_0_icon" | "n_shirt_megarayquaza_0_icon" | "n_shirt_melmetaljacket_0_icon" | "n_shirt_melmetalvest_0_icon" | "n_shirt_meloettatshirt_0_icon" | "n_shirt_meltan_0_icon" | "n_shirt_mew_0_icon" | "n_shirt_mewtwo_a_0_icon" | "n_shirt_mewtwo_b_0_icon" | "n_shirt_misty_0_icon" | "n_shirt_morpekofullonesie_0_icon" | "n_shirt_morpekohangryonesie_0_icon" | "n_shirt_movie2020jessiejames_a_0_icon" | "n_shirt_movie2020jessiejames_b_0_icon" | "n_shirt_munnapack_a_0_icon" | "n_shirt_munnapack_b_0_icon" | "n_shirt_mustard_0_icon" | "n_shirt_naganadelaitems_0_icon" | "n_shirt_necrozmaitems_0_icon" | "n_shirt_newyear2022_0_icon" | "n_shirt_nike2021_0_icon" | "n_shirt_ocshirt_a_108_icon" | "n_shirt_ocshirt_a_129_icon" | "n_shirt_ocshirt_a_143_icon" | "n_shirt_ocshirt_a_45_icon" | "n_shirt_ocshirt_b_108_icon" | "n_shirt_ocshirt_b_129_icon" | "n_shirt_ocshirt_b_143_icon" | "n_shirt_ocshirt_b_45_icon" | "n_shirt_oras_a_0_icon" | "n_shirt_oras_b_0_icon" | "n_shirt_pajamas2022_0_icon" | "n_shirt_pajamas2022_1_icon" | "n_shirt_palmer_0_icon" | "n_shirt_partneritemsjan2024hoodie_0_icon" | "n_shirt_partneritemsjan2024tshirt_0_icon" | "n_shirt_pikachubutler-blue_0_icon" | "n_shirt_pikachubutler-red_0_icon" | "n_shirt_pikachubutler-yellow_0_icon" | "n_shirt_pikachufan_a_0_icon" | "n_shirt_pikachufan_b_0_icon" | "n_shirt_pikachulibre_a_0_icon" | "n_shirt_pikachulibre_b_0_icon" | "n_shirt_pikachuonesie_0_icon" | "n_shirt_pinpukuhoodie_0_icon" | "n_shirt_pipluponesie_0_icon" | "n_shirt_pkmnhoodie001_0_icon" | "n_shirt_pkmnhoodie004_0_icon" | "n_shirt_pkmnhoodie007_0_icon" | "n_shirt_pkmnshirts_165_icon" | "n_shirt_pkmnshirts_188_icon" | "n_shirt_pkmnshirts_201_icon" | "n_shirt_pkmnshirts_238_icon" | "n_shirt_pkmnshirts2021_0_icon" | "n_shirt_pkmnshirts2021_1_icon" | "n_shirt_pkmnshirts2021_2_icon" | "n_shirt_pokeballitems-basic_0_icon" | "n_shirt_pokeballitems-great_0_icon" | "n_shirt_pokeballitems-ultra_0_icon" | "n_shirt_poloshirt_0_icon" | "n_shirt_poloshirt_1_icon" | "n_shirt_poloshirt_2_icon" | "n_shirt_profwillowoutfit_0_icon" | "n_shirt_projectguitar_0_icon" | "n_shirt_pumpkabooitems_0_icon" | "n_shirt_regiicejersies_0_icon" | "n_shirt_regirockjersies_0_icon" | "n_shirt_registeeljersies_0_icon" | "n_shirt_reuniclusitems_0_icon" | "n_shirt_ruinmaniac_a_0_icon" | "n_shirt_ruinmaniac_b_0_icon" | "n_shirt_s19gbl_0_icon" | "n_shirt_safarizone2020_a_0_icon" | "n_shirt_safarizone2020_b_0_icon" | "n_shirt_samsungsummer2020_0_icon" | "n_shirt_scolipede_0_icon" | "n_shirt_shayminlandtshirt_0_icon" | "n_shirt_shayminskytshirt_0_icon" | "n_shirt_shinydiancie_icon" | "n_shirt_shinykeldeoshirt_0_icon" | "n_shirt_shinymeloettatshirt_0_icon" | "n_shirt_shinymewtshirts_0_icon" | "n_shirt_slowpokeshirts_0_icon" | "n_shirt_slowpoketailshirts_0_icon" | "n_shirt_snorlaxonesie_0_icon" | "n_shirt_spiritomb_0_icon" | "n_shirt_spring2021gulpin_a_0_icon" | "n_shirt_spring2021gulpin_b_0_icon" | "n_shirt_spring2021plusle_a_0_icon" | "n_shirt_spring2021plusle_b_0_icon" | "n_shirt_ss_a_0_icon" | "n_shirt_ss_b_0_icon" | "n_shirt_steven_0_icon" | "n_shirt_stevenfirst_0_icon" | "n_shirt_sukajanblastoise_0_icon" | "n_shirt_sukajancharizard_0_icon" | "n_shirt_sukajanhouou_0_icon" | "n_shirt_sukajanlugia_0_icon" | "n_shirt_sukajanvenusaur_0_icon" | "n_shirt_summer2023_0_icon" | "n_shirt_sustainability2021_a_0_icon" | "n_shirt_sustainability2021_b_0_icon" | "n_shirt_svcostumescarletschool_0_icon" | "n_shirt_svcostumevioletschool_0_icon" | "n_shirt_svdlc1_0_icon" | "n_shirt_svdlc2fall_0_icon" | "n_shirt_svdlc2spring_0_icon" | "n_shirt_sweater-30_0_icon" | "n_shirt_sweater-30_1_icon" | "n_shirt_sweater-30_2_icon" | "n_shirt_sweaterinstinct_0_icon" | "n_shirt_sweatermystic_0_icon" | "n_shirt_sweatervalor_0_icon" | "n_shirt_sweatshirt-sporty_0_icon" | "n_shirt_sweatshirt-sporty_1_icon" | "n_shirt_sweatshirt-sporty_2_icon" | "n_shirt_sweatshirt-sporty_3_icon" | "n_shirt_sweatshirt-streak_0_icon" | "n_shirt_sweatshirt-streak_1_icon" | "n_shirt_sweatshirt-streak_2_icon" | "n_shirt_sweatshirt-streak_3_icon" | "n_shirt_sweatshirt-streak_4_icon" | "n_shirt_swshdlc2costume_0_icon" | "n_shirt_swshdlccostume_a_0_icon" | "n_shirt_swshdlccostume_b_0_icon" | "n_shirt_swshuniformchampion_0_icon" | "n_shirt_swshuniformdark_a_0_icon" | "n_shirt_swshuniformdark_b_0_icon" | "n_shirt_swshuniformdefault_0_icon" | "n_shirt_swshuniformdragon_0_icon" | "n_shirt_sylveonitems_0_icon" | "n_shirt_tandemausitems_0_icon" | "n_shirt_tanktop_0_icon" | "n_shirt_tanktop_1_icon" | "n_shirt_tanktop_2_icon" | "n_shirt_tanktop-charizard_0_icon" | "n_shirt_tanktop-charizard_1_icon" | "n_shirt_tanktop-charizard_2_icon" | "n_shirt_tanktop-pikachu_0_icon" | "n_shirt_tanktop-pikachu_1_icon" | "n_shirt_tanktop-pikachu_2_icon" | "n_shirt_tcgcollabtshirtandcap_0_icon" | "n_shirt_teamaqua_a_0_icon" | "n_shirt_teamaqua_b_0_icon" | "n_shirt_teamblanche_a_0_icon" | "n_shirt_teamblanche_b_0_icon" | "n_shirt_teamcandela_a_0_icon" | "n_shirt_teamcandela_b_0_icon" | "n_shirt_teammagma_a_0_icon" | "n_shirt_teammagma_b_0_icon" | "n_shirt_teamrocket_a_0_icon" | "n_shirt_teamrocket_a_1_icon" | "n_shirt_teamrocket_b_0_icon" | "n_shirt_teamrocket_b_1_icon" | "n_shirt_teamskull_0_icon" | "n_shirt_teamspark_a_0_icon" | "n_shirt_teamspark_b_0_icon" | "n_shirt_teamyellgrunts-cropped_0_icon" | "n_shirt_teamyellgrunts-long_0_icon" | "n_shirt_togepihoodie_0_icon" | "n_shirt_tracksuitsgroudon_0_icon" | "n_shirt_tracksuitskyogre_0_icon" | "n_shirt_tshirt-cycling_0_icon" | "n_shirt_tshirt-cycling_1_icon" | "n_shirt_tshirt-cycling_2_icon" | "n_shirt_tshirt-cycling_3_icon" | "n_shirt_tshirt-geometric_0_icon" | "n_shirt_tshirt-geometric_1_icon" | "n_shirt_tshirt-geometric_2_icon" | "n_shirt_tshirt-pikachu_0_icon" | "n_shirt_tshirt-pikachu_1_icon" | "n_shirt_tshirt-pikachu_2_icon" | "n_shirt_tshirt-pikachu_3_icon" | "n_shirt_tshirt-pikachu_4_icon" | "n_shirt_tshirt-pikachu_5_icon" | "n_shirt_tshirt-pikachu_6_icon" | "n_shirt_tshirtfestchicago_2017_icon" | "n_shirt_tshirtfestchicago_2018_icon" | "n_shirt_tshirtglobalgoals_2017_icon" | "n_shirt_tshirtinstinct_0_icon" | "n_shirt_tshirtmystic_0_icon" | "n_shirt_tshirtvalor_0_icon" | "n_shirt_turtleneck-30_0_icon" | "n_shirt_turtleneck-30_1_icon" | "n_shirt_turtleneck-30_2_icon" | "n_shirt_turtleneck-30_3_icon" | "n_shirt_turtwigonesie_0_icon" | "n_shirt_uglysweatersudowoodo_0_icon" | "n_shirt_ultra_a_0_icon" | "n_shirt_ultra_b_0_icon" | "n_shirt_ultrareconsquad_0_icon" | "n_shirt_uniqlotshirts_0_icon" | "n_shirt_uniqlotshirts_1_icon" | "n_shirt_uniqlotshirts_2_icon" | "n_shirt_unwto_0_icon" | "n_shirt_valentine2023_0_icon" | "n_shirt_verizon2020sweater_0_icon" | "n_shirt_veterantrainerxy_a_0_icon" | "n_shirt_veterantrainerxy_b_0_icon" | "n_shirt_victinitshirts_0_icon" | "n_shirt_volcaniontshirt_0_icon" | "n_shirt_wcs2022_0_icon" | "n_shirt_wcs2022tshirtbulu_0_icon" | "n_shirt_wcs2022tshirtred_0_icon" | "n_shirt_wcs2022winnersitems_0_icon" | "n_shirt_wcs2023_0_icon" | "n_shirt_wcs2023promotshirt_0_icon" | "n_shirt_wcs2023promotshirt01_0_icon" | "n_shirt_wcs2023sukajan_0_icon" | "n_shirt_wcs2023winnersitems_0_icon" | "n_shirt_wcs2024_0_icon" | "n_shirt_wcs2024championshipshirt-blue_0_icon" | "n_shirt_wcs2024championshipshirt-white_0_icon" | "n_shirt_wcs2024paiditems_0_icon" | "n_shirt_wcs2024winnersitems_0_icon" | "n_shirt_wcs2025_0_icon" | "n_shirt_wcs2025anaheim-white_0_icon" | "n_shirt_wcs2025anaheim-yellow_0_icon" | "n_shirt_wcs2025paiditems_0_icon" | "n_shirt_wcs2025winnersitems_0_icon" | "n_shirt_wcsyokohama_0_icon" | "n_shirt_whitecoat_0_icon" | "n_shirt_wintersweater2023_0_icon" | "n_shirt_yveltaljacket_icon" | "n_shirt_zacostume_a_0_icon" | "n_shirt_zacostume_b_0_icon" | "n_shirt_zoruaonesie_0_icon" | "n_shirt_zygarde100items_0_icon" | "n_shoes_6thanniversary_a_0_icon" | "n_shoes_6thanniversary_b_0_icon" | "n_shoes_acetrainerbw_a_0_icon" | "n_shoes_acetrainerbw_b_0_icon" | "n_shoes_acetrainersm_a_0_icon" | "n_shoes_acetrainersm_b_0_icon" | "n_shoes_allister_0_icon" | "n_shoes_animegou_0_icon" | "n_shoes_backpacker_a_0_icon" | "n_shoes_backpacker_b_0_icon" | "n_shoes_battlegirl_0_icon" | "n_shoes_blacephalon_0_icon" | "n_shoes_brock_0_icon" | "n_shoes_bwn_0_icon" | "n_shoes_carbink_0_icon" | "n_shoes_clay_0_icon" | "n_shoes_clemont_0_icon" | "n_shoes_coolboots_0_icon" | "n_shoes_dedenneitems_0_icon" | "n_shoes_default_a_0_icon" | "n_shoes_default_a_1_icon" | "n_shoes_default_a_2_icon" | "n_shoes_default_a_3_icon" | "n_shoes_default_a_4_icon" | "n_shoes_default_a_5_icon" | "n_shoes_default_a_6_icon" | "n_shoes_default_b_0_icon" | "n_shoes_default_b_1_icon" | "n_shoes_default_b_2_icon" | "n_shoes_default_b_3_icon" | "n_shoes_default_b_4_icon" | "n_shoes_default_b_5_icon" | "n_shoes_default_b_6_icon" | "n_shoes_defaultnew_0_icon" | "n_shoes_delibird_0_icon" | "n_shoes_dp_a_0_icon" | "n_shoes_dp_b_0_icon" | "n_shoes_elesa_a_0_icon" | "n_shoes_elesa_b_0_icon" | "n_shoes_empty_0_icon" | "n_shoes_eternatussuit_0_icon" | "n_shoes_fashionweek2022_0_icon" | "n_shoes_fisher_0_icon" | "n_shoes_frlg_a_0_icon" | "n_shoes_frlg_b_0_icon" | "n_shoes_fw2022_0_icon" | "n_shoes_geeta_0_icon" | "n_shoes_giovanni_a_0_icon" | "n_shoes_giovanni_b_0_icon" | "n_shoes_gladion_0_icon" | "n_shoes_gothitelleitems_0_icon" | "n_shoes_green_a_0_icon" | "n_shoes_green_b_0_icon" | "n_shoes_greenpikavee_0_icon" | "n_shoes_grimsley_0_icon" | "n_shoes_grusha_0_icon" | "n_shoes_gymleader_0_icon" | "n_shoes_gymleader_1_icon" | "n_shoes_gymleader_2_icon" | "n_shoes_hala_0_icon" | "n_shoes_hgss_a_0_icon" | "n_shoes_hgss_b_0_icon" | "n_shoes_ingo_0_icon" | "n_shoes_jogger_0_icon" | "n_shoes_korrina_0_icon" | "n_shoes_ladiamondoutfit_a_0_icon" | "n_shoes_ladiamondoutfit_b_0_icon" | "n_shoes_lana_0_icon" | "n_shoes_lapearloutfit_a_0_icon" | "n_shoes_lapearloutfit_b_0_icon" | "n_shoes_legendofarceus_a_0_icon" | "n_shoes_legendofarceus_b_0_icon" | "n_shoes_loosepants_0_icon" | "n_shoes_loosepants_1_icon" | "n_shoes_loosepants_2_icon" | "n_shoes_loosepants_3_icon" | "n_shoes_luvdiscpack_0_icon" | "n_shoes_lvl71-cyberkicks_0_icon" | "n_shoes_lysandre_0_icon" | "n_shoes_megalopunnyitems_0_icon" | "n_shoes_melmetalshoes_0_icon" | "n_shoes_mewtwo_0_icon" | "n_shoes_misty_0_icon" | "n_shoes_mustard_0_icon" | "n_shoes_necrozmaitems_0_icon" | "n_shoes_newyear2022_0_icon" | "n_shoes_nike2021_0_icon" | "n_shoes_oras_a_0_icon" | "n_shoes_oras_b_0_icon" | "n_shoes_pajamas2022_0_icon" | "n_shoes_pajamas2022_1_icon" | "n_shoes_palmer_0_icon" | "n_shoes_pikachuathletic_icon" | "n_shoes_pikachufan_0_icon" | "n_shoes_pikachulibre_0_icon" | "n_shoes_pokeballitems-basic_0_icon" | "n_shoes_pokeballitems-great_0_icon" | "n_shoes_pokeballitems-ultra_0_icon" | "n_shoes_profwillowoutfit_0_icon" | "n_shoes_regiicejersies_0_icon" | "n_shoes_regirockjersies_0_icon" | "n_shoes_registeeljersies_0_icon" | "n_shoes_reuniclusitems_0_icon" | "n_shoes_ruinmaniac_a_0_icon" | "n_shoes_ruinmaniac_b_0_icon" | "n_shoes_s19gbl_0_icon" | "n_shoes_sandals_0_icon" | "n_shoes_sandals_1_icon" | "n_shoes_sandals_2_icon" | "n_shoes_sizzlipedeboots_0_icon" | "n_shoes_solgaleoitems_0_icon" | "n_shoes_ss_a_0_icon" | "n_shoes_ss_b_0_icon" | "n_shoes_steven_0_icon" | "n_shoes_stevenfirst_0_icon" | "n_shoes_svcostumescarletschool_0_icon" | "n_shoes_svcostumevioletschool_0_icon" | "n_shoes_svdlc1_0_icon" | "n_shoes_svdlc2spring_0_icon" | "n_shoes_swshdlc2costume_0_icon" | "n_shoes_swshdlccostume_0_icon" | "n_shoes_swshuniformdark_0_icon" | "n_shoes_swshuniformdefault_0_icon" | "n_shoes_swshuniformdragon_0_icon" | "n_shoes_sylveonitems_0_icon" | "n_shoes_tandemausitems_0_icon" | "n_shoes_teamaqua_0_icon" | "n_shoes_teamblanche_a_0_icon" | "n_shoes_teamblanche_b_0_icon" | "n_shoes_teamcandela_a_0_icon" | "n_shoes_teamcandela_b_0_icon" | "n_shoes_teammagma_a_0_icon" | "n_shoes_teammagma_b_0_icon" | "n_shoes_teamrocket_a_0_icon" | "n_shoes_teamrocket_a_1_icon" | "n_shoes_teamrocket_b_0_icon" | "n_shoes_teamrocket_b_1_icon" | "n_shoes_teamskull_a_0_icon" | "n_shoes_teamskull_b_0_icon" | "n_shoes_teamspark_a_0_icon" | "n_shoes_teamspark_b_0_icon" | "n_shoes_teamyellgrunts_0_icon" | "n_shoes_ultra_a_0_icon" | "n_shoes_ultra_b_0_icon" | "n_shoes_ultrareconsquad_0_icon" | "n_shoes_veterantrainerxy_a_0_icon" | "n_shoes_veterantrainerxy_b_0_icon" | "n_shoes_wcs2022winnersitems_0_icon" | "n_shoes_wcs2023winnersitems_0_icon" | "n_shoes_wcs2024winnersitems_0_icon" | "n_shoes_winterboots_0_icon" | "n_shoes_winterboots_1_icon" | "n_shoes_winterboots_2_icon" | "n_shoes_winterboots_3_icon" | "n_shoes_winterboots2023_0_icon" | "n_shoes_zacostume_a_0_icon" | "n_shoes_zacostume_b_0_icon" | "n_socks_default_a_0_icon" | "n_socks_default_a_1_icon" | "n_socks_default_a_2_icon" | "n_socks_default_b_0_icon" | "n_socks_default_b_1_icon" | "n_socks_default_b_2_icon" | "n_socks_default_b_3_icon" | "n_socks_empty_0_icon" | "n_socks_fw2022_a_0_icon" | "n_socks_fw2022_b_0_icon" | "n_socks_hgss_0_icon" | "n_socks_sneakersocks_0_icon" | "n_socks_sneakersocks_1_icon" | "n_socks_sollunaitems_0_icon" | "n_socks_swshuniformdefault_0_icon" | "n_socks_swshuniformdragon_0_icon" | "n_socks_teamaqua_0_icon" | "n_socks_thighhighs_0_icon" | "pose_01" | "pose_02" | "pose_03" | "pose_04" | "pose_05" | "pose_06" | "pose_07" | "pose_08" | "pose_09" | "pose_10" | "pose_11" | "pose_12" | "pose_13" | "pose_14" | "pose_15" | "pose_16" | "pose_17" | "pose_18" | "pose_19" | "pose_20" | "pose_21" | "pose_22" | "pose_23" | "pose_24" | "pose_25" | "pose_26" | "pose_27" | "pose_28" | "pose_29" | "pose_30" | "pose_31" | "pose_32" | "pose_33" | "pose_34" | "pose_35" | "pose_36" | "pose_37" | "pose_38" | "pose_40" | "pose_41" | "pose_42" | "pose_43" | "pose_44" | "pose_45" | "pose_46" | "pose_47" | "pose_48" | "pose_49" | "pose_50" | "pose_51" | "pose_52" | "pose_53" | "pose_54" | "pose_55" | "pose_56" | "pose_57" | "pose_58" | "pose_59" | "pose_60" | "pose_61" | "pose_62" | "pose_63" | "pose_64" | "set_6thanniversary_a" | "set_6thanniversary_b" | "set_7thanniversary_a" | "set_7thanniversary_b" | "set_acetrainerbw_a" | "set_acetrainerbw_b" | "set_acetrainersm_a" | "set_acetrainersm_b" | "set_allister_0" | "set_animegou_a" | "set_animegou_b" | "set_applinitems" | "set_backpacker_a" | "set_backpacker_b" | "set_battlegirl_0_a" | "set_bea_a" | "set_bea_b" | "set_bounsweetitems_a" | "set_bounsweetitems_b" | "set_boxingoutfit_a" | "set_boxingoutfit_b" | "set_brock_b" | "set_bwn_a" | "set_bwn_b" | "set_casual_0_a" | "set_casual_0_b" | "set_casual_1_a" | "set_casual_1_b" | "set_clay_a" | "set_clay_b" | "set_clemont" | "set_cofagrigus_a" | "set_cofagrigus_b" | "set_cosmog_a" | "set_cosmog_b" | "set_dayofthedead_a" | "set_dayofthedead_b" | "set_dedenneitems_a" | "set_dedenneitems_b" | "set_delibird_a" | "set_delibird_b" | "set_denimfashionweek2023_b" | "set_detectivepikachu_a" | "set_detectivepikachu_b" | "set_divingsuit_a" | "set_divingsuit_b" | "set_dp_a" | "set_dp_b" | "set_dusclopsmummy_a" | "set_dusclopsmummy_b" | "set_elesa_a" | "set_elesa_b" | "set_eternatussuit_0" | "set_fashionweek2022_a" | "set_fashionweek2022_b" | "set_fashionweek2025_0" | "set_fisher_0_b" | "set_flabebepack_a" | "set_flabebepack_b" | "set_fragment_0_a" | "set_fragment_0_b" | "set_frlg_0_a" | "set_frlg_0_b" | "set_fw2022_a" | "set_fw2022_b" | "set_galarfarfetchditems_a" | "set_galarfarfetchditems_b" | "set_geeta_a" | "set_geeta_b" | "set_genderlessskirt_a" | "set_genderlessskirt_b" | "set_genesecteventitem_a" | "set_genesecteventitem_b" | "set_gengar_0_a" | "set_gengar_0_b" | "set_gimmighoulitems_a" | "set_gimmighoulitems_b" | "set_giovanni_a" | "set_giovanni_b" | "set_giratinaitems_b" | "set_gladion_a" | "set_gladion_b" | "set_goteamrocketarlo_a" | "set_goteamrocketarlo_b" | "set_gothitelleitems_b" | "set_green_a" | "set_green_b" | "set_greencoat_a" | "set_greencoat_b" | "set_grimsley_0" | "set_grusha" | "set_guzma_a" | "set_guzma_b" | "set_gymleader_0_a" | "set_gymleader_0_b" | "set_gymleader_1_a" | "set_gymleader_1_b" | "set_gymleader_2_a" | "set_gymleader_2_b" | "set_hala_a" | "set_halloween2024_0" | "set_hgss_0_a" | "set_hgss_0_b" | "set_holiday2022santacostumes_a" | "set_holiday2022santacostumes_b" | "set_hoopa_a" | "set_hoopa_b" | "set_ingo_b" | "set_jogger_0_b" | "set_korrina_a" | "set_korrina_b" | "set_ladiamondoutfit_a" | "set_ladiamondoutfit_b" | "set_lana_0" | "set_lapearloutfit_a" | "set_lapearloutfit_b" | "set_lasecuritycorps_a" | "set_lasecuritycorps_b" | "set_legendofarceus_a" | "set_legendofarceus_b" | "set_loose-fitting_0" | "set_loose-fitting_1" | "set_lunalaitems_a" | "set_lunalaitems_b" | "set_luvdiscpack_a" | "set_luvdiscpack_b" | "set_lvl50_0_a" | "set_lvl50_0_b" | "set_lvl50_1_a" | "set_lvl50_1_b" | "set_lysandre_a" | "set_lysandre_b" | "set_megalopunnyitems_a" | "set_megalopunnyitems_b" | "set_megarayquaza_a" | "set_megarayquaza_b" | "set_melmetal_jacket_a" | "set_melmetal_jacket_b" | "set_melmetal_vest_a" | "set_melmetal_vest_b" | "set_meltan_a" | "set_meltan_b" | "set_mewtwo_a" | "set_mewtwo_b" | "set_mimikyu_a" | "set_mimikyu_b" | "set_misty_a" | "set_movie2020_a" | "set_movie2020_b" | "set_munnapack_0_a" | "set_munnapack_0_b" | "set_munnapack_1_a" | "set_munnapack_1_b" | "set_mustard_0" | "set_n_default-new" | "set_naganadelaitems_0" | "set_necrozmaitems_0" | "set_newyear_a" | "set_newyear_b" | "set_obstagoonitems_a" | "set_obstagoonitems_b" | "set_oras_a" | "set_oras_b" | "set_pajamas2022_0_a" | "set_pajamas2022_0_b" | "set_pajamas2022_1_a" | "set_pajamas2022_1_b" | "set_palmer_a" | "set_palmer_b" | "set_pikachufan_0_a" | "set_pikachufan_0_b" | "set_pikachulibre_a" | "set_pikachulibre_b" | "set_pkmnhoodie001_a" | "set_pkmnhoodie001_b" | "set_pkmnhoodie004_a" | "set_pkmnhoodie004_b" | "set_pkmnhoodie007_a" | "set_pkmnhoodie007_b" | "set_profwillowoutfit_a" | "set_profwillowoutfit_b" | "set_pumpkabooitems_a" | "set_pumpkabooitems_b" | "set_regiicejersies_a" | "set_regiicejersies_b" | "set_regirockjersies_a" | "set_regirockjersies_b" | "set_registeeljersies_a" | "set_registeeljersies_b" | "set_reuniclusitems_a" | "set_ruinmaniac_a" | "set_ruinmaniac_b" | "set_s19gbl" | "set_s22gbl_0" | "set_shaymin_land_a" | "set_shaymin_land_b" | "set_shaymin_sky_a" | "set_shaymin_sky_b" | "set_slowpoketailshirts_a" | "set_slowpoketailshirts_b" | "set_solgaleoitems_a" | "set_solgaleoitems_b" | "set_ss_a" | "set_ss_b" | "set_steven_a" | "set_steven_b" | "set_stevenfirst_a" | "set_stevenfirst_b" | "set_svcostumescarletschool_a" | "set_svcostumescarletschool_b" | "set_svcostumevioletschool_a" | "set_svcostumevioletschool_b" | "set_svdlc_a" | "set_svdlc_b" | "set_svdlc2fall_b" | "set_svdlc2spring_a" | "set_swshdlc2costume_a" | "set_swshdlc2costume_b" | "set_swshdlccostume_a" | "set_swshdlccostume_b" | "set_swshuniformchampion_a" | "set_swshuniformchampion_b" | "set_swshuniformdark_a" | "set_swshuniformdark_b" | "set_swshuniformdefault_a" | "set_swshuniformdefault_b" | "set_swshuniformdragon_a" | "set_swshuniformdragon_b" | "set_sylveonitems_a" | "set_sylveonitems_b" | "set_tandemausitems_0" | "set_tcgcollabtshirtandcap_a" | "set_tcgcollabtshirtandcap_b" | "set_teamaqua_a" | "set_teamaqua_b" | "set_teamblanche_a" | "set_teamblanche_b" | "set_teamcandela_a" | "set_teamcandela_b" | "set_teammagma_a" | "set_teammagma_b" | "set_teamrocket_0_a" | "set_teamrocket_0_b" | "set_teamrocket_1_a" | "set_teamrocket_1_b" | "set_teamskull_a" | "set_teamskull_b" | "set_teamspark_a" | "set_teamspark_b" | "set_teamyellgrunts_a_0" | "set_teamyellgrunts_b_0" | "set_ultra_0_a" | "set_ultra_0_b" | "set_ultrareconsquad_a" | "set_ultrareconsquad_b" | "set_ultrareconsquadb_a" | "set_veterantrainerxy_a" | "set_veterantrainerxy_b" | "set_wcs2022winnersitems_a" | "set_wcs2022winnersitems_b" | "set_wcs2024paiditems_0" | "set_wcs2024winnersitems_0" | "set_wcs2025winnersitems_0" | "set_winter2023_a" | "set_zacostume_a" | "set_zacostume_b";
-
-export type AvatarItemDisplayMBackpackEggbackpack0 = AvatarItemDisplay<"N_DISPLAY_m_backpack_eggbackpack_0">;
-export type AvatarItemDisplayMBackpackEggbackpack1 = AvatarItemDisplay<"N_DISPLAY_m_backpack_eggbackpack_1">;
-export type AvatarItemDisplayMBackpackEggbackpack2 = AvatarItemDisplay<"N_DISPLAY_m_backpack_eggbackpack_2">;
-export type AvatarItemDisplayNBackpackAlolaitemslittenbp0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_alolaitemslittenbp_0">;
-export type AvatarItemDisplayNBackpackAlolaitemspoppliobp0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_alolaitemspoppliobp_0">;
-export type AvatarItemDisplayNBackpackAlolaitemsrowletbp0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_alolaitemsrowletbp_0">;
-export type AvatarItemDisplayNBackpackAnimegou0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_animegou_0">;
-export type AvatarItemDisplayNBackpackBackpacker0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_backpacker_0">;
-export type AvatarItemDisplayNBackpackBlackkyuremitem0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_blackkyuremitem_0">;
-export type AvatarItemDisplayNBackpackCharjabug0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_charjabug_0">;
-export type AvatarItemDisplayNBackpackClemont0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_clemont_0">;
-export type AvatarItemDisplayNBackpackCombeebackpack0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_combeebackpack_0">;
-export type AvatarItemDisplayNBackpackCombeebackpack1 = AvatarItemDisplay<"N_DISPLAY_n_backpack_combeebackpack_1">;
-export type AvatarItemDisplayNBackpackCute0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_cute_0">;
-export type AvatarItemDisplayNBackpackDedenneitems0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_dedenneitems_0">;
-export type AvatarItemDisplayNBackpackDefaultNew0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_default-new_0">;
-export type AvatarItemDisplayNBackpackDefaultA0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_default_a_0">;
-export type AvatarItemDisplayNBackpackDefaultA1 = AvatarItemDisplay<"N_DISPLAY_n_backpack_default_a_1">;
-export type AvatarItemDisplayNBackpackDefaultA2 = AvatarItemDisplay<"N_DISPLAY_n_backpack_default_a_2">;
-export type AvatarItemDisplayNBackpackDefaultA3 = AvatarItemDisplay<"N_DISPLAY_n_backpack_default_a_3">;
-export type AvatarItemDisplayNBackpackDefaultB0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_default_b_0">;
-export type AvatarItemDisplayNBackpackDefaultB1 = AvatarItemDisplay<"N_DISPLAY_n_backpack_default_b_1">;
-export type AvatarItemDisplayNBackpackDefaultB2 = AvatarItemDisplay<"N_DISPLAY_n_backpack_default_b_2">;
-export type AvatarItemDisplayNBackpackDefaultB3 = AvatarItemDisplay<"N_DISPLAY_n_backpack_default_b_3">;
-export type AvatarItemDisplayNBackpackDefaultB4 = AvatarItemDisplay<"N_DISPLAY_n_backpack_default_b_4">;
-export type AvatarItemDisplayNBackpackDefaultB5 = AvatarItemDisplay<"N_DISPLAY_n_backpack_default_b_5">;
-export type AvatarItemDisplayNBackpackDp0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_dp_0">;
-export type AvatarItemDisplayNBackpackEggIncubator0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_egg-incubator_0">;
-export type AvatarItemDisplayNBackpackEggbackpack0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_eggbackpack_0">;
-export type AvatarItemDisplayNBackpackEggbackpack1 = AvatarItemDisplay<"N_DISPLAY_n_backpack_eggbackpack_1">;
-export type AvatarItemDisplayNBackpackEggbackpack2 = AvatarItemDisplay<"N_DISPLAY_n_backpack_eggbackpack_2">;
-export type AvatarItemDisplayNBackpackFrlgA0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_frlg_a_0">;
-export type AvatarItemDisplayNBackpackFrlgB0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_frlg_b_0">;
-export type AvatarItemDisplayNBackpackGenesecteventitem0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_genesecteventitem_0">;
-export type AvatarItemDisplayNBackpackGengar0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_gengar_0">;
-export type AvatarItemDisplayNBackpackGiratinaitems0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_giratinaitems_0">;
-export type AvatarItemDisplayNBackpackGoruckgengar0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_goruckgengar_0">;
-export type AvatarItemDisplayNBackpackGoruckpikachu0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_goruckpikachu_0">;
-export type AvatarItemDisplayNBackpackGoruckwobbuffet0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_goruckwobbuffet_0">;
-export type AvatarItemDisplayNBackpackGreenpikavee0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_greenpikavee_0">;
-export type AvatarItemDisplayNBackpackGuccibackpack0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_guccibackpack_0">;
-export type AvatarItemDisplayNBackpackGuitarcasebackpack0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_guitarcasebackpack_0">;
-export type AvatarItemDisplayNBackpackHgssA0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_hgss_a_0">;
-export type AvatarItemDisplayNBackpackHgssB0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_hgss_b_0">;
-export type AvatarItemDisplayNBackpackHououbackpack0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_hououbackpack_0">;
-export type AvatarItemDisplayNBackpackKakureonpouch0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_kakureonpouch_0">;
-export type AvatarItemDisplayNBackpackKomala0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_komala_0">;
-export type AvatarItemDisplayNBackpackLongchampbp0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_longchampbp_0">;
-export type AvatarItemDisplayNBackpackLunalaitems0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_lunalaitems_0">;
-export type AvatarItemDisplayNBackpackLunarnewyr0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_lunarnewyr_0">;
-export type AvatarItemDisplayNBackpackMimikyubp0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_mimikyubp_0">;
-export type AvatarItemDisplayNBackpackMovie20200 = AvatarItemDisplay<"N_DISPLAY_n_backpack_movie2020_0">;
-export type AvatarItemDisplayNBackpackNaganadelwings0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_naganadelwings_0">;
-export type AvatarItemDisplayNBackpackNike20210 = AvatarItemDisplay<"N_DISPLAY_n_backpack_nike2021_0">;
-export type AvatarItemDisplayNBackpackPamobackpack0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_pamobackpack_0">;
-export type AvatarItemDisplayNBackpackPinap0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_pinap_0">;
-export type AvatarItemDisplayNBackpackPkmnhoodie0010 = AvatarItemDisplay<"N_DISPLAY_n_backpack_pkmnhoodie001_0">;
-export type AvatarItemDisplayNBackpackPkmnhoodie0040 = AvatarItemDisplay<"N_DISPLAY_n_backpack_pkmnhoodie004_0">;
-export type AvatarItemDisplayNBackpackPkmnhoodie0070 = AvatarItemDisplay<"N_DISPLAY_n_backpack_pkmnhoodie007_0">;
-export type AvatarItemDisplayNBackpackRuinmaniac0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_ruinmaniac_0">;
-export type AvatarItemDisplayNBackpackSnapcamera0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_snapcamera_0">;
-export type AvatarItemDisplayNBackpackSsA0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_ss_a_0">;
-export type AvatarItemDisplayNBackpackSsB0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_ss_b_0">;
-export type AvatarItemDisplayNBackpackSvcostumescarletschool0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_svcostumescarletschool_0">;
-export type AvatarItemDisplayNBackpackSvcostumevioletschool0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_svcostumevioletschool_0">;
-export type AvatarItemDisplayNBackpackSvdlc10 = AvatarItemDisplay<"N_DISPLAY_n_backpack_svdlc1_0">;
-export type AvatarItemDisplayNBackpackSvdlc2spring0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_svdlc2spring_0">;
-export type AvatarItemDisplayNBackpackSwshdlc2costumeA0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_swshdlc2costume_a_0">;
-export type AvatarItemDisplayNBackpackSwshdlc2costumeB0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_swshdlc2costume_b_0">;
-export type AvatarItemDisplayNBackpackSwshdlccostumeA0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_swshdlccostume_a_0">;
-export type AvatarItemDisplayNBackpackSwshdlccostumeB0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_swshdlccostume_b_0">;
-export type AvatarItemDisplayNBackpackTatsugiribackpackCurly0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_tatsugiribackpack-curly_0">;
-export type AvatarItemDisplayNBackpackTatsugiribackpackDroopy0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_tatsugiribackpack-droopy_0">;
-export type AvatarItemDisplayNBackpackTatsugiribackpackStretchy0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_tatsugiribackpack-stretchy_0">;
-export type AvatarItemDisplayNBackpackTogepibackpack0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_togepibackpack_0">;
-export type AvatarItemDisplayNBackpackUltraA0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_ultra_a_0">;
-export type AvatarItemDisplayNBackpackUltraB0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_ultra_b_0">;
-export type AvatarItemDisplayNBackpackUnequip0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_unequip_0">;
-export type AvatarItemDisplayNBackpackVerizon20210 = AvatarItemDisplay<"N_DISPLAY_n_backpack_verizon2021_0">;
-export type AvatarItemDisplayNBackpackWhitekyuremitem0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_whitekyuremitem_0">;
-export type AvatarItemDisplayNBackpackZubatbp0 = AvatarItemDisplay<"N_DISPLAY_n_backpack_zubatbp_0">;
-export type AvatarItemDisplayNBeltAcetrainerbw0 = AvatarItemDisplay<"N_DISPLAY_n_belt_acetrainerbw_0">;
-export type AvatarItemDisplayNBeltDefaultA0 = AvatarItemDisplay<"N_DISPLAY_n_belt_default_a_0">;
-export type AvatarItemDisplayNBeltDefaultA1 = AvatarItemDisplay<"N_DISPLAY_n_belt_default_a_1">;
-export type AvatarItemDisplayNBeltDefaultA2 = AvatarItemDisplay<"N_DISPLAY_n_belt_default_a_2">;
-export type AvatarItemDisplayNBeltDefaultA3 = AvatarItemDisplay<"N_DISPLAY_n_belt_default_a_3">;
-export type AvatarItemDisplayNBeltDefaultA4 = AvatarItemDisplay<"N_DISPLAY_n_belt_default_a_4">;
-export type AvatarItemDisplayNBeltDefaultA5 = AvatarItemDisplay<"N_DISPLAY_n_belt_default_a_5">;
-export type AvatarItemDisplayNBeltDefaultA6 = AvatarItemDisplay<"N_DISPLAY_n_belt_default_a_6">;
-export type AvatarItemDisplayNBeltDefaultA7 = AvatarItemDisplay<"N_DISPLAY_n_belt_default_a_7">;
-export type AvatarItemDisplayNBeltDefaultA8 = AvatarItemDisplay<"N_DISPLAY_n_belt_default_a_8">;
-export type AvatarItemDisplayNBeltSimple0 = AvatarItemDisplay<"N_DISPLAY_n_belt_simple_0">;
-export type AvatarItemDisplayNBeltSimple1 = AvatarItemDisplay<"N_DISPLAY_n_belt_simple_1">;
-export type AvatarItemDisplayNBeltSimple2 = AvatarItemDisplay<"N_DISPLAY_n_belt_simple_2">;
-export type AvatarItemDisplayNBeltSimple3 = AvatarItemDisplay<"N_DISPLAY_n_belt_simple_3">;
-export type AvatarItemDisplayNBeltTeamrocket0 = AvatarItemDisplay<"N_DISPLAY_n_belt_teamrocket_0">;
-export type AvatarItemDisplayNBeltTeamrocket1 = AvatarItemDisplay<"N_DISPLAY_n_belt_teamrocket_1">;
-export type AvatarItemDisplayNBeltUnequip0 = AvatarItemDisplay<"N_DISPLAY_n_belt_unequip_0">;
-export type AvatarItemDisplayNFace3dmask0 = AvatarItemDisplay<"N_DISPLAY_n_face_3dmask_0">;
-export type AvatarItemDisplayNFace3dmask1 = AvatarItemDisplay<"N_DISPLAY_n_face_3dmask_1">;
-export type AvatarItemDisplayNFace3dmask2 = AvatarItemDisplay<"N_DISPLAY_n_face_3dmask_2">;
-export type AvatarItemDisplayNFaceAllister0 = AvatarItemDisplay<"N_DISPLAY_n_face_allister_0">;
-export type AvatarItemDisplayNFaceBanettemask0 = AvatarItemDisplay<"N_DISPLAY_n_face_banettemask_0">;
-export type AvatarItemDisplayNFaceDayofthedead0 = AvatarItemDisplay<"N_DISPLAY_n_face_dayofthedead_0">;
-export type AvatarItemDisplayNFaceDefaultmask0 = AvatarItemDisplay<"N_DISPLAY_n_face_defaultmask_0">;
-export type AvatarItemDisplayNFaceFacestickerghostpika0 = AvatarItemDisplay<"N_DISPLAY_n_face_facestickerghostpika_0">;
-export type AvatarItemDisplayNFaceFacestickerpikachu0 = AvatarItemDisplay<"N_DISPLAY_n_face_facestickerpikachu_0">;
-export type AvatarItemDisplayNFaceFacestickerpokeball0 = AvatarItemDisplay<"N_DISPLAY_n_face_facestickerpokeball_0">;
-export type AvatarItemDisplayNFaceFestofcolors0 = AvatarItemDisplay<"N_DISPLAY_n_face_festofcolors_0">;
-export type AvatarItemDisplayNFaceFestofcolors1 = AvatarItemDisplay<"N_DISPLAY_n_face_festofcolors_1">;
-export type AvatarItemDisplayNFaceFestofcolors2 = AvatarItemDisplay<"N_DISPLAY_n_face_festofcolors_2">;
-export type AvatarItemDisplayNFaceGracidea0 = AvatarItemDisplay<"N_DISPLAY_n_face_gracidea_0">;
-export type AvatarItemDisplayNFaceHoliday2022santacostumes0 = AvatarItemDisplay<"N_DISPLAY_n_face_holiday2022santacostumes_0">;
-export type AvatarItemDisplayNFacePikachumask0 = AvatarItemDisplay<"N_DISPLAY_n_face_pikachumask_0">;
-export type AvatarItemDisplayNFaceSableyemask0 = AvatarItemDisplay<"N_DISPLAY_n_face_sableyemask_0">;
-export type AvatarItemDisplayNFaceTeamskull0 = AvatarItemDisplay<"N_DISPLAY_n_face_teamskull_0">;
-export type AvatarItemDisplayNFaceToxelmask0 = AvatarItemDisplay<"N_DISPLAY_n_face_toxelmask_0">;
-export type AvatarItemDisplayNFaceUnequip0 = AvatarItemDisplay<"N_DISPLAY_n_face_unequip_0">;
-export type AvatarItemDisplayNFaceVerizon2020mask0 = AvatarItemDisplay<"N_DISPLAY_n_face_verizon2020mask_0">;
-export type AvatarItemDisplayNGlasses3d0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_3d_0">;
-export type AvatarItemDisplayNGlassesClemont0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_clemont_0">;
-export type AvatarItemDisplayNGlassesCutieflysleepmask0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_cutieflysleepmask_0">;
-export type AvatarItemDisplayNGlassesDittoeyewear0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_dittoeyewear_0">;
-export type AvatarItemDisplayNGlassesDivingsuit0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_divingsuit_0">;
-export type AvatarItemDisplayNGlassesDrpikachu0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_drpikachu_0">;
-export type AvatarItemDisplayNGlassesFrillishglasses0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_frillishglasses_0">;
-export type AvatarItemDisplayNGlassesFw20220 = AvatarItemDisplay<"N_DISPLAY_n_glasses_fw2022_0">;
-export type AvatarItemDisplayNGlassesGimmighoulitems0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_gimmighoulitems_0">;
-export type AvatarItemDisplayNGlassesGoteamrocketarlo0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_goteamrocketarlo_0">;
-export type AvatarItemDisplayNGlassesGrandoakglasses0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_grandoakglasses_0">;
-export type AvatarItemDisplayNGlassesJogger0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_jogger_0">;
-export type AvatarItemDisplayNGlassesLugiaglasses0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_lugiaglasses_0">;
-export type AvatarItemDisplayNGlassesLv40glasses0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_lv40glasses_0">;
-export type AvatarItemDisplayNGlassesLvl73Visorspecs0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_lvl73-visorspecs_0">;
-export type AvatarItemDisplayNGlassesMask0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_mask_0">;
-export type AvatarItemDisplayNGlassesMask1 = AvatarItemDisplay<"N_DISPLAY_n_glasses_mask_1">;
-export type AvatarItemDisplayNGlassesNecrozmaitems0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_necrozmaitems_0">;
-export type AvatarItemDisplayNGlassesNewyear20220 = AvatarItemDisplay<"N_DISPLAY_n_glasses_newyear2022_0">;
-export type AvatarItemDisplayNGlassesNewyearglasses20200 = AvatarItemDisplay<"N_DISPLAY_n_glasses_newyearglasses2020_0">;
-export type AvatarItemDisplayNGlassesNewyearglasses20210 = AvatarItemDisplay<"N_DISPLAY_n_glasses_newyearglasses2021_0">;
-export type AvatarItemDisplayNGlassesObstagoonitems0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_obstagoonitems_0">;
-export type AvatarItemDisplayNGlassesRoundsunglasses0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_roundsunglasses_0">;
-export type AvatarItemDisplayNGlassesTeardrop0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_teardrop_0">;
-export type AvatarItemDisplayNGlassesThick0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_thick_0">;
-export type AvatarItemDisplayNGlassesThick1 = AvatarItemDisplay<"N_DISPLAY_n_glasses_thick_1">;
-export type AvatarItemDisplayNGlassesThick2 = AvatarItemDisplay<"N_DISPLAY_n_glasses_thick_2">;
-export type AvatarItemDisplayNGlassesThick3 = AvatarItemDisplay<"N_DISPLAY_n_glasses_thick_3">;
-export type AvatarItemDisplayNGlassesThick4 = AvatarItemDisplay<"N_DISPLAY_n_glasses_thick_4">;
-export type AvatarItemDisplayNGlassesUnequip0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_unequip_0">;
-export type AvatarItemDisplayNGlassesWcs2024winnersitems0 = AvatarItemDisplay<"N_DISPLAY_n_glasses_wcs2024winnersitems_0">;
-export type AvatarItemDisplayNGlovesAcetrainersm0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_acetrainersm_0">;
-export type AvatarItemDisplayNGlovesAllister0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_allister_0">;
-export type AvatarItemDisplayNGlovesBattlegirl0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_battlegirl_0">;
-export type AvatarItemDisplayNGlovesBea0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_bea_0">;
-export type AvatarItemDisplayNGlovesBwn0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_bwn_0">;
-export type AvatarItemDisplayNGlovesDefaultNew0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_default-new_0">;
-export type AvatarItemDisplayNGlovesDefaultA0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_default_a_0">;
-export type AvatarItemDisplayNGlovesDefaultA1 = AvatarItemDisplay<"N_DISPLAY_n_gloves_default_a_1">;
-export type AvatarItemDisplayNGlovesDefaultA2 = AvatarItemDisplay<"N_DISPLAY_n_gloves_default_a_2">;
-export type AvatarItemDisplayNGlovesDefaultA3 = AvatarItemDisplay<"N_DISPLAY_n_gloves_default_a_3">;
-export type AvatarItemDisplayNGlovesDefaultB0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_default_b_0">;
-export type AvatarItemDisplayNGlovesDefaultB1 = AvatarItemDisplay<"N_DISPLAY_n_gloves_default_b_1">;
-export type AvatarItemDisplayNGlovesDefaultB2 = AvatarItemDisplay<"N_DISPLAY_n_gloves_default_b_2">;
-export type AvatarItemDisplayNGlovesDefaultB3 = AvatarItemDisplay<"N_DISPLAY_n_gloves_default_b_3">;
-export type AvatarItemDisplayNGlovesDelibird0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_delibird_0">;
-export type AvatarItemDisplayNGlovesDynamaxswsh0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_dynamaxswsh_0">;
-export type AvatarItemDisplayNGlovesFrlgA0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_frlg_a_0">;
-export type AvatarItemDisplayNGlovesFrlgB0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_frlg_b_0">;
-export type AvatarItemDisplayNGlovesGeeta0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_geeta_0">;
-export type AvatarItemDisplayNGlovesGiovanni0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_giovanni_0">;
-export type AvatarItemDisplayNGlovesGuzma0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_guzma_0">;
-export type AvatarItemDisplayNGlovesGymleaderA0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_gymleader_a_0">;
-export type AvatarItemDisplayNGlovesGymleaderB0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_gymleader_b_0">;
-export type AvatarItemDisplayNGlovesHoopabangle0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_hoopabangle_0">;
-export type AvatarItemDisplayNGlovesJogger0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_jogger_0">;
-export type AvatarItemDisplayNGlovesKorrina0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_korrina_0">;
-export type AvatarItemDisplayNGlovesLysandre0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_lysandre_0">;
-export type AvatarItemDisplayNGlovesMegabangle0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_megabangle_0">;
-export type AvatarItemDisplayNGlovesMegabangle1 = AvatarItemDisplay<"N_DISPLAY_n_gloves_megabangle_1">;
-export type AvatarItemDisplayNGlovesMegabangle2 = AvatarItemDisplay<"N_DISPLAY_n_gloves_megabangle_2">;
-export type AvatarItemDisplayNGlovesMegabangle3 = AvatarItemDisplay<"N_DISPLAY_n_gloves_megabangle_3">;
-export type AvatarItemDisplayNGlovesMegabangle4 = AvatarItemDisplay<"N_DISPLAY_n_gloves_megabangle_4">;
-export type AvatarItemDisplayNGlovesObstagoonitems0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_obstagoonitems_0">;
-export type AvatarItemDisplayNGlovesPalmer0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_palmer_0">;
-export type AvatarItemDisplayNGlovesProfwillowoutfit0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_profwillowoutfit_0">;
-export type AvatarItemDisplayNGlovesStevenfirst0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_stevenfirst_0">;
-export type AvatarItemDisplayNGlovesSvdlc2spring0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_svdlc2spring_0">;
-export type AvatarItemDisplayNGlovesSwshdlc2costume0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_swshdlc2costume_0">;
-export type AvatarItemDisplayNGlovesSwshdlccostume0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_swshdlccostume_0">;
-export type AvatarItemDisplayNGlovesSwshuniformchampion0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_swshuniformchampion_0">;
-export type AvatarItemDisplayNGlovesSwshuniformdark0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_swshuniformdark_0">;
-export type AvatarItemDisplayNGlovesSwshuniformdefault0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_swshuniformdefault_0">;
-export type AvatarItemDisplayNGlovesSwshuniformdragon0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_swshuniformdragon_0">;
-export type AvatarItemDisplayNGlovesTeamaquaA0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_teamaqua_a_0">;
-export type AvatarItemDisplayNGlovesTeamaquaB0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_teamaqua_b_0">;
-export type AvatarItemDisplayNGlovesTeammagma0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_teammagma_0">;
-export type AvatarItemDisplayNGlovesTeamrocket0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_teamrocket_0">;
-export type AvatarItemDisplayNGlovesTeamsparkA0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_teamspark_a_0">;
-export type AvatarItemDisplayNGlovesTeamsparkB0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_teamspark_b_0">;
-export type AvatarItemDisplayNGlovesTeamwristband0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_teamwristband_0">;
-export type AvatarItemDisplayNGlovesTeamwristband1 = AvatarItemDisplay<"N_DISPLAY_n_gloves_teamwristband_1">;
-export type AvatarItemDisplayNGlovesTeamwristband2 = AvatarItemDisplay<"N_DISPLAY_n_gloves_teamwristband_2">;
-export type AvatarItemDisplayNGlovesTeamwristband3 = AvatarItemDisplay<"N_DISPLAY_n_gloves_teamwristband_3">;
-export type AvatarItemDisplayNGlovesTeamyellgrunts0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_teamyellgrunts_0">;
-export type AvatarItemDisplayNGlovesUnequip0 = AvatarItemDisplay<"N_DISPLAY_n_gloves_unequip_0">;
-export type AvatarItemDisplayNGlovesWintergloves20230 = AvatarItemDisplay<"N_DISPLAY_n_gloves_wintergloves2023_0">;
-export type AvatarItemDisplayNGradientEye0 = AvatarItemDisplay<"N_DISPLAY_n_gradient_eye_0">;
-export type AvatarItemDisplayNGradientEye1 = AvatarItemDisplay<"N_DISPLAY_n_gradient_eye_1">;
-export type AvatarItemDisplayNGradientEye10 = AvatarItemDisplay<"N_DISPLAY_n_gradient_eye_10">;
-export type AvatarItemDisplayNGradientEye11 = AvatarItemDisplay<"N_DISPLAY_n_gradient_eye_11">;
-export type AvatarItemDisplayNGradientEye12 = AvatarItemDisplay<"N_DISPLAY_n_gradient_eye_12">;
-export type AvatarItemDisplayNGradientEye13 = AvatarItemDisplay<"N_DISPLAY_n_gradient_eye_13">;
-export type AvatarItemDisplayNGradientEye14 = AvatarItemDisplay<"N_DISPLAY_n_gradient_eye_14">;
-export type AvatarItemDisplayNGradientEye15 = AvatarItemDisplay<"N_DISPLAY_n_gradient_eye_15">;
-export type AvatarItemDisplayNGradientEye16 = AvatarItemDisplay<"N_DISPLAY_n_gradient_eye_16">;
-export type AvatarItemDisplayNGradientEye17 = AvatarItemDisplay<"N_DISPLAY_n_gradient_eye_17">;
-export type AvatarItemDisplayNGradientEye18 = AvatarItemDisplay<"N_DISPLAY_n_gradient_eye_18">;
-export type AvatarItemDisplayNGradientEye19 = AvatarItemDisplay<"N_DISPLAY_n_gradient_eye_19">;
-export type AvatarItemDisplayNGradientEye2 = AvatarItemDisplay<"N_DISPLAY_n_gradient_eye_2">;
-export type AvatarItemDisplayNGradientEye3 = AvatarItemDisplay<"N_DISPLAY_n_gradient_eye_3">;
-export type AvatarItemDisplayNGradientEye4 = AvatarItemDisplay<"N_DISPLAY_n_gradient_eye_4">;
-export type AvatarItemDisplayNGradientEye5 = AvatarItemDisplay<"N_DISPLAY_n_gradient_eye_5">;
-export type AvatarItemDisplayNGradientEye6 = AvatarItemDisplay<"N_DISPLAY_n_gradient_eye_6">;
-export type AvatarItemDisplayNGradientEye7 = AvatarItemDisplay<"N_DISPLAY_n_gradient_eye_7">;
-export type AvatarItemDisplayNGradientEye8 = AvatarItemDisplay<"N_DISPLAY_n_gradient_eye_8">;
-export type AvatarItemDisplayNGradientEye9 = AvatarItemDisplay<"N_DISPLAY_n_gradient_eye_9">;
-export type AvatarItemDisplayNGradientHair0 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_0">;
-export type AvatarItemDisplayNGradientHair1 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_1">;
-export type AvatarItemDisplayNGradientHair10 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_10">;
-export type AvatarItemDisplayNGradientHair11 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_11">;
-export type AvatarItemDisplayNGradientHair12 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_12">;
-export type AvatarItemDisplayNGradientHair13 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_13">;
-export type AvatarItemDisplayNGradientHair14 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_14">;
-export type AvatarItemDisplayNGradientHair15 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_15">;
-export type AvatarItemDisplayNGradientHair16 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_16">;
-export type AvatarItemDisplayNGradientHair17 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_17">;
-export type AvatarItemDisplayNGradientHair18 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_18">;
-export type AvatarItemDisplayNGradientHair19 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_19">;
-export type AvatarItemDisplayNGradientHair2 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_2">;
-export type AvatarItemDisplayNGradientHair20 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_20">;
-export type AvatarItemDisplayNGradientHair21 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_21">;
-export type AvatarItemDisplayNGradientHair22 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_22">;
-export type AvatarItemDisplayNGradientHair23 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_23">;
-export type AvatarItemDisplayNGradientHair24 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_24">;
-export type AvatarItemDisplayNGradientHair25 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_25">;
-export type AvatarItemDisplayNGradientHair26 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_26">;
-export type AvatarItemDisplayNGradientHair27 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_27">;
-export type AvatarItemDisplayNGradientHair28 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_28">;
-export type AvatarItemDisplayNGradientHair29 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_29">;
-export type AvatarItemDisplayNGradientHair3 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_3">;
-export type AvatarItemDisplayNGradientHair30 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_30">;
-export type AvatarItemDisplayNGradientHair31 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_31">;
-export type AvatarItemDisplayNGradientHair4 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_4">;
-export type AvatarItemDisplayNGradientHair5 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_5">;
-export type AvatarItemDisplayNGradientHair6 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_6">;
-export type AvatarItemDisplayNGradientHair7 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_7">;
-export type AvatarItemDisplayNGradientHair8 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_8">;
-export type AvatarItemDisplayNGradientHair9 = AvatarItemDisplay<"N_DISPLAY_n_gradient_hair_9">;
-export type AvatarItemDisplayNGradientTesteye0 = AvatarItemDisplay<"N_DISPLAY_n_gradient_testeye_0">;
-export type AvatarItemDisplayNGradientTesteye1 = AvatarItemDisplay<"N_DISPLAY_n_gradient_testeye_1">;
-export type AvatarItemDisplayNGradientTesthair0 = AvatarItemDisplay<"N_DISPLAY_n_gradient_testhair_0">;
-export type AvatarItemDisplayNGradientTesthair1 = AvatarItemDisplay<"N_DISPLAY_n_gradient_testhair_1">;
-export type AvatarItemDisplayNHairCoilyshort0 = AvatarItemDisplay<"N_DISPLAY_n_hair_coilyshort_0">;
-export type AvatarItemDisplayNHairCurlymedium0 = AvatarItemDisplay<"N_DISPLAY_n_hair_curlymedium_0">;
-export type AvatarItemDisplayNHairDefaultA0 = AvatarItemDisplay<"N_DISPLAY_n_hair_default_a_0">;
-export type AvatarItemDisplayNHairDefaultB0 = AvatarItemDisplay<"N_DISPLAY_n_hair_default_b_0">;
-export type AvatarItemDisplayNHairGrimmsnarl0 = AvatarItemDisplay<"N_DISPLAY_n_hair_grimmsnarl_0">;
-export type AvatarItemDisplayNHairKinkymedium0 = AvatarItemDisplay<"N_DISPLAY_n_hair_kinkymedium_0">;
-export type AvatarItemDisplayNHairKinkyshort0 = AvatarItemDisplay<"N_DISPLAY_n_hair_kinkyshort_0">;
-export type AvatarItemDisplayNHairLvl79Synthfade0 = AvatarItemDisplay<"N_DISPLAY_n_hair_lvl79-synthfade_0">;
-export type AvatarItemDisplayNHairLvl79Urbanphantom0 = AvatarItemDisplay<"N_DISPLAY_n_hair_lvl79-urbanphantom_0">;
-export type AvatarItemDisplayNHairMohawk00 = AvatarItemDisplay<"N_DISPLAY_n_hair_mohawk-0_0">;
-export type AvatarItemDisplayNHairMohawk10 = AvatarItemDisplay<"N_DISPLAY_n_hair_mohawk-1_0">;
-export type AvatarItemDisplayNHairMorgrem0 = AvatarItemDisplay<"N_DISPLAY_n_hair_morgrem_0">;
-export type AvatarItemDisplayNHairStraightlong0 = AvatarItemDisplay<"N_DISPLAY_n_hair_straightlong_0">;
-export type AvatarItemDisplayNHairStraightmedium0 = AvatarItemDisplay<"N_DISPLAY_n_hair_straightmedium_0">;
-export type AvatarItemDisplayNHairStraightshort0 = AvatarItemDisplay<"N_DISPLAY_n_hair_straightshort_0">;
-export type AvatarItemDisplayNHairTesthair00 = AvatarItemDisplay<"N_DISPLAY_n_hair_testhair-0_0">;
-export type AvatarItemDisplayNHairTesthair10 = AvatarItemDisplay<"N_DISPLAY_n_hair_testhair-1_0">;
-export type AvatarItemDisplayNHairWavylong0 = AvatarItemDisplay<"N_DISPLAY_n_hair_wavylong_0">;
-export type AvatarItemDisplayNHairWavymedium0 = AvatarItemDisplay<"N_DISPLAY_n_hair_wavymedium_0">;
-export type AvatarItemDisplayNHairWavyshort0 = AvatarItemDisplay<"N_DISPLAY_n_hair_wavyshort_0">;
-export type AvatarItemDisplayNHairZacian0 = AvatarItemDisplay<"N_DISPLAY_n_hair_zacian_0">;
-export type AvatarItemDisplayNHairZamazenta0 = AvatarItemDisplay<"N_DISPLAY_n_hair_zamazenta_0">;
-export type AvatarItemDisplayNHat6thanniversaryA0 = AvatarItemDisplay<"N_DISPLAY_n_hat_6thanniversary_a_0">;
-export type AvatarItemDisplayNHat6thanniversaryB0 = AvatarItemDisplay<"N_DISPLAY_n_hat_6thanniversary_b_0">;
-export type AvatarItemDisplayNHatAcetrainersmA0 = AvatarItemDisplay<"N_DISPLAY_n_hat_acetrainersm_a_0">;
-export type AvatarItemDisplayNHatAcetrainersmB0 = AvatarItemDisplay<"N_DISPLAY_n_hat_acetrainersm_b_0">;
-export type AvatarItemDisplayNHatAdventure0 = AvatarItemDisplay<"N_DISPLAY_n_hat_adventure_0">;
-export type AvatarItemDisplayNHatAlolanexeggutorhat0 = AvatarItemDisplay<"N_DISPLAY_n_hat_alolanexeggutorhat_0">;
-export type AvatarItemDisplayNHatApplinitems0 = AvatarItemDisplay<"N_DISPLAY_n_hat_applinitems_0">;
-export type AvatarItemDisplayNHatAseries0 = AvatarItemDisplay<"N_DISPLAY_n_hat_aseries_0">;
-export type AvatarItemDisplayNHatBeaA0 = AvatarItemDisplay<"N_DISPLAY_n_hat_bea_a_0">;
-export type AvatarItemDisplayNHatBeaB0 = AvatarItemDisplay<"N_DISPLAY_n_hat_bea_b_0">;
-export type AvatarItemDisplayNHatBidoofhat0 = AvatarItemDisplay<"N_DISPLAY_n_hat_bidoofhat_0">;
-export type AvatarItemDisplayNHatBounsweetitems0 = AvatarItemDisplay<"N_DISPLAY_n_hat_bounsweetitems_0">;
-export type AvatarItemDisplayNHatBwn0 = AvatarItemDisplay<"N_DISPLAY_n_hat_bwn_0">;
-export type AvatarItemDisplayNHatCaptainpikachu0 = AvatarItemDisplay<"N_DISPLAY_n_hat_captainpikachu_0">;
-export type AvatarItemDisplayNHatCasket0 = AvatarItemDisplay<"N_DISPLAY_n_hat_casket_0">;
-export type AvatarItemDisplayNHatCetoddlehat0 = AvatarItemDisplay<"N_DISPLAY_n_hat_cetoddlehat_0">;
-export type AvatarItemDisplayNHatClay0 = AvatarItemDisplay<"N_DISPLAY_n_hat_clay_0">;
-export type AvatarItemDisplayNHatCofagrigusitems0 = AvatarItemDisplay<"N_DISPLAY_n_hat_cofagrigusitems_0">;
-export type AvatarItemDisplayNHatCommunityambassador0 = AvatarItemDisplay<"N_DISPLAY_n_hat_communityambassador_0">;
-export type AvatarItemDisplayNHatCosmog0 = AvatarItemDisplay<"N_DISPLAY_n_hat_cosmog_0">;
-export type AvatarItemDisplayNHatCrownmoon0 = AvatarItemDisplay<"N_DISPLAY_n_hat_crownmoon_0">;
-export type AvatarItemDisplayNHatCrownsun0 = AvatarItemDisplay<"N_DISPLAY_n_hat_crownsun_0">;
-export type AvatarItemDisplayNHatCubonehat0 = AvatarItemDisplay<"N_DISPLAY_n_hat_cubonehat_0">;
-export type AvatarItemDisplayNHatDarumakahat0 = AvatarItemDisplay<"N_DISPLAY_n_hat_darumakahat_0">;
-export type AvatarItemDisplayNHatDedenneitems0 = AvatarItemDisplay<"N_DISPLAY_n_hat_dedenneitems_0">;
-export type AvatarItemDisplayNHatDefaultA0 = AvatarItemDisplay<"N_DISPLAY_n_hat_default_a_0">;
-export type AvatarItemDisplayNHatDefaultA1 = AvatarItemDisplay<"N_DISPLAY_n_hat_default_a_1">;
-export type AvatarItemDisplayNHatDefaultA2 = AvatarItemDisplay<"N_DISPLAY_n_hat_default_a_2">;
-export type AvatarItemDisplayNHatDefaultA3 = AvatarItemDisplay<"N_DISPLAY_n_hat_default_a_3">;
-export type AvatarItemDisplayNHatDefaultA4 = AvatarItemDisplay<"N_DISPLAY_n_hat_default_a_4">;
-export type AvatarItemDisplayNHatDefaultA5 = AvatarItemDisplay<"N_DISPLAY_n_hat_default_a_5">;
-export type AvatarItemDisplayNHatDefaultA6 = AvatarItemDisplay<"N_DISPLAY_n_hat_default_a_6">;
-export type AvatarItemDisplayNHatDefaultA7 = AvatarItemDisplay<"N_DISPLAY_n_hat_default_a_7">;
-export type AvatarItemDisplayNHatDefaultB0 = AvatarItemDisplay<"N_DISPLAY_n_hat_default_b_0">;
-export type AvatarItemDisplayNHatDefaultB1 = AvatarItemDisplay<"N_DISPLAY_n_hat_default_b_1">;
-export type AvatarItemDisplayNHatDefaultB2 = AvatarItemDisplay<"N_DISPLAY_n_hat_default_b_2">;
-export type AvatarItemDisplayNHatDefaultB3 = AvatarItemDisplay<"N_DISPLAY_n_hat_default_b_3">;
-export type AvatarItemDisplayNHatDefaultB4 = AvatarItemDisplay<"N_DISPLAY_n_hat_default_b_4">;
-export type AvatarItemDisplayNHatDefaultB5 = AvatarItemDisplay<"N_DISPLAY_n_hat_default_b_5">;
-export type AvatarItemDisplayNHatDeino0 = AvatarItemDisplay<"N_DISPLAY_n_hat_deino_0">;
-export type AvatarItemDisplayNHatDelibird0 = AvatarItemDisplay<"N_DISPLAY_n_hat_delibird_0">;
-export type AvatarItemDisplayNHatDetectivepikachu0 = AvatarItemDisplay<"N_DISPLAY_n_hat_detectivepikachu_0">;
-export type AvatarItemDisplayNHatDiancie0 = AvatarItemDisplay<"N_DISPLAY_n_hat_diancie_0">;
-export type AvatarItemDisplayNHatDpA0 = AvatarItemDisplay<"N_DISPLAY_n_hat_dp_a_0">;
-export type AvatarItemDisplayNHatDpB0 = AvatarItemDisplay<"N_DISPLAY_n_hat_dp_b_0">;
-export type AvatarItemDisplayNHatDrifloon0 = AvatarItemDisplay<"N_DISPLAY_n_hat_drifloon_0">;
-export type AvatarItemDisplayNHatDrpikachu0 = AvatarItemDisplay<"N_DISPLAY_n_hat_drpikachu_0">;
-export type AvatarItemDisplayNHatDusclopsmummy0 = AvatarItemDisplay<"N_DISPLAY_n_hat_dusclopsmummy_0">;
-export type AvatarItemDisplayNHatEarringsburmyplant0 = AvatarItemDisplay<"N_DISPLAY_n_hat_earringsburmyplant_0">;
-export type AvatarItemDisplayNHatEarringsburmysandy0 = AvatarItemDisplay<"N_DISPLAY_n_hat_earringsburmysandy_0">;
-export type AvatarItemDisplayNHatEarringsburmytrash0 = AvatarItemDisplay<"N_DISPLAY_n_hat_earringsburmytrash_0">;
-export type AvatarItemDisplayNHatEeveecap0 = AvatarItemDisplay<"N_DISPLAY_n_hat_eeveecap_0">;
-export type AvatarItemDisplayNHatElesa0 = AvatarItemDisplay<"N_DISPLAY_n_hat_elesa_0">;
-export type AvatarItemDisplayNHatEternatussuit0 = AvatarItemDisplay<"N_DISPLAY_n_hat_eternatussuit_0">;
-export type AvatarItemDisplayNHatFedora0 = AvatarItemDisplay<"N_DISPLAY_n_hat_fedora_0">;
-export type AvatarItemDisplayNHatFedora1 = AvatarItemDisplay<"N_DISPLAY_n_hat_fedora_1">;
-export type AvatarItemDisplayNHatFisher0 = AvatarItemDisplay<"N_DISPLAY_n_hat_fisher_0">;
-export type AvatarItemDisplayNHatFlabebepack0 = AvatarItemDisplay<"N_DISPLAY_n_hat_flabebepack_0">;
-export type AvatarItemDisplayNHatFlowercrown0 = AvatarItemDisplay<"N_DISPLAY_n_hat_flowercrown_0">;
-export type AvatarItemDisplayNHatFragment0 = AvatarItemDisplay<"N_DISPLAY_n_hat_fragment_0">;
-export type AvatarItemDisplayNHatFrlgA0 = AvatarItemDisplay<"N_DISPLAY_n_hat_frlg_a_0">;
-export type AvatarItemDisplayNHatFrlgB0 = AvatarItemDisplay<"N_DISPLAY_n_hat_frlg_b_0">;
-export type AvatarItemDisplayNHatFurfrouwig0 = AvatarItemDisplay<"N_DISPLAY_n_hat_furfrouwig_0">;
-export type AvatarItemDisplayNHatFw20220 = AvatarItemDisplay<"N_DISPLAY_n_hat_fw2022_0">;
-export type AvatarItemDisplayNHatGalarfarfetchditems0 = AvatarItemDisplay<"N_DISPLAY_n_hat_galarfarfetchditems_0">;
-export type AvatarItemDisplayNHatGenesecteventitem0 = AvatarItemDisplay<"N_DISPLAY_n_hat_genesecteventitem_0">;
-export type AvatarItemDisplayNHatGengar0 = AvatarItemDisplay<"N_DISPLAY_n_hat_gengar_0">;
-export type AvatarItemDisplayNHatGimmighoulitems0 = AvatarItemDisplay<"N_DISPLAY_n_hat_gimmighoulitems_0">;
-export type AvatarItemDisplayNHatGiratinaitems0 = AvatarItemDisplay<"N_DISPLAY_n_hat_giratinaitems_0">;
-export type AvatarItemDisplayNHatGladion0 = AvatarItemDisplay<"N_DISPLAY_n_hat_gladion_0">;
-export type AvatarItemDisplayNHatGofestPikachuvisor0 = AvatarItemDisplay<"N_DISPLAY_n_hat_gofest-pikachuvisor_0">;
-export type AvatarItemDisplayNHatGoomy0 = AvatarItemDisplay<"N_DISPLAY_n_hat_goomy_0">;
-export type AvatarItemDisplayNHatGreavardwig0 = AvatarItemDisplay<"N_DISPLAY_n_hat_greavardwig_0">;
-export type AvatarItemDisplayNHatGreencoat0 = AvatarItemDisplay<"N_DISPLAY_n_hat_greencoat_0">;
-export type AvatarItemDisplayNHatGrowlithehelmet0 = AvatarItemDisplay<"N_DISPLAY_n_hat_growlithehelmet_0">;
-export type AvatarItemDisplayNHatGtr2024eeveefanmask0 = AvatarItemDisplay<"N_DISPLAY_n_hat_gtr2024eeveefanmask_0">;
-export type AvatarItemDisplayNHatGtr2024pikachufanmask0 = AvatarItemDisplay<"N_DISPLAY_n_hat_gtr2024pikachufanmask_0">;
-export type AvatarItemDisplayNHatGuccihat0 = AvatarItemDisplay<"N_DISPLAY_n_hat_guccihat_0">;
-export type AvatarItemDisplayNHatGuzma0 = AvatarItemDisplay<"N_DISPLAY_n_hat_guzma_0">;
-export type AvatarItemDisplayNHatGyaradoscap0 = AvatarItemDisplay<"N_DISPLAY_n_hat_gyaradoscap_0">;
-export type AvatarItemDisplayNHatHalloween20240 = AvatarItemDisplay<"N_DISPLAY_n_hat_halloween2024_0">;
-export type AvatarItemDisplayNHatHgssA0 = AvatarItemDisplay<"N_DISPLAY_n_hat_hgss_a_0">;
-export type AvatarItemDisplayNHatHgssB0 = AvatarItemDisplay<"N_DISPLAY_n_hat_hgss_b_0">;
-export type AvatarItemDisplayNHatHoliday2022santacostumes0 = AvatarItemDisplay<"N_DISPLAY_n_hat_holiday2022santacostumes_0">;
-export type AvatarItemDisplayNHatHolidaybeanie0 = AvatarItemDisplay<"N_DISPLAY_n_hat_holidaybeanie_0">;
-export type AvatarItemDisplayNHatHoopaearmuffs0 = AvatarItemDisplay<"N_DISPLAY_n_hat_hoopaearmuffs_0">;
-export type AvatarItemDisplayNHatIngo0 = AvatarItemDisplay<"N_DISPLAY_n_hat_ingo_0">;
-export type AvatarItemDisplayNHatJogger0 = AvatarItemDisplay<"N_DISPLAY_n_hat_jogger_0">;
-export type AvatarItemDisplayNHatKantotourcapgreen0 = AvatarItemDisplay<"N_DISPLAY_n_hat_kantotourcapgreen_0">;
-export type AvatarItemDisplayNHatKantotourcapred0 = AvatarItemDisplay<"N_DISPLAY_n_hat_kantotourcapred_0">;
-export type AvatarItemDisplayNHatKnitted0 = AvatarItemDisplay<"N_DISPLAY_n_hat_knitted_0">;
-export type AvatarItemDisplayNHatKnitted1 = AvatarItemDisplay<"N_DISPLAY_n_hat_knitted_1">;
-export type AvatarItemDisplayNHatKorrina0 = AvatarItemDisplay<"N_DISPLAY_n_hat_korrina_0">;
-export type AvatarItemDisplayNHatKyuremhat0 = AvatarItemDisplay<"N_DISPLAY_n_hat_kyuremhat_0">;
-export type AvatarItemDisplayNHatLana0 = AvatarItemDisplay<"N_DISPLAY_n_hat_lana_0">;
-export type AvatarItemDisplayNHatLaprasbandanaA0 = AvatarItemDisplay<"N_DISPLAY_n_hat_laprasbandana_a_0">;
-export type AvatarItemDisplayNHatLaprasbandanaB0 = AvatarItemDisplay<"N_DISPLAY_n_hat_laprasbandana_b_0">;
-export type AvatarItemDisplayNHatLasecuritycorps0 = AvatarItemDisplay<"N_DISPLAY_n_hat_lasecuritycorps_0">;
-export type AvatarItemDisplayNHatLegendofarceusA0 = AvatarItemDisplay<"N_DISPLAY_n_hat_legendofarceus_a_0">;
-export type AvatarItemDisplayNHatLegendofarceusB0 = AvatarItemDisplay<"N_DISPLAY_n_hat_legendofarceus_b_0">;
-export type AvatarItemDisplayNHatLitwickhat0 = AvatarItemDisplay<"N_DISPLAY_n_hat_litwickhat_0">;
-export type AvatarItemDisplayNHatLoneearrings0 = AvatarItemDisplay<"N_DISPLAY_n_hat_loneearrings_0">;
-export type AvatarItemDisplayNHatLucariomask0 = AvatarItemDisplay<"N_DISPLAY_n_hat_lucariomask_0">;
-export type AvatarItemDisplayNHatLvl50cap0 = AvatarItemDisplay<"N_DISPLAY_n_hat_lvl50cap_0">;
-export type AvatarItemDisplayNHatMagikarp0 = AvatarItemDisplay<"N_DISPLAY_n_hat_magikarp_0">;
-export type AvatarItemDisplayNHatMareaniehat0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mareaniehat_0">;
-export type AvatarItemDisplayNHatMegalopunnyitems0 = AvatarItemDisplay<"N_DISPLAY_n_hat_megalopunnyitems_0">;
-export type AvatarItemDisplayNHatMegarayquaza0 = AvatarItemDisplay<"N_DISPLAY_n_hat_megarayquaza_0">;
-export type AvatarItemDisplayNHatMeltan0 = AvatarItemDisplay<"N_DISPLAY_n_hat_meltan_0">;
-export type AvatarItemDisplayNHatMeltanearrings0 = AvatarItemDisplay<"N_DISPLAY_n_hat_meltanearrings_0">;
-export type AvatarItemDisplayNHatMewtwoA0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mewtwo_a_0">;
-export type AvatarItemDisplayNHatMewtwoB0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mewtwo_b_0">;
-export type AvatarItemDisplayNHatMimikyu0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mimikyu_0">;
-export type AvatarItemDisplayNHatMismagius0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mismagius_0">;
-export type AvatarItemDisplayNHatMlbBrewers0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mlb-brewers_0">;
-export type AvatarItemDisplayNHatMlbDiamondbacks0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mlb-diamondbacks_0">;
-export type AvatarItemDisplayNHatMlbGiants0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mlb-giants_0">;
-export type AvatarItemDisplayNHatMlbGuardians0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mlb-guardians_0">;
-export type AvatarItemDisplayNHatMlbMariners0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mlb-mariners_0">;
-export type AvatarItemDisplayNHatMlbMarlins0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mlb-marlins_0">;
-export type AvatarItemDisplayNHatMlbMets0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mlb-mets_0">;
-export type AvatarItemDisplayNHatMlbNationals0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mlb-nationals_0">;
-export type AvatarItemDisplayNHatMlbOrioles0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mlb-orioles_0">;
-export type AvatarItemDisplayNHatMlbPadres0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mlb-padres_0">;
-export type AvatarItemDisplayNHatMlbRangers0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mlb-rangers_0">;
-export type AvatarItemDisplayNHatMlbRays0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mlb-rays_0">;
-export type AvatarItemDisplayNHatMlbRedsox0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mlb-redsox_0">;
-export type AvatarItemDisplayNHatMlbTwins0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mlb-twins_0">;
-export type AvatarItemDisplayNHatMlbWhitesox0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mlb-whitesox_0">;
-export type AvatarItemDisplayNHatMlb0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mlb_0">;
-export type AvatarItemDisplayNHatMovie20200 = AvatarItemDisplay<"N_DISPLAY_n_hat_movie2020_0">;
-export type AvatarItemDisplayNHatMunnapack0 = AvatarItemDisplay<"N_DISPLAY_n_hat_munnapack_0">;
-export type AvatarItemDisplayNHatMunnapack1 = AvatarItemDisplay<"N_DISPLAY_n_hat_munnapack_1">;
-export type AvatarItemDisplayNHatMustard0 = AvatarItemDisplay<"N_DISPLAY_n_hat_mustard_0">;
-export type AvatarItemDisplayNHatNewyear20220 = AvatarItemDisplay<"N_DISPLAY_n_hat_newyear2022_0">;
-export type AvatarItemDisplayNHatNewyearhat20210 = AvatarItemDisplay<"N_DISPLAY_n_hat_newyearhat2021_0">;
-export type AvatarItemDisplayNHatNewyearhat20230 = AvatarItemDisplay<"N_DISPLAY_n_hat_newyearhat2023_0">;
-export type AvatarItemDisplayNHatNihilegoitems0 = AvatarItemDisplay<"N_DISPLAY_n_hat_nihilegoitems_0">;
-export type AvatarItemDisplayNHatNoibat0 = AvatarItemDisplay<"N_DISPLAY_n_hat_noibat_0">;
-export type AvatarItemDisplayNHatObstagoonitems0 = AvatarItemDisplay<"N_DISPLAY_n_hat_obstagoonitems_0">;
-export type AvatarItemDisplayNHatOrasA0 = AvatarItemDisplay<"N_DISPLAY_n_hat_oras_a_0">;
-export type AvatarItemDisplayNHatOrasB0 = AvatarItemDisplay<"N_DISPLAY_n_hat_oras_b_0">;
-export type AvatarItemDisplayNHatOricoriopink0 = AvatarItemDisplay<"N_DISPLAY_n_hat_oricoriopink_0">;
-export type AvatarItemDisplayNHatOricoriopurple0 = AvatarItemDisplay<"N_DISPLAY_n_hat_oricoriopurple_0">;
-export type AvatarItemDisplayNHatOricoriored0 = AvatarItemDisplay<"N_DISPLAY_n_hat_oricoriored_0">;
-export type AvatarItemDisplayNHatOricorioyellow0 = AvatarItemDisplay<"N_DISPLAY_n_hat_oricorioyellow_0">;
-export type AvatarItemDisplayNHatPartneritemsjan2024hat0 = AvatarItemDisplay<"N_DISPLAY_n_hat_partneritemsjan2024hat_0">;
-export type AvatarItemDisplayNHatPartyhat0 = AvatarItemDisplay<"N_DISPLAY_n_hat_partyhat_0">;
-export type AvatarItemDisplayNHatPhantump0 = AvatarItemDisplay<"N_DISPLAY_n_hat_phantump_0">;
-export type AvatarItemDisplayNHatPikachubutlerBlue0 = AvatarItemDisplay<"N_DISPLAY_n_hat_pikachubutler-blue_0">;
-export type AvatarItemDisplayNHatPikachubutlerRed0 = AvatarItemDisplay<"N_DISPLAY_n_hat_pikachubutler-red_0">;
-export type AvatarItemDisplayNHatPikachubutlerYellow0 = AvatarItemDisplay<"N_DISPLAY_n_hat_pikachubutler-yellow_0">;
-export type AvatarItemDisplayNHatPikachucap0 = AvatarItemDisplay<"N_DISPLAY_n_hat_pikachucap_0">;
-export type AvatarItemDisplayNHatPikachufan0 = AvatarItemDisplay<"N_DISPLAY_n_hat_pikachufan_0">;
-export type AvatarItemDisplayNHatPikachulibre0 = AvatarItemDisplay<"N_DISPLAY_n_hat_pikachulibre_0">;
-export type AvatarItemDisplayNHatPikachupumpkinhead0 = AvatarItemDisplay<"N_DISPLAY_n_hat_pikachupumpkinhead_0">;
-export type AvatarItemDisplayNHatPkmncap0 = AvatarItemDisplay<"N_DISPLAY_n_hat_pkmncap_0">;
-export type AvatarItemDisplayNHatPkmncap1 = AvatarItemDisplay<"N_DISPLAY_n_hat_pkmncap_1">;
-export type AvatarItemDisplayNHatPkmncap2 = AvatarItemDisplay<"N_DISPLAY_n_hat_pkmncap_2">;
-export type AvatarItemDisplayNHatPoipole0 = AvatarItemDisplay<"N_DISPLAY_n_hat_poipole_0">;
-export type AvatarItemDisplayNHatPokeballitemsBasic0 = AvatarItemDisplay<"N_DISPLAY_n_hat_pokeballitems-basic_0">;
-export type AvatarItemDisplayNHatPokeballitemsGreat0 = AvatarItemDisplay<"N_DISPLAY_n_hat_pokeballitems-great_0">;
-export type AvatarItemDisplayNHatPokeballitemsUltra0 = AvatarItemDisplay<"N_DISPLAY_n_hat_pokeballitems-ultra_0">;
-export type AvatarItemDisplayNHatPolteageisthat0 = AvatarItemDisplay<"N_DISPLAY_n_hat_polteageisthat_0">;
-export type AvatarItemDisplayNHatProfwillowoutfit0 = AvatarItemDisplay<"N_DISPLAY_n_hat_profwillowoutfit_0">;
-export type AvatarItemDisplayNHatRegiicejersies0 = AvatarItemDisplay<"N_DISPLAY_n_hat_regiicejersies_0">;
-export type AvatarItemDisplayNHatRegirockjersies0 = AvatarItemDisplay<"N_DISPLAY_n_hat_regirockjersies_0">;
-export type AvatarItemDisplayNHatRegisteeljersies0 = AvatarItemDisplay<"N_DISPLAY_n_hat_registeeljersies_0">;
-export type AvatarItemDisplayNHatRuinmaniacA0 = AvatarItemDisplay<"N_DISPLAY_n_hat_ruinmaniac_a_0">;
-export type AvatarItemDisplayNHatRuinmaniacB0 = AvatarItemDisplay<"N_DISPLAY_n_hat_ruinmaniac_b_0">;
-export type AvatarItemDisplayNHatSableyegoggles0 = AvatarItemDisplay<"N_DISPLAY_n_hat_sableyegoggles_0">;
-export type AvatarItemDisplayNHatSamsungsummer20200 = AvatarItemDisplay<"N_DISPLAY_n_hat_samsungsummer2020_0">;
-export type AvatarItemDisplayNHatSandygasthat0 = AvatarItemDisplay<"N_DISPLAY_n_hat_sandygasthat_0">;
-export type AvatarItemDisplayNHatShayminhat0 = AvatarItemDisplay<"N_DISPLAY_n_hat_shayminhat_0">;
-export type AvatarItemDisplayNHatSlowpoketailshirts0 = AvatarItemDisplay<"N_DISPLAY_n_hat_slowpoketailshirts_0">;
-export type AvatarItemDisplayNHatSnombeanie0 = AvatarItemDisplay<"N_DISPLAY_n_hat_snombeanie_0">;
-export type AvatarItemDisplayNHatSnorlaxnightcap0 = AvatarItemDisplay<"N_DISPLAY_n_hat_snorlaxnightcap_0">;
-export type AvatarItemDisplayNHatSolgaleoitems0 = AvatarItemDisplay<"N_DISPLAY_n_hat_solgaleoitems_0">;
-export type AvatarItemDisplayNHatSsA0 = AvatarItemDisplay<"N_DISPLAY_n_hat_ss_a_0">;
-export type AvatarItemDisplayNHatSsB0 = AvatarItemDisplay<"N_DISPLAY_n_hat_ss_b_0">;
-export type AvatarItemDisplayNHatStantlerheadband0 = AvatarItemDisplay<"N_DISPLAY_n_hat_stantlerheadband_0">;
-export type AvatarItemDisplayNHatStrawhat0 = AvatarItemDisplay<"N_DISPLAY_n_hat_strawhat_0">;
-export type AvatarItemDisplayNHatSummer20230 = AvatarItemDisplay<"N_DISPLAY_n_hat_summer2023_0">;
-export type AvatarItemDisplayNHatSvcostumescarletschool0 = AvatarItemDisplay<"N_DISPLAY_n_hat_svcostumescarletschool_0">;
-export type AvatarItemDisplayNHatSvcostumevioletschool0 = AvatarItemDisplay<"N_DISPLAY_n_hat_svcostumevioletschool_0">;
-export type AvatarItemDisplayNHatSwshdlc2costume0 = AvatarItemDisplay<"N_DISPLAY_n_hat_swshdlc2costume_0">;
-export type AvatarItemDisplayNHatSwshuniformchampion0 = AvatarItemDisplay<"N_DISPLAY_n_hat_swshuniformchampion_0">;
-export type AvatarItemDisplayNHatSylveonitemsA0 = AvatarItemDisplay<"N_DISPLAY_n_hat_sylveonitems_a_0">;
-export type AvatarItemDisplayNHatSylveonitemsB0 = AvatarItemDisplay<"N_DISPLAY_n_hat_sylveonitems_b_0">;
-export type AvatarItemDisplayNHatTcgcollabtshirtandcap0 = AvatarItemDisplay<"N_DISPLAY_n_hat_tcgcollabtshirtandcap_0">;
-export type AvatarItemDisplayNHatTeamaqua0 = AvatarItemDisplay<"N_DISPLAY_n_hat_teamaqua_0">;
-export type AvatarItemDisplayNHatTeamleadercap0 = AvatarItemDisplay<"N_DISPLAY_n_hat_teamleadercap_0">;
-export type AvatarItemDisplayNHatTeamleadercap1 = AvatarItemDisplay<"N_DISPLAY_n_hat_teamleadercap_1">;
-export type AvatarItemDisplayNHatTeamleadercap2 = AvatarItemDisplay<"N_DISPLAY_n_hat_teamleadercap_2">;
-export type AvatarItemDisplayNHatTeamrocket0 = AvatarItemDisplay<"N_DISPLAY_n_hat_teamrocket_0">;
-export type AvatarItemDisplayNHatTeamrocketcap0 = AvatarItemDisplay<"N_DISPLAY_n_hat_teamrocketcap_0">;
-export type AvatarItemDisplayNHatTeamskull0 = AvatarItemDisplay<"N_DISPLAY_n_hat_teamskull_0">;
-export type AvatarItemDisplayNHatTophat0 = AvatarItemDisplay<"N_DISPLAY_n_hat_tophat_0">;
-export type AvatarItemDisplayNHatUltraA0 = AvatarItemDisplay<"N_DISPLAY_n_hat_ultra_a_0">;
-export type AvatarItemDisplayNHatUltraB0 = AvatarItemDisplay<"N_DISPLAY_n_hat_ultra_b_0">;
-export type AvatarItemDisplayNHatUltrareconsquad0 = AvatarItemDisplay<"N_DISPLAY_n_hat_ultrareconsquad_0">;
-export type AvatarItemDisplayNHatUltrareconsquadb0 = AvatarItemDisplay<"N_DISPLAY_n_hat_ultrareconsquadb_0">;
-export type AvatarItemDisplayNHatUnequip0 = AvatarItemDisplay<"N_DISPLAY_n_hat_unequip_0">;
-export type AvatarItemDisplayNHatVerizon20210 = AvatarItemDisplay<"N_DISPLAY_n_hat_verizon2021_0">;
-export type AvatarItemDisplayNHatWcs2022winnersitems0 = AvatarItemDisplay<"N_DISPLAY_n_hat_wcs2022winnersitems_0">;
-export type AvatarItemDisplayNHatWcs2024paiditems0 = AvatarItemDisplay<"N_DISPLAY_n_hat_wcs2024paiditems_0">;
-export type AvatarItemDisplayNHatWcs20250 = AvatarItemDisplay<"N_DISPLAY_n_hat_wcs2025_0">;
-export type AvatarItemDisplayNHatWcs2025winnersitems0 = AvatarItemDisplay<"N_DISPLAY_n_hat_wcs2025winnersitems_0">;
-export type AvatarItemDisplayNHatWhimsicottearmuff0 = AvatarItemDisplay<"N_DISPLAY_n_hat_whimsicottearmuff_0">;
-export type AvatarItemDisplayNHatWillowglasses0 = AvatarItemDisplay<"N_DISPLAY_n_hat_willowglasses_0">;
-export type AvatarItemDisplayNHatWoobatearrings0 = AvatarItemDisplay<"N_DISPLAY_n_hat_woobatearrings_0">;
-export type AvatarItemDisplayNHatXerneasitems0 = AvatarItemDisplay<"N_DISPLAY_n_hat_xerneasitems_0">;
-export type AvatarItemDisplayNHatYamaskhat0 = AvatarItemDisplay<"N_DISPLAY_n_hat_yamaskhat_0">;
-export type AvatarItemDisplayNHatYamaskmask0 = AvatarItemDisplay<"N_DISPLAY_n_hat_yamaskmask_0">;
-export type AvatarItemDisplayNHatZacianmask0 = AvatarItemDisplay<"N_DISPLAY_n_hat_zacianmask_0">;
-export type AvatarItemDisplayNHatZacostumeA0 = AvatarItemDisplay<"N_DISPLAY_n_hat_zacostume_a_0">;
-export type AvatarItemDisplayNHatZacostumeB0 = AvatarItemDisplay<"N_DISPLAY_n_hat_zacostume_b_0">;
-export type AvatarItemDisplayNHatZamazentamask0 = AvatarItemDisplay<"N_DISPLAY_n_hat_zamazentamask_0">;
-export type AvatarItemDisplayNHatZubathat0 = AvatarItemDisplay<"N_DISPLAY_n_hat_zubathat_0">;
-export type AvatarItemDisplayNIdle01 = AvatarItemDisplay<"N_DISPLAY_n_idle_01">;
-export type AvatarItemDisplayNNecklaceDefault0 = AvatarItemDisplay<"N_DISPLAY_n_necklace_default_0">;
-export type AvatarItemDisplayNNecklaceDefault1 = AvatarItemDisplay<"N_DISPLAY_n_necklace_default_1">;
-export type AvatarItemDisplayNNecklaceHeart0 = AvatarItemDisplay<"N_DISPLAY_n_necklace_heart_0">;
-export type AvatarItemDisplayNNecklaceStar0 = AvatarItemDisplay<"N_DISPLAY_n_necklace_star_0">;
-export type AvatarItemDisplayNNecklaceUnequip0 = AvatarItemDisplay<"N_DISPLAY_n_necklace_unequip_0">;
-export type AvatarItemDisplayNPants6thanniversary0 = AvatarItemDisplay<"N_DISPLAY_n_pants_6thanniversary_0">;
-export type AvatarItemDisplayNPants7thanniversary0 = AvatarItemDisplay<"N_DISPLAY_n_pants_7thanniversary_0">;
-export type AvatarItemDisplayNPantsAcetrainerbwA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_acetrainerbw_a_0">;
-export type AvatarItemDisplayNPantsAcetrainerbwB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_acetrainerbw_b_0">;
-export type AvatarItemDisplayNPantsAcetrainersm0 = AvatarItemDisplay<"N_DISPLAY_n_pants_acetrainersm_0">;
-export type AvatarItemDisplayNPantsAnimegou0 = AvatarItemDisplay<"N_DISPLAY_n_pants_animegou_0">;
-export type AvatarItemDisplayNPantsBackpackerA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_backpacker_a_0">;
-export type AvatarItemDisplayNPantsBackpackerB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_backpacker_b_0">;
-export type AvatarItemDisplayNPantsBattlegirl0 = AvatarItemDisplay<"N_DISPLAY_n_pants_battlegirl_0">;
-export type AvatarItemDisplayNPantsBlackwhite0 = AvatarItemDisplay<"N_DISPLAY_n_pants_blackwhite_0">;
-export type AvatarItemDisplayNPantsBounsweetitems0 = AvatarItemDisplay<"N_DISPLAY_n_pants_bounsweetitems_0">;
-export type AvatarItemDisplayNPantsBrock0 = AvatarItemDisplay<"N_DISPLAY_n_pants_brock_0">;
-export type AvatarItemDisplayNPantsBwn0 = AvatarItemDisplay<"N_DISPLAY_n_pants_bwn_0">;
-export type AvatarItemDisplayNPantsCasualA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_casual_a_0">;
-export type AvatarItemDisplayNPantsCasualA1 = AvatarItemDisplay<"N_DISPLAY_n_pants_casual_a_1">;
-export type AvatarItemDisplayNPantsCasualB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_casual_b_0">;
-export type AvatarItemDisplayNPantsCasualB1 = AvatarItemDisplay<"N_DISPLAY_n_pants_casual_b_1">;
-export type AvatarItemDisplayNPantsClay0 = AvatarItemDisplay<"N_DISPLAY_n_pants_clay_0">;
-export type AvatarItemDisplayNPantsDefaultNew0 = AvatarItemDisplay<"N_DISPLAY_n_pants_default-new_0">;
-export type AvatarItemDisplayNPantsDefaultA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_default_a_0">;
-export type AvatarItemDisplayNPantsDefaultA1 = AvatarItemDisplay<"N_DISPLAY_n_pants_default_a_1">;
-export type AvatarItemDisplayNPantsDefaultA2 = AvatarItemDisplay<"N_DISPLAY_n_pants_default_a_2">;
-export type AvatarItemDisplayNPantsDefaultA3 = AvatarItemDisplay<"N_DISPLAY_n_pants_default_a_3">;
-export type AvatarItemDisplayNPantsDefaultA4 = AvatarItemDisplay<"N_DISPLAY_n_pants_default_a_4">;
-export type AvatarItemDisplayNPantsDefaultA5 = AvatarItemDisplay<"N_DISPLAY_n_pants_default_a_5">;
-export type AvatarItemDisplayNPantsDefaultB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_default_b_0">;
-export type AvatarItemDisplayNPantsDenimfashionweek20230 = AvatarItemDisplay<"N_DISPLAY_n_pants_denimfashionweek2023_0">;
-export type AvatarItemDisplayNPantsDpA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_dp_a_0">;
-export type AvatarItemDisplayNPantsDpB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_dp_b_0">;
-export type AvatarItemDisplayNPantsElesa0 = AvatarItemDisplay<"N_DISPLAY_n_pants_elesa_0">;
-export type AvatarItemDisplayNPantsEternatussuit0 = AvatarItemDisplay<"N_DISPLAY_n_pants_eternatussuit_0">;
-export type AvatarItemDisplayNPantsFashionweek20220 = AvatarItemDisplay<"N_DISPLAY_n_pants_fashionweek2022_0">;
-export type AvatarItemDisplayNPantsFashionweek20250 = AvatarItemDisplay<"N_DISPLAY_n_pants_fashionweek2025_0">;
-export type AvatarItemDisplayNPantsFisher0 = AvatarItemDisplay<"N_DISPLAY_n_pants_fisher_0">;
-export type AvatarItemDisplayNPantsFlabebepack0 = AvatarItemDisplay<"N_DISPLAY_n_pants_flabebepack_0">;
-export type AvatarItemDisplayNPantsFrlgA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_frlg_a_0">;
-export type AvatarItemDisplayNPantsFrlgB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_frlg_b_0">;
-export type AvatarItemDisplayNPantsFw2022A0 = AvatarItemDisplay<"N_DISPLAY_n_pants_fw2022_a_0">;
-export type AvatarItemDisplayNPantsFw2022B0 = AvatarItemDisplay<"N_DISPLAY_n_pants_fw2022_b_0">;
-export type AvatarItemDisplayNPantsGeeta0 = AvatarItemDisplay<"N_DISPLAY_n_pants_geeta_0">;
-export type AvatarItemDisplayNPantsGenderlessskirt0 = AvatarItemDisplay<"N_DISPLAY_n_pants_genderlessskirt_0">;
-export type AvatarItemDisplayNPantsGiovanni0 = AvatarItemDisplay<"N_DISPLAY_n_pants_giovanni_0">;
-export type AvatarItemDisplayNPantsGladion0 = AvatarItemDisplay<"N_DISPLAY_n_pants_gladion_0">;
-export type AvatarItemDisplayNPantsGothitelleitems0 = AvatarItemDisplay<"N_DISPLAY_n_pants_gothitelleitems_0">;
-export type AvatarItemDisplayNPantsGreenA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_green_a_0">;
-export type AvatarItemDisplayNPantsGreenB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_green_b_0">;
-export type AvatarItemDisplayNPantsGreencoat0 = AvatarItemDisplay<"N_DISPLAY_n_pants_greencoat_0">;
-export type AvatarItemDisplayNPantsGreenpikavee0 = AvatarItemDisplay<"N_DISPLAY_n_pants_greenpikavee_0">;
-export type AvatarItemDisplayNPantsGrimsley0 = AvatarItemDisplay<"N_DISPLAY_n_pants_grimsley_0">;
-export type AvatarItemDisplayNPantsGrusha0 = AvatarItemDisplay<"N_DISPLAY_n_pants_grusha_0">;
-export type AvatarItemDisplayNPantsGuzma0 = AvatarItemDisplay<"N_DISPLAY_n_pants_guzma_0">;
-export type AvatarItemDisplayNPantsGymleaderA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_gymleader_a_0">;
-export type AvatarItemDisplayNPantsGymleaderA1 = AvatarItemDisplay<"N_DISPLAY_n_pants_gymleader_a_1">;
-export type AvatarItemDisplayNPantsGymleaderA2 = AvatarItemDisplay<"N_DISPLAY_n_pants_gymleader_a_2">;
-export type AvatarItemDisplayNPantsGymleaderB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_gymleader_b_0">;
-export type AvatarItemDisplayNPantsGymleaderB1 = AvatarItemDisplay<"N_DISPLAY_n_pants_gymleader_b_1">;
-export type AvatarItemDisplayNPantsGymleaderB2 = AvatarItemDisplay<"N_DISPLAY_n_pants_gymleader_b_2">;
-export type AvatarItemDisplayNPantsHala0 = AvatarItemDisplay<"N_DISPLAY_n_pants_hala_0">;
-export type AvatarItemDisplayNPantsHgssA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_hgss_a_0">;
-export type AvatarItemDisplayNPantsHgssB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_hgss_b_0">;
-export type AvatarItemDisplayNPantsIngo0 = AvatarItemDisplay<"N_DISPLAY_n_pants_ingo_0">;
-export type AvatarItemDisplayNPantsJogger0 = AvatarItemDisplay<"N_DISPLAY_n_pants_jogger_0">;
-export type AvatarItemDisplayNPantsKorrina0 = AvatarItemDisplay<"N_DISPLAY_n_pants_korrina_0">;
-export type AvatarItemDisplayNPantsLooseFitting0 = AvatarItemDisplay<"N_DISPLAY_n_pants_loose-fitting_0">;
-export type AvatarItemDisplayNPantsLoosepants0 = AvatarItemDisplay<"N_DISPLAY_n_pants_loosepants_0">;
-export type AvatarItemDisplayNPantsLunalaitems0 = AvatarItemDisplay<"N_DISPLAY_n_pants_lunalaitems_0">;
-export type AvatarItemDisplayNPantsLuvdiscpackA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_luvdiscpack_a_0">;
-export type AvatarItemDisplayNPantsLuvdiscpackB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_luvdiscpack_b_0">;
-export type AvatarItemDisplayNPantsLvl75Techtrousers0 = AvatarItemDisplay<"N_DISPLAY_n_pants_lvl75-techtrousers_0">;
-export type AvatarItemDisplayNPantsLysandre0 = AvatarItemDisplay<"N_DISPLAY_n_pants_lysandre_0">;
-export type AvatarItemDisplayNPantsMewtwoA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_mewtwo_a_0">;
-export type AvatarItemDisplayNPantsMewtwoB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_mewtwo_b_0">;
-export type AvatarItemDisplayNPantsMiniskirtWave0 = AvatarItemDisplay<"N_DISPLAY_n_pants_miniskirt-wave_0">;
-export type AvatarItemDisplayNPantsMiniskirtWave1 = AvatarItemDisplay<"N_DISPLAY_n_pants_miniskirt-wave_1">;
-export type AvatarItemDisplayNPantsMiniskirtWave2 = AvatarItemDisplay<"N_DISPLAY_n_pants_miniskirt-wave_2">;
-export type AvatarItemDisplayNPantsMiniskirt0 = AvatarItemDisplay<"N_DISPLAY_n_pants_miniskirt_0">;
-export type AvatarItemDisplayNPantsMiniskirt1 = AvatarItemDisplay<"N_DISPLAY_n_pants_miniskirt_1">;
-export type AvatarItemDisplayNPantsMiniskirt2 = AvatarItemDisplay<"N_DISPLAY_n_pants_miniskirt_2">;
-export type AvatarItemDisplayNPantsMiniskirt3 = AvatarItemDisplay<"N_DISPLAY_n_pants_miniskirt_3">;
-export type AvatarItemDisplayNPantsMisty0 = AvatarItemDisplay<"N_DISPLAY_n_pants_misty_0">;
-export type AvatarItemDisplayNPantsMunnapack0 = AvatarItemDisplay<"N_DISPLAY_n_pants_munnapack_0">;
-export type AvatarItemDisplayNPantsMustard0 = AvatarItemDisplay<"N_DISPLAY_n_pants_mustard_0">;
-export type AvatarItemDisplayNPantsNaganadelaitems0 = AvatarItemDisplay<"N_DISPLAY_n_pants_naganadelaitems_0">;
-export type AvatarItemDisplayNPantsNecrozmaitems0 = AvatarItemDisplay<"N_DISPLAY_n_pants_necrozmaitems_0">;
-export type AvatarItemDisplayNPantsNeonSolid0 = AvatarItemDisplay<"N_DISPLAY_n_pants_neon-solid_0">;
-export type AvatarItemDisplayNPantsNeonSolid1 = AvatarItemDisplay<"N_DISPLAY_n_pants_neon-solid_1">;
-export type AvatarItemDisplayNPantsNeonSolid2 = AvatarItemDisplay<"N_DISPLAY_n_pants_neon-solid_2">;
-export type AvatarItemDisplayNPantsNeonStripes0 = AvatarItemDisplay<"N_DISPLAY_n_pants_neon-stripes_0">;
-export type AvatarItemDisplayNPantsNeonStripes1 = AvatarItemDisplay<"N_DISPLAY_n_pants_neon-stripes_1">;
-export type AvatarItemDisplayNPantsNewyear20220 = AvatarItemDisplay<"N_DISPLAY_n_pants_newyear2022_0">;
-export type AvatarItemDisplayNPantsOrasA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_oras_a_0">;
-export type AvatarItemDisplayNPantsOrasB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_oras_b_0">;
-export type AvatarItemDisplayNPantsPajamas20220 = AvatarItemDisplay<"N_DISPLAY_n_pants_pajamas2022_0">;
-export type AvatarItemDisplayNPantsPajamas20221 = AvatarItemDisplay<"N_DISPLAY_n_pants_pajamas2022_1">;
-export type AvatarItemDisplayNPantsPalmer0 = AvatarItemDisplay<"N_DISPLAY_n_pants_palmer_0">;
-export type AvatarItemDisplayNPantsPikachubutler0 = AvatarItemDisplay<"N_DISPLAY_n_pants_pikachubutler_0">;
-export type AvatarItemDisplayNPantsPikachufanA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_pikachufan_a_0">;
-export type AvatarItemDisplayNPantsPikachufanB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_pikachufan_b_0">;
-export type AvatarItemDisplayNPantsPikachulibreA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_pikachulibre_a_0">;
-export type AvatarItemDisplayNPantsPikachulibreB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_pikachulibre_b_0">;
-export type AvatarItemDisplayNPantsProfwillowoutfit0 = AvatarItemDisplay<"N_DISPLAY_n_pants_profwillowoutfit_0">;
-export type AvatarItemDisplayNPantsPumpkabooitems0 = AvatarItemDisplay<"N_DISPLAY_n_pants_pumpkabooitems_0">;
-export type AvatarItemDisplayNPantsRegiicejersies0 = AvatarItemDisplay<"N_DISPLAY_n_pants_regiicejersies_0">;
-export type AvatarItemDisplayNPantsRegirockjersies0 = AvatarItemDisplay<"N_DISPLAY_n_pants_regirockjersies_0">;
-export type AvatarItemDisplayNPantsRegisteeljersies0 = AvatarItemDisplay<"N_DISPLAY_n_pants_registeeljersies_0">;
-export type AvatarItemDisplayNPantsS19gbl0 = AvatarItemDisplay<"N_DISPLAY_n_pants_s19gbl_0">;
-export type AvatarItemDisplayNPantsShorts0 = AvatarItemDisplay<"N_DISPLAY_n_pants_shorts_0">;
-export type AvatarItemDisplayNPantsShorts1 = AvatarItemDisplay<"N_DISPLAY_n_pants_shorts_1">;
-export type AvatarItemDisplayNPantsShorts2 = AvatarItemDisplay<"N_DISPLAY_n_pants_shorts_2">;
-export type AvatarItemDisplayNPantsShorts3 = AvatarItemDisplay<"N_DISPLAY_n_pants_shorts_3">;
-export type AvatarItemDisplayNPantsSkinnyjeansA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_skinnyjeans_a_0">;
-export type AvatarItemDisplayNPantsSkinnyjeansB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_skinnyjeans_b_0">;
-export type AvatarItemDisplayNPantsSkinnyjeansB1 = AvatarItemDisplay<"N_DISPLAY_n_pants_skinnyjeans_b_1">;
-export type AvatarItemDisplayNPantsSkinnyjeansB2 = AvatarItemDisplay<"N_DISPLAY_n_pants_skinnyjeans_b_2">;
-export type AvatarItemDisplayNPantsSs0 = AvatarItemDisplay<"N_DISPLAY_n_pants_ss_0">;
-export type AvatarItemDisplayNPantsSteven0 = AvatarItemDisplay<"N_DISPLAY_n_pants_steven_0">;
-export type AvatarItemDisplayNPantsStevenfirst0 = AvatarItemDisplay<"N_DISPLAY_n_pants_stevenfirst_0">;
-export type AvatarItemDisplayNPantsSweats0 = AvatarItemDisplay<"N_DISPLAY_n_pants_sweats_0">;
-export type AvatarItemDisplayNPantsSweats1 = AvatarItemDisplay<"N_DISPLAY_n_pants_sweats_1">;
-export type AvatarItemDisplayNPantsSweats2 = AvatarItemDisplay<"N_DISPLAY_n_pants_sweats_2">;
-export type AvatarItemDisplayNPantsSweats3 = AvatarItemDisplay<"N_DISPLAY_n_pants_sweats_3">;
-export type AvatarItemDisplayNPantsSweats4 = AvatarItemDisplay<"N_DISPLAY_n_pants_sweats_4">;
-export type AvatarItemDisplayNPantsSwshuniformchampion0 = AvatarItemDisplay<"N_DISPLAY_n_pants_swshuniformchampion_0">;
-export type AvatarItemDisplayNPantsSwshuniformdarkA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_swshuniformdark_a_0">;
-export type AvatarItemDisplayNPantsSwshuniformdarkB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_swshuniformdark_b_0">;
-export type AvatarItemDisplayNPantsSwshuniformdefaultA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_swshuniformdefault_a_0">;
-export type AvatarItemDisplayNPantsSwshuniformdefaultB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_swshuniformdefault_b_0">;
-export type AvatarItemDisplayNPantsSwshuniformdragonA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_swshuniformdragon_a_0">;
-export type AvatarItemDisplayNPantsSwshuniformdragonB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_swshuniformdragon_b_0">;
-export type AvatarItemDisplayNPantsTeamaquaA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_teamaqua_a_0">;
-export type AvatarItemDisplayNPantsTeamaquaB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_teamaqua_b_0">;
-export type AvatarItemDisplayNPantsTeamblancheA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_teamblanche_a_0">;
-export type AvatarItemDisplayNPantsTeamblancheB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_teamblanche_b_0">;
-export type AvatarItemDisplayNPantsTeamcandelaA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_teamcandela_a_0">;
-export type AvatarItemDisplayNPantsTeamcandelaB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_teamcandela_b_0">;
-export type AvatarItemDisplayNPantsTeammagmaA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_teammagma_a_0">;
-export type AvatarItemDisplayNPantsTeammagmaB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_teammagma_b_0">;
-export type AvatarItemDisplayNPantsTeamrocketA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_teamrocket_a_0">;
-export type AvatarItemDisplayNPantsTeamrocketB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_teamrocket_b_0">;
-export type AvatarItemDisplayNPantsTeamskullA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_teamskull_a_0">;
-export type AvatarItemDisplayNPantsTeamskullB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_teamskull_b_0">;
-export type AvatarItemDisplayNPantsTeamsparkA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_teamspark_a_0">;
-export type AvatarItemDisplayNPantsTeamsparkB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_teamspark_b_0">;
-export type AvatarItemDisplayNPantsTeamyellgruntsPants0 = AvatarItemDisplay<"N_DISPLAY_n_pants_teamyellgrunts-pants_0">;
-export type AvatarItemDisplayNPantsTeamyellgruntsSkirt0 = AvatarItemDisplay<"N_DISPLAY_n_pants_teamyellgrunts-skirt_0">;
-export type AvatarItemDisplayNPantsTurbine0 = AvatarItemDisplay<"N_DISPLAY_n_pants_turbine_0">;
-export type AvatarItemDisplayNPantsTurbine1 = AvatarItemDisplay<"N_DISPLAY_n_pants_turbine_1">;
-export type AvatarItemDisplayNPantsTurbine2 = AvatarItemDisplay<"N_DISPLAY_n_pants_turbine_2">;
-export type AvatarItemDisplayNPantsUltraA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_ultra_a_0">;
-export type AvatarItemDisplayNPantsUltraB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_ultra_b_0">;
-export type AvatarItemDisplayNPantsVeterantrainerxyA0 = AvatarItemDisplay<"N_DISPLAY_n_pants_veterantrainerxy_a_0">;
-export type AvatarItemDisplayNPantsVeterantrainerxyB0 = AvatarItemDisplay<"N_DISPLAY_n_pants_veterantrainerxy_b_0">;
-export type AvatarItemDisplayNPantsWcs2022winnersitems0 = AvatarItemDisplay<"N_DISPLAY_n_pants_wcs2022winnersitems_0">;
-export type AvatarItemDisplayNPantsWcs2024winnersitems0 = AvatarItemDisplay<"N_DISPLAY_n_pants_wcs2024winnersitems_0">;
-export type AvatarItemDisplayNPantsWcs2025winnersitems0 = AvatarItemDisplay<"N_DISPLAY_n_pants_wcs2025winnersitems_0">;
-export type AvatarItemDisplayNPose001 = AvatarItemDisplay<"N_DISPLAY_n_pose_001">;
-export type AvatarItemDisplayNPose002 = AvatarItemDisplay<"N_DISPLAY_n_pose_002">;
-export type AvatarItemDisplayNPose003 = AvatarItemDisplay<"N_DISPLAY_n_pose_003">;
-export type AvatarItemDisplayNPose004 = AvatarItemDisplay<"N_DISPLAY_n_pose_004">;
-export type AvatarItemDisplayNPose005 = AvatarItemDisplay<"N_DISPLAY_n_pose_005">;
-export type AvatarItemDisplayNPose006 = AvatarItemDisplay<"N_DISPLAY_n_pose_006">;
-export type AvatarItemDisplayNPose007 = AvatarItemDisplay<"N_DISPLAY_n_pose_007">;
-export type AvatarItemDisplayNPose008 = AvatarItemDisplay<"N_DISPLAY_n_pose_008">;
-export type AvatarItemDisplayNPose009 = AvatarItemDisplay<"N_DISPLAY_n_pose_009">;
-export type AvatarItemDisplayNPose010 = AvatarItemDisplay<"N_DISPLAY_n_pose_010">;
-export type AvatarItemDisplayNPose011 = AvatarItemDisplay<"N_DISPLAY_n_pose_011">;
-export type AvatarItemDisplayNPose012 = AvatarItemDisplay<"N_DISPLAY_n_pose_012">;
-export type AvatarItemDisplayNPose013 = AvatarItemDisplay<"N_DISPLAY_n_pose_013">;
-export type AvatarItemDisplayNPose014 = AvatarItemDisplay<"N_DISPLAY_n_pose_014">;
-export type AvatarItemDisplayNPose015 = AvatarItemDisplay<"N_DISPLAY_n_pose_015">;
-export type AvatarItemDisplayNPose016 = AvatarItemDisplay<"N_DISPLAY_n_pose_016">;
-export type AvatarItemDisplayNPose017 = AvatarItemDisplay<"N_DISPLAY_n_pose_017">;
-export type AvatarItemDisplayNPose018 = AvatarItemDisplay<"N_DISPLAY_n_pose_018">;
-export type AvatarItemDisplayNPose019 = AvatarItemDisplay<"N_DISPLAY_n_pose_019">;
-export type AvatarItemDisplayNPose020 = AvatarItemDisplay<"N_DISPLAY_n_pose_020">;
-export type AvatarItemDisplayNPose021 = AvatarItemDisplay<"N_DISPLAY_n_pose_021">;
-export type AvatarItemDisplayNPose022 = AvatarItemDisplay<"N_DISPLAY_n_pose_022">;
-export type AvatarItemDisplayNPose023 = AvatarItemDisplay<"N_DISPLAY_n_pose_023">;
-export type AvatarItemDisplayNPose024 = AvatarItemDisplay<"N_DISPLAY_n_pose_024">;
-export type AvatarItemDisplayNPose025 = AvatarItemDisplay<"N_DISPLAY_n_pose_025">;
-export type AvatarItemDisplayNPose026 = AvatarItemDisplay<"N_DISPLAY_n_pose_026">;
-export type AvatarItemDisplayNPose027 = AvatarItemDisplay<"N_DISPLAY_n_pose_027">;
-export type AvatarItemDisplayNPose028 = AvatarItemDisplay<"N_DISPLAY_n_pose_028">;
-export type AvatarItemDisplayNPose029 = AvatarItemDisplay<"N_DISPLAY_n_pose_029">;
-export type AvatarItemDisplayNPose030 = AvatarItemDisplay<"N_DISPLAY_n_pose_030">;
-export type AvatarItemDisplayNPose031 = AvatarItemDisplay<"N_DISPLAY_n_pose_031">;
-export type AvatarItemDisplayNPose032 = AvatarItemDisplay<"N_DISPLAY_n_pose_032">;
-export type AvatarItemDisplayNPose032A = AvatarItemDisplay<"N_DISPLAY_n_pose_032_a">;
-export type AvatarItemDisplayNPose033 = AvatarItemDisplay<"N_DISPLAY_n_pose_033">;
-export type AvatarItemDisplayNPose034 = AvatarItemDisplay<"N_DISPLAY_n_pose_034">;
-export type AvatarItemDisplayNPose035 = AvatarItemDisplay<"N_DISPLAY_n_pose_035">;
-export type AvatarItemDisplayNPose036 = AvatarItemDisplay<"N_DISPLAY_n_pose_036">;
-export type AvatarItemDisplayNPose037 = AvatarItemDisplay<"N_DISPLAY_n_pose_037">;
-export type AvatarItemDisplayNPose038 = AvatarItemDisplay<"N_DISPLAY_n_pose_038">;
-export type AvatarItemDisplayNPose039 = AvatarItemDisplay<"N_DISPLAY_n_pose_039">;
-export type AvatarItemDisplayNPose040 = AvatarItemDisplay<"N_DISPLAY_n_pose_040">;
-export type AvatarItemDisplayNPose041 = AvatarItemDisplay<"N_DISPLAY_n_pose_041">;
-export type AvatarItemDisplayNPose042 = AvatarItemDisplay<"N_DISPLAY_n_pose_042">;
-export type AvatarItemDisplayNPose043 = AvatarItemDisplay<"N_DISPLAY_n_pose_043">;
-export type AvatarItemDisplayNPose044 = AvatarItemDisplay<"N_DISPLAY_n_pose_044">;
-export type AvatarItemDisplayNPose045 = AvatarItemDisplay<"N_DISPLAY_n_pose_045">;
-export type AvatarItemDisplayNPose046 = AvatarItemDisplay<"N_DISPLAY_n_pose_046">;
-export type AvatarItemDisplayNPose047 = AvatarItemDisplay<"N_DISPLAY_n_pose_047">;
-export type AvatarItemDisplayNPose048 = AvatarItemDisplay<"N_DISPLAY_n_pose_048">;
-export type AvatarItemDisplayNPose049 = AvatarItemDisplay<"N_DISPLAY_n_pose_049">;
-export type AvatarItemDisplayNPose050 = AvatarItemDisplay<"N_DISPLAY_n_pose_050">;
-export type AvatarItemDisplayNPose051 = AvatarItemDisplay<"N_DISPLAY_n_pose_051">;
-export type AvatarItemDisplayNPose052 = AvatarItemDisplay<"N_DISPLAY_n_pose_052">;
-export type AvatarItemDisplayNPose053 = AvatarItemDisplay<"N_DISPLAY_n_pose_053">;
-export type AvatarItemDisplayNPose054 = AvatarItemDisplay<"N_DISPLAY_n_pose_054">;
-export type AvatarItemDisplayNPose055 = AvatarItemDisplay<"N_DISPLAY_n_pose_055">;
-export type AvatarItemDisplayNPose056 = AvatarItemDisplay<"N_DISPLAY_n_pose_056">;
-export type AvatarItemDisplayNPose057 = AvatarItemDisplay<"N_DISPLAY_n_pose_057">;
-export type AvatarItemDisplayNPose058 = AvatarItemDisplay<"N_DISPLAY_n_pose_058">;
-export type AvatarItemDisplayNPose059 = AvatarItemDisplay<"N_DISPLAY_n_pose_059">;
-export type AvatarItemDisplayNPose060 = AvatarItemDisplay<"N_DISPLAY_n_pose_060">;
-export type AvatarItemDisplayNPose061 = AvatarItemDisplay<"N_DISPLAY_n_pose_061">;
-export type AvatarItemDisplayNPose062 = AvatarItemDisplay<"N_DISPLAY_n_pose_062">;
-export type AvatarItemDisplayNPose063 = AvatarItemDisplay<"N_DISPLAY_n_pose_063">;
-export type AvatarItemDisplayNPose064 = AvatarItemDisplay<"N_DISPLAY_n_pose_064">;
-export type AvatarItemDisplayNPose065 = AvatarItemDisplay<"N_DISPLAY_n_pose_065">;
-export type AvatarItemDisplayNPose066 = AvatarItemDisplay<"N_DISPLAY_n_pose_066">;
-export type AvatarItemDisplayNPose067 = AvatarItemDisplay<"N_DISPLAY_n_pose_067">;
-export type AvatarItemDisplayNPose068 = AvatarItemDisplay<"N_DISPLAY_n_pose_068">;
-export type AvatarItemDisplayNPoseBuddypokeball = AvatarItemDisplay<"N_DISPLAY_n_pose_buddypokeball">;
-export type AvatarItemDisplayNPoseCarnival = AvatarItemDisplay<"N_DISPLAY_n_pose_carnival">;
-export type AvatarItemDisplayNPoseCommunityambassador = AvatarItemDisplay<"N_DISPLAY_n_pose_communityambassador">;
-export type AvatarItemDisplayNPoseConcierge = AvatarItemDisplay<"N_DISPLAY_n_pose_concierge">;
-export type AvatarItemDisplayNPoseEmpty = AvatarItemDisplay<"N_DISPLAY_n_pose_empty">;
-export type AvatarItemDisplayNPoseFashionweek2025 = AvatarItemDisplay<"N_DISPLAY_n_pose_fashionweek2025">;
-export type AvatarItemDisplayNPoseGofest2025 = AvatarItemDisplay<"N_DISPLAY_n_pose_gofest2025">;
-export type AvatarItemDisplayNPoseGrowingup = AvatarItemDisplay<"N_DISPLAY_n_pose_growingup">;
-export type AvatarItemDisplayNPoseGrusha = AvatarItemDisplay<"N_DISPLAY_n_pose_grusha">;
-export type AvatarItemDisplayNPoseHeart = AvatarItemDisplay<"N_DISPLAY_n_pose_heart">;
-export type AvatarItemDisplayNPoseIdle = AvatarItemDisplay<"N_DISPLAY_n_pose_idle">;
-export type AvatarItemDisplayNPoseIdleA = AvatarItemDisplay<"N_DISPLAY_n_pose_idle_a">;
-export type AvatarItemDisplayNPoseIdleB = AvatarItemDisplay<"N_DISPLAY_n_pose_idle_b">;
-export type AvatarItemDisplayNPoseLegacy50 = AvatarItemDisplay<"N_DISPLAY_n_pose_legacy50">;
-export type AvatarItemDisplayNPoseLvl77 = AvatarItemDisplay<"N_DISPLAY_n_pose_lvl77">;
-export type AvatarItemDisplayNPoseMustard = AvatarItemDisplay<"N_DISPLAY_n_pose_mustard">;
-export type AvatarItemDisplayNPosePenpal = AvatarItemDisplay<"N_DISPLAY_n_pose_penpal">;
-export type AvatarItemDisplayNPoseS16finale = AvatarItemDisplay<"N_DISPLAY_n_pose_s16finale">;
-export type AvatarItemDisplayNPoseS19gbl = AvatarItemDisplay<"N_DISPLAY_n_pose_s19gbl">;
-export type AvatarItemDisplayNPoseS20gbl = AvatarItemDisplay<"N_DISPLAY_n_pose_s20gbl">;
-export type AvatarItemDisplayNPoseS22gbl = AvatarItemDisplay<"N_DISPLAY_n_pose_s22gbl">;
-export type AvatarItemDisplayNPoseSustainability = AvatarItemDisplay<"N_DISPLAY_n_pose_sustainability">;
-export type AvatarItemDisplayNPoseTeapot = AvatarItemDisplay<"N_DISPLAY_n_pose_teapot">;
-export type AvatarItemDisplayNPoseTinkatonhammer = AvatarItemDisplay<"N_DISPLAY_n_pose_tinkatonhammer">;
-export type AvatarItemDisplayNPoseUrshifurapidstrike = AvatarItemDisplay<"N_DISPLAY_n_pose_urshifurapidstrike">;
-export type AvatarItemDisplayNPoseUrshifusinglestrike = AvatarItemDisplay<"N_DISPLAY_n_pose_urshifusinglestrike">;
-export type AvatarItemDisplayNPoseWaterfestival = AvatarItemDisplay<"N_DISPLAY_n_pose_waterfestival">;
-export type AvatarItemDisplayNShirt6thanniversaryA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_6thanniversary_a_0">;
-export type AvatarItemDisplayNShirt6thanniversaryB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_6thanniversary_b_0">;
-export type AvatarItemDisplayNShirt7thanniversary0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_7thanniversary_0">;
-export type AvatarItemDisplayNShirtAcetrainerbwA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_acetrainerbw_a_0">;
-export type AvatarItemDisplayNShirtAcetrainerbwB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_acetrainerbw_b_0">;
-export type AvatarItemDisplayNShirtAcetrainersmA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_acetrainersm_a_0">;
-export type AvatarItemDisplayNShirtAcetrainersmB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_acetrainersm_b_0">;
-export type AvatarItemDisplayNShirtAllister0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_allister_0">;
-export type AvatarItemDisplayNShirtAlolacomfey0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_alolacomfey_0">;
-export type AvatarItemDisplayNShirtAnimegou0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_animegou_0">;
-export type AvatarItemDisplayNShirtApplinitems0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_applinitems_0">;
-export type AvatarItemDisplayNShirtAseries0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_aseries_0">;
-export type AvatarItemDisplayNShirtBackpackerA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_backpacker_a_0">;
-export type AvatarItemDisplayNShirtBackpackerB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_backpacker_b_0">;
-export type AvatarItemDisplayNShirtBallguy0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ballguy_0">;
-export type AvatarItemDisplayNShirtBattlegirl0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_battlegirl_0">;
-export type AvatarItemDisplayNShirtBeaA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_bea_a_0">;
-export type AvatarItemDisplayNShirtBeaB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_bea_b_0">;
-export type AvatarItemDisplayNShirtBewearcostume0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_bewearcostume_0">;
-export type AvatarItemDisplayNShirtBlackwhite0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_blackwhite_0">;
-export type AvatarItemDisplayNShirtBlazer0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_blazer_0">;
-export type AvatarItemDisplayNShirtBounsweetitemsA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_bounsweetitems_a_0">;
-export type AvatarItemDisplayNShirtBounsweetitemsB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_bounsweetitems_b_0">;
-export type AvatarItemDisplayNShirtBrock0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_brock_0">;
-export type AvatarItemDisplayNShirtButtondown0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_buttondown_0">;
-export type AvatarItemDisplayNShirtBuzzwoleitems0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_buzzwoleitems_0">;
-export type AvatarItemDisplayNShirtBwn0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_bwn_0">;
-export type AvatarItemDisplayNShirtCasualA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_casual_a_0">;
-export type AvatarItemDisplayNShirtCasualA1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_casual_a_1">;
-export type AvatarItemDisplayNShirtCasualA2 = AvatarItemDisplay<"N_DISPLAY_n_shirt_casual_a_2">;
-export type AvatarItemDisplayNShirtCasualA3 = AvatarItemDisplay<"N_DISPLAY_n_shirt_casual_a_3">;
-export type AvatarItemDisplayNShirtCasualB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_casual_b_0">;
-export type AvatarItemDisplayNShirtCasualB1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_casual_b_1">;
-export type AvatarItemDisplayNShirtCasualB2 = AvatarItemDisplay<"N_DISPLAY_n_shirt_casual_b_2">;
-export type AvatarItemDisplayNShirtCasualB3 = AvatarItemDisplay<"N_DISPLAY_n_shirt_casual_b_3">;
-export type AvatarItemDisplayNShirtCelebi0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_celebi_0">;
-export type AvatarItemDisplayNShirtChimcharonesie0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_chimcharonesie_0">;
-export type AvatarItemDisplayNShirtClay0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_clay_0">;
-export type AvatarItemDisplayNShirtClemont0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_clemont_0">;
-export type AvatarItemDisplayNShirtCofagrigusitems0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_cofagrigusitems_0">;
-export type AvatarItemDisplayNShirtConcierge0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_concierge_0">;
-export type AvatarItemDisplayNShirtCosmog0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_cosmog_0">;
-export type AvatarItemDisplayNShirtCowichansweater0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_cowichansweater_0">;
-export type AvatarItemDisplayNShirtDayofdead0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_dayofdead_0">;
-export type AvatarItemDisplayNShirtDefaultNew0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_default-new_0">;
-export type AvatarItemDisplayNShirtDefaultA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_default_a_0">;
-export type AvatarItemDisplayNShirtDefaultA1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_default_a_1">;
-export type AvatarItemDisplayNShirtDefaultA2 = AvatarItemDisplay<"N_DISPLAY_n_shirt_default_a_2">;
-export type AvatarItemDisplayNShirtDefaultA3 = AvatarItemDisplay<"N_DISPLAY_n_shirt_default_a_3">;
-export type AvatarItemDisplayNShirtDefaultA4 = AvatarItemDisplay<"N_DISPLAY_n_shirt_default_a_4">;
-export type AvatarItemDisplayNShirtDefaultA5 = AvatarItemDisplay<"N_DISPLAY_n_shirt_default_a_5">;
-export type AvatarItemDisplayNShirtDefaultA6 = AvatarItemDisplay<"N_DISPLAY_n_shirt_default_a_6">;
-export type AvatarItemDisplayNShirtDefaultA7 = AvatarItemDisplay<"N_DISPLAY_n_shirt_default_a_7">;
-export type AvatarItemDisplayNShirtDefaultA8 = AvatarItemDisplay<"N_DISPLAY_n_shirt_default_a_8">;
-export type AvatarItemDisplayNShirtDefaultB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_default_b_0">;
-export type AvatarItemDisplayNShirtDefaultB1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_default_b_1">;
-export type AvatarItemDisplayNShirtDefaultB2 = AvatarItemDisplay<"N_DISPLAY_n_shirt_default_b_2">;
-export type AvatarItemDisplayNShirtDefaultB3 = AvatarItemDisplay<"N_DISPLAY_n_shirt_default_b_3">;
-export type AvatarItemDisplayNShirtDefaultB4 = AvatarItemDisplay<"N_DISPLAY_n_shirt_default_b_4">;
-export type AvatarItemDisplayNShirtDefaultB5 = AvatarItemDisplay<"N_DISPLAY_n_shirt_default_b_5">;
-export type AvatarItemDisplayNShirtDefaultB6 = AvatarItemDisplay<"N_DISPLAY_n_shirt_default_b_6">;
-export type AvatarItemDisplayNShirtDefaultB7 = AvatarItemDisplay<"N_DISPLAY_n_shirt_default_b_7">;
-export type AvatarItemDisplayNShirtDefaultB8 = AvatarItemDisplay<"N_DISPLAY_n_shirt_default_b_8">;
-export type AvatarItemDisplayNShirtDelibird0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_delibird_0">;
-export type AvatarItemDisplayNShirtDelibirdonesie0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_delibirdonesie_0">;
-export type AvatarItemDisplayNShirtDenimfashionweek20230 = AvatarItemDisplay<"N_DISPLAY_n_shirt_denimfashionweek2023_0">;
-export type AvatarItemDisplayNShirtDenimjacket0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_denimjacket_0">;
-export type AvatarItemDisplayNShirtDetectivepikachu0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_detectivepikachu_0">;
-export type AvatarItemDisplayNShirtDiancie0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_diancie_0">;
-export type AvatarItemDisplayNShirtDisguiseHoodoff0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_disguise-hoodoff_0">;
-export type AvatarItemDisplayNShirtDisguiseHoodon0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_disguise-hoodon_0">;
-export type AvatarItemDisplayNShirtDivingsuit0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_divingsuit_0">;
-export type AvatarItemDisplayNShirtDiwali20210 = AvatarItemDisplay<"N_DISPLAY_n_shirt_diwali2021_0">;
-export type AvatarItemDisplayNShirtDpA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_dp_a_0">;
-export type AvatarItemDisplayNShirtDpB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_dp_b_0">;
-export type AvatarItemDisplayNShirtDrifblim0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_drifblim_0">;
-export type AvatarItemDisplayNShirtDudunsparceitem0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_dudunsparceitem_0">;
-export type AvatarItemDisplayNShirtDusclopsmummy0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_dusclopsmummy_0">;
-export type AvatarItemDisplayNShirtEarthday20180 = AvatarItemDisplay<"N_DISPLAY_n_shirt_earthday-2018_0">;
-export type AvatarItemDisplayNShirtEeveestshirt000 = AvatarItemDisplay<"N_DISPLAY_n_shirt_eeveestshirt-00_0">;
-export type AvatarItemDisplayNShirtEeveestshirt010 = AvatarItemDisplay<"N_DISPLAY_n_shirt_eeveestshirt-01_0">;
-export type AvatarItemDisplayNShirtEeveestshirt020 = AvatarItemDisplay<"N_DISPLAY_n_shirt_eeveestshirt-02_0">;
-export type AvatarItemDisplayNShirtEeveestshirt030 = AvatarItemDisplay<"N_DISPLAY_n_shirt_eeveestshirt-03_0">;
-export type AvatarItemDisplayNShirtEeveestshirt040 = AvatarItemDisplay<"N_DISPLAY_n_shirt_eeveestshirt-04_0">;
-export type AvatarItemDisplayNShirtEeveestshirt050 = AvatarItemDisplay<"N_DISPLAY_n_shirt_eeveestshirt-05_0">;
-export type AvatarItemDisplayNShirtEeveestshirt060 = AvatarItemDisplay<"N_DISPLAY_n_shirt_eeveestshirt-06_0">;
-export type AvatarItemDisplayNShirtEeveestshirt070 = AvatarItemDisplay<"N_DISPLAY_n_shirt_eeveestshirt-07_0">;
-export type AvatarItemDisplayNShirtEeveestshirt080 = AvatarItemDisplay<"N_DISPLAY_n_shirt_eeveestshirt-08_0">;
-export type AvatarItemDisplayNShirtElesaA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_elesa_a_0">;
-export type AvatarItemDisplayNShirtElesaB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_elesa_b_0">;
-export type AvatarItemDisplayNShirtEternatussuit0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_eternatussuit_0">;
-export type AvatarItemDisplayNShirtFashionweek20220 = AvatarItemDisplay<"N_DISPLAY_n_shirt_fashionweek2022_0">;
-export type AvatarItemDisplayNShirtFashionweek20250 = AvatarItemDisplay<"N_DISPLAY_n_shirt_fashionweek2025_0">;
-export type AvatarItemDisplayNShirtFestivaloflights000 = AvatarItemDisplay<"N_DISPLAY_n_shirt_festivaloflights-00_0">;
-export type AvatarItemDisplayNShirtFestivaloflights010 = AvatarItemDisplay<"N_DISPLAY_n_shirt_festivaloflights-01_0">;
-export type AvatarItemDisplayNShirtFisher0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_fisher_0">;
-export type AvatarItemDisplayNShirtFlabebepack0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_flabebepack_0">;
-export type AvatarItemDisplayNShirtFragment0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_fragment_0">;
-export type AvatarItemDisplayNShirtFrlgA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_frlg_a_0">;
-export type AvatarItemDisplayNShirtFrlgB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_frlg_b_0">;
-export type AvatarItemDisplayNShirtFw2022A0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_fw2022_a_0">;
-export type AvatarItemDisplayNShirtFw2022B0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_fw2022_b_0">;
-export type AvatarItemDisplayNShirtGalarfarfetchditems0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_galarfarfetchditems_0">;
-export type AvatarItemDisplayNShirtGalaxyoutfitA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_galaxyoutfit_a_0">;
-export type AvatarItemDisplayNShirtGalaxyoutfitB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_galaxyoutfit_b_0">;
-export type AvatarItemDisplayNShirtGeeta0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_geeta_0">;
-export type AvatarItemDisplayNShirtGenderlessskirt0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_genderlessskirt_0">;
-export type AvatarItemDisplayNShirtGengar0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gengar_0">;
-export type AvatarItemDisplayNShirtGengaronesie0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gengaronesie_0">;
-export type AvatarItemDisplayNShirtGiovanniA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_giovanni_a_0">;
-export type AvatarItemDisplayNShirtGiovanniB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_giovanni_b_0">;
-export type AvatarItemDisplayNShirtGiratinaitems0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_giratinaitems_0">;
-export type AvatarItemDisplayNShirtGladion0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gladion_0">;
-export type AvatarItemDisplayNShirtGofest20190 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gofest-2019_0">;
-export type AvatarItemDisplayNShirtGofest20200 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gofest-2020_0">;
-export type AvatarItemDisplayNShirtGofest20210 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gofest-2021_0">;
-export type AvatarItemDisplayNShirtGofest20220 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gofest2022_0">;
-export type AvatarItemDisplayNShirtGofest20230 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gofest2023_0">;
-export type AvatarItemDisplayNShirtGofest2024darkgray0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gofest2024darkgray_0">;
-export type AvatarItemDisplayNShirtGofest2024gray0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gofest2024gray_0">;
-export type AvatarItemDisplayNShirtGofest2024purple0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gofest2024purple_0">;
-export type AvatarItemDisplayNShirtGofest20250 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gofest2025_0">;
-export type AvatarItemDisplayNShirtGofest2025cream0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gofest2025cream_0">;
-export type AvatarItemDisplayNShirtGofestglobal20230 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gofestglobal2023_0">;
-export type AvatarItemDisplayNShirtGoteamrocketarloA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_goteamrocketarlo_a_0">;
-export type AvatarItemDisplayNShirtGoteamrocketarloB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_goteamrocketarlo_b_0">;
-export type AvatarItemDisplayNShirtGoteamrocketcliffA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_goteamrocketcliff_a_0">;
-export type AvatarItemDisplayNShirtGoteamrocketcliffB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_goteamrocketcliff_b_0">;
-export type AvatarItemDisplayNShirtGoteamrocketsierraA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_goteamrocketsierra_a_0">;
-export type AvatarItemDisplayNShirtGoteamrocketsierraB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_goteamrocketsierra_b_0">;
-export type AvatarItemDisplayNShirtGothitelleitems0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gothitelleitems_0">;
-export type AvatarItemDisplayNShirtGotour20230 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gotour2023_0">;
-export type AvatarItemDisplayNShirtGotour20240 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gotour2024_0">;
-export type AvatarItemDisplayNShirtGotour20250 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gotour2025_0">;
-export type AvatarItemDisplayNShirtGotour20251 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gotour2025_1">;
-export type AvatarItemDisplayNShirtGotour20252 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gotour2025_2">;
-export type AvatarItemDisplayNShirtGotour2026Black0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gotour2026-black_0">;
-export type AvatarItemDisplayNShirtGotour2026Gray0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gotour2026-gray_0">;
-export type AvatarItemDisplayNShirtGowa20240 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gowa2024_0">;
-export type AvatarItemDisplayNShirtGowa20250 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gowa2025_0">;
-export type AvatarItemDisplayNShirtGowa20251 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gowa2025_1">;
-export type AvatarItemDisplayNShirtGreedentsweater0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_greedentsweater_0">;
-export type AvatarItemDisplayNShirtGreen0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_green_0">;
-export type AvatarItemDisplayNShirtGreencoat0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_greencoat_0">;
-export type AvatarItemDisplayNShirtGreenpikavee0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_greenpikavee_0">;
-export type AvatarItemDisplayNShirtGrimsley0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_grimsley_0">;
-export type AvatarItemDisplayNShirtGrusha0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_grusha_0">;
-export type AvatarItemDisplayNShirtGtrtshirt20220 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gtrtshirt2022_0">;
-export type AvatarItemDisplayNShirtGtrtshirt20221 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gtrtshirt2022_1">;
-export type AvatarItemDisplayNShirtGuccitshirts0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_guccitshirts_0">;
-export type AvatarItemDisplayNShirtGuzma0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_guzma_0">;
-export type AvatarItemDisplayNShirtGymleaderA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gymleader_a_0">;
-export type AvatarItemDisplayNShirtGymleaderA1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gymleader_a_1">;
-export type AvatarItemDisplayNShirtGymleaderA2 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gymleader_a_2">;
-export type AvatarItemDisplayNShirtGymleaderB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gymleader_b_0">;
-export type AvatarItemDisplayNShirtGymleaderB1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gymleader_b_1">;
-export type AvatarItemDisplayNShirtGymleaderB2 = AvatarItemDisplay<"N_DISPLAY_n_shirt_gymleader_b_2">;
-export type AvatarItemDisplayNShirtHala0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_hala_0">;
-export type AvatarItemDisplayNShirtHalloween20240 = AvatarItemDisplay<"N_DISPLAY_n_shirt_halloween2024_0">;
-export type AvatarItemDisplayNShirtHappi0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_happi_0">;
-export type AvatarItemDisplayNShirtHappi1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_happi_1">;
-export type AvatarItemDisplayNShirtHappi2 = AvatarItemDisplay<"N_DISPLAY_n_shirt_happi_2">;
-export type AvatarItemDisplayNShirtHgssA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_hgss_a_0">;
-export type AvatarItemDisplayNShirtHgssB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_hgss_b_0">;
-export type AvatarItemDisplayNShirtHoliday2022santacostumes0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_holiday2022santacostumes_0">;
-export type AvatarItemDisplayNShirtHoliday2024Marshtompsweater0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_holiday2024-marshtompsweater_0">;
-export type AvatarItemDisplayNShirtHoliday2024Staryusweater0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_holiday2024-staryusweater_0">;
-export type AvatarItemDisplayNShirtHoliday2024Wooloojacket0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_holiday2024-wooloojacket_0">;
-export type AvatarItemDisplayNShirtHolifestival2021black0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_holifestival2021black_0">;
-export type AvatarItemDisplayNShirtHolifestival2021white0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_holifestival2021white_0">;
-export type AvatarItemDisplayNShirtHoopaunboundtshirt0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_hoopaunboundtshirt_0">;
-export type AvatarItemDisplayNShirtIngo0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ingo_0">;
-export type AvatarItemDisplayNShirtIngressE0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ingress-e_0">;
-export type AvatarItemDisplayNShirtIngressR0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ingress-r_0">;
-export type AvatarItemDisplayNShirtIngress0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ingress_0">;
-export type AvatarItemDisplayNShirtJacketNewyear20220 = AvatarItemDisplay<"N_DISPLAY_n_shirt_jacket-newyear2022_0">;
-export type AvatarItemDisplayNShirtJames0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_james_0">;
-export type AvatarItemDisplayNShirtJessie0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_jessie_0">;
-export type AvatarItemDisplayNShirtJirachi0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_jirachi_0">;
-export type AvatarItemDisplayNShirtJogger0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_jogger_0">;
-export type AvatarItemDisplayNShirtKeldeotshirt0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_keldeotshirt_0">;
-export type AvatarItemDisplayNShirtKorrinaA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_korrina_a_0">;
-export type AvatarItemDisplayNShirtKorrinaB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_korrina_b_0">;
-export type AvatarItemDisplayNShirtLadiamondoutfitA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ladiamondoutfit_a_0">;
-export type AvatarItemDisplayNShirtLadiamondoutfitB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ladiamondoutfit_b_0">;
-export type AvatarItemDisplayNShirtLana0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_lana_0">;
-export type AvatarItemDisplayNShirtLapearloutfitA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_lapearloutfit_a_0">;
-export type AvatarItemDisplayNShirtLapearloutfitB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_lapearloutfit_b_0">;
-export type AvatarItemDisplayNShirtLasecuritycorpsA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_lasecuritycorps_a_0">;
-export type AvatarItemDisplayNShirtLasecuritycorpsB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_lasecuritycorps_b_0">;
-export type AvatarItemDisplayNShirtLatiasLatios0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_latias-latios_0">;
-export type AvatarItemDisplayNShirtLegendofarceusA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_legendofarceus_a_0">;
-export type AvatarItemDisplayNShirtLegendofarceusB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_legendofarceus_b_0">;
-export type AvatarItemDisplayNShirtLongsleevesCharizard0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_longsleeves-charizard_0">;
-export type AvatarItemDisplayNShirtLongsleevesCharizard1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_longsleeves-charizard_1">;
-export type AvatarItemDisplayNShirtLongsleevesCharizard2 = AvatarItemDisplay<"N_DISPLAY_n_shirt_longsleeves-charizard_2">;
-export type AvatarItemDisplayNShirtLongsleevesPikachu0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_longsleeves-pikachu_0">;
-export type AvatarItemDisplayNShirtLongsleevesPikachu1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_longsleeves-pikachu_1">;
-export type AvatarItemDisplayNShirtLongsleevesPikachu2 = AvatarItemDisplay<"N_DISPLAY_n_shirt_longsleeves-pikachu_2">;
-export type AvatarItemDisplayNShirtLooseFitting0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_loose-fitting_0">;
-export type AvatarItemDisplayNShirtLooseFitting1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_loose-fitting_1">;
-export type AvatarItemDisplayNShirtLuvdiscpackA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_luvdiscpack_a_0">;
-export type AvatarItemDisplayNShirtLuvdiscpackB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_luvdiscpack_b_0">;
-export type AvatarItemDisplayNShirtLvl500 = AvatarItemDisplay<"N_DISPLAY_n_shirt_lvl50_0">;
-export type AvatarItemDisplayNShirtLvl501 = AvatarItemDisplay<"N_DISPLAY_n_shirt_lvl50_1">;
-export type AvatarItemDisplayNShirtLvl80Circuitjacket0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_lvl80-circuitjacket_0">;
-export type AvatarItemDisplayNShirtLysandre0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_lysandre_0">;
-export type AvatarItemDisplayNShirtMarshadowtshirt0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_marshadowtshirt_0">;
-export type AvatarItemDisplayNShirtMegalopunnyitems0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_megalopunnyitems_0">;
-export type AvatarItemDisplayNShirtMegarayquaza0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_megarayquaza_0">;
-export type AvatarItemDisplayNShirtMelmetaljacket0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_melmetaljacket_0">;
-export type AvatarItemDisplayNShirtMelmetalvest0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_melmetalvest_0">;
-export type AvatarItemDisplayNShirtMeloettatshirt0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_meloettatshirt_0">;
-export type AvatarItemDisplayNShirtMeltan0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_meltan_0">;
-export type AvatarItemDisplayNShirtMew0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_mew_0">;
-export type AvatarItemDisplayNShirtMewtwoA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_mewtwo_a_0">;
-export type AvatarItemDisplayNShirtMewtwoB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_mewtwo_b_0">;
-export type AvatarItemDisplayNShirtMisty0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_misty_0">;
-export type AvatarItemDisplayNShirtMorpekofullonesie0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_morpekofullonesie_0">;
-export type AvatarItemDisplayNShirtMorpekohangryonesie0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_morpekohangryonesie_0">;
-export type AvatarItemDisplayNShirtMovie2020jessiejamesA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_movie2020jessiejames_a_0">;
-export type AvatarItemDisplayNShirtMovie2020jessiejamesB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_movie2020jessiejames_b_0">;
-export type AvatarItemDisplayNShirtMunnapackA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_munnapack_a_0">;
-export type AvatarItemDisplayNShirtMunnapackB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_munnapack_b_0">;
-export type AvatarItemDisplayNShirtMustard0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_mustard_0">;
-export type AvatarItemDisplayNShirtNaganadelaitems0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_naganadelaitems_0">;
-export type AvatarItemDisplayNShirtNecrozmaitems0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_necrozmaitems_0">;
-export type AvatarItemDisplayNShirtNike20210 = AvatarItemDisplay<"N_DISPLAY_n_shirt_nike2021_0">;
-export type AvatarItemDisplayNShirtOcshirt045A0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ocshirt-045_a_0">;
-export type AvatarItemDisplayNShirtOcshirt045B0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ocshirt-045_b_0">;
-export type AvatarItemDisplayNShirtOcshirt108A0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ocshirt-108_a_0">;
-export type AvatarItemDisplayNShirtOcshirt108B0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ocshirt-108_b_0">;
-export type AvatarItemDisplayNShirtOcshirt129A0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ocshirt-129_a_0">;
-export type AvatarItemDisplayNShirtOcshirt129B0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ocshirt-129_b_0">;
-export type AvatarItemDisplayNShirtOcshirt143A0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ocshirt-143_a_0">;
-export type AvatarItemDisplayNShirtOcshirt143B0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ocshirt-143_b_0">;
-export type AvatarItemDisplayNShirtOrasA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_oras_a_0">;
-export type AvatarItemDisplayNShirtOrasB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_oras_b_0">;
-export type AvatarItemDisplayNShirtPajamas20220 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pajamas2022_0">;
-export type AvatarItemDisplayNShirtPajamas20221 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pajamas2022_1">;
-export type AvatarItemDisplayNShirtPalmer0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_palmer_0">;
-export type AvatarItemDisplayNShirtPartneritemsjan2024hoodie0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_partneritemsjan2024hoodie_0">;
-export type AvatarItemDisplayNShirtPartneritemsjan2024tshirt0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_partneritemsjan2024tshirt_0">;
-export type AvatarItemDisplayNShirtPikachubutlerBlue0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pikachubutler-blue_0">;
-export type AvatarItemDisplayNShirtPikachubutlerRed0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pikachubutler-red_0">;
-export type AvatarItemDisplayNShirtPikachubutlerYellow0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pikachubutler-yellow_0">;
-export type AvatarItemDisplayNShirtPikachufanA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pikachufan_a_0">;
-export type AvatarItemDisplayNShirtPikachufanB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pikachufan_b_0">;
-export type AvatarItemDisplayNShirtPikachulibreA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pikachulibre_a_0">;
-export type AvatarItemDisplayNShirtPikachulibreB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pikachulibre_b_0">;
-export type AvatarItemDisplayNShirtPikachuonesie0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pikachuonesie_0">;
-export type AvatarItemDisplayNShirtPinpukuhoodie0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pinpukuhoodie_0">;
-export type AvatarItemDisplayNShirtPipluponesie0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pipluponesie_0">;
-export type AvatarItemDisplayNShirtPkmnhoodie0010 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pkmnhoodie001_0">;
-export type AvatarItemDisplayNShirtPkmnhoodie0040 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pkmnhoodie004_0">;
-export type AvatarItemDisplayNShirtPkmnhoodie0070 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pkmnhoodie007_0">;
-export type AvatarItemDisplayNShirtPkmnshirts1650 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pkmnshirts-165_0">;
-export type AvatarItemDisplayNShirtPkmnshirts1880 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pkmnshirts-188_0">;
-export type AvatarItemDisplayNShirtPkmnshirts2010 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pkmnshirts-201_0">;
-export type AvatarItemDisplayNShirtPkmnshirts2380 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pkmnshirts-238_0">;
-export type AvatarItemDisplayNShirtPkmnshirts20210 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pkmnshirts2021_0">;
-export type AvatarItemDisplayNShirtPkmnshirts20211 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pkmnshirts2021_1">;
-export type AvatarItemDisplayNShirtPkmnshirts20212 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pkmnshirts2021_2">;
-export type AvatarItemDisplayNShirtPokeballitemsBasic0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pokeballitems-basic_0">;
-export type AvatarItemDisplayNShirtPokeballitemsGreat0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pokeballitems-great_0">;
-export type AvatarItemDisplayNShirtPokeballitemsUltra0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pokeballitems-ultra_0">;
-export type AvatarItemDisplayNShirtPoloshirt0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_poloshirt_0">;
-export type AvatarItemDisplayNShirtPoloshirt1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_poloshirt_1">;
-export type AvatarItemDisplayNShirtPoloshirt2 = AvatarItemDisplay<"N_DISPLAY_n_shirt_poloshirt_2">;
-export type AvatarItemDisplayNShirtProfwillowoutfit0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_profwillowoutfit_0">;
-export type AvatarItemDisplayNShirtProjectguitar0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_projectguitar_0">;
-export type AvatarItemDisplayNShirtPumpkabooitems0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_pumpkabooitems_0">;
-export type AvatarItemDisplayNShirtRegiicejersies0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_regiicejersies_0">;
-export type AvatarItemDisplayNShirtRegirockjersies0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_regirockjersies_0">;
-export type AvatarItemDisplayNShirtRegisteeljersies0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_registeeljersies_0">;
-export type AvatarItemDisplayNShirtReuniclusitems0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_reuniclusitems_0">;
-export type AvatarItemDisplayNShirtRuinmaniacA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ruinmaniac_a_0">;
-export type AvatarItemDisplayNShirtRuinmaniacB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ruinmaniac_b_0">;
-export type AvatarItemDisplayNShirtS19gbl0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_s19gbl_0">;
-export type AvatarItemDisplayNShirtSafarizone2020A0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_safarizone2020_a_0">;
-export type AvatarItemDisplayNShirtSafarizone2020B0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_safarizone2020_b_0">;
-export type AvatarItemDisplayNShirtSamsungsummer20200 = AvatarItemDisplay<"N_DISPLAY_n_shirt_samsungsummer2020_0">;
-export type AvatarItemDisplayNShirtScolipede0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_scolipede_0">;
-export type AvatarItemDisplayNShirtShayminlandtshirt0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_shayminlandtshirt_0">;
-export type AvatarItemDisplayNShirtShayminskytshirt0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_shayminskytshirt_0">;
-export type AvatarItemDisplayNShirtShinydiancie = AvatarItemDisplay<"N_DISPLAY_n_shirt_shinydiancie">;
-export type AvatarItemDisplayNShirtShinykeldeoshirt0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_shinykeldeoshirt_0">;
-export type AvatarItemDisplayNShirtShinymeloettatshirt0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_shinymeloettatshirt_0">;
-export type AvatarItemDisplayNShirtShinymewtshirts0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_shinymewtshirts_0">;
-export type AvatarItemDisplayNShirtSlowpokeshirts0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_slowpokeshirts_0">;
-export type AvatarItemDisplayNShirtSlowpoketailshirts0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_slowpoketailshirts_0">;
-export type AvatarItemDisplayNShirtSnorlaxonesie0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_snorlaxonesie_0">;
-export type AvatarItemDisplayNShirtSpiritomb0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_spiritomb_0">;
-export type AvatarItemDisplayNShirtSpring2021gulpinA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_spring2021gulpin_a_0">;
-export type AvatarItemDisplayNShirtSpring2021gulpinB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_spring2021gulpin_b_0">;
-export type AvatarItemDisplayNShirtSpring2021plusleA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_spring2021plusle_a_0">;
-export type AvatarItemDisplayNShirtSpring2021plusleB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_spring2021plusle_b_0">;
-export type AvatarItemDisplayNShirtSsA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ss_a_0">;
-export type AvatarItemDisplayNShirtSsB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ss_b_0">;
-export type AvatarItemDisplayNShirtSteven0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_steven_0">;
-export type AvatarItemDisplayNShirtStevenfirst0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_stevenfirst_0">;
-export type AvatarItemDisplayNShirtSukajanblastoise0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sukajanblastoise_0">;
-export type AvatarItemDisplayNShirtSukajancharizard0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sukajancharizard_0">;
-export type AvatarItemDisplayNShirtSukajanhouou0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sukajanhouou_0">;
-export type AvatarItemDisplayNShirtSukajanlugia0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sukajanlugia_0">;
-export type AvatarItemDisplayNShirtSukajanvenusaur0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sukajanvenusaur_0">;
-export type AvatarItemDisplayNShirtSummer20230 = AvatarItemDisplay<"N_DISPLAY_n_shirt_summer2023_0">;
-export type AvatarItemDisplayNShirtSustainability2021A0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sustainability2021_a_0">;
-export type AvatarItemDisplayNShirtSustainability2021B0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sustainability2021_b_0">;
-export type AvatarItemDisplayNShirtSvcostumescarletschool0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_svcostumescarletschool_0">;
-export type AvatarItemDisplayNShirtSvcostumevioletschool0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_svcostumevioletschool_0">;
-export type AvatarItemDisplayNShirtSvdlc10 = AvatarItemDisplay<"N_DISPLAY_n_shirt_svdlc1_0">;
-export type AvatarItemDisplayNShirtSvdlc2fall0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_svdlc2fall_0">;
-export type AvatarItemDisplayNShirtSvdlc2spring0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_svdlc2spring_0">;
-export type AvatarItemDisplayNShirtSweater300 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sweater-30_0">;
-export type AvatarItemDisplayNShirtSweater301 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sweater-30_1">;
-export type AvatarItemDisplayNShirtSweater302 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sweater-30_2">;
-export type AvatarItemDisplayNShirtSweaterInstinct0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sweater-instinct_0">;
-export type AvatarItemDisplayNShirtSweaterMystic0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sweater-mystic_0">;
-export type AvatarItemDisplayNShirtSweaterValor0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sweater-valor_0">;
-export type AvatarItemDisplayNShirtSweatshirtSporty0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sweatshirt-sporty_0">;
-export type AvatarItemDisplayNShirtSweatshirtSporty1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sweatshirt-sporty_1">;
-export type AvatarItemDisplayNShirtSweatshirtSporty2 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sweatshirt-sporty_2">;
-export type AvatarItemDisplayNShirtSweatshirtSporty3 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sweatshirt-sporty_3">;
-export type AvatarItemDisplayNShirtSweatshirtStreak0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sweatshirt-streak_0">;
-export type AvatarItemDisplayNShirtSweatshirtStreak1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sweatshirt-streak_1">;
-export type AvatarItemDisplayNShirtSweatshirtStreak2 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sweatshirt-streak_2">;
-export type AvatarItemDisplayNShirtSweatshirtStreak3 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sweatshirt-streak_3">;
-export type AvatarItemDisplayNShirtSweatshirtStreak4 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sweatshirt-streak_4">;
-export type AvatarItemDisplayNShirtSwshdlc2costume0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_swshdlc2costume_0">;
-export type AvatarItemDisplayNShirtSwshdlccostumeA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_swshdlccostume_a_0">;
-export type AvatarItemDisplayNShirtSwshdlccostumeB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_swshdlccostume_b_0">;
-export type AvatarItemDisplayNShirtSwshuniformchampion0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_swshuniformchampion_0">;
-export type AvatarItemDisplayNShirtSwshuniformdarkA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_swshuniformdark_a_0">;
-export type AvatarItemDisplayNShirtSwshuniformdarkB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_swshuniformdark_b_0">;
-export type AvatarItemDisplayNShirtSwshuniformdefault0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_swshuniformdefault_0">;
-export type AvatarItemDisplayNShirtSwshuniformdragon0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_swshuniformdragon_0">;
-export type AvatarItemDisplayNShirtSylveonitems0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_sylveonitems_0">;
-export type AvatarItemDisplayNShirtTandemausitems0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tandemausitems_0">;
-export type AvatarItemDisplayNShirtTanktopCharizard0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tanktop-charizard_0">;
-export type AvatarItemDisplayNShirtTanktopCharizard1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tanktop-charizard_1">;
-export type AvatarItemDisplayNShirtTanktopCharizard2 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tanktop-charizard_2">;
-export type AvatarItemDisplayNShirtTanktopPikachu0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tanktop-pikachu_0">;
-export type AvatarItemDisplayNShirtTanktopPikachu1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tanktop-pikachu_1">;
-export type AvatarItemDisplayNShirtTanktopPikachu2 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tanktop-pikachu_2">;
-export type AvatarItemDisplayNShirtTanktop0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tanktop_0">;
-export type AvatarItemDisplayNShirtTanktop1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tanktop_1">;
-export type AvatarItemDisplayNShirtTanktop2 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tanktop_2">;
-export type AvatarItemDisplayNShirtTcgcollabtshirtandcap0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tcgcollabtshirtandcap_0">;
-export type AvatarItemDisplayNShirtTeamaquaA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_teamaqua_a_0">;
-export type AvatarItemDisplayNShirtTeamaquaB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_teamaqua_b_0">;
-export type AvatarItemDisplayNShirtTeamblancheA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_teamblanche_a_0">;
-export type AvatarItemDisplayNShirtTeamblancheB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_teamblanche_b_0">;
-export type AvatarItemDisplayNShirtTeamcandelaA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_teamcandela_a_0">;
-export type AvatarItemDisplayNShirtTeamcandelaB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_teamcandela_b_0">;
-export type AvatarItemDisplayNShirtTeammagmaA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_teammagma_a_0">;
-export type AvatarItemDisplayNShirtTeammagmaB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_teammagma_b_0">;
-export type AvatarItemDisplayNShirtTeamrocketA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_teamrocket_a_0">;
-export type AvatarItemDisplayNShirtTeamrocketA1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_teamrocket_a_1">;
-export type AvatarItemDisplayNShirtTeamrocketB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_teamrocket_b_0">;
-export type AvatarItemDisplayNShirtTeamrocketB1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_teamrocket_b_1">;
-export type AvatarItemDisplayNShirtTeamskull0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_teamskull_0">;
-export type AvatarItemDisplayNShirtTeamsparkA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_teamspark_a_0">;
-export type AvatarItemDisplayNShirtTeamsparkB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_teamspark_b_0">;
-export type AvatarItemDisplayNShirtTeamyellgruntsCropped0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_teamyellgrunts-cropped_0">;
-export type AvatarItemDisplayNShirtTeamyellgruntsLong0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_teamyellgrunts-long_0">;
-export type AvatarItemDisplayNShirtTogepihoodie0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_togepihoodie_0">;
-export type AvatarItemDisplayNShirtTracksuitsgroudon0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tracksuitsgroudon_0">;
-export type AvatarItemDisplayNShirtTracksuitskyogre0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tracksuitskyogre_0">;
-export type AvatarItemDisplayNShirtTshirtCycling0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tshirt-cycling_0">;
-export type AvatarItemDisplayNShirtTshirtCycling1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tshirt-cycling_1">;
-export type AvatarItemDisplayNShirtTshirtCycling2 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tshirt-cycling_2">;
-export type AvatarItemDisplayNShirtTshirtCycling3 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tshirt-cycling_3">;
-export type AvatarItemDisplayNShirtTshirtFestChicago20170 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tshirt-fest-chicago-2017_0">;
-export type AvatarItemDisplayNShirtTshirtFestChicago20180 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tshirt-fest-chicago-2018_0">;
-export type AvatarItemDisplayNShirtTshirtGeometric0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tshirt-geometric_0">;
-export type AvatarItemDisplayNShirtTshirtGeometric1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tshirt-geometric_1">;
-export type AvatarItemDisplayNShirtTshirtGeometric2 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tshirt-geometric_2">;
-export type AvatarItemDisplayNShirtTshirtGlobalGoals20170 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tshirt-global-goals-2017_0">;
-export type AvatarItemDisplayNShirtTshirtInstinct0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tshirt-instinct_0">;
-export type AvatarItemDisplayNShirtTshirtMystic0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tshirt-mystic_0">;
-export type AvatarItemDisplayNShirtTshirtPikachu0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tshirt-pikachu_0">;
-export type AvatarItemDisplayNShirtTshirtPikachu1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tshirt-pikachu_1">;
-export type AvatarItemDisplayNShirtTshirtPikachu2 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tshirt-pikachu_2">;
-export type AvatarItemDisplayNShirtTshirtPikachu3 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tshirt-pikachu_3">;
-export type AvatarItemDisplayNShirtTshirtPikachu4 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tshirt-pikachu_4">;
-export type AvatarItemDisplayNShirtTshirtPikachu5 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tshirt-pikachu_5">;
-export type AvatarItemDisplayNShirtTshirtPikachu6 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tshirt-pikachu_6">;
-export type AvatarItemDisplayNShirtTshirtValor0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_tshirt-valor_0">;
-export type AvatarItemDisplayNShirtTurtleneck300 = AvatarItemDisplay<"N_DISPLAY_n_shirt_turtleneck-30_0">;
-export type AvatarItemDisplayNShirtTurtleneck301 = AvatarItemDisplay<"N_DISPLAY_n_shirt_turtleneck-30_1">;
-export type AvatarItemDisplayNShirtTurtleneck302 = AvatarItemDisplay<"N_DISPLAY_n_shirt_turtleneck-30_2">;
-export type AvatarItemDisplayNShirtTurtleneck303 = AvatarItemDisplay<"N_DISPLAY_n_shirt_turtleneck-30_3">;
-export type AvatarItemDisplayNShirtTurtwigonesie0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_turtwigonesie_0">;
-export type AvatarItemDisplayNShirtUglysweatersudowoodo0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_uglysweatersudowoodo_0">;
-export type AvatarItemDisplayNShirtUltraA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ultra_a_0">;
-export type AvatarItemDisplayNShirtUltraB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ultra_b_0">;
-export type AvatarItemDisplayNShirtUltrareconsquad0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_ultrareconsquad_0">;
-export type AvatarItemDisplayNShirtUniqlotshirts0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_uniqlotshirts_0">;
-export type AvatarItemDisplayNShirtUniqlotshirts1 = AvatarItemDisplay<"N_DISPLAY_n_shirt_uniqlotshirts_1">;
-export type AvatarItemDisplayNShirtUniqlotshirts2 = AvatarItemDisplay<"N_DISPLAY_n_shirt_uniqlotshirts_2">;
-export type AvatarItemDisplayNShirtUnwto0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_unwto_0">;
-export type AvatarItemDisplayNShirtValentine20230 = AvatarItemDisplay<"N_DISPLAY_n_shirt_valentine2023_0">;
-export type AvatarItemDisplayNShirtVerizon20200 = AvatarItemDisplay<"N_DISPLAY_n_shirt_verizon2020_0">;
-export type AvatarItemDisplayNShirtVeterantrainerxyA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_veterantrainerxy_a_0">;
-export type AvatarItemDisplayNShirtVeterantrainerxyB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_veterantrainerxy_b_0">;
-export type AvatarItemDisplayNShirtVictinitshirts0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_victinitshirts_0">;
-export type AvatarItemDisplayNShirtVolcaniontshirt0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_volcaniontshirt_0">;
-export type AvatarItemDisplayNShirtWcs20220 = AvatarItemDisplay<"N_DISPLAY_n_shirt_wcs2022_0">;
-export type AvatarItemDisplayNShirtWcs2022tshirtbulu0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_wcs2022tshirtbulu_0">;
-export type AvatarItemDisplayNShirtWcs2022tshirtred0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_wcs2022tshirtred_0">;
-export type AvatarItemDisplayNShirtWcs2022winnersitems0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_wcs2022winnersitems_0">;
-export type AvatarItemDisplayNShirtWcs20230 = AvatarItemDisplay<"N_DISPLAY_n_shirt_wcs2023_0">;
-export type AvatarItemDisplayNShirtWcs2023promotshirt00 = AvatarItemDisplay<"N_DISPLAY_n_shirt_wcs2023promotshirt-0_0">;
-export type AvatarItemDisplayNShirtWcs2023promotshirt10 = AvatarItemDisplay<"N_DISPLAY_n_shirt_wcs2023promotshirt-1_0">;
-export type AvatarItemDisplayNShirtWcs2023sukajan0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_wcs2023sukajan_0">;
-export type AvatarItemDisplayNShirtWcs2023winnersitems0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_wcs2023winnersitems_0">;
-export type AvatarItemDisplayNShirtWcs20240 = AvatarItemDisplay<"N_DISPLAY_n_shirt_wcs2024_0">;
-export type AvatarItemDisplayNShirtWcs2024championshipshirtBlue0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_wcs2024championshipshirt-blue_0">;
-export type AvatarItemDisplayNShirtWcs2024championshipshirtWhite0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_wcs2024championshipshirt-white_0">;
-export type AvatarItemDisplayNShirtWcs2024paiditems0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_wcs2024paiditems_0">;
-export type AvatarItemDisplayNShirtWcs2024winnersitems0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_wcs2024winnersitems_0">;
-export type AvatarItemDisplayNShirtWcs20250 = AvatarItemDisplay<"N_DISPLAY_n_shirt_wcs2025_0">;
-export type AvatarItemDisplayNShirtWcs2025anaheimWhite0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_wcs2025anaheim-white_0">;
-export type AvatarItemDisplayNShirtWcs2025anaheimYellow0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_wcs2025anaheim-yellow_0">;
-export type AvatarItemDisplayNShirtWcs2025paiditems0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_wcs2025paiditems_0">;
-export type AvatarItemDisplayNShirtWcs2025winnersitems0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_wcs2025winnersitems_0">;
-export type AvatarItemDisplayNShirtWcsyokohama0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_wcsyokohama_0">;
-export type AvatarItemDisplayNShirtWhitecoat0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_whitecoat_0">;
-export type AvatarItemDisplayNShirtWintersweater20230 = AvatarItemDisplay<"N_DISPLAY_n_shirt_wintersweater2023_0">;
-export type AvatarItemDisplayNShirtYveltaljacket = AvatarItemDisplay<"N_DISPLAY_n_shirt_yveltaljacket">;
-export type AvatarItemDisplayNShirtZacostumeA0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_zacostume_a_0">;
-export type AvatarItemDisplayNShirtZacostumeB0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_zacostume_b_0">;
-export type AvatarItemDisplayNShirtZoruaonesie0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_zoruaonesie_0">;
-export type AvatarItemDisplayNShirtZygarde100items0 = AvatarItemDisplay<"N_DISPLAY_n_shirt_zygarde100items_0">;
-export type AvatarItemDisplayNShoes6thanniversaryA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_6thanniversary_a_0">;
-export type AvatarItemDisplayNShoes6thanniversaryB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_6thanniversary_b_0">;
-export type AvatarItemDisplayNShoesAcetrainerbwA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_acetrainerbw_a_0">;
-export type AvatarItemDisplayNShoesAcetrainerbwB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_acetrainerbw_b_0">;
-export type AvatarItemDisplayNShoesAcetrainersmA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_acetrainersm_a_0">;
-export type AvatarItemDisplayNShoesAcetrainersmB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_acetrainersm_b_0">;
-export type AvatarItemDisplayNShoesAllister0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_allister_0">;
-export type AvatarItemDisplayNShoesAnimegou0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_animegou_0">;
-export type AvatarItemDisplayNShoesBackpackerA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_backpacker_a_0">;
-export type AvatarItemDisplayNShoesBackpackerB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_backpacker_b_0">;
-export type AvatarItemDisplayNShoesBattlegirl0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_battlegirl_0">;
-export type AvatarItemDisplayNShoesBlacephalon0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_blacephalon_0">;
-export type AvatarItemDisplayNShoesBrock0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_brock_0">;
-export type AvatarItemDisplayNShoesBwn0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_bwn_0">;
-export type AvatarItemDisplayNShoesCarbink0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_carbink_0">;
-export type AvatarItemDisplayNShoesClay0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_clay_0">;
-export type AvatarItemDisplayNShoesClemont0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_clemont_0">;
-export type AvatarItemDisplayNShoesCoolboots0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_coolboots_0">;
-export type AvatarItemDisplayNShoesDedenneitems0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_dedenneitems_0">;
-export type AvatarItemDisplayNShoesDefaultNew0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_default-new_0">;
-export type AvatarItemDisplayNShoesDefaultA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_default_a_0">;
-export type AvatarItemDisplayNShoesDefaultA1 = AvatarItemDisplay<"N_DISPLAY_n_shoes_default_a_1">;
-export type AvatarItemDisplayNShoesDefaultA2 = AvatarItemDisplay<"N_DISPLAY_n_shoes_default_a_2">;
-export type AvatarItemDisplayNShoesDefaultA3 = AvatarItemDisplay<"N_DISPLAY_n_shoes_default_a_3">;
-export type AvatarItemDisplayNShoesDefaultA4 = AvatarItemDisplay<"N_DISPLAY_n_shoes_default_a_4">;
-export type AvatarItemDisplayNShoesDefaultA5 = AvatarItemDisplay<"N_DISPLAY_n_shoes_default_a_5">;
-export type AvatarItemDisplayNShoesDefaultA6 = AvatarItemDisplay<"N_DISPLAY_n_shoes_default_a_6">;
-export type AvatarItemDisplayNShoesDefaultB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_default_b_0">;
-export type AvatarItemDisplayNShoesDefaultB1 = AvatarItemDisplay<"N_DISPLAY_n_shoes_default_b_1">;
-export type AvatarItemDisplayNShoesDefaultB2 = AvatarItemDisplay<"N_DISPLAY_n_shoes_default_b_2">;
-export type AvatarItemDisplayNShoesDefaultB3 = AvatarItemDisplay<"N_DISPLAY_n_shoes_default_b_3">;
-export type AvatarItemDisplayNShoesDefaultB4 = AvatarItemDisplay<"N_DISPLAY_n_shoes_default_b_4">;
-export type AvatarItemDisplayNShoesDefaultB5 = AvatarItemDisplay<"N_DISPLAY_n_shoes_default_b_5">;
-export type AvatarItemDisplayNShoesDefaultB6 = AvatarItemDisplay<"N_DISPLAY_n_shoes_default_b_6">;
-export type AvatarItemDisplayNShoesDelibird0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_delibird_0">;
-export type AvatarItemDisplayNShoesDpA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_dp_a_0">;
-export type AvatarItemDisplayNShoesDpB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_dp_b_0">;
-export type AvatarItemDisplayNShoesElesaA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_elesa_a_0">;
-export type AvatarItemDisplayNShoesElesaB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_elesa_b_0">;
-export type AvatarItemDisplayNShoesEternatussuit0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_eternatussuit_0">;
-export type AvatarItemDisplayNShoesFashionweek20220 = AvatarItemDisplay<"N_DISPLAY_n_shoes_fashionweek2022_0">;
-export type AvatarItemDisplayNShoesFisher0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_fisher_0">;
-export type AvatarItemDisplayNShoesFrlgA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_frlg_a_0">;
-export type AvatarItemDisplayNShoesFrlgB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_frlg_b_0">;
-export type AvatarItemDisplayNShoesFw20220 = AvatarItemDisplay<"N_DISPLAY_n_shoes_fw2022_0">;
-export type AvatarItemDisplayNShoesGeeta0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_geeta_0">;
-export type AvatarItemDisplayNShoesGiovanniA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_giovanni_a_0">;
-export type AvatarItemDisplayNShoesGiovanniB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_giovanni_b_0">;
-export type AvatarItemDisplayNShoesGladion0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_gladion_0">;
-export type AvatarItemDisplayNShoesGothitelleitems0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_gothitelleitems_0">;
-export type AvatarItemDisplayNShoesGreenA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_green_a_0">;
-export type AvatarItemDisplayNShoesGreenB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_green_b_0">;
-export type AvatarItemDisplayNShoesGreenpikavee0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_greenpikavee_0">;
-export type AvatarItemDisplayNShoesGrimsley0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_grimsley_0">;
-export type AvatarItemDisplayNShoesGrusha0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_grusha_0">;
-export type AvatarItemDisplayNShoesGymleader0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_gymleader_0">;
-export type AvatarItemDisplayNShoesGymleader1 = AvatarItemDisplay<"N_DISPLAY_n_shoes_gymleader_1">;
-export type AvatarItemDisplayNShoesGymleader2 = AvatarItemDisplay<"N_DISPLAY_n_shoes_gymleader_2">;
-export type AvatarItemDisplayNShoesHala0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_hala_0">;
-export type AvatarItemDisplayNShoesHgssA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_hgss_a_0">;
-export type AvatarItemDisplayNShoesHgssB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_hgss_b_0">;
-export type AvatarItemDisplayNShoesIngo0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_ingo_0">;
-export type AvatarItemDisplayNShoesJogger0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_jogger_0">;
-export type AvatarItemDisplayNShoesKorrina0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_korrina_0">;
-export type AvatarItemDisplayNShoesLadiamondoutfitA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_ladiamondoutfit_a_0">;
-export type AvatarItemDisplayNShoesLadiamondoutfitB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_ladiamondoutfit_b_0">;
-export type AvatarItemDisplayNShoesLana0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_lana_0">;
-export type AvatarItemDisplayNShoesLapearloutfitA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_lapearloutfit_a_0">;
-export type AvatarItemDisplayNShoesLapearloutfitB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_lapearloutfit_b_0">;
-export type AvatarItemDisplayNShoesLegendofarceusA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_legendofarceus_a_0">;
-export type AvatarItemDisplayNShoesLegendofarceusB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_legendofarceus_b_0">;
-export type AvatarItemDisplayNShoesLoosepants0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_loosepants_0">;
-export type AvatarItemDisplayNShoesLoosepants1 = AvatarItemDisplay<"N_DISPLAY_n_shoes_loosepants_1">;
-export type AvatarItemDisplayNShoesLoosepants2 = AvatarItemDisplay<"N_DISPLAY_n_shoes_loosepants_2">;
-export type AvatarItemDisplayNShoesLoosepants3 = AvatarItemDisplay<"N_DISPLAY_n_shoes_loosepants_3">;
-export type AvatarItemDisplayNShoesLuvdiscpack0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_luvdiscpack_0">;
-export type AvatarItemDisplayNShoesLvl71Cyberkicks0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_lvl71-cyberkicks_0">;
-export type AvatarItemDisplayNShoesLysandre0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_lysandre_0">;
-export type AvatarItemDisplayNShoesMegalopunnyitems0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_megalopunnyitems_0">;
-export type AvatarItemDisplayNShoesMelmetalshoes0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_melmetalshoes_0">;
-export type AvatarItemDisplayNShoesMewtwo0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_mewtwo_0">;
-export type AvatarItemDisplayNShoesMisty0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_misty_0">;
-export type AvatarItemDisplayNShoesMustard0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_mustard_0">;
-export type AvatarItemDisplayNShoesNecrozmaitems0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_necrozmaitems_0">;
-export type AvatarItemDisplayNShoesNewyear20220 = AvatarItemDisplay<"N_DISPLAY_n_shoes_newyear2022_0">;
-export type AvatarItemDisplayNShoesNike20210 = AvatarItemDisplay<"N_DISPLAY_n_shoes_nike2021_0">;
-export type AvatarItemDisplayNShoesOrasA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_oras_a_0">;
-export type AvatarItemDisplayNShoesOrasB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_oras_b_0">;
-export type AvatarItemDisplayNShoesPajamas20220 = AvatarItemDisplay<"N_DISPLAY_n_shoes_pajamas2022_0">;
-export type AvatarItemDisplayNShoesPajamas20221 = AvatarItemDisplay<"N_DISPLAY_n_shoes_pajamas2022_1">;
-export type AvatarItemDisplayNShoesPalmer0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_palmer_0">;
-export type AvatarItemDisplayNShoesPikachuathletic = AvatarItemDisplay<"N_DISPLAY_n_shoes_pikachuathletic">;
-export type AvatarItemDisplayNShoesPikachufan0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_pikachufan_0">;
-export type AvatarItemDisplayNShoesPikachulibre0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_pikachulibre_0">;
-export type AvatarItemDisplayNShoesPokeballitemsBasic0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_pokeballitems-basic_0">;
-export type AvatarItemDisplayNShoesPokeballitemsGreat0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_pokeballitems-great_0">;
-export type AvatarItemDisplayNShoesPokeballitemsUltra0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_pokeballitems-ultra_0">;
-export type AvatarItemDisplayNShoesProfwillowoutfit0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_profwillowoutfit_0">;
-export type AvatarItemDisplayNShoesRegiicejersies0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_regiicejersies_0">;
-export type AvatarItemDisplayNShoesRegirockjersies0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_regirockjersies_0">;
-export type AvatarItemDisplayNShoesRegisteeljersies0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_registeeljersies_0">;
-export type AvatarItemDisplayNShoesReuniclusitems0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_reuniclusitems_0">;
-export type AvatarItemDisplayNShoesRuinmaniacA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_ruinmaniac_a_0">;
-export type AvatarItemDisplayNShoesRuinmaniacB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_ruinmaniac_b_0">;
-export type AvatarItemDisplayNShoesS19gbl0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_s19gbl_0">;
-export type AvatarItemDisplayNShoesSandals0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_sandals_0">;
-export type AvatarItemDisplayNShoesSandals1 = AvatarItemDisplay<"N_DISPLAY_n_shoes_sandals_1">;
-export type AvatarItemDisplayNShoesSandals2 = AvatarItemDisplay<"N_DISPLAY_n_shoes_sandals_2">;
-export type AvatarItemDisplayNShoesSizzlipedeboots0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_sizzlipedeboots_0">;
-export type AvatarItemDisplayNShoesSolgaleoitems0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_solgaleoitems_0">;
-export type AvatarItemDisplayNShoesSsA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_ss_a_0">;
-export type AvatarItemDisplayNShoesSsB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_ss_b_0">;
-export type AvatarItemDisplayNShoesSteven0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_steven_0">;
-export type AvatarItemDisplayNShoesStevenfirst0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_stevenfirst_0">;
-export type AvatarItemDisplayNShoesSvcostumescarletschool0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_svcostumescarletschool_0">;
-export type AvatarItemDisplayNShoesSvcostumevioletschool0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_svcostumevioletschool_0">;
-export type AvatarItemDisplayNShoesSvdlc10 = AvatarItemDisplay<"N_DISPLAY_n_shoes_svdlc1_0">;
-export type AvatarItemDisplayNShoesSvdlc2spring0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_svdlc2spring_0">;
-export type AvatarItemDisplayNShoesSwshdlc2costume0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_swshdlc2costume_0">;
-export type AvatarItemDisplayNShoesSwshdlccostume0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_swshdlccostume_0">;
-export type AvatarItemDisplayNShoesSwshuniformdark0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_swshuniformdark_0">;
-export type AvatarItemDisplayNShoesSwshuniformdefault0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_swshuniformdefault_0">;
-export type AvatarItemDisplayNShoesSwshuniformdragon0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_swshuniformdragon_0">;
-export type AvatarItemDisplayNShoesSylveonitems0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_sylveonitems_0">;
-export type AvatarItemDisplayNShoesTandemausitems0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_tandemausitems_0">;
-export type AvatarItemDisplayNShoesTeamaqua0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_teamaqua_0">;
-export type AvatarItemDisplayNShoesTeamblancheA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_teamblanche_a_0">;
-export type AvatarItemDisplayNShoesTeamblancheB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_teamblanche_b_0">;
-export type AvatarItemDisplayNShoesTeamcandelaA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_teamcandela_a_0">;
-export type AvatarItemDisplayNShoesTeamcandelaB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_teamcandela_b_0">;
-export type AvatarItemDisplayNShoesTeammagmaA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_teammagma_a_0">;
-export type AvatarItemDisplayNShoesTeammagmaB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_teammagma_b_0">;
-export type AvatarItemDisplayNShoesTeamrocketA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_teamrocket_a_0">;
-export type AvatarItemDisplayNShoesTeamrocketA1 = AvatarItemDisplay<"N_DISPLAY_n_shoes_teamrocket_a_1">;
-export type AvatarItemDisplayNShoesTeamrocketB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_teamrocket_b_0">;
-export type AvatarItemDisplayNShoesTeamrocketB1 = AvatarItemDisplay<"N_DISPLAY_n_shoes_teamrocket_b_1">;
-export type AvatarItemDisplayNShoesTeamskull0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_teamskull_0">;
-export type AvatarItemDisplayNShoesTeamskullB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_teamskull_b_0">;
-export type AvatarItemDisplayNShoesTeamsparkA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_teamspark_a_0">;
-export type AvatarItemDisplayNShoesTeamsparkB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_teamspark_b_0">;
-export type AvatarItemDisplayNShoesTeamyellgrunts0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_teamyellgrunts_0">;
-export type AvatarItemDisplayNShoesUltraA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_ultra_a_0">;
-export type AvatarItemDisplayNShoesUltraB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_ultra_b_0">;
-export type AvatarItemDisplayNShoesUltrareconsquad0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_ultrareconsquad_0">;
-export type AvatarItemDisplayNShoesUnequip0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_unequip_0">;
-export type AvatarItemDisplayNShoesVeterantrainerxyA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_veterantrainerxy_a_0">;
-export type AvatarItemDisplayNShoesVeterantrainerxyB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_veterantrainerxy_b_0">;
-export type AvatarItemDisplayNShoesWcs2022winnersitems0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_wcs2022winnersitems_0">;
-export type AvatarItemDisplayNShoesWcs2023winnersitems0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_wcs2023winnersitems_0">;
-export type AvatarItemDisplayNShoesWcs2024winnersitems0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_wcs2024winnersitems_0">;
-export type AvatarItemDisplayNShoesWinterboots20230 = AvatarItemDisplay<"N_DISPLAY_n_shoes_winterboots2023_0">;
-export type AvatarItemDisplayNShoesWinterboots0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_winterboots_0">;
-export type AvatarItemDisplayNShoesWinterboots1 = AvatarItemDisplay<"N_DISPLAY_n_shoes_winterboots_1">;
-export type AvatarItemDisplayNShoesWinterboots2 = AvatarItemDisplay<"N_DISPLAY_n_shoes_winterboots_2">;
-export type AvatarItemDisplayNShoesWinterboots3 = AvatarItemDisplay<"N_DISPLAY_n_shoes_winterboots_3">;
-export type AvatarItemDisplayNShoesZacostumeA0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_zacostume_a_0">;
-export type AvatarItemDisplayNShoesZacostumeB0 = AvatarItemDisplay<"N_DISPLAY_n_shoes_zacostume_b_0">;
-export type AvatarItemDisplayNSocksDefaultA0 = AvatarItemDisplay<"N_DISPLAY_n_socks_default_a_0">;
-export type AvatarItemDisplayNSocksDefaultA1 = AvatarItemDisplay<"N_DISPLAY_n_socks_default_a_1">;
-export type AvatarItemDisplayNSocksDefaultA2 = AvatarItemDisplay<"N_DISPLAY_n_socks_default_a_2">;
-export type AvatarItemDisplayNSocksDefaultB0 = AvatarItemDisplay<"N_DISPLAY_n_socks_default_b_0">;
-export type AvatarItemDisplayNSocksDefaultB1 = AvatarItemDisplay<"N_DISPLAY_n_socks_default_b_1">;
-export type AvatarItemDisplayNSocksDefaultB2 = AvatarItemDisplay<"N_DISPLAY_n_socks_default_b_2">;
-export type AvatarItemDisplayNSocksDefaultB3 = AvatarItemDisplay<"N_DISPLAY_n_socks_default_b_3">;
-export type AvatarItemDisplayNSocksFw2022A0 = AvatarItemDisplay<"N_DISPLAY_n_socks_fw2022_a_0">;
-export type AvatarItemDisplayNSocksFw2022B0 = AvatarItemDisplay<"N_DISPLAY_n_socks_fw2022_b_0">;
-export type AvatarItemDisplayNSocksHgss0 = AvatarItemDisplay<"N_DISPLAY_n_socks_hgss_0">;
-export type AvatarItemDisplayNSocksSneakersocks0 = AvatarItemDisplay<"N_DISPLAY_n_socks_sneakersocks_0">;
-export type AvatarItemDisplayNSocksSneakersocks1 = AvatarItemDisplay<"N_DISPLAY_n_socks_sneakersocks_1">;
-export type AvatarItemDisplayNSocksSollunaitems0 = AvatarItemDisplay<"N_DISPLAY_n_socks_sollunaitems_0">;
-export type AvatarItemDisplayNSocksSwshuniformdefault0 = AvatarItemDisplay<"N_DISPLAY_n_socks_swshuniformdefault_0">;
-export type AvatarItemDisplayNSocksSwshuniformdragon0 = AvatarItemDisplay<"N_DISPLAY_n_socks_swshuniformdragon_0">;
-export type AvatarItemDisplayNSocksTeamaqua0 = AvatarItemDisplay<"N_DISPLAY_n_socks_teamaqua_0">;
-export type AvatarItemDisplayNSocksThighhighs0 = AvatarItemDisplay<"N_DISPLAY_n_socks_thighhighs_0">;
-export type AvatarItemDisplayNSocksUnequip0 = AvatarItemDisplay<"N_DISPLAY_n_socks_unequip_0">;
-export type AvatarItemDisplaySet6thanniversaryF = AvatarItemDisplay<"N_DISPLAY_set_6thanniversary_f">;
-export type AvatarItemDisplaySet6thanniversaryM = AvatarItemDisplay<"N_DISPLAY_set_6thanniversary_m">;
-export type AvatarItemDisplaySet7thanniversaryF = AvatarItemDisplay<"N_DISPLAY_set_7thanniversary_f">;
-export type AvatarItemDisplaySet7thanniversaryM = AvatarItemDisplay<"N_DISPLAY_set_7thanniversary_m">;
-export type AvatarItemDisplaySetAcetrainerbwF = AvatarItemDisplay<"N_DISPLAY_set_acetrainerbw_f">;
-export type AvatarItemDisplaySetAcetrainerbwM = AvatarItemDisplay<"N_DISPLAY_set_acetrainerbw_m">;
-export type AvatarItemDisplaySetAcetrainersmF = AvatarItemDisplay<"N_DISPLAY_set_acetrainersm_f">;
-export type AvatarItemDisplaySetAcetrainersmM = AvatarItemDisplay<"N_DISPLAY_set_acetrainersm_m">;
-export type AvatarItemDisplaySetAllister0 = AvatarItemDisplay<"N_DISPLAY_set_allister_0">;
-export type AvatarItemDisplaySetAnimegouF = AvatarItemDisplay<"N_DISPLAY_set_animegou_f">;
-export type AvatarItemDisplaySetAnimegouM = AvatarItemDisplay<"N_DISPLAY_set_animegou_m">;
-export type AvatarItemDisplaySetApplinitems = AvatarItemDisplay<"N_DISPLAY_set_applinitems">;
-export type AvatarItemDisplaySetBackpackerF = AvatarItemDisplay<"N_DISPLAY_set_backpacker_f">;
-export type AvatarItemDisplaySetBackpackerM = AvatarItemDisplay<"N_DISPLAY_set_backpacker_m">;
-export type AvatarItemDisplaySetBattlegirl0F = AvatarItemDisplay<"N_DISPLAY_set_battlegirl_0_f">;
-export type AvatarItemDisplaySetBeaF = AvatarItemDisplay<"N_DISPLAY_set_bea_f">;
-export type AvatarItemDisplaySetBeaM = AvatarItemDisplay<"N_DISPLAY_set_bea_m">;
-export type AvatarItemDisplaySetBounsweetitemsF = AvatarItemDisplay<"N_DISPLAY_set_bounsweetitems_f">;
-export type AvatarItemDisplaySetBounsweetitemsM = AvatarItemDisplay<"N_DISPLAY_set_bounsweetitems_m">;
-export type AvatarItemDisplaySetBoxingoutfitF = AvatarItemDisplay<"N_DISPLAY_set_boxingoutfit_f">;
-export type AvatarItemDisplaySetBoxingoutfitM = AvatarItemDisplay<"N_DISPLAY_set_boxingoutfit_m">;
-export type AvatarItemDisplaySetBrockM = AvatarItemDisplay<"N_DISPLAY_set_brock_m">;
-export type AvatarItemDisplaySetBwnF = AvatarItemDisplay<"N_DISPLAY_set_bwn_f">;
-export type AvatarItemDisplaySetBwnM = AvatarItemDisplay<"N_DISPLAY_set_bwn_m">;
-export type AvatarItemDisplaySetCasual0F = AvatarItemDisplay<"N_DISPLAY_set_casual_0_f">;
-export type AvatarItemDisplaySetCasual0M = AvatarItemDisplay<"N_DISPLAY_set_casual_0_m">;
-export type AvatarItemDisplaySetCasual1F = AvatarItemDisplay<"N_DISPLAY_set_casual_1_f">;
-export type AvatarItemDisplaySetCasual1M = AvatarItemDisplay<"N_DISPLAY_set_casual_1_m">;
-export type AvatarItemDisplaySetClayF = AvatarItemDisplay<"N_DISPLAY_set_clay_f">;
-export type AvatarItemDisplaySetClayM = AvatarItemDisplay<"N_DISPLAY_set_clay_m">;
-export type AvatarItemDisplaySetClemont = AvatarItemDisplay<"N_DISPLAY_set_clemont">;
-export type AvatarItemDisplaySetCofagrigusF = AvatarItemDisplay<"N_DISPLAY_set_cofagrigus_f">;
-export type AvatarItemDisplaySetCofagrigusM = AvatarItemDisplay<"N_DISPLAY_set_cofagrigus_m">;
-export type AvatarItemDisplaySetCosmogF = AvatarItemDisplay<"N_DISPLAY_set_cosmog_f">;
-export type AvatarItemDisplaySetCosmogM = AvatarItemDisplay<"N_DISPLAY_set_cosmog_m">;
-export type AvatarItemDisplaySetDayofthedeadF = AvatarItemDisplay<"N_DISPLAY_set_dayofthedead_f">;
-export type AvatarItemDisplaySetDayofthedeadM = AvatarItemDisplay<"N_DISPLAY_set_dayofthedead_m">;
-export type AvatarItemDisplaySetDedenneitemsF = AvatarItemDisplay<"N_DISPLAY_set_dedenneitems_f">;
-export type AvatarItemDisplaySetDedenneitemsM = AvatarItemDisplay<"N_DISPLAY_set_dedenneitems_m">;
-export type AvatarItemDisplaySetDelibirdF = AvatarItemDisplay<"N_DISPLAY_set_delibird_f">;
-export type AvatarItemDisplaySetDelibirdM = AvatarItemDisplay<"N_DISPLAY_set_delibird_m">;
-export type AvatarItemDisplaySetDetectivepikachuF = AvatarItemDisplay<"N_DISPLAY_set_detectivepikachu_f">;
-export type AvatarItemDisplaySetDetectivepikachuM = AvatarItemDisplay<"N_DISPLAY_set_detectivepikachu_m">;
-export type AvatarItemDisplaySetDivingsuitF = AvatarItemDisplay<"N_DISPLAY_set_divingsuit_f">;
-export type AvatarItemDisplaySetDivingsuitM = AvatarItemDisplay<"N_DISPLAY_set_divingsuit_m">;
-export type AvatarItemDisplaySetDpF = AvatarItemDisplay<"N_DISPLAY_set_dp_f">;
-export type AvatarItemDisplaySetDpM = AvatarItemDisplay<"N_DISPLAY_set_dp_m">;
-export type AvatarItemDisplaySetDusclopsmummyF = AvatarItemDisplay<"N_DISPLAY_set_dusclopsmummy_f">;
-export type AvatarItemDisplaySetDusclopsmummyM = AvatarItemDisplay<"N_DISPLAY_set_dusclopsmummy_m">;
-export type AvatarItemDisplaySetElesaF = AvatarItemDisplay<"N_DISPLAY_set_elesa_f">;
-export type AvatarItemDisplaySetElesaM = AvatarItemDisplay<"N_DISPLAY_set_elesa_m">;
-export type AvatarItemDisplaySetEternatussuit0 = AvatarItemDisplay<"N_DISPLAY_set_eternatussuit_0">;
-export type AvatarItemDisplaySetFashionweek2022F = AvatarItemDisplay<"N_DISPLAY_set_fashionweek2022_f">;
-export type AvatarItemDisplaySetFashionweek2022M = AvatarItemDisplay<"N_DISPLAY_set_fashionweek2022_m">;
-export type AvatarItemDisplaySetFashionweek20250 = AvatarItemDisplay<"N_DISPLAY_set_fashionweek2025_0">;
-export type AvatarItemDisplaySetFisher0M = AvatarItemDisplay<"N_DISPLAY_set_fisher_0_m">;
-export type AvatarItemDisplaySetFlabebepackF = AvatarItemDisplay<"N_DISPLAY_set_flabebepack_f">;
-export type AvatarItemDisplaySetFlabebepackM = AvatarItemDisplay<"N_DISPLAY_set_flabebepack_m">;
-export type AvatarItemDisplaySetFragment0F = AvatarItemDisplay<"N_DISPLAY_set_fragment_0_f">;
-export type AvatarItemDisplaySetFragment0M = AvatarItemDisplay<"N_DISPLAY_set_fragment_0_m">;
-export type AvatarItemDisplaySetFrlg0F = AvatarItemDisplay<"N_DISPLAY_set_frlg_0_f">;
-export type AvatarItemDisplaySetFrlg0M = AvatarItemDisplay<"N_DISPLAY_set_frlg_0_m">;
-export type AvatarItemDisplaySetFw2022F = AvatarItemDisplay<"N_DISPLAY_set_fw2022_f">;
-export type AvatarItemDisplaySetFw2022M = AvatarItemDisplay<"N_DISPLAY_set_fw2022_m">;
-export type AvatarItemDisplaySetGalarfarfetchditemsF = AvatarItemDisplay<"N_DISPLAY_set_galarfarfetchditems_f">;
-export type AvatarItemDisplaySetGalarfarfetchditemsM = AvatarItemDisplay<"N_DISPLAY_set_galarfarfetchditems_m">;
-export type AvatarItemDisplaySetGeetaF = AvatarItemDisplay<"N_DISPLAY_set_geeta_f">;
-export type AvatarItemDisplaySetGeetaM = AvatarItemDisplay<"N_DISPLAY_set_geeta_m">;
-export type AvatarItemDisplaySetGenderlessskirtF = AvatarItemDisplay<"N_DISPLAY_set_genderlessskirt_f">;
-export type AvatarItemDisplaySetGenderlessskirtM = AvatarItemDisplay<"N_DISPLAY_set_genderlessskirt_m">;
-export type AvatarItemDisplaySetGenesecteventitemF = AvatarItemDisplay<"N_DISPLAY_set_genesecteventitem_f">;
-export type AvatarItemDisplaySetGenesecteventitemM = AvatarItemDisplay<"N_DISPLAY_set_genesecteventitem_m">;
-export type AvatarItemDisplaySetGengar0F = AvatarItemDisplay<"N_DISPLAY_set_gengar_0_f">;
-export type AvatarItemDisplaySetGengar0M = AvatarItemDisplay<"N_DISPLAY_set_gengar_0_m">;
-export type AvatarItemDisplaySetGimmighoulitemsF = AvatarItemDisplay<"N_DISPLAY_set_gimmighoulitems_f">;
-export type AvatarItemDisplaySetGimmighoulitemsM = AvatarItemDisplay<"N_DISPLAY_set_gimmighoulitems_m">;
-export type AvatarItemDisplaySetGiovanniF = AvatarItemDisplay<"N_DISPLAY_set_giovanni_f">;
-export type AvatarItemDisplaySetGiovanniM = AvatarItemDisplay<"N_DISPLAY_set_giovanni_m">;
-export type AvatarItemDisplaySetGiratinaitems = AvatarItemDisplay<"N_DISPLAY_set_giratinaitems">;
-export type AvatarItemDisplaySetGladionF = AvatarItemDisplay<"N_DISPLAY_set_gladion_f">;
-export type AvatarItemDisplaySetGladionM = AvatarItemDisplay<"N_DISPLAY_set_gladion_m">;
-export type AvatarItemDisplaySetGoteamrocketarloF = AvatarItemDisplay<"N_DISPLAY_set_goteamrocketarlo_f">;
-export type AvatarItemDisplaySetGoteamrocketarloM = AvatarItemDisplay<"N_DISPLAY_set_goteamrocketarlo_m">;
-export type AvatarItemDisplaySetGreenF = AvatarItemDisplay<"N_DISPLAY_set_green_f">;
-export type AvatarItemDisplaySetGreenM = AvatarItemDisplay<"N_DISPLAY_set_green_m">;
-export type AvatarItemDisplaySetGreencoatF = AvatarItemDisplay<"N_DISPLAY_set_greencoat_f">;
-export type AvatarItemDisplaySetGreencoatM = AvatarItemDisplay<"N_DISPLAY_set_greencoat_m">;
-export type AvatarItemDisplaySetGrimsley0 = AvatarItemDisplay<"N_DISPLAY_set_grimsley_0">;
-export type AvatarItemDisplaySetGrusha = AvatarItemDisplay<"N_DISPLAY_set_grusha">;
-export type AvatarItemDisplaySetGuzmaF = AvatarItemDisplay<"N_DISPLAY_set_guzma_f">;
-export type AvatarItemDisplaySetGuzmaM = AvatarItemDisplay<"N_DISPLAY_set_guzma_m">;
-export type AvatarItemDisplaySetGymleader0F = AvatarItemDisplay<"N_DISPLAY_set_gymleader_0_f">;
-export type AvatarItemDisplaySetGymleader0M = AvatarItemDisplay<"N_DISPLAY_set_gymleader_0_m">;
-export type AvatarItemDisplaySetGymleader1F = AvatarItemDisplay<"N_DISPLAY_set_gymleader_1_f">;
-export type AvatarItemDisplaySetGymleader1M = AvatarItemDisplay<"N_DISPLAY_set_gymleader_1_m">;
-export type AvatarItemDisplaySetGymleader2F = AvatarItemDisplay<"N_DISPLAY_set_gymleader_2_f">;
-export type AvatarItemDisplaySetGymleader2M = AvatarItemDisplay<"N_DISPLAY_set_gymleader_2_m">;
-export type AvatarItemDisplaySetHala = AvatarItemDisplay<"N_DISPLAY_set_hala">;
-export type AvatarItemDisplaySetHalloween20240 = AvatarItemDisplay<"N_DISPLAY_set_halloween2024_0">;
-export type AvatarItemDisplaySetHgss0F = AvatarItemDisplay<"N_DISPLAY_set_hgss_0_f">;
-export type AvatarItemDisplaySetHgss0M = AvatarItemDisplay<"N_DISPLAY_set_hgss_0_m">;
-export type AvatarItemDisplaySetHoliday2022santacostumesF = AvatarItemDisplay<"N_DISPLAY_set_holiday2022santacostumes_f">;
-export type AvatarItemDisplaySetHoliday2022santacostumesM = AvatarItemDisplay<"N_DISPLAY_set_holiday2022santacostumes_m">;
-export type AvatarItemDisplaySetHoopaF = AvatarItemDisplay<"N_DISPLAY_set_hoopa_f">;
-export type AvatarItemDisplaySetHoopaM = AvatarItemDisplay<"N_DISPLAY_set_hoopa_m">;
-export type AvatarItemDisplaySetIngo = AvatarItemDisplay<"N_DISPLAY_set_ingo">;
-export type AvatarItemDisplaySetJogger0M = AvatarItemDisplay<"N_DISPLAY_set_jogger_0_m">;
-export type AvatarItemDisplaySetKorrinaF = AvatarItemDisplay<"N_DISPLAY_set_korrina_f">;
-export type AvatarItemDisplaySetKorrinaM = AvatarItemDisplay<"N_DISPLAY_set_korrina_m">;
-export type AvatarItemDisplaySetLadiamondoutfitF = AvatarItemDisplay<"N_DISPLAY_set_ladiamondoutfit_f">;
-export type AvatarItemDisplaySetLadiamondoutfitM = AvatarItemDisplay<"N_DISPLAY_set_ladiamondoutfit_m">;
-export type AvatarItemDisplaySetLana0 = AvatarItemDisplay<"N_DISPLAY_set_lana_0">;
-export type AvatarItemDisplaySetLapearloutfitF = AvatarItemDisplay<"N_DISPLAY_set_lapearloutfit_f">;
-export type AvatarItemDisplaySetLapearloutfitM = AvatarItemDisplay<"N_DISPLAY_set_lapearloutfit_m">;
-export type AvatarItemDisplaySetLasecuritycorpsF = AvatarItemDisplay<"N_DISPLAY_set_lasecuritycorps_f">;
-export type AvatarItemDisplaySetLasecuritycorpsM = AvatarItemDisplay<"N_DISPLAY_set_lasecuritycorps_m">;
-export type AvatarItemDisplaySetLegendofarceusF = AvatarItemDisplay<"N_DISPLAY_set_legendofarceus_f">;
-export type AvatarItemDisplaySetLegendofarceusM = AvatarItemDisplay<"N_DISPLAY_set_legendofarceus_m">;
-export type AvatarItemDisplaySetLooseFitting0 = AvatarItemDisplay<"N_DISPLAY_set_loose-fitting_0">;
-export type AvatarItemDisplaySetLooseFitting1 = AvatarItemDisplay<"N_DISPLAY_set_loose-fitting_1">;
-export type AvatarItemDisplaySetLunalaitemsF = AvatarItemDisplay<"N_DISPLAY_set_lunalaitems_f">;
-export type AvatarItemDisplaySetLunalaitemsM = AvatarItemDisplay<"N_DISPLAY_set_lunalaitems_m">;
-export type AvatarItemDisplaySetLuvdiscpackF = AvatarItemDisplay<"N_DISPLAY_set_luvdiscpack_f">;
-export type AvatarItemDisplaySetLuvdiscpackM = AvatarItemDisplay<"N_DISPLAY_set_luvdiscpack_m">;
-export type AvatarItemDisplaySetLvl500F = AvatarItemDisplay<"N_DISPLAY_set_lvl50_0_f">;
-export type AvatarItemDisplaySetLvl500M = AvatarItemDisplay<"N_DISPLAY_set_lvl50_0_m">;
-export type AvatarItemDisplaySetLvl501F = AvatarItemDisplay<"N_DISPLAY_set_lvl50_1_f">;
-export type AvatarItemDisplaySetLvl501M = AvatarItemDisplay<"N_DISPLAY_set_lvl50_1_m">;
-export type AvatarItemDisplaySetLysandreF = AvatarItemDisplay<"N_DISPLAY_set_lysandre_f">;
-export type AvatarItemDisplaySetLysandreM = AvatarItemDisplay<"N_DISPLAY_set_lysandre_m">;
-export type AvatarItemDisplaySetMegalopunnyitemsF = AvatarItemDisplay<"N_DISPLAY_set_megalopunnyitems_f">;
-export type AvatarItemDisplaySetMegalopunnyitemsM = AvatarItemDisplay<"N_DISPLAY_set_megalopunnyitems_m">;
-export type AvatarItemDisplaySetMegarayquazaF = AvatarItemDisplay<"N_DISPLAY_set_megarayquaza_f">;
-export type AvatarItemDisplaySetMegarayquazaM = AvatarItemDisplay<"N_DISPLAY_set_megarayquaza_m">;
-export type AvatarItemDisplaySetMelmetalJacketF = AvatarItemDisplay<"N_DISPLAY_set_melmetal_jacket_f">;
-export type AvatarItemDisplaySetMelmetalJacketM = AvatarItemDisplay<"N_DISPLAY_set_melmetal_jacket_m">;
-export type AvatarItemDisplaySetMelmetalVestF = AvatarItemDisplay<"N_DISPLAY_set_melmetal_vest_f">;
-export type AvatarItemDisplaySetMelmetalVestM = AvatarItemDisplay<"N_DISPLAY_set_melmetal_vest_m">;
-export type AvatarItemDisplaySetMeltanF = AvatarItemDisplay<"N_DISPLAY_set_meltan_f">;
-export type AvatarItemDisplaySetMeltanM = AvatarItemDisplay<"N_DISPLAY_set_meltan_m">;
-export type AvatarItemDisplaySetMewtwoF = AvatarItemDisplay<"N_DISPLAY_set_mewtwo_f">;
-export type AvatarItemDisplaySetMewtwoM = AvatarItemDisplay<"N_DISPLAY_set_mewtwo_m">;
-export type AvatarItemDisplaySetMimikyuF = AvatarItemDisplay<"N_DISPLAY_set_mimikyu_f">;
-export type AvatarItemDisplaySetMimikyuM = AvatarItemDisplay<"N_DISPLAY_set_mimikyu_m">;
-export type AvatarItemDisplaySetMistyF = AvatarItemDisplay<"N_DISPLAY_set_misty_f">;
-export type AvatarItemDisplaySetMovie2020F = AvatarItemDisplay<"N_DISPLAY_set_movie2020_f">;
-export type AvatarItemDisplaySetMovie2020M = AvatarItemDisplay<"N_DISPLAY_set_movie2020_m">;
-export type AvatarItemDisplaySetMunnapack0F = AvatarItemDisplay<"N_DISPLAY_set_munnapack_0_f">;
-export type AvatarItemDisplaySetMunnapack0M = AvatarItemDisplay<"N_DISPLAY_set_munnapack_0_m">;
-export type AvatarItemDisplaySetMunnapack1F = AvatarItemDisplay<"N_DISPLAY_set_munnapack_1_f">;
-export type AvatarItemDisplaySetMunnapack1M = AvatarItemDisplay<"N_DISPLAY_set_munnapack_1_m">;
-export type AvatarItemDisplaySetMustard0 = AvatarItemDisplay<"N_DISPLAY_set_mustard_0">;
-export type AvatarItemDisplaySetNDefaultNew = AvatarItemDisplay<"N_DISPLAY_set_n_default-new">;
-export type AvatarItemDisplaySetNDenimfashionweek2023 = AvatarItemDisplay<"N_DISPLAY_set_n_denimfashionweek2023">;
-export type AvatarItemDisplaySetNGothitelleitems = AvatarItemDisplay<"N_DISPLAY_set_n_gothitelleitems">;
-export type AvatarItemDisplaySetNReuniclusitems = AvatarItemDisplay<"N_DISPLAY_set_n_reuniclusitems">;
-export type AvatarItemDisplaySetNaganadelaitems = AvatarItemDisplay<"N_DISPLAY_set_naganadelaitems">;
-export type AvatarItemDisplaySetNecrozmaitems0 = AvatarItemDisplay<"N_DISPLAY_set_necrozmaitems_0">;
-export type AvatarItemDisplaySetNewyearF = AvatarItemDisplay<"N_DISPLAY_set_newyear_f">;
-export type AvatarItemDisplaySetNewyearM = AvatarItemDisplay<"N_DISPLAY_set_newyear_m">;
-export type AvatarItemDisplaySetObstagoonitemsF = AvatarItemDisplay<"N_DISPLAY_set_obstagoonitems_f">;
-export type AvatarItemDisplaySetObstagoonitemsM = AvatarItemDisplay<"N_DISPLAY_set_obstagoonitems_m">;
-export type AvatarItemDisplaySetOrasF = AvatarItemDisplay<"N_DISPLAY_set_oras_f">;
-export type AvatarItemDisplaySetOrasM = AvatarItemDisplay<"N_DISPLAY_set_oras_m">;
-export type AvatarItemDisplaySetPajamas20220F = AvatarItemDisplay<"N_DISPLAY_set_pajamas2022_0_f">;
-export type AvatarItemDisplaySetPajamas20220M = AvatarItemDisplay<"N_DISPLAY_set_pajamas2022_0_m">;
-export type AvatarItemDisplaySetPajamas20221F = AvatarItemDisplay<"N_DISPLAY_set_pajamas2022_1_f">;
-export type AvatarItemDisplaySetPajamas20221M = AvatarItemDisplay<"N_DISPLAY_set_pajamas2022_1_m">;
-export type AvatarItemDisplaySetPalmerF = AvatarItemDisplay<"N_DISPLAY_set_palmer_f">;
-export type AvatarItemDisplaySetPalmerM = AvatarItemDisplay<"N_DISPLAY_set_palmer_m">;
-export type AvatarItemDisplaySetPikachufan0F = AvatarItemDisplay<"N_DISPLAY_set_pikachufan_0_f">;
-export type AvatarItemDisplaySetPikachufan0M = AvatarItemDisplay<"N_DISPLAY_set_pikachufan_0_m">;
-export type AvatarItemDisplaySetPikachulibreF = AvatarItemDisplay<"N_DISPLAY_set_pikachulibre_f">;
-export type AvatarItemDisplaySetPikachulibreM = AvatarItemDisplay<"N_DISPLAY_set_pikachulibre_m">;
-export type AvatarItemDisplaySetPkmnhoodie001F = AvatarItemDisplay<"N_DISPLAY_set_pkmnhoodie001_f">;
-export type AvatarItemDisplaySetPkmnhoodie001M = AvatarItemDisplay<"N_DISPLAY_set_pkmnhoodie001_m">;
-export type AvatarItemDisplaySetPkmnhoodie004F = AvatarItemDisplay<"N_DISPLAY_set_pkmnhoodie004_f">;
-export type AvatarItemDisplaySetPkmnhoodie004M = AvatarItemDisplay<"N_DISPLAY_set_pkmnhoodie004_m">;
-export type AvatarItemDisplaySetPkmnhoodie007F = AvatarItemDisplay<"N_DISPLAY_set_pkmnhoodie007_f">;
-export type AvatarItemDisplaySetPkmnhoodie007M = AvatarItemDisplay<"N_DISPLAY_set_pkmnhoodie007_m">;
-export type AvatarItemDisplaySetProfwillowoutfitF = AvatarItemDisplay<"N_DISPLAY_set_profwillowoutfit_f">;
-export type AvatarItemDisplaySetProfwillowoutfitM = AvatarItemDisplay<"N_DISPLAY_set_profwillowoutfit_m">;
-export type AvatarItemDisplaySetPumpkabooitemsF = AvatarItemDisplay<"N_DISPLAY_set_pumpkabooitems_f">;
-export type AvatarItemDisplaySetPumpkabooitemsM = AvatarItemDisplay<"N_DISPLAY_set_pumpkabooitems_m">;
-export type AvatarItemDisplaySetRegiicejersiesF = AvatarItemDisplay<"N_DISPLAY_set_regiicejersies_f">;
-export type AvatarItemDisplaySetRegiicejersiesM = AvatarItemDisplay<"N_DISPLAY_set_regiicejersies_m">;
-export type AvatarItemDisplaySetRegirockjersiesF = AvatarItemDisplay<"N_DISPLAY_set_regirockjersies_f">;
-export type AvatarItemDisplaySetRegirockjersiesM = AvatarItemDisplay<"N_DISPLAY_set_regirockjersies_m">;
-export type AvatarItemDisplaySetRegisteeljersiesF = AvatarItemDisplay<"N_DISPLAY_set_registeeljersies_f">;
-export type AvatarItemDisplaySetRegisteeljersiesM = AvatarItemDisplay<"N_DISPLAY_set_registeeljersies_m">;
-export type AvatarItemDisplaySetRuinmaniacF = AvatarItemDisplay<"N_DISPLAY_set_ruinmaniac_f">;
-export type AvatarItemDisplaySetRuinmaniacM = AvatarItemDisplay<"N_DISPLAY_set_ruinmaniac_m">;
-export type AvatarItemDisplaySetS19gbl0 = AvatarItemDisplay<"N_DISPLAY_set_s19gbl_0">;
-export type AvatarItemDisplaySetS22gbl0 = AvatarItemDisplay<"N_DISPLAY_set_s22gbl_0">;
-export type AvatarItemDisplaySetShayminLandF = AvatarItemDisplay<"N_DISPLAY_set_shaymin_land_f">;
-export type AvatarItemDisplaySetShayminLandM = AvatarItemDisplay<"N_DISPLAY_set_shaymin_land_m">;
-export type AvatarItemDisplaySetShayminSkyF = AvatarItemDisplay<"N_DISPLAY_set_shaymin_sky_f">;
-export type AvatarItemDisplaySetShayminSkyM = AvatarItemDisplay<"N_DISPLAY_set_shaymin_sky_m">;
-export type AvatarItemDisplaySetSlowpoketailshirtsF = AvatarItemDisplay<"N_DISPLAY_set_slowpoketailshirts_f">;
-export type AvatarItemDisplaySetSlowpoketailshirtsM = AvatarItemDisplay<"N_DISPLAY_set_slowpoketailshirts_m">;
-export type AvatarItemDisplaySetSolgaleoitemsF = AvatarItemDisplay<"N_DISPLAY_set_solgaleoitems_f">;
-export type AvatarItemDisplaySetSolgaleoitemsM = AvatarItemDisplay<"N_DISPLAY_set_solgaleoitems_m">;
-export type AvatarItemDisplaySetSsF = AvatarItemDisplay<"N_DISPLAY_set_ss_f">;
-export type AvatarItemDisplaySetSsM = AvatarItemDisplay<"N_DISPLAY_set_ss_m">;
-export type AvatarItemDisplaySetStevenF = AvatarItemDisplay<"N_DISPLAY_set_steven_f">;
-export type AvatarItemDisplaySetStevenM = AvatarItemDisplay<"N_DISPLAY_set_steven_m">;
-export type AvatarItemDisplaySetStevenfirstF = AvatarItemDisplay<"N_DISPLAY_set_stevenfirst_f">;
-export type AvatarItemDisplaySetStevenfirstM = AvatarItemDisplay<"N_DISPLAY_set_stevenfirst_m">;
-export type AvatarItemDisplaySetSvcostumescarletschoolF = AvatarItemDisplay<"N_DISPLAY_set_svcostumescarletschool_f">;
-export type AvatarItemDisplaySetSvcostumescarletschoolM = AvatarItemDisplay<"N_DISPLAY_set_svcostumescarletschool_m">;
-export type AvatarItemDisplaySetSvcostumevioletschoolF = AvatarItemDisplay<"N_DISPLAY_set_svcostumevioletschool_f">;
-export type AvatarItemDisplaySetSvcostumevioletschoolM = AvatarItemDisplay<"N_DISPLAY_set_svcostumevioletschool_m">;
-export type AvatarItemDisplaySetSvdlc2fall0 = AvatarItemDisplay<"N_DISPLAY_set_svdlc2fall_0">;
-export type AvatarItemDisplaySetSvdlc2spring0 = AvatarItemDisplay<"N_DISPLAY_set_svdlc2spring_0">;
-export type AvatarItemDisplaySetSvdlcF = AvatarItemDisplay<"N_DISPLAY_set_svdlc_f">;
-export type AvatarItemDisplaySetSvdlcM = AvatarItemDisplay<"N_DISPLAY_set_svdlc_m">;
-export type AvatarItemDisplaySetSwshdlc2costumeF = AvatarItemDisplay<"N_DISPLAY_set_swshdlc2costume_f">;
-export type AvatarItemDisplaySetSwshdlc2costumeM = AvatarItemDisplay<"N_DISPLAY_set_swshdlc2costume_m">;
-export type AvatarItemDisplaySetSwshdlccostumeF = AvatarItemDisplay<"N_DISPLAY_set_swshdlccostume_f">;
-export type AvatarItemDisplaySetSwshdlccostumeM = AvatarItemDisplay<"N_DISPLAY_set_swshdlccostume_m">;
-export type AvatarItemDisplaySetSwshuniformchampionF = AvatarItemDisplay<"N_DISPLAY_set_swshuniformchampion_f">;
-export type AvatarItemDisplaySetSwshuniformchampionM = AvatarItemDisplay<"N_DISPLAY_set_swshuniformchampion_m">;
-export type AvatarItemDisplaySetSwshuniformdarkF = AvatarItemDisplay<"N_DISPLAY_set_swshuniformdark_f">;
-export type AvatarItemDisplaySetSwshuniformdarkM = AvatarItemDisplay<"N_DISPLAY_set_swshuniformdark_m">;
-export type AvatarItemDisplaySetSwshuniformdefaultF = AvatarItemDisplay<"N_DISPLAY_set_swshuniformdefault_f">;
-export type AvatarItemDisplaySetSwshuniformdefaultM = AvatarItemDisplay<"N_DISPLAY_set_swshuniformdefault_m">;
-export type AvatarItemDisplaySetSwshuniformdragonF = AvatarItemDisplay<"N_DISPLAY_set_swshuniformdragon_f">;
-export type AvatarItemDisplaySetSwshuniformdragonM = AvatarItemDisplay<"N_DISPLAY_set_swshuniformdragon_m">;
-export type AvatarItemDisplaySetSylveonitemsF = AvatarItemDisplay<"N_DISPLAY_set_sylveonitems_f">;
-export type AvatarItemDisplaySetSylveonitemsM = AvatarItemDisplay<"N_DISPLAY_set_sylveonitems_m">;
-export type AvatarItemDisplaySetTandemausitems0 = AvatarItemDisplay<"N_DISPLAY_set_tandemausitems_0">;
-export type AvatarItemDisplaySetTcgcollabtshirtandcapF = AvatarItemDisplay<"N_DISPLAY_set_tcgcollabtshirtandcap_f">;
-export type AvatarItemDisplaySetTcgcollabtshirtandcapM = AvatarItemDisplay<"N_DISPLAY_set_tcgcollabtshirtandcap_m">;
-export type AvatarItemDisplaySetTeamaquaF = AvatarItemDisplay<"N_DISPLAY_set_teamaqua_f">;
-export type AvatarItemDisplaySetTeamaquaM = AvatarItemDisplay<"N_DISPLAY_set_teamaqua_m">;
-export type AvatarItemDisplaySetTeamblancheF = AvatarItemDisplay<"N_DISPLAY_set_teamblanche_f">;
-export type AvatarItemDisplaySetTeamblancheM = AvatarItemDisplay<"N_DISPLAY_set_teamblanche_m">;
-export type AvatarItemDisplaySetTeamcandelaF = AvatarItemDisplay<"N_DISPLAY_set_teamcandela_f">;
-export type AvatarItemDisplaySetTeamcandelaM = AvatarItemDisplay<"N_DISPLAY_set_teamcandela_m">;
-export type AvatarItemDisplaySetTeammagmaF = AvatarItemDisplay<"N_DISPLAY_set_teammagma_f">;
-export type AvatarItemDisplaySetTeammagmaM = AvatarItemDisplay<"N_DISPLAY_set_teammagma_m">;
-export type AvatarItemDisplaySetTeamrocket0F = AvatarItemDisplay<"N_DISPLAY_set_teamrocket_0_f">;
-export type AvatarItemDisplaySetTeamrocket0M = AvatarItemDisplay<"N_DISPLAY_set_teamrocket_0_m">;
-export type AvatarItemDisplaySetTeamrocket1F = AvatarItemDisplay<"N_DISPLAY_set_teamrocket_1_f">;
-export type AvatarItemDisplaySetTeamrocket1M = AvatarItemDisplay<"N_DISPLAY_set_teamrocket_1_m">;
-export type AvatarItemDisplaySetTeamskullF = AvatarItemDisplay<"N_DISPLAY_set_teamskull_f">;
-export type AvatarItemDisplaySetTeamskullM = AvatarItemDisplay<"N_DISPLAY_set_teamskull_m">;
-export type AvatarItemDisplaySetTeamsparkF = AvatarItemDisplay<"N_DISPLAY_set_teamspark_f">;
-export type AvatarItemDisplaySetTeamsparkM = AvatarItemDisplay<"N_DISPLAY_set_teamspark_m">;
-export type AvatarItemDisplaySetTeamyellgruntsA0 = AvatarItemDisplay<"N_DISPLAY_set_teamyellgrunts_a_0">;
-export type AvatarItemDisplaySetTeamyellgruntsB0 = AvatarItemDisplay<"N_DISPLAY_set_teamyellgrunts_b_0">;
-export type AvatarItemDisplaySetUltra0F = AvatarItemDisplay<"N_DISPLAY_set_ultra_0_f">;
-export type AvatarItemDisplaySetUltra0M = AvatarItemDisplay<"N_DISPLAY_set_ultra_0_m">;
-export type AvatarItemDisplaySetUltrareconsquadF = AvatarItemDisplay<"N_DISPLAY_set_ultrareconsquad_f">;
-export type AvatarItemDisplaySetUltrareconsquadM = AvatarItemDisplay<"N_DISPLAY_set_ultrareconsquad_m">;
-export type AvatarItemDisplaySetUltrareconsquadbF = AvatarItemDisplay<"N_DISPLAY_set_ultrareconsquadb_f">;
-export type AvatarItemDisplaySetVeterantrainerxyF = AvatarItemDisplay<"N_DISPLAY_set_veterantrainerxy_f">;
-export type AvatarItemDisplaySetVeterantrainerxyM = AvatarItemDisplay<"N_DISPLAY_set_veterantrainerxy_m">;
-export type AvatarItemDisplaySetWcs2022winnersitemsF = AvatarItemDisplay<"N_DISPLAY_set_wcs2022winnersitems_f">;
-export type AvatarItemDisplaySetWcs2022winnersitemsM = AvatarItemDisplay<"N_DISPLAY_set_wcs2022winnersitems_m">;
-export type AvatarItemDisplaySetWcs2024paiditems0 = AvatarItemDisplay<"N_DISPLAY_set_wcs2024paiditems_0">;
-export type AvatarItemDisplaySetWcs2024winnersitems0 = AvatarItemDisplay<"N_DISPLAY_set_wcs2024winnersitems_0">;
-export type AvatarItemDisplaySetWcs2025winnersitems0 = AvatarItemDisplay<"N_DISPLAY_set_wcs2025winnersitems_0">;
-export type AvatarItemDisplaySetWinter2023 = AvatarItemDisplay<"N_DISPLAY_set_winter2023">;
-export type AvatarItemDisplaySetZacostumeA = AvatarItemDisplay<"N_DISPLAY_set_zacostume_a">;
-export type AvatarItemDisplaySetZacostumeB = AvatarItemDisplay<"N_DISPLAY_set_zacostume_b">;
+export type AvatarItemDisplayMBackpackEggbackpack0 = AvatarItemDisplay<
+	"N_DISPLAY_m_backpack_eggbackpack_0",
+	{
+		displayStringId: "m_backpack_eggbackpack_0_icon_display_name";
+		iconAddress: "m_backpack_eggbackpack_0_icon";
+	}
+>;
+export type AvatarItemDisplayMBackpackEggbackpack1 = AvatarItemDisplay<
+	"N_DISPLAY_m_backpack_eggbackpack_1",
+	{
+		displayStringId: "m_backpack_eggbackpack_1_icon_display_name";
+		iconAddress: "m_backpack_eggbackpack_1_icon";
+	}
+>;
+export type AvatarItemDisplayMBackpackEggbackpack2 = AvatarItemDisplay<
+	"N_DISPLAY_m_backpack_eggbackpack_2",
+	{
+		displayStringId: "m_backpack_eggbackpack_2_icon_display_name";
+		iconAddress: "m_backpack_eggbackpack_2_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackAlolaitemslittenbp0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_alolaitemslittenbp_0",
+	{
+		displayStringId: "n_backpack_alolaitemslittenbp_0_display_name";
+		iconAddress: "n_backpack_alolaitemslittenbp_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackAlolaitemspoppliobp0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_alolaitemspoppliobp_0",
+	{
+		displayStringId: "n_backpack_alolaitemspoppliobp_0_display_name";
+		iconAddress: "n_backpack_alolaitemspoppliobp_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackAlolaitemsrowletbp0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_alolaitemsrowletbp_0",
+	{
+		displayStringId: "n_backpack_alolaitemsrowletbp_0_display_name";
+		iconAddress: "n_backpack_alolaitemsrowletbp_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackAnimegou0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_animegou_0",
+	{
+		displayStringId: "n_backpack_animegou_0_display_name";
+		iconAddress: "n_backpack_animegou_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackBackpacker0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_backpacker_0",
+	{
+		displayStringId: "n_backpack_backpacker_0_display_name";
+		iconAddress: "n_backpack_backpacker_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackBlackkyuremitem0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_blackkyuremitem_0",
+	{
+		displayStringId: "avatar_backpack_blackkyurem";
+		iconAddress: "n_backpack_blackkyuremitem_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackCharjabug0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_charjabug_0",
+	{
+		displayStringId: "avatar_bag_charjabug";
+		iconAddress: "n_backpack_charjabug_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackClemont0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_clemont_0",
+	{
+		displayStringId: "avatar_n_backpack_clemont";
+		iconAddress: "n_backpack_clemont_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackCombeebackpack0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_combeebackpack_0",
+	{
+		displayStringId: "n_backpack_combeebackpack_0_display_name";
+		iconAddress: "n_backpack_combeebackpack_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackCombeebackpack1 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_combeebackpack_1",
+	{
+		displayStringId: "n_backpack_combeebackpack_1_display_name";
+		iconAddress: "n_backpack_combeebackpack_1_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackCute0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_cute_0",
+	{
+		displayStringId: "n_backpack_cute_0_display_name";
+		iconAddress: "n_backpack_cute_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackDedenneitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_dedenneitems_0",
+	{
+		displayStringId: "n_backpack_dedenneitems_0_display_name";
+		iconAddress: "n_backpack_dedenneitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackDefaultNew0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_default-new_0",
+	{
+		displayStringId: "n_backpack_default-new_0_display_name";
+		iconAddress: "n_backpack_defaultnew_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackDefaultA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_default_a_0",
+	{
+		displayStringId: "n_backpack_default_a_0_display_name";
+		iconAddress: "n_backpack_default_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackDefaultA1 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_default_a_1",
+	{
+		displayStringId: "n_backpack_default_a_0_display_name";
+		iconAddress: "n_backpack_default_a_1_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackDefaultA2 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_default_a_2",
+	{
+		displayStringId: "n_backpack_default_a_0_display_name";
+		iconAddress: "n_backpack_default_a_2_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackDefaultA3 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_default_a_3",
+	{
+		displayStringId: "n_backpack_default_a_0_display_name";
+		iconAddress: "n_backpack_default_a_3_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackDefaultB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_default_b_0",
+	{
+		displayStringId: "n_backpack_default_b_0_display_name";
+		iconAddress: "n_backpack_default_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackDefaultB1 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_default_b_1",
+	{
+		displayStringId: "n_backpack_default_b_0_display_name";
+		iconAddress: "n_backpack_default_b_1_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackDefaultB2 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_default_b_2",
+	{
+		displayStringId: "n_backpack_default_b_0_display_name";
+		iconAddress: "n_backpack_default_b_2_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackDefaultB3 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_default_b_3",
+	{
+		displayStringId: "n_backpack_default_b_0_display_name";
+		iconAddress: "n_backpack_default_b_3_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackDefaultB4 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_default_b_4",
+	{
+		displayStringId: "n_backpack_default_b_0_display_name";
+		iconAddress: "n_backpack_default_b_4_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackDefaultB5 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_default_b_5",
+	{
+		displayStringId: "n_backpack_default_b_0_display_name";
+		iconAddress: "n_backpack_default_b_5_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackDp0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_dp_0",
+	{
+		displayStringId: "n_backpack_dp_0_display_name";
+		iconAddress: "n_backpack_dp_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackEggIncubator0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_egg-incubator_0",
+	{
+		displayStringId: "avatar_backpack_eggincubator";
+		iconAddress: "n_backpack_egg-incubator_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackEggbackpack0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_eggbackpack_0",
+	{
+		displayStringId: "n_backpack_eggbackpack_0_display_name";
+		iconAddress: "n_backpack_eggbackpack_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackEggbackpack1 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_eggbackpack_1",
+	{
+		displayStringId: "n_backpack_eggbackpack_1_display_name";
+		iconAddress: "n_backpack_eggbackpack_1_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackEggbackpack2 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_eggbackpack_2",
+	{
+		displayStringId: "n_backpack_eggbackpack_2_display_name";
+		iconAddress: "n_backpack_eggbackpack_2_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackFrlgA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_frlg_a_0",
+	{
+		displayStringId: "n_backpack_frlg_a_0_display_name";
+		iconAddress: "n_backpack_frlg_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackFrlgB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_frlg_b_0",
+	{
+		displayStringId: "n_backpack_frlg_b_0_display_name";
+		iconAddress: "n_backpack_frlg_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackGenesecteventitem0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_genesecteventitem_0",
+	{
+		displayStringId: "n_backpack_genesecteventitem_0_display_name";
+		iconAddress: "n_backpack_genesecteventitem_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackGengar0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_gengar_0",
+	{
+		displayStringId: "n_backpack_gengar_0_display_name";
+		iconAddress: "n_backpack_gengar_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackGiratinaitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_giratinaitems_0",
+	{
+		displayStringId: "n_backpack_giratinaitems_0_display_name";
+		iconAddress: "n_backpack_giratinaitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackGoruckgengar0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_goruckgengar_0",
+	{
+		displayStringId: "avatar_backpack_goruckgengar";
+		iconAddress: "n_backpack_goruckgengar_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackGoruckpikachu0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_goruckpikachu_0",
+	{
+		displayStringId: "avatar_backpack_goruckpikachu";
+		iconAddress: "n_backpack_goruckpikachu_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackGoruckwobbuffet0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_goruckwobbuffet_0",
+	{
+		displayStringId: "avatar_backpack_goruckwobbuffet";
+		iconAddress: "n_backpack_goruckwobbuffet_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackGreenpikavee0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_greenpikavee_0",
+	{
+		displayStringId: "avatar_backpack_s22blue";
+		iconAddress: "n_backpack_greenpikavee_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackGuccibackpack0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_guccibackpack_0",
+	{
+		displayStringId: "n_backpack_guccibackpack_0_display_name";
+		iconAddress: "n_backpack_guccibackpack_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackGuitarcasebackpack0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_guitarcasebackpack_0",
+	{
+		displayStringId: "n_backpack_guitarcasebackpack_0_display_name";
+		iconAddress: "n_backpack_guitarcasebackpack_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackHgssA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_hgss_a_0",
+	{
+		displayStringId: "n_backpack_hgss_a_0_display_name";
+		iconAddress: "n_backpack_hgss_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackHgssB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_hgss_b_0",
+	{
+		displayStringId: "n_backpack_hgss_b_0_display_name";
+		iconAddress: "n_backpack_hgss_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackHououbackpack0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_hououbackpack_0",
+	{
+		displayStringId: "n_backpack_hououbackpack_0_display_name";
+		iconAddress: "n_backpack_hououbackpack_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackKakureonpouch0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_kakureonpouch_0",
+	{
+		displayStringId: "n_backpack_kakureonpouch_0_display_name";
+		iconAddress: "n_backpack_kakureonpouch_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackKomala0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_komala_0",
+	{
+		displayStringId: "AVATAR_KomalaBackpack";
+		iconAddress: "n_backpack_komala_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackLongchampbp0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_longchampbp_0",
+	{
+		displayStringId: "n_backpack_longchampbp_0_display_name";
+		iconAddress: "n_backpack_longchampbp_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackLunalaitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_lunalaitems_0",
+	{
+		displayStringId: "n_backpack_lunalaitems_0_display_name";
+		iconAddress: "n_backpack_lunalaitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackLunarnewyr0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_lunarnewyr_0",
+	{
+		displayStringId: "n_backpack_lunarnewyr_0_display_name";
+		iconAddress: "n_backpack_lunarnewyr_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackMimikyubp0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_mimikyubp_0",
+	{
+		displayStringId: "n_backpack_mimikyubp_0_display_name";
+		iconAddress: "n_backpack_mimikyubp_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackMovie20200 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_movie2020_0",
+	{
+		displayStringId: "n_backpack_movie2020_0_display_name";
+		iconAddress: "n_backpack_movie2020_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackNaganadelwings0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_naganadelwings_0",
+	{
+		displayStringId: "N_Naganadel_Backpack";
+		iconAddress: "n_backpack_naganadelaitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackNike20210 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_nike2021_0",
+	{
+		displayStringId: "n_backpack_nike2021_0_display_name";
+		iconAddress: "n_backpack_nike2021_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackPamobackpack0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_pamobackpack_0",
+	{
+		displayStringId: "n_backpack_pamobackpack_0_display_name";
+		iconAddress: "n_backpack_pamobackpack_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackPinap0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_pinap_0",
+	{
+		displayStringId: "avatar_bag_pinapberry";
+		iconAddress: "n_backpack_pinap_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackPkmnhoodie0010 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_pkmnhoodie001_0",
+	{
+		displayStringId: "n_backpack_pkmnhoodie001_0_display_name";
+		iconAddress: "n_backpack_pkmnhoodie001_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackPkmnhoodie0040 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_pkmnhoodie004_0",
+	{
+		displayStringId: "n_backpack_pkmnhoodie004_0_display_name";
+		iconAddress: "n_backpack_pkmnhoodie004_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackPkmnhoodie0070 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_pkmnhoodie007_0",
+	{
+		displayStringId: "n_backpack_pkmnhoodie007_0_display_name";
+		iconAddress: "n_backpack_pkmnhoodie007_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackRuinmaniac0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_ruinmaniac_0",
+	{
+		displayStringId: "n_backpack_ruinmaniac_0_display_name";
+		iconAddress: "n_backpack_ruinmaniac_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackSnapcamera0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_snapcamera_0",
+	{
+		displayStringId: "n_backpack_snapcamera_0_display_name";
+		iconAddress: "n_backpack_snapcamera_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackSsA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_ss_a_0",
+	{
+		displayStringId: "n_backpack_ss_a_0_display_name";
+		iconAddress: "n_backpack_ss_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackSsB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_ss_b_0",
+	{
+		displayStringId: "n_backpack_ss_b_0_display_name";
+		iconAddress: "n_backpack_ss_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackSvcostumescarletschool0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_svcostumescarletschool_0",
+	{
+		displayStringId: "n_backpack_svcostumescarletschool_0_display_name";
+		iconAddress: "n_backpack_svcostumescarletschool_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackSvcostumevioletschool0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_svcostumevioletschool_0",
+	{
+		displayStringId: "n_backpack_svcostumevioletschool_0_display_name";
+		iconAddress: "n_backpack_svcostumevioletschool_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackSvdlc10 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_svdlc1_0",
+	{
+		displayStringId: "n_backpack_svdlc1_0_display_name";
+		iconAddress: "n_backpack_svdlc1_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackSvdlc2spring0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_svdlc2spring_0",
+	{
+		displayStringId: "n_backpack_svdlc2spring_0_display_name";
+		iconAddress: "n_backpack_svdlc2spring_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackSwshdlc2costumeA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_swshdlc2costume_a_0",
+	{
+		displayStringId: "n_backpack_swshdlc2costume_a_0_display_name";
+		iconAddress: "n_backpack_swshdlc2costume_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackSwshdlc2costumeB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_swshdlc2costume_b_0",
+	{
+		displayStringId: "n_backpack_swshdlc2costume_b_0_display_name";
+		iconAddress: "n_backpack_swshdlc2costume_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackSwshdlccostumeA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_swshdlccostume_a_0",
+	{
+		displayStringId: "n_backpack_swshdlccostume_a_0_display_name";
+		iconAddress: "n_backpack_swshdlccostume_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackSwshdlccostumeB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_swshdlccostume_b_0",
+	{
+		displayStringId: "n_backpack_swshdlccostume_b_0_display_name";
+		iconAddress: "n_backpack_swshdlccostume_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackTatsugiribackpackCurly0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_tatsugiribackpack-curly_0",
+	{
+		displayStringId: "avatar_backpack_tatsugiricurly";
+		iconAddress: "n_backpack_tatsugiribackpack-curly_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackTatsugiribackpackDroopy0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_tatsugiribackpack-droopy_0",
+	{
+		displayStringId: "avatar_backpack_tatsugiridroopy";
+		iconAddress: "n_backpack_tatsugiribackpack-droopy_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackTatsugiribackpackStretchy0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_tatsugiribackpack-stretchy_0",
+	{
+		displayStringId: "avatar_backpack_tatsugiristretchy";
+		iconAddress: "n_backpack_tatsugiribackpack-stretchy_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackTogepibackpack0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_togepibackpack_0",
+	{
+		displayStringId: "n_backpack_togepibackpack_0_display_name";
+		iconAddress: "n_backpack_togepibackpack_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackUltraA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_ultra_a_0",
+	{
+		displayStringId: "n_backpack_ultra_a_0_display_name";
+		iconAddress: "n_backpack_ultra_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackUltraB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_ultra_b_0",
+	{
+		displayStringId: "n_backpack_ultra_b_0_display_name";
+		iconAddress: "n_backpack_ultra_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackUnequip0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_unequip_0",
+	{
+		displayStringId: "n_backpack_unequip_0_display_name";
+		iconAddress: "n_backpack_empty_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackVerizon20210 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_verizon2021_0",
+	{
+		displayStringId: "n_backpack_verizon2021_0_display_name";
+		iconAddress: "n_backpack_verizon2021_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackWhitekyuremitem0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_whitekyuremitem_0",
+	{
+		displayStringId: "avatar_backpack_whitekyurem";
+		iconAddress: "n_backpack_whitekyuremitem_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBackpackZubatbp0 = AvatarItemDisplay<
+	"N_DISPLAY_n_backpack_zubatbp_0",
+	{
+		displayStringId: "n_backpack_zubatbp_0_display_name";
+		iconAddress: "n_backpack_zubatbp_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBeltAcetrainerbw0 = AvatarItemDisplay<
+	"N_DISPLAY_n_belt_acetrainerbw_0",
+	{
+		displayStringId: "n_belt_acetrainerbw_0_display_name";
+		iconAddress: "n_belt_acetrainerbw_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBeltDefaultA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_belt_default_a_0",
+	{
+		displayStringId: "n_belt_default_a_0_display_name";
+		iconAddress: "n_belt_default_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBeltDefaultA1 = AvatarItemDisplay<
+	"N_DISPLAY_n_belt_default_a_1",
+	{
+		displayStringId: "n_belt_default_a_0_display_name";
+		iconAddress: "n_belt_default_a_1_icon";
+	}
+>;
+export type AvatarItemDisplayNBeltDefaultA2 = AvatarItemDisplay<
+	"N_DISPLAY_n_belt_default_a_2",
+	{
+		displayStringId: "n_belt_default_a_0_display_name";
+		iconAddress: "n_belt_default_a_2_icon";
+	}
+>;
+export type AvatarItemDisplayNBeltDefaultA3 = AvatarItemDisplay<
+	"N_DISPLAY_n_belt_default_a_3",
+	{
+		displayStringId: "n_belt_default_a_0_display_name";
+		iconAddress: "n_belt_default_a_3_icon";
+	}
+>;
+export type AvatarItemDisplayNBeltDefaultA4 = AvatarItemDisplay<
+	"N_DISPLAY_n_belt_default_a_4",
+	{
+		displayStringId: "n_belt_default_a_0_display_name";
+		iconAddress: "n_belt_default_a_4_icon";
+	}
+>;
+export type AvatarItemDisplayNBeltDefaultA5 = AvatarItemDisplay<
+	"N_DISPLAY_n_belt_default_a_5",
+	{
+		displayStringId: "n_belt_default_a_0_display_name";
+		iconAddress: "n_belt_default_a_5_icon";
+	}
+>;
+export type AvatarItemDisplayNBeltDefaultA6 = AvatarItemDisplay<
+	"N_DISPLAY_n_belt_default_a_6",
+	{
+		displayStringId: "n_belt_default_a_0_display_name";
+		iconAddress: "n_belt_default_a_6_icon";
+	}
+>;
+export type AvatarItemDisplayNBeltDefaultA7 = AvatarItemDisplay<
+	"N_DISPLAY_n_belt_default_a_7",
+	{
+		displayStringId: "n_belt_default_a_0_display_name";
+		iconAddress: "n_belt_default_a_7_icon";
+	}
+>;
+export type AvatarItemDisplayNBeltDefaultA8 = AvatarItemDisplay<
+	"N_DISPLAY_n_belt_default_a_8",
+	{
+		displayStringId: "n_belt_default_a_0_display_name";
+		iconAddress: "n_belt_default_a_8_icon";
+	}
+>;
+export type AvatarItemDisplayNBeltSimple0 = AvatarItemDisplay<
+	"N_DISPLAY_n_belt_simple_0",
+	{
+		displayStringId: "n_belt_simple_3_display_name";
+		iconAddress: "n_belt_simple_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBeltSimple1 = AvatarItemDisplay<
+	"N_DISPLAY_n_belt_simple_1",
+	{
+		displayStringId: "n_belt_simple_3_display_name";
+		iconAddress: "n_belt_simple_1_icon";
+	}
+>;
+export type AvatarItemDisplayNBeltSimple2 = AvatarItemDisplay<
+	"N_DISPLAY_n_belt_simple_2",
+	{
+		displayStringId: "n_belt_simple_3_display_name";
+		iconAddress: "n_belt_simple_2_icon";
+	}
+>;
+export type AvatarItemDisplayNBeltSimple3 = AvatarItemDisplay<
+	"N_DISPLAY_n_belt_simple_3",
+	{
+		displayStringId: "n_belt_simple_3_display_name";
+		iconAddress: "n_belt_simple_3_icon";
+	}
+>;
+export type AvatarItemDisplayNBeltTeamrocket0 = AvatarItemDisplay<
+	"N_DISPLAY_n_belt_teamrocket_0",
+	{
+		displayStringId: "n_belt_teamrocket_0_display_name";
+		iconAddress: "n_belt_teamrocket_0_icon";
+	}
+>;
+export type AvatarItemDisplayNBeltTeamrocket1 = AvatarItemDisplay<
+	"N_DISPLAY_n_belt_teamrocket_1",
+	{
+		displayStringId: "n_belt_teamrocket_1_display_name";
+		iconAddress: "n_belt_teamrocket_1_icon";
+	}
+>;
+export type AvatarItemDisplayNBeltUnequip0 = AvatarItemDisplay<
+	"N_DISPLAY_n_belt_unequip_0",
+	{
+		displayStringId: "n_belt_unequip_0_display_name";
+		iconAddress: "n_belt_empty_0_icon";
+	}
+>;
+export type AvatarItemDisplayNFace3dmask0 = AvatarItemDisplay<
+	"N_DISPLAY_n_face_3dmask_0",
+	{
+		displayStringId: "n_face_3dmask_0_display_name";
+		iconAddress: "n_face_3dmask_0_icon";
+	}
+>;
+export type AvatarItemDisplayNFace3dmask1 = AvatarItemDisplay<
+	"N_DISPLAY_n_face_3dmask_1",
+	{
+		displayStringId: "n_face_3dmask_1_display_name";
+		iconAddress: "n_face_3dmask_1_icon";
+	}
+>;
+export type AvatarItemDisplayNFace3dmask2 = AvatarItemDisplay<
+	"N_DISPLAY_n_face_3dmask_2",
+	{
+		displayStringId: "n_face_3dmask_2_display_name";
+		iconAddress: "n_face_3dmask_2_icon";
+	}
+>;
+export type AvatarItemDisplayNFaceAllister0 = AvatarItemDisplay<
+	"N_DISPLAY_n_face_allister_0",
+	{
+		displayStringId: "avatar_mask_gblallister";
+		iconAddress: "n_face_allister_0_icon";
+	}
+>;
+export type AvatarItemDisplayNFaceBanettemask0 = AvatarItemDisplay<
+	"N_DISPLAY_n_face_banettemask_0",
+	{
+		displayStringId: "n_face_banettemask_0_display_name";
+		iconAddress: "n_face_banettemask_0_icon";
+	}
+>;
+export type AvatarItemDisplayNFaceDayofthedead0 = AvatarItemDisplay<
+	"N_DISPLAY_n_face_dayofthedead_0",
+	{
+		displayStringId: "n_face_dayofthedead_0_display_name";
+		iconAddress: "n_face_dayofthedead_0_icon";
+	}
+>;
+export type AvatarItemDisplayNFaceDefaultmask0 = AvatarItemDisplay<
+	"N_DISPLAY_n_face_defaultmask_0",
+	{
+		displayStringId: "n_face_defaultmask_0_display_name";
+		iconAddress: "n_face_defaultmask_0_icon";
+	}
+>;
+export type AvatarItemDisplayNFaceFacestickerghostpika0 = AvatarItemDisplay<
+	"N_DISPLAY_n_face_facestickerghostpika_0",
+	{
+		displayStringId: "n_face_facestickerghostpika_0_display_name";
+		iconAddress: "n_face_facestickerghostpika_0_icon";
+	}
+>;
+export type AvatarItemDisplayNFaceFacestickerpikachu0 = AvatarItemDisplay<
+	"N_DISPLAY_n_face_facestickerpikachu_0",
+	{
+		displayStringId: "n_face_facestickerpikachu_0_display_name";
+		iconAddress: "n_face_facestickerpikachu_0_icon";
+	}
+>;
+export type AvatarItemDisplayNFaceFacestickerpokeball0 = AvatarItemDisplay<
+	"N_DISPLAY_n_face_facestickerpokeball_0",
+	{
+		displayStringId: "n_face_facestickerpokeball_0_display_name";
+		iconAddress: "n_face_facestickerpokeball_0_icon";
+	}
+>;
+export type AvatarItemDisplayNFaceFestofcolors0 = AvatarItemDisplay<
+	"N_DISPLAY_n_face_festofcolors_0",
+	{
+		displayStringId: "n_face_festofcolors_0_display_name";
+		iconAddress: "n_face_festofcolors_0_icon";
+	}
+>;
+export type AvatarItemDisplayNFaceFestofcolors1 = AvatarItemDisplay<
+	"N_DISPLAY_n_face_festofcolors_1",
+	{
+		displayStringId: "n_face_festofcolors_1_display_name";
+		iconAddress: "n_face_festofcolors_1_icon";
+	}
+>;
+export type AvatarItemDisplayNFaceFestofcolors2 = AvatarItemDisplay<
+	"N_DISPLAY_n_face_festofcolors_2",
+	{
+		displayStringId: "n_face_festofcolors_2_display_name";
+		iconAddress: "n_face_festofcolors_2_icon";
+	}
+>;
+export type AvatarItemDisplayNFaceGracidea0 = AvatarItemDisplay<
+	"N_DISPLAY_n_face_gracidea_0",
+	{
+		displayStringId: "n_face_gracidea_0_display_name";
+		iconAddress: "n_face_gracidea_0_icon";
+	}
+>;
+export type AvatarItemDisplayNFaceHoliday2022santacostumes0 = AvatarItemDisplay<
+	"N_DISPLAY_n_face_holiday2022santacostumes_0",
+	{
+		displayStringId: "n_face_holiday2022santacostumes_0_display_name";
+		iconAddress: "n_face_holiday2022santacostumes_0_icon";
+	}
+>;
+export type AvatarItemDisplayNFacePikachumask0 = AvatarItemDisplay<
+	"N_DISPLAY_n_face_pikachumask_0",
+	{
+		displayStringId: "n_face_pikachumask_0_display_name";
+		iconAddress: "n_face_pikachumask_0_icon";
+	}
+>;
+export type AvatarItemDisplayNFaceSableyemask0 = AvatarItemDisplay<
+	"N_DISPLAY_n_face_sableyemask_0",
+	{
+		displayStringId: "n_face_sableyemask_0_display_name";
+		iconAddress: "n_face_sableyemask_0_icon";
+	}
+>;
+export type AvatarItemDisplayNFaceTeamskull0 = AvatarItemDisplay<
+	"N_DISPLAY_n_face_teamskull_0",
+	{
+		displayStringId: "n_face_teamskull_0_display_name";
+		iconAddress: "n_face_teamskull_0_icon";
+	}
+>;
+export type AvatarItemDisplayNFaceToxelmask0 = AvatarItemDisplay<
+	"N_DISPLAY_n_face_toxelmask_0",
+	{
+		displayStringId: "avatar_mask_toxelfacemask";
+		iconAddress: "n_face_toxelmask_0_icon";
+	}
+>;
+export type AvatarItemDisplayNFaceUnequip0 = AvatarItemDisplay<
+	"N_DISPLAY_n_face_unequip_0",
+	{
+		displayStringId: "n_face_unequip_0_display_name";
+		iconAddress: "n_face_empty_0_icon";
+	}
+>;
+export type AvatarItemDisplayNFaceVerizon2020mask0 = AvatarItemDisplay<
+	"N_DISPLAY_n_face_verizon2020mask_0",
+	{
+		displayStringId: "n_face_verizon2020mask_0_display_name";
+		iconAddress: "n_face_verizon2020mask_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlasses3d0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_3d_0",
+	{
+		displayStringId: "n_glasses_3d_0_display_name";
+		iconAddress: "n_glasses_3d_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesClemont0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_clemont_0",
+	{
+		displayStringId: "avatar_n_glasses_clemont";
+		iconAddress: "n_glasses_clemont_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesCutieflysleepmask0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_cutieflysleepmask_0",
+	{
+		displayStringId: "n_glasses_cutieflysleepmask_0_display_name";
+		iconAddress: "n_glasses_cutieflysleepmask_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesDittoeyewear0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_dittoeyewear_0",
+	{
+		displayStringId: "avatar_glasses_ditto";
+		iconAddress: "n_glasses_dittoeyewear_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesDivingsuit0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_divingsuit_0",
+	{
+		displayStringId: "n_glasses_divingsuit_0_display_name";
+		iconAddress: "n_glasses_divingsuit_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesDrpikachu0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_drpikachu_0",
+	{
+		displayStringId: "n__glasses_drpikachu_0_display_name";
+		iconAddress: "n_glasses_drpikachu_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesFrillishglasses0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_frillishglasses_0",
+	{
+		displayStringId: "n_glasses_frillishglasses_0_display_name";
+		iconAddress: "n_glasses_frillishglasses_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesFw20220 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_fw2022_0",
+	{
+		displayStringId: "n_glasses_fw2022_0_display_name";
+		iconAddress: "n_glasses_fw2022_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesGimmighoulitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_gimmighoulitems_0",
+	{
+		displayStringId: "n_glasses_gimmighoulitems_0_display_name";
+		iconAddress: "n_glasses_gimmighoulitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesGoteamrocketarlo0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_goteamrocketarlo_0",
+	{
+		displayStringId: "n_glasses_goteamrocketarlo_0_display_name";
+		iconAddress: "n_glasses_goteamrocketarlo_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesGrandoakglasses0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_grandoakglasses_0",
+	{
+		displayStringId: "n_glasses_grandoakglasses_0_display_name";
+		iconAddress: "n_glasses_grandoakglasses_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesJogger0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_jogger_0",
+	{
+		displayStringId: "n_glasses_jogger_0_display_name";
+		iconAddress: "n_glasses_jogger_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesLugiaglasses0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_lugiaglasses_0",
+	{
+		displayStringId: "n_glasses_lugiaglasses_0_display_name";
+		iconAddress: "n_glasses_lugiaglasses_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesLv40glasses0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_lv40glasses_0",
+	{
+		displayStringId: "n_glasses_lv40glasses_0_display_name";
+		iconAddress: "n_glasses_lv40glasses_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesLvl73Visorspecs0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_lvl73-visorspecs_0",
+	{
+		displayStringId: "avatar_n_glasses_lvl73-visorspecs_0";
+		iconAddress: "n_glasses_lvl73-visorspecs_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesMask0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_mask_0",
+	{
+		displayStringId: "n_glasses_mask_1_display_name";
+		iconAddress: "n_glasses_mask_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesMask1 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_mask_1",
+	{
+		displayStringId: "n_glasses_mask_1_display_name";
+		iconAddress: "n_glasses_mask_1_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesNecrozmaitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_necrozmaitems_0",
+	{
+		displayStringId: "AVATAR_NecrozmaGlasses";
+		iconAddress: "n_glasses_necrozmaitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesNewyear20220 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_newyear2022_0",
+	{
+		displayStringId: "n_glasses_newyear2022_0_display_name";
+		iconAddress: "n_glasses_newyearglasses2022_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesNewyearglasses20200 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_newyearglasses2020_0",
+	{
+		displayStringId: "n_glasses_newyearglasses2020_0_display_name";
+		iconAddress: "n_glasses_newyearglasses2020_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesNewyearglasses20210 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_newyearglasses2021_0",
+	{
+		displayStringId: "n_glasses_newyearglasses2021_0_display_name";
+		iconAddress: "n_glasses_newyearglasses2021_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesObstagoonitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_obstagoonitems_0",
+	{
+		displayStringId: "n_glasses_obstagoonitems_0_display_name";
+		iconAddress: "n_glasses_obstagoonitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesRoundsunglasses0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_roundsunglasses_0",
+	{
+		displayStringId: "n_glasses_roundsunglasses_0_display_name";
+		iconAddress: "n_glasses_roundsunglasses_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesTeardrop0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_teardrop_0",
+	{
+		displayStringId: "n_glasses_teardrop_0_display_name";
+		iconAddress: "n_glasses_teardrop_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesThick0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_thick_0",
+	{
+		displayStringId: "n_glasses_thick_4_display_name";
+		iconAddress: "n_glasses_thick_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesThick1 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_thick_1",
+	{
+		displayStringId: "n_glasses_thick_4_display_name";
+		iconAddress: "n_glasses_thick_1_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesThick2 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_thick_2",
+	{
+		displayStringId: "n_glasses_thick_4_display_name";
+		iconAddress: "n_glasses_thick_2_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesThick3 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_thick_3",
+	{
+		displayStringId: "n_glasses_thick_4_display_name";
+		iconAddress: "n_glasses_thick_3_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesThick4 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_thick_4",
+	{
+		displayStringId: "n_glasses_thick_4_display_name";
+		iconAddress: "n_glasses_thick_4_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesUnequip0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_unequip_0",
+	{
+		displayStringId: "n_glasses_unequip_0_display_name";
+		iconAddress: "n_glasses_empty_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlassesWcs2024winnersitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_glasses_wcs2024winnersitems_0",
+	{
+		displayStringId: "avatar_glasses_wcs2024champion";
+		iconAddress: "n_glasses_wcs2024winnersitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesAcetrainersm0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_acetrainersm_0",
+	{
+		displayStringId: "n_gloves_acetrainersm_0_display_name";
+		iconAddress: "n_gloves_acetrainersm_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesAllister0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_allister_0",
+	{
+		displayStringId: "avatar_gloves_gblallister";
+		iconAddress: "n_gloves_allister_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesBattlegirl0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_battlegirl_0",
+	{
+		displayStringId: "n_gloves_battlegirl_0_display_name";
+		iconAddress: "n_gloves_battlegirl_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesBea0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_bea_0",
+	{
+		displayStringId: "n_gloves_bea_0_display_name";
+		iconAddress: "n_gloves_bea_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesBwn0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_bwn_0",
+	{
+		displayStringId: "n_gloves_bwn_0_display_name";
+		iconAddress: "n_gloves_bwn_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesDefaultNew0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_default-new_0",
+	{
+		displayStringId: "n_gloves_default-new_0_display_name";
+		iconAddress: "n_gloves_defaultnew_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesDefaultA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_default_a_0",
+	{
+		displayStringId: "n_gloves_default_a_0_display_name";
+		iconAddress: "n_gloves_default_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesDefaultA1 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_default_a_1",
+	{
+		displayStringId: "n_gloves_default_a_0_display_name";
+		iconAddress: "n_gloves_default_a_1_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesDefaultA2 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_default_a_2",
+	{
+		displayStringId: "n_gloves_default_a_0_display_name";
+		iconAddress: "n_gloves_default_a_2_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesDefaultA3 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_default_a_3",
+	{
+		displayStringId: "n_gloves_default_a_0_display_name";
+		iconAddress: "n_gloves_default_a_3_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesDefaultB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_default_b_0",
+	{
+		displayStringId: "n_gloves_default_b_0_display_name";
+		iconAddress: "n_gloves_default_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesDefaultB1 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_default_b_1",
+	{
+		displayStringId: "n_gloves_default_b_0_display_name";
+		iconAddress: "n_gloves_default_b_1_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesDefaultB2 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_default_b_2",
+	{
+		displayStringId: "n_gloves_default_b_0_display_name";
+		iconAddress: "n_gloves_default_b_2_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesDefaultB3 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_default_b_3",
+	{
+		displayStringId: "n_gloves_default_b_0_display_name";
+		iconAddress: "n_gloves_default_b_3_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesDelibird0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_delibird_0",
+	{
+		displayStringId: "n_gloves_delibird_0_display_name";
+		iconAddress: "n_gloves_delibird_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesDynamaxswsh0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_dynamaxswsh_0",
+	{
+		displayStringId: "avatar_gloves_dynamaxbandwhite";
+		iconAddress: "n_gloves_dynamaxswsh_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesFrlgA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_frlg_a_0",
+	{
+		displayStringId: "n_gloves_frlg_a_0_display_name";
+		iconAddress: "n_gloves_frlg_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesFrlgB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_frlg_b_0",
+	{
+		displayStringId: "n_gloves_frlg_b_0_display_name";
+		iconAddress: "n_gloves_frlg_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesGeeta0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_geeta_0",
+	{
+		displayStringId: "n_gloves_geeta_0_display_name";
+		iconAddress: "n_gloves_geeta_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesGiovanni0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_giovanni_0",
+	{
+		displayStringId: "n_gloves_giovanni_0_display_name";
+		iconAddress: "n_gloves_giovanni_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesGuzma0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_guzma_0",
+	{
+		displayStringId: "n_gloves_guzma_0_display_name";
+		iconAddress: "n_gloves_guzma_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesGymleaderA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_gymleader_a_0",
+	{
+		displayStringId: "n_gloves_gymleader_a_0_display_name";
+		iconAddress: "n_gloves_gymleader_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesGymleaderB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_gymleader_b_0",
+	{
+		displayStringId: "n_gloves_gymleader_b_0_display_name";
+		iconAddress: "n_gloves_gymleader_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesHoopabangle0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_hoopabangle_0",
+	{
+		displayStringId: "n_gloves_hoopabangle_a_0_display_name";
+		iconAddress: "n_gloves_hoopabangle_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesJogger0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_jogger_0",
+	{
+		displayStringId: "n_gloves_jogger_0_display_name";
+		iconAddress: "n_gloves_jogger_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesKorrina0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_korrina_0",
+	{
+		displayStringId: "n_gloves_korrina_0_display_name";
+		iconAddress: "n_gloves_korrina_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesLysandre0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_lysandre_0",
+	{
+		displayStringId: "n_gloves_lysandre_0_display_name";
+		iconAddress: "n_gloves_lysandre_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesMegabangle0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_megabangle_0",
+	{
+		displayStringId: "n_gloves_megabangle_0_display_name";
+		iconAddress: "n_gloves_megabangle_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesMegabangle1 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_megabangle_1",
+	{
+		displayStringId: "n_gloves_megabangle_1_display_name";
+		iconAddress: "n_gloves_megabangle_1_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesMegabangle2 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_megabangle_2",
+	{
+		displayStringId: "n_gloves_megabangle_2_display_name";
+		iconAddress: "n_gloves_megabangle_2_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesMegabangle3 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_megabangle_3",
+	{
+		displayStringId: "n_gloves_megabangle_3_display_name";
+		iconAddress: "n_gloves_megabangle_3_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesMegabangle4 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_megabangle_4",
+	{
+		displayStringId: "n_gloves_megabangle_4_display_name";
+		iconAddress: "n_gloves_megabangle_4_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesObstagoonitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_obstagoonitems_0",
+	{
+		displayStringId: "n_gloves_obstagoonitems_0_display_name";
+		iconAddress: "n_gloves_obstagoonitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesPalmer0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_palmer_0",
+	{
+		displayStringId: "n_gloves_palmer_0_display_name";
+		iconAddress: "n_gloves_palmer_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesProfwillowoutfit0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_profwillowoutfit_0",
+	{
+		displayStringId: "n_gloves_profwillowoutfit_0_display_name";
+		iconAddress: "n_gloves_profwillowoutfit_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesStevenfirst0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_stevenfirst_0",
+	{
+		displayStringId: "n_gloves_stevenfirst_0_display_name";
+		iconAddress: "n_gloves_stevenfirst_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesSvdlc2spring0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_svdlc2spring_0",
+	{
+		displayStringId: "n_gloves_svdlc2spring_0_display_name";
+		iconAddress: "n_gloves_svdlc2spring_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesSwshdlc2costume0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_swshdlc2costume_0",
+	{
+		displayStringId: "n_gloves_swshdlc2costume_0_display_name";
+		iconAddress: "n_gloves_swshdlc2costume_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesSwshdlccostume0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_swshdlccostume_0",
+	{
+		displayStringId: "n_gloves_swshdlccostume_0_display_name";
+		iconAddress: "n_gloves_swshdlccostume_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesSwshuniformchampion0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_swshuniformchampion_0",
+	{
+		displayStringId: "n_gloves_swshuniformchampion_0_display_name";
+		iconAddress: "n_gloves_swshuniformchampion_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesSwshuniformdark0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_swshuniformdark_0",
+	{
+		displayStringId: "n_gloves_swshuniformdark_0_display_name";
+		iconAddress: "n_gloves_swshuniformdark_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesSwshuniformdefault0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_swshuniformdefault_0",
+	{
+		displayStringId: "n_gloves_swshuniformdefault_0_display_name";
+		iconAddress: "n_gloves_swshuniformdefault_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesSwshuniformdragon0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_swshuniformdragon_0",
+	{
+		displayStringId: "n_gloves_swshuniformdragon_0_display_name";
+		iconAddress: "n_gloves_swshuniformdragon_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesTeamaquaA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_teamaqua_a_0",
+	{
+		displayStringId: "n_gloves_teamaqua_a_0_display_name";
+		iconAddress: "n_gloves_teamaqua_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesTeamaquaB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_teamaqua_b_0",
+	{
+		displayStringId: "n_gloves_teamaqua_b_0_display_name";
+		iconAddress: "n_gloves_teamaqua_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesTeammagma0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_teammagma_0",
+	{
+		displayStringId: "n_gloves_teammagma_0_display_name";
+		iconAddress: "n_gloves_teammagma_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesTeamrocket0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_teamrocket_0",
+	{
+		displayStringId: "n_gloves_teamrocket_0_display_name";
+		iconAddress: "n_gloves_teamrocket_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesTeamsparkA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_teamspark_a_0",
+	{
+		displayStringId: "n_gloves_teamspark_a_0_display_name";
+		iconAddress: "n_gloves_teamspark_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesTeamsparkB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_teamspark_b_0",
+	{
+		displayStringId: "n_gloves_teamspark_b_0_display_name";
+		iconAddress: "n_gloves_teamspark_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesTeamwristband0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_teamwristband_0",
+	{
+		displayStringId: "avatar_gloves_wristbandwhite";
+		iconAddress: "n_gloves_teamwristband_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesTeamwristband1 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_teamwristband_1",
+	{
+		displayStringId: "avatar_gloves_wristbandred";
+		iconAddress: "n_gloves_teamwristband_1_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesTeamwristband2 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_teamwristband_2",
+	{
+		displayStringId: "avatar_gloves_wristbandblue";
+		iconAddress: "n_gloves_teamwristband_2_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesTeamwristband3 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_teamwristband_3",
+	{
+		displayStringId: "avatar_gloves_wristbandyellow";
+		iconAddress: "n_gloves_teamwristband_3_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesTeamyellgrunts0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_teamyellgrunts_0",
+	{
+		displayStringId: "avatar_gloves_teamyell";
+		iconAddress: "n_gloves_teamyellgrunts_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesUnequip0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_unequip_0",
+	{
+		displayStringId: "n_gloves_unequip_0_display_name";
+		iconAddress: "n_gloves_empty_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGlovesWintergloves20230 = AvatarItemDisplay<
+	"N_DISPLAY_n_gloves_wintergloves2023_0",
+	{
+		displayStringId: "n_gloves_wintergloves2023_0_display_name";
+		iconAddress: "n_gloves_wintergloves2023_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientEye0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_eye_0",
+	{
+		iconAddress: "n_gradient_eye_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientEye1 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_eye_1",
+	{
+		iconAddress: "n_gradient_eye_1_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientEye10 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_eye_10",
+	{
+		iconAddress: "n_gradient_eye_10_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientEye11 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_eye_11",
+	{
+		iconAddress: "n_gradient_eye_11_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientEye12 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_eye_12",
+	{
+		iconAddress: "n_gradient_eye_12_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientEye13 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_eye_13",
+	{
+		iconAddress: "n_gradient_eye_13_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientEye14 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_eye_14",
+	{
+		iconAddress: "n_gradient_eye_14_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientEye15 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_eye_15",
+	{
+		iconAddress: "n_gradient_eye_15_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientEye16 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_eye_16",
+	{
+		iconAddress: "n_gradient_eye_16_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientEye17 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_eye_17",
+	{
+		iconAddress: "n_gradient_eye_17_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientEye18 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_eye_18",
+	{
+		iconAddress: "n_gradient_eye_18_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientEye19 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_eye_19",
+	{
+		iconAddress: "n_gradient_eye_19_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientEye2 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_eye_2",
+	{
+		iconAddress: "n_gradient_eye_2_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientEye3 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_eye_3",
+	{
+		iconAddress: "n_gradient_eye_3_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientEye4 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_eye_4",
+	{
+		iconAddress: "n_gradient_eye_4_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientEye5 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_eye_5",
+	{
+		iconAddress: "n_gradient_eye_5_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientEye6 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_eye_6",
+	{
+		iconAddress: "n_gradient_eye_6_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientEye7 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_eye_7",
+	{
+		iconAddress: "n_gradient_eye_7_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientEye8 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_eye_8",
+	{
+		iconAddress: "n_gradient_eye_8_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientEye9 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_eye_9",
+	{
+		iconAddress: "n_gradient_eye_9_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_0",
+	{
+		iconAddress: "n_gradient_hair_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair1 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_1",
+	{
+		iconAddress: "n_gradient_hair_1_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair10 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_10",
+	{
+		iconAddress: "n_gradient_hair_10_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair11 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_11",
+	{
+		iconAddress: "n_gradient_hair_11_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair12 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_12",
+	{
+		iconAddress: "n_gradient_hair_12_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair13 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_13",
+	{
+		iconAddress: "n_gradient_hair_13_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair14 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_14",
+	{
+		iconAddress: "n_gradient_hair_14_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair15 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_15",
+	{
+		iconAddress: "n_gradient_hair_15_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair16 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_16",
+	{
+		iconAddress: "n_gradient_hair_16_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair17 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_17",
+	{
+		iconAddress: "n_gradient_hair_17_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair18 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_18",
+	{
+		iconAddress: "n_gradient_hair_18_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair19 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_19",
+	{
+		iconAddress: "n_gradient_hair_19_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair2 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_2",
+	{
+		iconAddress: "n_gradient_hair_2_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair20 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_20",
+	{
+		iconAddress: "n_gradient_hair_20_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair21 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_21",
+	{
+		iconAddress: "n_gradient_hair_21_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair22 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_22",
+	{
+		iconAddress: "n_gradient_hair_22_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair23 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_23",
+	{
+		iconAddress: "n_gradient_hair_23_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair24 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_24",
+	{
+		iconAddress: "n_gradient_hair_24_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair25 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_25",
+	{
+		iconAddress: "n_gradient_hair_25_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair26 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_26",
+	{
+		iconAddress: "n_gradient_hair_26_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair27 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_27",
+	{
+		iconAddress: "n_gradient_hair_27_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair28 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_28",
+	{
+		iconAddress: "n_gradient_hair_28_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair29 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_29",
+	{
+		iconAddress: "n_gradient_hair_29_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair3 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_3",
+	{
+		iconAddress: "n_gradient_hair_3_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair30 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_30",
+	{
+		iconAddress: "n_gradient_hair_30_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair31 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_31",
+	{
+		iconAddress: "n_gradient_hair_31_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair4 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_4",
+	{
+		iconAddress: "n_gradient_hair_4_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair5 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_5",
+	{
+		iconAddress: "n_gradient_hair_5_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair6 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_6",
+	{
+		iconAddress: "n_gradient_hair_6_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair7 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_7",
+	{
+		iconAddress: "n_gradient_hair_7_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair8 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_8",
+	{
+		iconAddress: "n_gradient_hair_8_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientHair9 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_hair_9",
+	{
+		iconAddress: "n_gradient_hair_9_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientTesteye0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_testeye_0",
+	{
+		iconAddress: "n_gradient_testeye_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientTesteye1 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_testeye_1",
+	{
+		iconAddress: "n_gradient_testeye_1_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientTesthair0 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_testhair_0",
+	{
+		iconAddress: "n_gradient_testhair_0_icon";
+	}
+>;
+export type AvatarItemDisplayNGradientTesthair1 = AvatarItemDisplay<
+	"N_DISPLAY_n_gradient_testhair_1",
+	{
+		iconAddress: "n_gradient_testhair_1_icon";
+	}
+>;
+export type AvatarItemDisplayNHairCoilyshort0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_coilyshort_0",
+	{
+		iconAddress: "n_hair_coilyshort_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHairCurlymedium0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_curlymedium_0",
+	{
+		iconAddress: "n_hair_curlymedium_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHairDefaultA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_default_a_0",
+	{
+		iconAddress: "n_hair_default_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHairDefaultB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_default_b_0",
+	{
+		iconAddress: "n_hair_default_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHairGrimmsnarl0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_grimmsnarl_0",
+	{
+		iconAddress: "n_hair_grimmsnarl_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHairKinkymedium0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_kinkymedium_0",
+	{
+		iconAddress: "n_hair_kinkymedium_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHairKinkyshort0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_kinkyshort_0",
+	{
+		iconAddress: "n_hair_kinkyshort_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHairLvl79Synthfade0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_lvl79-synthfade_0",
+	{
+		iconAddress: "n_hair_lvl79-synthfade_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHairLvl79Urbanphantom0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_lvl79-urbanphantom_0",
+	{
+		iconAddress: "n_hair_lvl79-urbanphantom_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHairMohawk00 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_mohawk-0_0",
+	{
+		iconAddress: "n_hair_mohawk-0_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHairMohawk10 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_mohawk-1_0",
+	{
+		iconAddress: "n_hair_mohawk-1_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHairMorgrem0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_morgrem_0",
+	{
+		iconAddress: "n_hair_morgrem_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHairStraightlong0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_straightlong_0",
+	{
+		iconAddress: "n_hair_straightlong_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHairStraightmedium0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_straightmedium_0",
+	{
+		iconAddress: "n_hair_straightmedium_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHairStraightshort0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_straightshort_0",
+	{
+		iconAddress: "n_hair_straightshort_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHairTesthair00 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_testhair-0_0",
+	{
+		iconAddress: "n_hair_testhair-0_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHairTesthair10 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_testhair-1_0",
+	{
+		iconAddress: "n_hair_testhair-1_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHairWavylong0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_wavylong_0",
+	{
+		iconAddress: "n_hair_wavylong_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHairWavymedium0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_wavymedium_0",
+	{
+		iconAddress: "n_hair_wavymedium_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHairWavyshort0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_wavyshort_0",
+	{
+		iconAddress: "n_hair_wavyshort_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHairZacian0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_zacian_0",
+	{
+		iconAddress: "n_hair_zacian_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHairZamazenta0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hair_zamazenta_0",
+	{
+		iconAddress: "n_hair_zamazenta_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHat6thanniversaryA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_6thanniversary_a_0",
+	{
+		displayStringId: "n_hat_6thanniversary_a_0_display_name";
+		iconAddress: "n_hat_6thanniversary_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHat6thanniversaryB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_6thanniversary_b_0",
+	{
+		displayStringId: "n_hat_6thanniversary_b_0_display_name";
+		iconAddress: "n_hat_6thanniversary_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatAcetrainersmA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_acetrainersm_a_0",
+	{
+		displayStringId: "n_hat_acetrainersm_a_0_display_name";
+		iconAddress: "n_hat_acetrainersm_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatAcetrainersmB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_acetrainersm_b_0",
+	{
+		displayStringId: "n_hat_acetrainersm_b_0_display_name";
+		iconAddress: "n_hat_acetrainersm_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatAdventure0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_adventure_0",
+	{
+		displayStringId: "n_hat_adventure_0_display_name";
+		iconAddress: "n_hat_adventure_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatAlolanexeggutorhat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_alolanexeggutorhat_0",
+	{
+		displayStringId: "AVATAR_AlolanExeggutorHat";
+		iconAddress: "n_hat_alolanexeggutorhat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatApplinitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_applinitems_0",
+	{
+		displayStringId: "avatar_hat_applinheadband";
+		iconAddress: "n_hat_applinitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatAseries0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_aseries_0",
+	{
+		displayStringId: "n_hat_aseries_0_display_name";
+		iconAddress: "n_hat_aseries_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatBeaA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_bea_a_0",
+	{
+		displayStringId: "n_hat_bea_a_0_display_name";
+		iconAddress: "n_hat_bea_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatBeaB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_bea_b_0",
+	{
+		displayStringId: "n_hat_bea_b_0_display_name";
+		iconAddress: "n_hat_bea_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatBidoofhat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_bidoofhat_0",
+	{
+		displayStringId: "n_hat_bidoofhat_0_display_name";
+		iconAddress: "n_hat_bidoofhat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatBounsweetitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_bounsweetitems_0",
+	{
+		displayStringId: "n_hat_bounsweetitems_0_display_name";
+		iconAddress: "n_hat_bounsweetitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatBwn0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_bwn_0",
+	{
+		displayStringId: "n_hat_bwn_0_display_name";
+		iconAddress: "n_hat_bwn_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatCaptainpikachu0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_captainpikachu_0",
+	{
+		displayStringId: "avatar_hat_captainpikachu";
+		iconAddress: "n_hat_captainpikachu_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatCasket0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_casket_0",
+	{
+		displayStringId: "n_hat_casket_0_display_name";
+		iconAddress: "n_hat_casket_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatCetoddlehat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_cetoddlehat_0",
+	{
+		displayStringId: "n_hat_cetoddlehat_0_display_name";
+		iconAddress: "n_hat_cetoddlehat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatClay0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_clay_0",
+	{
+		displayStringId: "n_hat_clay_0_display_name";
+		iconAddress: "n_hat_clay_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatCofagrigusitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_cofagrigusitems_0",
+	{
+		displayStringId: "n_hat_cofagrigusitems_0_display_name";
+		iconAddress: "n_hat_cofagrigusitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatCommunityambassador0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_communityambassador_0",
+	{
+		displayStringId: "avatar_n_hat_communityambassador";
+		iconAddress: "n_hat_communityambassador_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatCosmog0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_cosmog_0",
+	{
+		displayStringId: "n_hat_cosmog_0_display_name";
+		iconAddress: "n_hat_cosmog_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatCrownmoon0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_crownmoon_0",
+	{
+		displayStringId: "n_hat_gofest24mooncrownprepurchase_0_display_name";
+		iconAddress: "n_hat_crownmoon_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatCrownsun0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_crownsun_0",
+	{
+		displayStringId: "n_hat_gofest24suncrownprepurchase_0_display_name";
+		iconAddress: "n_hat_crownsun_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatCubonehat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_cubonehat_0",
+	{
+		displayStringId: "n_hat_cubonehat_0_display_name";
+		iconAddress: "n_hat_cubonehat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDarumakahat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_darumakahat_0",
+	{
+		displayStringId: "n_hat_darumakahat_0_display_name";
+		iconAddress: "n_hat_darumakahat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDedenneitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_dedenneitems_0",
+	{
+		displayStringId: "n_hat_dedenneitems_0_display_name";
+		iconAddress: "n_hat_dedenneitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDefaultA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_default_a_0",
+	{
+		displayStringId: "n_hat_default_a_0_display_name";
+		iconAddress: "n_hat_default_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDefaultA1 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_default_a_1",
+	{
+		displayStringId: "n_hat_default_a_0_display_name";
+		iconAddress: "n_hat_default_a_1_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDefaultA2 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_default_a_2",
+	{
+		displayStringId: "n_hat_default_a_0_display_name";
+		iconAddress: "n_hat_default_a_2_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDefaultA3 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_default_a_3",
+	{
+		displayStringId: "n_hat_default_a_0_display_name";
+		iconAddress: "n_hat_default_a_3_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDefaultA4 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_default_a_4",
+	{
+		displayStringId: "n_hat_default_a_0_display_name";
+		iconAddress: "n_hat_default_a_4_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDefaultA5 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_default_a_5",
+	{
+		displayStringId: "n_hat_default_a_0_display_name";
+		iconAddress: "n_hat_default_a_5_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDefaultA6 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_default_a_6",
+	{
+		displayStringId: "n_hat_default_a_6_display_name";
+		iconAddress: "n_hat_default_a_6_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDefaultA7 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_default_a_7",
+	{
+		displayStringId: "n_hat_default_a_6_display_name";
+		iconAddress: "n_hat_default_a_7_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDefaultB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_default_b_0",
+	{
+		displayStringId: "n_hat_default_b_0_display_name";
+		iconAddress: "n_hat_default_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDefaultB1 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_default_b_1",
+	{
+		displayStringId: "n_hat_default_b_0_display_name";
+		iconAddress: "n_hat_default_b_1_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDefaultB2 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_default_b_2",
+	{
+		displayStringId: "n_hat_default_b_0_display_name";
+		iconAddress: "n_hat_default_b_2_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDefaultB3 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_default_b_3",
+	{
+		displayStringId: "n_hat_default_b_0_display_name";
+		iconAddress: "n_hat_default_b_3_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDefaultB4 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_default_b_4",
+	{
+		displayStringId: "n_hat_default_b_0_display_name";
+		iconAddress: "n_hat_default_b_4_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDefaultB5 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_default_b_5",
+	{
+		displayStringId: "n_hat_default_b_0_display_name";
+		iconAddress: "n_hat_default_b_5_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDeino0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_deino_0",
+	{
+		displayStringId: "n_hat_deino_0_display_name";
+		iconAddress: "n_hat_deino_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDelibird0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_delibird_0",
+	{
+		displayStringId: "n_hat_delibird_0_display_name";
+		iconAddress: "n_hat_delibird_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDetectivepikachu0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_detectivepikachu_0",
+	{
+		displayStringId: "n_hat_detectivepikachu_0_display_name";
+		iconAddress: "n_hat_detectivepikachu_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDiancie0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_diancie_0",
+	{
+		displayStringId: "n_hat_diancie_0_display_name";
+		iconAddress: "n_hat_diancie_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDpA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_dp_a_0",
+	{
+		displayStringId: "n_hat_dp_a_0_display_name";
+		iconAddress: "n_hat_dp_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDpB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_dp_b_0",
+	{
+		displayStringId: "n_hat_dp_b_0_display_name";
+		iconAddress: "n_hat_dp_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDrifloon0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_drifloon_0",
+	{
+		displayStringId: "n_hat_drifloon_0_display_name";
+		iconAddress: "n_hat_drifloon_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDrpikachu0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_drpikachu_0",
+	{
+		displayStringId: "n_hat_drpikachu_0_display_name";
+		iconAddress: "n_hat_drpikachu_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatDusclopsmummy0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_dusclopsmummy_0",
+	{
+		displayStringId: "n_hat_dusclopsmummy_0_display_name";
+		iconAddress: "n_hat_dusclopsmummy_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatEarringsburmyplant0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_earringsburmyplant_0",
+	{
+		displayStringId: "n_hat_earringsburmyplant_0_display_name";
+		iconAddress: "n_hat_burmyearrings11_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatEarringsburmysandy0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_earringsburmysandy_0",
+	{
+		displayStringId: "n_hat_earringsburmysandy_0_display_name";
+		iconAddress: "n_hat_burmyearrings12_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatEarringsburmytrash0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_earringsburmytrash_0",
+	{
+		displayStringId: "n_hat_earringsburmytrash_0_display_name";
+		iconAddress: "n_hat_burmyearrings13_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatEeveecap0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_eeveecap_0",
+	{
+		displayStringId: "n_hat_eeveecap_0_display_name";
+		iconAddress: "n_hat_eeveecap_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatElesa0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_elesa_0",
+	{
+		displayStringId: "n_hat_elesa_0_display_name";
+		iconAddress: "n_hat_elesa_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatEternatussuit0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_eternatussuit_0",
+	{
+		displayStringId: "avatar_hat_eternatus";
+		iconAddress: "n_hat_eternatussuit_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatFedora0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_fedora_0",
+	{
+		displayStringId: "n_hat_fedora_1_display_name";
+		iconAddress: "n_hat_fedora_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatFedora1 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_fedora_1",
+	{
+		displayStringId: "n_hat_fedora_1_display_name";
+		iconAddress: "n_hat_fedora_1_icon";
+	}
+>;
+export type AvatarItemDisplayNHatFisher0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_fisher_0",
+	{
+		displayStringId: "n_hat_fisher_0_display_name";
+		iconAddress: "n_hat_fisher_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatFlabebepack0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_flabebepack_0",
+	{
+		displayStringId: "n_hat_flabebepack_0_display_name";
+		iconAddress: "n_hat_flabebepack_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatFlowercrown0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_flowercrown_0",
+	{
+		displayStringId: "avatar_hat_flowercrown";
+		iconAddress: "n_hat_flowercrown_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatFragment0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_fragment_0",
+	{
+		displayStringId: "n_hat_fragment_0_display_name";
+		iconAddress: "n_hat_fragment_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatFrlgA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_frlg_a_0",
+	{
+		displayStringId: "n_hat_frlg_a_0_display_name";
+		iconAddress: "n_hat_frlg_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatFrlgB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_frlg_b_0",
+	{
+		displayStringId: "n_hat_frlg_b_0_display_name";
+		iconAddress: "n_hat_frlg_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatFurfrouwig0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_furfrouwig_0",
+	{
+		displayStringId: "n_hat_furfrouwig_0_display_name";
+		iconAddress: "n_hat_furfrouwig_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatFw20220 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_fw2022_0",
+	{
+		displayStringId: "n_hat_fw2022_0_display_name";
+		iconAddress: "n_hat_fw2022_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatGalarfarfetchditems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_galarfarfetchditems_0",
+	{
+		displayStringId: "n_hat_galarfarfetchditems_0_display_name";
+		iconAddress: "n_hat_galarfarfetchditems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatGenesecteventitem0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_genesecteventitem_0",
+	{
+		displayStringId: "n_hat_genesecteventitem_0_display_name";
+		iconAddress: "n_hat_genesecteventitem_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatGengar0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_gengar_0",
+	{
+		displayStringId: "n_hat_gengar_0_display_name";
+		iconAddress: "n_hat_gengar_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatGimmighoulitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_gimmighoulitems_0",
+	{
+		displayStringId: "n_hat_gimmighoulitems_0_display_name";
+		iconAddress: "n_hat_gimmighoulitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatGiratinaitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_giratinaitems_0",
+	{
+		displayStringId: "n_hat_giratinaitems_0_display_name";
+		iconAddress: "n_hat_giratinaitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatGladion0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_gladion_0",
+	{
+		displayStringId: "n_hat_gladion_0_display_name";
+		iconAddress: "n_hat_gladion_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatGofestPikachuvisor0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_gofest-pikachuvisor_0",
+	{
+		displayStringId: "n_hat_gofest-pikachuvisor_0_display_name";
+		iconAddress: "n_hat_gofestpikachuvisor_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatGoomy0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_goomy_0",
+	{
+		displayStringId: "n_hat_goomy_0_display_name";
+		iconAddress: "n_hat_goomy_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatGreavardwig0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_greavardwig_0",
+	{
+		displayStringId: "n_hat_greavardwig_0_display_name";
+		iconAddress: "n_hat_greavardwig_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatGreencoat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_greencoat_0",
+	{
+		displayStringId: "n_hat_greencoat_0_display_name";
+		iconAddress: "n_hat_greencoat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatGrowlithehelmet0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_growlithehelmet_0",
+	{
+		displayStringId: "n_hat_growlithehelmet_0_display_name";
+		iconAddress: "n_hat_growlithehelmet_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatGtr2024eeveefanmask0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_gtr2024eeveefanmask_0",
+	{
+		displayStringId: "n_hat_gtr2024eeveefanmask_0_display_name";
+		iconAddress: "n_hat_gtr2024eeveefanmask_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatGtr2024pikachufanmask0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_gtr2024pikachufanmask_0",
+	{
+		displayStringId: "n_hat_gtr2024pikachufanmask_0_display_name";
+		iconAddress: "n_hat_gtr2024pikachufanmask_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatGuccihat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_guccihat_0",
+	{
+		displayStringId: "n_hat_guccihat_0_display_name";
+		iconAddress: "n_hat_guccihat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatGuzma0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_guzma_0",
+	{
+		displayStringId: "n_hat_guzma_0_display_name";
+		iconAddress: "n_hat_guzma_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatGyaradoscap0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_gyaradoscap_0",
+	{
+		displayStringId: "n_hat_gyaradoscap_0_display_name";
+		iconAddress: "n_hat_gyaradoscap_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatHalloween20240 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_halloween2024_0",
+	{
+		displayStringId: "avatar_hat_halloween2024";
+		iconAddress: "n_hat_halloween2024_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatHgssA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_hgss_a_0",
+	{
+		displayStringId: "n_hat_hgss_a_0_display_name";
+		iconAddress: "n_hat_hgss_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatHgssB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_hgss_b_0",
+	{
+		displayStringId: "n_hat_hgss_b_0_display_name";
+		iconAddress: "n_hat_hgss_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatHoliday2022santacostumes0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_holiday2022santacostumes_0",
+	{
+		displayStringId: "n_hat_holiday2022santacostumes_0_display_name";
+		iconAddress: "n_hat_holiday2022santacostumes_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatHolidaybeanie0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_holidaybeanie_0",
+	{
+		displayStringId: "n_hat_holidaybeanie_0_display_name";
+		iconAddress: "n_hat_holidaybeanie_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatHoopaearmuffs0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_hoopaearmuffs_0",
+	{
+		displayStringId: "n_hat_hoopaearmuffs_0_display_name";
+		iconAddress: "n_hat_hoopaearmuffs_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatIngo0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_ingo_0",
+	{
+		displayStringId: "n_hat_ingo_0_display_name";
+		iconAddress: "n_hat_ingo_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatJogger0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_jogger_0",
+	{
+		displayStringId: "n_hat_jogger_0_display_name";
+		iconAddress: "n_hat_jogger_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatKantotourcapgreen0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_kantotourcapgreen_0",
+	{
+		displayStringId: "n_hat_kantotourcapgreen_0_display_name";
+		iconAddress: "n_hat_kantotourcapgreen_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatKantotourcapred0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_kantotourcapred_0",
+	{
+		displayStringId: "n_hat_kantotourcapred_0_display_name";
+		iconAddress: "n_hat_kantotourcapred_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatKnitted0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_knitted_0",
+	{
+		displayStringId: "n_hat_knitted_1_display_name";
+		iconAddress: "n_hat_knitted_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatKnitted1 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_knitted_1",
+	{
+		displayStringId: "n_hat_knitted_1_display_name";
+		iconAddress: "n_hat_knitted_1_icon";
+	}
+>;
+export type AvatarItemDisplayNHatKorrina0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_korrina_0",
+	{
+		displayStringId: "n_hat_korrina_0_display_name";
+		iconAddress: "n_hat_korrina_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatKyuremhat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_kyuremhat_0",
+	{
+		displayStringId: "avatar_hat_kyurem";
+		iconAddress: "n_hat_kyuremhat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatLana0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_lana_0",
+	{
+		displayStringId: "AVATAR_LanaWig";
+		iconAddress: "n_hat_lana_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatLaprasbandanaA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_laprasbandana_a_0",
+	{
+		displayStringId: "n_hat_laprasbandana_a_0_display_name";
+		iconAddress: "n_hat_laprasbandana_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatLaprasbandanaB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_laprasbandana_b_0",
+	{
+		displayStringId: "n_hat_laprasbandana_b_0_display_name";
+		iconAddress: "n_hat_laprasbandana_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatLasecuritycorps0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_lasecuritycorps_0",
+	{
+		displayStringId: "n_hat_lasecuritycorps_0_display_name";
+		iconAddress: "n_hat_lasecuritycorps_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatLegendofarceusA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_legendofarceus_a_0",
+	{
+		displayStringId: "n_hat_legendofarceus_a_0_display_name";
+		iconAddress: "n_hat_legendofarceus_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatLegendofarceusB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_legendofarceus_b_0",
+	{
+		displayStringId: "n_hat_legendofarceus_b_0_display_name";
+		iconAddress: "n_hat_legendofarceus_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatLitwickhat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_litwickhat_0",
+	{
+		displayStringId: "n_hat_litwickhat_0_display_name";
+		iconAddress: "n_hat_litwickhat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatLoneearrings0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_loneearrings_0",
+	{
+		displayStringId: "n_hat_loneearrings_0_display_name";
+		iconAddress: "n_hat_loneearrings_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatLucariomask0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_lucariomask_0",
+	{
+		displayStringId: "AVATAR_LucarioMask";
+		iconAddress: "n_hat_lucariomask_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatLvl50cap0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_lvl50cap_0",
+	{
+		displayStringId: "n_hat_lvl50cap_0_display_name";
+		iconAddress: "n_hat_lvl50cap_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMagikarp0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_magikarp_0",
+	{
+		displayStringId: "n_hat_magikarp_0_display_name";
+		iconAddress: "n_hat_magikarp_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMareaniehat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mareaniehat_0",
+	{
+		displayStringId: "n_hat_mareaniehat_0_display_name";
+		iconAddress: "n_hat_mareaniehat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMegalopunnyitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_megalopunnyitems_0",
+	{
+		displayStringId: "n_hat_megalopunnyitems_0_display_name";
+		iconAddress: "n_hat_megalopunnyitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMegarayquaza0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_megarayquaza_0",
+	{
+		displayStringId: "n_hat_megarayquaza_0_display_name";
+		iconAddress: "n_hat_megarayquaza_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMeltan0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_meltan_0",
+	{
+		displayStringId: "n_hat_meltan_0_display_name";
+		iconAddress: "n_hat_meltan_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMeltanearrings0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_meltanearrings_0",
+	{
+		displayStringId: "n_hat_meltanearrings_0_display_name";
+		iconAddress: "n_hat_meltanearrings_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMewtwoA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mewtwo_a_0",
+	{
+		displayStringId: "n_hat_mewtwo_a_0_display_name";
+		iconAddress: "n_hat_mewtwo_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMewtwoB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mewtwo_b_0",
+	{
+		displayStringId: "n_hat_mewtwo_b_0_display_name";
+		iconAddress: "n_hat_mewtwo_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMimikyu0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mimikyu_0",
+	{
+		displayStringId: "n_hat_mimikyu_0_display_name";
+		iconAddress: "n_hat_mimikyu_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMismagius0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mismagius_0",
+	{
+		displayStringId: "n_hat_mismagius_0_display_name";
+		iconAddress: "n_hat_mismagius_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMlbBrewers0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mlb-brewers_0",
+	{
+		displayStringId: "avatar_hat_mlbbrewers";
+		iconAddress: "n_hat_mlb-brewers_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMlbDiamondbacks0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mlb-diamondbacks_0",
+	{
+		displayStringId: "avatar_hat_mlbdiamondbacks";
+		iconAddress: "n_hat_mlb-diamondbacks_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMlbGiants0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mlb-giants_0",
+	{
+		displayStringId: "avatar_hat_mlbgiants";
+		iconAddress: "n_hat_mlb-giants_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMlbGuardians0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mlb-guardians_0",
+	{
+		displayStringId: "avatar_hat_mlbguardians";
+		iconAddress: "n_hat_mlb-guardians_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMlbMariners0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mlb-mariners_0",
+	{
+		displayStringId: "avatar_hat_mlbmariners";
+		iconAddress: "n_hat_mlb-mariners_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMlbMarlins0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mlb-marlins_0",
+	{
+		displayStringId: "avatar_hat_mlbmarlins";
+		iconAddress: "n_hat_mlb-marlins_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMlbMets0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mlb-mets_0",
+	{
+		displayStringId: "avatar_hat_mlbmets";
+		iconAddress: "n_hat_mlb-mets_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMlbNationals0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mlb-nationals_0",
+	{
+		displayStringId: "avatar_hat_mlbnationals";
+		iconAddress: "n_hat_mlb-nationals_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMlbOrioles0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mlb-orioles_0",
+	{
+		displayStringId: "avatar_hat_mlborioles";
+		iconAddress: "n_hat_mlb-orioles_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMlbPadres0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mlb-padres_0",
+	{
+		displayStringId: "avatar_hat_mlbpadres";
+		iconAddress: "n_hat_mlb-padres_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMlbRangers0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mlb-rangers_0",
+	{
+		displayStringId: "avatar_hat_mlbrangers";
+		iconAddress: "n_hat_mlb-rangers_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMlbRays0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mlb-rays_0",
+	{
+		displayStringId: "avatar_hat_mlbrays";
+		iconAddress: "n_hat_mlb-rays_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMlbRedsox0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mlb-redsox_0",
+	{
+		displayStringId: "avatar_hat_mlbredsox";
+		iconAddress: "n_hat_mlb-redsox_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMlbTwins0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mlb-twins_0",
+	{
+		displayStringId: "avatar_hat_mlbtwins";
+		iconAddress: "n_hat_mlb-twins_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMlbWhitesox0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mlb-whitesox_0",
+	{
+		displayStringId: "avatar_hat_mlbwhitesox";
+		iconAddress: "n_hat_mlb-whitesox_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMlb0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mlb_0",
+	{
+		displayStringId: "avatar_hat_mlbballcap";
+		iconAddress: "n_hat_mlb_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMovie20200 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_movie2020_0",
+	{
+		displayStringId: "n_hat_movie2020_0_display_name";
+		iconAddress: "n_hat_movie2020_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMunnapack0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_munnapack_0",
+	{
+		displayStringId: "n_hat_munnapack_0_display_name";
+		iconAddress: "n_hat_munnapack_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMunnapack1 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_munnapack_1",
+	{
+		displayStringId: "n_hat_munnapack_1_display_name";
+		iconAddress: "n_hat_munnapack_1_icon";
+	}
+>;
+export type AvatarItemDisplayNHatMustard0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_mustard_0",
+	{
+		displayStringId: "avatar_hats_mustard";
+		iconAddress: "n_hat_mustard_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatNewyear20220 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_newyear2022_0",
+	{
+		displayStringId: "n_hat_newyear2022_0_display_name";
+		iconAddress: "n_hat_newyear2022_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatNewyearhat20210 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_newyearhat2021_0",
+	{
+		displayStringId: "n_hat_newyearhat2021_0_display_name";
+		iconAddress: "n_hat_newyearhat2021_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatNewyearhat20230 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_newyearhat2023_0",
+	{
+		displayStringId: "n_hat_newyearhat2023_0_display_name";
+		iconAddress: "n_hat_newyearhat2023_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatNihilegoitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_nihilegoitems_0",
+	{
+		displayStringId: "n_hat_nihilegoitems_0_display_name";
+		iconAddress: "n_hat_nihilegoitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatNoibat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_noibat_0",
+	{
+		displayStringId: "n_hat_noibat_0_display_name";
+		iconAddress: "n_hat_noibat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatObstagoonitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_obstagoonitems_0",
+	{
+		displayStringId: "n_hat_obstagoonitems_0_display_name";
+		iconAddress: "n_hat_obstagoonitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatOrasA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_oras_a_0",
+	{
+		displayStringId: "n_hat_oras_a_0_display_name";
+		iconAddress: "n_hat_oras_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatOrasB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_oras_b_0",
+	{
+		displayStringId: "n_hat_oras_b_0_display_name";
+		iconAddress: "n_hat_oras_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatOricoriopink0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_oricoriopink_0",
+	{
+		displayStringId: "n_hat_oricoriopink_0_display_name";
+		iconAddress: "n_hat_oricoriopink_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatOricoriopurple0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_oricoriopurple_0",
+	{
+		displayStringId: "n_hat_oricoriopurple_0_display_name";
+		iconAddress: "n_hat_oricoriopurple_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatOricoriored0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_oricoriored_0",
+	{
+		displayStringId: "n_hat_oricoriored_0_display_name";
+		iconAddress: "n_hat_oricoriored_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatOricorioyellow0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_oricorioyellow_0",
+	{
+		displayStringId: "n_hat_oricorioyellow_0_display_name";
+		iconAddress: "n_hat_oricorioyellow_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatPartneritemsjan2024hat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_partneritemsjan2024hat_0",
+	{
+		displayStringId: "n_hat_partneritemsjan2024hat_0_display_name";
+		iconAddress: "n_hat_partneritemsjan2024hat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatPartyhat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_partyhat_0",
+	{
+		displayStringId: "avatar_hat_partyhat";
+		iconAddress: "n_hat_partyhat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatPhantump0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_phantump_0",
+	{
+		displayStringId: "n_hat_phantump_0_display_name";
+		iconAddress: "n_hat_phantump_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatPikachubutlerBlue0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_pikachubutler-blue_0",
+	{
+		displayStringId: "avatar_hat_suitblue";
+		iconAddress: "n_hat_pikachubutler-blue_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatPikachubutlerRed0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_pikachubutler-red_0",
+	{
+		displayStringId: "avatar_hat_suitred";
+		iconAddress: "n_hat_pikachubutler-red_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatPikachubutlerYellow0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_pikachubutler-yellow_0",
+	{
+		displayStringId: "avatar_hat_suityellow";
+		iconAddress: "n_hat_pikachubutler-yellow_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatPikachucap0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_pikachucap_0",
+	{
+		displayStringId: "n_hat_pikachucap_0_display_name";
+		iconAddress: "n_hat_pikachucap_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatPikachufan0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_pikachufan_0",
+	{
+		displayStringId: "n_hat_pikachufan_0_display_name";
+		iconAddress: "n_hat_pikachufan_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatPikachulibre0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_pikachulibre_0",
+	{
+		displayStringId: "n_hat_pikachulibre_0_display_name";
+		iconAddress: "n_hat_pikachulibre_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatPikachupumpkinhead0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_pikachupumpkinhead_0",
+	{
+		displayStringId: "n_hat_pikachupumpkinhead_0_display_name";
+		iconAddress: "n_hat_pikachupumpkinhead_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatPkmncap0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_pkmncap_0",
+	{
+		displayStringId: "n_hat_pkmncap_0_display_name";
+		iconAddress: "n_hat_pkmncap_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatPkmncap1 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_pkmncap_1",
+	{
+		displayStringId: "n_hat_pkmncap_1_display_name";
+		iconAddress: "n_hat_pkmncap_1_icon";
+	}
+>;
+export type AvatarItemDisplayNHatPkmncap2 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_pkmncap_2",
+	{
+		displayStringId: "n_hat_pkmncap_2_display_name";
+		iconAddress: "n_hat_pkmncap_2_icon";
+	}
+>;
+export type AvatarItemDisplayNHatPoipole0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_poipole_0",
+	{
+		displayStringId: "n_hat_poipole_0_display_name";
+		iconAddress: "n_hat_poipole_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatPokeballitemsBasic0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_pokeballitems-basic_0",
+	{
+		displayStringId: "avatar_n_hat_pokeballitems-basic_0";
+		iconAddress: "n_hat_pokeballitems-basic_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatPokeballitemsGreat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_pokeballitems-great_0",
+	{
+		displayStringId: "avatar_n_hat_pokeballitems-great_0";
+		iconAddress: "n_hat_pokeballitems-great_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatPokeballitemsUltra0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_pokeballitems-ultra_0",
+	{
+		displayStringId: "avatar_n_hat_pokeballitems-ultra_0";
+		iconAddress: "n_hat_pokeballitems-ultra_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatPolteageisthat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_polteageisthat_0",
+	{
+		displayStringId: "avatar_n_hat_polteageist";
+		iconAddress: "n_hat_polteageisthat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatProfwillowoutfit0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_profwillowoutfit_0",
+	{
+		displayStringId: "n_hat_profwillowoutfit_0_display_name";
+		iconAddress: "n_hat_profwillowoutfit_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatRegiicejersies0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_regiicejersies_0",
+	{
+		displayStringId: "n_hat_regiicejersies_0_display_name";
+		iconAddress: "n_hat_regiicejersies_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatRegirockjersies0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_regirockjersies_0",
+	{
+		displayStringId: "n_hat_regirockjersies_0_display_name";
+		iconAddress: "n_hat_regirockjersies_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatRegisteeljersies0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_registeeljersies_0",
+	{
+		displayStringId: "n_hat_registeeljersies_0_display_name";
+		iconAddress: "n_hat_registeeljersies_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatRuinmaniacA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_ruinmaniac_a_0",
+	{
+		displayStringId: "n_hat_ruinmaniac_a_0_display_name";
+		iconAddress: "n_hat_ruinmaniac_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatRuinmaniacB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_ruinmaniac_b_0",
+	{
+		displayStringId: "n_hat_ruinmaniac_b_0_display_name";
+		iconAddress: "n_hat_ruinmaniac_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatSableyegoggles0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_sableyegoggles_0",
+	{
+		displayStringId: "n_hat_sableyegoggles_0_display_name";
+		iconAddress: "n_hat_sableyegoggles_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatSamsungsummer20200 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_samsungsummer2020_0",
+	{
+		displayStringId: "n_hat_samsungsummer2020_0_display_name";
+		iconAddress: "n_hat_samsungsummer2020_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatSandygasthat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_sandygasthat_0",
+	{
+		displayStringId: "n_hat_sandygasthat_0_display_name";
+		iconAddress: "n_hat_sandygasthat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatShayminhat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_shayminhat_0",
+	{
+		displayStringId: "n_hat_shayminhat_0_display_name";
+		iconAddress: "n_hat_shayminhat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatSlowpoketailshirts0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_slowpoketailshirts_0",
+	{
+		displayStringId: "n_hat_slowpoketailshirts_0_display_name";
+		iconAddress: "n_hat_slowpoketailshirts_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatSnombeanie0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_snombeanie_0",
+	{
+		displayStringId: "avatar_hat_snom";
+		iconAddress: "n_hat_snombeanie_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatSnorlaxnightcap0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_snorlaxnightcap_0",
+	{
+		displayStringId: "n_hat_snorlaxnightcap_0_display_name";
+		iconAddress: "n_hat_snorlaxnightcap_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatSolgaleoitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_solgaleoitems_0",
+	{
+		displayStringId: "n_hat_solgaleoitems_0_display_name";
+		iconAddress: "n_hat_solgaleoitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatSsA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_ss_a_0",
+	{
+		displayStringId: "n_hat_ss_a_0_display_name";
+		iconAddress: "n_hat_ss_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatSsB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_ss_b_0",
+	{
+		displayStringId: "n_hat_ss_b_0_display_name";
+		iconAddress: "n_hat_ss_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatStantlerheadband0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_stantlerheadband_0",
+	{
+		displayStringId: "n_hat_stantlerheadband_0_display_name";
+		iconAddress: "n_hat_stantlerheadband_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatStrawhat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_strawhat_0",
+	{
+		displayStringId: "n_hat_strawhat_0_display_name";
+		iconAddress: "n_hat_strawhat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatSummer20230 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_summer2023_0",
+	{
+		displayStringId: "n_hat_summer2023_0_display_name";
+		iconAddress: "n_hat_summer2023_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatSvcostumescarletschool0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_svcostumescarletschool_0",
+	{
+		displayStringId: "n_hat_svcostumescarletschool_0_display_name";
+		iconAddress: "n_hat_svcostumescarletschool_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatSvcostumevioletschool0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_svcostumevioletschool_0",
+	{
+		displayStringId: "n_hat_svcostumevioletschool_0_display_name";
+		iconAddress: "n_hat_svcostumevioletschool_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatSwshdlc2costume0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_swshdlc2costume_0",
+	{
+		displayStringId: "n_hat_swshdlc2costume_0_display_name";
+		iconAddress: "n_hat_swshdlc2costume_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatSwshuniformchampion0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_swshuniformchampion_0",
+	{
+		displayStringId: "n_hat_swshuniformchampion_0_display_name";
+		iconAddress: "n_hat_swshuniformchampion_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatSylveonitemsA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_sylveonitems_a_0",
+	{
+		displayStringId: "n_hat_sylveonitems_a_0_display_name";
+		iconAddress: "n_hat_sylveonitems_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatSylveonitemsB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_sylveonitems_b_0",
+	{
+		displayStringId: "n_hat_sylveonitems_b_0_display_name";
+		iconAddress: "n_hat_sylveonitems_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatTcgcollabtshirtandcap0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_tcgcollabtshirtandcap_0",
+	{
+		displayStringId: "n_hat_tcgcollabtshirtandcap_0_display_name";
+		iconAddress: "n_hat_tcgcollabtshirtandcap_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatTeamaqua0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_teamaqua_0",
+	{
+		displayStringId: "n_hat_teamaqua_0_display_name";
+		iconAddress: "n_hat_teamaqua_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatTeamleadercap0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_teamleadercap_0",
+	{
+		displayStringId: "n_hat_teamleadercap_0_display_name";
+		iconAddress: "n_hat_teamleadercap_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatTeamleadercap1 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_teamleadercap_1",
+	{
+		displayStringId: "n_hat_teamleadercap_1_display_name";
+		iconAddress: "n_hat_teamleadercap_1_icon";
+	}
+>;
+export type AvatarItemDisplayNHatTeamleadercap2 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_teamleadercap_2",
+	{
+		displayStringId: "n_hat_teamleadercap_2_display_name";
+		iconAddress: "n_hat_teamleadercap_2_icon";
+	}
+>;
+export type AvatarItemDisplayNHatTeamrocket0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_teamrocket_0",
+	{
+		displayStringId: "n_hat_teamrocket_0_display_name";
+		iconAddress: "n_hat_teamrocket_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatTeamrocketcap0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_teamrocketcap_0",
+	{
+		displayStringId: "n_hat_teamrocketcap_0_display_name";
+		iconAddress: "n_hat_teamrocketcap_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatTeamskull0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_teamskull_0",
+	{
+		displayStringId: "n_hat_teamskull_0_display_name";
+		iconAddress: "n_hat_teamskull_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatTophat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_tophat_0",
+	{
+		displayStringId: "n_hat_tophat_0_display_name";
+		iconAddress: "n_hat_tophat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatUltraA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_ultra_a_0",
+	{
+		displayStringId: "n_hat_ultra_a_0_display_name";
+		iconAddress: "n_hat_ultra_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatUltraB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_ultra_b_0",
+	{
+		displayStringId: "n_hat_ultra_b_0_display_name";
+		iconAddress: "n_hat_ultra_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatUltrareconsquad0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_ultrareconsquad_0",
+	{
+		displayStringId: "n_hat_ultrareconsquad_0_display_name";
+		iconAddress: "n_hat_ultrareconsquad_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatUltrareconsquadb0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_ultrareconsquadb_0",
+	{
+		displayStringId: "n_hat_ultrareconsquadb_0_display_name";
+		iconAddress: "n_hat_ultrareconsquadb_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatUnequip0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_unequip_0",
+	{
+		displayStringId: "n_hat_unequip_0_display_name";
+		iconAddress: "n_hat_empty_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatVerizon20210 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_verizon2021_0",
+	{
+		displayStringId: "n_hat_verizon2021_0_display_name";
+		iconAddress: "n_hat_verizon2021_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatWcs2022winnersitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_wcs2022winnersitems_0",
+	{
+		displayStringId: "n_hat_wcs2022winnersitems_0_display_name";
+		iconAddress: "n_hat_wcs2022winnersitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatWcs2024paiditems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_wcs2024paiditems_0",
+	{
+		displayStringId: "avatar_hat_wcs2024";
+		iconAddress: "n_hat_wcs2024paiditems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatWcs20250 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_wcs2025_0",
+	{
+		displayStringId: "avatar_hat_wcs2025visor";
+		iconAddress: "n_hat_wcs2025_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatWcs2025winnersitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_wcs2025winnersitems_0",
+	{
+		displayStringId: "avatar_hat_wcs2025champion";
+		iconAddress: "n_hat_wcs2025winnersitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatWhimsicottearmuff0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_whimsicottearmuff_0",
+	{
+		displayStringId: "n_hat_whimsicottearmuff_0_display_name";
+		iconAddress: "n_hat_whimsicottearmuff_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatWillowglasses0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_willowglasses_0",
+	{
+		displayStringId: "n_hat_willowglasses_0 _display_name";
+		iconAddress: "n_hat_willowglasses_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatWoobatearrings0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_woobatearrings_0",
+	{
+		displayStringId: "n_hat_woobatearrings_0_display_name";
+		iconAddress: "n_hat_woobatearrings_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatXerneasitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_xerneasitems_0",
+	{
+		displayStringId: "avatar_hat_xerneas";
+		iconAddress: "n_hat_xerneasitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatYamaskhat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_yamaskhat_0",
+	{
+		displayStringId: "n_hat_yamaskhat_0_display_name";
+		iconAddress: "n_hat_yamaskhat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatYamaskmask0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_yamaskmask_0",
+	{
+		displayStringId: "n_hat_yamaskmask_0_display_name";
+		iconAddress: "n_hat_yamaskmask_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatZacianmask0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_zacianmask_0",
+	{
+		displayStringId: "avatar_mask_zacian";
+		iconAddress: "n_hat_zacianmask_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatZacostumeA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_zacostume_a_0",
+	{
+		displayStringId: "avatar_n_hat_zacostume_a";
+		iconAddress: "n_hat_zacostume_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatZacostumeB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_zacostume_b_0",
+	{
+		displayStringId: "avatar_n_hat_zacostume_b";
+		iconAddress: "n_hat_zacostume_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatZamazentamask0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_zamazentamask_0",
+	{
+		displayStringId: "avatar_mask_zamazenta";
+		iconAddress: "n_hat_zamazentamask_0_icon";
+	}
+>;
+export type AvatarItemDisplayNHatZubathat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_hat_zubathat_0",
+	{
+		displayStringId: "n_hat_zubathat_0_display_name";
+		iconAddress: "n_hat_zubathat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNIdle01 = AvatarItemDisplay<
+	"N_DISPLAY_n_idle_01",
+	{
+		displayStringId: "n_pose_empty_display_name";
+		iconAddress: "f_poses_empty_icon";
+	}
+>;
+export type AvatarItemDisplayNNecklaceDefault0 = AvatarItemDisplay<
+	"N_DISPLAY_n_necklace_default_0",
+	{
+		displayStringId: "n_necklace_default_0_display_name";
+		iconAddress: "n_necklace_default_0_icon";
+	}
+>;
+export type AvatarItemDisplayNNecklaceDefault1 = AvatarItemDisplay<
+	"N_DISPLAY_n_necklace_default_1",
+	{
+		displayStringId: "n_necklace_default_0_display_name";
+		iconAddress: "n_necklace_default_1_icon";
+	}
+>;
+export type AvatarItemDisplayNNecklaceHeart0 = AvatarItemDisplay<
+	"N_DISPLAY_n_necklace_heart_0",
+	{
+		displayStringId: "n_necklace_heart_0_display_name";
+		iconAddress: "n_necklace_heart_0_icon";
+	}
+>;
+export type AvatarItemDisplayNNecklaceStar0 = AvatarItemDisplay<
+	"N_DISPLAY_n_necklace_star_0",
+	{
+		displayStringId: "n_necklace_star_0_display_name";
+		iconAddress: "n_necklace_star_0_icon";
+	}
+>;
+export type AvatarItemDisplayNNecklaceUnequip0 = AvatarItemDisplay<
+	"N_DISPLAY_n_necklace_unequip_0",
+	{
+		displayStringId: "n_necklace_unequip_0_display_name";
+		iconAddress: "n_necklace_empty_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPants6thanniversary0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_6thanniversary_0",
+	{
+		displayStringId: "n_pants_6thanniversary_0_display_name";
+		iconAddress: "n_pants_6thanniversary_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPants7thanniversary0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_7thanniversary_0",
+	{
+		displayStringId: "n_pants_7thanniversary_0_display_name";
+		iconAddress: "n_pants_7thanniversary_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsAcetrainerbwA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_acetrainerbw_a_0",
+	{
+		displayStringId: "n_pants_acetrainerbw_a_0_display_name";
+		iconAddress: "n_pants_acetrainerbw_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsAcetrainerbwB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_acetrainerbw_b_0",
+	{
+		displayStringId: "n_pants_acetrainerbw_b_0_display_name";
+		iconAddress: "n_pants_acetrainerbw_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsAcetrainersm0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_acetrainersm_0",
+	{
+		displayStringId: "n_pants_acetrainersm_0_display_name";
+		iconAddress: "n_pants_acetrainersm_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsAnimegou0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_animegou_0",
+	{
+		displayStringId: "n_pants_animegou_0_display_name";
+		iconAddress: "n_pants_animegou_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsBackpackerA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_backpacker_a_0",
+	{
+		displayStringId: "n_pants_backpacker_a_0_display_name";
+		iconAddress: "n_pants_backpacker_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsBackpackerB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_backpacker_b_0",
+	{
+		displayStringId: "n_pants_backpacker_b_0_display_name";
+		iconAddress: "n_pants_backpacker_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsBattlegirl0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_battlegirl_0",
+	{
+		displayStringId: "n_pants_battlegirl_0_display_name";
+		iconAddress: "n_pants_battlegirl_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsBlackwhite0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_blackwhite_0",
+	{
+		displayStringId: "avatar_pants_bwpants";
+		iconAddress: "n_pants_blackwhite_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsBounsweetitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_bounsweetitems_0",
+	{
+		displayStringId: "n_pants_bounsweetitems_0_display_name";
+		iconAddress: "n_pants_bounsweetitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsBrock0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_brock_0",
+	{
+		displayStringId: "n_pants_brock_0_display_name";
+		iconAddress: "n_pants_brock_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsBwn0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_bwn_0",
+	{
+		displayStringId: "n_pants_bwn_0_display_name";
+		iconAddress: "n_pants_bwn_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsCasualA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_casual_a_0",
+	{
+		displayStringId: "n_pants_casual_b_0_display_name";
+		iconAddress: "n_pants_casual_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsCasualA1 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_casual_a_1",
+	{
+		displayStringId: "n_pants_casual_b_1_display_name";
+		iconAddress: "n_pants_casual_a_1_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsCasualB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_casual_b_0",
+	{
+		displayStringId: "n_pants_casual_b_0_display_name";
+		iconAddress: "n_pants_casual_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsCasualB1 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_casual_b_1",
+	{
+		displayStringId: "n_pants_casual_b_1_display_name";
+		iconAddress: "n_pants_casual_b_1_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsClay0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_clay_0",
+	{
+		displayStringId: "n_pants_clay_0_display_name";
+		iconAddress: "n_pants_clay_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsDefaultNew0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_default-new_0",
+	{
+		displayStringId: "n_pants_default-new_0_display_name";
+		iconAddress: "n_pants_defaultnew_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsDefaultA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_default_a_0",
+	{
+		displayStringId: "n_pants_default_a_0_display_name";
+		iconAddress: "n_pants_default_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsDefaultA1 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_default_a_1",
+	{
+		displayStringId: "n_pants_default_a_0_display_name";
+		iconAddress: "n_pants_default_a_1_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsDefaultA2 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_default_a_2",
+	{
+		displayStringId: "n_pants_default_a_0_display_name";
+		iconAddress: "n_pants_default_a_2_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsDefaultA3 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_default_a_3",
+	{
+		displayStringId: "n_pants_default_a_0_display_name";
+		iconAddress: "n_pants_default_a_3_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsDefaultA4 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_default_a_4",
+	{
+		displayStringId: "n_pants_default_a_0_display_name";
+		iconAddress: "n_pants_default_a_4_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsDefaultA5 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_default_a_5",
+	{
+		displayStringId: "n_pants_default_a_0_display_name";
+		iconAddress: "n_pants_default_a_5_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsDefaultB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_default_b_0",
+	{
+		displayStringId: "n_pants_default_b_0_display_name";
+		iconAddress: "n_pants_default_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsDenimfashionweek20230 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_denimfashionweek2023_0",
+	{
+		displayStringId: "n_pants_denimfashionweek2023_0_display_name";
+		iconAddress: "n_pants_denimfashionweek2023_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsDpA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_dp_a_0",
+	{
+		displayStringId: "n_pants_dp_a_0_display_name";
+		iconAddress: "n_pants_dp_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsDpB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_dp_b_0",
+	{
+		displayStringId: "n_pants_dp_b_0_display_name";
+		iconAddress: "n_pants_dp_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsElesa0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_elesa_0",
+	{
+		displayStringId: "n_pants_elesa_0_display_name";
+		iconAddress: "n_pants_elesa_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsEternatussuit0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_eternatussuit_0",
+	{
+		displayStringId: "avatar_pants_eternatus";
+		iconAddress: "n_pants_eternatussuit_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsFashionweek20220 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_fashionweek2022_0",
+	{
+		displayStringId: "n_pants_fashionweek2022_0_display_name";
+		iconAddress: "n_pants_fashionweek2022_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsFashionweek20250 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_fashionweek2025_0",
+	{
+		displayStringId: "avatar_pants_plaidpants";
+		iconAddress: "n_pants_fashionweek2025_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsFisher0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_fisher_0",
+	{
+		displayStringId: "n_pants_fisher_0_display_name";
+		iconAddress: "n_pants_fisher_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsFlabebepack0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_flabebepack_0",
+	{
+		displayStringId: "n_pants_flabebepack_0_display_name";
+		iconAddress: "n_pants_flabebepack_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsFrlgA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_frlg_a_0",
+	{
+		displayStringId: "n_pants_frlg_a_0_display_name";
+		iconAddress: "n_pants_frlg_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsFrlgB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_frlg_b_0",
+	{
+		displayStringId: "n_pants_frlg_b_0_display_name";
+		iconAddress: "n_pants_frlg_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsFw2022A0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_fw2022_a_0",
+	{
+		displayStringId: "n_pants_fw2022_a_0_display_name";
+		iconAddress: "n_pants_fw2022_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsFw2022B0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_fw2022_b_0",
+	{
+		displayStringId: "n_pants_fw2022_b_0_display_name";
+		iconAddress: "n_pants_fw2022_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsGeeta0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_geeta_0",
+	{
+		displayStringId: "n_pants_geeta_0_display_name";
+		iconAddress: "n_pants_geeta_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsGenderlessskirt0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_genderlessskirt_0",
+	{
+		displayStringId: "n_pants_genderlessskirt_0_display_name";
+		iconAddress: "n_pants_genderlessskirt_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsGiovanni0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_giovanni_0",
+	{
+		displayStringId: "n_pants_giovanni_0_display_name";
+		iconAddress: "n_pants_giovanni_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsGladion0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_gladion_0",
+	{
+		displayStringId: "n_pants_gladion_0_display_name";
+		iconAddress: "n_pants_gladion_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsGothitelleitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_gothitelleitems_0",
+	{
+		displayStringId: "n_pants_gothitelleitems_0_display_name";
+		iconAddress: "n_pants_gothitelleitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsGreenA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_green_a_0",
+	{
+		displayStringId: "n_pants_green_a_0_display_name";
+		iconAddress: "n_pants_green_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsGreenB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_green_b_0",
+	{
+		displayStringId: "n_pants_green_b_0_display_name";
+		iconAddress: "n_pants_green_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsGreencoat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_greencoat_0",
+	{
+		displayStringId: "n_pants_greencoat_0_display_name";
+		iconAddress: "n_pants_greencoat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsGreenpikavee0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_greenpikavee_0",
+	{
+		displayStringId: "avatar_pants_s22blue";
+		iconAddress: "n_pants_greenpikavee_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsGrimsley0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_grimsley_0",
+	{
+		displayStringId: "avatar_pants_gblgrimsley";
+		iconAddress: "n_pants_grimsley_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsGrusha0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_grusha_0",
+	{
+		displayStringId: "avatar_pants_grusha";
+		iconAddress: "n_pants_grusha_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsGuzma0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_guzma_0",
+	{
+		displayStringId: "n_pants_guzma_0_display_name";
+		iconAddress: "n_pants_guzma_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsGymleaderA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_gymleader_a_0",
+	{
+		displayStringId: "n_pants_gymleader_a_0_display_name";
+		iconAddress: "n_pants_gymleader_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsGymleaderA1 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_gymleader_a_1",
+	{
+		displayStringId: "n_pants_gymleader_a_0_display_name";
+		iconAddress: "n_pants_gymleader_a_1_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsGymleaderA2 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_gymleader_a_2",
+	{
+		displayStringId: "n_pants_gymleader_a_0_display_name";
+		iconAddress: "n_pants_gymleader_a_2_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsGymleaderB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_gymleader_b_0",
+	{
+		displayStringId: "n_pants_gymleader_b_0_display_name";
+		iconAddress: "n_pants_gymleader_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsGymleaderB1 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_gymleader_b_1",
+	{
+		displayStringId: "n_pants_gymleader_b_0_display_name";
+		iconAddress: "n_pants_gymleader_b_1_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsGymleaderB2 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_gymleader_b_2",
+	{
+		displayStringId: "n_pants_gymleader_b_0_display_name";
+		iconAddress: "n_pants_gymleader_b_2_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsHala0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_hala_0",
+	{
+		displayStringId: "n_pants_hala_0_display_name";
+		iconAddress: "n_pants_hala_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsHgssA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_hgss_a_0",
+	{
+		displayStringId: "n_pants_hgss_a_0_display_name";
+		iconAddress: "n_pants_hgss_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsHgssB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_hgss_b_0",
+	{
+		displayStringId: "n_pants_hgss_b_0_display_name";
+		iconAddress: "n_pants_hgss_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsIngo0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_ingo_0",
+	{
+		displayStringId: "n_shirt_galaxyoutfit_b_0_display_name";
+		iconAddress: "n_pants_ingo_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsJogger0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_jogger_0",
+	{
+		displayStringId: "n_pants_jogger_0_display_name";
+		iconAddress: "n_pants_jogger_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsKorrina0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_korrina_0",
+	{
+		displayStringId: "n_pants_korrina_0_display_name";
+		iconAddress: "n_pants_korrina_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsLooseFitting0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_loose-fitting_0",
+	{
+		displayStringId: "AVATAR_baggypants";
+		iconAddress: "n_pants_loose-fitting_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsLoosepants0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_loosepants_0",
+	{
+		displayStringId: "n_pants_loosepants_0_display_name";
+		iconAddress: "n_pants_loosepants_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsLunalaitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_lunalaitems_0",
+	{
+		displayStringId: "n_pants_lunalaitems_0_display_name";
+		iconAddress: "n_pants_lunalaitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsLuvdiscpackA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_luvdiscpack_a_0",
+	{
+		displayStringId: "n_pants_luvdiscpack_a_0_display_name";
+		iconAddress: "n_pants_luvdiscpack_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsLuvdiscpackB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_luvdiscpack_b_0",
+	{
+		displayStringId: "n_pants_luvdiscpack_b_0_display_name";
+		iconAddress: "n_pants_luvdiscpack_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsLvl75Techtrousers0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_lvl75-techtrousers_0",
+	{
+		displayStringId: "avatar_n_pants_lvl75-techtrousers_0";
+		iconAddress: "n_pants_lvl75-techtrousers_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsLysandre0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_lysandre_0",
+	{
+		displayStringId: "n_pants_lysandre_0_display_name";
+		iconAddress: "n_pants_lysandre_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsMewtwoA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_mewtwo_a_0",
+	{
+		displayStringId: "n_pants_mewtwo_a_0_display_name";
+		iconAddress: "n_pants_mewtwo_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsMewtwoB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_mewtwo_b_0",
+	{
+		displayStringId: "n_pants_mewtwo_b_0_display_name";
+		iconAddress: "n_pants_mewtwo_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsMiniskirtWave0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_miniskirt-wave_0",
+	{
+		displayStringId: "n_pants_miniskirt-wave_2_display_name";
+		iconAddress: "n_pants_miniskirt-wave_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsMiniskirtWave1 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_miniskirt-wave_1",
+	{
+		displayStringId: "n_pants_miniskirt-wave_2_display_name";
+		iconAddress: "n_pants_miniskirt-wave_1_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsMiniskirtWave2 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_miniskirt-wave_2",
+	{
+		displayStringId: "n_pants_miniskirt-wave_2_display_name";
+		iconAddress: "n_pants_miniskirt-wave_2_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsMiniskirt0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_miniskirt_0",
+	{
+		displayStringId: "n_pants_miniskirt_3_display_name";
+		iconAddress: "n_pants_miniskirt_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsMiniskirt1 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_miniskirt_1",
+	{
+		displayStringId: "n_pants_miniskirt_3_display_name";
+		iconAddress: "n_pants_miniskirt_1_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsMiniskirt2 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_miniskirt_2",
+	{
+		displayStringId: "n_pants_miniskirt_3_display_name";
+		iconAddress: "n_pants_miniskirt_2_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsMiniskirt3 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_miniskirt_3",
+	{
+		displayStringId: "n_pants_miniskirt_3_display_name";
+		iconAddress: "n_pants_miniskirt_3_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsMisty0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_misty_0",
+	{
+		displayStringId: "n_pants_misty_0_display_name";
+		iconAddress: "n_pants_misty_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsMunnapack0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_munnapack_0",
+	{
+		displayStringId: "n_pants_munnapack_0_display_name";
+		iconAddress: "n_pants_munnapack_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsMustard0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_mustard_0",
+	{
+		displayStringId: "avatar_pants_mustard";
+		iconAddress: "n_pants_mustard_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsNaganadelaitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_naganadelaitems_0",
+	{
+		displayStringId: "N_Naganadel_Pants";
+		iconAddress: "n_pants_naganadelaitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsNecrozmaitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_necrozmaitems_0",
+	{
+		displayStringId: "AVATAR_NecrozmaPants";
+		iconAddress: "n_pants_necrozmaitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsNeonSolid0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_neon-solid_0",
+	{
+		displayStringId: "n_pants_neon-stripes_1_display_name";
+		iconAddress: "n_pants_neon-solid_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsNeonSolid1 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_neon-solid_1",
+	{
+		displayStringId: "n_pants_neon-stripes_1_display_name";
+		iconAddress: "n_pants_neon-solid_1_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsNeonSolid2 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_neon-solid_2",
+	{
+		displayStringId: "n_pants_neon-stripes_1_display_name";
+		iconAddress: "n_pants_neon-solid_2_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsNeonStripes0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_neon-stripes_0",
+	{
+		displayStringId: "n_pants_neon-stripes_1_display_name";
+		iconAddress: "n_pants_neon-stripes_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsNeonStripes1 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_neon-stripes_1",
+	{
+		displayStringId: "n_pants_neon-stripes_1_display_name";
+		iconAddress: "n_pants_neon-stripes_1_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsNewyear20220 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_newyear2022_0",
+	{
+		displayStringId: "n_pants_newyear2022_0_display_name";
+		iconAddress: "n_pants_newyear2022_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsOrasA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_oras_a_0",
+	{
+		displayStringId: "n_pants_oras_a_0_display_name";
+		iconAddress: "n_pants_oras_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsOrasB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_oras_b_0",
+	{
+		displayStringId: "n_pants_oras_b_0_display_name";
+		iconAddress: "n_pants_oras_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsPajamas20220 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_pajamas2022_0",
+	{
+		displayStringId: "n_pants_pajamas2022_0_display_name";
+		iconAddress: "n_pants_pajamas2022_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsPajamas20221 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_pajamas2022_1",
+	{
+		displayStringId: "n_pants_pajamas2022_0_display_name";
+		iconAddress: "n_pants_pajamas2022_1_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsPalmer0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_palmer_0",
+	{
+		displayStringId: "n_pants_palmer_0_display_name";
+		iconAddress: "n_pants_palmer_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsPikachubutler0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_pikachubutler_0",
+	{
+		displayStringId: "avatar_pants_suit";
+		iconAddress: "n_pants_pikachubutler_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsPikachufanA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_pikachufan_a_0",
+	{
+		displayStringId: "n_pants_pikachufan_a_0_display_name";
+		iconAddress: "n_pants_pikachufan_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsPikachufanB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_pikachufan_b_0",
+	{
+		displayStringId: "n_pants_pikachufan_b_0_display_name";
+		iconAddress: "n_pants_pikachufan_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsPikachulibreA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_pikachulibre_a_0",
+	{
+		displayStringId: "n_pants_pikachulibre_a_0_display_name";
+		iconAddress: "n_pants_pikachulibre_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsPikachulibreB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_pikachulibre_b_0",
+	{
+		displayStringId: "n_pants_pikachulibre_b_0_display_name";
+		iconAddress: "n_pants_pikachulibre_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsProfwillowoutfit0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_profwillowoutfit_0",
+	{
+		displayStringId: "n_pants_profwillowoutfit_0_display_name";
+		iconAddress: "n_pants_profwillowoutfit_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsPumpkabooitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_pumpkabooitems_0",
+	{
+		displayStringId: "n_pants_pumpkabooitems_0_display_name";
+		iconAddress: "n_pants_pumpkabooitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsRegiicejersies0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_regiicejersies_0",
+	{
+		displayStringId: "n_pants_regiicejersies_0_display_name";
+		iconAddress: "n_pants_regiicejersies_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsRegirockjersies0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_regirockjersies_0",
+	{
+		displayStringId: "n_pants_regirockjersies_0_display_name";
+		iconAddress: "n_pants_regirockjersies_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsRegisteeljersies0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_registeeljersies_0",
+	{
+		displayStringId: "n_pants_registeeljersies_0_display_name";
+		iconAddress: "n_pants_registeeljersies_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsS19gbl0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_s19gbl_0",
+	{
+		displayStringId: "avatar_pants_gbl19";
+		iconAddress: "n_pants_s19gbl_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsShorts0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_shorts_0",
+	{
+		displayStringId: "n_pants_shorts_3_display_name";
+		iconAddress: "n_pants_shorts_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsShorts1 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_shorts_1",
+	{
+		displayStringId: "n_pants_shorts_3_display_name";
+		iconAddress: "n_pants_shorts_1_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsShorts2 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_shorts_2",
+	{
+		displayStringId: "n_pants_shorts_3_display_name";
+		iconAddress: "n_pants_shorts_2_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsShorts3 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_shorts_3",
+	{
+		displayStringId: "n_pants_shorts_3_display_name";
+		iconAddress: "n_pants_shorts_3_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsSkinnyjeansA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_skinnyjeans_a_0",
+	{
+		displayStringId: "n_pants_skinnyjeans_a_0_display_name";
+		iconAddress: "n_pants_skinnyjeans_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsSkinnyjeansB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_skinnyjeans_b_0",
+	{
+		displayStringId: "n_pants_skinnyjeans_b_0_display_name";
+		iconAddress: "n_pants_skinnyjeans_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsSkinnyjeansB1 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_skinnyjeans_b_1",
+	{
+		displayStringId: "n_pants_skinnyjeans_b_0_display_name";
+		iconAddress: "n_pants_skinnyjeans_b_1_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsSkinnyjeansB2 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_skinnyjeans_b_2",
+	{
+		displayStringId: "n_pants_skinnyjeans_b_0_display_name";
+		iconAddress: "n_pants_skinnyjeans_b_2_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsSs0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_ss_0",
+	{
+		displayStringId: "n_pants_ss_0_display_name";
+		iconAddress: "n_pants_ss_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsSteven0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_steven_0",
+	{
+		displayStringId: "n_pants_steven_0_display_name";
+		iconAddress: "n_pants_steven_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsStevenfirst0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_stevenfirst_0",
+	{
+		displayStringId: "n_pants_stevenfirst_0_display_name";
+		iconAddress: "n_pants_stevenfirst_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsSweats0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_sweats_0",
+	{
+		displayStringId: "n_pants_sweats_0_display_name";
+		iconAddress: "n_pants_sweats_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsSweats1 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_sweats_1",
+	{
+		displayStringId: "n_pants_sweats_0_display_name";
+		iconAddress: "n_pants_sweats_1_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsSweats2 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_sweats_2",
+	{
+		displayStringId: "n_pants_sweats_0_display_name";
+		iconAddress: "n_pants_sweats_2_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsSweats3 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_sweats_3",
+	{
+		displayStringId: "n_pants_sweats_0_display_name";
+		iconAddress: "n_pants_sweats_3_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsSweats4 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_sweats_4",
+	{
+		displayStringId: "n_pants_sweats_0_display_name";
+		iconAddress: "n_pants_sweats_4_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsSwshuniformchampion0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_swshuniformchampion_0",
+	{
+		displayStringId: "n_pants_swshuniformchampion_0_display_name";
+		iconAddress: "n_pants_swshuniformchampion_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsSwshuniformdarkA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_swshuniformdark_a_0",
+	{
+		displayStringId: "n_pants_swshuniformdark_a_0_display_name";
+		iconAddress: "n_pants_swshuniformdark_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsSwshuniformdarkB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_swshuniformdark_b_0",
+	{
+		displayStringId: "n_pants_swshuniformdark_b_0_display_name";
+		iconAddress: "n_pants_swshuniformdark_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsSwshuniformdefaultA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_swshuniformdefault_a_0",
+	{
+		displayStringId: "n_pants_swshuniformdefault_a_0_display_name";
+		iconAddress: "n_pants_swshuniformdefault_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsSwshuniformdefaultB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_swshuniformdefault_b_0",
+	{
+		displayStringId: "n_pants_swshuniformdefault_b_0_display_name";
+		iconAddress: "n_pants_swshuniformdefault_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsSwshuniformdragonA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_swshuniformdragon_a_0",
+	{
+		displayStringId: "n_pants_swshuniformdragon_a_0_display_name";
+		iconAddress: "n_pants_swshuniformdragon_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsSwshuniformdragonB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_swshuniformdragon_b_0",
+	{
+		displayStringId: "n_pants_swshuniformdragon_b_0_display_name";
+		iconAddress: "n_pants_swshuniformdragon_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsTeamaquaA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_teamaqua_a_0",
+	{
+		displayStringId: "n_pants_teamaqua_a_0_display_name";
+		iconAddress: "n_pants_teamaqua_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsTeamaquaB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_teamaqua_b_0",
+	{
+		displayStringId: "n_pants_teamaqua_b_0_display_name";
+		iconAddress: "n_pants_teamaqua_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsTeamblancheA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_teamblanche_a_0",
+	{
+		displayStringId: "n_pants_teamblanche_a_0_display_name";
+		iconAddress: "n_pants_teamblanche_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsTeamblancheB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_teamblanche_b_0",
+	{
+		displayStringId: "n_pants_teamblanche_b_0_display_name";
+		iconAddress: "n_pants_teamblanche_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsTeamcandelaA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_teamcandela_a_0",
+	{
+		displayStringId: "n_pants_teamcandela_a_0_display_name";
+		iconAddress: "n_pants_teamcandela_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsTeamcandelaB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_teamcandela_b_0",
+	{
+		displayStringId: "n_pants_teamcandela_b_0_display_name";
+		iconAddress: "n_pants_teamcandela_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsTeammagmaA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_teammagma_a_0",
+	{
+		displayStringId: "n_pants_teammagma_a_0_display_name";
+		iconAddress: "n_pants_teammagma_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsTeammagmaB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_teammagma_b_0",
+	{
+		displayStringId: "n_pants_teammagma_b_0_display_name";
+		iconAddress: "n_pants_teammagma_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsTeamrocketA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_teamrocket_a_0",
+	{
+		displayStringId: "n_pants_teamrocket_a_0_display_name";
+		iconAddress: "n_pants_teamrocket_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsTeamrocketB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_teamrocket_b_0",
+	{
+		displayStringId: "n_pants_teamrocket_b_0_display_name";
+		iconAddress: "n_pants_teamrocket_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsTeamskullA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_teamskull_a_0",
+	{
+		displayStringId: "n_pants_teamskull_a_0_display_name";
+		iconAddress: "n_pants_teamskull_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsTeamskullB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_teamskull_b_0",
+	{
+		displayStringId: "n_pants_teamskull_b_0_display_name";
+		iconAddress: "n_pants_teamskull_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsTeamsparkA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_teamspark_a_0",
+	{
+		displayStringId: "n_pants_teamspark_a_0_display_name";
+		iconAddress: "n_pants_teamspark_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsTeamsparkB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_teamspark_b_0",
+	{
+		displayStringId: "n_pants_teamspark_b_0_display_name";
+		iconAddress: "n_pants_teamspark_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsTeamyellgruntsPants0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_teamyellgrunts-pants_0",
+	{
+		displayStringId: "avatar_pants_teamyellpants";
+		iconAddress: "n_pants_teamyellgrunts-pants_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsTeamyellgruntsSkirt0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_teamyellgrunts-skirt_0",
+	{
+		displayStringId: "avatar_pants_teamyellskirt";
+		iconAddress: "n_pants_teamyellgrunts-skirt_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsTurbine0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_turbine_0",
+	{
+		displayStringId: "n_pants_turbine_2_display_name";
+		iconAddress: "n_pants_turbine_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsTurbine1 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_turbine_1",
+	{
+		displayStringId: "n_pants_turbine_2_display_name";
+		iconAddress: "n_pants_turbine_1_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsTurbine2 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_turbine_2",
+	{
+		displayStringId: "n_pants_turbine_2_display_name";
+		iconAddress: "n_pants_turbine_2_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsUltraA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_ultra_a_0",
+	{
+		displayStringId: "n_pants_ultra_a_0_display_name";
+		iconAddress: "n_pants_ultra_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsUltraB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_ultra_b_0",
+	{
+		displayStringId: "n_pants_ultra_b_0_display_name";
+		iconAddress: "n_pants_ultra_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsVeterantrainerxyA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_veterantrainerxy_a_0",
+	{
+		displayStringId: "n_pants_veterantrainerxy_a_0_display_name";
+		iconAddress: "n_pants_veterantrainerxy_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsVeterantrainerxyB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_veterantrainerxy_b_0",
+	{
+		displayStringId: "n_pants_veterantrainerxy_b_0_display_name";
+		iconAddress: "n_pants_veterantrainerxy_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsWcs2022winnersitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_wcs2022winnersitems_0",
+	{
+		displayStringId: "n_pants_wcs2022winnersitems_0_display_name";
+		iconAddress: "n_pants_wcs2022winnersitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsWcs2024winnersitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_wcs2024winnersitems_0",
+	{
+		displayStringId: "avatar_pants_wcs2024champion";
+		iconAddress: "n_pants_wcs2024winnersitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPantsWcs2025winnersitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_pants_wcs2025winnersitems_0",
+	{
+		displayStringId: "avatar_pants_wcs2025champion";
+		iconAddress: "n_pants_wcs2025winnersitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNPose001 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_001",
+	{
+		displayStringId: "n_pose_001_display_name";
+		iconAddress: "pose_01";
+	}
+>;
+export type AvatarItemDisplayNPose002 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_002",
+	{
+		displayStringId: "n_pose_002_display_name";
+		iconAddress: "pose_12";
+	}
+>;
+export type AvatarItemDisplayNPose003 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_003",
+	{
+		displayStringId: "n_pose_003_display_name";
+		iconAddress: "pose_03";
+	}
+>;
+export type AvatarItemDisplayNPose004 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_004",
+	{
+		displayStringId: "n_pose_004_display_name";
+		iconAddress: "pose_14";
+	}
+>;
+export type AvatarItemDisplayNPose005 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_005",
+	{
+		displayStringId: "n_pose_005_display_name";
+		iconAddress: "pose_05";
+	}
+>;
+export type AvatarItemDisplayNPose006 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_006",
+	{
+		displayStringId: "n_pose_006_display_name";
+		iconAddress: "pose_06";
+	}
+>;
+export type AvatarItemDisplayNPose007 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_007",
+	{
+		displayStringId: "n_pose_007_display_name";
+		iconAddress: "pose_07";
+	}
+>;
+export type AvatarItemDisplayNPose008 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_008",
+	{
+		displayStringId: "n_pose_008_display_name";
+		iconAddress: "pose_18";
+	}
+>;
+export type AvatarItemDisplayNPose009 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_009",
+	{
+		displayStringId: "n_pose_009_display_name";
+		iconAddress: "pose_09";
+	}
+>;
+export type AvatarItemDisplayNPose010 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_010",
+	{
+		displayStringId: "n_pose_010_display_name";
+		iconAddress: "pose_20";
+	}
+>;
+export type AvatarItemDisplayNPose011 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_011",
+	{
+		displayStringId: "n_pose_011_display_name";
+		iconAddress: "pose_11";
+	}
+>;
+export type AvatarItemDisplayNPose012 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_012",
+	{
+		displayStringId: "n_pose_012_display_name";
+		iconAddress: "pose_02";
+	}
+>;
+export type AvatarItemDisplayNPose013 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_013",
+	{
+		displayStringId: "n_pose_013_display_name";
+		iconAddress: "pose_13";
+	}
+>;
+export type AvatarItemDisplayNPose014 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_014",
+	{
+		displayStringId: "n_pose_014_display_name";
+		iconAddress: "pose_04";
+	}
+>;
+export type AvatarItemDisplayNPose015 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_015",
+	{
+		displayStringId: "n_pose_015_display_name";
+		iconAddress: "pose_15";
+	}
+>;
+export type AvatarItemDisplayNPose016 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_016",
+	{
+		displayStringId: "n_pose_016_display_name";
+		iconAddress: "pose_16";
+	}
+>;
+export type AvatarItemDisplayNPose017 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_017",
+	{
+		displayStringId: "n_pose_017_display_name";
+		iconAddress: "pose_17";
+	}
+>;
+export type AvatarItemDisplayNPose018 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_018",
+	{
+		displayStringId: "n_pose_018_display_name";
+		iconAddress: "pose_08";
+	}
+>;
+export type AvatarItemDisplayNPose019 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_019",
+	{
+		displayStringId: "n_pose_019_display_name";
+		iconAddress: "pose_19";
+	}
+>;
+export type AvatarItemDisplayNPose020 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_020",
+	{
+		displayStringId: "n_pose_020_display_name";
+		iconAddress: "pose_10";
+	}
+>;
+export type AvatarItemDisplayNPose021 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_021",
+	{
+		displayStringId: "n_pose_021_display_name";
+		iconAddress: "pose_21";
+	}
+>;
+export type AvatarItemDisplayNPose022 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_022",
+	{
+		displayStringId: "n_pose_022_display_name";
+		iconAddress: "pose_22";
+	}
+>;
+export type AvatarItemDisplayNPose023 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_023",
+	{
+		displayStringId: "n_pose_023_display_name";
+		iconAddress: "pose_23";
+	}
+>;
+export type AvatarItemDisplayNPose024 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_024",
+	{
+		displayStringId: "n_pose_024_display_name";
+		iconAddress: "pose_24";
+	}
+>;
+export type AvatarItemDisplayNPose025 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_025",
+	{
+		displayStringId: "n_pose_025_display_name";
+		iconAddress: "pose_25";
+	}
+>;
+export type AvatarItemDisplayNPose026 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_026",
+	{
+		displayStringId: "n_pose_026_display_name";
+		iconAddress: "pose_26";
+	}
+>;
+export type AvatarItemDisplayNPose027 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_027",
+	{
+		displayStringId: "n_pose_027_display_name";
+		iconAddress: "pose_27";
+	}
+>;
+export type AvatarItemDisplayNPose028 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_028",
+	{
+		displayStringId: "n_pose_028_display_name";
+		iconAddress: "pose_28";
+	}
+>;
+export type AvatarItemDisplayNPose029 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_029",
+	{
+		displayStringId: "n_pose_029_display_name";
+		iconAddress: "pose_29";
+	}
+>;
+export type AvatarItemDisplayNPose030 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_030",
+	{
+		displayStringId: "n_pose_030_display_name";
+		iconAddress: "pose_30";
+	}
+>;
+export type AvatarItemDisplayNPose031 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_031",
+	{
+		displayStringId: "n_pose_031_display_name";
+		iconAddress: "pose_31";
+	}
+>;
+export type AvatarItemDisplayNPose032 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_032",
+	{
+		displayStringId: "n_pose_032_display_name";
+		iconAddress: "pose_32";
+	}
+>;
+export type AvatarItemDisplayNPose032A = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_032_a",
+	{
+		displayStringId: "n_pose_032_a_display_name";
+		iconAddress: "pose_01";
+	}
+>;
+export type AvatarItemDisplayNPose033 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_033",
+	{
+		displayStringId: "n_pose_033_display_name";
+		iconAddress: "pose_33";
+	}
+>;
+export type AvatarItemDisplayNPose034 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_034",
+	{
+		displayStringId: "n_pose_034_display_name";
+		iconAddress: "pose_34";
+	}
+>;
+export type AvatarItemDisplayNPose035 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_035",
+	{
+		displayStringId: "n_pose_035_display_name";
+		iconAddress: "pose_35";
+	}
+>;
+export type AvatarItemDisplayNPose036 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_036",
+	{
+		displayStringId: "n_pose_036_display_name";
+		iconAddress: "pose_36";
+	}
+>;
+export type AvatarItemDisplayNPose037 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_037",
+	{
+		displayStringId: "n_pose_037_display_name";
+		iconAddress: "pose_37";
+	}
+>;
+export type AvatarItemDisplayNPose038 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_038",
+	{
+		displayStringId: "n_pose_038_display_name";
+		iconAddress: "pose_38";
+	}
+>;
+export type AvatarItemDisplayNPose039 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_039",
+	{
+		displayStringId: "n_pose_039_display_name";
+		iconAddress: "n_pose_039_icon";
+	}
+>;
+export type AvatarItemDisplayNPose040 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_040",
+	{
+		displayStringId: "n_pose_040_display_name";
+		iconAddress: "pose_40";
+	}
+>;
+export type AvatarItemDisplayNPose041 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_041",
+	{
+		displayStringId: "n_pose_041_display_name";
+		iconAddress: "pose_41";
+	}
+>;
+export type AvatarItemDisplayNPose042 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_042",
+	{
+		displayStringId: "n_pose_042_display_name";
+		iconAddress: "pose_42";
+	}
+>;
+export type AvatarItemDisplayNPose043 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_043",
+	{
+		displayStringId: "n_pose_043_display_name";
+		iconAddress: "pose_43";
+	}
+>;
+export type AvatarItemDisplayNPose044 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_044",
+	{
+		displayStringId: "n_pose_044_display_name";
+		iconAddress: "pose_44";
+	}
+>;
+export type AvatarItemDisplayNPose045 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_045",
+	{
+		displayStringId: "n_pose_045_display_name";
+		iconAddress: "pose_45";
+	}
+>;
+export type AvatarItemDisplayNPose046 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_046",
+	{
+		displayStringId: "n_pose_046_display_name";
+		iconAddress: "pose_46";
+	}
+>;
+export type AvatarItemDisplayNPose047 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_047",
+	{
+		displayStringId: "n_pose_047_display_name";
+		iconAddress: "pose_47";
+	}
+>;
+export type AvatarItemDisplayNPose048 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_048",
+	{
+		displayStringId: "n_pose_048_display_name";
+		iconAddress: "pose_48";
+	}
+>;
+export type AvatarItemDisplayNPose049 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_049",
+	{
+		displayStringId: "n_pose_049_display_name";
+		iconAddress: "pose_49";
+	}
+>;
+export type AvatarItemDisplayNPose050 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_050",
+	{
+		displayStringId: "n_pose_050_display_name";
+		iconAddress: "pose_50";
+	}
+>;
+export type AvatarItemDisplayNPose051 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_051",
+	{
+		displayStringId: "n_pose_051_display_name";
+		iconAddress: "pose_51";
+	}
+>;
+export type AvatarItemDisplayNPose052 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_052",
+	{
+		displayStringId: "n_pose_052_display_name";
+		iconAddress: "pose_52";
+	}
+>;
+export type AvatarItemDisplayNPose053 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_053",
+	{
+		displayStringId: "n_pose_053_display_name";
+		iconAddress: "pose_53";
+	}
+>;
+export type AvatarItemDisplayNPose054 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_054",
+	{
+		displayStringId: "n_pose_054_display_name";
+		iconAddress: "pose_54";
+	}
+>;
+export type AvatarItemDisplayNPose055 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_055",
+	{
+		displayStringId: "n_pose_055_display_name";
+		iconAddress: "pose_55";
+	}
+>;
+export type AvatarItemDisplayNPose056 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_056",
+	{
+		displayStringId: "n_pose_056_display_name";
+		iconAddress: "pose_56";
+	}
+>;
+export type AvatarItemDisplayNPose057 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_057",
+	{
+		displayStringId: "n_pose_057_display_name";
+		iconAddress: "pose_57";
+	}
+>;
+export type AvatarItemDisplayNPose058 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_058",
+	{
+		displayStringId: "n_pose_058_display_name";
+		iconAddress: "pose_58";
+	}
+>;
+export type AvatarItemDisplayNPose059 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_059",
+	{
+		displayStringId: "n_pose_059_display_name";
+		iconAddress: "pose_59";
+	}
+>;
+export type AvatarItemDisplayNPose060 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_060",
+	{
+		displayStringId: "n_pose_060_display_name";
+		iconAddress: "pose_60";
+	}
+>;
+export type AvatarItemDisplayNPose061 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_061",
+	{
+		displayStringId: "n_pose_061_display_name";
+		iconAddress: "pose_61";
+	}
+>;
+export type AvatarItemDisplayNPose062 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_062",
+	{
+		displayStringId: "n_pose_062_display_name";
+		iconAddress: "pose_62";
+	}
+>;
+export type AvatarItemDisplayNPose063 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_063",
+	{
+		displayStringId: "N_GO_Fest _Pose_Alola Greeting";
+		iconAddress: "pose_63";
+	}
+>;
+export type AvatarItemDisplayNPose064 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_064",
+	{
+		displayStringId: "AVATAR_LanaPose";
+		iconAddress: "pose_64";
+	}
+>;
+export type AvatarItemDisplayNPose065 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_065",
+	{
+		displayStringId: "avatar_pose_wcs2024";
+		iconAddress: "n_pose_065_icon";
+	}
+>;
+export type AvatarItemDisplayNPose066 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_066",
+	{
+		displayStringId: "avatar_pose_gblallister";
+		iconAddress: "n_pose_066_icon";
+	}
+>;
+export type AvatarItemDisplayNPose067 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_067",
+	{
+		displayStringId: "avatar_pose_gblgrimsley";
+		iconAddress: "n_pose_067_icon";
+	}
+>;
+export type AvatarItemDisplayNPose068 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_068",
+	{
+		displayStringId: "avatar_pose_safariball";
+		iconAddress: "n_pose_068_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseBuddypokeball = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_buddypokeball",
+	{
+		displayStringId: "avatar_pose_pokeballbuddy";
+		iconAddress: "n_pose_buddypokeball_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseCarnival = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_carnival",
+	{
+		displayStringId: "avatar_pose_carnival";
+		iconAddress: "n_pose_carnival_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseCommunityambassador = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_communityambassador",
+	{
+		displayStringId: "avatar_n_pose_communityambassador";
+		iconAddress: "n_pose_communityambassador_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseConcierge = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_concierge",
+	{
+		displayStringId: "avatar_pose_concierge";
+		iconAddress: "n_pose_concierge_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseEmpty = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_empty",
+	{
+		displayStringId: "n_pose_empty_display_name";
+		iconAddress: "m_poses_empty_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseFashionweek2025 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_fashionweek2025",
+	{
+		displayStringId: "avatar_pose_runway";
+		iconAddress: "n_pose_fashionweek2025_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseGofest2025 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_gofest2025",
+	{
+		displayStringId: "avatar_pose_gofest2025";
+		iconAddress: "n_pose_gofest2025_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseGrowingup = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_growingup",
+	{
+		displayStringId: "avatar_pose_paperplane";
+		iconAddress: "n_pose_growingup_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseGrusha = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_grusha",
+	{
+		displayStringId: "avatar_pose_grusha";
+		iconAddress: "n_pose_grusha_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseHeart = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_heart",
+	{
+		displayStringId: "avatar_pose_heart";
+		iconAddress: "n_pose_heart_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseIdle = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_idle",
+	{
+		displayStringId: "n_pose_empty_display_name";
+		iconAddress: "n_pose_idle_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseIdleA = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_idle_a",
+	{
+		displayStringId: "n_pose_idle_a_display_name";
+		iconAddress: "f_poses_empty_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseIdleB = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_idle_b",
+	{
+		displayStringId: "n_pose_idle_b_display_name";
+		iconAddress: "m_poses_empty_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseLegacy50 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_legacy50",
+	{
+		displayStringId: "avatar_pose_legacy50";
+		iconAddress: "n_pose_legacy50_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseLvl77 = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_lvl77",
+	{
+		displayStringId: "avatar_pose_exploration";
+		iconAddress: "n_pose_lvl77_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseMustard = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_mustard",
+	{
+		displayStringId: "avatar_pose_mustard";
+		iconAddress: "n_pose_mustard_icon";
+	}
+>;
+export type AvatarItemDisplayNPosePenpal = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_penpal",
+	{
+		displayStringId: "avatar_pose_penpal";
+		iconAddress: "n_pose_penpal_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseS16finale = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_s16finale",
+	{
+		displayStringId: "avatar_pose_determined";
+		iconAddress: "n_pose_s16finale_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseS19gbl = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_s19gbl",
+	{
+		displayStringId: "avatar_pose_gbl19";
+		iconAddress: "n_pose_s19gbl_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseS20gbl = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_s20gbl",
+	{
+		displayStringId: "avatar_pose_s20gbl";
+		iconAddress: "n_pose_s20gbl_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseS22gbl = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_s22gbl",
+	{
+		displayStringId: "avatar_pose_s22blue";
+		iconAddress: "n_pose_s22gbl_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseSustainability = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_sustainability",
+	{
+		displayStringId: "avatar_pose_plant";
+		iconAddress: "n_pose_sustainability_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseTeapot = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_teapot",
+	{
+		displayStringId: "avatar_pose_teacup";
+		iconAddress: "n_pose_teapot_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseTinkatonhammer = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_tinkatonhammer",
+	{
+		displayStringId: "avatar_pose_tinkaton";
+		iconAddress: "n_pose_tinkatonhammer_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseUrshifurapidstrike = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_urshifurapidstrike",
+	{
+		displayStringId: "avatar_pose_rapidstrike";
+		iconAddress: "n_pose_urshifurapidstrike_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseUrshifusinglestrike = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_urshifusinglestrike",
+	{
+		displayStringId: "avatar_pose_singlestrike";
+		iconAddress: "n_pose_urshifusinglestrike_icon";
+	}
+>;
+export type AvatarItemDisplayNPoseWaterfestival = AvatarItemDisplay<
+	"N_DISPLAY_n_pose_waterfestival",
+	{
+		displayStringId: "avatar_pose_icecream";
+		iconAddress: "n_pose_waterfestival_icon";
+	}
+>;
+export type AvatarItemDisplayNShirt6thanniversaryA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_6thanniversary_a_0",
+	{
+		displayStringId: "n_shirt_6thanniversary_a_0_display_name";
+		iconAddress: "n_shirt_6thanniversary_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirt6thanniversaryB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_6thanniversary_b_0",
+	{
+		displayStringId: "n_shirt_6thanniversary_b_0_display_name";
+		iconAddress: "n_shirt_6thanniversary_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirt7thanniversary0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_7thanniversary_0",
+	{
+		displayStringId: "n_shirt_7thanniversary_0_display_name";
+		iconAddress: "n_shirt_7thanniversary_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtAcetrainerbwA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_acetrainerbw_a_0",
+	{
+		displayStringId: "n_shirt_acetrainerbw_a_0_display_name";
+		iconAddress: "n_shirt_acetrainerbw_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtAcetrainerbwB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_acetrainerbw_b_0",
+	{
+		displayStringId: "n_shirt_acetrainerbw_b_0_display_name";
+		iconAddress: "n_shirt_acetrainerbw_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtAcetrainersmA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_acetrainersm_a_0",
+	{
+		displayStringId: "n_shirt_acetrainersm_a_0_display_name";
+		iconAddress: "n_shirt_acetrainersm_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtAcetrainersmB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_acetrainersm_b_0",
+	{
+		displayStringId: "n_shirt_acetrainersm_b_0_display_name";
+		iconAddress: "n_shirt_acetrainersm_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtAllister0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_allister_0",
+	{
+		displayStringId: "avatar_shirt_gblallister";
+		iconAddress: "n_shirt_allister_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtAlolacomfey0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_alolacomfey_0",
+	{
+		displayStringId: "n_shirt_alolacomfey_0_display_name";
+		iconAddress: "n_shirt_alolacomfey_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtAnimegou0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_animegou_0",
+	{
+		displayStringId: "n_shirt_animegou_0_display_name";
+		iconAddress: "n_shirt_animegou_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtApplinitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_applinitems_0",
+	{
+		displayStringId: "avatar_shirt_applinapron";
+		iconAddress: "n_shirt_applinitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtAseries0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_aseries_0",
+	{
+		displayStringId: "n_shirt_aseries_0_display_name";
+		iconAddress: "n_shirt_aseries_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtBackpackerA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_backpacker_a_0",
+	{
+		displayStringId: "n_shirt_backpacker_a_0_display_name";
+		iconAddress: "n_shirt_backpacker_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtBackpackerB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_backpacker_b_0",
+	{
+		displayStringId: "n_shirt_backpacker_b_0_display_name";
+		iconAddress: "n_shirt_backpacker_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtBallguy0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ballguy_0",
+	{
+		displayStringId: "n_shirt_ballguy_0_display_name";
+		iconAddress: "n_shirt_ballguy_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtBattlegirl0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_battlegirl_0",
+	{
+		displayStringId: "n_shirt_battlegirl_0_display_name";
+		iconAddress: "n_shirt_battlegirl_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtBeaA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_bea_a_0",
+	{
+		displayStringId: "n_shirt_bea_a_0_display_name";
+		iconAddress: "n_shirt_bea_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtBeaB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_bea_b_0",
+	{
+		displayStringId: "n_shirt_bea_b_0_display_name";
+		iconAddress: "n_shirt_bea_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtBewearcostume0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_bewearcostume_0",
+	{
+		displayStringId: "avatar_n_shirt_bewear";
+		iconAddress: "n_shirt_bewearcostume_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtBlackwhite0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_blackwhite_0",
+	{
+		displayStringId: "avatar_shirt_bwhoodie";
+		iconAddress: "n_shirt_blackwhite_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtBlazer0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_blazer_0",
+	{
+		displayStringId: "n_shirt_blazer_0_display_name";
+		iconAddress: "n_shirt_blazer_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtBounsweetitemsA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_bounsweetitems_a_0",
+	{
+		displayStringId: "n_shirt_bounsweetitems_a_0_display_name";
+		iconAddress: "n_shirt_bounsweetitems_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtBounsweetitemsB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_bounsweetitems_b_0",
+	{
+		displayStringId: "n_shirt_bounsweetitems_b_0_display_name";
+		iconAddress: "n_shirt_bounsweetitems_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtBrock0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_brock_0",
+	{
+		displayStringId: "n_shirt_brock_0_display_name";
+		iconAddress: "n_shirt_brock_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtButtondown0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_buttondown_0",
+	{
+		displayStringId: "n_shirt_buttondown_0_display_name";
+		iconAddress: "n_shirt_buttondown_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtBuzzwoleitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_buzzwoleitems_0",
+	{
+		displayStringId: "n_shirt_buzzwoleitems_0_display_name";
+		iconAddress: "n_shirt_buzzwoleitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtBwn0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_bwn_0",
+	{
+		displayStringId: "n_shirt_bwn_0_display_name";
+		iconAddress: "n_shirt_bwn_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtCasualA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_casual_a_0",
+	{
+		displayStringId: "n_shirt_casual_a_0_display_name";
+		iconAddress: "n_shirt_casual_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtCasualA1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_casual_a_1",
+	{
+		displayStringId: "n_shirt_casual_a_1_display_name";
+		iconAddress: "n_shirt_casual_a_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtCasualA2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_casual_a_2",
+	{
+		displayStringId: "n_shirt_casual_a_2_display_name";
+		iconAddress: "n_shirt_casual_a_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtCasualA3 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_casual_a_3",
+	{
+		displayStringId: "n_shirt_casual_a_3_display_name";
+		iconAddress: "n_shirt_casual_a_3_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtCasualB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_casual_b_0",
+	{
+		displayStringId: "n_shirt_casual_b_0_display_name";
+		iconAddress: "n_shirt_casual_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtCasualB1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_casual_b_1",
+	{
+		displayStringId: "n_shirt_casual_b_1_display_name";
+		iconAddress: "n_shirt_casual_b_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtCasualB2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_casual_b_2",
+	{
+		displayStringId: "n_shirt_casual_b_2_display_name";
+		iconAddress: "n_shirt_casual_b_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtCasualB3 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_casual_b_3",
+	{
+		displayStringId: "n_shirt_casual_b_3_display_name";
+		iconAddress: "n_shirt_casual_b_3_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtCelebi0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_celebi_0",
+	{
+		displayStringId: "n_shirt_celebi_0_display_name";
+		iconAddress: "n_shirt_celebi_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtChimcharonesie0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_chimcharonesie_0",
+	{
+		displayStringId: "n_shirt_chimcharonesie_0_display_name";
+		iconAddress: "n_shirt_chimcharonesie_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtClay0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_clay_0",
+	{
+		displayStringId: "n_shirt_clay_0_display_name";
+		iconAddress: "n_shirt_clay_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtClemont0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_clemont_0",
+	{
+		displayStringId: "avatar_n_shirt_clemont";
+		iconAddress: "n_shirt_clemont_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtCofagrigusitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_cofagrigusitems_0",
+	{
+		displayStringId: "n_shirt_cofagrigusitems_0_display_name";
+		iconAddress: "n_shirt_cofagrigusitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtConcierge0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_concierge_0",
+	{
+		displayStringId: "avatar_n_shirt_concierge";
+		iconAddress: "n_shirt_concierge_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtCosmog0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_cosmog_0",
+	{
+		displayStringId: "n_shirt_cosmog_0_display_name";
+		iconAddress: "n_shirt_cosmog_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtCowichansweater0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_cowichansweater_0",
+	{
+		displayStringId: "n_shirt_cowichansweater_0_display_name";
+		iconAddress: "n_shirt_cowichansweater_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDayofdead0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_dayofdead_0",
+	{
+		displayStringId: "n_shirt_dayofdead_0_display_name";
+		iconAddress: "n_shirt_dayofdead_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDefaultNew0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_default-new_0",
+	{
+		displayStringId: "n_shirt_default-new_0_display_name";
+		iconAddress: "n_shirt_defaultnew_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDefaultA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_default_a_0",
+	{
+		displayStringId: "n_shirt_default_a_1_display_name";
+		iconAddress: "n_shirt_default_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDefaultA1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_default_a_1",
+	{
+		displayStringId: "n_shirt_default_a_1_display_name";
+		iconAddress: "n_shirt_default_a_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDefaultA2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_default_a_2",
+	{
+		displayStringId: "n_shirt_default_a_1_display_name";
+		iconAddress: "n_shirt_default_a_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDefaultA3 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_default_a_3",
+	{
+		displayStringId: "n_shirt_default_a_1_display_name";
+		iconAddress: "n_shirt_default_a_3_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDefaultA4 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_default_a_4",
+	{
+		displayStringId: "n_shirt_default_a_1_display_name";
+		iconAddress: "n_shirt_default_a_4_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDefaultA5 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_default_a_5",
+	{
+		displayStringId: "n_shirt_default_a_1_display_name";
+		iconAddress: "n_shirt_default_a_5_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDefaultA6 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_default_a_6",
+	{
+		displayStringId: "n_shirt_default_a_1_display_name";
+		iconAddress: "n_shirt_default_a_6_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDefaultA7 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_default_a_7",
+	{
+		displayStringId: "n_shirt_default_a_1_display_name";
+		iconAddress: "n_shirt_default_a_7_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDefaultA8 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_default_a_8",
+	{
+		displayStringId: "n_shirt_default_a_1_display_name";
+		iconAddress: "n_shirt_default_a_8_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDefaultB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_default_b_0",
+	{
+		displayStringId: "n_shirt_default_b_0_display_name";
+		iconAddress: "n_shirt_default_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDefaultB1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_default_b_1",
+	{
+		displayStringId: "n_shirt_default_b_1_display_name";
+		iconAddress: "n_shirt_default_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDefaultB2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_default_b_2",
+	{
+		displayStringId: "n_shirt_default_b_2_display_name";
+		iconAddress: "n_shirt_default_b_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDefaultB3 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_default_b_3",
+	{
+		displayStringId: "n_shirt_default_b_3_display_name";
+		iconAddress: "n_shirt_default_3_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDefaultB4 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_default_b_4",
+	{
+		displayStringId: "n_shirt_default_b_2_display_name";
+		iconAddress: "n_shirt_default_b_4_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDefaultB5 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_default_b_5",
+	{
+		displayStringId: "n_shirt_default_b_2_display_name";
+		iconAddress: "n_shirt_default_b_5_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDefaultB6 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_default_b_6",
+	{
+		displayStringId: "n_shirt_default_b_2_display_name";
+		iconAddress: "n_shirt_default_b_6_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDefaultB7 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_default_b_7",
+	{
+		displayStringId: "n_shirt_default_b_2_display_name";
+		iconAddress: "n_shirt_default_b_7_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDefaultB8 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_default_b_8",
+	{
+		displayStringId: "n_shirt_default_b_2_display_name";
+		iconAddress: "n_shirt_default_b_8_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDelibird0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_delibird_0",
+	{
+		displayStringId: "n_shirt_delibird_0_display_name";
+		iconAddress: "n_shirt_delibird_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDelibirdonesie0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_delibirdonesie_0",
+	{
+		displayStringId: "n_shirt_delibirdonesie_0_display_name";
+		iconAddress: "n_shirt_delibirdonesie_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDenimfashionweek20230 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_denimfashionweek2023_0",
+	{
+		displayStringId: "n_shirt_denimfashionweek2023_0_display_name";
+		iconAddress: "n_shirt_denimfashionweek2023_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDenimjacket0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_denimjacket_0",
+	{
+		displayStringId: "n_shirt_denimjacket_0_display_name";
+		iconAddress: "n_shirt_denimjacket_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDetectivepikachu0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_detectivepikachu_0",
+	{
+		displayStringId: "n_shirt_detectivepikachu_0_display_name";
+		iconAddress: "n_shirt_detectivepikachu_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDiancie0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_diancie_0",
+	{
+		displayStringId: "n_shirt_diancie_0_display_name";
+		iconAddress: "n_shirt_diancie_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDisguiseHoodoff0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_disguise-hoodoff_0",
+	{
+		displayStringId: "avatar_shirt_mimikyu_hoodoff";
+		iconAddress: "n_shirt_disguise-hoodoff_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDisguiseHoodon0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_disguise-hoodon_0",
+	{
+		displayStringId: "avatar_shirt_mimikyu_hoodon";
+		iconAddress: "n_shirt_disguise-hoodon_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDivingsuit0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_divingsuit_0",
+	{
+		displayStringId: "n_shirt_divingsuit_0_display_name";
+		iconAddress: "n_shirt_divingsuit_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDiwali20210 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_diwali2021_0",
+	{
+		displayStringId: "n_shirt_diwali2021_0_display_name";
+		iconAddress: "n_shirt_diwali2021_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDpA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_dp_a_0",
+	{
+		displayStringId: "n_shirt_dp_a_0_display_name";
+		iconAddress: "n_shirt_dp_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDpB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_dp_b_0",
+	{
+		displayStringId: "n_shirt_dp_b_0_display_name";
+		iconAddress: "n_shirt_dp_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDrifblim0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_drifblim_0",
+	{
+		displayStringId: "n_shirt_drifblim_0_display_name";
+		iconAddress: "n_shirt_drifblim_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDudunsparceitem0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_dudunsparceitem_0",
+	{
+		displayStringId: "avatar_n_shirt_dudunsparce";
+		iconAddress: "n_shirt_dudunsparceitem_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtDusclopsmummy0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_dusclopsmummy_0",
+	{
+		displayStringId: "n_shirt_dusclopsmummy_0_display_name";
+		iconAddress: "n_shirt_dusclopsmummy_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtEarthday20180 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_earthday-2018_0",
+	{
+		displayStringId: "n_shirt_earthday-2018_0_display_name";
+		iconAddress: "n_shirt_earthday_2018_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtEeveestshirt000 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_eeveestshirt-00_0",
+	{
+		displayStringId: "n_shirt_eeveestshirt-00_0_display_name";
+		iconAddress: "n_shirt_eeveestshirt_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtEeveestshirt010 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_eeveestshirt-01_0",
+	{
+		displayStringId: "n_shirt_eeveestshirt-01_0_display_name";
+		iconAddress: "n_shirt_eeveestshirt_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtEeveestshirt020 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_eeveestshirt-02_0",
+	{
+		displayStringId: "n_shirt_eeveestshirt-02_0_display_name";
+		iconAddress: "n_shirt_eeveestshirt_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtEeveestshirt030 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_eeveestshirt-03_0",
+	{
+		displayStringId: "n_shirt_eeveestshirt-03_0_display_name";
+		iconAddress: "n_shirt_eeveestshirt_3_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtEeveestshirt040 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_eeveestshirt-04_0",
+	{
+		displayStringId: "n_shirt_eeveestshirt-04_0_display_name";
+		iconAddress: "n_shirt_eeveestshirt_4_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtEeveestshirt050 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_eeveestshirt-05_0",
+	{
+		displayStringId: "n_shirt_eeveestshirt-05_0_display_name";
+		iconAddress: "n_shirt_eeveestshirt_5_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtEeveestshirt060 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_eeveestshirt-06_0",
+	{
+		displayStringId: "n_shirt_eeveestshirt-06_0_display_name";
+		iconAddress: "n_shirt_eeveestshirt_6_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtEeveestshirt070 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_eeveestshirt-07_0",
+	{
+		displayStringId: "n_shirt_eeveestshirt-07_0_display_name";
+		iconAddress: "n_shirt_eeveestshirt_7_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtEeveestshirt080 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_eeveestshirt-08_0",
+	{
+		displayStringId: "n_shirt_eeveestshirt-08_0_display_name";
+		iconAddress: "n_shirt_eeveestshirt_8_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtElesaA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_elesa_a_0",
+	{
+		displayStringId: "n_shirt_elesa_a_0_display_name";
+		iconAddress: "n_shirt_elesa_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtElesaB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_elesa_b_0",
+	{
+		displayStringId: "n_shirt_elesa_b_0_display_name";
+		iconAddress: "n_shirt_elesa_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtEternatussuit0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_eternatussuit_0",
+	{
+		displayStringId: "avatar_shirt_eternatus";
+		iconAddress: "n_shirt_eternatussuit_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtFashionweek20220 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_fashionweek2022_0",
+	{
+		displayStringId: "n_shirt_fashionweek2022_0_display_name";
+		iconAddress: "n_shirt_fashionweek2022_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtFashionweek20250 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_fashionweek2025_0",
+	{
+		displayStringId: "avatar_shirt_plaidtop";
+		iconAddress: "n_shirt_fashionweek2025_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtFestivaloflights000 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_festivaloflights-00_0",
+	{
+		displayStringId: "n_shirt_festivaloflights-00_0_display_name";
+		iconAddress: "n_shirt_festivaloflights_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtFestivaloflights010 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_festivaloflights-01_0",
+	{
+		displayStringId: "n_shirt_festivaloflights-01_0_display_name";
+		iconAddress: "n_shirt_festivaloflights_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtFisher0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_fisher_0",
+	{
+		displayStringId: "n_shirt_fisher_0_display_name";
+		iconAddress: "n_shirt_fisher_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtFlabebepack0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_flabebepack_0",
+	{
+		displayStringId: "n_shirt_flabebepack_0_display_name";
+		iconAddress: "n_shirt_flabebepack_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtFragment0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_fragment_0",
+	{
+		displayStringId: "n_shirt_fragment_0_display_name";
+		iconAddress: "n_shirt_fragment_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtFrlgA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_frlg_a_0",
+	{
+		displayStringId: "n_shirt_frlg_a_0_display_name";
+		iconAddress: "n_shirt_frlg_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtFrlgB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_frlg_b_0",
+	{
+		displayStringId: "n_shirt_frlg_b_0_display_name";
+		iconAddress: "n_shirt_frlg_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtFw2022A0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_fw2022_a_0",
+	{
+		displayStringId: "n_shirt_fw2022_a_0_display_name";
+		iconAddress: "n_shirt_fw2022_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtFw2022B0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_fw2022_b_0",
+	{
+		displayStringId: "n_shirt_fw2022_b_0_display_name";
+		iconAddress: "n_shirt_fw2022_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGalarfarfetchditems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_galarfarfetchditems_0",
+	{
+		displayStringId: "n_shirt_galarfarfetchditems_0_display_name";
+		iconAddress: "n_shirt_galarfarfetchditems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGalaxyoutfitA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_galaxyoutfit_a_0",
+	{
+		displayStringId: "n_shirt_galaxyoutfit_a_0_display_name";
+		iconAddress: "n_shirt_galaxyoutfit_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGalaxyoutfitB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_galaxyoutfit_b_0",
+	{
+		displayStringId: "n_shirt_galaxyoutfit_b_0_display_name";
+		iconAddress: "n_shirt_galaxyoutfit_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGeeta0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_geeta_0",
+	{
+		displayStringId: "n_shirt_geeta_0_display_name";
+		iconAddress: "n_shirt_geeta_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGenderlessskirt0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_genderlessskirt_0",
+	{
+		displayStringId: "n_shirt_genderlessskirt_0_display_name";
+		iconAddress: "n_shirt_genderlessskirt_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGengar0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gengar_0",
+	{
+		displayStringId: "n_shirt_gengar_0_display_name";
+		iconAddress: "n_shirt_gengar_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGengaronesie0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gengaronesie_0",
+	{
+		displayStringId: "n_shirt_gengaronesie_0_display_name";
+		iconAddress: "n_shirt_gengaronesie_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGiovanniA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_giovanni_a_0",
+	{
+		displayStringId: "n_shirt_giovanni_a_0_display_name";
+		iconAddress: "n_shirt_giovanni_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGiovanniB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_giovanni_b_0",
+	{
+		displayStringId: "n_shirt_giovanni_b_0_display_name";
+		iconAddress: "n_shirt_giovanni_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGiratinaitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_giratinaitems_0",
+	{
+		displayStringId: "n_shirt_giratinaitems_0_display_name";
+		iconAddress: "n_shirt_giratinaitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGladion0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gladion_0",
+	{
+		displayStringId: "n_shirt_gladion_0_display_name";
+		iconAddress: "n_shirt_gladion_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGofest20190 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gofest-2019_0",
+	{
+		displayStringId: "n_shirt_gofest-2019_0_display_name";
+		iconAddress: "n_shirt_gofest_2019_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGofest20200 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gofest-2020_0",
+	{
+		displayStringId: "n_shirt_gofest-2020_0_display_name";
+		iconAddress: "n_shirt_gofest2020_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGofest20210 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gofest-2021_0",
+	{
+		displayStringId: "n_shirt_gofest-2021_0_display_name";
+		iconAddress: "n_shirt_gofest2021_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGofest20220 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gofest2022_0",
+	{
+		displayStringId: "n_shirt_gofest2022_0_display_name";
+		iconAddress: "n_shirt_gofest2022_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGofest20230 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gofest2023_0",
+	{
+		displayStringId: "n_shirt_gofest2023_0_display_name";
+		iconAddress: "n_shirt_gofest2023_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGofest2024darkgray0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gofest2024darkgray_0",
+	{
+		displayStringId: "n_shirt_gofest24eventexclusive_display_name";
+		iconAddress: "n_shirt_gofest2024darkgray_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGofest2024gray0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gofest2024gray_0",
+	{
+		displayStringId: "AVATAR_m_shirt_gofest2024gray_00_bundle_icon";
+		iconAddress: "n_shirt_gofest2024gray_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGofest2024purple0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gofest2024purple_0",
+	{
+		displayStringId: "n_shirt_gofest24_display_name";
+		iconAddress: "n_shirt_gofest2024purple_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGofest20250 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gofest2025_0",
+	{
+		displayStringId: "avatar_shirt_gofest2025black";
+		iconAddress: "n_shirt_gofest2025_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGofest2025cream0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gofest2025cream_0",
+	{
+		displayStringId: "avatar_shirt_gofest2025cream";
+		iconAddress: "n_shirt_gofest2025cream_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGofestglobal20230 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gofestglobal2023_0",
+	{
+		displayStringId: "n_shirt_gofestglobal2023_0_display_name";
+		iconAddress: "n_shirt_gofestglobal2023_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGoteamrocketarloA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_goteamrocketarlo_a_0",
+	{
+		displayStringId: "n_shirt_goteamrocketarlo_a_0_display_name";
+		iconAddress: "n_shirt_goteamrocketarlo_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGoteamrocketarloB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_goteamrocketarlo_b_0",
+	{
+		displayStringId: "n_shirt_goteamrocketarlo_b_0_display_name";
+		iconAddress: "n_shirt_goteamrocketarlo_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGoteamrocketcliffA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_goteamrocketcliff_a_0",
+	{
+		displayStringId: "n_shirt_goteamrocketcliff_a_0_display_name";
+		iconAddress: "n_shirt_goteamrocketcliff_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGoteamrocketcliffB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_goteamrocketcliff_b_0",
+	{
+		displayStringId: "n_shirt_goteamrocketcliff_b_0_display_name";
+		iconAddress: "n_shirt_goteamrocketcliff_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGoteamrocketsierraA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_goteamrocketsierra_a_0",
+	{
+		displayStringId: "n_shirt_goteamrocketsierra_a_0_display_name";
+		iconAddress: "n_shirt_goteamrocketsierra_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGoteamrocketsierraB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_goteamrocketsierra_b_0",
+	{
+		displayStringId: "n_shirt_goteamrocketsierra_b_0_display_name";
+		iconAddress: "n_shirt_goteamrocketsierra_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGothitelleitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gothitelleitems_0",
+	{
+		displayStringId: "n_shirt_gothitelleitems_0_display_name";
+		iconAddress: "n_shirt_gothitelleitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGotour20230 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gotour2023_0",
+	{
+		displayStringId: "n_shirt_gotour2023_0_display_name";
+		iconAddress: "n_shirt_gotour2023_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGotour20240 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gotour2024_0",
+	{
+		displayStringId: "n_shirt_gotour2024_0_display_name";
+		iconAddress: "n_shirt_gotour2024_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGotour20250 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gotour2025_0",
+	{
+		displayStringId: "avatar_shirt_gotour2025black";
+		iconAddress: "n_shirt_gotour2025_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGotour20251 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gotour2025_1",
+	{
+		displayStringId: "avatar_shirt_gotour2025white";
+		iconAddress: "n_shirt_gotour2025_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGotour20252 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gotour2025_2",
+	{
+		displayStringId: "avatar_shirt_gotour2025gray";
+		iconAddress: "n_shirt_gotour2025_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGotour2026Black0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gotour2026-black_0",
+	{
+		displayStringId: "avatar_shirt_gotour_black";
+		iconAddress: "n_shirt_gotour2026-black_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGotour2026Gray0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gotour2026-gray_0",
+	{
+		displayStringId: "avatar_shirt_gotour_grey";
+		iconAddress: "n_shirt_gotour2026-gray_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGowa20240 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gowa2024_0",
+	{
+		displayStringId: "avatar_shirt_gowatshirt2024";
+		iconAddress: "n_shirt_gowa2024_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGowa20250 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gowa2025_0",
+	{
+		displayStringId: "avatar_n_shirt_gowa2025";
+		iconAddress: "n_shirt_gowa2025_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGowa20251 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gowa2025_1",
+	{
+		displayStringId: "avatar_n_shirt_gowa2025purple";
+		iconAddress: "n_shirt_gowa2025_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGreedentsweater0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_greedentsweater_0",
+	{
+		displayStringId: "n_shirt_greedentsweater_0_display_name";
+		iconAddress: "n_shirt_greedentsweater_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGreen0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_green_0",
+	{
+		displayStringId: "n_shirt_green_0_display_name";
+		iconAddress: "n_shirt_green_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGreencoat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_greencoat_0",
+	{
+		displayStringId: "n_shirt_greencoat_0_display_name";
+		iconAddress: "n_shirt_greencoat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGreenpikavee0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_greenpikavee_0",
+	{
+		displayStringId: "avatar_shirt_s22blue";
+		iconAddress: "n_shirt_greenpikavee_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGrimsley0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_grimsley_0",
+	{
+		displayStringId: "avatar_shirt_gblgrimsley";
+		iconAddress: "n_shirt_grimsley_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGrusha0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_grusha_0",
+	{
+		displayStringId: "avatar_shirt_grusha";
+		iconAddress: "n_shirt_grusha_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGtrtshirt20220 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gtrtshirt2022_0",
+	{
+		displayStringId: "n_shirt_gtrtshirt2022_0_display_name";
+		iconAddress: "n_shirt_gtrtshirt2022_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGtrtshirt20221 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gtrtshirt2022_1",
+	{
+		displayStringId: "n_shirt_gtrtshirt2022_1_display_name";
+		iconAddress: "n_shirt_gtrtshirt2022_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGuccitshirts0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_guccitshirts_0",
+	{
+		displayStringId: "n_shirt_guccitshirts_0_display_name";
+		iconAddress: "n_shirt_guccitshirts_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGuzma0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_guzma_0",
+	{
+		displayStringId: "n_shirt_guzma_0_display_name";
+		iconAddress: "n_shirt_guzma_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGymleaderA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gymleader_a_0",
+	{
+		displayStringId: "n_shirt_gymleader_a_0_display_name";
+		iconAddress: "n_shirt_gymleader_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGymleaderA1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gymleader_a_1",
+	{
+		displayStringId: "n_shirt_gymleader_a_0_display_name";
+		iconAddress: "n_shirt_gymleader_a_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGymleaderA2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gymleader_a_2",
+	{
+		displayStringId: "n_shirt_gymleader_a_0_display_name";
+		iconAddress: "n_shirt_gymleader_a_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGymleaderB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gymleader_b_0",
+	{
+		displayStringId: "n_shirt_gymleader_b_0_display_name";
+		iconAddress: "n_shirt_gymleader_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGymleaderB1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gymleader_b_1",
+	{
+		displayStringId: "n_shirt_gymleader_b_0_display_name";
+		iconAddress: "n_shirt_gymleader_b_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtGymleaderB2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_gymleader_b_2",
+	{
+		displayStringId: "n_shirt_gymleader_b_0_display_name";
+		iconAddress: "n_shirt_gymleader_b_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtHala0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_hala_0",
+	{
+		displayStringId: "n_shirt_hala_0_display_name";
+		iconAddress: "n_shirt_hala_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtHalloween20240 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_halloween2024_0",
+	{
+		displayStringId: "avatar_shirt_halloween2024";
+		iconAddress: "n_shirt_halloween2024_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtHappi0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_happi_0",
+	{
+		displayStringId: "n_shirt_happi_0_display_name";
+		iconAddress: "n_shirt_happi_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtHappi1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_happi_1",
+	{
+		displayStringId: "n_shirt_happi_1_display_name";
+		iconAddress: "n_shirt_happi_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtHappi2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_happi_2",
+	{
+		displayStringId: "n_shirt_happi_2_display_name";
+		iconAddress: "n_shirt_happi_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtHgssA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_hgss_a_0",
+	{
+		displayStringId: "n_shirt_hgss_a_0_display_name";
+		iconAddress: "n_shirt_hgss_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtHgssB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_hgss_b_0",
+	{
+		displayStringId: "n_shirt_hgss_b_0_display_name";
+		iconAddress: "n_shirt_hgss_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtHoliday2022santacostumes0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_holiday2022santacostumes_0",
+	{
+		displayStringId: "n_shirt_holiday2022santacostumes_0_display_name";
+		iconAddress: "n_shirt_holiday2022santacostumes_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtHoliday2024Marshtompsweater0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_holiday2024-marshtompsweater_0",
+	{
+		displayStringId: "avatar_shirt_marshtompsweater";
+		iconAddress: "n_shirt_holiday2024-marshtompsweater_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtHoliday2024Staryusweater0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_holiday2024-staryusweater_0",
+	{
+		displayStringId: "avatar_shirt_staryusweater";
+		iconAddress: "n_shirt_holiday2024-staryusweater_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtHoliday2024Wooloojacket0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_holiday2024-wooloojacket_0",
+	{
+		displayStringId: "avatar_shirt_wooloojacket";
+		iconAddress: "n_shirt_holiday2024-wooloojacket_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtHolifestival2021black0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_holifestival2021black_0",
+	{
+		displayStringId: "n_shirt_holifestival2021black_0_display_name";
+		iconAddress: "n_shirt_holifestival2021black_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtHolifestival2021white0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_holifestival2021white_0",
+	{
+		displayStringId: "n_shirt_holifestival2021white_0_display_name";
+		iconAddress: "n_shirt_holifestival2021white_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtHoopaunboundtshirt0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_hoopaunboundtshirt_0",
+	{
+		displayStringId: "n_shirt_hoopaunboundtshirt_0_display_name";
+		iconAddress: "n_shirt_hoopaunboundtshirt_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtIngo0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ingo_0",
+	{
+		displayStringId: "n_shirt_ingo_0_display_name";
+		iconAddress: "n_shirt_ingo_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtIngressE0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ingress-e_0",
+	{
+		displayStringId: "n_shirt_ingress-e_0_display_name";
+		iconAddress: "n_shirt_ingresse_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtIngressR0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ingress-r_0",
+	{
+		displayStringId: "n_shirt_ingress-r_0_display_name";
+		iconAddress: "n_shirt_ingressr_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtIngress0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ingress_0",
+	{
+		displayStringId: "n_shirt_ingress_0_display_name";
+		iconAddress: "n_shirt_ingress_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtJacketNewyear20220 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_jacket-newyear2022_0",
+	{
+		displayStringId: "n_shirt_jacket-newyear2022_0_display_name";
+		iconAddress: "n_shirt_newyear2022_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtJames0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_james_0",
+	{
+		displayStringId: "n_shirt_james_b_0_display_name";
+		iconAddress: "n_shirt_james_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtJessie0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_jessie_0",
+	{
+		displayStringId: "n_shirt_jessie_0_display_name";
+		iconAddress: "n_shirt_jessie_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtJirachi0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_jirachi_0",
+	{
+		displayStringId: "n_shirt_jirachi_0_display_name";
+		iconAddress: "n_shirt_jirachi_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtJogger0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_jogger_0",
+	{
+		displayStringId: "n_shirt_jogger_0_display_name";
+		iconAddress: "n_shirt_jogger_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtKeldeotshirt0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_keldeotshirt_0",
+	{
+		displayStringId: "n_shirt_keldeotshirt_0_display_name";
+		iconAddress: "n_shirt_keldeotshirt_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtKorrinaA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_korrina_a_0",
+	{
+		displayStringId: "n_shirt_korrina_a_0_display_name";
+		iconAddress: "n_shirt_korrina_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtKorrinaB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_korrina_b_0",
+	{
+		displayStringId: "n_shirt_korrina_b_0_display_name";
+		iconAddress: "n_shirt_korrina_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLadiamondoutfitA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ladiamondoutfit_a_0",
+	{
+		displayStringId: "n_shirt_ladiamondoutfit_a_0_display_name";
+		iconAddress: "n_shirt_ladiamondoutfit_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLadiamondoutfitB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ladiamondoutfit_b_0",
+	{
+		displayStringId: "n_shirt_ladiamondoutfit_b_0_display_name";
+		iconAddress: "n_shirt_ladiamondoutfit_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLana0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_lana_0",
+	{
+		displayStringId: "AVATAR_LanaOutfit";
+		iconAddress: "n_shirt_lana_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLapearloutfitA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_lapearloutfit_a_0",
+	{
+		displayStringId: "n_shirt_lapearloutfit_a_0_display_name";
+		iconAddress: "n_shirt_lapearloutfit_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLapearloutfitB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_lapearloutfit_b_0",
+	{
+		displayStringId: "n_shirt_lapearloutfit_b_0_display_name";
+		iconAddress: "n_shirt_lapearloutfit_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLasecuritycorpsA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_lasecuritycorps_a_0",
+	{
+		displayStringId: "n_shirt_lasecuritycorps_a_0_display_name";
+		iconAddress: "n_shirt_lasecuritycorps_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLasecuritycorpsB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_lasecuritycorps_b_0",
+	{
+		displayStringId: "n_shirt_lasecuritycorps_b_0_display_name";
+		iconAddress: "n_shirt_lasecuritycorps_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLatiasLatios0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_latias-latios_0",
+	{
+		displayStringId: "n_shirt_latias-latios_0_display_name";
+		iconAddress: "n_shirt_latiaslatios_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLegendofarceusA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_legendofarceus_a_0",
+	{
+		displayStringId: "n_shirt_legendofarceus_a_0_display_name";
+		iconAddress: "n_shirt_legendofarceus_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLegendofarceusB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_legendofarceus_b_0",
+	{
+		displayStringId: "n_shirt_legendofarceus_b_0_display_name";
+		iconAddress: "n_shirt_legendofarceus_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLongsleevesCharizard0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_longsleeves-charizard_0",
+	{
+		displayStringId: "n_shirt_longsleeves-charizard_0_display_name";
+		iconAddress: "n_shirt_longsleeves-charizard_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLongsleevesCharizard1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_longsleeves-charizard_1",
+	{
+		displayStringId: "n_shirt_longsleeves-charizard_0_display_name";
+		iconAddress: "n_shirt_longsleeves-charizard_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLongsleevesCharizard2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_longsleeves-charizard_2",
+	{
+		displayStringId: "n_shirt_longsleeves-charizard_0_display_name";
+		iconAddress: "n_shirt_longsleeves-charizard_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLongsleevesPikachu0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_longsleeves-pikachu_0",
+	{
+		displayStringId: "n_shirt_longsleeves-pikachu_0_display_name";
+		iconAddress: "n_shirt_longsleeves-pikachu_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLongsleevesPikachu1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_longsleeves-pikachu_1",
+	{
+		displayStringId: "n_shirt_longsleeves-pikachu_0_display_name";
+		iconAddress: "n_shirt_longsleeves-pikachu_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLongsleevesPikachu2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_longsleeves-pikachu_2",
+	{
+		displayStringId: "n_shirt_longsleeves-pikachu_0_display_name";
+		iconAddress: "n_shirt_longsleeves-pikachu_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLooseFitting0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_loose-fitting_0",
+	{
+		displayStringId: "AVATAR_darkbaggyjacket";
+		iconAddress: "n_shirt_loose-fitting_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLooseFitting1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_loose-fitting_1",
+	{
+		displayStringId: "AVATAR_lightbaggyjacket";
+		iconAddress: "n_shirt_loose-fitting_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLuvdiscpackA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_luvdiscpack_a_0",
+	{
+		displayStringId: "n_shirt_luvdiscpack_a_0_display_name";
+		iconAddress: "n_shirt_luvdiscpack_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLuvdiscpackB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_luvdiscpack_b_0",
+	{
+		displayStringId: "n_shirt_luvdiscpack_b_0_display_name";
+		iconAddress: "n_shirt_luvdiscpack_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLvl500 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_lvl50_0",
+	{
+		displayStringId: "n_shirt_lvl50_0_display_name";
+		iconAddress: "n_shirt_lvl50_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLvl501 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_lvl50_1",
+	{
+		displayStringId: "n_shirt_lvl50_0_display_name";
+		iconAddress: "n_shirt_lvl50_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLvl80Circuitjacket0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_lvl80-circuitjacket_0",
+	{
+		displayStringId: "avatar_n_shirt_lvl80-circuitjacket_0";
+		iconAddress: "n_shirt_lvl80-circuitjacket_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtLysandre0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_lysandre_0",
+	{
+		displayStringId: "n_shirt_lysandre_0_display_name";
+		iconAddress: "n_shirt_lysandre_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtMarshadowtshirt0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_marshadowtshirt_0",
+	{
+		displayStringId: "N_Marshadow_Tee";
+		iconAddress: "n_shirt_marshadowtshirt_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtMegalopunnyitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_megalopunnyitems_0",
+	{
+		displayStringId: "n_shirt_megalopunnyitems_0_display_name";
+		iconAddress: "n_shirt_megalopunnyitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtMegarayquaza0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_megarayquaza_0",
+	{
+		displayStringId: "n_shirt_megarayquaza_0_display_name";
+		iconAddress: "n_shirt_megarayquaza_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtMelmetaljacket0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_melmetaljacket_0",
+	{
+		displayStringId: "n_shirt_melmetaljacket_0_display_name";
+		iconAddress: "n_shirt_melmetaljacket_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtMelmetalvest0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_melmetalvest_0",
+	{
+		displayStringId: "n_shirt_melmetalvest_0_display_name";
+		iconAddress: "n_shirt_melmetalvest_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtMeloettatshirt0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_meloettatshirt_0",
+	{
+		displayStringId: "n_shirt_meloettatshirt_0_display_name";
+		iconAddress: "n_shirt_meloettatshirt_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtMeltan0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_meltan_0",
+	{
+		displayStringId: "n_shirt_meltan_0_display_name";
+		iconAddress: "n_shirt_meltan_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtMew0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_mew_0",
+	{
+		displayStringId: "n_shirt_mew_0_display_name";
+		iconAddress: "n_shirt_mew_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtMewtwoA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_mewtwo_a_0",
+	{
+		displayStringId: "n_shirt_mewtwo_a_0_display_name";
+		iconAddress: "n_shirt_mewtwo_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtMewtwoB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_mewtwo_b_0",
+	{
+		displayStringId: "n_shirt_mewtwo_b_0_display_name";
+		iconAddress: "n_shirt_mewtwo_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtMisty0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_misty_0",
+	{
+		displayStringId: "n_shirt_misty_0_display_name";
+		iconAddress: "n_shirt_misty_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtMorpekofullonesie0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_morpekofullonesie_0",
+	{
+		displayStringId: "avatar_shirt_morpekofullbelly";
+		iconAddress: "n_shirt_morpekofullonesie_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtMorpekohangryonesie0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_morpekohangryonesie_0",
+	{
+		displayStringId: "avatar_shirt_morpekohangry";
+		iconAddress: "n_shirt_morpekohangryonesie_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtMovie2020jessiejamesA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_movie2020jessiejames_a_0",
+	{
+		displayStringId: "n_shirt_movie2020jessiejames_a_0_display_name";
+		iconAddress: "n_shirt_movie2020jessiejames_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtMovie2020jessiejamesB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_movie2020jessiejames_b_0",
+	{
+		displayStringId: "n_shirt_movie2020jessiejames_b_0_display_name";
+		iconAddress: "n_shirt_movie2020jessiejames_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtMunnapackA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_munnapack_a_0",
+	{
+		displayStringId: "n_shirt_munnapack_a_0_display_name";
+		iconAddress: "n_shirt_munnapack_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtMunnapackB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_munnapack_b_0",
+	{
+		displayStringId: "n_shirt_munnapack_b_0_display_name";
+		iconAddress: "n_shirt_munnapack_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtMustard0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_mustard_0",
+	{
+		displayStringId: "avatar_shirt_mustard";
+		iconAddress: "n_shirt_mustard_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtNaganadelaitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_naganadelaitems_0",
+	{
+		displayStringId: "N_Naganadel_Jacket";
+		iconAddress: "n_shirt_naganadelaitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtNecrozmaitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_necrozmaitems_0",
+	{
+		displayStringId: "AVATAR_NecrozmaJacket";
+		iconAddress: "n_shirt_necrozmaitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtNike20210 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_nike2021_0",
+	{
+		displayStringId: "n_shirt_nike2021_0_display_name";
+		iconAddress: "n_shirt_nike2021_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtOcshirt045A0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ocshirt-045_a_0",
+	{
+		displayStringId: "n_shirt_ocshirt-045_a_0_display_name";
+		iconAddress: "n_shirt_ocshirt_a_45_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtOcshirt045B0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ocshirt-045_b_0",
+	{
+		displayStringId: "n_shirt_ocshirt-045_b_0_display_name";
+		iconAddress: "n_shirt_ocshirt_b_45_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtOcshirt108A0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ocshirt-108_a_0",
+	{
+		displayStringId: "n_shirt_ocshirt-108_a_0_display_name";
+		iconAddress: "n_shirt_ocshirt_a_108_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtOcshirt108B0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ocshirt-108_b_0",
+	{
+		displayStringId: "n_shirt_ocshirt-108_b_0_display_name";
+		iconAddress: "n_shirt_ocshirt_b_108_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtOcshirt129A0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ocshirt-129_a_0",
+	{
+		displayStringId: "n_shirt_ocshirt-129_a_0_display_name";
+		iconAddress: "n_shirt_ocshirt_a_129_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtOcshirt129B0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ocshirt-129_b_0",
+	{
+		displayStringId: "n_shirt_ocshirt-129_b_0_display_name";
+		iconAddress: "n_shirt_ocshirt_b_129_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtOcshirt143A0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ocshirt-143_a_0",
+	{
+		displayStringId: "n_shirt_ocshirt-143_a_0_display_name";
+		iconAddress: "n_shirt_ocshirt_a_143_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtOcshirt143B0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ocshirt-143_b_0",
+	{
+		displayStringId: "n_shirt_ocshirt-143_b_0_display_name";
+		iconAddress: "n_shirt_ocshirt_b_143_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtOrasA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_oras_a_0",
+	{
+		displayStringId: "n_shirt_oras_a_0_display_name";
+		iconAddress: "n_shirt_oras_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtOrasB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_oras_b_0",
+	{
+		displayStringId: "n_shirt_oras_b_0_display_name";
+		iconAddress: "n_shirt_oras_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPajamas20220 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pajamas2022_0",
+	{
+		displayStringId: "n_shirt_pajamas2022_0_display_name";
+		iconAddress: "n_shirt_pajamas2022_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPajamas20221 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pajamas2022_1",
+	{
+		displayStringId: "n_shirt_pajamas2022_0_display_name";
+		iconAddress: "n_shirt_pajamas2022_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPalmer0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_palmer_0",
+	{
+		displayStringId: "n_shirt_palmer_0_display_name";
+		iconAddress: "n_shirt_palmer_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPartneritemsjan2024hoodie0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_partneritemsjan2024hoodie_0",
+	{
+		displayStringId: "n_shirt_partneritemsjan2024hoodie_0_display_name";
+		iconAddress: "n_shirt_partneritemsjan2024hoodie_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPartneritemsjan2024tshirt0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_partneritemsjan2024tshirt_0",
+	{
+		displayStringId: "n_shirt_partneritemsjan2024tshirt_0_display_name";
+		iconAddress: "n_shirt_partneritemsjan2024tshirt_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPikachubutlerBlue0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pikachubutler-blue_0",
+	{
+		displayStringId: "avatar_shirt_suitblue";
+		iconAddress: "n_shirt_pikachubutler-blue_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPikachubutlerRed0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pikachubutler-red_0",
+	{
+		displayStringId: "avatar_shirt_suitred";
+		iconAddress: "n_shirt_pikachubutler-red_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPikachubutlerYellow0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pikachubutler-yellow_0",
+	{
+		displayStringId: "avatar_shirt_suityellow";
+		iconAddress: "n_shirt_pikachubutler-yellow_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPikachufanA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pikachufan_a_0",
+	{
+		displayStringId: "n_shirt_pikachufan_a_0_display_name";
+		iconAddress: "n_shirt_pikachufan_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPikachufanB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pikachufan_b_0",
+	{
+		displayStringId: "n_shirt_pikachufan_b_0_display_name";
+		iconAddress: "n_shirt_pikachufan_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPikachulibreA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pikachulibre_a_0",
+	{
+		displayStringId: "n_shirt_pikachulibre_a_0_display_name";
+		iconAddress: "n_shirt_pikachulibre_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPikachulibreB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pikachulibre_b_0",
+	{
+		displayStringId: "n_shirt_pikachulibre_b_0_display_name";
+		iconAddress: "n_shirt_pikachulibre_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPikachuonesie0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pikachuonesie_0",
+	{
+		displayStringId: "n_shirt_pikachuonesie_0_display_name";
+		iconAddress: "n_shirt_pikachuonesie_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPinpukuhoodie0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pinpukuhoodie_0",
+	{
+		displayStringId: "n_shirt_pinpukuhoodie_0_display_name";
+		iconAddress: "n_shirt_pinpukuhoodie_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPipluponesie0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pipluponesie_0",
+	{
+		displayStringId: "n_shirt_pipluponesie_0_display_name";
+		iconAddress: "n_shirt_pipluponesie_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPkmnhoodie0010 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pkmnhoodie001_0",
+	{
+		displayStringId: "n_shirt_pkmnhoodie001_0_display_name";
+		iconAddress: "n_shirt_pkmnhoodie001_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPkmnhoodie0040 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pkmnhoodie004_0",
+	{
+		displayStringId: "n_shirt_pkmnhoodie004_0_display_name";
+		iconAddress: "n_shirt_pkmnhoodie004_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPkmnhoodie0070 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pkmnhoodie007_0",
+	{
+		displayStringId: "n_shirt_pkmnhoodie007_0_display_name";
+		iconAddress: "n_shirt_pkmnhoodie007_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPkmnshirts1650 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pkmnshirts-165_0",
+	{
+		displayStringId: "n_shirt_pkmnshirts-165_0_display_name";
+		iconAddress: "n_shirt_pkmnshirts_165_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPkmnshirts1880 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pkmnshirts-188_0",
+	{
+		displayStringId: "n_shirt_pkmnshirts-188_0_display_name";
+		iconAddress: "n_shirt_pkmnshirts_188_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPkmnshirts2010 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pkmnshirts-201_0",
+	{
+		displayStringId: "n_shirt_pkmnshirts-201_0_display_name";
+		iconAddress: "n_shirt_pkmnshirts_201_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPkmnshirts2380 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pkmnshirts-238_0",
+	{
+		displayStringId: "n_shirt_pkmnshirts-238_0_display_name";
+		iconAddress: "n_shirt_pkmnshirts_238_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPkmnshirts20210 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pkmnshirts2021_0",
+	{
+		displayStringId: "n_shirt_pkmnshirts2021_0_display_name";
+		iconAddress: "n_shirt_pkmnshirts2021_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPkmnshirts20211 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pkmnshirts2021_1",
+	{
+		displayStringId: "n_shirt_pkmnshirts2021_1_display_name";
+		iconAddress: "n_shirt_pkmnshirts2021_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPkmnshirts20212 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pkmnshirts2021_2",
+	{
+		displayStringId: "n_shirt_pkmnshirts2021_2_display_name";
+		iconAddress: "n_shirt_pkmnshirts2021_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPokeballitemsBasic0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pokeballitems-basic_0",
+	{
+		displayStringId: "avatar_n_shirt_pokeballitems-basic_0";
+		iconAddress: "n_shirt_pokeballitems-basic_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPokeballitemsGreat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pokeballitems-great_0",
+	{
+		displayStringId: "avatar_n_shirt_pokeballitems-great_0";
+		iconAddress: "n_shirt_pokeballitems-great_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPokeballitemsUltra0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pokeballitems-ultra_0",
+	{
+		displayStringId: "avatar_n_shirt_pokeballitems-ultra_0";
+		iconAddress: "n_shirt_pokeballitems-ultra_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPoloshirt0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_poloshirt_0",
+	{
+		displayStringId: "n_shirt_poloshirt_0_display_name";
+		iconAddress: "n_shirt_poloshirt_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPoloshirt1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_poloshirt_1",
+	{
+		displayStringId: "n_shirt_poloshirt_1_display_name";
+		iconAddress: "n_shirt_poloshirt_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPoloshirt2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_poloshirt_2",
+	{
+		displayStringId: "n_shirt_poloshirt_2_display_name";
+		iconAddress: "n_shirt_poloshirt_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtProfwillowoutfit0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_profwillowoutfit_0",
+	{
+		displayStringId: "n_shirt_profwillowoutfit_0_display_name";
+		iconAddress: "n_shirt_profwillowoutfit_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtProjectguitar0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_projectguitar_0",
+	{
+		displayStringId: "n_shirt_projectguitar_0_display_name";
+		iconAddress: "n_shirt_projectguitar_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtPumpkabooitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_pumpkabooitems_0",
+	{
+		displayStringId: "n_shirt_pumpkabooitems_0_display_name";
+		iconAddress: "n_shirt_pumpkabooitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtRegiicejersies0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_regiicejersies_0",
+	{
+		displayStringId: "n_shirt_regiicejersies_0_display_name";
+		iconAddress: "n_shirt_regiicejersies_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtRegirockjersies0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_regirockjersies_0",
+	{
+		displayStringId: "n_shirt_regirockjersies_0_display_name";
+		iconAddress: "n_shirt_regirockjersies_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtRegisteeljersies0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_registeeljersies_0",
+	{
+		displayStringId: "n_shirt_registeeljersies_0_display_name";
+		iconAddress: "n_shirt_registeeljersies_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtReuniclusitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_reuniclusitems_0",
+	{
+		displayStringId: "n_shirt_reuniclusitems_0_display_name";
+		iconAddress: "n_shirt_reuniclusitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtRuinmaniacA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ruinmaniac_a_0",
+	{
+		displayStringId: "n_shirt_ruinmaniac_a_0_display_name";
+		iconAddress: "n_shirt_ruinmaniac_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtRuinmaniacB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ruinmaniac_b_0",
+	{
+		displayStringId: "n_shirt_ruinmaniac_b_0_display_name";
+		iconAddress: "n_shirt_ruinmaniac_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtS19gbl0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_s19gbl_0",
+	{
+		displayStringId: "avatar_shirt_gbl19";
+		iconAddress: "n_shirt_s19gbl_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSafarizone2020A0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_safarizone2020_a_0",
+	{
+		displayStringId: "n_shirt_safarizone2020_a_0_display_name";
+		iconAddress: "n_shirt_safarizone2020_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSafarizone2020B0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_safarizone2020_b_0",
+	{
+		displayStringId: "n_shirt_safarizone2020_b_0_display_name";
+		iconAddress: "n_shirt_safarizone2020_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSamsungsummer20200 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_samsungsummer2020_0",
+	{
+		displayStringId: "n_shirt_samsungsummer2020_0_display_name";
+		iconAddress: "n_shirt_samsungsummer2020_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtScolipede0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_scolipede_0",
+	{
+		displayStringId: "avatar_shirt_scolipede";
+		iconAddress: "n_shirt_scolipede_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtShayminlandtshirt0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_shayminlandtshirt_0",
+	{
+		displayStringId: "n_shirt_shayminlandtshirt_0_display_name";
+		iconAddress: "n_shirt_shayminlandtshirt_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtShayminskytshirt0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_shayminskytshirt_0",
+	{
+		displayStringId: "n_shirt_shayminskytshirt_0_display_name";
+		iconAddress: "n_shirt_shayminskytshirt_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtShinydiancie = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_shinydiancie",
+	{
+		displayStringId: "avatar_shirt_shinydiancie";
+		iconAddress: "n_shirt_shinydiancie_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtShinykeldeoshirt0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_shinykeldeoshirt_0",
+	{
+		displayStringId: "avatar_n_shirt_shinykeldeotshirt";
+		iconAddress: "n_shirt_shinykeldeoshirt_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtShinymeloettatshirt0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_shinymeloettatshirt_0",
+	{
+		displayStringId: "avatar_shirt_shinymeloetta";
+		iconAddress: "n_shirt_shinymeloettatshirt_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtShinymewtshirts0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_shinymewtshirts_0",
+	{
+		displayStringId: "n_shirt_shinymewtshirts_0_display_name";
+		iconAddress: "n_shirt_shinymewtshirts_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSlowpokeshirts0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_slowpokeshirts_0",
+	{
+		displayStringId: "n_shirt_slowpokeshirts_0_display_name";
+		iconAddress: "n_shirt_slowpokeshirts_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSlowpoketailshirts0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_slowpoketailshirts_0",
+	{
+		displayStringId: "n_shirt_slowpoketailshirts_0_display_name";
+		iconAddress: "n_shirt_slowpoketailshirts_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSnorlaxonesie0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_snorlaxonesie_0",
+	{
+		displayStringId: "n_shirt_snorlaxonesie_0_display_name";
+		iconAddress: "n_shirt_snorlaxonesie_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSpiritomb0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_spiritomb_0",
+	{
+		displayStringId: "n_shirt_spiritomb_0_display_name";
+		iconAddress: "n_shirt_spiritomb_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSpring2021gulpinA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_spring2021gulpin_a_0",
+	{
+		displayStringId: "n_shirt_spring2021gulpin_a_0_display_name";
+		iconAddress: "n_shirt_spring2021gulpin_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSpring2021gulpinB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_spring2021gulpin_b_0",
+	{
+		displayStringId: "n_shirt_spring2021gulpin_b_0_display_name";
+		iconAddress: "n_shirt_spring2021gulpin_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSpring2021plusleA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_spring2021plusle_a_0",
+	{
+		displayStringId: "n_shirt_spring2021plusle_a_0_display_name";
+		iconAddress: "n_shirt_spring2021plusle_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSpring2021plusleB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_spring2021plusle_b_0",
+	{
+		displayStringId: "n_shirt_spring2021plusle_b_0_display_name";
+		iconAddress: "n_shirt_spring2021plusle_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSsA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ss_a_0",
+	{
+		displayStringId: "n_shirt_ss_a_0_display_name";
+		iconAddress: "n_shirt_ss_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSsB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ss_b_0",
+	{
+		displayStringId: "n_shirt_ss_b_0_display_name";
+		iconAddress: "n_shirt_ss_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSteven0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_steven_0",
+	{
+		displayStringId: "n_shirt_steven_0_display_name";
+		iconAddress: "n_shirt_steven_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtStevenfirst0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_stevenfirst_0",
+	{
+		displayStringId: "n_shirt_stevenfirst_0_display_name";
+		iconAddress: "n_shirt_stevenfirst_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSukajanblastoise0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sukajanblastoise_0",
+	{
+		displayStringId: "n_shirt_sukajanblastoise_0_display_name";
+		iconAddress: "n_shirt_sukajanblastoise_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSukajancharizard0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sukajancharizard_0",
+	{
+		displayStringId: "n_shirt_sukajancharizard_0_display_name";
+		iconAddress: "n_shirt_sukajancharizard_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSukajanhouou0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sukajanhouou_0",
+	{
+		displayStringId: "n_shirt_sukajanhouou_0_display_name";
+		iconAddress: "n_shirt_sukajanhouou_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSukajanlugia0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sukajanlugia_0",
+	{
+		displayStringId: "n_shirt_sukajanlugia_0_display_name";
+		iconAddress: "n_shirt_sukajanlugia_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSukajanvenusaur0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sukajanvenusaur_0",
+	{
+		displayStringId: "n_shirt_sukajanvenusaur_0_display_name";
+		iconAddress: "n_shirt_sukajanvenusaur_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSummer20230 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_summer2023_0",
+	{
+		displayStringId: "n_shirt_summer2023_0_display_name";
+		iconAddress: "n_shirt_summer2023_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSustainability2021A0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sustainability2021_a_0",
+	{
+		displayStringId: "n_shirt_sustainability2021_a_0_display_name";
+		iconAddress: "n_shirt_sustainability2021_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSustainability2021B0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sustainability2021_b_0",
+	{
+		displayStringId: "n_shirt_sustainability2021_b_0_display_name";
+		iconAddress: "n_shirt_sustainability2021_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSvcostumescarletschool0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_svcostumescarletschool_0",
+	{
+		displayStringId: "n_shirt_svcostumescarletschool_0_display_name";
+		iconAddress: "n_shirt_svcostumescarletschool_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSvcostumevioletschool0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_svcostumevioletschool_0",
+	{
+		displayStringId: "n_shirt_svcostumevioletschool_0_display_name";
+		iconAddress: "n_shirt_svcostumevioletschool_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSvdlc10 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_svdlc1_0",
+	{
+		displayStringId: "n_shirt_svdlc1_0_display_name";
+		iconAddress: "n_shirt_svdlc1_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSvdlc2fall0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_svdlc2fall_0",
+	{
+		displayStringId: "n_shirt_svdlc2fall_0_display_name";
+		iconAddress: "n_shirt_svdlc2fall_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSvdlc2spring0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_svdlc2spring_0",
+	{
+		displayStringId: "n_shirt_svdlc2spring_0_display_name";
+		iconAddress: "n_shirt_svdlc2spring_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSweater300 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sweater-30_0",
+	{
+		displayStringId: "n_shirt_sweater-30_2_display_name";
+		iconAddress: "n_shirt_sweater-30_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSweater301 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sweater-30_1",
+	{
+		displayStringId: "n_shirt_sweater-30_2_display_name";
+		iconAddress: "n_shirt_sweater-30_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSweater302 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sweater-30_2",
+	{
+		displayStringId: "n_shirt_sweater-30_2_display_name";
+		iconAddress: "n_shirt_sweater-30_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSweaterInstinct0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sweater-instinct_0",
+	{
+		displayStringId: "n_shirt_sweater-instinct_0_display_name";
+		iconAddress: "n_shirt_sweaterinstinct_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSweaterMystic0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sweater-mystic_0",
+	{
+		displayStringId: "n_shirt_sweater-mystic_0_display_name";
+		iconAddress: "n_shirt_sweatermystic_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSweaterValor0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sweater-valor_0",
+	{
+		displayStringId: "n_shirt_sweater-valor_0_display_name";
+		iconAddress: "n_shirt_sweatervalor_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSweatshirtSporty0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sweatshirt-sporty_0",
+	{
+		displayStringId: "n_shirt_sweatshirt-sporty_0_display_name";
+		iconAddress: "n_shirt_sweatshirt-sporty_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSweatshirtSporty1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sweatshirt-sporty_1",
+	{
+		displayStringId: "n_shirt_sweatshirt-sporty_0_display_name";
+		iconAddress: "n_shirt_sweatshirt-sporty_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSweatshirtSporty2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sweatshirt-sporty_2",
+	{
+		displayStringId: "n_shirt_sweatshirt-sporty_0_display_name";
+		iconAddress: "n_shirt_sweatshirt-sporty_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSweatshirtSporty3 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sweatshirt-sporty_3",
+	{
+		displayStringId: "n_shirt_sweatshirt-sporty_0_display_name";
+		iconAddress: "n_shirt_sweatshirt-sporty_3_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSweatshirtStreak0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sweatshirt-streak_0",
+	{
+		displayStringId: "n_shirt_sweatshirt-streak_0_display_name";
+		iconAddress: "n_shirt_sweatshirt-streak_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSweatshirtStreak1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sweatshirt-streak_1",
+	{
+		displayStringId: "n_shirt_sweatshirt-streak_0_display_name";
+		iconAddress: "n_shirt_sweatshirt-streak_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSweatshirtStreak2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sweatshirt-streak_2",
+	{
+		displayStringId: "n_shirt_sweatshirt-streak_0_display_name";
+		iconAddress: "n_shirt_sweatshirt-streak_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSweatshirtStreak3 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sweatshirt-streak_3",
+	{
+		displayStringId: "n_shirt_sweatshirt-streak_0_display_name";
+		iconAddress: "n_shirt_sweatshirt-streak_3_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSweatshirtStreak4 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sweatshirt-streak_4",
+	{
+		displayStringId: "n_shirt_sweatshirt-streak_0_display_name";
+		iconAddress: "n_shirt_sweatshirt-streak_4_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSwshdlc2costume0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_swshdlc2costume_0",
+	{
+		displayStringId: "n_shirt_swshdlc2costume_0_display_name";
+		iconAddress: "n_shirt_swshdlc2costume_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSwshdlccostumeA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_swshdlccostume_a_0",
+	{
+		displayStringId: "n_shirt_swshdlccostume_a_0_display_name";
+		iconAddress: "n_shirt_swshdlccostume_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSwshdlccostumeB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_swshdlccostume_b_0",
+	{
+		displayStringId: "n_shirt_swshdlccostume_b_0_display_name";
+		iconAddress: "n_shirt_swshdlccostume_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSwshuniformchampion0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_swshuniformchampion_0",
+	{
+		displayStringId: "n_shirt_swshuniformchampion_0_display_name";
+		iconAddress: "n_shirt_swshuniformchampion_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSwshuniformdarkA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_swshuniformdark_a_0",
+	{
+		displayStringId: "n_shirt_swshuniformdark_a_0_display_name";
+		iconAddress: "n_shirt_swshuniformdark_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSwshuniformdarkB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_swshuniformdark_b_0",
+	{
+		displayStringId: "n_shirt_swshuniformdark_b_0_display_name";
+		iconAddress: "n_shirt_swshuniformdark_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSwshuniformdefault0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_swshuniformdefault_0",
+	{
+		displayStringId: "n_shirt_swshuniformdefault_0_display_name";
+		iconAddress: "n_shirt_swshuniformdefault_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSwshuniformdragon0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_swshuniformdragon_0",
+	{
+		displayStringId: "n_shirt_swshuniformdragon_0_display_name";
+		iconAddress: "n_shirt_swshuniformdragon_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtSylveonitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_sylveonitems_0",
+	{
+		displayStringId: "n_shirt_sylveonitems_0_display_name";
+		iconAddress: "n_shirt_sylveonitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTandemausitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tandemausitems_0",
+	{
+		displayStringId: "AVATAR_TandemausHoodie";
+		iconAddress: "n_shirt_tandemausitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTanktopCharizard0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tanktop-charizard_0",
+	{
+		displayStringId: "n_shirt_tanktop-charizard_2_display_name";
+		iconAddress: "n_shirt_tanktop-charizard_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTanktopCharizard1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tanktop-charizard_1",
+	{
+		displayStringId: "n_shirt_tanktop-charizard_2_display_name";
+		iconAddress: "n_shirt_tanktop-charizard_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTanktopCharizard2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tanktop-charizard_2",
+	{
+		displayStringId: "n_shirt_tanktop-charizard_2_display_name";
+		iconAddress: "n_shirt_tanktop-charizard_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTanktopPikachu0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tanktop-pikachu_0",
+	{
+		displayStringId: "n_shirt_tanktop-pikachu_2_display_name";
+		iconAddress: "n_shirt_tanktop-pikachu_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTanktopPikachu1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tanktop-pikachu_1",
+	{
+		displayStringId: "n_shirt_tanktop-pikachu_2_display_name";
+		iconAddress: "n_shirt_tanktop-pikachu_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTanktopPikachu2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tanktop-pikachu_2",
+	{
+		displayStringId: "n_shirt_tanktop-pikachu_2_display_name";
+		iconAddress: "n_shirt_tanktop-pikachu_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTanktop0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tanktop_0",
+	{
+		displayStringId: "n_shirt_tanktop_2_display_name";
+		iconAddress: "n_shirt_tanktop_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTanktop1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tanktop_1",
+	{
+		displayStringId: "n_shirt_tanktop_2_display_name";
+		iconAddress: "n_shirt_tanktop_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTanktop2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tanktop_2",
+	{
+		displayStringId: "n_shirt_tanktop_2_display_name";
+		iconAddress: "n_shirt_tanktop_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTcgcollabtshirtandcap0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tcgcollabtshirtandcap_0",
+	{
+		displayStringId: "n_shirt_tcgcollabtshirtandcap_0_display_name";
+		iconAddress: "n_shirt_tcgcollabtshirtandcap_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTeamaquaA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_teamaqua_a_0",
+	{
+		displayStringId: "n_shirt_teamaqua_a_0_display_name";
+		iconAddress: "n_shirt_teamaqua_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTeamaquaB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_teamaqua_b_0",
+	{
+		displayStringId: "n_shirt_teamaqua_b_0_display_name";
+		iconAddress: "n_shirt_teamaqua_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTeamblancheA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_teamblanche_a_0",
+	{
+		displayStringId: "n_shirt_teamblanche_a_0_display_name";
+		iconAddress: "n_shirt_teamblanche_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTeamblancheB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_teamblanche_b_0",
+	{
+		displayStringId: "n_shirt_teamblanche_b_0_display_name";
+		iconAddress: "n_shirt_teamblanche_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTeamcandelaA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_teamcandela_a_0",
+	{
+		displayStringId: "n_shirt_teamcandela_a_0_display_name";
+		iconAddress: "n_shirt_teamcandela_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTeamcandelaB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_teamcandela_b_0",
+	{
+		displayStringId: "n_shirt_teamcandela_b_0_display_name";
+		iconAddress: "n_shirt_teamcandela_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTeammagmaA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_teammagma_a_0",
+	{
+		displayStringId: "n_shirt_teammagma_a_0_display_name";
+		iconAddress: "n_shirt_teammagma_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTeammagmaB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_teammagma_b_0",
+	{
+		displayStringId: "n_shirt_teammagma_b_0_display_name";
+		iconAddress: "n_shirt_teammagma_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTeamrocketA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_teamrocket_a_0",
+	{
+		displayStringId: "n_shirt_teamrocket_a_0_display_name";
+		iconAddress: "n_shirt_teamrocket_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTeamrocketA1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_teamrocket_a_1",
+	{
+		displayStringId: "n_shirt_teamrocket_a_1_display_name";
+		iconAddress: "n_shirt_teamrocket_a_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTeamrocketB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_teamrocket_b_0",
+	{
+		displayStringId: "n_shirt_teamrocket_b_0_display_name";
+		iconAddress: "n_shirt_teamrocket_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTeamrocketB1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_teamrocket_b_1",
+	{
+		displayStringId: "n_shirt_teamrocket_b_1_display_name";
+		iconAddress: "n_shirt_teamrocket_b_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTeamskull0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_teamskull_0",
+	{
+		displayStringId: "n_shirt_teamskull_0_display_name";
+		iconAddress: "n_shirt_teamskull_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTeamsparkA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_teamspark_a_0",
+	{
+		displayStringId: "n_shirt_teamspark_a_0_display_name";
+		iconAddress: "n_shirt_teamspark_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTeamsparkB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_teamspark_b_0",
+	{
+		displayStringId: "n_shirt_teamspark_b_0_display_name";
+		iconAddress: "n_shirt_teamspark_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTeamyellgruntsCropped0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_teamyellgrunts-cropped_0",
+	{
+		displayStringId: "avatar_shirt_teamyellcrop";
+		iconAddress: "n_shirt_teamyellgrunts-cropped_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTeamyellgruntsLong0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_teamyellgrunts-long_0",
+	{
+		displayStringId: "avatar_shirt_teamyellshirt";
+		iconAddress: "n_shirt_teamyellgrunts-long_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTogepihoodie0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_togepihoodie_0",
+	{
+		displayStringId: "n_shirt_togepihoodie_0_display_name";
+		iconAddress: "n_shirt_togepihoodie_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTracksuitsgroudon0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tracksuitsgroudon_0",
+	{
+		displayStringId: "n_shirt_tracksuitsgroudon_0_display_name";
+		iconAddress: "n_shirt_tracksuitsgroudon_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTracksuitskyogre0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tracksuitskyogre_0",
+	{
+		displayStringId: "n_shirt_tracksuitskyogre_0_display_name";
+		iconAddress: "n_shirt_tracksuitskyogre_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTshirtCycling0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tshirt-cycling_0",
+	{
+		displayStringId: "n_shirt_tshirt_cycling_0_display_name";
+		iconAddress: "n_shirt_tshirt-cycling_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTshirtCycling1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tshirt-cycling_1",
+	{
+		displayStringId: "n_shirt_tshirt_cycling_0_display_name";
+		iconAddress: "n_shirt_tshirt-cycling_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTshirtCycling2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tshirt-cycling_2",
+	{
+		displayStringId: "n_shirt_tshirt_cycling_0_display_name";
+		iconAddress: "n_shirt_tshirt-cycling_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTshirtCycling3 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tshirt-cycling_3",
+	{
+		displayStringId: "n_shirt_tshirt_cycling_0_display_name";
+		iconAddress: "n_shirt_tshirt-cycling_3_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTshirtFestChicago20170 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tshirt-fest-chicago-2017_0",
+	{
+		displayStringId: "n_shirt_tshirt-fest-chicago-2017_0_display_name";
+		iconAddress: "n_shirt_tshirtfestchicago_2017_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTshirtFestChicago20180 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tshirt-fest-chicago-2018_0",
+	{
+		displayStringId: "n_shirt_tshirt-fest-chicago-2018_0_display_name";
+		iconAddress: "n_shirt_tshirtfestchicago_2018_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTshirtGeometric0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tshirt-geometric_0",
+	{
+		displayStringId: "n_shirt_tshirt-geometric_0_display_name";
+		iconAddress: "n_shirt_tshirt-geometric_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTshirtGeometric1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tshirt-geometric_1",
+	{
+		displayStringId: "n_shirt_tshirt-geometric_0_display_name";
+		iconAddress: "n_shirt_tshirt-geometric_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTshirtGeometric2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tshirt-geometric_2",
+	{
+		displayStringId: "n_shirt_tshirt-geometric_0_display_name";
+		iconAddress: "n_shirt_tshirt-geometric_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTshirtGlobalGoals20170 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tshirt-global-goals-2017_0",
+	{
+		displayStringId: "n_shirt_tshirt-global-goals-2017_0_display_name";
+		iconAddress: "n_shirt_tshirtglobalgoals_2017_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTshirtInstinct0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tshirt-instinct_0",
+	{
+		displayStringId: "n_shirt_tshirt-instinct_0_display_name";
+		iconAddress: "n_shirt_tshirtinstinct_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTshirtMystic0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tshirt-mystic_0",
+	{
+		displayStringId: "n_shirt_tshirt-mystic_0_display_name";
+		iconAddress: "n_shirt_tshirtmystic_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTshirtPikachu0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tshirt-pikachu_0",
+	{
+		displayStringId: "n_shirt_tshirt_pikachu_0_display_name";
+		iconAddress: "n_shirt_tshirt-pikachu_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTshirtPikachu1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tshirt-pikachu_1",
+	{
+		displayStringId: "n_shirt_tshirt_pikachu_0_display_name";
+		iconAddress: "n_shirt_tshirt-pikachu_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTshirtPikachu2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tshirt-pikachu_2",
+	{
+		displayStringId: "n_shirt_tshirt_pikachu_0_display_name";
+		iconAddress: "n_shirt_tshirt-pikachu_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTshirtPikachu3 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tshirt-pikachu_3",
+	{
+		displayStringId: "n_shirt_tshirt_pikachu_0_display_name";
+		iconAddress: "n_shirt_tshirt-pikachu_3_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTshirtPikachu4 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tshirt-pikachu_4",
+	{
+		displayStringId: "n_shirt_tshirt_pikachu_0_display_name";
+		iconAddress: "n_shirt_tshirt-pikachu_4_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTshirtPikachu5 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tshirt-pikachu_5",
+	{
+		displayStringId: "n_shirt_tshirt_pikachu_0_display_name";
+		iconAddress: "n_shirt_tshirt-pikachu_5_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTshirtPikachu6 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tshirt-pikachu_6",
+	{
+		displayStringId: "n_shirt_tshirt_pikachu_0_display_name";
+		iconAddress: "n_shirt_tshirt-pikachu_6_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTshirtValor0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_tshirt-valor_0",
+	{
+		displayStringId: "n_shirt_tshirt-valor_0_display_name";
+		iconAddress: "n_shirt_tshirtvalor_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTurtleneck300 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_turtleneck-30_0",
+	{
+		displayStringId: "n_shirt_turtleneck-30_0_display_name";
+		iconAddress: "n_shirt_turtleneck-30_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTurtleneck301 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_turtleneck-30_1",
+	{
+		displayStringId: "n_shirt_turtleneck-30_0_display_name";
+		iconAddress: "n_shirt_turtleneck-30_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTurtleneck302 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_turtleneck-30_2",
+	{
+		displayStringId: "n_shirt_turtleneck-30_0_display_name";
+		iconAddress: "n_shirt_turtleneck-30_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTurtleneck303 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_turtleneck-30_3",
+	{
+		displayStringId: "n_shirt_turtleneck-30_0_display_name";
+		iconAddress: "n_shirt_turtleneck-30_3_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtTurtwigonesie0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_turtwigonesie_0",
+	{
+		displayStringId: "n_shirt_turtwigonesie_0_display_name";
+		iconAddress: "n_shirt_turtwigonesie_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtUglysweatersudowoodo0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_uglysweatersudowoodo_0",
+	{
+		displayStringId: "avatar_shirt_sweatersudowoodo";
+		iconAddress: "n_shirt_uglysweatersudowoodo_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtUltraA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ultra_a_0",
+	{
+		displayStringId: "n_shirt_ultra_a_0_display_name";
+		iconAddress: "n_shirt_ultra_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtUltraB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ultra_b_0",
+	{
+		displayStringId: "n_shirt_ultra_b_0_display_name";
+		iconAddress: "n_shirt_ultra_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtUltrareconsquad0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_ultrareconsquad_0",
+	{
+		displayStringId: "n_shirt_ultrareconsquad_b_0_display_name";
+		iconAddress: "n_shirt_ultrareconsquad_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtUniqlotshirts0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_uniqlotshirts_0",
+	{
+		displayStringId: "n_shirt_uniqlotshirts_0_display_name";
+		iconAddress: "n_shirt_uniqlotshirts_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtUniqlotshirts1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_uniqlotshirts_1",
+	{
+		displayStringId: "n_shirt_uniqlotshirts_1_display_name";
+		iconAddress: "n_shirt_uniqlotshirts_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtUniqlotshirts2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_uniqlotshirts_2",
+	{
+		displayStringId: "n_shirt_uniqlotshirts_2_display_name";
+		iconAddress: "n_shirt_uniqlotshirts_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtUnwto0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_unwto_0",
+	{
+		displayStringId: "n_shirt_unwto_0_display_name";
+		iconAddress: "n_shirt_unwto_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtValentine20230 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_valentine2023_0",
+	{
+		displayStringId: "n_shirt_valentine2023_0_display_name";
+		iconAddress: "n_shirt_valentine2023_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtVerizon20200 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_verizon2020_0",
+	{
+		displayStringId: "n_shirt_verizon2020_0_display_name";
+		iconAddress: "n_shirt_verizon2020sweater_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtVeterantrainerxyA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_veterantrainerxy_a_0",
+	{
+		displayStringId: "n_shirt_veterantrainerxy_a_0_display_name";
+		iconAddress: "n_shirt_veterantrainerxy_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtVeterantrainerxyB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_veterantrainerxy_b_0",
+	{
+		displayStringId: "n_shirt_veterantrainerxy_b_0_display_name";
+		iconAddress: "n_shirt_veterantrainerxy_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtVictinitshirts0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_victinitshirts_0",
+	{
+		displayStringId: "n_shirt_victinitshirts_0_display_name";
+		iconAddress: "n_shirt_victinitshirts_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtVolcaniontshirt0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_volcaniontshirt_0",
+	{
+		displayStringId: "avatar_shirt_volcanion";
+		iconAddress: "n_shirt_volcaniontshirt_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWcs20220 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_wcs2022_0",
+	{
+		displayStringId: "n_shirt_wcs2022_0_display_name";
+		iconAddress: "n_shirt_wcs2022_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWcs2022tshirtbulu0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_wcs2022tshirtbulu_0",
+	{
+		displayStringId: "n_shirt_wcs2022tshirtbulu_0_display_name";
+		iconAddress: "n_shirt_wcs2022tshirtbulu_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWcs2022tshirtred0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_wcs2022tshirtred_0",
+	{
+		displayStringId: "n_shirt_wcs2022tshirtred_0_display_name";
+		iconAddress: "n_shirt_wcs2022tshirtred_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWcs2022winnersitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_wcs2022winnersitems_0",
+	{
+		displayStringId: "n_shirt_wcs2022winnersitems_0_display_name";
+		iconAddress: "n_shirt_wcs2022winnersitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWcs20230 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_wcs2023_0",
+	{
+		displayStringId: "n_shirt_wcs2023_0_display_name";
+		iconAddress: "n_shirt_wcs2023_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWcs2023promotshirt00 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_wcs2023promotshirt-0_0",
+	{
+		displayStringId: "n_shirt_wcs2023promotshirt-0_0_display_name";
+		iconAddress: "n_shirt_wcs2023promotshirt_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWcs2023promotshirt10 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_wcs2023promotshirt-1_0",
+	{
+		displayStringId: "n_shirt_wcs2023promotshirt-1_0_display_name";
+		iconAddress: "n_shirt_wcs2023promotshirt01_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWcs2023sukajan0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_wcs2023sukajan_0",
+	{
+		displayStringId: "n_shirt_wcs2023sukajan_0_display_name";
+		iconAddress: "n_shirt_wcs2023sukajan_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWcs2023winnersitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_wcs2023winnersitems_0",
+	{
+		displayStringId: "n_shirt_wcs2023winnersitems_0_display_name";
+		iconAddress: "n_shirt_wcs2023winnersitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWcs20240 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_wcs2024_0",
+	{
+		displayStringId: "N_WCSTee_Regional";
+		iconAddress: "n_shirt_wcs2024_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWcs2024championshipshirtBlue0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_wcs2024championshipshirt-blue_0",
+	{
+		displayStringId: "avatar_tshirt_wcs2024blue";
+		iconAddress: "n_shirt_wcs2024championshipshirt-blue_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWcs2024championshipshirtWhite0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_wcs2024championshipshirt-white_0",
+	{
+		displayStringId: "avatar_tshirt_wcs2024white";
+		iconAddress: "n_shirt_wcs2024championshipshirt-white_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWcs2024paiditems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_wcs2024paiditems_0",
+	{
+		displayStringId: "avatar_shirt_wcs2024";
+		iconAddress: "n_shirt_wcs2024paiditems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWcs2024winnersitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_wcs2024winnersitems_0",
+	{
+		displayStringId: "avatar_shirt_wcs2024champion";
+		iconAddress: "n_shirt_wcs2024winnersitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWcs20250 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_wcs2025_0",
+	{
+		displayStringId: "avatar_shirt_wcsregional2025";
+		iconAddress: "n_shirt_wcs2025_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWcs2025anaheimWhite0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_wcs2025anaheim-white_0",
+	{
+		displayStringId: "avatar_shirt_wcs2025white";
+		iconAddress: "n_shirt_wcs2025anaheim-white_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWcs2025anaheimYellow0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_wcs2025anaheim-yellow_0",
+	{
+		displayStringId: "avatar_shirt_wcs2025yellow";
+		iconAddress: "n_shirt_wcs2025anaheim-yellow_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWcs2025paiditems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_wcs2025paiditems_0",
+	{
+		displayStringId: "avatar_shirt_wcs2025jersey";
+		iconAddress: "n_shirt_wcs2025paiditems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWcs2025winnersitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_wcs2025winnersitems_0",
+	{
+		displayStringId: "avatar_shirt_wcs2025champion";
+		iconAddress: "n_shirt_wcs2025winnersitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWcsyokohama0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_wcsyokohama_0",
+	{
+		displayStringId: "n_shirt_wcsyokohama_0_display_name";
+		iconAddress: "n_shirt_wcsyokohama_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWhitecoat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_whitecoat_0",
+	{
+		displayStringId: "n_shirt_whitecoat_0_display_name";
+		iconAddress: "n_shirt_whitecoat_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtWintersweater20230 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_wintersweater2023_0",
+	{
+		displayStringId: "n_shirt_wintersweater2023_0_display_name";
+		iconAddress: "n_shirt_wintersweater2023_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtYveltaljacket = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_yveltaljacket",
+	{
+		displayStringId: "avatar_shirt_yveltal";
+		iconAddress: "n_shirt_yveltaljacket_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtZacostumeA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_zacostume_a_0",
+	{
+		displayStringId: "avatar_n_shirt_zacostume_a";
+		iconAddress: "n_shirt_zacostume_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtZacostumeB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_zacostume_b_0",
+	{
+		displayStringId: "avatar_n_shirt_zacostume_b";
+		iconAddress: "n_shirt_zacostume_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtZoruaonesie0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_zoruaonesie_0",
+	{
+		displayStringId: "n_shirt_zoruaonesie_0_display_name";
+		iconAddress: "n_shirt_zoruaonesie_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShirtZygarde100items0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shirt_zygarde100items_0",
+	{
+		displayStringId: "avatar_shirt_zygarde";
+		iconAddress: "n_shirt_zygarde100items_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoes6thanniversaryA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_6thanniversary_a_0",
+	{
+		displayStringId: "n_shoes_6thanniversary_a_0_display_name";
+		iconAddress: "n_shoes_6thanniversary_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoes6thanniversaryB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_6thanniversary_b_0",
+	{
+		displayStringId: "n_shoes_6thanniversary_b_0_display_name";
+		iconAddress: "n_shoes_6thanniversary_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesAcetrainerbwA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_acetrainerbw_a_0",
+	{
+		displayStringId: "n_shoes_acetrainerbw_a_0_display_name";
+		iconAddress: "n_shoes_acetrainerbw_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesAcetrainerbwB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_acetrainerbw_b_0",
+	{
+		displayStringId: "n_shoes_acetrainerbw_b_0_display_name";
+		iconAddress: "n_shoes_acetrainerbw_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesAcetrainersmA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_acetrainersm_a_0",
+	{
+		displayStringId: "n_shoes_acetrainersm_a_0_display_name";
+		iconAddress: "n_shoes_acetrainersm_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesAcetrainersmB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_acetrainersm_b_0",
+	{
+		displayStringId: "n_shoes_acetrainersm_b_0_display_name";
+		iconAddress: "n_shoes_acetrainersm_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesAllister0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_allister_0",
+	{
+		displayStringId: "avatar_shoes_gblallister";
+		iconAddress: "n_shoes_allister_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesAnimegou0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_animegou_0",
+	{
+		displayStringId: "n_shoes_animegou_0_display_name";
+		iconAddress: "n_shoes_animegou_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesBackpackerA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_backpacker_a_0",
+	{
+		displayStringId: "n_shoes_backpacker_a_0_display_name";
+		iconAddress: "n_shoes_backpacker_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesBackpackerB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_backpacker_b_0",
+	{
+		displayStringId: "n_shoes_backpacker_b_0_display_name";
+		iconAddress: "n_shoes_backpacker_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesBattlegirl0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_battlegirl_0",
+	{
+		displayStringId: "n_shoes_battlegirl_0_display_name";
+		iconAddress: "n_shoes_battlegirl_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesBlacephalon0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_blacephalon_0",
+	{
+		displayStringId: "avatar_shoes_blacephelon";
+		iconAddress: "n_shoes_blacephalon_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesBrock0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_brock_0",
+	{
+		displayStringId: "n_shoes_brock_0_display_name";
+		iconAddress: "n_shoes_brock_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesBwn0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_bwn_0",
+	{
+		displayStringId: "n_shoes_bwn_0_display_name";
+		iconAddress: "n_shoes_bwn_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesCarbink0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_carbink_0",
+	{
+		displayStringId: "n_shoes_carbink_0_display_name";
+		iconAddress: "n_shoes_carbink_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesClay0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_clay_0",
+	{
+		displayStringId: "n_shoes_clay_0_display_name";
+		iconAddress: "n_shoes_clay_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesClemont0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_clemont_0",
+	{
+		displayStringId: "avatar_n_shoes_clemont";
+		iconAddress: "n_shoes_clemont_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesCoolboots0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_coolboots_0",
+	{
+		displayStringId: "n_shoes_coolboots_0_display_name";
+		iconAddress: "n_shoes_coolboots_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesDedenneitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_dedenneitems_0",
+	{
+		displayStringId: "n_shoes_dedenneitems_0_display_name";
+		iconAddress: "n_shoes_dedenneitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesDefaultNew0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_default-new_0",
+	{
+		displayStringId: "n_shoes_default-new_0_display_name";
+		iconAddress: "n_shoes_defaultnew_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesDefaultA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_default_a_0",
+	{
+		displayStringId: "n_shoes_default_a_0_display_name";
+		iconAddress: "n_shoes_default_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesDefaultA1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_default_a_1",
+	{
+		displayStringId: "n_shoes_default_a_0_display_name";
+		iconAddress: "n_shoes_default_a_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesDefaultA2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_default_a_2",
+	{
+		displayStringId: "n_shoes_default_a_0_display_name";
+		iconAddress: "n_shoes_default_a_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesDefaultA3 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_default_a_3",
+	{
+		displayStringId: "n_shoes_default_a_0_display_name";
+		iconAddress: "n_shoes_default_a_3_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesDefaultA4 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_default_a_4",
+	{
+		displayStringId: "n_shoes_default_a_0_display_name";
+		iconAddress: "n_shoes_default_a_4_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesDefaultA5 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_default_a_5",
+	{
+		displayStringId: "n_shoes_default_a_0_display_name";
+		iconAddress: "n_shoes_default_a_5_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesDefaultA6 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_default_a_6",
+	{
+		displayStringId: "n_shoes_default_a_0_display_name";
+		iconAddress: "n_shoes_default_a_6_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesDefaultB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_default_b_0",
+	{
+		displayStringId: "n_shoes_default_b_0_display_name";
+		iconAddress: "n_shoes_default_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesDefaultB1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_default_b_1",
+	{
+		displayStringId: "n_shoes_default_b_0_display_name";
+		iconAddress: "n_shoes_default_b_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesDefaultB2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_default_b_2",
+	{
+		displayStringId: "n_shoes_default_b_0_display_name";
+		iconAddress: "n_shoes_default_b_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesDefaultB3 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_default_b_3",
+	{
+		displayStringId: "n_shoes_default_b_0_display_name";
+		iconAddress: "n_shoes_default_b_3_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesDefaultB4 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_default_b_4",
+	{
+		displayStringId: "n_shoes_default_b_0_display_name";
+		iconAddress: "n_shoes_default_b_4_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesDefaultB5 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_default_b_5",
+	{
+		displayStringId: "n_shoes_default_b_0_display_name";
+		iconAddress: "n_shoes_default_b_5_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesDefaultB6 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_default_b_6",
+	{
+		displayStringId: "n_shoes_default_b_0_display_name";
+		iconAddress: "n_shoes_default_b_6_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesDelibird0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_delibird_0",
+	{
+		displayStringId: "n_shoes_delibird_0_display_name";
+		iconAddress: "n_shoes_delibird_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesDpA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_dp_a_0",
+	{
+		displayStringId: "n_shoes_dp_a_0_display_name";
+		iconAddress: "n_shoes_dp_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesDpB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_dp_b_0",
+	{
+		displayStringId: "n_shoes_dp_b_0_display_name";
+		iconAddress: "n_shoes_dp_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesElesaA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_elesa_a_0",
+	{
+		displayStringId: "n_shoes_elesa_a_0_display_name";
+		iconAddress: "n_shoes_elesa_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesElesaB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_elesa_b_0",
+	{
+		displayStringId: "n_shoes_elesa_b_0_display_name";
+		iconAddress: "n_shoes_elesa_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesEternatussuit0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_eternatussuit_0",
+	{
+		displayStringId: "avatar_shoes_eternatus";
+		iconAddress: "n_shoes_eternatussuit_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesFashionweek20220 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_fashionweek2022_0",
+	{
+		displayStringId: "n_shoes_fashionweek2022_0_display_name";
+		iconAddress: "n_shoes_fashionweek2022_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesFisher0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_fisher_0",
+	{
+		displayStringId: "n_shoes_fisher_0_display_name";
+		iconAddress: "n_shoes_fisher_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesFrlgA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_frlg_a_0",
+	{
+		displayStringId: "n_shoes_frlg_a_0_display_name";
+		iconAddress: "n_shoes_frlg_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesFrlgB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_frlg_b_0",
+	{
+		displayStringId: "n_shoes_frlg_b_0_display_name";
+		iconAddress: "n_shoes_frlg_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesFw20220 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_fw2022_0",
+	{
+		displayStringId: "n_shoes_fw2022_0_display_name";
+		iconAddress: "n_shoes_fw2022_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesGeeta0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_geeta_0",
+	{
+		displayStringId: "n_shoes_geeta_0_display_name";
+		iconAddress: "n_shoes_geeta_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesGiovanniA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_giovanni_a_0",
+	{
+		displayStringId: "n_shoes_giovanni_a_0_display_name";
+		iconAddress: "n_shoes_giovanni_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesGiovanniB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_giovanni_b_0",
+	{
+		displayStringId: "n_shoes_giovanni_b_0_display_name";
+		iconAddress: "n_shoes_giovanni_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesGladion0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_gladion_0",
+	{
+		displayStringId: "n_shoes_gladion_0_display_name";
+		iconAddress: "n_shoes_gladion_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesGothitelleitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_gothitelleitems_0",
+	{
+		displayStringId: "n_shoes_gothitelleitems_0_display_name";
+		iconAddress: "n_shoes_gothitelleitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesGreenA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_green_a_0",
+	{
+		displayStringId: "n_shoes_green_a_0_display_name";
+		iconAddress: "n_shoes_green_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesGreenB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_green_b_0",
+	{
+		displayStringId: "n_shoes_green_b_0_display_name";
+		iconAddress: "n_shoes_green_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesGreenpikavee0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_greenpikavee_0",
+	{
+		displayStringId: "avatar_shoes_s22blue";
+		iconAddress: "n_shoes_greenpikavee_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesGrimsley0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_grimsley_0",
+	{
+		displayStringId: "avatar_shoes_gblgrimsley";
+		iconAddress: "n_shoes_grimsley_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesGrusha0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_grusha_0",
+	{
+		displayStringId: "avatar_shoes_grusha";
+		iconAddress: "n_shoes_grusha_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesGymleader0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_gymleader_0",
+	{
+		displayStringId: "n_shoes_gymleader_0_display_name";
+		iconAddress: "n_shoes_gymleader_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesGymleader1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_gymleader_1",
+	{
+		displayStringId: "n_shoes_gymleader_0_display_name";
+		iconAddress: "n_shoes_gymleader_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesGymleader2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_gymleader_2",
+	{
+		displayStringId: "n_shoes_gymleader_0_display_name";
+		iconAddress: "n_shoes_gymleader_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesHala0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_hala_0",
+	{
+		displayStringId: "n_shoes_hala_0_display_name";
+		iconAddress: "n_shoes_hala_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesHgssA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_hgss_a_0",
+	{
+		displayStringId: "n_shoes_hgss_a_0_display_name";
+		iconAddress: "n_shoes_hgss_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesHgssB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_hgss_b_0",
+	{
+		displayStringId: "n_shoes_hgss_b_0_display_name";
+		iconAddress: "n_shoes_hgss_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesIngo0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_ingo_0",
+	{
+		displayStringId: "n_shoes_ingo_0_display_name";
+		iconAddress: "n_shoes_ingo_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesJogger0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_jogger_0",
+	{
+		displayStringId: "n_shoes_jogger_0_display_name";
+		iconAddress: "n_shoes_jogger_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesKorrina0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_korrina_0",
+	{
+		displayStringId: "n_shoes_korrina_0_display_name";
+		iconAddress: "n_shoes_korrina_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesLadiamondoutfitA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_ladiamondoutfit_a_0",
+	{
+		displayStringId: "n_shoes_ladiamondoutfit_a_0_display_name";
+		iconAddress: "n_shoes_ladiamondoutfit_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesLadiamondoutfitB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_ladiamondoutfit_b_0",
+	{
+		displayStringId: "n_shoes_ladiamondoutfit_b_0_display_name";
+		iconAddress: "n_shoes_ladiamondoutfit_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesLana0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_lana_0",
+	{
+		displayStringId: "AVATAR_LanaShoes";
+		iconAddress: "n_shoes_lana_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesLapearloutfitA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_lapearloutfit_a_0",
+	{
+		displayStringId: "n_shoes_lapearloutfit_a_0_display_name";
+		iconAddress: "n_shoes_lapearloutfit_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesLapearloutfitB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_lapearloutfit_b_0",
+	{
+		displayStringId: "n_shoes_lapearloutfit_b_0_display_name";
+		iconAddress: "n_shoes_lapearloutfit_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesLegendofarceusA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_legendofarceus_a_0",
+	{
+		displayStringId: "n_shoes_legendofarceus_a_0_display_name";
+		iconAddress: "n_shoes_legendofarceus_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesLegendofarceusB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_legendofarceus_b_0",
+	{
+		displayStringId: "n_shoes_legendofarceus_b_0_display_name";
+		iconAddress: "n_shoes_legendofarceus_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesLoosepants0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_loosepants_0",
+	{
+		displayStringId: "n_shoes_loosepants_0_display_name";
+		iconAddress: "n_shoes_loosepants_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesLoosepants1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_loosepants_1",
+	{
+		displayStringId: "n_shoes_loosepants_0_display_name";
+		iconAddress: "n_shoes_loosepants_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesLoosepants2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_loosepants_2",
+	{
+		displayStringId: "n_shoes_loosepants_0_display_name";
+		iconAddress: "n_shoes_loosepants_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesLoosepants3 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_loosepants_3",
+	{
+		displayStringId: "n_shoes_loosepants_0_display_name";
+		iconAddress: "n_shoes_loosepants_3_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesLuvdiscpack0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_luvdiscpack_0",
+	{
+		displayStringId: "n_shoes_luvdiscpack_0_display_name";
+		iconAddress: "n_shoes_luvdiscpack_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesLvl71Cyberkicks0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_lvl71-cyberkicks_0",
+	{
+		displayStringId: "avatar_n_shoes_lvl71-cyberkicks_0";
+		iconAddress: "n_shoes_lvl71-cyberkicks_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesLysandre0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_lysandre_0",
+	{
+		displayStringId: "n_shoes_lysandre_0_display_name";
+		iconAddress: "n_shoes_lysandre_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesMegalopunnyitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_megalopunnyitems_0",
+	{
+		displayStringId: "n_shoes_megalopunnyitems_0_display_name";
+		iconAddress: "n_shoes_megalopunnyitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesMelmetalshoes0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_melmetalshoes_0",
+	{
+		displayStringId: "n_shoes_melmetalshoes_0_display_name";
+		iconAddress: "n_shoes_melmetalshoes_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesMewtwo0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_mewtwo_0",
+	{
+		displayStringId: "n_shoes_mewtwo_0_display_name";
+		iconAddress: "n_shoes_mewtwo_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesMisty0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_misty_0",
+	{
+		displayStringId: "n_shoes_misty_0_display_name";
+		iconAddress: "n_shoes_misty_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesMustard0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_mustard_0",
+	{
+		displayStringId: "avatar_shoes_mustard";
+		iconAddress: "n_shoes_mustard_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesNecrozmaitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_necrozmaitems_0",
+	{
+		displayStringId: "AVATAR_NecrozmaShoes";
+		iconAddress: "n_shoes_necrozmaitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesNewyear20220 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_newyear2022_0",
+	{
+		displayStringId: "n_shoes_newyear2022_0_display_name";
+		iconAddress: "n_shoes_newyear2022_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesNike20210 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_nike2021_0",
+	{
+		displayStringId: "n_shoes_nike2021_0_display_name";
+		iconAddress: "n_shoes_nike2021_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesOrasA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_oras_a_0",
+	{
+		displayStringId: "n_shoes_oras_a_0_display_name";
+		iconAddress: "n_shoes_oras_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesOrasB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_oras_b_0",
+	{
+		displayStringId: "n_shoes_oras_b_0_display_name";
+		iconAddress: "n_shoes_oras_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesPajamas20220 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_pajamas2022_0",
+	{
+		displayStringId: "n_shoes_pajamas2022_0_display_name";
+		iconAddress: "n_shoes_pajamas2022_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesPajamas20221 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_pajamas2022_1",
+	{
+		displayStringId: "n_shoes_pajamas2022_0_display_name";
+		iconAddress: "n_shoes_pajamas2022_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesPalmer0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_palmer_0",
+	{
+		displayStringId: "n_shoes_palmer_0_display_name";
+		iconAddress: "n_shoes_palmer_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesPikachuathletic = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_pikachuathletic",
+	{
+		displayStringId: "avatar_shoes_marathon";
+		iconAddress: "n_shoes_pikachuathletic_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesPikachufan0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_pikachufan_0",
+	{
+		displayStringId: "n_shoes_pikachufan_0_display_name";
+		iconAddress: "n_shoes_pikachufan_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesPikachulibre0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_pikachulibre_0",
+	{
+		displayStringId: "n_shoes_pikachulibre_0_display_name";
+		iconAddress: "n_shoes_pikachulibre_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesPokeballitemsBasic0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_pokeballitems-basic_0",
+	{
+		displayStringId: "avatar_n_shoes_pokeballitems-basic_0";
+		iconAddress: "n_shoes_pokeballitems-basic_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesPokeballitemsGreat0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_pokeballitems-great_0",
+	{
+		displayStringId: "avatar_n_shoes_pokeballitems-great_0";
+		iconAddress: "n_shoes_pokeballitems-great_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesPokeballitemsUltra0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_pokeballitems-ultra_0",
+	{
+		displayStringId: "avatar_n_shoes_pokeballitems-ultra_0";
+		iconAddress: "n_shoes_pokeballitems-ultra_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesProfwillowoutfit0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_profwillowoutfit_0",
+	{
+		displayStringId: "n_shoes_profwillowoutfit_0_display_name";
+		iconAddress: "n_shoes_profwillowoutfit_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesRegiicejersies0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_regiicejersies_0",
+	{
+		displayStringId: "n_shoes_regiicejersies_0_display_name";
+		iconAddress: "n_shoes_regiicejersies_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesRegirockjersies0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_regirockjersies_0",
+	{
+		displayStringId: "n_shoes_regirockjersies_0_display_name";
+		iconAddress: "n_shoes_regirockjersies_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesRegisteeljersies0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_registeeljersies_0",
+	{
+		displayStringId: "n_shoes_registeeljersies_0_display_name";
+		iconAddress: "n_shoes_registeeljersies_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesReuniclusitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_reuniclusitems_0",
+	{
+		displayStringId: "n_shoes_reuniclusitems_0_display_name";
+		iconAddress: "n_shoes_reuniclusitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesRuinmaniacA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_ruinmaniac_a_0",
+	{
+		displayStringId: "n_shoes_ruinmaniac_a_0_display_name";
+		iconAddress: "n_shoes_ruinmaniac_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesRuinmaniacB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_ruinmaniac_b_0",
+	{
+		displayStringId: "n_shoes_ruinmaniac_b_0_display_name";
+		iconAddress: "n_shoes_ruinmaniac_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesS19gbl0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_s19gbl_0",
+	{
+		displayStringId: "avatar_shoes_gbl19";
+		iconAddress: "n_shoes_s19gbl_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesSandals0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_sandals_0",
+	{
+		displayStringId: "n_shoes_sandals_0_display_name";
+		iconAddress: "n_shoes_sandals_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesSandals1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_sandals_1",
+	{
+		displayStringId: "n_shoes_sandals_0_display_name";
+		iconAddress: "n_shoes_sandals_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesSandals2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_sandals_2",
+	{
+		displayStringId: "n_shoes_sandals_0_display_name";
+		iconAddress: "n_shoes_sandals_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesSizzlipedeboots0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_sizzlipedeboots_0",
+	{
+		displayStringId: "avatar_shoes_sizzlipedeboots";
+		iconAddress: "n_shoes_sizzlipedeboots_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesSolgaleoitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_solgaleoitems_0",
+	{
+		displayStringId: "n_shoes_solgaleoitems_0_display_name";
+		iconAddress: "n_shoes_solgaleoitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesSsA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_ss_a_0",
+	{
+		displayStringId: "n_shoes_ss_a_0_display_name";
+		iconAddress: "n_shoes_ss_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesSsB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_ss_b_0",
+	{
+		displayStringId: "n_shoes_ss_b_0_display_name";
+		iconAddress: "n_shoes_ss_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesSteven0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_steven_0",
+	{
+		displayStringId: "n_shoes_steven_0_display_name";
+		iconAddress: "n_shoes_steven_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesStevenfirst0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_stevenfirst_0",
+	{
+		displayStringId: "n_shoes_stevenfirst_0_display_name";
+		iconAddress: "n_shoes_stevenfirst_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesSvcostumescarletschool0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_svcostumescarletschool_0",
+	{
+		displayStringId: "n_shoes_svcostumescarletschool_0_display_name";
+		iconAddress: "n_shoes_svcostumescarletschool_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesSvcostumevioletschool0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_svcostumevioletschool_0",
+	{
+		displayStringId: "n_shoes_svcostumevioletschool_0_display_name";
+		iconAddress: "n_shoes_svcostumevioletschool_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesSvdlc10 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_svdlc1_0",
+	{
+		displayStringId: "n_shoes_svdlc1_0_display_name";
+		iconAddress: "n_shoes_svdlc1_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesSvdlc2spring0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_svdlc2spring_0",
+	{
+		displayStringId: "n_shoes_svdlc2spring_0_display_name";
+		iconAddress: "n_shoes_svdlc2spring_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesSwshdlc2costume0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_swshdlc2costume_0",
+	{
+		displayStringId: "n_shoes_swshdlc2costume_0_display_name";
+		iconAddress: "n_shoes_swshdlc2costume_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesSwshdlccostume0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_swshdlccostume_0",
+	{
+		displayStringId: "n_shoes_swshdlccostume_0_display_name";
+		iconAddress: "n_shoes_swshdlccostume_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesSwshuniformdark0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_swshuniformdark_0",
+	{
+		displayStringId: "n_shoes_swshuniformdark_0_display_name";
+		iconAddress: "n_shoes_swshuniformdark_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesSwshuniformdefault0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_swshuniformdefault_0",
+	{
+		displayStringId: "n_shoes_swshuniformdefault_0_display_name";
+		iconAddress: "n_shoes_swshuniformdefault_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesSwshuniformdragon0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_swshuniformdragon_0",
+	{
+		displayStringId: "n_shoes_swshuniformdragon_0_display_name";
+		iconAddress: "n_shoes_swshuniformdragon_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesSylveonitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_sylveonitems_0",
+	{
+		displayStringId: "n_shoes_sylveonitems_0_display_name";
+		iconAddress: "n_shoes_sylveonitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesTandemausitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_tandemausitems_0",
+	{
+		displayStringId: "AVATAR_TandemausSlippers";
+		iconAddress: "n_shoes_tandemausitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesTeamaqua0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_teamaqua_0",
+	{
+		displayStringId: "n_shoes_teamaqua_0_display_name";
+		iconAddress: "n_shoes_teamaqua_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesTeamblancheA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_teamblanche_a_0",
+	{
+		displayStringId: "n_shoes_teamblanche_a_0_display_name";
+		iconAddress: "n_shoes_teamblanche_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesTeamblancheB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_teamblanche_b_0",
+	{
+		displayStringId: "n_shoes_teamblanche_b_0_display_name";
+		iconAddress: "n_shoes_teamblanche_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesTeamcandelaA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_teamcandela_a_0",
+	{
+		displayStringId: "n_shoes_teamcandela_a_0_display_name";
+		iconAddress: "n_shoes_teamcandela_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesTeamcandelaB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_teamcandela_b_0",
+	{
+		displayStringId: "n_shoes_teamcandela_b_0_display_name";
+		iconAddress: "n_shoes_teamcandela_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesTeammagmaA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_teammagma_a_0",
+	{
+		displayStringId: "n_shoes_teammagma_a_0_display_name";
+		iconAddress: "n_shoes_teammagma_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesTeammagmaB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_teammagma_b_0",
+	{
+		displayStringId: "n_shoes_teammagma_b_0_display_name";
+		iconAddress: "n_shoes_teammagma_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesTeamrocketA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_teamrocket_a_0",
+	{
+		displayStringId: "n_shoes_teamrocket_a_0_display_name";
+		iconAddress: "n_shoes_teamrocket_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesTeamrocketA1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_teamrocket_a_1",
+	{
+		displayStringId: "n_shoes_teamrocket_a_1_display_name";
+		iconAddress: "n_shoes_teamrocket_a_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesTeamrocketB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_teamrocket_b_0",
+	{
+		displayStringId: "n_shoes_teamrocket_b_0_display_name";
+		iconAddress: "n_shoes_teamrocket_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesTeamrocketB1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_teamrocket_b_1",
+	{
+		displayStringId: "n_shoes_teamrocket_b_1_display_name";
+		iconAddress: "n_shoes_teamrocket_b_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesTeamskull0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_teamskull_0",
+	{
+		displayStringId: "n_shoes_teamskull_a_0_display_name";
+		iconAddress: "n_shoes_teamskull_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesTeamskullB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_teamskull_b_0",
+	{
+		displayStringId: "n_shoes_teamskull_b_0_display_name";
+		iconAddress: "n_shoes_teamskull_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesTeamsparkA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_teamspark_a_0",
+	{
+		displayStringId: "n_shoes_teamspark_a_0_display_name";
+		iconAddress: "n_shoes_teamspark_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesTeamsparkB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_teamspark_b_0",
+	{
+		displayStringId: "n_shoes_teamspark_b_0_display_name";
+		iconAddress: "n_shoes_teamspark_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesTeamyellgrunts0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_teamyellgrunts_0",
+	{
+		displayStringId: "avatar_shoes_teamyell";
+		iconAddress: "n_shoes_teamyellgrunts_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesUltraA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_ultra_a_0",
+	{
+		displayStringId: "n_shoes_ultra_a_0_display_name";
+		iconAddress: "n_shoes_ultra_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesUltraB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_ultra_b_0",
+	{
+		displayStringId: "n_shoes_ultra_b_0_display_name";
+		iconAddress: "n_shoes_ultra_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesUltrareconsquad0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_ultrareconsquad_0",
+	{
+		displayStringId: "n_shoes_ultrareconsquad_0_display_name";
+		iconAddress: "n_shoes_ultrareconsquad_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesUnequip0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_unequip_0",
+	{
+		displayStringId: "n_shoes_unequip_0_display_name";
+		iconAddress: "n_shoes_empty_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesVeterantrainerxyA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_veterantrainerxy_a_0",
+	{
+		displayStringId: "n_shoes_veterantrainerxy_a_0_display_name";
+		iconAddress: "n_shoes_veterantrainerxy_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesVeterantrainerxyB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_veterantrainerxy_b_0",
+	{
+		displayStringId: "n_shoes_veterantrainerxy_b_0_display_name";
+		iconAddress: "n_shoes_veterantrainerxy_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesWcs2022winnersitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_wcs2022winnersitems_0",
+	{
+		displayStringId: "n_shoes_wcs2022winnersitems_0_display_name";
+		iconAddress: "n_shoes_wcs2022winnersitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesWcs2023winnersitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_wcs2023winnersitems_0",
+	{
+		displayStringId: "n_shoes_wcs2023winnersitems_0_display_name";
+		iconAddress: "n_shoes_wcs2023winnersitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesWcs2024winnersitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_wcs2024winnersitems_0",
+	{
+		displayStringId: "avatar_shoes_wcs2024champion";
+		iconAddress: "n_shoes_wcs2024winnersitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesWinterboots20230 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_winterboots2023_0",
+	{
+		displayStringId: "n_shoes_winterboots2023_0_display_name";
+		iconAddress: "n_shoes_winterboots2023_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesWinterboots0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_winterboots_0",
+	{
+		displayStringId: "n_shoes_winterboots_0_display_name";
+		iconAddress: "n_shoes_winterboots_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesWinterboots1 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_winterboots_1",
+	{
+		displayStringId: "n_shoes_winterboots_1_display_name";
+		iconAddress: "n_shoes_winterboots_1_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesWinterboots2 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_winterboots_2",
+	{
+		displayStringId: "n_shoes_winterboots_2_display_name";
+		iconAddress: "n_shoes_winterboots_2_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesWinterboots3 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_winterboots_3",
+	{
+		displayStringId: "n_shoes_winterboots_3_display_name";
+		iconAddress: "n_shoes_winterboots_3_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesZacostumeA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_zacostume_a_0",
+	{
+		displayStringId: "avatar_n_shoes_zacostume_a";
+		iconAddress: "n_shoes_zacostume_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNShoesZacostumeB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_shoes_zacostume_b_0",
+	{
+		displayStringId: "avatar_n_shoes_zacostume_b";
+		iconAddress: "n_shoes_zacostume_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNSocksDefaultA0 = AvatarItemDisplay<
+	"N_DISPLAY_n_socks_default_a_0",
+	{
+		displayStringId: "n_socks_default_a_0_display_name";
+		iconAddress: "n_socks_default_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNSocksDefaultA1 = AvatarItemDisplay<
+	"N_DISPLAY_n_socks_default_a_1",
+	{
+		displayStringId: "n_socks_default_a_0_display_name";
+		iconAddress: "n_socks_default_a_1_icon";
+	}
+>;
+export type AvatarItemDisplayNSocksDefaultA2 = AvatarItemDisplay<
+	"N_DISPLAY_n_socks_default_a_2",
+	{
+		displayStringId: "n_socks_default_a_0_display_name";
+		iconAddress: "n_socks_default_a_2_icon";
+	}
+>;
+export type AvatarItemDisplayNSocksDefaultB0 = AvatarItemDisplay<
+	"N_DISPLAY_n_socks_default_b_0",
+	{
+		displayStringId: "n_socks_default_b_0_display_name";
+		iconAddress: "n_socks_default_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNSocksDefaultB1 = AvatarItemDisplay<
+	"N_DISPLAY_n_socks_default_b_1",
+	{
+		displayStringId: "n_socks_default_b_0_display_name";
+		iconAddress: "n_socks_default_b_1_icon";
+	}
+>;
+export type AvatarItemDisplayNSocksDefaultB2 = AvatarItemDisplay<
+	"N_DISPLAY_n_socks_default_b_2",
+	{
+		displayStringId: "n_socks_default_b_0_display_name";
+		iconAddress: "n_socks_default_b_2_icon";
+	}
+>;
+export type AvatarItemDisplayNSocksDefaultB3 = AvatarItemDisplay<
+	"N_DISPLAY_n_socks_default_b_3",
+	{
+		displayStringId: "n_socks_default_b_0_display_name";
+		iconAddress: "n_socks_default_b_3_icon";
+	}
+>;
+export type AvatarItemDisplayNSocksFw2022A0 = AvatarItemDisplay<
+	"N_DISPLAY_n_socks_fw2022_a_0",
+	{
+		displayStringId: "n_socks_fw2022_a_0_display_name";
+		iconAddress: "n_socks_fw2022_a_0_icon";
+	}
+>;
+export type AvatarItemDisplayNSocksFw2022B0 = AvatarItemDisplay<
+	"N_DISPLAY_n_socks_fw2022_b_0",
+	{
+		displayStringId: "n_socks_fw2022_b_0_display_name";
+		iconAddress: "n_socks_fw2022_b_0_icon";
+	}
+>;
+export type AvatarItemDisplayNSocksHgss0 = AvatarItemDisplay<
+	"N_DISPLAY_n_socks_hgss_0",
+	{
+		displayStringId: "n_socks_hgss_0_display_name";
+		iconAddress: "n_socks_hgss_0_icon";
+	}
+>;
+export type AvatarItemDisplayNSocksSneakersocks0 = AvatarItemDisplay<
+	"N_DISPLAY_n_socks_sneakersocks_0",
+	{
+		displayStringId: "n_socks_sneakersocks_0_display_name";
+		iconAddress: "n_socks_sneakersocks_0_icon";
+	}
+>;
+export type AvatarItemDisplayNSocksSneakersocks1 = AvatarItemDisplay<
+	"N_DISPLAY_n_socks_sneakersocks_1",
+	{
+		displayStringId: "n_socks_sneakersocks_1_display_name";
+		iconAddress: "n_socks_sneakersocks_1_icon";
+	}
+>;
+export type AvatarItemDisplayNSocksSollunaitems0 = AvatarItemDisplay<
+	"N_DISPLAY_n_socks_sollunaitems_0",
+	{
+		displayStringId: "n_socks_sollunaitems_0_display_name";
+		iconAddress: "n_socks_sollunaitems_0_icon";
+	}
+>;
+export type AvatarItemDisplayNSocksSwshuniformdefault0 = AvatarItemDisplay<
+	"N_DISPLAY_n_socks_swshuniformdefault_0",
+	{
+		displayStringId: "n_socks_swshuniformdefault_0_display_name";
+		iconAddress: "n_socks_swshuniformdefault_0_icon";
+	}
+>;
+export type AvatarItemDisplayNSocksSwshuniformdragon0 = AvatarItemDisplay<
+	"N_DISPLAY_n_socks_swshuniformdragon_0",
+	{
+		displayStringId: "n_socks_swshuniformdragon_0_display_name";
+		iconAddress: "n_socks_swshuniformdragon_0_icon";
+	}
+>;
+export type AvatarItemDisplayNSocksTeamaqua0 = AvatarItemDisplay<
+	"N_DISPLAY_n_socks_teamaqua_0",
+	{
+		displayStringId: "n_socks_teamaqua_0_display_name";
+		iconAddress: "n_socks_teamaqua_0_icon";
+	}
+>;
+export type AvatarItemDisplayNSocksThighhighs0 = AvatarItemDisplay<
+	"N_DISPLAY_n_socks_thighhighs_0",
+	{
+		displayStringId: "n_socks_thighhighs_0_display_name";
+		iconAddress: "n_socks_thighhighs_0_icon";
+	}
+>;
+export type AvatarItemDisplayNSocksUnequip0 = AvatarItemDisplay<
+	"N_DISPLAY_n_socks_unequip_0",
+	{
+		displayStringId: "n_socks_unequip_0_display_name";
+		iconAddress: "n_socks_empty_0_icon";
+	}
+>;
+export type AvatarItemDisplaySet6thanniversaryF = AvatarItemDisplay<
+	"N_DISPLAY_set_6thanniversary_f",
+	{
+		iconAddress: "set_6thanniversary_a";
+	}
+>;
+export type AvatarItemDisplaySet6thanniversaryM = AvatarItemDisplay<
+	"N_DISPLAY_set_6thanniversary_m",
+	{
+		iconAddress: "set_6thanniversary_b";
+	}
+>;
+export type AvatarItemDisplaySet7thanniversaryF = AvatarItemDisplay<
+	"N_DISPLAY_set_7thanniversary_f",
+	{
+		iconAddress: "set_7thanniversary_a";
+	}
+>;
+export type AvatarItemDisplaySet7thanniversaryM = AvatarItemDisplay<
+	"N_DISPLAY_set_7thanniversary_m",
+	{
+		iconAddress: "set_7thanniversary_b";
+	}
+>;
+export type AvatarItemDisplaySetAcetrainerbwF = AvatarItemDisplay<
+	"N_DISPLAY_set_acetrainerbw_f",
+	{
+		iconAddress: "set_acetrainerbw_a";
+	}
+>;
+export type AvatarItemDisplaySetAcetrainerbwM = AvatarItemDisplay<
+	"N_DISPLAY_set_acetrainerbw_m",
+	{
+		iconAddress: "set_acetrainerbw_b";
+	}
+>;
+export type AvatarItemDisplaySetAcetrainersmF = AvatarItemDisplay<
+	"N_DISPLAY_set_acetrainersm_f",
+	{
+		iconAddress: "set_acetrainersm_a";
+	}
+>;
+export type AvatarItemDisplaySetAcetrainersmM = AvatarItemDisplay<
+	"N_DISPLAY_set_acetrainersm_m",
+	{
+		iconAddress: "set_acetrainersm_b";
+	}
+>;
+export type AvatarItemDisplaySetAllister0 = AvatarItemDisplay<
+	"N_DISPLAY_set_allister_0",
+	{
+		iconAddress: "set_allister_0";
+	}
+>;
+export type AvatarItemDisplaySetAnimegouF = AvatarItemDisplay<
+	"N_DISPLAY_set_animegou_f",
+	{
+		iconAddress: "set_animegou_a";
+	}
+>;
+export type AvatarItemDisplaySetAnimegouM = AvatarItemDisplay<
+	"N_DISPLAY_set_animegou_m",
+	{
+		iconAddress: "set_animegou_b";
+	}
+>;
+export type AvatarItemDisplaySetApplinitems = AvatarItemDisplay<
+	"N_DISPLAY_set_applinitems",
+	{
+		iconAddress: "set_applinitems";
+	}
+>;
+export type AvatarItemDisplaySetBackpackerF = AvatarItemDisplay<
+	"N_DISPLAY_set_backpacker_f",
+	{
+		iconAddress: "set_backpacker_a";
+	}
+>;
+export type AvatarItemDisplaySetBackpackerM = AvatarItemDisplay<
+	"N_DISPLAY_set_backpacker_m",
+	{
+		iconAddress: "set_backpacker_b";
+	}
+>;
+export type AvatarItemDisplaySetBattlegirl0F = AvatarItemDisplay<
+	"N_DISPLAY_set_battlegirl_0_f",
+	{
+		iconAddress: "set_battlegirl_0_a";
+	}
+>;
+export type AvatarItemDisplaySetBeaF = AvatarItemDisplay<
+	"N_DISPLAY_set_bea_f",
+	{
+		iconAddress: "set_bea_a";
+	}
+>;
+export type AvatarItemDisplaySetBeaM = AvatarItemDisplay<
+	"N_DISPLAY_set_bea_m",
+	{
+		iconAddress: "set_bea_b";
+	}
+>;
+export type AvatarItemDisplaySetBounsweetitemsF = AvatarItemDisplay<
+	"N_DISPLAY_set_bounsweetitems_f",
+	{
+		iconAddress: "set_bounsweetitems_a";
+	}
+>;
+export type AvatarItemDisplaySetBounsweetitemsM = AvatarItemDisplay<
+	"N_DISPLAY_set_bounsweetitems_m",
+	{
+		iconAddress: "set_bounsweetitems_b";
+	}
+>;
+export type AvatarItemDisplaySetBoxingoutfitF = AvatarItemDisplay<
+	"N_DISPLAY_set_boxingoutfit_f",
+	{
+		iconAddress: "set_boxingoutfit_a";
+	}
+>;
+export type AvatarItemDisplaySetBoxingoutfitM = AvatarItemDisplay<
+	"N_DISPLAY_set_boxingoutfit_m",
+	{
+		iconAddress: "set_boxingoutfit_b";
+	}
+>;
+export type AvatarItemDisplaySetBrockM = AvatarItemDisplay<
+	"N_DISPLAY_set_brock_m",
+	{
+		iconAddress: "set_brock_b";
+	}
+>;
+export type AvatarItemDisplaySetBwnF = AvatarItemDisplay<
+	"N_DISPLAY_set_bwn_f",
+	{
+		iconAddress: "set_bwn_a";
+	}
+>;
+export type AvatarItemDisplaySetBwnM = AvatarItemDisplay<
+	"N_DISPLAY_set_bwn_m",
+	{
+		iconAddress: "set_bwn_b";
+	}
+>;
+export type AvatarItemDisplaySetCasual0F = AvatarItemDisplay<
+	"N_DISPLAY_set_casual_0_f",
+	{
+		iconAddress: "set_casual_0_a";
+	}
+>;
+export type AvatarItemDisplaySetCasual0M = AvatarItemDisplay<
+	"N_DISPLAY_set_casual_0_m",
+	{
+		iconAddress: "set_casual_0_b";
+	}
+>;
+export type AvatarItemDisplaySetCasual1F = AvatarItemDisplay<
+	"N_DISPLAY_set_casual_1_f",
+	{
+		iconAddress: "set_casual_1_a";
+	}
+>;
+export type AvatarItemDisplaySetCasual1M = AvatarItemDisplay<
+	"N_DISPLAY_set_casual_1_m",
+	{
+		iconAddress: "set_casual_1_b";
+	}
+>;
+export type AvatarItemDisplaySetClayF = AvatarItemDisplay<
+	"N_DISPLAY_set_clay_f",
+	{
+		iconAddress: "set_clay_a";
+	}
+>;
+export type AvatarItemDisplaySetClayM = AvatarItemDisplay<
+	"N_DISPLAY_set_clay_m",
+	{
+		iconAddress: "set_clay_b";
+	}
+>;
+export type AvatarItemDisplaySetClemont = AvatarItemDisplay<
+	"N_DISPLAY_set_clemont",
+	{
+		iconAddress: "set_clemont";
+	}
+>;
+export type AvatarItemDisplaySetCofagrigusF = AvatarItemDisplay<
+	"N_DISPLAY_set_cofagrigus_f",
+	{
+		iconAddress: "set_cofagrigus_a";
+	}
+>;
+export type AvatarItemDisplaySetCofagrigusM = AvatarItemDisplay<
+	"N_DISPLAY_set_cofagrigus_m",
+	{
+		iconAddress: "set_cofagrigus_b";
+	}
+>;
+export type AvatarItemDisplaySetCosmogF = AvatarItemDisplay<
+	"N_DISPLAY_set_cosmog_f",
+	{
+		iconAddress: "set_cosmog_a";
+	}
+>;
+export type AvatarItemDisplaySetCosmogM = AvatarItemDisplay<
+	"N_DISPLAY_set_cosmog_m",
+	{
+		iconAddress: "set_cosmog_b";
+	}
+>;
+export type AvatarItemDisplaySetDayofthedeadF = AvatarItemDisplay<
+	"N_DISPLAY_set_dayofthedead_f",
+	{
+		iconAddress: "set_dayofthedead_a";
+	}
+>;
+export type AvatarItemDisplaySetDayofthedeadM = AvatarItemDisplay<
+	"N_DISPLAY_set_dayofthedead_m",
+	{
+		iconAddress: "set_dayofthedead_b";
+	}
+>;
+export type AvatarItemDisplaySetDedenneitemsF = AvatarItemDisplay<
+	"N_DISPLAY_set_dedenneitems_f",
+	{
+		iconAddress: "set_dedenneitems_a";
+	}
+>;
+export type AvatarItemDisplaySetDedenneitemsM = AvatarItemDisplay<
+	"N_DISPLAY_set_dedenneitems_m",
+	{
+		iconAddress: "set_dedenneitems_b";
+	}
+>;
+export type AvatarItemDisplaySetDelibirdF = AvatarItemDisplay<
+	"N_DISPLAY_set_delibird_f",
+	{
+		iconAddress: "set_delibird_a";
+	}
+>;
+export type AvatarItemDisplaySetDelibirdM = AvatarItemDisplay<
+	"N_DISPLAY_set_delibird_m",
+	{
+		iconAddress: "set_delibird_b";
+	}
+>;
+export type AvatarItemDisplaySetDetectivepikachuF = AvatarItemDisplay<
+	"N_DISPLAY_set_detectivepikachu_f",
+	{
+		iconAddress: "set_detectivepikachu_a";
+	}
+>;
+export type AvatarItemDisplaySetDetectivepikachuM = AvatarItemDisplay<
+	"N_DISPLAY_set_detectivepikachu_m",
+	{
+		iconAddress: "set_detectivepikachu_b";
+	}
+>;
+export type AvatarItemDisplaySetDivingsuitF = AvatarItemDisplay<
+	"N_DISPLAY_set_divingsuit_f",
+	{
+		iconAddress: "set_divingsuit_a";
+	}
+>;
+export type AvatarItemDisplaySetDivingsuitM = AvatarItemDisplay<
+	"N_DISPLAY_set_divingsuit_m",
+	{
+		iconAddress: "set_divingsuit_b";
+	}
+>;
+export type AvatarItemDisplaySetDpF = AvatarItemDisplay<
+	"N_DISPLAY_set_dp_f",
+	{
+		iconAddress: "set_dp_a";
+	}
+>;
+export type AvatarItemDisplaySetDpM = AvatarItemDisplay<
+	"N_DISPLAY_set_dp_m",
+	{
+		iconAddress: "set_dp_b";
+	}
+>;
+export type AvatarItemDisplaySetDusclopsmummyF = AvatarItemDisplay<
+	"N_DISPLAY_set_dusclopsmummy_f",
+	{
+		iconAddress: "set_dusclopsmummy_a";
+	}
+>;
+export type AvatarItemDisplaySetDusclopsmummyM = AvatarItemDisplay<
+	"N_DISPLAY_set_dusclopsmummy_m",
+	{
+		iconAddress: "set_dusclopsmummy_b";
+	}
+>;
+export type AvatarItemDisplaySetElesaF = AvatarItemDisplay<
+	"N_DISPLAY_set_elesa_f",
+	{
+		iconAddress: "set_elesa_a";
+	}
+>;
+export type AvatarItemDisplaySetElesaM = AvatarItemDisplay<
+	"N_DISPLAY_set_elesa_m",
+	{
+		iconAddress: "set_elesa_b";
+	}
+>;
+export type AvatarItemDisplaySetEternatussuit0 = AvatarItemDisplay<
+	"N_DISPLAY_set_eternatussuit_0",
+	{
+		iconAddress: "set_eternatussuit_0";
+	}
+>;
+export type AvatarItemDisplaySetFashionweek2022F = AvatarItemDisplay<
+	"N_DISPLAY_set_fashionweek2022_f",
+	{
+		iconAddress: "set_fashionweek2022_a";
+	}
+>;
+export type AvatarItemDisplaySetFashionweek2022M = AvatarItemDisplay<
+	"N_DISPLAY_set_fashionweek2022_m",
+	{
+		iconAddress: "set_fashionweek2022_b";
+	}
+>;
+export type AvatarItemDisplaySetFashionweek20250 = AvatarItemDisplay<
+	"N_DISPLAY_set_fashionweek2025_0",
+	{
+		iconAddress: "set_fashionweek2025_0";
+	}
+>;
+export type AvatarItemDisplaySetFisher0M = AvatarItemDisplay<
+	"N_DISPLAY_set_fisher_0_m",
+	{
+		iconAddress: "set_fisher_0_b";
+	}
+>;
+export type AvatarItemDisplaySetFlabebepackF = AvatarItemDisplay<
+	"N_DISPLAY_set_flabebepack_f",
+	{
+		iconAddress: "set_flabebepack_a";
+	}
+>;
+export type AvatarItemDisplaySetFlabebepackM = AvatarItemDisplay<
+	"N_DISPLAY_set_flabebepack_m",
+	{
+		iconAddress: "set_flabebepack_b";
+	}
+>;
+export type AvatarItemDisplaySetFragment0F = AvatarItemDisplay<
+	"N_DISPLAY_set_fragment_0_f",
+	{
+		iconAddress: "set_fragment_0_a";
+	}
+>;
+export type AvatarItemDisplaySetFragment0M = AvatarItemDisplay<
+	"N_DISPLAY_set_fragment_0_m",
+	{
+		iconAddress: "set_fragment_0_b";
+	}
+>;
+export type AvatarItemDisplaySetFrlg0F = AvatarItemDisplay<
+	"N_DISPLAY_set_frlg_0_f",
+	{
+		iconAddress: "set_frlg_0_a";
+	}
+>;
+export type AvatarItemDisplaySetFrlg0M = AvatarItemDisplay<
+	"N_DISPLAY_set_frlg_0_m",
+	{
+		iconAddress: "set_frlg_0_b";
+	}
+>;
+export type AvatarItemDisplaySetFw2022F = AvatarItemDisplay<
+	"N_DISPLAY_set_fw2022_f",
+	{
+		iconAddress: "set_fw2022_a";
+	}
+>;
+export type AvatarItemDisplaySetFw2022M = AvatarItemDisplay<
+	"N_DISPLAY_set_fw2022_m",
+	{
+		iconAddress: "set_fw2022_b";
+	}
+>;
+export type AvatarItemDisplaySetGalarfarfetchditemsF = AvatarItemDisplay<
+	"N_DISPLAY_set_galarfarfetchditems_f",
+	{
+		iconAddress: "set_galarfarfetchditems_a";
+	}
+>;
+export type AvatarItemDisplaySetGalarfarfetchditemsM = AvatarItemDisplay<
+	"N_DISPLAY_set_galarfarfetchditems_m",
+	{
+		iconAddress: "set_galarfarfetchditems_b";
+	}
+>;
+export type AvatarItemDisplaySetGeetaF = AvatarItemDisplay<
+	"N_DISPLAY_set_geeta_f",
+	{
+		iconAddress: "set_geeta_a";
+	}
+>;
+export type AvatarItemDisplaySetGeetaM = AvatarItemDisplay<
+	"N_DISPLAY_set_geeta_m",
+	{
+		iconAddress: "set_geeta_b";
+	}
+>;
+export type AvatarItemDisplaySetGenderlessskirtF = AvatarItemDisplay<
+	"N_DISPLAY_set_genderlessskirt_f",
+	{
+		iconAddress: "set_genderlessskirt_a";
+	}
+>;
+export type AvatarItemDisplaySetGenderlessskirtM = AvatarItemDisplay<
+	"N_DISPLAY_set_genderlessskirt_m",
+	{
+		iconAddress: "set_genderlessskirt_b";
+	}
+>;
+export type AvatarItemDisplaySetGenesecteventitemF = AvatarItemDisplay<
+	"N_DISPLAY_set_genesecteventitem_f",
+	{
+		iconAddress: "set_genesecteventitem_a";
+	}
+>;
+export type AvatarItemDisplaySetGenesecteventitemM = AvatarItemDisplay<
+	"N_DISPLAY_set_genesecteventitem_m",
+	{
+		iconAddress: "set_genesecteventitem_b";
+	}
+>;
+export type AvatarItemDisplaySetGengar0F = AvatarItemDisplay<
+	"N_DISPLAY_set_gengar_0_f",
+	{
+		iconAddress: "set_gengar_0_a";
+	}
+>;
+export type AvatarItemDisplaySetGengar0M = AvatarItemDisplay<
+	"N_DISPLAY_set_gengar_0_m",
+	{
+		iconAddress: "set_gengar_0_b";
+	}
+>;
+export type AvatarItemDisplaySetGimmighoulitemsF = AvatarItemDisplay<
+	"N_DISPLAY_set_gimmighoulitems_f",
+	{
+		iconAddress: "set_gimmighoulitems_a";
+	}
+>;
+export type AvatarItemDisplaySetGimmighoulitemsM = AvatarItemDisplay<
+	"N_DISPLAY_set_gimmighoulitems_m",
+	{
+		iconAddress: "set_gimmighoulitems_b";
+	}
+>;
+export type AvatarItemDisplaySetGiovanniF = AvatarItemDisplay<
+	"N_DISPLAY_set_giovanni_f",
+	{
+		iconAddress: "set_giovanni_a";
+	}
+>;
+export type AvatarItemDisplaySetGiovanniM = AvatarItemDisplay<
+	"N_DISPLAY_set_giovanni_m",
+	{
+		iconAddress: "set_giovanni_b";
+	}
+>;
+export type AvatarItemDisplaySetGiratinaitems = AvatarItemDisplay<
+	"N_DISPLAY_set_giratinaitems",
+	{
+		iconAddress: "set_giratinaitems_b";
+	}
+>;
+export type AvatarItemDisplaySetGladionF = AvatarItemDisplay<
+	"N_DISPLAY_set_gladion_f",
+	{
+		iconAddress: "set_gladion_a";
+	}
+>;
+export type AvatarItemDisplaySetGladionM = AvatarItemDisplay<
+	"N_DISPLAY_set_gladion_m",
+	{
+		iconAddress: "set_gladion_b";
+	}
+>;
+export type AvatarItemDisplaySetGoteamrocketarloF = AvatarItemDisplay<
+	"N_DISPLAY_set_goteamrocketarlo_f",
+	{
+		iconAddress: "set_goteamrocketarlo_a";
+	}
+>;
+export type AvatarItemDisplaySetGoteamrocketarloM = AvatarItemDisplay<
+	"N_DISPLAY_set_goteamrocketarlo_m",
+	{
+		iconAddress: "set_goteamrocketarlo_b";
+	}
+>;
+export type AvatarItemDisplaySetGreenF = AvatarItemDisplay<
+	"N_DISPLAY_set_green_f",
+	{
+		iconAddress: "set_green_a";
+	}
+>;
+export type AvatarItemDisplaySetGreenM = AvatarItemDisplay<
+	"N_DISPLAY_set_green_m",
+	{
+		iconAddress: "set_green_b";
+	}
+>;
+export type AvatarItemDisplaySetGreencoatF = AvatarItemDisplay<
+	"N_DISPLAY_set_greencoat_f",
+	{
+		iconAddress: "set_greencoat_a";
+	}
+>;
+export type AvatarItemDisplaySetGreencoatM = AvatarItemDisplay<
+	"N_DISPLAY_set_greencoat_m",
+	{
+		iconAddress: "set_greencoat_b";
+	}
+>;
+export type AvatarItemDisplaySetGrimsley0 = AvatarItemDisplay<
+	"N_DISPLAY_set_grimsley_0",
+	{
+		iconAddress: "set_grimsley_0";
+	}
+>;
+export type AvatarItemDisplaySetGrusha = AvatarItemDisplay<
+	"N_DISPLAY_set_grusha",
+	{
+		iconAddress: "set_grusha";
+	}
+>;
+export type AvatarItemDisplaySetGuzmaF = AvatarItemDisplay<
+	"N_DISPLAY_set_guzma_f",
+	{
+		iconAddress: "set_guzma_a";
+	}
+>;
+export type AvatarItemDisplaySetGuzmaM = AvatarItemDisplay<
+	"N_DISPLAY_set_guzma_m",
+	{
+		iconAddress: "set_guzma_b";
+	}
+>;
+export type AvatarItemDisplaySetGymleader0F = AvatarItemDisplay<
+	"N_DISPLAY_set_gymleader_0_f",
+	{
+		iconAddress: "set_gymleader_0_a";
+	}
+>;
+export type AvatarItemDisplaySetGymleader0M = AvatarItemDisplay<
+	"N_DISPLAY_set_gymleader_0_m",
+	{
+		iconAddress: "set_gymleader_0_b";
+	}
+>;
+export type AvatarItemDisplaySetGymleader1F = AvatarItemDisplay<
+	"N_DISPLAY_set_gymleader_1_f",
+	{
+		iconAddress: "set_gymleader_1_a";
+	}
+>;
+export type AvatarItemDisplaySetGymleader1M = AvatarItemDisplay<
+	"N_DISPLAY_set_gymleader_1_m",
+	{
+		iconAddress: "set_gymleader_1_b";
+	}
+>;
+export type AvatarItemDisplaySetGymleader2F = AvatarItemDisplay<
+	"N_DISPLAY_set_gymleader_2_f",
+	{
+		iconAddress: "set_gymleader_2_a";
+	}
+>;
+export type AvatarItemDisplaySetGymleader2M = AvatarItemDisplay<
+	"N_DISPLAY_set_gymleader_2_m",
+	{
+		iconAddress: "set_gymleader_2_b";
+	}
+>;
+export type AvatarItemDisplaySetHala = AvatarItemDisplay<
+	"N_DISPLAY_set_hala",
+	{
+		iconAddress: "set_hala_a";
+	}
+>;
+export type AvatarItemDisplaySetHalloween20240 = AvatarItemDisplay<
+	"N_DISPLAY_set_halloween2024_0",
+	{
+		iconAddress: "set_halloween2024_0";
+	}
+>;
+export type AvatarItemDisplaySetHgss0F = AvatarItemDisplay<
+	"N_DISPLAY_set_hgss_0_f",
+	{
+		iconAddress: "set_hgss_0_a";
+	}
+>;
+export type AvatarItemDisplaySetHgss0M = AvatarItemDisplay<
+	"N_DISPLAY_set_hgss_0_m",
+	{
+		iconAddress: "set_hgss_0_b";
+	}
+>;
+export type AvatarItemDisplaySetHoliday2022santacostumesF = AvatarItemDisplay<
+	"N_DISPLAY_set_holiday2022santacostumes_f",
+	{
+		iconAddress: "set_holiday2022santacostumes_a";
+	}
+>;
+export type AvatarItemDisplaySetHoliday2022santacostumesM = AvatarItemDisplay<
+	"N_DISPLAY_set_holiday2022santacostumes_m",
+	{
+		iconAddress: "set_holiday2022santacostumes_b";
+	}
+>;
+export type AvatarItemDisplaySetHoopaF = AvatarItemDisplay<
+	"N_DISPLAY_set_hoopa_f",
+	{
+		iconAddress: "set_hoopa_a";
+	}
+>;
+export type AvatarItemDisplaySetHoopaM = AvatarItemDisplay<
+	"N_DISPLAY_set_hoopa_m",
+	{
+		iconAddress: "set_hoopa_b";
+	}
+>;
+export type AvatarItemDisplaySetIngo = AvatarItemDisplay<
+	"N_DISPLAY_set_ingo",
+	{
+		iconAddress: "set_ingo_b";
+	}
+>;
+export type AvatarItemDisplaySetJogger0M = AvatarItemDisplay<
+	"N_DISPLAY_set_jogger_0_m",
+	{
+		iconAddress: "set_jogger_0_b";
+	}
+>;
+export type AvatarItemDisplaySetKorrinaF = AvatarItemDisplay<
+	"N_DISPLAY_set_korrina_f",
+	{
+		iconAddress: "set_korrina_a";
+	}
+>;
+export type AvatarItemDisplaySetKorrinaM = AvatarItemDisplay<
+	"N_DISPLAY_set_korrina_m",
+	{
+		iconAddress: "set_korrina_b";
+	}
+>;
+export type AvatarItemDisplaySetLadiamondoutfitF = AvatarItemDisplay<
+	"N_DISPLAY_set_ladiamondoutfit_f",
+	{
+		iconAddress: "set_ladiamondoutfit_a";
+	}
+>;
+export type AvatarItemDisplaySetLadiamondoutfitM = AvatarItemDisplay<
+	"N_DISPLAY_set_ladiamondoutfit_m",
+	{
+		iconAddress: "set_ladiamondoutfit_b";
+	}
+>;
+export type AvatarItemDisplaySetLana0 = AvatarItemDisplay<
+	"N_DISPLAY_set_lana_0",
+	{
+		iconAddress: "set_lana_0";
+	}
+>;
+export type AvatarItemDisplaySetLapearloutfitF = AvatarItemDisplay<
+	"N_DISPLAY_set_lapearloutfit_f",
+	{
+		iconAddress: "set_lapearloutfit_a";
+	}
+>;
+export type AvatarItemDisplaySetLapearloutfitM = AvatarItemDisplay<
+	"N_DISPLAY_set_lapearloutfit_m",
+	{
+		iconAddress: "set_lapearloutfit_b";
+	}
+>;
+export type AvatarItemDisplaySetLasecuritycorpsF = AvatarItemDisplay<
+	"N_DISPLAY_set_lasecuritycorps_f",
+	{
+		iconAddress: "set_lasecuritycorps_a";
+	}
+>;
+export type AvatarItemDisplaySetLasecuritycorpsM = AvatarItemDisplay<
+	"N_DISPLAY_set_lasecuritycorps_m",
+	{
+		iconAddress: "set_lasecuritycorps_b";
+	}
+>;
+export type AvatarItemDisplaySetLegendofarceusF = AvatarItemDisplay<
+	"N_DISPLAY_set_legendofarceus_f",
+	{
+		iconAddress: "set_legendofarceus_a";
+	}
+>;
+export type AvatarItemDisplaySetLegendofarceusM = AvatarItemDisplay<
+	"N_DISPLAY_set_legendofarceus_m",
+	{
+		iconAddress: "set_legendofarceus_b";
+	}
+>;
+export type AvatarItemDisplaySetLooseFitting0 = AvatarItemDisplay<
+	"N_DISPLAY_set_loose-fitting_0",
+	{
+		iconAddress: "set_loose-fitting_0";
+	}
+>;
+export type AvatarItemDisplaySetLooseFitting1 = AvatarItemDisplay<
+	"N_DISPLAY_set_loose-fitting_1",
+	{
+		iconAddress: "set_loose-fitting_1";
+	}
+>;
+export type AvatarItemDisplaySetLunalaitemsF = AvatarItemDisplay<
+	"N_DISPLAY_set_lunalaitems_f",
+	{
+		iconAddress: "set_lunalaitems_a";
+	}
+>;
+export type AvatarItemDisplaySetLunalaitemsM = AvatarItemDisplay<
+	"N_DISPLAY_set_lunalaitems_m",
+	{
+		iconAddress: "set_lunalaitems_b";
+	}
+>;
+export type AvatarItemDisplaySetLuvdiscpackF = AvatarItemDisplay<
+	"N_DISPLAY_set_luvdiscpack_f",
+	{
+		iconAddress: "set_luvdiscpack_a";
+	}
+>;
+export type AvatarItemDisplaySetLuvdiscpackM = AvatarItemDisplay<
+	"N_DISPLAY_set_luvdiscpack_m",
+	{
+		iconAddress: "set_luvdiscpack_b";
+	}
+>;
+export type AvatarItemDisplaySetLvl500F = AvatarItemDisplay<
+	"N_DISPLAY_set_lvl50_0_f",
+	{
+		iconAddress: "set_lvl50_0_a";
+	}
+>;
+export type AvatarItemDisplaySetLvl500M = AvatarItemDisplay<
+	"N_DISPLAY_set_lvl50_0_m",
+	{
+		iconAddress: "set_lvl50_0_b";
+	}
+>;
+export type AvatarItemDisplaySetLvl501F = AvatarItemDisplay<
+	"N_DISPLAY_set_lvl50_1_f",
+	{
+		iconAddress: "set_lvl50_1_a";
+	}
+>;
+export type AvatarItemDisplaySetLvl501M = AvatarItemDisplay<
+	"N_DISPLAY_set_lvl50_1_m",
+	{
+		iconAddress: "set_lvl50_1_b";
+	}
+>;
+export type AvatarItemDisplaySetLysandreF = AvatarItemDisplay<
+	"N_DISPLAY_set_lysandre_f",
+	{
+		iconAddress: "set_lysandre_a";
+	}
+>;
+export type AvatarItemDisplaySetLysandreM = AvatarItemDisplay<
+	"N_DISPLAY_set_lysandre_m",
+	{
+		iconAddress: "set_lysandre_b";
+	}
+>;
+export type AvatarItemDisplaySetMegalopunnyitemsF = AvatarItemDisplay<
+	"N_DISPLAY_set_megalopunnyitems_f",
+	{
+		iconAddress: "set_megalopunnyitems_a";
+	}
+>;
+export type AvatarItemDisplaySetMegalopunnyitemsM = AvatarItemDisplay<
+	"N_DISPLAY_set_megalopunnyitems_m",
+	{
+		iconAddress: "set_megalopunnyitems_b";
+	}
+>;
+export type AvatarItemDisplaySetMegarayquazaF = AvatarItemDisplay<
+	"N_DISPLAY_set_megarayquaza_f",
+	{
+		iconAddress: "set_megarayquaza_a";
+	}
+>;
+export type AvatarItemDisplaySetMegarayquazaM = AvatarItemDisplay<
+	"N_DISPLAY_set_megarayquaza_m",
+	{
+		iconAddress: "set_megarayquaza_b";
+	}
+>;
+export type AvatarItemDisplaySetMelmetalJacketF = AvatarItemDisplay<
+	"N_DISPLAY_set_melmetal_jacket_f",
+	{
+		iconAddress: "set_melmetal_jacket_a";
+	}
+>;
+export type AvatarItemDisplaySetMelmetalJacketM = AvatarItemDisplay<
+	"N_DISPLAY_set_melmetal_jacket_m",
+	{
+		iconAddress: "set_melmetal_jacket_b";
+	}
+>;
+export type AvatarItemDisplaySetMelmetalVestF = AvatarItemDisplay<
+	"N_DISPLAY_set_melmetal_vest_f",
+	{
+		iconAddress: "set_melmetal_vest_a";
+	}
+>;
+export type AvatarItemDisplaySetMelmetalVestM = AvatarItemDisplay<
+	"N_DISPLAY_set_melmetal_vest_m",
+	{
+		iconAddress: "set_melmetal_vest_b";
+	}
+>;
+export type AvatarItemDisplaySetMeltanF = AvatarItemDisplay<
+	"N_DISPLAY_set_meltan_f",
+	{
+		iconAddress: "set_meltan_a";
+	}
+>;
+export type AvatarItemDisplaySetMeltanM = AvatarItemDisplay<
+	"N_DISPLAY_set_meltan_m",
+	{
+		iconAddress: "set_meltan_b";
+	}
+>;
+export type AvatarItemDisplaySetMewtwoF = AvatarItemDisplay<
+	"N_DISPLAY_set_mewtwo_f",
+	{
+		iconAddress: "set_mewtwo_a";
+	}
+>;
+export type AvatarItemDisplaySetMewtwoM = AvatarItemDisplay<
+	"N_DISPLAY_set_mewtwo_m",
+	{
+		iconAddress: "set_mewtwo_b";
+	}
+>;
+export type AvatarItemDisplaySetMimikyuF = AvatarItemDisplay<
+	"N_DISPLAY_set_mimikyu_f",
+	{
+		iconAddress: "set_mimikyu_a";
+	}
+>;
+export type AvatarItemDisplaySetMimikyuM = AvatarItemDisplay<
+	"N_DISPLAY_set_mimikyu_m",
+	{
+		iconAddress: "set_mimikyu_b";
+	}
+>;
+export type AvatarItemDisplaySetMistyF = AvatarItemDisplay<
+	"N_DISPLAY_set_misty_f",
+	{
+		iconAddress: "set_misty_a";
+	}
+>;
+export type AvatarItemDisplaySetMovie2020F = AvatarItemDisplay<
+	"N_DISPLAY_set_movie2020_f",
+	{
+		iconAddress: "set_movie2020_a";
+	}
+>;
+export type AvatarItemDisplaySetMovie2020M = AvatarItemDisplay<
+	"N_DISPLAY_set_movie2020_m",
+	{
+		iconAddress: "set_movie2020_b";
+	}
+>;
+export type AvatarItemDisplaySetMunnapack0F = AvatarItemDisplay<
+	"N_DISPLAY_set_munnapack_0_f",
+	{
+		iconAddress: "set_munnapack_0_a";
+	}
+>;
+export type AvatarItemDisplaySetMunnapack0M = AvatarItemDisplay<
+	"N_DISPLAY_set_munnapack_0_m",
+	{
+		iconAddress: "set_munnapack_0_b";
+	}
+>;
+export type AvatarItemDisplaySetMunnapack1F = AvatarItemDisplay<
+	"N_DISPLAY_set_munnapack_1_f",
+	{
+		iconAddress: "set_munnapack_1_a";
+	}
+>;
+export type AvatarItemDisplaySetMunnapack1M = AvatarItemDisplay<
+	"N_DISPLAY_set_munnapack_1_m",
+	{
+		iconAddress: "set_munnapack_1_b";
+	}
+>;
+export type AvatarItemDisplaySetMustard0 = AvatarItemDisplay<
+	"N_DISPLAY_set_mustard_0",
+	{
+		iconAddress: "set_mustard_0";
+	}
+>;
+export type AvatarItemDisplaySetNDefaultNew = AvatarItemDisplay<
+	"N_DISPLAY_set_n_default-new",
+	{
+		iconAddress: "set_n_default-new";
+	}
+>;
+export type AvatarItemDisplaySetNDenimfashionweek2023 = AvatarItemDisplay<
+	"N_DISPLAY_set_n_denimfashionweek2023",
+	{
+		iconAddress: "set_denimfashionweek2023_b";
+	}
+>;
+export type AvatarItemDisplaySetNGothitelleitems = AvatarItemDisplay<
+	"N_DISPLAY_set_n_gothitelleitems",
+	{
+		iconAddress: "set_gothitelleitems_b";
+	}
+>;
+export type AvatarItemDisplaySetNReuniclusitems = AvatarItemDisplay<
+	"N_DISPLAY_set_n_reuniclusitems",
+	{
+		iconAddress: "set_reuniclusitems_a";
+	}
+>;
+export type AvatarItemDisplaySetNaganadelaitems = AvatarItemDisplay<
+	"N_DISPLAY_set_naganadelaitems",
+	{
+		iconAddress: "set_naganadelaitems_0";
+	}
+>;
+export type AvatarItemDisplaySetNecrozmaitems0 = AvatarItemDisplay<
+	"N_DISPLAY_set_necrozmaitems_0",
+	{
+		iconAddress: "set_necrozmaitems_0";
+	}
+>;
+export type AvatarItemDisplaySetNewyearF = AvatarItemDisplay<
+	"N_DISPLAY_set_newyear_f",
+	{
+		iconAddress: "set_newyear_a";
+	}
+>;
+export type AvatarItemDisplaySetNewyearM = AvatarItemDisplay<
+	"N_DISPLAY_set_newyear_m",
+	{
+		iconAddress: "set_newyear_b";
+	}
+>;
+export type AvatarItemDisplaySetObstagoonitemsF = AvatarItemDisplay<
+	"N_DISPLAY_set_obstagoonitems_f",
+	{
+		iconAddress: "set_obstagoonitems_a";
+	}
+>;
+export type AvatarItemDisplaySetObstagoonitemsM = AvatarItemDisplay<
+	"N_DISPLAY_set_obstagoonitems_m",
+	{
+		iconAddress: "set_obstagoonitems_b";
+	}
+>;
+export type AvatarItemDisplaySetOrasF = AvatarItemDisplay<
+	"N_DISPLAY_set_oras_f",
+	{
+		iconAddress: "set_oras_a";
+	}
+>;
+export type AvatarItemDisplaySetOrasM = AvatarItemDisplay<
+	"N_DISPLAY_set_oras_m",
+	{
+		iconAddress: "set_oras_b";
+	}
+>;
+export type AvatarItemDisplaySetPajamas20220F = AvatarItemDisplay<
+	"N_DISPLAY_set_pajamas2022_0_f",
+	{
+		iconAddress: "set_pajamas2022_0_a";
+	}
+>;
+export type AvatarItemDisplaySetPajamas20220M = AvatarItemDisplay<
+	"N_DISPLAY_set_pajamas2022_0_m",
+	{
+		iconAddress: "set_pajamas2022_0_b";
+	}
+>;
+export type AvatarItemDisplaySetPajamas20221F = AvatarItemDisplay<
+	"N_DISPLAY_set_pajamas2022_1_f",
+	{
+		iconAddress: "set_pajamas2022_1_a";
+	}
+>;
+export type AvatarItemDisplaySetPajamas20221M = AvatarItemDisplay<
+	"N_DISPLAY_set_pajamas2022_1_m",
+	{
+		iconAddress: "set_pajamas2022_1_b";
+	}
+>;
+export type AvatarItemDisplaySetPalmerF = AvatarItemDisplay<
+	"N_DISPLAY_set_palmer_f",
+	{
+		iconAddress: "set_palmer_a";
+	}
+>;
+export type AvatarItemDisplaySetPalmerM = AvatarItemDisplay<
+	"N_DISPLAY_set_palmer_m",
+	{
+		iconAddress: "set_palmer_b";
+	}
+>;
+export type AvatarItemDisplaySetPikachufan0F = AvatarItemDisplay<
+	"N_DISPLAY_set_pikachufan_0_f",
+	{
+		iconAddress: "set_pikachufan_0_a";
+	}
+>;
+export type AvatarItemDisplaySetPikachufan0M = AvatarItemDisplay<
+	"N_DISPLAY_set_pikachufan_0_m",
+	{
+		iconAddress: "set_pikachufan_0_b";
+	}
+>;
+export type AvatarItemDisplaySetPikachulibreF = AvatarItemDisplay<
+	"N_DISPLAY_set_pikachulibre_f",
+	{
+		iconAddress: "set_pikachulibre_a";
+	}
+>;
+export type AvatarItemDisplaySetPikachulibreM = AvatarItemDisplay<
+	"N_DISPLAY_set_pikachulibre_m",
+	{
+		iconAddress: "set_pikachulibre_b";
+	}
+>;
+export type AvatarItemDisplaySetPkmnhoodie001F = AvatarItemDisplay<
+	"N_DISPLAY_set_pkmnhoodie001_f",
+	{
+		iconAddress: "set_pkmnhoodie001_a";
+	}
+>;
+export type AvatarItemDisplaySetPkmnhoodie001M = AvatarItemDisplay<
+	"N_DISPLAY_set_pkmnhoodie001_m",
+	{
+		iconAddress: "set_pkmnhoodie001_b";
+	}
+>;
+export type AvatarItemDisplaySetPkmnhoodie004F = AvatarItemDisplay<
+	"N_DISPLAY_set_pkmnhoodie004_f",
+	{
+		iconAddress: "set_pkmnhoodie004_a";
+	}
+>;
+export type AvatarItemDisplaySetPkmnhoodie004M = AvatarItemDisplay<
+	"N_DISPLAY_set_pkmnhoodie004_m",
+	{
+		iconAddress: "set_pkmnhoodie004_b";
+	}
+>;
+export type AvatarItemDisplaySetPkmnhoodie007F = AvatarItemDisplay<
+	"N_DISPLAY_set_pkmnhoodie007_f",
+	{
+		iconAddress: "set_pkmnhoodie007_a";
+	}
+>;
+export type AvatarItemDisplaySetPkmnhoodie007M = AvatarItemDisplay<
+	"N_DISPLAY_set_pkmnhoodie007_m",
+	{
+		iconAddress: "set_pkmnhoodie007_b";
+	}
+>;
+export type AvatarItemDisplaySetProfwillowoutfitF = AvatarItemDisplay<
+	"N_DISPLAY_set_profwillowoutfit_f",
+	{
+		iconAddress: "set_profwillowoutfit_a";
+	}
+>;
+export type AvatarItemDisplaySetProfwillowoutfitM = AvatarItemDisplay<
+	"N_DISPLAY_set_profwillowoutfit_m",
+	{
+		iconAddress: "set_profwillowoutfit_b";
+	}
+>;
+export type AvatarItemDisplaySetPumpkabooitemsF = AvatarItemDisplay<
+	"N_DISPLAY_set_pumpkabooitems_f",
+	{
+		iconAddress: "set_pumpkabooitems_a";
+	}
+>;
+export type AvatarItemDisplaySetPumpkabooitemsM = AvatarItemDisplay<
+	"N_DISPLAY_set_pumpkabooitems_m",
+	{
+		iconAddress: "set_pumpkabooitems_b";
+	}
+>;
+export type AvatarItemDisplaySetRegiicejersiesF = AvatarItemDisplay<
+	"N_DISPLAY_set_regiicejersies_f",
+	{
+		iconAddress: "set_regiicejersies_a";
+	}
+>;
+export type AvatarItemDisplaySetRegiicejersiesM = AvatarItemDisplay<
+	"N_DISPLAY_set_regiicejersies_m",
+	{
+		iconAddress: "set_regiicejersies_b";
+	}
+>;
+export type AvatarItemDisplaySetRegirockjersiesF = AvatarItemDisplay<
+	"N_DISPLAY_set_regirockjersies_f",
+	{
+		iconAddress: "set_regirockjersies_a";
+	}
+>;
+export type AvatarItemDisplaySetRegirockjersiesM = AvatarItemDisplay<
+	"N_DISPLAY_set_regirockjersies_m",
+	{
+		iconAddress: "set_regirockjersies_b";
+	}
+>;
+export type AvatarItemDisplaySetRegisteeljersiesF = AvatarItemDisplay<
+	"N_DISPLAY_set_registeeljersies_f",
+	{
+		iconAddress: "set_registeeljersies_a";
+	}
+>;
+export type AvatarItemDisplaySetRegisteeljersiesM = AvatarItemDisplay<
+	"N_DISPLAY_set_registeeljersies_m",
+	{
+		iconAddress: "set_registeeljersies_b";
+	}
+>;
+export type AvatarItemDisplaySetRuinmaniacF = AvatarItemDisplay<
+	"N_DISPLAY_set_ruinmaniac_f",
+	{
+		iconAddress: "set_ruinmaniac_a";
+	}
+>;
+export type AvatarItemDisplaySetRuinmaniacM = AvatarItemDisplay<
+	"N_DISPLAY_set_ruinmaniac_m",
+	{
+		iconAddress: "set_ruinmaniac_b";
+	}
+>;
+export type AvatarItemDisplaySetS19gbl0 = AvatarItemDisplay<
+	"N_DISPLAY_set_s19gbl_0",
+	{
+		iconAddress: "set_s19gbl";
+	}
+>;
+export type AvatarItemDisplaySetS22gbl0 = AvatarItemDisplay<
+	"N_DISPLAY_set_s22gbl_0",
+	{
+		iconAddress: "set_s22gbl_0";
+	}
+>;
+export type AvatarItemDisplaySetShayminLandF = AvatarItemDisplay<
+	"N_DISPLAY_set_shaymin_land_f",
+	{
+		iconAddress: "set_shaymin_land_a";
+	}
+>;
+export type AvatarItemDisplaySetShayminLandM = AvatarItemDisplay<
+	"N_DISPLAY_set_shaymin_land_m",
+	{
+		iconAddress: "set_shaymin_land_b";
+	}
+>;
+export type AvatarItemDisplaySetShayminSkyF = AvatarItemDisplay<
+	"N_DISPLAY_set_shaymin_sky_f",
+	{
+		iconAddress: "set_shaymin_sky_a";
+	}
+>;
+export type AvatarItemDisplaySetShayminSkyM = AvatarItemDisplay<
+	"N_DISPLAY_set_shaymin_sky_m",
+	{
+		iconAddress: "set_shaymin_sky_b";
+	}
+>;
+export type AvatarItemDisplaySetSlowpoketailshirtsF = AvatarItemDisplay<
+	"N_DISPLAY_set_slowpoketailshirts_f",
+	{
+		iconAddress: "set_slowpoketailshirts_a";
+	}
+>;
+export type AvatarItemDisplaySetSlowpoketailshirtsM = AvatarItemDisplay<
+	"N_DISPLAY_set_slowpoketailshirts_m",
+	{
+		iconAddress: "set_slowpoketailshirts_b";
+	}
+>;
+export type AvatarItemDisplaySetSolgaleoitemsF = AvatarItemDisplay<
+	"N_DISPLAY_set_solgaleoitems_f",
+	{
+		iconAddress: "set_solgaleoitems_a";
+	}
+>;
+export type AvatarItemDisplaySetSolgaleoitemsM = AvatarItemDisplay<
+	"N_DISPLAY_set_solgaleoitems_m",
+	{
+		iconAddress: "set_solgaleoitems_b";
+	}
+>;
+export type AvatarItemDisplaySetSsF = AvatarItemDisplay<
+	"N_DISPLAY_set_ss_f",
+	{
+		iconAddress: "set_ss_a";
+	}
+>;
+export type AvatarItemDisplaySetSsM = AvatarItemDisplay<
+	"N_DISPLAY_set_ss_m",
+	{
+		iconAddress: "set_ss_b";
+	}
+>;
+export type AvatarItemDisplaySetStevenF = AvatarItemDisplay<
+	"N_DISPLAY_set_steven_f",
+	{
+		iconAddress: "set_steven_a";
+	}
+>;
+export type AvatarItemDisplaySetStevenM = AvatarItemDisplay<
+	"N_DISPLAY_set_steven_m",
+	{
+		iconAddress: "set_steven_b";
+	}
+>;
+export type AvatarItemDisplaySetStevenfirstF = AvatarItemDisplay<
+	"N_DISPLAY_set_stevenfirst_f",
+	{
+		iconAddress: "set_stevenfirst_a";
+	}
+>;
+export type AvatarItemDisplaySetStevenfirstM = AvatarItemDisplay<
+	"N_DISPLAY_set_stevenfirst_m",
+	{
+		iconAddress: "set_stevenfirst_b";
+	}
+>;
+export type AvatarItemDisplaySetSvcostumescarletschoolF = AvatarItemDisplay<
+	"N_DISPLAY_set_svcostumescarletschool_f",
+	{
+		iconAddress: "set_svcostumescarletschool_a";
+	}
+>;
+export type AvatarItemDisplaySetSvcostumescarletschoolM = AvatarItemDisplay<
+	"N_DISPLAY_set_svcostumescarletschool_m",
+	{
+		iconAddress: "set_svcostumescarletschool_b";
+	}
+>;
+export type AvatarItemDisplaySetSvcostumevioletschoolF = AvatarItemDisplay<
+	"N_DISPLAY_set_svcostumevioletschool_f",
+	{
+		iconAddress: "set_svcostumevioletschool_a";
+	}
+>;
+export type AvatarItemDisplaySetSvcostumevioletschoolM = AvatarItemDisplay<
+	"N_DISPLAY_set_svcostumevioletschool_m",
+	{
+		iconAddress: "set_svcostumevioletschool_b";
+	}
+>;
+export type AvatarItemDisplaySetSvdlc2fall0 = AvatarItemDisplay<
+	"N_DISPLAY_set_svdlc2fall_0",
+	{
+		iconAddress: "set_svdlc2fall_b";
+	}
+>;
+export type AvatarItemDisplaySetSvdlc2spring0 = AvatarItemDisplay<
+	"N_DISPLAY_set_svdlc2spring_0",
+	{
+		iconAddress: "set_svdlc2spring_a";
+	}
+>;
+export type AvatarItemDisplaySetSvdlcF = AvatarItemDisplay<
+	"N_DISPLAY_set_svdlc_f",
+	{
+		iconAddress: "set_svdlc_a";
+	}
+>;
+export type AvatarItemDisplaySetSvdlcM = AvatarItemDisplay<
+	"N_DISPLAY_set_svdlc_m",
+	{
+		iconAddress: "set_svdlc_b";
+	}
+>;
+export type AvatarItemDisplaySetSwshdlc2costumeF = AvatarItemDisplay<
+	"N_DISPLAY_set_swshdlc2costume_f",
+	{
+		iconAddress: "set_swshdlc2costume_a";
+	}
+>;
+export type AvatarItemDisplaySetSwshdlc2costumeM = AvatarItemDisplay<
+	"N_DISPLAY_set_swshdlc2costume_m",
+	{
+		iconAddress: "set_swshdlc2costume_b";
+	}
+>;
+export type AvatarItemDisplaySetSwshdlccostumeF = AvatarItemDisplay<
+	"N_DISPLAY_set_swshdlccostume_f",
+	{
+		iconAddress: "set_swshdlccostume_a";
+	}
+>;
+export type AvatarItemDisplaySetSwshdlccostumeM = AvatarItemDisplay<
+	"N_DISPLAY_set_swshdlccostume_m",
+	{
+		iconAddress: "set_swshdlccostume_b";
+	}
+>;
+export type AvatarItemDisplaySetSwshuniformchampionF = AvatarItemDisplay<
+	"N_DISPLAY_set_swshuniformchampion_f",
+	{
+		iconAddress: "set_swshuniformchampion_a";
+	}
+>;
+export type AvatarItemDisplaySetSwshuniformchampionM = AvatarItemDisplay<
+	"N_DISPLAY_set_swshuniformchampion_m",
+	{
+		iconAddress: "set_swshuniformchampion_b";
+	}
+>;
+export type AvatarItemDisplaySetSwshuniformdarkF = AvatarItemDisplay<
+	"N_DISPLAY_set_swshuniformdark_f",
+	{
+		iconAddress: "set_swshuniformdark_a";
+	}
+>;
+export type AvatarItemDisplaySetSwshuniformdarkM = AvatarItemDisplay<
+	"N_DISPLAY_set_swshuniformdark_m",
+	{
+		iconAddress: "set_swshuniformdark_b";
+	}
+>;
+export type AvatarItemDisplaySetSwshuniformdefaultF = AvatarItemDisplay<
+	"N_DISPLAY_set_swshuniformdefault_f",
+	{
+		iconAddress: "set_swshuniformdefault_a";
+	}
+>;
+export type AvatarItemDisplaySetSwshuniformdefaultM = AvatarItemDisplay<
+	"N_DISPLAY_set_swshuniformdefault_m",
+	{
+		iconAddress: "set_swshuniformdefault_b";
+	}
+>;
+export type AvatarItemDisplaySetSwshuniformdragonF = AvatarItemDisplay<
+	"N_DISPLAY_set_swshuniformdragon_f",
+	{
+		iconAddress: "set_swshuniformdragon_a";
+	}
+>;
+export type AvatarItemDisplaySetSwshuniformdragonM = AvatarItemDisplay<
+	"N_DISPLAY_set_swshuniformdragon_m",
+	{
+		iconAddress: "set_swshuniformdragon_b";
+	}
+>;
+export type AvatarItemDisplaySetSylveonitemsF = AvatarItemDisplay<
+	"N_DISPLAY_set_sylveonitems_f",
+	{
+		iconAddress: "set_sylveonitems_a";
+	}
+>;
+export type AvatarItemDisplaySetSylveonitemsM = AvatarItemDisplay<
+	"N_DISPLAY_set_sylveonitems_m",
+	{
+		iconAddress: "set_sylveonitems_b";
+	}
+>;
+export type AvatarItemDisplaySetTandemausitems0 = AvatarItemDisplay<
+	"N_DISPLAY_set_tandemausitems_0",
+	{
+		iconAddress: "set_tandemausitems_0";
+	}
+>;
+export type AvatarItemDisplaySetTcgcollabtshirtandcapF = AvatarItemDisplay<
+	"N_DISPLAY_set_tcgcollabtshirtandcap_f",
+	{
+		iconAddress: "set_tcgcollabtshirtandcap_a";
+	}
+>;
+export type AvatarItemDisplaySetTcgcollabtshirtandcapM = AvatarItemDisplay<
+	"N_DISPLAY_set_tcgcollabtshirtandcap_m",
+	{
+		iconAddress: "set_tcgcollabtshirtandcap_b";
+	}
+>;
+export type AvatarItemDisplaySetTeamaquaF = AvatarItemDisplay<
+	"N_DISPLAY_set_teamaqua_f",
+	{
+		iconAddress: "set_teamaqua_a";
+	}
+>;
+export type AvatarItemDisplaySetTeamaquaM = AvatarItemDisplay<
+	"N_DISPLAY_set_teamaqua_m",
+	{
+		iconAddress: "set_teamaqua_b";
+	}
+>;
+export type AvatarItemDisplaySetTeamblancheF = AvatarItemDisplay<
+	"N_DISPLAY_set_teamblanche_f",
+	{
+		iconAddress: "set_teamblanche_a";
+	}
+>;
+export type AvatarItemDisplaySetTeamblancheM = AvatarItemDisplay<
+	"N_DISPLAY_set_teamblanche_m",
+	{
+		iconAddress: "set_teamblanche_b";
+	}
+>;
+export type AvatarItemDisplaySetTeamcandelaF = AvatarItemDisplay<
+	"N_DISPLAY_set_teamcandela_f",
+	{
+		iconAddress: "set_teamcandela_a";
+	}
+>;
+export type AvatarItemDisplaySetTeamcandelaM = AvatarItemDisplay<
+	"N_DISPLAY_set_teamcandela_m",
+	{
+		iconAddress: "set_teamcandela_b";
+	}
+>;
+export type AvatarItemDisplaySetTeammagmaF = AvatarItemDisplay<
+	"N_DISPLAY_set_teammagma_f",
+	{
+		iconAddress: "set_teammagma_a";
+	}
+>;
+export type AvatarItemDisplaySetTeammagmaM = AvatarItemDisplay<
+	"N_DISPLAY_set_teammagma_m",
+	{
+		iconAddress: "set_teammagma_b";
+	}
+>;
+export type AvatarItemDisplaySetTeamrocket0F = AvatarItemDisplay<
+	"N_DISPLAY_set_teamrocket_0_f",
+	{
+		iconAddress: "set_teamrocket_0_a";
+	}
+>;
+export type AvatarItemDisplaySetTeamrocket0M = AvatarItemDisplay<
+	"N_DISPLAY_set_teamrocket_0_m",
+	{
+		iconAddress: "set_teamrocket_0_b";
+	}
+>;
+export type AvatarItemDisplaySetTeamrocket1F = AvatarItemDisplay<
+	"N_DISPLAY_set_teamrocket_1_f",
+	{
+		iconAddress: "set_teamrocket_1_a";
+	}
+>;
+export type AvatarItemDisplaySetTeamrocket1M = AvatarItemDisplay<
+	"N_DISPLAY_set_teamrocket_1_m",
+	{
+		iconAddress: "set_teamrocket_1_b";
+	}
+>;
+export type AvatarItemDisplaySetTeamskullF = AvatarItemDisplay<
+	"N_DISPLAY_set_teamskull_f",
+	{
+		iconAddress: "set_teamskull_a";
+	}
+>;
+export type AvatarItemDisplaySetTeamskullM = AvatarItemDisplay<
+	"N_DISPLAY_set_teamskull_m",
+	{
+		iconAddress: "set_teamskull_b";
+	}
+>;
+export type AvatarItemDisplaySetTeamsparkF = AvatarItemDisplay<
+	"N_DISPLAY_set_teamspark_f",
+	{
+		iconAddress: "set_teamspark_a";
+	}
+>;
+export type AvatarItemDisplaySetTeamsparkM = AvatarItemDisplay<
+	"N_DISPLAY_set_teamspark_m",
+	{
+		iconAddress: "set_teamspark_b";
+	}
+>;
+export type AvatarItemDisplaySetTeamyellgruntsA0 = AvatarItemDisplay<
+	"N_DISPLAY_set_teamyellgrunts_a_0",
+	{
+		iconAddress: "set_teamyellgrunts_a_0";
+	}
+>;
+export type AvatarItemDisplaySetTeamyellgruntsB0 = AvatarItemDisplay<
+	"N_DISPLAY_set_teamyellgrunts_b_0",
+	{
+		iconAddress: "set_teamyellgrunts_b_0";
+	}
+>;
+export type AvatarItemDisplaySetUltra0F = AvatarItemDisplay<
+	"N_DISPLAY_set_ultra_0_f",
+	{
+		iconAddress: "set_ultra_0_a";
+	}
+>;
+export type AvatarItemDisplaySetUltra0M = AvatarItemDisplay<
+	"N_DISPLAY_set_ultra_0_m",
+	{
+		iconAddress: "set_ultra_0_b";
+	}
+>;
+export type AvatarItemDisplaySetUltrareconsquadF = AvatarItemDisplay<
+	"N_DISPLAY_set_ultrareconsquad_f",
+	{
+		iconAddress: "set_ultrareconsquad_a";
+	}
+>;
+export type AvatarItemDisplaySetUltrareconsquadM = AvatarItemDisplay<
+	"N_DISPLAY_set_ultrareconsquad_m",
+	{
+		iconAddress: "set_ultrareconsquad_b";
+	}
+>;
+export type AvatarItemDisplaySetUltrareconsquadbF = AvatarItemDisplay<
+	"N_DISPLAY_set_ultrareconsquadb_f",
+	{
+		iconAddress: "set_ultrareconsquadb_a";
+	}
+>;
+export type AvatarItemDisplaySetVeterantrainerxyF = AvatarItemDisplay<
+	"N_DISPLAY_set_veterantrainerxy_f",
+	{
+		iconAddress: "set_veterantrainerxy_a";
+	}
+>;
+export type AvatarItemDisplaySetVeterantrainerxyM = AvatarItemDisplay<
+	"N_DISPLAY_set_veterantrainerxy_m",
+	{
+		iconAddress: "set_veterantrainerxy_b";
+	}
+>;
+export type AvatarItemDisplaySetWcs2022winnersitemsF = AvatarItemDisplay<
+	"N_DISPLAY_set_wcs2022winnersitems_f",
+	{
+		iconAddress: "set_wcs2022winnersitems_a";
+	}
+>;
+export type AvatarItemDisplaySetWcs2022winnersitemsM = AvatarItemDisplay<
+	"N_DISPLAY_set_wcs2022winnersitems_m",
+	{
+		iconAddress: "set_wcs2022winnersitems_b";
+	}
+>;
+export type AvatarItemDisplaySetWcs2024paiditems0 = AvatarItemDisplay<
+	"N_DISPLAY_set_wcs2024paiditems_0",
+	{
+		iconAddress: "set_wcs2024paiditems_0";
+	}
+>;
+export type AvatarItemDisplaySetWcs2024winnersitems0 = AvatarItemDisplay<
+	"N_DISPLAY_set_wcs2024winnersitems_0",
+	{
+		iconAddress: "set_wcs2024winnersitems_0";
+	}
+>;
+export type AvatarItemDisplaySetWcs2025winnersitems0 = AvatarItemDisplay<
+	"N_DISPLAY_set_wcs2025winnersitems_0",
+	{
+		iconAddress: "set_wcs2025winnersitems_0";
+	}
+>;
+export type AvatarItemDisplaySetWinter2023 = AvatarItemDisplay<
+	"N_DISPLAY_set_winter2023",
+	{
+		iconAddress: "set_winter2023_a";
+	}
+>;
+export type AvatarItemDisplaySetZacostumeA = AvatarItemDisplay<
+	"N_DISPLAY_set_zacostume_a",
+	{
+		iconAddress: "set_zacostume_a";
+	}
+>;
+export type AvatarItemDisplaySetZacostumeB = AvatarItemDisplay<
+	"N_DISPLAY_set_zacostume_b",
+	{
+		iconAddress: "set_zacostume_b";
+	}
+>;
 
 export type AvatarItemDisplayMasterfileEntry =
 	| AvatarItemDisplayMBackpackEggbackpack0

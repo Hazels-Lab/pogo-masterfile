@@ -32,6 +32,7 @@ export type * from "./groups/level-up-rewards.ts";
 export type * from "./groups/limited-purchase-sku-settings.ts";
 export type * from "./groups/location-card-settings.ts";
 export type * from "./groups/mega-evo-level-settings.ts";
+export type * from "./groups/misc.ts";
 export type * from "./groups/move-sequence-settings.ts";
 export type * from "./groups/move-settings.ts";
 export type * from "./groups/non-combat-move-settings.ts";
@@ -57,7 +58,6 @@ export type * from "./groups/vnext-battle-config.ts";
 export type * from "./groups/vs-seeker-loot.ts";
 export type * from "./groups/vs-seeker-pokemon-rewards.ts";
 export type * from "./groups/weather-affinities.ts";
-export type * from "./groups/misc.ts";
 
 import type { AvatarCustomizationMasterfileEntry } from "./groups/avatar-customization.ts";
 import type { AvatarGroupOrderSettingsMasterfileEntry } from "./groups/avatar-group-order-settings.ts";
@@ -93,6 +93,7 @@ import type { LevelUpRewardsMasterfileEntry } from "./groups/level-up-rewards.ts
 import type { LimitedPurchaseSkuSettingsMasterfileEntry } from "./groups/limited-purchase-sku-settings.ts";
 import type { LocationCardSettingsMasterfileEntry } from "./groups/location-card-settings.ts";
 import type { MegaEvoLevelSettingsMasterfileEntry } from "./groups/mega-evo-level-settings.ts";
+import type { MiscMasterfileEntry } from "./groups/misc.ts";
 import type { MoveSequenceSettingsMasterfileEntry } from "./groups/move-sequence-settings.ts";
 import type { MoveSettingsMasterfileEntry } from "./groups/move-settings.ts";
 import type { NonCombatMoveSettingsMasterfileEntry } from "./groups/non-combat-move-settings.ts";
@@ -118,7 +119,6 @@ import type { VnextBattleConfigMasterfileEntry } from "./groups/vnext-battle-con
 import type { VsSeekerLootMasterfileEntry } from "./groups/vs-seeker-loot.ts";
 import type { VsSeekerPokemonRewardsMasterfileEntry } from "./groups/vs-seeker-pokemon-rewards.ts";
 import type { WeatherAffinitiesMasterfileEntry } from "./groups/weather-affinities.ts";
-import type { MiscMasterfileEntry } from "./groups/misc.ts";
 
 export type MasterfileEntry =
 	| AvatarCustomizationMasterfileEntry

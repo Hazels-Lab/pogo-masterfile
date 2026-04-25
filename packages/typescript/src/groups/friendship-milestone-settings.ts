@@ -1,40 +1,141 @@
-export interface FriendshipMilestoneSettings<TemplateID extends string> {
+export interface FriendshipMilestoneSettings<
+	TemplateID extends string = string,
+	TData extends FriendshipMilestoneSettingsData = FriendshipMilestoneSettingsData,
+> {
 	templateId: TemplateID;
-	data: FriendshipMilestoneSettingsData<TemplateID>;
-}
-
-export interface FriendshipMilestoneSettingsData<TemplateID extends string> {
-	templateId: TemplateID;
-	friendshipMilestoneSettings: {
-		attackBonusPercentage: FriendshipMilestoneSettingsAttackBonusPercentage;
-		milestoneXpReward: FriendshipMilestoneSettingsMilestoneXpReward;
-		minPointsToReach?: FriendshipMilestoneSettingsMinPointsToReach;
-		raidBallBonus?: FriendshipMilestoneSettingsRaidBallBonus;
-		relativePointsToReach?: 90;
-		tradingDiscount?: FriendshipMilestoneSettingsTradingDiscount;
-		unlockedLuckyFriendApplicator?: true;
-		unlockedTrading: Array<FriendshipMilestoneSettingsUnlockedTrading>;
+	data: {
+		templateId: TemplateID;
+		friendshipMilestoneSettings: TData;
 	};
 }
 
-export type FriendshipMilestoneSettingsAttackBonusPercentage = 1 | 1.03 | 1.05 | 1.07 | 1.1 | 1.12;
+export interface FriendshipMilestoneSettingsData {
+	attackBonusPercentage?: number;
+	milestoneXpReward?: number;
+	minPointsToReach?: number;
+	raidBallBonus?: number;
+	relativePointsToReach?: number;
+	tradingDiscount?: number;
+	unlockedLuckyFriendApplicator?: boolean;
+	unlockedTrading?: Array<string>;
+}
 
-export type FriendshipMilestoneSettingsMilestoneXpReward = 1000 | 3000 | 10000 | 50000 | 100000 | 150000;
-
-export type FriendshipMilestoneSettingsMinPointsToReach = 1 | 7 | 30 | 90;
-
-export type FriendshipMilestoneSettingsRaidBallBonus = 1 | 2 | 4;
-
-export type FriendshipMilestoneSettingsTradingDiscount = 0.2 | 0.92 | 0.96;
-
-export type FriendshipMilestoneSettingsUnlockedTrading = "FORM_NON_POKEDEX" | "GMAX_IN_POKEDEX" | "GMAX_NON_POKEDEX" | "LEGENDARY_NON_POKEDEX" | "REGIONAL_NON_POKEDEX" | "REGULAR_IN_POKEDEX" | "REGULAR_NON_POKEDEX" | "SHINY_NON_POKEDEX" | "SPECIAL_IN_POKEDEX";
-
-export type FriendshipMilestoneSettings0 = FriendshipMilestoneSettings<"FRIENDSHIP_LEVEL_0">;
-export type FriendshipMilestoneSettings1 = FriendshipMilestoneSettings<"FRIENDSHIP_LEVEL_1">;
-export type FriendshipMilestoneSettings2 = FriendshipMilestoneSettings<"FRIENDSHIP_LEVEL_2">;
-export type FriendshipMilestoneSettings3 = FriendshipMilestoneSettings<"FRIENDSHIP_LEVEL_3">;
-export type FriendshipMilestoneSettings4 = FriendshipMilestoneSettings<"FRIENDSHIP_LEVEL_4">;
-export type FriendshipMilestoneSettings5 = FriendshipMilestoneSettings<"FRIENDSHIP_LEVEL_5">;
+export type FriendshipMilestoneSettings0 = FriendshipMilestoneSettings<
+	"FRIENDSHIP_LEVEL_0",
+	{
+		attackBonusPercentage: 1;
+		milestoneXpReward: 1000;
+		unlockedTrading: ["REGULAR_IN_POKEDEX"];
+	}
+>;
+export type FriendshipMilestoneSettings1 = FriendshipMilestoneSettings<
+	"FRIENDSHIP_LEVEL_1",
+	{
+		attackBonusPercentage: 1.03;
+		milestoneXpReward: 3000;
+		minPointsToReach: 1;
+		unlockedTrading: [
+			"REGULAR_IN_POKEDEX",
+			"SPECIAL_IN_POKEDEX",
+			"REGULAR_NON_POKEDEX",
+			"REGIONAL_NON_POKEDEX",
+			"FORM_NON_POKEDEX",
+			"LEGENDARY_NON_POKEDEX",
+			"SHINY_NON_POKEDEX",
+			"GMAX_NON_POKEDEX",
+			"GMAX_IN_POKEDEX",
+		];
+	}
+>;
+export type FriendshipMilestoneSettings2 = FriendshipMilestoneSettings<
+	"FRIENDSHIP_LEVEL_2",
+	{
+		attackBonusPercentage: 1.05;
+		milestoneXpReward: 10000;
+		minPointsToReach: 7;
+		raidBallBonus: 1;
+		tradingDiscount: 0.2;
+		unlockedLuckyFriendApplicator: true;
+		unlockedTrading: [
+			"REGULAR_IN_POKEDEX",
+			"SPECIAL_IN_POKEDEX",
+			"REGULAR_NON_POKEDEX",
+			"REGIONAL_NON_POKEDEX",
+			"FORM_NON_POKEDEX",
+			"LEGENDARY_NON_POKEDEX",
+			"SHINY_NON_POKEDEX",
+			"GMAX_NON_POKEDEX",
+			"GMAX_IN_POKEDEX",
+		];
+	}
+>;
+export type FriendshipMilestoneSettings3 = FriendshipMilestoneSettings<
+	"FRIENDSHIP_LEVEL_3",
+	{
+		attackBonusPercentage: 1.07;
+		milestoneXpReward: 50000;
+		minPointsToReach: 30;
+		raidBallBonus: 2;
+		tradingDiscount: 0.92;
+		unlockedLuckyFriendApplicator: true;
+		unlockedTrading: [
+			"REGULAR_IN_POKEDEX",
+			"SPECIAL_IN_POKEDEX",
+			"REGULAR_NON_POKEDEX",
+			"REGIONAL_NON_POKEDEX",
+			"FORM_NON_POKEDEX",
+			"LEGENDARY_NON_POKEDEX",
+			"SHINY_NON_POKEDEX",
+			"GMAX_NON_POKEDEX",
+			"GMAX_IN_POKEDEX",
+		];
+	}
+>;
+export type FriendshipMilestoneSettings4 = FriendshipMilestoneSettings<
+	"FRIENDSHIP_LEVEL_4",
+	{
+		attackBonusPercentage: 1.1;
+		milestoneXpReward: 100000;
+		minPointsToReach: 90;
+		raidBallBonus: 4;
+		tradingDiscount: 0.96;
+		unlockedLuckyFriendApplicator: true;
+		unlockedTrading: [
+			"REGULAR_IN_POKEDEX",
+			"SPECIAL_IN_POKEDEX",
+			"REGULAR_NON_POKEDEX",
+			"REGIONAL_NON_POKEDEX",
+			"FORM_NON_POKEDEX",
+			"LEGENDARY_NON_POKEDEX",
+			"SHINY_NON_POKEDEX",
+			"GMAX_NON_POKEDEX",
+			"GMAX_IN_POKEDEX",
+		];
+	}
+>;
+export type FriendshipMilestoneSettings5 = FriendshipMilestoneSettings<
+	"FRIENDSHIP_LEVEL_5",
+	{
+		attackBonusPercentage: 1.12;
+		milestoneXpReward: 150000;
+		minPointsToReach: 90;
+		raidBallBonus: 4;
+		relativePointsToReach: 90;
+		tradingDiscount: 0.96;
+		unlockedLuckyFriendApplicator: true;
+		unlockedTrading: [
+			"REGULAR_IN_POKEDEX",
+			"SPECIAL_IN_POKEDEX",
+			"REGULAR_NON_POKEDEX",
+			"REGIONAL_NON_POKEDEX",
+			"FORM_NON_POKEDEX",
+			"LEGENDARY_NON_POKEDEX",
+			"SHINY_NON_POKEDEX",
+			"GMAX_NON_POKEDEX",
+			"GMAX_IN_POKEDEX",
+		];
+	}
+>;
 
 export type FriendshipMilestoneSettingsMasterfileEntry =
 	| FriendshipMilestoneSettings0
