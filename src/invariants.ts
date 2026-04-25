@@ -1,3 +1,5 @@
+import { inferJsonType } from "./infer.ts";
+import type { InferredProperty, InferredType } from "./infer.ts";
 import type { Group } from "./group.ts";
 
 export function deepEqual(a: unknown, b: unknown): boolean {
@@ -98,4 +100,28 @@ function walkInvariants(
 	}
 
 	return tree;
+}
+
+export function invariantsToInferredType(tree: InvariantTree): InferredType {
+	const properties: InferredProperty[] = [...tree.entries()]
+		.sort(([a], [b]) => a.localeCompare(b))
+		.map(([name, node]) => {
+			if (node.kind === "constant") {
+				return { name, optional: false, type: inferJsonType(node.value) };
+			}
+			if (node.kind === "templateIdTie") {
+				return {
+					name,
+					optional: false,
+					type: { kind: "templateIdReference" } as InferredType,
+				};
+			}
+			return {
+				name,
+				optional: false,
+				type: invariantsToInferredType(node.children),
+			};
+		});
+
+	return { kind: "object", properties };
 }

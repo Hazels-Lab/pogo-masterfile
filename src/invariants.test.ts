@@ -1,5 +1,6 @@
 import { describe, expect, test } from "bun:test";
-import { deepEqual, detectInvariants } from "./invariants.ts";
+import { deepEqual, detectInvariants, invariantsToInferredType } from "./invariants.ts";
+import type { InvariantNode, InvariantTree } from "./invariants.ts";
 import { MOCK_MASTERFILE } from "./fixtures.ts";
 import { groupEntries } from "./group.ts";
 
@@ -133,5 +134,72 @@ describe("detectInvariants", () => {
 		const tree = detectInvariants(group);
 		expect(tree.get("a")).toEqual({ kind: "constant", value: "shared" });
 		expect(tree.has("b")).toBe(false);
+	});
+});
+
+describe("invariantsToInferredType", () => {
+	test("converts a Kind 2 tie to a templateIdReference type", () => {
+		const tree: InvariantTree = new Map([["attackType", { kind: "templateIdTie" }]]);
+		const result = invariantsToInferredType(tree);
+		expect(result).toEqual({
+			kind: "object",
+			properties: [
+				{
+					name: "attackType",
+					optional: false,
+					type: { kind: "templateIdReference" },
+				},
+			],
+		});
+	});
+
+	test("converts a Kind 1 numeric constant to a literal number type", () => {
+		const tree: InvariantTree = new Map([["accuracyChance", { kind: "constant", value: 1 }]]);
+		const result = invariantsToInferredType(tree);
+		expect(result.kind).toBe("object");
+		if (result.kind !== "object") throw new Error("unreachable");
+		expect(result.properties).toHaveLength(1);
+		const prop = result.properties[0]!;
+		expect(prop.name).toBe("accuracyChance");
+		expect(prop.optional).toBe(false);
+		expect(prop.type.kind).toBe("number");
+		if (prop.type.kind !== "number") throw new Error("unreachable");
+		expect(prop.type.literals).toEqual([1]);
+	});
+
+	test("converts a Kind 1 tuple constant to a tuple-of-literals type", () => {
+		const tree: InvariantTree = new Map([["windows", { kind: "constant", value: [0, 250] }]]);
+		const result = invariantsToInferredType(tree);
+		if (result.kind !== "object") throw new Error("unreachable");
+		const prop = result.properties[0]!;
+		if (prop.type.kind !== "tuple") throw new Error("unreachable");
+		expect(prop.type.items).toHaveLength(2);
+	});
+
+	test("recurses into nested nodes", () => {
+		const tree: InvariantTree = new Map<string, InvariantNode>([
+			[
+				"effectGroup",
+				{
+					kind: "nested",
+					children: new Map<string, InvariantNode>([["accuracyChance", { kind: "constant", value: 1 }]]),
+				},
+			],
+		]);
+		const result = invariantsToInferredType(tree);
+		if (result.kind !== "object") throw new Error("unreachable");
+		const effectGroup = result.properties[0]!;
+		expect(effectGroup.name).toBe("effectGroup");
+		expect(effectGroup.type.kind).toBe("object");
+	});
+
+	test("sorts properties alphabetically", () => {
+		const tree: InvariantTree = new Map([
+			["zeta", { kind: "constant", value: 1 }],
+			["alpha", { kind: "constant", value: 2 }],
+		]);
+		const result = invariantsToInferredType(tree);
+		if (result.kind !== "object") throw new Error("unreachable");
+		expect(result.properties.map((p) => p.name)).toEqual(["alpha", "zeta"]);
 	});
 });
