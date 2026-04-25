@@ -10,64 +10,62 @@ export interface PokemonExtendedSettings<
 }
 
 export interface PokemonExtendedSettingsData {
-	breadOverrides?: Array<
-		{
-			averageHeightM?: number;
-			averageWeightKg?: number;
-			breadMode?: number | string;
-			camera?: {
-				cylinderGroundM?: number;
-				cylinderHeightM: number;
-				cylinderRadiusM: number;
-			};
-			catchOverrideSettings?: {
-				collisionHeadRadiusM: number;
-				collisionHeightM?: number;
-				collisionRadiusM: number;
-			};
-			maxBattleTrainerVisualSettings?: {
-				xOffset?: number;
-				yOffset?: number;
-			};
-			maxBattleVisualSettings?: {
-				scale?: number;
-				xOffset?: number;
-				yOffset?: number;
-			};
-			maxEncounterVisualSettings?: {
-				cameraDistance?: number;
-				cameraFov?: number;
-				maxReticleSize?: number;
-				scale?: number;
-				yOffset?: number;
-			};
-			maxLobbyVisualSettings?: {
-				cameraDistance?: number;
-				cameraFov?: number;
-				scale?: number;
-				xOffset?: number;
-				yOffset?: number;
-			};
-			maxPowerspotTopperVisualSettings?: {
-				scale: number;
-			};
-			maxStationVisualSettings?: {
-				scale?: number;
-				xOffset?: number;
-				yOffset?: number;
-			};
-			modelHeight?: number;
-			modelScaleV2?: number;
-			sizeSettings?: {
-				mLowerBound: number;
-				mUpperBound: number;
-				xlUpperBound: number;
-				xsLowerBound: number;
-				xxlUpperBound?: number;
-				xxsLowerBound: number;
-			};
-		}
-	>;
+	breadOverrides?: Array<{
+		averageHeightM?: number;
+		averageWeightKg?: number;
+		breadMode?: number | string;
+		camera?: {
+			cylinderGroundM?: number;
+			cylinderHeightM: number;
+			cylinderRadiusM: number;
+		};
+		catchOverrideSettings?: {
+			collisionHeadRadiusM: number;
+			collisionHeightM?: number;
+			collisionRadiusM: number;
+		};
+		maxBattleTrainerVisualSettings?: {
+			xOffset?: number;
+			yOffset?: number;
+		};
+		maxBattleVisualSettings?: {
+			scale?: number;
+			xOffset?: number;
+			yOffset?: number;
+		};
+		maxEncounterVisualSettings?: {
+			cameraDistance?: number;
+			cameraFov?: number;
+			maxReticleSize?: number;
+			scale?: number;
+			yOffset?: number;
+		};
+		maxLobbyVisualSettings?: {
+			cameraDistance?: number;
+			cameraFov?: number;
+			scale?: number;
+			xOffset?: number;
+			yOffset?: number;
+		};
+		maxPowerspotTopperVisualSettings?: {
+			scale: number;
+		};
+		maxStationVisualSettings?: {
+			scale?: number;
+			xOffset?: number;
+			yOffset?: number;
+		};
+		modelHeight?: number;
+		modelScaleV2?: number;
+		sizeSettings?: {
+			mLowerBound: number;
+			mUpperBound: number;
+			xlUpperBound: number;
+			xsLowerBound: number;
+			xxlUpperBound?: number;
+			xxsLowerBound: number;
+		};
+	}>;
 	form?: number | string;
 	sizeSettings?: {
 		disablePokedexRecordDisplayForForms?: boolean;
@@ -82,19 +80,17 @@ export interface PokemonExtendedSettingsData {
 		xxsLowerBound?: number;
 		xxsScaleMultiplier?: number;
 	};
-	tempEvoOverrides?: Array<
-		{
-			sizeSettings: {
-				mLowerBound: number;
-				mUpperBound: number;
-				xlUpperBound: number;
-				xsLowerBound: number;
-				xxlUpperBound: number;
-				xxsLowerBound: number;
-			};
-			tempEvoId: string;
-		}
-	>;
+	tempEvoOverrides?: Array<{
+		sizeSettings: {
+			mLowerBound: number;
+			mUpperBound: number;
+			xlUpperBound: number;
+			xsLowerBound: number;
+			xxlUpperBound: number;
+			xxsLowerBound: number;
+		};
+		tempEvoId: string;
+	}>;
 	uniqueId?: string;
 }
 
@@ -118,7 +114,7 @@ export type PokemonExtendedSettingsV0001PokemonBulbasaur = PokemonExtendedSettin
 				maxStationVisualSettings: {
 					scale: 2.59;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.525;
@@ -166,7 +162,7 @@ export type PokemonExtendedSettingsV0001PokemonBulbasaurNormal = PokemonExtended
 				maxStationVisualSettings: {
 					scale: 2.59;
 				};
-			}
+			},
 		];
 		form: "BULBASAUR_NORMAL";
 		sizeSettings: {
@@ -200,7 +196,7 @@ export type PokemonExtendedSettingsV0002PokemonIvysaur = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 1.86;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.75;
@@ -233,7 +229,7 @@ export type PokemonExtendedSettingsV0002PokemonIvysaurNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 1.86;
 				};
-			}
+			},
 		];
 		form: "IVYSAUR_NORMAL";
 		sizeSettings: {
@@ -294,7 +290,7 @@ export type PokemonExtendedSettingsV0003PokemonVenusaur = PokemonExtendedSetting
 				};
 				modelHeight: 1.54;
 				modelScaleV2: 1;
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.5;
@@ -315,7 +311,7 @@ export type PokemonExtendedSettingsV0003PokemonVenusaur = PokemonExtendedSetting
 					xxsLowerBound: 1.176;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "VENUSAUR";
 	}
@@ -382,7 +378,7 @@ export type PokemonExtendedSettingsV0003PokemonVenusaurNormal = PokemonExtendedS
 				};
 				modelHeight: 1.54;
 				modelScaleV2: 1;
-			}
+			},
 		];
 		form: "VENUSAUR_NORMAL";
 		sizeSettings: {
@@ -404,7 +400,7 @@ export type PokemonExtendedSettingsV0003PokemonVenusaurNormal = PokemonExtendedS
 					xxsLowerBound: 1.176;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "VENUSAUR";
 	}
@@ -429,7 +425,7 @@ export type PokemonExtendedSettingsV0004PokemonCharmander = PokemonExtendedSetti
 				maxStationVisualSettings: {
 					scale: 3.02;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.45;
@@ -477,7 +473,7 @@ export type PokemonExtendedSettingsV0004PokemonCharmanderNormal = PokemonExtende
 				maxStationVisualSettings: {
 					scale: 3.02;
 				};
-			}
+			},
 		];
 		form: "CHARMANDER_NORMAL";
 		sizeSettings: {
@@ -511,7 +507,7 @@ export type PokemonExtendedSettingsV0005PokemonCharmeleon = PokemonExtendedSetti
 				maxStationVisualSettings: {
 					scale: 2.26;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.825;
@@ -544,7 +540,7 @@ export type PokemonExtendedSettingsV0005PokemonCharmeleonNormal = PokemonExtende
 				maxStationVisualSettings: {
 					scale: 2.26;
 				};
-			}
+			},
 		];
 		form: "CHARMELEON_NORMAL";
 		sizeSettings: {
@@ -599,7 +595,7 @@ export type PokemonExtendedSettingsV0006PokemonCharizard = PokemonExtendedSettin
 				};
 				modelHeight: 2.2;
 				modelScaleV2: 1.31;
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.275;
@@ -631,7 +627,7 @@ export type PokemonExtendedSettingsV0006PokemonCharizard = PokemonExtendedSettin
 					xxsLowerBound: 0.833;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
-			}
+			},
 		];
 		uniqueId: "CHARIZARD";
 	}
@@ -692,7 +688,7 @@ export type PokemonExtendedSettingsV0006PokemonCharizardNormal = PokemonExtended
 				};
 				modelHeight: 2.2;
 				modelScaleV2: 1.31;
-			}
+			},
 		];
 		form: "CHARIZARD_NORMAL";
 		sizeSettings: {
@@ -725,7 +721,7 @@ export type PokemonExtendedSettingsV0006PokemonCharizardNormal = PokemonExtended
 					xxsLowerBound: 0.833;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
-			}
+			},
 		];
 		uniqueId: "CHARIZARD";
 	}
@@ -750,7 +746,7 @@ export type PokemonExtendedSettingsV0007PokemonSquirtle = PokemonExtendedSetting
 				maxStationVisualSettings: {
 					scale: 3.58;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.375;
@@ -798,7 +794,7 @@ export type PokemonExtendedSettingsV0007PokemonSquirtleNormal = PokemonExtendedS
 				maxStationVisualSettings: {
 					scale: 3.58;
 				};
-			}
+			},
 		];
 		form: "SQUIRTLE_NORMAL";
 		sizeSettings: {
@@ -832,7 +828,7 @@ export type PokemonExtendedSettingsV0008PokemonWartortle = PokemonExtendedSettin
 				maxStationVisualSettings: {
 					scale: 2.33;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.75;
@@ -865,7 +861,7 @@ export type PokemonExtendedSettingsV0008PokemonWartortleNormal = PokemonExtended
 				maxStationVisualSettings: {
 					scale: 2.33;
 				};
-			}
+			},
 		];
 		form: "WARTORTLE_NORMAL";
 		sizeSettings: {
@@ -922,7 +918,7 @@ export type PokemonExtendedSettingsV0009PokemonBlastoise = PokemonExtendedSettin
 				};
 				modelHeight: 2.23;
 				modelScaleV2: 0.94;
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.2;
@@ -943,7 +939,7 @@ export type PokemonExtendedSettingsV0009PokemonBlastoise = PokemonExtendedSettin
 					xxsLowerBound: 0.784;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "BLASTOISE";
 	}
@@ -1006,7 +1002,7 @@ export type PokemonExtendedSettingsV0009PokemonBlastoiseNormal = PokemonExtended
 				};
 				modelHeight: 2.23;
 				modelScaleV2: 0.94;
-			}
+			},
 		];
 		form: "BLASTOISE_NORMAL";
 		sizeSettings: {
@@ -1028,7 +1024,7 @@ export type PokemonExtendedSettingsV0009PokemonBlastoiseNormal = PokemonExtended
 					xxsLowerBound: 0.784;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "BLASTOISE";
 	}
@@ -1050,7 +1046,7 @@ export type PokemonExtendedSettingsV0010PokemonCaterpie = PokemonExtendedSetting
 				maxStationVisualSettings: {
 					scale: 7.68;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.225;
@@ -1080,7 +1076,7 @@ export type PokemonExtendedSettingsV0010PokemonCaterpieGofest2026 = PokemonExten
 				maxStationVisualSettings: {
 					scale: 7.68;
 				};
-			}
+			},
 		];
 		form: 3346;
 		sizeSettings: {
@@ -1111,7 +1107,7 @@ export type PokemonExtendedSettingsV0010PokemonCaterpieNormal = PokemonExtendedS
 				maxStationVisualSettings: {
 					scale: 7.68;
 				};
-			}
+			},
 		];
 		form: "CATERPIE_NORMAL";
 		sizeSettings: {
@@ -1142,7 +1138,7 @@ export type PokemonExtendedSettingsV0011PokemonMetapod = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 2.59;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.525;
@@ -1172,7 +1168,7 @@ export type PokemonExtendedSettingsV0011PokemonMetapodNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 2.59;
 				};
-			}
+			},
 		];
 		form: "METAPOD_NORMAL";
 		sizeSettings: {
@@ -1228,7 +1224,7 @@ export type PokemonExtendedSettingsV0012PokemonButterfree = PokemonExtendedSetti
 				};
 				modelHeight: 1.31;
 				modelScaleV2: 1;
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.825;
@@ -1283,7 +1279,7 @@ export type PokemonExtendedSettingsV0012PokemonButterfreeNormal = PokemonExtende
 				};
 				modelHeight: 1.31;
 				modelScaleV2: 1;
-			}
+			},
 		];
 		form: "BUTTERFREE_NORMAL";
 		sizeSettings: {
@@ -1377,7 +1373,7 @@ export type PokemonExtendedSettingsV0015PokemonBeedrill = PokemonExtendedSetting
 					xxsLowerBound: 0.686;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "BEEDRILL";
 	}
@@ -1405,7 +1401,7 @@ export type PokemonExtendedSettingsV0015PokemonBeedrillNormal = PokemonExtendedS
 					xxsLowerBound: 0.686;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "BEEDRILL";
 	}
@@ -1490,7 +1486,7 @@ export type PokemonExtendedSettingsV0018PokemonPidgeot = PokemonExtendedSettings
 					xxsLowerBound: 1.078;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "PIDGEOT";
 	}
@@ -1518,7 +1514,7 @@ export type PokemonExtendedSettingsV0018PokemonPidgeotNormal = PokemonExtendedSe
 					xxsLowerBound: 1.078;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "PIDGEOT";
 	}
@@ -1774,7 +1770,7 @@ export type PokemonExtendedSettingsV0025PokemonPikachu = PokemonExtendedSettings
 				};
 				modelHeight: 2.57;
 				modelScaleV2: 0.86;
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.3;
@@ -2164,7 +2160,7 @@ export type PokemonExtendedSettingsV0025PokemonPikachuGofest2026CapBlue = Pokemo
 				};
 				modelHeight: 2.57;
 				modelScaleV2: 0.86;
-			}
+			},
 		];
 		form: 3343;
 		sizeSettings: {
@@ -2225,7 +2221,7 @@ export type PokemonExtendedSettingsV0025PokemonPikachuGofest2026CapRed = Pokemon
 				};
 				modelHeight: 2.57;
 				modelScaleV2: 0.86;
-			}
+			},
 		];
 		form: 3344;
 		sizeSettings: {
@@ -2286,7 +2282,7 @@ export type PokemonExtendedSettingsV0025PokemonPikachuGofest2026CapYellow = Poke
 				};
 				modelHeight: 2.57;
 				modelScaleV2: 0.86;
-			}
+			},
 		];
 		form: 3345;
 		sizeSettings: {
@@ -2617,7 +2613,7 @@ export type PokemonExtendedSettingsV0025PokemonPikachuNormal = PokemonExtendedSe
 				};
 				modelHeight: 2.57;
 				modelScaleV2: 0.86;
-			}
+			},
 		];
 		form: "PIKACHU_NORMAL";
 		sizeSettings: {
@@ -2891,7 +2887,7 @@ export type PokemonExtendedSettingsV0026PokemonRaichu = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 2.9;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.6;
@@ -2939,7 +2935,7 @@ export type PokemonExtendedSettingsV0026PokemonRaichuNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 2.9;
 				};
-			}
+			},
 		];
 		form: "RAICHU_NORMAL";
 		sizeSettings: {
@@ -3818,7 +3814,7 @@ export type PokemonExtendedSettingsV0052PokemonMeowth = PokemonExtendedSettings<
 				};
 				modelHeight: 3.9;
 				modelScaleV2: 1.1;
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.3;
@@ -3849,7 +3845,7 @@ export type PokemonExtendedSettingsV0052PokemonMeowthAlola = PokemonExtendedSett
 				maxStationVisualSettings: {
 					scale: 4.25;
 				};
-			}
+			},
 		];
 		form: "MEOWTH_ALOLA";
 		sizeSettings: {
@@ -3881,7 +3877,7 @@ export type PokemonExtendedSettingsV0052PokemonMeowthGalarian = PokemonExtendedS
 				maxStationVisualSettings: {
 					scale: 4.25;
 				};
-			}
+			},
 		];
 		form: "MEOWTH_GALARIAN";
 		sizeSettings: {
@@ -3945,7 +3941,7 @@ export type PokemonExtendedSettingsV0052PokemonMeowthNormal = PokemonExtendedSet
 				};
 				modelHeight: 3.9;
 				modelScaleV2: 1.1;
-			}
+			},
 		];
 		form: "MEOWTH_NORMAL";
 		sizeSettings: {
@@ -4151,7 +4147,7 @@ export type PokemonExtendedSettingsV0058PokemonGrowlithe = PokemonExtendedSettin
 				maxStationVisualSettings: {
 					scale: 2.45;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.525;
@@ -4196,7 +4192,7 @@ export type PokemonExtendedSettingsV0058PokemonGrowlitheNormal = PokemonExtended
 				maxStationVisualSettings: {
 					scale: 2.45;
 				};
-			}
+			},
 		];
 		form: "GROWLITHE_NORMAL";
 		sizeSettings: {
@@ -4227,7 +4223,7 @@ export type PokemonExtendedSettingsV0059PokemonArcanine = PokemonExtendedSetting
 				maxStationVisualSettings: {
 					scale: 1.08;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.425;
@@ -4272,7 +4268,7 @@ export type PokemonExtendedSettingsV0059PokemonArcanineNormal = PokemonExtendedS
 				maxStationVisualSettings: {
 					scale: 1.08;
 				};
-			}
+			},
 		];
 		form: "ARCANINE_NORMAL";
 		sizeSettings: {
@@ -4390,7 +4386,7 @@ export type PokemonExtendedSettingsV0063PokemonAbra = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 2.86;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.675;
@@ -4420,7 +4416,7 @@ export type PokemonExtendedSettingsV0063PokemonAbraNormal = PokemonExtendedSetti
 				maxStationVisualSettings: {
 					scale: 2.86;
 				};
-			}
+			},
 		];
 		form: "ABRA_NORMAL";
 		sizeSettings: {
@@ -4451,7 +4447,7 @@ export type PokemonExtendedSettingsV0064PokemonKadabra = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 1.79;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.975;
@@ -4481,7 +4477,7 @@ export type PokemonExtendedSettingsV0064PokemonKadabraNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 1.79;
 				};
-			}
+			},
 		];
 		form: "KADABRA_NORMAL";
 		sizeSettings: {
@@ -4512,7 +4508,7 @@ export type PokemonExtendedSettingsV0065PokemonAlakazam = PokemonExtendedSetting
 				maxStationVisualSettings: {
 					scale: 1.7;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.125;
@@ -4533,7 +4529,7 @@ export type PokemonExtendedSettingsV0065PokemonAlakazam = PokemonExtendedSetting
 					xxsLowerBound: 0.588;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "ALAKAZAM";
 	}
@@ -4555,7 +4551,7 @@ export type PokemonExtendedSettingsV0065PokemonAlakazamNormal = PokemonExtendedS
 				maxStationVisualSettings: {
 					scale: 1.7;
 				};
-			}
+			},
 		];
 		form: "ALAKAZAM_NORMAL";
 		sizeSettings: {
@@ -4577,7 +4573,7 @@ export type PokemonExtendedSettingsV0065PokemonAlakazamNormal = PokemonExtendedS
 					xxsLowerBound: 0.588;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "ALAKAZAM";
 	}
@@ -4599,7 +4595,7 @@ export type PokemonExtendedSettingsV0066PokemonMachop = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 2.75;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.6;
@@ -4629,7 +4625,7 @@ export type PokemonExtendedSettingsV0066PokemonMachopNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 2.75;
 				};
-			}
+			},
 		];
 		form: "MACHOP_NORMAL";
 		sizeSettings: {
@@ -4660,7 +4656,7 @@ export type PokemonExtendedSettingsV0067PokemonMachoke = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 1.75;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.125;
@@ -4690,7 +4686,7 @@ export type PokemonExtendedSettingsV0067PokemonMachokeNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 1.75;
 				};
-			}
+			},
 		];
 		form: "MACHOKE_NORMAL";
 		sizeSettings: {
@@ -4751,7 +4747,7 @@ export type PokemonExtendedSettingsV0068PokemonMachamp = PokemonExtendedSettings
 				};
 				modelHeight: 2.57;
 				modelScaleV2: 0.86;
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.2;
@@ -4811,7 +4807,7 @@ export type PokemonExtendedSettingsV0068PokemonMachampNormal = PokemonExtendedSe
 				};
 				modelHeight: 2.57;
 				modelScaleV2: 0.86;
-			}
+			},
 		];
 		form: "MACHAMP_NORMAL";
 		sizeSettings: {
@@ -4905,7 +4901,7 @@ export type PokemonExtendedSettingsV0071PokemonVictreebel = PokemonExtendedSetti
 					xxsLowerBound: 2.205;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "VICTREEBEL";
 	}
@@ -4933,7 +4929,7 @@ export type PokemonExtendedSettingsV0071PokemonVictreebelNormal = PokemonExtende
 					xxsLowerBound: 2.205;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "VICTREEBEL";
 	}
@@ -5297,7 +5293,7 @@ export type PokemonExtendedSettingsV0080PokemonSlowbro = PokemonExtendedSettings
 					xxsLowerBound: 0.98;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "SLOWBRO";
 	}
@@ -5325,7 +5321,7 @@ export type PokemonExtendedSettingsV0080PokemonSlowbro2021 = PokemonExtendedSett
 					xxsLowerBound: 0.98;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "SLOWBRO";
 	}
@@ -5368,7 +5364,7 @@ export type PokemonExtendedSettingsV0080PokemonSlowbroNormal = PokemonExtendedSe
 					xxsLowerBound: 0.98;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "SLOWBRO";
 	}
@@ -5757,7 +5753,7 @@ export type PokemonExtendedSettingsV0092PokemonGastly = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 2;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.975;
@@ -5790,7 +5786,7 @@ export type PokemonExtendedSettingsV0092PokemonGastlyNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 2;
 				};
-			}
+			},
 		];
 		form: "GASTLY_NORMAL";
 		sizeSettings: {
@@ -5821,7 +5817,7 @@ export type PokemonExtendedSettingsV0093PokemonHaunter = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 1.33;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.2;
@@ -5851,7 +5847,7 @@ export type PokemonExtendedSettingsV0093PokemonHaunterNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 1.33;
 				};
-			}
+			},
 		];
 		form: "HAUNTER_NORMAL";
 		sizeSettings: {
@@ -5906,7 +5902,7 @@ export type PokemonExtendedSettingsV0094PokemonGengar = PokemonExtendedSettings<
 				};
 				modelHeight: 2.13;
 				modelScaleV2: 0.97;
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.125;
@@ -5927,7 +5923,7 @@ export type PokemonExtendedSettingsV0094PokemonGengar = PokemonExtendedSettings<
 					xxsLowerBound: 0.686;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "GENGAR";
 	}
@@ -5955,7 +5951,7 @@ export type PokemonExtendedSettingsV0094PokemonGengarCostume2020 = PokemonExtend
 					xxsLowerBound: 0.686;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "GENGAR";
 	}
@@ -6001,7 +5997,7 @@ export type PokemonExtendedSettingsV0094PokemonGengarNormal = PokemonExtendedSet
 				};
 				modelHeight: 2.13;
 				modelScaleV2: 0.97;
-			}
+			},
 		];
 		form: "GENGAR_NORMAL";
 		sizeSettings: {
@@ -6023,7 +6019,7 @@ export type PokemonExtendedSettingsV0094PokemonGengarNormal = PokemonExtendedSet
 					xxsLowerBound: 0.686;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "GENGAR";
 	}
@@ -6132,7 +6128,7 @@ export type PokemonExtendedSettingsV0098PokemonKrabby = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 2.55;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.3;
@@ -6162,7 +6158,7 @@ export type PokemonExtendedSettingsV0098PokemonKrabbyNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 2.55;
 				};
-			}
+			},
 		];
 		form: "KRABBY_NORMAL";
 		sizeSettings: {
@@ -6214,7 +6210,7 @@ export type PokemonExtendedSettingsV0099PokemonKingler = PokemonExtendedSettings
 				};
 				modelHeight: 1.7;
 				modelScaleV2: 1;
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.975;
@@ -6265,7 +6261,7 @@ export type PokemonExtendedSettingsV0099PokemonKinglerNormal = PokemonExtendedSe
 				};
 				modelHeight: 1.7;
 				modelScaleV2: 1;
-			}
+			},
 		];
 		form: "KINGLER_NORMAL";
 		sizeSettings: {
@@ -6533,7 +6529,7 @@ export type PokemonExtendedSettingsV0106PokemonHitmonlee = PokemonExtendedSettin
 				maxStationVisualSettings: {
 					scale: 1.71;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.125;
@@ -6566,7 +6562,7 @@ export type PokemonExtendedSettingsV0106PokemonHitmonleeNormal = PokemonExtended
 				maxStationVisualSettings: {
 					scale: 1.71;
 				};
-			}
+			},
 		];
 		form: "HITMONLEE_NORMAL";
 		sizeSettings: {
@@ -6600,7 +6596,7 @@ export type PokemonExtendedSettingsV0107PokemonHitmonchan = PokemonExtendedSetti
 				maxStationVisualSettings: {
 					scale: 2.04;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.05;
@@ -6633,7 +6629,7 @@ export type PokemonExtendedSettingsV0107PokemonHitmonchanNormal = PokemonExtende
 				maxStationVisualSettings: {
 					scale: 2.04;
 				};
-			}
+			},
 		];
 		form: "HITMONCHAN_NORMAL";
 		sizeSettings: {
@@ -6824,7 +6820,7 @@ export type PokemonExtendedSettingsV0113PokemonChansey = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 2.12;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.825;
@@ -6854,7 +6850,7 @@ export type PokemonExtendedSettingsV0113PokemonChanseyNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 2.12;
 				};
-			}
+			},
 		];
 		form: "CHANSEY_NORMAL";
 		sizeSettings: {
@@ -6919,7 +6915,7 @@ export type PokemonExtendedSettingsV0115PokemonKangaskhan = PokemonExtendedSetti
 					xxsLowerBound: 1.078;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "KANGASKHAN";
 	}
@@ -6947,7 +6943,7 @@ export type PokemonExtendedSettingsV0115PokemonKangaskhanNormal = PokemonExtende
 					xxsLowerBound: 1.078;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "KANGASKHAN";
 	}
@@ -7308,7 +7304,7 @@ export type PokemonExtendedSettingsV0127PokemonPinsir = PokemonExtendedSettings<
 					xxsLowerBound: 0.833;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "PINSIR";
 	}
@@ -7336,7 +7332,7 @@ export type PokemonExtendedSettingsV0127PokemonPinsirNormal = PokemonExtendedSet
 					xxsLowerBound: 0.833;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "PINSIR";
 	}
@@ -7466,7 +7462,7 @@ export type PokemonExtendedSettingsV0130PokemonGyarados = PokemonExtendedSetting
 					xxsLowerBound: 3.185;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "GYARADOS";
 	}
@@ -7494,7 +7490,7 @@ export type PokemonExtendedSettingsV0130PokemonGyaradosNormal = PokemonExtendedS
 					xxsLowerBound: 3.185;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "GYARADOS";
 	}
@@ -7545,7 +7541,7 @@ export type PokemonExtendedSettingsV0131PokemonLapras = PokemonExtendedSettings<
 					xsLowerBound: 24.275;
 					xxsLowerBound: 23.85;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.875;
@@ -7619,7 +7615,7 @@ export type PokemonExtendedSettingsV0131PokemonLaprasNormal = PokemonExtendedSet
 					xsLowerBound: 24.275;
 					xxsLowerBound: 23.85;
 				};
-			}
+			},
 		];
 		form: "LAPRAS_NORMAL";
 		sizeSettings: {
@@ -7709,7 +7705,7 @@ export type PokemonExtendedSettingsV0133PokemonEevee = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 5.33;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.225;
@@ -7769,7 +7765,7 @@ export type PokemonExtendedSettingsV0133PokemonEeveeNormal = PokemonExtendedSett
 				maxStationVisualSettings: {
 					scale: 5.33;
 				};
-			}
+			},
 		];
 		form: "EEVEE_NORMAL";
 		sizeSettings: {
@@ -7806,7 +7802,7 @@ export type PokemonExtendedSettingsV0134PokemonVaporeon = PokemonExtendedSetting
 				maxStationVisualSettings: {
 					scale: 2.62;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.75;
@@ -7842,7 +7838,7 @@ export type PokemonExtendedSettingsV0134PokemonVaporeonNormal = PokemonExtendedS
 				maxStationVisualSettings: {
 					scale: 2.62;
 				};
-			}
+			},
 		];
 		form: "VAPOREON_NORMAL";
 		sizeSettings: {
@@ -7877,7 +7873,7 @@ export type PokemonExtendedSettingsV0135PokemonJolteon = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 2.75;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.6;
@@ -7911,7 +7907,7 @@ export type PokemonExtendedSettingsV0135PokemonJolteonNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 2.75;
 				};
-			}
+			},
 		];
 		form: "JOLTEON_NORMAL";
 		sizeSettings: {
@@ -7948,7 +7944,7 @@ export type PokemonExtendedSettingsV0136PokemonFlareon = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 2.4;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.675;
@@ -7984,7 +7980,7 @@ export type PokemonExtendedSettingsV0136PokemonFlareonNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 2.4;
 				};
-			}
+			},
 		];
 		form: "FLAREON_NORMAL";
 		sizeSettings: {
@@ -8044,7 +8040,7 @@ export type PokemonExtendedSettingsV0138PokemonOmanyte = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 4.27;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.3;
@@ -8074,7 +8070,7 @@ export type PokemonExtendedSettingsV0138PokemonOmanyteNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 4.27;
 				};
-			}
+			},
 		];
 		form: "OMANYTE_NORMAL";
 		sizeSettings: {
@@ -8105,7 +8101,7 @@ export type PokemonExtendedSettingsV0139PokemonOmastar = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 2.33;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.75;
@@ -8135,7 +8131,7 @@ export type PokemonExtendedSettingsV0139PokemonOmastarNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 2.33;
 				};
-			}
+			},
 		];
 		form: "OMASTAR_NORMAL";
 		sizeSettings: {
@@ -8169,7 +8165,7 @@ export type PokemonExtendedSettingsV0140PokemonKabuto = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 3.41;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.375;
@@ -8202,7 +8198,7 @@ export type PokemonExtendedSettingsV0140PokemonKabutoNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 3.41;
 				};
-			}
+			},
 		];
 		form: "KABUTO_NORMAL";
 		sizeSettings: {
@@ -8236,7 +8232,7 @@ export type PokemonExtendedSettingsV0141PokemonKabutops = PokemonExtendedSetting
 				maxStationVisualSettings: {
 					scale: 1.86;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.975;
@@ -8269,7 +8265,7 @@ export type PokemonExtendedSettingsV0141PokemonKabutopsNormal = PokemonExtendedS
 				maxStationVisualSettings: {
 					scale: 1.86;
 				};
-			}
+			},
 		];
 		form: "KABUTOPS_NORMAL";
 		sizeSettings: {
@@ -8305,7 +8301,7 @@ export type PokemonExtendedSettingsV0142PokemonAerodactyl = PokemonExtendedSetti
 					xxsLowerBound: 1.029;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "AERODACTYL";
 	}
@@ -8333,7 +8329,7 @@ export type PokemonExtendedSettingsV0142PokemonAerodactylNormal = PokemonExtende
 					xxsLowerBound: 1.029;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "AERODACTYL";
 	}
@@ -8361,7 +8357,7 @@ export type PokemonExtendedSettingsV0142PokemonAerodactylSummer2023 = PokemonExt
 					xxsLowerBound: 1.029;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "AERODACTYL";
 	}
@@ -8401,7 +8397,7 @@ export type PokemonExtendedSettingsV0143PokemonSnorlax = PokemonExtendedSettings
 				};
 				modelHeight: 2.57;
 				modelScaleV2: 0.86;
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.575;
@@ -8449,7 +8445,7 @@ export type PokemonExtendedSettingsV0143PokemonSnorlaxNormal = PokemonExtendedSe
 				};
 				modelHeight: 2.57;
 				modelScaleV2: 0.86;
-			}
+			},
 		];
 		form: "SNORLAX_NORMAL";
 		sizeSettings: {
@@ -8495,7 +8491,7 @@ export type PokemonExtendedSettingsV0144PokemonArticuno = PokemonExtendedSetting
 				maxStationVisualSettings: {
 					scale: 1;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.275;
@@ -8540,7 +8536,7 @@ export type PokemonExtendedSettingsV0144PokemonArticunoNormal = PokemonExtendedS
 				maxStationVisualSettings: {
 					scale: 1;
 				};
-			}
+			},
 		];
 		form: "ARTICUNO_NORMAL";
 		sizeSettings: {
@@ -8571,7 +8567,7 @@ export type PokemonExtendedSettingsV0145PokemonZapdos = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 1;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.2;
@@ -8616,7 +8612,7 @@ export type PokemonExtendedSettingsV0145PokemonZapdosNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 1;
 				};
-			}
+			},
 		];
 		form: "ZAPDOS_NORMAL";
 		sizeSettings: {
@@ -8647,7 +8643,7 @@ export type PokemonExtendedSettingsV0146PokemonMoltres = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 0.8;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.5;
@@ -8692,7 +8688,7 @@ export type PokemonExtendedSettingsV0146PokemonMoltresNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 0.8;
 				};
-			}
+			},
 		];
 		form: "MOLTRES_NORMAL";
 		sizeSettings: {
@@ -8786,7 +8782,7 @@ export type PokemonExtendedSettingsV0149PokemonDragonite = PokemonExtendedSettin
 					xxsLowerBound: 1.8865;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "DRAGONITE";
 	}
@@ -8814,7 +8810,7 @@ export type PokemonExtendedSettingsV0149PokemonDragoniteNormal = PokemonExtended
 					xxsLowerBound: 1.8865;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "DRAGONITE";
 	}
@@ -9770,7 +9766,7 @@ export type PokemonExtendedSettingsV0181PokemonAmpharos = PokemonExtendedSetting
 					xxsLowerBound: 0.686;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "AMPHAROS";
 	}
@@ -9798,7 +9794,7 @@ export type PokemonExtendedSettingsV0181PokemonAmpharosNormal = PokemonExtendedS
 					xxsLowerBound: 0.686;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "AMPHAROS";
 	}
@@ -10256,7 +10252,7 @@ export type PokemonExtendedSettingsV0196PokemonEspeon = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 2.9;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.6675;
@@ -10301,7 +10297,7 @@ export type PokemonExtendedSettingsV0196PokemonEspeonNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 2.9;
 				};
-			}
+			},
 		];
 		form: "ESPEON_NORMAL";
 		sizeSettings: {
@@ -10332,7 +10328,7 @@ export type PokemonExtendedSettingsV0197PokemonUmbreon = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 2.33;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.7425;
@@ -10377,7 +10373,7 @@ export type PokemonExtendedSettingsV0197PokemonUmbreonNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 2.33;
 				};
-			}
+			},
 		];
 		form: "UMBREON_NORMAL";
 		sizeSettings: {
@@ -11167,7 +11163,7 @@ export type PokemonExtendedSettingsV0208PokemonSteelix = PokemonExtendedSettings
 					xxsLowerBound: 5.145;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "STEELIX";
 	}
@@ -11195,7 +11191,7 @@ export type PokemonExtendedSettingsV0208PokemonSteelixNormal = PokemonExtendedSe
 					xxsLowerBound: 5.145;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "STEELIX";
 	}
@@ -11324,7 +11320,7 @@ export type PokemonExtendedSettingsV0212PokemonScizor = PokemonExtendedSettings<
 					xxsLowerBound: 0.98;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "SCIZOR";
 	}
@@ -11352,7 +11348,7 @@ export type PokemonExtendedSettingsV0212PokemonScizorNormal = PokemonExtendedSet
 					xxsLowerBound: 0.98;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "SCIZOR";
 	}
@@ -11374,7 +11370,7 @@ export type PokemonExtendedSettingsV0213PokemonShuckle = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 3.02;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.4575;
@@ -11404,7 +11400,7 @@ export type PokemonExtendedSettingsV0213PokemonShuckleNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 3.02;
 				};
-			}
+			},
 		];
 		form: "SHUCKLE_NORMAL";
 		sizeSettings: {
@@ -11440,7 +11436,7 @@ export type PokemonExtendedSettingsV0214PokemonHeracross = PokemonExtendedSettin
 					xxsLowerBound: 0.833;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "HERACROSS";
 	}
@@ -11468,7 +11464,7 @@ export type PokemonExtendedSettingsV0214PokemonHeracrossNormal = PokemonExtended
 					xxsLowerBound: 0.833;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "HERACROSS";
 	}
@@ -11961,7 +11957,7 @@ export type PokemonExtendedSettingsV0229PokemonHoundoom = PokemonExtendedSetting
 					xxsLowerBound: 0.931;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "HOUNDOOM";
 	}
@@ -11989,7 +11985,7 @@ export type PokemonExtendedSettingsV0229PokemonHoundoomNormal = PokemonExtendedS
 					xxsLowerBound: 0.931;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "HOUNDOOM";
 	}
@@ -12359,7 +12355,7 @@ export type PokemonExtendedSettingsV0242PokemonBlissey = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 1;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.125;
@@ -12389,7 +12385,7 @@ export type PokemonExtendedSettingsV0242PokemonBlisseyNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 1;
 				};
-			}
+			},
 		];
 		form: "BLISSEY_NORMAL";
 		sizeSettings: {
@@ -12420,7 +12416,7 @@ export type PokemonExtendedSettingsV0243PokemonRaikou = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 1;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.4325;
@@ -12450,7 +12446,7 @@ export type PokemonExtendedSettingsV0243PokemonRaikouNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 1;
 				};
-			}
+			},
 		];
 		form: "RAIKOU_NORMAL";
 		sizeSettings: {
@@ -12496,7 +12492,7 @@ export type PokemonExtendedSettingsV0244PokemonEntei = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 1;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.5825;
@@ -12526,7 +12522,7 @@ export type PokemonExtendedSettingsV0244PokemonEnteiNormal = PokemonExtendedSett
 				maxStationVisualSettings: {
 					scale: 1;
 				};
-			}
+			},
 		];
 		form: "ENTEI_NORMAL";
 		sizeSettings: {
@@ -12572,7 +12568,7 @@ export type PokemonExtendedSettingsV0245PokemonSuicune = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 1;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.5075;
@@ -12602,7 +12598,7 @@ export type PokemonExtendedSettingsV0245PokemonSuicuneNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 1;
 				};
-			}
+			},
 		];
 		form: "SUICUNE_NORMAL";
 		sizeSettings: {
@@ -12711,7 +12707,7 @@ export type PokemonExtendedSettingsV0248PokemonTyranitar = PokemonExtendedSettin
 					xxsLowerBound: 1.225;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "TYRANITAR";
 	}
@@ -12739,7 +12735,7 @@ export type PokemonExtendedSettingsV0248PokemonTyranitarNormal = PokemonExtended
 					xxsLowerBound: 1.225;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "TYRANITAR";
 	}
@@ -12767,7 +12763,7 @@ export type PokemonExtendedSettingsV0249PokemonLugia = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 0.52;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 3.9075;
@@ -12803,7 +12799,7 @@ export type PokemonExtendedSettingsV0249PokemonLugiaNormal = PokemonExtendedSett
 				maxStationVisualSettings: {
 					scale: 0.52;
 				};
-			}
+			},
 		];
 		form: "LUGIA_NORMAL";
 		sizeSettings: {
@@ -12860,7 +12856,7 @@ export type PokemonExtendedSettingsV0250PokemonHoOh = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 0.5;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 2.8575;
@@ -12901,7 +12897,7 @@ export type PokemonExtendedSettingsV0250PokemonHoOhNormal = PokemonExtendedSetti
 				maxStationVisualSettings: {
 					scale: 0.5;
 				};
-			}
+			},
 		];
 		form: "HO_OH_NORMAL";
 		sizeSettings: {
@@ -12943,7 +12939,7 @@ export type PokemonExtendedSettingsV0250PokemonHoOhS = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 0.5;
 				};
-			}
+			},
 		];
 		form: "HO_OH_S";
 		sizeSettings: {
@@ -13066,7 +13062,7 @@ export type PokemonExtendedSettingsV0254PokemonSceptile = PokemonExtendedSetting
 					xxsLowerBound: 0.931;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "SCEPTILE";
 	}
@@ -13094,7 +13090,7 @@ export type PokemonExtendedSettingsV0254PokemonSceptileNormal = PokemonExtendedS
 					xxsLowerBound: 0.931;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "SCEPTILE";
 	}
@@ -13179,7 +13175,7 @@ export type PokemonExtendedSettingsV0257PokemonBlaziken = PokemonExtendedSetting
 					xxsLowerBound: 0.931;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "BLAZIKEN";
 	}
@@ -13207,7 +13203,7 @@ export type PokemonExtendedSettingsV0257PokemonBlazikenNormal = PokemonExtendedS
 					xxsLowerBound: 0.931;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "BLAZIKEN";
 	}
@@ -13292,7 +13288,7 @@ export type PokemonExtendedSettingsV0260PokemonSwampert = PokemonExtendedSetting
 					xxsLowerBound: 0.931;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "SWAMPERT";
 	}
@@ -13320,7 +13316,7 @@ export type PokemonExtendedSettingsV0260PokemonSwampertNormal = PokemonExtendedS
 					xxsLowerBound: 0.931;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "SWAMPERT";
 	}
@@ -13929,7 +13925,7 @@ export type PokemonExtendedSettingsV0280PokemonRalts = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 6.5;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.3075;
@@ -13965,7 +13961,7 @@ export type PokemonExtendedSettingsV0280PokemonRaltsNormal = PokemonExtendedSett
 				maxStationVisualSettings: {
 					scale: 6.5;
 				};
-			}
+			},
 		];
 		form: "RALTS_NORMAL";
 		sizeSettings: {
@@ -14002,7 +13998,7 @@ export type PokemonExtendedSettingsV0281PokemonKirlia = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 3;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.5925;
@@ -14038,7 +14034,7 @@ export type PokemonExtendedSettingsV0281PokemonKirliaNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 3;
 				};
-			}
+			},
 		];
 		form: "KIRLIA_NORMAL";
 		sizeSettings: {
@@ -14075,7 +14071,7 @@ export type PokemonExtendedSettingsV0282PokemonGardevoir = PokemonExtendedSettin
 				maxStationVisualSettings: {
 					scale: 2;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.2;
@@ -14096,7 +14092,7 @@ export type PokemonExtendedSettingsV0282PokemonGardevoir = PokemonExtendedSettin
 					xxsLowerBound: 0.784;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "GARDEVOIR";
 	}
@@ -14124,7 +14120,7 @@ export type PokemonExtendedSettingsV0282PokemonGardevoirNormal = PokemonExtended
 				maxStationVisualSettings: {
 					scale: 2;
 				};
-			}
+			},
 		];
 		form: "GARDEVOIR_NORMAL";
 		sizeSettings: {
@@ -14146,7 +14142,7 @@ export type PokemonExtendedSettingsV0282PokemonGardevoirNormal = PokemonExtended
 					xxsLowerBound: 0.784;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "GARDEVOIR";
 	}
@@ -14719,7 +14715,7 @@ export type PokemonExtendedSettingsV0302PokemonSableye = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 3.41;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.3825;
@@ -14740,7 +14736,7 @@ export type PokemonExtendedSettingsV0302PokemonSableye = PokemonExtendedSettings
 					xxsLowerBound: 0.245;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "SABLEYE";
 	}
@@ -14768,7 +14764,7 @@ export type PokemonExtendedSettingsV0302PokemonSableyeCostume2020 = PokemonExten
 					xxsLowerBound: 0.245;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "SABLEYE";
 	}
@@ -14790,7 +14786,7 @@ export type PokemonExtendedSettingsV0302PokemonSableyeNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 3.41;
 				};
-			}
+			},
 		];
 		form: "SABLEYE_NORMAL";
 		sizeSettings: {
@@ -14812,7 +14808,7 @@ export type PokemonExtendedSettingsV0302PokemonSableyeNormal = PokemonExtendedSe
 					xxsLowerBound: 0.245;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "SABLEYE";
 	}
@@ -14839,7 +14835,7 @@ export type PokemonExtendedSettingsV0303PokemonMawile = PokemonExtendedSettings<
 					xxsLowerBound: 0.49;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "MAWILE";
 	}
@@ -14867,7 +14863,7 @@ export type PokemonExtendedSettingsV0303PokemonMawileNormal = PokemonExtendedSet
 					xxsLowerBound: 0.49;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "MAWILE";
 	}
@@ -14952,7 +14948,7 @@ export type PokemonExtendedSettingsV0306PokemonAggron = PokemonExtendedSettings<
 					xxsLowerBound: 1.078;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "AGGRON";
 	}
@@ -14980,7 +14976,7 @@ export type PokemonExtendedSettingsV0306PokemonAggronNormal = PokemonExtendedSet
 					xxsLowerBound: 1.078;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "AGGRON";
 	}
@@ -15036,7 +15032,7 @@ export type PokemonExtendedSettingsV0308PokemonMedicham = PokemonExtendedSetting
 					xxsLowerBound: 0.637;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "MEDICHAM";
 	}
@@ -15064,7 +15060,7 @@ export type PokemonExtendedSettingsV0308PokemonMedichamNormal = PokemonExtendedS
 					xxsLowerBound: 0.637;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "MEDICHAM";
 	}
@@ -15120,7 +15116,7 @@ export type PokemonExtendedSettingsV0310PokemonManectric = PokemonExtendedSettin
 					xxsLowerBound: 0.882;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "MANECTRIC";
 	}
@@ -15148,7 +15144,7 @@ export type PokemonExtendedSettingsV0310PokemonManectricNormal = PokemonExtended
 					xxsLowerBound: 0.882;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "MANECTRIC";
 	}
@@ -15407,7 +15403,7 @@ export type PokemonExtendedSettingsV0319PokemonSharpedo = PokemonExtendedSetting
 					xxsLowerBound: 1.225;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "SHARPEDO";
 	}
@@ -15435,7 +15431,7 @@ export type PokemonExtendedSettingsV0319PokemonSharpedoNormal = PokemonExtendedS
 					xxsLowerBound: 1.225;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "SHARPEDO";
 	}
@@ -15460,7 +15456,7 @@ export type PokemonExtendedSettingsV0320PokemonWailmer = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 1;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.5075;
@@ -15493,7 +15489,7 @@ export type PokemonExtendedSettingsV0320PokemonWailmerNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 1;
 				};
-			}
+			},
 		];
 		form: "WAILMER_NORMAL";
 		sizeSettings: {
@@ -15529,7 +15525,7 @@ export type PokemonExtendedSettingsV0321PokemonWailord = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 0.26;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 10.875;
@@ -15564,7 +15560,7 @@ export type PokemonExtendedSettingsV0321PokemonWailordNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 0.26;
 				};
-			}
+			},
 		];
 		form: "WAILORD_NORMAL";
 		sizeSettings: {
@@ -15629,7 +15625,7 @@ export type PokemonExtendedSettingsV0323PokemonCamerupt = PokemonExtendedSetting
 					xxsLowerBound: 1.225;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "CAMERUPT";
 	}
@@ -15657,7 +15653,7 @@ export type PokemonExtendedSettingsV0323PokemonCameruptNormal = PokemonExtendedS
 					xxsLowerBound: 1.225;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "CAMERUPT";
 	}
@@ -16101,7 +16097,7 @@ export type PokemonExtendedSettingsV0328PokemonTrapinch = PokemonExtendedSetting
 				maxStationVisualSettings: {
 					scale: 2.79;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.5325;
@@ -16131,7 +16127,7 @@ export type PokemonExtendedSettingsV0328PokemonTrapinchNormal = PokemonExtendedS
 				maxStationVisualSettings: {
 					scale: 2.79;
 				};
-			}
+			},
 		];
 		form: "TRAPINCH_NORMAL";
 		sizeSettings: {
@@ -16162,7 +16158,7 @@ export type PokemonExtendedSettingsV0329PokemonVibrava = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 2.12;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.8175;
@@ -16192,7 +16188,7 @@ export type PokemonExtendedSettingsV0329PokemonVibravaNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 2.12;
 				};
-			}
+			},
 		];
 		form: "VIBRAVA_NORMAL";
 		sizeSettings: {
@@ -16223,7 +16219,7 @@ export type PokemonExtendedSettingsV0330PokemonFlygon = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 1.27;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.5075;
@@ -16253,7 +16249,7 @@ export type PokemonExtendedSettingsV0330PokemonFlygonNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 1.27;
 				};
-			}
+			},
 		];
 		form: "FLYGON_NORMAL";
 		sizeSettings: {
@@ -16376,7 +16372,7 @@ export type PokemonExtendedSettingsV0334PokemonAltaria = PokemonExtendedSettings
 					xxsLowerBound: 0.735;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "ALTARIA";
 	}
@@ -16404,7 +16400,7 @@ export type PokemonExtendedSettingsV0334PokemonAltariaNormal = PokemonExtendedSe
 					xxsLowerBound: 0.735;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "ALTARIA";
 	}
@@ -17027,7 +17023,7 @@ export type PokemonExtendedSettingsV0354PokemonBanette = PokemonExtendedSettings
 					xxsLowerBound: 0.588;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "BANETTE";
 	}
@@ -17055,7 +17051,7 @@ export type PokemonExtendedSettingsV0354PokemonBanetteNormal = PokemonExtendedSe
 					xxsLowerBound: 0.588;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "BANETTE";
 	}
@@ -17198,7 +17194,7 @@ export type PokemonExtendedSettingsV0359PokemonAbsol = PokemonExtendedSettings<
 					xxsLowerBound: 0.588;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "ABSOL";
 	}
@@ -17226,7 +17222,7 @@ export type PokemonExtendedSettingsV0359PokemonAbsolNormal = PokemonExtendedSett
 					xxsLowerBound: 0.588;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "ABSOL";
 	}
@@ -17311,7 +17307,7 @@ export type PokemonExtendedSettingsV0362PokemonGlalie = PokemonExtendedSettings<
 					xxsLowerBound: 1.029;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "GLALIE";
 	}
@@ -17339,7 +17335,7 @@ export type PokemonExtendedSettingsV0362PokemonGlalieNormal = PokemonExtendedSet
 					xxsLowerBound: 1.029;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "GLALIE";
 	}
@@ -17364,7 +17360,7 @@ export type PokemonExtendedSettingsV0363PokemonSpheal = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 2.75;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.5925;
@@ -17397,7 +17393,7 @@ export type PokemonExtendedSettingsV0363PokemonSphealNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 2.75;
 				};
-			}
+			},
 		];
 		form: "SPHEAL_NORMAL";
 		sizeSettings: {
@@ -17435,7 +17431,7 @@ export type PokemonExtendedSettingsV0364PokemonSealeo = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 1.92;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.8175;
@@ -17472,7 +17468,7 @@ export type PokemonExtendedSettingsV0364PokemonSealeoNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 1.92;
 				};
-			}
+			},
 		];
 		form: "SEALEO_NORMAL";
 		sizeSettings: {
@@ -17510,7 +17506,7 @@ export type PokemonExtendedSettingsV0365PokemonWalrein = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 1.42;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.05;
@@ -17547,7 +17543,7 @@ export type PokemonExtendedSettingsV0365PokemonWalreinNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 1.42;
 				};
-			}
+			},
 		];
 		form: "WALREIN_NORMAL";
 		sizeSettings: {
@@ -17786,7 +17782,7 @@ export type PokemonExtendedSettingsV0373PokemonSalamence = PokemonExtendedSettin
 					xxsLowerBound: 0.882;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "SALAMENCE";
 	}
@@ -17814,7 +17810,7 @@ export type PokemonExtendedSettingsV0373PokemonSalamenceNormal = PokemonExtended
 					xxsLowerBound: 0.882;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "SALAMENCE";
 	}
@@ -17836,7 +17832,7 @@ export type PokemonExtendedSettingsV0374PokemonBeldum = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 3.61;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.4575;
@@ -17866,7 +17862,7 @@ export type PokemonExtendedSettingsV0374PokemonBeldumNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 3.61;
 				};
-			}
+			},
 		];
 		form: "BELDUM_NORMAL";
 		sizeSettings: {
@@ -17897,7 +17893,7 @@ export type PokemonExtendedSettingsV0375PokemonMetang = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 1.61;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.8925;
@@ -17927,7 +17923,7 @@ export type PokemonExtendedSettingsV0375PokemonMetangNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 1.61;
 				};
-			}
+			},
 		];
 		form: "METANG_NORMAL";
 		sizeSettings: {
@@ -17958,7 +17954,7 @@ export type PokemonExtendedSettingsV0376PokemonMetagross = PokemonExtendedSettin
 				maxStationVisualSettings: {
 					scale: 1;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.2;
@@ -17979,7 +17975,7 @@ export type PokemonExtendedSettingsV0376PokemonMetagross = PokemonExtendedSettin
 					xxsLowerBound: 1.225;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "METAGROSS";
 	}
@@ -18001,7 +17997,7 @@ export type PokemonExtendedSettingsV0376PokemonMetagrossNormal = PokemonExtended
 				maxStationVisualSettings: {
 					scale: 1;
 				};
-			}
+			},
 		];
 		form: "METAGROSS_NORMAL";
 		sizeSettings: {
@@ -18023,7 +18019,7 @@ export type PokemonExtendedSettingsV0376PokemonMetagrossNormal = PokemonExtended
 					xxsLowerBound: 1.225;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "METAGROSS";
 	}
@@ -18053,7 +18049,7 @@ export type PokemonExtendedSettingsV0377PokemonRegirock = PokemonExtendedSetting
 				maxStationVisualSettings: {
 					scale: 1.5;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.275;
@@ -18091,7 +18087,7 @@ export type PokemonExtendedSettingsV0377PokemonRegirockNormal = PokemonExtendedS
 				maxStationVisualSettings: {
 					scale: 1.5;
 				};
-			}
+			},
 		];
 		form: "REGIROCK_NORMAL";
 		sizeSettings: {
@@ -18129,7 +18125,7 @@ export type PokemonExtendedSettingsV0378PokemonRegice = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 1;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.35;
@@ -18166,7 +18162,7 @@ export type PokemonExtendedSettingsV0378PokemonRegiceNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 1;
 				};
-			}
+			},
 		];
 		form: "REGICE_NORMAL";
 		sizeSettings: {
@@ -18229,7 +18225,7 @@ export type PokemonExtendedSettingsV0380PokemonLatias = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 2.075;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.05;
@@ -18250,7 +18246,7 @@ export type PokemonExtendedSettingsV0380PokemonLatias = PokemonExtendedSettings<
 					xxsLowerBound: 0.882;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "LATIAS";
 	}
@@ -18275,7 +18271,7 @@ export type PokemonExtendedSettingsV0380PokemonLatiasNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 2.075;
 				};
-			}
+			},
 		];
 		form: "LATIAS_NORMAL";
 		sizeSettings: {
@@ -18297,7 +18293,7 @@ export type PokemonExtendedSettingsV0380PokemonLatiasNormal = PokemonExtendedSet
 					xxsLowerBound: 0.882;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "LATIAS";
 	}
@@ -18325,7 +18321,7 @@ export type PokemonExtendedSettingsV0380PokemonLatiasS = PokemonExtendedSettings
 					xxsLowerBound: 0.882;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "LATIAS";
 	}
@@ -18350,7 +18346,7 @@ export type PokemonExtendedSettingsV0381PokemonLatios = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 1.56;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.5075;
@@ -18371,7 +18367,7 @@ export type PokemonExtendedSettingsV0381PokemonLatios = PokemonExtendedSettings<
 					xxsLowerBound: 1.127;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "LATIOS";
 	}
@@ -18396,7 +18392,7 @@ export type PokemonExtendedSettingsV0381PokemonLatiosNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 1.56;
 				};
-			}
+			},
 		];
 		form: "LATIOS_NORMAL";
 		sizeSettings: {
@@ -18418,7 +18414,7 @@ export type PokemonExtendedSettingsV0381PokemonLatiosNormal = PokemonExtendedSet
 					xxsLowerBound: 1.127;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "LATIOS";
 	}
@@ -18446,7 +18442,7 @@ export type PokemonExtendedSettingsV0381PokemonLatiosS = PokemonExtendedSettings
 					xxsLowerBound: 1.127;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "LATIOS";
 	}
@@ -18473,7 +18469,7 @@ export type PokemonExtendedSettingsV0382PokemonKyogre = PokemonExtendedSettings<
 					xxsLowerBound: 4.802;
 				};
 				tempEvoId: "TEMP_EVOLUTION_PRIMAL";
-			}
+			},
 		];
 		uniqueId: "KYOGRE";
 	}
@@ -18501,7 +18497,7 @@ export type PokemonExtendedSettingsV0382PokemonKyogreNormal = PokemonExtendedSet
 					xxsLowerBound: 4.802;
 				};
 				tempEvoId: "TEMP_EVOLUTION_PRIMAL";
-			}
+			},
 		];
 		uniqueId: "KYOGRE";
 	}
@@ -18528,7 +18524,7 @@ export type PokemonExtendedSettingsV0383PokemonGroudon = PokemonExtendedSettings
 					xxsLowerBound: 2.45;
 				};
 				tempEvoId: "TEMP_EVOLUTION_PRIMAL";
-			}
+			},
 		];
 		uniqueId: "GROUDON";
 	}
@@ -18556,7 +18552,7 @@ export type PokemonExtendedSettingsV0383PokemonGroudonNormal = PokemonExtendedSe
 					xxsLowerBound: 2.45;
 				};
 				tempEvoId: "TEMP_EVOLUTION_PRIMAL";
-			}
+			},
 		];
 		uniqueId: "GROUDON";
 	}
@@ -18583,7 +18579,7 @@ export type PokemonExtendedSettingsV0384PokemonRayquaza = PokemonExtendedSetting
 					xxsLowerBound: 5.292;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "RAYQUAZA";
 	}
@@ -18611,7 +18607,7 @@ export type PokemonExtendedSettingsV0384PokemonRayquazaNormal = PokemonExtendedS
 					xxsLowerBound: 5.292;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "RAYQUAZA";
 	}
@@ -20035,7 +20031,7 @@ export type PokemonExtendedSettingsV0428PokemonLopunny = PokemonExtendedSettings
 					xxsLowerBound: 0.637;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "LOPUNNY";
 	}
@@ -20063,7 +20059,7 @@ export type PokemonExtendedSettingsV0428PokemonLopunnyNormal = PokemonExtendedSe
 					xxsLowerBound: 0.637;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "LOPUNNY";
 	}
@@ -20554,7 +20550,7 @@ export type PokemonExtendedSettingsV0445PokemonGarchomp = PokemonExtendedSetting
 					xxsLowerBound: 0.931;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "GARCHOMP";
 	}
@@ -20582,7 +20578,7 @@ export type PokemonExtendedSettingsV0445PokemonGarchompNormal = PokemonExtendedS
 					xxsLowerBound: 0.931;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "GARCHOMP";
 	}
@@ -20667,7 +20663,7 @@ export type PokemonExtendedSettingsV0448PokemonLucario = PokemonExtendedSettings
 					xxsLowerBound: 0.637;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "LUCARIO";
 	}
@@ -20695,7 +20691,7 @@ export type PokemonExtendedSettingsV0448PokemonLucarioNormal = PokemonExtendedSe
 					xxsLowerBound: 0.637;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "LUCARIO";
 	}
@@ -21041,7 +21037,7 @@ export type PokemonExtendedSettingsV0460PokemonAbomasnow = PokemonExtendedSettin
 					xxsLowerBound: 1.323;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "ABOMASNOW";
 	}
@@ -21069,7 +21065,7 @@ export type PokemonExtendedSettingsV0460PokemonAbomasnowNormal = PokemonExtended
 					xxsLowerBound: 1.323;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "ABOMASNOW";
 	}
@@ -21352,7 +21348,7 @@ export type PokemonExtendedSettingsV0470PokemonLeafeon = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 2.56;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.75;
@@ -21382,7 +21378,7 @@ export type PokemonExtendedSettingsV0470PokemonLeafeonNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 2.56;
 				};
-			}
+			},
 		];
 		form: "LEAFEON_NORMAL";
 		sizeSettings: {
@@ -21413,7 +21409,7 @@ export type PokemonExtendedSettingsV0471PokemonGlaceon = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 2.75;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.6;
@@ -21443,7 +21439,7 @@ export type PokemonExtendedSettingsV0471PokemonGlaceonNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 2.75;
 				};
-			}
+			},
 		];
 		form: "GLACEON_NORMAL";
 		sizeSettings: {
@@ -21567,7 +21563,7 @@ export type PokemonExtendedSettingsV0475PokemonGallade = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 1.75;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.2;
@@ -21588,7 +21584,7 @@ export type PokemonExtendedSettingsV0475PokemonGallade = PokemonExtendedSettings
 					xxsLowerBound: 0.784;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "GALLADE";
 	}
@@ -21616,7 +21612,7 @@ export type PokemonExtendedSettingsV0475PokemonGalladeNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 1.75;
 				};
-			}
+			},
 		];
 		form: "GALLADE_NORMAL";
 		sizeSettings: {
@@ -21638,7 +21634,7 @@ export type PokemonExtendedSettingsV0475PokemonGalladeNormal = PokemonExtendedSe
 					xxsLowerBound: 0.784;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "GALLADE";
 	}
@@ -23312,7 +23308,7 @@ export type PokemonExtendedSettingsV0519PokemonPidove = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 5.52;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.225;
@@ -23342,7 +23338,7 @@ export type PokemonExtendedSettingsV0519PokemonPidoveNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 5.52;
 				};
-			}
+			},
 		];
 		form: "PIDOVE_NORMAL";
 		sizeSettings: {
@@ -23373,7 +23369,7 @@ export type PokemonExtendedSettingsV0520PokemonTranquill = PokemonExtendedSettin
 				maxStationVisualSettings: {
 					scale: 2.6;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.45;
@@ -23403,7 +23399,7 @@ export type PokemonExtendedSettingsV0520PokemonTranquillNormal = PokemonExtended
 				maxStationVisualSettings: {
 					scale: 2.6;
 				};
-			}
+			},
 		];
 		form: "TRANQUILL_NORMAL";
 		sizeSettings: {
@@ -23434,7 +23430,7 @@ export type PokemonExtendedSettingsV0521PokemonUnfezant = PokemonExtendedSetting
 				maxStationVisualSettings: {
 					scale: 2.12;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.9;
@@ -23464,7 +23460,7 @@ export type PokemonExtendedSettingsV0521PokemonUnfezantNormal = PokemonExtendedS
 				maxStationVisualSettings: {
 					scale: 2.12;
 				};
-			}
+			},
 		];
 		form: "UNFEZANT_NORMAL";
 		sizeSettings: {
@@ -23556,7 +23552,7 @@ export type PokemonExtendedSettingsV0524PokemonRoggenrola = PokemonExtendedSetti
 				maxStationVisualSettings: {
 					scale: 4.27;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.3;
@@ -23589,7 +23585,7 @@ export type PokemonExtendedSettingsV0524PokemonRoggenrolaNormal = PokemonExtende
 				maxStationVisualSettings: {
 					scale: 4.27;
 				};
-			}
+			},
 		];
 		form: "ROGGENROLA_NORMAL";
 		sizeSettings: {
@@ -23623,7 +23619,7 @@ export type PokemonExtendedSettingsV0525PokemonBoldore = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 2.65;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.675;
@@ -23656,7 +23652,7 @@ export type PokemonExtendedSettingsV0525PokemonBoldoreNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 2.65;
 				};
-			}
+			},
 		];
 		form: "BOLDORE_NORMAL";
 		sizeSettings: {
@@ -23692,7 +23688,7 @@ export type PokemonExtendedSettingsV0526PokemonGigalith = PokemonExtendedSetting
 				maxStationVisualSettings: {
 					scale: 1.45;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.275;
@@ -23727,7 +23723,7 @@ export type PokemonExtendedSettingsV0526PokemonGigalithNormal = PokemonExtendedS
 				maxStationVisualSettings: {
 					scale: 1.45;
 				};
-			}
+			},
 		];
 		form: "GIGALITH_NORMAL";
 		sizeSettings: {
@@ -23762,7 +23758,7 @@ export type PokemonExtendedSettingsV0527PokemonWoobat = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 3.97;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.3;
@@ -23796,7 +23792,7 @@ export type PokemonExtendedSettingsV0527PokemonWoobatNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 3.97;
 				};
-			}
+			},
 		];
 		form: "WOOBAT_NORMAL";
 		sizeSettings: {
@@ -23827,7 +23823,7 @@ export type PokemonExtendedSettingsV0528PokemonSwoobat = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 2.48;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.675;
@@ -23857,7 +23853,7 @@ export type PokemonExtendedSettingsV0528PokemonSwoobatNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 2.48;
 				};
-			}
+			},
 		];
 		form: "SWOOBAT_NORMAL";
 		sizeSettings: {
@@ -23891,7 +23887,7 @@ export type PokemonExtendedSettingsV0529PokemonDrilbur = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 5.33;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.225;
@@ -23924,7 +23920,7 @@ export type PokemonExtendedSettingsV0529PokemonDrilburNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 5.33;
 				};
-			}
+			},
 		];
 		form: "DRILBUR_NORMAL";
 		sizeSettings: {
@@ -23955,7 +23951,7 @@ export type PokemonExtendedSettingsV0530PokemonExcadrill = PokemonExtendedSettin
 				maxStationVisualSettings: {
 					scale: 3.29;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.525;
@@ -23985,7 +23981,7 @@ export type PokemonExtendedSettingsV0530PokemonExcadrillNormal = PokemonExtended
 				maxStationVisualSettings: {
 					scale: 3.29;
 				};
-			}
+			},
 		];
 		form: "EXCADRILL_NORMAL";
 		sizeSettings: {
@@ -24021,7 +24017,7 @@ export type PokemonExtendedSettingsV0531PokemonAudino = PokemonExtendedSettings<
 					xxsLowerBound: 0.735;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "AUDINO";
 	}
@@ -24049,7 +24045,7 @@ export type PokemonExtendedSettingsV0531PokemonAudinoNormal = PokemonExtendedSet
 					xxsLowerBound: 0.735;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "AUDINO";
 	}
@@ -24487,7 +24483,7 @@ export type PokemonExtendedSettingsV0546PokemonCottonee = PokemonExtendedSetting
 				maxLobbyVisualSettings: {
 					cameraFov: -2;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.225;
@@ -24527,7 +24523,7 @@ export type PokemonExtendedSettingsV0546PokemonCottoneeNormal = PokemonExtendedS
 				maxLobbyVisualSettings: {
 					cameraFov: -2;
 				};
-			}
+			},
 		];
 		form: "COTTONEE_NORMAL";
 		sizeSettings: {
@@ -24562,7 +24558,7 @@ export type PokemonExtendedSettingsV0547PokemonWhimsicott = PokemonExtendedSetti
 				maxStationVisualSettings: {
 					scale: 3.15;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.525;
@@ -24596,7 +24592,7 @@ export type PokemonExtendedSettingsV0547PokemonWhimsicottNormal = PokemonExtende
 				maxStationVisualSettings: {
 					scale: 3.15;
 				};
-			}
+			},
 		];
 		form: "WHIMSICOTT_NORMAL";
 		sizeSettings: {
@@ -24844,7 +24840,7 @@ export type PokemonExtendedSettingsV0554PokemonDarumaka = PokemonExtendedSetting
 				maxStationVisualSettings: {
 					scale: 3;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.45;
@@ -24889,7 +24885,7 @@ export type PokemonExtendedSettingsV0554PokemonDarumakaNormal = PokemonExtendedS
 				maxStationVisualSettings: {
 					scale: 3;
 				};
-			}
+			},
 		];
 		form: "DARUMAKA_NORMAL";
 		sizeSettings: {
@@ -24920,7 +24916,7 @@ export type PokemonExtendedSettingsV0555PokemonDarmanitan = PokemonExtendedSetti
 				maxStationVisualSettings: {
 					scale: 1.9;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.975;
@@ -24980,7 +24976,7 @@ export type PokemonExtendedSettingsV0555PokemonDarmanitanStandard = PokemonExten
 				maxStationVisualSettings: {
 					scale: 1.9;
 				};
-			}
+			},
 		];
 		form: "DARMANITAN_STANDARD";
 		sizeSettings: {
@@ -25389,7 +25385,7 @@ export type PokemonExtendedSettingsV0568PokemonTrubbish = PokemonExtendedSetting
 				maxStationVisualSettings: {
 					scale: 3.67;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.45;
@@ -25419,7 +25415,7 @@ export type PokemonExtendedSettingsV0568PokemonTrubbishNormal = PokemonExtendedS
 				maxStationVisualSettings: {
 					scale: 3.67;
 				};
-			}
+			},
 		];
 		form: "TRUBBISH_NORMAL";
 		sizeSettings: {
@@ -25488,7 +25484,7 @@ export type PokemonExtendedSettingsV0569PokemonGarbodor = PokemonExtendedSetting
 				};
 				modelHeight: 1.48;
 				modelScaleV2: 1;
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.425;
@@ -25556,7 +25552,7 @@ export type PokemonExtendedSettingsV0569PokemonGarbodorNormal = PokemonExtendedS
 				};
 				modelHeight: 1.48;
 				modelScaleV2: 1;
-			}
+			},
 		];
 		form: "GARBODOR_NORMAL";
 		sizeSettings: {
@@ -27072,7 +27068,7 @@ export type PokemonExtendedSettingsV0615PokemonCryogonal = PokemonExtendedSettin
 				maxStationVisualSettings: {
 					scale: 1.35;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.825;
@@ -27102,7 +27098,7 @@ export type PokemonExtendedSettingsV0615PokemonCryogonalNormal = PokemonExtended
 				maxStationVisualSettings: {
 					scale: 1.35;
 				};
-			}
+			},
 		];
 		form: "CRYOGONAL_NORMAL";
 		sizeSettings: {
@@ -30642,7 +30638,7 @@ export type PokemonExtendedSettingsV0686PokemonInkay = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 4.27;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.3;
@@ -30678,7 +30674,7 @@ export type PokemonExtendedSettingsV0686PokemonInkayNormal = PokemonExtendedSett
 				maxStationVisualSettings: {
 					scale: 4.27;
 				};
-			}
+			},
 		];
 		form: "INKAY_NORMAL";
 		sizeSettings: {
@@ -30715,7 +30711,7 @@ export type PokemonExtendedSettingsV0687PokemonMalamar = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 1.37;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.125;
@@ -30736,7 +30732,7 @@ export type PokemonExtendedSettingsV0687PokemonMalamar = PokemonExtendedSettings
 					xxsLowerBound: 1.421;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "MALAMAR";
 	}
@@ -30764,7 +30760,7 @@ export type PokemonExtendedSettingsV0687PokemonMalamarNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 1.37;
 				};
-			}
+			},
 		];
 		form: "MALAMAR_NORMAL";
 		sizeSettings: {
@@ -30786,7 +30782,7 @@ export type PokemonExtendedSettingsV0687PokemonMalamarNormal = PokemonExtendedSe
 					xxsLowerBound: 1.421;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "MALAMAR";
 	}
@@ -31156,7 +31152,7 @@ export type PokemonExtendedSettingsV0700PokemonSylveon = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 2.38;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.75;
@@ -31186,7 +31182,7 @@ export type PokemonExtendedSettingsV0700PokemonSylveonNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 2.38;
 				};
-			}
+			},
 		];
 		form: "SYLVEON_NORMAL";
 		sizeSettings: {
@@ -31961,7 +31957,7 @@ export type PokemonExtendedSettingsV0719PokemonDiancie = PokemonExtendedSettings
 					xxsLowerBound: 0.539;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "DIANCIE";
 	}
@@ -31989,7 +31985,7 @@ export type PokemonExtendedSettingsV0719PokemonDiancieNormal = PokemonExtendedSe
 					xxsLowerBound: 0.539;
 				};
 				tempEvoId: "TEMP_EVOLUTION_MEGA";
-			}
+			},
 		];
 		uniqueId: "DIANCIE";
 	}
@@ -33383,7 +33379,7 @@ export type PokemonExtendedSettingsV0761PokemonBounsweet = PokemonExtendedSettin
 				maxStationVisualSettings: {
 					scale: 7;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.225;
@@ -33416,7 +33412,7 @@ export type PokemonExtendedSettingsV0761PokemonBounsweetNormal = PokemonExtended
 				maxStationVisualSettings: {
 					scale: 7;
 				};
-			}
+			},
 		];
 		form: "BOUNSWEET_NORMAL";
 		sizeSettings: {
@@ -33447,7 +33443,7 @@ export type PokemonExtendedSettingsV0762PokemonSteenee = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 2.59;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.525;
@@ -33477,7 +33473,7 @@ export type PokemonExtendedSettingsV0762PokemonSteeneeNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 2.59;
 				};
-			}
+			},
 		];
 		form: "STEENEE_NORMAL";
 		sizeSettings: {
@@ -33511,7 +33507,7 @@ export type PokemonExtendedSettingsV0763PokemonTsareena = PokemonExtendedSetting
 				maxStationVisualSettings: {
 					scale: 1.94;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.9;
@@ -33544,7 +33540,7 @@ export type PokemonExtendedSettingsV0763PokemonTsareenaNormal = PokemonExtendedS
 				maxStationVisualSettings: {
 					scale: 1.94;
 				};
-			}
+			},
 		];
 		form: "TSAREENA_NORMAL";
 		sizeSettings: {
@@ -33633,7 +33629,7 @@ export type PokemonExtendedSettingsV0766PokemonPassimian = PokemonExtendedSettin
 				maxStationVisualSettings: {
 					scale: 1.69;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.5;
@@ -33663,7 +33659,7 @@ export type PokemonExtendedSettingsV0766PokemonPassimianNormal = PokemonExtended
 				maxStationVisualSettings: {
 					scale: 1.69;
 				};
-			}
+			},
 		];
 		form: "PASSIMIAN_NORMAL";
 		sizeSettings: {
@@ -34436,7 +34432,7 @@ export type PokemonExtendedSettingsV0780PokemonDrampa = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 1.5;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 2.25;
@@ -34471,7 +34467,7 @@ export type PokemonExtendedSettingsV0780PokemonDrampaNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 1.5;
 				};
-			}
+			},
 		];
 		form: "DRAMPA_NORMAL";
 		sizeSettings: {
@@ -35406,7 +35402,7 @@ export type PokemonExtendedSettingsV0810PokemonGrookey = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 5.33;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.225;
@@ -35439,7 +35435,7 @@ export type PokemonExtendedSettingsV0810PokemonGrookeyNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 5.33;
 				};
-			}
+			},
 		];
 		form: "GROOKEY_NORMAL";
 		sizeSettings: {
@@ -35473,7 +35469,7 @@ export type PokemonExtendedSettingsV0811PokemonThwackey = PokemonExtendedSetting
 				maxStationVisualSettings: {
 					scale: 2.41;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.525;
@@ -35506,7 +35502,7 @@ export type PokemonExtendedSettingsV0811PokemonThwackeyNormal = PokemonExtendedS
 				maxStationVisualSettings: {
 					scale: 2.41;
 				};
-			}
+			},
 		];
 		form: "THWACKEY_NORMAL";
 		sizeSettings: {
@@ -35564,7 +35560,7 @@ export type PokemonExtendedSettingsV0812PokemonRillaboom = PokemonExtendedSettin
 				};
 				modelHeight: 1.6;
 				modelScaleV2: 1;
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.575;
@@ -35621,7 +35617,7 @@ export type PokemonExtendedSettingsV0812PokemonRillaboomNormal = PokemonExtended
 				};
 				modelHeight: 1.6;
 				modelScaleV2: 1;
-			}
+			},
 		];
 		form: "RILLABOOM_NORMAL";
 		sizeSettings: {
@@ -35655,7 +35651,7 @@ export type PokemonExtendedSettingsV0813PokemonScorbunny = PokemonExtendedSettin
 				maxStationVisualSettings: {
 					scale: 5.33;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.225;
@@ -35688,7 +35684,7 @@ export type PokemonExtendedSettingsV0813PokemonScorbunnyNormal = PokemonExtended
 				maxStationVisualSettings: {
 					scale: 5.33;
 				};
-			}
+			},
 		];
 		form: "SCORBUNNY_NORMAL";
 		sizeSettings: {
@@ -35722,7 +35718,7 @@ export type PokemonExtendedSettingsV0814PokemonRaboot = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 3.02;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.45;
@@ -35755,7 +35751,7 @@ export type PokemonExtendedSettingsV0814PokemonRabootNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 3.02;
 				};
-			}
+			},
 		];
 		form: "RABOOT_NORMAL";
 		sizeSettings: {
@@ -35816,7 +35812,7 @@ export type PokemonExtendedSettingsV0815PokemonCinderace = PokemonExtendedSettin
 				};
 				modelHeight: 2.8;
 				modelScaleV2: 0.88;
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.05;
@@ -35876,7 +35872,7 @@ export type PokemonExtendedSettingsV0815PokemonCinderaceNormal = PokemonExtended
 				};
 				modelHeight: 2.8;
 				modelScaleV2: 0.88;
-			}
+			},
 		];
 		form: "CINDERACE_NORMAL";
 		sizeSettings: {
@@ -35910,7 +35906,7 @@ export type PokemonExtendedSettingsV0816PokemonSobble = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 5.33;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.225;
@@ -35943,7 +35939,7 @@ export type PokemonExtendedSettingsV0816PokemonSobbleNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 5.33;
 				};
-			}
+			},
 		];
 		form: "SOBBLE_NORMAL";
 		sizeSettings: {
@@ -35977,7 +35973,7 @@ export type PokemonExtendedSettingsV0817PokemonDrizzile = PokemonExtendedSetting
 				maxStationVisualSettings: {
 					scale: 2.59;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.525;
@@ -36010,7 +36006,7 @@ export type PokemonExtendedSettingsV0817PokemonDrizzileNormal = PokemonExtendedS
 				maxStationVisualSettings: {
 					scale: 2.59;
 				};
-			}
+			},
 		];
 		form: "DRIZZILE_NORMAL";
 		sizeSettings: {
@@ -36077,7 +36073,7 @@ export type PokemonExtendedSettingsV0818PokemonInteleon = PokemonExtendedSetting
 				};
 				modelHeight: 3.19;
 				modelScaleV2: 0.83;
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.425;
@@ -36143,7 +36139,7 @@ export type PokemonExtendedSettingsV0818PokemonInteleonNormal = PokemonExtendedS
 				};
 				modelHeight: 3.19;
 				modelScaleV2: 0.83;
-			}
+			},
 		];
 		form: "INTELEON_NORMAL";
 		sizeSettings: {
@@ -36177,7 +36173,7 @@ export type PokemonExtendedSettingsV0819PokemonSkwovet = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 5.33;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.225;
@@ -36210,7 +36206,7 @@ export type PokemonExtendedSettingsV0819PokemonSkwovetNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 5.33;
 				};
-			}
+			},
 		];
 		form: "SKWOVET_NORMAL";
 		sizeSettings: {
@@ -36244,7 +36240,7 @@ export type PokemonExtendedSettingsV0820PokemonGreedent = PokemonExtendedSetting
 				maxStationVisualSettings: {
 					scale: 3.45;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.45;
@@ -36277,7 +36273,7 @@ export type PokemonExtendedSettingsV0820PokemonGreedentNormal = PokemonExtendedS
 				maxStationVisualSettings: {
 					scale: 3.45;
 				};
-			}
+			},
 		];
 		form: "GREEDENT_NORMAL";
 		sizeSettings: {
@@ -36308,7 +36304,7 @@ export type PokemonExtendedSettingsV0821PokemonRookidee = PokemonExtendedSetting
 				maxStationVisualSettings: {
 					scale: 8;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.15;
@@ -36338,7 +36334,7 @@ export type PokemonExtendedSettingsV0821PokemonRookideeNormal = PokemonExtendedS
 				maxStationVisualSettings: {
 					scale: 8;
 				};
-			}
+			},
 		];
 		form: "ROOKIDEE_NORMAL";
 		sizeSettings: {
@@ -36369,7 +36365,7 @@ export type PokemonExtendedSettingsV0822PokemonCorvisquire = PokemonExtendedSett
 				maxStationVisualSettings: {
 					scale: 2.475;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.6;
@@ -36399,7 +36395,7 @@ export type PokemonExtendedSettingsV0822PokemonCorvisquireNormal = PokemonExtend
 				maxStationVisualSettings: {
 					scale: 2.475;
 				};
-			}
+			},
 		];
 		form: "CORVISQUIRE_NORMAL";
 		sizeSettings: {
@@ -36433,7 +36429,7 @@ export type PokemonExtendedSettingsV0823PokemonCorviknight = PokemonExtendedSett
 				maxStationVisualSettings: {
 					scale: 0.88;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.65;
@@ -36466,7 +36462,7 @@ export type PokemonExtendedSettingsV0823PokemonCorviknightNormal = PokemonExtend
 				maxStationVisualSettings: {
 					scale: 0.88;
 				};
-			}
+			},
 		];
 		form: "CORVIKNIGHT_NORMAL";
 		sizeSettings: {
@@ -36700,7 +36696,7 @@ export type PokemonExtendedSettingsV0831PokemonWooloo = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 3.02;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.45;
@@ -36730,7 +36726,7 @@ export type PokemonExtendedSettingsV0831PokemonWoolooNormal = PokemonExtendedSet
 				maxStationVisualSettings: {
 					scale: 3.02;
 				};
-			}
+			},
 		];
 		form: "WOOLOO_NORMAL";
 		sizeSettings: {
@@ -36761,7 +36757,7 @@ export type PokemonExtendedSettingsV0832PokemonDubwool = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 1.79;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.975;
@@ -36791,7 +36787,7 @@ export type PokemonExtendedSettingsV0832PokemonDubwoolNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 1.79;
 				};
-			}
+			},
 		];
 		form: "DUBWOOL_NORMAL";
 		sizeSettings: {
@@ -37260,7 +37256,7 @@ export type PokemonExtendedSettingsV0848PokemonToxel = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 4.27;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.3;
@@ -37293,7 +37289,7 @@ export type PokemonExtendedSettingsV0848PokemonToxelNormal = PokemonExtendedSett
 				maxStationVisualSettings: {
 					scale: 4.27;
 				};
-			}
+			},
 		];
 		form: "TOXEL_NORMAL";
 		sizeSettings: {
@@ -37360,7 +37356,7 @@ export type PokemonExtendedSettingsV0849PokemonToxtricity = PokemonExtendedSetti
 					xxlUpperBound: 25.975;
 					xxsLowerBound: 23.833;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.2;
@@ -37426,7 +37422,7 @@ export type PokemonExtendedSettingsV0849PokemonToxtricityAmped = PokemonExtended
 					xxlUpperBound: 25.975;
 					xxsLowerBound: 23.833;
 				};
-			}
+			},
 		];
 		form: "TOXTRICITY_AMPED";
 		sizeSettings: {
@@ -37493,7 +37489,7 @@ export type PokemonExtendedSettingsV0849PokemonToxtricityLowKey = PokemonExtende
 					xxlUpperBound: 25.975;
 					xxsLowerBound: 23.833;
 				};
-			}
+			},
 		];
 		form: "TOXTRICITY_LOW_KEY";
 		sizeSettings: {
@@ -37728,7 +37724,7 @@ export type PokemonExtendedSettingsV0856PokemonHatenna = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 4.27;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.3;
@@ -37758,7 +37754,7 @@ export type PokemonExtendedSettingsV0856PokemonHatennaNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 4.27;
 				};
-			}
+			},
 		];
 		form: "HATENNA_NORMAL";
 		sizeSettings: {
@@ -37789,7 +37785,7 @@ export type PokemonExtendedSettingsV0857PokemonHattrem = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 3.02;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.45;
@@ -37819,7 +37815,7 @@ export type PokemonExtendedSettingsV0857PokemonHattremNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 3.02;
 				};
-			}
+			},
 		];
 		form: "HATTREM_NORMAL";
 		sizeSettings: {
@@ -37850,7 +37846,7 @@ export type PokemonExtendedSettingsV0858PokemonHatterene = PokemonExtendedSettin
 				maxStationVisualSettings: {
 					scale: 1.23;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.575;
@@ -37880,7 +37876,7 @@ export type PokemonExtendedSettingsV0858PokemonHattereneNormal = PokemonExtended
 				maxStationVisualSettings: {
 					scale: 1.23;
 				};
-			}
+			},
 		];
 		form: "HATTERENE_NORMAL";
 		sizeSettings: {
@@ -37986,7 +37982,7 @@ export type PokemonExtendedSettingsV0861PokemonGrimmsnarl = PokemonExtendedSetti
 				};
 				modelHeight: 3;
 				modelScaleV2: 0.86;
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.125;
@@ -38033,7 +38029,7 @@ export type PokemonExtendedSettingsV0861PokemonGrimmsnarlNormal = PokemonExtende
 				};
 				modelHeight: 3;
 				modelScaleV2: 0.86;
-			}
+			},
 		];
 		form: "GRIMMSNARL_NORMAL";
 		sizeSettings: {
@@ -38296,7 +38292,7 @@ export type PokemonExtendedSettingsV0870PokemonFalinks = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 1.08;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 2.25;
@@ -38341,7 +38337,7 @@ export type PokemonExtendedSettingsV0870PokemonFalinksNormal = PokemonExtendedSe
 				maxStationVisualSettings: {
 					scale: 1.08;
 				};
-			}
+			},
 		];
 		form: "FALINKS_NORMAL";
 		sizeSettings: {
@@ -38797,7 +38793,7 @@ export type PokemonExtendedSettingsV0884PokemonDuraludon = PokemonExtendedSettin
 				maxStationVisualSettings: {
 					scale: 1.37;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.35;
@@ -38830,7 +38826,7 @@ export type PokemonExtendedSettingsV0884PokemonDuraludonNormal = PokemonExtended
 				maxStationVisualSettings: {
 					scale: 1.37;
 				};
-			}
+			},
 		];
 		form: "DURALUDON_NORMAL";
 		sizeSettings: {
@@ -39063,7 +39059,7 @@ export type PokemonExtendedSettingsV0890PokemonEternatusEternamax = PokemonExten
 				maxStationVisualSettings: {
 					scale: 0.46;
 				};
-			}
+			},
 		];
 		form: "ETERNATUS_ETERNAMAX";
 		sizeSettings: {
@@ -39112,7 +39108,7 @@ export type PokemonExtendedSettingsV0891PokemonKubfu = PokemonExtendedSettings<
 				maxStationVisualSettings: {
 					scale: 3.89;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 0.45;
@@ -39145,7 +39141,7 @@ export type PokemonExtendedSettingsV0891PokemonKubfuNormal = PokemonExtendedSett
 				maxStationVisualSettings: {
 					scale: 3.89;
 				};
-			}
+			},
 		];
 		form: "KUBFU_NORMAL";
 		sizeSettings: {
@@ -39179,7 +39175,7 @@ export type PokemonExtendedSettingsV0892PokemonUrshifu = PokemonExtendedSettings
 				maxStationVisualSettings: {
 					scale: 1.65;
 				};
-			}
+			},
 		];
 		sizeSettings: {
 			mLowerBound: 1.425;
@@ -39224,7 +39220,7 @@ export type PokemonExtendedSettingsV0892PokemonUrshifuRapidStrike = PokemonExten
 					xxlUpperBound: 27.975;
 					xxsLowerBound: 25.833;
 				};
-			}
+			},
 		];
 		form: "URSHIFU_RAPID_STRIKE";
 		sizeSettings: {
@@ -39262,7 +39258,7 @@ export type PokemonExtendedSettingsV0892PokemonUrshifuSingleStrike = PokemonExte
 			{
 				averageHeightM: 29;
 				breadMode: "BREAD_DOUGH_MODE_2";
-			}
+			},
 		];
 		form: "URSHIFU_SINGLE_STRIKE";
 		sizeSettings: {

@@ -6,7 +6,8 @@
 		"useIgnoreFile": true
 	},
 	"files": {
-		"ignoreUnknown": false
+		"ignoreUnknown": false,
+		"maxSize": 10485760
 	},
 	"formatter": {
 		"enabled": true,
