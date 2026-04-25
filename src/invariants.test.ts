@@ -1,8 +1,15 @@
 import { describe, expect, test } from "bun:test";
 import { MOCK_MASTERFILE } from "./fixtures.ts";
 import { groupEntries } from "./group.ts";
+import type { InferredType } from "./infer.ts";
 import type { InvariantNode, InvariantTree } from "./invariants.ts";
-import { deepEqual, detectInvariants, invariantsToInferredType } from "./invariants.ts";
+import {
+	deepEqual,
+	detectInvariants,
+	invariantsToInferredType,
+	makeAllOptional,
+	stripInvariantsFromWidened,
+} from "./invariants.ts";
 
 describe("deepEqual", () => {
 	test("returns true for equal primitives", () => {
@@ -221,5 +228,131 @@ describe("invariantsToInferredType", () => {
 		const outer = result.properties[0]!;
 		if (outer.type.kind !== "object") throw new Error("unreachable");
 		expect(outer.type.properties.map((p) => p.name)).toEqual(["apple", "zebra"]);
+	});
+});
+
+describe("stripInvariantsFromWidened", () => {
+	test("removes leaf invariant properties", () => {
+		const type: InferredType = {
+			kind: "object",
+			properties: [
+				{ name: "keep", optional: false, type: { kind: "string", literals: [] } },
+				{ name: "drop", optional: false, type: { kind: "templateIdReference" } },
+			],
+		};
+		const tree: InvariantTree = new Map([["drop", { kind: "templateIdTie" }]]);
+		const result = stripInvariantsFromWidened(type, tree);
+		if (result.kind !== "object") throw new Error("unreachable");
+		expect(result.properties.map((p) => p.name)).toEqual(["keep"]);
+	});
+
+	test("recurses into nested invariants and drops empty containers", () => {
+		const type: InferredType = {
+			kind: "object",
+			properties: [
+				{
+					name: "wrapper",
+					optional: false,
+					type: {
+						kind: "object",
+						properties: [{ name: "onlyChild", optional: false, type: { kind: "templateIdReference" } }],
+					},
+				},
+				{
+					name: "kept",
+					optional: false,
+					type: { kind: "string", literals: [] },
+				},
+			],
+		};
+		const tree: InvariantTree = new Map<string, InvariantNode>([
+			[
+				"wrapper",
+				{
+					kind: "nested",
+					children: new Map<string, InvariantNode>([["onlyChild", { kind: "templateIdTie" }]]),
+				},
+			],
+		]);
+		const result = stripInvariantsFromWidened(type, tree);
+		if (result.kind !== "object") throw new Error("unreachable");
+		// wrapper should be dropped because its only child was stripped.
+		expect(result.properties.map((p) => p.name)).toEqual(["kept"]);
+	});
+
+	test("preserves partial objects when some children are invariants", () => {
+		const type: InferredType = {
+			kind: "object",
+			properties: [
+				{
+					name: "group",
+					optional: false,
+					type: {
+						kind: "object",
+						properties: [
+							{ name: "drop", optional: false, type: { kind: "number", numericKind: "float", literals: [] } },
+							{ name: "keep", optional: false, type: { kind: "string", literals: [] } },
+						],
+					},
+				},
+			],
+		};
+		const tree: InvariantTree = new Map<string, InvariantNode>([
+			[
+				"group",
+				{
+					kind: "nested",
+					children: new Map<string, InvariantNode>([["drop", { kind: "constant", value: 1 }]]),
+				},
+			],
+		]);
+		const result = stripInvariantsFromWidened(type, tree);
+		if (result.kind !== "object") throw new Error("unreachable");
+		expect(result.properties).toHaveLength(1);
+		const group = result.properties[0]!;
+		if (group.type.kind !== "object") throw new Error("unreachable");
+		expect(group.type.properties.map((p) => p.name)).toEqual(["keep"]);
+	});
+});
+
+describe("makeAllOptional", () => {
+	test("marks every property in an object as optional", () => {
+		const type: InferredType = {
+			kind: "object",
+			properties: [
+				{ name: "a", optional: false, type: { kind: "string", literals: [] } },
+				{ name: "b", optional: false, type: { kind: "number", numericKind: "uint", literals: [] } },
+			],
+		};
+		const result = makeAllOptional(type);
+		if (result.kind !== "object") throw new Error("unreachable");
+		expect(result.properties.every((p) => p.optional)).toBe(true);
+	});
+
+	test("recurses into nested objects", () => {
+		const type: InferredType = {
+			kind: "object",
+			properties: [
+				{
+					name: "outer",
+					optional: false,
+					type: {
+						kind: "object",
+						properties: [{ name: "inner", optional: false, type: { kind: "string", literals: [] } }],
+					},
+				},
+			],
+		};
+		const result = makeAllOptional(type);
+		if (result.kind !== "object") throw new Error("unreachable");
+		const outer = result.properties[0]!;
+		expect(outer.optional).toBe(true);
+		if (outer.type.kind !== "object") throw new Error("unreachable");
+		expect(outer.type.properties[0]!.optional).toBe(true);
+	});
+
+	test("leaves non-object types unchanged", () => {
+		const type: InferredType = { kind: "string", literals: [] };
+		expect(makeAllOptional(type)).toEqual(type);
 	});
 });

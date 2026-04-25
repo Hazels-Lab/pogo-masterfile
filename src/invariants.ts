@@ -118,3 +118,39 @@ export function invariantsToInferredType(tree: InvariantTree): InferredType {
 
 	return { kind: "object", properties };
 }
+
+export function stripInvariantsFromWidened(type: InferredType, tree: InvariantTree): InferredType {
+	if (type.kind !== "object") return type;
+	const stripped: InferredProperty[] = [];
+	for (const prop of type.properties) {
+		const node = tree.get(prop.name);
+		if (!node) {
+			stripped.push(prop);
+			continue;
+		}
+		if (node.kind === "constant" || node.kind === "templateIdTie") {
+			// Leaf invariant — drop this property.
+			continue;
+		}
+		// Nested invariants — recurse.
+		const nestedStripped = stripInvariantsFromWidened(prop.type, node.children);
+		if (nestedStripped.kind === "object" && nestedStripped.properties.length === 0) {
+			// All children stripped — drop the container.
+			continue;
+		}
+		stripped.push({ ...prop, type: nestedStripped });
+	}
+	return { kind: "object", properties: stripped };
+}
+
+export function makeAllOptional(type: InferredType): InferredType {
+	if (type.kind !== "object") return type;
+	return {
+		kind: "object",
+		properties: type.properties.map((p) => ({
+			name: p.name,
+			type: makeAllOptional(p.type),
+			optional: true,
+		})),
+	};
+}
