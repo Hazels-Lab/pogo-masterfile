@@ -10,9 +10,9 @@ function mkTempDir(): string {
 }
 
 describe("writeOutput", () => {
-	test("writes files relative to outDir, creates nested dirs", () => {
+	test("writes files relative to outDir, creates nested dirs", async () => {
 		const outDir = mkTempDir();
-		writeOutput(
+		await writeOutput(
 			new Map([
 				["groups/foo.ts", "export type Foo = 1;\n"],
 				["index.ts", "export * from './groups/foo.ts';\n"],
@@ -24,14 +24,14 @@ describe("writeOutput", () => {
 		rmSync(outDir, { recursive: true, force: true });
 	});
 
-	test("nukes existing contents of outDir before writing", () => {
+	test("nukes existing contents of outDir before writing", async () => {
 		const outDir = mkTempDir();
 		// Pre-populate with a stale file
-		writeOutput(new Map([["stale.ts", "stale"]]), outDir);
+		await writeOutput(new Map([["stale.ts", "stale"]]), outDir);
 		expect(readdirSync(outDir)).toContain("stale.ts");
 
 		// Write a fresh set — stale should be gone
-		writeOutput(new Map([["fresh.ts", "fresh"]]), outDir);
+		await writeOutput(new Map([["fresh.ts", "fresh"]]), outDir);
 		const after = readdirSync(outDir);
 		expect(after).toContain("fresh.ts");
 		expect(after).not.toContain("stale.ts");

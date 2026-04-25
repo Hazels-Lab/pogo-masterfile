@@ -1,12 +1,14 @@
-import { mkdirSync, rmSync, writeFileSync } from "node:fs";
+import { mkdir, rm, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 
-export function writeOutput(files: Map<string, string>, outDir: string): void {
-	rmSync(outDir, { recursive: true, force: true });
-	mkdirSync(outDir, { recursive: true });
-	for (const [relPath, content] of files) {
-		const full = join(outDir, relPath);
-		mkdirSync(dirname(full), { recursive: true });
-		writeFileSync(full, content, "utf8");
-	}
+export async function writeOutput(files: Map<string, string>, outDir: string): Promise<void> {
+	await rm(outDir, { recursive: true, force: true });
+	await mkdir(outDir, { recursive: true });
+	await Promise.all(
+		Object.entries(files).map(async ([relPath, content]) => {
+			const full = join(outDir, relPath);
+			await mkdir(dirname(full), { recursive: true });
+			await writeFile(full, content, "utf8");
+		}),
+	);
 }

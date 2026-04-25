@@ -47,7 +47,7 @@ async function main(): Promise<void> {
 	console.log(`Grouped into ${groups.size} discriminators.`);
 
 	const files = planFiles(groups);
-	writeOutput(files, OUT_DIR);
+	await writeOutput(files, OUT_DIR);
 	console.log(`Wrote ${files.size} files to ${OUT_DIR}`);
 }
 
