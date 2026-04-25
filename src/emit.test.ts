@@ -1,69 +1,81 @@
 import { describe, expect, test } from "bun:test";
-import {
-	emitGroupFile,
-	emitIndexFile,
-	emitMiscFile,
-	kebabCase,
-} from "./emit.ts";
+import { emitGroupFile, emitIndexFile, emitMiscFile, kebabCase } from "./emit.ts";
 import { MOCK_MASTERFILE } from "./fixtures.ts";
 import type { Group } from "./group.ts";
 import { groupEntries } from "./group.ts";
 
 describe("emitGroupFile", () => {
-	test("emits generic interface + per-entry aliases + union + TemplateID for a multi-entry group", () => {
+	test("emits TData generic with invariants inlined in base body", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
 
 		const output = emitGroupFile(group);
 
-		expect(output).toContain(
-			"export interface TypeEffective<TemplateID extends string> {",
-		);
-		expect(output).toContain("data: TypeEffectiveData<TemplateID>;");
-		expect(output).toContain(
-			"export interface TypeEffectiveData<TemplateID extends string> {",
-		);
-		expect(output).toContain("typeEffective: {");
-		expect(output).toContain("attackScalar: TypeEffectiveAttackScalar;");
-		expect(output).toContain("export type TypeEffectiveAttackScalar = [");
-		expect(output).toContain("attackType: TemplateID;");
-		expect(output).not.toContain(
-			`attackType: "POKEMON_TYPE_BUG" | "POKEMON_TYPE_DARK";`,
-		);
-		expect(output).toContain("effectGroup: {");
-		expect(output).toContain("typeCode: TypeEffectiveEffectGroupTypeCode;");
-		expect(output).toContain("windows: TypeEffectiveEffectGroupWindows;");
-		expect(output).toContain(
-			"combatType: TypeEffectiveEffectGroupNestedCombatType;",
-		);
-		expect(output).toContain("tags: Array<TypeEffectiveEffectGroupTags>;");
-		expect(output).toContain(
-			`export type TypeEffectiveEffectGroupTypeCode = "BUG" | "DARK";`,
-		);
-		expect(output).toContain("export type TypeEffectiveEffectGroupWindows = [");
-		expect(output).toContain(
-			`export type TypeEffectiveEffectGroupNestedCombatType = "POKEMON_TYPE_BUG" | "POKEMON_TYPE_DARK";`,
-		);
-		expect(output).toContain(
-			`export type TypeEffectiveEffectGroupTags = "charged" | "fast";`,
-		);
-		expect(output).toContain("accuracyChance: 1;");
-		expect(output).not.toContain(`typeCode: "BUG" | "DARK";`);
-		expect(output).not.toContain(
-			`combatType: "POKEMON_TYPE_BUG" | "POKEMON_TYPE_DARK";`,
-		);
-		expect(output).not.toContain("typeEffective: unknown;");
-		expect(output).toContain(
-			'export type TypeEffectiveBug = TypeEffective<"POKEMON_TYPE_BUG">;',
-		);
-		expect(output).toContain(
-			'export type TypeEffectiveDark = TypeEffective<"POKEMON_TYPE_DARK">;',
-		);
+		// Two-generic base interface header:
+		expect(output).toContain("export interface TypeEffective<");
+		expect(output).toContain("TemplateID extends string = string,");
+		expect(output).toContain("TData extends TypeEffectiveData = TypeEffectiveData,");
+
+		// Base body: TData & { invariants }
+		expect(output).toContain("typeEffective: TData & {");
+		expect(output).toContain("attackType: TemplateID;"); // Kind 2 top-level
+		expect(output).toContain("accuracyChance: 1;"); // Kind 1 nested
+		expect(output).toContain("combatType: TemplateID;"); // Kind 2 nested deeply
+
+		// XData interface emitted with all-optional properties, no invariant fields:
+		expect(output).toContain("export interface TypeEffectiveData {");
+		expect(output).toContain("attackScalar?: [");
+		expect(output).toContain("effectGroup?: {");
+		expect(output).toContain("tags?: Array<string>;");
+		expect(output).toContain("typeCode?: string;");
+		expect(output).toContain("windows?: [");
+		// Invariants should NOT appear in XData (they live in the base body):
+		expect(output).not.toContain("attackType?:");
+		expect(output).not.toContain("accuracyChance?:");
+		// effectGroup.nested has only combatType (an invariant) — the whole nested
+		// wrapper should be stripped from XData.
+		expect(output).not.toContain("nested?:");
+
+		// No legacy named tuple/primitive aliases should be emitted:
+		expect(output).not.toContain("export type TypeEffectiveAttackScalar");
+		expect(output).not.toContain("export type TypeEffectiveEffectGroupWindows");
+
+		// Per-variant aliases carry literal TData, NOT the widened alias:
+		expect(output).toContain("export type TypeEffectiveBug = TypeEffective<");
+		expect(output).toContain(`"POKEMON_TYPE_BUG"`);
+		expect(output).toContain("export type TypeEffectiveDark = TypeEffective<");
+		expect(output).toContain(`"POKEMON_TYPE_DARK"`);
+
+		// Bug's block contains its literal tuple + literals for variable fields.
+		// Invariant-hoisted fields (attackType, accuracyChance, nested.combatType)
+		// are NOT present in the variant literal — they come from the base body.
+		const bugStart = output.indexOf("export type TypeEffectiveBug = TypeEffective<");
+		const bugEnd = output.indexOf(">;", bugStart);
+		const bugBlock = output.slice(bugStart, bugEnd + 2);
+		expect(bugBlock).toContain(`"POKEMON_TYPE_BUG"`);
+		expect(bugBlock).toContain("0.625");
+		expect(bugBlock).toContain("1.6");
+		expect(bugBlock).toContain(`"BUG"`); // typeCode
+		expect(bugBlock).toContain(`"fast"`); // tags
+		expect(bugBlock).toContain("250"); // windows[1]
+		expect(bugBlock).not.toContain("attackType"); // invariant; in base body only
+		expect(bugBlock).not.toContain("accuracyChance"); // invariant; in base body only
+		expect(bugBlock).not.toContain("combatType"); // invariant; in base body only
+
+		// Dark's block:
+		const darkStart = output.indexOf("export type TypeEffectiveDark = TypeEffective<");
+		const darkEnd = output.indexOf(">;", darkStart);
+		const darkBlock = output.slice(darkStart, darkEnd + 2);
+		expect(darkBlock).toContain(`"POKEMON_TYPE_DARK"`);
+		expect(darkBlock).toContain(`"DARK"`); // typeCode
+		expect(darkBlock).toContain(`"charged"`);
+		expect(darkBlock).toContain(`"fast"`);
+		expect(darkBlock).toContain("300"); // windows[1]
+
+		// Union + TemplateID alias unchanged:
 		expect(output).toContain("export type TypeEffectiveMasterfileEntry =");
 		expect(output).toContain("| TypeEffectiveBug");
 		expect(output).toContain("| TypeEffectiveDark");
-		expect(output).toContain(
-			'export type TypeEffectiveTemplateID = TypeEffectiveMasterfileEntry["templateId"];',
-		);
+		expect(output).toContain(`export type TypeEffectiveTemplateID = TypeEffectiveMasterfileEntry["templateId"];`);
 	});
 
 	test("sorts per-entry aliases by templateId lexicographically", () => {
@@ -89,22 +101,38 @@ describe("emitGroupFile", () => {
 		expect(bugIdx).toBeLessThan(waterIdx);
 	});
 
-	test("renders variable arrays and optional nested properties from inferred group payloads", () => {
+	test("emits per-variant TData with only the fields that variant has", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("pokemonSettings")!;
 
 		const output = emitGroupFile(group);
 
-		expect(output).toContain("forms: Array<PokemonSettingsForms>;");
-		expect(output).toContain(
-			`export type PokemonSettingsForms = "NORMAL" | "SHADOW";`,
-		);
-		expect(output).not.toContain(`forms: Array<"NORMAL" | "SHADOW">;`);
+		// Base interface + XData:
+		expect(output).toContain("export interface PokemonSettings<");
+		expect(output).toContain("TData extends PokemonSettingsData = PokemonSettingsData,");
+		expect(output).toContain("export interface PokemonSettingsData {");
+		expect(output).toContain("forms?: Array<string>;");
+
+		// familyId is a Kind 1 constant ("FAMILY_BULBASAUR" across both entries) → base body
+		expect(output).toContain("pokemonSettings: TData & {");
 		expect(output).toContain(`familyId: "FAMILY_BULBASAUR";`);
-		expect(output).toContain("shadowBoost?: null;");
-		expect(output).not.toContain(": unknown;");
+
+		// Ivysaur's stats omit `shadowBoost` (present only on Bulbasaur).
+		const ivyStart = output.indexOf("export type PokemonSettingsV0002PokemonIvysaur = PokemonSettings<");
+		const ivyEnd = output.indexOf(">;", ivyStart);
+		const ivyBlock = output.slice(ivyStart, ivyEnd + 2);
+		expect(ivyBlock).toContain(`"V0002_POKEMON_IVYSAUR"`);
+		expect(ivyBlock).toContain(`"NORMAL"`);
+		expect(ivyBlock).toContain(`"SHADOW"`);
+		expect(ivyBlock).not.toContain("shadowBoost");
+
+		// Bulbasaur's TData includes shadowBoost: null.
+		const bulbaStart = output.indexOf("export type PokemonSettingsV0001PokemonBulbasaur = PokemonSettings<");
+		const bulbaEnd = output.indexOf(">;", bulbaStart);
+		const bulbaBlock = output.slice(bulbaStart, bulbaEnd + 2);
+		expect(bulbaBlock).toContain("shadowBoost: null");
 	});
 
-	test("renders tuple aliases without out-of-scope TemplateID references", () => {
+	test("emits tuples inline in XData without dangling TemplateID references", () => {
 		const group: Group = {
 			discriminator: "tupleMirror",
 			entries: [
@@ -126,16 +154,18 @@ describe("emitGroupFile", () => {
 		};
 
 		const output = emitGroupFile(group);
-		const aliasStart = output.indexOf("export type TupleMirrorIds = [");
-		const aliasEnd = output.indexOf("];", aliasStart);
-		const aliasBlock = output.slice(aliasStart, aliasEnd + 2);
 
-		expect(output).toContain("ids: TupleMirrorIds;");
-		expect(aliasBlock).toContain(`"TUPLE_ONE" | "TUPLE_TWO"`);
-		expect(aliasBlock).not.toContain("TemplateID");
+		// XData: ids is a 1-tuple of bare strings (widened).
+		expect(output).toContain("export interface TupleMirrorData {");
+		expect(output).toContain("ids?: [");
+		expect(output).toContain("string");
+
+		// Per-variant: literal tuple.
+		expect(output).toContain(`"TUPLE_ONE"`);
+		expect(output).toContain(`"TUPLE_TWO"`);
 	});
 
-	test("suffixes planned aliases that collide with exported module names", () => {
+	test("emits XData interface name without the collision suffix", () => {
 		const group: Group = {
 			discriminator: "nameCollision",
 			entries: [
@@ -158,19 +188,21 @@ describe("emitGroupFile", () => {
 
 		const output = emitGroupFile(group);
 
-		expect(output).toContain(`bug: NameCollisionBug2;`);
-		expect(output).toContain(`data: NameCollisionData2;`);
-		expect(output).toContain(
-			`export type NameCollisionBug = NameCollision<"BUG">;`,
-		);
-		expect(output).toContain(`export type NameCollisionBug2 = "one" | "two";`);
-		expect(output).toContain(
-			`export type NameCollisionData2 = "first" | "second";`,
-		);
-		expect(output).not.toContain(`export type NameCollisionData = "first"`);
+		// XData interface name is the canonical form (no collision logic now —
+		// XData is the single named sibling, and per-variant aliases use the
+		// group's own name derivation which already avoids collision).
+		expect(output).toContain("export interface NameCollisionData {");
+		expect(output).toContain("bug?: string;");
+		expect(output).toContain("data?: string;");
+
+		// Per-variant alias for templateId "BUG":
+		expect(output).toContain("export type NameCollisionBug = NameCollision<");
+		expect(output).toContain(`"BUG"`);
+		expect(output).toContain(`"one"`);
+		expect(output).toContain(`"first"`);
 	});
 
-	test("keeps dotted JSON keys distinct from nested property paths", () => {
+	test("preserves dotted JSON keys as distinct properties in XData and per-variant literals", () => {
 		const group: Group = {
 			discriminator: "dotSettings",
 			entries: [
@@ -199,17 +231,18 @@ describe("emitGroupFile", () => {
 
 		const output = emitGroupFile(group);
 
-		expect(output).toContain("b: DotSettingsAB2;");
-		expect(output).toContain(`"a.b": DotSettingsAB;`);
-		expect(output).toContain(
-			`export type DotSettingsAB = "direct-one" | "direct-two";`,
-		);
-		expect(output).toContain(
-			`export type DotSettingsAB2 = "inner-one" | "inner-two";`,
-		);
+		// XData preserves both paths:
+		expect(output).toContain("b?: string;");
+		expect(output).toContain(`"a.b"?: string;`);
+
+		// Per-variant literals preserve the actual values:
+		expect(output).toContain(`"direct-one"`);
+		expect(output).toContain(`"direct-two"`);
+		expect(output).toContain(`"inner-one"`);
+		expect(output).toContain(`"inner-two"`);
 	});
 
-	test("preserves nested variable array layers when aliasing innermost literals", () => {
+	test("preserves nested array layers inside XData", () => {
 		const group: Group = {
 			discriminator: "matrixSettings",
 			entries: [
@@ -236,9 +269,68 @@ describe("emitGroupFile", () => {
 
 		const output = emitGroupFile(group);
 
-		expect(output).toContain("matrix: Array<Array<MatrixSettingsMatrix>>;");
-		expect(output).toContain(`export type MatrixSettingsMatrix = "A" | "B";`);
-		expect(output).not.toContain("matrix: Array<MatrixSettingsMatrix>;");
+		// XData: nested Array<Array<string>>
+		expect(output).toContain("matrix?: Array<Array<string>>;");
+
+		// Per-variant: literal 2D array. MATRIX_ONE has [["A"], ["B", "A"]]:
+		const oneStart = output.indexOf("export type MatrixSettingsOne = MatrixSettings<");
+		const oneEnd = output.indexOf(">;", oneStart);
+		const oneBlock = output.slice(oneStart, oneEnd + 2);
+		expect(oneBlock).toContain(`"A"`);
+		expect(oneBlock).toContain(`"B"`);
+	});
+
+	test("elides the TData arg when the variant's stripped payload is empty", () => {
+		const group: Group = {
+			discriminator: "allConstant",
+			entries: [
+				{
+					templateId: "A",
+					data: { templateId: "A", allConstant: { fixed: 1 } },
+				},
+				{
+					templateId: "B",
+					data: { templateId: "B", allConstant: { fixed: 1 } },
+				},
+			],
+		};
+
+		const output = emitGroupFile(group);
+
+		// `fixed` is a Kind 1 constant — lives in the base body. XData is empty.
+		expect(output).toContain("export interface AllConstantData {}");
+		expect(output).toContain("allConstant: TData & {");
+		expect(output).toContain("fixed: 1;");
+
+		// Both variants elide the TData arg:
+		expect(output).toContain(`export type AllConstantA = AllConstant<"A">;`);
+		expect(output).toContain(`export type AllConstantB = AllConstant<"B">;`);
+	});
+
+	test("drops the intersection when there are no invariants", () => {
+		const group: Group = {
+			discriminator: "varyAll",
+			entries: [
+				{
+					templateId: "ONE",
+					data: { templateId: "ONE", varyAll: { label: "first", count: 1 } },
+				},
+				{
+					templateId: "TWO",
+					data: { templateId: "TWO", varyAll: { label: "second", count: 2 } },
+				},
+			],
+		};
+
+		const output = emitGroupFile(group);
+
+		// No invariants → inner payload is plain TData (no `& {...}` intersection)
+		expect(output).toContain("varyAll: TData;");
+		expect(output).not.toContain("varyAll: TData &");
+
+		// XData has both fields:
+		expect(output).toContain("label?: string;");
+		expect(output).toContain("count?: number;");
 	});
 });
 
@@ -300,9 +392,7 @@ describe("emitMiscFile", () => {
 	});
 
 	test("emits inferred singleton payloads with exact scalar literals", () => {
-		const accessibility = groupEntries(MOCK_MASTERFILE).get(
-			"accessibilitySettings",
-		)!;
+		const accessibility = groupEntries(MOCK_MASTERFILE).get("accessibilitySettings")!;
 
 		const output = emitMiscFile([accessibility]);
 
@@ -371,9 +461,7 @@ describe("emitMiscFile", () => {
 		expect(output).toContain("export type MiscMasterfileEntry =");
 		expect(output).toContain("| AccessibilitySettings");
 		expect(output).toContain("| XyzSettings;");
-		expect(output).toContain(
-			`export type MiscTemplateID = MiscMasterfileEntry["templateId"];`,
-		);
+		expect(output).toContain(`export type MiscTemplateID = MiscMasterfileEntry["templateId"];`);
 
 		// Union members follow the interface definitions
 		const lastInterfaceIdx = output.lastIndexOf("export interface");
@@ -384,9 +472,7 @@ describe("emitMiscFile", () => {
 	test("emits MiscMasterfileEntry = never when there are no singletons", () => {
 		const output = emitMiscFile([]);
 		expect(output).toContain("export type MiscMasterfileEntry = never;");
-		expect(output).toContain(
-			`export type MiscTemplateID = MiscMasterfileEntry["templateId"];`,
-		);
+		expect(output).toContain(`export type MiscTemplateID = MiscMasterfileEntry["templateId"];`);
 	});
 });
 
@@ -408,39 +494,27 @@ describe("emitIndexFile", () => {
 		const output = emitIndexFile(multiEntryGroupNames);
 
 		// Exports are sorted:
-		expect(output).toContain(
-			`export type * from "./groups/pokemon-settings.ts";`,
-		);
-		expect(output).toContain(
-			`export type * from "./groups/type-effective.ts";`,
-		);
+		expect(output).toContain(`export type * from "./groups/pokemon-settings.ts";`);
+		expect(output).toContain(`export type * from "./groups/type-effective.ts";`);
 		expect(output).toContain(`export type * from "./groups/misc.ts";`);
 		const pokeIdx = output.indexOf("pokemon-settings");
 		const typeIdx = output.indexOf("type-effective");
 		expect(pokeIdx).toBeLessThan(typeIdx);
 
 		// Imports for the global union:
-		expect(output).toContain(
-			`import type { PokemonSettingsMasterfileEntry } from "./groups/pokemon-settings.ts";`,
-		);
-		expect(output).toContain(
-			`import type { TypeEffectiveMasterfileEntry } from "./groups/type-effective.ts";`,
-		);
+		expect(output).toContain(`import type { PokemonSettingsMasterfileEntry } from "./groups/pokemon-settings.ts";`);
+		expect(output).toContain(`import type { TypeEffectiveMasterfileEntry } from "./groups/type-effective.ts";`);
 
 		// Global union and TemplateID alias:
 		expect(output).toContain("export type MasterfileEntry =");
 		expect(output).toContain("| PokemonSettingsMasterfileEntry");
 		expect(output).toContain("| TypeEffectiveMasterfileEntry");
-		expect(output).toContain(
-			`export type MasterfileTemplateID = MasterfileEntry["templateId"];`,
-		);
+		expect(output).toContain(`export type MasterfileTemplateID = MasterfileEntry["templateId"];`);
 	});
 
 	test("imports MiscMasterfileEntry and includes it at the end of the MasterfileEntry union", () => {
 		const output = emitIndexFile(["typeEffective", "pokemonSettings"]);
-		expect(output).toContain(
-			`import type { MiscMasterfileEntry } from "./groups/misc.ts";`,
-		);
+		expect(output).toContain(`import type { MiscMasterfileEntry } from "./groups/misc.ts";`);
 		expect(output).toContain("| MiscMasterfileEntry;");
 
 		// Misc is last in the union:
