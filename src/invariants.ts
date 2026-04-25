@@ -143,6 +143,27 @@ export function stripInvariantsFromWidened(type: InferredType, tree: InvariantTr
 	return { kind: "object", properties: stripped };
 }
 
+export function stripInvariantsFromValue(value: unknown, tree: InvariantTree): unknown {
+	if (!isJsonObject(value)) return value;
+	const result: Record<string, unknown> = {};
+	for (const [key, childValue] of Object.entries(value)) {
+		const node = tree.get(key);
+		if (!node) {
+			result[key] = childValue;
+			continue;
+		}
+		if (node.kind === "constant" || node.kind === "templateIdTie") {
+			continue;
+		}
+		const strippedChild = stripInvariantsFromValue(childValue, node.children);
+		if (isJsonObject(strippedChild) && Object.keys(strippedChild).length === 0) {
+			continue;
+		}
+		result[key] = strippedChild;
+	}
+	return result;
+}
+
 export function makeAllOptional(type: InferredType): InferredType {
 	if (type.kind !== "object") return type;
 	return {

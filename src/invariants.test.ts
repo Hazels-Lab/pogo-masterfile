@@ -8,6 +8,7 @@ import {
 	detectInvariants,
 	invariantsToInferredType,
 	makeAllOptional,
+	stripInvariantsFromValue,
 	stripInvariantsFromWidened,
 } from "./invariants.ts";
 
@@ -354,5 +355,53 @@ describe("makeAllOptional", () => {
 	test("leaves non-object types unchanged", () => {
 		const type: InferredType = { kind: "string", literals: [] };
 		expect(makeAllOptional(type)).toEqual(type);
+	});
+});
+
+describe("stripInvariantsFromValue", () => {
+	test("removes leaf invariant keys from a raw value", () => {
+		const value = { keep: 1, drop: "POKEMON_TYPE_BUG" };
+		const tree: InvariantTree = new Map([["drop", { kind: "templateIdTie" }]]);
+		expect(stripInvariantsFromValue(value, tree)).toEqual({ keep: 1 });
+	});
+
+	test("recurses into nested invariants and drops empty containers", () => {
+		const value = { wrapper: { onlyChild: "POKEMON_TYPE_BUG" }, kept: "ok" };
+		const tree: InvariantTree = new Map<string, InvariantNode>([
+			[
+				"wrapper",
+				{
+					kind: "nested",
+					children: new Map<string, InvariantNode>([["onlyChild", { kind: "templateIdTie" }]]),
+				},
+			],
+		]);
+		expect(stripInvariantsFromValue(value, tree)).toEqual({ kept: "ok" });
+	});
+
+	test("preserves partial objects when some keys are invariants", () => {
+		const value = { group: { drop: 1, keep: "here" } };
+		const tree: InvariantTree = new Map<string, InvariantNode>([
+			[
+				"group",
+				{
+					kind: "nested",
+					children: new Map<string, InvariantNode>([["drop", { kind: "constant", value: 1 }]]),
+				},
+			],
+		]);
+		expect(stripInvariantsFromValue(value, tree)).toEqual({ group: { keep: "here" } });
+	});
+
+	test("returns the value unchanged when the tree is empty", () => {
+		const value = { a: 1, b: 2 };
+		expect(stripInvariantsFromValue(value, new Map())).toEqual(value);
+	});
+
+	test("returns non-object values unchanged", () => {
+		const tree: InvariantTree = new Map([["x", { kind: "constant", value: 0 }]]);
+		expect(stripInvariantsFromValue(42, tree)).toBe(42);
+		expect(stripInvariantsFromValue("hi", tree)).toBe("hi");
+		expect(stripInvariantsFromValue(null, tree)).toBe(null);
 	});
 });
