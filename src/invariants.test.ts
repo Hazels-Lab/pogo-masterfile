@@ -1,8 +1,8 @@
 import { describe, expect, test } from "bun:test";
-import { deepEqual, detectInvariants, invariantsToInferredType } from "./invariants.ts";
-import type { InvariantNode, InvariantTree } from "./invariants.ts";
 import { MOCK_MASTERFILE } from "./fixtures.ts";
 import { groupEntries } from "./group.ts";
+import type { InvariantNode, InvariantTree } from "./invariants.ts";
+import { deepEqual, detectInvariants, invariantsToInferredType } from "./invariants.ts";
 
 describe("deepEqual", () => {
 	test("returns true for equal primitives", () => {
@@ -201,5 +201,25 @@ describe("invariantsToInferredType", () => {
 		const result = invariantsToInferredType(tree);
 		if (result.kind !== "object") throw new Error("unreachable");
 		expect(result.properties.map((p) => p.name)).toEqual(["alpha", "zeta"]);
+	});
+
+	test("sorts nested properties alphabetically", () => {
+		const tree: InvariantTree = new Map<string, InvariantNode>([
+			[
+				"outer",
+				{
+					kind: "nested",
+					children: new Map<string, InvariantNode>([
+						["zebra", { kind: "constant", value: 1 }],
+						["apple", { kind: "constant", value: 2 }],
+					]),
+				},
+			],
+		]);
+		const result = invariantsToInferredType(tree);
+		if (result.kind !== "object") throw new Error("unreachable");
+		const outer = result.properties[0]!;
+		if (outer.type.kind !== "object") throw new Error("unreachable");
+		expect(outer.type.properties.map((p) => p.name)).toEqual(["apple", "zebra"]);
 	});
 });

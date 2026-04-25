@@ -1,6 +1,6 @@
-import { inferJsonType } from "./infer.ts";
-import type { InferredProperty, InferredType } from "./infer.ts";
 import type { Group } from "./group.ts";
+import type { InferredProperty, InferredType } from "./infer.ts";
+import { inferJsonType } from "./infer.ts";
 
 export function deepEqual(a: unknown, b: unknown): boolean {
 	if (a === b) return true;
@@ -50,10 +50,7 @@ export function detectInvariants(group: Group): InvariantTree {
 	return walkInvariants(values, templateIds);
 }
 
-function walkInvariants(
-	values: readonly unknown[],
-	templateIds: readonly string[],
-): InvariantTree {
+function walkInvariants(values: readonly unknown[], templateIds: readonly string[]): InvariantTree {
 	const tree: InvariantTree = new Map();
 
 	// Collect keys present in ANY entry at this level.
@@ -66,14 +63,10 @@ function walkInvariants(
 
 	for (const key of allKeys) {
 		// Requirement: every entry has this key at this level.
-		const everyPresent = values.every(
-			(v) => isJsonObject(v) && Object.hasOwn(v, key),
-		);
+		const everyPresent = values.every((v) => isJsonObject(v) && Object.hasOwn(v, key));
 		if (!everyPresent) continue;
 
-		const childValues = values.map(
-			(v) => (v as Record<string, unknown>)[key],
-		);
+		const childValues = values.map((v) => (v as Record<string, unknown>)[key]);
 
 		// Kind 2: every value equals that entry's templateId.
 		const isKind2 = childValues.every((cv, i) => cv === templateIds[i]);
@@ -113,7 +106,7 @@ export function invariantsToInferredType(tree: InvariantTree): InferredType {
 				return {
 					name,
 					optional: false,
-					type: { kind: "templateIdReference" } as InferredType,
+					type: { kind: "templateIdReference" },
 				};
 			}
 			return {
