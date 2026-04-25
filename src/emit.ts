@@ -1,6 +1,14 @@
-import type { Group } from "./group.ts";
+import type { Entry, Group } from "./group.ts";
 import type { InferredProperty, InferredType } from "./infer.ts";
-import { inferJsonType, inferJsonTypes } from "./infer.ts";
+import { inferJsonType, inferJsonTypes, widenType } from "./infer.ts";
+import type { InvariantTree } from "./invariants.ts";
+import {
+	detectInvariants,
+	invariantsToInferredType,
+	makeAllOptional,
+	stripInvariantsFromValue,
+	stripInvariantsFromWidened,
+} from "./invariants.ts";
 import { aliasSuffix, deriveGroupAliases, groupName } from "./naming.ts";
 
 interface TemplateValue {
@@ -31,44 +39,69 @@ const EMPTY_ALIAS_PLAN: AliasPlan = {
 	aliases: [],
 	byPath: new Map<string, PlannedAlias>(),
 };
+const EMPTY_CONTEXT: RenderContext = {
+	aliases: EMPTY_ALIAS_PLAN,
+	path: [],
+};
 
 export function emitGroupFile(group: Group): string {
 	const gName = groupName(group.discriminator);
 	const sortedIds = [...group.entries].map((e) => e.templateId).sort();
 	const aliases = deriveGroupAliases(sortedIds);
+
+	const invariants = detectInvariants(group);
 	const payloadType = inferGroupPayloadType(group);
-	const aliasPlan = planTypeAliases(
-		gName,
-		payloadType,
-		moduleReservedNames(gName, sortedIds, aliases),
-	);
+	const widenedPayload = widenType(payloadType);
+	const xdataType = makeAllOptional(stripInvariantsFromWidened(widenedPayload, invariants));
 
+	const xdataName = `${gName}Data`;
+	const discName = renderPropertyName(group.discriminator);
 	const lines: string[] = [];
-	lines.push(`export interface ${gName}<${TEMPLATE_GENERIC} extends string> {`);
-	lines.push(`\ttemplateId: ${TEMPLATE_GENERIC};`);
-	lines.push(`\tdata: ${gName}Data<${TEMPLATE_GENERIC}>;`);
-	lines.push(`}`);
-	lines.push(``);
-	lines.push(
-		`export interface ${gName}Data<${TEMPLATE_GENERIC} extends string> {`,
-	);
-	lines.push(`\ttemplateId: ${TEMPLATE_GENERIC};`);
-	lines.push(
-		...renderProperty(group.discriminator, payloadType, false, "\t", {
-			aliases: aliasPlan,
-			path: [],
-		}),
-	);
-	lines.push(`}`);
-	lines.push(``);
-	lines.push(...renderAliasDefinitions(aliasPlan));
 
+	// Base generic interface.
+	lines.push(`export interface ${gName}<`);
+	lines.push(`\t${TEMPLATE_GENERIC} extends string = string,`);
+	lines.push(`\tTData extends ${xdataName} = ${xdataName},`);
+	lines.push(`> {`);
+	lines.push(`\ttemplateId: ${TEMPLATE_GENERIC};`);
+	lines.push(`\tdata: {`);
+	lines.push(`\t\ttemplateId: ${TEMPLATE_GENERIC};`);
+
+	// Inner payload: TData or TData & { ...invariants }
+	if (invariants.size === 0) {
+		lines.push(`\t\t${discName}: TData;`);
+	} else {
+		const invariantsType = invariantsToInferredType(invariants);
+		const invariantsLines = renderType(invariantsType, EMPTY_CONTEXT);
+		if (invariantsLines.length === 1) {
+			lines.push(`\t\t${discName}: TData & ${invariantsLines[0]};`);
+		} else {
+			lines.push(`\t\t${discName}: TData & ${invariantsLines[0]}`);
+			for (const line of invariantsLines.slice(1, -1)) {
+				lines.push(`\t\t${line}`);
+			}
+			lines.push(`\t\t${invariantsLines[invariantsLines.length - 1]};`);
+		}
+	}
+
+	lines.push(`\t};`);
+	lines.push(`}`);
+	lines.push(``);
+
+	// XData interface.
+	lines.push(...renderXDataInterface(xdataName, xdataType));
+	lines.push(``);
+
+	// Per-variant aliases.
+	const entriesById = new Map(group.entries.map((e) => [e.templateId, e]));
 	for (const id of sortedIds) {
-		const alias = aliases.get(id)!;
-		lines.push(`export type ${gName}${alias} = ${gName}<"${id}">;`);
+		const entry = entriesById.get(id)!;
+		const variantSuffix = aliases.get(id)!;
+		lines.push(...renderVariantAlias(gName, entry, group, variantSuffix, invariants));
 	}
 	lines.push(``);
 
+	// Union + TemplateID alias.
 	lines.push(`export type ${gName}MasterfileEntry =`);
 	sortedIds.forEach((id, i) => {
 		const alias = aliases.get(id)!;
@@ -76,12 +109,58 @@ export function emitGroupFile(group: Group): string {
 		lines.push(`\t| ${gName}${alias}${suffix}`);
 	});
 	lines.push(``);
-	lines.push(
-		`export type ${gName}TemplateID = ${gName}MasterfileEntry["templateId"];`,
-	);
+	lines.push(`export type ${gName}TemplateID = ${gName}MasterfileEntry["templateId"];`);
 	lines.push(``);
 
 	return lines.join("\n");
+}
+
+function renderXDataInterface(name: string, type: InferredType): string[] {
+	// Empty object: emit `export interface Name {}` directly.
+	if (type.kind === "object" && type.properties.length === 0) {
+		return [`export interface ${name} {}`];
+	}
+	const typeLines = renderType(type, EMPTY_CONTEXT);
+	// typeLines shape: ["{", "\t...", ..., "}"]
+	const lines: string[] = [];
+	lines.push(`export interface ${name} ${typeLines[0]}`);
+	for (const line of typeLines.slice(1, -1)) {
+		lines.push(line);
+	}
+	lines.push(typeLines[typeLines.length - 1]!);
+	return lines;
+}
+
+function renderVariantAlias(
+	gName: string,
+	entry: Entry,
+	group: Group,
+	variantSuffix: string,
+	invariants: InvariantTree,
+): string[] {
+	const typeName = `${gName}${variantSuffix}`;
+	const payload = entry.data[group.discriminator];
+	const stripped = stripInvariantsFromValue(payload, invariants);
+
+	const isEmpty = !isJsonObject(stripped) || Object.keys(stripped).length === 0;
+	if (isEmpty) {
+		return [`export type ${typeName} = ${gName}<"${entry.templateId}">;`];
+	}
+
+	const literalType = inferJsonType(stripped);
+	const literalLines = renderType(literalType, EMPTY_CONTEXT);
+
+	const lines: string[] = [`export type ${typeName} = ${gName}<`];
+	lines.push(`\t"${entry.templateId}",`);
+	if (literalLines.length === 1) {
+		lines.push(`\t${literalLines[0]}`);
+	} else {
+		for (const line of literalLines) {
+			lines.push(`\t${line}`);
+		}
+	}
+	lines.push(`>;`);
+	return lines;
 }
 
 export function emitMiscFile(singletons: Group[]): string {
@@ -90,9 +169,7 @@ export function emitMiscFile(singletons: Group[]): string {
 		const entry = g.entries[0]!;
 		const dataKeys = Object.keys(entry.data).filter((k) => k !== "templateId");
 		const isStub = dataKeys.length === 0;
-		const name = isStub
-			? aliasSuffix(entry.templateId, "")
-			: groupName(g.discriminator);
+		const name = isStub ? aliasSuffix(entry.templateId, "") : groupName(g.discriminator);
 		return { group: g, entry, name, isStub };
 	});
 	named.sort((a, b) => a.name.localeCompare(b.name));
@@ -207,10 +284,7 @@ function renderInlineType(type: InferredType): string | undefined {
 		case "number":
 			return type.literals.map(String).join(" | ") || "number";
 		case "string":
-			return (
-				type.literals.map((value) => JSON.stringify(value)).join(" | ") ||
-				"string"
-			);
+			return type.literals.map((value) => JSON.stringify(value)).join(" | ") || "string";
 		case "object":
 			return type.properties.length === 0 ? "Record<string, never>" : undefined;
 		case "tuple":
@@ -231,10 +305,7 @@ function renderInlineType(type: InferredType): string | undefined {
 	}
 }
 
-function renderObjectType(
-	properties: InferredProperty[],
-	context: RenderContext,
-): string[] {
+function renderObjectType(properties: InferredProperty[], context: RenderContext): string[] {
 	if (properties.length === 0) return ["Record<string, never>"];
 
 	const lines = ["{"];
@@ -250,10 +321,7 @@ function renderObjectType(
 	return lines;
 }
 
-function renderTupleType(
-	items: InferredType[],
-	context: RenderContext,
-): string[] {
+function renderTupleType(items: InferredType[], context: RenderContext): string[] {
 	if (items.length === 0) return ["[]"];
 
 	const lines = ["["];
@@ -274,20 +342,14 @@ function renderTupleType(
 	return lines;
 }
 
-function renderArrayType(
-	element: InferredType,
-	context: RenderContext,
-): string[] {
+function renderArrayType(element: InferredType, context: RenderContext): string[] {
 	const elementLines = renderType(element, context);
 	if (elementLines.length === 1) return [`Array<${elementLines[0]}>`];
 
 	return ["Array<", ...elementLines.map((line) => `\t${line}`), ">"];
 }
 
-function renderUnionType(
-	variants: InferredType[],
-	context: RenderContext,
-): string[] {
+function renderUnionType(variants: InferredType[], context: RenderContext): string[] {
 	return variants.flatMap((variant) => {
 		const lines = renderType(variant, context);
 		const [firstLine, ...rest] = lines;
@@ -337,23 +399,13 @@ function collectAliasCandidates(
 
 	if (type.kind === "object") {
 		for (const property of type.properties) {
-			collectAliasCandidates(
-				property.type,
-				[...path, property.name],
-				candidates,
-				0,
-			);
+			collectAliasCandidates(property.type, [...path, property.name], candidates, 0);
 		}
 		return;
 	}
 
 	if (type.kind === "array") {
-		collectAliasCandidates(
-			type.element,
-			path,
-			candidates,
-			arrayWrapperCount + 1,
-		);
+		collectAliasCandidates(type.element, path, candidates, arrayWrapperCount + 1);
 	}
 }
 
@@ -379,10 +431,7 @@ function aliasPathKey(path: readonly string[]): string {
 	return JSON.stringify(path);
 }
 
-function aliasNameForPath(
-	groupDisplayName: string,
-	path: readonly string[],
-): string {
+function aliasNameForPath(groupDisplayName: string, path: readonly string[]): string {
 	return `${groupDisplayName}${path.map(aliasNameSegment).join("")}`;
 }
 
@@ -461,10 +510,7 @@ function moduleReservedNames(
 	return names;
 }
 
-function availableAliasName(
-	baseName: string,
-	usedNames: ReadonlySet<string>,
-): string {
+function availableAliasName(baseName: string, usedNames: ReadonlySet<string>): string {
 	if (!usedNames.has(baseName)) return baseName;
 
 	let suffix = 2;
@@ -484,10 +530,7 @@ function inferGroupPayloadType(group: Group): InferredType {
 	);
 }
 
-function inferTemplateAwareValues(
-	values: readonly TemplateValue[],
-	path: readonly string[],
-): InferredType {
+function inferTemplateAwareValues(values: readonly TemplateValue[], path: readonly string[]): InferredType {
 	if (
 		isTemplateIdMirrorPath(path) &&
 		values.length > 0 &&
@@ -497,17 +540,11 @@ function inferTemplateAwareValues(
 	}
 
 	if (values.every(({ value }) => Array.isArray(value))) {
-		return inferTemplateAwareArrays(
-			values as Array<{ templateId: string; value: unknown[] }>,
-			path,
-		);
+		return inferTemplateAwareArrays(values as Array<{ templateId: string; value: unknown[] }>, path);
 	}
 
 	if (values.every(({ value }) => isJsonObject(value))) {
-		return inferTemplateAwareObjects(
-			values as Array<{ templateId: string; value: Record<string, unknown> }>,
-			path,
-		);
+		return inferTemplateAwareObjects(values as Array<{ templateId: string; value: Record<string, unknown> }>, path);
 	}
 
 	return inferJsonTypes(values.map(({ value }) => value));
@@ -518,9 +555,7 @@ function inferTemplateAwareArrays(
 	path: readonly string[],
 ): InferredType {
 	const firstLength = values[0]?.value.length ?? 0;
-	const isFixedLength = values.every(
-		({ value }) => value.length === firstLength,
-	);
+	const isFixedLength = values.every(({ value }) => value.length === firstLength);
 	if (isFixedLength) {
 		return {
 			kind: "tuple",
@@ -539,9 +574,7 @@ function inferTemplateAwareArrays(
 	return {
 		kind: "array",
 		element: inferTemplateAwareValues(
-			values.flatMap(({ templateId, value }) =>
-				value.map((item) => ({ templateId, value: item })),
-			),
+			values.flatMap(({ templateId, value }) => value.map((item) => ({ templateId, value: item }))),
 			path,
 		),
 	};
@@ -681,9 +714,7 @@ export function emitIndexFile(multiEntryDiscriminators: string[]): string {
 
 	for (const disc of sorted) {
 		const name = groupName(disc);
-		lines.push(
-			`import type { ${name}MasterfileEntry } from "./groups/${kebabCase(disc)}.ts";`,
-		);
+		lines.push(`import type { ${name}MasterfileEntry } from "./groups/${kebabCase(disc)}.ts";`);
 	}
 	lines.push(`import type { MiscMasterfileEntry } from "./groups/misc.ts";`);
 	lines.push(``);
@@ -694,9 +725,7 @@ export function emitIndexFile(multiEntryDiscriminators: string[]): string {
 	}
 	lines.push(`\t| MiscMasterfileEntry;`);
 	lines.push(``);
-	lines.push(
-		`export type MasterfileTemplateID = MasterfileEntry["templateId"];`,
-	);
+	lines.push(`export type MasterfileTemplateID = MasterfileEntry["templateId"];`);
 	lines.push(``);
 
 	return lines.join("\n");

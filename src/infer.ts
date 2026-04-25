@@ -78,31 +78,48 @@ export function inferJsonType(value: unknown): InferredType {
 	return inferJsonTypes([value]);
 }
 
+export function widenType(type: InferredType): InferredType {
+	switch (type.kind) {
+		case "null":
+			return type;
+		case "templateIdReference":
+			// Widening drops the TemplateID generic reference — XData is generic-free.
+			return { kind: "string", literals: [] };
+		case "boolean":
+			return { kind: "boolean", literals: [] };
+		case "number":
+			return { kind: "number", numericKind: type.numericKind, literals: [] };
+		case "string":
+			return { kind: "string", literals: [] };
+		case "object":
+			return {
+				kind: "object",
+				properties: type.properties.map((p) => ({
+					name: p.name,
+					optional: p.optional,
+					type: widenType(p.type),
+				})),
+			};
+		case "tuple":
+			return { kind: "tuple", items: type.items.map(widenType) };
+		case "array":
+			return { kind: "array", element: widenType(type.element) };
+		case "union":
+			return { kind: "union", variants: type.variants.map(widenType) };
+	}
+}
+
 export function inferJsonTypes(values: readonly unknown[]): InferredType {
 	if (values.length === 0) return { kind: "union", variants: [] };
 
 	const nullCount = values.filter((value) => value === null).length;
-	const booleans = values.filter(
-		(value): value is boolean => typeof value === "boolean",
-	);
-	const numbers = values.filter(
-		(value): value is number => typeof value === "number",
-	);
-	const strings = values.filter(
-		(value): value is string => typeof value === "string",
-	);
-	const arrays = values.filter((value): value is unknown[] =>
-		Array.isArray(value),
-	);
+	const booleans = values.filter((value): value is boolean => typeof value === "boolean");
+	const numbers = values.filter((value): value is number => typeof value === "number");
+	const strings = values.filter((value): value is string => typeof value === "string");
+	const arrays = values.filter((value): value is unknown[] => Array.isArray(value));
 	const objects = values.filter(isJsonObject);
 
-	const recognized =
-		nullCount +
-		booleans.length +
-		numbers.length +
-		strings.length +
-		arrays.length +
-		objects.length;
+	const recognized = nullCount + booleans.length + numbers.length + strings.length + arrays.length + objects.length;
 	if (recognized !== values.length) {
 		throw new Error("Cannot infer non-JSON value");
 	}
@@ -118,9 +135,7 @@ export function inferJsonTypes(values: readonly unknown[]): InferredType {
 	if (variants.length === 1) return variants[0]!;
 	return {
 		kind: "union",
-		variants: variants.sort((a, b) =>
-			variantSortKey(a).localeCompare(variantSortKey(b)),
-		),
+		variants: variants.sort((a, b) => variantSortKey(a).localeCompare(variantSortKey(b))),
 	};
 }
 
@@ -158,9 +173,7 @@ function inferStringType(values: readonly string[]): StringType {
 	};
 }
 
-function inferObjectType(
-	values: readonly Record<string, unknown>[],
-): ObjectType {
+function inferObjectType(values: readonly Record<string, unknown>[]): ObjectType {
 	const propertyValues = new Map<string, unknown[]>();
 	const propertyCounts = new Map<string, number>();
 
@@ -190,8 +203,7 @@ function inferArrayType(values: readonly unknown[][]): TupleType | ArrayType {
 	if (isFixedLength) {
 		const allItems = values.flat();
 		const tupleNumericKind =
-			allItems.length > 0 &&
-			allItems.every((value): value is number => typeof value === "number")
+			allItems.length > 0 && allItems.every((value): value is number => typeof value === "number")
 				? inferNumericKind(allItems)
 				: undefined;
 		return {
