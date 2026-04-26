@@ -234,7 +234,7 @@ function renderInlineType(type: InferredType): string | undefined {
 		case "string":
 			return type.literals.map((value) => JSON.stringify(value)).join(" | ") || "string";
 		case "object":
-			return type.properties.length === 0 ? "Record<string, never>" : undefined;
+			return type.properties.length === 0 ? "object" : undefined;
 		case "tuple":
 			return type.items.length === 0 ? "[]" : undefined;
 		case "array": {
@@ -256,7 +256,10 @@ function renderInlineType(type: InferredType): string | undefined {
 }
 
 function renderObjectType(properties: InferredProperty[]): string[] {
-	if (properties.length === 0) return ["Record<string, never>"];
+	if (properties.length === 0) {
+		// this shouldn't be hit
+		return ["Record<string, never>"];
+	}
 
 	const lines = ["{"];
 	for (const property of properties) {

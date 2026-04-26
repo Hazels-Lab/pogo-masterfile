@@ -4125,7 +4125,7 @@ export type PokemonExtendedSettingsV0052PokemonMeowth = S<
 			breadOverrides: [
 				{
 					breadMode: "BREAD_MODE";
-					maxBattleTrainerVisualSettings: Record<string, never>;
+					maxBattleTrainerVisualSettings: object;
 					maxBattleVisualSettings: {
 						scale: 62;
 					};
@@ -4190,7 +4190,7 @@ export type PokemonExtendedSettingsV0052PokemonMeowthAlola = S<
 			breadOverrides: [
 				{
 					breadMode: "BREAD_MODE";
-					maxBattleTrainerVisualSettings: Record<string, never>;
+					maxBattleTrainerVisualSettings: object;
 					maxBattleVisualSettings: {
 						scale: 62;
 					};
@@ -4224,7 +4224,7 @@ export type PokemonExtendedSettingsV0052PokemonMeowthGalarian = S<
 			breadOverrides: [
 				{
 					breadMode: "BREAD_MODE";
-					maxBattleTrainerVisualSettings: Record<string, never>;
+					maxBattleTrainerVisualSettings: object;
 					maxBattleVisualSettings: {
 						scale: 62;
 					};
@@ -4258,7 +4258,7 @@ export type PokemonExtendedSettingsV0052PokemonMeowthNormal = S<
 			breadOverrides: [
 				{
 					breadMode: "BREAD_MODE";
-					maxBattleTrainerVisualSettings: Record<string, never>;
+					maxBattleTrainerVisualSettings: object;
 					maxBattleVisualSettings: {
 						scale: 62;
 					};
@@ -9155,9 +9155,9 @@ export type PokemonExtendedSettingsV0143PokemonSnorlax = S<
 			breadOverrides: [
 				{
 					breadMode: "BREAD_MODE";
-					maxBattleVisualSettings: Record<string, never>;
-					maxEncounterVisualSettings: Record<string, never>;
-					maxStationVisualSettings: Record<string, never>;
+					maxBattleVisualSettings: object;
+					maxEncounterVisualSettings: object;
+					maxStationVisualSettings: object;
 				},
 				{
 					averageHeightM: 35;
@@ -9205,9 +9205,9 @@ export type PokemonExtendedSettingsV0143PokemonSnorlaxNormal = S<
 			breadOverrides: [
 				{
 					breadMode: "BREAD_MODE";
-					maxBattleVisualSettings: Record<string, never>;
-					maxEncounterVisualSettings: Record<string, never>;
-					maxStationVisualSettings: Record<string, never>;
+					maxBattleVisualSettings: object;
+					maxEncounterVisualSettings: object;
+					maxStationVisualSettings: object;
 				},
 				{
 					averageHeightM: 35;
@@ -19901,7 +19901,7 @@ export type PokemonExtendedSettingsV0377PokemonRegirock = S<
 			breadOverrides: [
 				{
 					breadMode: "BREAD_MODE";
-					maxBattleTrainerVisualSettings: Record<string, never>;
+					maxBattleTrainerVisualSettings: object;
 					maxBattleVisualSettings: {
 						scale: 22;
 					};
@@ -19941,7 +19941,7 @@ export type PokemonExtendedSettingsV0377PokemonRegirockNormal = S<
 			breadOverrides: [
 				{
 					breadMode: "BREAD_MODE";
-					maxBattleTrainerVisualSettings: Record<string, never>;
+					maxBattleTrainerVisualSettings: object;
 					maxBattleVisualSettings: {
 						scale: 22;
 					};
@@ -27087,7 +27087,7 @@ export type PokemonExtendedSettingsV0546PokemonCottonee = S<
 			breadOverrides: [
 				{
 					breadMode: "BREAD_MODE";
-					maxBattleTrainerVisualSettings: Record<string, never>;
+					maxBattleTrainerVisualSettings: object;
 					maxBattleVisualSettings: {
 						scale: 98.48;
 					};
@@ -27129,7 +27129,7 @@ export type PokemonExtendedSettingsV0546PokemonCottoneeNormal = S<
 			breadOverrides: [
 				{
 					breadMode: "BREAD_MODE";
-					maxBattleTrainerVisualSettings: Record<string, never>;
+					maxBattleTrainerVisualSettings: object;
 					maxBattleVisualSettings: {
 						scale: 98.48;
 					};

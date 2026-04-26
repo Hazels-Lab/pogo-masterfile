@@ -4219,7 +4219,7 @@ export type CombatMoveV0489MoveSecretSword = S<
 	CombatMove<
 		"COMBAT_V0489_MOVE_SECRET_SWORD",
 		{
-			buffs: Record<string, never>;
+			buffs: object;
 			energyDelta: -35;
 			power: 70;
 			type: "POKEMON_TYPE_FIGHTING";

@@ -214,9 +214,9 @@ export function stripInvariantsFromValue(value: unknown, tree: InvariantTree): u
 			continue;
 		}
 		const strippedChild = stripInvariantsFromValue(childValue, node.children);
-		if (isJsonObject(strippedChild) && Object.keys(strippedChild).length === 0) {
-			continue;
-		}
+		// if (isJsonObject(strippedChild) && Object.keys(strippedChild).length === 0) {
+		// 	continue;
+		// }
 		result[key] = strippedChild;
 	}
 	return result;

@@ -525,7 +525,7 @@ export interface BattleAnimationSettings {
 		templateId: "VNEXT_ANIMATION_CONFIGURATION";
 		battleAnimationSettings: {
 			combatAnimationConfiguration: {
-				fastAttackSettings: Record<string, never>;
+				fastAttackSettings: object;
 				projectedHealthAnimationDurationSeconds: 0.09;
 			};
 			maxBattleAnimationConfiguration: {
@@ -3381,7 +3381,7 @@ export interface ExternalAddressableAssetsSettings {
 	templateId: "EXTERNAL_ADDRESSABLE_ASSETS_SETTINGS";
 	data: {
 		templateId: "EXTERNAL_ADDRESSABLE_ASSETS_SETTINGS";
-		externalAddressableAssetsSettings: Record<string, never>;
+		externalAddressableAssetsSettings: object;
 	};
 }
 

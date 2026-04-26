@@ -76,6 +76,7 @@ export type MegaEvoLevelSettings0 = S<
 			effects: {
 				sameTypeExtraCatchCandy: 1;
 			};
+			progression: object;
 		}
 	>
 >;
@@ -91,6 +92,7 @@ export type MegaEvoLevelSettings0V0015PokemonBeedrill = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "BEEDRILL";
+			progression: object;
 		}
 	>
 >;
@@ -106,6 +108,7 @@ export type MegaEvoLevelSettings0V0018PokemonPidgeot = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "PIDGEOT";
+			progression: object;
 		}
 	>
 >;
@@ -121,6 +124,7 @@ export type MegaEvoLevelSettings0V0071PokemonVictreebel = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "VICTREEBEL";
+			progression: object;
 		}
 	>
 >;
@@ -136,6 +140,7 @@ export type MegaEvoLevelSettings0V0080PokemonSlowbro = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "SLOWBRO";
+			progression: object;
 		}
 	>
 >;
@@ -151,6 +156,7 @@ export type MegaEvoLevelSettings0V0130PokemonGyarados = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "GYARADOS";
+			progression: object;
 		}
 	>
 >;
@@ -166,6 +172,7 @@ export type MegaEvoLevelSettings0V0149PokemonDragonite = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "DRAGONITE";
+			progression: object;
 		}
 	>
 >;
@@ -181,6 +188,7 @@ export type MegaEvoLevelSettings0V0150PokemonMewtwo = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "MEWTWO";
+			progression: object;
 		}
 	>
 >;
@@ -196,6 +204,7 @@ export type MegaEvoLevelSettings0V0229PokemonHoundoom = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "HOUNDOOM";
+			progression: object;
 		}
 	>
 >;
@@ -211,6 +220,7 @@ export type MegaEvoLevelSettings0V0248PokemonTyranitar = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "TYRANITAR";
+			progression: object;
 		}
 	>
 >;
@@ -226,6 +236,7 @@ export type MegaEvoLevelSettings0V0302PokemonSableye = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "SABLEYE";
+			progression: object;
 		}
 	>
 >;
@@ -241,6 +252,7 @@ export type MegaEvoLevelSettings0V0308PokemonMedicham = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "MEDICHAM";
+			progression: object;
 		}
 	>
 >;
@@ -256,6 +268,7 @@ export type MegaEvoLevelSettings0V0310PokemonManectric = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "MANECTRIC";
+			progression: object;
 		}
 	>
 >;
@@ -271,6 +284,7 @@ export type MegaEvoLevelSettings0V0334PokemonAltaria = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "ALTARIA";
+			progression: object;
 		}
 	>
 >;
@@ -286,6 +300,7 @@ export type MegaEvoLevelSettings0V0354PokemonBanette = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "BANETTE";
+			progression: object;
 		}
 	>
 >;
@@ -301,6 +316,7 @@ export type MegaEvoLevelSettings0V0373PokemonSalamence = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "SALAMENCE";
+			progression: object;
 		}
 	>
 >;
@@ -316,6 +332,7 @@ export type MegaEvoLevelSettings0V0376PokemonMetagross = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "METAGROSS";
+			progression: object;
 		}
 	>
 >;
@@ -331,6 +348,7 @@ export type MegaEvoLevelSettings0V0380PokemonLatias = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "LATIAS";
+			progression: object;
 		}
 	>
 >;
@@ -346,6 +364,7 @@ export type MegaEvoLevelSettings0V0381PokemonLatios = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "LATIOS";
+			progression: object;
 		}
 	>
 >;
@@ -361,6 +380,7 @@ export type MegaEvoLevelSettings0V0382PokemonKyogre = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "KYOGRE";
+			progression: object;
 		}
 	>
 >;
@@ -376,6 +396,7 @@ export type MegaEvoLevelSettings0V0383PokemonGroudon = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "GROUDON";
+			progression: object;
 		}
 	>
 >;
@@ -391,6 +412,7 @@ export type MegaEvoLevelSettings0V0384PokemonRayquaza = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "RAYQUAZA";
+			progression: object;
 		}
 	>
 >;
@@ -406,6 +428,7 @@ export type MegaEvoLevelSettings0V0445PokemonGarchomp = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "GARCHOMP";
+			progression: object;
 		}
 	>
 >;
@@ -421,6 +444,7 @@ export type MegaEvoLevelSettings0V0687PokemonMalamar = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "MALAMAR";
+			progression: object;
 		}
 	>
 >;
@@ -436,6 +460,7 @@ export type MegaEvoLevelSettings0V0719PokemonDiancie = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "DIANCIE";
+			progression: object;
 		}
 	>
 >;

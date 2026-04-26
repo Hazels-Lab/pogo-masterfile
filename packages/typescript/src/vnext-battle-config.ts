@@ -58,7 +58,15 @@ export type VnextBattleConfigClient = S<
 		}
 	>
 >;
-export type VnextBattleConfigVnextBattleConfig = S<VnextBattleConfig<"VNEXT_BATTLE_CONFIG">>;
+export type VnextBattleConfigVnextBattleConfig = S<
+	VnextBattleConfig<
+		"VNEXT_BATTLE_CONFIG",
+		{
+			maxBattleConfig: object;
+			raidsBattleConfig: object;
+		}
+	>
+>;
 
 export type VnextBattleConfigMasterfileEntry = VnextBattleConfigClient | VnextBattleConfigVnextBattleConfig;
 
