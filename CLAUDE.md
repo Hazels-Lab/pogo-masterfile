@@ -2,7 +2,6 @@
 
 Do NOT read or parse the following generated files:
 
-* `./packages/typescript/index.ts`
 * `./packages/rust/lib.rs`
 * `./packages/go/main.go`
 
