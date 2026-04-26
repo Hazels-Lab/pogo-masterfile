@@ -108,7 +108,7 @@ function renderVariantAlias(gName: string, entry: Entry, group: Group, variantSu
 
 	const isEmpty = !isJsonObject(stripped) || Object.keys(stripped).length === 0;
 	if (isEmpty) {
-		return [`export type ${typeName} = ${SIMPLIFY}<${gName}<"${entry.templateId}", Record<string, never>>>;`];
+		return [`export type ${typeName} = ${SIMPLIFY}<${gName}<"${entry.templateId}">>;`];
 	}
 
 	const literalType = inferJsonType(stripped);

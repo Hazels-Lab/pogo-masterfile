@@ -19,7 +19,7 @@ export interface FortPowerUpLevelSettingsData {
 	>;
 }
 
-export type FortPowerUpLevelSettings0 = S<FortPowerUpLevelSettings<"FORT_POWER_UP_LEVEL_0", Record<string, never>>>;
+export type FortPowerUpLevelSettings0 = S<FortPowerUpLevelSettings<"FORT_POWER_UP_LEVEL_0">>;
 export type FortPowerUpLevelSettings1 = S<
 	FortPowerUpLevelSettings<
 		"FORT_POWER_UP_LEVEL_1",

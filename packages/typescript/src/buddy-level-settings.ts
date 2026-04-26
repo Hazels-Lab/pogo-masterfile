@@ -26,7 +26,7 @@ export interface BuddyLevelSettingsData {
 	>;
 }
 
-export type BuddyLevelSettings0 = S<BuddyLevelSettings<"BUDDY_LEVEL_0", Record<string, never>>>;
+export type BuddyLevelSettings0 = S<BuddyLevelSettings<"BUDDY_LEVEL_0">>;
 export type BuddyLevelSettings1 = S<
 	BuddyLevelSettings<
 		"BUDDY_LEVEL_1",

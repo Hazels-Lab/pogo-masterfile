@@ -22,7 +22,7 @@ export interface QuestSettingsData {
 	};
 }
 
-export type QuestSettingsCatchOfTheDay = S<QuestSettings<"QUEST_FIRST_CATCH_OF_THE_DAY", Record<string, never>>>;
+export type QuestSettingsCatchOfTheDay = S<QuestSettings<"QUEST_FIRST_CATCH_OF_THE_DAY">>;
 export type QuestSettingsPokestopOfTheDay = S<
 	QuestSettings<
 		"QUEST_FIRST_POKESTOP_OF_THE_DAY",
@@ -34,7 +34,7 @@ export type QuestSettingsPokestopOfTheDay = S<
 		}
 	>
 >;
-export type QuestSettingsRouteOfTheDay = S<QuestSettings<"QUEST_FIRST_ROUTE_OF_THE_DAY", Record<string, never>>>;
+export type QuestSettingsRouteOfTheDay = S<QuestSettings<"QUEST_FIRST_ROUTE_OF_THE_DAY">>;
 
 export type QuestSettingsMasterfileEntry = QuestSettingsCatchOfTheDay | QuestSettingsPokestopOfTheDay | QuestSettingsRouteOfTheDay;
 

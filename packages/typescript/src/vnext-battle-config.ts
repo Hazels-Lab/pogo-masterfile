@@ -58,7 +58,7 @@ export type VnextBattleConfigClient = S<
 		}
 	>
 >;
-export type VnextBattleConfigVnextBattleConfig = S<VnextBattleConfig<"VNEXT_BATTLE_CONFIG", Record<string, never>>>;
+export type VnextBattleConfigVnextBattleConfig = S<VnextBattleConfig<"VNEXT_BATTLE_CONFIG">>;
 
 export type VnextBattleConfigMasterfileEntry = VnextBattleConfigClient | VnextBattleConfigVnextBattleConfig;
 

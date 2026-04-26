@@ -689,7 +689,7 @@ export interface VsSeekerPokemonRewardsData {
 	rewardTrack?: "PREMIUM";
 }
 
-export type VsSeekerPokemonRewardsFree = S<VsSeekerPokemonRewards<"VS_SEEKER_POKEMON_REWARDS_FREE", Record<string, never>>>;
+export type VsSeekerPokemonRewardsFree = S<VsSeekerPokemonRewards<"VS_SEEKER_POKEMON_REWARDS_FREE">>;
 export type VsSeekerPokemonRewardsPremium = S<
 	VsSeekerPokemonRewards<
 		"VS_SEEKER_POKEMON_REWARDS_PREMIUM",
