@@ -395,16 +395,16 @@ export function emitIndexFile(multiEntryDiscriminators: string[]): string {
 	const lines: string[] = [];
 
 	for (const disc of sorted) {
-		lines.push(`export type * from "./groups/${kebabCase(disc)}.ts";`);
+		lines.push(`export type * from "./${kebabCase(disc)}.ts";`);
 	}
-	lines.push(`export type * from "./groups/misc.ts";`);
+	lines.push(`export type * from "./misc.ts";`);
 	lines.push(``);
 
 	for (const disc of sorted) {
 		const name = groupName(disc);
-		lines.push(`import type { ${name}MasterfileEntry } from "./groups/${kebabCase(disc)}.ts";`);
+		lines.push(`import type { ${name}MasterfileEntry } from "./${kebabCase(disc)}.ts";`);
 	}
-	lines.push(`import type { MiscMasterfileEntry } from "./groups/misc.ts";`);
+	lines.push(`import type { MiscMasterfileEntry } from "./misc.ts";`);
 	lines.push(``);
 	lines.push(`export type MasterfileEntry =`);
 	for (const disc of sorted) {

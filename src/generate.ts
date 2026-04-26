@@ -30,9 +30,9 @@ function planFiles(groups: Map<string, Group>): Map<string, string> {
 	multiEntry.sort((a, b) => a.discriminator.localeCompare(b.discriminator));
 
 	for (const g of multiEntry) {
-		files.set(`groups/${kebabCase(g.discriminator)}.ts`, emitGroupFile(g));
+		files.set(`${kebabCase(g.discriminator)}.ts`, emitGroupFile(g));
 	}
-	files.set("groups/misc.ts", emitMiscFile(singletons));
+	files.set("misc.ts", emitMiscFile(singletons));
 	files.set("index.ts", emitIndexFile(multiEntry.map((g) => g.discriminator)));
 
 	return files;

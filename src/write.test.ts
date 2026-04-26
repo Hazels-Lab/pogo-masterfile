@@ -14,12 +14,12 @@ describe("writeOutput", () => {
 		const outDir = mkTempDir();
 		await writeOutput(
 			new Map([
-				["groups/foo.ts", "export type Foo = 1;\n"],
-				["index.ts", "export * from './groups/foo.ts';\n"],
+				["oo.ts", "export type Foo = 1;\n"],
+				["index.ts", "export * from './foo.ts';\n"],
 			]),
 			outDir,
 		);
-		expect(readFileSync(join(outDir, "groups/foo.ts"), "utf8")).toContain("Foo");
+		expect(readFileSync(join(outDir, "foo.ts"), "utf8")).toContain("Foo");
 		expect(readFileSync(join(outDir, "index.ts"), "utf8")).toContain("foo");
 		rmSync(outDir, { recursive: true, force: true });
 	});

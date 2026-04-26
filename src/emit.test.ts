@@ -363,7 +363,7 @@ describe("emitMiscFile", () => {
 		const output = emitMiscFile(singletons);
 		expect(output).toContain("export interface AccessibilitySettings {");
 		expect(output).toContain('templateId: "ACCESSIBILITY_CLIENT_SETTINGS";');
-		expect(output).toContain("accessibilitySettings: Record<string, never>;");
+		expect(output).toContain("accessibilitySettings: {};");
 		expect(output).toContain("export interface XyzSettings {");
 
 		// Alphabetical order:
@@ -494,16 +494,16 @@ describe("emitIndexFile", () => {
 		const output = emitIndexFile(multiEntryGroupNames);
 
 		// Exports are sorted:
-		expect(output).toContain(`export type * from "./groups/pokemon-settings.ts";`);
-		expect(output).toContain(`export type * from "./groups/type-effective.ts";`);
-		expect(output).toContain(`export type * from "./groups/misc.ts";`);
+		expect(output).toContain(`export type * from "./pokemon-settings.ts";`);
+		expect(output).toContain(`export type * from "./type-effective.ts";`);
+		expect(output).toContain(`export type * from "./misc.ts";`);
 		const pokeIdx = output.indexOf("pokemon-settings");
 		const typeIdx = output.indexOf("type-effective");
 		expect(pokeIdx).toBeLessThan(typeIdx);
 
 		// Imports for the global union:
-		expect(output).toContain(`import type { PokemonSettingsMasterfileEntry } from "./groups/pokemon-settings.ts";`);
-		expect(output).toContain(`import type { TypeEffectiveMasterfileEntry } from "./groups/type-effective.ts";`);
+		expect(output).toContain(`import type { PokemonSettingsMasterfileEntry } from "./pokemon-settings.ts";`);
+		expect(output).toContain(`import type { TypeEffectiveMasterfileEntry } from "./type-effective.ts";`);
 
 		// Global union and TemplateID alias:
 		expect(output).toContain("export type MasterfileEntry =");
@@ -514,7 +514,7 @@ describe("emitIndexFile", () => {
 
 	test("imports MiscMasterfileEntry and includes it at the end of the MasterfileEntry union", () => {
 		const output = emitIndexFile(["typeEffective", "pokemonSettings"]);
-		expect(output).toContain(`import type { MiscMasterfileEntry } from "./groups/misc.ts";`);
+		expect(output).toContain(`import type { MiscMasterfileEntry } from "./misc.ts";`);
 		expect(output).toContain("| MiscMasterfileEntry;");
 
 		// Misc is last in the union:
