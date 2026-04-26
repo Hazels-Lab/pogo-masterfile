@@ -1,4 +1,5 @@
 import type { Entry, Group } from "./group.ts";
+import { isJsonObject } from "./helpers.ts";
 import type { InferredProperty, InferredType } from "./infer.ts";
 import { inferJsonType, inferJsonTypes, widenType } from "./infer.ts";
 import type { InvariantTree } from "./invariants.ts";
@@ -303,10 +304,6 @@ function renderUnionType(variants: InferredType[]): string[] {
 
 function inferGroupPayloadType(group: Group): InferredType {
 	return inferJsonTypes(group.entries.map((entry) => entry.data[group.discriminator]));
-}
-
-function isJsonObject(value: unknown): value is Record<string, unknown> {
-	return typeof value === "object" && value !== null && !Array.isArray(value);
 }
 
 function isIdentifierName(value: string): boolean {

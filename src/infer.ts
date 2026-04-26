@@ -1,3 +1,5 @@
+import { isJsonObject } from "./helpers";
+
 export type NumericKind = "uint" | "int" | "float";
 
 // Cap on how many distinct string literals are kept when widening for XData.
@@ -236,10 +238,6 @@ function inferArrayType(values: readonly unknown[][]): TupleType | ArrayType {
 		kind: "array",
 		element: inferJsonTypes(values.flat()),
 	};
-}
-
-function isJsonObject(value: unknown): value is Record<string, unknown> {
-	return typeof value === "object" && value !== null && !Array.isArray(value);
 }
 
 function variantSortKey(type: InferredType): string {

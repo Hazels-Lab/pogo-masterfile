@@ -1,4 +1,5 @@
 import type { Group } from "./group.ts";
+import { isJsonObject } from "./helpers.ts";
 import type { InferredProperty, InferredType } from "./infer.ts";
 import { inferJsonType } from "./infer.ts";
 
@@ -40,10 +41,6 @@ export type InvariantNode =
 	| { kind: "nested"; children: InvariantTree };
 
 export type InvariantTree = Map<string, InvariantNode>;
-
-function isJsonObject(value: unknown): value is Record<string, unknown> {
-	return typeof value === "object" && value !== null && !Array.isArray(value);
-}
 
 export function detectInvariants(group: Group): InvariantTree {
 	const values = group.entries.map((e) => e.data[group.discriminator]);
