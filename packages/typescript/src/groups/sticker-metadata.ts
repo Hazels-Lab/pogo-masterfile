@@ -1,7 +1,4 @@
-export interface StickerMetadata<
-	TemplateID extends string = string,
-	TData extends StickerMetadataData = StickerMetadataData,
-> {
+export interface StickerMetadata<TemplateID extends string = string, TData extends StickerMetadataData = StickerMetadataData> {
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;

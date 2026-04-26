@@ -1,7 +1,4 @@
-export interface TypeEffective<
-	TemplateID extends string = string,
-	TData extends TypeEffectiveData = TypeEffectiveData,
-> {
+export interface TypeEffective<TemplateID extends string = string, TData extends TypeEffectiveData = TypeEffectiveData> {
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;

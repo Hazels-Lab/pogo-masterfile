@@ -1,7 +1,4 @@
-export interface QuestSettings<
-	TemplateID extends string = string,
-	TData extends QuestSettingsData = QuestSettingsData,
-> {
+export interface QuestSettings<TemplateID extends string = string, TData extends QuestSettingsData = QuestSettingsData> {
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;
@@ -34,9 +31,6 @@ export type QuestSettingsPokestopOfTheDay = QuestSettings<
 >;
 export type QuestSettingsRouteOfTheDay = QuestSettings<"QUEST_FIRST_ROUTE_OF_THE_DAY">;
 
-export type QuestSettingsMasterfileEntry =
-	| QuestSettingsCatchOfTheDay
-	| QuestSettingsPokestopOfTheDay
-	| QuestSettingsRouteOfTheDay;
+export type QuestSettingsMasterfileEntry = QuestSettingsCatchOfTheDay | QuestSettingsPokestopOfTheDay | QuestSettingsRouteOfTheDay;
 
 export type QuestSettingsTemplateID = QuestSettingsMasterfileEntry["templateId"];

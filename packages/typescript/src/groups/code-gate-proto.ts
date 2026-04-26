@@ -1,7 +1,4 @@
-export interface CodeGateProto<
-	TemplateID extends string = string,
-	TData extends CodeGateProtoData = CodeGateProtoData,
-> {
+export interface CodeGateProto<TemplateID extends string = string, TData extends CodeGateProtoData = CodeGateProtoData> {
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;
@@ -56,14 +53,11 @@ export type CodeGateProtoInputTrackerCodeGate = CodeGateProto<
 >;
 export type CodeGateProtoIsSkuAvailableNoAppIdCodeGate = CodeGateProto<"IS_SKU_AVAILABLE_NO_APP_ID_CODE_GATE">;
 export type CodeGateProtoMapThemeLowPerfCodeGate = CodeGateProto<"MAP_THEME_LOW_PERF_CODE_GATE">;
-export type CodeGateProtoPredictChargeMoveOnSubmitRollBackCodeGate =
-	CodeGateProto<"PREDICT_CHARGE_MOVE_ON_SUBMIT_ROLL_BACK_CODE_GATE">;
+export type CodeGateProtoPredictChargeMoveOnSubmitRollBackCodeGate = CodeGateProto<"PREDICT_CHARGE_MOVE_ON_SUBMIT_ROLL_BACK_CODE_GATE">;
 export type CodeGateProtoPushGatewayMultiActionCodeGate = CodeGateProto<"PUSH_GATEWAY_MULTI_ACTION_CODE_GATE">;
-export type CodeGateProtoStampCollectionSnapshotEnabledCodeGate =
-	CodeGateProto<"STAMP_COLLECTION_SNAPSHOT_ENABLED_CODE_GATE">;
+export type CodeGateProtoStampCollectionSnapshotEnabledCodeGate = CodeGateProto<"STAMP_COLLECTION_SNAPSHOT_ENABLED_CODE_GATE">;
 export type CodeGateProtoTodayViewV3CodeGate = CodeGateProto<"TODAY_VIEW_V3_CODE_GATE">;
-export type CodeGateProtoUseExtendedSettingsForMaxScaleCodeGate =
-	CodeGateProto<"USE_EXTENDED_SETTINGS_FOR_MAX_SCALE_CODE_GATE">;
+export type CodeGateProtoUseExtendedSettingsForMaxScaleCodeGate = CodeGateProto<"USE_EXTENDED_SETTINGS_FOR_MAX_SCALE_CODE_GATE">;
 export type CodeGateProtoUseGmtSkuDataCodeGate = CodeGateProto<"USE_GMT_SKU_DATA_CODE_GATE">;
 
 export type CodeGateProtoMasterfileEntry =

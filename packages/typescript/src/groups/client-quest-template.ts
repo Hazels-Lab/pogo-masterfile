@@ -1,7 +1,4 @@
-export interface ClientQuestTemplate<
-	TemplateID extends string = string,
-	TData extends ClientQuestTemplateData = ClientQuestTemplateData,
-> {
+export interface ClientQuestTemplate<TemplateID extends string = string, TData extends ClientQuestTemplateData = ClientQuestTemplateData> {
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;

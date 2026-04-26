@@ -33,10 +33,7 @@ export function deepEqual(a: unknown, b: unknown): boolean {
 	return true;
 }
 
-export type InvariantNode =
-	| { kind: "constant"; value: unknown }
-	| { kind: "templateIdTie" }
-	| { kind: "nested"; children: InvariantTree };
+export type InvariantNode = { kind: "constant"; value: unknown } | { kind: "templateIdTie" } | { kind: "nested"; children: InvariantTree };
 
 export type InvariantTree = Map<string, InvariantNode>;
 

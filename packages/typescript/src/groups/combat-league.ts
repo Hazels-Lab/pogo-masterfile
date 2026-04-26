@@ -12603,13 +12603,7 @@ export type CombatLeagueVsSeekerGreatHalloween = CombatLeague<
 			{
 				type: "WITH_POKEMON_TYPE";
 				withPokemonType: {
-					pokemonType: [
-						"POKEMON_TYPE_BUG",
-						"POKEMON_TYPE_POISON",
-						"POKEMON_TYPE_DARK",
-						"POKEMON_TYPE_FAIRY",
-						"POKEMON_TYPE_GHOST",
-					];
+					pokemonType: ["POKEMON_TYPE_BUG", "POKEMON_TYPE_POISON", "POKEMON_TYPE_DARK", "POKEMON_TYPE_FAIRY", "POKEMON_TYPE_GHOST"];
 				};
 			},
 		];
@@ -12753,13 +12747,7 @@ export type CombatLeagueVsSeekerGreatHalloweenLittle = CombatLeague<
 			{
 				type: "WITH_POKEMON_TYPE";
 				withPokemonType: {
-					pokemonType: [
-						"POKEMON_TYPE_BUG",
-						"POKEMON_TYPE_POISON",
-						"POKEMON_TYPE_DARK",
-						"POKEMON_TYPE_FAIRY",
-						"POKEMON_TYPE_GHOST",
-					];
+					pokemonType: ["POKEMON_TYPE_BUG", "POKEMON_TYPE_POISON", "POKEMON_TYPE_DARK", "POKEMON_TYPE_FAIRY", "POKEMON_TYPE_GHOST"];
 				};
 			},
 		];
@@ -21081,13 +21069,7 @@ export type CombatLeagueVsSeekerHalloweenUltra = CombatLeague<
 			{
 				type: "WITH_POKEMON_TYPE";
 				withPokemonType: {
-					pokemonType: [
-						"POKEMON_TYPE_POISON",
-						"POKEMON_TYPE_BUG",
-						"POKEMON_TYPE_GHOST",
-						"POKEMON_TYPE_DARK",
-						"POKEMON_TYPE_FAIRY",
-					];
+					pokemonType: ["POKEMON_TYPE_POISON", "POKEMON_TYPE_BUG", "POKEMON_TYPE_GHOST", "POKEMON_TYPE_DARK", "POKEMON_TYPE_FAIRY"];
 				};
 			},
 		];

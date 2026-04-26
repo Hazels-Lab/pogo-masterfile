@@ -203,9 +203,7 @@ function inferArrayType(values: readonly unknown[][]): TupleType | ArrayType {
 	if (isFixedLength) {
 		const allItems = values.flat();
 		const tupleNumericKind =
-			allItems.length > 0 && allItems.every((value): value is number => typeof value === "number")
-				? inferNumericKind(allItems)
-				: undefined;
+			allItems.length > 0 && allItems.every((value): value is number => typeof value === "number") ? inferNumericKind(allItems) : undefined;
 		return {
 			kind: "tuple",
 			items: Array.from({ length: firstLength }, (_, index) => {

@@ -1,7 +1,4 @@
-export interface AvatarCustomization<
-	TemplateID extends string = string,
-	TData extends AvatarCustomizationData = AvatarCustomizationData,
-> {
+export interface AvatarCustomization<TemplateID extends string = string, TData extends AvatarCustomizationData = AvatarCustomizationData> {
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;

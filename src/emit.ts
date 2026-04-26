@@ -100,13 +100,7 @@ function renderXDataInterface(name: string, type: InferredType): string[] {
 	return lines;
 }
 
-function renderVariantAlias(
-	gName: string,
-	entry: Entry,
-	group: Group,
-	variantSuffix: string,
-	invariants: InvariantTree,
-): string[] {
+function renderVariantAlias(gName: string, entry: Entry, group: Group, variantSuffix: string, invariants: InvariantTree): string[] {
 	const typeName = `${gName}${variantSuffix}`;
 	const payload = entry.data[group.discriminator];
 	const stripped = stripInvariantsFromValue(payload, invariants);

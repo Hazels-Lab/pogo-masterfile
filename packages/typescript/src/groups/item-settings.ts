@@ -125,6 +125,9 @@ export interface ItemSettingsData {
 	};
 }
 
+export type Simplify<T> = { [KeyType in keyof T]: T[KeyType] } & {};
+export type X = Simplify<ItemSettingsFusionResourceBlackKyurem>;
+
 export type ItemSettingsFusionResourceBlackKyurem = ItemSettings<
 	"FUSION_RESOURCE_BLACK_KYUREM",
 	{

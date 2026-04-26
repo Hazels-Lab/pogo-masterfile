@@ -1,7 +1,4 @@
-export interface PokemonUpgrades<
-	TemplateID extends string = string,
-	TData extends PokemonUpgradesData = PokemonUpgradesData,
-> {
+export interface PokemonUpgrades<TemplateID extends string = string, TData extends PokemonUpgradesData = PokemonUpgradesData> {
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;
@@ -244,8 +241,6 @@ export type PokemonUpgradesSettings = PokemonUpgrades<
 	}
 >;
 
-export type PokemonUpgradesMasterfileEntry =
-	| PokemonUpgradesOverrideSettingsV0890PokemonEternatus
-	| PokemonUpgradesSettings;
+export type PokemonUpgradesMasterfileEntry = PokemonUpgradesOverrideSettingsV0890PokemonEternatus | PokemonUpgradesSettings;
 
 export type PokemonUpgradesTemplateID = PokemonUpgradesMasterfileEntry["templateId"];

@@ -1,7 +1,4 @@
-export interface PokemonFamily<
-	TemplateID extends string = string,
-	TData extends PokemonFamilyData = PokemonFamilyData,
-> {
+export interface PokemonFamily<TemplateID extends string = string, TData extends PokemonFamilyData = PokemonFamilyData> {
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;

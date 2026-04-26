@@ -1,7 +1,4 @@
-export interface BadgeSettings<
-	TemplateID extends string = string,
-	TData extends BadgeSettingsData = BadgeSettingsData,
-> {
+export interface BadgeSettings<TemplateID extends string = string, TData extends BadgeSettingsData = BadgeSettingsData> {
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;
@@ -7847,13 +7844,7 @@ export type BadgeSettingsTypeBug = BadgeSettings<
 	{
 		badgeRank: 5;
 		badgeType: "BADGE_TYPE_BUG";
-		captureReward: [
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-		];
+		captureReward: [Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>];
 		targets: [10, 50, 200, 2500];
 	}
 >;
@@ -7862,13 +7853,7 @@ export type BadgeSettingsTypeDark = BadgeSettings<
 	{
 		badgeRank: 5;
 		badgeType: "BADGE_TYPE_DARK";
-		captureReward: [
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-		];
+		captureReward: [Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>];
 		targets: [10, 50, 200, 2500];
 	}
 >;
@@ -7877,13 +7862,7 @@ export type BadgeSettingsTypeDragon = BadgeSettings<
 	{
 		badgeRank: 5;
 		badgeType: "BADGE_TYPE_DRAGON";
-		captureReward: [
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-		];
+		captureReward: [Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>];
 		targets: [10, 50, 200, 2500];
 	}
 >;
@@ -7892,13 +7871,7 @@ export type BadgeSettingsTypeElectric = BadgeSettings<
 	{
 		badgeRank: 5;
 		badgeType: "BADGE_TYPE_ELECTRIC";
-		captureReward: [
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-		];
+		captureReward: [Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>];
 		targets: [10, 50, 200, 2500];
 	}
 >;
@@ -7907,13 +7880,7 @@ export type BadgeSettingsTypeFairy = BadgeSettings<
 	{
 		badgeRank: 5;
 		badgeType: "BADGE_TYPE_FAIRY";
-		captureReward: [
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-		];
+		captureReward: [Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>];
 		targets: [10, 50, 200, 2500];
 	}
 >;
@@ -7922,13 +7889,7 @@ export type BadgeSettingsTypeFighting = BadgeSettings<
 	{
 		badgeRank: 5;
 		badgeType: "BADGE_TYPE_FIGHTING";
-		captureReward: [
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-		];
+		captureReward: [Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>];
 		targets: [10, 50, 200, 2500];
 	}
 >;
@@ -7937,13 +7898,7 @@ export type BadgeSettingsTypeFire = BadgeSettings<
 	{
 		badgeRank: 5;
 		badgeType: "BADGE_TYPE_FIRE";
-		captureReward: [
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-		];
+		captureReward: [Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>];
 		targets: [10, 50, 200, 2500];
 	}
 >;
@@ -7952,13 +7907,7 @@ export type BadgeSettingsTypeFlying = BadgeSettings<
 	{
 		badgeRank: 5;
 		badgeType: "BADGE_TYPE_FLYING";
-		captureReward: [
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-		];
+		captureReward: [Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>];
 		targets: [10, 50, 200, 2500];
 	}
 >;
@@ -7967,13 +7916,7 @@ export type BadgeSettingsTypeGhost = BadgeSettings<
 	{
 		badgeRank: 5;
 		badgeType: "BADGE_TYPE_GHOST";
-		captureReward: [
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-		];
+		captureReward: [Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>];
 		targets: [10, 50, 200, 2500];
 	}
 >;
@@ -7982,13 +7925,7 @@ export type BadgeSettingsTypeGrass = BadgeSettings<
 	{
 		badgeRank: 5;
 		badgeType: "BADGE_TYPE_GRASS";
-		captureReward: [
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-		];
+		captureReward: [Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>];
 		targets: [10, 50, 200, 2500];
 	}
 >;
@@ -7997,13 +7934,7 @@ export type BadgeSettingsTypeGround = BadgeSettings<
 	{
 		badgeRank: 5;
 		badgeType: "BADGE_TYPE_GROUND";
-		captureReward: [
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-		];
+		captureReward: [Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>];
 		targets: [10, 50, 200, 2500];
 	}
 >;
@@ -8012,13 +7943,7 @@ export type BadgeSettingsTypeIce = BadgeSettings<
 	{
 		badgeRank: 5;
 		badgeType: "BADGE_TYPE_ICE";
-		captureReward: [
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-		];
+		captureReward: [Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>];
 		targets: [10, 50, 200, 2500];
 	}
 >;
@@ -8027,13 +7952,7 @@ export type BadgeSettingsTypeNormal = BadgeSettings<
 	{
 		badgeRank: 5;
 		badgeType: "BADGE_TYPE_NORMAL";
-		captureReward: [
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-		];
+		captureReward: [Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>];
 		targets: [10, 50, 200, 2500];
 	}
 >;
@@ -8042,13 +7961,7 @@ export type BadgeSettingsTypePoison = BadgeSettings<
 	{
 		badgeRank: 5;
 		badgeType: "BADGE_TYPE_POISON";
-		captureReward: [
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-		];
+		captureReward: [Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>];
 		targets: [10, 50, 200, 2500];
 	}
 >;
@@ -8057,13 +7970,7 @@ export type BadgeSettingsTypePsychic = BadgeSettings<
 	{
 		badgeRank: 5;
 		badgeType: "BADGE_TYPE_PSYCHIC";
-		captureReward: [
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-		];
+		captureReward: [Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>];
 		targets: [10, 50, 200, 2500];
 	}
 >;
@@ -8072,13 +7979,7 @@ export type BadgeSettingsTypeRock = BadgeSettings<
 	{
 		badgeRank: 5;
 		badgeType: "BADGE_TYPE_ROCK";
-		captureReward: [
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-		];
+		captureReward: [Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>];
 		targets: [10, 50, 200, 2500];
 	}
 >;
@@ -8087,13 +7988,7 @@ export type BadgeSettingsTypeSteel = BadgeSettings<
 	{
 		badgeRank: 5;
 		badgeType: "BADGE_TYPE_STEEL";
-		captureReward: [
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-		];
+		captureReward: [Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>];
 		targets: [10, 50, 200, 2500];
 	}
 >;
@@ -8102,13 +7997,7 @@ export type BadgeSettingsTypeWater = BadgeSettings<
 	{
 		badgeRank: 5;
 		badgeType: "BADGE_TYPE_WATER";
-		captureReward: [
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-			Record<string, never>,
-		];
+		captureReward: [Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>, Record<string, never>];
 		targets: [10, 50, 200, 2500];
 	}
 >;

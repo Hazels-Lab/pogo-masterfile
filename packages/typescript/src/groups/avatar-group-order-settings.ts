@@ -109,8 +109,6 @@ export type AvatarGroupOrderSettingsSettings = AvatarGroupOrderSettings<
 	}
 >;
 
-export type AvatarGroupOrderSettingsMasterfileEntry =
-	| AvatarGroupOrderSettingsOrderSettings
-	| AvatarGroupOrderSettingsSettings;
+export type AvatarGroupOrderSettingsMasterfileEntry = AvatarGroupOrderSettingsOrderSettings | AvatarGroupOrderSettingsSettings;
 
 export type AvatarGroupOrderSettingsTemplateID = AvatarGroupOrderSettingsMasterfileEntry["templateId"];

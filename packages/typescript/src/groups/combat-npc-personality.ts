@@ -50,9 +50,6 @@ export type CombatNpcPersonalityMedium = CombatNpcPersonality<
 	}
 >;
 
-export type CombatNpcPersonalityMasterfileEntry =
-	| CombatNpcPersonalityEasy
-	| CombatNpcPersonalityHard
-	| CombatNpcPersonalityMedium;
+export type CombatNpcPersonalityMasterfileEntry = CombatNpcPersonalityEasy | CombatNpcPersonalityHard | CombatNpcPersonalityMedium;
 
 export type CombatNpcPersonalityTemplateID = CombatNpcPersonalityMasterfileEntry["templateId"];

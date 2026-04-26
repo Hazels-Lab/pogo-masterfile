@@ -24,17 +24,7 @@ export interface AddressablePokemonSettings {
 	data: {
 		templateId: "ADDRESSABLE_POKEMON_SETTINGS";
 		addressablePokemonSettings: {
-			addressablePokemonIds: [
-				"BULBASAUR",
-				"SQUIRTLE",
-				"KAKUNA",
-				"PIKACHU",
-				"PONYTA",
-				"ZIGZAGOON",
-				"GARDEVOIR",
-				"FLYGON",
-				"MELOETTA",
-			];
+			addressablePokemonIds: ["BULBASAUR", "SQUIRTLE", "KAKUNA", "PIKACHU", "PONYTA", "ZIGZAGOON", "GARDEVOIR", "FLYGON", "MELOETTA"];
 		};
 	};
 }
@@ -3015,11 +3005,7 @@ export interface CombatLeagueSettings {
 	data: {
 		templateId: "COMBAT_LEAGUE_SETTINGS";
 		combatLeagueSettings: {
-			combatLeagueTemplateId: [
-				"COMBAT_LEAGUE_DEFAULT_GREAT",
-				"COMBAT_LEAGUE_DEFAULT_ULTRA",
-				"COMBAT_LEAGUE_DEFAULT_MASTER",
-			];
+			combatLeagueTemplateId: ["COMBAT_LEAGUE_DEFAULT_GREAT", "COMBAT_LEAGUE_DEFAULT_ULTRA", "COMBAT_LEAGUE_DEFAULT_MASTER"];
 		};
 	};
 }
@@ -4113,12 +4099,7 @@ export interface ItemInventoryUpdateSettings {
 					sortOrder: 4;
 				},
 				{
-					category: [
-						"ITEM_CATEGORY_INCENSE",
-						"ITEM_CATEGORY_BOOST",
-						"ITEM_CATEGORY_STARDUST_BOOST",
-						"ITEM_CATEGORY_XP_BOOST",
-					];
+					category: ["ITEM_CATEGORY_INCENSE", "ITEM_CATEGORY_BOOST", "ITEM_CATEGORY_STARDUST_BOOST", "ITEM_CATEGORY_XP_BOOST"];
 					categoryName: "item_bag_category_boosts";
 					sortOrder: 5;
 				},
@@ -4136,11 +4117,7 @@ export interface ItemInventoryUpdateSettings {
 					sortOrder: 6;
 				},
 				{
-					category: [
-						"ITEM_CATEGORY_RAID_TICKET",
-						"ITEM_CATEGORY_GLOBAL_EVENT_TICKET",
-						"ITEM_CATEGORY_EVENT_TICKET_GIFT",
-					];
+					category: ["ITEM_CATEGORY_RAID_TICKET", "ITEM_CATEGORY_GLOBAL_EVENT_TICKET", "ITEM_CATEGORY_EVENT_TICKET_GIFT"];
 					categoryName: "item_bag_category_passes";
 					sortOrder: 7;
 				},

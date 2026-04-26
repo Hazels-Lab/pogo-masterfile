@@ -1,7 +1,4 @@
-export interface LanguageSettings<
-	TemplateID extends string = string,
-	TData extends LanguageSettingsData = LanguageSettingsData,
-> {
+export interface LanguageSettings<TemplateID extends string = string, TData extends LanguageSettingsData = LanguageSettingsData> {
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;
@@ -34,9 +31,6 @@ export type LanguageSettingsLatam = LanguageSettings<
 	}
 >;
 
-export type LanguageSettingsMasterfileEntry =
-	| LanguageSettingsHindi
-	| LanguageSettingsIndonesian
-	| LanguageSettingsLatam;
+export type LanguageSettingsMasterfileEntry = LanguageSettingsHindi | LanguageSettingsIndonesian | LanguageSettingsLatam;
 
 export type LanguageSettingsTemplateID = LanguageSettingsMasterfileEntry["templateId"];

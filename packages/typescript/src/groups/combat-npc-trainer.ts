@@ -1,7 +1,4 @@
-export interface CombatNpcTrainer<
-	TemplateID extends string = string,
-	TData extends CombatNpcTrainerData = CombatNpcTrainerData,
-> {
+export interface CombatNpcTrainer<TemplateID extends string = string, TData extends CombatNpcTrainerData = CombatNpcTrainerData> {
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;

@@ -1,7 +1,4 @@
-export interface WeatherAffinities<
-	TemplateID extends string = string,
-	TData extends WeatherAffinitiesData = WeatherAffinitiesData,
-> {
+export interface WeatherAffinities<TemplateID extends string = string, TData extends WeatherAffinitiesData = WeatherAffinitiesData> {
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;

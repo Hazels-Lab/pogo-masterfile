@@ -16,14 +16,7 @@ export interface MoveSequenceSettingsData {
 export type MoveSequenceSettingsAcidFast = MoveSequenceSettings<
 	"sequence_acid_fast",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx acid_fast",
-			"sfx attacker 051-0_acid",
-			"wait 0.5",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx acid_fast", "sfx attacker 051-0_acid", "wait 0.5", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsAcidSpray = MoveSequenceSettings<
@@ -126,14 +119,7 @@ export type MoveSequenceSettingsAncientPower = MoveSequenceSettings<
 export type MoveSequenceSettingsAquaJet = MoveSequenceSettings<
 	"sequence_aqua_jet",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx aqua_jet",
-			"sfx attacker 453-0_aqua_jet",
-			"wait 1.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx aqua_jet", "sfx attacker 453-0_aqua_jet", "wait 1.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsAquaStep = MoveSequenceSettings<
@@ -153,14 +139,7 @@ export type MoveSequenceSettingsAquaStep = MoveSequenceSettings<
 export type MoveSequenceSettingsAquaTail = MoveSequenceSettings<
 	"sequence_aqua_tail",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx aqua_tail",
-			"sfx attacker 401-0_aqua_tail",
-			"wait 1.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx aqua_tail", "sfx attacker 401-0_aqua_tail", "wait 1.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsAstonishFast = MoveSequenceSettings<
@@ -294,14 +273,7 @@ export type MoveSequenceSettingsBehemothBlade = MoveSequenceSettings<
 export type MoveSequenceSettingsBiteFast = MoveSequenceSettings<
 	"sequence_bite_fast",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx defender bite_fast",
-			"wait 0.25",
-			"sfx attacker 044-0_bite",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx defender bite_fast", "wait 0.25", "sfx attacker 044-0_bite", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsBlastBurn = MoveSequenceSettings<
@@ -349,14 +321,7 @@ export type MoveSequenceSettingsBleakwindStorm = MoveSequenceSettings<
 export type MoveSequenceSettingsBlizzard = MoveSequenceSettings<
 	"sequence_blizzard",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx blizzard",
-			"sfx attacker 059-0_blizzard",
-			"wait 1.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx blizzard", "sfx attacker 059-0_blizzard", "wait 1.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsBodySlam = MoveSequenceSettings<
@@ -446,14 +411,7 @@ export type MoveSequenceSettingsBrickBreak = MoveSequenceSettings<
 export type MoveSequenceSettingsBrine = MoveSequenceSettings<
 	"sequence_brine",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx brine",
-			"sfx attacker 362-0_brine",
-			"wait 1.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx brine", "sfx attacker 362-0_brine", "wait 1.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsBrutalSwing = MoveSequenceSettings<
@@ -473,14 +431,7 @@ export type MoveSequenceSettingsBrutalSwing = MoveSequenceSettings<
 export type MoveSequenceSettingsBubbleBeam = MoveSequenceSettings<
 	"sequence_bubble_beam",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx bubble_beam",
-			"sfx attacker 061-0_bubble_beam",
-			"wait 0.5",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx bubble_beam", "sfx attacker 061-0_bubble_beam", "wait 0.5", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsBubbleFast = MoveSequenceSettings<
@@ -513,14 +464,7 @@ export type MoveSequenceSettingsBugBiteFast = MoveSequenceSettings<
 export type MoveSequenceSettingsBugBuzz = MoveSequenceSettings<
 	"sequence_bug_buzz",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx bug_buzz",
-			"sfx attacker 405-0_bug_buzz",
-			"wait 1.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx bug_buzz", "sfx attacker 405-0_bug_buzz", "wait 1.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsBulldoze = MoveSequenceSettings<
@@ -840,14 +784,7 @@ export type MoveSequenceSettingsDisarmingVoice = MoveSequenceSettings<
 export type MoveSequenceSettingsDischarge = MoveSequenceSettings<
 	"sequence_discharge",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx discharge",
-			"sfx attacker 435-0_discharge",
-			"wait 1.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx discharge", "sfx attacker 435-0_discharge", "wait 1.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsDoomDesire = MoveSequenceSettings<
@@ -936,14 +873,7 @@ export type MoveSequenceSettingsDragonBreathFast = MoveSequenceSettings<
 export type MoveSequenceSettingsDragonClaw = MoveSequenceSettings<
 	"sequence_dragon_claw",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx dragon_claw",
-			"sfx attacker 337-0_dragon_claw",
-			"wait 1.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx dragon_claw", "sfx attacker 337-0_dragon_claw", "wait 1.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsDragonEnergy = MoveSequenceSettings<
@@ -963,14 +893,7 @@ export type MoveSequenceSettingsDragonEnergy = MoveSequenceSettings<
 export type MoveSequenceSettingsDragonPulse = MoveSequenceSettings<
 	"sequence_dragon_pulse",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx dragon_pulse",
-			"sfx attacker 406-0_dragon_pulse",
-			"wait 2.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx dragon_pulse", "sfx attacker 406-0_dragon_pulse", "wait 2.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsDragonTailFast = MoveSequenceSettings<
@@ -1017,14 +940,7 @@ export type MoveSequenceSettingsDrainingKiss = MoveSequenceSettings<
 export type MoveSequenceSettingsDrillPeck = MoveSequenceSettings<
 	"sequence_drill_peck",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx drill_peck",
-			"sfx attacker 065-0_drill_peck",
-			"wait 0.5",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx drill_peck", "sfx attacker 065-0_drill_peck", "wait 0.5", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsDrillRun = MoveSequenceSettings<
@@ -1333,27 +1249,13 @@ export type MoveSequenceSettingsFlameWheel = MoveSequenceSettings<
 export type MoveSequenceSettingsFlamethrower = MoveSequenceSettings<
 	"sequence_flamethrower",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx flamethrower",
-			"sfx attacker 053-0_flamethrower",
-			"wait 1.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx flamethrower", "sfx attacker 053-0_flamethrower", "wait 1.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsFlashCannon = MoveSequenceSettings<
 	"sequence_flash_cannon",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx flash_cannon",
-			"sfx attacker 430-0_flash_cannon",
-			"wait 1.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx flash_cannon", "sfx attacker 430-0_flash_cannon", "wait 1.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsFlowerTrick = MoveSequenceSettings<
@@ -1373,15 +1275,7 @@ export type MoveSequenceSettingsFlowerTrick = MoveSequenceSettings<
 export type MoveSequenceSettingsFly = MoveSequenceSettings<
 	"sequence_fly",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"wait 0.5",
-			"vfx fly",
-			"sfx attacker 019-0_fly",
-			"wait 1.5",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "wait 0.5", "vfx fly", "sfx attacker 019-0_fly", "wait 1.5", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsFocusBlast = MoveSequenceSettings<
@@ -1669,27 +1563,13 @@ export type MoveSequenceSettingsGyroBall = MoveSequenceSettings<
 export type MoveSequenceSettingsHeartStamp = MoveSequenceSettings<
 	"sequence_heart_stamp",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx heart_stamp",
-			"sfx attacker 531-0_heart_stamp",
-			"wait 1.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx heart_stamp", "sfx attacker 531-0_heart_stamp", "wait 1.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsHeatWave = MoveSequenceSettings<
 	"sequence_heat_wave",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx heat_wave",
-			"sfx attacker 257-0_heat_wave",
-			"wait 1.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx heat_wave", "sfx attacker 257-0_heat_wave", "wait 1.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsHeavySlam = MoveSequenceSettings<
@@ -1709,15 +1589,7 @@ export type MoveSequenceSettingsHeavySlam = MoveSequenceSettings<
 export type MoveSequenceSettingsHexFast = MoveSequenceSettings<
 	"sequence_hex_fast",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"sfx attacker 506-0_hex",
-			"wait 0.5",
-			"vfx hex_fast",
-			"wait 1.5",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "sfx attacker 506-0_hex", "wait 0.5", "vfx hex_fast", "wait 1.5", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsHiddenPowerFast = MoveSequenceSettings<
@@ -1765,14 +1637,7 @@ export type MoveSequenceSettingsHighJumpKick = MoveSequenceSettings<
 export type MoveSequenceSettingsHornAttack = MoveSequenceSettings<
 	"sequence_horn_attack",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx horn_attack",
-			"sfx attacker 030-0_horn_attack",
-			"wait 0.5",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx horn_attack", "sfx attacker 030-0_horn_attack", "wait 0.5", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsHornDrill = MoveSequenceSettings<
@@ -1819,14 +1684,7 @@ export type MoveSequenceSettingsHydroCannon = MoveSequenceSettings<
 export type MoveSequenceSettingsHydroPump = MoveSequenceSettings<
 	"sequence_hydro_pump",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx hydro_pump",
-			"sfx attacker 056-0_hydro_pump",
-			"wait 1.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx hydro_pump", "sfx attacker 056-0_hydro_pump", "wait 1.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsHydroPumpBlastoise = MoveSequenceSettings<
@@ -1983,14 +1841,7 @@ export type MoveSequenceSettingsIcicleSpear = MoveSequenceSettings<
 export type MoveSequenceSettingsIcyWind = MoveSequenceSettings<
 	"sequence_icy_wind",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx icy_wind",
-			"sfx attacker 196-0_icy_wind",
-			"wait 1.5",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx icy_wind", "sfx attacker 196-0_icy_wind", "wait 1.5", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsIncinerateFast = MoveSequenceSettings<
@@ -2276,14 +2127,7 @@ export type MoveSequenceSettingsMagmaStorm = MoveSequenceSettings<
 export type MoveSequenceSettingsMagnetBomb = MoveSequenceSettings<
 	"sequence_magnet_bomb",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx magnet_bomb",
-			"sfx attacker 443-0_magnet_bomb",
-			"wait 2.6",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx magnet_bomb", "sfx attacker 443-0_magnet_bomb", "wait 2.6", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsMegaDrain = MoveSequenceSettings<
@@ -2430,14 +2274,7 @@ export type MoveSequenceSettingsMistBall = MoveSequenceSettings<
 export type MoveSequenceSettingsMoonblast = MoveSequenceSettings<
 	"sequence_moonblast",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx moonblast",
-			"sfx attacker 585-0_moonblast",
-			"wait 1",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx moonblast", "sfx attacker 585-0_moonblast", "wait 1", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsMoongeistBeam = MoveSequenceSettings<
@@ -2472,14 +2309,7 @@ export type MoveSequenceSettingsMudBomb = MoveSequenceSettings<
 export type MoveSequenceSettingsMudShotFast = MoveSequenceSettings<
 	"sequence_mud_shot_fast",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx mud_shot_fast",
-			"sfx attacker 341-0_mud_shot",
-			"wait 0.5",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx mud_shot_fast", "sfx attacker 341-0_mud_shot", "wait 0.5", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsMudSlapFast = MoveSequenceSettings<
@@ -2556,14 +2386,7 @@ export type MoveSequenceSettingsNightShade = MoveSequenceSettings<
 export type MoveSequenceSettingsNightSlash = MoveSequenceSettings<
 	"sequence_night_slash",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx night_slash",
-			"sfx attacker 400-0_night_slash",
-			"wait 1.75",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx night_slash", "sfx attacker 400-0_night_slash", "wait 1.75", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsOblivionWing = MoveSequenceSettings<
@@ -2820,14 +2643,7 @@ export type MoveSequenceSettingsPowderSnowFast = MoveSequenceSettings<
 export type MoveSequenceSettingsPowerGem = MoveSequenceSettings<
 	"sequence_power_gem",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx power_gem",
-			"sfx attacker 408-0_power_gem",
-			"wait 1.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx power_gem", "sfx attacker 408-0_power_gem", "wait 1.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsPowerUpPunch = MoveSequenceSettings<
@@ -2895,27 +2711,13 @@ export type MoveSequenceSettingsPresentFast = MoveSequenceSettings<
 export type MoveSequenceSettingsPsybeam = MoveSequenceSettings<
 	"sequence_psybeam",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx psybeam",
-			"sfx attacker 060-0_psybeam",
-			"wait 2.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx psybeam", "sfx attacker 060-0_psybeam", "wait 2.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsPsychic = MoveSequenceSettings<
 	"sequence_psychic",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx psychic",
-			"sfx attacker 094-0_psychic",
-			"wait 1.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx psychic", "sfx attacker 094-0_psychic", "wait 1.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsPsychicFangs = MoveSequenceSettings<
@@ -2949,27 +2751,13 @@ export type MoveSequenceSettingsPsychoBoost = MoveSequenceSettings<
 export type MoveSequenceSettingsPsychoCutFast = MoveSequenceSettings<
 	"sequence_psycho_cut_fast",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx psycho_cut_fast",
-			"sfx attacker 427-0_psycho_cut",
-			"wait 0.5",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx psycho_cut_fast", "sfx attacker 427-0_psycho_cut", "wait 0.5", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsPsyshock = MoveSequenceSettings<
 	"sequence_psyshock",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx psyshock",
-			"sfx attacker 473-0_psyshock",
-			"wait 2",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx psyshock", "sfx attacker 473-0_psyshock", "wait 2", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsPsystrike = MoveSequenceSettings<
@@ -3044,14 +2832,7 @@ export type MoveSequenceSettingsRageFist = MoveSequenceSettings<
 export type MoveSequenceSettingsRazorLeafFast = MoveSequenceSettings<
 	"sequence_razor_leaf_fast",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx razor_leaf_fast",
-			"sfx attacker 075-0_razor_leaf",
-			"wait 0.5",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx razor_leaf_fast", "sfx attacker 075-0_razor_leaf", "wait 0.5", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsRazorShell = MoveSequenceSettings<
@@ -3071,28 +2852,13 @@ export type MoveSequenceSettingsRazorShell = MoveSequenceSettings<
 export type MoveSequenceSettingsRest = MoveSequenceSettings<
 	"sequence_rest",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx attacker rest",
-			"sfx attacker 156-0_rest",
-			"wait 2.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx attacker rest", "sfx attacker 156-0_rest", "wait 2.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsReturn = MoveSequenceSettings<
 	"sequence_return",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"wait 0.5",
-			"vfx return",
-			"sfx attacker 216-0_return",
-			"wait 1.5",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "wait 0.5", "vfx return", "sfx attacker 216-0_return", "wait 1.5", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsRoarOfTime = MoveSequenceSettings<
@@ -3283,15 +3049,7 @@ export type MoveSequenceSettingsSandsearStorm = MoveSequenceSettings<
 export type MoveSequenceSettingsScald = MoveSequenceSettings<
 	"sequence_scald",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"wait 0.5",
-			"vfx scald",
-			"sfx attacker 503-0_scald",
-			"wait 2.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "wait 0.5", "vfx scald", "sfx attacker 503-0_scald", "wait 2.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsScaldBlastoise = MoveSequenceSettings<
@@ -3577,14 +3335,7 @@ export type MoveSequenceSettingsSeqTransformFast = MoveSequenceSettings<
 export type MoveSequenceSettingsShadowBall = MoveSequenceSettings<
 	"sequence_shadow_ball",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx shadow_ball",
-			"sfx attacker 247-0_shadow_ball",
-			"wait 2.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx shadow_ball", "sfx attacker 247-0_shadow_ball", "wait 2.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsShadowBone = MoveSequenceSettings<
@@ -3660,14 +3411,7 @@ export type MoveSequenceSettingsShadowSneak = MoveSequenceSettings<
 export type MoveSequenceSettingsSignalBeam = MoveSequenceSettings<
 	"sequence_signal_beam",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx signal_beam",
-			"sfx attacker 324-0_signal_beam",
-			"wait 2.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx signal_beam", "sfx attacker 324-0_signal_beam", "wait 2.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsSilverWind = MoveSequenceSettings<
@@ -3715,40 +3459,19 @@ export type MoveSequenceSettingsSkyAttack = MoveSequenceSettings<
 export type MoveSequenceSettingsSludge = MoveSequenceSettings<
 	"sequence_sludge",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx sludge",
-			"sfx attacker 124-0_sludge",
-			"wait 0.5",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx sludge", "sfx attacker 124-0_sludge", "wait 0.5", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsSludgeBomb = MoveSequenceSettings<
 	"sequence_sludge_bomb",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx sludge_bomb",
-			"sfx attacker 188-0_sludge_bomb",
-			"wait 1.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx sludge_bomb", "sfx attacker 188-0_sludge_bomb", "wait 1.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsSludgeWave = MoveSequenceSettings<
 	"sequence_sludge_wave",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx sludge_wave",
-			"sfx attacker 482-0_sludge_wave",
-			"wait 1.5",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx sludge_wave", "sfx attacker 482-0_sludge_wave", "wait 1.5", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsSmackDown = MoveSequenceSettings<
@@ -3828,14 +3551,7 @@ export type MoveSequenceSettingsSpacialRend = MoveSequenceSettings<
 export type MoveSequenceSettingsSparkFast = MoveSequenceSettings<
 	"sequence_spark_fast",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"sfx attacker 209-0_spark",
-			"vfx spark_fast",
-			"wait 0.5",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "sfx attacker 209-0_spark", "vfx spark_fast", "wait 0.5", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsSparklingAria = MoveSequenceSettings<
@@ -3869,14 +3585,7 @@ export type MoveSequenceSettingsSpiritShackle = MoveSequenceSettings<
 export type MoveSequenceSettingsSplashFast = MoveSequenceSettings<
 	"sequence_splash_fast",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"sfx attacker 150-0_splash",
-			"wait 0.53",
-			"vfx defender splash",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "sfx attacker 150-0_splash", "wait 0.53", "vfx defender splash", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsSteelWingFast = MoveSequenceSettings<
@@ -4006,28 +3715,13 @@ export type MoveSequenceSettingsSuperPower = MoveSequenceSettings<
 export type MoveSequenceSettingsSurf = MoveSequenceSettings<
 	"sequence_surf",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"wait 0.5",
-			"vfx surf",
-			"sfx attacker 057-0_surf",
-			"wait 1.5",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "wait 0.5", "vfx surf", "sfx attacker 057-0_surf", "wait 1.5", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsSwift = MoveSequenceSettings<
 	"sequence_swift",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx swift",
-			"sfx attacker 129-0_swift",
-			"wait 2.0",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx swift", "sfx attacker 129-0_swift", "wait 2.0", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsSynchronoise = MoveSequenceSettings<
@@ -4289,14 +3983,7 @@ export type MoveSequenceSettingsTripleAxel = MoveSequenceSettings<
 export type MoveSequenceSettingsTwister = MoveSequenceSettings<
 	"sequence_twister",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx defender twister",
-			"sfx attacker 239-0_twister",
-			"wait 1.82",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx defender twister", "sfx attacker 239-0_twister", "wait 1.82", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsUpperHand = MoveSequenceSettings<
@@ -4345,14 +4032,7 @@ export type MoveSequenceSettingsViceGrip = MoveSequenceSettings<
 export type MoveSequenceSettingsVineWhipFast = MoveSequenceSettings<
 	"sequence_vine_whip_fast",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx vine_whip_fast",
-			"sfx attacker 022-0_vine_whip",
-			"wait 0.5",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx vine_whip_fast", "sfx attacker 022-0_vine_whip", "wait 0.5", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsVoltSwitchFast = MoveSequenceSettings<
@@ -4386,14 +4066,7 @@ export type MoveSequenceSettingsVoltTackle = MoveSequenceSettings<
 export type MoveSequenceSettingsWaterGunFast = MoveSequenceSettings<
 	"sequence_water_gun_fast",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"vfx water_gun_fast",
-			"sfx attacker 055-0_water_gun",
-			"wait 0.5",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "vfx water_gun_fast", "sfx attacker 055-0_water_gun", "wait 0.5", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsWaterGunFastBlastoise = MoveSequenceSettings<
@@ -4634,15 +4307,7 @@ export type MoveSequenceSettingsXScissor = MoveSequenceSettings<
 export type MoveSequenceSettingsYawnFast = MoveSequenceSettings<
 	"sequence_yawn_fast",
 	{
-		sequence: [
-			"anim attacker atk-move",
-			"wait 0.5",
-			"vfx yawn_fast",
-			"sfx attacker 281-0_yawn",
-			"wait 1.5",
-			"sys ui-sync",
-			"sys complete",
-		];
+		sequence: ["anim attacker atk-move", "wait 0.5", "vfx yawn_fast", "sfx attacker 281-0_yawn", "wait 1.5", "sys ui-sync", "sys complete"];
 	}
 >;
 export type MoveSequenceSettingsZapCannon = MoveSequenceSettings<

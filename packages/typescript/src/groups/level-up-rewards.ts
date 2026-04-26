@@ -1,7 +1,4 @@
-export interface LevelUpRewards<
-	TemplateID extends string = string,
-	TData extends LevelUpRewardsData = LevelUpRewardsData,
-> {
+export interface LevelUpRewards<TemplateID extends string = string, TData extends LevelUpRewardsData = LevelUpRewardsData> {
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;
@@ -831,14 +828,7 @@ export type LevelUpRewardsAwardsLevel72 = LevelUpRewards<
 	"AWARDS_LEVEL_72",
 	{
 		clientOverrideDisplayOrder: true;
-		items: [
-			"ITEM_ULTRA_BALL",
-			"ITEM_RAZZ_BERRY",
-			"ITEM_MAX_REVIVE",
-			"ITEM_PAID_RAID_TICKET",
-			"ITEM_XL_RARE_CANDY",
-			"ITEM_LUCKY_EGG",
-		];
+		items: ["ITEM_ULTRA_BALL", "ITEM_RAZZ_BERRY", "ITEM_MAX_REVIVE", "ITEM_PAID_RAID_TICKET", "ITEM_XL_RARE_CANDY", "ITEM_LUCKY_EGG"];
 		itemsCount: [30, 25, 10, 1, 1, 1];
 		level: 72;
 	}
@@ -907,14 +897,7 @@ export type LevelUpRewardsAwardsLevel76 = LevelUpRewards<
 	"AWARDS_LEVEL_76",
 	{
 		clientOverrideDisplayOrder: true;
-		items: [
-			"ITEM_ULTRA_BALL",
-			"ITEM_PINAP_BERRY",
-			"ITEM_MAX_POTION",
-			"ITEM_PAID_RAID_TICKET",
-			"ITEM_XL_RARE_CANDY",
-			"ITEM_LUCKY_EGG",
-		];
+		items: ["ITEM_ULTRA_BALL", "ITEM_PINAP_BERRY", "ITEM_MAX_POTION", "ITEM_PAID_RAID_TICKET", "ITEM_XL_RARE_CANDY", "ITEM_LUCKY_EGG"];
 		itemsCount: [30, 25, 20, 1, 1, 1];
 		level: 76;
 	}

@@ -1,7 +1,4 @@
-export interface AvatarItemDisplay<
-	TemplateID extends string = string,
-	TData extends AvatarItemDisplayData = AvatarItemDisplayData,
-> {
+export interface AvatarItemDisplay<TemplateID extends string = string, TData extends AvatarItemDisplayData = AvatarItemDisplayData> {
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;

@@ -14,18 +14,12 @@ export interface PokestopInvasionAvailabilitySettings<
 
 export interface PokestopInvasionAvailabilitySettingsData {}
 
-export type PokestopInvasionAvailabilitySettingsFriday =
-	PokestopInvasionAvailabilitySettings<"INVASION_AVAILABILITY_SETTINGS_FRIDAY">;
-export type PokestopInvasionAvailabilitySettingsMonday =
-	PokestopInvasionAvailabilitySettings<"INVASION_AVAILABILITY_SETTINGS_MONDAY">;
-export type PokestopInvasionAvailabilitySettingsSaturday =
-	PokestopInvasionAvailabilitySettings<"INVASION_AVAILABILITY_SETTINGS_SATURDAY">;
-export type PokestopInvasionAvailabilitySettingsSunday =
-	PokestopInvasionAvailabilitySettings<"INVASION_AVAILABILITY_SETTINGS_SUNDAY">;
-export type PokestopInvasionAvailabilitySettingsThursday =
-	PokestopInvasionAvailabilitySettings<"INVASION_AVAILABILITY_SETTINGS_THURSDAY">;
-export type PokestopInvasionAvailabilitySettingsTuesday =
-	PokestopInvasionAvailabilitySettings<"INVASION_AVAILABILITY_SETTINGS_TUESDAY">;
+export type PokestopInvasionAvailabilitySettingsFriday = PokestopInvasionAvailabilitySettings<"INVASION_AVAILABILITY_SETTINGS_FRIDAY">;
+export type PokestopInvasionAvailabilitySettingsMonday = PokestopInvasionAvailabilitySettings<"INVASION_AVAILABILITY_SETTINGS_MONDAY">;
+export type PokestopInvasionAvailabilitySettingsSaturday = PokestopInvasionAvailabilitySettings<"INVASION_AVAILABILITY_SETTINGS_SATURDAY">;
+export type PokestopInvasionAvailabilitySettingsSunday = PokestopInvasionAvailabilitySettings<"INVASION_AVAILABILITY_SETTINGS_SUNDAY">;
+export type PokestopInvasionAvailabilitySettingsThursday = PokestopInvasionAvailabilitySettings<"INVASION_AVAILABILITY_SETTINGS_THURSDAY">;
+export type PokestopInvasionAvailabilitySettingsTuesday = PokestopInvasionAvailabilitySettings<"INVASION_AVAILABILITY_SETTINGS_TUESDAY">;
 export type PokestopInvasionAvailabilitySettingsWednesday =
 	PokestopInvasionAvailabilitySettings<"INVASION_AVAILABILITY_SETTINGS_WEDNESDAY">;
 
@@ -38,5 +32,4 @@ export type PokestopInvasionAvailabilitySettingsMasterfileEntry =
 	| PokestopInvasionAvailabilitySettingsTuesday
 	| PokestopInvasionAvailabilitySettingsWednesday;
 
-export type PokestopInvasionAvailabilitySettingsTemplateID =
-	PokestopInvasionAvailabilitySettingsMasterfileEntry["templateId"];
+export type PokestopInvasionAvailabilitySettingsTemplateID = PokestopInvasionAvailabilitySettingsMasterfileEntry["templateId"];

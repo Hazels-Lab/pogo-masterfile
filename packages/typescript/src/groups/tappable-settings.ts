@@ -1,7 +1,4 @@
-export interface TappableSettings<
-	TemplateID extends string = string,
-	TData extends TappableSettingsData = TappableSettingsData,
-> {
+export interface TappableSettings<TemplateID extends string = string, TData extends TappableSettingsData = TappableSettingsData> {
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;

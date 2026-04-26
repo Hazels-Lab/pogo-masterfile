@@ -1,7 +1,4 @@
-export interface GenderSettings<
-	TemplateID extends string = string,
-	TData extends GenderSettingsData = GenderSettingsData,
-> {
+export interface GenderSettings<TemplateID extends string = string, TData extends GenderSettingsData = GenderSettingsData> {
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;

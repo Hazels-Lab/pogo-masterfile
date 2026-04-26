@@ -1,7 +1,4 @@
-export interface VnextBattleConfig<
-	TemplateID extends string = string,
-	TData extends VnextBattleConfigData = VnextBattleConfigData,
-> {
+export interface VnextBattleConfig<TemplateID extends string = string, TData extends VnextBattleConfigData = VnextBattleConfigData> {
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;
@@ -58,8 +55,6 @@ export type VnextBattleConfigClientVnextBattleConfig = VnextBattleConfig<
 >;
 export type VnextBattleConfigVnextBattleConfig = VnextBattleConfig<"VNEXT_BATTLE_CONFIG">;
 
-export type VnextBattleConfigMasterfileEntry =
-	| VnextBattleConfigClientVnextBattleConfig
-	| VnextBattleConfigVnextBattleConfig;
+export type VnextBattleConfigMasterfileEntry = VnextBattleConfigClientVnextBattleConfig | VnextBattleConfigVnextBattleConfig;
 
 export type VnextBattleConfigTemplateID = VnextBattleConfigMasterfileEntry["templateId"];

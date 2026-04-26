@@ -1,7 +1,4 @@
-export interface BuddyLevelSettings<
-	TemplateID extends string = string,
-	TData extends BuddyLevelSettingsData = BuddyLevelSettingsData,
-> {
+export interface BuddyLevelSettings<TemplateID extends string = string, TData extends BuddyLevelSettingsData = BuddyLevelSettingsData> {
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;

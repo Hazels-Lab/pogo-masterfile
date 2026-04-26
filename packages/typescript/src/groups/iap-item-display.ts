@@ -1,7 +1,4 @@
-export interface IapItemDisplay<
-	TemplateID extends string = string,
-	TData extends IapItemDisplayData = IapItemDisplayData,
-> {
+export interface IapItemDisplay<TemplateID extends string = string, TData extends IapItemDisplayData = IapItemDisplayData> {
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;

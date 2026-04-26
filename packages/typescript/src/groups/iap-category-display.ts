@@ -1,7 +1,4 @@
-export interface IapCategoryDisplay<
-	TemplateID extends string = string,
-	TData extends IapCategoryDisplayData = IapCategoryDisplayData,
-> {
+export interface IapCategoryDisplay<TemplateID extends string = string, TData extends IapCategoryDisplayData = IapCategoryDisplayData> {
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;
