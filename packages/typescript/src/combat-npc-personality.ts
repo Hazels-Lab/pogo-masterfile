@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "combatNpcPersonality", 3 entries.
+
 export interface CombatNpcPersonality<
 	TemplateID extends string = string,
 	TData extends CombatNpcPersonalityData = CombatNpcPersonalityData,
@@ -14,10 +16,10 @@ export interface CombatNpcPersonality<
 export interface CombatNpcPersonalityData {
 	defensiveMaximumScore?: number;
 	defensiveMinimumScore?: number;
-	offensiveMaximumScore?: number;
-	offensiveMinimumScore?: number;
-	specialChance?: number;
-	superEffectiveChance?: number;
+	offensiveMaximumScore: number;
+	offensiveMinimumScore: number;
+	specialChance: number;
+	superEffectiveChance: number;
 }
 
 export type CombatNpcPersonalityEasy = CombatNpcPersonality<

@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "pokemonHomeEnergyCosts", 4 entries.
+
 export interface PokemonHomeEnergyCosts<
 	TemplateID extends string = string,
 	TData extends PokemonHomeEnergyCostsData = PokemonHomeEnergyCostsData,
@@ -10,11 +12,11 @@ export interface PokemonHomeEnergyCosts<
 }
 
 export interface PokemonHomeEnergyCostsData {
-	base?: number;
-	cp1001To2000?: number;
-	cp2001ToInf?: number;
-	pokemonClass?: string;
-	shiny?: number;
+	base: number;
+	cp1001To2000: number;
+	cp2001ToInf: number;
+	pokemonClass?: "POKEMON_CLASS_LEGENDARY" | "POKEMON_CLASS_MYTHIC" | "POKEMON_CLASS_ULTRA_BEAST";
+	shiny: number;
 }
 
 export type PokemonHomeEnergyCostsLegendary = PokemonHomeEnergyCosts<

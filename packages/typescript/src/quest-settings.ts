@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "questSettings", 3 entries.
+
 export interface QuestSettings<TemplateID extends string = string, TData extends QuestSettingsData = QuestSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -13,13 +15,13 @@ export interface QuestSettings<TemplateID extends string = string, TData extends
 }
 
 export interface QuestSettingsData {
-	dailyQuest?: {
+	dailyQuest: {
 		bonusMultiplier?: number;
 		streakBonusMultiplier?: number;
 	};
 }
 
-export type QuestSettingsCatchOfTheDay = QuestSettings<"QUEST_FIRST_CATCH_OF_THE_DAY">;
+export type QuestSettingsCatchOfTheDay = QuestSettings<"QUEST_FIRST_CATCH_OF_THE_DAY", Record<string, never>>;
 export type QuestSettingsPokestopOfTheDay = QuestSettings<
 	"QUEST_FIRST_POKESTOP_OF_THE_DAY",
 	{
@@ -29,7 +31,7 @@ export type QuestSettingsPokestopOfTheDay = QuestSettings<
 		};
 	}
 >;
-export type QuestSettingsRouteOfTheDay = QuestSettings<"QUEST_FIRST_ROUTE_OF_THE_DAY">;
+export type QuestSettingsRouteOfTheDay = QuestSettings<"QUEST_FIRST_ROUTE_OF_THE_DAY", Record<string, never>>;
 
 export type QuestSettingsMasterfileEntry = QuestSettingsCatchOfTheDay | QuestSettingsPokestopOfTheDay | QuestSettingsRouteOfTheDay;
 

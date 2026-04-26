@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "languageSettings", 3 entries.
+
 export interface LanguageSettings<TemplateID extends string = string, TData extends LanguageSettingsData = LanguageSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -9,7 +11,7 @@ export interface LanguageSettings<TemplateID extends string = string, TData exte
 }
 
 export interface LanguageSettingsData {
-	language?: string;
+	language: "Hindi" | "Indonesian" | "spanishlatinamerican";
 }
 
 export type LanguageSettingsHindi = LanguageSettings<

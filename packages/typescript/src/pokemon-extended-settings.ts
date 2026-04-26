@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", 2464 entries.
+
 export interface PokemonExtendedSettings<
 	TemplateID extends string = string,
 	TData extends PokemonExtendedSettingsData = PokemonExtendedSettingsData,
@@ -13,7 +15,7 @@ export interface PokemonExtendedSettingsData {
 	breadOverrides?: Array<{
 		averageHeightM?: number;
 		averageWeightKg?: number;
-		breadMode?: number | string;
+		breadMode?: number | "BREAD_DOUGH_MODE" | "BREAD_DOUGH_MODE_2" | "BREAD_MODE";
 		camera?: {
 			cylinderGroundM?: number;
 			cylinderHeightM: number;
@@ -67,17 +69,17 @@ export interface PokemonExtendedSettingsData {
 		};
 	}>;
 	form?: number | string;
-	sizeSettings?: {
+	sizeSettings: {
 		disablePokedexRecordDisplayForForms?: boolean;
-		mLowerBound?: number;
-		mUpperBound?: number;
+		mLowerBound: number;
+		mUpperBound: number;
 		xlScaleMultiplier?: number;
-		xlUpperBound?: number;
-		xsLowerBound?: number;
+		xlUpperBound: number;
+		xsLowerBound: number;
 		xsScaleMultiplier?: number;
 		xxlScaleMultiplier?: number;
-		xxlUpperBound?: number;
-		xxsLowerBound?: number;
+		xxlUpperBound: number;
+		xxsLowerBound: number;
 		xxsScaleMultiplier?: number;
 	};
 	tempEvoOverrides?: Array<{
@@ -89,9 +91,9 @@ export interface PokemonExtendedSettingsData {
 			xxlUpperBound: number;
 			xxsLowerBound: number;
 		};
-		tempEvoId: string;
+		tempEvoId: "TEMP_EVOLUTION_MEGA" | "TEMP_EVOLUTION_MEGA_X" | "TEMP_EVOLUTION_MEGA_Y" | "TEMP_EVOLUTION_PRIMAL";
 	}>;
-	uniqueId?: string;
+	uniqueId: string;
 }
 
 export type PokemonExtendedSettingsV0001PokemonBulbasaur = PokemonExtendedSettings<

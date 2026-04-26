@@ -5,6 +5,12 @@ import type { Group } from "./group.ts";
 import { groupEntries } from "./group.ts";
 
 describe("emitGroupFile", () => {
+	test("emits a deterministic header with group name and entry count", () => {
+		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
+		const output = emitGroupFile(group);
+		expect(output.startsWith(`// Generated from Pokémon GO masterfile — group "typeEffective", 2 entries.\n`)).toBe(true);
+	});
+
 	test("emits TData generic with invariants inlined in base body", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
 
@@ -21,13 +27,14 @@ describe("emitGroupFile", () => {
 		expect(output).toContain("accuracyChance: 1;"); // Kind 1 nested
 		expect(output).toContain("combatType: TemplateID;"); // Kind 2 nested deeply
 
-		// XData interface emitted with all-optional properties, no invariant fields:
+		// XData interface: fields in 100% of variants are required; invariant fields are stripped.
+		// Finite string sets become literal unions (cap-bounded) instead of widening to `string`.
 		expect(output).toContain("export interface TypeEffectiveData {");
-		expect(output).toContain("attackScalar?: [");
-		expect(output).toContain("effectGroup?: {");
-		expect(output).toContain("tags?: Array<string>;");
-		expect(output).toContain("typeCode?: string;");
-		expect(output).toContain("windows?: [");
+		expect(output).toContain("attackScalar: [");
+		expect(output).toContain("effectGroup: {");
+		expect(output).toContain(`tags: Array<"charged" | "fast">;`);
+		expect(output).toContain(`typeCode: "BUG" | "DARK";`);
+		expect(output).toContain("windows: [");
 		// Invariants should NOT appear in XData (they live in the base body):
 		expect(output).not.toContain("attackType?:");
 		expect(output).not.toContain("accuracyChance?:");
@@ -110,7 +117,12 @@ describe("emitGroupFile", () => {
 		expect(output).toContain("export interface PokemonSettings<");
 		expect(output).toContain("TData extends PokemonSettingsData = PokemonSettingsData,");
 		expect(output).toContain("export interface PokemonSettingsData {");
-		expect(output).toContain("forms?: Array<string>;");
+		// Both fixture entries have `forms` and `stats` → required.
+		// Finite string set "NORMAL"/"SHADOW" preserved as union after §3.
+		expect(output).toContain(`forms: Array<"NORMAL" | "SHADOW">;`);
+		expect(output).toContain("stats: {");
+		// `shadowBoost` is only on Bulbasaur → optional.
+		expect(output).toContain("shadowBoost?: null;");
 
 		// familyId is a Kind 1 constant ("FAMILY_BULBASAUR" across both entries) → base body
 		expect(output).toContain("pokemonSettings: TData & {");
@@ -155,10 +167,11 @@ describe("emitGroupFile", () => {
 
 		const output = emitGroupFile(group);
 
-		// XData: ids is a 1-tuple of bare strings (widened).
+		// XData: ids is a 1-tuple. Both variants have `ids` → required.
+		// String-literal union preserved across the tuple slot after §3.
 		expect(output).toContain("export interface TupleMirrorData {");
-		expect(output).toContain("ids?: [");
-		expect(output).toContain("string");
+		expect(output).toContain("ids: [");
+		expect(output).toContain(`"TUPLE_ONE" | "TUPLE_TWO"`);
 
 		// Per-variant: literal tuple.
 		expect(output).toContain(`"TUPLE_ONE"`);
@@ -191,9 +204,10 @@ describe("emitGroupFile", () => {
 		// XData interface name is the canonical form (no collision logic now —
 		// XData is the single named sibling, and per-variant aliases use the
 		// group's own name derivation which already avoids collision).
+		// Both variants have `bug` and `data` → required, with §3 literal unions.
 		expect(output).toContain("export interface NameCollisionData {");
-		expect(output).toContain("bug?: string;");
-		expect(output).toContain("data?: string;");
+		expect(output).toContain(`bug: "one" | "two";`);
+		expect(output).toContain(`data: "first" | "second";`);
 
 		// Per-variant alias for templateId "BUG":
 		expect(output).toContain("export type NameCollisionBug = NameCollision<");
@@ -231,9 +245,9 @@ describe("emitGroupFile", () => {
 
 		const output = emitGroupFile(group);
 
-		// XData preserves both paths:
-		expect(output).toContain("b?: string;");
-		expect(output).toContain(`"a.b"?: string;`);
+		// XData preserves both paths. Both variants have these → required, §3 literal unions.
+		expect(output).toContain(`b: "inner-one" | "inner-two";`);
+		expect(output).toContain(`"a.b": "direct-one" | "direct-two";`);
 
 		// Per-variant literals preserve the actual values:
 		expect(output).toContain(`"direct-one"`);
@@ -269,8 +283,8 @@ describe("emitGroupFile", () => {
 
 		const output = emitGroupFile(group);
 
-		// XData: nested Array<Array<string>>
-		expect(output).toContain("matrix?: Array<Array<string>>;");
+		// XData: nested Array<Array<...>>. Both variants have `matrix` → required, §3 literal union.
+		expect(output).toContain(`matrix: Array<Array<"A" | "B">>;`);
 
 		// Per-variant: literal 2D array. MATRIX_ONE has [["A"], ["B", "A"]]:
 		const oneStart = output.indexOf("export type MatrixSettingsOne = MatrixSettings<");
@@ -302,9 +316,10 @@ describe("emitGroupFile", () => {
 		expect(output).toContain("allConstant: TData & {");
 		expect(output).toContain("fixed: 1;");
 
-		// Both variants elide the TData arg:
-		expect(output).toContain(`export type AllConstantA = AllConstant<"A">;`);
-		expect(output).toContain(`export type AllConstantB = AllConstant<"B">;`);
+		// Both variants pass an explicit Record<string, never> to close the shape
+		// (forbid stray fields), rather than defaulting to the wide XData fallback.
+		expect(output).toContain(`export type AllConstantA = AllConstant<"A", Record<string, never>>;`);
+		expect(output).toContain(`export type AllConstantB = AllConstant<"B", Record<string, never>>;`);
 	});
 
 	test("drops the intersection when there are no invariants", () => {
@@ -328,13 +343,18 @@ describe("emitGroupFile", () => {
 		expect(output).toContain("varyAll: TData;");
 		expect(output).not.toContain("varyAll: TData &");
 
-		// XData has both fields:
-		expect(output).toContain("label?: string;");
-		expect(output).toContain("count?: number;");
+		// XData has both fields. Both variants have them → required, §3 literal union for strings.
+		expect(output).toContain(`label: "first" | "second";`);
+		expect(output).toContain("count: number;");
 	});
 });
 
 describe("emitMiscFile", () => {
+	test("emits a deterministic header for the misc file", () => {
+		const output = emitMiscFile([]);
+		expect(output.startsWith(`// Generated from Pokémon GO masterfile — singleton entries (no shared discriminator).\n`)).toBe(true);
+	});
+
 	test("emits a concrete interface (not generic) per singleton group, sorted by interface name", () => {
 		const singletons: Group[] = [
 			{
@@ -363,7 +383,7 @@ describe("emitMiscFile", () => {
 		const output = emitMiscFile(singletons);
 		expect(output).toContain("export interface AccessibilitySettings {");
 		expect(output).toContain('templateId: "ACCESSIBILITY_CLIENT_SETTINGS";');
-		expect(output).toContain("accessibilitySettings: {};");
+		expect(output).toContain("accessibilitySettings: Record<string, never>;");
 		expect(output).toContain("export interface XyzSettings {");
 
 		// Alphabetical order:
@@ -489,6 +509,11 @@ describe("kebabCase", () => {
 });
 
 describe("emitIndexFile", () => {
+	test("emits a deterministic header for the index file", () => {
+		const output = emitIndexFile([]);
+		expect(output.startsWith(`// Generated from Pokémon GO masterfile — index of all groups.\n`)).toBe(true);
+	});
+
 	test("re-exports groups (kebab-case filenames) + misc, defines MasterfileEntry union + MasterfileTemplateID", () => {
 		const multiEntryGroupNames = ["typeEffective", "pokemonSettings"];
 		const output = emitIndexFile(multiEntryGroupNames);
@@ -510,6 +535,9 @@ describe("emitIndexFile", () => {
 		expect(output).toContain("| PokemonSettingsMasterfileEntry");
 		expect(output).toContain("| TypeEffectiveMasterfileEntry");
 		expect(output).toContain(`export type MasterfileTemplateID = MasterfileEntry["templateId"];`);
+		// Lookup mapped type — Extract narrows the union by templateId.
+		expect(output).toContain("export type MasterfileEntryByTemplateID<T extends MasterfileTemplateID> =");
+		expect(output).toContain(`Extract<MasterfileEntry, { templateId: T }>`);
 	});
 
 	test("imports MiscMasterfileEntry and includes it at the end of the MasterfileEntry union", () => {

@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "badgeSettings", 868 entries.
+
 export interface BadgeSettings<TemplateID extends string = string, TData extends BadgeSettingsData = BadgeSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -7,22 +9,22 @@ export interface BadgeSettings<TemplateID extends string = string, TData extends
 }
 
 export interface BadgeSettingsData {
-	badgeRank?: number;
-	badgeType?: number | string;
+	badgeRank: number;
+	badgeType: number | string;
 	captureReward?: [
 		Record<string, never>,
 		Record<string, never>,
 		Record<string, never>,
 		Record<string, never>,
 		{
-			rewardTypes?: [string];
+			rewardTypes?: ["POKEMON_ENCOUNTER"];
 		},
 	];
 	eventBadge?: boolean;
 	eventBadgeSettings?: {
-		obEventBadgeSettingsNumber6?: number;
+		obEventBadgeSettingsNumber6: number;
 	};
-	targets?: Array<number>;
+	targets: Array<number>;
 }
 
 export type BadgeSettings7DayStreaks = BadgeSettings<

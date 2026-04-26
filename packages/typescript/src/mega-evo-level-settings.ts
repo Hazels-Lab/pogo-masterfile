@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", 103 entries.
+
 export interface MegaEvoLevelSettings<
 	TemplateID extends string = string,
 	TData extends MegaEvoLevelSettingsData = MegaEvoLevelSettingsData,
@@ -22,21 +24,45 @@ export interface MegaEvoLevelSettings<
 }
 
 export interface MegaEvoLevelSettingsData {
-	cooldown?: {
-		bypassCostInitial?: number;
-		durationMs?: string;
+	cooldown: {
+		bypassCostInitial: number;
+		durationMs: "1209600000" | "259200000" | "432000000" | "604800000" | "86400000";
 	};
-	effects?: {
-		sameTypeExtraCatchCandy?: number;
+	effects: {
+		sameTypeExtraCatchCandy: number;
 		sameTypeExtraCatchCandyXlChance?: number;
 		sameTypeExtraCatchXp?: number;
 		selfCpBoostAdditionalLevel?: number;
 	};
-	ftueExpirationTimestamp?: string;
+	ftueExpirationTimestamp?: "1775001600000";
 	level?: number;
 	megaEnergyCostToUnlock?: number;
-	pokemonId?: string;
-	progression?: {
+	pokemonId?:
+		| "ALTARIA"
+		| "BANETTE"
+		| "BEEDRILL"
+		| "DIANCIE"
+		| "DRAGONITE"
+		| "GARCHOMP"
+		| "GROUDON"
+		| "GYARADOS"
+		| "HOUNDOOM"
+		| "KYOGRE"
+		| "LATIAS"
+		| "LATIOS"
+		| "MALAMAR"
+		| "MANECTRIC"
+		| "MEDICHAM"
+		| "METAGROSS"
+		| "MEWTWO"
+		| "PIDGEOT"
+		| "RAYQUAZA"
+		| "SABLEYE"
+		| "SALAMENCE"
+		| "SLOWBRO"
+		| "TYRANITAR"
+		| "VICTREEBEL";
+	progression: {
 		pointsRequired?: number;
 	};
 }

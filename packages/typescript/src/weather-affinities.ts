@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "weatherAffinities", 7 entries.
+
 export interface WeatherAffinities<TemplateID extends string = string, TData extends WeatherAffinitiesData = WeatherAffinitiesData> {
 	templateId: TemplateID;
 	data: {
@@ -7,8 +9,27 @@ export interface WeatherAffinities<TemplateID extends string = string, TData ext
 }
 
 export interface WeatherAffinitiesData {
-	pokemonType?: Array<string>;
-	weatherCondition?: string;
+	pokemonType: Array<
+		| "POKEMON_TYPE_BUG"
+		| "POKEMON_TYPE_DARK"
+		| "POKEMON_TYPE_DRAGON"
+		| "POKEMON_TYPE_ELECTRIC"
+		| "POKEMON_TYPE_FAIRY"
+		| "POKEMON_TYPE_FIGHTING"
+		| "POKEMON_TYPE_FIRE"
+		| "POKEMON_TYPE_FLYING"
+		| "POKEMON_TYPE_GHOST"
+		| "POKEMON_TYPE_GRASS"
+		| "POKEMON_TYPE_GROUND"
+		| "POKEMON_TYPE_ICE"
+		| "POKEMON_TYPE_NORMAL"
+		| "POKEMON_TYPE_POISON"
+		| "POKEMON_TYPE_PSYCHIC"
+		| "POKEMON_TYPE_ROCK"
+		| "POKEMON_TYPE_STEEL"
+		| "POKEMON_TYPE_WATER"
+	>;
+	weatherCondition: "CLEAR" | "FOG" | "OVERCAST" | "PARTLY_CLOUDY" | "RAINY" | "SNOW" | "WINDY";
 }
 
 export type WeatherAffinitiesClear = WeatherAffinities<

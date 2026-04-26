@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "vsSeekerLoot", 48 entries.
+
 export interface VsSeekerLoot<TemplateID extends string = string, TData extends VsSeekerLootData = VsSeekerLootData> {
 	templateId: TemplateID;
 	data: {
@@ -7,12 +9,12 @@ export interface VsSeekerLoot<TemplateID extends string = string, TData extends 
 }
 
 export interface VsSeekerLootData {
-	rankLevel?: number;
-	reward?: [
+	rankLevel: number;
+	reward: [
 		{
 			item?: {
 				count: number;
-				item?: string;
+				item?: "ITEM_RARE_CANDY";
 				stardust?: boolean;
 			};
 			itemRankingLootTableCount?: number;
@@ -21,7 +23,7 @@ export interface VsSeekerLootData {
 		{
 			item?: {
 				count: number;
-				item?: string;
+				item?: "ITEM_RARE_CANDY";
 				stardust?: boolean;
 			};
 			itemRankingLootTableCount?: number;
@@ -30,7 +32,7 @@ export interface VsSeekerLootData {
 		{
 			item?: {
 				count: number;
-				item?: string;
+				item?: "ITEM_RARE_CANDY";
 				stardust?: boolean;
 			};
 			itemRankingLootTableCount?: number;
@@ -39,7 +41,7 @@ export interface VsSeekerLootData {
 		{
 			item?: {
 				count: number;
-				item?: string;
+				item?: "ITEM_RARE_CANDY";
 				stardust?: boolean;
 			};
 			itemRankingLootTableCount?: number;
@@ -48,14 +50,14 @@ export interface VsSeekerLootData {
 		{
 			item?: {
 				count: number;
-				item?: string;
+				item?: "ITEM_RARE_CANDY";
 				stardust?: boolean;
 			};
 			itemRankingLootTableCount?: number;
 			pokemonReward?: boolean;
 		},
 	];
-	rewardTrack?: string;
+	rewardTrack?: "PREMIUM";
 }
 
 export type VsSeekerLoot10Free = VsSeekerLoot<

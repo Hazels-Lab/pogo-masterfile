@@ -21,13 +21,43 @@ export function aliasSuffix(templateId: string, prefix: string): string {
 	return parts.map((w) => w[0]!.toUpperCase() + w.slice(1).toLowerCase()).join("");
 }
 
-export function deriveGroupAliases(templateIds: string[]): Map<string, string> {
+/**
+ * Strips a trailing PascalCase token sequence from `suffix` if it matches `gName`
+ * exactly at token boundaries.
+ *
+ * Why: per-variant alias names compose as `${gName}${suffix}`. When templateIds
+ * end with the discriminator (e.g. `_ROLL_BACK` for the `rollBack` group), the
+ * suffix carries a redundant copy of the group name and the final type name
+ * doubles up: `RollBackAndroidSensorsRollBack` vs the desired `RollBackAndroidSensors`.
+ *
+ * Boundary discipline: the strip must be aligned to PascalCase token boundaries
+ * — `XSettings` against `gName = "MoveSettings"` must NOT strip (the trailing
+ * "Settings" is only a partial match, not the whole group name). Stripping that
+ * would lose information.
+ *
+ * Empty-result fallback: when stripping the entire suffix would leave nothing,
+ * return the original (the name would otherwise vanish or collide).
+ *
+ * Examples (also covered in stripGroupNameTail tests):
+ *   stripGroupNameTail("AndroidSensorsRollBack", "RollBack")  → "AndroidSensors"
+ *   stripGroupNameTail("Bug",                    "TypeEffective") → "Bug"
+ *   stripGroupNameTail("XSettings",              "MoveSettings") → "XSettings"  (partial match)
+ *   stripGroupNameTail("RollBack",               "RollBack")     → "RollBack"   (would empty)
+ *   stripGroupNameTail("FooBar",                 "Bar")          → "Foo"
+ */
+export function stripGroupNameTail(suffix: string, gName: string): string {
+	if (gName === "" || !suffix.endsWith(gName)) return suffix;
+	const head = suffix.slice(0, suffix.length - gName.length);
+	return head === "" ? suffix : head;
+}
+
+export function deriveGroupAliases(templateIds: string[], gName: string): Map<string, string> {
 	const prefix = sharedPrefix(templateIds);
 	const result = new Map<string, string>();
 	const suffixToIds = new Map<string, string[]>();
 
 	for (const id of templateIds) {
-		const suffix = aliasSuffix(id, prefix);
+		const suffix = stripGroupNameTail(aliasSuffix(id, prefix), gName);
 		const bucket = suffixToIds.get(suffix);
 		if (bucket) bucket.push(id);
 		else suffixToIds.set(suffix, [id]);
@@ -41,7 +71,7 @@ export function deriveGroupAliases(templateIds: string[]): Map<string, string> {
 		// Collision: re-derive from whole templateId.
 		const reDerived = new Map<string, string[]>();
 		for (const id of ids) {
-			const s = aliasSuffix(id, "");
+			const s = stripGroupNameTail(aliasSuffix(id, ""), gName);
 			const bucket = reDerived.get(s);
 			if (bucket) bucket.push(id);
 			else reDerived.set(s, [id]);

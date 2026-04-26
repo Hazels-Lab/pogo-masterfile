@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "settingsOverrideRule", 250 entries.
+
 export interface SettingsOverrideRule<
 	TemplateID extends string = string,
 	TData extends SettingsOverrideRuleData = SettingsOverrideRuleData,
@@ -10,15 +12,15 @@ export interface SettingsOverrideRule<
 }
 
 export interface SettingsOverrideRuleData {
-	fusedDepthEnabled?: string;
-	meshingEnabled?: string;
-	occlusionDefaultOn?: string;
-	occlusionEnabled?: string;
-	ruleType?: number | string;
+	fusedDepthEnabled?: "TRUE";
+	meshingEnabled?: "FALSE" | "TRUE";
+	occlusionDefaultOn?: "FALSE";
+	occlusionEnabled: "FALSE" | "TRUE";
+	ruleType: number | "ALL" | "DEVICE_MODEL" | "DEVICE_MODEL_CONTAINS" | "PLATFORM";
 	ruleValue?: string;
-	semanticsEnabled?: string;
-	sortOrder?: number;
-	vpsEnabled?: string;
+	semanticsEnabled: "FALSE" | "TRUE";
+	sortOrder: number;
+	vpsEnabled?: "FALSE" | "TRUE";
 }
 
 export type SettingsOverrideRuleAllowAsusasusI006d = SettingsOverrideRule<

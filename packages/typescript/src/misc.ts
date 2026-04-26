@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — singleton entries (no shared discriminator).
+
 export interface AccessibilitySettings {
 	templateId: "ACCESSIBILITY_CLIENT_SETTINGS";
 	data: {

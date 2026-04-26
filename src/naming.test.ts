@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { aliasSuffix, deriveGroupAliases, groupName, sharedPrefix } from "./naming.ts";
+import { aliasSuffix, deriveGroupAliases, groupName, sharedPrefix, stripGroupNameTail } from "./naming.ts";
 
 describe("groupName", () => {
 	test("PascalCases a camelCase discriminator", () => {
@@ -56,25 +56,73 @@ describe("aliasSuffix", () => {
 	});
 });
 
+describe("stripGroupNameTail", () => {
+	test("strips a trailing PascalCase token sequence equal to the group name", () => {
+		expect(stripGroupNameTail("AndroidSensorsRollBack", "RollBack")).toBe("AndroidSensors");
+		expect(stripGroupNameTail("BidirectionalFpWeeklyChallengeRewardRollBack", "RollBack")).toBe("BidirectionalFpWeeklyChallengeReward");
+	});
+
+	test("does not strip when the tail does not match the group name", () => {
+		expect(stripGroupNameTail("Bug", "TypeEffective")).toBe("Bug");
+		expect(stripGroupNameTail("AndroidSensors", "RollBack")).toBe("AndroidSensors");
+	});
+
+	test("does not strip a partial group-name match (must be at PascalCase boundary)", () => {
+		// "XSettings" ends with "Settings" but not the full "MoveSettings" group.
+		// Stripping just "Settings" would lose information.
+		expect(stripGroupNameTail("XSettings", "MoveSettings")).toBe("XSettings");
+	});
+
+	test("does not strip when the trailing tokens only partially overlap the group name", () => {
+		// "MoveBack" ends in "Back" but the group name is "RollBack" (two tokens).
+		// "Move" is not "Roll", so no strip.
+		expect(stripGroupNameTail("MoveBack", "RollBack")).toBe("MoveBack");
+	});
+
+	test("returns the original suffix when stripping would leave it empty", () => {
+		expect(stripGroupNameTail("RollBack", "RollBack")).toBe("RollBack");
+	});
+
+	test("strips when group name is a single token", () => {
+		expect(stripGroupNameTail("FooBar", "Bar")).toBe("Foo");
+	});
+
+	test("returns the suffix unchanged when group name is empty", () => {
+		expect(stripGroupNameTail("AndroidSensorsRollBack", "")).toBe("AndroidSensorsRollBack");
+	});
+});
+
 describe("deriveGroupAliases", () => {
 	test("returns a map from templateId to clean alias suffix when no collisions", () => {
-		const map = deriveGroupAliases(["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK"]);
+		const map = deriveGroupAliases(["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK"], "TypeEffective");
 		expect(map.get("POKEMON_TYPE_BUG")).toBe("Bug");
 		expect(map.get("POKEMON_TYPE_DARK")).toBe("Dark");
 	});
 
 	test("collision fallback does not disturb non-colliding entries", () => {
-		const map = deriveGroupAliases(["PREFIX_ALPHA", "PREFIX_BETA", "PREFIX_GAMMA"]);
+		const map = deriveGroupAliases(["PREFIX_ALPHA", "PREFIX_BETA", "PREFIX_GAMMA"], "PrefixGroup");
 		expect(map.get("PREFIX_ALPHA")).toBe("Alpha");
 		expect(map.get("PREFIX_BETA")).toBe("Beta");
 		expect(map.get("PREFIX_GAMMA")).toBe("Gamma");
 	});
 
 	test("breaks further ties with a numeric suffix in lexicographic order", () => {
-		const map = deriveGroupAliases(["COLLIDE_FOO", "COLLIDE_bar", "COLLIDE_foo"]);
+		const map = deriveGroupAliases(["COLLIDE_FOO", "COLLIDE_bar", "COLLIDE_foo"], "CollisionTest");
 		expect(map.get("COLLIDE_bar")).toBe("Bar"); // no collision → clean suffix
 		// COLLIDE_FOO vs COLLIDE_foo → both yield CollideFoo; tie-break lexicographically.
 		expect(map.get("COLLIDE_FOO")).toBe("CollideFoo0");
 		expect(map.get("COLLIDE_foo")).toBe("CollideFoo1");
+	});
+
+	test("strips redundant trailing group name from each suffix", () => {
+		const map = deriveGroupAliases(["ANDROID_SENSORS_ROLL_BACK", "BIDIRECTIONAL_FP_WEEKLY_CHALLENGE_REWARD_ROLL_BACK"], "RollBack");
+		expect(map.get("ANDROID_SENSORS_ROLL_BACK")).toBe("AndroidSensors");
+		expect(map.get("BIDIRECTIONAL_FP_WEEKLY_CHALLENGE_REWARD_ROLL_BACK")).toBe("BidirectionalFpWeeklyChallengeReward");
+	});
+
+	test("falls back to the original suffix when stripping would empty it", () => {
+		const map = deriveGroupAliases(["ROLL_BACK"], "RollBack");
+		// Single id → no shared prefix → suffix is "RollBack" → strip would empty → fallback.
+		expect(map.get("ROLL_BACK")).toBe("RollBack");
 	});
 });

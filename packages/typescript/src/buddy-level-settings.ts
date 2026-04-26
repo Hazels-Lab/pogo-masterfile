@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "buddyLevelSettings", 5 entries.
+
 export interface BuddyLevelSettings<TemplateID extends string = string, TData extends BuddyLevelSettingsData = BuddyLevelSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -10,10 +12,20 @@ export interface BuddyLevelSettings<TemplateID extends string = string, TData ex
 
 export interface BuddyLevelSettingsData {
 	minNonCumulativePointsRequired?: number;
-	unlockedTraits?: Array<string>;
+	unlockedTraits?: Array<
+		| "BEST_BUDDY_ASSET"
+		| "CP_BOOST"
+		| "EMOTION_INDICATOR"
+		| "ENCOUNTER_CAMEO"
+		| "FIND_ATTRACTIVE_POIS"
+		| "MAP_DEPLOY"
+		| "PICK_UP_CONSUMABLES"
+		| "PICK_UP_SOUVENIRS"
+		| "TRAINING"
+	>;
 }
 
-export type BuddyLevelSettings0 = BuddyLevelSettings<"BUDDY_LEVEL_0">;
+export type BuddyLevelSettings0 = BuddyLevelSettings<"BUDDY_LEVEL_0", Record<string, never>>;
 export type BuddyLevelSettings1 = BuddyLevelSettings<
 	"BUDDY_LEVEL_1",
 	{

@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "nonCombatMoveSettings", 9 entries.
+
 export interface NonCombatMoveSettings<
 	TemplateID extends string = string,
 	TData extends NonCombatMoveSettingsData = NonCombatMoveSettingsData,
@@ -14,50 +16,68 @@ export interface NonCombatMoveSettings<
 }
 
 export interface NonCombatMoveSettingsData {
-	bonusEffect?: {
+	bonusEffect: {
 		attackDefenseBonus?: {
-			attributes?: [
+			attributes: [
 				{
 					attackMultiplier?: number;
-					combatTypes: [string];
+					combatTypes: ["COMBAT_TYPE_RAID"];
 					defenseMultiplier?: number;
 				},
 				{
 					attackMultiplier?: number;
-					combatTypes: [string, string];
+					combatTypes: ["COMBAT_TYPE_DMAX", "COMBAT_TYPE_GMAX"];
 					defenseMultiplier?: number;
 				},
 			];
 		};
 		dayNightBonus?: {
-			incenseItem?: string;
+			incenseItem: "ITEM_INCENSE_DAY_BONUS" | "ITEM_INCENSE_NIGHT_BONUS";
 		};
 		maxMoveBonus?: {
-			excludedPokedexIds?: [string, string];
-			numAllMaxMoveLevelIncrease?: number;
+			excludedPokedexIds: ["ZACIAN", "ZAMAZENTA"];
+			numAllMaxMoveLevelIncrease: number;
 		};
 		slowFreezeBonus?: {
-			catchCircleOuterTimeScaleOverride?: number;
-			catchCircleSpeedChangeThreshold?: number;
-			catchCircleTimeScaleOverride?: number;
-			catchRateIncreaseMultiplier?: number;
+			catchCircleOuterTimeScaleOverride: number;
+			catchCircleSpeedChangeThreshold: number;
+			catchCircleTimeScaleOverride: number;
+			catchRateIncreaseMultiplier: number;
 		};
 		spaceBonus?: {
-			encounterRangeMeters?: number;
-			pokemonVisibleRangeMeters?: number;
-			serverAllowableEncounterRangeMeters?: number;
+			encounterRangeMeters: number;
+			pokemonVisibleRangeMeters: number;
+			serverAllowableEncounterRangeMeters: number;
 		};
 		timeBonus?: {
-			affectedItems?: [string, string, string, string];
+			affectedItems: ["ITEM_INCENSE_ORDINARY", "ITEM_INCENSE_DAILY_ADVENTURE", "ITEM_STAR_PIECE", "ITEM_LUCKY_EGG"];
 		};
 	};
-	bonusType?: string;
-	cost?: {
-		candyCost?: number;
-		stardustCost?: number;
+	bonusType:
+		| "ATTACK_BONUS"
+		| "DAY_BONUS"
+		| "DEFENSE_BONUS"
+		| "FREEZE_BONUS"
+		| "MAX_MOVE_BONUS"
+		| "NIGHT_BONUS"
+		| "SLOW_BONUS"
+		| "SPACE_BONUS"
+		| "TIME_BONUS";
+	cost: {
+		candyCost: number;
+		stardustCost: number;
 	};
-	durationMs?: string;
-	uniqueId?: string;
+	durationMs: "360000" | "600000";
+	uniqueId:
+		| "BEHEMOTH_BASH"
+		| "BEHEMOTH_BLADE"
+		| "DYNAMAX_CANNON"
+		| "FREEZE_SHOCK"
+		| "ICE_BURN"
+		| "MOONGEIST_BEAM"
+		| "ROAR_OF_TIME"
+		| "SPACIAL_REND"
+		| "SUNSTEEL_STRIKE";
 }
 
 export type NonCombatMoveSettingsV0388MoveSpacialRend = NonCombatMoveSettings<

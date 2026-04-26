@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "tappableSettings", 5 entries.
+
 export interface TappableSettings<TemplateID extends string = string, TData extends TappableSettingsData = TappableSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -14,8 +16,8 @@ export interface TappableSettingsData {
 	movementRespawnThresholdMeters?: number;
 	removeWhenTapped?: boolean;
 	spawnAngleDegrees?: number;
-	tappableAssetKey?: string;
-	type?: string;
+	tappableAssetKey?: "TAPPABLE_TYPE_HAT" | "TAPPABLE_TYPE_MAPLE" | "TAPPABLE_TYPE_POKEBALL";
+	type?: "TAPPABLE_TYPE_BREAKFAST";
 }
 
 export type TappableSettingsSettings = TappableSettings<

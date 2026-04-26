@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "combatRankingProtoSettings", 21 entries.
+
 export interface CombatRankingProtoSettings<
 	TemplateID extends string = string,
 	TData extends CombatRankingProtoSettingsData = CombatRankingProtoSettingsData,
@@ -15,9 +17,9 @@ export interface CombatRankingProtoSettings<
 }
 
 export interface CombatRankingProtoSettingsData {
-	minRankToDisplayRating?: number;
+	minRankToDisplayRating: number;
 	minRatingRequired?: number;
-	rankLevel?: Array<{
+	rankLevel: Array<{
 		additionalTotalBattlesRequired?: number;
 		additionalWinsRequired?: number;
 		minRatingRequired?: number;

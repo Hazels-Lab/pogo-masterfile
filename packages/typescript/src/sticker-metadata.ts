@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "stickerMetadata", 600 entries.
+
 export interface StickerMetadata<TemplateID extends string = string, TData extends StickerMetadataData = StickerMetadataData> {
 	templateId: TemplateID;
 	data: {
@@ -10,7 +12,7 @@ export interface StickerMetadata<TemplateID extends string = string, TData exten
 }
 
 export interface StickerMetadataData {
-	category?: Array<string>;
+	category: Array<"24_7" | "Characters" | "Decoration" | "Messages" | "Misc" | "Pokemon">;
 	pokemonId?: string;
 	regionId?: number;
 	releaseDate?: number;

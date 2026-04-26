@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", 1636 entries.
+
 export interface AvatarItemDisplay<TemplateID extends string = string, TData extends AvatarItemDisplayData = AvatarItemDisplayData> {
 	templateId: TemplateID;
 	data: {
@@ -8,7 +10,7 @@ export interface AvatarItemDisplay<TemplateID extends string = string, TData ext
 
 export interface AvatarItemDisplayData {
 	displayStringId?: string;
-	iconAddress?: string;
+	iconAddress: string;
 }
 
 export type AvatarItemDisplayMBackpackEggbackpack0 = AvatarItemDisplay<

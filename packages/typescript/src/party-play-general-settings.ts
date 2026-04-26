@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "partyPlayGeneralSettings", 2 entries.
+
 export interface PartyPlayGeneralSettings<
 	TemplateID extends string = string,
 	TData extends PartyPlayGeneralSettingsData = PartyPlayGeneralSettingsData,
@@ -15,7 +17,7 @@ export interface PartyPlayGeneralSettings<
 
 export interface PartyPlayGeneralSettingsData {
 	complianceZonesEnabled?: boolean;
-	creationToStartTimeoutMs?: string;
+	creationToStartTimeoutMs?: "600000";
 	enabledFriendStatusIncrease?: boolean;
 	enablePartyRaidInformation?: boolean;
 	inviteExpirationMs?: number;
@@ -23,48 +25,48 @@ export interface PartyPlayGeneralSettingsData {
 	maxInvitesPerPlayer?: number;
 	maxPartySize?: number;
 	maxStackedEncounterReward?: number;
-	minPlayerLevel?: number;
+	minPlayerLevel: number;
 	notificationMilestones?: [number, number, number, number];
 	partyCatchTagsEnabled?: boolean;
-	partyExpiryDurationMs?: string;
+	partyExpiryDurationMs?: "10800000";
 	partyExpiryWarningMinutes?: number;
 	partyIapBoostsEnabled?: boolean;
 	partyNewQuestNotificationV2Enabled?: boolean;
 	partyQuestEncounterRewardEnabled?: boolean;
-	partyRewardGracePeriodMs?: string;
+	partyRewardGracePeriodMs?: "604800000";
 	partySchedulingSettings?: {
-		recurringChallengeSchedule?: {
-			dayAndTimeEndTime?: {
-				dayOfWeek?: number;
-				hourOfDay?: number;
+		recurringChallengeSchedule: {
+			dayAndTimeEndTime: {
+				dayOfWeek: number;
+				hourOfDay: number;
 			};
-			dayAndTimeStartTime?: {
-				dayOfWeek?: number;
-				hourOfDay?: number;
+			dayAndTimeStartTime: {
+				dayOfWeek: number;
+				hourOfDay: number;
 			};
-			maxNumChallengePerCycle?: number;
-			nearEndNotification?: {
-				avalibleWindowHours?: number;
-				enabled?: boolean;
-				isLocal?: boolean;
-				time?: {
-					dayOfWeek?: number;
-					hourOfDay?: number;
+			maxNumChallengePerCycle: number;
+			nearEndNotification: {
+				avalibleWindowHours: number;
+				enabled: boolean;
+				isLocal: boolean;
+				time: {
+					dayOfWeek: number;
+					hourOfDay: number;
 				};
 			};
-			startNotification?: {
-				avalibleWindowHours?: number;
-				enabled?: boolean;
-				isLocal?: boolean;
-				time?: {
-					dayOfWeek?: number;
-					hourOfDay?: number;
+			startNotification: {
+				avalibleWindowHours: number;
+				enabled: boolean;
+				isLocal: boolean;
+				time: {
+					dayOfWeek: number;
+					hourOfDay: number;
 				};
 			};
-			timezoneId?: string;
+			timezoneId: "UTC";
 		};
 	};
-	pgDeliveryMechanic?: string;
+	pgDeliveryMechanic?: "POLLING_BIT";
 	restartPartyRejoinPromptEnabled?: boolean;
 	sendInviteEnabled?: boolean;
 }

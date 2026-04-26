@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "pokemonUpgrades", 2 entries.
+
 export interface PokemonUpgrades<TemplateID extends string = string, TData extends PokemonUpgradesData = PokemonUpgradesData> {
 	templateId: TemplateID;
 	data: {
@@ -69,7 +71,7 @@ export interface PokemonUpgrades<TemplateID extends string = string, TData exten
 }
 
 export interface PokemonUpgradesData {
-	candyCost?: [
+	candyCost: [
 		number,
 		number,
 		number,
@@ -121,7 +123,7 @@ export interface PokemonUpgradesData {
 		number,
 		number,
 	];
-	xlCandyCost?: [number, number, number, number, number, number, number, number, number, number];
+	xlCandyCost: [number, number, number, number, number, number, number, number, number, number];
 }
 
 export type PokemonUpgradesOverrideSettingsV0890PokemonEternatus = PokemonUpgrades<

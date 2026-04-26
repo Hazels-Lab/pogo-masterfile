@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "featureGate", 13 entries.
+
 export interface FeatureGate<TemplateID extends string = string, TData extends FeatureGateData = FeatureGateData> {
 	templateId: TemplateID;
 	data: {
@@ -9,69 +11,78 @@ export interface FeatureGate<TemplateID extends string = string, TData extends F
 }
 
 export interface FeatureGateData {
-	status?: number;
+	status: number;
 	subFeatureGateList?: Array<{
-		name: string;
+		name:
+			| "MEGA_2026_FTUE_SUB_FEATURE_GATE"
+			| "MEGA_CP_BOOST_ENABLED_SUB_FEATURE_GATE"
+			| "MEGA_EVOLVE_BUTTON_SUB_FEATURE_GATE"
+			| "MEGA_HUD_SUB_FEATURE_GATE"
+			| "MEGA_HUD_TIMER_SUB_FEATURE_GATE"
+			| "MEGA_LEVEL_4_ENABLED_SUB_FEATURE_GATE"
+			| "MEGA_LEVELS_TUTORIAL_SUB_FEATURE_GATE"
+			| "PVP"
+			| "REMOTE_NC_HELP_TEXT_SUB_FEATURE_GATE";
 		rolloutPercentage: number;
 		status: number;
 	}>;
 }
 
-export type FeatureGateAdminGmNiaOpsOnlyFilterAmsFeatureGate = FeatureGate<
+export type FeatureGateAdminGmNiaOpsOnlyFilterAms = FeatureGate<
 	"ADMIN_GM_NIA_OPS_ONLY_FILTER_AMS_FEATURE_GATE",
 	{
 		status: 1;
 	}
 >;
-export type FeatureGateAmsFeatureGate = FeatureGate<
+export type FeatureGateAms = FeatureGate<
 	"AMS_FEATURE_GATE",
 	{
 		status: 24;
 	}
 >;
-export type FeatureGateAmsFrontendFeatureGate = FeatureGate<
+export type FeatureGateAmsFrontend = FeatureGate<
 	"AMS_FRONTEND_FEATURE_GATE",
 	{
 		status: 1;
 	}
 >;
-export type FeatureGateDayNightPoiFeatureGate = FeatureGate<
+export type FeatureGateDayNightPoi = FeatureGate<
 	"DAY_NIGHT_POI_FEATURE_GATE",
 	{
 		status: 1827323905;
 	}
 >;
-export type FeatureGateEnablePvpChallengeSpannerFeatureGate = FeatureGate<
+export type FeatureGateEnablePvpChallengeSpanner = FeatureGate<
 	"ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE",
 	{
 		status: 1;
 	}
 >;
-export type FeatureGateEventListFeatureGate = FeatureGate<
+export type FeatureGateEventList = FeatureGate<
 	"EVENT_LIST_FEATURE_GATE",
 	{
 		status: 1;
 	}
 >;
-export type FeatureGateEventPassBonusRanksFeatureGate = FeatureGate<
+export type FeatureGateEventPassBonusRanks = FeatureGate<
 	"EVENT_PASS_BONUS_RANKS_FEATURE_GATE",
 	{
 		status: 1;
 	}
 >;
-export type FeatureGateEventPassMilestoneRewardsFeatureGate = FeatureGate<
+export type FeatureGateEventPassMilestoneRewards = FeatureGate<
 	"EVENT_PASS_MILESTONE_REWARDS_FEATURE_GATE",
 	{
 		status: 1;
 	}
 >;
-export type FeatureGateHealToastFeatureGate = FeatureGate<
+export type FeatureGateHealToast = FeatureGate<
 	"HEAL_TOAST_FEATURE_GATE",
 	{
 		status: 41414141;
 	}
 >;
-export type FeatureGateMega2026FeatureGate = FeatureGate<
+export type FeatureGateMega2026 = FeatureGate<
 	"MEGA_2026_FEATURE_GATE",
 	{
 		status: 216426293;
@@ -119,19 +130,19 @@ export type FeatureGateMega2026FeatureGate = FeatureGate<
 		];
 	}
 >;
-export type FeatureGateStoreRefreshFeatureGate = FeatureGate<
+export type FeatureGateStoreRefresh = FeatureGate<
 	"STORE_REFRESH_FEATURE_GATE",
 	{
 		status: 87970808;
 	}
 >;
-export type FeatureGateUpdateTicketsStringFeatureGate = FeatureGate<
+export type FeatureGateUpdateTicketsString = FeatureGate<
 	"UPDATE_TICKETS_STRING_FEATURE_GATE",
 	{
 		status: 29825861;
 	}
 >;
-export type FeatureGateVnextPreResponseInputBlockingBehaviorFeatureGate = FeatureGate<
+export type FeatureGateVnextPreResponseInputBlockingBehavior = FeatureGate<
 	"VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE",
 	{
 		status: 1;
@@ -146,18 +157,18 @@ export type FeatureGateVnextPreResponseInputBlockingBehaviorFeatureGate = Featur
 >;
 
 export type FeatureGateMasterfileEntry =
-	| FeatureGateAdminGmNiaOpsOnlyFilterAmsFeatureGate
-	| FeatureGateAmsFeatureGate
-	| FeatureGateAmsFrontendFeatureGate
-	| FeatureGateDayNightPoiFeatureGate
-	| FeatureGateEnablePvpChallengeSpannerFeatureGate
-	| FeatureGateEventListFeatureGate
-	| FeatureGateEventPassBonusRanksFeatureGate
-	| FeatureGateEventPassMilestoneRewardsFeatureGate
-	| FeatureGateHealToastFeatureGate
-	| FeatureGateMega2026FeatureGate
-	| FeatureGateStoreRefreshFeatureGate
-	| FeatureGateUpdateTicketsStringFeatureGate
-	| FeatureGateVnextPreResponseInputBlockingBehaviorFeatureGate;
+	| FeatureGateAdminGmNiaOpsOnlyFilterAms
+	| FeatureGateAms
+	| FeatureGateAmsFrontend
+	| FeatureGateDayNightPoi
+	| FeatureGateEnablePvpChallengeSpanner
+	| FeatureGateEventList
+	| FeatureGateEventPassBonusRanks
+	| FeatureGateEventPassMilestoneRewards
+	| FeatureGateHealToast
+	| FeatureGateMega2026
+	| FeatureGateStoreRefresh
+	| FeatureGateUpdateTicketsString
+	| FeatureGateVnextPreResponseInputBlockingBehavior;
 
 export type FeatureGateTemplateID = FeatureGateMasterfileEntry["templateId"];

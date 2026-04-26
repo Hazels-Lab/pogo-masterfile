@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { InferenceBuilder, inferJsonType, inferJsonTypes } from "./infer.ts";
+import { InferenceBuilder, inferJsonType, inferJsonTypes, STRING_LITERAL_UNION_CAP, widenType } from "./infer.ts";
 
 describe("inferJsonTypes", () => {
 	test("classifies non-negative integers as uint and preserves literals", () => {
@@ -79,6 +79,52 @@ describe("inferJsonTypes", () => {
 		if (inferred.kind !== "union") throw new Error("Expected union type");
 
 		expect(inferred.variants).toEqual([{ kind: "null" }, { kind: "string", literals: ["enabled"] }]);
+	});
+});
+
+describe("widenType", () => {
+	test("preserves string literals at or below the cap", () => {
+		const inferred = inferJsonTypes(["BUG", "DARK", "FIRE"]);
+		const widened = widenType(inferred);
+		expect(widened).toEqual({ kind: "string", literals: ["BUG", "DARK", "FIRE"] });
+	});
+
+	test("widens strings to bare type when literal count exceeds the cap", () => {
+		const many = Array.from({ length: STRING_LITERAL_UNION_CAP + 1 }, (_, i) => `value-${i.toString().padStart(3, "0")}`);
+		const inferred = inferJsonTypes(many);
+		const widened = widenType(inferred);
+		expect(widened).toEqual({ kind: "string", literals: [] });
+	});
+
+	test("preserves string literals exactly at the cap", () => {
+		const exactly = Array.from({ length: STRING_LITERAL_UNION_CAP }, (_, i) => `value-${i.toString().padStart(3, "0")}`);
+		const inferred = inferJsonTypes(exactly);
+		const widened = widenType(inferred);
+		if (widened.kind !== "string") throw new Error("Expected string type");
+		expect(widened.literals).toHaveLength(STRING_LITERAL_UNION_CAP);
+	});
+
+	test("still strips number and boolean literals", () => {
+		expect(widenType({ kind: "number", numericKind: "uint", literals: [1, 2, 3] })).toEqual({
+			kind: "number",
+			numericKind: "uint",
+			literals: [],
+		});
+		expect(widenType({ kind: "boolean", literals: [true, false] })).toEqual({ kind: "boolean", literals: [] });
+	});
+
+	test("preserves string literals nested inside object and array", () => {
+		const inferred = inferJsonTypes([
+			{ tag: "ALPHA", values: ["x"] },
+			{ tag: "BETA", values: ["y", "z"] },
+		]);
+		const widened = widenType(inferred);
+		if (widened.kind !== "object") throw new Error("Expected object type");
+		const tag = widened.properties.find((p) => p.name === "tag");
+		expect(tag?.type).toEqual({ kind: "string", literals: ["ALPHA", "BETA"] });
+		const values = widened.properties.find((p) => p.name === "values");
+		if (values?.type.kind !== "array") throw new Error("Expected array type");
+		expect(values.type.element).toEqual({ kind: "string", literals: ["x", "y", "z"] });
 	});
 });
 

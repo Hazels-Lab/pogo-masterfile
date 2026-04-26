@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "buddyActivityCategorySettings", 8 entries.
+
 export interface BuddyActivityCategorySettings<
 	TemplateID extends string = string,
 	TData extends BuddyActivityCategorySettingsData = BuddyActivityCategorySettingsData,
@@ -12,7 +14,7 @@ export interface BuddyActivityCategorySettings<
 }
 
 export interface BuddyActivityCategorySettingsData {
-	maxPointsPerDay?: number;
+	maxPointsPerDay: number;
 }
 
 export type BuddyActivityCategorySettingsBattle = BuddyActivityCategorySettings<

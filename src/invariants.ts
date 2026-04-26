@@ -160,15 +160,3 @@ export function stripInvariantsFromValue(value: unknown, tree: InvariantTree): u
 	}
 	return result;
 }
-
-export function makeAllOptional(type: InferredType): InferredType {
-	if (type.kind !== "object") return type;
-	return {
-		kind: "object",
-		properties: type.properties.map((p) => ({
-			name: p.name,
-			type: makeAllOptional(p.type),
-			optional: true,
-		})),
-	};
-}

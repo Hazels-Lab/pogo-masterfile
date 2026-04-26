@@ -2,13 +2,7 @@ import type { Entry, Group } from "./group.ts";
 import type { InferredProperty, InferredType } from "./infer.ts";
 import { inferJsonType, inferJsonTypes, widenType } from "./infer.ts";
 import type { InvariantTree } from "./invariants.ts";
-import {
-	detectInvariants,
-	invariantsToInferredType,
-	makeAllOptional,
-	stripInvariantsFromValue,
-	stripInvariantsFromWidened,
-} from "./invariants.ts";
+import { detectInvariants, invariantsToInferredType, stripInvariantsFromValue, stripInvariantsFromWidened } from "./invariants.ts";
 import { aliasSuffix, deriveGroupAliases, groupName } from "./naming.ts";
 
 const TEMPLATE_GENERIC = `TemplateID`;
@@ -16,16 +10,18 @@ const TEMPLATE_GENERIC = `TemplateID`;
 export function emitGroupFile(group: Group): string {
 	const gName = groupName(group.discriminator);
 	const sortedIds = [...group.entries].map((e) => e.templateId).sort();
-	const aliases = deriveGroupAliases(sortedIds);
+	const aliases = deriveGroupAliases(sortedIds, gName);
 
 	const invariants = detectInvariants(group);
 	const payloadType = inferGroupPayloadType(group);
 	const widenedPayload = widenType(payloadType);
-	const xdataType = makeAllOptional(stripInvariantsFromWidened(widenedPayload, invariants));
+	const xdataType = stripInvariantsFromWidened(widenedPayload, invariants);
 
 	const xdataName = `${gName}Data`;
 	const discName = renderPropertyName(group.discriminator);
-	const lines: string[] = [];
+	const entryCount = group.entries.length;
+	const entryWord = entryCount === 1 ? "entry" : "entries";
+	const lines: string[] = [`// Generated from Pokémon GO masterfile — group "${group.discriminator}", ${entryCount} ${entryWord}.`, ``];
 
 	// Base generic interface.
 	lines.push(`export interface ${gName}<`);
@@ -107,7 +103,7 @@ function renderVariantAlias(gName: string, entry: Entry, group: Group, variantSu
 
 	const isEmpty = !isJsonObject(stripped) || Object.keys(stripped).length === 0;
 	if (isEmpty) {
-		return [`export type ${typeName} = ${gName}<"${entry.templateId}">;`];
+		return [`export type ${typeName} = ${gName}<"${entry.templateId}", Record<string, never>>;`];
 	}
 
 	const literalType = inferJsonType(stripped);
@@ -137,7 +133,7 @@ export function emitMiscFile(singletons: Group[]): string {
 	});
 	named.sort((a, b) => a.name.localeCompare(b.name));
 
-	const lines: string[] = [];
+	const lines: string[] = [`// Generated from Pokémon GO masterfile — singleton entries (no shared discriminator).`, ``];
 	for (const { group, entry, name, isStub } of named) {
 		lines.push(`export interface ${name} {`);
 		lines.push(`\ttemplateId: "${entry.templateId}";`);
@@ -392,7 +388,7 @@ export function kebabCase(camelCase: string): string {
 
 export function emitIndexFile(multiEntryDiscriminators: string[]): string {
 	const sorted = [...multiEntryDiscriminators].sort();
-	const lines: string[] = [];
+	const lines: string[] = [`// Generated from Pokémon GO masterfile — index of all groups.`, ``];
 
 	for (const disc of sorted) {
 		lines.push(`export type * from "./${kebabCase(disc)}.ts";`);
@@ -414,6 +410,8 @@ export function emitIndexFile(multiEntryDiscriminators: string[]): string {
 	lines.push(`\t| MiscMasterfileEntry;`);
 	lines.push(``);
 	lines.push(`export type MasterfileTemplateID = MasterfileEntry["templateId"];`);
+	lines.push(``);
+	lines.push(`export type MasterfileEntryByTemplateID<T extends MasterfileTemplateID> = Extract<MasterfileEntry, { templateId: T }>;`);
 	lines.push(``);
 
 	return lines.join("\n");

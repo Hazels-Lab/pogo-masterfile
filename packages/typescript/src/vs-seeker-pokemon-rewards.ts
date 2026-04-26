@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "vsSeekerPokemonRewards", 2 entries.
+
 export interface VsSeekerPokemonRewards<
 	TemplateID extends string = string,
 	TData extends VsSeekerPokemonRewardsData = VsSeekerPokemonRewardsData,
@@ -686,10 +688,10 @@ export interface VsSeekerPokemonRewards<
 }
 
 export interface VsSeekerPokemonRewardsData {
-	rewardTrack?: string;
+	rewardTrack?: "PREMIUM";
 }
 
-export type VsSeekerPokemonRewardsFree = VsSeekerPokemonRewards<"VS_SEEKER_POKEMON_REWARDS_FREE">;
+export type VsSeekerPokemonRewardsFree = VsSeekerPokemonRewards<"VS_SEEKER_POKEMON_REWARDS_FREE", Record<string, never>>;
 export type VsSeekerPokemonRewardsPremium = VsSeekerPokemonRewards<
 	"VS_SEEKER_POKEMON_REWARDS_PREMIUM",
 	{

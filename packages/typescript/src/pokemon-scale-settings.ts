@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "pokemonScaleSettings", 6 entries.
+
 export interface PokemonScaleSettings<
 	TemplateID extends string = string,
 	TData extends PokemonScaleSettingsData = PokemonScaleSettingsData,
@@ -10,9 +12,9 @@ export interface PokemonScaleSettings<
 }
 
 export interface PokemonScaleSettingsData {
-	maxHeight?: number;
-	minHeight?: number;
-	pokemonScaleMode?: string;
+	maxHeight: number;
+	minHeight: number;
+	pokemonScaleMode?: "BattlePokemonScale" | "GuiScale" | "GymTopperScale" | "MapPokemonScale" | "RaidBossScale";
 }
 
 export type PokemonScaleSettingsBattlePokemonScale = PokemonScaleSettings<

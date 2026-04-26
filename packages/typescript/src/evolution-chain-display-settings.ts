@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "evolutionChainDisplaySettings", 79 entries.
+
 export interface EvolutionChainDisplaySettings<
 	TemplateID extends string = string,
 	TData extends EvolutionChainDisplaySettingsData = EvolutionChainDisplaySettingsData,
@@ -13,12 +15,21 @@ export interface EvolutionChainDisplaySettingsData {
 	evolutionChains?: Array<{
 		evolutionInfos: Array<{
 			form?: string;
-			gender?: string;
+			gender?: "FEMALE" | "GENDERLESS" | "MALE";
 			pokemon: string;
 		}>;
-		headerMessage?: string;
+		headerMessage?:
+			| "alola_pokedex_header"
+			| "form_artisan"
+			| "form_counterfeit"
+			| "form_masterpiece"
+			| "galarian_pokedex_header"
+			| "gender_female"
+			| "gender_male"
+			| "hisuian_pokedex_header"
+			| "paldean_pokedex_header";
 	}>;
-	pokemon?: string;
+	pokemon: string;
 }
 
 export type EvolutionChainDisplaySettingsV0052PokemonMeowth = EvolutionChainDisplaySettings<

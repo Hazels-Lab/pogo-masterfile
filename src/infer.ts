@@ -1,5 +1,11 @@
 export type NumericKind = "uint" | "int" | "float";
 
+// Cap on how many distinct string literals are kept when widening for XData.
+// At or below this, the literal union is preserved (precision for validation);
+// above it, the field widens to bare `string` (avoids huge unions for things
+// like asset-name fields that exhaust the type printer).
+export const STRING_LITERAL_UNION_CAP = 64;
+
 export interface InferredProperty {
 	name: string;
 	type: InferredType;
@@ -90,7 +96,9 @@ export function widenType(type: InferredType): InferredType {
 		case "number":
 			return { kind: "number", numericKind: type.numericKind, literals: [] };
 		case "string":
-			return { kind: "string", literals: [] };
+			return type.literals.length > 0 && type.literals.length <= STRING_LITERAL_UNION_CAP
+				? { kind: "string", literals: type.literals }
+				: { kind: "string", literals: [] };
 		case "object":
 			return {
 				kind: "object",

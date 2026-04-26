@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "moveSequenceSettings", 331 entries.
+
 export interface MoveSequenceSettings<
 	TemplateID extends string = string,
 	TData extends MoveSequenceSettingsData = MoveSequenceSettingsData,
@@ -10,7 +12,7 @@ export interface MoveSequenceSettings<
 }
 
 export interface MoveSequenceSettingsData {
-	sequence?: Array<string>;
+	sequence: Array<string>;
 }
 
 export type MoveSequenceSettingsAcidFast = MoveSequenceSettings<

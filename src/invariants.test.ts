@@ -7,7 +7,6 @@ import {
 	deepEqual,
 	detectInvariants,
 	invariantsToInferredType,
-	makeAllOptional,
 	stripInvariantsFromValue,
 	stripInvariantsFromWidened,
 } from "./invariants.ts";
@@ -313,48 +312,6 @@ describe("stripInvariantsFromWidened", () => {
 		const group = result.properties[0]!;
 		if (group.type.kind !== "object") throw new Error("unreachable");
 		expect(group.type.properties.map((p) => p.name)).toEqual(["keep"]);
-	});
-});
-
-describe("makeAllOptional", () => {
-	test("marks every property in an object as optional", () => {
-		const type: InferredType = {
-			kind: "object",
-			properties: [
-				{ name: "a", optional: false, type: { kind: "string", literals: [] } },
-				{ name: "b", optional: false, type: { kind: "number", numericKind: "uint", literals: [] } },
-			],
-		};
-		const result = makeAllOptional(type);
-		if (result.kind !== "object") throw new Error("unreachable");
-		expect(result.properties.every((p) => p.optional)).toBe(true);
-	});
-
-	test("recurses into nested objects", () => {
-		const type: InferredType = {
-			kind: "object",
-			properties: [
-				{
-					name: "outer",
-					optional: false,
-					type: {
-						kind: "object",
-						properties: [{ name: "inner", optional: false, type: { kind: "string", literals: [] } }],
-					},
-				},
-			],
-		};
-		const result = makeAllOptional(type);
-		if (result.kind !== "object") throw new Error("unreachable");
-		const outer = result.properties[0]!;
-		expect(outer.optional).toBe(true);
-		if (outer.type.kind !== "object") throw new Error("unreachable");
-		expect(outer.type.properties[0]!.optional).toBe(true);
-	});
-
-	test("leaves non-object types unchanged", () => {
-		const type: InferredType = { kind: "string", literals: [] };
-		expect(makeAllOptional(type)).toEqual(type);
 	});
 });
 

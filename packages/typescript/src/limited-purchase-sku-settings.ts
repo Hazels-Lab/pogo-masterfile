@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "limitedPurchaseSkuSettings", 34 entries.
+
 export interface LimitedPurchaseSkuSettings<
 	TemplateID extends string = string,
 	TData extends LimitedPurchaseSkuSettingsData = LimitedPurchaseSkuSettingsData,
@@ -10,9 +12,9 @@ export interface LimitedPurchaseSkuSettings<
 }
 
 export interface LimitedPurchaseSkuSettingsData {
-	chronoUnit?: string;
-	lootTableId?: string;
-	purchaseLimit?: number;
+	chronoUnit?: "DAY";
+	lootTableId?: "BUNDLE_GENERAL1_FREE1_1_LOOT_TABLE";
+	purchaseLimit: number;
 	resetInterval?: number;
 	version?: number;
 }

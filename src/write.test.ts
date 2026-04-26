@@ -14,7 +14,7 @@ describe("writeOutput", () => {
 		const outDir = mkTempDir();
 		await writeOutput(
 			new Map([
-				["oo.ts", "export type Foo = 1;\n"],
+				["foo.ts", "export type Foo = 1;\n"],
 				["index.ts", "export * from './foo.ts';\n"],
 			]),
 			outDir,

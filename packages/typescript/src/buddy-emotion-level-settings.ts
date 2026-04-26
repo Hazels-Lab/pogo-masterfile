@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "buddyEmotionLevelSettings", 7 entries.
+
 export interface BuddyEmotionLevelSettings<
 	TemplateID extends string = string,
 	TData extends BuddyEmotionLevelSettingsData = BuddyEmotionLevelSettingsData,
@@ -12,7 +14,7 @@ export interface BuddyEmotionLevelSettings<
 }
 
 export interface BuddyEmotionLevelSettingsData {
-	emotionAnimation?: string;
+	emotionAnimation: "BUDDY_ANIMATION_HAPPY" | "BUDDY_ANIMATION_HATE";
 	minEmotionPointsRequired?: number;
 }
 

@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "breadMoveLevelSettings", 7 entries.
+
 export interface BreadMoveLevelSettings<
 	TemplateID extends string = string,
 	TData extends BreadMoveLevelSettingsData = BreadMoveLevelSettingsData,
@@ -10,7 +12,7 @@ export interface BreadMoveLevelSettings<
 }
 
 export interface BreadMoveLevelSettingsData {
-	aSettings?: [
+	aSettings: [
 		{
 			candyCost: number;
 			mpCost?: number;
@@ -30,28 +32,7 @@ export interface BreadMoveLevelSettingsData {
 			xpRewards: number;
 		},
 	];
-	bSettings?: [
-		{
-			candyCost: number;
-			mpCost?: number;
-			stardustCost?: number;
-			xpRewards: number;
-		},
-		{
-			candyCost: number;
-			mpCost?: number;
-			stardustCost?: number;
-			xpRewards: number;
-		},
-		{
-			candyCost?: number;
-			mpCost?: number;
-			stardustCost?: number;
-			xlCandyCost: number;
-			xpRewards: number;
-		},
-	];
-	cSettings?: [
+	bSettings: [
 		{
 			candyCost: number;
 			mpCost?: number;
@@ -72,7 +53,28 @@ export interface BreadMoveLevelSettingsData {
 			xpRewards: number;
 		},
 	];
-	group?: number | string;
+	cSettings: [
+		{
+			candyCost: number;
+			mpCost?: number;
+			stardustCost?: number;
+			xpRewards: number;
+		},
+		{
+			candyCost: number;
+			mpCost?: number;
+			stardustCost?: number;
+			xpRewards: number;
+		},
+		{
+			candyCost?: number;
+			mpCost?: number;
+			stardustCost?: number;
+			xlCandyCost: number;
+			xpRewards: number;
+		},
+	];
+	group: number | "GROUP_1" | "GROUP_2" | "GROUP_3" | "GROUP_4";
 }
 
 export type BreadMoveLevelSettings1 = BreadMoveLevelSettings<

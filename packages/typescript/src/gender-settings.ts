@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "genderSettings", 2463 entries.
+
 export interface GenderSettings<TemplateID extends string = string, TData extends GenderSettingsData = GenderSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -8,12 +10,12 @@ export interface GenderSettings<TemplateID extends string = string, TData extend
 
 export interface GenderSettingsData {
 	form?: number | string;
-	gender?: {
+	gender: {
 		femalePercent?: number;
 		genderlessPercent?: number;
 		malePercent?: number;
 	};
-	pokemon?: string;
+	pokemon: string;
 }
 
 export type GenderSettingsV0001PokemonBulbasaur = GenderSettings<

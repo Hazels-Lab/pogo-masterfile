@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — index of all groups.
+
 export type * from "./avatar-customization.ts";
 export type * from "./avatar-group-order-settings.ts";
 export type * from "./avatar-item-display.ts";
@@ -183,3 +185,5 @@ export type MasterfileEntry =
 	| MiscMasterfileEntry;
 
 export type MasterfileTemplateID = MasterfileEntry["templateId"];
+
+export type MasterfileEntryByTemplateID<T extends MasterfileTemplateID> = Extract<MasterfileEntry, { templateId: T }>;

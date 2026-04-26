@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "pokemonFamily", 541 entries.
+
 export interface PokemonFamily<TemplateID extends string = string, TData extends PokemonFamilyData = PokemonFamilyData> {
 	templateId: TemplateID;
 	data: {
@@ -9,9 +11,57 @@ export interface PokemonFamily<TemplateID extends string = string, TData extends
 }
 
 export interface PokemonFamilyData {
-	familyId?: string;
-	megaEvolvablePokemonId?: string;
-	megaEvolvablePokemonIds?: [string, string];
+	familyId: string;
+	megaEvolvablePokemonId?:
+		| "ABOMASNOW"
+		| "ABSOL"
+		| "AERODACTYL"
+		| "AGGRON"
+		| "ALAKAZAM"
+		| "ALTARIA"
+		| "AMPHAROS"
+		| "AUDINO"
+		| "BANETTE"
+		| "BEEDRILL"
+		| "BLASTOISE"
+		| "BLAZIKEN"
+		| "CAMERUPT"
+		| "CHARIZARD"
+		| "DIANCIE"
+		| "DRAGONITE"
+		| "GARCHOMP"
+		| "GENGAR"
+		| "GLALIE"
+		| "GROUDON"
+		| "GYARADOS"
+		| "HERACROSS"
+		| "HOUNDOOM"
+		| "KANGASKHAN"
+		| "KYOGRE"
+		| "LATIAS"
+		| "LATIOS"
+		| "LOPUNNY"
+		| "LUCARIO"
+		| "MALAMAR"
+		| "MANECTRIC"
+		| "MAWILE"
+		| "MEDICHAM"
+		| "METAGROSS"
+		| "PIDGEOT"
+		| "PINSIR"
+		| "RAYQUAZA"
+		| "SABLEYE"
+		| "SALAMENCE"
+		| "SCEPTILE"
+		| "SCIZOR"
+		| "SHARPEDO"
+		| "SLOWBRO"
+		| "STEELIX"
+		| "SWAMPERT"
+		| "TYRANITAR"
+		| "VENUSAUR"
+		| "VICTREEBEL";
+	megaEvolvablePokemonIds?: ["GARDEVOIR", "GALLADE"];
 }
 
 export type PokemonFamilyV0001FamilyBulbasaur = PokemonFamily<

@@ -1,3 +1,5 @@
+// Generated from Pokémon GO masterfile — group "fortPowerUpLevelSettings", 4 entries.
+
 export interface FortPowerUpLevelSettings<
 	TemplateID extends string = string,
 	TData extends FortPowerUpLevelSettingsData = FortPowerUpLevelSettingsData,
@@ -14,10 +16,12 @@ export interface FortPowerUpLevelSettings<
 export interface FortPowerUpLevelSettingsData {
 	additionalLevelPowerupDurationMs?: number;
 	minPowerUpPointsRequired?: number;
-	powerupLevelRewards?: Array<string>;
+	powerupLevelRewards?: Array<
+		"FORT_POWER_UP_LEVEL_REWARD_BUDDY_BONUS_HEART" | "FORT_POWER_UP_REWARD_BONUS_ITEM_ON_SPIN" | "FORT_POWER_UP_REWARD_BONUS_RAID_POKEBALLS"
+	>;
 }
 
-export type FortPowerUpLevelSettings0 = FortPowerUpLevelSettings<"FORT_POWER_UP_LEVEL_0">;
+export type FortPowerUpLevelSettings0 = FortPowerUpLevelSettings<"FORT_POWER_UP_LEVEL_0", Record<string, never>>;
 export type FortPowerUpLevelSettings1 = FortPowerUpLevelSettings<
 	"FORT_POWER_UP_LEVEL_1",
 	{
