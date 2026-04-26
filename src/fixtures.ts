@@ -101,6 +101,41 @@ export const MOCK_MASTERFILE = [
 		templateId: "COLLIDE_FOO",
 		data: { templateId: "COLLIDE_FOO", collisionTest: { label: "FOO" } },
 	},
+	// combatType group — exercises templateIdSlice (prefix "COMBAT_", empty suffix).
+	// Each entry's `type` value drops the COMBAT_ prefix from its templateId.
+	{
+		templateId: "COMBAT_POKEMON_TYPE_BUG",
+		data: {
+			templateId: "COMBAT_POKEMON_TYPE_BUG",
+			combatType: {
+				greatLevelThreshold: 0.7,
+				type: "POKEMON_TYPE_BUG",
+				excellentLevelThreshold: 0.95,
+			},
+		},
+	},
+	{
+		templateId: "COMBAT_POKEMON_TYPE_DARK",
+		data: {
+			templateId: "COMBAT_POKEMON_TYPE_DARK",
+			combatType: {
+				greatLevelThreshold: 0.7,
+				type: "POKEMON_TYPE_DARK",
+				excellentLevelThreshold: 0.95,
+			},
+		},
+	},
+	{
+		templateId: "COMBAT_POKEMON_TYPE_NORMAL",
+		data: {
+			templateId: "COMBAT_POKEMON_TYPE_NORMAL",
+			combatType: {
+				greatLevelThreshold: 0.6,
+				type: "POKEMON_TYPE_NORMAL",
+				excellentLevelThreshold: 0.95,
+			},
+		},
+	},
 	// Singleton
 	{
 		templateId: "ACCESSIBILITY_CLIENT_SETTINGS",

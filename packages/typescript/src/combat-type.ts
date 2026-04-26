@@ -7,157 +7,121 @@ export interface CombatType<TemplateID extends string = string, TData extends Co
 		combatType: TData & {
 			excellentLevelThreshold: 0.95;
 			niceLevelThreshold: 0.3;
+			type: TemplateID extends `COMBAT_${infer Rest}` ? Rest : string;
 		};
 	};
 }
 
 export interface CombatTypeData {
 	greatLevelThreshold: number;
-	type:
-		| "POKEMON_TYPE_BUG"
-		| "POKEMON_TYPE_DARK"
-		| "POKEMON_TYPE_DRAGON"
-		| "POKEMON_TYPE_ELECTRIC"
-		| "POKEMON_TYPE_FAIRY"
-		| "POKEMON_TYPE_FIGHTING"
-		| "POKEMON_TYPE_FIRE"
-		| "POKEMON_TYPE_FLYING"
-		| "POKEMON_TYPE_GHOST"
-		| "POKEMON_TYPE_GRASS"
-		| "POKEMON_TYPE_GROUND"
-		| "POKEMON_TYPE_ICE"
-		| "POKEMON_TYPE_NORMAL"
-		| "POKEMON_TYPE_POISON"
-		| "POKEMON_TYPE_PSYCHIC"
-		| "POKEMON_TYPE_ROCK"
-		| "POKEMON_TYPE_STEEL"
-		| "POKEMON_TYPE_WATER";
 }
 
 export type CombatTypeBug = CombatType<
 	"COMBAT_POKEMON_TYPE_BUG",
 	{
 		greatLevelThreshold: 0.7;
-		type: "POKEMON_TYPE_BUG";
 	}
 >;
 export type CombatTypeDark = CombatType<
 	"COMBAT_POKEMON_TYPE_DARK",
 	{
 		greatLevelThreshold: 0.7;
-		type: "POKEMON_TYPE_DARK";
 	}
 >;
 export type CombatTypeDragon = CombatType<
 	"COMBAT_POKEMON_TYPE_DRAGON",
 	{
 		greatLevelThreshold: 0.7;
-		type: "POKEMON_TYPE_DRAGON";
 	}
 >;
 export type CombatTypeElectric = CombatType<
 	"COMBAT_POKEMON_TYPE_ELECTRIC",
 	{
 		greatLevelThreshold: 0.7;
-		type: "POKEMON_TYPE_ELECTRIC";
 	}
 >;
 export type CombatTypeFairy = CombatType<
 	"COMBAT_POKEMON_TYPE_FAIRY",
 	{
 		greatLevelThreshold: 0.7;
-		type: "POKEMON_TYPE_FAIRY";
 	}
 >;
 export type CombatTypeFighting = CombatType<
 	"COMBAT_POKEMON_TYPE_FIGHTING",
 	{
 		greatLevelThreshold: 0.7;
-		type: "POKEMON_TYPE_FIGHTING";
 	}
 >;
 export type CombatTypeFire = CombatType<
 	"COMBAT_POKEMON_TYPE_FIRE",
 	{
 		greatLevelThreshold: 0.7;
-		type: "POKEMON_TYPE_FIRE";
 	}
 >;
 export type CombatTypeFlying = CombatType<
 	"COMBAT_POKEMON_TYPE_FLYING",
 	{
 		greatLevelThreshold: 0.7;
-		type: "POKEMON_TYPE_FLYING";
 	}
 >;
 export type CombatTypeGhost = CombatType<
 	"COMBAT_POKEMON_TYPE_GHOST",
 	{
 		greatLevelThreshold: 0.7;
-		type: "POKEMON_TYPE_GHOST";
 	}
 >;
 export type CombatTypeGrass = CombatType<
 	"COMBAT_POKEMON_TYPE_GRASS",
 	{
 		greatLevelThreshold: 0.7;
-		type: "POKEMON_TYPE_GRASS";
 	}
 >;
 export type CombatTypeGround = CombatType<
 	"COMBAT_POKEMON_TYPE_GROUND",
 	{
 		greatLevelThreshold: 0.7;
-		type: "POKEMON_TYPE_GROUND";
 	}
 >;
 export type CombatTypeIce = CombatType<
 	"COMBAT_POKEMON_TYPE_ICE",
 	{
 		greatLevelThreshold: 0.7;
-		type: "POKEMON_TYPE_ICE";
 	}
 >;
 export type CombatTypeNormal = CombatType<
 	"COMBAT_POKEMON_TYPE_NORMAL",
 	{
 		greatLevelThreshold: 0.6;
-		type: "POKEMON_TYPE_NORMAL";
 	}
 >;
 export type CombatTypePoison = CombatType<
 	"COMBAT_POKEMON_TYPE_POISON",
 	{
 		greatLevelThreshold: 0.7;
-		type: "POKEMON_TYPE_POISON";
 	}
 >;
 export type CombatTypePsychic = CombatType<
 	"COMBAT_POKEMON_TYPE_PSYCHIC",
 	{
 		greatLevelThreshold: 0.7;
-		type: "POKEMON_TYPE_PSYCHIC";
 	}
 >;
 export type CombatTypeRock = CombatType<
 	"COMBAT_POKEMON_TYPE_ROCK",
 	{
 		greatLevelThreshold: 0.7;
-		type: "POKEMON_TYPE_ROCK";
 	}
 >;
 export type CombatTypeSteel = CombatType<
 	"COMBAT_POKEMON_TYPE_STEEL",
 	{
 		greatLevelThreshold: 0.7;
-		type: "POKEMON_TYPE_STEEL";
 	}
 >;
 export type CombatTypeWater = CombatType<
 	"COMBAT_POKEMON_TYPE_WATER",
 	{
 		greatLevelThreshold: 0.7;
-		type: "POKEMON_TYPE_WATER";
 	}
 >;
 

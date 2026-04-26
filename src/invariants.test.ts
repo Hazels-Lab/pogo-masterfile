@@ -95,8 +95,6 @@ describe("detectInvariants", () => {
 		if (!effectGroup || effectGroup.kind !== "nested") {
 			throw new Error("expected effectGroup to be a nested node");
 		}
-		// typeCode varies ("BUG" vs "DARK") → not an invariant
-		expect(effectGroup.children.has("typeCode")).toBe(false);
 		// tags varies (length differs) → not an invariant
 		expect(effectGroup.children.has("tags")).toBe(false);
 		// windows varies ([0, 250] vs [0, 300]) → not an invariant
@@ -122,6 +120,68 @@ describe("detectInvariants", () => {
 			kind: "constant",
 			value: [0, 250],
 		});
+	});
+
+	test("detects a templateIdSlice when every value is a consistent affix slice of its templateId", () => {
+		const group = groupEntries(MOCK_MASTERFILE).get("combatType")!;
+		const tree = detectInvariants(group);
+		expect(tree.get("type")).toEqual({
+			kind: "templateIdSlice",
+			prefix: "COMBAT_",
+			suffix: "",
+		});
+	});
+
+	test("detects a templateIdSlice nested inside an object (typeCode in typeEffective fixture)", () => {
+		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
+		const tree = detectInvariants(group);
+		const effectGroup = tree.get("effectGroup");
+		if (!effectGroup || effectGroup.kind !== "nested") {
+			throw new Error("expected effectGroup to be a nested node");
+		}
+		expect(effectGroup.children.get("typeCode")).toEqual({
+			kind: "templateIdSlice",
+			prefix: "POKEMON_TYPE_",
+			suffix: "",
+		});
+	});
+
+	test("does not flag a slice when no shared (prefix, suffix) split exists across entries", () => {
+		const group = {
+			discriminator: "example",
+			entries: [
+				{ templateId: "A_FOO", data: { templateId: "A_FOO", example: { v: "FOO" } } },
+				{ templateId: "B_BAR", data: { templateId: "B_BAR", example: { v: "BAR" } } },
+			],
+		};
+		const tree = detectInvariants(group);
+		expect(tree.has("v")).toBe(false);
+	});
+
+	test("does not flag a slice when value is missing from any templateId", () => {
+		const group = {
+			discriminator: "example",
+			entries: [
+				{ templateId: "A_FOO", data: { templateId: "A_FOO", example: { v: "FOO" } } },
+				{ templateId: "B_BAR", data: { templateId: "B_BAR", example: { v: "QUX" } } },
+			],
+		};
+		const tree = detectInvariants(group);
+		expect(tree.has("v")).toBe(false);
+	});
+
+	test("templateIdTie wins over templateIdSlice for the empty/empty case", () => {
+		// A field whose value === templateId is the degenerate slice (prefix="" suffix="")
+		// — the existing tie check runs first and claims it.
+		const group = {
+			discriminator: "example",
+			entries: [
+				{ templateId: "A", data: { templateId: "A", example: { v: "A" } } },
+				{ templateId: "B", data: { templateId: "B", example: { v: "B" } } },
+			],
+		};
+		const tree = detectInvariants(group);
+		expect(tree.get("v")).toEqual({ kind: "templateIdTie" });
 	});
 
 	test("does not flag a field absent in any entry", () => {
@@ -155,6 +215,21 @@ describe("invariantsToInferredType", () => {
 					name: "attackType",
 					optional: false,
 					type: { kind: "templateIdReference" },
+				},
+			],
+		});
+	});
+
+	test("converts a templateIdSlice node to a templateIdSlice type carrying prefix/suffix", () => {
+		const tree: InvariantTree = new Map([["type", { kind: "templateIdSlice", prefix: "COMBAT_", suffix: "" }]]);
+		const result = invariantsToInferredType(tree);
+		expect(result).toEqual({
+			kind: "object",
+			properties: [
+				{
+					name: "type",
+					optional: false,
+					type: { kind: "templateIdSlice", prefix: "COMBAT_", suffix: "" },
 				},
 			],
 		});
@@ -280,6 +355,20 @@ describe("stripInvariantsFromWidened", () => {
 		expect(result.properties.map((p) => p.name)).toEqual(["kept"]);
 	});
 
+	test("removes templateIdSlice leaf properties", () => {
+		const type: InferredType = {
+			kind: "object",
+			properties: [
+				{ name: "keep", optional: false, type: { kind: "number", numericKind: "uint", literals: [] } },
+				{ name: "type", optional: false, type: { kind: "string", literals: [] } },
+			],
+		};
+		const tree: InvariantTree = new Map([["type", { kind: "templateIdSlice", prefix: "COMBAT_", suffix: "" }]]);
+		const result = stripInvariantsFromWidened(type, tree);
+		if (result.kind !== "object") throw new Error("unreachable");
+		expect(result.properties.map((p) => p.name)).toEqual(["keep"]);
+	});
+
 	test("preserves partial objects when some children are invariants", () => {
 		const type: InferredType = {
 			kind: "object",
@@ -319,6 +408,12 @@ describe("stripInvariantsFromValue", () => {
 	test("removes leaf invariant keys from a raw value", () => {
 		const value = { keep: 1, drop: "POKEMON_TYPE_BUG" };
 		const tree: InvariantTree = new Map([["drop", { kind: "templateIdTie" }]]);
+		expect(stripInvariantsFromValue(value, tree)).toEqual({ keep: 1 });
+	});
+
+	test("removes templateIdSlice keys from a raw value", () => {
+		const value = { keep: 1, type: "POKEMON_TYPE_BUG" };
+		const tree: InvariantTree = new Map([["type", { kind: "templateIdSlice", prefix: "COMBAT_", suffix: "" }]]);
 		expect(stripInvariantsFromValue(value, tree)).toEqual({ keep: 1 });
 	});
 

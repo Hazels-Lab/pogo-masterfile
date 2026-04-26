@@ -33,7 +33,11 @@ export function deepEqual(a: unknown, b: unknown): boolean {
 	return true;
 }
 
-export type InvariantNode = { kind: "constant"; value: unknown } | { kind: "templateIdTie" } | { kind: "nested"; children: InvariantTree };
+export type InvariantNode =
+	| { kind: "constant"; value: unknown }
+	| { kind: "templateIdTie" }
+	| { kind: "templateIdSlice"; prefix: string; suffix: string }
+	| { kind: "nested"; children: InvariantTree };
 
 export type InvariantTree = Map<string, InvariantNode>;
 
@@ -79,6 +83,19 @@ function walkInvariants(values: readonly unknown[], templateIds: readonly string
 			continue;
 		}
 
+		// Kind 3: every value is a consistent prefix/suffix slice of its templateId.
+		// (templateIdTie above is the empty/empty special case, so it wins; this picks
+		// up affix-derivable strings like value="POKEMON_TYPE_BUG" inside templateId
+		// "COMBAT_POKEMON_TYPE_BUG".)
+		const allNonEmptyStrings = childValues.every((cv): cv is string => typeof cv === "string" && cv.length > 0);
+		if (allNonEmptyStrings) {
+			const slice = detectTemplateIdSlice(childValues, templateIds);
+			if (slice) {
+				tree.set(key, { kind: "templateIdSlice", prefix: slice.prefix, suffix: slice.suffix });
+				continue;
+			}
+		}
+
 		// Recurse into nested objects — but only if every entry has an object here.
 		const everyObject = childValues.every(isJsonObject);
 		if (everyObject) {
@@ -90,6 +107,46 @@ function walkInvariants(values: readonly unknown[], templateIds: readonly string
 	}
 
 	return tree;
+}
+
+// Encodes a (prefix, suffix) pair as a single string key using a NUL separator.
+// templateIds and field values come from JSON and never contain NUL, so this is
+// unambiguous for the masterfile.
+const SPLIT_SEP = "\0";
+
+function allSplits(templateId: string, value: string): Set<string> {
+	const splits = new Set<string>();
+	let i = templateId.indexOf(value);
+	while (i >= 0) {
+		splits.add(`${templateId.slice(0, i)}${SPLIT_SEP}${templateId.slice(i + value.length)}`);
+		i = templateId.indexOf(value, i + 1);
+	}
+	return splits;
+}
+
+function detectTemplateIdSlice(values: readonly string[], templateIds: readonly string[]): { prefix: string; suffix: string } | null {
+	if (values.length === 0) return null;
+
+	const candidates = values.map((v, i) => allSplits(templateIds[i]!, v));
+	if (candidates.some((set) => set.size === 0)) return null;
+
+	const [first, ...rest] = candidates;
+	const shared = [...first!].filter((key) => rest.every((s) => s.has(key)));
+	if (shared.length === 0) return null;
+
+	// Tiebreak: prefer the split with the longest prefix — matches human reading order
+	// (e.g. "COMBAT_" + "POKEMON_TYPE_BUG" reads better than "" + "...BUG" with a long suffix).
+	shared.sort((a, b) => {
+		const aPrefixLen = a.indexOf(SPLIT_SEP);
+		const bPrefixLen = b.indexOf(SPLIT_SEP);
+		return bPrefixLen - aPrefixLen;
+	});
+	const [prefix, suffix] = shared[0]!.split(SPLIT_SEP) as [string, string];
+
+	// Empty/empty is templateIdTie territory (and that check ran earlier with `===`).
+	// If we land here it means the slice degenerates — bail so existing kinds win.
+	if (prefix === "" && suffix === "") return null;
+	return { prefix, suffix };
 }
 
 export function invariantsToInferredType(tree: InvariantTree): InferredType {
@@ -104,6 +161,13 @@ export function invariantsToInferredType(tree: InvariantTree): InferredType {
 					name,
 					optional: false,
 					type: { kind: "templateIdReference" },
+				};
+			}
+			if (node.kind === "templateIdSlice") {
+				return {
+					name,
+					optional: false,
+					type: { kind: "templateIdSlice", prefix: node.prefix, suffix: node.suffix },
 				};
 			}
 			return {
@@ -125,7 +189,7 @@ export function stripInvariantsFromWidened(type: InferredType, tree: InvariantTr
 			stripped.push(prop);
 			continue;
 		}
-		if (node.kind === "constant" || node.kind === "templateIdTie") {
+		if (node.kind === "constant" || node.kind === "templateIdTie" || node.kind === "templateIdSlice") {
 			// Leaf invariant — drop this property.
 			continue;
 		}
@@ -149,7 +213,7 @@ export function stripInvariantsFromValue(value: unknown, tree: InvariantTree): u
 			result[key] = childValue;
 			continue;
 		}
-		if (node.kind === "constant" || node.kind === "templateIdTie") {
+		if (node.kind === "constant" || node.kind === "templateIdTie" || node.kind === "templateIdSlice") {
 			continue;
 		}
 		const strippedChild = stripInvariantsFromValue(childValue, node.children);

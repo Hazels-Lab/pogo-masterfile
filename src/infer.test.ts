@@ -113,6 +113,18 @@ describe("widenType", () => {
 		expect(widenType({ kind: "boolean", literals: [true, false] })).toEqual({ kind: "boolean", literals: [] });
 	});
 
+	test("widens templateIdSlice (and templateIdReference) to bare string for XData", () => {
+		// XData is generic-free, so any TemplateID-tied marker must collapse to string.
+		expect(widenType({ kind: "templateIdSlice", prefix: "COMBAT_", suffix: "" })).toEqual({
+			kind: "string",
+			literals: [],
+		});
+		expect(widenType({ kind: "templateIdReference" })).toEqual({
+			kind: "string",
+			literals: [],
+		});
+	});
+
 	test("preserves string literals nested inside object and array", () => {
 		const inferred = inferJsonTypes([
 			{ tag: "ALPHA", values: ["x"] },

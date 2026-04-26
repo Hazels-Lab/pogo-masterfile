@@ -179,6 +179,8 @@ function renderType(type: InferredType): string[] {
 			return renderUnionType(type.variants);
 		case "templateIdReference":
 			return [TEMPLATE_GENERIC];
+		case "templateIdSlice":
+			return [`${TEMPLATE_GENERIC} extends \`${type.prefix}\${infer Rest}${type.suffix}\` ? Rest : string`];
 		case "null":
 		case "boolean":
 		case "number":
@@ -242,6 +244,8 @@ function renderInlineType(type: InferredType): string | undefined {
 		}
 		case "templateIdReference":
 			return TEMPLATE_GENERIC;
+		case "templateIdSlice":
+			return `${TEMPLATE_GENERIC} extends \`${type.prefix}\${infer Rest}${type.suffix}\` ? Rest : string`;
 	}
 }
 

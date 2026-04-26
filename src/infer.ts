@@ -56,6 +56,12 @@ export interface TemplateIdReferenceType {
 	kind: "templateIdReference";
 }
 
+export interface TemplateIdSliceType {
+	kind: "templateIdSlice";
+	prefix: string;
+	suffix: string;
+}
+
 export type InferredType =
 	| NullType
 	| BooleanType
@@ -65,7 +71,8 @@ export type InferredType =
 	| TupleType
 	| ArrayType
 	| UnionType
-	| TemplateIdReferenceType;
+	| TemplateIdReferenceType
+	| TemplateIdSliceType;
 
 export class InferenceBuilder {
 	readonly #values: unknown[] = [];
@@ -89,6 +96,7 @@ export function widenType(type: InferredType): InferredType {
 		case "null":
 			return type;
 		case "templateIdReference":
+		case "templateIdSlice":
 			// Widening drops the TemplateID generic reference — XData is generic-free.
 			return { kind: "string", literals: [] };
 		case "boolean":
@@ -254,5 +262,7 @@ function variantSortKey(type: InferredType): string {
 			return "7-union";
 		case "templateIdReference":
 			return "8-templateIdReference";
+		case "templateIdSlice":
+			return "9-templateIdSlice";
 	}
 }

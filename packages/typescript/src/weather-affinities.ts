@@ -4,7 +4,9 @@ export interface WeatherAffinities<TemplateID extends string = string, TData ext
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;
-		weatherAffinities: TData;
+		weatherAffinities: TData & {
+			weatherCondition: TemplateID extends `WEATHER_AFFINITY_${infer Rest}` ? Rest : string;
+		};
 	};
 }
 
@@ -29,56 +31,48 @@ export interface WeatherAffinitiesData {
 		| "POKEMON_TYPE_STEEL"
 		| "POKEMON_TYPE_WATER"
 	>;
-	weatherCondition: "CLEAR" | "FOG" | "OVERCAST" | "PARTLY_CLOUDY" | "RAINY" | "SNOW" | "WINDY";
 }
 
 export type WeatherAffinitiesClear = WeatherAffinities<
 	"WEATHER_AFFINITY_CLEAR",
 	{
 		pokemonType: ["POKEMON_TYPE_GRASS", "POKEMON_TYPE_GROUND", "POKEMON_TYPE_FIRE"];
-		weatherCondition: "CLEAR";
 	}
 >;
 export type WeatherAffinitiesFog = WeatherAffinities<
 	"WEATHER_AFFINITY_FOG",
 	{
 		pokemonType: ["POKEMON_TYPE_DARK", "POKEMON_TYPE_GHOST"];
-		weatherCondition: "FOG";
 	}
 >;
 export type WeatherAffinitiesOvercast = WeatherAffinities<
 	"WEATHER_AFFINITY_OVERCAST",
 	{
 		pokemonType: ["POKEMON_TYPE_FAIRY", "POKEMON_TYPE_FIGHTING", "POKEMON_TYPE_POISON"];
-		weatherCondition: "OVERCAST";
 	}
 >;
 export type WeatherAffinitiesPartlyCloudy = WeatherAffinities<
 	"WEATHER_AFFINITY_PARTLY_CLOUDY",
 	{
 		pokemonType: ["POKEMON_TYPE_NORMAL", "POKEMON_TYPE_ROCK"];
-		weatherCondition: "PARTLY_CLOUDY";
 	}
 >;
 export type WeatherAffinitiesRainy = WeatherAffinities<
 	"WEATHER_AFFINITY_RAINY",
 	{
 		pokemonType: ["POKEMON_TYPE_WATER", "POKEMON_TYPE_ELECTRIC", "POKEMON_TYPE_BUG"];
-		weatherCondition: "RAINY";
 	}
 >;
 export type WeatherAffinitiesSnow = WeatherAffinities<
 	"WEATHER_AFFINITY_SNOW",
 	{
 		pokemonType: ["POKEMON_TYPE_ICE", "POKEMON_TYPE_STEEL"];
-		weatherCondition: "SNOW";
 	}
 >;
 export type WeatherAffinitiesWindy = WeatherAffinities<
 	"WEATHER_AFFINITY_WINDY",
 	{
 		pokemonType: ["POKEMON_TYPE_DRAGON", "POKEMON_TYPE_FLYING", "POKEMON_TYPE_PSYCHIC"];
-		weatherCondition: "WINDY";
 	}
 >;
 

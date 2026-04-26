@@ -26,6 +26,8 @@ describe("emitGroupFile", () => {
 		expect(output).toContain("attackType: TemplateID;"); // Kind 2 top-level
 		expect(output).toContain("accuracyChance: 1;"); // Kind 1 nested
 		expect(output).toContain("combatType: TemplateID;"); // Kind 2 nested deeply
+		// Kind 3 (slice) nested: typeCode is derived by stripping the POKEMON_TYPE_ prefix.
+		expect(output).toContain("typeCode: TemplateID extends `POKEMON_TYPE_${infer Rest}` ? Rest : string;");
 
 		// XData interface: fields in 100% of variants are required; invariant fields are stripped.
 		// Finite string sets become literal unions (cap-bounded) instead of widening to `string`.
@@ -33,11 +35,12 @@ describe("emitGroupFile", () => {
 		expect(output).toContain("attackScalar: [");
 		expect(output).toContain("effectGroup: {");
 		expect(output).toContain(`tags: Array<"charged" | "fast">;`);
-		expect(output).toContain(`typeCode: "BUG" | "DARK";`);
 		expect(output).toContain("windows: [");
 		// Invariants should NOT appear in XData (they live in the base body):
 		expect(output).not.toContain("attackType?:");
 		expect(output).not.toContain("accuracyChance?:");
+		// typeCode is now a templateIdSlice invariant — derived from TemplateID, not a literal union in XData.
+		expect(output).not.toContain(`typeCode: "BUG" | "DARK";`);
 		// effectGroup.nested has only combatType (an invariant) — the whole nested
 		// wrapper should be stripped from XData.
 		expect(output).not.toContain("nested?:");
@@ -61,28 +64,62 @@ describe("emitGroupFile", () => {
 		expect(bugBlock).toContain(`"POKEMON_TYPE_BUG"`);
 		expect(bugBlock).toContain("0.625");
 		expect(bugBlock).toContain("1.6");
-		expect(bugBlock).toContain(`"BUG"`); // typeCode
 		expect(bugBlock).toContain(`"fast"`); // tags
 		expect(bugBlock).toContain("250"); // windows[1]
 		expect(bugBlock).not.toContain("attackType"); // invariant; in base body only
 		expect(bugBlock).not.toContain("accuracyChance"); // invariant; in base body only
 		expect(bugBlock).not.toContain("combatType"); // invariant; in base body only
+		expect(bugBlock).not.toContain("typeCode"); // slice invariant; in base body only
 
 		// Dark's block:
 		const darkStart = output.indexOf("export type TypeEffectiveDark = TypeEffective<");
 		const darkEnd = output.indexOf(">;", darkStart);
 		const darkBlock = output.slice(darkStart, darkEnd + 2);
 		expect(darkBlock).toContain(`"POKEMON_TYPE_DARK"`);
-		expect(darkBlock).toContain(`"DARK"`); // typeCode
 		expect(darkBlock).toContain(`"charged"`);
 		expect(darkBlock).toContain(`"fast"`);
 		expect(darkBlock).toContain("300"); // windows[1]
+		expect(darkBlock).not.toContain("typeCode"); // slice invariant; in base body only
 
 		// Union + TemplateID alias unchanged:
 		expect(output).toContain("export type TypeEffectiveMasterfileEntry =");
 		expect(output).toContain("| TypeEffectiveBug");
 		expect(output).toContain("| TypeEffectiveDark");
 		expect(output).toContain(`export type TypeEffectiveTemplateID = TypeEffectiveMasterfileEntry["templateId"];`);
+	});
+
+	test("emits a templateIdSlice as an inline conditional template literal in the base body", () => {
+		const group = groupEntries(MOCK_MASTERFILE).get("combatType")!;
+		const output = emitGroupFile(group);
+
+		// `type` is a slice of templateId (drop "COMBAT_") — lives in base body, not XData, not variants.
+		// (`type` is in the reserved-word list, so the property name is quoted.)
+		expect(output).toContain("combatType: TData & {");
+		expect(output).toContain('"type": TemplateID extends `COMBAT_${infer Rest}` ? Rest : string;');
+		// `excellentLevelThreshold` is a constant (0.95) → also in base body.
+		expect(output).toContain("excellentLevelThreshold: 0.95;");
+
+		// XData has neither `type` nor `excellentLevelThreshold` (both stripped); the varying
+		// `greatLevelThreshold` (0.6 and 0.7) remains.
+		expect(output).toContain("export interface CombatTypeData {");
+		expect(output).not.toContain(`type: "POKEMON_TYPE_BUG"`);
+		// `excellentLevelThreshold` should not appear in XData (only in base body).
+		const xdataStart = output.indexOf("export interface CombatTypeData");
+		const xdataEnd = output.indexOf("}", xdataStart);
+		const xdataBlock = output.slice(xdataStart, xdataEnd + 1);
+		expect(xdataBlock).not.toContain("excellentLevelThreshold");
+		// number literals widen to `number` for XData (per widenType policy).
+		expect(xdataBlock).toContain("greatLevelThreshold: number;");
+
+		// Per-variant aliases: payload should NOT carry `type` (it's derived from TemplateID).
+		const bugStart = output.indexOf("export type CombatTypeBug = CombatType<");
+		const bugEnd = output.indexOf(">;", bugStart);
+		const bugBlock = output.slice(bugStart, bugEnd + 2);
+		expect(bugBlock).toContain(`"COMBAT_POKEMON_TYPE_BUG"`);
+		expect(bugBlock).toContain("greatLevelThreshold: 0.7"); // varying, in TData
+		expect(bugBlock).not.toContain(`"POKEMON_TYPE_BUG"`); // not as a `type` value
+		expect(bugBlock).not.toContain("type:");
+		expect(bugBlock).not.toContain("excellentLevelThreshold"); // constant, in base body only
 	});
 
 	test("sorts per-entry aliases by templateId lexicographically", () => {

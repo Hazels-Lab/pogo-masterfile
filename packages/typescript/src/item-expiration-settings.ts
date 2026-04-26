@@ -7,7 +7,9 @@ export interface ItemExpirationSettings<
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;
-		itemExpirationSettings: TData;
+		itemExpirationSettings: TData & {
+			item: TemplateID extends `ITEM_EXPIRATION_${infer Rest}` ? Rest : string;
+		};
 	};
 }
 
@@ -53,29 +55,6 @@ export interface ItemExpirationSettingsData {
 		| "2026-05-08T20:00:00"
 		| "2026-05-12T23:59:00"
 		| "2026-06-04T10:00:00";
-	item:
-		| "ITEM_EVENT_PASS_POINT_GO_FEST_01"
-		| "ITEM_EVENT_PASS_POINT_GO_FEST_02"
-		| "ITEM_EVENT_PASS_POINT_GO_TOUR_01"
-		| "ITEM_EVENT_PASS_POINT_GO_TOUR_02"
-		| "ITEM_EVENT_PASS_POINT_GO_WILD_AREA_01"
-		| "ITEM_EVENT_PASS_POINT_LIVE_OPS_01"
-		| "ITEM_EVENT_PASS_POINT_LIVE_OPS_02"
-		| "ITEM_EVENT_PASS_POINT_LIVE_OPS_03"
-		| "ITEM_EVENT_PASS_POINT_LIVE_OPS_04"
-		| "ITEM_EVENT_PASS_POINT_LIVE_OPS_05"
-		| "ITEM_EVENT_PASS_POINT_LIVE_OPS_06"
-		| "ITEM_EVENT_PASS_POINT_LIVE_OPS_07"
-		| "ITEM_EVENT_PASS_POINT_LIVE_OPS_08"
-		| "ITEM_EVENT_PASS_POINT_MONTHLY_01"
-		| "ITEM_EVENT_PASS_POINT_MONTHLY_02"
-		| "ITEM_EVENT_PASS_POINT_MONTHLY_03"
-		| "ITEM_INCUBATOR_TIMED"
-		| "ITEM_LUCKY_FRIEND_APPLICATOR"
-		| "ITEM_SINGLE_STAT_INCREASE"
-		| "ITEM_TRIPLE_STAT_INCREASE"
-		| "ITEM_WILD_BALL"
-		| "ITEM_WILD_BALL_PREMIER";
 	itemEnablementSettings?: {
 		enabledTimePeriods: [
 			{
@@ -94,7 +73,6 @@ export type ItemExpirationSettingsEventPassPointGoFest01 = ItemExpirationSetting
 	"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_GO_FEST_01",
 	{
 		expirationTime: "2025-06-29T23:59:59";
-		item: "ITEM_EVENT_PASS_POINT_GO_FEST_01";
 	}
 >;
 export type ItemExpirationSettingsEventPassPointGoFest02 = ItemExpirationSettings<
@@ -102,28 +80,24 @@ export type ItemExpirationSettingsEventPassPointGoFest02 = ItemExpirationSetting
 	{
 		emergencyExpirationTime: "2025-09-25T21:00:00";
 		expirationTime: "2025-08-26T21:00:00";
-		item: "ITEM_EVENT_PASS_POINT_GO_FEST_02";
 	}
 >;
 export type ItemExpirationSettingsEventPassPointGoTour01 = ItemExpirationSettings<
 	"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_GO_TOUR_01",
 	{
 		expirationTime: "2026-03-03T18:00:00";
-		item: "ITEM_EVENT_PASS_POINT_GO_TOUR_01";
 	}
 >;
 export type ItemExpirationSettingsEventPassPointGoTour02 = ItemExpirationSettings<
 	"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_GO_TOUR_02",
 	{
 		expirationTime: "2026-02-22T17:00:00";
-		item: "ITEM_EVENT_PASS_POINT_GO_TOUR_02";
 	}
 >;
 export type ItemExpirationSettingsEventPassPointGoWildArea01 = ItemExpirationSettings<
 	"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_GO_WILD_AREA_01",
 	{
 		expirationTime: "2025-11-16T18:00:00";
-		item: "ITEM_EVENT_PASS_POINT_GO_WILD_AREA_01";
 	}
 >;
 export type ItemExpirationSettingsEventPassPointLiveOps01 = ItemExpirationSettings<
@@ -131,7 +105,6 @@ export type ItemExpirationSettingsEventPassPointLiveOps01 = ItemExpirationSettin
 	{
 		emergencyExpirationTime: "2026-01-10T10:00:00";
 		expirationTime: "2026-01-08T10:00:00";
-		item: "ITEM_EVENT_PASS_POINT_LIVE_OPS_01";
 	}
 >;
 export type ItemExpirationSettingsEventPassPointLiveOps02 = ItemExpirationSettings<
@@ -139,7 +112,6 @@ export type ItemExpirationSettingsEventPassPointLiveOps02 = ItemExpirationSettin
 	{
 		emergencyExpirationTime: "2026-02-07T10:00:00";
 		expirationTime: "2026-02-05T10:00:00";
-		item: "ITEM_EVENT_PASS_POINT_LIVE_OPS_02";
 	}
 >;
 export type ItemExpirationSettingsEventPassPointLiveOps03 = ItemExpirationSettings<
@@ -147,7 +119,6 @@ export type ItemExpirationSettingsEventPassPointLiveOps03 = ItemExpirationSettin
 	{
 		emergencyExpirationTime: "2026-03-07T10:00:00";
 		expirationTime: "2026-03-05T10:00:00";
-		item: "ITEM_EVENT_PASS_POINT_LIVE_OPS_03";
 	}
 >;
 export type ItemExpirationSettingsEventPassPointLiveOps04 = ItemExpirationSettings<
@@ -155,7 +126,6 @@ export type ItemExpirationSettingsEventPassPointLiveOps04 = ItemExpirationSettin
 	{
 		emergencyExpirationTime: "2026-05-09T10:00:00";
 		expirationTime: "2026-05-08T20:00:00";
-		item: "ITEM_EVENT_PASS_POINT_LIVE_OPS_04";
 	}
 >;
 export type ItemExpirationSettingsEventPassPointLiveOps05 = ItemExpirationSettings<
@@ -163,7 +133,6 @@ export type ItemExpirationSettingsEventPassPointLiveOps05 = ItemExpirationSettin
 	{
 		emergencyExpirationTime: "2026-03-27T10:00:00";
 		expirationTime: "2026-03-25T20:00:00";
-		item: "ITEM_EVENT_PASS_POINT_LIVE_OPS_05";
 	}
 >;
 export type ItemExpirationSettingsEventPassPointLiveOps06 = ItemExpirationSettings<
@@ -171,7 +140,6 @@ export type ItemExpirationSettingsEventPassPointLiveOps06 = ItemExpirationSettin
 	{
 		emergencyExpirationTime: "2026-04-10T10:00:00";
 		expirationTime: "2026-04-08T20:00:00";
-		item: "ITEM_EVENT_PASS_POINT_LIVE_OPS_06";
 	}
 >;
 export type ItemExpirationSettingsEventPassPointLiveOps07 = ItemExpirationSettings<
@@ -179,7 +147,6 @@ export type ItemExpirationSettingsEventPassPointLiveOps07 = ItemExpirationSettin
 	{
 		emergencyExpirationTime: "2026-04-25T10:00:00";
 		expirationTime: "2026-04-24T20:00:00";
-		item: "ITEM_EVENT_PASS_POINT_LIVE_OPS_07";
 	}
 >;
 export type ItemExpirationSettingsEventPassPointLiveOps08 = ItemExpirationSettings<
@@ -187,7 +154,6 @@ export type ItemExpirationSettingsEventPassPointLiveOps08 = ItemExpirationSettin
 	{
 		emergencyExpirationTime: "2026-05-09T10:00:00";
 		expirationTime: "2026-05-08T20:00:00";
-		item: "ITEM_EVENT_PASS_POINT_LIVE_OPS_08";
 	}
 >;
 export type ItemExpirationSettingsEventPassPointMonthly01 = ItemExpirationSettings<
@@ -195,7 +161,6 @@ export type ItemExpirationSettingsEventPassPointMonthly01 = ItemExpirationSettin
 	{
 		emergencyExpirationTime: "2026-04-11T10:00:00";
 		expirationTime: "2026-04-09T10:00:00";
-		item: "ITEM_EVENT_PASS_POINT_MONTHLY_01";
 	}
 >;
 export type ItemExpirationSettingsEventPassPointMonthly02 = ItemExpirationSettings<
@@ -203,7 +168,6 @@ export type ItemExpirationSettingsEventPassPointMonthly02 = ItemExpirationSettin
 	{
 		emergencyExpirationTime: "2026-05-09T10:00:00";
 		expirationTime: "2026-05-07T10:00:00";
-		item: "ITEM_EVENT_PASS_POINT_MONTHLY_02";
 	}
 >;
 export type ItemExpirationSettingsEventPassPointMonthly03 = ItemExpirationSettings<
@@ -211,14 +175,12 @@ export type ItemExpirationSettingsEventPassPointMonthly03 = ItemExpirationSettin
 	{
 		emergencyExpirationTime: "2026-06-06T10:00:00";
 		expirationTime: "2026-06-04T10:00:00";
-		item: "ITEM_EVENT_PASS_POINT_MONTHLY_03";
 	}
 >;
 export type ItemExpirationSettingsIncubatorTimed = ItemExpirationSettings<
 	"ITEM_EXPIRATION_ITEM_INCUBATOR_TIMED",
 	{
 		expirationTime: "2026-01-13T10:00:00";
-		item: "ITEM_INCUBATOR_TIMED";
 	}
 >;
 export type ItemExpirationSettingsLuckyFriendApplicator = ItemExpirationSettings<
@@ -226,7 +188,6 @@ export type ItemExpirationSettingsLuckyFriendApplicator = ItemExpirationSettings
 	{
 		emergencyExpirationTime: "2026-05-13T10:00:00";
 		expirationTime: "2026-05-12T23:59:00";
-		item: "ITEM_LUCKY_FRIEND_APPLICATOR";
 	}
 >;
 export type ItemExpirationSettingsSingleStatIncrease = ItemExpirationSettings<
@@ -241,7 +202,6 @@ export type ItemExpirationSettingsSingleStatIncrease = ItemExpirationSettings<
 			];
 		};
 		expirationTime: "2025-11-24T23:59:59";
-		item: "ITEM_SINGLE_STAT_INCREASE";
 	}
 >;
 export type ItemExpirationSettingsTripleStatIncrease = ItemExpirationSettings<
@@ -256,7 +216,6 @@ export type ItemExpirationSettingsTripleStatIncrease = ItemExpirationSettings<
 			];
 		};
 		expirationTime: "2025-07-06T23:59:59";
-		item: "ITEM_TRIPLE_STAT_INCREASE";
 	}
 >;
 export type ItemExpirationSettingsWildBall = ItemExpirationSettings<
@@ -264,7 +223,6 @@ export type ItemExpirationSettingsWildBall = ItemExpirationSettings<
 	{
 		emergencyExpirationTime: "2025-11-16T18:00:00";
 		expirationTime: "2025-11-16T18:00:00";
-		item: "ITEM_WILD_BALL";
 		itemEnablementSettings: {
 			enabledTimePeriods: [
 				{
@@ -284,7 +242,6 @@ export type ItemExpirationSettingsWildBallPremier = ItemExpirationSettings<
 	{
 		emergencyExpirationTime: "2025-11-16T18:00:00";
 		expirationTime: "2025-11-16T18:00:00";
-		item: "ITEM_WILD_BALL_PREMIER";
 		itemEnablementSettings: {
 			enabledTimePeriods: [
 				{
