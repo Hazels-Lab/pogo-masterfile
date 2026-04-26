@@ -1,3 +1,5 @@
+/** biome-ignore-all lint/suspicious/noTemplateCurlyInString: valid type generating tests */
+
 import { describe, expect, test } from "bun:test";
 import { emitGroupFile, emitIndexFile, emitMiscFile, kebabCase } from "./emit.ts";
 import { MOCK_MASTERFILE } from "./fixtures.ts";
