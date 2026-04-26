@@ -6,6 +6,7 @@ import { detectInvariants, invariantsToInferredType, stripInvariantsFromValue, s
 import { aliasSuffix, deriveGroupAliases, groupName } from "./naming.ts";
 
 const TEMPLATE_GENERIC = `TemplateID`;
+const SIMPLIFY = `S`;
 
 export function emitGroupFile(group: Group): string {
 	const gName = groupName(group.discriminator);
@@ -21,7 +22,11 @@ export function emitGroupFile(group: Group): string {
 	const discName = renderPropertyName(group.discriminator);
 	const entryCount = group.entries.length;
 	const entryWord = entryCount === 1 ? "entry" : "entries";
-	const lines: string[] = [`// Generated from Pokémon GO masterfile — group "${group.discriminator}", ${entryCount} ${entryWord}.`, ``];
+	const lines: string[] = [
+		`// Generated from Pokémon GO masterfile — group "${group.discriminator}", ${entryCount} ${entryWord}.`,
+		``,
+		`import type { ${SIMPLIFY} } from "./_utils"`,
+	];
 
 	// Base generic interface.
 	lines.push(`export interface ${gName}<`);
@@ -103,13 +108,13 @@ function renderVariantAlias(gName: string, entry: Entry, group: Group, variantSu
 
 	const isEmpty = !isJsonObject(stripped) || Object.keys(stripped).length === 0;
 	if (isEmpty) {
-		return [`export type ${typeName} = ${gName}<"${entry.templateId}", Record<string, never>>;`];
+		return [`export type ${typeName} = ${SIMPLIFY}<${gName}<"${entry.templateId}", Record<string, never>>>;`];
 	}
 
 	const literalType = inferJsonType(stripped);
 	const literalLines = renderType(literalType);
 
-	const lines: string[] = [`export type ${typeName} = ${gName}<`];
+	const lines: string[] = [`export type ${typeName} = ${SIMPLIFY}<${gName}<`];
 	lines.push(`\t"${entry.templateId}",`);
 	if (literalLines.length === 1) {
 		lines.push(`\t${literalLines[0]}`);
@@ -118,7 +123,7 @@ function renderVariantAlias(gName: string, entry: Entry, group: Group, variantSu
 			lines.push(`\t${line}`);
 		}
 	}
-	lines.push(`>;`);
+	lines.push(`>>;`);
 	return lines;
 }
 

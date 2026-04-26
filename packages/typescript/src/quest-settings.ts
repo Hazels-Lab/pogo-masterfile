@@ -1,5 +1,6 @@
 // Generated from Pokémon GO masterfile — group "questSettings", 3 entries.
 
+import type { S } from "./_utils";
 export interface QuestSettings<TemplateID extends string = string, TData extends QuestSettingsData = QuestSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -21,17 +22,19 @@ export interface QuestSettingsData {
 	};
 }
 
-export type QuestSettingsCatchOfTheDay = QuestSettings<"QUEST_FIRST_CATCH_OF_THE_DAY", Record<string, never>>;
-export type QuestSettingsPokestopOfTheDay = QuestSettings<
-	"QUEST_FIRST_POKESTOP_OF_THE_DAY",
-	{
-		dailyQuest: {
-			bonusMultiplier: 2;
-			streakBonusMultiplier: 3;
-		};
-	}
+export type QuestSettingsCatchOfTheDay = S<QuestSettings<"QUEST_FIRST_CATCH_OF_THE_DAY", Record<string, never>>>;
+export type QuestSettingsPokestopOfTheDay = S<
+	QuestSettings<
+		"QUEST_FIRST_POKESTOP_OF_THE_DAY",
+		{
+			dailyQuest: {
+				bonusMultiplier: 2;
+				streakBonusMultiplier: 3;
+			};
+		}
+	>
 >;
-export type QuestSettingsRouteOfTheDay = QuestSettings<"QUEST_FIRST_ROUTE_OF_THE_DAY", Record<string, never>>;
+export type QuestSettingsRouteOfTheDay = S<QuestSettings<"QUEST_FIRST_ROUTE_OF_THE_DAY", Record<string, never>>>;
 
 export type QuestSettingsMasterfileEntry = QuestSettingsCatchOfTheDay | QuestSettingsPokestopOfTheDay | QuestSettingsRouteOfTheDay;
 

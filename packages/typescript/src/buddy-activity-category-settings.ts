@@ -1,5 +1,6 @@
 // Generated from Pokémon GO masterfile — group "buddyActivityCategorySettings", 8 entries.
 
+import type { S } from "./_utils";
 export interface BuddyActivityCategorySettings<
 	TemplateID extends string = string,
 	TData extends BuddyActivityCategorySettingsData = BuddyActivityCategorySettingsData,
@@ -17,53 +18,69 @@ export interface BuddyActivityCategorySettingsData {
 	maxPointsPerDay: number;
 }
 
-export type BuddyActivityCategorySettingsBattle = BuddyActivityCategorySettings<
-	"BUDDY_CATEGORY_BATTLE",
-	{
-		maxPointsPerDay: 3;
-	}
+export type BuddyActivityCategorySettingsBattle = S<
+	BuddyActivityCategorySettings<
+		"BUDDY_CATEGORY_BATTLE",
+		{
+			maxPointsPerDay: 3;
+		}
+	>
 >;
-export type BuddyActivityCategorySettingsBonus = BuddyActivityCategorySettings<
-	"BUDDY_CATEGORY_BONUS",
-	{
-		maxPointsPerDay: 6;
-	}
+export type BuddyActivityCategorySettingsBonus = S<
+	BuddyActivityCategorySettings<
+		"BUDDY_CATEGORY_BONUS",
+		{
+			maxPointsPerDay: 6;
+		}
+	>
 >;
-export type BuddyActivityCategorySettingsCare = BuddyActivityCategorySettings<
-	"BUDDY_CATEGORY_CARE",
-	{
-		maxPointsPerDay: 1;
-	}
+export type BuddyActivityCategorySettingsCare = S<
+	BuddyActivityCategorySettings<
+		"BUDDY_CATEGORY_CARE",
+		{
+			maxPointsPerDay: 1;
+		}
+	>
 >;
-export type BuddyActivityCategorySettingsExplore = BuddyActivityCategorySettings<
-	"BUDDY_CATEGORY_EXPLORE",
-	{
-		maxPointsPerDay: 1;
-	}
+export type BuddyActivityCategorySettingsExplore = S<
+	BuddyActivityCategorySettings<
+		"BUDDY_CATEGORY_EXPLORE",
+		{
+			maxPointsPerDay: 1;
+		}
+	>
 >;
-export type BuddyActivityCategorySettingsFeed = BuddyActivityCategorySettings<
-	"BUDDY_CATEGORY_FEED",
-	{
-		maxPointsPerDay: 3;
-	}
+export type BuddyActivityCategorySettingsFeed = S<
+	BuddyActivityCategorySettings<
+		"BUDDY_CATEGORY_FEED",
+		{
+			maxPointsPerDay: 3;
+		}
+	>
 >;
-export type BuddyActivityCategorySettingsRoute = BuddyActivityCategorySettings<
-	"BUDDY_CATEGORY_ROUTE",
-	{
-		maxPointsPerDay: 1;
-	}
+export type BuddyActivityCategorySettingsRoute = S<
+	BuddyActivityCategorySettings<
+		"BUDDY_CATEGORY_ROUTE",
+		{
+			maxPointsPerDay: 1;
+		}
+	>
 >;
-export type BuddyActivityCategorySettingsSnapshot = BuddyActivityCategorySettings<
-	"BUDDY_CATEGORY_SNAPSHOT",
-	{
-		maxPointsPerDay: 1;
-	}
+export type BuddyActivityCategorySettingsSnapshot = S<
+	BuddyActivityCategorySettings<
+		"BUDDY_CATEGORY_SNAPSHOT",
+		{
+			maxPointsPerDay: 1;
+		}
+	>
 >;
-export type BuddyActivityCategorySettingsWalk = BuddyActivityCategorySettings<
-	"BUDDY_CATEGORY_WALK",
-	{
-		maxPointsPerDay: 3;
-	}
+export type BuddyActivityCategorySettingsWalk = S<
+	BuddyActivityCategorySettings<
+		"BUDDY_CATEGORY_WALK",
+		{
+			maxPointsPerDay: 3;
+		}
+	>
 >;
 
 export type BuddyActivityCategorySettingsMasterfileEntry =

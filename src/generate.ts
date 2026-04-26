@@ -34,6 +34,7 @@ function planFiles(groups: Map<string, Group>): Map<string, string> {
 	}
 	files.set("misc.ts", emitMiscFile(singletons));
 	files.set("index.ts", emitIndexFile(multiEntry.map((g) => g.discriminator)));
+	files.set("_utils.ts", "export type S<T> = {[KeyType in keyof T]: T[KeyType]} & {};");
 
 	return files;
 }

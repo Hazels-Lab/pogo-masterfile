@@ -2854,14 +2854,7 @@ export interface BuddyInteractionSettings {
 	data: {
 		templateId: "BUDDY_INTERACTION_SETTINGS";
 		buddyInteractionSettings: {
-			feedItemWhitelist: [
-				"ITEM_RAZZ_BERRY",
-				"ITEM_NANAB_BERRY",
-				"ITEM_PINAP_BERRY",
-				"ITEM_GOLDEN_RAZZ_BERRY",
-				"ITEM_GOLDEN_PINAP_BERRY",
-				"ITEM_POFFIN",
-			];
+			feedItemWhitelist: ["ITEM_RAZZ_BERRY", "ITEM_NANAB_BERRY", "ITEM_PINAP_BERRY", "ITEM_GOLDEN_RAZZ_BERRY", "ITEM_GOLDEN_PINAP_BERRY", "ITEM_POFFIN"];
 		};
 	};
 }
@@ -3614,13 +3607,7 @@ export interface InventorySettings {
 	data: {
 		templateId: "INVENTORY_SETTINGS";
 		inventorySettings: {
-			bagUpgradeBannerContexts: [
-				"MAIN_MENU",
-				"PARTY_SELECT",
-				"SPONSORED_GIFT_INVENTORY_FULL",
-				"COMBAT_HUB_INVENTORY_FULL",
-				"QUICK_SHOP_INVENTORY_FULL",
-			];
+			bagUpgradeBannerContexts: ["MAIN_MENU", "PARTY_SELECT", "SPONSORED_GIFT_INVENTORY_FULL", "COMBAT_HUB_INVENTORY_FULL", "QUICK_SHOP_INVENTORY_FULL"];
 			bagUpgradeBannerEnabled: true;
 			bagUpgradeTimerStages: [
 				{
@@ -4129,12 +4116,7 @@ export interface ItemInventoryUpdateSettings {
 					sortOrder: 8;
 				},
 				{
-					category: [
-						"ITEM_CATEGORY_CAMERA",
-						"ITEM_CATEGORY_ROUTE_MAKER",
-						"ITEM_CATEGORY_UTILITES",
-						"ITEM_CATEGORY_ENHANCED_CURRENCY_HOLDER",
-					];
+					category: ["ITEM_CATEGORY_CAMERA", "ITEM_CATEGORY_ROUTE_MAKER", "ITEM_CATEGORY_UTILITES", "ITEM_CATEGORY_ENHANCED_CURRENCY_HOLDER"];
 					categoryName: "item_bag_category_key_items";
 					sortOrder: 9;
 				},
@@ -6762,11 +6744,7 @@ export interface VsSeekerScheduleSettings {
 						{
 							endTimeMs: "1774987200000";
 							startTimeMs: "1774382400000";
-							vsSeekerLeagueTempalteId: [
-								"COMBAT_LEAGUE_VS_SEEKER_GREAT",
-								"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
-								"COMBAT_LEAGUE_VS_SEEKER_MASTER",
-							];
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_MASTER"];
 						},
 						{
 							endTimeMs: "1775592000000";
@@ -6786,11 +6764,7 @@ export interface VsSeekerScheduleSettings {
 						{
 							endTimeMs: "1777406400000";
 							startTimeMs: "1776801600000";
-							vsSeekerLeagueTempalteId: [
-								"COMBAT_LEAGUE_VS_SEEKER_GREAT",
-								"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
-								"COMBAT_LEAGUE_VS_SEEKER_MASTER",
-							];
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_MASTER"];
 						},
 						{
 							endTimeMs: "1778011200000";
@@ -6810,20 +6784,12 @@ export interface VsSeekerScheduleSettings {
 						{
 							endTimeMs: "1779825600000";
 							startTimeMs: "1779220800000";
-							vsSeekerLeagueTempalteId: [
-								"COMBAT_LEAGUE_VS_SEEKER_GREAT",
-								"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
-								"COMBAT_LEAGUE_VS_SEEKER_MASTER",
-							];
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_MASTER"];
 						},
 						{
 							endTimeMs: "1780430400000";
 							startTimeMs: "1779825600000";
-							vsSeekerLeagueTempalteId: [
-								"COMBAT_LEAGUE_VS_SEEKER_GREAT",
-								"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
-								"COMBAT_LEAGUE_VS_SEEKER_MASTER",
-							];
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_MASTER"];
 						},
 					];
 				},

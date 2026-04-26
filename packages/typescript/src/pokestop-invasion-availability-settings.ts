@@ -1,5 +1,6 @@
 // Generated from Pokémon GO masterfile — group "pokestopInvasionAvailabilitySettings", 7 entries.
 
+import type { S } from "./_utils";
 export interface PokestopInvasionAvailabilitySettings<
 	TemplateID extends string = string,
 	TData extends PokestopInvasionAvailabilitySettingsData = PokestopInvasionAvailabilitySettingsData,
@@ -16,33 +17,26 @@ export interface PokestopInvasionAvailabilitySettings<
 
 export interface PokestopInvasionAvailabilitySettingsData {}
 
-export type PokestopInvasionAvailabilitySettingsFriday = PokestopInvasionAvailabilitySettings<
-	"INVASION_AVAILABILITY_SETTINGS_FRIDAY",
-	Record<string, never>
+export type PokestopInvasionAvailabilitySettingsFriday = S<
+	PokestopInvasionAvailabilitySettings<"INVASION_AVAILABILITY_SETTINGS_FRIDAY", Record<string, never>>
 >;
-export type PokestopInvasionAvailabilitySettingsMonday = PokestopInvasionAvailabilitySettings<
-	"INVASION_AVAILABILITY_SETTINGS_MONDAY",
-	Record<string, never>
+export type PokestopInvasionAvailabilitySettingsMonday = S<
+	PokestopInvasionAvailabilitySettings<"INVASION_AVAILABILITY_SETTINGS_MONDAY", Record<string, never>>
 >;
-export type PokestopInvasionAvailabilitySettingsSaturday = PokestopInvasionAvailabilitySettings<
-	"INVASION_AVAILABILITY_SETTINGS_SATURDAY",
-	Record<string, never>
+export type PokestopInvasionAvailabilitySettingsSaturday = S<
+	PokestopInvasionAvailabilitySettings<"INVASION_AVAILABILITY_SETTINGS_SATURDAY", Record<string, never>>
 >;
-export type PokestopInvasionAvailabilitySettingsSunday = PokestopInvasionAvailabilitySettings<
-	"INVASION_AVAILABILITY_SETTINGS_SUNDAY",
-	Record<string, never>
+export type PokestopInvasionAvailabilitySettingsSunday = S<
+	PokestopInvasionAvailabilitySettings<"INVASION_AVAILABILITY_SETTINGS_SUNDAY", Record<string, never>>
 >;
-export type PokestopInvasionAvailabilitySettingsThursday = PokestopInvasionAvailabilitySettings<
-	"INVASION_AVAILABILITY_SETTINGS_THURSDAY",
-	Record<string, never>
+export type PokestopInvasionAvailabilitySettingsThursday = S<
+	PokestopInvasionAvailabilitySettings<"INVASION_AVAILABILITY_SETTINGS_THURSDAY", Record<string, never>>
 >;
-export type PokestopInvasionAvailabilitySettingsTuesday = PokestopInvasionAvailabilitySettings<
-	"INVASION_AVAILABILITY_SETTINGS_TUESDAY",
-	Record<string, never>
+export type PokestopInvasionAvailabilitySettingsTuesday = S<
+	PokestopInvasionAvailabilitySettings<"INVASION_AVAILABILITY_SETTINGS_TUESDAY", Record<string, never>>
 >;
-export type PokestopInvasionAvailabilitySettingsWednesday = PokestopInvasionAvailabilitySettings<
-	"INVASION_AVAILABILITY_SETTINGS_WEDNESDAY",
-	Record<string, never>
+export type PokestopInvasionAvailabilitySettingsWednesday = S<
+	PokestopInvasionAvailabilitySettings<"INVASION_AVAILABILITY_SETTINGS_WEDNESDAY", Record<string, never>>
 >;
 
 export type PokestopInvasionAvailabilitySettingsMasterfileEntry =

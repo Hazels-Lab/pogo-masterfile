@@ -3,13 +3,7 @@ import { MOCK_MASTERFILE } from "./fixtures.ts";
 import { groupEntries } from "./group.ts";
 import type { InferredType } from "./infer.ts";
 import type { InvariantNode, InvariantTree } from "./invariants.ts";
-import {
-	deepEqual,
-	detectInvariants,
-	invariantsToInferredType,
-	stripInvariantsFromValue,
-	stripInvariantsFromWidened,
-} from "./invariants.ts";
+import { deepEqual, detectInvariants, invariantsToInferredType, stripInvariantsFromValue, stripInvariantsFromWidened } from "./invariants.ts";
 
 describe("deepEqual", () => {
 	test("returns true for equal primitives", () => {

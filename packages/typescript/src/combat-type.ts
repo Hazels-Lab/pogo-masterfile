@@ -1,5 +1,6 @@
 // Generated from Pokémon GO masterfile — group "combatType", 18 entries.
 
+import type { S } from "./_utils";
 export interface CombatType<TemplateID extends string = string, TData extends CombatTypeData = CombatTypeData> {
 	templateId: TemplateID;
 	data: {
@@ -16,113 +17,149 @@ export interface CombatTypeData {
 	greatLevelThreshold: number;
 }
 
-export type CombatTypeBug = CombatType<
-	"COMBAT_POKEMON_TYPE_BUG",
-	{
-		greatLevelThreshold: 0.7;
-	}
+export type CombatTypeBug = S<
+	CombatType<
+		"COMBAT_POKEMON_TYPE_BUG",
+		{
+			greatLevelThreshold: 0.7;
+		}
+	>
 >;
-export type CombatTypeDark = CombatType<
-	"COMBAT_POKEMON_TYPE_DARK",
-	{
-		greatLevelThreshold: 0.7;
-	}
+export type CombatTypeDark = S<
+	CombatType<
+		"COMBAT_POKEMON_TYPE_DARK",
+		{
+			greatLevelThreshold: 0.7;
+		}
+	>
 >;
-export type CombatTypeDragon = CombatType<
-	"COMBAT_POKEMON_TYPE_DRAGON",
-	{
-		greatLevelThreshold: 0.7;
-	}
+export type CombatTypeDragon = S<
+	CombatType<
+		"COMBAT_POKEMON_TYPE_DRAGON",
+		{
+			greatLevelThreshold: 0.7;
+		}
+	>
 >;
-export type CombatTypeElectric = CombatType<
-	"COMBAT_POKEMON_TYPE_ELECTRIC",
-	{
-		greatLevelThreshold: 0.7;
-	}
+export type CombatTypeElectric = S<
+	CombatType<
+		"COMBAT_POKEMON_TYPE_ELECTRIC",
+		{
+			greatLevelThreshold: 0.7;
+		}
+	>
 >;
-export type CombatTypeFairy = CombatType<
-	"COMBAT_POKEMON_TYPE_FAIRY",
-	{
-		greatLevelThreshold: 0.7;
-	}
+export type CombatTypeFairy = S<
+	CombatType<
+		"COMBAT_POKEMON_TYPE_FAIRY",
+		{
+			greatLevelThreshold: 0.7;
+		}
+	>
 >;
-export type CombatTypeFighting = CombatType<
-	"COMBAT_POKEMON_TYPE_FIGHTING",
-	{
-		greatLevelThreshold: 0.7;
-	}
+export type CombatTypeFighting = S<
+	CombatType<
+		"COMBAT_POKEMON_TYPE_FIGHTING",
+		{
+			greatLevelThreshold: 0.7;
+		}
+	>
 >;
-export type CombatTypeFire = CombatType<
-	"COMBAT_POKEMON_TYPE_FIRE",
-	{
-		greatLevelThreshold: 0.7;
-	}
+export type CombatTypeFire = S<
+	CombatType<
+		"COMBAT_POKEMON_TYPE_FIRE",
+		{
+			greatLevelThreshold: 0.7;
+		}
+	>
 >;
-export type CombatTypeFlying = CombatType<
-	"COMBAT_POKEMON_TYPE_FLYING",
-	{
-		greatLevelThreshold: 0.7;
-	}
+export type CombatTypeFlying = S<
+	CombatType<
+		"COMBAT_POKEMON_TYPE_FLYING",
+		{
+			greatLevelThreshold: 0.7;
+		}
+	>
 >;
-export type CombatTypeGhost = CombatType<
-	"COMBAT_POKEMON_TYPE_GHOST",
-	{
-		greatLevelThreshold: 0.7;
-	}
+export type CombatTypeGhost = S<
+	CombatType<
+		"COMBAT_POKEMON_TYPE_GHOST",
+		{
+			greatLevelThreshold: 0.7;
+		}
+	>
 >;
-export type CombatTypeGrass = CombatType<
-	"COMBAT_POKEMON_TYPE_GRASS",
-	{
-		greatLevelThreshold: 0.7;
-	}
+export type CombatTypeGrass = S<
+	CombatType<
+		"COMBAT_POKEMON_TYPE_GRASS",
+		{
+			greatLevelThreshold: 0.7;
+		}
+	>
 >;
-export type CombatTypeGround = CombatType<
-	"COMBAT_POKEMON_TYPE_GROUND",
-	{
-		greatLevelThreshold: 0.7;
-	}
+export type CombatTypeGround = S<
+	CombatType<
+		"COMBAT_POKEMON_TYPE_GROUND",
+		{
+			greatLevelThreshold: 0.7;
+		}
+	>
 >;
-export type CombatTypeIce = CombatType<
-	"COMBAT_POKEMON_TYPE_ICE",
-	{
-		greatLevelThreshold: 0.7;
-	}
+export type CombatTypeIce = S<
+	CombatType<
+		"COMBAT_POKEMON_TYPE_ICE",
+		{
+			greatLevelThreshold: 0.7;
+		}
+	>
 >;
-export type CombatTypeNormal = CombatType<
-	"COMBAT_POKEMON_TYPE_NORMAL",
-	{
-		greatLevelThreshold: 0.6;
-	}
+export type CombatTypeNormal = S<
+	CombatType<
+		"COMBAT_POKEMON_TYPE_NORMAL",
+		{
+			greatLevelThreshold: 0.6;
+		}
+	>
 >;
-export type CombatTypePoison = CombatType<
-	"COMBAT_POKEMON_TYPE_POISON",
-	{
-		greatLevelThreshold: 0.7;
-	}
+export type CombatTypePoison = S<
+	CombatType<
+		"COMBAT_POKEMON_TYPE_POISON",
+		{
+			greatLevelThreshold: 0.7;
+		}
+	>
 >;
-export type CombatTypePsychic = CombatType<
-	"COMBAT_POKEMON_TYPE_PSYCHIC",
-	{
-		greatLevelThreshold: 0.7;
-	}
+export type CombatTypePsychic = S<
+	CombatType<
+		"COMBAT_POKEMON_TYPE_PSYCHIC",
+		{
+			greatLevelThreshold: 0.7;
+		}
+	>
 >;
-export type CombatTypeRock = CombatType<
-	"COMBAT_POKEMON_TYPE_ROCK",
-	{
-		greatLevelThreshold: 0.7;
-	}
+export type CombatTypeRock = S<
+	CombatType<
+		"COMBAT_POKEMON_TYPE_ROCK",
+		{
+			greatLevelThreshold: 0.7;
+		}
+	>
 >;
-export type CombatTypeSteel = CombatType<
-	"COMBAT_POKEMON_TYPE_STEEL",
-	{
-		greatLevelThreshold: 0.7;
-	}
+export type CombatTypeSteel = S<
+	CombatType<
+		"COMBAT_POKEMON_TYPE_STEEL",
+		{
+			greatLevelThreshold: 0.7;
+		}
+	>
 >;
-export type CombatTypeWater = CombatType<
-	"COMBAT_POKEMON_TYPE_WATER",
-	{
-		greatLevelThreshold: 0.7;
-	}
+export type CombatTypeWater = S<
+	CombatType<
+		"COMBAT_POKEMON_TYPE_WATER",
+		{
+			greatLevelThreshold: 0.7;
+		}
+	>
 >;
 
 export type CombatTypeMasterfileEntry =
