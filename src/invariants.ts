@@ -3,7 +3,7 @@ import { isJsonObject } from "./helpers.ts";
 import type { InferredProperty, InferredType } from "./infer.ts";
 import { inferJsonType } from "./infer.ts";
 
-export function deepEqual(a: unknown, b: unknown): boolean {
+export function deepEqual<T>(a: T, b: T): boolean {
 	if (a === b) return true;
 	if (a === null || b === null) return false;
 	if (typeof a !== "object" || typeof b !== "object") return false;
