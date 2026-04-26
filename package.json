@@ -4,7 +4,7 @@
 	"type": "module",
 	"private": true,
 	"scripts": {
-		"generate": "bun run src/generate.ts",
+		"generate": "bun run src/generate.ts && bun run format",
 		"test": "bun test",
 		"typecheck": "tsc --noEmit",
 		"lint": "biome check",
