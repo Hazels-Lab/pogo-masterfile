@@ -553,3 +553,13 @@ export function emitVariantFile(group: Group, bucketName: string, entries: Entry
 	lines.push(``);
 	return lines.join("\n");
 }
+
+export function emitVariantsBarrel(discriminator: string, fileNames: string[]): string {
+	const sorted = [...fileNames].sort();
+	const lines: string[] = [`// Generated from Pokémon GO masterfile — group "${discriminator}" variants barrel.`, ``];
+	for (const name of sorted) {
+		lines.push(`export type * from "./${name}";`);
+	}
+	lines.push(``);
+	return lines.join("\n");
+}

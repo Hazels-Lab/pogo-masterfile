@@ -1,7 +1,7 @@
 /** biome-ignore-all lint/suspicious/noTemplateCurlyInString: valid type generating tests */
 
 import { describe, expect, test } from "bun:test";
-import { emitGroupFile, emitIndexFile, emitMiscFile, emitVariantFile, emitVariantsFlat, kebabCase } from "./emit.ts";
+import { emitGroupFile, emitIndexFile, emitMiscFile, emitVariantFile, emitVariantsBarrel, emitVariantsFlat, kebabCase } from "./emit.ts";
 import { MOCK_MASTERFILE } from "./fixtures.ts";
 import type { Group } from "./group.ts";
 import { groupEntries } from "./group.ts";
@@ -728,5 +728,29 @@ describe("emitVariantFile", () => {
 		const flatBugEnd = flat.indexOf(">;", flatBugStart) + 2;
 		const flatBug = flat.slice(flatBugStart, flatBugEnd);
 		expect(splitBug).toBe(flatBug);
+	});
+});
+
+describe("emitVariantsBarrel", () => {
+	test("emits a deterministic header", () => {
+		const output = emitVariantsBarrel("pokemonSettings", ["water", "fire", "grass"]);
+		expect(output.startsWith(`// Generated from Pokémon GO masterfile — group "pokemonSettings" variants barrel.\n`)).toBe(true);
+	});
+
+	test("re-exports each file alphabetically", () => {
+		const output = emitVariantsBarrel("pokemonSettings", ["water", "fire", "grass"]);
+		expect(output).toContain(`export type * from "./fire";`);
+		expect(output).toContain(`export type * from "./grass";`);
+		expect(output).toContain(`export type * from "./water";`);
+		const fireIdx = output.indexOf("./fire");
+		const grassIdx = output.indexOf("./grass");
+		const waterIdx = output.indexOf("./water");
+		expect(fireIdx).toBeLessThan(grassIdx);
+		expect(grassIdx).toBeLessThan(waterIdx);
+	});
+
+	test("handles a single-file barrel", () => {
+		const output = emitVariantsBarrel("formSettings", ["base"]);
+		expect(output).toContain(`export type * from "./base";`);
 	});
 });
