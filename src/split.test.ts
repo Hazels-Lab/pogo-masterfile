@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
 import type { Group } from "./group.ts";
-import { tryH1, valueFileName } from "./split.ts";
+import { tryH1, tryH2, valueFileName } from "./split.ts";
 
 function mkGroup(payloads: Array<Record<string, unknown>>, discriminator = "x"): Group {
 	return {
@@ -132,5 +132,59 @@ describe("tryH1 file naming", () => {
 		expect(result).not.toBeNull();
 		const water = result!.buckets.find((b) => b.value === "POKEMON_TYPE_WATER");
 		expect(water?.fileName).toBe("water");
+	});
+});
+
+describe("tryH2", () => {
+	test("succeeds when avg cluster size >= 5, stripping universally-present fields", () => {
+		// 15 entries, 3 clusters of 5 each.
+		const make = (form: string | undefined, extra: number | undefined): Record<string, unknown> => {
+			const o: Record<string, unknown> = { id: "x" };
+			if (form !== undefined) o.form = form;
+			if (extra !== undefined) o.extra = extra;
+			return o;
+		};
+		const payloads: Array<Record<string, unknown>> = [];
+		for (let i = 0; i < 5; i += 1) payloads.push(make(`f${i}`, undefined));
+		for (let i = 0; i < 5; i += 1) payloads.push(make(undefined, undefined));
+		for (let i = 0; i < 5; i += 1) payloads.push(make(`f${i}`, i));
+		const group = mkGroup(payloads);
+
+		const clusters = tryH2(group);
+		expect(clusters).not.toBeNull();
+		expect(clusters!).toHaveLength(3);
+
+		const fingerprints = clusters!.map((c) => c.fingerprint.join("|")).sort();
+		expect(fingerprints).toEqual(["", "extra|form", "form"]);
+	});
+
+	test("rejects single-cluster fixture", () => {
+		// Every variant has the same shape → after stripping universal fields, fingerprint is {}.
+		const group = mkGroup(Array.from({ length: 10 }, () => ({ a: 1, b: 2 })));
+		expect(tryH2(group)).toBeNull();
+	});
+
+	test("rejects too-many-clusters fixture (avg cluster size < 5)", () => {
+		// 10 variants, each with a unique optional field → 10 clusters of size 1 → avg 1.
+		const payloads = Array.from({ length: 10 }, (_, i) => ({ id: "shared", [`uniq${i}`]: 1 }));
+		const group = mkGroup(payloads);
+		expect(tryH2(group)).toBeNull();
+	});
+
+	test("accepts lopsided 2-cluster fixture (96/4)", () => {
+		const big = Array.from({ length: 96 }, () => ({ id: "x" }));
+		const small = Array.from({ length: 4 }, () => ({ id: "x", form: "Y" }));
+		const group = mkGroup([...big, ...small]);
+		const clusters = tryH2(group);
+		expect(clusters).not.toBeNull();
+		expect(clusters!).toHaveLength(2);
+	});
+
+	test("clusters are sorted descending by entry count", () => {
+		const small = Array.from({ length: 6 }, () => ({ id: "x", a: 1 }));
+		const big = Array.from({ length: 12 }, () => ({ id: "x" }));
+		const group = mkGroup([...small, ...big]);
+		const clusters = tryH2(group)!;
+		expect(clusters[0]!.entries.length).toBeGreaterThan(clusters[1]!.entries.length);
 	});
 });

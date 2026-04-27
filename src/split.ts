@@ -101,3 +101,49 @@ function longestCommonUnderscorePrefix(values: string[]): string {
 	const lastUnderscore = prefix.lastIndexOf("_");
 	return lastUnderscore >= 0 ? prefix.slice(0, lastUnderscore + 1) : "";
 }
+
+const H2_MIN_AVG_CLUSTER_SIZE = 5;
+
+export interface H2Cluster {
+	fingerprint: string[];
+	fileName: string;
+	entries: Entry[];
+}
+
+export function tryH2(group: Group): H2Cluster[] | null {
+	// Pass 1: count per-field presence to find universally-present fields.
+	const presenceCount = new Map<string, number>();
+	for (const entry of group.entries) {
+		const payload = entry.data[group.discriminator];
+		if (!isPlainObject(payload)) continue;
+		for (const k of Object.keys(payload)) presenceCount.set(k, (presenceCount.get(k) ?? 0) + 1);
+	}
+	const universal = new Set<string>();
+	for (const [k, count] of presenceCount) {
+		if (count === group.entries.length) universal.add(k);
+	}
+
+	// Pass 2: bucket entries by fingerprint (excluding universal fields).
+	const clusters = new Map<string, { fingerprint: string[]; entries: Entry[] }>();
+	for (const entry of group.entries) {
+		const payload = entry.data[group.discriminator];
+		const keys = isPlainObject(payload) ? Object.keys(payload) : [];
+		const fingerprint = keys.filter((k) => !universal.has(k)).sort();
+		const key = fingerprint.join("|");
+		const bucket = clusters.get(key);
+		if (bucket) bucket.entries.push(entry);
+		else clusters.set(key, { fingerprint, entries: [entry] });
+	}
+
+	if (clusters.size < 2) return null;
+	const minClusters = 2;
+	const maxClusters = Math.max(minClusters, Math.floor(group.entries.length / H2_MIN_AVG_CLUSTER_SIZE));
+	if (clusters.size > maxClusters) return null;
+
+	const result: H2Cluster[] = [];
+	for (const { fingerprint, entries } of clusters.values()) {
+		result.push({ fingerprint, fileName: "", entries });
+	}
+	result.sort((a, b) => b.entries.length - a.entries.length);
+	return result;
+}
