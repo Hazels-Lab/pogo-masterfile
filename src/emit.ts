@@ -563,3 +563,15 @@ export function emitVariantsBarrel(discriminator: string, fileNames: string[]): 
 	lines.push(``);
 	return lines.join("\n");
 }
+
+export function emitTopLevelVariants(groupSplits: Map<string, "split" | "flat">): string {
+	const sortedDiscs = [...groupSplits.keys()].sort();
+	const lines: string[] = [`// Generated from Pokémon GO masterfile — top-level variants barrel.`, ``];
+	for (const disc of sortedDiscs) {
+		const kebab = kebabCase(disc);
+		const path = groupSplits.get(disc) === "split" ? `./${kebab}/variants` : `./${kebab}/variants.ts`;
+		lines.push(`export type * from "${path}";`);
+	}
+	lines.push(``);
+	return lines.join("\n");
+}

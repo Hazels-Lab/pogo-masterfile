@@ -1,7 +1,7 @@
 /** biome-ignore-all lint/suspicious/noTemplateCurlyInString: valid type generating tests */
 
 import { describe, expect, test } from "bun:test";
-import { emitGroupFile, emitIndexFile, emitMiscFile, emitVariantFile, emitVariantsBarrel, emitVariantsFlat, kebabCase } from "./emit.ts";
+import { emitGroupFile, emitIndexFile, emitMiscFile, emitTopLevelVariants, emitVariantFile, emitVariantsBarrel, emitVariantsFlat, kebabCase } from "./emit.ts";
 import { MOCK_MASTERFILE } from "./fixtures.ts";
 import type { Group } from "./group.ts";
 import { groupEntries } from "./group.ts";
@@ -752,5 +752,38 @@ describe("emitVariantsBarrel", () => {
 	test("handles a single-file barrel", () => {
 		const output = emitVariantsBarrel("formSettings", ["base"]);
 		expect(output).toContain(`export type * from "./base";`);
+	});
+});
+
+describe("emitTopLevelVariants", () => {
+	test("emits a deterministic header", () => {
+		const output = emitTopLevelVariants(new Map());
+		expect(output.startsWith(`// Generated from Pokémon GO masterfile — top-level variants barrel.\n`)).toBe(true);
+	});
+
+	test("re-exports unsplit groups via /variants.ts and split groups via /variants", () => {
+		const groupSplits = new Map<string, "split" | "flat">([
+			["pokemonSettings", "split"],
+			["combatType", "flat"],
+			["pokemonExtendedSettings", "split"],
+		]);
+		const output = emitTopLevelVariants(groupSplits);
+
+		expect(output).toContain(`export type * from "./combat-type/variants.ts";`);
+		expect(output).toContain(`export type * from "./pokemon-settings/variants";`);
+		expect(output).toContain(`export type * from "./pokemon-extended-settings/variants";`);
+
+		// Sorted alphabetically by group kebab name:
+		const combatIdx = output.indexOf("./combat-type/");
+		const extendedIdx = output.indexOf("./pokemon-extended-settings/");
+		const settingsIdx = output.indexOf("./pokemon-settings/");
+		expect(combatIdx).toBeLessThan(extendedIdx);
+		expect(extendedIdx).toBeLessThan(settingsIdx);
+	});
+
+	test("emits empty body when no groups are present", () => {
+		const output = emitTopLevelVariants(new Map());
+		// Just header and a trailing newline.
+		expect(output).not.toContain("export type *");
 	});
 });
