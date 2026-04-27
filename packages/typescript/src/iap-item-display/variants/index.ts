@@ -1,0 +1,37 @@
+// Generated from Pokémon GO masterfile — group "iapItemDisplay" variants barrel.
+
+export type * from "./category";
+export type * from "./category+description+hidden+image-url+sku-disable-time+sku-disable-time-utc-ms+sku-enable-time+sku-enable-time-utc-ms+sort-order+sprite-id+title";
+export type * from "./category+description+hidden+image-url+sku-disable-time+sku-disable-time-utc-ms+sku-enable-time+sku-enable-time-utc-ms+sort-order+sprite-id+title+webstore-sku-id+webstore-sku-price-e6";
+export type * from "./category+description+hidden+sku-disable-time+sku-disable-time-utc-ms+sku-enable-time+sku-enable-time-utc-ms+sort-order+sprite-id+title";
+export type * from "./category+description+hidden+sort-order+sprite-id+title";
+export type * from "./category+description+image-url+sku-disable-time+sku-disable-time-utc-ms+sku-enable-time+sku-enable-time-utc-ms+sort-order+title";
+export type * from "./category+description+sort-order+sprite-id+title";
+export type * from "./category+hidden";
+export type * from "./category+hidden+image-url+sku-disable-time+sku-disable-time-utc-ms+sku-enable-time+sku-enable-time-utc-ms+sort-order+sprite-id";
+export type * from "./category+hidden+image-url+sku-disable-time+sku-disable-time-utc-ms+sku-enable-time+sku-enable-time-utc-ms+sort-order+sprite-id+title";
+export type * from "./category+hidden+image-url+sku-disable-time+sku-disable-time-utc-ms+sku-enable-time+sku-enable-time-utc-ms+sort-order+sprite-id+title+webstore-sku-id+webstore-sku-price-e6";
+export type * from "./category+hidden+image-url+sku-disable-time+sku-disable-time-utc-ms+sku-enable-time+sku-enable-time-utc-ms+sprite-id";
+export type * from "./category+hidden+sale+sort-order+sprite-id+title";
+export type * from "./category+hidden+show-discount-tag+show-strikethrough-price+sort-order+sprite-id+title+total-value";
+export type * from "./category+hidden+sku-disable-time+sku-disable-time-utc-ms+sku-enable-time+sku-enable-time-utc-ms+sort-order+sprite-id";
+export type * from "./category+hidden+sku-disable-time+sku-disable-time-utc-ms+sku-enable-time+sku-enable-time-utc-ms+sort-order+sprite-id+title";
+export type * from "./category+hidden+sort-order";
+export type * from "./category+hidden+sort-order+sprite-id";
+export type * from "./category+hidden+sort-order+sprite-id+title";
+export type * from "./category+hidden+sort-order+title";
+export type * from "./category+image-url+sku-disable-time+sku-disable-time-utc-ms+sku-enable-time+sku-enable-time-utc-ms+sort-order+sprite-id+title+webstore-sku-id+webstore-sku-price-e6";
+export type * from "./category+max-level+sale+sort-order+sprite-id+title";
+export type * from "./category+sale+sku-disable-time+sku-disable-time-utc-ms+sku-enable-time+sku-enable-time-utc-ms+sort-order";
+export type * from "./category+sale+sort-order+sprite-id+title";
+export type * from "./category+show-discount-tag+show-strikethrough-price+sku-disable-time+sku-disable-time-utc-ms+sku-enable-time+sku-enable-time-utc-ms+sort-order+sprite-id+title+total-value";
+export type * from "./category+show-discount-tag+show-strikethrough-price+sort-order+sprite-id+title+total-value";
+export type * from "./category+show-discount-tag+show-strikethrough-price+sort-order+sprite-id+total-value";
+export type * from "./category+sort-order";
+export type * from "./category+sort-order+sprite-id";
+export type * from "./category+sort-order+sprite-id+title";
+export type * from "./description+hidden+image-url+sku-disable-time+sku-disable-time-utc-ms+sku-enable-time+sku-enable-time-utc-ms+sort-order+title";
+export type * from "./description+image-url+sku-disable-time+sku-disable-time-utc-ms+sku-enable-time+sku-enable-time-utc-ms+sort-order+title";
+export type * from "./description+sku-disable-time+sku-disable-time-utc-ms+sku-enable-time+sku-enable-time-utc-ms+sort-order+title";
+export type * from "./show-discount-tag+show-strikethrough-price+sprite-id+total-value";
+export type * from "./sprite-id";
