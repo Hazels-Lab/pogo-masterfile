@@ -1,5 +1,15 @@
 import { join } from "node:path";
-import { emitGroupIndex, emitIndexFile, emitMiscFile, emitTopLevelVariants, emitVariantFile, emitVariantsBarrel, emitVariantsFlat, kebabCase } from "./emit.ts";
+import {
+	emitEntriesBarrel,
+	emitEntriesFlat,
+	emitEntryFile,
+	emitGroupTypes,
+	emitIndexFile,
+	emitMiscFile,
+	emitTopLevelVariants,
+	emitTypesFile,
+	kebabCase,
+} from "./emit.ts";
 import type { Entry, Group } from "./group.ts";
 import { groupEntries } from "./group.ts";
 import { chooseSplit } from "./split.ts";
@@ -34,10 +44,11 @@ function planFiles(groups: Map<string, Group>): Map<string, string> {
 	for (const g of multiEntry) {
 		const dir = kebabCase(g.discriminator);
 		const plan = chooseSplit(g);
-		files.set(`${dir}/index.ts`, emitGroupIndex(g));
+		files.set(`${dir}/index.ts`, emitIndexFile());
+		files.set(`${dir}/types.ts`, emitGroupTypes(g));
 
 		if (plan.kind === "none") {
-			files.set(`${dir}/variants.ts`, emitVariantsFlat(g));
+			files.set(`${dir}/entries.ts`, emitEntriesFlat(g));
 			groupSplits.set(g.discriminator, "flat");
 		} else {
 			const fileNames: string[] = [];
@@ -46,17 +57,20 @@ function planFiles(groups: Map<string, Group>): Map<string, string> {
 					? plan.buckets.map((b) => ({ fileName: b.fileName, entries: b.entries }))
 					: plan.clusters.map((c) => ({ fileName: c.fileName, entries: c.entries }));
 			for (const b of buckets) {
-				files.set(`${dir}/variants/${b.fileName}.ts`, emitVariantFile(g, b.fileName, b.entries));
+				files.set(`${dir}/entries/${b.fileName}.ts`, emitEntryFile(g, b.fileName, b.entries));
 				fileNames.push(b.fileName);
 			}
-			files.set(`${dir}/variants/index.ts`, emitVariantsBarrel(g.discriminator, fileNames));
+			files.set(`${dir}/entries/index.ts`, emitEntriesBarrel(g.discriminator, fileNames));
 			groupSplits.set(g.discriminator, "split");
 		}
 	}
 
-	files.set("misc/index.ts", emitMiscFile(singletons));
-	files.set("index.ts", emitIndexFile(multiEntry.map((g) => g.discriminator)));
-	files.set("variants.ts", emitTopLevelVariants(groupSplits));
+	files.set("misc/entries.ts", emitMiscFile(singletons));
+	files.set("misc/types.ts", "import type { MiscMasterfileEntry } from './entries';\n\nexport type Misc = MiscMasterfileEntry;");
+	files.set("misc/index.ts", "export type * from './entries'\nexport type * from './types'");
+	files.set("types.ts", emitTypesFile(multiEntry.map((g) => g.discriminator)));
+	files.set("entries.ts", emitTopLevelVariants(groupSplits));
+	files.set("index.ts", emitIndexFile());
 	files.set("_utils.ts", "export type S<T> = {[KeyType in keyof T]: T[KeyType]} & {};");
 
 	return files;

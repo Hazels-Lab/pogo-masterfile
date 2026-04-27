@@ -318,41 +318,44 @@ export function kebabCase(camelCase: string): string {
 	return camelCase.replace(/[A-Z]/g, (m) => `-${m.toLowerCase()}`);
 }
 
-export function emitIndexFile(multiEntryDiscriminators: string[]): string {
-	const sorted = [...multiEntryDiscriminators].sort();
+export function pascalCase(input: string): string {
+	return input
+		.replace(/([a-z])([A-Z])/g, "$1 $2")
+		.replace(/[^a-zA-Z0-9]+/g, " ")
+		.trim()
+		.split(/\s+/)
+		.map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+		.join("");
+}
+
+export function emitTypesFile(multiEntryDiscriminators: string[]): string {
+	const sorted = [...multiEntryDiscriminators, "misc"].sort();
 	const lines: string[] = [`// Generated from Pokémon GO masterfile — index of all groups.`, ``];
 
 	for (const disc of sorted) {
-		lines.push(`export type * from "./${kebabCase(disc)}";`);
+		const name = groupName(disc);
+		lines.push(`import type { ${name} } from "./${kebabCase(disc)}/types";`);
 	}
-	lines.push(`export type * from "./misc";`);
+	for (const disc of sorted) {
+		lines.push(`export type * from "./${kebabCase(disc)}/types";`);
+	}
 	lines.push(``);
 
+	lines.push(``);
+	lines.push(`export type MasterfileType =`);
 	for (const disc of sorted) {
 		const name = groupName(disc);
-		lines.push(`import type { ${name}MasterfileEntry } from "./${kebabCase(disc)}";`);
+		lines.push(`\t| ${name}`);
 	}
-	lines.push(`import type { MiscMasterfileEntry } from "./misc";`);
-	lines.push(``);
-	lines.push(`export type MasterfileEntry =`);
-	for (const disc of sorted) {
-		const name = groupName(disc);
-		lines.push(`\t| ${name}MasterfileEntry`);
-	}
-	lines.push(`\t| MiscMasterfileEntry;`);
-	lines.push(``);
-	lines.push(`export type MasterfileTemplateID = MasterfileEntry["templateId"];`);
-	lines.push(``);
-	lines.push(`export type MasterfileEntryByTemplateID<T extends MasterfileTemplateID> = Extract<MasterfileEntry, { templateId: T }>;`);
 	lines.push(``);
 
 	return lines.join("\n");
 }
 
-export function emitGroupIndex(group: Group): string {
+export function emitGroupTypes(group: Group): string {
 	const gName = groupName(group.discriminator);
 	const sortedIds = [...group.entries].map((e) => e.templateId).sort();
-	const aliases = deriveGroupAliases(sortedIds, gName);
+	const _aliases = deriveGroupAliases(sortedIds, gName);
 
 	const invariants = detectInvariants(group);
 	const payloadType = inferGroupPayloadType(group);
@@ -366,10 +369,10 @@ export function emitGroupIndex(group: Group): string {
 	const lines: string[] = [
 		`// Generated from Pokémon GO masterfile — group "${group.discriminator}", ${entryCount} ${entryWord} (structural types).`,
 		``,
-		`import type { ${SIMPLIFY} } from "../_utils";`,
-		``,
-		`export type * from "./variants";`,
-		``,
+		// `import type { ${SIMPLIFY} } from "../_utils";`,
+		// ``,
+		// `export type * from "./entries";`,
+		// ``,
 	];
 
 	lines.push(`export interface ${gName}<`);
@@ -403,15 +406,14 @@ export function emitGroupIndex(group: Group): string {
 	lines.push(...renderXDataInterface(xdataName, xdataType));
 	lines.push(``);
 
-	lines.push(`export type ${gName}MasterfileEntry =`);
-	sortedIds.forEach((id, i) => {
-		const alias = aliases.get(id)!;
-		const suffix = i === sortedIds.length - 1 ? ";" : "";
-		lines.push(`\t| ${gName}${alias}${suffix}`);
-	});
-	lines.push(``);
-	lines.push(`export type ${gName}TemplateID = ${gName}MasterfileEntry["templateId"];`);
-	lines.push(``);
+	// lines.push(`export type ${gName}MasterfileType =`);
+	// sortedIds.forEach((id, i) => {
+	// 	const alias = aliases.get(id)!;
+	// 	const suffix = i === sortedIds.length - 1 ? ";" : "";
+	// 	lines.push(`\t| ${gName}${alias}${suffix}`);
+	// });
+	// lines.push(``);
+	// lines.push(``);
 
 	return lines.join("\n");
 }
@@ -424,15 +426,25 @@ function renderAllVariantAliases(group: Group): string[] {
 	const entriesById = new Map(group.entries.map((e) => [e.templateId, e]));
 
 	const lines: string[] = [];
+	const typeNames: string[] = [];
+
 	for (const id of sortedIds) {
 		const entry = entriesById.get(id)!;
 		const variantSuffix = aliases.get(id)!;
+		typeNames.push(`${gName}${variantSuffix}`);
 		lines.push(...renderVariantAlias(gName, entry, group, variantSuffix, invariants));
 	}
+
+	lines.push(``);
+	lines.push(renderVariantBarrelType(gName, typeNames));
 	return lines;
 }
 
-export function emitVariantsFlat(group: Group): string {
+function renderVariantBarrelType(typePrefix: string, typeNames: string[]) {
+	return `export type ${typePrefix}MasterfileEntry = ${typeNames.join("| ")}`;
+}
+
+export function emitEntriesFlat(group: Group): string {
 	const gName = groupName(group.discriminator);
 	const xdataName = `${gName}Data`;
 	const entryCount = group.entries.length;
@@ -450,7 +462,7 @@ export function emitVariantsFlat(group: Group): string {
 	return lines.join("\n");
 }
 
-export function emitVariantFile(group: Group, bucketName: string, entries: Entry[]): string {
+export function emitEntryFile(group: Group, bucketName: string, entries: Entry[]): string {
 	const gName = groupName(group.discriminator);
 	const xdataName = `${gName}Data`;
 	const sortedIds = [...group.entries].map((e) => e.templateId).sort();
@@ -463,38 +475,80 @@ export function emitVariantFile(group: Group, bucketName: string, entries: Entry
 		`// Generated from Pokémon GO masterfile — group "${group.discriminator}", split "${bucketName}", ${entryCount} ${entryWord}.`,
 		``,
 		`import type { ${SIMPLIFY} } from "../../_utils";`,
-		`import type { ${gName}, ${xdataName} } from "..";`,
+		`import type { ${gName}, ${xdataName} } from "../types";`,
 		``,
 	];
 
 	const sortedSubset = [...entries].map((e) => e.templateId).sort();
+	const typeNames: string[] = [];
 	for (const id of sortedSubset) {
 		const entry = entries.find((e) => e.templateId === id)!;
 		const variantSuffix = aliases.get(id)!;
+		typeNames.push(`${gName}${variantSuffix}`);
 		lines.push(...renderVariantAlias(gName, entry, group, variantSuffix, invariants));
 	}
+	lines.push(``);
+	lines.push(renderVariantBarrelType(`${gName}${aliasSuffix(bucketName, "")}`, typeNames));
 	lines.push(``);
 	return lines.join("\n");
 }
 
-export function emitVariantsBarrel(discriminator: string, fileNames: string[]): string {
+export function emitEntriesBarrel(discriminator: string, fileNames: string[]): string {
+	const typeName = pascalCase(discriminator);
 	const sorted = [...fileNames].sort();
-	const lines: string[] = [`// Generated from Pokémon GO masterfile — group "${discriminator}" variants barrel.`, ``];
+
+	const lines: string[] = [
+		`// Generated from Pokémon GO masterfile — group "${discriminator}" entries barrel.`,
+		``,
+		...sorted.map((e) => `import type { ${typeName}${pascalCase(e)}MasterfileEntry } from './${e}';`),
+	];
 	for (const name of sorted) {
 		lines.push(`export type * from "./${name}";`);
 	}
 	lines.push(``);
+
+	lines.push(`export type ${typeName}MasterfileEntry = ${sorted.map((f) => `${typeName}${pascalCase(f)}MasterfileEntry`).join("| ")}`);
+	lines.push(`export type ${typeName}TemplateID = ${typeName}MasterfileEntry["templateId"];`);
+
 	return lines.join("\n");
 }
 
 export function emitTopLevelVariants(groupSplits: Map<string, "split" | "flat">): string {
-	const sortedDiscs = [...groupSplits.keys()].sort();
-	const lines: string[] = [`// Generated from Pokémon GO masterfile — top-level variants barrel.`, ``];
+	const sortedDiscs = [...groupSplits.keys(), "misc"].sort();
+	const lines: string[] = [`// Generated from Pokémon GO masterfile — top-level entries barrel.`, ``];
+
+	for (const disc of sortedDiscs) {
+		const name = groupName(disc);
+		lines.push(`import type { ${name}MasterfileEntry } from "./${kebabCase(disc)}/entries";`);
+	}
+	// lines.push(`import type { MiscMasterfileEntry } from "./misc/entries";`);
+
+	lines.push(``);
+
 	for (const disc of sortedDiscs) {
 		const kebab = kebabCase(disc);
-		const path = groupSplits.get(disc) === "split" ? `./${kebab}/variants` : `./${kebab}/variants.ts`;
+		const path = groupSplits.get(disc) === "split" ? `./${kebab}/entries` : `./${kebab}/entries.ts`;
 		lines.push(`export type * from "${path}";`);
 	}
 	lines.push(``);
+	// lines.push(`export type * from "./misc/entries";`);
+
+	lines.push(``);
+	lines.push(`export type MasterfileEntry =`);
+	for (const disc of sortedDiscs) {
+		const name = groupName(disc);
+		lines.push(`\t| ${name}MasterfileEntry`);
+	}
+	// lines.push(`\t| MiscMasterfileEntry;`);
+	lines.push(``);
+	lines.push(`export type MasterfileTemplateID = MasterfileEntry["templateId"];`);
+	lines.push(``);
+	lines.push(`export type MasterfileEntryByTemplateID<T extends MasterfileTemplateID> = Extract<MasterfileEntry, { templateId: T }>;`);
+	lines.push(``);
+
 	return lines.join("\n");
+}
+
+export function emitIndexFile() {
+	return [`export type * from "./entries";`, `export type * from "./types";`].join("\n");
 }

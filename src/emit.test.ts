@@ -1,7 +1,7 @@
 /** biome-ignore-all lint/suspicious/noTemplateCurlyInString: valid type generating tests */
 
 import { describe, expect, test } from "bun:test";
-import { emitIndexFile, emitMiscFile, emitTopLevelVariants, emitVariantFile, emitVariantsBarrel, emitVariantsFlat, kebabCase } from "./emit.ts";
+import { emitEntriesBarrel, emitEntriesFlat, emitEntryFile, emitMiscFile, emitTopLevelVariants, emitTypesFile, kebabCase } from "./emit.ts";
 import { MOCK_MASTERFILE } from "./fixtures.ts";
 import type { Group } from "./group.ts";
 import { groupEntries } from "./group.ts";
@@ -167,13 +167,13 @@ describe("kebabCase", () => {
 
 describe("emitIndexFile", () => {
 	test("emits a deterministic header for the index file", () => {
-		const output = emitIndexFile([]);
+		const output = emitTypesFile([]);
 		expect(output.startsWith(`// Generated from Pokémon GO masterfile — index of all groups.\n`)).toBe(true);
 	});
 
 	test("re-exports groups by directory path + misc, defines MasterfileEntry union + MasterfileTemplateID", () => {
 		const multiEntryGroupNames = ["typeEffective", "pokemonSettings"];
-		const output = emitIndexFile(multiEntryGroupNames);
+		const output = emitTypesFile(multiEntryGroupNames);
 
 		// Directory re-exports (no .ts suffix; resolves to <group>/index.ts).
 		expect(output).toContain(`export type * from "./pokemon-settings";`);
@@ -196,7 +196,7 @@ describe("emitIndexFile", () => {
 	});
 
 	test("imports MiscMasterfileEntry from ./misc and places it at the end of MasterfileEntry", () => {
-		const output = emitIndexFile(["typeEffective", "pokemonSettings"]);
+		const output = emitTypesFile(["typeEffective", "pokemonSettings"]);
 		expect(output).toContain(`import type { MiscMasterfileEntry } from "./misc";`);
 		expect(output).toContain("| MiscMasterfileEntry;");
 
@@ -208,18 +208,18 @@ describe("emitIndexFile", () => {
 	});
 });
 
-import { emitGroupIndex } from "./emit.ts";
+import { emitGroupTypes } from "./emit.ts";
 
 describe("emitGroupIndex", () => {
 	test("emits header noting it's the group's structural types", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
-		const output = emitGroupIndex(group);
+		const output = emitGroupTypes(group);
 		expect(output.startsWith(`// Generated from Pokémon GO masterfile — group "typeEffective", 2 entries (structural types).\n`)).toBe(true);
 	});
 
 	test("emits the generic base interface, XData, union, and TemplateID alias", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
-		const output = emitGroupIndex(group);
+		const output = emitGroupTypes(group);
 
 		expect(output).toContain("export interface TypeEffective<");
 		expect(output).toContain("TemplateID extends string = string,");
@@ -238,13 +238,13 @@ describe("emitGroupIndex", () => {
 
 	test("re-exports variants barrel from the parent index", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
-		const output = emitGroupIndex(group);
+		const output = emitGroupTypes(group);
 		expect(output).toContain(`export type * from "./variants";`);
 	});
 
 	test("does NOT emit per-variant alias declarations", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
-		const output = emitGroupIndex(group);
+		const output = emitGroupTypes(group);
 		expect(output).not.toContain("export type TypeEffectiveBug = TypeEffective<");
 		expect(output).not.toContain("export type TypeEffectiveDark = TypeEffective<");
 		// Also check the S<...> form to be safe.
@@ -254,7 +254,7 @@ describe("emitGroupIndex", () => {
 
 	test("imports S from the parent _utils", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
-		const output = emitGroupIndex(group);
+		const output = emitGroupTypes(group);
 		expect(output).toContain(`import type { S } from "../_utils";`);
 	});
 });
@@ -262,20 +262,20 @@ describe("emitGroupIndex", () => {
 describe("emitVariantsFlat", () => {
 	test("emits header noting it's the variant aliases", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
-		const output = emitVariantsFlat(group);
+		const output = emitEntriesFlat(group);
 		expect(output.startsWith(`// Generated from Pokémon GO masterfile — group "typeEffective", 2 entries (variant aliases).\n`)).toBe(true);
 	});
 
 	test("imports the base interface and XData from the sibling index", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
-		const output = emitVariantsFlat(group);
+		const output = emitEntriesFlat(group);
 		expect(output).toContain(`import type { S } from "../_utils";`);
 		expect(output).toContain(`import type { TypeEffective, TypeEffectiveData } from "./index";`);
 	});
 
 	test("emits each per-variant alias", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
-		const output = emitVariantsFlat(group);
+		const output = emitEntriesFlat(group);
 		expect(output).toContain("export type TypeEffectiveBug = S<TypeEffective<");
 		expect(output).toContain(`"POKEMON_TYPE_BUG"`);
 		expect(output).toContain("export type TypeEffectiveDark = S<TypeEffective<");
@@ -284,7 +284,7 @@ describe("emitVariantsFlat", () => {
 
 	test("does NOT emit the base interface, XData, or union", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
-		const output = emitVariantsFlat(group);
+		const output = emitEntriesFlat(group);
 		expect(output).not.toContain("export interface TypeEffective<");
 		expect(output).not.toContain("export interface TypeEffectiveData {");
 		expect(output).not.toContain("export type TypeEffectiveMasterfileEntry =");
@@ -298,7 +298,7 @@ describe("emitVariantsFlat", () => {
 				{ templateId: "POKEMON_TYPE_BUG", data: { templateId: "POKEMON_TYPE_BUG", typeEffective: {} } },
 			],
 		};
-		const output = emitVariantsFlat(group);
+		const output = emitEntriesFlat(group);
 		const bugIdx = output.indexOf("TypeEffectiveBug");
 		const waterIdx = output.indexOf("TypeEffectiveWater");
 		expect(bugIdx).toBeLessThan(waterIdx);
@@ -309,14 +309,14 @@ describe("emitVariantFile", () => {
 	test("emits header noting the bucket name and entry count", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
 		const bug = group.entries.find((e) => e.templateId === "POKEMON_TYPE_BUG")!;
-		const output = emitVariantFile(group, "bug", [bug]);
+		const output = emitEntryFile(group, "bug", [bug]);
 		expect(output.startsWith(`// Generated from Pokémon GO masterfile — group "typeEffective", split "bug", 1 entry.\n`)).toBe(true);
 	});
 
 	test("imports base + XData + S from the parent directory", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
 		const bug = group.entries.find((e) => e.templateId === "POKEMON_TYPE_BUG")!;
-		const output = emitVariantFile(group, "bug", [bug]);
+		const output = emitEntryFile(group, "bug", [bug]);
 		expect(output).toContain(`import type { S } from "../../_utils";`);
 		expect(output).toContain(`import type { TypeEffective, TypeEffectiveData } from "..";`);
 	});
@@ -324,7 +324,7 @@ describe("emitVariantFile", () => {
 	test("emits only the aliases for the supplied entries", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
 		const bug = group.entries.find((e) => e.templateId === "POKEMON_TYPE_BUG")!;
-		const output = emitVariantFile(group, "bug", [bug]);
+		const output = emitEntryFile(group, "bug", [bug]);
 		expect(output).toContain("export type TypeEffectiveBug = S<TypeEffective<");
 		expect(output).not.toContain("export type TypeEffectiveDark");
 	});
@@ -332,8 +332,8 @@ describe("emitVariantFile", () => {
 	test("preserves the same alias bodies as the unsplit emitter", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
 		const bug = group.entries.find((e) => e.templateId === "POKEMON_TYPE_BUG")!;
-		const split = emitVariantFile(group, "bug", [bug]);
-		const flat = emitVariantsFlat(group);
+		const split = emitEntryFile(group, "bug", [bug]);
+		const flat = emitEntriesFlat(group);
 		// The Bug alias declaration should be byte-identical between the two paths
 		// (only the surrounding imports/header differ).
 		const bugStart = split.indexOf("export type TypeEffectiveBug =");
@@ -348,12 +348,12 @@ describe("emitVariantFile", () => {
 
 describe("emitVariantsBarrel", () => {
 	test("emits a deterministic header", () => {
-		const output = emitVariantsBarrel("pokemonSettings", ["water", "fire", "grass"]);
+		const output = emitEntriesBarrel("pokemonSettings", ["water", "fire", "grass"]);
 		expect(output.startsWith(`// Generated from Pokémon GO masterfile — group "pokemonSettings" variants barrel.\n`)).toBe(true);
 	});
 
 	test("re-exports each file alphabetically", () => {
-		const output = emitVariantsBarrel("pokemonSettings", ["water", "fire", "grass"]);
+		const output = emitEntriesBarrel("pokemonSettings", ["water", "fire", "grass"]);
 		expect(output).toContain(`export type * from "./fire";`);
 		expect(output).toContain(`export type * from "./grass";`);
 		expect(output).toContain(`export type * from "./water";`);
@@ -365,7 +365,7 @@ describe("emitVariantsBarrel", () => {
 	});
 
 	test("handles a single-file barrel", () => {
-		const output = emitVariantsBarrel("formSettings", ["base"]);
+		const output = emitEntriesBarrel("formSettings", ["base"]);
 		expect(output).toContain(`export type * from "./base";`);
 	});
 });
