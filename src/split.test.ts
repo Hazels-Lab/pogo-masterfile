@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
 import type { Group } from "./group.ts";
-import { tryH1, tryH2, valueFileName } from "./split.ts";
+import { fingerprintFileName, tryH1, tryH2, valueFileName } from "./split.ts";
 
 function mkGroup(payloads: Array<Record<string, unknown>>, discriminator = "x"): Group {
 	return {
@@ -186,5 +186,43 @@ describe("tryH2", () => {
 		const group = mkGroup([...small, ...big]);
 		const clusters = tryH2(group)!;
 		expect(clusters[0]!.entries.length).toBeGreaterThan(clusters[1]!.entries.length);
+	});
+});
+
+describe("fingerprintFileName", () => {
+	test("returns 'base' for empty fingerprint", () => {
+		expect(fingerprintFileName([])).toBe("base");
+	});
+
+	test("kebab-cases a single camelCase field", () => {
+		expect(fingerprintFileName(["form"])).toBe("form");
+		expect(fingerprintFileName(["breadOverrides"])).toBe("bread-overrides");
+		expect(fingerprintFileName(["tempEvoOverrides"])).toBe("temp-evo-overrides");
+	});
+
+	test("joins multiple fields with '+'", () => {
+		expect(fingerprintFileName(["breadOverrides", "form"])).toBe("bread-overrides+form");
+		expect(fingerprintFileName(["form", "tempEvoOverrides"])).toBe("form+temp-evo-overrides");
+		expect(fingerprintFileName(["breadOverrides", "form", "tempEvoOverrides"])).toBe("bread-overrides+form+temp-evo-overrides");
+	});
+});
+
+describe("tryH2 file naming", () => {
+	test("populates fileName from each cluster's fingerprint", () => {
+		const make = (form: string | undefined, extra: number | undefined): Record<string, unknown> => {
+			const o: Record<string, unknown> = { id: "x" };
+			if (form !== undefined) o.form = form;
+			if (extra !== undefined) o.extra = extra;
+			return o;
+		};
+		const payloads: Array<Record<string, unknown>> = [];
+		for (let i = 0; i < 5; i += 1) payloads.push(make(`f${i}`, undefined));
+		for (let i = 0; i < 5; i += 1) payloads.push(make(undefined, undefined));
+		for (let i = 0; i < 5; i += 1) payloads.push(make(`f${i}`, i));
+		const group = mkGroup(payloads);
+
+		const clusters = tryH2(group)!;
+		const names = clusters.map((c) => c.fileName).sort();
+		expect(names).toEqual(["base", "extra+form", "form"]);
 	});
 });

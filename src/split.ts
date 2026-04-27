@@ -1,3 +1,4 @@
+import { kebabCase } from "./emit.ts";
 import type { Entry, Group } from "./group.ts";
 
 const H1_MIN_CARDINALITY = 2;
@@ -142,8 +143,13 @@ export function tryH2(group: Group): H2Cluster[] | null {
 
 	const result: H2Cluster[] = [];
 	for (const { fingerprint, entries } of clusters.values()) {
-		result.push({ fingerprint, fileName: "", entries });
+		result.push({ fingerprint, fileName: fingerprintFileName(fingerprint), entries });
 	}
 	result.sort((a, b) => b.entries.length - a.entries.length);
 	return result;
+}
+
+export function fingerprintFileName(fingerprint: string[]): string {
+	if (fingerprint.length === 0) return "base";
+	return fingerprint.map(kebabCase).join("+");
 }
