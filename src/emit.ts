@@ -515,7 +515,7 @@ export function emitEntriesBarrel(discriminator: string, fileNames: string[]): s
 }
 
 export function emitTopLevelVariants(groupSplits: Map<string, "split" | "flat">): string {
-	const sortedDiscs = [...groupSplits.keys(), "misc"].sort();
+	const sortedDiscs = [...groupSplits.keys(), ...(groupSplits.size === 0 ? [] : ["misc"])].sort();
 	const lines: string[] = [`// Generated from Pokémon GO masterfile — top-level entries barrel.`, ``];
 
 	for (const disc of sortedDiscs) {

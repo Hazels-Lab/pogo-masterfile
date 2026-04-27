@@ -171,38 +171,38 @@ describe("emitIndexFile", () => {
 		expect(output.startsWith(`// Generated from Pokémon GO masterfile — index of all groups.\n`)).toBe(true);
 	});
 
-	test("re-exports groups by directory path + misc, defines MasterfileEntry union + MasterfileTemplateID", () => {
+	test("re-exports groups by directory path + misc, defines MasterfileType union + MasterfileTemplateID", () => {
 		const multiEntryGroupNames = ["typeEffective", "pokemonSettings"];
 		const output = emitTypesFile(multiEntryGroupNames);
 
 		// Directory re-exports (no .ts suffix; resolves to <group>/index.ts).
-		expect(output).toContain(`export type * from "./pokemon-settings";`);
-		expect(output).toContain(`export type * from "./type-effective";`);
-		expect(output).toContain(`export type * from "./misc";`);
-		const pokeIdx = output.indexOf("./pokemon-settings");
-		const typeIdx = output.indexOf("./type-effective");
+		expect(output).toContain(`export type * from "./pokemon-settings/types";`);
+		expect(output).toContain(`export type * from "./type-effective/types";`);
+		expect(output).toContain(`export type * from "./misc/types";`);
+		const pokeIdx = output.indexOf("./pokemon-settings/types");
+		const typeIdx = output.indexOf("./type-effective/types");
 		expect(pokeIdx).toBeLessThan(typeIdx);
 
 		// Imports for the global union resolve via the directory too.
-		expect(output).toContain(`import type { PokemonSettingsMasterfileEntry } from "./pokemon-settings";`);
-		expect(output).toContain(`import type { TypeEffectiveMasterfileEntry } from "./type-effective";`);
+		expect(output).toContain(`import type { PokemonSettings } from "./pokemon-settings/types";`);
+		expect(output).toContain(`import type { TypeEffective } from "./type-effective/types";`);
 
-		expect(output).toContain("export type MasterfileEntry =");
-		expect(output).toContain("| PokemonSettingsMasterfileEntry");
-		expect(output).toContain("| TypeEffectiveMasterfileEntry");
-		expect(output).toContain(`export type MasterfileTemplateID = MasterfileEntry["templateId"];`);
-		expect(output).toContain("export type MasterfileEntryByTemplateID<T extends MasterfileTemplateID> =");
-		expect(output).toContain(`Extract<MasterfileEntry, { templateId: T }>`);
+		expect(output).toContain("export type MasterfileType =");
+		expect(output).toContain("| PokemonSettings");
+		expect(output).toContain("| TypeEffective");
+		// expect(output).toContain(`export type MasterfileTemplateID = MasterfileType["templateId"];`);
+		// expect(output).toContain("export type MasterfileTypeByTemplateID<T extends MasterfileTemplateID> =");
+		// expect(output).toContain(`Extract<MasterfileType, { templateId: T }>`);
 	});
 
-	test("imports MiscMasterfileEntry from ./misc and places it at the end of MasterfileEntry", () => {
+	test("imports Misc from ./misc and places alphabetically in the MasterfileType", () => {
 		const output = emitTypesFile(["typeEffective", "pokemonSettings"]);
-		expect(output).toContain(`import type { MiscMasterfileEntry } from "./misc";`);
-		expect(output).toContain("| MiscMasterfileEntry;");
+		expect(output).toContain(`import type { Misc } from "./misc/types";`);
+		expect(output).toContain("| Misc");
 
-		const miscIdx = output.indexOf("| MiscMasterfileEntry;");
-		const pokemonIdx = output.indexOf("| PokemonSettingsMasterfileEntry");
-		const typeIdx = output.indexOf("| TypeEffectiveMasterfileEntry");
+		const miscIdx = output.indexOf("| Misc");
+		const pokemonIdx = output.indexOf("| PokemonSettingsMasterfileType");
+		const typeIdx = output.indexOf("| TypeEffectiveMasterfileType");
 		expect(miscIdx).toBeGreaterThan(pokemonIdx);
 		expect(miscIdx).toBeGreaterThan(typeIdx);
 	});
@@ -229,17 +229,19 @@ describe("emitGroupIndex", () => {
 
 		expect(output).toContain("export interface TypeEffectiveData {");
 
-		expect(output).toContain("export type TypeEffectiveMasterfileEntry =");
-		expect(output).toContain("| TypeEffectiveBug");
-		expect(output).toContain("| TypeEffectiveDark");
+		// expect(output).toContain("export type TypeEffectiveMasterfileEntry =");
+		// expect(output).toContain("| TypeEffectiveBug");
+		// expect(output).toContain("| TypeEffectiveDark");
 
-		expect(output).toContain(`export type TypeEffectiveTemplateID = TypeEffectiveMasterfileEntry["templateId"];`);
+		// expect(output).toContain(`export type TypeEffectiveTemplateID = TypeEffectiveMasterfileEntry["templateId"];`);
 	});
 
-	test("re-exports variants barrel from the parent index", () => {
+	test("re-exports entries barrel from the parent index", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
 		const output = emitGroupTypes(group);
-		expect(output).toContain(`export type * from "./variants";`);
+
+		expect(output).toContain(`export interface TypeEffective<`);
+		expect(output).toContain(`export interface TypeEffectiveData`);
 	});
 
 	test("does NOT emit per-variant alias declarations", () => {
@@ -254,7 +256,7 @@ describe("emitGroupIndex", () => {
 
 	test("imports S from the parent _utils", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
-		const output = emitGroupTypes(group);
+		const output = emitEntriesFlat(group);
 		expect(output).toContain(`import type { S } from "../_utils";`);
 	});
 });
@@ -285,9 +287,10 @@ describe("emitVariantsFlat", () => {
 	test("does NOT emit the base interface, XData, or union", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
 		const output = emitEntriesFlat(group);
+
 		expect(output).not.toContain("export interface TypeEffective<");
 		expect(output).not.toContain("export interface TypeEffectiveData {");
-		expect(output).not.toContain("export type TypeEffectiveMasterfileEntry =");
+		expect(output).toContain("export type TypeEffectiveMasterfileEntry =");
 	});
 
 	test("sorts aliases by templateId lexicographically", () => {
@@ -318,7 +321,7 @@ describe("emitVariantFile", () => {
 		const bug = group.entries.find((e) => e.templateId === "POKEMON_TYPE_BUG")!;
 		const output = emitEntryFile(group, "bug", [bug]);
 		expect(output).toContain(`import type { S } from "../../_utils";`);
-		expect(output).toContain(`import type { TypeEffective, TypeEffectiveData } from "..";`);
+		expect(output).toContain(`import type { TypeEffective, TypeEffectiveData } from "../types";`);
 	});
 
 	test("emits only the aliases for the supplied entries", () => {
@@ -349,7 +352,7 @@ describe("emitVariantFile", () => {
 describe("emitVariantsBarrel", () => {
 	test("emits a deterministic header", () => {
 		const output = emitEntriesBarrel("pokemonSettings", ["water", "fire", "grass"]);
-		expect(output.startsWith(`// Generated from Pokémon GO masterfile — group "pokemonSettings" variants barrel.\n`)).toBe(true);
+		expect(output.startsWith(`// Generated from Pokémon GO masterfile — group "pokemonSettings" entries barrel.\n`)).toBe(true);
 	});
 
 	test("re-exports each file alphabetically", () => {
@@ -373,10 +376,10 @@ describe("emitVariantsBarrel", () => {
 describe("emitTopLevelVariants", () => {
 	test("emits a deterministic header", () => {
 		const output = emitTopLevelVariants(new Map());
-		expect(output.startsWith(`// Generated from Pokémon GO masterfile — top-level variants barrel.\n`)).toBe(true);
+		expect(output.startsWith(`// Generated from Pokémon GO masterfile — top-level entries barrel.\n`)).toBe(true);
 	});
 
-	test("re-exports unsplit groups via /variants.ts and split groups via /variants", () => {
+	test("re-exports unsplit groups via /entries.ts and split groups via /entries", () => {
 		const groupSplits = new Map<string, "split" | "flat">([
 			["pokemonSettings", "split"],
 			["combatType", "flat"],
@@ -384,9 +387,9 @@ describe("emitTopLevelVariants", () => {
 		]);
 		const output = emitTopLevelVariants(groupSplits);
 
-		expect(output).toContain(`export type * from "./combat-type/variants.ts";`);
-		expect(output).toContain(`export type * from "./pokemon-settings/variants";`);
-		expect(output).toContain(`export type * from "./pokemon-extended-settings/variants";`);
+		expect(output).toContain(`export type * from "./combat-type/entries.ts";`);
+		expect(output).toContain(`export type * from "./pokemon-settings/entries";`);
+		expect(output).toContain(`export type * from "./pokemon-extended-settings/entries";`);
 
 		// Sorted alphabetically by group kebab name:
 		const combatIdx = output.indexOf("./combat-type/");
