@@ -553,38 +553,35 @@ describe("emitIndexFile", () => {
 		expect(output.startsWith(`// Generated from Pokémon GO masterfile — index of all groups.\n`)).toBe(true);
 	});
 
-	test("re-exports groups (kebab-case filenames) + misc, defines MasterfileEntry union + MasterfileTemplateID", () => {
+	test("re-exports groups by directory path + misc, defines MasterfileEntry union + MasterfileTemplateID", () => {
 		const multiEntryGroupNames = ["typeEffective", "pokemonSettings"];
 		const output = emitIndexFile(multiEntryGroupNames);
 
-		// Exports are sorted:
-		expect(output).toContain(`export type * from "./pokemon-settings.ts";`);
-		expect(output).toContain(`export type * from "./type-effective.ts";`);
-		expect(output).toContain(`export type * from "./misc.ts";`);
-		const pokeIdx = output.indexOf("pokemon-settings");
-		const typeIdx = output.indexOf("type-effective");
+		// Directory re-exports (no .ts suffix; resolves to <group>/index.ts).
+		expect(output).toContain(`export type * from "./pokemon-settings";`);
+		expect(output).toContain(`export type * from "./type-effective";`);
+		expect(output).toContain(`export type * from "./misc";`);
+		const pokeIdx = output.indexOf("./pokemon-settings");
+		const typeIdx = output.indexOf("./type-effective");
 		expect(pokeIdx).toBeLessThan(typeIdx);
 
-		// Imports for the global union:
-		expect(output).toContain(`import type { PokemonSettingsMasterfileEntry } from "./pokemon-settings.ts";`);
-		expect(output).toContain(`import type { TypeEffectiveMasterfileEntry } from "./type-effective.ts";`);
+		// Imports for the global union resolve via the directory too.
+		expect(output).toContain(`import type { PokemonSettingsMasterfileEntry } from "./pokemon-settings";`);
+		expect(output).toContain(`import type { TypeEffectiveMasterfileEntry } from "./type-effective";`);
 
-		// Global union and TemplateID alias:
 		expect(output).toContain("export type MasterfileEntry =");
 		expect(output).toContain("| PokemonSettingsMasterfileEntry");
 		expect(output).toContain("| TypeEffectiveMasterfileEntry");
 		expect(output).toContain(`export type MasterfileTemplateID = MasterfileEntry["templateId"];`);
-		// Lookup mapped type — Extract narrows the union by templateId.
 		expect(output).toContain("export type MasterfileEntryByTemplateID<T extends MasterfileTemplateID> =");
 		expect(output).toContain(`Extract<MasterfileEntry, { templateId: T }>`);
 	});
 
-	test("imports MiscMasterfileEntry and includes it at the end of the MasterfileEntry union", () => {
+	test("imports MiscMasterfileEntry from ./misc and places it at the end of MasterfileEntry", () => {
 		const output = emitIndexFile(["typeEffective", "pokemonSettings"]);
-		expect(output).toContain(`import type { MiscMasterfileEntry } from "./misc.ts";`);
+		expect(output).toContain(`import type { MiscMasterfileEntry } from "./misc";`);
 		expect(output).toContain("| MiscMasterfileEntry;");
 
-		// Misc is last in the union:
 		const miscIdx = output.indexOf("| MiscMasterfileEntry;");
 		const pokemonIdx = output.indexOf("| PokemonSettingsMasterfileEntry");
 		const typeIdx = output.indexOf("| TypeEffectiveMasterfileEntry");

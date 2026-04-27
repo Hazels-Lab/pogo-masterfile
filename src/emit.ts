@@ -400,16 +400,16 @@ export function emitIndexFile(multiEntryDiscriminators: string[]): string {
 	const lines: string[] = [`// Generated from Pokémon GO masterfile — index of all groups.`, ``];
 
 	for (const disc of sorted) {
-		lines.push(`export type * from "./${kebabCase(disc)}.ts";`);
+		lines.push(`export type * from "./${kebabCase(disc)}";`);
 	}
-	lines.push(`export type * from "./misc.ts";`);
+	lines.push(`export type * from "./misc";`);
 	lines.push(``);
 
 	for (const disc of sorted) {
 		const name = groupName(disc);
-		lines.push(`import type { ${name}MasterfileEntry } from "./${kebabCase(disc)}.ts";`);
+		lines.push(`import type { ${name}MasterfileEntry } from "./${kebabCase(disc)}";`);
 	}
-	lines.push(`import type { MiscMasterfileEntry } from "./misc.ts";`);
+	lines.push(`import type { MiscMasterfileEntry } from "./misc";`);
 	lines.push(``);
 	lines.push(`export type MasterfileEntry =`);
 	for (const disc of sorted) {
