@@ -492,3 +492,37 @@ export function emitGroupIndex(group: Group): string {
 
 	return lines.join("\n");
 }
+
+function renderAllVariantAliases(group: Group): string[] {
+	const gName = groupName(group.discriminator);
+	const sortedIds = [...group.entries].map((e) => e.templateId).sort();
+	const aliases = deriveGroupAliases(sortedIds, gName);
+	const invariants = detectInvariants(group);
+	const entriesById = new Map(group.entries.map((e) => [e.templateId, e]));
+
+	const lines: string[] = [];
+	for (const id of sortedIds) {
+		const entry = entriesById.get(id)!;
+		const variantSuffix = aliases.get(id)!;
+		lines.push(...renderVariantAlias(gName, entry, group, variantSuffix, invariants));
+	}
+	return lines;
+}
+
+export function emitVariantsFlat(group: Group): string {
+	const gName = groupName(group.discriminator);
+	const xdataName = `${gName}Data`;
+	const entryCount = group.entries.length;
+	const entryWord = entryCount === 1 ? "entry" : "entries";
+
+	const lines: string[] = [
+		`// Generated from Pokémon GO masterfile — group "${group.discriminator}", ${entryCount} ${entryWord} (variant aliases).`,
+		``,
+		`import type { ${SIMPLIFY} } from "../_utils";`,
+		`import type { ${gName}, ${xdataName} } from "./index";`,
+		``,
+	];
+	lines.push(...renderAllVariantAliases(group));
+	lines.push(``);
+	return lines.join("\n");
+}

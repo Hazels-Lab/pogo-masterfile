@@ -1,7 +1,7 @@
 /** biome-ignore-all lint/suspicious/noTemplateCurlyInString: valid type generating tests */
 
 import { describe, expect, test } from "bun:test";
-import { emitGroupFile, emitIndexFile, emitMiscFile, kebabCase } from "./emit.ts";
+import { emitGroupFile, emitIndexFile, emitMiscFile, emitVariantsFlat, kebabCase } from "./emit.ts";
 import { MOCK_MASTERFILE } from "./fixtures.ts";
 import type { Group } from "./group.ts";
 import { groupEntries } from "./group.ts";
@@ -641,5 +641,51 @@ describe("emitGroupIndex", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
 		const output = emitGroupIndex(group);
 		expect(output).toContain(`import type { S } from "../_utils";`);
+	});
+});
+
+describe("emitVariantsFlat", () => {
+	test("emits header noting it's the variant aliases", () => {
+		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
+		const output = emitVariantsFlat(group);
+		expect(output.startsWith(`// Generated from Pokémon GO masterfile — group "typeEffective", 2 entries (variant aliases).\n`)).toBe(true);
+	});
+
+	test("imports the base interface and XData from the sibling index", () => {
+		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
+		const output = emitVariantsFlat(group);
+		expect(output).toContain(`import type { S } from "../_utils";`);
+		expect(output).toContain(`import type { TypeEffective, TypeEffectiveData } from "./index";`);
+	});
+
+	test("emits each per-variant alias", () => {
+		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
+		const output = emitVariantsFlat(group);
+		expect(output).toContain("export type TypeEffectiveBug = S<TypeEffective<");
+		expect(output).toContain(`"POKEMON_TYPE_BUG"`);
+		expect(output).toContain("export type TypeEffectiveDark = S<TypeEffective<");
+		expect(output).toContain(`"POKEMON_TYPE_DARK"`);
+	});
+
+	test("does NOT emit the base interface, XData, or union", () => {
+		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
+		const output = emitVariantsFlat(group);
+		expect(output).not.toContain("export interface TypeEffective<");
+		expect(output).not.toContain("export interface TypeEffectiveData {");
+		expect(output).not.toContain("export type TypeEffectiveMasterfileEntry =");
+	});
+
+	test("sorts aliases by templateId lexicographically", () => {
+		const group: Group = {
+			discriminator: "typeEffective",
+			entries: [
+				{ templateId: "POKEMON_TYPE_WATER", data: { templateId: "POKEMON_TYPE_WATER", typeEffective: {} } },
+				{ templateId: "POKEMON_TYPE_BUG", data: { templateId: "POKEMON_TYPE_BUG", typeEffective: {} } },
+			],
+		};
+		const output = emitVariantsFlat(group);
+		const bugIdx = output.indexOf("TypeEffectiveBug");
+		const waterIdx = output.indexOf("TypeEffectiveWater");
+		expect(bugIdx).toBeLessThan(waterIdx);
 	});
 });
