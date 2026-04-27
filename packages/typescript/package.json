@@ -1,0 +1,23 @@
+{
+	"name": "pogo-masterfile-types",
+	"private": true,
+	"type": "module",
+	"types": "./src/index.ts",
+	"exports": {
+		".": {
+			"types": "./src/index.ts"
+		},
+		"./variants": {
+			"types": "./src/variants.ts"
+		},
+		"./*": {
+			"types": "./src/*/index.ts"
+		},
+		"./*/variants": {
+			"types": "./src/*/variants.ts"
+		},
+		"./*/variants/*": {
+			"types": "./src/*/variants/*.ts"
+		}
+	}
+}
