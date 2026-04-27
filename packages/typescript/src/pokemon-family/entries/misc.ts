@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonFamily", split "base", 492 entries.
+// Generated from Pokémon GO masterfile — group "pokemonFamily", split "misc", 492 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonFamily } from "../types";
@@ -3940,7 +3940,7 @@ export type PokemonFamilyV1025FamilyPecharunt = S<
 	>
 >;
 
-export type PokemonFamilyBaseMasterfileEntry =
+export type PokemonFamilyMiscMasterfileEntry =
 	| PokemonFamilyV0010FamilyCaterpie
 	| PokemonFamilyV0019FamilyRattata
 	| PokemonFamilyV0021FamilySpearow

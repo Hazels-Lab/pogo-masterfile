@@ -51,7 +51,7 @@ function renderVariantAlias(gName: string, entry: Entry, group: Group, variantSu
 	return lines;
 }
 
-export function emitMiscFile(singletons: Group[]): string {
+export function emitMiscFile(bucketName: string, singletons: Group[]): string {
 	// Precompute names + stub flag so the sort comparator is cheap.
 	const named = singletons.map((g) => {
 		const entry = g.entries[0]!;
@@ -76,22 +76,66 @@ export function emitMiscFile(singletons: Group[]): string {
 		lines.push(`}`);
 		lines.push(``);
 	}
+
+	const typeName = pascalCase(bucketName);
 	// Global union of all singletons + stubs, for `MasterfileEntry` composition.
 	if (named.length === 0) {
-		lines.push(`export type MiscMasterfileEntry = never;`);
+		lines.push(`export type Misc${typeName}MasterfileEntry = never;`);
 	} else {
-		lines.push(`export type MiscMasterfileEntry =`);
+		lines.push(`export type Misc${typeName}MasterfileEntry =`);
 		named.forEach(({ name }, i) => {
 			const suffix = i === named.length - 1 ? ";" : "";
 			lines.push(`\t| ${name}${suffix}`);
 		});
 	}
 	lines.push(``);
-	lines.push(`export type MiscTemplateID = MiscMasterfileEntry["templateId"];`);
+	lines.push(`export type Misc${typeName}TemplateID = Misc${typeName}MasterfileEntry["templateId"];`);
 	lines.push(``);
 
 	return lines.join("\n");
 }
+
+// export function emitMiscSettingsFile(singletons: Group[]): string {
+// 	// Precompute names + stub flag so the sort comparator is cheap.
+// 	const named = singletons.map((g) => {
+// 		const entry = g.entries[0]!;
+// 		const dataKeys = Object.keys(entry.data).filter((k) => k !== "templateId");
+// 		const isStub = dataKeys.length === 0;
+// 		const name = isStub ? aliasSuffix(entry.templateId, "") : groupName(g.discriminator);
+// 		return { group: g, entry, name, isStub };
+// 	});
+// 	named.sort((a, b) => a.name.localeCompare(b.name));
+
+// 	const lines: string[] = [`// Generated from Pokémon GO masterfile — singleton entries (no shared discriminator).`, ``];
+// 	for (const { group, entry, name, isStub } of named) {
+// 		lines.push(`export interface ${name} {`);
+// 		lines.push(`\ttemplateId: "${entry.templateId}";`);
+// 		lines.push(`\tdata: {`);
+// 		lines.push(`\t\ttemplateId: "${entry.templateId}";`);
+// 		if (!isStub) {
+// 			const payloadType = inferJsonType(entry.data[group.discriminator]);
+// 			lines.push(...renderProperty(group.discriminator, payloadType, false, "\t\t"));
+// 		}
+// 		lines.push(`\t};`);
+// 		lines.push(`}`);
+// 		lines.push(``);
+// 	}
+// 	// Global union of all singletons + stubs, for `MasterfileEntry` composition.
+// 	if (named.length === 0) {
+// 		lines.push(`export type MiscMasterfileEntry = never;`);
+// 	} else {
+// 		lines.push(`export type MiscMasterfileEntry =`);
+// 		named.forEach(({ name }, i) => {
+// 			const suffix = i === named.length - 1 ? ";" : "";
+// 			lines.push(`\t| ${name}${suffix}`);
+// 		});
+// 	}
+// 	lines.push(``);
+// 	lines.push(`export type MiscTemplateID = MiscMasterfileEntry["templateId"];`);
+// 	lines.push(``);
+
+// 	return lines.join("\n");
+// }
 
 function renderType(type: InferredType): string[] {
 	const inline = renderInlineType(type);

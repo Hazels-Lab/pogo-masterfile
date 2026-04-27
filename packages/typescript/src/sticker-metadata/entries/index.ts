@@ -1,6 +1,6 @@
 // Generated from Pokémon GO masterfile — group "stickerMetadata" entries barrel.
 
-import type { StickerMetadataBaseMasterfileEntry } from "./base";
+import type { StickerMetadataMiscMasterfileEntry } from "./misc";
 import type { StickerMetadataPokemonIdMasterfileEntry } from "./pokemon-id";
 import type { StickerMetadataPokemonIdRegionIdMasterfileEntry } from "./pokemon-id-region-id";
 import type { StickerMetadataPokemonIdRegionIdReleaseDateMasterfileEntry } from "./pokemon-id-region-id-release-date";
@@ -12,7 +12,7 @@ import type { StickerMetadataRegionIdReleaseDateStickerUrlMasterfileEntry } from
 import type { StickerMetadataReleaseDateMasterfileEntry } from "./release-date";
 import type { StickerMetadataReleaseDateStickerUrlMasterfileEntry } from "./release-date-sticker-url";
 
-export type * from "./base";
+export type * from "./misc";
 export type * from "./pokemon-id";
 export type * from "./pokemon-id-region-id";
 export type * from "./pokemon-id-region-id-release-date";
@@ -25,7 +25,7 @@ export type * from "./release-date";
 export type * from "./release-date-sticker-url";
 
 export type StickerMetadataMasterfileEntry =
-	| StickerMetadataBaseMasterfileEntry
+	| StickerMetadataMiscMasterfileEntry
 	| StickerMetadataPokemonIdMasterfileEntry
 	| StickerMetadataPokemonIdRegionIdMasterfileEntry
 	| StickerMetadataPokemonIdRegionIdReleaseDateMasterfileEntry

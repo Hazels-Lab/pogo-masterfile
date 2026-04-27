@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "badgeSettings", split "base", 56 entries.
+// Generated from Pokémon GO masterfile — group "badgeSettings", split "misc", 56 entries.
 
 import type { S } from "../../_utils";
 import type { BadgeSettings } from "../types";
@@ -668,7 +668,7 @@ export type BadgeSettingsWayfarer = S<
 	>
 >;
 
-export type BadgeSettingsBaseMasterfileEntry =
+export type BadgeSettingsMiscMasterfileEntry =
 	| BadgeSettings7DayStreaks
 	| BadgeSettingsBattleAttackWon
 	| BadgeSettingsBattleTrainingWon

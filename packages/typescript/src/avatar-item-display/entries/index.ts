@@ -1,11 +1,11 @@
 // Generated from Pokémon GO masterfile — group "avatarItemDisplay" entries barrel.
 
-import type { AvatarItemDisplayBaseMasterfileEntry } from "./base";
 import type { AvatarItemDisplayDisplayStringIdMasterfileEntry } from "./display-string-id";
+import type { AvatarItemDisplayMiscMasterfileEntry } from "./misc";
 
-export type * from "./base";
 export type * from "./display-string-id";
+export type * from "./misc";
 
-export type AvatarItemDisplayMasterfileEntry = AvatarItemDisplayBaseMasterfileEntry | AvatarItemDisplayDisplayStringIdMasterfileEntry;
+export type AvatarItemDisplayMasterfileEntry = AvatarItemDisplayDisplayStringIdMasterfileEntry | AvatarItemDisplayMiscMasterfileEntry;
 
 export type AvatarItemDisplayTemplateID = AvatarItemDisplayMasterfileEntry["templateId"];

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "locationCardSettings", split "base", 125 entries.
+// Generated from Pokémon GO masterfile — group "locationCardSettings", split "misc", 125 entries.
 
 import type { S } from "../../_utils";
 import type { LocationCardSettings } from "../types";
@@ -1129,7 +1129,7 @@ export type LocationCardSettingsSpecialbackgroundKr2025Lotte01 = S<
 	>
 >;
 
-export type LocationCardSettingsBaseMasterfileEntry =
+export type LocationCardSettingsMiscMasterfileEntry =
 	| LocationCardSettings2023BarcelonaCitysafari001
 	| LocationCardSettings2023JejuAiradventures001
 	| LocationCardSettings2023LasvegasGotour001

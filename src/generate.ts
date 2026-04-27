@@ -6,6 +6,7 @@ import {
 	emitGroupTypes,
 	emitIndexFile,
 	emitMiscFile,
+	// emitMiscSettingsFile,
 	emitTopLevelVariants,
 	emitTypesFile,
 	kebabCase,
@@ -65,13 +66,52 @@ function planFiles(groups: Map<string, Group>): Map<string, string> {
 		}
 	}
 
-	files.set("misc/entries.ts", emitMiscFile(singletons));
-	files.set("misc/types.ts", "import type { MiscMasterfileEntry } from './entries';\n\nexport type Misc = MiscMasterfileEntry;");
-	files.set("misc/index.ts", "export type * from './entries'\nexport type * from './types'");
+	handleMisc(singletons)
+		.entries()
+		.forEach(([k, v]) => {
+			files.set(k, v);
+		});
+
 	files.set("types.ts", emitTypesFile(multiEntry.map((g) => g.discriminator)));
 	files.set("entries.ts", emitTopLevelVariants(groupSplits));
 	files.set("index.ts", emitIndexFile());
 	files.set("_utils.ts", "export type S<T> = {[KeyType in keyof T]: T[KeyType]} & {};");
+
+	return files;
+}
+
+function handleMisc(singletons: Group[]) {
+	const files = new Map<string, string>();
+
+	const miscMap = new Map<string, Group[]>();
+	// TODO: replace this with heuristics or something
+	const manualGroupings = ["settings", "flags", ""];
+
+	for (const g of singletons) {
+		const discriminator = g.discriminator.toLowerCase();
+
+		for (const grouping of manualGroupings) {
+			if (discriminator.includes(grouping)) {
+				miscMap.getOrInsert(grouping, []).push(g);
+				break;
+			}
+		}
+	}
+
+	for (const [file, entries] of miscMap.entries()) {
+		const safeFile = file || "misc";
+		files.set(`misc/entries/${safeFile}.ts`, emitMiscFile(safeFile, entries));
+	}
+	files.set(
+		`misc/entries/index.ts`,
+		emitEntriesBarrel(
+			"misc",
+			manualGroupings.map((e) => (e === "" ? "misc" : e)),
+		),
+	);
+
+	files.set("misc/types.ts", "import type { MiscMasterfileEntry } from './entries';\n\nexport type Misc = MiscMasterfileEntry;");
+	files.set("misc/index.ts", "export type * from './entries'\nexport type * from './types'");
 
 	return files;
 }

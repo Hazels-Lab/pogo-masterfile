@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "base", 864 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 864 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -13843,7 +13843,7 @@ export type PokemonExtendedSettingsV999PokemonGimmighoul = S<
 	>
 >;
 
-export type PokemonExtendedSettingsBaseMasterfileEntry =
+export type PokemonExtendedSettingsMiscMasterfileEntry =
 	| PokemonExtendedSettingsV0013PokemonWeedle
 	| PokemonExtendedSettingsV0014PokemonKakuna
 	| PokemonExtendedSettingsV0016PokemonPidgey

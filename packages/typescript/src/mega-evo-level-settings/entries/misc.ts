@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", split "base", 1 entry.
+// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", split "misc", 1 entry.
 
 import type { S } from "../../_utils";
 import type { MegaEvoLevelSettings } from "../types";
@@ -19,4 +19,4 @@ export type MegaEvoLevelSettings0 = S<
 	>
 >;
 
-export type MegaEvoLevelSettingsBaseMasterfileEntry = MegaEvoLevelSettings0;
+export type MegaEvoLevelSettingsMiscMasterfileEntry = MegaEvoLevelSettings0;

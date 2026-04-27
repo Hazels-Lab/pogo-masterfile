@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "stickerMetadata", split "base", 12 entries.
+// Generated from Pokémon GO masterfile — group "stickerMetadata", split "misc", 12 entries.
 
 import type { S } from "../../_utils";
 import type { StickerMetadata } from "../types";
@@ -100,7 +100,7 @@ export type StickerMetadataFlairStar7 = S<
 	>
 >;
 
-export type StickerMetadataBaseMasterfileEntry =
+export type StickerMetadataMiscMasterfileEntry =
 	| StickerMetadataFlairHeart1
 	| StickerMetadataFlairHeart2
 	| StickerMetadataFlairHeart3

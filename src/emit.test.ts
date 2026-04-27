@@ -8,7 +8,7 @@ import { groupEntries } from "./group.ts";
 
 describe("emitMiscFile", () => {
 	test("emits a deterministic header for the misc file", () => {
-		const output = emitMiscFile([]);
+		const output = emitMiscFile("Misc", []);
 		expect(output.startsWith(`// Generated from Pokémon GO masterfile — singleton entries (no shared discriminator).\n`)).toBe(true);
 	});
 
@@ -37,7 +37,7 @@ describe("emitMiscFile", () => {
 			},
 		];
 
-		const output = emitMiscFile(singletons);
+		const output = emitMiscFile("Misc", singletons);
 		expect(output).toContain("export interface AccessibilitySettings {");
 		expect(output).toContain('templateId: "ACCESSIBILITY_CLIENT_SETTINGS";');
 		expect(output).toContain("accessibilitySettings: object;");
@@ -62,7 +62,7 @@ describe("emitMiscFile", () => {
 			},
 		];
 
-		const output = emitMiscFile(stubs);
+		const output = emitMiscFile("Misc", stubs);
 		expect(output).toContain("export interface ItemCurrencyValues {");
 		expect(output).toContain('templateId: "ITEM_CURRENCY_VALUES";');
 		expect(output).not.toContain(": unknown;");
@@ -71,7 +71,7 @@ describe("emitMiscFile", () => {
 	test("emits inferred singleton payloads with exact scalar literals", () => {
 		const accessibility = groupEntries(MOCK_MASTERFILE).get("accessibilitySettings")!;
 
-		const output = emitMiscFile([accessibility]);
+		const output = emitMiscFile("Misc", [accessibility]);
 
 		expect(output).toContain("accessibilitySettings: {");
 		expect(output).toContain("enabled: true;");
@@ -102,7 +102,7 @@ describe("emitMiscFile", () => {
 			},
 		];
 
-		const output = emitMiscFile(mixed);
+		const output = emitMiscFile("Misc", mixed);
 		// ItemCurrencyValues (stub, 'I') sorts before XyzSettings (regular, 'X')
 		const itemIdx = output.indexOf("ItemCurrencyValues");
 		const xyzIdx = output.indexOf("XyzSettings");
@@ -134,7 +134,7 @@ describe("emitMiscFile", () => {
 			},
 		];
 
-		const output = emitMiscFile(mixed);
+		const output = emitMiscFile("Misc", mixed);
 		expect(output).toContain("export type MiscMasterfileEntry =");
 		expect(output).toContain("| AccessibilitySettings");
 		expect(output).toContain("| XyzSettings;");
@@ -147,7 +147,7 @@ describe("emitMiscFile", () => {
 	});
 
 	test("emits MiscMasterfileEntry = never when there are no singletons", () => {
-		const output = emitMiscFile([]);
+		const output = emitMiscFile("Misc", []);
 		expect(output).toContain("export type MiscMasterfileEntry = never;");
 		expect(output).toContain(`export type MiscTemplateID = MiscMasterfileEntry["templateId"];`);
 	});

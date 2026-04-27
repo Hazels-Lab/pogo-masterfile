@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "base", 344 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "misc", 344 entries.
 
 import type { S } from "../../_utils";
 import type { AvatarItemDisplay } from "../types";
@@ -2756,7 +2756,7 @@ export type AvatarItemDisplaySetZacostumeB = S<
 	>
 >;
 
-export type AvatarItemDisplayBaseMasterfileEntry =
+export type AvatarItemDisplayMiscMasterfileEntry =
 	| AvatarItemDisplayNGradientEye0
 	| AvatarItemDisplayNGradientEye1
 	| AvatarItemDisplayNGradientEye10

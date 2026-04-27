@@ -150,7 +150,7 @@ export function tryH2(group: Group): H2Cluster[] | null {
 }
 
 export function fingerprintFileName(fingerprint: string[]): string {
-	if (fingerprint.length === 0) return "base";
+	if (fingerprint.length === 0) return "misc";
 	return fingerprint.map(kebabCase).join("-");
 }
 

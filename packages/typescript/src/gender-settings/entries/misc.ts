@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "genderSettings", split "base", 2371 entries.
+// Generated from Pokémon GO masterfile — group "genderSettings", split "misc", 2371 entries.
 
 import type { S } from "../../_utils";
 import type { GenderSettings } from "../types";
@@ -27887,7 +27887,7 @@ export type GenderSettingsV1025PokemonPecharuntNormal = S<
 	>
 >;
 
-export type GenderSettingsBaseMasterfileEntry =
+export type GenderSettingsMiscMasterfileEntry =
 	| GenderSettingsV0001PokemonBulbasaur
 	| GenderSettingsV0001PokemonBulbasaurFall2019
 	| GenderSettingsV0001PokemonBulbasaurNormal
