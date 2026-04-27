@@ -109,7 +109,7 @@ describe("emitMiscFile", () => {
 		expect(itemIdx).toBeLessThan(xyzIdx);
 	});
 
-	test("emits MiscMasterfileEntry union + MiscTemplateID alias at the end, sorted", () => {
+	test("emits MiscMiscMasterfileEntry union + MiscTemplateID alias at the end, sorted", () => {
 		const mixed: Group[] = [
 			{
 				discriminator: "xyzSettings",
@@ -135,21 +135,21 @@ describe("emitMiscFile", () => {
 		];
 
 		const output = emitMiscFile("Misc", mixed);
-		expect(output).toContain("export type MiscMasterfileEntry =");
+		expect(output).toContain("export type MiscMiscMasterfileEntry =");
 		expect(output).toContain("| AccessibilitySettings");
 		expect(output).toContain("| XyzSettings;");
-		expect(output).toContain(`export type MiscTemplateID = MiscMasterfileEntry["templateId"];`);
+		expect(output).toContain(`export type MiscMiscTemplateID = MiscMiscMasterfileEntry["templateId"];`);
 
 		// Union members follow the interface definitions
 		const lastInterfaceIdx = output.lastIndexOf("export interface");
-		const unionIdx = output.indexOf("export type MiscMasterfileEntry");
+		const unionIdx = output.indexOf("export type MiscMiscMasterfileEntry");
 		expect(unionIdx).toBeGreaterThan(lastInterfaceIdx);
 	});
 
-	test("emits MiscMasterfileEntry = never when there are no singletons", () => {
+	test("emits MiscMiscMasterfileEntry = never when there are no singletons", () => {
 		const output = emitMiscFile("Misc", []);
-		expect(output).toContain("export type MiscMasterfileEntry = never;");
-		expect(output).toContain(`export type MiscTemplateID = MiscMasterfileEntry["templateId"];`);
+		expect(output).toContain("export type MiscMiscMasterfileEntry = never;");
+		expect(output).toContain(`export type MiscMiscTemplateID = MiscMiscMasterfileEntry["templateId"];`);
 	});
 });
 
@@ -217,7 +217,7 @@ describe("emitGroupIndex", () => {
 		expect(output.startsWith(`// Generated from Pokémon GO masterfile — group "typeEffective", 2 entries (structural types).\n`)).toBe(true);
 	});
 
-	test("emits the generic base interface, XData, union, and TemplateID alias", () => {
+	test("emits the generic misc interface, XData, union, and TemplateID alias", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
 		const output = emitGroupTypes(group);
 
@@ -268,7 +268,7 @@ describe("emitVariantsFlat", () => {
 		expect(output.startsWith(`// Generated from Pokémon GO masterfile — group "typeEffective", 2 entries (variant aliases).\n`)).toBe(true);
 	});
 
-	test("imports the base interface and XData from the sibling index", () => {
+	test("imports the misc interface and XData from the sibling index", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
 		const output = emitEntriesFlat(group);
 		expect(output).toContain(`import type { S } from "../_utils";`);
@@ -284,7 +284,7 @@ describe("emitVariantsFlat", () => {
 		expect(output).toContain(`"POKEMON_TYPE_DARK"`);
 	});
 
-	test("does NOT emit the base interface, XData, or union", () => {
+	test("does NOT emit the misc interface, XData, or union", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
 		const output = emitEntriesFlat(group);
 
@@ -316,7 +316,7 @@ describe("emitVariantFile", () => {
 		expect(output.startsWith(`// Generated from Pokémon GO masterfile — group "typeEffective", split "bug", 1 entry.\n`)).toBe(true);
 	});
 
-	test("imports base + XData + S from the parent directory", () => {
+	test("imports misc + XData + S from the parent directory", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
 		const bug = group.entries.find((e) => e.templateId === "POKEMON_TYPE_BUG")!;
 		const output = emitEntryFile(group, "bug", [bug]);
@@ -368,8 +368,8 @@ describe("emitVariantsBarrel", () => {
 	});
 
 	test("handles a single-file barrel", () => {
-		const output = emitEntriesBarrel("formSettings", ["base"]);
-		expect(output).toContain(`export type * from "./base";`);
+		const output = emitEntriesBarrel("formSettings", ["misc"]);
+		expect(output).toContain(`export type * from "./misc";`);
 	});
 });
 

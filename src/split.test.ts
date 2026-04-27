@@ -190,8 +190,8 @@ describe("tryH2", () => {
 });
 
 describe("fingerprintFileName", () => {
-	test("returns 'base' for empty fingerprint", () => {
-		expect(fingerprintFileName([])).toBe("base");
+	test("returns 'misc' for empty fingerprint", () => {
+		expect(fingerprintFileName([])).toBe("misc");
 	});
 
 	test("kebab-cases a single camelCase field", () => {
@@ -223,7 +223,7 @@ describe("tryH2 file naming", () => {
 
 		const clusters = tryH2(group)!;
 		const names = clusters.map((c) => c.fileName).sort();
-		expect(names).toEqual(["base", "extra-form", "form"]);
+		expect(names).toEqual(["extra-form", "form", "misc"]);
 	});
 });
 
