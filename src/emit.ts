@@ -425,3 +425,70 @@ export function emitIndexFile(multiEntryDiscriminators: string[]): string {
 
 	return lines.join("\n");
 }
+
+export function emitGroupIndex(group: Group): string {
+	const gName = groupName(group.discriminator);
+	const sortedIds = [...group.entries].map((e) => e.templateId).sort();
+	const aliases = deriveGroupAliases(sortedIds, gName);
+
+	const invariants = detectInvariants(group);
+	const payloadType = inferGroupPayloadType(group);
+	const widenedPayload = widenType(payloadType);
+	const xdataType = stripInvariantsFromWidened(widenedPayload, invariants);
+
+	const xdataName = `${gName}Data`;
+	const discName = renderPropertyName(group.discriminator);
+	const entryCount = group.entries.length;
+	const entryWord = entryCount === 1 ? "entry" : "entries";
+	const lines: string[] = [
+		`// Generated from Pokémon GO masterfile — group "${group.discriminator}", ${entryCount} ${entryWord} (structural types).`,
+		``,
+		`import type { ${SIMPLIFY} } from "../_utils";`,
+		``,
+		`export type * from "./variants";`,
+		``,
+	];
+
+	lines.push(`export interface ${gName}<`);
+	lines.push(`\t${TEMPLATE_GENERIC} extends string = string,`);
+	lines.push(`\tTData extends ${xdataName} = ${xdataName},`);
+	lines.push(`> {`);
+	lines.push(`\ttemplateId: ${TEMPLATE_GENERIC};`);
+	lines.push(`\tdata: {`);
+	lines.push(`\t\ttemplateId: ${TEMPLATE_GENERIC};`);
+
+	if (invariants.size === 0) {
+		lines.push(`\t\t${discName}: TData;`);
+	} else {
+		const invariantsType = invariantsToInferredType(invariants);
+		const invariantsLines = renderType(invariantsType);
+		if (invariantsLines.length === 1) {
+			lines.push(`\t\t${discName}: TData & ${invariantsLines[0]};`);
+		} else {
+			lines.push(`\t\t${discName}: TData & ${invariantsLines[0]}`);
+			for (const line of invariantsLines.slice(1, -1)) {
+				lines.push(`\t\t${line}`);
+			}
+			lines.push(`\t\t${invariantsLines[invariantsLines.length - 1]};`);
+		}
+	}
+
+	lines.push(`\t};`);
+	lines.push(`}`);
+	lines.push(``);
+
+	lines.push(...renderXDataInterface(xdataName, xdataType));
+	lines.push(``);
+
+	lines.push(`export type ${gName}MasterfileEntry =`);
+	sortedIds.forEach((id, i) => {
+		const alias = aliases.get(id)!;
+		const suffix = i === sortedIds.length - 1 ? ";" : "";
+		lines.push(`\t| ${gName}${alias}${suffix}`);
+	});
+	lines.push(``);
+	lines.push(`export type ${gName}TemplateID = ${gName}MasterfileEntry["templateId"];`);
+	lines.push(``);
+
+	return lines.join("\n");
+}

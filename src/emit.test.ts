@@ -592,3 +592,54 @@ describe("emitIndexFile", () => {
 		expect(miscIdx).toBeGreaterThan(typeIdx);
 	});
 });
+
+import { emitGroupIndex } from "./emit.ts";
+
+describe("emitGroupIndex", () => {
+	test("emits header noting it's the group's structural types", () => {
+		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
+		const output = emitGroupIndex(group);
+		expect(output.startsWith(`// Generated from Pokémon GO masterfile — group "typeEffective", 2 entries (structural types).\n`)).toBe(true);
+	});
+
+	test("emits the generic base interface, XData, union, and TemplateID alias", () => {
+		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
+		const output = emitGroupIndex(group);
+
+		expect(output).toContain("export interface TypeEffective<");
+		expect(output).toContain("TemplateID extends string = string,");
+		expect(output).toContain("TData extends TypeEffectiveData = TypeEffectiveData,");
+		expect(output).toContain("typeEffective: TData & {");
+		expect(output).toContain("attackType: TemplateID;");
+
+		expect(output).toContain("export interface TypeEffectiveData {");
+
+		expect(output).toContain("export type TypeEffectiveMasterfileEntry =");
+		expect(output).toContain("| TypeEffectiveBug");
+		expect(output).toContain("| TypeEffectiveDark");
+
+		expect(output).toContain(`export type TypeEffectiveTemplateID = TypeEffectiveMasterfileEntry["templateId"];`);
+	});
+
+	test("re-exports variants barrel from the parent index", () => {
+		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
+		const output = emitGroupIndex(group);
+		expect(output).toContain(`export type * from "./variants";`);
+	});
+
+	test("does NOT emit per-variant alias declarations", () => {
+		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
+		const output = emitGroupIndex(group);
+		expect(output).not.toContain("export type TypeEffectiveBug = TypeEffective<");
+		expect(output).not.toContain("export type TypeEffectiveDark = TypeEffective<");
+		// Also check the S<...> form to be safe.
+		expect(output).not.toContain("export type TypeEffectiveBug = S<TypeEffective<");
+		expect(output).not.toContain("export type TypeEffectiveDark = S<TypeEffective<");
+	});
+
+	test("imports S from the parent _utils", () => {
+		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
+		const output = emitGroupIndex(group);
+		expect(output).toContain(`import type { S } from "../_utils";`);
+	});
+});
