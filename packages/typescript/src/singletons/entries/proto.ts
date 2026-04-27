@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — singleton entries (no shared discriminator).
+// Generated from Pokémon GO masterfile — Singletons entries (no shared discriminator).
 
 export interface AssetRefreshProto {
 	templateId: "ASSET_REFRESH_PROTO";
@@ -22,6 +22,6 @@ export interface OptimizationsProto {
 	};
 }
 
-export type MiscProtoMasterfileEntry = AssetRefreshProto | OptimizationsProto;
+export type SingletonsProtoMasterfileEntry = AssetRefreshProto | OptimizationsProto;
 
-export type MiscProtoTemplateID = MiscProtoMasterfileEntry["templateId"];
+export type SingletonsProtoTemplateID = SingletonsProtoMasterfileEntry["templateId"];

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — singleton entries (no shared discriminator).
+// Generated from Pokémon GO masterfile — Singletons entries (no shared discriminator).
 
 export interface ArPhotoFeatureFlags {
 	templateId: "AR_PHOTO_FEATURE_FLAGS";
@@ -463,7 +463,7 @@ export interface Pokedexv2FeatureFlags {
 	};
 }
 
-export type MiscFlagsMasterfileEntry =
+export type SingletonsFlagsMasterfileEntry =
 	| ArPhotoFeatureFlags
 	| AvatarFeatureFlags
 	| AvatarStoreFooterFlags
@@ -471,4 +471,4 @@ export type MiscFlagsMasterfileEntry =
 	| BreadFeatureFlags
 	| Pokedexv2FeatureFlags;
 
-export type MiscFlagsTemplateID = MiscFlagsMasterfileEntry["templateId"];
+export type SingletonsFlagsTemplateID = SingletonsFlagsMasterfileEntry["templateId"];

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — singleton entries (no shared discriminator).
+// Generated from Pokémon GO masterfile — Singletons entries (no shared discriminator).
 
 export interface BelugaPokemonWhitelist {
 	templateId: "BELUGA_POKEMON_WHITELIST";
@@ -390,7 +390,7 @@ export interface PokecoinPurchaseDisplayGmt {
 	};
 }
 
-export type MiscMiscMasterfileEntry =
+export type SingletonsMiscMasterfileEntry =
 	| BelugaPokemonWhitelist
 	| BreadMoveMappings
 	| ItemCurrencyValues
@@ -398,4 +398,4 @@ export type MiscMiscMasterfileEntry =
 	| PlayerLevel
 	| PokecoinPurchaseDisplayGmt;
 
-export type MiscMiscTemplateID = MiscMiscMasterfileEntry["templateId"];
+export type SingletonsMiscTemplateID = SingletonsMiscMasterfileEntry["templateId"];

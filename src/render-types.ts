@@ -1,7 +1,5 @@
+import { TEMPLATE_GENERIC } from "./constants.ts";
 import type { InferredProperty, InferredType } from "./infer.ts";
-
-export const TEMPLATE_GENERIC = `TemplateID`;
-export const SIMPLIFY = `S`;
 
 // Prepend `indent` to each line; append `lastSuffix` (e.g. ";" or ",") to the final line only.
 // The everyday shape for indenting a multi-line type body and attaching trailing punctuation.

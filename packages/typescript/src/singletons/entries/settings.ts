@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — singleton entries (no shared discriminator).
+// Generated from Pokémon GO masterfile — Singletons entries (no shared discriminator).
 
 export interface AccessibilitySettings {
 	templateId: "ACCESSIBILITY_CLIENT_SETTINGS";
@@ -5938,7 +5938,7 @@ export interface WeatherBonusSettings {
 	};
 }
 
-export type MiscSettingsMasterfileEntry =
+export type SingletonsSettingsMasterfileEntry =
 	| AccessibilitySettings
 	| AdditiveSceneSettings
 	| AddressablePokemonSettings
@@ -6065,4 +6065,4 @@ export type MiscSettingsMasterfileEntry =
 	| VsSeekerScheduleSettings
 	| WeatherBonusSettings;
 
-export type MiscSettingsTemplateID = MiscSettingsMasterfileEntry["templateId"];
+export type SingletonsSettingsTemplateID = SingletonsSettingsMasterfileEntry["templateId"];

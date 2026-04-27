@@ -34,7 +34,6 @@ import type { LevelUpRewardsMasterfileEntry } from "./level-up-rewards/entries";
 import type { LimitedPurchaseSkuSettingsMasterfileEntry } from "./limited-purchase-sku-settings/entries";
 import type { LocationCardSettingsMasterfileEntry } from "./location-card-settings/entries";
 import type { MegaEvoLevelSettingsMasterfileEntry } from "./mega-evo-level-settings/entries";
-import type { MiscMasterfileEntry } from "./misc/entries";
 import type { MoveSequenceSettingsMasterfileEntry } from "./move-sequence-settings/entries";
 import type { MoveSettingsMasterfileEntry } from "./move-settings/entries";
 import type { NonCombatMoveSettingsMasterfileEntry } from "./non-combat-move-settings/entries";
@@ -52,6 +51,7 @@ import type { QuestSettingsMasterfileEntry } from "./quest-settings/entries";
 import type { RecommendedSearchSettingsMasterfileEntry } from "./recommended-search-settings/entries";
 import type { RollBackMasterfileEntry } from "./roll-back/entries";
 import type { SettingsOverrideRuleMasterfileEntry } from "./settings-override-rule/entries";
+import type { SingletonsMasterfileEntry } from "./singletons/entries";
 import type { StickerMetadataMasterfileEntry } from "./sticker-metadata/entries";
 import type { TappableSettingsMasterfileEntry } from "./tappable-settings/entries";
 import type { TemporaryEvolutionSettingsMasterfileEntry } from "./temporary-evolution-settings/entries";
@@ -95,7 +95,6 @@ export type * from "./level-up-rewards/entries";
 export type * from "./limited-purchase-sku-settings/entries";
 export type * from "./location-card-settings/entries";
 export type * from "./mega-evo-level-settings/entries";
-export type * from "./misc/entries";
 export type * from "./move-sequence-settings/entries";
 export type * from "./move-settings/entries";
 export type * from "./non-combat-move-settings/entries";
@@ -113,6 +112,7 @@ export type * from "./quest-settings/entries";
 export type * from "./recommended-search-settings/entries";
 export type * from "./roll-back/entries";
 export type * from "./settings-override-rule/entries";
+export type * from "./singletons/entries";
 export type * from "./sticker-metadata/entries";
 export type * from "./tappable-settings/entries";
 export type * from "./temporary-evolution-settings/entries";
@@ -157,7 +157,6 @@ export type MasterfileEntry =
 	| LimitedPurchaseSkuSettingsMasterfileEntry
 	| LocationCardSettingsMasterfileEntry
 	| MegaEvoLevelSettingsMasterfileEntry
-	| MiscMasterfileEntry
 	| MoveSequenceSettingsMasterfileEntry
 	| MoveSettingsMasterfileEntry
 	| NonCombatMoveSettingsMasterfileEntry
@@ -175,6 +174,7 @@ export type MasterfileEntry =
 	| RecommendedSearchSettingsMasterfileEntry
 	| RollBackMasterfileEntry
 	| SettingsOverrideRuleMasterfileEntry
+	| SingletonsMasterfileEntry
 	| StickerMetadataMasterfileEntry
 	| TappableSettingsMasterfileEntry
 	| TemporaryEvolutionSettingsMasterfileEntry

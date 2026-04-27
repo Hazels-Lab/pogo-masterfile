@@ -34,7 +34,6 @@ import type { LevelUpRewards } from "./level-up-rewards/types";
 import type { LimitedPurchaseSkuSettings } from "./limited-purchase-sku-settings/types";
 import type { LocationCardSettings } from "./location-card-settings/types";
 import type { MegaEvoLevelSettings } from "./mega-evo-level-settings/types";
-import type { Misc } from "./misc/types";
 import type { MoveSequenceSettings } from "./move-sequence-settings/types";
 import type { MoveSettings } from "./move-settings/types";
 import type { NonCombatMoveSettings } from "./non-combat-move-settings/types";
@@ -52,6 +51,7 @@ import type { QuestSettings } from "./quest-settings/types";
 import type { RecommendedSearchSettings } from "./recommended-search-settings/types";
 import type { RollBack } from "./roll-back/types";
 import type { SettingsOverrideRule } from "./settings-override-rule/types";
+import type { Singletons } from "./singletons/types";
 import type { StickerMetadata } from "./sticker-metadata/types";
 import type { TappableSettings } from "./tappable-settings/types";
 import type { TemporaryEvolutionSettings } from "./temporary-evolution-settings/types";
@@ -95,7 +95,6 @@ export type * from "./level-up-rewards/types";
 export type * from "./limited-purchase-sku-settings/types";
 export type * from "./location-card-settings/types";
 export type * from "./mega-evo-level-settings/types";
-export type * from "./misc/types";
 export type * from "./move-sequence-settings/types";
 export type * from "./move-settings/types";
 export type * from "./non-combat-move-settings/types";
@@ -113,6 +112,7 @@ export type * from "./quest-settings/types";
 export type * from "./recommended-search-settings/types";
 export type * from "./roll-back/types";
 export type * from "./settings-override-rule/types";
+export type * from "./singletons/types";
 export type * from "./sticker-metadata/types";
 export type * from "./tappable-settings/types";
 export type * from "./temporary-evolution-settings/types";
@@ -157,7 +157,6 @@ export type MasterfileType =
 	| LimitedPurchaseSkuSettings
 	| LocationCardSettings
 	| MegaEvoLevelSettings
-	| Misc
 	| MoveSequenceSettings
 	| MoveSettings
 	| NonCombatMoveSettings
@@ -175,6 +174,7 @@ export type MasterfileType =
 	| RecommendedSearchSettings
 	| RollBack
 	| SettingsOverrideRule
+	| Singletons
 	| StickerMetadata
 	| TappableSettings
 	| TemporaryEvolutionSettings

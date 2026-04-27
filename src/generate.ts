@@ -1,12 +1,21 @@
 import { join } from "node:path";
-import { emitEntriesBarrel, emitEntriesFlat, emitEntryFile, emitGroupTypes, emitIndexFile, emitMiscFile, emitTopLevelVariants, emitTypesFile } from "./emit.ts";
+import { BARREL_FILE, ENTRIES_LOWER, GAME_MASTER_URL, SINGLETONS, TYPES_LOWER } from "./constants.ts";
+import {
+	emitEntriesBarrel,
+	emitEntriesFlat,
+	emitEntryFile,
+	emitGroupTypes,
+	emitIndexFile,
+	emitSingletonsFile,
+	emitSingletonsTypeFile,
+	emitTopLevelVariants,
+	emitTypesFile,
+} from "./emit.ts";
 import type { Entry, Group } from "./group.ts";
 import { groupEntries } from "./group.ts";
 import { kebabCase } from "./naming.ts";
 import { chooseSplit, clusterSingletons } from "./split.ts";
 import { writeOutput } from "./write.ts";
-
-const GAME_MASTER_URL = "https://raw.githubusercontent.com/alexelgt/game_masters/refs/heads/master/GAME_MASTER.json";
 
 const OUT_DIR = join(import.meta.dir, "..", "packages", "typescript", "src");
 
@@ -35,11 +44,11 @@ function planFiles(groups: Map<string, Group>): Map<string, string> {
 	for (const g of multiEntry) {
 		const dir = kebabCase(g.discriminator);
 		const plan = chooseSplit(g);
-		files.set(`${dir}/index.ts`, emitIndexFile());
-		files.set(`${dir}/types.ts`, emitGroupTypes(g));
+		files.set(`${dir}/${BARREL_FILE}.ts`, emitIndexFile());
+		files.set(`${dir}/${TYPES_LOWER}.ts`, emitGroupTypes(g));
 
 		if (plan.kind === "none") {
-			files.set(`${dir}/entries.ts`, emitEntriesFlat(g));
+			files.set(`${dir}/${ENTRIES_LOWER}.ts`, emitEntriesFlat(g));
 			groupSplits.set(g.discriminator, "flat");
 			continue;
 		}
@@ -49,10 +58,10 @@ function planFiles(groups: Map<string, Group>): Map<string, string> {
 				? plan.buckets.map((b) => ({ fileName: b.fileName, entries: b.entries }))
 				: plan.clusters.map((c) => ({ fileName: c.fileName, entries: c.entries }));
 		for (const b of buckets) {
-			files.set(`${dir}/entries/${b.fileName}.ts`, emitEntryFile(g, b.fileName, b.entries));
+			files.set(`${dir}/${ENTRIES_LOWER}/${b.fileName}.ts`, emitEntryFile(g, b.fileName, b.entries));
 		}
 		files.set(
-			`${dir}/entries/index.ts`,
+			`${dir}/${ENTRIES_LOWER}/${BARREL_FILE}.ts`,
 			emitEntriesBarrel(
 				g.discriminator,
 				buckets.map((b) => b.fileName),
@@ -61,29 +70,72 @@ function planFiles(groups: Map<string, Group>): Map<string, string> {
 		groupSplits.set(g.discriminator, "split");
 	}
 
-	// Misc: cluster singletons by trailing-token heuristic, then emit each bucket
+	// Singletons: cluster singletons by trailing-token heuristic, then emit each bucket
 	// like a split group's bucket. The only inherent differences from regular groups
 	// are the per-bucket emitter (singletons don't share structure) and the trivial
 	// types.ts (no shared interface to define).
-	const miscBuckets = clusterSingletons(singletons);
-	for (const b of miscBuckets) {
-		files.set(`misc/entries/${b.fileName}.ts`, emitMiscFile(b.fileName, b.singletons));
+	const singletonsBuckets = clusterSingletons(singletons);
+	const lowerSingleton = SINGLETONS.toLowerCase() as Lowercase<typeof SINGLETONS>;
+
+	for (const b of singletonsBuckets) {
+		files.set(`${lowerSingleton}/${ENTRIES_LOWER}/${b.fileName}.ts`, emitSingletonsFile(b.fileName, b.singletons));
 	}
 	files.set(
-		`misc/entries/index.ts`,
+		`${lowerSingleton}/${ENTRIES_LOWER}/${BARREL_FILE}.ts`,
 		emitEntriesBarrel(
-			"misc",
-			miscBuckets.map((b) => b.fileName),
+			lowerSingleton,
+			singletonsBuckets.map((b) => b.fileName),
 		),
 	);
-	files.set("misc/types.ts", `import type { MiscMasterfileEntry } from "./entries";\n\nexport type Misc = MiscMasterfileEntry;`);
-	files.set("misc/index.ts", emitIndexFile());
-	groupSplits.set("misc", "split");
+	// files.set(
+	// 	`${lowerSingleton}/${TYPES_LOWER}.ts`,
+	// 	`${IMPORT} ${TYPE_LOWER} { ${SINGLETONS}${BARREL_TYPE}${ENTRY_LOWER} } from "./${ENTRIES_LOWER}";\n\n${EXPORT} ${TYPE_LOWER} ${SINGLETONS} = ${SINGLETONS}${BARREL_TYPE}${ENTRY_LOWER};`,
+	// );
+	files.set(`${lowerSingleton}/${TYPES_LOWER}.ts`, emitSingletonsTypeFile(singletons));
+	files.set(`${lowerSingleton}/${BARREL_FILE}.ts`, emitIndexFile());
+	groupSplits.set(lowerSingleton, "split");
 
-	files.set("types.ts", emitTypesFile([...multiEntry.map((g) => g.discriminator), "misc"]));
-	files.set("entries.ts", emitTopLevelVariants(groupSplits));
-	files.set("index.ts", emitIndexFile());
-	files.set("_utils.ts", "export type S<T> = { [KeyType in keyof T]: T[KeyType] } & {};");
+	// root files
+	files.set(`${TYPES_LOWER}.ts`, emitTypesFile([...multiEntry.map((g) => g.discriminator), lowerSingleton]));
+	files.set(`${ENTRIES_LOWER}.ts`, emitTopLevelVariants(groupSplits));
+	files.set(`${BARREL_FILE}.ts`, emitIndexFile());
+	files.set(
+		"_utils.ts",
+		`export type S<T> = { [KeyType in keyof T]: T[KeyType] } & {};
+
+type PW<T> = [T] extends [string]
+	? string
+	: [T] extends [number]
+		? number
+		: [T] extends [boolean]
+			? boolean
+			: [T] extends [bigint]
+				? bigint
+				: [T] extends [symbol]
+					? symbol
+					: T;
+
+type KoU<T> = T extends unknown ? keyof T : never;
+
+type VoUK<T, K extends PropertyKey> = T extends unknown ? (K extends keyof T ? T[K] : never) : never;
+
+export type W<T> =
+	// Preserve functions
+	[T] extends [(...args: unknown[]) => unknown]
+		? T
+		: // Tuples become arrays. This is the important part:
+			// Widen the whole union of element types once.
+			[T] extends [readonly unknown[]]
+			? Array<W<T[number]>>
+			: // Objects keep properties and collapse same-shaped unions
+				[T] extends [object]
+				? S<{
+						[K in KoU<T>]: W<VoUK<T, K>>;
+					}>
+				: // Literals become primitives
+					PW<T>;
+`,
+	);
 
 	return files;
 }
@@ -105,3 +157,39 @@ main().catch((err) => {
 	console.error(err);
 	process.exit(1);
 });
+
+// type PW<T> = [T] extends [string]
+// 	? string
+// 	: [T] extends [number]
+// 		? number
+// 		: [T] extends [boolean]
+// 			? boolean
+// 			: [T] extends [bigint]
+// 				? bigint
+// 				: [T] extends [symbol]
+// 					? symbol
+// 					: T;
+
+// type KoU<T> = T extends unknown ? keyof T : never;
+
+// type VoUK<T, K extends PropertyKey> = T extends unknown ? (K extends keyof T ? T[K] : never) : never;
+
+// type S<T> = {
+// 	[K in keyof T]: T[K];
+// } & {};
+
+// type W<T> =
+// 	// Preserve functions
+// 	[T] extends [(...args: any[]) => any]
+// 		? T
+// 		: // Tuples become arrays. This is the important part:
+// 			// Widen the whole union of element types once.
+// 			[T] extends [readonly unknown[]]
+// 			? Array<W<T[number]>>
+// 			: // Objects keep properties and collapse same-shaped unions
+// 				[T] extends [object]
+// 				? S<{
+// 						[K in KoU<T>]: W<VoUK<T, K>>;
+// 					}>
+// 				: // Literals become primitives
+// 					PW<T>;
