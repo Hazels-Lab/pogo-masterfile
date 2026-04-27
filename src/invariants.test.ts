@@ -411,7 +411,7 @@ describe("stripInvariantsFromValue", () => {
 		expect(stripInvariantsFromValue(value, tree)).toEqual({ keep: 1 });
 	});
 
-	test("recurses into nested invariants and drops empty containers", () => {
+	test("recurses into nested invariants and preserves empty containers", () => {
 		const value = { wrapper: { onlyChild: "POKEMON_TYPE_BUG" }, kept: "ok" };
 		const tree: InvariantTree = new Map<string, InvariantNode>([
 			[
@@ -422,7 +422,9 @@ describe("stripInvariantsFromValue", () => {
 				},
 			],
 		]);
-		expect(stripInvariantsFromValue(value, tree)).toEqual({ kept: "ok" });
+		// Empty wrappers are deliberately preserved (per `fix: empty object generating`).
+		// They render downstream as `wrapper: object;`, signalling "any object" in the variant TData.
+		expect(stripInvariantsFromValue(value, tree)).toEqual({ kept: "ok", wrapper: {} });
 	});
 
 	test("preserves partial objects when some keys are invariants", () => {
