@@ -1,7 +1,8 @@
 import { join } from "node:path";
-import { emitGroupFile, emitIndexFile, emitMiscFile, kebabCase } from "./emit.ts";
+import { emitGroupIndex, emitIndexFile, emitMiscFile, emitTopLevelVariants, emitVariantFile, emitVariantsBarrel, emitVariantsFlat, kebabCase } from "./emit.ts";
 import type { Entry, Group } from "./group.ts";
 import { groupEntries } from "./group.ts";
+import { chooseSplit } from "./split.ts";
 import { writeOutput } from "./write.ts";
 
 const GAME_MASTER_URL = "https://raw.githubusercontent.com/alexelgt/game_masters/refs/heads/master/GAME_MASTER.json";
@@ -26,14 +27,36 @@ function planFiles(groups: Map<string, Group>): Map<string, string> {
 		else multiEntry.push(g);
 	}
 
-	// Sort groups alphabetically by discriminator for deterministic iteration.
 	multiEntry.sort((a, b) => a.discriminator.localeCompare(b.discriminator));
 
+	const groupSplits = new Map<string, "split" | "flat">();
+
 	for (const g of multiEntry) {
-		files.set(`${kebabCase(g.discriminator)}.ts`, emitGroupFile(g));
+		const dir = kebabCase(g.discriminator);
+		const plan = chooseSplit(g);
+		files.set(`${dir}/index.ts`, emitGroupIndex(g));
+
+		if (plan.kind === "none") {
+			files.set(`${dir}/variants.ts`, emitVariantsFlat(g));
+			groupSplits.set(g.discriminator, "flat");
+		} else {
+			const fileNames: string[] = [];
+			const buckets: Array<{ fileName: string; entries: Entry[] }> =
+				plan.kind === "h1"
+					? plan.buckets.map((b) => ({ fileName: b.fileName, entries: b.entries }))
+					: plan.clusters.map((c) => ({ fileName: c.fileName, entries: c.entries }));
+			for (const b of buckets) {
+				files.set(`${dir}/variants/${b.fileName}.ts`, emitVariantFile(g, b.fileName, b.entries));
+				fileNames.push(b.fileName);
+			}
+			files.set(`${dir}/variants/index.ts`, emitVariantsBarrel(g.discriminator, fileNames));
+			groupSplits.set(g.discriminator, "split");
+		}
 	}
-	files.set("misc.ts", emitMiscFile(singletons));
+
+	files.set("misc/index.ts", emitMiscFile(singletons));
 	files.set("index.ts", emitIndexFile(multiEntry.map((g) => g.discriminator)));
+	files.set("variants.ts", emitTopLevelVariants(groupSplits));
 	files.set("_utils.ts", "export type S<T> = {[KeyType in keyof T]: T[KeyType]} & {};");
 
 	return files;
