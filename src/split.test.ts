@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
 import type { Group } from "./group.ts";
-import { fingerprintFileName, tryH1, tryH2, valueFileName } from "./split.ts";
+import { chooseSplit, fingerprintFileName, tryH1, tryH2, valueFileName } from "./split.ts";
 
 function mkGroup(payloads: Array<Record<string, unknown>>, discriminator = "x"): Group {
 	return {
@@ -224,5 +224,58 @@ describe("tryH2 file naming", () => {
 		const clusters = tryH2(group)!;
 		const names = clusters.map((c) => c.fileName).sort();
 		expect(names).toEqual(["base", "extra+form", "form"]);
+	});
+});
+
+describe("chooseSplit", () => {
+	test("returns kind=none for groups at or below 100 entries", () => {
+		const payloads = Array.from({ length: 100 }, (_, i) => ({ type: `T${i % 4}` }));
+		const group = mkGroup(payloads);
+		expect(chooseSplit(group).kind).toBe("none");
+	});
+
+	test("prefers H1 when it qualifies", () => {
+		// 120 entries, type field with cardinality 4 and 30%/30%/20%/20% distribution.
+		const payloads: Array<Record<string, unknown>> = [];
+		for (let i = 0; i < 36; i += 1) payloads.push({ type: "POKEMON_TYPE_A", optional: i });
+		for (let i = 0; i < 36; i += 1) payloads.push({ type: "POKEMON_TYPE_B" });
+		for (let i = 0; i < 24; i += 1) payloads.push({ type: "POKEMON_TYPE_C", optional: i });
+		for (let i = 0; i < 24; i += 1) payloads.push({ type: "POKEMON_TYPE_D" });
+		const group = mkGroup(payloads);
+		const plan = chooseSplit(group);
+		expect(plan.kind).toBe("h1");
+		if (plan.kind === "h1") {
+			expect(plan.field).toBe("type");
+			expect(plan.buckets).toHaveLength(4);
+		}
+	});
+
+	test("falls back to H2 when H1 has no candidate", () => {
+		// 120 entries, no string-valued always-present field, but two clear fingerprints.
+		const payloads: Array<Record<string, unknown>> = [];
+		for (let i = 0; i < 60; i += 1) payloads.push({ a: i });
+		for (let i = 0; i < 60; i += 1) payloads.push({ a: i, b: i });
+		const group = mkGroup(payloads);
+		const plan = chooseSplit(group);
+		expect(plan.kind).toBe("h2");
+		if (plan.kind === "h2") {
+			expect(plan.clusters).toHaveLength(2);
+		}
+	});
+
+	test("falls back to none when both H1 and H2 fail", () => {
+		// 120 entries, every variant uniquely shaped → too many H2 clusters.
+		const payloads = Array.from({ length: 120 }, (_, i) => ({ [`uniq${i}`]: i }));
+		const group = mkGroup(payloads);
+		expect(chooseSplit(group).kind).toBe("none");
+	});
+
+	test("rejects H1 when chosen field's dominance disqualifies, falls to H2 or none", () => {
+		// 120 entries; `type` has 90% dominance → H1 fails. No H2 split either.
+		const payloads: Array<Record<string, unknown>> = [];
+		for (let i = 0; i < 108; i += 1) payloads.push({ type: "MAJORITY" });
+		for (let i = 0; i < 12; i += 1) payloads.push({ type: "MINORITY" });
+		const group = mkGroup(payloads);
+		expect(chooseSplit(group).kind).toBe("none");
 	});
 });

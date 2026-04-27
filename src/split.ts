@@ -153,3 +153,19 @@ export function fingerprintFileName(fingerprint: string[]): string {
 	if (fingerprint.length === 0) return "base";
 	return fingerprint.map(kebabCase).join("+");
 }
+
+const SPLIT_THRESHOLD = 100;
+
+export type SplitPlan = { kind: "none" } | { kind: "h1"; field: string; buckets: H1Bucket[] } | { kind: "h2"; clusters: H2Cluster[] };
+
+export function chooseSplit(group: Group): SplitPlan {
+	if (group.entries.length <= SPLIT_THRESHOLD) return { kind: "none" };
+
+	const h1 = tryH1(group);
+	if (h1) return { kind: "h1", field: h1.field, buckets: h1.buckets };
+
+	const h2 = tryH2(group);
+	if (h2) return { kind: "h2", clusters: h2 };
+
+	return { kind: "none" };
+}
