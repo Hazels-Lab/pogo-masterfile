@@ -526,3 +526,30 @@ export function emitVariantsFlat(group: Group): string {
 	lines.push(``);
 	return lines.join("\n");
 }
+
+export function emitVariantFile(group: Group, bucketName: string, entries: Entry[]): string {
+	const gName = groupName(group.discriminator);
+	const xdataName = `${gName}Data`;
+	const sortedIds = [...group.entries].map((e) => e.templateId).sort();
+	const aliases = deriveGroupAliases(sortedIds, gName);
+	const invariants = detectInvariants(group);
+	const entryCount = entries.length;
+	const entryWord = entryCount === 1 ? "entry" : "entries";
+
+	const lines: string[] = [
+		`// Generated from Pokémon GO masterfile — group "${group.discriminator}", split "${bucketName}", ${entryCount} ${entryWord}.`,
+		``,
+		`import type { ${SIMPLIFY} } from "../../_utils";`,
+		`import type { ${gName}, ${xdataName} } from "..";`,
+		``,
+	];
+
+	const sortedSubset = [...entries].map((e) => e.templateId).sort();
+	for (const id of sortedSubset) {
+		const entry = entries.find((e) => e.templateId === id)!;
+		const variantSuffix = aliases.get(id)!;
+		lines.push(...renderVariantAlias(gName, entry, group, variantSuffix, invariants));
+	}
+	lines.push(``);
+	return lines.join("\n");
+}

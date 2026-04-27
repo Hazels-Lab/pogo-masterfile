@@ -1,7 +1,7 @@
 /** biome-ignore-all lint/suspicious/noTemplateCurlyInString: valid type generating tests */
 
 import { describe, expect, test } from "bun:test";
-import { emitGroupFile, emitIndexFile, emitMiscFile, emitVariantsFlat, kebabCase } from "./emit.ts";
+import { emitGroupFile, emitIndexFile, emitMiscFile, emitVariantFile, emitVariantsFlat, kebabCase } from "./emit.ts";
 import { MOCK_MASTERFILE } from "./fixtures.ts";
 import type { Group } from "./group.ts";
 import { groupEntries } from "./group.ts";
@@ -687,5 +687,46 @@ describe("emitVariantsFlat", () => {
 		const bugIdx = output.indexOf("TypeEffectiveBug");
 		const waterIdx = output.indexOf("TypeEffectiveWater");
 		expect(bugIdx).toBeLessThan(waterIdx);
+	});
+});
+
+describe("emitVariantFile", () => {
+	test("emits header noting the bucket name and entry count", () => {
+		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
+		const bug = group.entries.find((e) => e.templateId === "POKEMON_TYPE_BUG")!;
+		const output = emitVariantFile(group, "bug", [bug]);
+		expect(output.startsWith(`// Generated from Pokémon GO masterfile — group "typeEffective", split "bug", 1 entry.\n`)).toBe(true);
+	});
+
+	test("imports base + XData + S from the parent directory", () => {
+		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
+		const bug = group.entries.find((e) => e.templateId === "POKEMON_TYPE_BUG")!;
+		const output = emitVariantFile(group, "bug", [bug]);
+		expect(output).toContain(`import type { S } from "../../_utils";`);
+		expect(output).toContain(`import type { TypeEffective, TypeEffectiveData } from "..";`);
+	});
+
+	test("emits only the aliases for the supplied entries", () => {
+		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
+		const bug = group.entries.find((e) => e.templateId === "POKEMON_TYPE_BUG")!;
+		const output = emitVariantFile(group, "bug", [bug]);
+		expect(output).toContain("export type TypeEffectiveBug = S<TypeEffective<");
+		expect(output).not.toContain("export type TypeEffectiveDark");
+	});
+
+	test("preserves the same alias bodies as the unsplit emitter", () => {
+		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
+		const bug = group.entries.find((e) => e.templateId === "POKEMON_TYPE_BUG")!;
+		const split = emitVariantFile(group, "bug", [bug]);
+		const flat = emitVariantsFlat(group);
+		// The Bug alias declaration should be byte-identical between the two paths
+		// (only the surrounding imports/header differ).
+		const bugStart = split.indexOf("export type TypeEffectiveBug =");
+		const bugEnd = split.indexOf(">;", bugStart) + 2;
+		const splitBug = split.slice(bugStart, bugEnd);
+		const flatBugStart = flat.indexOf("export type TypeEffectiveBug =");
+		const flatBugEnd = flat.indexOf(">;", flatBugStart) + 2;
+		const flatBug = flat.slice(flatBugStart, flatBugEnd);
+		expect(splitBug).toBe(flatBug);
 	});
 });
