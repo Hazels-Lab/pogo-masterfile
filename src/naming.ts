@@ -2,6 +2,20 @@ export function groupName(discriminator: string): string {
 	return discriminator[0]!.toUpperCase() + discriminator.slice(1);
 }
 
+export function kebabCase(camelCase: string): string {
+	return camelCase.replace(/[A-Z]/g, (m) => `-${m.toLowerCase()}`);
+}
+
+export function pascalCase(input: string): string {
+	return input
+		.replace(/([a-z])([A-Z])/g, "$1 $2")
+		.replace(/[^a-zA-Z0-9]+/g, " ")
+		.trim()
+		.split(/\s+/)
+		.map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+		.join("");
+}
+
 export function sharedPrefix(ids: string[]): string {
 	if (ids.length <= 1) return "";
 	let p = ids[0]!;

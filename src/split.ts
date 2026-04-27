@@ -1,6 +1,10 @@
-import { kebabCase } from "./emit.ts";
 import type { Entry, Group } from "./group.ts";
+import { kebabCase } from "./naming.ts";
 
+// H1 (field-based bucketing): a field qualifies as a split key if its distinct values
+// fall in this range. Below MIN, splitting buys nothing; above MAX, the resulting
+// directory has too many tiny files. Above MAX_DOMINANCE one bucket would swallow
+// the rest, defeating the split.
 const H1_MIN_CARDINALITY = 2;
 const H1_MAX_CARDINALITY = 30;
 const H1_MAX_DOMINANCE = 0.8;
@@ -103,6 +107,8 @@ function longestCommonUnderscorePrefix(values: string[]): string {
 	return lastUnderscore >= 0 ? prefix.slice(0, lastUnderscore + 1) : "";
 }
 
+// H2 (fingerprint clustering): cap the cluster count at ~entries/MIN_AVG so we don't
+// produce a swarm of tiny files when fingerprints are nearly unique.
 const H2_MIN_AVG_CLUSTER_SIZE = 5;
 
 export interface H2Cluster {
@@ -154,7 +160,61 @@ export function fingerprintFileName(fingerprint: string[]): string {
 	return fingerprint.map(kebabCase).join("-");
 }
 
+// Groups under this size emit a single `entries.ts` (no subdirectory). Above it,
+// we try H1 then H2 to decide how to split into multiple files.
 const SPLIT_THRESHOLD = 100;
+
+// Minimum singletons sharing a trailing token before they earn their own bucket file.
+// Below this, they collapse into the catch-all `misc.ts` bucket.
+const MISC_BUCKET_MIN_SIZE = 2;
+
+export interface MiscBucket {
+	token: string;
+	fileName: string;
+	singletons: Group[];
+}
+
+// Last token of a discriminator, lowercased. Splits on:
+//   - lowercase/digit → uppercase boundaries (`pokedexV2Settings` → `pokedex V2 Settings`)
+//   - uppercase-run → PascalCase boundaries (`URLToken` → `URL Token`)
+//   - non-alphanumerics (`BACKGROUND_MODES_SETTINGS` → `BACKGROUND MODES SETTINGS`)
+// so a wide variety of naming styles all reduce to a sensible trailing token.
+function trailingToken(discriminator: string): string {
+	const parts = discriminator
+		.replace(/([a-z0-9])([A-Z])/g, "$1 $2")
+		.replace(/([A-Z]+)([A-Z][a-z])/g, "$1 $2")
+		.split(/[^a-zA-Z0-9]+/)
+		.filter(Boolean);
+	return parts.length ? parts[parts.length - 1]!.toLowerCase() : "misc";
+}
+
+// Group singleton groups by their discriminator's trailing token. Tokens shared by
+// at least MISC_BUCKET_MIN_SIZE singletons earn their own bucket; the rest land in
+// a catch-all `misc` bucket. Pure data-driven categorization — no hardcoded names.
+export function clusterSingletons(singletons: Group[]): MiscBucket[] {
+	const byToken = new Map<string, Group[]>();
+	for (const g of singletons) {
+		const token = trailingToken(g.discriminator);
+		const bucket = byToken.get(token);
+		if (bucket) bucket.push(g);
+		else byToken.set(token, [g]);
+	}
+
+	const named: MiscBucket[] = [];
+	const leftovers: Group[] = [];
+	for (const [token, groups] of byToken) {
+		if (groups.length >= MISC_BUCKET_MIN_SIZE) {
+			named.push({ token, fileName: token, singletons: groups });
+		} else {
+			leftovers.push(...groups);
+		}
+	}
+	if (leftovers.length > 0) {
+		named.push({ token: "misc", fileName: "misc", singletons: leftovers });
+	}
+	named.sort((a, b) => a.fileName.localeCompare(b.fileName));
+	return named;
+}
 
 export type SplitPlan = { kind: "none" } | { kind: "h1"; field: string; buckets: H1Bucket[] } | { kind: "h2"; clusters: H2Cluster[] };
 

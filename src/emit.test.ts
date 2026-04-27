@@ -1,10 +1,11 @@
 /** biome-ignore-all lint/suspicious/noTemplateCurlyInString: valid type generating tests */
 
 import { describe, expect, test } from "bun:test";
-import { emitEntriesBarrel, emitEntriesFlat, emitEntryFile, emitMiscFile, emitTopLevelVariants, emitTypesFile, kebabCase } from "./emit.ts";
+import { emitEntriesBarrel, emitEntriesFlat, emitEntryFile, emitMiscFile, emitTopLevelVariants, emitTypesFile } from "./emit.ts";
 import { MOCK_MASTERFILE } from "./fixtures.ts";
 import type { Group } from "./group.ts";
 import { groupEntries } from "./group.ts";
+import { kebabCase } from "./naming.ts";
 
 describe("emitMiscFile", () => {
 	test("emits a deterministic header for the misc file", () => {
@@ -172,8 +173,7 @@ describe("emitIndexFile", () => {
 	});
 
 	test("re-exports groups by directory path + misc, defines MasterfileType union + MasterfileTemplateID", () => {
-		const multiEntryGroupNames = ["typeEffective", "pokemonSettings"];
-		const output = emitTypesFile(multiEntryGroupNames);
+		const output = emitTypesFile(["typeEffective", "pokemonSettings", "misc"]);
 
 		// Directory re-exports (no .ts suffix; resolves to <group>/index.ts).
 		expect(output).toContain(`export type * from "./pokemon-settings/types";`);
@@ -196,7 +196,7 @@ describe("emitIndexFile", () => {
 	});
 
 	test("imports Misc from ./misc and places alphabetically in the MasterfileType", () => {
-		const output = emitTypesFile(["typeEffective", "pokemonSettings"]);
+		const output = emitTypesFile(["typeEffective", "pokemonSettings", "misc"]);
 		expect(output).toContain(`import type { Misc } from "./misc/types";`);
 		expect(output).toContain("| Misc");
 

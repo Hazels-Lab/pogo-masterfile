@@ -1,19 +1,9 @@
 import { join } from "node:path";
-import {
-	emitEntriesBarrel,
-	emitEntriesFlat,
-	emitEntryFile,
-	emitGroupTypes,
-	emitIndexFile,
-	emitMiscFile,
-	// emitMiscSettingsFile,
-	emitTopLevelVariants,
-	emitTypesFile,
-	kebabCase,
-} from "./emit.ts";
+import { emitEntriesBarrel, emitEntriesFlat, emitEntryFile, emitGroupTypes, emitIndexFile, emitMiscFile, emitTopLevelVariants, emitTypesFile } from "./emit.ts";
 import type { Entry, Group } from "./group.ts";
 import { groupEntries } from "./group.ts";
-import { chooseSplit } from "./split.ts";
+import { kebabCase } from "./naming.ts";
+import { chooseSplit, clusterSingletons } from "./split.ts";
 import { writeOutput } from "./write.ts";
 
 const GAME_MASTER_URL = "https://raw.githubusercontent.com/alexelgt/game_masters/refs/heads/master/GAME_MASTER.json";
@@ -51,67 +41,49 @@ function planFiles(groups: Map<string, Group>): Map<string, string> {
 		if (plan.kind === "none") {
 			files.set(`${dir}/entries.ts`, emitEntriesFlat(g));
 			groupSplits.set(g.discriminator, "flat");
-		} else {
-			const fileNames: string[] = [];
-			const buckets: Array<{ fileName: string; entries: Entry[] }> =
-				plan.kind === "h1"
-					? plan.buckets.map((b) => ({ fileName: b.fileName, entries: b.entries }))
-					: plan.clusters.map((c) => ({ fileName: c.fileName, entries: c.entries }));
-			for (const b of buckets) {
-				files.set(`${dir}/entries/${b.fileName}.ts`, emitEntryFile(g, b.fileName, b.entries));
-				fileNames.push(b.fileName);
-			}
-			files.set(`${dir}/entries/index.ts`, emitEntriesBarrel(g.discriminator, fileNames));
-			groupSplits.set(g.discriminator, "split");
+			continue;
 		}
+
+		const buckets: Array<{ fileName: string; entries: Entry[] }> =
+			plan.kind === "h1"
+				? plan.buckets.map((b) => ({ fileName: b.fileName, entries: b.entries }))
+				: plan.clusters.map((c) => ({ fileName: c.fileName, entries: c.entries }));
+		for (const b of buckets) {
+			files.set(`${dir}/entries/${b.fileName}.ts`, emitEntryFile(g, b.fileName, b.entries));
+		}
+		files.set(
+			`${dir}/entries/index.ts`,
+			emitEntriesBarrel(
+				g.discriminator,
+				buckets.map((b) => b.fileName),
+			),
+		);
+		groupSplits.set(g.discriminator, "split");
 	}
 
-	handleMisc(singletons)
-		.entries()
-		.forEach(([k, v]) => {
-			files.set(k, v);
-		});
-
-	files.set("types.ts", emitTypesFile(multiEntry.map((g) => g.discriminator)));
-	files.set("entries.ts", emitTopLevelVariants(groupSplits));
-	files.set("index.ts", emitIndexFile());
-	files.set("_utils.ts", "export type S<T> = {[KeyType in keyof T]: T[KeyType]} & {};");
-
-	return files;
-}
-
-function handleMisc(singletons: Group[]) {
-	const files = new Map<string, string>();
-
-	const miscMap = new Map<string, Group[]>();
-	// TODO: replace this with heuristics or something
-	const manualGroupings = ["settings", "flags", ""];
-
-	for (const g of singletons) {
-		const discriminator = g.discriminator.toLowerCase();
-
-		for (const grouping of manualGroupings) {
-			if (discriminator.includes(grouping)) {
-				miscMap.getOrInsert(grouping, []).push(g);
-				break;
-			}
-		}
-	}
-
-	for (const [file, entries] of miscMap.entries()) {
-		const safeFile = file || "misc";
-		files.set(`misc/entries/${safeFile}.ts`, emitMiscFile(safeFile, entries));
+	// Misc: cluster singletons by trailing-token heuristic, then emit each bucket
+	// like a split group's bucket. The only inherent differences from regular groups
+	// are the per-bucket emitter (singletons don't share structure) and the trivial
+	// types.ts (no shared interface to define).
+	const miscBuckets = clusterSingletons(singletons);
+	for (const b of miscBuckets) {
+		files.set(`misc/entries/${b.fileName}.ts`, emitMiscFile(b.fileName, b.singletons));
 	}
 	files.set(
 		`misc/entries/index.ts`,
 		emitEntriesBarrel(
 			"misc",
-			manualGroupings.map((e) => (e === "" ? "misc" : e)),
+			miscBuckets.map((b) => b.fileName),
 		),
 	);
+	files.set("misc/types.ts", `import type { MiscMasterfileEntry } from "./entries";\n\nexport type Misc = MiscMasterfileEntry;`);
+	files.set("misc/index.ts", emitIndexFile());
+	groupSplits.set("misc", "split");
 
-	files.set("misc/types.ts", "import type { MiscMasterfileEntry } from './entries';\n\nexport type Misc = MiscMasterfileEntry;");
-	files.set("misc/index.ts", "export type * from './entries'\nexport type * from './types'");
+	files.set("types.ts", emitTypesFile([...multiEntry.map((g) => g.discriminator), "misc"]));
+	files.set("entries.ts", emitTopLevelVariants(groupSplits));
+	files.set("index.ts", emitIndexFile());
+	files.set("_utils.ts", "export type S<T> = { [KeyType in keyof T]: T[KeyType] } & {};");
 
 	return files;
 }
