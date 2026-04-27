@@ -73,11 +73,31 @@ export function tryH1(group: Group): H1Result | null {
 	});
 	const winner = candidates[0]!;
 
+	const allValues = [...winner.values.keys()];
 	const buckets: H1Bucket[] = [];
 	for (const [value, entries] of winner.values) {
-		buckets.push({ value, fileName: value, entries });
+		buckets.push({ value, fileName: valueFileName(value, allValues), entries });
 	}
-	buckets.sort((a, b) => a.value.localeCompare(b.value));
+	buckets.sort((a, b) => a.fileName.localeCompare(b.fileName));
 
 	return { field: winner.field, buckets };
+}
+
+export function valueFileName(value: string, allValues: string[]): string {
+	const prefix = longestCommonUnderscorePrefix(allValues);
+	const stripped = prefix.length > 0 && value.startsWith(prefix) ? value.slice(prefix.length) : value;
+	const result = stripped.toLowerCase().replace(/_/g, "-");
+	if (result.length === 0) return value.toLowerCase().replace(/_/g, "-");
+	return result;
+}
+
+function longestCommonUnderscorePrefix(values: string[]): string {
+	if (values.length < 2) return "";
+	let prefix = values[0]!;
+	for (const v of values) {
+		while (!v.startsWith(prefix)) prefix = prefix.slice(0, -1);
+		if (prefix === "") return "";
+	}
+	const lastUnderscore = prefix.lastIndexOf("_");
+	return lastUnderscore >= 0 ? prefix.slice(0, lastUnderscore + 1) : "";
 }
