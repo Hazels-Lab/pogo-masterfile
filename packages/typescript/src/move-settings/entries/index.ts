@@ -57,4 +57,5 @@ export type MoveSettingsMasterfileEntry =
 	| MoveSettingsRockMasterfileEntry
 	| MoveSettingsSteelMasterfileEntry
 	| MoveSettingsWaterMasterfileEntry;
+
 export type MoveSettingsTemplateID = MoveSettingsMasterfileEntry["templateId"];

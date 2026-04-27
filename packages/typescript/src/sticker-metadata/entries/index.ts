@@ -36,4 +36,5 @@ export type StickerMetadataMasterfileEntry =
 	| StickerMetadataRegionIdReleaseDateStickerUrlMasterfileEntry
 	| StickerMetadataReleaseDateMasterfileEntry
 	| StickerMetadataReleaseDateStickerUrlMasterfileEntry;
+
 export type StickerMetadataTemplateID = StickerMetadataMasterfileEntry["templateId"];

@@ -508,6 +508,7 @@ export function emitEntriesBarrel(discriminator: string, fileNames: string[]): s
 	lines.push(``);
 
 	lines.push(`export type ${typeName}MasterfileEntry = ${sorted.map((f) => `${typeName}${pascalCase(f)}MasterfileEntry`).join("| ")}`);
+	lines.push(``);
 	lines.push(`export type ${typeName}TemplateID = ${typeName}MasterfileEntry["templateId"];`);
 
 	return lines.join("\n");

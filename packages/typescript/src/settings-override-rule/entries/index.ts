@@ -12,4 +12,5 @@ export type SettingsOverrideRuleMasterfileEntry =
 	| SettingsOverrideRuleFusedDepthEnabledMeshingEnabledOcclusionDefaultOnVpsEnabledMasterfileEntry
 	| SettingsOverrideRuleMeshingEnabledRuleValueVpsEnabledMasterfileEntry
 	| SettingsOverrideRuleRuleValueMasterfileEntry;
+
 export type SettingsOverrideRuleTemplateID = SettingsOverrideRuleMasterfileEntry["templateId"];

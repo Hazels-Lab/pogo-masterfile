@@ -54,4 +54,5 @@ export type AvatarCustomizationMasterfileEntry =
 	| AvatarCustomizationSkinMasterfileEntry
 	| AvatarCustomizationSocksMasterfileEntry
 	| AvatarCustomizationSponsorMasterfileEntry;
+
 export type AvatarCustomizationTemplateID = AvatarCustomizationMasterfileEntry["templateId"];

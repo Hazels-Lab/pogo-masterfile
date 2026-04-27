@@ -12,4 +12,5 @@ export type PokemonFamilyMasterfileEntry =
 	| PokemonFamilyBaseMasterfileEntry
 	| PokemonFamilyMegaEvolvablePokemonIdMasterfileEntry
 	| PokemonFamilyMegaEvolvablePokemonIdsMasterfileEntry;
+
 export type PokemonFamilyTemplateID = PokemonFamilyMasterfileEntry["templateId"];

@@ -7,4 +7,5 @@ export type * from "./free";
 export type * from "./premium";
 
 export type EventPassTierSettingsMasterfileEntry = EventPassTierSettingsFreeMasterfileEntry | EventPassTierSettingsPremiumMasterfileEntry;
+
 export type EventPassTierSettingsTemplateID = EventPassTierSettingsMasterfileEntry["templateId"];

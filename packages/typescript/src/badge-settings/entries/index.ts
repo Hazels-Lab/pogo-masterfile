@@ -15,4 +15,5 @@ export type BadgeSettingsMasterfileEntry =
 	| BadgeSettingsCaptureRewardMasterfileEntry
 	| BadgeSettingsEventBadgeMasterfileEntry
 	| BadgeSettingsEventBadgeEventBadgeSettingsMasterfileEntry;
+
 export type BadgeSettingsTemplateID = BadgeSettingsMasterfileEntry["templateId"];

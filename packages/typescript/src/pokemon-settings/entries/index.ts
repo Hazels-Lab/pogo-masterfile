@@ -57,4 +57,5 @@ export type PokemonSettingsMasterfileEntry =
 	| PokemonSettingsRockMasterfileEntry
 	| PokemonSettingsSteelMasterfileEntry
 	| PokemonSettingsWaterMasterfileEntry;
+
 export type PokemonSettingsTemplateID = PokemonSettingsMasterfileEntry["templateId"];

@@ -93,4 +93,5 @@ export type ItemSettingsMasterfileEntry =
 	| ItemSettingsTeamChangeMasterfileEntry
 	| ItemSettingsUtilitesMasterfileEntry
 	| ItemSettingsXpBoostMasterfileEntry;
+
 export type ItemSettingsTemplateID = ItemSettingsMasterfileEntry["templateId"];

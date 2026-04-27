@@ -12,4 +12,5 @@ export type LocationCardSettingsMasterfileEntry =
 	| LocationCardSettingsBaseMasterfileEntry
 	| LocationCardSettingsCardTypeMasterfileEntry
 	| LocationCardSettingsCardTypeVfxAddressMasterfileEntry;
+
 export type LocationCardSettingsTemplateID = LocationCardSettingsMasterfileEntry["templateId"];

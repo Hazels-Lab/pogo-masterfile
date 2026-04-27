@@ -27,4 +27,5 @@ export type PokemonExtendedSettingsMasterfileEntry =
 	| PokemonExtendedSettingsFormMasterfileEntry
 	| PokemonExtendedSettingsFormTempEvoOverridesMasterfileEntry
 	| PokemonExtendedSettingsTempEvoOverridesMasterfileEntry;
+
 export type PokemonExtendedSettingsTemplateID = PokemonExtendedSettingsMasterfileEntry["templateId"];

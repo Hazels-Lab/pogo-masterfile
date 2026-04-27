@@ -7,4 +7,5 @@ export type * from "./base";
 export type * from "./form";
 
 export type GenderSettingsMasterfileEntry = GenderSettingsBaseMasterfileEntry | GenderSettingsFormMasterfileEntry;
+
 export type GenderSettingsTemplateID = GenderSettingsMasterfileEntry["templateId"];

@@ -18,4 +18,5 @@ export type MegaEvoLevelSettingsMasterfileEntry =
 	| MegaEvoLevelSettingsLevelMasterfileEntry
 	| MegaEvoLevelSettingsLevelPokemonIdMasterfileEntry
 	| MegaEvoLevelSettingsPokemonIdMasterfileEntry;
+
 export type MegaEvoLevelSettingsTemplateID = MegaEvoLevelSettingsMasterfileEntry["templateId"];

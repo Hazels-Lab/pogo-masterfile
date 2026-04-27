@@ -7,17 +7,23 @@
 		".": {
 			"types": "./src/index.ts"
 		},
-		"./variants": {
-			"types": "./src/variants.ts"
+		"./entries": {
+			"types": "./src/entries.ts"
+		},
+		"./types": {
+			"types": "./src/types.ts"
 		},
 		"./*": {
 			"types": "./src/*/index.ts"
 		},
-		"./*/variants": {
-			"types": "./src/*/variants.ts"
+		"./*/entries": {
+			"types": "./src/*/entries.ts"
 		},
-		"./*/variants/*": {
-			"types": "./src/*/variants/*.ts"
+		"./*/types": {
+			"types": "./src/*/types.ts"
+		},
+		"./*/entries/*": {
+			"types": "./src/*/entries/*.ts"
 		}
 	}
 }

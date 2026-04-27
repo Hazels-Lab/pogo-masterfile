@@ -21,4 +21,5 @@ export type CombatLeagueMasterfileEntry =
 	| CombatLeagueBannedPokemonBattlePartyCombatLeagueTemplateIdUnlockConditionMasterfileEntry
 	| CombatLeagueBattlePartyCombatLeagueTemplateIdMasterfileEntry
 	| CombatLeagueBattlePartyCombatLeagueTemplateIdUnlockConditionMasterfileEntry;
+
 export type CombatLeagueTemplateID = CombatLeagueMasterfileEntry["templateId"];

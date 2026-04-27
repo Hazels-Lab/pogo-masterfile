@@ -102,4 +102,5 @@ export type IapItemDisplayMasterfileEntry =
 	| IapItemDisplayDescriptionSkuDisableTimeSkuDisableTimeUtcMsSkuEnableTimeSkuEnableTimeUtcMsSortOrderTitleMasterfileEntry
 	| IapItemDisplayShowDiscountTagShowStrikethroughPriceSpriteIdTotalValueMasterfileEntry
 	| IapItemDisplaySpriteIdMasterfileEntry;
+
 export type IapItemDisplayTemplateID = IapItemDisplayMasterfileEntry["templateId"];

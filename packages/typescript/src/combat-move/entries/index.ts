@@ -57,4 +57,5 @@ export type CombatMoveMasterfileEntry =
 	| CombatMoveRockMasterfileEntry
 	| CombatMoveSteelMasterfileEntry
 	| CombatMoveWaterMasterfileEntry;
+
 export type CombatMoveTemplateID = CombatMoveMasterfileEntry["templateId"];

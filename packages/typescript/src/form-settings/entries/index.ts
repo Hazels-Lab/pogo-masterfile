@@ -7,4 +7,5 @@ export type * from "./base";
 export type * from "./forms";
 
 export type FormSettingsMasterfileEntry = FormSettingsBaseMasterfileEntry | FormSettingsFormsMasterfileEntry;
+
 export type FormSettingsTemplateID = FormSettingsMasterfileEntry["templateId"];
