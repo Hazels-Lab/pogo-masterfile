@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", 103 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface MegaEvoLevelSettings<TemplateID extends string = string, TData extends MegaEvoLevelSettingsData = MegaEvoLevelSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -19,6 +21,7 @@ export interface MegaEvoLevelSettings<TemplateID extends string = string, TData 
 		};
 	};
 }
+export type MegaEvoLevelSettingsType = W<MegaEvoLevelSettings>;
 
 export interface MegaEvoLevelSettingsData {
 	cooldown: {

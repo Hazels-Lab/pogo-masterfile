@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "avatarGroupOrderSettings", 2 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface AvatarGroupOrderSettings<TemplateID extends string = string, TData extends AvatarGroupOrderSettingsData = AvatarGroupOrderSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -7,6 +9,7 @@ export interface AvatarGroupOrderSettings<TemplateID extends string = string, TD
 		avatarGroupOrderSettings: TData;
 	};
 }
+export type AvatarGroupOrderSettingsType = W<AvatarGroupOrderSettings>;
 
 export interface AvatarGroupOrderSettingsData {
 	group: Array<{

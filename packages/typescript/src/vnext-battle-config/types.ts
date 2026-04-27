@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "vnextBattleConfig", 2 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface VnextBattleConfig<TemplateID extends string = string, TData extends VnextBattleConfigData = VnextBattleConfigData> {
 	templateId: TemplateID;
 	data: {
@@ -14,6 +16,7 @@ export interface VnextBattleConfig<TemplateID extends string = string, TData ext
 		};
 	};
 }
+export type VnextBattleConfigType = W<VnextBattleConfig>;
 
 export interface VnextBattleConfigData {
 	maxBattleConfig: {

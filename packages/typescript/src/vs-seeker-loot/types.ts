@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "vsSeekerLoot", 48 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface VsSeekerLoot<TemplateID extends string = string, TData extends VsSeekerLootData = VsSeekerLootData> {
 	templateId: TemplateID;
 	data: {
@@ -7,6 +9,7 @@ export interface VsSeekerLoot<TemplateID extends string = string, TData extends 
 		vsSeekerLoot: TData;
 	};
 }
+export type VsSeekerLootType = W<VsSeekerLoot>;
 
 export interface VsSeekerLootData {
 	rankLevel: number;

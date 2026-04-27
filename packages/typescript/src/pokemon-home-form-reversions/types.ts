@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "pokemonHomeFormReversions", 7 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface PokemonHomeFormReversions<TemplateID extends string = string, TData extends PokemonHomeFormReversionsData = PokemonHomeFormReversionsData> {
 	templateId: TemplateID;
 	data: {
@@ -7,6 +9,7 @@ export interface PokemonHomeFormReversions<TemplateID extends string = string, T
 		pokemonHomeFormReversions: TData;
 	};
 }
+export type PokemonHomeFormReversionsType = W<PokemonHomeFormReversions>;
 
 export interface PokemonHomeFormReversionsData {
 	formMapping: Array<{

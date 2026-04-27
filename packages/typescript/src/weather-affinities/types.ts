@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "weatherAffinities", 7 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface WeatherAffinities<TemplateID extends string = string, TData extends WeatherAffinitiesData = WeatherAffinitiesData> {
 	templateId: TemplateID;
 	data: {
@@ -9,6 +11,7 @@ export interface WeatherAffinities<TemplateID extends string = string, TData ext
 		};
 	};
 }
+export type WeatherAffinitiesType = W<WeatherAffinities>;
 
 export interface WeatherAffinitiesData {
 	pokemonType: Array<

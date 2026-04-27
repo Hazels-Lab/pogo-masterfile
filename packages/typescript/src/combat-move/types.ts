@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "combatMove", 318 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface CombatMove<TemplateID extends string = string, TData extends CombatMoveData = CombatMoveData> {
 	templateId: TemplateID;
 	data: {
@@ -7,6 +9,7 @@ export interface CombatMove<TemplateID extends string = string, TData extends Co
 		combatMove: TData;
 	};
 }
+export type CombatMoveType = W<CombatMove>;
 
 export interface CombatMoveData {
 	buffs?: {

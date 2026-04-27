@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "itemExpirationSettings", 22 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface ItemExpirationSettings<TemplateID extends string = string, TData extends ItemExpirationSettingsData = ItemExpirationSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -9,6 +11,7 @@ export interface ItemExpirationSettings<TemplateID extends string = string, TDat
 		};
 	};
 }
+export type ItemExpirationSettingsType = W<ItemExpirationSettings>;
 
 export interface ItemExpirationSettingsData {
 	consolationItems?: {

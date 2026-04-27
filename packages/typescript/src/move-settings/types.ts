@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "moveSettings", 384 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface MoveSettings<TemplateID extends string = string, TData extends MoveSettingsData = MoveSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -9,6 +11,7 @@ export interface MoveSettings<TemplateID extends string = string, TData extends 
 		};
 	};
 }
+export type MoveSettingsType = W<MoveSettings>;
 
 export interface MoveSettingsData {
 	animationId: number;

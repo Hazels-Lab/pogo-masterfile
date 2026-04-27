@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "clientQuestTemplate", 55 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface ClientQuestTemplate<TemplateID extends string = string, TData extends ClientQuestTemplateData = ClientQuestTemplateData> {
 	templateId: TemplateID;
 	data: {
@@ -12,6 +14,7 @@ export interface ClientQuestTemplate<TemplateID extends string = string, TData e
 		};
 	};
 }
+export type ClientQuestTemplateType = W<ClientQuestTemplate>;
 
 export interface ClientQuestTemplateData {
 	quest: {

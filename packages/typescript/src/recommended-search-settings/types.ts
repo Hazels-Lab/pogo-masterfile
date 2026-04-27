@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "recommendedSearchSettings", 10 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface RecommendedSearchSettings<TemplateID extends string = string, TData extends RecommendedSearchSettingsData = RecommendedSearchSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -7,6 +9,7 @@ export interface RecommendedSearchSettings<TemplateID extends string = string, T
 		recommendedSearchSettings: TData;
 	};
 }
+export type RecommendedSearchSettingsType = W<RecommendedSearchSettings>;
 
 export interface RecommendedSearchSettingsData {
 	appendSearchString?: "0*,1*,2*" | "3*,4*";

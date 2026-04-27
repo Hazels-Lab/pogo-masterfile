@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "formSettings", 1025 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface FormSettings<TemplateID extends string = string, TData extends FormSettingsData = FormSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -7,6 +9,7 @@ export interface FormSettings<TemplateID extends string = string, TData extends 
 		formSettings: TData;
 	};
 }
+export type FormSettingsType = W<FormSettings>;
 
 export interface FormSettingsData {
 	forms?: Array<{

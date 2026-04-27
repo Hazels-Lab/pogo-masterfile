@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "codeGateProto", 13 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface CodeGateProto<TemplateID extends string = string, TData extends CodeGateProtoData = CodeGateProtoData> {
 	templateId: TemplateID;
 	data: {
@@ -9,6 +11,7 @@ export interface CodeGateProto<TemplateID extends string = string, TData extends
 		};
 	};
 }
+export type CodeGateProtoType = W<CodeGateProto>;
 
 export interface CodeGateProtoData {
 	subCodeGateList?: {

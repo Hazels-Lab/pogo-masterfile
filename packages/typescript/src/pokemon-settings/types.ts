@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "pokemonSettings", 2460 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface PokemonSettings<TemplateID extends string = string, TData extends PokemonSettingsData = PokemonSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -7,6 +9,7 @@ export interface PokemonSettings<TemplateID extends string = string, TData exten
 		pokemonSettings: TData;
 	};
 }
+export type PokemonSettingsType = W<PokemonSettings>;
 
 export interface PokemonSettingsData {
 	allowNoevolveEvolution?: ["APRIL_2020_NOEVOLVE" | "FALL_2020_NOEVOLVE" | "FALL_2022" | "FALL_2022_NOEVOLVE" | "JAN_2020_NOEVOLVE" | "JAN_2022_NOEVOLVE"];

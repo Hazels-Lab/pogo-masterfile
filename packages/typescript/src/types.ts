@@ -1,65 +1,65 @@
 // Generated from Pokémon GO masterfile — index of all groups.
 
-import type { AvatarCustomization } from "./avatar-customization/types";
-import type { AvatarGroupOrderSettings } from "./avatar-group-order-settings/types";
-import type { AvatarItemDisplay } from "./avatar-item-display/types";
-import type { BadgeSettings } from "./badge-settings/types";
-import type { BreadMoveLevelSettings } from "./bread-move-level-settings/types";
-import type { BuddyActivityCategorySettings } from "./buddy-activity-category-settings/types";
-import type { BuddyEmotionLevelSettings } from "./buddy-emotion-level-settings/types";
-import type { BuddyLevelSettings } from "./buddy-level-settings/types";
-import type { ClientQuestTemplate } from "./client-quest-template/types";
-import type { CodeGateProto } from "./code-gate-proto/types";
-import type { CombatLeague } from "./combat-league/types";
-import type { CombatMove } from "./combat-move/types";
-import type { CombatNpcPersonality } from "./combat-npc-personality/types";
-import type { CombatNpcTrainer } from "./combat-npc-trainer/types";
-import type { CombatRankingProtoSettings } from "./combat-ranking-proto-settings/types";
-import type { CombatType } from "./combat-type/types";
-import type { EventPassTierSettings } from "./event-pass-tier-settings/types";
-import type { EvolutionChainDisplaySettings } from "./evolution-chain-display-settings/types";
-import type { EvolutionQuestTemplate } from "./evolution-quest-template/types";
-import type { FeatureGate } from "./feature-gate/types";
-import type { FormSettings } from "./form-settings/types";
-import type { FortPowerUpLevelSettings } from "./fort-power-up-level-settings/types";
-import type { FriendshipMilestoneSettings } from "./friendship-milestone-settings/types";
-import type { GenderSettings } from "./gender-settings/types";
-import type { IapCategoryDisplay } from "./iap-category-display/types";
-import type { IapItemDisplay } from "./iap-item-display/types";
-import type { InvasionNpcDisplaySettings } from "./invasion-npc-display-settings/types";
-import type { ItemExpirationSettings } from "./item-expiration-settings/types";
-import type { ItemSettings } from "./item-settings/types";
-import type { LanguageSettings } from "./language-settings/types";
-import type { LevelUpRewards } from "./level-up-rewards/types";
-import type { LimitedPurchaseSkuSettings } from "./limited-purchase-sku-settings/types";
-import type { LocationCardSettings } from "./location-card-settings/types";
-import type { MegaEvoLevelSettings } from "./mega-evo-level-settings/types";
-import type { MoveSequenceSettings } from "./move-sequence-settings/types";
-import type { MoveSettings } from "./move-settings/types";
-import type { NonCombatMoveSettings } from "./non-combat-move-settings/types";
-import type { PartyPlayGeneralSettings } from "./party-play-general-settings/types";
-import type { PhotoSetsSettingsProto } from "./photo-sets-settings-proto/types";
-import type { PokemonExtendedSettings } from "./pokemon-extended-settings/types";
-import type { PokemonFamily } from "./pokemon-family/types";
-import type { PokemonHomeEnergyCosts } from "./pokemon-home-energy-costs/types";
-import type { PokemonHomeFormReversions } from "./pokemon-home-form-reversions/types";
-import type { PokemonScaleSettings } from "./pokemon-scale-settings/types";
-import type { PokemonSettings } from "./pokemon-settings/types";
-import type { PokemonUpgrades } from "./pokemon-upgrades/types";
-import type { PokestopInvasionAvailabilitySettings } from "./pokestop-invasion-availability-settings/types";
-import type { QuestSettings } from "./quest-settings/types";
-import type { RecommendedSearchSettings } from "./recommended-search-settings/types";
-import type { RollBack } from "./roll-back/types";
-import type { SettingsOverrideRule } from "./settings-override-rule/types";
-import type { Singletons } from "./singletons/types";
-import type { StickerMetadata } from "./sticker-metadata/types";
-import type { TappableSettings } from "./tappable-settings/types";
-import type { TemporaryEvolutionSettings } from "./temporary-evolution-settings/types";
-import type { TypeEffective } from "./type-effective/types";
-import type { VnextBattleConfig } from "./vnext-battle-config/types";
-import type { VsSeekerLoot } from "./vs-seeker-loot/types";
-import type { VsSeekerPokemonRewards } from "./vs-seeker-pokemon-rewards/types";
-import type { WeatherAffinities } from "./weather-affinities/types";
+import type { AvatarCustomization, AvatarCustomizationType } from "./avatar-customization/types";
+import type { AvatarGroupOrderSettings, AvatarGroupOrderSettingsType } from "./avatar-group-order-settings/types";
+import type { AvatarItemDisplay, AvatarItemDisplayType } from "./avatar-item-display/types";
+import type { BadgeSettings, BadgeSettingsType } from "./badge-settings/types";
+import type { BreadMoveLevelSettings, BreadMoveLevelSettingsType } from "./bread-move-level-settings/types";
+import type { BuddyActivityCategorySettings, BuddyActivityCategorySettingsType } from "./buddy-activity-category-settings/types";
+import type { BuddyEmotionLevelSettings, BuddyEmotionLevelSettingsType } from "./buddy-emotion-level-settings/types";
+import type { BuddyLevelSettings, BuddyLevelSettingsType } from "./buddy-level-settings/types";
+import type { ClientQuestTemplate, ClientQuestTemplateType } from "./client-quest-template/types";
+import type { CodeGateProto, CodeGateProtoType } from "./code-gate-proto/types";
+import type { CombatLeague, CombatLeagueType } from "./combat-league/types";
+import type { CombatMove, CombatMoveType } from "./combat-move/types";
+import type { CombatNpcPersonality, CombatNpcPersonalityType } from "./combat-npc-personality/types";
+import type { CombatNpcTrainer, CombatNpcTrainerType } from "./combat-npc-trainer/types";
+import type { CombatRankingProtoSettings, CombatRankingProtoSettingsType } from "./combat-ranking-proto-settings/types";
+import type { CombatType, CombatTypeType } from "./combat-type/types";
+import type { EventPassTierSettings, EventPassTierSettingsType } from "./event-pass-tier-settings/types";
+import type { EvolutionChainDisplaySettings, EvolutionChainDisplaySettingsType } from "./evolution-chain-display-settings/types";
+import type { EvolutionQuestTemplate, EvolutionQuestTemplateType } from "./evolution-quest-template/types";
+import type { FeatureGate, FeatureGateType } from "./feature-gate/types";
+import type { FormSettings, FormSettingsType } from "./form-settings/types";
+import type { FortPowerUpLevelSettings, FortPowerUpLevelSettingsType } from "./fort-power-up-level-settings/types";
+import type { FriendshipMilestoneSettings, FriendshipMilestoneSettingsType } from "./friendship-milestone-settings/types";
+import type { GenderSettings, GenderSettingsType } from "./gender-settings/types";
+import type { IapCategoryDisplay, IapCategoryDisplayType } from "./iap-category-display/types";
+import type { IapItemDisplay, IapItemDisplayType } from "./iap-item-display/types";
+import type { InvasionNpcDisplaySettings, InvasionNpcDisplaySettingsType } from "./invasion-npc-display-settings/types";
+import type { ItemExpirationSettings, ItemExpirationSettingsType } from "./item-expiration-settings/types";
+import type { ItemSettings, ItemSettingsType } from "./item-settings/types";
+import type { LanguageSettings, LanguageSettingsType } from "./language-settings/types";
+import type { LevelUpRewards, LevelUpRewardsType } from "./level-up-rewards/types";
+import type { LimitedPurchaseSkuSettings, LimitedPurchaseSkuSettingsType } from "./limited-purchase-sku-settings/types";
+import type { LocationCardSettings, LocationCardSettingsType } from "./location-card-settings/types";
+import type { MegaEvoLevelSettings, MegaEvoLevelSettingsType } from "./mega-evo-level-settings/types";
+import type { MoveSequenceSettings, MoveSequenceSettingsType } from "./move-sequence-settings/types";
+import type { MoveSettings, MoveSettingsType } from "./move-settings/types";
+import type { NonCombatMoveSettings, NonCombatMoveSettingsType } from "./non-combat-move-settings/types";
+import type { PartyPlayGeneralSettings, PartyPlayGeneralSettingsType } from "./party-play-general-settings/types";
+import type { PhotoSetsSettingsProto, PhotoSetsSettingsProtoType } from "./photo-sets-settings-proto/types";
+import type { PokemonExtendedSettings, PokemonExtendedSettingsType } from "./pokemon-extended-settings/types";
+import type { PokemonFamily, PokemonFamilyType } from "./pokemon-family/types";
+import type { PokemonHomeEnergyCosts, PokemonHomeEnergyCostsType } from "./pokemon-home-energy-costs/types";
+import type { PokemonHomeFormReversions, PokemonHomeFormReversionsType } from "./pokemon-home-form-reversions/types";
+import type { PokemonScaleSettings, PokemonScaleSettingsType } from "./pokemon-scale-settings/types";
+import type { PokemonSettings, PokemonSettingsType } from "./pokemon-settings/types";
+import type { PokemonUpgrades, PokemonUpgradesType } from "./pokemon-upgrades/types";
+import type { PokestopInvasionAvailabilitySettings, PokestopInvasionAvailabilitySettingsType } from "./pokestop-invasion-availability-settings/types";
+import type { QuestSettings, QuestSettingsType } from "./quest-settings/types";
+import type { RecommendedSearchSettings, RecommendedSearchSettingsType } from "./recommended-search-settings/types";
+import type { RollBack, RollBackType } from "./roll-back/types";
+import type { SettingsOverrideRule, SettingsOverrideRuleType } from "./settings-override-rule/types";
+import type { Singletons, SingletonsType } from "./singletons/types";
+import type { StickerMetadata, StickerMetadataType } from "./sticker-metadata/types";
+import type { TappableSettings, TappableSettingsType } from "./tappable-settings/types";
+import type { TemporaryEvolutionSettings, TemporaryEvolutionSettingsType } from "./temporary-evolution-settings/types";
+import type { TypeEffective, TypeEffectiveType } from "./type-effective/types";
+import type { VnextBattleConfig, VnextBattleConfigType } from "./vnext-battle-config/types";
+import type { VsSeekerLoot, VsSeekerLootType } from "./vs-seeker-loot/types";
+import type { VsSeekerPokemonRewards, VsSeekerPokemonRewardsType } from "./vs-seeker-pokemon-rewards/types";
+import type { WeatherAffinities, WeatherAffinitiesType } from "./weather-affinities/types";
 
 export type * from "./avatar-customization/types";
 export type * from "./avatar-group-order-settings/types";
@@ -122,7 +122,7 @@ export type * from "./vs-seeker-loot/types";
 export type * from "./vs-seeker-pokemon-rewards/types";
 export type * from "./weather-affinities/types";
 
-export type MasterfileType =
+export type MasterfileEntryType =
 	| AvatarCustomization
 	| AvatarGroupOrderSettings
 	| AvatarItemDisplay
@@ -183,3 +183,65 @@ export type MasterfileType =
 	| VsSeekerLoot
 	| VsSeekerPokemonRewards
 	| WeatherAffinities;
+
+export type MasterfileType =
+	| AvatarCustomizationType
+	| AvatarGroupOrderSettingsType
+	| AvatarItemDisplayType
+	| BadgeSettingsType
+	| BreadMoveLevelSettingsType
+	| BuddyActivityCategorySettingsType
+	| BuddyEmotionLevelSettingsType
+	| BuddyLevelSettingsType
+	| ClientQuestTemplateType
+	| CodeGateProtoType
+	| CombatLeagueType
+	| CombatMoveType
+	| CombatNpcPersonalityType
+	| CombatNpcTrainerType
+	| CombatRankingProtoSettingsType
+	| CombatTypeType
+	| EventPassTierSettingsType
+	| EvolutionChainDisplaySettingsType
+	| EvolutionQuestTemplateType
+	| FeatureGateType
+	| FormSettingsType
+	| FortPowerUpLevelSettingsType
+	| FriendshipMilestoneSettingsType
+	| GenderSettingsType
+	| IapCategoryDisplayType
+	| IapItemDisplayType
+	| InvasionNpcDisplaySettingsType
+	| ItemExpirationSettingsType
+	| ItemSettingsType
+	| LanguageSettingsType
+	| LevelUpRewardsType
+	| LimitedPurchaseSkuSettingsType
+	| LocationCardSettingsType
+	| MegaEvoLevelSettingsType
+	| MoveSequenceSettingsType
+	| MoveSettingsType
+	| NonCombatMoveSettingsType
+	| PartyPlayGeneralSettingsType
+	| PhotoSetsSettingsProtoType
+	| PokemonExtendedSettingsType
+	| PokemonFamilyType
+	| PokemonHomeEnergyCostsType
+	| PokemonHomeFormReversionsType
+	| PokemonScaleSettingsType
+	| PokemonSettingsType
+	| PokemonUpgradesType
+	| PokestopInvasionAvailabilitySettingsType
+	| QuestSettingsType
+	| RecommendedSearchSettingsType
+	| RollBackType
+	| SettingsOverrideRuleType
+	| SingletonsType
+	| StickerMetadataType
+	| TappableSettingsType
+	| TemporaryEvolutionSettingsType
+	| TypeEffectiveType
+	| VnextBattleConfigType
+	| VsSeekerLootType
+	| VsSeekerPokemonRewardsType
+	| WeatherAffinitiesType;

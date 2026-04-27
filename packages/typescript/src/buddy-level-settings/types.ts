@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "buddyLevelSettings", 5 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface BuddyLevelSettings<TemplateID extends string = string, TData extends BuddyLevelSettingsData = BuddyLevelSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -9,6 +11,7 @@ export interface BuddyLevelSettings<TemplateID extends string = string, TData ex
 		};
 	};
 }
+export type BuddyLevelSettingsType = W<BuddyLevelSettings>;
 
 export interface BuddyLevelSettingsData {
 	minNonCumulativePointsRequired?: number;

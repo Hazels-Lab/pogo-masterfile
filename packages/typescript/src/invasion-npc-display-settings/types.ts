@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "invasionNpcDisplaySettings", 67 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface InvasionNpcDisplaySettings<TemplateID extends string = string, TData extends InvasionNpcDisplaySettingsData = InvasionNpcDisplaySettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -7,6 +9,7 @@ export interface InvasionNpcDisplaySettings<TemplateID extends string = string, 
 		invasionNpcDisplaySettings: TData;
 	};
 }
+export type InvasionNpcDisplaySettingsType = W<InvasionNpcDisplaySettings>;
 
 export interface InvasionNpcDisplaySettingsData {
 	avatar: {

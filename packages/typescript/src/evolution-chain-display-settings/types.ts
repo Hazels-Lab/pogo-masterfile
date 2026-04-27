@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "evolutionChainDisplaySettings", 79 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface EvolutionChainDisplaySettings<
 	TemplateID extends string = string,
 	TData extends EvolutionChainDisplaySettingsData = EvolutionChainDisplaySettingsData,
@@ -10,6 +12,7 @@ export interface EvolutionChainDisplaySettings<
 		evolutionChainDisplaySettings: TData;
 	};
 }
+export type EvolutionChainDisplaySettingsType = W<EvolutionChainDisplaySettings>;
 
 export interface EvolutionChainDisplaySettingsData {
 	evolutionChains?: Array<{

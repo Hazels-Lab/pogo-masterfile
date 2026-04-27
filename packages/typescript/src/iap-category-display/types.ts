@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "iapCategoryDisplay", 13 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface IapCategoryDisplay<TemplateID extends string = string, TData extends IapCategoryDisplayData = IapCategoryDisplayData> {
 	templateId: TemplateID;
 	data: {
@@ -7,6 +9,7 @@ export interface IapCategoryDisplay<TemplateID extends string = string, TData ex
 		iapCategoryDisplay: TData;
 	};
 }
+export type IapCategoryDisplayType = W<IapCategoryDisplay>;
 
 export interface IapCategoryDisplayData {
 	bannerEnabled?: boolean;

@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "rollBack", 2 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface RollBack<TemplateID extends string = string, TData extends RollBackData = RollBackData> {
 	templateId: TemplateID;
 	data: {
@@ -9,5 +11,6 @@ export interface RollBack<TemplateID extends string = string, TData extends Roll
 		};
 	};
 }
+export type RollBackType = W<RollBack>;
 
 export interface RollBackData {}

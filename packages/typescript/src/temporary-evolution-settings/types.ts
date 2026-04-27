@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "temporaryEvolutionSettings", 50 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface TemporaryEvolutionSettings<TemplateID extends string = string, TData extends TemporaryEvolutionSettingsData = TemporaryEvolutionSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -7,6 +9,7 @@ export interface TemporaryEvolutionSettings<TemplateID extends string = string, 
 		temporaryEvolutionSettings: TData;
 	};
 }
+export type TemporaryEvolutionSettingsType = W<TemporaryEvolutionSettings>;
 
 export interface TemporaryEvolutionSettingsData {
 	pokemonId:

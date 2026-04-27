@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "evolutionQuestTemplate", 37 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface EvolutionQuestTemplate<TemplateID extends string = string, TData extends EvolutionQuestTemplateData = EvolutionQuestTemplateData> {
 	templateId: TemplateID;
 	data: {
@@ -10,6 +12,7 @@ export interface EvolutionQuestTemplate<TemplateID extends string = string, TDat
 		};
 	};
 }
+export type EvolutionQuestTemplateType = W<EvolutionQuestTemplate>;
 
 export interface EvolutionQuestTemplateData {
 	display: {

@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "photoSetsSettingsProto", 45 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface PhotoSetsSettingsProto<TemplateID extends string = string, TData extends PhotoSetsSettingsProtoData = PhotoSetsSettingsProtoData> {
 	templateId: TemplateID;
 	data: {
@@ -9,6 +11,7 @@ export interface PhotoSetsSettingsProto<TemplateID extends string = string, TDat
 		};
 	};
 }
+export type PhotoSetsSettingsProtoType = W<PhotoSetsSettingsProto>;
 
 export interface PhotoSetsSettingsProtoData {
 	displayOrder: number;

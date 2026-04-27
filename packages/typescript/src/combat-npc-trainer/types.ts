@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "combatNpcTrainer", 9 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface CombatNpcTrainer<TemplateID extends string = string, TData extends CombatNpcTrainerData = CombatNpcTrainerData> {
 	templateId: TemplateID;
 	data: {
@@ -11,6 +13,7 @@ export interface CombatNpcTrainer<TemplateID extends string = string, TData exte
 		};
 	};
 }
+export type CombatNpcTrainerType = W<CombatNpcTrainer>;
 
 export interface CombatNpcTrainerData {
 	availablePokemon: [

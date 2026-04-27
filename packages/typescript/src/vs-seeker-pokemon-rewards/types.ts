@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "vsSeekerPokemonRewards", 2 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface VsSeekerPokemonRewards<TemplateID extends string = string, TData extends VsSeekerPokemonRewardsData = VsSeekerPokemonRewardsData> {
 	templateId: TemplateID;
 	data: {
@@ -683,6 +685,7 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 		};
 	};
 }
+export type VsSeekerPokemonRewardsType = W<VsSeekerPokemonRewards>;
 
 export interface VsSeekerPokemonRewardsData {
 	rewardTrack?: "PREMIUM";

@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "combatNpcPersonality", 3 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface CombatNpcPersonality<TemplateID extends string = string, TData extends CombatNpcPersonalityData = CombatNpcPersonalityData> {
 	templateId: TemplateID;
 	data: {
@@ -9,6 +11,7 @@ export interface CombatNpcPersonality<TemplateID extends string = string, TData 
 		};
 	};
 }
+export type CombatNpcPersonalityType = W<CombatNpcPersonality>;
 
 export interface CombatNpcPersonalityData {
 	defensiveMaximumScore?: number;

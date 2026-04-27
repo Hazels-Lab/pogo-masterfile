@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "pokemonUpgrades", 2 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface PokemonUpgrades<TemplateID extends string = string, TData extends PokemonUpgradesData = PokemonUpgradesData> {
 	templateId: TemplateID;
 	data: {
@@ -69,6 +71,7 @@ export interface PokemonUpgrades<TemplateID extends string = string, TData exten
 		};
 	};
 }
+export type PokemonUpgradesType = W<PokemonUpgrades>;
 
 export interface PokemonUpgradesData {
 	candyCost: [

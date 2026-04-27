@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "iapItemDisplay", 1118 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface IapItemDisplay<TemplateID extends string = string, TData extends IapItemDisplayData = IapItemDisplayData> {
 	templateId: TemplateID;
 	data: {
@@ -7,6 +9,7 @@ export interface IapItemDisplay<TemplateID extends string = string, TData extend
 		iapItemDisplay: TData;
 	};
 }
+export type IapItemDisplayType = W<IapItemDisplay>;
 
 export interface IapItemDisplayData {
 	category?:

@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", 2464 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface PokemonExtendedSettings<TemplateID extends string = string, TData extends PokemonExtendedSettingsData = PokemonExtendedSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -7,6 +9,7 @@ export interface PokemonExtendedSettings<TemplateID extends string = string, TDa
 		pokemonExtendedSettings: TData;
 	};
 }
+export type PokemonExtendedSettingsType = W<PokemonExtendedSettings>;
 
 export interface PokemonExtendedSettingsData {
 	breadOverrides?: Array<{

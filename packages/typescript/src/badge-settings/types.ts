@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "badgeSettings", 868 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface BadgeSettings<TemplateID extends string = string, TData extends BadgeSettingsData = BadgeSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -7,6 +9,7 @@ export interface BadgeSettings<TemplateID extends string = string, TData extends
 		badgeSettings: TData;
 	};
 }
+export type BadgeSettingsType = W<BadgeSettings>;
 
 export interface BadgeSettingsData {
 	badgeRank: number;

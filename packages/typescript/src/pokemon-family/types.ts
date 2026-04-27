@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "pokemonFamily", 541 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface PokemonFamily<TemplateID extends string = string, TData extends PokemonFamilyData = PokemonFamilyData> {
 	templateId: TemplateID;
 	data: {
@@ -9,6 +11,7 @@ export interface PokemonFamily<TemplateID extends string = string, TData extends
 		};
 	};
 }
+export type PokemonFamilyType = W<PokemonFamily>;
 
 export interface PokemonFamilyData {
 	familyId: string;

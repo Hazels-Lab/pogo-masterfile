@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "nonCombatMoveSettings", 9 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface NonCombatMoveSettings<TemplateID extends string = string, TData extends NonCombatMoveSettingsData = NonCombatMoveSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -11,6 +13,7 @@ export interface NonCombatMoveSettings<TemplateID extends string = string, TData
 		};
 	};
 }
+export type NonCombatMoveSettingsType = W<NonCombatMoveSettings>;
 
 export interface NonCombatMoveSettingsData {
 	bonusEffect: {

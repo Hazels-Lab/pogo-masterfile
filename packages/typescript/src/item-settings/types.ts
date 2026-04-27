@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "itemSettings", 142 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface ItemSettings<TemplateID extends string = string, TData extends ItemSettingsData = ItemSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -9,6 +11,7 @@ export interface ItemSettings<TemplateID extends string = string, TData extends 
 		};
 	};
 }
+export type ItemSettingsType = W<ItemSettings>;
 
 export interface ItemSettingsData {
 	category:

@@ -423,3 +423,6 @@ export type Singletons =
 	| VsSeekerClientSettingsType
 	| VsSeekerScheduleSettingsType
 	| WeatherBonusSettingsType;
+
+/** Same as @see {Singletons} */
+export type SingletonsType = Singletons;

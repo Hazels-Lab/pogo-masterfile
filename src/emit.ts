@@ -127,7 +127,8 @@ export function emitSingletonsTypeFile(singletons: Group[]): string {
 		`${IMPORT} ${TYPE_LOWER} {`,
 		named.map((s) => s.name).join(",\n"),
 		`} from "./${ENTRIES_LOWER}"`,
-		`${IMPORT} ${TYPE_LOWER} { ${WIDEN} } from "../_utils"`,
+		``,
+		`${IMPORT} ${TYPE_LOWER} { ${WIDEN} } from "../_utils";`,
 		"",
 		...named.map((s) => `${EXPORT} ${TYPE_LOWER} ${s.name}${TYPE} = ${WIDEN}<${s.name}>;`),
 		"",
@@ -136,6 +137,7 @@ export function emitSingletonsTypeFile(singletons: Group[]): string {
 	// Global union of all singletons + stubs, for `${BARREL_TYPE}${ENTRY}` composition.
 	if (named.length === 0) {
 		lines.push(`${EXPORT} ${TYPE_LOWER} ${SINGLETONS} = never;`);
+		lines.push(`${EXPORT} ${TYPE_LOWER} ${SINGLETONS}${TYPE} = never;`);
 	} else {
 		lines.push(`${EXPORT} ${TYPE_LOWER} ${SINGLETONS} =`);
 		named.forEach(({ name }, i) => {
@@ -143,6 +145,9 @@ export function emitSingletonsTypeFile(singletons: Group[]): string {
 			lines.push(`\t| ${name}${TYPE}${suffix}`);
 		});
 	}
+	lines.push(``);
+	lines.push(`/** Same as @see {${SINGLETONS}} */`);
+	lines.push(`${EXPORT} ${TYPE_LOWER} ${SINGLETONS}${TYPE} = ${SINGLETONS};`);
 	lines.push(``);
 
 	return lines.join("\n");
@@ -158,7 +163,7 @@ export function emitTypesFile(discriminators: string[]): string {
 
 	for (const disc of sorted) {
 		const name = groupName(disc);
-		lines.push(`${IMPORT} ${TYPE_LOWER} { ${name} } from "./${kebabCase(disc)}/${TYPES_LOWER}";`);
+		lines.push(`${IMPORT} ${TYPE_LOWER} { ${name}, ${name}${TYPE} } from "./${kebabCase(disc)}/${TYPES_LOWER}";`);
 	}
 	for (const disc of sorted) {
 		lines.push(`${EXPORT} ${TYPE_LOWER} * from "./${kebabCase(disc)}/${TYPES_LOWER}";`);
@@ -166,13 +171,17 @@ export function emitTypesFile(discriminators: string[]): string {
 	lines.push(``);
 
 	lines.push(``);
-	lines.push(`${EXPORT} ${TYPE_LOWER} ${BARREL_TYPE}${TYPE} =`);
+	lines.push(`${EXPORT} ${TYPE_LOWER} ${BARREL_TYPE}${ENTRY}${TYPE} =`);
 	for (const disc of sorted) {
 		const name = groupName(disc);
 		lines.push(`\t| ${name}`);
 	}
 	lines.push(``);
-
+	lines.push(`${EXPORT} ${TYPE_LOWER} ${BARREL_TYPE}${TYPE} =`);
+	for (const disc of sorted) {
+		const name = groupName(disc);
+		lines.push(`\t| ${name}${TYPE}`);
+	}
 	return lines.join("\n");
 }
 
@@ -185,7 +194,12 @@ export function emitGroupTypes(group: Group): string {
 	const discName = renderPropertyName(group.discriminator);
 	const entryCount = group.entries.length;
 	const entryWord = entryCount === 1 ? ENTRY_LOWER : ENTRIES_LOWER;
-	const lines: string[] = [`// Generated from Pokémon GO masterfile — group "${group.discriminator}", ${entryCount} ${entryWord} (structural types).`, ``];
+	const lines: string[] = [
+		`// Generated from Pokémon GO masterfile — group "${group.discriminator}", ${entryCount} ${entryWord} (structural types).`,
+		``,
+		`${IMPORT} ${TYPE_LOWER} { ${WIDEN} } from "../_utils"`,
+		``,
+	];
 
 	lines.push(
 		`${EXPORT} ${INTERFACE} ${gName}<`,
@@ -208,7 +222,9 @@ export function emitGroupTypes(group: Group): string {
 		}
 	}
 
-	lines.push(`\t};`, `}`, ``, ...renderXDataInterface(xdataName, xdataType), ``);
+	lines.push(`\t};`, `}`);
+	lines.push(`${EXPORT} ${TYPE_LOWER} ${gName}${TYPE} = ${WIDEN}<${gName}>;`, ``);
+	lines.push(...renderXDataInterface(xdataName, xdataType), ``);
 	return lines.join("\n");
 }
 

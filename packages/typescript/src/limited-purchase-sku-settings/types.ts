@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "limitedPurchaseSkuSettings", 34 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface LimitedPurchaseSkuSettings<TemplateID extends string = string, TData extends LimitedPurchaseSkuSettingsData = LimitedPurchaseSkuSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -7,6 +9,7 @@ export interface LimitedPurchaseSkuSettings<TemplateID extends string = string, 
 		limitedPurchaseSkuSettings: TData;
 	};
 }
+export type LimitedPurchaseSkuSettingsType = W<LimitedPurchaseSkuSettings>;
 
 export interface LimitedPurchaseSkuSettingsData {
 	chronoUnit?: "DAY";

@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "featureGate", 13 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface FeatureGate<TemplateID extends string = string, TData extends FeatureGateData = FeatureGateData> {
 	templateId: TemplateID;
 	data: {
@@ -9,6 +11,7 @@ export interface FeatureGate<TemplateID extends string = string, TData extends F
 		};
 	};
 }
+export type FeatureGateType = W<FeatureGate>;
 
 export interface FeatureGateData {
 	status: number;

@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "friendshipMilestoneSettings", 6 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface FriendshipMilestoneSettings<
 	TemplateID extends string = string,
 	TData extends FriendshipMilestoneSettingsData = FriendshipMilestoneSettingsData,
@@ -10,6 +12,7 @@ export interface FriendshipMilestoneSettings<
 		friendshipMilestoneSettings: TData;
 	};
 }
+export type FriendshipMilestoneSettingsType = W<FriendshipMilestoneSettings>;
 
 export interface FriendshipMilestoneSettingsData {
 	attackBonusPercentage: number;

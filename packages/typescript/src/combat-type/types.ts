@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "combatType", 18 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface CombatType<TemplateID extends string = string, TData extends CombatTypeData = CombatTypeData> {
 	templateId: TemplateID;
 	data: {
@@ -11,6 +13,7 @@ export interface CombatType<TemplateID extends string = string, TData extends Co
 		};
 	};
 }
+export type CombatTypeType = W<CombatType>;
 
 export interface CombatTypeData {
 	greatLevelThreshold: number;

@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "eventPassTierSettings", 420 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface EventPassTierSettings<TemplateID extends string = string, TData extends EventPassTierSettingsData = EventPassTierSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -7,6 +9,7 @@ export interface EventPassTierSettings<TemplateID extends string = string, TData
 		eventPassTierSettings: TData;
 	};
 }
+export type EventPassTierSettingsType = W<EventPassTierSettings>;
 
 export interface EventPassTierSettingsData {
 	activeBonusDisplaySettings?: {

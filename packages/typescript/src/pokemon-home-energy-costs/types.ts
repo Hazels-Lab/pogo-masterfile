@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "pokemonHomeEnergyCosts", 4 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface PokemonHomeEnergyCosts<TemplateID extends string = string, TData extends PokemonHomeEnergyCostsData = PokemonHomeEnergyCostsData> {
 	templateId: TemplateID;
 	data: {
@@ -7,6 +9,7 @@ export interface PokemonHomeEnergyCosts<TemplateID extends string = string, TDat
 		pokemonHomeEnergyCosts: TData;
 	};
 }
+export type PokemonHomeEnergyCostsType = W<PokemonHomeEnergyCosts>;
 
 export interface PokemonHomeEnergyCostsData {
 	base: number;

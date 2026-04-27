@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "settingsOverrideRule", 250 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface SettingsOverrideRule<TemplateID extends string = string, TData extends SettingsOverrideRuleData = SettingsOverrideRuleData> {
 	templateId: TemplateID;
 	data: {
@@ -7,6 +9,7 @@ export interface SettingsOverrideRule<TemplateID extends string = string, TData 
 		settingsOverrideRule: TData;
 	};
 }
+export type SettingsOverrideRuleType = W<SettingsOverrideRule>;
 
 export interface SettingsOverrideRuleData {
 	fusedDepthEnabled?: "TRUE";

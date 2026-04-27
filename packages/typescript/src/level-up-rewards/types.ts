@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "levelUpRewards", 97 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface LevelUpRewards<TemplateID extends string = string, TData extends LevelUpRewardsData = LevelUpRewardsData> {
 	templateId: TemplateID;
 	data: {
@@ -7,6 +9,7 @@ export interface LevelUpRewards<TemplateID extends string = string, TData extend
 		levelUpRewards: TData;
 	};
 }
+export type LevelUpRewardsType = W<LevelUpRewards>;
 
 export interface LevelUpRewardsData {
 	clientOverrideDisplayOrder?: boolean;

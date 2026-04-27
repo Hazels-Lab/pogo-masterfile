@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "breadMoveLevelSettings", 7 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface BreadMoveLevelSettings<TemplateID extends string = string, TData extends BreadMoveLevelSettingsData = BreadMoveLevelSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -7,6 +9,7 @@ export interface BreadMoveLevelSettings<TemplateID extends string = string, TDat
 		breadMoveLevelSettings: TData;
 	};
 }
+export type BreadMoveLevelSettingsType = W<BreadMoveLevelSettings>;
 
 export interface BreadMoveLevelSettingsData {
 	aSettings: [

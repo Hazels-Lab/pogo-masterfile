@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "avatarCustomization", 1757 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface AvatarCustomization<TemplateID extends string = string, TData extends AvatarCustomizationData = AvatarCustomizationData> {
 	templateId: TemplateID;
 	data: {
@@ -7,6 +9,7 @@ export interface AvatarCustomization<TemplateID extends string = string, TData e
 		avatarCustomization: TData;
 	};
 }
+export type AvatarCustomizationType = W<AvatarCustomization>;
 
 export interface AvatarCustomizationData {
 	assetName: string;

@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "locationCardSettings", 181 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface LocationCardSettings<TemplateID extends string = string, TData extends LocationCardSettingsData = LocationCardSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -7,6 +9,7 @@ export interface LocationCardSettings<TemplateID extends string = string, TData 
 		locationCardSettings: TData;
 	};
 }
+export type LocationCardSettingsType = W<LocationCardSettings>;
 
 export interface LocationCardSettingsData {
 	cardType?: "LOCATION_CARD" | "SPECIAL_BACKGROUND";

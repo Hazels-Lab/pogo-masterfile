@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "partyPlayGeneralSettings", 2 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface PartyPlayGeneralSettings<TemplateID extends string = string, TData extends PartyPlayGeneralSettingsData = PartyPlayGeneralSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -11,6 +13,7 @@ export interface PartyPlayGeneralSettings<TemplateID extends string = string, TD
 		};
 	};
 }
+export type PartyPlayGeneralSettingsType = W<PartyPlayGeneralSettings>;
 
 export interface PartyPlayGeneralSettingsData {
 	complianceZonesEnabled?: boolean;

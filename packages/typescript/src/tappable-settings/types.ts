@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "tappableSettings", 5 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface TappableSettings<TemplateID extends string = string, TData extends TappableSettingsData = TappableSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -9,6 +11,7 @@ export interface TappableSettings<TemplateID extends string = string, TData exte
 		};
 	};
 }
+export type TappableSettingsType = W<TappableSettings>;
 
 export interface TappableSettingsData {
 	avgTappablesInView?: number;

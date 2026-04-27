@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "fortPowerUpLevelSettings", 4 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface FortPowerUpLevelSettings<TemplateID extends string = string, TData extends FortPowerUpLevelSettingsData = FortPowerUpLevelSettingsData> {
 	templateId: TemplateID;
 	data: {
@@ -9,6 +11,7 @@ export interface FortPowerUpLevelSettings<TemplateID extends string = string, TD
 		};
 	};
 }
+export type FortPowerUpLevelSettingsType = W<FortPowerUpLevelSettings>;
 
 export interface FortPowerUpLevelSettingsData {
 	additionalLevelPowerupDurationMs?: number;

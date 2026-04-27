@@ -1,5 +1,7 @@
 // Generated from Pokémon GO masterfile — group "combatLeague", 105 entries (structural types).
 
+import type { W } from "../_utils";
+
 export interface CombatLeague<TemplateID extends string = string, TData extends CombatLeagueData = CombatLeagueData> {
 	templateId: TemplateID;
 	data: {
@@ -10,6 +12,7 @@ export interface CombatLeague<TemplateID extends string = string, TData extends 
 		};
 	};
 }
+export type CombatLeagueType = W<CombatLeague>;
 
 export interface CombatLeagueData {
 	allowTempEvos?: boolean;
