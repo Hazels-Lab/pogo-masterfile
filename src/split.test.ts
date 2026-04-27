@@ -200,10 +200,10 @@ describe("fingerprintFileName", () => {
 		expect(fingerprintFileName(["tempEvoOverrides"])).toBe("temp-evo-overrides");
 	});
 
-	test("joins multiple fields with '+'", () => {
-		expect(fingerprintFileName(["breadOverrides", "form"])).toBe("bread-overrides+form");
-		expect(fingerprintFileName(["form", "tempEvoOverrides"])).toBe("form+temp-evo-overrides");
-		expect(fingerprintFileName(["breadOverrides", "form", "tempEvoOverrides"])).toBe("bread-overrides+form+temp-evo-overrides");
+	test("joins multiple fields with '-'", () => {
+		expect(fingerprintFileName(["breadOverrides", "form"])).toBe("bread-overrides-form");
+		expect(fingerprintFileName(["form", "tempEvoOverrides"])).toBe("form-temp-evo-overrides");
+		expect(fingerprintFileName(["breadOverrides", "form", "tempEvoOverrides"])).toBe("bread-overrides-form-temp-evo-overrides");
 	});
 });
 
@@ -223,7 +223,7 @@ describe("tryH2 file naming", () => {
 
 		const clusters = tryH2(group)!;
 		const names = clusters.map((c) => c.fileName).sort();
-		expect(names).toEqual(["base", "extra+form", "form"]);
+		expect(names).toEqual(["base", "extra-form", "form"]);
 	});
 });
 
