@@ -436,4 +436,63 @@ describe("emitGroupTypes — promotion alias declaration", () => {
 		expect(output).toContain("export interface TypeEffective<");
 		expect(output).not.toContain("export type PokemonType =");
 	});
+
+	test("emits an import for a consumer group that references another group's templateIds (exact match)", () => {
+		// Synthesize a fixture: groupA owns POKEMON_TYPE_BUG / POKEMON_TYPE_DARK,
+		// groupB has data containing exactly that union of strings.
+		const groupA: Group = {
+			discriminator: "typeEffective",
+			entries: [
+				{ templateId: "POKEMON_TYPE_BUG", data: { templateId: "POKEMON_TYPE_BUG", typeEffective: { attackScalar: [1] } } },
+				{ templateId: "POKEMON_TYPE_DARK", data: { templateId: "POKEMON_TYPE_DARK", typeEffective: { attackScalar: [1] } } },
+			],
+		};
+		const groupB: Group = {
+			discriminator: "moveSettings",
+			entries: [
+				{ templateId: "MOVE_X", data: { templateId: "MOVE_X", moveSettings: { pokemonType: "POKEMON_TYPE_BUG" } } },
+				{ templateId: "MOVE_Y", data: { templateId: "MOVE_Y", moveSettings: { pokemonType: "POKEMON_TYPE_DARK" } } },
+			],
+		};
+		const groups = new Map<string, Group>([["typeEffective", groupA], ["moveSettings", groupB]]);
+		const registry = buildPromotionRegistry(groups);
+		const output = emitGroupTypes(groupB, registry);
+		expect(output).toContain(`import type { PokemonType } from "../type-effective/types";`);
+		expect(output).toContain("pokemonType: PokemonType;");
+	});
+
+	test("emits an Exclude<> reference and import when consumer is a near-exact subset", () => {
+		// groupA: 4 templateIds with prefix KIND_ (alias "Kind"); groupB references
+		// 3 of 4 (1 missing = 25% — at the default boundary).
+		const groupA: Group = {
+			discriminator: "kindThing",
+			entries: ["KIND_AAA", "KIND_BBB", "KIND_CCC", "KIND_DDD"].map((id) => ({
+				templateId: id,
+				data: { templateId: id, kindThing: { stamp: 1 } },
+			})),
+		};
+		const groupB: Group = {
+			discriminator: "consumer",
+			entries: [
+				{ templateId: "C_ONE", data: { templateId: "C_ONE", consumer: { kind: "KIND_AAA" } } },
+				{ templateId: "C_TWO", data: { templateId: "C_TWO", consumer: { kind: "KIND_BBB" } } },
+				{ templateId: "C_THR", data: { templateId: "C_THR", consumer: { kind: "KIND_CCC" } } },
+			],
+		};
+		const groups = new Map<string, Group>([["kindThing", groupA], ["consumer", groupB]]);
+		const registry = buildPromotionRegistry(groups);
+		const output = emitGroupTypes(groupB, registry);
+		expect(output).toContain(`import type { Kind } from "../kind-thing/types";`);
+		expect(output).toContain(`Exclude<Kind, "KIND_DDD">`);
+	});
+
+	test("does not emit a self-import when the source group references its own promoted alias", () => {
+		// Edge case guard: even if some property of the source group's data widens to
+		// the group's own templateId set, the generator must not produce a self-import.
+		const groups = groupEntries(MOCK_MASTERFILE);
+		const registry = buildPromotionRegistry(groups);
+		const typeEffective = groups.get("typeEffective")!;
+		const output = emitGroupTypes(typeEffective, registry);
+		expect(output).not.toContain(`from "../type-effective/types"`);
+	});
 });
