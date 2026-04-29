@@ -14,6 +14,7 @@ import {
 import type { Entry, Group } from "./group.ts";
 import { groupEntries } from "./group.ts";
 import { kebabCase } from "./naming.ts";
+import { buildPromotionRegistry } from "./promoted-unions.ts";
 import { chooseSplit, clusterSingletons } from "./split.ts";
 import { writeOutput } from "./write.ts";
 
@@ -39,13 +40,15 @@ function planFiles(groups: Map<string, Group>): Map<string, string> {
 
 	multiEntry.sort((a, b) => a.discriminator.localeCompare(b.discriminator));
 
+	const promotionRegistry = buildPromotionRegistry(groups);
+
 	const groupSplits = new Map<string, "split" | "flat">();
 
 	for (const g of multiEntry) {
 		const dir = kebabCase(g.discriminator);
 		const plan = chooseSplit(g);
 		files.set(`${dir}/${BARREL_FILE}.ts`, emitIndexFile());
-		files.set(`${dir}/${TYPES_LOWER}.ts`, emitGroupTypes(g));
+		files.set(`${dir}/${TYPES_LOWER}.ts`, emitGroupTypes(g, promotionRegistry));
 
 		if (plan.kind === "none") {
 			files.set(`${dir}/${ENTRIES_LOWER}.ts`, emitEntriesFlat(g));
