@@ -1,3 +1,4 @@
+import { PROMOTION_EXCLUDE_DELTA_RATIO } from "./constants.ts";
 import type { Group } from "./group.ts";
 import { groupName, pascalCase, sharedPrefix } from "./naming.ts";
 
@@ -38,6 +39,10 @@ export function tryPromote(inline: ReadonlySet<string>, registry: PromotionRegis
 		if (inline.size === entry.memberSet.size) {
 			return { kind: "ref", aliasName: entry.aliasName, sourceGroup: entry.group };
 		}
+		const missing = entry.members.filter((m) => !inline.has(m));
+		if (missing.length === 0) continue;
+		if (missing.length / entry.memberSet.size > PROMOTION_EXCLUDE_DELTA_RATIO) continue;
+		return { kind: "exclude", aliasName: entry.aliasName, missing, sourceGroup: entry.group };
 	}
 	return null;
 }

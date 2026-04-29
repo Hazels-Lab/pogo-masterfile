@@ -122,3 +122,50 @@ describe("tryPromote — exact match", () => {
 		expect(tryPromote(inline, registry, registry[0]!.group)).toBeNull();
 	});
 });
+
+describe("tryPromote — Exclude path", () => {
+	// Build an 8-member group so the delta math is unambiguous: 25% of 8 = 2 missing max.
+	const groups = makeGroups(
+		group("k8", [
+			"K_AAA",
+			"K_BBB",
+			"K_CCC",
+			"K_DDD",
+			"K_EEE",
+			"K_FFF",
+			"K_GGG",
+			"K_HHH",
+		]),
+	);
+	const registry = build(groups);
+
+	test("returns 'exclude' when missing fraction is at the boundary (2 of 8 missing)", () => {
+		const inline = new Set(["K_AAA", "K_BBB", "K_CCC", "K_DDD", "K_EEE", "K_FFF"]);
+		const result = tryPromote(inline, registry, null);
+		expect(result).toEqual({
+			kind: "exclude",
+			aliasName: "K",
+			missing: ["K_GGG", "K_HHH"],
+			sourceGroup: registry[0]!.group,
+		});
+	});
+
+	test("returns 'exclude' when only one member is missing", () => {
+		const inline = new Set(["K_AAA", "K_BBB", "K_CCC", "K_DDD", "K_EEE", "K_FFF", "K_GGG"]);
+		const result = tryPromote(inline, registry, null);
+		expect(result).toMatchObject({ kind: "exclude", missing: ["K_HHH"] });
+	});
+
+	test("returns null when missing fraction is just over the ratio (3 of 8 missing = 0.375)", () => {
+		const inline = new Set(["K_AAA", "K_BBB", "K_CCC", "K_DDD", "K_EEE"]);
+		expect(tryPromote(inline, registry, null)).toBeNull();
+	});
+
+	test("missing list is sorted alphabetically", () => {
+		const inline = new Set(["K_AAA", "K_BBB", "K_CCC", "K_DDD", "K_EEE", "K_FFF"]);
+		const result = tryPromote(inline, registry, null);
+		// HHH > GGG; the missing list must be lexicographically sorted regardless
+		// of insertion order in the source.
+		expect((result as { missing: string[] }).missing).toEqual(["K_GGG", "K_HHH"]);
+	});
+});
