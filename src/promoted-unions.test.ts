@@ -61,3 +61,29 @@ describe("buildPromotionRegistry — naming rule", () => {
 		expect(names).toEqual(["CombatPokemonType", "PokemonType", "WeatherAffinity"]);
 	});
 });
+
+describe("buildPromotionRegistry — collision resolution", () => {
+	test("appends 'Id' when alias would collide with an existing group's interface name", () => {
+		// "PokemonType" is the alias derived from prefix POKEMON_TYPE_; the colliding
+		// group's discriminator is "pokemonType" → groupName "PokemonType".
+		const groups = makeGroups(
+			group("typeEffective", ["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK"]),
+			group("pokemonType", ["X_ONE", "X_TWO"]),
+		);
+		const byDisc = new Map(buildPromotionRegistry(groups).map((e) => [e.group.discriminator, e]));
+		expect(byDisc.get("typeEffective")!.aliasName).toBe("PokemonTypeId");
+	});
+
+	test("appends pascalCase(disc) when two registry entries derive the same alias", () => {
+		// Defensive: two groups with the same prefix → same alias; both get suffixed
+		// with their pascal-cased discriminator.
+		const groups = makeGroups(
+			group("alphaTypes", ["X_ONE", "X_TWO"]),
+			group("betaTypes", ["X_THREE", "X_FOUR"]),
+		);
+		const reg = buildPromotionRegistry(groups);
+		const byDisc = new Map(reg.map((e) => [e.group.discriminator, e]));
+		expect(byDisc.get("alphaTypes")!.aliasName).toBe("XAlphaTypes");
+		expect(byDisc.get("betaTypes")!.aliasName).toBe("XBetaTypes");
+	});
+});
