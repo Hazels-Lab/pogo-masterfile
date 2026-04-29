@@ -33,18 +33,23 @@ export type PromotionResult =
 
 export function tryPromote(inline: ReadonlySet<string>, registry: PromotionRegistry, currentGroup: Group | null): PromotionResult | null {
 	if (inline.size <= 1) return null;
-	for (const entry of registry) {
-		if (currentGroup !== null && entry.group === currentGroup) continue;
-		if (!isSubsetOrEqual(inline, entry.memberSet)) continue;
-		if (inline.size === entry.memberSet.size) {
-			return { kind: "ref", aliasName: entry.aliasName, sourceGroup: entry.group };
-		}
-		const missing = entry.members.filter((m) => !inline.has(m));
-		if (missing.length === 0) continue;
-		if (missing.length / entry.memberSet.size > PROMOTION_EXCLUDE_DELTA_RATIO) continue;
-		return { kind: "exclude", aliasName: entry.aliasName, missing, sourceGroup: entry.group };
+
+	const candidates = registry.filter((entry) => {
+		if (currentGroup !== null && entry.group === currentGroup) return false;
+		return isSubsetOrEqual(inline, entry.memberSet);
+	});
+	if (candidates.length === 0) return null;
+
+	candidates.sort((a, b) => a.memberSet.size - b.memberSet.size || a.aliasName.localeCompare(b.aliasName));
+	const best = candidates[0]!;
+
+	if (inline.size === best.memberSet.size) {
+		return { kind: "ref", aliasName: best.aliasName, sourceGroup: best.group };
 	}
-	return null;
+	const missing = best.members.filter((m) => !inline.has(m));
+	if (missing.length === 0) return null;
+	if (missing.length / best.memberSet.size > PROMOTION_EXCLUDE_DELTA_RATIO) return null;
+	return { kind: "exclude", aliasName: best.aliasName, missing, sourceGroup: best.group };
 }
 
 function isSubsetOrEqual(a: ReadonlySet<string>, b: ReadonlySet<string>): boolean {

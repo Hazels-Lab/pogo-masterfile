@@ -169,3 +169,30 @@ describe("tryPromote — Exclude path", () => {
 		expect((result as { missing: string[] }).missing).toEqual(["K_GGG", "K_HHH"]);
 	});
 });
+
+describe("tryPromote — multi-match resolution", () => {
+	// Two groups whose member sets overlap. Inline = {X_A, X_B} matches both.
+	// Smallest containing group wins; alphabetical aliasName tiebreak.
+	// Both groups derive aliasName "X" from prefix "X_"; alias-vs-alias collision
+	// resolution (Task 3) suffixes each with pascalCase(disc), giving "XAlpha" and
+	// "XAaSuper".
+	const groups = makeGroups(
+		group("alpha", ["X_A", "X_B"]),
+		group("aaSuper", ["X_A", "X_B", "X_C", "X_D"]),
+	);
+	const registry = build(groups);
+
+	test("smallest containing group wins on exact match", () => {
+		const inline = new Set(["X_A", "X_B"]);
+		const result = tryPromote(inline, registry, null);
+		expect(result).toMatchObject({ kind: "ref", aliasName: "XAlpha" });
+		expect((result as { sourceGroup: Group }).sourceGroup.discriminator).toBe("alpha");
+	});
+
+	test("falls back to the larger group when the smaller is not a containing set", () => {
+		const inline = new Set(["X_A", "X_B", "X_C", "X_D"]);
+		const result = tryPromote(inline, registry, null);
+		expect(result).toMatchObject({ kind: "ref", aliasName: "XAaSuper" });
+		expect((result as { sourceGroup: Group }).sourceGroup.discriminator).toBe("aaSuper");
+	});
+});
