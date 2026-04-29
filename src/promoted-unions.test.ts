@@ -87,3 +87,38 @@ describe("buildPromotionRegistry — collision resolution", () => {
 		expect(byDisc.get("betaTypes")!.aliasName).toBe("XBetaTypes");
 	});
 });
+
+import { buildPromotionRegistry as build, tryPromote } from "./promoted-unions.ts";
+
+describe("tryPromote — exact match", () => {
+	const groups = makeGroups(group("typeEffective", ["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK", "POKEMON_TYPE_FIRE"]));
+	const registry = build(groups);
+
+	test("returns a 'ref' result when inline equals members", () => {
+		const inline = new Set(["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK", "POKEMON_TYPE_FIRE"]);
+		const result = tryPromote(inline, registry, null);
+		expect(result).toEqual({
+			kind: "ref",
+			aliasName: "PokemonType",
+			sourceGroup: registry[0]!.group,
+		});
+	});
+
+	test("returns null for a single-element inline union", () => {
+		expect(tryPromote(new Set(["POKEMON_TYPE_BUG"]), registry, null)).toBeNull();
+	});
+
+	test("returns null for an empty inline union", () => {
+		expect(tryPromote(new Set(), registry, null)).toBeNull();
+	});
+
+	test("returns null when inline contains a value not in any registered set", () => {
+		const inline = new Set(["POKEMON_TYPE_BUG", "POKEMON_TYPE_NOT_REAL"]);
+		expect(tryPromote(inline, registry, null)).toBeNull();
+	});
+
+	test("does not promote when currentGroup is the source group (self-reference guard)", () => {
+		const inline = new Set(["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK", "POKEMON_TYPE_FIRE"]);
+		expect(tryPromote(inline, registry, registry[0]!.group)).toBeNull();
+	});
+});

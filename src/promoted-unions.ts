@@ -26,6 +26,29 @@ export function buildPromotionRegistry(groups: Map<string, Group>): PromotionReg
 	return entries;
 }
 
+export type PromotionResult =
+	| { kind: "ref"; aliasName: string; sourceGroup: Group }
+	| { kind: "exclude"; aliasName: string; missing: string[]; sourceGroup: Group };
+
+export function tryPromote(inline: ReadonlySet<string>, registry: PromotionRegistry, currentGroup: Group | null): PromotionResult | null {
+	if (inline.size <= 1) return null;
+	for (const entry of registry) {
+		if (currentGroup !== null && entry.group === currentGroup) continue;
+		if (!isSubsetOrEqual(inline, entry.memberSet)) continue;
+		if (inline.size === entry.memberSet.size) {
+			return { kind: "ref", aliasName: entry.aliasName, sourceGroup: entry.group };
+		}
+	}
+	return null;
+}
+
+function isSubsetOrEqual(a: ReadonlySet<string>, b: ReadonlySet<string>): boolean {
+	for (const value of a) {
+		if (!b.has(value)) return false;
+	}
+	return true;
+}
+
 function resolveCollisions(entries: PromotionRegistryEntry[], groups: Map<string, Group>): void {
 	const interfaceNames = new Set([...groups.values()].map((g) => groupName(g.discriminator)));
 
