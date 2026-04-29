@@ -66,21 +66,31 @@ describe("buildPromotionRegistry — collision resolution", () => {
 	test("appends 'Id' when alias would collide with an existing group's interface name", () => {
 		// "PokemonType" is the alias derived from prefix POKEMON_TYPE_; the colliding
 		// group's discriminator is "pokemonType" → groupName "PokemonType".
-		const groups = makeGroups(
-			group("typeEffective", ["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK"]),
-			group("pokemonType", ["X_ONE", "X_TWO"]),
-		);
+		const groups = makeGroups(group("typeEffective", ["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK"]), group("pokemonType", ["X_ONE", "X_TWO"]));
 		const byDisc = new Map(buildPromotionRegistry(groups).map((e) => [e.group.discriminator, e]));
 		expect(byDisc.get("typeEffective")!.aliasName).toBe("PokemonTypeId");
+	});
+
+	test("appends 'Id' when alias would collide with another group's ${gName}Data symbol", () => {
+		// Prefix POKEMON_TYPE_DATA_ → alias "PokemonTypeData"; this collides with the
+		// "pokemonType" group's emitted ${gName}Data interface.
+		const groups = makeGroups(group("dataGroup", ["POKEMON_TYPE_DATA_A", "POKEMON_TYPE_DATA_B"]), group("pokemonType", ["X_ONE", "X_TWO"]));
+		const byDisc = new Map(buildPromotionRegistry(groups).map((e) => [e.group.discriminator, e]));
+		expect(byDisc.get("dataGroup")!.aliasName).toBe("PokemonTypeDataId");
+	});
+
+	test("appends 'Id' when alias would collide with another group's ${gName}Type symbol", () => {
+		// Prefix POKEMON_TYPE_TYPE_ → alias "PokemonTypeType"; this collides with the
+		// "pokemonType" group's emitted ${gName}Type alias.
+		const groups = makeGroups(group("typeGroup", ["POKEMON_TYPE_TYPE_A", "POKEMON_TYPE_TYPE_B"]), group("pokemonType", ["X_ONE", "X_TWO"]));
+		const byDisc = new Map(buildPromotionRegistry(groups).map((e) => [e.group.discriminator, e]));
+		expect(byDisc.get("typeGroup")!.aliasName).toBe("PokemonTypeTypeId");
 	});
 
 	test("appends pascalCase(disc) when two registry entries derive the same alias", () => {
 		// Defensive: two groups with the same prefix → same alias; both get suffixed
 		// with their pascal-cased discriminator.
-		const groups = makeGroups(
-			group("alphaTypes", ["X_ONE", "X_TWO"]),
-			group("betaTypes", ["X_THREE", "X_FOUR"]),
-		);
+		const groups = makeGroups(group("alphaTypes", ["X_ONE", "X_TWO"]), group("betaTypes", ["X_THREE", "X_FOUR"]));
 		const reg = buildPromotionRegistry(groups);
 		const byDisc = new Map(reg.map((e) => [e.group.discriminator, e]));
 		expect(byDisc.get("alphaTypes")!.aliasName).toBe("XAlphaTypes");
@@ -125,18 +135,7 @@ describe("tryPromote — exact match", () => {
 
 describe("tryPromote — Exclude path", () => {
 	// Build an 8-member group so the delta math is unambiguous: 25% of 8 = 2 missing max.
-	const groups = makeGroups(
-		group("k8", [
-			"K_AAA",
-			"K_BBB",
-			"K_CCC",
-			"K_DDD",
-			"K_EEE",
-			"K_FFF",
-			"K_GGG",
-			"K_HHH",
-		]),
-	);
+	const groups = makeGroups(group("k8", ["K_AAA", "K_BBB", "K_CCC", "K_DDD", "K_EEE", "K_FFF", "K_GGG", "K_HHH"]));
 	const registry = build(groups);
 
 	test("returns 'exclude' when missing fraction is at the boundary (2 of 8 missing)", () => {
@@ -176,10 +175,7 @@ describe("tryPromote — multi-match resolution", () => {
 	// Both groups derive aliasName "X" from prefix "X_"; alias-vs-alias collision
 	// resolution (Task 3) suffixes each with pascalCase(disc), giving "XAlpha" and
 	// "XAaSuper".
-	const groups = makeGroups(
-		group("alpha", ["X_A", "X_B"]),
-		group("aaSuper", ["X_A", "X_B", "X_C", "X_D"]),
-	);
+	const groups = makeGroups(group("alpha", ["X_A", "X_B"]), group("aaSuper", ["X_A", "X_B", "X_C", "X_D"]));
 	const registry = build(groups);
 
 	test("smallest containing group wins on exact match", () => {
@@ -197,9 +193,9 @@ describe("tryPromote — multi-match resolution", () => {
 	});
 });
 
+import ts from "typescript";
 import { inferredToType } from "./builder.ts";
 import type { PromotionContext } from "./promoted-unions.ts";
-import ts from "typescript";
 
 function printNode(node: ts.TypeNode): string {
 	const printer = ts.createPrinter({ newLine: ts.NewLineKind.LineFeed });
@@ -213,10 +209,7 @@ describe("inferredToType — promotion via ctx", () => {
 
 	test("rewrites an exact-match string union to a type reference", () => {
 		const ctx: PromotionContext = { registry, currentGroup: null, imports: new Map() };
-		const node = inferredToType(
-			{ kind: "string", literals: ["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK", "POKEMON_TYPE_FIRE"] },
-			ctx,
-		);
+		const node = inferredToType({ kind: "string", literals: ["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK", "POKEMON_TYPE_FIRE"] }, ctx);
 		expect(printNode(node)).toBe("PokemonType");
 		expect(ctx.imports.get("typeEffective")).toEqual(new Set(["PokemonType"]));
 	});
@@ -251,10 +244,7 @@ describe("inferredToType — promotion via ctx", () => {
 
 	test("does not promote when currentGroup is the source group", () => {
 		const ctx: PromotionContext = { registry, currentGroup: registry[0]!.group, imports: new Map() };
-		const node = inferredToType(
-			{ kind: "string", literals: ["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK", "POKEMON_TYPE_FIRE"] },
-			ctx,
-		);
+		const node = inferredToType({ kind: "string", literals: ["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK", "POKEMON_TYPE_FIRE"] }, ctx);
 		expect(printNode(node)).not.toBe("PokemonType");
 		expect(ctx.imports.size).toBe(0);
 	});

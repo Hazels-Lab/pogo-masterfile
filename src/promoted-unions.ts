@@ -77,11 +77,18 @@ export function recordImport(ctx: PromotionContext, sourceGroup: Group, aliasNam
 }
 
 function resolveCollisions(entries: PromotionRegistryEntry[], groups: Map<string, Group>): void {
-	const interfaceNames = new Set([...groups.values()].map((g) => groupName(g.discriminator)));
+	// Each group emits three top-level symbols: ${gName}, ${gName}Data, and ${gName}Type.
+	// All three are reserved at module scope and must not be shadowed by a promoted alias.
+	const reservedNames = new Set(
+		[...groups.values()].flatMap((g) => {
+			const n = groupName(g.discriminator);
+			return [n, `${n}Data`, `${n}Type`];
+		}),
+	);
 
-	// Pass 1: alias-vs-interface — append "Id" to colliding aliases.
+	// Pass 1: alias-vs-reserved — append "Id" to colliding aliases.
 	for (const entry of entries) {
-		if (interfaceNames.has(entry.aliasName)) {
+		if (reservedNames.has(entry.aliasName)) {
 			entry.aliasName = `${entry.aliasName}Id`;
 		}
 	}
