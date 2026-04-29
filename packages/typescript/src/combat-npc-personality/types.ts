@@ -21,3 +21,5 @@ export interface CombatNpcPersonalityData {
 	specialChance: number;
 	superEffectiveChance: number;
 }
+
+export type TrainerPersonality = "TRAINER_PERSONALITY_EASY" | "TRAINER_PERSONALITY_HARD" | "TRAINER_PERSONALITY_MEDIUM";

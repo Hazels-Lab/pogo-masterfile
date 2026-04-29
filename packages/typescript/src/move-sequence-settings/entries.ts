@@ -3679,3 +3679,5 @@ export type MoveSequenceSettingsMasterfileEntry =
 	| MoveSequenceSettingsYawnFast
 	| MoveSequenceSettingsZapCannon
 	| MoveSequenceSettingsZenHeadbuttFast;
+
+export type MoveSequenceSettingsTemplateID = MoveSequenceSettingsMasterfileEntry["templateId"];

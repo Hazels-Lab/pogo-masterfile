@@ -73,3 +73,5 @@ export type PartyPlayGeneralSettingsWeeklyChallengeGeneralSettings = S<
 >;
 
 export type PartyPlayGeneralSettingsMasterfileEntry = PartyPlayGeneralSettingsPartyPlayGeneralSettings | PartyPlayGeneralSettingsWeeklyChallengeGeneralSettings;
+
+export type PartyPlayGeneralSettingsTemplateID = PartyPlayGeneralSettingsMasterfileEntry["templateId"];

@@ -254,3 +254,5 @@ export type CombatNpcTrainerMasterfileEntry =
 	| CombatNpcTrainerSparkGreat
 	| CombatNpcTrainerSparkMaster
 	| CombatNpcTrainerSparkUltra;
+
+export type CombatNpcTrainerTemplateID = CombatNpcTrainerMasterfileEntry["templateId"];

@@ -2179,3 +2179,5 @@ export type CombatRankingProtoSettingsMasterfileEntry =
 	| CombatRankingProtoSettingsSettingsS29
 	| CombatRankingProtoSettingsSettingsS8
 	| CombatRankingProtoSettingsSettingsS9;
+
+export type CombatRankingProtoSettingsTemplateID = CombatRankingProtoSettingsMasterfileEntry["templateId"];

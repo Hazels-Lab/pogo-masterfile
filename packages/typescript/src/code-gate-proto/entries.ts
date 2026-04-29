@@ -70,3 +70,5 @@ export type CodeGateProtoMasterfileEntry =
 	| CodeGateProtoTodayViewV3CodeGate
 	| CodeGateProtoUseExtendedSettingsForMaxScaleCodeGate
 	| CodeGateProtoUseGmtSkuDataCodeGate;
+
+export type CodeGateProtoTemplateID = CodeGateProtoMasterfileEntry["templateId"];

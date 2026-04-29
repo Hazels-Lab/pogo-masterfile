@@ -421,3 +421,5 @@ export type BreadMoveLevelSettingsMasterfileEntry =
 	| BreadMoveLevelSettings7
 	| BreadMoveLevelSettings8
 	| BreadMoveLevelSettingsZ;
+
+export type BreadMoveLevelSettingsTemplateID = BreadMoveLevelSettingsMasterfileEntry["templateId"];

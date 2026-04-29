@@ -74,3 +74,5 @@ export type BuddyEmotionLevelSettingsMasterfileEntry =
 	| BuddyEmotionLevelSettings4
 	| BuddyEmotionLevelSettings5
 	| BuddyEmotionLevelSettings6;
+
+export type BuddyEmotionLevelSettingsTemplateID = BuddyEmotionLevelSettingsMasterfileEntry["templateId"];

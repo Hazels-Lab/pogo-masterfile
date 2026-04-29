@@ -93,3 +93,5 @@ export type EventPassSettingsSteeledresolve2026Event = S<
 >;
 
 export type EventPassSettingsMasterfileEntry = EventPassSettingsApril2026Season | EventPassSettingsSteeledresolve2026Event;
+
+export type EventPassSettingsTemplateID = EventPassSettingsMasterfileEntry["templateId"];

@@ -1440,3 +1440,5 @@ export type LevelUpRewardsMasterfileEntry =
 	| LevelUpRewardsBackfillAwardsLevel65
 	| LevelUpRewardsBackfillAwardsLevel67
 	| LevelUpRewardsBackfillAwardsLevel70;
+
+export type LevelUpRewardsTemplateID = LevelUpRewardsMasterfileEntry["templateId"];

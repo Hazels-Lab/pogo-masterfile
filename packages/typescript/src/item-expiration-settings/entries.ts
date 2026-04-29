@@ -258,3 +258,5 @@ export type ItemExpirationSettingsMasterfileEntry =
 	| ItemExpirationSettingsTripleStatIncrease
 	| ItemExpirationSettingsWildBall
 	| ItemExpirationSettingsWildBallPremier;
+
+export type ItemExpirationSettingsTemplateID = ItemExpirationSettingsMasterfileEntry["templateId"];

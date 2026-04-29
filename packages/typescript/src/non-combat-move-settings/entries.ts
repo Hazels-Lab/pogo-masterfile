@@ -212,3 +212,5 @@ export type NonCombatMoveSettingsMasterfileEntry =
 	| NonCombatMoveSettingsV0469MoveBehemothBlade
 	| NonCombatMoveSettingsV0470MoveBehemothBash
 	| NonCombatMoveSettingsV0482MoveDynamaxCannon;
+
+export type NonCombatMoveSettingsTemplateID = NonCombatMoveSettingsMasterfileEntry["templateId"];

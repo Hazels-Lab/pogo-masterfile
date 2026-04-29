@@ -3759,3 +3759,5 @@ export type EvolutionChainDisplaySettingsMasterfileEntry =
 	| EvolutionChainDisplaySettingsV0980PokemonClodsire
 	| EvolutionChainDisplaySettingsV1012PokemonPoltchageist
 	| EvolutionChainDisplaySettingsV1013PokemonSinistcha;
+
+export type EvolutionChainDisplaySettingsTemplateID = EvolutionChainDisplaySettingsMasterfileEntry["templateId"];

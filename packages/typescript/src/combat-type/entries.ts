@@ -167,3 +167,5 @@ export type CombatTypeMasterfileEntry =
 	| CombatTypeRock
 	| CombatTypeSteel
 	| CombatTypeWater;
+
+export type CombatTypeTemplateID = CombatTypeMasterfileEntry["templateId"];

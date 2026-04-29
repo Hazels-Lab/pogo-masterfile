@@ -823,3 +823,5 @@ export type EvolutionQuestTemplateMasterfileEntry =
 	| EvolutionQuestTemplateSylveonEvolutionQuest
 	| EvolutionQuestTemplateUmbreonCdEvolutionQuest
 	| EvolutionQuestTemplateUmbreonEvolutionQuest;
+
+export type EvolutionQuestTemplateTemplateID = EvolutionQuestTemplateMasterfileEntry["templateId"];

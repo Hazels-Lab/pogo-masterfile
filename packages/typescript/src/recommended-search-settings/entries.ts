@@ -105,3 +105,5 @@ export type RecommendedSearchSettingsMasterfileEntry =
 	| RecommendedSearchSettingsFilterLabelShiny
 	| RecommendedSearchSettingsFilterLabelTraded
 	| RecommendedSearchSettingsPokemonTypeNormal;
+
+export type RecommendedSearchSettingsTemplateID = RecommendedSearchSettingsMasterfileEntry["templateId"];

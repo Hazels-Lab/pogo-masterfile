@@ -61,3 +61,5 @@ export type TappableSettingsMasterfileEntry =
 	| TappableSettingsTypeHat
 	| TappableSettingsTypeMaple
 	| TappableSettingsTypePokeball;
+
+export type TappableSettingsTemplateID = TappableSettingsMasterfileEntry["templateId"];

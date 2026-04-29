@@ -19,3 +19,5 @@ export type PokestopInvasionAvailabilitySettingsMasterfileEntry =
 	| PokestopInvasionAvailabilitySettingsThursday
 	| PokestopInvasionAvailabilitySettingsTuesday
 	| PokestopInvasionAvailabilitySettingsWednesday;
+
+export type PokestopInvasionAvailabilitySettingsTemplateID = PokestopInvasionAvailabilitySettingsMasterfileEntry["templateId"];

@@ -70,3 +70,5 @@ export type PokemonScaleSettingsMasterfileEntry =
 	| PokemonScaleSettingsMapPokemonScale
 	| PokemonScaleSettingsNaturalScale
 	| PokemonScaleSettingsRaidBossScale;
+
+export type PokemonScaleSettingsTemplateID = PokemonScaleSettingsMasterfileEntry["templateId"];

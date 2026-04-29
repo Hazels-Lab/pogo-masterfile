@@ -122,3 +122,5 @@ export type PokemonHomeFormReversionsMasterfileEntry =
 	| PokemonHomeFormReversionsV0647PokemonKeldeoHomeFormReversion
 	| PokemonHomeFormReversionsV0648PokemonMeloettaHomeFormReversion
 	| PokemonHomeFormReversionsV0649PokemonGenesectHomeFormReversion;
+
+export type PokemonHomeFormReversionsTemplateID = PokemonHomeFormReversionsMasterfileEntry["templateId"];

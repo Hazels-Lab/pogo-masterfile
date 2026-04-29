@@ -180,3 +180,5 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateStoreRefresh
 	| FeatureGateUpdateTicketsString
 	| FeatureGateVnextPreResponseInputBlockingBehavior;
+
+export type FeatureGateTemplateID = FeatureGateMasterfileEntry["templateId"];

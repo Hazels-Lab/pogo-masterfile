@@ -32,3 +32,5 @@ export type QuestSettingsRouteOfTheDay = S<
 >;
 
 export type QuestSettingsMasterfileEntry = QuestSettingsCatchOfTheDay | QuestSettingsPokestopOfTheDay | QuestSettingsRouteOfTheDay;
+
+export type QuestSettingsTemplateID = QuestSettingsMasterfileEntry["templateId"];

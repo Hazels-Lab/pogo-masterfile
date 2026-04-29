@@ -68,3 +68,5 @@ export type WeatherAffinitiesMasterfileEntry =
 	| WeatherAffinitiesRainy
 	| WeatherAffinitiesSnow
 	| WeatherAffinitiesWindy;
+
+export type WeatherAffinitiesTemplateID = WeatherAffinitiesMasterfileEntry["templateId"];

@@ -2305,3 +2305,5 @@ export type PhotoSetsSettingsProtoMasterfileEntry =
 	| PhotoSetsSettingsProtoUnova
 	| PhotoSetsSettingsProtoWingsPokemon
 	| PhotoSetsSettingsProtoWinterVibes;
+
+export type PhotoSetsSettingsProtoTemplateID = PhotoSetsSettingsProtoMasterfileEntry["templateId"];

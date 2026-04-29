@@ -759,3 +759,5 @@ export type TemporaryEvolutionSettingsMasterfileEntry =
 	| TemporaryEvolutionSettingsV0531PokemonAudino
 	| TemporaryEvolutionSettingsV0687PokemonMalamar
 	| TemporaryEvolutionSettingsV0719PokemonDiancie;
+
+export type TemporaryEvolutionSettingsTemplateID = TemporaryEvolutionSettingsMasterfileEntry["templateId"];

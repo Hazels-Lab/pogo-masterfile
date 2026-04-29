@@ -52,3 +52,5 @@ export type BuddyLevelSettings4 = S<
 >;
 
 export type BuddyLevelSettingsMasterfileEntry = BuddyLevelSettings0 | BuddyLevelSettings1 | BuddyLevelSettings2 | BuddyLevelSettings3 | BuddyLevelSettings4;
+
+export type BuddyLevelSettingsTemplateID = BuddyLevelSettingsMasterfileEntry["templateId"];

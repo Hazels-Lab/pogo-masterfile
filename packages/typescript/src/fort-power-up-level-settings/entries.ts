@@ -44,3 +44,5 @@ export type FortPowerUpLevelSettingsMasterfileEntry =
 	| FortPowerUpLevelSettings1
 	| FortPowerUpLevelSettings2
 	| FortPowerUpLevelSettings3;
+
+export type FortPowerUpLevelSettingsTemplateID = FortPowerUpLevelSettingsMasterfileEntry["templateId"];

@@ -146,3 +146,5 @@ export type IapCategoryDisplayMasterfileEntry =
 	| IapCategoryDisplayTeamChange
 	| IapCategoryDisplayTransporterEnergy
 	| IapCategoryDisplayUpgrades;
+
+export type IapCategoryDisplayTemplateID = IapCategoryDisplayMasterfileEntry["templateId"];

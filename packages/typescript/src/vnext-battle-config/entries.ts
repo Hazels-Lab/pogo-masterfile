@@ -37,3 +37,5 @@ export type VnextBattleConfigVnextBattleConfig = S<
 >;
 
 export type VnextBattleConfigMasterfileEntry = VnextBattleConfigClient | VnextBattleConfigVnextBattleConfig;
+
+export type VnextBattleConfigTemplateID = VnextBattleConfigMasterfileEntry["templateId"];

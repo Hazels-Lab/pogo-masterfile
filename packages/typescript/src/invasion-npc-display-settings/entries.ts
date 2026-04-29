@@ -1396,3 +1396,5 @@ export type InvasionNpcDisplaySettingsMasterfileEntry =
 	| InvasionNpcDisplaySettingsWaterGruntMale
 	| InvasionNpcDisplaySettingsWillow
 	| InvasionNpcDisplaySettingsWillowb;
+
+export type InvasionNpcDisplaySettingsTemplateID = InvasionNpcDisplaySettingsMasterfileEntry["templateId"];

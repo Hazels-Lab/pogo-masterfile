@@ -1697,3 +1697,5 @@ export type VsSeekerLootMasterfileEntry =
 	| VsSeekerLoot8Premium
 	| VsSeekerLoot9Free
 	| VsSeekerLoot9Premium;
+
+export type VsSeekerLootTemplateID = VsSeekerLootMasterfileEntry["templateId"];

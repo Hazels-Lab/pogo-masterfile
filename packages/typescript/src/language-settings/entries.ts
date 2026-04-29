@@ -29,3 +29,5 @@ export type LanguageSettingsLatam = S<
 >;
 
 export type LanguageSettingsMasterfileEntry = LanguageSettingsHindi | LanguageSettingsIndonesian | LanguageSettingsLatam;
+
+export type LanguageSettingsTemplateID = LanguageSettingsMasterfileEntry["templateId"];

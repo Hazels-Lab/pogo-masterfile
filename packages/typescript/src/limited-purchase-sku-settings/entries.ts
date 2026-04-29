@@ -345,3 +345,5 @@ export type LimitedPurchaseSkuSettingsMasterfileEntry =
 	| LimitedPurchaseSkuSettingsIncenseBundleGeneral2Small1
 	| LimitedPurchaseSkuSettingsRemotepassBundleGeneral3Small1
 	| LimitedPurchaseSkuSettingsWeeklyBallsGeneral2Medium1;
+
+export type LimitedPurchaseSkuSettingsTemplateID = LimitedPurchaseSkuSettingsMasterfileEntry["templateId"];

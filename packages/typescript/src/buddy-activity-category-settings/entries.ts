@@ -77,3 +77,5 @@ export type BuddyActivityCategorySettingsMasterfileEntry =
 	| BuddyActivityCategorySettingsRoute
 	| BuddyActivityCategorySettingsSnapshot
 	| BuddyActivityCategorySettingsWalk;
+
+export type BuddyActivityCategorySettingsTemplateID = BuddyActivityCategorySettingsMasterfileEntry["templateId"];

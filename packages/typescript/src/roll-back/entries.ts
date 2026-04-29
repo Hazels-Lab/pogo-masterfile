@@ -8,3 +8,5 @@ export type RollBackBidirectionalFpWeeklyChallengeReward = S<RollBack<"BIDIRECTI
 export type RollBackSingleRollShinyRate = S<RollBack<"SINGLE_ROLL_SHINY_RATE_ROLL_BACK">>;
 
 export type RollBackMasterfileEntry = RollBackAndroidSensors | RollBackBidirectionalFpWeeklyChallengeReward | RollBackSingleRollShinyRate;
+
+export type RollBackTemplateID = RollBackMasterfileEntry["templateId"];

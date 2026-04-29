@@ -1,6 +1,7 @@
 // Generated from Pokémon GO masterfile — group "pokemonSettings", 2460 entries (structural types).
 
 import type { W } from "../_utils";
+import type { PokemonType } from "../type-effective/types";
 
 export interface PokemonSettings<TemplateID extends string = string, TData extends PokemonSettingsData = PokemonSettingsData> {
 	templateId: TemplateID;
@@ -401,22 +402,7 @@ export interface PokemonSettingsData {
 			baseStamina: number;
 		};
 		tempEvoId?: "TEMP_EVOLUTION_MEGA" | "TEMP_EVOLUTION_MEGA_X" | "TEMP_EVOLUTION_MEGA_Y" | "TEMP_EVOLUTION_PRIMAL";
-		typeOverride1?:
-			| "POKEMON_TYPE_BUG"
-			| "POKEMON_TYPE_DARK"
-			| "POKEMON_TYPE_DRAGON"
-			| "POKEMON_TYPE_ELECTRIC"
-			| "POKEMON_TYPE_FIGHTING"
-			| "POKEMON_TYPE_FIRE"
-			| "POKEMON_TYPE_GHOST"
-			| "POKEMON_TYPE_GRASS"
-			| "POKEMON_TYPE_GROUND"
-			| "POKEMON_TYPE_ICE"
-			| "POKEMON_TYPE_NORMAL"
-			| "POKEMON_TYPE_PSYCHIC"
-			| "POKEMON_TYPE_ROCK"
-			| "POKEMON_TYPE_STEEL"
-			| "POKEMON_TYPE_WATER";
+		typeOverride1?: Exclude<PokemonType, "POKEMON_TYPE_FAIRY" | "POKEMON_TYPE_FLYING" | "POKEMON_TYPE_POISON">;
 		typeOverride2?:
 			| "POKEMON_TYPE_DARK"
 			| "POKEMON_TYPE_DRAGON"
@@ -435,44 +421,8 @@ export interface PokemonSettingsData {
 		candyToUnlock: number;
 		stardustToUnlock?: number;
 	};
-	type:
-		| "POKEMON_TYPE_BUG"
-		| "POKEMON_TYPE_DARK"
-		| "POKEMON_TYPE_DRAGON"
-		| "POKEMON_TYPE_ELECTRIC"
-		| "POKEMON_TYPE_FAIRY"
-		| "POKEMON_TYPE_FIGHTING"
-		| "POKEMON_TYPE_FIRE"
-		| "POKEMON_TYPE_FLYING"
-		| "POKEMON_TYPE_GHOST"
-		| "POKEMON_TYPE_GRASS"
-		| "POKEMON_TYPE_GROUND"
-		| "POKEMON_TYPE_ICE"
-		| "POKEMON_TYPE_NORMAL"
-		| "POKEMON_TYPE_POISON"
-		| "POKEMON_TYPE_PSYCHIC"
-		| "POKEMON_TYPE_ROCK"
-		| "POKEMON_TYPE_STEEL"
-		| "POKEMON_TYPE_WATER";
-	type2?:
-		| "POKEMON_TYPE_BUG"
-		| "POKEMON_TYPE_DARK"
-		| "POKEMON_TYPE_DRAGON"
-		| "POKEMON_TYPE_ELECTRIC"
-		| "POKEMON_TYPE_FAIRY"
-		| "POKEMON_TYPE_FIGHTING"
-		| "POKEMON_TYPE_FIRE"
-		| "POKEMON_TYPE_FLYING"
-		| "POKEMON_TYPE_GHOST"
-		| "POKEMON_TYPE_GRASS"
-		| "POKEMON_TYPE_GROUND"
-		| "POKEMON_TYPE_ICE"
-		| "POKEMON_TYPE_NORMAL"
-		| "POKEMON_TYPE_POISON"
-		| "POKEMON_TYPE_PSYCHIC"
-		| "POKEMON_TYPE_ROCK"
-		| "POKEMON_TYPE_STEEL"
-		| "POKEMON_TYPE_WATER";
+	type: PokemonType;
+	type2?: PokemonType;
 	useIrisFlyingPlacement?: boolean;
 	weightStdDev: number;
 }

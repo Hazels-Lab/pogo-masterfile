@@ -1,6 +1,7 @@
 // Generated from Pokémon GO masterfile — group "weatherAffinities", 7 entries (structural types).
 
 import type { W } from "../_utils";
+import type { PokemonType } from "../type-effective/types";
 
 export interface WeatherAffinities<TemplateID extends string = string, TData extends WeatherAffinitiesData = WeatherAffinitiesData> {
 	templateId: TemplateID;
@@ -14,24 +15,14 @@ export interface WeatherAffinities<TemplateID extends string = string, TData ext
 export type WeatherAffinitiesType = W<WeatherAffinities>;
 
 export interface WeatherAffinitiesData {
-	pokemonType: Array<
-		| "POKEMON_TYPE_BUG"
-		| "POKEMON_TYPE_DARK"
-		| "POKEMON_TYPE_DRAGON"
-		| "POKEMON_TYPE_ELECTRIC"
-		| "POKEMON_TYPE_FAIRY"
-		| "POKEMON_TYPE_FIGHTING"
-		| "POKEMON_TYPE_FIRE"
-		| "POKEMON_TYPE_FLYING"
-		| "POKEMON_TYPE_GHOST"
-		| "POKEMON_TYPE_GRASS"
-		| "POKEMON_TYPE_GROUND"
-		| "POKEMON_TYPE_ICE"
-		| "POKEMON_TYPE_NORMAL"
-		| "POKEMON_TYPE_POISON"
-		| "POKEMON_TYPE_PSYCHIC"
-		| "POKEMON_TYPE_ROCK"
-		| "POKEMON_TYPE_STEEL"
-		| "POKEMON_TYPE_WATER"
-	>;
+	pokemonType: Array<PokemonType>;
 }
+
+export type WeatherAffinity =
+	| "WEATHER_AFFINITY_CLEAR"
+	| "WEATHER_AFFINITY_FOG"
+	| "WEATHER_AFFINITY_OVERCAST"
+	| "WEATHER_AFFINITY_PARTLY_CLOUDY"
+	| "WEATHER_AFFINITY_RAINY"
+	| "WEATHER_AFFINITY_SNOW"
+	| "WEATHER_AFFINITY_WINDY";

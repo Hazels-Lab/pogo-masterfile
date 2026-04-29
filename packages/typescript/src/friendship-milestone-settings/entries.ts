@@ -139,3 +139,5 @@ export type FriendshipMilestoneSettingsMasterfileEntry =
 	| FriendshipMilestoneSettings3
 	| FriendshipMilestoneSettings4
 	| FriendshipMilestoneSettings5;
+
+export type FriendshipMilestoneSettingsTemplateID = FriendshipMilestoneSettingsMasterfileEntry["templateId"];

@@ -1992,3 +1992,5 @@ export type ClientQuestTemplateMasterfileEntry =
 	| ClientQuestTemplateWeeklyChallengePartyQuestWeek2
 	| ClientQuestTemplateWeeklyChallengePartyQuestWeek3
 	| ClientQuestTemplateWeeklyChallengePartyQuestWeek4;
+
+export type ClientQuestTemplateTemplateID = ClientQuestTemplateMasterfileEntry["templateId"];

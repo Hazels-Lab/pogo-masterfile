@@ -125,3 +125,5 @@ export type PokemonUpgradesSettings = S<
 >;
 
 export type PokemonUpgradesMasterfileEntry = PokemonUpgradesOverrideSettingsV0890PokemonEternatus | PokemonUpgradesSettings;
+
+export type PokemonUpgradesTemplateID = PokemonUpgradesMasterfileEntry["templateId"];

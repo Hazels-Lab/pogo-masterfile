@@ -56,3 +56,5 @@ export type PokemonHomeEnergyCostsMasterfileEntry =
 	| PokemonHomeEnergyCostsMythic
 	| PokemonHomeEnergyCostsNormal
 	| PokemonHomeEnergyCostsUltraBeast;
+
+export type PokemonHomeEnergyCostsTemplateID = PokemonHomeEnergyCostsMasterfileEntry["templateId"];

@@ -1,6 +1,7 @@
 // Generated from Pokémon GO masterfile — group "combatNpcTrainer", 9 entries (structural types).
 
 import type { W } from "../_utils";
+import type { TrainerPersonality } from "../combat-npc-personality/types";
 
 export interface CombatNpcTrainer<TemplateID extends string = string, TData extends CombatNpcTrainerData = CombatNpcTrainerData> {
 	templateId: TemplateID;
@@ -38,7 +39,7 @@ export interface CombatNpcTrainerData {
 	];
 	backdropImageBundle: "combat_blanche_backdrop" | "combat_candela_backdrop" | "combat_spark_backdrop";
 	combatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT" | "COMBAT_LEAGUE_DEFAULT_MASTER" | "COMBAT_LEAGUE_DEFAULT_ULTRA";
-	combatPersonalityId: "TRAINER_PERSONALITY_EASY" | "TRAINER_PERSONALITY_HARD" | "TRAINER_PERSONALITY_MEDIUM";
+	combatPersonalityId: TrainerPersonality;
 	iconUrl:
 		| "https://storage.googleapis.com/prod-public-images/Icon_Blanche.png"
 		| "https://storage.googleapis.com/prod-public-images/Icon_Candela.png"
@@ -47,3 +48,14 @@ export interface CombatNpcTrainerData {
 	trainerQuote: "combat_blanche_quote" | "combat_candela_quote" | "combat_spark_quote";
 	trainerTitle: "combat_blanche_title" | "combat_candela_title" | "combat_spark_title";
 }
+
+export type Trainer =
+	| "TRAINER_BLANCHE_GREAT"
+	| "TRAINER_BLANCHE_MASTER"
+	| "TRAINER_BLANCHE_ULTRA"
+	| "TRAINER_CANDELA_GREAT"
+	| "TRAINER_CANDELA_MASTER"
+	| "TRAINER_CANDELA_ULTRA"
+	| "TRAINER_SPARK_GREAT"
+	| "TRAINER_SPARK_MASTER"
+	| "TRAINER_SPARK_ULTRA";

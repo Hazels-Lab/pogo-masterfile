@@ -167,3 +167,5 @@ export type TypeEffectiveMasterfileEntry =
 	| TypeEffectiveRock
 	| TypeEffectiveSteel
 	| TypeEffectiveWater;
+
+export type TypeEffectiveTemplateID = TypeEffectiveMasterfileEntry["templateId"];

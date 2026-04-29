@@ -14,3 +14,5 @@ export type VsSeekerPokemonRewardsPremium = S<
 >;
 
 export type VsSeekerPokemonRewardsMasterfileEntry = VsSeekerPokemonRewardsFree | VsSeekerPokemonRewardsPremium;
+
+export type VsSeekerPokemonRewardsTemplateID = VsSeekerPokemonRewardsMasterfileEntry["templateId"];
