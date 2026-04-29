@@ -405,3 +405,35 @@ describe("emitTopLevelVariants", () => {
 		expect(output).not.toContain("export type *");
 	});
 });
+
+import { buildPromotionRegistry } from "./promoted-unions.ts";
+
+describe("emitGroupTypes — promotion alias declaration", () => {
+	test("appends the promoted alias when the current group is itself a source", () => {
+		const groups = groupEntries(MOCK_MASTERFILE);
+		const registry = buildPromotionRegistry(groups);
+		const typeEffective = groups.get("typeEffective")!;
+		const output = emitGroupTypes(typeEffective, registry);
+		// MOCK_MASTERFILE has typeEffective with templateIds POKEMON_TYPE_BUG / POKEMON_TYPE_DARK.
+		expect(output).toContain("export type PokemonType =");
+		expect(output).toContain(`"POKEMON_TYPE_BUG"`);
+		expect(output).toContain(`"POKEMON_TYPE_DARK"`);
+	});
+
+	test("does not emit an alias for a group that does not qualify", () => {
+		const groups = groupEntries(MOCK_MASTERFILE);
+		const registry = buildPromotionRegistry(groups);
+		const pokemonSettings = groups.get("pokemonSettings")!;
+		const output = emitGroupTypes(pokemonSettings, registry);
+		// pokemonSettings has no shared underscore-aligned prefix → no alias.
+		expect(output).not.toContain("export type Pokemon =");
+	});
+
+	test("backwards compatible: omitting registry still works", () => {
+		const groups = groupEntries(MOCK_MASTERFILE);
+		const typeEffective = groups.get("typeEffective")!;
+		const output = emitGroupTypes(typeEffective);
+		expect(output).toContain("export interface TypeEffective<");
+		expect(output).not.toContain("export type PokemonType =");
+	});
+});

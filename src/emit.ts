@@ -21,6 +21,7 @@ import { inferJsonType, inferJsonTypes, widenType } from "./infer.ts";
 import type { InvariantTree } from "./invariants.ts";
 import { detectInvariants, invariantsToInferredType, stripInvariantsFromValue, stripInvariantsFromWidened } from "./invariants.ts";
 import { aliasSuffix, deriveGroupAliases, groupName, kebabCase, pascalCase } from "./naming.ts";
+import { type PromotionContext, type PromotionRegistry } from "./promoted-unions.ts";
 
 // Build `${gName}${suffix}` variant alias declarations for a list of entries (sorted by templateId).
 // Returns the AST statements and the type names emitted, for use in barrel unions.
@@ -163,7 +164,7 @@ export function emitTypesFile(discriminators: string[]): string {
 	return file.render();
 }
 
-export function emitGroupTypes(group: Group): string {
+export function emitGroupTypes(group: Group, registry: PromotionRegistry = []): string {
 	const gName = groupName(group.discriminator);
 	const invariants = detectInvariants(group);
 	const xdataType = stripInvariantsFromWidened(widenType(inferGroupPayloadType(group)), invariants);
@@ -171,12 +172,27 @@ export function emitGroupTypes(group: Group): string {
 	const entryCount = group.entries.length;
 	const entryWord = entryCount === 1 ? ENTRY_LOWER : ENTRIES_LOWER;
 
+	const ctx: PromotionContext = { registry, currentGroup: group, imports: new Map() };
+
+	// Compute body AST nodes first; this populates ctx.imports as a side effect.
+	const dataPropType: ts.TypeNode =
+		invariants.size > 0 ? T.intersection(T.ref("TData"), inferredToType(invariantsToInferredType(invariants), ctx)) : T.ref("TData");
+
+	const xdataProperties = xdataType.kind === "object" ? xdataType.properties : [];
+	const xdataMembers = xdataProperties.map((p) => N.propSignature(p.name, inferredToType(p.type, ctx), p.optional));
+
 	const file = new AstFileBuilder()
 		.header(`Generated from Pokémon GO masterfile — group "${group.discriminator}", ${entryCount} ${entryWord} (structural types).`)
-		.importNamed("../_utils", [WIDEN], true)
-		.blank();
+		.importNamed("../_utils", [WIDEN], true);
 
-	const dataPropType: ts.TypeNode = invariants.size > 0 ? T.intersection(T.ref("TData"), inferredToType(invariantsToInferredType(invariants))) : T.ref("TData");
+	// Cross-group imports come next (Task 9 wires the consumer end of this).
+	const sortedImports = [...ctx.imports.entries()]
+		.filter(([disc]) => disc !== group.discriminator)
+		.sort(([a], [b]) => a.localeCompare(b));
+	for (const [disc, names] of sortedImports) {
+		file.importNamed(`../${kebabCase(disc)}/${TYPES_LOWER}`, [...names].sort(), true);
+	}
+	file.blank();
 
 	file.exportInterface(
 		gName,
@@ -199,11 +215,13 @@ export function emitGroupTypes(group: Group): string {
 	file.exportTypeAlias(`${gName}${TYPE}`, T.ref(WIDEN, [T.ref(gName)]));
 	file.blank();
 
-	const xdataProperties = xdataType.kind === "object" ? xdataType.properties : [];
-	file.exportInterface(
-		xdataName,
-		xdataProperties.map((p) => N.propSignature(p.name, inferredToType(p.type), p.optional)),
-	);
+	file.exportInterface(xdataName, xdataMembers);
+
+	const ownEntry = registry.find((e) => e.group === group);
+	if (ownEntry) {
+		file.blank();
+		file.exportTypeAlias(ownEntry.aliasName, T.union(...ownEntry.members.map((m) => T.literal(m))));
+	}
 
 	return file.render();
 }
