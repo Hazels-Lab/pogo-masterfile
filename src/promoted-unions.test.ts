@@ -1,6 +1,8 @@
 import { describe, expect, test } from "bun:test";
+import ts from "typescript";
+import { inferredToType } from "./builder.ts";
 import type { Group } from "./group.ts";
-import { buildPromotionRegistry } from "./promoted-unions.ts";
+import { buildPromotionRegistry, buildPromotionRegistry as build, type PromotionContext, tryPromote } from "./promoted-unions.ts";
 
 function group(disc: string, ids: string[]): Group {
 	return {
@@ -98,8 +100,6 @@ describe("buildPromotionRegistry — collision resolution", () => {
 	});
 });
 
-import { buildPromotionRegistry as build, tryPromote } from "./promoted-unions.ts";
-
 describe("tryPromote — exact match", () => {
 	const groups = makeGroups(group("typeEffective", ["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK", "POKEMON_TYPE_FIRE"]));
 	const registry = build(groups);
@@ -192,10 +192,6 @@ describe("tryPromote — multi-match resolution", () => {
 		expect((result as { sourceGroup: Group }).sourceGroup.discriminator).toBe("aaSuper");
 	});
 });
-
-import ts from "typescript";
-import { inferredToType } from "./builder.ts";
-import type { PromotionContext } from "./promoted-unions.ts";
 
 function printNode(node: ts.TypeNode): string {
 	const printer = ts.createPrinter({ newLine: ts.NewLineKind.LineFeed });

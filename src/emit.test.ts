@@ -1,11 +1,12 @@
 /** biome-ignore-all lint/suspicious/noTemplateCurlyInString: valid type generating tests */
 
 import { describe, expect, test } from "bun:test";
-import { emitEntriesBarrel, emitEntriesFlat, emitEntryFile, emitSingletonsFile, emitTopLevelVariants, emitTypesFile } from "./emit.ts";
+import { emitEntriesBarrel, emitEntriesFlat, emitEntryFile, emitGroupTypes, emitSingletonsFile, emitTopLevelVariants, emitTypesFile } from "./emit.ts";
 import { MOCK_MASTERFILE } from "./fixtures.ts";
 import type { Group } from "./group.ts";
 import { groupEntries } from "./group.ts";
 import { kebabCase } from "./naming.ts";
+import { buildPromotionRegistry } from "./promoted-unions.ts";
 
 describe("emitMiscFile", () => {
 	test("emits a deterministic header for the misc file", () => {
@@ -207,8 +208,6 @@ describe("emitIndexFile", () => {
 		expect(miscIdx).toBeGreaterThan(typeIdx);
 	});
 });
-
-import { emitGroupTypes } from "./emit.ts";
 
 describe("emitGroupIndex", () => {
 	test("emits header noting it's the group's structural types", () => {
@@ -412,8 +411,6 @@ describe("emitTopLevelVariants", () => {
 	});
 });
 
-import { buildPromotionRegistry } from "./promoted-unions.ts";
-
 describe("emitGroupTypes — promotion alias declaration", () => {
 	test("appends the promoted alias when the current group is itself a source", () => {
 		const groups = groupEntries(MOCK_MASTERFILE);
@@ -460,7 +457,10 @@ describe("emitGroupTypes — promotion alias declaration", () => {
 				{ templateId: "MOVE_Y", data: { templateId: "MOVE_Y", moveSettings: { pokemonType: "POKEMON_TYPE_DARK" } } },
 			],
 		};
-		const groups = new Map<string, Group>([["typeEffective", groupA], ["moveSettings", groupB]]);
+		const groups = new Map<string, Group>([
+			["typeEffective", groupA],
+			["moveSettings", groupB],
+		]);
 		const registry = buildPromotionRegistry(groups);
 		const output = emitGroupTypes(groupB, registry);
 		expect(output).toContain(`import type { PokemonType } from "../type-effective/types";`);
@@ -485,7 +485,10 @@ describe("emitGroupTypes — promotion alias declaration", () => {
 				{ templateId: "C_THR", data: { templateId: "C_THR", consumer: { kind: "KIND_CCC" } } },
 			],
 		};
-		const groups = new Map<string, Group>([["kindThing", groupA], ["consumer", groupB]]);
+		const groups = new Map<string, Group>([
+			["kindThing", groupA],
+			["consumer", groupB],
+		]);
 		const registry = buildPromotionRegistry(groups);
 		const output = emitGroupTypes(groupB, registry);
 		expect(output).toContain(`import type { Kind } from "../kind-thing/types";`);
