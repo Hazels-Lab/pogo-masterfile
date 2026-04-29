@@ -1,3 +1,5 @@
+import ts from "typescript";
+import { AstFileBuilder, T } from "./builder.ts";
 import {
 	BARREL_FILE,
 	BARREL_TYPE,
@@ -158,31 +160,22 @@ function inferGroupPayloadType(group: Group): InferredType {
 }
 
 export function emitTypesFile(discriminators: string[]): string {
-	const sorted = [...discriminators].sort();
-	const lines: string[] = [`// Generated from Pokémon GO masterfile — index of all groups.`, ``];
+	const sorted = discriminators.toSorted();
+	const file = new AstFileBuilder().header("Generated from Pokémon GO masterfile — index of all groups.");
 
 	for (const disc of sorted) {
 		const name = groupName(disc);
-		lines.push(`${IMPORT} ${TYPE_LOWER} { ${name}, ${name}${TYPE} } from "./${kebabCase(disc)}/${TYPES_LOWER}";`);
+		file.importNamed(`./${kebabCase(disc)}/${TYPES_LOWER}`, [name, `${name}${TYPE}`], true);
 	}
-	for (const disc of sorted) {
-		lines.push(`${EXPORT} ${TYPE_LOWER} * from "./${kebabCase(disc)}/${TYPES_LOWER}";`);
-	}
-	lines.push(``);
 
-	lines.push(``);
-	lines.push(`${EXPORT} ${TYPE_LOWER} ${BARREL_TYPE}${ENTRY}${TYPE} =`);
 	for (const disc of sorted) {
-		const name = groupName(disc);
-		lines.push(`\t| ${name}`);
+		file.exportTypeStar(`./${kebabCase(disc)}/${TYPES_LOWER}`);
 	}
-	lines.push(``);
-	lines.push(`${EXPORT} ${TYPE_LOWER} ${BARREL_TYPE}${TYPE} =`);
-	for (const disc of sorted) {
-		const name = groupName(disc);
-		lines.push(`\t| ${name}${TYPE}`);
-	}
-	return lines.join("\n");
+
+	file.exportTypeAlias(`${BARREL_TYPE}${ENTRY}${TYPE}`, ts.factory.createUnionTypeNode(sorted.map((disc) => T.ref(groupName(disc)))));
+	file.exportTypeAlias(`${BARREL_TYPE}${TYPE}`, ts.factory.createUnionTypeNode(sorted.map((disc) => T.ref(`${groupName(disc)}${TYPE}`))));
+
+	return file.render();
 }
 
 export function emitGroupTypes(group: Group): string {
