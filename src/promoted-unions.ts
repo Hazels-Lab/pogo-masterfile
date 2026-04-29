@@ -34,14 +34,18 @@ export type PromotionResult =
 export function tryPromote(inline: ReadonlySet<string>, registry: PromotionRegistry, currentGroup: Group | null): PromotionResult | null {
 	if (inline.size <= 1) return null;
 
-	const candidates = registry.filter((entry) => {
-		if (currentGroup !== null && entry.group === currentGroup) return false;
-		return isSubsetOrEqual(inline, entry.memberSet);
-	});
-	if (candidates.length === 0) return null;
-
-	candidates.sort((a, b) => a.memberSet.size - b.memberSet.size || a.aliasName.localeCompare(b.aliasName));
-	const best = candidates[0]!;
+	// Single linear scan tracking smallest-containing-group; alphabetical aliasName
+	// tiebreak comes for free because `registry` is alpha-sorted at build time and
+	// we use strict `<` (so the first entry of any given size sticks).
+	let best: PromotionRegistryEntry | null = null;
+	for (const entry of registry) {
+		if (currentGroup !== null && entry.group === currentGroup) continue;
+		if (!isSubsetOrEqual(inline, entry.memberSet)) continue;
+		if (best === null || entry.memberSet.size < best.memberSet.size) {
+			best = entry;
+		}
+	}
+	if (best === null) return null;
 
 	if (inline.size === best.memberSet.size) {
 		return { kind: "ref", aliasName: best.aliasName, sourceGroup: best.group };
