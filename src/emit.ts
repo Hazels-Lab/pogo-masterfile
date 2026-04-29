@@ -1,19 +1,15 @@
 import ts from "typescript";
-import { AstFileBuilder, T } from "./builder.ts";
+import { AstFileBuilder, inferredToType, N, T } from "./builder.ts";
 import {
 	BARREL_FILE,
 	BARREL_TYPE,
 	ENTRIES_LOWER,
 	ENTRY,
 	ENTRY_LOWER,
-	EXPORT,
-	IMPORT,
-	INTERFACE,
 	SIMPLIFY,
 	SINGLETONS,
 	TEMPLATE_GENERIC,
 	TYPE,
-	TYPE_LOWER,
 	TYPES,
 	TYPES_LOWER,
 	WIDEN,
@@ -25,51 +21,48 @@ import { inferJsonType, inferJsonTypes, widenType } from "./infer.ts";
 import type { InvariantTree } from "./invariants.ts";
 import { detectInvariants, invariantsToInferredType, stripInvariantsFromValue, stripInvariantsFromWidened } from "./invariants.ts";
 import { aliasSuffix, deriveGroupAliases, groupName, kebabCase, pascalCase } from "./naming.ts";
-import { indentLines, renderProperty, renderPropertyName, renderType, renderXDataInterface } from "./render-types.ts";
 
-// Standard file header: comment line, blank, imports, blank.
-function emitFileHeader(comment: string, imports: string[]): string[] {
-	return [`// ${comment}`, ``, ...imports, ``];
-}
-
-// Render `${gName}${suffix}` variant aliases for a list of entries (sorted by templateId).
-// Returns the rendered lines and the type names emitted, for use in barrel unions.
-function renderEntryVariants(
+// Build `${gName}${suffix}` variant alias declarations for a list of entries (sorted by templateId).
+// Returns the AST statements and the type names emitted, for use in barrel unions.
+function entryVariantStatements(
 	entries: Entry[],
 	gName: string,
 	group: Group,
 	aliases: Map<string, string>,
 	invariants: InvariantTree,
-): { lines: string[]; typeNames: string[] } {
+): { statements: ts.Statement[]; typeNames: string[] } {
 	const sortedIds = [...entries].map((e) => e.templateId).sort();
 	const entriesById = new Map(entries.map((e) => [e.templateId, e]));
-	const lines: string[] = [];
+	const statements: ts.Statement[] = [];
 	const typeNames: string[] = [];
 	for (const id of sortedIds) {
 		const entry = entriesById.get(id)!;
 		const variantSuffix = aliases.get(id)!;
-		typeNames.push(`${gName}${variantSuffix}`);
-		lines.push(...renderVariantAlias(gName, entry, group, variantSuffix, invariants));
+		const typeName = `${gName}${variantSuffix}`;
+		typeNames.push(typeName);
+		statements.push(variantAliasDeclaration(typeName, gName, entry, group, invariants));
 	}
-	return { lines, typeNames };
+	return { statements, typeNames };
 }
 
-function renderVariantAlias(gName: string, entry: Entry, group: Group, variantSuffix: string, invariants: InvariantTree): string[] {
-	const typeName = `${gName}${variantSuffix}`;
+// `export type Name = S<G<"id">>` for empty payloads, `S<G<"id", { ...payload }>>` otherwise.
+function variantAliasDeclaration(typeName: string, gName: string, entry: Entry, group: Group, invariants: InvariantTree): ts.TypeAliasDeclaration {
 	const payload = entry.data[group.discriminator];
 	const stripped = stripInvariantsFromValue(payload, invariants);
-
 	const isEmpty = !isJsonObject(stripped) || Object.keys(stripped).length === 0;
-	if (isEmpty) {
-		return [`${EXPORT} ${TYPE_LOWER} ${typeName} = ${SIMPLIFY}<${gName}<"${entry.templateId}">>;`];
-	}
 
-	const literalLines = renderType(inferJsonType(stripped));
-	return [`${EXPORT} ${TYPE_LOWER} ${typeName} = ${SIMPLIFY}<${gName}<`, `\t"${entry.templateId}",`, ...indentLines(literalLines, "\t"), `>>;`];
+	const groupArgs: ts.TypeNode[] = [T.literal(entry.templateId)];
+	if (!isEmpty) groupArgs.push(inferredToType(inferJsonType(stripped)));
+
+	return ts.factory.createTypeAliasDeclaration(
+		[ts.factory.createModifier(ts.SyntaxKind.ExportKeyword)],
+		ts.factory.createIdentifier(typeName),
+		undefined,
+		T.ref(SIMPLIFY, [T.ref(gName, groupArgs)]),
+	);
 }
 
 export function emitSingletonsFile(bucketName: string, singletons: Group[]): string {
-	// Precompute names + stub flag so the sort comparator is cheap.
 	const named = singletons.map((g) => {
 		const entry = g.entries[0]!;
 		const dataKeys = Object.keys(entry.data).filter((k) => k !== "templateId");
@@ -79,41 +72,32 @@ export function emitSingletonsFile(bucketName: string, singletons: Group[]): str
 	});
 	named.sort((a, b) => a.name.localeCompare(b.name));
 
-	const lines: string[] = [`// Generated from Pokémon GO masterfile — ${SINGLETONS} ${ENTRIES_LOWER} (no shared discriminator).`, ``];
+	const file = new AstFileBuilder().header(`Generated from Pokémon GO masterfile — ${SINGLETONS} ${ENTRIES_LOWER} (no shared discriminator).`);
+
 	for (const { group, entry, name, isStub } of named) {
-		lines.push(`${EXPORT} ${INTERFACE} ${name} {`);
-		lines.push(`\ttemplateId: "${entry.templateId}";`);
-		lines.push(`\tdata: {`);
-		lines.push(`\t\ttemplateId: "${entry.templateId}";`);
+		const dataMembers: { name: string; type: ts.TypeNode; optional?: boolean }[] = [{ name: "templateId", type: T.literal(entry.templateId) }];
 		if (!isStub) {
 			const payloadType = inferJsonType(entry.data[group.discriminator]);
-			lines.push(...renderProperty(group.discriminator, payloadType, false, "\t\t"));
+			dataMembers.push({ name: group.discriminator, type: inferredToType(payloadType) });
 		}
-		lines.push(`\t};`);
-		lines.push(`}`);
-		lines.push(``);
+		file.exportInterface(name, [N.propSignature("templateId", T.literal(entry.templateId)), N.propSignature("data", T.objectLiteral(dataMembers))]);
+		file.blank();
 	}
 
 	const typeName = pascalCase(bucketName);
-	// Global union of all singletons + stubs, for `${BARREL_TYPE}${ENTRY}` composition.
+	const unionTypeName = `${SINGLETONS}${typeName}${BARREL_TYPE}${ENTRY}`;
 	if (named.length === 0) {
-		lines.push(`${EXPORT} ${TYPE_LOWER} ${SINGLETONS}${typeName}${BARREL_TYPE}${ENTRY} = never;`);
+		file.exportTypeAlias(unionTypeName, T.never());
 	} else {
-		lines.push(`${EXPORT} ${TYPE_LOWER} ${SINGLETONS}${typeName}${BARREL_TYPE}${ENTRY} =`);
-		named.forEach(({ name }, i) => {
-			const suffix = i === named.length - 1 ? ";" : "";
-			lines.push(`\t| ${name}${suffix}`);
-		});
+		file.exportTypeAlias(unionTypeName, T.union(...named.map(({ name }) => T.ref(name))));
 	}
-	lines.push(``);
-	lines.push(`${EXPORT} ${TYPE_LOWER} ${SINGLETONS}${typeName}${TEMPLATE_GENERIC} = ${SINGLETONS}${typeName}${BARREL_TYPE}${ENTRY}["templateId"];`);
-	lines.push(``);
+	file.blank();
+	file.exportTypeAlias(`${SINGLETONS}${typeName}${TEMPLATE_GENERIC}`, T.indexedAccess(T.ref(unionTypeName), T.literal("templateId")));
 
-	return lines.join("\n");
+	return file.render();
 }
 
 export function emitSingletonsTypeFile(singletons: Group[]): string {
-	// Precompute names + stub flag so the sort comparator is cheap.
 	const named = singletons.map((g) => {
 		const entry = g.entries[0]!;
 		const dataKeys = Object.keys(entry.data).filter((k) => k !== "templateId");
@@ -123,36 +107,34 @@ export function emitSingletonsTypeFile(singletons: Group[]): string {
 	});
 	named.sort((a, b) => a.name.localeCompare(b.name));
 
-	const lines: string[] = [
-		`// Generated from Pokémon GO masterfile — ${SINGLETONS} ${TYPES} (no shared discriminator).`,
-		``,
-		`${IMPORT} ${TYPE_LOWER} {`,
-		named.map((s) => s.name).join(",\n"),
-		`} from "./${ENTRIES_LOWER}"`,
-		``,
-		`${IMPORT} ${TYPE_LOWER} { ${WIDEN} } from "../_utils";`,
-		"",
-		...named.map((s) => `${EXPORT} ${TYPE_LOWER} ${s.name}${TYPE} = ${WIDEN}<${s.name}>;`),
-		"",
-	];
+	const file = new AstFileBuilder().header(`Generated from Pokémon GO masterfile — ${SINGLETONS} ${TYPES} (no shared discriminator).`);
 
-	// Global union of all singletons + stubs, for `${BARREL_TYPE}${ENTRY}` composition.
-	if (named.length === 0) {
-		lines.push(`${EXPORT} ${TYPE_LOWER} ${SINGLETONS} = never;`);
-		lines.push(`${EXPORT} ${TYPE_LOWER} ${SINGLETONS}${TYPE} = never;`);
-	} else {
-		lines.push(`${EXPORT} ${TYPE_LOWER} ${SINGLETONS} =`);
-		named.forEach(({ name }, i) => {
-			const suffix = i === named.length - 1 ? ";" : "";
-			lines.push(`\t| ${name}${TYPE}${suffix}`);
-		});
+	if (named.length > 0) {
+		file.importNamed(
+			`./${ENTRIES_LOWER}`,
+			named.map((s) => s.name),
+			true,
+		);
 	}
-	lines.push(``);
-	lines.push(`/** Same as @see {${SINGLETONS}} */`);
-	lines.push(`${EXPORT} ${TYPE_LOWER} ${SINGLETONS}${TYPE} = ${SINGLETONS};`);
-	lines.push(``);
+	file.importNamed("../_utils", [WIDEN], true);
+	file.blank();
 
-	return lines.join("\n");
+	for (const { name } of named) {
+		file.exportTypeAlias(`${name}${TYPE}`, T.ref(WIDEN, [T.ref(name)]));
+	}
+	file.blank();
+
+	if (named.length === 0) {
+		file.exportTypeAlias(SINGLETONS, T.never());
+		file.exportTypeAlias(`${SINGLETONS}${TYPE}`, T.never());
+	} else {
+		file.exportTypeAlias(SINGLETONS, T.union(...named.map(({ name }) => T.ref(`${name}${TYPE}`))));
+		file.blank();
+		file.raw(`/** Same as @see {${SINGLETONS}} */`);
+		file.exportTypeAlias(`${SINGLETONS}${TYPE}`, T.ref(SINGLETONS));
+	}
+
+	return file.render();
 }
 
 function inferGroupPayloadType(group: Group): InferredType {
@@ -167,13 +149,16 @@ export function emitTypesFile(discriminators: string[]): string {
 		const name = groupName(disc);
 		file.importNamed(`./${kebabCase(disc)}/${TYPES_LOWER}`, [name, `${name}${TYPE}`], true);
 	}
+	file.blank();
 
 	for (const disc of sorted) {
 		file.exportTypeStar(`./${kebabCase(disc)}/${TYPES_LOWER}`);
 	}
+	file.blank();
 
-	file.exportTypeAlias(`${BARREL_TYPE}${ENTRY}${TYPE}`, ts.factory.createUnionTypeNode(sorted.map((disc) => T.ref(groupName(disc)))));
-	file.exportTypeAlias(`${BARREL_TYPE}${TYPE}`, ts.factory.createUnionTypeNode(sorted.map((disc) => T.ref(`${groupName(disc)}${TYPE}`))));
+	file.exportTypeAlias(`${BARREL_TYPE}${ENTRY}${TYPE}`, T.union(...sorted.map((disc) => T.ref(groupName(disc)))));
+	file.blank();
+	file.exportTypeAlias(`${BARREL_TYPE}${TYPE}`, T.union(...sorted.map((disc) => T.ref(`${groupName(disc)}${TYPE}`))));
 
 	return file.render();
 }
@@ -182,57 +167,45 @@ export function emitGroupTypes(group: Group): string {
 	const gName = groupName(group.discriminator);
 	const invariants = detectInvariants(group);
 	const xdataType = stripInvariantsFromWidened(widenType(inferGroupPayloadType(group)), invariants);
-
 	const xdataName = `${gName}Data`;
-	const discName = renderPropertyName(group.discriminator);
 	const entryCount = group.entries.length;
 	const entryWord = entryCount === 1 ? ENTRY_LOWER : ENTRIES_LOWER;
-	const lines: string[] = [
-		`// Generated from Pokémon GO masterfile — group "${group.discriminator}", ${entryCount} ${entryWord} (structural types).`,
-		``,
-		`${IMPORT} ${TYPE_LOWER} { ${WIDEN} } from "../_utils"`,
-		``,
-	];
 
-	lines.push(
-		`${EXPORT} ${INTERFACE} ${gName}<`,
-		`\t${TEMPLATE_GENERIC} extends string = string,`,
-		`\tTData extends ${xdataName} = ${xdataName},`,
-		`> {`,
-		`\ttemplateId: ${TEMPLATE_GENERIC};`,
-		`\tdata: {`,
-		`\t\ttemplateId: ${TEMPLATE_GENERIC};`,
+	const file = new AstFileBuilder()
+		.header(`Generated from Pokémon GO masterfile — group "${group.discriminator}", ${entryCount} ${entryWord} (structural types).`)
+		.importNamed("../_utils", [WIDEN], true)
+		.blank();
+
+	const dataPropType: ts.TypeNode = invariants.size > 0 ? T.intersection(T.ref("TData"), inferredToType(invariantsToInferredType(invariants))) : T.ref("TData");
+
+	file.exportInterface(
+		gName,
+		[
+			N.propSignature("templateId", T.ref(TEMPLATE_GENERIC)),
+			N.propSignature(
+				"data",
+				T.objectLiteral([
+					{ name: "templateId", type: T.ref(TEMPLATE_GENERIC) },
+					{ name: group.discriminator, type: dataPropType },
+				]),
+			),
+		],
+		[
+			{ name: TEMPLATE_GENERIC, constraint: T.string(), default: T.string() },
+			{ name: "TData", constraint: T.ref(xdataName), default: T.ref(xdataName) },
+		],
 	);
 
-	if (invariants.size === 0) {
-		lines.push(`\t\t${discName}: TData;`);
-	} else {
-		const invariantsLines = renderType(invariantsToInferredType(invariants));
-		if (invariantsLines.length === 1) {
-			lines.push(`\t\t${discName}: TData & ${invariantsLines[0]};`);
-		} else {
-			lines.push(`\t\t${discName}: TData & ${invariantsLines[0]}`, ...indentLines(invariantsLines.slice(1), "\t\t", ";"));
-		}
-	}
+	file.exportTypeAlias(`${gName}${TYPE}`, T.ref(WIDEN, [T.ref(gName)]));
+	file.blank();
 
-	lines.push(`\t};`, `}`);
-	lines.push(`${EXPORT} ${TYPE_LOWER} ${gName}${TYPE} = ${WIDEN}<${gName}>;`, ``);
-	lines.push(...renderXDataInterface(xdataName, xdataType), ``);
-	return lines.join("\n");
-}
+	const xdataProperties = xdataType.kind === "object" ? xdataType.properties : [];
+	file.exportInterface(
+		xdataName,
+		xdataProperties.map((p) => N.propSignature(p.name, inferredToType(p.type), p.optional)),
+	);
 
-function renderAllVariantAliases(group: Group): string[] {
-	const gName = groupName(group.discriminator);
-	const sortedIds = [...group.entries].map((e) => e.templateId).sort();
-	const aliases = deriveGroupAliases(sortedIds, gName);
-	const invariants = detectInvariants(group);
-	const { lines, typeNames } = renderEntryVariants(group.entries, gName, group, aliases, invariants);
-	lines.push(``, renderVariantBarrelType(gName, typeNames));
-	return lines;
-}
-
-function renderVariantBarrelType(typePrefix: string, typeNames: string[]) {
-	return `${EXPORT} ${TYPE_LOWER} ${typePrefix}${BARREL_TYPE}${ENTRY} = ${typeNames.join("| ")}`;
+	return file.render();
 }
 
 export function emitEntriesFlat(group: Group): string {
@@ -241,12 +214,22 @@ export function emitEntriesFlat(group: Group): string {
 	const entryCount = group.entries.length;
 	const entryWord = entryCount === 1 ? ENTRY_LOWER : ENTRIES_LOWER;
 
-	const lines = emitFileHeader(`Generated from Pokémon GO masterfile — group "${group.discriminator}", ${entryCount} ${entryWord} (variant aliases).`, [
-		`${IMPORT} ${TYPE_LOWER} { ${SIMPLIFY} } from "../_utils";`,
-		`${IMPORT} ${TYPE_LOWER} { ${gName}, ${xdataName} } from "./${BARREL_FILE}";`,
-	]);
-	lines.push(...renderAllVariantAliases(group), ``);
-	return lines.join("\n");
+	const file = new AstFileBuilder()
+		.header(`Generated from Pokémon GO masterfile — group "${group.discriminator}", ${entryCount} ${entryWord} (variant aliases).`)
+		.importNamed("../_utils", [SIMPLIFY], true)
+		.importNamed(`./${BARREL_FILE}`, [gName, xdataName], true)
+		.blank();
+
+	const sortedIds = [...group.entries].map((e) => e.templateId).sort();
+	const aliases = deriveGroupAliases(sortedIds, gName);
+	const invariants = detectInvariants(group);
+	const { statements, typeNames } = entryVariantStatements(group.entries, gName, group, aliases, invariants);
+	for (const stmt of statements) file.addStatement(stmt);
+	file.blank();
+
+	file.exportTypeAlias(`${gName}${BARREL_TYPE}${ENTRY}`, T.union(...typeNames.map((n) => T.ref(n))));
+
+	return file.render();
 }
 
 export function emitEntryFile(group: Group, bucketName: string, entries: Entry[]): string {
@@ -258,67 +241,74 @@ export function emitEntryFile(group: Group, bucketName: string, entries: Entry[]
 	const entryCount = entries.length;
 	const entryWord = entryCount === 1 ? ENTRY_LOWER : ENTRIES_LOWER;
 
-	const lines = emitFileHeader(`Generated from Pokémon GO masterfile — group "${group.discriminator}", split "${bucketName}", ${entryCount} ${entryWord}.`, [
-		`${IMPORT} ${TYPE_LOWER} { ${SIMPLIFY} } from "../../_utils";`,
-		`${IMPORT} ${TYPE_LOWER} { ${gName}, ${xdataName} } from "../${TYPES_LOWER}";`,
-	]);
+	const file = new AstFileBuilder()
+		.header(`Generated from Pokémon GO masterfile — group "${group.discriminator}", split "${bucketName}", ${entryCount} ${entryWord}.`)
+		.importNamed("../../_utils", [SIMPLIFY], true)
+		.importNamed(`../${TYPES_LOWER}`, [gName, xdataName], true)
+		.blank();
 
-	const { lines: variantLines, typeNames } = renderEntryVariants(entries, gName, group, aliases, invariants);
-	lines.push(...variantLines, ``, renderVariantBarrelType(`${gName}${aliasSuffix(bucketName, "")}`, typeNames), ``);
-	return lines.join("\n");
+	const { statements, typeNames } = entryVariantStatements(entries, gName, group, aliases, invariants);
+	for (const stmt of statements) file.addStatement(stmt);
+	file.blank();
+
+	file.exportTypeAlias(`${gName}${aliasSuffix(bucketName, "")}${BARREL_TYPE}${ENTRY}`, T.union(...typeNames.map((n) => T.ref(n))));
+
+	return file.render();
 }
 
 export function emitEntriesBarrel(discriminator: string, fileNames: string[]): string {
 	const typeName = pascalCase(discriminator);
 	const sorted = [...fileNames].sort();
 
-	const lines: string[] = [
-		`// Generated from Pokémon GO masterfile — group "${discriminator}" entries barrel.`,
-		``,
-		...sorted.map((e) => `${IMPORT} ${TYPE_LOWER} { ${typeName}${pascalCase(e)}${BARREL_TYPE}${ENTRY} } from './${e}';`),
-	];
-	for (const name of sorted) {
-		lines.push(`${EXPORT} ${TYPE_LOWER} * from "./${name}";`);
+	const file = new AstFileBuilder().header(`Generated from Pokémon GO masterfile — group "${discriminator}" entries barrel.`);
+
+	for (const e of sorted) {
+		file.importNamed(`./${e}`, [`${typeName}${pascalCase(e)}${BARREL_TYPE}${ENTRY}`], true);
 	}
-	lines.push(``);
+	file.blank();
 
-	lines.push(
-		`${EXPORT} ${TYPE_LOWER} ${typeName}${BARREL_TYPE}${ENTRY} = ${sorted.map((f) => `${typeName}${pascalCase(f)}${BARREL_TYPE}${ENTRY}`).join("| ")}`,
+	for (const name of sorted) {
+		file.exportTypeStar(`./${name}`);
+	}
+	file.blank();
+
+	file.exportTypeAlias(
+		`${typeName}${BARREL_TYPE}${ENTRY}`,
+		T.union(...sorted.map((fileName) => T.ref(`${typeName}${pascalCase(fileName)}${BARREL_TYPE}${ENTRY}`))),
 	);
-	lines.push(``);
-	lines.push(`${EXPORT} ${TYPE_LOWER} ${typeName}${TEMPLATE_GENERIC} = ${typeName}${BARREL_TYPE}${ENTRY}["templateId"];`);
+	file.blank();
+	file.exportTypeAlias(`${typeName}${TEMPLATE_GENERIC}`, T.indexedAccess(T.ref(`${typeName}${BARREL_TYPE}${ENTRY}`), T.literal("templateId")));
 
-	return lines.join("\n");
+	return file.render();
 }
 
 export function emitTopLevelVariants(groupSplits: Map<string, "split" | "flat">): string {
 	const sortedDiscs = [...groupSplits.keys()].sort();
-	const lines: string[] = [`// Generated from Pokémon GO masterfile — top-level entries barrel.`, ``];
+	const file = new AstFileBuilder().header("Generated from Pokémon GO masterfile — top-level entries barrel.");
 
 	for (const disc of sortedDiscs) {
-		lines.push(`${IMPORT} ${TYPE_LOWER} { ${groupName(disc)}${BARREL_TYPE}${ENTRY} } from "./${kebabCase(disc)}/${ENTRIES_LOWER}";`);
+		file.importNamed(`./${kebabCase(disc)}/${ENTRIES_LOWER}`, [`${groupName(disc)}${BARREL_TYPE}${ENTRY}`], true);
 	}
-	lines.push(``);
+	file.blank();
 
 	for (const disc of sortedDiscs) {
-		const kebab = kebabCase(disc);
-		const path = groupSplits.get(disc) === "split" ? `./${kebab}/${ENTRIES_LOWER}` : `./${kebab}/${ENTRIES_LOWER}`;
-		lines.push(`${EXPORT} ${TYPE_LOWER} * from "${path}";`);
+		file.exportTypeStar(`./${kebabCase(disc)}/${ENTRIES_LOWER}`);
 	}
-	lines.push(``, ``, `${EXPORT} ${TYPE_LOWER} ${BARREL_TYPE}${ENTRY} =`);
-	for (const disc of sortedDiscs) {
-		lines.push(`\t| ${groupName(disc)}${BARREL_TYPE}${ENTRY}`);
-	}
-	lines.push(
-		``,
-		`${EXPORT} ${TYPE_LOWER} ${BARREL_TYPE}${TEMPLATE_GENERIC} = ${BARREL_TYPE}${ENTRY}["templateId"];`,
-		``,
-		`${EXPORT} ${TYPE_LOWER} ${BARREL_TYPE}${ENTRY}By${TEMPLATE_GENERIC}<T extends ${BARREL_TYPE}${TEMPLATE_GENERIC}> = Extract<${BARREL_TYPE}${ENTRY}, { templateId: T }>;`,
-		``,
+	file.blank();
+
+	file.exportTypeAlias(`${BARREL_TYPE}${ENTRY}`, T.union(...sortedDiscs.map((disc) => T.ref(`${groupName(disc)}${BARREL_TYPE}${ENTRY}`))));
+	file.blank();
+	file.exportTypeAlias(`${BARREL_TYPE}${TEMPLATE_GENERIC}`, T.indexedAccess(T.ref(`${BARREL_TYPE}${ENTRY}`), T.literal("templateId")));
+	file.blank();
+	file.exportTypeAlias(
+		`${BARREL_TYPE}${ENTRY}By${TEMPLATE_GENERIC}`,
+		T.ref("Extract", [T.ref(`${BARREL_TYPE}${ENTRY}`), T.objectLiteralInline([{ name: "templateId", type: T.ref("T") }])]),
+		[{ name: "T", constraint: T.ref(`${BARREL_TYPE}${TEMPLATE_GENERIC}`) }],
 	);
-	return lines.join("\n");
+
+	return file.render();
 }
 
 export function emitIndexFile() {
-	return [`${EXPORT} ${TYPE_LOWER} * from "./${ENTRIES_LOWER}";`, `${EXPORT} ${TYPE_LOWER} * from "./${TYPES_LOWER}";`].join("\n");
+	return new AstFileBuilder().exportTypeStar(`./${ENTRIES_LOWER}`).exportTypeStar(`./${TYPES_LOWER}`).render();
 }

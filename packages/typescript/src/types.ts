@@ -123,6 +123,7 @@ export type * from "./vnext-battle-config/types";
 export type * from "./vs-seeker-loot/types";
 export type * from "./vs-seeker-pokemon-rewards/types";
 export type * from "./weather-affinities/types";
+
 export type MasterfileEntryType =
 	| AvatarCustomization
 	| AvatarGroupOrderSettings
@@ -185,6 +186,7 @@ export type MasterfileEntryType =
 	| VsSeekerLoot
 	| VsSeekerPokemonRewards
 	| WeatherAffinities;
+
 export type MasterfileType =
 	| AvatarCustomizationType
 	| AvatarGroupOrderSettingsType

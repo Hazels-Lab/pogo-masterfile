@@ -222,8 +222,8 @@ describe("emitGroupIndex", () => {
 		const output = emitGroupTypes(group);
 
 		expect(output).toContain("export interface TypeEffective<");
-		expect(output).toContain("TemplateID extends string = string,");
-		expect(output).toContain("TData extends TypeEffectiveData = TypeEffectiveData,");
+		expect(output).toContain("TemplateID extends string = string");
+		expect(output).toContain("TData extends TypeEffectiveData = TypeEffectiveData");
 		expect(output).toContain("typeEffective: TData & {");
 		expect(output).toContain("attackType: TemplateID;");
 
