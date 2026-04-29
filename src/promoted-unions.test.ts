@@ -196,3 +196,66 @@ describe("tryPromote — multi-match resolution", () => {
 		expect((result as { sourceGroup: Group }).sourceGroup.discriminator).toBe("aaSuper");
 	});
 });
+
+import { inferredToType } from "./builder.ts";
+import type { PromotionContext } from "./promoted-unions.ts";
+import ts from "typescript";
+
+function printNode(node: ts.TypeNode): string {
+	const printer = ts.createPrinter({ newLine: ts.NewLineKind.LineFeed });
+	const file = ts.createSourceFile("t.ts", "", ts.ScriptTarget.Latest, false);
+	return printer.printNode(ts.EmitHint.Unspecified, node, file);
+}
+
+describe("inferredToType — promotion via ctx", () => {
+	const groups = makeGroups(group("typeEffective", ["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK", "POKEMON_TYPE_FIRE"]));
+	const registry = build(groups);
+
+	test("rewrites an exact-match string union to a type reference", () => {
+		const ctx: PromotionContext = { registry, currentGroup: null, imports: new Map() };
+		const node = inferredToType(
+			{ kind: "string", literals: ["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK", "POKEMON_TYPE_FIRE"] },
+			ctx,
+		);
+		expect(printNode(node)).toBe("PokemonType");
+		expect(ctx.imports.get("typeEffective")).toEqual(new Set(["PokemonType"]));
+	});
+
+	test("rewrites a near-exact union to an Exclude<> expression", () => {
+		// 8-entry registry: 6 inline = 2 missing = 25% (at the default boundary).
+		// Note: discriminator "foo" → groupName "Foo" collides with the alias derived
+		// from prefix "FOO_", so collision resolution appends "Id" → "FooId".
+		const fooGroups = makeGroups(group("foo", ["FOO_A", "FOO_B", "FOO_C", "FOO_D", "FOO_E", "FOO_F", "FOO_G", "FOO_H"]));
+		const fooRegistry = build(fooGroups);
+		const ctx: PromotionContext = { registry: fooRegistry, currentGroup: null, imports: new Map() };
+		const node = inferredToType({ kind: "string", literals: ["FOO_A", "FOO_B", "FOO_C", "FOO_D", "FOO_E", "FOO_F"] }, ctx);
+		expect(printNode(node)).toBe(`Exclude<FooId, "FOO_G" | "FOO_H">`);
+		expect(ctx.imports.get("foo")).toEqual(new Set(["FooId"]));
+	});
+
+	test("leaves the union inline when missing fraction exceeds the delta ratio", () => {
+		const ctx: PromotionContext = { registry, currentGroup: null, imports: new Map() };
+		const node = inferredToType({ kind: "string", literals: ["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK"] }, ctx);
+		// 1 of 3 missing = 33%; default ratio 0.25 → no promotion.
+		expect(printNode(node)).toContain(`"POKEMON_TYPE_BUG"`);
+		expect(printNode(node)).toContain(`"POKEMON_TYPE_DARK"`);
+		expect(ctx.imports.size).toBe(0);
+	});
+
+	test("leaves the node unchanged when no ctx is supplied", () => {
+		const node = inferredToType({ kind: "string", literals: ["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK", "POKEMON_TYPE_FIRE"] });
+		// No ctx → no promotion, regardless of registry.
+		expect(printNode(node)).toContain(`"POKEMON_TYPE_BUG"`);
+		expect(printNode(node)).not.toBe("PokemonType");
+	});
+
+	test("does not promote when currentGroup is the source group", () => {
+		const ctx: PromotionContext = { registry, currentGroup: registry[0]!.group, imports: new Map() };
+		const node = inferredToType(
+			{ kind: "string", literals: ["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK", "POKEMON_TYPE_FIRE"] },
+			ctx,
+		);
+		expect(printNode(node)).not.toBe("PokemonType");
+		expect(ctx.imports.size).toBe(0);
+	});
+});

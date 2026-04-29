@@ -59,6 +59,23 @@ function isSubsetOrEqual(a: ReadonlySet<string>, b: ReadonlySet<string>): boolea
 	return true;
 }
 
+export interface PromotionContext {
+	registry: PromotionRegistry;
+	currentGroup: Group | null;
+	imports: Map<string, Set<string>>;
+}
+
+export function recordImport(ctx: PromotionContext, sourceGroup: Group, aliasName: string): void {
+	if (ctx.currentGroup !== null && sourceGroup === ctx.currentGroup) return;
+	const disc = sourceGroup.discriminator;
+	let names = ctx.imports.get(disc);
+	if (!names) {
+		names = new Set();
+		ctx.imports.set(disc, names);
+	}
+	names.add(aliasName);
+}
+
 function resolveCollisions(entries: PromotionRegistryEntry[], groups: Map<string, Group>): void {
 	const interfaceNames = new Set([...groups.values()].map((g) => groupName(g.discriminator)));
 

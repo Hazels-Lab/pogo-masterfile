@@ -2,6 +2,7 @@
 import ts from "typescript";
 import { TEMPLATE_GENERIC } from "./constants.ts";
 import type { InferredType } from "./infer.ts";
+import { type PromotionContext, recordImport, tryPromote } from "./promoted-unions.ts";
 
 type Modifier = "export" | "default" | "declare" | "async" | "readonly" | "private" | "protected" | "public" | "static" | "abstract" | "override";
 
@@ -273,7 +274,7 @@ export const N = {
 };
 
 // Convert an InferredType to its AST TypeNode. Mirrors the shape of renderType() in render-types.ts.
-export function inferredToType(type: InferredType): ts.TypeNode {
+export function inferredToType(type: InferredType, ctx?: PromotionContext): ts.TypeNode {
 	switch (type.kind) {
 		case "null":
 			return T.null();
@@ -281,20 +282,30 @@ export function inferredToType(type: InferredType): ts.TypeNode {
 			return type.literals.length === 0 ? T.boolean() : T.union(...type.literals.map((l) => T.literal(l)));
 		case "number":
 			return type.literals.length === 0 ? T.number() : T.union(...type.literals.map((l) => T.literal(l)));
-		case "string":
-			return type.literals.length === 0 ? T.string() : T.union(...type.literals.map((l) => T.literal(l)));
+		case "string": {
+			if (type.literals.length === 0) return T.string();
+			if (ctx) {
+				const promoted = tryPromote(new Set(type.literals), ctx.registry, ctx.currentGroup);
+				if (promoted) {
+					recordImport(ctx, promoted.sourceGroup, promoted.aliasName);
+					if (promoted.kind === "ref") return T.ref(promoted.aliasName);
+					return T.ref("Exclude", [T.ref(promoted.aliasName), T.union(...promoted.missing.map((m) => T.literal(m)))]);
+				}
+			}
+			return T.union(...type.literals.map((l) => T.literal(l)));
+		}
 		case "object":
 			if (type.properties.length === 0) return T.object();
-			return T.objectLiteral(type.properties.map((p) => ({ name: p.name, type: inferredToType(p.type), optional: p.optional })));
+			return T.objectLiteral(type.properties.map((p) => ({ name: p.name, type: inferredToType(p.type, ctx), optional: p.optional })));
 		case "tuple":
-			return T.tuple(...type.items.map(inferredToType));
+			return T.tuple(...type.items.map((t) => inferredToType(t, ctx)));
 		case "array":
-			return T.ref("Array", [inferredToType(type.element)]);
+			return T.ref("Array", [inferredToType(type.element, ctx)]);
 		case "union":
 			if (type.variants.length === 0) return T.never();
-			if (type.variants.length === 1) return inferredToType(type.variants[0]!);
+			if (type.variants.length === 1) return inferredToType(type.variants[0]!, ctx);
 			// Flatten any nested UnionTypeNodes so the printer doesn't wrap them in parens.
-			return T.union(...flattenUnion(type.variants.map(inferredToType)));
+			return T.union(...flattenUnion(type.variants.map((v) => inferredToType(v, ctx))));
 		case "templateIdReference":
 			return T.ref(TEMPLATE_GENERIC);
 		case "templateIdSlice":
