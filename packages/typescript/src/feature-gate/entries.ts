@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 13 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 14 entries (variant aliases).
 
 import type { S } from "../_utils";
 import type { FeatureGate } from "./index";
@@ -54,6 +54,14 @@ export type FeatureGateEventList = S<
 export type FeatureGateEventPassBonusRanks = S<
 	FeatureGate<
 		"EVENT_PASS_BONUS_RANKS_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateEventPassClaimableRewardToggle = S<
+	FeatureGate<
+		"EVENT_PASS_CLAIMABLE_REWARD_TOGGLE_FEATURE_GATE",
 		{
 			status: 1;
 		}
@@ -165,6 +173,7 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateEnablePvpChallengeSpanner
 	| FeatureGateEventList
 	| FeatureGateEventPassBonusRanks
+	| FeatureGateEventPassClaimableRewardToggle
 	| FeatureGateEventPassMilestoneRewards
 	| FeatureGateHealToast
 	| FeatureGateMega2026

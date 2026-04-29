@@ -50,7 +50,6 @@ import type {
 	DeepLinkingSettings,
 	EggHatchImprovementsSettings,
 	EncounterSettings,
-	EventPassSettings,
 	EventPlannerPopularNotificationSettings,
 	ExternalAddressableAssetsSettings,
 	FeatureUnlockLevelSettings,
@@ -191,7 +190,6 @@ export type DailyAdventureIncenseSettingsType = W<DailyAdventureIncenseSettings>
 export type DeepLinkingSettingsType = W<DeepLinkingSettings>;
 export type EggHatchImprovementsSettingsType = W<EggHatchImprovementsSettings>;
 export type EncounterSettingsType = W<EncounterSettings>;
-export type EventPassSettingsType = W<EventPassSettings>;
 export type EventPlannerPopularNotificationSettingsType = W<EventPlannerPopularNotificationSettings>;
 export type ExternalAddressableAssetsSettingsType = W<ExternalAddressableAssetsSettings>;
 export type FeatureUnlockLevelSettingsType = W<FeatureUnlockLevelSettings>;
@@ -332,7 +330,6 @@ export type Singletons =
 	| DeepLinkingSettingsType
 	| EggHatchImprovementsSettingsType
 	| EncounterSettingsType
-	| EventPassSettingsType
 	| EventPlannerPopularNotificationSettingsType
 	| ExternalAddressableAssetsSettingsType
 	| FeatureUnlockLevelSettingsType

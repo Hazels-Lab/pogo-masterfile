@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id", 1292 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id", 1299 entries.
 
 import type { S } from "../../_utils";
 import type { AvatarItemDisplay } from "../types";
@@ -1269,6 +1269,33 @@ export type AvatarItemDisplayNGlassesObstagoonitems0 = S<
 		{
 			displayStringId: "n_glasses_obstagoonitems_0_display_name";
 			iconAddress: "n_glasses_obstagoonitems_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNGlassesPokeballsunglassesGreat = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_glasses_pokeballsunglasses-great",
+		{
+			displayStringId: "avatar_glasses_greatball";
+			iconAddress: "n_glasses_pokeballsunglasses-great_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNGlassesPokeballsunglassesRegular = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_glasses_pokeballsunglasses-regular",
+		{
+			displayStringId: "avatar_glasses_pokeball";
+			iconAddress: "n_glasses_pokeballsunglasses-regular_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNGlassesPokeballsunglassesUltra = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_glasses_pokeballsunglasses-ultra",
+		{
+			displayStringId: "avatar_glasses_ultraball";
+			iconAddress: "n_glasses_pokeballsunglasses-ultra_icon";
 		}
 	>
 >;
@@ -5961,6 +5988,15 @@ export type AvatarItemDisplayNPoseGofest2025 = S<
 		}
 	>
 >;
+export type AvatarItemDisplayNPoseGofest2026 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_pose_gofest2026",
+		{
+			displayStringId: "avatar_pose_team_leader";
+			iconAddress: "n_pose_gofest2026_icon";
+		}
+	>
+>;
 export type AvatarItemDisplayNPoseGrowingup = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_pose_growingup",
@@ -7245,6 +7281,24 @@ export type AvatarItemDisplayNShirtGofest2025cream0 = S<
 		{
 			displayStringId: "avatar_shirt_gofest2025cream";
 			iconAddress: "n_shirt_gofest2025cream_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtGofest2026Black = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_gofest2026-black",
+		{
+			displayStringId: "avatar_shirt_gofest2026black";
+			iconAddress: "n_shirt_gofest2026-black_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtGofest2026Purple = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_gofest2026-purple",
+		{
+			displayStringId: "avatar_shirt_gofest2026purple";
+			iconAddress: "n_shirt_gofest2026-purple_icon";
 		}
 	>
 >;
@@ -10038,6 +10092,15 @@ export type AvatarItemDisplayNShirtZacostumeB0 = S<
 		}
 	>
 >;
+export type AvatarItemDisplayNShirtZeraoratshirt = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_zeraoratshirt",
+		{
+			displayStringId: "avatar_n_shirt_zeraoratshirt";
+			iconAddress: "n_shirt_zeraoratshirt_icon";
+		}
+	>
+>;
 export type AvatarItemDisplayNShirtZoruaonesie0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_shirt_zoruaonesie_0",
@@ -11774,6 +11837,9 @@ export type AvatarItemDisplayDisplayStringIdMasterfileEntry =
 	| AvatarItemDisplayNGlassesNewyearglasses20200
 	| AvatarItemDisplayNGlassesNewyearglasses20210
 	| AvatarItemDisplayNGlassesObstagoonitems0
+	| AvatarItemDisplayNGlassesPokeballsunglassesGreat
+	| AvatarItemDisplayNGlassesPokeballsunglassesRegular
+	| AvatarItemDisplayNGlassesPokeballsunglassesUltra
 	| AvatarItemDisplayNGlassesRoundsunglasses0
 	| AvatarItemDisplayNGlassesTeardrop0
 	| AvatarItemDisplayNGlassesThick0
@@ -12295,6 +12361,7 @@ export type AvatarItemDisplayDisplayStringIdMasterfileEntry =
 	| AvatarItemDisplayNPoseEmpty
 	| AvatarItemDisplayNPoseFashionweek2025
 	| AvatarItemDisplayNPoseGofest2025
+	| AvatarItemDisplayNPoseGofest2026
 	| AvatarItemDisplayNPoseGrowingup
 	| AvatarItemDisplayNPoseGrusha
 	| AvatarItemDisplayNPoseHeart
@@ -12438,6 +12505,8 @@ export type AvatarItemDisplayDisplayStringIdMasterfileEntry =
 	| AvatarItemDisplayNShirtGofest2024purple0
 	| AvatarItemDisplayNShirtGofest20250
 	| AvatarItemDisplayNShirtGofest2025cream0
+	| AvatarItemDisplayNShirtGofest2026Black
+	| AvatarItemDisplayNShirtGofest2026Purple
 	| AvatarItemDisplayNShirtGofestglobal20230
 	| AvatarItemDisplayNShirtGoteamrocketarloA0
 	| AvatarItemDisplayNShirtGoteamrocketarloB0
@@ -12748,6 +12817,7 @@ export type AvatarItemDisplayDisplayStringIdMasterfileEntry =
 	| AvatarItemDisplayNShirtYveltaljacket
 	| AvatarItemDisplayNShirtZacostumeA0
 	| AvatarItemDisplayNShirtZacostumeB0
+	| AvatarItemDisplayNShirtZeraoratshirt
 	| AvatarItemDisplayNShirtZoruaonesie0
 	| AvatarItemDisplayNShirtZygarde100items0
 	| AvatarItemDisplayNShoes6thanniversaryA0

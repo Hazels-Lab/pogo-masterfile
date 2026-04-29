@@ -16,6 +16,7 @@ import type { CombatNpcPersonality, CombatNpcPersonalityType } from "./combat-np
 import type { CombatNpcTrainer, CombatNpcTrainerType } from "./combat-npc-trainer/types";
 import type { CombatRankingProtoSettings, CombatRankingProtoSettingsType } from "./combat-ranking-proto-settings/types";
 import type { CombatType, CombatTypeType } from "./combat-type/types";
+import type { EventPassSettings, EventPassSettingsType } from "./event-pass-settings/types";
 import type { EventPassTierSettings, EventPassTierSettingsType } from "./event-pass-tier-settings/types";
 import type { EvolutionChainDisplaySettings, EvolutionChainDisplaySettingsType } from "./evolution-chain-display-settings/types";
 import type { EvolutionQuestTemplate, EvolutionQuestTemplateType } from "./evolution-quest-template/types";
@@ -77,6 +78,7 @@ export type * from "./combat-npc-personality/types";
 export type * from "./combat-npc-trainer/types";
 export type * from "./combat-ranking-proto-settings/types";
 export type * from "./combat-type/types";
+export type * from "./event-pass-settings/types";
 export type * from "./event-pass-tier-settings/types";
 export type * from "./evolution-chain-display-settings/types";
 export type * from "./evolution-quest-template/types";
@@ -121,7 +123,6 @@ export type * from "./vnext-battle-config/types";
 export type * from "./vs-seeker-loot/types";
 export type * from "./vs-seeker-pokemon-rewards/types";
 export type * from "./weather-affinities/types";
-
 export type MasterfileEntryType =
 	| AvatarCustomization
 	| AvatarGroupOrderSettings
@@ -139,6 +140,7 @@ export type MasterfileEntryType =
 	| CombatNpcTrainer
 	| CombatRankingProtoSettings
 	| CombatType
+	| EventPassSettings
 	| EventPassTierSettings
 	| EvolutionChainDisplaySettings
 	| EvolutionQuestTemplate
@@ -183,7 +185,6 @@ export type MasterfileEntryType =
 	| VsSeekerLoot
 	| VsSeekerPokemonRewards
 	| WeatherAffinities;
-
 export type MasterfileType =
 	| AvatarCustomizationType
 	| AvatarGroupOrderSettingsType
@@ -201,6 +202,7 @@ export type MasterfileType =
 	| CombatNpcTrainerType
 	| CombatRankingProtoSettingsType
 	| CombatTypeType
+	| EventPassSettingsType
 	| EventPassTierSettingsType
 	| EvolutionChainDisplaySettingsType
 	| EvolutionQuestTemplateType

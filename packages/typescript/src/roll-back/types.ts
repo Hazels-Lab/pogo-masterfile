@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "rollBack", 2 entries (structural types).
+// Generated from Pokémon GO masterfile — group "rollBack", 3 entries (structural types).
 
 import type { W } from "../_utils";
 

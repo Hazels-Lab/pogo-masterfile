@@ -1,9 +1,9 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings", split "free", 210 entries.
+// Generated from Pokémon GO masterfile — group "eventPassTierSettings", split "free", 310 entries.
 
 import type { S } from "../../_utils";
 import type { EventPassTierSettings } from "../types";
 
-export type EventPassTierSettings100Free = S<
+export type EventPassTierSettingsApril2026Season100Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_100_FREE",
 		{
@@ -29,7 +29,7 @@ export type EventPassTierSettings100Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings101Free = S<
+export type EventPassTierSettingsApril2026Season101Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_101_FREE",
 		{
@@ -45,7 +45,7 @@ export type EventPassTierSettings101Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings102Free = S<
+export type EventPassTierSettingsApril2026Season102Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_102_FREE",
 		{
@@ -61,7 +61,7 @@ export type EventPassTierSettings102Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings103Free = S<
+export type EventPassTierSettingsApril2026Season103Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_103_FREE",
 		{
@@ -77,7 +77,7 @@ export type EventPassTierSettings103Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings104Free = S<
+export type EventPassTierSettingsApril2026Season104Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_104_FREE",
 		{
@@ -93,7 +93,7 @@ export type EventPassTierSettings104Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings105Free = S<
+export type EventPassTierSettingsApril2026Season105Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_105_FREE",
 		{
@@ -109,7 +109,7 @@ export type EventPassTierSettings105Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings106Free = S<
+export type EventPassTierSettingsApril2026Season106Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_106_FREE",
 		{
@@ -125,7 +125,7 @@ export type EventPassTierSettings106Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings107Free = S<
+export type EventPassTierSettingsApril2026Season107Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_107_FREE",
 		{
@@ -141,7 +141,7 @@ export type EventPassTierSettings107Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings108Free = S<
+export type EventPassTierSettingsApril2026Season108Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_108_FREE",
 		{
@@ -157,7 +157,7 @@ export type EventPassTierSettings108Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings109Free = S<
+export type EventPassTierSettingsApril2026Season109Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_109_FREE",
 		{
@@ -173,7 +173,7 @@ export type EventPassTierSettings109Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings10Free = S<
+export type EventPassTierSettingsApril2026Season10Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_10_FREE",
 		{
@@ -192,7 +192,7 @@ export type EventPassTierSettings10Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings110Free = S<
+export type EventPassTierSettingsApril2026Season110Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_110_FREE",
 		{
@@ -208,7 +208,7 @@ export type EventPassTierSettings110Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings111Free = S<
+export type EventPassTierSettingsApril2026Season111Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_111_FREE",
 		{
@@ -224,7 +224,7 @@ export type EventPassTierSettings111Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings112Free = S<
+export type EventPassTierSettingsApril2026Season112Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_112_FREE",
 		{
@@ -240,7 +240,7 @@ export type EventPassTierSettings112Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings113Free = S<
+export type EventPassTierSettingsApril2026Season113Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_113_FREE",
 		{
@@ -256,7 +256,7 @@ export type EventPassTierSettings113Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings114Free = S<
+export type EventPassTierSettingsApril2026Season114Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_114_FREE",
 		{
@@ -272,7 +272,7 @@ export type EventPassTierSettings114Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings115Free = S<
+export type EventPassTierSettingsApril2026Season115Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_115_FREE",
 		{
@@ -288,7 +288,7 @@ export type EventPassTierSettings115Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings116Free = S<
+export type EventPassTierSettingsApril2026Season116Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_116_FREE",
 		{
@@ -304,7 +304,7 @@ export type EventPassTierSettings116Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings117Free = S<
+export type EventPassTierSettingsApril2026Season117Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_117_FREE",
 		{
@@ -320,7 +320,7 @@ export type EventPassTierSettings117Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings118Free = S<
+export type EventPassTierSettingsApril2026Season118Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_118_FREE",
 		{
@@ -336,7 +336,7 @@ export type EventPassTierSettings118Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings119Free = S<
+export type EventPassTierSettingsApril2026Season119Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_119_FREE",
 		{
@@ -352,7 +352,7 @@ export type EventPassTierSettings119Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings11Free = S<
+export type EventPassTierSettingsApril2026Season11Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_11_FREE",
 		{
@@ -371,7 +371,7 @@ export type EventPassTierSettings11Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings120Free = S<
+export type EventPassTierSettingsApril2026Season120Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_120_FREE",
 		{
@@ -387,7 +387,7 @@ export type EventPassTierSettings120Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings121Free = S<
+export type EventPassTierSettingsApril2026Season121Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_121_FREE",
 		{
@@ -403,7 +403,7 @@ export type EventPassTierSettings121Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings122Free = S<
+export type EventPassTierSettingsApril2026Season122Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_122_FREE",
 		{
@@ -419,7 +419,7 @@ export type EventPassTierSettings122Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings123Free = S<
+export type EventPassTierSettingsApril2026Season123Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_123_FREE",
 		{
@@ -435,7 +435,7 @@ export type EventPassTierSettings123Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings124Free = S<
+export type EventPassTierSettingsApril2026Season124Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_124_FREE",
 		{
@@ -451,7 +451,7 @@ export type EventPassTierSettings124Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings125Free = S<
+export type EventPassTierSettingsApril2026Season125Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_125_FREE",
 		{
@@ -467,7 +467,7 @@ export type EventPassTierSettings125Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings126Free = S<
+export type EventPassTierSettingsApril2026Season126Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_126_FREE",
 		{
@@ -483,7 +483,7 @@ export type EventPassTierSettings126Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings127Free = S<
+export type EventPassTierSettingsApril2026Season127Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_127_FREE",
 		{
@@ -499,7 +499,7 @@ export type EventPassTierSettings127Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings128Free = S<
+export type EventPassTierSettingsApril2026Season128Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_128_FREE",
 		{
@@ -515,7 +515,7 @@ export type EventPassTierSettings128Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings129Free = S<
+export type EventPassTierSettingsApril2026Season129Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_129_FREE",
 		{
@@ -531,7 +531,7 @@ export type EventPassTierSettings129Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings12Free = S<
+export type EventPassTierSettingsApril2026Season12Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_12_FREE",
 		{
@@ -553,7 +553,7 @@ export type EventPassTierSettings12Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings130Free = S<
+export type EventPassTierSettingsApril2026Season130Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_130_FREE",
 		{
@@ -569,7 +569,7 @@ export type EventPassTierSettings130Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings131Free = S<
+export type EventPassTierSettingsApril2026Season131Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_131_FREE",
 		{
@@ -585,7 +585,7 @@ export type EventPassTierSettings131Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings132Free = S<
+export type EventPassTierSettingsApril2026Season132Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_132_FREE",
 		{
@@ -601,7 +601,7 @@ export type EventPassTierSettings132Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings133Free = S<
+export type EventPassTierSettingsApril2026Season133Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_133_FREE",
 		{
@@ -617,7 +617,7 @@ export type EventPassTierSettings133Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings134Free = S<
+export type EventPassTierSettingsApril2026Season134Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_134_FREE",
 		{
@@ -633,7 +633,7 @@ export type EventPassTierSettings134Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings135Free = S<
+export type EventPassTierSettingsApril2026Season135Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_135_FREE",
 		{
@@ -649,7 +649,7 @@ export type EventPassTierSettings135Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings136Free = S<
+export type EventPassTierSettingsApril2026Season136Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_136_FREE",
 		{
@@ -665,7 +665,7 @@ export type EventPassTierSettings136Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings137Free = S<
+export type EventPassTierSettingsApril2026Season137Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_137_FREE",
 		{
@@ -681,7 +681,7 @@ export type EventPassTierSettings137Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings138Free = S<
+export type EventPassTierSettingsApril2026Season138Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_138_FREE",
 		{
@@ -697,7 +697,7 @@ export type EventPassTierSettings138Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings139Free = S<
+export type EventPassTierSettingsApril2026Season139Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_139_FREE",
 		{
@@ -713,7 +713,7 @@ export type EventPassTierSettings139Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings13Free = S<
+export type EventPassTierSettingsApril2026Season13Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_13_FREE",
 		{
@@ -732,7 +732,7 @@ export type EventPassTierSettings13Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings140Free = S<
+export type EventPassTierSettingsApril2026Season140Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_140_FREE",
 		{
@@ -748,7 +748,7 @@ export type EventPassTierSettings140Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings141Free = S<
+export type EventPassTierSettingsApril2026Season141Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_141_FREE",
 		{
@@ -764,7 +764,7 @@ export type EventPassTierSettings141Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings142Free = S<
+export type EventPassTierSettingsApril2026Season142Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_142_FREE",
 		{
@@ -780,7 +780,7 @@ export type EventPassTierSettings142Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings143Free = S<
+export type EventPassTierSettingsApril2026Season143Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_143_FREE",
 		{
@@ -796,7 +796,7 @@ export type EventPassTierSettings143Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings144Free = S<
+export type EventPassTierSettingsApril2026Season144Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_144_FREE",
 		{
@@ -812,7 +812,7 @@ export type EventPassTierSettings144Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings145Free = S<
+export type EventPassTierSettingsApril2026Season145Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_145_FREE",
 		{
@@ -828,7 +828,7 @@ export type EventPassTierSettings145Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings146Free = S<
+export type EventPassTierSettingsApril2026Season146Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_146_FREE",
 		{
@@ -844,7 +844,7 @@ export type EventPassTierSettings146Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings147Free = S<
+export type EventPassTierSettingsApril2026Season147Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_147_FREE",
 		{
@@ -860,7 +860,7 @@ export type EventPassTierSettings147Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings148Free = S<
+export type EventPassTierSettingsApril2026Season148Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_148_FREE",
 		{
@@ -876,7 +876,7 @@ export type EventPassTierSettings148Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings149Free = S<
+export type EventPassTierSettingsApril2026Season149Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_149_FREE",
 		{
@@ -892,7 +892,7 @@ export type EventPassTierSettings149Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings14Free = S<
+export type EventPassTierSettingsApril2026Season14Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_14_FREE",
 		{
@@ -911,7 +911,7 @@ export type EventPassTierSettings14Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings150Free = S<
+export type EventPassTierSettingsApril2026Season150Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_150_FREE",
 		{
@@ -927,7 +927,7 @@ export type EventPassTierSettings150Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings151Free = S<
+export type EventPassTierSettingsApril2026Season151Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_151_FREE",
 		{
@@ -943,7 +943,7 @@ export type EventPassTierSettings151Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings152Free = S<
+export type EventPassTierSettingsApril2026Season152Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_152_FREE",
 		{
@@ -959,7 +959,7 @@ export type EventPassTierSettings152Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings153Free = S<
+export type EventPassTierSettingsApril2026Season153Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_153_FREE",
 		{
@@ -975,7 +975,7 @@ export type EventPassTierSettings153Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings154Free = S<
+export type EventPassTierSettingsApril2026Season154Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_154_FREE",
 		{
@@ -991,7 +991,7 @@ export type EventPassTierSettings154Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings155Free = S<
+export type EventPassTierSettingsApril2026Season155Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_155_FREE",
 		{
@@ -1007,7 +1007,7 @@ export type EventPassTierSettings155Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings156Free = S<
+export type EventPassTierSettingsApril2026Season156Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_156_FREE",
 		{
@@ -1023,7 +1023,7 @@ export type EventPassTierSettings156Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings157Free = S<
+export type EventPassTierSettingsApril2026Season157Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_157_FREE",
 		{
@@ -1039,7 +1039,7 @@ export type EventPassTierSettings157Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings158Free = S<
+export type EventPassTierSettingsApril2026Season158Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_158_FREE",
 		{
@@ -1055,7 +1055,7 @@ export type EventPassTierSettings158Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings159Free = S<
+export type EventPassTierSettingsApril2026Season159Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_159_FREE",
 		{
@@ -1071,7 +1071,7 @@ export type EventPassTierSettings159Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings15Free = S<
+export type EventPassTierSettingsApril2026Season15Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_15_FREE",
 		{
@@ -1087,7 +1087,7 @@ export type EventPassTierSettings15Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings160Free = S<
+export type EventPassTierSettingsApril2026Season160Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_160_FREE",
 		{
@@ -1103,7 +1103,7 @@ export type EventPassTierSettings160Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings161Free = S<
+export type EventPassTierSettingsApril2026Season161Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_161_FREE",
 		{
@@ -1119,7 +1119,7 @@ export type EventPassTierSettings161Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings162Free = S<
+export type EventPassTierSettingsApril2026Season162Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_162_FREE",
 		{
@@ -1135,7 +1135,7 @@ export type EventPassTierSettings162Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings163Free = S<
+export type EventPassTierSettingsApril2026Season163Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_163_FREE",
 		{
@@ -1151,7 +1151,7 @@ export type EventPassTierSettings163Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings164Free = S<
+export type EventPassTierSettingsApril2026Season164Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_164_FREE",
 		{
@@ -1167,7 +1167,7 @@ export type EventPassTierSettings164Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings165Free = S<
+export type EventPassTierSettingsApril2026Season165Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_165_FREE",
 		{
@@ -1183,7 +1183,7 @@ export type EventPassTierSettings165Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings166Free = S<
+export type EventPassTierSettingsApril2026Season166Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_166_FREE",
 		{
@@ -1199,7 +1199,7 @@ export type EventPassTierSettings166Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings167Free = S<
+export type EventPassTierSettingsApril2026Season167Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_167_FREE",
 		{
@@ -1215,7 +1215,7 @@ export type EventPassTierSettings167Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings168Free = S<
+export type EventPassTierSettingsApril2026Season168Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_168_FREE",
 		{
@@ -1231,7 +1231,7 @@ export type EventPassTierSettings168Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings169Free = S<
+export type EventPassTierSettingsApril2026Season169Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_169_FREE",
 		{
@@ -1247,7 +1247,7 @@ export type EventPassTierSettings169Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings16Free = S<
+export type EventPassTierSettingsApril2026Season16Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_16_FREE",
 		{
@@ -1263,7 +1263,7 @@ export type EventPassTierSettings16Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings170Free = S<
+export type EventPassTierSettingsApril2026Season170Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_170_FREE",
 		{
@@ -1279,7 +1279,7 @@ export type EventPassTierSettings170Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings171Free = S<
+export type EventPassTierSettingsApril2026Season171Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_171_FREE",
 		{
@@ -1295,7 +1295,7 @@ export type EventPassTierSettings171Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings172Free = S<
+export type EventPassTierSettingsApril2026Season172Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_172_FREE",
 		{
@@ -1311,7 +1311,7 @@ export type EventPassTierSettings172Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings173Free = S<
+export type EventPassTierSettingsApril2026Season173Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_173_FREE",
 		{
@@ -1327,7 +1327,7 @@ export type EventPassTierSettings173Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings174Free = S<
+export type EventPassTierSettingsApril2026Season174Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_174_FREE",
 		{
@@ -1343,7 +1343,7 @@ export type EventPassTierSettings174Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings175Free = S<
+export type EventPassTierSettingsApril2026Season175Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_175_FREE",
 		{
@@ -1359,7 +1359,7 @@ export type EventPassTierSettings175Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings176Free = S<
+export type EventPassTierSettingsApril2026Season176Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_176_FREE",
 		{
@@ -1375,7 +1375,7 @@ export type EventPassTierSettings176Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings177Free = S<
+export type EventPassTierSettingsApril2026Season177Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_177_FREE",
 		{
@@ -1391,7 +1391,7 @@ export type EventPassTierSettings177Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings178Free = S<
+export type EventPassTierSettingsApril2026Season178Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_178_FREE",
 		{
@@ -1407,7 +1407,7 @@ export type EventPassTierSettings178Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings179Free = S<
+export type EventPassTierSettingsApril2026Season179Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_179_FREE",
 		{
@@ -1423,7 +1423,7 @@ export type EventPassTierSettings179Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings17Free = S<
+export type EventPassTierSettingsApril2026Season17Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_17_FREE",
 		{
@@ -1442,7 +1442,7 @@ export type EventPassTierSettings17Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings180Free = S<
+export type EventPassTierSettingsApril2026Season180Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_180_FREE",
 		{
@@ -1458,7 +1458,7 @@ export type EventPassTierSettings180Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings181Free = S<
+export type EventPassTierSettingsApril2026Season181Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_181_FREE",
 		{
@@ -1474,7 +1474,7 @@ export type EventPassTierSettings181Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings182Free = S<
+export type EventPassTierSettingsApril2026Season182Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_182_FREE",
 		{
@@ -1490,7 +1490,7 @@ export type EventPassTierSettings182Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings183Free = S<
+export type EventPassTierSettingsApril2026Season183Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_183_FREE",
 		{
@@ -1506,7 +1506,7 @@ export type EventPassTierSettings183Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings184Free = S<
+export type EventPassTierSettingsApril2026Season184Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_184_FREE",
 		{
@@ -1522,7 +1522,7 @@ export type EventPassTierSettings184Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings185Free = S<
+export type EventPassTierSettingsApril2026Season185Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_185_FREE",
 		{
@@ -1538,7 +1538,7 @@ export type EventPassTierSettings185Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings186Free = S<
+export type EventPassTierSettingsApril2026Season186Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_186_FREE",
 		{
@@ -1554,7 +1554,7 @@ export type EventPassTierSettings186Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings187Free = S<
+export type EventPassTierSettingsApril2026Season187Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_187_FREE",
 		{
@@ -1570,7 +1570,7 @@ export type EventPassTierSettings187Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings188Free = S<
+export type EventPassTierSettingsApril2026Season188Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_188_FREE",
 		{
@@ -1586,7 +1586,7 @@ export type EventPassTierSettings188Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings189Free = S<
+export type EventPassTierSettingsApril2026Season189Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_189_FREE",
 		{
@@ -1602,7 +1602,7 @@ export type EventPassTierSettings189Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings18Free = S<
+export type EventPassTierSettingsApril2026Season18Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_18_FREE",
 		{
@@ -1621,7 +1621,7 @@ export type EventPassTierSettings18Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings190Free = S<
+export type EventPassTierSettingsApril2026Season190Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_190_FREE",
 		{
@@ -1637,7 +1637,7 @@ export type EventPassTierSettings190Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings191Free = S<
+export type EventPassTierSettingsApril2026Season191Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_191_FREE",
 		{
@@ -1653,7 +1653,7 @@ export type EventPassTierSettings191Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings192Free = S<
+export type EventPassTierSettingsApril2026Season192Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_192_FREE",
 		{
@@ -1669,7 +1669,7 @@ export type EventPassTierSettings192Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings193Free = S<
+export type EventPassTierSettingsApril2026Season193Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_193_FREE",
 		{
@@ -1685,7 +1685,7 @@ export type EventPassTierSettings193Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings194Free = S<
+export type EventPassTierSettingsApril2026Season194Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_194_FREE",
 		{
@@ -1701,7 +1701,7 @@ export type EventPassTierSettings194Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings195Free = S<
+export type EventPassTierSettingsApril2026Season195Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_195_FREE",
 		{
@@ -1717,7 +1717,7 @@ export type EventPassTierSettings195Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings196Free = S<
+export type EventPassTierSettingsApril2026Season196Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_196_FREE",
 		{
@@ -1733,7 +1733,7 @@ export type EventPassTierSettings196Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings197Free = S<
+export type EventPassTierSettingsApril2026Season197Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_197_FREE",
 		{
@@ -1749,7 +1749,7 @@ export type EventPassTierSettings197Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings198Free = S<
+export type EventPassTierSettingsApril2026Season198Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_198_FREE",
 		{
@@ -1765,7 +1765,7 @@ export type EventPassTierSettings198Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings199Free = S<
+export type EventPassTierSettingsApril2026Season199Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_199_FREE",
 		{
@@ -1781,7 +1781,7 @@ export type EventPassTierSettings199Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings19Free = S<
+export type EventPassTierSettingsApril2026Season19Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_19_FREE",
 		{
@@ -1800,7 +1800,7 @@ export type EventPassTierSettings19Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings1Free = S<
+export type EventPassTierSettingsApril2026Season1Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_1_FREE",
 		{
@@ -1822,7 +1822,7 @@ export type EventPassTierSettings1Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings200Free = S<
+export type EventPassTierSettingsApril2026Season200Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_200_FREE",
 		{
@@ -1838,7 +1838,7 @@ export type EventPassTierSettings200Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings201Free = S<
+export type EventPassTierSettingsApril2026Season201Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_201_FREE",
 		{
@@ -1854,7 +1854,7 @@ export type EventPassTierSettings201Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings202Free = S<
+export type EventPassTierSettingsApril2026Season202Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_202_FREE",
 		{
@@ -1870,7 +1870,7 @@ export type EventPassTierSettings202Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings203Free = S<
+export type EventPassTierSettingsApril2026Season203Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_203_FREE",
 		{
@@ -1886,7 +1886,7 @@ export type EventPassTierSettings203Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings204Free = S<
+export type EventPassTierSettingsApril2026Season204Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_204_FREE",
 		{
@@ -1902,7 +1902,7 @@ export type EventPassTierSettings204Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings205Free = S<
+export type EventPassTierSettingsApril2026Season205Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_205_FREE",
 		{
@@ -1918,7 +1918,7 @@ export type EventPassTierSettings205Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings206Free = S<
+export type EventPassTierSettingsApril2026Season206Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_206_FREE",
 		{
@@ -1934,7 +1934,7 @@ export type EventPassTierSettings206Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings207Free = S<
+export type EventPassTierSettingsApril2026Season207Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_207_FREE",
 		{
@@ -1950,7 +1950,7 @@ export type EventPassTierSettings207Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings208Free = S<
+export type EventPassTierSettingsApril2026Season208Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_208_FREE",
 		{
@@ -1966,7 +1966,7 @@ export type EventPassTierSettings208Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings209Free = S<
+export type EventPassTierSettingsApril2026Season209Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_209_FREE",
 		{
@@ -1982,7 +1982,7 @@ export type EventPassTierSettings209Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings20Free = S<
+export type EventPassTierSettingsApril2026Season20Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_20_FREE",
 		{
@@ -2001,7 +2001,7 @@ export type EventPassTierSettings20Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings210Free = S<
+export type EventPassTierSettingsApril2026Season210Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_210_FREE",
 		{
@@ -2017,7 +2017,7 @@ export type EventPassTierSettings210Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings21Free = S<
+export type EventPassTierSettingsApril2026Season21Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_21_FREE",
 		{
@@ -2036,7 +2036,7 @@ export type EventPassTierSettings21Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings22Free = S<
+export type EventPassTierSettingsApril2026Season22Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_22_FREE",
 		{
@@ -2058,7 +2058,7 @@ export type EventPassTierSettings22Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings23Free = S<
+export type EventPassTierSettingsApril2026Season23Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_23_FREE",
 		{
@@ -2077,7 +2077,7 @@ export type EventPassTierSettings23Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings24Free = S<
+export type EventPassTierSettingsApril2026Season24Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_24_FREE",
 		{
@@ -2096,7 +2096,7 @@ export type EventPassTierSettings24Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings25Free = S<
+export type EventPassTierSettingsApril2026Season25Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_25_FREE",
 		{
@@ -2148,7 +2148,7 @@ export type EventPassTierSettings25Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings26Free = S<
+export type EventPassTierSettingsApril2026Season26Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_26_FREE",
 		{
@@ -2167,7 +2167,7 @@ export type EventPassTierSettings26Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings27Free = S<
+export type EventPassTierSettingsApril2026Season27Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_27_FREE",
 		{
@@ -2186,7 +2186,7 @@ export type EventPassTierSettings27Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings28Free = S<
+export type EventPassTierSettingsApril2026Season28Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_28_FREE",
 		{
@@ -2205,7 +2205,7 @@ export type EventPassTierSettings28Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings29Free = S<
+export type EventPassTierSettingsApril2026Season29Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_29_FREE",
 		{
@@ -2224,7 +2224,7 @@ export type EventPassTierSettings29Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings2Free = S<
+export type EventPassTierSettingsApril2026Season2Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_2_FREE",
 		{
@@ -2243,7 +2243,7 @@ export type EventPassTierSettings2Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings30Free = S<
+export type EventPassTierSettingsApril2026Season30Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_30_FREE",
 		{
@@ -2262,7 +2262,7 @@ export type EventPassTierSettings30Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings31Free = S<
+export type EventPassTierSettingsApril2026Season31Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_31_FREE",
 		{
@@ -2281,7 +2281,7 @@ export type EventPassTierSettings31Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings32Free = S<
+export type EventPassTierSettingsApril2026Season32Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_32_FREE",
 		{
@@ -2303,7 +2303,7 @@ export type EventPassTierSettings32Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings33Free = S<
+export type EventPassTierSettingsApril2026Season33Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_33_FREE",
 		{
@@ -2322,7 +2322,7 @@ export type EventPassTierSettings33Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings34Free = S<
+export type EventPassTierSettingsApril2026Season34Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_34_FREE",
 		{
@@ -2338,7 +2338,7 @@ export type EventPassTierSettings34Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings35Free = S<
+export type EventPassTierSettingsApril2026Season35Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_35_FREE",
 		{
@@ -2357,7 +2357,7 @@ export type EventPassTierSettings35Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings36Free = S<
+export type EventPassTierSettingsApril2026Season36Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_36_FREE",
 		{
@@ -2373,7 +2373,7 @@ export type EventPassTierSettings36Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings37Free = S<
+export type EventPassTierSettingsApril2026Season37Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_37_FREE",
 		{
@@ -2395,7 +2395,7 @@ export type EventPassTierSettings37Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings38Free = S<
+export type EventPassTierSettingsApril2026Season38Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_38_FREE",
 		{
@@ -2414,7 +2414,7 @@ export type EventPassTierSettings38Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings39Free = S<
+export type EventPassTierSettingsApril2026Season39Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_39_FREE",
 		{
@@ -2433,7 +2433,7 @@ export type EventPassTierSettings39Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings3Free = S<
+export type EventPassTierSettingsApril2026Season3Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_3_FREE",
 		{
@@ -2456,7 +2456,7 @@ export type EventPassTierSettings3Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings40Free = S<
+export type EventPassTierSettingsApril2026Season40Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_40_FREE",
 		{
@@ -2475,7 +2475,7 @@ export type EventPassTierSettings40Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings41Free = S<
+export type EventPassTierSettingsApril2026Season41Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_41_FREE",
 		{
@@ -2494,7 +2494,7 @@ export type EventPassTierSettings41Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings42Free = S<
+export type EventPassTierSettingsApril2026Season42Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_42_FREE",
 		{
@@ -2516,7 +2516,7 @@ export type EventPassTierSettings42Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings43Free = S<
+export type EventPassTierSettingsApril2026Season43Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_43_FREE",
 		{
@@ -2535,7 +2535,7 @@ export type EventPassTierSettings43Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings44Free = S<
+export type EventPassTierSettingsApril2026Season44Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_44_FREE",
 		{
@@ -2551,7 +2551,7 @@ export type EventPassTierSettings44Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings45Free = S<
+export type EventPassTierSettingsApril2026Season45Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_45_FREE",
 		{
@@ -2570,7 +2570,7 @@ export type EventPassTierSettings45Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings46Free = S<
+export type EventPassTierSettingsApril2026Season46Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_46_FREE",
 		{
@@ -2586,7 +2586,7 @@ export type EventPassTierSettings46Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings47Free = S<
+export type EventPassTierSettingsApril2026Season47Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_47_FREE",
 		{
@@ -2608,7 +2608,7 @@ export type EventPassTierSettings47Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings48Free = S<
+export type EventPassTierSettingsApril2026Season48Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_48_FREE",
 		{
@@ -2627,7 +2627,7 @@ export type EventPassTierSettings48Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings49Free = S<
+export type EventPassTierSettingsApril2026Season49Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_49_FREE",
 		{
@@ -2646,7 +2646,7 @@ export type EventPassTierSettings49Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings4Free = S<
+export type EventPassTierSettingsApril2026Season4Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_4_FREE",
 		{
@@ -2665,7 +2665,7 @@ export type EventPassTierSettings4Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings50Free = S<
+export type EventPassTierSettingsApril2026Season50Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_50_FREE",
 		{
@@ -2713,7 +2713,7 @@ export type EventPassTierSettings50Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings51Free = S<
+export type EventPassTierSettingsApril2026Season51Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_51_FREE",
 		{
@@ -2732,7 +2732,7 @@ export type EventPassTierSettings51Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings52Free = S<
+export type EventPassTierSettingsApril2026Season52Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_52_FREE",
 		{
@@ -2751,7 +2751,7 @@ export type EventPassTierSettings52Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings53Free = S<
+export type EventPassTierSettingsApril2026Season53Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_53_FREE",
 		{
@@ -2770,7 +2770,7 @@ export type EventPassTierSettings53Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings54Free = S<
+export type EventPassTierSettingsApril2026Season54Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_54_FREE",
 		{
@@ -2789,7 +2789,7 @@ export type EventPassTierSettings54Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings55Free = S<
+export type EventPassTierSettingsApril2026Season55Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_55_FREE",
 		{
@@ -2808,7 +2808,7 @@ export type EventPassTierSettings55Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings56Free = S<
+export type EventPassTierSettingsApril2026Season56Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_56_FREE",
 		{
@@ -2827,7 +2827,7 @@ export type EventPassTierSettings56Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings57Free = S<
+export type EventPassTierSettingsApril2026Season57Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_57_FREE",
 		{
@@ -2849,7 +2849,7 @@ export type EventPassTierSettings57Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings58Free = S<
+export type EventPassTierSettingsApril2026Season58Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_58_FREE",
 		{
@@ -2868,7 +2868,7 @@ export type EventPassTierSettings58Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings59Free = S<
+export type EventPassTierSettingsApril2026Season59Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_59_FREE",
 		{
@@ -2887,7 +2887,7 @@ export type EventPassTierSettings59Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings5Free = S<
+export type EventPassTierSettingsApril2026Season5Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_5_FREE",
 		{
@@ -2903,7 +2903,7 @@ export type EventPassTierSettings5Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings60Free = S<
+export type EventPassTierSettingsApril2026Season60Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_60_FREE",
 		{
@@ -2922,7 +2922,7 @@ export type EventPassTierSettings60Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings61Free = S<
+export type EventPassTierSettingsApril2026Season61Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_61_FREE",
 		{
@@ -2941,7 +2941,7 @@ export type EventPassTierSettings61Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings62Free = S<
+export type EventPassTierSettingsApril2026Season62Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_62_FREE",
 		{
@@ -2960,7 +2960,7 @@ export type EventPassTierSettings62Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings63Free = S<
+export type EventPassTierSettingsApril2026Season63Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_63_FREE",
 		{
@@ -2979,7 +2979,7 @@ export type EventPassTierSettings63Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings64Free = S<
+export type EventPassTierSettingsApril2026Season64Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_64_FREE",
 		{
@@ -2995,7 +2995,7 @@ export type EventPassTierSettings64Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings65Free = S<
+export type EventPassTierSettingsApril2026Season65Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_65_FREE",
 		{
@@ -3014,7 +3014,7 @@ export type EventPassTierSettings65Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings66Free = S<
+export type EventPassTierSettingsApril2026Season66Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_66_FREE",
 		{
@@ -3030,7 +3030,7 @@ export type EventPassTierSettings66Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings67Free = S<
+export type EventPassTierSettingsApril2026Season67Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_67_FREE",
 		{
@@ -3052,7 +3052,7 @@ export type EventPassTierSettings67Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings68Free = S<
+export type EventPassTierSettingsApril2026Season68Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_68_FREE",
 		{
@@ -3071,7 +3071,7 @@ export type EventPassTierSettings68Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings69Free = S<
+export type EventPassTierSettingsApril2026Season69Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_69_FREE",
 		{
@@ -3090,7 +3090,7 @@ export type EventPassTierSettings69Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings6Free = S<
+export type EventPassTierSettingsApril2026Season6Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_6_FREE",
 		{
@@ -3106,7 +3106,7 @@ export type EventPassTierSettings6Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings70Free = S<
+export type EventPassTierSettingsApril2026Season70Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_70_FREE",
 		{
@@ -3125,7 +3125,7 @@ export type EventPassTierSettings70Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings71Free = S<
+export type EventPassTierSettingsApril2026Season71Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_71_FREE",
 		{
@@ -3144,7 +3144,7 @@ export type EventPassTierSettings71Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings72Free = S<
+export type EventPassTierSettingsApril2026Season72Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_72_FREE",
 		{
@@ -3166,7 +3166,7 @@ export type EventPassTierSettings72Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings73Free = S<
+export type EventPassTierSettingsApril2026Season73Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_73_FREE",
 		{
@@ -3185,7 +3185,7 @@ export type EventPassTierSettings73Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings74Free = S<
+export type EventPassTierSettingsApril2026Season74Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_74_FREE",
 		{
@@ -3204,7 +3204,7 @@ export type EventPassTierSettings74Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings75Free = S<
+export type EventPassTierSettingsApril2026Season75Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_75_FREE",
 		{
@@ -3264,7 +3264,7 @@ export type EventPassTierSettings75Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings76Free = S<
+export type EventPassTierSettingsApril2026Season76Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_76_FREE",
 		{
@@ -3283,7 +3283,7 @@ export type EventPassTierSettings76Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings77Free = S<
+export type EventPassTierSettingsApril2026Season77Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_77_FREE",
 		{
@@ -3306,7 +3306,7 @@ export type EventPassTierSettings77Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings78Free = S<
+export type EventPassTierSettingsApril2026Season78Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_78_FREE",
 		{
@@ -3325,7 +3325,7 @@ export type EventPassTierSettings78Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings79Free = S<
+export type EventPassTierSettingsApril2026Season79Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_79_FREE",
 		{
@@ -3341,7 +3341,7 @@ export type EventPassTierSettings79Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings7Free = S<
+export type EventPassTierSettingsApril2026Season7Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_7_FREE",
 		{
@@ -3363,7 +3363,7 @@ export type EventPassTierSettings7Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings80Free = S<
+export type EventPassTierSettingsApril2026Season80Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_80_FREE",
 		{
@@ -3382,7 +3382,7 @@ export type EventPassTierSettings80Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings81Free = S<
+export type EventPassTierSettingsApril2026Season81Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_81_FREE",
 		{
@@ -3398,7 +3398,7 @@ export type EventPassTierSettings81Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings82Free = S<
+export type EventPassTierSettingsApril2026Season82Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_82_FREE",
 		{
@@ -3417,7 +3417,7 @@ export type EventPassTierSettings82Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings83Free = S<
+export type EventPassTierSettingsApril2026Season83Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_83_FREE",
 		{
@@ -3436,7 +3436,7 @@ export type EventPassTierSettings83Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings84Free = S<
+export type EventPassTierSettingsApril2026Season84Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_84_FREE",
 		{
@@ -3455,7 +3455,7 @@ export type EventPassTierSettings84Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings85Free = S<
+export type EventPassTierSettingsApril2026Season85Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_85_FREE",
 		{
@@ -3474,7 +3474,7 @@ export type EventPassTierSettings85Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings86Free = S<
+export type EventPassTierSettingsApril2026Season86Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_86_FREE",
 		{
@@ -3493,7 +3493,7 @@ export type EventPassTierSettings86Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings87Free = S<
+export type EventPassTierSettingsApril2026Season87Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_87_FREE",
 		{
@@ -3515,7 +3515,7 @@ export type EventPassTierSettings87Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings88Free = S<
+export type EventPassTierSettingsApril2026Season88Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_88_FREE",
 		{
@@ -3534,7 +3534,7 @@ export type EventPassTierSettings88Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings89Free = S<
+export type EventPassTierSettingsApril2026Season89Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_89_FREE",
 		{
@@ -3553,7 +3553,7 @@ export type EventPassTierSettings89Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings8Free = S<
+export type EventPassTierSettingsApril2026Season8Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_8_FREE",
 		{
@@ -3572,7 +3572,7 @@ export type EventPassTierSettings8Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings90Free = S<
+export type EventPassTierSettingsApril2026Season90Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_90_FREE",
 		{
@@ -3591,7 +3591,7 @@ export type EventPassTierSettings90Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings91Free = S<
+export type EventPassTierSettingsApril2026Season91Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_91_FREE",
 		{
@@ -3610,7 +3610,7 @@ export type EventPassTierSettings91Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings92Free = S<
+export type EventPassTierSettingsApril2026Season92Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_92_FREE",
 		{
@@ -3632,7 +3632,7 @@ export type EventPassTierSettings92Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings93Free = S<
+export type EventPassTierSettingsApril2026Season93Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_93_FREE",
 		{
@@ -3651,7 +3651,7 @@ export type EventPassTierSettings93Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings94Free = S<
+export type EventPassTierSettingsApril2026Season94Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_94_FREE",
 		{
@@ -3670,7 +3670,7 @@ export type EventPassTierSettings94Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings95Free = S<
+export type EventPassTierSettingsApril2026Season95Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_95_FREE",
 		{
@@ -3689,7 +3689,7 @@ export type EventPassTierSettings95Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings96Free = S<
+export type EventPassTierSettingsApril2026Season96Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_96_FREE",
 		{
@@ -3708,7 +3708,7 @@ export type EventPassTierSettings96Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings97Free = S<
+export type EventPassTierSettingsApril2026Season97Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_97_FREE",
 		{
@@ -3727,7 +3727,7 @@ export type EventPassTierSettings97Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings98Free = S<
+export type EventPassTierSettingsApril2026Season98Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_98_FREE",
 		{
@@ -3743,7 +3743,7 @@ export type EventPassTierSettings98Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings99Free = S<
+export type EventPassTierSettingsApril2026Season99Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_99_FREE",
 		{
@@ -3759,7 +3759,7 @@ export type EventPassTierSettings99Free = S<
 		}
 	>
 >;
-export type EventPassTierSettings9Free = S<
+export type EventPassTierSettingsApril2026Season9Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_9_FREE",
 		{
@@ -3778,215 +3778,2052 @@ export type EventPassTierSettings9Free = S<
 		}
 	>
 >;
+export type EventPassTierSettingsSteeledresolve2026Event100Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_100_FREE",
+		{
+			minPointsRequired: 9900;
+			rank: 100;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event10Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_10_FREE",
+		{
+			activeBonusDisplaySettings: {
+				bonusBoxes: [
+					{
+						iconType: "CANDY_GENERAL";
+						text: "catch_candy_double";
+					},
+				];
+			};
+			bonusSettings: {
+				bonusBoxes: [
+					{
+						iconType: "CANDY_GENERAL";
+						text: "catch_candy_double";
+					},
+				];
+				eventName: "season_pass_milestone_bonus_title_01";
+			};
+			minPointsRequired: 900;
+			rank: 10;
+			rewards: [
+				{
+					playerAttribute: {
+						durationMins: 131487;
+						key: "steeledresolve2026_season_pass_rank_01";
+					};
+					type: "PLAYER_ATTRIBUTE";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event11Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_11_FREE",
+		{
+			minPointsRequired: 1000;
+			rank: 11;
+			rewards: [
+				{
+					candy: {
+						amount: 10;
+						pokemonId: "BELDUM";
+					};
+					type: "CANDY";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event12Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_12_FREE",
+		{
+			minPointsRequired: 1100;
+			rank: 12;
+			rewards: [
+				{
+					pokemonEncounter: {
+						isFeaturedPokemon: true;
+						pokemonDisplay: {
+							form: "BELDUM_NORMAL";
+						};
+						pokemonId: "BELDUM";
+					};
+					type: "POKEMON_ENCOUNTER";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event13Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_13_FREE",
+		{
+			minPointsRequired: 1200;
+			rank: 13;
+			rewards: [
+				{
+					item: {
+						amount: 3;
+						item: "ITEM_RAZZ_BERRY";
+					};
+					type: "ITEM";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event14Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_14_FREE",
+		{
+			minPointsRequired: 1300;
+			rank: 14;
+			rewards: [
+				{
+					stardust: 2500;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event15Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_15_FREE",
+		{
+			minPointsRequired: 1400;
+			rank: 15;
+			rewards: [
+				{
+					item: {
+						amount: 2;
+						item: "ITEM_REVIVE";
+					};
+					type: "ITEM";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event16Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_16_FREE",
+		{
+			minPointsRequired: 1500;
+			rank: 16;
+			rewards: [
+				{
+					item: {
+						amount: 2;
+						item: "ITEM_SUPER_POTION";
+					};
+					type: "ITEM";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event17Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_17_FREE",
+		{
+			minPointsRequired: 1600;
+			rank: 17;
+			rewards: [
+				{
+					item: {
+						amount: 12;
+						item: "ITEM_SHADOW_GEM_FRAGMENT";
+					};
+					type: "ITEM";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event18Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_18_FREE",
+		{
+			minPointsRequired: 1700;
+			rank: 18;
+			rewards: [
+				{
+					candy: {
+						amount: 10;
+						pokemonId: "PAWNIARD";
+					};
+					type: "CANDY";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event19Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_19_FREE",
+		{
+			minPointsRequired: 1800;
+			rank: 19;
+			rewards: [
+				{
+					pokemonEncounter: {
+						isFeaturedPokemon: true;
+						pokemonDisplay: {
+							form: "PAWNIARD_NORMAL";
+						};
+						pokemonId: "PAWNIARD";
+					};
+					type: "POKEMON_ENCOUNTER";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event1Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_1_FREE",
+		{
+			rank: 1;
+			rewards: [
+				{
+					exp: 2500;
+					type: "EXPERIENCE";
+				},
+				{
+					playerAttribute: {
+						durationMins: 131487;
+						key: "steeledresolve2026_season_pass_entitlement";
+					};
+					type: "PLAYER_ATTRIBUTE";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event20Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_20_FREE",
+		{
+			activeBonusDisplaySettings: {
+				bonusBoxes: [
+					{
+						iconType: "CANDY_GENERAL";
+						text: "catch_candy_double";
+					},
+					{
+						iconType: "TEAM_ROCKET";
+						text: "rocket_stardust_double";
+					},
+				];
+			};
+			bonusSettings: {
+				bonusBoxes: [
+					{
+						iconType: "TEAM_ROCKET";
+						text: "rocket_stardust_double";
+					},
+				];
+				eventName: "season_pass_milestone_bonus_title_02";
+			};
+			minPointsRequired: 1900;
+			rank: 20;
+			rewards: [
+				{
+					playerAttribute: {
+						durationMins: 131487;
+						key: "steeledresolve2026_season_pass_rank_02";
+					};
+					type: "PLAYER_ATTRIBUTE";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event21Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_21_FREE",
+		{
+			minPointsRequired: 2000;
+			rank: 21;
+			rewards: [
+				{
+					candy: {
+						amount: 10;
+						pokemonId: "HONEDGE";
+					};
+					type: "CANDY";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event22Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_22_FREE",
+		{
+			minPointsRequired: 2100;
+			rank: 22;
+			rewards: [
+				{
+					pokemonEncounter: {
+						isFeaturedPokemon: true;
+						pokemonDisplay: {
+							form: "HONEDGE_NORMAL";
+						};
+						pokemonId: "HONEDGE";
+					};
+					type: "POKEMON_ENCOUNTER";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event23Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_23_FREE",
+		{
+			minPointsRequired: 2200;
+			rank: 23;
+			rewards: [
+				{
+					item: {
+						amount: 10;
+						item: "ITEM_ULTRA_BALL";
+					};
+					type: "ITEM";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event24Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_24_FREE",
+		{
+			minPointsRequired: 2300;
+			rank: 24;
+			rewards: [
+				{
+					item: {
+						amount: 12;
+						item: "ITEM_SHADOW_GEM_FRAGMENT";
+					};
+					type: "ITEM";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event25Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_25_FREE",
+		{
+			minPointsRequired: 2400;
+			rank: 25;
+			rewards: [
+				{
+					stardust: 2500;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event26Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_26_FREE",
+		{
+			minPointsRequired: 2500;
+			rank: 26;
+			rewards: [
+				{
+					item: {
+						amount: 3;
+						item: "ITEM_LEADER_MAP_FRAGMENT";
+					};
+					type: "ITEM";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event27Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_27_FREE",
+		{
+			minPointsRequired: 2600;
+			rank: 27;
+			rewards: [
+				{
+					exp: 5000;
+					type: "EXPERIENCE";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event28Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_28_FREE",
+		{
+			minPointsRequired: 2700;
+			rank: 28;
+			rewards: [
+				{
+					candy: {
+						amount: 10;
+						pokemonId: "MELTAN";
+					};
+					type: "CANDY";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event29Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_29_FREE",
+		{
+			minPointsRequired: 2800;
+			rank: 29;
+			rewards: [
+				{
+					pokemonEncounter: {
+						isFeaturedPokemon: true;
+						pokemonDisplay: {
+							form: "MELTAN_NORMAL";
+						};
+						pokemonId: "MELTAN";
+					};
+					type: "POKEMON_ENCOUNTER";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event2Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_2_FREE",
+		{
+			minPointsRequired: 100;
+			rank: 2;
+			rewards: [
+				{
+					item: {
+						amount: 10;
+						item: "ITEM_POKE_BALL";
+					};
+					type: "ITEM";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event30Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_30_FREE",
+		{
+			minPointsRequired: 2900;
+			rank: 30;
+			rewards: [
+				{
+					item: {
+						amount: 1;
+						item: "ITEM_GIOVANNI_MAP";
+					};
+					type: "ITEM";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event31Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_31_FREE",
+		{
+			minPointsRequired: 3000;
+			rank: 31;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event32Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_32_FREE",
+		{
+			minPointsRequired: 3100;
+			rank: 32;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event33Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_33_FREE",
+		{
+			minPointsRequired: 3200;
+			rank: 33;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event34Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_34_FREE",
+		{
+			minPointsRequired: 3300;
+			rank: 34;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event35Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_35_FREE",
+		{
+			minPointsRequired: 3400;
+			rank: 35;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event36Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_36_FREE",
+		{
+			minPointsRequired: 3500;
+			rank: 36;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event37Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_37_FREE",
+		{
+			minPointsRequired: 3600;
+			rank: 37;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event38Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_38_FREE",
+		{
+			minPointsRequired: 3700;
+			rank: 38;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event39Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_39_FREE",
+		{
+			minPointsRequired: 3800;
+			rank: 39;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event3Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_3_FREE",
+		{
+			minPointsRequired: 200;
+			rank: 3;
+			rewards: [
+				{
+					item: {
+						amount: 3;
+						item: "ITEM_PINAP_BERRY";
+					};
+					type: "ITEM";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event40Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_40_FREE",
+		{
+			minPointsRequired: 3900;
+			rank: 40;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event41Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_41_FREE",
+		{
+			minPointsRequired: 4000;
+			rank: 41;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event42Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_42_FREE",
+		{
+			minPointsRequired: 4100;
+			rank: 42;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event43Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_43_FREE",
+		{
+			minPointsRequired: 4200;
+			rank: 43;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event44Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_44_FREE",
+		{
+			minPointsRequired: 4300;
+			rank: 44;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event45Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_45_FREE",
+		{
+			minPointsRequired: 4400;
+			rank: 45;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event46Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_46_FREE",
+		{
+			minPointsRequired: 4500;
+			rank: 46;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event47Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_47_FREE",
+		{
+			minPointsRequired: 4600;
+			rank: 47;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event48Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_48_FREE",
+		{
+			minPointsRequired: 4700;
+			rank: 48;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event49Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_49_FREE",
+		{
+			minPointsRequired: 4800;
+			rank: 49;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event4Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_4_FREE",
+		{
+			minPointsRequired: 300;
+			rank: 4;
+			rewards: [
+				{
+					candy: {
+						amount: 10;
+						pokemonId: "FERROSEED";
+					};
+					type: "CANDY";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event50Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_50_FREE",
+		{
+			minPointsRequired: 4900;
+			rank: 50;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event51Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_51_FREE",
+		{
+			minPointsRequired: 5000;
+			rank: 51;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event52Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_52_FREE",
+		{
+			minPointsRequired: 5100;
+			rank: 52;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event53Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_53_FREE",
+		{
+			minPointsRequired: 5200;
+			rank: 53;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event54Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_54_FREE",
+		{
+			minPointsRequired: 5300;
+			rank: 54;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event55Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_55_FREE",
+		{
+			minPointsRequired: 5400;
+			rank: 55;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event56Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_56_FREE",
+		{
+			minPointsRequired: 5500;
+			rank: 56;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event57Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_57_FREE",
+		{
+			minPointsRequired: 5600;
+			rank: 57;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event58Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_58_FREE",
+		{
+			minPointsRequired: 5700;
+			rank: 58;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event59Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_59_FREE",
+		{
+			minPointsRequired: 5800;
+			rank: 59;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event5Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_5_FREE",
+		{
+			minPointsRequired: 400;
+			rank: 5;
+			rewards: [
+				{
+					pokemonEncounter: {
+						isFeaturedPokemon: true;
+						pokemonDisplay: {
+							form: "FERROSEED_NORMAL";
+						};
+						pokemonId: "FERROSEED";
+					};
+					type: "POKEMON_ENCOUNTER";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event60Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_60_FREE",
+		{
+			minPointsRequired: 5900;
+			rank: 60;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event61Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_61_FREE",
+		{
+			minPointsRequired: 6000;
+			rank: 61;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event62Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_62_FREE",
+		{
+			minPointsRequired: 6100;
+			rank: 62;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event63Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_63_FREE",
+		{
+			minPointsRequired: 6200;
+			rank: 63;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event64Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_64_FREE",
+		{
+			minPointsRequired: 6300;
+			rank: 64;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event65Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_65_FREE",
+		{
+			minPointsRequired: 6400;
+			rank: 65;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event66Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_66_FREE",
+		{
+			minPointsRequired: 6500;
+			rank: 66;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event67Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_67_FREE",
+		{
+			minPointsRequired: 6600;
+			rank: 67;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event68Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_68_FREE",
+		{
+			minPointsRequired: 6700;
+			rank: 68;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event69Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_69_FREE",
+		{
+			minPointsRequired: 6800;
+			rank: 69;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event6Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_6_FREE",
+		{
+			minPointsRequired: 500;
+			rank: 6;
+			rewards: [
+				{
+					item: {
+						amount: 10;
+						item: "ITEM_GREAT_BALL";
+					};
+					type: "ITEM";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event70Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_70_FREE",
+		{
+			minPointsRequired: 6900;
+			rank: 70;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event71Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_71_FREE",
+		{
+			minPointsRequired: 7000;
+			rank: 71;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event72Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_72_FREE",
+		{
+			minPointsRequired: 7100;
+			rank: 72;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event73Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_73_FREE",
+		{
+			minPointsRequired: 7200;
+			rank: 73;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event74Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_74_FREE",
+		{
+			minPointsRequired: 7300;
+			rank: 74;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event75Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_75_FREE",
+		{
+			minPointsRequired: 7400;
+			rank: 75;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event76Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_76_FREE",
+		{
+			minPointsRequired: 7500;
+			rank: 76;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event77Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_77_FREE",
+		{
+			minPointsRequired: 7600;
+			rank: 77;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event78Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_78_FREE",
+		{
+			minPointsRequired: 7700;
+			rank: 78;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event79Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_79_FREE",
+		{
+			minPointsRequired: 7800;
+			rank: 79;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event7Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_7_FREE",
+		{
+			minPointsRequired: 600;
+			rank: 7;
+			rewards: [
+				{
+					stardust: 2500;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event80Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_80_FREE",
+		{
+			minPointsRequired: 7900;
+			rank: 80;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event81Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_81_FREE",
+		{
+			minPointsRequired: 8000;
+			rank: 81;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event82Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_82_FREE",
+		{
+			minPointsRequired: 8100;
+			rank: 82;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event83Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_83_FREE",
+		{
+			minPointsRequired: 8200;
+			rank: 83;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event84Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_84_FREE",
+		{
+			minPointsRequired: 8300;
+			rank: 84;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event85Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_85_FREE",
+		{
+			minPointsRequired: 8400;
+			rank: 85;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event86Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_86_FREE",
+		{
+			minPointsRequired: 8500;
+			rank: 86;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event87Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_87_FREE",
+		{
+			minPointsRequired: 8600;
+			rank: 87;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event88Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_88_FREE",
+		{
+			minPointsRequired: 8700;
+			rank: 88;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event89Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_89_FREE",
+		{
+			minPointsRequired: 8800;
+			rank: 89;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event8Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_8_FREE",
+		{
+			minPointsRequired: 700;
+			rank: 8;
+			rewards: [
+				{
+					candy: {
+						amount: 10;
+						pokemonId: "SHIELDON";
+					};
+					type: "CANDY";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event90Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_90_FREE",
+		{
+			minPointsRequired: 8900;
+			rank: 90;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event91Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_91_FREE",
+		{
+			minPointsRequired: 9000;
+			rank: 91;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event92Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_92_FREE",
+		{
+			minPointsRequired: 9100;
+			rank: 92;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event93Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_93_FREE",
+		{
+			minPointsRequired: 9200;
+			rank: 93;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event94Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_94_FREE",
+		{
+			minPointsRequired: 9300;
+			rank: 94;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event95Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_95_FREE",
+		{
+			minPointsRequired: 9400;
+			rank: 95;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event96Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_96_FREE",
+		{
+			minPointsRequired: 9500;
+			rank: 96;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event97Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_97_FREE",
+		{
+			minPointsRequired: 9600;
+			rank: 97;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event98Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_98_FREE",
+		{
+			minPointsRequired: 9700;
+			rank: 98;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event99Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_99_FREE",
+		{
+			minPointsRequired: 9800;
+			rank: 99;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event9Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_9_FREE",
+		{
+			minPointsRequired: 800;
+			rank: 9;
+			rewards: [
+				{
+					pokemonEncounter: {
+						isFeaturedPokemon: true;
+						pokemonDisplay: {
+							form: "SHIELDON_NORMAL";
+						};
+						pokemonId: "SHIELDON";
+					};
+					type: "POKEMON_ENCOUNTER";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
 
 export type EventPassTierSettingsFreeMasterfileEntry =
-	| EventPassTierSettings100Free
-	| EventPassTierSettings101Free
-	| EventPassTierSettings102Free
-	| EventPassTierSettings103Free
-	| EventPassTierSettings104Free
-	| EventPassTierSettings105Free
-	| EventPassTierSettings106Free
-	| EventPassTierSettings107Free
-	| EventPassTierSettings108Free
-	| EventPassTierSettings109Free
-	| EventPassTierSettings10Free
-	| EventPassTierSettings110Free
-	| EventPassTierSettings111Free
-	| EventPassTierSettings112Free
-	| EventPassTierSettings113Free
-	| EventPassTierSettings114Free
-	| EventPassTierSettings115Free
-	| EventPassTierSettings116Free
-	| EventPassTierSettings117Free
-	| EventPassTierSettings118Free
-	| EventPassTierSettings119Free
-	| EventPassTierSettings11Free
-	| EventPassTierSettings120Free
-	| EventPassTierSettings121Free
-	| EventPassTierSettings122Free
-	| EventPassTierSettings123Free
-	| EventPassTierSettings124Free
-	| EventPassTierSettings125Free
-	| EventPassTierSettings126Free
-	| EventPassTierSettings127Free
-	| EventPassTierSettings128Free
-	| EventPassTierSettings129Free
-	| EventPassTierSettings12Free
-	| EventPassTierSettings130Free
-	| EventPassTierSettings131Free
-	| EventPassTierSettings132Free
-	| EventPassTierSettings133Free
-	| EventPassTierSettings134Free
-	| EventPassTierSettings135Free
-	| EventPassTierSettings136Free
-	| EventPassTierSettings137Free
-	| EventPassTierSettings138Free
-	| EventPassTierSettings139Free
-	| EventPassTierSettings13Free
-	| EventPassTierSettings140Free
-	| EventPassTierSettings141Free
-	| EventPassTierSettings142Free
-	| EventPassTierSettings143Free
-	| EventPassTierSettings144Free
-	| EventPassTierSettings145Free
-	| EventPassTierSettings146Free
-	| EventPassTierSettings147Free
-	| EventPassTierSettings148Free
-	| EventPassTierSettings149Free
-	| EventPassTierSettings14Free
-	| EventPassTierSettings150Free
-	| EventPassTierSettings151Free
-	| EventPassTierSettings152Free
-	| EventPassTierSettings153Free
-	| EventPassTierSettings154Free
-	| EventPassTierSettings155Free
-	| EventPassTierSettings156Free
-	| EventPassTierSettings157Free
-	| EventPassTierSettings158Free
-	| EventPassTierSettings159Free
-	| EventPassTierSettings15Free
-	| EventPassTierSettings160Free
-	| EventPassTierSettings161Free
-	| EventPassTierSettings162Free
-	| EventPassTierSettings163Free
-	| EventPassTierSettings164Free
-	| EventPassTierSettings165Free
-	| EventPassTierSettings166Free
-	| EventPassTierSettings167Free
-	| EventPassTierSettings168Free
-	| EventPassTierSettings169Free
-	| EventPassTierSettings16Free
-	| EventPassTierSettings170Free
-	| EventPassTierSettings171Free
-	| EventPassTierSettings172Free
-	| EventPassTierSettings173Free
-	| EventPassTierSettings174Free
-	| EventPassTierSettings175Free
-	| EventPassTierSettings176Free
-	| EventPassTierSettings177Free
-	| EventPassTierSettings178Free
-	| EventPassTierSettings179Free
-	| EventPassTierSettings17Free
-	| EventPassTierSettings180Free
-	| EventPassTierSettings181Free
-	| EventPassTierSettings182Free
-	| EventPassTierSettings183Free
-	| EventPassTierSettings184Free
-	| EventPassTierSettings185Free
-	| EventPassTierSettings186Free
-	| EventPassTierSettings187Free
-	| EventPassTierSettings188Free
-	| EventPassTierSettings189Free
-	| EventPassTierSettings18Free
-	| EventPassTierSettings190Free
-	| EventPassTierSettings191Free
-	| EventPassTierSettings192Free
-	| EventPassTierSettings193Free
-	| EventPassTierSettings194Free
-	| EventPassTierSettings195Free
-	| EventPassTierSettings196Free
-	| EventPassTierSettings197Free
-	| EventPassTierSettings198Free
-	| EventPassTierSettings199Free
-	| EventPassTierSettings19Free
-	| EventPassTierSettings1Free
-	| EventPassTierSettings200Free
-	| EventPassTierSettings201Free
-	| EventPassTierSettings202Free
-	| EventPassTierSettings203Free
-	| EventPassTierSettings204Free
-	| EventPassTierSettings205Free
-	| EventPassTierSettings206Free
-	| EventPassTierSettings207Free
-	| EventPassTierSettings208Free
-	| EventPassTierSettings209Free
-	| EventPassTierSettings20Free
-	| EventPassTierSettings210Free
-	| EventPassTierSettings21Free
-	| EventPassTierSettings22Free
-	| EventPassTierSettings23Free
-	| EventPassTierSettings24Free
-	| EventPassTierSettings25Free
-	| EventPassTierSettings26Free
-	| EventPassTierSettings27Free
-	| EventPassTierSettings28Free
-	| EventPassTierSettings29Free
-	| EventPassTierSettings2Free
-	| EventPassTierSettings30Free
-	| EventPassTierSettings31Free
-	| EventPassTierSettings32Free
-	| EventPassTierSettings33Free
-	| EventPassTierSettings34Free
-	| EventPassTierSettings35Free
-	| EventPassTierSettings36Free
-	| EventPassTierSettings37Free
-	| EventPassTierSettings38Free
-	| EventPassTierSettings39Free
-	| EventPassTierSettings3Free
-	| EventPassTierSettings40Free
-	| EventPassTierSettings41Free
-	| EventPassTierSettings42Free
-	| EventPassTierSettings43Free
-	| EventPassTierSettings44Free
-	| EventPassTierSettings45Free
-	| EventPassTierSettings46Free
-	| EventPassTierSettings47Free
-	| EventPassTierSettings48Free
-	| EventPassTierSettings49Free
-	| EventPassTierSettings4Free
-	| EventPassTierSettings50Free
-	| EventPassTierSettings51Free
-	| EventPassTierSettings52Free
-	| EventPassTierSettings53Free
-	| EventPassTierSettings54Free
-	| EventPassTierSettings55Free
-	| EventPassTierSettings56Free
-	| EventPassTierSettings57Free
-	| EventPassTierSettings58Free
-	| EventPassTierSettings59Free
-	| EventPassTierSettings5Free
-	| EventPassTierSettings60Free
-	| EventPassTierSettings61Free
-	| EventPassTierSettings62Free
-	| EventPassTierSettings63Free
-	| EventPassTierSettings64Free
-	| EventPassTierSettings65Free
-	| EventPassTierSettings66Free
-	| EventPassTierSettings67Free
-	| EventPassTierSettings68Free
-	| EventPassTierSettings69Free
-	| EventPassTierSettings6Free
-	| EventPassTierSettings70Free
-	| EventPassTierSettings71Free
-	| EventPassTierSettings72Free
-	| EventPassTierSettings73Free
-	| EventPassTierSettings74Free
-	| EventPassTierSettings75Free
-	| EventPassTierSettings76Free
-	| EventPassTierSettings77Free
-	| EventPassTierSettings78Free
-	| EventPassTierSettings79Free
-	| EventPassTierSettings7Free
-	| EventPassTierSettings80Free
-	| EventPassTierSettings81Free
-	| EventPassTierSettings82Free
-	| EventPassTierSettings83Free
-	| EventPassTierSettings84Free
-	| EventPassTierSettings85Free
-	| EventPassTierSettings86Free
-	| EventPassTierSettings87Free
-	| EventPassTierSettings88Free
-	| EventPassTierSettings89Free
-	| EventPassTierSettings8Free
-	| EventPassTierSettings90Free
-	| EventPassTierSettings91Free
-	| EventPassTierSettings92Free
-	| EventPassTierSettings93Free
-	| EventPassTierSettings94Free
-	| EventPassTierSettings95Free
-	| EventPassTierSettings96Free
-	| EventPassTierSettings97Free
-	| EventPassTierSettings98Free
-	| EventPassTierSettings99Free
-	| EventPassTierSettings9Free;
+	| EventPassTierSettingsApril2026Season100Free
+	| EventPassTierSettingsApril2026Season101Free
+	| EventPassTierSettingsApril2026Season102Free
+	| EventPassTierSettingsApril2026Season103Free
+	| EventPassTierSettingsApril2026Season104Free
+	| EventPassTierSettingsApril2026Season105Free
+	| EventPassTierSettingsApril2026Season106Free
+	| EventPassTierSettingsApril2026Season107Free
+	| EventPassTierSettingsApril2026Season108Free
+	| EventPassTierSettingsApril2026Season109Free
+	| EventPassTierSettingsApril2026Season10Free
+	| EventPassTierSettingsApril2026Season110Free
+	| EventPassTierSettingsApril2026Season111Free
+	| EventPassTierSettingsApril2026Season112Free
+	| EventPassTierSettingsApril2026Season113Free
+	| EventPassTierSettingsApril2026Season114Free
+	| EventPassTierSettingsApril2026Season115Free
+	| EventPassTierSettingsApril2026Season116Free
+	| EventPassTierSettingsApril2026Season117Free
+	| EventPassTierSettingsApril2026Season118Free
+	| EventPassTierSettingsApril2026Season119Free
+	| EventPassTierSettingsApril2026Season11Free
+	| EventPassTierSettingsApril2026Season120Free
+	| EventPassTierSettingsApril2026Season121Free
+	| EventPassTierSettingsApril2026Season122Free
+	| EventPassTierSettingsApril2026Season123Free
+	| EventPassTierSettingsApril2026Season124Free
+	| EventPassTierSettingsApril2026Season125Free
+	| EventPassTierSettingsApril2026Season126Free
+	| EventPassTierSettingsApril2026Season127Free
+	| EventPassTierSettingsApril2026Season128Free
+	| EventPassTierSettingsApril2026Season129Free
+	| EventPassTierSettingsApril2026Season12Free
+	| EventPassTierSettingsApril2026Season130Free
+	| EventPassTierSettingsApril2026Season131Free
+	| EventPassTierSettingsApril2026Season132Free
+	| EventPassTierSettingsApril2026Season133Free
+	| EventPassTierSettingsApril2026Season134Free
+	| EventPassTierSettingsApril2026Season135Free
+	| EventPassTierSettingsApril2026Season136Free
+	| EventPassTierSettingsApril2026Season137Free
+	| EventPassTierSettingsApril2026Season138Free
+	| EventPassTierSettingsApril2026Season139Free
+	| EventPassTierSettingsApril2026Season13Free
+	| EventPassTierSettingsApril2026Season140Free
+	| EventPassTierSettingsApril2026Season141Free
+	| EventPassTierSettingsApril2026Season142Free
+	| EventPassTierSettingsApril2026Season143Free
+	| EventPassTierSettingsApril2026Season144Free
+	| EventPassTierSettingsApril2026Season145Free
+	| EventPassTierSettingsApril2026Season146Free
+	| EventPassTierSettingsApril2026Season147Free
+	| EventPassTierSettingsApril2026Season148Free
+	| EventPassTierSettingsApril2026Season149Free
+	| EventPassTierSettingsApril2026Season14Free
+	| EventPassTierSettingsApril2026Season150Free
+	| EventPassTierSettingsApril2026Season151Free
+	| EventPassTierSettingsApril2026Season152Free
+	| EventPassTierSettingsApril2026Season153Free
+	| EventPassTierSettingsApril2026Season154Free
+	| EventPassTierSettingsApril2026Season155Free
+	| EventPassTierSettingsApril2026Season156Free
+	| EventPassTierSettingsApril2026Season157Free
+	| EventPassTierSettingsApril2026Season158Free
+	| EventPassTierSettingsApril2026Season159Free
+	| EventPassTierSettingsApril2026Season15Free
+	| EventPassTierSettingsApril2026Season160Free
+	| EventPassTierSettingsApril2026Season161Free
+	| EventPassTierSettingsApril2026Season162Free
+	| EventPassTierSettingsApril2026Season163Free
+	| EventPassTierSettingsApril2026Season164Free
+	| EventPassTierSettingsApril2026Season165Free
+	| EventPassTierSettingsApril2026Season166Free
+	| EventPassTierSettingsApril2026Season167Free
+	| EventPassTierSettingsApril2026Season168Free
+	| EventPassTierSettingsApril2026Season169Free
+	| EventPassTierSettingsApril2026Season16Free
+	| EventPassTierSettingsApril2026Season170Free
+	| EventPassTierSettingsApril2026Season171Free
+	| EventPassTierSettingsApril2026Season172Free
+	| EventPassTierSettingsApril2026Season173Free
+	| EventPassTierSettingsApril2026Season174Free
+	| EventPassTierSettingsApril2026Season175Free
+	| EventPassTierSettingsApril2026Season176Free
+	| EventPassTierSettingsApril2026Season177Free
+	| EventPassTierSettingsApril2026Season178Free
+	| EventPassTierSettingsApril2026Season179Free
+	| EventPassTierSettingsApril2026Season17Free
+	| EventPassTierSettingsApril2026Season180Free
+	| EventPassTierSettingsApril2026Season181Free
+	| EventPassTierSettingsApril2026Season182Free
+	| EventPassTierSettingsApril2026Season183Free
+	| EventPassTierSettingsApril2026Season184Free
+	| EventPassTierSettingsApril2026Season185Free
+	| EventPassTierSettingsApril2026Season186Free
+	| EventPassTierSettingsApril2026Season187Free
+	| EventPassTierSettingsApril2026Season188Free
+	| EventPassTierSettingsApril2026Season189Free
+	| EventPassTierSettingsApril2026Season18Free
+	| EventPassTierSettingsApril2026Season190Free
+	| EventPassTierSettingsApril2026Season191Free
+	| EventPassTierSettingsApril2026Season192Free
+	| EventPassTierSettingsApril2026Season193Free
+	| EventPassTierSettingsApril2026Season194Free
+	| EventPassTierSettingsApril2026Season195Free
+	| EventPassTierSettingsApril2026Season196Free
+	| EventPassTierSettingsApril2026Season197Free
+	| EventPassTierSettingsApril2026Season198Free
+	| EventPassTierSettingsApril2026Season199Free
+	| EventPassTierSettingsApril2026Season19Free
+	| EventPassTierSettingsApril2026Season1Free
+	| EventPassTierSettingsApril2026Season200Free
+	| EventPassTierSettingsApril2026Season201Free
+	| EventPassTierSettingsApril2026Season202Free
+	| EventPassTierSettingsApril2026Season203Free
+	| EventPassTierSettingsApril2026Season204Free
+	| EventPassTierSettingsApril2026Season205Free
+	| EventPassTierSettingsApril2026Season206Free
+	| EventPassTierSettingsApril2026Season207Free
+	| EventPassTierSettingsApril2026Season208Free
+	| EventPassTierSettingsApril2026Season209Free
+	| EventPassTierSettingsApril2026Season20Free
+	| EventPassTierSettingsApril2026Season210Free
+	| EventPassTierSettingsApril2026Season21Free
+	| EventPassTierSettingsApril2026Season22Free
+	| EventPassTierSettingsApril2026Season23Free
+	| EventPassTierSettingsApril2026Season24Free
+	| EventPassTierSettingsApril2026Season25Free
+	| EventPassTierSettingsApril2026Season26Free
+	| EventPassTierSettingsApril2026Season27Free
+	| EventPassTierSettingsApril2026Season28Free
+	| EventPassTierSettingsApril2026Season29Free
+	| EventPassTierSettingsApril2026Season2Free
+	| EventPassTierSettingsApril2026Season30Free
+	| EventPassTierSettingsApril2026Season31Free
+	| EventPassTierSettingsApril2026Season32Free
+	| EventPassTierSettingsApril2026Season33Free
+	| EventPassTierSettingsApril2026Season34Free
+	| EventPassTierSettingsApril2026Season35Free
+	| EventPassTierSettingsApril2026Season36Free
+	| EventPassTierSettingsApril2026Season37Free
+	| EventPassTierSettingsApril2026Season38Free
+	| EventPassTierSettingsApril2026Season39Free
+	| EventPassTierSettingsApril2026Season3Free
+	| EventPassTierSettingsApril2026Season40Free
+	| EventPassTierSettingsApril2026Season41Free
+	| EventPassTierSettingsApril2026Season42Free
+	| EventPassTierSettingsApril2026Season43Free
+	| EventPassTierSettingsApril2026Season44Free
+	| EventPassTierSettingsApril2026Season45Free
+	| EventPassTierSettingsApril2026Season46Free
+	| EventPassTierSettingsApril2026Season47Free
+	| EventPassTierSettingsApril2026Season48Free
+	| EventPassTierSettingsApril2026Season49Free
+	| EventPassTierSettingsApril2026Season4Free
+	| EventPassTierSettingsApril2026Season50Free
+	| EventPassTierSettingsApril2026Season51Free
+	| EventPassTierSettingsApril2026Season52Free
+	| EventPassTierSettingsApril2026Season53Free
+	| EventPassTierSettingsApril2026Season54Free
+	| EventPassTierSettingsApril2026Season55Free
+	| EventPassTierSettingsApril2026Season56Free
+	| EventPassTierSettingsApril2026Season57Free
+	| EventPassTierSettingsApril2026Season58Free
+	| EventPassTierSettingsApril2026Season59Free
+	| EventPassTierSettingsApril2026Season5Free
+	| EventPassTierSettingsApril2026Season60Free
+	| EventPassTierSettingsApril2026Season61Free
+	| EventPassTierSettingsApril2026Season62Free
+	| EventPassTierSettingsApril2026Season63Free
+	| EventPassTierSettingsApril2026Season64Free
+	| EventPassTierSettingsApril2026Season65Free
+	| EventPassTierSettingsApril2026Season66Free
+	| EventPassTierSettingsApril2026Season67Free
+	| EventPassTierSettingsApril2026Season68Free
+	| EventPassTierSettingsApril2026Season69Free
+	| EventPassTierSettingsApril2026Season6Free
+	| EventPassTierSettingsApril2026Season70Free
+	| EventPassTierSettingsApril2026Season71Free
+	| EventPassTierSettingsApril2026Season72Free
+	| EventPassTierSettingsApril2026Season73Free
+	| EventPassTierSettingsApril2026Season74Free
+	| EventPassTierSettingsApril2026Season75Free
+	| EventPassTierSettingsApril2026Season76Free
+	| EventPassTierSettingsApril2026Season77Free
+	| EventPassTierSettingsApril2026Season78Free
+	| EventPassTierSettingsApril2026Season79Free
+	| EventPassTierSettingsApril2026Season7Free
+	| EventPassTierSettingsApril2026Season80Free
+	| EventPassTierSettingsApril2026Season81Free
+	| EventPassTierSettingsApril2026Season82Free
+	| EventPassTierSettingsApril2026Season83Free
+	| EventPassTierSettingsApril2026Season84Free
+	| EventPassTierSettingsApril2026Season85Free
+	| EventPassTierSettingsApril2026Season86Free
+	| EventPassTierSettingsApril2026Season87Free
+	| EventPassTierSettingsApril2026Season88Free
+	| EventPassTierSettingsApril2026Season89Free
+	| EventPassTierSettingsApril2026Season8Free
+	| EventPassTierSettingsApril2026Season90Free
+	| EventPassTierSettingsApril2026Season91Free
+	| EventPassTierSettingsApril2026Season92Free
+	| EventPassTierSettingsApril2026Season93Free
+	| EventPassTierSettingsApril2026Season94Free
+	| EventPassTierSettingsApril2026Season95Free
+	| EventPassTierSettingsApril2026Season96Free
+	| EventPassTierSettingsApril2026Season97Free
+	| EventPassTierSettingsApril2026Season98Free
+	| EventPassTierSettingsApril2026Season99Free
+	| EventPassTierSettingsApril2026Season9Free
+	| EventPassTierSettingsSteeledresolve2026Event100Free
+	| EventPassTierSettingsSteeledresolve2026Event10Free
+	| EventPassTierSettingsSteeledresolve2026Event11Free
+	| EventPassTierSettingsSteeledresolve2026Event12Free
+	| EventPassTierSettingsSteeledresolve2026Event13Free
+	| EventPassTierSettingsSteeledresolve2026Event14Free
+	| EventPassTierSettingsSteeledresolve2026Event15Free
+	| EventPassTierSettingsSteeledresolve2026Event16Free
+	| EventPassTierSettingsSteeledresolve2026Event17Free
+	| EventPassTierSettingsSteeledresolve2026Event18Free
+	| EventPassTierSettingsSteeledresolve2026Event19Free
+	| EventPassTierSettingsSteeledresolve2026Event1Free
+	| EventPassTierSettingsSteeledresolve2026Event20Free
+	| EventPassTierSettingsSteeledresolve2026Event21Free
+	| EventPassTierSettingsSteeledresolve2026Event22Free
+	| EventPassTierSettingsSteeledresolve2026Event23Free
+	| EventPassTierSettingsSteeledresolve2026Event24Free
+	| EventPassTierSettingsSteeledresolve2026Event25Free
+	| EventPassTierSettingsSteeledresolve2026Event26Free
+	| EventPassTierSettingsSteeledresolve2026Event27Free
+	| EventPassTierSettingsSteeledresolve2026Event28Free
+	| EventPassTierSettingsSteeledresolve2026Event29Free
+	| EventPassTierSettingsSteeledresolve2026Event2Free
+	| EventPassTierSettingsSteeledresolve2026Event30Free
+	| EventPassTierSettingsSteeledresolve2026Event31Free
+	| EventPassTierSettingsSteeledresolve2026Event32Free
+	| EventPassTierSettingsSteeledresolve2026Event33Free
+	| EventPassTierSettingsSteeledresolve2026Event34Free
+	| EventPassTierSettingsSteeledresolve2026Event35Free
+	| EventPassTierSettingsSteeledresolve2026Event36Free
+	| EventPassTierSettingsSteeledresolve2026Event37Free
+	| EventPassTierSettingsSteeledresolve2026Event38Free
+	| EventPassTierSettingsSteeledresolve2026Event39Free
+	| EventPassTierSettingsSteeledresolve2026Event3Free
+	| EventPassTierSettingsSteeledresolve2026Event40Free
+	| EventPassTierSettingsSteeledresolve2026Event41Free
+	| EventPassTierSettingsSteeledresolve2026Event42Free
+	| EventPassTierSettingsSteeledresolve2026Event43Free
+	| EventPassTierSettingsSteeledresolve2026Event44Free
+	| EventPassTierSettingsSteeledresolve2026Event45Free
+	| EventPassTierSettingsSteeledresolve2026Event46Free
+	| EventPassTierSettingsSteeledresolve2026Event47Free
+	| EventPassTierSettingsSteeledresolve2026Event48Free
+	| EventPassTierSettingsSteeledresolve2026Event49Free
+	| EventPassTierSettingsSteeledresolve2026Event4Free
+	| EventPassTierSettingsSteeledresolve2026Event50Free
+	| EventPassTierSettingsSteeledresolve2026Event51Free
+	| EventPassTierSettingsSteeledresolve2026Event52Free
+	| EventPassTierSettingsSteeledresolve2026Event53Free
+	| EventPassTierSettingsSteeledresolve2026Event54Free
+	| EventPassTierSettingsSteeledresolve2026Event55Free
+	| EventPassTierSettingsSteeledresolve2026Event56Free
+	| EventPassTierSettingsSteeledresolve2026Event57Free
+	| EventPassTierSettingsSteeledresolve2026Event58Free
+	| EventPassTierSettingsSteeledresolve2026Event59Free
+	| EventPassTierSettingsSteeledresolve2026Event5Free
+	| EventPassTierSettingsSteeledresolve2026Event60Free
+	| EventPassTierSettingsSteeledresolve2026Event61Free
+	| EventPassTierSettingsSteeledresolve2026Event62Free
+	| EventPassTierSettingsSteeledresolve2026Event63Free
+	| EventPassTierSettingsSteeledresolve2026Event64Free
+	| EventPassTierSettingsSteeledresolve2026Event65Free
+	| EventPassTierSettingsSteeledresolve2026Event66Free
+	| EventPassTierSettingsSteeledresolve2026Event67Free
+	| EventPassTierSettingsSteeledresolve2026Event68Free
+	| EventPassTierSettingsSteeledresolve2026Event69Free
+	| EventPassTierSettingsSteeledresolve2026Event6Free
+	| EventPassTierSettingsSteeledresolve2026Event70Free
+	| EventPassTierSettingsSteeledresolve2026Event71Free
+	| EventPassTierSettingsSteeledresolve2026Event72Free
+	| EventPassTierSettingsSteeledresolve2026Event73Free
+	| EventPassTierSettingsSteeledresolve2026Event74Free
+	| EventPassTierSettingsSteeledresolve2026Event75Free
+	| EventPassTierSettingsSteeledresolve2026Event76Free
+	| EventPassTierSettingsSteeledresolve2026Event77Free
+	| EventPassTierSettingsSteeledresolve2026Event78Free
+	| EventPassTierSettingsSteeledresolve2026Event79Free
+	| EventPassTierSettingsSteeledresolve2026Event7Free
+	| EventPassTierSettingsSteeledresolve2026Event80Free
+	| EventPassTierSettingsSteeledresolve2026Event81Free
+	| EventPassTierSettingsSteeledresolve2026Event82Free
+	| EventPassTierSettingsSteeledresolve2026Event83Free
+	| EventPassTierSettingsSteeledresolve2026Event84Free
+	| EventPassTierSettingsSteeledresolve2026Event85Free
+	| EventPassTierSettingsSteeledresolve2026Event86Free
+	| EventPassTierSettingsSteeledresolve2026Event87Free
+	| EventPassTierSettingsSteeledresolve2026Event88Free
+	| EventPassTierSettingsSteeledresolve2026Event89Free
+	| EventPassTierSettingsSteeledresolve2026Event8Free
+	| EventPassTierSettingsSteeledresolve2026Event90Free
+	| EventPassTierSettingsSteeledresolve2026Event91Free
+	| EventPassTierSettingsSteeledresolve2026Event92Free
+	| EventPassTierSettingsSteeledresolve2026Event93Free
+	| EventPassTierSettingsSteeledresolve2026Event94Free
+	| EventPassTierSettingsSteeledresolve2026Event95Free
+	| EventPassTierSettingsSteeledresolve2026Event96Free
+	| EventPassTierSettingsSteeledresolve2026Event97Free
+	| EventPassTierSettingsSteeledresolve2026Event98Free
+	| EventPassTierSettingsSteeledresolve2026Event99Free
+	| EventPassTierSettingsSteeledresolve2026Event9Free;

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", 142 entries (structural types).
+// Generated from Pokémon GO masterfile — group "itemSettings", 143 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -362,6 +362,7 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_08"
 			| "ITEM_EVENT_TICKET_09"
 			| "ITEM_EVENT_TICKET_10"
+			| "ITEM_EVENT_TICKET_GRAY"
 			| "ITEM_EVENT_TICKET_PINK"
 			| "ITEM_EVERGREEN_TICKET"
 			| "ITEM_GLOBAL_EVENT_TICKET";

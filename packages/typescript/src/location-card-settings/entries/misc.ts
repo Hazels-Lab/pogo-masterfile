@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "locationCardSettings", split "misc", 125 entries.
+// Generated from Pokémon GO masterfile — group "locationCardSettings", split "misc", 128 entries.
 
 import type { S } from "../../_utils";
 import type { LocationCardSettings } from "../types";
@@ -1128,6 +1128,33 @@ export type LocationCardSettingsSpecialbackgroundKr2025Lotte01 = S<
 		}
 	>
 >;
+export type LocationCardSettingsTokmunStamp01 = S<
+	LocationCardSettings<
+		"LC_TOKMUN_STAMP_01",
+		{
+			imageUrl: "lc_2026_ppk_001";
+			locationCard: 271;
+		}
+	>
+>;
+export type LocationCardSettingsTokmunStamp02 = S<
+	LocationCardSettings<
+		"LC_TOKMUN_STAMP_02",
+		{
+			imageUrl: "lc_2026_ppk_001";
+			locationCard: 272;
+		}
+	>
+>;
+export type LocationCardSettingsTokmunStamp03 = S<
+	LocationCardSettings<
+		"LC_TOKMUN_STAMP_03",
+		{
+			imageUrl: "lc_2026_ppk_001";
+			locationCard: 273;
+		}
+	>
+>;
 
 export type LocationCardSettingsMiscMasterfileEntry =
 	| LocationCardSettings2023BarcelonaCitysafari001
@@ -1254,4 +1281,7 @@ export type LocationCardSettingsMiscMasterfileEntry =
 	| LocationCardSettingsPokelidYamagata
 	| LocationCardSettingsPokelidYamaguchi
 	| LocationCardSettingsSpecialbackgroundExtra202502
-	| LocationCardSettingsSpecialbackgroundKr2025Lotte01;
+	| LocationCardSettingsSpecialbackgroundKr2025Lotte01
+	| LocationCardSettingsTokmunStamp01
+	| LocationCardSettingsTokmunStamp02
+	| LocationCardSettingsTokmunStamp03;

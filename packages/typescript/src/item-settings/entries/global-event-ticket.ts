@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 30 entries.
+// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 31 entries.
 
 import type { S } from "../../_utils";
 import type { ItemSettings } from "../types";
@@ -650,6 +650,28 @@ export type ItemSettingsItemEventTicketGray = S<
 		}
 	>
 >;
+export type ItemSettingsItemEventTicketGrayToGift = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_GRAY_TO_GIFT",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "item_event_ticket_06_desc_ENTEI_SHADOW_RAID_DAY";
+			globalEventTicket: {
+				backgroundImageUrl: "https://storage.googleapis.com/prod-public-images/1054x512.jpg";
+				clientEventEndTimeUtcMs: "1777741200000";
+				clientEventStartTimeUtcMs: "1777730400000";
+				eventBannerUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-entei-shadow-raid-day-2026-nologo.jpg";
+				eventEndTime: "2026-05-02T17:00:00";
+				eventStartTime: "2026-05-02T14:00:00";
+				itemBagDescriptionKey: "item_event_ticket_gray_details_ENTEI_SHADOW_RAID_DAY";
+				ticketItem: "ITEM_EVENT_TICKET_GRAY";
+			};
+			ignoreInventorySpace: true;
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general1.ticket.5.ENTEI_SHADOW_RAID_DAY";
+		}
+	>
+>;
 export type ItemSettingsItemEventTicketPink = S<
 	ItemSettings<
 		"ITEM_EVENT_TICKET_PINK",
@@ -950,6 +972,7 @@ export type ItemSettingsGlobalEventTicketMasterfileEntry =
 	| ItemSettingsItemEventTicket10
 	| ItemSettingsItemEventTicket10ToGift
 	| ItemSettingsItemEventTicketGray
+	| ItemSettingsItemEventTicketGrayToGift
 	| ItemSettingsItemEventTicketPink
 	| ItemSettingsItemEventTicketPinkToGift
 	| ItemSettingsItemEvergreenTicket
