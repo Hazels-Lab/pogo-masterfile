@@ -8,10 +8,10 @@ import { groupEntries } from "./group.ts";
 import { kebabCase } from "./naming.ts";
 import { buildPromotionRegistry } from "./promoted-unions.ts";
 
-describe("emitMiscFile", () => {
-	test("emits a deterministic header for the misc file", () => {
+describe("emitSingletonsFile", () => {
+	test("emits a deterministic header for the singletons bucket file", () => {
 		const output = emitSingletonsFile("Misc", []);
-		expect(output.startsWith(`// Generated from Pokémon GO masterfile — singleton entries (no shared discriminator).\n`)).toBe(true);
+		expect(output.startsWith(`// Generated from Pokémon GO masterfile — Singletons entries (no shared discriminator).\n`)).toBe(true);
 	});
 
 	test("emits a concrete interface (not generic) per singleton group, sorted by interface name", () => {
@@ -111,7 +111,7 @@ describe("emitMiscFile", () => {
 		expect(itemIdx).toBeLessThan(xyzIdx);
 	});
 
-	test("emits MiscMiscMasterfileEntry union + MiscTemplateID alias at the end, sorted", () => {
+	test("emits SingletonsMiscMasterfileEntry union + SingletonsMiscTemplateID alias at the end, sorted", () => {
 		const mixed: Group[] = [
 			{
 				discriminator: "xyzSettings",
@@ -137,21 +137,19 @@ describe("emitMiscFile", () => {
 		];
 
 		const output = emitSingletonsFile("Misc", mixed);
-		expect(output).toContain("export type MiscMiscMasterfileEntry =");
-		expect(output).toContain("| AccessibilitySettings");
-		expect(output).toContain("| XyzSettings;");
-		expect(output).toContain(`export type MiscMiscTemplateID = MiscMiscMasterfileEntry["templateId"];`);
+		expect(output).toContain("export type SingletonsMiscMasterfileEntry = AccessibilitySettings | XyzSettings;");
+		expect(output).toContain(`export type SingletonsMiscTemplateID = SingletonsMiscMasterfileEntry["templateId"];`);
 
 		// Union members follow the interface definitions
 		const lastInterfaceIdx = output.lastIndexOf("export interface");
-		const unionIdx = output.indexOf("export type MiscMiscMasterfileEntry");
+		const unionIdx = output.indexOf("export type SingletonsMiscMasterfileEntry");
 		expect(unionIdx).toBeGreaterThan(lastInterfaceIdx);
 	});
 
-	test("emits MiscMiscMasterfileEntry = never when there are no singletons", () => {
+	test("emits SingletonsMiscMasterfileEntry = never when there are no singletons", () => {
 		const output = emitSingletonsFile("Misc", []);
-		expect(output).toContain("export type MiscMiscMasterfileEntry = never;");
-		expect(output).toContain(`export type MiscMiscTemplateID = MiscMiscMasterfileEntry["templateId"];`);
+		expect(output).toContain("export type SingletonsMiscMasterfileEntry = never;");
+		expect(output).toContain(`export type SingletonsMiscTemplateID = SingletonsMiscMasterfileEntry["templateId"];`);
 	});
 });
 
@@ -167,45 +165,37 @@ describe("kebabCase", () => {
 	});
 });
 
-describe("emitIndexFile", () => {
+describe("emitTypesFile", () => {
 	test("emits a deterministic header for the index file", () => {
 		const output = emitTypesFile([]);
 		expect(output.startsWith(`// Generated from Pokémon GO masterfile — index of all groups.\n`)).toBe(true);
 	});
 
-	test("re-exports groups by directory path + misc, defines MasterfileType union + MasterfileTemplateID", () => {
-		const output = emitTypesFile(["typeEffective", "pokemonSettings", "misc"]);
+	test("re-exports groups by directory path, defines MasterfileEntryType union + MasterfileType", () => {
+		const output = emitTypesFile(["typeEffective", "pokemonSettings", "singletons"]);
 
 		// Directory re-exports (no .ts suffix; resolves to <group>/index.ts).
 		expect(output).toContain(`export type * from "./pokemon-settings/types";`);
 		expect(output).toContain(`export type * from "./type-effective/types";`);
-		expect(output).toContain(`export type * from "./misc/types";`);
+		expect(output).toContain(`export type * from "./singletons/types";`);
 		const pokeIdx = output.indexOf("./pokemon-settings/types");
 		const typeIdx = output.indexOf("./type-effective/types");
 		expect(pokeIdx).toBeLessThan(typeIdx);
 
-		// Imports for the global union resolve via the directory too.
-		expect(output).toContain(`import type { PokemonSettings } from "./pokemon-settings/types";`);
-		expect(output).toContain(`import type { TypeEffective } from "./type-effective/types";`);
+		// Imports bring in both the base interface and the W<...> alias for each group.
+		expect(output).toContain(`import type { PokemonSettings, PokemonSettingsType } from "./pokemon-settings/types";`);
+		expect(output).toContain(`import type { TypeEffective, TypeEffectiveType } from "./type-effective/types";`);
 
-		expect(output).toContain("export type MasterfileType =");
-		expect(output).toContain("| PokemonSettings");
-		expect(output).toContain("| TypeEffective");
-		// expect(output).toContain(`export type MasterfileTemplateID = MasterfileType["templateId"];`);
-		// expect(output).toContain("export type MasterfileTypeByTemplateID<T extends MasterfileTemplateID> =");
-		// expect(output).toContain(`Extract<MasterfileType, { templateId: T }>`);
+		expect(output).toContain("export type MasterfileEntryType = PokemonSettings | Singletons | TypeEffective;");
+		expect(output).toContain("export type MasterfileType = PokemonSettingsType | SingletonsType | TypeEffectiveType;");
 	});
 
-	test("imports Misc from ./misc and places alphabetically in the MasterfileType", () => {
-		const output = emitTypesFile(["typeEffective", "pokemonSettings", "misc"]);
-		expect(output).toContain(`import type { Misc } from "./misc/types";`);
-		expect(output).toContain("| Misc");
-
-		const miscIdx = output.indexOf("| Misc");
-		const pokemonIdx = output.indexOf("| PokemonSettingsMasterfileType");
-		const typeIdx = output.indexOf("| TypeEffectiveMasterfileType");
-		expect(miscIdx).toBeGreaterThan(pokemonIdx);
-		expect(miscIdx).toBeGreaterThan(typeIdx);
+	test("imports Singletons from ./singletons and places it alphabetically in the unions", () => {
+		const output = emitTypesFile(["typeEffective", "pokemonSettings", "singletons"]);
+		expect(output).toContain(`import type { Singletons, SingletonsType } from "./singletons/types";`);
+		// Singletons (S) sorts between PokemonSettings (P) and TypeEffective (T):
+		expect(output).toContain("PokemonSettings | Singletons | TypeEffective;");
+		expect(output).toContain("PokemonSettingsType | SingletonsType | TypeEffectiveType;");
 	});
 });
 
@@ -384,7 +374,7 @@ describe("emitTopLevelVariants", () => {
 		expect(output.startsWith(`// Generated from Pokémon GO masterfile — top-level entries barrel.\n`)).toBe(true);
 	});
 
-	test("re-exports unsplit groups via /entries.ts and split groups via /entries", () => {
+	test("re-exports each group's entries module by directory path", () => {
 		const groupSplits = new Map<string, "split" | "flat">([
 			["pokemonSettings", "split"],
 			["combatType", "flat"],
@@ -392,7 +382,9 @@ describe("emitTopLevelVariants", () => {
 		]);
 		const output = emitTopLevelVariants(groupSplits);
 
-		expect(output).toContain(`export type * from "./combat-type/entries.ts";`);
+		// Both flat and split groups resolve via "./<group>/entries" — TS picks
+		// entries.ts for flat groups and entries/index.ts for split ones.
+		expect(output).toContain(`export type * from "./combat-type/entries";`);
 		expect(output).toContain(`export type * from "./pokemon-settings/entries";`);
 		expect(output).toContain(`export type * from "./pokemon-extended-settings/entries";`);
 
