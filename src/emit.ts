@@ -245,7 +245,10 @@ export function emitEntriesFlat(group: Group): string {
 	for (const stmt of statements) file.addStatement(stmt);
 	file.blank();
 
-	file.exportTypeAlias(`${gName}${BARREL_TYPE}${ENTRY}`, T.union(...typeNames.map((n) => T.ref(n))));
+	const unionName = `${gName}${BARREL_TYPE}${ENTRY}`;
+	file.exportTypeAlias(unionName, T.union(...typeNames.map((n) => T.ref(n))));
+	file.blank();
+	file.exportTypeAlias(`${gName}${TEMPLATE_GENERIC}`, T.indexedAccess(T.ref(unionName), T.literal("templateId")));
 
 	return file.render();
 }

@@ -306,6 +306,12 @@ describe("emitVariantsFlat", () => {
 		const waterIdx = output.indexOf("TypeEffectiveWater");
 		expect(bugIdx).toBeLessThan(waterIdx);
 	});
+
+	test("emits a TemplateID alias derived from the union", () => {
+		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
+		const output = emitEntriesFlat(group);
+		expect(output).toContain(`export type TypeEffectiveTemplateID = TypeEffectiveMasterfileEntry["templateId"];`);
+	});
 });
 
 describe("emitVariantFile", () => {
