@@ -21,7 +21,7 @@ import { inferJsonType, inferJsonTypes, widenType } from "./infer.ts";
 import type { InvariantTree } from "./invariants.ts";
 import { detectInvariants, invariantsToInferredType, stripInvariantsFromValue, stripInvariantsFromWidened } from "./invariants.ts";
 import { aliasSuffix, deriveGroupAliases, groupName, kebabCase, pascalCase } from "./naming.ts";
-import { type PromotionContext, type PromotionRegistry } from "./promoted-unions.ts";
+import type { PromotionContext, PromotionRegistry } from "./promoted-unions.ts";
 
 // Build `${gName}${suffix}` variant alias declarations for a list of entries (sorted by templateId).
 // Returns the AST statements and the type names emitted, for use in barrel unions.
@@ -186,9 +186,7 @@ export function emitGroupTypes(group: Group, registry: PromotionRegistry = []): 
 		.importNamed("../_utils", [WIDEN], true);
 
 	// Cross-group imports come next (Task 9 wires the consumer end of this).
-	const sortedImports = [...ctx.imports.entries()]
-		.filter(([disc]) => disc !== group.discriminator)
-		.sort(([a], [b]) => a.localeCompare(b));
+	const sortedImports = [...ctx.imports.entries()].filter(([disc]) => disc !== group.discriminator).sort(([a], [b]) => a.localeCompare(b));
 	for (const [disc, names] of sortedImports) {
 		file.importNamed(`../${kebabCase(disc)}/${TYPES_LOWER}`, [...names].sort(), true);
 	}
