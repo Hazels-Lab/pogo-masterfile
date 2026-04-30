@@ -18,21 +18,25 @@ export function configureFloatFieldHints(hints: ReadonlySet<string>): void {
 	floatFieldHints = hints;
 }
 
-// Single regex pass over the raw masterfile JSON text. Captures field names
-// followed by a numeric value with a fractional or exponent part. JSON
-// numbers without either are integers per the spec; numbers with `.X` or
-// `eX` syntax are floats whether or not the value is integral.
+// Two regex passes over the raw masterfile JSON text. JSON numbers are integers
+// when they have no fractional or exponent part, floats otherwise — but JS's
+// JSON.parse erases the distinction, so we recover it from the source text.
 //
-// Field names are simple identifiers in the masterfile (no escaped quotes,
-// no whitespace inside), so the `[^"\\]+` key pattern is safe. String
-// values starting with `"` after `:` don't match the digit start — no false
-// positives from JSON-strings-that-contain-decimal-text.
+// Pattern A captures `"key": <float-number>` for scalar fields.
+// Pattern B captures `"key": [...<float-number>...]` for array-of-numbers
+// fields (e.g. `"buddyPortraitOffset": [-250.0, 0.0, 0.0]`). The character
+// class inside the brackets restricts matches to numeric content — avoids
+// false positives from arrays of strings or objects.
+//
+// Field names are simple identifiers in the masterfile (no escaped quotes),
+// so `[^"\\]+` is safe.
 export function scanFloatFields(rawJson: string): Set<string> {
 	const fields = new Set<string>();
-	const re = /"([^"\\]+)"\s*:\s*-?\d+(?:\.\d+(?:[eE][-+]?\d+)?|[eE][-+]?\d+)/g;
-	for (const m of rawJson.matchAll(re)) {
-		fields.add(m[1] ?? "");
-	}
+	const numFrac = String.raw`-?\d+(?:\.\d+(?:[eE][-+]?\d+)?|[eE][-+]?\d+)`;
+	const direct = new RegExp(String.raw`"([^"\\]+)"\s*:\s*${numFrac}`, "g");
+	const inArray = new RegExp(String.raw`"([^"\\]+)"\s*:\s*\[[\s\d.,\-+eE]*?${numFrac}`, "g");
+	for (const m of rawJson.matchAll(direct)) fields.add(m[1] ?? "");
+	for (const m of rawJson.matchAll(inArray)) fields.add(m[1] ?? "");
 	return fields;
 }
 
@@ -243,12 +247,13 @@ function inferObjectType(values: readonly Record<string, unknown>[]): ObjectType
 		.map(([name, observedValues]) => {
 			let type = inferJsonTypes(observedValues);
 			// Float-field hint: if the source JSON ever wrote this field with
-			// decimal syntax, treat it as float regardless of the values JS
-			// surfaced after `JSON.parse`. Recovers the int-vs-float distinction
-			// that JS's number type erases.
-			if (type.kind === "number" && floatFieldHints.has(name)) {
-				type = { ...type, numericKind: "float" };
-			}
+			// decimal syntax (either a scalar value or any element of an array
+			// of numbers), treat numeric content of this field as float
+			// regardless of the values JS surfaced after `JSON.parse`. The
+			// propagation walks into array/tuple element types but stops at
+			// object boundaries (which have their own field names handled
+			// independently).
+			if (floatFieldHints.has(name)) type = applyFloatToNumbers(type);
 			return {
 				name,
 				type,
@@ -257,6 +262,24 @@ function inferObjectType(values: readonly Record<string, unknown>[]): ObjectType
 		});
 
 	return { kind: "object", properties };
+}
+
+function applyFloatToNumbers(t: InferredType): InferredType {
+	switch (t.kind) {
+		case "number":
+			return { ...t, numericKind: "float" };
+		case "array":
+			return { kind: "array", element: applyFloatToNumbers(t.element) };
+		case "tuple":
+			return { kind: "tuple", items: t.items.map(applyFloatToNumbers) };
+		case "union":
+			return { kind: "union", variants: t.variants.map(applyFloatToNumbers) };
+		default:
+			// Stop at object/string/boolean/null/templateId leaves — float
+			// hint only applies to numeric content reachable via array/tuple
+			// containers within this field's type.
+			return t;
+	}
 }
 
 function inferArrayType(values: readonly unknown[][]): TupleType | ArrayType {

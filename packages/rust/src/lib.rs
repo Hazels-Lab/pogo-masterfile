@@ -142,18 +142,16 @@ pub mod weather_affinities;
 /// Every typed entry the Pokémon GO masterfile can hold.
 ///
 /// Variants are ordered most-frequent-first (by entry count in the source
-/// masterfile). Serde's `#[serde(untagged)]` dispatch tries variants in
-/// declaration order, so the most common entries short-circuit fastest.
+/// masterfile). Serialization uses `#[serde(untagged)]` so the JSON shape
+/// round-trips as the inner Entry struct directly. Deserialization is a
+/// custom impl that peeks at `data`'s non-`templateId` key for O(1)
+/// dispatch — see the impl below.
 ///
 /// **Caveat:** stub entries (the few discriminators with
-/// `data: { templateId }` only) are shape-indistinguishable under untagged
-/// dispatch — they all match whichever stub variant is declared first;
-/// inspect `template_id` to recover the specific kind. Likewise, entries
-/// whose payload doesn't strictly type-check against the inferred shape
-/// (e.g. JSON has `1.0` where the inferred type expected `u64`) may match
-/// a permissive stub variant rather than erroring. Round-trip JSON to
-/// verify if you need certainty.
-#[derive(Debug, Clone, Serialize, Deserialize)]
+/// `data: { templateId }` only) are shape-indistinguishable. They all
+/// dispatch via `templateId` value match in the deserializer; inspect
+/// `template_id` post-parse if you need to branch on the specific kind.
+#[derive(Debug, Clone, Serialize)]
 #[serde(untagged)]
 pub enum MasterfileEntry {
     PokemonExtendedSettings(pokemon_extended_settings::PokemonExtendedSettingsEntry),
@@ -354,6 +352,245 @@ pub enum MasterfileEntry {
     VsSeekerClientSettings(singletons::VsSeekerClientSettingsEntry),
     VsSeekerScheduleSettings(singletons::VsSeekerScheduleSettingsEntry),
     WeatherBonusSettings(singletons::WeatherBonusSettingsEntry),
+}
+
+// O(1)-dispatch deserializer for MasterfileEntry. Avoids serde's untagged
+// fallback (which scans variants in declaration order, partially parsing
+// each before realizing the discriminator's wrong) by:
+//
+//   1. Materializing the entry once as a serde_json::Value.
+//   2. Inspecting `data`'s key set to find the non-templateId key — that's
+//      the discriminator that uniquely identifies the variant.
+//   3. For stubs (no payload key in data), falling back to `templateId`
+//      value as the dispatch key.
+//   4. Re-deserializing the captured Value into the chosen variant's
+//      Entry type via `from_value`.
+impl<'de> Deserialize<'de> for MasterfileEntry {
+	fn deserialize<D>(deserializer: D) -> Result<Self, D::Error>
+	where
+		D: serde::Deserializer<'de>,
+	{
+		let value = serde_json::Value::deserialize(deserializer)?;
+		let discriminator: Option<String> = value
+			.get("data")
+			.and_then(|d| d.as_object())
+			.and_then(|m| m.keys().find(|k| k.as_str() != "templateId"))
+			.cloned();
+		match discriminator.as_deref() {
+			Some("pokemonExtendedSettings") => Ok(Self::PokemonExtendedSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("genderSettings") => Ok(Self::GenderSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("pokemonSettings") => Ok(Self::PokemonSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("avatarCustomization") => Ok(Self::AvatarCustomization(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("avatarItemDisplay") => Ok(Self::AvatarItemDisplay(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("iapItemDisplay") => Ok(Self::IapItemDisplay(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("formSettings") => Ok(Self::FormSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("badgeSettings") => Ok(Self::BadgeSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("stickerMetadata") => Ok(Self::StickerMetadata(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("eventPassTierSettings") => Ok(Self::EventPassTierSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("pokemonFamily") => Ok(Self::PokemonFamily(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("moveSettings") => Ok(Self::MoveSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("moveSequenceSettings") => Ok(Self::MoveSequenceSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("combatMove") => Ok(Self::CombatMove(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("settingsOverrideRule") => Ok(Self::SettingsOverrideRule(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("locationCardSettings") => Ok(Self::LocationCardSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("itemSettings") => Ok(Self::ItemSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("combatLeague") => Ok(Self::CombatLeague(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("megaEvoLevelSettings") => Ok(Self::MegaEvoLevelSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("levelUpRewards") => Ok(Self::LevelUpRewards(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("evolutionChainDisplaySettings") => Ok(Self::EvolutionChainDisplaySettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("invasionNpcDisplaySettings") => Ok(Self::InvasionNpcDisplaySettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("clientQuestTemplate") => Ok(Self::ClientQuestTemplate(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("temporaryEvolutionSettings") => Ok(Self::TemporaryEvolutionSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("vsSeekerLoot") => Ok(Self::VsSeekerLoot(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("photoSetsSettingsProto") => Ok(Self::PhotoSetsSettingsProto(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("evolutionQuestTemplate") => Ok(Self::EvolutionQuestTemplate(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("limitedPurchaseSkuSettings") => Ok(Self::LimitedPurchaseSkuSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("itemExpirationSettings") => Ok(Self::ItemExpirationSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("combatRankingProtoSettings") => Ok(Self::CombatRankingProtoSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("combatType") => Ok(Self::CombatType(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("typeEffective") => Ok(Self::TypeEffective(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("featureGate") => Ok(Self::FeatureGate(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("codeGateProto") => Ok(Self::CodeGateProto(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("iapCategoryDisplay") => Ok(Self::IapCategoryDisplay(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("recommendedSearchSettings") => Ok(Self::RecommendedSearchSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("combatNpcTrainer") => Ok(Self::CombatNpcTrainer(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("nonCombatMoveSettings") => Ok(Self::NonCombatMoveSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("buddyActivityCategorySettings") => Ok(Self::BuddyActivityCategorySettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("breadMoveLevelSettings") => Ok(Self::BreadMoveLevelSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("buddyEmotionLevelSettings") => Ok(Self::BuddyEmotionLevelSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("pokemonHomeFormReversions") => Ok(Self::PokemonHomeFormReversions(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("pokestopInvasionAvailabilitySettings") => Ok(Self::PokestopInvasionAvailabilitySettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("weatherAffinities") => Ok(Self::WeatherAffinities(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("friendshipMilestoneSettings") => Ok(Self::FriendshipMilestoneSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("pokemonScaleSettings") => Ok(Self::PokemonScaleSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("buddyLevelSettings") => Ok(Self::BuddyLevelSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("tappableSettings") => Ok(Self::TappableSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("fortPowerUpLevelSettings") => Ok(Self::FortPowerUpLevelSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("pokemonHomeEnergyCosts") => Ok(Self::PokemonHomeEnergyCosts(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("combatNpcPersonality") => Ok(Self::CombatNpcPersonality(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("languageSettings") => Ok(Self::LanguageSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("questSettings") => Ok(Self::QuestSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("rollBack") => Ok(Self::RollBack(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("avatarGroupOrderSettings") => Ok(Self::AvatarGroupOrderSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("eventPassSettings") => Ok(Self::EventPassSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("partyPlayGeneralSettings") => Ok(Self::PartyPlayGeneralSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("pokemonUpgrades") => Ok(Self::PokemonUpgrades(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("vsSeekerPokemonRewards") => Ok(Self::VsSeekerPokemonRewards(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("accessibilitySettings") => Ok(Self::AccessibilitySettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("additiveSceneSettings") => Ok(Self::AdditiveSceneSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("addressablePokemonSettings") => Ok(Self::AddressablePokemonSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("addressBookImportSettings") => Ok(Self::AddressBookImportSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("advancedSettings") => Ok(Self::AdvancedSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("arPhotoFeatureFlags") => Ok(Self::ArPhotoFeatureFlags(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("arTelemetrySettings") => Ok(Self::ArTelemetrySettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("assetRefreshProto") => Ok(Self::AssetRefreshProto(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("avatarFeatureFlags") => Ok(Self::AvatarFeatureFlags(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("avatarStoreFooterFlags") => Ok(Self::AvatarStoreFooterFlags(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("avatarStoreSubcategoryFilteringFlags") => Ok(Self::AvatarStoreSubcategoryFilteringFlags(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("backgroundModeSettings") => Ok(Self::BackgroundModeSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("battleAnimationSettings") => Ok(Self::BattleAnimationSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("battleHubBadgeSettings") => Ok(Self::BattleHubBadgeSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("battleHubOrderSettings") => Ok(Self::BattleHubOrderSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("battleInputBufferSettings") => Ok(Self::BattleInputBufferSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("battlePartySettings") => Ok(Self::BattlePartySettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("battleSettings") => Ok(Self::BattleSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("battleVisualSettings") => Ok(Self::BattleVisualSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("belugaPokemonWhitelist") => Ok(Self::BelugaPokemonWhitelist(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("bestFriendsPlusSettings") => Ok(Self::BestFriendsPlusSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("breadBattleClientSettings") => Ok(Self::BreadBattleClientSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("breadFeatureFlags") => Ok(Self::BreadFeatureFlags(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("breadLobbyCounterSettings") => Ok(Self::BreadLobbyCounterSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("breadLobbyUpdateSettings") => Ok(Self::BreadLobbyUpdateSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("breadMoveMappings") => Ok(Self::BreadMoveMappings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("breadPokemonScalingSettings") => Ok(Self::BreadPokemonScalingSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("breadSettings") => Ok(Self::BreadSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("buddyEncounterCameoSettings") => Ok(Self::BuddyEncounterCameoSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("buddyHungerSettings") => Ok(Self::BuddyHungerSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("buddyInteractionSettings") => Ok(Self::BuddyInteractionSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("buddySwapSettings") => Ok(Self::BuddySwapSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("buddyWalkSettings") => Ok(Self::BuddyWalkSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("bulkHealingSettings") => Ok(Self::BulkHealingSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("butterflyCollectorSettings") => Ok(Self::ButterflyCollectorSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("campfireSettings") => Ok(Self::CampfireSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("catchRadiusMultiplierSettings") => Ok(Self::CatchRadiusMultiplierSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("combatCompetitiveSeasonSettings") => Ok(Self::CombatCompetitiveSeasonSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("combatLeagueSettings") => Ok(Self::CombatLeagueSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("combatSettings") => Ok(Self::CombatSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("combatStatStageSettings") => Ok(Self::CombatStatStageSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("contestSettings") => Ok(Self::ContestSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("conversationSettings") => Ok(Self::ConversationSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("crossGameSocialSettings") => Ok(Self::CrossGameSocialSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("dailyAdventureIncenseSettings") => Ok(Self::DailyAdventureIncenseSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("deepLinkingSettings") => Ok(Self::DeepLinkingSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("eggHatchImprovementsSettings") => Ok(Self::EggHatchImprovementsSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("encounterSettings") => Ok(Self::EncounterSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("eventPlannerPopularNotificationSettings") => Ok(Self::EventPlannerPopularNotificationSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("externalAddressableAssetsSettings") => Ok(Self::ExternalAddressableAssetsSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("featureUnlockLevelSettings") => Ok(Self::FeatureUnlockLevelSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("geotargetedQuestSettings") => Ok(Self::GeotargetedQuestSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("giftingSettings") => Ok(Self::GiftingSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("guiSearchSettings") => Ok(Self::GuiSearchSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("gymBadgeSettings") => Ok(Self::GymBadgeSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("hapticsSettings") => Ok(Self::HapticsSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("iapSettings") => Ok(Self::IapSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("ibfcLightweightSettings") => Ok(Self::IbfcLightweightSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("impressionTrackingSettings") => Ok(Self::ImpressionTrackingSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("inAppSurveySettings") => Ok(Self::InAppSurveySettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("incidentPrioritySettings") => Ok(Self::IncidentPrioritySettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("incidentVisibilitySettings") => Ok(Self::IncidentVisibilitySettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("inventorySettings") => Ok(Self::InventorySettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("irisSocialSettings") => Ok(Self::IrisSocialSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("irisSocialUxFunnelSettings") => Ok(Self::IrisSocialUxFunnelSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("itemInventoryUpdateSettings") => Ok(Self::ItemInventoryUpdateSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("joinRaidViaFriendListSettings") => Ok(Self::JoinRaidViaFriendListSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("languageSelectorSettings") => Ok(Self::LanguageSelectorSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("luckyPokemonSettings") => Ok(Self::LuckyPokemonSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("mainMenuChanges") => Ok(Self::MainMenuChanges(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("mapDisplaySettings") => Ok(Self::MapDisplaySettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("mapObjectsInteractionRangeSettings") => Ok(Self::MapObjectsInteractionRangeSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("megaEvoSettings") => Ok(Self::MegaEvoSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("monodepthSettings") => Ok(Self::MonodepthSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("mpSettings") => Ok(Self::MpSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("naturalArtDayNightFeatureSettings") => Ok(Self::NaturalArtDayNightFeatureSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("nearbyPokemonSettings") => Ok(Self::NearbyPokemonSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("neutralAvatarSettings") => Ok(Self::NeutralAvatarSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("onboardingSettings") => Ok(Self::OnboardingSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("optimizationsProto") => Ok(Self::OptimizationsProto(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("partyDarkLaunchSettings") => Ok(Self::PartyDarkLaunchSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("partyIapBoostsSettings") => Ok(Self::PartyIapBoostsSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("partyRecommendationSettings") => Ok(Self::PartyRecommendationSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("photoSettings") => Ok(Self::PhotoSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("plannerSettings") => Ok(Self::PlannerSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("playerBonusSystemSettings") => Ok(Self::PlayerBonusSystemSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("playerLevel") => Ok(Self::PlayerLevel(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("pokeballThrowPropertySettings") => Ok(Self::PokeballThrowPropertySettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("pokecoinPurchaseDisplayGmt") => Ok(Self::PokecoinPurchaseDisplayGmt(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("pokedexCategoriesSettings") => Ok(Self::PokedexCategoriesSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("pokedexSizeStatsSystemSettings") => Ok(Self::PokedexSizeStatsSystemSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("pokedexv2FeatureFlags") => Ok(Self::Pokedexv2featureFlags(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("pokedexV2Settings") => Ok(Self::PokedexV2settings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("pokemonFxSettings") => Ok(Self::PokemonFxSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("pokemonHomeSettings") => Ok(Self::PokemonHomeSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("pokemonTagSettings") => Ok(Self::PokemonTagSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("popupControlSettings") => Ok(Self::PopupControlSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("postcardCollectionSettings") => Ok(Self::PostcardCollectionSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("powerUpPokestopsSettings") => Ok(Self::PowerUpPokestopsSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("primalEvoSettings") => Ok(Self::PrimalEvoSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("ptcOauthSettings") => Ok(Self::PtcOauthSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("quickInviteSettings") => Ok(Self::QuickInviteSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("raidLobbyCounterSettings") => Ok(Self::RaidLobbyCounterSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("raidSettings") => Ok(Self::RaidSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("referralSettings") => Ok(Self::ReferralSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("remoteTradeSettings") => Ok(Self::RemoteTradeSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("routeBadgeSettings") => Ok(Self::RouteBadgeSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("routeCreationSettings") => Ok(Self::RouteCreationSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("routeDiscoverySettings") => Ok(Self::RouteDiscoverySettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("routePinSettings") => Ok(Self::RoutePinSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("routePlaySettings") => Ok(Self::RoutePlaySettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("routesNearbyNotifSettings") => Ok(Self::RoutesNearbyNotifSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("routesPartyPlayInteropSettings") => Ok(Self::RoutesPartyPlayInteropSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("routeStampCategorySettings") => Ok(Self::RouteStampCategorySettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("sharedFusionSettings") => Ok(Self::SharedFusionSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("sharedMoveSettings") => Ok(Self::SharedMoveSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("sourdoughMoveMappingSettings") => Ok(Self::SourdoughMoveMappingSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("specialEggSettings") => Ok(Self::SpecialEggSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("sponsoredGeofenceGiftSettings") => Ok(Self::SponsoredGeofenceGiftSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("squashSettings") => Ok(Self::SquashSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("stampCollectionSettings") => Ok(Self::StampCollectionSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("stationedPokemonTableSettings") => Ok(Self::StationedPokemonTableSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("stickerCategorySettings") => Ok(Self::StickerCategorySettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("styleShopSettings") => Ok(Self::StyleShopSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("ticketGiftingSettings") => Ok(Self::TicketGiftingSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("todayViewSettings") => Ok(Self::TodayViewSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("tutorialSettings") => Ok(Self::TutorialSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("usernameSuggestionSettings") => Ok(Self::UsernameSuggestionSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("verboseLogCombatSettings") => Ok(Self::VerboseLogCombatSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("verboseLogRaidSettings") => Ok(Self::VerboseLogRaidSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("vistaGeneralSettings") => Ok(Self::VistaGeneralSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("vnextBattleConfig") => Ok(Self::VnextBattleConfig(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("vsSeekerClientSettings") => Ok(Self::VsSeekerClientSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("vsSeekerScheduleSettings") => Ok(Self::VsSeekerScheduleSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			Some("weatherBonusSettings") => Ok(Self::WeatherBonusSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+			None => {
+				let template_id = value
+					.get("templateId")
+					.and_then(|t| t.as_str())
+					.ok_or_else(|| ::serde::de::Error::custom("stub entry missing templateId"))?;
+				match template_id {
+				"ITEM_CURRENCY_VALUES" => Ok(Self::ItemCurrencyValues(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+				"QUEST_DIALOGUE_INBOX_SETTINGS" => Ok(Self::QuestDialogueInboxSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+				"RAID_ENTRY_COST_SETTINGS" => Ok(Self::RaidEntryCostSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+				"SOFT_SFIDA_SETTINGS" => Ok(Self::SoftSfidaSettings(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),
+					other => Err(::serde::de::Error::custom(format!(
+						"unknown stub templateId: {}", other
+					))),
+				}
+			}
+			Some(other) => Err(::serde::de::Error::custom(format!(
+				"unknown discriminator: {}", other
+			))),
+		}
+	}
 }
 
 /// Parse a masterfile JSON string into a vector of typed entries.

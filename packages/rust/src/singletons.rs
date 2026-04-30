@@ -1338,7 +1338,7 @@ pub struct InventorySettings {
     pub max_item_boost_duration_ms: String,
     pub max_pokemon: u64,
     pub max_postcards: u64,
-    pub max_stone_acount: u64,
+    pub max_stone_a_count: u64,
     pub max_team_changes: u64,
     pub special_egg_overflow_spots: u64,
     pub team_change_item_reset_period_in_days: String,
@@ -2547,8 +2547,8 @@ pub struct OptionalBmoveOverride {
 pub struct MappingsV4 {
     pub form: String,
     pub r#move: String,
-    pub optional_bmove_override: OptionalBmoveOverride,
-    pub optional_cmove_override: OptionalBmoveOverride,
+    pub optional_b_move_override: OptionalBmoveOverride,
+    pub optional_c_move_override: OptionalBmoveOverride,
     pub pokemon_id: String,
 }
 
@@ -2557,8 +2557,8 @@ pub struct MappingsV4 {
 pub struct MappingsV5 {
     pub form: Option<String>,
     pub r#move: String,
-    pub optional_bmove_override: Option<OptionalBmoveOverride>,
-    pub optional_cmove_override: Option<OptionalBmoveOverride>,
+    pub optional_b_move_override: Option<OptionalBmoveOverride>,
+    pub optional_c_move_override: Option<OptionalBmoveOverride>,
     pub pokemon_id: String,
 }
 

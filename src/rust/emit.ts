@@ -611,6 +611,22 @@ export function emitLibFile(moduleNames: readonly string[], variants: readonly E
 		variantLines.push(`    ${name}(${v.modulePath}::${v.entryTypeName}),`);
 	}
 
+	// Build dispatch arms for the custom Deserialize impl. Non-stubs match on
+	// the inner `data` object's non-templateId key; stubs match on `templateId`.
+	const nonStubArms = finalVariants
+		.filter((x) => !x.v.isStub)
+		.map(
+			(x) =>
+				`\t\t\tSome(${JSON.stringify(x.v.discriminator)}) => Ok(Self::${x.finalName}(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),`,
+		)
+		.join("\n");
+	const stubArms = finalVariants
+		.filter((x) => x.v.isStub)
+		.map(
+			(x) => `\t\t\t\t${JSON.stringify(x.v.discriminator)} => Ok(Self::${x.finalName}(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),`,
+		)
+		.join("\n");
+
 	const lines: string[] = [
 		"//! Generated Rust types for the Pokémon GO masterfile.",
 		"//!",
@@ -656,21 +672,62 @@ export function emitLibFile(moduleNames: readonly string[], variants: readonly E
 		"/// Every typed entry the Pokémon GO masterfile can hold.",
 		"///",
 		"/// Variants are ordered most-frequent-first (by entry count in the source",
-		"/// masterfile). Serde's `#[serde(untagged)]` dispatch tries variants in",
-		"/// declaration order, so the most common entries short-circuit fastest.",
+		"/// masterfile). Serialization uses `#[serde(untagged)]` so the JSON shape",
+		"/// round-trips as the inner Entry struct directly. Deserialization is a",
+		"/// custom impl that peeks at `data`'s non-`templateId` key for O(1)",
+		"/// dispatch — see the impl below.",
 		"///",
 		"/// **Caveat:** stub entries (the few discriminators with",
-		"/// `data: { templateId }` only) are shape-indistinguishable under untagged",
-		"/// dispatch — they all match whichever stub variant is declared first;",
-		"/// inspect `template_id` to recover the specific kind. Likewise, entries",
-		"/// whose payload doesn't strictly type-check against the inferred shape",
-		"/// (e.g. JSON has `1.0` where the inferred type expected `u64`) may match",
-		"/// a permissive stub variant rather than erroring. Round-trip JSON to",
-		"/// verify if you need certainty.",
-		"#[derive(Debug, Clone, Serialize, Deserialize)]",
+		"/// `data: { templateId }` only) are shape-indistinguishable. They all",
+		"/// dispatch via `templateId` value match in the deserializer; inspect",
+		"/// `template_id` post-parse if you need to branch on the specific kind.",
+		"#[derive(Debug, Clone, Serialize)]",
 		"#[serde(untagged)]",
 		"pub enum MasterfileEntry {",
 		...variantLines,
+		"}",
+		"",
+		"// O(1)-dispatch deserializer for MasterfileEntry. Avoids serde's untagged",
+		"// fallback (which scans variants in declaration order, partially parsing",
+		"// each before realizing the discriminator's wrong) by:",
+		"//",
+		"//   1. Materializing the entry once as a serde_json::Value.",
+		"//   2. Inspecting `data`'s key set to find the non-templateId key — that's",
+		"//      the discriminator that uniquely identifies the variant.",
+		"//   3. For stubs (no payload key in data), falling back to `templateId`",
+		"//      value as the dispatch key.",
+		"//   4. Re-deserializing the captured Value into the chosen variant's",
+		"//      Entry type via `from_value`.",
+		"impl<'de> Deserialize<'de> for MasterfileEntry {",
+		"\tfn deserialize<D>(deserializer: D) -> Result<Self, D::Error>",
+		"\twhere",
+		"\t\tD: serde::Deserializer<'de>,",
+		"\t{",
+		"\t\tlet value = serde_json::Value::deserialize(deserializer)?;",
+		"\t\tlet discriminator: Option<String> = value",
+		'\t\t\t.get("data")',
+		"\t\t\t.and_then(|d| d.as_object())",
+		'\t\t\t.and_then(|m| m.keys().find(|k| k.as_str() != "templateId"))',
+		"\t\t\t.cloned();",
+		"\t\tmatch discriminator.as_deref() {",
+		nonStubArms,
+		"\t\t\tNone => {",
+		"\t\t\t\tlet template_id = value",
+		'\t\t\t\t\t.get("templateId")',
+		"\t\t\t\t\t.and_then(|t| t.as_str())",
+		'\t\t\t\t\t.ok_or_else(|| ::serde::de::Error::custom("stub entry missing templateId"))?;',
+		"\t\t\t\tmatch template_id {",
+		stubArms,
+		"\t\t\t\t\tother => Err(::serde::de::Error::custom(format!(",
+		'\t\t\t\t\t\t"unknown stub templateId: {}", other',
+		"\t\t\t\t\t))),",
+		"\t\t\t\t}",
+		"\t\t\t}",
+		"\t\t\tSome(other) => Err(::serde::de::Error::custom(format!(",
+		'\t\t\t\t"unknown discriminator: {}", other',
+		"\t\t\t))),",
+		"\t\t}",
+		"\t}",
 		"}",
 		"",
 		"/// Parse a masterfile JSON string into a vector of typed entries.",

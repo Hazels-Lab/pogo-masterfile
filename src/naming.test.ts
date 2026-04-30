@@ -18,6 +18,12 @@ describe("snakeCase", () => {
 	test("collapses repeated separators and trims", () => {
 		expect(snakeCase("__foo__bar__")).toBe("foo_bar");
 	});
+
+	test("separates uppercase-run before PascalWord (acronym boundary)", () => {
+		expect(snakeCase("maxStoneACount")).toBe("max_stone_a_count");
+		expect(snakeCase("parseHTMLDocument")).toBe("parse_html_document");
+		expect(snakeCase("ARSettings")).toBe("ar_settings");
+	});
 });
 
 describe("groupName", () => {

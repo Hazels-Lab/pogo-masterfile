@@ -15,7 +15,7 @@ pub struct MoveSettings {
     pub heal_scalar: Option<f64>,
     pub is_locked: Option<bool>,
     pub movement_id: String,
-    pub ob_move_settings_number18: Option<[u64; 4]>,
+    pub ob_move_settings_number18: Option<[f64; 4]>,
     pub pokemon_type: String,
     pub power: Option<f64>,
     pub stamina_loss_scalar: Option<f64>,

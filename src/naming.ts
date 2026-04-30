@@ -8,9 +8,17 @@ export function kebabCase(camelCase: string): string {
 
 // Convert any input casing (camelCase, PascalCase, SCREAMING_SNAKE, kebab-case)
 // to snake_case. Used by Rust emit for module/file names and field names.
+//
+// Two-pass boundary detection handles acronyms correctly: the first pass
+// inserts an underscore at lowercase→uppercase transitions (`maxStone` →
+// `max_Stone`); the second handles uppercase-run-before-PascalWord (`ACount`
+// → `A_Count`). Without the second pass, `maxStoneACount` → `max_stone_acount`
+// which then round-trips through serde rename_all="camelCase" as
+// `maxStoneAcount` — a different JSON field name.
 export function snakeCase(input: string): string {
 	return input
 		.replace(/([a-z0-9])([A-Z])/g, "$1_$2")
+		.replace(/([A-Z]+)([A-Z][a-z])/g, "$1_$2")
 		.replace(/[^a-zA-Z0-9]+/g, "_")
 		.toLowerCase()
 		.replace(/_+/g, "_")
