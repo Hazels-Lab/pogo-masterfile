@@ -1,0 +1,65 @@
+import { join } from "node:path";
+import { type Entry, type Group, groupEntries } from "../group.ts";
+import { pascalCase, snakeCase } from "../naming.ts";
+import { writeOutput } from "../write.ts";
+import { type EntryVariant, emitGroupModule, emitMasterfileFile, emitSingletonsModule } from "./emit.ts";
+
+const OUT_DIR = join(import.meta.dir, "..", "..", "packages", "go");
+const SINGLETONS_FILE = "singletons";
+
+function isStubGroup(group: Group): boolean {
+	const first = group.entries[0];
+	if (!first) return true;
+	return Object.keys(first.data).filter((k) => k !== "templateId").length === 0;
+}
+
+export async function generateGo(entries: Entry[]): Promise<void> {
+	const groups = groupEntries(entries);
+	console.log(`[go] grouped into ${groups.size} discriminators.`);
+
+	const files = new Map<string, string>();
+	const singletons: Group[] = [];
+	const enumVariants: EntryVariant[] = [];
+
+	for (const group of groups.values()) {
+		const baseName = pascalCase(group.discriminator);
+		const entryTypeName = `${baseName}Entry`;
+		const stub = isStubGroup(group);
+
+		if (group.entries.length === 1) {
+			singletons.push(group);
+			enumVariants.push({
+				variantName: baseName,
+				entryTypeName,
+				isStub: stub,
+				discriminator: group.discriminator,
+				entryCount: group.entries.length,
+			});
+			continue;
+		}
+
+		const fileName = snakeCase(group.discriminator);
+		files.set(`${fileName}.go`, emitGroupModule(group));
+		enumVariants.push({
+			variantName: baseName,
+			entryTypeName,
+			isStub: stub,
+			discriminator: group.discriminator,
+			entryCount: group.entries.length,
+		});
+	}
+
+	if (singletons.length > 0) {
+		files.set(`${SINGLETONS_FILE}.go`, emitSingletonsModule(singletons));
+	}
+
+	files.set("masterfile.go", emitMasterfileFile(enumVariants));
+
+	// Note: writeOutput recursively deletes OUT_DIR before writing — go.mod
+	// lives there and would be wiped. Pre-read it so we can re-emit.
+	const goMod = await Bun.file(join(OUT_DIR, "go.mod")).text();
+	files.set("go.mod", goMod);
+
+	await writeOutput(files, OUT_DIR);
+	console.log(`[go] wrote ${files.size} files to ${OUT_DIR} (${singletons.length} singletons folded into ${SINGLETONS_FILE}.go).`);
+}

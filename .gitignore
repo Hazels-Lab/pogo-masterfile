@@ -39,3 +39,6 @@ template-ids.json
 
 # Rust build artifacts
 target
+
+# Go build artifacts
+*.exe

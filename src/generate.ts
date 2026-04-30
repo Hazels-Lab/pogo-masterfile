@@ -1,4 +1,5 @@
 import { GAME_MASTER_URL } from "./constants.ts";
+import { generateGo } from "./go/generate.ts";
 import type { Entry } from "./group.ts";
 import { configureFloatFieldHints, scanFloatFields } from "./infer.ts";
 import { generateRust } from "./rust/generate.ts";
@@ -29,7 +30,7 @@ async function main(): Promise<void> {
 
 	await generateTypeScript(entries);
 	await generateRust(entries);
-	// Future: await generateGo(entries);
+	await generateGo(entries);
 }
 
 main().catch((err) => {
