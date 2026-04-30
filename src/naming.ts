@@ -84,6 +84,35 @@ export function stripGroupNameTail(suffix: string, gName: string): string {
 	return head === "" ? suffix : head;
 }
 
+// Reserved words in Rust 2024 + Go 1.24 that, after PascalCase'ing, would
+// produce identifiers we cannot use as enum variants or constant tails.
+// Most common-case keywords (e.g., `match`, `move`, `type`) are already
+// neutralized by PascalCase ("Match", "Move", "Type" are valid). The
+// remainder are PascalCase keywords that *do* collide.
+const RESERVED_PASCAL_CASE = new Set(["Self", "Crate", "Super"]);
+
+/**
+ * Map each templateId to a PascalCase variant identifier. Used by the
+ * Rust and Go emitters as the enum variant / const tail.
+ *
+ * Rule: variant = `pascalCase(templateId)`, with reserved-word collisions
+ * (post-PascalCase identifiers matching `Self`, `Crate`, `Super`) getting
+ * a trailing underscore.
+ *
+ * No prefix-stripping. Each generated enum is namespaced by its enum
+ * name (`BadgeSettingsTemplateId::BadgeBerriesFed`), so the redundant
+ * group word in each variant is acceptable in exchange for unambiguous,
+ * unmodified identifiers that round-trip cleanly to their templateId.
+ */
+export function deriveTemplateIdVariants(templateIds: readonly string[]): Map<string, string> {
+	const out = new Map<string, string>();
+	for (const id of templateIds) {
+		const pascal = pascalCase(id);
+		out.set(id, RESERVED_PASCAL_CASE.has(pascal) ? `${pascal}_` : pascal);
+	}
+	return out;
+}
+
 export function deriveGroupAliases(templateIds: string[], gName: string): Map<string, string> {
 	const prefix = sharedPrefix(templateIds);
 	const result = new Map<string, string>();

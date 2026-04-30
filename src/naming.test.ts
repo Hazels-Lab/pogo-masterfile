@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { aliasSuffix, deriveGroupAliases, groupName, sharedPrefix, snakeCase, stripGroupNameTail } from "./naming.ts";
+import { aliasSuffix, deriveGroupAliases, deriveTemplateIdVariants, groupName, sharedPrefix, snakeCase, stripGroupNameTail } from "./naming.ts";
 
 describe("snakeCase", () => {
 	test("converts camelCase", () => {
@@ -149,5 +149,36 @@ describe("deriveGroupAliases", () => {
 		const map = deriveGroupAliases(["ROLL_BACK"], "RollBack");
 		// Single id → no shared prefix → suffix is "RollBack" → strip would empty → fallback.
 		expect(map.get("ROLL_BACK")).toBe("RollBack");
+	});
+});
+
+describe("deriveTemplateIdVariants", () => {
+	test("returns full PascalCase'd templateId as variant name", () => {
+		const ids = ["BADGE_7_DAY_STREAKS", "BADGE_BATTLE_ATTACK_WON", "BADGE_BERRIES_FED"];
+		const result = deriveTemplateIdVariants(ids);
+		expect(result.get("BADGE_7_DAY_STREAKS")).toBe("Badge7DayStreaks");
+		expect(result.get("BADGE_BATTLE_ATTACK_WON")).toBe("BadgeBattleAttackWon");
+		expect(result.get("BADGE_BERRIES_FED")).toBe("BadgeBerriesFed");
+	});
+
+	test("preserves leading-V identifiers (versioned templateIds)", () => {
+		const ids = ["V0001_POKEMON_BULBASAUR", "V0002_POKEMON_IVYSAUR"];
+		const result = deriveTemplateIdVariants(ids);
+		expect(result.get("V0001_POKEMON_BULBASAUR")).toBe("V0001PokemonBulbasaur");
+		expect(result.get("V0002_POKEMON_IVYSAUR")).toBe("V0002PokemonIvysaur");
+	});
+
+	test("appends an underscore to reserved-word collisions", () => {
+		const ids = ["SELF", "OTHER"];
+		const result = deriveTemplateIdVariants(ids);
+		expect(result.get("SELF")).toBe("Self_");
+		expect(result.get("OTHER")).toBe("Other");
+	});
+
+	test("works for singletons (full PascalCase, no special handling)", () => {
+		const ids = ["ACCESSIBILITY_CLIENT_SETTINGS", "ADDITIVE_SCENE_SETTINGS"];
+		const result = deriveTemplateIdVariants(ids);
+		expect(result.get("ACCESSIBILITY_CLIENT_SETTINGS")).toBe("AccessibilityClientSettings");
+		expect(result.get("ADDITIVE_SCENE_SETTINGS")).toBe("AdditiveSceneSettings");
 	});
 });
