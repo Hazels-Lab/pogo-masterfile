@@ -7,7 +7,7 @@
 ## Problem
 
 The current inferred TypeScript output is exact but noisy when fields contain large literal
-unions or tuples. For example, `packages/typescript-v2/src/groups/move-settings.ts` can
+unions or tuples. For example, `packages/ts-v2/src/groups/move-settings.ts` can
 inline very large unions for fields such as `movementId`, `pokemonType`, and `vfxName`,
 and can inline tuple types such as `obMoveSettingsNumber18`.
 
@@ -136,5 +136,5 @@ Add focused emitter tests that prove:
 - Existing generated group names, per-entry aliases, and masterfile unions do not change.
 
 Run `bun test`, `bun run typecheck`, `bun run lint`, and `bun run generate`. Generated
-output review should include `packages/typescript-v2/src/groups/move-settings.ts` as the
+output review should include `packages/ts-v2/src/groups/move-settings.ts` as the
 reference example.

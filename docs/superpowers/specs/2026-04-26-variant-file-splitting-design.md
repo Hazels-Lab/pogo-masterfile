@@ -33,7 +33,7 @@ Reorganize the generated TypeScript output so every group lives in its own direc
 Every multi-entry group becomes a directory. Singletons remain consolidated in `misc/`.
 
 ```
-packages/typescript/src/
+packages/ts/src/
   index.ts                              ← top-level barrel: re-exports each group's index;
                                           holds MasterfileEntry, MasterfileTemplateID, MasterfileEntryByTemplateID
   variants.ts                           ← top-level barrel: re-exports each group's variants
@@ -139,12 +139,12 @@ If the group is not split, the directory contains **`variants.ts`** instead — 
 
 ### Top-Level Files
 
-**`packages/typescript/src/index.ts`** (the top-level barrel):
+**`packages/ts/src/index.ts`** (the top-level barrel):
 - For each group: `export type * from "./<group-kebab>";` (resolves to that group's `index.ts`).
 - For misc: `export type * from "./misc";`.
 - `MasterfileEntry`, `MasterfileTemplateID`, `MasterfileEntryByTemplateID` defined here as today.
 
-**`packages/typescript/src/variants.ts`** (top-level variants barrel):
+**`packages/ts/src/variants.ts`** (top-level variants barrel):
 - For each split group: `export type * from "./<group-kebab>/variants";`.
 - For each unsplit multi-entry group: `export type * from "./<group-kebab>/variants.ts";`.
 - For misc: nothing — singleton interfaces are also their own variant aliases, exported from `misc/index.ts`.
@@ -160,7 +160,7 @@ No variant split is applied — singletons are by definition one declaration eac
 
 ### `package.json` Subpath Exports
 
-Update `packages/typescript/package.json` to expose the new structure as importable subpaths:
+Update `packages/ts/package.json` to expose the new structure as importable subpaths:
 
 ```json
 {
@@ -185,7 +185,7 @@ The exact `exports` shape may need adjustment for TypeScript's resolution mode; 
 ### Concrete Example — `pokemonSettings` (H1 success)
 
 ```
-packages/typescript/src/pokemon-settings/
+packages/ts/src/pokemon-settings/
   index.ts            ← PokemonSettings<TemplateID, TData> + PokemonSettingsData
                         + PokemonSettingsMasterfileEntry + PokemonSettingsTemplateID
                         + export type * from "./variants"
@@ -214,7 +214,7 @@ packages/typescript/src/pokemon-settings/
 ### Concrete Example — `pokemonExtendedSettings` (H2 success, 8 clusters)
 
 ```
-packages/typescript/src/pokemon-extended-settings/
+packages/ts/src/pokemon-extended-settings/
   index.ts
   variants/
     index.ts
@@ -231,7 +231,7 @@ packages/typescript/src/pokemon-extended-settings/
 ### Concrete Example — `combatType` (no split, ≤ 100 entries)
 
 ```
-packages/typescript/src/combat-type/
+packages/ts/src/combat-type/
   index.ts            ← base interface, XData, union, TemplateID, re-export
   variants.ts         ← all 18 CombatType* variant aliases inline
 ```
@@ -320,7 +320,7 @@ packages/typescript/src/combat-type/
 
 4. **`src/write.ts`** — verify `mkdir` recursion handles nested paths. If `writeOutput` doesn't already create parent directories, add it.
 
-5. **`packages/typescript/package.json`** — add the `exports` map shown above.
+5. **`packages/ts/package.json`** — add the `exports` map shown above.
 
 ### Test strategy
 
@@ -349,7 +349,7 @@ packages/typescript/src/combat-type/
 
 ### Migration
 
-Single switchover. Regenerate all output, verify the directory tree, run `bunx tsc --noEmit` from `packages/typescript` to confirm every emitted file compiles, and update any consumer fixture (none currently in-repo).
+Single switchover. Regenerate all output, verify the directory tree, run `bunx tsc --noEmit` from `packages/ts` to confirm every emitted file compiles, and update any consumer fixture (none currently in-repo).
 
 **Rust/Go emitters.** Out of scope per `CLAUDE.md`. The TypeScript split has no implications for the other packages; Rust/Go can stay flat. User verifies those outputs manually after the TypeScript work lands.
 
@@ -358,7 +358,7 @@ Single switchover. Regenerate all output, verify the directory tree, run `bunx t
 1. `bun test` — all rewritten and new tests pass.
 2. `bun run generate` — regenerates the directory tree without error.
 3. `bun run format` — Biome formatting passes.
-4. `cd packages/typescript && bunx tsc --noEmit` — zero errors across the new directory tree.
+4. `cd packages/ts && bunx tsc --noEmit` — zero errors across the new directory tree.
 5. Spot-check generated layouts:
    - `pokemon-settings/variants/` contains 18 type-named files (`water.ts`, `fire.ts`, ...).
    - `pokemon-extended-settings/variants/` contains 8 fingerprint-named files (`form.ts`, `base.ts`, ...).

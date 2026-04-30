@@ -12,7 +12,7 @@
 - Tabs for indentation (Biome enforced), double-quoted strings.
 - Tests co-located with source (`foo.ts` + `foo.test.ts`).
 - `bun test` runs all tests. `bun run generate` regenerates the output packages. `bun run format` runs Biome.
-- **Do NOT read** `packages/typescript/index.ts`, `packages/rust/lib.rs`, or `packages/go/main.go` — they're large generated files per `CLAUDE.md`.
+- **Do NOT read** `packages/ts/index.ts`, `packages/rust/lib.rs`, or `packages/go/main.go` — they're large generated files per `CLAUDE.md`.
 
 ---
 
@@ -1758,12 +1758,12 @@ Expected: several files reformatted. A pre-existing warning about `pokemon-setti
 
 - [ ] **Step 3: Typecheck generated TypeScript**
 
-Run: `cd packages/typescript && bunx tsc --noEmit`
+Run: `cd packages/ts && bunx tsc --noEmit`
 Expected: zero errors.
 
-- [ ] **Step 4: Spot-check `packages/typescript/src/groups/type-effective.ts`**
+- [ ] **Step 4: Spot-check `packages/ts/src/groups/type-effective.ts`**
 
-Run: `head -60 packages/typescript/src/groups/type-effective.ts`
+Run: `head -60 packages/ts/src/groups/type-effective.ts`
 
 Expected: begins with
 
@@ -1795,21 +1795,21 @@ export type TypeEffectiveBug = TypeEffective<
 
 No `TypeEffectiveAttackScalar` or other named tuple aliases should be present.
 
-- [ ] **Step 5: Spot-check `packages/typescript/src/groups/combat-type.ts`**
+- [ ] **Step 5: Spot-check `packages/ts/src/groups/combat-type.ts`**
 
-Run: `head -40 packages/typescript/src/groups/combat-type.ts`
+Run: `head -40 packages/ts/src/groups/combat-type.ts`
 
 Expected: two generics (`TemplateID`, `TData`), `excellentLevelThreshold: 0.95` and `niceLevelThreshold: 0.3` inlined in the base body as Kind 1 constants, and per-variant aliases that carry only `greatLevelThreshold` + `type` (or elide TData when a variant matches all defaults).
 
-- [ ] **Step 6: Spot-check `packages/typescript/src/groups/item-settings.ts`**
+- [ ] **Step 6: Spot-check `packages/ts/src/groups/item-settings.ts`**
 
-Run: `head -30 packages/typescript/src/groups/item-settings.ts`
+Run: `head -30 packages/ts/src/groups/item-settings.ts`
 
 Expected: exactly two generics (no `TCategory`, `TDescriptionOverride`, etc.). The base interface is slim. `ItemSettingsData` is a single interface with all optional fields. Per-variant aliases include only the fields that variant actually has.
 
-- [ ] **Step 7: Spot-check `packages/typescript/src/groups/combat-move.ts`**
+- [ ] **Step 7: Spot-check `packages/ts/src/groups/combat-move.ts`**
 
-Run: `head -30 packages/typescript/src/groups/combat-move.ts`
+Run: `head -30 packages/ts/src/groups/combat-move.ts`
 
 Expected: exactly two generics. No filler `number, number, 1, ...` positional args. Per-variant aliases carry only the fields that variant has.
 
@@ -1817,7 +1817,7 @@ Expected: exactly two generics. No filler `number, number, 1, ...` positional ar
 
 Run:
 ```bash
-grep -rE "^export type \w+ = (string|number|boolean);$" packages/typescript/src/groups/ | head
+grep -rE "^export type \w+ = (string|number|boolean);$" packages/ts/src/groups/ | head
 ```
 
 Expected: no matches.
@@ -1833,7 +1833,7 @@ Print a summary of what was changed and ask the user to verify the Rust and Go o
 1. `bun test` — all tests pass.
 2. `bun run generate` — regenerates all 61 files without error.
 3. `bun run format` — Biome passes (one pre-existing size warning is fine).
-4. `cd packages/typescript && bunx tsc --noEmit` — zero errors.
+4. `cd packages/ts && bunx tsc --noEmit` — zero errors.
 5. Spot-checks show: 2-generic base interface, `XData` interface with all-optional fields, invariants in base body, per-variant literal TData, no named tuple aliases, no primitive-widened aliases.
 6. User verifies Rust/Go outputs manually.
 

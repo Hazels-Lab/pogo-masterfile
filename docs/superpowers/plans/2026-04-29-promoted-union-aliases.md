@@ -1115,16 +1115,16 @@ git commit -m "feat(generate): pass promotion registry into emitGroupTypes"
 ## Task 12: End-to-end verification — regenerate and type-check
 
 **Files:**
-- Generated output under `packages/typescript/src/**` (regenerated)
+- Generated output under `packages/ts/src/**` (regenerated)
 
 - [ ] **Step 1: Regenerate the TypeScript output**
 
 Run: `bun run generate`
-Expected: command completes without errors; emits regenerated files under `packages/typescript/src/`.
+Expected: command completes without errors; emits regenerated files under `packages/ts/src/`.
 
 - [ ] **Step 2: Spot-check a sentinel file (`type-effective`)**
 
-Run: `head -50 packages/typescript/src/type-effective/types.ts`
+Run: `head -50 packages/ts/src/type-effective/types.ts`
 Expected output should now include the `PokemonType` alias near the bottom of the file:
 
 ```ts
@@ -1139,12 +1139,12 @@ If the alias is absent, investigate before continuing. Likely culprits: registry
 
 - [ ] **Step 3: Spot-check a consumer file (`move-settings`)**
 
-Run: `head -30 packages/typescript/src/move-settings/types.ts`
+Run: `head -30 packages/ts/src/move-settings/types.ts`
 Expected: an `import type { PokemonType } from "../type-effective/types";` line and `pokemonType: PokemonType;` inside `MoveSettingsData`.
 
 - [ ] **Step 4: Spot-check the Exclude path (`pokemon-settings`)**
 
-Run: `grep -n "Exclude<PokemonType" packages/typescript/src/pokemon-settings/types.ts`
+Run: `grep -n "Exclude<PokemonType" packages/ts/src/pokemon-settings/types.ts`
 Expected: at least one match for the `tempEvoOverrides[].typeOverride1` field. The exact members in the `Exclude` argument depend on the live masterfile, but should be 1–4 missing types.
 
 - [ ] **Step 5: Type-check the regenerated package**
@@ -1160,13 +1160,13 @@ Expected: all green.
 - [ ] **Step 7: Commit the regenerated package**
 
 ```bash
-git add packages/typescript/src
+git add packages/ts/src
 git commit -m "chore(generated): regenerate types with promoted union aliases"
 ```
 
 - [ ] **Step 8: Report back to the user**
 
-Per the project's CLAUDE.md, generated files under `packages/typescript/src/**` are not parsed during normal operation. Post a short message to the user summarizing what was regenerated and asking them to verify the output type-checks cleanly in their downstream consumers.
+Per the project's CLAUDE.md, generated files under `packages/ts/src/**` are not parsed during normal operation. Post a short message to the user summarizing what was regenerated and asking them to verify the output type-checks cleanly in their downstream consumers.
 
 ---
 
@@ -1175,9 +1175,9 @@ Per the project's CLAUDE.md, generated files under `packages/typescript/src/**` 
 After Task 12 completes, the following should all be true:
 
 - [ ] `bun test` passes.
-- [ ] `bun run typecheck` passes against `packages/typescript/src`.
-- [ ] `packages/typescript/src/type-effective/types.ts` exports `PokemonType` and `TypeEffectiveTemplateID`.
+- [ ] `bun run typecheck` passes against `packages/ts/src`.
+- [ ] `packages/ts/src/type-effective/types.ts` exports `PokemonType` and `TypeEffectiveTemplateID`.
 - [ ] At least one consumer group (`move-settings`, `combat-move`, `weather-affinities`) imports `PokemonType` instead of inlining the 18-member union.
 - [ ] At least one consumer field (e.g., `pokemon-settings`'s `tempEvoOverrides`) uses `Exclude<PokemonType, ...>` for partial unions.
-- [ ] No file imports from itself (`grep -rn 'from "../<own-disc>/types"' packages/typescript/src/<own-disc>/types.ts` returns nothing).
+- [ ] No file imports from itself (`grep -rn 'from "../<own-disc>/types"' packages/ts/src/<own-disc>/types.ts` returns nothing).
 - [ ] Other prefix-shaped groups (`combat-type`, `weather-affinities`) emit their own promoted aliases (`CombatPokemonType`, `WeatherAffinity`).

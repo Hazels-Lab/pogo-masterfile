@@ -2,14 +2,14 @@
 
 Do NOT read or parse the following generated files (extremely large — wastes tokens):
 
-* `./packages/typescript/src/pokemon-settings/**`
-* `./packages/typescript/src/pokemon-extended-settings/**`
-* `./packages/typescript/src/avatar-customization/**`
-* `./packages/typescript/src/gender-settings/**`
-* `./packages/typescript/src/avatar-item-display/**`
-* `./packages/typescript/src/iap-item-display/**`
-* `./packages/typescript/src/form-settings/**`
-* `./packages/typescript/src/badge-settings/**`
+* `./packages/ts/src/pokemon-settings/**`
+* `./packages/ts/src/pokemon-extended-settings/**`
+* `./packages/ts/src/avatar-customization/**`
+* `./packages/ts/src/gender-settings/**`
+* `./packages/ts/src/avatar-item-display/**`
+* `./packages/ts/src/iap-item-display/**`
+* `./packages/ts/src/form-settings/**`
+* `./packages/ts/src/badge-settings/**`
 * `./packages/rust/lib.rs`
 * `./packages/go/main.go`
 

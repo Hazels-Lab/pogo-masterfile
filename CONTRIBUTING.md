@@ -2,7 +2,7 @@
 
 ## Regenerating types
 
-The three published packages under `packages/` are **fully generated** from `masterfile.json` plus the inference pipeline in `src/`. Don't edit files in `packages/typescript/src/`, `packages/rust/src/`, or `packages/go/*.go` by hand — run codegen instead:
+The three published packages under `packages/` are **fully generated** from `masterfile.json` plus the inference pipeline in `src/`. Don't edit files in `packages/ts/src/`, `packages/rust/src/`, or `packages/go/*.go` by hand — run codegen instead:
 
 ```bash
 bun run generate
@@ -53,7 +53,7 @@ Before pushing a release tag for any package:
 
 ```bash
 # TypeScript
-cd packages/typescript && bun run build && npm pack --dry-run
+cd packages/ts && bun run build && npm pack --dry-run
 
 # Rust
 cd packages/rust && cargo publish --dry-run

@@ -295,7 +295,7 @@ Unchanged. Single-entry groups continue to emit concrete (non-generic) interface
 
 ### Migration
 
-Single switchover. Rewrite the emit path, delete alias-planning code, regen all 60+ group files, run `bunx tsc --noEmit` on `packages/typescript` to verify every generated file compiles. Existing tests will fail first (expected) — rewrite them to match the new shape. No feature flag.
+Single switchover. Rewrite the emit path, delete alias-planning code, regen all 60+ group files, run `bunx tsc --noEmit` on `packages/ts` to verify every generated file compiles. Existing tests will fail first (expected) — rewrite them to match the new shape. No feature flag.
 
 **Rust/Go emitters.** Out of scope per `CLAUDE.md`. User verifies those outputs manually after the TypeScript emitter is done.
 
@@ -311,7 +311,7 @@ Single switchover. Rewrite the emit path, delete alias-planning code, regen all 
 1. `bun test` — all rewritten tests pass.
 2. `bun run generate` — regenerates all 60+ group files without error.
 3. `bun run format` — Biome formatting passes.
-4. `cd packages/typescript && bunx tsc --noEmit` — zero errors.
+4. `cd packages/ts && bunx tsc --noEmit` — zero errors.
 5. Spot-check generated files:
    - `type-effective.ts` — constants in base body, per-variant with literal tuples
    - `combat-type.ts` — two constants inlined, 2-generic shape

@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Build a TypeScript generator that fetches the remote Pokémon GO `GAME_MASTER.json`, groups its ~18,050 entries by their single `data`-level discriminator key, and emits ergonomic TypeScript types into `packages/typescript-v2/src/`.
+**Goal:** Build a TypeScript generator that fetches the remote Pokémon GO `GAME_MASTER.json`, groups its ~18,050 entries by their single `data`-level discriminator key, and emits ergonomic TypeScript types into `packages/ts-v2/src/`.
 
 **Architecture:** One `bun`-runnable script at `src/generate.ts` orchestrates a pure functional pipeline: fetch → group → name → emit → write. Pure functions live in `src/group.ts`, `src/naming.ts`, `src/emit.ts`, `src/write.ts`. Each has a colocated `.test.ts`. Output is deterministic (alphabetically sorted) so CI diffs are meaningful.
 
@@ -34,7 +34,7 @@ The existing `src/index.ts`, `src/template-id-grouper.ts`, `src/template-id-grou
 
 Output (generated; regenerated fresh on each run):
 ```
-packages/typescript-v2/src/
+packages/ts-v2/src/
   groups/
     <kebab-case-discriminator>.ts × 60
     misc.ts
@@ -1134,12 +1134,12 @@ Expected output (counts will match the current upstream):
 Fetching https://raw.githubusercontent.com/alexelgt/game_masters/...
 Fetched ~18050 entries.
 Grouped into ~195 discriminators.
-Wrote ~62 files to /Users/rin/GitHub/pogo-masterfile-types/packages/typescript-v2/src
+Wrote ~62 files to /Users/rin/GitHub/pogo-masterfile-types/packages/ts-v2/src
 ```
 
 - [ ] **Step 3: Spot-check generated output**
 
-Run: `ls packages/typescript-v2/src/groups/ | head -10 && head -30 packages/typescript-v2/src/groups/type-effective.ts`
+Run: `ls packages/ts-v2/src/groups/ | head -10 && head -30 packages/ts-v2/src/groups/type-effective.ts`
 Expected: kebab-case filenames; `TypeEffective<T extends string>` interface at top.
 
 - [ ] **Step 4: Typecheck the generated output**
@@ -1152,9 +1152,9 @@ Expected: no errors.
 Run:
 ```bash
 bun run generate
-shasum -a 256 packages/typescript-v2/src/index.ts > /tmp/hash-1
+shasum -a 256 packages/ts-v2/src/index.ts > /tmp/hash-1
 bun run generate
-shasum -a 256 packages/typescript-v2/src/index.ts > /tmp/hash-2
+shasum -a 256 packages/ts-v2/src/index.ts > /tmp/hash-2
 diff /tmp/hash-1 /tmp/hash-2
 ```
 Expected: identical hashes (empty diff).
@@ -1162,7 +1162,7 @@ Expected: identical hashes (empty diff).
 - [ ] **Step 6: Commit the generator + the generated output**
 
 ```bash
-git add src/generate.ts packages/typescript-v2/src/
+git add src/generate.ts packages/ts-v2/src/
 git commit -m "feat: generate masterfile types from upstream GAME_MASTER.json"
 ```
 
@@ -1180,22 +1180,22 @@ Expected: all tests pass.
 - [ ] **Step 2: Run Biome format check on source (not generated output)**
 
 Run: `bunx biome check src/`
-Expected: clean. (If the generated output has formatting issues, that's fine — Biome should ignore `packages/typescript-v2/src/` via gitignore or a scoped include. If Biome flags the generator source, fix it.)
+Expected: clean. (If the generated output has formatting issues, that's fine — Biome should ignore `packages/ts-v2/src/` via gitignore or a scoped include. If Biome flags the generator source, fix it.)
 
 - [ ] **Step 3: Sanity-check a known group**
 
-Run: `grep "PokemonType" packages/typescript-v2/src/groups/type-effective.ts | head -5`
+Run: `grep "PokemonType" packages/ts-v2/src/groups/type-effective.ts | head -5`
 Expected: see `PokemonTypeBug`, `PokemonTypeDark`, ... — wait, that would require the `PokemonType` naming strategy (option B from the brainstorming). Under option A (chosen), the group is named `TypeEffective`, so:
 
-Run: `grep "TypeEffective" packages/typescript-v2/src/groups/type-effective.ts | head -5`
+Run: `grep "TypeEffective" packages/ts-v2/src/groups/type-effective.ts | head -5`
 Expected: see `TypeEffectiveBug`, `TypeEffectiveDark`, etc.
 
 - [ ] **Step 4: Confirm a known global count**
 
-Run: `grep -c "^export type " packages/typescript-v2/src/index.ts`
+Run: `grep -c "^export type " packages/ts-v2/src/index.ts`
 Expected: small number (just `MasterfileEntry` and `MasterfileTemplateID`).
 
-Run: `grep -rc "^export type " packages/typescript-v2/src/groups/ | awk -F: '{s+=$2} END {print s}'`
+Run: `grep -rc "^export type " packages/ts-v2/src/groups/ | awk -F: '{s+=$2} END {print s}'`
 Expected: roughly 18,050 (one exported type alias per templateId in multi-entry groups, plus the per-group `MasterfileEntry` unions and `TemplateID` aliases — the exact total is deterministic once the generator runs).
 
 - [ ] **Step 5: If all green, no commit needed** (this task is verification only).
@@ -1204,7 +1204,7 @@ Expected: roughly 18,050 (one exported type alias per templateId in multi-entry 
 
 ## Success criteria checklist (from spec)
 
-- [ ] `bun run generate` produces a deterministic `packages/typescript-v2/src/` tree.
+- [ ] `bun run generate` produces a deterministic `packages/ts-v2/src/` tree.
 - [ ] Re-running without upstream changes produces a byte-identical tree.
 - [ ] Every templateId in the fetched masterfile resolves to exactly one exported type reachable from `index.ts`.
 - [ ] `tsc --noEmit` passes on the generated output.

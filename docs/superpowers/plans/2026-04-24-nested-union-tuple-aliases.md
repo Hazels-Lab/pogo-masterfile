@@ -19,9 +19,9 @@
 | `src/emit.ts` | Add alias planning, alias-aware rendering, alias name generation, and alias definition output. |
 | `src/emit.test.ts` | Add failing regression tests for direct aliases, nested aliases, tuple aliases, array element aliases, single literals, and `TemplateID` mirror fields. |
 | `src/fixtures.ts` | Add small fixture fields that make alias extraction easy to test without reading generated package files. |
-| `packages/typescript-v2/src/groups/*.ts` | Regenerated output only. Do not hand-edit these files. |
+| `packages/ts-v2/src/groups/*.ts` | Regenerated output only. Do not hand-edit these files. |
 
-Existing uncommitted `packages/typescript-v2/src/groups/move-settings.ts` changes are a reference example from the user. Do not commit that hand edit directly; after the emitter change, `bun run generate` should replace it with generated output.
+Existing uncommitted `packages/ts-v2/src/groups/move-settings.ts` changes are a reference example from the user. Do not commit that hand edit directly; after the emitter change, `bun run generate` should replace it with generated output.
 
 Current baseline note: `src/emit.ts` already emits `TemplateID` as the generic name. The first `src/emit.test.ts` test still has older `T` assertions, so the regression-test task must update those stale assertions before checking the new alias behavior.
 
@@ -413,12 +413,12 @@ git add src/emit.ts src/emit.test.ts src/fixtures.ts
 git commit -m "feat: extract nested union and tuple aliases"
 ```
 
-Do not include `packages/typescript-v2/src/groups/move-settings.ts` in this commit.
+Do not include `packages/ts-v2/src/groups/move-settings.ts` in this commit.
 
 ## Task 3: Generate Output and Verify
 
 **Files:**
-- Modify by generation: `packages/typescript-v2/src/groups/*.ts`
+- Modify by generation: `packages/ts-v2/src/groups/*.ts`
 - Test: `src/*.test.ts`
 
 - [ ] **Step 1: Run full source checks before generation**
@@ -446,7 +446,7 @@ Expected output includes:
 ```text
 Fetched 18050 entries.
 Grouped into 197 discriminators.
-Wrote 61 files to /Users/rin/GitHub/pogo-masterfile-types/packages/typescript-v2/src
+Wrote 61 files to /Users/rin/GitHub/pogo-masterfile-types/packages/ts-v2/src
 ```
 
 - [ ] **Step 3: Check the reference generated file without broad generated-file parsing**
@@ -454,7 +454,7 @@ Wrote 61 files to /Users/rin/GitHub/pogo-masterfile-types/packages/typescript-v2
 Run:
 
 ```bash
-rg -n "movementId:|export type MoveSettingsMovementID|obMoveSettingsNumber18:|export type MoveSettingsObMoveSettingsNumber18|vfxName:|export type MoveSettingsVfxName" packages/typescript-v2/src/groups/move-settings.ts
+rg -n "movementId:|export type MoveSettingsMovementID|obMoveSettingsNumber18:|export type MoveSettingsObMoveSettingsNumber18|vfxName:|export type MoveSettingsVfxName" packages/ts-v2/src/groups/move-settings.ts
 ```
 
 Expected: `movementId`, `obMoveSettingsNumber18`, and `vfxName` use aliases, and the matching exported alias definitions exist in the same file.
@@ -474,7 +474,7 @@ Expected: all commands exit 0.
 - [ ] **Step 5: Commit generated output**
 
 ```bash
-git add packages/typescript-v2/src/groups src/emit.ts src/emit.test.ts src/fixtures.ts
+git add packages/ts-v2/src/groups src/emit.ts src/emit.test.ts src/fixtures.ts
 git commit -m "chore: regenerate TypeScript aliases for inferred unions"
 ```
 

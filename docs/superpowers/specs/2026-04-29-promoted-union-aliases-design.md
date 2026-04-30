@@ -199,7 +199,7 @@ Existing tests stay green: `inferredToType`'s new `ctx` parameter is optional, s
 1. Land the generator changes with empty-registry compatibility (existing tests pass unchanged).
 2. Wire `buildPromotionRegistry` into `generate.ts` and thread the registry into the emit calls.
 3. Run `bun run src/generate.ts`. Inspect diffs in sentinel files: `move-settings/types.ts`, `weather-affinities/types.ts`, `combat-move/types.ts`, `pokemon-settings/types.ts`, `type-effective/types.ts` (now exports `PokemonType`).
-4. Run `tsc --noEmit` over `packages/typescript/src` to confirm the regenerated output type-checks (no broken cross-imports, no name collisions).
+4. Run `tsc --noEmit` over `packages/ts/src` to confirm the regenerated output type-checks (no broken cross-imports, no name collisions).
 5. User verifies by importing the package downstream and spot-checking `PokemonType` exists and is assignable where expected.
 
 ## Out of scope

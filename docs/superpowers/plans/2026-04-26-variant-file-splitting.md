@@ -4,7 +4,7 @@
 
 **Goal:** Reorganize the generated TypeScript output so every group lives in its own directory, and groups with > 100 entries have their per-variant aliases split across multiple files using a cascade of (H1) single-field discriminator → (H2) field-presence fingerprint clustering → no-split fallback.
 
-**Architecture:** Add a new `src/split.ts` module containing the cascade selector (`chooseSplit`) plus its helpers (`tryH1`, `tryH2`, `valueFileName`, `fingerprintFileName`). Refactor `src/emit.ts` to expose four narrower emitters (`emitGroupIndex`, `emitVariantsFlat`, `emitVariantFile`, `emitVariantsBarrel`) plus a top-level variants barrel emitter. Rewrite `planFiles` in `src/generate.ts` to produce a directory tree (`<group>/index.ts`, `<group>/variants.ts` or `<group>/variants/<bucket>.ts`, plus `misc/index.ts`, top-level `index.ts`, top-level `variants.ts`). Add `packages/typescript/package.json` with subpath `exports`.
+**Architecture:** Add a new `src/split.ts` module containing the cascade selector (`chooseSplit`) plus its helpers (`tryH1`, `tryH2`, `valueFileName`, `fingerprintFileName`). Refactor `src/emit.ts` to expose four narrower emitters (`emitGroupIndex`, `emitVariantsFlat`, `emitVariantFile`, `emitVariantsBarrel`) plus a top-level variants barrel emitter. Rewrite `planFiles` in `src/generate.ts` to produce a directory tree (`<group>/index.ts`, `<group>/variants.ts` or `<group>/variants/<bucket>.ts`, plus `misc/index.ts`, top-level `index.ts`, top-level `variants.ts`). Add `packages/ts/package.json` with subpath `exports`.
 
 **Tech Stack:** TypeScript (Bun runtime), `bun:test`, Biome formatter. Source + tests colocated in `src/`. Design spec at [`docs/superpowers/specs/2026-04-26-variant-file-splitting-design.md`](../specs/2026-04-26-variant-file-splitting-design.md).
 
@@ -13,7 +13,7 @@
 - Tests co-located with source (`foo.ts` + `foo.test.ts`).
 - `bun test` runs all tests. `bun run generate` regenerates the output packages. `bun run format` runs Biome.
 - `verbatimModuleSyntax: true` — every type-only import must use `import type` and every type re-export must use `export type * from`.
-- **Do NOT read** `packages/typescript/index.ts`, `packages/rust/lib.rs`, or `packages/go/main.go` — they're large generated files per `CLAUDE.md`. After this refactor, the largest TS files will move; Task 15 updates `CLAUDE.md`.
+- **Do NOT read** `packages/ts/index.ts`, `packages/rust/lib.rs`, or `packages/go/main.go` — they're large generated files per `CLAUDE.md`. After this refactor, the largest TS files will move; Task 15 updates `CLAUDE.md`.
 
 ---
 
@@ -22,7 +22,7 @@
 **Created:**
 - `src/split.ts` — cascade selector + helpers (`chooseSplit`, `tryH1`, `tryH2`, `valueFileName`, `fingerprintFileName`)
 - `src/split.test.ts` — unit tests for all cascade logic
-- `packages/typescript/package.json` — subpath `exports` so consumers can import sub-paths
+- `packages/ts/package.json` — subpath `exports` so consumers can import sub-paths
 
 **Modified:**
 - `src/emit.ts` — split `emitGroupFile` into four narrower emitters; update `emitIndexFile` for directory paths; add `emitTopLevelVariants`. Delete `emitGroupFile` once it's unused.
@@ -36,7 +36,7 @@
 **Output layout (after this refactor):**
 
 ```
-packages/typescript/
+packages/ts/
   package.json                                  ← new (Task 13)
   src/
     index.ts                                    ← top-level barrel + MasterfileEntry (Task 11)
@@ -1547,9 +1547,9 @@ Run: `bun run generate`
 Expected: regenerates the directory tree without errors. Note: `generate.ts` fetches the masterfile from a public URL — requires network. Verify quickly with:
 
 ```bash
-ls packages/typescript/src
-ls packages/typescript/src/pokemon-settings
-ls packages/typescript/src/pokemon-settings/variants
+ls packages/ts/src
+ls packages/ts/src/pokemon-settings
+ls packages/ts/src/pokemon-settings/variants
 ```
 
 You should see directories per multi-entry group, an `index.ts` and either `variants.ts` or `variants/` per group, and top-level `index.ts` + `variants.ts` + `misc/`.
@@ -1557,28 +1557,28 @@ You should see directories per multi-entry group, an `index.ts` and either `vari
 Run: `bun run format`
 Expected: Biome formats without errors.
 
-Run: `cd packages/typescript && bunx tsc --noEmit && cd ../..`
+Run: `cd packages/ts && bunx tsc --noEmit && cd ../..`
 Expected: zero type errors across the regenerated tree.
 
 - [ ] **Step 5: Commit**
 
 ```bash
-git add src/generate.ts src/emit.ts src/emit.test.ts packages/typescript/src
+git add src/generate.ts src/emit.ts src/emit.test.ts packages/ts/src
 git commit -m "feat: switch generator to per-group directory tree with cascade splitting"
 ```
 
 ---
 
-## Task 13: Add `packages/typescript/package.json` with subpath exports
+## Task 13: Add `packages/ts/package.json` with subpath exports
 
 **Files:**
-- Create: `packages/typescript/package.json`
+- Create: `packages/ts/package.json`
 
 This exposes the new directory layout to consumers via importable subpaths.
 
 - [ ] **Step 1: Create the package.json**
 
-Write `packages/typescript/package.json`:
+Write `packages/ts/package.json`:
 
 ```json
 {
@@ -1612,7 +1612,7 @@ Create `scripts/consumer-fixture.ts`:
 
 ```typescript
 // Read-only fixture — verifies subpath resolution works across the new layout.
-// Run via `cd packages/typescript && bunx tsc --noEmit ../../scripts/consumer-fixture.ts`.
+// Run via `cd packages/ts && bunx tsc --noEmit ../../scripts/consumer-fixture.ts`.
 
 import type { MasterfileEntry, MasterfileTemplateID } from "pogo-masterfile-types";
 import type { PokemonSettings, PokemonSettingsMasterfileEntry } from "pogo-masterfile-types/pokemon-settings";
@@ -1645,11 +1645,11 @@ Add (temporarily) a `tsconfig.consumer.json` at repo root:
 	"extends": "./tsconfig.json",
 	"compilerOptions": {
 		"paths": {
-			"pogo-masterfile-types": ["./packages/typescript/src/index.ts"],
-			"pogo-masterfile-types/*": ["./packages/typescript/src/*/index.ts"],
-			"pogo-masterfile-types/variants": ["./packages/typescript/src/variants.ts"],
-			"pogo-masterfile-types/*/variants": ["./packages/typescript/src/*/variants.ts"],
-			"pogo-masterfile-types/*/variants/*": ["./packages/typescript/src/*/variants/*.ts"]
+			"pogo-masterfile-types": ["./packages/ts/src/index.ts"],
+			"pogo-masterfile-types/*": ["./packages/ts/src/*/index.ts"],
+			"pogo-masterfile-types/variants": ["./packages/ts/src/variants.ts"],
+			"pogo-masterfile-types/*/variants": ["./packages/ts/src/*/variants.ts"],
+			"pogo-masterfile-types/*/variants/*": ["./packages/ts/src/*/variants/*.ts"]
 		}
 	},
 	"include": ["scripts/consumer-fixture.ts"]
@@ -1659,7 +1659,7 @@ Add (temporarily) a `tsconfig.consumer.json` at repo root:
 Run: `bunx tsc --noEmit -p tsconfig.consumer.json`
 Expected: zero errors.
 
-If the resolution fails, the issue is likely the `exports` map shape. Adjust `packages/typescript/package.json` (e.g. some bundlers prefer the flatter `"./pokemon-settings": "./src/pokemon-settings/index.ts"` form). Re-run until it passes.
+If the resolution fails, the issue is likely the `exports` map shape. Adjust `packages/ts/package.json` (e.g. some bundlers prefer the flatter `"./pokemon-settings": "./src/pokemon-settings/index.ts"` form). Re-run until it passes.
 
 Once it passes, delete `tsconfig.consumer.json` and `scripts/consumer-fixture.ts` — they were validation aids, not committed artifacts.
 
@@ -1671,8 +1671,8 @@ Expected: all tests pass.
 - [ ] **Step 5: Commit**
 
 ```bash
-git add packages/typescript/package.json
-git commit -m "feat: add packages/typescript/package.json with subpath exports"
+git add packages/ts/package.json
+git commit -m "feat: add packages/ts/package.json with subpath exports"
 ```
 
 ---
@@ -1684,7 +1684,7 @@ git commit -m "feat: add packages/typescript/package.json with subpath exports"
 
 - [ ] **Step 1: Regenerate from scratch**
 
-Run: `rm -rf packages/typescript/src && bun run generate`
+Run: `rm -rf packages/ts/src && bun run generate`
 Expected: the script wipes and rewrites the tree without error. Final log line should report the number of files written.
 
 - [ ] **Step 2: Spot-check the generated layouts**
@@ -1692,38 +1692,38 @@ Expected: the script wipes and rewrites the tree without error. Final log line s
 Run each command and confirm the listed expectations:
 
 ```bash
-ls packages/typescript/src/pokemon-settings/variants/ | sort
+ls packages/ts/src/pokemon-settings/variants/ | sort
 ```
 Expected: 18 type-named files (`bug.ts`, `dark.ts`, `dragon.ts`, `electric.ts`, `fairy.ts`, `fighting.ts`, `fire.ts`, `flying.ts`, `ghost.ts`, `grass.ts`, `ground.ts`, `ice.ts`, `index.ts`, `normal.ts`, `poison.ts`, `psychic.ts`, `rock.ts`, `steel.ts`, `water.ts`).
 
 ```bash
-ls packages/typescript/src/pokemon-extended-settings/variants/ | sort
+ls packages/ts/src/pokemon-extended-settings/variants/ | sort
 ```
 Expected: ~9 fingerprint-named files (`base.ts`, `bread-overrides.ts`, `bread-overrides+form.ts`, `bread-overrides+form+temp-evo-overrides.ts`, `bread-overrides+temp-evo-overrides.ts`, `form.ts`, `form+temp-evo-overrides.ts`, `index.ts`, `temp-evo-overrides.ts`).
 
 ```bash
-ls packages/typescript/src/gender-settings/variants/ | sort
+ls packages/ts/src/gender-settings/variants/ | sort
 ```
 Expected: 3 files (`base.ts`, `form.ts`, `index.ts`).
 
 ```bash
-ls packages/typescript/src/combat-type/
+ls packages/ts/src/combat-type/
 ```
 Expected: `index.ts`, `variants.ts` — no `variants/` directory (≤ 100 entries).
 
 ```bash
-ls packages/typescript/src/move-sequence-settings/
+ls packages/ts/src/move-sequence-settings/
 ```
 Expected: `index.ts`, `variants.ts` — no `variants/` directory (no-split fallback).
 
 ```bash
-ls packages/typescript/src/misc/
+ls packages/ts/src/misc/
 ```
 Expected: `index.ts` only.
 
 - [ ] **Step 3: Type-check the whole regenerated package**
 
-Run: `cd packages/typescript && bunx tsc --noEmit && cd ../..`
+Run: `cd packages/ts && bunx tsc --noEmit && cd ../..`
 Expected: zero errors across the new directory tree.
 
 - [ ] **Step 4: Format and lint**
@@ -1745,11 +1745,11 @@ Expected: all tests pass.
 **Files:**
 - Modify: `CLAUDE.md`
 
-The "do NOT read" list points to `./packages/typescript/index.ts`, but the new layout has the bulk of the data in per-cluster variant files. Update the list to reflect the largest generated files after the refactor.
+The "do NOT read" list points to `./packages/ts/index.ts`, but the new layout has the bulk of the data in per-cluster variant files. Update the list to reflect the largest generated files after the refactor.
 
 - [ ] **Step 1: Identify the largest generated files**
 
-Run: `find packages/typescript/src -type f -name "*.ts" -exec ls -la {} \; | sort -k5 -nr | head -20`
+Run: `find packages/ts/src -type f -name "*.ts" -exec ls -la {} \; | sort -k5 -nr | head -20`
 Expected: a list ordered by size. Note the top ~10 file paths.
 
 - [ ] **Step 2: Edit `CLAUDE.md`**
@@ -1761,14 +1761,14 @@ Replace the existing `## Important` block with:
 
 Do NOT read or parse the following generated files (extremely large — wastes tokens):
 
-* `./packages/typescript/src/pokemon-settings/**`
-* `./packages/typescript/src/pokemon-extended-settings/**`
-* `./packages/typescript/src/avatar-customization/**`
-* `./packages/typescript/src/gender-settings/**`
-* `./packages/typescript/src/avatar-item-display/**`
-* `./packages/typescript/src/iap-item-display/**`
-* `./packages/typescript/src/form-settings/**`
-* `./packages/typescript/src/badge-settings/**`
+* `./packages/ts/src/pokemon-settings/**`
+* `./packages/ts/src/pokemon-extended-settings/**`
+* `./packages/ts/src/avatar-customization/**`
+* `./packages/ts/src/gender-settings/**`
+* `./packages/ts/src/avatar-item-display/**`
+* `./packages/ts/src/iap-item-display/**`
+* `./packages/ts/src/form-settings/**`
+* `./packages/ts/src/badge-settings/**`
 * `./packages/rust/lib.rs`
 * `./packages/go/main.go`
 
@@ -1796,8 +1796,8 @@ After Task 15, the implementation is complete. Final state:
 - `src/split.ts` provides the cascade selector, fully tested.
 - `src/emit.ts` exposes narrower per-purpose emitters; `emitGroupFile` is gone.
 - `src/generate.ts` produces a directory tree.
-- The generated `packages/typescript/src/` layout uses one directory per multi-entry group, with `variants.ts` for unsplit groups and `variants/<bucket>.ts` for split groups.
-- `packages/typescript/package.json` exposes subpath exports for consumers.
+- The generated `packages/ts/src/` layout uses one directory per multi-entry group, with `variants.ts` for unsplit groups and `variants/<bucket>.ts` for split groups.
+- `packages/ts/package.json` exposes subpath exports for consumers.
 - `CLAUDE.md` reflects the new file paths in its "do not read" list.
 
 Per the design's Non-Goals, Rust (`packages/rust/lib.rs`) and Go (`packages/go/main.go`) emitters are unchanged. Report to the user to verify those outputs manually if they're regenerated alongside.

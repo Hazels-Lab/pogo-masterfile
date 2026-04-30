@@ -55,7 +55,7 @@ fetch(GAME_MASTER_URL)
   ─▶ parse JSON
   ─▶ group entries by discriminator
   ─▶ derive PascalCase names (group + per-entry aliases)
-  ─▶ emit .ts files into packages/typescript-v2/src/
+  ─▶ emit .ts files into packages/ts-v2/src/
 ```
 
 The existing `src/*.ts` files from earlier attempts (`index.ts`, `template-id-grouper*.ts`,
@@ -158,7 +158,7 @@ Input order from the upstream JSON is *not* relied upon.
 ## Output layout
 
 ```
-packages/typescript-v2/src/
+packages/ts-v2/src/
   groups/
     type-effective.ts
     pokemon-settings.ts
@@ -255,8 +255,8 @@ export type MasterfileTemplateID = MasterfileEntry["templateId"];
 
 ### Output directory safety
 
-The generator deletes only `packages/typescript-v2/src/` before regeneration, not the
-whole `packages/typescript-v2/` directory — that holds `package.json`, `tsconfig.json`, and
+The generator deletes only `packages/ts-v2/src/` before regeneration, not the
+whole `packages/ts-v2/` directory — that holds `package.json`, `tsconfig.json`, and
 similar files that must not churn on every run.
 
 ## Out of scope (explicit follow-ups)
@@ -270,7 +270,7 @@ similar files that must not churn on every run.
 
 ## Success criteria
 
-1. `bun run <generator>` produces a deterministic `packages/typescript-v2/src/` tree.
+1. `bun run <generator>` produces a deterministic `packages/ts-v2/src/` tree.
 2. Re-running without upstream changes produces a byte-identical tree (enables
    clean CI diffs).
 3. Every templateId in the fetched masterfile resolves to exactly one exported type in

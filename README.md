@@ -20,7 +20,7 @@ Each package ships:
 
 See each package's README for install lines and a usage example:
 
-- [packages/typescript/README.md](packages/typescript/README.md)
+- [packages/ts/README.md](packages/ts/README.md)
 - [packages/rust/README.md](packages/rust/README.md)
 - [packages/go/README.md](packages/go/README.md)
 

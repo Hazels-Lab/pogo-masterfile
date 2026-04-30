@@ -24,9 +24,9 @@ jobs:
       - run: bun install --frozen-lockfile
       - name: Build types
         run: bun run build
-        working-directory: packages/typescript
+        working-directory: packages/ts
       - name: Publish
         run: npm publish --provenance --access public
-        working-directory: packages/typescript
+        working-directory: packages/ts
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
