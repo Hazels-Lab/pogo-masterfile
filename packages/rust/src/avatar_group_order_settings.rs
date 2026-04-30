@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct AvatarGroupOrderSettingsGroup {
+pub struct Group {
     pub name: String,
     pub new_tag_enabled: Option<bool>,
     pub order: u64,
@@ -13,5 +13,5 @@ pub struct AvatarGroupOrderSettingsGroup {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct AvatarGroupOrderSettings {
-    pub group: Vec<AvatarGroupOrderSettingsGroup>,
+    pub group: Vec<Group>,
 }

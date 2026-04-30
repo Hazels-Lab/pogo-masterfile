@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct EventPassSettingsEventPassDisplaySettingsBonusBoxes {
+pub struct BonusBoxes {
     pub icon_type: String,
     pub quantity: u64,
     pub text: String,
@@ -12,7 +12,7 @@ pub struct EventPassSettingsEventPassDisplaySettingsBonusBoxes {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct EventPassSettingsEventPassDisplaySettingsEventPassTrackUpgradeDescriptions {
+pub struct EventPassTrackUpgradeDescriptions {
     pub details_link_key: String,
     pub event_duration_key: String,
     pub event_pass_track_to_upgrade_to: String,
@@ -27,10 +27,10 @@ pub struct EventPassSettingsEventPassDisplaySettingsEventPassTrackUpgradeDescrip
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct EventPassSettingsEventPassDisplaySettings {
-    pub bonus_boxes: [EventPassSettingsEventPassDisplaySettingsBonusBoxes; 3],
+pub struct EventPassDisplaySettings {
+    pub bonus_boxes: [BonusBoxes; 3],
     pub event_pass_title_key: String,
-    pub event_pass_track_upgrade_descriptions: [EventPassSettingsEventPassDisplaySettingsEventPassTrackUpgradeDescriptions; 1],
+    pub event_pass_track_upgrade_descriptions: [EventPassTrackUpgradeDescriptions; 1],
     pub header_icon_url: String,
     pub premium_reward_banner_bottom: String,
     pub premium_reward_banner_image_url: String,
@@ -43,14 +43,14 @@ pub struct EventPassSettingsEventPassDisplaySettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct EventPassSettingsTrackConditions {
+pub struct TrackConditions {
     pub track: String,
     pub track_title_key: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct EventPassSettingsTrackConditionsV2 {
+pub struct TrackConditionsV2 {
     pub badge: String,
     pub track: String,
     pub track_title_key: String,
@@ -60,11 +60,11 @@ pub struct EventPassSettingsTrackConditionsV2 {
 #[serde(rename_all = "camelCase")]
 pub struct EventPassSettings {
     pub additional_bonus_tiers_level: u64,
-    pub event_pass_display_settings: EventPassSettingsEventPassDisplaySettings,
+    pub event_pass_display_settings: EventPassDisplaySettings,
     pub expiration_time: String,
     pub grace_period_end_time: String,
     pub max_tier_level: u64,
     pub points_item_id: String,
     pub prefix: String,
-    pub track_conditions: (EventPassSettingsTrackConditions, EventPassSettingsTrackConditionsV2),
+    pub track_conditions: (TrackConditions, TrackConditionsV2),
 }

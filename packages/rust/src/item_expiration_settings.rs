@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemExpirationSettingsEmergencyExpirationTime {
+pub struct EmergencyExpirationTime {
     pub emergency_expiration_time: String,
     pub expiration_time: String,
     pub item: String,
@@ -12,59 +12,59 @@ pub struct ItemExpirationSettingsEmergencyExpirationTime {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemExpirationSettingsMisc {
+pub struct Misc {
     pub expiration_time: String,
     pub item: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemExpirationSettingsConsolationItemsConsolationItemsLootItem {
+pub struct LootItem {
     pub count: u64,
     pub stardust: bool,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemExpirationSettingsConsolationItemsConsolationItems {
-    pub loot_item: [ItemExpirationSettingsConsolationItemsConsolationItemsLootItem; 1],
+pub struct ConsolationItems {
+    pub loot_item: [LootItem; 1],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemExpirationSettingsConsolationItems {
-    pub consolation_items: ItemExpirationSettingsConsolationItemsConsolationItems,
+pub struct ConsolationItemsV2 {
+    pub consolation_items: ConsolationItems,
     pub expiration_time: String,
     pub item: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemExpirationSettingsEmergencyExpirationTimeItemEnablementSettingsItemEnablementSettingsEnabledTimePeriods {
+pub struct EnabledTimePeriods {
     pub enabled_end_time: String,
     pub enabled_start_time: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemExpirationSettingsEmergencyExpirationTimeItemEnablementSettingsItemEnablementSettings {
-    pub enabled_time_periods: [ItemExpirationSettingsEmergencyExpirationTimeItemEnablementSettingsItemEnablementSettingsEnabledTimePeriods; 2],
+pub struct ItemEnablementSettings {
+    pub enabled_time_periods: [EnabledTimePeriods; 2],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemExpirationSettingsEmergencyExpirationTimeItemEnablementSettings {
+pub struct EmergencyExpirationTimeItemEnablementSettings {
     pub emergency_expiration_time: String,
     pub expiration_time: String,
     pub item: String,
-    pub item_enablement_settings: ItemExpirationSettingsEmergencyExpirationTimeItemEnablementSettingsItemEnablementSettings,
+    pub item_enablement_settings: ItemEnablementSettings,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum ItemExpirationSettings {
-    EmergencyExpirationTime(ItemExpirationSettingsEmergencyExpirationTime),
-    Misc(ItemExpirationSettingsMisc),
-    ConsolationItems(ItemExpirationSettingsConsolationItems),
-    EmergencyExpirationTimeItemEnablementSettings(ItemExpirationSettingsEmergencyExpirationTimeItemEnablementSettings),
+    EmergencyExpirationTime(EmergencyExpirationTime),
+    Misc(Misc),
+    ConsolationItems(ConsolationItemsV2),
+    EmergencyExpirationTimeItemEnablementSettings(EmergencyExpirationTimeItemEnablementSettings),
 }

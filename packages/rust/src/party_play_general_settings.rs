@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PartyPlayGeneralSettingsComplianceZonesEnabledCreationToStartTimeoutMsEnablePartyRaidInformationEnabledFriendStatusIncreaseMaxStackedEncounterRewardPartyCatchTagsEnabledPartyExpiryDurationMsPartyExpiryWarningMinutesPartyIapBoostsEnabledPartyNewQuestNotificationV2EnabledPartyQuestEncounterRewardEnabledPgDeliveryMechanicRestartPartyRejoinPromptEnabled {
+pub struct ComplianceZonesEnabledPlus12 {
     pub compliance_zones_enabled: bool,
     pub creation_to_start_timeout_ms: String,
     pub enabled: bool,
@@ -26,40 +26,40 @@ pub struct PartyPlayGeneralSettingsComplianceZonesEnabledCreationToStartTimeoutM
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PartyPlayGeneralSettingsInviteExpirationMsMatchmakingEnabledMaxInvitesPerPlayerMaxPartySizeNotificationMilestonesPartyRewardGracePeriodMsPartySchedulingSettingsSendInviteEnabledPartySchedulingSettingsRecurringChallengeScheduleDayAndTimeEndTime {
+pub struct DayAndTimeEndTime {
     pub day_of_week: u64,
     pub hour_of_day: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PartyPlayGeneralSettingsInviteExpirationMsMatchmakingEnabledMaxInvitesPerPlayerMaxPartySizeNotificationMilestonesPartyRewardGracePeriodMsPartySchedulingSettingsSendInviteEnabledPartySchedulingSettingsRecurringChallengeScheduleNearEndNotification {
+pub struct NearEndNotification {
     pub avalible_window_hours: u64,
     pub enabled: bool,
     pub is_local: bool,
-    pub time: PartyPlayGeneralSettingsInviteExpirationMsMatchmakingEnabledMaxInvitesPerPlayerMaxPartySizeNotificationMilestonesPartyRewardGracePeriodMsPartySchedulingSettingsSendInviteEnabledPartySchedulingSettingsRecurringChallengeScheduleDayAndTimeEndTime,
+    pub time: DayAndTimeEndTime,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PartyPlayGeneralSettingsInviteExpirationMsMatchmakingEnabledMaxInvitesPerPlayerMaxPartySizeNotificationMilestonesPartyRewardGracePeriodMsPartySchedulingSettingsSendInviteEnabledPartySchedulingSettingsRecurringChallengeSchedule {
-    pub day_and_time_end_time: PartyPlayGeneralSettingsInviteExpirationMsMatchmakingEnabledMaxInvitesPerPlayerMaxPartySizeNotificationMilestonesPartyRewardGracePeriodMsPartySchedulingSettingsSendInviteEnabledPartySchedulingSettingsRecurringChallengeScheduleDayAndTimeEndTime,
-    pub day_and_time_start_time: PartyPlayGeneralSettingsInviteExpirationMsMatchmakingEnabledMaxInvitesPerPlayerMaxPartySizeNotificationMilestonesPartyRewardGracePeriodMsPartySchedulingSettingsSendInviteEnabledPartySchedulingSettingsRecurringChallengeScheduleDayAndTimeEndTime,
+pub struct RecurringChallengeSchedule {
+    pub day_and_time_end_time: DayAndTimeEndTime,
+    pub day_and_time_start_time: DayAndTimeEndTime,
     pub max_num_challenge_per_cycle: u64,
-    pub near_end_notification: PartyPlayGeneralSettingsInviteExpirationMsMatchmakingEnabledMaxInvitesPerPlayerMaxPartySizeNotificationMilestonesPartyRewardGracePeriodMsPartySchedulingSettingsSendInviteEnabledPartySchedulingSettingsRecurringChallengeScheduleNearEndNotification,
-    pub start_notification: PartyPlayGeneralSettingsInviteExpirationMsMatchmakingEnabledMaxInvitesPerPlayerMaxPartySizeNotificationMilestonesPartyRewardGracePeriodMsPartySchedulingSettingsSendInviteEnabledPartySchedulingSettingsRecurringChallengeScheduleNearEndNotification,
+    pub near_end_notification: NearEndNotification,
+    pub start_notification: NearEndNotification,
     pub timezone_id: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PartyPlayGeneralSettingsInviteExpirationMsMatchmakingEnabledMaxInvitesPerPlayerMaxPartySizeNotificationMilestonesPartyRewardGracePeriodMsPartySchedulingSettingsSendInviteEnabledPartySchedulingSettings {
-    pub recurring_challenge_schedule: PartyPlayGeneralSettingsInviteExpirationMsMatchmakingEnabledMaxInvitesPerPlayerMaxPartySizeNotificationMilestonesPartyRewardGracePeriodMsPartySchedulingSettingsSendInviteEnabledPartySchedulingSettingsRecurringChallengeSchedule,
+pub struct PartySchedulingSettings {
+    pub recurring_challenge_schedule: RecurringChallengeSchedule,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PartyPlayGeneralSettingsInviteExpirationMsMatchmakingEnabledMaxInvitesPerPlayerMaxPartySizeNotificationMilestonesPartyRewardGracePeriodMsPartySchedulingSettingsSendInviteEnabled {
+pub struct InviteExpirationMsPlus7 {
     pub enabled: bool,
     pub fallback_party_quest_enabled: bool,
     pub friend_requests_enabled: bool,
@@ -70,13 +70,13 @@ pub struct PartyPlayGeneralSettingsInviteExpirationMsMatchmakingEnabledMaxInvite
     pub min_player_level: u64,
     pub notification_milestones: [f64; 4],
     pub party_reward_grace_period_ms: String,
-    pub party_scheduling_settings: PartyPlayGeneralSettingsInviteExpirationMsMatchmakingEnabledMaxInvitesPerPlayerMaxPartySizeNotificationMilestonesPartyRewardGracePeriodMsPartySchedulingSettingsSendInviteEnabledPartySchedulingSettings,
+    pub party_scheduling_settings: PartySchedulingSettings,
     pub send_invite_enabled: bool,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum PartyPlayGeneralSettings {
-    ComplianceZonesEnabledCreationToStartTimeoutMsEnablePartyRaidInformationEnabledFriendStatusIncreaseMaxStackedEncounterRewardPartyCatchTagsEnabledPartyExpiryDurationMsPartyExpiryWarningMinutesPartyIapBoostsEnabledPartyNewQuestNotificationV2EnabledPartyQuestEncounterRewardEnabledPgDeliveryMechanicRestartPartyRejoinPromptEnabled(PartyPlayGeneralSettingsComplianceZonesEnabledCreationToStartTimeoutMsEnablePartyRaidInformationEnabledFriendStatusIncreaseMaxStackedEncounterRewardPartyCatchTagsEnabledPartyExpiryDurationMsPartyExpiryWarningMinutesPartyIapBoostsEnabledPartyNewQuestNotificationV2EnabledPartyQuestEncounterRewardEnabledPgDeliveryMechanicRestartPartyRejoinPromptEnabled),
-    InviteExpirationMsMatchmakingEnabledMaxInvitesPerPlayerMaxPartySizeNotificationMilestonesPartyRewardGracePeriodMsPartySchedulingSettingsSendInviteEnabled(PartyPlayGeneralSettingsInviteExpirationMsMatchmakingEnabledMaxInvitesPerPlayerMaxPartySizeNotificationMilestonesPartyRewardGracePeriodMsPartySchedulingSettingsSendInviteEnabled),
+    ComplianceZonesEnabledPlus12(ComplianceZonesEnabledPlus12),
+    InviteExpirationMsPlus7(InviteExpirationMsPlus7),
 }

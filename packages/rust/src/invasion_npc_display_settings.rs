@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct InvasionNpcDisplaySettingsAvatar {
+pub struct Avatar {
     pub avatar: Option<u64>,
     pub avatar_backpack: Option<String>,
     pub avatar_belt: Option<String>,
@@ -26,7 +26,7 @@ pub struct InvasionNpcDisplaySettingsAvatar {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct InvasionNpcDisplaySettings {
-    pub avatar: InvasionNpcDisplaySettingsAvatar,
+    pub avatar: Avatar,
     pub backdrop_image_bundle: Option<String>,
     pub custom_combat_music: Option<String>,
     pub custom_incident_music: Option<String>,

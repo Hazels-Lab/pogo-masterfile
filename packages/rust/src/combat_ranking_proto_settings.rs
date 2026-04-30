@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatRankingProtoSettingsMinRatingRequiredRankLevel {
+pub struct RankLevel {
     pub additional_total_battles_required: Option<u64>,
     pub additional_wins_required: Option<u64>,
     pub min_rating_required: Option<u64>,
@@ -13,44 +13,44 @@ pub struct CombatRankingProtoSettingsMinRatingRequiredRankLevel {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatRankingProtoSettingsMinRatingRequiredRequiredForRewards {
+pub struct RequiredForRewards {
     pub additional_total_battles_required: u64,
     pub rank_level: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatRankingProtoSettingsMinRatingRequired {
+pub struct MinRatingRequired {
     pub min_rank_to_display_rating: u64,
     pub min_rating_required: u64,
-    pub rank_level: Vec<CombatRankingProtoSettingsMinRatingRequiredRankLevel>,
-    pub required_for_rewards: CombatRankingProtoSettingsMinRatingRequiredRequiredForRewards,
+    pub rank_level: Vec<RankLevel>,
+    pub required_for_rewards: RequiredForRewards,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatRankingProtoSettingsMiscRankLevel {
+pub struct RankLevelV2 {
     pub rank_level: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatRankingProtoSettingsMiscRankLevelV2 {
+pub struct RankLevelV3 {
     pub additional_wins_required: u64,
     pub rank_level: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatRankingProtoSettingsMisc {
+pub struct Misc {
     pub min_rank_to_display_rating: u64,
-    pub rank_level: (CombatRankingProtoSettingsMiscRankLevel, CombatRankingProtoSettingsMinRatingRequiredRequiredForRewards, CombatRankingProtoSettingsMiscRankLevelV2, CombatRankingProtoSettingsMiscRankLevelV2, CombatRankingProtoSettingsMiscRankLevelV2, CombatRankingProtoSettingsMiscRankLevelV2, CombatRankingProtoSettingsMiscRankLevelV2, CombatRankingProtoSettingsMiscRankLevelV2, CombatRankingProtoSettingsMiscRankLevelV2, CombatRankingProtoSettingsMiscRankLevelV2),
-    pub required_for_rewards: CombatRankingProtoSettingsMinRatingRequiredRequiredForRewards,
+    pub rank_level: (RankLevelV2, RequiredForRewards, RankLevelV3, RankLevelV3, RankLevelV3, RankLevelV3, RankLevelV3, RankLevelV3, RankLevelV3, RankLevelV3),
+    pub required_for_rewards: RequiredForRewards,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum CombatRankingProtoSettings {
-    MinRatingRequired(CombatRankingProtoSettingsMinRatingRequired),
-    Misc(CombatRankingProtoSettingsMisc),
+    MinRatingRequired(MinRatingRequired),
+    Misc(Misc),
 }

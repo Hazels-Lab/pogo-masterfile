@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct MegaEvoLevelSettingsCooldown {
+pub struct Cooldown {
     pub bypass_cost_initial: u64,
     pub bypass_cost_rounding_value: u64,
     pub duration_ms: String,
@@ -12,7 +12,7 @@ pub struct MegaEvoLevelSettingsCooldown {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct MegaEvoLevelSettingsEffects {
+pub struct Effects {
     pub different_type_attack_boost: f64,
     pub same_type_attack_boost: f64,
     pub same_type_extra_catch_candy: u64,
@@ -23,7 +23,7 @@ pub struct MegaEvoLevelSettingsEffects {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct MegaEvoLevelSettingsProgression {
+pub struct Progression {
     pub points_limit_per_period: u64,
     pub points_per_mega_evo_action: u64,
     pub points_required: Option<u64>,
@@ -32,11 +32,11 @@ pub struct MegaEvoLevelSettingsProgression {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct MegaEvoLevelSettings {
-    pub cooldown: MegaEvoLevelSettingsCooldown,
-    pub effects: MegaEvoLevelSettingsEffects,
+    pub cooldown: Cooldown,
+    pub effects: Effects,
     pub ftue_expiration_timestamp: Option<String>,
     pub level: Option<u64>,
     pub mega_energy_cost_to_unlock: Option<u64>,
     pub pokemon_id: Option<String>,
-    pub progression: MegaEvoLevelSettingsProgression,
+    pub progression: Progression,
 }

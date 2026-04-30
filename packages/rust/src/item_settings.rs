@@ -4,16 +4,16 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsEggIncubatorExpiredIncubatorReplacement {
+pub struct ExpiredIncubatorReplacement {
     pub incubator_replacement: String,
     pub uses_count_override: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsEggIncubator {
+pub struct EggIncubator {
     pub distance_multiplier: f64,
-    pub expired_incubator_replacement: Option<ItemSettingsEggIncubatorExpiredIncubatorReplacement>,
+    pub expired_incubator_replacement: Option<ExpiredIncubatorReplacement>,
     pub incubator_type: String,
     pub max_hatch_summary_entries: Option<u64>,
     pub use_bonus_incubator_attributes: Option<bool>,
@@ -22,13 +22,13 @@ pub struct ItemSettingsEggIncubator {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsEventPassPoint {
+pub struct EventPassPoint {
     pub event_pass_id: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsFood {
+pub struct Food {
     pub berry_multiplier: Option<f64>,
     pub growth_percent: Option<f64>,
     pub item_effect: Option<Vec<String>>,
@@ -42,53 +42,53 @@ pub struct ItemSettingsFood {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsGlobalEventTicketIconRewardsCandy {
+pub struct Candy {
     pub amount: u64,
     pub pokemon_id: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsGlobalEventTicketIconRewardsItem {
+pub struct Item {
     pub amount: Option<u64>,
     pub item: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsGlobalEventTicketIconRewardsNeutralAvatarItemTemplate {
+pub struct NeutralAvatarItemTemplate {
     pub display_template_id: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsGlobalEventTicketIconRewardsPokemonEncounterPokemonDisplay {
+pub struct PokemonDisplay {
     pub form: String,
     pub shiny: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsGlobalEventTicketIconRewardsPokemonEncounter {
-    pub pokemon_display: Option<ItemSettingsGlobalEventTicketIconRewardsPokemonEncounterPokemonDisplay>,
+pub struct PokemonEncounter {
+    pub pokemon_display: Option<PokemonDisplay>,
     pub pokemon_id: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsGlobalEventTicketIconRewards {
-    pub candy: Option<ItemSettingsGlobalEventTicketIconRewardsCandy>,
+pub struct IconRewards {
+    pub candy: Option<Candy>,
     pub exp: Option<u64>,
-    pub item: Option<ItemSettingsGlobalEventTicketIconRewardsItem>,
-    pub neutral_avatar_item_template: Option<ItemSettingsGlobalEventTicketIconRewardsNeutralAvatarItemTemplate>,
-    pub pokemon_encounter: Option<ItemSettingsGlobalEventTicketIconRewardsPokemonEncounter>,
+    pub item: Option<Item>,
+    pub neutral_avatar_item_template: Option<NeutralAvatarItemTemplate>,
+    pub pokemon_encounter: Option<PokemonEncounter>,
     pub stardust: Option<u64>,
     pub r#type: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsGlobalEventTicket {
+pub struct GlobalEventTicket {
     pub background_image_url: Option<String>,
     pub client_event_end_time_utc_ms: String,
     pub client_event_start_time_utc_ms: String,
@@ -102,7 +102,7 @@ pub struct ItemSettingsGlobalEventTicket {
     pub giftable: Option<bool>,
     pub gift_item: Option<String>,
     pub grant_badge_before_event_start_ms: Option<String>,
-    pub icon_rewards: Option<Vec<ItemSettingsGlobalEventTicketIconRewards>>,
+    pub icon_rewards: Option<Vec<IconRewards>>,
     pub item_bag_description_key: String,
     pub text_rewards_key: Option<String>,
     pub ticket_item: Option<String>,
@@ -111,14 +111,14 @@ pub struct ItemSettingsGlobalEventTicket {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsIncense {
+pub struct Incense {
     pub incense_lifetime_seconds: u64,
     pub spawn_table_probability: Option<f64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsIncidentTicket {
+pub struct IncidentTicket {
     pub ignore_full_inventory: Option<bool>,
     pub upgraded_item: Option<String>,
     pub upgrade_requirement_count: Option<u64>,
@@ -126,58 +126,58 @@ pub struct ItemSettingsIncidentTicket {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsInventoryUpgrade {
+pub struct InventoryUpgrade {
     pub additional_storage: u64,
     pub upgrade_type: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsPotion {
+pub struct Potion {
     pub sta_amount: Option<u64>,
     pub sta_percent: Option<u64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsReplenishMp {
+pub struct ReplenishMp {
     pub mp_amount: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsRevive {
+pub struct Revive {
     pub sta_percent: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsStardustBoost {
+pub struct StardustBoost {
     pub boost_duration_ms: u64,
     pub stardust_multiplier: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsStatIncrease {
+pub struct StatIncrease {
     pub stats_to_increase_limit: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsTimePeriodCountersPlayerActivity {
+pub struct PlayerActivity {
     pub limit: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsTimePeriodCounters {
-    pub player_activity: ItemSettingsTimePeriodCountersPlayerActivity,
+pub struct TimePeriodCounters {
+    pub player_activity: PlayerActivity,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ItemSettingsXpBoost {
+pub struct XpBoost {
     pub boost_duration_ms: u64,
     pub xp_multiplier: u64,
 }
@@ -188,24 +188,24 @@ pub struct ItemSettings {
     pub category: String,
     pub description_override: Option<String>,
     pub drop_trainer_level: Option<u64>,
-    pub egg_incubator: Option<ItemSettingsEggIncubator>,
-    pub event_pass_point: Option<ItemSettingsEventPassPoint>,
-    pub food: Option<ItemSettingsFood>,
-    pub global_event_ticket: Option<ItemSettingsGlobalEventTicket>,
+    pub egg_incubator: Option<EggIncubator>,
+    pub event_pass_point: Option<EventPassPoint>,
+    pub food: Option<Food>,
+    pub global_event_ticket: Option<GlobalEventTicket>,
     pub hide_item_in_inventory: Option<bool>,
     pub ignore_inventory_space: Option<bool>,
-    pub incense: Option<ItemSettingsIncense>,
-    pub incident_ticket: Option<ItemSettingsIncidentTicket>,
-    pub inventory_upgrade: Option<ItemSettingsInventoryUpgrade>,
+    pub incense: Option<Incense>,
+    pub incident_ticket: Option<IncidentTicket>,
+    pub inventory_upgrade: Option<InventoryUpgrade>,
     pub item_cap: Option<u64>,
     pub item_id: String,
     pub item_type: String,
     pub name_override: Option<String>,
-    pub potion: Option<ItemSettingsPotion>,
-    pub replenish_mp: Option<ItemSettingsReplenishMp>,
-    pub revive: Option<ItemSettingsRevive>,
-    pub stardust_boost: Option<ItemSettingsStardustBoost>,
-    pub stat_increase: Option<ItemSettingsStatIncrease>,
-    pub time_period_counters: Option<ItemSettingsTimePeriodCounters>,
-    pub xp_boost: Option<ItemSettingsXpBoost>,
+    pub potion: Option<Potion>,
+    pub replenish_mp: Option<ReplenishMp>,
+    pub revive: Option<Revive>,
+    pub stardust_boost: Option<StardustBoost>,
+    pub stat_increase: Option<StatIncrease>,
+    pub time_period_counters: Option<TimePeriodCounters>,
+    pub xp_boost: Option<XpBoost>,
 }

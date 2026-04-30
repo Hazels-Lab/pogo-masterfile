@@ -4,14 +4,14 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct FeatureGateMisc {
+pub struct Misc {
     pub rollout_percentage: u64,
     pub status: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct FeatureGateSubFeatureGateListSubFeatureGateList {
+pub struct SubFeatureGateList {
     pub name: String,
     pub rollout_percentage: u64,
     pub status: u64,
@@ -19,15 +19,15 @@ pub struct FeatureGateSubFeatureGateListSubFeatureGateList {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct FeatureGateSubFeatureGateList {
+pub struct SubFeatureGateListV2 {
     pub rollout_percentage: u64,
     pub status: u64,
-    pub sub_feature_gate_list: Vec<FeatureGateSubFeatureGateListSubFeatureGateList>,
+    pub sub_feature_gate_list: Vec<SubFeatureGateList>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum FeatureGate {
-    Misc(FeatureGateMisc),
-    SubFeatureGateList(FeatureGateSubFeatureGateList),
+    Misc(Misc),
+    SubFeatureGateList(SubFeatureGateListV2),
 }

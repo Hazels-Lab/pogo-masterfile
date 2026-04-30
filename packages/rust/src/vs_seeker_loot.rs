@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct VsSeekerLootMiscRewardItem {
+pub struct Item {
     pub count: u64,
     pub item: Option<String>,
     pub stardust: Option<bool>,
@@ -12,30 +12,30 @@ pub struct VsSeekerLootMiscRewardItem {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct VsSeekerLootMiscReward {
-    pub item: Option<VsSeekerLootMiscRewardItem>,
+pub struct Reward {
+    pub item: Option<Item>,
     pub item_ranking_loot_table_count: Option<u64>,
     pub pokemon_reward: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct VsSeekerLootMisc {
+pub struct Misc {
     pub rank_level: u64,
-    pub reward: [VsSeekerLootMiscReward; 5],
+    pub reward: [Reward; 5],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct VsSeekerLootRewardTrack {
+pub struct RewardTrack {
     pub rank_level: u64,
-    pub reward: [VsSeekerLootMiscReward; 5],
+    pub reward: [Reward; 5],
     pub reward_track: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum VsSeekerLoot {
-    Misc(VsSeekerLootMisc),
-    RewardTrack(VsSeekerLootRewardTrack),
+    Misc(Misc),
+    RewardTrack(RewardTrack),
 }

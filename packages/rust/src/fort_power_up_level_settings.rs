@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct FortPowerUpLevelSettingsAdditionalLevelPowerupDurationMsMinPowerUpPointsRequiredPowerupLevelRewards {
+pub struct AdditionalLevelPowerupDurationMsMinPowerUpPointsRequiredPowerupLevelRewards {
     pub additional_level_powerup_duration_ms: u64,
     pub level: String,
     pub min_power_up_points_required: u64,
@@ -13,13 +13,13 @@ pub struct FortPowerUpLevelSettingsAdditionalLevelPowerupDurationMsMinPowerUpPoi
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct FortPowerUpLevelSettingsMisc {
+pub struct Misc {
     pub level: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum FortPowerUpLevelSettings {
-    AdditionalLevelPowerupDurationMsMinPowerUpPointsRequiredPowerupLevelRewards(FortPowerUpLevelSettingsAdditionalLevelPowerupDurationMsMinPowerUpPointsRequiredPowerupLevelRewards),
-    Misc(FortPowerUpLevelSettingsMisc),
+    AdditionalLevelPowerupDurationMsMinPowerUpPointsRequiredPowerupLevelRewards(AdditionalLevelPowerupDurationMsMinPowerUpPointsRequiredPowerupLevelRewards),
+    Misc(Misc),
 }

@@ -4,33 +4,33 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatLeaguePokemonConditionPokemonBanListPokemon {
+pub struct Pokemon {
     pub forms: Option<Vec<String>>,
     pub id: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatLeaguePokemonConditionPokemonBanList {
-    pub pokemon: Vec<CombatLeaguePokemonConditionPokemonBanListPokemon>,
+pub struct PokemonBanList {
+    pub pokemon: Vec<Pokemon>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatLeaguePokemonConditionPokemonCaughtTimestamp {
+pub struct PokemonCaughtTimestamp {
     pub after_timestamp: String,
     pub before_timestamp: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatLeaguePokemonConditionPokemonLevelRange {
+pub struct PokemonLevelRange {
     pub max_level: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatLeaguePokemonConditionPokemonWhiteListPokemon {
+pub struct PokemonV2 {
     pub form: Option<String>,
     pub forms: Option<Vec<String>>,
     pub id: String,
@@ -38,47 +38,47 @@ pub struct CombatLeaguePokemonConditionPokemonWhiteListPokemon {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatLeaguePokemonConditionPokemonWhiteList {
-    pub pokemon: Vec<CombatLeaguePokemonConditionPokemonWhiteListPokemon>,
+pub struct PokemonWhiteList {
+    pub pokemon: Vec<PokemonV2>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatLeaguePokemonConditionWithPokemonCpLimit {
+pub struct WithPokemonCpLimit {
     pub max_cp: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatLeaguePokemonConditionWithPokemonType {
+pub struct WithPokemonType {
     pub pokemon_type: Vec<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatLeaguePokemonCondition {
-    pub pokemon_ban_list: Option<CombatLeaguePokemonConditionPokemonBanList>,
-    pub pokemon_caught_timestamp: Option<CombatLeaguePokemonConditionPokemonCaughtTimestamp>,
-    pub pokemon_level_range: Option<CombatLeaguePokemonConditionPokemonLevelRange>,
-    pub pokemon_white_list: Option<CombatLeaguePokemonConditionPokemonWhiteList>,
+pub struct PokemonCondition {
+    pub pokemon_ban_list: Option<PokemonBanList>,
+    pub pokemon_caught_timestamp: Option<PokemonCaughtTimestamp>,
+    pub pokemon_level_range: Option<PokemonLevelRange>,
+    pub pokemon_white_list: Option<PokemonWhiteList>,
     pub r#type: String,
-    pub with_pokemon_cp_limit: Option<CombatLeaguePokemonConditionWithPokemonCpLimit>,
-    pub with_pokemon_type: Option<CombatLeaguePokemonConditionWithPokemonType>,
+    pub with_pokemon_cp_limit: Option<WithPokemonCpLimit>,
+    pub with_pokemon_type: Option<WithPokemonType>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatLeagueUnlockConditionWithPokemonCpLimit {
+pub struct WithPokemonCpLimitV2 {
     pub max_cp: u64,
     pub min_cp: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatLeagueUnlockCondition {
+pub struct UnlockCondition {
     pub min_pokemon_count: u64,
     pub r#type: String,
-    pub with_pokemon_cp_limit: Option<CombatLeagueUnlockConditionWithPokemonCpLimit>,
+    pub with_pokemon_cp_limit: Option<WithPokemonCpLimitV2>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -91,8 +91,8 @@ pub struct CombatLeague {
     pub enabled: bool,
     pub icon_url: String,
     pub league_type: String,
-    pub pokemon_condition: Vec<CombatLeaguePokemonCondition>,
+    pub pokemon_condition: Vec<PokemonCondition>,
     pub pokemon_count: u64,
     pub title: String,
-    pub unlock_condition: Option<[CombatLeagueUnlockCondition; 1]>,
+    pub unlock_condition: Option<[UnlockCondition; 1]>,
 }

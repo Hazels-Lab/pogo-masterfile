@@ -4,20 +4,20 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct LimitedPurchaseSkuSettingsVersion {
+pub struct Version {
     pub purchase_limit: u64,
     pub version: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct LimitedPurchaseSkuSettingsMisc {
+pub struct Misc {
     pub purchase_limit: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct LimitedPurchaseSkuSettingsChronoUnitLootTableIdResetInterval {
+pub struct ChronoUnitLootTableIdResetInterval {
     pub chrono_unit: String,
     pub loot_table_id: String,
     pub purchase_limit: u64,
@@ -27,7 +27,7 @@ pub struct LimitedPurchaseSkuSettingsChronoUnitLootTableIdResetInterval {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum LimitedPurchaseSkuSettings {
-    Version(LimitedPurchaseSkuSettingsVersion),
-    Misc(LimitedPurchaseSkuSettingsMisc),
-    ChronoUnitLootTableIdResetInterval(LimitedPurchaseSkuSettingsChronoUnitLootTableIdResetInterval),
+    Version(Version),
+    Misc(Misc),
+    ChronoUnitLootTableIdResetInterval(ChronoUnitLootTableIdResetInterval),
 }

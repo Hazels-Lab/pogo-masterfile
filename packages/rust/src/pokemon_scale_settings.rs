@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonScaleSettingsPokemonScaleMode {
+pub struct PokemonScaleMode {
     pub max_height: f64,
     pub min_height: f64,
     pub pokemon_scale_mode: String,
@@ -12,7 +12,7 @@ pub struct PokemonScaleSettingsPokemonScaleMode {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonScaleSettingsMisc {
+pub struct Misc {
     pub max_height: f64,
     pub min_height: f64,
 }
@@ -20,6 +20,6 @@ pub struct PokemonScaleSettingsMisc {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum PokemonScaleSettings {
-    PokemonScaleMode(PokemonScaleSettingsPokemonScaleMode),
-    Misc(PokemonScaleSettingsMisc),
+    PokemonScaleMode(PokemonScaleMode),
+    Misc(Misc),
 }

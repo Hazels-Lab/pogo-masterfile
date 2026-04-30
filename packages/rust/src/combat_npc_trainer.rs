@@ -4,28 +4,28 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatNpcTrainerAvailablePokemonPokemonDisplay {
+pub struct PokemonDisplay {
     pub form: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatNpcTrainerAvailablePokemon {
-    pub pokemon_display: Option<CombatNpcTrainerAvailablePokemonPokemonDisplay>,
+pub struct AvailablePokemon {
+    pub pokemon_display: Option<PokemonDisplay>,
     pub pokemon_type: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatNpcTrainerAvatar {
+pub struct Avatar {
     pub avatar: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct CombatNpcTrainer {
-    pub available_pokemon: [CombatNpcTrainerAvailablePokemon; 3],
-    pub avatar: CombatNpcTrainerAvatar,
+    pub available_pokemon: [AvailablePokemon; 3],
+    pub avatar: Avatar,
     pub backdrop_image_bundle: String,
     pub combat_league_template_id: String,
     pub combat_personality_id: String,

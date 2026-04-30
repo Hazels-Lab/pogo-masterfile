@@ -4,50 +4,50 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct EvolutionQuestTemplateDisplay {
+pub struct Display {
     pub description: String,
     pub title: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct EvolutionQuestTemplateGoalsConditionWithCombatType {
+pub struct WithCombatType {
     pub combat_type: Vec<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct EvolutionQuestTemplateGoalsConditionWithOpponentPokemonBattleStatus {
+pub struct WithOpponentPokemonBattleStatus {
     pub opponent_pokemon_type: Vec<String>,
     pub require_defeat: bool,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct EvolutionQuestTemplateGoalsConditionWithPokemonType {
+pub struct WithPokemonType {
     pub pokemon_type: Vec<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct EvolutionQuestTemplateGoalsConditionWithThrowType {
+pub struct WithThrowType {
     pub throw_type: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct EvolutionQuestTemplateGoalsCondition {
+pub struct Condition {
     pub r#type: String,
-    pub with_combat_type: Option<EvolutionQuestTemplateGoalsConditionWithCombatType>,
-    pub with_opponent_pokemon_battle_status: Option<EvolutionQuestTemplateGoalsConditionWithOpponentPokemonBattleStatus>,
-    pub with_pokemon_type: Option<EvolutionQuestTemplateGoalsConditionWithPokemonType>,
-    pub with_throw_type: Option<EvolutionQuestTemplateGoalsConditionWithThrowType>,
+    pub with_combat_type: Option<WithCombatType>,
+    pub with_opponent_pokemon_battle_status: Option<WithOpponentPokemonBattleStatus>,
+    pub with_pokemon_type: Option<WithPokemonType>,
+    pub with_throw_type: Option<WithThrowType>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct EvolutionQuestTemplateGoals {
-    pub condition: Option<Vec<EvolutionQuestTemplateGoalsCondition>>,
+pub struct Goals {
+    pub condition: Option<Vec<Condition>>,
     pub target: u64,
 }
 
@@ -55,8 +55,8 @@ pub struct EvolutionQuestTemplateGoals {
 #[serde(rename_all = "camelCase")]
 pub struct EvolutionQuestTemplate {
     pub context: String,
-    pub display: EvolutionQuestTemplateDisplay,
-    pub goals: [EvolutionQuestTemplateGoals; 1],
+    pub display: Display,
+    pub goals: [Goals; 1],
     pub quest_template_id: String,
     pub quest_type: String,
 }

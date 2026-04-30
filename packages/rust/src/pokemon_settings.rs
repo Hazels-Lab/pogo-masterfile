@@ -4,14 +4,14 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsBuddyWalkedMegaEnergyAwards {
+pub struct BuddyWalkedMegaEnergyAwards {
     pub mega_energy_award_amount: u64,
     pub mega_pokemon_id: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsBuddyWalkedMegaEnergyAwardsV2 {
+pub struct BuddyWalkedMegaEnergyAwardsV2 {
     pub gender_requirement: String,
     pub mega_energy_award_amount: u64,
     pub mega_pokemon_id: String,
@@ -19,7 +19,7 @@ pub struct PokemonSettingsBuddyWalkedMegaEnergyAwardsV2 {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsCamera {
+pub struct Camera {
     pub cylinder_ground_m: Option<f64>,
     pub cylinder_height_m: Option<f64>,
     pub cylinder_radius_m: Option<f64>,
@@ -29,7 +29,7 @@ pub struct PokemonSettingsCamera {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsEncounter {
+pub struct Encounter {
     pub attack_probability: Option<f64>,
     pub attack_timer_s: Option<u64>,
     pub bonus_candy_capture_reward: Option<u64>,
@@ -54,13 +54,13 @@ pub struct PokemonSettingsEncounter {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsEvolutionBranchQuestDisplay {
+pub struct QuestDisplay {
     pub quest_requirement_template_id: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsEvolutionBranch {
+pub struct EvolutionBranch {
     pub candy_cost: Option<u64>,
     pub candy_cost_purified: Option<u64>,
     pub evolution: Option<String>,
@@ -80,7 +80,7 @@ pub struct PokemonSettingsEvolutionBranch {
     pub only_nighttime: Option<bool>,
     pub only_upside_down: Option<bool>,
     pub priority: Option<u64>,
-    pub quest_display: Option<[PokemonSettingsEvolutionBranchQuestDisplay; 1]>,
+    pub quest_display: Option<[QuestDisplay; 1]>,
     pub temporary_evolution: Option<String>,
     pub temporary_evolution_energy_cost: Option<u64>,
     pub temporary_evolution_energy_cost_subsequent: Option<u64>,
@@ -88,14 +88,14 @@ pub struct PokemonSettingsEvolutionBranch {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsExclusiveKeyItem {
+pub struct ExclusiveKeyItem {
     pub count: u64,
     pub item: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsFormChangeComponentPokemonSettingsLocationCardSettings {
+pub struct LocationCardSettings {
     pub base_pokemon_location_card: String,
     pub component_pokemon_location_card: String,
     pub fusion_pokemon_location_card: String,
@@ -103,83 +103,83 @@ pub struct PokemonSettingsFormChangeComponentPokemonSettingsLocationCardSettings
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsFormChangeComponentPokemonSettings {
+pub struct ComponentPokemonSettings {
     pub component_candy_cost: Option<u64>,
     pub family_id: String,
     pub form_change_type: String,
-    pub location_card_settings: Option<[PokemonSettingsFormChangeComponentPokemonSettingsLocationCardSettings; 1]>,
+    pub location_card_settings: Option<[LocationCardSettings; 1]>,
     pub pokedex_id: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsFormChangeFormChangeBonusAttributesMaxMoves {
+pub struct MaxMoves {
     pub move_level: String,
     pub move_type: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsFormChangeFormChangeBonusAttributes {
+pub struct FormChangeBonusAttributes {
     pub bread_mode: Option<String>,
     pub clear_bread_mode: Option<bool>,
-    pub max_moves: Option<[PokemonSettingsFormChangeFormChangeBonusAttributesMaxMoves; 1]>,
+    pub max_moves: Option<[MaxMoves; 1]>,
     pub target_form: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsFormChangeLocationCardSettings {
+pub struct LocationCardSettingsV2 {
     pub existing_location_card: String,
     pub replacement_location_card: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsFormChangeMoveReassignmentCinematicMoves {
+pub struct CinematicMoves {
     pub existing_moves: Option<[String; 1]>,
     pub replacement_moves: Vec<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsFormChangeMoveReassignment {
-    pub cinematic_moves: [PokemonSettingsFormChangeMoveReassignmentCinematicMoves; 1],
+pub struct MoveReassignment {
+    pub cinematic_moves: [CinematicMoves; 1],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsFormChangeRequiredBreadMoves {
+pub struct RequiredBreadMoves {
     pub move_level: String,
     pub move_types: [String; 1],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsFormChangeRequiredCinematicMoves {
+pub struct RequiredCinematicMoves {
     pub required_moves: [String; 1],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsFormChange {
+pub struct FormChange {
     pub available_form: Vec<String>,
     pub candy_cost: Option<u64>,
-    pub component_pokemon_settings: Option<PokemonSettingsFormChangeComponentPokemonSettings>,
-    pub form_change_bonus_attributes: Option<[PokemonSettingsFormChangeFormChangeBonusAttributes; 1]>,
+    pub component_pokemon_settings: Option<ComponentPokemonSettings>,
+    pub form_change_bonus_attributes: Option<[FormChangeBonusAttributes; 1]>,
     pub item: Option<String>,
     pub item_cost_count: Option<u64>,
-    pub location_card_settings: Option<[PokemonSettingsFormChangeLocationCardSettings; 1]>,
-    pub move_reassignment: Option<PokemonSettingsFormChangeMoveReassignment>,
+    pub location_card_settings: Option<[LocationCardSettingsV2; 1]>,
+    pub move_reassignment: Option<MoveReassignment>,
     pub priority: Option<u64>,
-    pub required_bread_moves: Option<[PokemonSettingsFormChangeRequiredBreadMoves; 1]>,
-    pub required_cinematic_moves: Option<[PokemonSettingsFormChangeRequiredCinematicMoves; 1]>,
+    pub required_bread_moves: Option<[RequiredBreadMoves; 1]>,
+    pub required_cinematic_moves: Option<[RequiredCinematicMoves; 1]>,
     pub stardust_cost: Option<u64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsIbfcAlternateToDefaultIbfcSettings {
+pub struct AlternateToDefaultIbfcSettings {
     pub animation_duration_turns: u64,
     pub animation_play_point: String,
     pub current_move: Option<String>,
@@ -189,17 +189,17 @@ pub struct PokemonSettingsIbfcAlternateToDefaultIbfcSettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsIbfc {
+pub struct Ibfc {
     pub alternate_form: Option<String>,
-    pub alternate_to_default_ibfc_settings: Option<PokemonSettingsIbfcAlternateToDefaultIbfcSettings>,
+    pub alternate_to_default_ibfc_settings: Option<AlternateToDefaultIbfcSettings>,
     pub combat_enable: Option<bool>,
     pub default_form: Option<String>,
-    pub default_to_alternate_ibfc_settings: Option<PokemonSettingsIbfcAlternateToDefaultIbfcSettings>,
+    pub default_to_alternate_ibfc_settings: Option<AlternateToDefaultIbfcSettings>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsShadow {
+pub struct Shadow {
     pub purification_candy_needed: u64,
     pub purification_stardust_needed: u64,
     pub purified_charge_move: String,
@@ -208,7 +208,7 @@ pub struct PokemonSettingsShadow {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsSizeSettings {
+pub struct SizeSettings {
     pub disable_pokedex_record_display_for_forms: bool,
     pub m_lower_bound: f64,
     pub m_upper_bound: f64,
@@ -224,7 +224,7 @@ pub struct PokemonSettingsSizeSettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsStats {
+pub struct Stats {
     pub base_attack: u64,
     pub base_defense: u64,
     pub base_stamina: u64,
@@ -232,7 +232,7 @@ pub struct PokemonSettingsStats {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsTempEvoOverridesCamera {
+pub struct CameraV2 {
     pub cylinder_ground_m: Option<f64>,
     pub cylinder_height_m: Option<f64>,
     pub cylinder_radius_m: Option<f64>,
@@ -240,18 +240,18 @@ pub struct PokemonSettingsTempEvoOverridesCamera {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsTempEvoOverrides {
+pub struct TempEvoOverrides {
     pub average_height_m: Option<f64>,
     pub average_weight_kg: Option<f64>,
     pub buddy_offset_female: Option<[f64; 3]>,
     pub buddy_offset_male: Option<[f64; 3]>,
     pub buddy_portrait_offset: Option<[i64; 3]>,
     pub buddy_portrait_rotation: Option<[u64; 3]>,
-    pub camera: Option<PokemonSettingsTempEvoOverridesCamera>,
+    pub camera: Option<CameraV2>,
     pub model_height: Option<f64>,
     pub model_scale_v2: Option<f64>,
     pub raid_boss_distance_offset: Option<f64>,
-    pub stats: Option<PokemonSettingsStats>,
+    pub stats: Option<Stats>,
     pub temp_evo_id: Option<String>,
     pub type_override1: Option<String>,
     pub type_override2: Option<String>,
@@ -259,7 +259,7 @@ pub struct PokemonSettingsTempEvoOverrides {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonSettingsThirdMove {
+pub struct ThirdMove {
     pub candy_to_unlock: u64,
     pub stardust_to_unlock: Option<u64>,
 }
@@ -278,8 +278,8 @@ pub struct PokemonSettings {
     pub buddy_scale: Option<f64>,
     pub buddy_size: Option<String>,
     pub buddy_walked_mega_energy_award: Option<u64>,
-    pub buddy_walked_mega_energy_awards: Option<(PokemonSettingsBuddyWalkedMegaEnergyAwards, PokemonSettingsBuddyWalkedMegaEnergyAwardsV2)>,
-    pub camera: PokemonSettingsCamera,
+    pub buddy_walked_mega_energy_awards: Option<(BuddyWalkedMegaEnergyAwards, BuddyWalkedMegaEnergyAwardsV2)>,
+    pub camera: Camera,
     pub candy_to_evolve: Option<u64>,
     pub cinematic_moves: Option<Vec<String>>,
     pub combat_default_camera_angle: Option<[f64; 3]>,
@@ -290,16 +290,16 @@ pub struct PokemonSettings {
     pub disable_transfer_to_pokemon_home: Option<bool>,
     pub elite_cinematic_move: Option<Vec<String>>,
     pub elite_quick_move: Option<Vec<String>>,
-    pub encounter: PokemonSettingsEncounter,
-    pub evolution_branch: Option<Vec<PokemonSettingsEvolutionBranch>>,
+    pub encounter: Encounter,
+    pub evolution_branch: Option<Vec<EvolutionBranch>>,
     pub evolution_ids: Option<Vec<String>>,
     pub evolution_pips: Option<u64>,
-    pub exclusive_key_item: Option<PokemonSettingsExclusiveKeyItem>,
+    pub exclusive_key_item: Option<ExclusiveKeyItem>,
     pub family_id: String,
     pub form: Option<serde_json::Value>,
-    pub form_change: Option<Vec<PokemonSettingsFormChange>>,
+    pub form_change: Option<Vec<FormChange>>,
     pub height_std_dev: f64,
-    pub ibfc: PokemonSettingsIbfc,
+    pub ibfc: Ibfc,
     pub iris_flying_height_limit_meters: Option<u64>,
     pub iris_photo_emote1: Option<String>,
     pub iris_photo_emote2: Option<String>,
@@ -320,11 +320,11 @@ pub struct PokemonSettings {
     pub pokemon_id: String,
     pub quick_moves: Option<Vec<String>>,
     pub raid_boss_distance_offset: Option<f64>,
-    pub shadow: Option<PokemonSettingsShadow>,
-    pub size_settings: Option<PokemonSettingsSizeSettings>,
-    pub stats: PokemonSettingsStats,
-    pub temp_evo_overrides: Option<Vec<PokemonSettingsTempEvoOverrides>>,
-    pub third_move: PokemonSettingsThirdMove,
+    pub shadow: Option<Shadow>,
+    pub size_settings: Option<SizeSettings>,
+    pub stats: Stats,
+    pub temp_evo_overrides: Option<Vec<TempEvoOverrides>>,
+    pub third_move: ThirdMove,
     pub r#type: String,
     pub type2: Option<String>,
     pub use_iris_flying_placement: Option<bool>,

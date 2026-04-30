@@ -4,14 +4,14 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct LocationCardSettingsMisc {
+pub struct Misc {
     pub image_url: String,
     pub location_card: serde_json::Value,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct LocationCardSettingsCardTypeVfxAddress {
+pub struct CardTypeVfxAddress {
     pub card_type: String,
     pub image_url: String,
     pub location_card: String,
@@ -20,7 +20,7 @@ pub struct LocationCardSettingsCardTypeVfxAddress {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct LocationCardSettingsCardType {
+pub struct CardType {
     pub card_type: String,
     pub image_url: String,
     pub location_card: serde_json::Value,
@@ -29,7 +29,7 @@ pub struct LocationCardSettingsCardType {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum LocationCardSettings {
-    Misc(LocationCardSettingsMisc),
-    CardTypeVfxAddress(LocationCardSettingsCardTypeVfxAddress),
-    CardType(LocationCardSettingsCardType),
+    Misc(Misc),
+    CardTypeVfxAddress(CardTypeVfxAddress),
+    CardType(CardType),
 }

@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct BuddyEmotionLevelSettingsMinEmotionPointsRequired {
+pub struct MinEmotionPointsRequired {
     pub emotion_animation: String,
     pub emotion_level: String,
     pub min_emotion_points_required: u64,
@@ -12,7 +12,7 @@ pub struct BuddyEmotionLevelSettingsMinEmotionPointsRequired {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct BuddyEmotionLevelSettingsMisc {
+pub struct Misc {
     pub emotion_animation: String,
     pub emotion_level: String,
 }
@@ -20,6 +20,6 @@ pub struct BuddyEmotionLevelSettingsMisc {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum BuddyEmotionLevelSettings {
-    MinEmotionPointsRequired(BuddyEmotionLevelSettingsMinEmotionPointsRequired),
-    Misc(BuddyEmotionLevelSettingsMisc),
+    MinEmotionPointsRequired(MinEmotionPointsRequired),
+    Misc(Misc),
 }

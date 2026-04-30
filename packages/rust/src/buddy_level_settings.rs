@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct BuddyLevelSettingsMinNonCumulativePointsRequiredUnlockedTraits {
+pub struct MinNonCumulativePointsRequiredUnlockedTraits {
     pub level: String,
     pub min_non_cumulative_points_required: u64,
     pub unlocked_traits: Vec<String>,
@@ -12,13 +12,13 @@ pub struct BuddyLevelSettingsMinNonCumulativePointsRequiredUnlockedTraits {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct BuddyLevelSettingsMisc {
+pub struct Misc {
     pub level: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum BuddyLevelSettings {
-    MinNonCumulativePointsRequiredUnlockedTraits(BuddyLevelSettingsMinNonCumulativePointsRequiredUnlockedTraits),
-    Misc(BuddyLevelSettingsMisc),
+    MinNonCumulativePointsRequiredUnlockedTraits(MinNonCumulativePointsRequiredUnlockedTraits),
+    Misc(Misc),
 }

@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct TemporaryEvolutionSettingsTemporaryEvolutions {
+pub struct TemporaryEvolutions {
     pub asset_bundle_value: u64,
     pub temporary_evolution_id: String,
 }
@@ -13,5 +13,5 @@ pub struct TemporaryEvolutionSettingsTemporaryEvolutions {
 #[serde(rename_all = "camelCase")]
 pub struct TemporaryEvolutionSettings {
     pub pokemon_id: String,
-    pub temporary_evolutions: Vec<TemporaryEvolutionSettingsTemporaryEvolutions>,
+    pub temporary_evolutions: Vec<TemporaryEvolutions>,
 }

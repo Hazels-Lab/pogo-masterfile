@@ -4,14 +4,14 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct RecommendedSearchSettingsSearchKey {
+pub struct SearchKey {
     pub search_key: String,
     pub search_label: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct RecommendedSearchSettingsAppendSearchString {
+pub struct AppendSearchString {
     pub append_search_string: String,
     pub search_label: String,
 }
@@ -19,6 +19,6 @@ pub struct RecommendedSearchSettingsAppendSearchString {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum RecommendedSearchSettings {
-    SearchKey(RecommendedSearchSettingsSearchKey),
-    AppendSearchString(RecommendedSearchSettingsAppendSearchString),
+    SearchKey(SearchKey),
+    AppendSearchString(AppendSearchString),
 }

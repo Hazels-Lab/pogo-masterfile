@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct EvolutionChainDisplaySettingsEvolutionChainsEvolutionChainsEvolutionInfos {
+pub struct EvolutionInfos {
     pub form: Option<String>,
     pub gender: Option<String>,
     pub pokemon: String,
@@ -12,27 +12,27 @@ pub struct EvolutionChainDisplaySettingsEvolutionChainsEvolutionChainsEvolutionI
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct EvolutionChainDisplaySettingsEvolutionChainsEvolutionChains {
-    pub evolution_infos: Vec<EvolutionChainDisplaySettingsEvolutionChainsEvolutionChainsEvolutionInfos>,
+pub struct EvolutionChains {
+    pub evolution_infos: Vec<EvolutionInfos>,
     pub header_message: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct EvolutionChainDisplaySettingsEvolutionChains {
-    pub evolution_chains: Vec<EvolutionChainDisplaySettingsEvolutionChainsEvolutionChains>,
+pub struct EvolutionChainsV2 {
+    pub evolution_chains: Vec<EvolutionChains>,
     pub pokemon: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct EvolutionChainDisplaySettingsMisc {
+pub struct Misc {
     pub pokemon: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum EvolutionChainDisplaySettings {
-    EvolutionChains(EvolutionChainDisplaySettingsEvolutionChains),
-    Misc(EvolutionChainDisplaySettingsMisc),
+    EvolutionChains(EvolutionChainsV2),
+    Misc(Misc),
 }

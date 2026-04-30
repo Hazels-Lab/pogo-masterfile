@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct SettingsOverrideRuleMeshingEnabledRuleValueVpsEnabled {
+pub struct MeshingEnabledRuleValueVpsEnabled {
     pub meshing_enabled: String,
     pub occlusion_enabled: String,
     pub rule_type: String,
@@ -16,7 +16,7 @@ pub struct SettingsOverrideRuleMeshingEnabledRuleValueVpsEnabled {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct SettingsOverrideRuleRuleValue {
+pub struct RuleValue {
     pub occlusion_enabled: String,
     pub rule_type: u64,
     pub rule_value: String,
@@ -26,7 +26,7 @@ pub struct SettingsOverrideRuleRuleValue {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct SettingsOverrideRuleFusedDepthEnabledMeshingEnabledOcclusionDefaultOnVpsEnabled {
+pub struct FusedDepthEnabledPlus3 {
     pub fused_depth_enabled: String,
     pub meshing_enabled: String,
     pub occlusion_default_on: String,
@@ -40,7 +40,7 @@ pub struct SettingsOverrideRuleFusedDepthEnabledMeshingEnabledOcclusionDefaultOn
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum SettingsOverrideRule {
-    MeshingEnabledRuleValueVpsEnabled(SettingsOverrideRuleMeshingEnabledRuleValueVpsEnabled),
-    RuleValue(SettingsOverrideRuleRuleValue),
-    FusedDepthEnabledMeshingEnabledOcclusionDefaultOnVpsEnabled(SettingsOverrideRuleFusedDepthEnabledMeshingEnabledOcclusionDefaultOnVpsEnabled),
+    MeshingEnabledRuleValueVpsEnabled(MeshingEnabledRuleValueVpsEnabled),
+    RuleValue(RuleValue),
+    FusedDepthEnabledPlus3(FusedDepthEnabledPlus3),
 }

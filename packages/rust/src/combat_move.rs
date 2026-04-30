@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatMoveBuffs {
+pub struct Buffs {
     pub attacker_attack_stat_stage_change: Option<i64>,
     pub attacker_defense_stat_stage_change: Option<i64>,
     pub buff_activation_chance: Option<f64>,
@@ -15,7 +15,7 @@ pub struct CombatMoveBuffs {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct CombatMove {
-    pub buffs: Option<CombatMoveBuffs>,
+    pub buffs: Option<Buffs>,
     pub duration_turns: Option<u64>,
     pub energy_delta: Option<i64>,
     pub power: Option<u64>,

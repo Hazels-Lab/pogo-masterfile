@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatNpcPersonalityMisc {
+pub struct Misc {
     pub offensive_maximum_score: f64,
     pub offensive_minimum_score: f64,
     pub personality_name: String,
@@ -14,7 +14,7 @@ pub struct CombatNpcPersonalityMisc {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct CombatNpcPersonalityDefensiveMaximumScoreDefensiveMinimumScore {
+pub struct DefensiveMaximumScoreDefensiveMinimumScore {
     pub defensive_maximum_score: u64,
     pub defensive_minimum_score: u64,
     pub offensive_maximum_score: u64,
@@ -27,6 +27,6 @@ pub struct CombatNpcPersonalityDefensiveMaximumScoreDefensiveMinimumScore {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum CombatNpcPersonality {
-    Misc(CombatNpcPersonalityMisc),
-    DefensiveMaximumScoreDefensiveMinimumScore(CombatNpcPersonalityDefensiveMaximumScoreDefensiveMinimumScore),
+    Misc(Misc),
+    DefensiveMaximumScoreDefensiveMinimumScore(DefensiveMaximumScoreDefensiveMinimumScore),
 }

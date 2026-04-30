@@ -2,7 +2,7 @@ import type { Entry, Group } from "../group.ts";
 import type { InferredType, ObjectType } from "../infer.ts";
 import { inferJsonTypes, widenType } from "../infer.ts";
 import { pascalCase, snakeCase } from "../naming.ts";
-import { clusterByFingerprint, fingerprintFileName } from "../split.ts";
+import { clusterByFingerprint } from "../split.ts";
 
 // When a group has more than this many distinct payload shapes (fingerprint
 // clusters), emit a single flat struct with all fields optional rather than
@@ -93,6 +93,19 @@ function rustFieldIdent(camelName: string): string {
 	return RUST_KEYWORDS.has(snake) ? `r#${snake}` : snake;
 }
 
+// Compose a Rust enum variant name from an H3 fingerprint. Short fingerprints
+// (≤ 3 fields) become the full PascalCase concat (`Forms`, `BreadOverridesForm`).
+// Longer ones truncate to first-field-plus-count to avoid 300-char struct
+// names — the variant's struct body already lists every field it carries, so
+// the name only needs to disambiguate within the enum, not enumerate the
+// fingerprint. Empty fingerprint (entries with only universal fields) is the
+// catch-all `Misc`.
+function variantNameFromFingerprint(fingerprint: readonly string[]): string {
+	if (fingerprint.length === 0) return "Misc";
+	if (fingerprint.length <= 3) return pascalCase(fingerprint.join("-"));
+	return `${pascalCase(fingerprint[0] ?? "")}Plus${fingerprint.length - 1}`;
+}
+
 // Pool tracks already-emitted nested struct definitions for deduplication
 // within a group. Two structs with the same shape (same fields, same field
 // types) collapse to a single emission — pokemonSettings's many clusters all
@@ -108,8 +121,11 @@ function newPool(): StructPool {
 }
 
 // Convert a JSON-payload InferredType into a Rust type expression. Nested
-// object types route through `emitOrReuseStruct` which deduplicates by shape.
-function rustType(t: InferredType, parentName: string, fieldName: string, pool: StructPool): string {
+// object types route through `emitOrReuseStruct` which deduplicates by shape;
+// candidate names are derived from `fieldName` alone (not an ancestral chain),
+// so collisions are resolved by shape-equality (reuse) or V2/V3 suffixing
+// (different shape, same field name within the module).
+function rustType(t: InferredType, fieldName: string, pool: StructPool): string {
 	switch (t.kind) {
 		case "string":
 		case "templateIdReference":
@@ -125,7 +141,7 @@ function rustType(t: InferredType, parentName: string, fieldName: string, pool: 
 			// round-trips via serde.
 			return "serde_json::Value";
 		case "array":
-			return `Vec<${rustType(t.element, parentName, fieldName, pool)}>`;
+			return `Vec<${rustType(t.element, fieldName, pool)}>`;
 		case "tuple": {
 			// Tuples with all items of the same Rust type become fixed-length
 			// arrays `[T; N]` (e.g., `attackScalar: [f64; 18]` for 18 type
@@ -137,17 +153,15 @@ function rustType(t: InferredType, parentName: string, fieldName: string, pool: 
 			// MAX_TUPLE_ARITY fall back to `Vec<serde_json::Value>` (Rust std
 			// doesn't impl Debug/Serialize/Deserialize for tuples past 12).
 			if (t.items.length === 0) return "Vec<serde_json::Value>";
-			const itemTypes = t.items.map((item) => rustType(item, parentName, fieldName, pool));
+			const itemTypes = t.items.map((item) => rustType(item, fieldName, pool));
 			const allSame = itemTypes.every((ty) => ty === itemTypes[0]);
 			if (allSame) {
 				return t.items.length <= MAX_FIXED_ARRAY_LEN ? `[${itemTypes[0]}; ${itemTypes.length}]` : `Vec<${itemTypes[0]}>`;
 			}
 			return t.items.length <= MAX_TUPLE_ARITY ? `(${itemTypes.join(", ")})` : "Vec<serde_json::Value>";
 		}
-		case "object": {
-			const candidate = `${parentName}${pascalCase(fieldName)}`;
-			return emitOrReuseStruct(candidate, t, pool);
-		}
+		case "object":
+			return emitOrReuseStruct(pascalCase(fieldName), t, pool);
 		case "union": {
 			// Rust idiom: T | null collapses to Option<T>. Other heterogeneous
 			// unions can't be cleanly modeled without inventing names; punt.
@@ -155,7 +169,7 @@ function rustType(t: InferredType, parentName: string, fieldName: string, pool: 
 				const nullIdx = t.variants.findIndex((v) => v.kind === "null");
 				if (nullIdx !== -1) {
 					const other = t.variants[1 - nullIdx];
-					if (other) return `Option<${rustType(other, parentName, fieldName, pool)}>`;
+					if (other) return `Option<${rustType(other, fieldName, pool)}>`;
 				}
 			}
 			return "serde_json::Value";
@@ -175,7 +189,7 @@ function structBody(name: string, type: ObjectType, pool: StructPool): { body: s
 	const shapeParts: string[] = [];
 	for (const prop of type.properties) {
 		const fieldName = rustFieldIdent(prop.name);
-		const inner = rustType(prop.type, name, prop.name, pool);
+		const inner = rustType(prop.type, prop.name, pool);
 		const fieldType = prop.optional ? `Option<${inner}>` : inner;
 		lines.push(`    pub ${fieldName}: ${fieldType},`);
 		shapeParts.push(`${fieldName}:${fieldType}`);
@@ -265,14 +279,23 @@ export function emitGroupModule(group: Group): string {
 	}
 
 	// Small number of clusters → emit each as a variant struct + an enum that
-	// wraps them. Nested structs are deduplicated across variants via the pool.
+	// wraps them. Variant struct names are derived from the fingerprint via
+	// variantNameFromFingerprint (truncated for long fingerprints) — module
+	// path provides namespacing. Nested structs are deduplicated across
+	// variants via the pool. If two clusters happen to produce the same
+	// truncated variant name, V2/V3 suffixes disambiguate per-enum.
 	clusters.sort((a, b) => b.entries.length - a.entries.length);
 	const enumVariants: string[] = [];
+	const usedVariantNames = new Set<string>();
 	for (const cluster of clusters) {
-		const variantName = pascalCase(fingerprintFileName(cluster.fingerprint));
-		const structName = `${baseName}${variantName}`;
+		const base = variantNameFromFingerprint(cluster.fingerprint);
+		let variantName = base;
+		let suffix = 2;
+		while (usedVariantNames.has(variantName)) variantName = `${base}V${suffix++}`;
+		usedVariantNames.add(variantName);
+
 		const inferred = inferPayloadType(cluster.entries, group.discriminator);
-		const finalName = emitOrReuseStruct(structName, inferred, pool);
+		const finalName = emitOrReuseStruct(variantName, inferred, pool);
 		enumVariants.push(`    ${variantName}(${finalName}),`);
 	}
 	const enumBlock = ["#[derive(Debug, Clone, Serialize, Deserialize)]", "#[serde(untagged)]", `pub enum ${baseName} {`, ...enumVariants, "}"].join("\n");

@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct BreadMoveLevelSettingsASettings {
+pub struct ASettings {
     pub candy_cost: u64,
     pub mp_cost: Option<u64>,
     pub stardust_cost: Option<u64>,
@@ -12,7 +12,7 @@ pub struct BreadMoveLevelSettingsASettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct BreadMoveLevelSettingsASettingsV2 {
+pub struct ASettingsV2 {
     pub candy_cost: u64,
     pub mp_cost: Option<u64>,
     pub stardust_cost: Option<u64>,
@@ -21,7 +21,7 @@ pub struct BreadMoveLevelSettingsASettingsV2 {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct BreadMoveLevelSettingsASettingsV3 {
+pub struct ASettingsV3 {
     pub candy_cost: Option<u64>,
     pub mp_cost: Option<u64>,
     pub stardust_cost: Option<u64>,
@@ -32,8 +32,8 @@ pub struct BreadMoveLevelSettingsASettingsV3 {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct BreadMoveLevelSettings {
-    pub a_settings: (BreadMoveLevelSettingsASettings, BreadMoveLevelSettingsASettingsV2, BreadMoveLevelSettingsASettingsV3),
-    pub b_settings: (BreadMoveLevelSettingsASettingsV2, BreadMoveLevelSettingsASettingsV2, BreadMoveLevelSettingsASettingsV3),
-    pub c_settings: (BreadMoveLevelSettingsASettingsV2, BreadMoveLevelSettingsASettingsV2, BreadMoveLevelSettingsASettingsV3),
+    pub a_settings: (ASettings, ASettingsV2, ASettingsV3),
+    pub b_settings: (ASettingsV2, ASettingsV2, ASettingsV3),
+    pub c_settings: (ASettingsV2, ASettingsV2, ASettingsV3),
     pub group: serde_json::Value,
 }

@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonHomeEnergyCostsPokemonClass {
+pub struct PokemonClass {
     pub base: u64,
     pub cp1001_to2000: u64,
     pub cp2001_to_inf: u64,
@@ -14,7 +14,7 @@ pub struct PokemonHomeEnergyCostsPokemonClass {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonHomeEnergyCostsMisc {
+pub struct Misc {
     pub base: u64,
     pub cp1001_to2000: u64,
     pub cp2001_to_inf: u64,
@@ -24,6 +24,6 @@ pub struct PokemonHomeEnergyCostsMisc {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum PokemonHomeEnergyCosts {
-    PokemonClass(PokemonHomeEnergyCostsPokemonClass),
-    Misc(PokemonHomeEnergyCostsMisc),
+    PokemonClass(PokemonClass),
+    Misc(Misc),
 }
