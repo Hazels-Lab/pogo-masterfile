@@ -38,8 +38,11 @@ Reference: [Go modules in subdirectories](https://go.dev/ref/mod#vcs-version).
 Before pushing a release tag for any package:
 
 1. Bump the version in the package manifest (`package.json`, `Cargo.toml`, no version file for Go — the tag *is* the version).
+
 2. Update that package's `CHANGELOG.md` — move `## [Unreleased]` items into a new dated `## [x.y.z]` section.
+
 3. Commit on `main`.
+
 4. Tag and push:
 
    ```bash
