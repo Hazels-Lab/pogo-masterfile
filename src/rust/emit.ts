@@ -4,12 +4,57 @@ import { inferJsonTypes, widenType } from "../infer.ts";
 import { pascalCase, snakeCase } from "../naming.ts";
 import { clusterByFingerprint } from "../split.ts";
 
-// Merge a list of ObjectTypes into a single ObjectType with the union of all
-// fields. A field present in some positions but not others becomes optional.
-// Field types are merged recursively when they're also objects; otherwise the
-// first observation wins (acceptable for our use case since downstream Rust
-// emit will widen anyway). Used only by the long-heterogeneous-tuple fallback,
-// where per-position object types would otherwise erase to `serde_json::Value`.
+// Merge a list of InferredTypes into one. Used by mergeObjectTypes (recursive,
+// merges nested object schemas) and the long-heterogeneous-tuple Rust-emit
+// fallback. The merge needs to handle every nested kind:
+//   - object: merge property sets, recurse on each field
+//   - tuple: same length → merge per-position; varying lengths → array of
+//            merged element (this catches the `excludedForms` case where each
+//            position observed a different length)
+//   - array: merge element types
+//   - number: widen numericKind (uint < int < float)
+//   - mixed kinds: produce a UnionType so downstream emit can express it
+//
+// The "first wins" fallback in the previous version was wrong: it discarded
+// per-position type variation and produced fixed-length arrays even when the
+// observed lengths varied across positions, which then failed to deserialize
+// against real masterfile data.
+function mergeTypes(types: readonly InferredType[]): InferredType {
+	if (types.length === 0) return { kind: "union", variants: [] };
+	if (types.length === 1) return types[0]!;
+
+	const allSameKind = types.every((t) => t.kind === types[0]!.kind);
+	if (!allSameKind) return { kind: "union", variants: types };
+
+	const kind = types[0]!.kind;
+	switch (kind) {
+		case "object":
+			return mergeObjectTypes(types as ObjectType[]);
+		case "tuple": {
+			const tuples = types as Array<{ kind: "tuple"; items: InferredType[] }>;
+			const lengths = new Set(tuples.map((t) => t.items.length));
+			if (lengths.size === 1) {
+				const len = tuples[0]!.items.length;
+				const items = Array.from({ length: len }, (_, i) => mergeTypes(tuples.map((t) => t.items[i]!)));
+				return { kind: "tuple", items };
+			}
+			return { kind: "array", element: mergeTypes(tuples.flatMap((t) => t.items)) };
+		}
+		case "array": {
+			const arrays = types as Array<{ kind: "array"; element: InferredType }>;
+			return { kind: "array", element: mergeTypes(arrays.map((a) => a.element)) };
+		}
+		case "number": {
+			const nums = types as Array<{ kind: "number"; numericKind: "uint" | "int" | "float"; literals: number[] }>;
+			const kinds = new Set(nums.map((n) => n.numericKind));
+			const numericKind = kinds.has("float") ? "float" : kinds.has("int") ? "int" : "uint";
+			return { kind: "number", numericKind, literals: [] };
+		}
+		default:
+			return types[0]!;
+	}
+}
+
 function mergeObjectTypes(types: readonly ObjectType[]): ObjectType {
 	if (types.length === 1) return types[0]!;
 	const propBuckets = new Map<string, { occurrences: InferredType[]; presentIn: number; anyOptional: boolean }>();
@@ -25,9 +70,7 @@ function mergeObjectTypes(types: readonly ObjectType[]): ObjectType {
 	const properties: InferredProperty[] = [];
 	for (const [name, info] of propBuckets) {
 		const optional = info.anyOptional || info.presentIn < types.length;
-		const allObjects = info.occurrences.every((t) => t.kind === "object");
-		const type = allObjects ? mergeObjectTypes(info.occurrences as ObjectType[]) : info.occurrences[0]!;
-		properties.push({ name, type, optional });
+		properties.push({ name, type: mergeTypes(info.occurrences), optional });
 	}
 	properties.sort((a, b) => a.name.localeCompare(b.name));
 	return { kind: "object", properties };
@@ -531,21 +574,40 @@ export interface EntryVariant {
 	modulePath: string;
 	// PascalCase Entry type name (e.g., `PokemonSettingsEntry`).
 	entryTypeName: string;
+	// True iff this discriminator's `data` carries no payload key. Stubs are
+	// dispatched by `templateId` value rather than by `data`'s key set.
+	isStub: boolean;
+	// For non-stubs: the JSON key inside `data` that identifies this variant
+	// (e.g., `"pokemonSettings"`). For stubs: the entry's templateId
+	// (e.g., `"ITEM_CURRENCY_VALUES"`).
+	discriminator: string;
+	// Number of entries in this discriminator's group. Used to sort variants
+	// most-frequent-first so dispatch and serialize round-trips short-circuit
+	// quickly on common cases.
+	entryCount: number;
 }
 
 export function emitLibFile(moduleNames: readonly string[], variants: readonly EntryVariant[]): string {
 	const sortedModules = [...moduleNames].sort();
-	const sortedVariants = [...variants].sort((a, b) => a.variantName.localeCompare(b.variantName));
+
+	// Sort variants by entry count descending (most frequent first), tiebreak
+	// alphabetically. The custom Deserialize impl dispatches by exact match
+	// on the discriminator key, so order doesn't affect correctness — but we
+	// keep the *enum declaration* in this order so that source readers and
+	// pattern-match exhaustiveness diagnostics surface common cases first.
+	const sortedVariants = [...variants].sort((a, b) => b.entryCount - a.entryCount || a.variantName.localeCompare(b.variantName));
 
 	// Disambiguate any rare pascalCase collisions (e.g., a camelCase discriminator
 	// and a SCREAMING_SNAKE stub template-id that PascalCase to the same name).
 	const usedVariantNames = new Set<string>();
+	const finalVariants: Array<{ finalName: string; v: EntryVariant }> = [];
 	const variantLines: string[] = [];
 	for (const v of sortedVariants) {
 		let name = v.variantName;
 		let suffix = 2;
 		while (usedVariantNames.has(name)) name = `${v.variantName}V${suffix++}`;
 		usedVariantNames.add(name);
+		finalVariants.push({ finalName: name, v });
 		variantLines.push(`    ${name}(${v.modulePath}::${v.entryTypeName}),`);
 	}
 
@@ -593,15 +655,18 @@ export function emitLibFile(moduleNames: readonly string[], variants: readonly E
 		"",
 		"/// Every typed entry the Pokémon GO masterfile can hold.",
 		"///",
-		"/// Variants use `#[serde(untagged)]` — serde dispatches by trying each",
-		"/// variant in declaration order and picking the first whose required",
-		"/// fields are all present. Each non-stub Entry's `EntryData` carries a",
-		"/// unique discriminator field, so dispatch is unambiguous in practice.",
+		"/// Variants are ordered most-frequent-first (by entry count in the source",
+		"/// masterfile). Serde's `#[serde(untagged)]` dispatch tries variants in",
+		"/// declaration order, so the most common entries short-circuit fastest.",
 		"///",
 		"/// **Caveat:** stub entries (the few discriminators with",
 		"/// `data: { templateId }` only) are shape-indistinguishable under untagged",
-		"/// dispatch. They'll all deserialize to whichever stub variant is declared",
-		"/// first alphabetically; inspect `template_id` to recover the specific kind.",
+		"/// dispatch — they all match whichever stub variant is declared first;",
+		"/// inspect `template_id` to recover the specific kind. Likewise, entries",
+		"/// whose payload doesn't strictly type-check against the inferred shape",
+		"/// (e.g. JSON has `1.0` where the inferred type expected `u64`) may match",
+		"/// a permissive stub variant rather than erroring. Round-trip JSON to",
+		"/// verify if you need certainty.",
 		"#[derive(Debug, Clone, Serialize, Deserialize)]",
 		"#[serde(untagged)]",
 		"pub enum MasterfileEntry {",

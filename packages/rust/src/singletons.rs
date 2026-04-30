@@ -118,6 +118,13 @@ pub struct PokemonWithExcludedFormsV8 {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct PokemonWithExcludedFormsV9 {
+    pub excluded_forms: Vec<String>,
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct ArPhotoFeatureFlags {
     pub ar_menu_entry_enabled: i64,
     pub capture_settings: CaptureSettings,
@@ -129,7 +136,7 @@ pub struct ArPhotoFeatureFlags {
     pub lapsed_days_cutoff: u64,
     pub main_menu_entry_enabled: i64,
     pub new_days_cutoff: u64,
-    pub pokemon_with_excluded_forms: Vec<PokemonWithExcludedForms>,
+    pub pokemon_with_excluded_forms: Vec<PokemonWithExcludedFormsV9>,
     pub pre_login_device_allow_list: [String; 6],
     pub pre_login_metrics_enabled: i64,
     pub pre_login_roll_out_ratio: u64,
@@ -966,8 +973,141 @@ pub struct VisualSettingsV21 {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct BreadBattleTrainerVisualDataV5 {
+    pub x_offset: f64,
+    pub y_offset: Option<u64>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct BreadBattleVisualDataV5 {
+    pub scale: f64,
+    pub x_offset: Option<f64>,
+    pub y_offset: Option<i64>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct BreadEncounterVisiualDataV6 {
+    pub camera_distance: f64,
+    pub max_reticle_size: Option<u64>,
+    pub scale: f64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(untagged)]
+pub enum BreadModeValue {
+    String(String),
+    StringV2(String),
+    StringV3(String),
+    StringV4(String),
+    StringV5(String),
+    StringV6(String),
+    StringV7(String),
+    StringV8(String),
+    StringV9(String),
+    StringV10(String),
+    StringV11(String),
+    StringV12(String),
+    StringV13(String),
+    StringV14(String),
+    StringV15(String),
+    StringV16(String),
+    StringV17(String),
+    StringV18(String),
+    StringV19(String),
+    StringV20(String),
+    StringV21(String),
+    StringV22(String),
+    StringV23(String),
+    StringV24(String),
+    StringV25(String),
+    StringV26(String),
+    StringV27(String),
+    StringV28(String),
+    StringV29(String),
+    StringV30(String),
+    StringV31(String),
+    StringV32(String),
+    StringV33(String),
+    StringV34(String),
+    StringV35(String),
+    StringV36(String),
+    StringV37(String),
+    StringV38(String),
+    StringV39(String),
+    StringV40(String),
+    StringV41(String),
+    StringV42(String),
+    StringV43(String),
+    StringV44(String),
+    StringV45(String),
+    StringV46(String),
+    StringV47(String),
+    StringV48(String),
+    StringV49(String),
+    StringV50(String),
+    StringV51(String),
+    StringV52(String),
+    StringV53(String),
+    StringV54(String),
+    StringV55(String),
+    StringV56(String),
+    StringV57(String),
+    StringV58(String),
+    StringV59(String),
+    StringV60(String),
+    StringV61(String),
+    StringV62(String),
+    StringV63(String),
+    StringV64(String),
+    StringV65(String),
+    StringV66(String),
+    StringV67(String),
+    StringV68(String),
+    StringV69(String),
+    StringV70(String),
+    StringV71(String),
+    StringV72(String),
+    Uint(u64),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct BreadStationVisualDataV2 {
+    pub scale: f64,
+    pub x_offset: Option<f64>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualDataV19 {
+    pub bread_battle_boss_visual_data: Option<BreadBattleBossVisualData>,
+    pub bread_battle_trainer_visual_data: Option<BreadBattleTrainerVisualDataV5>,
+    pub bread_battle_visual_data: Option<BreadBattleVisualDataV5>,
+    pub bread_encounter_visiual_data: Option<BreadEncounterVisiualDataV6>,
+    pub bread_mode: BreadModeValue,
+    pub bread_station_visual_data: Option<BreadStationVisualDataV2>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonFormDataV22 {
+    pub pokemon_form: Option<String>,
+    pub visual_data: Vec<VisualDataV19>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualSettingsV22 {
+    pub pokemon_form_data: [PokemonFormDataV22; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct BreadPokemonScalingSettings {
-    pub visual_settings: Vec<VisualSettings>,
+    pub visual_settings: Vec<VisualSettingsV22>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -988,6 +1128,14 @@ pub struct AllowedSourdoughPokemonV2 {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct AllowedSourdoughPokemonV3 {
+    pub bread_mode: String,
+    pub form: Vec<String>,
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct BreadBattleAvailability {
     pub bread_battle_availability_end_minute: u64,
     pub bread_battle_availability_start_minute: u64,
@@ -996,7 +1144,7 @@ pub struct BreadBattleAvailability {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct BreadSettings {
-    pub allowed_sourdough_pokemon: Vec<AllowedSourdoughPokemon>,
+    pub allowed_sourdough_pokemon: Vec<AllowedSourdoughPokemonV3>,
     pub bread_battle_availability: BreadBattleAvailability,
     pub max_range_for_nearby_state_meters: u64,
     pub max_stationed_pokemon: u64,
@@ -1522,9 +1670,66 @@ pub struct EventStepV2 {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(untagged)]
+pub enum EventValue {
+    String(String),
+    StringV2(String),
+    StringV3(String),
+    StringV4(String),
+    StringV5(String),
+    StringV6(String),
+    StringV7(String),
+    StringV8(String),
+    StringV9(String),
+    StringV10(String),
+    StringV11(String),
+    StringV12(String),
+    StringV13(String),
+    StringV14(String),
+    StringV15(String),
+    StringV16(String),
+    StringV17(String),
+    StringV18(String),
+    StringV19(String),
+    StringV20(String),
+    StringV21(String),
+    StringV22(String),
+    StringV23(String),
+    StringV24(String),
+    Uint(u64),
+    UintV2(u64),
+    UintV3(u64),
+    UintV4(u64),
+    UintV5(u64),
+    UintV6(u64),
+    UintV7(u64),
+    UintV8(u64),
+    UintV9(u64),
+    UintV10(u64),
+    UintV11(u64),
+    UintV12(u64),
+    UintV13(u64),
+    UintV14(u64),
+    UintV15(u64),
+    UintV16(u64),
+    UintV17(u64),
+    UintV18(u64),
+    UintV19(u64),
+    UintV20(u64),
+    UintV21(u64),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct EventStepV3 {
+    pub event: EventValue,
+    pub step_number: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct IrisSocialUxFunnelSettings {
-    pub event_step: Vec<EventStep>,
+    pub event_step: Vec<EventStepV3>,
     pub ux_funnel_version: u64,
 }
 
@@ -2387,7 +2592,7 @@ pub struct PokemonMusicOverridesV4 {
 #[serde(rename_all = "camelCase")]
 pub struct PokemonMusicOverridesV5 {
     pub battle_music_key: String,
-    pub forms: Option<[String; 2]>,
+    pub forms: Option<Vec<String>>,
     pub pokemon: String,
 }
 
@@ -2907,11 +3112,19 @@ pub struct VsSeekerSchedulesV2 {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct VsSeekerSchedulesV3 {
+    pub end_time_ms: String,
+    pub start_time_ms: String,
+    pub vs_seeker_league_tempalte_id: Vec<String>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct SeasonSchedules {
     pub blog_url: String,
     pub description_key: String,
     pub season_title: String,
-    pub vs_seeker_schedules: Vec<VsSeekerSchedules>,
+    pub vs_seeker_schedules: Vec<VsSeekerSchedulesV3>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
