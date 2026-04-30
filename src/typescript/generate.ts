@@ -17,7 +17,7 @@ import {
 } from "./emit.ts";
 import { buildPromotionRegistry } from "./promoted-unions.ts";
 
-const OUT_DIR = join(import.meta.dir, "..", "..", "packages", "typescript", "src");
+const OUT_DIR = join(import.meta.dir, "..", "..", "packages", "ts", "src");
 
 // Recursively materialize a split tree into the files map. At each level:
 //   - Leaf bucket (no children): emitted as a single entry file at the current path.

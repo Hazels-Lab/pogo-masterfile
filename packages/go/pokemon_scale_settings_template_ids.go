@@ -1,0 +1,23 @@
+// Generated from Pokémon GO masterfile — group "pokemonScaleSettings" templateIds.
+
+package masterfile
+
+type PokemonScaleSettingsTemplateID string
+
+const (
+	PokemonScaleSettingsTemplateIDPokemonScaleSettingsBattlePokemonScale PokemonScaleSettingsTemplateID = "POKEMON_SCALE_SETTINGS_BATTLE_POKEMON_SCALE"
+	PokemonScaleSettingsTemplateIDPokemonScaleSettingsGuiScale           PokemonScaleSettingsTemplateID = "POKEMON_SCALE_SETTINGS_GUI_SCALE"
+	PokemonScaleSettingsTemplateIDPokemonScaleSettingsGymTopperScale     PokemonScaleSettingsTemplateID = "POKEMON_SCALE_SETTINGS_GYM_TOPPER_SCALE"
+	PokemonScaleSettingsTemplateIDPokemonScaleSettingsMapPokemonScale    PokemonScaleSettingsTemplateID = "POKEMON_SCALE_SETTINGS_MAP_POKEMON_SCALE"
+	PokemonScaleSettingsTemplateIDPokemonScaleSettingsNaturalScale       PokemonScaleSettingsTemplateID = "POKEMON_SCALE_SETTINGS_NATURAL_SCALE"
+	PokemonScaleSettingsTemplateIDPokemonScaleSettingsRaidBossScale      PokemonScaleSettingsTemplateID = "POKEMON_SCALE_SETTINGS_RAID_BOSS_SCALE"
+)
+
+var PokemonScaleSettingsTemplateIDValues = []PokemonScaleSettingsTemplateID{
+	PokemonScaleSettingsTemplateIDPokemonScaleSettingsBattlePokemonScale,
+	PokemonScaleSettingsTemplateIDPokemonScaleSettingsGuiScale,
+	PokemonScaleSettingsTemplateIDPokemonScaleSettingsGymTopperScale,
+	PokemonScaleSettingsTemplateIDPokemonScaleSettingsMapPokemonScale,
+	PokemonScaleSettingsTemplateIDPokemonScaleSettingsNaturalScale,
+	PokemonScaleSettingsTemplateIDPokemonScaleSettingsRaidBossScale,
+}

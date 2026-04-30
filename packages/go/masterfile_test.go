@@ -12,6 +12,26 @@ func TestParseEmptyList(t *testing.T) {
 	}
 }
 
+func TestBadgeSettingsTemplateIDValuesNotEmpty(t *testing.T) {
+	if len(BadgeSettingsTemplateIDValues) == 0 {
+		t.Fatal("expected at least one BadgeSettings templateID")
+	}
+	var first BadgeSettingsTemplateID = BadgeSettingsTemplateIDValues[0]
+	if string(first) == "" {
+		t.Fatal("first templateID was empty")
+	}
+}
+
+func TestSingletonsTemplateIDIncludesAccessibility(t *testing.T) {
+	wanted := SingletonsTemplateID("ACCESSIBILITY_CLIENT_SETTINGS")
+	for _, v := range SingletonsTemplateIDValues {
+		if v == wanted {
+			return
+		}
+	}
+	t.Fatalf("SingletonsTemplateIDValues missing %q", wanted)
+}
+
 func TestParseAccessibilitySingleton(t *testing.T) {
 	json := []byte(`[
 		{

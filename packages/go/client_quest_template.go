@@ -3,7 +3,7 @@
 package masterfile
 
 type ClientQuestTemplateWithBadgeType struct {
-	BadgeRank           uint64    `json:"badgeRank"`
+	BadgeRank uint64 `json:"badgeRank"`
 	BadgeTypesToExclude [1]string `json:"badgeTypesToExclude"`
 }
 
@@ -32,19 +32,19 @@ type ClientQuestTemplateWithThrowType struct {
 }
 
 type ClientQuestTemplateCondition struct {
-	Type                  string                                    `json:"type"`
-	WithBadgeType         *ClientQuestTemplateWithBadgeType         `json:"withBadgeType,omitempty"`
-	WithCombatType        *ClientQuestTemplateWithCombatType        `json:"withCombatType,omitempty"`
-	WithDistance          *ClientQuestTemplateWithDistance          `json:"withDistance,omitempty"`
+	Type string `json:"type"`
+	WithBadgeType *ClientQuestTemplateWithBadgeType `json:"withBadgeType,omitempty"`
+	WithCombatType *ClientQuestTemplateWithCombatType `json:"withCombatType,omitempty"`
+	WithDistance *ClientQuestTemplateWithDistance `json:"withDistance,omitempty"`
 	WithInvasionCharacter *ClientQuestTemplateWithInvasionCharacter `json:"withInvasionCharacter,omitempty"`
-	WithPokemonLevel      *ClientQuestTemplateWithPokemonLevel      `json:"withPokemonLevel,omitempty"`
-	WithQuestContext      *ClientQuestTemplateWithQuestContext      `json:"withQuestContext,omitempty"`
-	WithThrowType         *ClientQuestTemplateWithThrowType         `json:"withThrowType,omitempty"`
+	WithPokemonLevel *ClientQuestTemplateWithPokemonLevel `json:"withPokemonLevel,omitempty"`
+	WithQuestContext *ClientQuestTemplateWithQuestContext `json:"withQuestContext,omitempty"`
+	WithThrowType *ClientQuestTemplateWithThrowType `json:"withThrowType,omitempty"`
 }
 
 type ClientQuestTemplateGoal struct {
 	Condition []ClientQuestTemplateCondition `json:"condition,omitempty"`
-	Target    uint64                         `json:"target"`
+	Target uint64 `json:"target"`
 }
 
 type ClientQuestTemplateSubQuests struct {
@@ -57,7 +57,7 @@ type ClientQuestTemplateMultiPart struct {
 
 type ClientQuestTemplateItem struct {
 	Amount uint64 `json:"amount"`
-	Item   string `json:"item"`
+	Item string `json:"item"`
 }
 
 type ClientQuestTemplatePokemonDisplay struct {
@@ -66,50 +66,50 @@ type ClientQuestTemplatePokemonDisplay struct {
 
 type ClientQuestTemplatePokemonEncounter struct {
 	PokemonDisplay ClientQuestTemplatePokemonDisplay `json:"pokemonDisplay"`
-	PokemonId      string                            `json:"pokemonId"`
+	PokemonId string `json:"pokemonId"`
 }
 
 type ClientQuestTemplateQuestRewards struct {
-	Exp              *uint64                              `json:"exp,omitempty"`
-	FriendshipPoints *uint64                              `json:"friendshipPoints,omitempty"`
-	Item             *ClientQuestTemplateItem             `json:"item,omitempty"`
-	LevelCap         *uint64                              `json:"levelCap,omitempty"`
+	Exp *uint64 `json:"exp,omitempty"`
+	FriendshipPoints *uint64 `json:"friendshipPoints,omitempty"`
+	Item *ClientQuestTemplateItem `json:"item,omitempty"`
+	LevelCap *uint64 `json:"levelCap,omitempty"`
 	PokemonEncounter *ClientQuestTemplatePokemonEncounter `json:"pokemonEncounter,omitempty"`
-	Stardust         *uint64                              `json:"stardust,omitempty"`
-	Type             string                               `json:"type"`
+	Stardust *uint64 `json:"stardust,omitempty"`
+	Type string `json:"type"`
 }
 
 type ClientQuestTemplateQuest struct {
-	Difficulty                                  *string                           `json:"difficulty,omitempty"`
-	Goal                                        *ClientQuestTemplateGoal          `json:"goal,omitempty"`
-	MultiPart                                   *ClientQuestTemplateMultiPart     `json:"multiPart,omitempty"`
-	QuestContext                                string                            `json:"questContext"`
-	QuestId                                     string                            `json:"questId"`
-	QuestRewards                                []ClientQuestTemplateQuestRewards `json:"questRewards"`
-	QuestType                                   string                            `json:"questType"`
-	QuestUpdateToastProgressPercentageThreshold *float64                          `json:"questUpdateToastProgressPercentageThreshold,omitempty"`
-	TemplateId                                  string                            `json:"templateId"`
+	Difficulty *string `json:"difficulty,omitempty"`
+	Goal *ClientQuestTemplateGoal `json:"goal,omitempty"`
+	MultiPart *ClientQuestTemplateMultiPart `json:"multiPart,omitempty"`
+	QuestContext string `json:"questContext"`
+	QuestId string `json:"questId"`
+	QuestRewards []ClientQuestTemplateQuestRewards `json:"questRewards"`
+	QuestType string `json:"questType"`
+	QuestUpdateToastProgressPercentageThreshold *float64 `json:"questUpdateToastProgressPercentageThreshold,omitempty"`
+	TemplateId string `json:"templateId"`
 }
 
 type ClientQuestTemplateQuestDisplay struct {
-	Description      *string                          `json:"description,omitempty"`
+	Description *string `json:"description,omitempty"`
 	SubquestDisplays *[4]ClientQuestTemplateSubQuests `json:"subquestDisplays,omitempty"`
-	Title            string                           `json:"title"`
+	Title string `json:"title"`
 }
 
 type ClientQuestTemplate struct {
-	Quest        ClientQuestTemplateQuest        `json:"quest"`
+	Quest ClientQuestTemplateQuest `json:"quest"`
 	QuestDisplay ClientQuestTemplateQuestDisplay `json:"questDisplay"`
 }
 
 type ClientQuestTemplateEntry struct {
-	TemplateID string                       `json:"templateId"`
+	TemplateID string `json:"templateId"`
 	Data       ClientQuestTemplateEntryData `json:"data"`
 }
 
 func (ClientQuestTemplateEntry) isMasterfileEntry() {}
 
 type ClientQuestTemplateEntryData struct {
-	TemplateID          string              `json:"templateId"`
+	TemplateID     string `json:"templateId"`
 	ClientQuestTemplate ClientQuestTemplate `json:"clientQuestTemplate"`
 }

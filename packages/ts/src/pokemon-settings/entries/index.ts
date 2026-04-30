@@ -38,24 +38,6 @@ export type * from "./rock";
 export type * from "./steel";
 export type * from "./water";
 
-export type PokemonSettingsMasterfileEntry =
-	| PokemonSettingsBugMasterfileEntry
-	| PokemonSettingsDarkMasterfileEntry
-	| PokemonSettingsDragonMasterfileEntry
-	| PokemonSettingsElectricMasterfileEntry
-	| PokemonSettingsFairyMasterfileEntry
-	| PokemonSettingsFightingMasterfileEntry
-	| PokemonSettingsFireMasterfileEntry
-	| PokemonSettingsFlyingMasterfileEntry
-	| PokemonSettingsGhostMasterfileEntry
-	| PokemonSettingsGrassMasterfileEntry
-	| PokemonSettingsGroundMasterfileEntry
-	| PokemonSettingsIceMasterfileEntry
-	| PokemonSettingsNormalMasterfileEntry
-	| PokemonSettingsPoisonMasterfileEntry
-	| PokemonSettingsPsychicMasterfileEntry
-	| PokemonSettingsRockMasterfileEntry
-	| PokemonSettingsSteelMasterfileEntry
-	| PokemonSettingsWaterMasterfileEntry;
+export type PokemonSettingsMasterfileEntry = PokemonSettingsBugMasterfileEntry | PokemonSettingsDarkMasterfileEntry | PokemonSettingsDragonMasterfileEntry | PokemonSettingsElectricMasterfileEntry | PokemonSettingsFairyMasterfileEntry | PokemonSettingsFightingMasterfileEntry | PokemonSettingsFireMasterfileEntry | PokemonSettingsFlyingMasterfileEntry | PokemonSettingsGhostMasterfileEntry | PokemonSettingsGrassMasterfileEntry | PokemonSettingsGroundMasterfileEntry | PokemonSettingsIceMasterfileEntry | PokemonSettingsNormalMasterfileEntry | PokemonSettingsPoisonMasterfileEntry | PokemonSettingsPsychicMasterfileEntry | PokemonSettingsRockMasterfileEntry | PokemonSettingsSteelMasterfileEntry | PokemonSettingsWaterMasterfileEntry;
 
 export type PokemonSettingsTemplateID = PokemonSettingsMasterfileEntry["templateId"];

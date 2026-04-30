@@ -3,8 +3,8 @@
 package masterfile
 
 type ItemExpirationSettingsLootItem struct {
-	Count    uint64 `json:"count"`
-	Stardust bool   `json:"stardust"`
+	Count uint64 `json:"count"`
+	Stardust bool `json:"stardust"`
 }
 
 type ItemExpirationSettingsConsolationItems struct {
@@ -12,7 +12,7 @@ type ItemExpirationSettingsConsolationItems struct {
 }
 
 type ItemExpirationSettingsEnabledTimePeriods struct {
-	EnabledEndTime   string `json:"enabledEndTime"`
+	EnabledEndTime string `json:"enabledEndTime"`
 	EnabledStartTime string `json:"enabledStartTime"`
 }
 
@@ -21,21 +21,21 @@ type ItemExpirationSettingsItemEnablementSettings struct {
 }
 
 type ItemExpirationSettings struct {
-	ConsolationItems        *ItemExpirationSettingsConsolationItems       `json:"consolationItems,omitempty"`
-	EmergencyExpirationTime *string                                       `json:"emergencyExpirationTime,omitempty"`
-	ExpirationTime          string                                        `json:"expirationTime"`
-	Item                    string                                        `json:"item"`
-	ItemEnablementSettings  *ItemExpirationSettingsItemEnablementSettings `json:"itemEnablementSettings,omitempty"`
+	ConsolationItems *ItemExpirationSettingsConsolationItems `json:"consolationItems,omitempty"`
+	EmergencyExpirationTime *string `json:"emergencyExpirationTime,omitempty"`
+	ExpirationTime string `json:"expirationTime"`
+	Item string `json:"item"`
+	ItemEnablementSettings *ItemExpirationSettingsItemEnablementSettings `json:"itemEnablementSettings,omitempty"`
 }
 
 type ItemExpirationSettingsEntry struct {
-	TemplateID string                          `json:"templateId"`
+	TemplateID string `json:"templateId"`
 	Data       ItemExpirationSettingsEntryData `json:"data"`
 }
 
 func (ItemExpirationSettingsEntry) isMasterfileEntry() {}
 
 type ItemExpirationSettingsEntryData struct {
-	TemplateID             string                 `json:"templateId"`
+	TemplateID     string `json:"templateId"`
 	ItemExpirationSettings ItemExpirationSettings `json:"itemExpirationSettings"`
 }

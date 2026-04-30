@@ -1,0 +1,29 @@
+// Generated from Pokémon GO masterfile — group "combatNpcTrainer" templateIds.
+
+package masterfile
+
+type CombatNpcTrainerTemplateID string
+
+const (
+	CombatNpcTrainerTemplateIDTrainerBlancheGreat  CombatNpcTrainerTemplateID = "TRAINER_BLANCHE_GREAT"
+	CombatNpcTrainerTemplateIDTrainerBlancheMaster CombatNpcTrainerTemplateID = "TRAINER_BLANCHE_MASTER"
+	CombatNpcTrainerTemplateIDTrainerBlancheUltra  CombatNpcTrainerTemplateID = "TRAINER_BLANCHE_ULTRA"
+	CombatNpcTrainerTemplateIDTrainerCandelaGreat  CombatNpcTrainerTemplateID = "TRAINER_CANDELA_GREAT"
+	CombatNpcTrainerTemplateIDTrainerCandelaMaster CombatNpcTrainerTemplateID = "TRAINER_CANDELA_MASTER"
+	CombatNpcTrainerTemplateIDTrainerCandelaUltra  CombatNpcTrainerTemplateID = "TRAINER_CANDELA_ULTRA"
+	CombatNpcTrainerTemplateIDTrainerSparkGreat    CombatNpcTrainerTemplateID = "TRAINER_SPARK_GREAT"
+	CombatNpcTrainerTemplateIDTrainerSparkMaster   CombatNpcTrainerTemplateID = "TRAINER_SPARK_MASTER"
+	CombatNpcTrainerTemplateIDTrainerSparkUltra    CombatNpcTrainerTemplateID = "TRAINER_SPARK_ULTRA"
+)
+
+var CombatNpcTrainerTemplateIDValues = []CombatNpcTrainerTemplateID{
+	CombatNpcTrainerTemplateIDTrainerBlancheGreat,
+	CombatNpcTrainerTemplateIDTrainerBlancheMaster,
+	CombatNpcTrainerTemplateIDTrainerBlancheUltra,
+	CombatNpcTrainerTemplateIDTrainerCandelaGreat,
+	CombatNpcTrainerTemplateIDTrainerCandelaMaster,
+	CombatNpcTrainerTemplateIDTrainerCandelaUltra,
+	CombatNpcTrainerTemplateIDTrainerSparkGreat,
+	CombatNpcTrainerTemplateIDTrainerSparkMaster,
+	CombatNpcTrainerTemplateIDTrainerSparkUltra,
+}

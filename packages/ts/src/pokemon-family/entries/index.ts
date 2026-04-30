@@ -8,9 +8,6 @@ export type * from "./mega-evolvable-pokemon-id";
 export type * from "./mega-evolvable-pokemon-ids";
 export type * from "./misc";
 
-export type PokemonFamilyMasterfileEntry =
-	| PokemonFamilyMegaEvolvablePokemonIdMasterfileEntry
-	| PokemonFamilyMegaEvolvablePokemonIdsMasterfileEntry
-	| PokemonFamilyMiscMasterfileEntry;
+export type PokemonFamilyMasterfileEntry = PokemonFamilyMegaEvolvablePokemonIdMasterfileEntry | PokemonFamilyMegaEvolvablePokemonIdsMasterfileEntry | PokemonFamilyMiscMasterfileEntry;
 
 export type PokemonFamilyTemplateID = PokemonFamilyMasterfileEntry["templateId"];
