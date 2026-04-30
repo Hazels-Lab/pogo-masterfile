@@ -2,7 +2,15 @@
 
 **Date:** 2026-04-29
 **Author:** brainstorming session (derick.magnusen@gmail.com + Claude)
-**Status:** Ready for plan-writing
+**Status:** Implemented (with revision — see below)
+
+## Revision (2026-04-29, post-implementation)
+
+The original design declared a separate prefix-derived alias (`PokemonType`, `WeatherAffinity`, etc.) in each source group's `types.ts`. That alias is **always** equal to `${groupName(disc)}TemplateID`, which the generator already publishes from `entries.ts`. The two were duplicate names for the same set of strings, and unused prefix-derived aliases (e.g., `Avatar`, `Badge`) added thousands of lines of dead literal-union noise.
+
+**As shipped**, the generator skips the new alias entirely and rewrites consumer-side promotions to reference `${groupName(disc)}TemplateID` directly, importing from `../<source>/entries` (which resolves to either `entries.ts` for flat groups or `entries/index.ts` for split groups). Collision resolution is gone — `${groupName(disc)}TemplateID` is unique by construction. The shared-prefix eligibility check on the source side is retained as a "looks like a domain enum" guard.
+
+The rest of this document describes the original (pre-revision) design.
 
 ## Problem
 
