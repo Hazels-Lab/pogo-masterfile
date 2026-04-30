@@ -1,0 +1,9 @@
+[package]
+name = "pogo-masterfile-types"
+version = "0.1.0"
+edition = "2024"
+description = "Generated Rust types for the Pokémon GO masterfile."
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"

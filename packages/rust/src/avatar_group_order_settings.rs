@@ -1,0 +1,17 @@
+// Generated from Pokémon GO masterfile — group "avatarGroupOrderSettings".
+
+use serde::{Deserialize, Serialize};
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct AvatarGroupOrderSettingsGroup {
+    pub name: String,
+    pub new_tag_enabled: Option<bool>,
+    pub order: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct AvatarGroupOrderSettings {
+    pub group: Vec<AvatarGroupOrderSettingsGroup>,
+}

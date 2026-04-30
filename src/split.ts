@@ -227,14 +227,16 @@ export function tryH2(group: Group): H2Result | null {
 // practice, while fingerprint clustering only helps when the type *shape* varies.
 const H3_MIN_AVG_CLUSTER_SIZE = 5;
 
-export interface H3Cluster {
+export interface FingerprintCluster {
 	fingerprint: string[];
-	fileName: string;
 	entries: Entry[];
-	children?: SplitTree;
 }
 
-export function tryH3(group: Group): H3Cluster[] | null {
+// Bucket a group's entries by which non-universal fields they carry. Exposed as
+// a standalone helper because non-TS emitters (Rust enum variants, Go interface
+// implementations) want the raw clusters even when there's just one — the H3
+// splitting threshold is purely a TS file-organization concern.
+export function clusterByFingerprint(group: Group): FingerprintCluster[] {
 	// Pass 1: count per-field presence to find universally-present fields.
 	const presenceCount = new Map<string, number>();
 	for (const entry of group.entries) {
@@ -248,7 +250,7 @@ export function tryH3(group: Group): H3Cluster[] | null {
 	}
 
 	// Pass 2: bucket entries by fingerprint (excluding universal fields).
-	const clusters = new Map<string, { fingerprint: string[]; entries: Entry[] }>();
+	const clusters = new Map<string, FingerprintCluster>();
 	for (const entry of group.entries) {
 		const payload = entry.data[group.discriminator];
 		const keys = isPlainObject(payload) ? Object.keys(payload) : [];
@@ -259,15 +261,27 @@ export function tryH3(group: Group): H3Cluster[] | null {
 		else clusters.set(key, { fingerprint, entries: [entry] });
 	}
 
-	if (clusters.size < 2) return null;
-	const minClusters = 2;
-	const maxClusters = Math.max(minClusters, Math.floor(group.entries.length / H3_MIN_AVG_CLUSTER_SIZE));
-	if (clusters.size > maxClusters) return null;
+	return [...clusters.values()];
+}
 
-	const result: H3Cluster[] = [];
-	for (const { fingerprint, entries } of clusters.values()) {
-		result.push({ fingerprint, fileName: fingerprintFileName(fingerprint), entries });
-	}
+export interface H3Cluster {
+	fingerprint: string[];
+	fileName: string;
+	entries: Entry[];
+	children?: SplitTree;
+}
+
+export function tryH3(group: Group): H3Cluster[] | null {
+	const clusters = clusterByFingerprint(group);
+	if (clusters.length < 2) return null;
+	const maxClusters = Math.max(2, Math.floor(group.entries.length / H3_MIN_AVG_CLUSTER_SIZE));
+	if (clusters.length > maxClusters) return null;
+
+	const result: H3Cluster[] = clusters.map(({ fingerprint, entries }) => ({
+		fingerprint,
+		fileName: fingerprintFileName(fingerprint),
+		entries,
+	}));
 	result.sort((a, b) => b.entries.length - a.entries.length);
 	return result;
 }

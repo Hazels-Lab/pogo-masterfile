@@ -6,6 +6,17 @@ export function kebabCase(camelCase: string): string {
 	return camelCase.replace(/[A-Z]/g, (m) => `-${m.toLowerCase()}`);
 }
 
+// Convert any input casing (camelCase, PascalCase, SCREAMING_SNAKE, kebab-case)
+// to snake_case. Used by Rust emit for module/file names and field names.
+export function snakeCase(input: string): string {
+	return input
+		.replace(/([a-z0-9])([A-Z])/g, "$1_$2")
+		.replace(/[^a-zA-Z0-9]+/g, "_")
+		.toLowerCase()
+		.replace(/_+/g, "_")
+		.replace(/^_|_$/g, "");
+}
+
 export function pascalCase(input: string): string {
 	return input
 		.replace(/([a-z])([A-Z])/g, "$1 $2")

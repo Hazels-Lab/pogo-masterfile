@@ -36,3 +36,6 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 # Local exploration snapshots (fetched on-demand by the generator)
 masterfile.json
 template-ids.json
+
+# Rust build artifacts
+target

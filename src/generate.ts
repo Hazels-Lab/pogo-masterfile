@@ -1,5 +1,6 @@
 import { GAME_MASTER_URL } from "./constants.ts";
 import type { Entry } from "./group.ts";
+import { generateRust } from "./rust/generate.ts";
 import { generateTypeScript } from "./typescript/generate.ts";
 
 async function fetchMasterfile(): Promise<Entry[]> {
@@ -16,8 +17,8 @@ async function main(): Promise<void> {
 	console.log(`Fetched ${entries.length} entries.`);
 
 	await generateTypeScript(entries);
+	await generateRust(entries);
 	// Future: await generateGo(entries);
-	// Future: await generateRust(entries);
 }
 
 main().catch((err) => {

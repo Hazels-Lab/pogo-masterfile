@@ -1,5 +1,24 @@
 import { describe, expect, test } from "bun:test";
-import { aliasSuffix, deriveGroupAliases, groupName, sharedPrefix, stripGroupNameTail } from "./naming.ts";
+import { aliasSuffix, deriveGroupAliases, groupName, sharedPrefix, snakeCase, stripGroupNameTail } from "./naming.ts";
+
+describe("snakeCase", () => {
+	test("converts camelCase", () => {
+		expect(snakeCase("displayStringId")).toBe("display_string_id");
+		expect(snakeCase("pokemonSettings")).toBe("pokemon_settings");
+	});
+
+	test("converts SCREAMING_SNAKE_CASE", () => {
+		expect(snakeCase("BACKGROUND_MODES_SETTINGS")).toBe("background_modes_settings");
+	});
+
+	test("converts PascalCase", () => {
+		expect(snakeCase("FormSettings")).toBe("form_settings");
+	});
+
+	test("collapses repeated separators and trims", () => {
+		expect(snakeCase("__foo__bar__")).toBe("foo_bar");
+	});
+});
 
 describe("groupName", () => {
 	test("PascalCases a camelCase discriminator", () => {
