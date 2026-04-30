@@ -611,20 +611,18 @@ export function emitLibFile(moduleNames: readonly string[], variants: readonly E
 		variantLines.push(`    ${name}(${v.modulePath}::${v.entryTypeName}),`);
 	}
 
-	// Build dispatch arms for the custom Deserialize impl. Non-stubs match on
-	// the inner `data` object's non-templateId key; stubs match on `templateId`.
+	// Build dispatch arms for the custom Deserialize impl. Each arm just
+	// returns `serde_json::from_value(value).map(Self::Variant)` — the
+	// `map_err` to the deserializer's error type happens once at the bottom
+	// of the impl rather than in every arm. Non-stubs match on the inner
+	// `data` object's non-templateId key; stubs match on `templateId` value.
 	const nonStubArms = finalVariants
 		.filter((x) => !x.v.isStub)
-		.map(
-			(x) =>
-				`\t\t\tSome(${JSON.stringify(x.v.discriminator)}) => Ok(Self::${x.finalName}(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),`,
-		)
+		.map((x) => `\t\t\t\t${JSON.stringify(x.v.discriminator)} => serde_json::from_value(value).map(Self::${x.finalName}),`)
 		.join("\n");
 	const stubArms = finalVariants
 		.filter((x) => x.v.isStub)
-		.map(
-			(x) => `\t\t\t\t${JSON.stringify(x.v.discriminator)} => Ok(Self::${x.finalName}(::serde_json::from_value(value).map_err(::serde::de::Error::custom)?)),`,
-		)
+		.map((x) => `\t\t\t\tSome(${JSON.stringify(x.v.discriminator)}) => serde_json::from_value(value).map(Self::${x.finalName}),`)
 		.join("\n");
 
 	const lines: string[] = [
@@ -703,30 +701,29 @@ export function emitLibFile(moduleNames: readonly string[], variants: readonly E
 		"\twhere",
 		"\t\tD: serde::Deserializer<'de>,",
 		"\t{",
+		"\t\tuse serde::de::Error;",
 		"\t\tlet value = serde_json::Value::deserialize(deserializer)?;",
-		"\t\tlet discriminator: Option<String> = value",
+		"\t\tlet discriminator = value",
 		'\t\t\t.get("data")',
 		"\t\t\t.and_then(|d| d.as_object())",
 		'\t\t\t.and_then(|m| m.keys().find(|k| k.as_str() != "templateId"))',
 		"\t\t\t.cloned();",
-		"\t\tmatch discriminator.as_deref() {",
+		"",
+		"\t\tlet result: serde_json::Result<Self> = if let Some(disc) = discriminator.as_deref() {",
+		"\t\t\tmatch disc {",
 		nonStubArms,
-		"\t\t\tNone => {",
-		"\t\t\t\tlet template_id = value",
-		'\t\t\t\t\t.get("templateId")',
-		"\t\t\t\t\t.and_then(|t| t.as_str())",
-		'\t\t\t\t\t.ok_or_else(|| ::serde::de::Error::custom("stub entry missing templateId"))?;',
-		"\t\t\t\tmatch template_id {",
-		stubArms,
-		"\t\t\t\t\tother => Err(::serde::de::Error::custom(format!(",
-		'\t\t\t\t\t\t"unknown stub templateId: {}", other',
-		"\t\t\t\t\t))),",
-		"\t\t\t\t}",
+		'\t\t\t\tother => Err(serde_json::Error::custom(format!("unknown discriminator: {}", other))),',
 		"\t\t\t}",
-		"\t\t\tSome(other) => Err(::serde::de::Error::custom(format!(",
-		'\t\t\t\t"unknown discriminator: {}", other',
-		"\t\t\t))),",
-		"\t\t}",
+		"\t\t} else {",
+		'\t\t\tlet template_id = value.get("templateId").and_then(|t| t.as_str()).map(String::from);',
+		"\t\t\tmatch template_id.as_deref() {",
+		stubArms,
+		'\t\t\t\tSome(other) => Err(serde_json::Error::custom(format!("unknown stub templateId: {}", other))),',
+		'\t\t\t\tNone => Err(serde_json::Error::custom("stub entry missing templateId")),',
+		"\t\t\t}",
+		"\t\t};",
+		"",
+		"\t\tresult.map_err(D::Error::custom)",
 		"\t}",
 		"}",
 		"",
