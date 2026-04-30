@@ -185,10 +185,11 @@ export function emitGroupTypes(group: Group, registry: PromotionRegistry = []): 
 		.header(`Generated from Pokémon GO masterfile — group "${group.discriminator}", ${entryCount} ${entryWord} (structural types).`)
 		.importNamed("../_utils", [WIDEN], true);
 
-	// Cross-group imports come next (Task 9 wires the consumer end of this).
+	// Cross-group imports for promoted ${gName}TemplateID references; resolves to the
+	// sibling group's entries.ts (flat) or entries/index.ts (split).
 	const sortedImports = [...ctx.imports.entries()].filter(([disc]) => disc !== group.discriminator).sort(([a], [b]) => a.localeCompare(b));
 	for (const [disc, names] of sortedImports) {
-		file.importNamed(`../${kebabCase(disc)}/${TYPES_LOWER}`, [...names].sort(), true);
+		file.importNamed(`../${kebabCase(disc)}/${ENTRIES_LOWER}`, [...names].sort(), true);
 	}
 	file.blank();
 
@@ -214,12 +215,6 @@ export function emitGroupTypes(group: Group, registry: PromotionRegistry = []): 
 	file.blank();
 
 	file.exportInterface(xdataName, xdataMembers);
-
-	const ownEntry = registry.find((e) => e.group === group);
-	if (ownEntry) {
-		file.blank();
-		file.exportTypeAlias(ownEntry.aliasName, T.union(...ownEntry.members.map((m) => T.literal(m))));
-	}
 
 	return file.render();
 }

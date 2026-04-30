@@ -403,38 +403,16 @@ describe("emitTopLevelVariants", () => {
 	});
 });
 
-describe("emitGroupTypes — promotion alias declaration", () => {
-	test("appends the promoted alias when the current group is itself a source", () => {
-		const groups = groupEntries(MOCK_MASTERFILE);
-		const registry = buildPromotionRegistry(groups);
-		const typeEffective = groups.get("typeEffective")!;
-		const output = emitGroupTypes(typeEffective, registry);
-		// MOCK_MASTERFILE has typeEffective with templateIds POKEMON_TYPE_BUG / POKEMON_TYPE_DARK.
-		expect(output).toContain("export type PokemonType =");
-		expect(output).toContain(`"POKEMON_TYPE_BUG"`);
-		expect(output).toContain(`"POKEMON_TYPE_DARK"`);
-	});
-
-	test("does not emit an alias for a group that does not qualify", () => {
-		const groups = groupEntries(MOCK_MASTERFILE);
-		const registry = buildPromotionRegistry(groups);
-		const pokemonSettings = groups.get("pokemonSettings")!;
-		const output = emitGroupTypes(pokemonSettings, registry);
-		// pokemonSettings has no shared underscore-aligned prefix → no alias.
-		expect(output).not.toContain("export type Pokemon =");
-	});
-
+describe("emitGroupTypes — promoted TemplateID references", () => {
 	test("backwards compatible: omitting registry still works", () => {
 		const groups = groupEntries(MOCK_MASTERFILE);
 		const typeEffective = groups.get("typeEffective")!;
 		const output = emitGroupTypes(typeEffective);
 		expect(output).toContain("export interface TypeEffective<");
-		expect(output).not.toContain("export type PokemonType =");
 	});
 
 	test("emits an import for a consumer group that references another group's templateIds (exact match)", () => {
-		// Synthesize a fixture: groupA owns POKEMON_TYPE_BUG / POKEMON_TYPE_DARK,
-		// groupB has data containing exactly that union of strings.
+		// groupA owns POKEMON_TYPE_BUG / POKEMON_TYPE_DARK; groupB's data picks both.
 		const groupA: Group = {
 			discriminator: "typeEffective",
 			entries: [
@@ -455,13 +433,12 @@ describe("emitGroupTypes — promotion alias declaration", () => {
 		]);
 		const registry = buildPromotionRegistry(groups);
 		const output = emitGroupTypes(groupB, registry);
-		expect(output).toContain(`import type { PokemonType } from "../type-effective/types";`);
-		expect(output).toContain("pokemonType: PokemonType;");
+		expect(output).toContain(`import type { TypeEffectiveTemplateID } from "../type-effective/entries";`);
+		expect(output).toContain("pokemonType: TypeEffectiveTemplateID;");
 	});
 
 	test("emits an Exclude<> reference and import when consumer is a near-exact subset", () => {
-		// groupA: 4 templateIds with prefix KIND_ (alias "Kind"); groupB references
-		// 3 of 4 (1 missing = 25% — at the default boundary).
+		// groupA: 4 templateIds with prefix KIND_; groupB references 3 of 4 (1 missing = 25%).
 		const groupA: Group = {
 			discriminator: "kindThing",
 			entries: ["KIND_AAA", "KIND_BBB", "KIND_CCC", "KIND_DDD"].map((id) => ({
@@ -483,17 +460,17 @@ describe("emitGroupTypes — promotion alias declaration", () => {
 		]);
 		const registry = buildPromotionRegistry(groups);
 		const output = emitGroupTypes(groupB, registry);
-		expect(output).toContain(`import type { Kind } from "../kind-thing/types";`);
-		expect(output).toContain(`Exclude<Kind, "KIND_DDD">`);
+		expect(output).toContain(`import type { KindThingTemplateID } from "../kind-thing/entries";`);
+		expect(output).toContain(`Exclude<KindThingTemplateID, "KIND_DDD">`);
 	});
 
-	test("does not emit a self-import when the source group references its own promoted alias", () => {
-		// Edge case guard: even if some property of the source group's data widens to
-		// the group's own templateId set, the generator must not produce a self-import.
+	test("does not emit a self-import when the source group's own data references its own templateID set", () => {
+		// Even if some property of the source group's data widens to the group's own
+		// templateId set, the generator must not produce a self-import.
 		const groups = groupEntries(MOCK_MASTERFILE);
 		const registry = buildPromotionRegistry(groups);
 		const typeEffective = groups.get("typeEffective")!;
 		const output = emitGroupTypes(typeEffective, registry);
-		expect(output).not.toContain(`from "../type-effective/types"`);
+		expect(output).not.toContain(`from "../type-effective/entries"`);
 	});
 });

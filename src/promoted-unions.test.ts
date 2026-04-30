@@ -20,7 +20,7 @@ describe("buildPromotionRegistry — eligibility", () => {
 		const groups = makeGroups(group("typeEffective", ["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK"]));
 		const registry = buildPromotionRegistry(groups);
 		expect(registry).toHaveLength(1);
-		expect(registry[0]!.aliasName).toBe("PokemonType");
+		expect(registry[0]!.aliasName).toBe("TypeEffectiveTemplateID");
 		expect(registry[0]!.members).toEqual(["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK"]);
 	});
 
@@ -36,16 +36,16 @@ describe("buildPromotionRegistry — eligibility", () => {
 });
 
 describe("buildPromotionRegistry — naming rule", () => {
-	test("strips trailing underscores and PascalCases the prefix", () => {
+	test("aliasName is groupName(disc) + TemplateID", () => {
 		const groups = makeGroups(
 			group("typeEffective", ["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK"]),
 			group("weatherAffinities", ["WEATHER_AFFINITY_CLEAR", "WEATHER_AFFINITY_RAIN"]),
 			group("combatType", ["COMBAT_POKEMON_TYPE_BUG", "COMBAT_POKEMON_TYPE_DARK"]),
 		);
 		const byDisc = new Map(buildPromotionRegistry(groups).map((e) => [e.group.discriminator, e]));
-		expect(byDisc.get("typeEffective")!.aliasName).toBe("PokemonType");
-		expect(byDisc.get("weatherAffinities")!.aliasName).toBe("WeatherAffinity");
-		expect(byDisc.get("combatType")!.aliasName).toBe("CombatPokemonType");
+		expect(byDisc.get("typeEffective")!.aliasName).toBe("TypeEffectiveTemplateID");
+		expect(byDisc.get("weatherAffinities")!.aliasName).toBe("WeatherAffinitiesTemplateID");
+		expect(byDisc.get("combatType")!.aliasName).toBe("CombatTypeTemplateID");
 	});
 
 	test("members are sorted alphabetically", () => {
@@ -60,43 +60,7 @@ describe("buildPromotionRegistry — naming rule", () => {
 			group("combatType", ["COMBAT_POKEMON_TYPE_BUG", "COMBAT_POKEMON_TYPE_DARK"]),
 		);
 		const names = buildPromotionRegistry(groups).map((e) => e.aliasName);
-		expect(names).toEqual(["CombatPokemonType", "PokemonType", "WeatherAffinity"]);
-	});
-});
-
-describe("buildPromotionRegistry — collision resolution", () => {
-	test("appends 'Id' when alias would collide with an existing group's interface name", () => {
-		// "PokemonType" is the alias derived from prefix POKEMON_TYPE_; the colliding
-		// group's discriminator is "pokemonType" → groupName "PokemonType".
-		const groups = makeGroups(group("typeEffective", ["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK"]), group("pokemonType", ["X_ONE", "X_TWO"]));
-		const byDisc = new Map(buildPromotionRegistry(groups).map((e) => [e.group.discriminator, e]));
-		expect(byDisc.get("typeEffective")!.aliasName).toBe("PokemonTypeId");
-	});
-
-	test("appends 'Id' when alias would collide with another group's ${gName}Data symbol", () => {
-		// Prefix POKEMON_TYPE_DATA_ → alias "PokemonTypeData"; this collides with the
-		// "pokemonType" group's emitted ${gName}Data interface.
-		const groups = makeGroups(group("dataGroup", ["POKEMON_TYPE_DATA_A", "POKEMON_TYPE_DATA_B"]), group("pokemonType", ["X_ONE", "X_TWO"]));
-		const byDisc = new Map(buildPromotionRegistry(groups).map((e) => [e.group.discriminator, e]));
-		expect(byDisc.get("dataGroup")!.aliasName).toBe("PokemonTypeDataId");
-	});
-
-	test("appends 'Id' when alias would collide with another group's ${gName}Type symbol", () => {
-		// Prefix POKEMON_TYPE_TYPE_ → alias "PokemonTypeType"; this collides with the
-		// "pokemonType" group's emitted ${gName}Type alias.
-		const groups = makeGroups(group("typeGroup", ["POKEMON_TYPE_TYPE_A", "POKEMON_TYPE_TYPE_B"]), group("pokemonType", ["X_ONE", "X_TWO"]));
-		const byDisc = new Map(buildPromotionRegistry(groups).map((e) => [e.group.discriminator, e]));
-		expect(byDisc.get("typeGroup")!.aliasName).toBe("PokemonTypeTypeId");
-	});
-
-	test("appends pascalCase(disc) when two registry entries derive the same alias", () => {
-		// Defensive: two groups with the same prefix → same alias; both get suffixed
-		// with their pascal-cased discriminator.
-		const groups = makeGroups(group("alphaTypes", ["X_ONE", "X_TWO"]), group("betaTypes", ["X_THREE", "X_FOUR"]));
-		const reg = buildPromotionRegistry(groups);
-		const byDisc = new Map(reg.map((e) => [e.group.discriminator, e]));
-		expect(byDisc.get("alphaTypes")!.aliasName).toBe("XAlphaTypes");
-		expect(byDisc.get("betaTypes")!.aliasName).toBe("XBetaTypes");
+		expect(names).toEqual(["CombatTypeTemplateID", "TypeEffectiveTemplateID", "WeatherAffinitiesTemplateID"]);
 	});
 });
 
@@ -109,7 +73,7 @@ describe("tryPromote — exact match", () => {
 		const result = tryPromote(inline, registry, null);
 		expect(result).toEqual({
 			kind: "ref",
-			aliasName: "PokemonType",
+			aliasName: "TypeEffectiveTemplateID",
 			sourceGroup: registry[0]!.group,
 		});
 	});
@@ -143,7 +107,7 @@ describe("tryPromote — Exclude path", () => {
 		const result = tryPromote(inline, registry, null);
 		expect(result).toEqual({
 			kind: "exclude",
-			aliasName: "K",
+			aliasName: "K8TemplateID",
 			missing: ["K_GGG", "K_HHH"],
 			sourceGroup: registry[0]!.group,
 		});
@@ -172,23 +136,20 @@ describe("tryPromote — Exclude path", () => {
 describe("tryPromote — multi-match resolution", () => {
 	// Two groups whose member sets overlap. Inline = {X_A, X_B} matches both.
 	// Smallest containing group wins; alphabetical aliasName tiebreak.
-	// Both groups derive aliasName "X" from prefix "X_"; alias-vs-alias collision
-	// resolution (Task 3) suffixes each with pascalCase(disc), giving "XAlpha" and
-	// "XAaSuper".
 	const groups = makeGroups(group("alpha", ["X_A", "X_B"]), group("aaSuper", ["X_A", "X_B", "X_C", "X_D"]));
 	const registry = build(groups);
 
 	test("smallest containing group wins on exact match", () => {
 		const inline = new Set(["X_A", "X_B"]);
 		const result = tryPromote(inline, registry, null);
-		expect(result).toMatchObject({ kind: "ref", aliasName: "XAlpha" });
+		expect(result).toMatchObject({ kind: "ref", aliasName: "AlphaTemplateID" });
 		expect((result as { sourceGroup: Group }).sourceGroup.discriminator).toBe("alpha");
 	});
 
 	test("falls back to the larger group when the smaller is not a containing set", () => {
 		const inline = new Set(["X_A", "X_B", "X_C", "X_D"]);
 		const result = tryPromote(inline, registry, null);
-		expect(result).toMatchObject({ kind: "ref", aliasName: "XAaSuper" });
+		expect(result).toMatchObject({ kind: "ref", aliasName: "AaSuperTemplateID" });
 		expect((result as { sourceGroup: Group }).sourceGroup.discriminator).toBe("aaSuper");
 	});
 });
@@ -203,23 +164,21 @@ describe("inferredToType — promotion via ctx", () => {
 	const groups = makeGroups(group("typeEffective", ["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK", "POKEMON_TYPE_FIRE"]));
 	const registry = build(groups);
 
-	test("rewrites an exact-match string union to a type reference", () => {
+	test("rewrites an exact-match string union to a TemplateID reference", () => {
 		const ctx: PromotionContext = { registry, currentGroup: null, imports: new Map() };
 		const node = inferredToType({ kind: "string", literals: ["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK", "POKEMON_TYPE_FIRE"] }, ctx);
-		expect(printNode(node)).toBe("PokemonType");
-		expect(ctx.imports.get("typeEffective")).toEqual(new Set(["PokemonType"]));
+		expect(printNode(node)).toBe("TypeEffectiveTemplateID");
+		expect(ctx.imports.get("typeEffective")).toEqual(new Set(["TypeEffectiveTemplateID"]));
 	});
 
 	test("rewrites a near-exact union to an Exclude<> expression", () => {
 		// 8-entry registry: 6 inline = 2 missing = 25% (at the default boundary).
-		// Note: discriminator "foo" → groupName "Foo" collides with the alias derived
-		// from prefix "FOO_", so collision resolution appends "Id" → "FooId".
 		const fooGroups = makeGroups(group("foo", ["FOO_A", "FOO_B", "FOO_C", "FOO_D", "FOO_E", "FOO_F", "FOO_G", "FOO_H"]));
 		const fooRegistry = build(fooGroups);
 		const ctx: PromotionContext = { registry: fooRegistry, currentGroup: null, imports: new Map() };
 		const node = inferredToType({ kind: "string", literals: ["FOO_A", "FOO_B", "FOO_C", "FOO_D", "FOO_E", "FOO_F"] }, ctx);
-		expect(printNode(node)).toBe(`Exclude<FooId, "FOO_G" | "FOO_H">`);
-		expect(ctx.imports.get("foo")).toEqual(new Set(["FooId"]));
+		expect(printNode(node)).toBe(`Exclude<FooTemplateID, "FOO_G" | "FOO_H">`);
+		expect(ctx.imports.get("foo")).toEqual(new Set(["FooTemplateID"]));
 	});
 
 	test("leaves the union inline when missing fraction exceeds the delta ratio", () => {
@@ -235,13 +194,13 @@ describe("inferredToType — promotion via ctx", () => {
 		const node = inferredToType({ kind: "string", literals: ["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK", "POKEMON_TYPE_FIRE"] });
 		// No ctx → no promotion, regardless of registry.
 		expect(printNode(node)).toContain(`"POKEMON_TYPE_BUG"`);
-		expect(printNode(node)).not.toBe("PokemonType");
+		expect(printNode(node)).not.toBe("TypeEffectiveTemplateID");
 	});
 
 	test("does not promote when currentGroup is the source group", () => {
 		const ctx: PromotionContext = { registry, currentGroup: registry[0]!.group, imports: new Map() };
 		const node = inferredToType({ kind: "string", literals: ["POKEMON_TYPE_BUG", "POKEMON_TYPE_DARK", "POKEMON_TYPE_FIRE"] }, ctx);
-		expect(printNode(node)).not.toBe("PokemonType");
+		expect(printNode(node)).not.toBe("TypeEffectiveTemplateID");
 		expect(ctx.imports.size).toBe(0);
 	});
 });
