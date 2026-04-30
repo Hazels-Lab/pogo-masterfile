@@ -19,7 +19,7 @@ import { clusterByFingerprint } from "../split.ts";
 // per-position type variation and produced fixed-length arrays even when the
 // observed lengths varied across positions, which then failed to deserialize
 // against real masterfile data.
-function mergeTypes(types: readonly InferredType[]): InferredType {
+function mergeTypes(types: InferredType[]): InferredType {
 	if (types.length === 0) return { kind: "union", variants: [] };
 	if (types.length === 1) return types[0]!;
 
