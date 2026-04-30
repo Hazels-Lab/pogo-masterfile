@@ -3,10 +3,17 @@
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(untagged)]
+pub enum LocationCardValue {
+    Uint(u64),
+    String(String),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct Misc {
     pub image_url: String,
-    pub location_card: serde_json::Value,
+    pub location_card: LocationCardValue,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -23,7 +30,7 @@ pub struct CardTypeVfxAddress {
 pub struct CardType {
     pub card_type: String,
     pub image_url: String,
-    pub location_card: serde_json::Value,
+    pub location_card: LocationCardValue,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

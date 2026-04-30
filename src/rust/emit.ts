@@ -203,16 +203,26 @@ function rustType(t: InferredType, fieldName: string, pool: StructPool): string 
 		case "object":
 			return emitOrReuseStruct(pascalCase(fieldName), t, pool);
 		case "union": {
-			// Rust idiom: T | null collapses to Option<T>. Other heterogeneous
-			// unions can't be cleanly modeled without inventing names; punt.
-			if (t.variants.length === 2) {
-				const nullIdx = t.variants.findIndex((v) => v.kind === "null");
-				if (nullIdx !== -1) {
-					const other = t.variants[1 - nullIdx];
-					if (other) return `Option<${rustType(other, fieldName, pool)}>`;
-				}
+			// Strip nulls → Option<...>. The remaining non-null variants drive
+			// the actual type:
+			//   - 0 non-null  : impossible per inference; fall back.
+			//   - 1 non-null  : just T (or Option<T> if null was present).
+			//   - 2+ non-null : emit an untagged enum with one variant per
+			//                   distinct kind. Serde dispatches by trying
+			//                   each variant; non-overlapping primitive kinds
+			//                   (string vs number vs object) deserialize
+			//                   unambiguously.
+			const nullVariant = t.variants.find((v) => v.kind === "null");
+			const nonNull = t.variants.filter((v) => v.kind !== "null");
+			if (nonNull.length === 0) return "serde_json::Value";
+			if (nonNull.length === 1) {
+				const first = nonNull[0];
+				if (!first) return "serde_json::Value";
+				const inner = rustType(first, fieldName, pool);
+				return nullVariant ? `Option<${inner}>` : inner;
 			}
-			return "serde_json::Value";
+			const enumName = emitUnionEnum(`${pascalCase(fieldName)}Value`, nonNull, fieldName, pool);
+			return nullVariant ? `Option<${enumName}>` : enumName;
 		}
 	}
 }
@@ -236,6 +246,75 @@ function structBody(name: string, type: ObjectType, pool: StructPool): { body: s
 	}
 	lines.push("}");
 	return { body: lines.join("\n"), shape: shapeParts.sort().join(",") };
+}
+
+// Name a Rust enum variant for an InferredType in an untagged union. The
+// variant name is the type's "kind label" (e.g., StringType → "String",
+// NumberType{numericKind: "uint"} → "Uint"). Named to be compatible with
+// serde's untagged discrimination — the names are descriptive only, not
+// used by serde for dispatch.
+function unionVariantName(t: InferredType): string {
+	switch (t.kind) {
+		case "string":
+		case "templateIdReference":
+		case "templateIdSlice":
+			return "String";
+		case "number":
+			return t.numericKind === "uint" ? "Uint" : t.numericKind === "int" ? "Int" : "Float";
+		case "boolean":
+			return "Bool";
+		case "null":
+			return "Null";
+		case "object":
+			return "Object";
+		case "array":
+			return "Array";
+		case "tuple":
+			return "Tuple";
+		case "union":
+			return "Union";
+	}
+}
+
+// Emit (or reuse, by structural shape) a `#[serde(untagged)]` enum for a
+// heterogeneous field-level union. The enum name is derived from the field
+// name + "Value" suffix (e.g., `form: number | string` → `FormValue`),
+// matching the parent struct's namespace. Same dedup rules as nested
+// structs: identical-shape unions reuse one definition, name collisions
+// get V2/V3 suffixes.
+function emitUnionEnum(candidateName: string, variants: readonly InferredType[], fieldName: string, pool: StructPool): string {
+	const usedVariantNames = new Set<string>();
+	const lines: { name: string; ty: string }[] = [];
+	for (const v of variants) {
+		const base = unionVariantName(v);
+		let name = base;
+		let suffix = 2;
+		while (usedVariantNames.has(name)) name = `${base}V${suffix++}`;
+		usedVariantNames.add(name);
+		lines.push({ name, ty: rustType(v, fieldName, pool) });
+	}
+	const shape = `enum:${lines
+		.map((l) => `${l.name}(${l.ty})`)
+		.sort()
+		.join("|")}`;
+	const existing = pool.byShape.get(shape);
+	if (existing) return existing;
+
+	let finalName = candidateName;
+	let suffix = 2;
+	while (pool.byName.has(finalName)) finalName = `${candidateName}V${suffix++}`;
+	pool.byName.add(finalName);
+	pool.byShape.set(shape, finalName);
+
+	const body = [
+		"#[derive(Debug, Clone, Serialize, Deserialize)]",
+		"#[serde(untagged)]",
+		`pub enum ${finalName} {`,
+		...lines.map((l) => `    ${l.name}(${l.ty}),`),
+		"}",
+	].join("\n");
+	pool.deferred.push(body);
+	return finalName;
 }
 
 // emitOrReuseStruct: shape-based deduplication. If an identically-shaped

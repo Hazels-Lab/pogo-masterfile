@@ -30,12 +30,19 @@ pub struct ASettingsV3 {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(untagged)]
+pub enum GroupValue {
+    Uint(u64),
+    String(String),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct BreadMoveLevelSettings {
     pub a_settings: (ASettings, ASettingsV2, ASettingsV3),
     pub b_settings: (ASettingsV2, ASettingsV2, ASettingsV3),
     pub c_settings: (ASettingsV2, ASettingsV2, ASettingsV3),
-    pub group: serde_json::Value,
+    pub group: GroupValue,
 }
 
 crate::masterfile_entry!(BreadMoveLevelSettingsEntry, BreadMoveLevelSettingsEntryData, bread_move_level_settings: BreadMoveLevelSettings);

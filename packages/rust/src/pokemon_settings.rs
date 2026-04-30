@@ -94,6 +94,13 @@ pub struct ExclusiveKeyItem {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(untagged)]
+pub enum FormValue {
+    Uint(u64),
+    String(String),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct LocationCardSettings {
     pub base_pokemon_location_card: String,
@@ -296,7 +303,7 @@ pub struct PokemonSettings {
     pub evolution_pips: Option<u64>,
     pub exclusive_key_item: Option<ExclusiveKeyItem>,
     pub family_id: String,
-    pub form: Option<serde_json::Value>,
+    pub form: Option<FormValue>,
     pub form_change: Option<Vec<FormChange>>,
     pub height_std_dev: f64,
     pub ibfc: Ibfc,

@@ -3,6 +3,13 @@
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(untagged)]
+pub enum BreadModeValue {
+    Uint(u64),
+    String(String),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct Camera {
     pub cylinder_ground_m: Option<f64>,
@@ -83,7 +90,7 @@ pub struct SizeSettings {
 pub struct BreadOverrides {
     pub average_height_m: Option<u64>,
     pub average_weight_kg: Option<f64>,
-    pub bread_mode: Option<serde_json::Value>,
+    pub bread_mode: Option<BreadModeValue>,
     pub camera: Option<Camera>,
     pub catch_override_settings: Option<CatchOverrideSettings>,
     pub max_battle_trainer_visual_settings: Option<MaxBattleTrainerVisualSettings>,
@@ -135,7 +142,7 @@ pub struct TempEvoOverrides {
 #[serde(rename_all = "camelCase")]
 pub struct PokemonExtendedSettings {
     pub bread_overrides: Option<Vec<BreadOverrides>>,
-    pub form: Option<serde_json::Value>,
+    pub form: Option<BreadModeValue>,
     pub size_settings: SizeSettingsV2,
     pub temp_evo_overrides: Option<Vec<TempEvoOverrides>>,
     pub unique_id: String,
