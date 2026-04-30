@@ -30,13 +30,8 @@ pub struct MinRatingRequired {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct RankLevelV2 {
-    pub rank_level: u64,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct RankLevelV3 {
-    pub additional_wins_required: u64,
+    pub additional_total_battles_required: Option<u64>,
+    pub additional_wins_required: Option<u64>,
     pub rank_level: u64,
 }
 
@@ -44,7 +39,7 @@ pub struct RankLevelV3 {
 #[serde(rename_all = "camelCase")]
 pub struct Misc {
     pub min_rank_to_display_rating: u64,
-    pub rank_level: (RankLevelV2, RequiredForRewards, RankLevelV3, RankLevelV3, RankLevelV3, RankLevelV3, RankLevelV3, RankLevelV3, RankLevelV3, RankLevelV3),
+    pub rank_level: Vec<RankLevelV2>,
     pub required_for_rewards: RequiredForRewards,
 }
 

@@ -22,14 +22,14 @@ pub struct Reward {
 #[serde(rename_all = "camelCase")]
 pub struct Misc {
     pub rank_level: u64,
-    pub reward: [Reward; 5],
+    pub reward: Vec<Reward>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct RewardTrack {
     pub rank_level: u64,
-    pub reward: [Reward; 5],
+    pub reward: Vec<Reward>,
     pub reward_track: String,
 }
 

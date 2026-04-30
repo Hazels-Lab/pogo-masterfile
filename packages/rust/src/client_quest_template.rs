@@ -74,7 +74,7 @@ pub struct SubQuests {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct MultiPart {
-    pub sub_quests: [SubQuests; 4],
+    pub sub_quests: Vec<SubQuests>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -127,7 +127,7 @@ pub struct Quest {
 #[serde(rename_all = "camelCase")]
 pub struct QuestDisplay {
     pub description: Option<String>,
-    pub subquest_displays: Option<[SubQuests; 4]>,
+    pub subquest_displays: Option<Vec<SubQuests>>,
     pub title: String,
 }
 

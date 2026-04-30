@@ -222,16 +222,29 @@ function inferArrayType(values: readonly unknown[][]): TupleType | ArrayType {
 		const allItems = values.flat();
 		const tupleNumericKind =
 			allItems.length > 0 && allItems.every((value): value is number => typeof value === "number") ? inferNumericKind(allItems) : undefined;
-		return {
-			kind: "tuple",
-			items: Array.from({ length: firstLength }, (_, index) => {
-				const item = inferJsonTypes(values.map((value) => value[index]));
-				if (tupleNumericKind && item.kind === "number") {
-					return { ...item, numericKind: tupleNumericKind };
-				}
-				return item;
-			}),
-		};
+		const positions = Array.from({ length: firstLength }, (_, index) => {
+			const item = inferJsonTypes(values.map((value) => value[index]));
+			if (tupleNumericKind && item.kind === "number") {
+				return { ...item, numericKind: tupleNumericKind };
+			}
+			return item;
+		});
+
+		// When every position is an object, prefer an Array whose element is
+		// the merged object schema across all positions. Per-position
+		// inference produces a tuple of N distinct ObjectTypes (since
+		// real-world arrays of records typically have slight optional-field
+		// variation per index), which downstream emitters then can't model
+		// usefully — Rust's std caps tuple traits at 12-arity, so a 45-tuple
+		// of mixed ObjectTypes falls back to `Vec<serde_json::Value>`,
+		// erasing the schema entirely. Merging via `inferJsonTypes` collapses
+		// the per-index variation into one ObjectType with optional fields
+		// where the variation lived.
+		if (firstLength > 0 && positions.every((p) => p.kind === "object")) {
+			return { kind: "array", element: inferJsonTypes(allItems) };
+		}
+
+		return { kind: "tuple", items: positions };
 	}
 
 	return {

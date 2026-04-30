@@ -94,7 +94,7 @@ pub struct CombatLeague {
     pub pokemon_condition: Vec<PokemonCondition>,
     pub pokemon_count: u64,
     pub title: String,
-    pub unlock_condition: Option<[UnlockCondition; 1]>,
+    pub unlock_condition: Option<Vec<UnlockCondition>>,
 }
 
 crate::masterfile_entry!(CombatLeagueEntry, CombatLeagueEntryData, combat_league: CombatLeague);

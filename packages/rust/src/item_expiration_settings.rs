@@ -27,7 +27,7 @@ pub struct LootItem {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct ConsolationItemsV2 {
-    pub loot_item: [LootItem; 1],
+    pub loot_item: Vec<LootItem>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -48,7 +48,7 @@ pub struct EnabledTimePeriods {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct ItemEnablementSettings {
-    pub enabled_time_periods: [EnabledTimePeriods; 2],
+    pub enabled_time_periods: Vec<EnabledTimePeriods>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

@@ -24,7 +24,7 @@ pub struct Avatar {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct CombatNpcTrainer {
-    pub available_pokemon: [AvailablePokemon; 3],
+    pub available_pokemon: Vec<AvailablePokemon>,
     pub avatar: Avatar,
     pub backdrop_image_bundle: String,
     pub combat_league_template_id: String,

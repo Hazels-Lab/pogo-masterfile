@@ -28,9 +28,9 @@ pub struct EventPassTrackUpgradeDescriptions {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct EventPassDisplaySettings {
-    pub bonus_boxes: [BonusBoxes; 3],
+    pub bonus_boxes: Vec<BonusBoxes>,
     pub event_pass_title_key: String,
-    pub event_pass_track_upgrade_descriptions: [EventPassTrackUpgradeDescriptions; 1],
+    pub event_pass_track_upgrade_descriptions: Vec<EventPassTrackUpgradeDescriptions>,
     pub header_icon_url: String,
     pub premium_reward_banner_bottom: String,
     pub premium_reward_banner_image_url: String,
@@ -44,14 +44,7 @@ pub struct EventPassDisplaySettings {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct TrackConditions {
-    pub track: String,
-    pub track_title_key: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct TrackConditionsV2 {
-    pub badge: String,
+    pub badge: Option<String>,
     pub track: String,
     pub track_title_key: String,
 }
@@ -66,7 +59,7 @@ pub struct EventPassSettings {
     pub max_tier_level: u64,
     pub points_item_id: String,
     pub prefix: String,
-    pub track_conditions: (TrackConditions, TrackConditionsV2),
+    pub track_conditions: Vec<TrackConditions>,
 }
 
 crate::masterfile_entry!(EventPassSettingsEntry, EventPassSettingsEntryData, event_pass_settings: EventPassSettings);
