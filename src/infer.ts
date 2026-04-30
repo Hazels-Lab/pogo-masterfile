@@ -1,4 +1,4 @@
-import { isJsonObject } from "./helpers";
+import { isJsonObject } from "./helpers.ts";
 
 export type NumericKind = "uint" | "int" | "float";
 

@@ -1,11 +1,11 @@
 /** biome-ignore-all lint/suspicious/noTemplateCurlyInString: valid type generating tests */
 
 import { describe, expect, test } from "bun:test";
+import { MOCK_MASTERFILE } from "../fixtures.ts";
+import type { Group } from "../group.ts";
+import { groupEntries } from "../group.ts";
+import { kebabCase } from "../naming.ts";
 import { emitEntriesBarrel, emitEntriesFlat, emitEntryFile, emitGroupTypes, emitSingletonsFile, emitTopLevelVariants, emitTypesFile } from "./emit.ts";
-import { MOCK_MASTERFILE } from "./fixtures.ts";
-import type { Group } from "./group.ts";
-import { groupEntries } from "./group.ts";
-import { kebabCase } from "./naming.ts";
 import { buildPromotionRegistry } from "./promoted-unions.ts";
 
 describe("emitSingletonsFile", () => {

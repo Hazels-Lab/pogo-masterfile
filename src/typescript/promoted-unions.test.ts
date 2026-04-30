@@ -1,8 +1,9 @@
 import { describe, expect, test } from "bun:test";
 import ts from "typescript";
+import type { Group } from "../group.ts";
+import { type PromotionContext, tryPromote } from "../promoted-unions.ts";
 import { inferredToType } from "./builder.ts";
-import type { Group } from "./group.ts";
-import { buildPromotionRegistry as build, buildPromotionRegistry, type PromotionContext, tryPromote } from "./promoted-unions.ts";
+import { buildPromotionRegistry as build, buildPromotionRegistry } from "./promoted-unions.ts";
 
 function group(disc: string, ids: string[]): Group {
 	return {

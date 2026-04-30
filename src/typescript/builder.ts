@@ -1,8 +1,8 @@
 // AST-based file builder for emitting TypeScript declaration files.
 import ts from "typescript";
+import type { InferredType } from "../infer.ts";
+import { type PromotionContext, recordImport, tryPromote } from "../promoted-unions.ts";
 import { TEMPLATE_GENERIC } from "./constants.ts";
-import type { InferredType } from "./infer.ts";
-import { type PromotionContext, recordImport, tryPromote } from "./promoted-unions.ts";
 
 type Modifier = "export" | "default" | "declare" | "async" | "readonly" | "private" | "protected" | "public" | "static" | "abstract" | "override";
 

@@ -1,4 +1,12 @@
 import ts from "typescript";
+import type { Entry, Group } from "../group.ts";
+import { isJsonObject } from "../helpers.ts";
+import type { InferredType } from "../infer.ts";
+import { inferJsonType, inferJsonTypes, widenType } from "../infer.ts";
+import type { InvariantTree } from "../invariants.ts";
+import { detectInvariants, invariantsToInferredType, stripInvariantsFromValue, stripInvariantsFromWidened } from "../invariants.ts";
+import { aliasSuffix, deriveGroupAliases, groupName, kebabCase, pascalCase } from "../naming.ts";
+import type { PromotionContext, PromotionRegistry } from "../promoted-unions.ts";
 import { AstFileBuilder, inferredToType, N, T } from "./builder.ts";
 import {
 	BARREL_FILE,
@@ -14,14 +22,6 @@ import {
 	TYPES_LOWER,
 	WIDEN,
 } from "./constants.ts";
-import type { Entry, Group } from "./group.ts";
-import { isJsonObject } from "./helpers.ts";
-import type { InferredType } from "./infer.ts";
-import { inferJsonType, inferJsonTypes, widenType } from "./infer.ts";
-import type { InvariantTree } from "./invariants.ts";
-import { detectInvariants, invariantsToInferredType, stripInvariantsFromValue, stripInvariantsFromWidened } from "./invariants.ts";
-import { aliasSuffix, deriveGroupAliases, groupName, kebabCase, pascalCase } from "./naming.ts";
-import type { PromotionContext, PromotionRegistry } from "./promoted-unions.ts";
 
 // Build `${gName}${suffix}` variant alias declarations for a list of entries (sorted by templateId).
 // Returns the AST statements and the type names emitted, for use in barrel unions.

@@ -1,6 +1,14 @@
-import { PROMOTION_EXCLUDE_DELTA_RATIO, TEMPLATE_GENERIC } from "./constants.ts";
+import { PROMOTION_EXCLUDE_DELTA_RATIO } from "./constants.ts";
 import type { Group } from "./group.ts";
-import { groupName, sharedPrefix } from "./naming.ts";
+
+// Generic promotion logic: given a registry of "named subsets of templateIds"
+// (typically one entry per multi-entry group), decide whether a literal union
+// of templateIds can be rewritten as a reference to a registered alias.
+//
+// `aliasName` is opaque to this module — each language emitter populates it
+// with its own naming convention (TS uses `${groupName}TemplateID`; Go/Rust
+// would use their own). The algorithm only uses it as an identifier to pass
+// through to PromotionResult.
 
 export interface PromotionRegistryEntry {
 	group: Group;
@@ -10,20 +18,6 @@ export interface PromotionRegistryEntry {
 }
 
 export type PromotionRegistry = readonly PromotionRegistryEntry[];
-
-export function buildPromotionRegistry(groups: Map<string, Group>): PromotionRegistry {
-	const entries: PromotionRegistryEntry[] = [];
-	for (const group of groups.values()) {
-		if (group.entries.length < 2) continue;
-		const ids = group.entries.map((e) => e.templateId);
-		if (sharedPrefix(ids) === "") continue;
-		const aliasName = `${groupName(group.discriminator)}${TEMPLATE_GENERIC}`;
-		const members = [...ids].sort((a, b) => a.localeCompare(b));
-		entries.push({ group, aliasName, members, memberSet: new Set(members) });
-	}
-	entries.sort((a, b) => a.aliasName.localeCompare(b.aliasName));
-	return entries;
-}
 
 export type PromotionResult =
 	| { kind: "ref"; aliasName: string; sourceGroup: Group }
