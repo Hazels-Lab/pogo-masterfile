@@ -2,7 +2,14 @@ import { join } from "node:path";
 import { type Entry, type Group, groupEntries } from "../group.ts";
 import { pascalCase, snakeCase } from "../naming.ts";
 import { writeOutput } from "../write.ts";
-import { type EntryVariant, emitGroupModule, emitMasterfileFile, emitSingletonsModule } from "./emit.ts";
+import {
+	type EntryVariant,
+	emitGroupModule,
+	emitGroupTemplateIdsFile,
+	emitMasterfileFile,
+	emitSingletonsModule,
+	emitSingletonsTemplateIdsFile,
+} from "./emit.ts";
 
 const OUT_DIR = join(import.meta.dir, "..", "..", "packages", "go");
 const SINGLETONS_FILE = "singletons";
@@ -40,6 +47,7 @@ export async function generateGo(entries: Entry[]): Promise<void> {
 
 		const fileName = snakeCase(group.discriminator);
 		files.set(`${fileName}.go`, emitGroupModule(group));
+		files.set(`${fileName}_template_ids.go`, emitGroupTemplateIdsFile(group));
 		enumVariants.push({
 			variantName: baseName,
 			entryTypeName,
@@ -51,12 +59,11 @@ export async function generateGo(entries: Entry[]): Promise<void> {
 
 	if (singletons.length > 0) {
 		files.set(`${SINGLETONS_FILE}.go`, emitSingletonsModule(singletons));
+		files.set(`${SINGLETONS_FILE}_template_ids.go`, emitSingletonsTemplateIdsFile(singletons));
 	}
 
 	files.set("masterfile.go", emitMasterfileFile(enumVariants));
 
-	// Hand-written files that share the package directory with generated `.go`
-	// files. writeOutput would wipe them otherwise.
 	const preserve = ["go.mod", "go.sum", "doc.go", "README.md", "LICENSE", "CHANGELOG.md", "masterfile_test.go", "examples/parse/main.go"];
 
 	await writeOutput(files, OUT_DIR, { preserve });
