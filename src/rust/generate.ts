@@ -2,7 +2,16 @@ import { join } from "node:path";
 import { type Entry, type Group, groupEntries } from "../group.ts";
 import { pascalCase, snakeCase } from "../naming.ts";
 import { writeOutput } from "../write.ts";
-import { type EntryVariant, emitGroupModule, emitLibFile, emitSingletonsModule } from "./emit.ts";
+import {
+	type EntryVariant,
+	emitGroupModFile,
+	emitGroupTemplateIdsFile,
+	emitGroupTypesFile,
+	emitLibFile,
+	emitSingletonsModFile,
+	emitSingletonsTemplateIdsFile,
+	emitSingletonsTypesFile,
+} from "./emit.ts";
 
 const OUT_DIR = join(import.meta.dir, "..", "..", "packages", "rust", "src");
 const SINGLETONS_MODULE = "singletons";
@@ -42,7 +51,9 @@ export async function generateRust(entries: Entry[]): Promise<void> {
 
 		const moduleName = snakeCase(group.discriminator);
 		moduleNames.push(moduleName);
-		files.set(`${moduleName}.rs`, emitGroupModule(group));
+		files.set(`${moduleName}/mod.rs`, emitGroupModFile(group));
+		files.set(`${moduleName}/types.rs`, emitGroupTypesFile(group));
+		files.set(`${moduleName}/template_ids.rs`, emitGroupTemplateIdsFile(group));
 		enumVariants.push({
 			variantName: baseName,
 			modulePath: moduleName,
@@ -55,11 +66,13 @@ export async function generateRust(entries: Entry[]): Promise<void> {
 
 	if (singletons.length > 0) {
 		moduleNames.push(SINGLETONS_MODULE);
-		files.set(`${SINGLETONS_MODULE}.rs`, emitSingletonsModule(singletons));
+		files.set(`${SINGLETONS_MODULE}/mod.rs`, emitSingletonsModFile());
+		files.set(`${SINGLETONS_MODULE}/types.rs`, emitSingletonsTypesFile(singletons));
+		files.set(`${SINGLETONS_MODULE}/template_ids.rs`, emitSingletonsTemplateIdsFile(singletons));
 	}
 
 	files.set("lib.rs", emitLibFile(moduleNames, enumVariants));
 
 	await writeOutput(files, OUT_DIR);
-	console.log(`[rust] wrote ${files.size} files to ${OUT_DIR} (${singletons.length} singletons folded into ${SINGLETONS_MODULE}.rs).`);
+	console.log(`[rust] wrote ${files.size} files to ${OUT_DIR} (${singletons.length} singletons folded into ${SINGLETONS_MODULE}/).`);
 }

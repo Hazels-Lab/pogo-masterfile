@@ -512,9 +512,6 @@ export function emitGroupTypesFile(group: Group): string {
 	return file([SERDE_IMPORT, ...pool.deferred, enumBlock, entryWrapper(baseName, snakeName)]);
 }
 
-// Deprecated alias — kept until generate.ts is updated in Task 9.
-export const emitGroupModule = emitGroupTypesFile;
-
 // Body of <group>/template_ids.rs — a unit-variant enum mapping
 // PascalCase'd templateIds to their string literals via serde rename.
 // AllVariants/AsStr/FromStrEnum derives provide ALL/SIZE/as_str/Display
@@ -607,8 +604,6 @@ ${variantBlock}
 `;
 }
 
-// Deprecated alias — kept until generate.ts is updated in Task 9.
-export const emitSingletonsModule = emitSingletonsTypesFile;
 
 // Macros invoked by every generated module to define the Entry/EntryData
 // wrapper pair that mirrors the masterfile JSON shape. Exported at crate root
