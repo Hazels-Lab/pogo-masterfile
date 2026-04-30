@@ -61,7 +61,7 @@ pub struct CombatLeaguePokemonCondition {
     pub pokemon_caught_timestamp: Option<CombatLeaguePokemonConditionPokemonCaughtTimestamp>,
     pub pokemon_level_range: Option<CombatLeaguePokemonConditionPokemonLevelRange>,
     pub pokemon_white_list: Option<CombatLeaguePokemonConditionPokemonWhiteList>,
-    pub type: String,
+    pub r#type: String,
     pub with_pokemon_cp_limit: Option<CombatLeaguePokemonConditionWithPokemonCpLimit>,
     pub with_pokemon_type: Option<CombatLeaguePokemonConditionWithPokemonType>,
 }
@@ -77,7 +77,7 @@ pub struct CombatLeagueUnlockConditionWithPokemonCpLimit {
 #[serde(rename_all = "camelCase")]
 pub struct CombatLeagueUnlockCondition {
     pub min_pokemon_count: u64,
-    pub type: String,
+    pub r#type: String,
     pub with_pokemon_cp_limit: Option<CombatLeagueUnlockConditionWithPokemonCpLimit>,
 }
 

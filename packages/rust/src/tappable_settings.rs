@@ -28,7 +28,7 @@ pub struct TappableSettingsAvgTappablesInViewBuddyFovDegressMovementRespawnThres
     pub movement_respawn_threshold_meters: u64,
     pub remove_when_tapped: bool,
     pub spawn_angle_degrees: u64,
-    pub type: String,
+    pub r#type: String,
     pub visible_radius_meters: u64,
 }
 

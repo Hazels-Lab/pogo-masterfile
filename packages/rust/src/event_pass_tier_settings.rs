@@ -47,7 +47,7 @@ pub struct EventPassTierSettingsMinPointsRequiredRewardsRewards {
     pub item: Option<EventPassTierSettingsMinPointsRequiredRewardsRewardsItem>,
     pub pokemon_encounter: Option<EventPassTierSettingsMinPointsRequiredRewardsRewardsPokemonEncounter>,
     pub stardust: Option<u64>,
-    pub type: String,
+    pub r#type: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -83,7 +83,7 @@ pub struct EventPassTierSettingsRewardsRewards {
     pub player_attribute: Option<EventPassTierSettingsRewardsRewardsPlayerAttribute>,
     pub pokemon_encounter: Option<EventPassTierSettingsRewardsRewardsPokemonEncounter>,
     pub stardust: Option<u64>,
-    pub type: String,
+    pub r#type: String,
     pub xl_candy: Option<EventPassTierSettingsMinPointsRequiredRewardsRewardsCandy>,
 }
 
@@ -119,7 +119,7 @@ pub struct EventPassTierSettingsActiveBonusDisplaySettingsBonusSettingsMinPoints
 #[serde(rename_all = "camelCase")]
 pub struct EventPassTierSettingsActiveBonusDisplaySettingsBonusSettingsMinPointsRequiredRewardsRewards {
     pub player_attribute: EventPassTierSettingsRewardsRewardsPlayerAttribute,
-    pub type: String,
+    pub r#type: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

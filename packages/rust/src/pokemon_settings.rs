@@ -325,7 +325,7 @@ pub struct PokemonSettings {
     pub stats: PokemonSettingsStats,
     pub temp_evo_overrides: Option<Vec<PokemonSettingsTempEvoOverrides>>,
     pub third_move: PokemonSettingsThirdMove,
-    pub type: String,
+    pub r#type: String,
     pub type2: Option<String>,
     pub use_iris_flying_placement: Option<bool>,
     pub weight_std_dev: f64,

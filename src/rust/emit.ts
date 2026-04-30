@@ -14,6 +14,85 @@ import { clusterByFingerprint, fingerprintFileName } from "../split.ts";
 // keep (avatarItemDisplay's 2-shape display-string-id vs misc).
 const MAX_CLUSTERS_FOR_ENUM = 4;
 
+// Rust's standard library only implements `Debug`, `Serialize`, and
+// `Deserialize` for tuples up to 12-arity. Above this we fall back to
+// `Vec<serde_json::Value>` — losing per-position type information but staying
+// compilable. (In practice, tuples this large are misclassified lists anyway
+// — see infer.ts's "fixed-length array → tuple" heuristic.)
+const MAX_TUPLE_ARITY = 12;
+
+// serde's default array trait impls cap at 32 elements. Beyond this we fall
+// back to `Vec<T>` — loses fixed-length info but compiles without needing
+// `serde-big-array` as an extra dependency.
+const MAX_FIXED_ARRAY_LEN = 32;
+
+// Rust strict + reserved keywords (Rust 2024 edition). When a snake_cased
+// field name collides with one, we prefix the Rust identifier with `r#` (raw
+// identifier syntax). Serde's `rename_all = "camelCase"` strips the `r#`
+// prefix before case conversion, so JSON round-trip is preserved.
+const RUST_KEYWORDS = new Set([
+	// Strict keywords (used by the language)
+	"as",
+	"async",
+	"await",
+	"break",
+	"const",
+	"continue",
+	"crate",
+	"dyn",
+	"else",
+	"enum",
+	"extern",
+	"false",
+	"fn",
+	"for",
+	"gen",
+	"if",
+	"impl",
+	"in",
+	"let",
+	"loop",
+	"match",
+	"mod",
+	"move",
+	"mut",
+	"pub",
+	"ref",
+	"return",
+	"self",
+	"Self",
+	"static",
+	"struct",
+	"super",
+	"trait",
+	"true",
+	"try",
+	"type",
+	"unsafe",
+	"use",
+	"where",
+	"while",
+	// Reserved keywords (not currently used but reserved for future use; r#
+	// prefix still required for these as identifiers)
+	"abstract",
+	"become",
+	"box",
+	"do",
+	"final",
+	"macro",
+	"override",
+	"priv",
+	"typeof",
+	"unsized",
+	"virtual",
+	"yield",
+]);
+
+function rustFieldIdent(camelName: string): string {
+	const snake = snakeCase(camelName);
+	return RUST_KEYWORDS.has(snake) ? `r#${snake}` : snake;
+}
+
 // Pool tracks already-emitted nested struct definitions for deduplication
 // within a group. Two structs with the same shape (same fields, same field
 // types) collapse to a single emission — pokemonSettings's many clusters all
@@ -50,14 +129,20 @@ function rustType(t: InferredType, parentName: string, fieldName: string, pool: 
 		case "tuple": {
 			// Tuples with all items of the same Rust type become fixed-length
 			// arrays `[T; N]` (e.g., `attackScalar: [f64; 18]` for 18 type
-			// matchups). Tuples with mixed item types become actual Rust
-			// tuples `(T1, T2, …)` so per-position type information is
-			// preserved (e.g., `[someStruct, anotherStruct]` JSON round-trips
-			// as a Rust 2-tuple via serde).
+			// matchups). Tuples with mixed item types become Rust tuples
+			// `(T1, T2, …)` so per-position type information is preserved.
+			//
+			// Caps: arrays beyond MAX_FIXED_ARRAY_LEN fall back to `Vec<T>`
+			// (serde doesn't impl traits past 32). Heterogeneous tuples beyond
+			// MAX_TUPLE_ARITY fall back to `Vec<serde_json::Value>` (Rust std
+			// doesn't impl Debug/Serialize/Deserialize for tuples past 12).
 			if (t.items.length === 0) return "Vec<serde_json::Value>";
 			const itemTypes = t.items.map((item) => rustType(item, parentName, fieldName, pool));
 			const allSame = itemTypes.every((ty) => ty === itemTypes[0]);
-			return allSame ? `[${itemTypes[0]}; ${itemTypes.length}]` : `(${itemTypes.join(", ")})`;
+			if (allSame) {
+				return t.items.length <= MAX_FIXED_ARRAY_LEN ? `[${itemTypes[0]}; ${itemTypes.length}]` : `Vec<${itemTypes[0]}>`;
+			}
+			return t.items.length <= MAX_TUPLE_ARITY ? `(${itemTypes.join(", ")})` : "Vec<serde_json::Value>";
 		}
 		case "object": {
 			const candidate = `${parentName}${pascalCase(fieldName)}`;
@@ -89,7 +174,7 @@ function structBody(name: string, type: ObjectType, pool: StructPool): { body: s
 	lines.push(`pub struct ${name} {`);
 	const shapeParts: string[] = [];
 	for (const prop of type.properties) {
-		const fieldName = snakeCase(prop.name);
+		const fieldName = rustFieldIdent(prop.name);
 		const inner = rustType(prop.type, name, prop.name, pool);
 		const fieldType = prop.optional ? `Option<${inner}>` : inner;
 		lines.push(`    pub ${fieldName}: ${fieldType},`);

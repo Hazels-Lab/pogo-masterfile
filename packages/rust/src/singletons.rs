@@ -134,14 +134,14 @@ pub struct ArPhotoFeatureFlags {
     pub ar_menu_entry_enabled: i64,
     pub capture_settings: ArPhotoFeatureFlagsCaptureSettings,
     pub error_reporting_settings: ArPhotoFeatureFlagsErrorReportingSettings,
-    pub excluded_pokemon_ids: [String; 75],
+    pub excluded_pokemon_ids: Vec<String>,
     pub incentives: [ArPhotoFeatureFlagsIncentives; 2],
     pub incentives_enabled: bool,
     pub is_feature_enabled: bool,
     pub lapsed_days_cutoff: u64,
     pub main_menu_entry_enabled: i64,
     pub new_days_cutoff: u64,
-    pub pokemon_with_excluded_forms: (ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedFormsV2, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedFormsV3, ArPhotoFeatureFlagsPokemonWithExcludedFormsV4, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedFormsV5, ArPhotoFeatureFlagsPokemonWithExcludedFormsV2, ArPhotoFeatureFlagsPokemonWithExcludedFormsV2, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedFormsV6, ArPhotoFeatureFlagsPokemonWithExcludedFormsV6, ArPhotoFeatureFlagsPokemonWithExcludedFormsV6, ArPhotoFeatureFlagsPokemonWithExcludedFormsV7, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedFormsV8, ArPhotoFeatureFlagsPokemonWithExcludedFormsV8, ArPhotoFeatureFlagsPokemonWithExcludedFormsV4, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms, ArPhotoFeatureFlagsPokemonWithExcludedForms),
+    pub pokemon_with_excluded_forms: Vec<serde_json::Value>,
     pub pre_login_device_allow_list: [String; 6],
     pub pre_login_metrics_enabled: i64,
     pub pre_login_roll_out_ratio: u64,
@@ -394,8 +394,8 @@ pub struct BreadLobbyUpdateSettings {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct BreadMoveMappingsMappings {
-    pub move: String,
-    pub type: String,
+    pub r#move: String,
+    pub r#type: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -967,7 +967,7 @@ pub struct BreadPokemonScalingSettingsVisualSettingsV21 {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct BreadPokemonScalingSettings {
-    pub visual_settings: (BreadPokemonScalingSettingsVisualSettings, BreadPokemonScalingSettingsVisualSettingsV2, BreadPokemonScalingSettingsVisualSettingsV3, BreadPokemonScalingSettingsVisualSettings, BreadPokemonScalingSettingsVisualSettingsV2, BreadPokemonScalingSettingsVisualSettingsV4, BreadPokemonScalingSettingsVisualSettings, BreadPokemonScalingSettingsVisualSettingsV2, BreadPokemonScalingSettingsVisualSettingsV5, BreadPokemonScalingSettingsVisualSettingsV6, BreadPokemonScalingSettingsVisualSettingsV7, BreadPokemonScalingSettingsVisualSettingsV6, BreadPokemonScalingSettingsVisualSettingsV8, BreadPokemonScalingSettingsVisualSettingsV6, BreadPokemonScalingSettingsVisualSettings, BreadPokemonScalingSettingsVisualSettingsV7, BreadPokemonScalingSettingsVisualSettingsV7, BreadPokemonScalingSettingsVisualSettingsV9, BreadPokemonScalingSettingsVisualSettingsV10, BreadPokemonScalingSettingsVisualSettingsV7, BreadPokemonScalingSettingsVisualSettingsV7, BreadPokemonScalingSettingsVisualSettingsV7, BreadPokemonScalingSettingsVisualSettingsV11, BreadPokemonScalingSettingsVisualSettings, BreadPokemonScalingSettingsVisualSettingsV7, BreadPokemonScalingSettingsVisualSettingsV12, BreadPokemonScalingSettingsVisualSettingsV13, BreadPokemonScalingSettingsVisualSettingsV13, BreadPokemonScalingSettingsVisualSettingsV14, BreadPokemonScalingSettingsVisualSettingsV12, BreadPokemonScalingSettingsVisualSettingsV15, BreadPokemonScalingSettingsVisualSettingsV13, BreadPokemonScalingSettingsVisualSettingsV13, BreadPokemonScalingSettingsVisualSettingsV13, BreadPokemonScalingSettingsVisualSettingsV13, BreadPokemonScalingSettingsVisualSettingsV13, BreadPokemonScalingSettingsVisualSettingsV13, BreadPokemonScalingSettingsVisualSettingsV12, BreadPokemonScalingSettingsVisualSettingsV13, BreadPokemonScalingSettingsVisualSettingsV13, BreadPokemonScalingSettingsVisualSettingsV16, BreadPokemonScalingSettingsVisualSettingsV16, BreadPokemonScalingSettingsVisualSettingsV13, BreadPokemonScalingSettingsVisualSettingsV2, BreadPokemonScalingSettingsVisualSettingsV2, BreadPokemonScalingSettingsVisualSettingsV17, BreadPokemonScalingSettingsVisualSettingsV17, BreadPokemonScalingSettingsVisualSettingsV12, BreadPokemonScalingSettingsVisualSettingsV7, BreadPokemonScalingSettingsVisualSettingsV11, BreadPokemonScalingSettingsVisualSettingsV7, BreadPokemonScalingSettingsVisualSettingsV7, BreadPokemonScalingSettingsVisualSettingsV7, BreadPokemonScalingSettingsVisualSettingsV7, BreadPokemonScalingSettingsVisualSettingsV11, BreadPokemonScalingSettingsVisualSettingsV11, BreadPokemonScalingSettingsVisualSettingsV7, BreadPokemonScalingSettingsVisualSettingsV18, BreadPokemonScalingSettingsVisualSettingsV7, BreadPokemonScalingSettingsVisualSettingsV7, BreadPokemonScalingSettingsVisualSettingsV11, BreadPokemonScalingSettingsVisualSettingsV11, BreadPokemonScalingSettingsVisualSettingsV11, BreadPokemonScalingSettingsVisualSettingsV12, BreadPokemonScalingSettingsVisualSettingsV19, BreadPokemonScalingSettingsVisualSettingsV12, BreadPokemonScalingSettingsVisualSettingsV16, BreadPokemonScalingSettingsVisualSettingsV18, BreadPokemonScalingSettingsVisualSettingsV20, BreadPokemonScalingSettingsVisualSettingsV21),
+    pub visual_settings: Vec<serde_json::Value>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -996,7 +996,7 @@ pub struct BreadSettingsBreadBattleAvailability {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct BreadSettings {
-    pub allowed_sourdough_pokemon: (BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemonV2, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon, BreadSettingsAllowedSourdoughPokemon),
+    pub allowed_sourdough_pokemon: Vec<serde_json::Value>,
     pub bread_battle_availability: BreadSettingsBreadBattleAvailability,
     pub max_range_for_nearby_state_meters: u64,
     pub max_stationed_pokemon: u64,
@@ -1122,7 +1122,7 @@ pub struct CombatSettings {
     pub charge_score_great: f64,
     pub charge_score_nice: f64,
     pub clock_sync_settings: CombatSettingsClockSyncSettings,
-    pub combat_experiment: (String, String, String, String, String, String, String, String, String, String, String, String, String, u64, u64, u64, u64, u64),
+    pub combat_experiment: Vec<serde_json::Value>,
     pub combat_feature_flags: CombatSettingsCombatFeatureFlags,
     pub defender_minigame_multiplier: u64,
     pub defense_bonus_multiplier: u64,
@@ -1481,7 +1481,7 @@ pub struct IrisSocialSettings {
     pub iris_social_enabled: bool,
     pub iris_social_poi_deactivation_cooldown_ms: String,
     pub limited_localization_timeout_duration_ms: String,
-    pub limited_pokedex_ids: [String; 146],
+    pub limited_pokedex_ids: Vec<String>,
     pub localization_guidance_path_enabled: bool,
     pub localization_timeout_duration_ms: String,
     pub location_manager_jpeg_compression_quality: u64,
@@ -1520,7 +1520,7 @@ pub struct IrisSocialUxFunnelSettingsEventStepV2 {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct IrisSocialUxFunnelSettings {
-    pub event_step: (IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStep, IrisSocialUxFunnelSettingsEventStepV2, IrisSocialUxFunnelSettingsEventStepV2, IrisSocialUxFunnelSettingsEventStepV2, IrisSocialUxFunnelSettingsEventStepV2, IrisSocialUxFunnelSettingsEventStepV2, IrisSocialUxFunnelSettingsEventStepV2, IrisSocialUxFunnelSettingsEventStepV2, IrisSocialUxFunnelSettingsEventStepV2, IrisSocialUxFunnelSettingsEventStepV2, IrisSocialUxFunnelSettingsEventStepV2, IrisSocialUxFunnelSettingsEventStepV2, IrisSocialUxFunnelSettingsEventStepV2, IrisSocialUxFunnelSettingsEventStepV2, IrisSocialUxFunnelSettingsEventStepV2, IrisSocialUxFunnelSettingsEventStepV2, IrisSocialUxFunnelSettingsEventStepV2, IrisSocialUxFunnelSettingsEventStepV2, IrisSocialUxFunnelSettingsEventStepV2, IrisSocialUxFunnelSettingsEventStepV2, IrisSocialUxFunnelSettingsEventStepV2, IrisSocialUxFunnelSettingsEventStepV2),
+    pub event_step: Vec<serde_json::Value>,
     pub ux_funnel_version: u64,
 }
 
@@ -2113,7 +2113,7 @@ pub struct PlayerLevelXpRewardV2thresholds {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PlayerLevel {
-    pub cp_multiplier: [f64; 80],
+    pub cp_multiplier: Vec<f64>,
     pub extended_player_level_threshold: u64,
     pub level_requirements_v2_enabled: bool,
     pub level_up_screen_v3_enabled: bool,
@@ -2121,8 +2121,8 @@ pub struct PlayerLevel {
     pub max_encounter_player_level: u64,
     pub max_quest_encounter_player_level: u64,
     pub milestone_levels: [u64; 8],
-    pub rank_num: [u64; 80],
-    pub required_experience: [u64; 80],
+    pub rank_num: Vec<u64>,
+    pub required_experience: Vec<u64>,
     pub smore_ftue_image_url: String,
     pub xp_reward_v2_enabled: bool,
     pub xp_reward_v2_thresholds: PlayerLevelXpRewardV2thresholds,
@@ -2402,7 +2402,7 @@ pub struct RaidSettings {
     pub min_players_to_boot: u64,
     pub ob_raid_client_settings_number1: u64,
     pub ob_raid_client_settings_number29: u64,
-    pub pokemon_music_overrides: (RaidSettingsPokemonMusicOverrides, RaidSettingsPokemonMusicOverrides, RaidSettingsPokemonMusicOverridesV2, RaidSettingsPokemonMusicOverridesV3, RaidSettingsPokemonMusicOverridesV3, RaidSettingsPokemonMusicOverridesV4, RaidSettingsPokemonMusicOverridesV3, RaidSettingsPokemonMusicOverridesV3, RaidSettingsPokemonMusicOverridesV3, RaidSettingsPokemonMusicOverridesV3, RaidSettingsPokemonMusicOverrides, RaidSettingsPokemonMusicOverrides, RaidSettingsPokemonMusicOverridesV3),
+    pub pokemon_music_overrides: Vec<serde_json::Value>,
     pub popup_time_ms: u64,
     pub raid_feature_flags: RaidSettingsRaidFeatureFlags,
     pub raid_level_music_overrides: [RaidSettingsRaidLevelMusicOverrides; 5],
@@ -2601,29 +2601,29 @@ pub struct SharedMoveSettings {
 #[serde(rename_all = "camelCase")]
 pub struct SourdoughMoveMappingSettingsMappings {
     pub form: String,
-    pub move: String,
+    pub r#move: String,
     pub pokemon_id: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct SourdoughMoveMappingSettingsMappingsV2 {
-    pub move: String,
+    pub r#move: String,
     pub pokemon_id: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct SourdoughMoveMappingSettingsMappingsOptionalBmoveOverride {
-    pub move: String,
-    pub override: bool,
+    pub r#move: String,
+    pub r#override: bool,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct SourdoughMoveMappingSettingsMappingsV3 {
     pub form: String,
-    pub move: String,
+    pub r#move: String,
     pub optional_bmove_override: SourdoughMoveMappingSettingsMappingsOptionalBmoveOverride,
     pub optional_cmove_override: SourdoughMoveMappingSettingsMappingsOptionalBmoveOverride,
     pub pokemon_id: String,
@@ -2632,7 +2632,7 @@ pub struct SourdoughMoveMappingSettingsMappingsV3 {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct SourdoughMoveMappingSettings {
-    pub mappings: (SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappingsV2, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappingsV2, SourdoughMoveMappingSettingsMappingsV2, SourdoughMoveMappingSettingsMappingsV2, SourdoughMoveMappingSettingsMappingsV2, SourdoughMoveMappingSettingsMappingsV2, SourdoughMoveMappingSettingsMappingsV2, SourdoughMoveMappingSettingsMappingsV2, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappingsV2, SourdoughMoveMappingSettingsMappingsV2, SourdoughMoveMappingSettingsMappingsV2, SourdoughMoveMappingSettingsMappingsV2, SourdoughMoveMappingSettingsMappingsV2, SourdoughMoveMappingSettingsMappingsV2, SourdoughMoveMappingSettingsMappingsV2, SourdoughMoveMappingSettingsMappingsV2, SourdoughMoveMappingSettingsMappingsV2, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappingsV3, SourdoughMoveMappingSettingsMappingsV3, SourdoughMoveMappingSettingsMappingsV3, SourdoughMoveMappingSettingsMappingsV3, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings, SourdoughMoveMappingSettingsMappings),
+    pub mappings: Vec<serde_json::Value>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2877,7 +2877,7 @@ pub struct VsSeekerScheduleSettingsSeasonSchedules {
     pub blog_url: String,
     pub description_key: String,
     pub season_title: String,
-    pub vs_seeker_schedules: (VsSeekerScheduleSettingsSeasonSchedulesVsSeekerSchedules, VsSeekerScheduleSettingsSeasonSchedulesVsSeekerSchedules, VsSeekerScheduleSettingsSeasonSchedulesVsSeekerSchedules, VsSeekerScheduleSettingsSeasonSchedulesVsSeekerSchedulesV2, VsSeekerScheduleSettingsSeasonSchedulesVsSeekerSchedules, VsSeekerScheduleSettingsSeasonSchedulesVsSeekerSchedules, VsSeekerScheduleSettingsSeasonSchedulesVsSeekerSchedules, VsSeekerScheduleSettingsSeasonSchedulesVsSeekerSchedulesV2, VsSeekerScheduleSettingsSeasonSchedulesVsSeekerSchedules, VsSeekerScheduleSettingsSeasonSchedulesVsSeekerSchedules, VsSeekerScheduleSettingsSeasonSchedulesVsSeekerSchedules, VsSeekerScheduleSettingsSeasonSchedulesVsSeekerSchedulesV2, VsSeekerScheduleSettingsSeasonSchedulesVsSeekerSchedulesV2),
+    pub vs_seeker_schedules: Vec<serde_json::Value>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

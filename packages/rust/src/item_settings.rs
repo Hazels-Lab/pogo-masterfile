@@ -83,7 +83,7 @@ pub struct ItemSettingsGlobalEventTicketIconRewards {
     pub neutral_avatar_item_template: Option<ItemSettingsGlobalEventTicketIconRewardsNeutralAvatarItemTemplate>,
     pub pokemon_encounter: Option<ItemSettingsGlobalEventTicketIconRewardsPokemonEncounter>,
     pub stardust: Option<u64>,
-    pub type: String,
+    pub r#type: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

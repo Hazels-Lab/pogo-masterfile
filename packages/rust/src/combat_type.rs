@@ -8,5 +8,5 @@ pub struct CombatType {
     pub excellent_level_threshold: f64,
     pub great_level_threshold: f64,
     pub nice_level_threshold: f64,
-    pub type: String,
+    pub r#type: String,
 }

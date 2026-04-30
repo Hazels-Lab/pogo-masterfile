@@ -19,7 +19,7 @@ pub struct CombatMove {
     pub duration_turns: Option<u64>,
     pub energy_delta: Option<i64>,
     pub power: Option<u64>,
-    pub type: String,
+    pub r#type: String,
     pub unique_id: String,
     pub vfx_name: String,
 }

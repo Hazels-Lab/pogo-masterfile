@@ -48,7 +48,7 @@ pub struct ClientQuestTemplateQuestGoalConditionWithThrowType {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct ClientQuestTemplateQuestGoalCondition {
-    pub type: String,
+    pub r#type: String,
     pub with_badge_type: Option<ClientQuestTemplateQuestGoalConditionWithBadgeType>,
     pub with_combat_type: Option<ClientQuestTemplateQuestGoalConditionWithCombatType>,
     pub with_distance: Option<ClientQuestTemplateQuestGoalConditionWithDistance>,
@@ -106,7 +106,7 @@ pub struct ClientQuestTemplateQuestQuestRewards {
     pub level_cap: Option<u64>,
     pub pokemon_encounter: Option<ClientQuestTemplateQuestQuestRewardsPokemonEncounter>,
     pub stardust: Option<u64>,
-    pub type: String,
+    pub r#type: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

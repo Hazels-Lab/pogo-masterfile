@@ -37,7 +37,7 @@ pub struct EvolutionQuestTemplateGoalsConditionWithThrowType {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct EvolutionQuestTemplateGoalsCondition {
-    pub type: String,
+    pub r#type: String,
     pub with_combat_type: Option<EvolutionQuestTemplateGoalsConditionWithCombatType>,
     pub with_opponent_pokemon_battle_status: Option<EvolutionQuestTemplateGoalsConditionWithOpponentPokemonBattleStatus>,
     pub with_pokemon_type: Option<EvolutionQuestTemplateGoalsConditionWithPokemonType>,
