@@ -1,7 +1,7 @@
 import type { Entry, Group } from "../group.ts";
 import type { InferredProperty, InferredType, ObjectType } from "../infer.ts";
 import { inferJsonTypes, widenType } from "../infer.ts";
-import { pascalCase, snakeCase } from "../naming.ts";
+import { deriveTemplateIdVariants, pascalCase, snakeCase } from "../naming.ts";
 import { clusterByFingerprint } from "../split.ts";
 
 // Merge a list of InferredTypes into one. Used by mergeObjectTypes (recursive,
@@ -451,11 +451,27 @@ function file(blocks: readonly string[]): string {
 	return `${blocks.join("\n\n")}\n`;
 }
 
-export function emitGroupModule(group: Group): string {
+// Trivial three-line module hub written to <group>/mod.rs. Carries the
+// file-level provenance comment and re-exports both submodules so existing
+// import paths keep resolving.
+export function emitGroupModFile(group: Group): string {
+	return `${header(group.discriminator)}
+
+pub mod template_ids;
+pub mod types;
+
+pub use template_ids::*;
+pub use types::*;
+`;
+}
+
+// Body of <group>/types.rs — the existing per-group struct/enum/payload
+// content. The file-level header moved to mod.rs.
+export function emitGroupTypesFile(group: Group): string {
 	const baseName = pascalCase(group.discriminator);
 
 	if (isStubGroup(group)) {
-		return file([header(group.discriminator), SERDE_IMPORT, stubEntryWrapper(baseName)]);
+		return file([SERDE_IMPORT, stubEntryWrapper(baseName)]);
 	}
 
 	const pool = newPool();
@@ -468,7 +484,7 @@ export function emitGroupModule(group: Group): string {
 		// fields that aren't universally present become Option<T>.
 		const inferred = inferPayloadType(group.entries, group.discriminator);
 		emitNamedStruct(baseName, inferred, pool);
-		return file([header(group.discriminator), SERDE_IMPORT, ...pool.deferred, entryWrapper(baseName, snakeName)]);
+		return file([SERDE_IMPORT, ...pool.deferred, entryWrapper(baseName, snakeName)]);
 	}
 
 	// Small number of clusters → emit each as a variant struct + an enum that
@@ -493,7 +509,40 @@ export function emitGroupModule(group: Group): string {
 	}
 	const enumBlock = ["#[derive(Debug, Clone, Serialize, Deserialize)]", "#[serde(untagged)]", `pub enum ${baseName} {`, ...enumVariants, "}"].join("\n");
 
-	return file([header(group.discriminator), SERDE_IMPORT, ...pool.deferred, enumBlock, entryWrapper(baseName, snakeName)]);
+	return file([SERDE_IMPORT, ...pool.deferred, enumBlock, entryWrapper(baseName, snakeName)]);
+}
+
+// Deprecated alias — kept until generate.ts is updated in Task 9.
+export const emitGroupModule = emitGroupTypesFile;
+
+// Body of <group>/template_ids.rs — a unit-variant enum mapping
+// PascalCase'd templateIds to their string literals via serde rename.
+// AllVariants/AsStr/FromStrEnum derives provide ALL/SIZE/as_str/Display
+// /FromStr without hand-emitted boilerplate.
+export function emitGroupTemplateIdsFile(group: Group): string {
+	const baseName = pascalCase(group.discriminator);
+	const ids = group.entries.map((e) => e.templateId);
+	const variants = deriveTemplateIdVariants(ids);
+
+	const sortedIds = [...ids].sort();
+	const variantBlock = sortedIds
+		.map((id) => `    #[serde(rename = ${JSON.stringify(id)})]\n    ${variants.get(id)!},`)
+		.join("\n");
+
+	return `//! Generated from Pokémon GO masterfile — group "${group.discriminator}" templateIds.
+
+use crate::{AllVariants, AsStr, FromStrEnum};
+use serde::{Deserialize, Serialize};
+
+#[derive(
+    Debug, Clone, Copy, PartialEq, Eq, Hash,
+    Serialize, Deserialize,
+    AllVariants, AsStr, FromStrEnum,
+)]
+pub enum ${baseName}TemplateId {
+${variantBlock}
+}
+`;
 }
 
 // Bundle every singleton group (entries.length === 1) into one module. Each
