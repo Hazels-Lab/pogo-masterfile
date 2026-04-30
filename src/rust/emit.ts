@@ -397,11 +397,68 @@ macro_rules! masterfile_stub_entry {
 \t};
 }`;
 
-export function emitLibFile(moduleNames: readonly string[]): string {
-	const lines: string[] = ["// Generated from Pokémon GO masterfile — root crate barrel.", "", MACRO_DEFINITIONS, ""];
-	for (const name of [...moduleNames].sort()) {
-		lines.push(`pub mod ${name};`);
+export interface EntryVariant {
+	// PascalCase variant name (also the discriminator name in PascalCase form).
+	variantName: string;
+	// snake_case module path where the Entry type lives (e.g., `pokemon_settings`,
+	// `singletons`).
+	modulePath: string;
+	// PascalCase Entry type name (e.g., `PokemonSettingsEntry`).
+	entryTypeName: string;
+}
+
+export function emitLibFile(moduleNames: readonly string[], variants: readonly EntryVariant[]): string {
+	const sortedModules = [...moduleNames].sort();
+	const sortedVariants = [...variants].sort((a, b) => a.variantName.localeCompare(b.variantName));
+
+	// Disambiguate any rare pascalCase collisions (e.g., a camelCase discriminator
+	// and a SCREAMING_SNAKE stub template-id that PascalCase to the same name).
+	const usedVariantNames = new Set<string>();
+	const variantLines: string[] = [];
+	for (const v of sortedVariants) {
+		let name = v.variantName;
+		let suffix = 2;
+		while (usedVariantNames.has(name)) name = `${v.variantName}V${suffix++}`;
+		usedVariantNames.add(name);
+		variantLines.push(`    ${name}(${v.modulePath}::${v.entryTypeName}),`);
 	}
-	lines.push("");
+
+	const lines: string[] = [
+		"// Generated from Pokémon GO masterfile — root crate barrel.",
+		"",
+		"use serde::{Deserialize, Serialize};",
+		"",
+		MACRO_DEFINITIONS,
+		"",
+		...sortedModules.map((n) => `pub mod ${n};`),
+		"",
+		"/// Every typed entry the Pokémon GO masterfile can hold.",
+		"///",
+		"/// Variants are `#[serde(untagged)]` — serde dispatches by trying each variant",
+		"/// in declaration order and picking the first whose required fields are all",
+		"/// present. Each non-stub Entry's `EntryData` carries a unique discriminator",
+		"/// field, so the dispatch is unambiguous in practice.",
+		"///",
+		"/// Caveat: stub entries (the few discriminators with `data: { templateId }`",
+		"/// only) are shape-indistinguishable. They'll all deserialize to whichever",
+		"/// stub variant declares first; inspect `template_id` to recover the",
+		"/// specific kind.",
+		"#[derive(Debug, Clone, Serialize, Deserialize)]",
+		"#[serde(untagged)]",
+		"pub enum MasterfileEntry {",
+		...variantLines,
+		"}",
+		"",
+		"/// Parse a masterfile JSON string into a vector of typed entries.",
+		"///",
+		"/// ```no_run",
+		'/// let json = std::fs::read_to_string("masterfile.json").unwrap();',
+		"/// let entries = pogo_masterfile_types::parse_masterfile(&json).unwrap();",
+		"/// ```",
+		"pub fn parse_masterfile(json: &str) -> serde_json::Result<Vec<MasterfileEntry>> {",
+		"    serde_json::from_str(json)",
+		"}",
+		"",
+	];
 	return lines.join("\n");
 }
