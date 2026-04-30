@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokestopInvasionAvailabilitySettings".
+//! Generated from Pokémon GO masterfile — group "pokestopInvasionAvailabilitySettings".
 
 use serde::{Deserialize, Serialize};
 

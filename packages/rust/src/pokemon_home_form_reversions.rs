@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonHomeFormReversions".
+//! Generated from Pokémon GO masterfile — group "pokemonHomeFormReversions".
 
 use serde::{Deserialize, Serialize};
 

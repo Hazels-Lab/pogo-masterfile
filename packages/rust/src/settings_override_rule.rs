@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "settingsOverrideRule".
+//! Generated from Pokémon GO masterfile — group "settingsOverrideRule".
 
 use serde::{Deserialize, Serialize};
 

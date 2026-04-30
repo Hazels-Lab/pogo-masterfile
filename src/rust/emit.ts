@@ -262,8 +262,11 @@ function isStubGroup(group: Group): boolean {
 	return Object.keys(first.data).filter((k) => k !== "templateId").length === 0;
 }
 
+// Module-level rustdoc (`//!`) — must appear before any items, hence the
+// dedicated emit. The header doubles as the "where this came from" provenance
+// note in the generated source and as a rustdoc summary on docs.rs.
 function header(discriminator: string): string {
-	return `// Generated from Pokémon GO masterfile — group "${discriminator}".`;
+	return `//! Generated from Pokémon GO masterfile — group "${discriminator}".`;
 }
 
 const SERDE_IMPORT = `use serde::{Deserialize, Serialize};`;
@@ -351,7 +354,7 @@ export function emitSingletonsModule(singletons: readonly Group[]): string {
 		wrappers.push(entryWrapper(name, rustFieldIdent(group.discriminator)));
 	}
 
-	return file(["// Generated from Pokémon GO masterfile — singletons (one-of-a-kind entries).", SERDE_IMPORT, ...pool.deferred, ...wrappers]);
+	return file(["//! Generated from Pokémon GO masterfile — singletons (one-of-a-kind entries).", SERDE_IMPORT, ...pool.deferred, ...wrappers]);
 }
 
 // Macros invoked by every generated module to define the Entry/EntryData
@@ -363,12 +366,14 @@ const MACRO_DEFINITIONS = `\
 #[macro_export]
 macro_rules! masterfile_entry {
 \t($entry:ident, $data:ident, $field:ident: $ty:ty) => {
+\t\t/// Outer masterfile wrapper: \`{ templateId, data: { ... } }\`.
 \t\t#[derive(Debug, Clone, ::serde::Serialize, ::serde::Deserialize)]
 \t\t#[serde(rename_all = "camelCase")]
 \t\tpub struct $entry {
 \t\t\tpub template_id: String,
 \t\t\tpub data: $data,
 \t\t}
+\t\t/// Inner \`data\` object: \`{ templateId, [discriminator]: payload }\`.
 \t\t#[derive(Debug, Clone, ::serde::Serialize, ::serde::Deserialize)]
 \t\t#[serde(rename_all = "camelCase")]
 \t\tpub struct $data {
@@ -383,12 +388,14 @@ macro_rules! masterfile_entry {
 #[macro_export]
 macro_rules! masterfile_stub_entry {
 \t($entry:ident, $data:ident) => {
+\t\t/// Outer masterfile wrapper for a stub entry (no payload).
 \t\t#[derive(Debug, Clone, ::serde::Serialize, ::serde::Deserialize)]
 \t\t#[serde(rename_all = "camelCase")]
 \t\tpub struct $entry {
 \t\t\tpub template_id: String,
 \t\t\tpub data: $data,
 \t\t}
+\t\t/// Inner \`data\` object for a stub entry: \`{ templateId }\`.
 \t\t#[derive(Debug, Clone, ::serde::Serialize, ::serde::Deserialize)]
 \t\t#[serde(rename_all = "camelCase")]
 \t\tpub struct $data {
@@ -424,7 +431,40 @@ export function emitLibFile(moduleNames: readonly string[], variants: readonly E
 	}
 
 	const lines: string[] = [
-		"// Generated from Pokémon GO masterfile — root crate barrel.",
+		"//! Generated Rust types for the Pokémon GO masterfile.",
+		"//!",
+		"//! # Quick start",
+		"//!",
+		"//! ```no_run",
+		"//! use pogo_masterfile_types::{parse_masterfile, MasterfileEntry};",
+		"//!",
+		'//! let json = std::fs::read_to_string("masterfile.json").unwrap();',
+		"//! let entries = parse_masterfile(&json).unwrap();",
+		"//! for entry in entries {",
+		"//!     match entry {",
+		"//!         MasterfileEntry::PokemonSettings(e) => {",
+		'//!             println!("pokémon: {}", e.template_id);',
+		"//!         }",
+		"//!         _ => {}",
+		"//!     }",
+		"//! }",
+		"//! ```",
+		"//!",
+		"//! # Generated structure",
+		"//!",
+		"//! Each masterfile discriminator maps to its own module containing three",
+		"//! types:",
+		"//!",
+		"//! - **`Entry`** (e.g. [`pokemon_settings::PokemonSettingsEntry`]): the outer",
+		"//!   JSON shape, `{ templateId, data: { ... } }`.",
+		"//! - **`EntryData`** (e.g. [`pokemon_settings::PokemonSettingsEntryData`]): the",
+		"//!   inner `data` object, with the discriminator-keyed payload field.",
+		"//! - **The payload type** (e.g. [`pokemon_settings::PokemonSettings`]): the",
+		"//!   shape of the payload itself. For multi-shape groups this is a Rust",
+		"//!   enum dispatching to per-cluster variant structs.",
+		"//!",
+		"//! Singletons (entries unique by `templateId`) are bundled into a single",
+		"//! [`singletons`] module rather than emitted one file each.",
 		"",
 		"use serde::{Deserialize, Serialize};",
 		"",
@@ -434,15 +474,15 @@ export function emitLibFile(moduleNames: readonly string[], variants: readonly E
 		"",
 		"/// Every typed entry the Pokémon GO masterfile can hold.",
 		"///",
-		"/// Variants are `#[serde(untagged)]` — serde dispatches by trying each variant",
-		"/// in declaration order and picking the first whose required fields are all",
-		"/// present. Each non-stub Entry's `EntryData` carries a unique discriminator",
-		"/// field, so the dispatch is unambiguous in practice.",
+		"/// Variants use `#[serde(untagged)]` — serde dispatches by trying each",
+		"/// variant in declaration order and picking the first whose required",
+		"/// fields are all present. Each non-stub Entry's `EntryData` carries a",
+		"/// unique discriminator field, so dispatch is unambiguous in practice.",
 		"///",
-		"/// Caveat: stub entries (the few discriminators with `data: { templateId }`",
-		"/// only) are shape-indistinguishable. They'll all deserialize to whichever",
-		"/// stub variant declares first; inspect `template_id` to recover the",
-		"/// specific kind.",
+		"/// **Caveat:** stub entries (the few discriminators with",
+		"/// `data: { templateId }` only) are shape-indistinguishable under untagged",
+		"/// dispatch. They'll all deserialize to whichever stub variant is declared",
+		"/// first alphabetically; inspect `template_id` to recover the specific kind.",
 		"#[derive(Debug, Clone, Serialize, Deserialize)]",
 		"#[serde(untagged)]",
 		"pub enum MasterfileEntry {",
@@ -451,9 +491,17 @@ export function emitLibFile(moduleNames: readonly string[], variants: readonly E
 		"",
 		"/// Parse a masterfile JSON string into a vector of typed entries.",
 		"///",
+		"/// # Errors",
+		"///",
+		"/// Returns the underlying [`serde_json::Error`] on malformed JSON or on a",
+		"/// JSON entry that doesn't match any [`MasterfileEntry`] variant.",
+		"///",
+		"/// # Example",
+		"///",
 		"/// ```no_run",
 		'/// let json = std::fs::read_to_string("masterfile.json").unwrap();',
 		"/// let entries = pogo_masterfile_types::parse_masterfile(&json).unwrap();",
+		'/// println!("{} entries", entries.len());',
 		"/// ```",
 		"pub fn parse_masterfile(json: &str) -> serde_json::Result<Vec<MasterfileEntry>> {",
 		"    serde_json::from_str(json)",

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "vsSeekerLoot".
+//! Generated from Pokémon GO masterfile — group "vsSeekerLoot".
 
 use serde::{Deserialize, Serialize};
 

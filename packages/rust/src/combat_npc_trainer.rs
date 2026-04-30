@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatNpcTrainer".
+//! Generated from Pokémon GO masterfile — group "combatNpcTrainer".
 
 use serde::{Deserialize, Serialize};
 

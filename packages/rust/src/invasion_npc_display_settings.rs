@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "invasionNpcDisplaySettings".
+//! Generated from Pokémon GO masterfile — group "invasionNpcDisplaySettings".
 
 use serde::{Deserialize, Serialize};
 

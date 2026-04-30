@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "evolutionChainDisplaySettings".
+//! Generated from Pokémon GO masterfile — group "evolutionChainDisplaySettings".
 
 use serde::{Deserialize, Serialize};
 

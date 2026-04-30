@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "nonCombatMoveSettings".
+//! Generated from Pokémon GO masterfile — group "nonCombatMoveSettings".
 
 use serde::{Deserialize, Serialize};
 

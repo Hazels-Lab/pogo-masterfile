@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "evolutionQuestTemplate".
+//! Generated from Pokémon GO masterfile — group "evolutionQuestTemplate".
 
 use serde::{Deserialize, Serialize};
 

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapCategoryDisplay".
+//! Generated from Pokémon GO masterfile — group "iapCategoryDisplay".
 
 use serde::{Deserialize, Serialize};
 

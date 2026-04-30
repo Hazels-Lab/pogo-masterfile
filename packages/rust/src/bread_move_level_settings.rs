@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "breadMoveLevelSettings".
+//! Generated from Pokémon GO masterfile — group "breadMoveLevelSettings".
 
 use serde::{Deserialize, Serialize};
 

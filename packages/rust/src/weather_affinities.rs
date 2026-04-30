@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "weatherAffinities".
+//! Generated from Pokémon GO masterfile — group "weatherAffinities".
 
 use serde::{Deserialize, Serialize};
 

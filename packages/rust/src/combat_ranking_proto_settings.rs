@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatRankingProtoSettings".
+//! Generated from Pokémon GO masterfile — group "combatRankingProtoSettings".
 
 use serde::{Deserialize, Serialize};
 

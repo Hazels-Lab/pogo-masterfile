@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonHomeEnergyCosts".
+//! Generated from Pokémon GO masterfile — group "pokemonHomeEnergyCosts".
 
 use serde::{Deserialize, Serialize};
 

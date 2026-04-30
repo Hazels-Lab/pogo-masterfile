@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "friendshipMilestoneSettings".
+//! Generated from Pokémon GO masterfile — group "friendshipMilestoneSettings".
 
 use serde::{Deserialize, Serialize};
 

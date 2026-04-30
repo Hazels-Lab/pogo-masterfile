@@ -1,4 +1,37 @@
-// Generated from Pokémon GO masterfile — root crate barrel.
+//! Generated Rust types for the Pokémon GO masterfile.
+//!
+//! # Quick start
+//!
+//! ```no_run
+//! use pogo_masterfile_types::{parse_masterfile, MasterfileEntry};
+//!
+//! let json = std::fs::read_to_string("masterfile.json").unwrap();
+//! let entries = parse_masterfile(&json).unwrap();
+//! for entry in entries {
+//!     match entry {
+//!         MasterfileEntry::PokemonSettings(e) => {
+//!             println!("pokémon: {}", e.template_id);
+//!         }
+//!         _ => {}
+//!     }
+//! }
+//! ```
+//!
+//! # Generated structure
+//!
+//! Each masterfile discriminator maps to its own module containing three
+//! types:
+//!
+//! - **`Entry`** (e.g. [`pokemon_settings::PokemonSettingsEntry`]): the outer
+//!   JSON shape, `{ templateId, data: { ... } }`.
+//! - **`EntryData`** (e.g. [`pokemon_settings::PokemonSettingsEntryData`]): the
+//!   inner `data` object, with the discriminator-keyed payload field.
+//! - **The payload type** (e.g. [`pokemon_settings::PokemonSettings`]): the
+//!   shape of the payload itself. For multi-shape groups this is a Rust
+//!   enum dispatching to per-cluster variant structs.
+//!
+//! Singletons (entries unique by `templateId`) are bundled into a single
+//! [`singletons`] module rather than emitted one file each.
 
 use serde::{Deserialize, Serialize};
 
@@ -7,12 +40,14 @@ use serde::{Deserialize, Serialize};
 #[macro_export]
 macro_rules! masterfile_entry {
 	($entry:ident, $data:ident, $field:ident: $ty:ty) => {
+		/// Outer masterfile wrapper: `{ templateId, data: { ... } }`.
 		#[derive(Debug, Clone, ::serde::Serialize, ::serde::Deserialize)]
 		#[serde(rename_all = "camelCase")]
 		pub struct $entry {
 			pub template_id: String,
 			pub data: $data,
 		}
+		/// Inner `data` object: `{ templateId, [discriminator]: payload }`.
 		#[derive(Debug, Clone, ::serde::Serialize, ::serde::Deserialize)]
 		#[serde(rename_all = "camelCase")]
 		pub struct $data {
@@ -27,12 +62,14 @@ macro_rules! masterfile_entry {
 #[macro_export]
 macro_rules! masterfile_stub_entry {
 	($entry:ident, $data:ident) => {
+		/// Outer masterfile wrapper for a stub entry (no payload).
 		#[derive(Debug, Clone, ::serde::Serialize, ::serde::Deserialize)]
 		#[serde(rename_all = "camelCase")]
 		pub struct $entry {
 			pub template_id: String,
 			pub data: $data,
 		}
+		/// Inner `data` object for a stub entry: `{ templateId }`.
 		#[derive(Debug, Clone, ::serde::Serialize, ::serde::Deserialize)]
 		#[serde(rename_all = "camelCase")]
 		pub struct $data {
@@ -104,15 +141,15 @@ pub mod weather_affinities;
 
 /// Every typed entry the Pokémon GO masterfile can hold.
 ///
-/// Variants are `#[serde(untagged)]` — serde dispatches by trying each variant
-/// in declaration order and picking the first whose required fields are all
-/// present. Each non-stub Entry's `EntryData` carries a unique discriminator
-/// field, so the dispatch is unambiguous in practice.
+/// Variants use `#[serde(untagged)]` — serde dispatches by trying each
+/// variant in declaration order and picking the first whose required
+/// fields are all present. Each non-stub Entry's `EntryData` carries a
+/// unique discriminator field, so dispatch is unambiguous in practice.
 ///
-/// Caveat: stub entries (the few discriminators with `data: { templateId }`
-/// only) are shape-indistinguishable. They'll all deserialize to whichever
-/// stub variant declares first; inspect `template_id` to recover the
-/// specific kind.
+/// **Caveat:** stub entries (the few discriminators with
+/// `data: { templateId }` only) are shape-indistinguishable under untagged
+/// dispatch. They'll all deserialize to whichever stub variant is declared
+/// first alphabetically; inspect `template_id` to recover the specific kind.
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum MasterfileEntry {
@@ -318,9 +355,17 @@ pub enum MasterfileEntry {
 
 /// Parse a masterfile JSON string into a vector of typed entries.
 ///
+/// # Errors
+///
+/// Returns the underlying [`serde_json::Error`] on malformed JSON or on a
+/// JSON entry that doesn't match any [`MasterfileEntry`] variant.
+///
+/// # Example
+///
 /// ```no_run
 /// let json = std::fs::read_to_string("masterfile.json").unwrap();
 /// let entries = pogo_masterfile_types::parse_masterfile(&json).unwrap();
+/// println!("{} entries", entries.len());
 /// ```
 pub fn parse_masterfile(json: &str) -> serde_json::Result<Vec<MasterfileEntry>> {
     serde_json::from_str(json)

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "stickerMetadata".
+//! Generated from Pokémon GO masterfile — group "stickerMetadata".
 
 use serde::{Deserialize, Serialize};
 

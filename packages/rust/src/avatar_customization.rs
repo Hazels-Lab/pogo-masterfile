@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarCustomization".
+//! Generated from Pokémon GO masterfile — group "avatarCustomization".
 
 use serde::{Deserialize, Serialize};
 

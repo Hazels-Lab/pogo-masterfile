@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "typeEffective".
+//! Generated from Pokémon GO masterfile — group "typeEffective".
 
 use serde::{Deserialize, Serialize};
 

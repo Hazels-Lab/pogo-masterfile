@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings".
+//! Generated from Pokémon GO masterfile — group "itemSettings".
 
 use serde::{Deserialize, Serialize};
 

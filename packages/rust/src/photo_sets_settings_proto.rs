@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "photoSetsSettingsProto".
+//! Generated from Pokémon GO masterfile — group "photoSetsSettingsProto".
 
 use serde::{Deserialize, Serialize};
 

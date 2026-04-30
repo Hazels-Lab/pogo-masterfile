@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "codeGateProto".
+//! Generated from Pokémon GO masterfile — group "codeGateProto".
 
 use serde::{Deserialize, Serialize};
 

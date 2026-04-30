@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings".
+//! Generated from Pokémon GO masterfile — group "eventPassTierSettings".
 
 use serde::{Deserialize, Serialize};
 

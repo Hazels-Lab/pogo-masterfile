@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "buddyLevelSettings".
+//! Generated from Pokémon GO masterfile — group "buddyLevelSettings".
 
 use serde::{Deserialize, Serialize};
 

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSequenceSettings".
+//! Generated from Pokémon GO masterfile — group "moveSequenceSettings".
 
 use serde::{Deserialize, Serialize};
 

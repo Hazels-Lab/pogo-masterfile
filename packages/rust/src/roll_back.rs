@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "rollBack".
+//! Generated from Pokémon GO masterfile — group "rollBack".
 
 use serde::{Deserialize, Serialize};
 

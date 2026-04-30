@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — singletons (one-of-a-kind entries).
+//! Generated from Pokémon GO masterfile — singletons (one-of-a-kind entries).
 
 use serde::{Deserialize, Serialize};
 

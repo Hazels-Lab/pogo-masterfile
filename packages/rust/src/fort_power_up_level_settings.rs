@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "fortPowerUpLevelSettings".
+//! Generated from Pokémon GO masterfile — group "fortPowerUpLevelSettings".
 
 use serde::{Deserialize, Serialize};
 

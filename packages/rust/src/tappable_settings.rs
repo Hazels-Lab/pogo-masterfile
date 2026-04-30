@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "tappableSettings".
+//! Generated from Pokémon GO masterfile — group "tappableSettings".
 
 use serde::{Deserialize, Serialize};
 

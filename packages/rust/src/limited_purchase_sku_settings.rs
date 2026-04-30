@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "limitedPurchaseSkuSettings".
+//! Generated from Pokémon GO masterfile — group "limitedPurchaseSkuSettings".
 
 use serde::{Deserialize, Serialize};
 

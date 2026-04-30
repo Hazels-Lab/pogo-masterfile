@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "locationCardSettings".
+//! Generated from Pokémon GO masterfile — group "locationCardSettings".
 
 use serde::{Deserialize, Serialize};
 
