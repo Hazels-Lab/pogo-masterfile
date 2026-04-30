@@ -9211,8 +9211,7 @@ export type PokemonSettingsV0970PokemonGlimmora = S<
 			buddyScale: 14;
 			buddySize: "BUDDY_FLYING";
 			camera: {
-				cylinderGroundM: 0.6;
-				cylinderHeightM: 3.2;
+				cylinderHeightM: 3;
 				cylinderRadiusM: 1;
 			};
 			cinematicMoves: ["DAZZLING_GLEAM", "POWER_GEM", "SLUDGE_WAVE", "METEOR_BEAM"];
@@ -9271,8 +9270,7 @@ export type PokemonSettingsV0970PokemonGlimmoraNormal = S<
 			buddyScale: 14;
 			buddySize: "BUDDY_FLYING";
 			camera: {
-				cylinderGroundM: 0.6;
-				cylinderHeightM: 3.2;
+				cylinderHeightM: 3;
 				cylinderRadiusM: 1;
 			};
 			cinematicMoves: ["DAZZLING_GLEAM", "POWER_GEM", "SLUDGE_WAVE", "METEOR_BEAM"];

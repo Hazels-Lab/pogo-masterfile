@@ -15,10 +15,40 @@ import type { Entry, Group } from "./group.ts";
 import { groupEntries } from "./group.ts";
 import { kebabCase } from "./naming.ts";
 import { buildPromotionRegistry } from "./promoted-unions.ts";
+import type { SplitTree } from "./split.ts";
 import { chooseSplit, clusterSingletons } from "./split.ts";
 import { writeOutput } from "./write.ts";
 
 const OUT_DIR = join(import.meta.dir, "..", "packages", "typescript", "src");
+
+// Recursively materialize a split tree into the files map. At each level:
+//   - Leaf bucket (no children): emitted as a single entry file at the current path.
+//   - Branch bucket (with children): emitted as a subdirectory containing recursive
+//     children + an `index.ts` barrel re-exporting them.
+//
+// Returns the names of immediate children (without extensions or trailing slashes)
+// so the caller can build the parent barrel. TypeScript's module resolution treats
+// `./name` identically whether `name` is `name.ts` or `name/index.ts`, so the parent
+// barrel doesn't differentiate.
+function emitSplitTree(group: Group, plan: SplitTree, nestedPath: string[], files: Map<string, string>): string[] {
+	const dir = kebabCase(group.discriminator);
+	const buckets: Array<{ fileName: string; entries: Entry[]; children?: SplitTree }> = plan.kind === "h3" ? plan.clusters : plan.buckets;
+	const childNames: string[] = [];
+
+	for (const b of buckets) {
+		if (b.children) {
+			const subPath = [...nestedPath, b.fileName];
+			const subChildNames = emitSplitTree(group, b.children, subPath, files);
+			files.set(`${dir}/${ENTRIES_LOWER}/${subPath.join("/")}/${BARREL_FILE}.ts`, emitEntriesBarrel(group.discriminator, subChildNames, subPath));
+		} else {
+			const dirPath = nestedPath.length > 0 ? `${dir}/${ENTRIES_LOWER}/${nestedPath.join("/")}` : `${dir}/${ENTRIES_LOWER}`;
+			files.set(`${dirPath}/${b.fileName}.ts`, emitEntryFile(group, b.fileName, b.entries, nestedPath));
+		}
+		childNames.push(b.fileName);
+	}
+
+	return childNames;
+}
 
 async function fetchMasterfile(): Promise<Entry[]> {
 	const resp = await fetch(GAME_MASTER_URL);
@@ -56,20 +86,8 @@ function planFiles(groups: Map<string, Group>): Map<string, string> {
 			continue;
 		}
 
-		const buckets: Array<{ fileName: string; entries: Entry[] }> =
-			plan.kind === "h1" || plan.kind === "h2"
-				? plan.buckets.map((b) => ({ fileName: b.fileName, entries: b.entries }))
-				: plan.clusters.map((c) => ({ fileName: c.fileName, entries: c.entries }));
-		for (const b of buckets) {
-			files.set(`${dir}/${ENTRIES_LOWER}/${b.fileName}.ts`, emitEntryFile(g, b.fileName, b.entries));
-		}
-		files.set(
-			`${dir}/${ENTRIES_LOWER}/${BARREL_FILE}.ts`,
-			emitEntriesBarrel(
-				g.discriminator,
-				buckets.map((b) => b.fileName),
-			),
-		);
+		const childNames = emitSplitTree(g, plan, [], files);
+		files.set(`${dir}/${ENTRIES_LOWER}/${BARREL_FILE}.ts`, emitEntriesBarrel(g.discriminator, childNames));
 		groupSplits.set(g.discriminator, "split");
 	}
 

@@ -20875,11 +20875,10 @@ export type PokemonSettingsV0977PokemonDondozo = S<
 			buddyGroupNumber: 3;
 			buddyPortraitOffset: [0, 1000, -600];
 			buddyScale: 19;
-			buddySize: "BUDDY_BIG";
 			camera: {
 				cylinderGroundM: 0.5;
-				cylinderHeightM: 4;
-				cylinderRadiusM: 6;
+				cylinderHeightM: 3;
+				cylinderRadiusM: 7;
 			};
 			cinematicMoves: ["OUTRAGE", "SURF", "HYDRO_PUMP", "LIQUIDATION"];
 			combatOpponentFocusCameraAngle: [3, -0.5, 0];
@@ -20904,8 +20903,8 @@ export type PokemonSettingsV0977PokemonDondozo = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 5;
-			modelHeight: 3;
-			modelScaleV2: 0.47;
+			modelHeight: 4;
+			modelScaleV2: 0.35;
 			pokedexHeightM: 12;
 			pokedexWeightKg: 220;
 			pokemonId: "DONDOZO";
@@ -20933,11 +20932,10 @@ export type PokemonSettingsV0977PokemonDondozoNormal = S<
 			buddyGroupNumber: 3;
 			buddyPortraitOffset: [0, 1000, -600];
 			buddyScale: 19;
-			buddySize: "BUDDY_BIG";
 			camera: {
 				cylinderGroundM: 0.5;
-				cylinderHeightM: 4;
-				cylinderRadiusM: 6;
+				cylinderHeightM: 3;
+				cylinderRadiusM: 7;
 			};
 			cinematicMoves: ["OUTRAGE", "SURF", "HYDRO_PUMP", "LIQUIDATION"];
 			combatOpponentFocusCameraAngle: [3, -0.5, 0];
@@ -20963,8 +20961,8 @@ export type PokemonSettingsV0977PokemonDondozoNormal = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 5;
-			modelHeight: 3;
-			modelScaleV2: 0.47;
+			modelHeight: 4;
+			modelScaleV2: 0.35;
 			pokedexHeightM: 12;
 			pokedexWeightKg: 220;
 			pokemonId: "DONDOZO";

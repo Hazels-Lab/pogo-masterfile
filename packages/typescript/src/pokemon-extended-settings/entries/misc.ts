@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 864 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 863 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -4466,22 +4466,6 @@ export type PokemonExtendedSettingsV0372PokemonShelgon = S<
 				xxsLowerBound: 0.5341;
 			};
 			uniqueId: "SHELGON";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0379PokemonRegisteel = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0379_POKEMON_REGISTEEL",
-		{
-			sizeSettings: {
-				mLowerBound: 1.4325;
-				mUpperBound: 2.3875;
-				xlUpperBound: 2.865;
-				xsLowerBound: 0.955;
-				xxlUpperBound: 2.9605;
-				xxsLowerBound: 0.9359;
-			};
-			uniqueId: "REGISTEEL";
 		}
 	>
 >;
@@ -14123,7 +14107,6 @@ export type PokemonExtendedSettingsMiscMasterfileEntry =
 	| PokemonExtendedSettingsV0370PokemonLuvdisc
 	| PokemonExtendedSettingsV0371PokemonBagon
 	| PokemonExtendedSettingsV0372PokemonShelgon
-	| PokemonExtendedSettingsV0379PokemonRegisteel
 	| PokemonExtendedSettingsV0385PokemonJirachi
 	| PokemonExtendedSettingsV0386PokemonDeoxys
 	| PokemonExtendedSettingsV0387PokemonTurtwig

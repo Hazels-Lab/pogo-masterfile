@@ -13,6 +13,9 @@ export interface H1Bucket {
 	value: string;
 	fileName: string;
 	entries: Entry[];
+	// Set when this bucket was further split by a recursive chooseSplit call.
+	// `undefined` means this bucket is a leaf (emitted as a single file).
+	children?: SplitTree;
 }
 
 export interface H1Result {
@@ -121,6 +124,7 @@ export interface H2Bucket {
 	value: string;
 	fileName: string;
 	entries: Entry[];
+	children?: SplitTree;
 }
 
 export interface H2Result {
@@ -227,6 +231,7 @@ export interface H3Cluster {
 	fingerprint: string[];
 	fileName: string;
 	entries: Entry[];
+	children?: SplitTree;
 }
 
 export function tryH3(group: Group): H3Cluster[] | null {
@@ -328,23 +333,153 @@ export function clusterSingletons(singletons: Group[]): MiscBucket[] {
 	return named;
 }
 
-export type SplitPlan =
-	| { kind: "none" }
+// SplitTree = "the recursive part" — what a node looks like once we've committed
+// to a split. SplitPlan adds the top-level escape hatch (`none`) for inputs that
+// don't warrant any split at all. Sub-trees attached to a bucket's `children`
+// are always SplitTree, never `none` (we just don't set `children` in that case).
+export type SplitTree =
 	| { kind: "h1"; field: string; buckets: H1Bucket[] }
 	| { kind: "h2"; position: number; buckets: H2Bucket[] }
 	| { kind: "h3"; clusters: H3Cluster[] };
 
-export function chooseSplit(group: Group): SplitPlan {
+export type SplitPlan = { kind: "none" } | SplitTree;
+
+// Recursion: after picking a split, walk each bucket and ask whether the bucket
+// itself warrants another pass. The H3-then-H2 case from `display-string-id`
+// is the motivating example — H3 separates structurally-different entries into
+// their own clusters, which homogenizes templateIds enough for H2 to find a
+// clean token axis on the cleaned-up subset.
+// Top-level chooseSplit accepts whatever the heuristics produce — no structural
+// quality gate. Top-level splits like `item-settings/entries/{boost.ts, candy.ts,
+// ...}` (30 buckets, many small) and `iap-item-display/entries/...` (compound
+// fingerprint clusters) are useful even when individual buckets are small or
+// names are long; collapsing them to one giant flat file would be worse.
+//
+// The structural quality gates live in recurseIntoBuckets — applied to *deeper*
+// splits where mechanical sub-bucket names (bug → 1/2/3/4) and over-fragmenting
+// recursions (poses → empty-bundle singletons) produce navigation noise. Per-
+// level recursion: after picking a candidate plan, we walk its buckets and
+// try to deepen each one. Children that succeed get attached; children that
+// fail acceptRecursion's gates leave their bucket as a leaf.
+export function chooseSplit(group: Group, depth = 0): SplitPlan {
 	if (group.entries.length <= SPLIT_THRESHOLD) return { kind: "none" };
 
 	const h1 = tryH1(group);
-	if (h1) return { kind: "h1", field: h1.field, buckets: h1.buckets };
+	if (h1) {
+		recurseIntoBuckets(group.discriminator, h1.buckets, depth);
+		return { kind: "h1", field: h1.field, buckets: h1.buckets };
+	}
 
 	const h2 = tryH2(group);
-	if (h2) return { kind: "h2", position: h2.position, buckets: h2.buckets };
+	if (h2) {
+		recurseIntoBuckets(group.discriminator, h2.buckets, depth);
+		return { kind: "h2", position: h2.position, buckets: h2.buckets };
+	}
 
 	const h3 = tryH3(group);
-	if (h3) return { kind: "h3", clusters: h3 };
+	if (h3) {
+		recurseIntoBuckets(group.discriminator, h3, depth);
+		return { kind: "h3", clusters: h3 };
+	}
 
 	return { kind: "none" };
+}
+
+interface RecursableNode {
+	entries: Entry[];
+	children?: SplitTree;
+}
+
+function recurseIntoBuckets(discriminator: string, nodes: RecursableNode[], depth: number): void {
+	for (const node of nodes) {
+		if (!shouldRecurse(node, depth)) continue;
+		const sub = chooseSplit({ discriminator, entries: node.entries }, depth + 1);
+		if (sub.kind === "none") continue;
+		if (!acceptRecursion(sub)) continue;
+		node.children = sub;
+	}
+}
+
+// acceptRecursion gates *recursive* splits only (top-level splits aren't filtered).
+// Recursion creates additional directory depth, so a sub-split has to clear a
+// higher bar than a top-level split — it has to add navigation value beyond what
+// a flat parent file would give.
+//
+// Two checks:
+//
+//   1. Name gate (every bucket): each bucket must have an informative filename
+//      OR carry further children. Catches the bug → breadTierGroup case where
+//      sub-buckets are named "1", "2", "3", "4" — children alone aren't enough
+//      because we'd still emit `bug/2.ts, bug/3.ts, bug/4.ts` as ugly leaves.
+//
+//   2. Size gate (ratio): a few small siblings are fine (e.g., `idle.ts` at 1
+//      entry inside the 13-bucket display-string-id split — 7.7% under min,
+//      well within tolerance). What we reject is splits *dominated* by small
+//      buckets — the empty-bundle case (2 singletons in a 4-bucket poses
+//      split = 50%) carves out edge cases instead of meaningful categories.
+//
+// TODO(user): tune as needed. Considerations:
+//   - Looser name rule: e.g., accept short numerics if length >= 4 (years).
+//   - Different size thresholds: lower MIN_BUCKET_SIZE catches fewer stragglers;
+//     higher TOO_SMALL_TOLERANCE accepts splits with more small buckets.
+//   - Per-discriminator escape hatches: if a specific group is being mis-handled
+//     by the general policy, an opt-in/opt-out map keyed on `group.discriminator`
+//     can override (rarely needed in practice, reach for last).
+function acceptRecursion(sub: SplitTree): boolean {
+	const buckets: ReadonlyArray<{ fileName: string; entries: Entry[]; children?: SplitTree }> = sub.kind === "h3" ? sub.clusters : sub.buckets;
+
+	if (!buckets.every((b) => b.children !== undefined || isInformativeName(b.fileName))) return false;
+
+	const tooSmall = buckets.filter((b) => b.entries.length < MIN_BUCKET_SIZE).length;
+	if (tooSmall / buckets.length > TOO_SMALL_TOLERANCE) return false;
+
+	return true;
+}
+
+// Single-character names and purely-numeric names carry no semantic information —
+// they're typically variant codes/sequence numbers, not category labels. Names
+// like "v2", "ab", or "1a" pass (mixed alphanumeric of length ≥ 2).
+function isInformativeName(name: string): boolean {
+	if (name.length <= 1) return false;
+	if (/^\d+$/.test(name)) return false;
+	return true;
+}
+
+// Buckets below this size are counted toward TOO_SMALL_TOLERANCE.
+const MIN_BUCKET_SIZE = 5;
+
+// Maximum fraction of "too small" buckets that a recursive split can have and
+// still be accepted. 0.25 means up to 25% of immediate buckets may be below
+// MIN_BUCKET_SIZE. At 50%+ we conclude the split is mostly carving out edge
+// cases. Only applied to recursive splits — top-level splits aren't filtered
+// by this gate (item-settings has many small categories that are still useful).
+const TOO_SMALL_TOLERANCE = 0.25;
+
+// Maximum depth of recursive splitting. Top-level call is depth 0; the first
+// recursion runs at depth 1; etc. Past this, no further nesting is attempted.
+const MAX_RECURSION_DEPTH = 2;
+
+// TODO(user): policy for whether a bucket should be considered for recursive splitting.
+//
+// Default policy below is intentionally minimal — only the depth cap. Worth thinking
+// about whether you want any of these additional gates:
+//
+//   - Skip recursion when `node.entries.length` is barely over SPLIT_THRESHOLD
+//     (e.g., 110 entries → 2 sub-buckets of 55 each → directory with 2 files
+//     is arguably worse than one 110-entry file). The chooseSplit threshold
+//     already filters out really-small inputs, but a higher recursion-only
+//     threshold would discourage marginal nestings.
+//
+//   - Cap the *breadth* alongside depth: if a node has many siblings already
+//     (e.g., this is one of 14 H2 buckets), recursing into each adds a lot of
+//     directory churn. A `siblingCount` parameter could gate that.
+//
+//   - Per-discriminator escape hatches if specific groups behave badly (rare;
+//     reach for this last).
+//
+// You're picking the policy that controls how aggressive nesting gets. The signal
+// to watch when tuning: total file count and average directory depth in the
+// regenerated output.
+function shouldRecurse(_node: RecursableNode, depth: number): boolean {
+	return depth < MAX_RECURSION_DEPTH;
 }

@@ -512,7 +512,6 @@ export type MoveSettingsV0322MoveFrustration = S<
 			damageWindowStartMs: 1000;
 			durationMs: 2000;
 			energyDelta: -33;
-			isLocked: true;
 			movementId: "FRUSTRATION";
 			pokemonType: "POKEMON_TYPE_NORMAL";
 			power: 10;

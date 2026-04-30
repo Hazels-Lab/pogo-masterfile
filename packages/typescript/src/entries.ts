@@ -57,7 +57,6 @@ import type { StickerMetadataMasterfileEntry } from "./sticker-metadata/entries"
 import type { TappableSettingsMasterfileEntry } from "./tappable-settings/entries";
 import type { TemporaryEvolutionSettingsMasterfileEntry } from "./temporary-evolution-settings/entries";
 import type { TypeEffectiveMasterfileEntry } from "./type-effective/entries";
-import type { VnextBattleConfigMasterfileEntry } from "./vnext-battle-config/entries";
 import type { VsSeekerLootMasterfileEntry } from "./vs-seeker-loot/entries";
 import type { VsSeekerPokemonRewardsMasterfileEntry } from "./vs-seeker-pokemon-rewards/entries";
 import type { WeatherAffinitiesMasterfileEntry } from "./weather-affinities/entries";
@@ -119,7 +118,6 @@ export type * from "./sticker-metadata/entries";
 export type * from "./tappable-settings/entries";
 export type * from "./temporary-evolution-settings/entries";
 export type * from "./type-effective/entries";
-export type * from "./vnext-battle-config/entries";
 export type * from "./vs-seeker-loot/entries";
 export type * from "./vs-seeker-pokemon-rewards/entries";
 export type * from "./weather-affinities/entries";
@@ -182,7 +180,6 @@ export type MasterfileEntry =
 	| TappableSettingsMasterfileEntry
 	| TemporaryEvolutionSettingsMasterfileEntry
 	| TypeEffectiveMasterfileEntry
-	| VnextBattleConfigMasterfileEntry
 	| VsSeekerLootMasterfileEntry
 	| VsSeekerPokemonRewardsMasterfileEntry
 	| WeatherAffinitiesMasterfileEntry;

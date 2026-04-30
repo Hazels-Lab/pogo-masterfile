@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-release-date", 101 entries.
+// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-release-date", 105 entries.
 
 import type { S } from "../../_utils";
 import type { StickerMetadata } from "../types";
@@ -723,6 +723,46 @@ export type StickerMetadataPgofest2022Pikachu = S<
 		}
 	>
 >;
+export type StickerMetadataPgoFest2026 = S<
+	StickerMetadata<
+		"STICKER_PGO_FEST_2026",
+		{
+			category: ["Pokemon"];
+			pokemonId: "MEWTWO";
+			releaseDate: 20260528;
+		}
+	>
+>;
+export type StickerMetadataPgoFest20261 = S<
+	StickerMetadata<
+		"STICKER_PGO_FEST_2026_1",
+		{
+			category: ["Pokemon"];
+			pokemonId: "MEWTWO";
+			releaseDate: 20260528;
+		}
+	>
+>;
+export type StickerMetadataPgoFest20262 = S<
+	StickerMetadata<
+		"STICKER_PGO_FEST_2026_2",
+		{
+			category: ["Pokemon"];
+			pokemonId: "MEWTWO";
+			releaseDate: 20260528;
+		}
+	>
+>;
+export type StickerMetadataPgoFest20263 = S<
+	StickerMetadata<
+		"STICKER_PGO_FEST_2026_3",
+		{
+			category: ["Pokemon"];
+			pokemonId: "MEWTWO";
+			releaseDate: 20260528;
+		}
+	>
+>;
 export type StickerMetadataPikaairjejuPikachu = S<
 	StickerMetadata<
 		"STICKER_PIKAAIRJEJU_PIKACHU",
@@ -1087,6 +1127,10 @@ export type StickerMetadataPokemonIdReleaseDateMasterfileEntry =
 	| StickerMetadataPapelpicadotgr2
 	| StickerMetadataPapelpicadotgr3
 	| StickerMetadataPgofest2022Pikachu
+	| StickerMetadataPgoFest2026
+	| StickerMetadataPgoFest20261
+	| StickerMetadataPgoFest20262
+	| StickerMetadataPgoFest20263
 	| StickerMetadataPikaairjejuPikachu
 	| StickerMetadataPikaairsingaporeLapras
 	| StickerMetadataPikaairsingaporePikachu

@@ -236,11 +236,13 @@ describe("chooseSplit", () => {
 
 	test("prefers H1 when it qualifies", () => {
 		// 120 entries, type field with cardinality 4 and 30%/30%/20%/20% distribution.
+		// Type values are full words so the post-prefix-strip filenames (water, fire,
+		// grass, normal) are informative under acceptSplit's name policy.
 		const payloads: Array<Record<string, unknown>> = [];
-		for (let i = 0; i < 36; i += 1) payloads.push({ type: "POKEMON_TYPE_A", optional: i });
-		for (let i = 0; i < 36; i += 1) payloads.push({ type: "POKEMON_TYPE_B" });
-		for (let i = 0; i < 24; i += 1) payloads.push({ type: "POKEMON_TYPE_C", optional: i });
-		for (let i = 0; i < 24; i += 1) payloads.push({ type: "POKEMON_TYPE_D" });
+		for (let i = 0; i < 36; i += 1) payloads.push({ type: "POKEMON_TYPE_WATER", optional: i });
+		for (let i = 0; i < 36; i += 1) payloads.push({ type: "POKEMON_TYPE_FIRE" });
+		for (let i = 0; i < 24; i += 1) payloads.push({ type: "POKEMON_TYPE_GRASS", optional: i });
+		for (let i = 0; i < 24; i += 1) payloads.push({ type: "POKEMON_TYPE_NORMAL" });
 		const group = mkGroup(payloads);
 		const plan = chooseSplit(group);
 		expect(plan.kind).toBe("h1");
@@ -253,10 +255,12 @@ describe("chooseSplit", () => {
 	test("falls back to H3 when H1 and H2 have no candidate", () => {
 		// 120 entries, no string-valued always-present field, no qualifying templateId
 		// token position (T_0..T_119 → token 0 universal, token 1 unique-per-entry),
-		// but two clear fingerprints → H3 wins.
+		// but two clear fingerprints → H3 wins. Field name "extra" so the resulting
+		// fingerprint cluster is named "extra" (informative under acceptSplit's rules)
+		// rather than a single character.
 		const payloads: Array<Record<string, unknown>> = [];
-		for (let i = 0; i < 60; i += 1) payloads.push({ a: i });
-		for (let i = 0; i < 60; i += 1) payloads.push({ a: i, b: i });
+		for (let i = 0; i < 60; i += 1) payloads.push({ shared: i });
+		for (let i = 0; i < 60; i += 1) payloads.push({ shared: i, extra: i });
 		const group = mkGroup(payloads);
 		const plan = chooseSplit(group);
 		expect(plan.kind).toBe("h3");

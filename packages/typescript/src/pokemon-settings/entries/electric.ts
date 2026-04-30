@@ -10719,13 +10719,20 @@ export type PokemonSettingsV0807PokemonZeraora = S<
 			buddyGroupNumber: 2;
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
+			buddyPortraitOffset: [0, 100, 0];
 			buddyScale: 19;
-			camera: object;
+			camera: {
+				cylinderHeightM: 0.75;
+				cylinderRadiusM: 0.7;
+			};
 			cinematicMoves: ["THUNDER_PUNCH", "DISCHARGE", "WILD_CHARGE"];
 			encounter: {
 				attackProbability: 0.1;
 				bonusXlCandyCaptureReward: 3;
 				cameraDistance: 4;
+				collisionHeadRadiusM: 0.25;
+				collisionHeightM: 0.5;
+				collisionRadiusM: 1;
 				dodgeDistance: 0.5;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
@@ -10766,13 +10773,20 @@ export type PokemonSettingsV0807PokemonZeraoraNormal = S<
 			buddyGroupNumber: 2;
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
+			buddyPortraitOffset: [0, 100, 0];
 			buddyScale: 19;
-			camera: object;
+			camera: {
+				cylinderHeightM: 0.75;
+				cylinderRadiusM: 0.7;
+			};
 			cinematicMoves: ["THUNDER_PUNCH", "DISCHARGE", "WILD_CHARGE"];
 			encounter: {
 				attackProbability: 0.1;
 				bonusXlCandyCaptureReward: 3;
 				cameraDistance: 4;
+				collisionHeadRadiusM: 0.25;
+				collisionHeightM: 0.5;
+				collisionRadiusM: 1;
 				dodgeDistance: 0.5;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;

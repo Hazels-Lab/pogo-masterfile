@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "stickerMetadata", split "release-date", 39 entries.
+// Generated from Pokémon GO masterfile — group "stickerMetadata", split "release-date", 34 entries.
 
 import type { S } from "../../_utils";
 import type { StickerMetadata } from "../types";
@@ -201,51 +201,6 @@ export type StickerMetadataPgoFest2025Logo = S<
 		}
 	>
 >;
-export type StickerMetadataPgoFest2026 = S<
-	StickerMetadata<
-		"STICKER_PGO_FEST_2026",
-		{
-			category: ["Misc"];
-			releaseDate: 20260528;
-		}
-	>
->;
-export type StickerMetadataPgoFest20261 = S<
-	StickerMetadata<
-		"STICKER_PGO_FEST_2026_1",
-		{
-			category: ["Misc"];
-			releaseDate: 20260528;
-		}
-	>
->;
-export type StickerMetadataPgoFest20262 = S<
-	StickerMetadata<
-		"STICKER_PGO_FEST_2026_2",
-		{
-			category: ["Misc"];
-			releaseDate: 20260528;
-		}
-	>
->;
-export type StickerMetadataPgoFest20263 = S<
-	StickerMetadata<
-		"STICKER_PGO_FEST_2026_3",
-		{
-			category: ["Misc"];
-			releaseDate: 20260528;
-		}
-	>
->;
-export type StickerMetadataPgoFest20264 = S<
-	StickerMetadata<
-		"STICKER_PGO_FEST_2026_4",
-		{
-			category: ["Misc"];
-			releaseDate: 20260528;
-		}
-	>
->;
 export type StickerMetadataPgoFest2026Logo = S<
 	StickerMetadata<
 		"STICKER_PGO_FEST_2026_LOGO",
@@ -378,11 +333,6 @@ export type StickerMetadataReleaseDateMasterfileEntry =
 	| StickerMetadataPgoFest2024
 	| StickerMetadataPgoFest2024Logo
 	| StickerMetadataPgoFest2025Logo
-	| StickerMetadataPgoFest2026
-	| StickerMetadataPgoFest20261
-	| StickerMetadataPgoFest20262
-	| StickerMetadataPgoFest20263
-	| StickerMetadataPgoFest20264
 	| StickerMetadataPgoFest2026Logo
 	| StickerMetadataPgoTour2024
 	| StickerMetadataPgoTour2024Logo

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-region-id-release-date", 257 entries.
+// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-region-id-release-date", 258 entries.
 
 import type { S } from "../../_utils";
 import type { StickerMetadata } from "../types";
@@ -1587,6 +1587,17 @@ export type StickerMetadataPgoFest20253 = S<
 		}
 	>
 >;
+export type StickerMetadataPgoFest20264 = S<
+	StickerMetadata<
+		"STICKER_PGO_FEST_2026_4",
+		{
+			category: ["Pokemon"];
+			pokemonId: "ZERAORA";
+			regionId: 6;
+			releaseDate: 20260528;
+		}
+	>
+>;
 export type StickerMetadataPgoTour20241 = S<
 	StickerMetadata<
 		"STICKER_PGO_TOUR_2024_1",
@@ -2976,6 +2987,7 @@ export type StickerMetadataPokemonIdRegionIdReleaseDateMasterfileEntry =
 	| StickerMetadataPgoFest20251
 	| StickerMetadataPgoFest20252
 	| StickerMetadataPgoFest20253
+	| StickerMetadataPgoFest20264
 	| StickerMetadataPgoTour20241
 	| StickerMetadataPgoTour20242
 	| StickerMetadataPgoTour20243

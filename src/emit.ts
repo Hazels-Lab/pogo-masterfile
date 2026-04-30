@@ -246,7 +246,15 @@ export function emitEntriesFlat(group: Group): string {
 	return file.render();
 }
 
-export function emitEntryFile(group: Group, bucketName: string, entries: Entry[]): string {
+// `nestedPath` records this file's directory location relative to entries/.
+//   - []                    → file lives at entries/{bucketName}.ts (flat split)
+//   - ["display-string-id"] → file lives at entries/display-string-id/{bucketName}.ts
+//   - ["a", "b"]            → file lives at entries/a/b/{bucketName}.ts
+// Affects two things:
+//   1. Import paths to ../types and ../../_utils get an extra `../` per nesting level.
+//   2. The exported barrel-type name is qualified by the path so leaves at different
+//      locations don't collide (entries/hat/0.ts vs entries/pants/0.ts both export "0").
+export function emitEntryFile(group: Group, bucketName: string, entries: Entry[], nestedPath: string[] = []): string {
 	const gName = groupName(group.discriminator);
 	const xdataName = `${gName}Data`;
 	const sortedIds = [...group.entries].map((e) => e.templateId).sort();
@@ -255,26 +263,40 @@ export function emitEntryFile(group: Group, bucketName: string, entries: Entry[]
 	const entryCount = entries.length;
 	const entryWord = entryCount === 1 ? ENTRY_LOWER : ENTRIES_LOWER;
 
+	const upDirs = (n: number) => "../".repeat(n);
+	const utilsPath = `${upDirs(nestedPath.length + 2)}_utils`;
+	const typesPath = `${upDirs(nestedPath.length + 1)}${TYPES_LOWER}`;
+	const parentTypeName = `${gName}${nestedPath.map(pascalCase).join("")}`;
+	const splitLabel = nestedPath.length > 0 ? `${nestedPath.join("/")}/${bucketName}` : bucketName;
+
 	const file = new AstFileBuilder()
-		.header(`Generated from Pokémon GO masterfile — group "${group.discriminator}", split "${bucketName}", ${entryCount} ${entryWord}.`)
-		.importNamed("../../_utils", [SIMPLIFY], true)
-		.importNamed(`../${TYPES_LOWER}`, [gName, xdataName], true)
+		.header(`Generated from Pokémon GO masterfile — group "${group.discriminator}", split "${splitLabel}", ${entryCount} ${entryWord}.`)
+		.importNamed(utilsPath, [SIMPLIFY], true)
+		.importNamed(typesPath, [gName, xdataName], true)
 		.blank();
 
 	const { statements, typeNames } = entryVariantStatements(entries, gName, group, aliases, invariants);
 	for (const stmt of statements) file.addStatement(stmt);
 	file.blank();
 
-	file.exportTypeAlias(`${gName}${aliasSuffix(bucketName, "")}${BARREL_TYPE}${ENTRY}`, T.union(...typeNames.map((n) => T.ref(n))));
+	file.exportTypeAlias(`${parentTypeName}${aliasSuffix(bucketName, "")}${BARREL_TYPE}${ENTRY}`, T.union(...typeNames.map((n) => T.ref(n))));
 
 	return file.render();
 }
 
-export function emitEntriesBarrel(discriminator: string, fileNames: string[]): string {
-	const typeName = pascalCase(discriminator);
+// Same `nestedPath` semantics as emitEntryFile: empty for the top-level entries
+// barrel; non-empty for sub-barrels. The composed typeName ensures children of
+// each level export uniquely-named barrel types so parents can union them.
+//
+// Note: TypeScript resolves `./${child}` as either `./child.ts` or `./child/index.ts`
+// transparently, so this barrel doesn't need to know whether each child is a leaf
+// file or a subdirectory — the imports and re-exports work identically.
+export function emitEntriesBarrel(discriminator: string, fileNames: string[], nestedPath: string[] = []): string {
+	const typeName = `${pascalCase(discriminator)}${nestedPath.map(pascalCase).join("")}`;
 	const sorted = [...fileNames].sort();
+	const label = nestedPath.length > 0 ? `${discriminator} ${nestedPath.join("/")}` : discriminator;
 
-	const file = new AstFileBuilder().header(`Generated from Pokémon GO masterfile — group "${discriminator}" entries barrel.`);
+	const file = new AstFileBuilder().header(`Generated from Pokémon GO masterfile — group "${label}" entries barrel.`);
 
 	for (const e of sorted) {
 		file.importNamed(`./${e}`, [`${typeName}${pascalCase(e)}${BARREL_TYPE}${ENTRY}`], true);

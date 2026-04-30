@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 124 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 125 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -2690,6 +2690,43 @@ export type PokemonExtendedSettingsV0378PokemonRegiceNormal = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0379PokemonRegisteelNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0379_POKEMON_REGISTEEL_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 19.04;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 32.5;
+						maxReticleSize: 14;
+						scale: 9.52;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 0.75;
+					};
+					maxStationVisualSettings: {
+						scale: 2.19;
+						yOffset: -3;
+					};
+				},
+			];
+			form: "REGISTEEL_NORMAL";
+			sizeSettings: {
+				mLowerBound: 1.4325;
+				mUpperBound: 2.3875;
+				xlUpperBound: 2.865;
+				xsLowerBound: 0.955;
+				xxlUpperBound: 2.9605;
+				xxsLowerBound: 0.9359;
+			};
+			uniqueId: "REGISTEEL";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0470PokemonLeafeonNormal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0470_POKEMON_LEAFEON_NORMAL",
@@ -4916,6 +4953,7 @@ export type PokemonExtendedSettingsBreadOverridesFormMasterfileEntry =
 	| PokemonExtendedSettingsV0375PokemonMetangNormal
 	| PokemonExtendedSettingsV0377PokemonRegirockNormal
 	| PokemonExtendedSettingsV0378PokemonRegiceNormal
+	| PokemonExtendedSettingsV0379PokemonRegisteelNormal
 	| PokemonExtendedSettingsV0470PokemonLeafeonNormal
 	| PokemonExtendedSettingsV0471PokemonGlaceonNormal
 	| PokemonExtendedSettingsV0519PokemonPidoveNormal

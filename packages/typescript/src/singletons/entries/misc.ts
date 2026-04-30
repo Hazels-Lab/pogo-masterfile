@@ -390,12 +390,40 @@ export interface PokecoinPurchaseDisplayGmt {
 	};
 }
 
+export interface VnextBattleConfig {
+	templateId: "VNEXT_BATTLE_CLIENT_SETTINGS";
+	data: {
+		templateId: "VNEXT_BATTLE_CLIENT_SETTINGS";
+		vnextBattleConfig: {
+			maxBattleConfig: {
+				badNetworkWarningThresholdTurns: "12";
+				battleEndTimeoutThresholdMs: "2000";
+				deadNetworkDisconnectThresholdTurns: "60";
+				noOpponentConnectionDisconnectThresholdTurns: "12";
+			};
+			pvpBattleConfig: {
+				badNetworkWarningThresholdTurns: "12";
+				battleEndTimeoutThresholdMs: "2000";
+				deadNetworkDisconnectThresholdTurns: "120";
+				noOpponentConnectionDisconnectThresholdTurns: "12";
+			};
+			raidsBattleConfig: {
+				badNetworkWarningThresholdTurns: "12";
+				battleEndTimeoutThresholdMs: "2000";
+				deadNetworkDisconnectThresholdTurns: "60";
+				noOpponentConnectionDisconnectThresholdTurns: "12";
+			};
+		};
+	};
+}
+
 export type SingletonsMiscMasterfileEntry =
 	| BelugaPokemonWhitelist
 	| BreadMoveMappings
 	| ItemCurrencyValues
 	| MainMenuChanges
 	| PlayerLevel
-	| PokecoinPurchaseDisplayGmt;
+	| PokecoinPurchaseDisplayGmt
+	| VnextBattleConfig;
 
 export type SingletonsMiscTemplateID = SingletonsMiscMasterfileEntry["templateId"];

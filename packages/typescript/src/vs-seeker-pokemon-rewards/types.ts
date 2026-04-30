@@ -669,9 +669,9 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					};
 					pokemon: {
 						pokemonDisplay: {
-							form: "TAPU_KOKO_NORMAL";
+							form: "TAPU_LELE_NORMAL";
 						};
-						pokemonId: "TAPU_KOKO";
+						pokemonId: "TAPU_LELE";
 					};
 					staminaIvOverride: {
 						range: {

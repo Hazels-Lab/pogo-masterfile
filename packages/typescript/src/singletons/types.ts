@@ -137,6 +137,7 @@ import type {
 	VerboseLogCombatSettings,
 	VerboseLogRaidSettings,
 	VistaGeneralSettings,
+	VnextBattleConfig,
 	VsSeekerClientSettings,
 	VsSeekerScheduleSettings,
 	WeatherBonusSettings,
@@ -277,6 +278,7 @@ export type UsernameSuggestionSettingsType = W<UsernameSuggestionSettings>;
 export type VerboseLogCombatSettingsType = W<VerboseLogCombatSettings>;
 export type VerboseLogRaidSettingsType = W<VerboseLogRaidSettings>;
 export type VistaGeneralSettingsType = W<VistaGeneralSettings>;
+export type VnextBattleConfigType = W<VnextBattleConfig>;
 export type VsSeekerClientSettingsType = W<VsSeekerClientSettings>;
 export type VsSeekerScheduleSettingsType = W<VsSeekerScheduleSettings>;
 export type WeatherBonusSettingsType = W<WeatherBonusSettings>;
@@ -417,6 +419,7 @@ export type Singletons =
 	| VerboseLogCombatSettingsType
 	| VerboseLogRaidSettingsType
 	| VistaGeneralSettingsType
+	| VnextBattleConfigType
 	| VsSeekerClientSettingsType
 	| VsSeekerScheduleSettingsType
 	| WeatherBonusSettingsType;
