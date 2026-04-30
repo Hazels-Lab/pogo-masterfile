@@ -37,6 +37,21 @@
 
 use serde::{Deserialize, Serialize};
 
+pub use pogo_masterfile_macros::{AllVariants, AsStr, FromStrEnum};
+
+/// Error returned by `FromStr` impls on generated templateId enums when the
+/// input string does not match any known templateId for the group.
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct UnknownTemplateId(pub String);
+
+impl core::fmt::Display for UnknownTemplateId {
+    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
+        write!(f, "unknown templateId: {}", self.0)
+    }
+}
+
+impl std::error::Error for UnknownTemplateId {}
+
 /// Defines an Entry + EntryData pair for a discriminator that carries a payload.
 /// Used by the codegen; consumers of this crate normally don't invoke directly.
 #[macro_export]

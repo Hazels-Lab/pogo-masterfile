@@ -49,3 +49,52 @@ fn round_trips_via_serde_json() {
     let again = parse_masterfile(&reserialized).expect("second parse");
     assert_eq!(entries.len(), again.len());
 }
+
+mod template_id_macro_round_trip {
+    //! Self-contained sanity check that the three derives compose: an enum
+    //! with `AllVariants + AsStr + FromStrEnum` plus serde Serialize/Deserialize
+    //! round-trips through string and JSON.
+
+    use pogo_masterfile_types::{AllVariants, AsStr, FromStrEnum, UnknownTemplateId};
+    use serde::{Deserialize, Serialize};
+    use std::str::FromStr;
+
+    #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum)]
+    enum Sample {
+        #[serde(rename = "BADGE_ALPHA")]
+        Alpha,
+        #[serde(rename = "BADGE_BETA")]
+        Beta,
+    }
+
+    #[test]
+    fn size_and_all_match() {
+        assert_eq!(Sample::SIZE, 2);
+        assert_eq!(Sample::ALL, [Sample::Alpha, Sample::Beta]);
+    }
+
+    #[test]
+    fn as_str_emits_serde_rename() {
+        assert_eq!(Sample::Alpha.as_str(), "BADGE_ALPHA");
+    }
+
+    #[test]
+    fn from_str_round_trips() {
+        let parsed = Sample::from_str("BADGE_BETA").unwrap();
+        assert_eq!(parsed, Sample::Beta);
+    }
+
+    #[test]
+    fn from_str_unknown_returns_input() {
+        let err: UnknownTemplateId = Sample::from_str("BADGE_GAMMA").unwrap_err();
+        assert_eq!(err.0, "BADGE_GAMMA");
+    }
+
+    #[test]
+    fn serde_json_round_trips() {
+        let json = serde_json::to_string(&Sample::Alpha).unwrap();
+        assert_eq!(json, "\"BADGE_ALPHA\"");
+        let back: Sample = serde_json::from_str(&json).unwrap();
+        assert_eq!(back, Sample::Alpha);
+    }
+}
