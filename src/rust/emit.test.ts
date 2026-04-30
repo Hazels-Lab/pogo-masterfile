@@ -1,7 +1,14 @@
 import { describe, expect, test } from "bun:test";
 import { MOCK_MASTERFILE } from "../fixtures.ts";
 import { groupEntries } from "../group.ts";
-import { emitGroupModFile, emitGroupTemplateIdsFile, emitGroupTypesFile } from "./emit.ts";
+import {
+	emitGroupModFile,
+	emitGroupTemplateIdsFile,
+	emitGroupTypesFile,
+	emitSingletonsModFile,
+	emitSingletonsTemplateIdsFile,
+	emitSingletonsTypesFile,
+} from "./emit.ts";
 
 describe("emitGroupModFile", () => {
 	test("emits a deterministic three-line module that re-exports types and template_ids", () => {
@@ -55,5 +62,39 @@ describe("emitGroupTemplateIdsFile", () => {
 		const bugIdx = out.indexOf("PokemonTypeBug");
 		const darkIdx = out.indexOf("PokemonTypeDark");
 		expect(bugIdx).toBeLessThan(darkIdx);
+	});
+});
+
+describe("emitSingletonsModFile", () => {
+	test("emits the same trivial three-line module shape as group mod files", () => {
+		const out = emitSingletonsModFile();
+		expect(out).toContain("//! Generated from Pokémon GO masterfile — singletons (one-of-a-kind entries).");
+		expect(out).toContain("pub mod template_ids;");
+		expect(out).toContain("pub mod types;");
+		expect(out).toContain("pub use template_ids::*;");
+		expect(out).toContain("pub use types::*;");
+	});
+});
+
+describe("emitSingletonsTypesFile", () => {
+	test("emits the per-singleton struct content without a file-level header", () => {
+		const groups = groupEntries(MOCK_MASTERFILE);
+		const accessibility = groups.get("accessibilitySettings")!;
+		const out = emitSingletonsTypesFile([accessibility]);
+		expect(out).toContain("use serde::{Deserialize, Serialize};");
+		expect(out).toContain("AccessibilitySettings");
+		expect(out).not.toContain("//! Generated from Pokémon GO masterfile —");
+	});
+});
+
+describe("emitSingletonsTemplateIdsFile", () => {
+	test("emits one combined SingletonsTemplateId enum with full PascalCase variants", () => {
+		const groups = groupEntries(MOCK_MASTERFILE);
+		const accessibility = groups.get("accessibilitySettings")!;
+		const out = emitSingletonsTemplateIdsFile([accessibility]);
+		expect(out).toContain("//! Generated from Pokémon GO masterfile — singletons templateIds.");
+		expect(out).toContain("pub enum SingletonsTemplateId {");
+		expect(out).toContain('#[serde(rename = "ACCESSIBILITY_CLIENT_SETTINGS")]');
+		expect(out).toContain("    AccessibilityClientSettings,");
 	});
 });

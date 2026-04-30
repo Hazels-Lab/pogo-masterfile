@@ -545,11 +545,24 @@ ${variantBlock}
 `;
 }
 
-// Bundle every singleton group (entries.length === 1) into one module. Each
-// singleton emits an Entry/EntryData wrapper via the macro; with-payload
+// Trivial three-line module hub for singletons/, mirroring per-group modules.
+export function emitSingletonsModFile(): string {
+	return `//! Generated from Pokémon GO masterfile — singletons (one-of-a-kind entries).
+
+pub mod template_ids;
+pub mod types;
+
+pub use template_ids::*;
+pub use types::*;
+`;
+}
+
+// Bundle every singleton group (entries.length === 1) into one types.rs.
+// Each singleton emits an Entry/EntryData wrapper via the macro; with-payload
 // singletons also emit their inner payload struct. Stubs need no inner
-// struct since their `data` has only `templateId`.
-export function emitSingletonsModule(singletons: readonly Group[]): string {
+// struct since their `data` has only `templateId`. The file-level header
+// moved to mod.rs.
+export function emitSingletonsTypesFile(singletons: readonly Group[]): string {
 	const sorted = [...singletons].sort((a, b) => pascalCase(a.discriminator).localeCompare(pascalCase(b.discriminator)));
 	const pool = newPool();
 	const wrappers: string[] = [];
@@ -565,8 +578,37 @@ export function emitSingletonsModule(singletons: readonly Group[]): string {
 		wrappers.push(entryWrapper(name, rustFieldIdent(group.discriminator)));
 	}
 
-	return file(["//! Generated from Pokémon GO masterfile — singletons (one-of-a-kind entries).", SERDE_IMPORT, ...pool.deferred, ...wrappers]);
+	return file([SERDE_IMPORT, ...pool.deferred, ...wrappers]);
 }
+
+// One combined SingletonsTemplateId enum across every singleton's templateId.
+export function emitSingletonsTemplateIdsFile(singletons: readonly Group[]): string {
+	const allIds = singletons.flatMap((g) => g.entries.map((e) => e.templateId));
+	const variants = deriveTemplateIdVariants(allIds);
+
+	const sortedIds = [...allIds].sort();
+	const variantBlock = sortedIds
+		.map((id) => `    #[serde(rename = ${JSON.stringify(id)})]\n    ${variants.get(id)!},`)
+		.join("\n");
+
+	return `//! Generated from Pokémon GO masterfile — singletons templateIds.
+
+use crate::{AllVariants, AsStr, FromStrEnum};
+use serde::{Deserialize, Serialize};
+
+#[derive(
+    Debug, Clone, Copy, PartialEq, Eq, Hash,
+    Serialize, Deserialize,
+    AllVariants, AsStr, FromStrEnum,
+)]
+pub enum SingletonsTemplateId {
+${variantBlock}
+}
+`;
+}
+
+// Deprecated alias — kept until generate.ts is updated in Task 9.
+export const emitSingletonsModule = emitSingletonsTypesFile;
 
 // Macros invoked by every generated module to define the Entry/EntryData
 // wrapper pair that mirrors the masterfile JSON shape. Exported at crate root
