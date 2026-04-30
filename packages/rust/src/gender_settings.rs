@@ -6,7 +6,7 @@ use serde::{Deserialize, Serialize};
 #[serde(rename_all = "camelCase")]
 pub struct Gender {
     pub female_percent: Option<f64>,
-    pub genderless_percent: Option<u64>,
+    pub genderless_percent: Option<f64>,
     pub male_percent: Option<f64>,
 }
 

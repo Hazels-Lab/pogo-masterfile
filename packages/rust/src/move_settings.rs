@@ -5,7 +5,7 @@ use serde::{Deserialize, Serialize};
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct MoveSettings {
-    pub accuracy_chance: u64,
+    pub accuracy_chance: f64,
     pub animation_id: u64,
     pub critical_chance: Option<f64>,
     pub damage_window_end_ms: u64,
@@ -17,7 +17,7 @@ pub struct MoveSettings {
     pub movement_id: String,
     pub ob_move_settings_number18: Option<[u64; 4]>,
     pub pokemon_type: String,
-    pub power: Option<u64>,
+    pub power: Option<f64>,
     pub stamina_loss_scalar: Option<f64>,
     pub trainer_level_max: Option<u64>,
     pub trainer_level_min: Option<u64>,

@@ -135,7 +135,7 @@ pub struct InventoryUpgrade {
 #[serde(rename_all = "camelCase")]
 pub struct Potion {
     pub sta_amount: Option<u64>,
-    pub sta_percent: Option<u64>,
+    pub sta_percent: Option<f64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -179,7 +179,7 @@ pub struct TimePeriodCounters {
 #[serde(rename_all = "camelCase")]
 pub struct XpBoost {
     pub boost_duration_ms: u64,
-    pub xp_multiplier: u64,
+    pub xp_multiplier: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

@@ -29,7 +29,7 @@ pub struct CatchOverrideSettings {
 #[serde(rename_all = "camelCase")]
 pub struct MaxBattleTrainerVisualSettings {
     pub x_offset: Option<f64>,
-    pub y_offset: Option<i64>,
+    pub y_offset: Option<f64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -44,34 +44,26 @@ pub struct MaxBattleVisualSettings {
 #[serde(rename_all = "camelCase")]
 pub struct MaxEncounterVisualSettings {
     pub camera_distance: Option<f64>,
-    pub camera_fov: Option<u64>,
-    pub max_reticle_size: Option<u64>,
+    pub camera_fov: Option<f64>,
+    pub max_reticle_size: Option<f64>,
     pub scale: Option<f64>,
-    pub y_offset: Option<i64>,
+    pub y_offset: Option<f64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct MaxLobbyVisualSettings {
-    pub camera_distance: Option<u64>,
-    pub camera_fov: Option<i64>,
-    pub scale: Option<u64>,
-    pub x_offset: Option<u64>,
-    pub y_offset: Option<i64>,
+    pub camera_distance: Option<f64>,
+    pub camera_fov: Option<f64>,
+    pub scale: Option<f64>,
+    pub x_offset: Option<f64>,
+    pub y_offset: Option<f64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct MaxPowerspotTopperVisualSettings {
     pub scale: f64,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct MaxStationVisualSettings {
-    pub scale: Option<f64>,
-    pub x_offset: Option<f64>,
-    pub y_offset: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -88,7 +80,7 @@ pub struct SizeSettings {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct BreadOverrides {
-    pub average_height_m: Option<u64>,
+    pub average_height_m: Option<f64>,
     pub average_weight_kg: Option<f64>,
     pub bread_mode: Option<BreadModeValue>,
     pub camera: Option<Camera>,
@@ -98,7 +90,7 @@ pub struct BreadOverrides {
     pub max_encounter_visual_settings: Option<MaxEncounterVisualSettings>,
     pub max_lobby_visual_settings: Option<MaxLobbyVisualSettings>,
     pub max_powerspot_topper_visual_settings: Option<MaxPowerspotTopperVisualSettings>,
-    pub max_station_visual_settings: Option<MaxStationVisualSettings>,
+    pub max_station_visual_settings: Option<MaxBattleVisualSettings>,
     pub model_height: Option<f64>,
     pub model_scale_v2: Option<f64>,
     pub size_settings: Option<SizeSettings>,

@@ -17,7 +17,7 @@ pub struct MinPointsToReachPlus3 {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct Misc {
-    pub attack_bonus_percentage: u64,
+    pub attack_bonus_percentage: f64,
     pub milestone_xp_reward: u64,
     pub unlocked_trading: [String; 1],
 }

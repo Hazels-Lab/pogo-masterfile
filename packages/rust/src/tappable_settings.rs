@@ -7,29 +7,29 @@ use serde::{Deserialize, Serialize};
 pub struct RemoveWhenTappedTappableAssetKey {
     pub remove_when_tapped: bool,
     pub tappable_asset_key: String,
-    pub visible_radius_meters: u64,
+    pub visible_radius_meters: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct AvgTappablesInViewPlus3 {
-    pub avg_tappables_in_view: u64,
-    pub buddy_fov_degress: u64,
-    pub movement_respawn_threshold_meters: u64,
-    pub spawn_angle_degrees: u64,
-    pub visible_radius_meters: u64,
+    pub avg_tappables_in_view: f64,
+    pub buddy_fov_degress: f64,
+    pub movement_respawn_threshold_meters: f64,
+    pub spawn_angle_degrees: f64,
+    pub visible_radius_meters: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct AvgTappablesInViewPlus5 {
-    pub avg_tappables_in_view: u64,
-    pub buddy_fov_degress: u64,
-    pub movement_respawn_threshold_meters: u64,
+    pub avg_tappables_in_view: f64,
+    pub buddy_fov_degress: f64,
+    pub movement_respawn_threshold_meters: f64,
     pub remove_when_tapped: bool,
-    pub spawn_angle_degrees: u64,
+    pub spawn_angle_degrees: f64,
     pub r#type: String,
-    pub visible_radius_meters: u64,
+    pub visible_radius_meters: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

@@ -2,6 +2,40 @@ import { isJsonObject } from "./helpers.ts";
 
 export type NumericKind = "uint" | "int" | "float";
 
+// Field names whose source JSON has been observed using decimal syntax (e.g.
+// "1.0", "0.5", "1e3"). JS's JSON.parse collapses "1.0" and "1" to the same
+// Number, so we can't recover float-vs-int from the parsed values alone — we
+// have to pre-scan the source text. When this set is populated (via
+// `configureFloatFieldHints`), inferObjectType biases any number field whose
+// name appears in the set toward `float` regardless of the numeric values
+// observed. False positives (treating an integer field as float) are
+// negligible cost — f64 represents integers up to 2^53 exactly, well above
+// any masterfile value. False negatives (failing to mark a float field) are
+// the costly case: serde refuses 1.0 → u64 conversion at deserialize time.
+let floatFieldHints: ReadonlySet<string> = new Set();
+
+export function configureFloatFieldHints(hints: ReadonlySet<string>): void {
+	floatFieldHints = hints;
+}
+
+// Single regex pass over the raw masterfile JSON text. Captures field names
+// followed by a numeric value with a fractional or exponent part. JSON
+// numbers without either are integers per the spec; numbers with `.X` or
+// `eX` syntax are floats whether or not the value is integral.
+//
+// Field names are simple identifiers in the masterfile (no escaped quotes,
+// no whitespace inside), so the `[^"\\]+` key pattern is safe. String
+// values starting with `"` after `:` don't match the digit start — no false
+// positives from JSON-strings-that-contain-decimal-text.
+export function scanFloatFields(rawJson: string): Set<string> {
+	const fields = new Set<string>();
+	const re = /"([^"\\]+)"\s*:\s*-?\d+(?:\.\d+(?:[eE][-+]?\d+)?|[eE][-+]?\d+)/g;
+	for (const m of rawJson.matchAll(re)) {
+		fields.add(m[1] ?? "");
+	}
+	return fields;
+}
+
 // Cap on how many distinct string literals are kept when widening for XData.
 // At or below this, the literal union is preserved (precision for validation);
 // above it, the field widens to bare `string` (avoids huge unions for things
@@ -206,11 +240,21 @@ function inferObjectType(values: readonly Record<string, unknown>[]): ObjectType
 
 	const properties = [...propertyValues.entries()]
 		.sort(([a], [b]) => a.localeCompare(b))
-		.map(([name, observedValues]) => ({
-			name,
-			type: inferJsonTypes(observedValues),
-			optional: propertyCounts.get(name) !== values.length,
-		}));
+		.map(([name, observedValues]) => {
+			let type = inferJsonTypes(observedValues);
+			// Float-field hint: if the source JSON ever wrote this field with
+			// decimal syntax, treat it as float regardless of the values JS
+			// surfaced after `JSON.parse`. Recovers the int-vs-float distinction
+			// that JS's number type erases.
+			if (type.kind === "number" && floatFieldHints.has(name)) {
+				type = { ...type, numericKind: "float" };
+			}
+			return {
+				name,
+				type,
+				optional: propertyCounts.get(name) !== values.length,
+			};
+		});
 
 	return { kind: "object", properties };
 }

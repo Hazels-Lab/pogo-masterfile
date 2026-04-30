@@ -49,9 +49,9 @@ pub struct SlowFreezeBonus {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct SpaceBonus {
-    pub encounter_range_meters: u64,
-    pub pokemon_visible_range_meters: u64,
-    pub server_allowable_encounter_range_meters: u64,
+    pub encounter_range_meters: f64,
+    pub pokemon_visible_range_meters: f64,
+    pub server_allowable_encounter_range_meters: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

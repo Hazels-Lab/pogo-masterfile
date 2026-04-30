@@ -18,7 +18,7 @@ pub struct WithCombatType {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct WithDistance {
-    pub distance_km: u64,
+    pub distance_km: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
