@@ -30,3 +30,5 @@ pub enum CombatNpcPersonality {
     Misc(Misc),
     DefensiveMaximumScoreDefensiveMinimumScore(DefensiveMaximumScoreDefensiveMinimumScore),
 }
+
+crate::masterfile_entry!(CombatNpcPersonalityEntry, CombatNpcPersonalityEntryData, combat_npc_personality: CombatNpcPersonality);

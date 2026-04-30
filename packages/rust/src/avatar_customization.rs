@@ -21,3 +21,5 @@ pub struct AvatarCustomization {
     pub unlock_player_level: Option<u64>,
     pub unlock_type: String,
 }
+
+crate::masterfile_entry!(AvatarCustomizationEntry, AvatarCustomizationEntryData, avatar_customization: AvatarCustomization);

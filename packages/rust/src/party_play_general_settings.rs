@@ -80,3 +80,5 @@ pub enum PartyPlayGeneralSettings {
     ComplianceZonesEnabledPlus12(ComplianceZonesEnabledPlus12),
     InviteExpirationMsPlus7(InviteExpirationMsPlus7),
 }
+
+crate::masterfile_entry!(PartyPlayGeneralSettingsEntry, PartyPlayGeneralSettingsEntryData, party_play_general_settings: PartyPlayGeneralSettings);

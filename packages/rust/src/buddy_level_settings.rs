@@ -22,3 +22,5 @@ pub enum BuddyLevelSettings {
     MinNonCumulativePointsRequiredUnlockedTraits(MinNonCumulativePointsRequiredUnlockedTraits),
     Misc(Misc),
 }
+
+crate::masterfile_entry!(BuddyLevelSettingsEntry, BuddyLevelSettingsEntryData, buddy_level_settings: BuddyLevelSettings);

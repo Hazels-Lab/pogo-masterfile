@@ -31,3 +31,5 @@ pub enum GenderSettings {
     Misc(Misc),
     Form(Form),
 }
+
+crate::masterfile_entry!(GenderSettingsEntry, GenderSettingsEntryData, gender_settings: GenderSettings);

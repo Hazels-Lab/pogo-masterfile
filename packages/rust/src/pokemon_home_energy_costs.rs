@@ -27,3 +27,5 @@ pub enum PokemonHomeEnergyCosts {
     PokemonClass(PokemonClass),
     Misc(Misc),
 }
+
+crate::masterfile_entry!(PokemonHomeEnergyCostsEntry, PokemonHomeEnergyCostsEntryData, pokemon_home_energy_costs: PokemonHomeEnergyCosts);

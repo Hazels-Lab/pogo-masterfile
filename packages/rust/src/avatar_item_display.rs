@@ -21,3 +21,5 @@ pub enum AvatarItemDisplay {
     DisplayStringId(DisplayStringId),
     Misc(Misc),
 }
+
+crate::masterfile_entry!(AvatarItemDisplayEntry, AvatarItemDisplayEntryData, avatar_item_display: AvatarItemDisplay);

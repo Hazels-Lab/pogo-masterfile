@@ -76,7 +76,7 @@ pub struct PokemonEncounterV2 {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct RewardsV2 {
+pub struct RewardsV3 {
     pub candy: Option<Candy>,
     pub exp: Option<u64>,
     pub item: Option<Item>,
@@ -89,9 +89,9 @@ pub struct RewardsV2 {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct RewardsV3 {
+pub struct RewardsV2 {
     pub rank: u64,
-    pub rewards: Vec<RewardsV2>,
+    pub rewards: Vec<RewardsV3>,
     pub track: String,
 }
 
@@ -144,7 +144,9 @@ pub struct Misc {
 #[serde(untagged)]
 pub enum EventPassTierSettings {
     MinPointsRequiredRewards(MinPointsRequiredRewards),
-    Rewards(RewardsV3),
+    Rewards(RewardsV2),
     ActiveBonusDisplaySettingsPlus3(ActiveBonusDisplaySettingsPlus3),
     Misc(Misc),
 }
+
+crate::masterfile_entry!(EventPassTierSettingsEntry, EventPassTierSettingsEntryData, event_pass_tier_settings: EventPassTierSettings);

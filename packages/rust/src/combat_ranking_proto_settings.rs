@@ -54,3 +54,5 @@ pub enum CombatRankingProtoSettings {
     MinRatingRequired(MinRatingRequired),
     Misc(Misc),
 }
+
+crate::masterfile_entry!(CombatRankingProtoSettingsEntry, CombatRankingProtoSettingsEntryData, combat_ranking_proto_settings: CombatRankingProtoSettings);

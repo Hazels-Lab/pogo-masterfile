@@ -137,3 +137,5 @@ pub struct ClientQuestTemplate {
     pub quest: Quest,
     pub quest_display: QuestDisplay,
 }
+
+crate::masterfile_entry!(ClientQuestTemplateEntry, ClientQuestTemplateEntryData, client_quest_template: ClientQuestTemplate);

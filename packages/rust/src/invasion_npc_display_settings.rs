@@ -39,3 +39,5 @@ pub struct InvasionNpcDisplaySettings {
     pub trainer_title: String,
     pub tutorial_on_loss_string: Option<String>,
 }
+
+crate::masterfile_entry!(InvasionNpcDisplaySettingsEntry, InvasionNpcDisplaySettingsEntryData, invasion_npc_display_settings: InvasionNpcDisplaySettings);

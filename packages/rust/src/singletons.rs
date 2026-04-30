@@ -3,18 +3,6 @@
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct ItemCurrencyValues;
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct QuestDialogueInboxSettings;
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct RaidEntryCostSettings;
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct SoftSfidaSettings;
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct AccessibilitySettings {
     pub enabled: bool,
@@ -170,6 +158,18 @@ pub struct AssetRefreshProto {
 #[serde(rename_all = "camelCase")]
 pub struct AvatarFeatureFlags {
     pub corndog_enabled: bool,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct AvatarStoreFooterFlags {
+    pub enabled: bool,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct AvatarStoreSubcategoryFilteringFlags {
+    pub enabled: bool,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1320,6 +1320,10 @@ pub struct EventPlannerPopularNotificationSettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct ExternalAddressableAssetsSettings {}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct FeatureUnlockLevelSettings {
     pub lures_unlock_level: u64,
     pub rare_candy_conversion_unlock_level: u64,
@@ -1591,6 +1595,12 @@ pub struct LanguageSelectorSettings {
 #[serde(rename_all = "camelCase")]
 pub struct LuckyPokemonSettings {
     pub power_up_stardust_discount_percent: f64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct MainMenuChanges {
+    pub enabled: bool,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2276,6 +2286,12 @@ pub struct PopupControlSettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct PostcardCollectionSettings {
+    pub enabled: bool,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct PowerUpPokestopsSettings {
     pub power_up_pokestops_min_player_level: u64,
     pub validate_pokestop_on_fort_search_percent: u64,
@@ -2899,3 +2915,281 @@ pub struct WeatherBonusSettings {
     pub raid_encounter_guaranteed_individual_values: u64,
     pub stardust_bonus_multiplier: f64,
 }
+
+crate::masterfile_entry!(AccessibilitySettingsEntry, AccessibilitySettingsEntryData, accessibility_settings: AccessibilitySettings);
+
+crate::masterfile_entry!(AdditiveSceneSettingsEntry, AdditiveSceneSettingsEntryData, additive_scene_settings: AdditiveSceneSettings);
+
+crate::masterfile_entry!(AddressablePokemonSettingsEntry, AddressablePokemonSettingsEntryData, addressable_pokemon_settings: AddressablePokemonSettings);
+
+crate::masterfile_entry!(AddressBookImportSettingsEntry, AddressBookImportSettingsEntryData, address_book_import_settings: AddressBookImportSettings);
+
+crate::masterfile_entry!(AdvancedSettingsEntry, AdvancedSettingsEntryData, advanced_settings: AdvancedSettings);
+
+crate::masterfile_entry!(ArPhotoFeatureFlagsEntry, ArPhotoFeatureFlagsEntryData, ar_photo_feature_flags: ArPhotoFeatureFlags);
+
+crate::masterfile_entry!(ArTelemetrySettingsEntry, ArTelemetrySettingsEntryData, ar_telemetry_settings: ArTelemetrySettings);
+
+crate::masterfile_entry!(AssetRefreshProtoEntry, AssetRefreshProtoEntryData, asset_refresh_proto: AssetRefreshProto);
+
+crate::masterfile_entry!(AvatarFeatureFlagsEntry, AvatarFeatureFlagsEntryData, avatar_feature_flags: AvatarFeatureFlags);
+
+crate::masterfile_entry!(AvatarStoreFooterFlagsEntry, AvatarStoreFooterFlagsEntryData, avatar_store_footer_flags: AvatarStoreFooterFlags);
+
+crate::masterfile_entry!(AvatarStoreSubcategoryFilteringFlagsEntry, AvatarStoreSubcategoryFilteringFlagsEntryData, avatar_store_subcategory_filtering_flags: AvatarStoreSubcategoryFilteringFlags);
+
+crate::masterfile_entry!(BackgroundModeSettingsEntry, BackgroundModeSettingsEntryData, background_mode_settings: BackgroundModeSettings);
+
+crate::masterfile_entry!(BattleAnimationSettingsEntry, BattleAnimationSettingsEntryData, battle_animation_settings: BattleAnimationSettings);
+
+crate::masterfile_entry!(BattleHubBadgeSettingsEntry, BattleHubBadgeSettingsEntryData, battle_hub_badge_settings: BattleHubBadgeSettings);
+
+crate::masterfile_entry!(BattleHubOrderSettingsEntry, BattleHubOrderSettingsEntryData, battle_hub_order_settings: BattleHubOrderSettings);
+
+crate::masterfile_entry!(BattleInputBufferSettingsEntry, BattleInputBufferSettingsEntryData, battle_input_buffer_settings: BattleInputBufferSettings);
+
+crate::masterfile_entry!(BattlePartySettingsEntry, BattlePartySettingsEntryData, battle_party_settings: BattlePartySettings);
+
+crate::masterfile_entry!(BattleSettingsEntry, BattleSettingsEntryData, battle_settings: BattleSettings);
+
+crate::masterfile_entry!(BattleVisualSettingsEntry, BattleVisualSettingsEntryData, battle_visual_settings: BattleVisualSettings);
+
+crate::masterfile_entry!(BelugaPokemonWhitelistEntry, BelugaPokemonWhitelistEntryData, beluga_pokemon_whitelist: BelugaPokemonWhitelist);
+
+crate::masterfile_entry!(BestFriendsPlusSettingsEntry, BestFriendsPlusSettingsEntryData, best_friends_plus_settings: BestFriendsPlusSettings);
+
+crate::masterfile_entry!(BreadBattleClientSettingsEntry, BreadBattleClientSettingsEntryData, bread_battle_client_settings: BreadBattleClientSettings);
+
+crate::masterfile_entry!(BreadFeatureFlagsEntry, BreadFeatureFlagsEntryData, bread_feature_flags: BreadFeatureFlags);
+
+crate::masterfile_entry!(BreadLobbyCounterSettingsEntry, BreadLobbyCounterSettingsEntryData, bread_lobby_counter_settings: BreadLobbyCounterSettings);
+
+crate::masterfile_entry!(BreadLobbyUpdateSettingsEntry, BreadLobbyUpdateSettingsEntryData, bread_lobby_update_settings: BreadLobbyUpdateSettings);
+
+crate::masterfile_entry!(BreadMoveMappingsEntry, BreadMoveMappingsEntryData, bread_move_mappings: BreadMoveMappings);
+
+crate::masterfile_entry!(BreadPokemonScalingSettingsEntry, BreadPokemonScalingSettingsEntryData, bread_pokemon_scaling_settings: BreadPokemonScalingSettings);
+
+crate::masterfile_entry!(BreadSettingsEntry, BreadSettingsEntryData, bread_settings: BreadSettings);
+
+crate::masterfile_entry!(BuddyEncounterCameoSettingsEntry, BuddyEncounterCameoSettingsEntryData, buddy_encounter_cameo_settings: BuddyEncounterCameoSettings);
+
+crate::masterfile_entry!(BuddyHungerSettingsEntry, BuddyHungerSettingsEntryData, buddy_hunger_settings: BuddyHungerSettings);
+
+crate::masterfile_entry!(BuddyInteractionSettingsEntry, BuddyInteractionSettingsEntryData, buddy_interaction_settings: BuddyInteractionSettings);
+
+crate::masterfile_entry!(BuddySwapSettingsEntry, BuddySwapSettingsEntryData, buddy_swap_settings: BuddySwapSettings);
+
+crate::masterfile_entry!(BuddyWalkSettingsEntry, BuddyWalkSettingsEntryData, buddy_walk_settings: BuddyWalkSettings);
+
+crate::masterfile_entry!(BulkHealingSettingsEntry, BulkHealingSettingsEntryData, bulk_healing_settings: BulkHealingSettings);
+
+crate::masterfile_entry!(ButterflyCollectorSettingsEntry, ButterflyCollectorSettingsEntryData, butterfly_collector_settings: ButterflyCollectorSettings);
+
+crate::masterfile_entry!(CampfireSettingsEntry, CampfireSettingsEntryData, campfire_settings: CampfireSettings);
+
+crate::masterfile_entry!(CatchRadiusMultiplierSettingsEntry, CatchRadiusMultiplierSettingsEntryData, catch_radius_multiplier_settings: CatchRadiusMultiplierSettings);
+
+crate::masterfile_entry!(CombatCompetitiveSeasonSettingsEntry, CombatCompetitiveSeasonSettingsEntryData, combat_competitive_season_settings: CombatCompetitiveSeasonSettings);
+
+crate::masterfile_entry!(CombatLeagueSettingsEntry, CombatLeagueSettingsEntryData, combat_league_settings: CombatLeagueSettings);
+
+crate::masterfile_entry!(CombatSettingsEntry, CombatSettingsEntryData, combat_settings: CombatSettings);
+
+crate::masterfile_entry!(CombatStatStageSettingsEntry, CombatStatStageSettingsEntryData, combat_stat_stage_settings: CombatStatStageSettings);
+
+crate::masterfile_entry!(ContestSettingsEntry, ContestSettingsEntryData, contest_settings: ContestSettings);
+
+crate::masterfile_entry!(ConversationSettingsEntry, ConversationSettingsEntryData, conversation_settings: ConversationSettings);
+
+crate::masterfile_entry!(CrossGameSocialSettingsEntry, CrossGameSocialSettingsEntryData, cross_game_social_settings: CrossGameSocialSettings);
+
+crate::masterfile_entry!(DailyAdventureIncenseSettingsEntry, DailyAdventureIncenseSettingsEntryData, daily_adventure_incense_settings: DailyAdventureIncenseSettings);
+
+crate::masterfile_entry!(DeepLinkingSettingsEntry, DeepLinkingSettingsEntryData, deep_linking_settings: DeepLinkingSettings);
+
+crate::masterfile_entry!(EggHatchImprovementsSettingsEntry, EggHatchImprovementsSettingsEntryData, egg_hatch_improvements_settings: EggHatchImprovementsSettings);
+
+crate::masterfile_entry!(EncounterSettingsEntry, EncounterSettingsEntryData, encounter_settings: EncounterSettings);
+
+crate::masterfile_entry!(EventPlannerPopularNotificationSettingsEntry, EventPlannerPopularNotificationSettingsEntryData, event_planner_popular_notification_settings: EventPlannerPopularNotificationSettings);
+
+crate::masterfile_entry!(ExternalAddressableAssetsSettingsEntry, ExternalAddressableAssetsSettingsEntryData, external_addressable_assets_settings: ExternalAddressableAssetsSettings);
+
+crate::masterfile_entry!(FeatureUnlockLevelSettingsEntry, FeatureUnlockLevelSettingsEntryData, feature_unlock_level_settings: FeatureUnlockLevelSettings);
+
+crate::masterfile_entry!(GeotargetedQuestSettingsEntry, GeotargetedQuestSettingsEntryData, geotargeted_quest_settings: GeotargetedQuestSettings);
+
+crate::masterfile_entry!(GiftingSettingsEntry, GiftingSettingsEntryData, gifting_settings: GiftingSettings);
+
+crate::masterfile_entry!(GuiSearchSettingsEntry, GuiSearchSettingsEntryData, gui_search_settings: GuiSearchSettings);
+
+crate::masterfile_entry!(GymBadgeSettingsEntry, GymBadgeSettingsEntryData, gym_badge_settings: GymBadgeSettings);
+
+crate::masterfile_entry!(HapticsSettingsEntry, HapticsSettingsEntryData, haptics_settings: HapticsSettings);
+
+crate::masterfile_entry!(IapSettingsEntry, IapSettingsEntryData, iap_settings: IapSettings);
+
+crate::masterfile_entry!(IbfcLightweightSettingsEntry, IbfcLightweightSettingsEntryData, ibfc_lightweight_settings: IbfcLightweightSettings);
+
+crate::masterfile_entry!(ImpressionTrackingSettingsEntry, ImpressionTrackingSettingsEntryData, impression_tracking_settings: ImpressionTrackingSettings);
+
+crate::masterfile_entry!(InAppSurveySettingsEntry, InAppSurveySettingsEntryData, in_app_survey_settings: InAppSurveySettings);
+
+crate::masterfile_entry!(IncidentPrioritySettingsEntry, IncidentPrioritySettingsEntryData, incident_priority_settings: IncidentPrioritySettings);
+
+crate::masterfile_entry!(IncidentVisibilitySettingsEntry, IncidentVisibilitySettingsEntryData, incident_visibility_settings: IncidentVisibilitySettings);
+
+crate::masterfile_entry!(InventorySettingsEntry, InventorySettingsEntryData, inventory_settings: InventorySettings);
+
+crate::masterfile_entry!(IrisSocialSettingsEntry, IrisSocialSettingsEntryData, iris_social_settings: IrisSocialSettings);
+
+crate::masterfile_entry!(IrisSocialUxFunnelSettingsEntry, IrisSocialUxFunnelSettingsEntryData, iris_social_ux_funnel_settings: IrisSocialUxFunnelSettings);
+
+crate::masterfile_stub_entry!(ItemCurrencyValuesEntry, ItemCurrencyValuesEntryData);
+
+crate::masterfile_entry!(ItemInventoryUpdateSettingsEntry, ItemInventoryUpdateSettingsEntryData, item_inventory_update_settings: ItemInventoryUpdateSettings);
+
+crate::masterfile_entry!(JoinRaidViaFriendListSettingsEntry, JoinRaidViaFriendListSettingsEntryData, join_raid_via_friend_list_settings: JoinRaidViaFriendListSettings);
+
+crate::masterfile_entry!(LanguageSelectorSettingsEntry, LanguageSelectorSettingsEntryData, language_selector_settings: LanguageSelectorSettings);
+
+crate::masterfile_entry!(LuckyPokemonSettingsEntry, LuckyPokemonSettingsEntryData, lucky_pokemon_settings: LuckyPokemonSettings);
+
+crate::masterfile_entry!(MainMenuChangesEntry, MainMenuChangesEntryData, main_menu_changes: MainMenuChanges);
+
+crate::masterfile_entry!(MapDisplaySettingsEntry, MapDisplaySettingsEntryData, map_display_settings: MapDisplaySettings);
+
+crate::masterfile_entry!(MapObjectsInteractionRangeSettingsEntry, MapObjectsInteractionRangeSettingsEntryData, map_objects_interaction_range_settings: MapObjectsInteractionRangeSettings);
+
+crate::masterfile_entry!(MegaEvoSettingsEntry, MegaEvoSettingsEntryData, mega_evo_settings: MegaEvoSettings);
+
+crate::masterfile_entry!(MonodepthSettingsEntry, MonodepthSettingsEntryData, monodepth_settings: MonodepthSettings);
+
+crate::masterfile_entry!(MpSettingsEntry, MpSettingsEntryData, mp_settings: MpSettings);
+
+crate::masterfile_entry!(NaturalArtDayNightFeatureSettingsEntry, NaturalArtDayNightFeatureSettingsEntryData, natural_art_day_night_feature_settings: NaturalArtDayNightFeatureSettings);
+
+crate::masterfile_entry!(NearbyPokemonSettingsEntry, NearbyPokemonSettingsEntryData, nearby_pokemon_settings: NearbyPokemonSettings);
+
+crate::masterfile_entry!(NeutralAvatarSettingsEntry, NeutralAvatarSettingsEntryData, neutral_avatar_settings: NeutralAvatarSettings);
+
+crate::masterfile_entry!(OnboardingSettingsEntry, OnboardingSettingsEntryData, onboarding_settings: OnboardingSettings);
+
+crate::masterfile_entry!(OptimizationsProtoEntry, OptimizationsProtoEntryData, optimizations_proto: OptimizationsProto);
+
+crate::masterfile_entry!(PartyDarkLaunchSettingsEntry, PartyDarkLaunchSettingsEntryData, party_dark_launch_settings: PartyDarkLaunchSettings);
+
+crate::masterfile_entry!(PartyIapBoostsSettingsEntry, PartyIapBoostsSettingsEntryData, party_iap_boosts_settings: PartyIapBoostsSettings);
+
+crate::masterfile_entry!(PartyRecommendationSettingsEntry, PartyRecommendationSettingsEntryData, party_recommendation_settings: PartyRecommendationSettings);
+
+crate::masterfile_entry!(PhotoSettingsEntry, PhotoSettingsEntryData, photo_settings: PhotoSettings);
+
+crate::masterfile_entry!(PlannerSettingsEntry, PlannerSettingsEntryData, planner_settings: PlannerSettings);
+
+crate::masterfile_entry!(PlayerBonusSystemSettingsEntry, PlayerBonusSystemSettingsEntryData, player_bonus_system_settings: PlayerBonusSystemSettings);
+
+crate::masterfile_entry!(PlayerLevelEntry, PlayerLevelEntryData, player_level: PlayerLevel);
+
+crate::masterfile_entry!(PokeballThrowPropertySettingsEntry, PokeballThrowPropertySettingsEntryData, pokeball_throw_property_settings: PokeballThrowPropertySettings);
+
+crate::masterfile_entry!(PokecoinPurchaseDisplayGmtEntry, PokecoinPurchaseDisplayGmtEntryData, pokecoin_purchase_display_gmt: PokecoinPurchaseDisplayGmt);
+
+crate::masterfile_entry!(PokedexCategoriesSettingsEntry, PokedexCategoriesSettingsEntryData, pokedex_categories_settings: PokedexCategoriesSettings);
+
+crate::masterfile_entry!(PokedexSizeStatsSystemSettingsEntry, PokedexSizeStatsSystemSettingsEntryData, pokedex_size_stats_system_settings: PokedexSizeStatsSystemSettings);
+
+crate::masterfile_entry!(Pokedexv2featureFlagsEntry, Pokedexv2featureFlagsEntryData, pokedexv2_feature_flags: Pokedexv2featureFlags);
+
+crate::masterfile_entry!(PokedexV2settingsEntry, PokedexV2settingsEntryData, pokedex_v2_settings: PokedexV2settings);
+
+crate::masterfile_entry!(PokemonFxSettingsEntry, PokemonFxSettingsEntryData, pokemon_fx_settings: PokemonFxSettings);
+
+crate::masterfile_entry!(PokemonHomeSettingsEntry, PokemonHomeSettingsEntryData, pokemon_home_settings: PokemonHomeSettings);
+
+crate::masterfile_entry!(PokemonTagSettingsEntry, PokemonTagSettingsEntryData, pokemon_tag_settings: PokemonTagSettings);
+
+crate::masterfile_entry!(PopupControlSettingsEntry, PopupControlSettingsEntryData, popup_control_settings: PopupControlSettings);
+
+crate::masterfile_entry!(PostcardCollectionSettingsEntry, PostcardCollectionSettingsEntryData, postcard_collection_settings: PostcardCollectionSettings);
+
+crate::masterfile_entry!(PowerUpPokestopsSettingsEntry, PowerUpPokestopsSettingsEntryData, power_up_pokestops_settings: PowerUpPokestopsSettings);
+
+crate::masterfile_entry!(PrimalEvoSettingsEntry, PrimalEvoSettingsEntryData, primal_evo_settings: PrimalEvoSettings);
+
+crate::masterfile_entry!(PtcOauthSettingsEntry, PtcOauthSettingsEntryData, ptc_oauth_settings: PtcOauthSettings);
+
+crate::masterfile_stub_entry!(QuestDialogueInboxSettingsEntry, QuestDialogueInboxSettingsEntryData);
+
+crate::masterfile_entry!(QuickInviteSettingsEntry, QuickInviteSettingsEntryData, quick_invite_settings: QuickInviteSettings);
+
+crate::masterfile_stub_entry!(RaidEntryCostSettingsEntry, RaidEntryCostSettingsEntryData);
+
+crate::masterfile_entry!(RaidLobbyCounterSettingsEntry, RaidLobbyCounterSettingsEntryData, raid_lobby_counter_settings: RaidLobbyCounterSettings);
+
+crate::masterfile_entry!(RaidSettingsEntry, RaidSettingsEntryData, raid_settings: RaidSettings);
+
+crate::masterfile_entry!(ReferralSettingsEntry, ReferralSettingsEntryData, referral_settings: ReferralSettings);
+
+crate::masterfile_entry!(RemoteTradeSettingsEntry, RemoteTradeSettingsEntryData, remote_trade_settings: RemoteTradeSettings);
+
+crate::masterfile_entry!(RouteBadgeSettingsEntry, RouteBadgeSettingsEntryData, route_badge_settings: RouteBadgeSettings);
+
+crate::masterfile_entry!(RouteCreationSettingsEntry, RouteCreationSettingsEntryData, route_creation_settings: RouteCreationSettings);
+
+crate::masterfile_entry!(RouteDiscoverySettingsEntry, RouteDiscoverySettingsEntryData, route_discovery_settings: RouteDiscoverySettings);
+
+crate::masterfile_entry!(RoutePinSettingsEntry, RoutePinSettingsEntryData, route_pin_settings: RoutePinSettings);
+
+crate::masterfile_entry!(RoutePlaySettingsEntry, RoutePlaySettingsEntryData, route_play_settings: RoutePlaySettings);
+
+crate::masterfile_entry!(RoutesNearbyNotifSettingsEntry, RoutesNearbyNotifSettingsEntryData, routes_nearby_notif_settings: RoutesNearbyNotifSettings);
+
+crate::masterfile_entry!(RoutesPartyPlayInteropSettingsEntry, RoutesPartyPlayInteropSettingsEntryData, routes_party_play_interop_settings: RoutesPartyPlayInteropSettings);
+
+crate::masterfile_entry!(RouteStampCategorySettingsEntry, RouteStampCategorySettingsEntryData, route_stamp_category_settings: RouteStampCategorySettings);
+
+crate::masterfile_entry!(SharedFusionSettingsEntry, SharedFusionSettingsEntryData, shared_fusion_settings: SharedFusionSettings);
+
+crate::masterfile_entry!(SharedMoveSettingsEntry, SharedMoveSettingsEntryData, shared_move_settings: SharedMoveSettings);
+
+crate::masterfile_stub_entry!(SoftSfidaSettingsEntry, SoftSfidaSettingsEntryData);
+
+crate::masterfile_entry!(SourdoughMoveMappingSettingsEntry, SourdoughMoveMappingSettingsEntryData, sourdough_move_mapping_settings: SourdoughMoveMappingSettings);
+
+crate::masterfile_entry!(SpecialEggSettingsEntry, SpecialEggSettingsEntryData, special_egg_settings: SpecialEggSettings);
+
+crate::masterfile_entry!(SponsoredGeofenceGiftSettingsEntry, SponsoredGeofenceGiftSettingsEntryData, sponsored_geofence_gift_settings: SponsoredGeofenceGiftSettings);
+
+crate::masterfile_entry!(SquashSettingsEntry, SquashSettingsEntryData, squash_settings: SquashSettings);
+
+crate::masterfile_entry!(StampCollectionSettingsEntry, StampCollectionSettingsEntryData, stamp_collection_settings: StampCollectionSettings);
+
+crate::masterfile_entry!(StationedPokemonTableSettingsEntry, StationedPokemonTableSettingsEntryData, stationed_pokemon_table_settings: StationedPokemonTableSettings);
+
+crate::masterfile_entry!(StickerCategorySettingsEntry, StickerCategorySettingsEntryData, sticker_category_settings: StickerCategorySettings);
+
+crate::masterfile_entry!(StyleShopSettingsEntry, StyleShopSettingsEntryData, style_shop_settings: StyleShopSettings);
+
+crate::masterfile_entry!(TicketGiftingSettingsEntry, TicketGiftingSettingsEntryData, ticket_gifting_settings: TicketGiftingSettings);
+
+crate::masterfile_entry!(TodayViewSettingsEntry, TodayViewSettingsEntryData, today_view_settings: TodayViewSettings);
+
+crate::masterfile_entry!(TutorialSettingsEntry, TutorialSettingsEntryData, tutorial_settings: TutorialSettings);
+
+crate::masterfile_entry!(UsernameSuggestionSettingsEntry, UsernameSuggestionSettingsEntryData, username_suggestion_settings: UsernameSuggestionSettings);
+
+crate::masterfile_entry!(VerboseLogCombatSettingsEntry, VerboseLogCombatSettingsEntryData, verbose_log_combat_settings: VerboseLogCombatSettings);
+
+crate::masterfile_entry!(VerboseLogRaidSettingsEntry, VerboseLogRaidSettingsEntryData, verbose_log_raid_settings: VerboseLogRaidSettings);
+
+crate::masterfile_entry!(VistaGeneralSettingsEntry, VistaGeneralSettingsEntryData, vista_general_settings: VistaGeneralSettings);
+
+crate::masterfile_entry!(VnextBattleConfigEntry, VnextBattleConfigEntryData, vnext_battle_config: VnextBattleConfig);
+
+crate::masterfile_entry!(VsSeekerClientSettingsEntry, VsSeekerClientSettingsEntryData, vs_seeker_client_settings: VsSeekerClientSettings);
+
+crate::masterfile_entry!(VsSeekerScheduleSettingsEntry, VsSeekerScheduleSettingsEntryData, vs_seeker_schedule_settings: VsSeekerScheduleSettings);
+
+crate::masterfile_entry!(WeatherBonusSettingsEntry, WeatherBonusSettingsEntryData, weather_bonus_settings: WeatherBonusSettings);

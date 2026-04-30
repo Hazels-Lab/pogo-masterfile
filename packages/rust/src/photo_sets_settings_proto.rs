@@ -18,3 +18,5 @@ pub struct PhotoSetsSettingsProto {
     pub name_key: String,
     pub pokemon: Vec<Pokemon>,
 }
+
+crate::masterfile_entry!(PhotoSetsSettingsProtoEntry, PhotoSetsSettingsProtoEntryData, photo_sets_settings_proto: PhotoSetsSettingsProto);

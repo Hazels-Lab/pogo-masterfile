@@ -15,3 +15,5 @@ pub struct Group {
 pub struct AvatarGroupOrderSettings {
     pub group: Vec<Group>,
 }
+
+crate::masterfile_entry!(AvatarGroupOrderSettingsEntry, AvatarGroupOrderSettingsEntryData, avatar_group_order_settings: AvatarGroupOrderSettings);

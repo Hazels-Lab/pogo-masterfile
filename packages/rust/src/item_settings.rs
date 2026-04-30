@@ -209,3 +209,5 @@ pub struct ItemSettings {
     pub time_period_counters: Option<TimePeriodCounters>,
     pub xp_boost: Option<XpBoost>,
 }
+
+crate::masterfile_entry!(ItemSettingsEntry, ItemSettingsEntryData, item_settings: ItemSettings);

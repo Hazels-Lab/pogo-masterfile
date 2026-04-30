@@ -15,3 +15,5 @@ pub struct TemporaryEvolutionSettings {
     pub pokemon_id: String,
     pub temporary_evolutions: Vec<TemporaryEvolutions>,
 }
+
+crate::masterfile_entry!(TemporaryEvolutionSettingsEntry, TemporaryEvolutionSettingsEntryData, temporary_evolution_settings: TemporaryEvolutionSettings);

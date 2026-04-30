@@ -7,3 +7,5 @@ use serde::{Deserialize, Serialize};
 pub struct RollBack {
     pub rollback_percentage: u64,
 }
+
+crate::masterfile_entry!(RollBackEntry, RollBackEntryData, roll_back: RollBack);

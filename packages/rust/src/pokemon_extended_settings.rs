@@ -140,3 +140,5 @@ pub struct PokemonExtendedSettings {
     pub temp_evo_overrides: Option<Vec<TempEvoOverrides>>,
     pub unique_id: String,
 }
+
+crate::masterfile_entry!(PokemonExtendedSettingsEntry, PokemonExtendedSettingsEntryData, pokemon_extended_settings: PokemonExtendedSettings);

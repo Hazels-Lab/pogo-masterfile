@@ -52,3 +52,5 @@ pub enum FriendshipMilestoneSettings {
     MinPointsToReach(MinPointsToReach),
     MinPointsToReachPlus4(MinPointsToReachPlus4),
 }
+
+crate::masterfile_entry!(FriendshipMilestoneSettingsEntry, FriendshipMilestoneSettingsEntryData, friendship_milestone_settings: FriendshipMilestoneSettings);

@@ -68,3 +68,5 @@ pub struct EventPassSettings {
     pub prefix: String,
     pub track_conditions: (TrackConditions, TrackConditionsV2),
 }
+
+crate::masterfile_entry!(EventPassSettingsEntry, EventPassSettingsEntryData, event_pass_settings: EventPassSettings);

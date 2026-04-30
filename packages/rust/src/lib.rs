@@ -1,5 +1,44 @@
 // Generated from Pokémon GO masterfile — root crate barrel.
 
+/// Defines an Entry + EntryData pair for a discriminator that carries a payload.
+/// Used by the codegen; consumers of this crate normally don't invoke directly.
+#[macro_export]
+macro_rules! masterfile_entry {
+	($entry:ident, $data:ident, $field:ident: $ty:ty) => {
+		#[derive(Debug, Clone, ::serde::Serialize, ::serde::Deserialize)]
+		#[serde(rename_all = "camelCase")]
+		pub struct $entry {
+			pub template_id: String,
+			pub data: $data,
+		}
+		#[derive(Debug, Clone, ::serde::Serialize, ::serde::Deserialize)]
+		#[serde(rename_all = "camelCase")]
+		pub struct $data {
+			pub template_id: String,
+			pub $field: $ty,
+		}
+	};
+}
+
+/// Defines an Entry + EntryData pair for a stub discriminator (no payload).
+/// Stub entries have JSON shape `{ templateId, data: { templateId } }`.
+#[macro_export]
+macro_rules! masterfile_stub_entry {
+	($entry:ident, $data:ident) => {
+		#[derive(Debug, Clone, ::serde::Serialize, ::serde::Deserialize)]
+		#[serde(rename_all = "camelCase")]
+		pub struct $entry {
+			pub template_id: String,
+			pub data: $data,
+		}
+		#[derive(Debug, Clone, ::serde::Serialize, ::serde::Deserialize)]
+		#[serde(rename_all = "camelCase")]
+		pub struct $data {
+			pub template_id: String,
+		}
+	};
+}
+
 pub mod avatar_customization;
 pub mod avatar_group_order_settings;
 pub mod avatar_item_display;

@@ -33,3 +33,5 @@ pub enum LocationCardSettings {
     CardTypeVfxAddress(CardTypeVfxAddress),
     CardType(CardType),
 }
+
+crate::masterfile_entry!(LocationCardSettingsEntry, LocationCardSettingsEntryData, location_card_settings: LocationCardSettings);

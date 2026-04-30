@@ -19,3 +19,5 @@ pub struct PokemonUpgrades {
     pub xl_candy_min_player_level: u64,
     pub xl_candy_min_pokemon_level: u64,
 }
+
+crate::masterfile_entry!(PokemonUpgradesEntry, PokemonUpgradesEntryData, pokemon_upgrades: PokemonUpgrades);

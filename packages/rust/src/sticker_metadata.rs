@@ -13,3 +13,5 @@ pub struct StickerMetadata {
     pub sticker_id: String,
     pub sticker_url: Option<String>,
 }
+
+crate::masterfile_entry!(StickerMetadataEntry, StickerMetadataEntryData, sticker_metadata: StickerMetadata);

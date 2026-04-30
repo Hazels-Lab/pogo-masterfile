@@ -23,3 +23,5 @@ pub enum PokemonScaleSettings {
     PokemonScaleMode(PokemonScaleMode),
     Misc(Misc),
 }
+
+crate::masterfile_entry!(PokemonScaleSettingsEntry, PokemonScaleSettingsEntryData, pokemon_scale_settings: PokemonScaleSettings);

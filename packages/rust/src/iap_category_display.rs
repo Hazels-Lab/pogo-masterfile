@@ -15,3 +15,5 @@ pub struct IapCategoryDisplay {
     pub name: Option<String>,
     pub sort_order: Option<u64>,
 }
+
+crate::masterfile_entry!(IapCategoryDisplayEntry, IapCategoryDisplayEntryData, iap_category_display: IapCategoryDisplay);

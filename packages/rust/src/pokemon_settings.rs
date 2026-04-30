@@ -330,3 +330,5 @@ pub struct PokemonSettings {
     pub use_iris_flying_placement: Option<bool>,
     pub weight_std_dev: f64,
 }
+
+crate::masterfile_entry!(PokemonSettingsEntry, PokemonSettingsEntryData, pokemon_settings: PokemonSettings);

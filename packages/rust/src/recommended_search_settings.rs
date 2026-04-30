@@ -22,3 +22,5 @@ pub enum RecommendedSearchSettings {
     SearchKey(SearchKey),
     AppendSearchString(AppendSearchString),
 }
+
+crate::masterfile_entry!(RecommendedSearchSettingsEntry, RecommendedSearchSettingsEntryData, recommended_search_settings: RecommendedSearchSettings);

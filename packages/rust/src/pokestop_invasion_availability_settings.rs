@@ -8,3 +8,5 @@ pub struct PokestopInvasionAvailabilitySettings {
     pub availability_end_minute: String,
     pub availability_start_minute: String,
 }
+
+crate::masterfile_entry!(PokestopInvasionAvailabilitySettingsEntry, PokestopInvasionAvailabilitySettingsEntryData, pokestop_invasion_availability_settings: PokestopInvasionAvailabilitySettings);

@@ -26,14 +26,14 @@ pub struct LootItem {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ConsolationItems {
+pub struct ConsolationItemsV2 {
     pub loot_item: [LootItem; 1],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ConsolationItemsV2 {
-    pub consolation_items: ConsolationItems,
+pub struct ConsolationItems {
+    pub consolation_items: ConsolationItemsV2,
     pub expiration_time: String,
     pub item: String,
 }
@@ -65,6 +65,8 @@ pub struct EmergencyExpirationTimeItemEnablementSettings {
 pub enum ItemExpirationSettings {
     EmergencyExpirationTime(EmergencyExpirationTime),
     Misc(Misc),
-    ConsolationItems(ConsolationItemsV2),
+    ConsolationItems(ConsolationItems),
     EmergencyExpirationTimeItemEnablementSettings(EmergencyExpirationTimeItemEnablementSettings),
 }
+
+crate::masterfile_entry!(ItemExpirationSettingsEntry, ItemExpirationSettingsEntryData, item_expiration_settings: ItemExpirationSettings);

@@ -34,3 +34,5 @@ pub struct CombatNpcTrainer {
     pub trainer_quote: String,
     pub trainer_title: String,
 }
+
+crate::masterfile_entry!(CombatNpcTrainerEntry, CombatNpcTrainerEntryData, combat_npc_trainer: CombatNpcTrainer);

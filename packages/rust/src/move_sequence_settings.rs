@@ -7,3 +7,5 @@ use serde::{Deserialize, Serialize};
 pub struct MoveSequenceSettings {
     pub sequence: Vec<String>,
 }
+
+crate::masterfile_entry!(MoveSequenceSettingsEntry, MoveSequenceSettingsEntryData, move_sequence_settings: MoveSequenceSettings);

@@ -90,3 +90,5 @@ pub struct NonCombatMoveSettings {
     pub extra_duration_ms: String,
     pub unique_id: String,
 }
+
+crate::masterfile_entry!(NonCombatMoveSettingsEntry, NonCombatMoveSettingsEntryData, non_combat_move_settings: NonCombatMoveSettings);

@@ -32,3 +32,5 @@ pub enum PokemonFamily {
     MegaEvolvablePokemonId(MegaEvolvablePokemonId),
     MegaEvolvablePokemonIds(MegaEvolvablePokemonIds),
 }
+
+crate::masterfile_entry!(PokemonFamilyEntry, PokemonFamilyEntryData, pokemon_family: PokemonFamily);

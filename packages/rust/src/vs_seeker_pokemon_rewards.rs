@@ -101,3 +101,5 @@ pub enum VsSeekerPokemonRewards {
     Misc(Misc),
     RewardTrack(RewardTrack),
 }
+
+crate::masterfile_entry!(VsSeekerPokemonRewardsEntry, VsSeekerPokemonRewardsEntryData, vs_seeker_pokemon_rewards: VsSeekerPokemonRewards);

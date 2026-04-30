@@ -10,21 +10,23 @@ pub struct Misc {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct SubCodeGateList {
+pub struct SubCodeGateListV2 {
     pub is_enabled: Option<bool>,
     pub name: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct SubCodeGateListV2 {
+pub struct SubCodeGateList {
     pub is_enabled: bool,
-    pub sub_code_gate_list: SubCodeGateList,
+    pub sub_code_gate_list: SubCodeGateListV2,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum CodeGateProto {
     Misc(Misc),
-    SubCodeGateList(SubCodeGateListV2),
+    SubCodeGateList(SubCodeGateList),
 }
+
+crate::masterfile_entry!(CodeGateProtoEntry, CodeGateProtoEntryData, code_gate_proto: CodeGateProto);

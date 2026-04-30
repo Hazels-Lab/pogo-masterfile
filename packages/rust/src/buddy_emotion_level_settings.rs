@@ -23,3 +23,5 @@ pub enum BuddyEmotionLevelSettings {
     MinEmotionPointsRequired(MinEmotionPointsRequired),
     Misc(Misc),
 }
+
+crate::masterfile_entry!(BuddyEmotionLevelSettingsEntry, BuddyEmotionLevelSettingsEntryData, buddy_emotion_level_settings: BuddyEmotionLevelSettings);

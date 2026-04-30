@@ -22,3 +22,5 @@ pub struct LevelUpRewards {
     pub neutral_avatar_item_templates: Option<NeutralAvatarItemTemplates>,
     pub ob_level_up_rewards_number9: Option<f64>,
 }
+
+crate::masterfile_entry!(LevelUpRewardsEntry, LevelUpRewardsEntryData, level_up_rewards: LevelUpRewards);

@@ -39,3 +39,5 @@ pub enum TappableSettings {
     AvgTappablesInViewPlus3(AvgTappablesInViewPlus3),
     AvgTappablesInViewPlus5(AvgTappablesInViewPlus5),
 }
+
+crate::masterfile_entry!(TappableSettingsEntry, TappableSettingsEntryData, tappable_settings: TappableSettings);

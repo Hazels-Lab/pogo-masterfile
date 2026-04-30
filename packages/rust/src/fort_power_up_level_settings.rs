@@ -23,3 +23,5 @@ pub enum FortPowerUpLevelSettings {
     AdditionalLevelPowerupDurationMsMinPowerUpPointsRequiredPowerupLevelRewards(AdditionalLevelPowerupDurationMsMinPowerUpPointsRequiredPowerupLevelRewards),
     Misc(Misc),
 }
+
+crate::masterfile_entry!(FortPowerUpLevelSettingsEntry, FortPowerUpLevelSettingsEntryData, fort_power_up_level_settings: FortPowerUpLevelSettings);

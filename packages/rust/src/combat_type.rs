@@ -10,3 +10,5 @@ pub struct CombatType {
     pub nice_level_threshold: f64,
     pub r#type: String,
 }
+
+crate::masterfile_entry!(CombatTypeEntry, CombatTypeEntryData, combat_type: CombatType);

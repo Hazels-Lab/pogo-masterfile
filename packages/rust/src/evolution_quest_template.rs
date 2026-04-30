@@ -60,3 +60,5 @@ pub struct EvolutionQuestTemplate {
     pub quest_template_id: String,
     pub quest_type: String,
 }
+
+crate::masterfile_entry!(EvolutionQuestTemplateEntry, EvolutionQuestTemplateEntryData, evolution_quest_template: EvolutionQuestTemplate);

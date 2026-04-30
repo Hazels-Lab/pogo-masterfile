@@ -39,3 +39,5 @@ pub enum VsSeekerLoot {
     Misc(Misc),
     RewardTrack(RewardTrack),
 }
+
+crate::masterfile_entry!(VsSeekerLootEntry, VsSeekerLootEntryData, vs_seeker_loot: VsSeekerLoot);

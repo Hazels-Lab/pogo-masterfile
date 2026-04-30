@@ -23,3 +23,5 @@ pub struct MoveSettings {
     pub trainer_level_min: Option<u64>,
     pub vfx_name: String,
 }
+
+crate::masterfile_entry!(MoveSettingsEntry, MoveSettingsEntryData, move_settings: MoveSettings);

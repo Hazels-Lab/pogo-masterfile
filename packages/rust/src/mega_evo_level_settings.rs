@@ -40,3 +40,5 @@ pub struct MegaEvoLevelSettings {
     pub pokemon_id: Option<String>,
     pub progression: Progression,
 }
+
+crate::masterfile_entry!(MegaEvoLevelSettingsEntry, MegaEvoLevelSettingsEntryData, mega_evo_level_settings: MegaEvoLevelSettings);

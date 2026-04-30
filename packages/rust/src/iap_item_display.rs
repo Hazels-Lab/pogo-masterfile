@@ -25,3 +25,5 @@ pub struct IapItemDisplay {
     pub webstore_sku_id: Option<String>,
     pub webstore_sku_price_e6: Option<u64>,
 }
+
+crate::masterfile_entry!(IapItemDisplayEntry, IapItemDisplayEntryData, iap_item_display: IapItemDisplay);

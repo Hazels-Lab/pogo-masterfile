@@ -31,3 +31,5 @@ pub enum LimitedPurchaseSkuSettings {
     Misc(Misc),
     ChronoUnitLootTableIdResetInterval(ChronoUnitLootTableIdResetInterval),
 }
+
+crate::masterfile_entry!(LimitedPurchaseSkuSettingsEntry, LimitedPurchaseSkuSettingsEntryData, limited_purchase_sku_settings: LimitedPurchaseSkuSettings);

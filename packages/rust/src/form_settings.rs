@@ -11,7 +11,7 @@ pub struct SillouetteObfuscationGroup {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Forms {
+pub struct FormsV2 {
     pub asset_bundle_suffix: Option<String>,
     pub asset_bundle_value: Option<u64>,
     pub form: serde_json::Value,
@@ -21,8 +21,8 @@ pub struct Forms {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct FormsV2 {
-    pub forms: Vec<Forms>,
+pub struct Forms {
+    pub forms: Vec<FormsV2>,
     pub pokemon: String,
 }
 
@@ -35,6 +35,8 @@ pub struct Misc {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum FormSettings {
-    Forms(FormsV2),
+    Forms(Forms),
     Misc(Misc),
 }
+
+crate::masterfile_entry!(FormSettingsEntry, FormSettingsEntryData, form_settings: FormSettings);

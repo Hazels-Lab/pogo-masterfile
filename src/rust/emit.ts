@@ -198,15 +198,16 @@ function structBody(name: string, type: ObjectType, pool: StructPool): { body: s
 	return { body: lines.join("\n"), shape: shapeParts.sort().join(",") };
 }
 
+// emitOrReuseStruct: shape-based deduplication. If an identically-shaped
+// struct already exists, return its name. Otherwise emit and register. Used
+// for *nested* structs where the name is auto-derived from a field and any
+// available equivalent type works (preferring fewer total emissions).
 function emitOrReuseStruct(candidateName: string, type: ObjectType, pool: StructPool): string {
-	// Generate the body first so we know the shape — but we need a name to
-	// generate it (because nested objects reference it). Use the candidate
-	// name provisionally; if shape matches an existing struct, throw away the
-	// emission and reuse the existing one.
 	const { body, shape } = structBody(candidateName, type, pool);
-
-	const existing = pool.byShape.get(shape);
-	if (existing) return existing;
+	if (shape !== "") {
+		const existing = pool.byShape.get(shape);
+		if (existing) return existing;
+	}
 
 	let finalName = candidateName;
 	let suffix = 2;
@@ -215,17 +216,34 @@ function emitOrReuseStruct(candidateName: string, type: ObjectType, pool: Struct
 		suffix += 1;
 	}
 	pool.byName.add(finalName);
-	pool.byShape.set(shape, finalName);
-	// If we suffixed the name, we need to re-emit with the final name (the body
-	// was generated with the candidate). For empty structs there's no body
-	// difference; for non-empty we re-run structBody. This is uncommon (only
-	// happens on shape mismatch for the same candidate name).
+	if (shape !== "") pool.byShape.set(shape, finalName);
 	if (finalName !== candidateName) {
 		const { body: finalBody } = structBody(finalName, type, pool);
 		pool.deferred.push(finalBody);
 	} else {
 		pool.deferred.push(body);
 	}
+	return finalName;
+}
+
+// emitNamedStruct: name-preserving emission. Always emits a struct under the
+// requested name (V2-suffixed only if that exact name is already taken).
+// Used for *top-level* types (group roots, cluster variants, singletons)
+// where the name carries semantic meaning and shape-collapsing across
+// unrelated types would break wrapper-macro references.
+//
+// Critical: reserve `finalName` in `pool.byName` *before* invoking structBody,
+// which triggers nested emit calls. Otherwise an inner field of the same
+// pascalCase name (e.g., a `consolation_items` field inside the cluster
+// variant `ConsolationItems`) claims the name first and the outer struct
+// silently duplicates it.
+function emitNamedStruct(candidateName: string, type: ObjectType, pool: StructPool): string {
+	let finalName = candidateName;
+	let suffix = 2;
+	while (pool.byName.has(finalName)) finalName = `${candidateName}V${suffix++}`;
+	pool.byName.add(finalName);
+	const { body } = structBody(finalName, type, pool);
+	pool.deferred.push(body);
 	return finalName;
 }
 
@@ -250,8 +268,17 @@ function header(discriminator: string): string {
 
 const SERDE_IMPORT = `use serde::{Deserialize, Serialize};`;
 
-function stubStruct(name: string): string {
-	return ["#[derive(Debug, Clone, Serialize, Deserialize)]", `pub struct ${name};`].join("\n");
+// Each masterfile entry has the wrapper shape:
+//   { templateId: "...", data: { templateId: "...", [discriminator?]: payload } }
+// We emit one Entry struct + one EntryData struct per discriminator (paired via
+// macro). Stubs (entries with no payload — `data: { templateId }`) use the
+// shorter `masterfile_stub_entry!` macro.
+function entryWrapper(baseName: string, snakeName: string): string {
+	return `crate::masterfile_entry!(${baseName}Entry, ${baseName}EntryData, ${snakeName}: ${baseName});`;
+}
+
+function stubEntryWrapper(baseName: string): string {
+	return `crate::masterfile_stub_entry!(${baseName}Entry, ${baseName}EntryData);`;
 }
 
 function file(blocks: readonly string[]): string {
@@ -263,19 +290,20 @@ export function emitGroupModule(group: Group): string {
 	const baseName = pascalCase(group.discriminator);
 
 	if (isStubGroup(group)) {
-		return file([header(group.discriminator), SERDE_IMPORT, stubStruct(baseName)]);
+		return file([header(group.discriminator), SERDE_IMPORT, stubEntryWrapper(baseName)]);
 	}
 
 	const pool = newPool();
 	const clusters = clusterByFingerprint(group);
+	const snakeName = rustFieldIdent(group.discriminator);
 
 	if (clusters.length === 1 || clusters.length > MAX_CLUSTERS_FOR_ENUM) {
 		// Single-shape OR too many shapes to enumerate cleanly. Emit one flat
 		// struct using the type inferred from the entire group's payloads —
 		// fields that aren't universally present become Option<T>.
 		const inferred = inferPayloadType(group.entries, group.discriminator);
-		emitOrReuseStruct(baseName, inferred, pool);
-		return file([header(group.discriminator), SERDE_IMPORT, ...pool.deferred]);
+		emitNamedStruct(baseName, inferred, pool);
+		return file([header(group.discriminator), SERDE_IMPORT, ...pool.deferred, entryWrapper(baseName, snakeName)]);
 	}
 
 	// Small number of clusters → emit each as a variant struct + an enum that
@@ -295,38 +323,82 @@ export function emitGroupModule(group: Group): string {
 		usedVariantNames.add(variantName);
 
 		const inferred = inferPayloadType(cluster.entries, group.discriminator);
-		const finalName = emitOrReuseStruct(variantName, inferred, pool);
+		const finalName = emitNamedStruct(variantName, inferred, pool);
 		enumVariants.push(`    ${variantName}(${finalName}),`);
 	}
 	const enumBlock = ["#[derive(Debug, Clone, Serialize, Deserialize)]", "#[serde(untagged)]", `pub enum ${baseName} {`, ...enumVariants, "}"].join("\n");
 
-	return file([header(group.discriminator), SERDE_IMPORT, ...pool.deferred, enumBlock]);
+	return file([header(group.discriminator), SERDE_IMPORT, ...pool.deferred, enumBlock, entryWrapper(baseName, snakeName)]);
 }
 
-// Bundle every singleton group (entries.length === 1) into one module.
-// Each singleton becomes a struct (or unit struct for stub entries) named
-// after its discriminator (PascalCased). Reduces the file count dramatically
-// — without this each of ~150+ singletons would have its own .rs file.
+// Bundle every singleton group (entries.length === 1) into one module. Each
+// singleton emits an Entry/EntryData wrapper via the macro; with-payload
+// singletons also emit their inner payload struct. Stubs need no inner
+// struct since their `data` has only `templateId`.
 export function emitSingletonsModule(singletons: readonly Group[]): string {
 	const sorted = [...singletons].sort((a, b) => pascalCase(a.discriminator).localeCompare(pascalCase(b.discriminator)));
 	const pool = newPool();
-	const stubs: string[] = [];
+	const wrappers: string[] = [];
 
 	for (const group of sorted) {
 		const name = pascalCase(group.discriminator);
 		if (isStubGroup(group)) {
-			stubs.push(stubStruct(name));
+			wrappers.push(stubEntryWrapper(name));
 			continue;
 		}
 		const inferred = inferPayloadType(group.entries, group.discriminator);
-		emitOrReuseStruct(name, inferred, pool);
+		emitNamedStruct(name, inferred, pool);
+		wrappers.push(entryWrapper(name, rustFieldIdent(group.discriminator)));
 	}
 
-	return file(["// Generated from Pokémon GO masterfile — singletons (one-of-a-kind entries).", SERDE_IMPORT, ...stubs, ...pool.deferred]);
+	return file(["// Generated from Pokémon GO masterfile — singletons (one-of-a-kind entries).", SERDE_IMPORT, ...pool.deferred, ...wrappers]);
 }
 
+// Macros invoked by every generated module to define the Entry/EntryData
+// wrapper pair that mirrors the masterfile JSON shape. Exported at crate root
+// so consumers can use them too if they want to extend the generated types.
+const MACRO_DEFINITIONS = `\
+/// Defines an Entry + EntryData pair for a discriminator that carries a payload.
+/// Used by the codegen; consumers of this crate normally don't invoke directly.
+#[macro_export]
+macro_rules! masterfile_entry {
+\t($entry:ident, $data:ident, $field:ident: $ty:ty) => {
+\t\t#[derive(Debug, Clone, ::serde::Serialize, ::serde::Deserialize)]
+\t\t#[serde(rename_all = "camelCase")]
+\t\tpub struct $entry {
+\t\t\tpub template_id: String,
+\t\t\tpub data: $data,
+\t\t}
+\t\t#[derive(Debug, Clone, ::serde::Serialize, ::serde::Deserialize)]
+\t\t#[serde(rename_all = "camelCase")]
+\t\tpub struct $data {
+\t\t\tpub template_id: String,
+\t\t\tpub $field: $ty,
+\t\t}
+\t};
+}
+
+/// Defines an Entry + EntryData pair for a stub discriminator (no payload).
+/// Stub entries have JSON shape \`{ templateId, data: { templateId } }\`.
+#[macro_export]
+macro_rules! masterfile_stub_entry {
+\t($entry:ident, $data:ident) => {
+\t\t#[derive(Debug, Clone, ::serde::Serialize, ::serde::Deserialize)]
+\t\t#[serde(rename_all = "camelCase")]
+\t\tpub struct $entry {
+\t\t\tpub template_id: String,
+\t\t\tpub data: $data,
+\t\t}
+\t\t#[derive(Debug, Clone, ::serde::Serialize, ::serde::Deserialize)]
+\t\t#[serde(rename_all = "camelCase")]
+\t\tpub struct $data {
+\t\t\tpub template_id: String,
+\t\t}
+\t};
+}`;
+
 export function emitLibFile(moduleNames: readonly string[]): string {
-	const lines: string[] = ["// Generated from Pokémon GO masterfile — root crate barrel.", ""];
+	const lines: string[] = ["// Generated from Pokémon GO masterfile — root crate barrel.", "", MACRO_DEFINITIONS, ""];
 	for (const name of [...moduleNames].sort()) {
 		lines.push(`pub mod ${name};`);
 	}

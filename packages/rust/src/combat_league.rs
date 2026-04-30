@@ -96,3 +96,5 @@ pub struct CombatLeague {
     pub title: String,
     pub unlock_condition: Option<[UnlockCondition; 1]>,
 }
+
+crate::masterfile_entry!(CombatLeagueEntry, CombatLeagueEntryData, combat_league: CombatLeague);

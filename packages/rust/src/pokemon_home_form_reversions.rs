@@ -16,3 +16,5 @@ pub struct PokemonHomeFormReversions {
     pub form_mapping: Vec<FormMapping>,
     pub pokemon_id: String,
 }
+
+crate::masterfile_entry!(PokemonHomeFormReversionsEntry, PokemonHomeFormReversionsEntryData, pokemon_home_form_reversions: PokemonHomeFormReversions);

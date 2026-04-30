@@ -44,3 +44,5 @@ pub enum SettingsOverrideRule {
     RuleValue(RuleValue),
     FusedDepthEnabledPlus3(FusedDepthEnabledPlus3),
 }
+
+crate::masterfile_entry!(SettingsOverrideRuleEntry, SettingsOverrideRuleEntryData, settings_override_rule: SettingsOverrideRule);

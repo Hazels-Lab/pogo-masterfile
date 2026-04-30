@@ -37,3 +37,5 @@ pub struct BreadMoveLevelSettings {
     pub c_settings: (ASettingsV2, ASettingsV2, ASettingsV3),
     pub group: serde_json::Value,
 }
+
+crate::masterfile_entry!(BreadMoveLevelSettingsEntry, BreadMoveLevelSettingsEntryData, bread_move_level_settings: BreadMoveLevelSettings);

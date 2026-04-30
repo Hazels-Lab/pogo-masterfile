@@ -17,3 +17,5 @@ pub struct QuestSettings {
     pub daily_quest: DailyQuest,
     pub quest_type: String,
 }
+
+crate::masterfile_entry!(QuestSettingsEntry, QuestSettingsEntryData, quest_settings: QuestSettings);

@@ -12,15 +12,15 @@ pub struct EvolutionInfos {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct EvolutionChains {
+pub struct EvolutionChainsV2 {
     pub evolution_infos: Vec<EvolutionInfos>,
     pub header_message: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct EvolutionChainsV2 {
-    pub evolution_chains: Vec<EvolutionChains>,
+pub struct EvolutionChains {
+    pub evolution_chains: Vec<EvolutionChainsV2>,
     pub pokemon: String,
 }
 
@@ -33,6 +33,8 @@ pub struct Misc {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum EvolutionChainDisplaySettings {
-    EvolutionChains(EvolutionChainsV2),
+    EvolutionChains(EvolutionChains),
     Misc(Misc),
 }
+
+crate::masterfile_entry!(EvolutionChainDisplaySettingsEntry, EvolutionChainDisplaySettingsEntryData, evolution_chain_display_settings: EvolutionChainDisplaySettings);

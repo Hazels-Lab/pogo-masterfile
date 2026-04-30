@@ -23,3 +23,5 @@ pub struct CombatMove {
     pub unique_id: String,
     pub vfx_name: String,
 }
+
+crate::masterfile_entry!(CombatMoveEntry, CombatMoveEntryData, combat_move: CombatMove);
