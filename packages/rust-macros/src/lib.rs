@@ -136,6 +136,70 @@ pub fn derive_as_str(input: TokenStream) -> TokenStream {
     .into()
 }
 
+/// Derives `impl FromStr` for a unit-only enum. The error type is
+/// `pogo_masterfile_types::UnknownTemplateId` — the macro emits a path
+/// reference; consumers must have that type in scope (which they do
+/// transparently via the parent crate). String matching uses the same
+/// source as `AsStr`: `#[serde(rename = "...")]` first, variant ident
+/// otherwise.
+#[proc_macro_derive(FromStrEnum, attributes(serde))]
+pub fn derive_from_str_enum(input: TokenStream) -> TokenStream {
+    let input = parse_macro_input!(input as DeriveInput);
+    let name = &input.ident;
+
+    let Data::Enum(data_enum) = &input.data else {
+        return syn::Error::new_spanned(name, "FromStrEnum only applies to enums")
+            .to_compile_error()
+            .into();
+    };
+
+    let mut errors: Vec<syn::Error> = Vec::new();
+    let mut arms: Vec<proc_macro2::TokenStream> = Vec::new();
+    for v in &data_enum.variants {
+        if !matches!(v.fields, Fields::Unit) {
+            errors.push(syn::Error::new_spanned(
+                v,
+                "FromStrEnum requires all variants to be unit (no fields)",
+            ));
+            continue;
+        }
+        let ident = &v.ident;
+        let lit = match extract_serde_rename(&v.attrs) {
+            Ok(Some(s)) => s,
+            Ok(None) => ident.to_string(),
+            Err(e) => {
+                errors.push(e);
+                continue;
+            }
+        };
+        arms.push(quote! { #lit => Ok(Self::#ident) });
+    }
+
+    if !errors.is_empty() {
+        let combined = errors
+            .into_iter()
+            .reduce(|mut a, b| {
+                a.combine(b);
+                a
+            })
+            .unwrap();
+        return combined.to_compile_error().into();
+    }
+
+    quote! {
+        impl ::core::str::FromStr for #name {
+            type Err = pogo_masterfile_types::UnknownTemplateId;
+            fn from_str(s: &str) -> ::core::result::Result<Self, Self::Err> {
+                match s {
+                    #(#arms),*,
+                    other => Err(pogo_masterfile_types::UnknownTemplateId(other.to_string())),
+                }
+            }
+        }
+    }
+    .into()
+}
+
 /// Look for `#[serde(rename = "...")]` on a variant. Returns the string
 /// payload if found. Errors only on malformed serde attributes.
 fn extract_serde_rename(attrs: &[syn::Attribute]) -> syn::Result<Option<String>> {
