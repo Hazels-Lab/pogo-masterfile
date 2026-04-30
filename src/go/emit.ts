@@ -1,7 +1,7 @@
 import type { Entry, Group } from "../group.ts";
 import type { InferredType, ObjectType } from "../infer.ts";
 import { inferJsonTypes, widenType } from "../infer.ts";
-import { pascalCase } from "../naming.ts";
+import { deriveTemplateIdVariants, pascalCase } from "../naming.ts";
 
 // Go's encoding/json supports fixed-size arrays of any length, but very long
 // fixed arrays in source read poorly. Above this we fall back to slices.
@@ -359,4 +359,39 @@ ${stubArms}
 \t}
 }
 `;
+}
+
+function emitGoConstBlock(typeName: string, idsToVariants: Map<string, string>): string {
+	const sortedIds = [...idsToVariants.keys()].sort();
+	const constNames = sortedIds.map((id) => `${typeName}${idsToVariants.get(id)!}`);
+
+	// Align values for readability — gofmt does this anyway, but we produce
+	// it pre-aligned to keep diffs deterministic.
+	const widest = Math.max(...constNames.map((n) => n.length));
+	const constLines = sortedIds
+		.map((id, i) => `\t${constNames[i]!.padEnd(widest, " ")} ${typeName} = ${JSON.stringify(id)}`)
+		.join("\n");
+
+	const valuesLines = constNames.map((n) => `\t${n},`).join("\n");
+
+	return `const (\n${constLines}\n)\n\nvar ${typeName}Values = []${typeName}{\n${valuesLines}\n}`;
+}
+
+export function emitGroupTemplateIdsFile(group: Group): string {
+	const baseName = pascalCase(group.discriminator);
+	const typeName = `${baseName}TemplateID`;
+	const ids = group.entries.map((e) => e.templateId);
+	const variants = deriveTemplateIdVariants(ids);
+	const constBlock = emitGoConstBlock(typeName, variants);
+
+	return `// Generated from Pokémon GO masterfile — group "${group.discriminator}" templateIds.\n\npackage masterfile\n\ntype ${typeName} string\n\n${constBlock}\n`;
+}
+
+export function emitSingletonsTemplateIdsFile(singletons: readonly Group[]): string {
+	const allIds = singletons.flatMap((g) => g.entries.map((e) => e.templateId));
+	const typeName = "SingletonsTemplateID";
+	const variants = deriveTemplateIdVariants(allIds);
+	const constBlock = emitGoConstBlock(typeName, variants);
+
+	return `// Generated from Pokémon GO masterfile — singletons templateIds.\n\npackage masterfile\n\ntype ${typeName} string\n\n${constBlock}\n`;
 }
