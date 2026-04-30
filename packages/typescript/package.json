@@ -1,29 +1,70 @@
 {
 	"name": "pogo-masterfile-types",
-	"private": true,
+	"version": "0.1.0",
+	"description": "Generated TypeScript type definitions for the Pokémon GO masterfile, plus a typed `parseMasterfile` helper that dispatches each entry to its concrete payload type.",
+	"license": "MIT",
+	"author": "Rin <derick.magnusen@gmail.com>",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/<GH_OWNER>/pogo-masterfile-types.git",
+		"directory": "packages/typescript"
+	},
+	"homepage": "https://github.com/<GH_OWNER>/pogo-masterfile-types#readme",
+	"bugs": {
+		"url": "https://github.com/<GH_OWNER>/pogo-masterfile-types/issues"
+	},
+	"keywords": [
+		"pokemon-go",
+		"pokemon",
+		"masterfile",
+		"types",
+		"typescript"
+	],
 	"type": "module",
-	"types": "./src/index.ts",
+	"sideEffects": false,
+	"types": "./dist/index.d.ts",
 	"exports": {
 		".": {
-			"types": "./src/index.ts"
+			"types": "./dist/index.d.ts"
 		},
 		"./entries": {
-			"types": "./src/entries.ts"
+			"types": "./dist/entries.d.ts"
 		},
 		"./types": {
-			"types": "./src/types.ts"
+			"types": "./dist/types.d.ts"
 		},
 		"./*": {
-			"types": "./src/*/index.ts"
+			"types": "./dist/*/index.d.ts"
 		},
 		"./*/entries": {
-			"types": "./src/*/entries.ts"
+			"types": "./dist/*/entries.d.ts"
 		},
 		"./*/types": {
-			"types": "./src/*/types.ts"
+			"types": "./dist/*/types.d.ts"
 		},
 		"./*/entries/*": {
-			"types": "./src/*/entries/*.ts"
+			"types": "./dist/*/entries/*.d.ts"
+		}
+	},
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE",
+		"CHANGELOG.md"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "tsc -p tsconfig.build.json",
+		"prepublishOnly": "bun run build"
+	},
+	"peerDependencies": {
+		"typescript": ">=5.0"
+	},
+	"peerDependenciesMeta": {
+		"typescript": {
+			"optional": true
 		}
 	}
 }

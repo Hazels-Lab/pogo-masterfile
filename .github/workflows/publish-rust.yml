@@ -1,0 +1,22 @@
+name: Publish Rust
+
+on:
+  push:
+    tags:
+      - "rust-v*"
+
+jobs:
+  publish:
+    name: Publish to crates.io
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/rust
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: packages/rust
+      - run: cargo test
+      - run: cargo publish --token ${{ secrets.CARGO_REGISTRY_TOKEN }}

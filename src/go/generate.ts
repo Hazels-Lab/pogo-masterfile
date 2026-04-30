@@ -55,11 +55,10 @@ export async function generateGo(entries: Entry[]): Promise<void> {
 
 	files.set("masterfile.go", emitMasterfileFile(enumVariants));
 
-	// Note: writeOutput recursively deletes OUT_DIR before writing — go.mod
-	// lives there and would be wiped. Pre-read it so we can re-emit.
-	const goMod = await Bun.file(join(OUT_DIR, "go.mod")).text();
-	files.set("go.mod", goMod);
+	// Hand-written files that share the package directory with generated `.go`
+	// files. writeOutput would wipe them otherwise.
+	const preserve = ["go.mod", "go.sum", "doc.go", "README.md", "LICENSE", "CHANGELOG.md", "masterfile_test.go", "examples/parse/main.go"];
 
-	await writeOutput(files, OUT_DIR);
+	await writeOutput(files, OUT_DIR, { preserve });
 	console.log(`[go] wrote ${files.size} files to ${OUT_DIR} (${singletons.length} singletons folded into ${SINGLETONS_FILE}.go).`);
 }

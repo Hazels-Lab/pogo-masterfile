@@ -2,8 +2,31 @@
 name = "pogo-masterfile-types"
 version = "0.1.0"
 edition = "2024"
-description = "Generated Rust types for the Pokémon GO masterfile."
+rust-version = "1.85"
+description = "Generated Rust types for the Pokémon GO masterfile, with a typed parse_masterfile dispatcher."
+license = "MIT"
+authors = ["Rin <derick.magnusen@gmail.com>"]
+# TODO: replace <GH_OWNER> once the repo is hosted.
+repository = "https://github.com/<GH_OWNER>/pogo-masterfile-types"
+homepage = "https://github.com/<GH_OWNER>/pogo-masterfile-types"
+documentation = "https://docs.rs/pogo-masterfile-types"
+readme = "README.md"
+keywords = ["pokemon-go", "pokemon", "masterfile", "serde", "types"]
+categories = ["api-bindings", "data-structures", "game-development"]
+include = [
+	"src/**/*.rs",
+	"examples/**/*.rs",
+	"tests/**/*.rs",
+	"Cargo.toml",
+	"README.md",
+	"LICENSE",
+	"CHANGELOG.md",
+]
 
 [dependencies]
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]

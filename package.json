@@ -1,10 +1,10 @@
 {
-	"name": "pogo-masterfile-types",
+	"name": "pogo-masterfile-types-monorepo",
 	"module": "src/generate.ts",
 	"type": "module",
 	"private": true,
 	"scripts": {
-		"generate": "bun run src/generate.ts && bun run format",
+		"generate": "bun run src/generate.ts && bun run format && (cd packages/rust && cargo fmt) && (cd packages/go && gofmt -w .)",
 		"test": "bun test",
 		"typecheck": "tsc --noEmit",
 		"lint": "biome check",

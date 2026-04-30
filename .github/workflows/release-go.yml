@@ -1,0 +1,40 @@
+name: Release Go
+
+on:
+  push:
+    tags:
+      - "packages/go/v*"
+
+jobs:
+  release:
+    name: Verify and announce
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+          cache-dependency-path: packages/go/go.sum
+
+      - name: Build and test
+        working-directory: packages/go
+        run: |
+          go build ./...
+          go vet ./...
+          go test ./...
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          body: |
+            Tagged Go module release.
+
+            Install:
+            ```
+            go get ${{ github.repository }}/packages/go@${{ github.ref_name }}
+            ```
+
+            Note: proxy.golang.org may take a minute to pick up the new tag. If `go get` reports "no matching versions", retry shortly.
