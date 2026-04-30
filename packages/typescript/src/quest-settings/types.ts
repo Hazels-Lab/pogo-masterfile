@@ -23,5 +23,3 @@ export interface QuestSettingsData {
 		streakBonusMultiplier?: number;
 	};
 }
-
-export type QuestFirst = "QUEST_FIRST_CATCH_OF_THE_DAY" | "QUEST_FIRST_POKESTOP_OF_THE_DAY" | "QUEST_FIRST_ROUTE_OF_THE_DAY";

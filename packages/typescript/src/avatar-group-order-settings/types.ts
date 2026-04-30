@@ -35,5 +35,3 @@ export interface AvatarGroupOrderSettingsData {
 		order: number;
 	}>;
 }
-
-export type AvatarGroup = "AVATAR_GROUP_ORDER_SETTINGS" | "AVATAR_GROUP_SETTINGS";

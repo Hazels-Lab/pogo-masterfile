@@ -128,5 +128,3 @@ export interface PokemonUpgradesData {
 	];
 	xlCandyCost: [number, number, number, number, number, number, number, number, number, number];
 }
-
-export type PokemonUpgrade = "POKEMON_UPGRADE_OVERRIDE_SETTINGS_V0890_POKEMON_ETERNATUS" | "POKEMON_UPGRADE_SETTINGS";

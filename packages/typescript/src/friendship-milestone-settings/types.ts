@@ -34,11 +34,3 @@ export interface FriendshipMilestoneSettingsData {
 		| "SPECIAL_IN_POKEDEX"
 	>;
 }
-
-export type FriendshipLevel =
-	| "FRIENDSHIP_LEVEL_0"
-	| "FRIENDSHIP_LEVEL_1"
-	| "FRIENDSHIP_LEVEL_2"
-	| "FRIENDSHIP_LEVEL_3"
-	| "FRIENDSHIP_LEVEL_4"
-	| "FRIENDSHIP_LEVEL_5";

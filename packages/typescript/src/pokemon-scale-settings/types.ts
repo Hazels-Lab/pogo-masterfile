@@ -16,11 +16,3 @@ export interface PokemonScaleSettingsData {
 	minHeight: number;
 	pokemonScaleMode?: "BattlePokemonScale" | "GuiScale" | "GymTopperScale" | "MapPokemonScale" | "RaidBossScale";
 }
-
-export type PokemonScaleSettingsId =
-	| "POKEMON_SCALE_SETTINGS_BATTLE_POKEMON_SCALE"
-	| "POKEMON_SCALE_SETTINGS_GUI_SCALE"
-	| "POKEMON_SCALE_SETTINGS_GYM_TOPPER_SCALE"
-	| "POKEMON_SCALE_SETTINGS_MAP_POKEMON_SCALE"
-	| "POKEMON_SCALE_SETTINGS_NATURAL_SCALE"
-	| "POKEMON_SCALE_SETTINGS_RAID_BOSS_SCALE";

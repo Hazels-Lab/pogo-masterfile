@@ -690,5 +690,3 @@ export type VsSeekerPokemonRewardsType = W<VsSeekerPokemonRewards>;
 export interface VsSeekerPokemonRewardsData {
 	rewardTrack?: "PREMIUM";
 }
-
-export type VsSeekerPokemonRewardsId = "VS_SEEKER_POKEMON_REWARDS_FREE" | "VS_SEEKER_POKEMON_REWARDS_PREMIUM";

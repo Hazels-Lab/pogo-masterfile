@@ -1,7 +1,7 @@
 // Generated from Pokémon GO masterfile — group "moveSettings", 384 entries (structural types).
 
 import type { W } from "../_utils";
-import type { PokemonType } from "../type-effective/types";
+import type { TypeEffectiveTemplateID } from "../type-effective/entries";
 
 export interface MoveSettings<TemplateID extends string = string, TData extends MoveSettingsData = MoveSettingsData> {
 	templateId: TemplateID;
@@ -25,7 +25,7 @@ export interface MoveSettingsData {
 	isLocked?: boolean;
 	movementId: string;
 	obMoveSettingsNumber18?: [number, number, number, number];
-	pokemonType: PokemonType;
+	pokemonType: TypeEffectiveTemplateID;
 	power?: number;
 	staminaLossScalar?: number;
 	trainerLevelMax?: number;

@@ -1,7 +1,7 @@
 // Generated from Pokémon GO masterfile — group "weatherAffinities", 7 entries (structural types).
 
 import type { W } from "../_utils";
-import type { PokemonType } from "../type-effective/types";
+import type { TypeEffectiveTemplateID } from "../type-effective/entries";
 
 export interface WeatherAffinities<TemplateID extends string = string, TData extends WeatherAffinitiesData = WeatherAffinitiesData> {
 	templateId: TemplateID;
@@ -15,14 +15,5 @@ export interface WeatherAffinities<TemplateID extends string = string, TData ext
 export type WeatherAffinitiesType = W<WeatherAffinities>;
 
 export interface WeatherAffinitiesData {
-	pokemonType: Array<PokemonType>;
+	pokemonType: Array<TypeEffectiveTemplateID>;
 }
-
-export type WeatherAffinity =
-	| "WEATHER_AFFINITY_CLEAR"
-	| "WEATHER_AFFINITY_FOG"
-	| "WEATHER_AFFINITY_OVERCAST"
-	| "WEATHER_AFFINITY_PARTLY_CLOUDY"
-	| "WEATHER_AFFINITY_RAINY"
-	| "WEATHER_AFFINITY_SNOW"
-	| "WEATHER_AFFINITY_WINDY";

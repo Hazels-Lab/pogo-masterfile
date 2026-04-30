@@ -18,12 +18,3 @@ export interface PokestopInvasionAvailabilitySettings<
 export type PokestopInvasionAvailabilitySettingsType = W<PokestopInvasionAvailabilitySettings>;
 
 export interface PokestopInvasionAvailabilitySettingsData {}
-
-export type InvasionAvailabilitySettings =
-	| "INVASION_AVAILABILITY_SETTINGS_FRIDAY"
-	| "INVASION_AVAILABILITY_SETTINGS_MONDAY"
-	| "INVASION_AVAILABILITY_SETTINGS_SATURDAY"
-	| "INVASION_AVAILABILITY_SETTINGS_SUNDAY"
-	| "INVASION_AVAILABILITY_SETTINGS_THURSDAY"
-	| "INVASION_AVAILABILITY_SETTINGS_TUESDAY"
-	| "INVASION_AVAILABILITY_SETTINGS_WEDNESDAY";

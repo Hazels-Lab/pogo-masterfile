@@ -27,5 +27,3 @@ export interface BuddyLevelSettingsData {
 		| "TRAINING"
 	>;
 }
-
-export type BuddyLevel = "BUDDY_LEVEL_0" | "BUDDY_LEVEL_1" | "BUDDY_LEVEL_2" | "BUDDY_LEVEL_3" | "BUDDY_LEVEL_4";

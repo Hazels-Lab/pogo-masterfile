@@ -81,5 +81,3 @@ export interface EventPassSettingsData {
 		},
 	];
 }
-
-export type EventPassEventPassSettings = "EVENT_PASS_APRIL2026_SEASON" | "EVENT_PASS_STEELEDRESOLVE2026_EVENT";
