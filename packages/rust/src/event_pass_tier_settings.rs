@@ -55,7 +55,7 @@ pub struct Rewards {
 pub struct MinPointsRequiredRewards {
     pub min_points_required: u64,
     pub rank: u64,
-    pub rewards: Vec<Rewards>,
+    pub rewards: [Rewards; 1],
     pub track: String,
 }
 
@@ -129,7 +129,7 @@ pub struct ActiveBonusDisplaySettingsPlus3 {
     pub bonus_settings: BonusSettings,
     pub min_points_required: u64,
     pub rank: u64,
-    pub rewards: Vec<RewardsV4>,
+    pub rewards: [RewardsV4; 1],
     pub track: String,
 }
 

@@ -63,7 +63,56 @@ pub struct Incentives {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PokemonWithExcludedForms {
-    pub excluded_forms: Vec<String>,
+    pub excluded_forms: [String; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonWithExcludedFormsV2 {
+    pub excluded_forms: [String; 19],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonWithExcludedFormsV3 {
+    pub excluded_forms: [String; 18],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonWithExcludedFormsV4 {
+    pub excluded_forms: [String; 2],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonWithExcludedFormsV5 {
+    pub excluded_forms: [String; 5],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonWithExcludedFormsV6 {
+    pub excluded_forms: [String; 4],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonWithExcludedFormsV7 {
+    pub excluded_forms: [String; 9],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonWithExcludedFormsV8 {
+    pub excluded_forms: [String; 3],
     pub pokemon_id: String,
 }
 
@@ -74,7 +123,7 @@ pub struct ArPhotoFeatureFlags {
     pub capture_settings: CaptureSettings,
     pub error_reporting_settings: ErrorReportingSettings,
     pub excluded_pokemon_ids: Vec<String>,
-    pub incentives: Vec<Incentives>,
+    pub incentives: [Incentives; 2],
     pub incentives_enabled: bool,
     pub is_feature_enabled: bool,
     pub lapsed_days_cutoff: u64,
@@ -181,14 +230,20 @@ pub struct Section {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct SectionGroup {
-    pub section: Vec<String>,
+    pub section: [String; 3],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct SectionGroupV2 {
+    pub section: [String; 1],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct BattleHubOrderSettings {
-    pub section: Vec<Section>,
-    pub section_group: Vec<SectionGroup>,
+    pub section: [Section; 1],
+    pub section_group: (SectionGroup, SectionGroupV2, SectionGroupV2),
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -346,7 +401,538 @@ pub struct Mappings {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct BreadMoveMappings {
-    pub mappings: Vec<Mappings>,
+    pub mappings: [Mappings; 18],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct BreadBattleTrainerVisualData {
+    pub x_offset: i64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct BreadBattleVisualData {
+    pub scale: f64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct BreadEncounterVisiualData {
+    pub camera_distance: u64,
+    pub max_reticle_size: u64,
+    pub scale: f64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualData {
+    pub bread_battle_trainer_visual_data: BreadBattleTrainerVisualData,
+    pub bread_battle_visual_data: BreadBattleVisualData,
+    pub bread_encounter_visiual_data: BreadEncounterVisiualData,
+    pub bread_mode: String,
+    pub bread_station_visual_data: BreadBattleVisualData,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonFormData {
+    pub pokemon_form: String,
+    pub visual_data: [VisualData; 1],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualSettings {
+    pub pokemon_form_data: [PokemonFormData; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct BreadEncounterVisiualDataV2 {
+    pub camera_distance: f64,
+    pub max_reticle_size: u64,
+    pub scale: f64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualDataV2 {
+    pub bread_battle_trainer_visual_data: BreadBattleTrainerVisualData,
+    pub bread_battle_visual_data: BreadBattleVisualData,
+    pub bread_encounter_visiual_data: BreadEncounterVisiualDataV2,
+    pub bread_mode: String,
+    pub bread_station_visual_data: BreadBattleVisualData,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonFormDataV2 {
+    pub pokemon_form: String,
+    pub visual_data: [VisualDataV2; 1],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualSettingsV2 {
+    pub pokemon_form_data: [PokemonFormDataV2; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct BreadBattleTrainerVisualDataV2 {
+    pub x_offset: u64,
+    pub y_offset: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualDataV3 {
+    pub bread_battle_trainer_visual_data: BreadBattleTrainerVisualDataV2,
+    pub bread_battle_visual_data: BreadBattleVisualData,
+    pub bread_encounter_visiual_data: BreadEncounterVisiualDataV2,
+    pub bread_mode: String,
+    pub bread_station_visual_data: BreadBattleVisualData,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct BreadBattleVisualDataV2 {
+    pub scale: f64,
+    pub y_offset: i64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualDataV4 {
+    pub bread_battle_trainer_visual_data: BreadBattleTrainerVisualDataV2,
+    pub bread_battle_visual_data: BreadBattleVisualDataV2,
+    pub bread_encounter_visiual_data: BreadEncounterVisiualDataV2,
+    pub bread_mode: String,
+    pub bread_station_visual_data: BreadBattleVisualData,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonFormDataV3 {
+    pub pokemon_form: String,
+    pub visual_data: (VisualDataV3, VisualDataV4),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualSettingsV3 {
+    pub pokemon_form_data: [PokemonFormDataV3; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualDataV5 {
+    pub bread_battle_visual_data: BreadBattleVisualData,
+    pub bread_encounter_visiual_data: BreadEncounterVisiualDataV2,
+    pub bread_mode: String,
+    pub bread_station_visual_data: BreadBattleVisualData,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct BreadBattleTrainerVisualDataV3 {
+    pub x_offset: f64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualDataV6 {
+    pub bread_battle_trainer_visual_data: BreadBattleTrainerVisualDataV3,
+    pub bread_battle_visual_data: BreadBattleVisualData,
+    pub bread_encounter_visiual_data: BreadEncounterVisiualDataV2,
+    pub bread_mode: String,
+    pub bread_station_visual_data: BreadBattleVisualData,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonFormDataV4 {
+    pub pokemon_form: String,
+    pub visual_data: (VisualDataV5, VisualDataV6),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualSettingsV4 {
+    pub pokemon_form_data: [PokemonFormDataV4; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualDataV7 {
+    pub bread_battle_visual_data: BreadBattleVisualData,
+    pub bread_encounter_visiual_data: BreadEncounterVisiualData,
+    pub bread_mode: String,
+    pub bread_station_visual_data: BreadBattleVisualData,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct BreadBattleTrainerVisualDataV4 {
+    pub x_offset: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct BreadBattleVisualDataV3 {
+    pub scale: f64,
+    pub x_offset: f64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualDataV8 {
+    pub bread_battle_trainer_visual_data: BreadBattleTrainerVisualDataV4,
+    pub bread_battle_visual_data: BreadBattleVisualDataV3,
+    pub bread_encounter_visiual_data: BreadEncounterVisiualDataV2,
+    pub bread_mode: String,
+    pub bread_station_visual_data: BreadBattleVisualDataV3,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonFormDataV5 {
+    pub pokemon_form: String,
+    pub visual_data: (VisualDataV7, VisualDataV8),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualSettingsV5 {
+    pub pokemon_form_data: [PokemonFormDataV5; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonFormDataV6 {
+    pub pokemon_form: String,
+    pub visual_data: [VisualDataV5; 1],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualSettingsV6 {
+    pub pokemon_form_data: [PokemonFormDataV6; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonFormDataV7 {
+    pub pokemon_form: String,
+    pub visual_data: [VisualDataV7; 1],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualSettingsV7 {
+    pub pokemon_form_data: [PokemonFormDataV7; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct BreadStationVisualData {
+    pub scale: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualDataV9 {
+    pub bread_battle_trainer_visual_data: BreadBattleTrainerVisualData,
+    pub bread_battle_visual_data: BreadBattleVisualData,
+    pub bread_encounter_visiual_data: BreadEncounterVisiualData,
+    pub bread_mode: String,
+    pub bread_station_visual_data: BreadStationVisualData,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonFormDataV8 {
+    pub pokemon_form: String,
+    pub visual_data: [VisualDataV9; 1],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualSettingsV8 {
+    pub pokemon_form_data: [PokemonFormDataV8; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualDataV10 {
+    pub bread_battle_visual_data: BreadStationVisualData,
+    pub bread_encounter_visiual_data: BreadEncounterVisiualData,
+    pub bread_mode: String,
+    pub bread_station_visual_data: BreadBattleVisualData,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonFormDataV9 {
+    pub pokemon_form: String,
+    pub visual_data: [VisualDataV10; 1],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualSettingsV9 {
+    pub pokemon_form_data: [PokemonFormDataV9; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct BreadEncounterVisiualDataV3 {
+    pub camera_distance: u64,
+    pub max_reticle_size: u64,
+    pub scale: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualDataV11 {
+    pub bread_battle_visual_data: BreadStationVisualData,
+    pub bread_encounter_visiual_data: BreadEncounterVisiualDataV3,
+    pub bread_mode: String,
+    pub bread_station_visual_data: BreadStationVisualData,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonFormDataV10 {
+    pub pokemon_form: String,
+    pub visual_data: [VisualDataV11; 1],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualSettingsV10 {
+    pub pokemon_form_data: [PokemonFormDataV10; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualDataV12 {
+    pub bread_battle_visual_data: BreadBattleVisualData,
+    pub bread_encounter_visiual_data: BreadEncounterVisiualData,
+    pub bread_mode: String,
+    pub bread_station_visual_data: BreadStationVisualData,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonFormDataV11 {
+    pub pokemon_form: String,
+    pub visual_data: [VisualDataV12; 1],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualSettingsV11 {
+    pub pokemon_form_data: [PokemonFormDataV11; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonFormDataV12 {
+    pub visual_data: [VisualDataV7; 1],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualSettingsV12 {
+    pub pokemon_form_data: [PokemonFormDataV12; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonFormDataV13 {
+    pub visual_data: [VisualDataV2; 1],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualSettingsV13 {
+    pub pokemon_form_data: [PokemonFormDataV13; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualDataV13 {
+    pub bread_battle_visual_data: BreadBattleVisualDataV2,
+    pub bread_encounter_visiual_data: BreadEncounterVisiualData,
+    pub bread_mode: String,
+    pub bread_station_visual_data: BreadBattleVisualData,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonFormDataV14 {
+    pub visual_data: [VisualDataV13; 1],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualSettingsV14 {
+    pub pokemon_form_data: [PokemonFormDataV14; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonFormDataV15 {
+    pub visual_data: [VisualDataV6; 1],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualSettingsV15 {
+    pub pokemon_form_data: [PokemonFormDataV15; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonFormDataV16 {
+    pub visual_data: [VisualDataV5; 1],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualSettingsV16 {
+    pub pokemon_form_data: [PokemonFormDataV16; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct BreadBattleVisualDataV4 {
+    pub scale: u64,
+    pub y_offset: i64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualDataV14 {
+    pub bread_battle_trainer_visual_data: BreadBattleTrainerVisualDataV4,
+    pub bread_battle_visual_data: BreadBattleVisualDataV4,
+    pub bread_encounter_visiual_data: BreadEncounterVisiualDataV3,
+    pub bread_mode: String,
+    pub bread_station_visual_data: BreadBattleVisualData,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonFormDataV17 {
+    pub pokemon_form: String,
+    pub visual_data: [VisualDataV14; 1],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualSettingsV17 {
+    pub pokemon_form_data: [PokemonFormDataV17; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualDataV15 {
+    pub bread_battle_visual_data: BreadStationVisualData,
+    pub bread_encounter_visiual_data: BreadEncounterVisiualDataV3,
+    pub bread_mode: String,
+    pub bread_station_visual_data: BreadBattleVisualData,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonFormDataV18 {
+    pub visual_data: [VisualDataV15; 1],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualSettingsV18 {
+    pub pokemon_form_data: [PokemonFormDataV18; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct BreadEncounterVisiualDataV4 {
+    pub camera_distance: u64,
+    pub scale: f64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualDataV16 {
+    pub bread_battle_visual_data: BreadBattleVisualData,
+    pub bread_encounter_visiual_data: BreadEncounterVisiualDataV4,
+    pub bread_mode: String,
+    pub bread_station_visual_data: BreadBattleVisualData,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonFormDataV19 {
+    pub visual_data: [VisualDataV16; 1],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualSettingsV19 {
+    pub pokemon_form_data: [PokemonFormDataV19; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct BreadEncounterVisiualDataV5 {
+    pub camera_distance: f64,
+    pub max_reticle_size: u64,
+    pub scale: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualDataV17 {
+    pub bread_battle_visual_data: BreadBattleVisualData,
+    pub bread_encounter_visiual_data: BreadEncounterVisiualDataV5,
+    pub bread_mode: String,
+    pub bread_station_visual_data: BreadBattleVisualData,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonFormDataV20 {
+    pub pokemon_form: String,
+    pub visual_data: [VisualDataV17; 1],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VisualSettingsV20 {
+    pub pokemon_form_data: [PokemonFormDataV20; 1],
+    pub pokemon_id: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -359,56 +945,22 @@ pub struct BreadBattleBossVisualData {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct BreadBattleTrainerVisualData {
-    pub x_offset: f64,
-    pub y_offset: Option<u64>,
+pub struct VisualDataV18 {
+    pub bread_battle_boss_visual_data: BreadBattleBossVisualData,
+    pub bread_mode: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct BreadBattleVisualData {
-    pub scale: f64,
-    pub x_offset: Option<f64>,
-    pub y_offset: Option<i64>,
+pub struct PokemonFormDataV21 {
+    pub pokemon_form: String,
+    pub visual_data: [VisualDataV18; 1],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct BreadEncounterVisiualData {
-    pub camera_distance: f64,
-    pub max_reticle_size: Option<u64>,
-    pub scale: f64,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct BreadStationVisualData {
-    pub scale: f64,
-    pub x_offset: Option<f64>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct VisualData {
-    pub bread_battle_boss_visual_data: Option<BreadBattleBossVisualData>,
-    pub bread_battle_trainer_visual_data: Option<BreadBattleTrainerVisualData>,
-    pub bread_battle_visual_data: Option<BreadBattleVisualData>,
-    pub bread_encounter_visiual_data: Option<BreadEncounterVisiualData>,
-    pub bread_mode: serde_json::Value,
-    pub bread_station_visual_data: Option<BreadStationVisualData>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct PokemonFormData {
-    pub pokemon_form: Option<String>,
-    pub visual_data: Vec<VisualData>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct VisualSettings {
-    pub pokemon_form_data: Vec<PokemonFormData>,
+pub struct VisualSettingsV21 {
+    pub pokemon_form_data: [PokemonFormDataV21; 1],
     pub pokemon_id: String,
 }
 
@@ -422,7 +974,15 @@ pub struct BreadPokemonScalingSettings {
 #[serde(rename_all = "camelCase")]
 pub struct AllowedSourdoughPokemon {
     pub bread_mode: String,
-    pub form: Vec<String>,
+    pub form: [String; 1],
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct AllowedSourdoughPokemonV2 {
+    pub bread_mode: String,
+    pub form: [String; 2],
     pub pokemon_id: String,
 }
 
@@ -646,10 +1206,10 @@ pub struct ContestWarmupAndCooldownDurationsMs {
 #[serde(rename_all = "camelCase")]
 pub struct ContestSettings {
     pub catch_prompt_timeout_ms: u64,
-    pub contest_length_thresholds: Vec<ContestLengthThresholds>,
-    pub contest_limits: Vec<ContestLimits>,
-    pub contest_score_coefficient: Vec<ContestScoreCoefficient>,
-    pub contest_warmup_and_cooldown_durations_ms: Vec<ContestWarmupAndCooldownDurationsMs>,
+    pub contest_length_thresholds: [ContestLengthThresholds; 3],
+    pub contest_limits: [ContestLimits; 1],
+    pub contest_score_coefficient: [ContestScoreCoefficient; 1],
+    pub contest_warmup_and_cooldown_durations_ms: [ContestWarmupAndCooldownDurationsMs; 2],
     pub default_contest_max_entries: u64,
     pub default_cycle_cooldown_duration_ms: String,
     pub default_cycle_warmup_duration_ms: String,
@@ -678,7 +1238,7 @@ pub struct PokemonFormAppraisalOverrides {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct ConversationSettings {
-    pub pokemon_form_appraisal_overrides: Vec<PokemonFormAppraisalOverrides>,
+    pub pokemon_form_appraisal_overrides: [PokemonFormAppraisalOverrides; 8],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -698,7 +1258,7 @@ pub struct LootItem {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PokeballGrant {
-    pub loot_item: Vec<LootItem>,
+    pub loot_item: [LootItem; 1],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -788,7 +1348,7 @@ pub struct GiftingSettings {
     pub enable_gift_to_stardust: bool,
     pub flow_polish_enabled: bool,
     pub multi_major_reward_ui_enabled: bool,
-    pub stardust_multiplier: Vec<StardustMultiplier>,
+    pub stardust_multiplier: [StardustMultiplier; 3],
     pub stardust_per_gift: u64,
 }
 
@@ -866,7 +1426,7 @@ pub struct IncidentPriority {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct IncidentPrioritySettings {
-    pub incident_priority: Vec<IncidentPriority>,
+    pub incident_priority: [IncidentPriority; 7],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -886,7 +1446,7 @@ pub struct BagUpgradeTimerStages {
 pub struct InventorySettings {
     pub bag_upgrade_banner_contexts: [String; 5],
     pub bag_upgrade_banner_enabled: bool,
-    pub bag_upgrade_timer_stages: Vec<BagUpgradeTimerStages>,
+    pub bag_upgrade_timer_stages: [BagUpgradeTimerStages; 4],
     pub base_bag_items: u64,
     pub base_daily_adventure_eggs: u64,
     pub base_eggs: u64,
@@ -950,7 +1510,14 @@ pub struct IrisSocialSettings {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct EventStep {
-    pub event: serde_json::Value,
+    pub event: String,
+    pub step_number: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct EventStepV2 {
+    pub event: u64,
     pub step_number: u64,
 }
 
@@ -964,15 +1531,46 @@ pub struct IrisSocialUxFunnelSettings {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct CategoryProto {
-    pub category: Vec<String>,
+    pub category: [String; 1],
     pub category_name: String,
-    pub sort_order: Option<u64>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct CategoryProtoV2 {
+    pub category: [String; 1],
+    pub category_name: String,
+    pub sort_order: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct CategoryProtoV3 {
+    pub category: [String; 3],
+    pub category_name: String,
+    pub sort_order: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct CategoryProtoV4 {
+    pub category: [String; 4],
+    pub category_name: String,
+    pub sort_order: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct CategoryProtoV5 {
+    pub category: [String; 7],
+    pub category_name: String,
+    pub sort_order: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct ItemInventoryUpdateSettings {
-    pub category_proto: Vec<CategoryProto>,
+    pub category_proto: (CategoryProto, CategoryProtoV2, CategoryProtoV2, CategoryProtoV2, CategoryProtoV3, CategoryProtoV4, CategoryProtoV5, CategoryProtoV3, CategoryProtoV2, CategoryProtoV4, CategoryProtoV2, CategoryProtoV2),
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1049,7 +1647,15 @@ pub struct MonodepthSettings {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct BattleMpCostPerTier {
-    pub battle_level: serde_json::Value,
+    pub battle_level: String,
+    pub bread_battle_catch_mp_cost: u64,
+    pub bread_battle_remote_catch_mp_cost: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct BattleMpCostPerTierV2 {
+    pub battle_level: u64,
     pub bread_battle_catch_mp_cost: u64,
     pub bread_battle_remote_catch_mp_cost: u64,
 }
@@ -1057,7 +1663,7 @@ pub struct BattleMpCostPerTier {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct MpSettings {
-    pub battle_mp_cost_per_tier: Vec<BattleMpCostPerTier>,
+    pub battle_mp_cost_per_tier: (BattleMpCostPerTier, BattleMpCostPerTier, BattleMpCostPerTier, BattleMpCostPerTier, BattleMpCostPerTier, BattleMpCostPerTier, BattleMpCostPerTierV2),
     pub debug_allow_remove_walk_quest: bool,
     pub ftue_mp_capacity: u64,
     pub mp_base_daily_limit: u64,
@@ -1149,16 +1755,31 @@ pub struct EarSelection {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct ColorKeys {
-    pub blue: Option<f64>,
-    pub green: Option<f64>,
     pub key_position: f64,
-    pub red: Option<f64>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct ColorKeysV2 {
+    pub blue: f64,
+    pub green: f64,
+    pub key_position: f64,
+    pub red: f64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct ColorKeysV3 {
+    pub blue: u64,
+    pub green: u64,
+    pub key_position: u64,
+    pub red: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct EyeGradient {
-    pub color_keys: Vec<ColorKeys>,
+    pub color_keys: (ColorKeys, ColorKeysV2, ColorKeysV2, ColorKeysV3),
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1178,32 +1799,40 @@ pub struct FacePositions {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ColorKeysV2 {
+pub struct ColorKeysV4 {
     pub blue: f64,
     pub green: f64,
-    pub key_position: Option<f64>,
+    pub red: f64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct ColorKeysV5 {
+    pub blue: f64,
+    pub green: f64,
+    pub key_position: u64,
     pub red: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct HairGradient {
-    pub color_keys: Vec<ColorKeysV2>,
+    pub color_keys: (ColorKeysV4, ColorKeysV2, ColorKeysV2, ColorKeysV2, ColorKeysV5),
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ColorKeysV3 {
+pub struct ColorKeysV6 {
     pub blue: f64,
     pub green: f64,
     pub key_position: f64,
-    pub red: f64,
+    pub red: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct SkinGradient {
-    pub color_keys: Vec<ColorKeysV3>,
+    pub color_keys: (ColorKeysV2, ColorKeysV2, ColorKeysV2, ColorKeysV2, ColorKeysV6),
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1267,6 +1896,12 @@ pub struct FacePositionsV2 {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct SkinGradientV2 {
+    pub color_keys: (ColorKeysV2, ColorKeysV2, ColorKeysV2, ColorKeysV2, ColorKeysV2, ColorKeysV6),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct FemaleNeutralAvatar {
     pub articles: ArticlesV2,
     pub body_blend: BodyBlendV2,
@@ -1278,7 +1913,7 @@ pub struct FemaleNeutralAvatar {
     pub head_selection: EarSelection,
     pub mouth_selection: EarSelection,
     pub nose_selection: EarSelection,
-    pub skin_gradient: SkinGradient,
+    pub skin_gradient: SkinGradientV2,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1321,7 +1956,7 @@ pub struct MaleNeutralAvatar {
     pub head_selection: EarSelection,
     pub mouth_selection: EarSelection,
     pub nose_selection: EarSelection,
-    pub skin_gradient: SkinGradient,
+    pub skin_gradient: SkinGradientV2,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1373,8 +2008,8 @@ pub struct LeavePartyProbablity {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PartyDarkLaunchSettings {
-    pub create_or_join_wait_probability: Vec<CreateOrJoinWaitProbability>,
-    pub leave_party_probablity: Vec<LeavePartyProbablity>,
+    pub create_or_join_wait_probability: [CreateOrJoinWaitProbability; 4],
+    pub leave_party_probablity: [LeavePartyProbablity; 4],
     pub probability_to_create_percent: u64,
     pub rollout_players_per_billion: u64,
     pub update_location_enabled: bool,
@@ -1392,7 +2027,7 @@ pub struct Boost {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PartyIapBoostsSettings {
-    pub boost: Vec<Boost>,
+    pub boost: [Boost; 3],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1416,17 +2051,36 @@ pub struct PhotoSettings {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct MessageTiming {
-    pub message_send_before_event_seconds: Option<u64>,
+    pub message_send_time: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct MessageTimingV2 {
+    pub message_send_before_event_seconds: u64,
     pub message_send_time: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct EventSettings {
-    pub event_type: Option<String>,
     pub max_rsvps_per_slot: u64,
     pub max_timeslots: u64,
-    pub message_timing: Vec<MessageTiming>,
+    pub message_timing: (MessageTiming, MessageTimingV2),
+    pub rsvp_bonus_time_window_minutes: u64,
+    pub rsvp_clear_inventory_minutes: u64,
+    pub rsvp_invite_enabled: bool,
+    pub rsvp_timeslot_duration_seconds: u64,
+    pub timeslot_gap_seconds: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct EventSettingsV2 {
+    pub event_type: String,
+    pub max_rsvps_per_slot: u64,
+    pub max_timeslots: u64,
+    pub message_timing: (MessageTiming, MessageTimingV2),
     pub rsvp_bonus_time_window_minutes: u64,
     pub rsvp_clear_inventory_minutes: u64,
     pub rsvp_invite_enabled: bool,
@@ -1439,7 +2093,7 @@ pub struct EventSettings {
 pub struct PlannerSettings {
     pub active_reminder_time_seconds: u64,
     pub enabled: bool,
-    pub event_settings: Vec<EventSettings>,
+    pub event_settings: (EventSettings, EventSettingsV2),
     pub max_pending_rsvp_invites: u64,
     pub max_rsvp_display_distance_m: u64,
     pub max_rsvp_invites: u64,
@@ -1522,7 +2176,7 @@ pub struct ThrowProperties {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PokeballThrowPropertySettings {
-    pub throw_properties: Vec<ThrowProperties>,
+    pub throw_properties: [ThrowProperties; 1],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1535,8 +2189,22 @@ pub struct PokecoinPurchaseDisplayGmt {
 #[serde(rename_all = "camelCase")]
 pub struct PokedexCategorySettingsInOrder {
     pub milestone_goal: u64,
-    pub pokedex_category: serde_json::Value,
-    pub visually_hidden: Option<bool>,
+    pub pokedex_category: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokedexCategorySettingsInOrderV2 {
+    pub milestone_goal: u64,
+    pub pokedex_category: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokedexCategorySettingsInOrderV3 {
+    pub milestone_goal: u64,
+    pub pokedex_category: String,
+    pub visually_hidden: bool,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1544,7 +2212,7 @@ pub struct PokedexCategorySettingsInOrder {
 pub struct PokedexCategoriesSettings {
     pub client_shiny_form_check: bool,
     pub feature_enabled: bool,
-    pub pokedex_category_settings_in_order: Vec<PokedexCategorySettingsInOrder>,
+    pub pokedex_category_settings_in_order: (PokedexCategorySettingsInOrder, PokedexCategorySettingsInOrder, PokedexCategorySettingsInOrderV2, PokedexCategorySettingsInOrderV2, PokedexCategorySettingsInOrderV3, PokedexCategorySettingsInOrderV3, PokedexCategorySettingsInOrderV3, PokedexCategorySettingsInOrderV3, PokedexCategorySettingsInOrderV3, PokedexCategorySettingsInOrder, PokedexCategorySettingsInOrder, PokedexCategorySettingsInOrder),
     pub search_enabled: bool,
     pub show_dex_after_new_form_enabled: bool,
     pub show_shiny_dex_celebration_enabled: bool,
@@ -1603,7 +2271,7 @@ pub struct ColorBinding {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PokemonTagSettings {
-    pub color_binding: Vec<ColorBinding>,
+    pub color_binding: [ColorBinding; 8],
     pub max_num_tags_allowed: u64,
     pub min_player_level_for_pokemon_tagging: u64,
 }
@@ -1649,7 +2317,7 @@ pub struct TypeBoosts {
 pub struct PrimalEvoSettings {
     pub common_temp_settings: CommonTempSettings,
     pub max_candy_hoard_size: u64,
-    pub type_boosts: Vec<TypeBoosts>,
+    pub type_boosts: [TypeBoosts; 3],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1688,7 +2356,38 @@ pub struct RaidLobbyCounterSettings {
 #[serde(rename_all = "camelCase")]
 pub struct PokemonMusicOverrides {
     pub battle_music_key: String,
-    pub forms: Option<Vec<String>>,
+    pub forms: [String; 2],
+    pub pokemon: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonMusicOverridesV2 {
+    pub battle_music_key: String,
+    pub forms: [String; 3],
+    pub pokemon: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonMusicOverridesV3 {
+    pub battle_music_key: String,
+    pub pokemon: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonMusicOverridesV4 {
+    pub battle_music_key: String,
+    pub forms: [String; 4],
+    pub pokemon: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonMusicOverridesV5 {
+    pub battle_music_key: String,
+    pub forms: Option<[String; 2]>,
     pub pokemon: String,
 }
 
@@ -1727,10 +2426,10 @@ pub struct RaidSettings {
     pub min_players_to_boot: u64,
     pub ob_raid_client_settings_number1: u64,
     pub ob_raid_client_settings_number29: u64,
-    pub pokemon_music_overrides: Vec<PokemonMusicOverrides>,
+    pub pokemon_music_overrides: Vec<PokemonMusicOverridesV5>,
     pub popup_time_ms: u64,
     pub raid_feature_flags: RaidFeatureFlags,
-    pub raid_level_music_overrides: Vec<RaidLevelMusicOverrides>,
+    pub raid_level_music_overrides: [RaidLevelMusicOverrides; 5],
     pub remote_damage_modifier: u64,
     pub remote_raid_distance_validation: bool,
     pub remote_raid_enabled: bool,
@@ -1744,7 +2443,15 @@ pub struct RaidSettings {
 pub struct RecentFeatures {
     pub description: String,
     pub feature_name: String,
-    pub icon_type: serde_json::Value,
+    pub icon_type: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct RecentFeaturesV2 {
+    pub description: String,
+    pub feature_name: String,
+    pub icon_type: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1755,7 +2462,7 @@ pub struct ReferralSettings {
     pub feature_enabled: bool,
     pub image_share_referral_enabled: bool,
     pub min_num_days_without_session_for_lapsed_player: u64,
-    pub recent_features: Vec<RecentFeatures>,
+    pub recent_features: (RecentFeatures, RecentFeaturesV2, RecentFeatures),
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1833,7 +2540,15 @@ pub struct RouteDiscoverySettings {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PinMessage {
-    pub category: Vec<String>,
+    pub category: [String; 2],
+    pub key: String,
+    pub level_required: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PinMessageV2 {
+    pub category: [String; 1],
     pub key: String,
     pub level_required: u64,
 }
@@ -1846,7 +2561,7 @@ pub struct RoutePinSettings {
     pub max_named_stickers_per_pin: u64,
     pub max_pins_for_client_display: u64,
     pub max_pins_per_route: u64,
-    pub pin_message: Vec<PinMessage>,
+    pub pin_message: (PinMessage, PinMessageV2, PinMessageV2, PinMessageV2),
     pub player_max: u64,
 }
 
@@ -1908,6 +2623,21 @@ pub struct SharedMoveSettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct MappingsV2 {
+    pub form: String,
+    pub r#move: String,
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct MappingsV3 {
+    pub r#move: String,
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct OptionalBmoveOverride {
     pub r#move: String,
     pub r#override: bool,
@@ -1915,7 +2645,17 @@ pub struct OptionalBmoveOverride {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct MappingsV2 {
+pub struct MappingsV4 {
+    pub form: String,
+    pub r#move: String,
+    pub optional_bmove_override: OptionalBmoveOverride,
+    pub optional_cmove_override: OptionalBmoveOverride,
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct MappingsV5 {
     pub form: Option<String>,
     pub r#move: String,
     pub optional_bmove_override: Option<OptionalBmoveOverride>,
@@ -1926,7 +2666,7 @@ pub struct MappingsV2 {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct SourdoughMoveMappingSettings {
-    pub mappings: Vec<MappingsV2>,
+    pub mappings: Vec<MappingsV5>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1984,7 +2724,7 @@ pub struct TierBoosts {
 #[serde(rename_all = "camelCase")]
 pub struct StationedPokemonTableSettings {
     pub stationed_pokemon_table_enum: String,
-    pub tier_boosts: Vec<TierBoosts>,
+    pub tier_boosts: [TierBoosts; 20],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1992,7 +2732,15 @@ pub struct StationedPokemonTableSettings {
 pub struct StickerCategory {
     pub active: bool,
     pub category: String,
-    pub preferred_category_icon: Option<String>,
+    pub preferred_category_icon: String,
+    pub sort_order: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct StickerCategoryV2 {
+    pub active: bool,
+    pub category: String,
     pub sort_order: u64,
 }
 
@@ -2000,7 +2748,7 @@ pub struct StickerCategory {
 #[serde(rename_all = "camelCase")]
 pub struct StickerCategorySettings {
     pub enabled: bool,
-    pub sticker_category: Vec<StickerCategory>,
+    pub sticker_category: (StickerCategory, StickerCategoryV2, StickerCategory, StickerCategory, StickerCategory, StickerCategory, StickerCategory),
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2038,8 +2786,14 @@ pub struct Item {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct TutorialItemRewards {
-    pub item: Option<Vec<Item>>,
-    pub tutorial: serde_json::Value,
+    pub item: [Item; 2],
+    pub tutorial: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct TutorialItemRewardsV2 {
+    pub tutorial: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2055,7 +2809,7 @@ pub struct TutorialSettings {
     pub revives_and_potions_tutorial_enabled: bool,
     pub task_help_tutorials_enabled: bool,
     pub trading_tutorial_enabled: bool,
-    pub tutorial_item_rewards: Vec<TutorialItemRewards>,
+    pub tutorial_item_rewards: (TutorialItemRewards, TutorialItemRewardsV2),
     pub type_effectiveness_tips_enabled: bool,
 }
 
@@ -2140,7 +2894,15 @@ pub struct VsSeekerClientSettings {
 pub struct VsSeekerSchedules {
     pub end_time_ms: String,
     pub start_time_ms: String,
-    pub vs_seeker_league_tempalte_id: Vec<String>,
+    pub vs_seeker_league_tempalte_id: [String; 2],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VsSeekerSchedulesV2 {
+    pub end_time_ms: String,
+    pub start_time_ms: String,
+    pub vs_seeker_league_tempalte_id: [String; 3],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2158,7 +2920,7 @@ pub struct VsSeekerScheduleSettings {
     pub enable_combat_hub_main: bool,
     pub enable_combat_league_view: bool,
     pub enable_today_view: bool,
-    pub season_schedules: Vec<SeasonSchedules>,
+    pub season_schedules: [SeasonSchedules; 1],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

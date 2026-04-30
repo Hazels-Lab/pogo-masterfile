@@ -56,7 +56,7 @@ pub struct Goals {
 pub struct EvolutionQuestTemplate {
     pub context: String,
     pub display: Display,
-    pub goals: Vec<Goals>,
+    pub goals: [Goals; 1],
     pub quest_template_id: String,
     pub quest_type: String,
 }

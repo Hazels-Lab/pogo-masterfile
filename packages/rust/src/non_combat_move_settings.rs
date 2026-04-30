@@ -6,14 +6,22 @@ use serde::{Deserialize, Serialize};
 #[serde(rename_all = "camelCase")]
 pub struct Attributes {
     pub attack_multiplier: Option<f64>,
-    pub combat_types: Vec<String>,
+    pub combat_types: [String; 1],
+    pub defense_multiplier: Option<f64>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct AttributesV2 {
+    pub attack_multiplier: Option<f64>,
+    pub combat_types: [String; 2],
     pub defense_multiplier: Option<f64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct AttackDefenseBonus {
-    pub attributes: Vec<Attributes>,
+    pub attributes: (Attributes, AttributesV2),
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

@@ -1,8 +1,37 @@
 import type { Entry, Group } from "../group.ts";
-import type { InferredType, ObjectType } from "../infer.ts";
+import type { InferredProperty, InferredType, ObjectType } from "../infer.ts";
 import { inferJsonTypes, widenType } from "../infer.ts";
 import { pascalCase, snakeCase } from "../naming.ts";
 import { clusterByFingerprint } from "../split.ts";
+
+// Merge a list of ObjectTypes into a single ObjectType with the union of all
+// fields. A field present in some positions but not others becomes optional.
+// Field types are merged recursively when they're also objects; otherwise the
+// first observation wins (acceptable for our use case since downstream Rust
+// emit will widen anyway). Used only by the long-heterogeneous-tuple fallback,
+// where per-position object types would otherwise erase to `serde_json::Value`.
+function mergeObjectTypes(types: readonly ObjectType[]): ObjectType {
+	if (types.length === 1) return types[0]!;
+	const propBuckets = new Map<string, { occurrences: InferredType[]; presentIn: number; anyOptional: boolean }>();
+	for (const t of types) {
+		for (const prop of t.properties) {
+			const entry = propBuckets.get(prop.name) ?? { occurrences: [], presentIn: 0, anyOptional: false };
+			entry.occurrences.push(prop.type);
+			entry.presentIn += 1;
+			if (prop.optional) entry.anyOptional = true;
+			propBuckets.set(prop.name, entry);
+		}
+	}
+	const properties: InferredProperty[] = [];
+	for (const [name, info] of propBuckets) {
+		const optional = info.anyOptional || info.presentIn < types.length;
+		const allObjects = info.occurrences.every((t) => t.kind === "object");
+		const type = allObjects ? mergeObjectTypes(info.occurrences as ObjectType[]) : info.occurrences[0]!;
+		properties.push({ name, type, optional });
+	}
+	properties.sort((a, b) => a.name.localeCompare(b.name));
+	return { kind: "object", properties };
+}
 
 // When a group has more than this many distinct payload shapes (fingerprint
 // clusters), emit a single flat struct with all fields optional rather than
@@ -150,15 +179,26 @@ function rustType(t: InferredType, fieldName: string, pool: StructPool): string 
 			//
 			// Caps: arrays beyond MAX_FIXED_ARRAY_LEN fall back to `Vec<T>`
 			// (serde doesn't impl traits past 32). Heterogeneous tuples beyond
-			// MAX_TUPLE_ARITY fall back to `Vec<serde_json::Value>` (Rust std
-			// doesn't impl Debug/Serialize/Deserialize for tuples past 12).
+			// MAX_TUPLE_ARITY would normally fall back to `Vec<serde_json::Value>`
+			// (Rust std doesn't impl Debug/Serialize/Deserialize for tuples past
+			// 12) — but if every position is object-typed, we instead merge
+			// them into one ObjectType and emit `Vec<MergedT>`. This recovers
+			// the schema for long lists of records (e.g. `event_step: 45 items`
+			// with slight per-position optional-field variation).
 			if (t.items.length === 0) return "Vec<serde_json::Value>";
 			const itemTypes = t.items.map((item) => rustType(item, fieldName, pool));
 			const allSame = itemTypes.every((ty) => ty === itemTypes[0]);
 			if (allSame) {
 				return t.items.length <= MAX_FIXED_ARRAY_LEN ? `[${itemTypes[0]}; ${itemTypes.length}]` : `Vec<${itemTypes[0]}>`;
 			}
-			return t.items.length <= MAX_TUPLE_ARITY ? `(${itemTypes.join(", ")})` : "Vec<serde_json::Value>";
+			if (t.items.length <= MAX_TUPLE_ARITY) {
+				return `(${itemTypes.join(", ")})`;
+			}
+			if (t.items.every((item) => item.kind === "object")) {
+				const merged = mergeObjectTypes(t.items as ObjectType[]);
+				return `Vec<${rustType(merged, fieldName, pool)}>`;
+			}
+			return "Vec<serde_json::Value>";
 		}
 		case "object":
 			return emitOrReuseStruct(pascalCase(fieldName), t, pool);

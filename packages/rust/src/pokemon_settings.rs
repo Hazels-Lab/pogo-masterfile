@@ -5,7 +5,14 @@ use serde::{Deserialize, Serialize};
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct BuddyWalkedMegaEnergyAwards {
-    pub gender_requirement: Option<String>,
+    pub mega_energy_award_amount: u64,
+    pub mega_pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct BuddyWalkedMegaEnergyAwardsV2 {
+    pub gender_requirement: String,
     pub mega_energy_award_amount: u64,
     pub mega_pokemon_id: String,
 }
@@ -73,7 +80,7 @@ pub struct EvolutionBranch {
     pub only_nighttime: Option<bool>,
     pub only_upside_down: Option<bool>,
     pub priority: Option<u64>,
-    pub quest_display: Option<Vec<QuestDisplay>>,
+    pub quest_display: Option<[QuestDisplay; 1]>,
     pub temporary_evolution: Option<String>,
     pub temporary_evolution_energy_cost: Option<u64>,
     pub temporary_evolution_energy_cost_subsequent: Option<u64>,
@@ -100,7 +107,7 @@ pub struct ComponentPokemonSettings {
     pub component_candy_cost: Option<u64>,
     pub family_id: String,
     pub form_change_type: String,
-    pub location_card_settings: Option<Vec<LocationCardSettings>>,
+    pub location_card_settings: Option<[LocationCardSettings; 1]>,
     pub pokedex_id: String,
 }
 
@@ -116,7 +123,7 @@ pub struct MaxMoves {
 pub struct FormChangeBonusAttributes {
     pub bread_mode: Option<String>,
     pub clear_bread_mode: Option<bool>,
-    pub max_moves: Option<Vec<MaxMoves>>,
+    pub max_moves: Option<[MaxMoves; 1]>,
     pub target_form: String,
 }
 
@@ -137,7 +144,7 @@ pub struct CinematicMoves {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct MoveReassignment {
-    pub cinematic_moves: Vec<CinematicMoves>,
+    pub cinematic_moves: [CinematicMoves; 1],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -159,14 +166,14 @@ pub struct FormChange {
     pub available_form: Vec<String>,
     pub candy_cost: Option<u64>,
     pub component_pokemon_settings: Option<ComponentPokemonSettings>,
-    pub form_change_bonus_attributes: Option<Vec<FormChangeBonusAttributes>>,
+    pub form_change_bonus_attributes: Option<[FormChangeBonusAttributes; 1]>,
     pub item: Option<String>,
     pub item_cost_count: Option<u64>,
-    pub location_card_settings: Option<Vec<LocationCardSettingsV2>>,
+    pub location_card_settings: Option<[LocationCardSettingsV2; 1]>,
     pub move_reassignment: Option<MoveReassignment>,
     pub priority: Option<u64>,
-    pub required_bread_moves: Option<Vec<RequiredBreadMoves>>,
-    pub required_cinematic_moves: Option<Vec<RequiredCinematicMoves>>,
+    pub required_bread_moves: Option<[RequiredBreadMoves; 1]>,
+    pub required_cinematic_moves: Option<[RequiredCinematicMoves; 1]>,
     pub stardust_cost: Option<u64>,
 }
 
@@ -271,7 +278,7 @@ pub struct PokemonSettings {
     pub buddy_scale: Option<f64>,
     pub buddy_size: Option<String>,
     pub buddy_walked_mega_energy_award: Option<u64>,
-    pub buddy_walked_mega_energy_awards: Option<Vec<BuddyWalkedMegaEnergyAwards>>,
+    pub buddy_walked_mega_energy_awards: Option<(BuddyWalkedMegaEnergyAwards, BuddyWalkedMegaEnergyAwardsV2)>,
     pub camera: Camera,
     pub candy_to_evolve: Option<u64>,
     pub cinematic_moves: Option<Vec<String>>,
