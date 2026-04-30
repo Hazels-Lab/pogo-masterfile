@@ -1,22 +1,6 @@
 // Generated from Pokémon GO masterfile — package entry point.
+// Package documentation lives in doc.go.
 
-// Package masterfile contains generated Rust types for the Pokémon GO masterfile,
-// plus a typed entry-point parser. Each masterfile discriminator gets its own
-// Entry / EntryData / payload type triple; ParseMasterfile dispatches each
-// JSON entry to the right concrete type by inspecting the inner data object's
-// non-templateId key.
-//
-// Quick start:
-//
-//	data, _ := os.ReadFile("masterfile.json")
-//	entries, err := masterfile.ParseMasterfile(data)
-//	if err != nil { return err }
-//	for _, e := range entries {
-//	    switch e := e.(type) {
-//	    case masterfile.PokemonSettingsEntry:
-//	        fmt.Println(e.TemplateID, e.Data.PokemonSettings.PokemonId)
-//	    }
-//	}
 package masterfile
 
 import (

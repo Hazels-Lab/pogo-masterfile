@@ -8,7 +8,7 @@ import (
 	"os"
 	"time"
 
-	"pogomasterfiletypes"
+	masterfile "github.com/PLACEHOLDER/pogo-masterfile-types/packages/go"
 )
 
 func main() {

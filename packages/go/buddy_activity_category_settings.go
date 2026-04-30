@@ -4,17 +4,17 @@ package masterfile
 
 type BuddyActivityCategorySettings struct {
 	ActivityCategory string `json:"activityCategory"`
-	MaxPointsPerDay uint64 `json:"maxPointsPerDay"`
+	MaxPointsPerDay  uint64 `json:"maxPointsPerDay"`
 }
 
 type BuddyActivityCategorySettingsEntry struct {
-	TemplateID string `json:"templateId"`
+	TemplateID string                                 `json:"templateId"`
 	Data       BuddyActivityCategorySettingsEntryData `json:"data"`
 }
 
 func (BuddyActivityCategorySettingsEntry) isMasterfileEntry() {}
 
 type BuddyActivityCategorySettingsEntryData struct {
-	TemplateID     string `json:"templateId"`
+	TemplateID                    string                        `json:"templateId"`
 	BuddyActivityCategorySettings BuddyActivityCategorySettings `json:"buddyActivityCategorySettings"`
 }
