@@ -57,7 +57,7 @@ function planFiles(groups: Map<string, Group>): Map<string, string> {
 		}
 
 		const buckets: Array<{ fileName: string; entries: Entry[] }> =
-			plan.kind === "h1"
+			plan.kind === "h1" || plan.kind === "h2"
 				? plan.buckets.map((b) => ({ fileName: b.fileName, entries: b.entries }))
 				: plan.clusters.map((c) => ({ fileName: c.fileName, entries: c.entries }));
 		for (const b of buckets) {

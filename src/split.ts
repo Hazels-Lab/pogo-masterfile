@@ -107,17 +107,129 @@ function longestCommonUnderscorePrefix(values: string[]): string {
 	return lastUnderscore >= 0 ? prefix.slice(0, lastUnderscore + 1) : "";
 }
 
-// H2 (fingerprint clustering): cap the cluster count at ~entries/MIN_AVG so we don't
-// produce a swarm of tiny files when fingerprints are nearly unique.
-const H2_MIN_AVG_CLUSTER_SIZE = 5;
+// H2 (templateId token bucketing): when every entry shares the same payload shape
+// (so H1 finds no qualifying field and H3 would produce a single fingerprint), the
+// templateId itself often encodes a category. Tokenize on `_` and look for the
+// leftmost position whose distinct token values satisfy the same cardinality and
+// dominance gates as H1 — universally-shared tokens fail MIN_CARDINALITY (count=1),
+// unique-per-entry suffixes fail MAX_CARDINALITY, leaving the meaningful axis.
+//
+// Reuses H1's bounds intentionally: the qualification semantics are identical, the
+// only difference is the data source (templateId structure vs. payload field).
 
-export interface H2Cluster {
+export interface H2Bucket {
+	value: string;
+	fileName: string;
+	entries: Entry[];
+}
+
+export interface H2Result {
+	position: number;
+	buckets: H2Bucket[];
+}
+
+interface TokenPositionStats {
+	position: number;
+	cardinality: number;
+	dominance: number;
+	values: Map<string, Entry[]>;
+}
+
+function tokenize(templateId: string): string[] {
+	return templateId.split("_").filter(Boolean);
+}
+
+// Mirrors analyzeField, but for a token position in the templateId. Returns null if
+// any entry has fewer tokens than `position` (parallels H1's "field must be present
+// in 100% of entries" rule — a position only counts when every entry has it).
+function analyzeTokenPosition(group: Group, position: number): TokenPositionStats | null {
+	const values = new Map<string, Entry[]>();
+	for (const entry of group.entries) {
+		const tokens = tokenize(entry.templateId);
+		const v = tokens[position];
+		if (v === undefined) return null;
+		const bucket = values.get(v);
+		if (bucket) bucket.push(entry);
+		else values.set(v, [entry]);
+	}
+	const sizes = [...values.values()].map((b) => b.length);
+	const largest = sizes.reduce((a, b) => Math.max(a, b), 0);
+	return {
+		position,
+		cardinality: values.size,
+		dominance: largest / group.entries.length,
+		values,
+	};
+}
+
+export function tryH2(group: Group): H2Result | null {
+	// Find the maximum token-position any entry has — we'll evaluate positions
+	// 0..maxPos-1. analyzeTokenPosition returns null for positions not universally
+	// present, so we don't need to pre-filter the range.
+	let maxPos = 0;
+	for (const entry of group.entries) {
+		const len = tokenize(entry.templateId).length;
+		if (len > maxPos) maxPos = len;
+	}
+
+	const positions: TokenPositionStats[] = [];
+	for (let i = 0; i < maxPos; i += 1) {
+		const stats = analyzeTokenPosition(group, i);
+		if (stats) positions.push(stats);
+	}
+
+	// TODO(user): leftmost-qualifying selection.
+	//
+	// `positions` is in left-to-right token order. Pick the FIRST entry whose
+	// cardinality is in [H1_MIN_CARDINALITY, H1_MAX_CARDINALITY] AND whose
+	// dominance is ≤ H1_MAX_DOMINANCE. Return that entry, or null if none qualify.
+	//
+	// Note: do NOT sort by best-dominance like tryH1 does — for templateId tokens
+	// we want predictable left-to-right "first usable axis" semantics, so that
+	// e.g. `N_DISPLAY_n_shirt_001` lands on `shirt` (position 3) rather than on
+	// some deeper position that happens to have lower dominance.
+	let winner: TokenPositionStats | null = null;
+	const total = group.entries.length;
+	// console.log(group.discriminator, "-", total);
+
+	// console.log(group.discriminator, JSON.stringify(positions, null, 2));
+
+	for (const cand of positions) {
+		// console.log(JSON.stringify(cand, null, 2), "-", total / cand.cardinality);
+		if (cand.cardinality > 50 || cand.dominance >= 0.8 || total / cand.cardinality < 15) continue;
+		if (!winner) {
+			winner = cand;
+			continue;
+		}
+		if (cand.cardinality > winner.cardinality) {
+			winner = cand;
+		}
+	}
+	if (!winner) return null;
+	// console.log("regrouping", group.discriminator, "into", total / winner.cardinality, "files using", winner.position);
+
+	const allValues = [...winner.values.keys()];
+	const buckets: H2Bucket[] = [];
+	for (const [value, entries] of winner.values) {
+		buckets.push({ value, fileName: valueFileName(value, allValues), entries });
+	}
+	buckets.sort((a, b) => a.fileName.localeCompare(b.fileName));
+	return { position: winner.position, buckets };
+}
+
+// H3 (fingerprint clustering): cap the cluster count at ~entries/MIN_AVG so we don't
+// produce a swarm of tiny files when fingerprints are nearly unique. Demoted from H2
+// because the templateId-token heuristic (H2) produces more navigable buckets in
+// practice, while fingerprint clustering only helps when the type *shape* varies.
+const H3_MIN_AVG_CLUSTER_SIZE = 5;
+
+export interface H3Cluster {
 	fingerprint: string[];
 	fileName: string;
 	entries: Entry[];
 }
 
-export function tryH2(group: Group): H2Cluster[] | null {
+export function tryH3(group: Group): H3Cluster[] | null {
 	// Pass 1: count per-field presence to find universally-present fields.
 	const presenceCount = new Map<string, number>();
 	for (const entry of group.entries) {
@@ -144,10 +256,10 @@ export function tryH2(group: Group): H2Cluster[] | null {
 
 	if (clusters.size < 2) return null;
 	const minClusters = 2;
-	const maxClusters = Math.max(minClusters, Math.floor(group.entries.length / H2_MIN_AVG_CLUSTER_SIZE));
+	const maxClusters = Math.max(minClusters, Math.floor(group.entries.length / H3_MIN_AVG_CLUSTER_SIZE));
 	if (clusters.size > maxClusters) return null;
 
-	const result: H2Cluster[] = [];
+	const result: H3Cluster[] = [];
 	for (const { fingerprint, entries } of clusters.values()) {
 		result.push({ fingerprint, fileName: fingerprintFileName(fingerprint), entries });
 	}
@@ -216,7 +328,11 @@ export function clusterSingletons(singletons: Group[]): MiscBucket[] {
 	return named;
 }
 
-export type SplitPlan = { kind: "none" } | { kind: "h1"; field: string; buckets: H1Bucket[] } | { kind: "h2"; clusters: H2Cluster[] };
+export type SplitPlan =
+	| { kind: "none" }
+	| { kind: "h1"; field: string; buckets: H1Bucket[] }
+	| { kind: "h2"; position: number; buckets: H2Bucket[] }
+	| { kind: "h3"; clusters: H3Cluster[] };
 
 export function chooseSplit(group: Group): SplitPlan {
 	if (group.entries.length <= SPLIT_THRESHOLD) return { kind: "none" };
@@ -225,7 +341,10 @@ export function chooseSplit(group: Group): SplitPlan {
 	if (h1) return { kind: "h1", field: h1.field, buckets: h1.buckets };
 
 	const h2 = tryH2(group);
-	if (h2) return { kind: "h2", clusters: h2 };
+	if (h2) return { kind: "h2", position: h2.position, buckets: h2.buckets };
+
+	const h3 = tryH3(group);
+	if (h3) return { kind: "h3", clusters: h3 };
 
 	return { kind: "none" };
 }

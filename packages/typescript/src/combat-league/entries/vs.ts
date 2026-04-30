@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatLeague", split "banned-pokemon-battle-party-combat-league-template-id-unlock-condition", 69 entries.
+// Generated from Pokémon GO masterfile — group "combatLeague", split "vs", 73 entries.
 
 import type { S } from "../../_utils";
 import type { CombatLeague } from "../types";
@@ -4124,6 +4124,36 @@ export type CombatLeagueVsSeekerGreat = S<
 		}
 	>
 >;
+export type CombatLeagueVsSeekerGreatBidoof = S<
+	CombatLeague<
+		"COMBAT_LEAGUE_VS_SEEKER_GREAT_BIDOOF",
+		{
+			badgeType: "BADGE_GREAT_LEAGUE";
+			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
+			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/league_icon_bidoof.png";
+			leagueType: "PREMIER";
+			pokemonCondition: [
+				{
+					type: "WITH_POKEMON_CP_LIMIT";
+					withPokemonCpLimit: {
+						maxCp: 500;
+					};
+				},
+				{
+					pokemonWhiteList: {
+						pokemon: [
+							{
+								id: "BIDOOF";
+							},
+						];
+					};
+					type: "POKEMON_WHITELIST";
+				},
+			];
+			title: "branch_bidoof_1a_title";
+		}
+	>
+>;
 export type CombatLeagueVsSeekerGreatCatch = S<
 	CombatLeague<
 		"COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH",
@@ -4449,6 +4479,78 @@ export type CombatLeagueVsSeekerGreatCatchS16 = S<
 					pokemonCaughtTimestamp: {
 						afterTimestamp: "1725368400000";
 						beforeTimestamp: "1733216400000";
+					};
+					type: "POKEMON_CAUGHT_TIMESTAMP";
+				},
+			];
+			title: "catch_cup_s13_title";
+			unlockCondition: [
+				{
+					minPokemonCount: 3;
+					type: "WITH_UNIQUE_POKEMON";
+				},
+			];
+		}
+	>
+>;
+export type CombatLeagueVsSeekerGreatCatchS18 = S<
+	CombatLeague<
+		"COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S18",
+		{
+			badgeType: "BADGE_GREAT_LEAGUE";
+			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
+			iconUrl: "https://storage.googleapis.com/prod-public-images/premierball_sprite.png";
+			leagueType: "PREMIER";
+			pokemonCondition: [
+				{
+					type: "WITH_POKEMON_CP_LIMIT";
+					withPokemonCpLimit: {
+						maxCp: 1500;
+					};
+				},
+				{
+					type: "WITH_UNIQUE_POKEMON";
+				},
+				{
+					pokemonCaughtTimestamp: {
+						afterTimestamp: "1741082400000";
+						beforeTimestamp: "1748944800000";
+					};
+					type: "POKEMON_CAUGHT_TIMESTAMP";
+				},
+			];
+			title: "catch_cup_s13_title";
+			unlockCondition: [
+				{
+					minPokemonCount: 3;
+					type: "WITH_UNIQUE_POKEMON";
+				},
+			];
+		}
+	>
+>;
+export type CombatLeagueVsSeekerGreatCatchS19 = S<
+	CombatLeague<
+		"COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S19",
+		{
+			badgeType: "BADGE_GREAT_LEAGUE";
+			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
+			iconUrl: "https://storage.googleapis.com/prod-public-images/premierball_sprite.png";
+			leagueType: "PREMIER";
+			pokemonCondition: [
+				{
+					type: "WITH_POKEMON_CP_LIMIT";
+					withPokemonCpLimit: {
+						maxCp: 1500;
+					};
+				},
+				{
+					type: "WITH_UNIQUE_POKEMON";
+				},
+				{
+					pokemonCaughtTimestamp: {
+						afterTimestamp: "1748980800000";
+						beforeTimestamp: "1756843200000";
 					};
 					type: "POKEMON_CAUGHT_TIMESTAMP";
 				},
@@ -15723,6 +15825,37 @@ export type CombatLeagueVsSeekerMasterClassic = S<
 		}
 	>
 >;
+export type CombatLeagueVsSeekerMasterMegas = S<
+	CombatLeague<
+		"COMBAT_LEAGUE_VS_SEEKER_MASTER_MEGAS",
+		{
+			allowTempEvos: true;
+			badgeType: "BADGE_MASTER_LEAGUE";
+			bannedPokemon: ["DITTO", "SHEDINJA", "MIMIKYU"];
+			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_MASTER";
+			iconUrl: "https://storage.googleapis.com/prod-public-images/pogo_master_league.png";
+			leagueType: "STANDARD";
+			pokemonCondition: [
+				{
+					type: "WITH_POKEMON_CP_LIMIT";
+					withPokemonCpLimit: {
+						maxCp: 7000;
+					};
+				},
+				{
+					type: "WITH_UNIQUE_POKEMON";
+				},
+			];
+			title: "master_league_mega_title";
+			unlockCondition: [
+				{
+					minPokemonCount: 3;
+					type: "WITH_UNIQUE_POKEMON";
+				},
+			];
+		}
+	>
+>;
 export type CombatLeagueVsSeekerMasterNoLegendary = S<
 	CombatLeague<
 		"COMBAT_LEAGUE_VS_SEEKER_MASTER_NO_LEGENDARY",
@@ -16986,7 +17119,7 @@ export type CombatLeagueVsSeekerWillpower = S<
 	>
 >;
 
-export type CombatLeagueBannedPokemonBattlePartyCombatLeagueTemplateIdUnlockConditionMasterfileEntry =
+export type CombatLeagueVsMasterfileEntry =
 	| CombatLeagueVsSeekerColorGreat
 	| CombatLeagueVsSeekerElementRemix
 	| CombatLeagueVsSeekerEvolution
@@ -16994,12 +17127,15 @@ export type CombatLeagueBannedPokemonBattlePartyCombatLeagueTemplateIdUnlockCond
 	| CombatLeagueVsSeekerGalarGreat
 	| CombatLeagueVsSeekerGalarLittle
 	| CombatLeagueVsSeekerGreat
+	| CombatLeagueVsSeekerGreatBidoof
 	| CombatLeagueVsSeekerGreatCatch
 	| CombatLeagueVsSeekerGreatCatchGofest2022
 	| CombatLeagueVsSeekerGreatCatchS13
 	| CombatLeagueVsSeekerGreatCatchS14
 	| CombatLeagueVsSeekerGreatCatchS15
 	| CombatLeagueVsSeekerGreatCatchS16
+	| CombatLeagueVsSeekerGreatCatchS18
+	| CombatLeagueVsSeekerGreatCatchS19
 	| CombatLeagueVsSeekerGreatCatchS20
 	| CombatLeagueVsSeekerGreatCatchS22
 	| CombatLeagueVsSeekerGreatCatchS8
@@ -17040,6 +17176,7 @@ export type CombatLeagueBannedPokemonBattlePartyCombatLeagueTemplateIdUnlockCond
 	| CombatLeagueVsSeekerLittleJungleRemix
 	| CombatLeagueVsSeekerMaster
 	| CombatLeagueVsSeekerMasterClassic
+	| CombatLeagueVsSeekerMasterMegas
 	| CombatLeagueVsSeekerMasterNoLegendary
 	| CombatLeagueVsSeekerMasterPremier
 	| CombatLeagueVsSeekerMasterPremierClassic

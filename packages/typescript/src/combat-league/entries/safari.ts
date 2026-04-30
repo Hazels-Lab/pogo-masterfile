@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatLeague", split "battle-party-combat-league-template-id-unlock-condition", 31 entries.
+// Generated from Pokémon GO masterfile — group "combatLeague", split "safari", 29 entries.
 
 import type { S } from "../../_utils";
 import type { CombatLeague } from "../types";
@@ -6075,80 +6075,8 @@ export type CombatLeagueSafariZoneTaipei2022Test = S<
 		}
 	>
 >;
-export type CombatLeagueVsSeekerGreatCatchS18 = S<
-	CombatLeague<
-		"COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S18",
-		{
-			badgeType: "BADGE_GREAT_LEAGUE";
-			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
-			iconUrl: "https://storage.googleapis.com/prod-public-images/premierball_sprite.png";
-			leagueType: "PREMIER";
-			pokemonCondition: [
-				{
-					type: "WITH_POKEMON_CP_LIMIT";
-					withPokemonCpLimit: {
-						maxCp: 1500;
-					};
-				},
-				{
-					type: "WITH_UNIQUE_POKEMON";
-				},
-				{
-					pokemonCaughtTimestamp: {
-						afterTimestamp: "1741082400000";
-						beforeTimestamp: "1748944800000";
-					};
-					type: "POKEMON_CAUGHT_TIMESTAMP";
-				},
-			];
-			title: "catch_cup_s13_title";
-			unlockCondition: [
-				{
-					minPokemonCount: 3;
-					type: "WITH_UNIQUE_POKEMON";
-				},
-			];
-		}
-	>
->;
-export type CombatLeagueVsSeekerGreatCatchS19 = S<
-	CombatLeague<
-		"COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S19",
-		{
-			badgeType: "BADGE_GREAT_LEAGUE";
-			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
-			iconUrl: "https://storage.googleapis.com/prod-public-images/premierball_sprite.png";
-			leagueType: "PREMIER";
-			pokemonCondition: [
-				{
-					type: "WITH_POKEMON_CP_LIMIT";
-					withPokemonCpLimit: {
-						maxCp: 1500;
-					};
-				},
-				{
-					type: "WITH_UNIQUE_POKEMON";
-				},
-				{
-					pokemonCaughtTimestamp: {
-						afterTimestamp: "1748980800000";
-						beforeTimestamp: "1756843200000";
-					};
-					type: "POKEMON_CAUGHT_TIMESTAMP";
-				},
-			];
-			title: "catch_cup_s13_title";
-			unlockCondition: [
-				{
-					minPokemonCount: 3;
-					type: "WITH_UNIQUE_POKEMON";
-				},
-			];
-		}
-	>
->;
 
-export type CombatLeagueBattlePartyCombatLeagueTemplateIdUnlockConditionMasterfileEntry =
+export type CombatLeagueSafariMasterfileEntry =
 	| CombatLeagueSafariBarcelona202301
 	| CombatLeagueSafariBarcelona202302
 	| CombatLeagueSafariBarcelona2023Test
@@ -6177,6 +6105,4 @@ export type CombatLeagueBattlePartyCombatLeagueTemplateIdUnlockConditionMasterfi
 	| CombatLeagueSafariZoneTaipei202202
 	| CombatLeagueSafariZoneTaipei202203
 	| CombatLeagueSafariZoneTaipei2022Post
-	| CombatLeagueSafariZoneTaipei2022Test
-	| CombatLeagueVsSeekerGreatCatchS18
-	| CombatLeagueVsSeekerGreatCatchS19;
+	| CombatLeagueSafariZoneTaipei2022Test;

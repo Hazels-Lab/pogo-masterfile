@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
 import type { Group } from "./group.ts";
-import { chooseSplit, fingerprintFileName, tryH1, tryH2, valueFileName } from "./split.ts";
+import { chooseSplit, fingerprintFileName, tryH1, tryH3, valueFileName } from "./split.ts";
 
 function mkGroup(payloads: Array<Record<string, unknown>>, discriminator = "x"): Group {
 	return {
@@ -135,7 +135,7 @@ describe("tryH1 file naming", () => {
 	});
 });
 
-describe("tryH2", () => {
+describe("tryH3", () => {
 	test("succeeds when avg cluster size >= 5, stripping universally-present fields", () => {
 		// 15 entries, 3 clusters of 5 each.
 		const make = (form: string | undefined, extra: number | undefined): Record<string, unknown> => {
@@ -150,7 +150,7 @@ describe("tryH2", () => {
 		for (let i = 0; i < 5; i += 1) payloads.push(make(`f${i}`, i));
 		const group = mkGroup(payloads);
 
-		const clusters = tryH2(group);
+		const clusters = tryH3(group);
 		expect(clusters).not.toBeNull();
 		expect(clusters!).toHaveLength(3);
 
@@ -161,21 +161,21 @@ describe("tryH2", () => {
 	test("rejects single-cluster fixture", () => {
 		// Every variant has the same shape → after stripping universal fields, fingerprint is {}.
 		const group = mkGroup(Array.from({ length: 10 }, () => ({ a: 1, b: 2 })));
-		expect(tryH2(group)).toBeNull();
+		expect(tryH3(group)).toBeNull();
 	});
 
 	test("rejects too-many-clusters fixture (avg cluster size < 5)", () => {
 		// 10 variants, each with a unique optional field → 10 clusters of size 1 → avg 1.
 		const payloads = Array.from({ length: 10 }, (_, i) => ({ id: "shared", [`uniq${i}`]: 1 }));
 		const group = mkGroup(payloads);
-		expect(tryH2(group)).toBeNull();
+		expect(tryH3(group)).toBeNull();
 	});
 
 	test("accepts lopsided 2-cluster fixture (96/4)", () => {
 		const big = Array.from({ length: 96 }, () => ({ id: "x" }));
 		const small = Array.from({ length: 4 }, () => ({ id: "x", form: "Y" }));
 		const group = mkGroup([...big, ...small]);
-		const clusters = tryH2(group);
+		const clusters = tryH3(group);
 		expect(clusters).not.toBeNull();
 		expect(clusters!).toHaveLength(2);
 	});
@@ -184,7 +184,7 @@ describe("tryH2", () => {
 		const small = Array.from({ length: 6 }, () => ({ id: "x", a: 1 }));
 		const big = Array.from({ length: 12 }, () => ({ id: "x" }));
 		const group = mkGroup([...small, ...big]);
-		const clusters = tryH2(group)!;
+		const clusters = tryH3(group)!;
 		expect(clusters[0]!.entries.length).toBeGreaterThan(clusters[1]!.entries.length);
 	});
 });
@@ -207,7 +207,7 @@ describe("fingerprintFileName", () => {
 	});
 });
 
-describe("tryH2 file naming", () => {
+describe("tryH3 file naming", () => {
 	test("populates fileName from each cluster's fingerprint", () => {
 		const make = (form: string | undefined, extra: number | undefined): Record<string, unknown> => {
 			const o: Record<string, unknown> = { id: "x" };
@@ -221,7 +221,7 @@ describe("tryH2 file naming", () => {
 		for (let i = 0; i < 5; i += 1) payloads.push(make(`f${i}`, i));
 		const group = mkGroup(payloads);
 
-		const clusters = tryH2(group)!;
+		const clusters = tryH3(group)!;
 		const names = clusters.map((c) => c.fileName).sort();
 		expect(names).toEqual(["extra-form", "form", "misc"]);
 	});
@@ -250,28 +250,32 @@ describe("chooseSplit", () => {
 		}
 	});
 
-	test("falls back to H2 when H1 has no candidate", () => {
-		// 120 entries, no string-valued always-present field, but two clear fingerprints.
+	test("falls back to H3 when H1 and H2 have no candidate", () => {
+		// 120 entries, no string-valued always-present field, no qualifying templateId
+		// token position (T_0..T_119 → token 0 universal, token 1 unique-per-entry),
+		// but two clear fingerprints → H3 wins.
 		const payloads: Array<Record<string, unknown>> = [];
 		for (let i = 0; i < 60; i += 1) payloads.push({ a: i });
 		for (let i = 0; i < 60; i += 1) payloads.push({ a: i, b: i });
 		const group = mkGroup(payloads);
 		const plan = chooseSplit(group);
-		expect(plan.kind).toBe("h2");
-		if (plan.kind === "h2") {
+		expect(plan.kind).toBe("h3");
+		if (plan.kind === "h3") {
 			expect(plan.clusters).toHaveLength(2);
 		}
 	});
 
-	test("falls back to none when both H1 and H2 fail", () => {
-		// 120 entries, every variant uniquely shaped → too many H2 clusters.
+	test("falls back to none when H1, H2, and H3 all fail", () => {
+		// 120 entries, every variant uniquely shaped → too many H3 clusters; H2 also
+		// fails because token 1 is unique-per-entry.
 		const payloads = Array.from({ length: 120 }, (_, i) => ({ [`uniq${i}`]: i }));
 		const group = mkGroup(payloads);
 		expect(chooseSplit(group).kind).toBe("none");
 	});
 
-	test("rejects H1 when chosen field's dominance disqualifies, falls to H2 or none", () => {
-		// 120 entries; `type` has 90% dominance → H1 fails. No H2 split either.
+	test("rejects H1 when chosen field's dominance disqualifies, falls to H2/H3 or none", () => {
+		// 120 entries; `type` has 90% dominance → H1 fails. No qualifying token
+		// position either (T_0..T_119), and a single fingerprint → H3 fails.
 		const payloads: Array<Record<string, unknown>> = [];
 		for (let i = 0; i < 108; i += 1) payloads.push({ type: "MAJORITY" });
 		for (let i = 0; i < 12; i += 1) payloads.push({ type: "MINORITY" });

@@ -1,8 +1,18 @@
-// Generated from Pokémon GO masterfile — group "locationCardSettings", split "card-type-vfx-address", 39 entries.
+// Generated from Pokémon GO masterfile — group "locationCardSettings", split "specialbackground", 45 entries.
 
 import type { S } from "../../_utils";
 import type { LocationCardSettings } from "../types";
 
+export type LocationCardSettingsSpecialbackground2024Decembercdrecap = S<
+	LocationCardSettings<
+		"LC_SPECIALBACKGROUND_2024_DECEMBERCDRECAP",
+		{
+			cardType: "SPECIAL_BACKGROUND";
+			imageUrl: "sb_2024_decemberCdRecap";
+			locationCard: "LC_SPECIALBACKGROUND_2024_DECEMBERCDRECAP";
+		}
+	>
+>;
 export type LocationCardSettingsSpecialbackground2024GlobalGofestRadiance001 = S<
 	LocationCardSettings<
 		"LC_SPECIALBACKGROUND_2024_GLOBAL_GOFEST_RADIANCE_001",
@@ -22,6 +32,16 @@ export type LocationCardSettingsSpecialbackground2024GlobalGofestUmbra001 = S<
 			imageUrl: "sb_GoFest2024_umbra";
 			locationCard: "LC_SPECIALBACKGROUND_2024_GLOBAL_GOFEST_UMBRA_001";
 			vfxAddress: "bgfx_Moon";
+		}
+	>
+>;
+export type LocationCardSettingsSpecialbackground2024GlobalGowa001 = S<
+	LocationCardSettings<
+		"LC_SPECIALBACKGROUND_2024_GLOBAL_GOWA_001",
+		{
+			cardType: "SPECIAL_BACKGROUND";
+			imageUrl: "sb_GOWA_fukuoka";
+			locationCard: "LC_SPECIALBACKGROUND_2024_GLOBAL_GOWA_001";
 		}
 	>
 >;
@@ -223,6 +243,16 @@ export type LocationCardSettingsSpecialbackground2025S18 = S<
 		}
 	>
 >;
+export type LocationCardSettingsSpecialbackground2025Season17 = S<
+	LocationCardSettings<
+		"LC_SPECIALBACKGROUND_2025_SEASON17",
+		{
+			cardType: "SPECIAL_BACKGROUND";
+			imageUrl: "sb_Season17_DuelDestiny";
+			locationCard: "LC_SPECIALBACKGROUND_2025_SEASON17";
+		}
+	>
+>;
 export type LocationCardSettingsSpecialbackground2025Season19 = S<
 	LocationCardSettings<
 		"LC_SPECIALBACKGROUND_2025_SEASON19",
@@ -264,6 +294,16 @@ export type LocationCardSettingsSpecialbackground2026GlobalDiamond001 = S<
 			imageUrl: "sb_GoTour2026_diamond";
 			locationCard: "LC_SPECIALBACKGROUND_2026_GLOBAL_DIAMOND_001";
 			vfxAddress: "bgfx_Diamond";
+		}
+	>
+>;
+export type LocationCardSettingsSpecialbackground2026GlobalGofest001 = S<
+	LocationCardSettings<
+		"LC_SPECIALBACKGROUND_2026_GLOBAL_GOFEST_001",
+		{
+			cardType: "SPECIAL_BACKGROUND";
+			imageUrl: "sb_GoTour2026_mega";
+			locationCard: 248;
 		}
 	>
 >;
@@ -355,6 +395,16 @@ export type LocationCardSettingsSpecialbackground2026GlobalY001 = S<
 		}
 	>
 >;
+export type LocationCardSettingsSpecialbackgroundCon2025 = S<
+	LocationCardSettings<
+		"LC_SPECIALBACKGROUND_CON2025",
+		{
+			cardType: "SPECIAL_BACKGROUND";
+			imageUrl: "sb_Concierge2025";
+			locationCard: "LC_SPECIALBACKGROUND_CON2025";
+		}
+	>
+>;
 export type LocationCardSettingsSpecialbackgroundExtra202501 = S<
 	LocationCardSettings<
 		"LC_SPECIALBACKGROUND_EXTRA_2025_01",
@@ -363,6 +413,44 @@ export type LocationCardSettingsSpecialbackgroundExtra202501 = S<
 			imageUrl: "sb_FestivalofColors_2026";
 			locationCard: "LC_SPECIALBACKGROUND_EXTRA_2025_01";
 			vfxAddress: "bgfx_holi_2026";
+		}
+	>
+>;
+export type LocationCardSettingsSpecialbackgroundExtra202502 = S<
+	LocationCardSettings<
+		"LC_SPECIALBACKGROUND_EXTRA_2025_02",
+		{
+			imageUrl: "lc_taipeiFlowerFestival_2026";
+			locationCard: "LC_SPECIALBACKGROUND_EXTRA_2025_02";
+		}
+	>
+>;
+export type LocationCardSettingsSpecialbackgroundKr2025Lotte01 = S<
+	LocationCardSettings<
+		"LC_SPECIALBACKGROUND_KR2025_LOTTE_01",
+		{
+			imageUrl: "lc_LotteGiants";
+			locationCard: "LC_SPECIALBACKGROUND_KR2025_LOTTE_01";
+		}
+	>
+>;
+export type LocationCardSettingsSpecialbackgroundObservatoryExhibitionTour = S<
+	LocationCardSettings<
+		"LC_SPECIALBACKGROUND_OBSERVATORY_EXHIBITION_TOUR",
+		{
+			cardType: "SPECIAL_BACKGROUND";
+			imageUrl: "sb_ObservatoryExhibitionTour";
+			locationCard: "LC_SPECIALBACKGROUND_OBSERVATORY_EXHIBITION_TOUR";
+		}
+	>
+>;
+export type LocationCardSettingsSpecialbackgroundPok2026 = S<
+	LocationCardSettings<
+		"LC_SPECIALBACKGROUND_POK2026",
+		{
+			cardType: "SPECIAL_BACKGROUND";
+			imageUrl: "lc_pokopia2026";
+			locationCard: "LC_SPECIALBACKGROUND_POK2026";
 		}
 	>
 >;
@@ -399,43 +487,12 @@ export type LocationCardSettingsSpecialbackgroundTeamYellow = S<
 		}
 	>
 >;
-export type LocationCardSettingsSpecialBackground2024GlobalGofestMoonUltraWormhole001 = S<
-	LocationCardSettings<
-		"LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_MOON_ULTRA_WORMHOLE_001",
-		{
-			cardType: "SPECIAL_BACKGROUND";
-			imageUrl: "sb_GoFest2024_wormhole_moon";
-			locationCard: "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_MOON_ULTRA_WORMHOLE_001";
-			vfxAddress: "bgfx_UltraWormhole";
-		}
-	>
->;
-export type LocationCardSettingsSpecialBackground2024GlobalGofestSunUltraWormhole001 = S<
-	LocationCardSettings<
-		"LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_SUN_ULTRA_WORMHOLE_001",
-		{
-			cardType: "SPECIAL_BACKGROUND";
-			imageUrl: "sb_GoFest2024_wormhole_sun";
-			locationCard: "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_SUN_ULTRA_WORMHOLE_001";
-			vfxAddress: "bgfx_UltraWormhole";
-		}
-	>
->;
-export type LocationCardSettingsSpecialBackground2024GlobalGofestUltraWormhole001 = S<
-	LocationCardSettings<
-		"LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_ULTRA_WORMHOLE_001",
-		{
-			cardType: "SPECIAL_BACKGROUND";
-			imageUrl: "sb_GoFest2024_wormhole";
-			locationCard: "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_ULTRA_WORMHOLE_001";
-			vfxAddress: "bgfx_UltraWormhole";
-		}
-	>
->;
 
-export type LocationCardSettingsCardTypeVfxAddressMasterfileEntry =
+export type LocationCardSettingsSpecialbackgroundMasterfileEntry =
+	| LocationCardSettingsSpecialbackground2024Decembercdrecap
 	| LocationCardSettingsSpecialbackground2024GlobalGofestRadiance001
 	| LocationCardSettingsSpecialbackground2024GlobalGofestUmbra001
+	| LocationCardSettingsSpecialbackground2024GlobalGowa001
 	| LocationCardSettingsSpecialbackground20259thanniversary
 	| LocationCardSettingsSpecialbackground2025GlobalEnigma001
 	| LocationCardSettingsSpecialbackground2025GlobalGofestDd001
@@ -454,10 +511,12 @@ export type LocationCardSettingsCardTypeVfxAddressMasterfileEntry =
 	| LocationCardSettingsSpecialbackground2025GlobalGotourWhite001
 	| LocationCardSettingsSpecialbackground2025GowaGlobal
 	| LocationCardSettingsSpecialbackground2025S18
+	| LocationCardSettingsSpecialbackground2025Season17
 	| LocationCardSettingsSpecialbackground2025Season19
 	| LocationCardSettingsSpecialbackground2025Season20
 	| LocationCardSettingsSpecialbackground2026Communityday
 	| LocationCardSettingsSpecialbackground2026GlobalDiamond001
+	| LocationCardSettingsSpecialbackground2026GlobalGofest001
 	| LocationCardSettingsSpecialbackground2026GlobalGold001
 	| LocationCardSettingsSpecialbackground2026GlobalMega001
 	| LocationCardSettingsSpecialbackground2026GlobalPearl001
@@ -466,10 +525,12 @@ export type LocationCardSettingsCardTypeVfxAddressMasterfileEntry =
 	| LocationCardSettingsSpecialbackground2026GlobalSilver001
 	| LocationCardSettingsSpecialbackground2026GlobalX001
 	| LocationCardSettingsSpecialbackground2026GlobalY001
+	| LocationCardSettingsSpecialbackgroundCon2025
 	| LocationCardSettingsSpecialbackgroundExtra202501
+	| LocationCardSettingsSpecialbackgroundExtra202502
+	| LocationCardSettingsSpecialbackgroundKr2025Lotte01
+	| LocationCardSettingsSpecialbackgroundObservatoryExhibitionTour
+	| LocationCardSettingsSpecialbackgroundPok2026
 	| LocationCardSettingsSpecialbackgroundTeamBlue
 	| LocationCardSettingsSpecialbackgroundTeamRed
-	| LocationCardSettingsSpecialbackgroundTeamYellow
-	| LocationCardSettingsSpecialBackground2024GlobalGofestMoonUltraWormhole001
-	| LocationCardSettingsSpecialBackground2024GlobalGofestSunUltraWormhole001
-	| LocationCardSettingsSpecialBackground2024GlobalGofestUltraWormhole001;
+	| LocationCardSettingsSpecialbackgroundTeamYellow;

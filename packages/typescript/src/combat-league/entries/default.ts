@@ -1,8 +1,50 @@
-// Generated from Pokémon GO masterfile — group "combatLeague", split "allow-temp-evos-banned-pokemon-unlock-condition", 2 entries.
+// Generated from Pokémon GO masterfile — group "combatLeague", split "default", 3 entries.
 
 import type { S } from "../../_utils";
 import type { CombatLeague } from "../types";
 
+export type CombatLeagueDefaultGreat = S<
+	CombatLeague<
+		"COMBAT_LEAGUE_DEFAULT_GREAT",
+		{
+			allowTempEvos: true;
+			badgeType: "BADGE_GREAT_LEAGUE";
+			bannedPokemon: [
+				"DITTO",
+				"SHEDINJA",
+				"XERNEAS",
+				"YVELTAL",
+				"COBALION",
+				"TERRAKION",
+				"VIRIZION",
+				"LANDORUS",
+				"RESHIRAM",
+				"ZEKROM",
+				"KYUREM",
+				"TAPU_KOKO",
+				"TAPU_LELE",
+				"TAPU_BULU",
+				"SOLGALEO",
+				"LUNALA",
+				"ZACIAN",
+				"ZAMAZENTA",
+				"ENAMORUS",
+				"MIMIKYU",
+			];
+			iconUrl: "https://storage.googleapis.com/prod-public-images/pogo_great_league.png";
+			leagueType: "STANDARD";
+			pokemonCondition: [
+				{
+					type: "WITH_POKEMON_CP_LIMIT";
+					withPokemonCpLimit: {
+						maxCp: 1500;
+					};
+				},
+			];
+			title: "combat_great_league";
+		}
+	>
+>;
 export type CombatLeagueDefaultMaster = S<
 	CombatLeague<
 		"COMBAT_LEAGUE_DEFAULT_MASTER",
@@ -66,4 +108,4 @@ export type CombatLeagueDefaultUltra = S<
 	>
 >;
 
-export type CombatLeagueAllowTempEvosBannedPokemonUnlockConditionMasterfileEntry = CombatLeagueDefaultMaster | CombatLeagueDefaultUltra;
+export type CombatLeagueDefaultMasterfileEntry = CombatLeagueDefaultGreat | CombatLeagueDefaultMaster | CombatLeagueDefaultUltra;

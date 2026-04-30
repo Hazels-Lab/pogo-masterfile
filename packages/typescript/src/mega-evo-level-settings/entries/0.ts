@@ -1,8 +1,23 @@
-// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", split "pokemon-id", 24 entries.
+// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", split "0", 25 entries.
 
 import type { S } from "../../_utils";
 import type { MegaEvoLevelSettings } from "../types";
 
+export type MegaEvoLevelSettings0 = S<
+	MegaEvoLevelSettings<
+		"MEGA_EVOLUTION_LEVEL_0",
+		{
+			cooldown: {
+				bypassCostInitial: 200;
+				durationMs: "1209600000";
+			};
+			effects: {
+				sameTypeExtraCatchCandy: 1;
+			};
+			progression: object;
+		}
+	>
+>;
 export type MegaEvoLevelSettings0V0015PokemonBeedrill = S<
 	MegaEvoLevelSettings<
 		"MEGA_EVOLUTION_LEVEL_0_V0015_POKEMON_BEEDRILL",
@@ -388,7 +403,8 @@ export type MegaEvoLevelSettings0V0719PokemonDiancie = S<
 	>
 >;
 
-export type MegaEvoLevelSettingsPokemonIdMasterfileEntry =
+export type MegaEvoLevelSettings0MasterfileEntry =
+	| MegaEvoLevelSettings0
 	| MegaEvoLevelSettings0V0015PokemonBeedrill
 	| MegaEvoLevelSettings0V0018PokemonPidgeot
 	| MegaEvoLevelSettings0V0071PokemonVictreebel

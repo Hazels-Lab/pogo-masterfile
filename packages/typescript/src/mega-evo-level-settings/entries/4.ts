@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", split "ftue-expiration-timestamp-level-mega-energy-cost-to-unlock-pokemon-id", 3 entries.
+// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", split "4", 3 entries.
 
 import type { S } from "../../_utils";
 import type { MegaEvoLevelSettings } from "../types";
@@ -76,7 +76,7 @@ export type MegaEvoLevelSettings4V0687PokemonMalamar = S<
 	>
 >;
 
-export type MegaEvoLevelSettingsFtueExpirationTimestampLevelMegaEnergyCostToUnlockPokemonIdMasterfileEntry =
+export type MegaEvoLevelSettings4MasterfileEntry =
 	| MegaEvoLevelSettings4V0071PokemonVictreebel
 	| MegaEvoLevelSettings4V0149PokemonDragonite
 	| MegaEvoLevelSettings4V0687PokemonMalamar;

@@ -1,25 +1,13 @@
 // Generated from Pokémon GO masterfile — group "combatLeague" entries barrel.
 
-import type { CombatLeagueAllowTempEvosBannedPokemonMasterfileEntry } from "./allow-temp-evos-banned-pokemon";
-import type { CombatLeagueAllowTempEvosBannedPokemonBattlePartyCombatLeagueTemplateIdUnlockConditionMasterfileEntry } from "./allow-temp-evos-banned-pokemon-battle-party-combat-league-template-id-unlock-condition";
-import type { CombatLeagueAllowTempEvosBannedPokemonUnlockConditionMasterfileEntry } from "./allow-temp-evos-banned-pokemon-unlock-condition";
-import type { CombatLeagueBannedPokemonBattlePartyCombatLeagueTemplateIdUnlockConditionMasterfileEntry } from "./banned-pokemon-battle-party-combat-league-template-id-unlock-condition";
-import type { CombatLeagueBattlePartyCombatLeagueTemplateIdMasterfileEntry } from "./battle-party-combat-league-template-id";
-import type { CombatLeagueBattlePartyCombatLeagueTemplateIdUnlockConditionMasterfileEntry } from "./battle-party-combat-league-template-id-unlock-condition";
+import type { CombatLeagueDefaultMasterfileEntry } from "./default";
+import type { CombatLeagueSafariMasterfileEntry } from "./safari";
+import type { CombatLeagueVsMasterfileEntry } from "./vs";
 
-export type * from "./allow-temp-evos-banned-pokemon";
-export type * from "./allow-temp-evos-banned-pokemon-battle-party-combat-league-template-id-unlock-condition";
-export type * from "./allow-temp-evos-banned-pokemon-unlock-condition";
-export type * from "./banned-pokemon-battle-party-combat-league-template-id-unlock-condition";
-export type * from "./battle-party-combat-league-template-id";
-export type * from "./battle-party-combat-league-template-id-unlock-condition";
+export type * from "./default";
+export type * from "./safari";
+export type * from "./vs";
 
-export type CombatLeagueMasterfileEntry =
-	| CombatLeagueAllowTempEvosBannedPokemonMasterfileEntry
-	| CombatLeagueAllowTempEvosBannedPokemonBattlePartyCombatLeagueTemplateIdUnlockConditionMasterfileEntry
-	| CombatLeagueAllowTempEvosBannedPokemonUnlockConditionMasterfileEntry
-	| CombatLeagueBannedPokemonBattlePartyCombatLeagueTemplateIdUnlockConditionMasterfileEntry
-	| CombatLeagueBattlePartyCombatLeagueTemplateIdMasterfileEntry
-	| CombatLeagueBattlePartyCombatLeagueTemplateIdUnlockConditionMasterfileEntry;
+export type CombatLeagueMasterfileEntry = CombatLeagueDefaultMasterfileEntry | CombatLeagueSafariMasterfileEntry | CombatLeagueVsMasterfileEntry;
 
 export type CombatLeagueTemplateID = CombatLeagueMasterfileEntry["templateId"];
