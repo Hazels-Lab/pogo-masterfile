@@ -1,0 +1,5 @@
+error: AllVariants requires all variants to be unit (no fields)
+ --> tests/ui/all_variants_non_unit.rs:6:5
+  |
+6 |     Tuple(u32),
+  |     ^^^^^^^^^^
