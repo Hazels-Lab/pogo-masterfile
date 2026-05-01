@@ -8,9 +8,12 @@ import {
 	emitEntriesBarrel,
 	emitEntriesFlat,
 	emitEntryFile,
+	emitGroupLookupTable,
 	emitGroupTypes,
 	emitIndexFile,
+	emitRootLookupTable,
 	emitSingletonsFile,
+	emitSingletonsLookupTable,
 	emitSingletonsTypeFile,
 	emitTopLevelVariants,
 	emitTypesFile,
@@ -68,6 +71,7 @@ function planFiles(groups: Map<string, Group>): Map<string, string> {
 		const plan = chooseSplit(g);
 		files.set(`${dir}/${BARREL_FILE}.${FILE_TYPE}`, emitIndexFile());
 		files.set(`${dir}/${TYPES_LOWER}.${FILE_TYPE}`, emitGroupTypes(g, promotionRegistry));
+		files.set(`${dir}/lookup-table.${FILE_TYPE}`, emitGroupLookupTable(g));
 
 		if (plan.kind === "none") {
 			files.set(`${dir}/${ENTRIES_LOWER}.${FILE_TYPE}`, emitEntriesFlat(g));
@@ -98,13 +102,16 @@ function planFiles(groups: Map<string, Group>): Map<string, string> {
 		),
 	);
 	files.set(`${lowerSingleton}/${TYPES_LOWER}.${FILE_TYPE}`, emitSingletonsTypeFile(singletons));
+	files.set(`${lowerSingleton}/lookup-table.${FILE_TYPE}`, emitSingletonsLookupTable(singletons));
 	files.set(`${lowerSingleton}/${BARREL_FILE}.${FILE_TYPE}`, emitIndexFile());
 	groupSplits.set(lowerSingleton, "split");
 
-	// Root-level files
+	// Root-level files. Note: lookup-table.d.ts is intentionally NOT re-exported
+	// from index.d.ts — it's an opt-in subpath because it's expensive to parse.
 	files.set(`${TYPES_LOWER}.${FILE_TYPE}`, emitTypesFile([...multiEntry.map((g) => g.discriminator), lowerSingleton]));
 	files.set(`${ENTRIES_LOWER}.${FILE_TYPE}`, emitTopLevelVariants(groupSplits));
 	files.set(`${BARREL_FILE}.${FILE_TYPE}`, emitIndexFile());
+	files.set(`lookup-table.${FILE_TYPE}`, emitRootLookupTable(multiEntry, singletons.length > 0));
 	files.set(
 		`_utils.${FILE_TYPE}`,
 		`export type S<T> = { [KeyType in keyof T]: T[KeyType] } & {};

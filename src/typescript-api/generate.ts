@@ -6,7 +6,6 @@ import { runTsc } from "./build.ts";
 import { SRC_OUT_DIR, TEMPLATES_DIR, TEMPLATES_STUBS_DIR } from "./constants.ts";
 import { emitGroupNames } from "./emit-group-names.ts";
 import { emitIndex } from "./emit-index.ts";
-import { emitLookupTables } from "./emit-lookup-tables.ts";
 
 const TEMPLATE_FILES_TO_COPY = ["errors.ts", "types.ts", "fetch.ts", "masterfile.ts"];
 
@@ -19,24 +18,17 @@ export async function generateTypeScriptApi(entries: Entry[]): Promise<void> {
 	await mkdir(TEMPLATES_STUBS_DIR, { recursive: true });
 
 	// 2. Emit data-driven files into packages/ts-api/src/.
-	const lookupTables = emitLookupTables(groups);
+	//    Lookup tables themselves live upstream in `pogo-masterfile-types/lookup-table`
+	//    so they're shared with type-only consumers and not duplicated here.
 	const generated = new Map<string, string>();
 	generated.set("group-names.ts", emitGroupNames(groups));
-	generated.set("lookup-tables.d.ts", lookupTables.main);
 	generated.set("index.ts", emitIndex());
-	for (const [path, content] of lookupTables.perGroup) {
-		generated.set(path, content);
-	}
 	await writeOutput(generated, SRC_OUT_DIR);
 
 	// 3. Refresh editor stubs alongside the templates so the IDE resolves
-	//    `./group-names` and `./lookup-tables` from within templates/.
+	//    `./group-names` from within templates/.
 	const stubs = new Map<string, string>();
 	stubs.set("group-names.ts", emitGroupNames(groups));
-	stubs.set("lookup-tables.d.ts", lookupTables.main);
-	for (const [path, content] of lookupTables.perGroup) {
-		stubs.set(path, content);
-	}
 	await writeOutput(stubs, TEMPLATES_STUBS_DIR);
 
 	// 4. Copy hand-written runtime templates verbatim into packages/ts-api/src/.

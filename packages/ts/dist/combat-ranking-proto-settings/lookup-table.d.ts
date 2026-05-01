@@ -1,0 +1,49 @@
+// Generated from Pokémon GO masterfile — "combatRankingProtoSettings" lookup table.
+
+import type {
+	CombatRankingProtoSettingsSettings,
+	CombatRankingProtoSettingsSettingsS10,
+	CombatRankingProtoSettingsSettingsS13,
+	CombatRankingProtoSettingsSettingsS14,
+	CombatRankingProtoSettingsSettingsS15,
+	CombatRankingProtoSettingsSettingsS16,
+	CombatRankingProtoSettingsSettingsS17,
+	CombatRankingProtoSettingsSettingsS18,
+	CombatRankingProtoSettingsSettingsS19,
+	CombatRankingProtoSettingsSettingsS20,
+	CombatRankingProtoSettingsSettingsS21,
+	CombatRankingProtoSettingsSettingsS22,
+	CombatRankingProtoSettingsSettingsS23,
+	CombatRankingProtoSettingsSettingsS24,
+	CombatRankingProtoSettingsSettingsS25,
+	CombatRankingProtoSettingsSettingsS26,
+	CombatRankingProtoSettingsSettingsS27,
+	CombatRankingProtoSettingsSettingsS28,
+	CombatRankingProtoSettingsSettingsS29,
+	CombatRankingProtoSettingsSettingsS8,
+	CombatRankingProtoSettingsSettingsS9,
+} from "./entries";
+
+export interface CombatRankingProtoSettingsLookup {
+	COMBAT_RANKING_SETTINGS: CombatRankingProtoSettingsSettings;
+	COMBAT_RANKING_SETTINGS_S10: CombatRankingProtoSettingsSettingsS10;
+	COMBAT_RANKING_SETTINGS_S13: CombatRankingProtoSettingsSettingsS13;
+	COMBAT_RANKING_SETTINGS_S14: CombatRankingProtoSettingsSettingsS14;
+	COMBAT_RANKING_SETTINGS_S15: CombatRankingProtoSettingsSettingsS15;
+	COMBAT_RANKING_SETTINGS_S16: CombatRankingProtoSettingsSettingsS16;
+	COMBAT_RANKING_SETTINGS_S17: CombatRankingProtoSettingsSettingsS17;
+	COMBAT_RANKING_SETTINGS_S18: CombatRankingProtoSettingsSettingsS18;
+	COMBAT_RANKING_SETTINGS_S19: CombatRankingProtoSettingsSettingsS19;
+	COMBAT_RANKING_SETTINGS_S20: CombatRankingProtoSettingsSettingsS20;
+	COMBAT_RANKING_SETTINGS_S21: CombatRankingProtoSettingsSettingsS21;
+	COMBAT_RANKING_SETTINGS_S22: CombatRankingProtoSettingsSettingsS22;
+	COMBAT_RANKING_SETTINGS_S23: CombatRankingProtoSettingsSettingsS23;
+	COMBAT_RANKING_SETTINGS_S24: CombatRankingProtoSettingsSettingsS24;
+	COMBAT_RANKING_SETTINGS_S25: CombatRankingProtoSettingsSettingsS25;
+	COMBAT_RANKING_SETTINGS_S26: CombatRankingProtoSettingsSettingsS26;
+	COMBAT_RANKING_SETTINGS_S27: CombatRankingProtoSettingsSettingsS27;
+	COMBAT_RANKING_SETTINGS_S28: CombatRankingProtoSettingsSettingsS28;
+	COMBAT_RANKING_SETTINGS_S29: CombatRankingProtoSettingsSettingsS29;
+	COMBAT_RANKING_SETTINGS_S8: CombatRankingProtoSettingsSettingsS8;
+	COMBAT_RANKING_SETTINGS_S9: CombatRankingProtoSettingsSettingsS9;
+}

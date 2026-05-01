@@ -1,0 +1,3521 @@
+// Generated from Pokémon GO masterfile — "avatarCustomization" lookup table.
+
+import type {
+	AvatarCustomizationFBackpackAlolaitemslittenbp,
+	AvatarCustomizationFBackpackAlolaitemspoppliobp,
+	AvatarCustomizationFBackpackAlolaitemsrowletbp,
+	AvatarCustomizationFBackpackAnimegou,
+	AvatarCustomizationFBackpackBackpacker,
+	AvatarCustomizationFBackpackCombeebackpack,
+	AvatarCustomizationFBackpackCombeebackpack01,
+	AvatarCustomizationFBackpackCute0,
+	AvatarCustomizationFBackpackDedenneitems,
+	AvatarCustomizationFBackpackDefault0,
+	AvatarCustomizationFBackpackDefault1,
+	AvatarCustomizationFBackpackDefault2,
+	AvatarCustomizationFBackpackDefault3,
+	AvatarCustomizationFBackpackEggIncubator,
+	AvatarCustomizationFBackpackEggbackpack0,
+	AvatarCustomizationFBackpackEggbackpack1,
+	AvatarCustomizationFBackpackEggbackpack2,
+	AvatarCustomizationFBackpackEmpty,
+	AvatarCustomizationFBackpackFrlg0,
+	AvatarCustomizationFBackpackGenesecteventitem,
+	AvatarCustomizationFBackpackGengar0,
+	AvatarCustomizationFBackpackGiratinaitems,
+	AvatarCustomizationFBackpackGuccibackpack,
+	AvatarCustomizationFBackpackGuitarcasebackpack,
+	AvatarCustomizationFBackpackHgss0,
+	AvatarCustomizationFBackpackHououbackpack,
+	AvatarCustomizationFBackpackKakureonpouch,
+	AvatarCustomizationFBackpackKomala,
+	AvatarCustomizationFBackpackLongchampbp,
+	AvatarCustomizationFBackpackLunalaitems,
+	AvatarCustomizationFBackpackLunarnewyr,
+	AvatarCustomizationFBackpackMimikyubp,
+	AvatarCustomizationFBackpackMovie2020,
+	AvatarCustomizationFBackpackNaganadelawings,
+	AvatarCustomizationFBackpackNike2021,
+	AvatarCustomizationFBackpackPamobackpack,
+	AvatarCustomizationFBackpackPkmnhoodie001,
+	AvatarCustomizationFBackpackPkmnhoodie004,
+	AvatarCustomizationFBackpackPkmnhoodie007,
+	AvatarCustomizationFBackpackRuinmaniac,
+	AvatarCustomizationFBackpackSnapcamera,
+	AvatarCustomizationFBackpackSs,
+	AvatarCustomizationFBackpackSvcostumescarletschool,
+	AvatarCustomizationFBackpackSvcostumevioletschool,
+	AvatarCustomizationFBackpackSvdlc1,
+	AvatarCustomizationFBackpackSvdlc2spring,
+	AvatarCustomizationFBackpackSwshdlc2costume,
+	AvatarCustomizationFBackpackSwshdlccostume,
+	AvatarCustomizationFBackpackTogepibackpack,
+	AvatarCustomizationFBackpackUltra0,
+	AvatarCustomizationFBackpackVerizon2021,
+	AvatarCustomizationFBackpackZubatbp,
+	AvatarCustomizationFBeltAcetrainerbw,
+	AvatarCustomizationFBeltDefault0,
+	AvatarCustomizationFBeltDefault1,
+	AvatarCustomizationFBeltDefault2,
+	AvatarCustomizationFBeltDefault3,
+	AvatarCustomizationFBeltDefault4,
+	AvatarCustomizationFBeltDefault5,
+	AvatarCustomizationFBeltDefault6,
+	AvatarCustomizationFBeltDefault7,
+	AvatarCustomizationFBeltDefault8,
+	AvatarCustomizationFBeltEmpty,
+	AvatarCustomizationFBeltSimple0,
+	AvatarCustomizationFBeltSimple1,
+	AvatarCustomizationFBeltSimple2,
+	AvatarCustomizationFBeltSimple3,
+	AvatarCustomizationFBeltTeamrocket0,
+	AvatarCustomizationFBeltTeamrocket1,
+	AvatarCustomizationFEyes0,
+	AvatarCustomizationFEyes1,
+	AvatarCustomizationFEyes2,
+	AvatarCustomizationFEyes3,
+	AvatarCustomizationFEyes4,
+	AvatarCustomizationFFace3dmask00,
+	AvatarCustomizationFFace3dmask01,
+	AvatarCustomizationFFace3dmask02,
+	AvatarCustomizationFFaceBanettemask,
+	AvatarCustomizationFFaceDayofthedead,
+	AvatarCustomizationFFaceDefaultmask,
+	AvatarCustomizationFFaceEmpty,
+	AvatarCustomizationFFaceFacestickerghostpika,
+	AvatarCustomizationFFaceFacestickerpikachu,
+	AvatarCustomizationFFaceFacestickerpokeball,
+	AvatarCustomizationFFaceFestofcolors00,
+	AvatarCustomizationFFaceFestofcolors01,
+	AvatarCustomizationFFaceFestofcolors02,
+	AvatarCustomizationFFaceGracidea,
+	AvatarCustomizationFFaceHoliday2022santacostumes,
+	AvatarCustomizationFFacePikachumask,
+	AvatarCustomizationFFaceSableyemask,
+	AvatarCustomizationFFaceTeamskull,
+	AvatarCustomizationFFaceToxelmask,
+	AvatarCustomizationFFaceVerizon2020mask,
+	AvatarCustomizationFGlasses3d,
+	AvatarCustomizationFGlassesCutieflysleepmask,
+	AvatarCustomizationFGlassesDivingsuit,
+	AvatarCustomizationFGlassesDrpikachu,
+	AvatarCustomizationFGlassesEmpty,
+	AvatarCustomizationFGlassesFrillishglasses,
+	AvatarCustomizationFGlassesFw2022,
+	AvatarCustomizationFGlassesGimmighoulitems,
+	AvatarCustomizationFGlassesGoteamrocketarlo,
+	AvatarCustomizationFGlassesGrandoakglasses,
+	AvatarCustomizationFGlassesLugiaglasses,
+	AvatarCustomizationFGlassesLv40glasses,
+	AvatarCustomizationFGlassesMask0,
+	AvatarCustomizationFGlassesMask1,
+	AvatarCustomizationFGlassesNewyear2022,
+	AvatarCustomizationFGlassesNewyearglasses2020,
+	AvatarCustomizationFGlassesNewyearglasses2021,
+	AvatarCustomizationFGlassesObstagoonitems,
+	AvatarCustomizationFGlassesRoundsunglasses,
+	AvatarCustomizationFGlassesTeardrop0,
+	AvatarCustomizationFGlassesThick0,
+	AvatarCustomizationFGlassesThick1,
+	AvatarCustomizationFGlassesThick2,
+	AvatarCustomizationFGlassesThick3,
+	AvatarCustomizationFGlassesThick4,
+	AvatarCustomizationFGlovesAcetrainersm,
+	AvatarCustomizationFGlovesBattlegirl0,
+	AvatarCustomizationFGlovesBea,
+	AvatarCustomizationFGlovesBwn,
+	AvatarCustomizationFGlovesDefault0,
+	AvatarCustomizationFGlovesDefault1,
+	AvatarCustomizationFGlovesDefault2,
+	AvatarCustomizationFGlovesDefault3,
+	AvatarCustomizationFGlovesDelibird,
+	AvatarCustomizationFGlovesDynamaxswsh,
+	AvatarCustomizationFGlovesEmpty,
+	AvatarCustomizationFGlovesFrlg0,
+	AvatarCustomizationFGlovesGeeta,
+	AvatarCustomizationFGlovesGiovanni,
+	AvatarCustomizationFGlovesGuzma,
+	AvatarCustomizationFGlovesGymleader0,
+	AvatarCustomizationFGlovesHoopabangle,
+	AvatarCustomizationFGlovesKorrina,
+	AvatarCustomizationFGlovesLysandre,
+	AvatarCustomizationFGlovesMegabangle,
+	AvatarCustomizationFGlovesMegabangleblack,
+	AvatarCustomizationFGlovesMegabangleblue,
+	AvatarCustomizationFGlovesMegabanglered,
+	AvatarCustomizationFGlovesMegabangleyellow,
+	AvatarCustomizationFGlovesObstagoonitems,
+	AvatarCustomizationFGlovesPalmer,
+	AvatarCustomizationFGlovesProfwillowoutfit,
+	AvatarCustomizationFGlovesStevenfirst,
+	AvatarCustomizationFGlovesSvdlc2spring,
+	AvatarCustomizationFGlovesSwshdlc2costume,
+	AvatarCustomizationFGlovesSwshdlccostume,
+	AvatarCustomizationFGlovesSwshuniformchampion,
+	AvatarCustomizationFGlovesSwshuniformdark,
+	AvatarCustomizationFGlovesSwshuniformdefault,
+	AvatarCustomizationFGlovesSwshuniformdragon,
+	AvatarCustomizationFGlovesTeamaqua,
+	AvatarCustomizationFGlovesTeammagma,
+	AvatarCustomizationFGlovesTeamrocket0,
+	AvatarCustomizationFGlovesTeamspark,
+	AvatarCustomizationFGlovesWintergloves2023,
+	AvatarCustomizationFGofestPikachuvisor,
+	AvatarCustomizationFHairDefault0,
+	AvatarCustomizationFHairDefault1,
+	AvatarCustomizationFHairDefault10,
+	AvatarCustomizationFHairDefault11,
+	AvatarCustomizationFHairDefault12,
+	AvatarCustomizationFHairDefault13,
+	AvatarCustomizationFHairDefault14,
+	AvatarCustomizationFHairDefault15,
+	AvatarCustomizationFHairDefault16,
+	AvatarCustomizationFHairDefault17,
+	AvatarCustomizationFHairDefault18,
+	AvatarCustomizationFHairDefault19,
+	AvatarCustomizationFHairDefault2,
+	AvatarCustomizationFHairDefault3,
+	AvatarCustomizationFHairDefault4,
+	AvatarCustomizationFHairDefault5,
+	AvatarCustomizationFHairDefault6,
+	AvatarCustomizationFHairDefault7,
+	AvatarCustomizationFHairDefault8,
+	AvatarCustomizationFHairDefault9,
+	AvatarCustomizationFHat6thanniversary,
+	AvatarCustomizationFHatAcetrainersm,
+	AvatarCustomizationFHatAdventure0,
+	AvatarCustomizationFHatAseries,
+	AvatarCustomizationFHatBea,
+	AvatarCustomizationFHatBidoofhat,
+	AvatarCustomizationFHatBounsweetitems,
+	AvatarCustomizationFHatBurmyearrings11,
+	AvatarCustomizationFHatBurmyearrings12,
+	AvatarCustomizationFHatBurmyearrings13,
+	AvatarCustomizationFHatBwn,
+	AvatarCustomizationFHatCasket0,
+	AvatarCustomizationFHatCetoddlehat,
+	AvatarCustomizationFHatClay,
+	AvatarCustomizationFHatCofagrigusitems,
+	AvatarCustomizationFHatCosmog,
+	AvatarCustomizationFHatCrownmoon,
+	AvatarCustomizationFHatCrownsun,
+	AvatarCustomizationFHatCubonehat,
+	AvatarCustomizationFHatDarumakahat,
+	AvatarCustomizationFHatDedenneitems,
+	AvatarCustomizationFHatDefaultA0,
+	AvatarCustomizationFHatDefaultA1,
+	AvatarCustomizationFHatDefaultA2,
+	AvatarCustomizationFHatDefaultA3,
+	AvatarCustomizationFHatDefaultA4,
+	AvatarCustomizationFHatDefaultA5,
+	AvatarCustomizationFHatDefaultB0,
+	AvatarCustomizationFHatDefaultB1,
+	AvatarCustomizationFHatDeino,
+	AvatarCustomizationFHatDelibird,
+	AvatarCustomizationFHatDetectivepikachu,
+	AvatarCustomizationFHatDiancie,
+	AvatarCustomizationFHatDp,
+	AvatarCustomizationFHatDrifloon0,
+	AvatarCustomizationFHatDrpikachu,
+	AvatarCustomizationFHatDusclopsmummy,
+	AvatarCustomizationFHatEeveecap,
+	AvatarCustomizationFHatElesa,
+	AvatarCustomizationFHatEmpty,
+	AvatarCustomizationFHatFedora0,
+	AvatarCustomizationFHatFedora1,
+	AvatarCustomizationFHatFlabebepack,
+	AvatarCustomizationFHatFragment0,
+	AvatarCustomizationFHatFrlg0,
+	AvatarCustomizationFHatFurfrouwig,
+	AvatarCustomizationFHatFw2022,
+	AvatarCustomizationFHatGalarfarfetchditems,
+	AvatarCustomizationFHatGenesecteventitem,
+	AvatarCustomizationFHatGengar0,
+	AvatarCustomizationFHatGimmighoulitems,
+	AvatarCustomizationFHatGiratinaitems,
+	AvatarCustomizationFHatGladion,
+	AvatarCustomizationFHatGoomy,
+	AvatarCustomizationFHatGreavardwig,
+	AvatarCustomizationFHatGreencoat,
+	AvatarCustomizationFHatGrowlithehelmet,
+	AvatarCustomizationFHatGtr2024eeveefanmask,
+	AvatarCustomizationFHatGtr2024pikachufanmask,
+	AvatarCustomizationFHatGuccihat,
+	AvatarCustomizationFHatGuzma,
+	AvatarCustomizationFHatGyaradoscap,
+	AvatarCustomizationFHatHgss0,
+	AvatarCustomizationFHatHoliday2022santacostumes,
+	AvatarCustomizationFHatHolidaybeanie,
+	AvatarCustomizationFHatHoopaearmuffs,
+	AvatarCustomizationFHatIngo,
+	AvatarCustomizationFHatKantotourcapgreen,
+	AvatarCustomizationFHatKantotourcapred,
+	AvatarCustomizationFHatKnitted0,
+	AvatarCustomizationFHatKnitted1,
+	AvatarCustomizationFHatKorrina,
+	AvatarCustomizationFHatLana,
+	AvatarCustomizationFHatLaprasbandana,
+	AvatarCustomizationFHatLasecuritycorps,
+	AvatarCustomizationFHatLegendofarceus,
+	AvatarCustomizationFHatLitwickhat,
+	AvatarCustomizationFHatLoneearrings,
+	AvatarCustomizationFHatLvl50cap,
+	AvatarCustomizationFHatMagikarp,
+	AvatarCustomizationFHatMareaniehat,
+	AvatarCustomizationFHatMegalopunnyitems,
+	AvatarCustomizationFHatMegarayquaza,
+	AvatarCustomizationFHatMeltan,
+	AvatarCustomizationFHatMeltanearrings,
+	AvatarCustomizationFHatMewtwo,
+	AvatarCustomizationFHatMimikyu0,
+	AvatarCustomizationFHatMismagius0,
+	AvatarCustomizationFHatMovie2020,
+	AvatarCustomizationFHatMunnapack0,
+	AvatarCustomizationFHatMunnapack1,
+	AvatarCustomizationFHatNewyear2022,
+	AvatarCustomizationFHatNewyearhat2021,
+	AvatarCustomizationFHatNewyearhat2023,
+	AvatarCustomizationFHatNihilegoitems,
+	AvatarCustomizationFHatNoibat,
+	AvatarCustomizationFHatObstagoonitems,
+	AvatarCustomizationFHatOras,
+	AvatarCustomizationFHatOricoriopink,
+	AvatarCustomizationFHatOricoriopurple,
+	AvatarCustomizationFHatOricoriored,
+	AvatarCustomizationFHatOricorioyellow,
+	AvatarCustomizationFHatPartneritemsjan2024hat,
+	AvatarCustomizationFHatPhantump,
+	AvatarCustomizationFHatPikachucap,
+	AvatarCustomizationFHatPikachufan0,
+	AvatarCustomizationFHatPikachulibre,
+	AvatarCustomizationFHatPikachupumpkinhead,
+	AvatarCustomizationFHatPkmncap0,
+	AvatarCustomizationFHatPkmncap1,
+	AvatarCustomizationFHatPkmncap2,
+	AvatarCustomizationFHatPoipole,
+	AvatarCustomizationFHatProfwillowoutfit,
+	AvatarCustomizationFHatRegiicejersies,
+	AvatarCustomizationFHatRegirockjersies,
+	AvatarCustomizationFHatRegisteeljersies,
+	AvatarCustomizationFHatRuinmaniac,
+	AvatarCustomizationFHatSableyegoggles,
+	AvatarCustomizationFHatSamsungsummer2020,
+	AvatarCustomizationFHatSandygasthat,
+	AvatarCustomizationFHatShayminhat,
+	AvatarCustomizationFHatSlowpoketailshirts,
+	AvatarCustomizationFHatSnorlaxnightcap,
+	AvatarCustomizationFHatSolgaleoitems,
+	AvatarCustomizationFHatSs,
+	AvatarCustomizationFHatStantlerheadband,
+	AvatarCustomizationFHatStrawhat,
+	AvatarCustomizationFHatSummer2023,
+	AvatarCustomizationFHatSvcostumescarletschool,
+	AvatarCustomizationFHatSvcostumevioletschool,
+	AvatarCustomizationFHatSwshdlc2costume,
+	AvatarCustomizationFHatSwshuniformchampion,
+	AvatarCustomizationFHatSylveonitems,
+	AvatarCustomizationFHatTcgcollabtshirtandcap,
+	AvatarCustomizationFHatTeamaqua,
+	AvatarCustomizationFHatTeamleadercap0,
+	AvatarCustomizationFHatTeamleadercap1,
+	AvatarCustomizationFHatTeamleadercap2,
+	AvatarCustomizationFHatTeamrocket0,
+	AvatarCustomizationFHatTeamrocketcap,
+	AvatarCustomizationFHatTeamskull,
+	AvatarCustomizationFHatTophat0,
+	AvatarCustomizationFHatUltra0,
+	AvatarCustomizationFHatUltrareconsquad,
+	AvatarCustomizationFHatUltrareconsquadb,
+	AvatarCustomizationFHatVerizon2021,
+	AvatarCustomizationFHatWcs2022winnersitems,
+	AvatarCustomizationFHatWhimsicottearmuff,
+	AvatarCustomizationFHatWillowglasses,
+	AvatarCustomizationFHatWoobatearrings,
+	AvatarCustomizationFHatYamaskhat,
+	AvatarCustomizationFHatYamaskmask,
+	AvatarCustomizationFHatZubathat,
+	AvatarCustomizationFJacketNewyear2022,
+	AvatarCustomizationFNecklaceDefault0,
+	AvatarCustomizationFNecklaceDefault1,
+	AvatarCustomizationFNecklaceEmpty,
+	AvatarCustomizationFNecklaceHeart0,
+	AvatarCustomizationFNecklaceStar0,
+	AvatarCustomizationFPants6thanniversary,
+	AvatarCustomizationFPants7thanniversary,
+	AvatarCustomizationFPantsAcetrainerbw,
+	AvatarCustomizationFPantsAnimegou,
+	AvatarCustomizationFPantsBackpacker,
+	AvatarCustomizationFPantsBattlegirl0,
+	AvatarCustomizationFPantsBounsweetitems,
+	AvatarCustomizationFPantsBwn,
+	AvatarCustomizationFPantsCasual0,
+	AvatarCustomizationFPantsCasual1,
+	AvatarCustomizationFPantsClay,
+	AvatarCustomizationFPantsDefault0,
+	AvatarCustomizationFPantsDefault1,
+	AvatarCustomizationFPantsDefault2,
+	AvatarCustomizationFPantsDefault3,
+	AvatarCustomizationFPantsDefault4,
+	AvatarCustomizationFPantsDefault5,
+	AvatarCustomizationFPantsDenimfashionweek2023,
+	AvatarCustomizationFPantsDp,
+	AvatarCustomizationFPantsFashionweek2022,
+	AvatarCustomizationFPantsFlabebepack,
+	AvatarCustomizationFPantsFrlg0,
+	AvatarCustomizationFPantsFw2022,
+	AvatarCustomizationFPantsGeeta,
+	AvatarCustomizationFPantsGenderlessskirt,
+	AvatarCustomizationFPantsGiovanni,
+	AvatarCustomizationFPantsGladion,
+	AvatarCustomizationFPantsGothitelleitems,
+	AvatarCustomizationFPantsGreen,
+	AvatarCustomizationFPantsGreencoat,
+	AvatarCustomizationFPantsGuzma,
+	AvatarCustomizationFPantsGymleader0,
+	AvatarCustomizationFPantsGymleader1,
+	AvatarCustomizationFPantsGymleader2,
+	AvatarCustomizationFPantsHala,
+	AvatarCustomizationFPantsHgss0,
+	AvatarCustomizationFPantsIngo,
+	AvatarCustomizationFPantsLoosepants,
+	AvatarCustomizationFPantsLunalaitems,
+	AvatarCustomizationFPantsLuvdiscpack,
+	AvatarCustomizationFPantsLysandre,
+	AvatarCustomizationFPantsMewtwo,
+	AvatarCustomizationFPantsMiniskirt0,
+	AvatarCustomizationFPantsMiniskirt1,
+	AvatarCustomizationFPantsMiniskirt2,
+	AvatarCustomizationFPantsMiniskirt3,
+	AvatarCustomizationFPantsMiniskirtWave0,
+	AvatarCustomizationFPantsMiniskirtWave1,
+	AvatarCustomizationFPantsMiniskirtWave2,
+	AvatarCustomizationFPantsMisty,
+	AvatarCustomizationFPantsMunnapack,
+	AvatarCustomizationFPantsNeonSolid0,
+	AvatarCustomizationFPantsNeonSolid1,
+	AvatarCustomizationFPantsNeonSolid2,
+	AvatarCustomizationFPantsNeonStripes0,
+	AvatarCustomizationFPantsNeonStripes1,
+	AvatarCustomizationFPantsNewyear2022,
+	AvatarCustomizationFPantsOras,
+	AvatarCustomizationFPantsPajamas20220,
+	AvatarCustomizationFPantsPajamas20221,
+	AvatarCustomizationFPantsPalmer,
+	AvatarCustomizationFPantsPikachufan0,
+	AvatarCustomizationFPantsPikachulibre,
+	AvatarCustomizationFPantsProfwillowoutfit,
+	AvatarCustomizationFPantsPumpkabooitems,
+	AvatarCustomizationFPantsRegiicejersies,
+	AvatarCustomizationFPantsRegirockjersies,
+	AvatarCustomizationFPantsRegisteeljersies,
+	AvatarCustomizationFPantsShorts0,
+	AvatarCustomizationFPantsShorts1,
+	AvatarCustomizationFPantsShorts2,
+	AvatarCustomizationFPantsShorts3,
+	AvatarCustomizationFPantsSkinnyjeans0,
+	AvatarCustomizationFPantsSteven,
+	AvatarCustomizationFPantsStevenfirst,
+	AvatarCustomizationFPantsSwshdlc2costume,
+	AvatarCustomizationFPantsSwshuniformchampion,
+	AvatarCustomizationFPantsSwshuniformdark,
+	AvatarCustomizationFPantsSwshuniformdefault,
+	AvatarCustomizationFPantsSwshuniformdragon,
+	AvatarCustomizationFPantsTeamaqua,
+	AvatarCustomizationFPantsTeamblanche,
+	AvatarCustomizationFPantsTeamcandela,
+	AvatarCustomizationFPantsTeammagma,
+	AvatarCustomizationFPantsTeamrocket0,
+	AvatarCustomizationFPantsTeamskull,
+	AvatarCustomizationFPantsTeamspark,
+	AvatarCustomizationFPantsTurbine0,
+	AvatarCustomizationFPantsTurbine1,
+	AvatarCustomizationFPantsTurbine2,
+	AvatarCustomizationFPantsUltra0,
+	AvatarCustomizationFPantsVeterantrainerxy,
+	AvatarCustomizationFPantsWcs2022winnersitems,
+	AvatarCustomizationFPose01,
+	AvatarCustomizationFPose02,
+	AvatarCustomizationFPose03,
+	AvatarCustomizationFPose04,
+	AvatarCustomizationFPose05,
+	AvatarCustomizationFPose06,
+	AvatarCustomizationFPose07,
+	AvatarCustomizationFPose08,
+	AvatarCustomizationFPose09,
+	AvatarCustomizationFPose10,
+	AvatarCustomizationFPose11,
+	AvatarCustomizationFPose12,
+	AvatarCustomizationFPose13,
+	AvatarCustomizationFPose14,
+	AvatarCustomizationFPose15,
+	AvatarCustomizationFPose16,
+	AvatarCustomizationFPose17,
+	AvatarCustomizationFPose18,
+	AvatarCustomizationFPose19,
+	AvatarCustomizationFPose20,
+	AvatarCustomizationFPose21,
+	AvatarCustomizationFPose22,
+	AvatarCustomizationFPose23,
+	AvatarCustomizationFPose24,
+	AvatarCustomizationFPose25,
+	AvatarCustomizationFPose26,
+	AvatarCustomizationFPose27,
+	AvatarCustomizationFPose28,
+	AvatarCustomizationFPose29,
+	AvatarCustomizationFPose30,
+	AvatarCustomizationFPose31,
+	AvatarCustomizationFPose32,
+	AvatarCustomizationFPose33,
+	AvatarCustomizationFPose34,
+	AvatarCustomizationFPose35,
+	AvatarCustomizationFPose36,
+	AvatarCustomizationFPose37,
+	AvatarCustomizationFPose38,
+	AvatarCustomizationFPose39,
+	AvatarCustomizationFPose40,
+	AvatarCustomizationFPose41,
+	AvatarCustomizationFPose43,
+	AvatarCustomizationFPose44,
+	AvatarCustomizationFPose45,
+	AvatarCustomizationFPose46,
+	AvatarCustomizationFPose47,
+	AvatarCustomizationFPose48,
+	AvatarCustomizationFPose49,
+	AvatarCustomizationFPose50,
+	AvatarCustomizationFPose51,
+	AvatarCustomizationFPose52,
+	AvatarCustomizationFPose53,
+	AvatarCustomizationFPose54,
+	AvatarCustomizationFPose55,
+	AvatarCustomizationFPose56,
+	AvatarCustomizationFPose57,
+	AvatarCustomizationFPose58,
+	AvatarCustomizationFPose59,
+	AvatarCustomizationFPose60,
+	AvatarCustomizationFPose61,
+	AvatarCustomizationFPose62,
+	AvatarCustomizationFPose63,
+	AvatarCustomizationFPose64,
+	AvatarCustomizationFPoseEmpty,
+	AvatarCustomizationFShirt6thanniversary,
+	AvatarCustomizationFShirt7thanniversary,
+	AvatarCustomizationFShirtAcetrainerbw,
+	AvatarCustomizationFShirtAcetrainersm,
+	AvatarCustomizationFShirtAlolacomfey,
+	AvatarCustomizationFShirtAnimegou,
+	AvatarCustomizationFShirtAseries,
+	AvatarCustomizationFShirtBackpacker,
+	AvatarCustomizationFShirtBallguy,
+	AvatarCustomizationFShirtBattlegirl0,
+	AvatarCustomizationFShirtBea,
+	AvatarCustomizationFShirtBounsweetitems,
+	AvatarCustomizationFShirtButtondown0,
+	AvatarCustomizationFShirtBuzzwoleitems,
+	AvatarCustomizationFShirtBwn,
+	AvatarCustomizationFShirtCasual0,
+	AvatarCustomizationFShirtCasual1,
+	AvatarCustomizationFShirtCasual2,
+	AvatarCustomizationFShirtCasual3,
+	AvatarCustomizationFShirtCelebi0,
+	AvatarCustomizationFShirtChimcharonesie,
+	AvatarCustomizationFShirtClay,
+	AvatarCustomizationFShirtCofagrigusitems,
+	AvatarCustomizationFShirtCosmog,
+	AvatarCustomizationFShirtCowichansweater,
+	AvatarCustomizationFShirtDayofdead,
+	AvatarCustomizationFShirtDefault0,
+	AvatarCustomizationFShirtDefault1,
+	AvatarCustomizationFShirtDefault2,
+	AvatarCustomizationFShirtDefault3,
+	AvatarCustomizationFShirtDefault4,
+	AvatarCustomizationFShirtDefault5,
+	AvatarCustomizationFShirtDefault6,
+	AvatarCustomizationFShirtDefault7,
+	AvatarCustomizationFShirtDefault8,
+	AvatarCustomizationFShirtDelibird,
+	AvatarCustomizationFShirtDelibirdonesie,
+	AvatarCustomizationFShirtDenimfashionweek2023,
+	AvatarCustomizationFShirtDenimjacket,
+	AvatarCustomizationFShirtDetectivepikachu,
+	AvatarCustomizationFShirtDiancie,
+	AvatarCustomizationFShirtDivingsuit,
+	AvatarCustomizationFShirtDiwali2021,
+	AvatarCustomizationFShirtDp,
+	AvatarCustomizationFShirtDrifblim0,
+	AvatarCustomizationFShirtDusclopsmummy,
+	AvatarCustomizationFShirtEarthday2018,
+	AvatarCustomizationFShirtEeveestshirt00,
+	AvatarCustomizationFShirtEeveestshirt01,
+	AvatarCustomizationFShirtEeveestshirt02,
+	AvatarCustomizationFShirtEeveestshirt03,
+	AvatarCustomizationFShirtEeveestshirt04,
+	AvatarCustomizationFShirtEeveestshirt05,
+	AvatarCustomizationFShirtEeveestshirt06,
+	AvatarCustomizationFShirtEeveestshirt07,
+	AvatarCustomizationFShirtEeveestshirt08,
+	AvatarCustomizationFShirtElesa,
+	AvatarCustomizationFShirtFashionweek2022,
+	AvatarCustomizationFShirtFestivaloflights00,
+	AvatarCustomizationFShirtFestivaloflights01,
+	AvatarCustomizationFShirtFlabebepack,
+	AvatarCustomizationFShirtFragment0,
+	AvatarCustomizationFShirtFrlg0,
+	AvatarCustomizationFShirtFw2022,
+	AvatarCustomizationFShirtGalarfarfetchditems,
+	AvatarCustomizationFShirtGalaxyoutfit,
+	AvatarCustomizationFShirtGeeta,
+	AvatarCustomizationFShirtGenderlessskirt,
+	AvatarCustomizationFShirtGengar0,
+	AvatarCustomizationFShirtGengaronesie,
+	AvatarCustomizationFShirtGiovanni,
+	AvatarCustomizationFShirtGiratinaitems,
+	AvatarCustomizationFShirtGladion,
+	AvatarCustomizationFShirtGofest2019,
+	AvatarCustomizationFShirtGofest2020,
+	AvatarCustomizationFShirtGofest2021,
+	AvatarCustomizationFShirtGofest2022,
+	AvatarCustomizationFShirtGofest2023,
+	AvatarCustomizationFShirtGofest2024darkgray,
+	AvatarCustomizationFShirtGofest2024gray,
+	AvatarCustomizationFShirtGofest2024purple,
+	AvatarCustomizationFShirtGofestglobal2023,
+	AvatarCustomizationFShirtGoteamrocketarlo,
+	AvatarCustomizationFShirtGoteamrocketcliff,
+	AvatarCustomizationFShirtGoteamrocketsierra,
+	AvatarCustomizationFShirtGothitelleitems,
+	AvatarCustomizationFShirtGotour2023,
+	AvatarCustomizationFShirtGotour2024,
+	AvatarCustomizationFShirtGreedentsweater,
+	AvatarCustomizationFShirtGreen,
+	AvatarCustomizationFShirtGreencoat,
+	AvatarCustomizationFShirtGtrtshirt202200,
+	AvatarCustomizationFShirtGtrtshirt202201,
+	AvatarCustomizationFShirtGuccitshirts,
+	AvatarCustomizationFShirtGuzma,
+	AvatarCustomizationFShirtGymleader0,
+	AvatarCustomizationFShirtGymleader1,
+	AvatarCustomizationFShirtGymleader2,
+	AvatarCustomizationFShirtHala,
+	AvatarCustomizationFShirtHappi,
+	AvatarCustomizationFShirtHappi1,
+	AvatarCustomizationFShirtHappi2,
+	AvatarCustomizationFShirtHgss0,
+	AvatarCustomizationFShirtHoliday2022santacostumes,
+	AvatarCustomizationFShirtHolifestival2021black,
+	AvatarCustomizationFShirtHolifestival2021white,
+	AvatarCustomizationFShirtHoopaunboundtshirt,
+	AvatarCustomizationFShirtIngo,
+	AvatarCustomizationFShirtIngress0,
+	AvatarCustomizationFShirtIngressE0,
+	AvatarCustomizationFShirtIngressR0,
+	AvatarCustomizationFShirtJessie,
+	AvatarCustomizationFShirtJirachi,
+	AvatarCustomizationFShirtKeldeotshirt,
+	AvatarCustomizationFShirtKorrina,
+	AvatarCustomizationFShirtLadiamondoutfit,
+	AvatarCustomizationFShirtLana,
+	AvatarCustomizationFShirtLapearloutfit,
+	AvatarCustomizationFShirtLasecuritycorps,
+	AvatarCustomizationFShirtLatiasLatios0,
+	AvatarCustomizationFShirtLegendofarceus,
+	AvatarCustomizationFShirtLuvdiscpack,
+	AvatarCustomizationFShirtLvl50,
+	AvatarCustomizationFShirtLvl501,
+	AvatarCustomizationFShirtLysandre,
+	AvatarCustomizationFShirtMarshadowtshirt,
+	AvatarCustomizationFShirtMegalopunnyitems,
+	AvatarCustomizationFShirtMegarayquaza,
+	AvatarCustomizationFShirtMelmetaljacket,
+	AvatarCustomizationFShirtMelmetalvest,
+	AvatarCustomizationFShirtMeloettatshirt,
+	AvatarCustomizationFShirtMeltan,
+	AvatarCustomizationFShirtMew0,
+	AvatarCustomizationFShirtMewtwo,
+	AvatarCustomizationFShirtMisty,
+	AvatarCustomizationFShirtMovie2020jessiejames,
+	AvatarCustomizationFShirtMunnapack,
+	AvatarCustomizationFShirtNike2021,
+	AvatarCustomizationFShirtOcshirt045,
+	AvatarCustomizationFShirtOcshirt108,
+	AvatarCustomizationFShirtOcshirt129,
+	AvatarCustomizationFShirtOcshirt143,
+	AvatarCustomizationFShirtOras,
+	AvatarCustomizationFShirtPajamas20220,
+	AvatarCustomizationFShirtPajamas20221,
+	AvatarCustomizationFShirtPalmer,
+	AvatarCustomizationFShirtPartneritemsjan2024hoodie,
+	AvatarCustomizationFShirtPartneritemsjan2024tshirt,
+	AvatarCustomizationFShirtPikachufan0,
+	AvatarCustomizationFShirtPikachulibre,
+	AvatarCustomizationFShirtPikachuonesie,
+	AvatarCustomizationFShirtPinpukuhoodie,
+	AvatarCustomizationFShirtPipluponesie,
+	AvatarCustomizationFShirtPkmnhoodie001,
+	AvatarCustomizationFShirtPkmnhoodie004,
+	AvatarCustomizationFShirtPkmnhoodie007,
+	AvatarCustomizationFShirtPkmnshirts165,
+	AvatarCustomizationFShirtPkmnshirts188,
+	AvatarCustomizationFShirtPkmnshirts201,
+	AvatarCustomizationFShirtPkmnshirts202100,
+	AvatarCustomizationFShirtPkmnshirts202101,
+	AvatarCustomizationFShirtPkmnshirts202102,
+	AvatarCustomizationFShirtPkmnshirts238,
+	AvatarCustomizationFShirtPoloshirt,
+	AvatarCustomizationFShirtPoloshirt1,
+	AvatarCustomizationFShirtPoloshirt2,
+	AvatarCustomizationFShirtProfwillowoutfit,
+	AvatarCustomizationFShirtProjectguitar,
+	AvatarCustomizationFShirtPumpkabooitems,
+	AvatarCustomizationFShirtRegiicejersies,
+	AvatarCustomizationFShirtRegirockjersies,
+	AvatarCustomizationFShirtRegisteeljersies,
+	AvatarCustomizationFShirtReuniclusitems,
+	AvatarCustomizationFShirtRuinmaniac,
+	AvatarCustomizationFShirtSafarizone2020,
+	AvatarCustomizationFShirtSamsungsummer2020,
+	AvatarCustomizationFShirtShayminlandtshirt,
+	AvatarCustomizationFShirtShayminskytshirt,
+	AvatarCustomizationFShirtShinymewtshirts,
+	AvatarCustomizationFShirtSlowpokeshirts,
+	AvatarCustomizationFShirtSlowpoketailshirts,
+	AvatarCustomizationFShirtSnorlaxonesie,
+	AvatarCustomizationFShirtSpiritomb0,
+	AvatarCustomizationFShirtSpring2021gulpin,
+	AvatarCustomizationFShirtSpring2021plusle,
+	AvatarCustomizationFShirtSs,
+	AvatarCustomizationFShirtSteven,
+	AvatarCustomizationFShirtStevenfirst,
+	AvatarCustomizationFShirtSukajanblastoise,
+	AvatarCustomizationFShirtSukajancharizard,
+	AvatarCustomizationFShirtSukajanhouou,
+	AvatarCustomizationFShirtSukajanlugia,
+	AvatarCustomizationFShirtSukajanvenusaur,
+	AvatarCustomizationFShirtSummer2023,
+	AvatarCustomizationFShirtSustainability2021,
+	AvatarCustomizationFShirtSvcostumescarletschool,
+	AvatarCustomizationFShirtSvcostumevioletschool,
+	AvatarCustomizationFShirtSvdlc1,
+	AvatarCustomizationFShirtSvdlc2fall,
+	AvatarCustomizationFShirtSvdlc2spring,
+	AvatarCustomizationFShirtSweater300,
+	AvatarCustomizationFShirtSweater301,
+	AvatarCustomizationFShirtSweater302,
+	AvatarCustomizationFShirtSweaterInstinct,
+	AvatarCustomizationFShirtSweaterMystic,
+	AvatarCustomizationFShirtSweaterValor,
+	AvatarCustomizationFShirtSwshdlc2costume,
+	AvatarCustomizationFShirtSwshdlccostume,
+	AvatarCustomizationFShirtSwshuniformchampion,
+	AvatarCustomizationFShirtSwshuniformdark,
+	AvatarCustomizationFShirtSwshuniformdefault,
+	AvatarCustomizationFShirtSwshuniformdragon,
+	AvatarCustomizationFShirtSylveonitems,
+	AvatarCustomizationFShirtTanktop0,
+	AvatarCustomizationFShirtTanktop1,
+	AvatarCustomizationFShirtTanktop2,
+	AvatarCustomizationFShirtTanktopCharizard0,
+	AvatarCustomizationFShirtTanktopCharizard1,
+	AvatarCustomizationFShirtTanktopCharizard2,
+	AvatarCustomizationFShirtTanktopPikachu0,
+	AvatarCustomizationFShirtTanktopPikachu1,
+	AvatarCustomizationFShirtTanktopPikachu2,
+	AvatarCustomizationFShirtTcgcollabtshirtandcap,
+	AvatarCustomizationFShirtTeamaqua,
+	AvatarCustomizationFShirtTeamblanche,
+	AvatarCustomizationFShirtTeamcandela,
+	AvatarCustomizationFShirtTeammagma,
+	AvatarCustomizationFShirtTeamrocket0,
+	AvatarCustomizationFShirtTeamrocket1,
+	AvatarCustomizationFShirtTeamskull,
+	AvatarCustomizationFShirtTeamspark,
+	AvatarCustomizationFShirtTogepihoodie,
+	AvatarCustomizationFShirtTracksuitsgroudon,
+	AvatarCustomizationFShirtTracksuitskyogre,
+	AvatarCustomizationFShirtTshirtCycling0,
+	AvatarCustomizationFShirtTshirtCycling1,
+	AvatarCustomizationFShirtTshirtCycling2,
+	AvatarCustomizationFShirtTshirtCycling3,
+	AvatarCustomizationFShirtTshirtFestChicago2017,
+	AvatarCustomizationFShirtTshirtFestChicago2018,
+	AvatarCustomizationFShirtTshirtGlobalGoals2017,
+	AvatarCustomizationFShirtTshirtPikachu0,
+	AvatarCustomizationFShirtTshirtPikachu1,
+	AvatarCustomizationFShirtTshirtPikachu2,
+	AvatarCustomizationFShirtTshirtPikachu3,
+	AvatarCustomizationFShirtTshirtPikachu4,
+	AvatarCustomizationFShirtTshirtPikachu5,
+	AvatarCustomizationFShirtTshirtPikachu6,
+	AvatarCustomizationFShirtTurtwigonesie,
+	AvatarCustomizationFShirtUltra0,
+	AvatarCustomizationFShirtUltrareconsquad,
+	AvatarCustomizationFShirtUniqlotshirts0,
+	AvatarCustomizationFShirtUniqlotshirts1,
+	AvatarCustomizationFShirtUniqlotshirts2,
+	AvatarCustomizationFShirtUnwto,
+	AvatarCustomizationFShirtValentine2023,
+	AvatarCustomizationFShirtVerizon2020,
+	AvatarCustomizationFShirtVeterantrainerxy,
+	AvatarCustomizationFShirtVictinitshirts,
+	AvatarCustomizationFShirtWcs2022,
+	AvatarCustomizationFShirtWcs2022tshirtbulu,
+	AvatarCustomizationFShirtWcs2022tshirtred,
+	AvatarCustomizationFShirtWcs2022winnersitems,
+	AvatarCustomizationFShirtWcs2023,
+	AvatarCustomizationFShirtWcs2023promotshirt,
+	AvatarCustomizationFShirtWcs2023promotshirt01,
+	AvatarCustomizationFShirtWcs2023sukajan,
+	AvatarCustomizationFShirtWcs2023winnersitems,
+	AvatarCustomizationFShirtWcs2024,
+	AvatarCustomizationFShirtWcs2024championshipshirtBlue,
+	AvatarCustomizationFShirtWcs2024championshipshirtWhite,
+	AvatarCustomizationFShirtWcsyokohama,
+	AvatarCustomizationFShirtWhitecoat,
+	AvatarCustomizationFShirtWintersweater2023,
+	AvatarCustomizationFShirtZoruaonesie,
+	AvatarCustomizationFShoes6thanniversary,
+	AvatarCustomizationFShoesAcetrainerbw,
+	AvatarCustomizationFShoesAcetrainersm,
+	AvatarCustomizationFShoesAnimegou,
+	AvatarCustomizationFShoesBackpacker,
+	AvatarCustomizationFShoesBattlegirl0,
+	AvatarCustomizationFShoesBwn,
+	AvatarCustomizationFShoesCarbink,
+	AvatarCustomizationFShoesClay,
+	AvatarCustomizationFShoesCoolboots,
+	AvatarCustomizationFShoesDedenneitems,
+	AvatarCustomizationFShoesDefault0,
+	AvatarCustomizationFShoesDefault1,
+	AvatarCustomizationFShoesDefault2,
+	AvatarCustomizationFShoesDefault3,
+	AvatarCustomizationFShoesDefault4,
+	AvatarCustomizationFShoesDefault5,
+	AvatarCustomizationFShoesDefault6,
+	AvatarCustomizationFShoesDelibird,
+	AvatarCustomizationFShoesDp,
+	AvatarCustomizationFShoesElesa,
+	AvatarCustomizationFShoesEmpty,
+	AvatarCustomizationFShoesFashionweek2022,
+	AvatarCustomizationFShoesFrlg0,
+	AvatarCustomizationFShoesFw2022,
+	AvatarCustomizationFShoesGeeta,
+	AvatarCustomizationFShoesGiovanni,
+	AvatarCustomizationFShoesGladion,
+	AvatarCustomizationFShoesGothitelleitems,
+	AvatarCustomizationFShoesGreen,
+	AvatarCustomizationFShoesGymleader0,
+	AvatarCustomizationFShoesGymleader1,
+	AvatarCustomizationFShoesGymleader2,
+	AvatarCustomizationFShoesHala,
+	AvatarCustomizationFShoesHgss0,
+	AvatarCustomizationFShoesIngo,
+	AvatarCustomizationFShoesKorrina,
+	AvatarCustomizationFShoesLadiamondoutfit,
+	AvatarCustomizationFShoesLana,
+	AvatarCustomizationFShoesLapearloutfit,
+	AvatarCustomizationFShoesLegendofarceus,
+	AvatarCustomizationFShoesLoosepants,
+	AvatarCustomizationFShoesLoosepants1,
+	AvatarCustomizationFShoesLoosepants2,
+	AvatarCustomizationFShoesLoosepants3,
+	AvatarCustomizationFShoesLuvdiscpack,
+	AvatarCustomizationFShoesLysandre,
+	AvatarCustomizationFShoesMegalopunnyitems,
+	AvatarCustomizationFShoesMelmetalshoes,
+	AvatarCustomizationFShoesMewtwo,
+	AvatarCustomizationFShoesMisty,
+	AvatarCustomizationFShoesNewyear2022,
+	AvatarCustomizationFShoesNike2021,
+	AvatarCustomizationFShoesOras,
+	AvatarCustomizationFShoesPajamas20220,
+	AvatarCustomizationFShoesPajamas20221,
+	AvatarCustomizationFShoesPalmer,
+	AvatarCustomizationFShoesPikachufan0,
+	AvatarCustomizationFShoesPikachulibre,
+	AvatarCustomizationFShoesProfwillowoutfit,
+	AvatarCustomizationFShoesRegiicejersies,
+	AvatarCustomizationFShoesRegirockjersies,
+	AvatarCustomizationFShoesRegisteeljersies,
+	AvatarCustomizationFShoesReuniclusitems,
+	AvatarCustomizationFShoesRuinmaniac,
+	AvatarCustomizationFShoesSandals,
+	AvatarCustomizationFShoesSandals1,
+	AvatarCustomizationFShoesSandals2,
+	AvatarCustomizationFShoesSolgaleoitems,
+	AvatarCustomizationFShoesSs,
+	AvatarCustomizationFShoesSteven,
+	AvatarCustomizationFShoesStevenfirst,
+	AvatarCustomizationFShoesSvcostumescarletschool,
+	AvatarCustomizationFShoesSvcostumevioletschool,
+	AvatarCustomizationFShoesSvdlc1,
+	AvatarCustomizationFShoesSvdlc2spring,
+	AvatarCustomizationFShoesSwshdlc2costume,
+	AvatarCustomizationFShoesSwshdlccostume,
+	AvatarCustomizationFShoesSwshuniformdark,
+	AvatarCustomizationFShoesSwshuniformdefault,
+	AvatarCustomizationFShoesSwshuniformdragon,
+	AvatarCustomizationFShoesSylveonitems,
+	AvatarCustomizationFShoesTeamaqua,
+	AvatarCustomizationFShoesTeamblanche,
+	AvatarCustomizationFShoesTeamcandela,
+	AvatarCustomizationFShoesTeammagma,
+	AvatarCustomizationFShoesTeamrocket0,
+	AvatarCustomizationFShoesTeamrocket1,
+	AvatarCustomizationFShoesTeamskull,
+	AvatarCustomizationFShoesTeamspark,
+	AvatarCustomizationFShoesUltra0,
+	AvatarCustomizationFShoesUltrareconsquad,
+	AvatarCustomizationFShoesVeterantrainerxy,
+	AvatarCustomizationFShoesWcs2022winnersitems,
+	AvatarCustomizationFShoesWcs2023winnersitems,
+	AvatarCustomizationFShoesWinterboots0,
+	AvatarCustomizationFShoesWinterboots1,
+	AvatarCustomizationFShoesWinterboots2,
+	AvatarCustomizationFShoesWinterboots2023,
+	AvatarCustomizationFShoesWinterboots3,
+	AvatarCustomizationFSkin0,
+	AvatarCustomizationFSkin1,
+	AvatarCustomizationFSkin10,
+	AvatarCustomizationFSkin11,
+	AvatarCustomizationFSkin2,
+	AvatarCustomizationFSkin3,
+	AvatarCustomizationFSkin4,
+	AvatarCustomizationFSkin5,
+	AvatarCustomizationFSkin6,
+	AvatarCustomizationFSkin7,
+	AvatarCustomizationFSkin8,
+	AvatarCustomizationFSkin9,
+	AvatarCustomizationFSocksDefault0,
+	AvatarCustomizationFSocksDefault1,
+	AvatarCustomizationFSocksDefault2,
+	AvatarCustomizationFSocksEmpty,
+	AvatarCustomizationFSocksFw2022,
+	AvatarCustomizationFSocksHgss0,
+	AvatarCustomizationFSocksSneakersocks0,
+	AvatarCustomizationFSocksSneakersocks1,
+	AvatarCustomizationFSocksSollunaitems,
+	AvatarCustomizationFSocksSwshuniformdefault,
+	AvatarCustomizationFSocksSwshuniformdragon,
+	AvatarCustomizationFSocksTeamaqua,
+	AvatarCustomizationFSocksThighhighs0,
+	AvatarCustomizationMBackpackAlolaitemslittenbp,
+	AvatarCustomizationMBackpackAlolaitemspoppliobp,
+	AvatarCustomizationMBackpackAlolaitemsrowletbp,
+	AvatarCustomizationMBackpackAnimegou,
+	AvatarCustomizationMBackpackBackpacker,
+	AvatarCustomizationMBackpackCombeebackpack,
+	AvatarCustomizationMBackpackCombeebackpack01,
+	AvatarCustomizationMBackpackDedenneitems,
+	AvatarCustomizationMBackpackDefault0,
+	AvatarCustomizationMBackpackDefault1,
+	AvatarCustomizationMBackpackDefault2,
+	AvatarCustomizationMBackpackDefault3,
+	AvatarCustomizationMBackpackDefault4,
+	AvatarCustomizationMBackpackDefault5,
+	AvatarCustomizationMBackpackDp,
+	AvatarCustomizationMBackpackEggIncubator,
+	AvatarCustomizationMBackpackEggbackpack0,
+	AvatarCustomizationMBackpackEggbackpack1,
+	AvatarCustomizationMBackpackEggbackpack2,
+	AvatarCustomizationMBackpackEmpty,
+	AvatarCustomizationMBackpackFrlg0,
+	AvatarCustomizationMBackpackGenesecteventitem,
+	AvatarCustomizationMBackpackGengar0,
+	AvatarCustomizationMBackpackGiratinaitems,
+	AvatarCustomizationMBackpackGuccibackpack,
+	AvatarCustomizationMBackpackGuitarcasebackpack,
+	AvatarCustomizationMBackpackHgss0,
+	AvatarCustomizationMBackpackHououbackpack,
+	AvatarCustomizationMBackpackKakureonpouch,
+	AvatarCustomizationMBackpackKomala,
+	AvatarCustomizationMBackpackLongchampbp,
+	AvatarCustomizationMBackpackLunalaitems,
+	AvatarCustomizationMBackpackLunarnewyr,
+	AvatarCustomizationMBackpackMimikyubp,
+	AvatarCustomizationMBackpackMovie2020,
+	AvatarCustomizationMBackpackNaganadelawings,
+	AvatarCustomizationMBackpackNike2021,
+	AvatarCustomizationMBackpackPamobackpack,
+	AvatarCustomizationMBackpackPkmnhoodie001,
+	AvatarCustomizationMBackpackPkmnhoodie004,
+	AvatarCustomizationMBackpackPkmnhoodie007,
+	AvatarCustomizationMBackpackRuinmaniac,
+	AvatarCustomizationMBackpackSnapcamera,
+	AvatarCustomizationMBackpackSs,
+	AvatarCustomizationMBackpackSvcostumescarletschool,
+	AvatarCustomizationMBackpackSvcostumevioletschool,
+	AvatarCustomizationMBackpackSvdlc1,
+	AvatarCustomizationMBackpackSvdlc2spring,
+	AvatarCustomizationMBackpackSwshdlc2costume,
+	AvatarCustomizationMBackpackSwshdlccostume,
+	AvatarCustomizationMBackpackTogepibackpack,
+	AvatarCustomizationMBackpackUltra0,
+	AvatarCustomizationMBackpackVerizon2021,
+	AvatarCustomizationMBackpackZubatbp,
+	AvatarCustomizationMEyes0,
+	AvatarCustomizationMEyes1,
+	AvatarCustomizationMEyes2,
+	AvatarCustomizationMEyes3,
+	AvatarCustomizationMEyes4,
+	AvatarCustomizationMFace3dmask00,
+	AvatarCustomizationMFace3dmask01,
+	AvatarCustomizationMFace3dmask02,
+	AvatarCustomizationMFaceBanettemask,
+	AvatarCustomizationMFaceDayofthedead,
+	AvatarCustomizationMFaceDefaultmask,
+	AvatarCustomizationMFaceEmpty,
+	AvatarCustomizationMFaceFacestickerghostpika,
+	AvatarCustomizationMFaceFacestickerpikachu,
+	AvatarCustomizationMFaceFacestickerpokeball,
+	AvatarCustomizationMFaceFestofcolors00,
+	AvatarCustomizationMFaceFestofcolors01,
+	AvatarCustomizationMFaceFestofcolors02,
+	AvatarCustomizationMFaceGracidea,
+	AvatarCustomizationMFaceHoliday2022santacostumes,
+	AvatarCustomizationMFacePikachumask,
+	AvatarCustomizationMFaceSableyemask,
+	AvatarCustomizationMFaceTeamskull,
+	AvatarCustomizationMFaceToxelmask,
+	AvatarCustomizationMFaceVerizon2020mask,
+	AvatarCustomizationMGlasses3d,
+	AvatarCustomizationMGlassesCutieflysleepmask,
+	AvatarCustomizationMGlassesDivingsuit,
+	AvatarCustomizationMGlassesDrpikachu,
+	AvatarCustomizationMGlassesEmpty,
+	AvatarCustomizationMGlassesFrillishglasses,
+	AvatarCustomizationMGlassesFw2022,
+	AvatarCustomizationMGlassesGimmighoulitems,
+	AvatarCustomizationMGlassesGoteamrocketarlo,
+	AvatarCustomizationMGlassesGrandoakglasses,
+	AvatarCustomizationMGlassesJogger0,
+	AvatarCustomizationMGlassesLugiaglasses,
+	AvatarCustomizationMGlassesLv40glasses,
+	AvatarCustomizationMGlassesMask0,
+	AvatarCustomizationMGlassesMask1,
+	AvatarCustomizationMGlassesNewyear2022,
+	AvatarCustomizationMGlassesNewyearglasses2020,
+	AvatarCustomizationMGlassesNewyearglasses2021,
+	AvatarCustomizationMGlassesObstagoonitems,
+	AvatarCustomizationMGlassesRoundsunglasses,
+	AvatarCustomizationMGlassesTeardrop0,
+	AvatarCustomizationMGlassesThick0,
+	AvatarCustomizationMGlassesThick1,
+	AvatarCustomizationMGlassesThick2,
+	AvatarCustomizationMGlassesThick3,
+	AvatarCustomizationMGlassesThick4,
+	AvatarCustomizationMGlovesAcetrainersm,
+	AvatarCustomizationMGlovesBea,
+	AvatarCustomizationMGlovesBwn,
+	AvatarCustomizationMGlovesDefault0,
+	AvatarCustomizationMGlovesDefault1,
+	AvatarCustomizationMGlovesDefault2,
+	AvatarCustomizationMGlovesDefault3,
+	AvatarCustomizationMGlovesDelibird,
+	AvatarCustomizationMGlovesDynamaxswsh,
+	AvatarCustomizationMGlovesEmpty,
+	AvatarCustomizationMGlovesFrlg0,
+	AvatarCustomizationMGlovesGeeta,
+	AvatarCustomizationMGlovesGiovanni,
+	AvatarCustomizationMGlovesGuzma,
+	AvatarCustomizationMGlovesGymleader0,
+	AvatarCustomizationMGlovesHoopabangle,
+	AvatarCustomizationMGlovesJogger0,
+	AvatarCustomizationMGlovesKorrina,
+	AvatarCustomizationMGlovesLysandre,
+	AvatarCustomizationMGlovesMegabangle,
+	AvatarCustomizationMGlovesMegabangleblack,
+	AvatarCustomizationMGlovesMegabangleblue,
+	AvatarCustomizationMGlovesMegabanglered,
+	AvatarCustomizationMGlovesMegabangleyellow,
+	AvatarCustomizationMGlovesObstagoonitems,
+	AvatarCustomizationMGlovesPalmer,
+	AvatarCustomizationMGlovesProfwillowoutfit,
+	AvatarCustomizationMGlovesStevenfirst,
+	AvatarCustomizationMGlovesSvdlc2spring,
+	AvatarCustomizationMGlovesSwshdlc2costume,
+	AvatarCustomizationMGlovesSwshdlccostume,
+	AvatarCustomizationMGlovesSwshuniformchampion,
+	AvatarCustomizationMGlovesSwshuniformdark,
+	AvatarCustomizationMGlovesSwshuniformdefault,
+	AvatarCustomizationMGlovesSwshuniformdragon,
+	AvatarCustomizationMGlovesTeamaqua,
+	AvatarCustomizationMGlovesTeammagma,
+	AvatarCustomizationMGlovesTeamrocket0,
+	AvatarCustomizationMGlovesTeamspark,
+	AvatarCustomizationMGlovesWintergloves2023,
+	AvatarCustomizationMGofestPikachuvisor,
+	AvatarCustomizationMHairDefault0,
+	AvatarCustomizationMHairDefault1,
+	AvatarCustomizationMHairDefault10,
+	AvatarCustomizationMHairDefault11,
+	AvatarCustomizationMHairDefault12,
+	AvatarCustomizationMHairDefault13,
+	AvatarCustomizationMHairDefault14,
+	AvatarCustomizationMHairDefault15,
+	AvatarCustomizationMHairDefault16,
+	AvatarCustomizationMHairDefault17,
+	AvatarCustomizationMHairDefault18,
+	AvatarCustomizationMHairDefault19,
+	AvatarCustomizationMHairDefault2,
+	AvatarCustomizationMHairDefault3,
+	AvatarCustomizationMHairDefault4,
+	AvatarCustomizationMHairDefault5,
+	AvatarCustomizationMHairDefault6,
+	AvatarCustomizationMHairDefault7,
+	AvatarCustomizationMHairDefault8,
+	AvatarCustomizationMHairDefault9,
+	AvatarCustomizationMHat6thanniversary,
+	AvatarCustomizationMHatAcetrainersm,
+	AvatarCustomizationMHatAdventure0,
+	AvatarCustomizationMHatAseries,
+	AvatarCustomizationMHatBea,
+	AvatarCustomizationMHatBidoofhat,
+	AvatarCustomizationMHatBounsweetitems,
+	AvatarCustomizationMHatBurmyearrings11,
+	AvatarCustomizationMHatBurmyearrings12,
+	AvatarCustomizationMHatBurmyearrings13,
+	AvatarCustomizationMHatBwn,
+	AvatarCustomizationMHatCasket0,
+	AvatarCustomizationMHatCetoddlehat,
+	AvatarCustomizationMHatClay,
+	AvatarCustomizationMHatCofagrigusitems,
+	AvatarCustomizationMHatCosmog,
+	AvatarCustomizationMHatCrownmoon,
+	AvatarCustomizationMHatCrownsun,
+	AvatarCustomizationMHatCubonehat,
+	AvatarCustomizationMHatDarumakahat,
+	AvatarCustomizationMHatDedenneitems,
+	AvatarCustomizationMHatDefault0,
+	AvatarCustomizationMHatDefault1,
+	AvatarCustomizationMHatDefault2,
+	AvatarCustomizationMHatDefault3,
+	AvatarCustomizationMHatDefault4,
+	AvatarCustomizationMHatDefault5,
+	AvatarCustomizationMHatDeino,
+	AvatarCustomizationMHatDelibird,
+	AvatarCustomizationMHatDetectivepikachu,
+	AvatarCustomizationMHatDiancie,
+	AvatarCustomizationMHatDp,
+	AvatarCustomizationMHatDrifloon0,
+	AvatarCustomizationMHatDrpikachu,
+	AvatarCustomizationMHatDusclopsmummy,
+	AvatarCustomizationMHatEeveecap,
+	AvatarCustomizationMHatElesa,
+	AvatarCustomizationMHatEmpty,
+	AvatarCustomizationMHatFedora0,
+	AvatarCustomizationMHatFedora1,
+	AvatarCustomizationMHatFisher0,
+	AvatarCustomizationMHatFlabebepack,
+	AvatarCustomizationMHatFragment0,
+	AvatarCustomizationMHatFrlg0,
+	AvatarCustomizationMHatFurfrouwig,
+	AvatarCustomizationMHatFw2022,
+	AvatarCustomizationMHatGalarfarfetchditems,
+	AvatarCustomizationMHatGenesecteventitem,
+	AvatarCustomizationMHatGengar0,
+	AvatarCustomizationMHatGimmighoulitems,
+	AvatarCustomizationMHatGiratinaitems,
+	AvatarCustomizationMHatGladion,
+	AvatarCustomizationMHatGoomy,
+	AvatarCustomizationMHatGreavardwig,
+	AvatarCustomizationMHatGreencoat,
+	AvatarCustomizationMHatGrowlithehelmet,
+	AvatarCustomizationMHatGtr2024eeveefanmask,
+	AvatarCustomizationMHatGtr2024pikachufanmask,
+	AvatarCustomizationMHatGuccihat,
+	AvatarCustomizationMHatGuzma,
+	AvatarCustomizationMHatGyaradoscap,
+	AvatarCustomizationMHatHgss0,
+	AvatarCustomizationMHatHoliday2022santacostumes,
+	AvatarCustomizationMHatHolidaybeanie,
+	AvatarCustomizationMHatHoopaearmuffs,
+	AvatarCustomizationMHatIngo,
+	AvatarCustomizationMHatJogger0,
+	AvatarCustomizationMHatKantotourcapgreen,
+	AvatarCustomizationMHatKantotourcapred,
+	AvatarCustomizationMHatKorrina,
+	AvatarCustomizationMHatLana,
+	AvatarCustomizationMHatLaprasbandana,
+	AvatarCustomizationMHatLasecuritycorps,
+	AvatarCustomizationMHatLegendofarceus,
+	AvatarCustomizationMHatLitwickhat,
+	AvatarCustomizationMHatLoneearrings,
+	AvatarCustomizationMHatLvl50cap,
+	AvatarCustomizationMHatMagikarp,
+	AvatarCustomizationMHatMareaniehat,
+	AvatarCustomizationMHatMegalopunnyitems,
+	AvatarCustomizationMHatMegarayquaza,
+	AvatarCustomizationMHatMeltan,
+	AvatarCustomizationMHatMewtwo,
+	AvatarCustomizationMHatMimikyu0,
+	AvatarCustomizationMHatMismagius0,
+	AvatarCustomizationMHatMovie2020,
+	AvatarCustomizationMHatMunnapack0,
+	AvatarCustomizationMHatMunnapack1,
+	AvatarCustomizationMHatNewyear2022,
+	AvatarCustomizationMHatNewyearhat2021,
+	AvatarCustomizationMHatNewyearhat2023,
+	AvatarCustomizationMHatNihilegoitems,
+	AvatarCustomizationMHatNoibat,
+	AvatarCustomizationMHatObstagoonitems,
+	AvatarCustomizationMHatOras,
+	AvatarCustomizationMHatOricoriopink,
+	AvatarCustomizationMHatOricoriopurple,
+	AvatarCustomizationMHatOricoriored,
+	AvatarCustomizationMHatOricorioyellow,
+	AvatarCustomizationMHatPartneritemsjan2024hat,
+	AvatarCustomizationMHatPhantump,
+	AvatarCustomizationMHatPikachucap,
+	AvatarCustomizationMHatPikachufan0,
+	AvatarCustomizationMHatPikachulibre,
+	AvatarCustomizationMHatPikachupumpkinhead,
+	AvatarCustomizationMHatPkmncap0,
+	AvatarCustomizationMHatPkmncap1,
+	AvatarCustomizationMHatPkmncap2,
+	AvatarCustomizationMHatPoipole,
+	AvatarCustomizationMHatProfwillowoutfit,
+	AvatarCustomizationMHatRegiicejersies,
+	AvatarCustomizationMHatRegirockjersies,
+	AvatarCustomizationMHatRegisteeljersies,
+	AvatarCustomizationMHatRuinmaniac,
+	AvatarCustomizationMHatSableyegoggles,
+	AvatarCustomizationMHatSamsungsummer2020,
+	AvatarCustomizationMHatSandygasthat,
+	AvatarCustomizationMHatShayminhat,
+	AvatarCustomizationMHatSlowpoketailshirts,
+	AvatarCustomizationMHatSnorlaxnightcap,
+	AvatarCustomizationMHatSolgaleoitems,
+	AvatarCustomizationMHatSs,
+	AvatarCustomizationMHatStantlerheadband,
+	AvatarCustomizationMHatStrawhat,
+	AvatarCustomizationMHatSummer2023,
+	AvatarCustomizationMHatSvcostumescarletschool,
+	AvatarCustomizationMHatSvcostumevioletschool,
+	AvatarCustomizationMHatSwshdlc2costume,
+	AvatarCustomizationMHatSwshuniformchampion,
+	AvatarCustomizationMHatSylveonitems,
+	AvatarCustomizationMHatTcgcollabtshirtandcap,
+	AvatarCustomizationMHatTeamaqua,
+	AvatarCustomizationMHatTeamleadercap0,
+	AvatarCustomizationMHatTeamleadercap1,
+	AvatarCustomizationMHatTeamleadercap2,
+	AvatarCustomizationMHatTeamrocket0,
+	AvatarCustomizationMHatTeamrocketcap,
+	AvatarCustomizationMHatTeamskull,
+	AvatarCustomizationMHatTophat0,
+	AvatarCustomizationMHatUltra0,
+	AvatarCustomizationMHatUltrareconsquad,
+	AvatarCustomizationMHatUltrareconsquadb,
+	AvatarCustomizationMHatVerizon2021,
+	AvatarCustomizationMHatWcs2022winnersitems,
+	AvatarCustomizationMHatWhimsicottearmuff,
+	AvatarCustomizationMHatWillowglasses,
+	AvatarCustomizationMHatWoobatearrings,
+	AvatarCustomizationMHatYamaskhat,
+	AvatarCustomizationMHatYamaskmask,
+	AvatarCustomizationMHatZubathat,
+	AvatarCustomizationMJacketNewyear2022,
+	AvatarCustomizationMPants6thanniversary,
+	AvatarCustomizationMPants7thanniversary,
+	AvatarCustomizationMPantsAcetrainerbw,
+	AvatarCustomizationMPantsAcetrainersm,
+	AvatarCustomizationMPantsAnimegou,
+	AvatarCustomizationMPantsBackpacker,
+	AvatarCustomizationMPantsBounsweetitems,
+	AvatarCustomizationMPantsBrock,
+	AvatarCustomizationMPantsBwn,
+	AvatarCustomizationMPantsCasual0,
+	AvatarCustomizationMPantsCasual1,
+	AvatarCustomizationMPantsClay,
+	AvatarCustomizationMPantsDefault0,
+	AvatarCustomizationMPantsDenimfashionweek2023,
+	AvatarCustomizationMPantsDp,
+	AvatarCustomizationMPantsElesa,
+	AvatarCustomizationMPantsFashionweek2022,
+	AvatarCustomizationMPantsFisher0,
+	AvatarCustomizationMPantsFlabebepack,
+	AvatarCustomizationMPantsFrlg0,
+	AvatarCustomizationMPantsFw2022,
+	AvatarCustomizationMPantsGeeta,
+	AvatarCustomizationMPantsGenderlessskirt,
+	AvatarCustomizationMPantsGiovanni,
+	AvatarCustomizationMPantsGladion,
+	AvatarCustomizationMPantsGothitelleitems,
+	AvatarCustomizationMPantsGreen,
+	AvatarCustomizationMPantsGreencoat,
+	AvatarCustomizationMPantsGuzma,
+	AvatarCustomizationMPantsGymleader0,
+	AvatarCustomizationMPantsGymleader1,
+	AvatarCustomizationMPantsGymleader2,
+	AvatarCustomizationMPantsHala,
+	AvatarCustomizationMPantsHgss0,
+	AvatarCustomizationMPantsIngo,
+	AvatarCustomizationMPantsJogger0,
+	AvatarCustomizationMPantsKorrina,
+	AvatarCustomizationMPantsLoosepants,
+	AvatarCustomizationMPantsLunalaitems,
+	AvatarCustomizationMPantsLuvdiscpack,
+	AvatarCustomizationMPantsLysandre,
+	AvatarCustomizationMPantsMewtwo,
+	AvatarCustomizationMPantsMunnapack,
+	AvatarCustomizationMPantsNewyear2022,
+	AvatarCustomizationMPantsOras,
+	AvatarCustomizationMPantsPajamas20220,
+	AvatarCustomizationMPantsPajamas20221,
+	AvatarCustomizationMPantsPalmer,
+	AvatarCustomizationMPantsPikachufan0,
+	AvatarCustomizationMPantsPikachulibre,
+	AvatarCustomizationMPantsProfwillowoutfit,
+	AvatarCustomizationMPantsPumpkabooitems,
+	AvatarCustomizationMPantsRegiicejersies,
+	AvatarCustomizationMPantsRegirockjersies,
+	AvatarCustomizationMPantsRegisteeljersies,
+	AvatarCustomizationMPantsSkinnyjeans0,
+	AvatarCustomizationMPantsSkinnyjeans1,
+	AvatarCustomizationMPantsSkinnyjeans2,
+	AvatarCustomizationMPantsSs,
+	AvatarCustomizationMPantsSteven,
+	AvatarCustomizationMPantsStevenfirst,
+	AvatarCustomizationMPantsSweats0,
+	AvatarCustomizationMPantsSweats1,
+	AvatarCustomizationMPantsSweats2,
+	AvatarCustomizationMPantsSweats3,
+	AvatarCustomizationMPantsSweats4,
+	AvatarCustomizationMPantsSwshdlc2costume,
+	AvatarCustomizationMPantsSwshuniformchampion,
+	AvatarCustomizationMPantsSwshuniformdark,
+	AvatarCustomizationMPantsSwshuniformdefault,
+	AvatarCustomizationMPantsSwshuniformdragon,
+	AvatarCustomizationMPantsTeamaqua,
+	AvatarCustomizationMPantsTeamblanche,
+	AvatarCustomizationMPantsTeamcandela,
+	AvatarCustomizationMPantsTeammagma,
+	AvatarCustomizationMPantsTeamrocket0,
+	AvatarCustomizationMPantsTeamskull,
+	AvatarCustomizationMPantsTeamspark,
+	AvatarCustomizationMPantsUltra0,
+	AvatarCustomizationMPantsVeterantrainerxy,
+	AvatarCustomizationMPantsWcs2022winnersitems,
+	AvatarCustomizationMPose01,
+	AvatarCustomizationMPose02,
+	AvatarCustomizationMPose03,
+	AvatarCustomizationMPose04,
+	AvatarCustomizationMPose05,
+	AvatarCustomizationMPose06,
+	AvatarCustomizationMPose07,
+	AvatarCustomizationMPose08,
+	AvatarCustomizationMPose09,
+	AvatarCustomizationMPose10,
+	AvatarCustomizationMPose11,
+	AvatarCustomizationMPose12,
+	AvatarCustomizationMPose13,
+	AvatarCustomizationMPose14,
+	AvatarCustomizationMPose15,
+	AvatarCustomizationMPose16,
+	AvatarCustomizationMPose17,
+	AvatarCustomizationMPose18,
+	AvatarCustomizationMPose19,
+	AvatarCustomizationMPose20,
+	AvatarCustomizationMPose21,
+	AvatarCustomizationMPose22,
+	AvatarCustomizationMPose23,
+	AvatarCustomizationMPose24,
+	AvatarCustomizationMPose25,
+	AvatarCustomizationMPose26,
+	AvatarCustomizationMPose27,
+	AvatarCustomizationMPose28,
+	AvatarCustomizationMPose29,
+	AvatarCustomizationMPose30,
+	AvatarCustomizationMPose31,
+	AvatarCustomizationMPose32,
+	AvatarCustomizationMPose33,
+	AvatarCustomizationMPose34,
+	AvatarCustomizationMPose35,
+	AvatarCustomizationMPose36,
+	AvatarCustomizationMPose37,
+	AvatarCustomizationMPose38,
+	AvatarCustomizationMPose39,
+	AvatarCustomizationMPose40,
+	AvatarCustomizationMPose41,
+	AvatarCustomizationMPose43,
+	AvatarCustomizationMPose44,
+	AvatarCustomizationMPose45,
+	AvatarCustomizationMPose46,
+	AvatarCustomizationMPose47,
+	AvatarCustomizationMPose48,
+	AvatarCustomizationMPose49,
+	AvatarCustomizationMPose50,
+	AvatarCustomizationMPose51,
+	AvatarCustomizationMPose52,
+	AvatarCustomizationMPose53,
+	AvatarCustomizationMPose54,
+	AvatarCustomizationMPose55,
+	AvatarCustomizationMPose56,
+	AvatarCustomizationMPose57,
+	AvatarCustomizationMPose58,
+	AvatarCustomizationMPose59,
+	AvatarCustomizationMPose60,
+	AvatarCustomizationMPose61,
+	AvatarCustomizationMPose62,
+	AvatarCustomizationMPose63,
+	AvatarCustomizationMPose64,
+	AvatarCustomizationMPoseEmpty,
+	AvatarCustomizationMShirt6thanniversary,
+	AvatarCustomizationMShirt7thanniversary,
+	AvatarCustomizationMShirtAcetrainerbw,
+	AvatarCustomizationMShirtAcetrainersm,
+	AvatarCustomizationMShirtAlolacomfey,
+	AvatarCustomizationMShirtAnimegou,
+	AvatarCustomizationMShirtAseries,
+	AvatarCustomizationMShirtBackpacker,
+	AvatarCustomizationMShirtBallguy,
+	AvatarCustomizationMShirtBea,
+	AvatarCustomizationMShirtBlazer0,
+	AvatarCustomizationMShirtBounsweetitems,
+	AvatarCustomizationMShirtBrock,
+	AvatarCustomizationMShirtBuzzwoleitems,
+	AvatarCustomizationMShirtBwn,
+	AvatarCustomizationMShirtCasual0,
+	AvatarCustomizationMShirtCasual1,
+	AvatarCustomizationMShirtCasual2,
+	AvatarCustomizationMShirtCasual3,
+	AvatarCustomizationMShirtCelebi0,
+	AvatarCustomizationMShirtChimcharonesie,
+	AvatarCustomizationMShirtClay,
+	AvatarCustomizationMShirtCofagrigusitems,
+	AvatarCustomizationMShirtCosmog,
+	AvatarCustomizationMShirtCowichansweater,
+	AvatarCustomizationMShirtDayofdead,
+	AvatarCustomizationMShirtDefault0,
+	AvatarCustomizationMShirtDefault1,
+	AvatarCustomizationMShirtDefault2,
+	AvatarCustomizationMShirtDefault2b,
+	AvatarCustomizationMShirtDefault3,
+	AvatarCustomizationMShirtDefault4,
+	AvatarCustomizationMShirtDefault5,
+	AvatarCustomizationMShirtDefault6,
+	AvatarCustomizationMShirtDefault7,
+	AvatarCustomizationMShirtDelibird,
+	AvatarCustomizationMShirtDelibirdonesie,
+	AvatarCustomizationMShirtDenimfashionweek2023,
+	AvatarCustomizationMShirtDenimjacket,
+	AvatarCustomizationMShirtDetectivepikachu,
+	AvatarCustomizationMShirtDiancie,
+	AvatarCustomizationMShirtDivingsuit,
+	AvatarCustomizationMShirtDiwali2021,
+	AvatarCustomizationMShirtDp,
+	AvatarCustomizationMShirtDrifblim0,
+	AvatarCustomizationMShirtDusclopsmummy,
+	AvatarCustomizationMShirtEarthday2018,
+	AvatarCustomizationMShirtEeveestshirt00,
+	AvatarCustomizationMShirtEeveestshirt01,
+	AvatarCustomizationMShirtEeveestshirt02,
+	AvatarCustomizationMShirtEeveestshirt03,
+	AvatarCustomizationMShirtEeveestshirt04,
+	AvatarCustomizationMShirtEeveestshirt05,
+	AvatarCustomizationMShirtEeveestshirt06,
+	AvatarCustomizationMShirtEeveestshirt07,
+	AvatarCustomizationMShirtEeveestshirt08,
+	AvatarCustomizationMShirtElesa,
+	AvatarCustomizationMShirtFashionweek2022,
+	AvatarCustomizationMShirtFestivaloflights00,
+	AvatarCustomizationMShirtFestivaloflights01,
+	AvatarCustomizationMShirtFisher0,
+	AvatarCustomizationMShirtFlabebepack,
+	AvatarCustomizationMShirtFragment0,
+	AvatarCustomizationMShirtFrlg0,
+	AvatarCustomizationMShirtFw2022,
+	AvatarCustomizationMShirtGalarfarfetchditems,
+	AvatarCustomizationMShirtGalaxyoutfit,
+	AvatarCustomizationMShirtGeeta,
+	AvatarCustomizationMShirtGenderlessskirt,
+	AvatarCustomizationMShirtGengar0,
+	AvatarCustomizationMShirtGengaronesie,
+	AvatarCustomizationMShirtGiovanni,
+	AvatarCustomizationMShirtGiratinaitems,
+	AvatarCustomizationMShirtGladion,
+	AvatarCustomizationMShirtGofest2019,
+	AvatarCustomizationMShirtGofest2020,
+	AvatarCustomizationMShirtGofest2021,
+	AvatarCustomizationMShirtGofest2022,
+	AvatarCustomizationMShirtGofest2023,
+	AvatarCustomizationMShirtGofest2024darkgray,
+	AvatarCustomizationMShirtGofest2024gray,
+	AvatarCustomizationMShirtGofest2024purple,
+	AvatarCustomizationMShirtGofestglobal2023,
+	AvatarCustomizationMShirtGoteamrocketarlo,
+	AvatarCustomizationMShirtGoteamrocketcliff,
+	AvatarCustomizationMShirtGoteamrocketsierra,
+	AvatarCustomizationMShirtGothitelleitems,
+	AvatarCustomizationMShirtGotour2023,
+	AvatarCustomizationMShirtGotour2024,
+	AvatarCustomizationMShirtGreedentsweater,
+	AvatarCustomizationMShirtGreen,
+	AvatarCustomizationMShirtGreencoat,
+	AvatarCustomizationMShirtGtrtshirt202200,
+	AvatarCustomizationMShirtGtrtshirt202201,
+	AvatarCustomizationMShirtGuccitshirts,
+	AvatarCustomizationMShirtGuzma,
+	AvatarCustomizationMShirtGymleader0,
+	AvatarCustomizationMShirtGymleader1,
+	AvatarCustomizationMShirtGymleader2,
+	AvatarCustomizationMShirtHala,
+	AvatarCustomizationMShirtHappi,
+	AvatarCustomizationMShirtHappi1,
+	AvatarCustomizationMShirtHappi2,
+	AvatarCustomizationMShirtHgss0,
+	AvatarCustomizationMShirtHoliday2022santacostumes,
+	AvatarCustomizationMShirtHolifestival2021black,
+	AvatarCustomizationMShirtHolifestival2021white,
+	AvatarCustomizationMShirtHoopaunboundtshirt,
+	AvatarCustomizationMShirtIngo,
+	AvatarCustomizationMShirtIngress0,
+	AvatarCustomizationMShirtIngressE0,
+	AvatarCustomizationMShirtIngressR0,
+	AvatarCustomizationMShirtJames,
+	AvatarCustomizationMShirtJirachi,
+	AvatarCustomizationMShirtJogger0,
+	AvatarCustomizationMShirtKeldeotshirt,
+	AvatarCustomizationMShirtKorrina,
+	AvatarCustomizationMShirtLadiamondoutfit,
+	AvatarCustomizationMShirtLana,
+	AvatarCustomizationMShirtLapearloutfit,
+	AvatarCustomizationMShirtLasecuritycorps,
+	AvatarCustomizationMShirtLatiasLatios0,
+	AvatarCustomizationMShirtLegendofarceus,
+	AvatarCustomizationMShirtLongsleevesCharizard0,
+	AvatarCustomizationMShirtLongsleevesCharizard1,
+	AvatarCustomizationMShirtLongsleevesCharizard2,
+	AvatarCustomizationMShirtLongsleevesPikachu0,
+	AvatarCustomizationMShirtLongsleevesPikachu1,
+	AvatarCustomizationMShirtLongsleevesPikachu2,
+	AvatarCustomizationMShirtLuvdiscpack,
+	AvatarCustomizationMShirtLvl50,
+	AvatarCustomizationMShirtLvl501,
+	AvatarCustomizationMShirtLysandre,
+	AvatarCustomizationMShirtMarshadowtshirt,
+	AvatarCustomizationMShirtMegalopunnyitems,
+	AvatarCustomizationMShirtMegarayquaza,
+	AvatarCustomizationMShirtMelmetaljacket,
+	AvatarCustomizationMShirtMelmetalvest,
+	AvatarCustomizationMShirtMeloettatshirt,
+	AvatarCustomizationMShirtMeltan,
+	AvatarCustomizationMShirtMew0,
+	AvatarCustomizationMShirtMewtwo,
+	AvatarCustomizationMShirtMovie2020jessiejames,
+	AvatarCustomizationMShirtMunnapack,
+	AvatarCustomizationMShirtNike2021,
+	AvatarCustomizationMShirtOcshirt045,
+	AvatarCustomizationMShirtOcshirt108,
+	AvatarCustomizationMShirtOcshirt129,
+	AvatarCustomizationMShirtOcshirt143,
+	AvatarCustomizationMShirtOras,
+	AvatarCustomizationMShirtPajamas20220,
+	AvatarCustomizationMShirtPajamas20221,
+	AvatarCustomizationMShirtPalmer,
+	AvatarCustomizationMShirtPartneritemsjan2024hoodie,
+	AvatarCustomizationMShirtPartneritemsjan2024tshirt,
+	AvatarCustomizationMShirtPikachufan0,
+	AvatarCustomizationMShirtPikachulibre,
+	AvatarCustomizationMShirtPikachuonesie,
+	AvatarCustomizationMShirtPinpukuhoodie,
+	AvatarCustomizationMShirtPipluponesie,
+	AvatarCustomizationMShirtPkmnhoodie001,
+	AvatarCustomizationMShirtPkmnhoodie004,
+	AvatarCustomizationMShirtPkmnhoodie007,
+	AvatarCustomizationMShirtPkmnshirts165,
+	AvatarCustomizationMShirtPkmnshirts188,
+	AvatarCustomizationMShirtPkmnshirts201,
+	AvatarCustomizationMShirtPkmnshirts202100,
+	AvatarCustomizationMShirtPkmnshirts202101,
+	AvatarCustomizationMShirtPkmnshirts202102,
+	AvatarCustomizationMShirtPkmnshirts238,
+	AvatarCustomizationMShirtPoloshirt,
+	AvatarCustomizationMShirtPoloshirt1,
+	AvatarCustomizationMShirtPoloshirt2,
+	AvatarCustomizationMShirtProfwillowoutfit,
+	AvatarCustomizationMShirtProjectguitar,
+	AvatarCustomizationMShirtPumpkabooitems,
+	AvatarCustomizationMShirtRegiicejersies,
+	AvatarCustomizationMShirtRegirockjersies,
+	AvatarCustomizationMShirtRegisteeljersies,
+	AvatarCustomizationMShirtReuniclusitems,
+	AvatarCustomizationMShirtRuinmaniac,
+	AvatarCustomizationMShirtSafarizone2020,
+	AvatarCustomizationMShirtSamsungsummer2020,
+	AvatarCustomizationMShirtShayminlandtshirt,
+	AvatarCustomizationMShirtShayminskytshirt,
+	AvatarCustomizationMShirtShinymewtshirts,
+	AvatarCustomizationMShirtSlowpokeshirts,
+	AvatarCustomizationMShirtSlowpoketailshirts,
+	AvatarCustomizationMShirtSnorlaxonesie,
+	AvatarCustomizationMShirtSpiritomb0,
+	AvatarCustomizationMShirtSpring2021gulpin,
+	AvatarCustomizationMShirtSpring2021plusle,
+	AvatarCustomizationMShirtSs,
+	AvatarCustomizationMShirtSteven,
+	AvatarCustomizationMShirtStevenfirst,
+	AvatarCustomizationMShirtSukajanblastoise,
+	AvatarCustomizationMShirtSukajancharizard,
+	AvatarCustomizationMShirtSukajanhouou,
+	AvatarCustomizationMShirtSukajanlugia,
+	AvatarCustomizationMShirtSukajanvenusaur,
+	AvatarCustomizationMShirtSummer2023,
+	AvatarCustomizationMShirtSustainability2021,
+	AvatarCustomizationMShirtSvcostumescarletschool,
+	AvatarCustomizationMShirtSvcostumevioletschool,
+	AvatarCustomizationMShirtSvdlc1,
+	AvatarCustomizationMShirtSvdlc2fall,
+	AvatarCustomizationMShirtSvdlc2spring,
+	AvatarCustomizationMShirtSweatshirtSporty0,
+	AvatarCustomizationMShirtSweatshirtSporty1,
+	AvatarCustomizationMShirtSweatshirtSporty2,
+	AvatarCustomizationMShirtSweatshirtSporty3,
+	AvatarCustomizationMShirtSweatshirtStreak0,
+	AvatarCustomizationMShirtSweatshirtStreak1,
+	AvatarCustomizationMShirtSweatshirtStreak2,
+	AvatarCustomizationMShirtSweatshirtStreak3,
+	AvatarCustomizationMShirtSweatshirtStreak4,
+	AvatarCustomizationMShirtSwshdlc2costume,
+	AvatarCustomizationMShirtSwshdlccostume,
+	AvatarCustomizationMShirtSwshuniformchampion,
+	AvatarCustomizationMShirtSwshuniformdark,
+	AvatarCustomizationMShirtSwshuniformdefault,
+	AvatarCustomizationMShirtSwshuniformdragon,
+	AvatarCustomizationMShirtSylveonitems,
+	AvatarCustomizationMShirtTcgcollabtshirtandcap,
+	AvatarCustomizationMShirtTeamaqua,
+	AvatarCustomizationMShirtTeamblanche,
+	AvatarCustomizationMShirtTeamcandela,
+	AvatarCustomizationMShirtTeammagma,
+	AvatarCustomizationMShirtTeamrocket0,
+	AvatarCustomizationMShirtTeamrocket1,
+	AvatarCustomizationMShirtTeamskull,
+	AvatarCustomizationMShirtTeamspark,
+	AvatarCustomizationMShirtTogepihoodie,
+	AvatarCustomizationMShirtTracksuitsgroudon,
+	AvatarCustomizationMShirtTracksuitskyogre,
+	AvatarCustomizationMShirtTshirtFestChicago2017,
+	AvatarCustomizationMShirtTshirtFestChicago2018,
+	AvatarCustomizationMShirtTshirtGeometric0,
+	AvatarCustomizationMShirtTshirtGeometric1,
+	AvatarCustomizationMShirtTshirtGeometric2,
+	AvatarCustomizationMShirtTshirtGlobalGoals2017,
+	AvatarCustomizationMShirtTshirtInstinct,
+	AvatarCustomizationMShirtTshirtMystic,
+	AvatarCustomizationMShirtTshirtValor,
+	AvatarCustomizationMShirtTurtleneck300,
+	AvatarCustomizationMShirtTurtleneck301,
+	AvatarCustomizationMShirtTurtleneck302,
+	AvatarCustomizationMShirtTurtleneck303,
+	AvatarCustomizationMShirtTurtwigonesie,
+	AvatarCustomizationMShirtUltra0,
+	AvatarCustomizationMShirtUltrareconsquad,
+	AvatarCustomizationMShirtUniqlotshirts0,
+	AvatarCustomizationMShirtUniqlotshirts1,
+	AvatarCustomizationMShirtUniqlotshirts2,
+	AvatarCustomizationMShirtUnwto,
+	AvatarCustomizationMShirtValentine2023,
+	AvatarCustomizationMShirtVerizon2020,
+	AvatarCustomizationMShirtVeterantrainerxy,
+	AvatarCustomizationMShirtVictinitshirts,
+	AvatarCustomizationMShirtWcs2022,
+	AvatarCustomizationMShirtWcs2022tshirtbulu,
+	AvatarCustomizationMShirtWcs2022tshirtred,
+	AvatarCustomizationMShirtWcs2022winnersitems,
+	AvatarCustomizationMShirtWcs2023,
+	AvatarCustomizationMShirtWcs2023promotshirt,
+	AvatarCustomizationMShirtWcs2023promotshirt01,
+	AvatarCustomizationMShirtWcs2023sukajan,
+	AvatarCustomizationMShirtWcs2023winnersitems,
+	AvatarCustomizationMShirtWcs2024,
+	AvatarCustomizationMShirtWcs2024championshipshirtBlue,
+	AvatarCustomizationMShirtWcs2024championshipshirtWhite,
+	AvatarCustomizationMShirtWcsyokohama,
+	AvatarCustomizationMShirtWhitecoat,
+	AvatarCustomizationMShirtWintersweater2023,
+	AvatarCustomizationMShirtZoruaonesie,
+	AvatarCustomizationMShoes6thanniversary,
+	AvatarCustomizationMShoesAcetrainerbw,
+	AvatarCustomizationMShoesAcetrainersm,
+	AvatarCustomizationMShoesAnimegou,
+	AvatarCustomizationMShoesBackpacker,
+	AvatarCustomizationMShoesBrock,
+	AvatarCustomizationMShoesBwn,
+	AvatarCustomizationMShoesCarbink,
+	AvatarCustomizationMShoesClay,
+	AvatarCustomizationMShoesCoolboots,
+	AvatarCustomizationMShoesDedenneitems,
+	AvatarCustomizationMShoesDefault0,
+	AvatarCustomizationMShoesDefault1,
+	AvatarCustomizationMShoesDefault2,
+	AvatarCustomizationMShoesDefault3,
+	AvatarCustomizationMShoesDefault4,
+	AvatarCustomizationMShoesDefault5,
+	AvatarCustomizationMShoesDefault6,
+	AvatarCustomizationMShoesDelibird,
+	AvatarCustomizationMShoesDp,
+	AvatarCustomizationMShoesElesa,
+	AvatarCustomizationMShoesEmpty,
+	AvatarCustomizationMShoesFashionweek2022,
+	AvatarCustomizationMShoesFisher0,
+	AvatarCustomizationMShoesFrlg0,
+	AvatarCustomizationMShoesFw2022,
+	AvatarCustomizationMShoesGeeta,
+	AvatarCustomizationMShoesGiovanni,
+	AvatarCustomizationMShoesGladion,
+	AvatarCustomizationMShoesGothitelleitems,
+	AvatarCustomizationMShoesGreen,
+	AvatarCustomizationMShoesGymleader0,
+	AvatarCustomizationMShoesGymleader1,
+	AvatarCustomizationMShoesGymleader2,
+	AvatarCustomizationMShoesHala,
+	AvatarCustomizationMShoesHgss0,
+	AvatarCustomizationMShoesIngo,
+	AvatarCustomizationMShoesJogger0,
+	AvatarCustomizationMShoesKorrina,
+	AvatarCustomizationMShoesLadiamondoutfit,
+	AvatarCustomizationMShoesLana,
+	AvatarCustomizationMShoesLapearloutfit,
+	AvatarCustomizationMShoesLegendofarceus,
+	AvatarCustomizationMShoesLoosepants,
+	AvatarCustomizationMShoesLoosepants1,
+	AvatarCustomizationMShoesLoosepants2,
+	AvatarCustomizationMShoesLoosepants3,
+	AvatarCustomizationMShoesLuvdiscpack,
+	AvatarCustomizationMShoesLysandre,
+	AvatarCustomizationMShoesMegalopunnyitems,
+	AvatarCustomizationMShoesMelmetalshoes,
+	AvatarCustomizationMShoesMewtwo,
+	AvatarCustomizationMShoesNewyear2022,
+	AvatarCustomizationMShoesNike2021,
+	AvatarCustomizationMShoesOras,
+	AvatarCustomizationMShoesPajamas20220,
+	AvatarCustomizationMShoesPajamas20221,
+	AvatarCustomizationMShoesPalmer,
+	AvatarCustomizationMShoesPikachufan0,
+	AvatarCustomizationMShoesPikachulibre,
+	AvatarCustomizationMShoesProfwillowoutfit,
+	AvatarCustomizationMShoesRegiicejersies,
+	AvatarCustomizationMShoesRegirockjersies,
+	AvatarCustomizationMShoesRegisteeljersies,
+	AvatarCustomizationMShoesReuniclusitems,
+	AvatarCustomizationMShoesRuinmaniac,
+	AvatarCustomizationMShoesSandals,
+	AvatarCustomizationMShoesSandals1,
+	AvatarCustomizationMShoesSandals2,
+	AvatarCustomizationMShoesSolgaleoitems,
+	AvatarCustomizationMShoesSs,
+	AvatarCustomizationMShoesSteven,
+	AvatarCustomizationMShoesStevenfirst,
+	AvatarCustomizationMShoesSvcostumescarletschool,
+	AvatarCustomizationMShoesSvcostumevioletschool,
+	AvatarCustomizationMShoesSvdlc1,
+	AvatarCustomizationMShoesSvdlc2spring,
+	AvatarCustomizationMShoesSwshdlc2costume,
+	AvatarCustomizationMShoesSwshdlccostume,
+	AvatarCustomizationMShoesSwshuniformdark,
+	AvatarCustomizationMShoesSwshuniformdefault,
+	AvatarCustomizationMShoesSwshuniformdragon,
+	AvatarCustomizationMShoesSylveonitems,
+	AvatarCustomizationMShoesTeamaqua,
+	AvatarCustomizationMShoesTeamblanche,
+	AvatarCustomizationMShoesTeamcandela,
+	AvatarCustomizationMShoesTeammagma,
+	AvatarCustomizationMShoesTeamrocket0,
+	AvatarCustomizationMShoesTeamrocket1,
+	AvatarCustomizationMShoesTeamskull,
+	AvatarCustomizationMShoesTeamspark,
+	AvatarCustomizationMShoesUltra0,
+	AvatarCustomizationMShoesUltrareconsquad,
+	AvatarCustomizationMShoesVeterantrainerxy,
+	AvatarCustomizationMShoesWcs2022winnersitems,
+	AvatarCustomizationMShoesWcs2023winnersitems,
+	AvatarCustomizationMShoesWinterboots0,
+	AvatarCustomizationMShoesWinterboots1,
+	AvatarCustomizationMShoesWinterboots2,
+	AvatarCustomizationMShoesWinterboots2023,
+	AvatarCustomizationMShoesWinterboots3,
+	AvatarCustomizationMSkin0,
+	AvatarCustomizationMSkin1,
+	AvatarCustomizationMSkin10,
+	AvatarCustomizationMSkin11,
+	AvatarCustomizationMSkin2,
+	AvatarCustomizationMSkin3,
+	AvatarCustomizationMSkin4,
+	AvatarCustomizationMSkin5,
+	AvatarCustomizationMSkin6,
+	AvatarCustomizationMSkin7,
+	AvatarCustomizationMSkin8,
+	AvatarCustomizationMSkin9,
+	AvatarCustomizationMSocksDefault0,
+	AvatarCustomizationMSocksDefault1,
+	AvatarCustomizationMSocksDefault2,
+	AvatarCustomizationMSocksDefault3,
+	AvatarCustomizationMSocksEmpty,
+	AvatarCustomizationMSocksFw2022,
+	AvatarCustomizationMSocksSneakersocks0,
+	AvatarCustomizationMSocksSneakersocks1,
+	AvatarCustomizationMSocksSollunaitems,
+	AvatarCustomizationMSocksSwshuniformdefault,
+	AvatarCustomizationMSocksSwshuniformdragon,
+} from "./entries";
+
+export interface AvatarCustomizationLookup {
+	AVATAR_f_backpack_alolaitemslittenbp: AvatarCustomizationFBackpackAlolaitemslittenbp;
+	AVATAR_f_backpack_alolaitemspoppliobp: AvatarCustomizationFBackpackAlolaitemspoppliobp;
+	AVATAR_f_backpack_alolaitemsrowletbp: AvatarCustomizationFBackpackAlolaitemsrowletbp;
+	AVATAR_f_backpack_animegou: AvatarCustomizationFBackpackAnimegou;
+	AVATAR_f_backpack_backpacker: AvatarCustomizationFBackpackBackpacker;
+	AVATAR_f_backpack_combeebackpack: AvatarCustomizationFBackpackCombeebackpack;
+	AVATAR_f_backpack_combeebackpack_01: AvatarCustomizationFBackpackCombeebackpack01;
+	AVATAR_f_backpack_cute_0: AvatarCustomizationFBackpackCute0;
+	AVATAR_f_backpack_dedenneitems: AvatarCustomizationFBackpackDedenneitems;
+	AVATAR_f_backpack_default_0: AvatarCustomizationFBackpackDefault0;
+	AVATAR_f_backpack_default_1: AvatarCustomizationFBackpackDefault1;
+	AVATAR_f_backpack_default_2: AvatarCustomizationFBackpackDefault2;
+	AVATAR_f_backpack_default_3: AvatarCustomizationFBackpackDefault3;
+	"AVATAR_f_backpack_egg-incubator": AvatarCustomizationFBackpackEggIncubator;
+	AVATAR_f_backpack_eggbackpack_0: AvatarCustomizationFBackpackEggbackpack0;
+	AVATAR_f_backpack_eggbackpack_1: AvatarCustomizationFBackpackEggbackpack1;
+	AVATAR_f_backpack_eggbackpack_2: AvatarCustomizationFBackpackEggbackpack2;
+	AVATAR_f_backpack_empty: AvatarCustomizationFBackpackEmpty;
+	AVATAR_f_backpack_frlg_0: AvatarCustomizationFBackpackFrlg0;
+	AVATAR_f_backpack_genesecteventitem: AvatarCustomizationFBackpackGenesecteventitem;
+	AVATAR_f_backpack_gengar_0: AvatarCustomizationFBackpackGengar0;
+	AVATAR_f_backpack_giratinaitems: AvatarCustomizationFBackpackGiratinaitems;
+	AVATAR_f_backpack_guccibackpack: AvatarCustomizationFBackpackGuccibackpack;
+	AVATAR_f_backpack_guitarcasebackpack: AvatarCustomizationFBackpackGuitarcasebackpack;
+	AVATAR_f_backpack_hgss_0: AvatarCustomizationFBackpackHgss0;
+	AVATAR_f_backpack_hououbackpack: AvatarCustomizationFBackpackHououbackpack;
+	AVATAR_f_backpack_kakureonpouch: AvatarCustomizationFBackpackKakureonpouch;
+	AVATAR_f_backpack_komala: AvatarCustomizationFBackpackKomala;
+	AVATAR_f_backpack_longchampbp: AvatarCustomizationFBackpackLongchampbp;
+	AVATAR_f_backpack_lunalaitems: AvatarCustomizationFBackpackLunalaitems;
+	AVATAR_f_backpack_lunarNewYr: AvatarCustomizationFBackpackLunarnewyr;
+	AVATAR_f_backpack_mimikyubp: AvatarCustomizationFBackpackMimikyubp;
+	AVATAR_f_backpack_movie2020: AvatarCustomizationFBackpackMovie2020;
+	AVATAR_f_backpack_naganadelawings: AvatarCustomizationFBackpackNaganadelawings;
+	AVATAR_f_backpack_nike2021: AvatarCustomizationFBackpackNike2021;
+	AVATAR_f_backpack_pamobackpack: AvatarCustomizationFBackpackPamobackpack;
+	AVATAR_f_backpack_pkmnhoodie001: AvatarCustomizationFBackpackPkmnhoodie001;
+	AVATAR_f_backpack_pkmnhoodie004: AvatarCustomizationFBackpackPkmnhoodie004;
+	AVATAR_f_backpack_pkmnhoodie007: AvatarCustomizationFBackpackPkmnhoodie007;
+	AVATAR_f_backpack_ruinmaniac: AvatarCustomizationFBackpackRuinmaniac;
+	AVATAR_f_backpack_snapcamera: AvatarCustomizationFBackpackSnapcamera;
+	AVATAR_f_backpack_ss: AvatarCustomizationFBackpackSs;
+	AVATAR_f_backpack_svcostumescarletschool: AvatarCustomizationFBackpackSvcostumescarletschool;
+	AVATAR_f_backpack_svcostumevioletschool: AvatarCustomizationFBackpackSvcostumevioletschool;
+	AVATAR_f_backpack_svdlc1: AvatarCustomizationFBackpackSvdlc1;
+	AVATAR_f_backpack_svdlc2spring: AvatarCustomizationFBackpackSvdlc2spring;
+	AVATAR_f_backpack_swshdlc2costume: AvatarCustomizationFBackpackSwshdlc2costume;
+	AVATAR_f_backpack_swshdlccostume: AvatarCustomizationFBackpackSwshdlccostume;
+	AVATAR_f_backpack_togepibackpack: AvatarCustomizationFBackpackTogepibackpack;
+	AVATAR_f_backpack_ultra_0: AvatarCustomizationFBackpackUltra0;
+	AVATAR_f_backpack_verizon2021: AvatarCustomizationFBackpackVerizon2021;
+	AVATAR_f_backpack_zubatbp: AvatarCustomizationFBackpackZubatbp;
+	AVATAR_f_belt_acetrainerbw: AvatarCustomizationFBeltAcetrainerbw;
+	AVATAR_f_belt_default_0: AvatarCustomizationFBeltDefault0;
+	AVATAR_f_belt_default_1: AvatarCustomizationFBeltDefault1;
+	AVATAR_f_belt_default_2: AvatarCustomizationFBeltDefault2;
+	AVATAR_f_belt_default_3: AvatarCustomizationFBeltDefault3;
+	AVATAR_f_belt_default_4: AvatarCustomizationFBeltDefault4;
+	AVATAR_f_belt_default_5: AvatarCustomizationFBeltDefault5;
+	AVATAR_f_belt_default_6: AvatarCustomizationFBeltDefault6;
+	AVATAR_f_belt_default_7: AvatarCustomizationFBeltDefault7;
+	AVATAR_f_belt_default_8: AvatarCustomizationFBeltDefault8;
+	AVATAR_f_belt_empty: AvatarCustomizationFBeltEmpty;
+	AVATAR_f_belt_simple_0: AvatarCustomizationFBeltSimple0;
+	AVATAR_f_belt_simple_1: AvatarCustomizationFBeltSimple1;
+	AVATAR_f_belt_simple_2: AvatarCustomizationFBeltSimple2;
+	AVATAR_f_belt_simple_3: AvatarCustomizationFBeltSimple3;
+	AVATAR_f_belt_teamrocket_0: AvatarCustomizationFBeltTeamrocket0;
+	AVATAR_f_belt_teamrocket_1: AvatarCustomizationFBeltTeamrocket1;
+	AVATAR_f_eyes_0: AvatarCustomizationFEyes0;
+	AVATAR_f_eyes_1: AvatarCustomizationFEyes1;
+	AVATAR_f_eyes_2: AvatarCustomizationFEyes2;
+	AVATAR_f_eyes_3: AvatarCustomizationFEyes3;
+	AVATAR_f_eyes_4: AvatarCustomizationFEyes4;
+	AVATAR_f_face_3dmask_00: AvatarCustomizationFFace3dmask00;
+	AVATAR_f_face_3dmask_01: AvatarCustomizationFFace3dmask01;
+	AVATAR_f_face_3dmask_02: AvatarCustomizationFFace3dmask02;
+	AVATAR_f_face_banettemask: AvatarCustomizationFFaceBanettemask;
+	AVATAR_f_face_dayofthedead: AvatarCustomizationFFaceDayofthedead;
+	AVATAR_f_face_defaultmask: AvatarCustomizationFFaceDefaultmask;
+	AVATAR_f_face_empty: AvatarCustomizationFFaceEmpty;
+	AVATAR_f_face_facestickerghostpika: AvatarCustomizationFFaceFacestickerghostpika;
+	AVATAR_f_face_facestickerpikachu: AvatarCustomizationFFaceFacestickerpikachu;
+	AVATAR_f_face_facestickerpokeball: AvatarCustomizationFFaceFacestickerpokeball;
+	AVATAR_f_face_festOfColors_00: AvatarCustomizationFFaceFestofcolors00;
+	AVATAR_f_face_festOfColors_01: AvatarCustomizationFFaceFestofcolors01;
+	AVATAR_f_face_festOfColors_02: AvatarCustomizationFFaceFestofcolors02;
+	AVATAR_f_face_gracidea: AvatarCustomizationFFaceGracidea;
+	AVATAR_f_face_holiday2022santacostumes: AvatarCustomizationFFaceHoliday2022santacostumes;
+	AVATAR_f_face_pikachumask: AvatarCustomizationFFacePikachumask;
+	AVATAR_f_face_sableyemask: AvatarCustomizationFFaceSableyemask;
+	AVATAR_f_face_teamskull: AvatarCustomizationFFaceTeamskull;
+	AVATAR_f_face_toxelmask: AvatarCustomizationFFaceToxelmask;
+	AVATAR_f_face_verizon2020mask: AvatarCustomizationFFaceVerizon2020mask;
+	AVATAR_f_glasses_3d: AvatarCustomizationFGlasses3d;
+	AVATAR_f_glasses_cutieflysleepmask: AvatarCustomizationFGlassesCutieflysleepmask;
+	AVATAR_f_glasses_divingsuit: AvatarCustomizationFGlassesDivingsuit;
+	AVATAR_f_glasses_drpikachu: AvatarCustomizationFGlassesDrpikachu;
+	AVATAR_f_glasses_empty: AvatarCustomizationFGlassesEmpty;
+	AVATAR_f_glasses_frillishglasses: AvatarCustomizationFGlassesFrillishglasses;
+	AVATAR_f_glasses_fw2022: AvatarCustomizationFGlassesFw2022;
+	AVATAR_f_glasses_gimmighoulitems: AvatarCustomizationFGlassesGimmighoulitems;
+	AVATAR_f_glasses_goteamrocketarlo: AvatarCustomizationFGlassesGoteamrocketarlo;
+	AVATAR_f_glasses_grandoakglasses: AvatarCustomizationFGlassesGrandoakglasses;
+	AVATAR_f_glasses_lugiaglasses: AvatarCustomizationFGlassesLugiaglasses;
+	AVATAR_f_glasses_lv40glasses: AvatarCustomizationFGlassesLv40glasses;
+	AVATAR_f_glasses_mask_0: AvatarCustomizationFGlassesMask0;
+	AVATAR_f_glasses_mask_1: AvatarCustomizationFGlassesMask1;
+	AVATAR_f_glasses_newyear2022: AvatarCustomizationFGlassesNewyear2022;
+	AVATAR_f_glasses_newyearglasses2020: AvatarCustomizationFGlassesNewyearglasses2020;
+	AVATAR_f_glasses_newyearglasses2021: AvatarCustomizationFGlassesNewyearglasses2021;
+	AVATAR_f_glasses_obstagoonitems: AvatarCustomizationFGlassesObstagoonitems;
+	AVATAR_f_glasses_roundsunglasses: AvatarCustomizationFGlassesRoundsunglasses;
+	AVATAR_f_glasses_teardrop_0: AvatarCustomizationFGlassesTeardrop0;
+	AVATAR_f_glasses_thick_0: AvatarCustomizationFGlassesThick0;
+	AVATAR_f_glasses_thick_1: AvatarCustomizationFGlassesThick1;
+	AVATAR_f_glasses_thick_2: AvatarCustomizationFGlassesThick2;
+	AVATAR_f_glasses_thick_3: AvatarCustomizationFGlassesThick3;
+	AVATAR_f_glasses_thick_4: AvatarCustomizationFGlassesThick4;
+	AVATAR_f_gloves_acetrainersm: AvatarCustomizationFGlovesAcetrainersm;
+	AVATAR_f_gloves_battlegirl_0: AvatarCustomizationFGlovesBattlegirl0;
+	AVATAR_f_gloves_bea: AvatarCustomizationFGlovesBea;
+	AVATAR_f_gloves_bwn: AvatarCustomizationFGlovesBwn;
+	AVATAR_f_gloves_default_0: AvatarCustomizationFGlovesDefault0;
+	AVATAR_f_gloves_default_1: AvatarCustomizationFGlovesDefault1;
+	AVATAR_f_gloves_default_2: AvatarCustomizationFGlovesDefault2;
+	AVATAR_f_gloves_default_3: AvatarCustomizationFGlovesDefault3;
+	AVATAR_f_gloves_delibird: AvatarCustomizationFGlovesDelibird;
+	AVATAR_f_gloves_dynamaxswsh: AvatarCustomizationFGlovesDynamaxswsh;
+	AVATAR_f_gloves_empty: AvatarCustomizationFGlovesEmpty;
+	AVATAR_f_gloves_frlg_0: AvatarCustomizationFGlovesFrlg0;
+	AVATAR_f_gloves_geeta: AvatarCustomizationFGlovesGeeta;
+	AVATAR_f_gloves_giovanni: AvatarCustomizationFGlovesGiovanni;
+	AVATAR_f_gloves_guzma: AvatarCustomizationFGlovesGuzma;
+	AVATAR_f_gloves_gymleader_0: AvatarCustomizationFGlovesGymleader0;
+	AVATAR_f_gloves_hoopabangle: AvatarCustomizationFGlovesHoopabangle;
+	AVATAR_f_gloves_korrina: AvatarCustomizationFGlovesKorrina;
+	AVATAR_f_gloves_lysandre: AvatarCustomizationFGlovesLysandre;
+	AVATAR_f_gloves_megabangle: AvatarCustomizationFGlovesMegabangle;
+	AVATAR_f_gloves_megabangleblack: AvatarCustomizationFGlovesMegabangleblack;
+	AVATAR_f_gloves_megabangleblue: AvatarCustomizationFGlovesMegabangleblue;
+	AVATAR_f_gloves_megabanglered: AvatarCustomizationFGlovesMegabanglered;
+	AVATAR_f_gloves_megabangleyellow: AvatarCustomizationFGlovesMegabangleyellow;
+	AVATAR_f_gloves_obstagoonitems: AvatarCustomizationFGlovesObstagoonitems;
+	AVATAR_f_gloves_palmer: AvatarCustomizationFGlovesPalmer;
+	AVATAR_f_gloves_profwillowoutfit: AvatarCustomizationFGlovesProfwillowoutfit;
+	AVATAR_f_gloves_stevenfirst: AvatarCustomizationFGlovesStevenfirst;
+	AVATAR_f_gloves_svdlc2spring: AvatarCustomizationFGlovesSvdlc2spring;
+	AVATAR_f_gloves_swshdlc2costume: AvatarCustomizationFGlovesSwshdlc2costume;
+	AVATAR_f_gloves_swshdlccostume: AvatarCustomizationFGlovesSwshdlccostume;
+	AVATAR_f_gloves_swshuniformchampion: AvatarCustomizationFGlovesSwshuniformchampion;
+	AVATAR_f_gloves_swshuniformdark: AvatarCustomizationFGlovesSwshuniformdark;
+	AVATAR_f_gloves_swshuniformdefault: AvatarCustomizationFGlovesSwshuniformdefault;
+	AVATAR_f_gloves_swshuniformdragon: AvatarCustomizationFGlovesSwshuniformdragon;
+	AVATAR_f_gloves_teamaqua: AvatarCustomizationFGlovesTeamaqua;
+	AVATAR_f_gloves_teammagma: AvatarCustomizationFGlovesTeammagma;
+	AVATAR_f_gloves_teamrocket_0: AvatarCustomizationFGlovesTeamrocket0;
+	AVATAR_f_gloves_teamspark: AvatarCustomizationFGlovesTeamspark;
+	AVATAR_f_gloves_wintergloves2023: AvatarCustomizationFGlovesWintergloves2023;
+	AVATAR_f_gofest_pikachuvisor: AvatarCustomizationFGofestPikachuvisor;
+	AVATAR_f_hair_default_0: AvatarCustomizationFHairDefault0;
+	AVATAR_f_hair_default_1: AvatarCustomizationFHairDefault1;
+	AVATAR_f_hair_default_10: AvatarCustomizationFHairDefault10;
+	AVATAR_f_hair_default_11: AvatarCustomizationFHairDefault11;
+	AVATAR_f_hair_default_12: AvatarCustomizationFHairDefault12;
+	AVATAR_f_hair_default_13: AvatarCustomizationFHairDefault13;
+	AVATAR_f_hair_default_14: AvatarCustomizationFHairDefault14;
+	AVATAR_f_hair_default_15: AvatarCustomizationFHairDefault15;
+	AVATAR_f_hair_default_16: AvatarCustomizationFHairDefault16;
+	AVATAR_f_hair_default_17: AvatarCustomizationFHairDefault17;
+	AVATAR_f_hair_default_18: AvatarCustomizationFHairDefault18;
+	AVATAR_f_hair_default_19: AvatarCustomizationFHairDefault19;
+	AVATAR_f_hair_default_2: AvatarCustomizationFHairDefault2;
+	AVATAR_f_hair_default_3: AvatarCustomizationFHairDefault3;
+	AVATAR_f_hair_default_4: AvatarCustomizationFHairDefault4;
+	AVATAR_f_hair_default_5: AvatarCustomizationFHairDefault5;
+	AVATAR_f_hair_default_6: AvatarCustomizationFHairDefault6;
+	AVATAR_f_hair_default_7: AvatarCustomizationFHairDefault7;
+	AVATAR_f_hair_default_8: AvatarCustomizationFHairDefault8;
+	AVATAR_f_hair_default_9: AvatarCustomizationFHairDefault9;
+	AVATAR_f_hat_6thanniversary: AvatarCustomizationFHat6thanniversary;
+	AVATAR_f_hat_acetrainersm: AvatarCustomizationFHatAcetrainersm;
+	AVATAR_f_hat_adventure_0: AvatarCustomizationFHatAdventure0;
+	AVATAR_f_hat_aseries: AvatarCustomizationFHatAseries;
+	AVATAR_f_hat_bea: AvatarCustomizationFHatBea;
+	AVATAR_f_hat_bidoofhat: AvatarCustomizationFHatBidoofhat;
+	AVATAR_f_hat_bounsweetitems: AvatarCustomizationFHatBounsweetitems;
+	AVATAR_f_hat_burmyearrings11: AvatarCustomizationFHatBurmyearrings11;
+	AVATAR_f_hat_burmyearrings12: AvatarCustomizationFHatBurmyearrings12;
+	AVATAR_f_hat_burmyearrings13: AvatarCustomizationFHatBurmyearrings13;
+	AVATAR_f_hat_bwn: AvatarCustomizationFHatBwn;
+	AVATAR_f_hat_casket_0: AvatarCustomizationFHatCasket0;
+	AVATAR_f_hat_cetoddlehat: AvatarCustomizationFHatCetoddlehat;
+	AVATAR_f_hat_clay: AvatarCustomizationFHatClay;
+	AVATAR_f_hat_cofagrigusitems: AvatarCustomizationFHatCofagrigusitems;
+	AVATAR_f_hat_cosmog: AvatarCustomizationFHatCosmog;
+	AVATAR_f_hat_crownmoon: AvatarCustomizationFHatCrownmoon;
+	AVATAR_f_hat_crownsun: AvatarCustomizationFHatCrownsun;
+	AVATAR_f_hat_cubonehat: AvatarCustomizationFHatCubonehat;
+	AVATAR_f_hat_darumakahat: AvatarCustomizationFHatDarumakahat;
+	AVATAR_f_hat_dedenneitems: AvatarCustomizationFHatDedenneitems;
+	AVATAR_f_hat_default_A_0: AvatarCustomizationFHatDefaultA0;
+	AVATAR_f_hat_default_A_1: AvatarCustomizationFHatDefaultA1;
+	AVATAR_f_hat_default_A_2: AvatarCustomizationFHatDefaultA2;
+	AVATAR_f_hat_default_A_3: AvatarCustomizationFHatDefaultA3;
+	AVATAR_f_hat_default_A_4: AvatarCustomizationFHatDefaultA4;
+	AVATAR_f_hat_default_A_5: AvatarCustomizationFHatDefaultA5;
+	AVATAR_f_hat_default_B_0: AvatarCustomizationFHatDefaultB0;
+	AVATAR_f_hat_default_B_1: AvatarCustomizationFHatDefaultB1;
+	AVATAR_f_hat_deino: AvatarCustomizationFHatDeino;
+	AVATAR_f_hat_delibird: AvatarCustomizationFHatDelibird;
+	AVATAR_f_hat_detectivepikachu: AvatarCustomizationFHatDetectivepikachu;
+	AVATAR_f_hat_diancie: AvatarCustomizationFHatDiancie;
+	AVATAR_f_hat_dp: AvatarCustomizationFHatDp;
+	AVATAR_f_hat_drifloon_0: AvatarCustomizationFHatDrifloon0;
+	AVATAR_f_hat_drpikachu: AvatarCustomizationFHatDrpikachu;
+	AVATAR_f_hat_dusclopsmummy: AvatarCustomizationFHatDusclopsmummy;
+	AVATAR_f_hat_eeveecap: AvatarCustomizationFHatEeveecap;
+	AVATAR_f_hat_elesa: AvatarCustomizationFHatElesa;
+	AVATAR_f_hat_empty: AvatarCustomizationFHatEmpty;
+	AVATAR_f_hat_fedora_0: AvatarCustomizationFHatFedora0;
+	AVATAR_f_hat_fedora_1: AvatarCustomizationFHatFedora1;
+	AVATAR_f_hat_flabebepack: AvatarCustomizationFHatFlabebepack;
+	AVATAR_f_hat_fragment_0: AvatarCustomizationFHatFragment0;
+	AVATAR_f_hat_frlg_0: AvatarCustomizationFHatFrlg0;
+	AVATAR_f_hat_furfrouwig: AvatarCustomizationFHatFurfrouwig;
+	AVATAR_f_hat_fw2022: AvatarCustomizationFHatFw2022;
+	AVATAR_f_hat_galarfarfetchditems: AvatarCustomizationFHatGalarfarfetchditems;
+	AVATAR_f_hat_genesecteventitem: AvatarCustomizationFHatGenesecteventitem;
+	AVATAR_f_hat_gengar_0: AvatarCustomizationFHatGengar0;
+	AVATAR_f_hat_gimmighoulitems: AvatarCustomizationFHatGimmighoulitems;
+	AVATAR_f_hat_giratinaitems: AvatarCustomizationFHatGiratinaitems;
+	AVATAR_f_hat_gladion: AvatarCustomizationFHatGladion;
+	AVATAR_f_hat_goomy: AvatarCustomizationFHatGoomy;
+	AVATAR_f_hat_greavardwig: AvatarCustomizationFHatGreavardwig;
+	AVATAR_f_hat_greencoat: AvatarCustomizationFHatGreencoat;
+	AVATAR_f_hat_growlithehelmet: AvatarCustomizationFHatGrowlithehelmet;
+	AVATAR_f_hat_gtr2024eeveefanmask: AvatarCustomizationFHatGtr2024eeveefanmask;
+	AVATAR_f_hat_gtr2024pikachufanmask: AvatarCustomizationFHatGtr2024pikachufanmask;
+	AVATAR_f_hat_guccihat: AvatarCustomizationFHatGuccihat;
+	AVATAR_f_hat_guzma: AvatarCustomizationFHatGuzma;
+	AVATAR_f_hat_gyaradoscap: AvatarCustomizationFHatGyaradoscap;
+	AVATAR_f_hat_hgss_0: AvatarCustomizationFHatHgss0;
+	AVATAR_f_hat_holiday2022santacostumes: AvatarCustomizationFHatHoliday2022santacostumes;
+	AVATAR_f_hat_holidaybeanie: AvatarCustomizationFHatHolidaybeanie;
+	AVATAR_f_hat_hoopaearmuffs: AvatarCustomizationFHatHoopaearmuffs;
+	AVATAR_f_hat_ingo: AvatarCustomizationFHatIngo;
+	AVATAR_f_hat_kantotourcapgreen: AvatarCustomizationFHatKantotourcapgreen;
+	AVATAR_f_hat_kantotourcapred: AvatarCustomizationFHatKantotourcapred;
+	AVATAR_f_hat_knitted_0: AvatarCustomizationFHatKnitted0;
+	AVATAR_f_hat_knitted_1: AvatarCustomizationFHatKnitted1;
+	AVATAR_f_hat_korrina: AvatarCustomizationFHatKorrina;
+	AVATAR_f_hat_lana: AvatarCustomizationFHatLana;
+	AVATAR_f_hat_laprasbandana: AvatarCustomizationFHatLaprasbandana;
+	AVATAR_f_hat_lasecuritycorps: AvatarCustomizationFHatLasecuritycorps;
+	AVATAR_f_hat_legendofarceus: AvatarCustomizationFHatLegendofarceus;
+	AVATAR_f_hat_litwickhat: AvatarCustomizationFHatLitwickhat;
+	AVATAR_f_hat_loneearrings: AvatarCustomizationFHatLoneearrings;
+	AVATAR_f_hat_lvl50cap: AvatarCustomizationFHatLvl50cap;
+	AVATAR_f_hat_magikarp: AvatarCustomizationFHatMagikarp;
+	AVATAR_f_hat_mareaniehat: AvatarCustomizationFHatMareaniehat;
+	AVATAR_f_hat_megalopunnyitems: AvatarCustomizationFHatMegalopunnyitems;
+	AVATAR_f_hat_megarayquaza: AvatarCustomizationFHatMegarayquaza;
+	AVATAR_f_hat_meltan: AvatarCustomizationFHatMeltan;
+	AVATAR_f_hat_meltanearrings: AvatarCustomizationFHatMeltanearrings;
+	AVATAR_f_hat_mewtwo: AvatarCustomizationFHatMewtwo;
+	AVATAR_f_hat_mimikyu_0: AvatarCustomizationFHatMimikyu0;
+	AVATAR_f_hat_mismagius_0: AvatarCustomizationFHatMismagius0;
+	AVATAR_f_hat_movie2020: AvatarCustomizationFHatMovie2020;
+	AVATAR_f_hat_munnapack_0: AvatarCustomizationFHatMunnapack0;
+	AVATAR_f_hat_munnapack_1: AvatarCustomizationFHatMunnapack1;
+	AVATAR_f_hat_newyear2022: AvatarCustomizationFHatNewyear2022;
+	AVATAR_f_hat_newyearhat2021: AvatarCustomizationFHatNewyearhat2021;
+	AVATAR_f_hat_newyearhat2023: AvatarCustomizationFHatNewyearhat2023;
+	AVATAR_f_hat_nihilegoitems: AvatarCustomizationFHatNihilegoitems;
+	AVATAR_f_hat_noibat: AvatarCustomizationFHatNoibat;
+	AVATAR_f_hat_obstagoonitems: AvatarCustomizationFHatObstagoonitems;
+	AVATAR_f_hat_oras: AvatarCustomizationFHatOras;
+	AVATAR_f_hat_oricorioPink: AvatarCustomizationFHatOricoriopink;
+	AVATAR_f_hat_oricorioPurple: AvatarCustomizationFHatOricoriopurple;
+	AVATAR_f_hat_oricorioRed: AvatarCustomizationFHatOricoriored;
+	AVATAR_f_hat_oricorioYellow: AvatarCustomizationFHatOricorioyellow;
+	AVATAR_f_hat_partneritemsjan2024hat: AvatarCustomizationFHatPartneritemsjan2024hat;
+	AVATAR_f_hat_phantump: AvatarCustomizationFHatPhantump;
+	AVATAR_f_hat_pikachucap: AvatarCustomizationFHatPikachucap;
+	AVATAR_f_hat_pikachufan_0: AvatarCustomizationFHatPikachufan0;
+	AVATAR_f_hat_pikachulibre: AvatarCustomizationFHatPikachulibre;
+	AVATAR_f_hat_pikachupumpkinhead: AvatarCustomizationFHatPikachupumpkinhead;
+	AVATAR_f_hat_pkmncap_0: AvatarCustomizationFHatPkmncap0;
+	AVATAR_f_hat_pkmncap_1: AvatarCustomizationFHatPkmncap1;
+	AVATAR_f_hat_pkmncap_2: AvatarCustomizationFHatPkmncap2;
+	AVATAR_f_hat_poipole: AvatarCustomizationFHatPoipole;
+	AVATAR_f_hat_profwillowoutfit: AvatarCustomizationFHatProfwillowoutfit;
+	AVATAR_f_hat_regiicejersies: AvatarCustomizationFHatRegiicejersies;
+	AVATAR_f_hat_regirockjersies: AvatarCustomizationFHatRegirockjersies;
+	AVATAR_f_hat_registeeljersies: AvatarCustomizationFHatRegisteeljersies;
+	AVATAR_f_hat_ruinmaniac: AvatarCustomizationFHatRuinmaniac;
+	AVATAR_f_hat_sableyegoggles: AvatarCustomizationFHatSableyegoggles;
+	AVATAR_f_hat_samsungsummer2020: AvatarCustomizationFHatSamsungsummer2020;
+	AVATAR_f_hat_sandygasthat: AvatarCustomizationFHatSandygasthat;
+	AVATAR_f_hat_shayminhat: AvatarCustomizationFHatShayminhat;
+	AVATAR_f_hat_slowpoketailshirts: AvatarCustomizationFHatSlowpoketailshirts;
+	AVATAR_f_hat_snorlaxnightcap: AvatarCustomizationFHatSnorlaxnightcap;
+	AVATAR_f_hat_solgaleoitems: AvatarCustomizationFHatSolgaleoitems;
+	AVATAR_f_hat_ss: AvatarCustomizationFHatSs;
+	AVATAR_f_hat_stantlerheadband: AvatarCustomizationFHatStantlerheadband;
+	AVATAR_f_hat_strawhat: AvatarCustomizationFHatStrawhat;
+	AVATAR_f_hat_summer2023: AvatarCustomizationFHatSummer2023;
+	AVATAR_f_hat_svcostumescarletschool: AvatarCustomizationFHatSvcostumescarletschool;
+	AVATAR_f_hat_svcostumevioletschool: AvatarCustomizationFHatSvcostumevioletschool;
+	AVATAR_f_hat_swshdlc2costume: AvatarCustomizationFHatSwshdlc2costume;
+	AVATAR_f_hat_swshuniformchampion: AvatarCustomizationFHatSwshuniformchampion;
+	AVATAR_f_hat_sylveonitems: AvatarCustomizationFHatSylveonitems;
+	AVATAR_f_hat_tcgcollabtshirtandcap: AvatarCustomizationFHatTcgcollabtshirtandcap;
+	AVATAR_f_hat_teamaqua: AvatarCustomizationFHatTeamaqua;
+	AVATAR_f_hat_teamleadercap_0: AvatarCustomizationFHatTeamleadercap0;
+	AVATAR_f_hat_teamleadercap_1: AvatarCustomizationFHatTeamleadercap1;
+	AVATAR_f_hat_teamleadercap_2: AvatarCustomizationFHatTeamleadercap2;
+	AVATAR_f_hat_teamrocket_0: AvatarCustomizationFHatTeamrocket0;
+	AVATAR_f_hat_teamrocketcap: AvatarCustomizationFHatTeamrocketcap;
+	AVATAR_f_hat_teamskull: AvatarCustomizationFHatTeamskull;
+	AVATAR_f_hat_tophat_0: AvatarCustomizationFHatTophat0;
+	AVATAR_f_hat_ultraReconSquad: AvatarCustomizationFHatUltrareconsquad;
+	AVATAR_f_hat_ultraReconSquadB: AvatarCustomizationFHatUltrareconsquadb;
+	AVATAR_f_hat_ultra_0: AvatarCustomizationFHatUltra0;
+	AVATAR_f_hat_verizon2021: AvatarCustomizationFHatVerizon2021;
+	AVATAR_f_hat_wcs2022winnersitems: AvatarCustomizationFHatWcs2022winnersitems;
+	AVATAR_f_hat_whimsicottearmuff: AvatarCustomizationFHatWhimsicottearmuff;
+	AVATAR_f_hat_willowglasses: AvatarCustomizationFHatWillowglasses;
+	AVATAR_f_hat_woobatearrings: AvatarCustomizationFHatWoobatearrings;
+	AVATAR_f_hat_yamaskhat: AvatarCustomizationFHatYamaskhat;
+	AVATAR_f_hat_yamaskmask: AvatarCustomizationFHatYamaskmask;
+	AVATAR_f_hat_zubathat: AvatarCustomizationFHatZubathat;
+	AVATAR_f_jacket_newyear2022: AvatarCustomizationFJacketNewyear2022;
+	AVATAR_f_necklace_default_0: AvatarCustomizationFNecklaceDefault0;
+	AVATAR_f_necklace_default_1: AvatarCustomizationFNecklaceDefault1;
+	AVATAR_f_necklace_empty: AvatarCustomizationFNecklaceEmpty;
+	AVATAR_f_necklace_heart_0: AvatarCustomizationFNecklaceHeart0;
+	AVATAR_f_necklace_star_0: AvatarCustomizationFNecklaceStar0;
+	AVATAR_f_pants_6thanniversary: AvatarCustomizationFPants6thanniversary;
+	AVATAR_f_pants_7thanniversary: AvatarCustomizationFPants7thanniversary;
+	AVATAR_f_pants_acetrainerbw: AvatarCustomizationFPantsAcetrainerbw;
+	AVATAR_f_pants_animegou: AvatarCustomizationFPantsAnimegou;
+	AVATAR_f_pants_backpacker: AvatarCustomizationFPantsBackpacker;
+	AVATAR_f_pants_battlegirl_0: AvatarCustomizationFPantsBattlegirl0;
+	AVATAR_f_pants_bounsweetitems: AvatarCustomizationFPantsBounsweetitems;
+	AVATAR_f_pants_bwn: AvatarCustomizationFPantsBwn;
+	AVATAR_f_pants_casual_0: AvatarCustomizationFPantsCasual0;
+	AVATAR_f_pants_casual_1: AvatarCustomizationFPantsCasual1;
+	AVATAR_f_pants_clay: AvatarCustomizationFPantsClay;
+	AVATAR_f_pants_default_0: AvatarCustomizationFPantsDefault0;
+	AVATAR_f_pants_default_1: AvatarCustomizationFPantsDefault1;
+	AVATAR_f_pants_default_2: AvatarCustomizationFPantsDefault2;
+	AVATAR_f_pants_default_3: AvatarCustomizationFPantsDefault3;
+	AVATAR_f_pants_default_4: AvatarCustomizationFPantsDefault4;
+	AVATAR_f_pants_default_5: AvatarCustomizationFPantsDefault5;
+	AVATAR_f_pants_denimfashionweek2023: AvatarCustomizationFPantsDenimfashionweek2023;
+	AVATAR_f_pants_dp: AvatarCustomizationFPantsDp;
+	AVATAR_f_pants_fashionWeek2022: AvatarCustomizationFPantsFashionweek2022;
+	AVATAR_f_pants_flabebepack: AvatarCustomizationFPantsFlabebepack;
+	AVATAR_f_pants_frlg_0: AvatarCustomizationFPantsFrlg0;
+	AVATAR_f_pants_fw2022: AvatarCustomizationFPantsFw2022;
+	AVATAR_f_pants_geeta: AvatarCustomizationFPantsGeeta;
+	AVATAR_f_pants_genderlessskirt: AvatarCustomizationFPantsGenderlessskirt;
+	AVATAR_f_pants_giovanni: AvatarCustomizationFPantsGiovanni;
+	AVATAR_f_pants_gladion: AvatarCustomizationFPantsGladion;
+	AVATAR_f_pants_gothitelleitems: AvatarCustomizationFPantsGothitelleitems;
+	AVATAR_f_pants_green: AvatarCustomizationFPantsGreen;
+	AVATAR_f_pants_greencoat: AvatarCustomizationFPantsGreencoat;
+	AVATAR_f_pants_guzma: AvatarCustomizationFPantsGuzma;
+	AVATAR_f_pants_gymleader_0: AvatarCustomizationFPantsGymleader0;
+	AVATAR_f_pants_gymleader_1: AvatarCustomizationFPantsGymleader1;
+	AVATAR_f_pants_gymleader_2: AvatarCustomizationFPantsGymleader2;
+	AVATAR_f_pants_hala: AvatarCustomizationFPantsHala;
+	AVATAR_f_pants_hgss_0: AvatarCustomizationFPantsHgss0;
+	AVATAR_f_pants_ingo: AvatarCustomizationFPantsIngo;
+	AVATAR_f_pants_loosepants: AvatarCustomizationFPantsLoosepants;
+	AVATAR_f_pants_lunalaitems: AvatarCustomizationFPantsLunalaitems;
+	AVATAR_f_pants_luvdiscpack: AvatarCustomizationFPantsLuvdiscpack;
+	AVATAR_f_pants_lysandre: AvatarCustomizationFPantsLysandre;
+	AVATAR_f_pants_mewtwo: AvatarCustomizationFPantsMewtwo;
+	AVATAR_f_pants_miniskirt_0: AvatarCustomizationFPantsMiniskirt0;
+	AVATAR_f_pants_miniskirt_1: AvatarCustomizationFPantsMiniskirt1;
+	AVATAR_f_pants_miniskirt_2: AvatarCustomizationFPantsMiniskirt2;
+	AVATAR_f_pants_miniskirt_3: AvatarCustomizationFPantsMiniskirt3;
+	AVATAR_f_pants_miniskirt_wave_0: AvatarCustomizationFPantsMiniskirtWave0;
+	AVATAR_f_pants_miniskirt_wave_1: AvatarCustomizationFPantsMiniskirtWave1;
+	AVATAR_f_pants_miniskirt_wave_2: AvatarCustomizationFPantsMiniskirtWave2;
+	AVATAR_f_pants_misty: AvatarCustomizationFPantsMisty;
+	AVATAR_f_pants_munnapack: AvatarCustomizationFPantsMunnapack;
+	AVATAR_f_pants_neon_solid_0: AvatarCustomizationFPantsNeonSolid0;
+	AVATAR_f_pants_neon_solid_1: AvatarCustomizationFPantsNeonSolid1;
+	AVATAR_f_pants_neon_solid_2: AvatarCustomizationFPantsNeonSolid2;
+	AVATAR_f_pants_neon_stripes_0: AvatarCustomizationFPantsNeonStripes0;
+	AVATAR_f_pants_neon_stripes_1: AvatarCustomizationFPantsNeonStripes1;
+	AVATAR_f_pants_newyear2022: AvatarCustomizationFPantsNewyear2022;
+	AVATAR_f_pants_oras: AvatarCustomizationFPantsOras;
+	AVATAR_f_pants_pajamas2022_0: AvatarCustomizationFPantsPajamas20220;
+	AVATAR_f_pants_pajamas2022_1: AvatarCustomizationFPantsPajamas20221;
+	AVATAR_f_pants_palmer: AvatarCustomizationFPantsPalmer;
+	AVATAR_f_pants_pikachufan_0: AvatarCustomizationFPantsPikachufan0;
+	AVATAR_f_pants_pikachulibre: AvatarCustomizationFPantsPikachulibre;
+	AVATAR_f_pants_profwillowoutfit: AvatarCustomizationFPantsProfwillowoutfit;
+	AVATAR_f_pants_pumpkabooitems: AvatarCustomizationFPantsPumpkabooitems;
+	AVATAR_f_pants_regiicejersies: AvatarCustomizationFPantsRegiicejersies;
+	AVATAR_f_pants_regirockjersies: AvatarCustomizationFPantsRegirockjersies;
+	AVATAR_f_pants_registeeljersies: AvatarCustomizationFPantsRegisteeljersies;
+	AVATAR_f_pants_shorts_0: AvatarCustomizationFPantsShorts0;
+	AVATAR_f_pants_shorts_1: AvatarCustomizationFPantsShorts1;
+	AVATAR_f_pants_shorts_2: AvatarCustomizationFPantsShorts2;
+	AVATAR_f_pants_shorts_3: AvatarCustomizationFPantsShorts3;
+	AVATAR_f_pants_skinnyjeans_0: AvatarCustomizationFPantsSkinnyjeans0;
+	AVATAR_f_pants_steven: AvatarCustomizationFPantsSteven;
+	AVATAR_f_pants_stevenfirst: AvatarCustomizationFPantsStevenfirst;
+	AVATAR_f_pants_swshdlc2costume: AvatarCustomizationFPantsSwshdlc2costume;
+	AVATAR_f_pants_swshuniformchampion: AvatarCustomizationFPantsSwshuniformchampion;
+	AVATAR_f_pants_swshuniformdark: AvatarCustomizationFPantsSwshuniformdark;
+	AVATAR_f_pants_swshuniformdefault: AvatarCustomizationFPantsSwshuniformdefault;
+	AVATAR_f_pants_swshuniformdragon: AvatarCustomizationFPantsSwshuniformdragon;
+	AVATAR_f_pants_teamaqua: AvatarCustomizationFPantsTeamaqua;
+	AVATAR_f_pants_teamblanche: AvatarCustomizationFPantsTeamblanche;
+	AVATAR_f_pants_teamcandela: AvatarCustomizationFPantsTeamcandela;
+	AVATAR_f_pants_teammagma: AvatarCustomizationFPantsTeammagma;
+	AVATAR_f_pants_teamrocket_0: AvatarCustomizationFPantsTeamrocket0;
+	AVATAR_f_pants_teamskull: AvatarCustomizationFPantsTeamskull;
+	AVATAR_f_pants_teamspark: AvatarCustomizationFPantsTeamspark;
+	AVATAR_f_pants_turbine_0: AvatarCustomizationFPantsTurbine0;
+	AVATAR_f_pants_turbine_1: AvatarCustomizationFPantsTurbine1;
+	AVATAR_f_pants_turbine_2: AvatarCustomizationFPantsTurbine2;
+	AVATAR_f_pants_ultra_0: AvatarCustomizationFPantsUltra0;
+	AVATAR_f_pants_veterantrainerxy: AvatarCustomizationFPantsVeterantrainerxy;
+	AVATAR_f_pants_wcs2022winnersitems: AvatarCustomizationFPantsWcs2022winnersitems;
+	AVATAR_f_pose_01: AvatarCustomizationFPose01;
+	AVATAR_f_pose_02: AvatarCustomizationFPose02;
+	AVATAR_f_pose_03: AvatarCustomizationFPose03;
+	AVATAR_f_pose_04: AvatarCustomizationFPose04;
+	AVATAR_f_pose_05: AvatarCustomizationFPose05;
+	AVATAR_f_pose_06: AvatarCustomizationFPose06;
+	AVATAR_f_pose_07: AvatarCustomizationFPose07;
+	AVATAR_f_pose_08: AvatarCustomizationFPose08;
+	AVATAR_f_pose_09: AvatarCustomizationFPose09;
+	AVATAR_f_pose_10: AvatarCustomizationFPose10;
+	AVATAR_f_pose_11: AvatarCustomizationFPose11;
+	AVATAR_f_pose_12: AvatarCustomizationFPose12;
+	AVATAR_f_pose_13: AvatarCustomizationFPose13;
+	AVATAR_f_pose_14: AvatarCustomizationFPose14;
+	AVATAR_f_pose_15: AvatarCustomizationFPose15;
+	AVATAR_f_pose_16: AvatarCustomizationFPose16;
+	AVATAR_f_pose_17: AvatarCustomizationFPose17;
+	AVATAR_f_pose_18: AvatarCustomizationFPose18;
+	AVATAR_f_pose_19: AvatarCustomizationFPose19;
+	AVATAR_f_pose_20: AvatarCustomizationFPose20;
+	AVATAR_f_pose_21: AvatarCustomizationFPose21;
+	AVATAR_f_pose_22: AvatarCustomizationFPose22;
+	AVATAR_f_pose_23: AvatarCustomizationFPose23;
+	AVATAR_f_pose_24: AvatarCustomizationFPose24;
+	AVATAR_f_pose_25: AvatarCustomizationFPose25;
+	AVATAR_f_pose_26: AvatarCustomizationFPose26;
+	AVATAR_f_pose_27: AvatarCustomizationFPose27;
+	AVATAR_f_pose_28: AvatarCustomizationFPose28;
+	AVATAR_f_pose_29: AvatarCustomizationFPose29;
+	AVATAR_f_pose_30: AvatarCustomizationFPose30;
+	AVATAR_f_pose_31: AvatarCustomizationFPose31;
+	AVATAR_f_pose_32: AvatarCustomizationFPose32;
+	AVATAR_f_pose_33: AvatarCustomizationFPose33;
+	AVATAR_f_pose_34: AvatarCustomizationFPose34;
+	AVATAR_f_pose_35: AvatarCustomizationFPose35;
+	AVATAR_f_pose_36: AvatarCustomizationFPose36;
+	AVATAR_f_pose_37: AvatarCustomizationFPose37;
+	AVATAR_f_pose_38: AvatarCustomizationFPose38;
+	AVATAR_f_pose_39: AvatarCustomizationFPose39;
+	AVATAR_f_pose_40: AvatarCustomizationFPose40;
+	AVATAR_f_pose_41: AvatarCustomizationFPose41;
+	AVATAR_f_pose_43: AvatarCustomizationFPose43;
+	AVATAR_f_pose_44: AvatarCustomizationFPose44;
+	AVATAR_f_pose_45: AvatarCustomizationFPose45;
+	AVATAR_f_pose_46: AvatarCustomizationFPose46;
+	AVATAR_f_pose_47: AvatarCustomizationFPose47;
+	AVATAR_f_pose_48: AvatarCustomizationFPose48;
+	AVATAR_f_pose_49: AvatarCustomizationFPose49;
+	AVATAR_f_pose_50: AvatarCustomizationFPose50;
+	AVATAR_f_pose_51: AvatarCustomizationFPose51;
+	AVATAR_f_pose_52: AvatarCustomizationFPose52;
+	AVATAR_f_pose_53: AvatarCustomizationFPose53;
+	AVATAR_f_pose_54: AvatarCustomizationFPose54;
+	AVATAR_f_pose_55: AvatarCustomizationFPose55;
+	AVATAR_f_pose_56: AvatarCustomizationFPose56;
+	AVATAR_f_pose_57: AvatarCustomizationFPose57;
+	AVATAR_f_pose_58: AvatarCustomizationFPose58;
+	AVATAR_f_pose_59: AvatarCustomizationFPose59;
+	AVATAR_f_pose_60: AvatarCustomizationFPose60;
+	AVATAR_f_pose_61: AvatarCustomizationFPose61;
+	AVATAR_f_pose_62: AvatarCustomizationFPose62;
+	AVATAR_f_pose_63: AvatarCustomizationFPose63;
+	AVATAR_f_pose_64: AvatarCustomizationFPose64;
+	AVATAR_f_pose_empty: AvatarCustomizationFPoseEmpty;
+	AVATAR_f_shirt_6thanniversary: AvatarCustomizationFShirt6thanniversary;
+	AVATAR_f_shirt_7thanniversary: AvatarCustomizationFShirt7thanniversary;
+	AVATAR_f_shirt_acetrainerbw: AvatarCustomizationFShirtAcetrainerbw;
+	AVATAR_f_shirt_acetrainersm: AvatarCustomizationFShirtAcetrainersm;
+	AVATAR_f_shirt_alolacomfey: AvatarCustomizationFShirtAlolacomfey;
+	AVATAR_f_shirt_animegou: AvatarCustomizationFShirtAnimegou;
+	AVATAR_f_shirt_aseries: AvatarCustomizationFShirtAseries;
+	AVATAR_f_shirt_backpacker: AvatarCustomizationFShirtBackpacker;
+	AVATAR_f_shirt_ballguy: AvatarCustomizationFShirtBallguy;
+	AVATAR_f_shirt_battlegirl_0: AvatarCustomizationFShirtBattlegirl0;
+	AVATAR_f_shirt_bea: AvatarCustomizationFShirtBea;
+	AVATAR_f_shirt_bounsweetitems: AvatarCustomizationFShirtBounsweetitems;
+	AVATAR_f_shirt_buttondown_0: AvatarCustomizationFShirtButtondown0;
+	AVATAR_f_shirt_buzzwoleitems: AvatarCustomizationFShirtBuzzwoleitems;
+	AVATAR_f_shirt_bwn: AvatarCustomizationFShirtBwn;
+	AVATAR_f_shirt_casual_0: AvatarCustomizationFShirtCasual0;
+	AVATAR_f_shirt_casual_1: AvatarCustomizationFShirtCasual1;
+	AVATAR_f_shirt_casual_2: AvatarCustomizationFShirtCasual2;
+	AVATAR_f_shirt_casual_3: AvatarCustomizationFShirtCasual3;
+	AVATAR_f_shirt_celebi_0: AvatarCustomizationFShirtCelebi0;
+	AVATAR_f_shirt_chimcharonesie: AvatarCustomizationFShirtChimcharonesie;
+	AVATAR_f_shirt_clay: AvatarCustomizationFShirtClay;
+	AVATAR_f_shirt_cofagrigusitems: AvatarCustomizationFShirtCofagrigusitems;
+	AVATAR_f_shirt_cosmog: AvatarCustomizationFShirtCosmog;
+	AVATAR_f_shirt_cowichansweater: AvatarCustomizationFShirtCowichansweater;
+	AVATAR_f_shirt_dayofdead: AvatarCustomizationFShirtDayofdead;
+	AVATAR_f_shirt_default_0: AvatarCustomizationFShirtDefault0;
+	AVATAR_f_shirt_default_1: AvatarCustomizationFShirtDefault1;
+	AVATAR_f_shirt_default_2: AvatarCustomizationFShirtDefault2;
+	AVATAR_f_shirt_default_3: AvatarCustomizationFShirtDefault3;
+	AVATAR_f_shirt_default_4: AvatarCustomizationFShirtDefault4;
+	AVATAR_f_shirt_default_5: AvatarCustomizationFShirtDefault5;
+	AVATAR_f_shirt_default_6: AvatarCustomizationFShirtDefault6;
+	AVATAR_f_shirt_default_7: AvatarCustomizationFShirtDefault7;
+	AVATAR_f_shirt_default_8: AvatarCustomizationFShirtDefault8;
+	AVATAR_f_shirt_delibird: AvatarCustomizationFShirtDelibird;
+	AVATAR_f_shirt_delibirdonesie: AvatarCustomizationFShirtDelibirdonesie;
+	AVATAR_f_shirt_denimfashionweek2023: AvatarCustomizationFShirtDenimfashionweek2023;
+	AVATAR_f_shirt_denimjacket: AvatarCustomizationFShirtDenimjacket;
+	AVATAR_f_shirt_detectivepikachu: AvatarCustomizationFShirtDetectivepikachu;
+	AVATAR_f_shirt_diancie: AvatarCustomizationFShirtDiancie;
+	AVATAR_f_shirt_divingsuit: AvatarCustomizationFShirtDivingsuit;
+	AVATAR_f_shirt_diwali2021: AvatarCustomizationFShirtDiwali2021;
+	AVATAR_f_shirt_dp: AvatarCustomizationFShirtDp;
+	AVATAR_f_shirt_drifblim_0: AvatarCustomizationFShirtDrifblim0;
+	AVATAR_f_shirt_dusclopsmummy: AvatarCustomizationFShirtDusclopsmummy;
+	AVATAR_f_shirt_earthday_2018: AvatarCustomizationFShirtEarthday2018;
+	AVATAR_f_shirt_eeveestshirt_00: AvatarCustomizationFShirtEeveestshirt00;
+	AVATAR_f_shirt_eeveestshirt_01: AvatarCustomizationFShirtEeveestshirt01;
+	AVATAR_f_shirt_eeveestshirt_02: AvatarCustomizationFShirtEeveestshirt02;
+	AVATAR_f_shirt_eeveestshirt_03: AvatarCustomizationFShirtEeveestshirt03;
+	AVATAR_f_shirt_eeveestshirt_04: AvatarCustomizationFShirtEeveestshirt04;
+	AVATAR_f_shirt_eeveestshirt_05: AvatarCustomizationFShirtEeveestshirt05;
+	AVATAR_f_shirt_eeveestshirt_06: AvatarCustomizationFShirtEeveestshirt06;
+	AVATAR_f_shirt_eeveestshirt_07: AvatarCustomizationFShirtEeveestshirt07;
+	AVATAR_f_shirt_eeveestshirt_08: AvatarCustomizationFShirtEeveestshirt08;
+	AVATAR_f_shirt_elesa: AvatarCustomizationFShirtElesa;
+	AVATAR_f_shirt_fashionWeek2022: AvatarCustomizationFShirtFashionweek2022;
+	AVATAR_f_shirt_festivaloflights_00: AvatarCustomizationFShirtFestivaloflights00;
+	AVATAR_f_shirt_festivaloflights_01: AvatarCustomizationFShirtFestivaloflights01;
+	AVATAR_f_shirt_flabebepack: AvatarCustomizationFShirtFlabebepack;
+	AVATAR_f_shirt_fragment_0: AvatarCustomizationFShirtFragment0;
+	AVATAR_f_shirt_frlg_0: AvatarCustomizationFShirtFrlg0;
+	AVATAR_f_shirt_fw2022: AvatarCustomizationFShirtFw2022;
+	AVATAR_f_shirt_galarfarfetchditems: AvatarCustomizationFShirtGalarfarfetchditems;
+	AVATAR_f_shirt_galaxyoutfit: AvatarCustomizationFShirtGalaxyoutfit;
+	AVATAR_f_shirt_geeta: AvatarCustomizationFShirtGeeta;
+	AVATAR_f_shirt_genderlessskirt: AvatarCustomizationFShirtGenderlessskirt;
+	AVATAR_f_shirt_gengar_0: AvatarCustomizationFShirtGengar0;
+	AVATAR_f_shirt_gengaronesie: AvatarCustomizationFShirtGengaronesie;
+	AVATAR_f_shirt_giovanni: AvatarCustomizationFShirtGiovanni;
+	AVATAR_f_shirt_giratinaitems: AvatarCustomizationFShirtGiratinaitems;
+	AVATAR_f_shirt_gladion: AvatarCustomizationFShirtGladion;
+	AVATAR_f_shirt_gofest2022: AvatarCustomizationFShirtGofest2022;
+	AVATAR_f_shirt_gofest2023: AvatarCustomizationFShirtGofest2023;
+	AVATAR_f_shirt_gofest2024darkgray: AvatarCustomizationFShirtGofest2024darkgray;
+	AVATAR_f_shirt_gofest2024gray: AvatarCustomizationFShirtGofest2024gray;
+	AVATAR_f_shirt_gofest2024purple: AvatarCustomizationFShirtGofest2024purple;
+	AVATAR_f_shirt_gofest_2019: AvatarCustomizationFShirtGofest2019;
+	AVATAR_f_shirt_gofest_2020: AvatarCustomizationFShirtGofest2020;
+	AVATAR_f_shirt_gofest_2021: AvatarCustomizationFShirtGofest2021;
+	AVATAR_f_shirt_gofestglobal2023: AvatarCustomizationFShirtGofestglobal2023;
+	AVATAR_f_shirt_goteamrocketarlo: AvatarCustomizationFShirtGoteamrocketarlo;
+	AVATAR_f_shirt_goteamrocketcliff: AvatarCustomizationFShirtGoteamrocketcliff;
+	AVATAR_f_shirt_goteamrocketsierra: AvatarCustomizationFShirtGoteamrocketsierra;
+	AVATAR_f_shirt_gothitelleitems: AvatarCustomizationFShirtGothitelleitems;
+	AVATAR_f_shirt_gotour2023: AvatarCustomizationFShirtGotour2023;
+	AVATAR_f_shirt_gotour2024: AvatarCustomizationFShirtGotour2024;
+	AVATAR_f_shirt_greedentsweater: AvatarCustomizationFShirtGreedentsweater;
+	AVATAR_f_shirt_green: AvatarCustomizationFShirtGreen;
+	AVATAR_f_shirt_greencoat: AvatarCustomizationFShirtGreencoat;
+	AVATAR_f_shirt_gtrtshirt2022_00: AvatarCustomizationFShirtGtrtshirt202200;
+	AVATAR_f_shirt_gtrtshirt2022_01: AvatarCustomizationFShirtGtrtshirt202201;
+	AVATAR_f_shirt_guccitshirts: AvatarCustomizationFShirtGuccitshirts;
+	AVATAR_f_shirt_guzma: AvatarCustomizationFShirtGuzma;
+	AVATAR_f_shirt_gymleader_0: AvatarCustomizationFShirtGymleader0;
+	AVATAR_f_shirt_gymleader_1: AvatarCustomizationFShirtGymleader1;
+	AVATAR_f_shirt_gymleader_2: AvatarCustomizationFShirtGymleader2;
+	AVATAR_f_shirt_hala: AvatarCustomizationFShirtHala;
+	AVATAR_f_shirt_happi: AvatarCustomizationFShirtHappi;
+	AVATAR_f_shirt_happi_1: AvatarCustomizationFShirtHappi1;
+	AVATAR_f_shirt_happi_2: AvatarCustomizationFShirtHappi2;
+	AVATAR_f_shirt_hgss_0: AvatarCustomizationFShirtHgss0;
+	AVATAR_f_shirt_holiday2022santacostumes: AvatarCustomizationFShirtHoliday2022santacostumes;
+	AVATAR_f_shirt_holifestival2021black: AvatarCustomizationFShirtHolifestival2021black;
+	AVATAR_f_shirt_holifestival2021white: AvatarCustomizationFShirtHolifestival2021white;
+	AVATAR_f_shirt_hoopaunboundtshirt: AvatarCustomizationFShirtHoopaunboundtshirt;
+	AVATAR_f_shirt_ingo: AvatarCustomizationFShirtIngo;
+	AVATAR_f_shirt_ingress_0: AvatarCustomizationFShirtIngress0;
+	AVATAR_f_shirt_ingress_e_0: AvatarCustomizationFShirtIngressE0;
+	AVATAR_f_shirt_ingress_r_0: AvatarCustomizationFShirtIngressR0;
+	AVATAR_f_shirt_jessie: AvatarCustomizationFShirtJessie;
+	AVATAR_f_shirt_jirachi: AvatarCustomizationFShirtJirachi;
+	AVATAR_f_shirt_keldeotshirt: AvatarCustomizationFShirtKeldeotshirt;
+	AVATAR_f_shirt_korrina: AvatarCustomizationFShirtKorrina;
+	AVATAR_f_shirt_ladiamondoutfit: AvatarCustomizationFShirtLadiamondoutfit;
+	AVATAR_f_shirt_lana: AvatarCustomizationFShirtLana;
+	AVATAR_f_shirt_lapearloutfit: AvatarCustomizationFShirtLapearloutfit;
+	AVATAR_f_shirt_lasecuritycorps: AvatarCustomizationFShirtLasecuritycorps;
+	AVATAR_f_shirt_latias_latios_0: AvatarCustomizationFShirtLatiasLatios0;
+	AVATAR_f_shirt_legendofarceus: AvatarCustomizationFShirtLegendofarceus;
+	AVATAR_f_shirt_luvdiscpack: AvatarCustomizationFShirtLuvdiscpack;
+	AVATAR_f_shirt_lvl50: AvatarCustomizationFShirtLvl50;
+	AVATAR_f_shirt_lvl50_1: AvatarCustomizationFShirtLvl501;
+	AVATAR_f_shirt_lysandre: AvatarCustomizationFShirtLysandre;
+	AVATAR_f_shirt_marshadowtshirt: AvatarCustomizationFShirtMarshadowtshirt;
+	AVATAR_f_shirt_megalopunnyitems: AvatarCustomizationFShirtMegalopunnyitems;
+	AVATAR_f_shirt_megarayquaza: AvatarCustomizationFShirtMegarayquaza;
+	AVATAR_f_shirt_melmetaljacket: AvatarCustomizationFShirtMelmetaljacket;
+	AVATAR_f_shirt_melmetalvest: AvatarCustomizationFShirtMelmetalvest;
+	AVATAR_f_shirt_meloettatshirt: AvatarCustomizationFShirtMeloettatshirt;
+	AVATAR_f_shirt_meltan: AvatarCustomizationFShirtMeltan;
+	AVATAR_f_shirt_mew_0: AvatarCustomizationFShirtMew0;
+	AVATAR_f_shirt_mewtwo: AvatarCustomizationFShirtMewtwo;
+	AVATAR_f_shirt_misty: AvatarCustomizationFShirtMisty;
+	AVATAR_f_shirt_movie2020jessiejames: AvatarCustomizationFShirtMovie2020jessiejames;
+	AVATAR_f_shirt_munnapack: AvatarCustomizationFShirtMunnapack;
+	AVATAR_f_shirt_nike2021: AvatarCustomizationFShirtNike2021;
+	AVATAR_f_shirt_ocshirt_045: AvatarCustomizationFShirtOcshirt045;
+	AVATAR_f_shirt_ocshirt_108: AvatarCustomizationFShirtOcshirt108;
+	AVATAR_f_shirt_ocshirt_129: AvatarCustomizationFShirtOcshirt129;
+	AVATAR_f_shirt_ocshirt_143: AvatarCustomizationFShirtOcshirt143;
+	AVATAR_f_shirt_oras: AvatarCustomizationFShirtOras;
+	AVATAR_f_shirt_pajamas2022_0: AvatarCustomizationFShirtPajamas20220;
+	AVATAR_f_shirt_pajamas2022_1: AvatarCustomizationFShirtPajamas20221;
+	AVATAR_f_shirt_palmer: AvatarCustomizationFShirtPalmer;
+	AVATAR_f_shirt_partneritemsjan2024hoodie: AvatarCustomizationFShirtPartneritemsjan2024hoodie;
+	AVATAR_f_shirt_partneritemsjan2024tshirt: AvatarCustomizationFShirtPartneritemsjan2024tshirt;
+	AVATAR_f_shirt_pikachufan_0: AvatarCustomizationFShirtPikachufan0;
+	AVATAR_f_shirt_pikachulibre: AvatarCustomizationFShirtPikachulibre;
+	AVATAR_f_shirt_pikachuonesie: AvatarCustomizationFShirtPikachuonesie;
+	AVATAR_f_shirt_pinpukuhoodie: AvatarCustomizationFShirtPinpukuhoodie;
+	AVATAR_f_shirt_pipluponesie: AvatarCustomizationFShirtPipluponesie;
+	AVATAR_f_shirt_pkmnhoodie001: AvatarCustomizationFShirtPkmnhoodie001;
+	AVATAR_f_shirt_pkmnhoodie004: AvatarCustomizationFShirtPkmnhoodie004;
+	AVATAR_f_shirt_pkmnhoodie007: AvatarCustomizationFShirtPkmnhoodie007;
+	AVATAR_f_shirt_pkmnshirts2021_00: AvatarCustomizationFShirtPkmnshirts202100;
+	AVATAR_f_shirt_pkmnshirts2021_01: AvatarCustomizationFShirtPkmnshirts202101;
+	AVATAR_f_shirt_pkmnshirts2021_02: AvatarCustomizationFShirtPkmnshirts202102;
+	AVATAR_f_shirt_pkmnshirts_165: AvatarCustomizationFShirtPkmnshirts165;
+	AVATAR_f_shirt_pkmnshirts_188: AvatarCustomizationFShirtPkmnshirts188;
+	AVATAR_f_shirt_pkmnshirts_201: AvatarCustomizationFShirtPkmnshirts201;
+	AVATAR_f_shirt_pkmnshirts_238: AvatarCustomizationFShirtPkmnshirts238;
+	AVATAR_f_shirt_poloshirt: AvatarCustomizationFShirtPoloshirt;
+	AVATAR_f_shirt_poloshirt_1: AvatarCustomizationFShirtPoloshirt1;
+	AVATAR_f_shirt_poloshirt_2: AvatarCustomizationFShirtPoloshirt2;
+	AVATAR_f_shirt_profwillowoutfit: AvatarCustomizationFShirtProfwillowoutfit;
+	AVATAR_f_shirt_projectguitar: AvatarCustomizationFShirtProjectguitar;
+	AVATAR_f_shirt_pumpkabooitems: AvatarCustomizationFShirtPumpkabooitems;
+	AVATAR_f_shirt_regiicejersies: AvatarCustomizationFShirtRegiicejersies;
+	AVATAR_f_shirt_regirockjersies: AvatarCustomizationFShirtRegirockjersies;
+	AVATAR_f_shirt_registeeljersies: AvatarCustomizationFShirtRegisteeljersies;
+	AVATAR_f_shirt_reuniclusitems: AvatarCustomizationFShirtReuniclusitems;
+	AVATAR_f_shirt_ruinmaniac: AvatarCustomizationFShirtRuinmaniac;
+	AVATAR_f_shirt_safarizone2020: AvatarCustomizationFShirtSafarizone2020;
+	AVATAR_f_shirt_samsungsummer2020: AvatarCustomizationFShirtSamsungsummer2020;
+	AVATAR_f_shirt_shayminlandtshirt: AvatarCustomizationFShirtShayminlandtshirt;
+	AVATAR_f_shirt_shayminskytshirt: AvatarCustomizationFShirtShayminskytshirt;
+	AVATAR_f_shirt_shinymewtshirts: AvatarCustomizationFShirtShinymewtshirts;
+	AVATAR_f_shirt_slowpokeshirts: AvatarCustomizationFShirtSlowpokeshirts;
+	AVATAR_f_shirt_slowpoketailshirts: AvatarCustomizationFShirtSlowpoketailshirts;
+	AVATAR_f_shirt_snorlaxonesie: AvatarCustomizationFShirtSnorlaxonesie;
+	AVATAR_f_shirt_spiritomb_0: AvatarCustomizationFShirtSpiritomb0;
+	AVATAR_f_shirt_spring2021gulpin: AvatarCustomizationFShirtSpring2021gulpin;
+	AVATAR_f_shirt_spring2021plusle: AvatarCustomizationFShirtSpring2021plusle;
+	AVATAR_f_shirt_ss: AvatarCustomizationFShirtSs;
+	AVATAR_f_shirt_steven: AvatarCustomizationFShirtSteven;
+	AVATAR_f_shirt_stevenfirst: AvatarCustomizationFShirtStevenfirst;
+	AVATAR_f_shirt_sukajanblastoise: AvatarCustomizationFShirtSukajanblastoise;
+	AVATAR_f_shirt_sukajancharizard: AvatarCustomizationFShirtSukajancharizard;
+	AVATAR_f_shirt_sukajanhouou: AvatarCustomizationFShirtSukajanhouou;
+	AVATAR_f_shirt_sukajanlugia: AvatarCustomizationFShirtSukajanlugia;
+	AVATAR_f_shirt_sukajanvenusaur: AvatarCustomizationFShirtSukajanvenusaur;
+	AVATAR_f_shirt_summer2023: AvatarCustomizationFShirtSummer2023;
+	AVATAR_f_shirt_sustainability2021: AvatarCustomizationFShirtSustainability2021;
+	AVATAR_f_shirt_svcostumescarletschool: AvatarCustomizationFShirtSvcostumescarletschool;
+	AVATAR_f_shirt_svcostumevioletschool: AvatarCustomizationFShirtSvcostumevioletschool;
+	AVATAR_f_shirt_svdlc1: AvatarCustomizationFShirtSvdlc1;
+	AVATAR_f_shirt_svdlc2fall: AvatarCustomizationFShirtSvdlc2fall;
+	AVATAR_f_shirt_svdlc2spring: AvatarCustomizationFShirtSvdlc2spring;
+	AVATAR_f_shirt_sweater_30_0: AvatarCustomizationFShirtSweater300;
+	AVATAR_f_shirt_sweater_30_1: AvatarCustomizationFShirtSweater301;
+	AVATAR_f_shirt_sweater_30_2: AvatarCustomizationFShirtSweater302;
+	AVATAR_f_shirt_sweater_instinct: AvatarCustomizationFShirtSweaterInstinct;
+	AVATAR_f_shirt_sweater_mystic: AvatarCustomizationFShirtSweaterMystic;
+	AVATAR_f_shirt_sweater_valor: AvatarCustomizationFShirtSweaterValor;
+	AVATAR_f_shirt_swshdlc2costume: AvatarCustomizationFShirtSwshdlc2costume;
+	AVATAR_f_shirt_swshdlccostume: AvatarCustomizationFShirtSwshdlccostume;
+	AVATAR_f_shirt_swshuniformchampion: AvatarCustomizationFShirtSwshuniformchampion;
+	AVATAR_f_shirt_swshuniformdark: AvatarCustomizationFShirtSwshuniformdark;
+	AVATAR_f_shirt_swshuniformdefault: AvatarCustomizationFShirtSwshuniformdefault;
+	AVATAR_f_shirt_swshuniformdragon: AvatarCustomizationFShirtSwshuniformdragon;
+	AVATAR_f_shirt_sylveonitems: AvatarCustomizationFShirtSylveonitems;
+	AVATAR_f_shirt_tanktop_0: AvatarCustomizationFShirtTanktop0;
+	AVATAR_f_shirt_tanktop_1: AvatarCustomizationFShirtTanktop1;
+	AVATAR_f_shirt_tanktop_2: AvatarCustomizationFShirtTanktop2;
+	AVATAR_f_shirt_tanktop_charizard_0: AvatarCustomizationFShirtTanktopCharizard0;
+	AVATAR_f_shirt_tanktop_charizard_1: AvatarCustomizationFShirtTanktopCharizard1;
+	AVATAR_f_shirt_tanktop_charizard_2: AvatarCustomizationFShirtTanktopCharizard2;
+	AVATAR_f_shirt_tanktop_pikachu_0: AvatarCustomizationFShirtTanktopPikachu0;
+	AVATAR_f_shirt_tanktop_pikachu_1: AvatarCustomizationFShirtTanktopPikachu1;
+	AVATAR_f_shirt_tanktop_pikachu_2: AvatarCustomizationFShirtTanktopPikachu2;
+	AVATAR_f_shirt_tcgcollabtshirtandcap: AvatarCustomizationFShirtTcgcollabtshirtandcap;
+	AVATAR_f_shirt_teamaqua: AvatarCustomizationFShirtTeamaqua;
+	AVATAR_f_shirt_teamblanche: AvatarCustomizationFShirtTeamblanche;
+	AVATAR_f_shirt_teamcandela: AvatarCustomizationFShirtTeamcandela;
+	AVATAR_f_shirt_teammagma: AvatarCustomizationFShirtTeammagma;
+	AVATAR_f_shirt_teamrocket_0: AvatarCustomizationFShirtTeamrocket0;
+	AVATAR_f_shirt_teamrocket_1: AvatarCustomizationFShirtTeamrocket1;
+	AVATAR_f_shirt_teamskull: AvatarCustomizationFShirtTeamskull;
+	AVATAR_f_shirt_teamspark: AvatarCustomizationFShirtTeamspark;
+	AVATAR_f_shirt_togepihoodie: AvatarCustomizationFShirtTogepihoodie;
+	AVATAR_f_shirt_tracksuitsgroudon: AvatarCustomizationFShirtTracksuitsgroudon;
+	AVATAR_f_shirt_tracksuitskyogre: AvatarCustomizationFShirtTracksuitskyogre;
+	AVATAR_f_shirt_tshirt_cycling_0: AvatarCustomizationFShirtTshirtCycling0;
+	AVATAR_f_shirt_tshirt_cycling_1: AvatarCustomizationFShirtTshirtCycling1;
+	AVATAR_f_shirt_tshirt_cycling_2: AvatarCustomizationFShirtTshirtCycling2;
+	AVATAR_f_shirt_tshirt_cycling_3: AvatarCustomizationFShirtTshirtCycling3;
+	AVATAR_f_shirt_tshirt_fest_chicago_2017: AvatarCustomizationFShirtTshirtFestChicago2017;
+	AVATAR_f_shirt_tshirt_fest_chicago_2018: AvatarCustomizationFShirtTshirtFestChicago2018;
+	AVATAR_f_shirt_tshirt_global_goals_2017: AvatarCustomizationFShirtTshirtGlobalGoals2017;
+	AVATAR_f_shirt_tshirt_pikachu_0: AvatarCustomizationFShirtTshirtPikachu0;
+	AVATAR_f_shirt_tshirt_pikachu_1: AvatarCustomizationFShirtTshirtPikachu1;
+	AVATAR_f_shirt_tshirt_pikachu_2: AvatarCustomizationFShirtTshirtPikachu2;
+	AVATAR_f_shirt_tshirt_pikachu_3: AvatarCustomizationFShirtTshirtPikachu3;
+	AVATAR_f_shirt_tshirt_pikachu_4: AvatarCustomizationFShirtTshirtPikachu4;
+	AVATAR_f_shirt_tshirt_pikachu_5: AvatarCustomizationFShirtTshirtPikachu5;
+	AVATAR_f_shirt_tshirt_pikachu_6: AvatarCustomizationFShirtTshirtPikachu6;
+	AVATAR_f_shirt_turtwigonesie: AvatarCustomizationFShirtTurtwigonesie;
+	AVATAR_f_shirt_ultraReconSquad: AvatarCustomizationFShirtUltrareconsquad;
+	AVATAR_f_shirt_ultra_0: AvatarCustomizationFShirtUltra0;
+	AVATAR_f_shirt_uniqlotshirts_0: AvatarCustomizationFShirtUniqlotshirts0;
+	AVATAR_f_shirt_uniqlotshirts_1: AvatarCustomizationFShirtUniqlotshirts1;
+	AVATAR_f_shirt_uniqlotshirts_2: AvatarCustomizationFShirtUniqlotshirts2;
+	AVATAR_f_shirt_unwto: AvatarCustomizationFShirtUnwto;
+	AVATAR_f_shirt_valentine2023: AvatarCustomizationFShirtValentine2023;
+	AVATAR_f_shirt_verizon2020: AvatarCustomizationFShirtVerizon2020;
+	AVATAR_f_shirt_veterantrainerxy: AvatarCustomizationFShirtVeterantrainerxy;
+	AVATAR_f_shirt_victinitshirts: AvatarCustomizationFShirtVictinitshirts;
+	AVATAR_f_shirt_wcs2022: AvatarCustomizationFShirtWcs2022;
+	AVATAR_f_shirt_wcs2022tshirtbulu: AvatarCustomizationFShirtWcs2022tshirtbulu;
+	AVATAR_f_shirt_wcs2022tshirtred: AvatarCustomizationFShirtWcs2022tshirtred;
+	AVATAR_f_shirt_wcs2022winnersitems: AvatarCustomizationFShirtWcs2022winnersitems;
+	AVATAR_f_shirt_wcs2023: AvatarCustomizationFShirtWcs2023;
+	AVATAR_f_shirt_wcs2023promotshirt: AvatarCustomizationFShirtWcs2023promotshirt;
+	AVATAR_f_shirt_wcs2023promotshirt_01: AvatarCustomizationFShirtWcs2023promotshirt01;
+	AVATAR_f_shirt_wcs2023sukajan: AvatarCustomizationFShirtWcs2023sukajan;
+	AVATAR_f_shirt_wcs2023winnersitems: AvatarCustomizationFShirtWcs2023winnersitems;
+	AVATAR_f_shirt_wcs2024: AvatarCustomizationFShirtWcs2024;
+	"AVATAR_f_shirt_wcs2024championshipshirt-blue": AvatarCustomizationFShirtWcs2024championshipshirtBlue;
+	"AVATAR_f_shirt_wcs2024championshipshirt-white": AvatarCustomizationFShirtWcs2024championshipshirtWhite;
+	AVATAR_f_shirt_wcsyokohama: AvatarCustomizationFShirtWcsyokohama;
+	AVATAR_f_shirt_whitecoat: AvatarCustomizationFShirtWhitecoat;
+	AVATAR_f_shirt_wintersweater2023: AvatarCustomizationFShirtWintersweater2023;
+	AVATAR_f_shirt_zoruaonesie: AvatarCustomizationFShirtZoruaonesie;
+	AVATAR_f_shoes_6thanniversary: AvatarCustomizationFShoes6thanniversary;
+	AVATAR_f_shoes_acetrainerbw: AvatarCustomizationFShoesAcetrainerbw;
+	AVATAR_f_shoes_acetrainersm: AvatarCustomizationFShoesAcetrainersm;
+	AVATAR_f_shoes_animegou: AvatarCustomizationFShoesAnimegou;
+	AVATAR_f_shoes_backpacker: AvatarCustomizationFShoesBackpacker;
+	AVATAR_f_shoes_battlegirl_0: AvatarCustomizationFShoesBattlegirl0;
+	AVATAR_f_shoes_bwn: AvatarCustomizationFShoesBwn;
+	AVATAR_f_shoes_carbink: AvatarCustomizationFShoesCarbink;
+	AVATAR_f_shoes_clay: AvatarCustomizationFShoesClay;
+	AVATAR_f_shoes_coolboots: AvatarCustomizationFShoesCoolboots;
+	AVATAR_f_shoes_dedenneitems: AvatarCustomizationFShoesDedenneitems;
+	AVATAR_f_shoes_default_0: AvatarCustomizationFShoesDefault0;
+	AVATAR_f_shoes_default_1: AvatarCustomizationFShoesDefault1;
+	AVATAR_f_shoes_default_2: AvatarCustomizationFShoesDefault2;
+	AVATAR_f_shoes_default_3: AvatarCustomizationFShoesDefault3;
+	AVATAR_f_shoes_default_4: AvatarCustomizationFShoesDefault4;
+	AVATAR_f_shoes_default_5: AvatarCustomizationFShoesDefault5;
+	AVATAR_f_shoes_default_6: AvatarCustomizationFShoesDefault6;
+	AVATAR_f_shoes_delibird: AvatarCustomizationFShoesDelibird;
+	AVATAR_f_shoes_dp: AvatarCustomizationFShoesDp;
+	AVATAR_f_shoes_elesa: AvatarCustomizationFShoesElesa;
+	AVATAR_f_shoes_empty: AvatarCustomizationFShoesEmpty;
+	AVATAR_f_shoes_fashionWeek2022: AvatarCustomizationFShoesFashionweek2022;
+	AVATAR_f_shoes_frlg_0: AvatarCustomizationFShoesFrlg0;
+	AVATAR_f_shoes_fw2022: AvatarCustomizationFShoesFw2022;
+	AVATAR_f_shoes_geeta: AvatarCustomizationFShoesGeeta;
+	AVATAR_f_shoes_giovanni: AvatarCustomizationFShoesGiovanni;
+	AVATAR_f_shoes_gladion: AvatarCustomizationFShoesGladion;
+	AVATAR_f_shoes_gothitelleitems: AvatarCustomizationFShoesGothitelleitems;
+	AVATAR_f_shoes_green: AvatarCustomizationFShoesGreen;
+	AVATAR_f_shoes_gymleader_0: AvatarCustomizationFShoesGymleader0;
+	AVATAR_f_shoes_gymleader_1: AvatarCustomizationFShoesGymleader1;
+	AVATAR_f_shoes_gymleader_2: AvatarCustomizationFShoesGymleader2;
+	AVATAR_f_shoes_hala: AvatarCustomizationFShoesHala;
+	AVATAR_f_shoes_hgss_0: AvatarCustomizationFShoesHgss0;
+	AVATAR_f_shoes_ingo: AvatarCustomizationFShoesIngo;
+	AVATAR_f_shoes_korrina: AvatarCustomizationFShoesKorrina;
+	AVATAR_f_shoes_ladiamondoutfit: AvatarCustomizationFShoesLadiamondoutfit;
+	AVATAR_f_shoes_lana: AvatarCustomizationFShoesLana;
+	AVATAR_f_shoes_lapearloutfit: AvatarCustomizationFShoesLapearloutfit;
+	AVATAR_f_shoes_legendofarceus: AvatarCustomizationFShoesLegendofarceus;
+	AVATAR_f_shoes_loosepants: AvatarCustomizationFShoesLoosepants;
+	AVATAR_f_shoes_loosepants_1: AvatarCustomizationFShoesLoosepants1;
+	AVATAR_f_shoes_loosepants_2: AvatarCustomizationFShoesLoosepants2;
+	AVATAR_f_shoes_loosepants_3: AvatarCustomizationFShoesLoosepants3;
+	AVATAR_f_shoes_luvdiscpack: AvatarCustomizationFShoesLuvdiscpack;
+	AVATAR_f_shoes_lysandre: AvatarCustomizationFShoesLysandre;
+	AVATAR_f_shoes_megalopunnyitems: AvatarCustomizationFShoesMegalopunnyitems;
+	AVATAR_f_shoes_melmetalshoes: AvatarCustomizationFShoesMelmetalshoes;
+	AVATAR_f_shoes_mewtwo: AvatarCustomizationFShoesMewtwo;
+	AVATAR_f_shoes_misty: AvatarCustomizationFShoesMisty;
+	AVATAR_f_shoes_newyear2022: AvatarCustomizationFShoesNewyear2022;
+	AVATAR_f_shoes_nike2021: AvatarCustomizationFShoesNike2021;
+	AVATAR_f_shoes_oras: AvatarCustomizationFShoesOras;
+	AVATAR_f_shoes_pajamas2022_0: AvatarCustomizationFShoesPajamas20220;
+	AVATAR_f_shoes_pajamas2022_1: AvatarCustomizationFShoesPajamas20221;
+	AVATAR_f_shoes_palmer: AvatarCustomizationFShoesPalmer;
+	AVATAR_f_shoes_pikachufan_0: AvatarCustomizationFShoesPikachufan0;
+	AVATAR_f_shoes_pikachulibre: AvatarCustomizationFShoesPikachulibre;
+	AVATAR_f_shoes_profwillowoutfit: AvatarCustomizationFShoesProfwillowoutfit;
+	AVATAR_f_shoes_regiicejersies: AvatarCustomizationFShoesRegiicejersies;
+	AVATAR_f_shoes_regirockjersies: AvatarCustomizationFShoesRegirockjersies;
+	AVATAR_f_shoes_registeeljersies: AvatarCustomizationFShoesRegisteeljersies;
+	AVATAR_f_shoes_reuniclusitems: AvatarCustomizationFShoesReuniclusitems;
+	AVATAR_f_shoes_ruinmaniac: AvatarCustomizationFShoesRuinmaniac;
+	AVATAR_f_shoes_sandals: AvatarCustomizationFShoesSandals;
+	AVATAR_f_shoes_sandals_1: AvatarCustomizationFShoesSandals1;
+	AVATAR_f_shoes_sandals_2: AvatarCustomizationFShoesSandals2;
+	AVATAR_f_shoes_solgaleoitems: AvatarCustomizationFShoesSolgaleoitems;
+	AVATAR_f_shoes_ss: AvatarCustomizationFShoesSs;
+	AVATAR_f_shoes_steven: AvatarCustomizationFShoesSteven;
+	AVATAR_f_shoes_stevenfirst: AvatarCustomizationFShoesStevenfirst;
+	AVATAR_f_shoes_svcostumescarletschool: AvatarCustomizationFShoesSvcostumescarletschool;
+	AVATAR_f_shoes_svcostumevioletschool: AvatarCustomizationFShoesSvcostumevioletschool;
+	AVATAR_f_shoes_svdlc1: AvatarCustomizationFShoesSvdlc1;
+	AVATAR_f_shoes_svdlc2spring: AvatarCustomizationFShoesSvdlc2spring;
+	AVATAR_f_shoes_swshdlc2costume: AvatarCustomizationFShoesSwshdlc2costume;
+	AVATAR_f_shoes_swshdlccostume: AvatarCustomizationFShoesSwshdlccostume;
+	AVATAR_f_shoes_swshuniformdark: AvatarCustomizationFShoesSwshuniformdark;
+	AVATAR_f_shoes_swshuniformdefault: AvatarCustomizationFShoesSwshuniformdefault;
+	AVATAR_f_shoes_swshuniformdragon: AvatarCustomizationFShoesSwshuniformdragon;
+	AVATAR_f_shoes_sylveonitems: AvatarCustomizationFShoesSylveonitems;
+	AVATAR_f_shoes_teamaqua: AvatarCustomizationFShoesTeamaqua;
+	AVATAR_f_shoes_teamblanche: AvatarCustomizationFShoesTeamblanche;
+	AVATAR_f_shoes_teamcandela: AvatarCustomizationFShoesTeamcandela;
+	AVATAR_f_shoes_teammagma: AvatarCustomizationFShoesTeammagma;
+	AVATAR_f_shoes_teamrocket_0: AvatarCustomizationFShoesTeamrocket0;
+	AVATAR_f_shoes_teamrocket_1: AvatarCustomizationFShoesTeamrocket1;
+	AVATAR_f_shoes_teamskull: AvatarCustomizationFShoesTeamskull;
+	AVATAR_f_shoes_teamspark: AvatarCustomizationFShoesTeamspark;
+	AVATAR_f_shoes_ultraReconSquad: AvatarCustomizationFShoesUltrareconsquad;
+	AVATAR_f_shoes_ultra_0: AvatarCustomizationFShoesUltra0;
+	AVATAR_f_shoes_veterantrainerxy: AvatarCustomizationFShoesVeterantrainerxy;
+	AVATAR_f_shoes_wcs2022winnersitems: AvatarCustomizationFShoesWcs2022winnersitems;
+	AVATAR_f_shoes_wcs2023winnersitems: AvatarCustomizationFShoesWcs2023winnersitems;
+	AVATAR_f_shoes_winterboots2023: AvatarCustomizationFShoesWinterboots2023;
+	AVATAR_f_shoes_winterboots_0: AvatarCustomizationFShoesWinterboots0;
+	AVATAR_f_shoes_winterboots_1: AvatarCustomizationFShoesWinterboots1;
+	AVATAR_f_shoes_winterboots_2: AvatarCustomizationFShoesWinterboots2;
+	AVATAR_f_shoes_winterboots_3: AvatarCustomizationFShoesWinterboots3;
+	AVATAR_f_skin_0: AvatarCustomizationFSkin0;
+	AVATAR_f_skin_1: AvatarCustomizationFSkin1;
+	AVATAR_f_skin_10: AvatarCustomizationFSkin10;
+	AVATAR_f_skin_11: AvatarCustomizationFSkin11;
+	AVATAR_f_skin_2: AvatarCustomizationFSkin2;
+	AVATAR_f_skin_3: AvatarCustomizationFSkin3;
+	AVATAR_f_skin_4: AvatarCustomizationFSkin4;
+	AVATAR_f_skin_5: AvatarCustomizationFSkin5;
+	AVATAR_f_skin_6: AvatarCustomizationFSkin6;
+	AVATAR_f_skin_7: AvatarCustomizationFSkin7;
+	AVATAR_f_skin_8: AvatarCustomizationFSkin8;
+	AVATAR_f_skin_9: AvatarCustomizationFSkin9;
+	AVATAR_f_socks_default_0: AvatarCustomizationFSocksDefault0;
+	AVATAR_f_socks_default_1: AvatarCustomizationFSocksDefault1;
+	AVATAR_f_socks_default_2: AvatarCustomizationFSocksDefault2;
+	AVATAR_f_socks_empty: AvatarCustomizationFSocksEmpty;
+	AVATAR_f_socks_fw2022: AvatarCustomizationFSocksFw2022;
+	AVATAR_f_socks_hgss_0: AvatarCustomizationFSocksHgss0;
+	AVATAR_f_socks_sneakersocks_0: AvatarCustomizationFSocksSneakersocks0;
+	AVATAR_f_socks_sneakersocks_1: AvatarCustomizationFSocksSneakersocks1;
+	AVATAR_f_socks_sollunaitems: AvatarCustomizationFSocksSollunaitems;
+	AVATAR_f_socks_swshuniformdefault: AvatarCustomizationFSocksSwshuniformdefault;
+	AVATAR_f_socks_swshuniformdragon: AvatarCustomizationFSocksSwshuniformdragon;
+	AVATAR_f_socks_teamaqua: AvatarCustomizationFSocksTeamaqua;
+	AVATAR_f_socks_thighhighs_0: AvatarCustomizationFSocksThighhighs0;
+	AVATAR_m_backpack_alolaitemslittenbp: AvatarCustomizationMBackpackAlolaitemslittenbp;
+	AVATAR_m_backpack_alolaitemspoppliobp: AvatarCustomizationMBackpackAlolaitemspoppliobp;
+	AVATAR_m_backpack_alolaitemsrowletbp: AvatarCustomizationMBackpackAlolaitemsrowletbp;
+	AVATAR_m_backpack_animegou: AvatarCustomizationMBackpackAnimegou;
+	AVATAR_m_backpack_backpacker: AvatarCustomizationMBackpackBackpacker;
+	AVATAR_m_backpack_combeebackpack: AvatarCustomizationMBackpackCombeebackpack;
+	AVATAR_m_backpack_combeebackpack_01: AvatarCustomizationMBackpackCombeebackpack01;
+	AVATAR_m_backpack_dedenneitems: AvatarCustomizationMBackpackDedenneitems;
+	AVATAR_m_backpack_default_0: AvatarCustomizationMBackpackDefault0;
+	AVATAR_m_backpack_default_1: AvatarCustomizationMBackpackDefault1;
+	AVATAR_m_backpack_default_2: AvatarCustomizationMBackpackDefault2;
+	AVATAR_m_backpack_default_3: AvatarCustomizationMBackpackDefault3;
+	AVATAR_m_backpack_default_4: AvatarCustomizationMBackpackDefault4;
+	AVATAR_m_backpack_default_5: AvatarCustomizationMBackpackDefault5;
+	AVATAR_m_backpack_dp: AvatarCustomizationMBackpackDp;
+	"AVATAR_m_backpack_egg-incubator": AvatarCustomizationMBackpackEggIncubator;
+	AVATAR_m_backpack_eggbackpack_0: AvatarCustomizationMBackpackEggbackpack0;
+	AVATAR_m_backpack_eggbackpack_1: AvatarCustomizationMBackpackEggbackpack1;
+	AVATAR_m_backpack_eggbackpack_2: AvatarCustomizationMBackpackEggbackpack2;
+	AVATAR_m_backpack_empty: AvatarCustomizationMBackpackEmpty;
+	AVATAR_m_backpack_frlg_0: AvatarCustomizationMBackpackFrlg0;
+	AVATAR_m_backpack_genesecteventitem: AvatarCustomizationMBackpackGenesecteventitem;
+	AVATAR_m_backpack_gengar_0: AvatarCustomizationMBackpackGengar0;
+	AVATAR_m_backpack_giratinaitems: AvatarCustomizationMBackpackGiratinaitems;
+	AVATAR_m_backpack_guccibackpack: AvatarCustomizationMBackpackGuccibackpack;
+	AVATAR_m_backpack_guitarcasebackpack: AvatarCustomizationMBackpackGuitarcasebackpack;
+	AVATAR_m_backpack_hgss_0: AvatarCustomizationMBackpackHgss0;
+	AVATAR_m_backpack_hououbackpack: AvatarCustomizationMBackpackHououbackpack;
+	AVATAR_m_backpack_kakureonpouch: AvatarCustomizationMBackpackKakureonpouch;
+	AVATAR_m_backpack_komala: AvatarCustomizationMBackpackKomala;
+	AVATAR_m_backpack_longchampbp: AvatarCustomizationMBackpackLongchampbp;
+	AVATAR_m_backpack_lunalaitems: AvatarCustomizationMBackpackLunalaitems;
+	AVATAR_m_backpack_lunarNewYr: AvatarCustomizationMBackpackLunarnewyr;
+	AVATAR_m_backpack_mimikyubp: AvatarCustomizationMBackpackMimikyubp;
+	AVATAR_m_backpack_movie2020: AvatarCustomizationMBackpackMovie2020;
+	AVATAR_m_backpack_naganadelawings: AvatarCustomizationMBackpackNaganadelawings;
+	AVATAR_m_backpack_nike2021: AvatarCustomizationMBackpackNike2021;
+	AVATAR_m_backpack_pamobackpack: AvatarCustomizationMBackpackPamobackpack;
+	AVATAR_m_backpack_pkmnhoodie001: AvatarCustomizationMBackpackPkmnhoodie001;
+	AVATAR_m_backpack_pkmnhoodie004: AvatarCustomizationMBackpackPkmnhoodie004;
+	AVATAR_m_backpack_pkmnhoodie007: AvatarCustomizationMBackpackPkmnhoodie007;
+	AVATAR_m_backpack_ruinmaniac: AvatarCustomizationMBackpackRuinmaniac;
+	AVATAR_m_backpack_snapcamera: AvatarCustomizationMBackpackSnapcamera;
+	AVATAR_m_backpack_ss: AvatarCustomizationMBackpackSs;
+	AVATAR_m_backpack_svcostumescarletschool: AvatarCustomizationMBackpackSvcostumescarletschool;
+	AVATAR_m_backpack_svcostumevioletschool: AvatarCustomizationMBackpackSvcostumevioletschool;
+	AVATAR_m_backpack_svdlc1: AvatarCustomizationMBackpackSvdlc1;
+	AVATAR_m_backpack_svdlc2spring: AvatarCustomizationMBackpackSvdlc2spring;
+	AVATAR_m_backpack_swshdlc2costume: AvatarCustomizationMBackpackSwshdlc2costume;
+	AVATAR_m_backpack_swshdlccostume: AvatarCustomizationMBackpackSwshdlccostume;
+	AVATAR_m_backpack_togepibackpack: AvatarCustomizationMBackpackTogepibackpack;
+	AVATAR_m_backpack_ultra_0: AvatarCustomizationMBackpackUltra0;
+	AVATAR_m_backpack_verizon2021: AvatarCustomizationMBackpackVerizon2021;
+	AVATAR_m_backpack_zubatbp: AvatarCustomizationMBackpackZubatbp;
+	AVATAR_m_eyes_0: AvatarCustomizationMEyes0;
+	AVATAR_m_eyes_1: AvatarCustomizationMEyes1;
+	AVATAR_m_eyes_2: AvatarCustomizationMEyes2;
+	AVATAR_m_eyes_3: AvatarCustomizationMEyes3;
+	AVATAR_m_eyes_4: AvatarCustomizationMEyes4;
+	AVATAR_m_face_3dmask_00: AvatarCustomizationMFace3dmask00;
+	AVATAR_m_face_3dmask_01: AvatarCustomizationMFace3dmask01;
+	AVATAR_m_face_3dmask_02: AvatarCustomizationMFace3dmask02;
+	AVATAR_m_face_banettemask: AvatarCustomizationMFaceBanettemask;
+	AVATAR_m_face_dayofthedead: AvatarCustomizationMFaceDayofthedead;
+	AVATAR_m_face_defaultmask: AvatarCustomizationMFaceDefaultmask;
+	AVATAR_m_face_empty: AvatarCustomizationMFaceEmpty;
+	AVATAR_m_face_facestickerghostpika: AvatarCustomizationMFaceFacestickerghostpika;
+	AVATAR_m_face_facestickerpikachu: AvatarCustomizationMFaceFacestickerpikachu;
+	AVATAR_m_face_facestickerpokeball: AvatarCustomizationMFaceFacestickerpokeball;
+	AVATAR_m_face_festOfColors_00: AvatarCustomizationMFaceFestofcolors00;
+	AVATAR_m_face_festOfColors_01: AvatarCustomizationMFaceFestofcolors01;
+	AVATAR_m_face_festOfColors_02: AvatarCustomizationMFaceFestofcolors02;
+	AVATAR_m_face_gracidea: AvatarCustomizationMFaceGracidea;
+	AVATAR_m_face_holiday2022santacostumes: AvatarCustomizationMFaceHoliday2022santacostumes;
+	AVATAR_m_face_pikachumask: AvatarCustomizationMFacePikachumask;
+	AVATAR_m_face_sableyemask: AvatarCustomizationMFaceSableyemask;
+	AVATAR_m_face_teamskull: AvatarCustomizationMFaceTeamskull;
+	AVATAR_m_face_toxelmask: AvatarCustomizationMFaceToxelmask;
+	AVATAR_m_face_verizon2020mask: AvatarCustomizationMFaceVerizon2020mask;
+	AVATAR_m_glasses_3d: AvatarCustomizationMGlasses3d;
+	AVATAR_m_glasses_cutieflysleepmask: AvatarCustomizationMGlassesCutieflysleepmask;
+	AVATAR_m_glasses_divingsuit: AvatarCustomizationMGlassesDivingsuit;
+	AVATAR_m_glasses_drpikachu: AvatarCustomizationMGlassesDrpikachu;
+	AVATAR_m_glasses_empty: AvatarCustomizationMGlassesEmpty;
+	AVATAR_m_glasses_frillishglasses: AvatarCustomizationMGlassesFrillishglasses;
+	AVATAR_m_glasses_fw2022: AvatarCustomizationMGlassesFw2022;
+	AVATAR_m_glasses_gimmighoulitems: AvatarCustomizationMGlassesGimmighoulitems;
+	AVATAR_m_glasses_goteamrocketarlo: AvatarCustomizationMGlassesGoteamrocketarlo;
+	AVATAR_m_glasses_grandoakglasses: AvatarCustomizationMGlassesGrandoakglasses;
+	AVATAR_m_glasses_jogger_0: AvatarCustomizationMGlassesJogger0;
+	AVATAR_m_glasses_lugiaglasses: AvatarCustomizationMGlassesLugiaglasses;
+	AVATAR_m_glasses_lv40glasses: AvatarCustomizationMGlassesLv40glasses;
+	AVATAR_m_glasses_mask_0: AvatarCustomizationMGlassesMask0;
+	AVATAR_m_glasses_mask_1: AvatarCustomizationMGlassesMask1;
+	AVATAR_m_glasses_newyear2022: AvatarCustomizationMGlassesNewyear2022;
+	AVATAR_m_glasses_newyearglasses2020: AvatarCustomizationMGlassesNewyearglasses2020;
+	AVATAR_m_glasses_newyearglasses2021: AvatarCustomizationMGlassesNewyearglasses2021;
+	AVATAR_m_glasses_obstagoonitems: AvatarCustomizationMGlassesObstagoonitems;
+	AVATAR_m_glasses_roundsunglasses: AvatarCustomizationMGlassesRoundsunglasses;
+	AVATAR_m_glasses_teardrop_0: AvatarCustomizationMGlassesTeardrop0;
+	AVATAR_m_glasses_thick_0: AvatarCustomizationMGlassesThick0;
+	AVATAR_m_glasses_thick_1: AvatarCustomizationMGlassesThick1;
+	AVATAR_m_glasses_thick_2: AvatarCustomizationMGlassesThick2;
+	AVATAR_m_glasses_thick_3: AvatarCustomizationMGlassesThick3;
+	AVATAR_m_glasses_thick_4: AvatarCustomizationMGlassesThick4;
+	AVATAR_m_gloves_acetrainersm: AvatarCustomizationMGlovesAcetrainersm;
+	AVATAR_m_gloves_bea: AvatarCustomizationMGlovesBea;
+	AVATAR_m_gloves_bwn: AvatarCustomizationMGlovesBwn;
+	AVATAR_m_gloves_default_0: AvatarCustomizationMGlovesDefault0;
+	AVATAR_m_gloves_default_1: AvatarCustomizationMGlovesDefault1;
+	AVATAR_m_gloves_default_2: AvatarCustomizationMGlovesDefault2;
+	AVATAR_m_gloves_default_3: AvatarCustomizationMGlovesDefault3;
+	AVATAR_m_gloves_delibird: AvatarCustomizationMGlovesDelibird;
+	AVATAR_m_gloves_dynamaxswsh: AvatarCustomizationMGlovesDynamaxswsh;
+	AVATAR_m_gloves_empty: AvatarCustomizationMGlovesEmpty;
+	AVATAR_m_gloves_frlg_0: AvatarCustomizationMGlovesFrlg0;
+	AVATAR_m_gloves_geeta: AvatarCustomizationMGlovesGeeta;
+	AVATAR_m_gloves_giovanni: AvatarCustomizationMGlovesGiovanni;
+	AVATAR_m_gloves_guzma: AvatarCustomizationMGlovesGuzma;
+	AVATAR_m_gloves_gymleader_0: AvatarCustomizationMGlovesGymleader0;
+	AVATAR_m_gloves_hoopabangle: AvatarCustomizationMGlovesHoopabangle;
+	AVATAR_m_gloves_jogger_0: AvatarCustomizationMGlovesJogger0;
+	AVATAR_m_gloves_korrina: AvatarCustomizationMGlovesKorrina;
+	AVATAR_m_gloves_lysandre: AvatarCustomizationMGlovesLysandre;
+	AVATAR_m_gloves_megabangle: AvatarCustomizationMGlovesMegabangle;
+	AVATAR_m_gloves_megabangleblack: AvatarCustomizationMGlovesMegabangleblack;
+	AVATAR_m_gloves_megabangleblue: AvatarCustomizationMGlovesMegabangleblue;
+	AVATAR_m_gloves_megabanglered: AvatarCustomizationMGlovesMegabanglered;
+	AVATAR_m_gloves_megabangleyellow: AvatarCustomizationMGlovesMegabangleyellow;
+	AVATAR_m_gloves_obstagoonitems: AvatarCustomizationMGlovesObstagoonitems;
+	AVATAR_m_gloves_palmer: AvatarCustomizationMGlovesPalmer;
+	AVATAR_m_gloves_profwillowoutfit: AvatarCustomizationMGlovesProfwillowoutfit;
+	AVATAR_m_gloves_stevenfirst: AvatarCustomizationMGlovesStevenfirst;
+	AVATAR_m_gloves_svdlc2spring: AvatarCustomizationMGlovesSvdlc2spring;
+	AVATAR_m_gloves_swshdlc2costume: AvatarCustomizationMGlovesSwshdlc2costume;
+	AVATAR_m_gloves_swshdlccostume: AvatarCustomizationMGlovesSwshdlccostume;
+	AVATAR_m_gloves_swshuniformchampion: AvatarCustomizationMGlovesSwshuniformchampion;
+	AVATAR_m_gloves_swshuniformdark: AvatarCustomizationMGlovesSwshuniformdark;
+	AVATAR_m_gloves_swshuniformdefault: AvatarCustomizationMGlovesSwshuniformdefault;
+	AVATAR_m_gloves_swshuniformdragon: AvatarCustomizationMGlovesSwshuniformdragon;
+	AVATAR_m_gloves_teamaqua: AvatarCustomizationMGlovesTeamaqua;
+	AVATAR_m_gloves_teammagma: AvatarCustomizationMGlovesTeammagma;
+	AVATAR_m_gloves_teamrocket_0: AvatarCustomizationMGlovesTeamrocket0;
+	AVATAR_m_gloves_teamspark: AvatarCustomizationMGlovesTeamspark;
+	AVATAR_m_gloves_wintergloves2023: AvatarCustomizationMGlovesWintergloves2023;
+	AVATAR_m_gofest_pikachuvisor: AvatarCustomizationMGofestPikachuvisor;
+	AVATAR_m_hair_default_0: AvatarCustomizationMHairDefault0;
+	AVATAR_m_hair_default_1: AvatarCustomizationMHairDefault1;
+	AVATAR_m_hair_default_10: AvatarCustomizationMHairDefault10;
+	AVATAR_m_hair_default_11: AvatarCustomizationMHairDefault11;
+	AVATAR_m_hair_default_12: AvatarCustomizationMHairDefault12;
+	AVATAR_m_hair_default_13: AvatarCustomizationMHairDefault13;
+	AVATAR_m_hair_default_14: AvatarCustomizationMHairDefault14;
+	AVATAR_m_hair_default_15: AvatarCustomizationMHairDefault15;
+	AVATAR_m_hair_default_16: AvatarCustomizationMHairDefault16;
+	AVATAR_m_hair_default_17: AvatarCustomizationMHairDefault17;
+	AVATAR_m_hair_default_18: AvatarCustomizationMHairDefault18;
+	AVATAR_m_hair_default_19: AvatarCustomizationMHairDefault19;
+	AVATAR_m_hair_default_2: AvatarCustomizationMHairDefault2;
+	AVATAR_m_hair_default_3: AvatarCustomizationMHairDefault3;
+	AVATAR_m_hair_default_4: AvatarCustomizationMHairDefault4;
+	AVATAR_m_hair_default_5: AvatarCustomizationMHairDefault5;
+	AVATAR_m_hair_default_6: AvatarCustomizationMHairDefault6;
+	AVATAR_m_hair_default_7: AvatarCustomizationMHairDefault7;
+	AVATAR_m_hair_default_8: AvatarCustomizationMHairDefault8;
+	AVATAR_m_hair_default_9: AvatarCustomizationMHairDefault9;
+	AVATAR_m_hat_6thanniversary: AvatarCustomizationMHat6thanniversary;
+	AVATAR_m_hat_acetrainersm: AvatarCustomizationMHatAcetrainersm;
+	AVATAR_m_hat_adventure_0: AvatarCustomizationMHatAdventure0;
+	AVATAR_m_hat_aseries: AvatarCustomizationMHatAseries;
+	AVATAR_m_hat_bea: AvatarCustomizationMHatBea;
+	AVATAR_m_hat_bidoofhat: AvatarCustomizationMHatBidoofhat;
+	AVATAR_m_hat_bounsweetitems: AvatarCustomizationMHatBounsweetitems;
+	AVATAR_m_hat_burmyearrings11: AvatarCustomizationMHatBurmyearrings11;
+	AVATAR_m_hat_burmyearrings12: AvatarCustomizationMHatBurmyearrings12;
+	AVATAR_m_hat_burmyearrings13: AvatarCustomizationMHatBurmyearrings13;
+	AVATAR_m_hat_bwn: AvatarCustomizationMHatBwn;
+	AVATAR_m_hat_casket_0: AvatarCustomizationMHatCasket0;
+	AVATAR_m_hat_cetoddlehat: AvatarCustomizationMHatCetoddlehat;
+	AVATAR_m_hat_clay: AvatarCustomizationMHatClay;
+	AVATAR_m_hat_cofagrigusitems: AvatarCustomizationMHatCofagrigusitems;
+	AVATAR_m_hat_cosmog: AvatarCustomizationMHatCosmog;
+	AVATAR_m_hat_crownmoon: AvatarCustomizationMHatCrownmoon;
+	AVATAR_m_hat_crownsun: AvatarCustomizationMHatCrownsun;
+	AVATAR_m_hat_cubonehat: AvatarCustomizationMHatCubonehat;
+	AVATAR_m_hat_darumakahat: AvatarCustomizationMHatDarumakahat;
+	AVATAR_m_hat_dedenneitems: AvatarCustomizationMHatDedenneitems;
+	AVATAR_m_hat_default_0: AvatarCustomizationMHatDefault0;
+	AVATAR_m_hat_default_1: AvatarCustomizationMHatDefault1;
+	AVATAR_m_hat_default_2: AvatarCustomizationMHatDefault2;
+	AVATAR_m_hat_default_3: AvatarCustomizationMHatDefault3;
+	AVATAR_m_hat_default_4: AvatarCustomizationMHatDefault4;
+	AVATAR_m_hat_default_5: AvatarCustomizationMHatDefault5;
+	AVATAR_m_hat_deino: AvatarCustomizationMHatDeino;
+	AVATAR_m_hat_delibird: AvatarCustomizationMHatDelibird;
+	AVATAR_m_hat_detectivepikachu: AvatarCustomizationMHatDetectivepikachu;
+	AVATAR_m_hat_diancie: AvatarCustomizationMHatDiancie;
+	AVATAR_m_hat_dp: AvatarCustomizationMHatDp;
+	AVATAR_m_hat_drifloon_0: AvatarCustomizationMHatDrifloon0;
+	AVATAR_m_hat_drpikachu: AvatarCustomizationMHatDrpikachu;
+	AVATAR_m_hat_dusclopsmummy: AvatarCustomizationMHatDusclopsmummy;
+	AVATAR_m_hat_eeveecap: AvatarCustomizationMHatEeveecap;
+	AVATAR_m_hat_elesa: AvatarCustomizationMHatElesa;
+	AVATAR_m_hat_empty: AvatarCustomizationMHatEmpty;
+	AVATAR_m_hat_fedora_0: AvatarCustomizationMHatFedora0;
+	AVATAR_m_hat_fedora_1: AvatarCustomizationMHatFedora1;
+	AVATAR_m_hat_fisher_0: AvatarCustomizationMHatFisher0;
+	AVATAR_m_hat_flabebepack: AvatarCustomizationMHatFlabebepack;
+	AVATAR_m_hat_fragment_0: AvatarCustomizationMHatFragment0;
+	AVATAR_m_hat_frlg_0: AvatarCustomizationMHatFrlg0;
+	AVATAR_m_hat_furfrouwig: AvatarCustomizationMHatFurfrouwig;
+	AVATAR_m_hat_fw2022: AvatarCustomizationMHatFw2022;
+	AVATAR_m_hat_galarfarfetchditems: AvatarCustomizationMHatGalarfarfetchditems;
+	AVATAR_m_hat_genesecteventitem: AvatarCustomizationMHatGenesecteventitem;
+	AVATAR_m_hat_gengar_0: AvatarCustomizationMHatGengar0;
+	AVATAR_m_hat_gimmighoulitems: AvatarCustomizationMHatGimmighoulitems;
+	AVATAR_m_hat_giratinaitems: AvatarCustomizationMHatGiratinaitems;
+	AVATAR_m_hat_gladion: AvatarCustomizationMHatGladion;
+	AVATAR_m_hat_goomy: AvatarCustomizationMHatGoomy;
+	AVATAR_m_hat_greavardwig: AvatarCustomizationMHatGreavardwig;
+	AVATAR_m_hat_greencoat: AvatarCustomizationMHatGreencoat;
+	AVATAR_m_hat_growlithehelmet: AvatarCustomizationMHatGrowlithehelmet;
+	AVATAR_m_hat_gtr2024eeveefanmask: AvatarCustomizationMHatGtr2024eeveefanmask;
+	AVATAR_m_hat_gtr2024pikachufanmask: AvatarCustomizationMHatGtr2024pikachufanmask;
+	AVATAR_m_hat_guccihat: AvatarCustomizationMHatGuccihat;
+	AVATAR_m_hat_guzma: AvatarCustomizationMHatGuzma;
+	AVATAR_m_hat_gyaradoscap: AvatarCustomizationMHatGyaradoscap;
+	AVATAR_m_hat_hgss_0: AvatarCustomizationMHatHgss0;
+	AVATAR_m_hat_holiday2022santacostumes: AvatarCustomizationMHatHoliday2022santacostumes;
+	AVATAR_m_hat_holidaybeanie: AvatarCustomizationMHatHolidaybeanie;
+	AVATAR_m_hat_hoopaearmuffs: AvatarCustomizationMHatHoopaearmuffs;
+	AVATAR_m_hat_ingo: AvatarCustomizationMHatIngo;
+	AVATAR_m_hat_jogger_0: AvatarCustomizationMHatJogger0;
+	AVATAR_m_hat_kantotourcapgreen: AvatarCustomizationMHatKantotourcapgreen;
+	AVATAR_m_hat_kantotourcapred: AvatarCustomizationMHatKantotourcapred;
+	AVATAR_m_hat_korrina: AvatarCustomizationMHatKorrina;
+	AVATAR_m_hat_lana: AvatarCustomizationMHatLana;
+	AVATAR_m_hat_laprasbandana: AvatarCustomizationMHatLaprasbandana;
+	AVATAR_m_hat_lasecuritycorps: AvatarCustomizationMHatLasecuritycorps;
+	AVATAR_m_hat_legendofarceus: AvatarCustomizationMHatLegendofarceus;
+	AVATAR_m_hat_litwickhat: AvatarCustomizationMHatLitwickhat;
+	AVATAR_m_hat_loneearrings: AvatarCustomizationMHatLoneearrings;
+	AVATAR_m_hat_lvl50cap: AvatarCustomizationMHatLvl50cap;
+	AVATAR_m_hat_magikarp: AvatarCustomizationMHatMagikarp;
+	AVATAR_m_hat_mareaniehat: AvatarCustomizationMHatMareaniehat;
+	AVATAR_m_hat_megalopunnyitems: AvatarCustomizationMHatMegalopunnyitems;
+	AVATAR_m_hat_megarayquaza: AvatarCustomizationMHatMegarayquaza;
+	AVATAR_m_hat_meltan: AvatarCustomizationMHatMeltan;
+	AVATAR_m_hat_mewtwo: AvatarCustomizationMHatMewtwo;
+	AVATAR_m_hat_mimikyu_0: AvatarCustomizationMHatMimikyu0;
+	AVATAR_m_hat_mismagius_0: AvatarCustomizationMHatMismagius0;
+	AVATAR_m_hat_movie2020: AvatarCustomizationMHatMovie2020;
+	AVATAR_m_hat_munnapack_0: AvatarCustomizationMHatMunnapack0;
+	AVATAR_m_hat_munnapack_1: AvatarCustomizationMHatMunnapack1;
+	AVATAR_m_hat_newyear2022: AvatarCustomizationMHatNewyear2022;
+	AVATAR_m_hat_newyearhat2021: AvatarCustomizationMHatNewyearhat2021;
+	AVATAR_m_hat_newyearhat2023: AvatarCustomizationMHatNewyearhat2023;
+	AVATAR_m_hat_nihilegoitems: AvatarCustomizationMHatNihilegoitems;
+	AVATAR_m_hat_noibat: AvatarCustomizationMHatNoibat;
+	AVATAR_m_hat_obstagoonitems: AvatarCustomizationMHatObstagoonitems;
+	AVATAR_m_hat_oras: AvatarCustomizationMHatOras;
+	AVATAR_m_hat_oricorioPink: AvatarCustomizationMHatOricoriopink;
+	AVATAR_m_hat_oricorioPurple: AvatarCustomizationMHatOricoriopurple;
+	AVATAR_m_hat_oricorioRed: AvatarCustomizationMHatOricoriored;
+	AVATAR_m_hat_oricorioYellow: AvatarCustomizationMHatOricorioyellow;
+	AVATAR_m_hat_partneritemsjan2024hat: AvatarCustomizationMHatPartneritemsjan2024hat;
+	AVATAR_m_hat_phantump: AvatarCustomizationMHatPhantump;
+	AVATAR_m_hat_pikachucap: AvatarCustomizationMHatPikachucap;
+	AVATAR_m_hat_pikachufan_0: AvatarCustomizationMHatPikachufan0;
+	AVATAR_m_hat_pikachulibre: AvatarCustomizationMHatPikachulibre;
+	AVATAR_m_hat_pikachupumpkinhead: AvatarCustomizationMHatPikachupumpkinhead;
+	AVATAR_m_hat_pkmncap_0: AvatarCustomizationMHatPkmncap0;
+	AVATAR_m_hat_pkmncap_1: AvatarCustomizationMHatPkmncap1;
+	AVATAR_m_hat_pkmncap_2: AvatarCustomizationMHatPkmncap2;
+	AVATAR_m_hat_poipole: AvatarCustomizationMHatPoipole;
+	AVATAR_m_hat_profwillowoutfit: AvatarCustomizationMHatProfwillowoutfit;
+	AVATAR_m_hat_regiicejersies: AvatarCustomizationMHatRegiicejersies;
+	AVATAR_m_hat_regirockjersies: AvatarCustomizationMHatRegirockjersies;
+	AVATAR_m_hat_registeeljersies: AvatarCustomizationMHatRegisteeljersies;
+	AVATAR_m_hat_ruinmaniac: AvatarCustomizationMHatRuinmaniac;
+	AVATAR_m_hat_sableyegoggles: AvatarCustomizationMHatSableyegoggles;
+	AVATAR_m_hat_samsungsummer2020: AvatarCustomizationMHatSamsungsummer2020;
+	AVATAR_m_hat_sandygasthat: AvatarCustomizationMHatSandygasthat;
+	AVATAR_m_hat_shayminhat: AvatarCustomizationMHatShayminhat;
+	AVATAR_m_hat_slowpoketailshirts: AvatarCustomizationMHatSlowpoketailshirts;
+	AVATAR_m_hat_snorlaxnightcap: AvatarCustomizationMHatSnorlaxnightcap;
+	AVATAR_m_hat_solgaleoitems: AvatarCustomizationMHatSolgaleoitems;
+	AVATAR_m_hat_ss: AvatarCustomizationMHatSs;
+	AVATAR_m_hat_stantlerheadband: AvatarCustomizationMHatStantlerheadband;
+	AVATAR_m_hat_strawhat: AvatarCustomizationMHatStrawhat;
+	AVATAR_m_hat_summer2023: AvatarCustomizationMHatSummer2023;
+	AVATAR_m_hat_svcostumescarletschool: AvatarCustomizationMHatSvcostumescarletschool;
+	AVATAR_m_hat_svcostumevioletschool: AvatarCustomizationMHatSvcostumevioletschool;
+	AVATAR_m_hat_swshdlc2costume: AvatarCustomizationMHatSwshdlc2costume;
+	AVATAR_m_hat_swshuniformchampion: AvatarCustomizationMHatSwshuniformchampion;
+	AVATAR_m_hat_sylveonitems: AvatarCustomizationMHatSylveonitems;
+	AVATAR_m_hat_tcgcollabtshirtandcap: AvatarCustomizationMHatTcgcollabtshirtandcap;
+	AVATAR_m_hat_teamaqua: AvatarCustomizationMHatTeamaqua;
+	AVATAR_m_hat_teamleadercap_0: AvatarCustomizationMHatTeamleadercap0;
+	AVATAR_m_hat_teamleadercap_1: AvatarCustomizationMHatTeamleadercap1;
+	AVATAR_m_hat_teamleadercap_2: AvatarCustomizationMHatTeamleadercap2;
+	AVATAR_m_hat_teamrocket_0: AvatarCustomizationMHatTeamrocket0;
+	AVATAR_m_hat_teamrocketcap: AvatarCustomizationMHatTeamrocketcap;
+	AVATAR_m_hat_teamskull: AvatarCustomizationMHatTeamskull;
+	AVATAR_m_hat_tophat_0: AvatarCustomizationMHatTophat0;
+	AVATAR_m_hat_ultraReconSquad: AvatarCustomizationMHatUltrareconsquad;
+	AVATAR_m_hat_ultraReconSquadB: AvatarCustomizationMHatUltrareconsquadb;
+	AVATAR_m_hat_ultra_0: AvatarCustomizationMHatUltra0;
+	AVATAR_m_hat_verizon2021: AvatarCustomizationMHatVerizon2021;
+	AVATAR_m_hat_wcs2022winnersitems: AvatarCustomizationMHatWcs2022winnersitems;
+	AVATAR_m_hat_whimsicottearmuff: AvatarCustomizationMHatWhimsicottearmuff;
+	AVATAR_m_hat_willowglasses: AvatarCustomizationMHatWillowglasses;
+	AVATAR_m_hat_woobatearrings: AvatarCustomizationMHatWoobatearrings;
+	AVATAR_m_hat_yamaskhat: AvatarCustomizationMHatYamaskhat;
+	AVATAR_m_hat_yamaskmask: AvatarCustomizationMHatYamaskmask;
+	AVATAR_m_hat_zubathat: AvatarCustomizationMHatZubathat;
+	AVATAR_m_jacket_newyear2022: AvatarCustomizationMJacketNewyear2022;
+	AVATAR_m_pants_6thanniversary: AvatarCustomizationMPants6thanniversary;
+	AVATAR_m_pants_7thanniversary: AvatarCustomizationMPants7thanniversary;
+	AVATAR_m_pants_acetrainerbw: AvatarCustomizationMPantsAcetrainerbw;
+	AVATAR_m_pants_acetrainersm: AvatarCustomizationMPantsAcetrainersm;
+	AVATAR_m_pants_animegou: AvatarCustomizationMPantsAnimegou;
+	AVATAR_m_pants_backpacker: AvatarCustomizationMPantsBackpacker;
+	AVATAR_m_pants_bounsweetitems: AvatarCustomizationMPantsBounsweetitems;
+	AVATAR_m_pants_brock: AvatarCustomizationMPantsBrock;
+	AVATAR_m_pants_bwn: AvatarCustomizationMPantsBwn;
+	AVATAR_m_pants_casual_0: AvatarCustomizationMPantsCasual0;
+	AVATAR_m_pants_casual_1: AvatarCustomizationMPantsCasual1;
+	AVATAR_m_pants_clay: AvatarCustomizationMPantsClay;
+	AVATAR_m_pants_default_0: AvatarCustomizationMPantsDefault0;
+	AVATAR_m_pants_denimfashionweek2023: AvatarCustomizationMPantsDenimfashionweek2023;
+	AVATAR_m_pants_dp: AvatarCustomizationMPantsDp;
+	AVATAR_m_pants_elesa: AvatarCustomizationMPantsElesa;
+	AVATAR_m_pants_fashionWeek2022: AvatarCustomizationMPantsFashionweek2022;
+	AVATAR_m_pants_fisher_0: AvatarCustomizationMPantsFisher0;
+	AVATAR_m_pants_flabebepack: AvatarCustomizationMPantsFlabebepack;
+	AVATAR_m_pants_frlg_0: AvatarCustomizationMPantsFrlg0;
+	AVATAR_m_pants_fw2022: AvatarCustomizationMPantsFw2022;
+	AVATAR_m_pants_geeta: AvatarCustomizationMPantsGeeta;
+	AVATAR_m_pants_genderlessskirt: AvatarCustomizationMPantsGenderlessskirt;
+	AVATAR_m_pants_giovanni: AvatarCustomizationMPantsGiovanni;
+	AVATAR_m_pants_gladion: AvatarCustomizationMPantsGladion;
+	AVATAR_m_pants_gothitelleitems: AvatarCustomizationMPantsGothitelleitems;
+	AVATAR_m_pants_green: AvatarCustomizationMPantsGreen;
+	AVATAR_m_pants_greencoat: AvatarCustomizationMPantsGreencoat;
+	AVATAR_m_pants_guzma: AvatarCustomizationMPantsGuzma;
+	AVATAR_m_pants_gymleader_0: AvatarCustomizationMPantsGymleader0;
+	AVATAR_m_pants_gymleader_1: AvatarCustomizationMPantsGymleader1;
+	AVATAR_m_pants_gymleader_2: AvatarCustomizationMPantsGymleader2;
+	AVATAR_m_pants_hala: AvatarCustomizationMPantsHala;
+	AVATAR_m_pants_hgss_0: AvatarCustomizationMPantsHgss0;
+	AVATAR_m_pants_ingo: AvatarCustomizationMPantsIngo;
+	AVATAR_m_pants_jogger_0: AvatarCustomizationMPantsJogger0;
+	AVATAR_m_pants_korrina: AvatarCustomizationMPantsKorrina;
+	AVATAR_m_pants_loosepants: AvatarCustomizationMPantsLoosepants;
+	AVATAR_m_pants_lunalaitems: AvatarCustomizationMPantsLunalaitems;
+	AVATAR_m_pants_luvdiscpack: AvatarCustomizationMPantsLuvdiscpack;
+	AVATAR_m_pants_lysandre: AvatarCustomizationMPantsLysandre;
+	AVATAR_m_pants_mewtwo: AvatarCustomizationMPantsMewtwo;
+	AVATAR_m_pants_munnapack: AvatarCustomizationMPantsMunnapack;
+	AVATAR_m_pants_newyear2022: AvatarCustomizationMPantsNewyear2022;
+	AVATAR_m_pants_oras: AvatarCustomizationMPantsOras;
+	AVATAR_m_pants_pajamas2022_0: AvatarCustomizationMPantsPajamas20220;
+	AVATAR_m_pants_pajamas2022_1: AvatarCustomizationMPantsPajamas20221;
+	AVATAR_m_pants_palmer: AvatarCustomizationMPantsPalmer;
+	AVATAR_m_pants_pikachufan_0: AvatarCustomizationMPantsPikachufan0;
+	AVATAR_m_pants_pikachulibre: AvatarCustomizationMPantsPikachulibre;
+	AVATAR_m_pants_profwillowoutfit: AvatarCustomizationMPantsProfwillowoutfit;
+	AVATAR_m_pants_pumpkabooitems: AvatarCustomizationMPantsPumpkabooitems;
+	AVATAR_m_pants_regiicejersies: AvatarCustomizationMPantsRegiicejersies;
+	AVATAR_m_pants_regirockjersies: AvatarCustomizationMPantsRegirockjersies;
+	AVATAR_m_pants_registeeljersies: AvatarCustomizationMPantsRegisteeljersies;
+	AVATAR_m_pants_skinnyjeans_0: AvatarCustomizationMPantsSkinnyjeans0;
+	AVATAR_m_pants_skinnyjeans_1: AvatarCustomizationMPantsSkinnyjeans1;
+	AVATAR_m_pants_skinnyjeans_2: AvatarCustomizationMPantsSkinnyjeans2;
+	AVATAR_m_pants_ss: AvatarCustomizationMPantsSs;
+	AVATAR_m_pants_steven: AvatarCustomizationMPantsSteven;
+	AVATAR_m_pants_stevenfirst: AvatarCustomizationMPantsStevenfirst;
+	AVATAR_m_pants_sweats_0: AvatarCustomizationMPantsSweats0;
+	AVATAR_m_pants_sweats_1: AvatarCustomizationMPantsSweats1;
+	AVATAR_m_pants_sweats_2: AvatarCustomizationMPantsSweats2;
+	AVATAR_m_pants_sweats_3: AvatarCustomizationMPantsSweats3;
+	AVATAR_m_pants_sweats_4: AvatarCustomizationMPantsSweats4;
+	AVATAR_m_pants_swshdlc2costume: AvatarCustomizationMPantsSwshdlc2costume;
+	AVATAR_m_pants_swshuniformchampion: AvatarCustomizationMPantsSwshuniformchampion;
+	AVATAR_m_pants_swshuniformdark: AvatarCustomizationMPantsSwshuniformdark;
+	AVATAR_m_pants_swshuniformdefault: AvatarCustomizationMPantsSwshuniformdefault;
+	AVATAR_m_pants_swshuniformdragon: AvatarCustomizationMPantsSwshuniformdragon;
+	AVATAR_m_pants_teamaqua: AvatarCustomizationMPantsTeamaqua;
+	AVATAR_m_pants_teamblanche: AvatarCustomizationMPantsTeamblanche;
+	AVATAR_m_pants_teamcandela: AvatarCustomizationMPantsTeamcandela;
+	AVATAR_m_pants_teammagma: AvatarCustomizationMPantsTeammagma;
+	AVATAR_m_pants_teamrocket_0: AvatarCustomizationMPantsTeamrocket0;
+	AVATAR_m_pants_teamskull: AvatarCustomizationMPantsTeamskull;
+	AVATAR_m_pants_teamspark: AvatarCustomizationMPantsTeamspark;
+	AVATAR_m_pants_ultra_0: AvatarCustomizationMPantsUltra0;
+	AVATAR_m_pants_veterantrainerxy: AvatarCustomizationMPantsVeterantrainerxy;
+	AVATAR_m_pants_wcs2022winnersitems: AvatarCustomizationMPantsWcs2022winnersitems;
+	AVATAR_m_pose_01: AvatarCustomizationMPose01;
+	AVATAR_m_pose_02: AvatarCustomizationMPose02;
+	AVATAR_m_pose_03: AvatarCustomizationMPose03;
+	AVATAR_m_pose_04: AvatarCustomizationMPose04;
+	AVATAR_m_pose_05: AvatarCustomizationMPose05;
+	AVATAR_m_pose_06: AvatarCustomizationMPose06;
+	AVATAR_m_pose_07: AvatarCustomizationMPose07;
+	AVATAR_m_pose_08: AvatarCustomizationMPose08;
+	AVATAR_m_pose_09: AvatarCustomizationMPose09;
+	AVATAR_m_pose_10: AvatarCustomizationMPose10;
+	AVATAR_m_pose_11: AvatarCustomizationMPose11;
+	AVATAR_m_pose_12: AvatarCustomizationMPose12;
+	AVATAR_m_pose_13: AvatarCustomizationMPose13;
+	AVATAR_m_pose_14: AvatarCustomizationMPose14;
+	AVATAR_m_pose_15: AvatarCustomizationMPose15;
+	AVATAR_m_pose_16: AvatarCustomizationMPose16;
+	AVATAR_m_pose_17: AvatarCustomizationMPose17;
+	AVATAR_m_pose_18: AvatarCustomizationMPose18;
+	AVATAR_m_pose_19: AvatarCustomizationMPose19;
+	AVATAR_m_pose_20: AvatarCustomizationMPose20;
+	AVATAR_m_pose_21: AvatarCustomizationMPose21;
+	AVATAR_m_pose_22: AvatarCustomizationMPose22;
+	AVATAR_m_pose_23: AvatarCustomizationMPose23;
+	AVATAR_m_pose_24: AvatarCustomizationMPose24;
+	AVATAR_m_pose_25: AvatarCustomizationMPose25;
+	AVATAR_m_pose_26: AvatarCustomizationMPose26;
+	AVATAR_m_pose_27: AvatarCustomizationMPose27;
+	AVATAR_m_pose_28: AvatarCustomizationMPose28;
+	AVATAR_m_pose_29: AvatarCustomizationMPose29;
+	AVATAR_m_pose_30: AvatarCustomizationMPose30;
+	AVATAR_m_pose_31: AvatarCustomizationMPose31;
+	AVATAR_m_pose_32: AvatarCustomizationMPose32;
+	AVATAR_m_pose_33: AvatarCustomizationMPose33;
+	AVATAR_m_pose_34: AvatarCustomizationMPose34;
+	AVATAR_m_pose_35: AvatarCustomizationMPose35;
+	AVATAR_m_pose_36: AvatarCustomizationMPose36;
+	AVATAR_m_pose_37: AvatarCustomizationMPose37;
+	AVATAR_m_pose_38: AvatarCustomizationMPose38;
+	AVATAR_m_pose_39: AvatarCustomizationMPose39;
+	AVATAR_m_pose_40: AvatarCustomizationMPose40;
+	AVATAR_m_pose_41: AvatarCustomizationMPose41;
+	AVATAR_m_pose_43: AvatarCustomizationMPose43;
+	AVATAR_m_pose_44: AvatarCustomizationMPose44;
+	AVATAR_m_pose_45: AvatarCustomizationMPose45;
+	AVATAR_m_pose_46: AvatarCustomizationMPose46;
+	AVATAR_m_pose_47: AvatarCustomizationMPose47;
+	AVATAR_m_pose_48: AvatarCustomizationMPose48;
+	AVATAR_m_pose_49: AvatarCustomizationMPose49;
+	AVATAR_m_pose_50: AvatarCustomizationMPose50;
+	AVATAR_m_pose_51: AvatarCustomizationMPose51;
+	AVATAR_m_pose_52: AvatarCustomizationMPose52;
+	AVATAR_m_pose_53: AvatarCustomizationMPose53;
+	AVATAR_m_pose_54: AvatarCustomizationMPose54;
+	AVATAR_m_pose_55: AvatarCustomizationMPose55;
+	AVATAR_m_pose_56: AvatarCustomizationMPose56;
+	AVATAR_m_pose_57: AvatarCustomizationMPose57;
+	AVATAR_m_pose_58: AvatarCustomizationMPose58;
+	AVATAR_m_pose_59: AvatarCustomizationMPose59;
+	AVATAR_m_pose_60: AvatarCustomizationMPose60;
+	AVATAR_m_pose_61: AvatarCustomizationMPose61;
+	AVATAR_m_pose_62: AvatarCustomizationMPose62;
+	AVATAR_m_pose_63: AvatarCustomizationMPose63;
+	AVATAR_m_pose_64: AvatarCustomizationMPose64;
+	AVATAR_m_pose_empty: AvatarCustomizationMPoseEmpty;
+	AVATAR_m_shirt_6thanniversary: AvatarCustomizationMShirt6thanniversary;
+	AVATAR_m_shirt_7thanniversary: AvatarCustomizationMShirt7thanniversary;
+	AVATAR_m_shirt_acetrainerbw: AvatarCustomizationMShirtAcetrainerbw;
+	AVATAR_m_shirt_acetrainersm: AvatarCustomizationMShirtAcetrainersm;
+	AVATAR_m_shirt_alolacomfey: AvatarCustomizationMShirtAlolacomfey;
+	AVATAR_m_shirt_animegou: AvatarCustomizationMShirtAnimegou;
+	AVATAR_m_shirt_aseries: AvatarCustomizationMShirtAseries;
+	AVATAR_m_shirt_backpacker: AvatarCustomizationMShirtBackpacker;
+	AVATAR_m_shirt_ballguy: AvatarCustomizationMShirtBallguy;
+	AVATAR_m_shirt_bea: AvatarCustomizationMShirtBea;
+	AVATAR_m_shirt_blazer_0: AvatarCustomizationMShirtBlazer0;
+	AVATAR_m_shirt_bounsweetitems: AvatarCustomizationMShirtBounsweetitems;
+	AVATAR_m_shirt_brock: AvatarCustomizationMShirtBrock;
+	AVATAR_m_shirt_buzzwoleitems: AvatarCustomizationMShirtBuzzwoleitems;
+	AVATAR_m_shirt_bwn: AvatarCustomizationMShirtBwn;
+	AVATAR_m_shirt_casual_0: AvatarCustomizationMShirtCasual0;
+	AVATAR_m_shirt_casual_1: AvatarCustomizationMShirtCasual1;
+	AVATAR_m_shirt_casual_2: AvatarCustomizationMShirtCasual2;
+	AVATAR_m_shirt_casual_3: AvatarCustomizationMShirtCasual3;
+	AVATAR_m_shirt_celebi_0: AvatarCustomizationMShirtCelebi0;
+	AVATAR_m_shirt_chimcharonesie: AvatarCustomizationMShirtChimcharonesie;
+	AVATAR_m_shirt_clay: AvatarCustomizationMShirtClay;
+	AVATAR_m_shirt_cofagrigusitems: AvatarCustomizationMShirtCofagrigusitems;
+	AVATAR_m_shirt_cosmog: AvatarCustomizationMShirtCosmog;
+	AVATAR_m_shirt_cowichansweater: AvatarCustomizationMShirtCowichansweater;
+	AVATAR_m_shirt_dayofdead: AvatarCustomizationMShirtDayofdead;
+	AVATAR_m_shirt_default_0: AvatarCustomizationMShirtDefault0;
+	AVATAR_m_shirt_default_1: AvatarCustomizationMShirtDefault1;
+	AVATAR_m_shirt_default_2: AvatarCustomizationMShirtDefault2;
+	AVATAR_m_shirt_default_2B: AvatarCustomizationMShirtDefault2b;
+	AVATAR_m_shirt_default_3: AvatarCustomizationMShirtDefault3;
+	AVATAR_m_shirt_default_4: AvatarCustomizationMShirtDefault4;
+	AVATAR_m_shirt_default_5: AvatarCustomizationMShirtDefault5;
+	AVATAR_m_shirt_default_6: AvatarCustomizationMShirtDefault6;
+	AVATAR_m_shirt_default_7: AvatarCustomizationMShirtDefault7;
+	AVATAR_m_shirt_delibird: AvatarCustomizationMShirtDelibird;
+	AVATAR_m_shirt_delibirdonesie: AvatarCustomizationMShirtDelibirdonesie;
+	AVATAR_m_shirt_denimfashionweek2023: AvatarCustomizationMShirtDenimfashionweek2023;
+	AVATAR_m_shirt_denimjacket: AvatarCustomizationMShirtDenimjacket;
+	AVATAR_m_shirt_detectivepikachu: AvatarCustomizationMShirtDetectivepikachu;
+	AVATAR_m_shirt_diancie: AvatarCustomizationMShirtDiancie;
+	AVATAR_m_shirt_divingsuit: AvatarCustomizationMShirtDivingsuit;
+	AVATAR_m_shirt_diwali2021: AvatarCustomizationMShirtDiwali2021;
+	AVATAR_m_shirt_dp: AvatarCustomizationMShirtDp;
+	AVATAR_m_shirt_drifblim_0: AvatarCustomizationMShirtDrifblim0;
+	AVATAR_m_shirt_dusclopsmummy: AvatarCustomizationMShirtDusclopsmummy;
+	AVATAR_m_shirt_earthday_2018: AvatarCustomizationMShirtEarthday2018;
+	AVATAR_m_shirt_eeveestshirt_00: AvatarCustomizationMShirtEeveestshirt00;
+	AVATAR_m_shirt_eeveestshirt_01: AvatarCustomizationMShirtEeveestshirt01;
+	AVATAR_m_shirt_eeveestshirt_02: AvatarCustomizationMShirtEeveestshirt02;
+	AVATAR_m_shirt_eeveestshirt_03: AvatarCustomizationMShirtEeveestshirt03;
+	AVATAR_m_shirt_eeveestshirt_04: AvatarCustomizationMShirtEeveestshirt04;
+	AVATAR_m_shirt_eeveestshirt_05: AvatarCustomizationMShirtEeveestshirt05;
+	AVATAR_m_shirt_eeveestshirt_06: AvatarCustomizationMShirtEeveestshirt06;
+	AVATAR_m_shirt_eeveestshirt_07: AvatarCustomizationMShirtEeveestshirt07;
+	AVATAR_m_shirt_eeveestshirt_08: AvatarCustomizationMShirtEeveestshirt08;
+	AVATAR_m_shirt_elesa: AvatarCustomizationMShirtElesa;
+	AVATAR_m_shirt_fashionWeek2022: AvatarCustomizationMShirtFashionweek2022;
+	AVATAR_m_shirt_festivaloflights_00: AvatarCustomizationMShirtFestivaloflights00;
+	AVATAR_m_shirt_festivaloflights_01: AvatarCustomizationMShirtFestivaloflights01;
+	AVATAR_m_shirt_fisher_0: AvatarCustomizationMShirtFisher0;
+	AVATAR_m_shirt_flabebepack: AvatarCustomizationMShirtFlabebepack;
+	AVATAR_m_shirt_fragment_0: AvatarCustomizationMShirtFragment0;
+	AVATAR_m_shirt_frlg_0: AvatarCustomizationMShirtFrlg0;
+	AVATAR_m_shirt_fw2022: AvatarCustomizationMShirtFw2022;
+	AVATAR_m_shirt_galarfarfetchditems: AvatarCustomizationMShirtGalarfarfetchditems;
+	AVATAR_m_shirt_galaxyoutfit: AvatarCustomizationMShirtGalaxyoutfit;
+	AVATAR_m_shirt_geeta: AvatarCustomizationMShirtGeeta;
+	AVATAR_m_shirt_genderlessskirt: AvatarCustomizationMShirtGenderlessskirt;
+	AVATAR_m_shirt_gengar_0: AvatarCustomizationMShirtGengar0;
+	AVATAR_m_shirt_gengaronesie: AvatarCustomizationMShirtGengaronesie;
+	AVATAR_m_shirt_giovanni: AvatarCustomizationMShirtGiovanni;
+	AVATAR_m_shirt_giratinaitems: AvatarCustomizationMShirtGiratinaitems;
+	AVATAR_m_shirt_gladion: AvatarCustomizationMShirtGladion;
+	AVATAR_m_shirt_gofest2022: AvatarCustomizationMShirtGofest2022;
+	AVATAR_m_shirt_gofest2023: AvatarCustomizationMShirtGofest2023;
+	AVATAR_m_shirt_gofest2024darkgray: AvatarCustomizationMShirtGofest2024darkgray;
+	AVATAR_m_shirt_gofest2024gray: AvatarCustomizationMShirtGofest2024gray;
+	AVATAR_m_shirt_gofest2024purple: AvatarCustomizationMShirtGofest2024purple;
+	AVATAR_m_shirt_gofest_2019: AvatarCustomizationMShirtGofest2019;
+	AVATAR_m_shirt_gofest_2020: AvatarCustomizationMShirtGofest2020;
+	AVATAR_m_shirt_gofest_2021: AvatarCustomizationMShirtGofest2021;
+	AVATAR_m_shirt_gofestglobal2023: AvatarCustomizationMShirtGofestglobal2023;
+	AVATAR_m_shirt_goteamrocketarlo: AvatarCustomizationMShirtGoteamrocketarlo;
+	AVATAR_m_shirt_goteamrocketcliff: AvatarCustomizationMShirtGoteamrocketcliff;
+	AVATAR_m_shirt_goteamrocketsierra: AvatarCustomizationMShirtGoteamrocketsierra;
+	AVATAR_m_shirt_gothitelleitems: AvatarCustomizationMShirtGothitelleitems;
+	AVATAR_m_shirt_gotour2023: AvatarCustomizationMShirtGotour2023;
+	AVATAR_m_shirt_gotour2024: AvatarCustomizationMShirtGotour2024;
+	AVATAR_m_shirt_greedentsweater: AvatarCustomizationMShirtGreedentsweater;
+	AVATAR_m_shirt_green: AvatarCustomizationMShirtGreen;
+	AVATAR_m_shirt_greencoat: AvatarCustomizationMShirtGreencoat;
+	AVATAR_m_shirt_gtrtshirt2022_00: AvatarCustomizationMShirtGtrtshirt202200;
+	AVATAR_m_shirt_gtrtshirt2022_01: AvatarCustomizationMShirtGtrtshirt202201;
+	AVATAR_m_shirt_guccitshirts: AvatarCustomizationMShirtGuccitshirts;
+	AVATAR_m_shirt_guzma: AvatarCustomizationMShirtGuzma;
+	AVATAR_m_shirt_gymleader_0: AvatarCustomizationMShirtGymleader0;
+	AVATAR_m_shirt_gymleader_1: AvatarCustomizationMShirtGymleader1;
+	AVATAR_m_shirt_gymleader_2: AvatarCustomizationMShirtGymleader2;
+	AVATAR_m_shirt_hala: AvatarCustomizationMShirtHala;
+	AVATAR_m_shirt_happi: AvatarCustomizationMShirtHappi;
+	AVATAR_m_shirt_happi_1: AvatarCustomizationMShirtHappi1;
+	AVATAR_m_shirt_happi_2: AvatarCustomizationMShirtHappi2;
+	AVATAR_m_shirt_hgss_0: AvatarCustomizationMShirtHgss0;
+	AVATAR_m_shirt_holiday2022santacostumes: AvatarCustomizationMShirtHoliday2022santacostumes;
+	AVATAR_m_shirt_holifestival2021black: AvatarCustomizationMShirtHolifestival2021black;
+	AVATAR_m_shirt_holifestival2021white: AvatarCustomizationMShirtHolifestival2021white;
+	AVATAR_m_shirt_hoopaunboundtshirt: AvatarCustomizationMShirtHoopaunboundtshirt;
+	AVATAR_m_shirt_ingo: AvatarCustomizationMShirtIngo;
+	AVATAR_m_shirt_ingress_0: AvatarCustomizationMShirtIngress0;
+	AVATAR_m_shirt_ingress_e_0: AvatarCustomizationMShirtIngressE0;
+	AVATAR_m_shirt_ingress_r_0: AvatarCustomizationMShirtIngressR0;
+	AVATAR_m_shirt_james: AvatarCustomizationMShirtJames;
+	AVATAR_m_shirt_jirachi: AvatarCustomizationMShirtJirachi;
+	AVATAR_m_shirt_jogger_0: AvatarCustomizationMShirtJogger0;
+	AVATAR_m_shirt_keldeotshirt: AvatarCustomizationMShirtKeldeotshirt;
+	AVATAR_m_shirt_korrina: AvatarCustomizationMShirtKorrina;
+	AVATAR_m_shirt_ladiamondoutfit: AvatarCustomizationMShirtLadiamondoutfit;
+	AVATAR_m_shirt_lana: AvatarCustomizationMShirtLana;
+	AVATAR_m_shirt_lapearloutfit: AvatarCustomizationMShirtLapearloutfit;
+	AVATAR_m_shirt_lasecuritycorps: AvatarCustomizationMShirtLasecuritycorps;
+	AVATAR_m_shirt_latias_latios_0: AvatarCustomizationMShirtLatiasLatios0;
+	AVATAR_m_shirt_legendofarceus: AvatarCustomizationMShirtLegendofarceus;
+	AVATAR_m_shirt_longsleeves_charizard_0: AvatarCustomizationMShirtLongsleevesCharizard0;
+	AVATAR_m_shirt_longsleeves_charizard_1: AvatarCustomizationMShirtLongsleevesCharizard1;
+	AVATAR_m_shirt_longsleeves_charizard_2: AvatarCustomizationMShirtLongsleevesCharizard2;
+	AVATAR_m_shirt_longsleeves_pikachu_0: AvatarCustomizationMShirtLongsleevesPikachu0;
+	AVATAR_m_shirt_longsleeves_pikachu_1: AvatarCustomizationMShirtLongsleevesPikachu1;
+	AVATAR_m_shirt_longsleeves_pikachu_2: AvatarCustomizationMShirtLongsleevesPikachu2;
+	AVATAR_m_shirt_luvdiscpack: AvatarCustomizationMShirtLuvdiscpack;
+	AVATAR_m_shirt_lvl50: AvatarCustomizationMShirtLvl50;
+	AVATAR_m_shirt_lvl50_1: AvatarCustomizationMShirtLvl501;
+	AVATAR_m_shirt_lysandre: AvatarCustomizationMShirtLysandre;
+	AVATAR_m_shirt_marshadowtshirt: AvatarCustomizationMShirtMarshadowtshirt;
+	AVATAR_m_shirt_megalopunnyitems: AvatarCustomizationMShirtMegalopunnyitems;
+	AVATAR_m_shirt_megarayquaza: AvatarCustomizationMShirtMegarayquaza;
+	AVATAR_m_shirt_melmetaljacket: AvatarCustomizationMShirtMelmetaljacket;
+	AVATAR_m_shirt_melmetalvest: AvatarCustomizationMShirtMelmetalvest;
+	AVATAR_m_shirt_meloettatshirt: AvatarCustomizationMShirtMeloettatshirt;
+	AVATAR_m_shirt_meltan: AvatarCustomizationMShirtMeltan;
+	AVATAR_m_shirt_mew_0: AvatarCustomizationMShirtMew0;
+	AVATAR_m_shirt_mewtwo: AvatarCustomizationMShirtMewtwo;
+	AVATAR_m_shirt_movie2020jessiejames: AvatarCustomizationMShirtMovie2020jessiejames;
+	AVATAR_m_shirt_munnapack: AvatarCustomizationMShirtMunnapack;
+	AVATAR_m_shirt_nike2021: AvatarCustomizationMShirtNike2021;
+	AVATAR_m_shirt_ocshirt_045: AvatarCustomizationMShirtOcshirt045;
+	AVATAR_m_shirt_ocshirt_108: AvatarCustomizationMShirtOcshirt108;
+	AVATAR_m_shirt_ocshirt_129: AvatarCustomizationMShirtOcshirt129;
+	AVATAR_m_shirt_ocshirt_143: AvatarCustomizationMShirtOcshirt143;
+	AVATAR_m_shirt_oras: AvatarCustomizationMShirtOras;
+	AVATAR_m_shirt_pajamas2022_0: AvatarCustomizationMShirtPajamas20220;
+	AVATAR_m_shirt_pajamas2022_1: AvatarCustomizationMShirtPajamas20221;
+	AVATAR_m_shirt_palmer: AvatarCustomizationMShirtPalmer;
+	AVATAR_m_shirt_partneritemsjan2024hoodie: AvatarCustomizationMShirtPartneritemsjan2024hoodie;
+	AVATAR_m_shirt_partneritemsjan2024tshirt: AvatarCustomizationMShirtPartneritemsjan2024tshirt;
+	AVATAR_m_shirt_pikachufan_0: AvatarCustomizationMShirtPikachufan0;
+	AVATAR_m_shirt_pikachulibre: AvatarCustomizationMShirtPikachulibre;
+	AVATAR_m_shirt_pikachuonesie: AvatarCustomizationMShirtPikachuonesie;
+	AVATAR_m_shirt_pinpukuhoodie: AvatarCustomizationMShirtPinpukuhoodie;
+	AVATAR_m_shirt_pipluponesie: AvatarCustomizationMShirtPipluponesie;
+	AVATAR_m_shirt_pkmnhoodie001: AvatarCustomizationMShirtPkmnhoodie001;
+	AVATAR_m_shirt_pkmnhoodie004: AvatarCustomizationMShirtPkmnhoodie004;
+	AVATAR_m_shirt_pkmnhoodie007: AvatarCustomizationMShirtPkmnhoodie007;
+	AVATAR_m_shirt_pkmnshirts2021_00: AvatarCustomizationMShirtPkmnshirts202100;
+	AVATAR_m_shirt_pkmnshirts2021_01: AvatarCustomizationMShirtPkmnshirts202101;
+	AVATAR_m_shirt_pkmnshirts2021_02: AvatarCustomizationMShirtPkmnshirts202102;
+	AVATAR_m_shirt_pkmnshirts_165: AvatarCustomizationMShirtPkmnshirts165;
+	AVATAR_m_shirt_pkmnshirts_188: AvatarCustomizationMShirtPkmnshirts188;
+	AVATAR_m_shirt_pkmnshirts_201: AvatarCustomizationMShirtPkmnshirts201;
+	AVATAR_m_shirt_pkmnshirts_238: AvatarCustomizationMShirtPkmnshirts238;
+	AVATAR_m_shirt_poloshirt: AvatarCustomizationMShirtPoloshirt;
+	AVATAR_m_shirt_poloshirt_1: AvatarCustomizationMShirtPoloshirt1;
+	AVATAR_m_shirt_poloshirt_2: AvatarCustomizationMShirtPoloshirt2;
+	AVATAR_m_shirt_profwillowoutfit: AvatarCustomizationMShirtProfwillowoutfit;
+	AVATAR_m_shirt_projectguitar: AvatarCustomizationMShirtProjectguitar;
+	AVATAR_m_shirt_pumpkabooitems: AvatarCustomizationMShirtPumpkabooitems;
+	AVATAR_m_shirt_regiicejersies: AvatarCustomizationMShirtRegiicejersies;
+	AVATAR_m_shirt_regirockjersies: AvatarCustomizationMShirtRegirockjersies;
+	AVATAR_m_shirt_registeeljersies: AvatarCustomizationMShirtRegisteeljersies;
+	AVATAR_m_shirt_reuniclusitems: AvatarCustomizationMShirtReuniclusitems;
+	AVATAR_m_shirt_ruinmaniac: AvatarCustomizationMShirtRuinmaniac;
+	AVATAR_m_shirt_safarizone2020: AvatarCustomizationMShirtSafarizone2020;
+	AVATAR_m_shirt_samsungsummer2020: AvatarCustomizationMShirtSamsungsummer2020;
+	AVATAR_m_shirt_shayminlandtshirt: AvatarCustomizationMShirtShayminlandtshirt;
+	AVATAR_m_shirt_shayminskytshirt: AvatarCustomizationMShirtShayminskytshirt;
+	AVATAR_m_shirt_shinymewtshirts: AvatarCustomizationMShirtShinymewtshirts;
+	AVATAR_m_shirt_slowpokeshirts: AvatarCustomizationMShirtSlowpokeshirts;
+	AVATAR_m_shirt_slowpoketailshirts: AvatarCustomizationMShirtSlowpoketailshirts;
+	AVATAR_m_shirt_snorlaxonesie: AvatarCustomizationMShirtSnorlaxonesie;
+	AVATAR_m_shirt_spiritomb_0: AvatarCustomizationMShirtSpiritomb0;
+	AVATAR_m_shirt_spring2021gulpin: AvatarCustomizationMShirtSpring2021gulpin;
+	AVATAR_m_shirt_spring2021plusle: AvatarCustomizationMShirtSpring2021plusle;
+	AVATAR_m_shirt_ss: AvatarCustomizationMShirtSs;
+	AVATAR_m_shirt_steven: AvatarCustomizationMShirtSteven;
+	AVATAR_m_shirt_stevenfirst: AvatarCustomizationMShirtStevenfirst;
+	AVATAR_m_shirt_sukajanblastoise: AvatarCustomizationMShirtSukajanblastoise;
+	AVATAR_m_shirt_sukajancharizard: AvatarCustomizationMShirtSukajancharizard;
+	AVATAR_m_shirt_sukajanhouou: AvatarCustomizationMShirtSukajanhouou;
+	AVATAR_m_shirt_sukajanlugia: AvatarCustomizationMShirtSukajanlugia;
+	AVATAR_m_shirt_sukajanvenusaur: AvatarCustomizationMShirtSukajanvenusaur;
+	AVATAR_m_shirt_summer2023: AvatarCustomizationMShirtSummer2023;
+	AVATAR_m_shirt_sustainability2021: AvatarCustomizationMShirtSustainability2021;
+	AVATAR_m_shirt_svcostumescarletschool: AvatarCustomizationMShirtSvcostumescarletschool;
+	AVATAR_m_shirt_svcostumevioletschool: AvatarCustomizationMShirtSvcostumevioletschool;
+	AVATAR_m_shirt_svdlc1: AvatarCustomizationMShirtSvdlc1;
+	AVATAR_m_shirt_svdlc2fall: AvatarCustomizationMShirtSvdlc2fall;
+	AVATAR_m_shirt_svdlc2spring: AvatarCustomizationMShirtSvdlc2spring;
+	AVATAR_m_shirt_sweatshirt_sporty_0: AvatarCustomizationMShirtSweatshirtSporty0;
+	AVATAR_m_shirt_sweatshirt_sporty_1: AvatarCustomizationMShirtSweatshirtSporty1;
+	AVATAR_m_shirt_sweatshirt_sporty_2: AvatarCustomizationMShirtSweatshirtSporty2;
+	AVATAR_m_shirt_sweatshirt_sporty_3: AvatarCustomizationMShirtSweatshirtSporty3;
+	AVATAR_m_shirt_sweatshirt_streak_0: AvatarCustomizationMShirtSweatshirtStreak0;
+	AVATAR_m_shirt_sweatshirt_streak_1: AvatarCustomizationMShirtSweatshirtStreak1;
+	AVATAR_m_shirt_sweatshirt_streak_2: AvatarCustomizationMShirtSweatshirtStreak2;
+	AVATAR_m_shirt_sweatshirt_streak_3: AvatarCustomizationMShirtSweatshirtStreak3;
+	AVATAR_m_shirt_sweatshirt_streak_4: AvatarCustomizationMShirtSweatshirtStreak4;
+	AVATAR_m_shirt_swshdlc2costume: AvatarCustomizationMShirtSwshdlc2costume;
+	AVATAR_m_shirt_swshdlccostume: AvatarCustomizationMShirtSwshdlccostume;
+	AVATAR_m_shirt_swshuniformchampion: AvatarCustomizationMShirtSwshuniformchampion;
+	AVATAR_m_shirt_swshuniformdark: AvatarCustomizationMShirtSwshuniformdark;
+	AVATAR_m_shirt_swshuniformdefault: AvatarCustomizationMShirtSwshuniformdefault;
+	AVATAR_m_shirt_swshuniformdragon: AvatarCustomizationMShirtSwshuniformdragon;
+	AVATAR_m_shirt_sylveonitems: AvatarCustomizationMShirtSylveonitems;
+	AVATAR_m_shirt_tcgcollabtshirtandcap: AvatarCustomizationMShirtTcgcollabtshirtandcap;
+	AVATAR_m_shirt_teamaqua: AvatarCustomizationMShirtTeamaqua;
+	AVATAR_m_shirt_teamblanche: AvatarCustomizationMShirtTeamblanche;
+	AVATAR_m_shirt_teamcandela: AvatarCustomizationMShirtTeamcandela;
+	AVATAR_m_shirt_teammagma: AvatarCustomizationMShirtTeammagma;
+	AVATAR_m_shirt_teamrocket_0: AvatarCustomizationMShirtTeamrocket0;
+	AVATAR_m_shirt_teamrocket_1: AvatarCustomizationMShirtTeamrocket1;
+	AVATAR_m_shirt_teamskull: AvatarCustomizationMShirtTeamskull;
+	AVATAR_m_shirt_teamspark: AvatarCustomizationMShirtTeamspark;
+	AVATAR_m_shirt_togepihoodie: AvatarCustomizationMShirtTogepihoodie;
+	AVATAR_m_shirt_tracksuitsgroudon: AvatarCustomizationMShirtTracksuitsgroudon;
+	AVATAR_m_shirt_tracksuitskyogre: AvatarCustomizationMShirtTracksuitskyogre;
+	AVATAR_m_shirt_tshirt_fest_chicago_2017: AvatarCustomizationMShirtTshirtFestChicago2017;
+	AVATAR_m_shirt_tshirt_fest_chicago_2018: AvatarCustomizationMShirtTshirtFestChicago2018;
+	AVATAR_m_shirt_tshirt_geometric_0: AvatarCustomizationMShirtTshirtGeometric0;
+	AVATAR_m_shirt_tshirt_geometric_1: AvatarCustomizationMShirtTshirtGeometric1;
+	AVATAR_m_shirt_tshirt_geometric_2: AvatarCustomizationMShirtTshirtGeometric2;
+	AVATAR_m_shirt_tshirt_global_goals_2017: AvatarCustomizationMShirtTshirtGlobalGoals2017;
+	AVATAR_m_shirt_tshirt_instinct: AvatarCustomizationMShirtTshirtInstinct;
+	AVATAR_m_shirt_tshirt_mystic: AvatarCustomizationMShirtTshirtMystic;
+	AVATAR_m_shirt_tshirt_valor: AvatarCustomizationMShirtTshirtValor;
+	AVATAR_m_shirt_turtleneck_30_0: AvatarCustomizationMShirtTurtleneck300;
+	AVATAR_m_shirt_turtleneck_30_1: AvatarCustomizationMShirtTurtleneck301;
+	AVATAR_m_shirt_turtleneck_30_2: AvatarCustomizationMShirtTurtleneck302;
+	AVATAR_m_shirt_turtleneck_30_3: AvatarCustomizationMShirtTurtleneck303;
+	AVATAR_m_shirt_turtwigonesie: AvatarCustomizationMShirtTurtwigonesie;
+	AVATAR_m_shirt_ultraReconSquad: AvatarCustomizationMShirtUltrareconsquad;
+	AVATAR_m_shirt_ultra_0: AvatarCustomizationMShirtUltra0;
+	AVATAR_m_shirt_uniqlotshirts_0: AvatarCustomizationMShirtUniqlotshirts0;
+	AVATAR_m_shirt_uniqlotshirts_1: AvatarCustomizationMShirtUniqlotshirts1;
+	AVATAR_m_shirt_uniqlotshirts_2: AvatarCustomizationMShirtUniqlotshirts2;
+	AVATAR_m_shirt_unwto: AvatarCustomizationMShirtUnwto;
+	AVATAR_m_shirt_valentine2023: AvatarCustomizationMShirtValentine2023;
+	AVATAR_m_shirt_verizon2020: AvatarCustomizationMShirtVerizon2020;
+	AVATAR_m_shirt_veterantrainerxy: AvatarCustomizationMShirtVeterantrainerxy;
+	AVATAR_m_shirt_victinitshirts: AvatarCustomizationMShirtVictinitshirts;
+	AVATAR_m_shirt_wcs2022: AvatarCustomizationMShirtWcs2022;
+	AVATAR_m_shirt_wcs2022tshirtbulu: AvatarCustomizationMShirtWcs2022tshirtbulu;
+	AVATAR_m_shirt_wcs2022tshirtred: AvatarCustomizationMShirtWcs2022tshirtred;
+	AVATAR_m_shirt_wcs2022winnersitems: AvatarCustomizationMShirtWcs2022winnersitems;
+	AVATAR_m_shirt_wcs2023: AvatarCustomizationMShirtWcs2023;
+	AVATAR_m_shirt_wcs2023promotshirt: AvatarCustomizationMShirtWcs2023promotshirt;
+	AVATAR_m_shirt_wcs2023promotshirt_01: AvatarCustomizationMShirtWcs2023promotshirt01;
+	AVATAR_m_shirt_wcs2023sukajan: AvatarCustomizationMShirtWcs2023sukajan;
+	AVATAR_m_shirt_wcs2023winnersitems: AvatarCustomizationMShirtWcs2023winnersitems;
+	AVATAR_m_shirt_wcs2024: AvatarCustomizationMShirtWcs2024;
+	"AVATAR_m_shirt_wcs2024championshipshirt-blue": AvatarCustomizationMShirtWcs2024championshipshirtBlue;
+	"AVATAR_m_shirt_wcs2024championshipshirt-white": AvatarCustomizationMShirtWcs2024championshipshirtWhite;
+	AVATAR_m_shirt_wcsyokohama: AvatarCustomizationMShirtWcsyokohama;
+	AVATAR_m_shirt_whitecoat: AvatarCustomizationMShirtWhitecoat;
+	AVATAR_m_shirt_wintersweater2023: AvatarCustomizationMShirtWintersweater2023;
+	AVATAR_m_shirt_zoruaonesie: AvatarCustomizationMShirtZoruaonesie;
+	AVATAR_m_shoes_6thanniversary: AvatarCustomizationMShoes6thanniversary;
+	AVATAR_m_shoes_acetrainerbw: AvatarCustomizationMShoesAcetrainerbw;
+	AVATAR_m_shoes_acetrainersm: AvatarCustomizationMShoesAcetrainersm;
+	AVATAR_m_shoes_animegou: AvatarCustomizationMShoesAnimegou;
+	AVATAR_m_shoes_backpacker: AvatarCustomizationMShoesBackpacker;
+	AVATAR_m_shoes_brock: AvatarCustomizationMShoesBrock;
+	AVATAR_m_shoes_bwn: AvatarCustomizationMShoesBwn;
+	AVATAR_m_shoes_carbink: AvatarCustomizationMShoesCarbink;
+	AVATAR_m_shoes_clay: AvatarCustomizationMShoesClay;
+	AVATAR_m_shoes_coolboots: AvatarCustomizationMShoesCoolboots;
+	AVATAR_m_shoes_dedenneitems: AvatarCustomizationMShoesDedenneitems;
+	AVATAR_m_shoes_default_0: AvatarCustomizationMShoesDefault0;
+	AVATAR_m_shoes_default_1: AvatarCustomizationMShoesDefault1;
+	AVATAR_m_shoes_default_2: AvatarCustomizationMShoesDefault2;
+	AVATAR_m_shoes_default_3: AvatarCustomizationMShoesDefault3;
+	AVATAR_m_shoes_default_4: AvatarCustomizationMShoesDefault4;
+	AVATAR_m_shoes_default_5: AvatarCustomizationMShoesDefault5;
+	AVATAR_m_shoes_default_6: AvatarCustomizationMShoesDefault6;
+	AVATAR_m_shoes_delibird: AvatarCustomizationMShoesDelibird;
+	AVATAR_m_shoes_dp: AvatarCustomizationMShoesDp;
+	AVATAR_m_shoes_elesa: AvatarCustomizationMShoesElesa;
+	AVATAR_m_shoes_empty: AvatarCustomizationMShoesEmpty;
+	AVATAR_m_shoes_fashionWeek2022: AvatarCustomizationMShoesFashionweek2022;
+	AVATAR_m_shoes_fisher_0: AvatarCustomizationMShoesFisher0;
+	AVATAR_m_shoes_frlg_0: AvatarCustomizationMShoesFrlg0;
+	AVATAR_m_shoes_fw2022: AvatarCustomizationMShoesFw2022;
+	AVATAR_m_shoes_geeta: AvatarCustomizationMShoesGeeta;
+	AVATAR_m_shoes_giovanni: AvatarCustomizationMShoesGiovanni;
+	AVATAR_m_shoes_gladion: AvatarCustomizationMShoesGladion;
+	AVATAR_m_shoes_gothitelleitems: AvatarCustomizationMShoesGothitelleitems;
+	AVATAR_m_shoes_green: AvatarCustomizationMShoesGreen;
+	AVATAR_m_shoes_gymleader_0: AvatarCustomizationMShoesGymleader0;
+	AVATAR_m_shoes_gymleader_1: AvatarCustomizationMShoesGymleader1;
+	AVATAR_m_shoes_gymleader_2: AvatarCustomizationMShoesGymleader2;
+	AVATAR_m_shoes_hala: AvatarCustomizationMShoesHala;
+	AVATAR_m_shoes_hgss_0: AvatarCustomizationMShoesHgss0;
+	AVATAR_m_shoes_ingo: AvatarCustomizationMShoesIngo;
+	AVATAR_m_shoes_jogger_0: AvatarCustomizationMShoesJogger0;
+	AVATAR_m_shoes_korrina: AvatarCustomizationMShoesKorrina;
+	AVATAR_m_shoes_ladiamondoutfit: AvatarCustomizationMShoesLadiamondoutfit;
+	AVATAR_m_shoes_lana: AvatarCustomizationMShoesLana;
+	AVATAR_m_shoes_lapearloutfit: AvatarCustomizationMShoesLapearloutfit;
+	AVATAR_m_shoes_legendofarceus: AvatarCustomizationMShoesLegendofarceus;
+	AVATAR_m_shoes_loosepants: AvatarCustomizationMShoesLoosepants;
+	AVATAR_m_shoes_loosepants_1: AvatarCustomizationMShoesLoosepants1;
+	AVATAR_m_shoes_loosepants_2: AvatarCustomizationMShoesLoosepants2;
+	AVATAR_m_shoes_loosepants_3: AvatarCustomizationMShoesLoosepants3;
+	AVATAR_m_shoes_luvdiscpack: AvatarCustomizationMShoesLuvdiscpack;
+	AVATAR_m_shoes_lysandre: AvatarCustomizationMShoesLysandre;
+	AVATAR_m_shoes_megalopunnyitems: AvatarCustomizationMShoesMegalopunnyitems;
+	AVATAR_m_shoes_melmetalshoes: AvatarCustomizationMShoesMelmetalshoes;
+	AVATAR_m_shoes_mewtwo: AvatarCustomizationMShoesMewtwo;
+	AVATAR_m_shoes_newyear2022: AvatarCustomizationMShoesNewyear2022;
+	AVATAR_m_shoes_nike2021: AvatarCustomizationMShoesNike2021;
+	AVATAR_m_shoes_oras: AvatarCustomizationMShoesOras;
+	AVATAR_m_shoes_pajamas2022_0: AvatarCustomizationMShoesPajamas20220;
+	AVATAR_m_shoes_pajamas2022_1: AvatarCustomizationMShoesPajamas20221;
+	AVATAR_m_shoes_palmer: AvatarCustomizationMShoesPalmer;
+	AVATAR_m_shoes_pikachufan_0: AvatarCustomizationMShoesPikachufan0;
+	AVATAR_m_shoes_pikachulibre: AvatarCustomizationMShoesPikachulibre;
+	AVATAR_m_shoes_profwillowoutfit: AvatarCustomizationMShoesProfwillowoutfit;
+	AVATAR_m_shoes_regiicejersies: AvatarCustomizationMShoesRegiicejersies;
+	AVATAR_m_shoes_regirockjersies: AvatarCustomizationMShoesRegirockjersies;
+	AVATAR_m_shoes_registeeljersies: AvatarCustomizationMShoesRegisteeljersies;
+	AVATAR_m_shoes_reuniclusitems: AvatarCustomizationMShoesReuniclusitems;
+	AVATAR_m_shoes_ruinmaniac: AvatarCustomizationMShoesRuinmaniac;
+	AVATAR_m_shoes_sandals: AvatarCustomizationMShoesSandals;
+	AVATAR_m_shoes_sandals_1: AvatarCustomizationMShoesSandals1;
+	AVATAR_m_shoes_sandals_2: AvatarCustomizationMShoesSandals2;
+	AVATAR_m_shoes_solgaleoitems: AvatarCustomizationMShoesSolgaleoitems;
+	AVATAR_m_shoes_ss: AvatarCustomizationMShoesSs;
+	AVATAR_m_shoes_steven: AvatarCustomizationMShoesSteven;
+	AVATAR_m_shoes_stevenfirst: AvatarCustomizationMShoesStevenfirst;
+	AVATAR_m_shoes_svcostumescarletschool: AvatarCustomizationMShoesSvcostumescarletschool;
+	AVATAR_m_shoes_svcostumevioletschool: AvatarCustomizationMShoesSvcostumevioletschool;
+	AVATAR_m_shoes_svdlc1: AvatarCustomizationMShoesSvdlc1;
+	AVATAR_m_shoes_svdlc2spring: AvatarCustomizationMShoesSvdlc2spring;
+	AVATAR_m_shoes_swshdlc2costume: AvatarCustomizationMShoesSwshdlc2costume;
+	AVATAR_m_shoes_swshdlccostume: AvatarCustomizationMShoesSwshdlccostume;
+	AVATAR_m_shoes_swshuniformdark: AvatarCustomizationMShoesSwshuniformdark;
+	AVATAR_m_shoes_swshuniformdefault: AvatarCustomizationMShoesSwshuniformdefault;
+	AVATAR_m_shoes_swshuniformdragon: AvatarCustomizationMShoesSwshuniformdragon;
+	AVATAR_m_shoes_sylveonitems: AvatarCustomizationMShoesSylveonitems;
+	AVATAR_m_shoes_teamaqua: AvatarCustomizationMShoesTeamaqua;
+	AVATAR_m_shoes_teamblanche: AvatarCustomizationMShoesTeamblanche;
+	AVATAR_m_shoes_teamcandela: AvatarCustomizationMShoesTeamcandela;
+	AVATAR_m_shoes_teammagma: AvatarCustomizationMShoesTeammagma;
+	AVATAR_m_shoes_teamrocket_0: AvatarCustomizationMShoesTeamrocket0;
+	AVATAR_m_shoes_teamrocket_1: AvatarCustomizationMShoesTeamrocket1;
+	AVATAR_m_shoes_teamskull: AvatarCustomizationMShoesTeamskull;
+	AVATAR_m_shoes_teamspark: AvatarCustomizationMShoesTeamspark;
+	AVATAR_m_shoes_ultraReconSquad: AvatarCustomizationMShoesUltrareconsquad;
+	AVATAR_m_shoes_ultra_0: AvatarCustomizationMShoesUltra0;
+	AVATAR_m_shoes_veterantrainerxy: AvatarCustomizationMShoesVeterantrainerxy;
+	AVATAR_m_shoes_wcs2022winnersitems: AvatarCustomizationMShoesWcs2022winnersitems;
+	AVATAR_m_shoes_wcs2023winnersitems: AvatarCustomizationMShoesWcs2023winnersitems;
+	AVATAR_m_shoes_winterboots2023: AvatarCustomizationMShoesWinterboots2023;
+	AVATAR_m_shoes_winterboots_0: AvatarCustomizationMShoesWinterboots0;
+	AVATAR_m_shoes_winterboots_1: AvatarCustomizationMShoesWinterboots1;
+	AVATAR_m_shoes_winterboots_2: AvatarCustomizationMShoesWinterboots2;
+	AVATAR_m_shoes_winterboots_3: AvatarCustomizationMShoesWinterboots3;
+	AVATAR_m_skin_0: AvatarCustomizationMSkin0;
+	AVATAR_m_skin_1: AvatarCustomizationMSkin1;
+	AVATAR_m_skin_10: AvatarCustomizationMSkin10;
+	AVATAR_m_skin_11: AvatarCustomizationMSkin11;
+	AVATAR_m_skin_2: AvatarCustomizationMSkin2;
+	AVATAR_m_skin_3: AvatarCustomizationMSkin3;
+	AVATAR_m_skin_4: AvatarCustomizationMSkin4;
+	AVATAR_m_skin_5: AvatarCustomizationMSkin5;
+	AVATAR_m_skin_6: AvatarCustomizationMSkin6;
+	AVATAR_m_skin_7: AvatarCustomizationMSkin7;
+	AVATAR_m_skin_8: AvatarCustomizationMSkin8;
+	AVATAR_m_skin_9: AvatarCustomizationMSkin9;
+	AVATAR_m_socks_default_0: AvatarCustomizationMSocksDefault0;
+	AVATAR_m_socks_default_1: AvatarCustomizationMSocksDefault1;
+	AVATAR_m_socks_default_2: AvatarCustomizationMSocksDefault2;
+	AVATAR_m_socks_default_3: AvatarCustomizationMSocksDefault3;
+	AVATAR_m_socks_empty: AvatarCustomizationMSocksEmpty;
+	AVATAR_m_socks_fw2022: AvatarCustomizationMSocksFw2022;
+	AVATAR_m_socks_sneakersocks_0: AvatarCustomizationMSocksSneakersocks0;
+	AVATAR_m_socks_sneakersocks_1: AvatarCustomizationMSocksSneakersocks1;
+	AVATAR_m_socks_sollunaitems: AvatarCustomizationMSocksSollunaitems;
+	AVATAR_m_socks_swshuniformdefault: AvatarCustomizationMSocksSwshuniformdefault;
+	AVATAR_m_socks_swshuniformdragon: AvatarCustomizationMSocksSwshuniformdragon;
+}

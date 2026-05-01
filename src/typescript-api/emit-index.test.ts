@@ -23,23 +23,27 @@ describe("emitIndex", () => {
 		expect(out).toContain('export { EntryNotFoundError, MasterfileFetchError, MasterfileParseError } from "./errors";');
 	});
 
-	test("re-exports the lookup-tables types", () => {
+	test("does NOT re-export lookup-table types from the barrel", () => {
+		// Lookup-table types live upstream in pogo-masterfile-types/lookup-table.
+		// Re-exporting them here would defeat the opt-in subpath strategy.
 		const out = emitIndex();
-		expect(out).toContain('export type { EntriesByGroup, EntryByTemplateID, GroupName, TemplateIDsByGroup } from "./lookup-tables";');
+		expect(out).not.toContain("EntryByTemplateID");
+		expect(out).not.toContain("EntriesByGroup");
+		expect(out).not.toContain("TemplateIDsByGroup");
+		expect(out).not.toContain("./lookup-tables");
+		expect(out).not.toContain("pogo-masterfile-types/lookup-table");
 	});
 
 	test("export order matches biome organize-imports default", () => {
 		const out = emitIndex();
 		const errorsIdx = out.indexOf('from "./errors"');
 		const fetchIdx = out.indexOf('from "./fetch"');
-		const lookupIdx = out.indexOf('from "./lookup-tables"');
 		const masterfileTypeIdx = out.indexOf("export type { GroupAccessor }");
 		const masterfileValueIdx = out.indexOf("export { Masterfile }");
 		const typesIdx = out.indexOf('from "./types"');
 		// Alphabetical by module + type-exports before value-exports for same module.
 		expect(errorsIdx).toBeLessThan(fetchIdx);
-		expect(fetchIdx).toBeLessThan(lookupIdx);
-		expect(lookupIdx).toBeLessThan(masterfileTypeIdx);
+		expect(fetchIdx).toBeLessThan(masterfileTypeIdx);
 		expect(masterfileTypeIdx).toBeLessThan(masterfileValueIdx);
 		expect(masterfileValueIdx).toBeLessThan(typesIdx);
 	});

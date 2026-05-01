@@ -1,0 +1,293 @@
+// Generated from Pokémon GO masterfile — "itemSettings" lookup table.
+
+import type {
+	ItemSettingsFusionResourceBlackKyurem,
+	ItemSettingsFusionResourceDawnwingsNecrozma,
+	ItemSettingsFusionResourceDuskmaneNecrozma,
+	ItemSettingsFusionResourceWhiteKyurem,
+	ItemSettingsItemBattlePassTicket,
+	ItemSettingsItemBeans,
+	ItemSettingsItemBeastBall,
+	ItemSettingsItemBlukBerry,
+	ItemSettingsItemBreakfast,
+	ItemSettingsItemDragonScale,
+	ItemSettingsItemEnhancedCurrency,
+	ItemSettingsItemEnhancedCurrencyHolder,
+	ItemSettingsItemEventPassPointGoFest01,
+	ItemSettingsItemEventPassPointGoFest02,
+	ItemSettingsItemEventPassPointGoTour01,
+	ItemSettingsItemEventPassPointGoTour02,
+	ItemSettingsItemEventPassPointGoWildArea01,
+	ItemSettingsItemEventPassPointLiveOps01,
+	ItemSettingsItemEventPassPointLiveOps02,
+	ItemSettingsItemEventPassPointLiveOps03,
+	ItemSettingsItemEventPassPointLiveOps04,
+	ItemSettingsItemEventPassPointLiveOps05,
+	ItemSettingsItemEventPassPointLiveOps06,
+	ItemSettingsItemEventPassPointLiveOps07,
+	ItemSettingsItemEventPassPointLiveOps08,
+	ItemSettingsItemEventPassPointMonthly01,
+	ItemSettingsItemEventPassPointMonthly02,
+	ItemSettingsItemEventPassPointMonthly03,
+	ItemSettingsItemEventTicket02,
+	ItemSettingsItemEventTicket02ToGift,
+	ItemSettingsItemEventTicket03,
+	ItemSettingsItemEventTicket03ToGift,
+	ItemSettingsItemEventTicket04,
+	ItemSettingsItemEventTicket04ToGift,
+	ItemSettingsItemEventTicket05,
+	ItemSettingsItemEventTicket05ToGift,
+	ItemSettingsItemEventTicket06,
+	ItemSettingsItemEventTicket06ToGift,
+	ItemSettingsItemEventTicket07,
+	ItemSettingsItemEventTicket07ToGift,
+	ItemSettingsItemEventTicket08,
+	ItemSettingsItemEventTicket08ToGift,
+	ItemSettingsItemEventTicket09,
+	ItemSettingsItemEventTicket09ToGift,
+	ItemSettingsItemEventTicket10,
+	ItemSettingsItemEventTicket10ToGift,
+	ItemSettingsItemEventTicketGray,
+	ItemSettingsItemEventTicketGrayToGift,
+	ItemSettingsItemEventTicketPink,
+	ItemSettingsItemEventTicketPinkToGift,
+	ItemSettingsItemEvergreenTicket,
+	ItemSettingsItemEvergreenTicketToGift,
+	ItemSettingsItemFreeRaidTicket,
+	ItemSettingsItemFriendGiftBox,
+	ItemSettingsItemGen4EvolutionStone,
+	ItemSettingsItemGen5EvolutionStone,
+	ItemSettingsItemGiovanniMap,
+	ItemSettingsItemGlobalEventTicket,
+	ItemSettingsItemGlobalEventTicketToGift,
+	ItemSettingsItemGoldenPinapBerry,
+	ItemSettingsItemGoldenRazzBerry,
+	ItemSettingsItemGreatBall,
+	ItemSettingsItemHyperPotion,
+	ItemSettingsItemIncenseBelugaBox,
+	ItemSettingsItemIncenseDailyAdventure,
+	ItemSettingsItemIncenseDayBonus,
+	ItemSettingsItemIncenseNightBonus,
+	ItemSettingsItemIncenseOrdinary,
+	ItemSettingsItemIncenseSparkly,
+	ItemSettingsItemIncubatorBasic,
+	ItemSettingsItemIncubatorBasicUnlimited,
+	ItemSettingsItemIncubatorSpecial,
+	ItemSettingsItemIncubatorSuper,
+	ItemSettingsItemIncubatorTimed,
+	ItemSettingsItemItemStorageUpgrade,
+	ItemSettingsItemKingsRock,
+	ItemSettingsItemLeaderMap,
+	ItemSettingsItemLeaderMapFragment,
+	ItemSettingsItemLuckyEgg,
+	ItemSettingsItemLuckyFriendApplicator,
+	ItemSettingsItemMasterBall,
+	ItemSettingsItemMaxBoost,
+	ItemSettingsItemMaxPotion,
+	ItemSettingsItemMaxRevive,
+	ItemSettingsItemMetalCoat,
+	ItemSettingsItemMoveRerollEliteFastAttack,
+	ItemSettingsItemMoveRerollEliteSpecialAttack,
+	ItemSettingsItemMoveRerollFastAttack,
+	ItemSettingsItemMoveRerollOtherSpecialAttackA,
+	ItemSettingsItemMoveRerollSpecialAttack,
+	ItemSettingsItemMp,
+	ItemSettingsItemMpReplenish,
+	ItemSettingsItemNanabBerry,
+	ItemSettingsItemOtherEvolutionStoneA,
+	ItemSettingsItemOtherEvolutionStoneMapleA,
+	ItemSettingsItemOtherEvolutionStoneMapleB,
+	ItemSettingsItemOtherEvolutionStoneMapleC,
+	ItemSettingsItemPaidRaidTicket,
+	ItemSettingsItemPinapBerry,
+	ItemSettingsItemPoffin,
+	ItemSettingsItemPokeBall,
+	ItemSettingsItemPokemonStorageUpgrade,
+	ItemSettingsItemPostcardInventory,
+	ItemSettingsItemPostcardStorageUpgrade,
+	ItemSettingsItemPotion,
+	ItemSettingsItemPremierBall,
+	ItemSettingsItemRareCandy,
+	ItemSettingsItemRazzBerry,
+	ItemSettingsItemRemoteRaidTicket,
+	ItemSettingsItemResourceCrownedZacian,
+	ItemSettingsItemResourceCrownedZamazenta,
+	ItemSettingsItemRevive,
+	ItemSettingsItemRouteMaker,
+	ItemSettingsItemShadowGem,
+	ItemSettingsItemShadowGemFragment,
+	ItemSettingsItemSingleStatIncrease,
+	ItemSettingsItemSoftSfida,
+	ItemSettingsItemSpecialCamera,
+	ItemSettingsItemStarPiece,
+	ItemSettingsItemStickerInventory,
+	ItemSettingsItemSunStone,
+	ItemSettingsItemSuperPotion,
+	ItemSettingsItemTeamChange,
+	ItemSettingsItemTicketCitySafari00,
+	ItemSettingsItemTicketCitySafari01,
+	ItemSettingsItemTicketCitySafari02,
+	ItemSettingsItemTicketCitySafari04,
+	ItemSettingsItemTripleStatIncrease,
+	ItemSettingsItemTroyDisk,
+	ItemSettingsItemTroyDiskGlacial,
+	ItemSettingsItemTroyDiskMagnetic,
+	ItemSettingsItemTroyDiskMossy,
+	ItemSettingsItemTroyDiskRainy,
+	ItemSettingsItemTroyDiskSparkly,
+	ItemSettingsItemUltraBall,
+	ItemSettingsItemUpGrade,
+	ItemSettingsItemWeparBerry,
+	ItemSettingsItemWildBall,
+	ItemSettingsItemWildBallPremier,
+	ItemSettingsItemXAttack,
+	ItemSettingsItemXDefense,
+	ItemSettingsItemXMiracle,
+	ItemSettingsItemXlRareCandy,
+} from "./entries";
+
+export interface ItemSettingsLookup {
+	FUSION_RESOURCE_BLACK_KYUREM: ItemSettingsFusionResourceBlackKyurem;
+	FUSION_RESOURCE_DAWNWINGS_NECROZMA: ItemSettingsFusionResourceDawnwingsNecrozma;
+	FUSION_RESOURCE_DUSKMANE_NECROZMA: ItemSettingsFusionResourceDuskmaneNecrozma;
+	FUSION_RESOURCE_WHITE_KYUREM: ItemSettingsFusionResourceWhiteKyurem;
+	ITEM_BATTLE_PASS_TICKET: ItemSettingsItemBattlePassTicket;
+	ITEM_BEANS: ItemSettingsItemBeans;
+	ITEM_BEAST_BALL: ItemSettingsItemBeastBall;
+	ITEM_BLUK_BERRY: ItemSettingsItemBlukBerry;
+	ITEM_BREAKFAST: ItemSettingsItemBreakfast;
+	ITEM_DRAGON_SCALE: ItemSettingsItemDragonScale;
+	ITEM_ENHANCED_CURRENCY: ItemSettingsItemEnhancedCurrency;
+	ITEM_ENHANCED_CURRENCY_HOLDER: ItemSettingsItemEnhancedCurrencyHolder;
+	ITEM_EVENT_PASS_POINT_GO_FEST_01: ItemSettingsItemEventPassPointGoFest01;
+	ITEM_EVENT_PASS_POINT_GO_FEST_02: ItemSettingsItemEventPassPointGoFest02;
+	ITEM_EVENT_PASS_POINT_GO_TOUR_01: ItemSettingsItemEventPassPointGoTour01;
+	ITEM_EVENT_PASS_POINT_GO_TOUR_02: ItemSettingsItemEventPassPointGoTour02;
+	ITEM_EVENT_PASS_POINT_GO_WILD_AREA_01: ItemSettingsItemEventPassPointGoWildArea01;
+	ITEM_EVENT_PASS_POINT_LIVE_OPS_01: ItemSettingsItemEventPassPointLiveOps01;
+	ITEM_EVENT_PASS_POINT_LIVE_OPS_02: ItemSettingsItemEventPassPointLiveOps02;
+	ITEM_EVENT_PASS_POINT_LIVE_OPS_03: ItemSettingsItemEventPassPointLiveOps03;
+	ITEM_EVENT_PASS_POINT_LIVE_OPS_04: ItemSettingsItemEventPassPointLiveOps04;
+	ITEM_EVENT_PASS_POINT_LIVE_OPS_05: ItemSettingsItemEventPassPointLiveOps05;
+	ITEM_EVENT_PASS_POINT_LIVE_OPS_06: ItemSettingsItemEventPassPointLiveOps06;
+	ITEM_EVENT_PASS_POINT_LIVE_OPS_07: ItemSettingsItemEventPassPointLiveOps07;
+	ITEM_EVENT_PASS_POINT_LIVE_OPS_08: ItemSettingsItemEventPassPointLiveOps08;
+	ITEM_EVENT_PASS_POINT_MONTHLY_01: ItemSettingsItemEventPassPointMonthly01;
+	ITEM_EVENT_PASS_POINT_MONTHLY_02: ItemSettingsItemEventPassPointMonthly02;
+	ITEM_EVENT_PASS_POINT_MONTHLY_03: ItemSettingsItemEventPassPointMonthly03;
+	ITEM_EVENT_TICKET_02: ItemSettingsItemEventTicket02;
+	ITEM_EVENT_TICKET_02_TO_GIFT: ItemSettingsItemEventTicket02ToGift;
+	ITEM_EVENT_TICKET_03: ItemSettingsItemEventTicket03;
+	ITEM_EVENT_TICKET_03_TO_GIFT: ItemSettingsItemEventTicket03ToGift;
+	ITEM_EVENT_TICKET_04: ItemSettingsItemEventTicket04;
+	ITEM_EVENT_TICKET_04_TO_GIFT: ItemSettingsItemEventTicket04ToGift;
+	ITEM_EVENT_TICKET_05: ItemSettingsItemEventTicket05;
+	ITEM_EVENT_TICKET_05_TO_GIFT: ItemSettingsItemEventTicket05ToGift;
+	ITEM_EVENT_TICKET_06: ItemSettingsItemEventTicket06;
+	ITEM_EVENT_TICKET_06_TO_GIFT: ItemSettingsItemEventTicket06ToGift;
+	ITEM_EVENT_TICKET_07: ItemSettingsItemEventTicket07;
+	ITEM_EVENT_TICKET_07_TO_GIFT: ItemSettingsItemEventTicket07ToGift;
+	ITEM_EVENT_TICKET_08: ItemSettingsItemEventTicket08;
+	ITEM_EVENT_TICKET_08_TO_GIFT: ItemSettingsItemEventTicket08ToGift;
+	ITEM_EVENT_TICKET_09: ItemSettingsItemEventTicket09;
+	ITEM_EVENT_TICKET_09_TO_GIFT: ItemSettingsItemEventTicket09ToGift;
+	ITEM_EVENT_TICKET_10: ItemSettingsItemEventTicket10;
+	ITEM_EVENT_TICKET_10_TO_GIFT: ItemSettingsItemEventTicket10ToGift;
+	ITEM_EVENT_TICKET_GRAY: ItemSettingsItemEventTicketGray;
+	ITEM_EVENT_TICKET_GRAY_TO_GIFT: ItemSettingsItemEventTicketGrayToGift;
+	ITEM_EVENT_TICKET_PINK: ItemSettingsItemEventTicketPink;
+	ITEM_EVENT_TICKET_PINK_TO_GIFT: ItemSettingsItemEventTicketPinkToGift;
+	ITEM_EVERGREEN_TICKET: ItemSettingsItemEvergreenTicket;
+	ITEM_EVERGREEN_TICKET_TO_GIFT: ItemSettingsItemEvergreenTicketToGift;
+	ITEM_FREE_RAID_TICKET: ItemSettingsItemFreeRaidTicket;
+	ITEM_FRIEND_GIFT_BOX: ItemSettingsItemFriendGiftBox;
+	ITEM_GEN4_EVOLUTION_STONE: ItemSettingsItemGen4EvolutionStone;
+	ITEM_GEN5_EVOLUTION_STONE: ItemSettingsItemGen5EvolutionStone;
+	ITEM_GIOVANNI_MAP: ItemSettingsItemGiovanniMap;
+	ITEM_GLOBAL_EVENT_TICKET: ItemSettingsItemGlobalEventTicket;
+	ITEM_GLOBAL_EVENT_TICKET_TO_GIFT: ItemSettingsItemGlobalEventTicketToGift;
+	ITEM_GOLDEN_PINAP_BERRY: ItemSettingsItemGoldenPinapBerry;
+	ITEM_GOLDEN_RAZZ_BERRY: ItemSettingsItemGoldenRazzBerry;
+	ITEM_GREAT_BALL: ItemSettingsItemGreatBall;
+	ITEM_HYPER_POTION: ItemSettingsItemHyperPotion;
+	ITEM_INCENSE_BELUGA_BOX: ItemSettingsItemIncenseBelugaBox;
+	ITEM_INCENSE_DAILY_ADVENTURE: ItemSettingsItemIncenseDailyAdventure;
+	ITEM_INCENSE_DAY_BONUS: ItemSettingsItemIncenseDayBonus;
+	ITEM_INCENSE_NIGHT_BONUS: ItemSettingsItemIncenseNightBonus;
+	ITEM_INCENSE_ORDINARY: ItemSettingsItemIncenseOrdinary;
+	ITEM_INCENSE_SPARKLY: ItemSettingsItemIncenseSparkly;
+	ITEM_INCUBATOR_BASIC: ItemSettingsItemIncubatorBasic;
+	ITEM_INCUBATOR_BASIC_UNLIMITED: ItemSettingsItemIncubatorBasicUnlimited;
+	ITEM_INCUBATOR_SPECIAL: ItemSettingsItemIncubatorSpecial;
+	ITEM_INCUBATOR_SUPER: ItemSettingsItemIncubatorSuper;
+	ITEM_INCUBATOR_TIMED: ItemSettingsItemIncubatorTimed;
+	ITEM_ITEM_STORAGE_UPGRADE: ItemSettingsItemItemStorageUpgrade;
+	ITEM_KINGS_ROCK: ItemSettingsItemKingsRock;
+	ITEM_LEADER_MAP: ItemSettingsItemLeaderMap;
+	ITEM_LEADER_MAP_FRAGMENT: ItemSettingsItemLeaderMapFragment;
+	ITEM_LUCKY_EGG: ItemSettingsItemLuckyEgg;
+	ITEM_LUCKY_FRIEND_APPLICATOR: ItemSettingsItemLuckyFriendApplicator;
+	ITEM_MASTER_BALL: ItemSettingsItemMasterBall;
+	ITEM_MAX_BOOST: ItemSettingsItemMaxBoost;
+	ITEM_MAX_POTION: ItemSettingsItemMaxPotion;
+	ITEM_MAX_REVIVE: ItemSettingsItemMaxRevive;
+	ITEM_METAL_COAT: ItemSettingsItemMetalCoat;
+	ITEM_MOVE_REROLL_ELITE_FAST_ATTACK: ItemSettingsItemMoveRerollEliteFastAttack;
+	ITEM_MOVE_REROLL_ELITE_SPECIAL_ATTACK: ItemSettingsItemMoveRerollEliteSpecialAttack;
+	ITEM_MOVE_REROLL_FAST_ATTACK: ItemSettingsItemMoveRerollFastAttack;
+	ITEM_MOVE_REROLL_OTHER_SPECIAL_ATTACK_A: ItemSettingsItemMoveRerollOtherSpecialAttackA;
+	ITEM_MOVE_REROLL_SPECIAL_ATTACK: ItemSettingsItemMoveRerollSpecialAttack;
+	ITEM_MP: ItemSettingsItemMp;
+	ITEM_MP_REPLENISH: ItemSettingsItemMpReplenish;
+	ITEM_NANAB_BERRY: ItemSettingsItemNanabBerry;
+	ITEM_OTHER_EVOLUTION_STONE_A: ItemSettingsItemOtherEvolutionStoneA;
+	ITEM_OTHER_EVOLUTION_STONE_MAPLE_A: ItemSettingsItemOtherEvolutionStoneMapleA;
+	ITEM_OTHER_EVOLUTION_STONE_MAPLE_B: ItemSettingsItemOtherEvolutionStoneMapleB;
+	ITEM_OTHER_EVOLUTION_STONE_MAPLE_C: ItemSettingsItemOtherEvolutionStoneMapleC;
+	ITEM_PAID_RAID_TICKET: ItemSettingsItemPaidRaidTicket;
+	ITEM_PINAP_BERRY: ItemSettingsItemPinapBerry;
+	ITEM_POFFIN: ItemSettingsItemPoffin;
+	ITEM_POKEMON_STORAGE_UPGRADE: ItemSettingsItemPokemonStorageUpgrade;
+	ITEM_POKE_BALL: ItemSettingsItemPokeBall;
+	ITEM_POSTCARD_INVENTORY: ItemSettingsItemPostcardInventory;
+	ITEM_POSTCARD_STORAGE_UPGRADE: ItemSettingsItemPostcardStorageUpgrade;
+	ITEM_POTION: ItemSettingsItemPotion;
+	ITEM_PREMIER_BALL: ItemSettingsItemPremierBall;
+	ITEM_RARE_CANDY: ItemSettingsItemRareCandy;
+	ITEM_RAZZ_BERRY: ItemSettingsItemRazzBerry;
+	ITEM_REMOTE_RAID_TICKET: ItemSettingsItemRemoteRaidTicket;
+	ITEM_RESOURCE_CROWNED_ZACIAN: ItemSettingsItemResourceCrownedZacian;
+	ITEM_RESOURCE_CROWNED_ZAMAZENTA: ItemSettingsItemResourceCrownedZamazenta;
+	ITEM_REVIVE: ItemSettingsItemRevive;
+	ITEM_ROUTE_MAKER: ItemSettingsItemRouteMaker;
+	ITEM_SHADOW_GEM: ItemSettingsItemShadowGem;
+	ITEM_SHADOW_GEM_FRAGMENT: ItemSettingsItemShadowGemFragment;
+	ITEM_SINGLE_STAT_INCREASE: ItemSettingsItemSingleStatIncrease;
+	ITEM_SOFT_SFIDA: ItemSettingsItemSoftSfida;
+	ITEM_SPECIAL_CAMERA: ItemSettingsItemSpecialCamera;
+	ITEM_STAR_PIECE: ItemSettingsItemStarPiece;
+	ITEM_STICKER_INVENTORY: ItemSettingsItemStickerInventory;
+	ITEM_SUN_STONE: ItemSettingsItemSunStone;
+	ITEM_SUPER_POTION: ItemSettingsItemSuperPotion;
+	ITEM_TEAM_CHANGE: ItemSettingsItemTeamChange;
+	ITEM_TICKET_CITY_SAFARI_00: ItemSettingsItemTicketCitySafari00;
+	ITEM_TICKET_CITY_SAFARI_01: ItemSettingsItemTicketCitySafari01;
+	ITEM_TICKET_CITY_SAFARI_02: ItemSettingsItemTicketCitySafari02;
+	ITEM_TICKET_CITY_SAFARI_04: ItemSettingsItemTicketCitySafari04;
+	ITEM_TRIPLE_STAT_INCREASE: ItemSettingsItemTripleStatIncrease;
+	ITEM_TROY_DISK: ItemSettingsItemTroyDisk;
+	ITEM_TROY_DISK_GLACIAL: ItemSettingsItemTroyDiskGlacial;
+	ITEM_TROY_DISK_MAGNETIC: ItemSettingsItemTroyDiskMagnetic;
+	ITEM_TROY_DISK_MOSSY: ItemSettingsItemTroyDiskMossy;
+	ITEM_TROY_DISK_RAINY: ItemSettingsItemTroyDiskRainy;
+	ITEM_TROY_DISK_SPARKLY: ItemSettingsItemTroyDiskSparkly;
+	ITEM_ULTRA_BALL: ItemSettingsItemUltraBall;
+	ITEM_UP_GRADE: ItemSettingsItemUpGrade;
+	ITEM_WEPAR_BERRY: ItemSettingsItemWeparBerry;
+	ITEM_WILD_BALL: ItemSettingsItemWildBall;
+	ITEM_WILD_BALL_PREMIER: ItemSettingsItemWildBallPremier;
+	ITEM_XL_RARE_CANDY: ItemSettingsItemXlRareCandy;
+	ITEM_X_ATTACK: ItemSettingsItemXAttack;
+	ITEM_X_DEFENSE: ItemSettingsItemXDefense;
+	ITEM_X_MIRACLE: ItemSettingsItemXMiracle;
+}

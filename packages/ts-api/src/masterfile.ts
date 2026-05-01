@@ -1,10 +1,10 @@
 /** biome-ignore-all lint/suspicious/noUnsafeDeclarationMerging: the Masterfile class+interface merge below intentionally adds per-group accessor properties installed dynamically in the constructor. */
 
 import type { MasterfileEntry } from "pogo-masterfile-types/entries";
+import type { EntriesByGroup, EntryByTemplateID, TemplateIDsByGroup } from "pogo-masterfile-types/lookup-table";
 import { EntryNotFoundError } from "./errors";
 import { DEFAULT_MASTERFILE_URL, defaultFetcher } from "./fetch";
 import { GROUP_NAMES, type GroupName } from "./group-names";
-import type { EntriesByGroup, EntryByTemplateID, TemplateIDsByGroup } from "./lookup-tables";
 import type { FromRemoteOptions } from "./types";
 
 // ── Group accessor ─────────────────────────────────────────────────────────

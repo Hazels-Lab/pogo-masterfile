@@ -7,7 +7,7 @@
 		"packages/*"
 	],
 	"scripts": {
-		"generate": "bun run src/generate.ts && bun run format && (cd packages/rust && cargo fmt) && (cd packages/go && gofmt -w .)",
+		"generate": "bun run src/generate.ts && bun run format && cargo fmt && (cd packages/go && gofmt -w .)",
 		"test": "bun test",
 		"typecheck": "tsc --noEmit",
 		"lint": "biome check",

@@ -348,3 +348,160 @@ export function emitTopLevelVariants(groupSplits: Map<string, "split" | "flat">)
 export function emitIndexFile() {
 	return new AstFileBuilder().exportTypeStar(`./${ENTRIES_LOWER}`).exportTypeStar(`./${TYPES_LOWER}`).render();
 }
+
+// ── Lookup-table emitters ───────────────────────────────────────────────────
+//
+// Optional opt-in subpath: `pogo-masterfile-types/lookup-table` (root) and
+// `pogo-masterfile-types/<group>/lookup-table` (per-group). Maps each
+// templateId to its specific literal-typed entry interface — useful for
+// consumers that want O(1) typed lookups without re-deriving them.
+//
+// Deliberately NOT re-exported from the main package barrel (`index.d.ts`):
+// the root lookup table is expensive to materialize (one big interface with
+// every templateId in the masterfile) and shouldn't be paid for by every
+// consumer.
+//
+// String templates (rather than the AST builder) — these files are flat and
+// regular enough that templating wins on readability.
+
+function isValidIdentifier(s: string): boolean {
+	return /^[A-Za-z_$][A-Za-z0-9_$]*$/.test(s);
+}
+
+export function emitGroupLookupTable(group: Group): string {
+	const gName = groupName(group.discriminator);
+	const sortedIds = [...group.entries].map((e) => e.templateId).sort();
+	const aliases = deriveGroupAliases(sortedIds, gName);
+
+	const importedTypes = new Set<string>();
+	const lines: string[] = [];
+	for (const id of sortedIds) {
+		const suffix = aliases.get(id);
+		if (suffix === undefined) {
+			throw new Error(`emitGroupLookupTable: no alias derived for templateId "${id}" in group "${group.discriminator}"`);
+		}
+		const typeName = `${gName}${suffix}`;
+		importedTypes.add(typeName);
+		const key = isValidIdentifier(id) ? id : `"${id}"`;
+		lines.push(`\t${key}: ${typeName};`);
+	}
+
+	const sortedImports = [...importedTypes].sort();
+
+	return `// Generated from Pokémon GO masterfile — "${group.discriminator}" lookup table.
+
+import type {
+${sortedImports.map((n) => `\t${n},`).join("\n")}
+} from "./${ENTRIES_LOWER}";
+
+export interface ${gName}Lookup {
+${lines.join("\n")}
+}
+`;
+}
+
+export function emitSingletonsLookupTable(singletons: Group[]): string {
+	const importedTypes = new Set<string>();
+	const entries: { templateId: string; typeName: string }[] = [];
+
+	for (const g of singletons) {
+		const entry = g.entries[0]!;
+		const dataKeys = Object.keys(entry.data).filter((k) => k !== "templateId");
+		const isStub = dataKeys.length === 0;
+		const typeName = isStub ? aliasSuffix(entry.templateId, "") : groupName(g.discriminator);
+		importedTypes.add(typeName);
+		entries.push({ templateId: entry.templateId, typeName });
+	}
+
+	entries.sort((a, b) => a.templateId.localeCompare(b.templateId));
+
+	const lines = entries.map(({ templateId, typeName }) => {
+		const key = isValidIdentifier(templateId) ? templateId : `"${templateId}"`;
+		return `\t${key}: ${typeName};`;
+	});
+
+	const sortedImports = [...importedTypes].sort();
+
+	return `// Generated from Pokémon GO masterfile — singletons lookup table.
+
+import type {
+${sortedImports.map((n) => `\t${n},`).join("\n")}
+} from "./${ENTRIES_LOWER}";
+
+export interface ${SINGLETONS}Lookup {
+${lines.join("\n")}
+}
+`;
+}
+
+export function emitRootLookupTable(multiEntry: Group[], hasSingletons: boolean): string {
+	const sortedMulti = [...multiEntry].sort((a, b) => a.discriminator.localeCompare(b.discriminator));
+	const groupInfos = sortedMulti.map((g) => ({
+		discriminator: g.discriminator,
+		gName: groupName(g.discriminator),
+		kebab: kebabCase(g.discriminator),
+	}));
+
+	const groupAliases: string[] = [];
+	for (const info of groupInfos) {
+		groupAliases.push(`${info.gName}${BARREL_TYPE}${ENTRY}`, `${info.gName}${TEMPLATE_GENERIC}`);
+	}
+	if (hasSingletons) {
+		groupAliases.push(`${SINGLETONS}${BARREL_TYPE}${ENTRY}`, `${SINGLETONS}${TEMPLATE_GENERIC}`);
+	}
+	groupAliases.sort();
+
+	const lookupImportLines: string[] = [];
+	const lookupReExportLines: string[] = [];
+	const groupNameLiterals: string[] = [];
+	const entriesByGroupLines: string[] = [];
+	const templateIdsByGroupLines: string[] = [];
+	const lookupNames: string[] = [];
+
+	for (const info of groupInfos) {
+		lookupImportLines.push(`import type { ${info.gName}Lookup } from "./${info.kebab}/lookup-table";`);
+		lookupReExportLines.push(`export type { ${info.gName}Lookup } from "./${info.kebab}/lookup-table";`);
+		groupNameLiterals.push(`"${info.discriminator}"`);
+		entriesByGroupLines.push(`\t${info.discriminator}: ${info.gName}${BARREL_TYPE}${ENTRY};`);
+		templateIdsByGroupLines.push(`\t${info.discriminator}: ${info.gName}${TEMPLATE_GENERIC};`);
+		lookupNames.push(`${info.gName}Lookup`);
+	}
+
+	if (hasSingletons) {
+		const singletonsKebab = SINGLETONS.toLowerCase();
+		lookupImportLines.push(`import type { ${SINGLETONS}Lookup } from "./${singletonsKebab}/lookup-table";`);
+		lookupReExportLines.push(`export type { ${SINGLETONS}Lookup } from "./${singletonsKebab}/lookup-table";`);
+		groupNameLiterals.push(`"${singletonsKebab}"`);
+		entriesByGroupLines.push(`\t${singletonsKebab}: ${SINGLETONS}${BARREL_TYPE}${ENTRY};`);
+		templateIdsByGroupLines.push(`\t${singletonsKebab}: ${SINGLETONS}${TEMPLATE_GENERIC};`);
+		lookupNames.push(`${SINGLETONS}Lookup`);
+	}
+
+	return `// Generated from Pokémon GO masterfile — root lookup table.
+//
+// Composed via interface inheritance from each group's lookup-table file.
+// Materialized shape is identical to a single big interface, but the source
+// is split per-group so the editor can lazily load the slice relevant to the
+// current cursor position.
+
+import type {
+${groupAliases.map((n) => `\t${n},`).join("\n")}
+} from "./${ENTRIES_LOWER}";
+${lookupImportLines.join("\n")}
+
+${lookupReExportLines.join("\n")}
+
+export type GroupName = ${groupNameLiterals.join(" | ")};
+
+export interface ${ENTRY}By${TEMPLATE_GENERIC} extends
+${lookupNames.map((n) => `\t${n}`).join(",\n")} {}
+
+export interface EntriesByGroup {
+${entriesByGroupLines.join("\n")}
+}
+
+export interface TemplateIDsByGroup {
+${templateIdsByGroupLines.join("\n")}
+}
+`;
+}

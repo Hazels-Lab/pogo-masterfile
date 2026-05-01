@@ -33,6 +33,9 @@
 		"./types": {
 			"types": "./dist/types.d.ts"
 		},
+		"./lookup-table": {
+			"types": "./dist/lookup-table.d.ts"
+		},
 		"./*": {
 			"types": "./dist/*/index.d.ts"
 		},
@@ -41,6 +44,9 @@
 		},
 		"./*/types": {
 			"types": "./dist/*/types.d.ts"
+		},
+		"./*/lookup-table": {
+			"types": "./dist/*/lookup-table.d.ts"
 		},
 		"./*/entries/*": {
 			"types": "./dist/*/entries/*.d.ts"
