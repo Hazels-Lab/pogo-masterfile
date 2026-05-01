@@ -385,9 +385,7 @@ function emitGoConstBlock(typeName: string, idsToVariants: Map<string, string>):
 	// Align values for readability — gofmt does this anyway, but we produce
 	// it pre-aligned to keep diffs deterministic.
 	const widest = Math.max(...constNames.map((n) => n.length));
-	const constLines = sortedIds
-		.map((id, i) => `\t${constNames[i]!.padEnd(widest, " ")} ${typeName} = ${JSON.stringify(id)}`)
-		.join("\n");
+	const constLines = sortedIds.map((id, i) => `\t${constNames[i]!.padEnd(widest, " ")} ${typeName} = ${JSON.stringify(id)}`).join("\n");
 
 	const valuesLines = constNames.map((n) => `\t${n},`).join("\n");
 

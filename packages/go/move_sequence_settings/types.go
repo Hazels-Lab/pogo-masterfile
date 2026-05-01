@@ -7,13 +7,13 @@ type MoveSequenceSettings struct {
 }
 
 type MoveSequenceSettingsEntry struct {
-	TemplateID string `json:"templateId"`
+	TemplateID string                        `json:"templateId"`
 	Data       MoveSequenceSettingsEntryData `json:"data"`
 }
 
 func (MoveSequenceSettingsEntry) MasterfileEntry() {}
 
 type MoveSequenceSettingsEntryData struct {
-	TemplateID     string `json:"templateId"`
+	TemplateID           string               `json:"templateId"`
 	MoveSequenceSettings MoveSequenceSettings `json:"moveSequenceSettings"`
 }

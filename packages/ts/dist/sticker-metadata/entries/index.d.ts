@@ -24,6 +24,17 @@ export type * from "./region-id-release-date-sticker-url";
 export type * from "./release-date";
 export type * from "./release-date-sticker-url";
 
-export type StickerMetadataMasterfileEntry = StickerMetadataMiscMasterfileEntry | StickerMetadataPokemonIdMasterfileEntry | StickerMetadataPokemonIdRegionIdMasterfileEntry | StickerMetadataPokemonIdRegionIdReleaseDateMasterfileEntry | StickerMetadataPokemonIdRegionIdReleaseDateStickerUrlMasterfileEntry | StickerMetadataPokemonIdReleaseDateMasterfileEntry | StickerMetadataPokemonIdReleaseDateStickerUrlMasterfileEntry | StickerMetadataRegionIdReleaseDateMasterfileEntry | StickerMetadataRegionIdReleaseDateStickerUrlMasterfileEntry | StickerMetadataReleaseDateMasterfileEntry | StickerMetadataReleaseDateStickerUrlMasterfileEntry;
+export type StickerMetadataMasterfileEntry =
+	| StickerMetadataMiscMasterfileEntry
+	| StickerMetadataPokemonIdMasterfileEntry
+	| StickerMetadataPokemonIdRegionIdMasterfileEntry
+	| StickerMetadataPokemonIdRegionIdReleaseDateMasterfileEntry
+	| StickerMetadataPokemonIdRegionIdReleaseDateStickerUrlMasterfileEntry
+	| StickerMetadataPokemonIdReleaseDateMasterfileEntry
+	| StickerMetadataPokemonIdReleaseDateStickerUrlMasterfileEntry
+	| StickerMetadataRegionIdReleaseDateMasterfileEntry
+	| StickerMetadataRegionIdReleaseDateStickerUrlMasterfileEntry
+	| StickerMetadataReleaseDateMasterfileEntry
+	| StickerMetadataReleaseDateStickerUrlMasterfileEntry;
 
 export type StickerMetadataTemplateID = StickerMetadataMasterfileEntry["templateId"];

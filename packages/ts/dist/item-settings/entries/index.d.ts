@@ -62,6 +62,36 @@ export type * from "./team-change";
 export type * from "./utilites";
 export type * from "./xp-boost";
 
-export type ItemSettingsMasterfileEntry = ItemSettingsBoostMasterfileEntry | ItemSettingsBreadMasterfileEntry | ItemSettingsBuddyExclusiveFoodMasterfileEntry | ItemSettingsCameraMasterfileEntry | ItemSettingsCandyMasterfileEntry | ItemSettingsDiskMasterfileEntry | ItemSettingsEnhancedCurrencyMasterfileEntry | ItemSettingsEnhancedCurrencyHolderMasterfileEntry | ItemSettingsEventPassPointMasterfileEntry | ItemSettingsEvolutionRequirementMasterfileEntry | ItemSettingsFoodMasterfileEntry | ItemSettingsFriendGiftBoxMasterfileEntry | ItemSettingsGlobalEventTicketMasterfileEntry | ItemSettingsIncenseMasterfileEntry | ItemSettingsIncidentTicketMasterfileEntry | ItemSettingsIncubatorMasterfileEntry | ItemSettingsInventoryUpgradeMasterfileEntry | ItemSettingsMedicineMasterfileEntry | ItemSettingsMoveRerollMasterfileEntry | ItemSettingsMpMasterfileEntry | ItemSettingsPokeballMasterfileEntry | ItemSettingsPostcardInventoryMasterfileEntry | ItemSettingsRaidTicketMasterfileEntry | ItemSettingsRouteMakerMasterfileEntry | ItemSettingsStardustBoostMasterfileEntry | ItemSettingsStatIncreaseMasterfileEntry | ItemSettingsStickerMasterfileEntry | ItemSettingsTeamChangeMasterfileEntry | ItemSettingsUtilitesMasterfileEntry | ItemSettingsXpBoostMasterfileEntry;
+export type ItemSettingsMasterfileEntry =
+	| ItemSettingsBoostMasterfileEntry
+	| ItemSettingsBreadMasterfileEntry
+	| ItemSettingsBuddyExclusiveFoodMasterfileEntry
+	| ItemSettingsCameraMasterfileEntry
+	| ItemSettingsCandyMasterfileEntry
+	| ItemSettingsDiskMasterfileEntry
+	| ItemSettingsEnhancedCurrencyMasterfileEntry
+	| ItemSettingsEnhancedCurrencyHolderMasterfileEntry
+	| ItemSettingsEventPassPointMasterfileEntry
+	| ItemSettingsEvolutionRequirementMasterfileEntry
+	| ItemSettingsFoodMasterfileEntry
+	| ItemSettingsFriendGiftBoxMasterfileEntry
+	| ItemSettingsGlobalEventTicketMasterfileEntry
+	| ItemSettingsIncenseMasterfileEntry
+	| ItemSettingsIncidentTicketMasterfileEntry
+	| ItemSettingsIncubatorMasterfileEntry
+	| ItemSettingsInventoryUpgradeMasterfileEntry
+	| ItemSettingsMedicineMasterfileEntry
+	| ItemSettingsMoveRerollMasterfileEntry
+	| ItemSettingsMpMasterfileEntry
+	| ItemSettingsPokeballMasterfileEntry
+	| ItemSettingsPostcardInventoryMasterfileEntry
+	| ItemSettingsRaidTicketMasterfileEntry
+	| ItemSettingsRouteMakerMasterfileEntry
+	| ItemSettingsStardustBoostMasterfileEntry
+	| ItemSettingsStatIncreaseMasterfileEntry
+	| ItemSettingsStickerMasterfileEntry
+	| ItemSettingsTeamChangeMasterfileEntry
+	| ItemSettingsUtilitesMasterfileEntry
+	| ItemSettingsXpBoostMasterfileEntry;
 
 export type ItemSettingsTemplateID = ItemSettingsMasterfileEntry["templateId"];

@@ -522,9 +522,7 @@ export function emitGroupTemplateIdsFile(group: Group): string {
 	const variants = deriveTemplateIdVariants(ids);
 
 	const sortedIds = [...ids].sort();
-	const variantBlock = sortedIds
-		.map((id) => `    #[serde(rename = ${JSON.stringify(id)})]\n    ${variants.get(id)!},`)
-		.join("\n");
+	const variantBlock = sortedIds.map((id) => `    #[serde(rename = ${JSON.stringify(id)})]\n    ${variants.get(id)!},`).join("\n");
 
 	return `//! Generated from Pokémon GO masterfile — group "${group.discriminator}" templateIds.
 
@@ -584,9 +582,7 @@ export function emitSingletonsTemplateIdsFile(singletons: readonly Group[]): str
 	const variants = deriveTemplateIdVariants(allIds);
 
 	const sortedIds = [...allIds].sort();
-	const variantBlock = sortedIds
-		.map((id) => `    #[serde(rename = ${JSON.stringify(id)})]\n    ${variants.get(id)!},`)
-		.join("\n");
+	const variantBlock = sortedIds.map((id) => `    #[serde(rename = ${JSON.stringify(id)})]\n    ${variants.get(id)!},`).join("\n");
 
 	return `//! Generated from Pokémon GO masterfile — singletons templateIds.
 
@@ -603,7 +599,6 @@ ${variantBlock}
 }
 `;
 }
-
 
 // Macros invoked by every generated module to define the Entry/EntryData
 // wrapper pair that mirrors the masterfile JSON shape. Exported at crate root

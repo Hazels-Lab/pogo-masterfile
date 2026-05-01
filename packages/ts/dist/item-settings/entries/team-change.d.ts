@@ -1,12 +1,17 @@
 // Generated from Pokémon GO masterfile — group "itemSettings", split "team-change", 1 entry.
 
 import type { S } from "../../_utils";
-import type { ItemSettings, ItemSettingsData } from "../types";
+import type { ItemSettings } from "../types";
 
-export type ItemSettingsItemTeamChange = S<ItemSettings<"ITEM_TEAM_CHANGE", {
-    category: "ITEM_CATEGORY_TEAM_CHANGE";
-    dropTrainerLevel: 100;
-    itemType: "ITEM_TYPE_TEAM_CHANGE";
-}>>;
+export type ItemSettingsItemTeamChange = S<
+	ItemSettings<
+		"ITEM_TEAM_CHANGE",
+		{
+			category: "ITEM_CATEGORY_TEAM_CHANGE";
+			dropTrainerLevel: 100;
+			itemType: "ITEM_TYPE_TEAM_CHANGE";
+		}
+	>
+>;
 
 export type ItemSettingsTeamChangeMasterfileEntry = ItemSettingsItemTeamChange;

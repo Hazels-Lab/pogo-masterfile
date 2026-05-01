@@ -28,7 +28,7 @@ describe("emitSingletonsTemplateIdsFile", () => {
 		const singletons = [...groups.values()].filter((g) => g.entries.length === 1);
 		const out = emitSingletonsTemplateIdsFile(singletons, "masterfile");
 
-		expect(out).toContain('// Generated from Pokémon GO masterfile — singletons templateIds.');
+		expect(out).toContain("// Generated from Pokémon GO masterfile — singletons templateIds.");
 		expect(out).toContain("type SingletonsTemplateID string");
 		expect(out).toContain("var SingletonsTemplateIDValues = [...]SingletonsTemplateID{");
 	});

@@ -10,6 +10,10 @@ export type * from "./event-badge";
 export type * from "./event-badge-event-badge-settings";
 export type * from "./misc";
 
-export type BadgeSettingsMasterfileEntry = BadgeSettingsCaptureRewardMasterfileEntry | BadgeSettingsEventBadgeMasterfileEntry | BadgeSettingsEventBadgeEventBadgeSettingsMasterfileEntry | BadgeSettingsMiscMasterfileEntry;
+export type BadgeSettingsMasterfileEntry =
+	| BadgeSettingsCaptureRewardMasterfileEntry
+	| BadgeSettingsEventBadgeMasterfileEntry
+	| BadgeSettingsEventBadgeEventBadgeSettingsMasterfileEntry
+	| BadgeSettingsMiscMasterfileEntry;
 
 export type BadgeSettingsTemplateID = BadgeSettingsMasterfileEntry["templateId"];
