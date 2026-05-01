@@ -74,7 +74,9 @@ mod template_id_macro_round_trip {
     use serde::{Deserialize, Serialize};
     use std::str::FromStr;
 
-    #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum)]
+    #[derive(
+        Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum,
+    )]
     enum Sample {
         #[serde(rename = "BADGE_ALPHA")]
         Alpha,

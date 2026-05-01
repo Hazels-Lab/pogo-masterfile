@@ -4,9 +4,7 @@ use crate::{AllVariants, AsStr, FromStrEnum};
 use serde::{Deserialize, Serialize};
 
 #[derive(
-    Debug, Clone, Copy, PartialEq, Eq, Hash,
-    Serialize, Deserialize,
-    AllVariants, AsStr, FromStrEnum,
+    Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum,
 )]
 pub enum PokemonExtendedSettingsTemplateId {
     #[serde(rename = "EXTENDED_V0001_POKEMON_BULBASAUR")]

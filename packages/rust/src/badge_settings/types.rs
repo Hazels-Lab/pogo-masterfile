@@ -67,7 +67,13 @@ pub struct CaptureRewardV6 {
 pub struct CaptureReward {
     pub badge_rank: u64,
     pub badge_type: String,
-    pub capture_reward: (CaptureRewardV2, CaptureRewardV3, CaptureRewardV4, CaptureRewardV5, CaptureRewardV6),
+    pub capture_reward: (
+        CaptureRewardV2,
+        CaptureRewardV3,
+        CaptureRewardV4,
+        CaptureRewardV5,
+        CaptureRewardV6,
+    ),
     pub targets: [u64; 4],
 }
 

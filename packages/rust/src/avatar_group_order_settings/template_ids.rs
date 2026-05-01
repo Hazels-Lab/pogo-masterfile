@@ -4,13 +4,11 @@ use crate::{AllVariants, AsStr, FromStrEnum};
 use serde::{Deserialize, Serialize};
 
 #[derive(
-    Debug, Clone, Copy, PartialEq, Eq, Hash,
-    Serialize, Deserialize,
-    AllVariants, AsStr, FromStrEnum,
+    Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum,
 )]
 pub enum AvatarGroupOrderSettingsTemplateId {
     #[serde(rename = "AVATAR_GROUP_ORDER_SETTINGS")]
-    AvatarGroupOrderSettings,
+    AvatarGroupOrderSettings = 0,
     #[serde(rename = "AVATAR_GROUP_SETTINGS")]
-    AvatarGroupSettings,
+    AvatarGroupSettings = 1,
 }
