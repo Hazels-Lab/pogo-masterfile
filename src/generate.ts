@@ -29,10 +29,14 @@ async function main(): Promise<void> {
 	configureFloatFieldHints(floatFields);
 	console.log(`Detected ${floatFields.size} float-typed field names from source.`);
 
-	await generateTypeScript(entries);
-	await generateTypeScriptApi(entries);
-	await generateRust(entries);
-	await generateGo(entries);
+	await Promise.all([
+		(async () => {
+			await generateTypeScript(entries);
+			await generateTypeScriptApi(entries);
+		})(),
+		generateRust(entries),
+		generateGo(entries),
+	]);
 }
 
 main().catch((err) => {
