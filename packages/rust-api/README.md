@@ -44,14 +44,17 @@ for move_ in mf.move_settings().iter() {
 The `Masterfile` struct splits its lookup APIs to match Rust's idioms:
 
 - **Top-level** (`mf.get_entry`, `mf.has`) returns `&MasterfileEntry` (the wide enum). Use it for arbitrary string IDs.
-- **Per-group accessor** (`mf.move_settings().get(id)`) narrows to the exact `&MoveSettingsEntry` struct. The input is a typed `MoveSettingsTemplateId` enum (compile-time validated). For string lookups, parse via `FromStr`:
+- **Per-group accessor** (`mf.move_settings().get(id)`) narrows to the exact `&MoveSettingsEntry` struct. The `id` parameter is polymorphic (`impl TryInto<MoveSettingsTemplateId>`) — accepts both the typed enum (compile-time validated) and `&str` (runtime-parsed):
 
 ```rust,ignore
-use std::str::FromStr;
 use pogo_masterfile_types::move_settings::MoveSettingsTemplateId;
 
-let id = MoveSettingsTemplateId::from_str("V0022_MOVE_MEGAHORN")?;
-let megahorn = mf.move_settings().get(id);
+// Typed: compile-time validated.
+let m = mf.move_settings().get(MoveSettingsTemplateId::V0022MoveMegahorn);
+
+// String: runtime parsed. Returns None if the string doesn't parse OR the
+// entry is missing.
+let m = mf.move_settings().get("V0022_MOVE_MEGAHORN");
 ```
 
 ## Loading

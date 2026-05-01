@@ -136,12 +136,18 @@ pub fn derive_as_str(input: TokenStream) -> TokenStream {
     .into()
 }
 
-/// Derives `impl FromStr` for a unit-only enum. The error type is
+/// Derives `impl FromStr` AND `impl TryFrom<&str>` for a unit-only enum.
+/// Both share the same string-matching logic: `#[serde(rename = "...")]`
+/// first, variant ident otherwise. The error type is
 /// `pogo_masterfile_types::UnknownTemplateId` — the macro emits a path
 /// reference; consumers must have that type in scope (which they do
-/// transparently via the parent crate). String matching uses the same
-/// source as `AsStr`: `#[serde(rename = "...")]` first, variant ident
-/// otherwise.
+/// transparently via the parent crate).
+///
+/// `TryFrom<&str>` is needed for callers using
+/// `impl TryInto<TemplateId>`-style polymorphic input (e.g.
+/// `pogo-masterfile`'s per-group accessor `get` method): the std blanket
+/// `impl<T, U: TryFrom<T>> TryInto<U> for T` lets `&str` and a typed enum
+/// both satisfy a single `I: TryInto<TemplateId>` bound at the call site.
 #[proc_macro_derive(FromStrEnum, attributes(serde))]
 pub fn derive_from_str_enum(input: TokenStream) -> TokenStream {
     let input = parse_macro_input!(input as DeriveInput);
@@ -194,6 +200,13 @@ pub fn derive_from_str_enum(input: TokenStream) -> TokenStream {
                     #(#arms),*,
                     other => Err(pogo_masterfile_types::UnknownTemplateId(other.to_string())),
                 }
+            }
+        }
+
+        impl ::core::convert::TryFrom<&str> for #name {
+            type Error = pogo_masterfile_types::UnknownTemplateId;
+            fn try_from(s: &str) -> ::core::result::Result<Self, Self::Error> {
+                <Self as ::core::str::FromStr>::from_str(s)
             }
         }
     }

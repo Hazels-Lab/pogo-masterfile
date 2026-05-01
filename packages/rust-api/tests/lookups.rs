@@ -3,8 +3,6 @@
 #[allow(dead_code)]
 mod common;
 
-use std::str::FromStr;
-
 use common::fixture;
 use pogo_masterfile::Masterfile;
 use pogo_masterfile_types::{MasterfileEntry, move_settings::MoveSettingsTemplateId};
@@ -42,19 +40,21 @@ fn per_group_accessor_get_with_typed_id() {
 }
 
 #[test]
-fn per_group_accessor_get_with_parsed_id() {
+fn per_group_accessor_get_with_str() {
+    // The polymorphic `get<I: TryInto<TemplateId>>` accepts &str directly via
+    // the macro-emitted `impl TryFrom<&str>` on each TemplateId enum.
     let mf = Masterfile::from_entries(fixture());
-    let id = MoveSettingsTemplateId::from_str("V0022_MOVE_MEGAHORN").unwrap();
-    let move_ = mf.move_settings().get(id);
+    let move_ = mf.move_settings().get("V0022_MOVE_MEGAHORN");
     assert!(move_.is_some());
 }
 
 #[test]
-fn per_group_accessor_get_returns_none_on_unknown_id() {
-    // "V0001_POKEMON_BULBASAUR" doesn't parse as a MoveSettingsTemplateId,
-    // so from_str returns an error.
-    let id = MoveSettingsTemplateId::from_str("V0001_POKEMON_BULBASAUR");
-    assert!(id.is_err(), "bulbasaur should not parse as a move id");
+fn per_group_accessor_get_returns_none_on_unparseable_str() {
+    // "V0001_POKEMON_BULBASAUR" isn't a valid MoveSettingsTemplateId — the
+    // TryFrom<&str> conversion errs, and `get` returns None.
+    let mf = Masterfile::from_entries(fixture());
+    let result = mf.move_settings().get("V0001_POKEMON_BULBASAUR");
+    assert!(result.is_none());
 }
 
 #[test]
@@ -64,6 +64,15 @@ fn per_group_accessor_has_typed() {
         mf.move_settings()
             .has(MoveSettingsTemplateId::V0022MoveMegahorn)
     );
+}
+
+#[test]
+fn per_group_accessor_has_with_str() {
+    // Same polymorphic pattern as `get`.
+    let mf = Masterfile::from_entries(fixture());
+    assert!(mf.move_settings().has("V0022_MOVE_MEGAHORN"));
+    assert!(!mf.move_settings().has("V0001_POKEMON_BULBASAUR"));
+    assert!(!mf.move_settings().has("DOES_NOT_PARSE_AT_ALL"));
 }
 
 #[test]
