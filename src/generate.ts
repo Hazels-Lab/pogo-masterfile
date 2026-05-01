@@ -1,5 +1,6 @@
 import { GAME_MASTER_URL } from "./constants.ts";
 import { generateGo } from "./go/generate.ts";
+import { generateGoApi } from "./go-api/generate.ts";
 import type { Entry } from "./group.ts";
 import { configureFloatFieldHints, scanFloatFields } from "./infer.ts";
 import { generateRust } from "./rust/generate.ts";
@@ -39,7 +40,10 @@ async function main(): Promise<void> {
 			await generateRust(entries);
 			await generateRustApi(entries);
 		})(),
-		generateGo(entries),
+		(async () => {
+			await generateGo(entries);
+			await generateGoApi(entries);
+		})(),
 	]);
 }
 
