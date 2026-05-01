@@ -174,15 +174,6 @@ export type AvatarItemDisplayNShoesDedenneitems0 = S<
 		}
 	>
 >;
-export type AvatarItemDisplayNShoesDefaultNew0 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_shoes_default-new_0",
-		{
-			displayStringId: "n_shoes_default-new_0_display_name";
-			iconAddress: "n_shoes_defaultnew_0_icon";
-		}
-	>
->;
 export type AvatarItemDisplayNShoesDefaultA0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_shoes_default_a_0",
@@ -306,6 +297,15 @@ export type AvatarItemDisplayNShoesDefaultB6 = S<
 		{
 			displayStringId: "n_shoes_default_b_0_display_name";
 			iconAddress: "n_shoes_default_b_6_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShoesDefaultNew0 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shoes_default-new_0",
+		{
+			displayStringId: "n_shoes_default-new_0_display_name";
+			iconAddress: "n_shoes_defaultnew_0_icon";
 		}
 	>
 >;
@@ -1353,15 +1353,6 @@ export type AvatarItemDisplayNShoesWcs2024winnersitems0 = S<
 		}
 	>
 >;
-export type AvatarItemDisplayNShoesWinterboots20230 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_shoes_winterboots2023_0",
-		{
-			displayStringId: "n_shoes_winterboots2023_0_display_name";
-			iconAddress: "n_shoes_winterboots2023_0_icon";
-		}
-	>
->;
 export type AvatarItemDisplayNShoesWinterboots0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_shoes_winterboots_0",
@@ -1395,6 +1386,15 @@ export type AvatarItemDisplayNShoesWinterboots3 = S<
 		{
 			displayStringId: "n_shoes_winterboots_3_display_name";
 			iconAddress: "n_shoes_winterboots_3_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShoesWinterboots20230 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shoes_winterboots2023_0",
+		{
+			displayStringId: "n_shoes_winterboots2023_0_display_name";
+			iconAddress: "n_shoes_winterboots2023_0_icon";
 		}
 	>
 >;
@@ -1437,7 +1437,6 @@ export type AvatarItemDisplayDisplayStringIdShoesMasterfileEntry =
 	| AvatarItemDisplayNShoesClemont0
 	| AvatarItemDisplayNShoesCoolboots0
 	| AvatarItemDisplayNShoesDedenneitems0
-	| AvatarItemDisplayNShoesDefaultNew0
 	| AvatarItemDisplayNShoesDefaultA0
 	| AvatarItemDisplayNShoesDefaultA1
 	| AvatarItemDisplayNShoesDefaultA2
@@ -1452,6 +1451,7 @@ export type AvatarItemDisplayDisplayStringIdShoesMasterfileEntry =
 	| AvatarItemDisplayNShoesDefaultB4
 	| AvatarItemDisplayNShoesDefaultB5
 	| AvatarItemDisplayNShoesDefaultB6
+	| AvatarItemDisplayNShoesDefaultNew0
 	| AvatarItemDisplayNShoesDelibird0
 	| AvatarItemDisplayNShoesDpA0
 	| AvatarItemDisplayNShoesDpB0
@@ -1568,10 +1568,10 @@ export type AvatarItemDisplayDisplayStringIdShoesMasterfileEntry =
 	| AvatarItemDisplayNShoesWcs2022winnersitems0
 	| AvatarItemDisplayNShoesWcs2023winnersitems0
 	| AvatarItemDisplayNShoesWcs2024winnersitems0
-	| AvatarItemDisplayNShoesWinterboots20230
 	| AvatarItemDisplayNShoesWinterboots0
 	| AvatarItemDisplayNShoesWinterboots1
 	| AvatarItemDisplayNShoesWinterboots2
 	| AvatarItemDisplayNShoesWinterboots3
+	| AvatarItemDisplayNShoesWinterboots20230
 	| AvatarItemDisplayNShoesZacostumeA0
 	| AvatarItemDisplayNShoesZacostumeB0;

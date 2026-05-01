@@ -138,15 +138,6 @@ export type AvatarItemDisplayNBackpackDedenneitems0 = S<
 		}
 	>
 >;
-export type AvatarItemDisplayNBackpackDefaultNew0 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_backpack_default-new_0",
-		{
-			displayStringId: "n_backpack_default-new_0_display_name";
-			iconAddress: "n_backpack_defaultnew_0_icon";
-		}
-	>
->;
 export type AvatarItemDisplayNBackpackDefaultA0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_backpack_default_a_0",
@@ -234,6 +225,15 @@ export type AvatarItemDisplayNBackpackDefaultB5 = S<
 		{
 			displayStringId: "n_backpack_default_b_0_display_name";
 			iconAddress: "n_backpack_default_b_5_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNBackpackDefaultNew0 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_backpack_default-new_0",
+		{
+			displayStringId: "n_backpack_default-new_0_display_name";
+			iconAddress: "n_backpack_defaultnew_0_icon";
 		}
 	>
 >;
@@ -749,7 +749,6 @@ export type AvatarItemDisplayDisplayStringIdBackpackMasterfileEntry =
 	| AvatarItemDisplayNBackpackCombeebackpack1
 	| AvatarItemDisplayNBackpackCute0
 	| AvatarItemDisplayNBackpackDedenneitems0
-	| AvatarItemDisplayNBackpackDefaultNew0
 	| AvatarItemDisplayNBackpackDefaultA0
 	| AvatarItemDisplayNBackpackDefaultA1
 	| AvatarItemDisplayNBackpackDefaultA2
@@ -760,6 +759,7 @@ export type AvatarItemDisplayDisplayStringIdBackpackMasterfileEntry =
 	| AvatarItemDisplayNBackpackDefaultB3
 	| AvatarItemDisplayNBackpackDefaultB4
 	| AvatarItemDisplayNBackpackDefaultB5
+	| AvatarItemDisplayNBackpackDefaultNew0
 	| AvatarItemDisplayNBackpackDp0
 	| AvatarItemDisplayNBackpackEggIncubator0
 	| AvatarItemDisplayNBackpackEggbackpack0

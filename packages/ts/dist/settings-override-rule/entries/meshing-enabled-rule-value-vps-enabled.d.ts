@@ -213,104 +213,6 @@ export type SettingsOverrideRuleAllowMotorolamotorolaedge40 = S<
 		}
 	>
 >;
-export type SettingsOverrideRuleAllowOnepluscph2399 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_ONEPLUSCPH2399",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "OnePlus CPH2399";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleAllowOnepluscph2449 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_ONEPLUSCPH2449",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "OnePlus CPH2449";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleAllowOneplusdn2103 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_ONEPLUSDN2103",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "OnePlus DN2103";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleAllowOnepluskb2003 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_ONEPLUSKB2003",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "OnePlus KB2003";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleAllowOneplusle2113 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_ONEPLUSLE2113",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "OnePlus LE2113";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleAllowOneplusle2123 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_ONEPLUSLE2123",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "OnePlus LE2123";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleAllowOneplusne2213 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_ONEPLUSNE2213",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "OnePlus NE2213";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
 export type SettingsOverrideRuleAllowOneplusCph2413 = S<
 	SettingsOverrideRule<
 		"SETTINGS_RULES_ALLOW_ONEPLUS_CPH2413",
@@ -633,6 +535,104 @@ export type SettingsOverrideRuleAllowOneplusPjd110 = S<
 		}
 	>
 >;
+export type SettingsOverrideRuleAllowOnepluscph2399 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_ONEPLUSCPH2399",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "OnePlus CPH2399";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowOnepluscph2449 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_ONEPLUSCPH2449",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "OnePlus CPH2449";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowOneplusdn2103 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_ONEPLUSDN2103",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "OnePlus DN2103";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowOnepluskb2003 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_ONEPLUSKB2003",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "OnePlus KB2003";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowOneplusle2113 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_ONEPLUSLE2113",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "OnePlus LE2113";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowOneplusle2123 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_ONEPLUSLE2123",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "OnePlus LE2123";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowOneplusne2213 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_ONEPLUSNE2213",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "OnePlus NE2213";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
 export type SettingsOverrideRuleAllowOppocph2359 = S<
 	SettingsOverrideRule<
 		"SETTINGS_RULES_ALLOW_OPPOCPH2359",
@@ -641,34 +641,6 @@ export type SettingsOverrideRuleAllowOppocph2359 = S<
 			occlusionEnabled: "TRUE";
 			ruleType: "DEVICE_MODEL";
 			ruleValue: "OPPO CPH2359";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleAllowSamsungscg09 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_SAMSUNGSCG09",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "samsung SCG09";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleAllowSamsungscg13 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_SAMSUNGSCG13",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "samsung SCG13";
 			semanticsEnabled: "TRUE";
 			sortOrder: 50;
 			vpsEnabled: "TRUE";
@@ -767,6 +739,34 @@ export type SettingsOverrideRuleAllowSamsungscA528b = S<
 			occlusionEnabled: "TRUE";
 			ruleType: "DEVICE_MODEL";
 			ruleValue: "samsung SM-A528B";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowSamsungscg09 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_SAMSUNGSCG09",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "samsung SCG09";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowSamsungscg13 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_SAMSUNGSCG13",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "samsung SCG13";
 			semanticsEnabled: "TRUE";
 			sortOrder: 50;
 			vpsEnabled: "TRUE";
@@ -2425,132 +2425,6 @@ export type SettingsOverrideRuleAllowSharpsh51b = S<
 		}
 	>
 >;
-export type SettingsOverrideRuleAllowSonysog02 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_SONYSOG02",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "Sony SOG02";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleAllowSonysog05 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_SONYSOG05",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "Sony SOG05";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleAllowSonysog06 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_SONYSOG06",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "Sony SOG06";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleAllowSonyso51a = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_SONYSO_51A",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "Sony SO-51A";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleAllowSonyso51b = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_SONYSO_51B",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "Sony SO-51B";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleAllowSonyso51c = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_SONYSO_51C",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "Sony SO-51C";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleAllowSonyso52a = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_SONYSO_52A",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "Sony SO-52A";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleAllowSonyso53b = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_SONYSO_53B",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "Sony SO-53B";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleAllowSonyso54c = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_SONYSO_54C",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "Sony SO-54C";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
 export type SettingsOverrideRuleAllowSonyA002so = S<
 	SettingsOverrideRule<
 		"SETTINGS_RULES_ALLOW_SONY_A002SO",
@@ -2769,6 +2643,34 @@ export type SettingsOverrideRuleAllowSonyXperiaProi = S<
 			occlusionEnabled: "TRUE";
 			ruleType: "DEVICE_MODEL";
 			ruleValue: "Sony Xperia PRO-I";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowSonyXqDe44 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_SONY_XQ_DE44",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "Sony XQ-DE44";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowSonyXqDq44 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_SONY_XQ_DQ44",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "Sony XQ-DQ44";
 			semanticsEnabled: "TRUE";
 			sortOrder: 50;
 			vpsEnabled: "TRUE";
@@ -3111,28 +3013,126 @@ export type SettingsOverrideRuleAllowSonyXqct72 = S<
 		}
 	>
 >;
-export type SettingsOverrideRuleAllowSonyXqDe44 = S<
+export type SettingsOverrideRuleAllowSonyso51a = S<
 	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_SONY_XQ_DE44",
+		"SETTINGS_RULES_ALLOW_SONYSO_51A",
 		{
 			meshingEnabled: "TRUE";
 			occlusionEnabled: "TRUE";
 			ruleType: "DEVICE_MODEL";
-			ruleValue: "Sony XQ-DE44";
+			ruleValue: "Sony SO-51A";
 			semanticsEnabled: "TRUE";
 			sortOrder: 50;
 			vpsEnabled: "TRUE";
 		}
 	>
 >;
-export type SettingsOverrideRuleAllowSonyXqDq44 = S<
+export type SettingsOverrideRuleAllowSonyso51b = S<
 	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_SONY_XQ_DQ44",
+		"SETTINGS_RULES_ALLOW_SONYSO_51B",
 		{
 			meshingEnabled: "TRUE";
 			occlusionEnabled: "TRUE";
 			ruleType: "DEVICE_MODEL";
-			ruleValue: "Sony XQ-DQ44";
+			ruleValue: "Sony SO-51B";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowSonyso51c = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_SONYSO_51C",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "Sony SO-51C";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowSonyso52a = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_SONYSO_52A",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "Sony SO-52A";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowSonyso53b = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_SONYSO_53B",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "Sony SO-53B";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowSonyso54c = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_SONYSO_54C",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "Sony SO-54C";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowSonysog02 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_SONYSOG02",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "Sony SOG02";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowSonysog05 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_SONYSOG05",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "Sony SOG05";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowSonysog06 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_SONYSOG06",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "Sony SOG06";
 			semanticsEnabled: "TRUE";
 			sortOrder: 50;
 			vpsEnabled: "TRUE";
@@ -3492,13 +3492,6 @@ export type SettingsOverrideRuleMeshingEnabledRuleValueVpsEnabledMasterfileEntry
 	| SettingsOverrideRuleAllowGooglepixelproxl
 	| SettingsOverrideRuleAllowLgelmV600
 	| SettingsOverrideRuleAllowMotorolamotorolaedge40
-	| SettingsOverrideRuleAllowOnepluscph2399
-	| SettingsOverrideRuleAllowOnepluscph2449
-	| SettingsOverrideRuleAllowOneplusdn2103
-	| SettingsOverrideRuleAllowOnepluskb2003
-	| SettingsOverrideRuleAllowOneplusle2113
-	| SettingsOverrideRuleAllowOneplusle2123
-	| SettingsOverrideRuleAllowOneplusne2213
 	| SettingsOverrideRuleAllowOneplusCph2413
 	| SettingsOverrideRuleAllowOneplusCph2415
 	| SettingsOverrideRuleAllowOneplusCph2417
@@ -3522,9 +3515,14 @@ export type SettingsOverrideRuleMeshingEnabledRuleValueVpsEnabledMasterfileEntry
 	| SettingsOverrideRuleAllowOneplusNe2217
 	| SettingsOverrideRuleAllowOneplusPhb110
 	| SettingsOverrideRuleAllowOneplusPjd110
+	| SettingsOverrideRuleAllowOnepluscph2399
+	| SettingsOverrideRuleAllowOnepluscph2449
+	| SettingsOverrideRuleAllowOneplusdn2103
+	| SettingsOverrideRuleAllowOnepluskb2003
+	| SettingsOverrideRuleAllowOneplusle2113
+	| SettingsOverrideRuleAllowOneplusle2123
+	| SettingsOverrideRuleAllowOneplusne2213
 	| SettingsOverrideRuleAllowOppocph2359
-	| SettingsOverrideRuleAllowSamsungscg09
-	| SettingsOverrideRuleAllowSamsungscg13
 	| SettingsOverrideRuleAllowSamsungsc51a
 	| SettingsOverrideRuleAllowSamsungsc51b
 	| SettingsOverrideRuleAllowSamsungsc51c
@@ -3532,6 +3530,8 @@ export type SettingsOverrideRuleMeshingEnabledRuleValueVpsEnabledMasterfileEntry
 	| SettingsOverrideRuleAllowSamsungsc52c
 	| SettingsOverrideRuleAllowSamsungsc52d
 	| SettingsOverrideRuleAllowSamsungscA528b
+	| SettingsOverrideRuleAllowSamsungscg09
+	| SettingsOverrideRuleAllowSamsungscg13
 	| SettingsOverrideRuleAllowSamsungsmF711b
 	| SettingsOverrideRuleAllowSamsungsmF711n
 	| SettingsOverrideRuleAllowSamsungsmF711u
@@ -3650,15 +3650,6 @@ export type SettingsOverrideRuleMeshingEnabledRuleValueVpsEnabledMasterfileEntry
 	| SettingsOverrideRuleAllowSamsungsmS928u
 	| SettingsOverrideRuleAllowSamsungsmS928u1
 	| SettingsOverrideRuleAllowSharpsh51b
-	| SettingsOverrideRuleAllowSonysog02
-	| SettingsOverrideRuleAllowSonysog05
-	| SettingsOverrideRuleAllowSonysog06
-	| SettingsOverrideRuleAllowSonyso51a
-	| SettingsOverrideRuleAllowSonyso51b
-	| SettingsOverrideRuleAllowSonyso51c
-	| SettingsOverrideRuleAllowSonyso52a
-	| SettingsOverrideRuleAllowSonyso53b
-	| SettingsOverrideRuleAllowSonyso54c
 	| SettingsOverrideRuleAllowSonyA002so
 	| SettingsOverrideRuleAllowSonyA101so
 	| SettingsOverrideRuleAllowSonyA103so
@@ -3675,6 +3666,8 @@ export type SettingsOverrideRuleMeshingEnabledRuleValueVpsEnabledMasterfileEntry
 	| SettingsOverrideRuleAllowSonyXperia5V
 	| SettingsOverrideRuleAllowSonyXperiaPro
 	| SettingsOverrideRuleAllowSonyXperiaProi
+	| SettingsOverrideRuleAllowSonyXqDe44
+	| SettingsOverrideRuleAllowSonyXqDq44
 	| SettingsOverrideRuleAllowSonyXqaq52
 	| SettingsOverrideRuleAllowSonyXqaq62
 	| SettingsOverrideRuleAllowSonyXqas42
@@ -3699,8 +3692,15 @@ export type SettingsOverrideRuleMeshingEnabledRuleValueVpsEnabledMasterfileEntry
 	| SettingsOverrideRuleAllowSonyXqct54
 	| SettingsOverrideRuleAllowSonyXqct62
 	| SettingsOverrideRuleAllowSonyXqct72
-	| SettingsOverrideRuleAllowSonyXqDe44
-	| SettingsOverrideRuleAllowSonyXqDq44
+	| SettingsOverrideRuleAllowSonyso51a
+	| SettingsOverrideRuleAllowSonyso51b
+	| SettingsOverrideRuleAllowSonyso51c
+	| SettingsOverrideRuleAllowSonyso52a
+	| SettingsOverrideRuleAllowSonyso53b
+	| SettingsOverrideRuleAllowSonyso54c
+	| SettingsOverrideRuleAllowSonysog02
+	| SettingsOverrideRuleAllowSonysog05
+	| SettingsOverrideRuleAllowSonysog06
 	| SettingsOverrideRuleAllowXiaomi21061110ag
 	| SettingsOverrideRuleAllowXiaomi2107113sg
 	| SettingsOverrideRuleAllowXiaomi21081111rg

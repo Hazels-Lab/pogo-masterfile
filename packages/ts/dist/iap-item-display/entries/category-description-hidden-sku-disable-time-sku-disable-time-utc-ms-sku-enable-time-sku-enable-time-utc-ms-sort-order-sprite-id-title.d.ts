@@ -3,6 +3,24 @@
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
 
+export type IapItemDisplayGeneral1Ticket6 = S<
+	IapItemDisplay<
+		"general1.ticket.6",
+		{
+			category: "IAP_CATEGORY_FREE";
+			description: "first_time_gym_team_intro|2";
+			hidden: true;
+			sku: "general1.ticket.6";
+			skuDisableTime: "2022-06-02T13:00:00";
+			skuDisableTimeUtcMs: "1654174800000";
+			skuEnableTime: "2022-03-01T00:00:00";
+			skuEnableTimeUtcMs: "1646092800000";
+			sortOrder: 33;
+			spriteId: "general1.ticket.4";
+			title: "combat_battle";
+		}
+	>
+>;
 export type IapItemDisplayGoSafariBallIap10 = S<
 	IapItemDisplay<
 		"GO_SAFARI_BALL_IAP_10",
@@ -57,27 +75,9 @@ export type IapItemDisplayGoSafariBallIap50 = S<
 		}
 	>
 >;
-export type IapItemDisplayGeneral1Ticket6 = S<
-	IapItemDisplay<
-		"general1.ticket.6",
-		{
-			category: "IAP_CATEGORY_FREE";
-			description: "first_time_gym_team_intro|2";
-			hidden: true;
-			sku: "general1.ticket.6";
-			skuDisableTime: "2022-06-02T13:00:00";
-			skuDisableTimeUtcMs: "1654174800000";
-			skuEnableTime: "2022-03-01T00:00:00";
-			skuEnableTimeUtcMs: "1646092800000";
-			sortOrder: 33;
-			spriteId: "general1.ticket.4";
-			title: "combat_battle";
-		}
-	>
->;
 
 export type IapItemDisplayCategoryDescriptionHiddenSkuDisableTimeSkuDisableTimeUtcMsSkuEnableTimeSkuEnableTimeUtcMsSortOrderSpriteIdTitleMasterfileEntry =
+	| IapItemDisplayGeneral1Ticket6
 	| IapItemDisplayGoSafariBallIap10
 	| IapItemDisplayGoSafariBallIap25
-	| IapItemDisplayGoSafariBallIap50
-	| IapItemDisplayGeneral1Ticket6;
+	| IapItemDisplayGoSafariBallIap50;

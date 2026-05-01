@@ -3,84 +3,6 @@
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
 
-export type IapItemDisplayBundleGotour20241 = S<
-	IapItemDisplay<
-		"bundle.GOTour2024.1",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sku: "bundle.GOTour2024.1";
-			sortOrder: 1;
-			spriteId: "bundle.general5.small.1";
-			title: "great_storage_box";
-		}
-	>
->;
-export type IapItemDisplayBundleGotour20242 = S<
-	IapItemDisplay<
-		"bundle.GOTour2024.2",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sku: "bundle.GOTour2024.2";
-			sortOrder: 2;
-			spriteId: "bundle.general.adventure.1";
-			title: "hatch_box";
-		}
-	>
->;
-export type IapItemDisplayBundleGotour20243 = S<
-	IapItemDisplay<
-		"bundle.GOTour2024.3",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sku: "bundle.GOTour2024.3";
-			sortOrder: 3;
-			spriteId: "bundle.general.remotebox.medium.1";
-			title: "great_raid_box_title";
-		}
-	>
->;
-export type IapItemDisplayBundleGotour20244 = S<
-	IapItemDisplay<
-		"bundle.GOTour2024.4",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sku: "bundle.GOTour2024.4";
-			sortOrder: 4;
-			spriteId: "bundle.general1.small.2";
-			title: "catch_box";
-		}
-	>
->;
-export type IapItemDisplayBundleGotour20245 = S<
-	IapItemDisplay<
-		"bundle.GOTour2024.5",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sku: "bundle.GOTour2024.5";
-			sortOrder: 5;
-			spriteId: "bundle.general1.large.2";
-			title: "external_box_name_2";
-		}
-	>
->;
-export type IapItemDisplayBundleGotour20247 = S<
-	IapItemDisplay<
-		"bundle.GOTour2024.7",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sku: "bundle.GOTour2024.7";
-			sortOrder: 7;
-			spriteId: "bundle2.sprite.a";
-			title: "sticker_box";
-		}
-	>
->;
 export type IapItemDisplayBundleAdventurebrazil1001 = S<
 	IapItemDisplay<
 		"bundle.adventurebrazil100.1",
@@ -572,6 +494,84 @@ export type IapItemDisplayBundleGofestmakegoodprep3 = S<
 			sortOrder: 3;
 			spriteId: "bundle.general2.free.1";
 			title: "bundle.general2.free.1_title";
+		}
+	>
+>;
+export type IapItemDisplayBundleGotour20241 = S<
+	IapItemDisplay<
+		"bundle.GOTour2024.1",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			sku: "bundle.GOTour2024.1";
+			sortOrder: 1;
+			spriteId: "bundle.general5.small.1";
+			title: "great_storage_box";
+		}
+	>
+>;
+export type IapItemDisplayBundleGotour20242 = S<
+	IapItemDisplay<
+		"bundle.GOTour2024.2",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			sku: "bundle.GOTour2024.2";
+			sortOrder: 2;
+			spriteId: "bundle.general.adventure.1";
+			title: "hatch_box";
+		}
+	>
+>;
+export type IapItemDisplayBundleGotour20243 = S<
+	IapItemDisplay<
+		"bundle.GOTour2024.3",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			sku: "bundle.GOTour2024.3";
+			sortOrder: 3;
+			spriteId: "bundle.general.remotebox.medium.1";
+			title: "great_raid_box_title";
+		}
+	>
+>;
+export type IapItemDisplayBundleGotour20244 = S<
+	IapItemDisplay<
+		"bundle.GOTour2024.4",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			sku: "bundle.GOTour2024.4";
+			sortOrder: 4;
+			spriteId: "bundle.general1.small.2";
+			title: "catch_box";
+		}
+	>
+>;
+export type IapItemDisplayBundleGotour20245 = S<
+	IapItemDisplay<
+		"bundle.GOTour2024.5",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			sku: "bundle.GOTour2024.5";
+			sortOrder: 5;
+			spriteId: "bundle.general1.large.2";
+			title: "external_box_name_2";
+		}
+	>
+>;
+export type IapItemDisplayBundleGotour20247 = S<
+	IapItemDisplay<
+		"bundle.GOTour2024.7",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			sku: "bundle.GOTour2024.7";
+			sortOrder: 7;
+			spriteId: "bundle2.sprite.a";
+			title: "sticker_box";
 		}
 	>
 >;
@@ -1134,19 +1134,6 @@ export type IapItemDisplayPgoreleaseBundle2 = S<
 		}
 	>
 >;
-export type IapItemDisplayPgoreleaseBundleRtsraid = S<
-	IapItemDisplay<
-		"pgorelease.bundle.RTSRaid",
-		{
-			category: "IAP_CATEGORY_FREE";
-			hidden: true;
-			sku: "pgorelease.bundle.RTSRaid";
-			sortOrder: 1;
-			spriteId: "bundle.general1.small.1";
-			title: "bundle.general2.free.1_title";
-		}
-	>
->;
 export type IapItemDisplayPgoreleaseBundleEliteraidmay2023 = S<
 	IapItemDisplay<
 		"pgorelease.bundle.eliteraidmay2023",
@@ -1329,6 +1316,19 @@ export type IapItemDisplayPgoreleaseBundlePokemonday1 = S<
 		}
 	>
 >;
+export type IapItemDisplayPgoreleaseBundleRtsraid = S<
+	IapItemDisplay<
+		"pgorelease.bundle.RTSRaid",
+		{
+			category: "IAP_CATEGORY_FREE";
+			hidden: true;
+			sku: "pgorelease.bundle.RTSRaid";
+			sortOrder: 1;
+			spriteId: "bundle.general1.small.1";
+			title: "bundle.general2.free.1_title";
+		}
+	>
+>;
 export type IapItemDisplayPgoreleaseBundleSustainabilitybonusmay2023 = S<
 	IapItemDisplay<
 		"pgorelease.bundle.sustainabilitybonusmay2023",
@@ -1357,12 +1357,6 @@ export type IapItemDisplayPgoreleaseBundleSustainabilitymay2023 = S<
 >;
 
 export type IapItemDisplayCategoryHiddenSortOrderSpriteIdTitleMasterfileEntry =
-	| IapItemDisplayBundleGotour20241
-	| IapItemDisplayBundleGotour20242
-	| IapItemDisplayBundleGotour20243
-	| IapItemDisplayBundleGotour20244
-	| IapItemDisplayBundleGotour20245
-	| IapItemDisplayBundleGotour20247
 	| IapItemDisplayBundleAdventurebrazil1001
 	| IapItemDisplayBundleAdventurebrazil2001
 	| IapItemDisplayBundleApacmar20251
@@ -1401,6 +1395,12 @@ export type IapItemDisplayCategoryHiddenSortOrderSpriteIdTitleMasterfileEntry =
 	| IapItemDisplayBundleGofestmakegoodprep1
 	| IapItemDisplayBundleGofestmakegoodprep2
 	| IapItemDisplayBundleGofestmakegoodprep3
+	| IapItemDisplayBundleGotour20241
+	| IapItemDisplayBundleGotour20242
+	| IapItemDisplayBundleGotour20243
+	| IapItemDisplayBundleGotour20244
+	| IapItemDisplayBundleGotour20245
+	| IapItemDisplayBundleGotour20247
 	| IapItemDisplayBundleGwlatam20251
 	| IapItemDisplayBundleGwlatam20252
 	| IapItemDisplayBundleGwlatam20253
@@ -1444,7 +1444,6 @@ export type IapItemDisplayCategoryHiddenSortOrderSpriteIdTitleMasterfileEntry =
 	| IapItemDisplayBundleZzraid1
 	| IapItemDisplayPgoreleaseBundle1
 	| IapItemDisplayPgoreleaseBundle2
-	| IapItemDisplayPgoreleaseBundleRtsraid
 	| IapItemDisplayPgoreleaseBundleEliteraidmay2023
 	| IapItemDisplayPgoreleaseBundleFlavoredlures1
 	| IapItemDisplayPgoreleaseBundleFlavoredlures2
@@ -1459,5 +1458,6 @@ export type IapItemDisplayCategoryHiddenSortOrderSpriteIdTitleMasterfileEntry =
 	| IapItemDisplayPgoreleaseBundleGotour20236
 	| IapItemDisplayPgoreleaseBundleLure1
 	| IapItemDisplayPgoreleaseBundlePokemonday1
+	| IapItemDisplayPgoreleaseBundleRtsraid
 	| IapItemDisplayPgoreleaseBundleSustainabilitybonusmay2023
 	| IapItemDisplayPgoreleaseBundleSustainabilitymay2023;

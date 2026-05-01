@@ -3,17 +3,6 @@
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
 
-export type IapItemDisplayItemEnhancedCurrency200 = S<
-	IapItemDisplay<
-		"ITEM_ENHANCED_CURRENCY_200",
-		{
-			category: "IAP_CATEGORY_ITEMS";
-			sku: "ITEM_ENHANCED_CURRENCY_200";
-			sortOrder: 1;
-			spriteId: "enhanced_currency_medium";
-		}
-	>
->;
 export type IapItemDisplayIncenseordinary1 = S<
 	IapItemDisplay<
 		"incenseordinary.1",
@@ -44,6 +33,17 @@ export type IapItemDisplayIncubatorsuper1 = S<
 			sku: "incubatorsuper.1";
 			sortOrder: 10;
 			spriteId: "incubatorsuper.1";
+		}
+	>
+>;
+export type IapItemDisplayItemEnhancedCurrency200 = S<
+	IapItemDisplay<
+		"ITEM_ENHANCED_CURRENCY_200",
+		{
+			category: "IAP_CATEGORY_ITEMS";
+			sku: "ITEM_ENHANCED_CURRENCY_200";
+			sortOrder: 1;
+			spriteId: "enhanced_currency_medium";
 		}
 	>
 >;
@@ -159,10 +159,10 @@ export type IapItemDisplayWebSeasonalDelights2024Box = S<
 >;
 
 export type IapItemDisplayCategorySortOrderSpriteIdMasterfileEntry =
-	| IapItemDisplayItemEnhancedCurrency200
 	| IapItemDisplayIncenseordinary1
 	| IapItemDisplayIncubatorbasic1
 	| IapItemDisplayIncubatorsuper1
+	| IapItemDisplayItemEnhancedCurrency200
 	| IapItemDisplayLuckyegg1
 	| IapItemDisplayMaxBoost1
 	| IapItemDisplayMpReplenish1

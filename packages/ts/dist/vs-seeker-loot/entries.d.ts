@@ -3,6 +3,75 @@
 import type { S } from "../_utils";
 import type { VsSeekerLoot } from "./index";
 
+export type VsSeekerLoot1Free = S<
+	VsSeekerLoot<
+		"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_1_FREE",
+		{
+			rankLevel: 1;
+			reward: [
+				{
+					item: {
+						count: 300;
+						stardust: true;
+					};
+				},
+				{
+					itemRankingLootTableCount: 1;
+				},
+				{
+					pokemonReward: true;
+				},
+				{
+					item: {
+						count: 3;
+						item: "ITEM_RARE_CANDY";
+					};
+				},
+				{
+					item: {
+						count: 600;
+						stardust: true;
+					};
+				},
+			];
+		}
+	>
+>;
+export type VsSeekerLoot1Premium = S<
+	VsSeekerLoot<
+		"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_1_PREMIUM",
+		{
+			rankLevel: 1;
+			reward: [
+				{
+					item: {
+						count: 600;
+						stardust: true;
+					};
+				},
+				{
+					itemRankingLootTableCount: 1;
+				},
+				{
+					pokemonReward: true;
+				},
+				{
+					item: {
+						count: 3;
+						item: "ITEM_RARE_CANDY";
+					};
+				},
+				{
+					item: {
+						count: 1200;
+						stardust: true;
+					};
+				},
+			];
+			rewardTrack: "PREMIUM";
+		}
+	>
+>;
 export type VsSeekerLoot10Free = S<
 	VsSeekerLoot<
 		"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_10_FREE",
@@ -699,15 +768,15 @@ export type VsSeekerLoot19Premium = S<
 		}
 	>
 >;
-export type VsSeekerLoot1Free = S<
+export type VsSeekerLoot2Free = S<
 	VsSeekerLoot<
-		"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_1_FREE",
+		"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_2_FREE",
 		{
-			rankLevel: 1;
+			rankLevel: 2;
 			reward: [
 				{
 					item: {
-						count: 300;
+						count: 330;
 						stardust: true;
 					};
 				},
@@ -725,7 +794,7 @@ export type VsSeekerLoot1Free = S<
 				},
 				{
 					item: {
-						count: 600;
+						count: 660;
 						stardust: true;
 					};
 				},
@@ -733,15 +802,15 @@ export type VsSeekerLoot1Free = S<
 		}
 	>
 >;
-export type VsSeekerLoot1Premium = S<
+export type VsSeekerLoot2Premium = S<
 	VsSeekerLoot<
-		"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_1_PREMIUM",
+		"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_2_PREMIUM",
 		{
-			rankLevel: 1;
+			rankLevel: 2;
 			reward: [
 				{
 					item: {
-						count: 600;
+						count: 660;
 						stardust: true;
 					};
 				},
@@ -759,7 +828,7 @@ export type VsSeekerLoot1Premium = S<
 				},
 				{
 					item: {
-						count: 1200;
+						count: 1320;
 						stardust: true;
 					};
 				},
@@ -1105,75 +1174,6 @@ export type VsSeekerLoot24Premium = S<
 				{
 					item: {
 						count: 3600;
-						stardust: true;
-					};
-				},
-			];
-			rewardTrack: "PREMIUM";
-		}
-	>
->;
-export type VsSeekerLoot2Free = S<
-	VsSeekerLoot<
-		"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_2_FREE",
-		{
-			rankLevel: 2;
-			reward: [
-				{
-					item: {
-						count: 330;
-						stardust: true;
-					};
-				},
-				{
-					itemRankingLootTableCount: 1;
-				},
-				{
-					pokemonReward: true;
-				},
-				{
-					item: {
-						count: 3;
-						item: "ITEM_RARE_CANDY";
-					};
-				},
-				{
-					item: {
-						count: 660;
-						stardust: true;
-					};
-				},
-			];
-		}
-	>
->;
-export type VsSeekerLoot2Premium = S<
-	VsSeekerLoot<
-		"VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_2_PREMIUM",
-		{
-			rankLevel: 2;
-			reward: [
-				{
-					item: {
-						count: 660;
-						stardust: true;
-					};
-				},
-				{
-					itemRankingLootTableCount: 1;
-				},
-				{
-					pokemonReward: true;
-				},
-				{
-					item: {
-						count: 3;
-						item: "ITEM_RARE_CANDY";
-					};
-				},
-				{
-					item: {
-						count: 1320;
 						stardust: true;
 					};
 				},
@@ -1649,6 +1649,8 @@ export type VsSeekerLoot9Premium = S<
 >;
 
 export type VsSeekerLootMasterfileEntry =
+	| VsSeekerLoot1Free
+	| VsSeekerLoot1Premium
 	| VsSeekerLoot10Free
 	| VsSeekerLoot10Premium
 	| VsSeekerLoot11Free
@@ -1669,8 +1671,8 @@ export type VsSeekerLootMasterfileEntry =
 	| VsSeekerLoot18Premium
 	| VsSeekerLoot19Free
 	| VsSeekerLoot19Premium
-	| VsSeekerLoot1Free
-	| VsSeekerLoot1Premium
+	| VsSeekerLoot2Free
+	| VsSeekerLoot2Premium
 	| VsSeekerLoot20Free
 	| VsSeekerLoot20Premium
 	| VsSeekerLoot21Free
@@ -1681,8 +1683,6 @@ export type VsSeekerLootMasterfileEntry =
 	| VsSeekerLoot23Premium
 	| VsSeekerLoot24Free
 	| VsSeekerLoot24Premium
-	| VsSeekerLoot2Free
-	| VsSeekerLoot2Premium
 	| VsSeekerLoot3Free
 	| VsSeekerLoot3Premium
 	| VsSeekerLoot4Free

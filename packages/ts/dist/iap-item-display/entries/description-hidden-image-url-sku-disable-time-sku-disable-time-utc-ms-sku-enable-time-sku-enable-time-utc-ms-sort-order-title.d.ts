@@ -258,40 +258,6 @@ export type IapItemDisplayEventPassWinterholidays2025SeasonStoreRedirect = S<
 		}
 	>
 >;
-export type IapItemDisplayGofest2025FinaleDeluxeEventPassTrackUnlock = S<
-	IapItemDisplay<
-		"GOFEST2025_FINALE_DELUXE_EVENT_PASS_TRACK_UNLOCK",
-		{
-			description: "gofest_2025_finale_deluxe_event_pass_track_unlock_description";
-			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Eternatus_Adventure_Effect_v2-1024x576.jpg";
-			sku: "pgorelease.gofest_finale_2025_deluxe_event_pass_track_unlock";
-			skuDisableTime: "2025-08-26T21:00:00";
-			skuDisableTimeUtcMs: "1756242000000";
-			skuEnableTime: "2024-08-18T10:00:00";
-			skuEnableTimeUtcMs: "1723975200000";
-			sortOrder: 1;
-			title: "gofest_2025_finale_deluxe_event_pass_track_unlock_title";
-		}
-	>
->;
-export type IapItemDisplayGofest2025FinaleDeluxeEventPassTrackUnlockPlusPoints = S<
-	IapItemDisplay<
-		"GOFEST2025_FINALE_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS",
-		{
-			description: "gofest_2025_finale_deluxe_event_pass_track_unlock_plus_points_description";
-			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Eternatus_Adventure_Effect_v2-1024x576.jpg";
-			sku: "pgorelease.gofest_finale_2025_deluxe_event_pass_track_unlock_plus_points";
-			skuDisableTime: "2025-08-26T21:00:00";
-			skuDisableTimeUtcMs: "1756242000000";
-			skuEnableTime: "2024-08-18T10:00:00";
-			skuEnableTimeUtcMs: "1723975200000";
-			sortOrder: 1;
-			title: "gofest_2025_finale_deluxe_event_pass_track_unlock_plus_points_title";
-		}
-	>
->;
 export type IapItemDisplayGofest2025DeluxeEventPassTrackUnlock = S<
 	IapItemDisplay<
 		"GOFEST_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK",
@@ -323,6 +289,40 @@ export type IapItemDisplayGofest2025DeluxeEventPassTrackUnlockPlusPoints = S<
 			skuEnableTimeUtcMs: "1739354400000";
 			sortOrder: 1;
 			title: "event_pass_gofest2025_premium_track_plus_points_title";
+		}
+	>
+>;
+export type IapItemDisplayGofest2025FinaleDeluxeEventPassTrackUnlock = S<
+	IapItemDisplay<
+		"GOFEST2025_FINALE_DELUXE_EVENT_PASS_TRACK_UNLOCK",
+		{
+			description: "gofest_2025_finale_deluxe_event_pass_track_unlock_description";
+			hidden: true;
+			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Eternatus_Adventure_Effect_v2-1024x576.jpg";
+			sku: "pgorelease.gofest_finale_2025_deluxe_event_pass_track_unlock";
+			skuDisableTime: "2025-08-26T21:00:00";
+			skuDisableTimeUtcMs: "1756242000000";
+			skuEnableTime: "2024-08-18T10:00:00";
+			skuEnableTimeUtcMs: "1723975200000";
+			sortOrder: 1;
+			title: "gofest_2025_finale_deluxe_event_pass_track_unlock_title";
+		}
+	>
+>;
+export type IapItemDisplayGofest2025FinaleDeluxeEventPassTrackUnlockPlusPoints = S<
+	IapItemDisplay<
+		"GOFEST2025_FINALE_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS",
+		{
+			description: "gofest_2025_finale_deluxe_event_pass_track_unlock_plus_points_description";
+			hidden: true;
+			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Eternatus_Adventure_Effect_v2-1024x576.jpg";
+			sku: "pgorelease.gofest_finale_2025_deluxe_event_pass_track_unlock_plus_points";
+			skuDisableTime: "2025-08-26T21:00:00";
+			skuDisableTimeUtcMs: "1756242000000";
+			skuEnableTime: "2024-08-18T10:00:00";
+			skuEnableTimeUtcMs: "1723975200000";
+			sortOrder: 1;
+			title: "gofest_2025_finale_deluxe_event_pass_track_unlock_plus_points_title";
 		}
 	>
 >;
@@ -564,6 +564,23 @@ export type IapItemDisplayMonth3DeluxeEventPassTrackUnlockPlusPoints = S<
 		}
 	>
 >;
+export type IapItemDisplayPgoreleaseApril22026DeluxeEventPassTrackRedirect = S<
+	IapItemDisplay<
+		"pgorelease.april2_2026_deluxe_event_pass_track_redirect",
+		{
+			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
+			hidden: true;
+			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-paid-sustainability-week-2026-nologo.jpg";
+			sku: "pgorelease.april2_2026_deluxe_event_pass_track_redirect";
+			skuDisableTime: "2025-04-22T20:00:00";
+			skuDisableTimeUtcMs: "1745352000000";
+			skuEnableTime: "2025-04-14T10:00:00";
+			skuEnableTimeUtcMs: "1744624800000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_sustainabilityweek2026";
+		}
+	>
+>;
 export type IapItemDisplayWinterholidays2025DeluxeEventPassTrackUnlock = S<
 	IapItemDisplay<
 		"WINTERHOLIDAYS2025_DELUXE_EVENT_PASS_TRACK_UNLOCK",
@@ -598,23 +615,6 @@ export type IapItemDisplayWinterholidays2025DeluxeEventPassTrackUnlockPlusPoints
 		}
 	>
 >;
-export type IapItemDisplayPgoreleaseApril22026DeluxeEventPassTrackRedirect = S<
-	IapItemDisplay<
-		"pgorelease.april2_2026_deluxe_event_pass_track_redirect",
-		{
-			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
-			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-paid-sustainability-week-2026-nologo.jpg";
-			sku: "pgorelease.april2_2026_deluxe_event_pass_track_redirect";
-			skuDisableTime: "2025-04-22T20:00:00";
-			skuDisableTimeUtcMs: "1745352000000";
-			skuEnableTime: "2025-04-14T10:00:00";
-			skuEnableTimeUtcMs: "1744624800000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_title_sustainabilityweek2026";
-		}
-	>
->;
 
 export type IapItemDisplayDescriptionHiddenImageUrlSkuDisableTimeSkuDisableTimeUtcMsSkuEnableTimeSkuEnableTimeUtcMsSortOrderTitleMasterfileEntry =
 	| IapItemDisplayApril12026DeluxeEventPassTrackUnlock
@@ -632,10 +632,10 @@ export type IapItemDisplayDescriptionHiddenImageUrlSkuDisableTimeSkuDisableTimeU
 	| IapItemDisplayEventPassMonth1SeasonStoreRedirect
 	| IapItemDisplayEventPassMonth3SeasonStoreRedirect
 	| IapItemDisplayEventPassWinterholidays2025SeasonStoreRedirect
-	| IapItemDisplayGofest2025FinaleDeluxeEventPassTrackUnlock
-	| IapItemDisplayGofest2025FinaleDeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayGofest2025DeluxeEventPassTrackUnlock
 	| IapItemDisplayGofest2025DeluxeEventPassTrackUnlockPlusPoints
+	| IapItemDisplayGofest2025FinaleDeluxeEventPassTrackUnlock
+	| IapItemDisplayGofest2025FinaleDeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayGotour2025DeluxeEventPassTrackUnlock
 	| IapItemDisplayGotour2025DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayGowild2025DeluxeEventPassTrackUnlock
@@ -650,6 +650,6 @@ export type IapItemDisplayDescriptionHiddenImageUrlSkuDisableTimeSkuDisableTimeU
 	| IapItemDisplayMonth1DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayMonth3DeluxeEventPassTrackUnlock
 	| IapItemDisplayMonth3DeluxeEventPassTrackUnlockPlusPoints
+	| IapItemDisplayPgoreleaseApril22026DeluxeEventPassTrackRedirect
 	| IapItemDisplayWinterholidays2025DeluxeEventPassTrackUnlock
-	| IapItemDisplayWinterholidays2025DeluxeEventPassTrackUnlockPlusPoints
-	| IapItemDisplayPgoreleaseApril22026DeluxeEventPassTrackRedirect;
+	| IapItemDisplayWinterholidays2025DeluxeEventPassTrackUnlockPlusPoints;

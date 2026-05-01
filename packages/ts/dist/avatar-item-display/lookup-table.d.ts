@@ -28,10 +28,10 @@ import type {
 	AvatarItemDisplayNBackpackDefaultB5,
 	AvatarItemDisplayNBackpackDefaultNew0,
 	AvatarItemDisplayNBackpackDp0,
-	AvatarItemDisplayNBackpackEggIncubator0,
 	AvatarItemDisplayNBackpackEggbackpack0,
 	AvatarItemDisplayNBackpackEggbackpack1,
 	AvatarItemDisplayNBackpackEggbackpack2,
+	AvatarItemDisplayNBackpackEggIncubator0,
 	AvatarItemDisplayNBackpackFrlgA0,
 	AvatarItemDisplayNBackpackFrlgB0,
 	AvatarItemDisplayNBackpackGenesecteventitem0,
@@ -1461,10 +1461,10 @@ import type {
 	AvatarItemDisplaySetGladionM,
 	AvatarItemDisplaySetGoteamrocketarloF,
 	AvatarItemDisplaySetGoteamrocketarloM,
-	AvatarItemDisplaySetGreenF,
-	AvatarItemDisplaySetGreenM,
 	AvatarItemDisplaySetGreencoatF,
 	AvatarItemDisplaySetGreencoatM,
+	AvatarItemDisplaySetGreenF,
+	AvatarItemDisplaySetGreenM,
 	AvatarItemDisplaySetGrimsley0,
 	AvatarItemDisplaySetGrusha,
 	AvatarItemDisplaySetGuzmaF,
@@ -1530,14 +1530,14 @@ import type {
 	AvatarItemDisplaySetMunnapack1F,
 	AvatarItemDisplaySetMunnapack1M,
 	AvatarItemDisplaySetMustard0,
+	AvatarItemDisplaySetNaganadelaitems,
 	AvatarItemDisplaySetNDefaultNew,
 	AvatarItemDisplaySetNDenimfashionweek2023,
-	AvatarItemDisplaySetNGothitelleitems,
-	AvatarItemDisplaySetNReuniclusitems,
-	AvatarItemDisplaySetNaganadelaitems,
 	AvatarItemDisplaySetNecrozmaitems0,
 	AvatarItemDisplaySetNewyearF,
 	AvatarItemDisplaySetNewyearM,
+	AvatarItemDisplaySetNGothitelleitems,
+	AvatarItemDisplaySetNReuniclusitems,
 	AvatarItemDisplaySetObstagoonitemsF,
 	AvatarItemDisplaySetObstagoonitemsM,
 	AvatarItemDisplaySetOrasF,
@@ -1583,9 +1583,9 @@ import type {
 	AvatarItemDisplaySetSsF,
 	AvatarItemDisplaySetSsM,
 	AvatarItemDisplaySetStevenF,
-	AvatarItemDisplaySetStevenM,
 	AvatarItemDisplaySetStevenfirstF,
 	AvatarItemDisplaySetStevenfirstM,
+	AvatarItemDisplaySetStevenM,
 	AvatarItemDisplaySetSvcostumescarletschoolF,
 	AvatarItemDisplaySetSvcostumescarletschoolM,
 	AvatarItemDisplaySetSvcostumevioletschoolF,
@@ -1631,9 +1631,9 @@ import type {
 	AvatarItemDisplaySetTeamyellgruntsB0,
 	AvatarItemDisplaySetUltra0F,
 	AvatarItemDisplaySetUltra0M,
+	AvatarItemDisplaySetUltrareconsquadbF,
 	AvatarItemDisplaySetUltrareconsquadF,
 	AvatarItemDisplaySetUltrareconsquadM,
-	AvatarItemDisplaySetUltrareconsquadbF,
 	AvatarItemDisplaySetVeterantrainerxyF,
 	AvatarItemDisplaySetVeterantrainerxyM,
 	AvatarItemDisplaySetWcs2022winnersitemsF,
@@ -1662,7 +1662,6 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_backpack_combeebackpack_1: AvatarItemDisplayNBackpackCombeebackpack1;
 	N_DISPLAY_n_backpack_cute_0: AvatarItemDisplayNBackpackCute0;
 	N_DISPLAY_n_backpack_dedenneitems_0: AvatarItemDisplayNBackpackDedenneitems0;
-	"N_DISPLAY_n_backpack_default-new_0": AvatarItemDisplayNBackpackDefaultNew0;
 	N_DISPLAY_n_backpack_default_a_0: AvatarItemDisplayNBackpackDefaultA0;
 	N_DISPLAY_n_backpack_default_a_1: AvatarItemDisplayNBackpackDefaultA1;
 	N_DISPLAY_n_backpack_default_a_2: AvatarItemDisplayNBackpackDefaultA2;
@@ -1673,6 +1672,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_backpack_default_b_3: AvatarItemDisplayNBackpackDefaultB3;
 	N_DISPLAY_n_backpack_default_b_4: AvatarItemDisplayNBackpackDefaultB4;
 	N_DISPLAY_n_backpack_default_b_5: AvatarItemDisplayNBackpackDefaultB5;
+	"N_DISPLAY_n_backpack_default-new_0": AvatarItemDisplayNBackpackDefaultNew0;
 	N_DISPLAY_n_backpack_dp_0: AvatarItemDisplayNBackpackDp0;
 	"N_DISPLAY_n_backpack_egg-incubator_0": AvatarItemDisplayNBackpackEggIncubator0;
 	N_DISPLAY_n_backpack_eggbackpack_0: AvatarItemDisplayNBackpackEggbackpack0;
@@ -1805,7 +1805,6 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_gloves_battlegirl_0: AvatarItemDisplayNGlovesBattlegirl0;
 	N_DISPLAY_n_gloves_bea_0: AvatarItemDisplayNGlovesBea0;
 	N_DISPLAY_n_gloves_bwn_0: AvatarItemDisplayNGlovesBwn0;
-	"N_DISPLAY_n_gloves_default-new_0": AvatarItemDisplayNGlovesDefaultNew0;
 	N_DISPLAY_n_gloves_default_a_0: AvatarItemDisplayNGlovesDefaultA0;
 	N_DISPLAY_n_gloves_default_a_1: AvatarItemDisplayNGlovesDefaultA1;
 	N_DISPLAY_n_gloves_default_a_2: AvatarItemDisplayNGlovesDefaultA2;
@@ -1814,6 +1813,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_gloves_default_b_1: AvatarItemDisplayNGlovesDefaultB1;
 	N_DISPLAY_n_gloves_default_b_2: AvatarItemDisplayNGlovesDefaultB2;
 	N_DISPLAY_n_gloves_default_b_3: AvatarItemDisplayNGlovesDefaultB3;
+	"N_DISPLAY_n_gloves_default-new_0": AvatarItemDisplayNGlovesDefaultNew0;
 	N_DISPLAY_n_gloves_delibird_0: AvatarItemDisplayNGlovesDelibird0;
 	N_DISPLAY_n_gloves_dynamaxswsh_0: AvatarItemDisplayNGlovesDynamaxswsh0;
 	N_DISPLAY_n_gloves_frlg_a_0: AvatarItemDisplayNGlovesFrlgA0;
@@ -2048,6 +2048,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_hat_mewtwo_b_0: AvatarItemDisplayNHatMewtwoB0;
 	N_DISPLAY_n_hat_mimikyu_0: AvatarItemDisplayNHatMimikyu0;
 	N_DISPLAY_n_hat_mismagius_0: AvatarItemDisplayNHatMismagius0;
+	N_DISPLAY_n_hat_mlb_0: AvatarItemDisplayNHatMlb0;
 	"N_DISPLAY_n_hat_mlb-brewers_0": AvatarItemDisplayNHatMlbBrewers0;
 	"N_DISPLAY_n_hat_mlb-diamondbacks_0": AvatarItemDisplayNHatMlbDiamondbacks0;
 	"N_DISPLAY_n_hat_mlb-giants_0": AvatarItemDisplayNHatMlbGiants0;
@@ -2063,7 +2064,6 @@ export interface AvatarItemDisplayLookup {
 	"N_DISPLAY_n_hat_mlb-redsox_0": AvatarItemDisplayNHatMlbRedsox0;
 	"N_DISPLAY_n_hat_mlb-twins_0": AvatarItemDisplayNHatMlbTwins0;
 	"N_DISPLAY_n_hat_mlb-whitesox_0": AvatarItemDisplayNHatMlbWhitesox0;
-	N_DISPLAY_n_hat_mlb_0: AvatarItemDisplayNHatMlb0;
 	N_DISPLAY_n_hat_movie2020_0: AvatarItemDisplayNHatMovie20200;
 	N_DISPLAY_n_hat_munnapack_0: AvatarItemDisplayNHatMunnapack0;
 	N_DISPLAY_n_hat_munnapack_1: AvatarItemDisplayNHatMunnapack1;
@@ -2177,7 +2177,6 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_pants_casual_b_0: AvatarItemDisplayNPantsCasualB0;
 	N_DISPLAY_n_pants_casual_b_1: AvatarItemDisplayNPantsCasualB1;
 	N_DISPLAY_n_pants_clay_0: AvatarItemDisplayNPantsClay0;
-	"N_DISPLAY_n_pants_default-new_0": AvatarItemDisplayNPantsDefaultNew0;
 	N_DISPLAY_n_pants_default_a_0: AvatarItemDisplayNPantsDefaultA0;
 	N_DISPLAY_n_pants_default_a_1: AvatarItemDisplayNPantsDefaultA1;
 	N_DISPLAY_n_pants_default_a_2: AvatarItemDisplayNPantsDefaultA2;
@@ -2185,6 +2184,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_pants_default_a_4: AvatarItemDisplayNPantsDefaultA4;
 	N_DISPLAY_n_pants_default_a_5: AvatarItemDisplayNPantsDefaultA5;
 	N_DISPLAY_n_pants_default_b_0: AvatarItemDisplayNPantsDefaultB0;
+	"N_DISPLAY_n_pants_default-new_0": AvatarItemDisplayNPantsDefaultNew0;
 	N_DISPLAY_n_pants_denimfashionweek2023_0: AvatarItemDisplayNPantsDenimfashionweek20230;
 	N_DISPLAY_n_pants_dp_a_0: AvatarItemDisplayNPantsDpA0;
 	N_DISPLAY_n_pants_dp_b_0: AvatarItemDisplayNPantsDpB0;
@@ -2231,13 +2231,13 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_pants_lysandre_0: AvatarItemDisplayNPantsLysandre0;
 	N_DISPLAY_n_pants_mewtwo_a_0: AvatarItemDisplayNPantsMewtwoA0;
 	N_DISPLAY_n_pants_mewtwo_b_0: AvatarItemDisplayNPantsMewtwoB0;
-	"N_DISPLAY_n_pants_miniskirt-wave_0": AvatarItemDisplayNPantsMiniskirtWave0;
-	"N_DISPLAY_n_pants_miniskirt-wave_1": AvatarItemDisplayNPantsMiniskirtWave1;
-	"N_DISPLAY_n_pants_miniskirt-wave_2": AvatarItemDisplayNPantsMiniskirtWave2;
 	N_DISPLAY_n_pants_miniskirt_0: AvatarItemDisplayNPantsMiniskirt0;
 	N_DISPLAY_n_pants_miniskirt_1: AvatarItemDisplayNPantsMiniskirt1;
 	N_DISPLAY_n_pants_miniskirt_2: AvatarItemDisplayNPantsMiniskirt2;
 	N_DISPLAY_n_pants_miniskirt_3: AvatarItemDisplayNPantsMiniskirt3;
+	"N_DISPLAY_n_pants_miniskirt-wave_0": AvatarItemDisplayNPantsMiniskirtWave0;
+	"N_DISPLAY_n_pants_miniskirt-wave_1": AvatarItemDisplayNPantsMiniskirtWave1;
+	"N_DISPLAY_n_pants_miniskirt-wave_2": AvatarItemDisplayNPantsMiniskirtWave2;
 	N_DISPLAY_n_pants_misty_0: AvatarItemDisplayNPantsMisty0;
 	N_DISPLAY_n_pants_munnapack_0: AvatarItemDisplayNPantsMunnapack0;
 	N_DISPLAY_n_pants_mustard_0: AvatarItemDisplayNPantsMustard0;
@@ -2455,7 +2455,6 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_cosmog_0: AvatarItemDisplayNShirtCosmog0;
 	N_DISPLAY_n_shirt_cowichansweater_0: AvatarItemDisplayNShirtCowichansweater0;
 	N_DISPLAY_n_shirt_dayofdead_0: AvatarItemDisplayNShirtDayofdead0;
-	"N_DISPLAY_n_shirt_default-new_0": AvatarItemDisplayNShirtDefaultNew0;
 	N_DISPLAY_n_shirt_default_a_0: AvatarItemDisplayNShirtDefaultA0;
 	N_DISPLAY_n_shirt_default_a_1: AvatarItemDisplayNShirtDefaultA1;
 	N_DISPLAY_n_shirt_default_a_2: AvatarItemDisplayNShirtDefaultA2;
@@ -2474,6 +2473,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_default_b_6: AvatarItemDisplayNShirtDefaultB6;
 	N_DISPLAY_n_shirt_default_b_7: AvatarItemDisplayNShirtDefaultB7;
 	N_DISPLAY_n_shirt_default_b_8: AvatarItemDisplayNShirtDefaultB8;
+	"N_DISPLAY_n_shirt_default-new_0": AvatarItemDisplayNShirtDefaultNew0;
 	N_DISPLAY_n_shirt_delibird_0: AvatarItemDisplayNShirtDelibird0;
 	N_DISPLAY_n_shirt_delibirdonesie_0: AvatarItemDisplayNShirtDelibirdonesie0;
 	N_DISPLAY_n_shirt_denimfashionweek2023_0: AvatarItemDisplayNShirtDenimfashionweek20230;
@@ -2585,9 +2585,9 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_holifestival2021white_0: AvatarItemDisplayNShirtHolifestival2021white0;
 	N_DISPLAY_n_shirt_hoopaunboundtshirt_0: AvatarItemDisplayNShirtHoopaunboundtshirt0;
 	N_DISPLAY_n_shirt_ingo_0: AvatarItemDisplayNShirtIngo0;
+	N_DISPLAY_n_shirt_ingress_0: AvatarItemDisplayNShirtIngress0;
 	"N_DISPLAY_n_shirt_ingress-e_0": AvatarItemDisplayNShirtIngressE0;
 	"N_DISPLAY_n_shirt_ingress-r_0": AvatarItemDisplayNShirtIngressR0;
-	N_DISPLAY_n_shirt_ingress_0: AvatarItemDisplayNShirtIngress0;
 	"N_DISPLAY_n_shirt_jacket-newyear2022_0": AvatarItemDisplayNShirtJacketNewyear20220;
 	N_DISPLAY_n_shirt_james_0: AvatarItemDisplayNShirtJames0;
 	N_DISPLAY_n_shirt_jessie_0: AvatarItemDisplayNShirtJessie0;
@@ -2752,15 +2752,15 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_swshuniformdragon_0: AvatarItemDisplayNShirtSwshuniformdragon0;
 	N_DISPLAY_n_shirt_sylveonitems_0: AvatarItemDisplayNShirtSylveonitems0;
 	N_DISPLAY_n_shirt_tandemausitems_0: AvatarItemDisplayNShirtTandemausitems0;
+	N_DISPLAY_n_shirt_tanktop_0: AvatarItemDisplayNShirtTanktop0;
+	N_DISPLAY_n_shirt_tanktop_1: AvatarItemDisplayNShirtTanktop1;
+	N_DISPLAY_n_shirt_tanktop_2: AvatarItemDisplayNShirtTanktop2;
 	"N_DISPLAY_n_shirt_tanktop-charizard_0": AvatarItemDisplayNShirtTanktopCharizard0;
 	"N_DISPLAY_n_shirt_tanktop-charizard_1": AvatarItemDisplayNShirtTanktopCharizard1;
 	"N_DISPLAY_n_shirt_tanktop-charizard_2": AvatarItemDisplayNShirtTanktopCharizard2;
 	"N_DISPLAY_n_shirt_tanktop-pikachu_0": AvatarItemDisplayNShirtTanktopPikachu0;
 	"N_DISPLAY_n_shirt_tanktop-pikachu_1": AvatarItemDisplayNShirtTanktopPikachu1;
 	"N_DISPLAY_n_shirt_tanktop-pikachu_2": AvatarItemDisplayNShirtTanktopPikachu2;
-	N_DISPLAY_n_shirt_tanktop_0: AvatarItemDisplayNShirtTanktop0;
-	N_DISPLAY_n_shirt_tanktop_1: AvatarItemDisplayNShirtTanktop1;
-	N_DISPLAY_n_shirt_tanktop_2: AvatarItemDisplayNShirtTanktop2;
 	N_DISPLAY_n_shirt_tcgcollabtshirtandcap_0: AvatarItemDisplayNShirtTcgcollabtshirtandcap0;
 	N_DISPLAY_n_shirt_teamaqua_a_0: AvatarItemDisplayNShirtTeamaquaA0;
 	N_DISPLAY_n_shirt_teamaqua_b_0: AvatarItemDisplayNShirtTeamaquaB0;
@@ -2868,7 +2868,6 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shoes_clemont_0: AvatarItemDisplayNShoesClemont0;
 	N_DISPLAY_n_shoes_coolboots_0: AvatarItemDisplayNShoesCoolboots0;
 	N_DISPLAY_n_shoes_dedenneitems_0: AvatarItemDisplayNShoesDedenneitems0;
-	"N_DISPLAY_n_shoes_default-new_0": AvatarItemDisplayNShoesDefaultNew0;
 	N_DISPLAY_n_shoes_default_a_0: AvatarItemDisplayNShoesDefaultA0;
 	N_DISPLAY_n_shoes_default_a_1: AvatarItemDisplayNShoesDefaultA1;
 	N_DISPLAY_n_shoes_default_a_2: AvatarItemDisplayNShoesDefaultA2;
@@ -2883,6 +2882,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shoes_default_b_4: AvatarItemDisplayNShoesDefaultB4;
 	N_DISPLAY_n_shoes_default_b_5: AvatarItemDisplayNShoesDefaultB5;
 	N_DISPLAY_n_shoes_default_b_6: AvatarItemDisplayNShoesDefaultB6;
+	"N_DISPLAY_n_shoes_default-new_0": AvatarItemDisplayNShoesDefaultNew0;
 	N_DISPLAY_n_shoes_delibird_0: AvatarItemDisplayNShoesDelibird0;
 	N_DISPLAY_n_shoes_dp_a_0: AvatarItemDisplayNShoesDpA0;
 	N_DISPLAY_n_shoes_dp_b_0: AvatarItemDisplayNShoesDpB0;
@@ -2999,11 +2999,11 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shoes_wcs2022winnersitems_0: AvatarItemDisplayNShoesWcs2022winnersitems0;
 	N_DISPLAY_n_shoes_wcs2023winnersitems_0: AvatarItemDisplayNShoesWcs2023winnersitems0;
 	N_DISPLAY_n_shoes_wcs2024winnersitems_0: AvatarItemDisplayNShoesWcs2024winnersitems0;
-	N_DISPLAY_n_shoes_winterboots2023_0: AvatarItemDisplayNShoesWinterboots20230;
 	N_DISPLAY_n_shoes_winterboots_0: AvatarItemDisplayNShoesWinterboots0;
 	N_DISPLAY_n_shoes_winterboots_1: AvatarItemDisplayNShoesWinterboots1;
 	N_DISPLAY_n_shoes_winterboots_2: AvatarItemDisplayNShoesWinterboots2;
 	N_DISPLAY_n_shoes_winterboots_3: AvatarItemDisplayNShoesWinterboots3;
+	N_DISPLAY_n_shoes_winterboots2023_0: AvatarItemDisplayNShoesWinterboots20230;
 	N_DISPLAY_n_shoes_zacostume_a_0: AvatarItemDisplayNShoesZacostumeA0;
 	N_DISPLAY_n_shoes_zacostume_b_0: AvatarItemDisplayNShoesZacostumeB0;
 	N_DISPLAY_n_socks_default_a_0: AvatarItemDisplayNSocksDefaultA0;
@@ -3236,10 +3236,10 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_set_svcostumescarletschool_m: AvatarItemDisplaySetSvcostumescarletschoolM;
 	N_DISPLAY_set_svcostumevioletschool_f: AvatarItemDisplaySetSvcostumevioletschoolF;
 	N_DISPLAY_set_svcostumevioletschool_m: AvatarItemDisplaySetSvcostumevioletschoolM;
-	N_DISPLAY_set_svdlc2fall_0: AvatarItemDisplaySetSvdlc2fall0;
-	N_DISPLAY_set_svdlc2spring_0: AvatarItemDisplaySetSvdlc2spring0;
 	N_DISPLAY_set_svdlc_f: AvatarItemDisplaySetSvdlcF;
 	N_DISPLAY_set_svdlc_m: AvatarItemDisplaySetSvdlcM;
+	N_DISPLAY_set_svdlc2fall_0: AvatarItemDisplaySetSvdlc2fall0;
+	N_DISPLAY_set_svdlc2spring_0: AvatarItemDisplaySetSvdlc2spring0;
 	N_DISPLAY_set_swshdlc2costume_f: AvatarItemDisplaySetSwshdlc2costumeF;
 	N_DISPLAY_set_swshdlc2costume_m: AvatarItemDisplaySetSwshdlc2costumeM;
 	N_DISPLAY_set_swshdlccostume_f: AvatarItemDisplaySetSwshdlccostumeF;

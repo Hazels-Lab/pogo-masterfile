@@ -3,6 +3,24 @@
 import type { S } from "../../../_utils";
 import type { EventPassTierSettings } from "../../types";
 
+export type EventPassTierSettingsSteeledresolve2026Event1Premium = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_1_PREMIUM",
+		{
+			rank: 1;
+			rewards: [
+				{
+					item: {
+						amount: 1;
+						item: "ITEM_GIOVANNI_MAP";
+					};
+					type: "ITEM";
+				},
+			];
+			track: "PREMIUM";
+		}
+	>
+>;
 export type EventPassTierSettingsSteeledresolve2026Event10Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_10_PREMIUM",
@@ -177,16 +195,16 @@ export type EventPassTierSettingsSteeledresolve2026Event19Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsSteeledresolve2026Event1Premium = S<
+export type EventPassTierSettingsSteeledresolve2026Event2Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_1_PREMIUM",
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_2_PREMIUM",
 		{
-			rank: 1;
+			rank: 2;
 			rewards: [
 				{
 					item: {
-						amount: 1;
-						item: "ITEM_GIOVANNI_MAP";
+						amount: 30;
+						item: "ITEM_POKE_BALL";
 					};
 					type: "ITEM";
 				},
@@ -366,16 +384,16 @@ export type EventPassTierSettingsSteeledresolve2026Event29Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsSteeledresolve2026Event2Premium = S<
+export type EventPassTierSettingsSteeledresolve2026Event3Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_2_PREMIUM",
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_3_PREMIUM",
 		{
-			rank: 2;
+			rank: 3;
 			rewards: [
 				{
 					item: {
-						amount: 30;
-						item: "ITEM_POKE_BALL";
+						amount: 1;
+						item: "ITEM_PAID_RAID_TICKET";
 					};
 					type: "ITEM";
 				},
@@ -540,18 +558,18 @@ export type EventPassTierSettingsSteeledresolve2026Event39Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsSteeledresolve2026Event3Premium = S<
+export type EventPassTierSettingsSteeledresolve2026Event4Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_3_PREMIUM",
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_4_PREMIUM",
 		{
-			rank: 3;
+			rank: 4;
 			rewards: [
 				{
-					item: {
-						amount: 1;
-						item: "ITEM_PAID_RAID_TICKET";
+					type: "XL_CANDY";
+					xlCandy: {
+						amount: 2;
+						pokemonId: "FERROSEED";
 					};
-					type: "ITEM";
 				},
 			];
 			track: "PREMIUM";
@@ -708,18 +726,21 @@ export type EventPassTierSettingsSteeledresolve2026Event49Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsSteeledresolve2026Event4Premium = S<
+export type EventPassTierSettingsSteeledresolve2026Event5Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_4_PREMIUM",
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_5_PREMIUM",
 		{
-			rank: 4;
+			rank: 5;
 			rewards: [
 				{
-					type: "XL_CANDY";
-					xlCandy: {
-						amount: 2;
+					pokemonEncounter: {
+						isFeaturedPokemon: true;
+						pokemonDisplay: {
+							form: "FERROSEED_NORMAL";
+						};
 						pokemonId: "FERROSEED";
 					};
+					type: "POKEMON_ENCOUNTER";
 				},
 			];
 			track: "PREMIUM";
@@ -876,21 +897,18 @@ export type EventPassTierSettingsSteeledresolve2026Event59Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsSteeledresolve2026Event5Premium = S<
+export type EventPassTierSettingsSteeledresolve2026Event6Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_5_PREMIUM",
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_6_PREMIUM",
 		{
-			rank: 5;
+			rank: 6;
 			rewards: [
 				{
-					pokemonEncounter: {
-						isFeaturedPokemon: true;
-						pokemonDisplay: {
-							form: "FERROSEED_NORMAL";
-						};
-						pokemonId: "FERROSEED";
+					item: {
+						amount: 20;
+						item: "ITEM_GREAT_BALL";
 					};
-					type: "POKEMON_ENCOUNTER";
+					type: "ITEM";
 				},
 			];
 			track: "PREMIUM";
@@ -906,24 +924,6 @@ export type EventPassTierSettingsSteeledresolve2026Event60Premium = S<
 				{
 					stardust: 100;
 					type: "STARDUST";
-				},
-			];
-			track: "PREMIUM";
-		}
-	>
->;
-export type EventPassTierSettingsSteeledresolve2026Event6Premium = S<
-	EventPassTierSettings<
-		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_6_PREMIUM",
-		{
-			rank: 6;
-			rewards: [
-				{
-					item: {
-						amount: 20;
-						item: "ITEM_GREAT_BALL";
-					};
-					type: "ITEM";
 				},
 			];
 			track: "PREMIUM";
@@ -986,6 +986,7 @@ export type EventPassTierSettingsSteeledresolve2026Event9Premium = S<
 >;
 
 export type EventPassTierSettingsPremiumSteeledresolve2026MasterfileEntry =
+	| EventPassTierSettingsSteeledresolve2026Event1Premium
 	| EventPassTierSettingsSteeledresolve2026Event10Premium
 	| EventPassTierSettingsSteeledresolve2026Event11Premium
 	| EventPassTierSettingsSteeledresolve2026Event12Premium
@@ -996,7 +997,7 @@ export type EventPassTierSettingsPremiumSteeledresolve2026MasterfileEntry =
 	| EventPassTierSettingsSteeledresolve2026Event17Premium
 	| EventPassTierSettingsSteeledresolve2026Event18Premium
 	| EventPassTierSettingsSteeledresolve2026Event19Premium
-	| EventPassTierSettingsSteeledresolve2026Event1Premium
+	| EventPassTierSettingsSteeledresolve2026Event2Premium
 	| EventPassTierSettingsSteeledresolve2026Event20Premium
 	| EventPassTierSettingsSteeledresolve2026Event21Premium
 	| EventPassTierSettingsSteeledresolve2026Event22Premium
@@ -1007,7 +1008,7 @@ export type EventPassTierSettingsPremiumSteeledresolve2026MasterfileEntry =
 	| EventPassTierSettingsSteeledresolve2026Event27Premium
 	| EventPassTierSettingsSteeledresolve2026Event28Premium
 	| EventPassTierSettingsSteeledresolve2026Event29Premium
-	| EventPassTierSettingsSteeledresolve2026Event2Premium
+	| EventPassTierSettingsSteeledresolve2026Event3Premium
 	| EventPassTierSettingsSteeledresolve2026Event30Premium
 	| EventPassTierSettingsSteeledresolve2026Event31Premium
 	| EventPassTierSettingsSteeledresolve2026Event32Premium
@@ -1018,7 +1019,7 @@ export type EventPassTierSettingsPremiumSteeledresolve2026MasterfileEntry =
 	| EventPassTierSettingsSteeledresolve2026Event37Premium
 	| EventPassTierSettingsSteeledresolve2026Event38Premium
 	| EventPassTierSettingsSteeledresolve2026Event39Premium
-	| EventPassTierSettingsSteeledresolve2026Event3Premium
+	| EventPassTierSettingsSteeledresolve2026Event4Premium
 	| EventPassTierSettingsSteeledresolve2026Event40Premium
 	| EventPassTierSettingsSteeledresolve2026Event41Premium
 	| EventPassTierSettingsSteeledresolve2026Event42Premium
@@ -1029,7 +1030,7 @@ export type EventPassTierSettingsPremiumSteeledresolve2026MasterfileEntry =
 	| EventPassTierSettingsSteeledresolve2026Event47Premium
 	| EventPassTierSettingsSteeledresolve2026Event48Premium
 	| EventPassTierSettingsSteeledresolve2026Event49Premium
-	| EventPassTierSettingsSteeledresolve2026Event4Premium
+	| EventPassTierSettingsSteeledresolve2026Event5Premium
 	| EventPassTierSettingsSteeledresolve2026Event50Premium
 	| EventPassTierSettingsSteeledresolve2026Event51Premium
 	| EventPassTierSettingsSteeledresolve2026Event52Premium
@@ -1040,9 +1041,8 @@ export type EventPassTierSettingsPremiumSteeledresolve2026MasterfileEntry =
 	| EventPassTierSettingsSteeledresolve2026Event57Premium
 	| EventPassTierSettingsSteeledresolve2026Event58Premium
 	| EventPassTierSettingsSteeledresolve2026Event59Premium
-	| EventPassTierSettingsSteeledresolve2026Event5Premium
-	| EventPassTierSettingsSteeledresolve2026Event60Premium
 	| EventPassTierSettingsSteeledresolve2026Event6Premium
+	| EventPassTierSettingsSteeledresolve2026Event60Premium
 	| EventPassTierSettingsSteeledresolve2026Event7Premium
 	| EventPassTierSettingsSteeledresolve2026Event8Premium
 	| EventPassTierSettingsSteeledresolve2026Event9Premium;

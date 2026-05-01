@@ -399,15 +399,6 @@ export type AvatarItemDisplayNShirtDayofdead0 = S<
 		}
 	>
 >;
-export type AvatarItemDisplayNShirtDefaultNew0 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_shirt_default-new_0",
-		{
-			displayStringId: "n_shirt_default-new_0_display_name";
-			iconAddress: "n_shirt_defaultnew_0_icon";
-		}
-	>
->;
 export type AvatarItemDisplayNShirtDefaultA0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_shirt_default_a_0",
@@ -567,6 +558,15 @@ export type AvatarItemDisplayNShirtDefaultB8 = S<
 		{
 			displayStringId: "n_shirt_default_b_2_display_name";
 			iconAddress: "n_shirt_default_b_8_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtDefaultNew0 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_default-new_0",
+		{
+			displayStringId: "n_shirt_default-new_0_display_name";
+			iconAddress: "n_shirt_defaultnew_0_icon";
 		}
 	>
 >;
@@ -1569,6 +1569,15 @@ export type AvatarItemDisplayNShirtIngo0 = S<
 		}
 	>
 >;
+export type AvatarItemDisplayNShirtIngress0 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_ingress_0",
+		{
+			displayStringId: "n_shirt_ingress_0_display_name";
+			iconAddress: "n_shirt_ingress_0_icon";
+		}
+	>
+>;
 export type AvatarItemDisplayNShirtIngressE0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_shirt_ingress-e_0",
@@ -1584,15 +1593,6 @@ export type AvatarItemDisplayNShirtIngressR0 = S<
 		{
 			displayStringId: "n_shirt_ingress-r_0_display_name";
 			iconAddress: "n_shirt_ingressr_0_icon";
-		}
-	>
->;
-export type AvatarItemDisplayNShirtIngress0 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_shirt_ingress_0",
-		{
-			displayStringId: "n_shirt_ingress_0_display_name";
-			iconAddress: "n_shirt_ingress_0_icon";
 		}
 	>
 >;
@@ -3072,6 +3072,33 @@ export type AvatarItemDisplayNShirtTandemausitems0 = S<
 		}
 	>
 >;
+export type AvatarItemDisplayNShirtTanktop0 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_tanktop_0",
+		{
+			displayStringId: "n_shirt_tanktop_2_display_name";
+			iconAddress: "n_shirt_tanktop_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtTanktop1 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_tanktop_1",
+		{
+			displayStringId: "n_shirt_tanktop_2_display_name";
+			iconAddress: "n_shirt_tanktop_1_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtTanktop2 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_tanktop_2",
+		{
+			displayStringId: "n_shirt_tanktop_2_display_name";
+			iconAddress: "n_shirt_tanktop_2_icon";
+		}
+	>
+>;
 export type AvatarItemDisplayNShirtTanktopCharizard0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_shirt_tanktop-charizard_0",
@@ -3123,33 +3150,6 @@ export type AvatarItemDisplayNShirtTanktopPikachu2 = S<
 		{
 			displayStringId: "n_shirt_tanktop-pikachu_2_display_name";
 			iconAddress: "n_shirt_tanktop-pikachu_2_icon";
-		}
-	>
->;
-export type AvatarItemDisplayNShirtTanktop0 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_shirt_tanktop_0",
-		{
-			displayStringId: "n_shirt_tanktop_2_display_name";
-			iconAddress: "n_shirt_tanktop_0_icon";
-		}
-	>
->;
-export type AvatarItemDisplayNShirtTanktop1 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_shirt_tanktop_1",
-		{
-			displayStringId: "n_shirt_tanktop_2_display_name";
-			iconAddress: "n_shirt_tanktop_1_icon";
-		}
-	>
->;
-export type AvatarItemDisplayNShirtTanktop2 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_shirt_tanktop_2",
-		{
-			displayStringId: "n_shirt_tanktop_2_display_name";
-			iconAddress: "n_shirt_tanktop_2_icon";
 		}
 	>
 >;
@@ -3991,7 +3991,6 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirtCosmog0
 	| AvatarItemDisplayNShirtCowichansweater0
 	| AvatarItemDisplayNShirtDayofdead0
-	| AvatarItemDisplayNShirtDefaultNew0
 	| AvatarItemDisplayNShirtDefaultA0
 	| AvatarItemDisplayNShirtDefaultA1
 	| AvatarItemDisplayNShirtDefaultA2
@@ -4010,6 +4009,7 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirtDefaultB6
 	| AvatarItemDisplayNShirtDefaultB7
 	| AvatarItemDisplayNShirtDefaultB8
+	| AvatarItemDisplayNShirtDefaultNew0
 	| AvatarItemDisplayNShirtDelibird0
 	| AvatarItemDisplayNShirtDelibirdonesie0
 	| AvatarItemDisplayNShirtDenimfashionweek20230
@@ -4121,9 +4121,9 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirtHolifestival2021white0
 	| AvatarItemDisplayNShirtHoopaunboundtshirt0
 	| AvatarItemDisplayNShirtIngo0
+	| AvatarItemDisplayNShirtIngress0
 	| AvatarItemDisplayNShirtIngressE0
 	| AvatarItemDisplayNShirtIngressR0
-	| AvatarItemDisplayNShirtIngress0
 	| AvatarItemDisplayNShirtJacketNewyear20220
 	| AvatarItemDisplayNShirtJames0
 	| AvatarItemDisplayNShirtJessie0
@@ -4288,15 +4288,15 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirtSwshuniformdragon0
 	| AvatarItemDisplayNShirtSylveonitems0
 	| AvatarItemDisplayNShirtTandemausitems0
+	| AvatarItemDisplayNShirtTanktop0
+	| AvatarItemDisplayNShirtTanktop1
+	| AvatarItemDisplayNShirtTanktop2
 	| AvatarItemDisplayNShirtTanktopCharizard0
 	| AvatarItemDisplayNShirtTanktopCharizard1
 	| AvatarItemDisplayNShirtTanktopCharizard2
 	| AvatarItemDisplayNShirtTanktopPikachu0
 	| AvatarItemDisplayNShirtTanktopPikachu1
 	| AvatarItemDisplayNShirtTanktopPikachu2
-	| AvatarItemDisplayNShirtTanktop0
-	| AvatarItemDisplayNShirtTanktop1
-	| AvatarItemDisplayNShirtTanktop2
 	| AvatarItemDisplayNShirtTcgcollabtshirtandcap0
 	| AvatarItemDisplayNShirtTeamaquaA0
 	| AvatarItemDisplayNShirtTeamaquaB0

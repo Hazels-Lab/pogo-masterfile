@@ -713,16 +713,6 @@ export type StickerMetadataPapelpicadotgr3 = S<
 		}
 	>
 >;
-export type StickerMetadataPgofest2022Pikachu = S<
-	StickerMetadata<
-		"STICKER_PGOFEST2022_PIKACHU",
-		{
-			category: ["Pokemon"];
-			pokemonId: "PIKACHU";
-			releaseDate: 20220604;
-		}
-	>
->;
 export type StickerMetadataPgoFest2026 = S<
 	StickerMetadata<
 		"STICKER_PGO_FEST_2026",
@@ -760,6 +750,16 @@ export type StickerMetadataPgoFest20263 = S<
 			category: ["Pokemon"];
 			pokemonId: "MEWTWO";
 			releaseDate: 20260528;
+		}
+	>
+>;
+export type StickerMetadataPgofest2022Pikachu = S<
+	StickerMetadata<
+		"STICKER_PGOFEST2022_PIKACHU",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PIKACHU";
+			releaseDate: 20220604;
 		}
 	>
 >;
@@ -1126,11 +1126,11 @@ export type StickerMetadataPokemonIdReleaseDateMasterfileEntry =
 	| StickerMetadataPapelpicadotgr1
 	| StickerMetadataPapelpicadotgr2
 	| StickerMetadataPapelpicadotgr3
-	| StickerMetadataPgofest2022Pikachu
 	| StickerMetadataPgoFest2026
 	| StickerMetadataPgoFest20261
 	| StickerMetadataPgoFest20262
 	| StickerMetadataPgoFest20263
+	| StickerMetadataPgofest2022Pikachu
 	| StickerMetadataPikaairjejuPikachu
 	| StickerMetadataPikaairsingaporeLapras
 	| StickerMetadataPikaairsingaporePikachu

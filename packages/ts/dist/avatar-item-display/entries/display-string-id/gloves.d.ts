@@ -48,15 +48,6 @@ export type AvatarItemDisplayNGlovesBwn0 = S<
 		}
 	>
 >;
-export type AvatarItemDisplayNGlovesDefaultNew0 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_gloves_default-new_0",
-		{
-			displayStringId: "n_gloves_default-new_0_display_name";
-			iconAddress: "n_gloves_defaultnew_0_icon";
-		}
-	>
->;
 export type AvatarItemDisplayNGlovesDefaultA0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_gloves_default_a_0",
@@ -126,6 +117,15 @@ export type AvatarItemDisplayNGlovesDefaultB3 = S<
 		{
 			displayStringId: "n_gloves_default_b_0_display_name";
 			iconAddress: "n_gloves_default_b_3_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNGlovesDefaultNew0 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_gloves_default-new_0",
+		{
+			displayStringId: "n_gloves_default-new_0_display_name";
+			iconAddress: "n_gloves_defaultnew_0_icon";
 		}
 	>
 >;
@@ -514,7 +514,6 @@ export type AvatarItemDisplayDisplayStringIdGlovesMasterfileEntry =
 	| AvatarItemDisplayNGlovesBattlegirl0
 	| AvatarItemDisplayNGlovesBea0
 	| AvatarItemDisplayNGlovesBwn0
-	| AvatarItemDisplayNGlovesDefaultNew0
 	| AvatarItemDisplayNGlovesDefaultA0
 	| AvatarItemDisplayNGlovesDefaultA1
 	| AvatarItemDisplayNGlovesDefaultA2
@@ -523,6 +522,7 @@ export type AvatarItemDisplayDisplayStringIdGlovesMasterfileEntry =
 	| AvatarItemDisplayNGlovesDefaultB1
 	| AvatarItemDisplayNGlovesDefaultB2
 	| AvatarItemDisplayNGlovesDefaultB3
+	| AvatarItemDisplayNGlovesDefaultNew0
 	| AvatarItemDisplayNGlovesDelibird0
 	| AvatarItemDisplayNGlovesDynamaxswsh0
 	| AvatarItemDisplayNGlovesFrlgA0

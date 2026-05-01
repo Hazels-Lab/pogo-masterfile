@@ -960,6 +960,732 @@ export type BadgeSettingsGlobalTicketedEvent = S<
 		}
 	>
 >;
+export type BadgeSettingsGoTour2025GlobalBlackVersion = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_GLOBAL_BLACK_VERSION",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_GLOBAL_BLACK_VERSION";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025GlobalWhiteVersion = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_GLOBAL_WHITE_VERSION",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_GLOBAL_WHITE_VERSION";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025LosAngelesAddOnHatch = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_HATCH",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_HATCH";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025LosAngelesAddOnHatchTest = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_HATCH_TEST",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_HATCH_TEST";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025LosAngelesAddOnRaid = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_RAID",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_RAID";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025LosAngelesAddOnRaidTest = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_RAID_TEST",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_RAID_TEST";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025LosAngelesFridayCity = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_LOS_ANGELES_FRIDAY_CITY",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_FRIDAY_CITY";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025LosAngelesFridayPark = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_LOS_ANGELES_FRIDAY_PARK",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_FRIDAY_PARK";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025LosAngelesSaturdayCity = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_LOS_ANGELES_SATURDAY_CITY",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_SATURDAY_CITY";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025LosAngelesSaturdayPark = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_LOS_ANGELES_SATURDAY_PARK",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_SATURDAY_PARK";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025LosAngelesSundayCity = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_LOS_ANGELES_SUNDAY_CITY",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_SUNDAY_CITY";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025LosAngelesSundayPark = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_LOS_ANGELES_SUNDAY_PARK",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_SUNDAY_PARK";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025LosAngelesTestCity = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_LOS_ANGELES_TEST_CITY",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_TEST_CITY";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025LosAngelesTestPark = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_LOS_ANGELES_TEST_PARK",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_TEST_PARK";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025LosAngelesVip = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_LOS_ANGELES_VIP",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_VIP";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025NewTaipeiCityAddOnHatch = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_HATCH",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_HATCH";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025NewTaipeiCityAddOnHatchTest = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_HATCH_TEST",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_HATCH_TEST";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025NewTaipeiCityAddOnRaid = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_RAID",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_RAID";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025NewTaipeiCityAddOnRaidTest = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_RAID_TEST",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_RAID_TEST";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025NewTaipeiCityFridayCity = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_FRIDAY_CITY",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_FRIDAY_CITY";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025NewTaipeiCityFridayPark = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_FRIDAY_PARK",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_FRIDAY_PARK";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025NewTaipeiCitySaturdayCity = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SATURDAY_CITY",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SATURDAY_CITY";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025NewTaipeiCitySaturdayPark = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SATURDAY_PARK",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SATURDAY_PARK";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025NewTaipeiCitySundayCity = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SUNDAY_CITY",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SUNDAY_CITY";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025NewTaipeiCitySundayPark = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SUNDAY_PARK",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SUNDAY_PARK";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025NewTaipeiCityTestCity = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_TEST_CITY",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_TEST_CITY";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025NewTaipeiCityTestPark = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_TEST_PARK",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_TEST_PARK";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2025NewTaipeiCityVip = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_VIP",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_VIP";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026Global = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_GLOBAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_GLOBAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026GlobalTest = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_GLOBAL_TEST",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_GLOBAL_TEST";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026GlobalXVersion = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_GLOBAL_X_VERSION",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_GLOBAL_X_VERSION";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026GlobalYVersion = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_GLOBAL_Y_VERSION",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_GLOBAL_Y_VERSION";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026LosAngelesAddOnHatch = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_HATCH",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_HATCH";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026LosAngelesAddOnHatchTest = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_HATCH_TEST",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_HATCH_TEST";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026LosAngelesAddOnRaid = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_RAID",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_RAID";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026LosAngelesAddOnRaidTest = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_RAID_TEST",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_RAID_TEST";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026LosAngelesFridayCity = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_CITY",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_CITY";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026LosAngelesFridayMegaNight = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_MEGA_NIGHT",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_MEGA_NIGHT";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026LosAngelesFridayPark = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_PARK",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_PARK";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026LosAngelesMegaNightTest = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_LOS_ANGELES_MEGA_NIGHT_TEST",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_MEGA_NIGHT_TEST";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026LosAngelesSaturdayCity = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_CITY",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_CITY";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026LosAngelesSaturdayMegaNight = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_MEGA_NIGHT",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_MEGA_NIGHT";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026LosAngelesSaturdayPark = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_PARK",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_PARK";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026LosAngelesSundayCity = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_CITY",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_CITY";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026LosAngelesSundayMegaNight = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_MEGA_NIGHT",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_MEGA_NIGHT";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026LosAngelesSundayPark = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_PARK",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_PARK";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026LosAngelesTestCity = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_LOS_ANGELES_TEST_CITY",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_TEST_CITY";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026LosAngelesTestPark = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_LOS_ANGELES_TEST_PARK",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_TEST_PARK";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026LosAngelesVip = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_LOS_ANGELES_VIP",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_VIP";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026TainanAddOnHatch = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_TAINAN_ADD_ON_HATCH",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_HATCH";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026TainanAddOnHatchTest = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_TAINAN_ADD_ON_HATCH_TEST",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_HATCH_TEST";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026TainanAddOnRaid = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_TAINAN_ADD_ON_RAID",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_RAID";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026TainanAddOnRaidTest = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_TAINAN_ADD_ON_RAID_TEST",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_RAID_TEST";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026TainanFridayCity = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_TAINAN_FRIDAY_CITY",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_TAINAN_FRIDAY_CITY";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026TainanFridayMegaNight = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_TAINAN_FRIDAY_MEGA_NIGHT",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_TAINAN_FRIDAY_MEGA_NIGHT";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026TainanFridayPark = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_TAINAN_FRIDAY_PARK",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_TAINAN_FRIDAY_PARK";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026TainanMegaNightTest = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_TAINAN_MEGA_NIGHT_TEST",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_TAINAN_MEGA_NIGHT_TEST";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026TainanSaturdayCity = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_TAINAN_SATURDAY_CITY",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_TAINAN_SATURDAY_CITY";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026TainanSaturdayMegaNight = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_TAINAN_SATURDAY_MEGA_NIGHT",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_TAINAN_SATURDAY_MEGA_NIGHT";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026TainanSaturdayPark = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_TAINAN_SATURDAY_PARK",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_TAINAN_SATURDAY_PARK";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026TainanSundayCity = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_TAINAN_SUNDAY_CITY",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_TAINAN_SUNDAY_CITY";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026TainanSundayMegaNight = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_TAINAN_SUNDAY_MEGA_NIGHT",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_TAINAN_SUNDAY_MEGA_NIGHT";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026TainanSundayPark = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_TAINAN_SUNDAY_PARK",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_TAINAN_SUNDAY_PARK";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026TainanTestCity = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_TAINAN_TEST_CITY",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_TAINAN_TEST_CITY";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026TainanTestPark = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_TAINAN_TEST_PARK",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_TAINAN_TEST_PARK";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026TainanVip = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_TAINAN_VIP",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_TAINAN_VIP";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
 export type BadgeSettingsGofest2019AmericasDay00NorthEarlyaccess = S<
 	BadgeSettings<
 		"BADGE_GOFEST_2019_AMERICAS_DAY_00_NORTH_EARLYACCESS",
@@ -4887,732 +5613,6 @@ export type BadgeSettingsGowa2025SpecialResearchB = S<
 		}
 	>
 >;
-export type BadgeSettingsGoTour2025GlobalBlackVersion = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_GLOBAL_BLACK_VERSION",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_GLOBAL_BLACK_VERSION";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025GlobalWhiteVersion = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_GLOBAL_WHITE_VERSION",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_GLOBAL_WHITE_VERSION";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025LosAngelesAddOnHatch = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_HATCH",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_HATCH";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025LosAngelesAddOnHatchTest = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_HATCH_TEST",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_HATCH_TEST";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025LosAngelesAddOnRaid = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_RAID",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_RAID";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025LosAngelesAddOnRaidTest = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_RAID_TEST",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_RAID_TEST";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025LosAngelesFridayCity = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_LOS_ANGELES_FRIDAY_CITY",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_FRIDAY_CITY";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025LosAngelesFridayPark = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_LOS_ANGELES_FRIDAY_PARK",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_FRIDAY_PARK";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025LosAngelesSaturdayCity = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_LOS_ANGELES_SATURDAY_CITY",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_SATURDAY_CITY";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025LosAngelesSaturdayPark = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_LOS_ANGELES_SATURDAY_PARK",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_SATURDAY_PARK";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025LosAngelesSundayCity = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_LOS_ANGELES_SUNDAY_CITY",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_SUNDAY_CITY";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025LosAngelesSundayPark = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_LOS_ANGELES_SUNDAY_PARK",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_SUNDAY_PARK";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025LosAngelesTestCity = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_LOS_ANGELES_TEST_CITY",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_TEST_CITY";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025LosAngelesTestPark = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_LOS_ANGELES_TEST_PARK",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_TEST_PARK";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025LosAngelesVip = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_LOS_ANGELES_VIP",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_LOS_ANGELES_VIP";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025NewTaipeiCityAddOnHatch = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_HATCH",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_HATCH";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025NewTaipeiCityAddOnHatchTest = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_HATCH_TEST",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_HATCH_TEST";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025NewTaipeiCityAddOnRaid = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_RAID",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_RAID";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025NewTaipeiCityAddOnRaidTest = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_RAID_TEST",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_RAID_TEST";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025NewTaipeiCityFridayCity = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_FRIDAY_CITY",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_FRIDAY_CITY";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025NewTaipeiCityFridayPark = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_FRIDAY_PARK",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_FRIDAY_PARK";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025NewTaipeiCitySaturdayCity = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SATURDAY_CITY",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SATURDAY_CITY";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025NewTaipeiCitySaturdayPark = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SATURDAY_PARK",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SATURDAY_PARK";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025NewTaipeiCitySundayCity = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SUNDAY_CITY",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SUNDAY_CITY";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025NewTaipeiCitySundayPark = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SUNDAY_PARK",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SUNDAY_PARK";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025NewTaipeiCityTestCity = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_TEST_CITY",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_TEST_CITY";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025NewTaipeiCityTestPark = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_TEST_PARK",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_TEST_PARK";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2025NewTaipeiCityVip = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_VIP",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_VIP";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026Global = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_GLOBAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_GLOBAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026GlobalTest = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_GLOBAL_TEST",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_GLOBAL_TEST";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026GlobalXVersion = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_GLOBAL_X_VERSION",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_GLOBAL_X_VERSION";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026GlobalYVersion = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_GLOBAL_Y_VERSION",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_GLOBAL_Y_VERSION";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026LosAngelesAddOnHatch = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_HATCH",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_HATCH";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026LosAngelesAddOnHatchTest = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_HATCH_TEST",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_HATCH_TEST";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026LosAngelesAddOnRaid = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_RAID",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_RAID";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026LosAngelesAddOnRaidTest = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_RAID_TEST",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_RAID_TEST";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026LosAngelesFridayCity = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_CITY",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_CITY";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026LosAngelesFridayMegaNight = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_MEGA_NIGHT",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_MEGA_NIGHT";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026LosAngelesFridayPark = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_PARK",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_PARK";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026LosAngelesMegaNightTest = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_LOS_ANGELES_MEGA_NIGHT_TEST",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_MEGA_NIGHT_TEST";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026LosAngelesSaturdayCity = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_CITY",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_CITY";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026LosAngelesSaturdayMegaNight = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_MEGA_NIGHT",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_MEGA_NIGHT";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026LosAngelesSaturdayPark = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_PARK",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_PARK";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026LosAngelesSundayCity = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_CITY",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_CITY";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026LosAngelesSundayMegaNight = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_MEGA_NIGHT",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_MEGA_NIGHT";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026LosAngelesSundayPark = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_PARK",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_PARK";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026LosAngelesTestCity = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_LOS_ANGELES_TEST_CITY",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_TEST_CITY";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026LosAngelesTestPark = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_LOS_ANGELES_TEST_PARK",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_TEST_PARK";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026LosAngelesVip = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_LOS_ANGELES_VIP",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_LOS_ANGELES_VIP";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026TainanAddOnHatch = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_TAINAN_ADD_ON_HATCH",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_HATCH";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026TainanAddOnHatchTest = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_TAINAN_ADD_ON_HATCH_TEST",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_HATCH_TEST";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026TainanAddOnRaid = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_TAINAN_ADD_ON_RAID",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_RAID";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026TainanAddOnRaidTest = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_TAINAN_ADD_ON_RAID_TEST",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_RAID_TEST";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026TainanFridayCity = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_TAINAN_FRIDAY_CITY",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_TAINAN_FRIDAY_CITY";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026TainanFridayMegaNight = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_TAINAN_FRIDAY_MEGA_NIGHT",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_TAINAN_FRIDAY_MEGA_NIGHT";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026TainanFridayPark = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_TAINAN_FRIDAY_PARK",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_TAINAN_FRIDAY_PARK";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026TainanMegaNightTest = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_TAINAN_MEGA_NIGHT_TEST",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_TAINAN_MEGA_NIGHT_TEST";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026TainanSaturdayCity = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_TAINAN_SATURDAY_CITY",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_TAINAN_SATURDAY_CITY";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026TainanSaturdayMegaNight = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_TAINAN_SATURDAY_MEGA_NIGHT",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_TAINAN_SATURDAY_MEGA_NIGHT";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026TainanSaturdayPark = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_TAINAN_SATURDAY_PARK",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_TAINAN_SATURDAY_PARK";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026TainanSundayCity = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_TAINAN_SUNDAY_CITY",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_TAINAN_SUNDAY_CITY";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026TainanSundayMegaNight = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_TAINAN_SUNDAY_MEGA_NIGHT",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_TAINAN_SUNDAY_MEGA_NIGHT";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026TainanSundayPark = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_TAINAN_SUNDAY_PARK",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_TAINAN_SUNDAY_PARK";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026TainanTestCity = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_TAINAN_TEST_CITY",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_TAINAN_TEST_CITY";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026TainanTestPark = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_TAINAN_TEST_PARK",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_TAINAN_TEST_PARK";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026TainanVip = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_TAINAN_VIP",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_TAINAN_VIP";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
 export type BadgeSettingsLevel40 = S<
 	BadgeSettings<
 		"BADGE_LEVEL_40",
@@ -5652,622 +5652,6 @@ export type BadgeSettingsPikachuOutbreakYokohama2017 = S<
 		{
 			badgeRank: 2;
 			badgeType: "BADGE_PIKACHU_OUTBREAK_YOKOHAMA_2017";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2019MontrealDay00Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2019_MONTREAL_DAY_00_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2019_MONTREAL_DAY_00_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2019MontrealDay00General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2019_MONTREAL_DAY_00_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2019_MONTREAL_DAY_00_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2019MontrealDay01Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2019_MONTREAL_DAY_01_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2019_MONTREAL_DAY_01_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2019MontrealDay01General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2019_MONTREAL_DAY_01_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2019_MONTREAL_DAY_01_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2019MontrealDay02Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2019_MONTREAL_DAY_02_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2019_MONTREAL_DAY_02_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2019MontrealDay02General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2019_MONTREAL_DAY_02_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2019_MONTREAL_DAY_02_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2019MontrealDay03Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2019_MONTREAL_DAY_03_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2019_MONTREAL_DAY_03_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2019MontrealDay03General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2019_MONTREAL_DAY_03_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2019_MONTREAL_DAY_03_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020LiverpoolDay00Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_00_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_00_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020LiverpoolDay00General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_00_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_00_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020LiverpoolDay01Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_01_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_01_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020LiverpoolDay01General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_01_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_01_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020LiverpoolDay02Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_02_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_02_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020LiverpoolDay02General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_02_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_02_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020LiverpoolDay03Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_03_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_03_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020LiverpoolDay03General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_03_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_03_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020PhiladelphiaDay00Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_00_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_00_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020PhiladelphiaDay00General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_00_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_00_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020PhiladelphiaDay01Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_01_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_01_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020PhiladelphiaDay01General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_01_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_01_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020PhiladelphiaDay02Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_02_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_02_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020PhiladelphiaDay02General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_02_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_02_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020PhiladelphiaDay03Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_03_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_03_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020PhiladelphiaDay03General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_03_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_03_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020StlouisDay00Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_STLOUIS_DAY_00_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_STLOUIS_DAY_00_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020StlouisDay00General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_STLOUIS_DAY_00_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_STLOUIS_DAY_00_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020StlouisDay01Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_STLOUIS_DAY_01_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_STLOUIS_DAY_01_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020StlouisDay01General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_STLOUIS_DAY_01_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_STLOUIS_DAY_01_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020StlouisDay02Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_STLOUIS_DAY_02_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_STLOUIS_DAY_02_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020StlouisDay02General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_STLOUIS_DAY_02_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_STLOUIS_DAY_02_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020StlouisDay03Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_STLOUIS_DAY_03_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_STLOUIS_DAY_03_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2020StlouisDay03General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2020_STLOUIS_DAY_03_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2020_STLOUIS_DAY_03_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022SevilleDay00Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_SEVILLE_DAY_00_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_SEVILLE_DAY_00_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022SevilleDay00General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_SEVILLE_DAY_00_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_SEVILLE_DAY_00_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022SevilleDay01Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_SEVILLE_DAY_01_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_SEVILLE_DAY_01_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022SevilleDay01General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_SEVILLE_DAY_01_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_SEVILLE_DAY_01_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022SevilleDay02Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_SEVILLE_DAY_02_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_SEVILLE_DAY_02_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022SevilleDay02General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_SEVILLE_DAY_02_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_SEVILLE_DAY_02_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022SevilleDay03Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_SEVILLE_DAY_03_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_SEVILLE_DAY_03_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022SevilleDay03General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_SEVILLE_DAY_03_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_SEVILLE_DAY_03_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022SingaporeDay00EarlyaccessTest = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_SINGAPORE_DAY_00_EARLYACCESS_TEST",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_00_EARLYACCESS_TEST";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022SingaporeDay00GeneralTest = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_SINGAPORE_DAY_00_GENERAL_TEST",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_00_GENERAL_TEST";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022SingaporeDay01EarlyaccessTest = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_SINGAPORE_DAY_01_EARLYACCESS_TEST",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_01_EARLYACCESS_TEST";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022SingaporeDay01GeneralTest = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_SINGAPORE_DAY_01_GENERAL_TEST",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_01_GENERAL_TEST";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022SingaporeDay02EarlyaccessTest = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_SINGAPORE_DAY_02_EARLYACCESS_TEST",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_02_EARLYACCESS_TEST";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022SingaporeDay02GeneralTest = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_SINGAPORE_DAY_02_GENERAL_TEST",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_02_GENERAL_TEST";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022SingaporeDay03EarlyaccessTest = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_SINGAPORE_DAY_03_EARLYACCESS_TEST",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_03_EARLYACCESS_TEST";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022SingaporeDay03GeneralTest = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_SINGAPORE_DAY_03_GENERAL_TEST",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_03_GENERAL_TEST";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022TaipeiDay00Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_TAIPEI_DAY_00_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_TAIPEI_DAY_00_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022TaipeiDay00General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_TAIPEI_DAY_00_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_TAIPEI_DAY_00_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022TaipeiDay01Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_TAIPEI_DAY_01_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_TAIPEI_DAY_01_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022TaipeiDay01General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_TAIPEI_DAY_01_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_TAIPEI_DAY_01_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022TaipeiDay02Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_TAIPEI_DAY_02_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_TAIPEI_DAY_02_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022TaipeiDay02General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_TAIPEI_DAY_02_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_TAIPEI_DAY_02_GENERAL";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022TaipeiDay03Earlyaccess = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_TAIPEI_DAY_03_EARLYACCESS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_TAIPEI_DAY_03_EARLYACCESS";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsSafarizone2022TaipeiDay03General = S<
-	BadgeSettings<
-		"BADGE_SAFARIZONE_2022_TAIPEI_DAY_03_GENERAL",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_SAFARIZONE_2022_TAIPEI_DAY_03_GENERAL";
 			eventBadge: true;
 			targets: [100];
 		}
@@ -7791,6 +7175,622 @@ export type BadgeSettingsSafariZoneEurope20171014 = S<
 		}
 	>
 >;
+export type BadgeSettingsSafarizone2019MontrealDay00Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2019_MONTREAL_DAY_00_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2019_MONTREAL_DAY_00_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2019MontrealDay00General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2019_MONTREAL_DAY_00_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2019_MONTREAL_DAY_00_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2019MontrealDay01Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2019_MONTREAL_DAY_01_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2019_MONTREAL_DAY_01_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2019MontrealDay01General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2019_MONTREAL_DAY_01_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2019_MONTREAL_DAY_01_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2019MontrealDay02Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2019_MONTREAL_DAY_02_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2019_MONTREAL_DAY_02_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2019MontrealDay02General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2019_MONTREAL_DAY_02_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2019_MONTREAL_DAY_02_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2019MontrealDay03Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2019_MONTREAL_DAY_03_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2019_MONTREAL_DAY_03_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2019MontrealDay03General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2019_MONTREAL_DAY_03_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2019_MONTREAL_DAY_03_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020LiverpoolDay00Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_00_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_00_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020LiverpoolDay00General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_00_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_00_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020LiverpoolDay01Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_01_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_01_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020LiverpoolDay01General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_01_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_01_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020LiverpoolDay02Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_02_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_02_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020LiverpoolDay02General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_02_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_02_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020LiverpoolDay03Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_03_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_03_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020LiverpoolDay03General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_03_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_03_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020PhiladelphiaDay00Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_00_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_00_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020PhiladelphiaDay00General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_00_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_00_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020PhiladelphiaDay01Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_01_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_01_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020PhiladelphiaDay01General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_01_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_01_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020PhiladelphiaDay02Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_02_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_02_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020PhiladelphiaDay02General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_02_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_02_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020PhiladelphiaDay03Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_03_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_03_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020PhiladelphiaDay03General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_03_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_03_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020StlouisDay00Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_STLOUIS_DAY_00_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_STLOUIS_DAY_00_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020StlouisDay00General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_STLOUIS_DAY_00_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_STLOUIS_DAY_00_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020StlouisDay01Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_STLOUIS_DAY_01_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_STLOUIS_DAY_01_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020StlouisDay01General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_STLOUIS_DAY_01_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_STLOUIS_DAY_01_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020StlouisDay02Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_STLOUIS_DAY_02_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_STLOUIS_DAY_02_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020StlouisDay02General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_STLOUIS_DAY_02_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_STLOUIS_DAY_02_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020StlouisDay03Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_STLOUIS_DAY_03_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_STLOUIS_DAY_03_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2020StlouisDay03General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2020_STLOUIS_DAY_03_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2020_STLOUIS_DAY_03_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022SevilleDay00Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_SEVILLE_DAY_00_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_SEVILLE_DAY_00_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022SevilleDay00General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_SEVILLE_DAY_00_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_SEVILLE_DAY_00_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022SevilleDay01Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_SEVILLE_DAY_01_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_SEVILLE_DAY_01_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022SevilleDay01General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_SEVILLE_DAY_01_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_SEVILLE_DAY_01_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022SevilleDay02Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_SEVILLE_DAY_02_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_SEVILLE_DAY_02_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022SevilleDay02General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_SEVILLE_DAY_02_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_SEVILLE_DAY_02_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022SevilleDay03Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_SEVILLE_DAY_03_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_SEVILLE_DAY_03_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022SevilleDay03General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_SEVILLE_DAY_03_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_SEVILLE_DAY_03_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022SingaporeDay00EarlyaccessTest = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_SINGAPORE_DAY_00_EARLYACCESS_TEST",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_00_EARLYACCESS_TEST";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022SingaporeDay00GeneralTest = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_SINGAPORE_DAY_00_GENERAL_TEST",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_00_GENERAL_TEST";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022SingaporeDay01EarlyaccessTest = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_SINGAPORE_DAY_01_EARLYACCESS_TEST",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_01_EARLYACCESS_TEST";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022SingaporeDay01GeneralTest = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_SINGAPORE_DAY_01_GENERAL_TEST",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_01_GENERAL_TEST";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022SingaporeDay02EarlyaccessTest = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_SINGAPORE_DAY_02_EARLYACCESS_TEST",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_02_EARLYACCESS_TEST";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022SingaporeDay02GeneralTest = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_SINGAPORE_DAY_02_GENERAL_TEST",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_02_GENERAL_TEST";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022SingaporeDay03EarlyaccessTest = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_SINGAPORE_DAY_03_EARLYACCESS_TEST",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_03_EARLYACCESS_TEST";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022SingaporeDay03GeneralTest = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_SINGAPORE_DAY_03_GENERAL_TEST",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_03_GENERAL_TEST";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022TaipeiDay00Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_TAIPEI_DAY_00_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_TAIPEI_DAY_00_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022TaipeiDay00General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_TAIPEI_DAY_00_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_TAIPEI_DAY_00_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022TaipeiDay01Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_TAIPEI_DAY_01_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_TAIPEI_DAY_01_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022TaipeiDay01General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_TAIPEI_DAY_01_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_TAIPEI_DAY_01_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022TaipeiDay02Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_TAIPEI_DAY_02_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_TAIPEI_DAY_02_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022TaipeiDay02General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_TAIPEI_DAY_02_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_TAIPEI_DAY_02_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022TaipeiDay03Earlyaccess = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_TAIPEI_DAY_03_EARLYACCESS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_TAIPEI_DAY_03_EARLYACCESS";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafarizone2022TaipeiDay03General = S<
+	BadgeSettings<
+		"BADGE_SAFARIZONE_2022_TAIPEI_DAY_03_GENERAL",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_SAFARIZONE_2022_TAIPEI_DAY_03_GENERAL";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
 export type BadgeSettingsSentosa18Apr2019 = S<
 	BadgeSettings<
 		"BADGE_SENTOSA_18_APR_2019",
@@ -7901,23 +7901,23 @@ export type BadgeSettingsYokosuka1Sep2018Verny = S<
 		}
 	>
 >;
-export type BadgeSettingsYokosuka29Aug2018Verny = S<
-	BadgeSettings<
-		"BADGE_YOKOSUKA_29_AUG_2018_VERNY",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_YOKOSUKA_29_AUG_2018_VERNY";
-			eventBadge: true;
-			targets: [100];
-		}
-	>
->;
 export type BadgeSettingsYokosuka2Sep2018Verny = S<
 	BadgeSettings<
 		"BADGE_YOKOSUKA_2_SEP_2018_VERNY",
 		{
 			badgeRank: 2;
 			badgeType: "BADGE_YOKOSUKA_2_SEP_2018_VERNY";
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsYokosuka29Aug2018Verny = S<
+	BadgeSettings<
+		"BADGE_YOKOSUKA_29_AUG_2018_VERNY",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_YOKOSUKA_29_AUG_2018_VERNY";
 			eventBadge: true;
 			targets: [100];
 		}
@@ -8034,6 +8034,72 @@ export type BadgeSettingsEventBadgeMasterfileEntry =
 	| BadgeSettingsEvent0148
 	| BadgeSettingsEvent0171
 	| BadgeSettingsGlobalTicketedEvent
+	| BadgeSettingsGoTour2025GlobalBlackVersion
+	| BadgeSettingsGoTour2025GlobalWhiteVersion
+	| BadgeSettingsGoTour2025LosAngelesAddOnHatch
+	| BadgeSettingsGoTour2025LosAngelesAddOnHatchTest
+	| BadgeSettingsGoTour2025LosAngelesAddOnRaid
+	| BadgeSettingsGoTour2025LosAngelesAddOnRaidTest
+	| BadgeSettingsGoTour2025LosAngelesFridayCity
+	| BadgeSettingsGoTour2025LosAngelesFridayPark
+	| BadgeSettingsGoTour2025LosAngelesSaturdayCity
+	| BadgeSettingsGoTour2025LosAngelesSaturdayPark
+	| BadgeSettingsGoTour2025LosAngelesSundayCity
+	| BadgeSettingsGoTour2025LosAngelesSundayPark
+	| BadgeSettingsGoTour2025LosAngelesTestCity
+	| BadgeSettingsGoTour2025LosAngelesTestPark
+	| BadgeSettingsGoTour2025LosAngelesVip
+	| BadgeSettingsGoTour2025NewTaipeiCityAddOnHatch
+	| BadgeSettingsGoTour2025NewTaipeiCityAddOnHatchTest
+	| BadgeSettingsGoTour2025NewTaipeiCityAddOnRaid
+	| BadgeSettingsGoTour2025NewTaipeiCityAddOnRaidTest
+	| BadgeSettingsGoTour2025NewTaipeiCityFridayCity
+	| BadgeSettingsGoTour2025NewTaipeiCityFridayPark
+	| BadgeSettingsGoTour2025NewTaipeiCitySaturdayCity
+	| BadgeSettingsGoTour2025NewTaipeiCitySaturdayPark
+	| BadgeSettingsGoTour2025NewTaipeiCitySundayCity
+	| BadgeSettingsGoTour2025NewTaipeiCitySundayPark
+	| BadgeSettingsGoTour2025NewTaipeiCityTestCity
+	| BadgeSettingsGoTour2025NewTaipeiCityTestPark
+	| BadgeSettingsGoTour2025NewTaipeiCityVip
+	| BadgeSettingsGoTour2026Global
+	| BadgeSettingsGoTour2026GlobalTest
+	| BadgeSettingsGoTour2026GlobalXVersion
+	| BadgeSettingsGoTour2026GlobalYVersion
+	| BadgeSettingsGoTour2026LosAngelesAddOnHatch
+	| BadgeSettingsGoTour2026LosAngelesAddOnHatchTest
+	| BadgeSettingsGoTour2026LosAngelesAddOnRaid
+	| BadgeSettingsGoTour2026LosAngelesAddOnRaidTest
+	| BadgeSettingsGoTour2026LosAngelesFridayCity
+	| BadgeSettingsGoTour2026LosAngelesFridayMegaNight
+	| BadgeSettingsGoTour2026LosAngelesFridayPark
+	| BadgeSettingsGoTour2026LosAngelesMegaNightTest
+	| BadgeSettingsGoTour2026LosAngelesSaturdayCity
+	| BadgeSettingsGoTour2026LosAngelesSaturdayMegaNight
+	| BadgeSettingsGoTour2026LosAngelesSaturdayPark
+	| BadgeSettingsGoTour2026LosAngelesSundayCity
+	| BadgeSettingsGoTour2026LosAngelesSundayMegaNight
+	| BadgeSettingsGoTour2026LosAngelesSundayPark
+	| BadgeSettingsGoTour2026LosAngelesTestCity
+	| BadgeSettingsGoTour2026LosAngelesTestPark
+	| BadgeSettingsGoTour2026LosAngelesVip
+	| BadgeSettingsGoTour2026TainanAddOnHatch
+	| BadgeSettingsGoTour2026TainanAddOnHatchTest
+	| BadgeSettingsGoTour2026TainanAddOnRaid
+	| BadgeSettingsGoTour2026TainanAddOnRaidTest
+	| BadgeSettingsGoTour2026TainanFridayCity
+	| BadgeSettingsGoTour2026TainanFridayMegaNight
+	| BadgeSettingsGoTour2026TainanFridayPark
+	| BadgeSettingsGoTour2026TainanMegaNightTest
+	| BadgeSettingsGoTour2026TainanSaturdayCity
+	| BadgeSettingsGoTour2026TainanSaturdayMegaNight
+	| BadgeSettingsGoTour2026TainanSaturdayPark
+	| BadgeSettingsGoTour2026TainanSundayCity
+	| BadgeSettingsGoTour2026TainanSundayMegaNight
+	| BadgeSettingsGoTour2026TainanSundayPark
+	| BadgeSettingsGoTour2026TainanTestCity
+	| BadgeSettingsGoTour2026TainanTestPark
+	| BadgeSettingsGoTour2026TainanVip
 	| BadgeSettingsGofest2019AmericasDay00NorthEarlyaccess
 	| BadgeSettingsGofest2019AmericasDay00NorthGeneral
 	| BadgeSettingsGofest2019AmericasDay00SouthEarlyaccess
@@ -8391,132 +8457,10 @@ export type BadgeSettingsEventBadgeMasterfileEntry =
 	| BadgeSettingsGowa2025IrlSundayTicketedCity
 	| BadgeSettingsGowa2025SpecialResearchA
 	| BadgeSettingsGowa2025SpecialResearchB
-	| BadgeSettingsGoTour2025GlobalBlackVersion
-	| BadgeSettingsGoTour2025GlobalWhiteVersion
-	| BadgeSettingsGoTour2025LosAngelesAddOnHatch
-	| BadgeSettingsGoTour2025LosAngelesAddOnHatchTest
-	| BadgeSettingsGoTour2025LosAngelesAddOnRaid
-	| BadgeSettingsGoTour2025LosAngelesAddOnRaidTest
-	| BadgeSettingsGoTour2025LosAngelesFridayCity
-	| BadgeSettingsGoTour2025LosAngelesFridayPark
-	| BadgeSettingsGoTour2025LosAngelesSaturdayCity
-	| BadgeSettingsGoTour2025LosAngelesSaturdayPark
-	| BadgeSettingsGoTour2025LosAngelesSundayCity
-	| BadgeSettingsGoTour2025LosAngelesSundayPark
-	| BadgeSettingsGoTour2025LosAngelesTestCity
-	| BadgeSettingsGoTour2025LosAngelesTestPark
-	| BadgeSettingsGoTour2025LosAngelesVip
-	| BadgeSettingsGoTour2025NewTaipeiCityAddOnHatch
-	| BadgeSettingsGoTour2025NewTaipeiCityAddOnHatchTest
-	| BadgeSettingsGoTour2025NewTaipeiCityAddOnRaid
-	| BadgeSettingsGoTour2025NewTaipeiCityAddOnRaidTest
-	| BadgeSettingsGoTour2025NewTaipeiCityFridayCity
-	| BadgeSettingsGoTour2025NewTaipeiCityFridayPark
-	| BadgeSettingsGoTour2025NewTaipeiCitySaturdayCity
-	| BadgeSettingsGoTour2025NewTaipeiCitySaturdayPark
-	| BadgeSettingsGoTour2025NewTaipeiCitySundayCity
-	| BadgeSettingsGoTour2025NewTaipeiCitySundayPark
-	| BadgeSettingsGoTour2025NewTaipeiCityTestCity
-	| BadgeSettingsGoTour2025NewTaipeiCityTestPark
-	| BadgeSettingsGoTour2025NewTaipeiCityVip
-	| BadgeSettingsGoTour2026Global
-	| BadgeSettingsGoTour2026GlobalTest
-	| BadgeSettingsGoTour2026GlobalXVersion
-	| BadgeSettingsGoTour2026GlobalYVersion
-	| BadgeSettingsGoTour2026LosAngelesAddOnHatch
-	| BadgeSettingsGoTour2026LosAngelesAddOnHatchTest
-	| BadgeSettingsGoTour2026LosAngelesAddOnRaid
-	| BadgeSettingsGoTour2026LosAngelesAddOnRaidTest
-	| BadgeSettingsGoTour2026LosAngelesFridayCity
-	| BadgeSettingsGoTour2026LosAngelesFridayMegaNight
-	| BadgeSettingsGoTour2026LosAngelesFridayPark
-	| BadgeSettingsGoTour2026LosAngelesMegaNightTest
-	| BadgeSettingsGoTour2026LosAngelesSaturdayCity
-	| BadgeSettingsGoTour2026LosAngelesSaturdayMegaNight
-	| BadgeSettingsGoTour2026LosAngelesSaturdayPark
-	| BadgeSettingsGoTour2026LosAngelesSundayCity
-	| BadgeSettingsGoTour2026LosAngelesSundayMegaNight
-	| BadgeSettingsGoTour2026LosAngelesSundayPark
-	| BadgeSettingsGoTour2026LosAngelesTestCity
-	| BadgeSettingsGoTour2026LosAngelesTestPark
-	| BadgeSettingsGoTour2026LosAngelesVip
-	| BadgeSettingsGoTour2026TainanAddOnHatch
-	| BadgeSettingsGoTour2026TainanAddOnHatchTest
-	| BadgeSettingsGoTour2026TainanAddOnRaid
-	| BadgeSettingsGoTour2026TainanAddOnRaidTest
-	| BadgeSettingsGoTour2026TainanFridayCity
-	| BadgeSettingsGoTour2026TainanFridayMegaNight
-	| BadgeSettingsGoTour2026TainanFridayPark
-	| BadgeSettingsGoTour2026TainanMegaNightTest
-	| BadgeSettingsGoTour2026TainanSaturdayCity
-	| BadgeSettingsGoTour2026TainanSaturdayMegaNight
-	| BadgeSettingsGoTour2026TainanSaturdayPark
-	| BadgeSettingsGoTour2026TainanSundayCity
-	| BadgeSettingsGoTour2026TainanSundayMegaNight
-	| BadgeSettingsGoTour2026TainanSundayPark
-	| BadgeSettingsGoTour2026TainanTestCity
-	| BadgeSettingsGoTour2026TainanTestPark
-	| BadgeSettingsGoTour2026TainanVip
 	| BadgeSettingsLevel40
 	| BadgeSettingsPartnerEvent20190
 	| BadgeSettingsPartnerEvent20191
 	| BadgeSettingsPikachuOutbreakYokohama2017
-	| BadgeSettingsSafarizone2019MontrealDay00Earlyaccess
-	| BadgeSettingsSafarizone2019MontrealDay00General
-	| BadgeSettingsSafarizone2019MontrealDay01Earlyaccess
-	| BadgeSettingsSafarizone2019MontrealDay01General
-	| BadgeSettingsSafarizone2019MontrealDay02Earlyaccess
-	| BadgeSettingsSafarizone2019MontrealDay02General
-	| BadgeSettingsSafarizone2019MontrealDay03Earlyaccess
-	| BadgeSettingsSafarizone2019MontrealDay03General
-	| BadgeSettingsSafarizone2020LiverpoolDay00Earlyaccess
-	| BadgeSettingsSafarizone2020LiverpoolDay00General
-	| BadgeSettingsSafarizone2020LiverpoolDay01Earlyaccess
-	| BadgeSettingsSafarizone2020LiverpoolDay01General
-	| BadgeSettingsSafarizone2020LiverpoolDay02Earlyaccess
-	| BadgeSettingsSafarizone2020LiverpoolDay02General
-	| BadgeSettingsSafarizone2020LiverpoolDay03Earlyaccess
-	| BadgeSettingsSafarizone2020LiverpoolDay03General
-	| BadgeSettingsSafarizone2020PhiladelphiaDay00Earlyaccess
-	| BadgeSettingsSafarizone2020PhiladelphiaDay00General
-	| BadgeSettingsSafarizone2020PhiladelphiaDay01Earlyaccess
-	| BadgeSettingsSafarizone2020PhiladelphiaDay01General
-	| BadgeSettingsSafarizone2020PhiladelphiaDay02Earlyaccess
-	| BadgeSettingsSafarizone2020PhiladelphiaDay02General
-	| BadgeSettingsSafarizone2020PhiladelphiaDay03Earlyaccess
-	| BadgeSettingsSafarizone2020PhiladelphiaDay03General
-	| BadgeSettingsSafarizone2020StlouisDay00Earlyaccess
-	| BadgeSettingsSafarizone2020StlouisDay00General
-	| BadgeSettingsSafarizone2020StlouisDay01Earlyaccess
-	| BadgeSettingsSafarizone2020StlouisDay01General
-	| BadgeSettingsSafarizone2020StlouisDay02Earlyaccess
-	| BadgeSettingsSafarizone2020StlouisDay02General
-	| BadgeSettingsSafarizone2020StlouisDay03Earlyaccess
-	| BadgeSettingsSafarizone2020StlouisDay03General
-	| BadgeSettingsSafarizone2022SevilleDay00Earlyaccess
-	| BadgeSettingsSafarizone2022SevilleDay00General
-	| BadgeSettingsSafarizone2022SevilleDay01Earlyaccess
-	| BadgeSettingsSafarizone2022SevilleDay01General
-	| BadgeSettingsSafarizone2022SevilleDay02Earlyaccess
-	| BadgeSettingsSafarizone2022SevilleDay02General
-	| BadgeSettingsSafarizone2022SevilleDay03Earlyaccess
-	| BadgeSettingsSafarizone2022SevilleDay03General
-	| BadgeSettingsSafarizone2022SingaporeDay00EarlyaccessTest
-	| BadgeSettingsSafarizone2022SingaporeDay00GeneralTest
-	| BadgeSettingsSafarizone2022SingaporeDay01EarlyaccessTest
-	| BadgeSettingsSafarizone2022SingaporeDay01GeneralTest
-	| BadgeSettingsSafarizone2022SingaporeDay02EarlyaccessTest
-	| BadgeSettingsSafarizone2022SingaporeDay02GeneralTest
-	| BadgeSettingsSafarizone2022SingaporeDay03EarlyaccessTest
-	| BadgeSettingsSafarizone2022SingaporeDay03GeneralTest
-	| BadgeSettingsSafarizone2022TaipeiDay00Earlyaccess
-	| BadgeSettingsSafarizone2022TaipeiDay00General
-	| BadgeSettingsSafarizone2022TaipeiDay01Earlyaccess
-	| BadgeSettingsSafarizone2022TaipeiDay01General
-	| BadgeSettingsSafarizone2022TaipeiDay02Earlyaccess
-	| BadgeSettingsSafarizone2022TaipeiDay02General
-	| BadgeSettingsSafarizone2022TaipeiDay03Earlyaccess
-	| BadgeSettingsSafarizone2022TaipeiDay03General
 	| BadgeSettingsSafari2023BarcelonaAddOnHatch
 	| BadgeSettingsSafari2023BarcelonaAddOnRaid
 	| BadgeSettingsSafari2023BarcelonaDay00
@@ -8655,6 +8599,62 @@ export type BadgeSettingsEventBadgeMasterfileEntry =
 	| BadgeSettingsSafariZoneEurope2017
 	| BadgeSettingsSafariZoneEurope20171007
 	| BadgeSettingsSafariZoneEurope20171014
+	| BadgeSettingsSafarizone2019MontrealDay00Earlyaccess
+	| BadgeSettingsSafarizone2019MontrealDay00General
+	| BadgeSettingsSafarizone2019MontrealDay01Earlyaccess
+	| BadgeSettingsSafarizone2019MontrealDay01General
+	| BadgeSettingsSafarizone2019MontrealDay02Earlyaccess
+	| BadgeSettingsSafarizone2019MontrealDay02General
+	| BadgeSettingsSafarizone2019MontrealDay03Earlyaccess
+	| BadgeSettingsSafarizone2019MontrealDay03General
+	| BadgeSettingsSafarizone2020LiverpoolDay00Earlyaccess
+	| BadgeSettingsSafarizone2020LiverpoolDay00General
+	| BadgeSettingsSafarizone2020LiverpoolDay01Earlyaccess
+	| BadgeSettingsSafarizone2020LiverpoolDay01General
+	| BadgeSettingsSafarizone2020LiverpoolDay02Earlyaccess
+	| BadgeSettingsSafarizone2020LiverpoolDay02General
+	| BadgeSettingsSafarizone2020LiverpoolDay03Earlyaccess
+	| BadgeSettingsSafarizone2020LiverpoolDay03General
+	| BadgeSettingsSafarizone2020PhiladelphiaDay00Earlyaccess
+	| BadgeSettingsSafarizone2020PhiladelphiaDay00General
+	| BadgeSettingsSafarizone2020PhiladelphiaDay01Earlyaccess
+	| BadgeSettingsSafarizone2020PhiladelphiaDay01General
+	| BadgeSettingsSafarizone2020PhiladelphiaDay02Earlyaccess
+	| BadgeSettingsSafarizone2020PhiladelphiaDay02General
+	| BadgeSettingsSafarizone2020PhiladelphiaDay03Earlyaccess
+	| BadgeSettingsSafarizone2020PhiladelphiaDay03General
+	| BadgeSettingsSafarizone2020StlouisDay00Earlyaccess
+	| BadgeSettingsSafarizone2020StlouisDay00General
+	| BadgeSettingsSafarizone2020StlouisDay01Earlyaccess
+	| BadgeSettingsSafarizone2020StlouisDay01General
+	| BadgeSettingsSafarizone2020StlouisDay02Earlyaccess
+	| BadgeSettingsSafarizone2020StlouisDay02General
+	| BadgeSettingsSafarizone2020StlouisDay03Earlyaccess
+	| BadgeSettingsSafarizone2020StlouisDay03General
+	| BadgeSettingsSafarizone2022SevilleDay00Earlyaccess
+	| BadgeSettingsSafarizone2022SevilleDay00General
+	| BadgeSettingsSafarizone2022SevilleDay01Earlyaccess
+	| BadgeSettingsSafarizone2022SevilleDay01General
+	| BadgeSettingsSafarizone2022SevilleDay02Earlyaccess
+	| BadgeSettingsSafarizone2022SevilleDay02General
+	| BadgeSettingsSafarizone2022SevilleDay03Earlyaccess
+	| BadgeSettingsSafarizone2022SevilleDay03General
+	| BadgeSettingsSafarizone2022SingaporeDay00EarlyaccessTest
+	| BadgeSettingsSafarizone2022SingaporeDay00GeneralTest
+	| BadgeSettingsSafarizone2022SingaporeDay01EarlyaccessTest
+	| BadgeSettingsSafarizone2022SingaporeDay01GeneralTest
+	| BadgeSettingsSafarizone2022SingaporeDay02EarlyaccessTest
+	| BadgeSettingsSafarizone2022SingaporeDay02GeneralTest
+	| BadgeSettingsSafarizone2022SingaporeDay03EarlyaccessTest
+	| BadgeSettingsSafarizone2022SingaporeDay03GeneralTest
+	| BadgeSettingsSafarizone2022TaipeiDay00Earlyaccess
+	| BadgeSettingsSafarizone2022TaipeiDay00General
+	| BadgeSettingsSafarizone2022TaipeiDay01Earlyaccess
+	| BadgeSettingsSafarizone2022TaipeiDay01General
+	| BadgeSettingsSafarizone2022TaipeiDay02Earlyaccess
+	| BadgeSettingsSafarizone2022TaipeiDay02General
+	| BadgeSettingsSafarizone2022TaipeiDay03Earlyaccess
+	| BadgeSettingsSafarizone2022TaipeiDay03General
 	| BadgeSettingsSentosa18Apr2019
 	| BadgeSettingsSentosa19Apr2019
 	| BadgeSettingsSentosa20Apr2019
@@ -8665,7 +8665,7 @@ export type BadgeSettingsEventBadgeMasterfileEntry =
 	| BadgeSettingsTopBanana3
 	| BadgeSettingsTradingCard0001
 	| BadgeSettingsYokosuka1Sep2018Verny
-	| BadgeSettingsYokosuka29Aug2018Verny
 	| BadgeSettingsYokosuka2Sep2018Verny
+	| BadgeSettingsYokosuka29Aug2018Verny
 	| BadgeSettingsYokosuka30Aug2018Verny
 	| BadgeSettingsYokosuka31Aug2018Verny;

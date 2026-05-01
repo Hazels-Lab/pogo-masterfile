@@ -3,20 +3,6 @@
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
 
-export type IapItemDisplayItemEnhancedCurrency600 = S<
-	IapItemDisplay<
-		"ITEM_ENHANCED_CURRENCY_600",
-		{
-			category: "IAP_CATEGORY_ITEMS";
-			showDiscountTag: true;
-			showStrikethroughPrice: true;
-			sku: "ITEM_ENHANCED_CURRENCY_600";
-			sortOrder: 2;
-			spriteId: "enhanced_currency_large";
-			totalValue: 300;
-		}
-	>
->;
 export type IapItemDisplayIncenseordinary8 = S<
 	IapItemDisplay<
 		"incenseordinary.8",
@@ -28,6 +14,20 @@ export type IapItemDisplayIncenseordinary8 = S<
 			sortOrder: 19;
 			spriteId: "incenseordinary.8";
 			totalValue: 320;
+		}
+	>
+>;
+export type IapItemDisplayItemEnhancedCurrency600 = S<
+	IapItemDisplay<
+		"ITEM_ENHANCED_CURRENCY_600",
+		{
+			category: "IAP_CATEGORY_ITEMS";
+			showDiscountTag: true;
+			showStrikethroughPrice: true;
+			sku: "ITEM_ENHANCED_CURRENCY_600";
+			sortOrder: 2;
+			spriteId: "enhanced_currency_large";
+			totalValue: 300;
 		}
 	>
 >;
@@ -159,8 +159,8 @@ export type IapItemDisplayTroydisk8 = S<
 >;
 
 export type IapItemDisplayCategoryShowDiscountTagShowStrikethroughPriceSortOrderSpriteIdTotalValueMasterfileEntry =
-	| IapItemDisplayItemEnhancedCurrency600
 	| IapItemDisplayIncenseordinary8
+	| IapItemDisplayItemEnhancedCurrency600
 	| IapItemDisplayLuckyegg8
 	| IapItemDisplayMaxBoost3
 	| IapItemDisplayMpReplenish3

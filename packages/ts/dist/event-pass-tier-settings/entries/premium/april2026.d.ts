@@ -3,6 +3,39 @@
 import type { S } from "../../../_utils";
 import type { EventPassTierSettings } from "../../types";
 
+export type EventPassTierSettingsApril2026Season1Premium = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_1_PREMIUM",
+		{
+			rank: 1;
+			rewards: [
+				{
+					stardust: 10000;
+					type: "STARDUST";
+				},
+			];
+			track: "PREMIUM";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season10Premium = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_10_PREMIUM",
+		{
+			rank: 10;
+			rewards: [
+				{
+					item: {
+						amount: 1;
+						item: "ITEM_INCENSE_ORDINARY";
+					};
+					type: "ITEM";
+				},
+			];
+			track: "PREMIUM";
+		}
+	>
+>;
 export type EventPassTierSettingsApril2026Season100Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_100_PREMIUM",
@@ -156,16 +189,16 @@ export type EventPassTierSettingsApril2026Season109Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season10Premium = S<
+export type EventPassTierSettingsApril2026Season11Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_10_PREMIUM",
+		"EVENT_PASS_APRIL2026_SEASON_11_PREMIUM",
 		{
-			rank: 10;
+			rank: 11;
 			rewards: [
 				{
 					item: {
-						amount: 1;
-						item: "ITEM_INCENSE_ORDINARY";
+						amount: 25;
+						item: "ITEM_POKE_BALL";
 					};
 					type: "ITEM";
 				},
@@ -324,18 +357,18 @@ export type EventPassTierSettingsApril2026Season119Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season11Premium = S<
+export type EventPassTierSettingsApril2026Season12Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_11_PREMIUM",
+		"EVENT_PASS_APRIL2026_SEASON_12_PREMIUM",
 		{
-			rank: 11;
+			rank: 12;
 			rewards: [
 				{
-					item: {
-						amount: 25;
-						item: "ITEM_POKE_BALL";
+					candy: {
+						amount: 5;
+						pokemonId: "SLOWPOKE";
 					};
-					type: "ITEM";
+					type: "CANDY";
 				},
 			];
 			track: "PREMIUM";
@@ -492,18 +525,18 @@ export type EventPassTierSettingsApril2026Season129Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season12Premium = S<
+export type EventPassTierSettingsApril2026Season13Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_12_PREMIUM",
+		"EVENT_PASS_APRIL2026_SEASON_13_PREMIUM",
 		{
-			rank: 12;
+			rank: 13;
 			rewards: [
 				{
-					candy: {
-						amount: 5;
+					type: "XL_CANDY";
+					xlCandy: {
+						amount: 3;
 						pokemonId: "SLOWPOKE";
 					};
-					type: "CANDY";
 				},
 			];
 			track: "PREMIUM";
@@ -660,18 +693,18 @@ export type EventPassTierSettingsApril2026Season139Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season13Premium = S<
+export type EventPassTierSettingsApril2026Season14Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_13_PREMIUM",
+		"EVENT_PASS_APRIL2026_SEASON_14_PREMIUM",
 		{
-			rank: 13;
+			rank: 14;
 			rewards: [
 				{
-					type: "XL_CANDY";
-					xlCandy: {
+					item: {
 						amount: 3;
-						pokemonId: "SLOWPOKE";
+						item: "ITEM_GOLDEN_RAZZ_BERRY";
 					};
+					type: "ITEM";
 				},
 			];
 			track: "PREMIUM";
@@ -828,18 +861,15 @@ export type EventPassTierSettingsApril2026Season149Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season14Premium = S<
+export type EventPassTierSettingsApril2026Season15Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_14_PREMIUM",
+		"EVENT_PASS_APRIL2026_SEASON_15_PREMIUM",
 		{
-			rank: 14;
+			rank: 15;
 			rewards: [
 				{
-					item: {
-						amount: 3;
-						item: "ITEM_GOLDEN_RAZZ_BERRY";
-					};
-					type: "ITEM";
+					exp: 2250;
+					type: "EXPERIENCE";
 				},
 			];
 			track: "PREMIUM";
@@ -996,15 +1026,15 @@ export type EventPassTierSettingsApril2026Season159Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season15Premium = S<
+export type EventPassTierSettingsApril2026Season16Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_15_PREMIUM",
+		"EVENT_PASS_APRIL2026_SEASON_16_PREMIUM",
 		{
-			rank: 15;
+			rank: 16;
 			rewards: [
 				{
-					exp: 2250;
-					type: "EXPERIENCE";
+					stardust: 2250;
+					type: "STARDUST";
 				},
 			];
 			track: "PREMIUM";
@@ -1161,15 +1191,21 @@ export type EventPassTierSettingsApril2026Season169Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season16Premium = S<
+export type EventPassTierSettingsApril2026Season17Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_16_PREMIUM",
+		"EVENT_PASS_APRIL2026_SEASON_17_PREMIUM",
 		{
-			rank: 16;
+			rank: 17;
 			rewards: [
 				{
-					stardust: 2250;
-					type: "STARDUST";
+					pokemonEncounter: {
+						isFeaturedPokemon: true;
+						pokemonDisplay: {
+							form: "COMBEE_NORMAL";
+						};
+						pokemonId: "COMBEE";
+					};
+					type: "POKEMON_ENCOUNTER";
 				},
 			];
 			track: "PREMIUM";
@@ -1326,21 +1362,18 @@ export type EventPassTierSettingsApril2026Season179Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season17Premium = S<
+export type EventPassTierSettingsApril2026Season18Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_17_PREMIUM",
+		"EVENT_PASS_APRIL2026_SEASON_18_PREMIUM",
 		{
-			rank: 17;
+			rank: 18;
 			rewards: [
 				{
-					pokemonEncounter: {
-						isFeaturedPokemon: true;
-						pokemonDisplay: {
-							form: "COMBEE_NORMAL";
-						};
+					type: "XL_CANDY";
+					xlCandy: {
+						amount: 3;
 						pokemonId: "COMBEE";
 					};
-					type: "POKEMON_ENCOUNTER";
 				},
 			];
 			track: "PREMIUM";
@@ -1497,18 +1530,18 @@ export type EventPassTierSettingsApril2026Season189Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season18Premium = S<
+export type EventPassTierSettingsApril2026Season19Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_18_PREMIUM",
+		"EVENT_PASS_APRIL2026_SEASON_19_PREMIUM",
 		{
-			rank: 18;
+			rank: 19;
 			rewards: [
 				{
-					type: "XL_CANDY";
-					xlCandy: {
-						amount: 3;
-						pokemonId: "COMBEE";
+					item: {
+						amount: 400;
+						item: "ITEM_MP";
 					};
+					type: "ITEM";
 				},
 			];
 			track: "PREMIUM";
@@ -1665,16 +1698,16 @@ export type EventPassTierSettingsApril2026Season199Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season19Premium = S<
+export type EventPassTierSettingsApril2026Season2Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_19_PREMIUM",
+		"EVENT_PASS_APRIL2026_SEASON_2_PREMIUM",
 		{
-			rank: 19;
+			rank: 2;
 			rewards: [
 				{
 					item: {
-						amount: 400;
-						item: "ITEM_MP";
+						amount: 25;
+						item: "ITEM_POKE_BALL";
 					};
 					type: "ITEM";
 				},
@@ -1683,15 +1716,18 @@ export type EventPassTierSettingsApril2026Season19Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season1Premium = S<
+export type EventPassTierSettingsApril2026Season20Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_1_PREMIUM",
+		"EVENT_PASS_APRIL2026_SEASON_20_PREMIUM",
 		{
-			rank: 1;
+			rank: 20;
 			rewards: [
 				{
-					stardust: 10000;
-					type: "STARDUST";
+					item: {
+						amount: 1;
+						item: "ITEM_LUCKY_EGG";
+					};
+					type: "ITEM";
 				},
 			];
 			track: "PREMIUM";
@@ -1848,16 +1884,16 @@ export type EventPassTierSettingsApril2026Season209Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season20Premium = S<
+export type EventPassTierSettingsApril2026Season21Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_20_PREMIUM",
+		"EVENT_PASS_APRIL2026_SEASON_21_PREMIUM",
 		{
-			rank: 20;
+			rank: 21;
 			rewards: [
 				{
 					item: {
-						amount: 1;
-						item: "ITEM_LUCKY_EGG";
+						amount: 2;
+						item: "ITEM_LEADER_MAP_FRAGMENT";
 					};
 					type: "ITEM";
 				},
@@ -1875,24 +1911,6 @@ export type EventPassTierSettingsApril2026Season210Premium = S<
 				{
 					stardust: 100;
 					type: "STARDUST";
-				},
-			];
-			track: "PREMIUM";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season21Premium = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_21_PREMIUM",
-		{
-			rank: 21;
-			rewards: [
-				{
-					item: {
-						amount: 2;
-						item: "ITEM_LEADER_MAP_FRAGMENT";
-					};
-					type: "ITEM";
 				},
 			];
 			track: "PREMIUM";
@@ -2041,18 +2059,18 @@ export type EventPassTierSettingsApril2026Season29Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season2Premium = S<
+export type EventPassTierSettingsApril2026Season3Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_2_PREMIUM",
+		"EVENT_PASS_APRIL2026_SEASON_3_PREMIUM",
 		{
-			rank: 2;
+			rank: 3;
 			rewards: [
 				{
-					item: {
-						amount: 25;
-						item: "ITEM_POKE_BALL";
+					candy: {
+						amount: 5;
+						pokemonId: "HATENNA";
 					};
-					type: "ITEM";
+					type: "CANDY";
 				},
 			];
 			track: "PREMIUM";
@@ -2236,18 +2254,18 @@ export type EventPassTierSettingsApril2026Season39Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season3Premium = S<
+export type EventPassTierSettingsApril2026Season4Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_3_PREMIUM",
+		"EVENT_PASS_APRIL2026_SEASON_4_PREMIUM",
 		{
-			rank: 3;
+			rank: 4;
 			rewards: [
 				{
-					candy: {
-						amount: 5;
+					type: "XL_CANDY";
+					xlCandy: {
+						amount: 3;
 						pokemonId: "HATENNA";
 					};
-					type: "CANDY";
 				},
 			];
 			track: "PREMIUM";
@@ -2428,18 +2446,15 @@ export type EventPassTierSettingsApril2026Season49Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season4Premium = S<
+export type EventPassTierSettingsApril2026Season5Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_4_PREMIUM",
+		"EVENT_PASS_APRIL2026_SEASON_5_PREMIUM",
 		{
-			rank: 4;
+			rank: 5;
 			rewards: [
 				{
-					type: "XL_CANDY";
-					xlCandy: {
-						amount: 3;
-						pokemonId: "HATENNA";
-					};
+					exp: 1500;
+					type: "EXPERIENCE";
 				},
 			];
 			track: "PREMIUM";
@@ -2620,15 +2635,15 @@ export type EventPassTierSettingsApril2026Season59Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season5Premium = S<
+export type EventPassTierSettingsApril2026Season6Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_5_PREMIUM",
+		"EVENT_PASS_APRIL2026_SEASON_6_PREMIUM",
 		{
-			rank: 5;
+			rank: 6;
 			rewards: [
 				{
-					exp: 1500;
-					type: "EXPERIENCE";
+					stardust: 1500;
+					type: "STARDUST";
 				},
 			];
 			track: "PREMIUM";
@@ -2812,15 +2827,18 @@ export type EventPassTierSettingsApril2026Season69Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season6Premium = S<
+export type EventPassTierSettingsApril2026Season7Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_6_PREMIUM",
+		"EVENT_PASS_APRIL2026_SEASON_7_PREMIUM",
 		{
-			rank: 6;
+			rank: 7;
 			rewards: [
 				{
-					stardust: 1500;
-					type: "STARDUST";
+					candy: {
+						amount: 5;
+						pokemonId: "TEPIG";
+					};
+					type: "CANDY";
 				},
 			];
 			track: "PREMIUM";
@@ -2995,18 +3013,18 @@ export type EventPassTierSettingsApril2026Season79Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season7Premium = S<
+export type EventPassTierSettingsApril2026Season8Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_7_PREMIUM",
+		"EVENT_PASS_APRIL2026_SEASON_8_PREMIUM",
 		{
-			rank: 7;
+			rank: 8;
 			rewards: [
 				{
-					candy: {
-						amount: 5;
+					type: "XL_CANDY";
+					xlCandy: {
+						amount: 3;
 						pokemonId: "TEPIG";
 					};
-					type: "CANDY";
 				},
 			];
 			track: "PREMIUM";
@@ -3196,18 +3214,21 @@ export type EventPassTierSettingsApril2026Season89Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season8Premium = S<
+export type EventPassTierSettingsApril2026Season9Premium = S<
 	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_8_PREMIUM",
+		"EVENT_PASS_APRIL2026_SEASON_9_PREMIUM",
 		{
-			rank: 8;
+			rank: 9;
 			rewards: [
 				{
-					type: "XL_CANDY";
-					xlCandy: {
-						amount: 3;
-						pokemonId: "TEPIG";
+					pokemonEncounter: {
+						isFeaturedPokemon: true;
+						pokemonDisplay: {
+							form: "BINACLE_NORMAL";
+						};
+						pokemonId: "BINACLE";
 					};
+					type: "POKEMON_ENCOUNTER";
 				},
 			];
 			track: "PREMIUM";
@@ -3397,29 +3418,10 @@ export type EventPassTierSettingsApril2026Season99Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season9Premium = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_9_PREMIUM",
-		{
-			rank: 9;
-			rewards: [
-				{
-					pokemonEncounter: {
-						isFeaturedPokemon: true;
-						pokemonDisplay: {
-							form: "BINACLE_NORMAL";
-						};
-						pokemonId: "BINACLE";
-					};
-					type: "POKEMON_ENCOUNTER";
-				},
-			];
-			track: "PREMIUM";
-		}
-	>
->;
 
 export type EventPassTierSettingsPremiumApril2026MasterfileEntry =
+	| EventPassTierSettingsApril2026Season1Premium
+	| EventPassTierSettingsApril2026Season10Premium
 	| EventPassTierSettingsApril2026Season100Premium
 	| EventPassTierSettingsApril2026Season101Premium
 	| EventPassTierSettingsApril2026Season102Premium
@@ -3430,7 +3432,7 @@ export type EventPassTierSettingsPremiumApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season107Premium
 	| EventPassTierSettingsApril2026Season108Premium
 	| EventPassTierSettingsApril2026Season109Premium
-	| EventPassTierSettingsApril2026Season10Premium
+	| EventPassTierSettingsApril2026Season11Premium
 	| EventPassTierSettingsApril2026Season110Premium
 	| EventPassTierSettingsApril2026Season111Premium
 	| EventPassTierSettingsApril2026Season112Premium
@@ -3441,7 +3443,7 @@ export type EventPassTierSettingsPremiumApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season117Premium
 	| EventPassTierSettingsApril2026Season118Premium
 	| EventPassTierSettingsApril2026Season119Premium
-	| EventPassTierSettingsApril2026Season11Premium
+	| EventPassTierSettingsApril2026Season12Premium
 	| EventPassTierSettingsApril2026Season120Premium
 	| EventPassTierSettingsApril2026Season121Premium
 	| EventPassTierSettingsApril2026Season122Premium
@@ -3452,7 +3454,7 @@ export type EventPassTierSettingsPremiumApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season127Premium
 	| EventPassTierSettingsApril2026Season128Premium
 	| EventPassTierSettingsApril2026Season129Premium
-	| EventPassTierSettingsApril2026Season12Premium
+	| EventPassTierSettingsApril2026Season13Premium
 	| EventPassTierSettingsApril2026Season130Premium
 	| EventPassTierSettingsApril2026Season131Premium
 	| EventPassTierSettingsApril2026Season132Premium
@@ -3463,7 +3465,7 @@ export type EventPassTierSettingsPremiumApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season137Premium
 	| EventPassTierSettingsApril2026Season138Premium
 	| EventPassTierSettingsApril2026Season139Premium
-	| EventPassTierSettingsApril2026Season13Premium
+	| EventPassTierSettingsApril2026Season14Premium
 	| EventPassTierSettingsApril2026Season140Premium
 	| EventPassTierSettingsApril2026Season141Premium
 	| EventPassTierSettingsApril2026Season142Premium
@@ -3474,7 +3476,7 @@ export type EventPassTierSettingsPremiumApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season147Premium
 	| EventPassTierSettingsApril2026Season148Premium
 	| EventPassTierSettingsApril2026Season149Premium
-	| EventPassTierSettingsApril2026Season14Premium
+	| EventPassTierSettingsApril2026Season15Premium
 	| EventPassTierSettingsApril2026Season150Premium
 	| EventPassTierSettingsApril2026Season151Premium
 	| EventPassTierSettingsApril2026Season152Premium
@@ -3485,7 +3487,7 @@ export type EventPassTierSettingsPremiumApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season157Premium
 	| EventPassTierSettingsApril2026Season158Premium
 	| EventPassTierSettingsApril2026Season159Premium
-	| EventPassTierSettingsApril2026Season15Premium
+	| EventPassTierSettingsApril2026Season16Premium
 	| EventPassTierSettingsApril2026Season160Premium
 	| EventPassTierSettingsApril2026Season161Premium
 	| EventPassTierSettingsApril2026Season162Premium
@@ -3496,7 +3498,7 @@ export type EventPassTierSettingsPremiumApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season167Premium
 	| EventPassTierSettingsApril2026Season168Premium
 	| EventPassTierSettingsApril2026Season169Premium
-	| EventPassTierSettingsApril2026Season16Premium
+	| EventPassTierSettingsApril2026Season17Premium
 	| EventPassTierSettingsApril2026Season170Premium
 	| EventPassTierSettingsApril2026Season171Premium
 	| EventPassTierSettingsApril2026Season172Premium
@@ -3507,7 +3509,7 @@ export type EventPassTierSettingsPremiumApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season177Premium
 	| EventPassTierSettingsApril2026Season178Premium
 	| EventPassTierSettingsApril2026Season179Premium
-	| EventPassTierSettingsApril2026Season17Premium
+	| EventPassTierSettingsApril2026Season18Premium
 	| EventPassTierSettingsApril2026Season180Premium
 	| EventPassTierSettingsApril2026Season181Premium
 	| EventPassTierSettingsApril2026Season182Premium
@@ -3518,7 +3520,7 @@ export type EventPassTierSettingsPremiumApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season187Premium
 	| EventPassTierSettingsApril2026Season188Premium
 	| EventPassTierSettingsApril2026Season189Premium
-	| EventPassTierSettingsApril2026Season18Premium
+	| EventPassTierSettingsApril2026Season19Premium
 	| EventPassTierSettingsApril2026Season190Premium
 	| EventPassTierSettingsApril2026Season191Premium
 	| EventPassTierSettingsApril2026Season192Premium
@@ -3529,8 +3531,8 @@ export type EventPassTierSettingsPremiumApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season197Premium
 	| EventPassTierSettingsApril2026Season198Premium
 	| EventPassTierSettingsApril2026Season199Premium
-	| EventPassTierSettingsApril2026Season19Premium
-	| EventPassTierSettingsApril2026Season1Premium
+	| EventPassTierSettingsApril2026Season2Premium
+	| EventPassTierSettingsApril2026Season20Premium
 	| EventPassTierSettingsApril2026Season200Premium
 	| EventPassTierSettingsApril2026Season201Premium
 	| EventPassTierSettingsApril2026Season202Premium
@@ -3541,9 +3543,8 @@ export type EventPassTierSettingsPremiumApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season207Premium
 	| EventPassTierSettingsApril2026Season208Premium
 	| EventPassTierSettingsApril2026Season209Premium
-	| EventPassTierSettingsApril2026Season20Premium
-	| EventPassTierSettingsApril2026Season210Premium
 	| EventPassTierSettingsApril2026Season21Premium
+	| EventPassTierSettingsApril2026Season210Premium
 	| EventPassTierSettingsApril2026Season22Premium
 	| EventPassTierSettingsApril2026Season23Premium
 	| EventPassTierSettingsApril2026Season24Premium
@@ -3552,7 +3553,7 @@ export type EventPassTierSettingsPremiumApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season27Premium
 	| EventPassTierSettingsApril2026Season28Premium
 	| EventPassTierSettingsApril2026Season29Premium
-	| EventPassTierSettingsApril2026Season2Premium
+	| EventPassTierSettingsApril2026Season3Premium
 	| EventPassTierSettingsApril2026Season30Premium
 	| EventPassTierSettingsApril2026Season31Premium
 	| EventPassTierSettingsApril2026Season32Premium
@@ -3563,7 +3564,7 @@ export type EventPassTierSettingsPremiumApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season37Premium
 	| EventPassTierSettingsApril2026Season38Premium
 	| EventPassTierSettingsApril2026Season39Premium
-	| EventPassTierSettingsApril2026Season3Premium
+	| EventPassTierSettingsApril2026Season4Premium
 	| EventPassTierSettingsApril2026Season40Premium
 	| EventPassTierSettingsApril2026Season41Premium
 	| EventPassTierSettingsApril2026Season42Premium
@@ -3574,7 +3575,7 @@ export type EventPassTierSettingsPremiumApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season47Premium
 	| EventPassTierSettingsApril2026Season48Premium
 	| EventPassTierSettingsApril2026Season49Premium
-	| EventPassTierSettingsApril2026Season4Premium
+	| EventPassTierSettingsApril2026Season5Premium
 	| EventPassTierSettingsApril2026Season50Premium
 	| EventPassTierSettingsApril2026Season51Premium
 	| EventPassTierSettingsApril2026Season52Premium
@@ -3585,7 +3586,7 @@ export type EventPassTierSettingsPremiumApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season57Premium
 	| EventPassTierSettingsApril2026Season58Premium
 	| EventPassTierSettingsApril2026Season59Premium
-	| EventPassTierSettingsApril2026Season5Premium
+	| EventPassTierSettingsApril2026Season6Premium
 	| EventPassTierSettingsApril2026Season60Premium
 	| EventPassTierSettingsApril2026Season61Premium
 	| EventPassTierSettingsApril2026Season62Premium
@@ -3596,7 +3597,7 @@ export type EventPassTierSettingsPremiumApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season67Premium
 	| EventPassTierSettingsApril2026Season68Premium
 	| EventPassTierSettingsApril2026Season69Premium
-	| EventPassTierSettingsApril2026Season6Premium
+	| EventPassTierSettingsApril2026Season7Premium
 	| EventPassTierSettingsApril2026Season70Premium
 	| EventPassTierSettingsApril2026Season71Premium
 	| EventPassTierSettingsApril2026Season72Premium
@@ -3607,7 +3608,7 @@ export type EventPassTierSettingsPremiumApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season77Premium
 	| EventPassTierSettingsApril2026Season78Premium
 	| EventPassTierSettingsApril2026Season79Premium
-	| EventPassTierSettingsApril2026Season7Premium
+	| EventPassTierSettingsApril2026Season8Premium
 	| EventPassTierSettingsApril2026Season80Premium
 	| EventPassTierSettingsApril2026Season81Premium
 	| EventPassTierSettingsApril2026Season82Premium
@@ -3618,7 +3619,7 @@ export type EventPassTierSettingsPremiumApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season87Premium
 	| EventPassTierSettingsApril2026Season88Premium
 	| EventPassTierSettingsApril2026Season89Premium
-	| EventPassTierSettingsApril2026Season8Premium
+	| EventPassTierSettingsApril2026Season9Premium
 	| EventPassTierSettingsApril2026Season90Premium
 	| EventPassTierSettingsApril2026Season91Premium
 	| EventPassTierSettingsApril2026Season92Premium
@@ -3628,5 +3629,4 @@ export type EventPassTierSettingsPremiumApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season96Premium
 	| EventPassTierSettingsApril2026Season97Premium
 	| EventPassTierSettingsApril2026Season98Premium
-	| EventPassTierSettingsApril2026Season99Premium
-	| EventPassTierSettingsApril2026Season9Premium;
+	| EventPassTierSettingsApril2026Season99Premium;

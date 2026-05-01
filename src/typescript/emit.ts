@@ -32,7 +32,7 @@ function entryVariantStatements(
 	aliases: Map<string, string>,
 	invariants: InvariantTree,
 ): { statements: ts.Statement[]; typeNames: string[] } {
-	const sortedEntries = [...entries].sort((a, b) => (a.templateId < b.templateId ? -1 : a.templateId > b.templateId ? 1 : 0));
+	const sortedEntries = [...entries].sort((a, b) => a.templateId.localeCompare(b.templateId));
 	const statements: ts.Statement[] = [];
 	const typeNames: string[] = [];
 	for (const entry of sortedEntries) {
@@ -188,7 +188,11 @@ export function emitGroupTypes(group: Group, registry: PromotionRegistry = []): 
 	// sibling group's entries.ts (flat) or entries/index.ts (split).
 	const sortedImports = [...ctx.imports.entries()].filter(([disc]) => disc !== group.discriminator).sort(([a], [b]) => a.localeCompare(b));
 	for (const [disc, names] of sortedImports) {
-		file.importNamed(`../${kebabCase(disc)}/${ENTRIES_LOWER}`, [...names].sort(), true);
+		file.importNamed(
+			`../${kebabCase(disc)}/${ENTRIES_LOWER}`,
+			[...names].sort((a, b) => a.localeCompare(b)),
+			true,
+		);
 	}
 	file.blank();
 
@@ -230,7 +234,7 @@ export function emitEntriesFlat(group: Group): string {
 		.importNamed(`./${BARREL_FILE}`, [gName, xdataName], true)
 		.blank();
 
-	const sortedIds = [...group.entries].map((e) => e.templateId).sort();
+	const sortedIds = [...group.entries].map((e) => e.templateId).sort((a, b) => a.localeCompare(b));
 	const aliases = deriveGroupAliases(sortedIds, gName);
 	const invariants = detectInvariants(group);
 	const { statements, typeNames } = entryVariantStatements(group.entries, gName, group, aliases, invariants);
@@ -256,7 +260,7 @@ export function emitEntriesFlat(group: Group): string {
 export function emitEntryFile(group: Group, bucketName: string, entries: Entry[], nestedPath: string[] = []): string {
 	const gName = groupName(group.discriminator);
 	const xdataName = `${gName}Data`;
-	const sortedIds = [...group.entries].map((e) => e.templateId).sort();
+	const sortedIds = [...group.entries].map((e) => e.templateId).sort((a, b) => a.localeCompare(b));
 	const aliases = deriveGroupAliases(sortedIds, gName);
 	const invariants = detectInvariants(group);
 	const entryCount = entries.length;
@@ -292,7 +296,7 @@ export function emitEntryFile(group: Group, bucketName: string, entries: Entry[]
 // file or a subdirectory — the imports and re-exports work identically.
 export function emitEntriesBarrel(discriminator: string, fileNames: string[], nestedPath: string[] = []): string {
 	const typeName = `${pascalCase(discriminator)}${nestedPath.map(pascalCase).join("")}`;
-	const sorted = [...fileNames].sort();
+	const sorted = [...fileNames].sort((a, b) => a.localeCompare(b));
 	const label = nestedPath.length > 0 ? `${discriminator} ${nestedPath.join("/")}` : discriminator;
 
 	const file = new AstFileBuilder().header(`Generated from Pokémon GO masterfile — group "${label}" entries barrel.`);
@@ -318,7 +322,7 @@ export function emitEntriesBarrel(discriminator: string, fileNames: string[], ne
 }
 
 export function emitTopLevelVariants(groupSplits: Map<string, "split" | "flat">): string {
-	const sortedDiscs = [...groupSplits.keys()].sort();
+	const sortedDiscs = [...groupSplits.keys()].sort((a, b) => a.localeCompare(b));
 	const file = new AstFileBuilder().header("Generated from Pokémon GO masterfile — top-level entries barrel.");
 
 	for (const disc of sortedDiscs) {
@@ -381,7 +385,7 @@ function emitLookupTableFile(opts: { headerLabel: string; interfaceName: string;
 		return `\t${k}: ${typeName};`;
 	});
 
-	const sortedImports = [...new Set(entries.map((e) => e.typeName))].sort();
+	const sortedImports = [...new Set(entries.map((e) => e.typeName))].sort((a, b) => a.localeCompare(b));
 
 	return `// Generated from Pokémon GO masterfile — ${headerLabel}.
 
@@ -397,7 +401,7 @@ ${lines.join("\n")}
 
 export function emitGroupLookupTable(group: Group): string {
 	const gName = groupName(group.discriminator);
-	const sortedIds = [...group.entries].map((e) => e.templateId).sort();
+	const sortedIds = [...group.entries].map((e) => e.templateId).sort((a, b) => a.localeCompare(b));
 	const aliases = deriveGroupAliases(sortedIds, gName);
 
 	const entries = sortedIds.map((id) => {
@@ -442,7 +446,7 @@ export function emitRootLookupTable(multiEntry: Group[], hasSingletons: boolean)
 	if (hasSingletons) {
 		groupAliases.push(`${SINGLETONS}${BARREL_TYPE}${ENTRY}`, `${SINGLETONS}${TEMPLATE_GENERIC}`);
 	}
-	groupAliases.sort();
+	groupAliases.sort((a, b) => a.localeCompare(b));
 
 	const lookupImportLines: string[] = [];
 	const lookupReExportLines: string[] = [];

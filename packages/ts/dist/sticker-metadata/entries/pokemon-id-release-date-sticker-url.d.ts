@@ -223,28 +223,6 @@ export type StickerMetadataGotour20223 = S<
 		}
 	>
 >;
-export type StickerMetadataHalloween21Ghostpika = S<
-	StickerMetadata<
-		"STICKER_HALLOWEEN21_GHOSTPIKA",
-		{
-			category: ["Pokemon"];
-			pokemonId: "PIKACHU";
-			releaseDate: 20211015;
-			stickerUrl: "https://prodholoholo-public-images.nianticlabs.com/Stickers/sticker_halloween21_ghostpika.png";
-		}
-	>
->;
-export type StickerMetadataHalloween21Pikachu = S<
-	StickerMetadata<
-		"STICKER_HALLOWEEN21_PIKACHU",
-		{
-			category: ["Pokemon"];
-			pokemonId: "PIKACHU";
-			releaseDate: 20211015;
-			stickerUrl: "https://prodholoholo-public-images.nianticlabs.com/Stickers/sticker_halloween21_pikachu.png";
-		}
-	>
->;
 export type StickerMetadataHalloweenBulb = S<
 	StickerMetadata<
 		"STICKER_HALLOWEEN_BULB",
@@ -300,6 +278,28 @@ export type StickerMetadataHalloweenSqu = S<
 		}
 	>
 >;
+export type StickerMetadataHalloween21Ghostpika = S<
+	StickerMetadata<
+		"STICKER_HALLOWEEN21_GHOSTPIKA",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PIKACHU";
+			releaseDate: 20211015;
+			stickerUrl: "https://prodholoholo-public-images.nianticlabs.com/Stickers/sticker_halloween21_ghostpika.png";
+		}
+	>
+>;
+export type StickerMetadataHalloween21Pikachu = S<
+	StickerMetadata<
+		"STICKER_HALLOWEEN21_PIKACHU",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PIKACHU";
+			releaseDate: 20211015;
+			stickerUrl: "https://prodholoholo-public-images.nianticlabs.com/Stickers/sticker_halloween21_pikachu.png";
+		}
+	>
+>;
 export type StickerMetadataHolidayevent211 = S<
 	StickerMetadata<
 		"STICKER_HOLIDAYEVENT21_1",
@@ -311,17 +311,6 @@ export type StickerMetadataHolidayevent211 = S<
 		}
 	>
 >;
-export type StickerMetadataMewtwo = S<
-	StickerMetadata<
-		"STICKER_MEWTWO",
-		{
-			category: ["Pokemon"];
-			pokemonId: "MEW";
-			releaseDate: 20210220;
-			stickerUrl: "https://storage.googleapis.com/prod-public-images/Stickers/sticker_mewtwo.png";
-		}
-	>
->;
 export type StickerMetadataMewLaugh = S<
 	StickerMetadata<
 		"STICKER_MEW_LAUGH",
@@ -330,6 +319,17 @@ export type StickerMetadataMewLaugh = S<
 			pokemonId: "MEWTWO";
 			releaseDate: 20210220;
 			stickerUrl: "https://storage.googleapis.com/prod-public-images/Stickers/sticker_mew_laugh.png";
+		}
+	>
+>;
+export type StickerMetadataMewtwo = S<
+	StickerMetadata<
+		"STICKER_MEWTWO",
+		{
+			category: ["Pokemon"];
+			pokemonId: "MEW";
+			releaseDate: 20210220;
+			stickerUrl: "https://storage.googleapis.com/prod-public-images/Stickers/sticker_mewtwo.png";
 		}
 	>
 >;
@@ -377,17 +377,6 @@ export type StickerMetadataNaganoYadon = S<
 		}
 	>
 >;
-export type StickerMetadataNewpokemon21 = S<
-	StickerMetadata<
-		"STICKER_NEWPOKEMON2_1",
-		{
-			category: ["Pokemon"];
-			pokemonId: "PIKACHU";
-			releaseDate: 20210214;
-			stickerUrl: "https://prodholoholo-public-images.nianticlabs.com/Stickers/sticker_newPokemon2_1.png";
-		}
-	>
->;
 export type StickerMetadataNewpokemon04 = S<
 	StickerMetadata<
 		"STICKER_NEWPOKEMON_04",
@@ -407,6 +396,17 @@ export type StickerMetadataNewpokemon37 = S<
 			pokemonId: "SLOWPOKE";
 			releaseDate: 20210608;
 			stickerUrl: "https://prodholoholo-public-images.nianticlabs.com/Stickers/sticker_newPokemon_37.png";
+		}
+	>
+>;
+export type StickerMetadataNewpokemon21 = S<
+	StickerMetadata<
+		"STICKER_NEWPOKEMON2_1",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PIKACHU";
+			releaseDate: 20210214;
+			stickerUrl: "https://prodholoholo-public-images.nianticlabs.com/Stickers/sticker_newPokemon2_1.png";
 		}
 	>
 >;
@@ -487,6 +487,17 @@ export type StickerMetadataNigiyaka160508312 = S<
 		}
 	>
 >;
+export type StickerMetadataPika14Thankyou = S<
+	StickerMetadata<
+		"STICKER_PIKA_14_THANKYOU",
+		{
+			category: ["Pokemon", "Messages"];
+			pokemonId: "PIKACHU";
+			releaseDate: 20210320;
+			stickerUrl: "https://prodholoholo-public-images.nianticlabs.com/Stickers/sticker_pika_14_thankyou.png";
+		}
+	>
+>;
 export type StickerMetadataPikaairadventure1 = S<
 	StickerMetadata<
 		"STICKER_PIKAAIRADVENTURE_1",
@@ -517,17 +528,6 @@ export type StickerMetadataPikachuJol = S<
 			pokemonId: "PIKACHU";
 			releaseDate: 20201027;
 			stickerUrl: "https://storage.googleapis.com/prod-public-images/Stickers/sticker_pikachu_JOL.png";
-		}
-	>
->;
-export type StickerMetadataPika14Thankyou = S<
-	StickerMetadata<
-		"STICKER_PIKA_14_THANKYOU",
-		{
-			category: ["Pokemon", "Messages"];
-			pokemonId: "PIKACHU";
-			releaseDate: 20210320;
-			stickerUrl: "https://prodholoholo-public-images.nianticlabs.com/Stickers/sticker_pika_14_thankyou.png";
 		}
 	>
 >;
@@ -729,23 +729,23 @@ export type StickerMetadataPokemonIdReleaseDateStickerUrlMasterfileEntry =
 	| StickerMetadataGotour20221
 	| StickerMetadataGotour20222
 	| StickerMetadataGotour20223
-	| StickerMetadataHalloween21Ghostpika
-	| StickerMetadataHalloween21Pikachu
 	| StickerMetadataHalloweenBulb
 	| StickerMetadataHalloweenCharm
 	| StickerMetadataHalloweenGengarmd
 	| StickerMetadataHalloweenPika
 	| StickerMetadataHalloweenSqu
+	| StickerMetadataHalloween21Ghostpika
+	| StickerMetadataHalloween21Pikachu
 	| StickerMetadataHolidayevent211
-	| StickerMetadataMewtwo
 	| StickerMetadataMewLaugh
+	| StickerMetadataMewtwo
 	| StickerMetadataNagano11
 	| StickerMetadataNagano15
 	| StickerMetadataNagano15312
 	| StickerMetadataNaganoYadon
-	| StickerMetadataNewpokemon21
 	| StickerMetadataNewpokemon04
 	| StickerMetadataNewpokemon37
+	| StickerMetadataNewpokemon21
 	| StickerMetadataNewteamrascal
 	| StickerMetadataNewteamrascalpikachu26
 	| StickerMetadataNewyears221
@@ -753,10 +753,10 @@ export type StickerMetadataPokemonIdReleaseDateStickerUrlMasterfileEntry =
 	| StickerMetadataNewyears224
 	| StickerMetadataNigiyaka080508312
 	| StickerMetadataNigiyaka160508312
+	| StickerMetadataPika14Thankyou
 	| StickerMetadataPikaairadventure1
 	| StickerMetadataPikaairadventure2
 	| StickerMetadataPikachuJol
-	| StickerMetadataPika14Thankyou
 	| StickerMetadataPokemonchatpals204
 	| StickerMetadataProjectguitar25
 	| StickerMetadataSandshrew1

@@ -274,21 +274,21 @@ export type LimitedPurchaseSkuSettingsBundleWelcomebox1 = S<
 		}
 	>
 >;
-export type LimitedPurchaseSkuSettingsIncenseGeneral2Medium1 = S<
-	LimitedPurchaseSkuSettings<
-		"LPSKU_incense.general2.medium.1",
-		{
-			purchaseLimit: 1;
-			version: 1;
-		}
-	>
->;
 export type LimitedPurchaseSkuSettingsIncenseBundleGeneral2Small1 = S<
 	LimitedPurchaseSkuSettings<
 		"LPSKU_incense_bundle.general2.small.1",
 		{
 			purchaseLimit: 1;
 			version: 22;
+		}
+	>
+>;
+export type LimitedPurchaseSkuSettingsIncenseGeneral2Medium1 = S<
+	LimitedPurchaseSkuSettings<
+		"LPSKU_incense.general2.medium.1",
+		{
+			purchaseLimit: 1;
+			version: 1;
 		}
 	>
 >;
@@ -341,8 +341,8 @@ export type LimitedPurchaseSkuSettingsMasterfileEntry =
 	| LimitedPurchaseSkuSettingsBundleWebstoreThanksgiving2
 	| LimitedPurchaseSkuSettingsBundleWebstoreThanksgiving3
 	| LimitedPurchaseSkuSettingsBundleWelcomebox1
-	| LimitedPurchaseSkuSettingsIncenseGeneral2Medium1
 	| LimitedPurchaseSkuSettingsIncenseBundleGeneral2Small1
+	| LimitedPurchaseSkuSettingsIncenseGeneral2Medium1
 	| LimitedPurchaseSkuSettingsRemotepassBundleGeneral3Small1
 	| LimitedPurchaseSkuSettingsWeeklyBallsGeneral2Medium1;
 

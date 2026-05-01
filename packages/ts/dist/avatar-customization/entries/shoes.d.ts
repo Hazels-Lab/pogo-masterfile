@@ -1587,6 +1587,23 @@ export type AvatarCustomizationFShoesTeamspark = S<
 		}
 	>
 >;
+export type AvatarCustomizationFShoesUltra0 = S<
+	AvatarCustomization<
+		"AVATAR_f_shoes_ultra_0",
+		{
+			assetName: "f_shoes_ultra_0";
+			avatarType: "PLAYER_AVATAR_FEMALE";
+			bundleName: "f_shoes_ultra_bundle";
+			enabled: true;
+			groupName: "group_shoes";
+			iconName: "f_shoes_ultra_bundle_icon";
+			setNames: ["ultra_0"];
+			slot: ["SHOES"];
+			sortOrder: 100370;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
 export type AvatarCustomizationFShoesUltrareconsquad = S<
 	AvatarCustomization<
 		"AVATAR_f_shoes_ultraReconSquad",
@@ -1602,23 +1619,6 @@ export type AvatarCustomizationFShoesUltrareconsquad = S<
 			slot: ["SHOES"];
 			sortOrder: 101245;
 			unlockType: "IAP_CLOTHING";
-		}
-	>
->;
-export type AvatarCustomizationFShoesUltra0 = S<
-	AvatarCustomization<
-		"AVATAR_f_shoes_ultra_0",
-		{
-			assetName: "f_shoes_ultra_0";
-			avatarType: "PLAYER_AVATAR_FEMALE";
-			bundleName: "f_shoes_ultra_bundle";
-			enabled: true;
-			groupName: "group_shoes";
-			iconName: "f_shoes_ultra_bundle_icon";
-			setNames: ["ultra_0"];
-			slot: ["SHOES"];
-			sortOrder: 100370;
-			unlockType: "DEFAULT";
 		}
 	>
 >;
@@ -1674,24 +1674,6 @@ export type AvatarCustomizationFShoesWcs2023winnersitems = S<
 			setNames: ["boxingoutfit"];
 			slot: ["SHOES"];
 			sortOrder: 101441;
-			unlockType: "IAP_CLOTHING";
-		}
-	>
->;
-export type AvatarCustomizationFShoesWinterboots2023 = S<
-	AvatarCustomization<
-		"AVATAR_f_shoes_winterboots2023",
-		{
-			assetName: "f_shoes_winterboots2023_0";
-			avatarType: "PLAYER_AVATAR_FEMALE";
-			bundleName: "f_shoes_winterboots2023_bundle";
-			enabled: true;
-			groupName: "group_shoes";
-			iapSku: "pgorelease.avatar.f_shoes_winterboots2023_0";
-			iconName: "f_shoes_winterboots2023_00_bundle_icon";
-			setNames: ["winter2023"];
-			slot: ["SHOES"];
-			sortOrder: 101532;
 			unlockType: "IAP_CLOTHING";
 		}
 	>
@@ -1760,6 +1742,24 @@ export type AvatarCustomizationFShoesWinterboots3 = S<
 			iconName: "f_shoes_winterboots_03_bundle_icon";
 			slot: ["SHOES"];
 			sortOrder: 100846;
+			unlockType: "IAP_CLOTHING";
+		}
+	>
+>;
+export type AvatarCustomizationFShoesWinterboots2023 = S<
+	AvatarCustomization<
+		"AVATAR_f_shoes_winterboots2023",
+		{
+			assetName: "f_shoes_winterboots2023_0";
+			avatarType: "PLAYER_AVATAR_FEMALE";
+			bundleName: "f_shoes_winterboots2023_bundle";
+			enabled: true;
+			groupName: "group_shoes";
+			iapSku: "pgorelease.avatar.f_shoes_winterboots2023_0";
+			iconName: "f_shoes_winterboots2023_00_bundle_icon";
+			setNames: ["winter2023"];
+			slot: ["SHOES"];
+			sortOrder: 101532;
 			unlockType: "IAP_CLOTHING";
 		}
 	>
@@ -3278,6 +3278,22 @@ export type AvatarCustomizationMShoesTeamspark = S<
 		}
 	>
 >;
+export type AvatarCustomizationMShoesUltra0 = S<
+	AvatarCustomization<
+		"AVATAR_m_shoes_ultra_0",
+		{
+			assetName: "m_shoes_ultra_0";
+			bundleName: "m_shoes_ultra_bundle";
+			enabled: true;
+			groupName: "group_shoes";
+			iconName: "m_shoes_ultra_bundle_icon";
+			setNames: ["ultra_0"];
+			slot: ["SHOES"];
+			sortOrder: 100019;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
 export type AvatarCustomizationMShoesUltrareconsquad = S<
 	AvatarCustomization<
 		"AVATAR_m_shoes_ultraReconSquad",
@@ -3292,22 +3308,6 @@ export type AvatarCustomizationMShoesUltrareconsquad = S<
 			slot: ["SHOES"];
 			sortOrder: 101247;
 			unlockType: "IAP_CLOTHING";
-		}
-	>
->;
-export type AvatarCustomizationMShoesUltra0 = S<
-	AvatarCustomization<
-		"AVATAR_m_shoes_ultra_0",
-		{
-			assetName: "m_shoes_ultra_0";
-			bundleName: "m_shoes_ultra_bundle";
-			enabled: true;
-			groupName: "group_shoes";
-			iconName: "m_shoes_ultra_bundle_icon";
-			setNames: ["ultra_0"];
-			slot: ["SHOES"];
-			sortOrder: 100019;
-			unlockType: "DEFAULT";
 		}
 	>
 >;
@@ -3360,23 +3360,6 @@ export type AvatarCustomizationMShoesWcs2023winnersitems = S<
 			setNames: ["boxingoutfit"];
 			slot: ["SHOES"];
 			sortOrder: 101440;
-			unlockType: "IAP_CLOTHING";
-		}
-	>
->;
-export type AvatarCustomizationMShoesWinterboots2023 = S<
-	AvatarCustomization<
-		"AVATAR_m_shoes_winterboots2023",
-		{
-			assetName: "m_shoes_winterboots2023_0";
-			bundleName: "m_shoes_winterboots2023_bundle";
-			enabled: true;
-			groupName: "group_shoes";
-			iapSku: "pgorelease.avatar.m_shoes_winterboots2023_0";
-			iconName: "m_shoes_winterboots2023_00_bundle_icon";
-			setNames: ["winter2023"];
-			slot: ["SHOES"];
-			sortOrder: 101528;
 			unlockType: "IAP_CLOTHING";
 		}
 	>
@@ -3441,6 +3424,23 @@ export type AvatarCustomizationMShoesWinterboots3 = S<
 			iconName: "m_shoes_winterboots_03_bundle_icon";
 			slot: ["SHOES"];
 			sortOrder: 100842;
+			unlockType: "IAP_CLOTHING";
+		}
+	>
+>;
+export type AvatarCustomizationMShoesWinterboots2023 = S<
+	AvatarCustomization<
+		"AVATAR_m_shoes_winterboots2023",
+		{
+			assetName: "m_shoes_winterboots2023_0";
+			bundleName: "m_shoes_winterboots2023_bundle";
+			enabled: true;
+			groupName: "group_shoes";
+			iapSku: "pgorelease.avatar.m_shoes_winterboots2023_0";
+			iconName: "m_shoes_winterboots2023_00_bundle_icon";
+			setNames: ["winter2023"];
+			slot: ["SHOES"];
+			sortOrder: 101528;
 			unlockType: "IAP_CLOTHING";
 		}
 	>
@@ -3536,16 +3536,16 @@ export type AvatarCustomizationShoesMasterfileEntry =
 	| AvatarCustomizationFShoesTeamrocket1
 	| AvatarCustomizationFShoesTeamskull
 	| AvatarCustomizationFShoesTeamspark
-	| AvatarCustomizationFShoesUltrareconsquad
 	| AvatarCustomizationFShoesUltra0
+	| AvatarCustomizationFShoesUltrareconsquad
 	| AvatarCustomizationFShoesVeterantrainerxy
 	| AvatarCustomizationFShoesWcs2022winnersitems
 	| AvatarCustomizationFShoesWcs2023winnersitems
-	| AvatarCustomizationFShoesWinterboots2023
 	| AvatarCustomizationFShoesWinterboots0
 	| AvatarCustomizationFShoesWinterboots1
 	| AvatarCustomizationFShoesWinterboots2
 	| AvatarCustomizationFShoesWinterboots3
+	| AvatarCustomizationFShoesWinterboots2023
 	| AvatarCustomizationMShoes6thanniversary
 	| AvatarCustomizationMShoesAcetrainerbw
 	| AvatarCustomizationMShoesAcetrainersm
@@ -3636,13 +3636,13 @@ export type AvatarCustomizationShoesMasterfileEntry =
 	| AvatarCustomizationMShoesTeamrocket1
 	| AvatarCustomizationMShoesTeamskull
 	| AvatarCustomizationMShoesTeamspark
-	| AvatarCustomizationMShoesUltrareconsquad
 	| AvatarCustomizationMShoesUltra0
+	| AvatarCustomizationMShoesUltrareconsquad
 	| AvatarCustomizationMShoesVeterantrainerxy
 	| AvatarCustomizationMShoesWcs2022winnersitems
 	| AvatarCustomizationMShoesWcs2023winnersitems
-	| AvatarCustomizationMShoesWinterboots2023
 	| AvatarCustomizationMShoesWinterboots0
 	| AvatarCustomizationMShoesWinterboots1
 	| AvatarCustomizationMShoesWinterboots2
-	| AvatarCustomizationMShoesWinterboots3;
+	| AvatarCustomizationMShoesWinterboots3
+	| AvatarCustomizationMShoesWinterboots2023;

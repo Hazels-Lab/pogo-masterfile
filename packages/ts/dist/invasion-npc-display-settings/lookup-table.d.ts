@@ -47,10 +47,10 @@ import type {
 	InvasionNpcDisplaySettingsGrassGruntMale,
 	InvasionNpcDisplaySettingsGroundGruntFemale,
 	InvasionNpcDisplaySettingsGroundGruntMale,
-	InvasionNpcDisplaySettingsGruntFemale,
-	InvasionNpcDisplaySettingsGruntMale,
 	InvasionNpcDisplaySettingsGruntbFemale,
 	InvasionNpcDisplaySettingsGruntbMale,
+	InvasionNpcDisplaySettingsGruntFemale,
+	InvasionNpcDisplaySettingsGruntMale,
 	InvasionNpcDisplaySettingsIceGruntFemale,
 	InvasionNpcDisplaySettingsIceGruntMale,
 	InvasionNpcDisplaySettingsMetalGruntFemale,
@@ -117,10 +117,10 @@ export interface InvasionNpcDisplaySettingsLookup {
 	CHARACTER_GRASS_GRUNT_MALE: InvasionNpcDisplaySettingsGrassGruntMale;
 	CHARACTER_GROUND_GRUNT_FEMALE: InvasionNpcDisplaySettingsGroundGruntFemale;
 	CHARACTER_GROUND_GRUNT_MALE: InvasionNpcDisplaySettingsGroundGruntMale;
-	CHARACTER_GRUNTB_FEMALE: InvasionNpcDisplaySettingsGruntbFemale;
-	CHARACTER_GRUNTB_MALE: InvasionNpcDisplaySettingsGruntbMale;
 	CHARACTER_GRUNT_FEMALE: InvasionNpcDisplaySettingsGruntFemale;
 	CHARACTER_GRUNT_MALE: InvasionNpcDisplaySettingsGruntMale;
+	CHARACTER_GRUNTB_FEMALE: InvasionNpcDisplaySettingsGruntbFemale;
+	CHARACTER_GRUNTB_MALE: InvasionNpcDisplaySettingsGruntbMale;
 	CHARACTER_ICE_GRUNT_FEMALE: InvasionNpcDisplaySettingsIceGruntFemale;
 	CHARACTER_ICE_GRUNT_MALE: InvasionNpcDisplaySettingsIceGruntMale;
 	CHARACTER_METAL_GRUNT_FEMALE: InvasionNpcDisplaySettingsMetalGruntFemale;

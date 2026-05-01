@@ -1367,116 +1367,6 @@ export type StickerMetadataNoibatCd4 = S<
 		}
 	>
 >;
-export type StickerMetadataPgofest2022Denjyumoku = S<
-	StickerMetadata<
-		"STICKER_PGOFEST2022_DENJYUMOKU",
-		{
-			category: ["Pokemon"];
-			pokemonId: "XURKITREE";
-			regionId: 6;
-			releaseDate: 20220805;
-		}
-	>
->;
-export type StickerMetadataPgofest2022Groudon = S<
-	StickerMetadata<
-		"STICKER_PGOFEST2022_GROUDON",
-		{
-			category: ["Pokemon"];
-			pokemonId: "GROUDON";
-			regionId: 2;
-			releaseDate: 20220604;
-		}
-	>
->;
-export type StickerMetadataPgofest2022Kibago = S<
-	StickerMetadata<
-		"STICKER_PGOFEST2022_KIBAGO",
-		{
-			category: ["Pokemon"];
-			pokemonId: "AXEW";
-			regionId: 4;
-			releaseDate: 20220604;
-		}
-	>
->;
-export type StickerMetadataPgofest2022Kyogre = S<
-	StickerMetadata<
-		"STICKER_PGOFEST2022_KYOGRE",
-		{
-			category: ["Pokemon"];
-			pokemonId: "KYOGRE";
-			regionId: 2;
-			releaseDate: 20220604;
-		}
-	>
->;
-export type StickerMetadataPgofest2022Massivoon = S<
-	StickerMetadata<
-		"STICKER_PGOFEST2022_MASSIVOON",
-		{
-			category: ["Pokemon"];
-			pokemonId: "KOMMO_O";
-			regionId: 6;
-			releaseDate: 20220722;
-		}
-	>
->;
-export type StickerMetadataPgofest2022Pheroache = S<
-	StickerMetadata<
-		"STICKER_PGOFEST2022_PHEROACHE",
-		{
-			category: ["Pokemon"];
-			pokemonId: "PHEROMOSA";
-			regionId: 6;
-			releaseDate: 20220701;
-		}
-	>
->;
-export type StickerMetadataPgofest2022Pochama = S<
-	StickerMetadata<
-		"STICKER_PGOFEST2022_POCHAMA",
-		{
-			category: ["Pokemon"];
-			pokemonId: "PIPLUP";
-			regionId: 3;
-			releaseDate: 20220604;
-		}
-	>
->;
-export type StickerMetadataPgofest2022Shaymin = S<
-	StickerMetadata<
-		"STICKER_PGOFEST2022_SHAYMIN",
-		{
-			category: ["Pokemon"];
-			pokemonId: "SHAYMIN";
-			regionId: 3;
-			releaseDate: 20220604;
-		}
-	>
->;
-export type StickerMetadataPgofest2022Shayminsky = S<
-	StickerMetadata<
-		"STICKER_PGOFEST2022_SHAYMINSKY",
-		{
-			category: ["Pokemon"];
-			pokemonId: "SHAYMIN";
-			regionId: 3;
-			releaseDate: 20220701;
-		}
-	>
->;
-export type StickerMetadataPgofest2022Uturoid = S<
-	StickerMetadata<
-		"STICKER_PGOFEST2022_UTUROID",
-		{
-			category: ["Pokemon"];
-			pokemonId: "NIHILEGO";
-			regionId: 6;
-			releaseDate: 20220805;
-		}
-	>
->;
 export type StickerMetadataPgoFest20241 = S<
 	StickerMetadata<
 		"STICKER_PGO_FEST_2024_1",
@@ -1716,6 +1606,116 @@ export type StickerMetadataPgoWildarea20244 = S<
 			pokemonId: "TOXTRICITY";
 			regionId: 7;
 			releaseDate: 20241010;
+		}
+	>
+>;
+export type StickerMetadataPgofest2022Denjyumoku = S<
+	StickerMetadata<
+		"STICKER_PGOFEST2022_DENJYUMOKU",
+		{
+			category: ["Pokemon"];
+			pokemonId: "XURKITREE";
+			regionId: 6;
+			releaseDate: 20220805;
+		}
+	>
+>;
+export type StickerMetadataPgofest2022Groudon = S<
+	StickerMetadata<
+		"STICKER_PGOFEST2022_GROUDON",
+		{
+			category: ["Pokemon"];
+			pokemonId: "GROUDON";
+			regionId: 2;
+			releaseDate: 20220604;
+		}
+	>
+>;
+export type StickerMetadataPgofest2022Kibago = S<
+	StickerMetadata<
+		"STICKER_PGOFEST2022_KIBAGO",
+		{
+			category: ["Pokemon"];
+			pokemonId: "AXEW";
+			regionId: 4;
+			releaseDate: 20220604;
+		}
+	>
+>;
+export type StickerMetadataPgofest2022Kyogre = S<
+	StickerMetadata<
+		"STICKER_PGOFEST2022_KYOGRE",
+		{
+			category: ["Pokemon"];
+			pokemonId: "KYOGRE";
+			regionId: 2;
+			releaseDate: 20220604;
+		}
+	>
+>;
+export type StickerMetadataPgofest2022Massivoon = S<
+	StickerMetadata<
+		"STICKER_PGOFEST2022_MASSIVOON",
+		{
+			category: ["Pokemon"];
+			pokemonId: "KOMMO_O";
+			regionId: 6;
+			releaseDate: 20220722;
+		}
+	>
+>;
+export type StickerMetadataPgofest2022Pheroache = S<
+	StickerMetadata<
+		"STICKER_PGOFEST2022_PHEROACHE",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PHEROMOSA";
+			regionId: 6;
+			releaseDate: 20220701;
+		}
+	>
+>;
+export type StickerMetadataPgofest2022Pochama = S<
+	StickerMetadata<
+		"STICKER_PGOFEST2022_POCHAMA",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PIPLUP";
+			regionId: 3;
+			releaseDate: 20220604;
+		}
+	>
+>;
+export type StickerMetadataPgofest2022Shaymin = S<
+	StickerMetadata<
+		"STICKER_PGOFEST2022_SHAYMIN",
+		{
+			category: ["Pokemon"];
+			pokemonId: "SHAYMIN";
+			regionId: 3;
+			releaseDate: 20220604;
+		}
+	>
+>;
+export type StickerMetadataPgofest2022Shayminsky = S<
+	StickerMetadata<
+		"STICKER_PGOFEST2022_SHAYMINSKY",
+		{
+			category: ["Pokemon"];
+			pokemonId: "SHAYMIN";
+			regionId: 3;
+			releaseDate: 20220701;
+		}
+	>
+>;
+export type StickerMetadataPgofest2022Uturoid = S<
+	StickerMetadata<
+		"STICKER_PGOFEST2022_UTUROID",
+		{
+			category: ["Pokemon"];
+			pokemonId: "NIHILEGO";
+			regionId: 6;
+			releaseDate: 20220805;
 		}
 	>
 >;
@@ -2566,105 +2566,6 @@ export type StickerMetadataWcs2025Murkrow = S<
 		}
 	>
 >;
-export type StickerMetadataWinter20231 = S<
-	StickerMetadata<
-		"STICKER_WINTER2023_1",
-		{
-			category: ["Pokemon"];
-			pokemonId: "DELIBIRD";
-			regionId: 1;
-			releaseDate: 20231128;
-		}
-	>
->;
-export type StickerMetadataWinter20232 = S<
-	StickerMetadata<
-		"STICKER_WINTER2023_2",
-		{
-			category: ["Pokemon"];
-			pokemonId: "MR_MIME";
-			regionId: 7;
-			releaseDate: 20231128;
-		}
-	>
->;
-export type StickerMetadataWinter20233 = S<
-	StickerMetadata<
-		"STICKER_WINTER2023_3",
-		{
-			category: ["Pokemon"];
-			pokemonId: "BERGMITE";
-			regionId: 5;
-			releaseDate: 20231128;
-		}
-	>
->;
-export type StickerMetadataWinter20234 = S<
-	StickerMetadata<
-		"STICKER_WINTER2023_4",
-		{
-			category: ["Pokemon"];
-			pokemonId: "WEAVILE";
-			regionId: 3;
-			releaseDate: 20231128;
-		}
-	>
->;
-export type StickerMetadataWinter20235 = S<
-	StickerMetadata<
-		"STICKER_WINTER2023_5",
-		{
-			category: ["Pokemon"];
-			pokemonId: "SPHEAL";
-			regionId: 2;
-			releaseDate: 20231128;
-		}
-	>
->;
-export type StickerMetadataWinter20236 = S<
-	StickerMetadata<
-		"STICKER_WINTER2023_6",
-		{
-			category: ["Pokemon"];
-			pokemonId: "SNOVER";
-			regionId: 3;
-			releaseDate: 20231128;
-		}
-	>
->;
-export type StickerMetadataWinter20251 = S<
-	StickerMetadata<
-		"STICKER_WINTER2025_1",
-		{
-			category: ["Pokemon"];
-			pokemonId: "SWABLU";
-			regionId: 2;
-			releaseDate: 20251202;
-		}
-	>
->;
-export type StickerMetadataWinter20252 = S<
-	StickerMetadata<
-		"STICKER_WINTER2025_2",
-		{
-			category: ["Pokemon"];
-			pokemonId: "LITTEN";
-			regionId: 6;
-			releaseDate: 20251202;
-		}
-	>
->;
-export type StickerMetadataWinter20253 = S<
-	StickerMetadata<
-		"STICKER_WINTER2025_3",
-		{
-			category: ["Pokemon"];
-			pokemonId: "MAUSHOLD";
-			regionId: 1001;
-			releaseDate: 20251202;
-		}
-	>
->;
 export type StickerMetadataWinter20241 = S<
 	StickerMetadata<
 		"STICKER_WINTER_2024_1",
@@ -2794,6 +2695,105 @@ export type StickerMetadataWinterSnorunt = S<
 			pokemonId: "SNORUNT";
 			regionId: 2;
 			releaseDate: 20221131;
+		}
+	>
+>;
+export type StickerMetadataWinter20231 = S<
+	StickerMetadata<
+		"STICKER_WINTER2023_1",
+		{
+			category: ["Pokemon"];
+			pokemonId: "DELIBIRD";
+			regionId: 1;
+			releaseDate: 20231128;
+		}
+	>
+>;
+export type StickerMetadataWinter20232 = S<
+	StickerMetadata<
+		"STICKER_WINTER2023_2",
+		{
+			category: ["Pokemon"];
+			pokemonId: "MR_MIME";
+			regionId: 7;
+			releaseDate: 20231128;
+		}
+	>
+>;
+export type StickerMetadataWinter20233 = S<
+	StickerMetadata<
+		"STICKER_WINTER2023_3",
+		{
+			category: ["Pokemon"];
+			pokemonId: "BERGMITE";
+			regionId: 5;
+			releaseDate: 20231128;
+		}
+	>
+>;
+export type StickerMetadataWinter20234 = S<
+	StickerMetadata<
+		"STICKER_WINTER2023_4",
+		{
+			category: ["Pokemon"];
+			pokemonId: "WEAVILE";
+			regionId: 3;
+			releaseDate: 20231128;
+		}
+	>
+>;
+export type StickerMetadataWinter20235 = S<
+	StickerMetadata<
+		"STICKER_WINTER2023_5",
+		{
+			category: ["Pokemon"];
+			pokemonId: "SPHEAL";
+			regionId: 2;
+			releaseDate: 20231128;
+		}
+	>
+>;
+export type StickerMetadataWinter20236 = S<
+	StickerMetadata<
+		"STICKER_WINTER2023_6",
+		{
+			category: ["Pokemon"];
+			pokemonId: "SNOVER";
+			regionId: 3;
+			releaseDate: 20231128;
+		}
+	>
+>;
+export type StickerMetadataWinter20251 = S<
+	StickerMetadata<
+		"STICKER_WINTER2025_1",
+		{
+			category: ["Pokemon"];
+			pokemonId: "SWABLU";
+			regionId: 2;
+			releaseDate: 20251202;
+		}
+	>
+>;
+export type StickerMetadataWinter20252 = S<
+	StickerMetadata<
+		"STICKER_WINTER2025_2",
+		{
+			category: ["Pokemon"];
+			pokemonId: "LITTEN";
+			regionId: 6;
+			releaseDate: 20251202;
+		}
+	>
+>;
+export type StickerMetadataWinter20253 = S<
+	StickerMetadata<
+		"STICKER_WINTER2025_3",
+		{
+			category: ["Pokemon"];
+			pokemonId: "MAUSHOLD";
+			regionId: 1001;
+			releaseDate: 20251202;
 		}
 	>
 >;
@@ -2967,16 +2967,6 @@ export type StickerMetadataPokemonIdRegionIdReleaseDateMasterfileEntry =
 	| StickerMetadataNoibatCd2
 	| StickerMetadataNoibatCd3
 	| StickerMetadataNoibatCd4
-	| StickerMetadataPgofest2022Denjyumoku
-	| StickerMetadataPgofest2022Groudon
-	| StickerMetadataPgofest2022Kibago
-	| StickerMetadataPgofest2022Kyogre
-	| StickerMetadataPgofest2022Massivoon
-	| StickerMetadataPgofest2022Pheroache
-	| StickerMetadataPgofest2022Pochama
-	| StickerMetadataPgofest2022Shaymin
-	| StickerMetadataPgofest2022Shayminsky
-	| StickerMetadataPgofest2022Uturoid
 	| StickerMetadataPgoFest20241
 	| StickerMetadataPgoFest20242
 	| StickerMetadataPgoFest20243
@@ -2999,6 +2989,16 @@ export type StickerMetadataPokemonIdRegionIdReleaseDateMasterfileEntry =
 	| StickerMetadataPgoWildarea20242
 	| StickerMetadataPgoWildarea20243
 	| StickerMetadataPgoWildarea20244
+	| StickerMetadataPgofest2022Denjyumoku
+	| StickerMetadataPgofest2022Groudon
+	| StickerMetadataPgofest2022Kibago
+	| StickerMetadataPgofest2022Kyogre
+	| StickerMetadataPgofest2022Massivoon
+	| StickerMetadataPgofest2022Pheroache
+	| StickerMetadataPgofest2022Pochama
+	| StickerMetadataPgofest2022Shaymin
+	| StickerMetadataPgofest2022Shayminsky
+	| StickerMetadataPgofest2022Uturoid
 	| StickerMetadataPokopiaTangrowth
 	| StickerMetadataPonyta2
 	| StickerMetadataPonyta3
@@ -3076,15 +3076,6 @@ export type StickerMetadataPokemonIdRegionIdReleaseDateMasterfileEntry =
 	| StickerMetadataValentine20232
 	| StickerMetadataValentine20233
 	| StickerMetadataWcs2025Murkrow
-	| StickerMetadataWinter20231
-	| StickerMetadataWinter20232
-	| StickerMetadataWinter20233
-	| StickerMetadataWinter20234
-	| StickerMetadataWinter20235
-	| StickerMetadataWinter20236
-	| StickerMetadataWinter20251
-	| StickerMetadataWinter20252
-	| StickerMetadataWinter20253
 	| StickerMetadataWinter20241
 	| StickerMetadataWinter20242
 	| StickerMetadataWinter20243
@@ -3097,6 +3088,15 @@ export type StickerMetadataPokemonIdRegionIdReleaseDateMasterfileEntry =
 	| StickerMetadataWinterPikachu
 	| StickerMetadataWinterSawsbuck
 	| StickerMetadataWinterSnorunt
+	| StickerMetadataWinter20231
+	| StickerMetadataWinter20232
+	| StickerMetadataWinter20233
+	| StickerMetadataWinter20234
+	| StickerMetadataWinter20235
+	| StickerMetadataWinter20236
+	| StickerMetadataWinter20251
+	| StickerMetadataWinter20252
+	| StickerMetadataWinter20253
 	| StickerMetadataWoopercd20231
 	| StickerMetadataWoopercd20232
 	| StickerMetadataWoopercd20233

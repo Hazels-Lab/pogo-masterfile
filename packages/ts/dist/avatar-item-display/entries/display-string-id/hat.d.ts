@@ -1029,6 +1029,15 @@ export type AvatarItemDisplayNHatMismagius0 = S<
 		}
 	>
 >;
+export type AvatarItemDisplayNHatMlb0 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_hat_mlb_0",
+		{
+			displayStringId: "avatar_hat_mlbballcap";
+			iconAddress: "n_hat_mlb_0_icon";
+		}
+	>
+>;
 export type AvatarItemDisplayNHatMlbBrewers0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_hat_mlb-brewers_0",
@@ -1161,15 +1170,6 @@ export type AvatarItemDisplayNHatMlbWhitesox0 = S<
 		{
 			displayStringId: "avatar_hat_mlbwhitesox";
 			iconAddress: "n_hat_mlb-whitesox_0_icon";
-		}
-	>
->;
-export type AvatarItemDisplayNHatMlb0 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_hat_mlb_0",
-		{
-			displayStringId: "avatar_hat_mlbballcap";
-			iconAddress: "n_hat_mlb_0_icon";
 		}
 	>
 >;
@@ -2090,6 +2090,7 @@ export type AvatarItemDisplayDisplayStringIdHatMasterfileEntry =
 	| AvatarItemDisplayNHatMewtwoB0
 	| AvatarItemDisplayNHatMimikyu0
 	| AvatarItemDisplayNHatMismagius0
+	| AvatarItemDisplayNHatMlb0
 	| AvatarItemDisplayNHatMlbBrewers0
 	| AvatarItemDisplayNHatMlbDiamondbacks0
 	| AvatarItemDisplayNHatMlbGiants0
@@ -2105,7 +2106,6 @@ export type AvatarItemDisplayDisplayStringIdHatMasterfileEntry =
 	| AvatarItemDisplayNHatMlbRedsox0
 	| AvatarItemDisplayNHatMlbTwins0
 	| AvatarItemDisplayNHatMlbWhitesox0
-	| AvatarItemDisplayNHatMlb0
 	| AvatarItemDisplayNHatMovie20200
 	| AvatarItemDisplayNHatMunnapack0
 	| AvatarItemDisplayNHatMunnapack1

@@ -345,8 +345,25 @@ import type {
 	StickerMetadataPgoFest2019,
 	StickerMetadataPgoFest2020,
 	StickerMetadataPgoFest2020Logo,
+	StickerMetadataPgofest2021Galarianzigzagoon,
+	StickerMetadataPgofest2021Logo,
+	StickerMetadataPgofest2021Meloetta1,
+	StickerMetadataPgofest2021Meloetta2,
+	StickerMetadataPgofest2021Ponyta,
+	StickerMetadataPgofest2021Shirticon,
 	StickerMetadataPgoFest2022,
+	StickerMetadataPgofest2022Denjyumoku,
+	StickerMetadataPgofest2022Groudon,
+	StickerMetadataPgofest2022Kibago,
+	StickerMetadataPgofest2022Kyogre,
 	StickerMetadataPgoFest2022Logo,
+	StickerMetadataPgofest2022Massivoon,
+	StickerMetadataPgofest2022Pheroache,
+	StickerMetadataPgofest2022Pikachu,
+	StickerMetadataPgofest2022Pochama,
+	StickerMetadataPgofest2022Shaymin,
+	StickerMetadataPgofest2022Shayminsky,
+	StickerMetadataPgofest2022Uturoid,
 	StickerMetadataPgoFest2023,
 	StickerMetadataPgoFest20231,
 	StickerMetadataPgoFest20232,
@@ -393,23 +410,6 @@ import type {
 	StickerMetadataPgoWildarea20243,
 	StickerMetadataPgoWildarea20244,
 	StickerMetadataPgoWildarea2024Logo,
-	StickerMetadataPgofest2021Galarianzigzagoon,
-	StickerMetadataPgofest2021Logo,
-	StickerMetadataPgofest2021Meloetta1,
-	StickerMetadataPgofest2021Meloetta2,
-	StickerMetadataPgofest2021Ponyta,
-	StickerMetadataPgofest2021Shirticon,
-	StickerMetadataPgofest2022Denjyumoku,
-	StickerMetadataPgofest2022Groudon,
-	StickerMetadataPgofest2022Kibago,
-	StickerMetadataPgofest2022Kyogre,
-	StickerMetadataPgofest2022Massivoon,
-	StickerMetadataPgofest2022Pheroache,
-	StickerMetadataPgofest2022Pikachu,
-	StickerMetadataPgofest2022Pochama,
-	StickerMetadataPgofest2022Shaymin,
-	StickerMetadataPgofest2022Shayminsky,
-	StickerMetadataPgofest2022Uturoid,
 	StickerMetadataPika14Thankyou,
 	StickerMetadataPikaairadventure1,
 	StickerMetadataPikaairadventure2,
@@ -815,6 +815,12 @@ export interface StickerMetadataLookup {
 	STICKER_GRUBBIN_2: StickerMetadataGrubbin2;
 	STICKER_GRUBBIN_3: StickerMetadataGrubbin3;
 	STICKER_GRUBBIN_4: StickerMetadataGrubbin4;
+	STICKER_HALLOWEEN_BULB: StickerMetadataHalloweenBulb;
+	STICKER_HALLOWEEN_CHARM: StickerMetadataHalloweenCharm;
+	STICKER_HALLOWEEN_GENGARMD: StickerMetadataHalloweenGengarmd;
+	STICKER_HALLOWEEN_PIKA: StickerMetadataHalloweenPika;
+	STICKER_HALLOWEEN_SABLEYEMD: StickerMetadataHalloweenSableyemd;
+	STICKER_HALLOWEEN_SQU: StickerMetadataHalloweenSqu;
 	STICKER_HALLOWEEN2022_GENGAR: StickerMetadataHalloween2022Gengar;
 	STICKER_HALLOWEEN2022_PUMPKABOO: StickerMetadataHalloween2022Pumpkaboo;
 	STICKER_HALLOWEEN2022_VULPIX: StickerMetadataHalloween2022Vulpix;
@@ -830,12 +836,6 @@ export interface StickerMetadataLookup {
 	STICKER_HALLOWEEN23_PHANTUMP: StickerMetadataHalloween23Phantump;
 	STICKER_HALLOWEEN24_FROAKIE: StickerMetadataHalloween24Froakie;
 	STICKER_HALLOWEEN24_ROWLET: StickerMetadataHalloween24Rowlet;
-	STICKER_HALLOWEEN_BULB: StickerMetadataHalloweenBulb;
-	STICKER_HALLOWEEN_CHARM: StickerMetadataHalloweenCharm;
-	STICKER_HALLOWEEN_GENGARMD: StickerMetadataHalloweenGengarmd;
-	STICKER_HALLOWEEN_PIKA: StickerMetadataHalloweenPika;
-	STICKER_HALLOWEEN_SABLEYEMD: StickerMetadataHalloweenSableyemd;
-	STICKER_HALLOWEEN_SQU: StickerMetadataHalloweenSqu;
 	STICKER_HARU_CHERRIM: StickerMetadataHaruCherrim;
 	STICKER_HARU_DREDEARPIKA: StickerMetadataHaruDredearpika;
 	STICKER_HARU_KIREIHANA: StickerMetadataHaruKireihana;
@@ -904,8 +904,8 @@ export interface StickerMetadataLookup {
 	STICKER_MEGAEVOLUTION_PARIS_1: StickerMetadataMegaevolutionParis1;
 	STICKER_MEGAEVOLUTION_PARIS_2: StickerMetadataMegaevolutionParis2;
 	STICKER_MEGAEVOLUTION_PARIS_3: StickerMetadataMegaevolutionParis3;
-	STICKER_MEWTWO: StickerMetadataMewtwo;
 	STICKER_MEW_LAUGH: StickerMetadataMewLaugh;
+	STICKER_MEWTWO: StickerMetadataMewtwo;
 	STICKER_MUKKURU_CD_1: StickerMetadataMukkuruCd1;
 	STICKER_MUKKURU_CD_2: StickerMetadataMukkuruCd2;
 	STICKER_MUKKURU_CD_3: StickerMetadataMukkuruCd3;
@@ -918,12 +918,12 @@ export interface StickerMetadataLookup {
 	STICKER_NAGANO_BATH: StickerMetadataNaganoBath;
 	STICKER_NAGANO_MARILL: StickerMetadataNaganoMarill;
 	STICKER_NAGANO_YADON: StickerMetadataNaganoYadon;
-	STICKER_NEWPOKEMON2_1: StickerMetadataNewpokemon21;
-	STICKER_NEWPOKEMON2_15: StickerMetadataNewpokemon215;
-	STICKER_NEWPOKEMON2_33: StickerMetadataNewpokemon233;
 	STICKER_NEWPOKEMON_04: StickerMetadataNewpokemon04;
 	STICKER_NEWPOKEMON_20: StickerMetadataNewpokemon20;
 	STICKER_NEWPOKEMON_37: StickerMetadataNewpokemon37;
+	STICKER_NEWPOKEMON2_1: StickerMetadataNewpokemon21;
+	STICKER_NEWPOKEMON2_15: StickerMetadataNewpokemon215;
+	STICKER_NEWPOKEMON2_33: StickerMetadataNewpokemon233;
 	STICKER_NEWTEAMRASCAL: StickerMetadataNewteamrascal;
 	STICKER_NEWTEAMRASCALPIKACHU_26: StickerMetadataNewteamrascalpikachu26;
 	STICKER_NEWYEARS22_1: StickerMetadataNewyears221;
@@ -949,23 +949,6 @@ export interface StickerMetadataLookup {
 	STICKER_PAPELPICADOTGR_3: StickerMetadataPapelpicadotgr3;
 	STICKER_PAPELPICADOTGR_4: StickerMetadataPapelpicadotgr4;
 	STICKER_PAPELPICADOTGR_5: StickerMetadataPapelpicadotgr5;
-	STICKER_PGOFEST2021_GALARIANZIGZAGOON: StickerMetadataPgofest2021Galarianzigzagoon;
-	STICKER_PGOFEST2021_LOGO: StickerMetadataPgofest2021Logo;
-	STICKER_PGOFEST2021_MELOETTA_1: StickerMetadataPgofest2021Meloetta1;
-	STICKER_PGOFEST2021_MELOETTA_2: StickerMetadataPgofest2021Meloetta2;
-	STICKER_PGOFEST2021_PONYTA: StickerMetadataPgofest2021Ponyta;
-	STICKER_PGOFEST2021_SHIRTICON: StickerMetadataPgofest2021Shirticon;
-	STICKER_PGOFEST2022_DENJYUMOKU: StickerMetadataPgofest2022Denjyumoku;
-	STICKER_PGOFEST2022_GROUDON: StickerMetadataPgofest2022Groudon;
-	STICKER_PGOFEST2022_KIBAGO: StickerMetadataPgofest2022Kibago;
-	STICKER_PGOFEST2022_KYOGRE: StickerMetadataPgofest2022Kyogre;
-	STICKER_PGOFEST2022_MASSIVOON: StickerMetadataPgofest2022Massivoon;
-	STICKER_PGOFEST2022_PHEROACHE: StickerMetadataPgofest2022Pheroache;
-	STICKER_PGOFEST2022_PIKACHU: StickerMetadataPgofest2022Pikachu;
-	STICKER_PGOFEST2022_POCHAMA: StickerMetadataPgofest2022Pochama;
-	STICKER_PGOFEST2022_SHAYMIN: StickerMetadataPgofest2022Shaymin;
-	STICKER_PGOFEST2022_SHAYMINSKY: StickerMetadataPgofest2022Shayminsky;
-	STICKER_PGOFEST2022_UTUROID: StickerMetadataPgofest2022Uturoid;
 	STICKER_PGO_FEST_2017: StickerMetadataPgoFest2017;
 	STICKER_PGO_FEST_2018: StickerMetadataPgoFest2018;
 	STICKER_PGO_FEST_2019: StickerMetadataPgoFest2019;
@@ -1019,6 +1002,24 @@ export interface StickerMetadataLookup {
 	STICKER_PGO_WILDAREA_2024_3: StickerMetadataPgoWildarea20243;
 	STICKER_PGO_WILDAREA_2024_4: StickerMetadataPgoWildarea20244;
 	STICKER_PGO_WILDAREA_2024_LOGO: StickerMetadataPgoWildarea2024Logo;
+	STICKER_PGOFEST2021_GALARIANZIGZAGOON: StickerMetadataPgofest2021Galarianzigzagoon;
+	STICKER_PGOFEST2021_LOGO: StickerMetadataPgofest2021Logo;
+	STICKER_PGOFEST2021_MELOETTA_1: StickerMetadataPgofest2021Meloetta1;
+	STICKER_PGOFEST2021_MELOETTA_2: StickerMetadataPgofest2021Meloetta2;
+	STICKER_PGOFEST2021_PONYTA: StickerMetadataPgofest2021Ponyta;
+	STICKER_PGOFEST2021_SHIRTICON: StickerMetadataPgofest2021Shirticon;
+	STICKER_PGOFEST2022_DENJYUMOKU: StickerMetadataPgofest2022Denjyumoku;
+	STICKER_PGOFEST2022_GROUDON: StickerMetadataPgofest2022Groudon;
+	STICKER_PGOFEST2022_KIBAGO: StickerMetadataPgofest2022Kibago;
+	STICKER_PGOFEST2022_KYOGRE: StickerMetadataPgofest2022Kyogre;
+	STICKER_PGOFEST2022_MASSIVOON: StickerMetadataPgofest2022Massivoon;
+	STICKER_PGOFEST2022_PHEROACHE: StickerMetadataPgofest2022Pheroache;
+	STICKER_PGOFEST2022_PIKACHU: StickerMetadataPgofest2022Pikachu;
+	STICKER_PGOFEST2022_POCHAMA: StickerMetadataPgofest2022Pochama;
+	STICKER_PGOFEST2022_SHAYMIN: StickerMetadataPgofest2022Shaymin;
+	STICKER_PGOFEST2022_SHAYMINSKY: StickerMetadataPgofest2022Shayminsky;
+	STICKER_PGOFEST2022_UTUROID: StickerMetadataPgofest2022Uturoid;
+	STICKER_PIKA_14_THANKYOU: StickerMetadataPika14Thankyou;
 	STICKER_PIKAAIRADVENTURE_1: StickerMetadataPikaairadventure1;
 	STICKER_PIKAAIRADVENTURE_2: StickerMetadataPikaairadventure2;
 	STICKER_PIKAAIRADVENTURE_3: StickerMetadataPikaairadventure3;
@@ -1028,7 +1029,6 @@ export interface StickerMetadataLookup {
 	STICKER_PIKAAIRTAIWAN_PIKACHU: StickerMetadataPikaairtaiwanPikachu;
 	STICKER_PIKAAIRTAIWAN_SNORLAX: StickerMetadataPikaairtaiwanSnorlax;
 	STICKER_PIKACHU_JOL: StickerMetadataPikachuJol;
-	STICKER_PIKA_14_THANKYOU: StickerMetadataPika14Thankyou;
 	STICKER_POKEMONCHATPALS2_04: StickerMetadataPokemonchatpals204;
 	STICKER_POKEMONCHATPALS2_40: StickerMetadataPokemonchatpals240;
 	STICKER_POKOPIA_BULBASAUR: StickerMetadataPokopiaBulbasaur;
@@ -1175,24 +1175,14 @@ export interface StickerMetadataLookup {
 	STICKER_VALENTINE2023_1: StickerMetadataValentine20231;
 	STICKER_VALENTINE2023_2: StickerMetadataValentine20232;
 	STICKER_VALENTINE2023_3: StickerMetadataValentine20233;
+	STICKER_WCS_PLAY: StickerMetadataWcsPlay;
 	STICKER_WCS2025_CAR_GROUP: StickerMetadataWcs2025CarGroup;
 	STICKER_WCS2025_JIGGLYPUFF: StickerMetadataWcs2025Jigglypuff;
 	STICKER_WCS2025_MURKROW: StickerMetadataWcs2025Murkrow;
 	STICKER_WCS2025_PIKACHU: StickerMetadataWcs2025Pikachu;
-	STICKER_WCS_PLAY: StickerMetadataWcsPlay;
 	STICKER_WILLOW_BRONZE: StickerMetadataWillowBronze;
 	STICKER_WILLOW_GOLD: StickerMetadataWillowGold;
 	STICKER_WILLOW_SILVER: StickerMetadataWillowSilver;
-	STICKER_WINTER2023_1: StickerMetadataWinter20231;
-	STICKER_WINTER2023_2: StickerMetadataWinter20232;
-	STICKER_WINTER2023_3: StickerMetadataWinter20233;
-	STICKER_WINTER2023_4: StickerMetadataWinter20234;
-	STICKER_WINTER2023_5: StickerMetadataWinter20235;
-	STICKER_WINTER2023_6: StickerMetadataWinter20236;
-	STICKER_WINTER2025_1: StickerMetadataWinter20251;
-	STICKER_WINTER2025_2: StickerMetadataWinter20252;
-	STICKER_WINTER2025_3: StickerMetadataWinter20253;
-	STICKER_WINTER2025_4: StickerMetadataWinter20254;
 	STICKER_WINTER_2024_1: StickerMetadataWinter20241;
 	STICKER_WINTER_2024_2: StickerMetadataWinter20242;
 	STICKER_WINTER_2024_3: StickerMetadataWinter20243;
@@ -1205,6 +1195,16 @@ export interface StickerMetadataLookup {
 	STICKER_WINTER_PIKACHU: StickerMetadataWinterPikachu;
 	STICKER_WINTER_SAWSBUCK: StickerMetadataWinterSawsbuck;
 	STICKER_WINTER_SNORUNT: StickerMetadataWinterSnorunt;
+	STICKER_WINTER2023_1: StickerMetadataWinter20231;
+	STICKER_WINTER2023_2: StickerMetadataWinter20232;
+	STICKER_WINTER2023_3: StickerMetadataWinter20233;
+	STICKER_WINTER2023_4: StickerMetadataWinter20234;
+	STICKER_WINTER2023_5: StickerMetadataWinter20235;
+	STICKER_WINTER2023_6: StickerMetadataWinter20236;
+	STICKER_WINTER2025_1: StickerMetadataWinter20251;
+	STICKER_WINTER2025_2: StickerMetadataWinter20252;
+	STICKER_WINTER2025_3: StickerMetadataWinter20253;
+	STICKER_WINTER2025_4: StickerMetadataWinter20254;
 	STICKER_WOOPERCD2023_1: StickerMetadataWoopercd20231;
 	STICKER_WOOPERCD2023_2: StickerMetadataWoopercd20232;
 	STICKER_WOOPERCD2023_3: StickerMetadataWoopercd20233;

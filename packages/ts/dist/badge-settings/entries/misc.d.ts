@@ -363,16 +363,6 @@ export type BadgeSettingsPokestopsVisited = S<
 		}
 	>
 >;
-export type BadgeSettingsRaidsWithFriends = S<
-	BadgeSettings<
-		"BADGE_RAIDS_WITH_FRIENDS",
-		{
-			badgeRank: 5;
-			badgeType: "BADGE_RAIDS_WITH_FRIENDS";
-			targets: [10, 100, 1000, 2000];
-		}
-	>
->;
 export type BadgeSettingsRaidBattleStat = S<
 	BadgeSettings<
 		"BADGE_RAID_BATTLE_STAT",
@@ -389,6 +379,16 @@ export type BadgeSettingsRaidBattleWon = S<
 		{
 			badgeRank: 5;
 			badgeType: "BADGE_RAID_BATTLE_WON";
+			targets: [10, 100, 1000, 2000];
+		}
+	>
+>;
+export type BadgeSettingsRaidsWithFriends = S<
+	BadgeSettings<
+		"BADGE_RAIDS_WITH_FRIENDS",
+		{
+			badgeRank: 5;
+			badgeType: "BADGE_RAIDS_WITH_FRIENDS";
 			targets: [10, 100, 1000, 2000];
 		}
 	>
@@ -705,9 +705,9 @@ export type BadgeSettingsMiscMasterfileEntry =
 	| BadgeSettingsPokemonCaughtAtYourLures
 	| BadgeSettingsPokemonPurified
 	| BadgeSettingsPokestopsVisited
-	| BadgeSettingsRaidsWithFriends
 	| BadgeSettingsRaidBattleStat
 	| BadgeSettingsRaidBattleWon
+	| BadgeSettingsRaidsWithFriends
 	| BadgeSettingsRocketGiovanniDefeated
 	| BadgeSettingsRocketGruntsDefeated
 	| BadgeSettingsSmallRattata

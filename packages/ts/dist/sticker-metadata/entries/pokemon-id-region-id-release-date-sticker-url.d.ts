@@ -411,6 +411,18 @@ export type StickerMetadataGotour2022Totodile = S<
 		}
 	>
 >;
+export type StickerMetadataHalloweenSableyemd = S<
+	StickerMetadata<
+		"STICKER_HALLOWEEN_SABLEYEMD",
+		{
+			category: ["Pokemon"];
+			pokemonId: "SABLEYE";
+			regionId: 2;
+			releaseDate: 20201027;
+			stickerUrl: "https://storage.googleapis.com/prod-public-images/Stickers/sticker_Halloween_SableyeMD.png";
+		}
+	>
+>;
 export type StickerMetadataHalloween21Fuwaraid = S<
 	StickerMetadata<
 		"STICKER_HALLOWEEN21_FUWARAID",
@@ -432,18 +444,6 @@ export type StickerMetadataHalloween21Pochama = S<
 			regionId: 3;
 			releaseDate: 20211015;
 			stickerUrl: "https://prodholoholo-public-images.nianticlabs.com/Stickers/sticker_halloween21_pochama.png";
-		}
-	>
->;
-export type StickerMetadataHalloweenSableyemd = S<
-	StickerMetadata<
-		"STICKER_HALLOWEEN_SABLEYEMD",
-		{
-			category: ["Pokemon"];
-			pokemonId: "SABLEYE";
-			regionId: 2;
-			releaseDate: 20201027;
-			stickerUrl: "https://storage.googleapis.com/prod-public-images/Stickers/sticker_Halloween_SableyeMD.png";
 		}
 	>
 >;
@@ -615,6 +615,18 @@ export type StickerMetadataNyarth38 = S<
 		}
 	>
 >;
+export type StickerMetadataPgoFestVictini05 = S<
+	StickerMetadata<
+		"STICKER_PGO_FEST_VICTINI_05",
+		{
+			category: ["Pokemon"];
+			pokemonId: "VICTINI";
+			regionId: 4;
+			releaseDate: 20200625;
+			stickerUrl: "https://storage.googleapis.com/prod-public-images/sticker_pgo_fest_victini_05.png";
+		}
+	>
+>;
 export type StickerMetadataPgofest2021Galarianzigzagoon = S<
 	StickerMetadata<
 		"STICKER_PGOFEST2021_GALARIANZIGZAGOON",
@@ -660,18 +672,6 @@ export type StickerMetadataPgofest2021Ponyta = S<
 			regionId: 7;
 			releaseDate: 20210727;
 			stickerUrl: "https://prodholoholo-public-images.nianticlabs.com/Stickers/sticker_pgoFest2021_ponyta.png";
-		}
-	>
->;
-export type StickerMetadataPgoFestVictini05 = S<
-	StickerMetadata<
-		"STICKER_PGO_FEST_VICTINI_05",
-		{
-			category: ["Pokemon"];
-			pokemonId: "VICTINI";
-			regionId: 4;
-			releaseDate: 20200625;
-			stickerUrl: "https://storage.googleapis.com/prod-public-images/sticker_pgo_fest_victini_05.png";
 		}
 	>
 >;
@@ -1023,9 +1023,9 @@ export type StickerMetadataPokemonIdRegionIdReleaseDateStickerUrlMasterfileEntry
 	| StickerMetadataGotour2022Lugia
 	| StickerMetadataGotour2022Togepi
 	| StickerMetadataGotour2022Totodile
+	| StickerMetadataHalloweenSableyemd
 	| StickerMetadataHalloween21Fuwaraid
 	| StickerMetadataHalloween21Pochama
-	| StickerMetadataHalloweenSableyemd
 	| StickerMetadataHolidayevent212
 	| StickerMetadataHolidayevent213
 	| StickerMetadataHolidayevent214
@@ -1040,11 +1040,11 @@ export type StickerMetadataPokemonIdRegionIdReleaseDateStickerUrlMasterfileEntry
 	| StickerMetadataNewpokemon20
 	| StickerMetadataNewyears222
 	| StickerMetadataNyarth38
+	| StickerMetadataPgoFestVictini05
 	| StickerMetadataPgofest2021Galarianzigzagoon
 	| StickerMetadataPgofest2021Meloetta1
 	| StickerMetadataPgofest2021Meloetta2
 	| StickerMetadataPgofest2021Ponyta
-	| StickerMetadataPgoFestVictini05
 	| StickerMetadataPikaairadventure3
 	| StickerMetadataProjectguitar04
 	| StickerMetadataProjectguitar13

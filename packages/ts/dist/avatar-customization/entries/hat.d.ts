@@ -2360,6 +2360,23 @@ export type AvatarCustomizationFHatTophat0 = S<
 		}
 	>
 >;
+export type AvatarCustomizationFHatUltra0 = S<
+	AvatarCustomization<
+		"AVATAR_f_hat_ultra_0",
+		{
+			assetName: "f_hat_ultra_0";
+			avatarType: "PLAYER_AVATAR_FEMALE";
+			bundleName: "f_hat_ultra_bundle";
+			enabled: true;
+			groupName: "group_hat";
+			iconName: "f_hat_ultra_bundle_icon";
+			setNames: ["ultra_0"];
+			slot: ["HAT"];
+			sortOrder: 100575;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
 export type AvatarCustomizationFHatUltrareconsquad = S<
 	AvatarCustomization<
 		"AVATAR_f_hat_ultraReconSquad",
@@ -2393,23 +2410,6 @@ export type AvatarCustomizationFHatUltrareconsquadb = S<
 			slot: ["HAT"];
 			sortOrder: 101249;
 			unlockType: "IAP_CLOTHING";
-		}
-	>
->;
-export type AvatarCustomizationFHatUltra0 = S<
-	AvatarCustomization<
-		"AVATAR_f_hat_ultra_0",
-		{
-			assetName: "f_hat_ultra_0";
-			avatarType: "PLAYER_AVATAR_FEMALE";
-			bundleName: "f_hat_ultra_bundle";
-			enabled: true;
-			groupName: "group_hat";
-			iconName: "f_hat_ultra_bundle_icon";
-			setNames: ["ultra_0"];
-			slot: ["HAT"];
-			sortOrder: 100575;
-			unlockType: "DEFAULT";
 		}
 	>
 >;
@@ -4714,6 +4714,22 @@ export type AvatarCustomizationMHatTophat0 = S<
 		}
 	>
 >;
+export type AvatarCustomizationMHatUltra0 = S<
+	AvatarCustomization<
+		"AVATAR_m_hat_ultra_0",
+		{
+			assetName: "m_hat_ultra_0";
+			bundleName: "m_hat_ultra_bundle";
+			enabled: true;
+			groupName: "group_hat";
+			iconName: "m_hat_ultra_bundle_icon";
+			setNames: ["ultra_0"];
+			slot: ["HAT"];
+			sortOrder: 100223;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
 export type AvatarCustomizationMHatUltrareconsquad = S<
 	AvatarCustomization<
 		"AVATAR_m_hat_ultraReconSquad",
@@ -4745,22 +4761,6 @@ export type AvatarCustomizationMHatUltrareconsquadb = S<
 			slot: ["HAT"];
 			sortOrder: 101246;
 			unlockType: "IAP_CLOTHING";
-		}
-	>
->;
-export type AvatarCustomizationMHatUltra0 = S<
-	AvatarCustomization<
-		"AVATAR_m_hat_ultra_0",
-		{
-			assetName: "m_hat_ultra_0";
-			bundleName: "m_hat_ultra_bundle";
-			enabled: true;
-			groupName: "group_hat";
-			iconName: "m_hat_ultra_bundle_icon";
-			setNames: ["ultra_0"];
-			slot: ["HAT"];
-			sortOrder: 100223;
-			unlockType: "DEFAULT";
 		}
 	>
 >;
@@ -5015,9 +5015,9 @@ export type AvatarCustomizationHatMasterfileEntry =
 	| AvatarCustomizationFHatTeamrocketcap
 	| AvatarCustomizationFHatTeamskull
 	| AvatarCustomizationFHatTophat0
+	| AvatarCustomizationFHatUltra0
 	| AvatarCustomizationFHatUltrareconsquad
 	| AvatarCustomizationFHatUltrareconsquadb
-	| AvatarCustomizationFHatUltra0
 	| AvatarCustomizationFHatWcs2022winnersitems
 	| AvatarCustomizationFHatWhimsicottearmuff
 	| AvatarCustomizationFHatWillowglasses
@@ -5158,9 +5158,9 @@ export type AvatarCustomizationHatMasterfileEntry =
 	| AvatarCustomizationMHatTeamrocketcap
 	| AvatarCustomizationMHatTeamskull
 	| AvatarCustomizationMHatTophat0
+	| AvatarCustomizationMHatUltra0
 	| AvatarCustomizationMHatUltrareconsquad
 	| AvatarCustomizationMHatUltrareconsquadb
-	| AvatarCustomizationMHatUltra0
 	| AvatarCustomizationMHatWcs2022winnersitems
 	| AvatarCustomizationMHatWhimsicottearmuff
 	| AvatarCustomizationMHatWillowglasses

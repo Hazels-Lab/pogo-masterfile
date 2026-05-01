@@ -68,8 +68,8 @@ export interface LimitedPurchaseSkuSettingsLookup {
 	"LPSKU_bundle.webstore_thanksgiving.2": LimitedPurchaseSkuSettingsBundleWebstoreThanksgiving2;
 	"LPSKU_bundle.webstore_thanksgiving.3": LimitedPurchaseSkuSettingsBundleWebstoreThanksgiving3;
 	"LPSKU_bundle.welcomebox.1": LimitedPurchaseSkuSettingsBundleWelcomebox1;
-	"LPSKU_incense.general2.medium.1": LimitedPurchaseSkuSettingsIncenseGeneral2Medium1;
 	"LPSKU_incense_bundle.general2.small.1": LimitedPurchaseSkuSettingsIncenseBundleGeneral2Small1;
+	"LPSKU_incense.general2.medium.1": LimitedPurchaseSkuSettingsIncenseGeneral2Medium1;
 	"LPSKU_remotepass.bundle.general3.small.1": LimitedPurchaseSkuSettingsRemotepassBundleGeneral3Small1;
 	"LPSKU_weekly_balls.general2.medium.1": LimitedPurchaseSkuSettingsWeeklyBallsGeneral2Medium1;
 }

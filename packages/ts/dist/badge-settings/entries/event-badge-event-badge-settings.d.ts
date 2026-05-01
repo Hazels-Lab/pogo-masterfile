@@ -745,6 +745,34 @@ export type BadgeSettingsEvent0280 = S<
 		}
 	>
 >;
+export type BadgeSettingsGoTour2026DeluxePass = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_DELUXE_PASS",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_DELUXE_PASS";
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGoTour2026GlobalSecret01 = S<
+	BadgeSettings<
+		"BADGE_GO_TOUR_2026_GLOBAL_SECRET_01",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_GLOBAL_SECRET_01";
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
 export type BadgeSettingsGofest2025EventPassDeluxe = S<
 	BadgeSettings<
 		"BADGE_GOFEST_2025_EVENT_PASS_DELUXE",
@@ -941,34 +969,6 @@ export type BadgeSettingsGofest2026EventPassDeluxe = S<
 		}
 	>
 >;
-export type BadgeSettingsGoTour2026DeluxePass = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_DELUXE_PASS",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_DELUXE_PASS";
-			eventBadge: true;
-			eventBadgeSettings: {
-				obEventBadgeSettingsNumber6: 1;
-			};
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsGoTour2026GlobalSecret01 = S<
-	BadgeSettings<
-		"BADGE_GO_TOUR_2026_GLOBAL_SECRET_01",
-		{
-			badgeRank: 2;
-			badgeType: "BADGE_GO_TOUR_2026_GLOBAL_SECRET_01";
-			eventBadge: true;
-			eventBadgeSettings: {
-				obEventBadgeSettingsNumber6: 1;
-			};
-			targets: [100];
-		}
-	>
->;
 export type BadgeSettingsQuestDialogueInboxControl = S<
 	BadgeSettings<
 		"BADGE_QUEST_DIALOGUE_INBOX_CONTROL",
@@ -1066,6 +1066,8 @@ export type BadgeSettingsEventBadgeEventBadgeSettingsMasterfileEntry =
 	| BadgeSettingsEvent0200
 	| BadgeSettingsEvent0279
 	| BadgeSettingsEvent0280
+	| BadgeSettingsGoTour2026DeluxePass
+	| BadgeSettingsGoTour2026GlobalSecret01
 	| BadgeSettingsGofest2025EventPassDeluxe
 	| BadgeSettingsGofest2025JerseycityFridayEssential
 	| BadgeSettingsGofest2025JerseycitySaturdayEssential
@@ -1080,8 +1082,6 @@ export type BadgeSettingsEventBadgeEventBadgeSettingsMasterfileEntry =
 	| BadgeSettingsGofest2025ParisSundayEssential
 	| BadgeSettingsGofest2025ParisThursdayEssential
 	| BadgeSettingsGofest2026EventPassDeluxe
-	| BadgeSettingsGoTour2026DeluxePass
-	| BadgeSettingsGoTour2026GlobalSecret01
 	| BadgeSettingsQuestDialogueInboxControl
 	| BadgeSettingsQuestDialogueInboxRollout
 	| BadgeSettingsWeeklyChallengeEligible;

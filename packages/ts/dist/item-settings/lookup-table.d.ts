@@ -142,8 +142,8 @@ import type {
 	ItemSettingsItemWildBallPremier,
 	ItemSettingsItemXAttack,
 	ItemSettingsItemXDefense,
-	ItemSettingsItemXMiracle,
 	ItemSettingsItemXlRareCandy,
+	ItemSettingsItemXMiracle,
 } from "./entries";
 
 export interface ItemSettingsLookup {
@@ -247,8 +247,8 @@ export interface ItemSettingsLookup {
 	ITEM_PAID_RAID_TICKET: ItemSettingsItemPaidRaidTicket;
 	ITEM_PINAP_BERRY: ItemSettingsItemPinapBerry;
 	ITEM_POFFIN: ItemSettingsItemPoffin;
-	ITEM_POKEMON_STORAGE_UPGRADE: ItemSettingsItemPokemonStorageUpgrade;
 	ITEM_POKE_BALL: ItemSettingsItemPokeBall;
+	ITEM_POKEMON_STORAGE_UPGRADE: ItemSettingsItemPokemonStorageUpgrade;
 	ITEM_POSTCARD_INVENTORY: ItemSettingsItemPostcardInventory;
 	ITEM_POSTCARD_STORAGE_UPGRADE: ItemSettingsItemPostcardStorageUpgrade;
 	ITEM_POTION: ItemSettingsItemPotion;
@@ -286,8 +286,8 @@ export interface ItemSettingsLookup {
 	ITEM_WEPAR_BERRY: ItemSettingsItemWeparBerry;
 	ITEM_WILD_BALL: ItemSettingsItemWildBall;
 	ITEM_WILD_BALL_PREMIER: ItemSettingsItemWildBallPremier;
-	ITEM_XL_RARE_CANDY: ItemSettingsItemXlRareCandy;
 	ITEM_X_ATTACK: ItemSettingsItemXAttack;
 	ITEM_X_DEFENSE: ItemSettingsItemXDefense;
 	ITEM_X_MIRACLE: ItemSettingsItemXMiracle;
+	ITEM_XL_RARE_CANDY: ItemSettingsItemXlRareCandy;
 }

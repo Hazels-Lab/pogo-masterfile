@@ -2323,22 +2323,6 @@ export type AvatarItemDisplaySetSvcostumevioletschoolM = S<
 		}
 	>
 >;
-export type AvatarItemDisplaySetSvdlc2fall0 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_set_svdlc2fall_0",
-		{
-			iconAddress: "set_svdlc2fall_b";
-		}
-	>
->;
-export type AvatarItemDisplaySetSvdlc2spring0 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_set_svdlc2spring_0",
-		{
-			iconAddress: "set_svdlc2spring_a";
-		}
-	>
->;
 export type AvatarItemDisplaySetSvdlcF = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_set_svdlc_f",
@@ -2352,6 +2336,22 @@ export type AvatarItemDisplaySetSvdlcM = S<
 		"N_DISPLAY_set_svdlc_m",
 		{
 			iconAddress: "set_svdlc_b";
+		}
+	>
+>;
+export type AvatarItemDisplaySetSvdlc2fall0 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_set_svdlc2fall_0",
+		{
+			iconAddress: "set_svdlc2fall_b";
+		}
+	>
+>;
+export type AvatarItemDisplaySetSvdlc2spring0 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_set_svdlc2spring_0",
+		{
+			iconAddress: "set_svdlc2spring_a";
 		}
 	>
 >;
@@ -3047,10 +3047,10 @@ export type AvatarItemDisplayMiscMasterfileEntry =
 	| AvatarItemDisplaySetSvcostumescarletschoolM
 	| AvatarItemDisplaySetSvcostumevioletschoolF
 	| AvatarItemDisplaySetSvcostumevioletschoolM
-	| AvatarItemDisplaySetSvdlc2fall0
-	| AvatarItemDisplaySetSvdlc2spring0
 	| AvatarItemDisplaySetSvdlcF
 	| AvatarItemDisplaySetSvdlcM
+	| AvatarItemDisplaySetSvdlc2fall0
+	| AvatarItemDisplaySetSvdlc2spring0
 	| AvatarItemDisplaySetSwshdlc2costumeF
 	| AvatarItemDisplaySetSwshdlc2costumeM
 	| AvatarItemDisplaySetSwshdlccostumeF

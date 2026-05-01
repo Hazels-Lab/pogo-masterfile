@@ -165,15 +165,6 @@ export type AvatarItemDisplayNPantsClay0 = S<
 		}
 	>
 >;
-export type AvatarItemDisplayNPantsDefaultNew0 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_pants_default-new_0",
-		{
-			displayStringId: "n_pants_default-new_0_display_name";
-			iconAddress: "n_pants_defaultnew_0_icon";
-		}
-	>
->;
 export type AvatarItemDisplayNPantsDefaultA0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_pants_default_a_0",
@@ -234,6 +225,15 @@ export type AvatarItemDisplayNPantsDefaultB0 = S<
 		{
 			displayStringId: "n_pants_default_b_0_display_name";
 			iconAddress: "n_pants_default_b_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNPantsDefaultNew0 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_pants_default-new_0",
+		{
+			displayStringId: "n_pants_default-new_0_display_name";
+			iconAddress: "n_pants_defaultnew_0_icon";
 		}
 	>
 >;
@@ -651,33 +651,6 @@ export type AvatarItemDisplayNPantsMewtwoB0 = S<
 		}
 	>
 >;
-export type AvatarItemDisplayNPantsMiniskirtWave0 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_pants_miniskirt-wave_0",
-		{
-			displayStringId: "n_pants_miniskirt-wave_2_display_name";
-			iconAddress: "n_pants_miniskirt-wave_0_icon";
-		}
-	>
->;
-export type AvatarItemDisplayNPantsMiniskirtWave1 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_pants_miniskirt-wave_1",
-		{
-			displayStringId: "n_pants_miniskirt-wave_2_display_name";
-			iconAddress: "n_pants_miniskirt-wave_1_icon";
-		}
-	>
->;
-export type AvatarItemDisplayNPantsMiniskirtWave2 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_pants_miniskirt-wave_2",
-		{
-			displayStringId: "n_pants_miniskirt-wave_2_display_name";
-			iconAddress: "n_pants_miniskirt-wave_2_icon";
-		}
-	>
->;
 export type AvatarItemDisplayNPantsMiniskirt0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_pants_miniskirt_0",
@@ -711,6 +684,33 @@ export type AvatarItemDisplayNPantsMiniskirt3 = S<
 		{
 			displayStringId: "n_pants_miniskirt_3_display_name";
 			iconAddress: "n_pants_miniskirt_3_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNPantsMiniskirtWave0 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_pants_miniskirt-wave_0",
+		{
+			displayStringId: "n_pants_miniskirt-wave_2_display_name";
+			iconAddress: "n_pants_miniskirt-wave_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNPantsMiniskirtWave1 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_pants_miniskirt-wave_1",
+		{
+			displayStringId: "n_pants_miniskirt-wave_2_display_name";
+			iconAddress: "n_pants_miniskirt-wave_1_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNPantsMiniskirtWave2 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_pants_miniskirt-wave_2",
+		{
+			displayStringId: "n_pants_miniskirt-wave_2_display_name";
+			iconAddress: "n_pants_miniskirt-wave_2_icon";
 		}
 	>
 >;
@@ -1418,7 +1418,6 @@ export type AvatarItemDisplayDisplayStringIdPantsMasterfileEntry =
 	| AvatarItemDisplayNPantsCasualB0
 	| AvatarItemDisplayNPantsCasualB1
 	| AvatarItemDisplayNPantsClay0
-	| AvatarItemDisplayNPantsDefaultNew0
 	| AvatarItemDisplayNPantsDefaultA0
 	| AvatarItemDisplayNPantsDefaultA1
 	| AvatarItemDisplayNPantsDefaultA2
@@ -1426,6 +1425,7 @@ export type AvatarItemDisplayDisplayStringIdPantsMasterfileEntry =
 	| AvatarItemDisplayNPantsDefaultA4
 	| AvatarItemDisplayNPantsDefaultA5
 	| AvatarItemDisplayNPantsDefaultB0
+	| AvatarItemDisplayNPantsDefaultNew0
 	| AvatarItemDisplayNPantsDenimfashionweek20230
 	| AvatarItemDisplayNPantsDpA0
 	| AvatarItemDisplayNPantsDpB0
@@ -1472,13 +1472,13 @@ export type AvatarItemDisplayDisplayStringIdPantsMasterfileEntry =
 	| AvatarItemDisplayNPantsLysandre0
 	| AvatarItemDisplayNPantsMewtwoA0
 	| AvatarItemDisplayNPantsMewtwoB0
-	| AvatarItemDisplayNPantsMiniskirtWave0
-	| AvatarItemDisplayNPantsMiniskirtWave1
-	| AvatarItemDisplayNPantsMiniskirtWave2
 	| AvatarItemDisplayNPantsMiniskirt0
 	| AvatarItemDisplayNPantsMiniskirt1
 	| AvatarItemDisplayNPantsMiniskirt2
 	| AvatarItemDisplayNPantsMiniskirt3
+	| AvatarItemDisplayNPantsMiniskirtWave0
+	| AvatarItemDisplayNPantsMiniskirtWave1
+	| AvatarItemDisplayNPantsMiniskirtWave2
 	| AvatarItemDisplayNPantsMisty0
 	| AvatarItemDisplayNPantsMunnapack0
 	| AvatarItemDisplayNPantsMustard0

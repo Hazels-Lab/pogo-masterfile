@@ -3,90 +3,6 @@
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
 
-export type IapItemDisplayBundleEliteexp20241 = S<
-	IapItemDisplay<
-		"bundle.EliteExp2024.1",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sale: true;
-			sku: "bundle.EliteExp2024.1";
-			sortOrder: 6;
-			spriteId: "bundle.general5.small.1";
-			title: "bundle.general2.large.1_title";
-		}
-	>
->;
-export type IapItemDisplayBundleEliteexp20242 = S<
-	IapItemDisplay<
-		"bundle.EliteExp2024.2",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sale: true;
-			sku: "bundle.EliteExp2024.2";
-			sortOrder: 6;
-			spriteId: "bundle.general5.small.1";
-			title: "bundle.general2.large.1_title";
-		}
-	>
->;
-export type IapItemDisplayBundleEliteexp20243 = S<
-	IapItemDisplay<
-		"bundle.EliteExp2024.3",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sale: true;
-			sku: "bundle.EliteExp2024.3";
-			sortOrder: 6;
-			spriteId: "bundle.general5.small.1";
-			title: "bundle.general2.large.1_title";
-		}
-	>
->;
-export type IapItemDisplayBundleEliteexp20244 = S<
-	IapItemDisplay<
-		"bundle.EliteExp2024.4",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sale: true;
-			sku: "bundle.EliteExp2024.4";
-			sortOrder: 6;
-			spriteId: "bundle.general5.small.1";
-			title: "bundle.general2.large.1_title";
-		}
-	>
->;
-export type IapItemDisplayBundleEliteexp20245 = S<
-	IapItemDisplay<
-		"bundle.EliteExp2024.5",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sale: true;
-			sku: "bundle.EliteExp2024.5";
-			sortOrder: 6;
-			spriteId: "bundle.general5.small.1";
-			title: "bundle.general2.large.1_title";
-		}
-	>
->;
-export type IapItemDisplayBundleGotour20246 = S<
-	IapItemDisplay<
-		"bundle.GOTour2024.6",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sale: true;
-			sku: "bundle.GOTour2024.6";
-			sortOrder: 6;
-			spriteId: "bundle.general.premiumbox.large.1";
-			title: "ultra_raid_box_title";
-		}
-	>
->;
 export type IapItemDisplayBundleAnniversary20231 = S<
 	IapItemDisplay<
 		"bundle.anniversary2023.1",
@@ -210,6 +126,76 @@ export type IapItemDisplayBundleCdrecapstickers1 = S<
 			sortOrder: 1;
 			spriteId: "bundle.general.adventure.1";
 			title: "sticker_box";
+		}
+	>
+>;
+export type IapItemDisplayBundleEliteexp20241 = S<
+	IapItemDisplay<
+		"bundle.EliteExp2024.1",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			sale: true;
+			sku: "bundle.EliteExp2024.1";
+			sortOrder: 6;
+			spriteId: "bundle.general5.small.1";
+			title: "bundle.general2.large.1_title";
+		}
+	>
+>;
+export type IapItemDisplayBundleEliteexp20242 = S<
+	IapItemDisplay<
+		"bundle.EliteExp2024.2",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			sale: true;
+			sku: "bundle.EliteExp2024.2";
+			sortOrder: 6;
+			spriteId: "bundle.general5.small.1";
+			title: "bundle.general2.large.1_title";
+		}
+	>
+>;
+export type IapItemDisplayBundleEliteexp20243 = S<
+	IapItemDisplay<
+		"bundle.EliteExp2024.3",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			sale: true;
+			sku: "bundle.EliteExp2024.3";
+			sortOrder: 6;
+			spriteId: "bundle.general5.small.1";
+			title: "bundle.general2.large.1_title";
+		}
+	>
+>;
+export type IapItemDisplayBundleEliteexp20244 = S<
+	IapItemDisplay<
+		"bundle.EliteExp2024.4",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			sale: true;
+			sku: "bundle.EliteExp2024.4";
+			sortOrder: 6;
+			spriteId: "bundle.general5.small.1";
+			title: "bundle.general2.large.1_title";
+		}
+	>
+>;
+export type IapItemDisplayBundleEliteexp20245 = S<
+	IapItemDisplay<
+		"bundle.EliteExp2024.5",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			sale: true;
+			sku: "bundle.EliteExp2024.5";
+			sortOrder: 6;
+			spriteId: "bundle.general5.small.1";
+			title: "bundle.general2.large.1_title";
 		}
 	>
 >;
@@ -616,6 +602,20 @@ export type IapItemDisplayBundleGofest20235 = S<
 			sortOrder: 8;
 			spriteId: "bundle.general.adventure.1";
 			title: "sticker_box";
+		}
+	>
+>;
+export type IapItemDisplayBundleGotour20246 = S<
+	IapItemDisplay<
+		"bundle.GOTour2024.6",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			sale: true;
+			sku: "bundle.GOTour2024.6";
+			sortOrder: 6;
+			spriteId: "bundle.general.premiumbox.large.1";
+			title: "ultra_raid_box_title";
 		}
 	>
 >;
@@ -2203,12 +2203,6 @@ export type IapItemDisplayPgoreleaseBundleWalkeratlantic20222 = S<
 >;
 
 export type IapItemDisplayCategoryHiddenSaleSortOrderSpriteIdTitleMasterfileEntry =
-	| IapItemDisplayBundleEliteexp20241
-	| IapItemDisplayBundleEliteexp20242
-	| IapItemDisplayBundleEliteexp20243
-	| IapItemDisplayBundleEliteexp20244
-	| IapItemDisplayBundleEliteexp20245
-	| IapItemDisplayBundleGotour20246
 	| IapItemDisplayBundleAnniversary20231
 	| IapItemDisplayBundleAtlanticav2box2
 	| IapItemDisplayBundleBlackfridaystickers241
@@ -2218,6 +2212,11 @@ export type IapItemDisplayCategoryHiddenSaleSortOrderSpriteIdTitleMasterfileEntr
 	| IapItemDisplayBundleCd20221
 	| IapItemDisplayBundleCd20222
 	| IapItemDisplayBundleCdrecapstickers1
+	| IapItemDisplayBundleEliteexp20241
+	| IapItemDisplayBundleEliteexp20242
+	| IapItemDisplayBundleEliteexp20243
+	| IapItemDisplayBundleEliteexp20244
+	| IapItemDisplayBundleEliteexp20245
 	| IapItemDisplayBundleEmea20231
 	| IapItemDisplayBundleEvolve20221
 	| IapItemDisplayBundleEvolve20222
@@ -2247,6 +2246,7 @@ export type IapItemDisplayCategoryHiddenSaleSortOrderSpriteIdTitleMasterfileEntr
 	| IapItemDisplayBundleGofest20233
 	| IapItemDisplayBundleGofest20234
 	| IapItemDisplayBundleGofest20235
+	| IapItemDisplayBundleGotour20246
 	| IapItemDisplayBundleGpdindialaunch1
 	| IapItemDisplayBundleGpmay20231
 	| IapItemDisplayBundleHalloweenAdventure1

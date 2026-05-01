@@ -1269,6 +1269,54 @@ export type AvatarCustomizationFShirtGladion = S<
 		}
 	>
 >;
+export type AvatarCustomizationFShirtGofest2019 = S<
+	AvatarCustomization<
+		"AVATAR_f_shirt_gofest_2019",
+		{
+			assetName: "f_shirt_gofest_2019";
+			avatarType: "PLAYER_AVATAR_FEMALE";
+			bundleName: "f_shirt_gofest_2019_bundle";
+			enabled: true;
+			groupName: "group_shirt";
+			iconName: "f_shirt_gofest_2019_bundle_icon";
+			slot: ["SHIRT"];
+			sortOrder: 100478;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
+export type AvatarCustomizationFShirtGofest2020 = S<
+	AvatarCustomization<
+		"AVATAR_f_shirt_gofest_2020",
+		{
+			assetName: "f_shirt_gofest_2020_0";
+			avatarType: "PLAYER_AVATAR_FEMALE";
+			bundleName: "f_shirt_gofest_2020_bundle";
+			enabled: true;
+			groupName: "group_shirt";
+			iconName: "f_shirt_gofest_2020_0_bundle_icon";
+			slot: ["SHIRT"];
+			sortOrder: 100746;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
+export type AvatarCustomizationFShirtGofest2021 = S<
+	AvatarCustomization<
+		"AVATAR_f_shirt_gofest_2021",
+		{
+			assetName: "f_shirt_gofest_2021_0";
+			avatarType: "PLAYER_AVATAR_FEMALE";
+			bundleName: "f_shirt_gofest_2021_bundle";
+			enabled: true;
+			groupName: "group_shirt";
+			iconName: "f_shirt_gofest_2021_0_bundle_icon";
+			slot: ["SHIRT"];
+			sortOrder: 100927;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
 export type AvatarCustomizationFShirtGofest2022 = S<
 	AvatarCustomization<
 		"AVATAR_f_shirt_gofest2022",
@@ -1350,54 +1398,6 @@ export type AvatarCustomizationFShirtGofest2024purple = S<
 			slot: ["SHIRT"];
 			sortOrder: 101606;
 			unlockType: "IAP_CLOTHING";
-		}
-	>
->;
-export type AvatarCustomizationFShirtGofest2019 = S<
-	AvatarCustomization<
-		"AVATAR_f_shirt_gofest_2019",
-		{
-			assetName: "f_shirt_gofest_2019";
-			avatarType: "PLAYER_AVATAR_FEMALE";
-			bundleName: "f_shirt_gofest_2019_bundle";
-			enabled: true;
-			groupName: "group_shirt";
-			iconName: "f_shirt_gofest_2019_bundle_icon";
-			slot: ["SHIRT"];
-			sortOrder: 100478;
-			unlockType: "DEFAULT";
-		}
-	>
->;
-export type AvatarCustomizationFShirtGofest2020 = S<
-	AvatarCustomization<
-		"AVATAR_f_shirt_gofest_2020",
-		{
-			assetName: "f_shirt_gofest_2020_0";
-			avatarType: "PLAYER_AVATAR_FEMALE";
-			bundleName: "f_shirt_gofest_2020_bundle";
-			enabled: true;
-			groupName: "group_shirt";
-			iconName: "f_shirt_gofest_2020_0_bundle_icon";
-			slot: ["SHIRT"];
-			sortOrder: 100746;
-			unlockType: "DEFAULT";
-		}
-	>
->;
-export type AvatarCustomizationFShirtGofest2021 = S<
-	AvatarCustomization<
-		"AVATAR_f_shirt_gofest_2021",
-		{
-			assetName: "f_shirt_gofest_2021_0";
-			avatarType: "PLAYER_AVATAR_FEMALE";
-			bundleName: "f_shirt_gofest_2021_bundle";
-			enabled: true;
-			groupName: "group_shirt";
-			iconName: "f_shirt_gofest_2021_0_bundle_icon";
-			slot: ["SHIRT"];
-			sortOrder: 100927;
-			unlockType: "DEFAULT";
 		}
 	>
 >;
@@ -2647,57 +2647,6 @@ export type AvatarCustomizationFShirtPkmnhoodie007 = S<
 		}
 	>
 >;
-export type AvatarCustomizationFShirtPkmnshirts202100 = S<
-	AvatarCustomization<
-		"AVATAR_f_shirt_pkmnshirts2021_00",
-		{
-			assetName: "f_shirt_pkmnshirts2021_0";
-			avatarType: "PLAYER_AVATAR_FEMALE";
-			bundleName: "f_shirt_pkmnshirts2021_bundle";
-			enabled: true;
-			groupName: "group_shirt";
-			iapSku: "pgorelease.avatar.f_shirt_pkmnshirts2021_0";
-			iconName: "f_shirt_pkmnshirts2021_00_bundle_icon";
-			slot: ["SHIRT"];
-			sortOrder: 100968;
-			unlockType: "IAP_CLOTHING";
-		}
-	>
->;
-export type AvatarCustomizationFShirtPkmnshirts202101 = S<
-	AvatarCustomization<
-		"AVATAR_f_shirt_pkmnshirts2021_01",
-		{
-			assetName: "f_shirt_pkmnshirts2021_1";
-			avatarType: "PLAYER_AVATAR_FEMALE";
-			bundleName: "f_shirt_pkmnshirts2021_bundle";
-			enabled: true;
-			groupName: "group_shirt";
-			iapSku: "pgorelease.avatar.f_shirt_pkmnshirts2021_1";
-			iconName: "f_shirt_pkmnshirts2021_01_bundle_icon";
-			slot: ["SHIRT"];
-			sortOrder: 100969;
-			unlockType: "IAP_CLOTHING";
-		}
-	>
->;
-export type AvatarCustomizationFShirtPkmnshirts202102 = S<
-	AvatarCustomization<
-		"AVATAR_f_shirt_pkmnshirts2021_02",
-		{
-			assetName: "f_shirt_pkmnshirts2021_2";
-			avatarType: "PLAYER_AVATAR_FEMALE";
-			bundleName: "f_shirt_pkmnshirts2021_bundle";
-			enabled: true;
-			groupName: "group_shirt";
-			iapSku: "pgorelease.avatar.f_shirt_pkmnshirts2021_2";
-			iconName: "f_shirt_pkmnshirts2021_02_bundle_icon";
-			slot: ["SHIRT"];
-			sortOrder: 100970;
-			unlockType: "IAP_CLOTHING";
-		}
-	>
->;
 export type AvatarCustomizationFShirtPkmnshirts165 = S<
 	AvatarCustomization<
 		"AVATAR_f_shirt_pkmnshirts_165",
@@ -2762,6 +2711,57 @@ export type AvatarCustomizationFShirtPkmnshirts238 = S<
 			iconName: "f_shirt_pkmnshirts_238_bundle_icon";
 			slot: ["SHIRT"];
 			sortOrder: 100506;
+			unlockType: "IAP_CLOTHING";
+		}
+	>
+>;
+export type AvatarCustomizationFShirtPkmnshirts202100 = S<
+	AvatarCustomization<
+		"AVATAR_f_shirt_pkmnshirts2021_00",
+		{
+			assetName: "f_shirt_pkmnshirts2021_0";
+			avatarType: "PLAYER_AVATAR_FEMALE";
+			bundleName: "f_shirt_pkmnshirts2021_bundle";
+			enabled: true;
+			groupName: "group_shirt";
+			iapSku: "pgorelease.avatar.f_shirt_pkmnshirts2021_0";
+			iconName: "f_shirt_pkmnshirts2021_00_bundle_icon";
+			slot: ["SHIRT"];
+			sortOrder: 100968;
+			unlockType: "IAP_CLOTHING";
+		}
+	>
+>;
+export type AvatarCustomizationFShirtPkmnshirts202101 = S<
+	AvatarCustomization<
+		"AVATAR_f_shirt_pkmnshirts2021_01",
+		{
+			assetName: "f_shirt_pkmnshirts2021_1";
+			avatarType: "PLAYER_AVATAR_FEMALE";
+			bundleName: "f_shirt_pkmnshirts2021_bundle";
+			enabled: true;
+			groupName: "group_shirt";
+			iapSku: "pgorelease.avatar.f_shirt_pkmnshirts2021_1";
+			iconName: "f_shirt_pkmnshirts2021_01_bundle_icon";
+			slot: ["SHIRT"];
+			sortOrder: 100969;
+			unlockType: "IAP_CLOTHING";
+		}
+	>
+>;
+export type AvatarCustomizationFShirtPkmnshirts202102 = S<
+	AvatarCustomization<
+		"AVATAR_f_shirt_pkmnshirts2021_02",
+		{
+			assetName: "f_shirt_pkmnshirts2021_2";
+			avatarType: "PLAYER_AVATAR_FEMALE";
+			bundleName: "f_shirt_pkmnshirts2021_bundle";
+			enabled: true;
+			groupName: "group_shirt";
+			iapSku: "pgorelease.avatar.f_shirt_pkmnshirts2021_2";
+			iconName: "f_shirt_pkmnshirts2021_02_bundle_icon";
+			slot: ["SHIRT"];
+			sortOrder: 100970;
 			unlockType: "IAP_CLOTHING";
 		}
 	>
@@ -4236,6 +4236,23 @@ export type AvatarCustomizationFShirtTurtwigonesie = S<
 		}
 	>
 >;
+export type AvatarCustomizationFShirtUltra0 = S<
+	AvatarCustomization<
+		"AVATAR_f_shirt_ultra_0",
+		{
+			assetName: "f_shirt_ultra_0";
+			avatarType: "PLAYER_AVATAR_FEMALE";
+			bundleName: "f_shirt_ultra_bundle";
+			enabled: true;
+			groupName: "group_shirt";
+			iconName: "f_shirt_ultra_bundle_icon";
+			setNames: ["ultra_0"];
+			slot: ["SHIRT"];
+			sortOrder: 100414;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
 export type AvatarCustomizationFShirtUltrareconsquad = S<
 	AvatarCustomization<
 		"AVATAR_f_shirt_ultraReconSquad",
@@ -4251,23 +4268,6 @@ export type AvatarCustomizationFShirtUltrareconsquad = S<
 			slot: ["SHIRT"];
 			sortOrder: 101248;
 			unlockType: "IAP_CLOTHING";
-		}
-	>
->;
-export type AvatarCustomizationFShirtUltra0 = S<
-	AvatarCustomization<
-		"AVATAR_f_shirt_ultra_0",
-		{
-			assetName: "f_shirt_ultra_0";
-			avatarType: "PLAYER_AVATAR_FEMALE";
-			bundleName: "f_shirt_ultra_bundle";
-			enabled: true;
-			groupName: "group_shirt";
-			iconName: "f_shirt_ultra_bundle_icon";
-			setNames: ["ultra_0"];
-			slot: ["SHIRT"];
-			sortOrder: 100414;
-			unlockType: "DEFAULT";
 		}
 	>
 >;
@@ -5826,6 +5826,51 @@ export type AvatarCustomizationMShirtGladion = S<
 		}
 	>
 >;
+export type AvatarCustomizationMShirtGofest2019 = S<
+	AvatarCustomization<
+		"AVATAR_m_shirt_gofest_2019",
+		{
+			assetName: "m_shirt_gofest_2019";
+			bundleName: "m_shirt_gofest_2019_bundle";
+			enabled: true;
+			groupName: "group_shirt";
+			iconName: "m_shirt_gofest_2019_bundle_icon";
+			slot: ["SHIRT"];
+			sortOrder: 100135;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
+export type AvatarCustomizationMShirtGofest2020 = S<
+	AvatarCustomization<
+		"AVATAR_m_shirt_gofest_2020",
+		{
+			assetName: "m_shirt_gofest_2020_0";
+			bundleName: "m_shirt_gofest_2020_bundle";
+			enabled: true;
+			groupName: "group_shirt";
+			iconName: "m_shirt_gofest_2020_0_bundle_icon";
+			slot: ["SHIRT"];
+			sortOrder: 100745;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
+export type AvatarCustomizationMShirtGofest2021 = S<
+	AvatarCustomization<
+		"AVATAR_m_shirt_gofest_2021",
+		{
+			assetName: "m_shirt_gofest_2021_0";
+			bundleName: "m_shirt_gofest_2021_bundle";
+			enabled: true;
+			groupName: "group_shirt";
+			iconName: "m_shirt_gofest_2021_0_bundle_icon";
+			slot: ["SHIRT"];
+			sortOrder: 100926;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
 export type AvatarCustomizationMShirtGofest2022 = S<
 	AvatarCustomization<
 		"AVATAR_m_shirt_gofest2022",
@@ -5902,51 +5947,6 @@ export type AvatarCustomizationMShirtGofest2024purple = S<
 			slot: ["SHIRT"];
 			sortOrder: 101605;
 			unlockType: "IAP_CLOTHING";
-		}
-	>
->;
-export type AvatarCustomizationMShirtGofest2019 = S<
-	AvatarCustomization<
-		"AVATAR_m_shirt_gofest_2019",
-		{
-			assetName: "m_shirt_gofest_2019";
-			bundleName: "m_shirt_gofest_2019_bundle";
-			enabled: true;
-			groupName: "group_shirt";
-			iconName: "m_shirt_gofest_2019_bundle_icon";
-			slot: ["SHIRT"];
-			sortOrder: 100135;
-			unlockType: "DEFAULT";
-		}
-	>
->;
-export type AvatarCustomizationMShirtGofest2020 = S<
-	AvatarCustomization<
-		"AVATAR_m_shirt_gofest_2020",
-		{
-			assetName: "m_shirt_gofest_2020_0";
-			bundleName: "m_shirt_gofest_2020_bundle";
-			enabled: true;
-			groupName: "group_shirt";
-			iconName: "m_shirt_gofest_2020_0_bundle_icon";
-			slot: ["SHIRT"];
-			sortOrder: 100745;
-			unlockType: "DEFAULT";
-		}
-	>
->;
-export type AvatarCustomizationMShirtGofest2021 = S<
-	AvatarCustomization<
-		"AVATAR_m_shirt_gofest_2021",
-		{
-			assetName: "m_shirt_gofest_2021_0";
-			bundleName: "m_shirt_gofest_2021_bundle";
-			enabled: true;
-			groupName: "group_shirt";
-			iconName: "m_shirt_gofest_2021_0_bundle_icon";
-			slot: ["SHIRT"];
-			sortOrder: 100926;
-			unlockType: "DEFAULT";
 		}
 	>
 >;
@@ -7223,54 +7223,6 @@ export type AvatarCustomizationMShirtPkmnhoodie007 = S<
 		}
 	>
 >;
-export type AvatarCustomizationMShirtPkmnshirts202100 = S<
-	AvatarCustomization<
-		"AVATAR_m_shirt_pkmnshirts2021_00",
-		{
-			assetName: "m_shirt_pkmnshirts2021_0";
-			bundleName: "m_shirt_pkmnshirts2021_bundle";
-			enabled: true;
-			groupName: "group_shirt";
-			iapSku: "pgorelease.avatar.m_shirt_pkmnshirts2021_0";
-			iconName: "m_shirt_pkmnshirts2021_00_bundle_icon";
-			slot: ["SHIRT"];
-			sortOrder: 100965;
-			unlockType: "IAP_CLOTHING";
-		}
-	>
->;
-export type AvatarCustomizationMShirtPkmnshirts202101 = S<
-	AvatarCustomization<
-		"AVATAR_m_shirt_pkmnshirts2021_01",
-		{
-			assetName: "m_shirt_pkmnshirts2021_1";
-			bundleName: "m_shirt_pkmnshirts2021_bundle";
-			enabled: true;
-			groupName: "group_shirt";
-			iapSku: "pgorelease.avatar.m_shirt_pkmnshirts2021_1";
-			iconName: "m_shirt_pkmnshirts2021_01_bundle_icon";
-			slot: ["SHIRT"];
-			sortOrder: 100966;
-			unlockType: "IAP_CLOTHING";
-		}
-	>
->;
-export type AvatarCustomizationMShirtPkmnshirts202102 = S<
-	AvatarCustomization<
-		"AVATAR_m_shirt_pkmnshirts2021_02",
-		{
-			assetName: "m_shirt_pkmnshirts2021_2";
-			bundleName: "m_shirt_pkmnshirts2021_bundle";
-			enabled: true;
-			groupName: "group_shirt";
-			iapSku: "pgorelease.avatar.m_shirt_pkmnshirts2021_2";
-			iconName: "m_shirt_pkmnshirts2021_02_bundle_icon";
-			slot: ["SHIRT"];
-			sortOrder: 100967;
-			unlockType: "IAP_CLOTHING";
-		}
-	>
->;
 export type AvatarCustomizationMShirtPkmnshirts165 = S<
 	AvatarCustomization<
 		"AVATAR_m_shirt_pkmnshirts_165",
@@ -7331,6 +7283,54 @@ export type AvatarCustomizationMShirtPkmnshirts238 = S<
 			iconName: "m_shirt_pkmnshirts_238_bundle_icon";
 			slot: ["SHIRT"];
 			sortOrder: 100163;
+			unlockType: "IAP_CLOTHING";
+		}
+	>
+>;
+export type AvatarCustomizationMShirtPkmnshirts202100 = S<
+	AvatarCustomization<
+		"AVATAR_m_shirt_pkmnshirts2021_00",
+		{
+			assetName: "m_shirt_pkmnshirts2021_0";
+			bundleName: "m_shirt_pkmnshirts2021_bundle";
+			enabled: true;
+			groupName: "group_shirt";
+			iapSku: "pgorelease.avatar.m_shirt_pkmnshirts2021_0";
+			iconName: "m_shirt_pkmnshirts2021_00_bundle_icon";
+			slot: ["SHIRT"];
+			sortOrder: 100965;
+			unlockType: "IAP_CLOTHING";
+		}
+	>
+>;
+export type AvatarCustomizationMShirtPkmnshirts202101 = S<
+	AvatarCustomization<
+		"AVATAR_m_shirt_pkmnshirts2021_01",
+		{
+			assetName: "m_shirt_pkmnshirts2021_1";
+			bundleName: "m_shirt_pkmnshirts2021_bundle";
+			enabled: true;
+			groupName: "group_shirt";
+			iapSku: "pgorelease.avatar.m_shirt_pkmnshirts2021_1";
+			iconName: "m_shirt_pkmnshirts2021_01_bundle_icon";
+			slot: ["SHIRT"];
+			sortOrder: 100966;
+			unlockType: "IAP_CLOTHING";
+		}
+	>
+>;
+export type AvatarCustomizationMShirtPkmnshirts202102 = S<
+	AvatarCustomization<
+		"AVATAR_m_shirt_pkmnshirts2021_02",
+		{
+			assetName: "m_shirt_pkmnshirts2021_2";
+			bundleName: "m_shirt_pkmnshirts2021_bundle";
+			enabled: true;
+			groupName: "group_shirt";
+			iapSku: "pgorelease.avatar.m_shirt_pkmnshirts2021_2";
+			iconName: "m_shirt_pkmnshirts2021_02_bundle_icon";
+			slot: ["SHIRT"];
+			sortOrder: 100967;
 			unlockType: "IAP_CLOTHING";
 		}
 	>
@@ -8609,6 +8609,22 @@ export type AvatarCustomizationMShirtTurtwigonesie = S<
 		}
 	>
 >;
+export type AvatarCustomizationMShirtUltra0 = S<
+	AvatarCustomization<
+		"AVATAR_m_shirt_ultra_0",
+		{
+			assetName: "m_shirt_ultra_0";
+			bundleName: "m_shirt_ultra_bundle";
+			enabled: true;
+			groupName: "group_shirt";
+			iconName: "m_shirt_ultra_bundle_icon";
+			setNames: ["ultra_0"];
+			slot: ["SHIRT"];
+			sortOrder: 100071;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
 export type AvatarCustomizationMShirtUltrareconsquad = S<
 	AvatarCustomization<
 		"AVATAR_m_shirt_ultraReconSquad",
@@ -8623,22 +8639,6 @@ export type AvatarCustomizationMShirtUltrareconsquad = S<
 			slot: ["SHIRT"];
 			sortOrder: 101244;
 			unlockType: "IAP_CLOTHING";
-		}
-	>
->;
-export type AvatarCustomizationMShirtUltra0 = S<
-	AvatarCustomization<
-		"AVATAR_m_shirt_ultra_0",
-		{
-			assetName: "m_shirt_ultra_0";
-			bundleName: "m_shirt_ultra_bundle";
-			enabled: true;
-			groupName: "group_shirt";
-			iconName: "m_shirt_ultra_bundle_icon";
-			setNames: ["ultra_0"];
-			slot: ["SHIRT"];
-			sortOrder: 100071;
-			unlockType: "DEFAULT";
 		}
 	>
 >;
@@ -9041,14 +9041,14 @@ export type AvatarCustomizationShirtMasterfileEntry =
 	| AvatarCustomizationFShirtGiovanni
 	| AvatarCustomizationFShirtGiratinaitems
 	| AvatarCustomizationFShirtGladion
+	| AvatarCustomizationFShirtGofest2019
+	| AvatarCustomizationFShirtGofest2020
+	| AvatarCustomizationFShirtGofest2021
 	| AvatarCustomizationFShirtGofest2022
 	| AvatarCustomizationFShirtGofest2023
 	| AvatarCustomizationFShirtGofest2024darkgray
 	| AvatarCustomizationFShirtGofest2024gray
 	| AvatarCustomizationFShirtGofest2024purple
-	| AvatarCustomizationFShirtGofest2019
-	| AvatarCustomizationFShirtGofest2020
-	| AvatarCustomizationFShirtGofest2021
 	| AvatarCustomizationFShirtGofestglobal2023
 	| AvatarCustomizationFShirtGoteamrocketarlo
 	| AvatarCustomizationFShirtGoteamrocketcliff
@@ -9120,13 +9120,13 @@ export type AvatarCustomizationShirtMasterfileEntry =
 	| AvatarCustomizationFShirtPkmnhoodie001
 	| AvatarCustomizationFShirtPkmnhoodie004
 	| AvatarCustomizationFShirtPkmnhoodie007
-	| AvatarCustomizationFShirtPkmnshirts202100
-	| AvatarCustomizationFShirtPkmnshirts202101
-	| AvatarCustomizationFShirtPkmnshirts202102
 	| AvatarCustomizationFShirtPkmnshirts165
 	| AvatarCustomizationFShirtPkmnshirts188
 	| AvatarCustomizationFShirtPkmnshirts201
 	| AvatarCustomizationFShirtPkmnshirts238
+	| AvatarCustomizationFShirtPkmnshirts202100
+	| AvatarCustomizationFShirtPkmnshirts202101
+	| AvatarCustomizationFShirtPkmnshirts202102
 	| AvatarCustomizationFShirtPoloshirt
 	| AvatarCustomizationFShirtPoloshirt1
 	| AvatarCustomizationFShirtPoloshirt2
@@ -9212,8 +9212,8 @@ export type AvatarCustomizationShirtMasterfileEntry =
 	| AvatarCustomizationFShirtTshirtPikachu5
 	| AvatarCustomizationFShirtTshirtPikachu6
 	| AvatarCustomizationFShirtTurtwigonesie
-	| AvatarCustomizationFShirtUltrareconsquad
 	| AvatarCustomizationFShirtUltra0
+	| AvatarCustomizationFShirtUltrareconsquad
 	| AvatarCustomizationFShirtUnwto
 	| AvatarCustomizationFShirtValentine2023
 	| AvatarCustomizationFShirtVeterantrainerxy
@@ -9308,14 +9308,14 @@ export type AvatarCustomizationShirtMasterfileEntry =
 	| AvatarCustomizationMShirtGiovanni
 	| AvatarCustomizationMShirtGiratinaitems
 	| AvatarCustomizationMShirtGladion
+	| AvatarCustomizationMShirtGofest2019
+	| AvatarCustomizationMShirtGofest2020
+	| AvatarCustomizationMShirtGofest2021
 	| AvatarCustomizationMShirtGofest2022
 	| AvatarCustomizationMShirtGofest2023
 	| AvatarCustomizationMShirtGofest2024darkgray
 	| AvatarCustomizationMShirtGofest2024gray
 	| AvatarCustomizationMShirtGofest2024purple
-	| AvatarCustomizationMShirtGofest2019
-	| AvatarCustomizationMShirtGofest2020
-	| AvatarCustomizationMShirtGofest2021
 	| AvatarCustomizationMShirtGofestglobal2023
 	| AvatarCustomizationMShirtGoteamrocketarlo
 	| AvatarCustomizationMShirtGoteamrocketcliff
@@ -9393,13 +9393,13 @@ export type AvatarCustomizationShirtMasterfileEntry =
 	| AvatarCustomizationMShirtPkmnhoodie001
 	| AvatarCustomizationMShirtPkmnhoodie004
 	| AvatarCustomizationMShirtPkmnhoodie007
-	| AvatarCustomizationMShirtPkmnshirts202100
-	| AvatarCustomizationMShirtPkmnshirts202101
-	| AvatarCustomizationMShirtPkmnshirts202102
 	| AvatarCustomizationMShirtPkmnshirts165
 	| AvatarCustomizationMShirtPkmnshirts188
 	| AvatarCustomizationMShirtPkmnshirts201
 	| AvatarCustomizationMShirtPkmnshirts238
+	| AvatarCustomizationMShirtPkmnshirts202100
+	| AvatarCustomizationMShirtPkmnshirts202101
+	| AvatarCustomizationMShirtPkmnshirts202102
 	| AvatarCustomizationMShirtPoloshirt
 	| AvatarCustomizationMShirtPoloshirt1
 	| AvatarCustomizationMShirtPoloshirt2
@@ -9478,8 +9478,8 @@ export type AvatarCustomizationShirtMasterfileEntry =
 	| AvatarCustomizationMShirtTurtleneck302
 	| AvatarCustomizationMShirtTurtleneck303
 	| AvatarCustomizationMShirtTurtwigonesie
-	| AvatarCustomizationMShirtUltrareconsquad
 	| AvatarCustomizationMShirtUltra0
+	| AvatarCustomizationMShirtUltrareconsquad
 	| AvatarCustomizationMShirtUnwto
 	| AvatarCustomizationMShirtValentine2023
 	| AvatarCustomizationMShirtVeterantrainerxy

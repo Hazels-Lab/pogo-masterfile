@@ -63,26 +63,6 @@ export type StickerMetadataNiaLogo = S<
 		}
 	>
 >;
-export type StickerMetadataPgofest2021Logo = S<
-	StickerMetadata<
-		"STICKER_PGOFEST2021_LOGO",
-		{
-			category: ["Misc"];
-			releaseDate: 20210727;
-			stickerUrl: "https://prodholoholo-public-images.nianticlabs.com/Stickers/sticker_pgoFest2021_logo.png";
-		}
-	>
->;
-export type StickerMetadataPgofest2021Shirticon = S<
-	StickerMetadata<
-		"STICKER_PGOFEST2021_SHIRTICON",
-		{
-			category: ["Misc"];
-			releaseDate: 20210727;
-			stickerUrl: "https://prodholoholo-public-images.nianticlabs.com/Stickers/sticker_pgoFest2021_shirtIcon.png";
-		}
-	>
->;
 export type StickerMetadataPgoFest2017 = S<
 	StickerMetadata<
 		"STICKER_PGO_FEST_2017",
@@ -130,6 +110,26 @@ export type StickerMetadataPgoFest2020Logo = S<
 			category: ["Misc"];
 			releaseDate: 20200625;
 			stickerUrl: "https://storage.googleapis.com/prod-public-images/sticker_pgo_fest_2020_logo.png";
+		}
+	>
+>;
+export type StickerMetadataPgofest2021Logo = S<
+	StickerMetadata<
+		"STICKER_PGOFEST2021_LOGO",
+		{
+			category: ["Misc"];
+			releaseDate: 20210727;
+			stickerUrl: "https://prodholoholo-public-images.nianticlabs.com/Stickers/sticker_pgoFest2021_logo.png";
+		}
+	>
+>;
+export type StickerMetadataPgofest2021Shirticon = S<
+	StickerMetadata<
+		"STICKER_PGOFEST2021_SHIRTICON",
+		{
+			category: ["Misc"];
+			releaseDate: 20210727;
+			stickerUrl: "https://prodholoholo-public-images.nianticlabs.com/Stickers/sticker_pgoFest2021_shirtIcon.png";
 		}
 	>
 >;
@@ -201,13 +201,13 @@ export type StickerMetadataReleaseDateStickerUrlMasterfileEntry =
 	| StickerMetadataGotour20224
 	| StickerMetadataLentillaunchCamera
 	| StickerMetadataNiaLogo
-	| StickerMetadataPgofest2021Logo
-	| StickerMetadataPgofest2021Shirticon
 	| StickerMetadataPgoFest2017
 	| StickerMetadataPgoFest2018
 	| StickerMetadataPgoFest2019
 	| StickerMetadataPgoFest2020
 	| StickerMetadataPgoFest2020Logo
+	| StickerMetadataPgofest2021Logo
+	| StickerMetadataPgofest2021Shirticon
 	| StickerMetadataTlBlanche
 	| StickerMetadataTlCandela
 	| StickerMetadataTlSpark
