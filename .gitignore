@@ -11,6 +11,16 @@ dist
 !packages/ts/dist
 !packages/ts/dist/**
 
+# packages/ts-api/src holds generated runtime sources that ARE the published
+# artifact's source-of-truth. Track them so PR review covers regen output.
+# packages/ts-api/dist is built locally / on release CI and is NOT committed.
+!packages/ts-api/src
+!packages/ts-api/src/**
+
+# Editor-only stubs that mirror the latest generated lookup-tables/group-names
+# next to the runtime templates so the templates dir type-checks in the IDE.
+src/typescript-api/templates-stubs/
+
 # code coverage
 coverage
 *.lcov
