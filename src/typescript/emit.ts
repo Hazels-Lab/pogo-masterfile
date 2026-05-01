@@ -1,6 +1,6 @@
 import ts from "typescript";
 import type { Entry, Group } from "../group.ts";
-import { isJsonObject } from "../helpers.ts";
+import { compareNatural, isJsonObject } from "../helpers.ts";
 import type { InferredType } from "../infer.ts";
 import { inferJsonType, inferJsonTypes, widenType } from "../infer.ts";
 import type { InvariantTree } from "../invariants.ts";
@@ -76,7 +76,7 @@ function nameSingletons(singletons: Group[]): Array<{ group: Group; entry: Entry
 
 export function emitSingletonsFile(bucketName: string, singletons: Group[]): string {
 	const named = nameSingletons(singletons);
-	named.sort((a, b) => a.name.localeCompare(b.name));
+	named.sort((a, b) => compareNatural(a.name, b.name));
 
 	const file = new AstFileBuilder().header(`Generated from Pokémon GO masterfile — ${SINGLETONS} ${ENTRIES_LOWER} (no shared discriminator).`);
 
@@ -105,7 +105,7 @@ export function emitSingletonsFile(bucketName: string, singletons: Group[]): str
 
 export function emitSingletonsTypeFile(singletons: Group[]): string {
 	const named = nameSingletons(singletons);
-	named.sort((a, b) => a.name.localeCompare(b.name));
+	named.sort((a, b) => compareNatural(a.name, b.name));
 
 	const file = new AstFileBuilder().header(`Generated from Pokémon GO masterfile — ${SINGLETONS} ${TYPES} (no shared discriminator).`);
 
@@ -186,13 +186,9 @@ export function emitGroupTypes(group: Group, registry: PromotionRegistry = []): 
 
 	// Cross-group imports for promoted ${gName}TemplateID references; resolves to the
 	// sibling group's entries.ts (flat) or entries/index.ts (split).
-	const sortedImports = [...ctx.imports.entries()].filter(([disc]) => disc !== group.discriminator).sort(([a], [b]) => a.localeCompare(b));
+	const sortedImports = [...ctx.imports.entries()].filter(([disc]) => disc !== group.discriminator).sort(([a], [b]) => compareNatural(a, b));
 	for (const [disc, names] of sortedImports) {
-		file.importNamed(
-			`../${kebabCase(disc)}/${ENTRIES_LOWER}`,
-			[...names].sort((a, b) => a.localeCompare(b)),
-			true,
-		);
+		file.importNamed(`../${kebabCase(disc)}/${ENTRIES_LOWER}`, [...names].sort(compareNatural), true);
 	}
 	file.blank();
 
@@ -234,7 +230,7 @@ export function emitEntriesFlat(group: Group): string {
 		.importNamed(`./${BARREL_FILE}`, [gName, xdataName], true)
 		.blank();
 
-	const sortedIds = [...group.entries].map((e) => e.templateId).sort((a, b) => a.localeCompare(b));
+	const sortedIds = [...group.entries].map((e) => e.templateId).sort(compareNatural);
 	const aliases = deriveGroupAliases(sortedIds, gName);
 	const invariants = detectInvariants(group);
 	const { statements, typeNames } = entryVariantStatements(group.entries, gName, group, aliases, invariants);
@@ -260,7 +256,7 @@ export function emitEntriesFlat(group: Group): string {
 export function emitEntryFile(group: Group, bucketName: string, entries: Entry[], nestedPath: string[] = []): string {
 	const gName = groupName(group.discriminator);
 	const xdataName = `${gName}Data`;
-	const sortedIds = [...group.entries].map((e) => e.templateId).sort((a, b) => a.localeCompare(b));
+	const sortedIds = [...group.entries].map((e) => e.templateId).sort(compareNatural);
 	const aliases = deriveGroupAliases(sortedIds, gName);
 	const invariants = detectInvariants(group);
 	const entryCount = entries.length;
@@ -296,7 +292,7 @@ export function emitEntryFile(group: Group, bucketName: string, entries: Entry[]
 // file or a subdirectory — the imports and re-exports work identically.
 export function emitEntriesBarrel(discriminator: string, fileNames: string[], nestedPath: string[] = []): string {
 	const typeName = `${pascalCase(discriminator)}${nestedPath.map(pascalCase).join("")}`;
-	const sorted = [...fileNames].sort((a, b) => a.localeCompare(b));
+	const sorted = [...fileNames].sort(compareNatural);
 	const label = nestedPath.length > 0 ? `${discriminator} ${nestedPath.join("/")}` : discriminator;
 
 	const file = new AstFileBuilder().header(`Generated from Pokémon GO masterfile — group "${label}" entries barrel.`);
@@ -322,7 +318,7 @@ export function emitEntriesBarrel(discriminator: string, fileNames: string[], ne
 }
 
 export function emitTopLevelVariants(groupSplits: Map<string, "split" | "flat">): string {
-	const sortedDiscs = [...groupSplits.keys()].sort((a, b) => a.localeCompare(b));
+	const sortedDiscs = [...groupSplits.keys()].sort(compareNatural);
 	const file = new AstFileBuilder().header("Generated from Pokémon GO masterfile — top-level entries barrel.");
 
 	for (const disc of sortedDiscs) {
@@ -385,7 +381,7 @@ function emitLookupTableFile(opts: { headerLabel: string; interfaceName: string;
 		return `\t${k}: ${typeName};`;
 	});
 
-	const sortedImports = [...new Set(entries.map((e) => e.typeName))].sort((a, b) => a.localeCompare(b));
+	const sortedImports = [...new Set(entries.map((e) => e.typeName))].sort(compareNatural);
 
 	return `// Generated from Pokémon GO masterfile — ${headerLabel}.
 
@@ -401,7 +397,7 @@ ${lines.join("\n")}
 
 export function emitGroupLookupTable(group: Group): string {
 	const gName = groupName(group.discriminator);
-	const sortedIds = [...group.entries].map((e) => e.templateId).sort((a, b) => a.localeCompare(b));
+	const sortedIds = [...group.entries].map((e) => e.templateId).sort(compareNatural);
 	const aliases = deriveGroupAliases(sortedIds, gName);
 
 	const entries = sortedIds.map((id) => {
@@ -422,7 +418,7 @@ export function emitGroupLookupTable(group: Group): string {
 export function emitSingletonsLookupTable(singletons: Group[]): string {
 	const entries = nameSingletons(singletons)
 		.map(({ entry, name }) => ({ key: entry.templateId, typeName: name }))
-		.sort((a, b) => a.key.localeCompare(b.key));
+		.sort((a, b) => compareNatural(a.key, b.key));
 
 	return emitLookupTableFile({
 		headerLabel: "singletons lookup table",
@@ -432,7 +428,7 @@ export function emitSingletonsLookupTable(singletons: Group[]): string {
 }
 
 export function emitRootLookupTable(multiEntry: Group[], hasSingletons: boolean): string {
-	const sortedMulti = [...multiEntry].sort((a, b) => a.discriminator.localeCompare(b.discriminator));
+	const sortedMulti = [...multiEntry].sort((a, b) => compareNatural(a.discriminator, b.discriminator));
 	const groupInfos = sortedMulti.map((g) => ({
 		discriminator: g.discriminator,
 		gName: groupName(g.discriminator),
@@ -446,7 +442,7 @@ export function emitRootLookupTable(multiEntry: Group[], hasSingletons: boolean)
 	if (hasSingletons) {
 		groupAliases.push(`${SINGLETONS}${BARREL_TYPE}${ENTRY}`, `${SINGLETONS}${TEMPLATE_GENERIC}`);
 	}
-	groupAliases.sort((a, b) => a.localeCompare(b));
+	groupAliases.sort(compareNatural);
 
 	const lookupImportLines: string[] = [];
 	const lookupReExportLines: string[] = [];

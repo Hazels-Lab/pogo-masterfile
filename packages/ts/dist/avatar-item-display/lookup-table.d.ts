@@ -66,8 +66,8 @@ import type {
 	AvatarItemDisplayNBackpackSsB0,
 	AvatarItemDisplayNBackpackSvcostumescarletschool0,
 	AvatarItemDisplayNBackpackSvcostumevioletschool0,
-	AvatarItemDisplayNBackpackSvdlc10,
 	AvatarItemDisplayNBackpackSvdlc2spring0,
+	AvatarItemDisplayNBackpackSvdlc10,
 	AvatarItemDisplayNBackpackSwshdlc2costumeA0,
 	AvatarItemDisplayNBackpackSwshdlc2costumeB0,
 	AvatarItemDisplayNBackpackSwshdlccostumeA0,
@@ -212,6 +212,14 @@ import type {
 	AvatarItemDisplayNGlovesWintergloves20230,
 	AvatarItemDisplayNGradientEye0,
 	AvatarItemDisplayNGradientEye1,
+	AvatarItemDisplayNGradientEye2,
+	AvatarItemDisplayNGradientEye3,
+	AvatarItemDisplayNGradientEye4,
+	AvatarItemDisplayNGradientEye5,
+	AvatarItemDisplayNGradientEye6,
+	AvatarItemDisplayNGradientEye7,
+	AvatarItemDisplayNGradientEye8,
+	AvatarItemDisplayNGradientEye9,
 	AvatarItemDisplayNGradientEye10,
 	AvatarItemDisplayNGradientEye11,
 	AvatarItemDisplayNGradientEye12,
@@ -222,16 +230,16 @@ import type {
 	AvatarItemDisplayNGradientEye17,
 	AvatarItemDisplayNGradientEye18,
 	AvatarItemDisplayNGradientEye19,
-	AvatarItemDisplayNGradientEye2,
-	AvatarItemDisplayNGradientEye3,
-	AvatarItemDisplayNGradientEye4,
-	AvatarItemDisplayNGradientEye5,
-	AvatarItemDisplayNGradientEye6,
-	AvatarItemDisplayNGradientEye7,
-	AvatarItemDisplayNGradientEye8,
-	AvatarItemDisplayNGradientEye9,
 	AvatarItemDisplayNGradientHair0,
 	AvatarItemDisplayNGradientHair1,
+	AvatarItemDisplayNGradientHair2,
+	AvatarItemDisplayNGradientHair3,
+	AvatarItemDisplayNGradientHair4,
+	AvatarItemDisplayNGradientHair5,
+	AvatarItemDisplayNGradientHair6,
+	AvatarItemDisplayNGradientHair7,
+	AvatarItemDisplayNGradientHair8,
+	AvatarItemDisplayNGradientHair9,
 	AvatarItemDisplayNGradientHair10,
 	AvatarItemDisplayNGradientHair11,
 	AvatarItemDisplayNGradientHair12,
@@ -242,7 +250,6 @@ import type {
 	AvatarItemDisplayNGradientHair17,
 	AvatarItemDisplayNGradientHair18,
 	AvatarItemDisplayNGradientHair19,
-	AvatarItemDisplayNGradientHair2,
 	AvatarItemDisplayNGradientHair20,
 	AvatarItemDisplayNGradientHair21,
 	AvatarItemDisplayNGradientHair22,
@@ -253,15 +260,8 @@ import type {
 	AvatarItemDisplayNGradientHair27,
 	AvatarItemDisplayNGradientHair28,
 	AvatarItemDisplayNGradientHair29,
-	AvatarItemDisplayNGradientHair3,
 	AvatarItemDisplayNGradientHair30,
 	AvatarItemDisplayNGradientHair31,
-	AvatarItemDisplayNGradientHair4,
-	AvatarItemDisplayNGradientHair5,
-	AvatarItemDisplayNGradientHair6,
-	AvatarItemDisplayNGradientHair7,
-	AvatarItemDisplayNGradientHair8,
-	AvatarItemDisplayNGradientHair9,
 	AvatarItemDisplayNGradientTesteye0,
 	AvatarItemDisplayNGradientTesteye1,
 	AvatarItemDisplayNGradientTesthair0,
@@ -494,8 +494,8 @@ import type {
 	AvatarItemDisplayNHatVerizon20210,
 	AvatarItemDisplayNHatWcs2022winnersitems0,
 	AvatarItemDisplayNHatWcs2024paiditems0,
-	AvatarItemDisplayNHatWcs20250,
 	AvatarItemDisplayNHatWcs2025winnersitems0,
+	AvatarItemDisplayNHatWcs20250,
 	AvatarItemDisplayNHatWhimsicottearmuff0,
 	AvatarItemDisplayNHatWillowglasses0,
 	AvatarItemDisplayNHatWoobatearrings0,
@@ -878,18 +878,18 @@ import type {
 	AvatarItemDisplayNShirtGiovanniB0,
 	AvatarItemDisplayNShirtGiratinaitems0,
 	AvatarItemDisplayNShirtGladion0,
+	AvatarItemDisplayNShirtGofest2024darkgray0,
+	AvatarItemDisplayNShirtGofest2024gray0,
+	AvatarItemDisplayNShirtGofest2024purple0,
+	AvatarItemDisplayNShirtGofest2025cream0,
+	AvatarItemDisplayNShirtGofest2026Black,
+	AvatarItemDisplayNShirtGofest2026Purple,
 	AvatarItemDisplayNShirtGofest20190,
 	AvatarItemDisplayNShirtGofest20200,
 	AvatarItemDisplayNShirtGofest20210,
 	AvatarItemDisplayNShirtGofest20220,
 	AvatarItemDisplayNShirtGofest20230,
-	AvatarItemDisplayNShirtGofest2024darkgray0,
-	AvatarItemDisplayNShirtGofest2024gray0,
-	AvatarItemDisplayNShirtGofest2024purple0,
 	AvatarItemDisplayNShirtGofest20250,
-	AvatarItemDisplayNShirtGofest2025cream0,
-	AvatarItemDisplayNShirtGofest2026Black,
-	AvatarItemDisplayNShirtGofest2026Purple,
 	AvatarItemDisplayNShirtGofestglobal20230,
 	AvatarItemDisplayNShirtGoteamrocketarloA0,
 	AvatarItemDisplayNShirtGoteamrocketarloB0,
@@ -898,13 +898,13 @@ import type {
 	AvatarItemDisplayNShirtGoteamrocketsierraA0,
 	AvatarItemDisplayNShirtGoteamrocketsierraB0,
 	AvatarItemDisplayNShirtGothitelleitems0,
+	AvatarItemDisplayNShirtGotour2026Black0,
+	AvatarItemDisplayNShirtGotour2026Gray0,
 	AvatarItemDisplayNShirtGotour20230,
 	AvatarItemDisplayNShirtGotour20240,
 	AvatarItemDisplayNShirtGotour20250,
 	AvatarItemDisplayNShirtGotour20251,
 	AvatarItemDisplayNShirtGotour20252,
-	AvatarItemDisplayNShirtGotour2026Black0,
-	AvatarItemDisplayNShirtGotour2026Gray0,
 	AvatarItemDisplayNShirtGowa20240,
 	AvatarItemDisplayNShirtGowa20250,
 	AvatarItemDisplayNShirtGowa20251,
@@ -970,9 +970,9 @@ import type {
 	AvatarItemDisplayNShirtLooseFitting1,
 	AvatarItemDisplayNShirtLuvdiscpackA0,
 	AvatarItemDisplayNShirtLuvdiscpackB0,
+	AvatarItemDisplayNShirtLvl80Circuitjacket0,
 	AvatarItemDisplayNShirtLvl500,
 	AvatarItemDisplayNShirtLvl501,
-	AvatarItemDisplayNShirtLvl80Circuitjacket0,
 	AvatarItemDisplayNShirtLysandre0,
 	AvatarItemDisplayNShirtMarshadowtshirt0,
 	AvatarItemDisplayNShirtMegalopunnyitems0,
@@ -1026,10 +1026,10 @@ import type {
 	AvatarItemDisplayNShirtPkmnshirts1650,
 	AvatarItemDisplayNShirtPkmnshirts1880,
 	AvatarItemDisplayNShirtPkmnshirts2010,
+	AvatarItemDisplayNShirtPkmnshirts2380,
 	AvatarItemDisplayNShirtPkmnshirts20210,
 	AvatarItemDisplayNShirtPkmnshirts20211,
 	AvatarItemDisplayNShirtPkmnshirts20212,
-	AvatarItemDisplayNShirtPkmnshirts2380,
 	AvatarItemDisplayNShirtPokeballitemsBasic0,
 	AvatarItemDisplayNShirtPokeballitemsGreat0,
 	AvatarItemDisplayNShirtPokeballitemsUltra0,
@@ -1078,9 +1078,9 @@ import type {
 	AvatarItemDisplayNShirtSustainability2021B0,
 	AvatarItemDisplayNShirtSvcostumescarletschool0,
 	AvatarItemDisplayNShirtSvcostumevioletschool0,
-	AvatarItemDisplayNShirtSvdlc10,
 	AvatarItemDisplayNShirtSvdlc2fall0,
 	AvatarItemDisplayNShirtSvdlc2spring0,
+	AvatarItemDisplayNShirtSvdlc10,
 	AvatarItemDisplayNShirtSweater300,
 	AvatarItemDisplayNShirtSweater301,
 	AvatarItemDisplayNShirtSweater302,
@@ -1175,25 +1175,25 @@ import type {
 	AvatarItemDisplayNShirtVeterantrainerxyB0,
 	AvatarItemDisplayNShirtVictinitshirts0,
 	AvatarItemDisplayNShirtVolcaniontshirt0,
-	AvatarItemDisplayNShirtWcs20220,
 	AvatarItemDisplayNShirtWcs2022tshirtbulu0,
 	AvatarItemDisplayNShirtWcs2022tshirtred0,
 	AvatarItemDisplayNShirtWcs2022winnersitems0,
-	AvatarItemDisplayNShirtWcs20230,
 	AvatarItemDisplayNShirtWcs2023promotshirt00,
 	AvatarItemDisplayNShirtWcs2023promotshirt10,
 	AvatarItemDisplayNShirtWcs2023sukajan0,
 	AvatarItemDisplayNShirtWcs2023winnersitems0,
-	AvatarItemDisplayNShirtWcs20240,
 	AvatarItemDisplayNShirtWcs2024championshipshirtBlue0,
 	AvatarItemDisplayNShirtWcs2024championshipshirtWhite0,
 	AvatarItemDisplayNShirtWcs2024paiditems0,
 	AvatarItemDisplayNShirtWcs2024winnersitems0,
-	AvatarItemDisplayNShirtWcs20250,
 	AvatarItemDisplayNShirtWcs2025anaheimWhite0,
 	AvatarItemDisplayNShirtWcs2025anaheimYellow0,
 	AvatarItemDisplayNShirtWcs2025paiditems0,
 	AvatarItemDisplayNShirtWcs2025winnersitems0,
+	AvatarItemDisplayNShirtWcs20220,
+	AvatarItemDisplayNShirtWcs20230,
+	AvatarItemDisplayNShirtWcs20240,
+	AvatarItemDisplayNShirtWcs20250,
 	AvatarItemDisplayNShirtWcsyokohama0,
 	AvatarItemDisplayNShirtWhitecoat0,
 	AvatarItemDisplayNShirtWintersweater20230,
@@ -1319,8 +1319,8 @@ import type {
 	AvatarItemDisplayNShoesStevenfirst0,
 	AvatarItemDisplayNShoesSvcostumescarletschool0,
 	AvatarItemDisplayNShoesSvcostumevioletschool0,
-	AvatarItemDisplayNShoesSvdlc10,
 	AvatarItemDisplayNShoesSvdlc2spring0,
+	AvatarItemDisplayNShoesSvdlc10,
 	AvatarItemDisplayNShoesSwshdlc2costume0,
 	AvatarItemDisplayNShoesSwshdlccostume0,
 	AvatarItemDisplayNShoesSwshuniformdark0,
@@ -1356,8 +1356,8 @@ import type {
 	AvatarItemDisplayNShoesWinterboots0,
 	AvatarItemDisplayNShoesWinterboots1,
 	AvatarItemDisplayNShoesWinterboots2,
-	AvatarItemDisplayNShoesWinterboots20230,
 	AvatarItemDisplayNShoesWinterboots3,
+	AvatarItemDisplayNShoesWinterboots20230,
 	AvatarItemDisplayNShoesZacostumeA0,
 	AvatarItemDisplayNShoesZacostumeB0,
 	AvatarItemDisplayNSocksDefaultA0,
@@ -1858,6 +1858,14 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_gloves_wintergloves2023_0: AvatarItemDisplayNGlovesWintergloves20230;
 	N_DISPLAY_n_gradient_eye_0: AvatarItemDisplayNGradientEye0;
 	N_DISPLAY_n_gradient_eye_1: AvatarItemDisplayNGradientEye1;
+	N_DISPLAY_n_gradient_eye_2: AvatarItemDisplayNGradientEye2;
+	N_DISPLAY_n_gradient_eye_3: AvatarItemDisplayNGradientEye3;
+	N_DISPLAY_n_gradient_eye_4: AvatarItemDisplayNGradientEye4;
+	N_DISPLAY_n_gradient_eye_5: AvatarItemDisplayNGradientEye5;
+	N_DISPLAY_n_gradient_eye_6: AvatarItemDisplayNGradientEye6;
+	N_DISPLAY_n_gradient_eye_7: AvatarItemDisplayNGradientEye7;
+	N_DISPLAY_n_gradient_eye_8: AvatarItemDisplayNGradientEye8;
+	N_DISPLAY_n_gradient_eye_9: AvatarItemDisplayNGradientEye9;
 	N_DISPLAY_n_gradient_eye_10: AvatarItemDisplayNGradientEye10;
 	N_DISPLAY_n_gradient_eye_11: AvatarItemDisplayNGradientEye11;
 	N_DISPLAY_n_gradient_eye_12: AvatarItemDisplayNGradientEye12;
@@ -1868,16 +1876,16 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_gradient_eye_17: AvatarItemDisplayNGradientEye17;
 	N_DISPLAY_n_gradient_eye_18: AvatarItemDisplayNGradientEye18;
 	N_DISPLAY_n_gradient_eye_19: AvatarItemDisplayNGradientEye19;
-	N_DISPLAY_n_gradient_eye_2: AvatarItemDisplayNGradientEye2;
-	N_DISPLAY_n_gradient_eye_3: AvatarItemDisplayNGradientEye3;
-	N_DISPLAY_n_gradient_eye_4: AvatarItemDisplayNGradientEye4;
-	N_DISPLAY_n_gradient_eye_5: AvatarItemDisplayNGradientEye5;
-	N_DISPLAY_n_gradient_eye_6: AvatarItemDisplayNGradientEye6;
-	N_DISPLAY_n_gradient_eye_7: AvatarItemDisplayNGradientEye7;
-	N_DISPLAY_n_gradient_eye_8: AvatarItemDisplayNGradientEye8;
-	N_DISPLAY_n_gradient_eye_9: AvatarItemDisplayNGradientEye9;
 	N_DISPLAY_n_gradient_hair_0: AvatarItemDisplayNGradientHair0;
 	N_DISPLAY_n_gradient_hair_1: AvatarItemDisplayNGradientHair1;
+	N_DISPLAY_n_gradient_hair_2: AvatarItemDisplayNGradientHair2;
+	N_DISPLAY_n_gradient_hair_3: AvatarItemDisplayNGradientHair3;
+	N_DISPLAY_n_gradient_hair_4: AvatarItemDisplayNGradientHair4;
+	N_DISPLAY_n_gradient_hair_5: AvatarItemDisplayNGradientHair5;
+	N_DISPLAY_n_gradient_hair_6: AvatarItemDisplayNGradientHair6;
+	N_DISPLAY_n_gradient_hair_7: AvatarItemDisplayNGradientHair7;
+	N_DISPLAY_n_gradient_hair_8: AvatarItemDisplayNGradientHair8;
+	N_DISPLAY_n_gradient_hair_9: AvatarItemDisplayNGradientHair9;
 	N_DISPLAY_n_gradient_hair_10: AvatarItemDisplayNGradientHair10;
 	N_DISPLAY_n_gradient_hair_11: AvatarItemDisplayNGradientHair11;
 	N_DISPLAY_n_gradient_hair_12: AvatarItemDisplayNGradientHair12;
@@ -1888,7 +1896,6 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_gradient_hair_17: AvatarItemDisplayNGradientHair17;
 	N_DISPLAY_n_gradient_hair_18: AvatarItemDisplayNGradientHair18;
 	N_DISPLAY_n_gradient_hair_19: AvatarItemDisplayNGradientHair19;
-	N_DISPLAY_n_gradient_hair_2: AvatarItemDisplayNGradientHair2;
 	N_DISPLAY_n_gradient_hair_20: AvatarItemDisplayNGradientHair20;
 	N_DISPLAY_n_gradient_hair_21: AvatarItemDisplayNGradientHair21;
 	N_DISPLAY_n_gradient_hair_22: AvatarItemDisplayNGradientHair22;
@@ -1899,15 +1906,8 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_gradient_hair_27: AvatarItemDisplayNGradientHair27;
 	N_DISPLAY_n_gradient_hair_28: AvatarItemDisplayNGradientHair28;
 	N_DISPLAY_n_gradient_hair_29: AvatarItemDisplayNGradientHair29;
-	N_DISPLAY_n_gradient_hair_3: AvatarItemDisplayNGradientHair3;
 	N_DISPLAY_n_gradient_hair_30: AvatarItemDisplayNGradientHair30;
 	N_DISPLAY_n_gradient_hair_31: AvatarItemDisplayNGradientHair31;
-	N_DISPLAY_n_gradient_hair_4: AvatarItemDisplayNGradientHair4;
-	N_DISPLAY_n_gradient_hair_5: AvatarItemDisplayNGradientHair5;
-	N_DISPLAY_n_gradient_hair_6: AvatarItemDisplayNGradientHair6;
-	N_DISPLAY_n_gradient_hair_7: AvatarItemDisplayNGradientHair7;
-	N_DISPLAY_n_gradient_hair_8: AvatarItemDisplayNGradientHair8;
-	N_DISPLAY_n_gradient_hair_9: AvatarItemDisplayNGradientHair9;
 	N_DISPLAY_n_gradient_testeye_0: AvatarItemDisplayNGradientTesteye0;
 	N_DISPLAY_n_gradient_testeye_1: AvatarItemDisplayNGradientTesteye1;
 	N_DISPLAY_n_gradient_testhair_0: AvatarItemDisplayNGradientTesthair0;

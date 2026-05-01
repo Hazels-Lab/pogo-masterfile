@@ -274,8 +274,6 @@ import type {
 	IapItemDisplayGeneral1Ticket5,
 	IapItemDisplayGeneral1Ticket6,
 	IapItemDisplayGeneral2Ticket1,
-	IapItemDisplayGeneral2Ticket10,
-	IapItemDisplayGeneral2Ticket10Giftable,
 	IapItemDisplayGeneral2Ticket1Giftable,
 	IapItemDisplayGeneral2Ticket2,
 	IapItemDisplayGeneral2Ticket2Giftable,
@@ -292,6 +290,8 @@ import type {
 	IapItemDisplayGeneral2Ticket8Giftable,
 	IapItemDisplayGeneral2Ticket9,
 	IapItemDisplayGeneral2Ticket9Giftable,
+	IapItemDisplayGeneral2Ticket10,
+	IapItemDisplayGeneral2Ticket10Giftable,
 	IapItemDisplayGeneral4Medium1,
 	IapItemDisplayGeneral6Small1,
 	IapItemDisplayGofest2025DeluxeEventPassTrackUnlock,
@@ -324,8 +324,8 @@ import type {
 	IapItemDisplayMarch22026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayMaxBoost1,
 	IapItemDisplayMaxBoost3,
-	IapItemDisplayMaxpotion10,
 	IapItemDisplayMaxpotion5,
+	IapItemDisplayMaxpotion10,
 	IapItemDisplayMaxrevive3,
 	IapItemDisplayMaxrevive6,
 	IapItemDisplayMonth1DeluxeEventPassTrackUnlock,
@@ -361,14 +361,14 @@ import type {
 	IapItemDisplayPgoreleaseBundleFlavoredlures7,
 	IapItemDisplayPgoreleaseBundleFlavoredlures8,
 	IapItemDisplayPgoreleaseBundleFoc2023box1,
-	IapItemDisplayPgoreleaseBundleGeneral11Small1331,
 	IapItemDisplayPgoreleaseBundleGeneral1Tiny4,
+	IapItemDisplayPgoreleaseBundleGeneral11Small1331,
 	IapItemDisplayPgoreleaseBundleGeneralThirdpartyLarge2,
 	IapItemDisplayPgoreleaseBundleGeneralThirdpartyLarge4,
 	IapItemDisplayPgoreleaseBundleGeneralThirdpartyMedium1,
 	IapItemDisplayPgoreleaseBundleGeneralThirdpartySmall1,
-	IapItemDisplayPgoreleaseBundleGeneralThirdpartySmall12,
 	IapItemDisplayPgoreleaseBundleGeneralThirdpartySmall2,
+	IapItemDisplayPgoreleaseBundleGeneralThirdpartySmall12,
 	IapItemDisplayPgoreleaseBundleGotour20230,
 	IapItemDisplayPgoreleaseBundleGotour20231,
 	IapItemDisplayPgoreleaseBundleGotour20232,
@@ -413,8 +413,6 @@ import type {
 	IapItemDisplayPgoreleaseGeneral1Ticket4,
 	IapItemDisplayPgoreleaseGeneral1Ticket4Giftable,
 	IapItemDisplayPgoreleaseGeneral2Ticket1,
-	IapItemDisplayPgoreleaseGeneral2Ticket10,
-	IapItemDisplayPgoreleaseGeneral2Ticket10Giftable,
 	IapItemDisplayPgoreleaseGeneral2Ticket1Giftable,
 	IapItemDisplayPgoreleaseGeneral2Ticket2,
 	IapItemDisplayPgoreleaseGeneral2Ticket2Giftable,
@@ -430,29 +428,23 @@ import type {
 	IapItemDisplayPgoreleaseGeneral2Ticket8Giftable,
 	IapItemDisplayPgoreleaseGeneral2Ticket9,
 	IapItemDisplayPgoreleaseGeneral2Ticket9Giftable,
+	IapItemDisplayPgoreleaseGeneral2Ticket10,
+	IapItemDisplayPgoreleaseGeneral2Ticket10Giftable,
 	IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlock,
 	IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints,
-	IapItemDisplayPgoreleasePokecoin15950,
-	IapItemDisplayPgoreleasePokecoin21375,
 	IapItemDisplayPgoreleasePokecoin2750,
 	IapItemDisplayPgoreleasePokecoin5720,
+	IapItemDisplayPgoreleasePokecoin15950,
+	IapItemDisplayPgoreleasePokecoin21375,
 	IapItemDisplayPoffin,
-	IapItemDisplayPokeball100,
 	IapItemDisplayPokeball20,
+	IapItemDisplayPokeball100,
 	IapItemDisplayPokeball200,
 	IapItemDisplayPostcardstorageupgrade1,
 	IapItemDisplayRemoteraidticket1,
 	IapItemDisplayRemoteraidticket3,
 	IapItemDisplayStarpiece1,
 	IapItemDisplayStarpiece8,
-	IapItemDisplaySticker2023collab13,
-	IapItemDisplaySticker2023collab15,
-	IapItemDisplaySticker2023collab23,
-	IapItemDisplaySticker2023collab25,
-	IapItemDisplaySticker2023collab33,
-	IapItemDisplaySticker2023collab35,
-	IapItemDisplaySticker2023collab43,
-	IapItemDisplaySticker2023collab45,
 	IapItemDisplaySticker8anniv13,
 	IapItemDisplaySticker8anniv15,
 	IapItemDisplaySticker8anniv23,
@@ -467,6 +459,14 @@ import type {
 	IapItemDisplaySticker9anniv25,
 	IapItemDisplaySticker9anniv33,
 	IapItemDisplaySticker9anniv35,
+	IapItemDisplaySticker2023collab13,
+	IapItemDisplaySticker2023collab15,
+	IapItemDisplaySticker2023collab23,
+	IapItemDisplaySticker2023collab25,
+	IapItemDisplaySticker2023collab33,
+	IapItemDisplaySticker2023collab35,
+	IapItemDisplaySticker2023collab43,
+	IapItemDisplaySticker2023collab45,
 	IapItemDisplayStickerAprilfool202313,
 	IapItemDisplayStickerAprilfool202315,
 	IapItemDisplayStickerAprilfool202323,
@@ -609,10 +609,10 @@ import type {
 	IapItemDisplayStickerFlabebe25,
 	IapItemDisplayStickerFunawari223123,
 	IapItemDisplayStickerFunawari223125,
-	IapItemDisplayStickerFunwari0206083,
-	IapItemDisplayStickerFunwari0206085,
 	IapItemDisplayStickerFunwari203,
 	IapItemDisplayStickerFunwari205,
+	IapItemDisplayStickerFunwari0206083,
+	IapItemDisplayStickerFunwari0206085,
 	IapItemDisplayStickerFurfrouheart13,
 	IapItemDisplayStickerFurfrouheart15,
 	IapItemDisplayStickerFurfrouheart23,
@@ -659,10 +659,6 @@ import type {
 	IapItemDisplayStickerGowa2025045,
 	IapItemDisplayStickerGowa2025053,
 	IapItemDisplayStickerGowa2025055,
-	IapItemDisplayStickerHalloween2025Noibat3,
-	IapItemDisplayStickerHalloween2025Noibat5,
-	IapItemDisplayStickerHalloween2025Teddiursa3,
-	IapItemDisplayStickerHalloween2025Teddiursa5,
 	IapItemDisplayStickerHalloween21Fuwaraid3,
 	IapItemDisplayStickerHalloween21Fuwaraid5,
 	IapItemDisplayStickerHalloween21Ghostpika3,
@@ -675,6 +671,10 @@ import type {
 	IapItemDisplayStickerHalloween24Froakie5,
 	IapItemDisplayStickerHalloween24Rowlet3,
 	IapItemDisplayStickerHalloween24Rowlet5,
+	IapItemDisplayStickerHalloween2025Noibat3,
+	IapItemDisplayStickerHalloween2025Noibat5,
+	IapItemDisplayStickerHalloween2025Teddiursa3,
+	IapItemDisplayStickerHalloween2025Teddiursa5,
 	IapItemDisplayStickerHalloweenBulb3,
 	IapItemDisplayStickerHalloweenBulb5,
 	IapItemDisplayStickerHalloweenCharm3,
@@ -703,14 +703,6 @@ import type {
 	IapItemDisplayStickerHisuidiscoBraviary5,
 	IapItemDisplayStickerHisuidiscoGrowlithe3,
 	IapItemDisplayStickerHisuidiscoGrowlithe5,
-	IapItemDisplayStickerHolidayevent2113,
-	IapItemDisplayStickerHolidayevent2115,
-	IapItemDisplayStickerHolidayevent2123,
-	IapItemDisplayStickerHolidayevent2125,
-	IapItemDisplayStickerHolidayevent2133,
-	IapItemDisplayStickerHolidayevent2135,
-	IapItemDisplayStickerHolidayevent2143,
-	IapItemDisplayStickerHolidayevent2145,
 	IapItemDisplayStickerHolidayevent22Cubchoo3,
 	IapItemDisplayStickerHolidayevent22Cubchoo5,
 	IapItemDisplayStickerHolidayevent22Scatterbug3,
@@ -729,6 +721,14 @@ import type {
 	IapItemDisplayStickerHolidayevent23Seel5,
 	IapItemDisplayStickerHolidayevent23Vanillish3,
 	IapItemDisplayStickerHolidayevent23Vanillish5,
+	IapItemDisplayStickerHolidayevent2113,
+	IapItemDisplayStickerHolidayevent2115,
+	IapItemDisplayStickerHolidayevent2123,
+	IapItemDisplayStickerHolidayevent2125,
+	IapItemDisplayStickerHolidayevent2133,
+	IapItemDisplayStickerHolidayevent2135,
+	IapItemDisplayStickerHolidayevent2143,
+	IapItemDisplayStickerHolidayevent2145,
 	IapItemDisplayStickerHoppip13,
 	IapItemDisplayStickerHoppip15,
 	IapItemDisplayStickerHoppip23,
@@ -757,10 +757,10 @@ import type {
 	IapItemDisplayStickerMankey35,
 	IapItemDisplayStickerMankey43,
 	IapItemDisplayStickerMankey45,
-	IapItemDisplayStickerNagano063123,
-	IapItemDisplayStickerNagano063125,
 	IapItemDisplayStickerNagano113,
 	IapItemDisplayStickerNagano115,
+	IapItemDisplayStickerNagano063123,
+	IapItemDisplayStickerNagano063125,
 	IapItemDisplayStickerNagano153123,
 	IapItemDisplayStickerNagano153125,
 	IapItemDisplayStickerNaganoBath3,
@@ -807,56 +807,56 @@ import type {
 	IapItemDisplayStickerPgofest2022Pochama5,
 	IapItemDisplayStickerPgofest2022Shaymin3,
 	IapItemDisplayStickerPgofest2022Shaymin5,
+	IapItemDisplayStickerPgoFest2024Logo3,
+	IapItemDisplayStickerPgoFest2024Logo5,
+	IapItemDisplayStickerPgoFest2025Logo3,
+	IapItemDisplayStickerPgoFest2025Logo5,
+	IapItemDisplayStickerPgoFest20243,
+	IapItemDisplayStickerPgoFest20245,
+	IapItemDisplayStickerPgoFest20253,
+	IapItemDisplayStickerPgoFest20255,
 	IapItemDisplayStickerPgoFest202413,
 	IapItemDisplayStickerPgoFest202415,
 	IapItemDisplayStickerPgoFest202423,
 	IapItemDisplayStickerPgoFest202425,
-	IapItemDisplayStickerPgoFest20243,
 	IapItemDisplayStickerPgoFest202433,
 	IapItemDisplayStickerPgoFest202435,
 	IapItemDisplayStickerPgoFest202443,
 	IapItemDisplayStickerPgoFest202445,
-	IapItemDisplayStickerPgoFest20245,
 	IapItemDisplayStickerPgoFest202453,
 	IapItemDisplayStickerPgoFest202455,
 	IapItemDisplayStickerPgoFest202463,
 	IapItemDisplayStickerPgoFest202465,
-	IapItemDisplayStickerPgoFest2024Logo3,
-	IapItemDisplayStickerPgoFest2024Logo5,
 	IapItemDisplayStickerPgoFest202513,
 	IapItemDisplayStickerPgoFest202515,
 	IapItemDisplayStickerPgoFest202523,
 	IapItemDisplayStickerPgoFest202525,
-	IapItemDisplayStickerPgoFest20253,
 	IapItemDisplayStickerPgoFest202533,
 	IapItemDisplayStickerPgoFest202535,
-	IapItemDisplayStickerPgoFest20255,
-	IapItemDisplayStickerPgoFest2025Logo3,
-	IapItemDisplayStickerPgoFest2025Logo5,
 	IapItemDisplayStickerPgoFestVictini053,
 	IapItemDisplayStickerPgoFestVictini055,
+	IapItemDisplayStickerPgoTour2026Logo3,
+	IapItemDisplayStickerPgoTour2026Logo5,
+	IapItemDisplayStickerPgoTour20263,
+	IapItemDisplayStickerPgoTour20265,
 	IapItemDisplayStickerPgoTour202613,
 	IapItemDisplayStickerPgoTour202615,
 	IapItemDisplayStickerPgoTour202623,
 	IapItemDisplayStickerPgoTour202625,
-	IapItemDisplayStickerPgoTour20263,
 	IapItemDisplayStickerPgoTour202633,
 	IapItemDisplayStickerPgoTour202635,
-	IapItemDisplayStickerPgoTour20265,
-	IapItemDisplayStickerPgoTour2026Logo3,
-	IapItemDisplayStickerPgoTour2026Logo5,
+	IapItemDisplayStickerPgoWildarea2024Logo3,
+	IapItemDisplayStickerPgoWildarea2024Logo5,
+	IapItemDisplayStickerPgoWildarea20243,
+	IapItemDisplayStickerPgoWildarea20245,
 	IapItemDisplayStickerPgoWildarea202413,
 	IapItemDisplayStickerPgoWildarea202415,
 	IapItemDisplayStickerPgoWildarea202423,
 	IapItemDisplayStickerPgoWildarea202425,
-	IapItemDisplayStickerPgoWildarea20243,
 	IapItemDisplayStickerPgoWildarea202433,
 	IapItemDisplayStickerPgoWildarea202435,
 	IapItemDisplayStickerPgoWildarea202443,
 	IapItemDisplayStickerPgoWildarea202445,
-	IapItemDisplayStickerPgoWildarea20245,
-	IapItemDisplayStickerPgoWildarea2024Logo3,
-	IapItemDisplayStickerPgoWildarea2024Logo5,
 	IapItemDisplayStickerPikachuJol3,
 	IapItemDisplayStickerPikachuJol5,
 	IapItemDisplayStickerPokemonchatpals2403,
@@ -877,10 +877,10 @@ import type {
 	IapItemDisplayStickerPoppliocd35,
 	IapItemDisplayStickerPoppliocd43,
 	IapItemDisplayStickerPoppliocd45,
-	IapItemDisplayStickerPsychicspec21Inkay23,
-	IapItemDisplayStickerPsychicspec21Inkay25,
 	IapItemDisplayStickerPsychicspec21Inkay3,
 	IapItemDisplayStickerPsychicspec21Inkay5,
+	IapItemDisplayStickerPsychicspec21Inkay23,
+	IapItemDisplayStickerPsychicspec21Inkay25,
 	IapItemDisplayStickerRowletcd13,
 	IapItemDisplayStickerRowletcd15,
 	IapItemDisplayStickerRowletcd23,
@@ -977,6 +977,16 @@ import type {
 	IapItemDisplayStickerStufful45,
 	IapItemDisplayStickerSummer13,
 	IapItemDisplayStickerSummer15,
+	IapItemDisplayStickerSummer23,
+	IapItemDisplayStickerSummer25,
+	IapItemDisplayStickerSummer33,
+	IapItemDisplayStickerSummer35,
+	IapItemDisplayStickerSummer43,
+	IapItemDisplayStickerSummer45,
+	IapItemDisplayStickerSummer53,
+	IapItemDisplayStickerSummer55,
+	IapItemDisplayStickerSummer63,
+	IapItemDisplayStickerSummer65,
 	IapItemDisplayStickerSummer2023Blastoise3,
 	IapItemDisplayStickerSummer2023Blastoise5,
 	IapItemDisplayStickerSummer2023Butterfree3,
@@ -1009,16 +1019,6 @@ import type {
 	IapItemDisplayStickerSummer202535,
 	IapItemDisplayStickerSummer202543,
 	IapItemDisplayStickerSummer202545,
-	IapItemDisplayStickerSummer23,
-	IapItemDisplayStickerSummer25,
-	IapItemDisplayStickerSummer33,
-	IapItemDisplayStickerSummer35,
-	IapItemDisplayStickerSummer43,
-	IapItemDisplayStickerSummer45,
-	IapItemDisplayStickerSummer53,
-	IapItemDisplayStickerSummer55,
-	IapItemDisplayStickerSummer63,
-	IapItemDisplayStickerSummer65,
 	IapItemDisplayStickerSwordshield2113,
 	IapItemDisplayStickerSwordshield2115,
 	IapItemDisplayStickerSwordshield2123,
@@ -1398,8 +1398,6 @@ export interface IapItemDisplayLookup {
 	"general1.ticket.6": IapItemDisplayGeneral1Ticket6;
 	"general2.ticket.1": IapItemDisplayGeneral2Ticket1;
 	"general2.ticket.1.giftable": IapItemDisplayGeneral2Ticket1Giftable;
-	"general2.ticket.10": IapItemDisplayGeneral2Ticket10;
-	"general2.ticket.10.giftable": IapItemDisplayGeneral2Ticket10Giftable;
 	"general2.ticket.2": IapItemDisplayGeneral2Ticket2;
 	"general2.ticket.2.giftable": IapItemDisplayGeneral2Ticket2Giftable;
 	"general2.ticket.3": IapItemDisplayGeneral2Ticket3;
@@ -1415,6 +1413,8 @@ export interface IapItemDisplayLookup {
 	"general2.ticket.8.giftable": IapItemDisplayGeneral2Ticket8Giftable;
 	"general2.ticket.9": IapItemDisplayGeneral2Ticket9;
 	"general2.ticket.9.giftable": IapItemDisplayGeneral2Ticket9Giftable;
+	"general2.ticket.10": IapItemDisplayGeneral2Ticket10;
+	"general2.ticket.10.giftable": IapItemDisplayGeneral2Ticket10Giftable;
 	"general4.medium.1": IapItemDisplayGeneral4Medium1;
 	"general6.small.1": IapItemDisplayGeneral6Small1;
 	GO_SAFARI_BALL_IAP_10: IapItemDisplayGoSafariBallIap10;
@@ -1447,8 +1447,8 @@ export interface IapItemDisplayLookup {
 	MARCH2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayMarch22026DeluxeEventPassTrackUnlockPlusPoints;
 	"max_boost.1": IapItemDisplayMaxBoost1;
 	"max_boost.3": IapItemDisplayMaxBoost3;
-	"maxpotion.10": IapItemDisplayMaxpotion10;
 	"maxpotion.5": IapItemDisplayMaxpotion5;
+	"maxpotion.10": IapItemDisplayMaxpotion10;
 	"maxrevive.3": IapItemDisplayMaxrevive3;
 	"maxrevive.6": IapItemDisplayMaxrevive6;
 	MONTH1_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayMonth1DeluxeEventPassTrackUnlock;
@@ -1537,8 +1537,6 @@ export interface IapItemDisplayLookup {
 	"pgorelease.general1.ticket.4.giftable": IapItemDisplayPgoreleaseGeneral1Ticket4Giftable;
 	"pgorelease.general2.ticket.1": IapItemDisplayPgoreleaseGeneral2Ticket1;
 	"pgorelease.general2.ticket.1.giftable": IapItemDisplayPgoreleaseGeneral2Ticket1Giftable;
-	"pgorelease.general2.ticket.10": IapItemDisplayPgoreleaseGeneral2Ticket10;
-	"pgorelease.general2.ticket.10.giftable": IapItemDisplayPgoreleaseGeneral2Ticket10Giftable;
 	"pgorelease.general2.ticket.2": IapItemDisplayPgoreleaseGeneral2Ticket2;
 	"pgorelease.general2.ticket.2.giftable": IapItemDisplayPgoreleaseGeneral2Ticket2Giftable;
 	"pgorelease.general2.ticket.3": IapItemDisplayPgoreleaseGeneral2Ticket3;
@@ -1553,29 +1551,23 @@ export interface IapItemDisplayLookup {
 	"pgorelease.general2.ticket.8.giftable": IapItemDisplayPgoreleaseGeneral2Ticket8Giftable;
 	"pgorelease.general2.ticket.9": IapItemDisplayPgoreleaseGeneral2Ticket9;
 	"pgorelease.general2.ticket.9.giftable": IapItemDisplayPgoreleaseGeneral2Ticket9Giftable;
+	"pgorelease.general2.ticket.10": IapItemDisplayPgoreleaseGeneral2Ticket10;
+	"pgorelease.general2.ticket.10.giftable": IapItemDisplayPgoreleaseGeneral2Ticket10Giftable;
 	"pgorelease.month2_deluxe_event_pass_track_unlock": IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlock;
 	"pgorelease.month2_deluxe_event_pass_track_unlock_plus_points": IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints;
-	"pgorelease.pokecoin.15950": IapItemDisplayPgoreleasePokecoin15950;
-	"pgorelease.pokecoin.21375": IapItemDisplayPgoreleasePokecoin21375;
 	"pgorelease.pokecoin.2750": IapItemDisplayPgoreleasePokecoin2750;
 	"pgorelease.pokecoin.5720": IapItemDisplayPgoreleasePokecoin5720;
+	"pgorelease.pokecoin.15950": IapItemDisplayPgoreleasePokecoin15950;
+	"pgorelease.pokecoin.21375": IapItemDisplayPgoreleasePokecoin21375;
 	poffin: IapItemDisplayPoffin;
-	"pokeball.100": IapItemDisplayPokeball100;
 	"pokeball.20": IapItemDisplayPokeball20;
+	"pokeball.100": IapItemDisplayPokeball100;
 	"pokeball.200": IapItemDisplayPokeball200;
 	"postcardstorageupgrade.1": IapItemDisplayPostcardstorageupgrade1;
 	"remoteraidticket.1": IapItemDisplayRemoteraidticket1;
 	"remoteraidticket.3": IapItemDisplayRemoteraidticket3;
 	"starpiece.1": IapItemDisplayStarpiece1;
 	"starpiece.8": IapItemDisplayStarpiece8;
-	"STICKER_2023COLLAB_1.3": IapItemDisplaySticker2023collab13;
-	"STICKER_2023COLLAB_1.5": IapItemDisplaySticker2023collab15;
-	"STICKER_2023COLLAB_2.3": IapItemDisplaySticker2023collab23;
-	"STICKER_2023COLLAB_2.5": IapItemDisplaySticker2023collab25;
-	"STICKER_2023COLLAB_3.3": IapItemDisplaySticker2023collab33;
-	"STICKER_2023COLLAB_3.5": IapItemDisplaySticker2023collab35;
-	"STICKER_2023COLLAB_4.3": IapItemDisplaySticker2023collab43;
-	"STICKER_2023COLLAB_4.5": IapItemDisplaySticker2023collab45;
 	"STICKER_8ANNIV_1.3": IapItemDisplaySticker8anniv13;
 	"STICKER_8ANNIV_1.5": IapItemDisplaySticker8anniv15;
 	"STICKER_8ANNIV_2.3": IapItemDisplaySticker8anniv23;
@@ -1590,6 +1582,14 @@ export interface IapItemDisplayLookup {
 	"STICKER_9ANNIV_2.5": IapItemDisplaySticker9anniv25;
 	"STICKER_9ANNIV_3.3": IapItemDisplaySticker9anniv33;
 	"STICKER_9ANNIV_3.5": IapItemDisplaySticker9anniv35;
+	"STICKER_2023COLLAB_1.3": IapItemDisplaySticker2023collab13;
+	"STICKER_2023COLLAB_1.5": IapItemDisplaySticker2023collab15;
+	"STICKER_2023COLLAB_2.3": IapItemDisplaySticker2023collab23;
+	"STICKER_2023COLLAB_2.5": IapItemDisplaySticker2023collab25;
+	"STICKER_2023COLLAB_3.3": IapItemDisplaySticker2023collab33;
+	"STICKER_2023COLLAB_3.5": IapItemDisplaySticker2023collab35;
+	"STICKER_2023COLLAB_4.3": IapItemDisplaySticker2023collab43;
+	"STICKER_2023COLLAB_4.5": IapItemDisplaySticker2023collab45;
 	"STICKER_APRILFOOL2023_1.3": IapItemDisplayStickerAprilfool202313;
 	"STICKER_APRILFOOL2023_1.5": IapItemDisplayStickerAprilfool202315;
 	"STICKER_APRILFOOL2023_2.3": IapItemDisplayStickerAprilfool202323;
@@ -1792,10 +1792,6 @@ export interface IapItemDisplayLookup {
 	"STICKER_HALLOWEEN_PIKA.5": IapItemDisplayStickerHalloweenPika5;
 	"STICKER_HALLOWEEN_SQU.3": IapItemDisplayStickerHalloweenSqu3;
 	"STICKER_HALLOWEEN_SQU.5": IapItemDisplayStickerHalloweenSqu5;
-	"STICKER_HALLOWEEN2025_NOIBAT.3": IapItemDisplayStickerHalloween2025Noibat3;
-	"STICKER_HALLOWEEN2025_NOIBAT.5": IapItemDisplayStickerHalloween2025Noibat5;
-	"STICKER_HALLOWEEN2025_TEDDIURSA.3": IapItemDisplayStickerHalloween2025Teddiursa3;
-	"STICKER_HALLOWEEN2025_TEDDIURSA.5": IapItemDisplayStickerHalloween2025Teddiursa5;
 	"STICKER_HALLOWEEN21_FUWARAID.3": IapItemDisplayStickerHalloween21Fuwaraid3;
 	"STICKER_HALLOWEEN21_FUWARAID.5": IapItemDisplayStickerHalloween21Fuwaraid5;
 	"STICKER_HALLOWEEN21_GHOSTPIKA.3": IapItemDisplayStickerHalloween21Ghostpika3;
@@ -1808,6 +1804,10 @@ export interface IapItemDisplayLookup {
 	"STICKER_HALLOWEEN24_FROAKIE.5": IapItemDisplayStickerHalloween24Froakie5;
 	"STICKER_HALLOWEEN24_ROWLET.3": IapItemDisplayStickerHalloween24Rowlet3;
 	"STICKER_HALLOWEEN24_ROWLET.5": IapItemDisplayStickerHalloween24Rowlet5;
+	"STICKER_HALLOWEEN2025_NOIBAT.3": IapItemDisplayStickerHalloween2025Noibat3;
+	"STICKER_HALLOWEEN2025_NOIBAT.5": IapItemDisplayStickerHalloween2025Noibat5;
+	"STICKER_HALLOWEEN2025_TEDDIURSA.3": IapItemDisplayStickerHalloween2025Teddiursa3;
+	"STICKER_HALLOWEEN2025_TEDDIURSA.5": IapItemDisplayStickerHalloween2025Teddiursa5;
 	"STICKER_HARU_CHERRIM.3": IapItemDisplayStickerHaruCherrim3;
 	"STICKER_HARU_CHERRIM.5": IapItemDisplayStickerHaruCherrim5;
 	"STICKER_HARU_DREDEARPIKA.3": IapItemDisplayStickerHaruDredearpika3;
@@ -2102,6 +2102,14 @@ export interface IapItemDisplayLookup {
 	"STICKER_SUMMER_1.5": IapItemDisplayStickerSummer15;
 	"STICKER_SUMMER_2.3": IapItemDisplayStickerSummer23;
 	"STICKER_SUMMER_2.5": IapItemDisplayStickerSummer25;
+	"STICKER_SUMMER_3.3": IapItemDisplayStickerSummer33;
+	"STICKER_SUMMER_3.5": IapItemDisplayStickerSummer35;
+	"STICKER_SUMMER_4.3": IapItemDisplayStickerSummer43;
+	"STICKER_SUMMER_4.5": IapItemDisplayStickerSummer45;
+	"STICKER_SUMMER_5.3": IapItemDisplayStickerSummer53;
+	"STICKER_SUMMER_5.5": IapItemDisplayStickerSummer55;
+	"STICKER_SUMMER_6.3": IapItemDisplayStickerSummer63;
+	"STICKER_SUMMER_6.5": IapItemDisplayStickerSummer65;
 	"STICKER_SUMMER_2023_BLASTOISE.3": IapItemDisplayStickerSummer2023Blastoise3;
 	"STICKER_SUMMER_2023_BLASTOISE.5": IapItemDisplayStickerSummer2023Blastoise5;
 	"STICKER_SUMMER_2023_BUTTERFREE.3": IapItemDisplayStickerSummer2023Butterfree3;
@@ -2134,14 +2142,6 @@ export interface IapItemDisplayLookup {
 	"STICKER_SUMMER_2025_3.5": IapItemDisplayStickerSummer202535;
 	"STICKER_SUMMER_2025_4.3": IapItemDisplayStickerSummer202543;
 	"STICKER_SUMMER_2025_4.5": IapItemDisplayStickerSummer202545;
-	"STICKER_SUMMER_3.3": IapItemDisplayStickerSummer33;
-	"STICKER_SUMMER_3.5": IapItemDisplayStickerSummer35;
-	"STICKER_SUMMER_4.3": IapItemDisplayStickerSummer43;
-	"STICKER_SUMMER_4.5": IapItemDisplayStickerSummer45;
-	"STICKER_SUMMER_5.3": IapItemDisplayStickerSummer53;
-	"STICKER_SUMMER_5.5": IapItemDisplayStickerSummer55;
-	"STICKER_SUMMER_6.3": IapItemDisplayStickerSummer63;
-	"STICKER_SUMMER_6.5": IapItemDisplayStickerSummer65;
 	"STICKER_SWORDSHIELD21_1.3": IapItemDisplayStickerSwordshield2113;
 	"STICKER_SWORDSHIELD21_1.5": IapItemDisplayStickerSwordshield2115;
 	"STICKER_SWORDSHIELD21_2.3": IapItemDisplayStickerSwordshield2123;

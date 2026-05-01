@@ -866,8 +866,8 @@ import type {
 	BadgeSettingsWayfarer,
 	BadgeSettingsWeeklyChallengeEligible,
 	BadgeSettingsYokosuka1Sep2018Verny,
-	BadgeSettingsYokosuka29Aug2018Verny,
 	BadgeSettingsYokosuka2Sep2018Verny,
+	BadgeSettingsYokosuka29Aug2018Verny,
 	BadgeSettingsYokosuka30Aug2018Verny,
 	BadgeSettingsYokosuka31Aug2018Verny,
 } from "./entries";

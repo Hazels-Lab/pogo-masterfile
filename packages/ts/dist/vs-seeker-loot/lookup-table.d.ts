@@ -1,6 +1,24 @@
 // Generated from Pokémon GO masterfile — "vsSeekerLoot" lookup table.
 
 import type {
+	VsSeekerLoot1Free,
+	VsSeekerLoot1Premium,
+	VsSeekerLoot2Free,
+	VsSeekerLoot2Premium,
+	VsSeekerLoot3Free,
+	VsSeekerLoot3Premium,
+	VsSeekerLoot4Free,
+	VsSeekerLoot4Premium,
+	VsSeekerLoot5Free,
+	VsSeekerLoot5Premium,
+	VsSeekerLoot6Free,
+	VsSeekerLoot6Premium,
+	VsSeekerLoot7Free,
+	VsSeekerLoot7Premium,
+	VsSeekerLoot8Free,
+	VsSeekerLoot8Premium,
+	VsSeekerLoot9Free,
+	VsSeekerLoot9Premium,
 	VsSeekerLoot10Free,
 	VsSeekerLoot10Premium,
 	VsSeekerLoot11Free,
@@ -21,8 +39,6 @@ import type {
 	VsSeekerLoot18Premium,
 	VsSeekerLoot19Free,
 	VsSeekerLoot19Premium,
-	VsSeekerLoot1Free,
-	VsSeekerLoot1Premium,
 	VsSeekerLoot20Free,
 	VsSeekerLoot20Premium,
 	VsSeekerLoot21Free,
@@ -33,27 +49,27 @@ import type {
 	VsSeekerLoot23Premium,
 	VsSeekerLoot24Free,
 	VsSeekerLoot24Premium,
-	VsSeekerLoot2Free,
-	VsSeekerLoot2Premium,
-	VsSeekerLoot3Free,
-	VsSeekerLoot3Premium,
-	VsSeekerLoot4Free,
-	VsSeekerLoot4Premium,
-	VsSeekerLoot5Free,
-	VsSeekerLoot5Premium,
-	VsSeekerLoot6Free,
-	VsSeekerLoot6Premium,
-	VsSeekerLoot7Free,
-	VsSeekerLoot7Premium,
-	VsSeekerLoot8Free,
-	VsSeekerLoot8Premium,
-	VsSeekerLoot9Free,
-	VsSeekerLoot9Premium,
 } from "./entries";
 
 export interface VsSeekerLootLookup {
 	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_1_FREE: VsSeekerLoot1Free;
 	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_1_PREMIUM: VsSeekerLoot1Premium;
+	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_2_FREE: VsSeekerLoot2Free;
+	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_2_PREMIUM: VsSeekerLoot2Premium;
+	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_3_FREE: VsSeekerLoot3Free;
+	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_3_PREMIUM: VsSeekerLoot3Premium;
+	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_4_FREE: VsSeekerLoot4Free;
+	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_4_PREMIUM: VsSeekerLoot4Premium;
+	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_5_FREE: VsSeekerLoot5Free;
+	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_5_PREMIUM: VsSeekerLoot5Premium;
+	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_6_FREE: VsSeekerLoot6Free;
+	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_6_PREMIUM: VsSeekerLoot6Premium;
+	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_7_FREE: VsSeekerLoot7Free;
+	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_7_PREMIUM: VsSeekerLoot7Premium;
+	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_8_FREE: VsSeekerLoot8Free;
+	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_8_PREMIUM: VsSeekerLoot8Premium;
+	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_9_FREE: VsSeekerLoot9Free;
+	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_9_PREMIUM: VsSeekerLoot9Premium;
 	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_10_FREE: VsSeekerLoot10Free;
 	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_10_PREMIUM: VsSeekerLoot10Premium;
 	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_11_FREE: VsSeekerLoot11Free;
@@ -74,8 +90,6 @@ export interface VsSeekerLootLookup {
 	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_18_PREMIUM: VsSeekerLoot18Premium;
 	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_19_FREE: VsSeekerLoot19Free;
 	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_19_PREMIUM: VsSeekerLoot19Premium;
-	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_2_FREE: VsSeekerLoot2Free;
-	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_2_PREMIUM: VsSeekerLoot2Premium;
 	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_20_FREE: VsSeekerLoot20Free;
 	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_20_PREMIUM: VsSeekerLoot20Premium;
 	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_21_FREE: VsSeekerLoot21Free;
@@ -86,18 +100,4 @@ export interface VsSeekerLootLookup {
 	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_23_PREMIUM: VsSeekerLoot23Premium;
 	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_24_FREE: VsSeekerLoot24Free;
 	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_24_PREMIUM: VsSeekerLoot24Premium;
-	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_3_FREE: VsSeekerLoot3Free;
-	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_3_PREMIUM: VsSeekerLoot3Premium;
-	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_4_FREE: VsSeekerLoot4Free;
-	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_4_PREMIUM: VsSeekerLoot4Premium;
-	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_5_FREE: VsSeekerLoot5Free;
-	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_5_PREMIUM: VsSeekerLoot5Premium;
-	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_6_FREE: VsSeekerLoot6Free;
-	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_6_PREMIUM: VsSeekerLoot6Premium;
-	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_7_FREE: VsSeekerLoot7Free;
-	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_7_PREMIUM: VsSeekerLoot7Premium;
-	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_8_FREE: VsSeekerLoot8Free;
-	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_8_PREMIUM: VsSeekerLoot8Premium;
-	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_9_FREE: VsSeekerLoot9Free;
-	VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_9_PREMIUM: VsSeekerLoot9Premium;
 }

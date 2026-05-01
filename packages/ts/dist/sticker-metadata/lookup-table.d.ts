@@ -1,10 +1,6 @@
 // Generated from Pokémon GO masterfile — "stickerMetadata" lookup table.
 
 import type {
-	StickerMetadata2023collab1,
-	StickerMetadata2023collab2,
-	StickerMetadata2023collab3,
-	StickerMetadata2023collab4,
 	StickerMetadata6anniv1,
 	StickerMetadata6anniv2,
 	StickerMetadata6anniv3,
@@ -23,6 +19,10 @@ import type {
 	StickerMetadata9anniv1,
 	StickerMetadata9anniv2,
 	StickerMetadata9anniv3,
+	StickerMetadata2023collab1,
+	StickerMetadata2023collab2,
+	StickerMetadata2023collab3,
+	StickerMetadata2023collab4,
 	StickerMetadataAlolaishi1,
 	StickerMetadataAlolaishi2,
 	StickerMetadataAlolaishi3,
@@ -150,13 +150,13 @@ import type {
 	StickerMetadataFunawari05312,
 	StickerMetadataFunawari06312,
 	StickerMetadataFunawari22312,
-	StickerMetadataFunwari020608,
 	StickerMetadataFunwari10,
 	StickerMetadataFunwari11Thanku,
-	StickerMetadataFunwari1202,
 	StickerMetadataFunwari18,
 	StickerMetadataFunwari20,
 	StickerMetadataFunwari35,
+	StickerMetadataFunwari1202,
+	StickerMetadataFunwari020608,
 	StickerMetadataFunwariPidgey18,
 	StickerMetadataFurfrouheart1,
 	StickerMetadataFurfrouheart2,
@@ -175,10 +175,6 @@ import type {
 	StickerMetadataGoomycd3,
 	StickerMetadataGoomycd4,
 	StickerMetadataGotour2021,
-	StickerMetadataGotour20221,
-	StickerMetadataGotour20222,
-	StickerMetadataGotour20223,
-	StickerMetadataGotour20224,
 	StickerMetadataGotour2022Chikorita,
 	StickerMetadataGotour2022Cyndaquil,
 	StickerMetadataGotour2022Hooh,
@@ -191,6 +187,10 @@ import type {
 	StickerMetadataGotour2025Reshiram,
 	StickerMetadataGotour2025Rz,
 	StickerMetadataGotour2025Zekrom,
+	StickerMetadataGotour20221,
+	StickerMetadataGotour20222,
+	StickerMetadataGotour20223,
+	StickerMetadataGotour20224,
 	StickerMetadataGotourhoenn1,
 	StickerMetadataGotourhoenn2,
 	StickerMetadataGotourhoenn3,
@@ -206,11 +206,6 @@ import type {
 	StickerMetadataGrubbin2,
 	StickerMetadataGrubbin3,
 	StickerMetadataGrubbin4,
-	StickerMetadataHalloween2022Gengar,
-	StickerMetadataHalloween2022Pumpkaboo,
-	StickerMetadataHalloween2022Vulpix,
-	StickerMetadataHalloween2025Noibat,
-	StickerMetadataHalloween2025Teddiursa,
 	StickerMetadataHalloween21Fuwaraid,
 	StickerMetadataHalloween21Ghostpika,
 	StickerMetadataHalloween21Pikachu,
@@ -221,6 +216,11 @@ import type {
 	StickerMetadataHalloween23Phantump,
 	StickerMetadataHalloween24Froakie,
 	StickerMetadataHalloween24Rowlet,
+	StickerMetadataHalloween2022Gengar,
+	StickerMetadataHalloween2022Pumpkaboo,
+	StickerMetadataHalloween2022Vulpix,
+	StickerMetadataHalloween2025Noibat,
+	StickerMetadataHalloween2025Teddiursa,
 	StickerMetadataHalloweenBulb,
 	StickerMetadataHalloweenCharm,
 	StickerMetadataHalloweenGengarmd,
@@ -237,10 +237,6 @@ import type {
 	StickerMetadataHisuidiscoArcanine,
 	StickerMetadataHisuidiscoBraviary,
 	StickerMetadataHisuidiscoGrowlithe,
-	StickerMetadataHolidayevent211,
-	StickerMetadataHolidayevent212,
-	StickerMetadataHolidayevent213,
-	StickerMetadataHolidayevent214,
 	StickerMetadataHolidayevent22Cubchoo,
 	StickerMetadataHolidayevent22Scatterbug,
 	StickerMetadataHolidayevent22Snowpika,
@@ -250,6 +246,10 @@ import type {
 	StickerMetadataHolidayevent23Psyduck,
 	StickerMetadataHolidayevent23Seel,
 	StickerMetadataHolidayevent23Vanillish,
+	StickerMetadataHolidayevent211,
+	StickerMetadataHolidayevent212,
+	StickerMetadataHolidayevent213,
+	StickerMetadataHolidayevent214,
 	StickerMetadataHolographicChancey,
 	StickerMetadataHolographicCharmeleon,
 	StickerMetadataHolographicIvysaur,
@@ -301,10 +301,10 @@ import type {
 	StickerMetadataMukkuruCd2,
 	StickerMetadataMukkuruCd3,
 	StickerMetadataMukkuruCd4,
-	StickerMetadataNagano06312,
 	StickerMetadataNagano08,
 	StickerMetadataNagano11,
 	StickerMetadataNagano15,
+	StickerMetadataNagano06312,
 	StickerMetadataNagano15312,
 	StickerMetadataNaganoBath,
 	StickerMetadataNaganoMarill,
@@ -312,9 +312,9 @@ import type {
 	StickerMetadataNewpokemon04,
 	StickerMetadataNewpokemon20,
 	StickerMetadataNewpokemon21,
+	StickerMetadataNewpokemon37,
 	StickerMetadataNewpokemon215,
 	StickerMetadataNewpokemon233,
-	StickerMetadataNewpokemon37,
 	StickerMetadataNewteamrascal,
 	StickerMetadataNewteamrascalpikachu26,
 	StickerMetadataNewyears221,
@@ -365,51 +365,51 @@ import type {
 	StickerMetadataPgofest2022Shayminsky,
 	StickerMetadataPgofest2022Uturoid,
 	StickerMetadataPgoFest2023,
+	StickerMetadataPgoFest2023Logo,
+	StickerMetadataPgoFest2024,
+	StickerMetadataPgoFest2024Logo,
+	StickerMetadataPgoFest2025,
+	StickerMetadataPgoFest2025Logo,
+	StickerMetadataPgoFest2026,
+	StickerMetadataPgoFest2026Logo,
 	StickerMetadataPgoFest20231,
 	StickerMetadataPgoFest20232,
 	StickerMetadataPgoFest20233,
 	StickerMetadataPgoFest20234,
 	StickerMetadataPgoFest20235,
 	StickerMetadataPgoFest20236,
-	StickerMetadataPgoFest2023Logo,
-	StickerMetadataPgoFest2024,
 	StickerMetadataPgoFest20241,
 	StickerMetadataPgoFest20242,
 	StickerMetadataPgoFest20243,
 	StickerMetadataPgoFest20244,
 	StickerMetadataPgoFest20245,
 	StickerMetadataPgoFest20246,
-	StickerMetadataPgoFest2024Logo,
-	StickerMetadataPgoFest2025,
 	StickerMetadataPgoFest20251,
 	StickerMetadataPgoFest20252,
 	StickerMetadataPgoFest20253,
-	StickerMetadataPgoFest2025Logo,
-	StickerMetadataPgoFest2026,
 	StickerMetadataPgoFest20261,
 	StickerMetadataPgoFest20262,
 	StickerMetadataPgoFest20263,
 	StickerMetadataPgoFest20264,
-	StickerMetadataPgoFest2026Logo,
 	StickerMetadataPgoFestVictini05,
 	StickerMetadataPgoTour2024,
+	StickerMetadataPgoTour2024Logo,
+	StickerMetadataPgoTour2026,
+	StickerMetadataPgoTour2026Logo,
 	StickerMetadataPgoTour20241,
 	StickerMetadataPgoTour20242,
 	StickerMetadataPgoTour20243,
 	StickerMetadataPgoTour20244,
 	StickerMetadataPgoTour20245,
-	StickerMetadataPgoTour2024Logo,
-	StickerMetadataPgoTour2026,
 	StickerMetadataPgoTour20261,
 	StickerMetadataPgoTour20262,
 	StickerMetadataPgoTour20263,
-	StickerMetadataPgoTour2026Logo,
 	StickerMetadataPgoWildarea2024,
+	StickerMetadataPgoWildarea2024Logo,
 	StickerMetadataPgoWildarea20241,
 	StickerMetadataPgoWildarea20242,
 	StickerMetadataPgoWildarea20243,
 	StickerMetadataPgoWildarea20244,
-	StickerMetadataPgoWildarea2024Logo,
 	StickerMetadataPika14Thankyou,
 	StickerMetadataPikaairadventure1,
 	StickerMetadataPikaairadventure2,
@@ -516,6 +516,10 @@ import type {
 	StickerMetadataStufful4,
 	StickerMetadataSummer1,
 	StickerMetadataSummer2,
+	StickerMetadataSummer3,
+	StickerMetadataSummer4,
+	StickerMetadataSummer5,
+	StickerMetadataSummer6,
 	StickerMetadataSummer2023Blastoise,
 	StickerMetadataSummer2023Butterfree,
 	StickerMetadataSummer2023Clamperl,
@@ -532,10 +536,6 @@ import type {
 	StickerMetadataSummer20252,
 	StickerMetadataSummer20253,
 	StickerMetadataSummer20254,
-	StickerMetadataSummer3,
-	StickerMetadataSummer4,
-	StickerMetadataSummer5,
-	StickerMetadataSummer6,
 	StickerMetadataSwordshield211,
 	StickerMetadataSwordshield212,
 	StickerMetadataSwordshield213,
@@ -610,10 +610,6 @@ import type {
 } from "./entries";
 
 export interface StickerMetadataLookup {
-	STICKER_2023COLLAB_1: StickerMetadata2023collab1;
-	STICKER_2023COLLAB_2: StickerMetadata2023collab2;
-	STICKER_2023COLLAB_3: StickerMetadata2023collab3;
-	STICKER_2023COLLAB_4: StickerMetadata2023collab4;
 	STICKER_6ANNIV_1: StickerMetadata6anniv1;
 	STICKER_6ANNIV_2: StickerMetadata6anniv2;
 	STICKER_6ANNIV_3: StickerMetadata6anniv3;
@@ -632,6 +628,10 @@ export interface StickerMetadataLookup {
 	STICKER_9ANNIV_1: StickerMetadata9anniv1;
 	STICKER_9ANNIV_2: StickerMetadata9anniv2;
 	STICKER_9ANNIV_3: StickerMetadata9anniv3;
+	STICKER_2023COLLAB_1: StickerMetadata2023collab1;
+	STICKER_2023COLLAB_2: StickerMetadata2023collab2;
+	STICKER_2023COLLAB_3: StickerMetadata2023collab3;
+	STICKER_2023COLLAB_4: StickerMetadata2023collab4;
 	STICKER_ALOLAISHI_1: StickerMetadataAlolaishi1;
 	STICKER_ALOLAISHI_2: StickerMetadataAlolaishi2;
 	STICKER_ALOLAISHI_3: StickerMetadataAlolaishi3;
@@ -821,11 +821,6 @@ export interface StickerMetadataLookup {
 	STICKER_HALLOWEEN_PIKA: StickerMetadataHalloweenPika;
 	STICKER_HALLOWEEN_SABLEYEMD: StickerMetadataHalloweenSableyemd;
 	STICKER_HALLOWEEN_SQU: StickerMetadataHalloweenSqu;
-	STICKER_HALLOWEEN2022_GENGAR: StickerMetadataHalloween2022Gengar;
-	STICKER_HALLOWEEN2022_PUMPKABOO: StickerMetadataHalloween2022Pumpkaboo;
-	STICKER_HALLOWEEN2022_VULPIX: StickerMetadataHalloween2022Vulpix;
-	STICKER_HALLOWEEN2025_NOIBAT: StickerMetadataHalloween2025Noibat;
-	STICKER_HALLOWEEN2025_TEDDIURSA: StickerMetadataHalloween2025Teddiursa;
 	STICKER_HALLOWEEN21_FUWARAID: StickerMetadataHalloween21Fuwaraid;
 	STICKER_HALLOWEEN21_GHOSTPIKA: StickerMetadataHalloween21Ghostpika;
 	STICKER_HALLOWEEN21_PIKACHU: StickerMetadataHalloween21Pikachu;
@@ -836,6 +831,11 @@ export interface StickerMetadataLookup {
 	STICKER_HALLOWEEN23_PHANTUMP: StickerMetadataHalloween23Phantump;
 	STICKER_HALLOWEEN24_FROAKIE: StickerMetadataHalloween24Froakie;
 	STICKER_HALLOWEEN24_ROWLET: StickerMetadataHalloween24Rowlet;
+	STICKER_HALLOWEEN2022_GENGAR: StickerMetadataHalloween2022Gengar;
+	STICKER_HALLOWEEN2022_PUMPKABOO: StickerMetadataHalloween2022Pumpkaboo;
+	STICKER_HALLOWEEN2022_VULPIX: StickerMetadataHalloween2022Vulpix;
+	STICKER_HALLOWEEN2025_NOIBAT: StickerMetadataHalloween2025Noibat;
+	STICKER_HALLOWEEN2025_TEDDIURSA: StickerMetadataHalloween2025Teddiursa;
 	STICKER_HARU_CHERRIM: StickerMetadataHaruCherrim;
 	STICKER_HARU_DREDEARPIKA: StickerMetadataHaruDredearpika;
 	STICKER_HARU_KIREIHANA: StickerMetadataHaruKireihana;
@@ -1125,6 +1125,10 @@ export interface StickerMetadataLookup {
 	STICKER_STUFFUL_4: StickerMetadataStufful4;
 	STICKER_SUMMER_1: StickerMetadataSummer1;
 	STICKER_SUMMER_2: StickerMetadataSummer2;
+	STICKER_SUMMER_3: StickerMetadataSummer3;
+	STICKER_SUMMER_4: StickerMetadataSummer4;
+	STICKER_SUMMER_5: StickerMetadataSummer5;
+	STICKER_SUMMER_6: StickerMetadataSummer6;
 	STICKER_SUMMER_2023_BLASTOISE: StickerMetadataSummer2023Blastoise;
 	STICKER_SUMMER_2023_BUTTERFREE: StickerMetadataSummer2023Butterfree;
 	STICKER_SUMMER_2023_CLAMPERL: StickerMetadataSummer2023Clamperl;
@@ -1141,10 +1145,6 @@ export interface StickerMetadataLookup {
 	STICKER_SUMMER_2025_2: StickerMetadataSummer20252;
 	STICKER_SUMMER_2025_3: StickerMetadataSummer20253;
 	STICKER_SUMMER_2025_4: StickerMetadataSummer20254;
-	STICKER_SUMMER_3: StickerMetadataSummer3;
-	STICKER_SUMMER_4: StickerMetadataSummer4;
-	STICKER_SUMMER_5: StickerMetadataSummer5;
-	STICKER_SUMMER_6: StickerMetadataSummer6;
 	STICKER_SWORDSHIELD21_1: StickerMetadataSwordshield211;
 	STICKER_SWORDSHIELD21_2: StickerMetadataSwordshield212;
 	STICKER_SWORDSHIELD21_3: StickerMetadataSwordshield213;

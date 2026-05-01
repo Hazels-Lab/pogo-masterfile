@@ -18,7 +18,6 @@ import type {
 	InvasionNpcDisplaySettingsEventGiovanniUnticketed,
 	InvasionNpcDisplaySettingsEventNpc0,
 	InvasionNpcDisplaySettingsEventNpc1,
-	InvasionNpcDisplaySettingsEventNpc10,
 	InvasionNpcDisplaySettingsEventNpc2,
 	InvasionNpcDisplaySettingsEventNpc3,
 	InvasionNpcDisplaySettingsEventNpc4,
@@ -27,6 +26,7 @@ import type {
 	InvasionNpcDisplaySettingsEventNpc7,
 	InvasionNpcDisplaySettingsEventNpc8,
 	InvasionNpcDisplaySettingsEventNpc9,
+	InvasionNpcDisplaySettingsEventNpc10,
 	InvasionNpcDisplaySettingsEventSierraUnticketed,
 	InvasionNpcDisplaySettingsExecutiveArlo,
 	InvasionNpcDisplaySettingsExecutiveCliff,
@@ -88,7 +88,6 @@ export interface InvasionNpcDisplaySettingsLookup {
 	CHARACTER_EVENT_GIOVANNI_UNTICKETED: InvasionNpcDisplaySettingsEventGiovanniUnticketed;
 	CHARACTER_EVENT_NPC_0: InvasionNpcDisplaySettingsEventNpc0;
 	CHARACTER_EVENT_NPC_1: InvasionNpcDisplaySettingsEventNpc1;
-	CHARACTER_EVENT_NPC_10: InvasionNpcDisplaySettingsEventNpc10;
 	CHARACTER_EVENT_NPC_2: InvasionNpcDisplaySettingsEventNpc2;
 	CHARACTER_EVENT_NPC_3: InvasionNpcDisplaySettingsEventNpc3;
 	CHARACTER_EVENT_NPC_4: InvasionNpcDisplaySettingsEventNpc4;
@@ -97,6 +96,7 @@ export interface InvasionNpcDisplaySettingsLookup {
 	CHARACTER_EVENT_NPC_7: InvasionNpcDisplaySettingsEventNpc7;
 	CHARACTER_EVENT_NPC_8: InvasionNpcDisplaySettingsEventNpc8;
 	CHARACTER_EVENT_NPC_9: InvasionNpcDisplaySettingsEventNpc9;
+	CHARACTER_EVENT_NPC_10: InvasionNpcDisplaySettingsEventNpc10;
 	CHARACTER_EVENT_SIERRA_UNTICKETED: InvasionNpcDisplaySettingsEventSierraUnticketed;
 	CHARACTER_EXECUTIVE_ARLO: InvasionNpcDisplaySettingsExecutiveArlo;
 	CHARACTER_EXECUTIVE_CLIFF: InvasionNpcDisplaySettingsExecutiveCliff;

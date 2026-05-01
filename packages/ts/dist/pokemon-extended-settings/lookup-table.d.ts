@@ -2409,6 +2409,7 @@ import type {
 	PokemonExtendedSettingsV0998PokemonBaxcalibur,
 	PokemonExtendedSettingsV0998PokemonBaxcaliburNormal,
 	PokemonExtendedSettingsV0999PokemonGimmighoul,
+	PokemonExtendedSettingsV999PokemonGimmighoul,
 	PokemonExtendedSettingsV0999PokemonGimmighoulCoinA1,
 	PokemonExtendedSettingsV0999PokemonGimmighoulNormal,
 	PokemonExtendedSettingsV1000PokemonGholdengo,
@@ -2464,7 +2465,6 @@ import type {
 	PokemonExtendedSettingsV1024PokemonTerapagosNormal,
 	PokemonExtendedSettingsV1025PokemonPecharunt,
 	PokemonExtendedSettingsV1025PokemonPecharuntNormal,
-	PokemonExtendedSettingsV999PokemonGimmighoul,
 } from "./entries";
 
 export interface PokemonExtendedSettingsLookup {
@@ -4876,6 +4876,7 @@ export interface PokemonExtendedSettingsLookup {
 	EXTENDED_V0998_POKEMON_BAXCALIBUR: PokemonExtendedSettingsV0998PokemonBaxcalibur;
 	EXTENDED_V0998_POKEMON_BAXCALIBUR_NORMAL: PokemonExtendedSettingsV0998PokemonBaxcaliburNormal;
 	EXTENDED_V0999_POKEMON_GIMMIGHOUL: PokemonExtendedSettingsV0999PokemonGimmighoul;
+	EXTENDED_V999_POKEMON_GIMMIGHOUL: PokemonExtendedSettingsV999PokemonGimmighoul;
 	EXTENDED_V0999_POKEMON_GIMMIGHOUL_COIN_A1: PokemonExtendedSettingsV0999PokemonGimmighoulCoinA1;
 	EXTENDED_V0999_POKEMON_GIMMIGHOUL_NORMAL: PokemonExtendedSettingsV0999PokemonGimmighoulNormal;
 	EXTENDED_V1000_POKEMON_GHOLDENGO: PokemonExtendedSettingsV1000PokemonGholdengo;
@@ -4931,5 +4932,4 @@ export interface PokemonExtendedSettingsLookup {
 	EXTENDED_V1024_POKEMON_TERAPAGOS_NORMAL: PokemonExtendedSettingsV1024PokemonTerapagosNormal;
 	EXTENDED_V1025_POKEMON_PECHARUNT: PokemonExtendedSettingsV1025PokemonPecharunt;
 	EXTENDED_V1025_POKEMON_PECHARUNT_NORMAL: PokemonExtendedSettingsV1025PokemonPecharuntNormal;
-	EXTENDED_V999_POKEMON_GIMMIGHOUL: PokemonExtendedSettingsV999PokemonGimmighoul;
 }

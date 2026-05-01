@@ -1,6 +1,14 @@
 // Generated from Pokémon GO masterfile — "levelUpRewards" lookup table.
 
 import type {
+	LevelUpRewardsAwardsLevel2,
+	LevelUpRewardsAwardsLevel3,
+	LevelUpRewardsAwardsLevel4,
+	LevelUpRewardsAwardsLevel5,
+	LevelUpRewardsAwardsLevel6,
+	LevelUpRewardsAwardsLevel7,
+	LevelUpRewardsAwardsLevel8,
+	LevelUpRewardsAwardsLevel9,
 	LevelUpRewardsAwardsLevel10,
 	LevelUpRewardsAwardsLevel11,
 	LevelUpRewardsAwardsLevel12,
@@ -11,7 +19,6 @@ import type {
 	LevelUpRewardsAwardsLevel17,
 	LevelUpRewardsAwardsLevel18,
 	LevelUpRewardsAwardsLevel19,
-	LevelUpRewardsAwardsLevel2,
 	LevelUpRewardsAwardsLevel20,
 	LevelUpRewardsAwardsLevel21,
 	LevelUpRewardsAwardsLevel22,
@@ -22,7 +29,6 @@ import type {
 	LevelUpRewardsAwardsLevel27,
 	LevelUpRewardsAwardsLevel28,
 	LevelUpRewardsAwardsLevel29,
-	LevelUpRewardsAwardsLevel3,
 	LevelUpRewardsAwardsLevel30,
 	LevelUpRewardsAwardsLevel31,
 	LevelUpRewardsAwardsLevel32,
@@ -33,7 +39,6 @@ import type {
 	LevelUpRewardsAwardsLevel37,
 	LevelUpRewardsAwardsLevel38,
 	LevelUpRewardsAwardsLevel39,
-	LevelUpRewardsAwardsLevel4,
 	LevelUpRewardsAwardsLevel40,
 	LevelUpRewardsAwardsLevel41,
 	LevelUpRewardsAwardsLevel42,
@@ -44,7 +49,6 @@ import type {
 	LevelUpRewardsAwardsLevel47,
 	LevelUpRewardsAwardsLevel48,
 	LevelUpRewardsAwardsLevel49,
-	LevelUpRewardsAwardsLevel5,
 	LevelUpRewardsAwardsLevel50,
 	LevelUpRewardsAwardsLevel51,
 	LevelUpRewardsAwardsLevel52,
@@ -55,7 +59,6 @@ import type {
 	LevelUpRewardsAwardsLevel57,
 	LevelUpRewardsAwardsLevel58,
 	LevelUpRewardsAwardsLevel59,
-	LevelUpRewardsAwardsLevel6,
 	LevelUpRewardsAwardsLevel60,
 	LevelUpRewardsAwardsLevel61,
 	LevelUpRewardsAwardsLevel62,
@@ -66,7 +69,6 @@ import type {
 	LevelUpRewardsAwardsLevel67,
 	LevelUpRewardsAwardsLevel68,
 	LevelUpRewardsAwardsLevel69,
-	LevelUpRewardsAwardsLevel7,
 	LevelUpRewardsAwardsLevel70,
 	LevelUpRewardsAwardsLevel71,
 	LevelUpRewardsAwardsLevel72,
@@ -77,9 +79,7 @@ import type {
 	LevelUpRewardsAwardsLevel77,
 	LevelUpRewardsAwardsLevel78,
 	LevelUpRewardsAwardsLevel79,
-	LevelUpRewardsAwardsLevel8,
 	LevelUpRewardsAwardsLevel80,
-	LevelUpRewardsAwardsLevel9,
 	LevelUpRewardsBackfillAwardsLevel10,
 	LevelUpRewardsBackfillAwardsLevel20,
 	LevelUpRewardsBackfillAwardsLevel25,
@@ -101,6 +101,14 @@ import type {
 } from "./entries";
 
 export interface LevelUpRewardsLookup {
+	AWARDS_LEVEL_2: LevelUpRewardsAwardsLevel2;
+	AWARDS_LEVEL_3: LevelUpRewardsAwardsLevel3;
+	AWARDS_LEVEL_4: LevelUpRewardsAwardsLevel4;
+	AWARDS_LEVEL_5: LevelUpRewardsAwardsLevel5;
+	AWARDS_LEVEL_6: LevelUpRewardsAwardsLevel6;
+	AWARDS_LEVEL_7: LevelUpRewardsAwardsLevel7;
+	AWARDS_LEVEL_8: LevelUpRewardsAwardsLevel8;
+	AWARDS_LEVEL_9: LevelUpRewardsAwardsLevel9;
 	AWARDS_LEVEL_10: LevelUpRewardsAwardsLevel10;
 	AWARDS_LEVEL_11: LevelUpRewardsAwardsLevel11;
 	AWARDS_LEVEL_12: LevelUpRewardsAwardsLevel12;
@@ -111,7 +119,6 @@ export interface LevelUpRewardsLookup {
 	AWARDS_LEVEL_17: LevelUpRewardsAwardsLevel17;
 	AWARDS_LEVEL_18: LevelUpRewardsAwardsLevel18;
 	AWARDS_LEVEL_19: LevelUpRewardsAwardsLevel19;
-	AWARDS_LEVEL_2: LevelUpRewardsAwardsLevel2;
 	AWARDS_LEVEL_20: LevelUpRewardsAwardsLevel20;
 	AWARDS_LEVEL_21: LevelUpRewardsAwardsLevel21;
 	AWARDS_LEVEL_22: LevelUpRewardsAwardsLevel22;
@@ -122,7 +129,6 @@ export interface LevelUpRewardsLookup {
 	AWARDS_LEVEL_27: LevelUpRewardsAwardsLevel27;
 	AWARDS_LEVEL_28: LevelUpRewardsAwardsLevel28;
 	AWARDS_LEVEL_29: LevelUpRewardsAwardsLevel29;
-	AWARDS_LEVEL_3: LevelUpRewardsAwardsLevel3;
 	AWARDS_LEVEL_30: LevelUpRewardsAwardsLevel30;
 	AWARDS_LEVEL_31: LevelUpRewardsAwardsLevel31;
 	AWARDS_LEVEL_32: LevelUpRewardsAwardsLevel32;
@@ -133,7 +139,6 @@ export interface LevelUpRewardsLookup {
 	AWARDS_LEVEL_37: LevelUpRewardsAwardsLevel37;
 	AWARDS_LEVEL_38: LevelUpRewardsAwardsLevel38;
 	AWARDS_LEVEL_39: LevelUpRewardsAwardsLevel39;
-	AWARDS_LEVEL_4: LevelUpRewardsAwardsLevel4;
 	AWARDS_LEVEL_40: LevelUpRewardsAwardsLevel40;
 	AWARDS_LEVEL_41: LevelUpRewardsAwardsLevel41;
 	AWARDS_LEVEL_42: LevelUpRewardsAwardsLevel42;
@@ -144,7 +149,6 @@ export interface LevelUpRewardsLookup {
 	AWARDS_LEVEL_47: LevelUpRewardsAwardsLevel47;
 	AWARDS_LEVEL_48: LevelUpRewardsAwardsLevel48;
 	AWARDS_LEVEL_49: LevelUpRewardsAwardsLevel49;
-	AWARDS_LEVEL_5: LevelUpRewardsAwardsLevel5;
 	AWARDS_LEVEL_50: LevelUpRewardsAwardsLevel50;
 	AWARDS_LEVEL_51: LevelUpRewardsAwardsLevel51;
 	AWARDS_LEVEL_52: LevelUpRewardsAwardsLevel52;
@@ -155,7 +159,6 @@ export interface LevelUpRewardsLookup {
 	AWARDS_LEVEL_57: LevelUpRewardsAwardsLevel57;
 	AWARDS_LEVEL_58: LevelUpRewardsAwardsLevel58;
 	AWARDS_LEVEL_59: LevelUpRewardsAwardsLevel59;
-	AWARDS_LEVEL_6: LevelUpRewardsAwardsLevel6;
 	AWARDS_LEVEL_60: LevelUpRewardsAwardsLevel60;
 	AWARDS_LEVEL_61: LevelUpRewardsAwardsLevel61;
 	AWARDS_LEVEL_62: LevelUpRewardsAwardsLevel62;
@@ -166,7 +169,6 @@ export interface LevelUpRewardsLookup {
 	AWARDS_LEVEL_67: LevelUpRewardsAwardsLevel67;
 	AWARDS_LEVEL_68: LevelUpRewardsAwardsLevel68;
 	AWARDS_LEVEL_69: LevelUpRewardsAwardsLevel69;
-	AWARDS_LEVEL_7: LevelUpRewardsAwardsLevel7;
 	AWARDS_LEVEL_70: LevelUpRewardsAwardsLevel70;
 	AWARDS_LEVEL_71: LevelUpRewardsAwardsLevel71;
 	AWARDS_LEVEL_72: LevelUpRewardsAwardsLevel72;
@@ -177,9 +179,7 @@ export interface LevelUpRewardsLookup {
 	AWARDS_LEVEL_77: LevelUpRewardsAwardsLevel77;
 	AWARDS_LEVEL_78: LevelUpRewardsAwardsLevel78;
 	AWARDS_LEVEL_79: LevelUpRewardsAwardsLevel79;
-	AWARDS_LEVEL_8: LevelUpRewardsAwardsLevel8;
 	AWARDS_LEVEL_80: LevelUpRewardsAwardsLevel80;
-	AWARDS_LEVEL_9: LevelUpRewardsAwardsLevel9;
 	BACKFILL_AWARDS_LEVEL_10: LevelUpRewardsBackfillAwardsLevel10;
 	BACKFILL_AWARDS_LEVEL_20: LevelUpRewardsBackfillAwardsLevel20;
 	BACKFILL_AWARDS_LEVEL_25: LevelUpRewardsBackfillAwardsLevel25;

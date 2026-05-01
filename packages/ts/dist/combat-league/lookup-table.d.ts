@@ -4,35 +4,35 @@ import type {
 	CombatLeagueDefaultGreat,
 	CombatLeagueDefaultMaster,
 	CombatLeagueDefaultUltra,
+	CombatLeagueSafariBarcelona2023Test,
 	CombatLeagueSafariBarcelona202301,
 	CombatLeagueSafariBarcelona202302,
-	CombatLeagueSafariBarcelona2023Test,
+	CombatLeagueSafariMexicocity2023Test,
 	CombatLeagueSafariMexicocity202301,
 	CombatLeagueSafariMexicocity202302,
-	CombatLeagueSafariMexicocity2023Test,
+	CombatLeagueSafariSeoul2023Test,
 	CombatLeagueSafariSeoul202301,
 	CombatLeagueSafariSeoul202302,
-	CombatLeagueSafariSeoul2023Test,
+	CombatLeagueSafariZoneGoyang2022Post,
+	CombatLeagueSafariZoneGoyang2022Test,
 	CombatLeagueSafariZoneGoyang202201,
 	CombatLeagueSafariZoneGoyang202202,
 	CombatLeagueSafariZoneGoyang202203,
-	CombatLeagueSafariZoneGoyang2022Post,
-	CombatLeagueSafariZoneGoyang2022Test,
+	CombatLeagueSafariZoneSeville2022Test,
 	CombatLeagueSafariZoneSeville202201,
 	CombatLeagueSafariZoneSeville202202,
 	CombatLeagueSafariZoneSeville202203,
 	CombatLeagueSafariZoneSeville202204,
-	CombatLeagueSafariZoneSeville2022Test,
+	CombatLeagueSafariZoneSingapore2022Post,
+	CombatLeagueSafariZoneSingapore2022Test,
 	CombatLeagueSafariZoneSingapore202201,
 	CombatLeagueSafariZoneSingapore202202,
 	CombatLeagueSafariZoneSingapore202203,
-	CombatLeagueSafariZoneSingapore2022Post,
-	CombatLeagueSafariZoneSingapore2022Test,
+	CombatLeagueSafariZoneTaipei2022Post,
+	CombatLeagueSafariZoneTaipei2022Test,
 	CombatLeagueSafariZoneTaipei202201,
 	CombatLeagueSafariZoneTaipei202202,
 	CombatLeagueSafariZoneTaipei202203,
-	CombatLeagueSafariZoneTaipei2022Post,
-	CombatLeagueSafariZoneTaipei2022Test,
 	CombatLeagueVsSeekerColorGreat,
 	CombatLeagueVsSeekerElementRemix,
 	CombatLeagueVsSeekerEvolution,
@@ -43,6 +43,7 @@ import type {
 	CombatLeagueVsSeekerGreatBidoof,
 	CombatLeagueVsSeekerGreatCatch,
 	CombatLeagueVsSeekerGreatCatchGofest2022,
+	CombatLeagueVsSeekerGreatCatchS8,
 	CombatLeagueVsSeekerGreatCatchS13,
 	CombatLeagueVsSeekerGreatCatchS14,
 	CombatLeagueVsSeekerGreatCatchS15,
@@ -51,7 +52,6 @@ import type {
 	CombatLeagueVsSeekerGreatCatchS19,
 	CombatLeagueVsSeekerGreatCatchS20,
 	CombatLeagueVsSeekerGreatCatchS22,
-	CombatLeagueVsSeekerGreatCatchS8,
 	CombatLeagueVsSeekerGreatCatchSeason11,
 	CombatLeagueVsSeekerGreatChampionshipSeries,
 	CombatLeagueVsSeekerGreatElectric,
@@ -151,6 +151,7 @@ export interface CombatLeagueLookup {
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_BIDOOF: CombatLeagueVsSeekerGreatBidoof;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH: CombatLeagueVsSeekerGreatCatch;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_GOFEST2022: CombatLeagueVsSeekerGreatCatchGofest2022;
+	COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S8: CombatLeagueVsSeekerGreatCatchS8;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S13: CombatLeagueVsSeekerGreatCatchS13;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S14: CombatLeagueVsSeekerGreatCatchS14;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S15: CombatLeagueVsSeekerGreatCatchS15;
@@ -159,7 +160,6 @@ export interface CombatLeagueLookup {
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S19: CombatLeagueVsSeekerGreatCatchS19;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S20: CombatLeagueVsSeekerGreatCatchS20;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S22: CombatLeagueVsSeekerGreatCatchS22;
-	COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S8: CombatLeagueVsSeekerGreatCatchS8;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_SEASON11: CombatLeagueVsSeekerGreatCatchSeason11;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_SERIES: CombatLeagueVsSeekerGreatChampionshipSeries;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_ELECTRIC: CombatLeagueVsSeekerGreatElectric;

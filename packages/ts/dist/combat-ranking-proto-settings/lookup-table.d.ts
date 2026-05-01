@@ -2,6 +2,8 @@
 
 import type {
 	CombatRankingProtoSettingsSettings,
+	CombatRankingProtoSettingsSettingsS8,
+	CombatRankingProtoSettingsSettingsS9,
 	CombatRankingProtoSettingsSettingsS10,
 	CombatRankingProtoSettingsSettingsS13,
 	CombatRankingProtoSettingsSettingsS14,
@@ -20,12 +22,12 @@ import type {
 	CombatRankingProtoSettingsSettingsS27,
 	CombatRankingProtoSettingsSettingsS28,
 	CombatRankingProtoSettingsSettingsS29,
-	CombatRankingProtoSettingsSettingsS8,
-	CombatRankingProtoSettingsSettingsS9,
 } from "./entries";
 
 export interface CombatRankingProtoSettingsLookup {
 	COMBAT_RANKING_SETTINGS: CombatRankingProtoSettingsSettings;
+	COMBAT_RANKING_SETTINGS_S8: CombatRankingProtoSettingsSettingsS8;
+	COMBAT_RANKING_SETTINGS_S9: CombatRankingProtoSettingsSettingsS9;
 	COMBAT_RANKING_SETTINGS_S10: CombatRankingProtoSettingsSettingsS10;
 	COMBAT_RANKING_SETTINGS_S13: CombatRankingProtoSettingsSettingsS13;
 	COMBAT_RANKING_SETTINGS_S14: CombatRankingProtoSettingsSettingsS14;
@@ -44,6 +46,4 @@ export interface CombatRankingProtoSettingsLookup {
 	COMBAT_RANKING_SETTINGS_S27: CombatRankingProtoSettingsSettingsS27;
 	COMBAT_RANKING_SETTINGS_S28: CombatRankingProtoSettingsSettingsS28;
 	COMBAT_RANKING_SETTINGS_S29: CombatRankingProtoSettingsSettingsS29;
-	COMBAT_RANKING_SETTINGS_S8: CombatRankingProtoSettingsSettingsS8;
-	COMBAT_RANKING_SETTINGS_S9: CombatRankingProtoSettingsSettingsS9;
 }

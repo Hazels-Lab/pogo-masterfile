@@ -163,6 +163,14 @@ import type {
 	AvatarCustomizationFGofestPikachuvisor,
 	AvatarCustomizationFHairDefault0,
 	AvatarCustomizationFHairDefault1,
+	AvatarCustomizationFHairDefault2,
+	AvatarCustomizationFHairDefault3,
+	AvatarCustomizationFHairDefault4,
+	AvatarCustomizationFHairDefault5,
+	AvatarCustomizationFHairDefault6,
+	AvatarCustomizationFHairDefault7,
+	AvatarCustomizationFHairDefault8,
+	AvatarCustomizationFHairDefault9,
 	AvatarCustomizationFHairDefault10,
 	AvatarCustomizationFHairDefault11,
 	AvatarCustomizationFHairDefault12,
@@ -173,14 +181,6 @@ import type {
 	AvatarCustomizationFHairDefault17,
 	AvatarCustomizationFHairDefault18,
 	AvatarCustomizationFHairDefault19,
-	AvatarCustomizationFHairDefault2,
-	AvatarCustomizationFHairDefault3,
-	AvatarCustomizationFHairDefault4,
-	AvatarCustomizationFHairDefault5,
-	AvatarCustomizationFHairDefault6,
-	AvatarCustomizationFHairDefault7,
-	AvatarCustomizationFHairDefault8,
-	AvatarCustomizationFHairDefault9,
 	AvatarCustomizationFHat6thanniversary,
 	AvatarCustomizationFHatAcetrainersm,
 	AvatarCustomizationFHatAdventure0,
@@ -656,10 +656,10 @@ import type {
 	AvatarCustomizationFShirtPkmnshirts165,
 	AvatarCustomizationFShirtPkmnshirts188,
 	AvatarCustomizationFShirtPkmnshirts201,
+	AvatarCustomizationFShirtPkmnshirts238,
 	AvatarCustomizationFShirtPkmnshirts202100,
 	AvatarCustomizationFShirtPkmnshirts202101,
 	AvatarCustomizationFShirtPkmnshirts202102,
-	AvatarCustomizationFShirtPkmnshirts238,
 	AvatarCustomizationFShirtPoloshirt,
 	AvatarCustomizationFShirtPoloshirt1,
 	AvatarCustomizationFShirtPoloshirt2,
@@ -870,12 +870,10 @@ import type {
 	AvatarCustomizationFShoesWinterboots0,
 	AvatarCustomizationFShoesWinterboots1,
 	AvatarCustomizationFShoesWinterboots2,
-	AvatarCustomizationFShoesWinterboots2023,
 	AvatarCustomizationFShoesWinterboots3,
+	AvatarCustomizationFShoesWinterboots2023,
 	AvatarCustomizationFSkin0,
 	AvatarCustomizationFSkin1,
-	AvatarCustomizationFSkin10,
-	AvatarCustomizationFSkin11,
 	AvatarCustomizationFSkin2,
 	AvatarCustomizationFSkin3,
 	AvatarCustomizationFSkin4,
@@ -884,6 +882,8 @@ import type {
 	AvatarCustomizationFSkin7,
 	AvatarCustomizationFSkin8,
 	AvatarCustomizationFSkin9,
+	AvatarCustomizationFSkin10,
+	AvatarCustomizationFSkin11,
 	AvatarCustomizationFSocksDefault0,
 	AvatarCustomizationFSocksDefault1,
 	AvatarCustomizationFSocksDefault2,
@@ -1045,6 +1045,14 @@ import type {
 	AvatarCustomizationMGofestPikachuvisor,
 	AvatarCustomizationMHairDefault0,
 	AvatarCustomizationMHairDefault1,
+	AvatarCustomizationMHairDefault2,
+	AvatarCustomizationMHairDefault3,
+	AvatarCustomizationMHairDefault4,
+	AvatarCustomizationMHairDefault5,
+	AvatarCustomizationMHairDefault6,
+	AvatarCustomizationMHairDefault7,
+	AvatarCustomizationMHairDefault8,
+	AvatarCustomizationMHairDefault9,
 	AvatarCustomizationMHairDefault10,
 	AvatarCustomizationMHairDefault11,
 	AvatarCustomizationMHairDefault12,
@@ -1055,14 +1063,6 @@ import type {
 	AvatarCustomizationMHairDefault17,
 	AvatarCustomizationMHairDefault18,
 	AvatarCustomizationMHairDefault19,
-	AvatarCustomizationMHairDefault2,
-	AvatarCustomizationMHairDefault3,
-	AvatarCustomizationMHairDefault4,
-	AvatarCustomizationMHairDefault5,
-	AvatarCustomizationMHairDefault6,
-	AvatarCustomizationMHairDefault7,
-	AvatarCustomizationMHairDefault8,
-	AvatarCustomizationMHairDefault9,
 	AvatarCustomizationMHat6thanniversary,
 	AvatarCustomizationMHatAcetrainersm,
 	AvatarCustomizationMHatAdventure0,
@@ -1525,10 +1525,10 @@ import type {
 	AvatarCustomizationMShirtPkmnshirts165,
 	AvatarCustomizationMShirtPkmnshirts188,
 	AvatarCustomizationMShirtPkmnshirts201,
+	AvatarCustomizationMShirtPkmnshirts238,
 	AvatarCustomizationMShirtPkmnshirts202100,
 	AvatarCustomizationMShirtPkmnshirts202101,
 	AvatarCustomizationMShirtPkmnshirts202102,
-	AvatarCustomizationMShirtPkmnshirts238,
 	AvatarCustomizationMShirtPoloshirt,
 	AvatarCustomizationMShirtPoloshirt1,
 	AvatarCustomizationMShirtPoloshirt2,
@@ -1733,12 +1733,10 @@ import type {
 	AvatarCustomizationMShoesWinterboots0,
 	AvatarCustomizationMShoesWinterboots1,
 	AvatarCustomizationMShoesWinterboots2,
-	AvatarCustomizationMShoesWinterboots2023,
 	AvatarCustomizationMShoesWinterboots3,
+	AvatarCustomizationMShoesWinterboots2023,
 	AvatarCustomizationMSkin0,
 	AvatarCustomizationMSkin1,
-	AvatarCustomizationMSkin10,
-	AvatarCustomizationMSkin11,
 	AvatarCustomizationMSkin2,
 	AvatarCustomizationMSkin3,
 	AvatarCustomizationMSkin4,
@@ -1747,6 +1745,8 @@ import type {
 	AvatarCustomizationMSkin7,
 	AvatarCustomizationMSkin8,
 	AvatarCustomizationMSkin9,
+	AvatarCustomizationMSkin10,
+	AvatarCustomizationMSkin11,
 	AvatarCustomizationMSocksDefault0,
 	AvatarCustomizationMSocksDefault1,
 	AvatarCustomizationMSocksDefault2,
@@ -1923,6 +1923,14 @@ export interface AvatarCustomizationLookup {
 	AVATAR_f_gofest_pikachuvisor: AvatarCustomizationFGofestPikachuvisor;
 	AVATAR_f_hair_default_0: AvatarCustomizationFHairDefault0;
 	AVATAR_f_hair_default_1: AvatarCustomizationFHairDefault1;
+	AVATAR_f_hair_default_2: AvatarCustomizationFHairDefault2;
+	AVATAR_f_hair_default_3: AvatarCustomizationFHairDefault3;
+	AVATAR_f_hair_default_4: AvatarCustomizationFHairDefault4;
+	AVATAR_f_hair_default_5: AvatarCustomizationFHairDefault5;
+	AVATAR_f_hair_default_6: AvatarCustomizationFHairDefault6;
+	AVATAR_f_hair_default_7: AvatarCustomizationFHairDefault7;
+	AVATAR_f_hair_default_8: AvatarCustomizationFHairDefault8;
+	AVATAR_f_hair_default_9: AvatarCustomizationFHairDefault9;
 	AVATAR_f_hair_default_10: AvatarCustomizationFHairDefault10;
 	AVATAR_f_hair_default_11: AvatarCustomizationFHairDefault11;
 	AVATAR_f_hair_default_12: AvatarCustomizationFHairDefault12;
@@ -1933,14 +1941,6 @@ export interface AvatarCustomizationLookup {
 	AVATAR_f_hair_default_17: AvatarCustomizationFHairDefault17;
 	AVATAR_f_hair_default_18: AvatarCustomizationFHairDefault18;
 	AVATAR_f_hair_default_19: AvatarCustomizationFHairDefault19;
-	AVATAR_f_hair_default_2: AvatarCustomizationFHairDefault2;
-	AVATAR_f_hair_default_3: AvatarCustomizationFHairDefault3;
-	AVATAR_f_hair_default_4: AvatarCustomizationFHairDefault4;
-	AVATAR_f_hair_default_5: AvatarCustomizationFHairDefault5;
-	AVATAR_f_hair_default_6: AvatarCustomizationFHairDefault6;
-	AVATAR_f_hair_default_7: AvatarCustomizationFHairDefault7;
-	AVATAR_f_hair_default_8: AvatarCustomizationFHairDefault8;
-	AVATAR_f_hair_default_9: AvatarCustomizationFHairDefault9;
 	AVATAR_f_hat_6thanniversary: AvatarCustomizationFHat6thanniversary;
 	AVATAR_f_hat_acetrainersm: AvatarCustomizationFHatAcetrainersm;
 	AVATAR_f_hat_adventure_0: AvatarCustomizationFHatAdventure0;
@@ -2634,8 +2634,6 @@ export interface AvatarCustomizationLookup {
 	AVATAR_f_shoes_winterboots2023: AvatarCustomizationFShoesWinterboots2023;
 	AVATAR_f_skin_0: AvatarCustomizationFSkin0;
 	AVATAR_f_skin_1: AvatarCustomizationFSkin1;
-	AVATAR_f_skin_10: AvatarCustomizationFSkin10;
-	AVATAR_f_skin_11: AvatarCustomizationFSkin11;
 	AVATAR_f_skin_2: AvatarCustomizationFSkin2;
 	AVATAR_f_skin_3: AvatarCustomizationFSkin3;
 	AVATAR_f_skin_4: AvatarCustomizationFSkin4;
@@ -2644,6 +2642,8 @@ export interface AvatarCustomizationLookup {
 	AVATAR_f_skin_7: AvatarCustomizationFSkin7;
 	AVATAR_f_skin_8: AvatarCustomizationFSkin8;
 	AVATAR_f_skin_9: AvatarCustomizationFSkin9;
+	AVATAR_f_skin_10: AvatarCustomizationFSkin10;
+	AVATAR_f_skin_11: AvatarCustomizationFSkin11;
 	AVATAR_f_socks_default_0: AvatarCustomizationFSocksDefault0;
 	AVATAR_f_socks_default_1: AvatarCustomizationFSocksDefault1;
 	AVATAR_f_socks_default_2: AvatarCustomizationFSocksDefault2;
@@ -2805,6 +2805,14 @@ export interface AvatarCustomizationLookup {
 	AVATAR_m_gofest_pikachuvisor: AvatarCustomizationMGofestPikachuvisor;
 	AVATAR_m_hair_default_0: AvatarCustomizationMHairDefault0;
 	AVATAR_m_hair_default_1: AvatarCustomizationMHairDefault1;
+	AVATAR_m_hair_default_2: AvatarCustomizationMHairDefault2;
+	AVATAR_m_hair_default_3: AvatarCustomizationMHairDefault3;
+	AVATAR_m_hair_default_4: AvatarCustomizationMHairDefault4;
+	AVATAR_m_hair_default_5: AvatarCustomizationMHairDefault5;
+	AVATAR_m_hair_default_6: AvatarCustomizationMHairDefault6;
+	AVATAR_m_hair_default_7: AvatarCustomizationMHairDefault7;
+	AVATAR_m_hair_default_8: AvatarCustomizationMHairDefault8;
+	AVATAR_m_hair_default_9: AvatarCustomizationMHairDefault9;
 	AVATAR_m_hair_default_10: AvatarCustomizationMHairDefault10;
 	AVATAR_m_hair_default_11: AvatarCustomizationMHairDefault11;
 	AVATAR_m_hair_default_12: AvatarCustomizationMHairDefault12;
@@ -2815,14 +2823,6 @@ export interface AvatarCustomizationLookup {
 	AVATAR_m_hair_default_17: AvatarCustomizationMHairDefault17;
 	AVATAR_m_hair_default_18: AvatarCustomizationMHairDefault18;
 	AVATAR_m_hair_default_19: AvatarCustomizationMHairDefault19;
-	AVATAR_m_hair_default_2: AvatarCustomizationMHairDefault2;
-	AVATAR_m_hair_default_3: AvatarCustomizationMHairDefault3;
-	AVATAR_m_hair_default_4: AvatarCustomizationMHairDefault4;
-	AVATAR_m_hair_default_5: AvatarCustomizationMHairDefault5;
-	AVATAR_m_hair_default_6: AvatarCustomizationMHairDefault6;
-	AVATAR_m_hair_default_7: AvatarCustomizationMHairDefault7;
-	AVATAR_m_hair_default_8: AvatarCustomizationMHairDefault8;
-	AVATAR_m_hair_default_9: AvatarCustomizationMHairDefault9;
 	AVATAR_m_hat_6thanniversary: AvatarCustomizationMHat6thanniversary;
 	AVATAR_m_hat_acetrainersm: AvatarCustomizationMHatAcetrainersm;
 	AVATAR_m_hat_adventure_0: AvatarCustomizationMHatAdventure0;
@@ -3497,8 +3497,6 @@ export interface AvatarCustomizationLookup {
 	AVATAR_m_shoes_winterboots2023: AvatarCustomizationMShoesWinterboots2023;
 	AVATAR_m_skin_0: AvatarCustomizationMSkin0;
 	AVATAR_m_skin_1: AvatarCustomizationMSkin1;
-	AVATAR_m_skin_10: AvatarCustomizationMSkin10;
-	AVATAR_m_skin_11: AvatarCustomizationMSkin11;
 	AVATAR_m_skin_2: AvatarCustomizationMSkin2;
 	AVATAR_m_skin_3: AvatarCustomizationMSkin3;
 	AVATAR_m_skin_4: AvatarCustomizationMSkin4;
@@ -3507,6 +3505,8 @@ export interface AvatarCustomizationLookup {
 	AVATAR_m_skin_7: AvatarCustomizationMSkin7;
 	AVATAR_m_skin_8: AvatarCustomizationMSkin8;
 	AVATAR_m_skin_9: AvatarCustomizationMSkin9;
+	AVATAR_m_skin_10: AvatarCustomizationMSkin10;
+	AVATAR_m_skin_11: AvatarCustomizationMSkin11;
 	AVATAR_m_socks_default_0: AvatarCustomizationMSocksDefault0;
 	AVATAR_m_socks_default_1: AvatarCustomizationMSocksDefault1;
 	AVATAR_m_socks_default_2: AvatarCustomizationMSocksDefault2;
