@@ -7,4 +7,9 @@ All notable changes to the Go runtime API module are recorded here. The format i
 ## [Unreleased]
 
 ### Added
-- Initial publishable scaffolding (go.mod with importable path, doc.go, README, LICENSE, smoke test).
+- Initial release: `Masterfile` runtime with `Load`, `LoadRemote`, `FromEntries`.
+- Per-group typed accessors (`mf.MoveSettings.Get`, etc.) with `Get`, `Has`, `All`, `TemplateIDs`, `Len`.
+- Top-level lookups: `GetEntry`, `Has`, `Entries`, `TemplateIDs`, `Len`, `Groups`.
+- `Fetcher` interface + `FetcherFunc` adapter; default HTTP fetcher; `WithURL` / `WithHTTPClient` / `WithFetcher` options.
+- Typed errors: `*FetchError`, `*StatusError`, `*ParseError`, sentinel `ErrInvalidShape` — all compatible with `errors.As` / `errors.Is`.
+- Examples: `load_remote`, `from_json`, `per_group`, `custom_fetcher`, `refresh`.
