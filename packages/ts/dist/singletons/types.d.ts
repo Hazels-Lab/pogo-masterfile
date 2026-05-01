@@ -1,5 +1,6 @@
 // Generated from Pokémon GO masterfile — Singletons Types (no shared discriminator).
 
+import type { W } from "../_utils";
 import type {
 	AccessibilitySettings,
 	AdditiveSceneSettings,
@@ -141,7 +142,6 @@ import type {
 	VsSeekerScheduleSettings,
 	WeatherBonusSettings,
 } from "./entries";
-import type { W } from "../_utils";
 
 export type AccessibilitySettingsType = W<AccessibilitySettings>;
 export type AdditiveSceneSettingsType = W<AdditiveSceneSettings>;

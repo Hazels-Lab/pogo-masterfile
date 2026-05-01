@@ -28,6 +28,7 @@
 	},
 	"javascript": {
 		"formatter": {
+			"enabled": true,
 			"quoteStyle": "double"
 		}
 	},

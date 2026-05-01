@@ -90,6 +90,7 @@ export class AstFileBuilder {
 	}
 
 	render(fileName = "generated.ts"): string {
+		this.sortLeadingImports();
 		const printer = ts.createPrinter({ newLine: ts.NewLineKind.LineFeed, removeComments: false });
 		const dummyFile = ts.createSourceFile(fileName, "", ts.ScriptTarget.Latest, false);
 		const out: string[] = [];
@@ -103,6 +104,27 @@ export class AstFileBuilder {
 			else out.push(printer.printNode(ts.EmitHint.Unspecified, part.stmt, dummyFile));
 		}
 		return `${out.join("\n")}\n`;
+	}
+
+	// Biome's organizeImports assist is a no-op on .d.ts files, so the builder
+	// has to emit imports already sorted. Lexicographic comparison matches Biome's
+	// order for relative paths: "../" < "./" because '.' (46) < '/' (47), with
+	// alphabetical ordering within each group.
+	private sortLeadingImports(): void {
+		let end = 0;
+		while (end < this.parts.length) {
+			const part = this.parts[end]!;
+			if (part.kind !== "stmt" || !ts.isImportDeclaration(part.stmt)) break;
+			end++;
+		}
+		if (end < 2) return;
+		const imports = this.parts.slice(0, end) as { kind: "stmt"; stmt: ts.ImportDeclaration }[];
+		imports.sort((a, b) => {
+			const aSpec = (a.stmt.moduleSpecifier as ts.StringLiteral).text;
+			const bSpec = (b.stmt.moduleSpecifier as ts.StringLiteral).text;
+			return aSpec < bSpec ? -1 : aSpec > bSpec ? 1 : 0;
+		});
+		this.parts.splice(0, end, ...imports);
 	}
 }
 
