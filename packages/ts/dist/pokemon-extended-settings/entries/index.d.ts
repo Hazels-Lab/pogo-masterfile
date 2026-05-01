@@ -18,14 +18,6 @@ export type * from "./form-temp-evo-overrides";
 export type * from "./misc";
 export type * from "./temp-evo-overrides";
 
-export type PokemonExtendedSettingsMasterfileEntry =
-	| PokemonExtendedSettingsBreadOverridesMasterfileEntry
-	| PokemonExtendedSettingsBreadOverridesFormMasterfileEntry
-	| PokemonExtendedSettingsBreadOverridesFormTempEvoOverridesMasterfileEntry
-	| PokemonExtendedSettingsBreadOverridesTempEvoOverridesMasterfileEntry
-	| PokemonExtendedSettingsFormMasterfileEntry
-	| PokemonExtendedSettingsFormTempEvoOverridesMasterfileEntry
-	| PokemonExtendedSettingsMiscMasterfileEntry
-	| PokemonExtendedSettingsTempEvoOverridesMasterfileEntry;
+export type PokemonExtendedSettingsMasterfileEntry = PokemonExtendedSettingsBreadOverridesMasterfileEntry | PokemonExtendedSettingsBreadOverridesFormMasterfileEntry | PokemonExtendedSettingsBreadOverridesFormTempEvoOverridesMasterfileEntry | PokemonExtendedSettingsBreadOverridesTempEvoOverridesMasterfileEntry | PokemonExtendedSettingsFormMasterfileEntry | PokemonExtendedSettingsFormTempEvoOverridesMasterfileEntry | PokemonExtendedSettingsMiscMasterfileEntry | PokemonExtendedSettingsTempEvoOverridesMasterfileEntry;
 
 export type PokemonExtendedSettingsTemplateID = PokemonExtendedSettingsMasterfileEntry["templateId"];

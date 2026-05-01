@@ -42,18 +42,7 @@ pub struct RankLevelV3 {
 #[serde(rename_all = "camelCase")]
 pub struct Misc {
     pub min_rank_to_display_rating: u64,
-    pub rank_level: (
-        RankLevelV2,
-        RequiredForRewards,
-        RankLevelV3,
-        RankLevelV3,
-        RankLevelV3,
-        RankLevelV3,
-        RankLevelV3,
-        RankLevelV3,
-        RankLevelV3,
-        RankLevelV3,
-    ),
+    pub rank_level: (RankLevelV2, RequiredForRewards, RankLevelV3, RankLevelV3, RankLevelV3, RankLevelV3, RankLevelV3, RankLevelV3, RankLevelV3, RankLevelV3),
     pub required_for_rewards: RequiredForRewards,
 }
 

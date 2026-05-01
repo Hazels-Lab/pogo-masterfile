@@ -122,68 +122,8 @@ export type * from "./vs-seeker-loot/entries";
 export type * from "./vs-seeker-pokemon-rewards/entries";
 export type * from "./weather-affinities/entries";
 
-export type MasterfileEntry =
-	| AvatarCustomizationMasterfileEntry
-	| AvatarGroupOrderSettingsMasterfileEntry
-	| AvatarItemDisplayMasterfileEntry
-	| BadgeSettingsMasterfileEntry
-	| BreadMoveLevelSettingsMasterfileEntry
-	| BuddyActivityCategorySettingsMasterfileEntry
-	| BuddyEmotionLevelSettingsMasterfileEntry
-	| BuddyLevelSettingsMasterfileEntry
-	| ClientQuestTemplateMasterfileEntry
-	| CodeGateProtoMasterfileEntry
-	| CombatLeagueMasterfileEntry
-	| CombatMoveMasterfileEntry
-	| CombatNpcPersonalityMasterfileEntry
-	| CombatNpcTrainerMasterfileEntry
-	| CombatRankingProtoSettingsMasterfileEntry
-	| CombatTypeMasterfileEntry
-	| EventPassSettingsMasterfileEntry
-	| EventPassTierSettingsMasterfileEntry
-	| EvolutionChainDisplaySettingsMasterfileEntry
-	| EvolutionQuestTemplateMasterfileEntry
-	| FeatureGateMasterfileEntry
-	| FormSettingsMasterfileEntry
-	| FortPowerUpLevelSettingsMasterfileEntry
-	| FriendshipMilestoneSettingsMasterfileEntry
-	| GenderSettingsMasterfileEntry
-	| IapCategoryDisplayMasterfileEntry
-	| IapItemDisplayMasterfileEntry
-	| InvasionNpcDisplaySettingsMasterfileEntry
-	| ItemExpirationSettingsMasterfileEntry
-	| ItemSettingsMasterfileEntry
-	| LanguageSettingsMasterfileEntry
-	| LevelUpRewardsMasterfileEntry
-	| LimitedPurchaseSkuSettingsMasterfileEntry
-	| LocationCardSettingsMasterfileEntry
-	| MegaEvoLevelSettingsMasterfileEntry
-	| MoveSequenceSettingsMasterfileEntry
-	| MoveSettingsMasterfileEntry
-	| NonCombatMoveSettingsMasterfileEntry
-	| PartyPlayGeneralSettingsMasterfileEntry
-	| PhotoSetsSettingsProtoMasterfileEntry
-	| PokemonExtendedSettingsMasterfileEntry
-	| PokemonFamilyMasterfileEntry
-	| PokemonHomeEnergyCostsMasterfileEntry
-	| PokemonHomeFormReversionsMasterfileEntry
-	| PokemonScaleSettingsMasterfileEntry
-	| PokemonSettingsMasterfileEntry
-	| PokemonUpgradesMasterfileEntry
-	| PokestopInvasionAvailabilitySettingsMasterfileEntry
-	| QuestSettingsMasterfileEntry
-	| RecommendedSearchSettingsMasterfileEntry
-	| RollBackMasterfileEntry
-	| SettingsOverrideRuleMasterfileEntry
-	| SingletonsMasterfileEntry
-	| StickerMetadataMasterfileEntry
-	| TappableSettingsMasterfileEntry
-	| TemporaryEvolutionSettingsMasterfileEntry
-	| TypeEffectiveMasterfileEntry
-	| VsSeekerLootMasterfileEntry
-	| VsSeekerPokemonRewardsMasterfileEntry
-	| WeatherAffinitiesMasterfileEntry;
+export type MasterfileEntry = AvatarCustomizationMasterfileEntry | AvatarGroupOrderSettingsMasterfileEntry | AvatarItemDisplayMasterfileEntry | BadgeSettingsMasterfileEntry | BreadMoveLevelSettingsMasterfileEntry | BuddyActivityCategorySettingsMasterfileEntry | BuddyEmotionLevelSettingsMasterfileEntry | BuddyLevelSettingsMasterfileEntry | ClientQuestTemplateMasterfileEntry | CodeGateProtoMasterfileEntry | CombatLeagueMasterfileEntry | CombatMoveMasterfileEntry | CombatNpcPersonalityMasterfileEntry | CombatNpcTrainerMasterfileEntry | CombatRankingProtoSettingsMasterfileEntry | CombatTypeMasterfileEntry | EventPassSettingsMasterfileEntry | EventPassTierSettingsMasterfileEntry | EvolutionChainDisplaySettingsMasterfileEntry | EvolutionQuestTemplateMasterfileEntry | FeatureGateMasterfileEntry | FormSettingsMasterfileEntry | FortPowerUpLevelSettingsMasterfileEntry | FriendshipMilestoneSettingsMasterfileEntry | GenderSettingsMasterfileEntry | IapCategoryDisplayMasterfileEntry | IapItemDisplayMasterfileEntry | InvasionNpcDisplaySettingsMasterfileEntry | ItemExpirationSettingsMasterfileEntry | ItemSettingsMasterfileEntry | LanguageSettingsMasterfileEntry | LevelUpRewardsMasterfileEntry | LimitedPurchaseSkuSettingsMasterfileEntry | LocationCardSettingsMasterfileEntry | MegaEvoLevelSettingsMasterfileEntry | MoveSequenceSettingsMasterfileEntry | MoveSettingsMasterfileEntry | NonCombatMoveSettingsMasterfileEntry | PartyPlayGeneralSettingsMasterfileEntry | PhotoSetsSettingsProtoMasterfileEntry | PokemonExtendedSettingsMasterfileEntry | PokemonFamilyMasterfileEntry | PokemonHomeEnergyCostsMasterfileEntry | PokemonHomeFormReversionsMasterfileEntry | PokemonScaleSettingsMasterfileEntry | PokemonSettingsMasterfileEntry | PokemonUpgradesMasterfileEntry | PokestopInvasionAvailabilitySettingsMasterfileEntry | QuestSettingsMasterfileEntry | RecommendedSearchSettingsMasterfileEntry | RollBackMasterfileEntry | SettingsOverrideRuleMasterfileEntry | SingletonsMasterfileEntry | StickerMetadataMasterfileEntry | TappableSettingsMasterfileEntry | TemporaryEvolutionSettingsMasterfileEntry | TypeEffectiveMasterfileEntry | VsSeekerLootMasterfileEntry | VsSeekerPokemonRewardsMasterfileEntry | WeatherAffinitiesMasterfileEntry;
 
 export type MasterfileTemplateID = MasterfileEntry["templateId"];
 
-export type MasterfileEntryByTemplateID<T extends MasterfileTemplateID> = Extract<MasterfileEntry, { templateId: T }>;
+export type MasterfileEntryByTemplateID<T extends MasterfileTemplateID> = Extract<MasterfileEntry, { templateId: T; }>;

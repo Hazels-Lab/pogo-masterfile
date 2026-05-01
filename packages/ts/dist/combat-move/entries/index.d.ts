@@ -38,24 +38,6 @@ export type * from "./rock";
 export type * from "./steel";
 export type * from "./water";
 
-export type CombatMoveMasterfileEntry =
-	| CombatMoveBugMasterfileEntry
-	| CombatMoveDarkMasterfileEntry
-	| CombatMoveDragonMasterfileEntry
-	| CombatMoveElectricMasterfileEntry
-	| CombatMoveFairyMasterfileEntry
-	| CombatMoveFightingMasterfileEntry
-	| CombatMoveFireMasterfileEntry
-	| CombatMoveFlyingMasterfileEntry
-	| CombatMoveGhostMasterfileEntry
-	| CombatMoveGrassMasterfileEntry
-	| CombatMoveGroundMasterfileEntry
-	| CombatMoveIceMasterfileEntry
-	| CombatMoveNormalMasterfileEntry
-	| CombatMovePoisonMasterfileEntry
-	| CombatMovePsychicMasterfileEntry
-	| CombatMoveRockMasterfileEntry
-	| CombatMoveSteelMasterfileEntry
-	| CombatMoveWaterMasterfileEntry;
+export type CombatMoveMasterfileEntry = CombatMoveBugMasterfileEntry | CombatMoveDarkMasterfileEntry | CombatMoveDragonMasterfileEntry | CombatMoveElectricMasterfileEntry | CombatMoveFairyMasterfileEntry | CombatMoveFightingMasterfileEntry | CombatMoveFireMasterfileEntry | CombatMoveFlyingMasterfileEntry | CombatMoveGhostMasterfileEntry | CombatMoveGrassMasterfileEntry | CombatMoveGroundMasterfileEntry | CombatMoveIceMasterfileEntry | CombatMoveNormalMasterfileEntry | CombatMovePoisonMasterfileEntry | CombatMovePsychicMasterfileEntry | CombatMoveRockMasterfileEntry | CombatMoveSteelMasterfileEntry | CombatMoveWaterMasterfileEntry;
 
 export type CombatMoveTemplateID = CombatMoveMasterfileEntry["templateId"];

@@ -6,8 +6,6 @@ import type { EventPassTierSettingsPremiumSteeledresolve2026MasterfileEntry } fr
 export type * from "./april2026";
 export type * from "./steeledresolve2026";
 
-export type EventPassTierSettingsPremiumMasterfileEntry =
-	| EventPassTierSettingsPremiumApril2026MasterfileEntry
-	| EventPassTierSettingsPremiumSteeledresolve2026MasterfileEntry;
+export type EventPassTierSettingsPremiumMasterfileEntry = EventPassTierSettingsPremiumApril2026MasterfileEntry | EventPassTierSettingsPremiumSteeledresolve2026MasterfileEntry;
 
 export type EventPassTierSettingsPremiumTemplateID = EventPassTierSettingsPremiumMasterfileEntry["templateId"];

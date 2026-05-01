@@ -12,11 +12,6 @@ export type * from "./2";
 export type * from "./3";
 export type * from "./4";
 
-export type MegaEvoLevelSettingsMasterfileEntry =
-	| MegaEvoLevelSettings0MasterfileEntry
-	| MegaEvoLevelSettings1MasterfileEntry
-	| MegaEvoLevelSettings2MasterfileEntry
-	| MegaEvoLevelSettings3MasterfileEntry
-	| MegaEvoLevelSettings4MasterfileEntry;
+export type MegaEvoLevelSettingsMasterfileEntry = MegaEvoLevelSettings0MasterfileEntry | MegaEvoLevelSettings1MasterfileEntry | MegaEvoLevelSettings2MasterfileEntry | MegaEvoLevelSettings3MasterfileEntry | MegaEvoLevelSettings4MasterfileEntry;
 
 export type MegaEvoLevelSettingsTemplateID = MegaEvoLevelSettingsMasterfileEntry["templateId"];
