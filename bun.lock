@@ -7,6 +7,7 @@
       "devDependencies": {
         "@biomejs/biome": "^2.4.12",
         "@types/bun": "latest",
+        "@types/node": "^25.6.0",
         "expect-type": "^1.1.0",
       },
       "peerDependencies": {

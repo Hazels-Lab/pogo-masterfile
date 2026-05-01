@@ -26,7 +26,7 @@
 		"noUnusedParameters": false,
 		"noPropertyAccessFromIndexSignature": false,
 
-		"types": ["bun"]
+		"types": ["bun", "node"]
 	},
 	// Excludes are package boundaries: packages/ts-api/ and the ts-api templates
 	// have their own tsconfigs and depend on workspace deps (pogo-masterfile-types)
