@@ -218,8 +218,8 @@ function stubEntryWrapper(baseName: string): string {
 	].join("\n");
 }
 
-function file(headerComment: string, pool: StructPool, body: string): string {
-	const parts: string[] = [headerComment, "", "package masterfile", ""];
+function file(headerComment: string, pool: StructPool, body: string, packageName: string): string {
+	const parts: string[] = [headerComment, "", `package ${packageName}`, ""];
 	if (pool.usesRawJSON) {
 		parts.push(`import "encoding/json"`, "");
 	}
@@ -228,21 +228,21 @@ function file(headerComment: string, pool: StructPool, body: string): string {
 	return `${parts.filter((p) => p !== "").join("\n\n")}\n`;
 }
 
-export function emitGroupModule(group: Group): string {
+export function emitGroupModule(group: Group, packageName: string): string {
 	const baseName = pascalCase(group.discriminator);
 	const headerComment = `// Generated from Pokémon GO masterfile — group "${group.discriminator}".`;
 	const pool = newPool();
 
 	if (isStubGroup(group)) {
-		return file(headerComment, pool, stubEntryWrapper(baseName));
+		return file(headerComment, pool, stubEntryWrapper(baseName), packageName);
 	}
 
 	const inferred = inferPayloadType(group.entries, group.discriminator);
 	emitNamedStruct(baseName, inferred, pool);
-	return file(headerComment, pool, entryWrapper(baseName, group.discriminator));
+	return file(headerComment, pool, entryWrapper(baseName, group.discriminator), packageName);
 }
 
-export function emitSingletonsModule(singletons: readonly Group[]): string {
+export function emitSingletonsModule(singletons: readonly Group[], packageName: string): string {
 	const sorted = [...singletons].sort((a, b) => pascalCase(a.discriminator).localeCompare(pascalCase(b.discriminator)));
 	const pool = newPool();
 	const wrappers: string[] = [];
@@ -259,7 +259,7 @@ export function emitSingletonsModule(singletons: readonly Group[]): string {
 	}
 
 	const headerComment = `// Generated from Pokémon GO masterfile — singletons (one-of-a-kind entries).`;
-	return file(headerComment, pool, wrappers.join("\n\n"));
+	return file(headerComment, pool, wrappers.join("\n\n"), packageName);
 }
 
 export interface EntryVariant {
@@ -380,21 +380,21 @@ function emitGoConstBlock(typeName: string, idsToVariants: Map<string, string>):
 	return `const (\n${constLines}\n)\n\nvar ${typeName}Values = [...]${typeName}{\n${valuesLines}\n}`;
 }
 
-export function emitGroupTemplateIdsFile(group: Group): string {
+export function emitGroupTemplateIdsFile(group: Group, packageName: string): string {
 	const baseName = pascalCase(group.discriminator);
 	const typeName = `${baseName}TemplateID`;
 	const ids = group.entries.map((e) => e.templateId);
 	const variants = deriveTemplateIdVariants(ids);
 	const constBlock = emitGoConstBlock(typeName, variants);
 
-	return `// Generated from Pokémon GO masterfile — group "${group.discriminator}" templateIds.\n\npackage masterfile\n\ntype ${typeName} string\n\n${constBlock}\n`;
+	return `// Generated from Pokémon GO masterfile — group "${group.discriminator}" templateIds.\n\npackage ${packageName}\n\ntype ${typeName} string\n\n${constBlock}\n`;
 }
 
-export function emitSingletonsTemplateIdsFile(singletons: readonly Group[]): string {
+export function emitSingletonsTemplateIdsFile(singletons: readonly Group[], packageName: string): string {
 	const allIds = singletons.flatMap((g) => g.entries.map((e) => e.templateId));
 	const typeName = "SingletonsTemplateID";
 	const variants = deriveTemplateIdVariants(allIds);
 	const constBlock = emitGoConstBlock(typeName, variants);
 
-	return `// Generated from Pokémon GO masterfile — singletons templateIds.\n\npackage masterfile\n\ntype ${typeName} string\n\n${constBlock}\n`;
+	return `// Generated from Pokémon GO masterfile — singletons templateIds.\n\npackage ${packageName}\n\ntype ${typeName} string\n\n${constBlock}\n`;
 }

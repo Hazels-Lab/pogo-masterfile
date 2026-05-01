@@ -7,7 +7,7 @@ describe("emitGroupTemplateIdsFile", () => {
 	test("emits typed-string + const block + values slice for a group", () => {
 		const groups = groupEntries(MOCK_MASTERFILE);
 		const typeEffective = groups.get("typeEffective")!;
-		const out = emitGroupTemplateIdsFile(typeEffective);
+		const out = emitGroupTemplateIdsFile(typeEffective, "masterfile");
 
 		expect(out).toContain('// Generated from Pokémon GO masterfile — group "typeEffective" templateIds.');
 		expect(out).toContain("package masterfile");
@@ -26,7 +26,7 @@ describe("emitSingletonsTemplateIdsFile", () => {
 	test("emits one combined SingletonsTemplateID const block", () => {
 		const groups = groupEntries(MOCK_MASTERFILE);
 		const singletons = [...groups.values()].filter((g) => g.entries.length === 1);
-		const out = emitSingletonsTemplateIdsFile(singletons);
+		const out = emitSingletonsTemplateIdsFile(singletons, "masterfile");
 
 		expect(out).toContain('// Generated from Pokémon GO masterfile — singletons templateIds.');
 		expect(out).toContain("type SingletonsTemplateID string");
@@ -34,11 +34,45 @@ describe("emitSingletonsTemplateIdsFile", () => {
 	});
 });
 
+describe("packageName parameter", () => {
+	test("emitGroupModule honors packageName", () => {
+		const groups = groupEntries(MOCK_MASTERFILE);
+		const typeEffective = groups.get("typeEffective")!;
+		const out = emitGroupModule(typeEffective, "type_effective");
+		expect(out).toContain("package type_effective");
+		expect(out).not.toContain("package masterfile");
+	});
+
+	test("emitGroupTemplateIdsFile honors packageName", () => {
+		const groups = groupEntries(MOCK_MASTERFILE);
+		const typeEffective = groups.get("typeEffective")!;
+		const out = emitGroupTemplateIdsFile(typeEffective, "type_effective");
+		expect(out).toContain("package type_effective");
+		expect(out).not.toContain("package masterfile");
+	});
+
+	test("emitSingletonsModule honors packageName", () => {
+		const groups = groupEntries(MOCK_MASTERFILE);
+		const accessibility = groups.get("accessibilitySettings")!;
+		const out = emitSingletonsModule([accessibility], "singletons");
+		expect(out).toContain("package singletons");
+		expect(out).not.toContain("package masterfile");
+	});
+
+	test("emitSingletonsTemplateIdsFile honors packageName", () => {
+		const groups = groupEntries(MOCK_MASTERFILE);
+		const accessibility = groups.get("accessibilitySettings")!;
+		const out = emitSingletonsTemplateIdsFile([accessibility], "singletons");
+		expect(out).toContain("package singletons");
+		expect(out).not.toContain("package masterfile");
+	});
+});
+
 describe("entryWrapper marker method", () => {
 	test("uses exported MasterfileEntry marker", () => {
 		const groups = groupEntries(MOCK_MASTERFILE);
 		const typeEffective = groups.get("typeEffective")!;
-		const out = emitGroupModule(typeEffective);
+		const out = emitGroupModule(typeEffective, "masterfile");
 		expect(out).toContain("func (TypeEffectiveEntry) MasterfileEntry() {}");
 		expect(out).not.toContain("isMasterfileEntry");
 	});
@@ -46,7 +80,7 @@ describe("entryWrapper marker method", () => {
 	test("singletons wrappers use the exported marker too", () => {
 		const groups = groupEntries(MOCK_MASTERFILE);
 		const accessibility = groups.get("accessibilitySettings")!;
-		const out = emitSingletonsModule([accessibility]);
+		const out = emitSingletonsModule([accessibility], "masterfile");
 		expect(out).toContain("func (AccessibilitySettingsEntry) MasterfileEntry() {}");
 		expect(out).not.toContain("isMasterfileEntry");
 	});

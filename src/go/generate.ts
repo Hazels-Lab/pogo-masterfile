@@ -56,8 +56,8 @@ export async function generateGo(entries: Entry[]): Promise<void> {
 		}
 
 		const fileName = snakeCase(group.discriminator);
-		files.set(`${fileName}.go`, emitGroupModule(group));
-		files.set(`${fileName}_template_ids.go`, emitGroupTemplateIdsFile(group));
+		files.set(`${fileName}.go`, emitGroupModule(group, "masterfile"));
+		files.set(`${fileName}_template_ids.go`, emitGroupTemplateIdsFile(group, "masterfile"));
 		enumVariants.push({
 			variantName: baseName,
 			entryTypeName,
@@ -68,8 +68,8 @@ export async function generateGo(entries: Entry[]): Promise<void> {
 	}
 
 	if (singletons.length > 0) {
-		files.set(`${SINGLETONS_FILE}.go`, emitSingletonsModule(singletons));
-		files.set(`${SINGLETONS_FILE}_template_ids.go`, emitSingletonsTemplateIdsFile(singletons));
+		files.set(`${SINGLETONS_FILE}.go`, emitSingletonsModule(singletons, "masterfile"));
+		files.set(`${SINGLETONS_FILE}_template_ids.go`, emitSingletonsTemplateIdsFile(singletons, "masterfile"));
 	}
 
 	files.set("masterfile.go", emitMasterfileFile(enumVariants));
