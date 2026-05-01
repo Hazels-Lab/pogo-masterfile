@@ -4,36 +4,31 @@ import type { W } from "../_utils";
 import type { TypeEffectiveTemplateID } from "../type-effective/entries";
 
 export interface MoveSettings<TemplateID extends string = string, TData extends MoveSettingsData = MoveSettingsData> {
-    templateId: TemplateID;
-    data: {
-        templateId: TemplateID;
-        moveSettings: TData & {
-            accuracyChance: 1;
-        };
-    };
+	templateId: TemplateID;
+	data: {
+		templateId: TemplateID;
+		moveSettings: TData & {
+			accuracyChance: 1;
+		};
+	};
 }
 export type MoveSettingsType = W<MoveSettings>;
 
 export interface MoveSettingsData {
-    animationId: number;
-    criticalChance?: number;
-    damageWindowEndMs: number;
-    damageWindowStartMs?: number;
-    durationMs: number;
-    energyDelta?: number;
-    healScalar?: number;
-    isLocked?: boolean;
-    movementId: string;
-    obMoveSettingsNumber18?: [
-        number,
-        number,
-        number,
-        number
-    ];
-    pokemonType: TypeEffectiveTemplateID;
-    power?: number;
-    staminaLossScalar?: number;
-    trainerLevelMax?: number;
-    trainerLevelMin?: number;
-    vfxName: string;
+	animationId: number;
+	criticalChance?: number;
+	damageWindowEndMs: number;
+	damageWindowStartMs?: number;
+	durationMs: number;
+	energyDelta?: number;
+	healScalar?: number;
+	isLocked?: boolean;
+	movementId: string;
+	obMoveSettingsNumber18?: [number, number, number, number];
+	pokemonType: TypeEffectiveTemplateID;
+	power?: number;
+	staminaLossScalar?: number;
+	trainerLevelMax?: number;
+	trainerLevelMin?: number;
+	vfxName: string;
 }

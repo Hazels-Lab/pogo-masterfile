@@ -6,6 +6,8 @@ import type { EventPassTierSettingsFreeSteeledresolve2026MasterfileEntry } from 
 export type * from "./april2026";
 export type * from "./steeledresolve2026";
 
-export type EventPassTierSettingsFreeMasterfileEntry = EventPassTierSettingsFreeApril2026MasterfileEntry | EventPassTierSettingsFreeSteeledresolve2026MasterfileEntry;
+export type EventPassTierSettingsFreeMasterfileEntry =
+	| EventPassTierSettingsFreeApril2026MasterfileEntry
+	| EventPassTierSettingsFreeSteeledresolve2026MasterfileEntry;
 
 export type EventPassTierSettingsFreeTemplateID = EventPassTierSettingsFreeMasterfileEntry["templateId"];

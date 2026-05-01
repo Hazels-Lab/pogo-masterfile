@@ -24,6 +24,17 @@ export type * from "./special";
 export type * from "./specialbackground";
 export type * from "./tokmun";
 
-export type LocationCardSettingsMasterfileEntry = LocationCardSettings2023MasterfileEntry | LocationCardSettings2024MasterfileEntry | LocationCardSettings2025MasterfileEntry | LocationCardSettings2026MasterfileEntry | LocationCardSettingsCitysafari2025MasterfileEntry | LocationCardSettingsIdMasterfileEntry | LocationCardSettingsJejuMasterfileEntry | LocationCardSettingsPokelidMasterfileEntry | LocationCardSettingsSpecialMasterfileEntry | LocationCardSettingsSpecialbackgroundMasterfileEntry | LocationCardSettingsTokmunMasterfileEntry;
+export type LocationCardSettingsMasterfileEntry =
+	| LocationCardSettings2023MasterfileEntry
+	| LocationCardSettings2024MasterfileEntry
+	| LocationCardSettings2025MasterfileEntry
+	| LocationCardSettings2026MasterfileEntry
+	| LocationCardSettingsCitysafari2025MasterfileEntry
+	| LocationCardSettingsIdMasterfileEntry
+	| LocationCardSettingsJejuMasterfileEntry
+	| LocationCardSettingsPokelidMasterfileEntry
+	| LocationCardSettingsSpecialMasterfileEntry
+	| LocationCardSettingsSpecialbackgroundMasterfileEntry
+	| LocationCardSettingsTokmunMasterfileEntry;
 
 export type LocationCardSettingsTemplateID = LocationCardSettingsMasterfileEntry["templateId"];

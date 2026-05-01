@@ -4,17 +4,17 @@ package type_effective
 
 type TypeEffective struct {
 	AttackScalar [18]float64 `json:"attackScalar"`
-	AttackType string `json:"attackType"`
+	AttackType   string      `json:"attackType"`
 }
 
 type TypeEffectiveEntry struct {
-	TemplateID string `json:"templateId"`
+	TemplateID string                 `json:"templateId"`
 	Data       TypeEffectiveEntryData `json:"data"`
 }
 
 func (TypeEffectiveEntry) MasterfileEntry() {}
 
 type TypeEffectiveEntryData struct {
-	TemplateID     string `json:"templateId"`
+	TemplateID    string        `json:"templateId"`
 	TypeEffective TypeEffective `json:"typeEffective"`
 }

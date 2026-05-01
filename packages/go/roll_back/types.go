@@ -7,13 +7,13 @@ type RollBack struct {
 }
 
 type RollBackEntry struct {
-	TemplateID string `json:"templateId"`
+	TemplateID string            `json:"templateId"`
 	Data       RollBackEntryData `json:"data"`
 }
 
 func (RollBackEntry) MasterfileEntry() {}
 
 type RollBackEntryData struct {
-	TemplateID     string `json:"templateId"`
-	RollBack RollBack `json:"rollBack"`
+	TemplateID string   `json:"templateId"`
+	RollBack   RollBack `json:"rollBack"`
 }

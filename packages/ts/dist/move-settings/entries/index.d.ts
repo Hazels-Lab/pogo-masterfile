@@ -38,6 +38,24 @@ export type * from "./rock";
 export type * from "./steel";
 export type * from "./water";
 
-export type MoveSettingsMasterfileEntry = MoveSettingsBugMasterfileEntry | MoveSettingsDarkMasterfileEntry | MoveSettingsDragonMasterfileEntry | MoveSettingsElectricMasterfileEntry | MoveSettingsFairyMasterfileEntry | MoveSettingsFightingMasterfileEntry | MoveSettingsFireMasterfileEntry | MoveSettingsFlyingMasterfileEntry | MoveSettingsGhostMasterfileEntry | MoveSettingsGrassMasterfileEntry | MoveSettingsGroundMasterfileEntry | MoveSettingsIceMasterfileEntry | MoveSettingsNormalMasterfileEntry | MoveSettingsPoisonMasterfileEntry | MoveSettingsPsychicMasterfileEntry | MoveSettingsRockMasterfileEntry | MoveSettingsSteelMasterfileEntry | MoveSettingsWaterMasterfileEntry;
+export type MoveSettingsMasterfileEntry =
+	| MoveSettingsBugMasterfileEntry
+	| MoveSettingsDarkMasterfileEntry
+	| MoveSettingsDragonMasterfileEntry
+	| MoveSettingsElectricMasterfileEntry
+	| MoveSettingsFairyMasterfileEntry
+	| MoveSettingsFightingMasterfileEntry
+	| MoveSettingsFireMasterfileEntry
+	| MoveSettingsFlyingMasterfileEntry
+	| MoveSettingsGhostMasterfileEntry
+	| MoveSettingsGrassMasterfileEntry
+	| MoveSettingsGroundMasterfileEntry
+	| MoveSettingsIceMasterfileEntry
+	| MoveSettingsNormalMasterfileEntry
+	| MoveSettingsPoisonMasterfileEntry
+	| MoveSettingsPsychicMasterfileEntry
+	| MoveSettingsRockMasterfileEntry
+	| MoveSettingsSteelMasterfileEntry
+	| MoveSettingsWaterMasterfileEntry;
 
 export type MoveSettingsTemplateID = MoveSettingsMasterfileEntry["templateId"];
