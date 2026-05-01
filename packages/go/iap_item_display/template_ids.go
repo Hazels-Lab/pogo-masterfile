@@ -11,8 +11,247 @@ const (
 	IapItemDisplayTemplateIDApril22026DeluxeEventPassTrackUnlockPlusPoints           IapItemDisplayTemplateID = "APRIL2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
 	IapItemDisplayTemplateIDApril32026DeluxeEventPassTrackUnlock                     IapItemDisplayTemplateID = "APRIL3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK"
 	IapItemDisplayTemplateIDApril32026DeluxeEventPassTrackUnlockPlusPoints           IapItemDisplayTemplateID = "APRIL3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
+	IapItemDisplayTemplateIDBattlepassticket1                                        IapItemDisplayTemplateID = "battlepassticket.1"
 	IapItemDisplayTemplateIDBundleEc200Rpp1                                          IapItemDisplayTemplateID = "BUNDLE_EC_200_RPP_1"
 	IapItemDisplayTemplateIDBundleEc600Rpp3                                          IapItemDisplayTemplateID = "BUNDLE_EC_600_RPP_3"
+	IapItemDisplayTemplateIDBundleAdventurebrazil1001                                IapItemDisplayTemplateID = "bundle.adventurebrazil100.1"
+	IapItemDisplayTemplateIDBundleAdventurebrazil2001                                IapItemDisplayTemplateID = "bundle.adventurebrazil200.1"
+	IapItemDisplayTemplateIDBundleAnniversary20231                                   IapItemDisplayTemplateID = "bundle.anniversary2023.1"
+	IapItemDisplayTemplateIDBundleApacmar20251                                       IapItemDisplayTemplateID = "bundle.apacmar2025.1"
+	IapItemDisplayTemplateIDBundleArraia20251                                        IapItemDisplayTemplateID = "bundle.arraia2025.1"
+	IapItemDisplayTemplateIDBundleArraia20252                                        IapItemDisplayTemplateID = "bundle.arraia2025.2"
+	IapItemDisplayTemplateIDBundleAtlanticav2box1                                    IapItemDisplayTemplateID = "bundle.atlanticav2box.1"
+	IapItemDisplayTemplateIDBundleAtlanticav2box2                                    IapItemDisplayTemplateID = "bundle.atlanticav2box.2"
+	IapItemDisplayTemplateIDBundleBlackfridaystickers241                             IapItemDisplayTemplateID = "bundle.blackfridaystickers24.1"
+	IapItemDisplayTemplateIDBundleBlackfridaystickers242                             IapItemDisplayTemplateID = "bundle.blackfridaystickers24.2"
+	IapItemDisplayTemplateIDBundleBoost20231                                         IapItemDisplayTemplateID = "bundle.boost2023.1"
+	IapItemDisplayTemplateIDBundleBrazil20231                                        IapItemDisplayTemplateID = "bundle.brazil2023.1"
+	IapItemDisplayTemplateIDBundleBrazilrediscover11                                 IapItemDisplayTemplateID = "bundle.brazilrediscover1.1"
+	IapItemDisplayTemplateIDBundleBrazilrediscover21                                 IapItemDisplayTemplateID = "bundle.brazilrediscover2.1"
+	IapItemDisplayTemplateIDBundleBrazilvacations1001                                IapItemDisplayTemplateID = "bundle.brazilvacations100.1"
+	IapItemDisplayTemplateIDBundleCarnival20251                                      IapItemDisplayTemplateID = "bundle.carnival2025.1"
+	IapItemDisplayTemplateIDBundleCarnival20252                                      IapItemDisplayTemplateID = "bundle.carnival2025.2"
+	IapItemDisplayTemplateIDBundleCd20221                                            IapItemDisplayTemplateID = "bundle.cd2022.1"
+	IapItemDisplayTemplateIDBundleCd20222                                            IapItemDisplayTemplateID = "bundle.cd2022.2"
+	IapItemDisplayTemplateIDBundleCdrecapstickers1                                   IapItemDisplayTemplateID = "bundle.cdrecapstickers.1"
+	IapItemDisplayTemplateIDBundleCitysafari450hktw1                                 IapItemDisplayTemplateID = "bundle.citysafari450hktw.1"
+	IapItemDisplayTemplateIDBundleCswkmakegoodprep1001                               IapItemDisplayTemplateID = "bundle.cswkmakegoodprep.100.1"
+	IapItemDisplayTemplateIDBundleCswkmakegoodprep2001                               IapItemDisplayTemplateID = "bundle.cswkmakegoodprep.200.1"
+	IapItemDisplayTemplateIDBundleCswkmakegoodprep3001                               IapItemDisplayTemplateID = "bundle.cswkmakegoodprep.300.1"
+	IapItemDisplayTemplateIDBundleDecroutes20231                                     IapItemDisplayTemplateID = "bundle.decroutes2023.1"
+	IapItemDisplayTemplateIDBundleDiademuertos20251                                  IapItemDisplayTemplateID = "bundle.diademuertos2025.1"
+	IapItemDisplayTemplateIDBundleDiademuertosmax1001                                IapItemDisplayTemplateID = "bundle.diademuertosmax100.1"
+	IapItemDisplayTemplateIDBundleDiademuertosmax2001                                IapItemDisplayTemplateID = "bundle.diademuertosmax200.1"
+	IapItemDisplayTemplateIDBundleDiwali20251                                        IapItemDisplayTemplateID = "bundle.diwali2025.1"
+	IapItemDisplayTemplateIDBundleDiwali20252                                        IapItemDisplayTemplateID = "bundle.diwali2025.2"
+	IapItemDisplayTemplateIDBundleDiwalimax1001                                      IapItemDisplayTemplateID = "bundle.diwalimax100.1"
+	IapItemDisplayTemplateIDBundleEliteExp20241                                      IapItemDisplayTemplateID = "bundle.EliteExp2024.1"
+	IapItemDisplayTemplateIDBundleEliteExp20242                                      IapItemDisplayTemplateID = "bundle.EliteExp2024.2"
+	IapItemDisplayTemplateIDBundleEliteExp20243                                      IapItemDisplayTemplateID = "bundle.EliteExp2024.3"
+	IapItemDisplayTemplateIDBundleEliteExp20244                                      IapItemDisplayTemplateID = "bundle.EliteExp2024.4"
+	IapItemDisplayTemplateIDBundleEliteExp20245                                      IapItemDisplayTemplateID = "bundle.EliteExp2024.5"
+	IapItemDisplayTemplateIDBundleEmcarnival20261                                    IapItemDisplayTemplateID = "bundle.emcarnival2026.1"
+	IapItemDisplayTemplateIDBundleEmcarnival20262                                    IapItemDisplayTemplateID = "bundle.emcarnival2026.2"
+	IapItemDisplayTemplateIDBundleEmea20231                                          IapItemDisplayTemplateID = "bundle.emea2023.1"
+	IapItemDisplayTemplateIDBundleEvolve20221                                        IapItemDisplayTemplateID = "bundle.evolve2022.1"
+	IapItemDisplayTemplateIDBundleEvolve20222                                        IapItemDisplayTemplateID = "bundle.evolve2022.2"
+	IapItemDisplayTemplateIDBundleEvolve20223                                        IapItemDisplayTemplateID = "bundle.evolve2022.3"
+	IapItemDisplayTemplateIDBundleEvolve20224                                        IapItemDisplayTemplateID = "bundle.evolve2022.4"
+	IapItemDisplayTemplateIDBundleEvolve20225                                        IapItemDisplayTemplateID = "bundle.evolve2022.5"
+	IapItemDisplayTemplateIDBundleEvolve20226                                        IapItemDisplayTemplateID = "bundle.evolve2022.6"
+	IapItemDisplayTemplateIDBundleFol20221                                           IapItemDisplayTemplateID = "bundle.fol2022.1"
+	IapItemDisplayTemplateIDBundleFol20222                                           IapItemDisplayTemplateID = "bundle.fol2022.2"
+	IapItemDisplayTemplateIDBundleFol20223                                           IapItemDisplayTemplateID = "bundle.fol2022.3"
+	IapItemDisplayTemplateIDBundleFol20224                                           IapItemDisplayTemplateID = "bundle.fol2022.4"
+	IapItemDisplayTemplateIDBundleGeneralTemplate4                                   IapItemDisplayTemplateID = "bundle.general.template4"
+	IapItemDisplayTemplateIDBundleGeneralTemplate5                                   IapItemDisplayTemplateID = "bundle.general.template5"
+	IapItemDisplayTemplateIDBundleGeneralTemplate6                                   IapItemDisplayTemplateID = "bundle.general.template6"
+	IapItemDisplayTemplateIDBundleGeneral1Free1                                      IapItemDisplayTemplateID = "bundle.general1.free.1"
+	IapItemDisplayTemplateIDBundleGeneral1Large1                                     IapItemDisplayTemplateID = "bundle.general1.large.1"
+	IapItemDisplayTemplateIDBundleGeneral1Medium1                                    IapItemDisplayTemplateID = "bundle.general1.medium.1"
+	IapItemDisplayTemplateIDBundleGeneral1Medium2                                    IapItemDisplayTemplateID = "bundle.general1.medium.2"
+	IapItemDisplayTemplateIDBundleGeneral1Medium3                                    IapItemDisplayTemplateID = "bundle.general1.medium.3"
+	IapItemDisplayTemplateIDBundleGeneral1Rocket1                                    IapItemDisplayTemplateID = "bundle.general1.rocket.1"
+	IapItemDisplayTemplateIDBundleGeneral1Small1                                     IapItemDisplayTemplateID = "bundle.general1.small.1"
+	IapItemDisplayTemplateIDBundleGeneral1Tiny2                                      IapItemDisplayTemplateID = "bundle.general1.tiny.2"
+	IapItemDisplayTemplateIDBundleGeneral1Tiny3                                      IapItemDisplayTemplateID = "bundle.general1.tiny.3"
+	IapItemDisplayTemplateIDBundleGeneral1Tiny4                                      IapItemDisplayTemplateID = "bundle.general1.tiny.4"
+	IapItemDisplayTemplateIDBundleGeneral2Free1                                      IapItemDisplayTemplateID = "bundle.general2.free.1"
+	IapItemDisplayTemplateIDBundleGeneral2Large1                                     IapItemDisplayTemplateID = "bundle.general2.large.1"
+	IapItemDisplayTemplateIDBundleGeneral2Medium1                                    IapItemDisplayTemplateID = "bundle.general2.medium.1"
+	IapItemDisplayTemplateIDBundleGeneral2Small1                                     IapItemDisplayTemplateID = "bundle.general2.small.1"
+	IapItemDisplayTemplateIDBundleGeneral3Free1                                      IapItemDisplayTemplateID = "bundle.general3.free.1"
+	IapItemDisplayTemplateIDBundleGeneral3Large1                                     IapItemDisplayTemplateID = "bundle.general3.large.1"
+	IapItemDisplayTemplateIDBundleGeneral3Small1                                     IapItemDisplayTemplateID = "bundle.general3.small.1"
+	IapItemDisplayTemplateIDBundleGeneral4Large1                                     IapItemDisplayTemplateID = "bundle.general4.large.1"
+	IapItemDisplayTemplateIDBundleGeneral4Small2                                     IapItemDisplayTemplateID = "bundle.general4.small.2"
+	IapItemDisplayTemplateIDBundleGeneral5Large1                                     IapItemDisplayTemplateID = "bundle.general5.large.1"
+	IapItemDisplayTemplateIDBundleGeneral5Small1                                     IapItemDisplayTemplateID = "bundle.general5.small.1"
+	IapItemDisplayTemplateIDBundleGeneral5Small2                                     IapItemDisplayTemplateID = "bundle.general5.small.2"
+	IapItemDisplayTemplateIDBundleGeneral5Small3                                     IapItemDisplayTemplateID = "bundle.general5.small.3"
+	IapItemDisplayTemplateIDBundleGeneral5Small4                                     IapItemDisplayTemplateID = "bundle.general5.small.4"
+	IapItemDisplayTemplateIDBundleGeneral5Small5                                     IapItemDisplayTemplateID = "bundle.general5.small.5"
+	IapItemDisplayTemplateIDBundleGeneral6Small1                                     IapItemDisplayTemplateID = "bundle.general6.small.1"
+	IapItemDisplayTemplateIDBundleGmaxday1                                           IapItemDisplayTemplateID = "bundle.gmaxday.1"
+	IapItemDisplayTemplateIDBundleGofest20231                                        IapItemDisplayTemplateID = "bundle.gofest2023.1"
+	IapItemDisplayTemplateIDBundleGofest20232                                        IapItemDisplayTemplateID = "bundle.gofest2023.2"
+	IapItemDisplayTemplateIDBundleGofest20233                                        IapItemDisplayTemplateID = "bundle.gofest2023.3"
+	IapItemDisplayTemplateIDBundleGofest20234                                        IapItemDisplayTemplateID = "bundle.gofest2023.4"
+	IapItemDisplayTemplateIDBundleGofest20235                                        IapItemDisplayTemplateID = "bundle.gofest2023.5"
+	IapItemDisplayTemplateIDBundleGofest20241                                        IapItemDisplayTemplateID = "bundle.gofest2024.1"
+	IapItemDisplayTemplateIDBundleGofest20242                                        IapItemDisplayTemplateID = "bundle.gofest2024.2"
+	IapItemDisplayTemplateIDBundleGofest20243                                        IapItemDisplayTemplateID = "bundle.gofest2024.3"
+	IapItemDisplayTemplateIDBundleGofest20244                                        IapItemDisplayTemplateID = "bundle.gofest2024.4"
+	IapItemDisplayTemplateIDBundleGofestmakegoodprep1                                IapItemDisplayTemplateID = "bundle.gofestmakegoodprep.1"
+	IapItemDisplayTemplateIDBundleGofestmakegoodprep2                                IapItemDisplayTemplateID = "bundle.gofestmakegoodprep.2"
+	IapItemDisplayTemplateIDBundleGofestmakegoodprep3                                IapItemDisplayTemplateID = "bundle.gofestmakegoodprep.3"
+	IapItemDisplayTemplateIDBundleGotour20241                                        IapItemDisplayTemplateID = "bundle.GOTour2024.1"
+	IapItemDisplayTemplateIDBundleGotour20242                                        IapItemDisplayTemplateID = "bundle.GOTour2024.2"
+	IapItemDisplayTemplateIDBundleGotour20243                                        IapItemDisplayTemplateID = "bundle.GOTour2024.3"
+	IapItemDisplayTemplateIDBundleGotour20244                                        IapItemDisplayTemplateID = "bundle.GOTour2024.4"
+	IapItemDisplayTemplateIDBundleGotour20245                                        IapItemDisplayTemplateID = "bundle.GOTour2024.5"
+	IapItemDisplayTemplateIDBundleGotour20246                                        IapItemDisplayTemplateID = "bundle.GOTour2024.6"
+	IapItemDisplayTemplateIDBundleGotour20247                                        IapItemDisplayTemplateID = "bundle.GOTour2024.7"
+	IapItemDisplayTemplateIDBundleGowa20241                                          IapItemDisplayTemplateID = "bundle.gowa2024.1"
+	IapItemDisplayTemplateIDBundleGowa20242                                          IapItemDisplayTemplateID = "bundle.gowa2024.2"
+	IapItemDisplayTemplateIDBundleGowa20243                                          IapItemDisplayTemplateID = "bundle.gowa2024.3"
+	IapItemDisplayTemplateIDBundleGowa20244                                          IapItemDisplayTemplateID = "bundle.gowa2024.4"
+	IapItemDisplayTemplateIDBundleGpdindialaunch1                                    IapItemDisplayTemplateID = "bundle.gpdindialaunch.1"
+	IapItemDisplayTemplateIDBundleGpmay20231                                         IapItemDisplayTemplateID = "bundle.gpmay2023.1"
+	IapItemDisplayTemplateIDBundleGwlatam20251                                       IapItemDisplayTemplateID = "bundle.gwlatam2025.1"
+	IapItemDisplayTemplateIDBundleGwlatam20252                                       IapItemDisplayTemplateID = "bundle.gwlatam2025.2"
+	IapItemDisplayTemplateIDBundleGwlatam20253                                       IapItemDisplayTemplateID = "bundle.gwlatam2025.3"
+	IapItemDisplayTemplateIDBundleHalloweenAdventure1                                IapItemDisplayTemplateID = "bundle.halloween.adventure.1"
+	IapItemDisplayTemplateIDBundleHalloweenLarge1                                    IapItemDisplayTemplateID = "bundle.halloween.large.1"
+	IapItemDisplayTemplateIDBundleHalloweenSmall1                                    IapItemDisplayTemplateID = "bundle.halloween.small.1"
+	IapItemDisplayTemplateIDBundleHalloween20221                                     IapItemDisplayTemplateID = "bundle.halloween2022.1"
+	IapItemDisplayTemplateIDBundleHalloween20222                                     IapItemDisplayTemplateID = "bundle.halloween2022.2"
+	IapItemDisplayTemplateIDBundleHalloween20223                                     IapItemDisplayTemplateID = "bundle.halloween2022.3"
+	IapItemDisplayTemplateIDBundleHalloween20231                                     IapItemDisplayTemplateID = "bundle.halloween2023.1"
+	IapItemDisplayTemplateIDBundleHalloween20232                                     IapItemDisplayTemplateID = "bundle.halloween2023.2"
+	IapItemDisplayTemplateIDBundleHalloween20233                                     IapItemDisplayTemplateID = "bundle.halloween2023.3"
+	IapItemDisplayTemplateIDBundleHalloween20251                                     IapItemDisplayTemplateID = "bundle.halloween2025.1"
+	IapItemDisplayTemplateIDBundleHalloween20252                                     IapItemDisplayTemplateID = "bundle.halloween2025.2"
+	IapItemDisplayTemplateIDBundleHalloween20253                                     IapItemDisplayTemplateID = "bundle.halloween2025.3"
+	IapItemDisplayTemplateIDBundleHarvestcatch1                                      IapItemDisplayTemplateID = "bundle.harvestcatch.1"
+	IapItemDisplayTemplateIDBundleHarvestfestival2025                                IapItemDisplayTemplateID = "bundle.harvestfestival.2025"
+	IapItemDisplayTemplateIDBundleHatchbox20241                                      IapItemDisplayTemplateID = "bundle.hatchbox2024.1"
+	IapItemDisplayTemplateIDBundleHawlucha20251                                      IapItemDisplayTemplateID = "bundle.hawlucha2025.1"
+	IapItemDisplayTemplateIDBundleHawlucha20252                                      IapItemDisplayTemplateID = "bundle.hawlucha2025.2"
+	IapItemDisplayTemplateIDBundleHawluchacelebration1001                            IapItemDisplayTemplateID = "bundle.hawluchacelebration100.1"
+	IapItemDisplayTemplateIDBundleHawluchacelebration2001                            IapItemDisplayTemplateID = "bundle.hawluchacelebration200.1"
+	IapItemDisplayTemplateIDBundleHisuiraidday20231                                  IapItemDisplayTemplateID = "bundle.hisuiraidday2023.1"
+	IapItemDisplayTemplateIDBundleHoli20251                                          IapItemDisplayTemplateID = "bundle.holi2025.1"
+	IapItemDisplayTemplateIDBundleHoli20252                                          IapItemDisplayTemplateID = "bundle.holi2025.2"
+	IapItemDisplayTemplateIDBundleHoliday20221                                       IapItemDisplayTemplateID = "bundle.holiday2022.1"
+	IapItemDisplayTemplateIDBundleHoliday20222                                       IapItemDisplayTemplateID = "bundle.holiday2022.2"
+	IapItemDisplayTemplateIDBundleHoliday20223                                       IapItemDisplayTemplateID = "bundle.holiday2022.3"
+	IapItemDisplayTemplateIDBundleHoliday20241                                       IapItemDisplayTemplateID = "bundle.holiday2024.1"
+	IapItemDisplayTemplateIDBundleIncenseday1                                        IapItemDisplayTemplateID = "bundle.incenseday.1"
+	IapItemDisplayTemplateIDBundleIndiaaugust1001                                    IapItemDisplayTemplateID = "bundle.indiaaugust100.1"
+	IapItemDisplayTemplateIDBundleIndiaboxfeature1                                   IapItemDisplayTemplateID = "bundle.indiaboxfeature.1"
+	IapItemDisplayTemplateIDBundleIndiafestivaloflights1                             IapItemDisplayTemplateID = "bundle.indiafestivaloflights.1"
+	IapItemDisplayTemplateIDBundleIndiamay20241                                      IapItemDisplayTemplateID = "bundle.indiamay2024.1"
+	IapItemDisplayTemplateIDBundleIndiaseptember1001                                 IapItemDisplayTemplateID = "bundle.indiaseptember100.1"
+	IapItemDisplayTemplateIDBundleIndiaseptember2001                                 IapItemDisplayTemplateID = "bundle.indiaseptember200.1"
+	IapItemDisplayTemplateIDBundleIndonesiaboxfeature1                               IapItemDisplayTemplateID = "bundle.indonesiaboxfeature.1"
+	IapItemDisplayTemplateIDBundleIndonesialaunch1                                   IapItemDisplayTemplateID = "bundle.indonesialaunch.1"
+	IapItemDisplayTemplateIDBundleIndonesialaunch2                                   IapItemDisplayTemplateID = "bundle.indonesialaunch.2"
+	IapItemDisplayTemplateIDBundleJakartaaugust1001                                  IapItemDisplayTemplateID = "bundle.jakartaaugust100.1"
+	IapItemDisplayTemplateIDBundleKoreaseptember1001                                 IapItemDisplayTemplateID = "bundle.koreaseptember100.1"
+	IapItemDisplayTemplateIDBundleKoreaseptember2001                                 IapItemDisplayTemplateID = "bundle.koreaseptember200.1"
+	IapItemDisplayTemplateIDBundleKsalaunch1001                                      IapItemDisplayTemplateID = "bundle.ksalaunch100.1"
+	IapItemDisplayTemplateIDBundleKsalaunch2001                                      IapItemDisplayTemplateID = "bundle.ksalaunch200.1"
+	IapItemDisplayTemplateIDBundleLatbox1001                                         IapItemDisplayTemplateID = "bundle.latbox100.1"
+	IapItemDisplayTemplateIDBundleLatbox3001                                         IapItemDisplayTemplateID = "bundle.latbox300.1"
+	IapItemDisplayTemplateIDBundleLunarnewyear1                                      IapItemDisplayTemplateID = "bundle.lunarnewyear.1"
+	IapItemDisplayTemplateIDBundleMaxfinale1                                         IapItemDisplayTemplateID = "bundle.maxfinale.1"
+	IapItemDisplayTemplateIDBundleMaxfinale2                                         IapItemDisplayTemplateID = "bundle.maxfinale.2"
+	IapItemDisplayTemplateIDBundleMaxmonday1                                         IapItemDisplayTemplateID = "bundle.maxmonday.1"
+	IapItemDisplayTemplateIDBundleMegaLucarioRaidDay20241                            IapItemDisplayTemplateID = "bundle.mega-lucario-raid-day2024.1"
+	IapItemDisplayTemplateIDBundleMheracrossraidday20241                             IapItemDisplayTemplateID = "bundle.mheracrossraidday2024.1"
+	IapItemDisplayTemplateIDBundleMidautumn1                                         IapItemDisplayTemplateID = "bundle.midautumn.1"
+	IapItemDisplayTemplateIDBundleMidautumn2                                         IapItemDisplayTemplateID = "bundle.midautumn.2"
+	IapItemDisplayTemplateIDBundleMidautumn3                                         IapItemDisplayTemplateID = "bundle.midautumn.3"
+	IapItemDisplayTemplateIDBundleNewyears20241                                      IapItemDisplayTemplateID = "bundle.newyears2024.1"
+	IapItemDisplayTemplateIDBundlePlaysummerbox1                                     IapItemDisplayTemplateID = "bundle.playsummerbox.1"
+	IapItemDisplayTemplateIDBundlePrimalraidday20231                                 IapItemDisplayTemplateID = "bundle.primalraidday2023.1"
+	IapItemDisplayTemplateIDBundlePsychSpec20221                                     IapItemDisplayTemplateID = "bundle.psych_spec_2022.1"
+	IapItemDisplayTemplateIDBundlePsychSpec20222                                     IapItemDisplayTemplateID = "bundle.psych_spec_2022.2"
+	IapItemDisplayTemplateIDBundlePsychSpec20223                                     IapItemDisplayTemplateID = "bundle.psych_spec_2022.3"
+	IapItemDisplayTemplateIDBundleRamadan1                                           IapItemDisplayTemplateID = "bundle.ramadan.1"
+	IapItemDisplayTemplateIDBundleRamadan2                                           IapItemDisplayTemplateID = "bundle.ramadan.2"
+	IapItemDisplayTemplateIDBundleRarebundle1                                        IapItemDisplayTemplateID = "bundle.rarebundle.1"
+	IapItemDisplayTemplateIDBundleRarebundle2                                        IapItemDisplayTemplateID = "bundle.rarebundle.2"
+	IapItemDisplayTemplateIDBundleRarebundle3                                        IapItemDisplayTemplateID = "bundle.rarebundle.3"
+	IapItemDisplayTemplateIDBundleRarebundle4                                        IapItemDisplayTemplateID = "bundle.rarebundle.4"
+	IapItemDisplayTemplateIDBundleRiolu20231                                         IapItemDisplayTemplateID = "bundle.riolu2023.1"
+	IapItemDisplayTemplateIDBundleRiolu20232                                         IapItemDisplayTemplateID = "bundle.riolu2023.2"
+	IapItemDisplayTemplateIDBundleRockruffboost1                                     IapItemDisplayTemplateID = "bundle.rockruffboost.1"
+	IapItemDisplayTemplateIDBundleRrpstar1                                           IapItemDisplayTemplateID = "bundle.rrpstar.1"
+	IapItemDisplayTemplateIDBundleS17seasonstart1                                    IapItemDisplayTemplateID = "bundle.s17seasonstart.1"
+	IapItemDisplayTemplateIDBundleSeason10evergreen1                                 IapItemDisplayTemplateID = "bundle.season10evergreen.1"
+	IapItemDisplayTemplateIDBundleSeason10evergreen2                                 IapItemDisplayTemplateID = "bundle.season10evergreen.2"
+	IapItemDisplayTemplateIDBundleSeason10evergreen3                                 IapItemDisplayTemplateID = "bundle.season10evergreen.3"
+	IapItemDisplayTemplateIDBundleSeason11evergreen1                                 IapItemDisplayTemplateID = "bundle.season11evergreen.1"
+	IapItemDisplayTemplateIDBundleSeason11evergreen2                                 IapItemDisplayTemplateID = "bundle.season11evergreen.2"
+	IapItemDisplayTemplateIDBundleSeason11evergreen3                                 IapItemDisplayTemplateID = "bundle.season11evergreen.3"
+	IapItemDisplayTemplateIDBundleSeason12evergreen20231                             IapItemDisplayTemplateID = "bundle.season12evergreen2023.1"
+	IapItemDisplayTemplateIDBundleSeason12evergreen20232                             IapItemDisplayTemplateID = "bundle.season12evergreen2023.2"
+	IapItemDisplayTemplateIDBundleSeason12evergreen20233                             IapItemDisplayTemplateID = "bundle.season12evergreen2023.3"
+	IapItemDisplayTemplateIDBundleSeason13evergreen20231                             IapItemDisplayTemplateID = "bundle.season13evergreen2023.1"
+	IapItemDisplayTemplateIDBundleSeason13evergreen20232                             IapItemDisplayTemplateID = "bundle.season13evergreen2023.2"
+	IapItemDisplayTemplateIDBundleSeason13evergreen20233                             IapItemDisplayTemplateID = "bundle.season13evergreen2023.3"
+	IapItemDisplayTemplateIDBundleSeason14evergreen20241                             IapItemDisplayTemplateID = "bundle.season14evergreen2024.1"
+	IapItemDisplayTemplateIDBundleSeason14evergreen20242                             IapItemDisplayTemplateID = "bundle.season14evergreen2024.2"
+	IapItemDisplayTemplateIDBundleSeason14evergreen20243                             IapItemDisplayTemplateID = "bundle.season14evergreen2024.3"
+	IapItemDisplayTemplateIDBundleSeason15evergreen20241                             IapItemDisplayTemplateID = "bundle.season15evergreen2024.1"
+	IapItemDisplayTemplateIDBundleSeason15evergreen20242                             IapItemDisplayTemplateID = "bundle.season15evergreen2024.2"
+	IapItemDisplayTemplateIDBundleSeason15evergreen20243                             IapItemDisplayTemplateID = "bundle.season15evergreen2024.3"
+	IapItemDisplayTemplateIDBundleSeason16evergreen20241                             IapItemDisplayTemplateID = "bundle.season16evergreen2024.1"
+	IapItemDisplayTemplateIDBundleSeason16evergreen20242                             IapItemDisplayTemplateID = "bundle.season16evergreen2024.2"
+	IapItemDisplayTemplateIDBundleSeason16evergreen20243                             IapItemDisplayTemplateID = "bundle.season16evergreen2024.3"
+	IapItemDisplayTemplateIDBundleSeasonaldelights20241                              IapItemDisplayTemplateID = "bundle.seasonaldelights2024.1"
+	IapItemDisplayTemplateIDBundleShadowlugia1                                       IapItemDisplayTemplateID = "bundle.shadowlugia.1"
+	IapItemDisplayTemplateIDBundleSmoresbump2025                                     IapItemDisplayTemplateID = "bundle.smoresbump.2025"
+	IapItemDisplayTemplateIDBundleSolstice20231                                      IapItemDisplayTemplateID = "bundle.solstice2023.1"
+	IapItemDisplayTemplateIDBundleSolstice20232                                      IapItemDisplayTemplateID = "bundle.solstice2023.2"
+	IapItemDisplayTemplateIDBundleSolstice20233                                      IapItemDisplayTemplateID = "bundle.solstice2023.3"
+	IapItemDisplayTemplateIDBundleSongkran20251                                      IapItemDisplayTemplateID = "bundle.songkran2025.1"
+	IapItemDisplayTemplateIDBundleSparkbox1                                          IapItemDisplayTemplateID = "bundle.sparkbox.1"
+	IapItemDisplayTemplateIDBundleSparkbox2                                          IapItemDisplayTemplateID = "bundle.sparkbox.2"
+	IapItemDisplayTemplateIDBundleSparkbox3                                          IapItemDisplayTemplateID = "bundle.sparkbox.3"
+	IapItemDisplayTemplateIDBundleSpringtakeover20231                                IapItemDisplayTemplateID = "bundle.springtakeover2023.1"
+	IapItemDisplayTemplateIDBundleSpringtakeover20232                                IapItemDisplayTemplateID = "bundle.springtakeover2023.2"
+	IapItemDisplayTemplateIDBundleSpringtakeover20233                                IapItemDisplayTemplateID = "bundle.springtakeover2023.3"
+	IapItemDisplayTemplateIDBundleSteelMettle20221                                   IapItemDisplayTemplateID = "bundle.steel_mettle2022.1"
+	IapItemDisplayTemplateIDBundleSteelMettle20222                                   IapItemDisplayTemplateID = "bundle.steel_mettle2022.2"
+	IapItemDisplayTemplateIDBundleSteelMettle20223                                   IapItemDisplayTemplateID = "bundle.steel_mettle2022.3"
+	IapItemDisplayTemplateIDBundleTakeover20221                                      IapItemDisplayTemplateID = "bundle.takeover2022.1"
+	IapItemDisplayTemplateIDBundleTakeover20222                                      IapItemDisplayTemplateID = "bundle.takeover2022.2"
+	IapItemDisplayTemplateIDBundleTakeover20223                                      IapItemDisplayTemplateID = "bundle.takeover2022.3"
+	IapItemDisplayTemplateIDBundleTgrtakeover20241                                   IapItemDisplayTemplateID = "bundle.tgrtakeover2024.1"
+	IapItemDisplayTemplateIDBundleThailandfeatureapril20241                          IapItemDisplayTemplateID = "bundle.thailandfeatureapril2024.1"
+	IapItemDisplayTemplateIDBundleTmexpert1                                          IapItemDisplayTemplateID = "bundle.tmexpert.1"
+	IapItemDisplayTemplateIDBundleUbraidday20221                                     IapItemDisplayTemplateID = "bundle.ubraidday2022.1"
+	IapItemDisplayTemplateIDBundleUbraidday20222                                     IapItemDisplayTemplateID = "bundle.ubraidday2022.2"
+	IapItemDisplayTemplateIDBundleUkfeature1                                         IapItemDisplayTemplateID = "bundle.ukfeature.1"
+	IapItemDisplayTemplateIDBundleUltrabeastraid2024                                 IapItemDisplayTemplateID = "bundle.ultrabeastraid.2024"
+	IapItemDisplayTemplateIDBundleUltraunlockraid20231                               IapItemDisplayTemplateID = "bundle.ultraunlockraid2023.1"
+	IapItemDisplayTemplateIDBundleUltraunlockraid20232                               IapItemDisplayTemplateID = "bundle.ultraunlockraid2023.2"
+	IapItemDisplayTemplateIDBundleUustorage1                                         IapItemDisplayTemplateID = "bundle.uustorage.1"
+	IapItemDisplayTemplateIDBundleVoyagerouttoplay1                                  IapItemDisplayTemplateID = "bundle.voyagerouttoplay.1"
+	IapItemDisplayTemplateIDBundleWelcomebox1                                        IapItemDisplayTemplateID = "bundle.welcomebox.1"
+	IapItemDisplayTemplateIDBundleWinterevergreen1                                   IapItemDisplayTemplateID = "bundle.winterevergreen.1"
+	IapItemDisplayTemplateIDBundleWinterevergreen2                                   IapItemDisplayTemplateID = "bundle.winterevergreen.2"
+	IapItemDisplayTemplateIDBundleWinterevergreen3                                   IapItemDisplayTemplateID = "bundle.winterevergreen.3"
+	IapItemDisplayTemplateIDBundleWinterholiday20231                                 IapItemDisplayTemplateID = "bundle.winterholiday2023.1"
+	IapItemDisplayTemplateIDBundleWinterholiday20232                                 IapItemDisplayTemplateID = "bundle.winterholiday2023.2"
+	IapItemDisplayTemplateIDBundleWinterholiday20233                                 IapItemDisplayTemplateID = "bundle.winterholiday2023.3"
+	IapItemDisplayTemplateIDBundleXmasLarge1                                         IapItemDisplayTemplateID = "bundle.xmas.large.1"
+	IapItemDisplayTemplateIDBundleZoruamakegood2022                                  IapItemDisplayTemplateID = "bundle.zoruamakegood2022"
+	IapItemDisplayTemplateIDBundleZzraid1                                            IapItemDisplayTemplateID = "bundle.zzraid.1"
+	IapItemDisplayTemplateIDDiademuertos                                             IapItemDisplayTemplateID = "diademuertos"
 	IapItemDisplayTemplateIDEventPassApril1SeasonStoreRedirect                       IapItemDisplayTemplateID = "EVENT_PASS_APRIL1_SEASON_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEventPassApril3EventStoreRedirect                        IapItemDisplayTemplateID = "EVENT_PASS_APRIL3_EVENT_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEventPassGofest2025FinaleStoreRedirect                   IapItemDisplayTemplateID = "EVENT_PASS_GOFEST2025_FINALE_STORE_REDIRECT"
@@ -26,40 +265,190 @@ const (
 	IapItemDisplayTemplateIDEventPassMonth2SeasonStoreRedirect                       IapItemDisplayTemplateID = "EVENT_PASS_MONTH2_SEASON_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEventPassMonth3SeasonStoreRedirect                       IapItemDisplayTemplateID = "EVENT_PASS_MONTH3_SEASON_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEventPassWinterholidays2025SeasonStoreRedirect           IapItemDisplayTemplateID = "EVENT_PASS_WINTERHOLIDAYS2025_SEASON_STORE_REDIRECT"
+	IapItemDisplayTemplateIDEvergreenticket1                                         IapItemDisplayTemplateID = "evergreenticket.1"
+	IapItemDisplayTemplateIDEvergreenticket1Giftable                                 IapItemDisplayTemplateID = "evergreenticket.1.giftable"
 	IapItemDisplayTemplateIDFlairFreeBundle0                                         IapItemDisplayTemplateID = "FLAIR_FREE_BUNDLE_0"
-	IapItemDisplayTemplateIDGofest2025FinaleDeluxeEventPassTrackUnlock               IapItemDisplayTemplateID = "GOFEST2025_FINALE_DELUXE_EVENT_PASS_TRACK_UNLOCK"
-	IapItemDisplayTemplateIDGofest2025FinaleDeluxeEventPassTrackUnlockPlusPoints     IapItemDisplayTemplateID = "GOFEST2025_FINALE_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
-	IapItemDisplayTemplateIDGofest2025DeluxeEventPassTrackUnlock                     IapItemDisplayTemplateID = "GOFEST_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK"
-	IapItemDisplayTemplateIDGofest2025DeluxeEventPassTrackUnlockPlusPoints           IapItemDisplayTemplateID = "GOFEST_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
-	IapItemDisplayTemplateIDGotour2025DeluxeEventPassTrackUnlock                     IapItemDisplayTemplateID = "GOTOUR_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK"
-	IapItemDisplayTemplateIDGotour2025DeluxeEventPassTrackUnlockPlusPoints           IapItemDisplayTemplateID = "GOTOUR_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
-	IapItemDisplayTemplateIDGowild2025DeluxeEventPassTrackUnlock                     IapItemDisplayTemplateID = "GOWILD_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK"
-	IapItemDisplayTemplateIDGowild2025DeluxeEventPassTrackUnlockPlusPoints           IapItemDisplayTemplateID = "GOWILD_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
+	IapItemDisplayTemplateIDGeneral1Ticket1                                          IapItemDisplayTemplateID = "general1.ticket.1"
+	IapItemDisplayTemplateIDGeneral1Ticket1Giftable                                  IapItemDisplayTemplateID = "general1.ticket.1.giftable"
+	IapItemDisplayTemplateIDGeneral1Ticket2                                          IapItemDisplayTemplateID = "general1.ticket.2"
+	IapItemDisplayTemplateIDGeneral1Ticket2Giftable                                  IapItemDisplayTemplateID = "general1.ticket.2.giftable"
+	IapItemDisplayTemplateIDGeneral1Ticket3                                          IapItemDisplayTemplateID = "general1.ticket.3"
+	IapItemDisplayTemplateIDGeneral1Ticket4                                          IapItemDisplayTemplateID = "general1.ticket.4"
+	IapItemDisplayTemplateIDGeneral1Ticket4Giftable                                  IapItemDisplayTemplateID = "general1.ticket.4.giftable"
+	IapItemDisplayTemplateIDGeneral1Ticket5                                          IapItemDisplayTemplateID = "general1.ticket.5"
+	IapItemDisplayTemplateIDGeneral1Ticket6                                          IapItemDisplayTemplateID = "general1.ticket.6"
+	IapItemDisplayTemplateIDGeneral2Ticket1                                          IapItemDisplayTemplateID = "general2.ticket.1"
+	IapItemDisplayTemplateIDGeneral2Ticket1Giftable                                  IapItemDisplayTemplateID = "general2.ticket.1.giftable"
+	IapItemDisplayTemplateIDGeneral2Ticket2                                          IapItemDisplayTemplateID = "general2.ticket.2"
+	IapItemDisplayTemplateIDGeneral2Ticket2Giftable                                  IapItemDisplayTemplateID = "general2.ticket.2.giftable"
+	IapItemDisplayTemplateIDGeneral2Ticket3                                          IapItemDisplayTemplateID = "general2.ticket.3"
+	IapItemDisplayTemplateIDGeneral2Ticket3Giftable                                  IapItemDisplayTemplateID = "general2.ticket.3.giftable"
+	IapItemDisplayTemplateIDGeneral2Ticket4                                          IapItemDisplayTemplateID = "general2.ticket.4"
+	IapItemDisplayTemplateIDGeneral2Ticket4Giftable                                  IapItemDisplayTemplateID = "general2.ticket.4.giftable"
+	IapItemDisplayTemplateIDGeneral2Ticket5                                          IapItemDisplayTemplateID = "general2.ticket.5"
+	IapItemDisplayTemplateIDGeneral2Ticket5Giftable                                  IapItemDisplayTemplateID = "general2.ticket.5.giftable"
+	IapItemDisplayTemplateIDGeneral2Ticket6                                          IapItemDisplayTemplateID = "general2.ticket.6"
+	IapItemDisplayTemplateIDGeneral2Ticket7                                          IapItemDisplayTemplateID = "general2.ticket.7"
+	IapItemDisplayTemplateIDGeneral2Ticket7Giftable                                  IapItemDisplayTemplateID = "general2.ticket.7.giftable"
+	IapItemDisplayTemplateIDGeneral2Ticket8                                          IapItemDisplayTemplateID = "general2.ticket.8"
+	IapItemDisplayTemplateIDGeneral2Ticket8Giftable                                  IapItemDisplayTemplateID = "general2.ticket.8.giftable"
+	IapItemDisplayTemplateIDGeneral2Ticket9                                          IapItemDisplayTemplateID = "general2.ticket.9"
+	IapItemDisplayTemplateIDGeneral2Ticket9Giftable                                  IapItemDisplayTemplateID = "general2.ticket.9.giftable"
+	IapItemDisplayTemplateIDGeneral2Ticket10                                         IapItemDisplayTemplateID = "general2.ticket.10"
+	IapItemDisplayTemplateIDGeneral2Ticket10Giftable                                 IapItemDisplayTemplateID = "general2.ticket.10.giftable"
+	IapItemDisplayTemplateIDGeneral4Medium1                                          IapItemDisplayTemplateID = "general4.medium.1"
+	IapItemDisplayTemplateIDGeneral6Small1                                           IapItemDisplayTemplateID = "general6.small.1"
 	IapItemDisplayTemplateIDGoSafariBallIap10                                        IapItemDisplayTemplateID = "GO_SAFARI_BALL_IAP_10"
 	IapItemDisplayTemplateIDGoSafariBallIap25                                        IapItemDisplayTemplateID = "GO_SAFARI_BALL_IAP_25"
 	IapItemDisplayTemplateIDGoSafariBallIap50                                        IapItemDisplayTemplateID = "GO_SAFARI_BALL_IAP_50"
+	IapItemDisplayTemplateIDGofest2025DeluxeEventPassTrackUnlock                     IapItemDisplayTemplateID = "GOFEST_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK"
+	IapItemDisplayTemplateIDGofest2025DeluxeEventPassTrackUnlockPlusPoints           IapItemDisplayTemplateID = "GOFEST_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
+	IapItemDisplayTemplateIDGofest2025FinaleDeluxeEventPassTrackUnlock               IapItemDisplayTemplateID = "GOFEST2025_FINALE_DELUXE_EVENT_PASS_TRACK_UNLOCK"
+	IapItemDisplayTemplateIDGofest2025FinaleDeluxeEventPassTrackUnlockPlusPoints     IapItemDisplayTemplateID = "GOFEST2025_FINALE_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
+	IapItemDisplayTemplateIDGotour2025DeluxeEventPassTrackUnlock                     IapItemDisplayTemplateID = "GOTOUR_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK"
+	IapItemDisplayTemplateIDGotour2025DeluxeEventPassTrackUnlockPlusPoints           IapItemDisplayTemplateID = "GOTOUR_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
+	IapItemDisplayTemplateIDGowaticketfree1                                          IapItemDisplayTemplateID = "gowaticketfree.1"
+	IapItemDisplayTemplateIDGowild2025DeluxeEventPassTrackUnlock                     IapItemDisplayTemplateID = "GOWILD_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK"
+	IapItemDisplayTemplateIDGowild2025DeluxeEventPassTrackUnlockPlusPoints           IapItemDisplayTemplateID = "GOWILD_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
 	IapItemDisplayTemplateIDHalloween2025DeluxeEventPassTrackUnlock                  IapItemDisplayTemplateID = "HALLOWEEN2025_DELUXE_EVENT_PASS_TRACK_UNLOCK"
 	IapItemDisplayTemplateIDHalloween2025DeluxeEventPassTrackUnlockPlusPoints        IapItemDisplayTemplateID = "HALLOWEEN2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
+	IapItemDisplayTemplateIDHometransport1                                           IapItemDisplayTemplateID = "hometransport.1"
+	IapItemDisplayTemplateIDIncenseordinary1                                         IapItemDisplayTemplateID = "incenseordinary.1"
+	IapItemDisplayTemplateIDIncenseordinary8                                         IapItemDisplayTemplateID = "incenseordinary.8"
+	IapItemDisplayTemplateIDIncubatorbasic1                                          IapItemDisplayTemplateID = "incubatorbasic.1"
+	IapItemDisplayTemplateIDIncubatorsuper1                                          IapItemDisplayTemplateID = "incubatorsuper.1"
 	IapItemDisplayTemplateIDItemEnhancedCurrency200                                  IapItemDisplayTemplateID = "ITEM_ENHANCED_CURRENCY_200"
 	IapItemDisplayTemplateIDItemEnhancedCurrency600                                  IapItemDisplayTemplateID = "ITEM_ENHANCED_CURRENCY_600"
+	IapItemDisplayTemplateIDItemleadermap                                            IapItemDisplayTemplateID = "itemleadermap"
+	IapItemDisplayTemplateIDLuckyegg1                                                IapItemDisplayTemplateID = "luckyegg.1"
+	IapItemDisplayTemplateIDLuckyegg8                                                IapItemDisplayTemplateID = "luckyegg.8"
 	IapItemDisplayTemplateIDMarch12026DeluxeEventPassTrackUnlock                     IapItemDisplayTemplateID = "MARCH1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK"
 	IapItemDisplayTemplateIDMarch12026DeluxeEventPassTrackUnlockPlusPoints           IapItemDisplayTemplateID = "MARCH1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
 	IapItemDisplayTemplateIDMarch22026DeluxeEventPassTrackUnlock                     IapItemDisplayTemplateID = "MARCH2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK"
 	IapItemDisplayTemplateIDMarch22026DeluxeEventPassTrackUnlockPlusPoints           IapItemDisplayTemplateID = "MARCH2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
+	IapItemDisplayTemplateIDMaxBoost1                                                IapItemDisplayTemplateID = "max_boost.1"
+	IapItemDisplayTemplateIDMaxBoost3                                                IapItemDisplayTemplateID = "max_boost.3"
+	IapItemDisplayTemplateIDMaxpotion5                                               IapItemDisplayTemplateID = "maxpotion.5"
+	IapItemDisplayTemplateIDMaxpotion10                                              IapItemDisplayTemplateID = "maxpotion.10"
+	IapItemDisplayTemplateIDMaxrevive3                                               IapItemDisplayTemplateID = "maxrevive.3"
+	IapItemDisplayTemplateIDMaxrevive6                                               IapItemDisplayTemplateID = "maxrevive.6"
 	IapItemDisplayTemplateIDMonth1DeluxeEventPassTrackUnlock                         IapItemDisplayTemplateID = "MONTH1_DELUXE_EVENT_PASS_TRACK_UNLOCK"
 	IapItemDisplayTemplateIDMonth1DeluxeEventPassTrackUnlockPlusPoints               IapItemDisplayTemplateID = "MONTH1_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
 	IapItemDisplayTemplateIDMonth2DeluxeEventPassTrackUnlock                         IapItemDisplayTemplateID = "MONTH2_DELUXE_EVENT_PASS_TRACK_UNLOCK"
 	IapItemDisplayTemplateIDMonth2DeluxeEventPassTrackUnlockPlusPoints               IapItemDisplayTemplateID = "MONTH2_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
 	IapItemDisplayTemplateIDMonth3DeluxeEventPassTrackUnlock                         IapItemDisplayTemplateID = "MONTH3_DELUXE_EVENT_PASS_TRACK_UNLOCK"
 	IapItemDisplayTemplateIDMonth3DeluxeEventPassTrackUnlockPlusPoints               IapItemDisplayTemplateID = "MONTH3_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
-	IapItemDisplayTemplateIDSticker2023collab13                                      IapItemDisplayTemplateID = "STICKER_2023COLLAB_1.3"
-	IapItemDisplayTemplateIDSticker2023collab15                                      IapItemDisplayTemplateID = "STICKER_2023COLLAB_1.5"
-	IapItemDisplayTemplateIDSticker2023collab23                                      IapItemDisplayTemplateID = "STICKER_2023COLLAB_2.3"
-	IapItemDisplayTemplateIDSticker2023collab25                                      IapItemDisplayTemplateID = "STICKER_2023COLLAB_2.5"
-	IapItemDisplayTemplateIDSticker2023collab33                                      IapItemDisplayTemplateID = "STICKER_2023COLLAB_3.3"
-	IapItemDisplayTemplateIDSticker2023collab35                                      IapItemDisplayTemplateID = "STICKER_2023COLLAB_3.5"
-	IapItemDisplayTemplateIDSticker2023collab43                                      IapItemDisplayTemplateID = "STICKER_2023COLLAB_4.3"
-	IapItemDisplayTemplateIDSticker2023collab45                                      IapItemDisplayTemplateID = "STICKER_2023COLLAB_4.5"
+	IapItemDisplayTemplateIDMpReplenishRrp1                                          IapItemDisplayTemplateID = "mp_replenish_rrp.1"
+	IapItemDisplayTemplateIDMpReplenishRrp3                                          IapItemDisplayTemplateID = "mp_replenish_rrp.3"
+	IapItemDisplayTemplateIDMpReplenish1                                             IapItemDisplayTemplateID = "mp_replenish.1"
+	IapItemDisplayTemplateIDMpReplenish3                                             IapItemDisplayTemplateID = "mp_replenish.3"
+	IapItemDisplayTemplateIDPaidraidticket1                                          IapItemDisplayTemplateID = "paidraidticket.1"
+	IapItemDisplayTemplateIDPaidraidticket3                                          IapItemDisplayTemplateID = "paidraidticket.3"
+	IapItemDisplayTemplateIDPgoreleaseApril22026DeluxeEventPassTrackRedirect         IapItemDisplayTemplateID = "pgorelease.april2_2026_deluxe_event_pass_track_redirect"
+	IapItemDisplayTemplateIDPgoreleaseApril32026DeluxeEventPassTrackUnlock           IapItemDisplayTemplateID = "pgorelease.april3_2026_deluxe_event_pass_track_unlock"
+	IapItemDisplayTemplateIDPgoreleaseApril32026DeluxeEventPassTrackUnlockPlusPoints IapItemDisplayTemplateID = "pgorelease.april3_2026_deluxe_event_pass_track_unlock_plus_points"
+	IapItemDisplayTemplateIDPgoreleaseBundle1                                        IapItemDisplayTemplateID = "pgorelease.bundle.1"
+	IapItemDisplayTemplateIDPgoreleaseBundle2                                        IapItemDisplayTemplateID = "pgorelease.bundle.2"
+	IapItemDisplayTemplateIDPgoreleaseBundleBlanchebox1                              IapItemDisplayTemplateID = "pgorelease.bundle.blanchebox.1"
+	IapItemDisplayTemplateIDPgoreleaseBundleCitysafaribarcelona1                     IapItemDisplayTemplateID = "pgorelease.bundle.citysafaribarcelona1"
+	IapItemDisplayTemplateIDPgoreleaseBundleCitysafaribarcelona2                     IapItemDisplayTemplateID = "pgorelease.bundle.citysafaribarcelona2"
+	IapItemDisplayTemplateIDPgoreleaseBundleCitysafarimexico1                        IapItemDisplayTemplateID = "pgorelease.bundle.citysafarimexico1"
+	IapItemDisplayTemplateIDPgoreleaseBundleCitysafarimexico2                        IapItemDisplayTemplateID = "pgorelease.bundle.citysafarimexico2"
+	IapItemDisplayTemplateIDPgoreleaseBundleEliteraidbox1                            IapItemDisplayTemplateID = "pgorelease.bundle.eliteraidbox.1"
+	IapItemDisplayTemplateIDPgoreleaseBundleEliteraidmay2023                         IapItemDisplayTemplateID = "pgorelease.bundle.eliteraidmay2023"
+	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures1                           IapItemDisplayTemplateID = "pgorelease.bundle.flavoredlures.1"
+	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures2                           IapItemDisplayTemplateID = "pgorelease.bundle.flavoredlures.2"
+	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures3                           IapItemDisplayTemplateID = "pgorelease.bundle.flavoredlures.3"
+	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures4                           IapItemDisplayTemplateID = "pgorelease.bundle.flavoredlures.4"
+	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures5                           IapItemDisplayTemplateID = "pgorelease.bundle.flavoredlures.5"
+	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures6                           IapItemDisplayTemplateID = "pgorelease.bundle.flavoredlures.6"
+	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures7                           IapItemDisplayTemplateID = "pgorelease.bundle.flavoredlures.7"
+	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures8                           IapItemDisplayTemplateID = "pgorelease.bundle.flavoredlures.8"
+	IapItemDisplayTemplateIDPgoreleaseBundleFoc2023box1                              IapItemDisplayTemplateID = "pgorelease.bundle.foc2023box.1"
+	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartyLarge2                  IapItemDisplayTemplateID = "pgorelease.bundle.general.thirdparty.large.2"
+	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartyLarge4                  IapItemDisplayTemplateID = "pgorelease.bundle.general.thirdparty.large.4"
+	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartyMedium1                 IapItemDisplayTemplateID = "pgorelease.bundle.general.thirdparty.medium.1"
+	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartySmall1                  IapItemDisplayTemplateID = "pgorelease.bundle.general.thirdparty.small.1"
+	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartySmall12                 IapItemDisplayTemplateID = "pgorelease.bundle.general.thirdparty.small.1.2"
+	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartySmall2                  IapItemDisplayTemplateID = "pgorelease.bundle.general.thirdparty.small.2"
+	IapItemDisplayTemplateIDPgoreleaseBundleGeneral1Tiny4                            IapItemDisplayTemplateID = "pgorelease.bundle.general1.tiny.4"
+	IapItemDisplayTemplateIDPgoreleaseBundleGeneral11Small1331                       IapItemDisplayTemplateID = "pgorelease.bundle.general11.small.1331"
+	IapItemDisplayTemplateIDPgoreleaseBundleGotour20230                              IapItemDisplayTemplateID = "pgorelease.bundle.gotour2023.0"
+	IapItemDisplayTemplateIDPgoreleaseBundleGotour20231                              IapItemDisplayTemplateID = "pgorelease.bundle.gotour2023.1"
+	IapItemDisplayTemplateIDPgoreleaseBundleGotour20232                              IapItemDisplayTemplateID = "pgorelease.bundle.gotour2023.2"
+	IapItemDisplayTemplateIDPgoreleaseBundleGotour20233                              IapItemDisplayTemplateID = "pgorelease.bundle.gotour2023.3"
+	IapItemDisplayTemplateIDPgoreleaseBundleGotour20234                              IapItemDisplayTemplateID = "pgorelease.bundle.gotour2023.4"
+	IapItemDisplayTemplateIDPgoreleaseBundleGotour20235                              IapItemDisplayTemplateID = "pgorelease.bundle.gotour2023.5"
+	IapItemDisplayTemplateIDPgoreleaseBundleGotour20236                              IapItemDisplayTemplateID = "pgorelease.bundle.gotour2023.6"
+	IapItemDisplayTemplateIDPgoreleaseBundleGp20221                                  IapItemDisplayTemplateID = "pgorelease.bundle.gp2022.1"
+	IapItemDisplayTemplateIDPgoreleaseBundleIndiagp20231                             IapItemDisplayTemplateID = "pgorelease.bundle.indiagp2023.1"
+	IapItemDisplayTemplateIDPgoreleaseBundleLure1                                    IapItemDisplayTemplateID = "pgorelease.bundle.lure.1"
+	IapItemDisplayTemplateIDPgoreleaseBundlePokemonday1                              IapItemDisplayTemplateID = "pgorelease.bundle.pokemonday.1"
+	IapItemDisplayTemplateIDPgoreleaseBundleRaiddaymay20231                          IapItemDisplayTemplateID = "pgorelease.bundle.raiddaymay2023.1"
+	IapItemDisplayTemplateIDPgoreleaseBundleRaiddaymay20232                          IapItemDisplayTemplateID = "pgorelease.bundle.raiddaymay2023.2"
+	IapItemDisplayTemplateIDPgoreleaseBundleRaiddaymay20233                          IapItemDisplayTemplateID = "pgorelease.bundle.raiddaymay2023.3"
+	IapItemDisplayTemplateIDPgoreleaseBundleRaiddaymay20234                          IapItemDisplayTemplateID = "pgorelease.bundle.raiddaymay2023.4"
+	IapItemDisplayTemplateIDPgoreleaseBundleRaiddaynov20231                          IapItemDisplayTemplateID = "pgorelease.bundle.raiddaynov2023.1"
+	IapItemDisplayTemplateIDPgoreleaseBundleRaidhourbox1                             IapItemDisplayTemplateID = "pgorelease.bundle.raidhourbox.1"
+	IapItemDisplayTemplateIDPgoreleaseBundleRaidhourbox2                             IapItemDisplayTemplateID = "pgorelease.bundle.raidhourbox.2"
+	IapItemDisplayTemplateIDPgoreleaseBundleRamadan2023box1                          IapItemDisplayTemplateID = "pgorelease.bundle.ramadan2023box.1"
+	IapItemDisplayTemplateIDPgoreleaseBundleRtsraid                                  IapItemDisplayTemplateID = "pgorelease.bundle.RTSRaid"
+	IapItemDisplayTemplateIDPgoreleaseBundleSeason10evergreen1                       IapItemDisplayTemplateID = "pgorelease.bundle.season10evergreen.1"
+	IapItemDisplayTemplateIDPgoreleaseBundleSeason10evergreen2                       IapItemDisplayTemplateID = "pgorelease.bundle.season10evergreen.2"
+	IapItemDisplayTemplateIDPgoreleaseBundleSeason10evergreen3                       IapItemDisplayTemplateID = "pgorelease.bundle.season10evergreen.3"
+	IapItemDisplayTemplateIDPgoreleaseBundleSeason10launch1                          IapItemDisplayTemplateID = "pgorelease.bundle.season10launch.1"
+	IapItemDisplayTemplateIDPgoreleaseBundleSustainabilitybonusmay2023               IapItemDisplayTemplateID = "pgorelease.bundle.sustainabilitybonusmay2023"
+	IapItemDisplayTemplateIDPgoreleaseBundleSustainabilitymay2023                    IapItemDisplayTemplateID = "pgorelease.bundle.sustainabilitymay2023"
+	IapItemDisplayTemplateIDPgoreleaseBundleTemplate1                                IapItemDisplayTemplateID = "pgorelease.bundle.template1"
+	IapItemDisplayTemplateIDPgoreleaseBundleTemplate2                                IapItemDisplayTemplateID = "pgorelease.bundle.template2"
+	IapItemDisplayTemplateIDPgoreleaseBundleTemplate3                                IapItemDisplayTemplateID = "pgorelease.bundle.template3"
+	IapItemDisplayTemplateIDPgoreleaseBundleThailandspec20231                        IapItemDisplayTemplateID = "pgorelease.bundle.thailandspec2023.1"
+	IapItemDisplayTemplateIDPgoreleaseBundleWalkeratlantic20221                      IapItemDisplayTemplateID = "pgorelease.bundle.walkeratlantic2022.1"
+	IapItemDisplayTemplateIDPgoreleaseBundleWalkeratlantic20222                      IapItemDisplayTemplateID = "pgorelease.bundle.walkeratlantic2022.2"
+	IapItemDisplayTemplateIDPgoreleaseCitysafariticket01                             IapItemDisplayTemplateID = "pgorelease.citysafariticket0.1"
+	IapItemDisplayTemplateIDPgoreleaseCitysafariticket11                             IapItemDisplayTemplateID = "pgorelease.citysafariticket1.1"
+	IapItemDisplayTemplateIDPgoreleaseCitysafariticket21                             IapItemDisplayTemplateID = "pgorelease.citysafariticket2.1"
+	IapItemDisplayTemplateIDPgoreleaseEvergreenticket1                               IapItemDisplayTemplateID = "pgorelease.evergreenticket.1"
+	IapItemDisplayTemplateIDPgoreleaseEvergreenticket1Giftable                       IapItemDisplayTemplateID = "pgorelease.evergreenticket.1.giftable"
+	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket1                                IapItemDisplayTemplateID = "pgorelease.general1.ticket.1"
+	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket1Giftable                        IapItemDisplayTemplateID = "pgorelease.general1.ticket.1.giftable"
+	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket2                                IapItemDisplayTemplateID = "pgorelease.general1.ticket.2"
+	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket2Giftable                        IapItemDisplayTemplateID = "pgorelease.general1.ticket.2.giftable"
+	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket4                                IapItemDisplayTemplateID = "pgorelease.general1.ticket.4"
+	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket4Giftable                        IapItemDisplayTemplateID = "pgorelease.general1.ticket.4.giftable"
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket1                                IapItemDisplayTemplateID = "pgorelease.general2.ticket.1"
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket1Giftable                        IapItemDisplayTemplateID = "pgorelease.general2.ticket.1.giftable"
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket2                                IapItemDisplayTemplateID = "pgorelease.general2.ticket.2"
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket2Giftable                        IapItemDisplayTemplateID = "pgorelease.general2.ticket.2.giftable"
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket3                                IapItemDisplayTemplateID = "pgorelease.general2.ticket.3"
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket3Giftable                        IapItemDisplayTemplateID = "pgorelease.general2.ticket.3.giftable"
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket4                                IapItemDisplayTemplateID = "pgorelease.general2.ticket.4"
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket4Giftable                        IapItemDisplayTemplateID = "pgorelease.general2.ticket.4.giftable"
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket5                                IapItemDisplayTemplateID = "pgorelease.general2.ticket.5"
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket5Giftable                        IapItemDisplayTemplateID = "pgorelease.general2.ticket.5.giftable"
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket7                                IapItemDisplayTemplateID = "pgorelease.general2.ticket.7"
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket7Giftable                        IapItemDisplayTemplateID = "pgorelease.general2.ticket.7.giftable"
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket8                                IapItemDisplayTemplateID = "pgorelease.general2.ticket.8"
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket8Giftable                        IapItemDisplayTemplateID = "pgorelease.general2.ticket.8.giftable"
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket9                                IapItemDisplayTemplateID = "pgorelease.general2.ticket.9"
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket9Giftable                        IapItemDisplayTemplateID = "pgorelease.general2.ticket.9.giftable"
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket10                               IapItemDisplayTemplateID = "pgorelease.general2.ticket.10"
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket10Giftable                       IapItemDisplayTemplateID = "pgorelease.general2.ticket.10.giftable"
+	IapItemDisplayTemplateIDPgoreleaseMonth2DeluxeEventPassTrackUnlock               IapItemDisplayTemplateID = "pgorelease.month2_deluxe_event_pass_track_unlock"
+	IapItemDisplayTemplateIDPgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints     IapItemDisplayTemplateID = "pgorelease.month2_deluxe_event_pass_track_unlock_plus_points"
+	IapItemDisplayTemplateIDPgoreleasePokecoin2750                                   IapItemDisplayTemplateID = "pgorelease.pokecoin.2750"
+	IapItemDisplayTemplateIDPgoreleasePokecoin5720                                   IapItemDisplayTemplateID = "pgorelease.pokecoin.5720"
+	IapItemDisplayTemplateIDPgoreleasePokecoin15950                                  IapItemDisplayTemplateID = "pgorelease.pokecoin.15950"
+	IapItemDisplayTemplateIDPgoreleasePokecoin21375                                  IapItemDisplayTemplateID = "pgorelease.pokecoin.21375"
+	IapItemDisplayTemplateIDPoffin                                                   IapItemDisplayTemplateID = "poffin"
+	IapItemDisplayTemplateIDPokeball20                                               IapItemDisplayTemplateID = "pokeball.20"
+	IapItemDisplayTemplateIDPokeball100                                              IapItemDisplayTemplateID = "pokeball.100"
+	IapItemDisplayTemplateIDPokeball200                                              IapItemDisplayTemplateID = "pokeball.200"
+	IapItemDisplayTemplateIDPostcardstorageupgrade1                                  IapItemDisplayTemplateID = "postcardstorageupgrade.1"
+	IapItemDisplayTemplateIDRemoteraidticket1                                        IapItemDisplayTemplateID = "remoteraidticket.1"
+	IapItemDisplayTemplateIDRemoteraidticket3                                        IapItemDisplayTemplateID = "remoteraidticket.3"
+	IapItemDisplayTemplateIDStarpiece1                                               IapItemDisplayTemplateID = "starpiece.1"
+	IapItemDisplayTemplateIDStarpiece8                                               IapItemDisplayTemplateID = "starpiece.8"
 	IapItemDisplayTemplateIDSticker8anniv13                                          IapItemDisplayTemplateID = "STICKER_8ANNIV_1.3"
 	IapItemDisplayTemplateIDSticker8anniv15                                          IapItemDisplayTemplateID = "STICKER_8ANNIV_1.5"
 	IapItemDisplayTemplateIDSticker8anniv23                                          IapItemDisplayTemplateID = "STICKER_8ANNIV_2.3"
@@ -74,6 +463,14 @@ const (
 	IapItemDisplayTemplateIDSticker9anniv25                                          IapItemDisplayTemplateID = "STICKER_9ANNIV_2.5"
 	IapItemDisplayTemplateIDSticker9anniv33                                          IapItemDisplayTemplateID = "STICKER_9ANNIV_3.3"
 	IapItemDisplayTemplateIDSticker9anniv35                                          IapItemDisplayTemplateID = "STICKER_9ANNIV_3.5"
+	IapItemDisplayTemplateIDSticker2023collab13                                      IapItemDisplayTemplateID = "STICKER_2023COLLAB_1.3"
+	IapItemDisplayTemplateIDSticker2023collab15                                      IapItemDisplayTemplateID = "STICKER_2023COLLAB_1.5"
+	IapItemDisplayTemplateIDSticker2023collab23                                      IapItemDisplayTemplateID = "STICKER_2023COLLAB_2.3"
+	IapItemDisplayTemplateIDSticker2023collab25                                      IapItemDisplayTemplateID = "STICKER_2023COLLAB_2.5"
+	IapItemDisplayTemplateIDSticker2023collab33                                      IapItemDisplayTemplateID = "STICKER_2023COLLAB_3.3"
+	IapItemDisplayTemplateIDSticker2023collab35                                      IapItemDisplayTemplateID = "STICKER_2023COLLAB_3.5"
+	IapItemDisplayTemplateIDSticker2023collab43                                      IapItemDisplayTemplateID = "STICKER_2023COLLAB_4.3"
+	IapItemDisplayTemplateIDSticker2023collab45                                      IapItemDisplayTemplateID = "STICKER_2023COLLAB_4.5"
 	IapItemDisplayTemplateIDStickerAprilfool202313                                   IapItemDisplayTemplateID = "STICKER_APRILFOOL2023_1.3"
 	IapItemDisplayTemplateIDStickerAprilfool202315                                   IapItemDisplayTemplateID = "STICKER_APRILFOOL2023_1.5"
 	IapItemDisplayTemplateIDStickerAprilfool202323                                   IapItemDisplayTemplateID = "STICKER_APRILFOOL2023_2.3"
@@ -266,10 +663,16 @@ const (
 	IapItemDisplayTemplateIDStickerGowa2025045                                       IapItemDisplayTemplateID = "STICKER_GOWA2025_04.5"
 	IapItemDisplayTemplateIDStickerGowa2025053                                       IapItemDisplayTemplateID = "STICKER_GOWA2025_05.3"
 	IapItemDisplayTemplateIDStickerGowa2025055                                       IapItemDisplayTemplateID = "STICKER_GOWA2025_05.5"
-	IapItemDisplayTemplateIDStickerHalloween2025Noibat3                              IapItemDisplayTemplateID = "STICKER_HALLOWEEN2025_NOIBAT.3"
-	IapItemDisplayTemplateIDStickerHalloween2025Noibat5                              IapItemDisplayTemplateID = "STICKER_HALLOWEEN2025_NOIBAT.5"
-	IapItemDisplayTemplateIDStickerHalloween2025Teddiursa3                           IapItemDisplayTemplateID = "STICKER_HALLOWEEN2025_TEDDIURSA.3"
-	IapItemDisplayTemplateIDStickerHalloween2025Teddiursa5                           IapItemDisplayTemplateID = "STICKER_HALLOWEEN2025_TEDDIURSA.5"
+	IapItemDisplayTemplateIDStickerHalloweenBulb3                                    IapItemDisplayTemplateID = "STICKER_HALLOWEEN_BULB.3"
+	IapItemDisplayTemplateIDStickerHalloweenBulb5                                    IapItemDisplayTemplateID = "STICKER_HALLOWEEN_BULB.5"
+	IapItemDisplayTemplateIDStickerHalloweenCharm3                                   IapItemDisplayTemplateID = "STICKER_HALLOWEEN_CHARM.3"
+	IapItemDisplayTemplateIDStickerHalloweenCharm5                                   IapItemDisplayTemplateID = "STICKER_HALLOWEEN_CHARM.5"
+	IapItemDisplayTemplateIDStickerHalloweenGengarmd3                                IapItemDisplayTemplateID = "STICKER_HALLOWEEN_GENGARMD.3"
+	IapItemDisplayTemplateIDStickerHalloweenGengarmd5                                IapItemDisplayTemplateID = "STICKER_HALLOWEEN_GENGARMD.5"
+	IapItemDisplayTemplateIDStickerHalloweenPika3                                    IapItemDisplayTemplateID = "STICKER_HALLOWEEN_PIKA.3"
+	IapItemDisplayTemplateIDStickerHalloweenPika5                                    IapItemDisplayTemplateID = "STICKER_HALLOWEEN_PIKA.5"
+	IapItemDisplayTemplateIDStickerHalloweenSqu3                                     IapItemDisplayTemplateID = "STICKER_HALLOWEEN_SQU.3"
+	IapItemDisplayTemplateIDStickerHalloweenSqu5                                     IapItemDisplayTemplateID = "STICKER_HALLOWEEN_SQU.5"
 	IapItemDisplayTemplateIDStickerHalloween21Fuwaraid3                              IapItemDisplayTemplateID = "STICKER_HALLOWEEN21_FUWARAID.3"
 	IapItemDisplayTemplateIDStickerHalloween21Fuwaraid5                              IapItemDisplayTemplateID = "STICKER_HALLOWEEN21_FUWARAID.5"
 	IapItemDisplayTemplateIDStickerHalloween21Ghostpika3                             IapItemDisplayTemplateID = "STICKER_HALLOWEEN21_GHOSTPIKA.3"
@@ -282,16 +685,10 @@ const (
 	IapItemDisplayTemplateIDStickerHalloween24Froakie5                               IapItemDisplayTemplateID = "STICKER_HALLOWEEN24_FROAKIE.5"
 	IapItemDisplayTemplateIDStickerHalloween24Rowlet3                                IapItemDisplayTemplateID = "STICKER_HALLOWEEN24_ROWLET.3"
 	IapItemDisplayTemplateIDStickerHalloween24Rowlet5                                IapItemDisplayTemplateID = "STICKER_HALLOWEEN24_ROWLET.5"
-	IapItemDisplayTemplateIDStickerHalloweenBulb3                                    IapItemDisplayTemplateID = "STICKER_HALLOWEEN_BULB.3"
-	IapItemDisplayTemplateIDStickerHalloweenBulb5                                    IapItemDisplayTemplateID = "STICKER_HALLOWEEN_BULB.5"
-	IapItemDisplayTemplateIDStickerHalloweenCharm3                                   IapItemDisplayTemplateID = "STICKER_HALLOWEEN_CHARM.3"
-	IapItemDisplayTemplateIDStickerHalloweenCharm5                                   IapItemDisplayTemplateID = "STICKER_HALLOWEEN_CHARM.5"
-	IapItemDisplayTemplateIDStickerHalloweenGengarmd3                                IapItemDisplayTemplateID = "STICKER_HALLOWEEN_GENGARMD.3"
-	IapItemDisplayTemplateIDStickerHalloweenGengarmd5                                IapItemDisplayTemplateID = "STICKER_HALLOWEEN_GENGARMD.5"
-	IapItemDisplayTemplateIDStickerHalloweenPika3                                    IapItemDisplayTemplateID = "STICKER_HALLOWEEN_PIKA.3"
-	IapItemDisplayTemplateIDStickerHalloweenPika5                                    IapItemDisplayTemplateID = "STICKER_HALLOWEEN_PIKA.5"
-	IapItemDisplayTemplateIDStickerHalloweenSqu3                                     IapItemDisplayTemplateID = "STICKER_HALLOWEEN_SQU.3"
-	IapItemDisplayTemplateIDStickerHalloweenSqu5                                     IapItemDisplayTemplateID = "STICKER_HALLOWEEN_SQU.5"
+	IapItemDisplayTemplateIDStickerHalloween2025Noibat3                              IapItemDisplayTemplateID = "STICKER_HALLOWEEN2025_NOIBAT.3"
+	IapItemDisplayTemplateIDStickerHalloween2025Noibat5                              IapItemDisplayTemplateID = "STICKER_HALLOWEEN2025_NOIBAT.5"
+	IapItemDisplayTemplateIDStickerHalloween2025Teddiursa3                           IapItemDisplayTemplateID = "STICKER_HALLOWEEN2025_TEDDIURSA.3"
+	IapItemDisplayTemplateIDStickerHalloween2025Teddiursa5                           IapItemDisplayTemplateID = "STICKER_HALLOWEEN2025_TEDDIURSA.5"
 	IapItemDisplayTemplateIDStickerHaruCherrim3                                      IapItemDisplayTemplateID = "STICKER_HARU_CHERRIM.3"
 	IapItemDisplayTemplateIDStickerHaruCherrim5                                      IapItemDisplayTemplateID = "STICKER_HARU_CHERRIM.5"
 	IapItemDisplayTemplateIDStickerHaruDredearpika3                                  IapItemDisplayTemplateID = "STICKER_HARU_DREDEARPIKA.3"
@@ -394,6 +791,56 @@ const (
 	IapItemDisplayTemplateIDStickerNoibatCd35                                        IapItemDisplayTemplateID = "STICKER_NOIBAT_CD_3.5"
 	IapItemDisplayTemplateIDStickerNoibatCd43                                        IapItemDisplayTemplateID = "STICKER_NOIBAT_CD_4.3"
 	IapItemDisplayTemplateIDStickerNoibatCd45                                        IapItemDisplayTemplateID = "STICKER_NOIBAT_CD_4.5"
+	IapItemDisplayTemplateIDStickerPgoFest202413                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_1.3"
+	IapItemDisplayTemplateIDStickerPgoFest202415                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_1.5"
+	IapItemDisplayTemplateIDStickerPgoFest202423                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_2.3"
+	IapItemDisplayTemplateIDStickerPgoFest202425                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_2.5"
+	IapItemDisplayTemplateIDStickerPgoFest202433                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_3.3"
+	IapItemDisplayTemplateIDStickerPgoFest202435                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_3.5"
+	IapItemDisplayTemplateIDStickerPgoFest202443                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_4.3"
+	IapItemDisplayTemplateIDStickerPgoFest202445                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_4.5"
+	IapItemDisplayTemplateIDStickerPgoFest202453                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_5.3"
+	IapItemDisplayTemplateIDStickerPgoFest202455                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_5.5"
+	IapItemDisplayTemplateIDStickerPgoFest202463                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_6.3"
+	IapItemDisplayTemplateIDStickerPgoFest202465                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_6.5"
+	IapItemDisplayTemplateIDStickerPgoFest2024Logo3                                  IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_LOGO.3"
+	IapItemDisplayTemplateIDStickerPgoFest2024Logo5                                  IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_LOGO.5"
+	IapItemDisplayTemplateIDStickerPgoFest20243                                      IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024.3"
+	IapItemDisplayTemplateIDStickerPgoFest20245                                      IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024.5"
+	IapItemDisplayTemplateIDStickerPgoFest202513                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025_1.3"
+	IapItemDisplayTemplateIDStickerPgoFest202515                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025_1.5"
+	IapItemDisplayTemplateIDStickerPgoFest202523                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025_2.3"
+	IapItemDisplayTemplateIDStickerPgoFest202525                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025_2.5"
+	IapItemDisplayTemplateIDStickerPgoFest202533                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025_3.3"
+	IapItemDisplayTemplateIDStickerPgoFest202535                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025_3.5"
+	IapItemDisplayTemplateIDStickerPgoFest2025Logo3                                  IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025_LOGO.3"
+	IapItemDisplayTemplateIDStickerPgoFest2025Logo5                                  IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025_LOGO.5"
+	IapItemDisplayTemplateIDStickerPgoFest20253                                      IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025.3"
+	IapItemDisplayTemplateIDStickerPgoFest20255                                      IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025.5"
+	IapItemDisplayTemplateIDStickerPgoFestVictini053                                 IapItemDisplayTemplateID = "STICKER_PGO_FEST_VICTINI_05.3"
+	IapItemDisplayTemplateIDStickerPgoFestVictini055                                 IapItemDisplayTemplateID = "STICKER_PGO_FEST_VICTINI_05.5"
+	IapItemDisplayTemplateIDStickerPgoTour202613                                     IapItemDisplayTemplateID = "STICKER_PGO_TOUR_2026_1.3"
+	IapItemDisplayTemplateIDStickerPgoTour202615                                     IapItemDisplayTemplateID = "STICKER_PGO_TOUR_2026_1.5"
+	IapItemDisplayTemplateIDStickerPgoTour202623                                     IapItemDisplayTemplateID = "STICKER_PGO_TOUR_2026_2.3"
+	IapItemDisplayTemplateIDStickerPgoTour202625                                     IapItemDisplayTemplateID = "STICKER_PGO_TOUR_2026_2.5"
+	IapItemDisplayTemplateIDStickerPgoTour202633                                     IapItemDisplayTemplateID = "STICKER_PGO_TOUR_2026_3.3"
+	IapItemDisplayTemplateIDStickerPgoTour202635                                     IapItemDisplayTemplateID = "STICKER_PGO_TOUR_2026_3.5"
+	IapItemDisplayTemplateIDStickerPgoTour2026Logo3                                  IapItemDisplayTemplateID = "STICKER_PGO_TOUR_2026_LOGO.3"
+	IapItemDisplayTemplateIDStickerPgoTour2026Logo5                                  IapItemDisplayTemplateID = "STICKER_PGO_TOUR_2026_LOGO.5"
+	IapItemDisplayTemplateIDStickerPgoTour20263                                      IapItemDisplayTemplateID = "STICKER_PGO_TOUR_2026.3"
+	IapItemDisplayTemplateIDStickerPgoTour20265                                      IapItemDisplayTemplateID = "STICKER_PGO_TOUR_2026.5"
+	IapItemDisplayTemplateIDStickerPgoWildarea202413                                 IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024_1.3"
+	IapItemDisplayTemplateIDStickerPgoWildarea202415                                 IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024_1.5"
+	IapItemDisplayTemplateIDStickerPgoWildarea202423                                 IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024_2.3"
+	IapItemDisplayTemplateIDStickerPgoWildarea202425                                 IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024_2.5"
+	IapItemDisplayTemplateIDStickerPgoWildarea202433                                 IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024_3.3"
+	IapItemDisplayTemplateIDStickerPgoWildarea202435                                 IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024_3.5"
+	IapItemDisplayTemplateIDStickerPgoWildarea202443                                 IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024_4.3"
+	IapItemDisplayTemplateIDStickerPgoWildarea202445                                 IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024_4.5"
+	IapItemDisplayTemplateIDStickerPgoWildarea2024Logo3                              IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024_LOGO.3"
+	IapItemDisplayTemplateIDStickerPgoWildarea2024Logo5                              IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024_LOGO.5"
+	IapItemDisplayTemplateIDStickerPgoWildarea20243                                  IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024.3"
+	IapItemDisplayTemplateIDStickerPgoWildarea20245                                  IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024.5"
 	IapItemDisplayTemplateIDStickerPgofest2021Galarianzigzagoon3                     IapItemDisplayTemplateID = "STICKER_PGOFEST2021_GALARIANZIGZAGOON.3"
 	IapItemDisplayTemplateIDStickerPgofest2021Galarianzigzagoon5                     IapItemDisplayTemplateID = "STICKER_PGOFEST2021_GALARIANZIGZAGOON.5"
 	IapItemDisplayTemplateIDStickerPgofest2021Meloetta13                             IapItemDisplayTemplateID = "STICKER_PGOFEST2021_MELOETTA_1.3"
@@ -414,56 +861,6 @@ const (
 	IapItemDisplayTemplateIDStickerPgofest2022Pochama5                               IapItemDisplayTemplateID = "STICKER_PGOFEST2022_POCHAMA.5"
 	IapItemDisplayTemplateIDStickerPgofest2022Shaymin3                               IapItemDisplayTemplateID = "STICKER_PGOFEST2022_SHAYMIN.3"
 	IapItemDisplayTemplateIDStickerPgofest2022Shaymin5                               IapItemDisplayTemplateID = "STICKER_PGOFEST2022_SHAYMIN.5"
-	IapItemDisplayTemplateIDStickerPgoFest20243                                      IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024.3"
-	IapItemDisplayTemplateIDStickerPgoFest20245                                      IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024.5"
-	IapItemDisplayTemplateIDStickerPgoFest202413                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_1.3"
-	IapItemDisplayTemplateIDStickerPgoFest202415                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_1.5"
-	IapItemDisplayTemplateIDStickerPgoFest202423                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_2.3"
-	IapItemDisplayTemplateIDStickerPgoFest202425                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_2.5"
-	IapItemDisplayTemplateIDStickerPgoFest202433                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_3.3"
-	IapItemDisplayTemplateIDStickerPgoFest202435                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_3.5"
-	IapItemDisplayTemplateIDStickerPgoFest202443                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_4.3"
-	IapItemDisplayTemplateIDStickerPgoFest202445                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_4.5"
-	IapItemDisplayTemplateIDStickerPgoFest202453                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_5.3"
-	IapItemDisplayTemplateIDStickerPgoFest202455                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_5.5"
-	IapItemDisplayTemplateIDStickerPgoFest202463                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_6.3"
-	IapItemDisplayTemplateIDStickerPgoFest202465                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_6.5"
-	IapItemDisplayTemplateIDStickerPgoFest2024Logo3                                  IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_LOGO.3"
-	IapItemDisplayTemplateIDStickerPgoFest2024Logo5                                  IapItemDisplayTemplateID = "STICKER_PGO_FEST_2024_LOGO.5"
-	IapItemDisplayTemplateIDStickerPgoFest20253                                      IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025.3"
-	IapItemDisplayTemplateIDStickerPgoFest20255                                      IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025.5"
-	IapItemDisplayTemplateIDStickerPgoFest202513                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025_1.3"
-	IapItemDisplayTemplateIDStickerPgoFest202515                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025_1.5"
-	IapItemDisplayTemplateIDStickerPgoFest202523                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025_2.3"
-	IapItemDisplayTemplateIDStickerPgoFest202525                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025_2.5"
-	IapItemDisplayTemplateIDStickerPgoFest202533                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025_3.3"
-	IapItemDisplayTemplateIDStickerPgoFest202535                                     IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025_3.5"
-	IapItemDisplayTemplateIDStickerPgoFest2025Logo3                                  IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025_LOGO.3"
-	IapItemDisplayTemplateIDStickerPgoFest2025Logo5                                  IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025_LOGO.5"
-	IapItemDisplayTemplateIDStickerPgoFestVictini053                                 IapItemDisplayTemplateID = "STICKER_PGO_FEST_VICTINI_05.3"
-	IapItemDisplayTemplateIDStickerPgoFestVictini055                                 IapItemDisplayTemplateID = "STICKER_PGO_FEST_VICTINI_05.5"
-	IapItemDisplayTemplateIDStickerPgoTour20263                                      IapItemDisplayTemplateID = "STICKER_PGO_TOUR_2026.3"
-	IapItemDisplayTemplateIDStickerPgoTour20265                                      IapItemDisplayTemplateID = "STICKER_PGO_TOUR_2026.5"
-	IapItemDisplayTemplateIDStickerPgoTour202613                                     IapItemDisplayTemplateID = "STICKER_PGO_TOUR_2026_1.3"
-	IapItemDisplayTemplateIDStickerPgoTour202615                                     IapItemDisplayTemplateID = "STICKER_PGO_TOUR_2026_1.5"
-	IapItemDisplayTemplateIDStickerPgoTour202623                                     IapItemDisplayTemplateID = "STICKER_PGO_TOUR_2026_2.3"
-	IapItemDisplayTemplateIDStickerPgoTour202625                                     IapItemDisplayTemplateID = "STICKER_PGO_TOUR_2026_2.5"
-	IapItemDisplayTemplateIDStickerPgoTour202633                                     IapItemDisplayTemplateID = "STICKER_PGO_TOUR_2026_3.3"
-	IapItemDisplayTemplateIDStickerPgoTour202635                                     IapItemDisplayTemplateID = "STICKER_PGO_TOUR_2026_3.5"
-	IapItemDisplayTemplateIDStickerPgoTour2026Logo3                                  IapItemDisplayTemplateID = "STICKER_PGO_TOUR_2026_LOGO.3"
-	IapItemDisplayTemplateIDStickerPgoTour2026Logo5                                  IapItemDisplayTemplateID = "STICKER_PGO_TOUR_2026_LOGO.5"
-	IapItemDisplayTemplateIDStickerPgoWildarea20243                                  IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024.3"
-	IapItemDisplayTemplateIDStickerPgoWildarea20245                                  IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024.5"
-	IapItemDisplayTemplateIDStickerPgoWildarea202413                                 IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024_1.3"
-	IapItemDisplayTemplateIDStickerPgoWildarea202415                                 IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024_1.5"
-	IapItemDisplayTemplateIDStickerPgoWildarea202423                                 IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024_2.3"
-	IapItemDisplayTemplateIDStickerPgoWildarea202425                                 IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024_2.5"
-	IapItemDisplayTemplateIDStickerPgoWildarea202433                                 IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024_3.3"
-	IapItemDisplayTemplateIDStickerPgoWildarea202435                                 IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024_3.5"
-	IapItemDisplayTemplateIDStickerPgoWildarea202443                                 IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024_4.3"
-	IapItemDisplayTemplateIDStickerPgoWildarea202445                                 IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024_4.5"
-	IapItemDisplayTemplateIDStickerPgoWildarea2024Logo3                              IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024_LOGO.3"
-	IapItemDisplayTemplateIDStickerPgoWildarea2024Logo5                              IapItemDisplayTemplateID = "STICKER_PGO_WILDAREA_2024_LOGO.5"
 	IapItemDisplayTemplateIDStickerPikachuJol3                                       IapItemDisplayTemplateID = "STICKER_PIKACHU_JOL.3"
 	IapItemDisplayTemplateIDStickerPikachuJol5                                       IapItemDisplayTemplateID = "STICKER_PIKACHU_JOL.5"
 	IapItemDisplayTemplateIDStickerPokemonchatpals2403                               IapItemDisplayTemplateID = "STICKER_POKEMONCHATPALS2_40.3"
@@ -586,6 +983,14 @@ const (
 	IapItemDisplayTemplateIDStickerSummer15                                          IapItemDisplayTemplateID = "STICKER_SUMMER_1.5"
 	IapItemDisplayTemplateIDStickerSummer23                                          IapItemDisplayTemplateID = "STICKER_SUMMER_2.3"
 	IapItemDisplayTemplateIDStickerSummer25                                          IapItemDisplayTemplateID = "STICKER_SUMMER_2.5"
+	IapItemDisplayTemplateIDStickerSummer33                                          IapItemDisplayTemplateID = "STICKER_SUMMER_3.3"
+	IapItemDisplayTemplateIDStickerSummer35                                          IapItemDisplayTemplateID = "STICKER_SUMMER_3.5"
+	IapItemDisplayTemplateIDStickerSummer43                                          IapItemDisplayTemplateID = "STICKER_SUMMER_4.3"
+	IapItemDisplayTemplateIDStickerSummer45                                          IapItemDisplayTemplateID = "STICKER_SUMMER_4.5"
+	IapItemDisplayTemplateIDStickerSummer53                                          IapItemDisplayTemplateID = "STICKER_SUMMER_5.3"
+	IapItemDisplayTemplateIDStickerSummer55                                          IapItemDisplayTemplateID = "STICKER_SUMMER_5.5"
+	IapItemDisplayTemplateIDStickerSummer63                                          IapItemDisplayTemplateID = "STICKER_SUMMER_6.3"
+	IapItemDisplayTemplateIDStickerSummer65                                          IapItemDisplayTemplateID = "STICKER_SUMMER_6.5"
 	IapItemDisplayTemplateIDStickerSummer2023Blastoise3                              IapItemDisplayTemplateID = "STICKER_SUMMER_2023_BLASTOISE.3"
 	IapItemDisplayTemplateIDStickerSummer2023Blastoise5                              IapItemDisplayTemplateID = "STICKER_SUMMER_2023_BLASTOISE.5"
 	IapItemDisplayTemplateIDStickerSummer2023Butterfree3                             IapItemDisplayTemplateID = "STICKER_SUMMER_2023_BUTTERFREE.3"
@@ -618,14 +1023,6 @@ const (
 	IapItemDisplayTemplateIDStickerSummer202535                                      IapItemDisplayTemplateID = "STICKER_SUMMER_2025_3.5"
 	IapItemDisplayTemplateIDStickerSummer202543                                      IapItemDisplayTemplateID = "STICKER_SUMMER_2025_4.3"
 	IapItemDisplayTemplateIDStickerSummer202545                                      IapItemDisplayTemplateID = "STICKER_SUMMER_2025_4.5"
-	IapItemDisplayTemplateIDStickerSummer33                                          IapItemDisplayTemplateID = "STICKER_SUMMER_3.3"
-	IapItemDisplayTemplateIDStickerSummer35                                          IapItemDisplayTemplateID = "STICKER_SUMMER_3.5"
-	IapItemDisplayTemplateIDStickerSummer43                                          IapItemDisplayTemplateID = "STICKER_SUMMER_4.3"
-	IapItemDisplayTemplateIDStickerSummer45                                          IapItemDisplayTemplateID = "STICKER_SUMMER_4.5"
-	IapItemDisplayTemplateIDStickerSummer53                                          IapItemDisplayTemplateID = "STICKER_SUMMER_5.3"
-	IapItemDisplayTemplateIDStickerSummer55                                          IapItemDisplayTemplateID = "STICKER_SUMMER_5.5"
-	IapItemDisplayTemplateIDStickerSummer63                                          IapItemDisplayTemplateID = "STICKER_SUMMER_6.3"
-	IapItemDisplayTemplateIDStickerSummer65                                          IapItemDisplayTemplateID = "STICKER_SUMMER_6.5"
 	IapItemDisplayTemplateIDStickerSwordshield2113                                   IapItemDisplayTemplateID = "STICKER_SWORDSHIELD21_1.3"
 	IapItemDisplayTemplateIDStickerSwordshield2115                                   IapItemDisplayTemplateID = "STICKER_SWORDSHIELD21_1.5"
 	IapItemDisplayTemplateIDStickerSwordshield2123                                   IapItemDisplayTemplateID = "STICKER_SWORDSHIELD21_2.3"
@@ -670,26 +1067,6 @@ const (
 	IapItemDisplayTemplateIDStickerWcs2025Murkrow5                                   IapItemDisplayTemplateID = "STICKER_WCS2025_MURKROW.5"
 	IapItemDisplayTemplateIDStickerWcs2025Pikachu3                                   IapItemDisplayTemplateID = "STICKER_WCS2025_PIKACHU.3"
 	IapItemDisplayTemplateIDStickerWcs2025Pikachu5                                   IapItemDisplayTemplateID = "STICKER_WCS2025_PIKACHU.5"
-	IapItemDisplayTemplateIDStickerWinter202313                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_1.3"
-	IapItemDisplayTemplateIDStickerWinter202315                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_1.5"
-	IapItemDisplayTemplateIDStickerWinter202323                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_2.3"
-	IapItemDisplayTemplateIDStickerWinter202325                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_2.5"
-	IapItemDisplayTemplateIDStickerWinter202333                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_3.3"
-	IapItemDisplayTemplateIDStickerWinter202335                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_3.5"
-	IapItemDisplayTemplateIDStickerWinter202343                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_4.3"
-	IapItemDisplayTemplateIDStickerWinter202345                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_4.5"
-	IapItemDisplayTemplateIDStickerWinter202353                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_5.3"
-	IapItemDisplayTemplateIDStickerWinter202355                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_5.5"
-	IapItemDisplayTemplateIDStickerWinter202363                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_6.3"
-	IapItemDisplayTemplateIDStickerWinter202365                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_6.5"
-	IapItemDisplayTemplateIDStickerWinter202513                                      IapItemDisplayTemplateID = "STICKER_WINTER2025_1.3"
-	IapItemDisplayTemplateIDStickerWinter202515                                      IapItemDisplayTemplateID = "STICKER_WINTER2025_1.5"
-	IapItemDisplayTemplateIDStickerWinter202523                                      IapItemDisplayTemplateID = "STICKER_WINTER2025_2.3"
-	IapItemDisplayTemplateIDStickerWinter202525                                      IapItemDisplayTemplateID = "STICKER_WINTER2025_2.5"
-	IapItemDisplayTemplateIDStickerWinter202533                                      IapItemDisplayTemplateID = "STICKER_WINTER2025_3.3"
-	IapItemDisplayTemplateIDStickerWinter202535                                      IapItemDisplayTemplateID = "STICKER_WINTER2025_3.5"
-	IapItemDisplayTemplateIDStickerWinter202543                                      IapItemDisplayTemplateID = "STICKER_WINTER2025_4.3"
-	IapItemDisplayTemplateIDStickerWinter202545                                      IapItemDisplayTemplateID = "STICKER_WINTER2025_4.5"
 	IapItemDisplayTemplateIDStickerWinter202413                                      IapItemDisplayTemplateID = "STICKER_WINTER_2024_1.3"
 	IapItemDisplayTemplateIDStickerWinter202415                                      IapItemDisplayTemplateID = "STICKER_WINTER_2024_1.5"
 	IapItemDisplayTemplateIDStickerWinter202423                                      IapItemDisplayTemplateID = "STICKER_WINTER_2024_2.3"
@@ -714,409 +1091,30 @@ const (
 	IapItemDisplayTemplateIDStickerWinterSawsbuck5                                   IapItemDisplayTemplateID = "STICKER_WINTER_SAWSBUCK.5"
 	IapItemDisplayTemplateIDStickerWinterSnorunt3                                    IapItemDisplayTemplateID = "STICKER_WINTER_SNORUNT.3"
 	IapItemDisplayTemplateIDStickerWinterSnorunt5                                    IapItemDisplayTemplateID = "STICKER_WINTER_SNORUNT.5"
+	IapItemDisplayTemplateIDStickerWinter202313                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_1.3"
+	IapItemDisplayTemplateIDStickerWinter202315                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_1.5"
+	IapItemDisplayTemplateIDStickerWinter202323                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_2.3"
+	IapItemDisplayTemplateIDStickerWinter202325                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_2.5"
+	IapItemDisplayTemplateIDStickerWinter202333                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_3.3"
+	IapItemDisplayTemplateIDStickerWinter202335                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_3.5"
+	IapItemDisplayTemplateIDStickerWinter202343                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_4.3"
+	IapItemDisplayTemplateIDStickerWinter202345                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_4.5"
+	IapItemDisplayTemplateIDStickerWinter202353                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_5.3"
+	IapItemDisplayTemplateIDStickerWinter202355                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_5.5"
+	IapItemDisplayTemplateIDStickerWinter202363                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_6.3"
+	IapItemDisplayTemplateIDStickerWinter202365                                      IapItemDisplayTemplateID = "STICKER_WINTER2023_6.5"
+	IapItemDisplayTemplateIDStickerWinter202513                                      IapItemDisplayTemplateID = "STICKER_WINTER2025_1.3"
+	IapItemDisplayTemplateIDStickerWinter202515                                      IapItemDisplayTemplateID = "STICKER_WINTER2025_1.5"
+	IapItemDisplayTemplateIDStickerWinter202523                                      IapItemDisplayTemplateID = "STICKER_WINTER2025_2.3"
+	IapItemDisplayTemplateIDStickerWinter202525                                      IapItemDisplayTemplateID = "STICKER_WINTER2025_2.5"
+	IapItemDisplayTemplateIDStickerWinter202533                                      IapItemDisplayTemplateID = "STICKER_WINTER2025_3.3"
+	IapItemDisplayTemplateIDStickerWinter202535                                      IapItemDisplayTemplateID = "STICKER_WINTER2025_3.5"
+	IapItemDisplayTemplateIDStickerWinter202543                                      IapItemDisplayTemplateID = "STICKER_WINTER2025_4.3"
+	IapItemDisplayTemplateIDStickerWinter202545                                      IapItemDisplayTemplateID = "STICKER_WINTER2025_4.5"
 	IapItemDisplayTemplateIDStickerYurutto123                                        IapItemDisplayTemplateID = "STICKER_YURUTTO_12.3"
 	IapItemDisplayTemplateIDStickerYurutto125                                        IapItemDisplayTemplateID = "STICKER_YURUTTO_12.5"
 	IapItemDisplayTemplateIDStickerYurutto243                                        IapItemDisplayTemplateID = "STICKER_YURUTTO_24.3"
 	IapItemDisplayTemplateIDStickerYurutto245                                        IapItemDisplayTemplateID = "STICKER_YURUTTO_24.5"
-	IapItemDisplayTemplateIDWinterholidays2025DeluxeEventPassTrackUnlock             IapItemDisplayTemplateID = "WINTERHOLIDAYS2025_DELUXE_EVENT_PASS_TRACK_UNLOCK"
-	IapItemDisplayTemplateIDWinterholidays2025DeluxeEventPassTrackUnlockPlusPoints   IapItemDisplayTemplateID = "WINTERHOLIDAYS2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
-	IapItemDisplayTemplateIDBattlepassticket1                                        IapItemDisplayTemplateID = "battlepassticket.1"
-	IapItemDisplayTemplateIDBundleEliteExp20241                                      IapItemDisplayTemplateID = "bundle.EliteExp2024.1"
-	IapItemDisplayTemplateIDBundleEliteExp20242                                      IapItemDisplayTemplateID = "bundle.EliteExp2024.2"
-	IapItemDisplayTemplateIDBundleEliteExp20243                                      IapItemDisplayTemplateID = "bundle.EliteExp2024.3"
-	IapItemDisplayTemplateIDBundleEliteExp20244                                      IapItemDisplayTemplateID = "bundle.EliteExp2024.4"
-	IapItemDisplayTemplateIDBundleEliteExp20245                                      IapItemDisplayTemplateID = "bundle.EliteExp2024.5"
-	IapItemDisplayTemplateIDBundleGotour20241                                        IapItemDisplayTemplateID = "bundle.GOTour2024.1"
-	IapItemDisplayTemplateIDBundleGotour20242                                        IapItemDisplayTemplateID = "bundle.GOTour2024.2"
-	IapItemDisplayTemplateIDBundleGotour20243                                        IapItemDisplayTemplateID = "bundle.GOTour2024.3"
-	IapItemDisplayTemplateIDBundleGotour20244                                        IapItemDisplayTemplateID = "bundle.GOTour2024.4"
-	IapItemDisplayTemplateIDBundleGotour20245                                        IapItemDisplayTemplateID = "bundle.GOTour2024.5"
-	IapItemDisplayTemplateIDBundleGotour20246                                        IapItemDisplayTemplateID = "bundle.GOTour2024.6"
-	IapItemDisplayTemplateIDBundleGotour20247                                        IapItemDisplayTemplateID = "bundle.GOTour2024.7"
-	IapItemDisplayTemplateIDBundleAdventurebrazil1001                                IapItemDisplayTemplateID = "bundle.adventurebrazil100.1"
-	IapItemDisplayTemplateIDBundleAdventurebrazil2001                                IapItemDisplayTemplateID = "bundle.adventurebrazil200.1"
-	IapItemDisplayTemplateIDBundleAnniversary20231                                   IapItemDisplayTemplateID = "bundle.anniversary2023.1"
-	IapItemDisplayTemplateIDBundleApacmar20251                                       IapItemDisplayTemplateID = "bundle.apacmar2025.1"
-	IapItemDisplayTemplateIDBundleArraia20251                                        IapItemDisplayTemplateID = "bundle.arraia2025.1"
-	IapItemDisplayTemplateIDBundleArraia20252                                        IapItemDisplayTemplateID = "bundle.arraia2025.2"
-	IapItemDisplayTemplateIDBundleAtlanticav2box1                                    IapItemDisplayTemplateID = "bundle.atlanticav2box.1"
-	IapItemDisplayTemplateIDBundleAtlanticav2box2                                    IapItemDisplayTemplateID = "bundle.atlanticav2box.2"
-	IapItemDisplayTemplateIDBundleBlackfridaystickers241                             IapItemDisplayTemplateID = "bundle.blackfridaystickers24.1"
-	IapItemDisplayTemplateIDBundleBlackfridaystickers242                             IapItemDisplayTemplateID = "bundle.blackfridaystickers24.2"
-	IapItemDisplayTemplateIDBundleBoost20231                                         IapItemDisplayTemplateID = "bundle.boost2023.1"
-	IapItemDisplayTemplateIDBundleBrazil20231                                        IapItemDisplayTemplateID = "bundle.brazil2023.1"
-	IapItemDisplayTemplateIDBundleBrazilrediscover11                                 IapItemDisplayTemplateID = "bundle.brazilrediscover1.1"
-	IapItemDisplayTemplateIDBundleBrazilrediscover21                                 IapItemDisplayTemplateID = "bundle.brazilrediscover2.1"
-	IapItemDisplayTemplateIDBundleBrazilvacations1001                                IapItemDisplayTemplateID = "bundle.brazilvacations100.1"
-	IapItemDisplayTemplateIDBundleCarnival20251                                      IapItemDisplayTemplateID = "bundle.carnival2025.1"
-	IapItemDisplayTemplateIDBundleCarnival20252                                      IapItemDisplayTemplateID = "bundle.carnival2025.2"
-	IapItemDisplayTemplateIDBundleCd20221                                            IapItemDisplayTemplateID = "bundle.cd2022.1"
-	IapItemDisplayTemplateIDBundleCd20222                                            IapItemDisplayTemplateID = "bundle.cd2022.2"
-	IapItemDisplayTemplateIDBundleCdrecapstickers1                                   IapItemDisplayTemplateID = "bundle.cdrecapstickers.1"
-	IapItemDisplayTemplateIDBundleCitysafari450hktw1                                 IapItemDisplayTemplateID = "bundle.citysafari450hktw.1"
-	IapItemDisplayTemplateIDBundleCswkmakegoodprep1001                               IapItemDisplayTemplateID = "bundle.cswkmakegoodprep.100.1"
-	IapItemDisplayTemplateIDBundleCswkmakegoodprep2001                               IapItemDisplayTemplateID = "bundle.cswkmakegoodprep.200.1"
-	IapItemDisplayTemplateIDBundleCswkmakegoodprep3001                               IapItemDisplayTemplateID = "bundle.cswkmakegoodprep.300.1"
-	IapItemDisplayTemplateIDBundleDecroutes20231                                     IapItemDisplayTemplateID = "bundle.decroutes2023.1"
-	IapItemDisplayTemplateIDBundleDiademuertos20251                                  IapItemDisplayTemplateID = "bundle.diademuertos2025.1"
-	IapItemDisplayTemplateIDBundleDiademuertosmax1001                                IapItemDisplayTemplateID = "bundle.diademuertosmax100.1"
-	IapItemDisplayTemplateIDBundleDiademuertosmax2001                                IapItemDisplayTemplateID = "bundle.diademuertosmax200.1"
-	IapItemDisplayTemplateIDBundleDiwali20251                                        IapItemDisplayTemplateID = "bundle.diwali2025.1"
-	IapItemDisplayTemplateIDBundleDiwali20252                                        IapItemDisplayTemplateID = "bundle.diwali2025.2"
-	IapItemDisplayTemplateIDBundleDiwalimax1001                                      IapItemDisplayTemplateID = "bundle.diwalimax100.1"
-	IapItemDisplayTemplateIDBundleEmcarnival20261                                    IapItemDisplayTemplateID = "bundle.emcarnival2026.1"
-	IapItemDisplayTemplateIDBundleEmcarnival20262                                    IapItemDisplayTemplateID = "bundle.emcarnival2026.2"
-	IapItemDisplayTemplateIDBundleEmea20231                                          IapItemDisplayTemplateID = "bundle.emea2023.1"
-	IapItemDisplayTemplateIDBundleEvolve20221                                        IapItemDisplayTemplateID = "bundle.evolve2022.1"
-	IapItemDisplayTemplateIDBundleEvolve20222                                        IapItemDisplayTemplateID = "bundle.evolve2022.2"
-	IapItemDisplayTemplateIDBundleEvolve20223                                        IapItemDisplayTemplateID = "bundle.evolve2022.3"
-	IapItemDisplayTemplateIDBundleEvolve20224                                        IapItemDisplayTemplateID = "bundle.evolve2022.4"
-	IapItemDisplayTemplateIDBundleEvolve20225                                        IapItemDisplayTemplateID = "bundle.evolve2022.5"
-	IapItemDisplayTemplateIDBundleEvolve20226                                        IapItemDisplayTemplateID = "bundle.evolve2022.6"
-	IapItemDisplayTemplateIDBundleFol20221                                           IapItemDisplayTemplateID = "bundle.fol2022.1"
-	IapItemDisplayTemplateIDBundleFol20222                                           IapItemDisplayTemplateID = "bundle.fol2022.2"
-	IapItemDisplayTemplateIDBundleFol20223                                           IapItemDisplayTemplateID = "bundle.fol2022.3"
-	IapItemDisplayTemplateIDBundleFol20224                                           IapItemDisplayTemplateID = "bundle.fol2022.4"
-	IapItemDisplayTemplateIDBundleGeneralTemplate4                                   IapItemDisplayTemplateID = "bundle.general.template4"
-	IapItemDisplayTemplateIDBundleGeneralTemplate5                                   IapItemDisplayTemplateID = "bundle.general.template5"
-	IapItemDisplayTemplateIDBundleGeneralTemplate6                                   IapItemDisplayTemplateID = "bundle.general.template6"
-	IapItemDisplayTemplateIDBundleGeneral1Free1                                      IapItemDisplayTemplateID = "bundle.general1.free.1"
-	IapItemDisplayTemplateIDBundleGeneral1Large1                                     IapItemDisplayTemplateID = "bundle.general1.large.1"
-	IapItemDisplayTemplateIDBundleGeneral1Medium1                                    IapItemDisplayTemplateID = "bundle.general1.medium.1"
-	IapItemDisplayTemplateIDBundleGeneral1Medium2                                    IapItemDisplayTemplateID = "bundle.general1.medium.2"
-	IapItemDisplayTemplateIDBundleGeneral1Medium3                                    IapItemDisplayTemplateID = "bundle.general1.medium.3"
-	IapItemDisplayTemplateIDBundleGeneral1Rocket1                                    IapItemDisplayTemplateID = "bundle.general1.rocket.1"
-	IapItemDisplayTemplateIDBundleGeneral1Small1                                     IapItemDisplayTemplateID = "bundle.general1.small.1"
-	IapItemDisplayTemplateIDBundleGeneral1Tiny2                                      IapItemDisplayTemplateID = "bundle.general1.tiny.2"
-	IapItemDisplayTemplateIDBundleGeneral1Tiny3                                      IapItemDisplayTemplateID = "bundle.general1.tiny.3"
-	IapItemDisplayTemplateIDBundleGeneral1Tiny4                                      IapItemDisplayTemplateID = "bundle.general1.tiny.4"
-	IapItemDisplayTemplateIDBundleGeneral2Free1                                      IapItemDisplayTemplateID = "bundle.general2.free.1"
-	IapItemDisplayTemplateIDBundleGeneral2Large1                                     IapItemDisplayTemplateID = "bundle.general2.large.1"
-	IapItemDisplayTemplateIDBundleGeneral2Medium1                                    IapItemDisplayTemplateID = "bundle.general2.medium.1"
-	IapItemDisplayTemplateIDBundleGeneral2Small1                                     IapItemDisplayTemplateID = "bundle.general2.small.1"
-	IapItemDisplayTemplateIDBundleGeneral3Free1                                      IapItemDisplayTemplateID = "bundle.general3.free.1"
-	IapItemDisplayTemplateIDBundleGeneral3Large1                                     IapItemDisplayTemplateID = "bundle.general3.large.1"
-	IapItemDisplayTemplateIDBundleGeneral3Small1                                     IapItemDisplayTemplateID = "bundle.general3.small.1"
-	IapItemDisplayTemplateIDBundleGeneral4Large1                                     IapItemDisplayTemplateID = "bundle.general4.large.1"
-	IapItemDisplayTemplateIDBundleGeneral4Small2                                     IapItemDisplayTemplateID = "bundle.general4.small.2"
-	IapItemDisplayTemplateIDBundleGeneral5Large1                                     IapItemDisplayTemplateID = "bundle.general5.large.1"
-	IapItemDisplayTemplateIDBundleGeneral5Small1                                     IapItemDisplayTemplateID = "bundle.general5.small.1"
-	IapItemDisplayTemplateIDBundleGeneral5Small2                                     IapItemDisplayTemplateID = "bundle.general5.small.2"
-	IapItemDisplayTemplateIDBundleGeneral5Small3                                     IapItemDisplayTemplateID = "bundle.general5.small.3"
-	IapItemDisplayTemplateIDBundleGeneral5Small4                                     IapItemDisplayTemplateID = "bundle.general5.small.4"
-	IapItemDisplayTemplateIDBundleGeneral5Small5                                     IapItemDisplayTemplateID = "bundle.general5.small.5"
-	IapItemDisplayTemplateIDBundleGeneral6Small1                                     IapItemDisplayTemplateID = "bundle.general6.small.1"
-	IapItemDisplayTemplateIDBundleGmaxday1                                           IapItemDisplayTemplateID = "bundle.gmaxday.1"
-	IapItemDisplayTemplateIDBundleGofest20231                                        IapItemDisplayTemplateID = "bundle.gofest2023.1"
-	IapItemDisplayTemplateIDBundleGofest20232                                        IapItemDisplayTemplateID = "bundle.gofest2023.2"
-	IapItemDisplayTemplateIDBundleGofest20233                                        IapItemDisplayTemplateID = "bundle.gofest2023.3"
-	IapItemDisplayTemplateIDBundleGofest20234                                        IapItemDisplayTemplateID = "bundle.gofest2023.4"
-	IapItemDisplayTemplateIDBundleGofest20235                                        IapItemDisplayTemplateID = "bundle.gofest2023.5"
-	IapItemDisplayTemplateIDBundleGofest20241                                        IapItemDisplayTemplateID = "bundle.gofest2024.1"
-	IapItemDisplayTemplateIDBundleGofest20242                                        IapItemDisplayTemplateID = "bundle.gofest2024.2"
-	IapItemDisplayTemplateIDBundleGofest20243                                        IapItemDisplayTemplateID = "bundle.gofest2024.3"
-	IapItemDisplayTemplateIDBundleGofest20244                                        IapItemDisplayTemplateID = "bundle.gofest2024.4"
-	IapItemDisplayTemplateIDBundleGofestmakegoodprep1                                IapItemDisplayTemplateID = "bundle.gofestmakegoodprep.1"
-	IapItemDisplayTemplateIDBundleGofestmakegoodprep2                                IapItemDisplayTemplateID = "bundle.gofestmakegoodprep.2"
-	IapItemDisplayTemplateIDBundleGofestmakegoodprep3                                IapItemDisplayTemplateID = "bundle.gofestmakegoodprep.3"
-	IapItemDisplayTemplateIDBundleGowa20241                                          IapItemDisplayTemplateID = "bundle.gowa2024.1"
-	IapItemDisplayTemplateIDBundleGowa20242                                          IapItemDisplayTemplateID = "bundle.gowa2024.2"
-	IapItemDisplayTemplateIDBundleGowa20243                                          IapItemDisplayTemplateID = "bundle.gowa2024.3"
-	IapItemDisplayTemplateIDBundleGowa20244                                          IapItemDisplayTemplateID = "bundle.gowa2024.4"
-	IapItemDisplayTemplateIDBundleGpdindialaunch1                                    IapItemDisplayTemplateID = "bundle.gpdindialaunch.1"
-	IapItemDisplayTemplateIDBundleGpmay20231                                         IapItemDisplayTemplateID = "bundle.gpmay2023.1"
-	IapItemDisplayTemplateIDBundleGwlatam20251                                       IapItemDisplayTemplateID = "bundle.gwlatam2025.1"
-	IapItemDisplayTemplateIDBundleGwlatam20252                                       IapItemDisplayTemplateID = "bundle.gwlatam2025.2"
-	IapItemDisplayTemplateIDBundleGwlatam20253                                       IapItemDisplayTemplateID = "bundle.gwlatam2025.3"
-	IapItemDisplayTemplateIDBundleHalloweenAdventure1                                IapItemDisplayTemplateID = "bundle.halloween.adventure.1"
-	IapItemDisplayTemplateIDBundleHalloweenLarge1                                    IapItemDisplayTemplateID = "bundle.halloween.large.1"
-	IapItemDisplayTemplateIDBundleHalloweenSmall1                                    IapItemDisplayTemplateID = "bundle.halloween.small.1"
-	IapItemDisplayTemplateIDBundleHalloween20221                                     IapItemDisplayTemplateID = "bundle.halloween2022.1"
-	IapItemDisplayTemplateIDBundleHalloween20222                                     IapItemDisplayTemplateID = "bundle.halloween2022.2"
-	IapItemDisplayTemplateIDBundleHalloween20223                                     IapItemDisplayTemplateID = "bundle.halloween2022.3"
-	IapItemDisplayTemplateIDBundleHalloween20231                                     IapItemDisplayTemplateID = "bundle.halloween2023.1"
-	IapItemDisplayTemplateIDBundleHalloween20232                                     IapItemDisplayTemplateID = "bundle.halloween2023.2"
-	IapItemDisplayTemplateIDBundleHalloween20233                                     IapItemDisplayTemplateID = "bundle.halloween2023.3"
-	IapItemDisplayTemplateIDBundleHalloween20251                                     IapItemDisplayTemplateID = "bundle.halloween2025.1"
-	IapItemDisplayTemplateIDBundleHalloween20252                                     IapItemDisplayTemplateID = "bundle.halloween2025.2"
-	IapItemDisplayTemplateIDBundleHalloween20253                                     IapItemDisplayTemplateID = "bundle.halloween2025.3"
-	IapItemDisplayTemplateIDBundleHarvestcatch1                                      IapItemDisplayTemplateID = "bundle.harvestcatch.1"
-	IapItemDisplayTemplateIDBundleHarvestfestival2025                                IapItemDisplayTemplateID = "bundle.harvestfestival.2025"
-	IapItemDisplayTemplateIDBundleHatchbox20241                                      IapItemDisplayTemplateID = "bundle.hatchbox2024.1"
-	IapItemDisplayTemplateIDBundleHawlucha20251                                      IapItemDisplayTemplateID = "bundle.hawlucha2025.1"
-	IapItemDisplayTemplateIDBundleHawlucha20252                                      IapItemDisplayTemplateID = "bundle.hawlucha2025.2"
-	IapItemDisplayTemplateIDBundleHawluchacelebration1001                            IapItemDisplayTemplateID = "bundle.hawluchacelebration100.1"
-	IapItemDisplayTemplateIDBundleHawluchacelebration2001                            IapItemDisplayTemplateID = "bundle.hawluchacelebration200.1"
-	IapItemDisplayTemplateIDBundleHisuiraidday20231                                  IapItemDisplayTemplateID = "bundle.hisuiraidday2023.1"
-	IapItemDisplayTemplateIDBundleHoli20251                                          IapItemDisplayTemplateID = "bundle.holi2025.1"
-	IapItemDisplayTemplateIDBundleHoli20252                                          IapItemDisplayTemplateID = "bundle.holi2025.2"
-	IapItemDisplayTemplateIDBundleHoliday20221                                       IapItemDisplayTemplateID = "bundle.holiday2022.1"
-	IapItemDisplayTemplateIDBundleHoliday20222                                       IapItemDisplayTemplateID = "bundle.holiday2022.2"
-	IapItemDisplayTemplateIDBundleHoliday20223                                       IapItemDisplayTemplateID = "bundle.holiday2022.3"
-	IapItemDisplayTemplateIDBundleHoliday20241                                       IapItemDisplayTemplateID = "bundle.holiday2024.1"
-	IapItemDisplayTemplateIDBundleIncenseday1                                        IapItemDisplayTemplateID = "bundle.incenseday.1"
-	IapItemDisplayTemplateIDBundleIndiaaugust1001                                    IapItemDisplayTemplateID = "bundle.indiaaugust100.1"
-	IapItemDisplayTemplateIDBundleIndiaboxfeature1                                   IapItemDisplayTemplateID = "bundle.indiaboxfeature.1"
-	IapItemDisplayTemplateIDBundleIndiafestivaloflights1                             IapItemDisplayTemplateID = "bundle.indiafestivaloflights.1"
-	IapItemDisplayTemplateIDBundleIndiamay20241                                      IapItemDisplayTemplateID = "bundle.indiamay2024.1"
-	IapItemDisplayTemplateIDBundleIndiaseptember1001                                 IapItemDisplayTemplateID = "bundle.indiaseptember100.1"
-	IapItemDisplayTemplateIDBundleIndiaseptember2001                                 IapItemDisplayTemplateID = "bundle.indiaseptember200.1"
-	IapItemDisplayTemplateIDBundleIndonesiaboxfeature1                               IapItemDisplayTemplateID = "bundle.indonesiaboxfeature.1"
-	IapItemDisplayTemplateIDBundleIndonesialaunch1                                   IapItemDisplayTemplateID = "bundle.indonesialaunch.1"
-	IapItemDisplayTemplateIDBundleIndonesialaunch2                                   IapItemDisplayTemplateID = "bundle.indonesialaunch.2"
-	IapItemDisplayTemplateIDBundleJakartaaugust1001                                  IapItemDisplayTemplateID = "bundle.jakartaaugust100.1"
-	IapItemDisplayTemplateIDBundleKoreaseptember1001                                 IapItemDisplayTemplateID = "bundle.koreaseptember100.1"
-	IapItemDisplayTemplateIDBundleKoreaseptember2001                                 IapItemDisplayTemplateID = "bundle.koreaseptember200.1"
-	IapItemDisplayTemplateIDBundleKsalaunch1001                                      IapItemDisplayTemplateID = "bundle.ksalaunch100.1"
-	IapItemDisplayTemplateIDBundleKsalaunch2001                                      IapItemDisplayTemplateID = "bundle.ksalaunch200.1"
-	IapItemDisplayTemplateIDBundleLatbox1001                                         IapItemDisplayTemplateID = "bundle.latbox100.1"
-	IapItemDisplayTemplateIDBundleLatbox3001                                         IapItemDisplayTemplateID = "bundle.latbox300.1"
-	IapItemDisplayTemplateIDBundleLunarnewyear1                                      IapItemDisplayTemplateID = "bundle.lunarnewyear.1"
-	IapItemDisplayTemplateIDBundleMaxfinale1                                         IapItemDisplayTemplateID = "bundle.maxfinale.1"
-	IapItemDisplayTemplateIDBundleMaxfinale2                                         IapItemDisplayTemplateID = "bundle.maxfinale.2"
-	IapItemDisplayTemplateIDBundleMaxmonday1                                         IapItemDisplayTemplateID = "bundle.maxmonday.1"
-	IapItemDisplayTemplateIDBundleMegaLucarioRaidDay20241                            IapItemDisplayTemplateID = "bundle.mega-lucario-raid-day2024.1"
-	IapItemDisplayTemplateIDBundleMheracrossraidday20241                             IapItemDisplayTemplateID = "bundle.mheracrossraidday2024.1"
-	IapItemDisplayTemplateIDBundleMidautumn1                                         IapItemDisplayTemplateID = "bundle.midautumn.1"
-	IapItemDisplayTemplateIDBundleMidautumn2                                         IapItemDisplayTemplateID = "bundle.midautumn.2"
-	IapItemDisplayTemplateIDBundleMidautumn3                                         IapItemDisplayTemplateID = "bundle.midautumn.3"
-	IapItemDisplayTemplateIDBundleNewyears20241                                      IapItemDisplayTemplateID = "bundle.newyears2024.1"
-	IapItemDisplayTemplateIDBundlePlaysummerbox1                                     IapItemDisplayTemplateID = "bundle.playsummerbox.1"
-	IapItemDisplayTemplateIDBundlePrimalraidday20231                                 IapItemDisplayTemplateID = "bundle.primalraidday2023.1"
-	IapItemDisplayTemplateIDBundlePsychSpec20221                                     IapItemDisplayTemplateID = "bundle.psych_spec_2022.1"
-	IapItemDisplayTemplateIDBundlePsychSpec20222                                     IapItemDisplayTemplateID = "bundle.psych_spec_2022.2"
-	IapItemDisplayTemplateIDBundlePsychSpec20223                                     IapItemDisplayTemplateID = "bundle.psych_spec_2022.3"
-	IapItemDisplayTemplateIDBundleRamadan1                                           IapItemDisplayTemplateID = "bundle.ramadan.1"
-	IapItemDisplayTemplateIDBundleRamadan2                                           IapItemDisplayTemplateID = "bundle.ramadan.2"
-	IapItemDisplayTemplateIDBundleRarebundle1                                        IapItemDisplayTemplateID = "bundle.rarebundle.1"
-	IapItemDisplayTemplateIDBundleRarebundle2                                        IapItemDisplayTemplateID = "bundle.rarebundle.2"
-	IapItemDisplayTemplateIDBundleRarebundle3                                        IapItemDisplayTemplateID = "bundle.rarebundle.3"
-	IapItemDisplayTemplateIDBundleRarebundle4                                        IapItemDisplayTemplateID = "bundle.rarebundle.4"
-	IapItemDisplayTemplateIDBundleRiolu20231                                         IapItemDisplayTemplateID = "bundle.riolu2023.1"
-	IapItemDisplayTemplateIDBundleRiolu20232                                         IapItemDisplayTemplateID = "bundle.riolu2023.2"
-	IapItemDisplayTemplateIDBundleRockruffboost1                                     IapItemDisplayTemplateID = "bundle.rockruffboost.1"
-	IapItemDisplayTemplateIDBundleRrpstar1                                           IapItemDisplayTemplateID = "bundle.rrpstar.1"
-	IapItemDisplayTemplateIDBundleS17seasonstart1                                    IapItemDisplayTemplateID = "bundle.s17seasonstart.1"
-	IapItemDisplayTemplateIDBundleSeason10evergreen1                                 IapItemDisplayTemplateID = "bundle.season10evergreen.1"
-	IapItemDisplayTemplateIDBundleSeason10evergreen2                                 IapItemDisplayTemplateID = "bundle.season10evergreen.2"
-	IapItemDisplayTemplateIDBundleSeason10evergreen3                                 IapItemDisplayTemplateID = "bundle.season10evergreen.3"
-	IapItemDisplayTemplateIDBundleSeason11evergreen1                                 IapItemDisplayTemplateID = "bundle.season11evergreen.1"
-	IapItemDisplayTemplateIDBundleSeason11evergreen2                                 IapItemDisplayTemplateID = "bundle.season11evergreen.2"
-	IapItemDisplayTemplateIDBundleSeason11evergreen3                                 IapItemDisplayTemplateID = "bundle.season11evergreen.3"
-	IapItemDisplayTemplateIDBundleSeason12evergreen20231                             IapItemDisplayTemplateID = "bundle.season12evergreen2023.1"
-	IapItemDisplayTemplateIDBundleSeason12evergreen20232                             IapItemDisplayTemplateID = "bundle.season12evergreen2023.2"
-	IapItemDisplayTemplateIDBundleSeason12evergreen20233                             IapItemDisplayTemplateID = "bundle.season12evergreen2023.3"
-	IapItemDisplayTemplateIDBundleSeason13evergreen20231                             IapItemDisplayTemplateID = "bundle.season13evergreen2023.1"
-	IapItemDisplayTemplateIDBundleSeason13evergreen20232                             IapItemDisplayTemplateID = "bundle.season13evergreen2023.2"
-	IapItemDisplayTemplateIDBundleSeason13evergreen20233                             IapItemDisplayTemplateID = "bundle.season13evergreen2023.3"
-	IapItemDisplayTemplateIDBundleSeason14evergreen20241                             IapItemDisplayTemplateID = "bundle.season14evergreen2024.1"
-	IapItemDisplayTemplateIDBundleSeason14evergreen20242                             IapItemDisplayTemplateID = "bundle.season14evergreen2024.2"
-	IapItemDisplayTemplateIDBundleSeason14evergreen20243                             IapItemDisplayTemplateID = "bundle.season14evergreen2024.3"
-	IapItemDisplayTemplateIDBundleSeason15evergreen20241                             IapItemDisplayTemplateID = "bundle.season15evergreen2024.1"
-	IapItemDisplayTemplateIDBundleSeason15evergreen20242                             IapItemDisplayTemplateID = "bundle.season15evergreen2024.2"
-	IapItemDisplayTemplateIDBundleSeason15evergreen20243                             IapItemDisplayTemplateID = "bundle.season15evergreen2024.3"
-	IapItemDisplayTemplateIDBundleSeason16evergreen20241                             IapItemDisplayTemplateID = "bundle.season16evergreen2024.1"
-	IapItemDisplayTemplateIDBundleSeason16evergreen20242                             IapItemDisplayTemplateID = "bundle.season16evergreen2024.2"
-	IapItemDisplayTemplateIDBundleSeason16evergreen20243                             IapItemDisplayTemplateID = "bundle.season16evergreen2024.3"
-	IapItemDisplayTemplateIDBundleSeasonaldelights20241                              IapItemDisplayTemplateID = "bundle.seasonaldelights2024.1"
-	IapItemDisplayTemplateIDBundleShadowlugia1                                       IapItemDisplayTemplateID = "bundle.shadowlugia.1"
-	IapItemDisplayTemplateIDBundleSmoresbump2025                                     IapItemDisplayTemplateID = "bundle.smoresbump.2025"
-	IapItemDisplayTemplateIDBundleSolstice20231                                      IapItemDisplayTemplateID = "bundle.solstice2023.1"
-	IapItemDisplayTemplateIDBundleSolstice20232                                      IapItemDisplayTemplateID = "bundle.solstice2023.2"
-	IapItemDisplayTemplateIDBundleSolstice20233                                      IapItemDisplayTemplateID = "bundle.solstice2023.3"
-	IapItemDisplayTemplateIDBundleSongkran20251                                      IapItemDisplayTemplateID = "bundle.songkran2025.1"
-	IapItemDisplayTemplateIDBundleSparkbox1                                          IapItemDisplayTemplateID = "bundle.sparkbox.1"
-	IapItemDisplayTemplateIDBundleSparkbox2                                          IapItemDisplayTemplateID = "bundle.sparkbox.2"
-	IapItemDisplayTemplateIDBundleSparkbox3                                          IapItemDisplayTemplateID = "bundle.sparkbox.3"
-	IapItemDisplayTemplateIDBundleSpringtakeover20231                                IapItemDisplayTemplateID = "bundle.springtakeover2023.1"
-	IapItemDisplayTemplateIDBundleSpringtakeover20232                                IapItemDisplayTemplateID = "bundle.springtakeover2023.2"
-	IapItemDisplayTemplateIDBundleSpringtakeover20233                                IapItemDisplayTemplateID = "bundle.springtakeover2023.3"
-	IapItemDisplayTemplateIDBundleSteelMettle20221                                   IapItemDisplayTemplateID = "bundle.steel_mettle2022.1"
-	IapItemDisplayTemplateIDBundleSteelMettle20222                                   IapItemDisplayTemplateID = "bundle.steel_mettle2022.2"
-	IapItemDisplayTemplateIDBundleSteelMettle20223                                   IapItemDisplayTemplateID = "bundle.steel_mettle2022.3"
-	IapItemDisplayTemplateIDBundleTakeover20221                                      IapItemDisplayTemplateID = "bundle.takeover2022.1"
-	IapItemDisplayTemplateIDBundleTakeover20222                                      IapItemDisplayTemplateID = "bundle.takeover2022.2"
-	IapItemDisplayTemplateIDBundleTakeover20223                                      IapItemDisplayTemplateID = "bundle.takeover2022.3"
-	IapItemDisplayTemplateIDBundleTgrtakeover20241                                   IapItemDisplayTemplateID = "bundle.tgrtakeover2024.1"
-	IapItemDisplayTemplateIDBundleThailandfeatureapril20241                          IapItemDisplayTemplateID = "bundle.thailandfeatureapril2024.1"
-	IapItemDisplayTemplateIDBundleTmexpert1                                          IapItemDisplayTemplateID = "bundle.tmexpert.1"
-	IapItemDisplayTemplateIDBundleUbraidday20221                                     IapItemDisplayTemplateID = "bundle.ubraidday2022.1"
-	IapItemDisplayTemplateIDBundleUbraidday20222                                     IapItemDisplayTemplateID = "bundle.ubraidday2022.2"
-	IapItemDisplayTemplateIDBundleUkfeature1                                         IapItemDisplayTemplateID = "bundle.ukfeature.1"
-	IapItemDisplayTemplateIDBundleUltrabeastraid2024                                 IapItemDisplayTemplateID = "bundle.ultrabeastraid.2024"
-	IapItemDisplayTemplateIDBundleUltraunlockraid20231                               IapItemDisplayTemplateID = "bundle.ultraunlockraid2023.1"
-	IapItemDisplayTemplateIDBundleUltraunlockraid20232                               IapItemDisplayTemplateID = "bundle.ultraunlockraid2023.2"
-	IapItemDisplayTemplateIDBundleUustorage1                                         IapItemDisplayTemplateID = "bundle.uustorage.1"
-	IapItemDisplayTemplateIDBundleVoyagerouttoplay1                                  IapItemDisplayTemplateID = "bundle.voyagerouttoplay.1"
-	IapItemDisplayTemplateIDBundleWelcomebox1                                        IapItemDisplayTemplateID = "bundle.welcomebox.1"
-	IapItemDisplayTemplateIDBundleWinterevergreen1                                   IapItemDisplayTemplateID = "bundle.winterevergreen.1"
-	IapItemDisplayTemplateIDBundleWinterevergreen2                                   IapItemDisplayTemplateID = "bundle.winterevergreen.2"
-	IapItemDisplayTemplateIDBundleWinterevergreen3                                   IapItemDisplayTemplateID = "bundle.winterevergreen.3"
-	IapItemDisplayTemplateIDBundleWinterholiday20231                                 IapItemDisplayTemplateID = "bundle.winterholiday2023.1"
-	IapItemDisplayTemplateIDBundleWinterholiday20232                                 IapItemDisplayTemplateID = "bundle.winterholiday2023.2"
-	IapItemDisplayTemplateIDBundleWinterholiday20233                                 IapItemDisplayTemplateID = "bundle.winterholiday2023.3"
-	IapItemDisplayTemplateIDBundleXmasLarge1                                         IapItemDisplayTemplateID = "bundle.xmas.large.1"
-	IapItemDisplayTemplateIDBundleZoruamakegood2022                                  IapItemDisplayTemplateID = "bundle.zoruamakegood2022"
-	IapItemDisplayTemplateIDBundleZzraid1                                            IapItemDisplayTemplateID = "bundle.zzraid.1"
-	IapItemDisplayTemplateIDDiademuertos                                             IapItemDisplayTemplateID = "diademuertos"
-	IapItemDisplayTemplateIDEvergreenticket1                                         IapItemDisplayTemplateID = "evergreenticket.1"
-	IapItemDisplayTemplateIDEvergreenticket1Giftable                                 IapItemDisplayTemplateID = "evergreenticket.1.giftable"
-	IapItemDisplayTemplateIDGeneral1Ticket1                                          IapItemDisplayTemplateID = "general1.ticket.1"
-	IapItemDisplayTemplateIDGeneral1Ticket1Giftable                                  IapItemDisplayTemplateID = "general1.ticket.1.giftable"
-	IapItemDisplayTemplateIDGeneral1Ticket2                                          IapItemDisplayTemplateID = "general1.ticket.2"
-	IapItemDisplayTemplateIDGeneral1Ticket2Giftable                                  IapItemDisplayTemplateID = "general1.ticket.2.giftable"
-	IapItemDisplayTemplateIDGeneral1Ticket3                                          IapItemDisplayTemplateID = "general1.ticket.3"
-	IapItemDisplayTemplateIDGeneral1Ticket4                                          IapItemDisplayTemplateID = "general1.ticket.4"
-	IapItemDisplayTemplateIDGeneral1Ticket4Giftable                                  IapItemDisplayTemplateID = "general1.ticket.4.giftable"
-	IapItemDisplayTemplateIDGeneral1Ticket5                                          IapItemDisplayTemplateID = "general1.ticket.5"
-	IapItemDisplayTemplateIDGeneral1Ticket6                                          IapItemDisplayTemplateID = "general1.ticket.6"
-	IapItemDisplayTemplateIDGeneral2Ticket1                                          IapItemDisplayTemplateID = "general2.ticket.1"
-	IapItemDisplayTemplateIDGeneral2Ticket1Giftable                                  IapItemDisplayTemplateID = "general2.ticket.1.giftable"
-	IapItemDisplayTemplateIDGeneral2Ticket10                                         IapItemDisplayTemplateID = "general2.ticket.10"
-	IapItemDisplayTemplateIDGeneral2Ticket10Giftable                                 IapItemDisplayTemplateID = "general2.ticket.10.giftable"
-	IapItemDisplayTemplateIDGeneral2Ticket2                                          IapItemDisplayTemplateID = "general2.ticket.2"
-	IapItemDisplayTemplateIDGeneral2Ticket2Giftable                                  IapItemDisplayTemplateID = "general2.ticket.2.giftable"
-	IapItemDisplayTemplateIDGeneral2Ticket3                                          IapItemDisplayTemplateID = "general2.ticket.3"
-	IapItemDisplayTemplateIDGeneral2Ticket3Giftable                                  IapItemDisplayTemplateID = "general2.ticket.3.giftable"
-	IapItemDisplayTemplateIDGeneral2Ticket4                                          IapItemDisplayTemplateID = "general2.ticket.4"
-	IapItemDisplayTemplateIDGeneral2Ticket4Giftable                                  IapItemDisplayTemplateID = "general2.ticket.4.giftable"
-	IapItemDisplayTemplateIDGeneral2Ticket5                                          IapItemDisplayTemplateID = "general2.ticket.5"
-	IapItemDisplayTemplateIDGeneral2Ticket5Giftable                                  IapItemDisplayTemplateID = "general2.ticket.5.giftable"
-	IapItemDisplayTemplateIDGeneral2Ticket6                                          IapItemDisplayTemplateID = "general2.ticket.6"
-	IapItemDisplayTemplateIDGeneral2Ticket7                                          IapItemDisplayTemplateID = "general2.ticket.7"
-	IapItemDisplayTemplateIDGeneral2Ticket7Giftable                                  IapItemDisplayTemplateID = "general2.ticket.7.giftable"
-	IapItemDisplayTemplateIDGeneral2Ticket8                                          IapItemDisplayTemplateID = "general2.ticket.8"
-	IapItemDisplayTemplateIDGeneral2Ticket8Giftable                                  IapItemDisplayTemplateID = "general2.ticket.8.giftable"
-	IapItemDisplayTemplateIDGeneral2Ticket9                                          IapItemDisplayTemplateID = "general2.ticket.9"
-	IapItemDisplayTemplateIDGeneral2Ticket9Giftable                                  IapItemDisplayTemplateID = "general2.ticket.9.giftable"
-	IapItemDisplayTemplateIDGeneral4Medium1                                          IapItemDisplayTemplateID = "general4.medium.1"
-	IapItemDisplayTemplateIDGeneral6Small1                                           IapItemDisplayTemplateID = "general6.small.1"
-	IapItemDisplayTemplateIDGowaticketfree1                                          IapItemDisplayTemplateID = "gowaticketfree.1"
-	IapItemDisplayTemplateIDHometransport1                                           IapItemDisplayTemplateID = "hometransport.1"
-	IapItemDisplayTemplateIDIncenseordinary1                                         IapItemDisplayTemplateID = "incenseordinary.1"
-	IapItemDisplayTemplateIDIncenseordinary8                                         IapItemDisplayTemplateID = "incenseordinary.8"
-	IapItemDisplayTemplateIDIncubatorbasic1                                          IapItemDisplayTemplateID = "incubatorbasic.1"
-	IapItemDisplayTemplateIDIncubatorsuper1                                          IapItemDisplayTemplateID = "incubatorsuper.1"
-	IapItemDisplayTemplateIDItemleadermap                                            IapItemDisplayTemplateID = "itemleadermap"
-	IapItemDisplayTemplateIDLuckyegg1                                                IapItemDisplayTemplateID = "luckyegg.1"
-	IapItemDisplayTemplateIDLuckyegg8                                                IapItemDisplayTemplateID = "luckyegg.8"
-	IapItemDisplayTemplateIDMaxBoost1                                                IapItemDisplayTemplateID = "max_boost.1"
-	IapItemDisplayTemplateIDMaxBoost3                                                IapItemDisplayTemplateID = "max_boost.3"
-	IapItemDisplayTemplateIDMaxpotion10                                              IapItemDisplayTemplateID = "maxpotion.10"
-	IapItemDisplayTemplateIDMaxpotion5                                               IapItemDisplayTemplateID = "maxpotion.5"
-	IapItemDisplayTemplateIDMaxrevive3                                               IapItemDisplayTemplateID = "maxrevive.3"
-	IapItemDisplayTemplateIDMaxrevive6                                               IapItemDisplayTemplateID = "maxrevive.6"
-	IapItemDisplayTemplateIDMpReplenish1                                             IapItemDisplayTemplateID = "mp_replenish.1"
-	IapItemDisplayTemplateIDMpReplenish3                                             IapItemDisplayTemplateID = "mp_replenish.3"
-	IapItemDisplayTemplateIDMpReplenishRrp1                                          IapItemDisplayTemplateID = "mp_replenish_rrp.1"
-	IapItemDisplayTemplateIDMpReplenishRrp3                                          IapItemDisplayTemplateID = "mp_replenish_rrp.3"
-	IapItemDisplayTemplateIDPaidraidticket1                                          IapItemDisplayTemplateID = "paidraidticket.1"
-	IapItemDisplayTemplateIDPaidraidticket3                                          IapItemDisplayTemplateID = "paidraidticket.3"
-	IapItemDisplayTemplateIDPgoreleaseApril22026DeluxeEventPassTrackRedirect         IapItemDisplayTemplateID = "pgorelease.april2_2026_deluxe_event_pass_track_redirect"
-	IapItemDisplayTemplateIDPgoreleaseApril32026DeluxeEventPassTrackUnlock           IapItemDisplayTemplateID = "pgorelease.april3_2026_deluxe_event_pass_track_unlock"
-	IapItemDisplayTemplateIDPgoreleaseApril32026DeluxeEventPassTrackUnlockPlusPoints IapItemDisplayTemplateID = "pgorelease.april3_2026_deluxe_event_pass_track_unlock_plus_points"
-	IapItemDisplayTemplateIDPgoreleaseBundle1                                        IapItemDisplayTemplateID = "pgorelease.bundle.1"
-	IapItemDisplayTemplateIDPgoreleaseBundle2                                        IapItemDisplayTemplateID = "pgorelease.bundle.2"
-	IapItemDisplayTemplateIDPgoreleaseBundleRtsraid                                  IapItemDisplayTemplateID = "pgorelease.bundle.RTSRaid"
-	IapItemDisplayTemplateIDPgoreleaseBundleBlanchebox1                              IapItemDisplayTemplateID = "pgorelease.bundle.blanchebox.1"
-	IapItemDisplayTemplateIDPgoreleaseBundleCitysafaribarcelona1                     IapItemDisplayTemplateID = "pgorelease.bundle.citysafaribarcelona1"
-	IapItemDisplayTemplateIDPgoreleaseBundleCitysafaribarcelona2                     IapItemDisplayTemplateID = "pgorelease.bundle.citysafaribarcelona2"
-	IapItemDisplayTemplateIDPgoreleaseBundleCitysafarimexico1                        IapItemDisplayTemplateID = "pgorelease.bundle.citysafarimexico1"
-	IapItemDisplayTemplateIDPgoreleaseBundleCitysafarimexico2                        IapItemDisplayTemplateID = "pgorelease.bundle.citysafarimexico2"
-	IapItemDisplayTemplateIDPgoreleaseBundleEliteraidbox1                            IapItemDisplayTemplateID = "pgorelease.bundle.eliteraidbox.1"
-	IapItemDisplayTemplateIDPgoreleaseBundleEliteraidmay2023                         IapItemDisplayTemplateID = "pgorelease.bundle.eliteraidmay2023"
-	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures1                           IapItemDisplayTemplateID = "pgorelease.bundle.flavoredlures.1"
-	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures2                           IapItemDisplayTemplateID = "pgorelease.bundle.flavoredlures.2"
-	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures3                           IapItemDisplayTemplateID = "pgorelease.bundle.flavoredlures.3"
-	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures4                           IapItemDisplayTemplateID = "pgorelease.bundle.flavoredlures.4"
-	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures5                           IapItemDisplayTemplateID = "pgorelease.bundle.flavoredlures.5"
-	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures6                           IapItemDisplayTemplateID = "pgorelease.bundle.flavoredlures.6"
-	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures7                           IapItemDisplayTemplateID = "pgorelease.bundle.flavoredlures.7"
-	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures8                           IapItemDisplayTemplateID = "pgorelease.bundle.flavoredlures.8"
-	IapItemDisplayTemplateIDPgoreleaseBundleFoc2023box1                              IapItemDisplayTemplateID = "pgorelease.bundle.foc2023box.1"
-	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartyLarge2                  IapItemDisplayTemplateID = "pgorelease.bundle.general.thirdparty.large.2"
-	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartyLarge4                  IapItemDisplayTemplateID = "pgorelease.bundle.general.thirdparty.large.4"
-	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartyMedium1                 IapItemDisplayTemplateID = "pgorelease.bundle.general.thirdparty.medium.1"
-	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartySmall1                  IapItemDisplayTemplateID = "pgorelease.bundle.general.thirdparty.small.1"
-	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartySmall12                 IapItemDisplayTemplateID = "pgorelease.bundle.general.thirdparty.small.1.2"
-	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartySmall2                  IapItemDisplayTemplateID = "pgorelease.bundle.general.thirdparty.small.2"
-	IapItemDisplayTemplateIDPgoreleaseBundleGeneral1Tiny4                            IapItemDisplayTemplateID = "pgorelease.bundle.general1.tiny.4"
-	IapItemDisplayTemplateIDPgoreleaseBundleGeneral11Small1331                       IapItemDisplayTemplateID = "pgorelease.bundle.general11.small.1331"
-	IapItemDisplayTemplateIDPgoreleaseBundleGotour20230                              IapItemDisplayTemplateID = "pgorelease.bundle.gotour2023.0"
-	IapItemDisplayTemplateIDPgoreleaseBundleGotour20231                              IapItemDisplayTemplateID = "pgorelease.bundle.gotour2023.1"
-	IapItemDisplayTemplateIDPgoreleaseBundleGotour20232                              IapItemDisplayTemplateID = "pgorelease.bundle.gotour2023.2"
-	IapItemDisplayTemplateIDPgoreleaseBundleGotour20233                              IapItemDisplayTemplateID = "pgorelease.bundle.gotour2023.3"
-	IapItemDisplayTemplateIDPgoreleaseBundleGotour20234                              IapItemDisplayTemplateID = "pgorelease.bundle.gotour2023.4"
-	IapItemDisplayTemplateIDPgoreleaseBundleGotour20235                              IapItemDisplayTemplateID = "pgorelease.bundle.gotour2023.5"
-	IapItemDisplayTemplateIDPgoreleaseBundleGotour20236                              IapItemDisplayTemplateID = "pgorelease.bundle.gotour2023.6"
-	IapItemDisplayTemplateIDPgoreleaseBundleGp20221                                  IapItemDisplayTemplateID = "pgorelease.bundle.gp2022.1"
-	IapItemDisplayTemplateIDPgoreleaseBundleIndiagp20231                             IapItemDisplayTemplateID = "pgorelease.bundle.indiagp2023.1"
-	IapItemDisplayTemplateIDPgoreleaseBundleLure1                                    IapItemDisplayTemplateID = "pgorelease.bundle.lure.1"
-	IapItemDisplayTemplateIDPgoreleaseBundlePokemonday1                              IapItemDisplayTemplateID = "pgorelease.bundle.pokemonday.1"
-	IapItemDisplayTemplateIDPgoreleaseBundleRaiddaymay20231                          IapItemDisplayTemplateID = "pgorelease.bundle.raiddaymay2023.1"
-	IapItemDisplayTemplateIDPgoreleaseBundleRaiddaymay20232                          IapItemDisplayTemplateID = "pgorelease.bundle.raiddaymay2023.2"
-	IapItemDisplayTemplateIDPgoreleaseBundleRaiddaymay20233                          IapItemDisplayTemplateID = "pgorelease.bundle.raiddaymay2023.3"
-	IapItemDisplayTemplateIDPgoreleaseBundleRaiddaymay20234                          IapItemDisplayTemplateID = "pgorelease.bundle.raiddaymay2023.4"
-	IapItemDisplayTemplateIDPgoreleaseBundleRaiddaynov20231                          IapItemDisplayTemplateID = "pgorelease.bundle.raiddaynov2023.1"
-	IapItemDisplayTemplateIDPgoreleaseBundleRaidhourbox1                             IapItemDisplayTemplateID = "pgorelease.bundle.raidhourbox.1"
-	IapItemDisplayTemplateIDPgoreleaseBundleRaidhourbox2                             IapItemDisplayTemplateID = "pgorelease.bundle.raidhourbox.2"
-	IapItemDisplayTemplateIDPgoreleaseBundleRamadan2023box1                          IapItemDisplayTemplateID = "pgorelease.bundle.ramadan2023box.1"
-	IapItemDisplayTemplateIDPgoreleaseBundleSeason10evergreen1                       IapItemDisplayTemplateID = "pgorelease.bundle.season10evergreen.1"
-	IapItemDisplayTemplateIDPgoreleaseBundleSeason10evergreen2                       IapItemDisplayTemplateID = "pgorelease.bundle.season10evergreen.2"
-	IapItemDisplayTemplateIDPgoreleaseBundleSeason10evergreen3                       IapItemDisplayTemplateID = "pgorelease.bundle.season10evergreen.3"
-	IapItemDisplayTemplateIDPgoreleaseBundleSeason10launch1                          IapItemDisplayTemplateID = "pgorelease.bundle.season10launch.1"
-	IapItemDisplayTemplateIDPgoreleaseBundleSustainabilitybonusmay2023               IapItemDisplayTemplateID = "pgorelease.bundle.sustainabilitybonusmay2023"
-	IapItemDisplayTemplateIDPgoreleaseBundleSustainabilitymay2023                    IapItemDisplayTemplateID = "pgorelease.bundle.sustainabilitymay2023"
-	IapItemDisplayTemplateIDPgoreleaseBundleTemplate1                                IapItemDisplayTemplateID = "pgorelease.bundle.template1"
-	IapItemDisplayTemplateIDPgoreleaseBundleTemplate2                                IapItemDisplayTemplateID = "pgorelease.bundle.template2"
-	IapItemDisplayTemplateIDPgoreleaseBundleTemplate3                                IapItemDisplayTemplateID = "pgorelease.bundle.template3"
-	IapItemDisplayTemplateIDPgoreleaseBundleThailandspec20231                        IapItemDisplayTemplateID = "pgorelease.bundle.thailandspec2023.1"
-	IapItemDisplayTemplateIDPgoreleaseBundleWalkeratlantic20221                      IapItemDisplayTemplateID = "pgorelease.bundle.walkeratlantic2022.1"
-	IapItemDisplayTemplateIDPgoreleaseBundleWalkeratlantic20222                      IapItemDisplayTemplateID = "pgorelease.bundle.walkeratlantic2022.2"
-	IapItemDisplayTemplateIDPgoreleaseCitysafariticket01                             IapItemDisplayTemplateID = "pgorelease.citysafariticket0.1"
-	IapItemDisplayTemplateIDPgoreleaseCitysafariticket11                             IapItemDisplayTemplateID = "pgorelease.citysafariticket1.1"
-	IapItemDisplayTemplateIDPgoreleaseCitysafariticket21                             IapItemDisplayTemplateID = "pgorelease.citysafariticket2.1"
-	IapItemDisplayTemplateIDPgoreleaseEvergreenticket1                               IapItemDisplayTemplateID = "pgorelease.evergreenticket.1"
-	IapItemDisplayTemplateIDPgoreleaseEvergreenticket1Giftable                       IapItemDisplayTemplateID = "pgorelease.evergreenticket.1.giftable"
-	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket1                                IapItemDisplayTemplateID = "pgorelease.general1.ticket.1"
-	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket1Giftable                        IapItemDisplayTemplateID = "pgorelease.general1.ticket.1.giftable"
-	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket2                                IapItemDisplayTemplateID = "pgorelease.general1.ticket.2"
-	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket2Giftable                        IapItemDisplayTemplateID = "pgorelease.general1.ticket.2.giftable"
-	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket4                                IapItemDisplayTemplateID = "pgorelease.general1.ticket.4"
-	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket4Giftable                        IapItemDisplayTemplateID = "pgorelease.general1.ticket.4.giftable"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket1                                IapItemDisplayTemplateID = "pgorelease.general2.ticket.1"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket1Giftable                        IapItemDisplayTemplateID = "pgorelease.general2.ticket.1.giftable"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket10                               IapItemDisplayTemplateID = "pgorelease.general2.ticket.10"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket10Giftable                       IapItemDisplayTemplateID = "pgorelease.general2.ticket.10.giftable"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket2                                IapItemDisplayTemplateID = "pgorelease.general2.ticket.2"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket2Giftable                        IapItemDisplayTemplateID = "pgorelease.general2.ticket.2.giftable"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket3                                IapItemDisplayTemplateID = "pgorelease.general2.ticket.3"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket3Giftable                        IapItemDisplayTemplateID = "pgorelease.general2.ticket.3.giftable"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket4                                IapItemDisplayTemplateID = "pgorelease.general2.ticket.4"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket4Giftable                        IapItemDisplayTemplateID = "pgorelease.general2.ticket.4.giftable"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket5                                IapItemDisplayTemplateID = "pgorelease.general2.ticket.5"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket5Giftable                        IapItemDisplayTemplateID = "pgorelease.general2.ticket.5.giftable"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket7                                IapItemDisplayTemplateID = "pgorelease.general2.ticket.7"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket7Giftable                        IapItemDisplayTemplateID = "pgorelease.general2.ticket.7.giftable"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket8                                IapItemDisplayTemplateID = "pgorelease.general2.ticket.8"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket8Giftable                        IapItemDisplayTemplateID = "pgorelease.general2.ticket.8.giftable"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket9                                IapItemDisplayTemplateID = "pgorelease.general2.ticket.9"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket9Giftable                        IapItemDisplayTemplateID = "pgorelease.general2.ticket.9.giftable"
-	IapItemDisplayTemplateIDPgoreleaseMonth2DeluxeEventPassTrackUnlock               IapItemDisplayTemplateID = "pgorelease.month2_deluxe_event_pass_track_unlock"
-	IapItemDisplayTemplateIDPgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints     IapItemDisplayTemplateID = "pgorelease.month2_deluxe_event_pass_track_unlock_plus_points"
-	IapItemDisplayTemplateIDPgoreleasePokecoin15950                                  IapItemDisplayTemplateID = "pgorelease.pokecoin.15950"
-	IapItemDisplayTemplateIDPgoreleasePokecoin21375                                  IapItemDisplayTemplateID = "pgorelease.pokecoin.21375"
-	IapItemDisplayTemplateIDPgoreleasePokecoin2750                                   IapItemDisplayTemplateID = "pgorelease.pokecoin.2750"
-	IapItemDisplayTemplateIDPgoreleasePokecoin5720                                   IapItemDisplayTemplateID = "pgorelease.pokecoin.5720"
-	IapItemDisplayTemplateIDPoffin                                                   IapItemDisplayTemplateID = "poffin"
-	IapItemDisplayTemplateIDPokeball100                                              IapItemDisplayTemplateID = "pokeball.100"
-	IapItemDisplayTemplateIDPokeball20                                               IapItemDisplayTemplateID = "pokeball.20"
-	IapItemDisplayTemplateIDPokeball200                                              IapItemDisplayTemplateID = "pokeball.200"
-	IapItemDisplayTemplateIDPostcardstorageupgrade1                                  IapItemDisplayTemplateID = "postcardstorageupgrade.1"
-	IapItemDisplayTemplateIDRemoteraidticket1                                        IapItemDisplayTemplateID = "remoteraidticket.1"
-	IapItemDisplayTemplateIDRemoteraidticket3                                        IapItemDisplayTemplateID = "remoteraidticket.3"
-	IapItemDisplayTemplateIDStarpiece1                                               IapItemDisplayTemplateID = "starpiece.1"
-	IapItemDisplayTemplateIDStarpiece8                                               IapItemDisplayTemplateID = "starpiece.8"
 	IapItemDisplayTemplateIDTroydisk1                                                IapItemDisplayTemplateID = "troydisk.1"
 	IapItemDisplayTemplateIDTroydisk8                                                IapItemDisplayTemplateID = "troydisk.8"
 	IapItemDisplayTemplateIDWebCommunityAmbassadorBonusBundle2025                    IapItemDisplayTemplateID = "web-community-ambassador-bonus-bundle-2025"
@@ -1125,6 +1123,8 @@ const (
 	IapItemDisplayTemplateIDWebRaidBox071323                                         IapItemDisplayTemplateID = "web-raid-box-071323"
 	IapItemDisplayTemplateIDWebSeasonalDelights2024Box                               IapItemDisplayTemplateID = "web-seasonal-delights-2024-box"
 	IapItemDisplayTemplateIDWebVoyagerBox071323                                      IapItemDisplayTemplateID = "web-voyager-box-071323"
+	IapItemDisplayTemplateIDWinterholidays2025DeluxeEventPassTrackUnlock             IapItemDisplayTemplateID = "WINTERHOLIDAYS2025_DELUXE_EVENT_PASS_TRACK_UNLOCK"
+	IapItemDisplayTemplateIDWinterholidays2025DeluxeEventPassTrackUnlockPlusPoints   IapItemDisplayTemplateID = "WINTERHOLIDAYS2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
 )
 
 var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
@@ -1134,8 +1134,247 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDApril22026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDApril32026DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDApril32026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDBattlepassticket1,
 	IapItemDisplayTemplateIDBundleEc200Rpp1,
 	IapItemDisplayTemplateIDBundleEc600Rpp3,
+	IapItemDisplayTemplateIDBundleAdventurebrazil1001,
+	IapItemDisplayTemplateIDBundleAdventurebrazil2001,
+	IapItemDisplayTemplateIDBundleAnniversary20231,
+	IapItemDisplayTemplateIDBundleApacmar20251,
+	IapItemDisplayTemplateIDBundleArraia20251,
+	IapItemDisplayTemplateIDBundleArraia20252,
+	IapItemDisplayTemplateIDBundleAtlanticav2box1,
+	IapItemDisplayTemplateIDBundleAtlanticav2box2,
+	IapItemDisplayTemplateIDBundleBlackfridaystickers241,
+	IapItemDisplayTemplateIDBundleBlackfridaystickers242,
+	IapItemDisplayTemplateIDBundleBoost20231,
+	IapItemDisplayTemplateIDBundleBrazil20231,
+	IapItemDisplayTemplateIDBundleBrazilrediscover11,
+	IapItemDisplayTemplateIDBundleBrazilrediscover21,
+	IapItemDisplayTemplateIDBundleBrazilvacations1001,
+	IapItemDisplayTemplateIDBundleCarnival20251,
+	IapItemDisplayTemplateIDBundleCarnival20252,
+	IapItemDisplayTemplateIDBundleCd20221,
+	IapItemDisplayTemplateIDBundleCd20222,
+	IapItemDisplayTemplateIDBundleCdrecapstickers1,
+	IapItemDisplayTemplateIDBundleCitysafari450hktw1,
+	IapItemDisplayTemplateIDBundleCswkmakegoodprep1001,
+	IapItemDisplayTemplateIDBundleCswkmakegoodprep2001,
+	IapItemDisplayTemplateIDBundleCswkmakegoodprep3001,
+	IapItemDisplayTemplateIDBundleDecroutes20231,
+	IapItemDisplayTemplateIDBundleDiademuertos20251,
+	IapItemDisplayTemplateIDBundleDiademuertosmax1001,
+	IapItemDisplayTemplateIDBundleDiademuertosmax2001,
+	IapItemDisplayTemplateIDBundleDiwali20251,
+	IapItemDisplayTemplateIDBundleDiwali20252,
+	IapItemDisplayTemplateIDBundleDiwalimax1001,
+	IapItemDisplayTemplateIDBundleEliteExp20241,
+	IapItemDisplayTemplateIDBundleEliteExp20242,
+	IapItemDisplayTemplateIDBundleEliteExp20243,
+	IapItemDisplayTemplateIDBundleEliteExp20244,
+	IapItemDisplayTemplateIDBundleEliteExp20245,
+	IapItemDisplayTemplateIDBundleEmcarnival20261,
+	IapItemDisplayTemplateIDBundleEmcarnival20262,
+	IapItemDisplayTemplateIDBundleEmea20231,
+	IapItemDisplayTemplateIDBundleEvolve20221,
+	IapItemDisplayTemplateIDBundleEvolve20222,
+	IapItemDisplayTemplateIDBundleEvolve20223,
+	IapItemDisplayTemplateIDBundleEvolve20224,
+	IapItemDisplayTemplateIDBundleEvolve20225,
+	IapItemDisplayTemplateIDBundleEvolve20226,
+	IapItemDisplayTemplateIDBundleFol20221,
+	IapItemDisplayTemplateIDBundleFol20222,
+	IapItemDisplayTemplateIDBundleFol20223,
+	IapItemDisplayTemplateIDBundleFol20224,
+	IapItemDisplayTemplateIDBundleGeneralTemplate4,
+	IapItemDisplayTemplateIDBundleGeneralTemplate5,
+	IapItemDisplayTemplateIDBundleGeneralTemplate6,
+	IapItemDisplayTemplateIDBundleGeneral1Free1,
+	IapItemDisplayTemplateIDBundleGeneral1Large1,
+	IapItemDisplayTemplateIDBundleGeneral1Medium1,
+	IapItemDisplayTemplateIDBundleGeneral1Medium2,
+	IapItemDisplayTemplateIDBundleGeneral1Medium3,
+	IapItemDisplayTemplateIDBundleGeneral1Rocket1,
+	IapItemDisplayTemplateIDBundleGeneral1Small1,
+	IapItemDisplayTemplateIDBundleGeneral1Tiny2,
+	IapItemDisplayTemplateIDBundleGeneral1Tiny3,
+	IapItemDisplayTemplateIDBundleGeneral1Tiny4,
+	IapItemDisplayTemplateIDBundleGeneral2Free1,
+	IapItemDisplayTemplateIDBundleGeneral2Large1,
+	IapItemDisplayTemplateIDBundleGeneral2Medium1,
+	IapItemDisplayTemplateIDBundleGeneral2Small1,
+	IapItemDisplayTemplateIDBundleGeneral3Free1,
+	IapItemDisplayTemplateIDBundleGeneral3Large1,
+	IapItemDisplayTemplateIDBundleGeneral3Small1,
+	IapItemDisplayTemplateIDBundleGeneral4Large1,
+	IapItemDisplayTemplateIDBundleGeneral4Small2,
+	IapItemDisplayTemplateIDBundleGeneral5Large1,
+	IapItemDisplayTemplateIDBundleGeneral5Small1,
+	IapItemDisplayTemplateIDBundleGeneral5Small2,
+	IapItemDisplayTemplateIDBundleGeneral5Small3,
+	IapItemDisplayTemplateIDBundleGeneral5Small4,
+	IapItemDisplayTemplateIDBundleGeneral5Small5,
+	IapItemDisplayTemplateIDBundleGeneral6Small1,
+	IapItemDisplayTemplateIDBundleGmaxday1,
+	IapItemDisplayTemplateIDBundleGofest20231,
+	IapItemDisplayTemplateIDBundleGofest20232,
+	IapItemDisplayTemplateIDBundleGofest20233,
+	IapItemDisplayTemplateIDBundleGofest20234,
+	IapItemDisplayTemplateIDBundleGofest20235,
+	IapItemDisplayTemplateIDBundleGofest20241,
+	IapItemDisplayTemplateIDBundleGofest20242,
+	IapItemDisplayTemplateIDBundleGofest20243,
+	IapItemDisplayTemplateIDBundleGofest20244,
+	IapItemDisplayTemplateIDBundleGofestmakegoodprep1,
+	IapItemDisplayTemplateIDBundleGofestmakegoodprep2,
+	IapItemDisplayTemplateIDBundleGofestmakegoodprep3,
+	IapItemDisplayTemplateIDBundleGotour20241,
+	IapItemDisplayTemplateIDBundleGotour20242,
+	IapItemDisplayTemplateIDBundleGotour20243,
+	IapItemDisplayTemplateIDBundleGotour20244,
+	IapItemDisplayTemplateIDBundleGotour20245,
+	IapItemDisplayTemplateIDBundleGotour20246,
+	IapItemDisplayTemplateIDBundleGotour20247,
+	IapItemDisplayTemplateIDBundleGowa20241,
+	IapItemDisplayTemplateIDBundleGowa20242,
+	IapItemDisplayTemplateIDBundleGowa20243,
+	IapItemDisplayTemplateIDBundleGowa20244,
+	IapItemDisplayTemplateIDBundleGpdindialaunch1,
+	IapItemDisplayTemplateIDBundleGpmay20231,
+	IapItemDisplayTemplateIDBundleGwlatam20251,
+	IapItemDisplayTemplateIDBundleGwlatam20252,
+	IapItemDisplayTemplateIDBundleGwlatam20253,
+	IapItemDisplayTemplateIDBundleHalloweenAdventure1,
+	IapItemDisplayTemplateIDBundleHalloweenLarge1,
+	IapItemDisplayTemplateIDBundleHalloweenSmall1,
+	IapItemDisplayTemplateIDBundleHalloween20221,
+	IapItemDisplayTemplateIDBundleHalloween20222,
+	IapItemDisplayTemplateIDBundleHalloween20223,
+	IapItemDisplayTemplateIDBundleHalloween20231,
+	IapItemDisplayTemplateIDBundleHalloween20232,
+	IapItemDisplayTemplateIDBundleHalloween20233,
+	IapItemDisplayTemplateIDBundleHalloween20251,
+	IapItemDisplayTemplateIDBundleHalloween20252,
+	IapItemDisplayTemplateIDBundleHalloween20253,
+	IapItemDisplayTemplateIDBundleHarvestcatch1,
+	IapItemDisplayTemplateIDBundleHarvestfestival2025,
+	IapItemDisplayTemplateIDBundleHatchbox20241,
+	IapItemDisplayTemplateIDBundleHawlucha20251,
+	IapItemDisplayTemplateIDBundleHawlucha20252,
+	IapItemDisplayTemplateIDBundleHawluchacelebration1001,
+	IapItemDisplayTemplateIDBundleHawluchacelebration2001,
+	IapItemDisplayTemplateIDBundleHisuiraidday20231,
+	IapItemDisplayTemplateIDBundleHoli20251,
+	IapItemDisplayTemplateIDBundleHoli20252,
+	IapItemDisplayTemplateIDBundleHoliday20221,
+	IapItemDisplayTemplateIDBundleHoliday20222,
+	IapItemDisplayTemplateIDBundleHoliday20223,
+	IapItemDisplayTemplateIDBundleHoliday20241,
+	IapItemDisplayTemplateIDBundleIncenseday1,
+	IapItemDisplayTemplateIDBundleIndiaaugust1001,
+	IapItemDisplayTemplateIDBundleIndiaboxfeature1,
+	IapItemDisplayTemplateIDBundleIndiafestivaloflights1,
+	IapItemDisplayTemplateIDBundleIndiamay20241,
+	IapItemDisplayTemplateIDBundleIndiaseptember1001,
+	IapItemDisplayTemplateIDBundleIndiaseptember2001,
+	IapItemDisplayTemplateIDBundleIndonesiaboxfeature1,
+	IapItemDisplayTemplateIDBundleIndonesialaunch1,
+	IapItemDisplayTemplateIDBundleIndonesialaunch2,
+	IapItemDisplayTemplateIDBundleJakartaaugust1001,
+	IapItemDisplayTemplateIDBundleKoreaseptember1001,
+	IapItemDisplayTemplateIDBundleKoreaseptember2001,
+	IapItemDisplayTemplateIDBundleKsalaunch1001,
+	IapItemDisplayTemplateIDBundleKsalaunch2001,
+	IapItemDisplayTemplateIDBundleLatbox1001,
+	IapItemDisplayTemplateIDBundleLatbox3001,
+	IapItemDisplayTemplateIDBundleLunarnewyear1,
+	IapItemDisplayTemplateIDBundleMaxfinale1,
+	IapItemDisplayTemplateIDBundleMaxfinale2,
+	IapItemDisplayTemplateIDBundleMaxmonday1,
+	IapItemDisplayTemplateIDBundleMegaLucarioRaidDay20241,
+	IapItemDisplayTemplateIDBundleMheracrossraidday20241,
+	IapItemDisplayTemplateIDBundleMidautumn1,
+	IapItemDisplayTemplateIDBundleMidautumn2,
+	IapItemDisplayTemplateIDBundleMidautumn3,
+	IapItemDisplayTemplateIDBundleNewyears20241,
+	IapItemDisplayTemplateIDBundlePlaysummerbox1,
+	IapItemDisplayTemplateIDBundlePrimalraidday20231,
+	IapItemDisplayTemplateIDBundlePsychSpec20221,
+	IapItemDisplayTemplateIDBundlePsychSpec20222,
+	IapItemDisplayTemplateIDBundlePsychSpec20223,
+	IapItemDisplayTemplateIDBundleRamadan1,
+	IapItemDisplayTemplateIDBundleRamadan2,
+	IapItemDisplayTemplateIDBundleRarebundle1,
+	IapItemDisplayTemplateIDBundleRarebundle2,
+	IapItemDisplayTemplateIDBundleRarebundle3,
+	IapItemDisplayTemplateIDBundleRarebundle4,
+	IapItemDisplayTemplateIDBundleRiolu20231,
+	IapItemDisplayTemplateIDBundleRiolu20232,
+	IapItemDisplayTemplateIDBundleRockruffboost1,
+	IapItemDisplayTemplateIDBundleRrpstar1,
+	IapItemDisplayTemplateIDBundleS17seasonstart1,
+	IapItemDisplayTemplateIDBundleSeason10evergreen1,
+	IapItemDisplayTemplateIDBundleSeason10evergreen2,
+	IapItemDisplayTemplateIDBundleSeason10evergreen3,
+	IapItemDisplayTemplateIDBundleSeason11evergreen1,
+	IapItemDisplayTemplateIDBundleSeason11evergreen2,
+	IapItemDisplayTemplateIDBundleSeason11evergreen3,
+	IapItemDisplayTemplateIDBundleSeason12evergreen20231,
+	IapItemDisplayTemplateIDBundleSeason12evergreen20232,
+	IapItemDisplayTemplateIDBundleSeason12evergreen20233,
+	IapItemDisplayTemplateIDBundleSeason13evergreen20231,
+	IapItemDisplayTemplateIDBundleSeason13evergreen20232,
+	IapItemDisplayTemplateIDBundleSeason13evergreen20233,
+	IapItemDisplayTemplateIDBundleSeason14evergreen20241,
+	IapItemDisplayTemplateIDBundleSeason14evergreen20242,
+	IapItemDisplayTemplateIDBundleSeason14evergreen20243,
+	IapItemDisplayTemplateIDBundleSeason15evergreen20241,
+	IapItemDisplayTemplateIDBundleSeason15evergreen20242,
+	IapItemDisplayTemplateIDBundleSeason15evergreen20243,
+	IapItemDisplayTemplateIDBundleSeason16evergreen20241,
+	IapItemDisplayTemplateIDBundleSeason16evergreen20242,
+	IapItemDisplayTemplateIDBundleSeason16evergreen20243,
+	IapItemDisplayTemplateIDBundleSeasonaldelights20241,
+	IapItemDisplayTemplateIDBundleShadowlugia1,
+	IapItemDisplayTemplateIDBundleSmoresbump2025,
+	IapItemDisplayTemplateIDBundleSolstice20231,
+	IapItemDisplayTemplateIDBundleSolstice20232,
+	IapItemDisplayTemplateIDBundleSolstice20233,
+	IapItemDisplayTemplateIDBundleSongkran20251,
+	IapItemDisplayTemplateIDBundleSparkbox1,
+	IapItemDisplayTemplateIDBundleSparkbox2,
+	IapItemDisplayTemplateIDBundleSparkbox3,
+	IapItemDisplayTemplateIDBundleSpringtakeover20231,
+	IapItemDisplayTemplateIDBundleSpringtakeover20232,
+	IapItemDisplayTemplateIDBundleSpringtakeover20233,
+	IapItemDisplayTemplateIDBundleSteelMettle20221,
+	IapItemDisplayTemplateIDBundleSteelMettle20222,
+	IapItemDisplayTemplateIDBundleSteelMettle20223,
+	IapItemDisplayTemplateIDBundleTakeover20221,
+	IapItemDisplayTemplateIDBundleTakeover20222,
+	IapItemDisplayTemplateIDBundleTakeover20223,
+	IapItemDisplayTemplateIDBundleTgrtakeover20241,
+	IapItemDisplayTemplateIDBundleThailandfeatureapril20241,
+	IapItemDisplayTemplateIDBundleTmexpert1,
+	IapItemDisplayTemplateIDBundleUbraidday20221,
+	IapItemDisplayTemplateIDBundleUbraidday20222,
+	IapItemDisplayTemplateIDBundleUkfeature1,
+	IapItemDisplayTemplateIDBundleUltrabeastraid2024,
+	IapItemDisplayTemplateIDBundleUltraunlockraid20231,
+	IapItemDisplayTemplateIDBundleUltraunlockraid20232,
+	IapItemDisplayTemplateIDBundleUustorage1,
+	IapItemDisplayTemplateIDBundleVoyagerouttoplay1,
+	IapItemDisplayTemplateIDBundleWelcomebox1,
+	IapItemDisplayTemplateIDBundleWinterevergreen1,
+	IapItemDisplayTemplateIDBundleWinterevergreen2,
+	IapItemDisplayTemplateIDBundleWinterevergreen3,
+	IapItemDisplayTemplateIDBundleWinterholiday20231,
+	IapItemDisplayTemplateIDBundleWinterholiday20232,
+	IapItemDisplayTemplateIDBundleWinterholiday20233,
+	IapItemDisplayTemplateIDBundleXmasLarge1,
+	IapItemDisplayTemplateIDBundleZoruamakegood2022,
+	IapItemDisplayTemplateIDBundleZzraid1,
+	IapItemDisplayTemplateIDDiademuertos,
 	IapItemDisplayTemplateIDEventPassApril1SeasonStoreRedirect,
 	IapItemDisplayTemplateIDEventPassApril3EventStoreRedirect,
 	IapItemDisplayTemplateIDEventPassGofest2025FinaleStoreRedirect,
@@ -1149,40 +1388,190 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDEventPassMonth2SeasonStoreRedirect,
 	IapItemDisplayTemplateIDEventPassMonth3SeasonStoreRedirect,
 	IapItemDisplayTemplateIDEventPassWinterholidays2025SeasonStoreRedirect,
+	IapItemDisplayTemplateIDEvergreenticket1,
+	IapItemDisplayTemplateIDEvergreenticket1Giftable,
 	IapItemDisplayTemplateIDFlairFreeBundle0,
-	IapItemDisplayTemplateIDGofest2025FinaleDeluxeEventPassTrackUnlock,
-	IapItemDisplayTemplateIDGofest2025FinaleDeluxeEventPassTrackUnlockPlusPoints,
-	IapItemDisplayTemplateIDGofest2025DeluxeEventPassTrackUnlock,
-	IapItemDisplayTemplateIDGofest2025DeluxeEventPassTrackUnlockPlusPoints,
-	IapItemDisplayTemplateIDGotour2025DeluxeEventPassTrackUnlock,
-	IapItemDisplayTemplateIDGotour2025DeluxeEventPassTrackUnlockPlusPoints,
-	IapItemDisplayTemplateIDGowild2025DeluxeEventPassTrackUnlock,
-	IapItemDisplayTemplateIDGowild2025DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDGeneral1Ticket1,
+	IapItemDisplayTemplateIDGeneral1Ticket1Giftable,
+	IapItemDisplayTemplateIDGeneral1Ticket2,
+	IapItemDisplayTemplateIDGeneral1Ticket2Giftable,
+	IapItemDisplayTemplateIDGeneral1Ticket3,
+	IapItemDisplayTemplateIDGeneral1Ticket4,
+	IapItemDisplayTemplateIDGeneral1Ticket4Giftable,
+	IapItemDisplayTemplateIDGeneral1Ticket5,
+	IapItemDisplayTemplateIDGeneral1Ticket6,
+	IapItemDisplayTemplateIDGeneral2Ticket1,
+	IapItemDisplayTemplateIDGeneral2Ticket1Giftable,
+	IapItemDisplayTemplateIDGeneral2Ticket2,
+	IapItemDisplayTemplateIDGeneral2Ticket2Giftable,
+	IapItemDisplayTemplateIDGeneral2Ticket3,
+	IapItemDisplayTemplateIDGeneral2Ticket3Giftable,
+	IapItemDisplayTemplateIDGeneral2Ticket4,
+	IapItemDisplayTemplateIDGeneral2Ticket4Giftable,
+	IapItemDisplayTemplateIDGeneral2Ticket5,
+	IapItemDisplayTemplateIDGeneral2Ticket5Giftable,
+	IapItemDisplayTemplateIDGeneral2Ticket6,
+	IapItemDisplayTemplateIDGeneral2Ticket7,
+	IapItemDisplayTemplateIDGeneral2Ticket7Giftable,
+	IapItemDisplayTemplateIDGeneral2Ticket8,
+	IapItemDisplayTemplateIDGeneral2Ticket8Giftable,
+	IapItemDisplayTemplateIDGeneral2Ticket9,
+	IapItemDisplayTemplateIDGeneral2Ticket9Giftable,
+	IapItemDisplayTemplateIDGeneral2Ticket10,
+	IapItemDisplayTemplateIDGeneral2Ticket10Giftable,
+	IapItemDisplayTemplateIDGeneral4Medium1,
+	IapItemDisplayTemplateIDGeneral6Small1,
 	IapItemDisplayTemplateIDGoSafariBallIap10,
 	IapItemDisplayTemplateIDGoSafariBallIap25,
 	IapItemDisplayTemplateIDGoSafariBallIap50,
+	IapItemDisplayTemplateIDGofest2025DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDGofest2025DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDGofest2025FinaleDeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDGofest2025FinaleDeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDGotour2025DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDGotour2025DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDGowaticketfree1,
+	IapItemDisplayTemplateIDGowild2025DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDGowild2025DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDHalloween2025DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDHalloween2025DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDHometransport1,
+	IapItemDisplayTemplateIDIncenseordinary1,
+	IapItemDisplayTemplateIDIncenseordinary8,
+	IapItemDisplayTemplateIDIncubatorbasic1,
+	IapItemDisplayTemplateIDIncubatorsuper1,
 	IapItemDisplayTemplateIDItemEnhancedCurrency200,
 	IapItemDisplayTemplateIDItemEnhancedCurrency600,
+	IapItemDisplayTemplateIDItemleadermap,
+	IapItemDisplayTemplateIDLuckyegg1,
+	IapItemDisplayTemplateIDLuckyegg8,
 	IapItemDisplayTemplateIDMarch12026DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDMarch12026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDMarch22026DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDMarch22026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDMaxBoost1,
+	IapItemDisplayTemplateIDMaxBoost3,
+	IapItemDisplayTemplateIDMaxpotion5,
+	IapItemDisplayTemplateIDMaxpotion10,
+	IapItemDisplayTemplateIDMaxrevive3,
+	IapItemDisplayTemplateIDMaxrevive6,
 	IapItemDisplayTemplateIDMonth1DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDMonth1DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDMonth2DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDMonth2DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDMonth3DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDMonth3DeluxeEventPassTrackUnlockPlusPoints,
-	IapItemDisplayTemplateIDSticker2023collab13,
-	IapItemDisplayTemplateIDSticker2023collab15,
-	IapItemDisplayTemplateIDSticker2023collab23,
-	IapItemDisplayTemplateIDSticker2023collab25,
-	IapItemDisplayTemplateIDSticker2023collab33,
-	IapItemDisplayTemplateIDSticker2023collab35,
-	IapItemDisplayTemplateIDSticker2023collab43,
-	IapItemDisplayTemplateIDSticker2023collab45,
+	IapItemDisplayTemplateIDMpReplenishRrp1,
+	IapItemDisplayTemplateIDMpReplenishRrp3,
+	IapItemDisplayTemplateIDMpReplenish1,
+	IapItemDisplayTemplateIDMpReplenish3,
+	IapItemDisplayTemplateIDPaidraidticket1,
+	IapItemDisplayTemplateIDPaidraidticket3,
+	IapItemDisplayTemplateIDPgoreleaseApril22026DeluxeEventPassTrackRedirect,
+	IapItemDisplayTemplateIDPgoreleaseApril32026DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDPgoreleaseApril32026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDPgoreleaseBundle1,
+	IapItemDisplayTemplateIDPgoreleaseBundle2,
+	IapItemDisplayTemplateIDPgoreleaseBundleBlanchebox1,
+	IapItemDisplayTemplateIDPgoreleaseBundleCitysafaribarcelona1,
+	IapItemDisplayTemplateIDPgoreleaseBundleCitysafaribarcelona2,
+	IapItemDisplayTemplateIDPgoreleaseBundleCitysafarimexico1,
+	IapItemDisplayTemplateIDPgoreleaseBundleCitysafarimexico2,
+	IapItemDisplayTemplateIDPgoreleaseBundleEliteraidbox1,
+	IapItemDisplayTemplateIDPgoreleaseBundleEliteraidmay2023,
+	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures1,
+	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures2,
+	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures3,
+	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures4,
+	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures5,
+	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures6,
+	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures7,
+	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures8,
+	IapItemDisplayTemplateIDPgoreleaseBundleFoc2023box1,
+	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartyLarge2,
+	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartyLarge4,
+	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartyMedium1,
+	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartySmall1,
+	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartySmall12,
+	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartySmall2,
+	IapItemDisplayTemplateIDPgoreleaseBundleGeneral1Tiny4,
+	IapItemDisplayTemplateIDPgoreleaseBundleGeneral11Small1331,
+	IapItemDisplayTemplateIDPgoreleaseBundleGotour20230,
+	IapItemDisplayTemplateIDPgoreleaseBundleGotour20231,
+	IapItemDisplayTemplateIDPgoreleaseBundleGotour20232,
+	IapItemDisplayTemplateIDPgoreleaseBundleGotour20233,
+	IapItemDisplayTemplateIDPgoreleaseBundleGotour20234,
+	IapItemDisplayTemplateIDPgoreleaseBundleGotour20235,
+	IapItemDisplayTemplateIDPgoreleaseBundleGotour20236,
+	IapItemDisplayTemplateIDPgoreleaseBundleGp20221,
+	IapItemDisplayTemplateIDPgoreleaseBundleIndiagp20231,
+	IapItemDisplayTemplateIDPgoreleaseBundleLure1,
+	IapItemDisplayTemplateIDPgoreleaseBundlePokemonday1,
+	IapItemDisplayTemplateIDPgoreleaseBundleRaiddaymay20231,
+	IapItemDisplayTemplateIDPgoreleaseBundleRaiddaymay20232,
+	IapItemDisplayTemplateIDPgoreleaseBundleRaiddaymay20233,
+	IapItemDisplayTemplateIDPgoreleaseBundleRaiddaymay20234,
+	IapItemDisplayTemplateIDPgoreleaseBundleRaiddaynov20231,
+	IapItemDisplayTemplateIDPgoreleaseBundleRaidhourbox1,
+	IapItemDisplayTemplateIDPgoreleaseBundleRaidhourbox2,
+	IapItemDisplayTemplateIDPgoreleaseBundleRamadan2023box1,
+	IapItemDisplayTemplateIDPgoreleaseBundleRtsraid,
+	IapItemDisplayTemplateIDPgoreleaseBundleSeason10evergreen1,
+	IapItemDisplayTemplateIDPgoreleaseBundleSeason10evergreen2,
+	IapItemDisplayTemplateIDPgoreleaseBundleSeason10evergreen3,
+	IapItemDisplayTemplateIDPgoreleaseBundleSeason10launch1,
+	IapItemDisplayTemplateIDPgoreleaseBundleSustainabilitybonusmay2023,
+	IapItemDisplayTemplateIDPgoreleaseBundleSustainabilitymay2023,
+	IapItemDisplayTemplateIDPgoreleaseBundleTemplate1,
+	IapItemDisplayTemplateIDPgoreleaseBundleTemplate2,
+	IapItemDisplayTemplateIDPgoreleaseBundleTemplate3,
+	IapItemDisplayTemplateIDPgoreleaseBundleThailandspec20231,
+	IapItemDisplayTemplateIDPgoreleaseBundleWalkeratlantic20221,
+	IapItemDisplayTemplateIDPgoreleaseBundleWalkeratlantic20222,
+	IapItemDisplayTemplateIDPgoreleaseCitysafariticket01,
+	IapItemDisplayTemplateIDPgoreleaseCitysafariticket11,
+	IapItemDisplayTemplateIDPgoreleaseCitysafariticket21,
+	IapItemDisplayTemplateIDPgoreleaseEvergreenticket1,
+	IapItemDisplayTemplateIDPgoreleaseEvergreenticket1Giftable,
+	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket1,
+	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket1Giftable,
+	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket2,
+	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket2Giftable,
+	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket4,
+	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket4Giftable,
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket1,
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket1Giftable,
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket2,
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket2Giftable,
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket3,
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket3Giftable,
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket4,
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket4Giftable,
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket5,
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket5Giftable,
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket7,
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket7Giftable,
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket8,
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket8Giftable,
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket9,
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket9Giftable,
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket10,
+	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket10Giftable,
+	IapItemDisplayTemplateIDPgoreleaseMonth2DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDPgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDPgoreleasePokecoin2750,
+	IapItemDisplayTemplateIDPgoreleasePokecoin5720,
+	IapItemDisplayTemplateIDPgoreleasePokecoin15950,
+	IapItemDisplayTemplateIDPgoreleasePokecoin21375,
+	IapItemDisplayTemplateIDPoffin,
+	IapItemDisplayTemplateIDPokeball20,
+	IapItemDisplayTemplateIDPokeball100,
+	IapItemDisplayTemplateIDPokeball200,
+	IapItemDisplayTemplateIDPostcardstorageupgrade1,
+	IapItemDisplayTemplateIDRemoteraidticket1,
+	IapItemDisplayTemplateIDRemoteraidticket3,
+	IapItemDisplayTemplateIDStarpiece1,
+	IapItemDisplayTemplateIDStarpiece8,
 	IapItemDisplayTemplateIDSticker8anniv13,
 	IapItemDisplayTemplateIDSticker8anniv15,
 	IapItemDisplayTemplateIDSticker8anniv23,
@@ -1197,6 +1586,14 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDSticker9anniv25,
 	IapItemDisplayTemplateIDSticker9anniv33,
 	IapItemDisplayTemplateIDSticker9anniv35,
+	IapItemDisplayTemplateIDSticker2023collab13,
+	IapItemDisplayTemplateIDSticker2023collab15,
+	IapItemDisplayTemplateIDSticker2023collab23,
+	IapItemDisplayTemplateIDSticker2023collab25,
+	IapItemDisplayTemplateIDSticker2023collab33,
+	IapItemDisplayTemplateIDSticker2023collab35,
+	IapItemDisplayTemplateIDSticker2023collab43,
+	IapItemDisplayTemplateIDSticker2023collab45,
 	IapItemDisplayTemplateIDStickerAprilfool202313,
 	IapItemDisplayTemplateIDStickerAprilfool202315,
 	IapItemDisplayTemplateIDStickerAprilfool202323,
@@ -1389,10 +1786,16 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDStickerGowa2025045,
 	IapItemDisplayTemplateIDStickerGowa2025053,
 	IapItemDisplayTemplateIDStickerGowa2025055,
-	IapItemDisplayTemplateIDStickerHalloween2025Noibat3,
-	IapItemDisplayTemplateIDStickerHalloween2025Noibat5,
-	IapItemDisplayTemplateIDStickerHalloween2025Teddiursa3,
-	IapItemDisplayTemplateIDStickerHalloween2025Teddiursa5,
+	IapItemDisplayTemplateIDStickerHalloweenBulb3,
+	IapItemDisplayTemplateIDStickerHalloweenBulb5,
+	IapItemDisplayTemplateIDStickerHalloweenCharm3,
+	IapItemDisplayTemplateIDStickerHalloweenCharm5,
+	IapItemDisplayTemplateIDStickerHalloweenGengarmd3,
+	IapItemDisplayTemplateIDStickerHalloweenGengarmd5,
+	IapItemDisplayTemplateIDStickerHalloweenPika3,
+	IapItemDisplayTemplateIDStickerHalloweenPika5,
+	IapItemDisplayTemplateIDStickerHalloweenSqu3,
+	IapItemDisplayTemplateIDStickerHalloweenSqu5,
 	IapItemDisplayTemplateIDStickerHalloween21Fuwaraid3,
 	IapItemDisplayTemplateIDStickerHalloween21Fuwaraid5,
 	IapItemDisplayTemplateIDStickerHalloween21Ghostpika3,
@@ -1405,16 +1808,10 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDStickerHalloween24Froakie5,
 	IapItemDisplayTemplateIDStickerHalloween24Rowlet3,
 	IapItemDisplayTemplateIDStickerHalloween24Rowlet5,
-	IapItemDisplayTemplateIDStickerHalloweenBulb3,
-	IapItemDisplayTemplateIDStickerHalloweenBulb5,
-	IapItemDisplayTemplateIDStickerHalloweenCharm3,
-	IapItemDisplayTemplateIDStickerHalloweenCharm5,
-	IapItemDisplayTemplateIDStickerHalloweenGengarmd3,
-	IapItemDisplayTemplateIDStickerHalloweenGengarmd5,
-	IapItemDisplayTemplateIDStickerHalloweenPika3,
-	IapItemDisplayTemplateIDStickerHalloweenPika5,
-	IapItemDisplayTemplateIDStickerHalloweenSqu3,
-	IapItemDisplayTemplateIDStickerHalloweenSqu5,
+	IapItemDisplayTemplateIDStickerHalloween2025Noibat3,
+	IapItemDisplayTemplateIDStickerHalloween2025Noibat5,
+	IapItemDisplayTemplateIDStickerHalloween2025Teddiursa3,
+	IapItemDisplayTemplateIDStickerHalloween2025Teddiursa5,
 	IapItemDisplayTemplateIDStickerHaruCherrim3,
 	IapItemDisplayTemplateIDStickerHaruCherrim5,
 	IapItemDisplayTemplateIDStickerHaruDredearpika3,
@@ -1517,6 +1914,56 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDStickerNoibatCd35,
 	IapItemDisplayTemplateIDStickerNoibatCd43,
 	IapItemDisplayTemplateIDStickerNoibatCd45,
+	IapItemDisplayTemplateIDStickerPgoFest202413,
+	IapItemDisplayTemplateIDStickerPgoFest202415,
+	IapItemDisplayTemplateIDStickerPgoFest202423,
+	IapItemDisplayTemplateIDStickerPgoFest202425,
+	IapItemDisplayTemplateIDStickerPgoFest202433,
+	IapItemDisplayTemplateIDStickerPgoFest202435,
+	IapItemDisplayTemplateIDStickerPgoFest202443,
+	IapItemDisplayTemplateIDStickerPgoFest202445,
+	IapItemDisplayTemplateIDStickerPgoFest202453,
+	IapItemDisplayTemplateIDStickerPgoFest202455,
+	IapItemDisplayTemplateIDStickerPgoFest202463,
+	IapItemDisplayTemplateIDStickerPgoFest202465,
+	IapItemDisplayTemplateIDStickerPgoFest2024Logo3,
+	IapItemDisplayTemplateIDStickerPgoFest2024Logo5,
+	IapItemDisplayTemplateIDStickerPgoFest20243,
+	IapItemDisplayTemplateIDStickerPgoFest20245,
+	IapItemDisplayTemplateIDStickerPgoFest202513,
+	IapItemDisplayTemplateIDStickerPgoFest202515,
+	IapItemDisplayTemplateIDStickerPgoFest202523,
+	IapItemDisplayTemplateIDStickerPgoFest202525,
+	IapItemDisplayTemplateIDStickerPgoFest202533,
+	IapItemDisplayTemplateIDStickerPgoFest202535,
+	IapItemDisplayTemplateIDStickerPgoFest2025Logo3,
+	IapItemDisplayTemplateIDStickerPgoFest2025Logo5,
+	IapItemDisplayTemplateIDStickerPgoFest20253,
+	IapItemDisplayTemplateIDStickerPgoFest20255,
+	IapItemDisplayTemplateIDStickerPgoFestVictini053,
+	IapItemDisplayTemplateIDStickerPgoFestVictini055,
+	IapItemDisplayTemplateIDStickerPgoTour202613,
+	IapItemDisplayTemplateIDStickerPgoTour202615,
+	IapItemDisplayTemplateIDStickerPgoTour202623,
+	IapItemDisplayTemplateIDStickerPgoTour202625,
+	IapItemDisplayTemplateIDStickerPgoTour202633,
+	IapItemDisplayTemplateIDStickerPgoTour202635,
+	IapItemDisplayTemplateIDStickerPgoTour2026Logo3,
+	IapItemDisplayTemplateIDStickerPgoTour2026Logo5,
+	IapItemDisplayTemplateIDStickerPgoTour20263,
+	IapItemDisplayTemplateIDStickerPgoTour20265,
+	IapItemDisplayTemplateIDStickerPgoWildarea202413,
+	IapItemDisplayTemplateIDStickerPgoWildarea202415,
+	IapItemDisplayTemplateIDStickerPgoWildarea202423,
+	IapItemDisplayTemplateIDStickerPgoWildarea202425,
+	IapItemDisplayTemplateIDStickerPgoWildarea202433,
+	IapItemDisplayTemplateIDStickerPgoWildarea202435,
+	IapItemDisplayTemplateIDStickerPgoWildarea202443,
+	IapItemDisplayTemplateIDStickerPgoWildarea202445,
+	IapItemDisplayTemplateIDStickerPgoWildarea2024Logo3,
+	IapItemDisplayTemplateIDStickerPgoWildarea2024Logo5,
+	IapItemDisplayTemplateIDStickerPgoWildarea20243,
+	IapItemDisplayTemplateIDStickerPgoWildarea20245,
 	IapItemDisplayTemplateIDStickerPgofest2021Galarianzigzagoon3,
 	IapItemDisplayTemplateIDStickerPgofest2021Galarianzigzagoon5,
 	IapItemDisplayTemplateIDStickerPgofest2021Meloetta13,
@@ -1537,56 +1984,6 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDStickerPgofest2022Pochama5,
 	IapItemDisplayTemplateIDStickerPgofest2022Shaymin3,
 	IapItemDisplayTemplateIDStickerPgofest2022Shaymin5,
-	IapItemDisplayTemplateIDStickerPgoFest20243,
-	IapItemDisplayTemplateIDStickerPgoFest20245,
-	IapItemDisplayTemplateIDStickerPgoFest202413,
-	IapItemDisplayTemplateIDStickerPgoFest202415,
-	IapItemDisplayTemplateIDStickerPgoFest202423,
-	IapItemDisplayTemplateIDStickerPgoFest202425,
-	IapItemDisplayTemplateIDStickerPgoFest202433,
-	IapItemDisplayTemplateIDStickerPgoFest202435,
-	IapItemDisplayTemplateIDStickerPgoFest202443,
-	IapItemDisplayTemplateIDStickerPgoFest202445,
-	IapItemDisplayTemplateIDStickerPgoFest202453,
-	IapItemDisplayTemplateIDStickerPgoFest202455,
-	IapItemDisplayTemplateIDStickerPgoFest202463,
-	IapItemDisplayTemplateIDStickerPgoFest202465,
-	IapItemDisplayTemplateIDStickerPgoFest2024Logo3,
-	IapItemDisplayTemplateIDStickerPgoFest2024Logo5,
-	IapItemDisplayTemplateIDStickerPgoFest20253,
-	IapItemDisplayTemplateIDStickerPgoFest20255,
-	IapItemDisplayTemplateIDStickerPgoFest202513,
-	IapItemDisplayTemplateIDStickerPgoFest202515,
-	IapItemDisplayTemplateIDStickerPgoFest202523,
-	IapItemDisplayTemplateIDStickerPgoFest202525,
-	IapItemDisplayTemplateIDStickerPgoFest202533,
-	IapItemDisplayTemplateIDStickerPgoFest202535,
-	IapItemDisplayTemplateIDStickerPgoFest2025Logo3,
-	IapItemDisplayTemplateIDStickerPgoFest2025Logo5,
-	IapItemDisplayTemplateIDStickerPgoFestVictini053,
-	IapItemDisplayTemplateIDStickerPgoFestVictini055,
-	IapItemDisplayTemplateIDStickerPgoTour20263,
-	IapItemDisplayTemplateIDStickerPgoTour20265,
-	IapItemDisplayTemplateIDStickerPgoTour202613,
-	IapItemDisplayTemplateIDStickerPgoTour202615,
-	IapItemDisplayTemplateIDStickerPgoTour202623,
-	IapItemDisplayTemplateIDStickerPgoTour202625,
-	IapItemDisplayTemplateIDStickerPgoTour202633,
-	IapItemDisplayTemplateIDStickerPgoTour202635,
-	IapItemDisplayTemplateIDStickerPgoTour2026Logo3,
-	IapItemDisplayTemplateIDStickerPgoTour2026Logo5,
-	IapItemDisplayTemplateIDStickerPgoWildarea20243,
-	IapItemDisplayTemplateIDStickerPgoWildarea20245,
-	IapItemDisplayTemplateIDStickerPgoWildarea202413,
-	IapItemDisplayTemplateIDStickerPgoWildarea202415,
-	IapItemDisplayTemplateIDStickerPgoWildarea202423,
-	IapItemDisplayTemplateIDStickerPgoWildarea202425,
-	IapItemDisplayTemplateIDStickerPgoWildarea202433,
-	IapItemDisplayTemplateIDStickerPgoWildarea202435,
-	IapItemDisplayTemplateIDStickerPgoWildarea202443,
-	IapItemDisplayTemplateIDStickerPgoWildarea202445,
-	IapItemDisplayTemplateIDStickerPgoWildarea2024Logo3,
-	IapItemDisplayTemplateIDStickerPgoWildarea2024Logo5,
 	IapItemDisplayTemplateIDStickerPikachuJol3,
 	IapItemDisplayTemplateIDStickerPikachuJol5,
 	IapItemDisplayTemplateIDStickerPokemonchatpals2403,
@@ -1709,6 +2106,14 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDStickerSummer15,
 	IapItemDisplayTemplateIDStickerSummer23,
 	IapItemDisplayTemplateIDStickerSummer25,
+	IapItemDisplayTemplateIDStickerSummer33,
+	IapItemDisplayTemplateIDStickerSummer35,
+	IapItemDisplayTemplateIDStickerSummer43,
+	IapItemDisplayTemplateIDStickerSummer45,
+	IapItemDisplayTemplateIDStickerSummer53,
+	IapItemDisplayTemplateIDStickerSummer55,
+	IapItemDisplayTemplateIDStickerSummer63,
+	IapItemDisplayTemplateIDStickerSummer65,
 	IapItemDisplayTemplateIDStickerSummer2023Blastoise3,
 	IapItemDisplayTemplateIDStickerSummer2023Blastoise5,
 	IapItemDisplayTemplateIDStickerSummer2023Butterfree3,
@@ -1741,14 +2146,6 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDStickerSummer202535,
 	IapItemDisplayTemplateIDStickerSummer202543,
 	IapItemDisplayTemplateIDStickerSummer202545,
-	IapItemDisplayTemplateIDStickerSummer33,
-	IapItemDisplayTemplateIDStickerSummer35,
-	IapItemDisplayTemplateIDStickerSummer43,
-	IapItemDisplayTemplateIDStickerSummer45,
-	IapItemDisplayTemplateIDStickerSummer53,
-	IapItemDisplayTemplateIDStickerSummer55,
-	IapItemDisplayTemplateIDStickerSummer63,
-	IapItemDisplayTemplateIDStickerSummer65,
 	IapItemDisplayTemplateIDStickerSwordshield2113,
 	IapItemDisplayTemplateIDStickerSwordshield2115,
 	IapItemDisplayTemplateIDStickerSwordshield2123,
@@ -1793,26 +2190,6 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDStickerWcs2025Murkrow5,
 	IapItemDisplayTemplateIDStickerWcs2025Pikachu3,
 	IapItemDisplayTemplateIDStickerWcs2025Pikachu5,
-	IapItemDisplayTemplateIDStickerWinter202313,
-	IapItemDisplayTemplateIDStickerWinter202315,
-	IapItemDisplayTemplateIDStickerWinter202323,
-	IapItemDisplayTemplateIDStickerWinter202325,
-	IapItemDisplayTemplateIDStickerWinter202333,
-	IapItemDisplayTemplateIDStickerWinter202335,
-	IapItemDisplayTemplateIDStickerWinter202343,
-	IapItemDisplayTemplateIDStickerWinter202345,
-	IapItemDisplayTemplateIDStickerWinter202353,
-	IapItemDisplayTemplateIDStickerWinter202355,
-	IapItemDisplayTemplateIDStickerWinter202363,
-	IapItemDisplayTemplateIDStickerWinter202365,
-	IapItemDisplayTemplateIDStickerWinter202513,
-	IapItemDisplayTemplateIDStickerWinter202515,
-	IapItemDisplayTemplateIDStickerWinter202523,
-	IapItemDisplayTemplateIDStickerWinter202525,
-	IapItemDisplayTemplateIDStickerWinter202533,
-	IapItemDisplayTemplateIDStickerWinter202535,
-	IapItemDisplayTemplateIDStickerWinter202543,
-	IapItemDisplayTemplateIDStickerWinter202545,
 	IapItemDisplayTemplateIDStickerWinter202413,
 	IapItemDisplayTemplateIDStickerWinter202415,
 	IapItemDisplayTemplateIDStickerWinter202423,
@@ -1837,409 +2214,30 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDStickerWinterSawsbuck5,
 	IapItemDisplayTemplateIDStickerWinterSnorunt3,
 	IapItemDisplayTemplateIDStickerWinterSnorunt5,
+	IapItemDisplayTemplateIDStickerWinter202313,
+	IapItemDisplayTemplateIDStickerWinter202315,
+	IapItemDisplayTemplateIDStickerWinter202323,
+	IapItemDisplayTemplateIDStickerWinter202325,
+	IapItemDisplayTemplateIDStickerWinter202333,
+	IapItemDisplayTemplateIDStickerWinter202335,
+	IapItemDisplayTemplateIDStickerWinter202343,
+	IapItemDisplayTemplateIDStickerWinter202345,
+	IapItemDisplayTemplateIDStickerWinter202353,
+	IapItemDisplayTemplateIDStickerWinter202355,
+	IapItemDisplayTemplateIDStickerWinter202363,
+	IapItemDisplayTemplateIDStickerWinter202365,
+	IapItemDisplayTemplateIDStickerWinter202513,
+	IapItemDisplayTemplateIDStickerWinter202515,
+	IapItemDisplayTemplateIDStickerWinter202523,
+	IapItemDisplayTemplateIDStickerWinter202525,
+	IapItemDisplayTemplateIDStickerWinter202533,
+	IapItemDisplayTemplateIDStickerWinter202535,
+	IapItemDisplayTemplateIDStickerWinter202543,
+	IapItemDisplayTemplateIDStickerWinter202545,
 	IapItemDisplayTemplateIDStickerYurutto123,
 	IapItemDisplayTemplateIDStickerYurutto125,
 	IapItemDisplayTemplateIDStickerYurutto243,
 	IapItemDisplayTemplateIDStickerYurutto245,
-	IapItemDisplayTemplateIDWinterholidays2025DeluxeEventPassTrackUnlock,
-	IapItemDisplayTemplateIDWinterholidays2025DeluxeEventPassTrackUnlockPlusPoints,
-	IapItemDisplayTemplateIDBattlepassticket1,
-	IapItemDisplayTemplateIDBundleEliteExp20241,
-	IapItemDisplayTemplateIDBundleEliteExp20242,
-	IapItemDisplayTemplateIDBundleEliteExp20243,
-	IapItemDisplayTemplateIDBundleEliteExp20244,
-	IapItemDisplayTemplateIDBundleEliteExp20245,
-	IapItemDisplayTemplateIDBundleGotour20241,
-	IapItemDisplayTemplateIDBundleGotour20242,
-	IapItemDisplayTemplateIDBundleGotour20243,
-	IapItemDisplayTemplateIDBundleGotour20244,
-	IapItemDisplayTemplateIDBundleGotour20245,
-	IapItemDisplayTemplateIDBundleGotour20246,
-	IapItemDisplayTemplateIDBundleGotour20247,
-	IapItemDisplayTemplateIDBundleAdventurebrazil1001,
-	IapItemDisplayTemplateIDBundleAdventurebrazil2001,
-	IapItemDisplayTemplateIDBundleAnniversary20231,
-	IapItemDisplayTemplateIDBundleApacmar20251,
-	IapItemDisplayTemplateIDBundleArraia20251,
-	IapItemDisplayTemplateIDBundleArraia20252,
-	IapItemDisplayTemplateIDBundleAtlanticav2box1,
-	IapItemDisplayTemplateIDBundleAtlanticav2box2,
-	IapItemDisplayTemplateIDBundleBlackfridaystickers241,
-	IapItemDisplayTemplateIDBundleBlackfridaystickers242,
-	IapItemDisplayTemplateIDBundleBoost20231,
-	IapItemDisplayTemplateIDBundleBrazil20231,
-	IapItemDisplayTemplateIDBundleBrazilrediscover11,
-	IapItemDisplayTemplateIDBundleBrazilrediscover21,
-	IapItemDisplayTemplateIDBundleBrazilvacations1001,
-	IapItemDisplayTemplateIDBundleCarnival20251,
-	IapItemDisplayTemplateIDBundleCarnival20252,
-	IapItemDisplayTemplateIDBundleCd20221,
-	IapItemDisplayTemplateIDBundleCd20222,
-	IapItemDisplayTemplateIDBundleCdrecapstickers1,
-	IapItemDisplayTemplateIDBundleCitysafari450hktw1,
-	IapItemDisplayTemplateIDBundleCswkmakegoodprep1001,
-	IapItemDisplayTemplateIDBundleCswkmakegoodprep2001,
-	IapItemDisplayTemplateIDBundleCswkmakegoodprep3001,
-	IapItemDisplayTemplateIDBundleDecroutes20231,
-	IapItemDisplayTemplateIDBundleDiademuertos20251,
-	IapItemDisplayTemplateIDBundleDiademuertosmax1001,
-	IapItemDisplayTemplateIDBundleDiademuertosmax2001,
-	IapItemDisplayTemplateIDBundleDiwali20251,
-	IapItemDisplayTemplateIDBundleDiwali20252,
-	IapItemDisplayTemplateIDBundleDiwalimax1001,
-	IapItemDisplayTemplateIDBundleEmcarnival20261,
-	IapItemDisplayTemplateIDBundleEmcarnival20262,
-	IapItemDisplayTemplateIDBundleEmea20231,
-	IapItemDisplayTemplateIDBundleEvolve20221,
-	IapItemDisplayTemplateIDBundleEvolve20222,
-	IapItemDisplayTemplateIDBundleEvolve20223,
-	IapItemDisplayTemplateIDBundleEvolve20224,
-	IapItemDisplayTemplateIDBundleEvolve20225,
-	IapItemDisplayTemplateIDBundleEvolve20226,
-	IapItemDisplayTemplateIDBundleFol20221,
-	IapItemDisplayTemplateIDBundleFol20222,
-	IapItemDisplayTemplateIDBundleFol20223,
-	IapItemDisplayTemplateIDBundleFol20224,
-	IapItemDisplayTemplateIDBundleGeneralTemplate4,
-	IapItemDisplayTemplateIDBundleGeneralTemplate5,
-	IapItemDisplayTemplateIDBundleGeneralTemplate6,
-	IapItemDisplayTemplateIDBundleGeneral1Free1,
-	IapItemDisplayTemplateIDBundleGeneral1Large1,
-	IapItemDisplayTemplateIDBundleGeneral1Medium1,
-	IapItemDisplayTemplateIDBundleGeneral1Medium2,
-	IapItemDisplayTemplateIDBundleGeneral1Medium3,
-	IapItemDisplayTemplateIDBundleGeneral1Rocket1,
-	IapItemDisplayTemplateIDBundleGeneral1Small1,
-	IapItemDisplayTemplateIDBundleGeneral1Tiny2,
-	IapItemDisplayTemplateIDBundleGeneral1Tiny3,
-	IapItemDisplayTemplateIDBundleGeneral1Tiny4,
-	IapItemDisplayTemplateIDBundleGeneral2Free1,
-	IapItemDisplayTemplateIDBundleGeneral2Large1,
-	IapItemDisplayTemplateIDBundleGeneral2Medium1,
-	IapItemDisplayTemplateIDBundleGeneral2Small1,
-	IapItemDisplayTemplateIDBundleGeneral3Free1,
-	IapItemDisplayTemplateIDBundleGeneral3Large1,
-	IapItemDisplayTemplateIDBundleGeneral3Small1,
-	IapItemDisplayTemplateIDBundleGeneral4Large1,
-	IapItemDisplayTemplateIDBundleGeneral4Small2,
-	IapItemDisplayTemplateIDBundleGeneral5Large1,
-	IapItemDisplayTemplateIDBundleGeneral5Small1,
-	IapItemDisplayTemplateIDBundleGeneral5Small2,
-	IapItemDisplayTemplateIDBundleGeneral5Small3,
-	IapItemDisplayTemplateIDBundleGeneral5Small4,
-	IapItemDisplayTemplateIDBundleGeneral5Small5,
-	IapItemDisplayTemplateIDBundleGeneral6Small1,
-	IapItemDisplayTemplateIDBundleGmaxday1,
-	IapItemDisplayTemplateIDBundleGofest20231,
-	IapItemDisplayTemplateIDBundleGofest20232,
-	IapItemDisplayTemplateIDBundleGofest20233,
-	IapItemDisplayTemplateIDBundleGofest20234,
-	IapItemDisplayTemplateIDBundleGofest20235,
-	IapItemDisplayTemplateIDBundleGofest20241,
-	IapItemDisplayTemplateIDBundleGofest20242,
-	IapItemDisplayTemplateIDBundleGofest20243,
-	IapItemDisplayTemplateIDBundleGofest20244,
-	IapItemDisplayTemplateIDBundleGofestmakegoodprep1,
-	IapItemDisplayTemplateIDBundleGofestmakegoodprep2,
-	IapItemDisplayTemplateIDBundleGofestmakegoodprep3,
-	IapItemDisplayTemplateIDBundleGowa20241,
-	IapItemDisplayTemplateIDBundleGowa20242,
-	IapItemDisplayTemplateIDBundleGowa20243,
-	IapItemDisplayTemplateIDBundleGowa20244,
-	IapItemDisplayTemplateIDBundleGpdindialaunch1,
-	IapItemDisplayTemplateIDBundleGpmay20231,
-	IapItemDisplayTemplateIDBundleGwlatam20251,
-	IapItemDisplayTemplateIDBundleGwlatam20252,
-	IapItemDisplayTemplateIDBundleGwlatam20253,
-	IapItemDisplayTemplateIDBundleHalloweenAdventure1,
-	IapItemDisplayTemplateIDBundleHalloweenLarge1,
-	IapItemDisplayTemplateIDBundleHalloweenSmall1,
-	IapItemDisplayTemplateIDBundleHalloween20221,
-	IapItemDisplayTemplateIDBundleHalloween20222,
-	IapItemDisplayTemplateIDBundleHalloween20223,
-	IapItemDisplayTemplateIDBundleHalloween20231,
-	IapItemDisplayTemplateIDBundleHalloween20232,
-	IapItemDisplayTemplateIDBundleHalloween20233,
-	IapItemDisplayTemplateIDBundleHalloween20251,
-	IapItemDisplayTemplateIDBundleHalloween20252,
-	IapItemDisplayTemplateIDBundleHalloween20253,
-	IapItemDisplayTemplateIDBundleHarvestcatch1,
-	IapItemDisplayTemplateIDBundleHarvestfestival2025,
-	IapItemDisplayTemplateIDBundleHatchbox20241,
-	IapItemDisplayTemplateIDBundleHawlucha20251,
-	IapItemDisplayTemplateIDBundleHawlucha20252,
-	IapItemDisplayTemplateIDBundleHawluchacelebration1001,
-	IapItemDisplayTemplateIDBundleHawluchacelebration2001,
-	IapItemDisplayTemplateIDBundleHisuiraidday20231,
-	IapItemDisplayTemplateIDBundleHoli20251,
-	IapItemDisplayTemplateIDBundleHoli20252,
-	IapItemDisplayTemplateIDBundleHoliday20221,
-	IapItemDisplayTemplateIDBundleHoliday20222,
-	IapItemDisplayTemplateIDBundleHoliday20223,
-	IapItemDisplayTemplateIDBundleHoliday20241,
-	IapItemDisplayTemplateIDBundleIncenseday1,
-	IapItemDisplayTemplateIDBundleIndiaaugust1001,
-	IapItemDisplayTemplateIDBundleIndiaboxfeature1,
-	IapItemDisplayTemplateIDBundleIndiafestivaloflights1,
-	IapItemDisplayTemplateIDBundleIndiamay20241,
-	IapItemDisplayTemplateIDBundleIndiaseptember1001,
-	IapItemDisplayTemplateIDBundleIndiaseptember2001,
-	IapItemDisplayTemplateIDBundleIndonesiaboxfeature1,
-	IapItemDisplayTemplateIDBundleIndonesialaunch1,
-	IapItemDisplayTemplateIDBundleIndonesialaunch2,
-	IapItemDisplayTemplateIDBundleJakartaaugust1001,
-	IapItemDisplayTemplateIDBundleKoreaseptember1001,
-	IapItemDisplayTemplateIDBundleKoreaseptember2001,
-	IapItemDisplayTemplateIDBundleKsalaunch1001,
-	IapItemDisplayTemplateIDBundleKsalaunch2001,
-	IapItemDisplayTemplateIDBundleLatbox1001,
-	IapItemDisplayTemplateIDBundleLatbox3001,
-	IapItemDisplayTemplateIDBundleLunarnewyear1,
-	IapItemDisplayTemplateIDBundleMaxfinale1,
-	IapItemDisplayTemplateIDBundleMaxfinale2,
-	IapItemDisplayTemplateIDBundleMaxmonday1,
-	IapItemDisplayTemplateIDBundleMegaLucarioRaidDay20241,
-	IapItemDisplayTemplateIDBundleMheracrossraidday20241,
-	IapItemDisplayTemplateIDBundleMidautumn1,
-	IapItemDisplayTemplateIDBundleMidautumn2,
-	IapItemDisplayTemplateIDBundleMidautumn3,
-	IapItemDisplayTemplateIDBundleNewyears20241,
-	IapItemDisplayTemplateIDBundlePlaysummerbox1,
-	IapItemDisplayTemplateIDBundlePrimalraidday20231,
-	IapItemDisplayTemplateIDBundlePsychSpec20221,
-	IapItemDisplayTemplateIDBundlePsychSpec20222,
-	IapItemDisplayTemplateIDBundlePsychSpec20223,
-	IapItemDisplayTemplateIDBundleRamadan1,
-	IapItemDisplayTemplateIDBundleRamadan2,
-	IapItemDisplayTemplateIDBundleRarebundle1,
-	IapItemDisplayTemplateIDBundleRarebundle2,
-	IapItemDisplayTemplateIDBundleRarebundle3,
-	IapItemDisplayTemplateIDBundleRarebundle4,
-	IapItemDisplayTemplateIDBundleRiolu20231,
-	IapItemDisplayTemplateIDBundleRiolu20232,
-	IapItemDisplayTemplateIDBundleRockruffboost1,
-	IapItemDisplayTemplateIDBundleRrpstar1,
-	IapItemDisplayTemplateIDBundleS17seasonstart1,
-	IapItemDisplayTemplateIDBundleSeason10evergreen1,
-	IapItemDisplayTemplateIDBundleSeason10evergreen2,
-	IapItemDisplayTemplateIDBundleSeason10evergreen3,
-	IapItemDisplayTemplateIDBundleSeason11evergreen1,
-	IapItemDisplayTemplateIDBundleSeason11evergreen2,
-	IapItemDisplayTemplateIDBundleSeason11evergreen3,
-	IapItemDisplayTemplateIDBundleSeason12evergreen20231,
-	IapItemDisplayTemplateIDBundleSeason12evergreen20232,
-	IapItemDisplayTemplateIDBundleSeason12evergreen20233,
-	IapItemDisplayTemplateIDBundleSeason13evergreen20231,
-	IapItemDisplayTemplateIDBundleSeason13evergreen20232,
-	IapItemDisplayTemplateIDBundleSeason13evergreen20233,
-	IapItemDisplayTemplateIDBundleSeason14evergreen20241,
-	IapItemDisplayTemplateIDBundleSeason14evergreen20242,
-	IapItemDisplayTemplateIDBundleSeason14evergreen20243,
-	IapItemDisplayTemplateIDBundleSeason15evergreen20241,
-	IapItemDisplayTemplateIDBundleSeason15evergreen20242,
-	IapItemDisplayTemplateIDBundleSeason15evergreen20243,
-	IapItemDisplayTemplateIDBundleSeason16evergreen20241,
-	IapItemDisplayTemplateIDBundleSeason16evergreen20242,
-	IapItemDisplayTemplateIDBundleSeason16evergreen20243,
-	IapItemDisplayTemplateIDBundleSeasonaldelights20241,
-	IapItemDisplayTemplateIDBundleShadowlugia1,
-	IapItemDisplayTemplateIDBundleSmoresbump2025,
-	IapItemDisplayTemplateIDBundleSolstice20231,
-	IapItemDisplayTemplateIDBundleSolstice20232,
-	IapItemDisplayTemplateIDBundleSolstice20233,
-	IapItemDisplayTemplateIDBundleSongkran20251,
-	IapItemDisplayTemplateIDBundleSparkbox1,
-	IapItemDisplayTemplateIDBundleSparkbox2,
-	IapItemDisplayTemplateIDBundleSparkbox3,
-	IapItemDisplayTemplateIDBundleSpringtakeover20231,
-	IapItemDisplayTemplateIDBundleSpringtakeover20232,
-	IapItemDisplayTemplateIDBundleSpringtakeover20233,
-	IapItemDisplayTemplateIDBundleSteelMettle20221,
-	IapItemDisplayTemplateIDBundleSteelMettle20222,
-	IapItemDisplayTemplateIDBundleSteelMettle20223,
-	IapItemDisplayTemplateIDBundleTakeover20221,
-	IapItemDisplayTemplateIDBundleTakeover20222,
-	IapItemDisplayTemplateIDBundleTakeover20223,
-	IapItemDisplayTemplateIDBundleTgrtakeover20241,
-	IapItemDisplayTemplateIDBundleThailandfeatureapril20241,
-	IapItemDisplayTemplateIDBundleTmexpert1,
-	IapItemDisplayTemplateIDBundleUbraidday20221,
-	IapItemDisplayTemplateIDBundleUbraidday20222,
-	IapItemDisplayTemplateIDBundleUkfeature1,
-	IapItemDisplayTemplateIDBundleUltrabeastraid2024,
-	IapItemDisplayTemplateIDBundleUltraunlockraid20231,
-	IapItemDisplayTemplateIDBundleUltraunlockraid20232,
-	IapItemDisplayTemplateIDBundleUustorage1,
-	IapItemDisplayTemplateIDBundleVoyagerouttoplay1,
-	IapItemDisplayTemplateIDBundleWelcomebox1,
-	IapItemDisplayTemplateIDBundleWinterevergreen1,
-	IapItemDisplayTemplateIDBundleWinterevergreen2,
-	IapItemDisplayTemplateIDBundleWinterevergreen3,
-	IapItemDisplayTemplateIDBundleWinterholiday20231,
-	IapItemDisplayTemplateIDBundleWinterholiday20232,
-	IapItemDisplayTemplateIDBundleWinterholiday20233,
-	IapItemDisplayTemplateIDBundleXmasLarge1,
-	IapItemDisplayTemplateIDBundleZoruamakegood2022,
-	IapItemDisplayTemplateIDBundleZzraid1,
-	IapItemDisplayTemplateIDDiademuertos,
-	IapItemDisplayTemplateIDEvergreenticket1,
-	IapItemDisplayTemplateIDEvergreenticket1Giftable,
-	IapItemDisplayTemplateIDGeneral1Ticket1,
-	IapItemDisplayTemplateIDGeneral1Ticket1Giftable,
-	IapItemDisplayTemplateIDGeneral1Ticket2,
-	IapItemDisplayTemplateIDGeneral1Ticket2Giftable,
-	IapItemDisplayTemplateIDGeneral1Ticket3,
-	IapItemDisplayTemplateIDGeneral1Ticket4,
-	IapItemDisplayTemplateIDGeneral1Ticket4Giftable,
-	IapItemDisplayTemplateIDGeneral1Ticket5,
-	IapItemDisplayTemplateIDGeneral1Ticket6,
-	IapItemDisplayTemplateIDGeneral2Ticket1,
-	IapItemDisplayTemplateIDGeneral2Ticket1Giftable,
-	IapItemDisplayTemplateIDGeneral2Ticket10,
-	IapItemDisplayTemplateIDGeneral2Ticket10Giftable,
-	IapItemDisplayTemplateIDGeneral2Ticket2,
-	IapItemDisplayTemplateIDGeneral2Ticket2Giftable,
-	IapItemDisplayTemplateIDGeneral2Ticket3,
-	IapItemDisplayTemplateIDGeneral2Ticket3Giftable,
-	IapItemDisplayTemplateIDGeneral2Ticket4,
-	IapItemDisplayTemplateIDGeneral2Ticket4Giftable,
-	IapItemDisplayTemplateIDGeneral2Ticket5,
-	IapItemDisplayTemplateIDGeneral2Ticket5Giftable,
-	IapItemDisplayTemplateIDGeneral2Ticket6,
-	IapItemDisplayTemplateIDGeneral2Ticket7,
-	IapItemDisplayTemplateIDGeneral2Ticket7Giftable,
-	IapItemDisplayTemplateIDGeneral2Ticket8,
-	IapItemDisplayTemplateIDGeneral2Ticket8Giftable,
-	IapItemDisplayTemplateIDGeneral2Ticket9,
-	IapItemDisplayTemplateIDGeneral2Ticket9Giftable,
-	IapItemDisplayTemplateIDGeneral4Medium1,
-	IapItemDisplayTemplateIDGeneral6Small1,
-	IapItemDisplayTemplateIDGowaticketfree1,
-	IapItemDisplayTemplateIDHometransport1,
-	IapItemDisplayTemplateIDIncenseordinary1,
-	IapItemDisplayTemplateIDIncenseordinary8,
-	IapItemDisplayTemplateIDIncubatorbasic1,
-	IapItemDisplayTemplateIDIncubatorsuper1,
-	IapItemDisplayTemplateIDItemleadermap,
-	IapItemDisplayTemplateIDLuckyegg1,
-	IapItemDisplayTemplateIDLuckyegg8,
-	IapItemDisplayTemplateIDMaxBoost1,
-	IapItemDisplayTemplateIDMaxBoost3,
-	IapItemDisplayTemplateIDMaxpotion10,
-	IapItemDisplayTemplateIDMaxpotion5,
-	IapItemDisplayTemplateIDMaxrevive3,
-	IapItemDisplayTemplateIDMaxrevive6,
-	IapItemDisplayTemplateIDMpReplenish1,
-	IapItemDisplayTemplateIDMpReplenish3,
-	IapItemDisplayTemplateIDMpReplenishRrp1,
-	IapItemDisplayTemplateIDMpReplenishRrp3,
-	IapItemDisplayTemplateIDPaidraidticket1,
-	IapItemDisplayTemplateIDPaidraidticket3,
-	IapItemDisplayTemplateIDPgoreleaseApril22026DeluxeEventPassTrackRedirect,
-	IapItemDisplayTemplateIDPgoreleaseApril32026DeluxeEventPassTrackUnlock,
-	IapItemDisplayTemplateIDPgoreleaseApril32026DeluxeEventPassTrackUnlockPlusPoints,
-	IapItemDisplayTemplateIDPgoreleaseBundle1,
-	IapItemDisplayTemplateIDPgoreleaseBundle2,
-	IapItemDisplayTemplateIDPgoreleaseBundleRtsraid,
-	IapItemDisplayTemplateIDPgoreleaseBundleBlanchebox1,
-	IapItemDisplayTemplateIDPgoreleaseBundleCitysafaribarcelona1,
-	IapItemDisplayTemplateIDPgoreleaseBundleCitysafaribarcelona2,
-	IapItemDisplayTemplateIDPgoreleaseBundleCitysafarimexico1,
-	IapItemDisplayTemplateIDPgoreleaseBundleCitysafarimexico2,
-	IapItemDisplayTemplateIDPgoreleaseBundleEliteraidbox1,
-	IapItemDisplayTemplateIDPgoreleaseBundleEliteraidmay2023,
-	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures1,
-	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures2,
-	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures3,
-	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures4,
-	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures5,
-	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures6,
-	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures7,
-	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures8,
-	IapItemDisplayTemplateIDPgoreleaseBundleFoc2023box1,
-	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartyLarge2,
-	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartyLarge4,
-	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartyMedium1,
-	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartySmall1,
-	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartySmall12,
-	IapItemDisplayTemplateIDPgoreleaseBundleGeneralThirdpartySmall2,
-	IapItemDisplayTemplateIDPgoreleaseBundleGeneral1Tiny4,
-	IapItemDisplayTemplateIDPgoreleaseBundleGeneral11Small1331,
-	IapItemDisplayTemplateIDPgoreleaseBundleGotour20230,
-	IapItemDisplayTemplateIDPgoreleaseBundleGotour20231,
-	IapItemDisplayTemplateIDPgoreleaseBundleGotour20232,
-	IapItemDisplayTemplateIDPgoreleaseBundleGotour20233,
-	IapItemDisplayTemplateIDPgoreleaseBundleGotour20234,
-	IapItemDisplayTemplateIDPgoreleaseBundleGotour20235,
-	IapItemDisplayTemplateIDPgoreleaseBundleGotour20236,
-	IapItemDisplayTemplateIDPgoreleaseBundleGp20221,
-	IapItemDisplayTemplateIDPgoreleaseBundleIndiagp20231,
-	IapItemDisplayTemplateIDPgoreleaseBundleLure1,
-	IapItemDisplayTemplateIDPgoreleaseBundlePokemonday1,
-	IapItemDisplayTemplateIDPgoreleaseBundleRaiddaymay20231,
-	IapItemDisplayTemplateIDPgoreleaseBundleRaiddaymay20232,
-	IapItemDisplayTemplateIDPgoreleaseBundleRaiddaymay20233,
-	IapItemDisplayTemplateIDPgoreleaseBundleRaiddaymay20234,
-	IapItemDisplayTemplateIDPgoreleaseBundleRaiddaynov20231,
-	IapItemDisplayTemplateIDPgoreleaseBundleRaidhourbox1,
-	IapItemDisplayTemplateIDPgoreleaseBundleRaidhourbox2,
-	IapItemDisplayTemplateIDPgoreleaseBundleRamadan2023box1,
-	IapItemDisplayTemplateIDPgoreleaseBundleSeason10evergreen1,
-	IapItemDisplayTemplateIDPgoreleaseBundleSeason10evergreen2,
-	IapItemDisplayTemplateIDPgoreleaseBundleSeason10evergreen3,
-	IapItemDisplayTemplateIDPgoreleaseBundleSeason10launch1,
-	IapItemDisplayTemplateIDPgoreleaseBundleSustainabilitybonusmay2023,
-	IapItemDisplayTemplateIDPgoreleaseBundleSustainabilitymay2023,
-	IapItemDisplayTemplateIDPgoreleaseBundleTemplate1,
-	IapItemDisplayTemplateIDPgoreleaseBundleTemplate2,
-	IapItemDisplayTemplateIDPgoreleaseBundleTemplate3,
-	IapItemDisplayTemplateIDPgoreleaseBundleThailandspec20231,
-	IapItemDisplayTemplateIDPgoreleaseBundleWalkeratlantic20221,
-	IapItemDisplayTemplateIDPgoreleaseBundleWalkeratlantic20222,
-	IapItemDisplayTemplateIDPgoreleaseCitysafariticket01,
-	IapItemDisplayTemplateIDPgoreleaseCitysafariticket11,
-	IapItemDisplayTemplateIDPgoreleaseCitysafariticket21,
-	IapItemDisplayTemplateIDPgoreleaseEvergreenticket1,
-	IapItemDisplayTemplateIDPgoreleaseEvergreenticket1Giftable,
-	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket1,
-	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket1Giftable,
-	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket2,
-	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket2Giftable,
-	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket4,
-	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket4Giftable,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket1,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket1Giftable,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket10,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket10Giftable,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket2,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket2Giftable,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket3,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket3Giftable,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket4,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket4Giftable,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket5,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket5Giftable,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket7,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket7Giftable,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket8,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket8Giftable,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket9,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket9Giftable,
-	IapItemDisplayTemplateIDPgoreleaseMonth2DeluxeEventPassTrackUnlock,
-	IapItemDisplayTemplateIDPgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints,
-	IapItemDisplayTemplateIDPgoreleasePokecoin15950,
-	IapItemDisplayTemplateIDPgoreleasePokecoin21375,
-	IapItemDisplayTemplateIDPgoreleasePokecoin2750,
-	IapItemDisplayTemplateIDPgoreleasePokecoin5720,
-	IapItemDisplayTemplateIDPoffin,
-	IapItemDisplayTemplateIDPokeball100,
-	IapItemDisplayTemplateIDPokeball20,
-	IapItemDisplayTemplateIDPokeball200,
-	IapItemDisplayTemplateIDPostcardstorageupgrade1,
-	IapItemDisplayTemplateIDRemoteraidticket1,
-	IapItemDisplayTemplateIDRemoteraidticket3,
-	IapItemDisplayTemplateIDStarpiece1,
-	IapItemDisplayTemplateIDStarpiece8,
 	IapItemDisplayTemplateIDTroydisk1,
 	IapItemDisplayTemplateIDTroydisk8,
 	IapItemDisplayTemplateIDWebCommunityAmbassadorBonusBundle2025,
@@ -2248,4 +2246,6 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDWebRaidBox071323,
 	IapItemDisplayTemplateIDWebSeasonalDelights2024Box,
 	IapItemDisplayTemplateIDWebVoyagerBox071323,
+	IapItemDisplayTemplateIDWinterholidays2025DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDWinterholidays2025DeluxeEventPassTrackUnlockPlusPoints,
 }

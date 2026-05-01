@@ -1403,20 +1403,6 @@ export type SettingsOverrideRuleAllowSamsungsmG990w2 = S<
 		}
 	>
 >;
-export type SettingsOverrideRuleAllowSamsungsmG9910 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_SAMSUNGSM_G9910",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "samsung SM-G9910";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
 export type SettingsOverrideRuleAllowSamsungsmG991b = S<
 	SettingsOverrideRule<
 		"SETTINGS_RULES_ALLOW_SAMSUNGSM_G991B",
@@ -1599,6 +1585,20 @@ export type SettingsOverrideRuleAllowSamsungsmG998u1 = S<
 		}
 	>
 >;
+export type SettingsOverrideRuleAllowSamsungsmG9910 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_SAMSUNGSM_G9910",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "samsung SM-G9910";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
 export type SettingsOverrideRuleAllowSamsungsmN970u = S<
 	SettingsOverrideRule<
 		"SETTINGS_RULES_ALLOW_SAMSUNGSM_N970U",
@@ -1669,20 +1669,6 @@ export type SettingsOverrideRuleAllowSamsungsmN981u = S<
 		}
 	>
 >;
-export type SettingsOverrideRuleAllowSamsungsmN9860 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_SAMSUNGSM_N9860",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "samsung SM-N9860";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
 export type SettingsOverrideRuleAllowSamsungsmN986b = S<
 	SettingsOverrideRule<
 		"SETTINGS_RULES_ALLOW_SAMSUNGSM_N986B",
@@ -1733,6 +1719,20 @@ export type SettingsOverrideRuleAllowSamsungsmN986u1 = S<
 			occlusionEnabled: "TRUE";
 			ruleType: "DEVICE_MODEL";
 			ruleValue: "samsung SM-N986U1";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowSamsungsmN9860 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_SAMSUNGSM_N9860",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "samsung SM-N9860";
 			semanticsEnabled: "TRUE";
 			sortOrder: 50;
 			vpsEnabled: "TRUE";
@@ -1879,20 +1879,6 @@ export type SettingsOverrideRuleAllowSamsungsmS901w = S<
 		}
 	>
 >;
-export type SettingsOverrideRuleAllowSamsungsmS9060 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_SAMSUNGSM_S9060",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "samsung SM-S9060";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
 export type SettingsOverrideRuleAllowSamsungsmS906b = S<
 	SettingsOverrideRule<
 		"SETTINGS_RULES_ALLOW_SAMSUNGSM_S906B",
@@ -1957,20 +1943,6 @@ export type SettingsOverrideRuleAllowSamsungsmS906u1 = S<
 			occlusionEnabled: "TRUE";
 			ruleType: "DEVICE_MODEL";
 			ruleValue: "samsung SM-S906U1";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleAllowSamsungsmS9080 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_SAMSUNGSM_S9080",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "samsung SM-S9080";
 			semanticsEnabled: "TRUE";
 			sortOrder: 50;
 			vpsEnabled: "TRUE";
@@ -2131,20 +2103,6 @@ export type SettingsOverrideRuleAllowSamsungsmS911w = S<
 		}
 	>
 >;
-export type SettingsOverrideRuleAllowSamsungsmS9160 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_SAMSUNGSM_S9160",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "samsung SM-S9160";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
 export type SettingsOverrideRuleAllowSamsungsmS916b = S<
 	SettingsOverrideRule<
 		"SETTINGS_RULES_ALLOW_SAMSUNGSM_S916B",
@@ -2195,20 +2153,6 @@ export type SettingsOverrideRuleAllowSamsungsmS916u1 = S<
 			occlusionEnabled: "TRUE";
 			ruleType: "DEVICE_MODEL";
 			ruleValue: "samsung SM-S916U1";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleAllowSamsungsmS9180 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_SAMSUNGSM_S9180",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "samsung SM-S9180";
 			semanticsEnabled: "TRUE";
 			sortOrder: 50;
 			vpsEnabled: "TRUE";
@@ -2313,20 +2257,6 @@ export type SettingsOverrideRuleAllowSamsungsmS921n = S<
 		}
 	>
 >;
-export type SettingsOverrideRuleAllowSamsungsmS9260 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_SAMSUNGSM_S9260",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "samsung SM-S9260";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
 export type SettingsOverrideRuleAllowSamsungsmS926u = S<
 	SettingsOverrideRule<
 		"SETTINGS_RULES_ALLOW_SAMSUNGSM_S926U",
@@ -2335,20 +2265,6 @@ export type SettingsOverrideRuleAllowSamsungsmS926u = S<
 			occlusionEnabled: "TRUE";
 			ruleType: "DEVICE_MODEL";
 			ruleValue: "samsung SM-S926U";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleAllowSamsungsmS9280 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_SAMSUNGSM_S9280",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "samsung SM-S9280";
 			semanticsEnabled: "TRUE";
 			sortOrder: 50;
 			vpsEnabled: "TRUE";
@@ -2405,6 +2321,90 @@ export type SettingsOverrideRuleAllowSamsungsmS928u1 = S<
 			occlusionEnabled: "TRUE";
 			ruleType: "DEVICE_MODEL";
 			ruleValue: "samsung SM-S928U1";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowSamsungsmS9060 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_SAMSUNGSM_S9060",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "samsung SM-S9060";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowSamsungsmS9080 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_SAMSUNGSM_S9080",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "samsung SM-S9080";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowSamsungsmS9160 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_SAMSUNGSM_S9160",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "samsung SM-S9160";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowSamsungsmS9180 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_SAMSUNGSM_S9180",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "samsung SM-S9180";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowSamsungsmS9260 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_SAMSUNGSM_S9260",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "samsung SM-S9260";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowSamsungsmS9280 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_SAMSUNGSM_S9280",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "samsung SM-S9280";
 			semanticsEnabled: "TRUE";
 			sortOrder: 50;
 			vpsEnabled: "TRUE";
@@ -3139,14 +3139,14 @@ export type SettingsOverrideRuleAllowSonysog06 = S<
 		}
 	>
 >;
-export type SettingsOverrideRuleAllowXiaomi21061110ag = S<
+export type SettingsOverrideRuleAllowXiaomi23049pcd8g = S<
 	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_XIAOMI21061110AG",
+		"SETTINGS_RULES_ALLOW_XIAOMI23049PCD8G",
 		{
 			meshingEnabled: "TRUE";
 			occlusionEnabled: "TRUE";
 			ruleType: "DEVICE_MODEL";
-			ruleValue: "Xiaomi 21061110AG";
+			ruleValue: "Xiaomi 23049PCD8G";
 			semanticsEnabled: "TRUE";
 			sortOrder: 50;
 			vpsEnabled: "TRUE";
@@ -3161,6 +3161,34 @@ export type SettingsOverrideRuleAllowXiaomi2107113sg = S<
 			occlusionEnabled: "TRUE";
 			ruleType: "DEVICE_MODEL";
 			ruleValue: "Xiaomi 2107113SG";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowXiaomi2201123g = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_XIAOMI2201123G",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "Xiaomi 2201123G";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowXiaomi21061110ag = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_XIAOMI21061110AG",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "Xiaomi 21061110AG";
 			semanticsEnabled: "TRUE";
 			sortOrder: 50;
 			vpsEnabled: "TRUE";
@@ -3189,20 +3217,6 @@ export type SettingsOverrideRuleAllowXiaomi21121210g = S<
 			occlusionEnabled: "TRUE";
 			ruleType: "DEVICE_MODEL";
 			ruleValue: "Xiaomi 21121210G";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleAllowXiaomi2201123g = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_XIAOMI2201123G",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "Xiaomi 2201123G";
 			semanticsEnabled: "TRUE";
 			sortOrder: 50;
 			vpsEnabled: "TRUE";
@@ -3245,20 +3259,6 @@ export type SettingsOverrideRuleAllowXiaomi22081212ug = S<
 			occlusionEnabled: "TRUE";
 			ruleType: "DEVICE_MODEL";
 			ruleValue: "Xiaomi 22081212UG";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleAllowXiaomi23049pcd8g = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_ALLOW_XIAOMI23049PCD8G",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "Xiaomi 23049PCD8G";
 			semanticsEnabled: "TRUE";
 			sortOrder: 50;
 			vpsEnabled: "TRUE";
@@ -3577,7 +3577,6 @@ export type SettingsOverrideRuleMeshingEnabledRuleValueVpsEnabledMasterfileEntry
 	| SettingsOverrideRuleAllowSamsungsmG990u
 	| SettingsOverrideRuleAllowSamsungsmG990u2
 	| SettingsOverrideRuleAllowSamsungsmG990w2
-	| SettingsOverrideRuleAllowSamsungsmG9910
 	| SettingsOverrideRuleAllowSamsungsmG991b
 	| SettingsOverrideRuleAllowSamsungsmG991n
 	| SettingsOverrideRuleAllowSamsungsmG991u
@@ -3591,16 +3590,17 @@ export type SettingsOverrideRuleMeshingEnabledRuleValueVpsEnabledMasterfileEntry
 	| SettingsOverrideRuleAllowSamsungsmG998n
 	| SettingsOverrideRuleAllowSamsungsmG998u
 	| SettingsOverrideRuleAllowSamsungsmG998u1
+	| SettingsOverrideRuleAllowSamsungsmG9910
 	| SettingsOverrideRuleAllowSamsungsmN970u
 	| SettingsOverrideRuleAllowSamsungsmN980f
 	| SettingsOverrideRuleAllowSamsungsmN981b
 	| SettingsOverrideRuleAllowSamsungsmN981n
 	| SettingsOverrideRuleAllowSamsungsmN981u
-	| SettingsOverrideRuleAllowSamsungsmN9860
 	| SettingsOverrideRuleAllowSamsungsmN986b
 	| SettingsOverrideRuleAllowSamsungsmN986n
 	| SettingsOverrideRuleAllowSamsungsmN986u
 	| SettingsOverrideRuleAllowSamsungsmN986u1
+	| SettingsOverrideRuleAllowSamsungsmN9860
 	| SettingsOverrideRuleAllowSamsungsmS711b
 	| SettingsOverrideRuleAllowSamsungsmS711n
 	| SettingsOverrideRuleAllowSamsungsmS711u
@@ -3611,13 +3611,11 @@ export type SettingsOverrideRuleMeshingEnabledRuleValueVpsEnabledMasterfileEntry
 	| SettingsOverrideRuleAllowSamsungsmS901u
 	| SettingsOverrideRuleAllowSamsungsmS901u1
 	| SettingsOverrideRuleAllowSamsungsmS901w
-	| SettingsOverrideRuleAllowSamsungsmS9060
 	| SettingsOverrideRuleAllowSamsungsmS906b
 	| SettingsOverrideRuleAllowSamsungsmS906e
 	| SettingsOverrideRuleAllowSamsungsmS906n
 	| SettingsOverrideRuleAllowSamsungsmS906u
 	| SettingsOverrideRuleAllowSamsungsmS906u1
-	| SettingsOverrideRuleAllowSamsungsmS9080
 	| SettingsOverrideRuleAllowSamsungsmS908b
 	| SettingsOverrideRuleAllowSamsungsmS908e
 	| SettingsOverrideRuleAllowSamsungsmS908n
@@ -3629,12 +3627,10 @@ export type SettingsOverrideRuleMeshingEnabledRuleValueVpsEnabledMasterfileEntry
 	| SettingsOverrideRuleAllowSamsungsmS911u
 	| SettingsOverrideRuleAllowSamsungsmS911u1
 	| SettingsOverrideRuleAllowSamsungsmS911w
-	| SettingsOverrideRuleAllowSamsungsmS9160
 	| SettingsOverrideRuleAllowSamsungsmS916b
 	| SettingsOverrideRuleAllowSamsungsmS916n
 	| SettingsOverrideRuleAllowSamsungsmS916u
 	| SettingsOverrideRuleAllowSamsungsmS916u1
-	| SettingsOverrideRuleAllowSamsungsmS9180
 	| SettingsOverrideRuleAllowSamsungsmS918b
 	| SettingsOverrideRuleAllowSamsungsmS918n
 	| SettingsOverrideRuleAllowSamsungsmS918u
@@ -3642,13 +3638,17 @@ export type SettingsOverrideRuleMeshingEnabledRuleValueVpsEnabledMasterfileEntry
 	| SettingsOverrideRuleAllowSamsungsmS918w
 	| SettingsOverrideRuleAllowSamsungsmS921b
 	| SettingsOverrideRuleAllowSamsungsmS921n
-	| SettingsOverrideRuleAllowSamsungsmS9260
 	| SettingsOverrideRuleAllowSamsungsmS926u
-	| SettingsOverrideRuleAllowSamsungsmS9280
 	| SettingsOverrideRuleAllowSamsungsmS928b
 	| SettingsOverrideRuleAllowSamsungsmS928n
 	| SettingsOverrideRuleAllowSamsungsmS928u
 	| SettingsOverrideRuleAllowSamsungsmS928u1
+	| SettingsOverrideRuleAllowSamsungsmS9060
+	| SettingsOverrideRuleAllowSamsungsmS9080
+	| SettingsOverrideRuleAllowSamsungsmS9160
+	| SettingsOverrideRuleAllowSamsungsmS9180
+	| SettingsOverrideRuleAllowSamsungsmS9260
+	| SettingsOverrideRuleAllowSamsungsmS9280
 	| SettingsOverrideRuleAllowSharpsh51b
 	| SettingsOverrideRuleAllowSonyA002so
 	| SettingsOverrideRuleAllowSonyA101so
@@ -3701,15 +3701,15 @@ export type SettingsOverrideRuleMeshingEnabledRuleValueVpsEnabledMasterfileEntry
 	| SettingsOverrideRuleAllowSonysog02
 	| SettingsOverrideRuleAllowSonysog05
 	| SettingsOverrideRuleAllowSonysog06
-	| SettingsOverrideRuleAllowXiaomi21061110ag
+	| SettingsOverrideRuleAllowXiaomi23049pcd8g
 	| SettingsOverrideRuleAllowXiaomi2107113sg
+	| SettingsOverrideRuleAllowXiaomi2201123g
+	| SettingsOverrideRuleAllowXiaomi21061110ag
 	| SettingsOverrideRuleAllowXiaomi21081111rg
 	| SettingsOverrideRuleAllowXiaomi21121210g
-	| SettingsOverrideRuleAllowXiaomi2201123g
 	| SettingsOverrideRuleAllowXiaomi22021211rg
 	| SettingsOverrideRuleAllowXiaomi22041216g
 	| SettingsOverrideRuleAllowXiaomi22081212ug
-	| SettingsOverrideRuleAllowXiaomi23049pcd8g
 	| SettingsOverrideRuleAllowXiaomim2007j3sg
 	| SettingsOverrideRuleAllowXiaomim2007j3sy
 	| SettingsOverrideRuleAllowXiaomim2012k11ag

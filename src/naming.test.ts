@@ -131,12 +131,13 @@ describe("deriveGroupAliases", () => {
 		expect(map.get("PREFIX_GAMMA")).toBe("Gamma");
 	});
 
-	test("breaks further ties with a numeric suffix in lexicographic order", () => {
+	test("breaks further ties with a numeric suffix in natural sort order", () => {
 		const map = deriveGroupAliases(["COLLIDE_FOO", "COLLIDE_bar", "COLLIDE_foo"], "CollisionTest");
 		expect(map.get("COLLIDE_bar")).toBe("Bar"); // no collision → clean suffix
-		// COLLIDE_FOO vs COLLIDE_foo → both yield CollideFoo; tie-break lexicographically.
-		expect(map.get("COLLIDE_FOO")).toBe("CollideFoo0");
-		expect(map.get("COLLIDE_foo")).toBe("CollideFoo1");
+		// COLLIDE_FOO vs COLLIDE_foo → both yield CollideFoo; tie-break by Intl.Collator
+		// (`compareNatural`), which sorts lowercase before uppercase under default English collation.
+		expect(map.get("COLLIDE_foo")).toBe("CollideFoo0");
+		expect(map.get("COLLIDE_FOO")).toBe("CollideFoo1");
 	});
 
 	test("strips redundant trailing group name from each suffix", () => {

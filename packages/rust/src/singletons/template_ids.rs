@@ -11,10 +11,10 @@ pub enum SingletonsTemplateId {
     AccessibilityClientSettings,
     #[serde(rename = "ADDITIVE_SCENE_SETTINGS")]
     AdditiveSceneSettings,
-    #[serde(rename = "ADDRESSABLE_POKEMON_SETTINGS")]
-    AddressablePokemonSettings,
     #[serde(rename = "ADDRESS_BOOK_IMPORT_SETTINGS")]
     AddressBookImportSettings,
+    #[serde(rename = "ADDRESSABLE_POKEMON_SETTINGS")]
+    AddressablePokemonSettings,
     #[serde(rename = "ADVANCED_SETTINGS")]
     AdvancedSettings,
     #[serde(rename = "AR_PHOTO_FEATURE_FLAGS")]
@@ -25,6 +25,10 @@ pub enum SingletonsTemplateId {
     AssetRefreshProto,
     #[serde(rename = "AVATAR_FEATURE_FLAGS")]
     AvatarFeatureFlags,
+    #[serde(rename = "avatar_store_footer_flags")]
+    AvatarStoreFooterFlags,
+    #[serde(rename = "avatar_store_subcategory_filtering_flags")]
+    AvatarStoreSubcategoryFilteringFlags,
     #[serde(rename = "BACKGROUND_MODE_SETTINGS")]
     BackgroundModeSettings,
     #[serde(rename = "BATTLE_HUB_BADGE_SETTINGS")]
@@ -119,6 +123,8 @@ pub enum SingletonsTemplateId {
     IapSettings,
     #[serde(rename = "IBFC_LIGHTWEIGHT_SETTINGS")]
     IbfcLightweightSettings,
+    #[serde(rename = "impression_tracking_settings")]
+    ImpressionTrackingSettings,
     #[serde(rename = "INCIDENT_PRIORITY_SETTINGS")]
     IncidentPrioritySettings,
     #[serde(rename = "INCIDENT_VISIBILITY_SETTINGS")]
@@ -177,14 +183,14 @@ pub enum SingletonsTemplateId {
     PokeballThrowPropertySettings,
     #[serde(rename = "POKECOIN_PURCHASE_DISPLAY_GMT")]
     PokecoinPurchaseDisplayGmt,
-    #[serde(rename = "POKEDEXV2_FEATURE_FLAGS")]
-    Pokedexv2FeatureFlags,
     #[serde(rename = "POKEDEX_CATEGORIES_SETTINGS")]
     PokedexCategoriesSettings,
     #[serde(rename = "POKEDEX_SIZE_STATS_SYSTEM_SETTINGS")]
     PokedexSizeStatsSystemSettings,
     #[serde(rename = "POKEDEX_V2_SETTINGS")]
     PokedexV2Settings,
+    #[serde(rename = "POKEDEXV2_FEATURE_FLAGS")]
+    Pokedexv2FeatureFlags,
     #[serde(rename = "POKEMON_FX_SETTINGS")]
     PokemonFxSettings,
     #[serde(rename = "POKEMON_HOME_SETTINGS")]
@@ -217,10 +223,6 @@ pub enum SingletonsTemplateId {
     RemoteRaidLimitSettings,
     #[serde(rename = "REMOTE_TRADE_SETTINGS")]
     RemoteTradeSettings,
-    #[serde(rename = "ROUTES_NEARBY_NOTIF_SETTINGS")]
-    RoutesNearbyNotifSettings,
-    #[serde(rename = "ROUTES_PARTY_PLAY_INTEROP_SETTINGS")]
-    RoutesPartyPlayInteropSettings,
     #[serde(rename = "ROUTE_BADGE_SETTINGS")]
     RouteBadgeSettings,
     #[serde(rename = "ROUTE_CREATION_SETTINGS")]
@@ -233,6 +235,10 @@ pub enum SingletonsTemplateId {
     RoutePlaySettings,
     #[serde(rename = "ROUTE_STAMP_CATEGORY_DEFAULT")]
     RouteStampCategoryDefault,
+    #[serde(rename = "ROUTES_NEARBY_NOTIF_SETTINGS")]
+    RoutesNearbyNotifSettings,
+    #[serde(rename = "ROUTES_PARTY_PLAY_INTEROP_SETTINGS")]
+    RoutesPartyPlayInteropSettings,
     #[serde(rename = "SHARED_FUSION_SETTINGS")]
     SharedFusionSettings,
     #[serde(rename = "SHARED_MOVE_SETTINGS")]
@@ -249,6 +255,8 @@ pub enum SingletonsTemplateId {
     StampCollectionSettings,
     #[serde(rename = "STATIONED_POKEMON_POWER_BOOST_TABLE_SETTINGS")]
     StationedPokemonPowerBoostTableSettings,
+    #[serde(rename = "sticker_category_settings")]
+    StickerCategorySettings,
     #[serde(rename = "STYLE_SHOP_SETTINGS")]
     StyleShopSettings,
     #[serde(rename = "SURVEY_SETTINGS")]
@@ -259,6 +267,8 @@ pub enum SingletonsTemplateId {
     TodayViewSettingsV2,
     #[serde(rename = "TUTORIALS_SETTINGS")]
     TutorialsSettings,
+    #[serde(rename = "username_suggestion_settings")]
+    UsernameSuggestionSettings,
     #[serde(rename = "VERBOSE_LOG_COMBAT_SETTINGS")]
     VerboseLogCombatSettings,
     #[serde(rename = "VERBOSE_LOG_RAID_SETTINGS")]
@@ -275,14 +285,4 @@ pub enum SingletonsTemplateId {
     VsSeekerScheduleSettings,
     #[serde(rename = "WEATHER_BONUS_SETTINGS")]
     WeatherBonusSettings,
-    #[serde(rename = "avatar_store_footer_flags")]
-    AvatarStoreFooterFlags,
-    #[serde(rename = "avatar_store_subcategory_filtering_flags")]
-    AvatarStoreSubcategoryFilteringFlags,
-    #[serde(rename = "impression_tracking_settings")]
-    ImpressionTrackingSettings,
-    #[serde(rename = "sticker_category_settings")]
-    StickerCategorySettings,
-    #[serde(rename = "username_suggestion_settings")]
-    UsernameSuggestionSettings,
 }

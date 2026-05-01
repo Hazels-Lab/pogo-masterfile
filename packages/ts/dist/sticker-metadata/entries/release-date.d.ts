@@ -3,21 +3,21 @@
 import type { S } from "../../_utils";
 import type { StickerMetadata } from "../types";
 
-export type StickerMetadata2023collab4 = S<
-	StickerMetadata<
-		"STICKER_2023COLLAB_4",
-		{
-			category: ["Pokemon"];
-			releaseDate: 20230926;
-		}
-	>
->;
 export type StickerMetadata8anniv1 = S<
 	StickerMetadata<
 		"STICKER_8ANNIV_1",
 		{
 			category: ["Misc"];
 			releaseDate: 20240620;
+		}
+	>
+>;
+export type StickerMetadata2023collab4 = S<
+	StickerMetadata<
+		"STICKER_2023COLLAB_4",
+		{
+			category: ["Pokemon"];
+			releaseDate: 20230926;
 		}
 	>
 >;
@@ -311,8 +311,8 @@ export type StickerMetadataWillowSilver = S<
 >;
 
 export type StickerMetadataReleaseDateMasterfileEntry =
-	| StickerMetadata2023collab4
 	| StickerMetadata8anniv1
+	| StickerMetadata2023collab4
 	| StickerMetadataDiademuertos20231
 	| StickerMetadataDiademuertos20232
 	| StickerMetadataDiademuertos20233

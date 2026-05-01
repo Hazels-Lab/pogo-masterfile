@@ -273,6 +273,12 @@ pub enum LocationCardSettingsTemplateId {
     LcPokelidYamagata,
     #[serde(rename = "LC_POKELID_YAMAGUCHI")]
     LcPokelidYamaguchi,
+    #[serde(rename = "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_MOON_ULTRA_WORMHOLE_001")]
+    LcSpecialBackground2024GlobalGofestMoonUltraWormhole001,
+    #[serde(rename = "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_SUN_ULTRA_WORMHOLE_001")]
+    LcSpecialBackground2024GlobalGofestSunUltraWormhole001,
+    #[serde(rename = "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_ULTRA_WORMHOLE_001")]
+    LcSpecialBackground2024GlobalGofestUltraWormhole001,
     #[serde(rename = "LC_SPECIALBACKGROUND_2024_DECEMBERCDRECAP")]
     LcSpecialbackground2024Decembercdrecap,
     #[serde(rename = "LC_SPECIALBACKGROUND_2024_GLOBAL_GOFEST_RADIANCE_001")]
@@ -363,12 +369,6 @@ pub enum LocationCardSettingsTemplateId {
     LcSpecialbackgroundTeamRed,
     #[serde(rename = "LC_SPECIALBACKGROUND_TEAM_YELLOW")]
     LcSpecialbackgroundTeamYellow,
-    #[serde(rename = "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_MOON_ULTRA_WORMHOLE_001")]
-    LcSpecialBackground2024GlobalGofestMoonUltraWormhole001,
-    #[serde(rename = "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_SUN_ULTRA_WORMHOLE_001")]
-    LcSpecialBackground2024GlobalGofestSunUltraWormhole001,
-    #[serde(rename = "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_ULTRA_WORMHOLE_001")]
-    LcSpecialBackground2024GlobalGofestUltraWormhole001,
     #[serde(rename = "LC_TOKMUN_STAMP_01")]
     LcTokmunStamp01,
     #[serde(rename = "LC_TOKMUN_STAMP_02")]

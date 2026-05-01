@@ -7,6 +7,22 @@ use serde::{Deserialize, Serialize};
     Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum,
 )]
 pub enum LevelUpRewardsTemplateId {
+    #[serde(rename = "AWARDS_LEVEL_2")]
+    AwardsLevel2,
+    #[serde(rename = "AWARDS_LEVEL_3")]
+    AwardsLevel3,
+    #[serde(rename = "AWARDS_LEVEL_4")]
+    AwardsLevel4,
+    #[serde(rename = "AWARDS_LEVEL_5")]
+    AwardsLevel5,
+    #[serde(rename = "AWARDS_LEVEL_6")]
+    AwardsLevel6,
+    #[serde(rename = "AWARDS_LEVEL_7")]
+    AwardsLevel7,
+    #[serde(rename = "AWARDS_LEVEL_8")]
+    AwardsLevel8,
+    #[serde(rename = "AWARDS_LEVEL_9")]
+    AwardsLevel9,
     #[serde(rename = "AWARDS_LEVEL_10")]
     AwardsLevel10,
     #[serde(rename = "AWARDS_LEVEL_11")]
@@ -27,8 +43,6 @@ pub enum LevelUpRewardsTemplateId {
     AwardsLevel18,
     #[serde(rename = "AWARDS_LEVEL_19")]
     AwardsLevel19,
-    #[serde(rename = "AWARDS_LEVEL_2")]
-    AwardsLevel2,
     #[serde(rename = "AWARDS_LEVEL_20")]
     AwardsLevel20,
     #[serde(rename = "AWARDS_LEVEL_21")]
@@ -49,8 +63,6 @@ pub enum LevelUpRewardsTemplateId {
     AwardsLevel28,
     #[serde(rename = "AWARDS_LEVEL_29")]
     AwardsLevel29,
-    #[serde(rename = "AWARDS_LEVEL_3")]
-    AwardsLevel3,
     #[serde(rename = "AWARDS_LEVEL_30")]
     AwardsLevel30,
     #[serde(rename = "AWARDS_LEVEL_31")]
@@ -71,8 +83,6 @@ pub enum LevelUpRewardsTemplateId {
     AwardsLevel38,
     #[serde(rename = "AWARDS_LEVEL_39")]
     AwardsLevel39,
-    #[serde(rename = "AWARDS_LEVEL_4")]
-    AwardsLevel4,
     #[serde(rename = "AWARDS_LEVEL_40")]
     AwardsLevel40,
     #[serde(rename = "AWARDS_LEVEL_41")]
@@ -93,8 +103,6 @@ pub enum LevelUpRewardsTemplateId {
     AwardsLevel48,
     #[serde(rename = "AWARDS_LEVEL_49")]
     AwardsLevel49,
-    #[serde(rename = "AWARDS_LEVEL_5")]
-    AwardsLevel5,
     #[serde(rename = "AWARDS_LEVEL_50")]
     AwardsLevel50,
     #[serde(rename = "AWARDS_LEVEL_51")]
@@ -115,8 +123,6 @@ pub enum LevelUpRewardsTemplateId {
     AwardsLevel58,
     #[serde(rename = "AWARDS_LEVEL_59")]
     AwardsLevel59,
-    #[serde(rename = "AWARDS_LEVEL_6")]
-    AwardsLevel6,
     #[serde(rename = "AWARDS_LEVEL_60")]
     AwardsLevel60,
     #[serde(rename = "AWARDS_LEVEL_61")]
@@ -137,8 +143,6 @@ pub enum LevelUpRewardsTemplateId {
     AwardsLevel68,
     #[serde(rename = "AWARDS_LEVEL_69")]
     AwardsLevel69,
-    #[serde(rename = "AWARDS_LEVEL_7")]
-    AwardsLevel7,
     #[serde(rename = "AWARDS_LEVEL_70")]
     AwardsLevel70,
     #[serde(rename = "AWARDS_LEVEL_71")]
@@ -159,12 +163,8 @@ pub enum LevelUpRewardsTemplateId {
     AwardsLevel78,
     #[serde(rename = "AWARDS_LEVEL_79")]
     AwardsLevel79,
-    #[serde(rename = "AWARDS_LEVEL_8")]
-    AwardsLevel8,
     #[serde(rename = "AWARDS_LEVEL_80")]
     AwardsLevel80,
-    #[serde(rename = "AWARDS_LEVEL_9")]
-    AwardsLevel9,
     #[serde(rename = "BACKFILL_AWARDS_LEVEL_10")]
     BackfillAwardsLevel10,
     #[serde(rename = "BACKFILL_AWARDS_LEVEL_20")]

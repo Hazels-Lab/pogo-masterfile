@@ -1,5 +1,5 @@
 import type { Entry } from "./group.ts";
-import { isJsonObject } from "./helpers.ts";
+import { compareNatural, isJsonObject } from "./helpers.ts";
 
 export type NumericKind = "uint" | "int" | "float";
 
@@ -190,7 +190,7 @@ export function inferJsonTypes(values: readonly unknown[]): InferredType {
 	if (variants.length === 1) return variants[0]!;
 	return {
 		kind: "union",
-		variants: variants.sort((a, b) => variantSortKey(a).localeCompare(variantSortKey(b))),
+		variants: variants.sort((a, b) => compareNatural(variantSortKey(a), variantSortKey(b))),
 	};
 }
 
@@ -224,7 +224,7 @@ function inferNumericKind(values: readonly number[]): NumericKind {
 function inferStringType(values: readonly string[]): StringType {
 	return {
 		kind: "string",
-		literals: [...new Set(values)].sort((a, b) => a.localeCompare(b)),
+		literals: [...new Set(values)].sort(compareNatural),
 	};
 }
 
@@ -242,7 +242,7 @@ function inferObjectType(values: readonly Record<string, unknown>[]): ObjectType
 	}
 
 	const properties = [...propertyValues.entries()]
-		.sort(([a], [b]) => a.localeCompare(b))
+		.sort(([a], [b]) => compareNatural(a, b))
 		.map(([name, observedValues]) => {
 			let type = inferJsonTypes(observedValues);
 			// Float-field hint: if the source JSON ever wrote this field with

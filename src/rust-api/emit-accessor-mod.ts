@@ -1,4 +1,5 @@
 import type { Group } from "../group.ts";
+import { compareNatural } from "../helpers.ts";
 import { pascalCase, snakeCase } from "../naming.ts";
 
 /**
@@ -15,7 +16,7 @@ export function emitAccessorMod(groups: Map<string, Group>): string {
 	const multiEntry = [...groups.values()].filter((g) => g.entries.length > 1);
 
 	const moduleNames = multiEntry.map((g) => snakeCase(g.discriminator));
-	moduleNames.sort();
+	moduleNames.sort(compareNatural);
 
 	const modDecls = moduleNames.map((m) => `pub mod ${m};`).join("\n");
 	const reExports = moduleNames.map((m) => `pub use ${m}::${pascalCase(m)}Accessor;`).join("\n");

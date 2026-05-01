@@ -107,11 +107,11 @@ export interface ItemSettingsData {
 			| "ITEM_EFFECT_FULL_MOTIVATION"
 		>;
 		itemEffectPercent?: Array<number>;
-		mapDurationMs?: "10800000" | "21600000" | "3600000";
+		mapDurationMs?: "3600000" | "10800000" | "21600000";
 		numBuddyAffectionPoints?: number;
 		numBuddyHungerPoints?: number;
 		remoteBerryMultiplier?: number;
-		timeFullDurationMs?: "10800000" | "21600000" | "3600000";
+		timeFullDurationMs?: "3600000" | "10800000" | "21600000";
 	};
 	globalEventTicket?: {
 		backgroundImageUrl?:

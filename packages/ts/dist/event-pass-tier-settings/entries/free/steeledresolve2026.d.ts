@@ -25,6 +25,161 @@ export type EventPassTierSettingsSteeledresolve2026Event1Free = S<
 		}
 	>
 >;
+export type EventPassTierSettingsSteeledresolve2026Event2Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_2_FREE",
+		{
+			minPointsRequired: 100;
+			rank: 2;
+			rewards: [
+				{
+					item: {
+						amount: 10;
+						item: "ITEM_POKE_BALL";
+					};
+					type: "ITEM";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event3Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_3_FREE",
+		{
+			minPointsRequired: 200;
+			rank: 3;
+			rewards: [
+				{
+					item: {
+						amount: 3;
+						item: "ITEM_PINAP_BERRY";
+					};
+					type: "ITEM";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event4Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_4_FREE",
+		{
+			minPointsRequired: 300;
+			rank: 4;
+			rewards: [
+				{
+					candy: {
+						amount: 10;
+						pokemonId: "FERROSEED";
+					};
+					type: "CANDY";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event5Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_5_FREE",
+		{
+			minPointsRequired: 400;
+			rank: 5;
+			rewards: [
+				{
+					pokemonEncounter: {
+						isFeaturedPokemon: true;
+						pokemonDisplay: {
+							form: "FERROSEED_NORMAL";
+						};
+						pokemonId: "FERROSEED";
+					};
+					type: "POKEMON_ENCOUNTER";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event6Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_6_FREE",
+		{
+			minPointsRequired: 500;
+			rank: 6;
+			rewards: [
+				{
+					item: {
+						amount: 10;
+						item: "ITEM_GREAT_BALL";
+					};
+					type: "ITEM";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event7Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_7_FREE",
+		{
+			minPointsRequired: 600;
+			rank: 7;
+			rewards: [
+				{
+					stardust: 2500;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event8Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_8_FREE",
+		{
+			minPointsRequired: 700;
+			rank: 8;
+			rewards: [
+				{
+					candy: {
+						amount: 10;
+						pokemonId: "SHIELDON";
+					};
+					type: "CANDY";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsSteeledresolve2026Event9Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_9_FREE",
+		{
+			minPointsRequired: 800;
+			rank: 9;
+			rewards: [
+				{
+					pokemonEncounter: {
+						isFeaturedPokemon: true;
+						pokemonDisplay: {
+							form: "SHIELDON_NORMAL";
+						};
+						pokemonId: "SHIELDON";
+					};
+					type: "POKEMON_ENCOUNTER";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
 export type EventPassTierSettingsSteeledresolve2026Event10Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_10_FREE",
@@ -55,22 +210,6 @@ export type EventPassTierSettingsSteeledresolve2026Event10Free = S<
 						key: "steeledresolve2026_season_pass_rank_01";
 					};
 					type: "PLAYER_ATTRIBUTE";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsSteeledresolve2026Event100Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_100_FREE",
-		{
-			minPointsRequired: 9900;
-			rank: 100;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
 				},
 			];
 			track: "FREE";
@@ -245,25 +384,6 @@ export type EventPassTierSettingsSteeledresolve2026Event19Free = S<
 						pokemonId: "PAWNIARD";
 					};
 					type: "POKEMON_ENCOUNTER";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsSteeledresolve2026Event2Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_2_FREE",
-		{
-			minPointsRequired: 100;
-			rank: 2;
-			rewards: [
-				{
-					item: {
-						amount: 10;
-						item: "ITEM_POKE_BALL";
-					};
-					type: "ITEM";
 				},
 			];
 			track: "FREE";
@@ -481,25 +601,6 @@ export type EventPassTierSettingsSteeledresolve2026Event29Free = S<
 		}
 	>
 >;
-export type EventPassTierSettingsSteeledresolve2026Event3Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_3_FREE",
-		{
-			minPointsRequired: 200;
-			rank: 3;
-			rewards: [
-				{
-					item: {
-						amount: 3;
-						item: "ITEM_PINAP_BERRY";
-					};
-					type: "ITEM";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
 export type EventPassTierSettingsSteeledresolve2026Event30Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_30_FREE",
@@ -657,25 +758,6 @@ export type EventPassTierSettingsSteeledresolve2026Event39Free = S<
 				{
 					stardust: 50;
 					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsSteeledresolve2026Event4Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_4_FREE",
-		{
-			minPointsRequired: 300;
-			rank: 4;
-			rewards: [
-				{
-					candy: {
-						amount: 10;
-						pokemonId: "FERROSEED";
-					};
-					type: "CANDY";
 				},
 			];
 			track: "FREE";
@@ -842,28 +924,6 @@ export type EventPassTierSettingsSteeledresolve2026Event49Free = S<
 		}
 	>
 >;
-export type EventPassTierSettingsSteeledresolve2026Event5Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_5_FREE",
-		{
-			minPointsRequired: 400;
-			rank: 5;
-			rewards: [
-				{
-					pokemonEncounter: {
-						isFeaturedPokemon: true;
-						pokemonDisplay: {
-							form: "FERROSEED_NORMAL";
-						};
-						pokemonId: "FERROSEED";
-					};
-					type: "POKEMON_ENCOUNTER";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
 export type EventPassTierSettingsSteeledresolve2026Event50Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_50_FREE",
@@ -1024,25 +1084,6 @@ export type EventPassTierSettingsSteeledresolve2026Event59Free = S<
 		}
 	>
 >;
-export type EventPassTierSettingsSteeledresolve2026Event6Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_6_FREE",
-		{
-			minPointsRequired: 500;
-			rank: 6;
-			rewards: [
-				{
-					item: {
-						amount: 10;
-						item: "ITEM_GREAT_BALL";
-					};
-					type: "ITEM";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
 export type EventPassTierSettingsSteeledresolve2026Event60Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_60_FREE",
@@ -1196,22 +1237,6 @@ export type EventPassTierSettingsSteeledresolve2026Event69Free = S<
 			rewards: [
 				{
 					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsSteeledresolve2026Event7Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_7_FREE",
-		{
-			minPointsRequired: 600;
-			rank: 7;
-			rewards: [
-				{
-					stardust: 2500;
 					type: "STARDUST";
 				},
 			];
@@ -1379,25 +1404,6 @@ export type EventPassTierSettingsSteeledresolve2026Event79Free = S<
 		}
 	>
 >;
-export type EventPassTierSettingsSteeledresolve2026Event8Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_8_FREE",
-		{
-			minPointsRequired: 700;
-			rank: 8;
-			rewards: [
-				{
-					candy: {
-						amount: 10;
-						pokemonId: "SHIELDON";
-					};
-					type: "CANDY";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
 export type EventPassTierSettingsSteeledresolve2026Event80Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_80_FREE",
@@ -1552,28 +1558,6 @@ export type EventPassTierSettingsSteeledresolve2026Event89Free = S<
 				{
 					stardust: 50;
 					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsSteeledresolve2026Event9Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_9_FREE",
-		{
-			minPointsRequired: 800;
-			rank: 9;
-			rewards: [
-				{
-					pokemonEncounter: {
-						isFeaturedPokemon: true;
-						pokemonDisplay: {
-							form: "SHIELDON_NORMAL";
-						};
-						pokemonId: "SHIELDON";
-					};
-					type: "POKEMON_ENCOUNTER";
 				},
 			];
 			track: "FREE";
@@ -1740,11 +1724,34 @@ export type EventPassTierSettingsSteeledresolve2026Event99Free = S<
 		}
 	>
 >;
+export type EventPassTierSettingsSteeledresolve2026Event100Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_STEELEDRESOLVE2026_EVENT_100_FREE",
+		{
+			minPointsRequired: 9900;
+			rank: 100;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
 
 export type EventPassTierSettingsFreeSteeledresolve2026MasterfileEntry =
 	| EventPassTierSettingsSteeledresolve2026Event1Free
+	| EventPassTierSettingsSteeledresolve2026Event2Free
+	| EventPassTierSettingsSteeledresolve2026Event3Free
+	| EventPassTierSettingsSteeledresolve2026Event4Free
+	| EventPassTierSettingsSteeledresolve2026Event5Free
+	| EventPassTierSettingsSteeledresolve2026Event6Free
+	| EventPassTierSettingsSteeledresolve2026Event7Free
+	| EventPassTierSettingsSteeledresolve2026Event8Free
+	| EventPassTierSettingsSteeledresolve2026Event9Free
 	| EventPassTierSettingsSteeledresolve2026Event10Free
-	| EventPassTierSettingsSteeledresolve2026Event100Free
 	| EventPassTierSettingsSteeledresolve2026Event11Free
 	| EventPassTierSettingsSteeledresolve2026Event12Free
 	| EventPassTierSettingsSteeledresolve2026Event13Free
@@ -1754,7 +1761,6 @@ export type EventPassTierSettingsFreeSteeledresolve2026MasterfileEntry =
 	| EventPassTierSettingsSteeledresolve2026Event17Free
 	| EventPassTierSettingsSteeledresolve2026Event18Free
 	| EventPassTierSettingsSteeledresolve2026Event19Free
-	| EventPassTierSettingsSteeledresolve2026Event2Free
 	| EventPassTierSettingsSteeledresolve2026Event20Free
 	| EventPassTierSettingsSteeledresolve2026Event21Free
 	| EventPassTierSettingsSteeledresolve2026Event22Free
@@ -1765,7 +1771,6 @@ export type EventPassTierSettingsFreeSteeledresolve2026MasterfileEntry =
 	| EventPassTierSettingsSteeledresolve2026Event27Free
 	| EventPassTierSettingsSteeledresolve2026Event28Free
 	| EventPassTierSettingsSteeledresolve2026Event29Free
-	| EventPassTierSettingsSteeledresolve2026Event3Free
 	| EventPassTierSettingsSteeledresolve2026Event30Free
 	| EventPassTierSettingsSteeledresolve2026Event31Free
 	| EventPassTierSettingsSteeledresolve2026Event32Free
@@ -1776,7 +1781,6 @@ export type EventPassTierSettingsFreeSteeledresolve2026MasterfileEntry =
 	| EventPassTierSettingsSteeledresolve2026Event37Free
 	| EventPassTierSettingsSteeledresolve2026Event38Free
 	| EventPassTierSettingsSteeledresolve2026Event39Free
-	| EventPassTierSettingsSteeledresolve2026Event4Free
 	| EventPassTierSettingsSteeledresolve2026Event40Free
 	| EventPassTierSettingsSteeledresolve2026Event41Free
 	| EventPassTierSettingsSteeledresolve2026Event42Free
@@ -1787,7 +1791,6 @@ export type EventPassTierSettingsFreeSteeledresolve2026MasterfileEntry =
 	| EventPassTierSettingsSteeledresolve2026Event47Free
 	| EventPassTierSettingsSteeledresolve2026Event48Free
 	| EventPassTierSettingsSteeledresolve2026Event49Free
-	| EventPassTierSettingsSteeledresolve2026Event5Free
 	| EventPassTierSettingsSteeledresolve2026Event50Free
 	| EventPassTierSettingsSteeledresolve2026Event51Free
 	| EventPassTierSettingsSteeledresolve2026Event52Free
@@ -1798,7 +1801,6 @@ export type EventPassTierSettingsFreeSteeledresolve2026MasterfileEntry =
 	| EventPassTierSettingsSteeledresolve2026Event57Free
 	| EventPassTierSettingsSteeledresolve2026Event58Free
 	| EventPassTierSettingsSteeledresolve2026Event59Free
-	| EventPassTierSettingsSteeledresolve2026Event6Free
 	| EventPassTierSettingsSteeledresolve2026Event60Free
 	| EventPassTierSettingsSteeledresolve2026Event61Free
 	| EventPassTierSettingsSteeledresolve2026Event62Free
@@ -1809,7 +1811,6 @@ export type EventPassTierSettingsFreeSteeledresolve2026MasterfileEntry =
 	| EventPassTierSettingsSteeledresolve2026Event67Free
 	| EventPassTierSettingsSteeledresolve2026Event68Free
 	| EventPassTierSettingsSteeledresolve2026Event69Free
-	| EventPassTierSettingsSteeledresolve2026Event7Free
 	| EventPassTierSettingsSteeledresolve2026Event70Free
 	| EventPassTierSettingsSteeledresolve2026Event71Free
 	| EventPassTierSettingsSteeledresolve2026Event72Free
@@ -1820,7 +1821,6 @@ export type EventPassTierSettingsFreeSteeledresolve2026MasterfileEntry =
 	| EventPassTierSettingsSteeledresolve2026Event77Free
 	| EventPassTierSettingsSteeledresolve2026Event78Free
 	| EventPassTierSettingsSteeledresolve2026Event79Free
-	| EventPassTierSettingsSteeledresolve2026Event8Free
 	| EventPassTierSettingsSteeledresolve2026Event80Free
 	| EventPassTierSettingsSteeledresolve2026Event81Free
 	| EventPassTierSettingsSteeledresolve2026Event82Free
@@ -1831,7 +1831,6 @@ export type EventPassTierSettingsFreeSteeledresolve2026MasterfileEntry =
 	| EventPassTierSettingsSteeledresolve2026Event87Free
 	| EventPassTierSettingsSteeledresolve2026Event88Free
 	| EventPassTierSettingsSteeledresolve2026Event89Free
-	| EventPassTierSettingsSteeledresolve2026Event9Free
 	| EventPassTierSettingsSteeledresolve2026Event90Free
 	| EventPassTierSettingsSteeledresolve2026Event91Free
 	| EventPassTierSettingsSteeledresolve2026Event92Free
@@ -1841,4 +1840,5 @@ export type EventPassTierSettingsFreeSteeledresolve2026MasterfileEntry =
 	| EventPassTierSettingsSteeledresolve2026Event96Free
 	| EventPassTierSettingsSteeledresolve2026Event97Free
 	| EventPassTierSettingsSteeledresolve2026Event98Free
-	| EventPassTierSettingsSteeledresolve2026Event99Free;
+	| EventPassTierSettingsSteeledresolve2026Event99Free
+	| EventPassTierSettingsSteeledresolve2026Event100Free;

@@ -1,6 +1,6 @@
 import { isDeepStrictEqual } from "node:util";
 import type { Group } from "./group.ts";
-import { isJsonObject } from "./helpers.ts";
+import { compareNatural, isJsonObject } from "./helpers.ts";
 import type { InferredProperty, InferredType } from "./infer.ts";
 import { inferJsonType } from "./infer.ts";
 
@@ -118,7 +118,7 @@ function detectTemplateIdSlice(values: readonly string[], templateIds: readonly 
 
 export function invariantsToInferredType(tree: InvariantTree): InferredType {
 	const properties: InferredProperty[] = [...tree.entries()]
-		.sort(([a], [b]) => a.localeCompare(b))
+		.sort(([a], [b]) => compareNatural(a, b))
 		.map(([name, node]) => {
 			if (node.kind === "constant") {
 				return { name, optional: false, type: inferJsonType(node.value) };

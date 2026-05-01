@@ -13,86 +13,6 @@ export type IapItemDisplayBundleGeneral1Free1 = S<
 		}
 	>
 >;
-export type IapItemDisplaySticker2023collab13 = S<
-	IapItemDisplay<
-		"STICKER_2023COLLAB_1.3",
-		{
-			category: "IAP_CATEGORY_STICKER";
-			sku: "STICKER_2023COLLAB_1.3";
-			sortOrder: 1;
-		}
-	>
->;
-export type IapItemDisplaySticker2023collab15 = S<
-	IapItemDisplay<
-		"STICKER_2023COLLAB_1.5",
-		{
-			category: "IAP_CATEGORY_STICKER";
-			sku: "STICKER_2023COLLAB_1.5";
-			sortOrder: 2;
-		}
-	>
->;
-export type IapItemDisplaySticker2023collab23 = S<
-	IapItemDisplay<
-		"STICKER_2023COLLAB_2.3",
-		{
-			category: "IAP_CATEGORY_STICKER";
-			sku: "STICKER_2023COLLAB_2.3";
-			sortOrder: 3;
-		}
-	>
->;
-export type IapItemDisplaySticker2023collab25 = S<
-	IapItemDisplay<
-		"STICKER_2023COLLAB_2.5",
-		{
-			category: "IAP_CATEGORY_STICKER";
-			sku: "STICKER_2023COLLAB_2.5";
-			sortOrder: 4;
-		}
-	>
->;
-export type IapItemDisplaySticker2023collab33 = S<
-	IapItemDisplay<
-		"STICKER_2023COLLAB_3.3",
-		{
-			category: "IAP_CATEGORY_STICKER";
-			sku: "STICKER_2023COLLAB_3.3";
-			sortOrder: 5;
-		}
-	>
->;
-export type IapItemDisplaySticker2023collab35 = S<
-	IapItemDisplay<
-		"STICKER_2023COLLAB_3.5",
-		{
-			category: "IAP_CATEGORY_STICKER";
-			sku: "STICKER_2023COLLAB_3.5";
-			sortOrder: 6;
-		}
-	>
->;
-export type IapItemDisplaySticker2023collab43 = S<
-	IapItemDisplay<
-		"STICKER_2023COLLAB_4.3",
-		{
-			category: "IAP_CATEGORY_STICKER";
-			sku: "STICKER_2023COLLAB_4.3";
-			sortOrder: 7;
-		}
-	>
->;
-export type IapItemDisplaySticker2023collab45 = S<
-	IapItemDisplay<
-		"STICKER_2023COLLAB_4.5",
-		{
-			category: "IAP_CATEGORY_STICKER";
-			sku: "STICKER_2023COLLAB_4.5";
-			sortOrder: 8;
-		}
-	>
->;
 export type IapItemDisplaySticker8anniv13 = S<
 	IapItemDisplay<
 		"STICKER_8ANNIV_1.3",
@@ -230,6 +150,86 @@ export type IapItemDisplaySticker9anniv35 = S<
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_9ANNIV_3.5";
 			sortOrder: 9;
+		}
+	>
+>;
+export type IapItemDisplaySticker2023collab13 = S<
+	IapItemDisplay<
+		"STICKER_2023COLLAB_1.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_2023COLLAB_1.3";
+			sortOrder: 1;
+		}
+	>
+>;
+export type IapItemDisplaySticker2023collab15 = S<
+	IapItemDisplay<
+		"STICKER_2023COLLAB_1.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_2023COLLAB_1.5";
+			sortOrder: 2;
+		}
+	>
+>;
+export type IapItemDisplaySticker2023collab23 = S<
+	IapItemDisplay<
+		"STICKER_2023COLLAB_2.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_2023COLLAB_2.3";
+			sortOrder: 3;
+		}
+	>
+>;
+export type IapItemDisplaySticker2023collab25 = S<
+	IapItemDisplay<
+		"STICKER_2023COLLAB_2.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_2023COLLAB_2.5";
+			sortOrder: 4;
+		}
+	>
+>;
+export type IapItemDisplaySticker2023collab33 = S<
+	IapItemDisplay<
+		"STICKER_2023COLLAB_3.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_2023COLLAB_3.3";
+			sortOrder: 5;
+		}
+	>
+>;
+export type IapItemDisplaySticker2023collab35 = S<
+	IapItemDisplay<
+		"STICKER_2023COLLAB_3.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_2023COLLAB_3.5";
+			sortOrder: 6;
+		}
+	>
+>;
+export type IapItemDisplaySticker2023collab43 = S<
+	IapItemDisplay<
+		"STICKER_2023COLLAB_4.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_2023COLLAB_4.3";
+			sortOrder: 7;
+		}
+	>
+>;
+export type IapItemDisplaySticker2023collab45 = S<
+	IapItemDisplay<
+		"STICKER_2023COLLAB_4.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_2023COLLAB_4.5";
+			sortOrder: 8;
 		}
 	>
 >;
@@ -1073,46 +1073,6 @@ export type IapItemDisplayStickerHalloweenSqu5 = S<
 		}
 	>
 >;
-export type IapItemDisplayStickerHalloween2025Noibat3 = S<
-	IapItemDisplay<
-		"STICKER_HALLOWEEN2025_NOIBAT.3",
-		{
-			category: "IAP_CATEGORY_STICKER";
-			sku: "STICKER_HALLOWEEN2025_NOIBAT.3";
-			sortOrder: 5;
-		}
-	>
->;
-export type IapItemDisplayStickerHalloween2025Noibat5 = S<
-	IapItemDisplay<
-		"STICKER_HALLOWEEN2025_NOIBAT.5",
-		{
-			category: "IAP_CATEGORY_STICKER";
-			sku: "STICKER_HALLOWEEN2025_NOIBAT.5";
-			sortOrder: 4;
-		}
-	>
->;
-export type IapItemDisplayStickerHalloween2025Teddiursa3 = S<
-	IapItemDisplay<
-		"STICKER_HALLOWEEN2025_TEDDIURSA.3",
-		{
-			category: "IAP_CATEGORY_STICKER";
-			sku: "STICKER_HALLOWEEN2025_TEDDIURSA.3";
-			sortOrder: 3;
-		}
-	>
->;
-export type IapItemDisplayStickerHalloween2025Teddiursa5 = S<
-	IapItemDisplay<
-		"STICKER_HALLOWEEN2025_TEDDIURSA.5",
-		{
-			category: "IAP_CATEGORY_STICKER";
-			sku: "STICKER_HALLOWEEN2025_TEDDIURSA.5";
-			sortOrder: 2;
-		}
-	>
->;
 export type IapItemDisplayStickerHalloween21Fuwaraid3 = S<
 	IapItemDisplay<
 		"STICKER_HALLOWEEN21_FUWARAID.3",
@@ -1230,6 +1190,46 @@ export type IapItemDisplayStickerHalloween24Rowlet5 = S<
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_HALLOWEEN24_ROWLET.5";
 			sortOrder: 8;
+		}
+	>
+>;
+export type IapItemDisplayStickerHalloween2025Noibat3 = S<
+	IapItemDisplay<
+		"STICKER_HALLOWEEN2025_NOIBAT.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_HALLOWEEN2025_NOIBAT.3";
+			sortOrder: 5;
+		}
+	>
+>;
+export type IapItemDisplayStickerHalloween2025Noibat5 = S<
+	IapItemDisplay<
+		"STICKER_HALLOWEEN2025_NOIBAT.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_HALLOWEEN2025_NOIBAT.5";
+			sortOrder: 4;
+		}
+	>
+>;
+export type IapItemDisplayStickerHalloween2025Teddiursa3 = S<
+	IapItemDisplay<
+		"STICKER_HALLOWEEN2025_TEDDIURSA.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_HALLOWEEN2025_TEDDIURSA.3";
+			sortOrder: 3;
+		}
+	>
+>;
+export type IapItemDisplayStickerHalloween2025Teddiursa5 = S<
+	IapItemDisplay<
+		"STICKER_HALLOWEEN2025_TEDDIURSA.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_HALLOWEEN2025_TEDDIURSA.5";
+			sortOrder: 2;
 		}
 	>
 >;
@@ -3456,14 +3456,6 @@ export type IapItemDisplayStickerWinter202545 = S<
 
 export type IapItemDisplayCategorySortOrderMasterfileEntry =
 	| IapItemDisplayBundleGeneral1Free1
-	| IapItemDisplaySticker2023collab13
-	| IapItemDisplaySticker2023collab15
-	| IapItemDisplaySticker2023collab23
-	| IapItemDisplaySticker2023collab25
-	| IapItemDisplaySticker2023collab33
-	| IapItemDisplaySticker2023collab35
-	| IapItemDisplaySticker2023collab43
-	| IapItemDisplaySticker2023collab45
 	| IapItemDisplaySticker8anniv13
 	| IapItemDisplaySticker8anniv15
 	| IapItemDisplaySticker8anniv23
@@ -3478,6 +3470,14 @@ export type IapItemDisplayCategorySortOrderMasterfileEntry =
 	| IapItemDisplaySticker9anniv25
 	| IapItemDisplaySticker9anniv33
 	| IapItemDisplaySticker9anniv35
+	| IapItemDisplaySticker2023collab13
+	| IapItemDisplaySticker2023collab15
+	| IapItemDisplaySticker2023collab23
+	| IapItemDisplaySticker2023collab25
+	| IapItemDisplaySticker2023collab33
+	| IapItemDisplaySticker2023collab35
+	| IapItemDisplaySticker2023collab43
+	| IapItemDisplaySticker2023collab45
 	| IapItemDisplayStickerBellsproutcd13
 	| IapItemDisplayStickerBellsproutcd15
 	| IapItemDisplayStickerBellsproutcd23
@@ -3562,10 +3562,6 @@ export type IapItemDisplayCategorySortOrderMasterfileEntry =
 	| IapItemDisplayStickerHalloweenPika5
 	| IapItemDisplayStickerHalloweenSqu3
 	| IapItemDisplayStickerHalloweenSqu5
-	| IapItemDisplayStickerHalloween2025Noibat3
-	| IapItemDisplayStickerHalloween2025Noibat5
-	| IapItemDisplayStickerHalloween2025Teddiursa3
-	| IapItemDisplayStickerHalloween2025Teddiursa5
 	| IapItemDisplayStickerHalloween21Fuwaraid3
 	| IapItemDisplayStickerHalloween21Fuwaraid5
 	| IapItemDisplayStickerHalloween21Ghostpika3
@@ -3578,6 +3574,10 @@ export type IapItemDisplayCategorySortOrderMasterfileEntry =
 	| IapItemDisplayStickerHalloween24Froakie5
 	| IapItemDisplayStickerHalloween24Rowlet3
 	| IapItemDisplayStickerHalloween24Rowlet5
+	| IapItemDisplayStickerHalloween2025Noibat3
+	| IapItemDisplayStickerHalloween2025Noibat5
+	| IapItemDisplayStickerHalloween2025Teddiursa3
+	| IapItemDisplayStickerHalloween2025Teddiursa5
 	| IapItemDisplayStickerHoppip13
 	| IapItemDisplayStickerHoppip15
 	| IapItemDisplayStickerHoppip23

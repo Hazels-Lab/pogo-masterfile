@@ -2,6 +2,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import type { Group } from "../group.ts";
 import { isStubGroup } from "../group.ts";
+import { compareNatural } from "../helpers.ts";
 import type { InferredProperty, InferredType, ObjectType } from "../infer.ts";
 import { widenedPayloadObject } from "../infer.ts";
 import { deriveTemplateIdVariants, pascalCase, snakeCase } from "../naming.ts";
@@ -81,7 +82,7 @@ function mergeObjectTypes(types: readonly ObjectType[]): ObjectType {
 		const optional = info.anyOptional || info.presentIn < types.length;
 		properties.push({ name, type: mergeTypes(info.occurrences), optional });
 	}
-	properties.sort((a, b) => a.name.localeCompare(b.name));
+	properties.sort((a, b) => compareNatural(a.name, b.name));
 	return { kind: "object", properties };
 }
 
@@ -468,7 +469,7 @@ export function emitGroupTypesFile(group: Group): string {
 // header comment label, the enum's name, and the id source.
 function emitRustTemplateIdsEnum(name: string, ids: readonly string[], headerLabel: string): string {
 	const variants = deriveTemplateIdVariants(ids);
-	const sortedIds = [...ids].sort();
+	const sortedIds = [...ids].sort(compareNatural);
 	const variantBlock = sortedIds.map((id) => `    #[serde(rename = ${JSON.stringify(id)})]\n    ${variants.get(id)!},`).join("\n");
 
 	return `//! Generated from Pokémon GO masterfile — ${headerLabel}.
@@ -515,7 +516,7 @@ pub use types::*;
 // struct since their `data` has only `templateId`. The file-level header
 // moved to mod.rs.
 export function emitSingletonsTypesFile(singletons: readonly Group[]): string {
-	const sorted = [...singletons].sort((a, b) => pascalCase(a.discriminator).localeCompare(pascalCase(b.discriminator)));
+	const sorted = [...singletons].sort((a, b) => compareNatural(pascalCase(a.discriminator), pascalCase(b.discriminator)));
 	const pool = newPool();
 	const wrappers: string[] = [];
 
@@ -608,14 +609,14 @@ export interface EntryVariant {
 }
 
 export function emitLibFile(moduleNames: readonly string[], variants: readonly EntryVariant[]): string {
-	const sortedModules = [...moduleNames].sort();
+	const sortedModules = [...moduleNames].sort(compareNatural);
 
 	// Sort variants by entry count descending (most frequent first), tiebreak
 	// alphabetically. The custom Deserialize impl dispatches by exact match
 	// on the discriminator key, so order doesn't affect correctness — but we
 	// keep the *enum declaration* in this order so that source readers and
 	// pattern-match exhaustiveness diagnostics surface common cases first.
-	const sortedVariants = [...variants].sort((a, b) => b.entryCount - a.entryCount || a.variantName.localeCompare(b.variantName));
+	const sortedVariants = [...variants].sort((a, b) => b.entryCount - a.entryCount || compareNatural(a.variantName, b.variantName));
 
 	// Disambiguate any rare pascalCase collisions (e.g., a camelCase discriminator
 	// and a SCREAMING_SNAKE stub template-id that PascalCase to the same name).

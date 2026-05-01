@@ -313,6 +313,142 @@ pub enum BadgeSettingsTemplateId {
     BadgeEvolvedTotal,
     #[serde(rename = "BADGE_GLOBAL_TICKETED_EVENT")]
     BadgeGlobalTicketedEvent,
+    #[serde(rename = "BADGE_GO_TOUR_2025_GLOBAL_BLACK_VERSION")]
+    BadgeGoTour2025GlobalBlackVersion,
+    #[serde(rename = "BADGE_GO_TOUR_2025_GLOBAL_WHITE_VERSION")]
+    BadgeGoTour2025GlobalWhiteVersion,
+    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_HATCH")]
+    BadgeGoTour2025LosAngelesAddOnHatch,
+    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_HATCH_TEST")]
+    BadgeGoTour2025LosAngelesAddOnHatchTest,
+    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_RAID")]
+    BadgeGoTour2025LosAngelesAddOnRaid,
+    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_RAID_TEST")]
+    BadgeGoTour2025LosAngelesAddOnRaidTest,
+    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_FRIDAY_CITY")]
+    BadgeGoTour2025LosAngelesFridayCity,
+    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_FRIDAY_PARK")]
+    BadgeGoTour2025LosAngelesFridayPark,
+    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_SATURDAY_CITY")]
+    BadgeGoTour2025LosAngelesSaturdayCity,
+    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_SATURDAY_PARK")]
+    BadgeGoTour2025LosAngelesSaturdayPark,
+    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_SUNDAY_CITY")]
+    BadgeGoTour2025LosAngelesSundayCity,
+    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_SUNDAY_PARK")]
+    BadgeGoTour2025LosAngelesSundayPark,
+    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_TEST_CITY")]
+    BadgeGoTour2025LosAngelesTestCity,
+    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_TEST_PARK")]
+    BadgeGoTour2025LosAngelesTestPark,
+    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_VIP")]
+    BadgeGoTour2025LosAngelesVip,
+    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_HATCH")]
+    BadgeGoTour2025NewTaipeiCityAddOnHatch,
+    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_HATCH_TEST")]
+    BadgeGoTour2025NewTaipeiCityAddOnHatchTest,
+    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_RAID")]
+    BadgeGoTour2025NewTaipeiCityAddOnRaid,
+    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_RAID_TEST")]
+    BadgeGoTour2025NewTaipeiCityAddOnRaidTest,
+    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_FRIDAY_CITY")]
+    BadgeGoTour2025NewTaipeiCityFridayCity,
+    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_FRIDAY_PARK")]
+    BadgeGoTour2025NewTaipeiCityFridayPark,
+    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SATURDAY_CITY")]
+    BadgeGoTour2025NewTaipeiCitySaturdayCity,
+    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SATURDAY_PARK")]
+    BadgeGoTour2025NewTaipeiCitySaturdayPark,
+    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SUNDAY_CITY")]
+    BadgeGoTour2025NewTaipeiCitySundayCity,
+    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SUNDAY_PARK")]
+    BadgeGoTour2025NewTaipeiCitySundayPark,
+    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_TEST_CITY")]
+    BadgeGoTour2025NewTaipeiCityTestCity,
+    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_TEST_PARK")]
+    BadgeGoTour2025NewTaipeiCityTestPark,
+    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_VIP")]
+    BadgeGoTour2025NewTaipeiCityVip,
+    #[serde(rename = "BADGE_GO_TOUR_2026_DELUXE_PASS")]
+    BadgeGoTour2026DeluxePass,
+    #[serde(rename = "BADGE_GO_TOUR_2026_GLOBAL")]
+    BadgeGoTour2026Global,
+    #[serde(rename = "BADGE_GO_TOUR_2026_GLOBAL_SECRET_01")]
+    BadgeGoTour2026GlobalSecret01,
+    #[serde(rename = "BADGE_GO_TOUR_2026_GLOBAL_TEST")]
+    BadgeGoTour2026GlobalTest,
+    #[serde(rename = "BADGE_GO_TOUR_2026_GLOBAL_X_VERSION")]
+    BadgeGoTour2026GlobalXVersion,
+    #[serde(rename = "BADGE_GO_TOUR_2026_GLOBAL_Y_VERSION")]
+    BadgeGoTour2026GlobalYVersion,
+    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_HATCH")]
+    BadgeGoTour2026LosAngelesAddOnHatch,
+    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_HATCH_TEST")]
+    BadgeGoTour2026LosAngelesAddOnHatchTest,
+    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_RAID")]
+    BadgeGoTour2026LosAngelesAddOnRaid,
+    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_RAID_TEST")]
+    BadgeGoTour2026LosAngelesAddOnRaidTest,
+    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_CITY")]
+    BadgeGoTour2026LosAngelesFridayCity,
+    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_MEGA_NIGHT")]
+    BadgeGoTour2026LosAngelesFridayMegaNight,
+    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_PARK")]
+    BadgeGoTour2026LosAngelesFridayPark,
+    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_MEGA_NIGHT_TEST")]
+    BadgeGoTour2026LosAngelesMegaNightTest,
+    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_CITY")]
+    BadgeGoTour2026LosAngelesSaturdayCity,
+    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_MEGA_NIGHT")]
+    BadgeGoTour2026LosAngelesSaturdayMegaNight,
+    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_PARK")]
+    BadgeGoTour2026LosAngelesSaturdayPark,
+    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_CITY")]
+    BadgeGoTour2026LosAngelesSundayCity,
+    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_MEGA_NIGHT")]
+    BadgeGoTour2026LosAngelesSundayMegaNight,
+    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_PARK")]
+    BadgeGoTour2026LosAngelesSundayPark,
+    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_TEST_CITY")]
+    BadgeGoTour2026LosAngelesTestCity,
+    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_TEST_PARK")]
+    BadgeGoTour2026LosAngelesTestPark,
+    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_VIP")]
+    BadgeGoTour2026LosAngelesVip,
+    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_HATCH")]
+    BadgeGoTour2026TainanAddOnHatch,
+    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_HATCH_TEST")]
+    BadgeGoTour2026TainanAddOnHatchTest,
+    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_RAID")]
+    BadgeGoTour2026TainanAddOnRaid,
+    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_RAID_TEST")]
+    BadgeGoTour2026TainanAddOnRaidTest,
+    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_FRIDAY_CITY")]
+    BadgeGoTour2026TainanFridayCity,
+    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_FRIDAY_MEGA_NIGHT")]
+    BadgeGoTour2026TainanFridayMegaNight,
+    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_FRIDAY_PARK")]
+    BadgeGoTour2026TainanFridayPark,
+    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_MEGA_NIGHT_TEST")]
+    BadgeGoTour2026TainanMegaNightTest,
+    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_SATURDAY_CITY")]
+    BadgeGoTour2026TainanSaturdayCity,
+    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_SATURDAY_MEGA_NIGHT")]
+    BadgeGoTour2026TainanSaturdayMegaNight,
+    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_SATURDAY_PARK")]
+    BadgeGoTour2026TainanSaturdayPark,
+    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_SUNDAY_CITY")]
+    BadgeGoTour2026TainanSundayCity,
+    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_SUNDAY_MEGA_NIGHT")]
+    BadgeGoTour2026TainanSundayMegaNight,
+    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_SUNDAY_PARK")]
+    BadgeGoTour2026TainanSundayPark,
+    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_TEST_CITY")]
+    BadgeGoTour2026TainanTestCity,
+    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_TEST_PARK")]
+    BadgeGoTour2026TainanTestPark,
+    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_VIP")]
+    BadgeGoTour2026TainanVip,
     #[serde(rename = "BADGE_GOFEST_2019_AMERICAS_DAY_00_NORTH_EARLYACCESS")]
     BadgeGofest2019AmericasDay00NorthEarlyaccess,
     #[serde(rename = "BADGE_GOFEST_2019_AMERICAS_DAY_00_NORTH_GENERAL")]
@@ -1055,142 +1191,6 @@ pub enum BadgeSettingsTemplateId {
     BadgeGowa2025SpecialResearchA,
     #[serde(rename = "BADGE_GOWA_2025_SPECIAL_RESEARCH_B")]
     BadgeGowa2025SpecialResearchB,
-    #[serde(rename = "BADGE_GO_TOUR_2025_GLOBAL_BLACK_VERSION")]
-    BadgeGoTour2025GlobalBlackVersion,
-    #[serde(rename = "BADGE_GO_TOUR_2025_GLOBAL_WHITE_VERSION")]
-    BadgeGoTour2025GlobalWhiteVersion,
-    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_HATCH")]
-    BadgeGoTour2025LosAngelesAddOnHatch,
-    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_HATCH_TEST")]
-    BadgeGoTour2025LosAngelesAddOnHatchTest,
-    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_RAID")]
-    BadgeGoTour2025LosAngelesAddOnRaid,
-    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_RAID_TEST")]
-    BadgeGoTour2025LosAngelesAddOnRaidTest,
-    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_FRIDAY_CITY")]
-    BadgeGoTour2025LosAngelesFridayCity,
-    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_FRIDAY_PARK")]
-    BadgeGoTour2025LosAngelesFridayPark,
-    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_SATURDAY_CITY")]
-    BadgeGoTour2025LosAngelesSaturdayCity,
-    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_SATURDAY_PARK")]
-    BadgeGoTour2025LosAngelesSaturdayPark,
-    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_SUNDAY_CITY")]
-    BadgeGoTour2025LosAngelesSundayCity,
-    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_SUNDAY_PARK")]
-    BadgeGoTour2025LosAngelesSundayPark,
-    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_TEST_CITY")]
-    BadgeGoTour2025LosAngelesTestCity,
-    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_TEST_PARK")]
-    BadgeGoTour2025LosAngelesTestPark,
-    #[serde(rename = "BADGE_GO_TOUR_2025_LOS_ANGELES_VIP")]
-    BadgeGoTour2025LosAngelesVip,
-    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_HATCH")]
-    BadgeGoTour2025NewTaipeiCityAddOnHatch,
-    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_HATCH_TEST")]
-    BadgeGoTour2025NewTaipeiCityAddOnHatchTest,
-    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_RAID")]
-    BadgeGoTour2025NewTaipeiCityAddOnRaid,
-    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_RAID_TEST")]
-    BadgeGoTour2025NewTaipeiCityAddOnRaidTest,
-    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_FRIDAY_CITY")]
-    BadgeGoTour2025NewTaipeiCityFridayCity,
-    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_FRIDAY_PARK")]
-    BadgeGoTour2025NewTaipeiCityFridayPark,
-    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SATURDAY_CITY")]
-    BadgeGoTour2025NewTaipeiCitySaturdayCity,
-    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SATURDAY_PARK")]
-    BadgeGoTour2025NewTaipeiCitySaturdayPark,
-    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SUNDAY_CITY")]
-    BadgeGoTour2025NewTaipeiCitySundayCity,
-    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SUNDAY_PARK")]
-    BadgeGoTour2025NewTaipeiCitySundayPark,
-    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_TEST_CITY")]
-    BadgeGoTour2025NewTaipeiCityTestCity,
-    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_TEST_PARK")]
-    BadgeGoTour2025NewTaipeiCityTestPark,
-    #[serde(rename = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_VIP")]
-    BadgeGoTour2025NewTaipeiCityVip,
-    #[serde(rename = "BADGE_GO_TOUR_2026_DELUXE_PASS")]
-    BadgeGoTour2026DeluxePass,
-    #[serde(rename = "BADGE_GO_TOUR_2026_GLOBAL")]
-    BadgeGoTour2026Global,
-    #[serde(rename = "BADGE_GO_TOUR_2026_GLOBAL_SECRET_01")]
-    BadgeGoTour2026GlobalSecret01,
-    #[serde(rename = "BADGE_GO_TOUR_2026_GLOBAL_TEST")]
-    BadgeGoTour2026GlobalTest,
-    #[serde(rename = "BADGE_GO_TOUR_2026_GLOBAL_X_VERSION")]
-    BadgeGoTour2026GlobalXVersion,
-    #[serde(rename = "BADGE_GO_TOUR_2026_GLOBAL_Y_VERSION")]
-    BadgeGoTour2026GlobalYVersion,
-    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_HATCH")]
-    BadgeGoTour2026LosAngelesAddOnHatch,
-    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_HATCH_TEST")]
-    BadgeGoTour2026LosAngelesAddOnHatchTest,
-    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_RAID")]
-    BadgeGoTour2026LosAngelesAddOnRaid,
-    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_RAID_TEST")]
-    BadgeGoTour2026LosAngelesAddOnRaidTest,
-    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_CITY")]
-    BadgeGoTour2026LosAngelesFridayCity,
-    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_MEGA_NIGHT")]
-    BadgeGoTour2026LosAngelesFridayMegaNight,
-    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_PARK")]
-    BadgeGoTour2026LosAngelesFridayPark,
-    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_MEGA_NIGHT_TEST")]
-    BadgeGoTour2026LosAngelesMegaNightTest,
-    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_CITY")]
-    BadgeGoTour2026LosAngelesSaturdayCity,
-    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_MEGA_NIGHT")]
-    BadgeGoTour2026LosAngelesSaturdayMegaNight,
-    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_PARK")]
-    BadgeGoTour2026LosAngelesSaturdayPark,
-    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_CITY")]
-    BadgeGoTour2026LosAngelesSundayCity,
-    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_MEGA_NIGHT")]
-    BadgeGoTour2026LosAngelesSundayMegaNight,
-    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_PARK")]
-    BadgeGoTour2026LosAngelesSundayPark,
-    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_TEST_CITY")]
-    BadgeGoTour2026LosAngelesTestCity,
-    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_TEST_PARK")]
-    BadgeGoTour2026LosAngelesTestPark,
-    #[serde(rename = "BADGE_GO_TOUR_2026_LOS_ANGELES_VIP")]
-    BadgeGoTour2026LosAngelesVip,
-    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_HATCH")]
-    BadgeGoTour2026TainanAddOnHatch,
-    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_HATCH_TEST")]
-    BadgeGoTour2026TainanAddOnHatchTest,
-    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_RAID")]
-    BadgeGoTour2026TainanAddOnRaid,
-    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_RAID_TEST")]
-    BadgeGoTour2026TainanAddOnRaidTest,
-    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_FRIDAY_CITY")]
-    BadgeGoTour2026TainanFridayCity,
-    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_FRIDAY_MEGA_NIGHT")]
-    BadgeGoTour2026TainanFridayMegaNight,
-    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_FRIDAY_PARK")]
-    BadgeGoTour2026TainanFridayPark,
-    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_MEGA_NIGHT_TEST")]
-    BadgeGoTour2026TainanMegaNightTest,
-    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_SATURDAY_CITY")]
-    BadgeGoTour2026TainanSaturdayCity,
-    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_SATURDAY_MEGA_NIGHT")]
-    BadgeGoTour2026TainanSaturdayMegaNight,
-    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_SATURDAY_PARK")]
-    BadgeGoTour2026TainanSaturdayPark,
-    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_SUNDAY_CITY")]
-    BadgeGoTour2026TainanSundayCity,
-    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_SUNDAY_MEGA_NIGHT")]
-    BadgeGoTour2026TainanSundayMegaNight,
-    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_SUNDAY_PARK")]
-    BadgeGoTour2026TainanSundayPark,
-    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_TEST_CITY")]
-    BadgeGoTour2026TainanTestCity,
-    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_TEST_PARK")]
-    BadgeGoTour2026TainanTestPark,
-    #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_VIP")]
-    BadgeGoTour2026TainanVip,
     #[serde(rename = "BADGE_GREAT_LEAGUE")]
     BadgeGreatLeague,
     #[serde(rename = "BADGE_HATCHED_TOTAL")]
@@ -1251,128 +1251,16 @@ pub enum BadgeSettingsTemplateId {
     BadgeQuestDialogueInboxControl,
     #[serde(rename = "BADGE_QUEST_DIALOGUE_INBOX_ROLLOUT")]
     BadgeQuestDialogueInboxRollout,
-    #[serde(rename = "BADGE_RAIDS_WITH_FRIENDS")]
-    BadgeRaidsWithFriends,
     #[serde(rename = "BADGE_RAID_BATTLE_STAT")]
     BadgeRaidBattleStat,
     #[serde(rename = "BADGE_RAID_BATTLE_WON")]
     BadgeRaidBattleWon,
+    #[serde(rename = "BADGE_RAIDS_WITH_FRIENDS")]
+    BadgeRaidsWithFriends,
     #[serde(rename = "BADGE_ROCKET_GIOVANNI_DEFEATED")]
     BadgeRocketGiovanniDefeated,
     #[serde(rename = "BADGE_ROCKET_GRUNTS_DEFEATED")]
     BadgeRocketGruntsDefeated,
-    #[serde(rename = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_00_EARLYACCESS")]
-    BadgeSafarizone2019MontrealDay00Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_00_GENERAL")]
-    BadgeSafarizone2019MontrealDay00General,
-    #[serde(rename = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_01_EARLYACCESS")]
-    BadgeSafarizone2019MontrealDay01Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_01_GENERAL")]
-    BadgeSafarizone2019MontrealDay01General,
-    #[serde(rename = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_02_EARLYACCESS")]
-    BadgeSafarizone2019MontrealDay02Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_02_GENERAL")]
-    BadgeSafarizone2019MontrealDay02General,
-    #[serde(rename = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_03_EARLYACCESS")]
-    BadgeSafarizone2019MontrealDay03Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_03_GENERAL")]
-    BadgeSafarizone2019MontrealDay03General,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_00_EARLYACCESS")]
-    BadgeSafarizone2020LiverpoolDay00Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_00_GENERAL")]
-    BadgeSafarizone2020LiverpoolDay00General,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_01_EARLYACCESS")]
-    BadgeSafarizone2020LiverpoolDay01Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_01_GENERAL")]
-    BadgeSafarizone2020LiverpoolDay01General,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_02_EARLYACCESS")]
-    BadgeSafarizone2020LiverpoolDay02Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_02_GENERAL")]
-    BadgeSafarizone2020LiverpoolDay02General,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_03_EARLYACCESS")]
-    BadgeSafarizone2020LiverpoolDay03Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_03_GENERAL")]
-    BadgeSafarizone2020LiverpoolDay03General,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_00_EARLYACCESS")]
-    BadgeSafarizone2020PhiladelphiaDay00Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_00_GENERAL")]
-    BadgeSafarizone2020PhiladelphiaDay00General,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_01_EARLYACCESS")]
-    BadgeSafarizone2020PhiladelphiaDay01Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_01_GENERAL")]
-    BadgeSafarizone2020PhiladelphiaDay01General,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_02_EARLYACCESS")]
-    BadgeSafarizone2020PhiladelphiaDay02Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_02_GENERAL")]
-    BadgeSafarizone2020PhiladelphiaDay02General,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_03_EARLYACCESS")]
-    BadgeSafarizone2020PhiladelphiaDay03Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_03_GENERAL")]
-    BadgeSafarizone2020PhiladelphiaDay03General,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_00_EARLYACCESS")]
-    BadgeSafarizone2020StlouisDay00Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_00_GENERAL")]
-    BadgeSafarizone2020StlouisDay00General,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_01_EARLYACCESS")]
-    BadgeSafarizone2020StlouisDay01Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_01_GENERAL")]
-    BadgeSafarizone2020StlouisDay01General,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_02_EARLYACCESS")]
-    BadgeSafarizone2020StlouisDay02Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_02_GENERAL")]
-    BadgeSafarizone2020StlouisDay02General,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_03_EARLYACCESS")]
-    BadgeSafarizone2020StlouisDay03Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_03_GENERAL")]
-    BadgeSafarizone2020StlouisDay03General,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_00_EARLYACCESS")]
-    BadgeSafarizone2022SevilleDay00Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_00_GENERAL")]
-    BadgeSafarizone2022SevilleDay00General,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_01_EARLYACCESS")]
-    BadgeSafarizone2022SevilleDay01Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_01_GENERAL")]
-    BadgeSafarizone2022SevilleDay01General,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_02_EARLYACCESS")]
-    BadgeSafarizone2022SevilleDay02Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_02_GENERAL")]
-    BadgeSafarizone2022SevilleDay02General,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_03_EARLYACCESS")]
-    BadgeSafarizone2022SevilleDay03Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_03_GENERAL")]
-    BadgeSafarizone2022SevilleDay03General,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_00_EARLYACCESS_TEST")]
-    BadgeSafarizone2022SingaporeDay00EarlyaccessTest,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_00_GENERAL_TEST")]
-    BadgeSafarizone2022SingaporeDay00GeneralTest,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_01_EARLYACCESS_TEST")]
-    BadgeSafarizone2022SingaporeDay01EarlyaccessTest,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_01_GENERAL_TEST")]
-    BadgeSafarizone2022SingaporeDay01GeneralTest,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_02_EARLYACCESS_TEST")]
-    BadgeSafarizone2022SingaporeDay02EarlyaccessTest,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_02_GENERAL_TEST")]
-    BadgeSafarizone2022SingaporeDay02GeneralTest,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_03_EARLYACCESS_TEST")]
-    BadgeSafarizone2022SingaporeDay03EarlyaccessTest,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_03_GENERAL_TEST")]
-    BadgeSafarizone2022SingaporeDay03GeneralTest,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_00_EARLYACCESS")]
-    BadgeSafarizone2022TaipeiDay00Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_00_GENERAL")]
-    BadgeSafarizone2022TaipeiDay00General,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_01_EARLYACCESS")]
-    BadgeSafarizone2022TaipeiDay01Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_01_GENERAL")]
-    BadgeSafarizone2022TaipeiDay01General,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_02_EARLYACCESS")]
-    BadgeSafarizone2022TaipeiDay02Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_02_GENERAL")]
-    BadgeSafarizone2022TaipeiDay02General,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_03_EARLYACCESS")]
-    BadgeSafarizone2022TaipeiDay03Earlyaccess,
-    #[serde(rename = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_03_GENERAL")]
-    BadgeSafarizone2022TaipeiDay03General,
     #[serde(rename = "BADGE_SAFARI_2023_BARCELONA_ADD_ON_HATCH")]
     BadgeSafari2023BarcelonaAddOnHatch,
     #[serde(rename = "BADGE_SAFARI_2023_BARCELONA_ADD_ON_RAID")]
@@ -1649,6 +1537,118 @@ pub enum BadgeSettingsTemplateId {
     BadgeSafariZoneEurope20171007,
     #[serde(rename = "BADGE_SAFARI_ZONE_EUROPE_2017_10_14")]
     BadgeSafariZoneEurope20171014,
+    #[serde(rename = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_00_EARLYACCESS")]
+    BadgeSafarizone2019MontrealDay00Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_00_GENERAL")]
+    BadgeSafarizone2019MontrealDay00General,
+    #[serde(rename = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_01_EARLYACCESS")]
+    BadgeSafarizone2019MontrealDay01Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_01_GENERAL")]
+    BadgeSafarizone2019MontrealDay01General,
+    #[serde(rename = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_02_EARLYACCESS")]
+    BadgeSafarizone2019MontrealDay02Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_02_GENERAL")]
+    BadgeSafarizone2019MontrealDay02General,
+    #[serde(rename = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_03_EARLYACCESS")]
+    BadgeSafarizone2019MontrealDay03Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_03_GENERAL")]
+    BadgeSafarizone2019MontrealDay03General,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_00_EARLYACCESS")]
+    BadgeSafarizone2020LiverpoolDay00Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_00_GENERAL")]
+    BadgeSafarizone2020LiverpoolDay00General,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_01_EARLYACCESS")]
+    BadgeSafarizone2020LiverpoolDay01Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_01_GENERAL")]
+    BadgeSafarizone2020LiverpoolDay01General,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_02_EARLYACCESS")]
+    BadgeSafarizone2020LiverpoolDay02Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_02_GENERAL")]
+    BadgeSafarizone2020LiverpoolDay02General,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_03_EARLYACCESS")]
+    BadgeSafarizone2020LiverpoolDay03Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_03_GENERAL")]
+    BadgeSafarizone2020LiverpoolDay03General,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_00_EARLYACCESS")]
+    BadgeSafarizone2020PhiladelphiaDay00Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_00_GENERAL")]
+    BadgeSafarizone2020PhiladelphiaDay00General,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_01_EARLYACCESS")]
+    BadgeSafarizone2020PhiladelphiaDay01Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_01_GENERAL")]
+    BadgeSafarizone2020PhiladelphiaDay01General,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_02_EARLYACCESS")]
+    BadgeSafarizone2020PhiladelphiaDay02Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_02_GENERAL")]
+    BadgeSafarizone2020PhiladelphiaDay02General,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_03_EARLYACCESS")]
+    BadgeSafarizone2020PhiladelphiaDay03Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_03_GENERAL")]
+    BadgeSafarizone2020PhiladelphiaDay03General,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_00_EARLYACCESS")]
+    BadgeSafarizone2020StlouisDay00Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_00_GENERAL")]
+    BadgeSafarizone2020StlouisDay00General,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_01_EARLYACCESS")]
+    BadgeSafarizone2020StlouisDay01Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_01_GENERAL")]
+    BadgeSafarizone2020StlouisDay01General,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_02_EARLYACCESS")]
+    BadgeSafarizone2020StlouisDay02Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_02_GENERAL")]
+    BadgeSafarizone2020StlouisDay02General,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_03_EARLYACCESS")]
+    BadgeSafarizone2020StlouisDay03Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_03_GENERAL")]
+    BadgeSafarizone2020StlouisDay03General,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_00_EARLYACCESS")]
+    BadgeSafarizone2022SevilleDay00Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_00_GENERAL")]
+    BadgeSafarizone2022SevilleDay00General,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_01_EARLYACCESS")]
+    BadgeSafarizone2022SevilleDay01Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_01_GENERAL")]
+    BadgeSafarizone2022SevilleDay01General,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_02_EARLYACCESS")]
+    BadgeSafarizone2022SevilleDay02Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_02_GENERAL")]
+    BadgeSafarizone2022SevilleDay02General,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_03_EARLYACCESS")]
+    BadgeSafarizone2022SevilleDay03Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_03_GENERAL")]
+    BadgeSafarizone2022SevilleDay03General,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_00_EARLYACCESS_TEST")]
+    BadgeSafarizone2022SingaporeDay00EarlyaccessTest,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_00_GENERAL_TEST")]
+    BadgeSafarizone2022SingaporeDay00GeneralTest,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_01_EARLYACCESS_TEST")]
+    BadgeSafarizone2022SingaporeDay01EarlyaccessTest,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_01_GENERAL_TEST")]
+    BadgeSafarizone2022SingaporeDay01GeneralTest,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_02_EARLYACCESS_TEST")]
+    BadgeSafarizone2022SingaporeDay02EarlyaccessTest,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_02_GENERAL_TEST")]
+    BadgeSafarizone2022SingaporeDay02GeneralTest,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_03_EARLYACCESS_TEST")]
+    BadgeSafarizone2022SingaporeDay03EarlyaccessTest,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_03_GENERAL_TEST")]
+    BadgeSafarizone2022SingaporeDay03GeneralTest,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_00_EARLYACCESS")]
+    BadgeSafarizone2022TaipeiDay00Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_00_GENERAL")]
+    BadgeSafarizone2022TaipeiDay00General,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_01_EARLYACCESS")]
+    BadgeSafarizone2022TaipeiDay01Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_01_GENERAL")]
+    BadgeSafarizone2022TaipeiDay01General,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_02_EARLYACCESS")]
+    BadgeSafarizone2022TaipeiDay02Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_02_GENERAL")]
+    BadgeSafarizone2022TaipeiDay02General,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_03_EARLYACCESS")]
+    BadgeSafarizone2022TaipeiDay03Earlyaccess,
+    #[serde(rename = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_03_GENERAL")]
+    BadgeSafarizone2022TaipeiDay03General,
     #[serde(rename = "BADGE_SENTOSA_18_APR_2019")]
     BadgeSentosa18Apr2019,
     #[serde(rename = "BADGE_SENTOSA_19_APR_2019")]
@@ -1737,10 +1737,10 @@ pub enum BadgeSettingsTemplateId {
     BadgeWeeklyChallengeEligible,
     #[serde(rename = "BADGE_YOKOSUKA_1_SEP_2018_VERNY")]
     BadgeYokosuka1Sep2018Verny,
-    #[serde(rename = "BADGE_YOKOSUKA_29_AUG_2018_VERNY")]
-    BadgeYokosuka29Aug2018Verny,
     #[serde(rename = "BADGE_YOKOSUKA_2_SEP_2018_VERNY")]
     BadgeYokosuka2Sep2018Verny,
+    #[serde(rename = "BADGE_YOKOSUKA_29_AUG_2018_VERNY")]
+    BadgeYokosuka29Aug2018Verny,
     #[serde(rename = "BADGE_YOKOSUKA_30_AUG_2018_VERNY")]
     BadgeYokosuka30Aug2018Verny,
     #[serde(rename = "BADGE_YOKOSUKA_31_AUG_2018_VERNY")]

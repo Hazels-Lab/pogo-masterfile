@@ -91,6 +91,8 @@ pub enum CombatLeagueTemplateId {
     CombatLeagueVsSeekerGreatCatch,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_GOFEST2022")]
     CombatLeagueVsSeekerGreatCatchGofest2022,
+    #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S8")]
+    CombatLeagueVsSeekerGreatCatchS8,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S13")]
     CombatLeagueVsSeekerGreatCatchS13,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S14")]
@@ -107,8 +109,6 @@ pub enum CombatLeagueTemplateId {
     CombatLeagueVsSeekerGreatCatchS20,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S22")]
     CombatLeagueVsSeekerGreatCatchS22,
-    #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S8")]
-    CombatLeagueVsSeekerGreatCatchS8,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_SEASON11")]
     CombatLeagueVsSeekerGreatCatchSeason11,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_SERIES")]

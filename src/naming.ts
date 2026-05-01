@@ -1,3 +1,5 @@
+import { compareNatural } from "./helpers.ts";
+
 export function groupName(discriminator: string): string {
 	return discriminator[0]!.toUpperCase() + discriminator.slice(1);
 }
@@ -143,7 +145,7 @@ export function deriveGroupAliases(templateIds: string[], gName: string): Map<st
 				result.set(idList[0]!, s);
 			} else {
 				// Still colliding — tie-break with numeric suffix, lexicographic order.
-				const sorted = [...idList].sort();
+				const sorted = [...idList].sort(compareNatural);
 				sorted.forEach((id, i) => {
 					result.set(id, `${s}${i}`);
 				});

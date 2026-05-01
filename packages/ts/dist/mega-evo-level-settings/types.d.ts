@@ -26,7 +26,7 @@ export type MegaEvoLevelSettingsType = W<MegaEvoLevelSettings>;
 export interface MegaEvoLevelSettingsData {
 	cooldown: {
 		bypassCostInitial: number;
-		durationMs: "1209600000" | "259200000" | "432000000" | "604800000" | "86400000";
+		durationMs: "86400000" | "259200000" | "432000000" | "604800000" | "1209600000";
 	};
 	effects: {
 		sameTypeExtraCatchCandy: number;

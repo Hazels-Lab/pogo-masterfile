@@ -331,6 +331,22 @@ pub enum AvatarCustomizationTemplateId {
     AvatarFHairDefault0,
     #[serde(rename = "AVATAR_f_hair_default_1")]
     AvatarFHairDefault1,
+    #[serde(rename = "AVATAR_f_hair_default_2")]
+    AvatarFHairDefault2,
+    #[serde(rename = "AVATAR_f_hair_default_3")]
+    AvatarFHairDefault3,
+    #[serde(rename = "AVATAR_f_hair_default_4")]
+    AvatarFHairDefault4,
+    #[serde(rename = "AVATAR_f_hair_default_5")]
+    AvatarFHairDefault5,
+    #[serde(rename = "AVATAR_f_hair_default_6")]
+    AvatarFHairDefault6,
+    #[serde(rename = "AVATAR_f_hair_default_7")]
+    AvatarFHairDefault7,
+    #[serde(rename = "AVATAR_f_hair_default_8")]
+    AvatarFHairDefault8,
+    #[serde(rename = "AVATAR_f_hair_default_9")]
+    AvatarFHairDefault9,
     #[serde(rename = "AVATAR_f_hair_default_10")]
     AvatarFHairDefault10,
     #[serde(rename = "AVATAR_f_hair_default_11")]
@@ -351,22 +367,6 @@ pub enum AvatarCustomizationTemplateId {
     AvatarFHairDefault18,
     #[serde(rename = "AVATAR_f_hair_default_19")]
     AvatarFHairDefault19,
-    #[serde(rename = "AVATAR_f_hair_default_2")]
-    AvatarFHairDefault2,
-    #[serde(rename = "AVATAR_f_hair_default_3")]
-    AvatarFHairDefault3,
-    #[serde(rename = "AVATAR_f_hair_default_4")]
-    AvatarFHairDefault4,
-    #[serde(rename = "AVATAR_f_hair_default_5")]
-    AvatarFHairDefault5,
-    #[serde(rename = "AVATAR_f_hair_default_6")]
-    AvatarFHairDefault6,
-    #[serde(rename = "AVATAR_f_hair_default_7")]
-    AvatarFHairDefault7,
-    #[serde(rename = "AVATAR_f_hair_default_8")]
-    AvatarFHairDefault8,
-    #[serde(rename = "AVATAR_f_hair_default_9")]
-    AvatarFHairDefault9,
     #[serde(rename = "AVATAR_f_hat_6thanniversary")]
     AvatarFHat6thanniversary,
     #[serde(rename = "AVATAR_f_hat_acetrainersm")]
@@ -651,12 +651,12 @@ pub enum AvatarCustomizationTemplateId {
     AvatarFHatTeamskull,
     #[serde(rename = "AVATAR_f_hat_tophat_0")]
     AvatarFHatTophat0,
+    #[serde(rename = "AVATAR_f_hat_ultra_0")]
+    AvatarFHatUltra0,
     #[serde(rename = "AVATAR_f_hat_ultraReconSquad")]
     AvatarFHatUltraReconSquad,
     #[serde(rename = "AVATAR_f_hat_ultraReconSquadB")]
     AvatarFHatUltraReconSquadB,
-    #[serde(rename = "AVATAR_f_hat_ultra_0")]
-    AvatarFHatUltra0,
     #[serde(rename = "AVATAR_f_hat_verizon2021")]
     AvatarFHatVerizon2021,
     #[serde(rename = "AVATAR_f_hat_wcs2022winnersitems")]
@@ -1145,6 +1145,12 @@ pub enum AvatarCustomizationTemplateId {
     AvatarFShirtGiratinaitems,
     #[serde(rename = "AVATAR_f_shirt_gladion")]
     AvatarFShirtGladion,
+    #[serde(rename = "AVATAR_f_shirt_gofest_2019")]
+    AvatarFShirtGofest2019,
+    #[serde(rename = "AVATAR_f_shirt_gofest_2020")]
+    AvatarFShirtGofest2020,
+    #[serde(rename = "AVATAR_f_shirt_gofest_2021")]
+    AvatarFShirtGofest2021,
     #[serde(rename = "AVATAR_f_shirt_gofest2022")]
     AvatarFShirtGofest2022,
     #[serde(rename = "AVATAR_f_shirt_gofest2023")]
@@ -1155,12 +1161,6 @@ pub enum AvatarCustomizationTemplateId {
     AvatarFShirtGofest2024gray,
     #[serde(rename = "AVATAR_f_shirt_gofest2024purple")]
     AvatarFShirtGofest2024purple,
-    #[serde(rename = "AVATAR_f_shirt_gofest_2019")]
-    AvatarFShirtGofest2019,
-    #[serde(rename = "AVATAR_f_shirt_gofest_2020")]
-    AvatarFShirtGofest2020,
-    #[serde(rename = "AVATAR_f_shirt_gofest_2021")]
-    AvatarFShirtGofest2021,
     #[serde(rename = "AVATAR_f_shirt_gofestglobal2023")]
     AvatarFShirtGofestglobal2023,
     #[serde(rename = "AVATAR_f_shirt_goteamrocketarlo")]
@@ -1311,12 +1311,6 @@ pub enum AvatarCustomizationTemplateId {
     AvatarFShirtPkmnhoodie004,
     #[serde(rename = "AVATAR_f_shirt_pkmnhoodie007")]
     AvatarFShirtPkmnhoodie007,
-    #[serde(rename = "AVATAR_f_shirt_pkmnshirts2021_00")]
-    AvatarFShirtPkmnshirts202100,
-    #[serde(rename = "AVATAR_f_shirt_pkmnshirts2021_01")]
-    AvatarFShirtPkmnshirts202101,
-    #[serde(rename = "AVATAR_f_shirt_pkmnshirts2021_02")]
-    AvatarFShirtPkmnshirts202102,
     #[serde(rename = "AVATAR_f_shirt_pkmnshirts_165")]
     AvatarFShirtPkmnshirts165,
     #[serde(rename = "AVATAR_f_shirt_pkmnshirts_188")]
@@ -1325,6 +1319,12 @@ pub enum AvatarCustomizationTemplateId {
     AvatarFShirtPkmnshirts201,
     #[serde(rename = "AVATAR_f_shirt_pkmnshirts_238")]
     AvatarFShirtPkmnshirts238,
+    #[serde(rename = "AVATAR_f_shirt_pkmnshirts2021_00")]
+    AvatarFShirtPkmnshirts202100,
+    #[serde(rename = "AVATAR_f_shirt_pkmnshirts2021_01")]
+    AvatarFShirtPkmnshirts202101,
+    #[serde(rename = "AVATAR_f_shirt_pkmnshirts2021_02")]
+    AvatarFShirtPkmnshirts202102,
     #[serde(rename = "AVATAR_f_shirt_poloshirt")]
     AvatarFShirtPoloshirt,
     #[serde(rename = "AVATAR_f_shirt_poloshirt_1")]
@@ -1497,10 +1497,10 @@ pub enum AvatarCustomizationTemplateId {
     AvatarFShirtTshirtPikachu6,
     #[serde(rename = "AVATAR_f_shirt_turtwigonesie")]
     AvatarFShirtTurtwigonesie,
-    #[serde(rename = "AVATAR_f_shirt_ultraReconSquad")]
-    AvatarFShirtUltraReconSquad,
     #[serde(rename = "AVATAR_f_shirt_ultra_0")]
     AvatarFShirtUltra0,
+    #[serde(rename = "AVATAR_f_shirt_ultraReconSquad")]
+    AvatarFShirtUltraReconSquad,
     #[serde(rename = "AVATAR_f_shirt_uniqlotshirts_0")]
     AvatarFShirtUniqlotshirts0,
     #[serde(rename = "AVATAR_f_shirt_uniqlotshirts_1")]
@@ -1729,18 +1729,16 @@ pub enum AvatarCustomizationTemplateId {
     AvatarFShoesTeamskull,
     #[serde(rename = "AVATAR_f_shoes_teamspark")]
     AvatarFShoesTeamspark,
-    #[serde(rename = "AVATAR_f_shoes_ultraReconSquad")]
-    AvatarFShoesUltraReconSquad,
     #[serde(rename = "AVATAR_f_shoes_ultra_0")]
     AvatarFShoesUltra0,
+    #[serde(rename = "AVATAR_f_shoes_ultraReconSquad")]
+    AvatarFShoesUltraReconSquad,
     #[serde(rename = "AVATAR_f_shoes_veterantrainerxy")]
     AvatarFShoesVeterantrainerxy,
     #[serde(rename = "AVATAR_f_shoes_wcs2022winnersitems")]
     AvatarFShoesWcs2022winnersitems,
     #[serde(rename = "AVATAR_f_shoes_wcs2023winnersitems")]
     AvatarFShoesWcs2023winnersitems,
-    #[serde(rename = "AVATAR_f_shoes_winterboots2023")]
-    AvatarFShoesWinterboots2023,
     #[serde(rename = "AVATAR_f_shoes_winterboots_0")]
     AvatarFShoesWinterboots0,
     #[serde(rename = "AVATAR_f_shoes_winterboots_1")]
@@ -1749,14 +1747,12 @@ pub enum AvatarCustomizationTemplateId {
     AvatarFShoesWinterboots2,
     #[serde(rename = "AVATAR_f_shoes_winterboots_3")]
     AvatarFShoesWinterboots3,
+    #[serde(rename = "AVATAR_f_shoes_winterboots2023")]
+    AvatarFShoesWinterboots2023,
     #[serde(rename = "AVATAR_f_skin_0")]
     AvatarFSkin0,
     #[serde(rename = "AVATAR_f_skin_1")]
     AvatarFSkin1,
-    #[serde(rename = "AVATAR_f_skin_10")]
-    AvatarFSkin10,
-    #[serde(rename = "AVATAR_f_skin_11")]
-    AvatarFSkin11,
     #[serde(rename = "AVATAR_f_skin_2")]
     AvatarFSkin2,
     #[serde(rename = "AVATAR_f_skin_3")]
@@ -1773,6 +1769,10 @@ pub enum AvatarCustomizationTemplateId {
     AvatarFSkin8,
     #[serde(rename = "AVATAR_f_skin_9")]
     AvatarFSkin9,
+    #[serde(rename = "AVATAR_f_skin_10")]
+    AvatarFSkin10,
+    #[serde(rename = "AVATAR_f_skin_11")]
+    AvatarFSkin11,
     #[serde(rename = "AVATAR_f_socks_default_0")]
     AvatarFSocksDefault0,
     #[serde(rename = "AVATAR_f_socks_default_1")]
@@ -2095,6 +2095,22 @@ pub enum AvatarCustomizationTemplateId {
     AvatarMHairDefault0,
     #[serde(rename = "AVATAR_m_hair_default_1")]
     AvatarMHairDefault1,
+    #[serde(rename = "AVATAR_m_hair_default_2")]
+    AvatarMHairDefault2,
+    #[serde(rename = "AVATAR_m_hair_default_3")]
+    AvatarMHairDefault3,
+    #[serde(rename = "AVATAR_m_hair_default_4")]
+    AvatarMHairDefault4,
+    #[serde(rename = "AVATAR_m_hair_default_5")]
+    AvatarMHairDefault5,
+    #[serde(rename = "AVATAR_m_hair_default_6")]
+    AvatarMHairDefault6,
+    #[serde(rename = "AVATAR_m_hair_default_7")]
+    AvatarMHairDefault7,
+    #[serde(rename = "AVATAR_m_hair_default_8")]
+    AvatarMHairDefault8,
+    #[serde(rename = "AVATAR_m_hair_default_9")]
+    AvatarMHairDefault9,
     #[serde(rename = "AVATAR_m_hair_default_10")]
     AvatarMHairDefault10,
     #[serde(rename = "AVATAR_m_hair_default_11")]
@@ -2115,22 +2131,6 @@ pub enum AvatarCustomizationTemplateId {
     AvatarMHairDefault18,
     #[serde(rename = "AVATAR_m_hair_default_19")]
     AvatarMHairDefault19,
-    #[serde(rename = "AVATAR_m_hair_default_2")]
-    AvatarMHairDefault2,
-    #[serde(rename = "AVATAR_m_hair_default_3")]
-    AvatarMHairDefault3,
-    #[serde(rename = "AVATAR_m_hair_default_4")]
-    AvatarMHairDefault4,
-    #[serde(rename = "AVATAR_m_hair_default_5")]
-    AvatarMHairDefault5,
-    #[serde(rename = "AVATAR_m_hair_default_6")]
-    AvatarMHairDefault6,
-    #[serde(rename = "AVATAR_m_hair_default_7")]
-    AvatarMHairDefault7,
-    #[serde(rename = "AVATAR_m_hair_default_8")]
-    AvatarMHairDefault8,
-    #[serde(rename = "AVATAR_m_hair_default_9")]
-    AvatarMHairDefault9,
     #[serde(rename = "AVATAR_m_hat_6thanniversary")]
     AvatarMHat6thanniversary,
     #[serde(rename = "AVATAR_m_hat_acetrainersm")]
@@ -2409,12 +2409,12 @@ pub enum AvatarCustomizationTemplateId {
     AvatarMHatTeamskull,
     #[serde(rename = "AVATAR_m_hat_tophat_0")]
     AvatarMHatTophat0,
+    #[serde(rename = "AVATAR_m_hat_ultra_0")]
+    AvatarMHatUltra0,
     #[serde(rename = "AVATAR_m_hat_ultraReconSquad")]
     AvatarMHatUltraReconSquad,
     #[serde(rename = "AVATAR_m_hat_ultraReconSquadB")]
     AvatarMHatUltraReconSquadB,
-    #[serde(rename = "AVATAR_m_hat_ultra_0")]
-    AvatarMHatUltra0,
     #[serde(rename = "AVATAR_m_hat_verizon2021")]
     AvatarMHatVerizon2021,
     #[serde(rename = "AVATAR_m_hat_wcs2022winnersitems")]
@@ -2871,6 +2871,12 @@ pub enum AvatarCustomizationTemplateId {
     AvatarMShirtGiratinaitems,
     #[serde(rename = "AVATAR_m_shirt_gladion")]
     AvatarMShirtGladion,
+    #[serde(rename = "AVATAR_m_shirt_gofest_2019")]
+    AvatarMShirtGofest2019,
+    #[serde(rename = "AVATAR_m_shirt_gofest_2020")]
+    AvatarMShirtGofest2020,
+    #[serde(rename = "AVATAR_m_shirt_gofest_2021")]
+    AvatarMShirtGofest2021,
     #[serde(rename = "AVATAR_m_shirt_gofest2022")]
     AvatarMShirtGofest2022,
     #[serde(rename = "AVATAR_m_shirt_gofest2023")]
@@ -2881,12 +2887,6 @@ pub enum AvatarCustomizationTemplateId {
     AvatarMShirtGofest2024gray,
     #[serde(rename = "AVATAR_m_shirt_gofest2024purple")]
     AvatarMShirtGofest2024purple,
-    #[serde(rename = "AVATAR_m_shirt_gofest_2019")]
-    AvatarMShirtGofest2019,
-    #[serde(rename = "AVATAR_m_shirt_gofest_2020")]
-    AvatarMShirtGofest2020,
-    #[serde(rename = "AVATAR_m_shirt_gofest_2021")]
-    AvatarMShirtGofest2021,
     #[serde(rename = "AVATAR_m_shirt_gofestglobal2023")]
     AvatarMShirtGofestglobal2023,
     #[serde(rename = "AVATAR_m_shirt_goteamrocketarlo")]
@@ -3049,12 +3049,6 @@ pub enum AvatarCustomizationTemplateId {
     AvatarMShirtPkmnhoodie004,
     #[serde(rename = "AVATAR_m_shirt_pkmnhoodie007")]
     AvatarMShirtPkmnhoodie007,
-    #[serde(rename = "AVATAR_m_shirt_pkmnshirts2021_00")]
-    AvatarMShirtPkmnshirts202100,
-    #[serde(rename = "AVATAR_m_shirt_pkmnshirts2021_01")]
-    AvatarMShirtPkmnshirts202101,
-    #[serde(rename = "AVATAR_m_shirt_pkmnshirts2021_02")]
-    AvatarMShirtPkmnshirts202102,
     #[serde(rename = "AVATAR_m_shirt_pkmnshirts_165")]
     AvatarMShirtPkmnshirts165,
     #[serde(rename = "AVATAR_m_shirt_pkmnshirts_188")]
@@ -3063,6 +3057,12 @@ pub enum AvatarCustomizationTemplateId {
     AvatarMShirtPkmnshirts201,
     #[serde(rename = "AVATAR_m_shirt_pkmnshirts_238")]
     AvatarMShirtPkmnshirts238,
+    #[serde(rename = "AVATAR_m_shirt_pkmnshirts2021_00")]
+    AvatarMShirtPkmnshirts202100,
+    #[serde(rename = "AVATAR_m_shirt_pkmnshirts2021_01")]
+    AvatarMShirtPkmnshirts202101,
+    #[serde(rename = "AVATAR_m_shirt_pkmnshirts2021_02")]
+    AvatarMShirtPkmnshirts202102,
     #[serde(rename = "AVATAR_m_shirt_poloshirt")]
     AvatarMShirtPoloshirt,
     #[serde(rename = "AVATAR_m_shirt_poloshirt_1")]
@@ -3221,10 +3221,10 @@ pub enum AvatarCustomizationTemplateId {
     AvatarMShirtTurtleneck303,
     #[serde(rename = "AVATAR_m_shirt_turtwigonesie")]
     AvatarMShirtTurtwigonesie,
-    #[serde(rename = "AVATAR_m_shirt_ultraReconSquad")]
-    AvatarMShirtUltraReconSquad,
     #[serde(rename = "AVATAR_m_shirt_ultra_0")]
     AvatarMShirtUltra0,
+    #[serde(rename = "AVATAR_m_shirt_ultraReconSquad")]
+    AvatarMShirtUltraReconSquad,
     #[serde(rename = "AVATAR_m_shirt_uniqlotshirts_0")]
     AvatarMShirtUniqlotshirts0,
     #[serde(rename = "AVATAR_m_shirt_uniqlotshirts_1")]
@@ -3455,18 +3455,16 @@ pub enum AvatarCustomizationTemplateId {
     AvatarMShoesTeamskull,
     #[serde(rename = "AVATAR_m_shoes_teamspark")]
     AvatarMShoesTeamspark,
-    #[serde(rename = "AVATAR_m_shoes_ultraReconSquad")]
-    AvatarMShoesUltraReconSquad,
     #[serde(rename = "AVATAR_m_shoes_ultra_0")]
     AvatarMShoesUltra0,
+    #[serde(rename = "AVATAR_m_shoes_ultraReconSquad")]
+    AvatarMShoesUltraReconSquad,
     #[serde(rename = "AVATAR_m_shoes_veterantrainerxy")]
     AvatarMShoesVeterantrainerxy,
     #[serde(rename = "AVATAR_m_shoes_wcs2022winnersitems")]
     AvatarMShoesWcs2022winnersitems,
     #[serde(rename = "AVATAR_m_shoes_wcs2023winnersitems")]
     AvatarMShoesWcs2023winnersitems,
-    #[serde(rename = "AVATAR_m_shoes_winterboots2023")]
-    AvatarMShoesWinterboots2023,
     #[serde(rename = "AVATAR_m_shoes_winterboots_0")]
     AvatarMShoesWinterboots0,
     #[serde(rename = "AVATAR_m_shoes_winterboots_1")]
@@ -3475,14 +3473,12 @@ pub enum AvatarCustomizationTemplateId {
     AvatarMShoesWinterboots2,
     #[serde(rename = "AVATAR_m_shoes_winterboots_3")]
     AvatarMShoesWinterboots3,
+    #[serde(rename = "AVATAR_m_shoes_winterboots2023")]
+    AvatarMShoesWinterboots2023,
     #[serde(rename = "AVATAR_m_skin_0")]
     AvatarMSkin0,
     #[serde(rename = "AVATAR_m_skin_1")]
     AvatarMSkin1,
-    #[serde(rename = "AVATAR_m_skin_10")]
-    AvatarMSkin10,
-    #[serde(rename = "AVATAR_m_skin_11")]
-    AvatarMSkin11,
     #[serde(rename = "AVATAR_m_skin_2")]
     AvatarMSkin2,
     #[serde(rename = "AVATAR_m_skin_3")]
@@ -3499,6 +3495,10 @@ pub enum AvatarCustomizationTemplateId {
     AvatarMSkin8,
     #[serde(rename = "AVATAR_m_skin_9")]
     AvatarMSkin9,
+    #[serde(rename = "AVATAR_m_skin_10")]
+    AvatarMSkin10,
+    #[serde(rename = "AVATAR_m_skin_11")]
+    AvatarMSkin11,
     #[serde(rename = "AVATAR_m_socks_default_0")]
     AvatarMSocksDefault0,
     #[serde(rename = "AVATAR_m_socks_default_1")]

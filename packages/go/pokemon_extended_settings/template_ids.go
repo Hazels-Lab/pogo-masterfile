@@ -2413,6 +2413,7 @@ const (
 	PokemonExtendedSettingsTemplateIDExtendedV0998PokemonBaxcalibur                      PokemonExtendedSettingsTemplateID = "EXTENDED_V0998_POKEMON_BAXCALIBUR"
 	PokemonExtendedSettingsTemplateIDExtendedV0998PokemonBaxcaliburNormal                PokemonExtendedSettingsTemplateID = "EXTENDED_V0998_POKEMON_BAXCALIBUR_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV0999PokemonGimmighoul                      PokemonExtendedSettingsTemplateID = "EXTENDED_V0999_POKEMON_GIMMIGHOUL"
+	PokemonExtendedSettingsTemplateIDExtendedV999PokemonGimmighoul                       PokemonExtendedSettingsTemplateID = "EXTENDED_V999_POKEMON_GIMMIGHOUL"
 	PokemonExtendedSettingsTemplateIDExtendedV0999PokemonGimmighoulCoinA1                PokemonExtendedSettingsTemplateID = "EXTENDED_V0999_POKEMON_GIMMIGHOUL_COIN_A1"
 	PokemonExtendedSettingsTemplateIDExtendedV0999PokemonGimmighoulNormal                PokemonExtendedSettingsTemplateID = "EXTENDED_V0999_POKEMON_GIMMIGHOUL_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV1000PokemonGholdengo                       PokemonExtendedSettingsTemplateID = "EXTENDED_V1000_POKEMON_GHOLDENGO"
@@ -2468,7 +2469,6 @@ const (
 	PokemonExtendedSettingsTemplateIDExtendedV1024PokemonTerapagosNormal                 PokemonExtendedSettingsTemplateID = "EXTENDED_V1024_POKEMON_TERAPAGOS_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV1025PokemonPecharunt                       PokemonExtendedSettingsTemplateID = "EXTENDED_V1025_POKEMON_PECHARUNT"
 	PokemonExtendedSettingsTemplateIDExtendedV1025PokemonPecharuntNormal                 PokemonExtendedSettingsTemplateID = "EXTENDED_V1025_POKEMON_PECHARUNT_NORMAL"
-	PokemonExtendedSettingsTemplateIDExtendedV999PokemonGimmighoul                       PokemonExtendedSettingsTemplateID = "EXTENDED_V999_POKEMON_GIMMIGHOUL"
 )
 
 var PokemonExtendedSettingsTemplateIDValues = [...]PokemonExtendedSettingsTemplateID{
@@ -4880,6 +4880,7 @@ var PokemonExtendedSettingsTemplateIDValues = [...]PokemonExtendedSettingsTempla
 	PokemonExtendedSettingsTemplateIDExtendedV0998PokemonBaxcalibur,
 	PokemonExtendedSettingsTemplateIDExtendedV0998PokemonBaxcaliburNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV0999PokemonGimmighoul,
+	PokemonExtendedSettingsTemplateIDExtendedV999PokemonGimmighoul,
 	PokemonExtendedSettingsTemplateIDExtendedV0999PokemonGimmighoulCoinA1,
 	PokemonExtendedSettingsTemplateIDExtendedV0999PokemonGimmighoulNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV1000PokemonGholdengo,
@@ -4935,5 +4936,4 @@ var PokemonExtendedSettingsTemplateIDValues = [...]PokemonExtendedSettingsTempla
 	PokemonExtendedSettingsTemplateIDExtendedV1024PokemonTerapagosNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV1025PokemonPecharunt,
 	PokemonExtendedSettingsTemplateIDExtendedV1025PokemonPecharuntNormal,
-	PokemonExtendedSettingsTemplateIDExtendedV999PokemonGimmighoul,
 }

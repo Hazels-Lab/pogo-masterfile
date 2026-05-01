@@ -3,36 +3,6 @@
 import type { S } from "../../_utils";
 import type { StickerMetadata } from "../types";
 
-export type StickerMetadata2023collab1 = S<
-	StickerMetadata<
-		"STICKER_2023COLLAB_1",
-		{
-			category: ["Pokemon"];
-			pokemonId: "PIKACHU";
-			releaseDate: 20230926;
-		}
-	>
->;
-export type StickerMetadata2023collab2 = S<
-	StickerMetadata<
-		"STICKER_2023COLLAB_2",
-		{
-			category: ["Pokemon"];
-			pokemonId: "PIKACHU";
-			releaseDate: 20230926;
-		}
-	>
->;
-export type StickerMetadata2023collab3 = S<
-	StickerMetadata<
-		"STICKER_2023COLLAB_3",
-		{
-			category: ["Pokemon"];
-			pokemonId: "SLOWPOKE";
-			releaseDate: 20230926;
-		}
-	>
->;
 export type StickerMetadata6anniv2 = S<
 	StickerMetadata<
 		"STICKER_6ANNIV_2",
@@ -160,6 +130,36 @@ export type StickerMetadata9anniv3 = S<
 			category: ["Pokemon"];
 			pokemonId: "VENUSAUR";
 			releaseDate: 20250701;
+		}
+	>
+>;
+export type StickerMetadata2023collab1 = S<
+	StickerMetadata<
+		"STICKER_2023COLLAB_1",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PIKACHU";
+			releaseDate: 20230926;
+		}
+	>
+>;
+export type StickerMetadata2023collab2 = S<
+	StickerMetadata<
+		"STICKER_2023COLLAB_2",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PIKACHU";
+			releaseDate: 20230926;
+		}
+	>
+>;
+export type StickerMetadata2023collab3 = S<
+	StickerMetadata<
+		"STICKER_2023COLLAB_3",
+		{
+			category: ["Pokemon"];
+			pokemonId: "SLOWPOKE";
+			releaseDate: 20230926;
 		}
 	>
 >;
@@ -403,6 +403,16 @@ export type StickerMetadataFossilmuseum2 = S<
 		}
 	>
 >;
+export type StickerMetadataHalloween23Gengar = S<
+	StickerMetadata<
+		"STICKER_HALLOWEEN23_GENGAR",
+		{
+			category: ["Pokemon"];
+			pokemonId: "GENGAR";
+			releaseDate: 20231031;
+		}
+	>
+>;
 export type StickerMetadataHalloween2022Gengar = S<
 	StickerMetadata<
 		"STICKER_HALLOWEEN2022_GENGAR",
@@ -420,16 +430,6 @@ export type StickerMetadataHalloween2022Vulpix = S<
 			category: ["Pokemon"];
 			pokemonId: "VULPIX";
 			releaseDate: 20221020;
-		}
-	>
->;
-export type StickerMetadataHalloween23Gengar = S<
-	StickerMetadata<
-		"STICKER_HALLOWEEN23_GENGAR",
-		{
-			category: ["Pokemon"];
-			pokemonId: "GENGAR";
-			releaseDate: 20231031;
 		}
 	>
 >;
@@ -1055,9 +1055,6 @@ export type StickerMetadataWinter20254 = S<
 >;
 
 export type StickerMetadataPokemonIdReleaseDateMasterfileEntry =
-	| StickerMetadata2023collab1
-	| StickerMetadata2023collab2
-	| StickerMetadata2023collab3
 	| StickerMetadata6anniv2
 	| StickerMetadata6anniv3
 	| StickerMetadata6anniv4
@@ -1071,6 +1068,9 @@ export type StickerMetadataPokemonIdReleaseDateMasterfileEntry =
 	| StickerMetadata9anniv1
 	| StickerMetadata9anniv2
 	| StickerMetadata9anniv3
+	| StickerMetadata2023collab1
+	| StickerMetadata2023collab2
+	| StickerMetadata2023collab3
 	| StickerMetadataAprilfool20231
 	| StickerMetadataAprilfool20232
 	| StickerMetadataBellsproutcd1
@@ -1095,9 +1095,9 @@ export type StickerMetadataPokemonIdReleaseDateMasterfileEntry =
 	| StickerMetadataFormulaekoreaPikachu
 	| StickerMetadataFossilmuseum1
 	| StickerMetadataFossilmuseum2
+	| StickerMetadataHalloween23Gengar
 	| StickerMetadataHalloween2022Gengar
 	| StickerMetadataHalloween2022Vulpix
-	| StickerMetadataHalloween23Gengar
 	| StickerMetadataHolidayevent22Snowpika
 	| StickerMetadataHolidayevent23Psyduck
 	| StickerMetadataHolidayevent23Seel

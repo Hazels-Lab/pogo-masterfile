@@ -207,10 +207,10 @@ pub enum ItemSettingsTemplateId {
     ItemPinapBerry,
     #[serde(rename = "ITEM_POFFIN")]
     ItemPoffin,
-    #[serde(rename = "ITEM_POKEMON_STORAGE_UPGRADE")]
-    ItemPokemonStorageUpgrade,
     #[serde(rename = "ITEM_POKE_BALL")]
     ItemPokeBall,
+    #[serde(rename = "ITEM_POKEMON_STORAGE_UPGRADE")]
+    ItemPokemonStorageUpgrade,
     #[serde(rename = "ITEM_POSTCARD_INVENTORY")]
     ItemPostcardInventory,
     #[serde(rename = "ITEM_POSTCARD_STORAGE_UPGRADE")]
@@ -285,12 +285,12 @@ pub enum ItemSettingsTemplateId {
     ItemWildBall,
     #[serde(rename = "ITEM_WILD_BALL_PREMIER")]
     ItemWildBallPremier,
-    #[serde(rename = "ITEM_XL_RARE_CANDY")]
-    ItemXlRareCandy,
     #[serde(rename = "ITEM_X_ATTACK")]
     ItemXAttack,
     #[serde(rename = "ITEM_X_DEFENSE")]
     ItemXDefense,
     #[serde(rename = "ITEM_X_MIRACLE")]
     ItemXMiracle,
+    #[serde(rename = "ITEM_XL_RARE_CANDY")]
+    ItemXlRareCandy,
 }

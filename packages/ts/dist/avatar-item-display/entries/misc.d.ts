@@ -19,6 +19,70 @@ export type AvatarItemDisplayNGradientEye1 = S<
 		}
 	>
 >;
+export type AvatarItemDisplayNGradientEye2 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_gradient_eye_2",
+		{
+			iconAddress: "n_gradient_eye_2_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNGradientEye3 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_gradient_eye_3",
+		{
+			iconAddress: "n_gradient_eye_3_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNGradientEye4 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_gradient_eye_4",
+		{
+			iconAddress: "n_gradient_eye_4_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNGradientEye5 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_gradient_eye_5",
+		{
+			iconAddress: "n_gradient_eye_5_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNGradientEye6 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_gradient_eye_6",
+		{
+			iconAddress: "n_gradient_eye_6_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNGradientEye7 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_gradient_eye_7",
+		{
+			iconAddress: "n_gradient_eye_7_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNGradientEye8 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_gradient_eye_8",
+		{
+			iconAddress: "n_gradient_eye_8_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNGradientEye9 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_gradient_eye_9",
+		{
+			iconAddress: "n_gradient_eye_9_icon";
+		}
+	>
+>;
 export type AvatarItemDisplayNGradientEye10 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_gradient_eye_10",
@@ -99,70 +163,6 @@ export type AvatarItemDisplayNGradientEye19 = S<
 		}
 	>
 >;
-export type AvatarItemDisplayNGradientEye2 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_gradient_eye_2",
-		{
-			iconAddress: "n_gradient_eye_2_icon";
-		}
-	>
->;
-export type AvatarItemDisplayNGradientEye3 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_gradient_eye_3",
-		{
-			iconAddress: "n_gradient_eye_3_icon";
-		}
-	>
->;
-export type AvatarItemDisplayNGradientEye4 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_gradient_eye_4",
-		{
-			iconAddress: "n_gradient_eye_4_icon";
-		}
-	>
->;
-export type AvatarItemDisplayNGradientEye5 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_gradient_eye_5",
-		{
-			iconAddress: "n_gradient_eye_5_icon";
-		}
-	>
->;
-export type AvatarItemDisplayNGradientEye6 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_gradient_eye_6",
-		{
-			iconAddress: "n_gradient_eye_6_icon";
-		}
-	>
->;
-export type AvatarItemDisplayNGradientEye7 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_gradient_eye_7",
-		{
-			iconAddress: "n_gradient_eye_7_icon";
-		}
-	>
->;
-export type AvatarItemDisplayNGradientEye8 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_gradient_eye_8",
-		{
-			iconAddress: "n_gradient_eye_8_icon";
-		}
-	>
->;
-export type AvatarItemDisplayNGradientEye9 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_gradient_eye_9",
-		{
-			iconAddress: "n_gradient_eye_9_icon";
-		}
-	>
->;
 export type AvatarItemDisplayNGradientHair0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_gradient_hair_0",
@@ -176,6 +176,70 @@ export type AvatarItemDisplayNGradientHair1 = S<
 		"N_DISPLAY_n_gradient_hair_1",
 		{
 			iconAddress: "n_gradient_hair_1_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNGradientHair2 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_gradient_hair_2",
+		{
+			iconAddress: "n_gradient_hair_2_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNGradientHair3 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_gradient_hair_3",
+		{
+			iconAddress: "n_gradient_hair_3_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNGradientHair4 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_gradient_hair_4",
+		{
+			iconAddress: "n_gradient_hair_4_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNGradientHair5 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_gradient_hair_5",
+		{
+			iconAddress: "n_gradient_hair_5_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNGradientHair6 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_gradient_hair_6",
+		{
+			iconAddress: "n_gradient_hair_6_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNGradientHair7 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_gradient_hair_7",
+		{
+			iconAddress: "n_gradient_hair_7_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNGradientHair8 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_gradient_hair_8",
+		{
+			iconAddress: "n_gradient_hair_8_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNGradientHair9 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_gradient_hair_9",
+		{
+			iconAddress: "n_gradient_hair_9_icon";
 		}
 	>
 >;
@@ -259,14 +323,6 @@ export type AvatarItemDisplayNGradientHair19 = S<
 		}
 	>
 >;
-export type AvatarItemDisplayNGradientHair2 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_gradient_hair_2",
-		{
-			iconAddress: "n_gradient_hair_2_icon";
-		}
-	>
->;
 export type AvatarItemDisplayNGradientHair20 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_gradient_hair_20",
@@ -347,14 +403,6 @@ export type AvatarItemDisplayNGradientHair29 = S<
 		}
 	>
 >;
-export type AvatarItemDisplayNGradientHair3 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_gradient_hair_3",
-		{
-			iconAddress: "n_gradient_hair_3_icon";
-		}
-	>
->;
 export type AvatarItemDisplayNGradientHair30 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_gradient_hair_30",
@@ -368,54 +416,6 @@ export type AvatarItemDisplayNGradientHair31 = S<
 		"N_DISPLAY_n_gradient_hair_31",
 		{
 			iconAddress: "n_gradient_hair_31_icon";
-		}
-	>
->;
-export type AvatarItemDisplayNGradientHair4 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_gradient_hair_4",
-		{
-			iconAddress: "n_gradient_hair_4_icon";
-		}
-	>
->;
-export type AvatarItemDisplayNGradientHair5 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_gradient_hair_5",
-		{
-			iconAddress: "n_gradient_hair_5_icon";
-		}
-	>
->;
-export type AvatarItemDisplayNGradientHair6 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_gradient_hair_6",
-		{
-			iconAddress: "n_gradient_hair_6_icon";
-		}
-	>
->;
-export type AvatarItemDisplayNGradientHair7 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_gradient_hair_7",
-		{
-			iconAddress: "n_gradient_hair_7_icon";
-		}
-	>
->;
-export type AvatarItemDisplayNGradientHair8 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_gradient_hair_8",
-		{
-			iconAddress: "n_gradient_hair_8_icon";
-		}
-	>
->;
-export type AvatarItemDisplayNGradientHair9 = S<
-	AvatarItemDisplay<
-		"N_DISPLAY_n_gradient_hair_9",
-		{
-			iconAddress: "n_gradient_hair_9_icon";
 		}
 	>
 >;
@@ -2759,6 +2759,14 @@ export type AvatarItemDisplaySetZacostumeB = S<
 export type AvatarItemDisplayMiscMasterfileEntry =
 	| AvatarItemDisplayNGradientEye0
 	| AvatarItemDisplayNGradientEye1
+	| AvatarItemDisplayNGradientEye2
+	| AvatarItemDisplayNGradientEye3
+	| AvatarItemDisplayNGradientEye4
+	| AvatarItemDisplayNGradientEye5
+	| AvatarItemDisplayNGradientEye6
+	| AvatarItemDisplayNGradientEye7
+	| AvatarItemDisplayNGradientEye8
+	| AvatarItemDisplayNGradientEye9
 	| AvatarItemDisplayNGradientEye10
 	| AvatarItemDisplayNGradientEye11
 	| AvatarItemDisplayNGradientEye12
@@ -2769,16 +2777,16 @@ export type AvatarItemDisplayMiscMasterfileEntry =
 	| AvatarItemDisplayNGradientEye17
 	| AvatarItemDisplayNGradientEye18
 	| AvatarItemDisplayNGradientEye19
-	| AvatarItemDisplayNGradientEye2
-	| AvatarItemDisplayNGradientEye3
-	| AvatarItemDisplayNGradientEye4
-	| AvatarItemDisplayNGradientEye5
-	| AvatarItemDisplayNGradientEye6
-	| AvatarItemDisplayNGradientEye7
-	| AvatarItemDisplayNGradientEye8
-	| AvatarItemDisplayNGradientEye9
 	| AvatarItemDisplayNGradientHair0
 	| AvatarItemDisplayNGradientHair1
+	| AvatarItemDisplayNGradientHair2
+	| AvatarItemDisplayNGradientHair3
+	| AvatarItemDisplayNGradientHair4
+	| AvatarItemDisplayNGradientHair5
+	| AvatarItemDisplayNGradientHair6
+	| AvatarItemDisplayNGradientHair7
+	| AvatarItemDisplayNGradientHair8
+	| AvatarItemDisplayNGradientHair9
 	| AvatarItemDisplayNGradientHair10
 	| AvatarItemDisplayNGradientHair11
 	| AvatarItemDisplayNGradientHair12
@@ -2789,7 +2797,6 @@ export type AvatarItemDisplayMiscMasterfileEntry =
 	| AvatarItemDisplayNGradientHair17
 	| AvatarItemDisplayNGradientHair18
 	| AvatarItemDisplayNGradientHair19
-	| AvatarItemDisplayNGradientHair2
 	| AvatarItemDisplayNGradientHair20
 	| AvatarItemDisplayNGradientHair21
 	| AvatarItemDisplayNGradientHair22
@@ -2800,15 +2807,8 @@ export type AvatarItemDisplayMiscMasterfileEntry =
 	| AvatarItemDisplayNGradientHair27
 	| AvatarItemDisplayNGradientHair28
 	| AvatarItemDisplayNGradientHair29
-	| AvatarItemDisplayNGradientHair3
 	| AvatarItemDisplayNGradientHair30
 	| AvatarItemDisplayNGradientHair31
-	| AvatarItemDisplayNGradientHair4
-	| AvatarItemDisplayNGradientHair5
-	| AvatarItemDisplayNGradientHair6
-	| AvatarItemDisplayNGradientHair7
-	| AvatarItemDisplayNGradientHair8
-	| AvatarItemDisplayNGradientHair9
 	| AvatarItemDisplayNGradientTesteye0
 	| AvatarItemDisplayNGradientTesteye1
 	| AvatarItemDisplayNGradientTesthair0

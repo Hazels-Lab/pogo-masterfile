@@ -35,6 +35,134 @@ export type AvatarCustomizationFHairDefault1 = S<
 		}
 	>
 >;
+export type AvatarCustomizationFHairDefault2 = S<
+	AvatarCustomization<
+		"AVATAR_f_hair_default_2",
+		{
+			assetName: "f_hair_default_2";
+			avatarType: "PLAYER_AVATAR_FEMALE";
+			bundleName: "f_hair_default_asset_bundle";
+			enabled: true;
+			groupName: "group_hair";
+			iconName: "f_group_hair";
+			slot: ["HAIR"];
+			sortOrder: 100648;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
+export type AvatarCustomizationFHairDefault3 = S<
+	AvatarCustomization<
+		"AVATAR_f_hair_default_3",
+		{
+			assetName: "f_hair_default_3";
+			avatarType: "PLAYER_AVATAR_FEMALE";
+			bundleName: "f_hair_default_asset_bundle";
+			enabled: true;
+			groupName: "group_hair";
+			iconName: "f_group_hair";
+			slot: ["HAIR"];
+			sortOrder: 100634;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
+export type AvatarCustomizationFHairDefault4 = S<
+	AvatarCustomization<
+		"AVATAR_f_hair_default_4",
+		{
+			assetName: "f_hair_default_4";
+			avatarType: "PLAYER_AVATAR_FEMALE";
+			bundleName: "f_hair_default_asset_bundle";
+			enabled: true;
+			groupName: "group_hair";
+			iconName: "f_group_hair";
+			slot: ["HAIR"];
+			sortOrder: 100629;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
+export type AvatarCustomizationFHairDefault5 = S<
+	AvatarCustomization<
+		"AVATAR_f_hair_default_5",
+		{
+			assetName: "f_hair_default_5";
+			avatarType: "PLAYER_AVATAR_FEMALE";
+			bundleName: "f_hair_default_asset_bundle";
+			enabled: true;
+			groupName: "group_hair";
+			iconName: "f_group_hair";
+			slot: ["HAIR"];
+			sortOrder: 100646;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
+export type AvatarCustomizationFHairDefault6 = S<
+	AvatarCustomization<
+		"AVATAR_f_hair_default_6",
+		{
+			assetName: "f_hair_default_6";
+			avatarType: "PLAYER_AVATAR_FEMALE";
+			bundleName: "f_hair_default_asset_bundle";
+			enabled: true;
+			groupName: "group_hair";
+			iconName: "f_group_hair";
+			slot: ["HAIR"];
+			sortOrder: 100644;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
+export type AvatarCustomizationFHairDefault7 = S<
+	AvatarCustomization<
+		"AVATAR_f_hair_default_7",
+		{
+			assetName: "f_hair_default_7";
+			avatarType: "PLAYER_AVATAR_FEMALE";
+			bundleName: "f_hair_default_asset_bundle";
+			enabled: true;
+			groupName: "group_hair";
+			iconName: "f_group_hair";
+			slot: ["HAIR"];
+			sortOrder: 100638;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
+export type AvatarCustomizationFHairDefault8 = S<
+	AvatarCustomization<
+		"AVATAR_f_hair_default_8",
+		{
+			assetName: "f_hair_default_8";
+			avatarType: "PLAYER_AVATAR_FEMALE";
+			bundleName: "f_hair_default_asset_bundle";
+			enabled: true;
+			groupName: "group_hair";
+			iconName: "f_group_hair";
+			slot: ["HAIR"];
+			sortOrder: 100647;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
+export type AvatarCustomizationFHairDefault9 = S<
+	AvatarCustomization<
+		"AVATAR_f_hair_default_9",
+		{
+			assetName: "f_hair_default_9";
+			avatarType: "PLAYER_AVATAR_FEMALE";
+			bundleName: "f_hair_default_asset_bundle";
+			enabled: true;
+			groupName: "group_hair";
+			iconName: "f_group_hair";
+			slot: ["HAIR"];
+			sortOrder: 100635;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
 export type AvatarCustomizationFHairDefault10 = S<
 	AvatarCustomization<
 		"AVATAR_f_hair_default_10",
@@ -195,134 +323,6 @@ export type AvatarCustomizationFHairDefault19 = S<
 		}
 	>
 >;
-export type AvatarCustomizationFHairDefault2 = S<
-	AvatarCustomization<
-		"AVATAR_f_hair_default_2",
-		{
-			assetName: "f_hair_default_2";
-			avatarType: "PLAYER_AVATAR_FEMALE";
-			bundleName: "f_hair_default_asset_bundle";
-			enabled: true;
-			groupName: "group_hair";
-			iconName: "f_group_hair";
-			slot: ["HAIR"];
-			sortOrder: 100648;
-			unlockType: "DEFAULT";
-		}
-	>
->;
-export type AvatarCustomizationFHairDefault3 = S<
-	AvatarCustomization<
-		"AVATAR_f_hair_default_3",
-		{
-			assetName: "f_hair_default_3";
-			avatarType: "PLAYER_AVATAR_FEMALE";
-			bundleName: "f_hair_default_asset_bundle";
-			enabled: true;
-			groupName: "group_hair";
-			iconName: "f_group_hair";
-			slot: ["HAIR"];
-			sortOrder: 100634;
-			unlockType: "DEFAULT";
-		}
-	>
->;
-export type AvatarCustomizationFHairDefault4 = S<
-	AvatarCustomization<
-		"AVATAR_f_hair_default_4",
-		{
-			assetName: "f_hair_default_4";
-			avatarType: "PLAYER_AVATAR_FEMALE";
-			bundleName: "f_hair_default_asset_bundle";
-			enabled: true;
-			groupName: "group_hair";
-			iconName: "f_group_hair";
-			slot: ["HAIR"];
-			sortOrder: 100629;
-			unlockType: "DEFAULT";
-		}
-	>
->;
-export type AvatarCustomizationFHairDefault5 = S<
-	AvatarCustomization<
-		"AVATAR_f_hair_default_5",
-		{
-			assetName: "f_hair_default_5";
-			avatarType: "PLAYER_AVATAR_FEMALE";
-			bundleName: "f_hair_default_asset_bundle";
-			enabled: true;
-			groupName: "group_hair";
-			iconName: "f_group_hair";
-			slot: ["HAIR"];
-			sortOrder: 100646;
-			unlockType: "DEFAULT";
-		}
-	>
->;
-export type AvatarCustomizationFHairDefault6 = S<
-	AvatarCustomization<
-		"AVATAR_f_hair_default_6",
-		{
-			assetName: "f_hair_default_6";
-			avatarType: "PLAYER_AVATAR_FEMALE";
-			bundleName: "f_hair_default_asset_bundle";
-			enabled: true;
-			groupName: "group_hair";
-			iconName: "f_group_hair";
-			slot: ["HAIR"];
-			sortOrder: 100644;
-			unlockType: "DEFAULT";
-		}
-	>
->;
-export type AvatarCustomizationFHairDefault7 = S<
-	AvatarCustomization<
-		"AVATAR_f_hair_default_7",
-		{
-			assetName: "f_hair_default_7";
-			avatarType: "PLAYER_AVATAR_FEMALE";
-			bundleName: "f_hair_default_asset_bundle";
-			enabled: true;
-			groupName: "group_hair";
-			iconName: "f_group_hair";
-			slot: ["HAIR"];
-			sortOrder: 100638;
-			unlockType: "DEFAULT";
-		}
-	>
->;
-export type AvatarCustomizationFHairDefault8 = S<
-	AvatarCustomization<
-		"AVATAR_f_hair_default_8",
-		{
-			assetName: "f_hair_default_8";
-			avatarType: "PLAYER_AVATAR_FEMALE";
-			bundleName: "f_hair_default_asset_bundle";
-			enabled: true;
-			groupName: "group_hair";
-			iconName: "f_group_hair";
-			slot: ["HAIR"];
-			sortOrder: 100647;
-			unlockType: "DEFAULT";
-		}
-	>
->;
-export type AvatarCustomizationFHairDefault9 = S<
-	AvatarCustomization<
-		"AVATAR_f_hair_default_9",
-		{
-			assetName: "f_hair_default_9";
-			avatarType: "PLAYER_AVATAR_FEMALE";
-			bundleName: "f_hair_default_asset_bundle";
-			enabled: true;
-			groupName: "group_hair";
-			iconName: "f_group_hair";
-			slot: ["HAIR"];
-			sortOrder: 100635;
-			unlockType: "DEFAULT";
-		}
-	>
->;
 export type AvatarCustomizationMHairDefault0 = S<
 	AvatarCustomization<
 		"AVATAR_m_hair_default_0",
@@ -349,6 +349,126 @@ export type AvatarCustomizationMHairDefault1 = S<
 			iconName: "m_group_hair";
 			slot: ["HAIR"];
 			sortOrder: 100274;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
+export type AvatarCustomizationMHairDefault2 = S<
+	AvatarCustomization<
+		"AVATAR_m_hair_default_2",
+		{
+			assetName: "m_hair_default_2";
+			bundleName: "m_hair_default_asset_bundle";
+			enabled: true;
+			groupName: "group_hair";
+			iconName: "m_group_hair";
+			slot: ["HAIR"];
+			sortOrder: 100283;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
+export type AvatarCustomizationMHairDefault3 = S<
+	AvatarCustomization<
+		"AVATAR_m_hair_default_3",
+		{
+			assetName: "m_hair_default_3";
+			bundleName: "m_hair_default_asset_bundle";
+			enabled: true;
+			groupName: "group_hair";
+			iconName: "m_group_hair";
+			slot: ["HAIR"];
+			sortOrder: 100269;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
+export type AvatarCustomizationMHairDefault4 = S<
+	AvatarCustomization<
+		"AVATAR_m_hair_default_4",
+		{
+			assetName: "m_hair_default_4";
+			bundleName: "m_hair_default_asset_bundle";
+			enabled: true;
+			groupName: "group_hair";
+			iconName: "m_group_hair";
+			slot: ["HAIR"];
+			sortOrder: 100264;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
+export type AvatarCustomizationMHairDefault5 = S<
+	AvatarCustomization<
+		"AVATAR_m_hair_default_5",
+		{
+			assetName: "m_hair_default_5";
+			bundleName: "m_hair_default_asset_bundle";
+			enabled: true;
+			groupName: "group_hair";
+			iconName: "m_group_hair";
+			slot: ["HAIR"];
+			sortOrder: 100281;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
+export type AvatarCustomizationMHairDefault6 = S<
+	AvatarCustomization<
+		"AVATAR_m_hair_default_6",
+		{
+			assetName: "m_hair_default_6";
+			bundleName: "m_hair_default_asset_bundle";
+			enabled: true;
+			groupName: "group_hair";
+			iconName: "m_group_hair";
+			slot: ["HAIR"];
+			sortOrder: 100279;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
+export type AvatarCustomizationMHairDefault7 = S<
+	AvatarCustomization<
+		"AVATAR_m_hair_default_7",
+		{
+			assetName: "m_hair_default_7";
+			bundleName: "m_hair_default_asset_bundle";
+			enabled: true;
+			groupName: "group_hair";
+			iconName: "m_group_hair";
+			slot: ["HAIR"];
+			sortOrder: 100273;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
+export type AvatarCustomizationMHairDefault8 = S<
+	AvatarCustomization<
+		"AVATAR_m_hair_default_8",
+		{
+			assetName: "m_hair_default_8";
+			bundleName: "m_hair_default_asset_bundle";
+			enabled: true;
+			groupName: "group_hair";
+			iconName: "m_group_hair";
+			slot: ["HAIR"];
+			sortOrder: 100282;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
+export type AvatarCustomizationMHairDefault9 = S<
+	AvatarCustomization<
+		"AVATAR_m_hair_default_9",
+		{
+			assetName: "m_hair_default_9";
+			bundleName: "m_hair_default_asset_bundle";
+			enabled: true;
+			groupName: "group_hair";
+			iconName: "m_group_hair";
+			slot: ["HAIR"];
+			sortOrder: 100270;
 			unlockType: "DEFAULT";
 		}
 	>
@@ -503,130 +623,18 @@ export type AvatarCustomizationMHairDefault19 = S<
 		}
 	>
 >;
-export type AvatarCustomizationMHairDefault2 = S<
-	AvatarCustomization<
-		"AVATAR_m_hair_default_2",
-		{
-			assetName: "m_hair_default_2";
-			bundleName: "m_hair_default_asset_bundle";
-			enabled: true;
-			groupName: "group_hair";
-			iconName: "m_group_hair";
-			slot: ["HAIR"];
-			sortOrder: 100283;
-			unlockType: "DEFAULT";
-		}
-	>
->;
-export type AvatarCustomizationMHairDefault3 = S<
-	AvatarCustomization<
-		"AVATAR_m_hair_default_3",
-		{
-			assetName: "m_hair_default_3";
-			bundleName: "m_hair_default_asset_bundle";
-			enabled: true;
-			groupName: "group_hair";
-			iconName: "m_group_hair";
-			slot: ["HAIR"];
-			sortOrder: 100269;
-			unlockType: "DEFAULT";
-		}
-	>
->;
-export type AvatarCustomizationMHairDefault4 = S<
-	AvatarCustomization<
-		"AVATAR_m_hair_default_4",
-		{
-			assetName: "m_hair_default_4";
-			bundleName: "m_hair_default_asset_bundle";
-			enabled: true;
-			groupName: "group_hair";
-			iconName: "m_group_hair";
-			slot: ["HAIR"];
-			sortOrder: 100264;
-			unlockType: "DEFAULT";
-		}
-	>
->;
-export type AvatarCustomizationMHairDefault5 = S<
-	AvatarCustomization<
-		"AVATAR_m_hair_default_5",
-		{
-			assetName: "m_hair_default_5";
-			bundleName: "m_hair_default_asset_bundle";
-			enabled: true;
-			groupName: "group_hair";
-			iconName: "m_group_hair";
-			slot: ["HAIR"];
-			sortOrder: 100281;
-			unlockType: "DEFAULT";
-		}
-	>
->;
-export type AvatarCustomizationMHairDefault6 = S<
-	AvatarCustomization<
-		"AVATAR_m_hair_default_6",
-		{
-			assetName: "m_hair_default_6";
-			bundleName: "m_hair_default_asset_bundle";
-			enabled: true;
-			groupName: "group_hair";
-			iconName: "m_group_hair";
-			slot: ["HAIR"];
-			sortOrder: 100279;
-			unlockType: "DEFAULT";
-		}
-	>
->;
-export type AvatarCustomizationMHairDefault7 = S<
-	AvatarCustomization<
-		"AVATAR_m_hair_default_7",
-		{
-			assetName: "m_hair_default_7";
-			bundleName: "m_hair_default_asset_bundle";
-			enabled: true;
-			groupName: "group_hair";
-			iconName: "m_group_hair";
-			slot: ["HAIR"];
-			sortOrder: 100273;
-			unlockType: "DEFAULT";
-		}
-	>
->;
-export type AvatarCustomizationMHairDefault8 = S<
-	AvatarCustomization<
-		"AVATAR_m_hair_default_8",
-		{
-			assetName: "m_hair_default_8";
-			bundleName: "m_hair_default_asset_bundle";
-			enabled: true;
-			groupName: "group_hair";
-			iconName: "m_group_hair";
-			slot: ["HAIR"];
-			sortOrder: 100282;
-			unlockType: "DEFAULT";
-		}
-	>
->;
-export type AvatarCustomizationMHairDefault9 = S<
-	AvatarCustomization<
-		"AVATAR_m_hair_default_9",
-		{
-			assetName: "m_hair_default_9";
-			bundleName: "m_hair_default_asset_bundle";
-			enabled: true;
-			groupName: "group_hair";
-			iconName: "m_group_hair";
-			slot: ["HAIR"];
-			sortOrder: 100270;
-			unlockType: "DEFAULT";
-		}
-	>
->;
 
 export type AvatarCustomizationHairMasterfileEntry =
 	| AvatarCustomizationFHairDefault0
 	| AvatarCustomizationFHairDefault1
+	| AvatarCustomizationFHairDefault2
+	| AvatarCustomizationFHairDefault3
+	| AvatarCustomizationFHairDefault4
+	| AvatarCustomizationFHairDefault5
+	| AvatarCustomizationFHairDefault6
+	| AvatarCustomizationFHairDefault7
+	| AvatarCustomizationFHairDefault8
+	| AvatarCustomizationFHairDefault9
 	| AvatarCustomizationFHairDefault10
 	| AvatarCustomizationFHairDefault11
 	| AvatarCustomizationFHairDefault12
@@ -637,16 +645,16 @@ export type AvatarCustomizationHairMasterfileEntry =
 	| AvatarCustomizationFHairDefault17
 	| AvatarCustomizationFHairDefault18
 	| AvatarCustomizationFHairDefault19
-	| AvatarCustomizationFHairDefault2
-	| AvatarCustomizationFHairDefault3
-	| AvatarCustomizationFHairDefault4
-	| AvatarCustomizationFHairDefault5
-	| AvatarCustomizationFHairDefault6
-	| AvatarCustomizationFHairDefault7
-	| AvatarCustomizationFHairDefault8
-	| AvatarCustomizationFHairDefault9
 	| AvatarCustomizationMHairDefault0
 	| AvatarCustomizationMHairDefault1
+	| AvatarCustomizationMHairDefault2
+	| AvatarCustomizationMHairDefault3
+	| AvatarCustomizationMHairDefault4
+	| AvatarCustomizationMHairDefault5
+	| AvatarCustomizationMHairDefault6
+	| AvatarCustomizationMHairDefault7
+	| AvatarCustomizationMHairDefault8
+	| AvatarCustomizationMHairDefault9
 	| AvatarCustomizationMHairDefault10
 	| AvatarCustomizationMHairDefault11
 	| AvatarCustomizationMHairDefault12
@@ -656,12 +664,4 @@ export type AvatarCustomizationHairMasterfileEntry =
 	| AvatarCustomizationMHairDefault16
 	| AvatarCustomizationMHairDefault17
 	| AvatarCustomizationMHairDefault18
-	| AvatarCustomizationMHairDefault19
-	| AvatarCustomizationMHairDefault2
-	| AvatarCustomizationMHairDefault3
-	| AvatarCustomizationMHairDefault4
-	| AvatarCustomizationMHairDefault5
-	| AvatarCustomizationMHairDefault6
-	| AvatarCustomizationMHairDefault7
-	| AvatarCustomizationMHairDefault8
-	| AvatarCustomizationMHairDefault9;
+	| AvatarCustomizationMHairDefault19;

@@ -19,10 +19,488 @@ pub enum IapItemDisplayTemplateId {
     April32026DeluxeEventPassTrackUnlock,
     #[serde(rename = "APRIL3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
     April32026DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "battlepassticket.1")]
+    Battlepassticket1,
     #[serde(rename = "BUNDLE_EC_200_RPP_1")]
     BundleEc200Rpp1,
     #[serde(rename = "BUNDLE_EC_600_RPP_3")]
     BundleEc600Rpp3,
+    #[serde(rename = "bundle.adventurebrazil100.1")]
+    BundleAdventurebrazil1001,
+    #[serde(rename = "bundle.adventurebrazil200.1")]
+    BundleAdventurebrazil2001,
+    #[serde(rename = "bundle.anniversary2023.1")]
+    BundleAnniversary20231,
+    #[serde(rename = "bundle.apacmar2025.1")]
+    BundleApacmar20251,
+    #[serde(rename = "bundle.arraia2025.1")]
+    BundleArraia20251,
+    #[serde(rename = "bundle.arraia2025.2")]
+    BundleArraia20252,
+    #[serde(rename = "bundle.atlanticav2box.1")]
+    BundleAtlanticav2box1,
+    #[serde(rename = "bundle.atlanticav2box.2")]
+    BundleAtlanticav2box2,
+    #[serde(rename = "bundle.blackfridaystickers24.1")]
+    BundleBlackfridaystickers241,
+    #[serde(rename = "bundle.blackfridaystickers24.2")]
+    BundleBlackfridaystickers242,
+    #[serde(rename = "bundle.boost2023.1")]
+    BundleBoost20231,
+    #[serde(rename = "bundle.brazil2023.1")]
+    BundleBrazil20231,
+    #[serde(rename = "bundle.brazilrediscover1.1")]
+    BundleBrazilrediscover11,
+    #[serde(rename = "bundle.brazilrediscover2.1")]
+    BundleBrazilrediscover21,
+    #[serde(rename = "bundle.brazilvacations100.1")]
+    BundleBrazilvacations1001,
+    #[serde(rename = "bundle.carnival2025.1")]
+    BundleCarnival20251,
+    #[serde(rename = "bundle.carnival2025.2")]
+    BundleCarnival20252,
+    #[serde(rename = "bundle.cd2022.1")]
+    BundleCd20221,
+    #[serde(rename = "bundle.cd2022.2")]
+    BundleCd20222,
+    #[serde(rename = "bundle.cdrecapstickers.1")]
+    BundleCdrecapstickers1,
+    #[serde(rename = "bundle.citysafari450hktw.1")]
+    BundleCitysafari450hktw1,
+    #[serde(rename = "bundle.cswkmakegoodprep.100.1")]
+    BundleCswkmakegoodprep1001,
+    #[serde(rename = "bundle.cswkmakegoodprep.200.1")]
+    BundleCswkmakegoodprep2001,
+    #[serde(rename = "bundle.cswkmakegoodprep.300.1")]
+    BundleCswkmakegoodprep3001,
+    #[serde(rename = "bundle.decroutes2023.1")]
+    BundleDecroutes20231,
+    #[serde(rename = "bundle.diademuertos2025.1")]
+    BundleDiademuertos20251,
+    #[serde(rename = "bundle.diademuertosmax100.1")]
+    BundleDiademuertosmax1001,
+    #[serde(rename = "bundle.diademuertosmax200.1")]
+    BundleDiademuertosmax2001,
+    #[serde(rename = "bundle.diwali2025.1")]
+    BundleDiwali20251,
+    #[serde(rename = "bundle.diwali2025.2")]
+    BundleDiwali20252,
+    #[serde(rename = "bundle.diwalimax100.1")]
+    BundleDiwalimax1001,
+    #[serde(rename = "bundle.EliteExp2024.1")]
+    BundleEliteExp20241,
+    #[serde(rename = "bundle.EliteExp2024.2")]
+    BundleEliteExp20242,
+    #[serde(rename = "bundle.EliteExp2024.3")]
+    BundleEliteExp20243,
+    #[serde(rename = "bundle.EliteExp2024.4")]
+    BundleEliteExp20244,
+    #[serde(rename = "bundle.EliteExp2024.5")]
+    BundleEliteExp20245,
+    #[serde(rename = "bundle.emcarnival2026.1")]
+    BundleEmcarnival20261,
+    #[serde(rename = "bundle.emcarnival2026.2")]
+    BundleEmcarnival20262,
+    #[serde(rename = "bundle.emea2023.1")]
+    BundleEmea20231,
+    #[serde(rename = "bundle.evolve2022.1")]
+    BundleEvolve20221,
+    #[serde(rename = "bundle.evolve2022.2")]
+    BundleEvolve20222,
+    #[serde(rename = "bundle.evolve2022.3")]
+    BundleEvolve20223,
+    #[serde(rename = "bundle.evolve2022.4")]
+    BundleEvolve20224,
+    #[serde(rename = "bundle.evolve2022.5")]
+    BundleEvolve20225,
+    #[serde(rename = "bundle.evolve2022.6")]
+    BundleEvolve20226,
+    #[serde(rename = "bundle.fol2022.1")]
+    BundleFol20221,
+    #[serde(rename = "bundle.fol2022.2")]
+    BundleFol20222,
+    #[serde(rename = "bundle.fol2022.3")]
+    BundleFol20223,
+    #[serde(rename = "bundle.fol2022.4")]
+    BundleFol20224,
+    #[serde(rename = "bundle.general.template4")]
+    BundleGeneralTemplate4,
+    #[serde(rename = "bundle.general.template5")]
+    BundleGeneralTemplate5,
+    #[serde(rename = "bundle.general.template6")]
+    BundleGeneralTemplate6,
+    #[serde(rename = "bundle.general1.free.1")]
+    BundleGeneral1Free1,
+    #[serde(rename = "bundle.general1.large.1")]
+    BundleGeneral1Large1,
+    #[serde(rename = "bundle.general1.medium.1")]
+    BundleGeneral1Medium1,
+    #[serde(rename = "bundle.general1.medium.2")]
+    BundleGeneral1Medium2,
+    #[serde(rename = "bundle.general1.medium.3")]
+    BundleGeneral1Medium3,
+    #[serde(rename = "bundle.general1.rocket.1")]
+    BundleGeneral1Rocket1,
+    #[serde(rename = "bundle.general1.small.1")]
+    BundleGeneral1Small1,
+    #[serde(rename = "bundle.general1.tiny.2")]
+    BundleGeneral1Tiny2,
+    #[serde(rename = "bundle.general1.tiny.3")]
+    BundleGeneral1Tiny3,
+    #[serde(rename = "bundle.general1.tiny.4")]
+    BundleGeneral1Tiny4,
+    #[serde(rename = "bundle.general2.free.1")]
+    BundleGeneral2Free1,
+    #[serde(rename = "bundle.general2.large.1")]
+    BundleGeneral2Large1,
+    #[serde(rename = "bundle.general2.medium.1")]
+    BundleGeneral2Medium1,
+    #[serde(rename = "bundle.general2.small.1")]
+    BundleGeneral2Small1,
+    #[serde(rename = "bundle.general3.free.1")]
+    BundleGeneral3Free1,
+    #[serde(rename = "bundle.general3.large.1")]
+    BundleGeneral3Large1,
+    #[serde(rename = "bundle.general3.small.1")]
+    BundleGeneral3Small1,
+    #[serde(rename = "bundle.general4.large.1")]
+    BundleGeneral4Large1,
+    #[serde(rename = "bundle.general4.small.2")]
+    BundleGeneral4Small2,
+    #[serde(rename = "bundle.general5.large.1")]
+    BundleGeneral5Large1,
+    #[serde(rename = "bundle.general5.small.1")]
+    BundleGeneral5Small1,
+    #[serde(rename = "bundle.general5.small.2")]
+    BundleGeneral5Small2,
+    #[serde(rename = "bundle.general5.small.3")]
+    BundleGeneral5Small3,
+    #[serde(rename = "bundle.general5.small.4")]
+    BundleGeneral5Small4,
+    #[serde(rename = "bundle.general5.small.5")]
+    BundleGeneral5Small5,
+    #[serde(rename = "bundle.general6.small.1")]
+    BundleGeneral6Small1,
+    #[serde(rename = "bundle.gmaxday.1")]
+    BundleGmaxday1,
+    #[serde(rename = "bundle.gofest2023.1")]
+    BundleGofest20231,
+    #[serde(rename = "bundle.gofest2023.2")]
+    BundleGofest20232,
+    #[serde(rename = "bundle.gofest2023.3")]
+    BundleGofest20233,
+    #[serde(rename = "bundle.gofest2023.4")]
+    BundleGofest20234,
+    #[serde(rename = "bundle.gofest2023.5")]
+    BundleGofest20235,
+    #[serde(rename = "bundle.gofest2024.1")]
+    BundleGofest20241,
+    #[serde(rename = "bundle.gofest2024.2")]
+    BundleGofest20242,
+    #[serde(rename = "bundle.gofest2024.3")]
+    BundleGofest20243,
+    #[serde(rename = "bundle.gofest2024.4")]
+    BundleGofest20244,
+    #[serde(rename = "bundle.gofestmakegoodprep.1")]
+    BundleGofestmakegoodprep1,
+    #[serde(rename = "bundle.gofestmakegoodprep.2")]
+    BundleGofestmakegoodprep2,
+    #[serde(rename = "bundle.gofestmakegoodprep.3")]
+    BundleGofestmakegoodprep3,
+    #[serde(rename = "bundle.GOTour2024.1")]
+    BundleGotour20241,
+    #[serde(rename = "bundle.GOTour2024.2")]
+    BundleGotour20242,
+    #[serde(rename = "bundle.GOTour2024.3")]
+    BundleGotour20243,
+    #[serde(rename = "bundle.GOTour2024.4")]
+    BundleGotour20244,
+    #[serde(rename = "bundle.GOTour2024.5")]
+    BundleGotour20245,
+    #[serde(rename = "bundle.GOTour2024.6")]
+    BundleGotour20246,
+    #[serde(rename = "bundle.GOTour2024.7")]
+    BundleGotour20247,
+    #[serde(rename = "bundle.gowa2024.1")]
+    BundleGowa20241,
+    #[serde(rename = "bundle.gowa2024.2")]
+    BundleGowa20242,
+    #[serde(rename = "bundle.gowa2024.3")]
+    BundleGowa20243,
+    #[serde(rename = "bundle.gowa2024.4")]
+    BundleGowa20244,
+    #[serde(rename = "bundle.gpdindialaunch.1")]
+    BundleGpdindialaunch1,
+    #[serde(rename = "bundle.gpmay2023.1")]
+    BundleGpmay20231,
+    #[serde(rename = "bundle.gwlatam2025.1")]
+    BundleGwlatam20251,
+    #[serde(rename = "bundle.gwlatam2025.2")]
+    BundleGwlatam20252,
+    #[serde(rename = "bundle.gwlatam2025.3")]
+    BundleGwlatam20253,
+    #[serde(rename = "bundle.halloween.adventure.1")]
+    BundleHalloweenAdventure1,
+    #[serde(rename = "bundle.halloween.large.1")]
+    BundleHalloweenLarge1,
+    #[serde(rename = "bundle.halloween.small.1")]
+    BundleHalloweenSmall1,
+    #[serde(rename = "bundle.halloween2022.1")]
+    BundleHalloween20221,
+    #[serde(rename = "bundle.halloween2022.2")]
+    BundleHalloween20222,
+    #[serde(rename = "bundle.halloween2022.3")]
+    BundleHalloween20223,
+    #[serde(rename = "bundle.halloween2023.1")]
+    BundleHalloween20231,
+    #[serde(rename = "bundle.halloween2023.2")]
+    BundleHalloween20232,
+    #[serde(rename = "bundle.halloween2023.3")]
+    BundleHalloween20233,
+    #[serde(rename = "bundle.halloween2025.1")]
+    BundleHalloween20251,
+    #[serde(rename = "bundle.halloween2025.2")]
+    BundleHalloween20252,
+    #[serde(rename = "bundle.halloween2025.3")]
+    BundleHalloween20253,
+    #[serde(rename = "bundle.harvestcatch.1")]
+    BundleHarvestcatch1,
+    #[serde(rename = "bundle.harvestfestival.2025")]
+    BundleHarvestfestival2025,
+    #[serde(rename = "bundle.hatchbox2024.1")]
+    BundleHatchbox20241,
+    #[serde(rename = "bundle.hawlucha2025.1")]
+    BundleHawlucha20251,
+    #[serde(rename = "bundle.hawlucha2025.2")]
+    BundleHawlucha20252,
+    #[serde(rename = "bundle.hawluchacelebration100.1")]
+    BundleHawluchacelebration1001,
+    #[serde(rename = "bundle.hawluchacelebration200.1")]
+    BundleHawluchacelebration2001,
+    #[serde(rename = "bundle.hisuiraidday2023.1")]
+    BundleHisuiraidday20231,
+    #[serde(rename = "bundle.holi2025.1")]
+    BundleHoli20251,
+    #[serde(rename = "bundle.holi2025.2")]
+    BundleHoli20252,
+    #[serde(rename = "bundle.holiday2022.1")]
+    BundleHoliday20221,
+    #[serde(rename = "bundle.holiday2022.2")]
+    BundleHoliday20222,
+    #[serde(rename = "bundle.holiday2022.3")]
+    BundleHoliday20223,
+    #[serde(rename = "bundle.holiday2024.1")]
+    BundleHoliday20241,
+    #[serde(rename = "bundle.incenseday.1")]
+    BundleIncenseday1,
+    #[serde(rename = "bundle.indiaaugust100.1")]
+    BundleIndiaaugust1001,
+    #[serde(rename = "bundle.indiaboxfeature.1")]
+    BundleIndiaboxfeature1,
+    #[serde(rename = "bundle.indiafestivaloflights.1")]
+    BundleIndiafestivaloflights1,
+    #[serde(rename = "bundle.indiamay2024.1")]
+    BundleIndiamay20241,
+    #[serde(rename = "bundle.indiaseptember100.1")]
+    BundleIndiaseptember1001,
+    #[serde(rename = "bundle.indiaseptember200.1")]
+    BundleIndiaseptember2001,
+    #[serde(rename = "bundle.indonesiaboxfeature.1")]
+    BundleIndonesiaboxfeature1,
+    #[serde(rename = "bundle.indonesialaunch.1")]
+    BundleIndonesialaunch1,
+    #[serde(rename = "bundle.indonesialaunch.2")]
+    BundleIndonesialaunch2,
+    #[serde(rename = "bundle.jakartaaugust100.1")]
+    BundleJakartaaugust1001,
+    #[serde(rename = "bundle.koreaseptember100.1")]
+    BundleKoreaseptember1001,
+    #[serde(rename = "bundle.koreaseptember200.1")]
+    BundleKoreaseptember2001,
+    #[serde(rename = "bundle.ksalaunch100.1")]
+    BundleKsalaunch1001,
+    #[serde(rename = "bundle.ksalaunch200.1")]
+    BundleKsalaunch2001,
+    #[serde(rename = "bundle.latbox100.1")]
+    BundleLatbox1001,
+    #[serde(rename = "bundle.latbox300.1")]
+    BundleLatbox3001,
+    #[serde(rename = "bundle.lunarnewyear.1")]
+    BundleLunarnewyear1,
+    #[serde(rename = "bundle.maxfinale.1")]
+    BundleMaxfinale1,
+    #[serde(rename = "bundle.maxfinale.2")]
+    BundleMaxfinale2,
+    #[serde(rename = "bundle.maxmonday.1")]
+    BundleMaxmonday1,
+    #[serde(rename = "bundle.mega-lucario-raid-day2024.1")]
+    BundleMegaLucarioRaidDay20241,
+    #[serde(rename = "bundle.mheracrossraidday2024.1")]
+    BundleMheracrossraidday20241,
+    #[serde(rename = "bundle.midautumn.1")]
+    BundleMidautumn1,
+    #[serde(rename = "bundle.midautumn.2")]
+    BundleMidautumn2,
+    #[serde(rename = "bundle.midautumn.3")]
+    BundleMidautumn3,
+    #[serde(rename = "bundle.newyears2024.1")]
+    BundleNewyears20241,
+    #[serde(rename = "bundle.playsummerbox.1")]
+    BundlePlaysummerbox1,
+    #[serde(rename = "bundle.primalraidday2023.1")]
+    BundlePrimalraidday20231,
+    #[serde(rename = "bundle.psych_spec_2022.1")]
+    BundlePsychSpec20221,
+    #[serde(rename = "bundle.psych_spec_2022.2")]
+    BundlePsychSpec20222,
+    #[serde(rename = "bundle.psych_spec_2022.3")]
+    BundlePsychSpec20223,
+    #[serde(rename = "bundle.ramadan.1")]
+    BundleRamadan1,
+    #[serde(rename = "bundle.ramadan.2")]
+    BundleRamadan2,
+    #[serde(rename = "bundle.rarebundle.1")]
+    BundleRarebundle1,
+    #[serde(rename = "bundle.rarebundle.2")]
+    BundleRarebundle2,
+    #[serde(rename = "bundle.rarebundle.3")]
+    BundleRarebundle3,
+    #[serde(rename = "bundle.rarebundle.4")]
+    BundleRarebundle4,
+    #[serde(rename = "bundle.riolu2023.1")]
+    BundleRiolu20231,
+    #[serde(rename = "bundle.riolu2023.2")]
+    BundleRiolu20232,
+    #[serde(rename = "bundle.rockruffboost.1")]
+    BundleRockruffboost1,
+    #[serde(rename = "bundle.rrpstar.1")]
+    BundleRrpstar1,
+    #[serde(rename = "bundle.s17seasonstart.1")]
+    BundleS17seasonstart1,
+    #[serde(rename = "bundle.season10evergreen.1")]
+    BundleSeason10evergreen1,
+    #[serde(rename = "bundle.season10evergreen.2")]
+    BundleSeason10evergreen2,
+    #[serde(rename = "bundle.season10evergreen.3")]
+    BundleSeason10evergreen3,
+    #[serde(rename = "bundle.season11evergreen.1")]
+    BundleSeason11evergreen1,
+    #[serde(rename = "bundle.season11evergreen.2")]
+    BundleSeason11evergreen2,
+    #[serde(rename = "bundle.season11evergreen.3")]
+    BundleSeason11evergreen3,
+    #[serde(rename = "bundle.season12evergreen2023.1")]
+    BundleSeason12evergreen20231,
+    #[serde(rename = "bundle.season12evergreen2023.2")]
+    BundleSeason12evergreen20232,
+    #[serde(rename = "bundle.season12evergreen2023.3")]
+    BundleSeason12evergreen20233,
+    #[serde(rename = "bundle.season13evergreen2023.1")]
+    BundleSeason13evergreen20231,
+    #[serde(rename = "bundle.season13evergreen2023.2")]
+    BundleSeason13evergreen20232,
+    #[serde(rename = "bundle.season13evergreen2023.3")]
+    BundleSeason13evergreen20233,
+    #[serde(rename = "bundle.season14evergreen2024.1")]
+    BundleSeason14evergreen20241,
+    #[serde(rename = "bundle.season14evergreen2024.2")]
+    BundleSeason14evergreen20242,
+    #[serde(rename = "bundle.season14evergreen2024.3")]
+    BundleSeason14evergreen20243,
+    #[serde(rename = "bundle.season15evergreen2024.1")]
+    BundleSeason15evergreen20241,
+    #[serde(rename = "bundle.season15evergreen2024.2")]
+    BundleSeason15evergreen20242,
+    #[serde(rename = "bundle.season15evergreen2024.3")]
+    BundleSeason15evergreen20243,
+    #[serde(rename = "bundle.season16evergreen2024.1")]
+    BundleSeason16evergreen20241,
+    #[serde(rename = "bundle.season16evergreen2024.2")]
+    BundleSeason16evergreen20242,
+    #[serde(rename = "bundle.season16evergreen2024.3")]
+    BundleSeason16evergreen20243,
+    #[serde(rename = "bundle.seasonaldelights2024.1")]
+    BundleSeasonaldelights20241,
+    #[serde(rename = "bundle.shadowlugia.1")]
+    BundleShadowlugia1,
+    #[serde(rename = "bundle.smoresbump.2025")]
+    BundleSmoresbump2025,
+    #[serde(rename = "bundle.solstice2023.1")]
+    BundleSolstice20231,
+    #[serde(rename = "bundle.solstice2023.2")]
+    BundleSolstice20232,
+    #[serde(rename = "bundle.solstice2023.3")]
+    BundleSolstice20233,
+    #[serde(rename = "bundle.songkran2025.1")]
+    BundleSongkran20251,
+    #[serde(rename = "bundle.sparkbox.1")]
+    BundleSparkbox1,
+    #[serde(rename = "bundle.sparkbox.2")]
+    BundleSparkbox2,
+    #[serde(rename = "bundle.sparkbox.3")]
+    BundleSparkbox3,
+    #[serde(rename = "bundle.springtakeover2023.1")]
+    BundleSpringtakeover20231,
+    #[serde(rename = "bundle.springtakeover2023.2")]
+    BundleSpringtakeover20232,
+    #[serde(rename = "bundle.springtakeover2023.3")]
+    BundleSpringtakeover20233,
+    #[serde(rename = "bundle.steel_mettle2022.1")]
+    BundleSteelMettle20221,
+    #[serde(rename = "bundle.steel_mettle2022.2")]
+    BundleSteelMettle20222,
+    #[serde(rename = "bundle.steel_mettle2022.3")]
+    BundleSteelMettle20223,
+    #[serde(rename = "bundle.takeover2022.1")]
+    BundleTakeover20221,
+    #[serde(rename = "bundle.takeover2022.2")]
+    BundleTakeover20222,
+    #[serde(rename = "bundle.takeover2022.3")]
+    BundleTakeover20223,
+    #[serde(rename = "bundle.tgrtakeover2024.1")]
+    BundleTgrtakeover20241,
+    #[serde(rename = "bundle.thailandfeatureapril2024.1")]
+    BundleThailandfeatureapril20241,
+    #[serde(rename = "bundle.tmexpert.1")]
+    BundleTmexpert1,
+    #[serde(rename = "bundle.ubraidday2022.1")]
+    BundleUbraidday20221,
+    #[serde(rename = "bundle.ubraidday2022.2")]
+    BundleUbraidday20222,
+    #[serde(rename = "bundle.ukfeature.1")]
+    BundleUkfeature1,
+    #[serde(rename = "bundle.ultrabeastraid.2024")]
+    BundleUltrabeastraid2024,
+    #[serde(rename = "bundle.ultraunlockraid2023.1")]
+    BundleUltraunlockraid20231,
+    #[serde(rename = "bundle.ultraunlockraid2023.2")]
+    BundleUltraunlockraid20232,
+    #[serde(rename = "bundle.uustorage.1")]
+    BundleUustorage1,
+    #[serde(rename = "bundle.voyagerouttoplay.1")]
+    BundleVoyagerouttoplay1,
+    #[serde(rename = "bundle.welcomebox.1")]
+    BundleWelcomebox1,
+    #[serde(rename = "bundle.winterevergreen.1")]
+    BundleWinterevergreen1,
+    #[serde(rename = "bundle.winterevergreen.2")]
+    BundleWinterevergreen2,
+    #[serde(rename = "bundle.winterevergreen.3")]
+    BundleWinterevergreen3,
+    #[serde(rename = "bundle.winterholiday2023.1")]
+    BundleWinterholiday20231,
+    #[serde(rename = "bundle.winterholiday2023.2")]
+    BundleWinterholiday20232,
+    #[serde(rename = "bundle.winterholiday2023.3")]
+    BundleWinterholiday20233,
+    #[serde(rename = "bundle.xmas.large.1")]
+    BundleXmasLarge1,
+    #[serde(rename = "bundle.zoruamakegood2022")]
+    BundleZoruamakegood2022,
+    #[serde(rename = "bundle.zzraid.1")]
+    BundleZzraid1,
+    #[serde(rename = "diademuertos")]
+    Diademuertos,
     #[serde(rename = "EVENT_PASS_APRIL1_SEASON_STORE_REDIRECT")]
     EventPassApril1SeasonStoreRedirect,
     #[serde(rename = "EVENT_PASS_APRIL3_EVENT_STORE_REDIRECT")]
@@ -49,38 +527,120 @@ pub enum IapItemDisplayTemplateId {
     EventPassMonth3SeasonStoreRedirect,
     #[serde(rename = "EVENT_PASS_WINTERHOLIDAYS2025_SEASON_STORE_REDIRECT")]
     EventPassWinterholidays2025SeasonStoreRedirect,
+    #[serde(rename = "evergreenticket.1")]
+    Evergreenticket1,
+    #[serde(rename = "evergreenticket.1.giftable")]
+    Evergreenticket1Giftable,
     #[serde(rename = "FLAIR_FREE_BUNDLE_0")]
     FlairFreeBundle0,
-    #[serde(rename = "GOFEST2025_FINALE_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
-    Gofest2025FinaleDeluxeEventPassTrackUnlock,
-    #[serde(rename = "GOFEST2025_FINALE_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
-    Gofest2025FinaleDeluxeEventPassTrackUnlockPlusPoints,
-    #[serde(rename = "GOFEST_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
-    Gofest2025DeluxeEventPassTrackUnlock,
-    #[serde(rename = "GOFEST_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
-    Gofest2025DeluxeEventPassTrackUnlockPlusPoints,
-    #[serde(rename = "GOTOUR_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
-    Gotour2025DeluxeEventPassTrackUnlock,
-    #[serde(rename = "GOTOUR_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
-    Gotour2025DeluxeEventPassTrackUnlockPlusPoints,
-    #[serde(rename = "GOWILD_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
-    Gowild2025DeluxeEventPassTrackUnlock,
-    #[serde(rename = "GOWILD_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
-    Gowild2025DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "general1.ticket.1")]
+    General1Ticket1,
+    #[serde(rename = "general1.ticket.1.giftable")]
+    General1Ticket1Giftable,
+    #[serde(rename = "general1.ticket.2")]
+    General1Ticket2,
+    #[serde(rename = "general1.ticket.2.giftable")]
+    General1Ticket2Giftable,
+    #[serde(rename = "general1.ticket.3")]
+    General1Ticket3,
+    #[serde(rename = "general1.ticket.4")]
+    General1Ticket4,
+    #[serde(rename = "general1.ticket.4.giftable")]
+    General1Ticket4Giftable,
+    #[serde(rename = "general1.ticket.5")]
+    General1Ticket5,
+    #[serde(rename = "general1.ticket.6")]
+    General1Ticket6,
+    #[serde(rename = "general2.ticket.1")]
+    General2Ticket1,
+    #[serde(rename = "general2.ticket.1.giftable")]
+    General2Ticket1Giftable,
+    #[serde(rename = "general2.ticket.2")]
+    General2Ticket2,
+    #[serde(rename = "general2.ticket.2.giftable")]
+    General2Ticket2Giftable,
+    #[serde(rename = "general2.ticket.3")]
+    General2Ticket3,
+    #[serde(rename = "general2.ticket.3.giftable")]
+    General2Ticket3Giftable,
+    #[serde(rename = "general2.ticket.4")]
+    General2Ticket4,
+    #[serde(rename = "general2.ticket.4.giftable")]
+    General2Ticket4Giftable,
+    #[serde(rename = "general2.ticket.5")]
+    General2Ticket5,
+    #[serde(rename = "general2.ticket.5.giftable")]
+    General2Ticket5Giftable,
+    #[serde(rename = "general2.ticket.6")]
+    General2Ticket6,
+    #[serde(rename = "general2.ticket.7")]
+    General2Ticket7,
+    #[serde(rename = "general2.ticket.7.giftable")]
+    General2Ticket7Giftable,
+    #[serde(rename = "general2.ticket.8")]
+    General2Ticket8,
+    #[serde(rename = "general2.ticket.8.giftable")]
+    General2Ticket8Giftable,
+    #[serde(rename = "general2.ticket.9")]
+    General2Ticket9,
+    #[serde(rename = "general2.ticket.9.giftable")]
+    General2Ticket9Giftable,
+    #[serde(rename = "general2.ticket.10")]
+    General2Ticket10,
+    #[serde(rename = "general2.ticket.10.giftable")]
+    General2Ticket10Giftable,
+    #[serde(rename = "general4.medium.1")]
+    General4Medium1,
+    #[serde(rename = "general6.small.1")]
+    General6Small1,
     #[serde(rename = "GO_SAFARI_BALL_IAP_10")]
     GoSafariBallIap10,
     #[serde(rename = "GO_SAFARI_BALL_IAP_25")]
     GoSafariBallIap25,
     #[serde(rename = "GO_SAFARI_BALL_IAP_50")]
     GoSafariBallIap50,
+    #[serde(rename = "GOFEST_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
+    Gofest2025DeluxeEventPassTrackUnlock,
+    #[serde(rename = "GOFEST_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
+    Gofest2025DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "GOFEST2025_FINALE_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
+    Gofest2025FinaleDeluxeEventPassTrackUnlock,
+    #[serde(rename = "GOFEST2025_FINALE_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
+    Gofest2025FinaleDeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "GOTOUR_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
+    Gotour2025DeluxeEventPassTrackUnlock,
+    #[serde(rename = "GOTOUR_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
+    Gotour2025DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "gowaticketfree.1")]
+    Gowaticketfree1,
+    #[serde(rename = "GOWILD_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
+    Gowild2025DeluxeEventPassTrackUnlock,
+    #[serde(rename = "GOWILD_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
+    Gowild2025DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "HALLOWEEN2025_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
     Halloween2025DeluxeEventPassTrackUnlock,
     #[serde(rename = "HALLOWEEN2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
     Halloween2025DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "hometransport.1")]
+    Hometransport1,
+    #[serde(rename = "incenseordinary.1")]
+    Incenseordinary1,
+    #[serde(rename = "incenseordinary.8")]
+    Incenseordinary8,
+    #[serde(rename = "incubatorbasic.1")]
+    Incubatorbasic1,
+    #[serde(rename = "incubatorsuper.1")]
+    Incubatorsuper1,
     #[serde(rename = "ITEM_ENHANCED_CURRENCY_200")]
     ItemEnhancedCurrency200,
     #[serde(rename = "ITEM_ENHANCED_CURRENCY_600")]
     ItemEnhancedCurrency600,
+    #[serde(rename = "itemleadermap")]
+    Itemleadermap,
+    #[serde(rename = "luckyegg.1")]
+    Luckyegg1,
+    #[serde(rename = "luckyegg.8")]
+    Luckyegg8,
     #[serde(rename = "MARCH1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
     March12026DeluxeEventPassTrackUnlock,
     #[serde(rename = "MARCH1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
@@ -89,6 +649,18 @@ pub enum IapItemDisplayTemplateId {
     March22026DeluxeEventPassTrackUnlock,
     #[serde(rename = "MARCH2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
     March22026DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "max_boost.1")]
+    MaxBoost1,
+    #[serde(rename = "max_boost.3")]
+    MaxBoost3,
+    #[serde(rename = "maxpotion.5")]
+    Maxpotion5,
+    #[serde(rename = "maxpotion.10")]
+    Maxpotion10,
+    #[serde(rename = "maxrevive.3")]
+    Maxrevive3,
+    #[serde(rename = "maxrevive.6")]
+    Maxrevive6,
     #[serde(rename = "MONTH1_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
     Month1DeluxeEventPassTrackUnlock,
     #[serde(rename = "MONTH1_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
@@ -101,22 +673,228 @@ pub enum IapItemDisplayTemplateId {
     Month3DeluxeEventPassTrackUnlock,
     #[serde(rename = "MONTH3_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
     Month3DeluxeEventPassTrackUnlockPlusPoints,
-    #[serde(rename = "STICKER_2023COLLAB_1.3")]
-    Sticker2023collab13,
-    #[serde(rename = "STICKER_2023COLLAB_1.5")]
-    Sticker2023collab15,
-    #[serde(rename = "STICKER_2023COLLAB_2.3")]
-    Sticker2023collab23,
-    #[serde(rename = "STICKER_2023COLLAB_2.5")]
-    Sticker2023collab25,
-    #[serde(rename = "STICKER_2023COLLAB_3.3")]
-    Sticker2023collab33,
-    #[serde(rename = "STICKER_2023COLLAB_3.5")]
-    Sticker2023collab35,
-    #[serde(rename = "STICKER_2023COLLAB_4.3")]
-    Sticker2023collab43,
-    #[serde(rename = "STICKER_2023COLLAB_4.5")]
-    Sticker2023collab45,
+    #[serde(rename = "mp_replenish_rrp.1")]
+    MpReplenishRrp1,
+    #[serde(rename = "mp_replenish_rrp.3")]
+    MpReplenishRrp3,
+    #[serde(rename = "mp_replenish.1")]
+    MpReplenish1,
+    #[serde(rename = "mp_replenish.3")]
+    MpReplenish3,
+    #[serde(rename = "paidraidticket.1")]
+    Paidraidticket1,
+    #[serde(rename = "paidraidticket.3")]
+    Paidraidticket3,
+    #[serde(rename = "pgorelease.april2_2026_deluxe_event_pass_track_redirect")]
+    PgoreleaseApril22026DeluxeEventPassTrackRedirect,
+    #[serde(rename = "pgorelease.april3_2026_deluxe_event_pass_track_unlock")]
+    PgoreleaseApril32026DeluxeEventPassTrackUnlock,
+    #[serde(rename = "pgorelease.april3_2026_deluxe_event_pass_track_unlock_plus_points")]
+    PgoreleaseApril32026DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "pgorelease.bundle.1")]
+    PgoreleaseBundle1,
+    #[serde(rename = "pgorelease.bundle.2")]
+    PgoreleaseBundle2,
+    #[serde(rename = "pgorelease.bundle.blanchebox.1")]
+    PgoreleaseBundleBlanchebox1,
+    #[serde(rename = "pgorelease.bundle.citysafaribarcelona1")]
+    PgoreleaseBundleCitysafaribarcelona1,
+    #[serde(rename = "pgorelease.bundle.citysafaribarcelona2")]
+    PgoreleaseBundleCitysafaribarcelona2,
+    #[serde(rename = "pgorelease.bundle.citysafarimexico1")]
+    PgoreleaseBundleCitysafarimexico1,
+    #[serde(rename = "pgorelease.bundle.citysafarimexico2")]
+    PgoreleaseBundleCitysafarimexico2,
+    #[serde(rename = "pgorelease.bundle.eliteraidbox.1")]
+    PgoreleaseBundleEliteraidbox1,
+    #[serde(rename = "pgorelease.bundle.eliteraidmay2023")]
+    PgoreleaseBundleEliteraidmay2023,
+    #[serde(rename = "pgorelease.bundle.flavoredlures.1")]
+    PgoreleaseBundleFlavoredlures1,
+    #[serde(rename = "pgorelease.bundle.flavoredlures.2")]
+    PgoreleaseBundleFlavoredlures2,
+    #[serde(rename = "pgorelease.bundle.flavoredlures.3")]
+    PgoreleaseBundleFlavoredlures3,
+    #[serde(rename = "pgorelease.bundle.flavoredlures.4")]
+    PgoreleaseBundleFlavoredlures4,
+    #[serde(rename = "pgorelease.bundle.flavoredlures.5")]
+    PgoreleaseBundleFlavoredlures5,
+    #[serde(rename = "pgorelease.bundle.flavoredlures.6")]
+    PgoreleaseBundleFlavoredlures6,
+    #[serde(rename = "pgorelease.bundle.flavoredlures.7")]
+    PgoreleaseBundleFlavoredlures7,
+    #[serde(rename = "pgorelease.bundle.flavoredlures.8")]
+    PgoreleaseBundleFlavoredlures8,
+    #[serde(rename = "pgorelease.bundle.foc2023box.1")]
+    PgoreleaseBundleFoc2023box1,
+    #[serde(rename = "pgorelease.bundle.general.thirdparty.large.2")]
+    PgoreleaseBundleGeneralThirdpartyLarge2,
+    #[serde(rename = "pgorelease.bundle.general.thirdparty.large.4")]
+    PgoreleaseBundleGeneralThirdpartyLarge4,
+    #[serde(rename = "pgorelease.bundle.general.thirdparty.medium.1")]
+    PgoreleaseBundleGeneralThirdpartyMedium1,
+    #[serde(rename = "pgorelease.bundle.general.thirdparty.small.1")]
+    PgoreleaseBundleGeneralThirdpartySmall1,
+    #[serde(rename = "pgorelease.bundle.general.thirdparty.small.1.2")]
+    PgoreleaseBundleGeneralThirdpartySmall12,
+    #[serde(rename = "pgorelease.bundle.general.thirdparty.small.2")]
+    PgoreleaseBundleGeneralThirdpartySmall2,
+    #[serde(rename = "pgorelease.bundle.general1.tiny.4")]
+    PgoreleaseBundleGeneral1Tiny4,
+    #[serde(rename = "pgorelease.bundle.general11.small.1331")]
+    PgoreleaseBundleGeneral11Small1331,
+    #[serde(rename = "pgorelease.bundle.gotour2023.0")]
+    PgoreleaseBundleGotour20230,
+    #[serde(rename = "pgorelease.bundle.gotour2023.1")]
+    PgoreleaseBundleGotour20231,
+    #[serde(rename = "pgorelease.bundle.gotour2023.2")]
+    PgoreleaseBundleGotour20232,
+    #[serde(rename = "pgorelease.bundle.gotour2023.3")]
+    PgoreleaseBundleGotour20233,
+    #[serde(rename = "pgorelease.bundle.gotour2023.4")]
+    PgoreleaseBundleGotour20234,
+    #[serde(rename = "pgorelease.bundle.gotour2023.5")]
+    PgoreleaseBundleGotour20235,
+    #[serde(rename = "pgorelease.bundle.gotour2023.6")]
+    PgoreleaseBundleGotour20236,
+    #[serde(rename = "pgorelease.bundle.gp2022.1")]
+    PgoreleaseBundleGp20221,
+    #[serde(rename = "pgorelease.bundle.indiagp2023.1")]
+    PgoreleaseBundleIndiagp20231,
+    #[serde(rename = "pgorelease.bundle.lure.1")]
+    PgoreleaseBundleLure1,
+    #[serde(rename = "pgorelease.bundle.pokemonday.1")]
+    PgoreleaseBundlePokemonday1,
+    #[serde(rename = "pgorelease.bundle.raiddaymay2023.1")]
+    PgoreleaseBundleRaiddaymay20231,
+    #[serde(rename = "pgorelease.bundle.raiddaymay2023.2")]
+    PgoreleaseBundleRaiddaymay20232,
+    #[serde(rename = "pgorelease.bundle.raiddaymay2023.3")]
+    PgoreleaseBundleRaiddaymay20233,
+    #[serde(rename = "pgorelease.bundle.raiddaymay2023.4")]
+    PgoreleaseBundleRaiddaymay20234,
+    #[serde(rename = "pgorelease.bundle.raiddaynov2023.1")]
+    PgoreleaseBundleRaiddaynov20231,
+    #[serde(rename = "pgorelease.bundle.raidhourbox.1")]
+    PgoreleaseBundleRaidhourbox1,
+    #[serde(rename = "pgorelease.bundle.raidhourbox.2")]
+    PgoreleaseBundleRaidhourbox2,
+    #[serde(rename = "pgorelease.bundle.ramadan2023box.1")]
+    PgoreleaseBundleRamadan2023box1,
+    #[serde(rename = "pgorelease.bundle.RTSRaid")]
+    PgoreleaseBundleRtsraid,
+    #[serde(rename = "pgorelease.bundle.season10evergreen.1")]
+    PgoreleaseBundleSeason10evergreen1,
+    #[serde(rename = "pgorelease.bundle.season10evergreen.2")]
+    PgoreleaseBundleSeason10evergreen2,
+    #[serde(rename = "pgorelease.bundle.season10evergreen.3")]
+    PgoreleaseBundleSeason10evergreen3,
+    #[serde(rename = "pgorelease.bundle.season10launch.1")]
+    PgoreleaseBundleSeason10launch1,
+    #[serde(rename = "pgorelease.bundle.sustainabilitybonusmay2023")]
+    PgoreleaseBundleSustainabilitybonusmay2023,
+    #[serde(rename = "pgorelease.bundle.sustainabilitymay2023")]
+    PgoreleaseBundleSustainabilitymay2023,
+    #[serde(rename = "pgorelease.bundle.template1")]
+    PgoreleaseBundleTemplate1,
+    #[serde(rename = "pgorelease.bundle.template2")]
+    PgoreleaseBundleTemplate2,
+    #[serde(rename = "pgorelease.bundle.template3")]
+    PgoreleaseBundleTemplate3,
+    #[serde(rename = "pgorelease.bundle.thailandspec2023.1")]
+    PgoreleaseBundleThailandspec20231,
+    #[serde(rename = "pgorelease.bundle.walkeratlantic2022.1")]
+    PgoreleaseBundleWalkeratlantic20221,
+    #[serde(rename = "pgorelease.bundle.walkeratlantic2022.2")]
+    PgoreleaseBundleWalkeratlantic20222,
+    #[serde(rename = "pgorelease.citysafariticket0.1")]
+    PgoreleaseCitysafariticket01,
+    #[serde(rename = "pgorelease.citysafariticket1.1")]
+    PgoreleaseCitysafariticket11,
+    #[serde(rename = "pgorelease.citysafariticket2.1")]
+    PgoreleaseCitysafariticket21,
+    #[serde(rename = "pgorelease.evergreenticket.1")]
+    PgoreleaseEvergreenticket1,
+    #[serde(rename = "pgorelease.evergreenticket.1.giftable")]
+    PgoreleaseEvergreenticket1Giftable,
+    #[serde(rename = "pgorelease.general1.ticket.1")]
+    PgoreleaseGeneral1Ticket1,
+    #[serde(rename = "pgorelease.general1.ticket.1.giftable")]
+    PgoreleaseGeneral1Ticket1Giftable,
+    #[serde(rename = "pgorelease.general1.ticket.2")]
+    PgoreleaseGeneral1Ticket2,
+    #[serde(rename = "pgorelease.general1.ticket.2.giftable")]
+    PgoreleaseGeneral1Ticket2Giftable,
+    #[serde(rename = "pgorelease.general1.ticket.4")]
+    PgoreleaseGeneral1Ticket4,
+    #[serde(rename = "pgorelease.general1.ticket.4.giftable")]
+    PgoreleaseGeneral1Ticket4Giftable,
+    #[serde(rename = "pgorelease.general2.ticket.1")]
+    PgoreleaseGeneral2Ticket1,
+    #[serde(rename = "pgorelease.general2.ticket.1.giftable")]
+    PgoreleaseGeneral2Ticket1Giftable,
+    #[serde(rename = "pgorelease.general2.ticket.2")]
+    PgoreleaseGeneral2Ticket2,
+    #[serde(rename = "pgorelease.general2.ticket.2.giftable")]
+    PgoreleaseGeneral2Ticket2Giftable,
+    #[serde(rename = "pgorelease.general2.ticket.3")]
+    PgoreleaseGeneral2Ticket3,
+    #[serde(rename = "pgorelease.general2.ticket.3.giftable")]
+    PgoreleaseGeneral2Ticket3Giftable,
+    #[serde(rename = "pgorelease.general2.ticket.4")]
+    PgoreleaseGeneral2Ticket4,
+    #[serde(rename = "pgorelease.general2.ticket.4.giftable")]
+    PgoreleaseGeneral2Ticket4Giftable,
+    #[serde(rename = "pgorelease.general2.ticket.5")]
+    PgoreleaseGeneral2Ticket5,
+    #[serde(rename = "pgorelease.general2.ticket.5.giftable")]
+    PgoreleaseGeneral2Ticket5Giftable,
+    #[serde(rename = "pgorelease.general2.ticket.7")]
+    PgoreleaseGeneral2Ticket7,
+    #[serde(rename = "pgorelease.general2.ticket.7.giftable")]
+    PgoreleaseGeneral2Ticket7Giftable,
+    #[serde(rename = "pgorelease.general2.ticket.8")]
+    PgoreleaseGeneral2Ticket8,
+    #[serde(rename = "pgorelease.general2.ticket.8.giftable")]
+    PgoreleaseGeneral2Ticket8Giftable,
+    #[serde(rename = "pgorelease.general2.ticket.9")]
+    PgoreleaseGeneral2Ticket9,
+    #[serde(rename = "pgorelease.general2.ticket.9.giftable")]
+    PgoreleaseGeneral2Ticket9Giftable,
+    #[serde(rename = "pgorelease.general2.ticket.10")]
+    PgoreleaseGeneral2Ticket10,
+    #[serde(rename = "pgorelease.general2.ticket.10.giftable")]
+    PgoreleaseGeneral2Ticket10Giftable,
+    #[serde(rename = "pgorelease.month2_deluxe_event_pass_track_unlock")]
+    PgoreleaseMonth2DeluxeEventPassTrackUnlock,
+    #[serde(rename = "pgorelease.month2_deluxe_event_pass_track_unlock_plus_points")]
+    PgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "pgorelease.pokecoin.2750")]
+    PgoreleasePokecoin2750,
+    #[serde(rename = "pgorelease.pokecoin.5720")]
+    PgoreleasePokecoin5720,
+    #[serde(rename = "pgorelease.pokecoin.15950")]
+    PgoreleasePokecoin15950,
+    #[serde(rename = "pgorelease.pokecoin.21375")]
+    PgoreleasePokecoin21375,
+    #[serde(rename = "poffin")]
+    Poffin,
+    #[serde(rename = "pokeball.20")]
+    Pokeball20,
+    #[serde(rename = "pokeball.100")]
+    Pokeball100,
+    #[serde(rename = "pokeball.200")]
+    Pokeball200,
+    #[serde(rename = "postcardstorageupgrade.1")]
+    Postcardstorageupgrade1,
+    #[serde(rename = "remoteraidticket.1")]
+    Remoteraidticket1,
+    #[serde(rename = "remoteraidticket.3")]
+    Remoteraidticket3,
+    #[serde(rename = "starpiece.1")]
+    Starpiece1,
+    #[serde(rename = "starpiece.8")]
+    Starpiece8,
     #[serde(rename = "STICKER_8ANNIV_1.3")]
     Sticker8anniv13,
     #[serde(rename = "STICKER_8ANNIV_1.5")]
@@ -145,6 +923,22 @@ pub enum IapItemDisplayTemplateId {
     Sticker9anniv33,
     #[serde(rename = "STICKER_9ANNIV_3.5")]
     Sticker9anniv35,
+    #[serde(rename = "STICKER_2023COLLAB_1.3")]
+    Sticker2023collab13,
+    #[serde(rename = "STICKER_2023COLLAB_1.5")]
+    Sticker2023collab15,
+    #[serde(rename = "STICKER_2023COLLAB_2.3")]
+    Sticker2023collab23,
+    #[serde(rename = "STICKER_2023COLLAB_2.5")]
+    Sticker2023collab25,
+    #[serde(rename = "STICKER_2023COLLAB_3.3")]
+    Sticker2023collab33,
+    #[serde(rename = "STICKER_2023COLLAB_3.5")]
+    Sticker2023collab35,
+    #[serde(rename = "STICKER_2023COLLAB_4.3")]
+    Sticker2023collab43,
+    #[serde(rename = "STICKER_2023COLLAB_4.5")]
+    Sticker2023collab45,
     #[serde(rename = "STICKER_APRILFOOL2023_1.3")]
     StickerAprilfool202313,
     #[serde(rename = "STICKER_APRILFOOL2023_1.5")]
@@ -529,14 +1323,26 @@ pub enum IapItemDisplayTemplateId {
     StickerGowa2025053,
     #[serde(rename = "STICKER_GOWA2025_05.5")]
     StickerGowa2025055,
-    #[serde(rename = "STICKER_HALLOWEEN2025_NOIBAT.3")]
-    StickerHalloween2025Noibat3,
-    #[serde(rename = "STICKER_HALLOWEEN2025_NOIBAT.5")]
-    StickerHalloween2025Noibat5,
-    #[serde(rename = "STICKER_HALLOWEEN2025_TEDDIURSA.3")]
-    StickerHalloween2025Teddiursa3,
-    #[serde(rename = "STICKER_HALLOWEEN2025_TEDDIURSA.5")]
-    StickerHalloween2025Teddiursa5,
+    #[serde(rename = "STICKER_HALLOWEEN_BULB.3")]
+    StickerHalloweenBulb3,
+    #[serde(rename = "STICKER_HALLOWEEN_BULB.5")]
+    StickerHalloweenBulb5,
+    #[serde(rename = "STICKER_HALLOWEEN_CHARM.3")]
+    StickerHalloweenCharm3,
+    #[serde(rename = "STICKER_HALLOWEEN_CHARM.5")]
+    StickerHalloweenCharm5,
+    #[serde(rename = "STICKER_HALLOWEEN_GENGARMD.3")]
+    StickerHalloweenGengarmd3,
+    #[serde(rename = "STICKER_HALLOWEEN_GENGARMD.5")]
+    StickerHalloweenGengarmd5,
+    #[serde(rename = "STICKER_HALLOWEEN_PIKA.3")]
+    StickerHalloweenPika3,
+    #[serde(rename = "STICKER_HALLOWEEN_PIKA.5")]
+    StickerHalloweenPika5,
+    #[serde(rename = "STICKER_HALLOWEEN_SQU.3")]
+    StickerHalloweenSqu3,
+    #[serde(rename = "STICKER_HALLOWEEN_SQU.5")]
+    StickerHalloweenSqu5,
     #[serde(rename = "STICKER_HALLOWEEN21_FUWARAID.3")]
     StickerHalloween21Fuwaraid3,
     #[serde(rename = "STICKER_HALLOWEEN21_FUWARAID.5")]
@@ -561,26 +1367,14 @@ pub enum IapItemDisplayTemplateId {
     StickerHalloween24Rowlet3,
     #[serde(rename = "STICKER_HALLOWEEN24_ROWLET.5")]
     StickerHalloween24Rowlet5,
-    #[serde(rename = "STICKER_HALLOWEEN_BULB.3")]
-    StickerHalloweenBulb3,
-    #[serde(rename = "STICKER_HALLOWEEN_BULB.5")]
-    StickerHalloweenBulb5,
-    #[serde(rename = "STICKER_HALLOWEEN_CHARM.3")]
-    StickerHalloweenCharm3,
-    #[serde(rename = "STICKER_HALLOWEEN_CHARM.5")]
-    StickerHalloweenCharm5,
-    #[serde(rename = "STICKER_HALLOWEEN_GENGARMD.3")]
-    StickerHalloweenGengarmd3,
-    #[serde(rename = "STICKER_HALLOWEEN_GENGARMD.5")]
-    StickerHalloweenGengarmd5,
-    #[serde(rename = "STICKER_HALLOWEEN_PIKA.3")]
-    StickerHalloweenPika3,
-    #[serde(rename = "STICKER_HALLOWEEN_PIKA.5")]
-    StickerHalloweenPika5,
-    #[serde(rename = "STICKER_HALLOWEEN_SQU.3")]
-    StickerHalloweenSqu3,
-    #[serde(rename = "STICKER_HALLOWEEN_SQU.5")]
-    StickerHalloweenSqu5,
+    #[serde(rename = "STICKER_HALLOWEEN2025_NOIBAT.3")]
+    StickerHalloween2025Noibat3,
+    #[serde(rename = "STICKER_HALLOWEEN2025_NOIBAT.5")]
+    StickerHalloween2025Noibat5,
+    #[serde(rename = "STICKER_HALLOWEEN2025_TEDDIURSA.3")]
+    StickerHalloween2025Teddiursa3,
+    #[serde(rename = "STICKER_HALLOWEEN2025_TEDDIURSA.5")]
+    StickerHalloween2025Teddiursa5,
     #[serde(rename = "STICKER_HARU_CHERRIM.3")]
     StickerHaruCherrim3,
     #[serde(rename = "STICKER_HARU_CHERRIM.5")]
@@ -785,6 +1579,106 @@ pub enum IapItemDisplayTemplateId {
     StickerNoibatCd43,
     #[serde(rename = "STICKER_NOIBAT_CD_4.5")]
     StickerNoibatCd45,
+    #[serde(rename = "STICKER_PGO_FEST_2024_1.3")]
+    StickerPgoFest202413,
+    #[serde(rename = "STICKER_PGO_FEST_2024_1.5")]
+    StickerPgoFest202415,
+    #[serde(rename = "STICKER_PGO_FEST_2024_2.3")]
+    StickerPgoFest202423,
+    #[serde(rename = "STICKER_PGO_FEST_2024_2.5")]
+    StickerPgoFest202425,
+    #[serde(rename = "STICKER_PGO_FEST_2024_3.3")]
+    StickerPgoFest202433,
+    #[serde(rename = "STICKER_PGO_FEST_2024_3.5")]
+    StickerPgoFest202435,
+    #[serde(rename = "STICKER_PGO_FEST_2024_4.3")]
+    StickerPgoFest202443,
+    #[serde(rename = "STICKER_PGO_FEST_2024_4.5")]
+    StickerPgoFest202445,
+    #[serde(rename = "STICKER_PGO_FEST_2024_5.3")]
+    StickerPgoFest202453,
+    #[serde(rename = "STICKER_PGO_FEST_2024_5.5")]
+    StickerPgoFest202455,
+    #[serde(rename = "STICKER_PGO_FEST_2024_6.3")]
+    StickerPgoFest202463,
+    #[serde(rename = "STICKER_PGO_FEST_2024_6.5")]
+    StickerPgoFest202465,
+    #[serde(rename = "STICKER_PGO_FEST_2024_LOGO.3")]
+    StickerPgoFest2024Logo3,
+    #[serde(rename = "STICKER_PGO_FEST_2024_LOGO.5")]
+    StickerPgoFest2024Logo5,
+    #[serde(rename = "STICKER_PGO_FEST_2024.3")]
+    StickerPgoFest20243,
+    #[serde(rename = "STICKER_PGO_FEST_2024.5")]
+    StickerPgoFest20245,
+    #[serde(rename = "STICKER_PGO_FEST_2025_1.3")]
+    StickerPgoFest202513,
+    #[serde(rename = "STICKER_PGO_FEST_2025_1.5")]
+    StickerPgoFest202515,
+    #[serde(rename = "STICKER_PGO_FEST_2025_2.3")]
+    StickerPgoFest202523,
+    #[serde(rename = "STICKER_PGO_FEST_2025_2.5")]
+    StickerPgoFest202525,
+    #[serde(rename = "STICKER_PGO_FEST_2025_3.3")]
+    StickerPgoFest202533,
+    #[serde(rename = "STICKER_PGO_FEST_2025_3.5")]
+    StickerPgoFest202535,
+    #[serde(rename = "STICKER_PGO_FEST_2025_LOGO.3")]
+    StickerPgoFest2025Logo3,
+    #[serde(rename = "STICKER_PGO_FEST_2025_LOGO.5")]
+    StickerPgoFest2025Logo5,
+    #[serde(rename = "STICKER_PGO_FEST_2025.3")]
+    StickerPgoFest20253,
+    #[serde(rename = "STICKER_PGO_FEST_2025.5")]
+    StickerPgoFest20255,
+    #[serde(rename = "STICKER_PGO_FEST_VICTINI_05.3")]
+    StickerPgoFestVictini053,
+    #[serde(rename = "STICKER_PGO_FEST_VICTINI_05.5")]
+    StickerPgoFestVictini055,
+    #[serde(rename = "STICKER_PGO_TOUR_2026_1.3")]
+    StickerPgoTour202613,
+    #[serde(rename = "STICKER_PGO_TOUR_2026_1.5")]
+    StickerPgoTour202615,
+    #[serde(rename = "STICKER_PGO_TOUR_2026_2.3")]
+    StickerPgoTour202623,
+    #[serde(rename = "STICKER_PGO_TOUR_2026_2.5")]
+    StickerPgoTour202625,
+    #[serde(rename = "STICKER_PGO_TOUR_2026_3.3")]
+    StickerPgoTour202633,
+    #[serde(rename = "STICKER_PGO_TOUR_2026_3.5")]
+    StickerPgoTour202635,
+    #[serde(rename = "STICKER_PGO_TOUR_2026_LOGO.3")]
+    StickerPgoTour2026Logo3,
+    #[serde(rename = "STICKER_PGO_TOUR_2026_LOGO.5")]
+    StickerPgoTour2026Logo5,
+    #[serde(rename = "STICKER_PGO_TOUR_2026.3")]
+    StickerPgoTour20263,
+    #[serde(rename = "STICKER_PGO_TOUR_2026.5")]
+    StickerPgoTour20265,
+    #[serde(rename = "STICKER_PGO_WILDAREA_2024_1.3")]
+    StickerPgoWildarea202413,
+    #[serde(rename = "STICKER_PGO_WILDAREA_2024_1.5")]
+    StickerPgoWildarea202415,
+    #[serde(rename = "STICKER_PGO_WILDAREA_2024_2.3")]
+    StickerPgoWildarea202423,
+    #[serde(rename = "STICKER_PGO_WILDAREA_2024_2.5")]
+    StickerPgoWildarea202425,
+    #[serde(rename = "STICKER_PGO_WILDAREA_2024_3.3")]
+    StickerPgoWildarea202433,
+    #[serde(rename = "STICKER_PGO_WILDAREA_2024_3.5")]
+    StickerPgoWildarea202435,
+    #[serde(rename = "STICKER_PGO_WILDAREA_2024_4.3")]
+    StickerPgoWildarea202443,
+    #[serde(rename = "STICKER_PGO_WILDAREA_2024_4.5")]
+    StickerPgoWildarea202445,
+    #[serde(rename = "STICKER_PGO_WILDAREA_2024_LOGO.3")]
+    StickerPgoWildarea2024Logo3,
+    #[serde(rename = "STICKER_PGO_WILDAREA_2024_LOGO.5")]
+    StickerPgoWildarea2024Logo5,
+    #[serde(rename = "STICKER_PGO_WILDAREA_2024.3")]
+    StickerPgoWildarea20243,
+    #[serde(rename = "STICKER_PGO_WILDAREA_2024.5")]
+    StickerPgoWildarea20245,
     #[serde(rename = "STICKER_PGOFEST2021_GALARIANZIGZAGOON.3")]
     StickerPgofest2021Galarianzigzagoon3,
     #[serde(rename = "STICKER_PGOFEST2021_GALARIANZIGZAGOON.5")]
@@ -825,106 +1719,6 @@ pub enum IapItemDisplayTemplateId {
     StickerPgofest2022Shaymin3,
     #[serde(rename = "STICKER_PGOFEST2022_SHAYMIN.5")]
     StickerPgofest2022Shaymin5,
-    #[serde(rename = "STICKER_PGO_FEST_2024.3")]
-    StickerPgoFest20243,
-    #[serde(rename = "STICKER_PGO_FEST_2024.5")]
-    StickerPgoFest20245,
-    #[serde(rename = "STICKER_PGO_FEST_2024_1.3")]
-    StickerPgoFest202413,
-    #[serde(rename = "STICKER_PGO_FEST_2024_1.5")]
-    StickerPgoFest202415,
-    #[serde(rename = "STICKER_PGO_FEST_2024_2.3")]
-    StickerPgoFest202423,
-    #[serde(rename = "STICKER_PGO_FEST_2024_2.5")]
-    StickerPgoFest202425,
-    #[serde(rename = "STICKER_PGO_FEST_2024_3.3")]
-    StickerPgoFest202433,
-    #[serde(rename = "STICKER_PGO_FEST_2024_3.5")]
-    StickerPgoFest202435,
-    #[serde(rename = "STICKER_PGO_FEST_2024_4.3")]
-    StickerPgoFest202443,
-    #[serde(rename = "STICKER_PGO_FEST_2024_4.5")]
-    StickerPgoFest202445,
-    #[serde(rename = "STICKER_PGO_FEST_2024_5.3")]
-    StickerPgoFest202453,
-    #[serde(rename = "STICKER_PGO_FEST_2024_5.5")]
-    StickerPgoFest202455,
-    #[serde(rename = "STICKER_PGO_FEST_2024_6.3")]
-    StickerPgoFest202463,
-    #[serde(rename = "STICKER_PGO_FEST_2024_6.5")]
-    StickerPgoFest202465,
-    #[serde(rename = "STICKER_PGO_FEST_2024_LOGO.3")]
-    StickerPgoFest2024Logo3,
-    #[serde(rename = "STICKER_PGO_FEST_2024_LOGO.5")]
-    StickerPgoFest2024Logo5,
-    #[serde(rename = "STICKER_PGO_FEST_2025.3")]
-    StickerPgoFest20253,
-    #[serde(rename = "STICKER_PGO_FEST_2025.5")]
-    StickerPgoFest20255,
-    #[serde(rename = "STICKER_PGO_FEST_2025_1.3")]
-    StickerPgoFest202513,
-    #[serde(rename = "STICKER_PGO_FEST_2025_1.5")]
-    StickerPgoFest202515,
-    #[serde(rename = "STICKER_PGO_FEST_2025_2.3")]
-    StickerPgoFest202523,
-    #[serde(rename = "STICKER_PGO_FEST_2025_2.5")]
-    StickerPgoFest202525,
-    #[serde(rename = "STICKER_PGO_FEST_2025_3.3")]
-    StickerPgoFest202533,
-    #[serde(rename = "STICKER_PGO_FEST_2025_3.5")]
-    StickerPgoFest202535,
-    #[serde(rename = "STICKER_PGO_FEST_2025_LOGO.3")]
-    StickerPgoFest2025Logo3,
-    #[serde(rename = "STICKER_PGO_FEST_2025_LOGO.5")]
-    StickerPgoFest2025Logo5,
-    #[serde(rename = "STICKER_PGO_FEST_VICTINI_05.3")]
-    StickerPgoFestVictini053,
-    #[serde(rename = "STICKER_PGO_FEST_VICTINI_05.5")]
-    StickerPgoFestVictini055,
-    #[serde(rename = "STICKER_PGO_TOUR_2026.3")]
-    StickerPgoTour20263,
-    #[serde(rename = "STICKER_PGO_TOUR_2026.5")]
-    StickerPgoTour20265,
-    #[serde(rename = "STICKER_PGO_TOUR_2026_1.3")]
-    StickerPgoTour202613,
-    #[serde(rename = "STICKER_PGO_TOUR_2026_1.5")]
-    StickerPgoTour202615,
-    #[serde(rename = "STICKER_PGO_TOUR_2026_2.3")]
-    StickerPgoTour202623,
-    #[serde(rename = "STICKER_PGO_TOUR_2026_2.5")]
-    StickerPgoTour202625,
-    #[serde(rename = "STICKER_PGO_TOUR_2026_3.3")]
-    StickerPgoTour202633,
-    #[serde(rename = "STICKER_PGO_TOUR_2026_3.5")]
-    StickerPgoTour202635,
-    #[serde(rename = "STICKER_PGO_TOUR_2026_LOGO.3")]
-    StickerPgoTour2026Logo3,
-    #[serde(rename = "STICKER_PGO_TOUR_2026_LOGO.5")]
-    StickerPgoTour2026Logo5,
-    #[serde(rename = "STICKER_PGO_WILDAREA_2024.3")]
-    StickerPgoWildarea20243,
-    #[serde(rename = "STICKER_PGO_WILDAREA_2024.5")]
-    StickerPgoWildarea20245,
-    #[serde(rename = "STICKER_PGO_WILDAREA_2024_1.3")]
-    StickerPgoWildarea202413,
-    #[serde(rename = "STICKER_PGO_WILDAREA_2024_1.5")]
-    StickerPgoWildarea202415,
-    #[serde(rename = "STICKER_PGO_WILDAREA_2024_2.3")]
-    StickerPgoWildarea202423,
-    #[serde(rename = "STICKER_PGO_WILDAREA_2024_2.5")]
-    StickerPgoWildarea202425,
-    #[serde(rename = "STICKER_PGO_WILDAREA_2024_3.3")]
-    StickerPgoWildarea202433,
-    #[serde(rename = "STICKER_PGO_WILDAREA_2024_3.5")]
-    StickerPgoWildarea202435,
-    #[serde(rename = "STICKER_PGO_WILDAREA_2024_4.3")]
-    StickerPgoWildarea202443,
-    #[serde(rename = "STICKER_PGO_WILDAREA_2024_4.5")]
-    StickerPgoWildarea202445,
-    #[serde(rename = "STICKER_PGO_WILDAREA_2024_LOGO.3")]
-    StickerPgoWildarea2024Logo3,
-    #[serde(rename = "STICKER_PGO_WILDAREA_2024_LOGO.5")]
-    StickerPgoWildarea2024Logo5,
     #[serde(rename = "STICKER_PIKACHU_JOL.3")]
     StickerPikachuJol3,
     #[serde(rename = "STICKER_PIKACHU_JOL.5")]
@@ -1169,6 +1963,22 @@ pub enum IapItemDisplayTemplateId {
     StickerSummer23,
     #[serde(rename = "STICKER_SUMMER_2.5")]
     StickerSummer25,
+    #[serde(rename = "STICKER_SUMMER_3.3")]
+    StickerSummer33,
+    #[serde(rename = "STICKER_SUMMER_3.5")]
+    StickerSummer35,
+    #[serde(rename = "STICKER_SUMMER_4.3")]
+    StickerSummer43,
+    #[serde(rename = "STICKER_SUMMER_4.5")]
+    StickerSummer45,
+    #[serde(rename = "STICKER_SUMMER_5.3")]
+    StickerSummer53,
+    #[serde(rename = "STICKER_SUMMER_5.5")]
+    StickerSummer55,
+    #[serde(rename = "STICKER_SUMMER_6.3")]
+    StickerSummer63,
+    #[serde(rename = "STICKER_SUMMER_6.5")]
+    StickerSummer65,
     #[serde(rename = "STICKER_SUMMER_2023_BLASTOISE.3")]
     StickerSummer2023Blastoise3,
     #[serde(rename = "STICKER_SUMMER_2023_BLASTOISE.5")]
@@ -1233,22 +2043,6 @@ pub enum IapItemDisplayTemplateId {
     StickerSummer202543,
     #[serde(rename = "STICKER_SUMMER_2025_4.5")]
     StickerSummer202545,
-    #[serde(rename = "STICKER_SUMMER_3.3")]
-    StickerSummer33,
-    #[serde(rename = "STICKER_SUMMER_3.5")]
-    StickerSummer35,
-    #[serde(rename = "STICKER_SUMMER_4.3")]
-    StickerSummer43,
-    #[serde(rename = "STICKER_SUMMER_4.5")]
-    StickerSummer45,
-    #[serde(rename = "STICKER_SUMMER_5.3")]
-    StickerSummer53,
-    #[serde(rename = "STICKER_SUMMER_5.5")]
-    StickerSummer55,
-    #[serde(rename = "STICKER_SUMMER_6.3")]
-    StickerSummer63,
-    #[serde(rename = "STICKER_SUMMER_6.5")]
-    StickerSummer65,
     #[serde(rename = "STICKER_SWORDSHIELD21_1.3")]
     StickerSwordshield2113,
     #[serde(rename = "STICKER_SWORDSHIELD21_1.5")]
@@ -1337,46 +2131,6 @@ pub enum IapItemDisplayTemplateId {
     StickerWcs2025Pikachu3,
     #[serde(rename = "STICKER_WCS2025_PIKACHU.5")]
     StickerWcs2025Pikachu5,
-    #[serde(rename = "STICKER_WINTER2023_1.3")]
-    StickerWinter202313,
-    #[serde(rename = "STICKER_WINTER2023_1.5")]
-    StickerWinter202315,
-    #[serde(rename = "STICKER_WINTER2023_2.3")]
-    StickerWinter202323,
-    #[serde(rename = "STICKER_WINTER2023_2.5")]
-    StickerWinter202325,
-    #[serde(rename = "STICKER_WINTER2023_3.3")]
-    StickerWinter202333,
-    #[serde(rename = "STICKER_WINTER2023_3.5")]
-    StickerWinter202335,
-    #[serde(rename = "STICKER_WINTER2023_4.3")]
-    StickerWinter202343,
-    #[serde(rename = "STICKER_WINTER2023_4.5")]
-    StickerWinter202345,
-    #[serde(rename = "STICKER_WINTER2023_5.3")]
-    StickerWinter202353,
-    #[serde(rename = "STICKER_WINTER2023_5.5")]
-    StickerWinter202355,
-    #[serde(rename = "STICKER_WINTER2023_6.3")]
-    StickerWinter202363,
-    #[serde(rename = "STICKER_WINTER2023_6.5")]
-    StickerWinter202365,
-    #[serde(rename = "STICKER_WINTER2025_1.3")]
-    StickerWinter202513,
-    #[serde(rename = "STICKER_WINTER2025_1.5")]
-    StickerWinter202515,
-    #[serde(rename = "STICKER_WINTER2025_2.3")]
-    StickerWinter202523,
-    #[serde(rename = "STICKER_WINTER2025_2.5")]
-    StickerWinter202525,
-    #[serde(rename = "STICKER_WINTER2025_3.3")]
-    StickerWinter202533,
-    #[serde(rename = "STICKER_WINTER2025_3.5")]
-    StickerWinter202535,
-    #[serde(rename = "STICKER_WINTER2025_4.3")]
-    StickerWinter202543,
-    #[serde(rename = "STICKER_WINTER2025_4.5")]
-    StickerWinter202545,
     #[serde(rename = "STICKER_WINTER_2024_1.3")]
     StickerWinter202413,
     #[serde(rename = "STICKER_WINTER_2024_1.5")]
@@ -1425,6 +2179,46 @@ pub enum IapItemDisplayTemplateId {
     StickerWinterSnorunt3,
     #[serde(rename = "STICKER_WINTER_SNORUNT.5")]
     StickerWinterSnorunt5,
+    #[serde(rename = "STICKER_WINTER2023_1.3")]
+    StickerWinter202313,
+    #[serde(rename = "STICKER_WINTER2023_1.5")]
+    StickerWinter202315,
+    #[serde(rename = "STICKER_WINTER2023_2.3")]
+    StickerWinter202323,
+    #[serde(rename = "STICKER_WINTER2023_2.5")]
+    StickerWinter202325,
+    #[serde(rename = "STICKER_WINTER2023_3.3")]
+    StickerWinter202333,
+    #[serde(rename = "STICKER_WINTER2023_3.5")]
+    StickerWinter202335,
+    #[serde(rename = "STICKER_WINTER2023_4.3")]
+    StickerWinter202343,
+    #[serde(rename = "STICKER_WINTER2023_4.5")]
+    StickerWinter202345,
+    #[serde(rename = "STICKER_WINTER2023_5.3")]
+    StickerWinter202353,
+    #[serde(rename = "STICKER_WINTER2023_5.5")]
+    StickerWinter202355,
+    #[serde(rename = "STICKER_WINTER2023_6.3")]
+    StickerWinter202363,
+    #[serde(rename = "STICKER_WINTER2023_6.5")]
+    StickerWinter202365,
+    #[serde(rename = "STICKER_WINTER2025_1.3")]
+    StickerWinter202513,
+    #[serde(rename = "STICKER_WINTER2025_1.5")]
+    StickerWinter202515,
+    #[serde(rename = "STICKER_WINTER2025_2.3")]
+    StickerWinter202523,
+    #[serde(rename = "STICKER_WINTER2025_2.5")]
+    StickerWinter202525,
+    #[serde(rename = "STICKER_WINTER2025_3.3")]
+    StickerWinter202533,
+    #[serde(rename = "STICKER_WINTER2025_3.5")]
+    StickerWinter202535,
+    #[serde(rename = "STICKER_WINTER2025_4.3")]
+    StickerWinter202543,
+    #[serde(rename = "STICKER_WINTER2025_4.5")]
+    StickerWinter202545,
     #[serde(rename = "STICKER_YURUTTO_12.3")]
     StickerYurutto123,
     #[serde(rename = "STICKER_YURUTTO_12.5")]
@@ -1433,804 +2227,6 @@ pub enum IapItemDisplayTemplateId {
     StickerYurutto243,
     #[serde(rename = "STICKER_YURUTTO_24.5")]
     StickerYurutto245,
-    #[serde(rename = "WINTERHOLIDAYS2025_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
-    Winterholidays2025DeluxeEventPassTrackUnlock,
-    #[serde(rename = "WINTERHOLIDAYS2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
-    Winterholidays2025DeluxeEventPassTrackUnlockPlusPoints,
-    #[serde(rename = "battlepassticket.1")]
-    Battlepassticket1,
-    #[serde(rename = "bundle.EliteExp2024.1")]
-    BundleEliteExp20241,
-    #[serde(rename = "bundle.EliteExp2024.2")]
-    BundleEliteExp20242,
-    #[serde(rename = "bundle.EliteExp2024.3")]
-    BundleEliteExp20243,
-    #[serde(rename = "bundle.EliteExp2024.4")]
-    BundleEliteExp20244,
-    #[serde(rename = "bundle.EliteExp2024.5")]
-    BundleEliteExp20245,
-    #[serde(rename = "bundle.GOTour2024.1")]
-    BundleGotour20241,
-    #[serde(rename = "bundle.GOTour2024.2")]
-    BundleGotour20242,
-    #[serde(rename = "bundle.GOTour2024.3")]
-    BundleGotour20243,
-    #[serde(rename = "bundle.GOTour2024.4")]
-    BundleGotour20244,
-    #[serde(rename = "bundle.GOTour2024.5")]
-    BundleGotour20245,
-    #[serde(rename = "bundle.GOTour2024.6")]
-    BundleGotour20246,
-    #[serde(rename = "bundle.GOTour2024.7")]
-    BundleGotour20247,
-    #[serde(rename = "bundle.adventurebrazil100.1")]
-    BundleAdventurebrazil1001,
-    #[serde(rename = "bundle.adventurebrazil200.1")]
-    BundleAdventurebrazil2001,
-    #[serde(rename = "bundle.anniversary2023.1")]
-    BundleAnniversary20231,
-    #[serde(rename = "bundle.apacmar2025.1")]
-    BundleApacmar20251,
-    #[serde(rename = "bundle.arraia2025.1")]
-    BundleArraia20251,
-    #[serde(rename = "bundle.arraia2025.2")]
-    BundleArraia20252,
-    #[serde(rename = "bundle.atlanticav2box.1")]
-    BundleAtlanticav2box1,
-    #[serde(rename = "bundle.atlanticav2box.2")]
-    BundleAtlanticav2box2,
-    #[serde(rename = "bundle.blackfridaystickers24.1")]
-    BundleBlackfridaystickers241,
-    #[serde(rename = "bundle.blackfridaystickers24.2")]
-    BundleBlackfridaystickers242,
-    #[serde(rename = "bundle.boost2023.1")]
-    BundleBoost20231,
-    #[serde(rename = "bundle.brazil2023.1")]
-    BundleBrazil20231,
-    #[serde(rename = "bundle.brazilrediscover1.1")]
-    BundleBrazilrediscover11,
-    #[serde(rename = "bundle.brazilrediscover2.1")]
-    BundleBrazilrediscover21,
-    #[serde(rename = "bundle.brazilvacations100.1")]
-    BundleBrazilvacations1001,
-    #[serde(rename = "bundle.carnival2025.1")]
-    BundleCarnival20251,
-    #[serde(rename = "bundle.carnival2025.2")]
-    BundleCarnival20252,
-    #[serde(rename = "bundle.cd2022.1")]
-    BundleCd20221,
-    #[serde(rename = "bundle.cd2022.2")]
-    BundleCd20222,
-    #[serde(rename = "bundle.cdrecapstickers.1")]
-    BundleCdrecapstickers1,
-    #[serde(rename = "bundle.citysafari450hktw.1")]
-    BundleCitysafari450hktw1,
-    #[serde(rename = "bundle.cswkmakegoodprep.100.1")]
-    BundleCswkmakegoodprep1001,
-    #[serde(rename = "bundle.cswkmakegoodprep.200.1")]
-    BundleCswkmakegoodprep2001,
-    #[serde(rename = "bundle.cswkmakegoodprep.300.1")]
-    BundleCswkmakegoodprep3001,
-    #[serde(rename = "bundle.decroutes2023.1")]
-    BundleDecroutes20231,
-    #[serde(rename = "bundle.diademuertos2025.1")]
-    BundleDiademuertos20251,
-    #[serde(rename = "bundle.diademuertosmax100.1")]
-    BundleDiademuertosmax1001,
-    #[serde(rename = "bundle.diademuertosmax200.1")]
-    BundleDiademuertosmax2001,
-    #[serde(rename = "bundle.diwali2025.1")]
-    BundleDiwali20251,
-    #[serde(rename = "bundle.diwali2025.2")]
-    BundleDiwali20252,
-    #[serde(rename = "bundle.diwalimax100.1")]
-    BundleDiwalimax1001,
-    #[serde(rename = "bundle.emcarnival2026.1")]
-    BundleEmcarnival20261,
-    #[serde(rename = "bundle.emcarnival2026.2")]
-    BundleEmcarnival20262,
-    #[serde(rename = "bundle.emea2023.1")]
-    BundleEmea20231,
-    #[serde(rename = "bundle.evolve2022.1")]
-    BundleEvolve20221,
-    #[serde(rename = "bundle.evolve2022.2")]
-    BundleEvolve20222,
-    #[serde(rename = "bundle.evolve2022.3")]
-    BundleEvolve20223,
-    #[serde(rename = "bundle.evolve2022.4")]
-    BundleEvolve20224,
-    #[serde(rename = "bundle.evolve2022.5")]
-    BundleEvolve20225,
-    #[serde(rename = "bundle.evolve2022.6")]
-    BundleEvolve20226,
-    #[serde(rename = "bundle.fol2022.1")]
-    BundleFol20221,
-    #[serde(rename = "bundle.fol2022.2")]
-    BundleFol20222,
-    #[serde(rename = "bundle.fol2022.3")]
-    BundleFol20223,
-    #[serde(rename = "bundle.fol2022.4")]
-    BundleFol20224,
-    #[serde(rename = "bundle.general.template4")]
-    BundleGeneralTemplate4,
-    #[serde(rename = "bundle.general.template5")]
-    BundleGeneralTemplate5,
-    #[serde(rename = "bundle.general.template6")]
-    BundleGeneralTemplate6,
-    #[serde(rename = "bundle.general1.free.1")]
-    BundleGeneral1Free1,
-    #[serde(rename = "bundle.general1.large.1")]
-    BundleGeneral1Large1,
-    #[serde(rename = "bundle.general1.medium.1")]
-    BundleGeneral1Medium1,
-    #[serde(rename = "bundle.general1.medium.2")]
-    BundleGeneral1Medium2,
-    #[serde(rename = "bundle.general1.medium.3")]
-    BundleGeneral1Medium3,
-    #[serde(rename = "bundle.general1.rocket.1")]
-    BundleGeneral1Rocket1,
-    #[serde(rename = "bundle.general1.small.1")]
-    BundleGeneral1Small1,
-    #[serde(rename = "bundle.general1.tiny.2")]
-    BundleGeneral1Tiny2,
-    #[serde(rename = "bundle.general1.tiny.3")]
-    BundleGeneral1Tiny3,
-    #[serde(rename = "bundle.general1.tiny.4")]
-    BundleGeneral1Tiny4,
-    #[serde(rename = "bundle.general2.free.1")]
-    BundleGeneral2Free1,
-    #[serde(rename = "bundle.general2.large.1")]
-    BundleGeneral2Large1,
-    #[serde(rename = "bundle.general2.medium.1")]
-    BundleGeneral2Medium1,
-    #[serde(rename = "bundle.general2.small.1")]
-    BundleGeneral2Small1,
-    #[serde(rename = "bundle.general3.free.1")]
-    BundleGeneral3Free1,
-    #[serde(rename = "bundle.general3.large.1")]
-    BundleGeneral3Large1,
-    #[serde(rename = "bundle.general3.small.1")]
-    BundleGeneral3Small1,
-    #[serde(rename = "bundle.general4.large.1")]
-    BundleGeneral4Large1,
-    #[serde(rename = "bundle.general4.small.2")]
-    BundleGeneral4Small2,
-    #[serde(rename = "bundle.general5.large.1")]
-    BundleGeneral5Large1,
-    #[serde(rename = "bundle.general5.small.1")]
-    BundleGeneral5Small1,
-    #[serde(rename = "bundle.general5.small.2")]
-    BundleGeneral5Small2,
-    #[serde(rename = "bundle.general5.small.3")]
-    BundleGeneral5Small3,
-    #[serde(rename = "bundle.general5.small.4")]
-    BundleGeneral5Small4,
-    #[serde(rename = "bundle.general5.small.5")]
-    BundleGeneral5Small5,
-    #[serde(rename = "bundle.general6.small.1")]
-    BundleGeneral6Small1,
-    #[serde(rename = "bundle.gmaxday.1")]
-    BundleGmaxday1,
-    #[serde(rename = "bundle.gofest2023.1")]
-    BundleGofest20231,
-    #[serde(rename = "bundle.gofest2023.2")]
-    BundleGofest20232,
-    #[serde(rename = "bundle.gofest2023.3")]
-    BundleGofest20233,
-    #[serde(rename = "bundle.gofest2023.4")]
-    BundleGofest20234,
-    #[serde(rename = "bundle.gofest2023.5")]
-    BundleGofest20235,
-    #[serde(rename = "bundle.gofest2024.1")]
-    BundleGofest20241,
-    #[serde(rename = "bundle.gofest2024.2")]
-    BundleGofest20242,
-    #[serde(rename = "bundle.gofest2024.3")]
-    BundleGofest20243,
-    #[serde(rename = "bundle.gofest2024.4")]
-    BundleGofest20244,
-    #[serde(rename = "bundle.gofestmakegoodprep.1")]
-    BundleGofestmakegoodprep1,
-    #[serde(rename = "bundle.gofestmakegoodprep.2")]
-    BundleGofestmakegoodprep2,
-    #[serde(rename = "bundle.gofestmakegoodprep.3")]
-    BundleGofestmakegoodprep3,
-    #[serde(rename = "bundle.gowa2024.1")]
-    BundleGowa20241,
-    #[serde(rename = "bundle.gowa2024.2")]
-    BundleGowa20242,
-    #[serde(rename = "bundle.gowa2024.3")]
-    BundleGowa20243,
-    #[serde(rename = "bundle.gowa2024.4")]
-    BundleGowa20244,
-    #[serde(rename = "bundle.gpdindialaunch.1")]
-    BundleGpdindialaunch1,
-    #[serde(rename = "bundle.gpmay2023.1")]
-    BundleGpmay20231,
-    #[serde(rename = "bundle.gwlatam2025.1")]
-    BundleGwlatam20251,
-    #[serde(rename = "bundle.gwlatam2025.2")]
-    BundleGwlatam20252,
-    #[serde(rename = "bundle.gwlatam2025.3")]
-    BundleGwlatam20253,
-    #[serde(rename = "bundle.halloween.adventure.1")]
-    BundleHalloweenAdventure1,
-    #[serde(rename = "bundle.halloween.large.1")]
-    BundleHalloweenLarge1,
-    #[serde(rename = "bundle.halloween.small.1")]
-    BundleHalloweenSmall1,
-    #[serde(rename = "bundle.halloween2022.1")]
-    BundleHalloween20221,
-    #[serde(rename = "bundle.halloween2022.2")]
-    BundleHalloween20222,
-    #[serde(rename = "bundle.halloween2022.3")]
-    BundleHalloween20223,
-    #[serde(rename = "bundle.halloween2023.1")]
-    BundleHalloween20231,
-    #[serde(rename = "bundle.halloween2023.2")]
-    BundleHalloween20232,
-    #[serde(rename = "bundle.halloween2023.3")]
-    BundleHalloween20233,
-    #[serde(rename = "bundle.halloween2025.1")]
-    BundleHalloween20251,
-    #[serde(rename = "bundle.halloween2025.2")]
-    BundleHalloween20252,
-    #[serde(rename = "bundle.halloween2025.3")]
-    BundleHalloween20253,
-    #[serde(rename = "bundle.harvestcatch.1")]
-    BundleHarvestcatch1,
-    #[serde(rename = "bundle.harvestfestival.2025")]
-    BundleHarvestfestival2025,
-    #[serde(rename = "bundle.hatchbox2024.1")]
-    BundleHatchbox20241,
-    #[serde(rename = "bundle.hawlucha2025.1")]
-    BundleHawlucha20251,
-    #[serde(rename = "bundle.hawlucha2025.2")]
-    BundleHawlucha20252,
-    #[serde(rename = "bundle.hawluchacelebration100.1")]
-    BundleHawluchacelebration1001,
-    #[serde(rename = "bundle.hawluchacelebration200.1")]
-    BundleHawluchacelebration2001,
-    #[serde(rename = "bundle.hisuiraidday2023.1")]
-    BundleHisuiraidday20231,
-    #[serde(rename = "bundle.holi2025.1")]
-    BundleHoli20251,
-    #[serde(rename = "bundle.holi2025.2")]
-    BundleHoli20252,
-    #[serde(rename = "bundle.holiday2022.1")]
-    BundleHoliday20221,
-    #[serde(rename = "bundle.holiday2022.2")]
-    BundleHoliday20222,
-    #[serde(rename = "bundle.holiday2022.3")]
-    BundleHoliday20223,
-    #[serde(rename = "bundle.holiday2024.1")]
-    BundleHoliday20241,
-    #[serde(rename = "bundle.incenseday.1")]
-    BundleIncenseday1,
-    #[serde(rename = "bundle.indiaaugust100.1")]
-    BundleIndiaaugust1001,
-    #[serde(rename = "bundle.indiaboxfeature.1")]
-    BundleIndiaboxfeature1,
-    #[serde(rename = "bundle.indiafestivaloflights.1")]
-    BundleIndiafestivaloflights1,
-    #[serde(rename = "bundle.indiamay2024.1")]
-    BundleIndiamay20241,
-    #[serde(rename = "bundle.indiaseptember100.1")]
-    BundleIndiaseptember1001,
-    #[serde(rename = "bundle.indiaseptember200.1")]
-    BundleIndiaseptember2001,
-    #[serde(rename = "bundle.indonesiaboxfeature.1")]
-    BundleIndonesiaboxfeature1,
-    #[serde(rename = "bundle.indonesialaunch.1")]
-    BundleIndonesialaunch1,
-    #[serde(rename = "bundle.indonesialaunch.2")]
-    BundleIndonesialaunch2,
-    #[serde(rename = "bundle.jakartaaugust100.1")]
-    BundleJakartaaugust1001,
-    #[serde(rename = "bundle.koreaseptember100.1")]
-    BundleKoreaseptember1001,
-    #[serde(rename = "bundle.koreaseptember200.1")]
-    BundleKoreaseptember2001,
-    #[serde(rename = "bundle.ksalaunch100.1")]
-    BundleKsalaunch1001,
-    #[serde(rename = "bundle.ksalaunch200.1")]
-    BundleKsalaunch2001,
-    #[serde(rename = "bundle.latbox100.1")]
-    BundleLatbox1001,
-    #[serde(rename = "bundle.latbox300.1")]
-    BundleLatbox3001,
-    #[serde(rename = "bundle.lunarnewyear.1")]
-    BundleLunarnewyear1,
-    #[serde(rename = "bundle.maxfinale.1")]
-    BundleMaxfinale1,
-    #[serde(rename = "bundle.maxfinale.2")]
-    BundleMaxfinale2,
-    #[serde(rename = "bundle.maxmonday.1")]
-    BundleMaxmonday1,
-    #[serde(rename = "bundle.mega-lucario-raid-day2024.1")]
-    BundleMegaLucarioRaidDay20241,
-    #[serde(rename = "bundle.mheracrossraidday2024.1")]
-    BundleMheracrossraidday20241,
-    #[serde(rename = "bundle.midautumn.1")]
-    BundleMidautumn1,
-    #[serde(rename = "bundle.midautumn.2")]
-    BundleMidautumn2,
-    #[serde(rename = "bundle.midautumn.3")]
-    BundleMidautumn3,
-    #[serde(rename = "bundle.newyears2024.1")]
-    BundleNewyears20241,
-    #[serde(rename = "bundle.playsummerbox.1")]
-    BundlePlaysummerbox1,
-    #[serde(rename = "bundle.primalraidday2023.1")]
-    BundlePrimalraidday20231,
-    #[serde(rename = "bundle.psych_spec_2022.1")]
-    BundlePsychSpec20221,
-    #[serde(rename = "bundle.psych_spec_2022.2")]
-    BundlePsychSpec20222,
-    #[serde(rename = "bundle.psych_spec_2022.3")]
-    BundlePsychSpec20223,
-    #[serde(rename = "bundle.ramadan.1")]
-    BundleRamadan1,
-    #[serde(rename = "bundle.ramadan.2")]
-    BundleRamadan2,
-    #[serde(rename = "bundle.rarebundle.1")]
-    BundleRarebundle1,
-    #[serde(rename = "bundle.rarebundle.2")]
-    BundleRarebundle2,
-    #[serde(rename = "bundle.rarebundle.3")]
-    BundleRarebundle3,
-    #[serde(rename = "bundle.rarebundle.4")]
-    BundleRarebundle4,
-    #[serde(rename = "bundle.riolu2023.1")]
-    BundleRiolu20231,
-    #[serde(rename = "bundle.riolu2023.2")]
-    BundleRiolu20232,
-    #[serde(rename = "bundle.rockruffboost.1")]
-    BundleRockruffboost1,
-    #[serde(rename = "bundle.rrpstar.1")]
-    BundleRrpstar1,
-    #[serde(rename = "bundle.s17seasonstart.1")]
-    BundleS17seasonstart1,
-    #[serde(rename = "bundle.season10evergreen.1")]
-    BundleSeason10evergreen1,
-    #[serde(rename = "bundle.season10evergreen.2")]
-    BundleSeason10evergreen2,
-    #[serde(rename = "bundle.season10evergreen.3")]
-    BundleSeason10evergreen3,
-    #[serde(rename = "bundle.season11evergreen.1")]
-    BundleSeason11evergreen1,
-    #[serde(rename = "bundle.season11evergreen.2")]
-    BundleSeason11evergreen2,
-    #[serde(rename = "bundle.season11evergreen.3")]
-    BundleSeason11evergreen3,
-    #[serde(rename = "bundle.season12evergreen2023.1")]
-    BundleSeason12evergreen20231,
-    #[serde(rename = "bundle.season12evergreen2023.2")]
-    BundleSeason12evergreen20232,
-    #[serde(rename = "bundle.season12evergreen2023.3")]
-    BundleSeason12evergreen20233,
-    #[serde(rename = "bundle.season13evergreen2023.1")]
-    BundleSeason13evergreen20231,
-    #[serde(rename = "bundle.season13evergreen2023.2")]
-    BundleSeason13evergreen20232,
-    #[serde(rename = "bundle.season13evergreen2023.3")]
-    BundleSeason13evergreen20233,
-    #[serde(rename = "bundle.season14evergreen2024.1")]
-    BundleSeason14evergreen20241,
-    #[serde(rename = "bundle.season14evergreen2024.2")]
-    BundleSeason14evergreen20242,
-    #[serde(rename = "bundle.season14evergreen2024.3")]
-    BundleSeason14evergreen20243,
-    #[serde(rename = "bundle.season15evergreen2024.1")]
-    BundleSeason15evergreen20241,
-    #[serde(rename = "bundle.season15evergreen2024.2")]
-    BundleSeason15evergreen20242,
-    #[serde(rename = "bundle.season15evergreen2024.3")]
-    BundleSeason15evergreen20243,
-    #[serde(rename = "bundle.season16evergreen2024.1")]
-    BundleSeason16evergreen20241,
-    #[serde(rename = "bundle.season16evergreen2024.2")]
-    BundleSeason16evergreen20242,
-    #[serde(rename = "bundle.season16evergreen2024.3")]
-    BundleSeason16evergreen20243,
-    #[serde(rename = "bundle.seasonaldelights2024.1")]
-    BundleSeasonaldelights20241,
-    #[serde(rename = "bundle.shadowlugia.1")]
-    BundleShadowlugia1,
-    #[serde(rename = "bundle.smoresbump.2025")]
-    BundleSmoresbump2025,
-    #[serde(rename = "bundle.solstice2023.1")]
-    BundleSolstice20231,
-    #[serde(rename = "bundle.solstice2023.2")]
-    BundleSolstice20232,
-    #[serde(rename = "bundle.solstice2023.3")]
-    BundleSolstice20233,
-    #[serde(rename = "bundle.songkran2025.1")]
-    BundleSongkran20251,
-    #[serde(rename = "bundle.sparkbox.1")]
-    BundleSparkbox1,
-    #[serde(rename = "bundle.sparkbox.2")]
-    BundleSparkbox2,
-    #[serde(rename = "bundle.sparkbox.3")]
-    BundleSparkbox3,
-    #[serde(rename = "bundle.springtakeover2023.1")]
-    BundleSpringtakeover20231,
-    #[serde(rename = "bundle.springtakeover2023.2")]
-    BundleSpringtakeover20232,
-    #[serde(rename = "bundle.springtakeover2023.3")]
-    BundleSpringtakeover20233,
-    #[serde(rename = "bundle.steel_mettle2022.1")]
-    BundleSteelMettle20221,
-    #[serde(rename = "bundle.steel_mettle2022.2")]
-    BundleSteelMettle20222,
-    #[serde(rename = "bundle.steel_mettle2022.3")]
-    BundleSteelMettle20223,
-    #[serde(rename = "bundle.takeover2022.1")]
-    BundleTakeover20221,
-    #[serde(rename = "bundle.takeover2022.2")]
-    BundleTakeover20222,
-    #[serde(rename = "bundle.takeover2022.3")]
-    BundleTakeover20223,
-    #[serde(rename = "bundle.tgrtakeover2024.1")]
-    BundleTgrtakeover20241,
-    #[serde(rename = "bundle.thailandfeatureapril2024.1")]
-    BundleThailandfeatureapril20241,
-    #[serde(rename = "bundle.tmexpert.1")]
-    BundleTmexpert1,
-    #[serde(rename = "bundle.ubraidday2022.1")]
-    BundleUbraidday20221,
-    #[serde(rename = "bundle.ubraidday2022.2")]
-    BundleUbraidday20222,
-    #[serde(rename = "bundle.ukfeature.1")]
-    BundleUkfeature1,
-    #[serde(rename = "bundle.ultrabeastraid.2024")]
-    BundleUltrabeastraid2024,
-    #[serde(rename = "bundle.ultraunlockraid2023.1")]
-    BundleUltraunlockraid20231,
-    #[serde(rename = "bundle.ultraunlockraid2023.2")]
-    BundleUltraunlockraid20232,
-    #[serde(rename = "bundle.uustorage.1")]
-    BundleUustorage1,
-    #[serde(rename = "bundle.voyagerouttoplay.1")]
-    BundleVoyagerouttoplay1,
-    #[serde(rename = "bundle.welcomebox.1")]
-    BundleWelcomebox1,
-    #[serde(rename = "bundle.winterevergreen.1")]
-    BundleWinterevergreen1,
-    #[serde(rename = "bundle.winterevergreen.2")]
-    BundleWinterevergreen2,
-    #[serde(rename = "bundle.winterevergreen.3")]
-    BundleWinterevergreen3,
-    #[serde(rename = "bundle.winterholiday2023.1")]
-    BundleWinterholiday20231,
-    #[serde(rename = "bundle.winterholiday2023.2")]
-    BundleWinterholiday20232,
-    #[serde(rename = "bundle.winterholiday2023.3")]
-    BundleWinterholiday20233,
-    #[serde(rename = "bundle.xmas.large.1")]
-    BundleXmasLarge1,
-    #[serde(rename = "bundle.zoruamakegood2022")]
-    BundleZoruamakegood2022,
-    #[serde(rename = "bundle.zzraid.1")]
-    BundleZzraid1,
-    #[serde(rename = "diademuertos")]
-    Diademuertos,
-    #[serde(rename = "evergreenticket.1")]
-    Evergreenticket1,
-    #[serde(rename = "evergreenticket.1.giftable")]
-    Evergreenticket1Giftable,
-    #[serde(rename = "general1.ticket.1")]
-    General1Ticket1,
-    #[serde(rename = "general1.ticket.1.giftable")]
-    General1Ticket1Giftable,
-    #[serde(rename = "general1.ticket.2")]
-    General1Ticket2,
-    #[serde(rename = "general1.ticket.2.giftable")]
-    General1Ticket2Giftable,
-    #[serde(rename = "general1.ticket.3")]
-    General1Ticket3,
-    #[serde(rename = "general1.ticket.4")]
-    General1Ticket4,
-    #[serde(rename = "general1.ticket.4.giftable")]
-    General1Ticket4Giftable,
-    #[serde(rename = "general1.ticket.5")]
-    General1Ticket5,
-    #[serde(rename = "general1.ticket.6")]
-    General1Ticket6,
-    #[serde(rename = "general2.ticket.1")]
-    General2Ticket1,
-    #[serde(rename = "general2.ticket.1.giftable")]
-    General2Ticket1Giftable,
-    #[serde(rename = "general2.ticket.10")]
-    General2Ticket10,
-    #[serde(rename = "general2.ticket.10.giftable")]
-    General2Ticket10Giftable,
-    #[serde(rename = "general2.ticket.2")]
-    General2Ticket2,
-    #[serde(rename = "general2.ticket.2.giftable")]
-    General2Ticket2Giftable,
-    #[serde(rename = "general2.ticket.3")]
-    General2Ticket3,
-    #[serde(rename = "general2.ticket.3.giftable")]
-    General2Ticket3Giftable,
-    #[serde(rename = "general2.ticket.4")]
-    General2Ticket4,
-    #[serde(rename = "general2.ticket.4.giftable")]
-    General2Ticket4Giftable,
-    #[serde(rename = "general2.ticket.5")]
-    General2Ticket5,
-    #[serde(rename = "general2.ticket.5.giftable")]
-    General2Ticket5Giftable,
-    #[serde(rename = "general2.ticket.6")]
-    General2Ticket6,
-    #[serde(rename = "general2.ticket.7")]
-    General2Ticket7,
-    #[serde(rename = "general2.ticket.7.giftable")]
-    General2Ticket7Giftable,
-    #[serde(rename = "general2.ticket.8")]
-    General2Ticket8,
-    #[serde(rename = "general2.ticket.8.giftable")]
-    General2Ticket8Giftable,
-    #[serde(rename = "general2.ticket.9")]
-    General2Ticket9,
-    #[serde(rename = "general2.ticket.9.giftable")]
-    General2Ticket9Giftable,
-    #[serde(rename = "general4.medium.1")]
-    General4Medium1,
-    #[serde(rename = "general6.small.1")]
-    General6Small1,
-    #[serde(rename = "gowaticketfree.1")]
-    Gowaticketfree1,
-    #[serde(rename = "hometransport.1")]
-    Hometransport1,
-    #[serde(rename = "incenseordinary.1")]
-    Incenseordinary1,
-    #[serde(rename = "incenseordinary.8")]
-    Incenseordinary8,
-    #[serde(rename = "incubatorbasic.1")]
-    Incubatorbasic1,
-    #[serde(rename = "incubatorsuper.1")]
-    Incubatorsuper1,
-    #[serde(rename = "itemleadermap")]
-    Itemleadermap,
-    #[serde(rename = "luckyegg.1")]
-    Luckyegg1,
-    #[serde(rename = "luckyegg.8")]
-    Luckyegg8,
-    #[serde(rename = "max_boost.1")]
-    MaxBoost1,
-    #[serde(rename = "max_boost.3")]
-    MaxBoost3,
-    #[serde(rename = "maxpotion.10")]
-    Maxpotion10,
-    #[serde(rename = "maxpotion.5")]
-    Maxpotion5,
-    #[serde(rename = "maxrevive.3")]
-    Maxrevive3,
-    #[serde(rename = "maxrevive.6")]
-    Maxrevive6,
-    #[serde(rename = "mp_replenish.1")]
-    MpReplenish1,
-    #[serde(rename = "mp_replenish.3")]
-    MpReplenish3,
-    #[serde(rename = "mp_replenish_rrp.1")]
-    MpReplenishRrp1,
-    #[serde(rename = "mp_replenish_rrp.3")]
-    MpReplenishRrp3,
-    #[serde(rename = "paidraidticket.1")]
-    Paidraidticket1,
-    #[serde(rename = "paidraidticket.3")]
-    Paidraidticket3,
-    #[serde(rename = "pgorelease.april2_2026_deluxe_event_pass_track_redirect")]
-    PgoreleaseApril22026DeluxeEventPassTrackRedirect,
-    #[serde(rename = "pgorelease.april3_2026_deluxe_event_pass_track_unlock")]
-    PgoreleaseApril32026DeluxeEventPassTrackUnlock,
-    #[serde(rename = "pgorelease.april3_2026_deluxe_event_pass_track_unlock_plus_points")]
-    PgoreleaseApril32026DeluxeEventPassTrackUnlockPlusPoints,
-    #[serde(rename = "pgorelease.bundle.1")]
-    PgoreleaseBundle1,
-    #[serde(rename = "pgorelease.bundle.2")]
-    PgoreleaseBundle2,
-    #[serde(rename = "pgorelease.bundle.RTSRaid")]
-    PgoreleaseBundleRtsraid,
-    #[serde(rename = "pgorelease.bundle.blanchebox.1")]
-    PgoreleaseBundleBlanchebox1,
-    #[serde(rename = "pgorelease.bundle.citysafaribarcelona1")]
-    PgoreleaseBundleCitysafaribarcelona1,
-    #[serde(rename = "pgorelease.bundle.citysafaribarcelona2")]
-    PgoreleaseBundleCitysafaribarcelona2,
-    #[serde(rename = "pgorelease.bundle.citysafarimexico1")]
-    PgoreleaseBundleCitysafarimexico1,
-    #[serde(rename = "pgorelease.bundle.citysafarimexico2")]
-    PgoreleaseBundleCitysafarimexico2,
-    #[serde(rename = "pgorelease.bundle.eliteraidbox.1")]
-    PgoreleaseBundleEliteraidbox1,
-    #[serde(rename = "pgorelease.bundle.eliteraidmay2023")]
-    PgoreleaseBundleEliteraidmay2023,
-    #[serde(rename = "pgorelease.bundle.flavoredlures.1")]
-    PgoreleaseBundleFlavoredlures1,
-    #[serde(rename = "pgorelease.bundle.flavoredlures.2")]
-    PgoreleaseBundleFlavoredlures2,
-    #[serde(rename = "pgorelease.bundle.flavoredlures.3")]
-    PgoreleaseBundleFlavoredlures3,
-    #[serde(rename = "pgorelease.bundle.flavoredlures.4")]
-    PgoreleaseBundleFlavoredlures4,
-    #[serde(rename = "pgorelease.bundle.flavoredlures.5")]
-    PgoreleaseBundleFlavoredlures5,
-    #[serde(rename = "pgorelease.bundle.flavoredlures.6")]
-    PgoreleaseBundleFlavoredlures6,
-    #[serde(rename = "pgorelease.bundle.flavoredlures.7")]
-    PgoreleaseBundleFlavoredlures7,
-    #[serde(rename = "pgorelease.bundle.flavoredlures.8")]
-    PgoreleaseBundleFlavoredlures8,
-    #[serde(rename = "pgorelease.bundle.foc2023box.1")]
-    PgoreleaseBundleFoc2023box1,
-    #[serde(rename = "pgorelease.bundle.general.thirdparty.large.2")]
-    PgoreleaseBundleGeneralThirdpartyLarge2,
-    #[serde(rename = "pgorelease.bundle.general.thirdparty.large.4")]
-    PgoreleaseBundleGeneralThirdpartyLarge4,
-    #[serde(rename = "pgorelease.bundle.general.thirdparty.medium.1")]
-    PgoreleaseBundleGeneralThirdpartyMedium1,
-    #[serde(rename = "pgorelease.bundle.general.thirdparty.small.1")]
-    PgoreleaseBundleGeneralThirdpartySmall1,
-    #[serde(rename = "pgorelease.bundle.general.thirdparty.small.1.2")]
-    PgoreleaseBundleGeneralThirdpartySmall12,
-    #[serde(rename = "pgorelease.bundle.general.thirdparty.small.2")]
-    PgoreleaseBundleGeneralThirdpartySmall2,
-    #[serde(rename = "pgorelease.bundle.general1.tiny.4")]
-    PgoreleaseBundleGeneral1Tiny4,
-    #[serde(rename = "pgorelease.bundle.general11.small.1331")]
-    PgoreleaseBundleGeneral11Small1331,
-    #[serde(rename = "pgorelease.bundle.gotour2023.0")]
-    PgoreleaseBundleGotour20230,
-    #[serde(rename = "pgorelease.bundle.gotour2023.1")]
-    PgoreleaseBundleGotour20231,
-    #[serde(rename = "pgorelease.bundle.gotour2023.2")]
-    PgoreleaseBundleGotour20232,
-    #[serde(rename = "pgorelease.bundle.gotour2023.3")]
-    PgoreleaseBundleGotour20233,
-    #[serde(rename = "pgorelease.bundle.gotour2023.4")]
-    PgoreleaseBundleGotour20234,
-    #[serde(rename = "pgorelease.bundle.gotour2023.5")]
-    PgoreleaseBundleGotour20235,
-    #[serde(rename = "pgorelease.bundle.gotour2023.6")]
-    PgoreleaseBundleGotour20236,
-    #[serde(rename = "pgorelease.bundle.gp2022.1")]
-    PgoreleaseBundleGp20221,
-    #[serde(rename = "pgorelease.bundle.indiagp2023.1")]
-    PgoreleaseBundleIndiagp20231,
-    #[serde(rename = "pgorelease.bundle.lure.1")]
-    PgoreleaseBundleLure1,
-    #[serde(rename = "pgorelease.bundle.pokemonday.1")]
-    PgoreleaseBundlePokemonday1,
-    #[serde(rename = "pgorelease.bundle.raiddaymay2023.1")]
-    PgoreleaseBundleRaiddaymay20231,
-    #[serde(rename = "pgorelease.bundle.raiddaymay2023.2")]
-    PgoreleaseBundleRaiddaymay20232,
-    #[serde(rename = "pgorelease.bundle.raiddaymay2023.3")]
-    PgoreleaseBundleRaiddaymay20233,
-    #[serde(rename = "pgorelease.bundle.raiddaymay2023.4")]
-    PgoreleaseBundleRaiddaymay20234,
-    #[serde(rename = "pgorelease.bundle.raiddaynov2023.1")]
-    PgoreleaseBundleRaiddaynov20231,
-    #[serde(rename = "pgorelease.bundle.raidhourbox.1")]
-    PgoreleaseBundleRaidhourbox1,
-    #[serde(rename = "pgorelease.bundle.raidhourbox.2")]
-    PgoreleaseBundleRaidhourbox2,
-    #[serde(rename = "pgorelease.bundle.ramadan2023box.1")]
-    PgoreleaseBundleRamadan2023box1,
-    #[serde(rename = "pgorelease.bundle.season10evergreen.1")]
-    PgoreleaseBundleSeason10evergreen1,
-    #[serde(rename = "pgorelease.bundle.season10evergreen.2")]
-    PgoreleaseBundleSeason10evergreen2,
-    #[serde(rename = "pgorelease.bundle.season10evergreen.3")]
-    PgoreleaseBundleSeason10evergreen3,
-    #[serde(rename = "pgorelease.bundle.season10launch.1")]
-    PgoreleaseBundleSeason10launch1,
-    #[serde(rename = "pgorelease.bundle.sustainabilitybonusmay2023")]
-    PgoreleaseBundleSustainabilitybonusmay2023,
-    #[serde(rename = "pgorelease.bundle.sustainabilitymay2023")]
-    PgoreleaseBundleSustainabilitymay2023,
-    #[serde(rename = "pgorelease.bundle.template1")]
-    PgoreleaseBundleTemplate1,
-    #[serde(rename = "pgorelease.bundle.template2")]
-    PgoreleaseBundleTemplate2,
-    #[serde(rename = "pgorelease.bundle.template3")]
-    PgoreleaseBundleTemplate3,
-    #[serde(rename = "pgorelease.bundle.thailandspec2023.1")]
-    PgoreleaseBundleThailandspec20231,
-    #[serde(rename = "pgorelease.bundle.walkeratlantic2022.1")]
-    PgoreleaseBundleWalkeratlantic20221,
-    #[serde(rename = "pgorelease.bundle.walkeratlantic2022.2")]
-    PgoreleaseBundleWalkeratlantic20222,
-    #[serde(rename = "pgorelease.citysafariticket0.1")]
-    PgoreleaseCitysafariticket01,
-    #[serde(rename = "pgorelease.citysafariticket1.1")]
-    PgoreleaseCitysafariticket11,
-    #[serde(rename = "pgorelease.citysafariticket2.1")]
-    PgoreleaseCitysafariticket21,
-    #[serde(rename = "pgorelease.evergreenticket.1")]
-    PgoreleaseEvergreenticket1,
-    #[serde(rename = "pgorelease.evergreenticket.1.giftable")]
-    PgoreleaseEvergreenticket1Giftable,
-    #[serde(rename = "pgorelease.general1.ticket.1")]
-    PgoreleaseGeneral1Ticket1,
-    #[serde(rename = "pgorelease.general1.ticket.1.giftable")]
-    PgoreleaseGeneral1Ticket1Giftable,
-    #[serde(rename = "pgorelease.general1.ticket.2")]
-    PgoreleaseGeneral1Ticket2,
-    #[serde(rename = "pgorelease.general1.ticket.2.giftable")]
-    PgoreleaseGeneral1Ticket2Giftable,
-    #[serde(rename = "pgorelease.general1.ticket.4")]
-    PgoreleaseGeneral1Ticket4,
-    #[serde(rename = "pgorelease.general1.ticket.4.giftable")]
-    PgoreleaseGeneral1Ticket4Giftable,
-    #[serde(rename = "pgorelease.general2.ticket.1")]
-    PgoreleaseGeneral2Ticket1,
-    #[serde(rename = "pgorelease.general2.ticket.1.giftable")]
-    PgoreleaseGeneral2Ticket1Giftable,
-    #[serde(rename = "pgorelease.general2.ticket.10")]
-    PgoreleaseGeneral2Ticket10,
-    #[serde(rename = "pgorelease.general2.ticket.10.giftable")]
-    PgoreleaseGeneral2Ticket10Giftable,
-    #[serde(rename = "pgorelease.general2.ticket.2")]
-    PgoreleaseGeneral2Ticket2,
-    #[serde(rename = "pgorelease.general2.ticket.2.giftable")]
-    PgoreleaseGeneral2Ticket2Giftable,
-    #[serde(rename = "pgorelease.general2.ticket.3")]
-    PgoreleaseGeneral2Ticket3,
-    #[serde(rename = "pgorelease.general2.ticket.3.giftable")]
-    PgoreleaseGeneral2Ticket3Giftable,
-    #[serde(rename = "pgorelease.general2.ticket.4")]
-    PgoreleaseGeneral2Ticket4,
-    #[serde(rename = "pgorelease.general2.ticket.4.giftable")]
-    PgoreleaseGeneral2Ticket4Giftable,
-    #[serde(rename = "pgorelease.general2.ticket.5")]
-    PgoreleaseGeneral2Ticket5,
-    #[serde(rename = "pgorelease.general2.ticket.5.giftable")]
-    PgoreleaseGeneral2Ticket5Giftable,
-    #[serde(rename = "pgorelease.general2.ticket.7")]
-    PgoreleaseGeneral2Ticket7,
-    #[serde(rename = "pgorelease.general2.ticket.7.giftable")]
-    PgoreleaseGeneral2Ticket7Giftable,
-    #[serde(rename = "pgorelease.general2.ticket.8")]
-    PgoreleaseGeneral2Ticket8,
-    #[serde(rename = "pgorelease.general2.ticket.8.giftable")]
-    PgoreleaseGeneral2Ticket8Giftable,
-    #[serde(rename = "pgorelease.general2.ticket.9")]
-    PgoreleaseGeneral2Ticket9,
-    #[serde(rename = "pgorelease.general2.ticket.9.giftable")]
-    PgoreleaseGeneral2Ticket9Giftable,
-    #[serde(rename = "pgorelease.month2_deluxe_event_pass_track_unlock")]
-    PgoreleaseMonth2DeluxeEventPassTrackUnlock,
-    #[serde(rename = "pgorelease.month2_deluxe_event_pass_track_unlock_plus_points")]
-    PgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints,
-    #[serde(rename = "pgorelease.pokecoin.15950")]
-    PgoreleasePokecoin15950,
-    #[serde(rename = "pgorelease.pokecoin.21375")]
-    PgoreleasePokecoin21375,
-    #[serde(rename = "pgorelease.pokecoin.2750")]
-    PgoreleasePokecoin2750,
-    #[serde(rename = "pgorelease.pokecoin.5720")]
-    PgoreleasePokecoin5720,
-    #[serde(rename = "poffin")]
-    Poffin,
-    #[serde(rename = "pokeball.100")]
-    Pokeball100,
-    #[serde(rename = "pokeball.20")]
-    Pokeball20,
-    #[serde(rename = "pokeball.200")]
-    Pokeball200,
-    #[serde(rename = "postcardstorageupgrade.1")]
-    Postcardstorageupgrade1,
-    #[serde(rename = "remoteraidticket.1")]
-    Remoteraidticket1,
-    #[serde(rename = "remoteraidticket.3")]
-    Remoteraidticket3,
-    #[serde(rename = "starpiece.1")]
-    Starpiece1,
-    #[serde(rename = "starpiece.8")]
-    Starpiece8,
     #[serde(rename = "troydisk.1")]
     Troydisk1,
     #[serde(rename = "troydisk.8")]
@@ -2247,4 +2243,8 @@ pub enum IapItemDisplayTemplateId {
     WebSeasonalDelights2024Box,
     #[serde(rename = "web-voyager-box-071323")]
     WebVoyagerBox071323,
+    #[serde(rename = "WINTERHOLIDAYS2025_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
+    Winterholidays2025DeluxeEventPassTrackUnlock,
+    #[serde(rename = "WINTERHOLIDAYS2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
+    Winterholidays2025DeluxeEventPassTrackUnlockPlusPoints,
 }

@@ -47,6 +47,7 @@ const (
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatBidoof             CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_BIDOOF"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatch              CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchGofest2022    CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_GOFEST2022"
+	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS8            CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S8"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS13           CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S13"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS14           CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S14"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS15           CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S15"
@@ -55,7 +56,6 @@ const (
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS19           CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S19"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS20           CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S20"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS22           CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S22"
-	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS8            CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S8"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchSeason11      CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_SEASON11"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatChampionshipSeries CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_SERIES"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatElectric           CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_ELECTRIC"
@@ -155,6 +155,7 @@ var CombatLeagueTemplateIDValues = [...]CombatLeagueTemplateID{
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatBidoof,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatch,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchGofest2022,
+	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS8,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS13,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS14,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS15,
@@ -163,7 +164,6 @@ var CombatLeagueTemplateIDValues = [...]CombatLeagueTemplateID{
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS19,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS20,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS22,
-	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS8,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchSeason11,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatChampionshipSeries,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatElectric,

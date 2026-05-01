@@ -138,6 +138,9 @@ const (
 	LocationCardSettingsTemplateIDLcPokelidWakayama                                       LocationCardSettingsTemplateID = "LC_POKELID_WAKAYAMA"
 	LocationCardSettingsTemplateIDLcPokelidYamagata                                       LocationCardSettingsTemplateID = "LC_POKELID_YAMAGATA"
 	LocationCardSettingsTemplateIDLcPokelidYamaguchi                                      LocationCardSettingsTemplateID = "LC_POKELID_YAMAGUCHI"
+	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestMoonUltraWormhole001 LocationCardSettingsTemplateID = "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_MOON_ULTRA_WORMHOLE_001"
+	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestSunUltraWormhole001  LocationCardSettingsTemplateID = "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_SUN_ULTRA_WORMHOLE_001"
+	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestUltraWormhole001     LocationCardSettingsTemplateID = "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_ULTRA_WORMHOLE_001"
 	LocationCardSettingsTemplateIDLcSpecialbackground2024Decembercdrecap                  LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2024_DECEMBERCDRECAP"
 	LocationCardSettingsTemplateIDLcSpecialbackground2024GlobalGofestRadiance001          LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2024_GLOBAL_GOFEST_RADIANCE_001"
 	LocationCardSettingsTemplateIDLcSpecialbackground2024GlobalGofestUmbra001             LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2024_GLOBAL_GOFEST_UMBRA_001"
@@ -183,9 +186,6 @@ const (
 	LocationCardSettingsTemplateIDLcSpecialbackgroundTeamBlue                             LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_TEAM_BLUE"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundTeamRed                              LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_TEAM_RED"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundTeamYellow                           LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_TEAM_YELLOW"
-	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestMoonUltraWormhole001 LocationCardSettingsTemplateID = "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_MOON_ULTRA_WORMHOLE_001"
-	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestSunUltraWormhole001  LocationCardSettingsTemplateID = "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_SUN_ULTRA_WORMHOLE_001"
-	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestUltraWormhole001     LocationCardSettingsTemplateID = "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_ULTRA_WORMHOLE_001"
 	LocationCardSettingsTemplateIDLcTokmunStamp01                                         LocationCardSettingsTemplateID = "LC_TOKMUN_STAMP_01"
 	LocationCardSettingsTemplateIDLcTokmunStamp02                                         LocationCardSettingsTemplateID = "LC_TOKMUN_STAMP_02"
 	LocationCardSettingsTemplateIDLcTokmunStamp03                                         LocationCardSettingsTemplateID = "LC_TOKMUN_STAMP_03"
@@ -325,6 +325,9 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLcPokelidWakayama,
 	LocationCardSettingsTemplateIDLcPokelidYamagata,
 	LocationCardSettingsTemplateIDLcPokelidYamaguchi,
+	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestMoonUltraWormhole001,
+	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestSunUltraWormhole001,
+	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestUltraWormhole001,
 	LocationCardSettingsTemplateIDLcSpecialbackground2024Decembercdrecap,
 	LocationCardSettingsTemplateIDLcSpecialbackground2024GlobalGofestRadiance001,
 	LocationCardSettingsTemplateIDLcSpecialbackground2024GlobalGofestUmbra001,
@@ -370,9 +373,6 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLcSpecialbackgroundTeamBlue,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundTeamRed,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundTeamYellow,
-	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestMoonUltraWormhole001,
-	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestSunUltraWormhole001,
-	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestUltraWormhole001,
 	LocationCardSettingsTemplateIDLcTokmunStamp01,
 	LocationCardSettingsTemplateIDLcTokmunStamp02,
 	LocationCardSettingsTemplateIDLcTokmunStamp03,

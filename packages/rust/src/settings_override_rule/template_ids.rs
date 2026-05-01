@@ -37,20 +37,6 @@ pub enum SettingsOverrideRuleTemplateId {
     SettingsRulesAllowLgelmV600,
     #[serde(rename = "SETTINGS_RULES_ALLOW_MOTOROLAMOTOROLAEDGE40")]
     SettingsRulesAllowMotorolamotorolaedge40,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_ONEPLUSCPH2399")]
-    SettingsRulesAllowOnepluscph2399,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_ONEPLUSCPH2449")]
-    SettingsRulesAllowOnepluscph2449,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_ONEPLUSDN2103")]
-    SettingsRulesAllowOneplusdn2103,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_ONEPLUSKB2003")]
-    SettingsRulesAllowOnepluskb2003,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_ONEPLUSLE2113")]
-    SettingsRulesAllowOneplusle2113,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_ONEPLUSLE2123")]
-    SettingsRulesAllowOneplusle2123,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_ONEPLUSNE2213")]
-    SettingsRulesAllowOneplusne2213,
     #[serde(rename = "SETTINGS_RULES_ALLOW_ONEPLUS_CPH2413")]
     SettingsRulesAllowOneplusCph2413,
     #[serde(rename = "SETTINGS_RULES_ALLOW_ONEPLUS_CPH2415")]
@@ -97,12 +83,22 @@ pub enum SettingsOverrideRuleTemplateId {
     SettingsRulesAllowOneplusPhb110,
     #[serde(rename = "SETTINGS_RULES_ALLOW_ONEPLUS_PJD110")]
     SettingsRulesAllowOneplusPjd110,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_ONEPLUSCPH2399")]
+    SettingsRulesAllowOnepluscph2399,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_ONEPLUSCPH2449")]
+    SettingsRulesAllowOnepluscph2449,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_ONEPLUSDN2103")]
+    SettingsRulesAllowOneplusdn2103,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_ONEPLUSKB2003")]
+    SettingsRulesAllowOnepluskb2003,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_ONEPLUSLE2113")]
+    SettingsRulesAllowOneplusle2113,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_ONEPLUSLE2123")]
+    SettingsRulesAllowOneplusle2123,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_ONEPLUSNE2213")]
+    SettingsRulesAllowOneplusne2213,
     #[serde(rename = "SETTINGS_RULES_ALLOW_OPPOCPH2359")]
     SettingsRulesAllowOppocph2359,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSCG09")]
-    SettingsRulesAllowSamsungscg09,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSCG13")]
-    SettingsRulesAllowSamsungscg13,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSC_51A")]
     SettingsRulesAllowSamsungsc51a,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSC_51B")]
@@ -117,6 +113,10 @@ pub enum SettingsOverrideRuleTemplateId {
     SettingsRulesAllowSamsungsc52d,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSC_A528B")]
     SettingsRulesAllowSamsungscA528b,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSCG09")]
+    SettingsRulesAllowSamsungscg09,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSCG13")]
+    SettingsRulesAllowSamsungscg13,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_F711B")]
     SettingsRulesAllowSamsungsmF711b,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_F711N")]
@@ -207,8 +207,6 @@ pub enum SettingsOverrideRuleTemplateId {
     SettingsRulesAllowSamsungsmG990u2,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_G990W2")]
     SettingsRulesAllowSamsungsmG990w2,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_G9910")]
-    SettingsRulesAllowSamsungsmG9910,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_G991B")]
     SettingsRulesAllowSamsungsmG991b,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_G991N")]
@@ -235,6 +233,8 @@ pub enum SettingsOverrideRuleTemplateId {
     SettingsRulesAllowSamsungsmG998u,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_G998U1")]
     SettingsRulesAllowSamsungsmG998u1,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_G9910")]
+    SettingsRulesAllowSamsungsmG9910,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_N970U")]
     SettingsRulesAllowSamsungsmN970u,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_N980F")]
@@ -245,8 +245,6 @@ pub enum SettingsOverrideRuleTemplateId {
     SettingsRulesAllowSamsungsmN981n,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_N981U")]
     SettingsRulesAllowSamsungsmN981u,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_N9860")]
-    SettingsRulesAllowSamsungsmN9860,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_N986B")]
     SettingsRulesAllowSamsungsmN986b,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_N986N")]
@@ -255,6 +253,8 @@ pub enum SettingsOverrideRuleTemplateId {
     SettingsRulesAllowSamsungsmN986u,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_N986U1")]
     SettingsRulesAllowSamsungsmN986u1,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_N9860")]
+    SettingsRulesAllowSamsungsmN9860,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S711B")]
     SettingsRulesAllowSamsungsmS711b,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S711N")]
@@ -275,8 +275,6 @@ pub enum SettingsOverrideRuleTemplateId {
     SettingsRulesAllowSamsungsmS901u1,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S901W")]
     SettingsRulesAllowSamsungsmS901w,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9060")]
-    SettingsRulesAllowSamsungsmS9060,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S906B")]
     SettingsRulesAllowSamsungsmS906b,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S906E")]
@@ -287,8 +285,6 @@ pub enum SettingsOverrideRuleTemplateId {
     SettingsRulesAllowSamsungsmS906u,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S906U1")]
     SettingsRulesAllowSamsungsmS906u1,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9080")]
-    SettingsRulesAllowSamsungsmS9080,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S908B")]
     SettingsRulesAllowSamsungsmS908b,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S908E")]
@@ -311,8 +307,6 @@ pub enum SettingsOverrideRuleTemplateId {
     SettingsRulesAllowSamsungsmS911u1,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S911W")]
     SettingsRulesAllowSamsungsmS911w,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9160")]
-    SettingsRulesAllowSamsungsmS9160,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S916B")]
     SettingsRulesAllowSamsungsmS916b,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S916N")]
@@ -321,8 +315,6 @@ pub enum SettingsOverrideRuleTemplateId {
     SettingsRulesAllowSamsungsmS916u,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S916U1")]
     SettingsRulesAllowSamsungsmS916u1,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9180")]
-    SettingsRulesAllowSamsungsmS9180,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S918B")]
     SettingsRulesAllowSamsungsmS918b,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S918N")]
@@ -337,12 +329,8 @@ pub enum SettingsOverrideRuleTemplateId {
     SettingsRulesAllowSamsungsmS921b,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S921N")]
     SettingsRulesAllowSamsungsmS921n,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9260")]
-    SettingsRulesAllowSamsungsmS9260,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S926U")]
     SettingsRulesAllowSamsungsmS926u,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9280")]
-    SettingsRulesAllowSamsungsmS9280,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S928B")]
     SettingsRulesAllowSamsungsmS928b,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S928N")]
@@ -351,26 +339,20 @@ pub enum SettingsOverrideRuleTemplateId {
     SettingsRulesAllowSamsungsmS928u,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S928U1")]
     SettingsRulesAllowSamsungsmS928u1,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9060")]
+    SettingsRulesAllowSamsungsmS9060,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9080")]
+    SettingsRulesAllowSamsungsmS9080,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9160")]
+    SettingsRulesAllowSamsungsmS9160,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9180")]
+    SettingsRulesAllowSamsungsmS9180,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9260")]
+    SettingsRulesAllowSamsungsmS9260,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9280")]
+    SettingsRulesAllowSamsungsmS9280,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SHARPSH_51B")]
     SettingsRulesAllowSharpsh51b,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_SONYSOG02")]
-    SettingsRulesAllowSonysog02,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_SONYSOG05")]
-    SettingsRulesAllowSonysog05,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_SONYSOG06")]
-    SettingsRulesAllowSonysog06,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_SONYSO_51A")]
-    SettingsRulesAllowSonyso51a,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_SONYSO_51B")]
-    SettingsRulesAllowSonyso51b,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_SONYSO_51C")]
-    SettingsRulesAllowSonyso51c,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_SONYSO_52A")]
-    SettingsRulesAllowSonyso52a,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_SONYSO_53B")]
-    SettingsRulesAllowSonyso53b,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_SONYSO_54C")]
-    SettingsRulesAllowSonyso54c,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SONY_A002SO")]
     SettingsRulesAllowSonyA002so,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SONY_A101SO")]
@@ -403,6 +385,10 @@ pub enum SettingsOverrideRuleTemplateId {
     SettingsRulesAllowSonyXperiaPro,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SONY_XPERIA_PROI")]
     SettingsRulesAllowSonyXperiaProi,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_SONY_XQ_DE44")]
+    SettingsRulesAllowSonyXqDe44,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_SONY_XQ_DQ44")]
+    SettingsRulesAllowSonyXqDq44,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SONY_XQAQ52")]
     SettingsRulesAllowSonyXqaq52,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SONY_XQAQ62")]
@@ -451,28 +437,42 @@ pub enum SettingsOverrideRuleTemplateId {
     SettingsRulesAllowSonyXqct62,
     #[serde(rename = "SETTINGS_RULES_ALLOW_SONY_XQCT72")]
     SettingsRulesAllowSonyXqct72,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_SONY_XQ_DE44")]
-    SettingsRulesAllowSonyXqDe44,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_SONY_XQ_DQ44")]
-    SettingsRulesAllowSonyXqDq44,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_XIAOMI21061110AG")]
-    SettingsRulesAllowXiaomi21061110ag,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_SONYSO_51A")]
+    SettingsRulesAllowSonyso51a,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_SONYSO_51B")]
+    SettingsRulesAllowSonyso51b,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_SONYSO_51C")]
+    SettingsRulesAllowSonyso51c,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_SONYSO_52A")]
+    SettingsRulesAllowSonyso52a,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_SONYSO_53B")]
+    SettingsRulesAllowSonyso53b,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_SONYSO_54C")]
+    SettingsRulesAllowSonyso54c,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_SONYSOG02")]
+    SettingsRulesAllowSonysog02,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_SONYSOG05")]
+    SettingsRulesAllowSonysog05,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_SONYSOG06")]
+    SettingsRulesAllowSonysog06,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_XIAOMI23049PCD8G")]
+    SettingsRulesAllowXiaomi23049pcd8g,
     #[serde(rename = "SETTINGS_RULES_ALLOW_XIAOMI2107113SG")]
     SettingsRulesAllowXiaomi2107113sg,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_XIAOMI2201123G")]
+    SettingsRulesAllowXiaomi2201123g,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_XIAOMI21061110AG")]
+    SettingsRulesAllowXiaomi21061110ag,
     #[serde(rename = "SETTINGS_RULES_ALLOW_XIAOMI21081111RG")]
     SettingsRulesAllowXiaomi21081111rg,
     #[serde(rename = "SETTINGS_RULES_ALLOW_XIAOMI21121210G")]
     SettingsRulesAllowXiaomi21121210g,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_XIAOMI2201123G")]
-    SettingsRulesAllowXiaomi2201123g,
     #[serde(rename = "SETTINGS_RULES_ALLOW_XIAOMI22021211RG")]
     SettingsRulesAllowXiaomi22021211rg,
     #[serde(rename = "SETTINGS_RULES_ALLOW_XIAOMI22041216G")]
     SettingsRulesAllowXiaomi22041216g,
     #[serde(rename = "SETTINGS_RULES_ALLOW_XIAOMI22081212UG")]
     SettingsRulesAllowXiaomi22081212ug,
-    #[serde(rename = "SETTINGS_RULES_ALLOW_XIAOMI23049PCD8G")]
-    SettingsRulesAllowXiaomi23049pcd8g,
     #[serde(rename = "SETTINGS_RULES_ALLOW_XIAOMIM2007J3SG")]
     SettingsRulesAllowXiaomim2007j3sg,
     #[serde(rename = "SETTINGS_RULES_ALLOW_XIAOMIM2007J3SY")]

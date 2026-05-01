@@ -167,6 +167,14 @@ const (
 	AvatarCustomizationTemplateIDAvatarFGofestPikachuvisor                 AvatarCustomizationTemplateID = "AVATAR_f_gofest_pikachuvisor"
 	AvatarCustomizationTemplateIDAvatarFHairDefault0                       AvatarCustomizationTemplateID = "AVATAR_f_hair_default_0"
 	AvatarCustomizationTemplateIDAvatarFHairDefault1                       AvatarCustomizationTemplateID = "AVATAR_f_hair_default_1"
+	AvatarCustomizationTemplateIDAvatarFHairDefault2                       AvatarCustomizationTemplateID = "AVATAR_f_hair_default_2"
+	AvatarCustomizationTemplateIDAvatarFHairDefault3                       AvatarCustomizationTemplateID = "AVATAR_f_hair_default_3"
+	AvatarCustomizationTemplateIDAvatarFHairDefault4                       AvatarCustomizationTemplateID = "AVATAR_f_hair_default_4"
+	AvatarCustomizationTemplateIDAvatarFHairDefault5                       AvatarCustomizationTemplateID = "AVATAR_f_hair_default_5"
+	AvatarCustomizationTemplateIDAvatarFHairDefault6                       AvatarCustomizationTemplateID = "AVATAR_f_hair_default_6"
+	AvatarCustomizationTemplateIDAvatarFHairDefault7                       AvatarCustomizationTemplateID = "AVATAR_f_hair_default_7"
+	AvatarCustomizationTemplateIDAvatarFHairDefault8                       AvatarCustomizationTemplateID = "AVATAR_f_hair_default_8"
+	AvatarCustomizationTemplateIDAvatarFHairDefault9                       AvatarCustomizationTemplateID = "AVATAR_f_hair_default_9"
 	AvatarCustomizationTemplateIDAvatarFHairDefault10                      AvatarCustomizationTemplateID = "AVATAR_f_hair_default_10"
 	AvatarCustomizationTemplateIDAvatarFHairDefault11                      AvatarCustomizationTemplateID = "AVATAR_f_hair_default_11"
 	AvatarCustomizationTemplateIDAvatarFHairDefault12                      AvatarCustomizationTemplateID = "AVATAR_f_hair_default_12"
@@ -177,14 +185,6 @@ const (
 	AvatarCustomizationTemplateIDAvatarFHairDefault17                      AvatarCustomizationTemplateID = "AVATAR_f_hair_default_17"
 	AvatarCustomizationTemplateIDAvatarFHairDefault18                      AvatarCustomizationTemplateID = "AVATAR_f_hair_default_18"
 	AvatarCustomizationTemplateIDAvatarFHairDefault19                      AvatarCustomizationTemplateID = "AVATAR_f_hair_default_19"
-	AvatarCustomizationTemplateIDAvatarFHairDefault2                       AvatarCustomizationTemplateID = "AVATAR_f_hair_default_2"
-	AvatarCustomizationTemplateIDAvatarFHairDefault3                       AvatarCustomizationTemplateID = "AVATAR_f_hair_default_3"
-	AvatarCustomizationTemplateIDAvatarFHairDefault4                       AvatarCustomizationTemplateID = "AVATAR_f_hair_default_4"
-	AvatarCustomizationTemplateIDAvatarFHairDefault5                       AvatarCustomizationTemplateID = "AVATAR_f_hair_default_5"
-	AvatarCustomizationTemplateIDAvatarFHairDefault6                       AvatarCustomizationTemplateID = "AVATAR_f_hair_default_6"
-	AvatarCustomizationTemplateIDAvatarFHairDefault7                       AvatarCustomizationTemplateID = "AVATAR_f_hair_default_7"
-	AvatarCustomizationTemplateIDAvatarFHairDefault8                       AvatarCustomizationTemplateID = "AVATAR_f_hair_default_8"
-	AvatarCustomizationTemplateIDAvatarFHairDefault9                       AvatarCustomizationTemplateID = "AVATAR_f_hair_default_9"
 	AvatarCustomizationTemplateIDAvatarFHat6thanniversary                  AvatarCustomizationTemplateID = "AVATAR_f_hat_6thanniversary"
 	AvatarCustomizationTemplateIDAvatarFHatAcetrainersm                    AvatarCustomizationTemplateID = "AVATAR_f_hat_acetrainersm"
 	AvatarCustomizationTemplateIDAvatarFHatAdventure0                      AvatarCustomizationTemplateID = "AVATAR_f_hat_adventure_0"
@@ -327,9 +327,9 @@ const (
 	AvatarCustomizationTemplateIDAvatarFHatTeamrocketcap                   AvatarCustomizationTemplateID = "AVATAR_f_hat_teamrocketcap"
 	AvatarCustomizationTemplateIDAvatarFHatTeamskull                       AvatarCustomizationTemplateID = "AVATAR_f_hat_teamskull"
 	AvatarCustomizationTemplateIDAvatarFHatTophat0                         AvatarCustomizationTemplateID = "AVATAR_f_hat_tophat_0"
+	AvatarCustomizationTemplateIDAvatarFHatUltra0                          AvatarCustomizationTemplateID = "AVATAR_f_hat_ultra_0"
 	AvatarCustomizationTemplateIDAvatarFHatUltraReconSquad                 AvatarCustomizationTemplateID = "AVATAR_f_hat_ultraReconSquad"
 	AvatarCustomizationTemplateIDAvatarFHatUltraReconSquadB                AvatarCustomizationTemplateID = "AVATAR_f_hat_ultraReconSquadB"
-	AvatarCustomizationTemplateIDAvatarFHatUltra0                          AvatarCustomizationTemplateID = "AVATAR_f_hat_ultra_0"
 	AvatarCustomizationTemplateIDAvatarFHatVerizon2021                     AvatarCustomizationTemplateID = "AVATAR_f_hat_verizon2021"
 	AvatarCustomizationTemplateIDAvatarFHatWcs2022winnersitems             AvatarCustomizationTemplateID = "AVATAR_f_hat_wcs2022winnersitems"
 	AvatarCustomizationTemplateIDAvatarFHatWhimsicottearmuff               AvatarCustomizationTemplateID = "AVATAR_f_hat_whimsicottearmuff"
@@ -574,14 +574,14 @@ const (
 	AvatarCustomizationTemplateIDAvatarFShirtGiovanni                      AvatarCustomizationTemplateID = "AVATAR_f_shirt_giovanni"
 	AvatarCustomizationTemplateIDAvatarFShirtGiratinaitems                 AvatarCustomizationTemplateID = "AVATAR_f_shirt_giratinaitems"
 	AvatarCustomizationTemplateIDAvatarFShirtGladion                       AvatarCustomizationTemplateID = "AVATAR_f_shirt_gladion"
+	AvatarCustomizationTemplateIDAvatarFShirtGofest2019                    AvatarCustomizationTemplateID = "AVATAR_f_shirt_gofest_2019"
+	AvatarCustomizationTemplateIDAvatarFShirtGofest2020                    AvatarCustomizationTemplateID = "AVATAR_f_shirt_gofest_2020"
+	AvatarCustomizationTemplateIDAvatarFShirtGofest2021                    AvatarCustomizationTemplateID = "AVATAR_f_shirt_gofest_2021"
 	AvatarCustomizationTemplateIDAvatarFShirtGofest2022                    AvatarCustomizationTemplateID = "AVATAR_f_shirt_gofest2022"
 	AvatarCustomizationTemplateIDAvatarFShirtGofest2023                    AvatarCustomizationTemplateID = "AVATAR_f_shirt_gofest2023"
 	AvatarCustomizationTemplateIDAvatarFShirtGofest2024darkgray            AvatarCustomizationTemplateID = "AVATAR_f_shirt_gofest2024darkgray"
 	AvatarCustomizationTemplateIDAvatarFShirtGofest2024gray                AvatarCustomizationTemplateID = "AVATAR_f_shirt_gofest2024gray"
 	AvatarCustomizationTemplateIDAvatarFShirtGofest2024purple              AvatarCustomizationTemplateID = "AVATAR_f_shirt_gofest2024purple"
-	AvatarCustomizationTemplateIDAvatarFShirtGofest2019                    AvatarCustomizationTemplateID = "AVATAR_f_shirt_gofest_2019"
-	AvatarCustomizationTemplateIDAvatarFShirtGofest2020                    AvatarCustomizationTemplateID = "AVATAR_f_shirt_gofest_2020"
-	AvatarCustomizationTemplateIDAvatarFShirtGofest2021                    AvatarCustomizationTemplateID = "AVATAR_f_shirt_gofest_2021"
 	AvatarCustomizationTemplateIDAvatarFShirtGofestglobal2023              AvatarCustomizationTemplateID = "AVATAR_f_shirt_gofestglobal2023"
 	AvatarCustomizationTemplateIDAvatarFShirtGoteamrocketarlo              AvatarCustomizationTemplateID = "AVATAR_f_shirt_goteamrocketarlo"
 	AvatarCustomizationTemplateIDAvatarFShirtGoteamrocketcliff             AvatarCustomizationTemplateID = "AVATAR_f_shirt_goteamrocketcliff"
@@ -657,13 +657,13 @@ const (
 	AvatarCustomizationTemplateIDAvatarFShirtPkmnhoodie001                 AvatarCustomizationTemplateID = "AVATAR_f_shirt_pkmnhoodie001"
 	AvatarCustomizationTemplateIDAvatarFShirtPkmnhoodie004                 AvatarCustomizationTemplateID = "AVATAR_f_shirt_pkmnhoodie004"
 	AvatarCustomizationTemplateIDAvatarFShirtPkmnhoodie007                 AvatarCustomizationTemplateID = "AVATAR_f_shirt_pkmnhoodie007"
-	AvatarCustomizationTemplateIDAvatarFShirtPkmnshirts202100              AvatarCustomizationTemplateID = "AVATAR_f_shirt_pkmnshirts2021_00"
-	AvatarCustomizationTemplateIDAvatarFShirtPkmnshirts202101              AvatarCustomizationTemplateID = "AVATAR_f_shirt_pkmnshirts2021_01"
-	AvatarCustomizationTemplateIDAvatarFShirtPkmnshirts202102              AvatarCustomizationTemplateID = "AVATAR_f_shirt_pkmnshirts2021_02"
 	AvatarCustomizationTemplateIDAvatarFShirtPkmnshirts165                 AvatarCustomizationTemplateID = "AVATAR_f_shirt_pkmnshirts_165"
 	AvatarCustomizationTemplateIDAvatarFShirtPkmnshirts188                 AvatarCustomizationTemplateID = "AVATAR_f_shirt_pkmnshirts_188"
 	AvatarCustomizationTemplateIDAvatarFShirtPkmnshirts201                 AvatarCustomizationTemplateID = "AVATAR_f_shirt_pkmnshirts_201"
 	AvatarCustomizationTemplateIDAvatarFShirtPkmnshirts238                 AvatarCustomizationTemplateID = "AVATAR_f_shirt_pkmnshirts_238"
+	AvatarCustomizationTemplateIDAvatarFShirtPkmnshirts202100              AvatarCustomizationTemplateID = "AVATAR_f_shirt_pkmnshirts2021_00"
+	AvatarCustomizationTemplateIDAvatarFShirtPkmnshirts202101              AvatarCustomizationTemplateID = "AVATAR_f_shirt_pkmnshirts2021_01"
+	AvatarCustomizationTemplateIDAvatarFShirtPkmnshirts202102              AvatarCustomizationTemplateID = "AVATAR_f_shirt_pkmnshirts2021_02"
 	AvatarCustomizationTemplateIDAvatarFShirtPoloshirt                     AvatarCustomizationTemplateID = "AVATAR_f_shirt_poloshirt"
 	AvatarCustomizationTemplateIDAvatarFShirtPoloshirt1                    AvatarCustomizationTemplateID = "AVATAR_f_shirt_poloshirt_1"
 	AvatarCustomizationTemplateIDAvatarFShirtPoloshirt2                    AvatarCustomizationTemplateID = "AVATAR_f_shirt_poloshirt_2"
@@ -750,8 +750,8 @@ const (
 	AvatarCustomizationTemplateIDAvatarFShirtTshirtPikachu5                AvatarCustomizationTemplateID = "AVATAR_f_shirt_tshirt_pikachu_5"
 	AvatarCustomizationTemplateIDAvatarFShirtTshirtPikachu6                AvatarCustomizationTemplateID = "AVATAR_f_shirt_tshirt_pikachu_6"
 	AvatarCustomizationTemplateIDAvatarFShirtTurtwigonesie                 AvatarCustomizationTemplateID = "AVATAR_f_shirt_turtwigonesie"
-	AvatarCustomizationTemplateIDAvatarFShirtUltraReconSquad               AvatarCustomizationTemplateID = "AVATAR_f_shirt_ultraReconSquad"
 	AvatarCustomizationTemplateIDAvatarFShirtUltra0                        AvatarCustomizationTemplateID = "AVATAR_f_shirt_ultra_0"
+	AvatarCustomizationTemplateIDAvatarFShirtUltraReconSquad               AvatarCustomizationTemplateID = "AVATAR_f_shirt_ultraReconSquad"
 	AvatarCustomizationTemplateIDAvatarFShirtUniqlotshirts0                AvatarCustomizationTemplateID = "AVATAR_f_shirt_uniqlotshirts_0"
 	AvatarCustomizationTemplateIDAvatarFShirtUniqlotshirts1                AvatarCustomizationTemplateID = "AVATAR_f_shirt_uniqlotshirts_1"
 	AvatarCustomizationTemplateIDAvatarFShirtUniqlotshirts2                AvatarCustomizationTemplateID = "AVATAR_f_shirt_uniqlotshirts_2"
@@ -866,20 +866,18 @@ const (
 	AvatarCustomizationTemplateIDAvatarFShoesTeamrocket1                   AvatarCustomizationTemplateID = "AVATAR_f_shoes_teamrocket_1"
 	AvatarCustomizationTemplateIDAvatarFShoesTeamskull                     AvatarCustomizationTemplateID = "AVATAR_f_shoes_teamskull"
 	AvatarCustomizationTemplateIDAvatarFShoesTeamspark                     AvatarCustomizationTemplateID = "AVATAR_f_shoes_teamspark"
-	AvatarCustomizationTemplateIDAvatarFShoesUltraReconSquad               AvatarCustomizationTemplateID = "AVATAR_f_shoes_ultraReconSquad"
 	AvatarCustomizationTemplateIDAvatarFShoesUltra0                        AvatarCustomizationTemplateID = "AVATAR_f_shoes_ultra_0"
+	AvatarCustomizationTemplateIDAvatarFShoesUltraReconSquad               AvatarCustomizationTemplateID = "AVATAR_f_shoes_ultraReconSquad"
 	AvatarCustomizationTemplateIDAvatarFShoesVeterantrainerxy              AvatarCustomizationTemplateID = "AVATAR_f_shoes_veterantrainerxy"
 	AvatarCustomizationTemplateIDAvatarFShoesWcs2022winnersitems           AvatarCustomizationTemplateID = "AVATAR_f_shoes_wcs2022winnersitems"
 	AvatarCustomizationTemplateIDAvatarFShoesWcs2023winnersitems           AvatarCustomizationTemplateID = "AVATAR_f_shoes_wcs2023winnersitems"
-	AvatarCustomizationTemplateIDAvatarFShoesWinterboots2023               AvatarCustomizationTemplateID = "AVATAR_f_shoes_winterboots2023"
 	AvatarCustomizationTemplateIDAvatarFShoesWinterboots0                  AvatarCustomizationTemplateID = "AVATAR_f_shoes_winterboots_0"
 	AvatarCustomizationTemplateIDAvatarFShoesWinterboots1                  AvatarCustomizationTemplateID = "AVATAR_f_shoes_winterboots_1"
 	AvatarCustomizationTemplateIDAvatarFShoesWinterboots2                  AvatarCustomizationTemplateID = "AVATAR_f_shoes_winterboots_2"
 	AvatarCustomizationTemplateIDAvatarFShoesWinterboots3                  AvatarCustomizationTemplateID = "AVATAR_f_shoes_winterboots_3"
+	AvatarCustomizationTemplateIDAvatarFShoesWinterboots2023               AvatarCustomizationTemplateID = "AVATAR_f_shoes_winterboots2023"
 	AvatarCustomizationTemplateIDAvatarFSkin0                              AvatarCustomizationTemplateID = "AVATAR_f_skin_0"
 	AvatarCustomizationTemplateIDAvatarFSkin1                              AvatarCustomizationTemplateID = "AVATAR_f_skin_1"
-	AvatarCustomizationTemplateIDAvatarFSkin10                             AvatarCustomizationTemplateID = "AVATAR_f_skin_10"
-	AvatarCustomizationTemplateIDAvatarFSkin11                             AvatarCustomizationTemplateID = "AVATAR_f_skin_11"
 	AvatarCustomizationTemplateIDAvatarFSkin2                              AvatarCustomizationTemplateID = "AVATAR_f_skin_2"
 	AvatarCustomizationTemplateIDAvatarFSkin3                              AvatarCustomizationTemplateID = "AVATAR_f_skin_3"
 	AvatarCustomizationTemplateIDAvatarFSkin4                              AvatarCustomizationTemplateID = "AVATAR_f_skin_4"
@@ -888,6 +886,8 @@ const (
 	AvatarCustomizationTemplateIDAvatarFSkin7                              AvatarCustomizationTemplateID = "AVATAR_f_skin_7"
 	AvatarCustomizationTemplateIDAvatarFSkin8                              AvatarCustomizationTemplateID = "AVATAR_f_skin_8"
 	AvatarCustomizationTemplateIDAvatarFSkin9                              AvatarCustomizationTemplateID = "AVATAR_f_skin_9"
+	AvatarCustomizationTemplateIDAvatarFSkin10                             AvatarCustomizationTemplateID = "AVATAR_f_skin_10"
+	AvatarCustomizationTemplateIDAvatarFSkin11                             AvatarCustomizationTemplateID = "AVATAR_f_skin_11"
 	AvatarCustomizationTemplateIDAvatarFSocksDefault0                      AvatarCustomizationTemplateID = "AVATAR_f_socks_default_0"
 	AvatarCustomizationTemplateIDAvatarFSocksDefault1                      AvatarCustomizationTemplateID = "AVATAR_f_socks_default_1"
 	AvatarCustomizationTemplateIDAvatarFSocksDefault2                      AvatarCustomizationTemplateID = "AVATAR_f_socks_default_2"
@@ -1049,6 +1049,14 @@ const (
 	AvatarCustomizationTemplateIDAvatarMGofestPikachuvisor                 AvatarCustomizationTemplateID = "AVATAR_m_gofest_pikachuvisor"
 	AvatarCustomizationTemplateIDAvatarMHairDefault0                       AvatarCustomizationTemplateID = "AVATAR_m_hair_default_0"
 	AvatarCustomizationTemplateIDAvatarMHairDefault1                       AvatarCustomizationTemplateID = "AVATAR_m_hair_default_1"
+	AvatarCustomizationTemplateIDAvatarMHairDefault2                       AvatarCustomizationTemplateID = "AVATAR_m_hair_default_2"
+	AvatarCustomizationTemplateIDAvatarMHairDefault3                       AvatarCustomizationTemplateID = "AVATAR_m_hair_default_3"
+	AvatarCustomizationTemplateIDAvatarMHairDefault4                       AvatarCustomizationTemplateID = "AVATAR_m_hair_default_4"
+	AvatarCustomizationTemplateIDAvatarMHairDefault5                       AvatarCustomizationTemplateID = "AVATAR_m_hair_default_5"
+	AvatarCustomizationTemplateIDAvatarMHairDefault6                       AvatarCustomizationTemplateID = "AVATAR_m_hair_default_6"
+	AvatarCustomizationTemplateIDAvatarMHairDefault7                       AvatarCustomizationTemplateID = "AVATAR_m_hair_default_7"
+	AvatarCustomizationTemplateIDAvatarMHairDefault8                       AvatarCustomizationTemplateID = "AVATAR_m_hair_default_8"
+	AvatarCustomizationTemplateIDAvatarMHairDefault9                       AvatarCustomizationTemplateID = "AVATAR_m_hair_default_9"
 	AvatarCustomizationTemplateIDAvatarMHairDefault10                      AvatarCustomizationTemplateID = "AVATAR_m_hair_default_10"
 	AvatarCustomizationTemplateIDAvatarMHairDefault11                      AvatarCustomizationTemplateID = "AVATAR_m_hair_default_11"
 	AvatarCustomizationTemplateIDAvatarMHairDefault12                      AvatarCustomizationTemplateID = "AVATAR_m_hair_default_12"
@@ -1059,14 +1067,6 @@ const (
 	AvatarCustomizationTemplateIDAvatarMHairDefault17                      AvatarCustomizationTemplateID = "AVATAR_m_hair_default_17"
 	AvatarCustomizationTemplateIDAvatarMHairDefault18                      AvatarCustomizationTemplateID = "AVATAR_m_hair_default_18"
 	AvatarCustomizationTemplateIDAvatarMHairDefault19                      AvatarCustomizationTemplateID = "AVATAR_m_hair_default_19"
-	AvatarCustomizationTemplateIDAvatarMHairDefault2                       AvatarCustomizationTemplateID = "AVATAR_m_hair_default_2"
-	AvatarCustomizationTemplateIDAvatarMHairDefault3                       AvatarCustomizationTemplateID = "AVATAR_m_hair_default_3"
-	AvatarCustomizationTemplateIDAvatarMHairDefault4                       AvatarCustomizationTemplateID = "AVATAR_m_hair_default_4"
-	AvatarCustomizationTemplateIDAvatarMHairDefault5                       AvatarCustomizationTemplateID = "AVATAR_m_hair_default_5"
-	AvatarCustomizationTemplateIDAvatarMHairDefault6                       AvatarCustomizationTemplateID = "AVATAR_m_hair_default_6"
-	AvatarCustomizationTemplateIDAvatarMHairDefault7                       AvatarCustomizationTemplateID = "AVATAR_m_hair_default_7"
-	AvatarCustomizationTemplateIDAvatarMHairDefault8                       AvatarCustomizationTemplateID = "AVATAR_m_hair_default_8"
-	AvatarCustomizationTemplateIDAvatarMHairDefault9                       AvatarCustomizationTemplateID = "AVATAR_m_hair_default_9"
 	AvatarCustomizationTemplateIDAvatarMHat6thanniversary                  AvatarCustomizationTemplateID = "AVATAR_m_hat_6thanniversary"
 	AvatarCustomizationTemplateIDAvatarMHatAcetrainersm                    AvatarCustomizationTemplateID = "AVATAR_m_hat_acetrainersm"
 	AvatarCustomizationTemplateIDAvatarMHatAdventure0                      AvatarCustomizationTemplateID = "AVATAR_m_hat_adventure_0"
@@ -1206,9 +1206,9 @@ const (
 	AvatarCustomizationTemplateIDAvatarMHatTeamrocketcap                   AvatarCustomizationTemplateID = "AVATAR_m_hat_teamrocketcap"
 	AvatarCustomizationTemplateIDAvatarMHatTeamskull                       AvatarCustomizationTemplateID = "AVATAR_m_hat_teamskull"
 	AvatarCustomizationTemplateIDAvatarMHatTophat0                         AvatarCustomizationTemplateID = "AVATAR_m_hat_tophat_0"
+	AvatarCustomizationTemplateIDAvatarMHatUltra0                          AvatarCustomizationTemplateID = "AVATAR_m_hat_ultra_0"
 	AvatarCustomizationTemplateIDAvatarMHatUltraReconSquad                 AvatarCustomizationTemplateID = "AVATAR_m_hat_ultraReconSquad"
 	AvatarCustomizationTemplateIDAvatarMHatUltraReconSquadB                AvatarCustomizationTemplateID = "AVATAR_m_hat_ultraReconSquadB"
-	AvatarCustomizationTemplateIDAvatarMHatUltra0                          AvatarCustomizationTemplateID = "AVATAR_m_hat_ultra_0"
 	AvatarCustomizationTemplateIDAvatarMHatVerizon2021                     AvatarCustomizationTemplateID = "AVATAR_m_hat_verizon2021"
 	AvatarCustomizationTemplateIDAvatarMHatWcs2022winnersitems             AvatarCustomizationTemplateID = "AVATAR_m_hat_wcs2022winnersitems"
 	AvatarCustomizationTemplateIDAvatarMHatWhimsicottearmuff               AvatarCustomizationTemplateID = "AVATAR_m_hat_whimsicottearmuff"
@@ -1437,14 +1437,14 @@ const (
 	AvatarCustomizationTemplateIDAvatarMShirtGiovanni                      AvatarCustomizationTemplateID = "AVATAR_m_shirt_giovanni"
 	AvatarCustomizationTemplateIDAvatarMShirtGiratinaitems                 AvatarCustomizationTemplateID = "AVATAR_m_shirt_giratinaitems"
 	AvatarCustomizationTemplateIDAvatarMShirtGladion                       AvatarCustomizationTemplateID = "AVATAR_m_shirt_gladion"
+	AvatarCustomizationTemplateIDAvatarMShirtGofest2019                    AvatarCustomizationTemplateID = "AVATAR_m_shirt_gofest_2019"
+	AvatarCustomizationTemplateIDAvatarMShirtGofest2020                    AvatarCustomizationTemplateID = "AVATAR_m_shirt_gofest_2020"
+	AvatarCustomizationTemplateIDAvatarMShirtGofest2021                    AvatarCustomizationTemplateID = "AVATAR_m_shirt_gofest_2021"
 	AvatarCustomizationTemplateIDAvatarMShirtGofest2022                    AvatarCustomizationTemplateID = "AVATAR_m_shirt_gofest2022"
 	AvatarCustomizationTemplateIDAvatarMShirtGofest2023                    AvatarCustomizationTemplateID = "AVATAR_m_shirt_gofest2023"
 	AvatarCustomizationTemplateIDAvatarMShirtGofest2024darkgray            AvatarCustomizationTemplateID = "AVATAR_m_shirt_gofest2024darkgray"
 	AvatarCustomizationTemplateIDAvatarMShirtGofest2024gray                AvatarCustomizationTemplateID = "AVATAR_m_shirt_gofest2024gray"
 	AvatarCustomizationTemplateIDAvatarMShirtGofest2024purple              AvatarCustomizationTemplateID = "AVATAR_m_shirt_gofest2024purple"
-	AvatarCustomizationTemplateIDAvatarMShirtGofest2019                    AvatarCustomizationTemplateID = "AVATAR_m_shirt_gofest_2019"
-	AvatarCustomizationTemplateIDAvatarMShirtGofest2020                    AvatarCustomizationTemplateID = "AVATAR_m_shirt_gofest_2020"
-	AvatarCustomizationTemplateIDAvatarMShirtGofest2021                    AvatarCustomizationTemplateID = "AVATAR_m_shirt_gofest_2021"
 	AvatarCustomizationTemplateIDAvatarMShirtGofestglobal2023              AvatarCustomizationTemplateID = "AVATAR_m_shirt_gofestglobal2023"
 	AvatarCustomizationTemplateIDAvatarMShirtGoteamrocketarlo              AvatarCustomizationTemplateID = "AVATAR_m_shirt_goteamrocketarlo"
 	AvatarCustomizationTemplateIDAvatarMShirtGoteamrocketcliff             AvatarCustomizationTemplateID = "AVATAR_m_shirt_goteamrocketcliff"
@@ -1526,13 +1526,13 @@ const (
 	AvatarCustomizationTemplateIDAvatarMShirtPkmnhoodie001                 AvatarCustomizationTemplateID = "AVATAR_m_shirt_pkmnhoodie001"
 	AvatarCustomizationTemplateIDAvatarMShirtPkmnhoodie004                 AvatarCustomizationTemplateID = "AVATAR_m_shirt_pkmnhoodie004"
 	AvatarCustomizationTemplateIDAvatarMShirtPkmnhoodie007                 AvatarCustomizationTemplateID = "AVATAR_m_shirt_pkmnhoodie007"
-	AvatarCustomizationTemplateIDAvatarMShirtPkmnshirts202100              AvatarCustomizationTemplateID = "AVATAR_m_shirt_pkmnshirts2021_00"
-	AvatarCustomizationTemplateIDAvatarMShirtPkmnshirts202101              AvatarCustomizationTemplateID = "AVATAR_m_shirt_pkmnshirts2021_01"
-	AvatarCustomizationTemplateIDAvatarMShirtPkmnshirts202102              AvatarCustomizationTemplateID = "AVATAR_m_shirt_pkmnshirts2021_02"
 	AvatarCustomizationTemplateIDAvatarMShirtPkmnshirts165                 AvatarCustomizationTemplateID = "AVATAR_m_shirt_pkmnshirts_165"
 	AvatarCustomizationTemplateIDAvatarMShirtPkmnshirts188                 AvatarCustomizationTemplateID = "AVATAR_m_shirt_pkmnshirts_188"
 	AvatarCustomizationTemplateIDAvatarMShirtPkmnshirts201                 AvatarCustomizationTemplateID = "AVATAR_m_shirt_pkmnshirts_201"
 	AvatarCustomizationTemplateIDAvatarMShirtPkmnshirts238                 AvatarCustomizationTemplateID = "AVATAR_m_shirt_pkmnshirts_238"
+	AvatarCustomizationTemplateIDAvatarMShirtPkmnshirts202100              AvatarCustomizationTemplateID = "AVATAR_m_shirt_pkmnshirts2021_00"
+	AvatarCustomizationTemplateIDAvatarMShirtPkmnshirts202101              AvatarCustomizationTemplateID = "AVATAR_m_shirt_pkmnshirts2021_01"
+	AvatarCustomizationTemplateIDAvatarMShirtPkmnshirts202102              AvatarCustomizationTemplateID = "AVATAR_m_shirt_pkmnshirts2021_02"
 	AvatarCustomizationTemplateIDAvatarMShirtPoloshirt                     AvatarCustomizationTemplateID = "AVATAR_m_shirt_poloshirt"
 	AvatarCustomizationTemplateIDAvatarMShirtPoloshirt1                    AvatarCustomizationTemplateID = "AVATAR_m_shirt_poloshirt_1"
 	AvatarCustomizationTemplateIDAvatarMShirtPoloshirt2                    AvatarCustomizationTemplateID = "AVATAR_m_shirt_poloshirt_2"
@@ -1612,8 +1612,8 @@ const (
 	AvatarCustomizationTemplateIDAvatarMShirtTurtleneck302                 AvatarCustomizationTemplateID = "AVATAR_m_shirt_turtleneck_30_2"
 	AvatarCustomizationTemplateIDAvatarMShirtTurtleneck303                 AvatarCustomizationTemplateID = "AVATAR_m_shirt_turtleneck_30_3"
 	AvatarCustomizationTemplateIDAvatarMShirtTurtwigonesie                 AvatarCustomizationTemplateID = "AVATAR_m_shirt_turtwigonesie"
-	AvatarCustomizationTemplateIDAvatarMShirtUltraReconSquad               AvatarCustomizationTemplateID = "AVATAR_m_shirt_ultraReconSquad"
 	AvatarCustomizationTemplateIDAvatarMShirtUltra0                        AvatarCustomizationTemplateID = "AVATAR_m_shirt_ultra_0"
+	AvatarCustomizationTemplateIDAvatarMShirtUltraReconSquad               AvatarCustomizationTemplateID = "AVATAR_m_shirt_ultraReconSquad"
 	AvatarCustomizationTemplateIDAvatarMShirtUniqlotshirts0                AvatarCustomizationTemplateID = "AVATAR_m_shirt_uniqlotshirts_0"
 	AvatarCustomizationTemplateIDAvatarMShirtUniqlotshirts1                AvatarCustomizationTemplateID = "AVATAR_m_shirt_uniqlotshirts_1"
 	AvatarCustomizationTemplateIDAvatarMShirtUniqlotshirts2                AvatarCustomizationTemplateID = "AVATAR_m_shirt_uniqlotshirts_2"
@@ -1729,20 +1729,18 @@ const (
 	AvatarCustomizationTemplateIDAvatarMShoesTeamrocket1                   AvatarCustomizationTemplateID = "AVATAR_m_shoes_teamrocket_1"
 	AvatarCustomizationTemplateIDAvatarMShoesTeamskull                     AvatarCustomizationTemplateID = "AVATAR_m_shoes_teamskull"
 	AvatarCustomizationTemplateIDAvatarMShoesTeamspark                     AvatarCustomizationTemplateID = "AVATAR_m_shoes_teamspark"
-	AvatarCustomizationTemplateIDAvatarMShoesUltraReconSquad               AvatarCustomizationTemplateID = "AVATAR_m_shoes_ultraReconSquad"
 	AvatarCustomizationTemplateIDAvatarMShoesUltra0                        AvatarCustomizationTemplateID = "AVATAR_m_shoes_ultra_0"
+	AvatarCustomizationTemplateIDAvatarMShoesUltraReconSquad               AvatarCustomizationTemplateID = "AVATAR_m_shoes_ultraReconSquad"
 	AvatarCustomizationTemplateIDAvatarMShoesVeterantrainerxy              AvatarCustomizationTemplateID = "AVATAR_m_shoes_veterantrainerxy"
 	AvatarCustomizationTemplateIDAvatarMShoesWcs2022winnersitems           AvatarCustomizationTemplateID = "AVATAR_m_shoes_wcs2022winnersitems"
 	AvatarCustomizationTemplateIDAvatarMShoesWcs2023winnersitems           AvatarCustomizationTemplateID = "AVATAR_m_shoes_wcs2023winnersitems"
-	AvatarCustomizationTemplateIDAvatarMShoesWinterboots2023               AvatarCustomizationTemplateID = "AVATAR_m_shoes_winterboots2023"
 	AvatarCustomizationTemplateIDAvatarMShoesWinterboots0                  AvatarCustomizationTemplateID = "AVATAR_m_shoes_winterboots_0"
 	AvatarCustomizationTemplateIDAvatarMShoesWinterboots1                  AvatarCustomizationTemplateID = "AVATAR_m_shoes_winterboots_1"
 	AvatarCustomizationTemplateIDAvatarMShoesWinterboots2                  AvatarCustomizationTemplateID = "AVATAR_m_shoes_winterboots_2"
 	AvatarCustomizationTemplateIDAvatarMShoesWinterboots3                  AvatarCustomizationTemplateID = "AVATAR_m_shoes_winterboots_3"
+	AvatarCustomizationTemplateIDAvatarMShoesWinterboots2023               AvatarCustomizationTemplateID = "AVATAR_m_shoes_winterboots2023"
 	AvatarCustomizationTemplateIDAvatarMSkin0                              AvatarCustomizationTemplateID = "AVATAR_m_skin_0"
 	AvatarCustomizationTemplateIDAvatarMSkin1                              AvatarCustomizationTemplateID = "AVATAR_m_skin_1"
-	AvatarCustomizationTemplateIDAvatarMSkin10                             AvatarCustomizationTemplateID = "AVATAR_m_skin_10"
-	AvatarCustomizationTemplateIDAvatarMSkin11                             AvatarCustomizationTemplateID = "AVATAR_m_skin_11"
 	AvatarCustomizationTemplateIDAvatarMSkin2                              AvatarCustomizationTemplateID = "AVATAR_m_skin_2"
 	AvatarCustomizationTemplateIDAvatarMSkin3                              AvatarCustomizationTemplateID = "AVATAR_m_skin_3"
 	AvatarCustomizationTemplateIDAvatarMSkin4                              AvatarCustomizationTemplateID = "AVATAR_m_skin_4"
@@ -1751,6 +1749,8 @@ const (
 	AvatarCustomizationTemplateIDAvatarMSkin7                              AvatarCustomizationTemplateID = "AVATAR_m_skin_7"
 	AvatarCustomizationTemplateIDAvatarMSkin8                              AvatarCustomizationTemplateID = "AVATAR_m_skin_8"
 	AvatarCustomizationTemplateIDAvatarMSkin9                              AvatarCustomizationTemplateID = "AVATAR_m_skin_9"
+	AvatarCustomizationTemplateIDAvatarMSkin10                             AvatarCustomizationTemplateID = "AVATAR_m_skin_10"
+	AvatarCustomizationTemplateIDAvatarMSkin11                             AvatarCustomizationTemplateID = "AVATAR_m_skin_11"
 	AvatarCustomizationTemplateIDAvatarMSocksDefault0                      AvatarCustomizationTemplateID = "AVATAR_m_socks_default_0"
 	AvatarCustomizationTemplateIDAvatarMSocksDefault1                      AvatarCustomizationTemplateID = "AVATAR_m_socks_default_1"
 	AvatarCustomizationTemplateIDAvatarMSocksDefault2                      AvatarCustomizationTemplateID = "AVATAR_m_socks_default_2"
@@ -1927,6 +1927,14 @@ var AvatarCustomizationTemplateIDValues = [...]AvatarCustomizationTemplateID{
 	AvatarCustomizationTemplateIDAvatarFGofestPikachuvisor,
 	AvatarCustomizationTemplateIDAvatarFHairDefault0,
 	AvatarCustomizationTemplateIDAvatarFHairDefault1,
+	AvatarCustomizationTemplateIDAvatarFHairDefault2,
+	AvatarCustomizationTemplateIDAvatarFHairDefault3,
+	AvatarCustomizationTemplateIDAvatarFHairDefault4,
+	AvatarCustomizationTemplateIDAvatarFHairDefault5,
+	AvatarCustomizationTemplateIDAvatarFHairDefault6,
+	AvatarCustomizationTemplateIDAvatarFHairDefault7,
+	AvatarCustomizationTemplateIDAvatarFHairDefault8,
+	AvatarCustomizationTemplateIDAvatarFHairDefault9,
 	AvatarCustomizationTemplateIDAvatarFHairDefault10,
 	AvatarCustomizationTemplateIDAvatarFHairDefault11,
 	AvatarCustomizationTemplateIDAvatarFHairDefault12,
@@ -1937,14 +1945,6 @@ var AvatarCustomizationTemplateIDValues = [...]AvatarCustomizationTemplateID{
 	AvatarCustomizationTemplateIDAvatarFHairDefault17,
 	AvatarCustomizationTemplateIDAvatarFHairDefault18,
 	AvatarCustomizationTemplateIDAvatarFHairDefault19,
-	AvatarCustomizationTemplateIDAvatarFHairDefault2,
-	AvatarCustomizationTemplateIDAvatarFHairDefault3,
-	AvatarCustomizationTemplateIDAvatarFHairDefault4,
-	AvatarCustomizationTemplateIDAvatarFHairDefault5,
-	AvatarCustomizationTemplateIDAvatarFHairDefault6,
-	AvatarCustomizationTemplateIDAvatarFHairDefault7,
-	AvatarCustomizationTemplateIDAvatarFHairDefault8,
-	AvatarCustomizationTemplateIDAvatarFHairDefault9,
 	AvatarCustomizationTemplateIDAvatarFHat6thanniversary,
 	AvatarCustomizationTemplateIDAvatarFHatAcetrainersm,
 	AvatarCustomizationTemplateIDAvatarFHatAdventure0,
@@ -2087,9 +2087,9 @@ var AvatarCustomizationTemplateIDValues = [...]AvatarCustomizationTemplateID{
 	AvatarCustomizationTemplateIDAvatarFHatTeamrocketcap,
 	AvatarCustomizationTemplateIDAvatarFHatTeamskull,
 	AvatarCustomizationTemplateIDAvatarFHatTophat0,
+	AvatarCustomizationTemplateIDAvatarFHatUltra0,
 	AvatarCustomizationTemplateIDAvatarFHatUltraReconSquad,
 	AvatarCustomizationTemplateIDAvatarFHatUltraReconSquadB,
-	AvatarCustomizationTemplateIDAvatarFHatUltra0,
 	AvatarCustomizationTemplateIDAvatarFHatVerizon2021,
 	AvatarCustomizationTemplateIDAvatarFHatWcs2022winnersitems,
 	AvatarCustomizationTemplateIDAvatarFHatWhimsicottearmuff,
@@ -2334,14 +2334,14 @@ var AvatarCustomizationTemplateIDValues = [...]AvatarCustomizationTemplateID{
 	AvatarCustomizationTemplateIDAvatarFShirtGiovanni,
 	AvatarCustomizationTemplateIDAvatarFShirtGiratinaitems,
 	AvatarCustomizationTemplateIDAvatarFShirtGladion,
+	AvatarCustomizationTemplateIDAvatarFShirtGofest2019,
+	AvatarCustomizationTemplateIDAvatarFShirtGofest2020,
+	AvatarCustomizationTemplateIDAvatarFShirtGofest2021,
 	AvatarCustomizationTemplateIDAvatarFShirtGofest2022,
 	AvatarCustomizationTemplateIDAvatarFShirtGofest2023,
 	AvatarCustomizationTemplateIDAvatarFShirtGofest2024darkgray,
 	AvatarCustomizationTemplateIDAvatarFShirtGofest2024gray,
 	AvatarCustomizationTemplateIDAvatarFShirtGofest2024purple,
-	AvatarCustomizationTemplateIDAvatarFShirtGofest2019,
-	AvatarCustomizationTemplateIDAvatarFShirtGofest2020,
-	AvatarCustomizationTemplateIDAvatarFShirtGofest2021,
 	AvatarCustomizationTemplateIDAvatarFShirtGofestglobal2023,
 	AvatarCustomizationTemplateIDAvatarFShirtGoteamrocketarlo,
 	AvatarCustomizationTemplateIDAvatarFShirtGoteamrocketcliff,
@@ -2417,13 +2417,13 @@ var AvatarCustomizationTemplateIDValues = [...]AvatarCustomizationTemplateID{
 	AvatarCustomizationTemplateIDAvatarFShirtPkmnhoodie001,
 	AvatarCustomizationTemplateIDAvatarFShirtPkmnhoodie004,
 	AvatarCustomizationTemplateIDAvatarFShirtPkmnhoodie007,
-	AvatarCustomizationTemplateIDAvatarFShirtPkmnshirts202100,
-	AvatarCustomizationTemplateIDAvatarFShirtPkmnshirts202101,
-	AvatarCustomizationTemplateIDAvatarFShirtPkmnshirts202102,
 	AvatarCustomizationTemplateIDAvatarFShirtPkmnshirts165,
 	AvatarCustomizationTemplateIDAvatarFShirtPkmnshirts188,
 	AvatarCustomizationTemplateIDAvatarFShirtPkmnshirts201,
 	AvatarCustomizationTemplateIDAvatarFShirtPkmnshirts238,
+	AvatarCustomizationTemplateIDAvatarFShirtPkmnshirts202100,
+	AvatarCustomizationTemplateIDAvatarFShirtPkmnshirts202101,
+	AvatarCustomizationTemplateIDAvatarFShirtPkmnshirts202102,
 	AvatarCustomizationTemplateIDAvatarFShirtPoloshirt,
 	AvatarCustomizationTemplateIDAvatarFShirtPoloshirt1,
 	AvatarCustomizationTemplateIDAvatarFShirtPoloshirt2,
@@ -2510,8 +2510,8 @@ var AvatarCustomizationTemplateIDValues = [...]AvatarCustomizationTemplateID{
 	AvatarCustomizationTemplateIDAvatarFShirtTshirtPikachu5,
 	AvatarCustomizationTemplateIDAvatarFShirtTshirtPikachu6,
 	AvatarCustomizationTemplateIDAvatarFShirtTurtwigonesie,
-	AvatarCustomizationTemplateIDAvatarFShirtUltraReconSquad,
 	AvatarCustomizationTemplateIDAvatarFShirtUltra0,
+	AvatarCustomizationTemplateIDAvatarFShirtUltraReconSquad,
 	AvatarCustomizationTemplateIDAvatarFShirtUniqlotshirts0,
 	AvatarCustomizationTemplateIDAvatarFShirtUniqlotshirts1,
 	AvatarCustomizationTemplateIDAvatarFShirtUniqlotshirts2,
@@ -2626,20 +2626,18 @@ var AvatarCustomizationTemplateIDValues = [...]AvatarCustomizationTemplateID{
 	AvatarCustomizationTemplateIDAvatarFShoesTeamrocket1,
 	AvatarCustomizationTemplateIDAvatarFShoesTeamskull,
 	AvatarCustomizationTemplateIDAvatarFShoesTeamspark,
-	AvatarCustomizationTemplateIDAvatarFShoesUltraReconSquad,
 	AvatarCustomizationTemplateIDAvatarFShoesUltra0,
+	AvatarCustomizationTemplateIDAvatarFShoesUltraReconSquad,
 	AvatarCustomizationTemplateIDAvatarFShoesVeterantrainerxy,
 	AvatarCustomizationTemplateIDAvatarFShoesWcs2022winnersitems,
 	AvatarCustomizationTemplateIDAvatarFShoesWcs2023winnersitems,
-	AvatarCustomizationTemplateIDAvatarFShoesWinterboots2023,
 	AvatarCustomizationTemplateIDAvatarFShoesWinterboots0,
 	AvatarCustomizationTemplateIDAvatarFShoesWinterboots1,
 	AvatarCustomizationTemplateIDAvatarFShoesWinterboots2,
 	AvatarCustomizationTemplateIDAvatarFShoesWinterboots3,
+	AvatarCustomizationTemplateIDAvatarFShoesWinterboots2023,
 	AvatarCustomizationTemplateIDAvatarFSkin0,
 	AvatarCustomizationTemplateIDAvatarFSkin1,
-	AvatarCustomizationTemplateIDAvatarFSkin10,
-	AvatarCustomizationTemplateIDAvatarFSkin11,
 	AvatarCustomizationTemplateIDAvatarFSkin2,
 	AvatarCustomizationTemplateIDAvatarFSkin3,
 	AvatarCustomizationTemplateIDAvatarFSkin4,
@@ -2648,6 +2646,8 @@ var AvatarCustomizationTemplateIDValues = [...]AvatarCustomizationTemplateID{
 	AvatarCustomizationTemplateIDAvatarFSkin7,
 	AvatarCustomizationTemplateIDAvatarFSkin8,
 	AvatarCustomizationTemplateIDAvatarFSkin9,
+	AvatarCustomizationTemplateIDAvatarFSkin10,
+	AvatarCustomizationTemplateIDAvatarFSkin11,
 	AvatarCustomizationTemplateIDAvatarFSocksDefault0,
 	AvatarCustomizationTemplateIDAvatarFSocksDefault1,
 	AvatarCustomizationTemplateIDAvatarFSocksDefault2,
@@ -2809,6 +2809,14 @@ var AvatarCustomizationTemplateIDValues = [...]AvatarCustomizationTemplateID{
 	AvatarCustomizationTemplateIDAvatarMGofestPikachuvisor,
 	AvatarCustomizationTemplateIDAvatarMHairDefault0,
 	AvatarCustomizationTemplateIDAvatarMHairDefault1,
+	AvatarCustomizationTemplateIDAvatarMHairDefault2,
+	AvatarCustomizationTemplateIDAvatarMHairDefault3,
+	AvatarCustomizationTemplateIDAvatarMHairDefault4,
+	AvatarCustomizationTemplateIDAvatarMHairDefault5,
+	AvatarCustomizationTemplateIDAvatarMHairDefault6,
+	AvatarCustomizationTemplateIDAvatarMHairDefault7,
+	AvatarCustomizationTemplateIDAvatarMHairDefault8,
+	AvatarCustomizationTemplateIDAvatarMHairDefault9,
 	AvatarCustomizationTemplateIDAvatarMHairDefault10,
 	AvatarCustomizationTemplateIDAvatarMHairDefault11,
 	AvatarCustomizationTemplateIDAvatarMHairDefault12,
@@ -2819,14 +2827,6 @@ var AvatarCustomizationTemplateIDValues = [...]AvatarCustomizationTemplateID{
 	AvatarCustomizationTemplateIDAvatarMHairDefault17,
 	AvatarCustomizationTemplateIDAvatarMHairDefault18,
 	AvatarCustomizationTemplateIDAvatarMHairDefault19,
-	AvatarCustomizationTemplateIDAvatarMHairDefault2,
-	AvatarCustomizationTemplateIDAvatarMHairDefault3,
-	AvatarCustomizationTemplateIDAvatarMHairDefault4,
-	AvatarCustomizationTemplateIDAvatarMHairDefault5,
-	AvatarCustomizationTemplateIDAvatarMHairDefault6,
-	AvatarCustomizationTemplateIDAvatarMHairDefault7,
-	AvatarCustomizationTemplateIDAvatarMHairDefault8,
-	AvatarCustomizationTemplateIDAvatarMHairDefault9,
 	AvatarCustomizationTemplateIDAvatarMHat6thanniversary,
 	AvatarCustomizationTemplateIDAvatarMHatAcetrainersm,
 	AvatarCustomizationTemplateIDAvatarMHatAdventure0,
@@ -2966,9 +2966,9 @@ var AvatarCustomizationTemplateIDValues = [...]AvatarCustomizationTemplateID{
 	AvatarCustomizationTemplateIDAvatarMHatTeamrocketcap,
 	AvatarCustomizationTemplateIDAvatarMHatTeamskull,
 	AvatarCustomizationTemplateIDAvatarMHatTophat0,
+	AvatarCustomizationTemplateIDAvatarMHatUltra0,
 	AvatarCustomizationTemplateIDAvatarMHatUltraReconSquad,
 	AvatarCustomizationTemplateIDAvatarMHatUltraReconSquadB,
-	AvatarCustomizationTemplateIDAvatarMHatUltra0,
 	AvatarCustomizationTemplateIDAvatarMHatVerizon2021,
 	AvatarCustomizationTemplateIDAvatarMHatWcs2022winnersitems,
 	AvatarCustomizationTemplateIDAvatarMHatWhimsicottearmuff,
@@ -3197,14 +3197,14 @@ var AvatarCustomizationTemplateIDValues = [...]AvatarCustomizationTemplateID{
 	AvatarCustomizationTemplateIDAvatarMShirtGiovanni,
 	AvatarCustomizationTemplateIDAvatarMShirtGiratinaitems,
 	AvatarCustomizationTemplateIDAvatarMShirtGladion,
+	AvatarCustomizationTemplateIDAvatarMShirtGofest2019,
+	AvatarCustomizationTemplateIDAvatarMShirtGofest2020,
+	AvatarCustomizationTemplateIDAvatarMShirtGofest2021,
 	AvatarCustomizationTemplateIDAvatarMShirtGofest2022,
 	AvatarCustomizationTemplateIDAvatarMShirtGofest2023,
 	AvatarCustomizationTemplateIDAvatarMShirtGofest2024darkgray,
 	AvatarCustomizationTemplateIDAvatarMShirtGofest2024gray,
 	AvatarCustomizationTemplateIDAvatarMShirtGofest2024purple,
-	AvatarCustomizationTemplateIDAvatarMShirtGofest2019,
-	AvatarCustomizationTemplateIDAvatarMShirtGofest2020,
-	AvatarCustomizationTemplateIDAvatarMShirtGofest2021,
 	AvatarCustomizationTemplateIDAvatarMShirtGofestglobal2023,
 	AvatarCustomizationTemplateIDAvatarMShirtGoteamrocketarlo,
 	AvatarCustomizationTemplateIDAvatarMShirtGoteamrocketcliff,
@@ -3286,13 +3286,13 @@ var AvatarCustomizationTemplateIDValues = [...]AvatarCustomizationTemplateID{
 	AvatarCustomizationTemplateIDAvatarMShirtPkmnhoodie001,
 	AvatarCustomizationTemplateIDAvatarMShirtPkmnhoodie004,
 	AvatarCustomizationTemplateIDAvatarMShirtPkmnhoodie007,
-	AvatarCustomizationTemplateIDAvatarMShirtPkmnshirts202100,
-	AvatarCustomizationTemplateIDAvatarMShirtPkmnshirts202101,
-	AvatarCustomizationTemplateIDAvatarMShirtPkmnshirts202102,
 	AvatarCustomizationTemplateIDAvatarMShirtPkmnshirts165,
 	AvatarCustomizationTemplateIDAvatarMShirtPkmnshirts188,
 	AvatarCustomizationTemplateIDAvatarMShirtPkmnshirts201,
 	AvatarCustomizationTemplateIDAvatarMShirtPkmnshirts238,
+	AvatarCustomizationTemplateIDAvatarMShirtPkmnshirts202100,
+	AvatarCustomizationTemplateIDAvatarMShirtPkmnshirts202101,
+	AvatarCustomizationTemplateIDAvatarMShirtPkmnshirts202102,
 	AvatarCustomizationTemplateIDAvatarMShirtPoloshirt,
 	AvatarCustomizationTemplateIDAvatarMShirtPoloshirt1,
 	AvatarCustomizationTemplateIDAvatarMShirtPoloshirt2,
@@ -3372,8 +3372,8 @@ var AvatarCustomizationTemplateIDValues = [...]AvatarCustomizationTemplateID{
 	AvatarCustomizationTemplateIDAvatarMShirtTurtleneck302,
 	AvatarCustomizationTemplateIDAvatarMShirtTurtleneck303,
 	AvatarCustomizationTemplateIDAvatarMShirtTurtwigonesie,
-	AvatarCustomizationTemplateIDAvatarMShirtUltraReconSquad,
 	AvatarCustomizationTemplateIDAvatarMShirtUltra0,
+	AvatarCustomizationTemplateIDAvatarMShirtUltraReconSquad,
 	AvatarCustomizationTemplateIDAvatarMShirtUniqlotshirts0,
 	AvatarCustomizationTemplateIDAvatarMShirtUniqlotshirts1,
 	AvatarCustomizationTemplateIDAvatarMShirtUniqlotshirts2,
@@ -3489,20 +3489,18 @@ var AvatarCustomizationTemplateIDValues = [...]AvatarCustomizationTemplateID{
 	AvatarCustomizationTemplateIDAvatarMShoesTeamrocket1,
 	AvatarCustomizationTemplateIDAvatarMShoesTeamskull,
 	AvatarCustomizationTemplateIDAvatarMShoesTeamspark,
-	AvatarCustomizationTemplateIDAvatarMShoesUltraReconSquad,
 	AvatarCustomizationTemplateIDAvatarMShoesUltra0,
+	AvatarCustomizationTemplateIDAvatarMShoesUltraReconSquad,
 	AvatarCustomizationTemplateIDAvatarMShoesVeterantrainerxy,
 	AvatarCustomizationTemplateIDAvatarMShoesWcs2022winnersitems,
 	AvatarCustomizationTemplateIDAvatarMShoesWcs2023winnersitems,
-	AvatarCustomizationTemplateIDAvatarMShoesWinterboots2023,
 	AvatarCustomizationTemplateIDAvatarMShoesWinterboots0,
 	AvatarCustomizationTemplateIDAvatarMShoesWinterboots1,
 	AvatarCustomizationTemplateIDAvatarMShoesWinterboots2,
 	AvatarCustomizationTemplateIDAvatarMShoesWinterboots3,
+	AvatarCustomizationTemplateIDAvatarMShoesWinterboots2023,
 	AvatarCustomizationTemplateIDAvatarMSkin0,
 	AvatarCustomizationTemplateIDAvatarMSkin1,
-	AvatarCustomizationTemplateIDAvatarMSkin10,
-	AvatarCustomizationTemplateIDAvatarMSkin11,
 	AvatarCustomizationTemplateIDAvatarMSkin2,
 	AvatarCustomizationTemplateIDAvatarMSkin3,
 	AvatarCustomizationTemplateIDAvatarMSkin4,
@@ -3511,6 +3509,8 @@ var AvatarCustomizationTemplateIDValues = [...]AvatarCustomizationTemplateID{
 	AvatarCustomizationTemplateIDAvatarMSkin7,
 	AvatarCustomizationTemplateIDAvatarMSkin8,
 	AvatarCustomizationTemplateIDAvatarMSkin9,
+	AvatarCustomizationTemplateIDAvatarMSkin10,
+	AvatarCustomizationTemplateIDAvatarMSkin11,
 	AvatarCustomizationTemplateIDAvatarMSocksDefault0,
 	AvatarCustomizationTemplateIDAvatarMSocksDefault1,
 	AvatarCustomizationTemplateIDAvatarMSocksDefault2,

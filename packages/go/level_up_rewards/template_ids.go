@@ -5,6 +5,14 @@ package level_up_rewards
 type LevelUpRewardsTemplateID string
 
 const (
+	LevelUpRewardsTemplateIDAwardsLevel2          LevelUpRewardsTemplateID = "AWARDS_LEVEL_2"
+	LevelUpRewardsTemplateIDAwardsLevel3          LevelUpRewardsTemplateID = "AWARDS_LEVEL_3"
+	LevelUpRewardsTemplateIDAwardsLevel4          LevelUpRewardsTemplateID = "AWARDS_LEVEL_4"
+	LevelUpRewardsTemplateIDAwardsLevel5          LevelUpRewardsTemplateID = "AWARDS_LEVEL_5"
+	LevelUpRewardsTemplateIDAwardsLevel6          LevelUpRewardsTemplateID = "AWARDS_LEVEL_6"
+	LevelUpRewardsTemplateIDAwardsLevel7          LevelUpRewardsTemplateID = "AWARDS_LEVEL_7"
+	LevelUpRewardsTemplateIDAwardsLevel8          LevelUpRewardsTemplateID = "AWARDS_LEVEL_8"
+	LevelUpRewardsTemplateIDAwardsLevel9          LevelUpRewardsTemplateID = "AWARDS_LEVEL_9"
 	LevelUpRewardsTemplateIDAwardsLevel10         LevelUpRewardsTemplateID = "AWARDS_LEVEL_10"
 	LevelUpRewardsTemplateIDAwardsLevel11         LevelUpRewardsTemplateID = "AWARDS_LEVEL_11"
 	LevelUpRewardsTemplateIDAwardsLevel12         LevelUpRewardsTemplateID = "AWARDS_LEVEL_12"
@@ -15,7 +23,6 @@ const (
 	LevelUpRewardsTemplateIDAwardsLevel17         LevelUpRewardsTemplateID = "AWARDS_LEVEL_17"
 	LevelUpRewardsTemplateIDAwardsLevel18         LevelUpRewardsTemplateID = "AWARDS_LEVEL_18"
 	LevelUpRewardsTemplateIDAwardsLevel19         LevelUpRewardsTemplateID = "AWARDS_LEVEL_19"
-	LevelUpRewardsTemplateIDAwardsLevel2          LevelUpRewardsTemplateID = "AWARDS_LEVEL_2"
 	LevelUpRewardsTemplateIDAwardsLevel20         LevelUpRewardsTemplateID = "AWARDS_LEVEL_20"
 	LevelUpRewardsTemplateIDAwardsLevel21         LevelUpRewardsTemplateID = "AWARDS_LEVEL_21"
 	LevelUpRewardsTemplateIDAwardsLevel22         LevelUpRewardsTemplateID = "AWARDS_LEVEL_22"
@@ -26,7 +33,6 @@ const (
 	LevelUpRewardsTemplateIDAwardsLevel27         LevelUpRewardsTemplateID = "AWARDS_LEVEL_27"
 	LevelUpRewardsTemplateIDAwardsLevel28         LevelUpRewardsTemplateID = "AWARDS_LEVEL_28"
 	LevelUpRewardsTemplateIDAwardsLevel29         LevelUpRewardsTemplateID = "AWARDS_LEVEL_29"
-	LevelUpRewardsTemplateIDAwardsLevel3          LevelUpRewardsTemplateID = "AWARDS_LEVEL_3"
 	LevelUpRewardsTemplateIDAwardsLevel30         LevelUpRewardsTemplateID = "AWARDS_LEVEL_30"
 	LevelUpRewardsTemplateIDAwardsLevel31         LevelUpRewardsTemplateID = "AWARDS_LEVEL_31"
 	LevelUpRewardsTemplateIDAwardsLevel32         LevelUpRewardsTemplateID = "AWARDS_LEVEL_32"
@@ -37,7 +43,6 @@ const (
 	LevelUpRewardsTemplateIDAwardsLevel37         LevelUpRewardsTemplateID = "AWARDS_LEVEL_37"
 	LevelUpRewardsTemplateIDAwardsLevel38         LevelUpRewardsTemplateID = "AWARDS_LEVEL_38"
 	LevelUpRewardsTemplateIDAwardsLevel39         LevelUpRewardsTemplateID = "AWARDS_LEVEL_39"
-	LevelUpRewardsTemplateIDAwardsLevel4          LevelUpRewardsTemplateID = "AWARDS_LEVEL_4"
 	LevelUpRewardsTemplateIDAwardsLevel40         LevelUpRewardsTemplateID = "AWARDS_LEVEL_40"
 	LevelUpRewardsTemplateIDAwardsLevel41         LevelUpRewardsTemplateID = "AWARDS_LEVEL_41"
 	LevelUpRewardsTemplateIDAwardsLevel42         LevelUpRewardsTemplateID = "AWARDS_LEVEL_42"
@@ -48,7 +53,6 @@ const (
 	LevelUpRewardsTemplateIDAwardsLevel47         LevelUpRewardsTemplateID = "AWARDS_LEVEL_47"
 	LevelUpRewardsTemplateIDAwardsLevel48         LevelUpRewardsTemplateID = "AWARDS_LEVEL_48"
 	LevelUpRewardsTemplateIDAwardsLevel49         LevelUpRewardsTemplateID = "AWARDS_LEVEL_49"
-	LevelUpRewardsTemplateIDAwardsLevel5          LevelUpRewardsTemplateID = "AWARDS_LEVEL_5"
 	LevelUpRewardsTemplateIDAwardsLevel50         LevelUpRewardsTemplateID = "AWARDS_LEVEL_50"
 	LevelUpRewardsTemplateIDAwardsLevel51         LevelUpRewardsTemplateID = "AWARDS_LEVEL_51"
 	LevelUpRewardsTemplateIDAwardsLevel52         LevelUpRewardsTemplateID = "AWARDS_LEVEL_52"
@@ -59,7 +63,6 @@ const (
 	LevelUpRewardsTemplateIDAwardsLevel57         LevelUpRewardsTemplateID = "AWARDS_LEVEL_57"
 	LevelUpRewardsTemplateIDAwardsLevel58         LevelUpRewardsTemplateID = "AWARDS_LEVEL_58"
 	LevelUpRewardsTemplateIDAwardsLevel59         LevelUpRewardsTemplateID = "AWARDS_LEVEL_59"
-	LevelUpRewardsTemplateIDAwardsLevel6          LevelUpRewardsTemplateID = "AWARDS_LEVEL_6"
 	LevelUpRewardsTemplateIDAwardsLevel60         LevelUpRewardsTemplateID = "AWARDS_LEVEL_60"
 	LevelUpRewardsTemplateIDAwardsLevel61         LevelUpRewardsTemplateID = "AWARDS_LEVEL_61"
 	LevelUpRewardsTemplateIDAwardsLevel62         LevelUpRewardsTemplateID = "AWARDS_LEVEL_62"
@@ -70,7 +73,6 @@ const (
 	LevelUpRewardsTemplateIDAwardsLevel67         LevelUpRewardsTemplateID = "AWARDS_LEVEL_67"
 	LevelUpRewardsTemplateIDAwardsLevel68         LevelUpRewardsTemplateID = "AWARDS_LEVEL_68"
 	LevelUpRewardsTemplateIDAwardsLevel69         LevelUpRewardsTemplateID = "AWARDS_LEVEL_69"
-	LevelUpRewardsTemplateIDAwardsLevel7          LevelUpRewardsTemplateID = "AWARDS_LEVEL_7"
 	LevelUpRewardsTemplateIDAwardsLevel70         LevelUpRewardsTemplateID = "AWARDS_LEVEL_70"
 	LevelUpRewardsTemplateIDAwardsLevel71         LevelUpRewardsTemplateID = "AWARDS_LEVEL_71"
 	LevelUpRewardsTemplateIDAwardsLevel72         LevelUpRewardsTemplateID = "AWARDS_LEVEL_72"
@@ -81,9 +83,7 @@ const (
 	LevelUpRewardsTemplateIDAwardsLevel77         LevelUpRewardsTemplateID = "AWARDS_LEVEL_77"
 	LevelUpRewardsTemplateIDAwardsLevel78         LevelUpRewardsTemplateID = "AWARDS_LEVEL_78"
 	LevelUpRewardsTemplateIDAwardsLevel79         LevelUpRewardsTemplateID = "AWARDS_LEVEL_79"
-	LevelUpRewardsTemplateIDAwardsLevel8          LevelUpRewardsTemplateID = "AWARDS_LEVEL_8"
 	LevelUpRewardsTemplateIDAwardsLevel80         LevelUpRewardsTemplateID = "AWARDS_LEVEL_80"
-	LevelUpRewardsTemplateIDAwardsLevel9          LevelUpRewardsTemplateID = "AWARDS_LEVEL_9"
 	LevelUpRewardsTemplateIDBackfillAwardsLevel10 LevelUpRewardsTemplateID = "BACKFILL_AWARDS_LEVEL_10"
 	LevelUpRewardsTemplateIDBackfillAwardsLevel20 LevelUpRewardsTemplateID = "BACKFILL_AWARDS_LEVEL_20"
 	LevelUpRewardsTemplateIDBackfillAwardsLevel25 LevelUpRewardsTemplateID = "BACKFILL_AWARDS_LEVEL_25"
@@ -105,6 +105,14 @@ const (
 )
 
 var LevelUpRewardsTemplateIDValues = [...]LevelUpRewardsTemplateID{
+	LevelUpRewardsTemplateIDAwardsLevel2,
+	LevelUpRewardsTemplateIDAwardsLevel3,
+	LevelUpRewardsTemplateIDAwardsLevel4,
+	LevelUpRewardsTemplateIDAwardsLevel5,
+	LevelUpRewardsTemplateIDAwardsLevel6,
+	LevelUpRewardsTemplateIDAwardsLevel7,
+	LevelUpRewardsTemplateIDAwardsLevel8,
+	LevelUpRewardsTemplateIDAwardsLevel9,
 	LevelUpRewardsTemplateIDAwardsLevel10,
 	LevelUpRewardsTemplateIDAwardsLevel11,
 	LevelUpRewardsTemplateIDAwardsLevel12,
@@ -115,7 +123,6 @@ var LevelUpRewardsTemplateIDValues = [...]LevelUpRewardsTemplateID{
 	LevelUpRewardsTemplateIDAwardsLevel17,
 	LevelUpRewardsTemplateIDAwardsLevel18,
 	LevelUpRewardsTemplateIDAwardsLevel19,
-	LevelUpRewardsTemplateIDAwardsLevel2,
 	LevelUpRewardsTemplateIDAwardsLevel20,
 	LevelUpRewardsTemplateIDAwardsLevel21,
 	LevelUpRewardsTemplateIDAwardsLevel22,
@@ -126,7 +133,6 @@ var LevelUpRewardsTemplateIDValues = [...]LevelUpRewardsTemplateID{
 	LevelUpRewardsTemplateIDAwardsLevel27,
 	LevelUpRewardsTemplateIDAwardsLevel28,
 	LevelUpRewardsTemplateIDAwardsLevel29,
-	LevelUpRewardsTemplateIDAwardsLevel3,
 	LevelUpRewardsTemplateIDAwardsLevel30,
 	LevelUpRewardsTemplateIDAwardsLevel31,
 	LevelUpRewardsTemplateIDAwardsLevel32,
@@ -137,7 +143,6 @@ var LevelUpRewardsTemplateIDValues = [...]LevelUpRewardsTemplateID{
 	LevelUpRewardsTemplateIDAwardsLevel37,
 	LevelUpRewardsTemplateIDAwardsLevel38,
 	LevelUpRewardsTemplateIDAwardsLevel39,
-	LevelUpRewardsTemplateIDAwardsLevel4,
 	LevelUpRewardsTemplateIDAwardsLevel40,
 	LevelUpRewardsTemplateIDAwardsLevel41,
 	LevelUpRewardsTemplateIDAwardsLevel42,
@@ -148,7 +153,6 @@ var LevelUpRewardsTemplateIDValues = [...]LevelUpRewardsTemplateID{
 	LevelUpRewardsTemplateIDAwardsLevel47,
 	LevelUpRewardsTemplateIDAwardsLevel48,
 	LevelUpRewardsTemplateIDAwardsLevel49,
-	LevelUpRewardsTemplateIDAwardsLevel5,
 	LevelUpRewardsTemplateIDAwardsLevel50,
 	LevelUpRewardsTemplateIDAwardsLevel51,
 	LevelUpRewardsTemplateIDAwardsLevel52,
@@ -159,7 +163,6 @@ var LevelUpRewardsTemplateIDValues = [...]LevelUpRewardsTemplateID{
 	LevelUpRewardsTemplateIDAwardsLevel57,
 	LevelUpRewardsTemplateIDAwardsLevel58,
 	LevelUpRewardsTemplateIDAwardsLevel59,
-	LevelUpRewardsTemplateIDAwardsLevel6,
 	LevelUpRewardsTemplateIDAwardsLevel60,
 	LevelUpRewardsTemplateIDAwardsLevel61,
 	LevelUpRewardsTemplateIDAwardsLevel62,
@@ -170,7 +173,6 @@ var LevelUpRewardsTemplateIDValues = [...]LevelUpRewardsTemplateID{
 	LevelUpRewardsTemplateIDAwardsLevel67,
 	LevelUpRewardsTemplateIDAwardsLevel68,
 	LevelUpRewardsTemplateIDAwardsLevel69,
-	LevelUpRewardsTemplateIDAwardsLevel7,
 	LevelUpRewardsTemplateIDAwardsLevel70,
 	LevelUpRewardsTemplateIDAwardsLevel71,
 	LevelUpRewardsTemplateIDAwardsLevel72,
@@ -181,9 +183,7 @@ var LevelUpRewardsTemplateIDValues = [...]LevelUpRewardsTemplateID{
 	LevelUpRewardsTemplateIDAwardsLevel77,
 	LevelUpRewardsTemplateIDAwardsLevel78,
 	LevelUpRewardsTemplateIDAwardsLevel79,
-	LevelUpRewardsTemplateIDAwardsLevel8,
 	LevelUpRewardsTemplateIDAwardsLevel80,
-	LevelUpRewardsTemplateIDAwardsLevel9,
 	LevelUpRewardsTemplateIDBackfillAwardsLevel10,
 	LevelUpRewardsTemplateIDBackfillAwardsLevel20,
 	LevelUpRewardsTemplateIDBackfillAwardsLevel25,

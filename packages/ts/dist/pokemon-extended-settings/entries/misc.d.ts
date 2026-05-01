@@ -13394,6 +13394,22 @@ export type PokemonExtendedSettingsV0999PokemonGimmighoul = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV999PokemonGimmighoul = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V999_POKEMON_GIMMIGHOUL",
+		{
+			sizeSettings: {
+				mLowerBound: 0.075;
+				mUpperBound: 0.125;
+				xlUpperBound: 0.15;
+				xsLowerBound: 0.05;
+				xxlUpperBound: 0.155;
+				xxsLowerBound: 0.049;
+			};
+			uniqueId: "GIMMIGHOUL";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV1000PokemonGholdengo = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V1000_POKEMON_GHOLDENGO",
@@ -13807,22 +13823,6 @@ export type PokemonExtendedSettingsV1025PokemonPecharunt = S<
 				xxsLowerBound: 0.147;
 			};
 			uniqueId: "PECHARUNT";
-		}
-	>
->;
-export type PokemonExtendedSettingsV999PokemonGimmighoul = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V999_POKEMON_GIMMIGHOUL",
-		{
-			sizeSettings: {
-				mLowerBound: 0.075;
-				mUpperBound: 0.125;
-				xlUpperBound: 0.15;
-				xsLowerBound: 0.05;
-				xxlUpperBound: 0.155;
-				xxsLowerBound: 0.049;
-			};
-			uniqueId: "GIMMIGHOUL";
 		}
 	>
 >;
@@ -14664,6 +14664,7 @@ export type PokemonExtendedSettingsMiscMasterfileEntry =
 	| PokemonExtendedSettingsV0997PokemonArctibax
 	| PokemonExtendedSettingsV0998PokemonBaxcalibur
 	| PokemonExtendedSettingsV0999PokemonGimmighoul
+	| PokemonExtendedSettingsV999PokemonGimmighoul
 	| PokemonExtendedSettingsV1000PokemonGholdengo
 	| PokemonExtendedSettingsV1001PokemonWochien
 	| PokemonExtendedSettingsV1002PokemonChienpao
@@ -14689,5 +14690,4 @@ export type PokemonExtendedSettingsMiscMasterfileEntry =
 	| PokemonExtendedSettingsV1022PokemonIronboulder
 	| PokemonExtendedSettingsV1023PokemonIroncrown
 	| PokemonExtendedSettingsV1024PokemonTerapagos
-	| PokemonExtendedSettingsV1025PokemonPecharunt
-	| PokemonExtendedSettingsV999PokemonGimmighoul;
+	| PokemonExtendedSettingsV1025PokemonPecharunt;

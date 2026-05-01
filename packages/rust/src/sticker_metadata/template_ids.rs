@@ -7,14 +7,6 @@ use serde::{Deserialize, Serialize};
     Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum,
 )]
 pub enum StickerMetadataTemplateId {
-    #[serde(rename = "STICKER_2023COLLAB_1")]
-    Sticker2023collab1,
-    #[serde(rename = "STICKER_2023COLLAB_2")]
-    Sticker2023collab2,
-    #[serde(rename = "STICKER_2023COLLAB_3")]
-    Sticker2023collab3,
-    #[serde(rename = "STICKER_2023COLLAB_4")]
-    Sticker2023collab4,
     #[serde(rename = "STICKER_6ANNIV_1")]
     Sticker6anniv1,
     #[serde(rename = "STICKER_6ANNIV_2")]
@@ -51,6 +43,14 @@ pub enum StickerMetadataTemplateId {
     Sticker9anniv2,
     #[serde(rename = "STICKER_9ANNIV_3")]
     Sticker9anniv3,
+    #[serde(rename = "STICKER_2023COLLAB_1")]
+    Sticker2023collab1,
+    #[serde(rename = "STICKER_2023COLLAB_2")]
+    Sticker2023collab2,
+    #[serde(rename = "STICKER_2023COLLAB_3")]
+    Sticker2023collab3,
+    #[serde(rename = "STICKER_2023COLLAB_4")]
+    Sticker2023collab4,
     #[serde(rename = "STICKER_ALOLAISHI_1")]
     StickerAlolaishi1,
     #[serde(rename = "STICKER_ALOLAISHI_2")]
@@ -417,16 +417,18 @@ pub enum StickerMetadataTemplateId {
     StickerGrubbin3,
     #[serde(rename = "STICKER_GRUBBIN_4")]
     StickerGrubbin4,
-    #[serde(rename = "STICKER_HALLOWEEN2022_GENGAR")]
-    StickerHalloween2022Gengar,
-    #[serde(rename = "STICKER_HALLOWEEN2022_PUMPKABOO")]
-    StickerHalloween2022Pumpkaboo,
-    #[serde(rename = "STICKER_HALLOWEEN2022_VULPIX")]
-    StickerHalloween2022Vulpix,
-    #[serde(rename = "STICKER_HALLOWEEN2025_NOIBAT")]
-    StickerHalloween2025Noibat,
-    #[serde(rename = "STICKER_HALLOWEEN2025_TEDDIURSA")]
-    StickerHalloween2025Teddiursa,
+    #[serde(rename = "STICKER_HALLOWEEN_BULB")]
+    StickerHalloweenBulb,
+    #[serde(rename = "STICKER_HALLOWEEN_CHARM")]
+    StickerHalloweenCharm,
+    #[serde(rename = "STICKER_HALLOWEEN_GENGARMD")]
+    StickerHalloweenGengarmd,
+    #[serde(rename = "STICKER_HALLOWEEN_PIKA")]
+    StickerHalloweenPika,
+    #[serde(rename = "STICKER_HALLOWEEN_SABLEYEMD")]
+    StickerHalloweenSableyemd,
+    #[serde(rename = "STICKER_HALLOWEEN_SQU")]
+    StickerHalloweenSqu,
     #[serde(rename = "STICKER_HALLOWEEN21_FUWARAID")]
     StickerHalloween21Fuwaraid,
     #[serde(rename = "STICKER_HALLOWEEN21_GHOSTPIKA")]
@@ -447,18 +449,16 @@ pub enum StickerMetadataTemplateId {
     StickerHalloween24Froakie,
     #[serde(rename = "STICKER_HALLOWEEN24_ROWLET")]
     StickerHalloween24Rowlet,
-    #[serde(rename = "STICKER_HALLOWEEN_BULB")]
-    StickerHalloweenBulb,
-    #[serde(rename = "STICKER_HALLOWEEN_CHARM")]
-    StickerHalloweenCharm,
-    #[serde(rename = "STICKER_HALLOWEEN_GENGARMD")]
-    StickerHalloweenGengarmd,
-    #[serde(rename = "STICKER_HALLOWEEN_PIKA")]
-    StickerHalloweenPika,
-    #[serde(rename = "STICKER_HALLOWEEN_SABLEYEMD")]
-    StickerHalloweenSableyemd,
-    #[serde(rename = "STICKER_HALLOWEEN_SQU")]
-    StickerHalloweenSqu,
+    #[serde(rename = "STICKER_HALLOWEEN2022_GENGAR")]
+    StickerHalloween2022Gengar,
+    #[serde(rename = "STICKER_HALLOWEEN2022_PUMPKABOO")]
+    StickerHalloween2022Pumpkaboo,
+    #[serde(rename = "STICKER_HALLOWEEN2022_VULPIX")]
+    StickerHalloween2022Vulpix,
+    #[serde(rename = "STICKER_HALLOWEEN2025_NOIBAT")]
+    StickerHalloween2025Noibat,
+    #[serde(rename = "STICKER_HALLOWEEN2025_TEDDIURSA")]
+    StickerHalloween2025Teddiursa,
     #[serde(rename = "STICKER_HARU_CHERRIM")]
     StickerHaruCherrim,
     #[serde(rename = "STICKER_HARU_DREDEARPIKA")]
@@ -595,10 +595,10 @@ pub enum StickerMetadataTemplateId {
     StickerMegaevolutionParis2,
     #[serde(rename = "STICKER_MEGAEVOLUTION_PARIS_3")]
     StickerMegaevolutionParis3,
-    #[serde(rename = "STICKER_MEWTWO")]
-    StickerMewtwo,
     #[serde(rename = "STICKER_MEW_LAUGH")]
     StickerMewLaugh,
+    #[serde(rename = "STICKER_MEWTWO")]
+    StickerMewtwo,
     #[serde(rename = "STICKER_MUKKURU_CD_1")]
     StickerMukkuruCd1,
     #[serde(rename = "STICKER_MUKKURU_CD_2")]
@@ -623,18 +623,18 @@ pub enum StickerMetadataTemplateId {
     StickerNaganoMarill,
     #[serde(rename = "STICKER_NAGANO_YADON")]
     StickerNaganoYadon,
-    #[serde(rename = "STICKER_NEWPOKEMON2_1")]
-    StickerNewpokemon21,
-    #[serde(rename = "STICKER_NEWPOKEMON2_15")]
-    StickerNewpokemon215,
-    #[serde(rename = "STICKER_NEWPOKEMON2_33")]
-    StickerNewpokemon233,
     #[serde(rename = "STICKER_NEWPOKEMON_04")]
     StickerNewpokemon04,
     #[serde(rename = "STICKER_NEWPOKEMON_20")]
     StickerNewpokemon20,
     #[serde(rename = "STICKER_NEWPOKEMON_37")]
     StickerNewpokemon37,
+    #[serde(rename = "STICKER_NEWPOKEMON2_1")]
+    StickerNewpokemon21,
+    #[serde(rename = "STICKER_NEWPOKEMON2_15")]
+    StickerNewpokemon215,
+    #[serde(rename = "STICKER_NEWPOKEMON2_33")]
+    StickerNewpokemon233,
     #[serde(rename = "STICKER_NEWTEAMRASCAL")]
     StickerNewteamrascal,
     #[serde(rename = "STICKER_NEWTEAMRASCALPIKACHU_26")]
@@ -685,40 +685,6 @@ pub enum StickerMetadataTemplateId {
     StickerPapelpicadotgr4,
     #[serde(rename = "STICKER_PAPELPICADOTGR_5")]
     StickerPapelpicadotgr5,
-    #[serde(rename = "STICKER_PGOFEST2021_GALARIANZIGZAGOON")]
-    StickerPgofest2021Galarianzigzagoon,
-    #[serde(rename = "STICKER_PGOFEST2021_LOGO")]
-    StickerPgofest2021Logo,
-    #[serde(rename = "STICKER_PGOFEST2021_MELOETTA_1")]
-    StickerPgofest2021Meloetta1,
-    #[serde(rename = "STICKER_PGOFEST2021_MELOETTA_2")]
-    StickerPgofest2021Meloetta2,
-    #[serde(rename = "STICKER_PGOFEST2021_PONYTA")]
-    StickerPgofest2021Ponyta,
-    #[serde(rename = "STICKER_PGOFEST2021_SHIRTICON")]
-    StickerPgofest2021Shirticon,
-    #[serde(rename = "STICKER_PGOFEST2022_DENJYUMOKU")]
-    StickerPgofest2022Denjyumoku,
-    #[serde(rename = "STICKER_PGOFEST2022_GROUDON")]
-    StickerPgofest2022Groudon,
-    #[serde(rename = "STICKER_PGOFEST2022_KIBAGO")]
-    StickerPgofest2022Kibago,
-    #[serde(rename = "STICKER_PGOFEST2022_KYOGRE")]
-    StickerPgofest2022Kyogre,
-    #[serde(rename = "STICKER_PGOFEST2022_MASSIVOON")]
-    StickerPgofest2022Massivoon,
-    #[serde(rename = "STICKER_PGOFEST2022_PHEROACHE")]
-    StickerPgofest2022Pheroache,
-    #[serde(rename = "STICKER_PGOFEST2022_PIKACHU")]
-    StickerPgofest2022Pikachu,
-    #[serde(rename = "STICKER_PGOFEST2022_POCHAMA")]
-    StickerPgofest2022Pochama,
-    #[serde(rename = "STICKER_PGOFEST2022_SHAYMIN")]
-    StickerPgofest2022Shaymin,
-    #[serde(rename = "STICKER_PGOFEST2022_SHAYMINSKY")]
-    StickerPgofest2022Shayminsky,
-    #[serde(rename = "STICKER_PGOFEST2022_UTUROID")]
-    StickerPgofest2022Uturoid,
     #[serde(rename = "STICKER_PGO_FEST_2017")]
     StickerPgoFest2017,
     #[serde(rename = "STICKER_PGO_FEST_2018")]
@@ -825,6 +791,42 @@ pub enum StickerMetadataTemplateId {
     StickerPgoWildarea20244,
     #[serde(rename = "STICKER_PGO_WILDAREA_2024_LOGO")]
     StickerPgoWildarea2024Logo,
+    #[serde(rename = "STICKER_PGOFEST2021_GALARIANZIGZAGOON")]
+    StickerPgofest2021Galarianzigzagoon,
+    #[serde(rename = "STICKER_PGOFEST2021_LOGO")]
+    StickerPgofest2021Logo,
+    #[serde(rename = "STICKER_PGOFEST2021_MELOETTA_1")]
+    StickerPgofest2021Meloetta1,
+    #[serde(rename = "STICKER_PGOFEST2021_MELOETTA_2")]
+    StickerPgofest2021Meloetta2,
+    #[serde(rename = "STICKER_PGOFEST2021_PONYTA")]
+    StickerPgofest2021Ponyta,
+    #[serde(rename = "STICKER_PGOFEST2021_SHIRTICON")]
+    StickerPgofest2021Shirticon,
+    #[serde(rename = "STICKER_PGOFEST2022_DENJYUMOKU")]
+    StickerPgofest2022Denjyumoku,
+    #[serde(rename = "STICKER_PGOFEST2022_GROUDON")]
+    StickerPgofest2022Groudon,
+    #[serde(rename = "STICKER_PGOFEST2022_KIBAGO")]
+    StickerPgofest2022Kibago,
+    #[serde(rename = "STICKER_PGOFEST2022_KYOGRE")]
+    StickerPgofest2022Kyogre,
+    #[serde(rename = "STICKER_PGOFEST2022_MASSIVOON")]
+    StickerPgofest2022Massivoon,
+    #[serde(rename = "STICKER_PGOFEST2022_PHEROACHE")]
+    StickerPgofest2022Pheroache,
+    #[serde(rename = "STICKER_PGOFEST2022_PIKACHU")]
+    StickerPgofest2022Pikachu,
+    #[serde(rename = "STICKER_PGOFEST2022_POCHAMA")]
+    StickerPgofest2022Pochama,
+    #[serde(rename = "STICKER_PGOFEST2022_SHAYMIN")]
+    StickerPgofest2022Shaymin,
+    #[serde(rename = "STICKER_PGOFEST2022_SHAYMINSKY")]
+    StickerPgofest2022Shayminsky,
+    #[serde(rename = "STICKER_PGOFEST2022_UTUROID")]
+    StickerPgofest2022Uturoid,
+    #[serde(rename = "STICKER_PIKA_14_THANKYOU")]
+    StickerPika14Thankyou,
     #[serde(rename = "STICKER_PIKAAIRADVENTURE_1")]
     StickerPikaairadventure1,
     #[serde(rename = "STICKER_PIKAAIRADVENTURE_2")]
@@ -843,8 +845,6 @@ pub enum StickerMetadataTemplateId {
     StickerPikaairtaiwanSnorlax,
     #[serde(rename = "STICKER_PIKACHU_JOL")]
     StickerPikachuJol,
-    #[serde(rename = "STICKER_PIKA_14_THANKYOU")]
-    StickerPika14Thankyou,
     #[serde(rename = "STICKER_POKEMONCHATPALS2_04")]
     StickerPokemonchatpals204,
     #[serde(rename = "STICKER_POKEMONCHATPALS2_40")]
@@ -1037,6 +1037,14 @@ pub enum StickerMetadataTemplateId {
     StickerSummer1,
     #[serde(rename = "STICKER_SUMMER_2")]
     StickerSummer2,
+    #[serde(rename = "STICKER_SUMMER_3")]
+    StickerSummer3,
+    #[serde(rename = "STICKER_SUMMER_4")]
+    StickerSummer4,
+    #[serde(rename = "STICKER_SUMMER_5")]
+    StickerSummer5,
+    #[serde(rename = "STICKER_SUMMER_6")]
+    StickerSummer6,
     #[serde(rename = "STICKER_SUMMER_2023_BLASTOISE")]
     StickerSummer2023Blastoise,
     #[serde(rename = "STICKER_SUMMER_2023_BUTTERFREE")]
@@ -1069,14 +1077,6 @@ pub enum StickerMetadataTemplateId {
     StickerSummer20253,
     #[serde(rename = "STICKER_SUMMER_2025_4")]
     StickerSummer20254,
-    #[serde(rename = "STICKER_SUMMER_3")]
-    StickerSummer3,
-    #[serde(rename = "STICKER_SUMMER_4")]
-    StickerSummer4,
-    #[serde(rename = "STICKER_SUMMER_5")]
-    StickerSummer5,
-    #[serde(rename = "STICKER_SUMMER_6")]
-    StickerSummer6,
     #[serde(rename = "STICKER_SWORDSHIELD21_1")]
     StickerSwordshield211,
     #[serde(rename = "STICKER_SWORDSHIELD21_2")]
@@ -1137,6 +1137,8 @@ pub enum StickerMetadataTemplateId {
     StickerValentine20232,
     #[serde(rename = "STICKER_VALENTINE2023_3")]
     StickerValentine20233,
+    #[serde(rename = "STICKER_WCS_PLAY")]
+    StickerWcsPlay,
     #[serde(rename = "STICKER_WCS2025_CAR_GROUP")]
     StickerWcs2025CarGroup,
     #[serde(rename = "STICKER_WCS2025_JIGGLYPUFF")]
@@ -1145,34 +1147,12 @@ pub enum StickerMetadataTemplateId {
     StickerWcs2025Murkrow,
     #[serde(rename = "STICKER_WCS2025_PIKACHU")]
     StickerWcs2025Pikachu,
-    #[serde(rename = "STICKER_WCS_PLAY")]
-    StickerWcsPlay,
     #[serde(rename = "STICKER_WILLOW_BRONZE")]
     StickerWillowBronze,
     #[serde(rename = "STICKER_WILLOW_GOLD")]
     StickerWillowGold,
     #[serde(rename = "STICKER_WILLOW_SILVER")]
     StickerWillowSilver,
-    #[serde(rename = "STICKER_WINTER2023_1")]
-    StickerWinter20231,
-    #[serde(rename = "STICKER_WINTER2023_2")]
-    StickerWinter20232,
-    #[serde(rename = "STICKER_WINTER2023_3")]
-    StickerWinter20233,
-    #[serde(rename = "STICKER_WINTER2023_4")]
-    StickerWinter20234,
-    #[serde(rename = "STICKER_WINTER2023_5")]
-    StickerWinter20235,
-    #[serde(rename = "STICKER_WINTER2023_6")]
-    StickerWinter20236,
-    #[serde(rename = "STICKER_WINTER2025_1")]
-    StickerWinter20251,
-    #[serde(rename = "STICKER_WINTER2025_2")]
-    StickerWinter20252,
-    #[serde(rename = "STICKER_WINTER2025_3")]
-    StickerWinter20253,
-    #[serde(rename = "STICKER_WINTER2025_4")]
-    StickerWinter20254,
     #[serde(rename = "STICKER_WINTER_2024_1")]
     StickerWinter20241,
     #[serde(rename = "STICKER_WINTER_2024_2")]
@@ -1197,6 +1177,26 @@ pub enum StickerMetadataTemplateId {
     StickerWinterSawsbuck,
     #[serde(rename = "STICKER_WINTER_SNORUNT")]
     StickerWinterSnorunt,
+    #[serde(rename = "STICKER_WINTER2023_1")]
+    StickerWinter20231,
+    #[serde(rename = "STICKER_WINTER2023_2")]
+    StickerWinter20232,
+    #[serde(rename = "STICKER_WINTER2023_3")]
+    StickerWinter20233,
+    #[serde(rename = "STICKER_WINTER2023_4")]
+    StickerWinter20234,
+    #[serde(rename = "STICKER_WINTER2023_5")]
+    StickerWinter20235,
+    #[serde(rename = "STICKER_WINTER2023_6")]
+    StickerWinter20236,
+    #[serde(rename = "STICKER_WINTER2025_1")]
+    StickerWinter20251,
+    #[serde(rename = "STICKER_WINTER2025_2")]
+    StickerWinter20252,
+    #[serde(rename = "STICKER_WINTER2025_3")]
+    StickerWinter20253,
+    #[serde(rename = "STICKER_WINTER2025_4")]
+    StickerWinter20254,
     #[serde(rename = "STICKER_WOOPERCD2023_1")]
     StickerWoopercd20231,
     #[serde(rename = "STICKER_WOOPERCD2023_2")]

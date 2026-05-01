@@ -4823,6 +4823,8 @@ pub enum PokemonExtendedSettingsTemplateId {
     ExtendedV0998PokemonBaxcaliburNormal,
     #[serde(rename = "EXTENDED_V0999_POKEMON_GIMMIGHOUL")]
     ExtendedV0999PokemonGimmighoul,
+    #[serde(rename = "EXTENDED_V999_POKEMON_GIMMIGHOUL")]
+    ExtendedV999PokemonGimmighoul,
     #[serde(rename = "EXTENDED_V0999_POKEMON_GIMMIGHOUL_COIN_A1")]
     ExtendedV0999PokemonGimmighoulCoinA1,
     #[serde(rename = "EXTENDED_V0999_POKEMON_GIMMIGHOUL_NORMAL")]
@@ -4933,6 +4935,4 @@ pub enum PokemonExtendedSettingsTemplateId {
     ExtendedV1025PokemonPecharunt,
     #[serde(rename = "EXTENDED_V1025_POKEMON_PECHARUNT_NORMAL")]
     ExtendedV1025PokemonPecharuntNormal,
-    #[serde(rename = "EXTENDED_V999_POKEMON_GIMMIGHOUL")]
-    ExtendedV999PokemonGimmighoul,
 }

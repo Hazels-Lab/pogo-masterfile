@@ -2,6 +2,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import type { Group } from "../group.ts";
 import { isStubGroup } from "../group.ts";
+import { compareNatural } from "../helpers.ts";
 import type { InferredType, ObjectType } from "../infer.ts";
 import { widenedPayloadObject } from "../infer.ts";
 import { deriveTemplateIdVariants, pascalCase } from "../naming.ts";
@@ -222,7 +223,7 @@ export function emitGroupModule(group: Group, packageName: string): string {
 }
 
 export function emitSingletonsModule(singletons: readonly Group[], packageName: string): string {
-	const sorted = [...singletons].sort((a, b) => pascalCase(a.discriminator).localeCompare(pascalCase(b.discriminator)));
+	const sorted = [...singletons].sort((a, b) => compareNatural(pascalCase(a.discriminator), pascalCase(b.discriminator)));
 	const pool = newPool();
 	const wrappers: string[] = [];
 
@@ -260,14 +261,14 @@ export interface EntryVariant {
 // scaffolding lives in templates/masterfile.go.tmpl; this function only
 // computes the data-driven imports + switch arms and substitutes them in.
 export function emitMasterfileFile(variants: readonly EntryVariant[], modulePath: string): string {
-	const sorted = [...variants].sort((a, b) => b.entryCount - a.entryCount || a.variantName.localeCompare(b.variantName));
+	const sorted = [...variants].sort((a, b) => b.entryCount - a.entryCount || compareNatural(a.variantName, b.variantName));
 	const nonStubs = sorted.filter((v) => !v.isStub);
 	const stubs = sorted.filter((v) => v.isStub);
 
 	// Deduplicated sub-package imports, sorted alphabetically. Each variant's
 	// modulePath becomes <modulePath>/<group>; the dispatch references types
 	// as <group>.EntryType.
-	const subPackages = [...new Set(sorted.map((v) => v.modulePath))].sort();
+	const subPackages = [...new Set(sorted.map((v) => v.modulePath))].sort(compareNatural);
 	const subPackageImports = subPackages.map((p) => `\t${JSON.stringify(`${modulePath}/${p}`)}`).join("\n");
 
 	const nonStubArms = nonStubs
@@ -288,7 +289,7 @@ export function emitMasterfileFile(variants: readonly EntryVariant[], modulePath
 }
 
 function emitGoConstBlock(typeName: string, idsToVariants: Map<string, string>): string {
-	const sortedIds = [...idsToVariants.keys()].sort();
+	const sortedIds = [...idsToVariants.keys()].sort(compareNatural);
 	const constNames = sortedIds.map((id) => `${typeName}${idsToVariants.get(id)!}`);
 
 	// Align values for readability — gofmt does this anyway, but we produce

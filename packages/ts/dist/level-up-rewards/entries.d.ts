@@ -3,6 +3,103 @@
 import type { S } from "../_utils";
 import type { LevelUpRewards } from "./index";
 
+export type LevelUpRewardsAwardsLevel2 = S<
+	LevelUpRewards<
+		"AWARDS_LEVEL_2",
+		{
+			clientOverrideDisplayOrder: true;
+			featuresUnlocked: ["FEATURE_EGG_HATCHING"];
+			items: ["ITEM_POKE_BALL", "ITEM_NANAB_BERRY"];
+			itemsCount: [10, 3];
+			itemsUnlocked: ["ITEM_NANAB_BERRY"];
+			level: 2;
+		}
+	>
+>;
+export type LevelUpRewardsAwardsLevel3 = S<
+	LevelUpRewards<
+		"AWARDS_LEVEL_3",
+		{
+			clientOverrideDisplayOrder: true;
+			items: ["ITEM_POKE_BALL", "ITEM_NANAB_BERRY"];
+			itemsCount: [10, 3];
+			level: 3;
+		}
+	>
+>;
+export type LevelUpRewardsAwardsLevel4 = S<
+	LevelUpRewards<
+		"AWARDS_LEVEL_4",
+		{
+			clientOverrideDisplayOrder: true;
+			items: ["ITEM_POKE_BALL", "ITEM_NANAB_BERRY"];
+			itemsCount: [10, 3];
+			itemsUnlocked: ["ITEM_INCENSE_DAILY_ADVENTURE"];
+			level: 4;
+		}
+	>
+>;
+export type LevelUpRewardsAwardsLevel5 = S<
+	LevelUpRewards<
+		"AWARDS_LEVEL_5",
+		{
+			clientOverrideDisplayOrder: true;
+			featuresUnlocked: ["FEATURE_GYM", "FEATURE_RAID"];
+			items: ["ITEM_POKE_BALL", "ITEM_POTION", "ITEM_REVIVE", "ITEM_INCENSE_ORDINARY"];
+			itemsCount: [15, 10, 5, 1];
+			itemsUnlocked: ["ITEM_POTION", "ITEM_REVIVE"];
+			level: 5;
+		}
+	>
+>;
+export type LevelUpRewardsAwardsLevel6 = S<
+	LevelUpRewards<
+		"AWARDS_LEVEL_6",
+		{
+			clientOverrideDisplayOrder: true;
+			items: ["ITEM_POKE_BALL", "ITEM_POTION", "ITEM_TROY_DISK"];
+			itemsCount: [10, 5, 1];
+			itemsUnlocked: ["ITEM_TROY_DISK"];
+			level: 6;
+		}
+	>
+>;
+export type LevelUpRewardsAwardsLevel7 = S<
+	LevelUpRewards<
+		"AWARDS_LEVEL_7",
+		{
+			clientOverrideDisplayOrder: true;
+			featuresUnlocked: ["FEATURE_ROUTES"];
+			items: ["ITEM_POKE_BALL", "ITEM_NANAB_BERRY"];
+			itemsCount: [10, 3];
+			level: 7;
+		}
+	>
+>;
+export type LevelUpRewardsAwardsLevel8 = S<
+	LevelUpRewards<
+		"AWARDS_LEVEL_8",
+		{
+			clientOverrideDisplayOrder: true;
+			featuresUnlocked: ["FEATURE_ROCKET"];
+			items: ["ITEM_POKE_BALL", "ITEM_REVIVE"];
+			itemsCount: [10, 5];
+			level: 8;
+		}
+	>
+>;
+export type LevelUpRewardsAwardsLevel9 = S<
+	LevelUpRewards<
+		"AWARDS_LEVEL_9",
+		{
+			clientOverrideDisplayOrder: true;
+			items: ["ITEM_POKE_BALL", "ITEM_RAZZ_BERRY"];
+			itemsCount: [10, 3];
+			itemsUnlocked: ["ITEM_RAZZ_BERRY"];
+			level: 9;
+		}
+	>
+>;
 export type LevelUpRewardsAwardsLevel10 = S<
 	LevelUpRewards<
 		"AWARDS_LEVEL_10",
@@ -120,19 +217,6 @@ export type LevelUpRewardsAwardsLevel19 = S<
 			itemsCount: [10, 3, 5, 1];
 			itemsUnlocked: ["ITEM_MOVE_REROLL_FAST_ATTACK"];
 			level: 19;
-		}
-	>
->;
-export type LevelUpRewardsAwardsLevel2 = S<
-	LevelUpRewards<
-		"AWARDS_LEVEL_2",
-		{
-			clientOverrideDisplayOrder: true;
-			featuresUnlocked: ["FEATURE_EGG_HATCHING"];
-			items: ["ITEM_POKE_BALL", "ITEM_NANAB_BERRY"];
-			itemsCount: [10, 3];
-			itemsUnlocked: ["ITEM_NANAB_BERRY"];
-			level: 2;
 		}
 	>
 >;
@@ -272,17 +356,6 @@ export type LevelUpRewardsAwardsLevel29 = S<
 			items: ["ITEM_ULTRA_BALL", "ITEM_PINAP_BERRY", "ITEM_REVIVE"];
 			itemsCount: [10, 3, 5];
 			level: 29;
-		}
-	>
->;
-export type LevelUpRewardsAwardsLevel3 = S<
-	LevelUpRewards<
-		"AWARDS_LEVEL_3",
-		{
-			clientOverrideDisplayOrder: true;
-			items: ["ITEM_POKE_BALL", "ITEM_NANAB_BERRY"];
-			itemsCount: [10, 3];
-			level: 3;
 		}
 	>
 >;
@@ -426,18 +499,6 @@ export type LevelUpRewardsAwardsLevel39 = S<
 		}
 	>
 >;
-export type LevelUpRewardsAwardsLevel4 = S<
-	LevelUpRewards<
-		"AWARDS_LEVEL_4",
-		{
-			clientOverrideDisplayOrder: true;
-			items: ["ITEM_POKE_BALL", "ITEM_NANAB_BERRY"];
-			itemsCount: [10, 3];
-			itemsUnlocked: ["ITEM_INCENSE_DAILY_ADVENTURE"];
-			level: 4;
-		}
-	>
->;
 export type LevelUpRewardsAwardsLevel40 = S<
 	LevelUpRewards<
 		"AWARDS_LEVEL_40",
@@ -573,19 +634,6 @@ export type LevelUpRewardsAwardsLevel49 = S<
 			items: ["ITEM_ULTRA_BALL", "ITEM_PINAP_BERRY", "ITEM_MAX_REVIVE", "ITEM_TROY_DISK"];
 			itemsCount: [10, 3, 5, 1];
 			level: 49;
-		}
-	>
->;
-export type LevelUpRewardsAwardsLevel5 = S<
-	LevelUpRewards<
-		"AWARDS_LEVEL_5",
-		{
-			clientOverrideDisplayOrder: true;
-			featuresUnlocked: ["FEATURE_GYM", "FEATURE_RAID"];
-			items: ["ITEM_POKE_BALL", "ITEM_POTION", "ITEM_REVIVE", "ITEM_INCENSE_ORDINARY"];
-			itemsCount: [15, 10, 5, 1];
-			itemsUnlocked: ["ITEM_POTION", "ITEM_REVIVE"];
-			level: 5;
 		}
 	>
 >;
@@ -727,18 +775,6 @@ export type LevelUpRewardsAwardsLevel59 = S<
 		}
 	>
 >;
-export type LevelUpRewardsAwardsLevel6 = S<
-	LevelUpRewards<
-		"AWARDS_LEVEL_6",
-		{
-			clientOverrideDisplayOrder: true;
-			items: ["ITEM_POKE_BALL", "ITEM_POTION", "ITEM_TROY_DISK"];
-			itemsCount: [10, 5, 1];
-			itemsUnlocked: ["ITEM_TROY_DISK"];
-			level: 6;
-		}
-	>
->;
 export type LevelUpRewardsAwardsLevel60 = S<
 	LevelUpRewards<
 		"AWARDS_LEVEL_60",
@@ -873,18 +909,6 @@ export type LevelUpRewardsAwardsLevel69 = S<
 			items: ["ITEM_ULTRA_BALL", "ITEM_PINAP_BERRY", "ITEM_MAX_REVIVE", "ITEM_TROY_DISK"];
 			itemsCount: [10, 3, 5, 1];
 			level: 69;
-		}
-	>
->;
-export type LevelUpRewardsAwardsLevel7 = S<
-	LevelUpRewards<
-		"AWARDS_LEVEL_7",
-		{
-			clientOverrideDisplayOrder: true;
-			featuresUnlocked: ["FEATURE_ROUTES"];
-			items: ["ITEM_POKE_BALL", "ITEM_NANAB_BERRY"];
-			itemsCount: [10, 3];
-			level: 7;
 		}
 	>
 >;
@@ -1056,18 +1080,6 @@ export type LevelUpRewardsAwardsLevel79 = S<
 		}
 	>
 >;
-export type LevelUpRewardsAwardsLevel8 = S<
-	LevelUpRewards<
-		"AWARDS_LEVEL_8",
-		{
-			clientOverrideDisplayOrder: true;
-			featuresUnlocked: ["FEATURE_ROCKET"];
-			items: ["ITEM_POKE_BALL", "ITEM_REVIVE"];
-			itemsCount: [10, 5];
-			level: 8;
-		}
-	>
->;
 export type LevelUpRewardsAwardsLevel80 = S<
 	LevelUpRewards<
 		"AWARDS_LEVEL_80",
@@ -1091,18 +1103,6 @@ export type LevelUpRewardsAwardsLevel80 = S<
 				displayTemplateId: "N_DISPLAY_n_shirt_lvl80-circuitjacket_0";
 				itemTemplateId: "N_AVATAR_n_shirt_lvl80-circuitjacket_0";
 			};
-		}
-	>
->;
-export type LevelUpRewardsAwardsLevel9 = S<
-	LevelUpRewards<
-		"AWARDS_LEVEL_9",
-		{
-			clientOverrideDisplayOrder: true;
-			items: ["ITEM_POKE_BALL", "ITEM_RAZZ_BERRY"];
-			itemsCount: [10, 3];
-			itemsUnlocked: ["ITEM_RAZZ_BERRY"];
-			level: 9;
 		}
 	>
 >;
@@ -1343,6 +1343,14 @@ export type LevelUpRewardsBackfillAwardsLevel70 = S<
 >;
 
 export type LevelUpRewardsMasterfileEntry =
+	| LevelUpRewardsAwardsLevel2
+	| LevelUpRewardsAwardsLevel3
+	| LevelUpRewardsAwardsLevel4
+	| LevelUpRewardsAwardsLevel5
+	| LevelUpRewardsAwardsLevel6
+	| LevelUpRewardsAwardsLevel7
+	| LevelUpRewardsAwardsLevel8
+	| LevelUpRewardsAwardsLevel9
 	| LevelUpRewardsAwardsLevel10
 	| LevelUpRewardsAwardsLevel11
 	| LevelUpRewardsAwardsLevel12
@@ -1353,7 +1361,6 @@ export type LevelUpRewardsMasterfileEntry =
 	| LevelUpRewardsAwardsLevel17
 	| LevelUpRewardsAwardsLevel18
 	| LevelUpRewardsAwardsLevel19
-	| LevelUpRewardsAwardsLevel2
 	| LevelUpRewardsAwardsLevel20
 	| LevelUpRewardsAwardsLevel21
 	| LevelUpRewardsAwardsLevel22
@@ -1364,7 +1371,6 @@ export type LevelUpRewardsMasterfileEntry =
 	| LevelUpRewardsAwardsLevel27
 	| LevelUpRewardsAwardsLevel28
 	| LevelUpRewardsAwardsLevel29
-	| LevelUpRewardsAwardsLevel3
 	| LevelUpRewardsAwardsLevel30
 	| LevelUpRewardsAwardsLevel31
 	| LevelUpRewardsAwardsLevel32
@@ -1375,7 +1381,6 @@ export type LevelUpRewardsMasterfileEntry =
 	| LevelUpRewardsAwardsLevel37
 	| LevelUpRewardsAwardsLevel38
 	| LevelUpRewardsAwardsLevel39
-	| LevelUpRewardsAwardsLevel4
 	| LevelUpRewardsAwardsLevel40
 	| LevelUpRewardsAwardsLevel41
 	| LevelUpRewardsAwardsLevel42
@@ -1386,7 +1391,6 @@ export type LevelUpRewardsMasterfileEntry =
 	| LevelUpRewardsAwardsLevel47
 	| LevelUpRewardsAwardsLevel48
 	| LevelUpRewardsAwardsLevel49
-	| LevelUpRewardsAwardsLevel5
 	| LevelUpRewardsAwardsLevel50
 	| LevelUpRewardsAwardsLevel51
 	| LevelUpRewardsAwardsLevel52
@@ -1397,7 +1401,6 @@ export type LevelUpRewardsMasterfileEntry =
 	| LevelUpRewardsAwardsLevel57
 	| LevelUpRewardsAwardsLevel58
 	| LevelUpRewardsAwardsLevel59
-	| LevelUpRewardsAwardsLevel6
 	| LevelUpRewardsAwardsLevel60
 	| LevelUpRewardsAwardsLevel61
 	| LevelUpRewardsAwardsLevel62
@@ -1408,7 +1411,6 @@ export type LevelUpRewardsMasterfileEntry =
 	| LevelUpRewardsAwardsLevel67
 	| LevelUpRewardsAwardsLevel68
 	| LevelUpRewardsAwardsLevel69
-	| LevelUpRewardsAwardsLevel7
 	| LevelUpRewardsAwardsLevel70
 	| LevelUpRewardsAwardsLevel71
 	| LevelUpRewardsAwardsLevel72
@@ -1419,9 +1421,7 @@ export type LevelUpRewardsMasterfileEntry =
 	| LevelUpRewardsAwardsLevel77
 	| LevelUpRewardsAwardsLevel78
 	| LevelUpRewardsAwardsLevel79
-	| LevelUpRewardsAwardsLevel8
 	| LevelUpRewardsAwardsLevel80
-	| LevelUpRewardsAwardsLevel9
 	| LevelUpRewardsBackfillAwardsLevel10
 	| LevelUpRewardsBackfillAwardsLevel20
 	| LevelUpRewardsBackfillAwardsLevel25

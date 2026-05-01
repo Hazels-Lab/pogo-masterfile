@@ -7,13 +7,15 @@ type SingletonsTemplateID string
 const (
 	SingletonsTemplateIDAccessibilityClientSettings             SingletonsTemplateID = "ACCESSIBILITY_CLIENT_SETTINGS"
 	SingletonsTemplateIDAdditiveSceneSettings                   SingletonsTemplateID = "ADDITIVE_SCENE_SETTINGS"
-	SingletonsTemplateIDAddressablePokemonSettings              SingletonsTemplateID = "ADDRESSABLE_POKEMON_SETTINGS"
 	SingletonsTemplateIDAddressBookImportSettings               SingletonsTemplateID = "ADDRESS_BOOK_IMPORT_SETTINGS"
+	SingletonsTemplateIDAddressablePokemonSettings              SingletonsTemplateID = "ADDRESSABLE_POKEMON_SETTINGS"
 	SingletonsTemplateIDAdvancedSettings                        SingletonsTemplateID = "ADVANCED_SETTINGS"
 	SingletonsTemplateIDArPhotoFeatureFlags                     SingletonsTemplateID = "AR_PHOTO_FEATURE_FLAGS"
 	SingletonsTemplateIDArTelemetrySettings                     SingletonsTemplateID = "AR_TELEMETRY_SETTINGS"
 	SingletonsTemplateIDAssetRefreshProto                       SingletonsTemplateID = "ASSET_REFRESH_PROTO"
 	SingletonsTemplateIDAvatarFeatureFlags                      SingletonsTemplateID = "AVATAR_FEATURE_FLAGS"
+	SingletonsTemplateIDAvatarStoreFooterFlags                  SingletonsTemplateID = "avatar_store_footer_flags"
+	SingletonsTemplateIDAvatarStoreSubcategoryFilteringFlags    SingletonsTemplateID = "avatar_store_subcategory_filtering_flags"
 	SingletonsTemplateIDBackgroundModeSettings                  SingletonsTemplateID = "BACKGROUND_MODE_SETTINGS"
 	SingletonsTemplateIDBattleHubBadgeSettings                  SingletonsTemplateID = "BATTLE_HUB_BADGE_SETTINGS"
 	SingletonsTemplateIDBattleHubOrderSettings                  SingletonsTemplateID = "BATTLE_HUB_ORDER_SETTINGS"
@@ -61,6 +63,7 @@ const (
 	SingletonsTemplateIDHapticsSettings                         SingletonsTemplateID = "HAPTICS_SETTINGS"
 	SingletonsTemplateIDIapSettings                             SingletonsTemplateID = "IAP_SETTINGS"
 	SingletonsTemplateIDIbfcLightweightSettings                 SingletonsTemplateID = "IBFC_LIGHTWEIGHT_SETTINGS"
+	SingletonsTemplateIDImpressionTrackingSettings              SingletonsTemplateID = "impression_tracking_settings"
 	SingletonsTemplateIDIncidentPrioritySettings                SingletonsTemplateID = "INCIDENT_PRIORITY_SETTINGS"
 	SingletonsTemplateIDIncidentVisibilitySettings              SingletonsTemplateID = "INCIDENT_VISIBILITY_SETTINGS"
 	SingletonsTemplateIDInventorySettings                       SingletonsTemplateID = "INVENTORY_SETTINGS"
@@ -90,10 +93,10 @@ const (
 	SingletonsTemplateIDPlayerLevelSettings                     SingletonsTemplateID = "PLAYER_LEVEL_SETTINGS"
 	SingletonsTemplateIDPokeballThrowPropertySettings           SingletonsTemplateID = "POKEBALL_THROW_PROPERTY_SETTINGS"
 	SingletonsTemplateIDPokecoinPurchaseDisplayGmt              SingletonsTemplateID = "POKECOIN_PURCHASE_DISPLAY_GMT"
-	SingletonsTemplateIDPokedexv2FeatureFlags                   SingletonsTemplateID = "POKEDEXV2_FEATURE_FLAGS"
 	SingletonsTemplateIDPokedexCategoriesSettings               SingletonsTemplateID = "POKEDEX_CATEGORIES_SETTINGS"
 	SingletonsTemplateIDPokedexSizeStatsSystemSettings          SingletonsTemplateID = "POKEDEX_SIZE_STATS_SYSTEM_SETTINGS"
 	SingletonsTemplateIDPokedexV2Settings                       SingletonsTemplateID = "POKEDEX_V2_SETTINGS"
+	SingletonsTemplateIDPokedexv2FeatureFlags                   SingletonsTemplateID = "POKEDEXV2_FEATURE_FLAGS"
 	SingletonsTemplateIDPokemonFxSettings                       SingletonsTemplateID = "POKEMON_FX_SETTINGS"
 	SingletonsTemplateIDPokemonHomeSettings                     SingletonsTemplateID = "POKEMON_HOME_SETTINGS"
 	SingletonsTemplateIDPokemonTagSettings                      SingletonsTemplateID = "POKEMON_TAG_SETTINGS"
@@ -110,14 +113,14 @@ const (
 	SingletonsTemplateIDReferralSettings                        SingletonsTemplateID = "REFERRAL_SETTINGS"
 	SingletonsTemplateIDRemoteRaidLimitSettings                 SingletonsTemplateID = "REMOTE_RAID_LIMIT_SETTINGS"
 	SingletonsTemplateIDRemoteTradeSettings                     SingletonsTemplateID = "REMOTE_TRADE_SETTINGS"
-	SingletonsTemplateIDRoutesNearbyNotifSettings               SingletonsTemplateID = "ROUTES_NEARBY_NOTIF_SETTINGS"
-	SingletonsTemplateIDRoutesPartyPlayInteropSettings          SingletonsTemplateID = "ROUTES_PARTY_PLAY_INTEROP_SETTINGS"
 	SingletonsTemplateIDRouteBadgeSettings                      SingletonsTemplateID = "ROUTE_BADGE_SETTINGS"
 	SingletonsTemplateIDRouteCreationSettings                   SingletonsTemplateID = "ROUTE_CREATION_SETTINGS"
 	SingletonsTemplateIDRouteDiscoverySettings                  SingletonsTemplateID = "ROUTE_DISCOVERY_SETTINGS"
 	SingletonsTemplateIDRoutePinSettings                        SingletonsTemplateID = "ROUTE_PIN_SETTINGS"
 	SingletonsTemplateIDRoutePlaySettings                       SingletonsTemplateID = "ROUTE_PLAY_SETTINGS"
 	SingletonsTemplateIDRouteStampCategoryDefault               SingletonsTemplateID = "ROUTE_STAMP_CATEGORY_DEFAULT"
+	SingletonsTemplateIDRoutesNearbyNotifSettings               SingletonsTemplateID = "ROUTES_NEARBY_NOTIF_SETTINGS"
+	SingletonsTemplateIDRoutesPartyPlayInteropSettings          SingletonsTemplateID = "ROUTES_PARTY_PLAY_INTEROP_SETTINGS"
 	SingletonsTemplateIDSharedFusionSettings                    SingletonsTemplateID = "SHARED_FUSION_SETTINGS"
 	SingletonsTemplateIDSharedMoveSettings                      SingletonsTemplateID = "SHARED_MOVE_SETTINGS"
 	SingletonsTemplateIDSoftSfidaSettings                       SingletonsTemplateID = "SOFT_SFIDA_SETTINGS"
@@ -126,11 +129,13 @@ const (
 	SingletonsTemplateIDSponsoredGeofenceGiftSettings           SingletonsTemplateID = "SPONSORED_GEOFENCE_GIFT_SETTINGS"
 	SingletonsTemplateIDStampCollectionSettings                 SingletonsTemplateID = "STAMP_COLLECTION_SETTINGS"
 	SingletonsTemplateIDStationedPokemonPowerBoostTableSettings SingletonsTemplateID = "STATIONED_POKEMON_POWER_BOOST_TABLE_SETTINGS"
+	SingletonsTemplateIDStickerCategorySettings                 SingletonsTemplateID = "sticker_category_settings"
 	SingletonsTemplateIDStyleShopSettings                       SingletonsTemplateID = "STYLE_SHOP_SETTINGS"
 	SingletonsTemplateIDSurveySettings                          SingletonsTemplateID = "SURVEY_SETTINGS"
 	SingletonsTemplateIDTicketGiftingSettings                   SingletonsTemplateID = "TICKET_GIFTING_SETTINGS"
 	SingletonsTemplateIDTodayViewSettingsV2                     SingletonsTemplateID = "TODAY_VIEW_SETTINGS_V2"
 	SingletonsTemplateIDTutorialsSettings                       SingletonsTemplateID = "TUTORIALS_SETTINGS"
+	SingletonsTemplateIDUsernameSuggestionSettings              SingletonsTemplateID = "username_suggestion_settings"
 	SingletonsTemplateIDVerboseLogCombatSettings                SingletonsTemplateID = "VERBOSE_LOG_COMBAT_SETTINGS"
 	SingletonsTemplateIDVerboseLogRaidSettings                  SingletonsTemplateID = "VERBOSE_LOG_RAID_SETTINGS"
 	SingletonsTemplateIDVistaGeneralSettings                    SingletonsTemplateID = "VISTA_GENERAL_SETTINGS"
@@ -139,23 +144,20 @@ const (
 	SingletonsTemplateIDVsSeekerClientSettings                  SingletonsTemplateID = "VS_SEEKER_CLIENT_SETTINGS"
 	SingletonsTemplateIDVsSeekerScheduleSettings                SingletonsTemplateID = "VS_SEEKER_SCHEDULE_SETTINGS"
 	SingletonsTemplateIDWeatherBonusSettings                    SingletonsTemplateID = "WEATHER_BONUS_SETTINGS"
-	SingletonsTemplateIDAvatarStoreFooterFlags                  SingletonsTemplateID = "avatar_store_footer_flags"
-	SingletonsTemplateIDAvatarStoreSubcategoryFilteringFlags    SingletonsTemplateID = "avatar_store_subcategory_filtering_flags"
-	SingletonsTemplateIDImpressionTrackingSettings              SingletonsTemplateID = "impression_tracking_settings"
-	SingletonsTemplateIDStickerCategorySettings                 SingletonsTemplateID = "sticker_category_settings"
-	SingletonsTemplateIDUsernameSuggestionSettings              SingletonsTemplateID = "username_suggestion_settings"
 )
 
 var SingletonsTemplateIDValues = [...]SingletonsTemplateID{
 	SingletonsTemplateIDAccessibilityClientSettings,
 	SingletonsTemplateIDAdditiveSceneSettings,
-	SingletonsTemplateIDAddressablePokemonSettings,
 	SingletonsTemplateIDAddressBookImportSettings,
+	SingletonsTemplateIDAddressablePokemonSettings,
 	SingletonsTemplateIDAdvancedSettings,
 	SingletonsTemplateIDArPhotoFeatureFlags,
 	SingletonsTemplateIDArTelemetrySettings,
 	SingletonsTemplateIDAssetRefreshProto,
 	SingletonsTemplateIDAvatarFeatureFlags,
+	SingletonsTemplateIDAvatarStoreFooterFlags,
+	SingletonsTemplateIDAvatarStoreSubcategoryFilteringFlags,
 	SingletonsTemplateIDBackgroundModeSettings,
 	SingletonsTemplateIDBattleHubBadgeSettings,
 	SingletonsTemplateIDBattleHubOrderSettings,
@@ -203,6 +205,7 @@ var SingletonsTemplateIDValues = [...]SingletonsTemplateID{
 	SingletonsTemplateIDHapticsSettings,
 	SingletonsTemplateIDIapSettings,
 	SingletonsTemplateIDIbfcLightweightSettings,
+	SingletonsTemplateIDImpressionTrackingSettings,
 	SingletonsTemplateIDIncidentPrioritySettings,
 	SingletonsTemplateIDIncidentVisibilitySettings,
 	SingletonsTemplateIDInventorySettings,
@@ -232,10 +235,10 @@ var SingletonsTemplateIDValues = [...]SingletonsTemplateID{
 	SingletonsTemplateIDPlayerLevelSettings,
 	SingletonsTemplateIDPokeballThrowPropertySettings,
 	SingletonsTemplateIDPokecoinPurchaseDisplayGmt,
-	SingletonsTemplateIDPokedexv2FeatureFlags,
 	SingletonsTemplateIDPokedexCategoriesSettings,
 	SingletonsTemplateIDPokedexSizeStatsSystemSettings,
 	SingletonsTemplateIDPokedexV2Settings,
+	SingletonsTemplateIDPokedexv2FeatureFlags,
 	SingletonsTemplateIDPokemonFxSettings,
 	SingletonsTemplateIDPokemonHomeSettings,
 	SingletonsTemplateIDPokemonTagSettings,
@@ -252,14 +255,14 @@ var SingletonsTemplateIDValues = [...]SingletonsTemplateID{
 	SingletonsTemplateIDReferralSettings,
 	SingletonsTemplateIDRemoteRaidLimitSettings,
 	SingletonsTemplateIDRemoteTradeSettings,
-	SingletonsTemplateIDRoutesNearbyNotifSettings,
-	SingletonsTemplateIDRoutesPartyPlayInteropSettings,
 	SingletonsTemplateIDRouteBadgeSettings,
 	SingletonsTemplateIDRouteCreationSettings,
 	SingletonsTemplateIDRouteDiscoverySettings,
 	SingletonsTemplateIDRoutePinSettings,
 	SingletonsTemplateIDRoutePlaySettings,
 	SingletonsTemplateIDRouteStampCategoryDefault,
+	SingletonsTemplateIDRoutesNearbyNotifSettings,
+	SingletonsTemplateIDRoutesPartyPlayInteropSettings,
 	SingletonsTemplateIDSharedFusionSettings,
 	SingletonsTemplateIDSharedMoveSettings,
 	SingletonsTemplateIDSoftSfidaSettings,
@@ -268,11 +271,13 @@ var SingletonsTemplateIDValues = [...]SingletonsTemplateID{
 	SingletonsTemplateIDSponsoredGeofenceGiftSettings,
 	SingletonsTemplateIDStampCollectionSettings,
 	SingletonsTemplateIDStationedPokemonPowerBoostTableSettings,
+	SingletonsTemplateIDStickerCategorySettings,
 	SingletonsTemplateIDStyleShopSettings,
 	SingletonsTemplateIDSurveySettings,
 	SingletonsTemplateIDTicketGiftingSettings,
 	SingletonsTemplateIDTodayViewSettingsV2,
 	SingletonsTemplateIDTutorialsSettings,
+	SingletonsTemplateIDUsernameSuggestionSettings,
 	SingletonsTemplateIDVerboseLogCombatSettings,
 	SingletonsTemplateIDVerboseLogRaidSettings,
 	SingletonsTemplateIDVistaGeneralSettings,
@@ -281,9 +286,4 @@ var SingletonsTemplateIDValues = [...]SingletonsTemplateID{
 	SingletonsTemplateIDVsSeekerClientSettings,
 	SingletonsTemplateIDVsSeekerScheduleSettings,
 	SingletonsTemplateIDWeatherBonusSettings,
-	SingletonsTemplateIDAvatarStoreFooterFlags,
-	SingletonsTemplateIDAvatarStoreSubcategoryFilteringFlags,
-	SingletonsTemplateIDImpressionTrackingSettings,
-	SingletonsTemplateIDStickerCategorySettings,
-	SingletonsTemplateIDUsernameSuggestionSettings,
 }

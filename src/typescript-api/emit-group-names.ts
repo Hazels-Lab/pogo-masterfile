@@ -1,4 +1,5 @@
 import type { Group } from "../group.ts";
+import { compareNatural } from "../helpers.ts";
 
 const SINGLETONS_KEY = "singletons";
 
@@ -15,7 +16,7 @@ export function emitGroupNames(groups: Map<string, Group>): string {
 
 	const names = multiEntry.map((g) => g.discriminator);
 	if (hasSingletons) names.push(SINGLETONS_KEY);
-	names.sort();
+	names.sort(compareNatural);
 
 	const arrayLines = names.map((n) => `\t"${n}",`).join("\n");
 

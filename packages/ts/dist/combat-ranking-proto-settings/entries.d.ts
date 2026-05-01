@@ -52,6 +52,218 @@ export type CombatRankingProtoSettingsSettings = S<
 		}
 	>
 >;
+export type CombatRankingProtoSettingsSettingsS8 = S<
+	CombatRankingProtoSettings<
+		"COMBAT_RANKING_SETTINGS_S8",
+		{
+			minRankToDisplayRating: 20;
+			minRatingRequired: 8;
+			rankLevel: [
+				{
+					rankLevel: 1;
+				},
+				{
+					additionalTotalBattlesRequired: 5;
+					rankLevel: 2;
+				},
+				{
+					additionalWinsRequired: 3;
+					rankLevel: 3;
+				},
+				{
+					additionalWinsRequired: 4;
+					rankLevel: 4;
+				},
+				{
+					additionalWinsRequired: 5;
+					rankLevel: 5;
+				},
+				{
+					additionalTotalBattlesRequired: 5;
+					rankLevel: 6;
+				},
+				{
+					additionalWinsRequired: 7;
+					rankLevel: 7;
+				},
+				{
+					additionalWinsRequired: 8;
+					rankLevel: 8;
+				},
+				{
+					additionalWinsRequired: 9;
+					rankLevel: 9;
+				},
+				{
+					additionalWinsRequired: 10;
+					rankLevel: 10;
+				},
+				{
+					additionalTotalBattlesRequired: 5;
+					rankLevel: 11;
+				},
+				{
+					additionalWinsRequired: 12;
+					rankLevel: 12;
+				},
+				{
+					additionalWinsRequired: 13;
+					rankLevel: 13;
+				},
+				{
+					additionalWinsRequired: 14;
+					rankLevel: 14;
+				},
+				{
+					additionalWinsRequired: 15;
+					rankLevel: 15;
+				},
+				{
+					additionalTotalBattlesRequired: 5;
+					rankLevel: 16;
+				},
+				{
+					additionalWinsRequired: 17;
+					rankLevel: 17;
+				},
+				{
+					additionalWinsRequired: 18;
+					rankLevel: 18;
+				},
+				{
+					additionalWinsRequired: 19;
+					rankLevel: 19;
+				},
+				{
+					additionalTotalBattlesRequired: 5;
+					rankLevel: 20;
+				},
+				{
+					minRatingRequired: 2000;
+					rankLevel: 21;
+				},
+				{
+					minRatingRequired: 2500;
+					rankLevel: 22;
+				},
+				{
+					minRatingRequired: 2750;
+					rankLevel: 23;
+				},
+				{
+					minRatingRequired: 3000;
+					rankLevel: 24;
+				},
+			];
+		}
+	>
+>;
+export type CombatRankingProtoSettingsSettingsS9 = S<
+	CombatRankingProtoSettings<
+		"COMBAT_RANKING_SETTINGS_S9",
+		{
+			minRankToDisplayRating: 20;
+			minRatingRequired: 9;
+			rankLevel: [
+				{
+					rankLevel: 1;
+				},
+				{
+					additionalTotalBattlesRequired: 5;
+					rankLevel: 2;
+				},
+				{
+					additionalWinsRequired: 3;
+					rankLevel: 3;
+				},
+				{
+					additionalWinsRequired: 4;
+					rankLevel: 4;
+				},
+				{
+					additionalWinsRequired: 5;
+					rankLevel: 5;
+				},
+				{
+					additionalTotalBattlesRequired: 5;
+					rankLevel: 6;
+				},
+				{
+					additionalWinsRequired: 7;
+					rankLevel: 7;
+				},
+				{
+					additionalWinsRequired: 8;
+					rankLevel: 8;
+				},
+				{
+					additionalWinsRequired: 9;
+					rankLevel: 9;
+				},
+				{
+					additionalWinsRequired: 10;
+					rankLevel: 10;
+				},
+				{
+					additionalTotalBattlesRequired: 5;
+					rankLevel: 11;
+				},
+				{
+					additionalWinsRequired: 12;
+					rankLevel: 12;
+				},
+				{
+					additionalWinsRequired: 13;
+					rankLevel: 13;
+				},
+				{
+					additionalWinsRequired: 14;
+					rankLevel: 14;
+				},
+				{
+					additionalWinsRequired: 15;
+					rankLevel: 15;
+				},
+				{
+					additionalTotalBattlesRequired: 5;
+					rankLevel: 16;
+				},
+				{
+					additionalWinsRequired: 17;
+					rankLevel: 17;
+				},
+				{
+					additionalWinsRequired: 18;
+					rankLevel: 18;
+				},
+				{
+					additionalWinsRequired: 19;
+					rankLevel: 19;
+				},
+				{
+					additionalTotalBattlesRequired: 5;
+					rankLevel: 20;
+				},
+				{
+					minRatingRequired: 2000;
+					rankLevel: 21;
+				},
+				{
+					minRatingRequired: 2500;
+					rankLevel: 22;
+				},
+				{
+					minRatingRequired: 2750;
+					rankLevel: 23;
+				},
+				{
+					minRatingRequired: 3000;
+					rankLevel: 24;
+				},
+			];
+		}
+	>
+>;
 export type CombatRankingProtoSettingsSettingsS10 = S<
 	CombatRankingProtoSettings<
 		"COMBAT_RANKING_SETTINGS_S10",
@@ -1944,221 +2156,11 @@ export type CombatRankingProtoSettingsSettingsS29 = S<
 		}
 	>
 >;
-export type CombatRankingProtoSettingsSettingsS8 = S<
-	CombatRankingProtoSettings<
-		"COMBAT_RANKING_SETTINGS_S8",
-		{
-			minRankToDisplayRating: 20;
-			minRatingRequired: 8;
-			rankLevel: [
-				{
-					rankLevel: 1;
-				},
-				{
-					additionalTotalBattlesRequired: 5;
-					rankLevel: 2;
-				},
-				{
-					additionalWinsRequired: 3;
-					rankLevel: 3;
-				},
-				{
-					additionalWinsRequired: 4;
-					rankLevel: 4;
-				},
-				{
-					additionalWinsRequired: 5;
-					rankLevel: 5;
-				},
-				{
-					additionalTotalBattlesRequired: 5;
-					rankLevel: 6;
-				},
-				{
-					additionalWinsRequired: 7;
-					rankLevel: 7;
-				},
-				{
-					additionalWinsRequired: 8;
-					rankLevel: 8;
-				},
-				{
-					additionalWinsRequired: 9;
-					rankLevel: 9;
-				},
-				{
-					additionalWinsRequired: 10;
-					rankLevel: 10;
-				},
-				{
-					additionalTotalBattlesRequired: 5;
-					rankLevel: 11;
-				},
-				{
-					additionalWinsRequired: 12;
-					rankLevel: 12;
-				},
-				{
-					additionalWinsRequired: 13;
-					rankLevel: 13;
-				},
-				{
-					additionalWinsRequired: 14;
-					rankLevel: 14;
-				},
-				{
-					additionalWinsRequired: 15;
-					rankLevel: 15;
-				},
-				{
-					additionalTotalBattlesRequired: 5;
-					rankLevel: 16;
-				},
-				{
-					additionalWinsRequired: 17;
-					rankLevel: 17;
-				},
-				{
-					additionalWinsRequired: 18;
-					rankLevel: 18;
-				},
-				{
-					additionalWinsRequired: 19;
-					rankLevel: 19;
-				},
-				{
-					additionalTotalBattlesRequired: 5;
-					rankLevel: 20;
-				},
-				{
-					minRatingRequired: 2000;
-					rankLevel: 21;
-				},
-				{
-					minRatingRequired: 2500;
-					rankLevel: 22;
-				},
-				{
-					minRatingRequired: 2750;
-					rankLevel: 23;
-				},
-				{
-					minRatingRequired: 3000;
-					rankLevel: 24;
-				},
-			];
-		}
-	>
->;
-export type CombatRankingProtoSettingsSettingsS9 = S<
-	CombatRankingProtoSettings<
-		"COMBAT_RANKING_SETTINGS_S9",
-		{
-			minRankToDisplayRating: 20;
-			minRatingRequired: 9;
-			rankLevel: [
-				{
-					rankLevel: 1;
-				},
-				{
-					additionalTotalBattlesRequired: 5;
-					rankLevel: 2;
-				},
-				{
-					additionalWinsRequired: 3;
-					rankLevel: 3;
-				},
-				{
-					additionalWinsRequired: 4;
-					rankLevel: 4;
-				},
-				{
-					additionalWinsRequired: 5;
-					rankLevel: 5;
-				},
-				{
-					additionalTotalBattlesRequired: 5;
-					rankLevel: 6;
-				},
-				{
-					additionalWinsRequired: 7;
-					rankLevel: 7;
-				},
-				{
-					additionalWinsRequired: 8;
-					rankLevel: 8;
-				},
-				{
-					additionalWinsRequired: 9;
-					rankLevel: 9;
-				},
-				{
-					additionalWinsRequired: 10;
-					rankLevel: 10;
-				},
-				{
-					additionalTotalBattlesRequired: 5;
-					rankLevel: 11;
-				},
-				{
-					additionalWinsRequired: 12;
-					rankLevel: 12;
-				},
-				{
-					additionalWinsRequired: 13;
-					rankLevel: 13;
-				},
-				{
-					additionalWinsRequired: 14;
-					rankLevel: 14;
-				},
-				{
-					additionalWinsRequired: 15;
-					rankLevel: 15;
-				},
-				{
-					additionalTotalBattlesRequired: 5;
-					rankLevel: 16;
-				},
-				{
-					additionalWinsRequired: 17;
-					rankLevel: 17;
-				},
-				{
-					additionalWinsRequired: 18;
-					rankLevel: 18;
-				},
-				{
-					additionalWinsRequired: 19;
-					rankLevel: 19;
-				},
-				{
-					additionalTotalBattlesRequired: 5;
-					rankLevel: 20;
-				},
-				{
-					minRatingRequired: 2000;
-					rankLevel: 21;
-				},
-				{
-					minRatingRequired: 2500;
-					rankLevel: 22;
-				},
-				{
-					minRatingRequired: 2750;
-					rankLevel: 23;
-				},
-				{
-					minRatingRequired: 3000;
-					rankLevel: 24;
-				},
-			];
-		}
-	>
->;
 
 export type CombatRankingProtoSettingsMasterfileEntry =
 	| CombatRankingProtoSettingsSettings
+	| CombatRankingProtoSettingsSettingsS8
+	| CombatRankingProtoSettingsSettingsS9
 	| CombatRankingProtoSettingsSettingsS10
 	| CombatRankingProtoSettingsSettingsS13
 	| CombatRankingProtoSettingsSettingsS14
@@ -2176,8 +2178,6 @@ export type CombatRankingProtoSettingsMasterfileEntry =
 	| CombatRankingProtoSettingsSettingsS26
 	| CombatRankingProtoSettingsSettingsS27
 	| CombatRankingProtoSettingsSettingsS28
-	| CombatRankingProtoSettingsSettingsS29
-	| CombatRankingProtoSettingsSettingsS8
-	| CombatRankingProtoSettingsSettingsS9;
+	| CombatRankingProtoSettingsSettingsS29;
 
 export type CombatRankingProtoSettingsTemplateID = CombatRankingProtoSettingsMasterfileEntry["templateId"];

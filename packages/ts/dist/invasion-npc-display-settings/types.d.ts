@@ -40,13 +40,13 @@ export interface InvasionNpcDisplaySettingsData {
 			| "AVATAR_m_gloves_gymleader_0"
 			| "AVATAR_m_gloves_swshuniformdragon";
 		avatarHair?:
-			| "AVATAR_f_hair_default_19"
 			| "AVATAR_f_hair_default_4"
 			| "AVATAR_f_hair_default_7"
 			| "AVATAR_f_hair_default_8"
-			| "AVATAR_m_hair_default_10"
+			| "AVATAR_f_hair_default_19"
 			| "AVATAR_m_hair_default_2"
-			| "AVATAR_m_hair_default_5";
+			| "AVATAR_m_hair_default_5"
+			| "AVATAR_m_hair_default_10";
 		avatarHat?:
 			| "AVATAR_f_hat_laprasbandana"
 			| "AVATAR_f_hat_movie2020"

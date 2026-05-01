@@ -20,13 +20,6 @@ const (
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixelproxl       SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_GOOGLEPIXELPROXL"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowLgelmV600              SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_LGELM_V600"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowMotorolamotorolaedge40 SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_MOTOROLAMOTOROLAEDGE40"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowOnepluscph2399         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_ONEPLUSCPH2399"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowOnepluscph2449         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_ONEPLUSCPH2449"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusdn2103          SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_ONEPLUSDN2103"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowOnepluskb2003          SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_ONEPLUSKB2003"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusle2113          SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_ONEPLUSLE2113"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusle2123          SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_ONEPLUSLE2123"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusne2213          SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_ONEPLUSNE2213"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusCph2413         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_ONEPLUS_CPH2413"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusCph2415         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_ONEPLUS_CPH2415"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusCph2417         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_ONEPLUS_CPH2417"
@@ -50,9 +43,14 @@ const (
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusNe2217          SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_ONEPLUS_NE2217"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusPhb110          SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_ONEPLUS_PHB110"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusPjd110          SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_ONEPLUS_PJD110"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowOnepluscph2399         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_ONEPLUSCPH2399"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowOnepluscph2449         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_ONEPLUSCPH2449"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusdn2103          SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_ONEPLUSDN2103"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowOnepluskb2003          SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_ONEPLUSKB2003"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusle2113          SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_ONEPLUSLE2113"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusle2123          SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_ONEPLUSLE2123"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusne2213          SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_ONEPLUSNE2213"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowOppocph2359            SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_OPPOCPH2359"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungscg09           SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSCG09"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungscg13           SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSCG13"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsc51a           SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSC_51A"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsc51b           SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSC_51B"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsc51c           SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSC_51C"
@@ -60,6 +58,8 @@ const (
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsc52c           SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSC_52C"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsc52d           SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSC_52D"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungscA528b         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSC_A528B"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungscg09           SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSCG09"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungscg13           SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSCG13"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmF711b         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_F711B"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmF711n         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_F711N"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmF711u         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_F711U"
@@ -105,7 +105,6 @@ const (
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG990u         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_G990U"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG990u2        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_G990U2"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG990w2        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_G990W2"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG9910         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_G9910"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG991b         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_G991B"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG991n         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_G991N"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG991u         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_G991U"
@@ -119,16 +118,17 @@ const (
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG998n         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_G998N"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG998u         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_G998U"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG998u1        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_G998U1"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG9910         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_G9910"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN970u         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_N970U"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN980f         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_N980F"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN981b         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_N981B"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN981n         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_N981N"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN981u         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_N981U"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN9860         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_N9860"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN986b         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_N986B"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN986n         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_N986N"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN986u         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_N986U"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN986u1        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_N986U1"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN9860         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_N9860"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS711b         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S711B"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS711n         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S711N"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS711u         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S711U"
@@ -139,13 +139,11 @@ const (
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS901u         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S901U"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS901u1        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S901U1"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS901w         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S901W"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9060         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9060"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS906b         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S906B"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS906e         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S906E"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS906n         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S906N"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS906u         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S906U"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS906u1        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S906U1"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9080         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9080"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS908b         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S908B"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS908e         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S908E"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS908n         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S908N"
@@ -157,12 +155,10 @@ const (
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS911u         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S911U"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS911u1        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S911U1"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS911w         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S911W"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9160         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9160"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS916b         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S916B"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS916n         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S916N"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS916u         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S916U"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS916u1        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S916U1"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9180         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9180"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS918b         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S918B"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS918n         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S918N"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS918u         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S918U"
@@ -170,23 +166,18 @@ const (
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS918w         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S918W"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS921b         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S921B"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS921n         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S921N"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9260         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9260"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS926u         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S926U"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9280         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9280"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS928b         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S928B"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS928n         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S928N"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS928u         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S928U"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS928u1        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S928U1"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9060         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9060"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9080         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9080"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9160         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9160"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9180         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9180"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9260         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9260"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9280         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SAMSUNGSM_S9280"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSharpsh51b             SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SHARPSH_51B"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonysog02              SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONYSOG02"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonysog05              SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONYSOG05"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonysog06              SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONYSOG06"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso51a              SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONYSO_51A"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso51b              SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONYSO_51B"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso51c              SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONYSO_51C"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso52a              SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONYSO_52A"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso53b              SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONYSO_53B"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso54c              SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONYSO_54C"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyA002so             SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONY_A002SO"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyA101so             SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONY_A101SO"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyA103so             SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONY_A103SO"
@@ -203,6 +194,8 @@ const (
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXperia5V           SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONY_XPERIA_5_V"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXperiaPro          SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONY_XPERIA_PRO"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXperiaProi         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONY_XPERIA_PROI"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXqDe44             SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONY_XQ_DE44"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXqDq44             SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONY_XQ_DQ44"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXqaq52             SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONY_XQAQ52"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXqaq62             SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONY_XQAQ62"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXqas42             SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONY_XQAS42"
@@ -227,17 +220,24 @@ const (
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXqct54             SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONY_XQCT54"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXqct62             SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONY_XQCT62"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXqct72             SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONY_XQCT72"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXqDe44             SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONY_XQ_DE44"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXqDq44             SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONY_XQ_DQ44"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi21061110ag       SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_XIAOMI21061110AG"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso51a              SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONYSO_51A"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso51b              SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONYSO_51B"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso51c              SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONYSO_51C"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso52a              SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONYSO_52A"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso53b              SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONYSO_53B"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso54c              SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONYSO_54C"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonysog02              SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONYSOG02"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonysog05              SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONYSOG05"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonysog06              SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_SONYSOG06"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi23049pcd8g       SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_XIAOMI23049PCD8G"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi2107113sg        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_XIAOMI2107113SG"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi2201123g         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_XIAOMI2201123G"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi21061110ag       SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_XIAOMI21061110AG"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi21081111rg       SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_XIAOMI21081111RG"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi21121210g        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_XIAOMI21121210G"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi2201123g         SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_XIAOMI2201123G"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi22021211rg       SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_XIAOMI22021211RG"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi22041216g        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_XIAOMI22041216G"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi22081212ug       SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_XIAOMI22081212UG"
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi23049pcd8g       SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_XIAOMI23049PCD8G"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomim2007j3sg        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_XIAOMIM2007J3SG"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomim2007j3sy        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_XIAOMIM2007J3SY"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomim2012k11ag       SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_XIAOMIM2012K11AG"
@@ -273,13 +273,6 @@ var SettingsOverrideRuleTemplateIDValues = [...]SettingsOverrideRuleTemplateID{
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixelproxl,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowLgelmV600,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowMotorolamotorolaedge40,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowOnepluscph2399,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowOnepluscph2449,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusdn2103,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowOnepluskb2003,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusle2113,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusle2123,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusne2213,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusCph2413,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusCph2415,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusCph2417,
@@ -303,9 +296,14 @@ var SettingsOverrideRuleTemplateIDValues = [...]SettingsOverrideRuleTemplateID{
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusNe2217,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusPhb110,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusPjd110,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowOnepluscph2399,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowOnepluscph2449,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusdn2103,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowOnepluskb2003,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusle2113,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusle2123,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowOneplusne2213,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowOppocph2359,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungscg09,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungscg13,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsc51a,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsc51b,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsc51c,
@@ -313,6 +311,8 @@ var SettingsOverrideRuleTemplateIDValues = [...]SettingsOverrideRuleTemplateID{
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsc52c,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsc52d,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungscA528b,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungscg09,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungscg13,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmF711b,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmF711n,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmF711u,
@@ -358,7 +358,6 @@ var SettingsOverrideRuleTemplateIDValues = [...]SettingsOverrideRuleTemplateID{
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG990u,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG990u2,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG990w2,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG9910,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG991b,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG991n,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG991u,
@@ -372,16 +371,17 @@ var SettingsOverrideRuleTemplateIDValues = [...]SettingsOverrideRuleTemplateID{
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG998n,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG998u,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG998u1,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmG9910,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN970u,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN980f,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN981b,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN981n,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN981u,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN9860,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN986b,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN986n,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN986u,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN986u1,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmN9860,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS711b,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS711n,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS711u,
@@ -392,13 +392,11 @@ var SettingsOverrideRuleTemplateIDValues = [...]SettingsOverrideRuleTemplateID{
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS901u,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS901u1,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS901w,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9060,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS906b,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS906e,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS906n,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS906u,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS906u1,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9080,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS908b,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS908e,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS908n,
@@ -410,12 +408,10 @@ var SettingsOverrideRuleTemplateIDValues = [...]SettingsOverrideRuleTemplateID{
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS911u,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS911u1,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS911w,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9160,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS916b,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS916n,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS916u,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS916u1,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9180,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS918b,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS918n,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS918u,
@@ -423,23 +419,18 @@ var SettingsOverrideRuleTemplateIDValues = [...]SettingsOverrideRuleTemplateID{
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS918w,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS921b,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS921n,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9260,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS926u,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9280,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS928b,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS928n,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS928u,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS928u1,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9060,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9080,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9160,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9180,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9260,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSamsungsmS9280,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSharpsh51b,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonysog02,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonysog05,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonysog06,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso51a,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso51b,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso51c,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso52a,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso53b,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso54c,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyA002so,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyA101so,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyA103so,
@@ -456,6 +447,8 @@ var SettingsOverrideRuleTemplateIDValues = [...]SettingsOverrideRuleTemplateID{
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXperia5V,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXperiaPro,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXperiaProi,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXqDe44,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXqDq44,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXqaq52,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXqaq62,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXqas42,
@@ -480,17 +473,24 @@ var SettingsOverrideRuleTemplateIDValues = [...]SettingsOverrideRuleTemplateID{
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXqct54,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXqct62,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXqct72,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXqDe44,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyXqDq44,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi21061110ag,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso51a,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso51b,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso51c,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso52a,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso53b,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonyso54c,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonysog02,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonysog05,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowSonysog06,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi23049pcd8g,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi2107113sg,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi2201123g,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi21061110ag,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi21081111rg,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi21121210g,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi2201123g,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi22021211rg,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi22041216g,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi22081212ug,
-	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomi23049pcd8g,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomim2007j3sg,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomim2007j3sy,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowXiaomim2012k11ag,

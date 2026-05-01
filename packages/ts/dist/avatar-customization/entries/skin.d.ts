@@ -31,34 +31,6 @@ export type AvatarCustomizationFSkin1 = S<
 		}
 	>
 >;
-export type AvatarCustomizationFSkin10 = S<
-	AvatarCustomization<
-		"AVATAR_f_skin_10",
-		{
-			assetName: "f_skin_10";
-			avatarType: "PLAYER_AVATAR_FEMALE";
-			enabled: true;
-			groupName: "group_skin";
-			slot: ["SKIN"];
-			sortOrder: 100351;
-			unlockType: "DEFAULT";
-		}
-	>
->;
-export type AvatarCustomizationFSkin11 = S<
-	AvatarCustomization<
-		"AVATAR_f_skin_11",
-		{
-			assetName: "f_skin_11";
-			avatarType: "PLAYER_AVATAR_FEMALE";
-			enabled: true;
-			groupName: "group_skin";
-			slot: ["SKIN"];
-			sortOrder: 100350;
-			unlockType: "DEFAULT";
-		}
-	>
->;
 export type AvatarCustomizationFSkin2 = S<
 	AvatarCustomization<
 		"AVATAR_f_skin_2",
@@ -171,6 +143,34 @@ export type AvatarCustomizationFSkin9 = S<
 		}
 	>
 >;
+export type AvatarCustomizationFSkin10 = S<
+	AvatarCustomization<
+		"AVATAR_f_skin_10",
+		{
+			assetName: "f_skin_10";
+			avatarType: "PLAYER_AVATAR_FEMALE";
+			enabled: true;
+			groupName: "group_skin";
+			slot: ["SKIN"];
+			sortOrder: 100351;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
+export type AvatarCustomizationFSkin11 = S<
+	AvatarCustomization<
+		"AVATAR_f_skin_11",
+		{
+			assetName: "f_skin_11";
+			avatarType: "PLAYER_AVATAR_FEMALE";
+			enabled: true;
+			groupName: "group_skin";
+			slot: ["SKIN"];
+			sortOrder: 100350;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
 export type AvatarCustomizationMSkin0 = S<
 	AvatarCustomization<
 		"AVATAR_m_skin_0",
@@ -193,32 +193,6 @@ export type AvatarCustomizationMSkin1 = S<
 			groupName: "group_skin";
 			slot: ["SKIN"];
 			sortOrder: 100015;
-			unlockType: "DEFAULT";
-		}
-	>
->;
-export type AvatarCustomizationMSkin10 = S<
-	AvatarCustomization<
-		"AVATAR_m_skin_10",
-		{
-			assetName: "m_skin_10";
-			enabled: true;
-			groupName: "group_skin";
-			slot: ["SKIN"];
-			sortOrder: 100007;
-			unlockType: "DEFAULT";
-		}
-	>
->;
-export type AvatarCustomizationMSkin11 = S<
-	AvatarCustomization<
-		"AVATAR_m_skin_11",
-		{
-			assetName: "m_skin_11";
-			enabled: true;
-			groupName: "group_skin";
-			slot: ["SKIN"];
-			sortOrder: 100006;
 			unlockType: "DEFAULT";
 		}
 	>
@@ -327,12 +301,36 @@ export type AvatarCustomizationMSkin9 = S<
 		}
 	>
 >;
+export type AvatarCustomizationMSkin10 = S<
+	AvatarCustomization<
+		"AVATAR_m_skin_10",
+		{
+			assetName: "m_skin_10";
+			enabled: true;
+			groupName: "group_skin";
+			slot: ["SKIN"];
+			sortOrder: 100007;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
+export type AvatarCustomizationMSkin11 = S<
+	AvatarCustomization<
+		"AVATAR_m_skin_11",
+		{
+			assetName: "m_skin_11";
+			enabled: true;
+			groupName: "group_skin";
+			slot: ["SKIN"];
+			sortOrder: 100006;
+			unlockType: "DEFAULT";
+		}
+	>
+>;
 
 export type AvatarCustomizationSkinMasterfileEntry =
 	| AvatarCustomizationFSkin0
 	| AvatarCustomizationFSkin1
-	| AvatarCustomizationFSkin10
-	| AvatarCustomizationFSkin11
 	| AvatarCustomizationFSkin2
 	| AvatarCustomizationFSkin3
 	| AvatarCustomizationFSkin4
@@ -341,10 +339,10 @@ export type AvatarCustomizationSkinMasterfileEntry =
 	| AvatarCustomizationFSkin7
 	| AvatarCustomizationFSkin8
 	| AvatarCustomizationFSkin9
+	| AvatarCustomizationFSkin10
+	| AvatarCustomizationFSkin11
 	| AvatarCustomizationMSkin0
 	| AvatarCustomizationMSkin1
-	| AvatarCustomizationMSkin10
-	| AvatarCustomizationMSkin11
 	| AvatarCustomizationMSkin2
 	| AvatarCustomizationMSkin3
 	| AvatarCustomizationMSkin4
@@ -352,4 +350,6 @@ export type AvatarCustomizationSkinMasterfileEntry =
 	| AvatarCustomizationMSkin6
 	| AvatarCustomizationMSkin7
 	| AvatarCustomizationMSkin8
-	| AvatarCustomizationMSkin9;
+	| AvatarCustomizationMSkin9
+	| AvatarCustomizationMSkin10
+	| AvatarCustomizationMSkin11;

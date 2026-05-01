@@ -4270,6 +4270,58 @@ export type CombatLeagueVsSeekerGreatCatchGofest2022 = S<
 		}
 	>
 >;
+export type CombatLeagueVsSeekerGreatCatchS8 = S<
+	CombatLeague<
+		"COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S8",
+		{
+			badgeType: "BADGE_GREAT_LEAGUE";
+			bannedPokemon: [
+				"DITTO",
+				"SHEDINJA",
+				"MEW",
+				"CELEBI",
+				"JIRACHI",
+				"DEOXYS",
+				"DARKRAI",
+				"VICTINI",
+				"MELOETTA",
+				"GENESECT",
+				"HOOPA",
+				"MELTAN",
+				"MELMETAL",
+				"ZARUDE",
+			];
+			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
+			iconUrl: "https://storage.googleapis.com/prod-public-images/premierball_sprite.png";
+			leagueType: "PREMIER";
+			pokemonCondition: [
+				{
+					type: "WITH_POKEMON_CP_LIMIT";
+					withPokemonCpLimit: {
+						maxCp: 1500;
+					};
+				},
+				{
+					type: "WITH_UNIQUE_POKEMON";
+				},
+				{
+					pokemonCaughtTimestamp: {
+						afterTimestamp: "1661976000000";
+						beforeTimestamp: "1669928400000";
+					};
+					type: "POKEMON_CAUGHT_TIMESTAMP";
+				},
+			];
+			title: "gofest_2022_catch_cup_title";
+			unlockCondition: [
+				{
+					minPokemonCount: 3;
+					type: "WITH_UNIQUE_POKEMON";
+				},
+			];
+		}
+	>
+>;
 export type CombatLeagueVsSeekerGreatCatchS13 = S<
 	CombatLeague<
 		"COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S13",
@@ -4662,58 +4714,6 @@ export type CombatLeagueVsSeekerGreatCatchS22 = S<
 				},
 			];
 			title: "catch_cup_s13_title";
-			unlockCondition: [
-				{
-					minPokemonCount: 3;
-					type: "WITH_UNIQUE_POKEMON";
-				},
-			];
-		}
-	>
->;
-export type CombatLeagueVsSeekerGreatCatchS8 = S<
-	CombatLeague<
-		"COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S8",
-		{
-			badgeType: "BADGE_GREAT_LEAGUE";
-			bannedPokemon: [
-				"DITTO",
-				"SHEDINJA",
-				"MEW",
-				"CELEBI",
-				"JIRACHI",
-				"DEOXYS",
-				"DARKRAI",
-				"VICTINI",
-				"MELOETTA",
-				"GENESECT",
-				"HOOPA",
-				"MELTAN",
-				"MELMETAL",
-				"ZARUDE",
-			];
-			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
-			iconUrl: "https://storage.googleapis.com/prod-public-images/premierball_sprite.png";
-			leagueType: "PREMIER";
-			pokemonCondition: [
-				{
-					type: "WITH_POKEMON_CP_LIMIT";
-					withPokemonCpLimit: {
-						maxCp: 1500;
-					};
-				},
-				{
-					type: "WITH_UNIQUE_POKEMON";
-				},
-				{
-					pokemonCaughtTimestamp: {
-						afterTimestamp: "1661976000000";
-						beforeTimestamp: "1669928400000";
-					};
-					type: "POKEMON_CAUGHT_TIMESTAMP";
-				},
-			];
-			title: "gofest_2022_catch_cup_title";
 			unlockCondition: [
 				{
 					minPokemonCount: 3;
@@ -17096,6 +17096,7 @@ export type CombatLeagueVsMasterfileEntry =
 	| CombatLeagueVsSeekerGreatBidoof
 	| CombatLeagueVsSeekerGreatCatch
 	| CombatLeagueVsSeekerGreatCatchGofest2022
+	| CombatLeagueVsSeekerGreatCatchS8
 	| CombatLeagueVsSeekerGreatCatchS13
 	| CombatLeagueVsSeekerGreatCatchS14
 	| CombatLeagueVsSeekerGreatCatchS15
@@ -17104,7 +17105,6 @@ export type CombatLeagueVsMasterfileEntry =
 	| CombatLeagueVsSeekerGreatCatchS19
 	| CombatLeagueVsSeekerGreatCatchS20
 	| CombatLeagueVsSeekerGreatCatchS22
-	| CombatLeagueVsSeekerGreatCatchS8
 	| CombatLeagueVsSeekerGreatCatchSeason11
 	| CombatLeagueVsSeekerGreatChampionshipSeries
 	| CombatLeagueVsSeekerGreatElectric

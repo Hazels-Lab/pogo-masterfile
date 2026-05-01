@@ -883,39 +883,6 @@ export type StickerMetadataGrubbin4 = S<
 		}
 	>
 >;
-export type StickerMetadataHalloween2022Pumpkaboo = S<
-	StickerMetadata<
-		"STICKER_HALLOWEEN2022_PUMPKABOO",
-		{
-			category: ["Pokemon"];
-			pokemonId: "PUMPKABOO";
-			regionId: 5;
-			releaseDate: 20221020;
-		}
-	>
->;
-export type StickerMetadataHalloween2025Noibat = S<
-	StickerMetadata<
-		"STICKER_HALLOWEEN2025_NOIBAT",
-		{
-			category: ["Pokemon"];
-			pokemonId: "NOIBAT";
-			regionId: 5;
-			releaseDate: 20251021;
-		}
-	>
->;
-export type StickerMetadataHalloween2025Teddiursa = S<
-	StickerMetadata<
-		"STICKER_HALLOWEEN2025_TEDDIURSA",
-		{
-			category: ["Pokemon"];
-			pokemonId: "TEDDIURSA";
-			regionId: 1;
-			releaseDate: 20251021;
-		}
-	>
->;
 export type StickerMetadataHalloween23Greavard = S<
 	StickerMetadata<
 		"STICKER_HALLOWEEN23_GREAVARD",
@@ -968,6 +935,39 @@ export type StickerMetadataHalloween24Rowlet = S<
 			pokemonId: "ROWLET";
 			regionId: 6;
 			releaseDate: 20241009;
+		}
+	>
+>;
+export type StickerMetadataHalloween2022Pumpkaboo = S<
+	StickerMetadata<
+		"STICKER_HALLOWEEN2022_PUMPKABOO",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PUMPKABOO";
+			regionId: 5;
+			releaseDate: 20221020;
+		}
+	>
+>;
+export type StickerMetadataHalloween2025Noibat = S<
+	StickerMetadata<
+		"STICKER_HALLOWEEN2025_NOIBAT",
+		{
+			category: ["Pokemon"];
+			pokemonId: "NOIBAT";
+			regionId: 5;
+			releaseDate: 20251021;
+		}
+	>
+>;
+export type StickerMetadataHalloween2025Teddiursa = S<
+	StickerMetadata<
+		"STICKER_HALLOWEEN2025_TEDDIURSA",
+		{
+			category: ["Pokemon"];
+			pokemonId: "TEDDIURSA";
+			regionId: 1;
+			releaseDate: 20251021;
 		}
 	>
 >;
@@ -2192,6 +2192,17 @@ export type StickerMetadataSummer1 = S<
 		}
 	>
 >;
+export type StickerMetadataSummer6 = S<
+	StickerMetadata<
+		"STICKER_SUMMER_6",
+		{
+			category: ["Pokemon"];
+			pokemonId: "SUNFLORA";
+			regionId: 1;
+			releaseDate: 20220601;
+		}
+	>
+>;
 export type StickerMetadataSummer2023Clamperl = S<
 	StickerMetadata<
 		"STICKER_SUMMER_2023_CLAMPERL",
@@ -2332,17 +2343,6 @@ export type StickerMetadataSummer20254 = S<
 			pokemonId: "WIGLETT";
 			regionId: 1001;
 			releaseDate: 20250603;
-		}
-	>
->;
-export type StickerMetadataSummer6 = S<
-	StickerMetadata<
-		"STICKER_SUMMER_6",
-		{
-			category: ["Pokemon"];
-			pokemonId: "SUNFLORA";
-			regionId: 1;
-			releaseDate: 20220601;
 		}
 	>
 >;
@@ -2923,14 +2923,14 @@ export type StickerMetadataPokemonIdRegionIdReleaseDateMasterfileEntry =
 	| StickerMetadataGrubbin2
 	| StickerMetadataGrubbin3
 	| StickerMetadataGrubbin4
-	| StickerMetadataHalloween2022Pumpkaboo
-	| StickerMetadataHalloween2025Noibat
-	| StickerMetadataHalloween2025Teddiursa
 	| StickerMetadataHalloween23Greavard
 	| StickerMetadataHalloween23Misdreavus
 	| StickerMetadataHalloween23Phantump
 	| StickerMetadataHalloween24Froakie
 	| StickerMetadataHalloween24Rowlet
+	| StickerMetadataHalloween2022Pumpkaboo
+	| StickerMetadataHalloween2025Noibat
+	| StickerMetadataHalloween2025Teddiursa
 	| StickerMetadataHaruCherrim
 	| StickerMetadataHaruKireihana
 	| StickerMetadataHaruLalantes
@@ -3042,6 +3042,7 @@ export type StickerMetadataPokemonIdRegionIdReleaseDateMasterfileEntry =
 	| StickerMetadataSpring20263
 	| StickerMetadataSpring20264
 	| StickerMetadataSummer1
+	| StickerMetadataSummer6
 	| StickerMetadataSummer2023Clamperl
 	| StickerMetadataSummer2023Ledian
 	| StickerMetadataSummer2023Sawsbuck
@@ -3055,7 +3056,6 @@ export type StickerMetadataPokemonIdRegionIdReleaseDateMasterfileEntry =
 	| StickerMetadataSummer20252
 	| StickerMetadataSummer20253
 	| StickerMetadataSummer20254
-	| StickerMetadataSummer6
 	| StickerMetadataTeddiursa1
 	| StickerMetadataTeddiursa2
 	| StickerMetadataTeddiursa3

@@ -5,252 +5,46 @@ package event_pass_tier_settings
 type EventPassTierSettingsTemplateID string
 
 const (
-	EventPassTierSettingsTemplateIDEventPassApril2026Season100Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_100_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season100Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_100_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season101Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_101_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season101Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_101_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season102Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_102_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season102Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_102_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season103Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_103_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season103Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_103_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season104Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_104_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season104Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_104_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season105Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_105_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season105Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_105_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season106Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_106_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season106Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_106_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season107Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_107_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season107Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_107_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season108Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_108_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season108Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_108_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season109Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_109_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season109Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_109_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season10Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_10_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season10Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_10_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season110Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_110_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season110Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_110_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season111Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_111_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season111Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_111_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season112Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_112_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season112Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_112_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season113Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_113_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season113Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_113_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season114Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_114_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season114Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_114_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season115Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_115_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season115Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_115_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season116Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_116_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season116Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_116_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season117Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_117_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season117Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_117_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season118Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_118_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season118Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_118_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season119Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_119_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season119Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_119_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season11Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_11_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season11Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_11_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season120Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_120_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season120Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_120_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season121Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_121_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season121Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_121_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season122Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_122_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season122Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_122_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season123Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_123_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season123Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_123_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season124Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_124_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season124Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_124_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season125Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_125_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season125Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_125_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season126Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_126_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season126Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_126_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season127Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_127_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season127Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_127_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season128Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_128_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season128Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_128_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season129Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_129_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season129Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_129_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season12Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_12_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season12Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_12_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season130Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_130_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season130Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_130_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season131Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_131_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season131Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_131_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season132Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_132_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season132Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_132_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season133Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_133_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season133Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_133_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season134Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_134_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season134Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_134_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season135Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_135_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season135Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_135_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season136Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_136_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season136Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_136_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season137Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_137_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season137Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_137_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season138Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_138_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season138Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_138_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season139Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_139_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season139Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_139_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season13Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_13_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season13Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_13_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season140Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_140_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season140Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_140_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season141Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_141_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season141Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_141_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season142Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_142_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season142Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_142_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season143Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_143_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season143Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_143_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season144Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_144_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season144Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_144_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season145Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_145_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season145Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_145_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season146Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_146_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season146Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_146_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season147Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_147_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season147Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_147_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season148Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_148_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season148Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_148_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season149Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_149_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season149Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_149_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season14Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_14_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season14Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_14_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season150Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_150_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season150Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_150_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season151Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_151_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season151Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_151_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season152Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_152_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season152Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_152_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season153Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_153_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season153Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_153_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season154Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_154_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season154Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_154_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season155Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_155_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season155Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_155_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season156Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_156_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season156Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_156_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season157Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_157_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season157Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_157_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season158Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_158_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season158Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_158_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season159Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_159_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season159Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_159_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season15Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_15_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season15Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_15_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season160Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_160_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season160Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_160_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season161Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_161_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season161Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_161_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season162Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_162_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season162Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_162_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season163Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_163_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season163Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_163_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season164Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_164_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season164Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_164_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season165Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_165_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season165Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_165_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season166Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_166_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season166Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_166_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season167Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_167_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season167Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_167_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season168Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_168_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season168Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_168_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season169Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_169_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season169Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_169_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season16Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_16_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season16Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_16_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season170Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_170_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season170Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_170_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season171Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_171_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season171Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_171_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season172Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_172_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season172Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_172_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season173Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_173_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season173Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_173_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season174Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_174_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season174Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_174_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season175Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_175_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season175Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_175_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season176Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_176_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season176Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_176_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season177Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_177_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season177Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_177_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season178Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_178_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season178Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_178_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season179Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_179_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season179Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_179_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season17Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_17_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season17Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_17_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season180Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_180_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season180Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_180_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season181Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_181_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season181Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_181_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season182Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_182_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season182Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_182_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season183Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_183_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season183Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_183_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season184Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_184_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season184Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_184_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season185Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_185_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season185Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_185_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season186Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_186_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season186Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_186_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season187Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_187_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season187Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_187_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season188Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_188_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season188Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_188_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season189Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_189_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season189Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_189_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season18Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_18_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season18Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_18_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season190Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_190_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season190Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_190_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season191Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_191_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season191Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_191_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season192Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_192_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season192Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_192_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season193Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_193_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season193Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_193_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season194Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_194_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season194Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_194_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season195Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_195_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season195Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_195_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season196Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_196_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season196Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_196_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season197Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_197_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season197Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_197_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season198Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_198_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season198Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_198_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season199Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_199_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season199Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_199_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season19Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_19_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season19Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_19_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season1Free             EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_1_FREE"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season1Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_1_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season200Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_200_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season200Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_200_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season201Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_201_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season201Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_201_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season202Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_202_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season202Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_202_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season203Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_203_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season203Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_203_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season204Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_204_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season204Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_204_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season205Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_205_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season205Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_205_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season206Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_206_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season206Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_206_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season207Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_207_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season207Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_207_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season208Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_208_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season208Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_208_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season209Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_209_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season209Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_209_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season2Free             EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_2_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season2Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_2_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season3Free             EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_3_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season3Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_3_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season4Free             EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_4_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season4Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_4_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season5Free             EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_5_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season5Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_5_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season6Free             EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_6_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season6Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_6_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season7Free             EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_7_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season7Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_7_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season8Free             EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_8_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season8Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_8_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season9Free             EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_9_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season9Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_9_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season10Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_10_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season10Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_10_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season11Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_11_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season11Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_11_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season12Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_12_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season12Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_12_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season13Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_13_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season13Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_13_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season14Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_14_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season14Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_14_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season15Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_15_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season15Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_15_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season16Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_16_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season16Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_16_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season17Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_17_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season17Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_17_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season18Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_18_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season18Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_18_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season19Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_19_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season19Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_19_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season20Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_20_FREE"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season20Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_20_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season210Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_210_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season210Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_210_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season21Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_21_FREE"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season21Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_21_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season22Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_22_FREE"
@@ -269,8 +63,6 @@ const (
 	EventPassTierSettingsTemplateIDEventPassApril2026Season28Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_28_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season29Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_29_FREE"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season29Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_29_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season2Free             EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_2_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season2Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_2_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season30Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_30_FREE"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season30Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_30_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season31Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_31_FREE"
@@ -291,8 +83,6 @@ const (
 	EventPassTierSettingsTemplateIDEventPassApril2026Season38Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_38_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season39Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_39_FREE"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season39Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_39_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season3Free             EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_3_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season3Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_3_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season40Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_40_FREE"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season40Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_40_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season41Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_41_FREE"
@@ -313,8 +103,6 @@ const (
 	EventPassTierSettingsTemplateIDEventPassApril2026Season48Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_48_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season49Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_49_FREE"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season49Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_49_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season4Free             EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_4_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season4Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_4_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season50Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_50_FREE"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season50Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_50_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season51Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_51_FREE"
@@ -335,8 +123,6 @@ const (
 	EventPassTierSettingsTemplateIDEventPassApril2026Season58Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_58_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season59Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_59_FREE"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season59Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_59_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season5Free             EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_5_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season5Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_5_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season60Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_60_FREE"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season60Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_60_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season61Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_61_FREE"
@@ -357,8 +143,6 @@ const (
 	EventPassTierSettingsTemplateIDEventPassApril2026Season68Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_68_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season69Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_69_FREE"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season69Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_69_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season6Free             EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_6_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season6Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_6_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season70Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_70_FREE"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season70Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_70_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season71Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_71_FREE"
@@ -379,8 +163,6 @@ const (
 	EventPassTierSettingsTemplateIDEventPassApril2026Season78Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_78_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season79Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_79_FREE"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season79Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_79_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season7Free             EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_7_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season7Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_7_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season80Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_80_FREE"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season80Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_80_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season81Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_81_FREE"
@@ -401,8 +183,6 @@ const (
 	EventPassTierSettingsTemplateIDEventPassApril2026Season88Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_88_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season89Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_89_FREE"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season89Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_89_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season8Free             EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_8_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season8Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_8_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season90Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_90_FREE"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season90Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_90_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season91Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_91_FREE"
@@ -423,9 +203,246 @@ const (
 	EventPassTierSettingsTemplateIDEventPassApril2026Season98Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_98_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season99Free            EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_99_FREE"
 	EventPassTierSettingsTemplateIDEventPassApril2026Season99Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_99_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season9Free             EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_9_FREE"
-	EventPassTierSettingsTemplateIDEventPassApril2026Season9Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_9_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event100Free   EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_100_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season100Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_100_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season100Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_100_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season101Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_101_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season101Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_101_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season102Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_102_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season102Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_102_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season103Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_103_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season103Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_103_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season104Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_104_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season104Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_104_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season105Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_105_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season105Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_105_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season106Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_106_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season106Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_106_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season107Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_107_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season107Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_107_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season108Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_108_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season108Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_108_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season109Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_109_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season109Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_109_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season110Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_110_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season110Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_110_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season111Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_111_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season111Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_111_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season112Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_112_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season112Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_112_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season113Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_113_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season113Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_113_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season114Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_114_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season114Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_114_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season115Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_115_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season115Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_115_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season116Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_116_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season116Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_116_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season117Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_117_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season117Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_117_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season118Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_118_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season118Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_118_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season119Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_119_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season119Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_119_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season120Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_120_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season120Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_120_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season121Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_121_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season121Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_121_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season122Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_122_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season122Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_122_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season123Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_123_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season123Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_123_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season124Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_124_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season124Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_124_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season125Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_125_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season125Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_125_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season126Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_126_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season126Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_126_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season127Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_127_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season127Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_127_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season128Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_128_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season128Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_128_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season129Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_129_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season129Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_129_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season130Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_130_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season130Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_130_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season131Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_131_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season131Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_131_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season132Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_132_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season132Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_132_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season133Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_133_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season133Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_133_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season134Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_134_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season134Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_134_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season135Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_135_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season135Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_135_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season136Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_136_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season136Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_136_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season137Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_137_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season137Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_137_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season138Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_138_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season138Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_138_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season139Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_139_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season139Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_139_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season140Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_140_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season140Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_140_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season141Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_141_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season141Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_141_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season142Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_142_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season142Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_142_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season143Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_143_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season143Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_143_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season144Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_144_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season144Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_144_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season145Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_145_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season145Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_145_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season146Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_146_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season146Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_146_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season147Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_147_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season147Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_147_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season148Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_148_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season148Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_148_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season149Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_149_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season149Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_149_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season150Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_150_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season150Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_150_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season151Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_151_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season151Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_151_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season152Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_152_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season152Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_152_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season153Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_153_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season153Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_153_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season154Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_154_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season154Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_154_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season155Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_155_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season155Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_155_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season156Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_156_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season156Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_156_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season157Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_157_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season157Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_157_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season158Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_158_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season158Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_158_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season159Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_159_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season159Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_159_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season160Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_160_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season160Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_160_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season161Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_161_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season161Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_161_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season162Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_162_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season162Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_162_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season163Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_163_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season163Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_163_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season164Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_164_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season164Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_164_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season165Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_165_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season165Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_165_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season166Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_166_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season166Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_166_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season167Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_167_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season167Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_167_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season168Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_168_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season168Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_168_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season169Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_169_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season169Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_169_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season170Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_170_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season170Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_170_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season171Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_171_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season171Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_171_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season172Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_172_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season172Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_172_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season173Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_173_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season173Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_173_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season174Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_174_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season174Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_174_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season175Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_175_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season175Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_175_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season176Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_176_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season176Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_176_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season177Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_177_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season177Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_177_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season178Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_178_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season178Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_178_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season179Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_179_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season179Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_179_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season180Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_180_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season180Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_180_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season181Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_181_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season181Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_181_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season182Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_182_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season182Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_182_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season183Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_183_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season183Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_183_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season184Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_184_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season184Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_184_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season185Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_185_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season185Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_185_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season186Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_186_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season186Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_186_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season187Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_187_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season187Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_187_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season188Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_188_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season188Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_188_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season189Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_189_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season189Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_189_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season190Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_190_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season190Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_190_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season191Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_191_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season191Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_191_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season192Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_192_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season192Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_192_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season193Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_193_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season193Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_193_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season194Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_194_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season194Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_194_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season195Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_195_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season195Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_195_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season196Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_196_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season196Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_196_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season197Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_197_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season197Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_197_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season198Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_198_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season198Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_198_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season199Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_199_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season199Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_199_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season200Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_200_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season200Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_200_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season201Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_201_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season201Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_201_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season202Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_202_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season202Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_202_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season203Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_203_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season203Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_203_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season204Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_204_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season204Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_204_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season205Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_205_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season205Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_205_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season206Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_206_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season206Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_206_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season207Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_207_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season207Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_207_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season208Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_208_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season208Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_208_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season209Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_209_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season209Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_209_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season210Free           EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_210_FREE"
+	EventPassTierSettingsTemplateIDEventPassApril2026Season210Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON_210_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event1Free     EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_1_FREE"
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event1Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_1_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event2Free     EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_2_FREE"
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event2Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_2_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event3Free     EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_3_FREE"
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event3Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_3_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event4Free     EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_4_FREE"
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event4Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_4_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event5Free     EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_5_FREE"
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event5Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_5_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event6Free     EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_6_FREE"
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event6Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_6_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event7Free     EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_7_FREE"
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event7Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_7_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event8Free     EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_8_FREE"
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event8Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_8_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event9Free     EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_9_FREE"
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event9Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_9_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event10Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_10_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event10Premium EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_10_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event11Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_11_FREE"
@@ -446,8 +463,6 @@ const (
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event18Premium EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_18_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event19Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_19_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event19Premium EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_19_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event1Free     EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_1_FREE"
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event1Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_1_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event20Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_20_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event20Premium EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_20_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event21Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_21_FREE"
@@ -468,8 +483,6 @@ const (
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event28Premium EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_28_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event29Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_29_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event29Premium EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_29_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event2Free     EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_2_FREE"
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event2Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_2_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event30Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_30_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event30Premium EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_30_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event31Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_31_FREE"
@@ -490,8 +503,6 @@ const (
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event38Premium EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_38_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event39Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_39_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event39Premium EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_39_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event3Free     EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_3_FREE"
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event3Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_3_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event40Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_40_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event40Premium EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_40_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event41Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_41_FREE"
@@ -512,8 +523,6 @@ const (
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event48Premium EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_48_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event49Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_49_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event49Premium EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_49_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event4Free     EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_4_FREE"
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event4Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_4_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event50Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_50_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event50Premium EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_50_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event51Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_51_FREE"
@@ -534,8 +543,6 @@ const (
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event58Premium EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_58_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event59Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_59_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event59Premium EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_59_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event5Free     EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_5_FREE"
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event5Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_5_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event60Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_60_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event60Premium EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_60_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event61Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_61_FREE"
@@ -547,8 +554,6 @@ const (
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event67Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_67_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event68Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_68_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event69Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_69_FREE"
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event6Free     EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_6_FREE"
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event6Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_6_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event70Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_70_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event71Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_71_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event72Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_72_FREE"
@@ -559,8 +564,6 @@ const (
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event77Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_77_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event78Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_78_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event79Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_79_FREE"
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event7Free     EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_7_FREE"
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event7Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_7_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event80Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_80_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event81Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_81_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event82Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_82_FREE"
@@ -571,8 +574,6 @@ const (
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event87Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_87_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event88Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_88_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event89Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_89_FREE"
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event8Free     EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_8_FREE"
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event8Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_8_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event90Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_90_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event91Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_91_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event92Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_92_FREE"
@@ -583,257 +584,50 @@ const (
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event97Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_97_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event98Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_98_FREE"
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event99Free    EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_99_FREE"
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event9Free     EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_9_FREE"
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event9Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_9_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event100Free   EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_100_FREE"
 )
 
 var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID{
-	EventPassTierSettingsTemplateIDEventPassApril2026Season100Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season100Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season101Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season101Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season102Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season102Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season103Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season103Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season104Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season104Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season105Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season105Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season106Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season106Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season107Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season107Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season108Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season108Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season109Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season109Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season10Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season10Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season110Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season110Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season111Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season111Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season112Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season112Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season113Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season113Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season114Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season114Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season115Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season115Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season116Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season116Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season117Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season117Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season118Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season118Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season119Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season119Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season11Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season11Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season120Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season120Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season121Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season121Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season122Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season122Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season123Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season123Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season124Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season124Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season125Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season125Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season126Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season126Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season127Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season127Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season128Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season128Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season129Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season129Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season12Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season12Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season130Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season130Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season131Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season131Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season132Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season132Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season133Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season133Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season134Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season134Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season135Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season135Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season136Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season136Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season137Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season137Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season138Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season138Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season139Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season139Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season13Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season13Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season140Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season140Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season141Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season141Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season142Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season142Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season143Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season143Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season144Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season144Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season145Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season145Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season146Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season146Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season147Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season147Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season148Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season148Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season149Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season149Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season14Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season14Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season150Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season150Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season151Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season151Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season152Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season152Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season153Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season153Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season154Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season154Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season155Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season155Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season156Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season156Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season157Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season157Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season158Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season158Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season159Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season159Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season15Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season15Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season160Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season160Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season161Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season161Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season162Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season162Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season163Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season163Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season164Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season164Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season165Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season165Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season166Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season166Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season167Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season167Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season168Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season168Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season169Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season169Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season16Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season16Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season170Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season170Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season171Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season171Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season172Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season172Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season173Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season173Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season174Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season174Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season175Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season175Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season176Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season176Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season177Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season177Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season178Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season178Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season179Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season179Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season17Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season17Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season180Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season180Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season181Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season181Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season182Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season182Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season183Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season183Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season184Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season184Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season185Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season185Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season186Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season186Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season187Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season187Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season188Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season188Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season189Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season189Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season18Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season18Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season190Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season190Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season191Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season191Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season192Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season192Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season193Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season193Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season194Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season194Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season195Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season195Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season196Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season196Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season197Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season197Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season198Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season198Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season199Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season199Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season19Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season19Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season1Free,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season1Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season200Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season200Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season201Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season201Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season202Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season202Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season203Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season203Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season204Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season204Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season205Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season205Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season206Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season206Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season207Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season207Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season208Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season208Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season209Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season209Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season2Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season2Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season3Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season3Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season4Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season4Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season5Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season5Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season6Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season6Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season7Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season7Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season8Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season8Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season9Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season9Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season10Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season10Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season11Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season11Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season12Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season12Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season13Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season13Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season14Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season14Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season15Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season15Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season16Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season16Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season17Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season17Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season18Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season18Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season19Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season19Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season20Free,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season20Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season210Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season210Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season21Free,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season21Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season22Free,
@@ -852,8 +646,6 @@ var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID
 	EventPassTierSettingsTemplateIDEventPassApril2026Season28Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season29Free,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season29Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season2Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season2Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season30Free,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season30Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season31Free,
@@ -874,8 +666,6 @@ var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID
 	EventPassTierSettingsTemplateIDEventPassApril2026Season38Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season39Free,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season39Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season3Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season3Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season40Free,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season40Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season41Free,
@@ -896,8 +686,6 @@ var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID
 	EventPassTierSettingsTemplateIDEventPassApril2026Season48Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season49Free,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season49Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season4Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season4Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season50Free,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season50Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season51Free,
@@ -918,8 +706,6 @@ var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID
 	EventPassTierSettingsTemplateIDEventPassApril2026Season58Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season59Free,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season59Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season5Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season5Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season60Free,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season60Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season61Free,
@@ -940,8 +726,6 @@ var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID
 	EventPassTierSettingsTemplateIDEventPassApril2026Season68Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season69Free,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season69Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season6Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season6Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season70Free,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season70Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season71Free,
@@ -962,8 +746,6 @@ var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID
 	EventPassTierSettingsTemplateIDEventPassApril2026Season78Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season79Free,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season79Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season7Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season7Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season80Free,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season80Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season81Free,
@@ -984,8 +766,6 @@ var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID
 	EventPassTierSettingsTemplateIDEventPassApril2026Season88Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season89Free,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season89Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season8Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season8Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season90Free,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season90Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season91Free,
@@ -1006,9 +786,246 @@ var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID
 	EventPassTierSettingsTemplateIDEventPassApril2026Season98Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season99Free,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season99Premium,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season9Free,
-	EventPassTierSettingsTemplateIDEventPassApril2026Season9Premium,
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event100Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season100Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season100Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season101Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season101Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season102Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season102Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season103Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season103Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season104Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season104Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season105Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season105Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season106Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season106Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season107Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season107Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season108Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season108Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season109Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season109Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season110Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season110Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season111Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season111Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season112Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season112Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season113Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season113Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season114Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season114Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season115Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season115Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season116Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season116Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season117Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season117Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season118Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season118Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season119Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season119Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season120Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season120Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season121Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season121Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season122Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season122Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season123Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season123Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season124Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season124Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season125Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season125Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season126Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season126Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season127Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season127Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season128Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season128Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season129Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season129Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season130Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season130Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season131Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season131Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season132Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season132Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season133Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season133Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season134Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season134Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season135Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season135Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season136Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season136Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season137Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season137Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season138Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season138Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season139Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season139Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season140Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season140Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season141Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season141Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season142Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season142Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season143Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season143Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season144Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season144Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season145Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season145Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season146Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season146Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season147Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season147Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season148Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season148Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season149Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season149Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season150Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season150Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season151Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season151Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season152Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season152Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season153Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season153Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season154Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season154Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season155Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season155Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season156Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season156Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season157Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season157Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season158Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season158Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season159Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season159Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season160Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season160Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season161Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season161Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season162Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season162Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season163Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season163Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season164Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season164Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season165Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season165Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season166Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season166Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season167Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season167Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season168Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season168Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season169Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season169Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season170Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season170Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season171Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season171Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season172Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season172Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season173Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season173Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season174Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season174Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season175Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season175Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season176Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season176Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season177Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season177Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season178Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season178Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season179Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season179Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season180Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season180Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season181Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season181Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season182Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season182Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season183Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season183Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season184Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season184Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season185Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season185Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season186Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season186Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season187Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season187Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season188Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season188Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season189Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season189Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season190Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season190Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season191Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season191Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season192Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season192Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season193Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season193Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season194Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season194Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season195Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season195Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season196Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season196Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season197Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season197Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season198Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season198Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season199Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season199Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season200Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season200Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season201Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season201Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season202Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season202Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season203Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season203Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season204Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season204Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season205Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season205Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season206Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season206Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season207Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season207Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season208Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season208Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season209Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season209Premium,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season210Free,
+	EventPassTierSettingsTemplateIDEventPassApril2026Season210Premium,
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event1Free,
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event1Premium,
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event2Free,
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event2Premium,
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event3Free,
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event3Premium,
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event4Free,
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event4Premium,
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event5Free,
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event5Premium,
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event6Free,
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event6Premium,
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event7Free,
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event7Premium,
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event8Free,
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event8Premium,
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event9Free,
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event9Premium,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event10Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event10Premium,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event11Free,
@@ -1029,8 +1046,6 @@ var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event18Premium,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event19Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event19Premium,
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event1Free,
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event1Premium,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event20Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event20Premium,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event21Free,
@@ -1051,8 +1066,6 @@ var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event28Premium,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event29Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event29Premium,
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event2Free,
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event2Premium,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event30Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event30Premium,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event31Free,
@@ -1073,8 +1086,6 @@ var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event38Premium,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event39Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event39Premium,
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event3Free,
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event3Premium,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event40Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event40Premium,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event41Free,
@@ -1095,8 +1106,6 @@ var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event48Premium,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event49Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event49Premium,
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event4Free,
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event4Premium,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event50Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event50Premium,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event51Free,
@@ -1117,8 +1126,6 @@ var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event58Premium,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event59Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event59Premium,
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event5Free,
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event5Premium,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event60Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event60Premium,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event61Free,
@@ -1130,8 +1137,6 @@ var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event67Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event68Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event69Free,
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event6Free,
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event6Premium,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event70Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event71Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event72Free,
@@ -1142,8 +1147,6 @@ var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event77Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event78Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event79Free,
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event7Free,
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event7Premium,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event80Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event81Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event82Free,
@@ -1154,8 +1157,6 @@ var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event87Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event88Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event89Free,
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event8Free,
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event8Premium,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event90Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event91Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event92Free,
@@ -1166,6 +1167,5 @@ var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event97Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event98Free,
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event99Free,
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event9Free,
-	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event9Premium,
+	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event100Free,
 }

@@ -5,10 +5,6 @@ package sticker_metadata
 type StickerMetadataTemplateID string
 
 const (
-	StickerMetadataTemplateIDSticker2023collab1                  StickerMetadataTemplateID = "STICKER_2023COLLAB_1"
-	StickerMetadataTemplateIDSticker2023collab2                  StickerMetadataTemplateID = "STICKER_2023COLLAB_2"
-	StickerMetadataTemplateIDSticker2023collab3                  StickerMetadataTemplateID = "STICKER_2023COLLAB_3"
-	StickerMetadataTemplateIDSticker2023collab4                  StickerMetadataTemplateID = "STICKER_2023COLLAB_4"
 	StickerMetadataTemplateIDSticker6anniv1                      StickerMetadataTemplateID = "STICKER_6ANNIV_1"
 	StickerMetadataTemplateIDSticker6anniv2                      StickerMetadataTemplateID = "STICKER_6ANNIV_2"
 	StickerMetadataTemplateIDSticker6anniv3                      StickerMetadataTemplateID = "STICKER_6ANNIV_3"
@@ -27,6 +23,10 @@ const (
 	StickerMetadataTemplateIDSticker9anniv1                      StickerMetadataTemplateID = "STICKER_9ANNIV_1"
 	StickerMetadataTemplateIDSticker9anniv2                      StickerMetadataTemplateID = "STICKER_9ANNIV_2"
 	StickerMetadataTemplateIDSticker9anniv3                      StickerMetadataTemplateID = "STICKER_9ANNIV_3"
+	StickerMetadataTemplateIDSticker2023collab1                  StickerMetadataTemplateID = "STICKER_2023COLLAB_1"
+	StickerMetadataTemplateIDSticker2023collab2                  StickerMetadataTemplateID = "STICKER_2023COLLAB_2"
+	StickerMetadataTemplateIDSticker2023collab3                  StickerMetadataTemplateID = "STICKER_2023COLLAB_3"
+	StickerMetadataTemplateIDSticker2023collab4                  StickerMetadataTemplateID = "STICKER_2023COLLAB_4"
 	StickerMetadataTemplateIDStickerAlolaishi1                   StickerMetadataTemplateID = "STICKER_ALOLAISHI_1"
 	StickerMetadataTemplateIDStickerAlolaishi2                   StickerMetadataTemplateID = "STICKER_ALOLAISHI_2"
 	StickerMetadataTemplateIDStickerAlolaishi3                   StickerMetadataTemplateID = "STICKER_ALOLAISHI_3"
@@ -210,11 +210,12 @@ const (
 	StickerMetadataTemplateIDStickerGrubbin2                     StickerMetadataTemplateID = "STICKER_GRUBBIN_2"
 	StickerMetadataTemplateIDStickerGrubbin3                     StickerMetadataTemplateID = "STICKER_GRUBBIN_3"
 	StickerMetadataTemplateIDStickerGrubbin4                     StickerMetadataTemplateID = "STICKER_GRUBBIN_4"
-	StickerMetadataTemplateIDStickerHalloween2022Gengar          StickerMetadataTemplateID = "STICKER_HALLOWEEN2022_GENGAR"
-	StickerMetadataTemplateIDStickerHalloween2022Pumpkaboo       StickerMetadataTemplateID = "STICKER_HALLOWEEN2022_PUMPKABOO"
-	StickerMetadataTemplateIDStickerHalloween2022Vulpix          StickerMetadataTemplateID = "STICKER_HALLOWEEN2022_VULPIX"
-	StickerMetadataTemplateIDStickerHalloween2025Noibat          StickerMetadataTemplateID = "STICKER_HALLOWEEN2025_NOIBAT"
-	StickerMetadataTemplateIDStickerHalloween2025Teddiursa       StickerMetadataTemplateID = "STICKER_HALLOWEEN2025_TEDDIURSA"
+	StickerMetadataTemplateIDStickerHalloweenBulb                StickerMetadataTemplateID = "STICKER_HALLOWEEN_BULB"
+	StickerMetadataTemplateIDStickerHalloweenCharm               StickerMetadataTemplateID = "STICKER_HALLOWEEN_CHARM"
+	StickerMetadataTemplateIDStickerHalloweenGengarmd            StickerMetadataTemplateID = "STICKER_HALLOWEEN_GENGARMD"
+	StickerMetadataTemplateIDStickerHalloweenPika                StickerMetadataTemplateID = "STICKER_HALLOWEEN_PIKA"
+	StickerMetadataTemplateIDStickerHalloweenSableyemd           StickerMetadataTemplateID = "STICKER_HALLOWEEN_SABLEYEMD"
+	StickerMetadataTemplateIDStickerHalloweenSqu                 StickerMetadataTemplateID = "STICKER_HALLOWEEN_SQU"
 	StickerMetadataTemplateIDStickerHalloween21Fuwaraid          StickerMetadataTemplateID = "STICKER_HALLOWEEN21_FUWARAID"
 	StickerMetadataTemplateIDStickerHalloween21Ghostpika         StickerMetadataTemplateID = "STICKER_HALLOWEEN21_GHOSTPIKA"
 	StickerMetadataTemplateIDStickerHalloween21Pikachu           StickerMetadataTemplateID = "STICKER_HALLOWEEN21_PIKACHU"
@@ -225,12 +226,11 @@ const (
 	StickerMetadataTemplateIDStickerHalloween23Phantump          StickerMetadataTemplateID = "STICKER_HALLOWEEN23_PHANTUMP"
 	StickerMetadataTemplateIDStickerHalloween24Froakie           StickerMetadataTemplateID = "STICKER_HALLOWEEN24_FROAKIE"
 	StickerMetadataTemplateIDStickerHalloween24Rowlet            StickerMetadataTemplateID = "STICKER_HALLOWEEN24_ROWLET"
-	StickerMetadataTemplateIDStickerHalloweenBulb                StickerMetadataTemplateID = "STICKER_HALLOWEEN_BULB"
-	StickerMetadataTemplateIDStickerHalloweenCharm               StickerMetadataTemplateID = "STICKER_HALLOWEEN_CHARM"
-	StickerMetadataTemplateIDStickerHalloweenGengarmd            StickerMetadataTemplateID = "STICKER_HALLOWEEN_GENGARMD"
-	StickerMetadataTemplateIDStickerHalloweenPika                StickerMetadataTemplateID = "STICKER_HALLOWEEN_PIKA"
-	StickerMetadataTemplateIDStickerHalloweenSableyemd           StickerMetadataTemplateID = "STICKER_HALLOWEEN_SABLEYEMD"
-	StickerMetadataTemplateIDStickerHalloweenSqu                 StickerMetadataTemplateID = "STICKER_HALLOWEEN_SQU"
+	StickerMetadataTemplateIDStickerHalloween2022Gengar          StickerMetadataTemplateID = "STICKER_HALLOWEEN2022_GENGAR"
+	StickerMetadataTemplateIDStickerHalloween2022Pumpkaboo       StickerMetadataTemplateID = "STICKER_HALLOWEEN2022_PUMPKABOO"
+	StickerMetadataTemplateIDStickerHalloween2022Vulpix          StickerMetadataTemplateID = "STICKER_HALLOWEEN2022_VULPIX"
+	StickerMetadataTemplateIDStickerHalloween2025Noibat          StickerMetadataTemplateID = "STICKER_HALLOWEEN2025_NOIBAT"
+	StickerMetadataTemplateIDStickerHalloween2025Teddiursa       StickerMetadataTemplateID = "STICKER_HALLOWEEN2025_TEDDIURSA"
 	StickerMetadataTemplateIDStickerHaruCherrim                  StickerMetadataTemplateID = "STICKER_HARU_CHERRIM"
 	StickerMetadataTemplateIDStickerHaruDredearpika              StickerMetadataTemplateID = "STICKER_HARU_DREDEARPIKA"
 	StickerMetadataTemplateIDStickerHaruKireihana                StickerMetadataTemplateID = "STICKER_HARU_KIREIHANA"
@@ -299,8 +299,8 @@ const (
 	StickerMetadataTemplateIDStickerMegaevolutionParis1          StickerMetadataTemplateID = "STICKER_MEGAEVOLUTION_PARIS_1"
 	StickerMetadataTemplateIDStickerMegaevolutionParis2          StickerMetadataTemplateID = "STICKER_MEGAEVOLUTION_PARIS_2"
 	StickerMetadataTemplateIDStickerMegaevolutionParis3          StickerMetadataTemplateID = "STICKER_MEGAEVOLUTION_PARIS_3"
-	StickerMetadataTemplateIDStickerMewtwo                       StickerMetadataTemplateID = "STICKER_MEWTWO"
 	StickerMetadataTemplateIDStickerMewLaugh                     StickerMetadataTemplateID = "STICKER_MEW_LAUGH"
+	StickerMetadataTemplateIDStickerMewtwo                       StickerMetadataTemplateID = "STICKER_MEWTWO"
 	StickerMetadataTemplateIDStickerMukkuruCd1                   StickerMetadataTemplateID = "STICKER_MUKKURU_CD_1"
 	StickerMetadataTemplateIDStickerMukkuruCd2                   StickerMetadataTemplateID = "STICKER_MUKKURU_CD_2"
 	StickerMetadataTemplateIDStickerMukkuruCd3                   StickerMetadataTemplateID = "STICKER_MUKKURU_CD_3"
@@ -313,12 +313,12 @@ const (
 	StickerMetadataTemplateIDStickerNaganoBath                   StickerMetadataTemplateID = "STICKER_NAGANO_BATH"
 	StickerMetadataTemplateIDStickerNaganoMarill                 StickerMetadataTemplateID = "STICKER_NAGANO_MARILL"
 	StickerMetadataTemplateIDStickerNaganoYadon                  StickerMetadataTemplateID = "STICKER_NAGANO_YADON"
-	StickerMetadataTemplateIDStickerNewpokemon21                 StickerMetadataTemplateID = "STICKER_NEWPOKEMON2_1"
-	StickerMetadataTemplateIDStickerNewpokemon215                StickerMetadataTemplateID = "STICKER_NEWPOKEMON2_15"
-	StickerMetadataTemplateIDStickerNewpokemon233                StickerMetadataTemplateID = "STICKER_NEWPOKEMON2_33"
 	StickerMetadataTemplateIDStickerNewpokemon04                 StickerMetadataTemplateID = "STICKER_NEWPOKEMON_04"
 	StickerMetadataTemplateIDStickerNewpokemon20                 StickerMetadataTemplateID = "STICKER_NEWPOKEMON_20"
 	StickerMetadataTemplateIDStickerNewpokemon37                 StickerMetadataTemplateID = "STICKER_NEWPOKEMON_37"
+	StickerMetadataTemplateIDStickerNewpokemon21                 StickerMetadataTemplateID = "STICKER_NEWPOKEMON2_1"
+	StickerMetadataTemplateIDStickerNewpokemon215                StickerMetadataTemplateID = "STICKER_NEWPOKEMON2_15"
+	StickerMetadataTemplateIDStickerNewpokemon233                StickerMetadataTemplateID = "STICKER_NEWPOKEMON2_33"
 	StickerMetadataTemplateIDStickerNewteamrascal                StickerMetadataTemplateID = "STICKER_NEWTEAMRASCAL"
 	StickerMetadataTemplateIDStickerNewteamrascalpikachu26       StickerMetadataTemplateID = "STICKER_NEWTEAMRASCALPIKACHU_26"
 	StickerMetadataTemplateIDStickerNewyears221                  StickerMetadataTemplateID = "STICKER_NEWYEARS22_1"
@@ -344,23 +344,6 @@ const (
 	StickerMetadataTemplateIDStickerPapelpicadotgr3              StickerMetadataTemplateID = "STICKER_PAPELPICADOTGR_3"
 	StickerMetadataTemplateIDStickerPapelpicadotgr4              StickerMetadataTemplateID = "STICKER_PAPELPICADOTGR_4"
 	StickerMetadataTemplateIDStickerPapelpicadotgr5              StickerMetadataTemplateID = "STICKER_PAPELPICADOTGR_5"
-	StickerMetadataTemplateIDStickerPgofest2021Galarianzigzagoon StickerMetadataTemplateID = "STICKER_PGOFEST2021_GALARIANZIGZAGOON"
-	StickerMetadataTemplateIDStickerPgofest2021Logo              StickerMetadataTemplateID = "STICKER_PGOFEST2021_LOGO"
-	StickerMetadataTemplateIDStickerPgofest2021Meloetta1         StickerMetadataTemplateID = "STICKER_PGOFEST2021_MELOETTA_1"
-	StickerMetadataTemplateIDStickerPgofest2021Meloetta2         StickerMetadataTemplateID = "STICKER_PGOFEST2021_MELOETTA_2"
-	StickerMetadataTemplateIDStickerPgofest2021Ponyta            StickerMetadataTemplateID = "STICKER_PGOFEST2021_PONYTA"
-	StickerMetadataTemplateIDStickerPgofest2021Shirticon         StickerMetadataTemplateID = "STICKER_PGOFEST2021_SHIRTICON"
-	StickerMetadataTemplateIDStickerPgofest2022Denjyumoku        StickerMetadataTemplateID = "STICKER_PGOFEST2022_DENJYUMOKU"
-	StickerMetadataTemplateIDStickerPgofest2022Groudon           StickerMetadataTemplateID = "STICKER_PGOFEST2022_GROUDON"
-	StickerMetadataTemplateIDStickerPgofest2022Kibago            StickerMetadataTemplateID = "STICKER_PGOFEST2022_KIBAGO"
-	StickerMetadataTemplateIDStickerPgofest2022Kyogre            StickerMetadataTemplateID = "STICKER_PGOFEST2022_KYOGRE"
-	StickerMetadataTemplateIDStickerPgofest2022Massivoon         StickerMetadataTemplateID = "STICKER_PGOFEST2022_MASSIVOON"
-	StickerMetadataTemplateIDStickerPgofest2022Pheroache         StickerMetadataTemplateID = "STICKER_PGOFEST2022_PHEROACHE"
-	StickerMetadataTemplateIDStickerPgofest2022Pikachu           StickerMetadataTemplateID = "STICKER_PGOFEST2022_PIKACHU"
-	StickerMetadataTemplateIDStickerPgofest2022Pochama           StickerMetadataTemplateID = "STICKER_PGOFEST2022_POCHAMA"
-	StickerMetadataTemplateIDStickerPgofest2022Shaymin           StickerMetadataTemplateID = "STICKER_PGOFEST2022_SHAYMIN"
-	StickerMetadataTemplateIDStickerPgofest2022Shayminsky        StickerMetadataTemplateID = "STICKER_PGOFEST2022_SHAYMINSKY"
-	StickerMetadataTemplateIDStickerPgofest2022Uturoid           StickerMetadataTemplateID = "STICKER_PGOFEST2022_UTUROID"
 	StickerMetadataTemplateIDStickerPgoFest2017                  StickerMetadataTemplateID = "STICKER_PGO_FEST_2017"
 	StickerMetadataTemplateIDStickerPgoFest2018                  StickerMetadataTemplateID = "STICKER_PGO_FEST_2018"
 	StickerMetadataTemplateIDStickerPgoFest2019                  StickerMetadataTemplateID = "STICKER_PGO_FEST_2019"
@@ -414,6 +397,24 @@ const (
 	StickerMetadataTemplateIDStickerPgoWildarea20243             StickerMetadataTemplateID = "STICKER_PGO_WILDAREA_2024_3"
 	StickerMetadataTemplateIDStickerPgoWildarea20244             StickerMetadataTemplateID = "STICKER_PGO_WILDAREA_2024_4"
 	StickerMetadataTemplateIDStickerPgoWildarea2024Logo          StickerMetadataTemplateID = "STICKER_PGO_WILDAREA_2024_LOGO"
+	StickerMetadataTemplateIDStickerPgofest2021Galarianzigzagoon StickerMetadataTemplateID = "STICKER_PGOFEST2021_GALARIANZIGZAGOON"
+	StickerMetadataTemplateIDStickerPgofest2021Logo              StickerMetadataTemplateID = "STICKER_PGOFEST2021_LOGO"
+	StickerMetadataTemplateIDStickerPgofest2021Meloetta1         StickerMetadataTemplateID = "STICKER_PGOFEST2021_MELOETTA_1"
+	StickerMetadataTemplateIDStickerPgofest2021Meloetta2         StickerMetadataTemplateID = "STICKER_PGOFEST2021_MELOETTA_2"
+	StickerMetadataTemplateIDStickerPgofest2021Ponyta            StickerMetadataTemplateID = "STICKER_PGOFEST2021_PONYTA"
+	StickerMetadataTemplateIDStickerPgofest2021Shirticon         StickerMetadataTemplateID = "STICKER_PGOFEST2021_SHIRTICON"
+	StickerMetadataTemplateIDStickerPgofest2022Denjyumoku        StickerMetadataTemplateID = "STICKER_PGOFEST2022_DENJYUMOKU"
+	StickerMetadataTemplateIDStickerPgofest2022Groudon           StickerMetadataTemplateID = "STICKER_PGOFEST2022_GROUDON"
+	StickerMetadataTemplateIDStickerPgofest2022Kibago            StickerMetadataTemplateID = "STICKER_PGOFEST2022_KIBAGO"
+	StickerMetadataTemplateIDStickerPgofest2022Kyogre            StickerMetadataTemplateID = "STICKER_PGOFEST2022_KYOGRE"
+	StickerMetadataTemplateIDStickerPgofest2022Massivoon         StickerMetadataTemplateID = "STICKER_PGOFEST2022_MASSIVOON"
+	StickerMetadataTemplateIDStickerPgofest2022Pheroache         StickerMetadataTemplateID = "STICKER_PGOFEST2022_PHEROACHE"
+	StickerMetadataTemplateIDStickerPgofest2022Pikachu           StickerMetadataTemplateID = "STICKER_PGOFEST2022_PIKACHU"
+	StickerMetadataTemplateIDStickerPgofest2022Pochama           StickerMetadataTemplateID = "STICKER_PGOFEST2022_POCHAMA"
+	StickerMetadataTemplateIDStickerPgofest2022Shaymin           StickerMetadataTemplateID = "STICKER_PGOFEST2022_SHAYMIN"
+	StickerMetadataTemplateIDStickerPgofest2022Shayminsky        StickerMetadataTemplateID = "STICKER_PGOFEST2022_SHAYMINSKY"
+	StickerMetadataTemplateIDStickerPgofest2022Uturoid           StickerMetadataTemplateID = "STICKER_PGOFEST2022_UTUROID"
+	StickerMetadataTemplateIDStickerPika14Thankyou               StickerMetadataTemplateID = "STICKER_PIKA_14_THANKYOU"
 	StickerMetadataTemplateIDStickerPikaairadventure1            StickerMetadataTemplateID = "STICKER_PIKAAIRADVENTURE_1"
 	StickerMetadataTemplateIDStickerPikaairadventure2            StickerMetadataTemplateID = "STICKER_PIKAAIRADVENTURE_2"
 	StickerMetadataTemplateIDStickerPikaairadventure3            StickerMetadataTemplateID = "STICKER_PIKAAIRADVENTURE_3"
@@ -423,7 +424,6 @@ const (
 	StickerMetadataTemplateIDStickerPikaairtaiwanPikachu         StickerMetadataTemplateID = "STICKER_PIKAAIRTAIWAN_PIKACHU"
 	StickerMetadataTemplateIDStickerPikaairtaiwanSnorlax         StickerMetadataTemplateID = "STICKER_PIKAAIRTAIWAN_SNORLAX"
 	StickerMetadataTemplateIDStickerPikachuJol                   StickerMetadataTemplateID = "STICKER_PIKACHU_JOL"
-	StickerMetadataTemplateIDStickerPika14Thankyou               StickerMetadataTemplateID = "STICKER_PIKA_14_THANKYOU"
 	StickerMetadataTemplateIDStickerPokemonchatpals204           StickerMetadataTemplateID = "STICKER_POKEMONCHATPALS2_04"
 	StickerMetadataTemplateIDStickerPokemonchatpals240           StickerMetadataTemplateID = "STICKER_POKEMONCHATPALS2_40"
 	StickerMetadataTemplateIDStickerPokopiaBulbasaur             StickerMetadataTemplateID = "STICKER_POKOPIA_BULBASAUR"
@@ -520,6 +520,10 @@ const (
 	StickerMetadataTemplateIDStickerStufful4                     StickerMetadataTemplateID = "STICKER_STUFFUL_4"
 	StickerMetadataTemplateIDStickerSummer1                      StickerMetadataTemplateID = "STICKER_SUMMER_1"
 	StickerMetadataTemplateIDStickerSummer2                      StickerMetadataTemplateID = "STICKER_SUMMER_2"
+	StickerMetadataTemplateIDStickerSummer3                      StickerMetadataTemplateID = "STICKER_SUMMER_3"
+	StickerMetadataTemplateIDStickerSummer4                      StickerMetadataTemplateID = "STICKER_SUMMER_4"
+	StickerMetadataTemplateIDStickerSummer5                      StickerMetadataTemplateID = "STICKER_SUMMER_5"
+	StickerMetadataTemplateIDStickerSummer6                      StickerMetadataTemplateID = "STICKER_SUMMER_6"
 	StickerMetadataTemplateIDStickerSummer2023Blastoise          StickerMetadataTemplateID = "STICKER_SUMMER_2023_BLASTOISE"
 	StickerMetadataTemplateIDStickerSummer2023Butterfree         StickerMetadataTemplateID = "STICKER_SUMMER_2023_BUTTERFREE"
 	StickerMetadataTemplateIDStickerSummer2023Clamperl           StickerMetadataTemplateID = "STICKER_SUMMER_2023_CLAMPERL"
@@ -536,10 +540,6 @@ const (
 	StickerMetadataTemplateIDStickerSummer20252                  StickerMetadataTemplateID = "STICKER_SUMMER_2025_2"
 	StickerMetadataTemplateIDStickerSummer20253                  StickerMetadataTemplateID = "STICKER_SUMMER_2025_3"
 	StickerMetadataTemplateIDStickerSummer20254                  StickerMetadataTemplateID = "STICKER_SUMMER_2025_4"
-	StickerMetadataTemplateIDStickerSummer3                      StickerMetadataTemplateID = "STICKER_SUMMER_3"
-	StickerMetadataTemplateIDStickerSummer4                      StickerMetadataTemplateID = "STICKER_SUMMER_4"
-	StickerMetadataTemplateIDStickerSummer5                      StickerMetadataTemplateID = "STICKER_SUMMER_5"
-	StickerMetadataTemplateIDStickerSummer6                      StickerMetadataTemplateID = "STICKER_SUMMER_6"
 	StickerMetadataTemplateIDStickerSwordshield211               StickerMetadataTemplateID = "STICKER_SWORDSHIELD21_1"
 	StickerMetadataTemplateIDStickerSwordshield212               StickerMetadataTemplateID = "STICKER_SWORDSHIELD21_2"
 	StickerMetadataTemplateIDStickerSwordshield213               StickerMetadataTemplateID = "STICKER_SWORDSHIELD21_3"
@@ -570,24 +570,14 @@ const (
 	StickerMetadataTemplateIDStickerValentine20231               StickerMetadataTemplateID = "STICKER_VALENTINE2023_1"
 	StickerMetadataTemplateIDStickerValentine20232               StickerMetadataTemplateID = "STICKER_VALENTINE2023_2"
 	StickerMetadataTemplateIDStickerValentine20233               StickerMetadataTemplateID = "STICKER_VALENTINE2023_3"
+	StickerMetadataTemplateIDStickerWcsPlay                      StickerMetadataTemplateID = "STICKER_WCS_PLAY"
 	StickerMetadataTemplateIDStickerWcs2025CarGroup              StickerMetadataTemplateID = "STICKER_WCS2025_CAR_GROUP"
 	StickerMetadataTemplateIDStickerWcs2025Jigglypuff            StickerMetadataTemplateID = "STICKER_WCS2025_JIGGLYPUFF"
 	StickerMetadataTemplateIDStickerWcs2025Murkrow               StickerMetadataTemplateID = "STICKER_WCS2025_MURKROW"
 	StickerMetadataTemplateIDStickerWcs2025Pikachu               StickerMetadataTemplateID = "STICKER_WCS2025_PIKACHU"
-	StickerMetadataTemplateIDStickerWcsPlay                      StickerMetadataTemplateID = "STICKER_WCS_PLAY"
 	StickerMetadataTemplateIDStickerWillowBronze                 StickerMetadataTemplateID = "STICKER_WILLOW_BRONZE"
 	StickerMetadataTemplateIDStickerWillowGold                   StickerMetadataTemplateID = "STICKER_WILLOW_GOLD"
 	StickerMetadataTemplateIDStickerWillowSilver                 StickerMetadataTemplateID = "STICKER_WILLOW_SILVER"
-	StickerMetadataTemplateIDStickerWinter20231                  StickerMetadataTemplateID = "STICKER_WINTER2023_1"
-	StickerMetadataTemplateIDStickerWinter20232                  StickerMetadataTemplateID = "STICKER_WINTER2023_2"
-	StickerMetadataTemplateIDStickerWinter20233                  StickerMetadataTemplateID = "STICKER_WINTER2023_3"
-	StickerMetadataTemplateIDStickerWinter20234                  StickerMetadataTemplateID = "STICKER_WINTER2023_4"
-	StickerMetadataTemplateIDStickerWinter20235                  StickerMetadataTemplateID = "STICKER_WINTER2023_5"
-	StickerMetadataTemplateIDStickerWinter20236                  StickerMetadataTemplateID = "STICKER_WINTER2023_6"
-	StickerMetadataTemplateIDStickerWinter20251                  StickerMetadataTemplateID = "STICKER_WINTER2025_1"
-	StickerMetadataTemplateIDStickerWinter20252                  StickerMetadataTemplateID = "STICKER_WINTER2025_2"
-	StickerMetadataTemplateIDStickerWinter20253                  StickerMetadataTemplateID = "STICKER_WINTER2025_3"
-	StickerMetadataTemplateIDStickerWinter20254                  StickerMetadataTemplateID = "STICKER_WINTER2025_4"
 	StickerMetadataTemplateIDStickerWinter20241                  StickerMetadataTemplateID = "STICKER_WINTER_2024_1"
 	StickerMetadataTemplateIDStickerWinter20242                  StickerMetadataTemplateID = "STICKER_WINTER_2024_2"
 	StickerMetadataTemplateIDStickerWinter20243                  StickerMetadataTemplateID = "STICKER_WINTER_2024_3"
@@ -600,6 +590,16 @@ const (
 	StickerMetadataTemplateIDStickerWinterPikachu                StickerMetadataTemplateID = "STICKER_WINTER_PIKACHU"
 	StickerMetadataTemplateIDStickerWinterSawsbuck               StickerMetadataTemplateID = "STICKER_WINTER_SAWSBUCK"
 	StickerMetadataTemplateIDStickerWinterSnorunt                StickerMetadataTemplateID = "STICKER_WINTER_SNORUNT"
+	StickerMetadataTemplateIDStickerWinter20231                  StickerMetadataTemplateID = "STICKER_WINTER2023_1"
+	StickerMetadataTemplateIDStickerWinter20232                  StickerMetadataTemplateID = "STICKER_WINTER2023_2"
+	StickerMetadataTemplateIDStickerWinter20233                  StickerMetadataTemplateID = "STICKER_WINTER2023_3"
+	StickerMetadataTemplateIDStickerWinter20234                  StickerMetadataTemplateID = "STICKER_WINTER2023_4"
+	StickerMetadataTemplateIDStickerWinter20235                  StickerMetadataTemplateID = "STICKER_WINTER2023_5"
+	StickerMetadataTemplateIDStickerWinter20236                  StickerMetadataTemplateID = "STICKER_WINTER2023_6"
+	StickerMetadataTemplateIDStickerWinter20251                  StickerMetadataTemplateID = "STICKER_WINTER2025_1"
+	StickerMetadataTemplateIDStickerWinter20252                  StickerMetadataTemplateID = "STICKER_WINTER2025_2"
+	StickerMetadataTemplateIDStickerWinter20253                  StickerMetadataTemplateID = "STICKER_WINTER2025_3"
+	StickerMetadataTemplateIDStickerWinter20254                  StickerMetadataTemplateID = "STICKER_WINTER2025_4"
 	StickerMetadataTemplateIDStickerWoopercd20231                StickerMetadataTemplateID = "STICKER_WOOPERCD2023_1"
 	StickerMetadataTemplateIDStickerWoopercd20232                StickerMetadataTemplateID = "STICKER_WOOPERCD2023_2"
 	StickerMetadataTemplateIDStickerWoopercd20233                StickerMetadataTemplateID = "STICKER_WOOPERCD2023_3"
@@ -614,10 +614,6 @@ const (
 )
 
 var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
-	StickerMetadataTemplateIDSticker2023collab1,
-	StickerMetadataTemplateIDSticker2023collab2,
-	StickerMetadataTemplateIDSticker2023collab3,
-	StickerMetadataTemplateIDSticker2023collab4,
 	StickerMetadataTemplateIDSticker6anniv1,
 	StickerMetadataTemplateIDSticker6anniv2,
 	StickerMetadataTemplateIDSticker6anniv3,
@@ -636,6 +632,10 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDSticker9anniv1,
 	StickerMetadataTemplateIDSticker9anniv2,
 	StickerMetadataTemplateIDSticker9anniv3,
+	StickerMetadataTemplateIDSticker2023collab1,
+	StickerMetadataTemplateIDSticker2023collab2,
+	StickerMetadataTemplateIDSticker2023collab3,
+	StickerMetadataTemplateIDSticker2023collab4,
 	StickerMetadataTemplateIDStickerAlolaishi1,
 	StickerMetadataTemplateIDStickerAlolaishi2,
 	StickerMetadataTemplateIDStickerAlolaishi3,
@@ -819,11 +819,12 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDStickerGrubbin2,
 	StickerMetadataTemplateIDStickerGrubbin3,
 	StickerMetadataTemplateIDStickerGrubbin4,
-	StickerMetadataTemplateIDStickerHalloween2022Gengar,
-	StickerMetadataTemplateIDStickerHalloween2022Pumpkaboo,
-	StickerMetadataTemplateIDStickerHalloween2022Vulpix,
-	StickerMetadataTemplateIDStickerHalloween2025Noibat,
-	StickerMetadataTemplateIDStickerHalloween2025Teddiursa,
+	StickerMetadataTemplateIDStickerHalloweenBulb,
+	StickerMetadataTemplateIDStickerHalloweenCharm,
+	StickerMetadataTemplateIDStickerHalloweenGengarmd,
+	StickerMetadataTemplateIDStickerHalloweenPika,
+	StickerMetadataTemplateIDStickerHalloweenSableyemd,
+	StickerMetadataTemplateIDStickerHalloweenSqu,
 	StickerMetadataTemplateIDStickerHalloween21Fuwaraid,
 	StickerMetadataTemplateIDStickerHalloween21Ghostpika,
 	StickerMetadataTemplateIDStickerHalloween21Pikachu,
@@ -834,12 +835,11 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDStickerHalloween23Phantump,
 	StickerMetadataTemplateIDStickerHalloween24Froakie,
 	StickerMetadataTemplateIDStickerHalloween24Rowlet,
-	StickerMetadataTemplateIDStickerHalloweenBulb,
-	StickerMetadataTemplateIDStickerHalloweenCharm,
-	StickerMetadataTemplateIDStickerHalloweenGengarmd,
-	StickerMetadataTemplateIDStickerHalloweenPika,
-	StickerMetadataTemplateIDStickerHalloweenSableyemd,
-	StickerMetadataTemplateIDStickerHalloweenSqu,
+	StickerMetadataTemplateIDStickerHalloween2022Gengar,
+	StickerMetadataTemplateIDStickerHalloween2022Pumpkaboo,
+	StickerMetadataTemplateIDStickerHalloween2022Vulpix,
+	StickerMetadataTemplateIDStickerHalloween2025Noibat,
+	StickerMetadataTemplateIDStickerHalloween2025Teddiursa,
 	StickerMetadataTemplateIDStickerHaruCherrim,
 	StickerMetadataTemplateIDStickerHaruDredearpika,
 	StickerMetadataTemplateIDStickerHaruKireihana,
@@ -908,8 +908,8 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDStickerMegaevolutionParis1,
 	StickerMetadataTemplateIDStickerMegaevolutionParis2,
 	StickerMetadataTemplateIDStickerMegaevolutionParis3,
-	StickerMetadataTemplateIDStickerMewtwo,
 	StickerMetadataTemplateIDStickerMewLaugh,
+	StickerMetadataTemplateIDStickerMewtwo,
 	StickerMetadataTemplateIDStickerMukkuruCd1,
 	StickerMetadataTemplateIDStickerMukkuruCd2,
 	StickerMetadataTemplateIDStickerMukkuruCd3,
@@ -922,12 +922,12 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDStickerNaganoBath,
 	StickerMetadataTemplateIDStickerNaganoMarill,
 	StickerMetadataTemplateIDStickerNaganoYadon,
-	StickerMetadataTemplateIDStickerNewpokemon21,
-	StickerMetadataTemplateIDStickerNewpokemon215,
-	StickerMetadataTemplateIDStickerNewpokemon233,
 	StickerMetadataTemplateIDStickerNewpokemon04,
 	StickerMetadataTemplateIDStickerNewpokemon20,
 	StickerMetadataTemplateIDStickerNewpokemon37,
+	StickerMetadataTemplateIDStickerNewpokemon21,
+	StickerMetadataTemplateIDStickerNewpokemon215,
+	StickerMetadataTemplateIDStickerNewpokemon233,
 	StickerMetadataTemplateIDStickerNewteamrascal,
 	StickerMetadataTemplateIDStickerNewteamrascalpikachu26,
 	StickerMetadataTemplateIDStickerNewyears221,
@@ -953,23 +953,6 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDStickerPapelpicadotgr3,
 	StickerMetadataTemplateIDStickerPapelpicadotgr4,
 	StickerMetadataTemplateIDStickerPapelpicadotgr5,
-	StickerMetadataTemplateIDStickerPgofest2021Galarianzigzagoon,
-	StickerMetadataTemplateIDStickerPgofest2021Logo,
-	StickerMetadataTemplateIDStickerPgofest2021Meloetta1,
-	StickerMetadataTemplateIDStickerPgofest2021Meloetta2,
-	StickerMetadataTemplateIDStickerPgofest2021Ponyta,
-	StickerMetadataTemplateIDStickerPgofest2021Shirticon,
-	StickerMetadataTemplateIDStickerPgofest2022Denjyumoku,
-	StickerMetadataTemplateIDStickerPgofest2022Groudon,
-	StickerMetadataTemplateIDStickerPgofest2022Kibago,
-	StickerMetadataTemplateIDStickerPgofest2022Kyogre,
-	StickerMetadataTemplateIDStickerPgofest2022Massivoon,
-	StickerMetadataTemplateIDStickerPgofest2022Pheroache,
-	StickerMetadataTemplateIDStickerPgofest2022Pikachu,
-	StickerMetadataTemplateIDStickerPgofest2022Pochama,
-	StickerMetadataTemplateIDStickerPgofest2022Shaymin,
-	StickerMetadataTemplateIDStickerPgofest2022Shayminsky,
-	StickerMetadataTemplateIDStickerPgofest2022Uturoid,
 	StickerMetadataTemplateIDStickerPgoFest2017,
 	StickerMetadataTemplateIDStickerPgoFest2018,
 	StickerMetadataTemplateIDStickerPgoFest2019,
@@ -1023,6 +1006,24 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDStickerPgoWildarea20243,
 	StickerMetadataTemplateIDStickerPgoWildarea20244,
 	StickerMetadataTemplateIDStickerPgoWildarea2024Logo,
+	StickerMetadataTemplateIDStickerPgofest2021Galarianzigzagoon,
+	StickerMetadataTemplateIDStickerPgofest2021Logo,
+	StickerMetadataTemplateIDStickerPgofest2021Meloetta1,
+	StickerMetadataTemplateIDStickerPgofest2021Meloetta2,
+	StickerMetadataTemplateIDStickerPgofest2021Ponyta,
+	StickerMetadataTemplateIDStickerPgofest2021Shirticon,
+	StickerMetadataTemplateIDStickerPgofest2022Denjyumoku,
+	StickerMetadataTemplateIDStickerPgofest2022Groudon,
+	StickerMetadataTemplateIDStickerPgofest2022Kibago,
+	StickerMetadataTemplateIDStickerPgofest2022Kyogre,
+	StickerMetadataTemplateIDStickerPgofest2022Massivoon,
+	StickerMetadataTemplateIDStickerPgofest2022Pheroache,
+	StickerMetadataTemplateIDStickerPgofest2022Pikachu,
+	StickerMetadataTemplateIDStickerPgofest2022Pochama,
+	StickerMetadataTemplateIDStickerPgofest2022Shaymin,
+	StickerMetadataTemplateIDStickerPgofest2022Shayminsky,
+	StickerMetadataTemplateIDStickerPgofest2022Uturoid,
+	StickerMetadataTemplateIDStickerPika14Thankyou,
 	StickerMetadataTemplateIDStickerPikaairadventure1,
 	StickerMetadataTemplateIDStickerPikaairadventure2,
 	StickerMetadataTemplateIDStickerPikaairadventure3,
@@ -1032,7 +1033,6 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDStickerPikaairtaiwanPikachu,
 	StickerMetadataTemplateIDStickerPikaairtaiwanSnorlax,
 	StickerMetadataTemplateIDStickerPikachuJol,
-	StickerMetadataTemplateIDStickerPika14Thankyou,
 	StickerMetadataTemplateIDStickerPokemonchatpals204,
 	StickerMetadataTemplateIDStickerPokemonchatpals240,
 	StickerMetadataTemplateIDStickerPokopiaBulbasaur,
@@ -1129,6 +1129,10 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDStickerStufful4,
 	StickerMetadataTemplateIDStickerSummer1,
 	StickerMetadataTemplateIDStickerSummer2,
+	StickerMetadataTemplateIDStickerSummer3,
+	StickerMetadataTemplateIDStickerSummer4,
+	StickerMetadataTemplateIDStickerSummer5,
+	StickerMetadataTemplateIDStickerSummer6,
 	StickerMetadataTemplateIDStickerSummer2023Blastoise,
 	StickerMetadataTemplateIDStickerSummer2023Butterfree,
 	StickerMetadataTemplateIDStickerSummer2023Clamperl,
@@ -1145,10 +1149,6 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDStickerSummer20252,
 	StickerMetadataTemplateIDStickerSummer20253,
 	StickerMetadataTemplateIDStickerSummer20254,
-	StickerMetadataTemplateIDStickerSummer3,
-	StickerMetadataTemplateIDStickerSummer4,
-	StickerMetadataTemplateIDStickerSummer5,
-	StickerMetadataTemplateIDStickerSummer6,
 	StickerMetadataTemplateIDStickerSwordshield211,
 	StickerMetadataTemplateIDStickerSwordshield212,
 	StickerMetadataTemplateIDStickerSwordshield213,
@@ -1179,24 +1179,14 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDStickerValentine20231,
 	StickerMetadataTemplateIDStickerValentine20232,
 	StickerMetadataTemplateIDStickerValentine20233,
+	StickerMetadataTemplateIDStickerWcsPlay,
 	StickerMetadataTemplateIDStickerWcs2025CarGroup,
 	StickerMetadataTemplateIDStickerWcs2025Jigglypuff,
 	StickerMetadataTemplateIDStickerWcs2025Murkrow,
 	StickerMetadataTemplateIDStickerWcs2025Pikachu,
-	StickerMetadataTemplateIDStickerWcsPlay,
 	StickerMetadataTemplateIDStickerWillowBronze,
 	StickerMetadataTemplateIDStickerWillowGold,
 	StickerMetadataTemplateIDStickerWillowSilver,
-	StickerMetadataTemplateIDStickerWinter20231,
-	StickerMetadataTemplateIDStickerWinter20232,
-	StickerMetadataTemplateIDStickerWinter20233,
-	StickerMetadataTemplateIDStickerWinter20234,
-	StickerMetadataTemplateIDStickerWinter20235,
-	StickerMetadataTemplateIDStickerWinter20236,
-	StickerMetadataTemplateIDStickerWinter20251,
-	StickerMetadataTemplateIDStickerWinter20252,
-	StickerMetadataTemplateIDStickerWinter20253,
-	StickerMetadataTemplateIDStickerWinter20254,
 	StickerMetadataTemplateIDStickerWinter20241,
 	StickerMetadataTemplateIDStickerWinter20242,
 	StickerMetadataTemplateIDStickerWinter20243,
@@ -1209,6 +1199,16 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDStickerWinterPikachu,
 	StickerMetadataTemplateIDStickerWinterSawsbuck,
 	StickerMetadataTemplateIDStickerWinterSnorunt,
+	StickerMetadataTemplateIDStickerWinter20231,
+	StickerMetadataTemplateIDStickerWinter20232,
+	StickerMetadataTemplateIDStickerWinter20233,
+	StickerMetadataTemplateIDStickerWinter20234,
+	StickerMetadataTemplateIDStickerWinter20235,
+	StickerMetadataTemplateIDStickerWinter20236,
+	StickerMetadataTemplateIDStickerWinter20251,
+	StickerMetadataTemplateIDStickerWinter20252,
+	StickerMetadataTemplateIDStickerWinter20253,
+	StickerMetadataTemplateIDStickerWinter20254,
 	StickerMetadataTemplateIDStickerWoopercd20231,
 	StickerMetadataTemplateIDStickerWoopercd20232,
 	StickerMetadataTemplateIDStickerWoopercd20233,

@@ -67,10 +67,10 @@ pub enum LimitedPurchaseSkuSettingsTemplateId {
     LpskuBundleWebstoreThanksgiving3,
     #[serde(rename = "LPSKU_bundle.welcomebox.1")]
     LpskuBundleWelcomebox1,
-    #[serde(rename = "LPSKU_incense.general2.medium.1")]
-    LpskuIncenseGeneral2Medium1,
     #[serde(rename = "LPSKU_incense_bundle.general2.small.1")]
     LpskuIncenseBundleGeneral2Small1,
+    #[serde(rename = "LPSKU_incense.general2.medium.1")]
+    LpskuIncenseGeneral2Medium1,
     #[serde(rename = "LPSKU_remotepass.bundle.general3.small.1")]
     LpskuRemotepassBundleGeneral3Small1,
     #[serde(rename = "LPSKU_weekly_balls.general2.medium.1")]

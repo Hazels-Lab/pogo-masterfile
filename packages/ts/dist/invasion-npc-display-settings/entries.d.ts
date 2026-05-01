@@ -328,40 +328,6 @@ export type InvasionNpcDisplaySettingsEventNpc1 = S<
 		}
 	>
 >;
-export type InvasionNpcDisplaySettingsEventNpc10 = S<
-	InvasionNpcDisplaySettings<
-		"CHARACTER_EVENT_NPC_10",
-		{
-			avatar: {
-				avatar: 1;
-				avatarBackpack: "AVATAR_f_backpack_snapcamera";
-				avatarBelt: "AVATAR_f_belt_empty";
-				avatarEyes: "AVATAR_f_eyes_3";
-				avatarFace: "AVATAR_f_face_empty";
-				avatarGlasses: "AVATAR_f_glasses_teardrop_0";
-				avatarGloves: "AVATAR_f_gloves_frlg_0";
-				avatarHair: "AVATAR_f_hair_default_19";
-				avatarHat: "AVATAR_f_hat_pkmncap_1";
-				avatarNecklace: "AVATAR_f_necklace_empty";
-				avatarPants: "AVATAR_f_pants_acetrainerbw";
-				avatarPose: "AVATAR_f_pose_05";
-				avatarShirt: "AVATAR_f_shirt_battlegirl_0";
-				avatarShoes: "AVATAR_f_shoes_pikachulibre";
-				avatarSocks: "AVATAR_f_socks_empty";
-				skin: 3;
-			};
-			backdropImageBundle: "combat_spark_backdrop";
-			customCombatMusic: "GoTour2022Music02";
-			customIncidentMusic: "CombatLeaguePickerMusic";
-			iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Spark.png";
-			modelName: "player_female";
-			trainerName: "gotoursik_elitefour_d_name";
-			trainerQuote: "gotoursik_elitefour_d_quote";
-			trainerTitle: "gotoursik_elitefour_title";
-			tutorialOnLossString: "type_tutorial_fire";
-		}
-	>
->;
 export type InvasionNpcDisplaySettingsEventNpc2 = S<
 	InvasionNpcDisplaySettings<
 		"CHARACTER_EVENT_NPC_2",
@@ -619,6 +585,40 @@ export type InvasionNpcDisplaySettingsEventNpc9 = S<
 			trainerQuote: "gotoursik_elitefour_c_quote";
 			trainerTitle: "gotoursik_elitefour_title";
 			tutorialOnLossString: "type_tutorial_water";
+		}
+	>
+>;
+export type InvasionNpcDisplaySettingsEventNpc10 = S<
+	InvasionNpcDisplaySettings<
+		"CHARACTER_EVENT_NPC_10",
+		{
+			avatar: {
+				avatar: 1;
+				avatarBackpack: "AVATAR_f_backpack_snapcamera";
+				avatarBelt: "AVATAR_f_belt_empty";
+				avatarEyes: "AVATAR_f_eyes_3";
+				avatarFace: "AVATAR_f_face_empty";
+				avatarGlasses: "AVATAR_f_glasses_teardrop_0";
+				avatarGloves: "AVATAR_f_gloves_frlg_0";
+				avatarHair: "AVATAR_f_hair_default_19";
+				avatarHat: "AVATAR_f_hat_pkmncap_1";
+				avatarNecklace: "AVATAR_f_necklace_empty";
+				avatarPants: "AVATAR_f_pants_acetrainerbw";
+				avatarPose: "AVATAR_f_pose_05";
+				avatarShirt: "AVATAR_f_shirt_battlegirl_0";
+				avatarShoes: "AVATAR_f_shoes_pikachulibre";
+				avatarSocks: "AVATAR_f_socks_empty";
+				skin: 3;
+			};
+			backdropImageBundle: "combat_spark_backdrop";
+			customCombatMusic: "GoTour2022Music02";
+			customIncidentMusic: "CombatLeaguePickerMusic";
+			iconUrl: "https://storage.googleapis.com/prod-public-images/Icon_Spark.png";
+			modelName: "player_female";
+			trainerName: "gotoursik_elitefour_d_name";
+			trainerQuote: "gotoursik_elitefour_d_quote";
+			trainerTitle: "gotoursik_elitefour_title";
+			tutorialOnLossString: "type_tutorial_fire";
 		}
 	>
 >;
@@ -1346,7 +1346,6 @@ export type InvasionNpcDisplaySettingsMasterfileEntry =
 	| InvasionNpcDisplaySettingsEventGiovanniUnticketed
 	| InvasionNpcDisplaySettingsEventNpc0
 	| InvasionNpcDisplaySettingsEventNpc1
-	| InvasionNpcDisplaySettingsEventNpc10
 	| InvasionNpcDisplaySettingsEventNpc2
 	| InvasionNpcDisplaySettingsEventNpc3
 	| InvasionNpcDisplaySettingsEventNpc4
@@ -1355,6 +1354,7 @@ export type InvasionNpcDisplaySettingsMasterfileEntry =
 	| InvasionNpcDisplaySettingsEventNpc7
 	| InvasionNpcDisplaySettingsEventNpc8
 	| InvasionNpcDisplaySettingsEventNpc9
+	| InvasionNpcDisplaySettingsEventNpc10
 	| InvasionNpcDisplaySettingsEventSierraUnticketed
 	| InvasionNpcDisplaySettingsExecutiveArlo
 	| InvasionNpcDisplaySettingsExecutiveCliff

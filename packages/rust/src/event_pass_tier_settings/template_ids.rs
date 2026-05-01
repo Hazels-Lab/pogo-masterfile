@@ -7,498 +7,86 @@ use serde::{Deserialize, Serialize};
     Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum,
 )]
 pub enum EventPassTierSettingsTemplateId {
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_100_FREE")]
-    EventPassApril2026Season100Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_100_PREMIUM")]
-    EventPassApril2026Season100Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_101_FREE")]
-    EventPassApril2026Season101Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_101_PREMIUM")]
-    EventPassApril2026Season101Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_102_FREE")]
-    EventPassApril2026Season102Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_102_PREMIUM")]
-    EventPassApril2026Season102Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_103_FREE")]
-    EventPassApril2026Season103Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_103_PREMIUM")]
-    EventPassApril2026Season103Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_104_FREE")]
-    EventPassApril2026Season104Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_104_PREMIUM")]
-    EventPassApril2026Season104Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_105_FREE")]
-    EventPassApril2026Season105Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_105_PREMIUM")]
-    EventPassApril2026Season105Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_106_FREE")]
-    EventPassApril2026Season106Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_106_PREMIUM")]
-    EventPassApril2026Season106Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_107_FREE")]
-    EventPassApril2026Season107Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_107_PREMIUM")]
-    EventPassApril2026Season107Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_108_FREE")]
-    EventPassApril2026Season108Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_108_PREMIUM")]
-    EventPassApril2026Season108Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_109_FREE")]
-    EventPassApril2026Season109Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_109_PREMIUM")]
-    EventPassApril2026Season109Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_10_FREE")]
-    EventPassApril2026Season10Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_10_PREMIUM")]
-    EventPassApril2026Season10Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_110_FREE")]
-    EventPassApril2026Season110Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_110_PREMIUM")]
-    EventPassApril2026Season110Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_111_FREE")]
-    EventPassApril2026Season111Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_111_PREMIUM")]
-    EventPassApril2026Season111Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_112_FREE")]
-    EventPassApril2026Season112Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_112_PREMIUM")]
-    EventPassApril2026Season112Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_113_FREE")]
-    EventPassApril2026Season113Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_113_PREMIUM")]
-    EventPassApril2026Season113Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_114_FREE")]
-    EventPassApril2026Season114Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_114_PREMIUM")]
-    EventPassApril2026Season114Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_115_FREE")]
-    EventPassApril2026Season115Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_115_PREMIUM")]
-    EventPassApril2026Season115Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_116_FREE")]
-    EventPassApril2026Season116Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_116_PREMIUM")]
-    EventPassApril2026Season116Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_117_FREE")]
-    EventPassApril2026Season117Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_117_PREMIUM")]
-    EventPassApril2026Season117Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_118_FREE")]
-    EventPassApril2026Season118Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_118_PREMIUM")]
-    EventPassApril2026Season118Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_119_FREE")]
-    EventPassApril2026Season119Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_119_PREMIUM")]
-    EventPassApril2026Season119Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_11_FREE")]
-    EventPassApril2026Season11Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_11_PREMIUM")]
-    EventPassApril2026Season11Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_120_FREE")]
-    EventPassApril2026Season120Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_120_PREMIUM")]
-    EventPassApril2026Season120Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_121_FREE")]
-    EventPassApril2026Season121Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_121_PREMIUM")]
-    EventPassApril2026Season121Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_122_FREE")]
-    EventPassApril2026Season122Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_122_PREMIUM")]
-    EventPassApril2026Season122Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_123_FREE")]
-    EventPassApril2026Season123Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_123_PREMIUM")]
-    EventPassApril2026Season123Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_124_FREE")]
-    EventPassApril2026Season124Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_124_PREMIUM")]
-    EventPassApril2026Season124Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_125_FREE")]
-    EventPassApril2026Season125Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_125_PREMIUM")]
-    EventPassApril2026Season125Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_126_FREE")]
-    EventPassApril2026Season126Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_126_PREMIUM")]
-    EventPassApril2026Season126Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_127_FREE")]
-    EventPassApril2026Season127Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_127_PREMIUM")]
-    EventPassApril2026Season127Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_128_FREE")]
-    EventPassApril2026Season128Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_128_PREMIUM")]
-    EventPassApril2026Season128Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_129_FREE")]
-    EventPassApril2026Season129Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_129_PREMIUM")]
-    EventPassApril2026Season129Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_12_FREE")]
-    EventPassApril2026Season12Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_12_PREMIUM")]
-    EventPassApril2026Season12Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_130_FREE")]
-    EventPassApril2026Season130Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_130_PREMIUM")]
-    EventPassApril2026Season130Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_131_FREE")]
-    EventPassApril2026Season131Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_131_PREMIUM")]
-    EventPassApril2026Season131Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_132_FREE")]
-    EventPassApril2026Season132Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_132_PREMIUM")]
-    EventPassApril2026Season132Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_133_FREE")]
-    EventPassApril2026Season133Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_133_PREMIUM")]
-    EventPassApril2026Season133Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_134_FREE")]
-    EventPassApril2026Season134Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_134_PREMIUM")]
-    EventPassApril2026Season134Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_135_FREE")]
-    EventPassApril2026Season135Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_135_PREMIUM")]
-    EventPassApril2026Season135Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_136_FREE")]
-    EventPassApril2026Season136Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_136_PREMIUM")]
-    EventPassApril2026Season136Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_137_FREE")]
-    EventPassApril2026Season137Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_137_PREMIUM")]
-    EventPassApril2026Season137Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_138_FREE")]
-    EventPassApril2026Season138Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_138_PREMIUM")]
-    EventPassApril2026Season138Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_139_FREE")]
-    EventPassApril2026Season139Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_139_PREMIUM")]
-    EventPassApril2026Season139Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_13_FREE")]
-    EventPassApril2026Season13Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_13_PREMIUM")]
-    EventPassApril2026Season13Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_140_FREE")]
-    EventPassApril2026Season140Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_140_PREMIUM")]
-    EventPassApril2026Season140Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_141_FREE")]
-    EventPassApril2026Season141Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_141_PREMIUM")]
-    EventPassApril2026Season141Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_142_FREE")]
-    EventPassApril2026Season142Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_142_PREMIUM")]
-    EventPassApril2026Season142Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_143_FREE")]
-    EventPassApril2026Season143Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_143_PREMIUM")]
-    EventPassApril2026Season143Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_144_FREE")]
-    EventPassApril2026Season144Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_144_PREMIUM")]
-    EventPassApril2026Season144Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_145_FREE")]
-    EventPassApril2026Season145Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_145_PREMIUM")]
-    EventPassApril2026Season145Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_146_FREE")]
-    EventPassApril2026Season146Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_146_PREMIUM")]
-    EventPassApril2026Season146Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_147_FREE")]
-    EventPassApril2026Season147Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_147_PREMIUM")]
-    EventPassApril2026Season147Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_148_FREE")]
-    EventPassApril2026Season148Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_148_PREMIUM")]
-    EventPassApril2026Season148Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_149_FREE")]
-    EventPassApril2026Season149Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_149_PREMIUM")]
-    EventPassApril2026Season149Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_14_FREE")]
-    EventPassApril2026Season14Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_14_PREMIUM")]
-    EventPassApril2026Season14Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_150_FREE")]
-    EventPassApril2026Season150Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_150_PREMIUM")]
-    EventPassApril2026Season150Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_151_FREE")]
-    EventPassApril2026Season151Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_151_PREMIUM")]
-    EventPassApril2026Season151Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_152_FREE")]
-    EventPassApril2026Season152Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_152_PREMIUM")]
-    EventPassApril2026Season152Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_153_FREE")]
-    EventPassApril2026Season153Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_153_PREMIUM")]
-    EventPassApril2026Season153Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_154_FREE")]
-    EventPassApril2026Season154Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_154_PREMIUM")]
-    EventPassApril2026Season154Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_155_FREE")]
-    EventPassApril2026Season155Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_155_PREMIUM")]
-    EventPassApril2026Season155Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_156_FREE")]
-    EventPassApril2026Season156Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_156_PREMIUM")]
-    EventPassApril2026Season156Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_157_FREE")]
-    EventPassApril2026Season157Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_157_PREMIUM")]
-    EventPassApril2026Season157Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_158_FREE")]
-    EventPassApril2026Season158Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_158_PREMIUM")]
-    EventPassApril2026Season158Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_159_FREE")]
-    EventPassApril2026Season159Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_159_PREMIUM")]
-    EventPassApril2026Season159Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_15_FREE")]
-    EventPassApril2026Season15Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_15_PREMIUM")]
-    EventPassApril2026Season15Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_160_FREE")]
-    EventPassApril2026Season160Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_160_PREMIUM")]
-    EventPassApril2026Season160Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_161_FREE")]
-    EventPassApril2026Season161Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_161_PREMIUM")]
-    EventPassApril2026Season161Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_162_FREE")]
-    EventPassApril2026Season162Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_162_PREMIUM")]
-    EventPassApril2026Season162Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_163_FREE")]
-    EventPassApril2026Season163Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_163_PREMIUM")]
-    EventPassApril2026Season163Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_164_FREE")]
-    EventPassApril2026Season164Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_164_PREMIUM")]
-    EventPassApril2026Season164Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_165_FREE")]
-    EventPassApril2026Season165Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_165_PREMIUM")]
-    EventPassApril2026Season165Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_166_FREE")]
-    EventPassApril2026Season166Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_166_PREMIUM")]
-    EventPassApril2026Season166Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_167_FREE")]
-    EventPassApril2026Season167Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_167_PREMIUM")]
-    EventPassApril2026Season167Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_168_FREE")]
-    EventPassApril2026Season168Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_168_PREMIUM")]
-    EventPassApril2026Season168Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_169_FREE")]
-    EventPassApril2026Season169Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_169_PREMIUM")]
-    EventPassApril2026Season169Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_16_FREE")]
-    EventPassApril2026Season16Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_16_PREMIUM")]
-    EventPassApril2026Season16Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_170_FREE")]
-    EventPassApril2026Season170Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_170_PREMIUM")]
-    EventPassApril2026Season170Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_171_FREE")]
-    EventPassApril2026Season171Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_171_PREMIUM")]
-    EventPassApril2026Season171Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_172_FREE")]
-    EventPassApril2026Season172Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_172_PREMIUM")]
-    EventPassApril2026Season172Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_173_FREE")]
-    EventPassApril2026Season173Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_173_PREMIUM")]
-    EventPassApril2026Season173Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_174_FREE")]
-    EventPassApril2026Season174Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_174_PREMIUM")]
-    EventPassApril2026Season174Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_175_FREE")]
-    EventPassApril2026Season175Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_175_PREMIUM")]
-    EventPassApril2026Season175Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_176_FREE")]
-    EventPassApril2026Season176Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_176_PREMIUM")]
-    EventPassApril2026Season176Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_177_FREE")]
-    EventPassApril2026Season177Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_177_PREMIUM")]
-    EventPassApril2026Season177Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_178_FREE")]
-    EventPassApril2026Season178Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_178_PREMIUM")]
-    EventPassApril2026Season178Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_179_FREE")]
-    EventPassApril2026Season179Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_179_PREMIUM")]
-    EventPassApril2026Season179Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_17_FREE")]
-    EventPassApril2026Season17Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_17_PREMIUM")]
-    EventPassApril2026Season17Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_180_FREE")]
-    EventPassApril2026Season180Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_180_PREMIUM")]
-    EventPassApril2026Season180Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_181_FREE")]
-    EventPassApril2026Season181Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_181_PREMIUM")]
-    EventPassApril2026Season181Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_182_FREE")]
-    EventPassApril2026Season182Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_182_PREMIUM")]
-    EventPassApril2026Season182Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_183_FREE")]
-    EventPassApril2026Season183Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_183_PREMIUM")]
-    EventPassApril2026Season183Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_184_FREE")]
-    EventPassApril2026Season184Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_184_PREMIUM")]
-    EventPassApril2026Season184Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_185_FREE")]
-    EventPassApril2026Season185Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_185_PREMIUM")]
-    EventPassApril2026Season185Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_186_FREE")]
-    EventPassApril2026Season186Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_186_PREMIUM")]
-    EventPassApril2026Season186Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_187_FREE")]
-    EventPassApril2026Season187Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_187_PREMIUM")]
-    EventPassApril2026Season187Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_188_FREE")]
-    EventPassApril2026Season188Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_188_PREMIUM")]
-    EventPassApril2026Season188Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_189_FREE")]
-    EventPassApril2026Season189Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_189_PREMIUM")]
-    EventPassApril2026Season189Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_18_FREE")]
-    EventPassApril2026Season18Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_18_PREMIUM")]
-    EventPassApril2026Season18Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_190_FREE")]
-    EventPassApril2026Season190Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_190_PREMIUM")]
-    EventPassApril2026Season190Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_191_FREE")]
-    EventPassApril2026Season191Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_191_PREMIUM")]
-    EventPassApril2026Season191Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_192_FREE")]
-    EventPassApril2026Season192Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_192_PREMIUM")]
-    EventPassApril2026Season192Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_193_FREE")]
-    EventPassApril2026Season193Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_193_PREMIUM")]
-    EventPassApril2026Season193Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_194_FREE")]
-    EventPassApril2026Season194Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_194_PREMIUM")]
-    EventPassApril2026Season194Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_195_FREE")]
-    EventPassApril2026Season195Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_195_PREMIUM")]
-    EventPassApril2026Season195Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_196_FREE")]
-    EventPassApril2026Season196Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_196_PREMIUM")]
-    EventPassApril2026Season196Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_197_FREE")]
-    EventPassApril2026Season197Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_197_PREMIUM")]
-    EventPassApril2026Season197Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_198_FREE")]
-    EventPassApril2026Season198Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_198_PREMIUM")]
-    EventPassApril2026Season198Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_199_FREE")]
-    EventPassApril2026Season199Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_199_PREMIUM")]
-    EventPassApril2026Season199Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_19_FREE")]
-    EventPassApril2026Season19Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_19_PREMIUM")]
-    EventPassApril2026Season19Premium,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_1_FREE")]
     EventPassApril2026Season1Free,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_1_PREMIUM")]
     EventPassApril2026Season1Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_200_FREE")]
-    EventPassApril2026Season200Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_200_PREMIUM")]
-    EventPassApril2026Season200Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_201_FREE")]
-    EventPassApril2026Season201Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_201_PREMIUM")]
-    EventPassApril2026Season201Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_202_FREE")]
-    EventPassApril2026Season202Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_202_PREMIUM")]
-    EventPassApril2026Season202Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_203_FREE")]
-    EventPassApril2026Season203Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_203_PREMIUM")]
-    EventPassApril2026Season203Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_204_FREE")]
-    EventPassApril2026Season204Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_204_PREMIUM")]
-    EventPassApril2026Season204Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_205_FREE")]
-    EventPassApril2026Season205Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_205_PREMIUM")]
-    EventPassApril2026Season205Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_206_FREE")]
-    EventPassApril2026Season206Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_206_PREMIUM")]
-    EventPassApril2026Season206Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_207_FREE")]
-    EventPassApril2026Season207Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_207_PREMIUM")]
-    EventPassApril2026Season207Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_208_FREE")]
-    EventPassApril2026Season208Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_208_PREMIUM")]
-    EventPassApril2026Season208Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_209_FREE")]
-    EventPassApril2026Season209Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_209_PREMIUM")]
-    EventPassApril2026Season209Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_2_FREE")]
+    EventPassApril2026Season2Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_2_PREMIUM")]
+    EventPassApril2026Season2Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_3_FREE")]
+    EventPassApril2026Season3Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_3_PREMIUM")]
+    EventPassApril2026Season3Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_4_FREE")]
+    EventPassApril2026Season4Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_4_PREMIUM")]
+    EventPassApril2026Season4Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_5_FREE")]
+    EventPassApril2026Season5Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_5_PREMIUM")]
+    EventPassApril2026Season5Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_6_FREE")]
+    EventPassApril2026Season6Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_6_PREMIUM")]
+    EventPassApril2026Season6Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_7_FREE")]
+    EventPassApril2026Season7Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_7_PREMIUM")]
+    EventPassApril2026Season7Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_8_FREE")]
+    EventPassApril2026Season8Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_8_PREMIUM")]
+    EventPassApril2026Season8Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_9_FREE")]
+    EventPassApril2026Season9Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_9_PREMIUM")]
+    EventPassApril2026Season9Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_10_FREE")]
+    EventPassApril2026Season10Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_10_PREMIUM")]
+    EventPassApril2026Season10Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_11_FREE")]
+    EventPassApril2026Season11Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_11_PREMIUM")]
+    EventPassApril2026Season11Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_12_FREE")]
+    EventPassApril2026Season12Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_12_PREMIUM")]
+    EventPassApril2026Season12Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_13_FREE")]
+    EventPassApril2026Season13Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_13_PREMIUM")]
+    EventPassApril2026Season13Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_14_FREE")]
+    EventPassApril2026Season14Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_14_PREMIUM")]
+    EventPassApril2026Season14Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_15_FREE")]
+    EventPassApril2026Season15Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_15_PREMIUM")]
+    EventPassApril2026Season15Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_16_FREE")]
+    EventPassApril2026Season16Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_16_PREMIUM")]
+    EventPassApril2026Season16Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_17_FREE")]
+    EventPassApril2026Season17Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_17_PREMIUM")]
+    EventPassApril2026Season17Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_18_FREE")]
+    EventPassApril2026Season18Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_18_PREMIUM")]
+    EventPassApril2026Season18Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_19_FREE")]
+    EventPassApril2026Season19Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_19_PREMIUM")]
+    EventPassApril2026Season19Premium,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_20_FREE")]
     EventPassApril2026Season20Free,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_20_PREMIUM")]
     EventPassApril2026Season20Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_210_FREE")]
-    EventPassApril2026Season210Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_210_PREMIUM")]
-    EventPassApril2026Season210Premium,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_21_FREE")]
     EventPassApril2026Season21Free,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_21_PREMIUM")]
@@ -535,10 +123,6 @@ pub enum EventPassTierSettingsTemplateId {
     EventPassApril2026Season29Free,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_29_PREMIUM")]
     EventPassApril2026Season29Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_2_FREE")]
-    EventPassApril2026Season2Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_2_PREMIUM")]
-    EventPassApril2026Season2Premium,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_30_FREE")]
     EventPassApril2026Season30Free,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_30_PREMIUM")]
@@ -579,10 +163,6 @@ pub enum EventPassTierSettingsTemplateId {
     EventPassApril2026Season39Free,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_39_PREMIUM")]
     EventPassApril2026Season39Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_3_FREE")]
-    EventPassApril2026Season3Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_3_PREMIUM")]
-    EventPassApril2026Season3Premium,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_40_FREE")]
     EventPassApril2026Season40Free,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_40_PREMIUM")]
@@ -623,10 +203,6 @@ pub enum EventPassTierSettingsTemplateId {
     EventPassApril2026Season49Free,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_49_PREMIUM")]
     EventPassApril2026Season49Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_4_FREE")]
-    EventPassApril2026Season4Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_4_PREMIUM")]
-    EventPassApril2026Season4Premium,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_50_FREE")]
     EventPassApril2026Season50Free,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_50_PREMIUM")]
@@ -667,10 +243,6 @@ pub enum EventPassTierSettingsTemplateId {
     EventPassApril2026Season59Free,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_59_PREMIUM")]
     EventPassApril2026Season59Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_5_FREE")]
-    EventPassApril2026Season5Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_5_PREMIUM")]
-    EventPassApril2026Season5Premium,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_60_FREE")]
     EventPassApril2026Season60Free,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_60_PREMIUM")]
@@ -711,10 +283,6 @@ pub enum EventPassTierSettingsTemplateId {
     EventPassApril2026Season69Free,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_69_PREMIUM")]
     EventPassApril2026Season69Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_6_FREE")]
-    EventPassApril2026Season6Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_6_PREMIUM")]
-    EventPassApril2026Season6Premium,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_70_FREE")]
     EventPassApril2026Season70Free,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_70_PREMIUM")]
@@ -755,10 +323,6 @@ pub enum EventPassTierSettingsTemplateId {
     EventPassApril2026Season79Free,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_79_PREMIUM")]
     EventPassApril2026Season79Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_7_FREE")]
-    EventPassApril2026Season7Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_7_PREMIUM")]
-    EventPassApril2026Season7Premium,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_80_FREE")]
     EventPassApril2026Season80Free,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_80_PREMIUM")]
@@ -799,10 +363,6 @@ pub enum EventPassTierSettingsTemplateId {
     EventPassApril2026Season89Free,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_89_PREMIUM")]
     EventPassApril2026Season89Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_8_FREE")]
-    EventPassApril2026Season8Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_8_PREMIUM")]
-    EventPassApril2026Season8Premium,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_90_FREE")]
     EventPassApril2026Season90Free,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_90_PREMIUM")]
@@ -843,12 +403,486 @@ pub enum EventPassTierSettingsTemplateId {
     EventPassApril2026Season99Free,
     #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_99_PREMIUM")]
     EventPassApril2026Season99Premium,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_9_FREE")]
-    EventPassApril2026Season9Free,
-    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_9_PREMIUM")]
-    EventPassApril2026Season9Premium,
-    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_100_FREE")]
-    EventPassSteeledresolve2026Event100Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_100_FREE")]
+    EventPassApril2026Season100Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_100_PREMIUM")]
+    EventPassApril2026Season100Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_101_FREE")]
+    EventPassApril2026Season101Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_101_PREMIUM")]
+    EventPassApril2026Season101Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_102_FREE")]
+    EventPassApril2026Season102Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_102_PREMIUM")]
+    EventPassApril2026Season102Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_103_FREE")]
+    EventPassApril2026Season103Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_103_PREMIUM")]
+    EventPassApril2026Season103Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_104_FREE")]
+    EventPassApril2026Season104Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_104_PREMIUM")]
+    EventPassApril2026Season104Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_105_FREE")]
+    EventPassApril2026Season105Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_105_PREMIUM")]
+    EventPassApril2026Season105Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_106_FREE")]
+    EventPassApril2026Season106Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_106_PREMIUM")]
+    EventPassApril2026Season106Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_107_FREE")]
+    EventPassApril2026Season107Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_107_PREMIUM")]
+    EventPassApril2026Season107Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_108_FREE")]
+    EventPassApril2026Season108Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_108_PREMIUM")]
+    EventPassApril2026Season108Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_109_FREE")]
+    EventPassApril2026Season109Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_109_PREMIUM")]
+    EventPassApril2026Season109Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_110_FREE")]
+    EventPassApril2026Season110Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_110_PREMIUM")]
+    EventPassApril2026Season110Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_111_FREE")]
+    EventPassApril2026Season111Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_111_PREMIUM")]
+    EventPassApril2026Season111Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_112_FREE")]
+    EventPassApril2026Season112Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_112_PREMIUM")]
+    EventPassApril2026Season112Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_113_FREE")]
+    EventPassApril2026Season113Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_113_PREMIUM")]
+    EventPassApril2026Season113Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_114_FREE")]
+    EventPassApril2026Season114Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_114_PREMIUM")]
+    EventPassApril2026Season114Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_115_FREE")]
+    EventPassApril2026Season115Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_115_PREMIUM")]
+    EventPassApril2026Season115Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_116_FREE")]
+    EventPassApril2026Season116Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_116_PREMIUM")]
+    EventPassApril2026Season116Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_117_FREE")]
+    EventPassApril2026Season117Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_117_PREMIUM")]
+    EventPassApril2026Season117Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_118_FREE")]
+    EventPassApril2026Season118Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_118_PREMIUM")]
+    EventPassApril2026Season118Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_119_FREE")]
+    EventPassApril2026Season119Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_119_PREMIUM")]
+    EventPassApril2026Season119Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_120_FREE")]
+    EventPassApril2026Season120Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_120_PREMIUM")]
+    EventPassApril2026Season120Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_121_FREE")]
+    EventPassApril2026Season121Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_121_PREMIUM")]
+    EventPassApril2026Season121Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_122_FREE")]
+    EventPassApril2026Season122Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_122_PREMIUM")]
+    EventPassApril2026Season122Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_123_FREE")]
+    EventPassApril2026Season123Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_123_PREMIUM")]
+    EventPassApril2026Season123Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_124_FREE")]
+    EventPassApril2026Season124Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_124_PREMIUM")]
+    EventPassApril2026Season124Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_125_FREE")]
+    EventPassApril2026Season125Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_125_PREMIUM")]
+    EventPassApril2026Season125Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_126_FREE")]
+    EventPassApril2026Season126Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_126_PREMIUM")]
+    EventPassApril2026Season126Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_127_FREE")]
+    EventPassApril2026Season127Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_127_PREMIUM")]
+    EventPassApril2026Season127Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_128_FREE")]
+    EventPassApril2026Season128Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_128_PREMIUM")]
+    EventPassApril2026Season128Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_129_FREE")]
+    EventPassApril2026Season129Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_129_PREMIUM")]
+    EventPassApril2026Season129Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_130_FREE")]
+    EventPassApril2026Season130Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_130_PREMIUM")]
+    EventPassApril2026Season130Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_131_FREE")]
+    EventPassApril2026Season131Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_131_PREMIUM")]
+    EventPassApril2026Season131Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_132_FREE")]
+    EventPassApril2026Season132Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_132_PREMIUM")]
+    EventPassApril2026Season132Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_133_FREE")]
+    EventPassApril2026Season133Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_133_PREMIUM")]
+    EventPassApril2026Season133Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_134_FREE")]
+    EventPassApril2026Season134Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_134_PREMIUM")]
+    EventPassApril2026Season134Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_135_FREE")]
+    EventPassApril2026Season135Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_135_PREMIUM")]
+    EventPassApril2026Season135Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_136_FREE")]
+    EventPassApril2026Season136Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_136_PREMIUM")]
+    EventPassApril2026Season136Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_137_FREE")]
+    EventPassApril2026Season137Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_137_PREMIUM")]
+    EventPassApril2026Season137Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_138_FREE")]
+    EventPassApril2026Season138Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_138_PREMIUM")]
+    EventPassApril2026Season138Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_139_FREE")]
+    EventPassApril2026Season139Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_139_PREMIUM")]
+    EventPassApril2026Season139Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_140_FREE")]
+    EventPassApril2026Season140Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_140_PREMIUM")]
+    EventPassApril2026Season140Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_141_FREE")]
+    EventPassApril2026Season141Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_141_PREMIUM")]
+    EventPassApril2026Season141Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_142_FREE")]
+    EventPassApril2026Season142Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_142_PREMIUM")]
+    EventPassApril2026Season142Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_143_FREE")]
+    EventPassApril2026Season143Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_143_PREMIUM")]
+    EventPassApril2026Season143Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_144_FREE")]
+    EventPassApril2026Season144Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_144_PREMIUM")]
+    EventPassApril2026Season144Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_145_FREE")]
+    EventPassApril2026Season145Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_145_PREMIUM")]
+    EventPassApril2026Season145Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_146_FREE")]
+    EventPassApril2026Season146Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_146_PREMIUM")]
+    EventPassApril2026Season146Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_147_FREE")]
+    EventPassApril2026Season147Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_147_PREMIUM")]
+    EventPassApril2026Season147Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_148_FREE")]
+    EventPassApril2026Season148Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_148_PREMIUM")]
+    EventPassApril2026Season148Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_149_FREE")]
+    EventPassApril2026Season149Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_149_PREMIUM")]
+    EventPassApril2026Season149Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_150_FREE")]
+    EventPassApril2026Season150Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_150_PREMIUM")]
+    EventPassApril2026Season150Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_151_FREE")]
+    EventPassApril2026Season151Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_151_PREMIUM")]
+    EventPassApril2026Season151Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_152_FREE")]
+    EventPassApril2026Season152Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_152_PREMIUM")]
+    EventPassApril2026Season152Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_153_FREE")]
+    EventPassApril2026Season153Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_153_PREMIUM")]
+    EventPassApril2026Season153Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_154_FREE")]
+    EventPassApril2026Season154Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_154_PREMIUM")]
+    EventPassApril2026Season154Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_155_FREE")]
+    EventPassApril2026Season155Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_155_PREMIUM")]
+    EventPassApril2026Season155Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_156_FREE")]
+    EventPassApril2026Season156Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_156_PREMIUM")]
+    EventPassApril2026Season156Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_157_FREE")]
+    EventPassApril2026Season157Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_157_PREMIUM")]
+    EventPassApril2026Season157Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_158_FREE")]
+    EventPassApril2026Season158Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_158_PREMIUM")]
+    EventPassApril2026Season158Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_159_FREE")]
+    EventPassApril2026Season159Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_159_PREMIUM")]
+    EventPassApril2026Season159Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_160_FREE")]
+    EventPassApril2026Season160Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_160_PREMIUM")]
+    EventPassApril2026Season160Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_161_FREE")]
+    EventPassApril2026Season161Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_161_PREMIUM")]
+    EventPassApril2026Season161Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_162_FREE")]
+    EventPassApril2026Season162Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_162_PREMIUM")]
+    EventPassApril2026Season162Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_163_FREE")]
+    EventPassApril2026Season163Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_163_PREMIUM")]
+    EventPassApril2026Season163Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_164_FREE")]
+    EventPassApril2026Season164Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_164_PREMIUM")]
+    EventPassApril2026Season164Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_165_FREE")]
+    EventPassApril2026Season165Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_165_PREMIUM")]
+    EventPassApril2026Season165Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_166_FREE")]
+    EventPassApril2026Season166Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_166_PREMIUM")]
+    EventPassApril2026Season166Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_167_FREE")]
+    EventPassApril2026Season167Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_167_PREMIUM")]
+    EventPassApril2026Season167Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_168_FREE")]
+    EventPassApril2026Season168Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_168_PREMIUM")]
+    EventPassApril2026Season168Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_169_FREE")]
+    EventPassApril2026Season169Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_169_PREMIUM")]
+    EventPassApril2026Season169Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_170_FREE")]
+    EventPassApril2026Season170Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_170_PREMIUM")]
+    EventPassApril2026Season170Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_171_FREE")]
+    EventPassApril2026Season171Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_171_PREMIUM")]
+    EventPassApril2026Season171Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_172_FREE")]
+    EventPassApril2026Season172Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_172_PREMIUM")]
+    EventPassApril2026Season172Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_173_FREE")]
+    EventPassApril2026Season173Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_173_PREMIUM")]
+    EventPassApril2026Season173Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_174_FREE")]
+    EventPassApril2026Season174Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_174_PREMIUM")]
+    EventPassApril2026Season174Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_175_FREE")]
+    EventPassApril2026Season175Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_175_PREMIUM")]
+    EventPassApril2026Season175Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_176_FREE")]
+    EventPassApril2026Season176Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_176_PREMIUM")]
+    EventPassApril2026Season176Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_177_FREE")]
+    EventPassApril2026Season177Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_177_PREMIUM")]
+    EventPassApril2026Season177Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_178_FREE")]
+    EventPassApril2026Season178Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_178_PREMIUM")]
+    EventPassApril2026Season178Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_179_FREE")]
+    EventPassApril2026Season179Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_179_PREMIUM")]
+    EventPassApril2026Season179Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_180_FREE")]
+    EventPassApril2026Season180Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_180_PREMIUM")]
+    EventPassApril2026Season180Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_181_FREE")]
+    EventPassApril2026Season181Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_181_PREMIUM")]
+    EventPassApril2026Season181Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_182_FREE")]
+    EventPassApril2026Season182Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_182_PREMIUM")]
+    EventPassApril2026Season182Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_183_FREE")]
+    EventPassApril2026Season183Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_183_PREMIUM")]
+    EventPassApril2026Season183Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_184_FREE")]
+    EventPassApril2026Season184Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_184_PREMIUM")]
+    EventPassApril2026Season184Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_185_FREE")]
+    EventPassApril2026Season185Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_185_PREMIUM")]
+    EventPassApril2026Season185Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_186_FREE")]
+    EventPassApril2026Season186Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_186_PREMIUM")]
+    EventPassApril2026Season186Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_187_FREE")]
+    EventPassApril2026Season187Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_187_PREMIUM")]
+    EventPassApril2026Season187Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_188_FREE")]
+    EventPassApril2026Season188Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_188_PREMIUM")]
+    EventPassApril2026Season188Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_189_FREE")]
+    EventPassApril2026Season189Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_189_PREMIUM")]
+    EventPassApril2026Season189Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_190_FREE")]
+    EventPassApril2026Season190Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_190_PREMIUM")]
+    EventPassApril2026Season190Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_191_FREE")]
+    EventPassApril2026Season191Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_191_PREMIUM")]
+    EventPassApril2026Season191Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_192_FREE")]
+    EventPassApril2026Season192Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_192_PREMIUM")]
+    EventPassApril2026Season192Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_193_FREE")]
+    EventPassApril2026Season193Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_193_PREMIUM")]
+    EventPassApril2026Season193Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_194_FREE")]
+    EventPassApril2026Season194Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_194_PREMIUM")]
+    EventPassApril2026Season194Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_195_FREE")]
+    EventPassApril2026Season195Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_195_PREMIUM")]
+    EventPassApril2026Season195Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_196_FREE")]
+    EventPassApril2026Season196Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_196_PREMIUM")]
+    EventPassApril2026Season196Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_197_FREE")]
+    EventPassApril2026Season197Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_197_PREMIUM")]
+    EventPassApril2026Season197Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_198_FREE")]
+    EventPassApril2026Season198Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_198_PREMIUM")]
+    EventPassApril2026Season198Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_199_FREE")]
+    EventPassApril2026Season199Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_199_PREMIUM")]
+    EventPassApril2026Season199Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_200_FREE")]
+    EventPassApril2026Season200Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_200_PREMIUM")]
+    EventPassApril2026Season200Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_201_FREE")]
+    EventPassApril2026Season201Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_201_PREMIUM")]
+    EventPassApril2026Season201Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_202_FREE")]
+    EventPassApril2026Season202Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_202_PREMIUM")]
+    EventPassApril2026Season202Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_203_FREE")]
+    EventPassApril2026Season203Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_203_PREMIUM")]
+    EventPassApril2026Season203Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_204_FREE")]
+    EventPassApril2026Season204Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_204_PREMIUM")]
+    EventPassApril2026Season204Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_205_FREE")]
+    EventPassApril2026Season205Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_205_PREMIUM")]
+    EventPassApril2026Season205Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_206_FREE")]
+    EventPassApril2026Season206Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_206_PREMIUM")]
+    EventPassApril2026Season206Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_207_FREE")]
+    EventPassApril2026Season207Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_207_PREMIUM")]
+    EventPassApril2026Season207Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_208_FREE")]
+    EventPassApril2026Season208Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_208_PREMIUM")]
+    EventPassApril2026Season208Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_209_FREE")]
+    EventPassApril2026Season209Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_209_PREMIUM")]
+    EventPassApril2026Season209Premium,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_210_FREE")]
+    EventPassApril2026Season210Free,
+    #[serde(rename = "EVENT_PASS_APRIL2026_SEASON_210_PREMIUM")]
+    EventPassApril2026Season210Premium,
+    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_1_FREE")]
+    EventPassSteeledresolve2026Event1Free,
+    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_1_PREMIUM")]
+    EventPassSteeledresolve2026Event1Premium,
+    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_2_FREE")]
+    EventPassSteeledresolve2026Event2Free,
+    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_2_PREMIUM")]
+    EventPassSteeledresolve2026Event2Premium,
+    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_3_FREE")]
+    EventPassSteeledresolve2026Event3Free,
+    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_3_PREMIUM")]
+    EventPassSteeledresolve2026Event3Premium,
+    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_4_FREE")]
+    EventPassSteeledresolve2026Event4Free,
+    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_4_PREMIUM")]
+    EventPassSteeledresolve2026Event4Premium,
+    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_5_FREE")]
+    EventPassSteeledresolve2026Event5Free,
+    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_5_PREMIUM")]
+    EventPassSteeledresolve2026Event5Premium,
+    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_6_FREE")]
+    EventPassSteeledresolve2026Event6Free,
+    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_6_PREMIUM")]
+    EventPassSteeledresolve2026Event6Premium,
+    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_7_FREE")]
+    EventPassSteeledresolve2026Event7Free,
+    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_7_PREMIUM")]
+    EventPassSteeledresolve2026Event7Premium,
+    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_8_FREE")]
+    EventPassSteeledresolve2026Event8Free,
+    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_8_PREMIUM")]
+    EventPassSteeledresolve2026Event8Premium,
+    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_9_FREE")]
+    EventPassSteeledresolve2026Event9Free,
+    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_9_PREMIUM")]
+    EventPassSteeledresolve2026Event9Premium,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_10_FREE")]
     EventPassSteeledresolve2026Event10Free,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_10_PREMIUM")]
@@ -889,10 +923,6 @@ pub enum EventPassTierSettingsTemplateId {
     EventPassSteeledresolve2026Event19Free,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_19_PREMIUM")]
     EventPassSteeledresolve2026Event19Premium,
-    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_1_FREE")]
-    EventPassSteeledresolve2026Event1Free,
-    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_1_PREMIUM")]
-    EventPassSteeledresolve2026Event1Premium,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_20_FREE")]
     EventPassSteeledresolve2026Event20Free,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_20_PREMIUM")]
@@ -933,10 +963,6 @@ pub enum EventPassTierSettingsTemplateId {
     EventPassSteeledresolve2026Event29Free,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_29_PREMIUM")]
     EventPassSteeledresolve2026Event29Premium,
-    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_2_FREE")]
-    EventPassSteeledresolve2026Event2Free,
-    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_2_PREMIUM")]
-    EventPassSteeledresolve2026Event2Premium,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_30_FREE")]
     EventPassSteeledresolve2026Event30Free,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_30_PREMIUM")]
@@ -977,10 +1003,6 @@ pub enum EventPassTierSettingsTemplateId {
     EventPassSteeledresolve2026Event39Free,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_39_PREMIUM")]
     EventPassSteeledresolve2026Event39Premium,
-    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_3_FREE")]
-    EventPassSteeledresolve2026Event3Free,
-    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_3_PREMIUM")]
-    EventPassSteeledresolve2026Event3Premium,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_40_FREE")]
     EventPassSteeledresolve2026Event40Free,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_40_PREMIUM")]
@@ -1021,10 +1043,6 @@ pub enum EventPassTierSettingsTemplateId {
     EventPassSteeledresolve2026Event49Free,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_49_PREMIUM")]
     EventPassSteeledresolve2026Event49Premium,
-    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_4_FREE")]
-    EventPassSteeledresolve2026Event4Free,
-    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_4_PREMIUM")]
-    EventPassSteeledresolve2026Event4Premium,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_50_FREE")]
     EventPassSteeledresolve2026Event50Free,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_50_PREMIUM")]
@@ -1065,10 +1083,6 @@ pub enum EventPassTierSettingsTemplateId {
     EventPassSteeledresolve2026Event59Free,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_59_PREMIUM")]
     EventPassSteeledresolve2026Event59Premium,
-    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_5_FREE")]
-    EventPassSteeledresolve2026Event5Free,
-    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_5_PREMIUM")]
-    EventPassSteeledresolve2026Event5Premium,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_60_FREE")]
     EventPassSteeledresolve2026Event60Free,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_60_PREMIUM")]
@@ -1091,10 +1105,6 @@ pub enum EventPassTierSettingsTemplateId {
     EventPassSteeledresolve2026Event68Free,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_69_FREE")]
     EventPassSteeledresolve2026Event69Free,
-    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_6_FREE")]
-    EventPassSteeledresolve2026Event6Free,
-    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_6_PREMIUM")]
-    EventPassSteeledresolve2026Event6Premium,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_70_FREE")]
     EventPassSteeledresolve2026Event70Free,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_71_FREE")]
@@ -1115,10 +1125,6 @@ pub enum EventPassTierSettingsTemplateId {
     EventPassSteeledresolve2026Event78Free,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_79_FREE")]
     EventPassSteeledresolve2026Event79Free,
-    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_7_FREE")]
-    EventPassSteeledresolve2026Event7Free,
-    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_7_PREMIUM")]
-    EventPassSteeledresolve2026Event7Premium,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_80_FREE")]
     EventPassSteeledresolve2026Event80Free,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_81_FREE")]
@@ -1139,10 +1145,6 @@ pub enum EventPassTierSettingsTemplateId {
     EventPassSteeledresolve2026Event88Free,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_89_FREE")]
     EventPassSteeledresolve2026Event89Free,
-    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_8_FREE")]
-    EventPassSteeledresolve2026Event8Free,
-    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_8_PREMIUM")]
-    EventPassSteeledresolve2026Event8Premium,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_90_FREE")]
     EventPassSteeledresolve2026Event90Free,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_91_FREE")]
@@ -1163,8 +1165,6 @@ pub enum EventPassTierSettingsTemplateId {
     EventPassSteeledresolve2026Event98Free,
     #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_99_FREE")]
     EventPassSteeledresolve2026Event99Free,
-    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_9_FREE")]
-    EventPassSteeledresolve2026Event9Free,
-    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_9_PREMIUM")]
-    EventPassSteeledresolve2026Event9Premium,
+    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_100_FREE")]
+    EventPassSteeledresolve2026Event100Free,
 }

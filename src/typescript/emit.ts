@@ -32,7 +32,7 @@ function entryVariantStatements(
 	aliases: Map<string, string>,
 	invariants: InvariantTree,
 ): { statements: ts.Statement[]; typeNames: string[] } {
-	const sortedEntries = [...entries].sort((a, b) => a.templateId.localeCompare(b.templateId));
+	const sortedEntries = [...entries].sort((a, b) => compareNatural(a.templateId, b.templateId));
 	const statements: ts.Statement[] = [];
 	const typeNames: string[] = [];
 	for (const entry of sortedEntries) {

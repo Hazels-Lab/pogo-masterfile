@@ -1,4 +1,5 @@
 import type { Entry, Group } from "./group.ts";
+import { compareNatural } from "./helpers.ts";
 import { kebabCase, sharedPrefix } from "./naming.ts";
 
 // H1 (field-based bucketing): a field qualifies as a split key if its distinct values
@@ -90,7 +91,7 @@ export function tryH1(group: Group): H1Result | null {
 	candidates.sort((a, b) => {
 		if (a.dominance !== b.dominance) return a.dominance - b.dominance;
 		if (a.cardinality !== b.cardinality) return a.cardinality - b.cardinality;
-		return a.field.localeCompare(b.field);
+		return compareNatural(a.field, b.field);
 	});
 	const winner = candidates[0]!;
 
@@ -99,7 +100,7 @@ export function tryH1(group: Group): H1Result | null {
 	for (const [value, entries] of winner.values) {
 		buckets.push({ value, fileName: valueFileName(value, allValues), entries });
 	}
-	buckets.sort((a, b) => a.fileName.localeCompare(b.fileName));
+	buckets.sort((a, b) => compareNatural(a.fileName, b.fileName));
 
 	return { field: winner.field, buckets };
 }
@@ -192,7 +193,7 @@ export function tryH2(group: Group): H2Result | null {
 	for (const [value, entries] of winner.values) {
 		buckets.push({ value, fileName: valueFileName(value, allValues), entries });
 	}
-	buckets.sort((a, b) => a.fileName.localeCompare(b.fileName));
+	buckets.sort((a, b) => compareNatural(a.fileName, b.fileName));
 	return { position: winner.position, buckets };
 }
 
@@ -318,7 +319,7 @@ export function clusterSingletons(singletons: Group[]): MiscBucket[] {
 	if (leftovers.length > 0) {
 		named.push({ token: "misc", fileName: "misc", singletons: leftovers });
 	}
-	named.sort((a, b) => a.fileName.localeCompare(b.fileName));
+	named.sort((a, b) => compareNatural(a.fileName, b.fileName));
 	return named;
 }
 

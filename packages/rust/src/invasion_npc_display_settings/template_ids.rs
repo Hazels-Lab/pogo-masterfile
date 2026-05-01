@@ -41,8 +41,6 @@ pub enum InvasionNpcDisplaySettingsTemplateId {
     CharacterEventNpc0,
     #[serde(rename = "CHARACTER_EVENT_NPC_1")]
     CharacterEventNpc1,
-    #[serde(rename = "CHARACTER_EVENT_NPC_10")]
-    CharacterEventNpc10,
     #[serde(rename = "CHARACTER_EVENT_NPC_2")]
     CharacterEventNpc2,
     #[serde(rename = "CHARACTER_EVENT_NPC_3")]
@@ -59,6 +57,8 @@ pub enum InvasionNpcDisplaySettingsTemplateId {
     CharacterEventNpc8,
     #[serde(rename = "CHARACTER_EVENT_NPC_9")]
     CharacterEventNpc9,
+    #[serde(rename = "CHARACTER_EVENT_NPC_10")]
+    CharacterEventNpc10,
     #[serde(rename = "CHARACTER_EVENT_SIERRA_UNTICKETED")]
     CharacterEventSierraUnticketed,
     #[serde(rename = "CHARACTER_EXECUTIVE_ARLO")]
@@ -99,14 +99,14 @@ pub enum InvasionNpcDisplaySettingsTemplateId {
     CharacterGroundGruntFemale,
     #[serde(rename = "CHARACTER_GROUND_GRUNT_MALE")]
     CharacterGroundGruntMale,
-    #[serde(rename = "CHARACTER_GRUNTB_FEMALE")]
-    CharacterGruntbFemale,
-    #[serde(rename = "CHARACTER_GRUNTB_MALE")]
-    CharacterGruntbMale,
     #[serde(rename = "CHARACTER_GRUNT_FEMALE")]
     CharacterGruntFemale,
     #[serde(rename = "CHARACTER_GRUNT_MALE")]
     CharacterGruntMale,
+    #[serde(rename = "CHARACTER_GRUNTB_FEMALE")]
+    CharacterGruntbFemale,
+    #[serde(rename = "CHARACTER_GRUNTB_MALE")]
+    CharacterGruntbMale,
     #[serde(rename = "CHARACTER_ICE_GRUNT_FEMALE")]
     CharacterIceGruntFemale,
     #[serde(rename = "CHARACTER_ICE_GRUNT_MALE")]

@@ -25,6 +25,159 @@ export type EventPassTierSettingsApril2026Season1Free = S<
 		}
 	>
 >;
+export type EventPassTierSettingsApril2026Season2Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_2_FREE",
+		{
+			minPointsRequired: 100;
+			rank: 2;
+			rewards: [
+				{
+					item: {
+						amount: 5;
+						item: "ITEM_POKE_BALL";
+					};
+					type: "ITEM";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season3Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_3_FREE",
+		{
+			minPointsRequired: 200;
+			rank: 3;
+			rewards: [
+				{
+					pokemonEncounter: {
+						isFeaturedPokemon: true;
+						pokemonDisplay: {
+							breadModeEnum: "BREAD_MODE";
+							form: "HATENNA_NORMAL";
+						};
+						pokemonId: "HATENNA";
+					};
+					type: "POKEMON_ENCOUNTER";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season4Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_4_FREE",
+		{
+			minPointsRequired: 300;
+			rank: 4;
+			rewards: [
+				{
+					candy: {
+						amount: 5;
+						pokemonId: "HATENNA";
+					};
+					type: "CANDY";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season5Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_5_FREE",
+		{
+			minPointsRequired: 400;
+			rank: 5;
+			rewards: [
+				{
+					exp: 500;
+					type: "EXPERIENCE";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season6Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_6_FREE",
+		{
+			minPointsRequired: 500;
+			rank: 6;
+			rewards: [
+				{
+					stardust: 500;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season7Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_7_FREE",
+		{
+			minPointsRequired: 600;
+			rank: 7;
+			rewards: [
+				{
+					pokemonEncounter: {
+						isFeaturedPokemon: true;
+						pokemonDisplay: {
+							form: "TEPIG_NORMAL";
+						};
+						pokemonId: "TEPIG";
+					};
+					type: "POKEMON_ENCOUNTER";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season8Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_8_FREE",
+		{
+			minPointsRequired: 700;
+			rank: 8;
+			rewards: [
+				{
+					candy: {
+						amount: 5;
+						pokemonId: "TEPIG";
+					};
+					type: "CANDY";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season9Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_9_FREE",
+		{
+			minPointsRequired: 800;
+			rank: 9;
+			rewards: [
+				{
+					candy: {
+						amount: 5;
+						pokemonId: "BINACLE";
+					};
+					type: "CANDY";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
 export type EventPassTierSettingsApril2026Season10Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_10_FREE",
@@ -44,176 +197,6 @@ export type EventPassTierSettingsApril2026Season10Free = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season100Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_100_FREE",
-		{
-			minPointsRequired: 9900;
-			rank: 100;
-			rewards: [
-				{
-					pokemonEncounter: {
-						isFeaturedPokemon: true;
-						pokemonDisplay: {
-							form: "ENTEI_NORMAL";
-						};
-						pokemonId: "ENTEI";
-						statsLimitsOverride: {
-							maxPokemonLevel: 20;
-							minPokemonLevel: 20;
-						};
-					};
-					type: "POKEMON_ENCOUNTER";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season101Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_101_FREE",
-		{
-			minPointsRequired: 10000;
-			rank: 101;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season102Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_102_FREE",
-		{
-			minPointsRequired: 10100;
-			rank: 102;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season103Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_103_FREE",
-		{
-			minPointsRequired: 10200;
-			rank: 103;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season104Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_104_FREE",
-		{
-			minPointsRequired: 10300;
-			rank: 104;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season105Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_105_FREE",
-		{
-			minPointsRequired: 10400;
-			rank: 105;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season106Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_106_FREE",
-		{
-			minPointsRequired: 10500;
-			rank: 106;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season107Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_107_FREE",
-		{
-			minPointsRequired: 10600;
-			rank: 107;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season108Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_108_FREE",
-		{
-			minPointsRequired: 10700;
-			rank: 108;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season109Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_109_FREE",
-		{
-			minPointsRequired: 10800;
-			rank: 109;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
 export type EventPassTierSettingsApril2026Season11Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_11_FREE",
@@ -227,166 +210,6 @@ export type EventPassTierSettingsApril2026Season11Free = S<
 						item: "ITEM_POKE_BALL";
 					};
 					type: "ITEM";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season110Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_110_FREE",
-		{
-			minPointsRequired: 10900;
-			rank: 110;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season111Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_111_FREE",
-		{
-			minPointsRequired: 11000;
-			rank: 111;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season112Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_112_FREE",
-		{
-			minPointsRequired: 11100;
-			rank: 112;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season113Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_113_FREE",
-		{
-			minPointsRequired: 11200;
-			rank: 113;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season114Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_114_FREE",
-		{
-			minPointsRequired: 11300;
-			rank: 114;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season115Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_115_FREE",
-		{
-			minPointsRequired: 11400;
-			rank: 115;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season116Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_116_FREE",
-		{
-			minPointsRequired: 11500;
-			rank: 116;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season117Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_117_FREE",
-		{
-			minPointsRequired: 11600;
-			rank: 117;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season118Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_118_FREE",
-		{
-			minPointsRequired: 11700;
-			rank: 118;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season119Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_119_FREE",
-		{
-			minPointsRequired: 11800;
-			rank: 119;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
 				},
 			];
 			track: "FREE";
@@ -415,166 +238,6 @@ export type EventPassTierSettingsApril2026Season12Free = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season120Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_120_FREE",
-		{
-			minPointsRequired: 11900;
-			rank: 120;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season121Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_121_FREE",
-		{
-			minPointsRequired: 12000;
-			rank: 121;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season122Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_122_FREE",
-		{
-			minPointsRequired: 12100;
-			rank: 122;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season123Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_123_FREE",
-		{
-			minPointsRequired: 12200;
-			rank: 123;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season124Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_124_FREE",
-		{
-			minPointsRequired: 12300;
-			rank: 124;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season125Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_125_FREE",
-		{
-			minPointsRequired: 12400;
-			rank: 125;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season126Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_126_FREE",
-		{
-			minPointsRequired: 12500;
-			rank: 126;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season127Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_127_FREE",
-		{
-			minPointsRequired: 12600;
-			rank: 127;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season128Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_128_FREE",
-		{
-			minPointsRequired: 12700;
-			rank: 128;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season129Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_129_FREE",
-		{
-			minPointsRequired: 12800;
-			rank: 129;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
 export type EventPassTierSettingsApril2026Season13Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_13_FREE",
@@ -588,166 +251,6 @@ export type EventPassTierSettingsApril2026Season13Free = S<
 						pokemonId: "SLOWPOKE";
 					};
 					type: "CANDY";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season130Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_130_FREE",
-		{
-			minPointsRequired: 12900;
-			rank: 130;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season131Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_131_FREE",
-		{
-			minPointsRequired: 13000;
-			rank: 131;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season132Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_132_FREE",
-		{
-			minPointsRequired: 13100;
-			rank: 132;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season133Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_133_FREE",
-		{
-			minPointsRequired: 13200;
-			rank: 133;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season134Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_134_FREE",
-		{
-			minPointsRequired: 13300;
-			rank: 134;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season135Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_135_FREE",
-		{
-			minPointsRequired: 13400;
-			rank: 135;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season136Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_136_FREE",
-		{
-			minPointsRequired: 13500;
-			rank: 136;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season137Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_137_FREE",
-		{
-			minPointsRequired: 13600;
-			rank: 137;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season138Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_138_FREE",
-		{
-			minPointsRequired: 13700;
-			rank: 138;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season139Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_139_FREE",
-		{
-			minPointsRequired: 13800;
-			rank: 139;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
 				},
 			];
 			track: "FREE";
@@ -773,166 +276,6 @@ export type EventPassTierSettingsApril2026Season14Free = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season140Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_140_FREE",
-		{
-			minPointsRequired: 13900;
-			rank: 140;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season141Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_141_FREE",
-		{
-			minPointsRequired: 14000;
-			rank: 141;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season142Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_142_FREE",
-		{
-			minPointsRequired: 14100;
-			rank: 142;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season143Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_143_FREE",
-		{
-			minPointsRequired: 14200;
-			rank: 143;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season144Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_144_FREE",
-		{
-			minPointsRequired: 14300;
-			rank: 144;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season145Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_145_FREE",
-		{
-			minPointsRequired: 14400;
-			rank: 145;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season146Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_146_FREE",
-		{
-			minPointsRequired: 14500;
-			rank: 146;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season147Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_147_FREE",
-		{
-			minPointsRequired: 14600;
-			rank: 147;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season148Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_148_FREE",
-		{
-			minPointsRequired: 14700;
-			rank: 148;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season149Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_149_FREE",
-		{
-			minPointsRequired: 14800;
-			rank: 149;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
 export type EventPassTierSettingsApril2026Season15Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_15_FREE",
@@ -949,166 +292,6 @@ export type EventPassTierSettingsApril2026Season15Free = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season150Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_150_FREE",
-		{
-			minPointsRequired: 14900;
-			rank: 150;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season151Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_151_FREE",
-		{
-			minPointsRequired: 15000;
-			rank: 151;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season152Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_152_FREE",
-		{
-			minPointsRequired: 15100;
-			rank: 152;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season153Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_153_FREE",
-		{
-			minPointsRequired: 15200;
-			rank: 153;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season154Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_154_FREE",
-		{
-			minPointsRequired: 15300;
-			rank: 154;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season155Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_155_FREE",
-		{
-			minPointsRequired: 15400;
-			rank: 155;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season156Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_156_FREE",
-		{
-			minPointsRequired: 15500;
-			rank: 156;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season157Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_157_FREE",
-		{
-			minPointsRequired: 15600;
-			rank: 157;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season158Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_158_FREE",
-		{
-			minPointsRequired: 15700;
-			rank: 158;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season159Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_159_FREE",
-		{
-			minPointsRequired: 15800;
-			rank: 159;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
 export type EventPassTierSettingsApril2026Season16Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_16_FREE",
@@ -1118,166 +301,6 @@ export type EventPassTierSettingsApril2026Season16Free = S<
 			rewards: [
 				{
 					stardust: 750;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season160Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_160_FREE",
-		{
-			minPointsRequired: 15900;
-			rank: 160;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season161Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_161_FREE",
-		{
-			minPointsRequired: 16000;
-			rank: 161;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season162Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_162_FREE",
-		{
-			minPointsRequired: 16100;
-			rank: 162;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season163Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_163_FREE",
-		{
-			minPointsRequired: 16200;
-			rank: 163;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season164Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_164_FREE",
-		{
-			minPointsRequired: 16300;
-			rank: 164;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season165Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_165_FREE",
-		{
-			minPointsRequired: 16400;
-			rank: 165;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season166Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_166_FREE",
-		{
-			minPointsRequired: 16500;
-			rank: 166;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season167Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_167_FREE",
-		{
-			minPointsRequired: 16600;
-			rank: 167;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season168Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_168_FREE",
-		{
-			minPointsRequired: 16700;
-			rank: 168;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season169Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_169_FREE",
-		{
-			minPointsRequired: 16800;
-			rank: 169;
-			rewards: [
-				{
-					stardust: 50;
 					type: "STARDUST";
 				},
 			];
@@ -1304,166 +327,6 @@ export type EventPassTierSettingsApril2026Season17Free = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season170Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_170_FREE",
-		{
-			minPointsRequired: 16900;
-			rank: 170;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season171Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_171_FREE",
-		{
-			minPointsRequired: 17000;
-			rank: 171;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season172Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_172_FREE",
-		{
-			minPointsRequired: 17100;
-			rank: 172;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season173Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_173_FREE",
-		{
-			minPointsRequired: 17200;
-			rank: 173;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season174Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_174_FREE",
-		{
-			minPointsRequired: 17300;
-			rank: 174;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season175Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_175_FREE",
-		{
-			minPointsRequired: 17400;
-			rank: 175;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season176Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_176_FREE",
-		{
-			minPointsRequired: 17500;
-			rank: 176;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season177Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_177_FREE",
-		{
-			minPointsRequired: 17600;
-			rank: 177;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season178Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_178_FREE",
-		{
-			minPointsRequired: 17700;
-			rank: 178;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season179Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_179_FREE",
-		{
-			minPointsRequired: 17800;
-			rank: 179;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
 export type EventPassTierSettingsApril2026Season18Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_18_FREE",
@@ -1483,166 +346,6 @@ export type EventPassTierSettingsApril2026Season18Free = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season180Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_180_FREE",
-		{
-			minPointsRequired: 17900;
-			rank: 180;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season181Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_181_FREE",
-		{
-			minPointsRequired: 18000;
-			rank: 181;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season182Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_182_FREE",
-		{
-			minPointsRequired: 18100;
-			rank: 182;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season183Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_183_FREE",
-		{
-			minPointsRequired: 18200;
-			rank: 183;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season184Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_184_FREE",
-		{
-			minPointsRequired: 18300;
-			rank: 184;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season185Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_185_FREE",
-		{
-			minPointsRequired: 18400;
-			rank: 185;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season186Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_186_FREE",
-		{
-			minPointsRequired: 18500;
-			rank: 186;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season187Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_187_FREE",
-		{
-			minPointsRequired: 18600;
-			rank: 187;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season188Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_188_FREE",
-		{
-			minPointsRequired: 18700;
-			rank: 188;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season189Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_189_FREE",
-		{
-			minPointsRequired: 18800;
-			rank: 189;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
 export type EventPassTierSettingsApril2026Season19Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_19_FREE",
@@ -1654,185 +357,6 @@ export type EventPassTierSettingsApril2026Season19Free = S<
 					item: {
 						amount: 100;
 						item: "ITEM_MP";
-					};
-					type: "ITEM";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season190Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_190_FREE",
-		{
-			minPointsRequired: 18900;
-			rank: 190;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season191Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_191_FREE",
-		{
-			minPointsRequired: 19000;
-			rank: 191;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season192Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_192_FREE",
-		{
-			minPointsRequired: 19100;
-			rank: 192;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season193Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_193_FREE",
-		{
-			minPointsRequired: 19200;
-			rank: 193;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season194Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_194_FREE",
-		{
-			minPointsRequired: 19300;
-			rank: 194;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season195Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_195_FREE",
-		{
-			minPointsRequired: 19400;
-			rank: 195;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season196Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_196_FREE",
-		{
-			minPointsRequired: 19500;
-			rank: 196;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season197Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_197_FREE",
-		{
-			minPointsRequired: 19600;
-			rank: 197;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season198Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_198_FREE",
-		{
-			minPointsRequired: 19700;
-			rank: 198;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season199Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_199_FREE",
-		{
-			minPointsRequired: 19800;
-			rank: 199;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season2Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_2_FREE",
-		{
-			minPointsRequired: 100;
-			rank: 2;
-			rewards: [
-				{
-					item: {
-						amount: 5;
-						item: "ITEM_POKE_BALL";
 					};
 					type: "ITEM";
 				},
@@ -1860,166 +384,6 @@ export type EventPassTierSettingsApril2026Season20Free = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season200Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_200_FREE",
-		{
-			minPointsRequired: 19900;
-			rank: 200;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season201Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_201_FREE",
-		{
-			minPointsRequired: 20000;
-			rank: 201;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season202Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_202_FREE",
-		{
-			minPointsRequired: 20100;
-			rank: 202;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season203Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_203_FREE",
-		{
-			minPointsRequired: 20200;
-			rank: 203;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season204Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_204_FREE",
-		{
-			minPointsRequired: 20300;
-			rank: 204;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season205Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_205_FREE",
-		{
-			minPointsRequired: 20400;
-			rank: 205;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season206Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_206_FREE",
-		{
-			minPointsRequired: 20500;
-			rank: 206;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season207Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_207_FREE",
-		{
-			minPointsRequired: 20600;
-			rank: 207;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season208Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_208_FREE",
-		{
-			minPointsRequired: 20700;
-			rank: 208;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season209Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_209_FREE",
-		{
-			minPointsRequired: 20800;
-			rank: 209;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
 export type EventPassTierSettingsApril2026Season21Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_21_FREE",
@@ -2033,22 +397,6 @@ export type EventPassTierSettingsApril2026Season21Free = S<
 						item: "ITEM_LEADER_MAP_FRAGMENT";
 					};
 					type: "ITEM";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season210Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_210_FREE",
-		{
-			minPointsRequired: 20900;
-			rank: 210;
-			rewards: [
-				{
-					stardust: 50;
-					type: "STARDUST";
 				},
 			];
 			track: "FREE";
@@ -2237,29 +585,6 @@ export type EventPassTierSettingsApril2026Season29Free = S<
 						item: "ITEM_NANAB_BERRY";
 					};
 					type: "ITEM";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season3Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_3_FREE",
-		{
-			minPointsRequired: 200;
-			rank: 3;
-			rewards: [
-				{
-					pokemonEncounter: {
-						isFeaturedPokemon: true;
-						pokemonDisplay: {
-							breadModeEnum: "BREAD_MODE";
-							form: "HATENNA_NORMAL";
-						};
-						pokemonId: "HATENNA";
-					};
-					type: "POKEMON_ENCOUNTER";
 				},
 			];
 			track: "FREE";
@@ -2456,25 +781,6 @@ export type EventPassTierSettingsApril2026Season39Free = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season4Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_4_FREE",
-		{
-			minPointsRequired: 300;
-			rank: 4;
-			rewards: [
-				{
-					candy: {
-						amount: 5;
-						pokemonId: "HATENNA";
-					};
-					type: "CANDY";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
 export type EventPassTierSettingsApril2026Season40Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_40_FREE",
@@ -2659,22 +965,6 @@ export type EventPassTierSettingsApril2026Season49Free = S<
 						item: "ITEM_MP";
 					};
 					type: "ITEM";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season5Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_5_FREE",
-		{
-			minPointsRequired: 400;
-			rank: 5;
-			rewards: [
-				{
-					exp: 500;
-					type: "EXPERIENCE";
 				},
 			];
 			track: "FREE";
@@ -2903,22 +1193,6 @@ export type EventPassTierSettingsApril2026Season59Free = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season6Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_6_FREE",
-		{
-			minPointsRequired: 500;
-			rank: 6;
-			rewards: [
-				{
-					stardust: 500;
-					type: "STARDUST";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
 export type EventPassTierSettingsApril2026Season60Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_60_FREE",
@@ -3100,28 +1374,6 @@ export type EventPassTierSettingsApril2026Season69Free = S<
 						pokemonId: "POLTCHAGEIST";
 					};
 					type: "CANDY";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season7Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_7_FREE",
-		{
-			minPointsRequired: 600;
-			rank: 7;
-			rewards: [
-				{
-					pokemonEncounter: {
-						isFeaturedPokemon: true;
-						pokemonDisplay: {
-							form: "TEPIG_NORMAL";
-						};
-						pokemonId: "TEPIG";
-					};
-					type: "POKEMON_ENCOUNTER";
 				},
 			];
 			track: "FREE";
@@ -3363,25 +1615,6 @@ export type EventPassTierSettingsApril2026Season79Free = S<
 		}
 	>
 >;
-export type EventPassTierSettingsApril2026Season8Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_8_FREE",
-		{
-			minPointsRequired: 700;
-			rank: 8;
-			rewards: [
-				{
-					candy: {
-						amount: 5;
-						pokemonId: "TEPIG";
-					};
-					type: "CANDY";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
 export type EventPassTierSettingsApril2026Season80Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_APRIL2026_SEASON_80_FREE",
@@ -3566,25 +1799,6 @@ export type EventPassTierSettingsApril2026Season89Free = S<
 						item: "ITEM_RARE_CANDY";
 					};
 					type: "ITEM";
-				},
-			];
-			track: "FREE";
-		}
-	>
->;
-export type EventPassTierSettingsApril2026Season9Free = S<
-	EventPassTierSettings<
-		"EVENT_PASS_APRIL2026_SEASON_9_FREE",
-		{
-			minPointsRequired: 800;
-			rank: 9;
-			rewards: [
-				{
-					candy: {
-						amount: 5;
-						pokemonId: "BINACLE";
-					};
-					type: "CANDY";
 				},
 			];
 			track: "FREE";
@@ -3778,133 +1992,1815 @@ export type EventPassTierSettingsApril2026Season99Free = S<
 		}
 	>
 >;
+export type EventPassTierSettingsApril2026Season100Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_100_FREE",
+		{
+			minPointsRequired: 9900;
+			rank: 100;
+			rewards: [
+				{
+					pokemonEncounter: {
+						isFeaturedPokemon: true;
+						pokemonDisplay: {
+							form: "ENTEI_NORMAL";
+						};
+						pokemonId: "ENTEI";
+						statsLimitsOverride: {
+							maxPokemonLevel: 20;
+							minPokemonLevel: 20;
+						};
+					};
+					type: "POKEMON_ENCOUNTER";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season101Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_101_FREE",
+		{
+			minPointsRequired: 10000;
+			rank: 101;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season102Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_102_FREE",
+		{
+			minPointsRequired: 10100;
+			rank: 102;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season103Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_103_FREE",
+		{
+			minPointsRequired: 10200;
+			rank: 103;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season104Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_104_FREE",
+		{
+			minPointsRequired: 10300;
+			rank: 104;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season105Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_105_FREE",
+		{
+			minPointsRequired: 10400;
+			rank: 105;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season106Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_106_FREE",
+		{
+			minPointsRequired: 10500;
+			rank: 106;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season107Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_107_FREE",
+		{
+			minPointsRequired: 10600;
+			rank: 107;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season108Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_108_FREE",
+		{
+			minPointsRequired: 10700;
+			rank: 108;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season109Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_109_FREE",
+		{
+			minPointsRequired: 10800;
+			rank: 109;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season110Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_110_FREE",
+		{
+			minPointsRequired: 10900;
+			rank: 110;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season111Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_111_FREE",
+		{
+			minPointsRequired: 11000;
+			rank: 111;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season112Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_112_FREE",
+		{
+			minPointsRequired: 11100;
+			rank: 112;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season113Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_113_FREE",
+		{
+			minPointsRequired: 11200;
+			rank: 113;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season114Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_114_FREE",
+		{
+			minPointsRequired: 11300;
+			rank: 114;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season115Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_115_FREE",
+		{
+			minPointsRequired: 11400;
+			rank: 115;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season116Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_116_FREE",
+		{
+			minPointsRequired: 11500;
+			rank: 116;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season117Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_117_FREE",
+		{
+			minPointsRequired: 11600;
+			rank: 117;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season118Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_118_FREE",
+		{
+			minPointsRequired: 11700;
+			rank: 118;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season119Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_119_FREE",
+		{
+			minPointsRequired: 11800;
+			rank: 119;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season120Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_120_FREE",
+		{
+			minPointsRequired: 11900;
+			rank: 120;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season121Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_121_FREE",
+		{
+			minPointsRequired: 12000;
+			rank: 121;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season122Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_122_FREE",
+		{
+			minPointsRequired: 12100;
+			rank: 122;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season123Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_123_FREE",
+		{
+			minPointsRequired: 12200;
+			rank: 123;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season124Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_124_FREE",
+		{
+			minPointsRequired: 12300;
+			rank: 124;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season125Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_125_FREE",
+		{
+			minPointsRequired: 12400;
+			rank: 125;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season126Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_126_FREE",
+		{
+			minPointsRequired: 12500;
+			rank: 126;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season127Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_127_FREE",
+		{
+			minPointsRequired: 12600;
+			rank: 127;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season128Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_128_FREE",
+		{
+			minPointsRequired: 12700;
+			rank: 128;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season129Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_129_FREE",
+		{
+			minPointsRequired: 12800;
+			rank: 129;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season130Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_130_FREE",
+		{
+			minPointsRequired: 12900;
+			rank: 130;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season131Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_131_FREE",
+		{
+			minPointsRequired: 13000;
+			rank: 131;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season132Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_132_FREE",
+		{
+			minPointsRequired: 13100;
+			rank: 132;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season133Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_133_FREE",
+		{
+			minPointsRequired: 13200;
+			rank: 133;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season134Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_134_FREE",
+		{
+			minPointsRequired: 13300;
+			rank: 134;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season135Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_135_FREE",
+		{
+			minPointsRequired: 13400;
+			rank: 135;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season136Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_136_FREE",
+		{
+			minPointsRequired: 13500;
+			rank: 136;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season137Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_137_FREE",
+		{
+			minPointsRequired: 13600;
+			rank: 137;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season138Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_138_FREE",
+		{
+			minPointsRequired: 13700;
+			rank: 138;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season139Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_139_FREE",
+		{
+			minPointsRequired: 13800;
+			rank: 139;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season140Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_140_FREE",
+		{
+			minPointsRequired: 13900;
+			rank: 140;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season141Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_141_FREE",
+		{
+			minPointsRequired: 14000;
+			rank: 141;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season142Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_142_FREE",
+		{
+			minPointsRequired: 14100;
+			rank: 142;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season143Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_143_FREE",
+		{
+			minPointsRequired: 14200;
+			rank: 143;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season144Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_144_FREE",
+		{
+			minPointsRequired: 14300;
+			rank: 144;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season145Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_145_FREE",
+		{
+			minPointsRequired: 14400;
+			rank: 145;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season146Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_146_FREE",
+		{
+			minPointsRequired: 14500;
+			rank: 146;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season147Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_147_FREE",
+		{
+			minPointsRequired: 14600;
+			rank: 147;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season148Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_148_FREE",
+		{
+			minPointsRequired: 14700;
+			rank: 148;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season149Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_149_FREE",
+		{
+			minPointsRequired: 14800;
+			rank: 149;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season150Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_150_FREE",
+		{
+			minPointsRequired: 14900;
+			rank: 150;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season151Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_151_FREE",
+		{
+			minPointsRequired: 15000;
+			rank: 151;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season152Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_152_FREE",
+		{
+			minPointsRequired: 15100;
+			rank: 152;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season153Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_153_FREE",
+		{
+			minPointsRequired: 15200;
+			rank: 153;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season154Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_154_FREE",
+		{
+			minPointsRequired: 15300;
+			rank: 154;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season155Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_155_FREE",
+		{
+			minPointsRequired: 15400;
+			rank: 155;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season156Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_156_FREE",
+		{
+			minPointsRequired: 15500;
+			rank: 156;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season157Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_157_FREE",
+		{
+			minPointsRequired: 15600;
+			rank: 157;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season158Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_158_FREE",
+		{
+			minPointsRequired: 15700;
+			rank: 158;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season159Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_159_FREE",
+		{
+			minPointsRequired: 15800;
+			rank: 159;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season160Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_160_FREE",
+		{
+			minPointsRequired: 15900;
+			rank: 160;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season161Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_161_FREE",
+		{
+			minPointsRequired: 16000;
+			rank: 161;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season162Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_162_FREE",
+		{
+			minPointsRequired: 16100;
+			rank: 162;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season163Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_163_FREE",
+		{
+			minPointsRequired: 16200;
+			rank: 163;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season164Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_164_FREE",
+		{
+			minPointsRequired: 16300;
+			rank: 164;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season165Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_165_FREE",
+		{
+			minPointsRequired: 16400;
+			rank: 165;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season166Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_166_FREE",
+		{
+			minPointsRequired: 16500;
+			rank: 166;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season167Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_167_FREE",
+		{
+			minPointsRequired: 16600;
+			rank: 167;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season168Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_168_FREE",
+		{
+			minPointsRequired: 16700;
+			rank: 168;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season169Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_169_FREE",
+		{
+			minPointsRequired: 16800;
+			rank: 169;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season170Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_170_FREE",
+		{
+			minPointsRequired: 16900;
+			rank: 170;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season171Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_171_FREE",
+		{
+			minPointsRequired: 17000;
+			rank: 171;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season172Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_172_FREE",
+		{
+			minPointsRequired: 17100;
+			rank: 172;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season173Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_173_FREE",
+		{
+			minPointsRequired: 17200;
+			rank: 173;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season174Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_174_FREE",
+		{
+			minPointsRequired: 17300;
+			rank: 174;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season175Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_175_FREE",
+		{
+			minPointsRequired: 17400;
+			rank: 175;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season176Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_176_FREE",
+		{
+			minPointsRequired: 17500;
+			rank: 176;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season177Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_177_FREE",
+		{
+			minPointsRequired: 17600;
+			rank: 177;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season178Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_178_FREE",
+		{
+			minPointsRequired: 17700;
+			rank: 178;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season179Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_179_FREE",
+		{
+			minPointsRequired: 17800;
+			rank: 179;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season180Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_180_FREE",
+		{
+			minPointsRequired: 17900;
+			rank: 180;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season181Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_181_FREE",
+		{
+			minPointsRequired: 18000;
+			rank: 181;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season182Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_182_FREE",
+		{
+			minPointsRequired: 18100;
+			rank: 182;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season183Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_183_FREE",
+		{
+			minPointsRequired: 18200;
+			rank: 183;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season184Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_184_FREE",
+		{
+			minPointsRequired: 18300;
+			rank: 184;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season185Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_185_FREE",
+		{
+			minPointsRequired: 18400;
+			rank: 185;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season186Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_186_FREE",
+		{
+			minPointsRequired: 18500;
+			rank: 186;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season187Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_187_FREE",
+		{
+			minPointsRequired: 18600;
+			rank: 187;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season188Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_188_FREE",
+		{
+			minPointsRequired: 18700;
+			rank: 188;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season189Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_189_FREE",
+		{
+			minPointsRequired: 18800;
+			rank: 189;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season190Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_190_FREE",
+		{
+			minPointsRequired: 18900;
+			rank: 190;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season191Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_191_FREE",
+		{
+			minPointsRequired: 19000;
+			rank: 191;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season192Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_192_FREE",
+		{
+			minPointsRequired: 19100;
+			rank: 192;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season193Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_193_FREE",
+		{
+			minPointsRequired: 19200;
+			rank: 193;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season194Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_194_FREE",
+		{
+			minPointsRequired: 19300;
+			rank: 194;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season195Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_195_FREE",
+		{
+			minPointsRequired: 19400;
+			rank: 195;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season196Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_196_FREE",
+		{
+			minPointsRequired: 19500;
+			rank: 196;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season197Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_197_FREE",
+		{
+			minPointsRequired: 19600;
+			rank: 197;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season198Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_198_FREE",
+		{
+			minPointsRequired: 19700;
+			rank: 198;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season199Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_199_FREE",
+		{
+			minPointsRequired: 19800;
+			rank: 199;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season200Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_200_FREE",
+		{
+			minPointsRequired: 19900;
+			rank: 200;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season201Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_201_FREE",
+		{
+			minPointsRequired: 20000;
+			rank: 201;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season202Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_202_FREE",
+		{
+			minPointsRequired: 20100;
+			rank: 202;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season203Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_203_FREE",
+		{
+			minPointsRequired: 20200;
+			rank: 203;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season204Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_204_FREE",
+		{
+			minPointsRequired: 20300;
+			rank: 204;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season205Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_205_FREE",
+		{
+			minPointsRequired: 20400;
+			rank: 205;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season206Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_206_FREE",
+		{
+			minPointsRequired: 20500;
+			rank: 206;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season207Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_207_FREE",
+		{
+			minPointsRequired: 20600;
+			rank: 207;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season208Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_208_FREE",
+		{
+			minPointsRequired: 20700;
+			rank: 208;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season209Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_209_FREE",
+		{
+			minPointsRequired: 20800;
+			rank: 209;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
+export type EventPassTierSettingsApril2026Season210Free = S<
+	EventPassTierSettings<
+		"EVENT_PASS_APRIL2026_SEASON_210_FREE",
+		{
+			minPointsRequired: 20900;
+			rank: 210;
+			rewards: [
+				{
+					stardust: 50;
+					type: "STARDUST";
+				},
+			];
+			track: "FREE";
+		}
+	>
+>;
 
 export type EventPassTierSettingsFreeApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season1Free
-	| EventPassTierSettingsApril2026Season10Free
-	| EventPassTierSettingsApril2026Season100Free
-	| EventPassTierSettingsApril2026Season101Free
-	| EventPassTierSettingsApril2026Season102Free
-	| EventPassTierSettingsApril2026Season103Free
-	| EventPassTierSettingsApril2026Season104Free
-	| EventPassTierSettingsApril2026Season105Free
-	| EventPassTierSettingsApril2026Season106Free
-	| EventPassTierSettingsApril2026Season107Free
-	| EventPassTierSettingsApril2026Season108Free
-	| EventPassTierSettingsApril2026Season109Free
-	| EventPassTierSettingsApril2026Season11Free
-	| EventPassTierSettingsApril2026Season110Free
-	| EventPassTierSettingsApril2026Season111Free
-	| EventPassTierSettingsApril2026Season112Free
-	| EventPassTierSettingsApril2026Season113Free
-	| EventPassTierSettingsApril2026Season114Free
-	| EventPassTierSettingsApril2026Season115Free
-	| EventPassTierSettingsApril2026Season116Free
-	| EventPassTierSettingsApril2026Season117Free
-	| EventPassTierSettingsApril2026Season118Free
-	| EventPassTierSettingsApril2026Season119Free
-	| EventPassTierSettingsApril2026Season12Free
-	| EventPassTierSettingsApril2026Season120Free
-	| EventPassTierSettingsApril2026Season121Free
-	| EventPassTierSettingsApril2026Season122Free
-	| EventPassTierSettingsApril2026Season123Free
-	| EventPassTierSettingsApril2026Season124Free
-	| EventPassTierSettingsApril2026Season125Free
-	| EventPassTierSettingsApril2026Season126Free
-	| EventPassTierSettingsApril2026Season127Free
-	| EventPassTierSettingsApril2026Season128Free
-	| EventPassTierSettingsApril2026Season129Free
-	| EventPassTierSettingsApril2026Season13Free
-	| EventPassTierSettingsApril2026Season130Free
-	| EventPassTierSettingsApril2026Season131Free
-	| EventPassTierSettingsApril2026Season132Free
-	| EventPassTierSettingsApril2026Season133Free
-	| EventPassTierSettingsApril2026Season134Free
-	| EventPassTierSettingsApril2026Season135Free
-	| EventPassTierSettingsApril2026Season136Free
-	| EventPassTierSettingsApril2026Season137Free
-	| EventPassTierSettingsApril2026Season138Free
-	| EventPassTierSettingsApril2026Season139Free
-	| EventPassTierSettingsApril2026Season14Free
-	| EventPassTierSettingsApril2026Season140Free
-	| EventPassTierSettingsApril2026Season141Free
-	| EventPassTierSettingsApril2026Season142Free
-	| EventPassTierSettingsApril2026Season143Free
-	| EventPassTierSettingsApril2026Season144Free
-	| EventPassTierSettingsApril2026Season145Free
-	| EventPassTierSettingsApril2026Season146Free
-	| EventPassTierSettingsApril2026Season147Free
-	| EventPassTierSettingsApril2026Season148Free
-	| EventPassTierSettingsApril2026Season149Free
-	| EventPassTierSettingsApril2026Season15Free
-	| EventPassTierSettingsApril2026Season150Free
-	| EventPassTierSettingsApril2026Season151Free
-	| EventPassTierSettingsApril2026Season152Free
-	| EventPassTierSettingsApril2026Season153Free
-	| EventPassTierSettingsApril2026Season154Free
-	| EventPassTierSettingsApril2026Season155Free
-	| EventPassTierSettingsApril2026Season156Free
-	| EventPassTierSettingsApril2026Season157Free
-	| EventPassTierSettingsApril2026Season158Free
-	| EventPassTierSettingsApril2026Season159Free
-	| EventPassTierSettingsApril2026Season16Free
-	| EventPassTierSettingsApril2026Season160Free
-	| EventPassTierSettingsApril2026Season161Free
-	| EventPassTierSettingsApril2026Season162Free
-	| EventPassTierSettingsApril2026Season163Free
-	| EventPassTierSettingsApril2026Season164Free
-	| EventPassTierSettingsApril2026Season165Free
-	| EventPassTierSettingsApril2026Season166Free
-	| EventPassTierSettingsApril2026Season167Free
-	| EventPassTierSettingsApril2026Season168Free
-	| EventPassTierSettingsApril2026Season169Free
-	| EventPassTierSettingsApril2026Season17Free
-	| EventPassTierSettingsApril2026Season170Free
-	| EventPassTierSettingsApril2026Season171Free
-	| EventPassTierSettingsApril2026Season172Free
-	| EventPassTierSettingsApril2026Season173Free
-	| EventPassTierSettingsApril2026Season174Free
-	| EventPassTierSettingsApril2026Season175Free
-	| EventPassTierSettingsApril2026Season176Free
-	| EventPassTierSettingsApril2026Season177Free
-	| EventPassTierSettingsApril2026Season178Free
-	| EventPassTierSettingsApril2026Season179Free
-	| EventPassTierSettingsApril2026Season18Free
-	| EventPassTierSettingsApril2026Season180Free
-	| EventPassTierSettingsApril2026Season181Free
-	| EventPassTierSettingsApril2026Season182Free
-	| EventPassTierSettingsApril2026Season183Free
-	| EventPassTierSettingsApril2026Season184Free
-	| EventPassTierSettingsApril2026Season185Free
-	| EventPassTierSettingsApril2026Season186Free
-	| EventPassTierSettingsApril2026Season187Free
-	| EventPassTierSettingsApril2026Season188Free
-	| EventPassTierSettingsApril2026Season189Free
-	| EventPassTierSettingsApril2026Season19Free
-	| EventPassTierSettingsApril2026Season190Free
-	| EventPassTierSettingsApril2026Season191Free
-	| EventPassTierSettingsApril2026Season192Free
-	| EventPassTierSettingsApril2026Season193Free
-	| EventPassTierSettingsApril2026Season194Free
-	| EventPassTierSettingsApril2026Season195Free
-	| EventPassTierSettingsApril2026Season196Free
-	| EventPassTierSettingsApril2026Season197Free
-	| EventPassTierSettingsApril2026Season198Free
-	| EventPassTierSettingsApril2026Season199Free
 	| EventPassTierSettingsApril2026Season2Free
+	| EventPassTierSettingsApril2026Season3Free
+	| EventPassTierSettingsApril2026Season4Free
+	| EventPassTierSettingsApril2026Season5Free
+	| EventPassTierSettingsApril2026Season6Free
+	| EventPassTierSettingsApril2026Season7Free
+	| EventPassTierSettingsApril2026Season8Free
+	| EventPassTierSettingsApril2026Season9Free
+	| EventPassTierSettingsApril2026Season10Free
+	| EventPassTierSettingsApril2026Season11Free
+	| EventPassTierSettingsApril2026Season12Free
+	| EventPassTierSettingsApril2026Season13Free
+	| EventPassTierSettingsApril2026Season14Free
+	| EventPassTierSettingsApril2026Season15Free
+	| EventPassTierSettingsApril2026Season16Free
+	| EventPassTierSettingsApril2026Season17Free
+	| EventPassTierSettingsApril2026Season18Free
+	| EventPassTierSettingsApril2026Season19Free
 	| EventPassTierSettingsApril2026Season20Free
-	| EventPassTierSettingsApril2026Season200Free
-	| EventPassTierSettingsApril2026Season201Free
-	| EventPassTierSettingsApril2026Season202Free
-	| EventPassTierSettingsApril2026Season203Free
-	| EventPassTierSettingsApril2026Season204Free
-	| EventPassTierSettingsApril2026Season205Free
-	| EventPassTierSettingsApril2026Season206Free
-	| EventPassTierSettingsApril2026Season207Free
-	| EventPassTierSettingsApril2026Season208Free
-	| EventPassTierSettingsApril2026Season209Free
 	| EventPassTierSettingsApril2026Season21Free
-	| EventPassTierSettingsApril2026Season210Free
 	| EventPassTierSettingsApril2026Season22Free
 	| EventPassTierSettingsApril2026Season23Free
 	| EventPassTierSettingsApril2026Season24Free
@@ -3913,7 +3809,6 @@ export type EventPassTierSettingsFreeApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season27Free
 	| EventPassTierSettingsApril2026Season28Free
 	| EventPassTierSettingsApril2026Season29Free
-	| EventPassTierSettingsApril2026Season3Free
 	| EventPassTierSettingsApril2026Season30Free
 	| EventPassTierSettingsApril2026Season31Free
 	| EventPassTierSettingsApril2026Season32Free
@@ -3924,7 +3819,6 @@ export type EventPassTierSettingsFreeApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season37Free
 	| EventPassTierSettingsApril2026Season38Free
 	| EventPassTierSettingsApril2026Season39Free
-	| EventPassTierSettingsApril2026Season4Free
 	| EventPassTierSettingsApril2026Season40Free
 	| EventPassTierSettingsApril2026Season41Free
 	| EventPassTierSettingsApril2026Season42Free
@@ -3935,7 +3829,6 @@ export type EventPassTierSettingsFreeApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season47Free
 	| EventPassTierSettingsApril2026Season48Free
 	| EventPassTierSettingsApril2026Season49Free
-	| EventPassTierSettingsApril2026Season5Free
 	| EventPassTierSettingsApril2026Season50Free
 	| EventPassTierSettingsApril2026Season51Free
 	| EventPassTierSettingsApril2026Season52Free
@@ -3946,7 +3839,6 @@ export type EventPassTierSettingsFreeApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season57Free
 	| EventPassTierSettingsApril2026Season58Free
 	| EventPassTierSettingsApril2026Season59Free
-	| EventPassTierSettingsApril2026Season6Free
 	| EventPassTierSettingsApril2026Season60Free
 	| EventPassTierSettingsApril2026Season61Free
 	| EventPassTierSettingsApril2026Season62Free
@@ -3957,7 +3849,6 @@ export type EventPassTierSettingsFreeApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season67Free
 	| EventPassTierSettingsApril2026Season68Free
 	| EventPassTierSettingsApril2026Season69Free
-	| EventPassTierSettingsApril2026Season7Free
 	| EventPassTierSettingsApril2026Season70Free
 	| EventPassTierSettingsApril2026Season71Free
 	| EventPassTierSettingsApril2026Season72Free
@@ -3968,7 +3859,6 @@ export type EventPassTierSettingsFreeApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season77Free
 	| EventPassTierSettingsApril2026Season78Free
 	| EventPassTierSettingsApril2026Season79Free
-	| EventPassTierSettingsApril2026Season8Free
 	| EventPassTierSettingsApril2026Season80Free
 	| EventPassTierSettingsApril2026Season81Free
 	| EventPassTierSettingsApril2026Season82Free
@@ -3979,7 +3869,6 @@ export type EventPassTierSettingsFreeApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season87Free
 	| EventPassTierSettingsApril2026Season88Free
 	| EventPassTierSettingsApril2026Season89Free
-	| EventPassTierSettingsApril2026Season9Free
 	| EventPassTierSettingsApril2026Season90Free
 	| EventPassTierSettingsApril2026Season91Free
 	| EventPassTierSettingsApril2026Season92Free
@@ -3989,4 +3878,115 @@ export type EventPassTierSettingsFreeApril2026MasterfileEntry =
 	| EventPassTierSettingsApril2026Season96Free
 	| EventPassTierSettingsApril2026Season97Free
 	| EventPassTierSettingsApril2026Season98Free
-	| EventPassTierSettingsApril2026Season99Free;
+	| EventPassTierSettingsApril2026Season99Free
+	| EventPassTierSettingsApril2026Season100Free
+	| EventPassTierSettingsApril2026Season101Free
+	| EventPassTierSettingsApril2026Season102Free
+	| EventPassTierSettingsApril2026Season103Free
+	| EventPassTierSettingsApril2026Season104Free
+	| EventPassTierSettingsApril2026Season105Free
+	| EventPassTierSettingsApril2026Season106Free
+	| EventPassTierSettingsApril2026Season107Free
+	| EventPassTierSettingsApril2026Season108Free
+	| EventPassTierSettingsApril2026Season109Free
+	| EventPassTierSettingsApril2026Season110Free
+	| EventPassTierSettingsApril2026Season111Free
+	| EventPassTierSettingsApril2026Season112Free
+	| EventPassTierSettingsApril2026Season113Free
+	| EventPassTierSettingsApril2026Season114Free
+	| EventPassTierSettingsApril2026Season115Free
+	| EventPassTierSettingsApril2026Season116Free
+	| EventPassTierSettingsApril2026Season117Free
+	| EventPassTierSettingsApril2026Season118Free
+	| EventPassTierSettingsApril2026Season119Free
+	| EventPassTierSettingsApril2026Season120Free
+	| EventPassTierSettingsApril2026Season121Free
+	| EventPassTierSettingsApril2026Season122Free
+	| EventPassTierSettingsApril2026Season123Free
+	| EventPassTierSettingsApril2026Season124Free
+	| EventPassTierSettingsApril2026Season125Free
+	| EventPassTierSettingsApril2026Season126Free
+	| EventPassTierSettingsApril2026Season127Free
+	| EventPassTierSettingsApril2026Season128Free
+	| EventPassTierSettingsApril2026Season129Free
+	| EventPassTierSettingsApril2026Season130Free
+	| EventPassTierSettingsApril2026Season131Free
+	| EventPassTierSettingsApril2026Season132Free
+	| EventPassTierSettingsApril2026Season133Free
+	| EventPassTierSettingsApril2026Season134Free
+	| EventPassTierSettingsApril2026Season135Free
+	| EventPassTierSettingsApril2026Season136Free
+	| EventPassTierSettingsApril2026Season137Free
+	| EventPassTierSettingsApril2026Season138Free
+	| EventPassTierSettingsApril2026Season139Free
+	| EventPassTierSettingsApril2026Season140Free
+	| EventPassTierSettingsApril2026Season141Free
+	| EventPassTierSettingsApril2026Season142Free
+	| EventPassTierSettingsApril2026Season143Free
+	| EventPassTierSettingsApril2026Season144Free
+	| EventPassTierSettingsApril2026Season145Free
+	| EventPassTierSettingsApril2026Season146Free
+	| EventPassTierSettingsApril2026Season147Free
+	| EventPassTierSettingsApril2026Season148Free
+	| EventPassTierSettingsApril2026Season149Free
+	| EventPassTierSettingsApril2026Season150Free
+	| EventPassTierSettingsApril2026Season151Free
+	| EventPassTierSettingsApril2026Season152Free
+	| EventPassTierSettingsApril2026Season153Free
+	| EventPassTierSettingsApril2026Season154Free
+	| EventPassTierSettingsApril2026Season155Free
+	| EventPassTierSettingsApril2026Season156Free
+	| EventPassTierSettingsApril2026Season157Free
+	| EventPassTierSettingsApril2026Season158Free
+	| EventPassTierSettingsApril2026Season159Free
+	| EventPassTierSettingsApril2026Season160Free
+	| EventPassTierSettingsApril2026Season161Free
+	| EventPassTierSettingsApril2026Season162Free
+	| EventPassTierSettingsApril2026Season163Free
+	| EventPassTierSettingsApril2026Season164Free
+	| EventPassTierSettingsApril2026Season165Free
+	| EventPassTierSettingsApril2026Season166Free
+	| EventPassTierSettingsApril2026Season167Free
+	| EventPassTierSettingsApril2026Season168Free
+	| EventPassTierSettingsApril2026Season169Free
+	| EventPassTierSettingsApril2026Season170Free
+	| EventPassTierSettingsApril2026Season171Free
+	| EventPassTierSettingsApril2026Season172Free
+	| EventPassTierSettingsApril2026Season173Free
+	| EventPassTierSettingsApril2026Season174Free
+	| EventPassTierSettingsApril2026Season175Free
+	| EventPassTierSettingsApril2026Season176Free
+	| EventPassTierSettingsApril2026Season177Free
+	| EventPassTierSettingsApril2026Season178Free
+	| EventPassTierSettingsApril2026Season179Free
+	| EventPassTierSettingsApril2026Season180Free
+	| EventPassTierSettingsApril2026Season181Free
+	| EventPassTierSettingsApril2026Season182Free
+	| EventPassTierSettingsApril2026Season183Free
+	| EventPassTierSettingsApril2026Season184Free
+	| EventPassTierSettingsApril2026Season185Free
+	| EventPassTierSettingsApril2026Season186Free
+	| EventPassTierSettingsApril2026Season187Free
+	| EventPassTierSettingsApril2026Season188Free
+	| EventPassTierSettingsApril2026Season189Free
+	| EventPassTierSettingsApril2026Season190Free
+	| EventPassTierSettingsApril2026Season191Free
+	| EventPassTierSettingsApril2026Season192Free
+	| EventPassTierSettingsApril2026Season193Free
+	| EventPassTierSettingsApril2026Season194Free
+	| EventPassTierSettingsApril2026Season195Free
+	| EventPassTierSettingsApril2026Season196Free
+	| EventPassTierSettingsApril2026Season197Free
+	| EventPassTierSettingsApril2026Season198Free
+	| EventPassTierSettingsApril2026Season199Free
+	| EventPassTierSettingsApril2026Season200Free
+	| EventPassTierSettingsApril2026Season201Free
+	| EventPassTierSettingsApril2026Season202Free
+	| EventPassTierSettingsApril2026Season203Free
+	| EventPassTierSettingsApril2026Season204Free
+	| EventPassTierSettingsApril2026Season205Free
+	| EventPassTierSettingsApril2026Season206Free
+	| EventPassTierSettingsApril2026Season207Free
+	| EventPassTierSettingsApril2026Season208Free
+	| EventPassTierSettingsApril2026Season209Free
+	| EventPassTierSettingsApril2026Season210Free;

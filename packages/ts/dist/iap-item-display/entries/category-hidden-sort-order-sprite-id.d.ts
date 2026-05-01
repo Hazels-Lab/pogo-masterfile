@@ -15,18 +15,6 @@ export type IapItemDisplayBundleGeneral3Free1 = S<
 		}
 	>
 >;
-export type IapItemDisplayPgoreleasePokecoin15950 = S<
-	IapItemDisplay<
-		"pgorelease.pokecoin.15950",
-		{
-			category: "IAP_CATEGORY_POKECOINS";
-			hidden: true;
-			sku: "pgorelease.pokecoin.15950";
-			sortOrder: 6;
-			spriteId: "pokecoin.14500";
-		}
-	>
->;
 export type IapItemDisplayPgoreleasePokecoin2750 = S<
 	IapItemDisplay<
 		"pgorelease.pokecoin.2750",
@@ -51,9 +39,21 @@ export type IapItemDisplayPgoreleasePokecoin5720 = S<
 		}
 	>
 >;
+export type IapItemDisplayPgoreleasePokecoin15950 = S<
+	IapItemDisplay<
+		"pgorelease.pokecoin.15950",
+		{
+			category: "IAP_CATEGORY_POKECOINS";
+			hidden: true;
+			sku: "pgorelease.pokecoin.15950";
+			sortOrder: 6;
+			spriteId: "pokecoin.14500";
+		}
+	>
+>;
 
 export type IapItemDisplayCategoryHiddenSortOrderSpriteIdMasterfileEntry =
 	| IapItemDisplayBundleGeneral3Free1
-	| IapItemDisplayPgoreleasePokecoin15950
 	| IapItemDisplayPgoreleasePokecoin2750
-	| IapItemDisplayPgoreleasePokecoin5720;
+	| IapItemDisplayPgoreleasePokecoin5720
+	| IapItemDisplayPgoreleasePokecoin15950;

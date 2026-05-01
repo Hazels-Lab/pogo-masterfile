@@ -7,6 +7,42 @@ use serde::{Deserialize, Serialize};
     Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum,
 )]
 pub enum VsSeekerLootTemplateId {
+    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_1_FREE")]
+    VsSeekerLootPerWinSettingsRank1Free,
+    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_1_PREMIUM")]
+    VsSeekerLootPerWinSettingsRank1Premium,
+    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_2_FREE")]
+    VsSeekerLootPerWinSettingsRank2Free,
+    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_2_PREMIUM")]
+    VsSeekerLootPerWinSettingsRank2Premium,
+    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_3_FREE")]
+    VsSeekerLootPerWinSettingsRank3Free,
+    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_3_PREMIUM")]
+    VsSeekerLootPerWinSettingsRank3Premium,
+    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_4_FREE")]
+    VsSeekerLootPerWinSettingsRank4Free,
+    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_4_PREMIUM")]
+    VsSeekerLootPerWinSettingsRank4Premium,
+    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_5_FREE")]
+    VsSeekerLootPerWinSettingsRank5Free,
+    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_5_PREMIUM")]
+    VsSeekerLootPerWinSettingsRank5Premium,
+    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_6_FREE")]
+    VsSeekerLootPerWinSettingsRank6Free,
+    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_6_PREMIUM")]
+    VsSeekerLootPerWinSettingsRank6Premium,
+    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_7_FREE")]
+    VsSeekerLootPerWinSettingsRank7Free,
+    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_7_PREMIUM")]
+    VsSeekerLootPerWinSettingsRank7Premium,
+    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_8_FREE")]
+    VsSeekerLootPerWinSettingsRank8Free,
+    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_8_PREMIUM")]
+    VsSeekerLootPerWinSettingsRank8Premium,
+    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_9_FREE")]
+    VsSeekerLootPerWinSettingsRank9Free,
+    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_9_PREMIUM")]
+    VsSeekerLootPerWinSettingsRank9Premium,
     #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_10_FREE")]
     VsSeekerLootPerWinSettingsRank10Free,
     #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_10_PREMIUM")]
@@ -47,10 +83,6 @@ pub enum VsSeekerLootTemplateId {
     VsSeekerLootPerWinSettingsRank19Free,
     #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_19_PREMIUM")]
     VsSeekerLootPerWinSettingsRank19Premium,
-    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_1_FREE")]
-    VsSeekerLootPerWinSettingsRank1Free,
-    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_1_PREMIUM")]
-    VsSeekerLootPerWinSettingsRank1Premium,
     #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_20_FREE")]
     VsSeekerLootPerWinSettingsRank20Free,
     #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_20_PREMIUM")]
@@ -71,36 +103,4 @@ pub enum VsSeekerLootTemplateId {
     VsSeekerLootPerWinSettingsRank24Free,
     #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_24_PREMIUM")]
     VsSeekerLootPerWinSettingsRank24Premium,
-    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_2_FREE")]
-    VsSeekerLootPerWinSettingsRank2Free,
-    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_2_PREMIUM")]
-    VsSeekerLootPerWinSettingsRank2Premium,
-    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_3_FREE")]
-    VsSeekerLootPerWinSettingsRank3Free,
-    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_3_PREMIUM")]
-    VsSeekerLootPerWinSettingsRank3Premium,
-    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_4_FREE")]
-    VsSeekerLootPerWinSettingsRank4Free,
-    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_4_PREMIUM")]
-    VsSeekerLootPerWinSettingsRank4Premium,
-    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_5_FREE")]
-    VsSeekerLootPerWinSettingsRank5Free,
-    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_5_PREMIUM")]
-    VsSeekerLootPerWinSettingsRank5Premium,
-    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_6_FREE")]
-    VsSeekerLootPerWinSettingsRank6Free,
-    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_6_PREMIUM")]
-    VsSeekerLootPerWinSettingsRank6Premium,
-    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_7_FREE")]
-    VsSeekerLootPerWinSettingsRank7Free,
-    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_7_PREMIUM")]
-    VsSeekerLootPerWinSettingsRank7Premium,
-    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_8_FREE")]
-    VsSeekerLootPerWinSettingsRank8Free,
-    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_8_PREMIUM")]
-    VsSeekerLootPerWinSettingsRank8Premium,
-    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_9_FREE")]
-    VsSeekerLootPerWinSettingsRank9Free,
-    #[serde(rename = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_9_PREMIUM")]
-    VsSeekerLootPerWinSettingsRank9Premium,
 }

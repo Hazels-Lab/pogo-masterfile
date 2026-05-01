@@ -9,6 +9,10 @@ use serde::{Deserialize, Serialize};
 pub enum CombatRankingProtoSettingsTemplateId {
     #[serde(rename = "COMBAT_RANKING_SETTINGS")]
     CombatRankingSettings,
+    #[serde(rename = "COMBAT_RANKING_SETTINGS_S8")]
+    CombatRankingSettingsS8,
+    #[serde(rename = "COMBAT_RANKING_SETTINGS_S9")]
+    CombatRankingSettingsS9,
     #[serde(rename = "COMBAT_RANKING_SETTINGS_S10")]
     CombatRankingSettingsS10,
     #[serde(rename = "COMBAT_RANKING_SETTINGS_S13")]
@@ -45,8 +49,4 @@ pub enum CombatRankingProtoSettingsTemplateId {
     CombatRankingSettingsS28,
     #[serde(rename = "COMBAT_RANKING_SETTINGS_S29")]
     CombatRankingSettingsS29,
-    #[serde(rename = "COMBAT_RANKING_SETTINGS_S8")]
-    CombatRankingSettingsS8,
-    #[serde(rename = "COMBAT_RANKING_SETTINGS_S9")]
-    CombatRankingSettingsS9,
 }

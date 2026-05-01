@@ -158,6 +158,74 @@ const (
 	BadgeSettingsTemplateIDBadgeEvent0280                                   BadgeSettingsTemplateID = "BADGE_EVENT_0280"
 	BadgeSettingsTemplateIDBadgeEvolvedTotal                                BadgeSettingsTemplateID = "BADGE_EVOLVED_TOTAL"
 	BadgeSettingsTemplateIDBadgeGlobalTicketedEvent                         BadgeSettingsTemplateID = "BADGE_GLOBAL_TICKETED_EVENT"
+	BadgeSettingsTemplateIDBadgeGoTour2025GlobalBlackVersion                BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_GLOBAL_BLACK_VERSION"
+	BadgeSettingsTemplateIDBadgeGoTour2025GlobalWhiteVersion                BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_GLOBAL_WHITE_VERSION"
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesAddOnHatch              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_HATCH"
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesAddOnHatchTest          BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_HATCH_TEST"
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesAddOnRaid               BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_RAID"
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesAddOnRaidTest           BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_RAID_TEST"
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesFridayCity              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_FRIDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesFridayPark              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_FRIDAY_PARK"
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesSaturdayCity            BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_SATURDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesSaturdayPark            BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_SATURDAY_PARK"
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesSundayCity              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_SUNDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesSundayPark              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_SUNDAY_PARK"
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesTestCity                BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_TEST_CITY"
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesTestPark                BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_TEST_PARK"
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesVip                     BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_VIP"
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityAddOnHatch           BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_HATCH"
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityAddOnHatchTest       BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_HATCH_TEST"
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityAddOnRaid            BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_RAID"
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityAddOnRaidTest        BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_RAID_TEST"
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityFridayCity           BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_FRIDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityFridayPark           BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_FRIDAY_PARK"
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCitySaturdayCity         BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SATURDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCitySaturdayPark         BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SATURDAY_PARK"
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCitySundayCity           BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SUNDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCitySundayPark           BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SUNDAY_PARK"
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityTestCity             BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_TEST_CITY"
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityTestPark             BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_TEST_PARK"
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityVip                  BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_VIP"
+	BadgeSettingsTemplateIDBadgeGoTour2026DeluxePass                        BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_DELUXE_PASS"
+	BadgeSettingsTemplateIDBadgeGoTour2026Global                            BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_GLOBAL"
+	BadgeSettingsTemplateIDBadgeGoTour2026GlobalSecret01                    BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_GLOBAL_SECRET_01"
+	BadgeSettingsTemplateIDBadgeGoTour2026GlobalTest                        BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_GLOBAL_TEST"
+	BadgeSettingsTemplateIDBadgeGoTour2026GlobalXVersion                    BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_GLOBAL_X_VERSION"
+	BadgeSettingsTemplateIDBadgeGoTour2026GlobalYVersion                    BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_GLOBAL_Y_VERSION"
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesAddOnHatch              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_HATCH"
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesAddOnHatchTest          BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_HATCH_TEST"
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesAddOnRaid               BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_RAID"
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesAddOnRaidTest           BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_RAID_TEST"
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesFridayCity              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesFridayMegaNight         BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_MEGA_NIGHT"
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesFridayPark              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_PARK"
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesMegaNightTest           BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_MEGA_NIGHT_TEST"
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSaturdayCity            BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSaturdayMegaNight       BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_MEGA_NIGHT"
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSaturdayPark            BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_PARK"
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSundayCity              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSundayMegaNight         BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_MEGA_NIGHT"
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSundayPark              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_PARK"
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesTestCity                BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_TEST_CITY"
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesTestPark                BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_TEST_PARK"
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesVip                     BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_VIP"
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanAddOnHatch                  BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_HATCH"
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanAddOnHatchTest              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_HATCH_TEST"
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanAddOnRaid                   BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_RAID"
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanAddOnRaidTest               BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_RAID_TEST"
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanFridayCity                  BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_FRIDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanFridayMegaNight             BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_FRIDAY_MEGA_NIGHT"
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanFridayPark                  BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_FRIDAY_PARK"
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanMegaNightTest               BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_MEGA_NIGHT_TEST"
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanSaturdayCity                BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_SATURDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanSaturdayMegaNight           BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_SATURDAY_MEGA_NIGHT"
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanSaturdayPark                BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_SATURDAY_PARK"
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanSundayCity                  BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_SUNDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanSundayMegaNight             BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_SUNDAY_MEGA_NIGHT"
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanSundayPark                  BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_SUNDAY_PARK"
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanTestCity                    BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_TEST_CITY"
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanTestPark                    BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_TEST_PARK"
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanVip                         BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_VIP"
 	BadgeSettingsTemplateIDBadgeGofest2019AmericasDay00NorthEarlyaccess     BadgeSettingsTemplateID = "BADGE_GOFEST_2019_AMERICAS_DAY_00_NORTH_EARLYACCESS"
 	BadgeSettingsTemplateIDBadgeGofest2019AmericasDay00NorthGeneral         BadgeSettingsTemplateID = "BADGE_GOFEST_2019_AMERICAS_DAY_00_NORTH_GENERAL"
 	BadgeSettingsTemplateIDBadgeGofest2019AmericasDay00SouthEarlyaccess     BadgeSettingsTemplateID = "BADGE_GOFEST_2019_AMERICAS_DAY_00_SOUTH_EARLYACCESS"
@@ -529,74 +597,6 @@ const (
 	BadgeSettingsTemplateIDBadgeGowa2025IrlSundayTicketedCity               BadgeSettingsTemplateID = "BADGE_GOWA_2025_IRL_SUNDAY_TICKETED_CITY"
 	BadgeSettingsTemplateIDBadgeGowa2025SpecialResearchA                    BadgeSettingsTemplateID = "BADGE_GOWA_2025_SPECIAL_RESEARCH_A"
 	BadgeSettingsTemplateIDBadgeGowa2025SpecialResearchB                    BadgeSettingsTemplateID = "BADGE_GOWA_2025_SPECIAL_RESEARCH_B"
-	BadgeSettingsTemplateIDBadgeGoTour2025GlobalBlackVersion                BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_GLOBAL_BLACK_VERSION"
-	BadgeSettingsTemplateIDBadgeGoTour2025GlobalWhiteVersion                BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_GLOBAL_WHITE_VERSION"
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesAddOnHatch              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_HATCH"
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesAddOnHatchTest          BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_HATCH_TEST"
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesAddOnRaid               BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_RAID"
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesAddOnRaidTest           BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_ADD_ON_RAID_TEST"
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesFridayCity              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_FRIDAY_CITY"
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesFridayPark              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_FRIDAY_PARK"
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesSaturdayCity            BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_SATURDAY_CITY"
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesSaturdayPark            BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_SATURDAY_PARK"
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesSundayCity              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_SUNDAY_CITY"
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesSundayPark              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_SUNDAY_PARK"
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesTestCity                BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_TEST_CITY"
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesTestPark                BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_TEST_PARK"
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesVip                     BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_LOS_ANGELES_VIP"
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityAddOnHatch           BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_HATCH"
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityAddOnHatchTest       BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_HATCH_TEST"
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityAddOnRaid            BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_RAID"
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityAddOnRaidTest        BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_ADD_ON_RAID_TEST"
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityFridayCity           BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_FRIDAY_CITY"
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityFridayPark           BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_FRIDAY_PARK"
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCitySaturdayCity         BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SATURDAY_CITY"
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCitySaturdayPark         BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SATURDAY_PARK"
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCitySundayCity           BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SUNDAY_CITY"
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCitySundayPark           BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_SUNDAY_PARK"
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityTestCity             BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_TEST_CITY"
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityTestPark             BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_TEST_PARK"
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityVip                  BadgeSettingsTemplateID = "BADGE_GO_TOUR_2025_NEW_TAIPEI_CITY_VIP"
-	BadgeSettingsTemplateIDBadgeGoTour2026DeluxePass                        BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_DELUXE_PASS"
-	BadgeSettingsTemplateIDBadgeGoTour2026Global                            BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_GLOBAL"
-	BadgeSettingsTemplateIDBadgeGoTour2026GlobalSecret01                    BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_GLOBAL_SECRET_01"
-	BadgeSettingsTemplateIDBadgeGoTour2026GlobalTest                        BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_GLOBAL_TEST"
-	BadgeSettingsTemplateIDBadgeGoTour2026GlobalXVersion                    BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_GLOBAL_X_VERSION"
-	BadgeSettingsTemplateIDBadgeGoTour2026GlobalYVersion                    BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_GLOBAL_Y_VERSION"
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesAddOnHatch              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_HATCH"
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesAddOnHatchTest          BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_HATCH_TEST"
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesAddOnRaid               BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_RAID"
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesAddOnRaidTest           BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_ADD_ON_RAID_TEST"
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesFridayCity              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_CITY"
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesFridayMegaNight         BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_MEGA_NIGHT"
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesFridayPark              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_FRIDAY_PARK"
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesMegaNightTest           BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_MEGA_NIGHT_TEST"
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSaturdayCity            BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_CITY"
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSaturdayMegaNight       BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_MEGA_NIGHT"
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSaturdayPark            BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_SATURDAY_PARK"
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSundayCity              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_CITY"
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSundayMegaNight         BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_MEGA_NIGHT"
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSundayPark              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_SUNDAY_PARK"
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesTestCity                BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_TEST_CITY"
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesTestPark                BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_TEST_PARK"
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesVip                     BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_LOS_ANGELES_VIP"
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanAddOnHatch                  BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_HATCH"
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanAddOnHatchTest              BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_HATCH_TEST"
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanAddOnRaid                   BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_RAID"
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanAddOnRaidTest               BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_ADD_ON_RAID_TEST"
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanFridayCity                  BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_FRIDAY_CITY"
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanFridayMegaNight             BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_FRIDAY_MEGA_NIGHT"
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanFridayPark                  BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_FRIDAY_PARK"
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanMegaNightTest               BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_MEGA_NIGHT_TEST"
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanSaturdayCity                BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_SATURDAY_CITY"
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanSaturdayMegaNight           BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_SATURDAY_MEGA_NIGHT"
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanSaturdayPark                BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_SATURDAY_PARK"
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanSundayCity                  BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_SUNDAY_CITY"
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanSundayMegaNight             BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_SUNDAY_MEGA_NIGHT"
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanSundayPark                  BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_SUNDAY_PARK"
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanTestCity                    BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_TEST_CITY"
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanTestPark                    BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_TEST_PARK"
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanVip                         BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_VIP"
 	BadgeSettingsTemplateIDBadgeGreatLeague                                 BadgeSettingsTemplateID = "BADGE_GREAT_LEAGUE"
 	BadgeSettingsTemplateIDBadgeHatchedTotal                                BadgeSettingsTemplateID = "BADGE_HATCHED_TOTAL"
 	BadgeSettingsTemplateIDBadgeHoursDefended                               BadgeSettingsTemplateID = "BADGE_HOURS_DEFENDED"
@@ -627,67 +627,11 @@ const (
 	BadgeSettingsTemplateIDBadgePokestopsVisited                            BadgeSettingsTemplateID = "BADGE_POKESTOPS_VISITED"
 	BadgeSettingsTemplateIDBadgeQuestDialogueInboxControl                   BadgeSettingsTemplateID = "BADGE_QUEST_DIALOGUE_INBOX_CONTROL"
 	BadgeSettingsTemplateIDBadgeQuestDialogueInboxRollout                   BadgeSettingsTemplateID = "BADGE_QUEST_DIALOGUE_INBOX_ROLLOUT"
-	BadgeSettingsTemplateIDBadgeRaidsWithFriends                            BadgeSettingsTemplateID = "BADGE_RAIDS_WITH_FRIENDS"
 	BadgeSettingsTemplateIDBadgeRaidBattleStat                              BadgeSettingsTemplateID = "BADGE_RAID_BATTLE_STAT"
 	BadgeSettingsTemplateIDBadgeRaidBattleWon                               BadgeSettingsTemplateID = "BADGE_RAID_BATTLE_WON"
+	BadgeSettingsTemplateIDBadgeRaidsWithFriends                            BadgeSettingsTemplateID = "BADGE_RAIDS_WITH_FRIENDS"
 	BadgeSettingsTemplateIDBadgeRocketGiovanniDefeated                      BadgeSettingsTemplateID = "BADGE_ROCKET_GIOVANNI_DEFEATED"
 	BadgeSettingsTemplateIDBadgeRocketGruntsDefeated                        BadgeSettingsTemplateID = "BADGE_ROCKET_GRUNTS_DEFEATED"
-	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay00Earlyaccess      BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_00_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay00General          BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_00_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay01Earlyaccess      BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_01_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay01General          BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_01_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay02Earlyaccess      BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_02_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay02General          BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_02_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay03Earlyaccess      BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_03_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay03General          BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_03_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay00Earlyaccess     BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_00_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay00General         BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_00_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay01Earlyaccess     BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_01_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay01General         BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_01_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay02Earlyaccess     BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_02_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay02General         BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_02_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay03Earlyaccess     BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_03_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay03General         BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_03_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay00Earlyaccess  BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_00_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay00General      BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_00_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay01Earlyaccess  BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_01_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay01General      BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_01_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay02Earlyaccess  BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_02_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay02General      BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_02_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay03Earlyaccess  BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_03_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay03General      BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_03_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay00Earlyaccess       BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_00_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay00General           BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_00_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay01Earlyaccess       BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_01_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay01General           BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_01_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay02Earlyaccess       BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_02_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay02General           BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_02_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay03Earlyaccess       BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_03_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay03General           BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_03_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay00Earlyaccess       BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_00_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay00General           BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_00_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay01Earlyaccess       BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_01_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay01General           BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_01_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay02Earlyaccess       BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_02_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay02General           BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_02_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay03Earlyaccess       BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_03_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay03General           BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_03_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay00EarlyaccessTest BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_00_EARLYACCESS_TEST"
-	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay00GeneralTest     BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_00_GENERAL_TEST"
-	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay01EarlyaccessTest BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_01_EARLYACCESS_TEST"
-	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay01GeneralTest     BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_01_GENERAL_TEST"
-	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay02EarlyaccessTest BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_02_EARLYACCESS_TEST"
-	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay02GeneralTest     BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_02_GENERAL_TEST"
-	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay03EarlyaccessTest BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_03_EARLYACCESS_TEST"
-	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay03GeneralTest     BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_03_GENERAL_TEST"
-	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay00Earlyaccess        BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_00_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay00General            BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_00_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay01Earlyaccess        BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_01_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay01General            BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_01_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay02Earlyaccess        BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_02_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay02General            BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_02_GENERAL"
-	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay03Earlyaccess        BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_03_EARLYACCESS"
-	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay03General            BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_03_GENERAL"
 	BadgeSettingsTemplateIDBadgeSafari2023BarcelonaAddOnHatch               BadgeSettingsTemplateID = "BADGE_SAFARI_2023_BARCELONA_ADD_ON_HATCH"
 	BadgeSettingsTemplateIDBadgeSafari2023BarcelonaAddOnRaid                BadgeSettingsTemplateID = "BADGE_SAFARI_2023_BARCELONA_ADD_ON_RAID"
 	BadgeSettingsTemplateIDBadgeSafari2023BarcelonaDay00                    BadgeSettingsTemplateID = "BADGE_SAFARI_2023_BARCELONA_DAY_00"
@@ -826,6 +770,62 @@ const (
 	BadgeSettingsTemplateIDBadgeSafariZoneEurope2017                        BadgeSettingsTemplateID = "BADGE_SAFARI_ZONE_EUROPE_2017"
 	BadgeSettingsTemplateIDBadgeSafariZoneEurope20171007                    BadgeSettingsTemplateID = "BADGE_SAFARI_ZONE_EUROPE_2017_10_07"
 	BadgeSettingsTemplateIDBadgeSafariZoneEurope20171014                    BadgeSettingsTemplateID = "BADGE_SAFARI_ZONE_EUROPE_2017_10_14"
+	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay00Earlyaccess      BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_00_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay00General          BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_00_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay01Earlyaccess      BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_01_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay01General          BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_01_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay02Earlyaccess      BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_02_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay02General          BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_02_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay03Earlyaccess      BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_03_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay03General          BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2019_MONTREAL_DAY_03_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay00Earlyaccess     BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_00_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay00General         BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_00_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay01Earlyaccess     BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_01_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay01General         BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_01_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay02Earlyaccess     BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_02_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay02General         BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_02_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay03Earlyaccess     BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_03_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay03General         BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_LIVERPOOL_DAY_03_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay00Earlyaccess  BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_00_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay00General      BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_00_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay01Earlyaccess  BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_01_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay01General      BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_01_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay02Earlyaccess  BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_02_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay02General      BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_02_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay03Earlyaccess  BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_03_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay03General      BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_03_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay00Earlyaccess       BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_00_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay00General           BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_00_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay01Earlyaccess       BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_01_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay01General           BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_01_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay02Earlyaccess       BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_02_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay02General           BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_02_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay03Earlyaccess       BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_03_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay03General           BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2020_STLOUIS_DAY_03_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay00Earlyaccess       BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_00_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay00General           BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_00_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay01Earlyaccess       BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_01_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay01General           BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_01_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay02Earlyaccess       BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_02_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay02General           BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_02_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay03Earlyaccess       BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_03_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay03General           BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SEVILLE_DAY_03_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay00EarlyaccessTest BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_00_EARLYACCESS_TEST"
+	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay00GeneralTest     BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_00_GENERAL_TEST"
+	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay01EarlyaccessTest BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_01_EARLYACCESS_TEST"
+	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay01GeneralTest     BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_01_GENERAL_TEST"
+	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay02EarlyaccessTest BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_02_EARLYACCESS_TEST"
+	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay02GeneralTest     BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_02_GENERAL_TEST"
+	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay03EarlyaccessTest BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_03_EARLYACCESS_TEST"
+	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay03GeneralTest     BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_03_GENERAL_TEST"
+	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay00Earlyaccess        BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_00_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay00General            BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_00_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay01Earlyaccess        BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_01_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay01General            BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_01_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay02Earlyaccess        BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_02_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay02General            BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_02_GENERAL"
+	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay03Earlyaccess        BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_03_EARLYACCESS"
+	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay03General            BadgeSettingsTemplateID = "BADGE_SAFARIZONE_2022_TAIPEI_DAY_03_GENERAL"
 	BadgeSettingsTemplateIDBadgeSentosa18Apr2019                            BadgeSettingsTemplateID = "BADGE_SENTOSA_18_APR_2019"
 	BadgeSettingsTemplateIDBadgeSentosa19Apr2019                            BadgeSettingsTemplateID = "BADGE_SENTOSA_19_APR_2019"
 	BadgeSettingsTemplateIDBadgeSentosa20Apr2019                            BadgeSettingsTemplateID = "BADGE_SENTOSA_20_APR_2019"
@@ -870,8 +870,8 @@ const (
 	BadgeSettingsTemplateIDBadgeWayfarer                                    BadgeSettingsTemplateID = "BADGE_WAYFARER"
 	BadgeSettingsTemplateIDBadgeWeeklyChallengeEligible                     BadgeSettingsTemplateID = "BADGE_WEEKLY_CHALLENGE_ELIGIBLE"
 	BadgeSettingsTemplateIDBadgeYokosuka1Sep2018Verny                       BadgeSettingsTemplateID = "BADGE_YOKOSUKA_1_SEP_2018_VERNY"
-	BadgeSettingsTemplateIDBadgeYokosuka29Aug2018Verny                      BadgeSettingsTemplateID = "BADGE_YOKOSUKA_29_AUG_2018_VERNY"
 	BadgeSettingsTemplateIDBadgeYokosuka2Sep2018Verny                       BadgeSettingsTemplateID = "BADGE_YOKOSUKA_2_SEP_2018_VERNY"
+	BadgeSettingsTemplateIDBadgeYokosuka29Aug2018Verny                      BadgeSettingsTemplateID = "BADGE_YOKOSUKA_29_AUG_2018_VERNY"
 	BadgeSettingsTemplateIDBadgeYokosuka30Aug2018Verny                      BadgeSettingsTemplateID = "BADGE_YOKOSUKA_30_AUG_2018_VERNY"
 	BadgeSettingsTemplateIDBadgeYokosuka31Aug2018Verny                      BadgeSettingsTemplateID = "BADGE_YOKOSUKA_31_AUG_2018_VERNY"
 )
@@ -1030,6 +1030,74 @@ var BadgeSettingsTemplateIDValues = [...]BadgeSettingsTemplateID{
 	BadgeSettingsTemplateIDBadgeEvent0280,
 	BadgeSettingsTemplateIDBadgeEvolvedTotal,
 	BadgeSettingsTemplateIDBadgeGlobalTicketedEvent,
+	BadgeSettingsTemplateIDBadgeGoTour2025GlobalBlackVersion,
+	BadgeSettingsTemplateIDBadgeGoTour2025GlobalWhiteVersion,
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesAddOnHatch,
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesAddOnHatchTest,
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesAddOnRaid,
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesAddOnRaidTest,
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesFridayCity,
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesFridayPark,
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesSaturdayCity,
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesSaturdayPark,
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesSundayCity,
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesSundayPark,
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesTestCity,
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesTestPark,
+	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesVip,
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityAddOnHatch,
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityAddOnHatchTest,
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityAddOnRaid,
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityAddOnRaidTest,
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityFridayCity,
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityFridayPark,
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCitySaturdayCity,
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCitySaturdayPark,
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCitySundayCity,
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCitySundayPark,
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityTestCity,
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityTestPark,
+	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityVip,
+	BadgeSettingsTemplateIDBadgeGoTour2026DeluxePass,
+	BadgeSettingsTemplateIDBadgeGoTour2026Global,
+	BadgeSettingsTemplateIDBadgeGoTour2026GlobalSecret01,
+	BadgeSettingsTemplateIDBadgeGoTour2026GlobalTest,
+	BadgeSettingsTemplateIDBadgeGoTour2026GlobalXVersion,
+	BadgeSettingsTemplateIDBadgeGoTour2026GlobalYVersion,
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesAddOnHatch,
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesAddOnHatchTest,
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesAddOnRaid,
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesAddOnRaidTest,
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesFridayCity,
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesFridayMegaNight,
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesFridayPark,
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesMegaNightTest,
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSaturdayCity,
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSaturdayMegaNight,
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSaturdayPark,
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSundayCity,
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSundayMegaNight,
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSundayPark,
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesTestCity,
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesTestPark,
+	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesVip,
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanAddOnHatch,
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanAddOnHatchTest,
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanAddOnRaid,
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanAddOnRaidTest,
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanFridayCity,
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanFridayMegaNight,
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanFridayPark,
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanMegaNightTest,
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanSaturdayCity,
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanSaturdayMegaNight,
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanSaturdayPark,
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanSundayCity,
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanSundayMegaNight,
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanSundayPark,
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanTestCity,
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanTestPark,
+	BadgeSettingsTemplateIDBadgeGoTour2026TainanVip,
 	BadgeSettingsTemplateIDBadgeGofest2019AmericasDay00NorthEarlyaccess,
 	BadgeSettingsTemplateIDBadgeGofest2019AmericasDay00NorthGeneral,
 	BadgeSettingsTemplateIDBadgeGofest2019AmericasDay00SouthEarlyaccess,
@@ -1401,74 +1469,6 @@ var BadgeSettingsTemplateIDValues = [...]BadgeSettingsTemplateID{
 	BadgeSettingsTemplateIDBadgeGowa2025IrlSundayTicketedCity,
 	BadgeSettingsTemplateIDBadgeGowa2025SpecialResearchA,
 	BadgeSettingsTemplateIDBadgeGowa2025SpecialResearchB,
-	BadgeSettingsTemplateIDBadgeGoTour2025GlobalBlackVersion,
-	BadgeSettingsTemplateIDBadgeGoTour2025GlobalWhiteVersion,
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesAddOnHatch,
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesAddOnHatchTest,
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesAddOnRaid,
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesAddOnRaidTest,
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesFridayCity,
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesFridayPark,
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesSaturdayCity,
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesSaturdayPark,
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesSundayCity,
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesSundayPark,
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesTestCity,
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesTestPark,
-	BadgeSettingsTemplateIDBadgeGoTour2025LosAngelesVip,
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityAddOnHatch,
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityAddOnHatchTest,
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityAddOnRaid,
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityAddOnRaidTest,
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityFridayCity,
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityFridayPark,
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCitySaturdayCity,
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCitySaturdayPark,
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCitySundayCity,
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCitySundayPark,
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityTestCity,
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityTestPark,
-	BadgeSettingsTemplateIDBadgeGoTour2025NewTaipeiCityVip,
-	BadgeSettingsTemplateIDBadgeGoTour2026DeluxePass,
-	BadgeSettingsTemplateIDBadgeGoTour2026Global,
-	BadgeSettingsTemplateIDBadgeGoTour2026GlobalSecret01,
-	BadgeSettingsTemplateIDBadgeGoTour2026GlobalTest,
-	BadgeSettingsTemplateIDBadgeGoTour2026GlobalXVersion,
-	BadgeSettingsTemplateIDBadgeGoTour2026GlobalYVersion,
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesAddOnHatch,
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesAddOnHatchTest,
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesAddOnRaid,
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesAddOnRaidTest,
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesFridayCity,
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesFridayMegaNight,
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesFridayPark,
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesMegaNightTest,
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSaturdayCity,
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSaturdayMegaNight,
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSaturdayPark,
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSundayCity,
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSundayMegaNight,
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesSundayPark,
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesTestCity,
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesTestPark,
-	BadgeSettingsTemplateIDBadgeGoTour2026LosAngelesVip,
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanAddOnHatch,
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanAddOnHatchTest,
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanAddOnRaid,
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanAddOnRaidTest,
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanFridayCity,
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanFridayMegaNight,
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanFridayPark,
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanMegaNightTest,
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanSaturdayCity,
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanSaturdayMegaNight,
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanSaturdayPark,
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanSundayCity,
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanSundayMegaNight,
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanSundayPark,
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanTestCity,
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanTestPark,
-	BadgeSettingsTemplateIDBadgeGoTour2026TainanVip,
 	BadgeSettingsTemplateIDBadgeGreatLeague,
 	BadgeSettingsTemplateIDBadgeHatchedTotal,
 	BadgeSettingsTemplateIDBadgeHoursDefended,
@@ -1499,67 +1499,11 @@ var BadgeSettingsTemplateIDValues = [...]BadgeSettingsTemplateID{
 	BadgeSettingsTemplateIDBadgePokestopsVisited,
 	BadgeSettingsTemplateIDBadgeQuestDialogueInboxControl,
 	BadgeSettingsTemplateIDBadgeQuestDialogueInboxRollout,
-	BadgeSettingsTemplateIDBadgeRaidsWithFriends,
 	BadgeSettingsTemplateIDBadgeRaidBattleStat,
 	BadgeSettingsTemplateIDBadgeRaidBattleWon,
+	BadgeSettingsTemplateIDBadgeRaidsWithFriends,
 	BadgeSettingsTemplateIDBadgeRocketGiovanniDefeated,
 	BadgeSettingsTemplateIDBadgeRocketGruntsDefeated,
-	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay00Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay00General,
-	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay01Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay01General,
-	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay02Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay02General,
-	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay03Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay03General,
-	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay00Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay00General,
-	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay01Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay01General,
-	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay02Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay02General,
-	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay03Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay03General,
-	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay00Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay00General,
-	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay01Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay01General,
-	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay02Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay02General,
-	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay03Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay03General,
-	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay00Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay00General,
-	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay01Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay01General,
-	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay02Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay02General,
-	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay03Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay03General,
-	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay00Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay00General,
-	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay01Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay01General,
-	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay02Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay02General,
-	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay03Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay03General,
-	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay00EarlyaccessTest,
-	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay00GeneralTest,
-	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay01EarlyaccessTest,
-	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay01GeneralTest,
-	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay02EarlyaccessTest,
-	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay02GeneralTest,
-	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay03EarlyaccessTest,
-	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay03GeneralTest,
-	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay00Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay00General,
-	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay01Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay01General,
-	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay02Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay02General,
-	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay03Earlyaccess,
-	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay03General,
 	BadgeSettingsTemplateIDBadgeSafari2023BarcelonaAddOnHatch,
 	BadgeSettingsTemplateIDBadgeSafari2023BarcelonaAddOnRaid,
 	BadgeSettingsTemplateIDBadgeSafari2023BarcelonaDay00,
@@ -1698,6 +1642,62 @@ var BadgeSettingsTemplateIDValues = [...]BadgeSettingsTemplateID{
 	BadgeSettingsTemplateIDBadgeSafariZoneEurope2017,
 	BadgeSettingsTemplateIDBadgeSafariZoneEurope20171007,
 	BadgeSettingsTemplateIDBadgeSafariZoneEurope20171014,
+	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay00Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay00General,
+	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay01Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay01General,
+	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay02Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay02General,
+	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay03Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2019MontrealDay03General,
+	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay00Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay00General,
+	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay01Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay01General,
+	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay02Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay02General,
+	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay03Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2020LiverpoolDay03General,
+	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay00Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay00General,
+	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay01Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay01General,
+	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay02Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay02General,
+	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay03Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2020PhiladelphiaDay03General,
+	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay00Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay00General,
+	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay01Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay01General,
+	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay02Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay02General,
+	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay03Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2020StlouisDay03General,
+	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay00Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay00General,
+	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay01Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay01General,
+	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay02Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay02General,
+	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay03Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2022SevilleDay03General,
+	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay00EarlyaccessTest,
+	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay00GeneralTest,
+	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay01EarlyaccessTest,
+	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay01GeneralTest,
+	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay02EarlyaccessTest,
+	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay02GeneralTest,
+	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay03EarlyaccessTest,
+	BadgeSettingsTemplateIDBadgeSafarizone2022SingaporeDay03GeneralTest,
+	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay00Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay00General,
+	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay01Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay01General,
+	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay02Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay02General,
+	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay03Earlyaccess,
+	BadgeSettingsTemplateIDBadgeSafarizone2022TaipeiDay03General,
 	BadgeSettingsTemplateIDBadgeSentosa18Apr2019,
 	BadgeSettingsTemplateIDBadgeSentosa19Apr2019,
 	BadgeSettingsTemplateIDBadgeSentosa20Apr2019,
@@ -1742,8 +1742,8 @@ var BadgeSettingsTemplateIDValues = [...]BadgeSettingsTemplateID{
 	BadgeSettingsTemplateIDBadgeWayfarer,
 	BadgeSettingsTemplateIDBadgeWeeklyChallengeEligible,
 	BadgeSettingsTemplateIDBadgeYokosuka1Sep2018Verny,
-	BadgeSettingsTemplateIDBadgeYokosuka29Aug2018Verny,
 	BadgeSettingsTemplateIDBadgeYokosuka2Sep2018Verny,
+	BadgeSettingsTemplateIDBadgeYokosuka29Aug2018Verny,
 	BadgeSettingsTemplateIDBadgeYokosuka30Aug2018Verny,
 	BadgeSettingsTemplateIDBadgeYokosuka31Aug2018Verny,
 }

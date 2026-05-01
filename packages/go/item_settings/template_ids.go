@@ -105,8 +105,8 @@ const (
 	ItemSettingsTemplateIDItemPaidRaidTicket                ItemSettingsTemplateID = "ITEM_PAID_RAID_TICKET"
 	ItemSettingsTemplateIDItemPinapBerry                    ItemSettingsTemplateID = "ITEM_PINAP_BERRY"
 	ItemSettingsTemplateIDItemPoffin                        ItemSettingsTemplateID = "ITEM_POFFIN"
-	ItemSettingsTemplateIDItemPokemonStorageUpgrade         ItemSettingsTemplateID = "ITEM_POKEMON_STORAGE_UPGRADE"
 	ItemSettingsTemplateIDItemPokeBall                      ItemSettingsTemplateID = "ITEM_POKE_BALL"
+	ItemSettingsTemplateIDItemPokemonStorageUpgrade         ItemSettingsTemplateID = "ITEM_POKEMON_STORAGE_UPGRADE"
 	ItemSettingsTemplateIDItemPostcardInventory             ItemSettingsTemplateID = "ITEM_POSTCARD_INVENTORY"
 	ItemSettingsTemplateIDItemPostcardStorageUpgrade        ItemSettingsTemplateID = "ITEM_POSTCARD_STORAGE_UPGRADE"
 	ItemSettingsTemplateIDItemPotion                        ItemSettingsTemplateID = "ITEM_POTION"
@@ -144,10 +144,10 @@ const (
 	ItemSettingsTemplateIDItemWeparBerry                    ItemSettingsTemplateID = "ITEM_WEPAR_BERRY"
 	ItemSettingsTemplateIDItemWildBall                      ItemSettingsTemplateID = "ITEM_WILD_BALL"
 	ItemSettingsTemplateIDItemWildBallPremier               ItemSettingsTemplateID = "ITEM_WILD_BALL_PREMIER"
-	ItemSettingsTemplateIDItemXlRareCandy                   ItemSettingsTemplateID = "ITEM_XL_RARE_CANDY"
 	ItemSettingsTemplateIDItemXAttack                       ItemSettingsTemplateID = "ITEM_X_ATTACK"
 	ItemSettingsTemplateIDItemXDefense                      ItemSettingsTemplateID = "ITEM_X_DEFENSE"
 	ItemSettingsTemplateIDItemXMiracle                      ItemSettingsTemplateID = "ITEM_X_MIRACLE"
+	ItemSettingsTemplateIDItemXlRareCandy                   ItemSettingsTemplateID = "ITEM_XL_RARE_CANDY"
 )
 
 var ItemSettingsTemplateIDValues = [...]ItemSettingsTemplateID{
@@ -251,8 +251,8 @@ var ItemSettingsTemplateIDValues = [...]ItemSettingsTemplateID{
 	ItemSettingsTemplateIDItemPaidRaidTicket,
 	ItemSettingsTemplateIDItemPinapBerry,
 	ItemSettingsTemplateIDItemPoffin,
-	ItemSettingsTemplateIDItemPokemonStorageUpgrade,
 	ItemSettingsTemplateIDItemPokeBall,
+	ItemSettingsTemplateIDItemPokemonStorageUpgrade,
 	ItemSettingsTemplateIDItemPostcardInventory,
 	ItemSettingsTemplateIDItemPostcardStorageUpgrade,
 	ItemSettingsTemplateIDItemPotion,
@@ -290,8 +290,8 @@ var ItemSettingsTemplateIDValues = [...]ItemSettingsTemplateID{
 	ItemSettingsTemplateIDItemWeparBerry,
 	ItemSettingsTemplateIDItemWildBall,
 	ItemSettingsTemplateIDItemWildBallPremier,
-	ItemSettingsTemplateIDItemXlRareCandy,
 	ItemSettingsTemplateIDItemXAttack,
 	ItemSettingsTemplateIDItemXDefense,
 	ItemSettingsTemplateIDItemXMiracle,
+	ItemSettingsTemplateIDItemXlRareCandy,
 }

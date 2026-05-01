@@ -35,8 +35,8 @@ const (
 	LimitedPurchaseSkuSettingsTemplateIDLpskuBundleWebstoreThanksgiving2    LimitedPurchaseSkuSettingsTemplateID = "LPSKU_bundle.webstore_thanksgiving.2"
 	LimitedPurchaseSkuSettingsTemplateIDLpskuBundleWebstoreThanksgiving3    LimitedPurchaseSkuSettingsTemplateID = "LPSKU_bundle.webstore_thanksgiving.3"
 	LimitedPurchaseSkuSettingsTemplateIDLpskuBundleWelcomebox1              LimitedPurchaseSkuSettingsTemplateID = "LPSKU_bundle.welcomebox.1"
-	LimitedPurchaseSkuSettingsTemplateIDLpskuIncenseGeneral2Medium1         LimitedPurchaseSkuSettingsTemplateID = "LPSKU_incense.general2.medium.1"
 	LimitedPurchaseSkuSettingsTemplateIDLpskuIncenseBundleGeneral2Small1    LimitedPurchaseSkuSettingsTemplateID = "LPSKU_incense_bundle.general2.small.1"
+	LimitedPurchaseSkuSettingsTemplateIDLpskuIncenseGeneral2Medium1         LimitedPurchaseSkuSettingsTemplateID = "LPSKU_incense.general2.medium.1"
 	LimitedPurchaseSkuSettingsTemplateIDLpskuRemotepassBundleGeneral3Small1 LimitedPurchaseSkuSettingsTemplateID = "LPSKU_remotepass.bundle.general3.small.1"
 	LimitedPurchaseSkuSettingsTemplateIDLpskuWeeklyBallsGeneral2Medium1     LimitedPurchaseSkuSettingsTemplateID = "LPSKU_weekly_balls.general2.medium.1"
 )
@@ -72,8 +72,8 @@ var LimitedPurchaseSkuSettingsTemplateIDValues = [...]LimitedPurchaseSkuSettings
 	LimitedPurchaseSkuSettingsTemplateIDLpskuBundleWebstoreThanksgiving2,
 	LimitedPurchaseSkuSettingsTemplateIDLpskuBundleWebstoreThanksgiving3,
 	LimitedPurchaseSkuSettingsTemplateIDLpskuBundleWelcomebox1,
-	LimitedPurchaseSkuSettingsTemplateIDLpskuIncenseGeneral2Medium1,
 	LimitedPurchaseSkuSettingsTemplateIDLpskuIncenseBundleGeneral2Small1,
+	LimitedPurchaseSkuSettingsTemplateIDLpskuIncenseGeneral2Medium1,
 	LimitedPurchaseSkuSettingsTemplateIDLpskuRemotepassBundleGeneral3Small1,
 	LimitedPurchaseSkuSettingsTemplateIDLpskuWeeklyBallsGeneral2Medium1,
 }

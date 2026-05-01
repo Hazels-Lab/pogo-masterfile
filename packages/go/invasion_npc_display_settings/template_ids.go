@@ -22,7 +22,6 @@ const (
 	InvasionNpcDisplaySettingsTemplateIDCharacterEventGiovanniUnticketed InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_GIOVANNI_UNTICKETED"
 	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc0               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_0"
 	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc1               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_1"
-	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc10              InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_10"
 	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc2               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_2"
 	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc3               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_3"
 	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc4               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_4"
@@ -31,6 +30,7 @@ const (
 	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc7               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_7"
 	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc8               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_8"
 	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc9               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_9"
+	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc10              InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_10"
 	InvasionNpcDisplaySettingsTemplateIDCharacterEventSierraUnticketed   InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_SIERRA_UNTICKETED"
 	InvasionNpcDisplaySettingsTemplateIDCharacterExecutiveArlo           InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EXECUTIVE_ARLO"
 	InvasionNpcDisplaySettingsTemplateIDCharacterExecutiveCliff          InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EXECUTIVE_CLIFF"
@@ -51,10 +51,10 @@ const (
 	InvasionNpcDisplaySettingsTemplateIDCharacterGrassGruntMale          InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GRASS_GRUNT_MALE"
 	InvasionNpcDisplaySettingsTemplateIDCharacterGroundGruntFemale       InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GROUND_GRUNT_FEMALE"
 	InvasionNpcDisplaySettingsTemplateIDCharacterGroundGruntMale         InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GROUND_GRUNT_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterGruntbFemale            InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GRUNTB_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterGruntbMale              InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GRUNTB_MALE"
 	InvasionNpcDisplaySettingsTemplateIDCharacterGruntFemale             InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GRUNT_FEMALE"
 	InvasionNpcDisplaySettingsTemplateIDCharacterGruntMale               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterGruntbFemale            InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GRUNTB_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterGruntbMale              InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GRUNTB_MALE"
 	InvasionNpcDisplaySettingsTemplateIDCharacterIceGruntFemale          InvasionNpcDisplaySettingsTemplateID = "CHARACTER_ICE_GRUNT_FEMALE"
 	InvasionNpcDisplaySettingsTemplateIDCharacterIceGruntMale            InvasionNpcDisplaySettingsTemplateID = "CHARACTER_ICE_GRUNT_MALE"
 	InvasionNpcDisplaySettingsTemplateIDCharacterMetalGruntFemale        InvasionNpcDisplaySettingsTemplateID = "CHARACTER_METAL_GRUNT_FEMALE"
@@ -92,7 +92,6 @@ var InvasionNpcDisplaySettingsTemplateIDValues = [...]InvasionNpcDisplaySettings
 	InvasionNpcDisplaySettingsTemplateIDCharacterEventGiovanniUnticketed,
 	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc0,
 	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc1,
-	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc10,
 	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc2,
 	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc3,
 	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc4,
@@ -101,6 +100,7 @@ var InvasionNpcDisplaySettingsTemplateIDValues = [...]InvasionNpcDisplaySettings
 	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc7,
 	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc8,
 	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc9,
+	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc10,
 	InvasionNpcDisplaySettingsTemplateIDCharacterEventSierraUnticketed,
 	InvasionNpcDisplaySettingsTemplateIDCharacterExecutiveArlo,
 	InvasionNpcDisplaySettingsTemplateIDCharacterExecutiveCliff,
@@ -121,10 +121,10 @@ var InvasionNpcDisplaySettingsTemplateIDValues = [...]InvasionNpcDisplaySettings
 	InvasionNpcDisplaySettingsTemplateIDCharacterGrassGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterGroundGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterGroundGruntMale,
-	InvasionNpcDisplaySettingsTemplateIDCharacterGruntbFemale,
-	InvasionNpcDisplaySettingsTemplateIDCharacterGruntbMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterGruntMale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterGruntbFemale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterGruntbMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterIceGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterIceGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterMetalGruntFemale,

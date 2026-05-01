@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { type Entry, type Group, groupEntries } from "../group.ts";
+import { compareNatural } from "../helpers.ts";
 import { kebabCase } from "../naming.ts";
 import { chooseSplit, clusterSingletons, type SplitTree } from "../split.ts";
 import { writeOutput } from "../write.ts";
@@ -65,7 +66,7 @@ function planFiles(groups: Map<string, Group>): Map<string, string> {
 		else multiEntry.push(g);
 	}
 
-	multiEntry.sort((a, b) => a.discriminator.localeCompare(b.discriminator));
+	multiEntry.sort((a, b) => compareNatural(a.discriminator, b.discriminator));
 
 	const promotionRegistry = buildPromotionRegistry(groups);
 	const groupSplits = new Map<string, "split" | "flat">();

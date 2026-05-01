@@ -2588,6 +2588,94 @@ export type IapItemDisplayStickerSummer25 = S<
 		}
 	>
 >;
+export type IapItemDisplayStickerSummer33 = S<
+	IapItemDisplay<
+		"STICKER_SUMMER_3.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			hidden: true;
+			sku: "STICKER_SUMMER_3.3";
+			sortOrder: 248;
+		}
+	>
+>;
+export type IapItemDisplayStickerSummer35 = S<
+	IapItemDisplay<
+		"STICKER_SUMMER_3.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			hidden: true;
+			sku: "STICKER_SUMMER_3.5";
+			sortOrder: 247;
+		}
+	>
+>;
+export type IapItemDisplayStickerSummer43 = S<
+	IapItemDisplay<
+		"STICKER_SUMMER_4.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			hidden: true;
+			sku: "STICKER_SUMMER_4.3";
+			sortOrder: 246;
+		}
+	>
+>;
+export type IapItemDisplayStickerSummer45 = S<
+	IapItemDisplay<
+		"STICKER_SUMMER_4.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			hidden: true;
+			sku: "STICKER_SUMMER_4.5";
+			sortOrder: 245;
+		}
+	>
+>;
+export type IapItemDisplayStickerSummer53 = S<
+	IapItemDisplay<
+		"STICKER_SUMMER_5.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			hidden: true;
+			sku: "STICKER_SUMMER_5.3";
+			sortOrder: 244;
+		}
+	>
+>;
+export type IapItemDisplayStickerSummer55 = S<
+	IapItemDisplay<
+		"STICKER_SUMMER_5.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			hidden: true;
+			sku: "STICKER_SUMMER_5.5";
+			sortOrder: 243;
+		}
+	>
+>;
+export type IapItemDisplayStickerSummer63 = S<
+	IapItemDisplay<
+		"STICKER_SUMMER_6.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			hidden: true;
+			sku: "STICKER_SUMMER_6.3";
+			sortOrder: 242;
+		}
+	>
+>;
+export type IapItemDisplayStickerSummer65 = S<
+	IapItemDisplay<
+		"STICKER_SUMMER_6.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			hidden: true;
+			sku: "STICKER_SUMMER_6.5";
+			sortOrder: 241;
+		}
+	>
+>;
 export type IapItemDisplayStickerSummer2023Blastoise3 = S<
 	IapItemDisplay<
 		"STICKER_SUMMER_2023_BLASTOISE.3",
@@ -2849,94 +2937,6 @@ export type IapItemDisplayStickerSummer202465 = S<
 			hidden: true;
 			sku: "STICKER_SUMMER_2024_6.5";
 			sortOrder: 265;
-		}
-	>
->;
-export type IapItemDisplayStickerSummer33 = S<
-	IapItemDisplay<
-		"STICKER_SUMMER_3.3",
-		{
-			category: "IAP_CATEGORY_STICKER";
-			hidden: true;
-			sku: "STICKER_SUMMER_3.3";
-			sortOrder: 248;
-		}
-	>
->;
-export type IapItemDisplayStickerSummer35 = S<
-	IapItemDisplay<
-		"STICKER_SUMMER_3.5",
-		{
-			category: "IAP_CATEGORY_STICKER";
-			hidden: true;
-			sku: "STICKER_SUMMER_3.5";
-			sortOrder: 247;
-		}
-	>
->;
-export type IapItemDisplayStickerSummer43 = S<
-	IapItemDisplay<
-		"STICKER_SUMMER_4.3",
-		{
-			category: "IAP_CATEGORY_STICKER";
-			hidden: true;
-			sku: "STICKER_SUMMER_4.3";
-			sortOrder: 246;
-		}
-	>
->;
-export type IapItemDisplayStickerSummer45 = S<
-	IapItemDisplay<
-		"STICKER_SUMMER_4.5",
-		{
-			category: "IAP_CATEGORY_STICKER";
-			hidden: true;
-			sku: "STICKER_SUMMER_4.5";
-			sortOrder: 245;
-		}
-	>
->;
-export type IapItemDisplayStickerSummer53 = S<
-	IapItemDisplay<
-		"STICKER_SUMMER_5.3",
-		{
-			category: "IAP_CATEGORY_STICKER";
-			hidden: true;
-			sku: "STICKER_SUMMER_5.3";
-			sortOrder: 244;
-		}
-	>
->;
-export type IapItemDisplayStickerSummer55 = S<
-	IapItemDisplay<
-		"STICKER_SUMMER_5.5",
-		{
-			category: "IAP_CATEGORY_STICKER";
-			hidden: true;
-			sku: "STICKER_SUMMER_5.5";
-			sortOrder: 243;
-		}
-	>
->;
-export type IapItemDisplayStickerSummer63 = S<
-	IapItemDisplay<
-		"STICKER_SUMMER_6.3",
-		{
-			category: "IAP_CATEGORY_STICKER";
-			hidden: true;
-			sku: "STICKER_SUMMER_6.3";
-			sortOrder: 242;
-		}
-	>
->;
-export type IapItemDisplayStickerSummer65 = S<
-	IapItemDisplay<
-		"STICKER_SUMMER_6.5",
-		{
-			category: "IAP_CATEGORY_STICKER";
-			hidden: true;
-			sku: "STICKER_SUMMER_6.5";
-			sortOrder: 241;
 		}
 	>
 >;
@@ -3804,6 +3804,14 @@ export type IapItemDisplayCategoryHiddenSortOrderMasterfileEntry =
 	| IapItemDisplayStickerSummer15
 	| IapItemDisplayStickerSummer23
 	| IapItemDisplayStickerSummer25
+	| IapItemDisplayStickerSummer33
+	| IapItemDisplayStickerSummer35
+	| IapItemDisplayStickerSummer43
+	| IapItemDisplayStickerSummer45
+	| IapItemDisplayStickerSummer53
+	| IapItemDisplayStickerSummer55
+	| IapItemDisplayStickerSummer63
+	| IapItemDisplayStickerSummer65
 	| IapItemDisplayStickerSummer2023Blastoise3
 	| IapItemDisplayStickerSummer2023Blastoise5
 	| IapItemDisplayStickerSummer2023Butterfree3
@@ -3828,14 +3836,6 @@ export type IapItemDisplayCategoryHiddenSortOrderMasterfileEntry =
 	| IapItemDisplayStickerSummer202455
 	| IapItemDisplayStickerSummer202463
 	| IapItemDisplayStickerSummer202465
-	| IapItemDisplayStickerSummer33
-	| IapItemDisplayStickerSummer35
-	| IapItemDisplayStickerSummer43
-	| IapItemDisplayStickerSummer45
-	| IapItemDisplayStickerSummer53
-	| IapItemDisplayStickerSummer55
-	| IapItemDisplayStickerSummer63
-	| IapItemDisplayStickerSummer65
 	| IapItemDisplayStickerSwordshield2113
 	| IapItemDisplayStickerSwordshield2115
 	| IapItemDisplayStickerSwordshield2123

@@ -63,26 +63,6 @@ export type IapItemDisplayGeneral1Ticket4 = S<
 		}
 	>
 >;
-export type IapItemDisplayGeneral2Ticket10 = S<
-	IapItemDisplay<
-		"general2.ticket.10",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg";
-			sku: "general2.ticket.10";
-			skuDisableTime: "2026-03-01T18:00:00";
-			skuDisableTimeUtcMs: "1772388000000";
-			skuEnableTime: "2020-01-01T00:00:00";
-			skuEnableTimeUtcMs: "1577836800000";
-			sortOrder: 1;
-			spriteId: "general1.ticket.1";
-			title: "GOTour_2026_ticket_title";
-			webstoreSkuId: "web-gotour-26-ticket-box";
-			webstoreSkuPriceE6: 9990000;
-		}
-	>
->;
 export type IapItemDisplayGeneral2Ticket2 = S<
 	IapItemDisplay<
 		"general2.ticket.2",
@@ -223,6 +203,26 @@ export type IapItemDisplayGeneral2Ticket9 = S<
 		}
 	>
 >;
+export type IapItemDisplayGeneral2Ticket10 = S<
+	IapItemDisplay<
+		"general2.ticket.10",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			hidden: true;
+			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg";
+			sku: "general2.ticket.10";
+			skuDisableTime: "2026-03-01T18:00:00";
+			skuDisableTimeUtcMs: "1772388000000";
+			skuEnableTime: "2020-01-01T00:00:00";
+			skuEnableTimeUtcMs: "1577836800000";
+			sortOrder: 1;
+			spriteId: "general1.ticket.1";
+			title: "GOTour_2026_ticket_title";
+			webstoreSkuId: "web-gotour-26-ticket-box";
+			webstoreSkuPriceE6: 9990000;
+		}
+	>
+>;
 export type IapItemDisplayPgoreleaseEvergreenticket1 = S<
 	IapItemDisplay<
 		"pgorelease.evergreenticket.1",
@@ -280,26 +280,6 @@ export type IapItemDisplayPgoreleaseGeneral1Ticket4 = S<
 			title: "general1.ticket.4_Riolu0426_title";
 			webstoreSkuId: "web-riolu-hatch-day-ultra";
 			webstoreSkuPriceE6: 1990000;
-		}
-	>
->;
-export type IapItemDisplayPgoreleaseGeneral2Ticket10 = S<
-	IapItemDisplay<
-		"pgorelease.general2.ticket.10",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg";
-			sku: "pgorelease.general2.ticket.10";
-			skuDisableTime: "2026-03-01T18:00:00";
-			skuDisableTimeUtcMs: "1772388000000";
-			skuEnableTime: "2020-01-01T00:00:00";
-			skuEnableTimeUtcMs: "1577836800000";
-			sortOrder: 1;
-			spriteId: "general1.ticket.1";
-			title: "GOTour_2026_ticket_title";
-			webstoreSkuId: "web-gotour-26-ticket-box";
-			webstoreSkuPriceE6: 9990000;
 		}
 	>
 >;
@@ -423,12 +403,31 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket9 = S<
 		}
 	>
 >;
+export type IapItemDisplayPgoreleaseGeneral2Ticket10 = S<
+	IapItemDisplay<
+		"pgorelease.general2.ticket.10",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			hidden: true;
+			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg";
+			sku: "pgorelease.general2.ticket.10";
+			skuDisableTime: "2026-03-01T18:00:00";
+			skuDisableTimeUtcMs: "1772388000000";
+			skuEnableTime: "2020-01-01T00:00:00";
+			skuEnableTimeUtcMs: "1577836800000";
+			sortOrder: 1;
+			spriteId: "general1.ticket.1";
+			title: "GOTour_2026_ticket_title";
+			webstoreSkuId: "web-gotour-26-ticket-box";
+			webstoreSkuPriceE6: 9990000;
+		}
+	>
+>;
 
 export type IapItemDisplayCategoryHiddenImageUrlSkuDisableTimeSkuDisableTimeUtcMsSkuEnableTimeSkuEnableTimeUtcMsSortOrderSpriteIdTitleWebstoreSkuIdWebstoreSkuPriceE6MasterfileEntry =
 	| IapItemDisplayEvergreenticket1
 	| IapItemDisplayGeneral1Ticket1
 	| IapItemDisplayGeneral1Ticket4
-	| IapItemDisplayGeneral2Ticket10
 	| IapItemDisplayGeneral2Ticket2
 	| IapItemDisplayGeneral2Ticket3
 	| IapItemDisplayGeneral2Ticket4
@@ -436,13 +435,14 @@ export type IapItemDisplayCategoryHiddenImageUrlSkuDisableTimeSkuDisableTimeUtcM
 	| IapItemDisplayGeneral2Ticket6
 	| IapItemDisplayGeneral2Ticket7
 	| IapItemDisplayGeneral2Ticket9
+	| IapItemDisplayGeneral2Ticket10
 	| IapItemDisplayPgoreleaseEvergreenticket1
 	| IapItemDisplayPgoreleaseGeneral1Ticket1
 	| IapItemDisplayPgoreleaseGeneral1Ticket4
-	| IapItemDisplayPgoreleaseGeneral2Ticket10
 	| IapItemDisplayPgoreleaseGeneral2Ticket2
 	| IapItemDisplayPgoreleaseGeneral2Ticket3
 	| IapItemDisplayPgoreleaseGeneral2Ticket4
 	| IapItemDisplayPgoreleaseGeneral2Ticket5
 	| IapItemDisplayPgoreleaseGeneral2Ticket7
-	| IapItemDisplayPgoreleaseGeneral2Ticket9;
+	| IapItemDisplayPgoreleaseGeneral2Ticket9
+	| IapItemDisplayPgoreleaseGeneral2Ticket10;
