@@ -13,7 +13,7 @@ import {
 } from "./emit.ts";
 
 const OUT_DIR = join(import.meta.dir, "..", "..", "packages", "go");
-const SINGLETONS_FILE = "singletons";
+const SINGLETONS_PACKAGE = "singletons";
 
 function isStubGroup(group: Group): boolean {
 	const first = group.entries[0];
@@ -32,7 +32,7 @@ export async function generateGo(entries: Entry[]): Promise<void> {
 	const groups = groupEntries(entries);
 	console.log(`[go] grouped into ${groups.size} discriminators.`);
 
-	const _modulePath = await readModulePath();
+	const modulePath = await readModulePath();
 
 	const files = new Map<string, string>();
 	const singletons: Group[] = [];
@@ -51,33 +51,33 @@ export async function generateGo(entries: Entry[]): Promise<void> {
 				isStub: stub,
 				discriminator: group.discriminator,
 				entryCount: group.entries.length,
-				modulePath: SINGLETONS_FILE,
+				modulePath: SINGLETONS_PACKAGE,
 			});
 			continue;
 		}
 
-		const fileName = snakeCase(group.discriminator);
-		files.set(`${fileName}.go`, emitGroupModule(group, "masterfile"));
-		files.set(`${fileName}_template_ids.go`, emitGroupTemplateIdsFile(group, "masterfile"));
+		const packageName = snakeCase(group.discriminator);
+		files.set(`${packageName}/types.go`, emitGroupModule(group, packageName));
+		files.set(`${packageName}/template_ids.go`, emitGroupTemplateIdsFile(group, packageName));
 		enumVariants.push({
 			variantName: baseName,
 			entryTypeName,
 			isStub: stub,
 			discriminator: group.discriminator,
 			entryCount: group.entries.length,
-			modulePath: fileName,
+			modulePath: packageName,
 		});
 	}
 
 	if (singletons.length > 0) {
-		files.set(`${SINGLETONS_FILE}.go`, emitSingletonsModule(singletons, "masterfile"));
-		files.set(`${SINGLETONS_FILE}_template_ids.go`, emitSingletonsTemplateIdsFile(singletons, "masterfile"));
+		files.set(`${SINGLETONS_PACKAGE}/types.go`, emitSingletonsModule(singletons, SINGLETONS_PACKAGE));
+		files.set(`${SINGLETONS_PACKAGE}/template_ids.go`, emitSingletonsTemplateIdsFile(singletons, SINGLETONS_PACKAGE));
 	}
 
-	files.set("masterfile.go", emitMasterfileFile(enumVariants, _modulePath));
+	files.set("masterfile.go", emitMasterfileFile(enumVariants, modulePath));
 
 	const preserve = ["go.mod", "go.sum", "doc.go", "README.md", "LICENSE", "CHANGELOG.md", "masterfile_test.go", "examples/parse/main.go"];
 
 	await writeOutput(files, OUT_DIR, { preserve });
-	console.log(`[go] wrote ${files.size} files to ${OUT_DIR} (${singletons.length} singletons folded into ${SINGLETONS_FILE}.go).`);
+	console.log(`[go] wrote ${files.size} files to ${OUT_DIR} (${singletons.length} singletons folded into ${SINGLETONS_PACKAGE}/).`);
 }

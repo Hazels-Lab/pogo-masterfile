@@ -1503,20 +1503,7 @@ pub struct CategoryProtoV5 {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct ItemInventoryUpdateSettings {
-    pub category_proto: (
-        CategoryProto,
-        CategoryProtoV2,
-        CategoryProtoV2,
-        CategoryProtoV2,
-        CategoryProtoV3,
-        CategoryProtoV4,
-        CategoryProtoV5,
-        CategoryProtoV3,
-        CategoryProtoV2,
-        CategoryProtoV4,
-        CategoryProtoV2,
-        CategoryProtoV2,
-    ),
+    pub category_proto: (CategoryProto, CategoryProtoV2, CategoryProtoV2, CategoryProtoV2, CategoryProtoV3, CategoryProtoV4, CategoryProtoV5, CategoryProtoV3, CategoryProtoV2, CategoryProtoV4, CategoryProtoV2, CategoryProtoV2),
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1609,15 +1596,7 @@ pub struct BattleMpCostPerTierV2 {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct MpSettings {
-    pub battle_mp_cost_per_tier: (
-        BattleMpCostPerTier,
-        BattleMpCostPerTier,
-        BattleMpCostPerTier,
-        BattleMpCostPerTier,
-        BattleMpCostPerTier,
-        BattleMpCostPerTier,
-        BattleMpCostPerTierV2,
-    ),
+    pub battle_mp_cost_per_tier: (BattleMpCostPerTier, BattleMpCostPerTier, BattleMpCostPerTier, BattleMpCostPerTier, BattleMpCostPerTier, BattleMpCostPerTier, BattleMpCostPerTierV2),
     pub debug_allow_remove_walk_quest: bool,
     pub ftue_mp_capacity: u64,
     pub mp_base_daily_limit: u64,
@@ -1753,13 +1732,7 @@ pub struct ColorKeysV3 {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct HairGradient {
-    pub color_keys: (
-        ColorKeysV3,
-        ColorKeysV2,
-        ColorKeysV2,
-        ColorKeysV2,
-        ColorKeysV2,
-    ),
+    pub color_keys: (ColorKeysV3, ColorKeysV2, ColorKeysV2, ColorKeysV2, ColorKeysV2),
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2136,20 +2109,7 @@ pub struct PokedexCategorySettingsInOrderV3 {
 pub struct PokedexCategoriesSettings {
     pub client_shiny_form_check: bool,
     pub feature_enabled: bool,
-    pub pokedex_category_settings_in_order: (
-        PokedexCategorySettingsInOrder,
-        PokedexCategorySettingsInOrder,
-        PokedexCategorySettingsInOrderV2,
-        PokedexCategorySettingsInOrderV2,
-        PokedexCategorySettingsInOrderV3,
-        PokedexCategorySettingsInOrderV3,
-        PokedexCategorySettingsInOrderV3,
-        PokedexCategorySettingsInOrderV3,
-        PokedexCategorySettingsInOrderV3,
-        PokedexCategorySettingsInOrder,
-        PokedexCategorySettingsInOrder,
-        PokedexCategorySettingsInOrder,
-    ),
+    pub pokedex_category_settings_in_order: (PokedexCategorySettingsInOrder, PokedexCategorySettingsInOrder, PokedexCategorySettingsInOrderV2, PokedexCategorySettingsInOrderV2, PokedexCategorySettingsInOrderV3, PokedexCategorySettingsInOrderV3, PokedexCategorySettingsInOrderV3, PokedexCategorySettingsInOrderV3, PokedexCategorySettingsInOrderV3, PokedexCategorySettingsInOrder, PokedexCategorySettingsInOrder, PokedexCategorySettingsInOrder),
     pub search_enabled: bool,
     pub show_dex_after_new_form_enabled: bool,
     pub show_shiny_dex_celebration_enabled: bool,
@@ -2685,15 +2645,7 @@ pub struct StickerCategoryV2 {
 #[serde(rename_all = "camelCase")]
 pub struct StickerCategorySettings {
     pub enabled: bool,
-    pub sticker_category: (
-        StickerCategory,
-        StickerCategoryV2,
-        StickerCategory,
-        StickerCategory,
-        StickerCategory,
-        StickerCategory,
-        StickerCategory,
-    ),
+    pub sticker_category: (StickerCategory, StickerCategoryV2, StickerCategory, StickerCategory, StickerCategory, StickerCategory, StickerCategory),
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -3091,10 +3043,7 @@ crate::masterfile_entry!(PrimalEvoSettingsEntry, PrimalEvoSettingsEntryData, pri
 
 crate::masterfile_entry!(PtcOauthSettingsEntry, PtcOauthSettingsEntryData, ptc_oauth_settings: PtcOauthSettings);
 
-crate::masterfile_stub_entry!(
-    QuestDialogueInboxSettingsEntry,
-    QuestDialogueInboxSettingsEntryData
-);
+crate::masterfile_stub_entry!(QuestDialogueInboxSettingsEntry, QuestDialogueInboxSettingsEntryData);
 
 crate::masterfile_entry!(QuickInviteSettingsEntry, QuickInviteSettingsEntryData, quick_invite_settings: QuickInviteSettings);
 

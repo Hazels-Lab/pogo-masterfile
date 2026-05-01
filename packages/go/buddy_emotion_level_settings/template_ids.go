@@ -1,0 +1,25 @@
+// Generated from Pokémon GO masterfile — group "buddyEmotionLevelSettings" templateIds.
+
+package buddy_emotion_level_settings
+
+type BuddyEmotionLevelSettingsTemplateID string
+
+const (
+	BuddyEmotionLevelSettingsTemplateIDBuddyEmotionLevel0 BuddyEmotionLevelSettingsTemplateID = "BUDDY_EMOTION_LEVEL_0"
+	BuddyEmotionLevelSettingsTemplateIDBuddyEmotionLevel1 BuddyEmotionLevelSettingsTemplateID = "BUDDY_EMOTION_LEVEL_1"
+	BuddyEmotionLevelSettingsTemplateIDBuddyEmotionLevel2 BuddyEmotionLevelSettingsTemplateID = "BUDDY_EMOTION_LEVEL_2"
+	BuddyEmotionLevelSettingsTemplateIDBuddyEmotionLevel3 BuddyEmotionLevelSettingsTemplateID = "BUDDY_EMOTION_LEVEL_3"
+	BuddyEmotionLevelSettingsTemplateIDBuddyEmotionLevel4 BuddyEmotionLevelSettingsTemplateID = "BUDDY_EMOTION_LEVEL_4"
+	BuddyEmotionLevelSettingsTemplateIDBuddyEmotionLevel5 BuddyEmotionLevelSettingsTemplateID = "BUDDY_EMOTION_LEVEL_5"
+	BuddyEmotionLevelSettingsTemplateIDBuddyEmotionLevel6 BuddyEmotionLevelSettingsTemplateID = "BUDDY_EMOTION_LEVEL_6"
+)
+
+var BuddyEmotionLevelSettingsTemplateIDValues = [...]BuddyEmotionLevelSettingsTemplateID{
+	BuddyEmotionLevelSettingsTemplateIDBuddyEmotionLevel0,
+	BuddyEmotionLevelSettingsTemplateIDBuddyEmotionLevel1,
+	BuddyEmotionLevelSettingsTemplateIDBuddyEmotionLevel2,
+	BuddyEmotionLevelSettingsTemplateIDBuddyEmotionLevel3,
+	BuddyEmotionLevelSettingsTemplateIDBuddyEmotionLevel4,
+	BuddyEmotionLevelSettingsTemplateIDBuddyEmotionLevel5,
+	BuddyEmotionLevelSettingsTemplateIDBuddyEmotionLevel6,
+}

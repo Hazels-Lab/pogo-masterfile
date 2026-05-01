@@ -1,6 +1,11 @@
 package masterfile
 
-import "testing"
+import (
+	"testing"
+
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/badge_settings"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/singletons"
+)
 
 func TestParseEmptyList(t *testing.T) {
 	entries, err := ParseMasterfile([]byte("[]"))
@@ -13,18 +18,18 @@ func TestParseEmptyList(t *testing.T) {
 }
 
 func TestBadgeSettingsTemplateIDValuesNotEmpty(t *testing.T) {
-	if len(BadgeSettingsTemplateIDValues) == 0 {
+	if len(badge_settings.BadgeSettingsTemplateIDValues) == 0 {
 		t.Fatal("expected at least one BadgeSettings templateID")
 	}
-	var first BadgeSettingsTemplateID = BadgeSettingsTemplateIDValues[0]
+	var first badge_settings.BadgeSettingsTemplateID = badge_settings.BadgeSettingsTemplateIDValues[0]
 	if string(first) == "" {
 		t.Fatal("first templateID was empty")
 	}
 }
 
 func TestSingletonsTemplateIDIncludesAccessibility(t *testing.T) {
-	wanted := SingletonsTemplateID("ACCESSIBILITY_CLIENT_SETTINGS")
-	for _, v := range SingletonsTemplateIDValues {
+	wanted := singletons.SingletonsTemplateID("ACCESSIBILITY_CLIENT_SETTINGS")
+	for _, v := range singletons.SingletonsTemplateIDValues {
 		if v == wanted {
 			return
 		}
@@ -49,7 +54,7 @@ func TestParseAccessibilitySingleton(t *testing.T) {
 	if len(entries) != 1 {
 		t.Fatalf("expected 1 entry, got %d", len(entries))
 	}
-	entry, ok := entries[0].(AccessibilitySettingsEntry)
+	entry, ok := entries[0].(singletons.AccessibilitySettingsEntry)
 	if !ok {
 		t.Fatalf("expected AccessibilitySettingsEntry, got %T", entries[0])
 	}

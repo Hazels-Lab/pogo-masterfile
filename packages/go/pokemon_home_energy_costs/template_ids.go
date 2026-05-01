@@ -1,0 +1,19 @@
+// Generated from Pokémon GO masterfile — group "pokemonHomeEnergyCosts" templateIds.
+
+package pokemon_home_energy_costs
+
+type PokemonHomeEnergyCostsTemplateID string
+
+const (
+	PokemonHomeEnergyCostsTemplateIDEnergyCostsPokemonClassLegendary  PokemonHomeEnergyCostsTemplateID = "ENERGY_COSTS_POKEMON_CLASS_LEGENDARY"
+	PokemonHomeEnergyCostsTemplateIDEnergyCostsPokemonClassMythic     PokemonHomeEnergyCostsTemplateID = "ENERGY_COSTS_POKEMON_CLASS_MYTHIC"
+	PokemonHomeEnergyCostsTemplateIDEnergyCostsPokemonClassNormal     PokemonHomeEnergyCostsTemplateID = "ENERGY_COSTS_POKEMON_CLASS_NORMAL"
+	PokemonHomeEnergyCostsTemplateIDEnergyCostsPokemonClassUltraBeast PokemonHomeEnergyCostsTemplateID = "ENERGY_COSTS_POKEMON_CLASS_ULTRA_BEAST"
+)
+
+var PokemonHomeEnergyCostsTemplateIDValues = [...]PokemonHomeEnergyCostsTemplateID{
+	PokemonHomeEnergyCostsTemplateIDEnergyCostsPokemonClassLegendary,
+	PokemonHomeEnergyCostsTemplateIDEnergyCostsPokemonClassMythic,
+	PokemonHomeEnergyCostsTemplateIDEnergyCostsPokemonClassNormal,
+	PokemonHomeEnergyCostsTemplateIDEnergyCostsPokemonClassUltraBeast,
+}

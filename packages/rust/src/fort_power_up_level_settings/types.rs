@@ -18,9 +18,7 @@ pub struct Misc {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum FortPowerUpLevelSettings {
-    AdditionalLevelPowerupDurationMsMinPowerUpPointsRequiredPowerupLevelRewards(
-        AdditionalLevelPowerupDurationMsMinPowerUpPointsRequiredPowerupLevelRewards,
-    ),
+    AdditionalLevelPowerupDurationMsMinPowerUpPointsRequiredPowerupLevelRewards(AdditionalLevelPowerupDurationMsMinPowerUpPointsRequiredPowerupLevelRewards),
     Misc(Misc),
 }
 

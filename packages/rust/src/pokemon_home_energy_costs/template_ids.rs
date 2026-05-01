@@ -4,7 +4,9 @@ use crate::{AllVariants, AsStr, FromStrEnum};
 use serde::{Deserialize, Serialize};
 
 #[derive(
-    Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum,
+    Debug, Clone, Copy, PartialEq, Eq, Hash,
+    Serialize, Deserialize,
+    AllVariants, AsStr, FromStrEnum,
 )]
 pub enum PokemonHomeEnergyCostsTemplateId {
     #[serde(rename = "ENERGY_COSTS_POKEMON_CLASS_LEGENDARY")]

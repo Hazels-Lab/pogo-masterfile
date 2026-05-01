@@ -1,0 +1,27 @@
+// Generated from Pokémon GO masterfile — group "buddyActivityCategorySettings" templateIds.
+
+package buddy_activity_category_settings
+
+type BuddyActivityCategorySettingsTemplateID string
+
+const (
+	BuddyActivityCategorySettingsTemplateIDBuddyCategoryBattle   BuddyActivityCategorySettingsTemplateID = "BUDDY_CATEGORY_BATTLE"
+	BuddyActivityCategorySettingsTemplateIDBuddyCategoryBonus    BuddyActivityCategorySettingsTemplateID = "BUDDY_CATEGORY_BONUS"
+	BuddyActivityCategorySettingsTemplateIDBuddyCategoryCare     BuddyActivityCategorySettingsTemplateID = "BUDDY_CATEGORY_CARE"
+	BuddyActivityCategorySettingsTemplateIDBuddyCategoryExplore  BuddyActivityCategorySettingsTemplateID = "BUDDY_CATEGORY_EXPLORE"
+	BuddyActivityCategorySettingsTemplateIDBuddyCategoryFeed     BuddyActivityCategorySettingsTemplateID = "BUDDY_CATEGORY_FEED"
+	BuddyActivityCategorySettingsTemplateIDBuddyCategoryRoute    BuddyActivityCategorySettingsTemplateID = "BUDDY_CATEGORY_ROUTE"
+	BuddyActivityCategorySettingsTemplateIDBuddyCategorySnapshot BuddyActivityCategorySettingsTemplateID = "BUDDY_CATEGORY_SNAPSHOT"
+	BuddyActivityCategorySettingsTemplateIDBuddyCategoryWalk     BuddyActivityCategorySettingsTemplateID = "BUDDY_CATEGORY_WALK"
+)
+
+var BuddyActivityCategorySettingsTemplateIDValues = [...]BuddyActivityCategorySettingsTemplateID{
+	BuddyActivityCategorySettingsTemplateIDBuddyCategoryBattle,
+	BuddyActivityCategorySettingsTemplateIDBuddyCategoryBonus,
+	BuddyActivityCategorySettingsTemplateIDBuddyCategoryCare,
+	BuddyActivityCategorySettingsTemplateIDBuddyCategoryExplore,
+	BuddyActivityCategorySettingsTemplateIDBuddyCategoryFeed,
+	BuddyActivityCategorySettingsTemplateIDBuddyCategoryRoute,
+	BuddyActivityCategorySettingsTemplateIDBuddyCategorySnapshot,
+	BuddyActivityCategorySettingsTemplateIDBuddyCategoryWalk,
+}

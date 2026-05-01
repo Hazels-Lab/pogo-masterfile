@@ -1,0 +1,23 @@
+// Generated from Pokémon GO masterfile — group "friendshipMilestoneSettings" templateIds.
+
+package friendship_milestone_settings
+
+type FriendshipMilestoneSettingsTemplateID string
+
+const (
+	FriendshipMilestoneSettingsTemplateIDFriendshipLevel0 FriendshipMilestoneSettingsTemplateID = "FRIENDSHIP_LEVEL_0"
+	FriendshipMilestoneSettingsTemplateIDFriendshipLevel1 FriendshipMilestoneSettingsTemplateID = "FRIENDSHIP_LEVEL_1"
+	FriendshipMilestoneSettingsTemplateIDFriendshipLevel2 FriendshipMilestoneSettingsTemplateID = "FRIENDSHIP_LEVEL_2"
+	FriendshipMilestoneSettingsTemplateIDFriendshipLevel3 FriendshipMilestoneSettingsTemplateID = "FRIENDSHIP_LEVEL_3"
+	FriendshipMilestoneSettingsTemplateIDFriendshipLevel4 FriendshipMilestoneSettingsTemplateID = "FRIENDSHIP_LEVEL_4"
+	FriendshipMilestoneSettingsTemplateIDFriendshipLevel5 FriendshipMilestoneSettingsTemplateID = "FRIENDSHIP_LEVEL_5"
+)
+
+var FriendshipMilestoneSettingsTemplateIDValues = [...]FriendshipMilestoneSettingsTemplateID{
+	FriendshipMilestoneSettingsTemplateIDFriendshipLevel0,
+	FriendshipMilestoneSettingsTemplateIDFriendshipLevel1,
+	FriendshipMilestoneSettingsTemplateIDFriendshipLevel2,
+	FriendshipMilestoneSettingsTemplateIDFriendshipLevel3,
+	FriendshipMilestoneSettingsTemplateIDFriendshipLevel4,
+	FriendshipMilestoneSettingsTemplateIDFriendshipLevel5,
+}
