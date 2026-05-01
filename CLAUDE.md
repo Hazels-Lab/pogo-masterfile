@@ -32,3 +32,7 @@ Do NOT read or parse the following generated files (extremely large — wastes t
 * `./packages/go/singletons/**`
 
 When you are done with your edits, report to the user to test if the files have outputted correctly.
+
+## Before committing
+
+Always run `bun run format` from the repo root before any commit. The formatter (biome + cargo fmt + gofmt) normalizes whitespace, sorts imports, and rewraps long lines across all generated and hand-written sources. Skipping it produces noisy diffs the user has to undo and re-commit by hand.
