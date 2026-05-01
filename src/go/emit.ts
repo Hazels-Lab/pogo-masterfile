@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import type { Group } from "../group.ts";
 import { isStubGroup } from "../group.ts";
-import { compareNatural } from "../helpers.ts";
+import { compareNatural, compareNaturalBy } from "../helpers.ts";
 import type { InferredType, ObjectType } from "../infer.ts";
 import { widenedPayloadObject } from "../infer.ts";
 import { deriveTemplateIdVariants, pascalCase } from "../naming.ts";
@@ -223,7 +223,7 @@ export function emitGroupModule(group: Group, packageName: string): string {
 }
 
 export function emitSingletonsModule(singletons: readonly Group[], packageName: string): string {
-	const sorted = [...singletons].sort((a, b) => compareNatural(pascalCase(a.discriminator), pascalCase(b.discriminator)));
+	const sorted = [...singletons].sort(compareNaturalBy((g) => pascalCase(g.discriminator)));
 	const pool = newPool();
 	const wrappers: string[] = [];
 

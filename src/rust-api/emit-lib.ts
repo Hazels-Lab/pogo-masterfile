@@ -1,5 +1,5 @@
 import type { Group } from "../group.ts";
-import { compareNatural } from "../helpers.ts";
+import { compareNaturalBy } from "../helpers.ts";
 import { pascalCase, snakeCase } from "../naming.ts";
 
 interface GroupFragments {
@@ -49,7 +49,7 @@ export function emitLib(groups: Map<string, Group>): string {
 				accessorMethod: `\tpub fn ${snake}(&self) -> accessor::${pascal}Accessor<'_> {\n\t\taccessor::${pascal}Accessor {\n\t\t\tentries: &self.entries,\n\t\t\tindex: &self.groups.${snake}_index,\n\t\t\torder: &self.groups.${snake}_order,\n\t\t}\n\t}`,
 			};
 		})
-		.sort((a, b) => compareNatural(a.snake, b.snake));
+		.sort(compareNaturalBy((f) => f.snake));
 
 	const templateIdImports = fragments.map((f) => f.templateIdImport).join("\n");
 	const indexFields = fragments.map((f) => f.indexField).join("\n");

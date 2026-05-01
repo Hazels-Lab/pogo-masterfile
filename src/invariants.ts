@@ -1,6 +1,6 @@
 import { isDeepStrictEqual } from "node:util";
 import type { Group } from "./group.ts";
-import { compareNatural, isJsonObject } from "./helpers.ts";
+import { compareNaturalKeys, isJsonObject } from "./helpers.ts";
 import type { InferredProperty, InferredType } from "./infer.ts";
 import { inferJsonType } from "./infer.ts";
 
@@ -117,32 +117,30 @@ function detectTemplateIdSlice(values: readonly string[], templateIds: readonly 
 }
 
 export function invariantsToInferredType(tree: InvariantTree): InferredType {
-	const properties: InferredProperty[] = [...tree.entries()]
-		.sort(([a], [b]) => compareNatural(a, b))
-		.map(([name, node]) => {
-			if (node.kind === "constant") {
-				return { name, optional: false, type: inferJsonType(node.value) };
-			}
-			if (node.kind === "templateIdTie") {
-				return {
-					name,
-					optional: false,
-					type: { kind: "templateIdReference" },
-				};
-			}
-			if (node.kind === "templateIdSlice") {
-				return {
-					name,
-					optional: false,
-					type: { kind: "templateIdSlice", prefix: node.prefix, suffix: node.suffix },
-				};
-			}
+	const properties: InferredProperty[] = [...tree.entries()].sort(compareNaturalKeys).map(([name, node]) => {
+		if (node.kind === "constant") {
+			return { name, optional: false, type: inferJsonType(node.value) };
+		}
+		if (node.kind === "templateIdTie") {
 			return {
 				name,
 				optional: false,
-				type: invariantsToInferredType(node.children),
+				type: { kind: "templateIdReference" },
 			};
-		});
+		}
+		if (node.kind === "templateIdSlice") {
+			return {
+				name,
+				optional: false,
+				type: { kind: "templateIdSlice", prefix: node.prefix, suffix: node.suffix },
+			};
+		}
+		return {
+			name,
+			optional: false,
+			type: invariantsToInferredType(node.children),
+		};
+	});
 
 	return { kind: "object", properties };
 }

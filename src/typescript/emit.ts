@@ -1,6 +1,6 @@
 import ts from "typescript";
 import type { Entry, Group } from "../group.ts";
-import { compareNatural, isJsonObject } from "../helpers.ts";
+import { compareNatural, compareNaturalBy, compareNaturalKeys, isJsonObject } from "../helpers.ts";
 import type { InferredType } from "../infer.ts";
 import { inferJsonType, inferJsonTypes, widenType } from "../infer.ts";
 import type { InvariantTree } from "../invariants.ts";
@@ -32,7 +32,7 @@ function entryVariantStatements(
 	aliases: Map<string, string>,
 	invariants: InvariantTree,
 ): { statements: ts.Statement[]; typeNames: string[] } {
-	const sortedEntries = [...entries].sort((a, b) => compareNatural(a.templateId, b.templateId));
+	const sortedEntries = [...entries].sort(compareNaturalBy((e) => e.templateId));
 	const statements: ts.Statement[] = [];
 	const typeNames: string[] = [];
 	for (const entry of sortedEntries) {
@@ -76,7 +76,7 @@ function nameSingletons(singletons: Group[]): Array<{ group: Group; entry: Entry
 
 export function emitSingletonsFile(bucketName: string, singletons: Group[]): string {
 	const named = nameSingletons(singletons);
-	named.sort((a, b) => compareNatural(a.name, b.name));
+	named.sort(compareNaturalBy((n) => n.name));
 
 	const file = new AstFileBuilder().header(`Generated from Pokémon GO masterfile — ${SINGLETONS} ${ENTRIES_LOWER} (no shared discriminator).`);
 
@@ -105,7 +105,7 @@ export function emitSingletonsFile(bucketName: string, singletons: Group[]): str
 
 export function emitSingletonsTypeFile(singletons: Group[]): string {
 	const named = nameSingletons(singletons);
-	named.sort((a, b) => compareNatural(a.name, b.name));
+	named.sort(compareNaturalBy((n) => n.name));
 
 	const file = new AstFileBuilder().header(`Generated from Pokémon GO masterfile — ${SINGLETONS} ${TYPES} (no shared discriminator).`);
 
@@ -186,7 +186,7 @@ export function emitGroupTypes(group: Group, registry: PromotionRegistry = []): 
 
 	// Cross-group imports for promoted ${gName}TemplateID references; resolves to the
 	// sibling group's entries.ts (flat) or entries/index.ts (split).
-	const sortedImports = [...ctx.imports.entries()].filter(([disc]) => disc !== group.discriminator).sort(([a], [b]) => compareNatural(a, b));
+	const sortedImports = [...ctx.imports.entries()].filter(([disc]) => disc !== group.discriminator).sort(compareNaturalKeys);
 	for (const [disc, names] of sortedImports) {
 		file.importNamed(`../${kebabCase(disc)}/${ENTRIES_LOWER}`, [...names].sort(compareNatural), true);
 	}
@@ -418,7 +418,7 @@ export function emitGroupLookupTable(group: Group): string {
 export function emitSingletonsLookupTable(singletons: Group[]): string {
 	const entries = nameSingletons(singletons)
 		.map(({ entry, name }) => ({ key: entry.templateId, typeName: name }))
-		.sort((a, b) => compareNatural(a.key, b.key));
+		.sort(compareNaturalBy((e) => e.key));
 
 	return emitLookupTableFile({
 		headerLabel: "singletons lookup table",
@@ -428,7 +428,7 @@ export function emitSingletonsLookupTable(singletons: Group[]): string {
 }
 
 export function emitRootLookupTable(multiEntry: Group[], hasSingletons: boolean): string {
-	const sortedMulti = [...multiEntry].sort((a, b) => compareNatural(a.discriminator, b.discriminator));
+	const sortedMulti = [...multiEntry].sort(compareNaturalBy((g) => g.discriminator));
 	const groupInfos = sortedMulti.map((g) => ({
 		discriminator: g.discriminator,
 		gName: groupName(g.discriminator),

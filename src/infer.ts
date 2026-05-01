@@ -1,5 +1,5 @@
 import type { Entry } from "./group.ts";
-import { compareNatural, isJsonObject } from "./helpers.ts";
+import { compareNatural, compareNaturalBy, compareNaturalKeys, isJsonObject } from "./helpers.ts";
 
 export type NumericKind = "uint" | "int" | "float";
 
@@ -190,7 +190,7 @@ export function inferJsonTypes(values: readonly unknown[]): InferredType {
 	if (variants.length === 1) return variants[0]!;
 	return {
 		kind: "union",
-		variants: variants.sort((a, b) => compareNatural(variantSortKey(a), variantSortKey(b))),
+		variants: variants.sort(compareNaturalBy(variantSortKey)),
 	};
 }
 
@@ -241,24 +241,22 @@ function inferObjectType(values: readonly Record<string, unknown>[]): ObjectType
 		}
 	}
 
-	const properties = [...propertyValues.entries()]
-		.sort(([a], [b]) => compareNatural(a, b))
-		.map(([name, observedValues]) => {
-			let type = inferJsonTypes(observedValues);
-			// Float-field hint: if the source JSON ever wrote this field with
-			// decimal syntax (either a scalar value or any element of an array
-			// of numbers), treat numeric content of this field as float
-			// regardless of the values JS surfaced after `JSON.parse`. The
-			// propagation walks into array/tuple element types but stops at
-			// object boundaries (which have their own field names handled
-			// independently).
-			if (floatFieldHints.has(name)) type = applyFloatToNumbers(type);
-			return {
-				name,
-				type,
-				optional: propertyCounts.get(name) !== values.length,
-			};
-		});
+	const properties = [...propertyValues.entries()].sort(compareNaturalKeys).map(([name, observedValues]) => {
+		let type = inferJsonTypes(observedValues);
+		// Float-field hint: if the source JSON ever wrote this field with
+		// decimal syntax (either a scalar value or any element of an array
+		// of numbers), treat numeric content of this field as float
+		// regardless of the values JS surfaced after `JSON.parse`. The
+		// propagation walks into array/tuple element types but stops at
+		// object boundaries (which have their own field names handled
+		// independently).
+		if (floatFieldHints.has(name)) type = applyFloatToNumbers(type);
+		return {
+			name,
+			type,
+			optional: propertyCounts.get(name) !== values.length,
+		};
+	});
 
 	return { kind: "object", properties };
 }

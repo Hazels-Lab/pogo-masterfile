@@ -1,5 +1,5 @@
 import type { Group } from "../group.ts";
-import { compareNatural } from "../helpers.ts";
+import { compareNatural, compareNaturalBy } from "../helpers.ts";
 import { groupName, sharedPrefix } from "../naming.ts";
 import type { PromotionRegistry, PromotionRegistryEntry } from "../promoted-unions.ts";
 import { TEMPLATE_GENERIC } from "./constants.ts";
@@ -21,6 +21,6 @@ export function buildPromotionRegistry(groups: Map<string, Group>): PromotionReg
 		const members = [...ids].sort(compareNatural);
 		entries.push({ group, aliasName, members, memberSet: new Set(members) });
 	}
-	entries.sort((a, b) => compareNatural(a.aliasName, b.aliasName));
+	entries.sort(compareNaturalBy((e) => e.aliasName));
 	return entries;
 }
