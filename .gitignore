@@ -22,6 +22,11 @@ dist
 !packages/rust-api/src
 !packages/rust-api/src/**
 
+# packages/go-api holds generated runtime sources alongside hand-written
+# templates and tests. Track everything under it so PR review covers regen output.
+!packages/go-api
+!packages/go-api/**
+
 # Editor-only stubs that mirror the latest generated lookup-tables/group-names
 # next to the runtime templates so the templates dir type-checks in the IDE.
 src/typescript-api/templates-stubs/
