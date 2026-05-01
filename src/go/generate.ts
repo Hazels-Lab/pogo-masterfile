@@ -1,3 +1,4 @@
+import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { type Entry, type Group, groupEntries } from "../group.ts";
 import { pascalCase, snakeCase } from "../naming.ts";
@@ -20,9 +21,18 @@ function isStubGroup(group: Group): boolean {
 	return Object.keys(first.data).filter((k) => k !== "templateId").length === 0;
 }
 
+async function readModulePath(): Promise<string> {
+	const goMod = await readFile(join(OUT_DIR, "go.mod"), "utf8");
+	const match = goMod.match(/^module\s+(\S+)/m);
+	if (!match) throw new Error(`could not parse module path from ${join(OUT_DIR, "go.mod")}`);
+	return match[1]!;
+}
+
 export async function generateGo(entries: Entry[]): Promise<void> {
 	const groups = groupEntries(entries);
 	console.log(`[go] grouped into ${groups.size} discriminators.`);
+
+	const _modulePath = await readModulePath();
 
 	const files = new Map<string, string>();
 	const singletons: Group[] = [];
