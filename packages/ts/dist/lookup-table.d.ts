@@ -311,67 +311,72 @@ export type GroupName =
 	| "weatherAffinities"
 	| "singletons";
 
-export interface EntryByTemplateID
-	extends AvatarCustomizationLookup,
-		AvatarGroupOrderSettingsLookup,
-		AvatarItemDisplayLookup,
-		BadgeSettingsLookup,
-		BreadMoveLevelSettingsLookup,
-		BuddyActivityCategorySettingsLookup,
-		BuddyEmotionLevelSettingsLookup,
-		BuddyLevelSettingsLookup,
-		ClientQuestTemplateLookup,
-		CodeGateProtoLookup,
-		CombatLeagueLookup,
-		CombatMoveLookup,
-		CombatNpcPersonalityLookup,
-		CombatNpcTrainerLookup,
-		CombatRankingProtoSettingsLookup,
-		CombatTypeLookup,
-		EventPassSettingsLookup,
-		EventPassTierSettingsLookup,
-		EvolutionChainDisplaySettingsLookup,
-		EvolutionQuestTemplateLookup,
-		FeatureGateLookup,
-		FormSettingsLookup,
-		FortPowerUpLevelSettingsLookup,
-		FriendshipMilestoneSettingsLookup,
-		GenderSettingsLookup,
-		IapCategoryDisplayLookup,
-		IapItemDisplayLookup,
-		InvasionNpcDisplaySettingsLookup,
-		ItemExpirationSettingsLookup,
-		ItemSettingsLookup,
-		LanguageSettingsLookup,
-		LevelUpRewardsLookup,
-		LimitedPurchaseSkuSettingsLookup,
-		LocationCardSettingsLookup,
-		MegaEvoLevelSettingsLookup,
-		MoveSequenceSettingsLookup,
-		MoveSettingsLookup,
-		NonCombatMoveSettingsLookup,
-		PartyPlayGeneralSettingsLookup,
-		PhotoSetsSettingsProtoLookup,
-		PokemonExtendedSettingsLookup,
-		PokemonFamilyLookup,
-		PokemonHomeEnergyCostsLookup,
-		PokemonHomeFormReversionsLookup,
-		PokemonScaleSettingsLookup,
-		PokemonSettingsLookup,
-		PokemonUpgradesLookup,
-		PokestopInvasionAvailabilitySettingsLookup,
-		QuestSettingsLookup,
-		RecommendedSearchSettingsLookup,
-		RollBackLookup,
-		SettingsOverrideRuleLookup,
-		StickerMetadataLookup,
-		TappableSettingsLookup,
-		TemporaryEvolutionSettingsLookup,
-		TypeEffectiveLookup,
-		VsSeekerLootLookup,
-		VsSeekerPokemonRewardsLookup,
-		WeatherAffinitiesLookup,
-		SingletonsLookup {}
+// LookupByGroup maps each group discriminator to its narrow per-group Lookup
+// interface. Indexed access (`LookupByGroup[G][T]`) gives a literal-narrow
+// entry type without forcing TS to materialize the full EntryByTemplateID
+// (~18k keys) — only the relevant per-group lookup is resolved.
+export interface LookupByGroup {
+	avatarCustomization: AvatarCustomizationLookup;
+	avatarGroupOrderSettings: AvatarGroupOrderSettingsLookup;
+	avatarItemDisplay: AvatarItemDisplayLookup;
+	badgeSettings: BadgeSettingsLookup;
+	breadMoveLevelSettings: BreadMoveLevelSettingsLookup;
+	buddyActivityCategorySettings: BuddyActivityCategorySettingsLookup;
+	buddyEmotionLevelSettings: BuddyEmotionLevelSettingsLookup;
+	buddyLevelSettings: BuddyLevelSettingsLookup;
+	clientQuestTemplate: ClientQuestTemplateLookup;
+	codeGateProto: CodeGateProtoLookup;
+	combatLeague: CombatLeagueLookup;
+	combatMove: CombatMoveLookup;
+	combatNpcPersonality: CombatNpcPersonalityLookup;
+	combatNpcTrainer: CombatNpcTrainerLookup;
+	combatRankingProtoSettings: CombatRankingProtoSettingsLookup;
+	combatType: CombatTypeLookup;
+	eventPassSettings: EventPassSettingsLookup;
+	eventPassTierSettings: EventPassTierSettingsLookup;
+	evolutionChainDisplaySettings: EvolutionChainDisplaySettingsLookup;
+	evolutionQuestTemplate: EvolutionQuestTemplateLookup;
+	featureGate: FeatureGateLookup;
+	formSettings: FormSettingsLookup;
+	fortPowerUpLevelSettings: FortPowerUpLevelSettingsLookup;
+	friendshipMilestoneSettings: FriendshipMilestoneSettingsLookup;
+	genderSettings: GenderSettingsLookup;
+	iapCategoryDisplay: IapCategoryDisplayLookup;
+	iapItemDisplay: IapItemDisplayLookup;
+	invasionNpcDisplaySettings: InvasionNpcDisplaySettingsLookup;
+	itemExpirationSettings: ItemExpirationSettingsLookup;
+	itemSettings: ItemSettingsLookup;
+	languageSettings: LanguageSettingsLookup;
+	levelUpRewards: LevelUpRewardsLookup;
+	limitedPurchaseSkuSettings: LimitedPurchaseSkuSettingsLookup;
+	locationCardSettings: LocationCardSettingsLookup;
+	megaEvoLevelSettings: MegaEvoLevelSettingsLookup;
+	moveSequenceSettings: MoveSequenceSettingsLookup;
+	moveSettings: MoveSettingsLookup;
+	nonCombatMoveSettings: NonCombatMoveSettingsLookup;
+	partyPlayGeneralSettings: PartyPlayGeneralSettingsLookup;
+	photoSetsSettingsProto: PhotoSetsSettingsProtoLookup;
+	pokemonExtendedSettings: PokemonExtendedSettingsLookup;
+	pokemonFamily: PokemonFamilyLookup;
+	pokemonHomeEnergyCosts: PokemonHomeEnergyCostsLookup;
+	pokemonHomeFormReversions: PokemonHomeFormReversionsLookup;
+	pokemonScaleSettings: PokemonScaleSettingsLookup;
+	pokemonSettings: PokemonSettingsLookup;
+	pokemonUpgrades: PokemonUpgradesLookup;
+	pokestopInvasionAvailabilitySettings: PokestopInvasionAvailabilitySettingsLookup;
+	questSettings: QuestSettingsLookup;
+	recommendedSearchSettings: RecommendedSearchSettingsLookup;
+	rollBack: RollBackLookup;
+	settingsOverrideRule: SettingsOverrideRuleLookup;
+	stickerMetadata: StickerMetadataLookup;
+	tappableSettings: TappableSettingsLookup;
+	temporaryEvolutionSettings: TemporaryEvolutionSettingsLookup;
+	typeEffective: TypeEffectiveLookup;
+	vsSeekerLoot: VsSeekerLootLookup;
+	vsSeekerPokemonRewards: VsSeekerPokemonRewardsLookup;
+	weatherAffinities: WeatherAffinitiesLookup;
+	singletons: SingletonsLookup;
+}
 
 export interface EntriesByGroup {
 	avatarCustomization: AvatarCustomizationMasterfileEntry;
@@ -498,3 +503,69 @@ export interface TemplateIDsByGroup {
 	weatherAffinities: WeatherAffinitiesTemplateID;
 	singletons: SingletonsTemplateID;
 }
+
+// Composed via interface inheritance from every per-group Lookup. Expensive
+// to materialize (~18k keys) — only opt in if you need cross-group literal
+// narrowing. Most consumers should reach for LookupByGroup[G] or per-group
+// Lookup interfaces instead.
+export interface EntryByTemplateID
+	extends AvatarCustomizationLookup,
+		AvatarGroupOrderSettingsLookup,
+		AvatarItemDisplayLookup,
+		BadgeSettingsLookup,
+		BreadMoveLevelSettingsLookup,
+		BuddyActivityCategorySettingsLookup,
+		BuddyEmotionLevelSettingsLookup,
+		BuddyLevelSettingsLookup,
+		ClientQuestTemplateLookup,
+		CodeGateProtoLookup,
+		CombatLeagueLookup,
+		CombatMoveLookup,
+		CombatNpcPersonalityLookup,
+		CombatNpcTrainerLookup,
+		CombatRankingProtoSettingsLookup,
+		CombatTypeLookup,
+		EventPassSettingsLookup,
+		EventPassTierSettingsLookup,
+		EvolutionChainDisplaySettingsLookup,
+		EvolutionQuestTemplateLookup,
+		FeatureGateLookup,
+		FormSettingsLookup,
+		FortPowerUpLevelSettingsLookup,
+		FriendshipMilestoneSettingsLookup,
+		GenderSettingsLookup,
+		IapCategoryDisplayLookup,
+		IapItemDisplayLookup,
+		InvasionNpcDisplaySettingsLookup,
+		ItemExpirationSettingsLookup,
+		ItemSettingsLookup,
+		LanguageSettingsLookup,
+		LevelUpRewardsLookup,
+		LimitedPurchaseSkuSettingsLookup,
+		LocationCardSettingsLookup,
+		MegaEvoLevelSettingsLookup,
+		MoveSequenceSettingsLookup,
+		MoveSettingsLookup,
+		NonCombatMoveSettingsLookup,
+		PartyPlayGeneralSettingsLookup,
+		PhotoSetsSettingsProtoLookup,
+		PokemonExtendedSettingsLookup,
+		PokemonFamilyLookup,
+		PokemonHomeEnergyCostsLookup,
+		PokemonHomeFormReversionsLookup,
+		PokemonScaleSettingsLookup,
+		PokemonSettingsLookup,
+		PokemonUpgradesLookup,
+		PokestopInvasionAvailabilitySettingsLookup,
+		QuestSettingsLookup,
+		RecommendedSearchSettingsLookup,
+		RollBackLookup,
+		SettingsOverrideRuleLookup,
+		StickerMetadataLookup,
+		TappableSettingsLookup,
+		TemporaryEvolutionSettingsLookup,
+		TypeEffectiveLookup,
+		VsSeekerLootLookup,
+		VsSeekerPokemonRewardsLookup,
+		WeatherAffinitiesLookup,
+		SingletonsLookup {}

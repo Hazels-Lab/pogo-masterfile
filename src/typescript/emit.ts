@@ -456,6 +456,7 @@ export function emitRootLookupTable(multiEntry: Group[], hasSingletons: boolean)
 	const groupNameLiterals: string[] = [];
 	const entriesByGroupLines: string[] = [];
 	const templateIdsByGroupLines: string[] = [];
+	const lookupByGroupLines: string[] = [];
 	const lookupNames: string[] = [];
 
 	for (const info of groupInfos) {
@@ -464,6 +465,7 @@ export function emitRootLookupTable(multiEntry: Group[], hasSingletons: boolean)
 		groupNameLiterals.push(`"${info.discriminator}"`);
 		entriesByGroupLines.push(`\t${info.discriminator}: ${info.gName}${BARREL_TYPE}${ENTRY};`);
 		templateIdsByGroupLines.push(`\t${info.discriminator}: ${info.gName}${TEMPLATE_GENERIC};`);
+		lookupByGroupLines.push(`\t${info.discriminator}: ${info.gName}Lookup;`);
 		lookupNames.push(`${info.gName}Lookup`);
 	}
 
@@ -474,6 +476,7 @@ export function emitRootLookupTable(multiEntry: Group[], hasSingletons: boolean)
 		groupNameLiterals.push(`"${singletonsKebab}"`);
 		entriesByGroupLines.push(`\t${singletonsKebab}: ${SINGLETONS}${BARREL_TYPE}${ENTRY};`);
 		templateIdsByGroupLines.push(`\t${singletonsKebab}: ${SINGLETONS}${TEMPLATE_GENERIC};`);
+		lookupByGroupLines.push(`\t${singletonsKebab}: ${SINGLETONS}Lookup;`);
 		lookupNames.push(`${SINGLETONS}Lookup`);
 	}
 
@@ -493,8 +496,13 @@ ${lookupReExportLines.join("\n")}
 
 export type GroupName = ${groupNameLiterals.join(" | ")};
 
-export interface ${ENTRY}By${TEMPLATE_GENERIC} extends
-${lookupNames.map((n) => `\t${n}`).join(",\n")} {}
+// LookupByGroup maps each group discriminator to its narrow per-group Lookup
+// interface. Indexed access (\`LookupByGroup[G][T]\`) gives a literal-narrow
+// entry type without forcing TS to materialize the full ${ENTRY}By${TEMPLATE_GENERIC}
+// (~18k keys) — only the relevant per-group lookup is resolved.
+export interface LookupByGroup {
+${lookupByGroupLines.join("\n")}
+}
 
 export interface EntriesByGroup {
 ${entriesByGroupLines.join("\n")}
@@ -503,5 +511,12 @@ ${entriesByGroupLines.join("\n")}
 export interface TemplateIDsByGroup {
 ${templateIdsByGroupLines.join("\n")}
 }
+
+// Composed via interface inheritance from every per-group Lookup. Expensive
+// to materialize (~18k keys) — only opt in if you need cross-group literal
+// narrowing. Most consumers should reach for LookupByGroup[G] or per-group
+// Lookup interfaces instead.
+export interface ${ENTRY}By${TEMPLATE_GENERIC} extends
+${lookupNames.map((n) => `\t${n}`).join(",\n")} {}
 `;
 }

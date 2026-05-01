@@ -1,22 +1,27 @@
 /** biome-ignore-all lint/suspicious/noUnsafeDeclarationMerging: the Masterfile class+interface merge below intentionally adds per-group accessor properties installed dynamically in the constructor. */
 
 import type { MasterfileEntry } from "pogo-masterfile-types/entries";
-import type { EntriesByGroup, EntryByTemplateID, TemplateIDsByGroup } from "pogo-masterfile-types/lookup-table";
+import type { EntriesByGroup, LookupByGroup, TemplateIDsByGroup } from "pogo-masterfile-types/lookup-table";
 import { EntryNotFoundError } from "./errors";
 import { DEFAULT_MASTERFILE_URL, defaultFetcher } from "./fetch";
 import { GROUP_NAMES, type GroupName } from "./group-names";
 import type { FromRemoteOptions } from "./types";
 
 // ── Group accessor ─────────────────────────────────────────────────────────
+//
+// Per-group accessors deliver literal-narrow typing through `LookupByGroup[G][T]`
+// — TS only resolves the per-group Lookup interface (~hundreds of keys),
+// never the global `EntryByTemplateID` (~18k keys). That's the win that lets
+// the package's own `tsc --noEmit` finish in seconds instead of ~50.
 
 export interface GroupAccessor<G extends GroupName> {
-	get<T extends TemplateIDsByGroup[G] & keyof EntryByTemplateID>(templateId: T): EntryByTemplateID[T];
+	get<T extends keyof LookupByGroup[G] & string>(templateId: T): LookupByGroup[G][T];
 	get(templateId: string): EntriesByGroup[G];
 
-	tryGet<T extends TemplateIDsByGroup[G] & keyof EntryByTemplateID>(templateId: T): EntryByTemplateID[T] | undefined;
+	tryGet<T extends keyof LookupByGroup[G] & string>(templateId: T): LookupByGroup[G][T] | undefined;
 	tryGet(templateId: string): EntriesByGroup[G] | undefined;
 
-	has(templateId: string): templateId is TemplateIDsByGroup[G] & string;
+	has(templateId: string): templateId is keyof LookupByGroup[G] & string;
 
 	all(): readonly EntriesByGroup[G][];
 	templateIds(): readonly (TemplateIDsByGroup[G] & string)[];
@@ -57,21 +62,25 @@ export class Masterfile {
 	}
 
 	// ── Core lookups ──
-	getEntry<T extends keyof EntryByTemplateID>(templateId: T): EntryByTemplateID[T];
-	getEntry(templateId: string): MasterfileEntry;
+	//
+	// Top-level lookups return the wide `MasterfileEntry` union — no literal
+	// narrowing. For literal narrowing, reach for the per-group accessor:
+	// `mf.moveSettings.get("V0022_MOVE_MEGAHORN")` returns the exact literal
+	// entry type. (Cross-group literal narrowing requires materializing the
+	// global `EntryByTemplateID` interface from
+	// `pogo-masterfile-types/lookup-table`, which is genuinely expensive.)
+
 	getEntry(templateId: string): MasterfileEntry {
 		const entry = this.#byTemplateId.get(templateId);
 		if (!entry) throw new EntryNotFoundError(templateId);
 		return entry;
 	}
 
-	tryGetEntry<T extends keyof EntryByTemplateID>(templateId: T): EntryByTemplateID[T] | undefined;
-	tryGetEntry(templateId: string): MasterfileEntry | undefined;
 	tryGetEntry(templateId: string): MasterfileEntry | undefined {
 		return this.#byTemplateId.get(templateId);
 	}
 
-	has(templateId: string): templateId is keyof EntryByTemplateID & string {
+	has(templateId: string): boolean {
 		return this.#byTemplateId.has(templateId);
 	}
 
@@ -88,9 +97,6 @@ export class Masterfile {
 		return GROUP_NAMES;
 	}
 
-	// `templateIds()` no-arg returns all IDs as plain strings — the literal
-	// union over 18k+ entries exceeds TS's "expression too complex" threshold.
-	// `templateIds(group)` returns the narrow per-group union.
 	templateIds(): readonly string[];
 	templateIds<G extends GroupName>(group: G): readonly (TemplateIDsByGroup[G] & string)[];
 	templateIds(group?: GroupName): readonly string[] {
@@ -151,14 +157,12 @@ export class Masterfile {
 			if (group !== undefined) {
 				byGroup.get(group)!.push(entry);
 			} else {
-				// Singleton-shaped (or stub): fold into the synthetic "singletons" group.
 				const singletonsKey = "singletons" as GroupName;
 				const list = byGroup.get(singletonsKey);
 				if (list) list.push(entry);
 			}
 		}
 
-		// Atomic swap: only mutate `this` once both maps are fully built.
 		this.#entries = entries;
 		this.#byTemplateId = byTemplateId;
 		this.#byGroup = byGroup;
@@ -175,7 +179,7 @@ export class Masterfile {
 			tryGet(templateId: string): EntriesByGroup[G] | undefined {
 				return self.#byTemplateId.get(templateId) as EntriesByGroup[G] | undefined;
 			},
-			has(templateId: string): templateId is TemplateIDsByGroup[G] & string {
+			has(templateId: string): templateId is keyof LookupByGroup[G] & string {
 				const list = self.#byGroup.get(groupName) ?? [];
 				return list.some((e) => e.templateId === templateId);
 			},
@@ -204,12 +208,6 @@ export class Masterfile {
 
 export interface Masterfile extends GroupAccessorMap {}
 
-/**
- * Extract the group discriminator from a masterfile entry by inspecting the
- * non-`templateId` keys of its `data` payload. Returns `undefined` for
- * singleton-shaped entries (whose discriminator key is unique per entry, not
- * shared) and stub entries (no payload).
- */
 function detectGroup(entry: MasterfileEntry): GroupName | undefined {
 	const dataKeys = Object.keys(entry.data).filter((k) => k !== "templateId");
 	const first = dataKeys[0];

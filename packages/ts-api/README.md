@@ -1,6 +1,6 @@
 # pogo-masterfile
 
-Runtime API for the Pokémon GO masterfile. Loads, indexes, and queries entries with literal-typed lookups and per-group accessors. Built on [`pogo-masterfile-types`](../ts/README.md).
+Runtime API for the Pokémon GO masterfile. Loads, indexes, and queries entries with per-group literal-typed accessors. Built on [`pogo-masterfile-types`](../ts/README.md).
 
 ## Install
 
@@ -17,11 +17,11 @@ import { Masterfile } from "pogo-masterfile";
 
 const mf = await Masterfile.fromRemote();
 
-// Top-level lookup — return type narrows to the exact literal entry.
+// Top-level lookup — wide return type (MasterfileEntry).
 const move = mf.getEntry("V0022_MOVE_MEGAHORN");
-console.log(move.data.moveSettings.power); // typed as `105`
 
-// Per-group accessor — focused intellisense (only moveSettings IDs autocomplete).
+// Per-group accessor — literal-narrow return type, full intellisense.
+// `tackle` is typed as the exact literal entry, e.g. its `power` is `105`.
 const tackle = mf.moveSettings.get("V0033_MOVE_TACKLE_FAST");
 
 // Iterate one group.
@@ -32,6 +32,24 @@ for (const m of mf.moveSettings) {
 // Search.
 const items = mf.findByPattern(/^ITEM_/);
 ```
+
+### Top-level vs per-group lookups
+
+The `Masterfile` class deliberately splits its lookup APIs to keep TypeScript's
+compile times fast:
+
+- **Top-level** (`mf.getEntry`, `mf.tryGetEntry`, `mf.has`) returns the wide
+  `MasterfileEntry` union with no literal narrowing. Use it when you have an
+  arbitrary string templateId and just want the entry.
+- **Per-group accessor** (`mf.moveSettings.get`, etc.) narrows to the exact
+  literal entry type for that group's templateIds. Use it when you know the
+  group up front — you get full autocomplete on IDs and a precisely-typed
+  return value.
+
+If you want cross-group literal narrowing on top-level lookups, import the
+explicit `EntryByTemplateID` interface from `pogo-masterfile-types/lookup-table`
+and cast to it. That interface materializes ~18k keys and is correspondingly
+expensive to type-check, so reach for it only when you actually need it.
 
 ## Loading
 
@@ -95,9 +113,9 @@ const mf = await Masterfile.fromRemote({ signal: ac.signal });
 
 | Method | Description |
 |---|---|
-| `getEntry(id)` | Return the entry. Throws `EntryNotFoundError` if missing. Narrow return type for literal IDs. |
+| `getEntry(id)` | Return the entry (wide `MasterfileEntry`). Throws `EntryNotFoundError` if missing. |
 | `tryGetEntry(id)` | Return the entry or `undefined`. |
-| `has(id)` | Type predicate; narrows `string` to `keyof EntryByTemplateID`. |
+| `has(id)` | Boolean check. |
 | `getAll()` | All entries. |
 | `getGroup(name)` | All entries for one group, narrowed to that group's union. |
 | `groups()` | All group names. |
