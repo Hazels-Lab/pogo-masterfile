@@ -1,0 +1,55 @@
+{
+	"name": "pogo-masterfile",
+	"version": "0.1.0",
+	"description": "Runtime API for the Pokémon GO masterfile. Loads, indexes, and queries entries with literal-typed lookups and per-group accessors. Built on `pogo-masterfile-types`.",
+	"license": "MIT",
+	"author": "Rin <derick.magnusen@gmail.com>",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/<GH_OWNER>/pogo-masterfile-types.git",
+		"directory": "packages/ts-api"
+	},
+	"homepage": "https://github.com/<GH_OWNER>/pogo-masterfile-types#readme",
+	"bugs": {
+		"url": "https://github.com/<GH_OWNER>/pogo-masterfile-types/issues"
+	},
+	"keywords": ["pokemon-go", "pokemon", "masterfile", "api", "typescript"],
+	"type": "module",
+	"sideEffects": false,
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		},
+		"./fetch": {
+			"import": "./dist/fetch.js",
+			"types": "./dist/fetch.d.ts"
+		},
+		"./errors": {
+			"import": "./dist/errors.js",
+			"types": "./dist/errors.d.ts"
+		}
+	},
+	"files": ["dist", "README.md", "LICENSE", "CHANGELOG.md"],
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "tsc -p tsconfig.build.json",
+		"check": "tsc --noEmit -p tsconfig.json",
+		"prepublishOnly": "bun run build"
+	},
+	"dependencies": {
+		"pogo-masterfile-types": "workspace:^"
+	},
+	"peerDependencies": {
+		"typescript": ">=5.0"
+	},
+	"peerDependenciesMeta": {
+		"typescript": {
+			"optional": true
+		}
+	}
+}

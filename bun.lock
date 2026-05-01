@@ -23,6 +23,19 @@
         "typescript",
       ],
     },
+    "packages/ts-api": {
+      "name": "pogo-masterfile",
+      "version": "0.1.0",
+      "dependencies": {
+        "pogo-masterfile-types": "workspace:^",
+      },
+      "peerDependencies": {
+        "typescript": ">=5.0",
+      },
+      "optionalPeers": [
+        "typescript",
+      ],
+    },
   },
   "packages": {
     "@biomejs/biome": ["@biomejs/biome@2.4.12", "", { "optionalDependencies": { "@biomejs/cli-darwin-arm64": "2.4.12", "@biomejs/cli-darwin-x64": "2.4.12", "@biomejs/cli-linux-arm64": "2.4.12", "@biomejs/cli-linux-arm64-musl": "2.4.12", "@biomejs/cli-linux-x64": "2.4.12", "@biomejs/cli-linux-x64-musl": "2.4.12", "@biomejs/cli-win32-arm64": "2.4.12", "@biomejs/cli-win32-x64": "2.4.12" }, "bin": { "biome": "bin/biome" } }, "sha512-Rro7adQl3NLq/zJCIL98eElXKI8eEiBtoeu5TbXF/U3qbjuSc7Jb5rjUbeHHcquDWeSf3HnGP7XI5qGrlRk/pA=="],
@@ -50,6 +63,8 @@
     "bun-types": ["bun-types@1.3.13", "", { "dependencies": { "@types/node": "*" } }, "sha512-QXKeHLlOLqQX9LgYaHJfzdBaV21T63HhFJnvuRCcjZiaUDpbs5ED1MgxbMra71CsryN/1dAoXuJJJwIv/2drVA=="],
 
     "expect-type": ["expect-type@1.3.0", "", {}, "sha512-knvyeauYhqjOYvQ66MznSMs83wmHrCycNEN6Ao+2AeYEfxUIkuiVxdEa1qlGEPK+We3n0THiDciYSsCcgW/DoA=="],
+
+    "pogo-masterfile": ["pogo-masterfile@workspace:packages/ts-api"],
 
     "pogo-masterfile-types": ["pogo-masterfile-types@workspace:packages/ts"],
 
