@@ -2,6 +2,8 @@
 	"extends": "./tsconfig.json",
 	"compilerOptions": {
 		"noEmit": false,
+		"allowImportingTsExtensions": false,
+		"verbatimModuleSyntax": false,
 		"rootDir": "src",
 		"outDir": "dist",
 		"module": "ES2022",
