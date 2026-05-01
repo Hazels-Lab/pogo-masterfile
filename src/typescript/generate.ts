@@ -18,7 +18,7 @@ import {
 import { buildPromotionRegistry } from "./promoted-unions.ts";
 
 const OUT_DIR = join(import.meta.dir, "..", "..", "packages", "ts", "src");
-
+const FILE_TYPE = "ts";
 // Recursively materialize a split tree into the files map. At each level:
 //   - Leaf bucket (no children): emitted as a single entry file at the current path.
 //   - Branch bucket (with children): emitted as a subdirectory containing recursive
@@ -37,10 +37,10 @@ function emitSplitTree(group: Group, plan: SplitTree, nestedPath: string[], file
 		if (b.children) {
 			const subPath = [...nestedPath, b.fileName];
 			const subChildNames = emitSplitTree(group, b.children, subPath, files);
-			files.set(`${dir}/${ENTRIES_LOWER}/${subPath.join("/")}/${BARREL_FILE}.ts`, emitEntriesBarrel(group.discriminator, subChildNames, subPath));
+			files.set(`${dir}/${ENTRIES_LOWER}/${subPath.join("/")}/${BARREL_FILE}.${FILE_TYPE}`, emitEntriesBarrel(group.discriminator, subChildNames, subPath));
 		} else {
 			const dirPath = nestedPath.length > 0 ? `${dir}/${ENTRIES_LOWER}/${nestedPath.join("/")}` : `${dir}/${ENTRIES_LOWER}`;
-			files.set(`${dirPath}/${b.fileName}.ts`, emitEntryFile(group, b.fileName, b.entries, nestedPath));
+			files.set(`${dirPath}/${b.fileName}.${FILE_TYPE}`, emitEntryFile(group, b.fileName, b.entries, nestedPath));
 		}
 		childNames.push(b.fileName);
 	}
@@ -66,17 +66,17 @@ function planFiles(groups: Map<string, Group>): Map<string, string> {
 	for (const g of multiEntry) {
 		const dir = kebabCase(g.discriminator);
 		const plan = chooseSplit(g);
-		files.set(`${dir}/${BARREL_FILE}.ts`, emitIndexFile());
-		files.set(`${dir}/${TYPES_LOWER}.ts`, emitGroupTypes(g, promotionRegistry));
+		files.set(`${dir}/${BARREL_FILE}.${FILE_TYPE}`, emitIndexFile());
+		files.set(`${dir}/${TYPES_LOWER}.${FILE_TYPE}`, emitGroupTypes(g, promotionRegistry));
 
 		if (plan.kind === "none") {
-			files.set(`${dir}/${ENTRIES_LOWER}.ts`, emitEntriesFlat(g));
+			files.set(`${dir}/${ENTRIES_LOWER}.${FILE_TYPE}`, emitEntriesFlat(g));
 			groupSplits.set(g.discriminator, "flat");
 			continue;
 		}
 
 		const childNames = emitSplitTree(g, plan, [], files);
-		files.set(`${dir}/${ENTRIES_LOWER}/${BARREL_FILE}.ts`, emitEntriesBarrel(g.discriminator, childNames));
+		files.set(`${dir}/${ENTRIES_LOWER}/${BARREL_FILE}.${FILE_TYPE}`, emitEntriesBarrel(g.discriminator, childNames));
 		groupSplits.set(g.discriminator, "split");
 	}
 
@@ -88,25 +88,25 @@ function planFiles(groups: Map<string, Group>): Map<string, string> {
 	const lowerSingleton = SINGLETONS.toLowerCase() as Lowercase<typeof SINGLETONS>;
 
 	for (const b of singletonsBuckets) {
-		files.set(`${lowerSingleton}/${ENTRIES_LOWER}/${b.fileName}.ts`, emitSingletonsFile(b.fileName, b.singletons));
+		files.set(`${lowerSingleton}/${ENTRIES_LOWER}/${b.fileName}.${FILE_TYPE}`, emitSingletonsFile(b.fileName, b.singletons));
 	}
 	files.set(
-		`${lowerSingleton}/${ENTRIES_LOWER}/${BARREL_FILE}.ts`,
+		`${lowerSingleton}/${ENTRIES_LOWER}/${BARREL_FILE}.${FILE_TYPE}`,
 		emitEntriesBarrel(
 			lowerSingleton,
 			singletonsBuckets.map((b) => b.fileName),
 		),
 	);
-	files.set(`${lowerSingleton}/${TYPES_LOWER}.ts`, emitSingletonsTypeFile(singletons));
-	files.set(`${lowerSingleton}/${BARREL_FILE}.ts`, emitIndexFile());
+	files.set(`${lowerSingleton}/${TYPES_LOWER}.${FILE_TYPE}`, emitSingletonsTypeFile(singletons));
+	files.set(`${lowerSingleton}/${BARREL_FILE}.${FILE_TYPE}`, emitIndexFile());
 	groupSplits.set(lowerSingleton, "split");
 
 	// Root-level files
-	files.set(`${TYPES_LOWER}.ts`, emitTypesFile([...multiEntry.map((g) => g.discriminator), lowerSingleton]));
-	files.set(`${ENTRIES_LOWER}.ts`, emitTopLevelVariants(groupSplits));
-	files.set(`${BARREL_FILE}.ts`, emitIndexFile());
+	files.set(`${TYPES_LOWER}.${FILE_TYPE}`, emitTypesFile([...multiEntry.map((g) => g.discriminator), lowerSingleton]));
+	files.set(`${ENTRIES_LOWER}.${FILE_TYPE}`, emitTopLevelVariants(groupSplits));
+	files.set(`${BARREL_FILE}.${FILE_TYPE}`, emitIndexFile());
 	files.set(
-		"_utils.ts",
+		`_utils.${FILE_TYPE}`,
 		`export type S<T> = { [KeyType in keyof T]: T[KeyType] } & {};
 
 type PW<T> = [T] extends [string]
