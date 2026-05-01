@@ -2,7 +2,7 @@
 
 ## Regenerating types
 
-The four published packages under `packages/` are **fully generated** from `masterfile.json` plus the inference pipeline in `src/`. Don't edit files in `packages/ts/src/`, `packages/ts-api/src/`, `packages/rust/src/`, or `packages/go/*.go` by hand — run codegen instead:
+The five published packages under `packages/` are **fully generated** from `masterfile.json` plus the inference pipeline in `src/`. Don't edit files in `packages/ts/src/`, `packages/ts-api/src/`, `packages/rust/src/`, `packages/rust-api/src/`, or `packages/go/*.go` by hand — run codegen instead:
 
 ```bash
 bun run generate
@@ -26,6 +26,7 @@ Each language package has its own version and ships independently. Releases are 
 | TypeScript types | `typescript-v*`       | `typescript-v0.1.0`      | `.github/workflows/publish-npm.yml`               |
 | TS API         | `pogo-masterfile-v*`    | `pogo-masterfile-v0.1.0` | `.github/workflows/publish-pogo-masterfile.yml`   |
 | Rust           | `rust-v*`               | `rust-v0.1.0`            | `.github/workflows/publish-rust.yml`              |
+| Rust API       | `pogo-masterfile-rust-v*` | `pogo-masterfile-rust-v0.1.0` | `.github/workflows/publish-rust-api.yml` |
 | Go             | `packages/go/v*`        | `packages/go/v0.1.0`     | `.github/workflows/release-go.yml`                |
 
 ### About the Go tag pattern
@@ -64,6 +65,9 @@ cd packages/ts-api && bun run build && npm pack --dry-run
 
 # Rust
 cd packages/rust && cargo publish --dry-run
+
+# Rust API (pogo-masterfile)
+cd packages/rust-api && cargo publish --dry-run
 
 # Go
 cd packages/go && go build ./... && go vet ./... && go test ./...
