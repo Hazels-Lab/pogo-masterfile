@@ -69,3 +69,41 @@ func TestGroups_EmptyBeforeCodegen(t *testing.T) {
 		t.Errorf("Groups() should be empty pre-codegen, got %v", got)
 	}
 }
+
+func TestLoad_ValidJSON(t *testing.T) {
+	mf, err := Load([]byte(fixtureJSON))
+	if err != nil {
+		t.Fatalf("unexpected: %v", err)
+	}
+	if mf.Len() != 1 {
+		t.Errorf("Len = %d", mf.Len())
+	}
+}
+
+func TestLoad_InvalidJSON_ReturnsParseError(t *testing.T) {
+	_, err := Load([]byte("{not json"))
+	var pe *ParseError
+	if err == nil {
+		t.Fatal("expected error")
+	}
+	if !errorAsParseError(err, &pe) {
+		t.Errorf("expected *ParseError, got %T: %v", err, err)
+	}
+}
+
+func TestLoad_NonArrayJSON_ReturnsParseError(t *testing.T) {
+	_, err := Load([]byte(`{"foo":1}`))
+	var pe *ParseError
+	if !errorAsParseError(err, &pe) {
+		t.Errorf("expected *ParseError, got %T: %v", err, err)
+	}
+}
+
+// errorAsParseError is a tiny helper to keep the test bodies readable.
+func errorAsParseError(err error, target **ParseError) bool {
+	if pe, ok := err.(*ParseError); ok {
+		*target = pe
+		return true
+	}
+	return false
+}
