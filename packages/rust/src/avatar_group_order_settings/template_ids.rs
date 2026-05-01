@@ -8,7 +8,7 @@ use serde::{Deserialize, Serialize};
 )]
 pub enum AvatarGroupOrderSettingsTemplateId {
     #[serde(rename = "AVATAR_GROUP_ORDER_SETTINGS")]
-    AvatarGroupOrderSettings = 0,
+    AvatarGroupOrderSettings,
     #[serde(rename = "AVATAR_GROUP_SETTINGS")]
-    AvatarGroupSettings = 1,
+    AvatarGroupSettings,
 }
