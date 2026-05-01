@@ -3,6 +3,7 @@ import { generateGo } from "./go/generate.ts";
 import type { Entry } from "./group.ts";
 import { configureFloatFieldHints, scanFloatFields } from "./infer.ts";
 import { generateRust } from "./rust/generate.ts";
+import { generateRustApi } from "./rust-api/generate.ts";
 import { generateTypeScript } from "./typescript/generate.ts";
 import { generateTypeScriptApi } from "./typescript-api/generate.ts";
 
@@ -34,7 +35,10 @@ async function main(): Promise<void> {
 			await generateTypeScript(entries);
 			await generateTypeScriptApi(entries);
 		})(),
-		generateRust(entries),
+		(async () => {
+			await generateRust(entries);
+			await generateRustApi(entries);
+		})(),
 		generateGo(entries),
 	]);
 }
