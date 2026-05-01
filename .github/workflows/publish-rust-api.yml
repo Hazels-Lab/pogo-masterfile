@@ -1,0 +1,22 @@
+name: Publish Rust API
+
+on:
+  push:
+    tags:
+      - "pogo-masterfile-rust-v*"
+
+jobs:
+  publish:
+    name: Publish to crates.io
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/rust-api
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: packages/rust-api
+      - run: cargo test --all-features
+      - run: cargo publish --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
