@@ -69,7 +69,11 @@ func (m *Masterfile) Groups() []string {
 // reflection. Used by TemplateIDs during the bootstrap phase before codegen
 // generates a typed switch; removed in Task 13 once byID is reliably populated.
 func reflectFieldString(v any, name string) string {
-	f := reflect.ValueOf(v).FieldByName(name)
+	rv := reflect.ValueOf(v)
+	if rv.Kind() != reflect.Struct {
+		return ""
+	}
+	f := rv.FieldByName(name)
 	if f.IsValid() && f.Kind() == reflect.String {
 		return f.String()
 	}

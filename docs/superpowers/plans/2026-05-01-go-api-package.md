@@ -1322,8 +1322,11 @@ ${wiring.join("\n")}
 // in the type switch above without producing thousands of arms; reflection is
 // used only here, only on the singleton-load slow path.
 func singletonTemplateID(e masterfile.MasterfileEntry) string {
-	v := reflect.ValueOf(e)
-	f := v.FieldByName("TemplateID")
+	rv := reflect.ValueOf(e)
+	if rv.Kind() != reflect.Struct {
+		return ""
+	}
+	f := rv.FieldByName("TemplateID")
 	if f.IsValid() && f.Kind() == reflect.String {
 		return f.String()
 	}

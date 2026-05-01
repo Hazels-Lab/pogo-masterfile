@@ -26,8 +26,11 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 		byID:    make(map[string]int, len(entries)),
 	}
 	for i, e := range entries {
-		v := reflect.ValueOf(e)
-		f := v.FieldByName("TemplateID")
+		rv := reflect.ValueOf(e)
+		if rv.Kind() != reflect.Struct {
+			continue
+		}
+		f := rv.FieldByName("TemplateID")
 		if f.IsValid() && f.Kind() == reflect.String {
 			m.byID[f.String()] = i
 		}

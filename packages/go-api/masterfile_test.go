@@ -58,3 +58,14 @@ func TestFromEntries_TemplateIDsAndEntries(t *testing.T) {
 		t.Errorf("Entries len = %d", len(got))
 	}
 }
+
+func TestGroups_EmptyBeforeCodegen(t *testing.T) {
+	mf := FromEntries(nil)
+	got := mf.Groups()
+	if got == nil {
+		t.Error("Groups() should return a non-nil empty slice, got nil")
+	}
+	if len(got) != 0 {
+		t.Errorf("Groups() should be empty pre-codegen, got %v", got)
+	}
+}
