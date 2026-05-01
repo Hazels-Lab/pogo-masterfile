@@ -1,8 +1,8 @@
-import { spawn } from "node:child_process";
 import { copyFile, mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { type Entry, groupEntries } from "../group.ts";
 import { snakeCase } from "../naming.ts";
+import { runCommand } from "../run-command.ts";
 import { writeOutput } from "../write.ts";
 import { PACKAGE_DIR, SRC_OUT_DIR, TEMPLATES_DIR } from "./constants.ts";
 import { emitAccessor } from "./emit-accessor.ts";
@@ -59,21 +59,10 @@ export async function generateRustApi(entries: Entry[]): Promise<void> {
 	// 5. cargo fmt — run only if the crate has at least lib.rs + the templates it imports.
 	//    We attempt fmt; if it fails (because templates aren't all there yet), warn and continue.
 	try {
-		await runCargoFmt();
+		await runCommand("cargo", ["fmt"], { cwd: PACKAGE_DIR });
 	} catch (err) {
 		console.warn(`[rust-api] cargo fmt failed (templates may be incomplete): ${(err as Error).message}`);
 	}
 
 	console.log(`[rust-api] wrote runtime to ${SRC_OUT_DIR}`);
-}
-
-function runCargoFmt(): Promise<void> {
-	return new Promise((resolve, reject) => {
-		const proc = spawn("cargo", ["fmt"], { cwd: PACKAGE_DIR, stdio: "inherit" });
-		proc.on("error", reject);
-		proc.on("exit", (code) => {
-			if (code === 0) resolve();
-			else reject(new Error(`cargo fmt exited with code ${code}`));
-		});
-	});
 }

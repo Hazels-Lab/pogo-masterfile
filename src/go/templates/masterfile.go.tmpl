@@ -1,0 +1,73 @@
+// Generated from Pokémon GO masterfile — package entry point.
+// Package documentation lives in doc.go.
+
+package masterfile
+
+import (
+	"encoding/json"
+	"fmt"
+
+{{SUB_PACKAGE_IMPORTS}}
+)
+
+// MasterfileEntry is the marker interface implemented by every per-discriminator
+// Entry type generated under this module. Use a type switch to extract a
+// concrete entry from a parse result.
+//
+// The marker method is exported because Go's unexported-method sealing trick
+// only works within a single package. Foreign types could implement this
+// interface, but the only thing that produces values of it is ParseMasterfile
+// which only returns generated types.
+type MasterfileEntry interface {
+	MasterfileEntry()
+}
+
+// ParseMasterfile parses a masterfile JSON byte slice into a slice of typed
+// entries. Each entry is dispatched to the concrete `*Entry` type matching
+// its discriminator (the non-templateId key inside `data`).
+func ParseMasterfile(data []byte) ([]MasterfileEntry, error) {
+	var raw []json.RawMessage
+	if err := json.Unmarshal(data, &raw); err != nil {
+		return nil, fmt.Errorf("masterfile is not a JSON array: %w", err)
+	}
+
+	entries := make([]MasterfileEntry, 0, len(raw))
+	for i, m := range raw {
+		e, err := parseEntry(m)
+		if err != nil {
+			return nil, fmt.Errorf("entry %d: %w", i, err)
+		}
+		entries = append(entries, e)
+	}
+	return entries, nil
+}
+
+func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
+	var probe struct {
+		TemplateID string                     `json:"templateId"`
+		Data       map[string]json.RawMessage `json:"data"`
+	}
+	if err := json.Unmarshal(data, &probe); err != nil {
+		return nil, fmt.Errorf("parse entry shell: %w", err)
+	}
+
+	var disc string
+	for k := range probe.Data {
+		if k != "templateId" {
+			disc = k
+			break
+		}
+	}
+
+	switch disc {
+{{NON_STUB_ARMS}}
+	case "":
+		switch probe.TemplateID {
+{{STUB_ARMS}}
+		default:
+			return nil, fmt.Errorf("unknown stub templateId: %s", probe.TemplateID)
+		}
+	default:
+		return nil, fmt.Errorf("unknown discriminator: %s", disc)
+	}
+}

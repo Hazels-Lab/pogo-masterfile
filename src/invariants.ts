@@ -1,38 +1,8 @@
+import { isDeepStrictEqual } from "node:util";
 import type { Group } from "./group.ts";
 import { isJsonObject } from "./helpers.ts";
 import type { InferredProperty, InferredType } from "./infer.ts";
 import { inferJsonType } from "./infer.ts";
-
-export function deepEqual<T>(a: T, b: T): boolean {
-	if (a === b) return true;
-	if (a === null || b === null) return false;
-	if (typeof a !== "object" || typeof b !== "object") return false;
-
-	const aIsArray = Array.isArray(a);
-	const bIsArray = Array.isArray(b);
-	if (aIsArray !== bIsArray) return false;
-
-	if (aIsArray) {
-		const arrA = a as unknown[];
-		const arrB = b as unknown[];
-		if (arrA.length !== arrB.length) return false;
-		for (let i = 0; i < arrA.length; i += 1) {
-			if (!deepEqual(arrA[i], arrB[i])) return false;
-		}
-		return true;
-	}
-
-	const objA = a as Record<string, unknown>;
-	const objB = b as Record<string, unknown>;
-	const keysA = Object.keys(objA);
-	const keysB = Object.keys(objB);
-	if (keysA.length !== keysB.length) return false;
-	for (const key of keysA) {
-		if (!Object.hasOwn(objB, key)) return false;
-		if (!deepEqual(objA[key], objB[key])) return false;
-	}
-	return true;
-}
 
 export type InvariantNode =
 	| { kind: "constant"; value: unknown }
@@ -74,7 +44,7 @@ function walkInvariants(values: readonly unknown[], templateIds: readonly string
 		}
 
 		// Kind 1: every value deep-equal to the first.
-		const isKind1 = childValues.every((cv) => deepEqual(cv, childValues[0]));
+		const isKind1 = childValues.every((cv) => isDeepStrictEqual(cv, childValues[0]));
 		if (isKind1) {
 			tree.set(key, { kind: "constant", value: childValues[0] });
 			continue;
@@ -213,11 +183,7 @@ export function stripInvariantsFromValue(value: unknown, tree: InvariantTree): u
 		if (node.kind === "constant" || node.kind === "templateIdTie" || node.kind === "templateIdSlice") {
 			continue;
 		}
-		const strippedChild = stripInvariantsFromValue(childValue, node.children);
-		// if (isJsonObject(strippedChild) && Object.keys(strippedChild).length === 0) {
-		// 	continue;
-		// }
-		result[key] = strippedChild;
+		result[key] = stripInvariantsFromValue(childValue, node.children);
 	}
 	return result;
 }

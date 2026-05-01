@@ -1,5 +1,5 @@
 import { join } from "node:path";
-import { type Entry, type Group, groupEntries } from "../group.ts";
+import { type Entry, type Group, groupEntries, isStubGroup } from "../group.ts";
 import { pascalCase, snakeCase } from "../naming.ts";
 import { writeOutput } from "../write.ts";
 import {
@@ -15,12 +15,6 @@ import {
 
 const OUT_DIR = join(import.meta.dir, "..", "..", "packages", "rust", "src");
 const SINGLETONS_MODULE = "singletons";
-
-function isStubGroup(group: Group): boolean {
-	const first = group.entries[0];
-	if (!first) return true;
-	return Object.keys(first.data).filter((k) => k !== "templateId").length === 0;
-}
 
 export async function generateRust(entries: Entry[]): Promise<void> {
 	const groups = groupEntries(entries);

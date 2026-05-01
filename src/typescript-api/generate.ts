@@ -1,9 +1,9 @@
 import { copyFile, mkdir } from "node:fs/promises";
 import { join } from "node:path";
 import { type Entry, groupEntries } from "../group.ts";
+import { runCommand } from "../run-command.ts";
 import { writeOutput } from "../write.ts";
-import { runTsc } from "./build.ts";
-import { SRC_OUT_DIR, TEMPLATES_DIR, TEMPLATES_STUBS_DIR } from "./constants.ts";
+import { BUILD_TSCONFIG, SRC_OUT_DIR, TEMPLATES_DIR, TEMPLATES_STUBS_DIR } from "./constants.ts";
 import { emitGroupNames } from "./emit-group-names.ts";
 import { emitIndex } from "./emit-index.ts";
 
@@ -37,7 +37,7 @@ export async function generateTypeScriptApi(entries: Entry[]): Promise<void> {
 	}
 
 	// 5. Compile src/ → dist/ via tsc.
-	await runTsc();
+	await runCommand("bunx", ["tsc", "-p", BUILD_TSCONFIG]);
 
 	console.log(`[typescript-api] wrote runtime to ${SRC_OUT_DIR} and built dist/`);
 }

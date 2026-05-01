@@ -1,0 +1,141 @@
+//! Generated Rust types for the Pokémon GO masterfile.
+//!
+//! # Quick start
+//!
+//! ```no_run
+//! use pogo_masterfile_types::{parse_masterfile, MasterfileEntry};
+//!
+//! let json = std::fs::read_to_string("masterfile.json").unwrap();
+//! let entries = parse_masterfile(&json).unwrap();
+//! for entry in entries {
+//!     match entry {
+//!         MasterfileEntry::PokemonSettings(e) => {
+//!             println!("pokémon: {}", e.template_id);
+//!         }
+//!         _ => {}
+//!     }
+//! }
+//! ```
+//!
+//! # Generated structure
+//!
+//! Each masterfile discriminator maps to its own module containing three
+//! types:
+//!
+//! - **`Entry`** (e.g. [`pokemon_settings::PokemonSettingsEntry`]): the outer
+//!   JSON shape, `{ templateId, data: { ... } }`.
+//! - **`EntryData`** (e.g. [`pokemon_settings::PokemonSettingsEntryData`]): the
+//!   inner `data` object, with the discriminator-keyed payload field.
+//! - **The payload type** (e.g. [`pokemon_settings::PokemonSettings`]): the
+//!   shape of the payload itself. For multi-shape groups this is a Rust
+//!   enum dispatching to per-cluster variant structs.
+//!
+//! Singletons (entries unique by `templateId`) are bundled into a single
+//! [`singletons`] module rather than emitted one file each.
+
+#![allow(clippy::large_enum_variant)]
+
+// Aliases the crate to its own name so the FromStrEnum-derived
+// `impl FromStr` paths resolve inside this crate (where they reference
+// `pogo_masterfile_types::UnknownTemplateId`). External consumers don't
+// need this — their crate name is already in their extern prelude.
+extern crate self as pogo_masterfile_types;
+
+use serde::{Deserialize, Serialize};
+
+pub use pogo_masterfile_macros::{AllVariants, AsStr, FromStrEnum, TemplateId};
+
+/// Error returned by `FromStr` impls on generated templateId enums when the
+/// input string does not match any known templateId for the group.
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct UnknownTemplateId(pub String);
+
+impl core::fmt::Display for UnknownTemplateId {
+    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
+        write!(f, "unknown templateId: {}", self.0)
+    }
+}
+
+impl std::error::Error for UnknownTemplateId {}
+
+{{MACRO_DEFINITIONS}}
+
+{{MODULES}}
+
+/// Every typed entry the Pokémon GO masterfile can hold.
+///
+/// Variants are ordered most-frequent-first (by entry count in the source
+/// masterfile). Serialization uses `#[serde(untagged)]` so the JSON shape
+/// round-trips as the inner Entry struct directly. Deserialization is a
+/// custom impl that peeks at `data`'s non-`templateId` key for O(1)
+/// dispatch — see the impl below.
+///
+/// **Caveat:** stub entries (the few discriminators with
+/// `data: { templateId }` only) are shape-indistinguishable. They all
+/// dispatch via `templateId` value match in the deserializer; inspect
+/// `template_id` post-parse if you need to branch on the specific kind.
+#[derive(Debug, Clone, Serialize, TemplateId)]
+#[serde(untagged)]
+pub enum MasterfileEntry {
+{{VARIANT_LINES}}
+}
+
+// O(1)-dispatch deserializer for MasterfileEntry. Avoids serde's untagged
+// fallback (which scans variants in declaration order, partially parsing
+// each before realizing the discriminator's wrong) by:
+//
+//   1. Materializing the entry once as a serde_json::Value.
+//   2. Inspecting `data`'s key set to find the non-templateId key — that's
+//      the discriminator that uniquely identifies the variant.
+//   3. For stubs (no payload key in data), falling back to `templateId`
+//      value as the dispatch key.
+//   4. Re-deserializing the captured Value into the chosen variant's
+//      Entry type via `from_value`.
+impl<'de> Deserialize<'de> for MasterfileEntry {
+	fn deserialize<D>(deserializer: D) -> Result<Self, D::Error>
+	where
+		D: serde::Deserializer<'de>,
+	{
+		use serde::de::Error;
+		let value = serde_json::Value::deserialize(deserializer)?;
+		let discriminator = value
+			.get("data")
+			.and_then(|d| d.as_object())
+			.and_then(|m| m.keys().find(|k| k.as_str() != "templateId"))
+			.cloned();
+
+		let result: serde_json::Result<Self> = if let Some(disc) = discriminator.as_deref() {
+			match disc {
+{{NON_STUB_ARMS}}
+				other => Err(serde_json::Error::custom(format!("unknown discriminator: {}", other))),
+			}
+		} else {
+			let template_id = value.get("templateId").and_then(|t| t.as_str()).map(String::from);
+			match template_id.as_deref() {
+{{STUB_ARMS}}
+				Some(other) => Err(serde_json::Error::custom(format!("unknown stub templateId: {}", other))),
+				None => Err(serde_json::Error::custom("stub entry missing templateId")),
+			}
+		};
+
+		result.map_err(D::Error::custom)
+	}
+}
+
+/// Parse a masterfile JSON string into a vector of typed entries.
+///
+/// # Errors
+///
+/// Returns the underlying [`serde_json::Error`] on malformed JSON or on a
+/// JSON entry that doesn't match any [`MasterfileEntry`] variant.
+///
+/// # Example
+///
+/// ```no_run
+/// let json = std::fs::read_to_string("masterfile.json").unwrap();
+/// let entries = pogo_masterfile_types::parse_masterfile(&json).unwrap();
+/// println!("{} entries", entries.len());
+/// ```
+pub fn parse_masterfile(json: &str) -> serde_json::Result<Vec<MasterfileEntry>> {
+    serde_json::from_str(json)
+}

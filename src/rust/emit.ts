@@ -1,8 +1,17 @@
-import type { Entry, Group } from "../group.ts";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+import type { Group } from "../group.ts";
+import { isStubGroup } from "../group.ts";
 import type { InferredProperty, InferredType, ObjectType } from "../infer.ts";
-import { inferJsonTypes, widenType } from "../infer.ts";
+import { widenedPayloadObject } from "../infer.ts";
 import { deriveTemplateIdVariants, pascalCase, snakeCase } from "../naming.ts";
 import { clusterByFingerprint } from "../split.ts";
+import { emitNamedStruct as poolEmitNamedStruct, emitOrReuseStruct as poolEmitOrReuseStruct, type StructBodyFn, type StructPoolBase } from "../struct-pool.ts";
+
+// Path resolution for the lib.rs.tmpl template lives next to this file at
+// templates/lib.rs.tmpl. `import.meta.dir` resolves to src/rust at runtime
+// so the template path stays correct regardless of cwd.
+const LIB_TEMPLATE_PATH = join(import.meta.dir, "templates", "lib.rs.tmpl");
 
 // Merge a list of InferredTypes into one. Used by mergeObjectTypes (recursive,
 // merges nested object schemas) and the long-heterogeneous-tuple Rust-emit
@@ -178,18 +187,23 @@ function variantNameFromFingerprint(fingerprint: readonly string[]): string {
 	return `${pascalCase(fingerprint[0] ?? "")}Plus${fingerprint.length - 1}`;
 }
 
-// Pool tracks already-emitted nested struct definitions for deduplication
-// within a group. Two structs with the same shape (same fields, same field
-// types) collapse to a single emission — pokemonSettings's many clusters all
-// share things like a Camera struct that we'd otherwise duplicate per cluster.
-interface StructPool {
-	byShape: Map<string, string>; // hashed shape → canonical struct name
-	byName: Set<string>; // names already taken (for collision-suffixing)
-	deferred: string[]; // emitted struct definitions in document order
-}
+// Rust pool is the bare base — no language-specific extensions. The pool
+// machinery lives in `../struct-pool.ts` and the Rust-specific `structBody`
+// implementation below is passed in at every call site.
+type StructPool = StructPoolBase;
 
 function newPool(): StructPool {
 	return { byShape: new Map(), byName: new Set(), deferred: [] };
+}
+
+const rustStructBody: StructBodyFn<StructPool> = (name, type, pool) => structBody(name, type, pool);
+
+function emitOrReuseStruct(candidateName: string, type: ObjectType, pool: StructPool): string {
+	return poolEmitOrReuseStruct(candidateName, type, pool, rustStructBody);
+}
+
+function emitNamedStruct(candidateName: string, type: ObjectType, pool: StructPool): string {
+	return poolEmitNamedStruct(candidateName, type, pool, rustStructBody);
 }
 
 // Convert a JSON-payload InferredType into a Rust type expression. Nested
@@ -360,70 +374,6 @@ function emitUnionEnum(candidateName: string, variants: readonly InferredType[],
 	return finalName;
 }
 
-// emitOrReuseStruct: shape-based deduplication. If an identically-shaped
-// struct already exists, return its name. Otherwise emit and register. Used
-// for *nested* structs where the name is auto-derived from a field and any
-// available equivalent type works (preferring fewer total emissions).
-function emitOrReuseStruct(candidateName: string, type: ObjectType, pool: StructPool): string {
-	const { body, shape } = structBody(candidateName, type, pool);
-	if (shape !== "") {
-		const existing = pool.byShape.get(shape);
-		if (existing) return existing;
-	}
-
-	let finalName = candidateName;
-	let suffix = 2;
-	while (pool.byName.has(finalName)) {
-		finalName = `${candidateName}V${suffix}`;
-		suffix += 1;
-	}
-	pool.byName.add(finalName);
-	if (shape !== "") pool.byShape.set(shape, finalName);
-	if (finalName !== candidateName) {
-		const { body: finalBody } = structBody(finalName, type, pool);
-		pool.deferred.push(finalBody);
-	} else {
-		pool.deferred.push(body);
-	}
-	return finalName;
-}
-
-// emitNamedStruct: name-preserving emission. Always emits a struct under the
-// requested name (V2-suffixed only if that exact name is already taken).
-// Used for *top-level* types (group roots, cluster variants, singletons)
-// where the name carries semantic meaning and shape-collapsing across
-// unrelated types would break wrapper-macro references.
-//
-// Critical: reserve `finalName` in `pool.byName` *before* invoking structBody,
-// which triggers nested emit calls. Otherwise an inner field of the same
-// pascalCase name (e.g., a `consolation_items` field inside the cluster
-// variant `ConsolationItems`) claims the name first and the outer struct
-// silently duplicates it.
-function emitNamedStruct(candidateName: string, type: ObjectType, pool: StructPool): string {
-	let finalName = candidateName;
-	let suffix = 2;
-	while (pool.byName.has(finalName)) finalName = `${candidateName}V${suffix++}`;
-	pool.byName.add(finalName);
-	const { body } = structBody(finalName, type, pool);
-	pool.deferred.push(body);
-	return finalName;
-}
-
-function inferPayloadType(entries: Entry[], discriminator: string): ObjectType {
-	const payloads = entries.map((e) => e.data[discriminator]);
-	const widened = widenType(inferJsonTypes(payloads));
-	if (widened.kind !== "object") {
-		throw new Error(`Expected object payload type for "${discriminator}", got ${widened.kind}`);
-	}
-	return widened;
-}
-
-function isStubGroup(group: Group): boolean {
-	const first = group.entries[0];
-	if (!first) return true;
-	return Object.keys(first.data).filter((k) => k !== "templateId").length === 0;
-}
-
 // Module-level rustdoc (`//!`) — must appear before any items, hence the
 // dedicated emit. The header doubles as the "where this came from" provenance
 // note in the generated source and as a rustdoc summary on docs.rs.
@@ -482,7 +432,7 @@ export function emitGroupTypesFile(group: Group): string {
 		// Single-shape OR too many shapes to enumerate cleanly. Emit one flat
 		// struct using the type inferred from the entire group's payloads —
 		// fields that aren't universally present become Option<T>.
-		const inferred = inferPayloadType(group.entries, group.discriminator);
+		const inferred = widenedPayloadObject(group.entries, group.discriminator);
 		emitNamedStruct(baseName, inferred, pool);
 		return file([SERDE_IMPORT, ...pool.deferred, entryWrapper(baseName, snakeName)]);
 	}
@@ -503,7 +453,7 @@ export function emitGroupTypesFile(group: Group): string {
 		while (usedVariantNames.has(variantName)) variantName = `${base}V${suffix++}`;
 		usedVariantNames.add(variantName);
 
-		const inferred = inferPayloadType(cluster.entries, group.discriminator);
+		const inferred = widenedPayloadObject(cluster.entries, group.discriminator);
 		const finalName = emitNamedStruct(variantName, inferred, pool);
 		enumVariants.push(`    ${variantName}(${finalName}),`);
 	}
@@ -512,19 +462,16 @@ export function emitGroupTypesFile(group: Group): string {
 	return file([SERDE_IMPORT, ...pool.deferred, enumBlock, entryWrapper(baseName, snakeName)]);
 }
 
-// Body of <group>/template_ids.rs — a unit-variant enum mapping
-// PascalCase'd templateIds to their string literals via serde rename.
-// AllVariants/AsStr/FromStrEnum derives provide ALL/SIZE/as_str/Display
-// /FromStr without hand-emitted boilerplate.
-export function emitGroupTemplateIdsFile(group: Group): string {
-	const baseName = pascalCase(group.discriminator);
-	const ids = group.entries.map((e) => e.templateId);
+// Shared body for the per-group and singletons templateIds enums. Both files
+// share the same derive set, the same `pub enum <Name>` shape, and the same
+// per-id `#[serde(rename = ...)]` variant block — they only differ in the
+// header comment label, the enum's name, and the id source.
+function emitRustTemplateIdsEnum(name: string, ids: readonly string[], headerLabel: string): string {
 	const variants = deriveTemplateIdVariants(ids);
-
 	const sortedIds = [...ids].sort();
 	const variantBlock = sortedIds.map((id) => `    #[serde(rename = ${JSON.stringify(id)})]\n    ${variants.get(id)!},`).join("\n");
 
-	return `//! Generated from Pokémon GO masterfile — group "${group.discriminator}" templateIds.
+	return `//! Generated from Pokémon GO masterfile — ${headerLabel}.
 
 use crate::{AllVariants, AsStr, FromStrEnum};
 use serde::{Deserialize, Serialize};
@@ -534,10 +481,20 @@ use serde::{Deserialize, Serialize};
     Serialize, Deserialize,
     AllVariants, AsStr, FromStrEnum,
 )]
-pub enum ${baseName}TemplateId {
+pub enum ${name} {
 ${variantBlock}
 }
 `;
+}
+
+// Body of <group>/template_ids.rs — a unit-variant enum mapping
+// PascalCase'd templateIds to their string literals via serde rename.
+// AllVariants/AsStr/FromStrEnum derives provide ALL/SIZE/as_str/Display
+// /FromStr without hand-emitted boilerplate.
+export function emitGroupTemplateIdsFile(group: Group): string {
+	const baseName = pascalCase(group.discriminator);
+	const ids = group.entries.map((e) => e.templateId);
+	return emitRustTemplateIdsEnum(`${baseName}TemplateId`, ids, `group "${group.discriminator}" templateIds`);
 }
 
 // Trivial three-line module hub for singletons/, mirroring per-group modules.
@@ -568,7 +525,7 @@ export function emitSingletonsTypesFile(singletons: readonly Group[]): string {
 			wrappers.push(stubEntryWrapper(name));
 			continue;
 		}
-		const inferred = inferPayloadType(group.entries, group.discriminator);
+		const inferred = widenedPayloadObject(group.entries, group.discriminator);
 		emitNamedStruct(name, inferred, pool);
 		wrappers.push(entryWrapper(name, rustFieldIdent(group.discriminator)));
 	}
@@ -579,25 +536,7 @@ export function emitSingletonsTypesFile(singletons: readonly Group[]): string {
 // One combined SingletonsTemplateId enum across every singleton's templateId.
 export function emitSingletonsTemplateIdsFile(singletons: readonly Group[]): string {
 	const allIds = singletons.flatMap((g) => g.entries.map((e) => e.templateId));
-	const variants = deriveTemplateIdVariants(allIds);
-
-	const sortedIds = [...allIds].sort();
-	const variantBlock = sortedIds.map((id) => `    #[serde(rename = ${JSON.stringify(id)})]\n    ${variants.get(id)!},`).join("\n");
-
-	return `//! Generated from Pokémon GO masterfile — singletons templateIds.
-
-use crate::{AllVariants, AsStr, FromStrEnum};
-use serde::{Deserialize, Serialize};
-
-#[derive(
-    Debug, Clone, Copy, PartialEq, Eq, Hash,
-    Serialize, Deserialize,
-    AllVariants, AsStr, FromStrEnum,
-)]
-pub enum SingletonsTemplateId {
-${variantBlock}
-}
-`;
+	return emitRustTemplateIdsEnum("SingletonsTemplateId", allIds, "singletons templateIds");
 }
 
 // Macros invoked by every generated module to define the Entry/EntryData
@@ -682,14 +621,14 @@ export function emitLibFile(moduleNames: readonly string[], variants: readonly E
 	// and a SCREAMING_SNAKE stub template-id that PascalCase to the same name).
 	const usedVariantNames = new Set<string>();
 	const finalVariants: Array<{ finalName: string; v: EntryVariant }> = [];
-	const variantLines: string[] = [];
+	const variantLineStrings: string[] = [];
 	for (const v of sortedVariants) {
 		let name = v.variantName;
 		let suffix = 2;
 		while (usedVariantNames.has(name)) name = `${v.variantName}V${suffix++}`;
 		usedVariantNames.add(name);
 		finalVariants.push({ finalName: name, v });
-		variantLines.push(`    ${name}(${v.modulePath}::${v.entryTypeName}),`);
+		variantLineStrings.push(`    ${name}(${v.modulePath}::${v.entryTypeName}),`);
 	}
 
 	// Build dispatch arms for the custom Deserialize impl. Each arm just
@@ -706,152 +645,19 @@ export function emitLibFile(moduleNames: readonly string[], variants: readonly E
 		.map((x) => `\t\t\t\tSome(${JSON.stringify(x.v.discriminator)}) => serde_json::from_value(value).map(Self::${x.finalName}),`)
 		.join("\n");
 
-	const lines: string[] = [
-		"//! Generated Rust types for the Pokémon GO masterfile.",
-		"//!",
-		"//! # Quick start",
-		"//!",
-		"//! ```no_run",
-		"//! use pogo_masterfile_types::{parse_masterfile, MasterfileEntry};",
-		"//!",
-		'//! let json = std::fs::read_to_string("masterfile.json").unwrap();',
-		"//! let entries = parse_masterfile(&json).unwrap();",
-		"//! for entry in entries {",
-		"//!     match entry {",
-		"//!         MasterfileEntry::PokemonSettings(e) => {",
-		'//!             println!("pokémon: {}", e.template_id);',
-		"//!         }",
-		"//!         _ => {}",
-		"//!     }",
-		"//! }",
-		"//! ```",
-		"//!",
-		"//! # Generated structure",
-		"//!",
-		"//! Each masterfile discriminator maps to its own module containing three",
-		"//! types:",
-		"//!",
-		"//! - **`Entry`** (e.g. [`pokemon_settings::PokemonSettingsEntry`]): the outer",
-		"//!   JSON shape, `{ templateId, data: { ... } }`.",
-		"//! - **`EntryData`** (e.g. [`pokemon_settings::PokemonSettingsEntryData`]): the",
-		"//!   inner `data` object, with the discriminator-keyed payload field.",
-		"//! - **The payload type** (e.g. [`pokemon_settings::PokemonSettings`]): the",
-		"//!   shape of the payload itself. For multi-shape groups this is a Rust",
-		"//!   enum dispatching to per-cluster variant structs.",
-		"//!",
-		"//! Singletons (entries unique by `templateId`) are bundled into a single",
-		"//! [`singletons`] module rather than emitted one file each.",
-		"",
-		// MasterfileEntry has ~250 variants of varying size; boxing every variant",
-		// to satisfy clippy::large_enum_variant would add an indirection per entry",
-		// for no real benefit at masterfile scale.",
-		"#![allow(clippy::large_enum_variant)]",
-		"",
-		"// Aliases the crate to its own name so the FromStrEnum-derived",
-		"// `impl FromStr` paths resolve inside this crate (where they reference",
-		"// `pogo_masterfile_types::UnknownTemplateId`). External consumers don't",
-		"// need this — their crate name is already in their extern prelude.",
-		"extern crate self as pogo_masterfile_types;",
-		"",
-		"use serde::{Deserialize, Serialize};",
-		"",
-		"pub use pogo_masterfile_macros::{AllVariants, AsStr, FromStrEnum, TemplateId};",
-		"",
-		"/// Error returned by `FromStr` impls on generated templateId enums when the",
-		"/// input string does not match any known templateId for the group.",
-		"#[derive(Debug, Clone, PartialEq, Eq)]",
-		"pub struct UnknownTemplateId(pub String);",
-		"",
-		"impl core::fmt::Display for UnknownTemplateId {",
-		"    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {",
-		`        write!(f, "unknown templateId: {}", self.0)`,
-		"    }",
-		"}",
-		"",
-		"impl std::error::Error for UnknownTemplateId {}",
-		"",
-		MACRO_DEFINITIONS,
-		"",
-		...sortedModules.map((n) => `pub mod ${n};`),
-		"",
-		"/// Every typed entry the Pokémon GO masterfile can hold.",
-		"///",
-		"/// Variants are ordered most-frequent-first (by entry count in the source",
-		"/// masterfile). Serialization uses `#[serde(untagged)]` so the JSON shape",
-		"/// round-trips as the inner Entry struct directly. Deserialization is a",
-		"/// custom impl that peeks at `data`'s non-`templateId` key for O(1)",
-		"/// dispatch — see the impl below.",
-		"///",
-		"/// **Caveat:** stub entries (the few discriminators with",
-		"/// `data: { templateId }` only) are shape-indistinguishable. They all",
-		"/// dispatch via `templateId` value match in the deserializer; inspect",
-		"/// `template_id` post-parse if you need to branch on the specific kind.",
-		"#[derive(Debug, Clone, Serialize, TemplateId)]",
-		"#[serde(untagged)]",
-		"pub enum MasterfileEntry {",
-		...variantLines,
-		"}",
-		"",
-		"// O(1)-dispatch deserializer for MasterfileEntry. Avoids serde's untagged",
-		"// fallback (which scans variants in declaration order, partially parsing",
-		"// each before realizing the discriminator's wrong) by:",
-		"//",
-		"//   1. Materializing the entry once as a serde_json::Value.",
-		"//   2. Inspecting `data`'s key set to find the non-templateId key — that's",
-		"//      the discriminator that uniquely identifies the variant.",
-		"//   3. For stubs (no payload key in data), falling back to `templateId`",
-		"//      value as the dispatch key.",
-		"//   4. Re-deserializing the captured Value into the chosen variant's",
-		"//      Entry type via `from_value`.",
-		"impl<'de> Deserialize<'de> for MasterfileEntry {",
-		"\tfn deserialize<D>(deserializer: D) -> Result<Self, D::Error>",
-		"\twhere",
-		"\t\tD: serde::Deserializer<'de>,",
-		"\t{",
-		"\t\tuse serde::de::Error;",
-		"\t\tlet value = serde_json::Value::deserialize(deserializer)?;",
-		"\t\tlet discriminator = value",
-		'\t\t\t.get("data")',
-		"\t\t\t.and_then(|d| d.as_object())",
-		'\t\t\t.and_then(|m| m.keys().find(|k| k.as_str() != "templateId"))',
-		"\t\t\t.cloned();",
-		"",
-		"\t\tlet result: serde_json::Result<Self> = if let Some(disc) = discriminator.as_deref() {",
-		"\t\t\tmatch disc {",
-		nonStubArms,
-		'\t\t\t\tother => Err(serde_json::Error::custom(format!("unknown discriminator: {}", other))),',
-		"\t\t\t}",
-		"\t\t} else {",
-		'\t\t\tlet template_id = value.get("templateId").and_then(|t| t.as_str()).map(String::from);',
-		"\t\t\tmatch template_id.as_deref() {",
-		stubArms,
-		'\t\t\t\tSome(other) => Err(serde_json::Error::custom(format!("unknown stub templateId: {}", other))),',
-		'\t\t\t\tNone => Err(serde_json::Error::custom("stub entry missing templateId")),',
-		"\t\t\t}",
-		"\t\t};",
-		"",
-		"\t\tresult.map_err(D::Error::custom)",
-		"\t}",
-		"}",
-		"",
-		"/// Parse a masterfile JSON string into a vector of typed entries.",
-		"///",
-		"/// # Errors",
-		"///",
-		"/// Returns the underlying [`serde_json::Error`] on malformed JSON or on a",
-		"/// JSON entry that doesn't match any [`MasterfileEntry`] variant.",
-		"///",
-		"/// # Example",
-		"///",
-		"/// ```no_run",
-		'/// let json = std::fs::read_to_string("masterfile.json").unwrap();',
-		"/// let entries = pogo_masterfile_types::parse_masterfile(&json).unwrap();",
-		'/// println!("{} entries", entries.len());',
-		"/// ```",
-		"pub fn parse_masterfile(json: &str) -> serde_json::Result<Vec<MasterfileEntry>> {",
-		"    serde_json::from_str(json)",
-		"}",
-		"",
-	];
-	return lines.join("\n");
+	const modules = sortedModules.map((n) => `pub mod ${n};`).join("\n");
+	const variantLines = variantLineStrings.join("\n");
+
+	// The static scaffolding lives in templates/lib.rs.tmpl (file-level
+	// rustdoc, the UnknownTemplateId definition, the Deserialize impl
+	// boilerplate, the parse_masterfile function). We substitute four
+	// data-driven blocks: the macro definitions, the `pub mod` declarations,
+	// the enum variant lines, and the two sets of dispatch match arms.
+	const template = readFileSync(LIB_TEMPLATE_PATH, "utf8");
+	return template
+		.replaceAll("{{MACRO_DEFINITIONS}}", MACRO_DEFINITIONS)
+		.replaceAll("{{MODULES}}", modules)
+		.replaceAll("{{VARIANT_LINES}}", variantLines)
+		.replaceAll("{{NON_STUB_ARMS}}", nonStubArms)
+		.replaceAll("{{STUB_ARMS}}", stubArms);
 }

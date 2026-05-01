@@ -1,5 +1,5 @@
 import type { Entry, Group } from "./group.ts";
-import { kebabCase } from "./naming.ts";
+import { kebabCase, sharedPrefix } from "./naming.ts";
 
 // H1 (field-based bucketing): a field qualifies as a split key if its distinct values
 // fall in this range. Below MIN, splitting buys nothing; above MAX, the resulting
@@ -27,33 +27,46 @@ function isPlainObject(value: unknown): value is Record<string, unknown> {
 	return typeof value === "object" && value !== null && !Array.isArray(value);
 }
 
-interface FieldStats {
-	field: string;
+interface BucketStats {
+	values: Map<string, Entry[]>;
 	cardinality: number;
 	dominance: number;
-	values: Map<string, Entry[]>;
 }
 
-function analyzeField(group: Group, field: string): FieldStats | null {
+// Shared bucketing scaffold for H1 and H2. `keyOf` returning undefined for any
+// entry aborts (parallels the "key must be present in 100% of entries" rule).
+function bucketBy(group: Group, keyOf: (entry: Entry) => string | undefined): BucketStats | null {
 	const values = new Map<string, Entry[]>();
 	for (const entry of group.entries) {
-		const payload = entry.data[group.discriminator];
-		if (!isPlainObject(payload)) return null;
-		const v = payload[field];
-		if (v === undefined) return null;
-		if (typeof v !== "string") return null;
-		const bucket = values.get(v);
+		const k = keyOf(entry);
+		if (k === undefined) return null;
+		const bucket = values.get(k);
 		if (bucket) bucket.push(entry);
-		else values.set(v, [entry]);
+		else values.set(k, [entry]);
 	}
 	const sizes = [...values.values()].map((b) => b.length);
 	const largest = sizes.reduce((a, b) => Math.max(a, b), 0);
 	return {
-		field,
+		values,
 		cardinality: values.size,
 		dominance: largest / group.entries.length,
-		values,
 	};
+}
+
+interface FieldStats extends BucketStats {
+	field: string;
+}
+
+function analyzeField(group: Group, field: string): FieldStats | null {
+	const stats = bucketBy(group, (entry) => {
+		const payload = entry.data[group.discriminator];
+		if (!isPlainObject(payload)) return undefined;
+		const v = payload[field];
+		if (typeof v !== "string") return undefined;
+		return v;
+	});
+	if (!stats) return null;
+	return { field, ...stats };
 }
 
 export function tryH1(group: Group): H1Result | null {
@@ -92,33 +105,24 @@ export function tryH1(group: Group): H1Result | null {
 }
 
 export function valueFileName(value: string, allValues: string[]): string {
-	const prefix = longestCommonUnderscorePrefix(allValues);
+	const prefix = sharedPrefix(allValues);
 	const stripped = prefix.length > 0 && value.startsWith(prefix) ? value.slice(prefix.length) : value;
 	const result = stripped.toLowerCase().replace(/_/g, "-");
 	if (result.length === 0) return value.toLowerCase().replace(/_/g, "-");
 	return result;
 }
 
-function longestCommonUnderscorePrefix(values: string[]): string {
-	if (values.length < 2) return "";
-	let prefix = values[0]!;
-	for (const v of values) {
-		while (!v.startsWith(prefix)) prefix = prefix.slice(0, -1);
-		if (prefix === "") return "";
-	}
-	const lastUnderscore = prefix.lastIndexOf("_");
-	return lastUnderscore >= 0 ? prefix.slice(0, lastUnderscore + 1) : "";
-}
-
 // H2 (templateId token bucketing): when every entry shares the same payload shape
 // (so H1 finds no qualifying field and H3 would produce a single fingerprint), the
-// templateId itself often encodes a category. Tokenize on `_` and look for the
-// leftmost position whose distinct token values satisfy the same cardinality and
-// dominance gates as H1 — universally-shared tokens fail MIN_CARDINALITY (count=1),
-// unique-per-entry suffixes fail MAX_CARDINALITY, leaving the meaningful axis.
-//
-// Reuses H1's bounds intentionally: the qualification semantics are identical, the
-// only difference is the data source (templateId structure vs. payload field).
+// templateId itself often encodes a category. Tokenize on `_` and look for a
+// position whose distinct token values satisfy a cardinality/dominance/avg-size gate.
+
+// H2 has wider bounds than H1: tokens encode coarser categories than payload fields,
+// and entries-per-bucket on the order of MIN_AVG_BUCKET_SIZE keeps directory listings
+// readable without forcing each variant into its own file.
+const H2_MAX_CARDINALITY = 50;
+const H2_MAX_DOMINANCE = 0.8;
+const H2_MIN_AVG_BUCKET_SIZE = 15;
 
 export interface H2Bucket {
 	value: string;
@@ -132,38 +136,18 @@ export interface H2Result {
 	buckets: H2Bucket[];
 }
 
-interface TokenPositionStats {
+interface TokenPositionStats extends BucketStats {
 	position: number;
-	cardinality: number;
-	dominance: number;
-	values: Map<string, Entry[]>;
 }
 
 function tokenize(templateId: string): string[] {
 	return templateId.split("_").filter(Boolean);
 }
 
-// Mirrors analyzeField, but for a token position in the templateId. Returns null if
-// any entry has fewer tokens than `position` (parallels H1's "field must be present
-// in 100% of entries" rule — a position only counts when every entry has it).
 function analyzeTokenPosition(group: Group, position: number): TokenPositionStats | null {
-	const values = new Map<string, Entry[]>();
-	for (const entry of group.entries) {
-		const tokens = tokenize(entry.templateId);
-		const v = tokens[position];
-		if (v === undefined) return null;
-		const bucket = values.get(v);
-		if (bucket) bucket.push(entry);
-		else values.set(v, [entry]);
-	}
-	const sizes = [...values.values()].map((b) => b.length);
-	const largest = sizes.reduce((a, b) => Math.max(a, b), 0);
-	return {
-		position,
-		cardinality: values.size,
-		dominance: largest / group.entries.length,
-		values,
-	};
+	const stats = bucketBy(group, (entry) => tokenize(entry.templateId)[position]);
+	if (!stats) return null;
+	return { position, ...stats };
 }
 
 export function tryH2(group: Group): H2Result | null {
@@ -182,25 +166,17 @@ export function tryH2(group: Group): H2Result | null {
 		if (stats) positions.push(stats);
 	}
 
-	// TODO(user): leftmost-qualifying selection.
-	//
-	// `positions` is in left-to-right token order. Pick the FIRST entry whose
-	// cardinality is in [H1_MIN_CARDINALITY, H1_MAX_CARDINALITY] AND whose
-	// dominance is ≤ H1_MAX_DOMINANCE. Return that entry, or null if none qualify.
-	//
-	// Note: do NOT sort by best-dominance like tryH1 does — for templateId tokens
-	// we want predictable left-to-right "first usable axis" semantics, so that
-	// e.g. `N_DISPLAY_n_shirt_001` lands on `shirt` (position 3) rather than on
-	// some deeper position that happens to have lower dominance.
+	// Among qualifying positions, pick the one with the highest cardinality. Higher
+	// cardinality = finer split, which means more files but more navigable per-file
+	// content. The avg-bucket-size gate above already rejects positions that would
+	// over-fragment; among the survivors, finer is better.
 	let winner: TokenPositionStats | null = null;
 	const total = group.entries.length;
-	// console.log(group.discriminator, "-", total);
-
-	// console.log(group.discriminator, JSON.stringify(positions, null, 2));
 
 	for (const cand of positions) {
-		// console.log(JSON.stringify(cand, null, 2), "-", total / cand.cardinality);
-		if (cand.cardinality > 50 || cand.dominance >= 0.8 || total / cand.cardinality < 15) continue;
+		if (cand.cardinality > H2_MAX_CARDINALITY) continue;
+		if (cand.dominance >= H2_MAX_DOMINANCE) continue;
+		if (total / cand.cardinality < H2_MIN_AVG_BUCKET_SIZE) continue;
 		if (!winner) {
 			winner = cand;
 			continue;
@@ -210,7 +186,6 @@ export function tryH2(group: Group): H2Result | null {
 		}
 	}
 	if (!winner) return null;
-	// console.log("regrouping", group.discriminator, "into", total / winner.cardinality, "files using", winner.position);
 
 	const allValues = [...winner.values.keys()];
 	const buckets: H2Bucket[] = [];
@@ -358,23 +333,11 @@ export type SplitTree =
 
 export type SplitPlan = { kind: "none" } | SplitTree;
 
-// Recursion: after picking a split, walk each bucket and ask whether the bucket
-// itself warrants another pass. The H3-then-H2 case from `display-string-id`
-// is the motivating example — H3 separates structurally-different entries into
-// their own clusters, which homogenizes templateIds enough for H2 to find a
-// clean token axis on the cleaned-up subset.
-// Top-level chooseSplit accepts whatever the heuristics produce — no structural
-// quality gate. Top-level splits like `item-settings/entries/{boost.ts, candy.ts,
-// ...}` (30 buckets, many small) and `iap-item-display/entries/...` (compound
-// fingerprint clusters) are useful even when individual buckets are small or
-// names are long; collapsing them to one giant flat file would be worse.
-//
-// The structural quality gates live in recurseIntoBuckets — applied to *deeper*
-// splits where mechanical sub-bucket names (bug → 1/2/3/4) and over-fragmenting
-// recursions (poses → empty-bundle singletons) produce navigation noise. Per-
-// level recursion: after picking a candidate plan, we walk its buckets and
-// try to deepen each one. Children that succeed get attached; children that
-// fail acceptRecursion's gates leave their bucket as a leaf.
+// Top-level splits are accepted whatever the heuristics produce; structural
+// quality gates (small-bucket ratio, informative names) only apply to recursive
+// sub-splits via acceptRecursion. The motivating recursion case is `display-string-id`:
+// H3 first separates structurally-different entries, which homogenizes templateIds
+// enough for H2 to find a clean token axis on the cleaned-up subset.
 export function chooseSplit(group: Group, depth = 0): SplitPlan {
 	if (group.entries.length <= SPLIT_THRESHOLD) return { kind: "none" };
 
@@ -415,30 +378,12 @@ function recurseIntoBuckets(discriminator: string, nodes: RecursableNode[], dept
 }
 
 // acceptRecursion gates *recursive* splits only (top-level splits aren't filtered).
-// Recursion creates additional directory depth, so a sub-split has to clear a
-// higher bar than a top-level split — it has to add navigation value beyond what
-// a flat parent file would give.
-//
 // Two checks:
-//
-//   1. Name gate (every bucket): each bucket must have an informative filename
-//      OR carry further children. Catches the bug → breadTierGroup case where
-//      sub-buckets are named "1", "2", "3", "4" — children alone aren't enough
-//      because we'd still emit `bug/2.ts, bug/3.ts, bug/4.ts` as ugly leaves.
-//
-//   2. Size gate (ratio): a few small siblings are fine (e.g., `idle.ts` at 1
-//      entry inside the 13-bucket display-string-id split — 7.7% under min,
-//      well within tolerance). What we reject is splits *dominated* by small
-//      buckets — the empty-bundle case (2 singletons in a 4-bucket poses
-//      split = 50%) carves out edge cases instead of meaningful categories.
-//
-// TODO(user): tune as needed. Considerations:
-//   - Looser name rule: e.g., accept short numerics if length >= 4 (years).
-//   - Different size thresholds: lower MIN_BUCKET_SIZE catches fewer stragglers;
-//     higher TOO_SMALL_TOLERANCE accepts splits with more small buckets.
-//   - Per-discriminator escape hatches: if a specific group is being mis-handled
-//     by the general policy, an opt-in/opt-out map keyed on `group.discriminator`
-//     can override (rarely needed in practice, reach for last).
+//   1. Name gate: every bucket must have an informative filename OR carry further
+//      children. Catches sub-buckets named "1"/"2"/"3" that would emit as ugly leaves.
+//   2. Size gate: reject splits *dominated* by small buckets — the empty-bundle case
+//      (≥ TOO_SMALL_TOLERANCE of buckets below MIN_BUCKET_SIZE) carves out edge
+//      cases rather than meaningful categories.
 function acceptRecursion(sub: SplitTree): boolean {
 	const buckets: ReadonlyArray<{ fileName: string; entries: Entry[]; children?: SplitTree }> = sub.kind === "h3" ? sub.clusters : sub.buckets;
 
@@ -469,31 +414,10 @@ const MIN_BUCKET_SIZE = 5;
 // by this gate (item-settings has many small categories that are still useful).
 const TOO_SMALL_TOLERANCE = 0.25;
 
-// Maximum depth of recursive splitting. Top-level call is depth 0; the first
-// recursion runs at depth 1; etc. Past this, no further nesting is attempted.
+// Maximum depth of recursive splitting. Top-level is depth 0; first recursion
+// runs at depth 1. Past this, no further nesting is attempted.
 const MAX_RECURSION_DEPTH = 2;
 
-// TODO(user): policy for whether a bucket should be considered for recursive splitting.
-//
-// Default policy below is intentionally minimal — only the depth cap. Worth thinking
-// about whether you want any of these additional gates:
-//
-//   - Skip recursion when `node.entries.length` is barely over SPLIT_THRESHOLD
-//     (e.g., 110 entries → 2 sub-buckets of 55 each → directory with 2 files
-//     is arguably worse than one 110-entry file). The chooseSplit threshold
-//     already filters out really-small inputs, but a higher recursion-only
-//     threshold would discourage marginal nestings.
-//
-//   - Cap the *breadth* alongside depth: if a node has many siblings already
-//     (e.g., this is one of 14 H2 buckets), recursing into each adds a lot of
-//     directory churn. A `siblingCount` parameter could gate that.
-//
-//   - Per-discriminator escape hatches if specific groups behave badly (rare;
-//     reach for this last).
-//
-// You're picking the policy that controls how aggressive nesting gets. The signal
-// to watch when tuning: total file count and average directory depth in the
-// regenerated output.
 function shouldRecurse(_node: RecursableNode, depth: number): boolean {
 	return depth < MAX_RECURSION_DEPTH;
 }

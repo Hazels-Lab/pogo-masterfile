@@ -1,3 +1,4 @@
+import type { Entry } from "./group.ts";
 import { isJsonObject } from "./helpers.ts";
 
 export type NumericKind = "uint" | "int" | "float";
@@ -144,9 +145,7 @@ export function widenType(type: InferredType): InferredType {
 		case "number":
 			return { kind: "number", numericKind: type.numericKind, literals: [] };
 		case "string":
-			return type.literals.length > 0 && type.literals.length <= STRING_LITERAL_UNION_CAP
-				? { kind: "string", literals: type.literals }
-				: { kind: "string", literals: [] };
+			return type.literals.length > 0 && type.literals.length <= STRING_LITERAL_UNION_CAP ? type : { kind: "string", literals: [] };
 		case "object":
 			return {
 				kind: "object",
@@ -330,4 +329,19 @@ function variantSortKey(type: InferredType): string {
 		case "templateIdSlice":
 			return "9-templateIdSlice";
 	}
+}
+
+// Read each entry's payload at `discriminator`, infer the union, and widen.
+// Both Rust and Go emitters share this preamble before structurally walking
+// the resulting object — so it lives here despite being technically an "infer
+// + widen" composite. The widened result must be an object (the masterfile
+// payload field is always a JSON object); any other kind indicates either a
+// malformed source file or a misuse of this helper on a non-payload field.
+export function widenedPayloadObject(entries: Entry[], discriminator: string): ObjectType {
+	const payloads = entries.map((e) => e.data[discriminator]);
+	const widened = widenType(inferJsonTypes(payloads));
+	if (widened.kind !== "object") {
+		throw new Error(`Expected object payload type for "${discriminator}", got ${widened.kind}`);
+	}
+	return widened;
 }

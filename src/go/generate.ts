@@ -1,6 +1,6 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { type Entry, type Group, groupEntries } from "../group.ts";
+import { type Entry, type Group, groupEntries, isStubGroup } from "../group.ts";
 import { pascalCase, snakeCase } from "../naming.ts";
 import { writeOutput } from "../write.ts";
 import {
@@ -14,12 +14,6 @@ import {
 
 const OUT_DIR = join(import.meta.dir, "..", "..", "packages", "go");
 const SINGLETONS_PACKAGE = "singletons";
-
-function isStubGroup(group: Group): boolean {
-	const first = group.entries[0];
-	if (!first) return true;
-	return Object.keys(first.data).filter((k) => k !== "templateId").length === 0;
-}
 
 async function readModulePath(): Promise<string> {
 	const goMod = await readFile(join(OUT_DIR, "go.mod"), "utf8");

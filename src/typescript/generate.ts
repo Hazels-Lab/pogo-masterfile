@@ -1,3 +1,4 @@
+import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { type Entry, type Group, groupEntries } from "../group.ts";
 import { kebabCase } from "../naming.ts";
@@ -22,6 +23,9 @@ import { buildPromotionRegistry } from "./promoted-unions.ts";
 
 const OUT_DIR = join(import.meta.dir, "..", "..", "packages", "ts", "dist");
 const FILE_TYPE = "d.ts";
+
+const UTILS_TEMPLATE = await readFile(join(import.meta.dir, "templates", "_utils.d.ts"), "utf8");
+
 // Recursively materialize a split tree into the files map. At each level:
 //   - Leaf bucket (no children): emitted as a single entry file at the current path.
 //   - Branch bucket (with children): emitted as a subdirectory containing recursive
@@ -112,43 +116,7 @@ function planFiles(groups: Map<string, Group>): Map<string, string> {
 	files.set(`${ENTRIES_LOWER}.${FILE_TYPE}`, emitTopLevelVariants(groupSplits));
 	files.set(`${BARREL_FILE}.${FILE_TYPE}`, emitIndexFile());
 	files.set(`lookup-table.${FILE_TYPE}`, emitRootLookupTable(multiEntry, singletons.length > 0));
-	files.set(
-		`_utils.${FILE_TYPE}`,
-		`export type S<T> = { [KeyType in keyof T]: T[KeyType] } & {};
-
-type PW<T> = [T] extends [string]
-	? string
-	: [T] extends [number]
-		? number
-		: [T] extends [boolean]
-			? boolean
-			: [T] extends [bigint]
-				? bigint
-				: [T] extends [symbol]
-					? symbol
-					: T;
-
-type KoU<T> = T extends unknown ? keyof T : never;
-
-type VoUK<T, K extends PropertyKey> = T extends unknown ? (K extends keyof T ? T[K] : never) : never;
-
-export type W<T> =
-	// Preserve functions
-	[T] extends [(...args: unknown[]) => unknown]
-		? T
-		: // Tuples become arrays. This is the important part:
-			// Widen the whole union of element types once.
-			[T] extends [readonly unknown[]]
-			? Array<W<T[number]>>
-			: // Objects keep properties and collapse same-shaped unions
-				[T] extends [object]
-				? S<{
-						[K in KoU<T>]: W<VoUK<T, K>>;
-					}>
-				: // Literals become primitives
-					PW<T>;
-`,
-	);
+	files.set(`_utils.${FILE_TYPE}`, UTILS_TEMPLATE);
 
 	return files;
 }

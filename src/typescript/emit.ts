@@ -32,13 +32,11 @@ function entryVariantStatements(
 	aliases: Map<string, string>,
 	invariants: InvariantTree,
 ): { statements: ts.Statement[]; typeNames: string[] } {
-	const sortedIds = [...entries].map((e) => e.templateId).sort();
-	const entriesById = new Map(entries.map((e) => [e.templateId, e]));
+	const sortedEntries = [...entries].sort((a, b) => (a.templateId < b.templateId ? -1 : a.templateId > b.templateId ? 1 : 0));
 	const statements: ts.Statement[] = [];
 	const typeNames: string[] = [];
-	for (const id of sortedIds) {
-		const entry = entriesById.get(id)!;
-		const variantSuffix = aliases.get(id)!;
+	for (const entry of sortedEntries) {
+		const variantSuffix = aliases.get(entry.templateId)!;
 		const typeName = `${gName}${variantSuffix}`;
 		typeNames.push(typeName);
 		statements.push(variantAliasDeclaration(typeName, gName, entry, group, invariants));
@@ -63,14 +61,21 @@ function variantAliasDeclaration(typeName: string, gName: string, entry: Entry, 
 	);
 }
 
-export function emitSingletonsFile(bucketName: string, singletons: Group[]): string {
-	const named = singletons.map((g) => {
+// Resolve an interface name for each singleton group: stubs (zero-payload entries)
+// take a sanitized templateId; everything else takes the discriminator's PascalCase
+// form. Returns the per-group bookkeeping shared by every singleton emitter.
+function nameSingletons(singletons: Group[]): Array<{ group: Group; entry: Entry; name: string; isStub: boolean }> {
+	return singletons.map((g) => {
 		const entry = g.entries[0]!;
 		const dataKeys = Object.keys(entry.data).filter((k) => k !== "templateId");
 		const isStub = dataKeys.length === 0;
 		const name = isStub ? aliasSuffix(entry.templateId, "") : groupName(g.discriminator);
 		return { group: g, entry, name, isStub };
 	});
+}
+
+export function emitSingletonsFile(bucketName: string, singletons: Group[]): string {
+	const named = nameSingletons(singletons);
 	named.sort((a, b) => a.name.localeCompare(b.name));
 
 	const file = new AstFileBuilder().header(`Generated from Pokémon GO masterfile — ${SINGLETONS} ${ENTRIES_LOWER} (no shared discriminator).`);
@@ -99,13 +104,7 @@ export function emitSingletonsFile(bucketName: string, singletons: Group[]): str
 }
 
 export function emitSingletonsTypeFile(singletons: Group[]): string {
-	const named = singletons.map((g) => {
-		const entry = g.entries[0]!;
-		const dataKeys = Object.keys(entry.data).filter((k) => k !== "templateId");
-		const isStub = dataKeys.length === 0;
-		const name = isStub ? aliasSuffix(entry.templateId, "") : groupName(g.discriminator);
-		return { group: g, entry, name, isStub };
-	});
+	const named = nameSingletons(singletons);
 	named.sort((a, b) => a.name.localeCompare(b.name));
 
 	const file = new AstFileBuilder().header(`Generated from Pokémon GO masterfile — ${SINGLETONS} ${TYPES} (no shared discriminator).`);
@@ -368,70 +367,64 @@ function isValidIdentifier(s: string): boolean {
 	return /^[A-Za-z_$][A-Za-z0-9_$]*$/.test(s);
 }
 
+// Render a per-group or singletons lookup-table file: header line, sorted import
+// block from `./entries`, and a single exported interface mapping each `key`
+// (templateId) to its specific entry type. Property keys are quoted only when
+// they aren't valid TS identifiers; imports are sorted-unique by typeName.
+// Callers do their own prep (alias derivation for groups, name resolution for
+// singletons) and pass the result here in the order they want the body to appear.
+function emitLookupTableFile(opts: { headerLabel: string; interfaceName: string; entries: Array<{ key: string; typeName: string }> }): string {
+	const { headerLabel, interfaceName, entries } = opts;
+
+	const lines = entries.map(({ key, typeName }) => {
+		const k = isValidIdentifier(key) ? key : `"${key}"`;
+		return `\t${k}: ${typeName};`;
+	});
+
+	const sortedImports = [...new Set(entries.map((e) => e.typeName))].sort();
+
+	return `// Generated from Pokémon GO masterfile — ${headerLabel}.
+
+import type {
+${sortedImports.map((n) => `\t${n},`).join("\n")}
+} from "./${ENTRIES_LOWER}";
+
+export interface ${interfaceName} {
+${lines.join("\n")}
+}
+`;
+}
+
 export function emitGroupLookupTable(group: Group): string {
 	const gName = groupName(group.discriminator);
 	const sortedIds = [...group.entries].map((e) => e.templateId).sort();
 	const aliases = deriveGroupAliases(sortedIds, gName);
 
-	const importedTypes = new Set<string>();
-	const lines: string[] = [];
-	for (const id of sortedIds) {
+	const entries = sortedIds.map((id) => {
 		const suffix = aliases.get(id);
 		if (suffix === undefined) {
 			throw new Error(`emitGroupLookupTable: no alias derived for templateId "${id}" in group "${group.discriminator}"`);
 		}
-		const typeName = `${gName}${suffix}`;
-		importedTypes.add(typeName);
-		const key = isValidIdentifier(id) ? id : `"${id}"`;
-		lines.push(`\t${key}: ${typeName};`);
-	}
+		return { key: id, typeName: `${gName}${suffix}` };
+	});
 
-	const sortedImports = [...importedTypes].sort();
-
-	return `// Generated from Pokémon GO masterfile — "${group.discriminator}" lookup table.
-
-import type {
-${sortedImports.map((n) => `\t${n},`).join("\n")}
-} from "./${ENTRIES_LOWER}";
-
-export interface ${gName}Lookup {
-${lines.join("\n")}
-}
-`;
+	return emitLookupTableFile({
+		headerLabel: `"${group.discriminator}" lookup table`,
+		interfaceName: `${gName}Lookup`,
+		entries,
+	});
 }
 
 export function emitSingletonsLookupTable(singletons: Group[]): string {
-	const importedTypes = new Set<string>();
-	const entries: { templateId: string; typeName: string }[] = [];
+	const entries = nameSingletons(singletons)
+		.map(({ entry, name }) => ({ key: entry.templateId, typeName: name }))
+		.sort((a, b) => a.key.localeCompare(b.key));
 
-	for (const g of singletons) {
-		const entry = g.entries[0]!;
-		const dataKeys = Object.keys(entry.data).filter((k) => k !== "templateId");
-		const isStub = dataKeys.length === 0;
-		const typeName = isStub ? aliasSuffix(entry.templateId, "") : groupName(g.discriminator);
-		importedTypes.add(typeName);
-		entries.push({ templateId: entry.templateId, typeName });
-	}
-
-	entries.sort((a, b) => a.templateId.localeCompare(b.templateId));
-
-	const lines = entries.map(({ templateId, typeName }) => {
-		const key = isValidIdentifier(templateId) ? templateId : `"${templateId}"`;
-		return `\t${key}: ${typeName};`;
+	return emitLookupTableFile({
+		headerLabel: "singletons lookup table",
+		interfaceName: `${SINGLETONS}Lookup`,
+		entries,
 	});
-
-	const sortedImports = [...importedTypes].sort();
-
-	return `// Generated from Pokémon GO masterfile — singletons lookup table.
-
-import type {
-${sortedImports.map((n) => `\t${n},`).join("\n")}
-} from "./${ENTRIES_LOWER}";
-
-export interface ${SINGLETONS}Lookup {
-${lines.join("\n")}
-}
-`;
 }
 
 export function emitRootLookupTable(multiEntry: Group[], hasSingletons: boolean): string {

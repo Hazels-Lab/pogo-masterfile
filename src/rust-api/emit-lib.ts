@@ -1,12 +1,15 @@
 import type { Group } from "../group.ts";
 import { pascalCase, snakeCase } from "../naming.ts";
 
-interface GroupInfo {
-	discriminator: string;
-	pascal: string;
+interface GroupFragments {
+	/** snake_case discriminator — kept on the fragment so the list can be sorted stably. */
 	snake: string;
-	variant: string; // MasterfileEntry::<variant>
-	templateIdType: string; // <Pascal>TemplateId
+	templateIdImport: string;
+	indexField: string;
+	buildLocal: string;
+	buildMatchArm: string;
+	buildAssignment: string;
+	accessorMethod: string;
 }
 
 /**
@@ -27,45 +30,34 @@ interface GroupInfo {
 export function emitLib(groups: Map<string, Group>): string {
 	const multiEntry = [...groups.values()].filter((g) => g.entries.length > 1);
 
-	const infos: GroupInfo[] = multiEntry.map((g) => ({
-		discriminator: g.discriminator,
-		pascal: pascalCase(g.discriminator),
-		snake: snakeCase(g.discriminator),
-		variant: pascalCase(g.discriminator),
-		templateIdType: `${pascalCase(g.discriminator)}TemplateId`,
-	}));
-	infos.sort((a, b) => a.snake.localeCompare(b.snake));
+	// Single pass: each group yields all six fragments it contributes to lib.rs.
+	// Sort by snake-case name first so the emitted file is order-stable.
+	const fragments: GroupFragments[] = multiEntry
+		.map((g) => {
+			const pascal = pascalCase(g.discriminator);
+			const snake = snakeCase(g.discriminator);
+			const variant = pascal; // MasterfileEntry::<variant>
+			const templateIdType = `${pascal}TemplateId`;
+			return {
+				snake,
+				templateIdImport: `\tpub use pogo_masterfile_types::${snake}::${templateIdType};`,
+				indexField: `\tpub(crate) ${snake}_index: HashMap<${templateIdType}, usize>,\n\tpub(crate) ${snake}_order: Vec<usize>,`,
+				buildLocal: `\t\tlet mut ${snake}_index: HashMap<${templateIdType}, usize> = HashMap::new();\n\t\tlet mut ${snake}_order: Vec<usize> = Vec::new();`,
+				buildMatchArm: `\t\t\t\tMasterfileEntry::${variant}(_) => {\n\t\t\t\t\tif let Ok(typed) = entry.template_id().parse::<${templateIdType}>() {\n\t\t\t\t\t\t${snake}_index.insert(typed, idx);\n\t\t\t\t\t\t${snake}_order.push(idx);\n\t\t\t\t\t}\n\t\t\t\t}`,
+				buildAssignment: `\t\t\t${snake}_index,\n\t\t\t${snake}_order,`,
+				accessorMethod: `\tpub fn ${snake}(&self) -> accessor::${pascal}Accessor<'_> {\n\t\taccessor::${pascal}Accessor {\n\t\t\tentries: &self.entries,\n\t\t\tindex: &self.groups.${snake}_index,\n\t\t\torder: &self.groups.${snake}_order,\n\t\t}\n\t}`,
+			};
+		})
+		.sort((a, b) => a.snake.localeCompare(b.snake));
 
-	const templateIdImports = infos.map((i) => `\tpub use pogo_masterfile_types::${i.snake}::${i.templateIdType};`).join("\n");
-
-	const indexFields = infos
-		.map((info) => `\tpub(crate) ${info.snake}_index: HashMap<${info.templateIdType}, usize>,\n\tpub(crate) ${info.snake}_order: Vec<usize>,`)
-		.join("\n");
-
-	const buildLocals = infos
-		.map(
-			(info) =>
-				`\t\tlet mut ${info.snake}_index: HashMap<${info.templateIdType}, usize> = HashMap::new();\n\t\tlet mut ${info.snake}_order: Vec<usize> = Vec::new();`,
-		)
-		.join("\n");
-
+	const templateIdImports = fragments.map((f) => f.templateIdImport).join("\n");
+	const indexFields = fragments.map((f) => f.indexField).join("\n");
+	const buildLocals = fragments.map((f) => f.buildLocal).join("\n");
 	// Match arms in build(): one for each multi-entry variant + a wildcard
 	// for everything else (singletons go to wildcard, no per-group bucket).
-	const buildMatchArms = infos
-		.map(
-			(info) =>
-				`\t\t\t\tMasterfileEntry::${info.variant}(_) => {\n\t\t\t\t\tif let Ok(typed) = entry.template_id().parse::<${info.templateIdType}>() {\n\t\t\t\t\t\t${info.snake}_index.insert(typed, idx);\n\t\t\t\t\t\t${info.snake}_order.push(idx);\n\t\t\t\t\t}\n\t\t\t\t}`,
-		)
-		.join("\n");
-
-	const buildAssignments = infos.map((info) => `\t\t\t${info.snake}_index,\n\t\t\t${info.snake}_order,`).join("\n");
-
-	const accessorMethods = infos
-		.map(
-			(info) =>
-				`\tpub fn ${info.snake}(&self) -> accessor::${info.pascal}Accessor<'_> {\n\t\taccessor::${info.pascal}Accessor {\n\t\t\tentries: &self.entries,\n\t\t\tindex: &self.groups.${info.snake}_index,\n\t\t\torder: &self.groups.${info.snake}_order,\n\t\t}\n\t}`,
-		)
-		.join("\n\n");
+	const buildMatchArms = fragments.map((f) => f.buildMatchArm).join("\n");
+	const buildAssignments = fragments.map((f) => f.buildAssignment).join("\n");
+	const accessorMethods = fragments.map((f) => f.accessorMethod).join("\n\n");
 
 	return `//! Generated from Pokémon GO masterfile — runtime API.
 //!

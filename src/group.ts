@@ -8,6 +8,12 @@ export interface Group {
 	entries: Entry[];
 }
 
+export function isStubGroup(group: Group): boolean {
+	const first = group.entries[0];
+	if (!first) return true;
+	return Object.keys(first.data).filter((k) => k !== "templateId").length === 0;
+}
+
 export function groupEntries(entries: Entry[]): Map<string, Group> {
 	const groups = new Map<string, Group>();
 	for (const entry of entries) {
