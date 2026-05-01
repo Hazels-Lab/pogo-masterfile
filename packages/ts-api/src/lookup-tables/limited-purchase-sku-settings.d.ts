@@ -1,0 +1,75 @@
+// Generated from Pokémon GO masterfile — "limitedPurchaseSkuSettings" lookup table.
+
+import type {
+	LimitedPurchaseSkuSettingsBundleFlairFirsttime1,
+	LimitedPurchaseSkuSettingsBundleGeneral1Free1,
+	LimitedPurchaseSkuSettingsBundleGeneral1Medium1,
+	LimitedPurchaseSkuSettingsBundleGeneral1Medium2,
+	LimitedPurchaseSkuSettingsBundleGeneral1Medium3,
+	LimitedPurchaseSkuSettingsBundleGeneral1Rocket1,
+	LimitedPurchaseSkuSettingsBundleGeneral1Tiny2,
+	LimitedPurchaseSkuSettingsBundleGeneral1Tiny3,
+	LimitedPurchaseSkuSettingsBundleGeneral1Tiny4,
+	LimitedPurchaseSkuSettingsBundleGeneral2Free1,
+	LimitedPurchaseSkuSettingsBundleGeneral2Large1,
+	LimitedPurchaseSkuSettingsBundleGeneral2Medium1,
+	LimitedPurchaseSkuSettingsBundleGeneral4Small2,
+	LimitedPurchaseSkuSettingsBundleGeneral5Large1,
+	LimitedPurchaseSkuSettingsBundleGeneral5Small1,
+	LimitedPurchaseSkuSettingsBundleGeneral5Small2,
+	LimitedPurchaseSkuSettingsBundleGeneral5Small3,
+	LimitedPurchaseSkuSettingsBundleGeneral5Small4,
+	LimitedPurchaseSkuSettingsBundleGeneral5Small5,
+	LimitedPurchaseSkuSettingsBundleGeneral6Small1,
+	LimitedPurchaseSkuSettingsBundleHalloweenAdventure1,
+	LimitedPurchaseSkuSettingsBundleWebstoreBox1,
+	LimitedPurchaseSkuSettingsBundleWebstoreBox2,
+	LimitedPurchaseSkuSettingsBundleWebstoreBox3,
+	LimitedPurchaseSkuSettingsBundleWebstoreBox4,
+	LimitedPurchaseSkuSettingsBundleWebstorePromo1,
+	LimitedPurchaseSkuSettingsBundleWebstoreThanksgiving1,
+	LimitedPurchaseSkuSettingsBundleWebstoreThanksgiving2,
+	LimitedPurchaseSkuSettingsBundleWebstoreThanksgiving3,
+	LimitedPurchaseSkuSettingsBundleWelcomebox1,
+	LimitedPurchaseSkuSettingsIncenseBundleGeneral2Small1,
+	LimitedPurchaseSkuSettingsIncenseGeneral2Medium1,
+	LimitedPurchaseSkuSettingsRemotepassBundleGeneral3Small1,
+	LimitedPurchaseSkuSettingsWeeklyBallsGeneral2Medium1,
+} from "pogo-masterfile-types/entries";
+
+export interface LimitedPurchaseSkuSettingsLookup {
+	"LPSKU_bundle.flair.firsttime.1": LimitedPurchaseSkuSettingsBundleFlairFirsttime1;
+	"LPSKU_bundle.general1.free.1": LimitedPurchaseSkuSettingsBundleGeneral1Free1;
+	"LPSKU_bundle.general1.medium.1": LimitedPurchaseSkuSettingsBundleGeneral1Medium1;
+	"LPSKU_bundle.general1.medium.2": LimitedPurchaseSkuSettingsBundleGeneral1Medium2;
+	"LPSKU_bundle.general1.medium.3": LimitedPurchaseSkuSettingsBundleGeneral1Medium3;
+	"LPSKU_bundle.general1.rocket.1": LimitedPurchaseSkuSettingsBundleGeneral1Rocket1;
+	"LPSKU_bundle.general1.tiny.2": LimitedPurchaseSkuSettingsBundleGeneral1Tiny2;
+	"LPSKU_bundle.general1.tiny.3": LimitedPurchaseSkuSettingsBundleGeneral1Tiny3;
+	"LPSKU_bundle.general1.tiny.4": LimitedPurchaseSkuSettingsBundleGeneral1Tiny4;
+	"LPSKU_bundle.general2.free.1": LimitedPurchaseSkuSettingsBundleGeneral2Free1;
+	"LPSKU_bundle.general2.large.1": LimitedPurchaseSkuSettingsBundleGeneral2Large1;
+	"LPSKU_bundle.general2.medium.1": LimitedPurchaseSkuSettingsBundleGeneral2Medium1;
+	"LPSKU_bundle.general4.small.2": LimitedPurchaseSkuSettingsBundleGeneral4Small2;
+	"LPSKU_bundle.general5.large.1": LimitedPurchaseSkuSettingsBundleGeneral5Large1;
+	"LPSKU_bundle.general5.small.1": LimitedPurchaseSkuSettingsBundleGeneral5Small1;
+	"LPSKU_bundle.general5.small.2": LimitedPurchaseSkuSettingsBundleGeneral5Small2;
+	"LPSKU_bundle.general5.small.3": LimitedPurchaseSkuSettingsBundleGeneral5Small3;
+	"LPSKU_bundle.general5.small.4": LimitedPurchaseSkuSettingsBundleGeneral5Small4;
+	"LPSKU_bundle.general5.small.5": LimitedPurchaseSkuSettingsBundleGeneral5Small5;
+	"LPSKU_bundle.general6.small.1": LimitedPurchaseSkuSettingsBundleGeneral6Small1;
+	"LPSKU_bundle.halloween.adventure.1": LimitedPurchaseSkuSettingsBundleHalloweenAdventure1;
+	"LPSKU_bundle.webstore_box.1": LimitedPurchaseSkuSettingsBundleWebstoreBox1;
+	"LPSKU_bundle.webstore_box.2": LimitedPurchaseSkuSettingsBundleWebstoreBox2;
+	"LPSKU_bundle.webstore_box.3": LimitedPurchaseSkuSettingsBundleWebstoreBox3;
+	"LPSKU_bundle.webstore_box.4": LimitedPurchaseSkuSettingsBundleWebstoreBox4;
+	"LPSKU_bundle.webstore_promo.1": LimitedPurchaseSkuSettingsBundleWebstorePromo1;
+	"LPSKU_bundle.webstore_thanksgiving.1": LimitedPurchaseSkuSettingsBundleWebstoreThanksgiving1;
+	"LPSKU_bundle.webstore_thanksgiving.2": LimitedPurchaseSkuSettingsBundleWebstoreThanksgiving2;
+	"LPSKU_bundle.webstore_thanksgiving.3": LimitedPurchaseSkuSettingsBundleWebstoreThanksgiving3;
+	"LPSKU_bundle.welcomebox.1": LimitedPurchaseSkuSettingsBundleWelcomebox1;
+	"LPSKU_incense_bundle.general2.small.1": LimitedPurchaseSkuSettingsIncenseBundleGeneral2Small1;
+	"LPSKU_incense.general2.medium.1": LimitedPurchaseSkuSettingsIncenseGeneral2Medium1;
+	"LPSKU_remotepass.bundle.general3.small.1": LimitedPurchaseSkuSettingsRemotepassBundleGeneral3Small1;
+	"LPSKU_weekly_balls.general2.medium.1": LimitedPurchaseSkuSettingsWeeklyBallsGeneral2Medium1;
+}

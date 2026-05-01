@@ -1,0 +1,1089 @@
+// Generated from Pokémon GO masterfile — "pokemonFamily" lookup table.
+
+import type {
+	PokemonFamilyV0001FamilyBulbasaur,
+	PokemonFamilyV0004FamilyCharmander,
+	PokemonFamilyV0007FamilySquirtle,
+	PokemonFamilyV0010FamilyCaterpie,
+	PokemonFamilyV0013FamilyWeedle,
+	PokemonFamilyV0016FamilyPidgey,
+	PokemonFamilyV0019FamilyRattata,
+	PokemonFamilyV0021FamilySpearow,
+	PokemonFamilyV0023FamilyEkans,
+	PokemonFamilyV0025FamilyPikachu,
+	PokemonFamilyV0027FamilySandshrew,
+	PokemonFamilyV0029FamilyNidoran,
+	PokemonFamilyV0032FamilyNidoran,
+	PokemonFamilyV0035FamilyClefairy,
+	PokemonFamilyV0037FamilyVulpix,
+	PokemonFamilyV0039FamilyJigglypuff,
+	PokemonFamilyV0041FamilyZubat,
+	PokemonFamilyV0043FamilyOddish,
+	PokemonFamilyV0046FamilyParas,
+	PokemonFamilyV0048FamilyVenonat,
+	PokemonFamilyV0050FamilyDiglett,
+	PokemonFamilyV0052FamilyMeowth,
+	PokemonFamilyV0054FamilyPsyduck,
+	PokemonFamilyV0056FamilyMankey,
+	PokemonFamilyV0058FamilyGrowlithe,
+	PokemonFamilyV0060FamilyPoliwag,
+	PokemonFamilyV0063FamilyAbra,
+	PokemonFamilyV0066FamilyMachop,
+	PokemonFamilyV0069FamilyBellsprout,
+	PokemonFamilyV0072FamilyTentacool,
+	PokemonFamilyV0074FamilyGeodude,
+	PokemonFamilyV0077FamilyPonyta,
+	PokemonFamilyV0079FamilySlowpoke,
+	PokemonFamilyV0081FamilyMagnemite,
+	PokemonFamilyV0083FamilyFarfetchd,
+	PokemonFamilyV0084FamilyDoduo,
+	PokemonFamilyV0086FamilySeel,
+	PokemonFamilyV0088FamilyGrimer,
+	PokemonFamilyV0090FamilyShellder,
+	PokemonFamilyV0092FamilyGastly,
+	PokemonFamilyV0095FamilyOnix,
+	PokemonFamilyV0096FamilyDrowzee,
+	PokemonFamilyV0098FamilyKrabby,
+	PokemonFamilyV0100FamilyVoltorb,
+	PokemonFamilyV0102FamilyExeggcute,
+	PokemonFamilyV0104FamilyCubone,
+	PokemonFamilyV0108FamilyLickitung,
+	PokemonFamilyV0109FamilyKoffing,
+	PokemonFamilyV0111FamilyRhyhorn,
+	PokemonFamilyV0113FamilyChansey,
+	PokemonFamilyV0114FamilyTangela,
+	PokemonFamilyV0115FamilyKangaskhan,
+	PokemonFamilyV0116FamilyHorsea,
+	PokemonFamilyV0118FamilyGoldeen,
+	PokemonFamilyV0120FamilyStaryu,
+	PokemonFamilyV0122FamilyMrMime,
+	PokemonFamilyV0123FamilyScyther,
+	PokemonFamilyV0124FamilyJynx,
+	PokemonFamilyV0125FamilyElectabuzz,
+	PokemonFamilyV0126FamilyMagmar,
+	PokemonFamilyV0127FamilyPinsir,
+	PokemonFamilyV0128FamilyTauros,
+	PokemonFamilyV0129FamilyMagikarp,
+	PokemonFamilyV0131FamilyLapras,
+	PokemonFamilyV0132FamilyDitto,
+	PokemonFamilyV0133FamilyEevee,
+	PokemonFamilyV0137FamilyPorygon,
+	PokemonFamilyV0138FamilyOmanyte,
+	PokemonFamilyV0140FamilyKabuto,
+	PokemonFamilyV0142FamilyAerodactyl,
+	PokemonFamilyV0143FamilySnorlax,
+	PokemonFamilyV0144FamilyArticuno,
+	PokemonFamilyV0145FamilyZapdos,
+	PokemonFamilyV0146FamilyMoltres,
+	PokemonFamilyV0147FamilyDratini,
+	PokemonFamilyV0150FamilyMewtwo,
+	PokemonFamilyV0151FamilyMew,
+	PokemonFamilyV0152FamilyChikorita,
+	PokemonFamilyV0155FamilyCyndaquil,
+	PokemonFamilyV0158FamilyTotodile,
+	PokemonFamilyV0161FamilySentret,
+	PokemonFamilyV0163FamilyHoothoot,
+	PokemonFamilyV0165FamilyLedyba,
+	PokemonFamilyV0167FamilySpinarak,
+	PokemonFamilyV0170FamilyChinchou,
+	PokemonFamilyV0175FamilyTogepi,
+	PokemonFamilyV0177FamilyNatu,
+	PokemonFamilyV0179FamilyMareep,
+	PokemonFamilyV0183FamilyMarill,
+	PokemonFamilyV0185FamilySudowoodo,
+	PokemonFamilyV0187FamilyHoppip,
+	PokemonFamilyV0190FamilyAipom,
+	PokemonFamilyV0191FamilySunkern,
+	PokemonFamilyV0193FamilyYanma,
+	PokemonFamilyV0194FamilyWooper,
+	PokemonFamilyV0198FamilyMurkrow,
+	PokemonFamilyV0200FamilyMisdreavus,
+	PokemonFamilyV0201FamilyUnown,
+	PokemonFamilyV0202FamilyWobbuffet,
+	PokemonFamilyV0203FamilyGirafarig,
+	PokemonFamilyV0204FamilyPineco,
+	PokemonFamilyV0206FamilyDunsparce,
+	PokemonFamilyV0207FamilyGligar,
+	PokemonFamilyV0209FamilySnubbull,
+	PokemonFamilyV0211FamilyQwilfish,
+	PokemonFamilyV0213FamilyShuckle,
+	PokemonFamilyV0214FamilyHeracross,
+	PokemonFamilyV0215FamilySneasel,
+	PokemonFamilyV0216FamilyTeddiursa,
+	PokemonFamilyV0218FamilySlugma,
+	PokemonFamilyV0220FamilySwinub,
+	PokemonFamilyV0222FamilyCorsola,
+	PokemonFamilyV0223FamilyRemoraid,
+	PokemonFamilyV0225FamilyDelibird,
+	PokemonFamilyV0226FamilyMantine,
+	PokemonFamilyV0227FamilySkarmory,
+	PokemonFamilyV0228FamilyHoundour,
+	PokemonFamilyV0231FamilyPhanpy,
+	PokemonFamilyV0234FamilyStantler,
+	PokemonFamilyV0235FamilySmeargle,
+	PokemonFamilyV0236FamilyTyrogue,
+	PokemonFamilyV0241FamilyMiltank,
+	PokemonFamilyV0243FamilyRaikou,
+	PokemonFamilyV0244FamilyEntei,
+	PokemonFamilyV0245FamilySuicune,
+	PokemonFamilyV0246FamilyLarvitar,
+	PokemonFamilyV0249FamilyLugia,
+	PokemonFamilyV0250FamilyHoOh,
+	PokemonFamilyV0251FamilyCelebi,
+	PokemonFamilyV0252FamilyTreecko,
+	PokemonFamilyV0255FamilyTorchic,
+	PokemonFamilyV0258FamilyMudkip,
+	PokemonFamilyV0261FamilyPoochyena,
+	PokemonFamilyV0263FamilyZigzagoon,
+	PokemonFamilyV0265FamilyWurmple,
+	PokemonFamilyV0270FamilyLotad,
+	PokemonFamilyV0273FamilySeedot,
+	PokemonFamilyV0276FamilyTaillow,
+	PokemonFamilyV0278FamilyWingull,
+	PokemonFamilyV0280FamilyRalts,
+	PokemonFamilyV0283FamilySurskit,
+	PokemonFamilyV0285FamilyShroomish,
+	PokemonFamilyV0287FamilySlakoth,
+	PokemonFamilyV0290FamilyNincada,
+	PokemonFamilyV0293FamilyWhismur,
+	PokemonFamilyV0296FamilyMakuhita,
+	PokemonFamilyV0299FamilyNosepass,
+	PokemonFamilyV0300FamilySkitty,
+	PokemonFamilyV0302FamilySableye,
+	PokemonFamilyV0303FamilyMawile,
+	PokemonFamilyV0304FamilyAron,
+	PokemonFamilyV0307FamilyMeditite,
+	PokemonFamilyV0309FamilyElectrike,
+	PokemonFamilyV0311FamilyPlusle,
+	PokemonFamilyV0312FamilyMinun,
+	PokemonFamilyV0313FamilyVolbeat,
+	PokemonFamilyV0314FamilyIllumise,
+	PokemonFamilyV0315FamilyRoselia,
+	PokemonFamilyV0316FamilyGulpin,
+	PokemonFamilyV0318FamilyCarvanha,
+	PokemonFamilyV0320FamilyWailmer,
+	PokemonFamilyV0322FamilyNumel,
+	PokemonFamilyV0324FamilyTorkoal,
+	PokemonFamilyV0325FamilySpoink,
+	PokemonFamilyV0327FamilySpinda,
+	PokemonFamilyV0328FamilyTrapinch,
+	PokemonFamilyV0331FamilyCacnea,
+	PokemonFamilyV0333FamilySwablu,
+	PokemonFamilyV0335FamilyZangoose,
+	PokemonFamilyV0336FamilySeviper,
+	PokemonFamilyV0337FamilyLunatone,
+	PokemonFamilyV0338FamilySolrock,
+	PokemonFamilyV0339FamilyBarboach,
+	PokemonFamilyV0341FamilyCorphish,
+	PokemonFamilyV0343FamilyBaltoy,
+	PokemonFamilyV0345FamilyLileep,
+	PokemonFamilyV0347FamilyAnorith,
+	PokemonFamilyV0349FamilyFeebas,
+	PokemonFamilyV0351FamilyCastform,
+	PokemonFamilyV0352FamilyKecleon,
+	PokemonFamilyV0353FamilyShuppet,
+	PokemonFamilyV0355FamilyDuskull,
+	PokemonFamilyV0357FamilyTropius,
+	PokemonFamilyV0358FamilyChimecho,
+	PokemonFamilyV0359FamilyAbsol,
+	PokemonFamilyV0361FamilySnorunt,
+	PokemonFamilyV0363FamilySpheal,
+	PokemonFamilyV0366FamilyClamperl,
+	PokemonFamilyV0369FamilyRelicanth,
+	PokemonFamilyV0370FamilyLuvdisc,
+	PokemonFamilyV0371FamilyBagon,
+	PokemonFamilyV0374FamilyBeldum,
+	PokemonFamilyV0377FamilyRegirock,
+	PokemonFamilyV0378FamilyRegice,
+	PokemonFamilyV0379FamilyRegisteel,
+	PokemonFamilyV0380FamilyLatias,
+	PokemonFamilyV0381FamilyLatios,
+	PokemonFamilyV0382FamilyKyogre,
+	PokemonFamilyV0383FamilyGroudon,
+	PokemonFamilyV0384FamilyRayquaza,
+	PokemonFamilyV0385FamilyJirachi,
+	PokemonFamilyV0386FamilyDeoxys,
+	PokemonFamilyV0387FamilyTurtwig,
+	PokemonFamilyV0390FamilyChimchar,
+	PokemonFamilyV0393FamilyPiplup,
+	PokemonFamilyV0396FamilyStarly,
+	PokemonFamilyV0399FamilyBidoof,
+	PokemonFamilyV0401FamilyKricketot,
+	PokemonFamilyV0403FamilyShinx,
+	PokemonFamilyV0408FamilyCranidos,
+	PokemonFamilyV0410FamilyShieldon,
+	PokemonFamilyV0412FamilyBurmy,
+	PokemonFamilyV0415FamilyCombee,
+	PokemonFamilyV0417FamilyPachirisu,
+	PokemonFamilyV0418FamilyBuizel,
+	PokemonFamilyV0420FamilyCherubi,
+	PokemonFamilyV0422FamilyShellos,
+	PokemonFamilyV0425FamilyDrifloon,
+	PokemonFamilyV0427FamilyBuneary,
+	PokemonFamilyV0431FamilyGlameow,
+	PokemonFamilyV0434FamilyStunky,
+	PokemonFamilyV0436FamilyBronzor,
+	PokemonFamilyV0441FamilyChatot,
+	PokemonFamilyV0442FamilySpiritomb,
+	PokemonFamilyV0443FamilyGible,
+	PokemonFamilyV0448FamilyLucario,
+	PokemonFamilyV0449FamilyHippopotas,
+	PokemonFamilyV0451FamilySkorupi,
+	PokemonFamilyV0453FamilyCroagunk,
+	PokemonFamilyV0455FamilyCarnivine,
+	PokemonFamilyV0456FamilyFinneon,
+	PokemonFamilyV0459FamilySnover,
+	PokemonFamilyV0479FamilyRotom,
+	PokemonFamilyV0480FamilyUxie,
+	PokemonFamilyV0481FamilyMesprit,
+	PokemonFamilyV0482FamilyAzelf,
+	PokemonFamilyV0483FamilyDialga,
+	PokemonFamilyV0484FamilyPalkia,
+	PokemonFamilyV0485FamilyHeatran,
+	PokemonFamilyV0486FamilyRegigigas,
+	PokemonFamilyV0487FamilyGiratina,
+	PokemonFamilyV0488FamilyCresselia,
+	PokemonFamilyV0489FamilyPhione,
+	PokemonFamilyV0490FamilyManaphy,
+	PokemonFamilyV0491FamilyDarkrai,
+	PokemonFamilyV0492FamilyShaymin,
+	PokemonFamilyV0493FamilyArceus,
+	PokemonFamilyV0494FamilyVictini,
+	PokemonFamilyV0495FamilySnivy,
+	PokemonFamilyV0498FamilyTepig,
+	PokemonFamilyV0501FamilyOshawott,
+	PokemonFamilyV0504FamilyPatrat,
+	PokemonFamilyV0506FamilyLillipup,
+	PokemonFamilyV0509FamilyPurrloin,
+	PokemonFamilyV0511FamilyPansage,
+	PokemonFamilyV0513FamilyPansear,
+	PokemonFamilyV0515FamilyPanpour,
+	PokemonFamilyV0517FamilyMunna,
+	PokemonFamilyV0519FamilyPidove,
+	PokemonFamilyV0522FamilyBlitzle,
+	PokemonFamilyV0524FamilyRoggenrola,
+	PokemonFamilyV0527FamilyWoobat,
+	PokemonFamilyV0529FamilyDrilbur,
+	PokemonFamilyV0531FamilyAudino,
+	PokemonFamilyV0532FamilyTimburr,
+	PokemonFamilyV0535FamilyTympole,
+	PokemonFamilyV0538FamilyThroh,
+	PokemonFamilyV0539FamilySawk,
+	PokemonFamilyV0540FamilySewaddle,
+	PokemonFamilyV0543FamilyVenipede,
+	PokemonFamilyV0546FamilyCottonee,
+	PokemonFamilyV0548FamilyPetilil,
+	PokemonFamilyV0550FamilyBasculin,
+	PokemonFamilyV0551FamilySandile,
+	PokemonFamilyV0554FamilyDarumaka,
+	PokemonFamilyV0556FamilyMaractus,
+	PokemonFamilyV0557FamilyDwebble,
+	PokemonFamilyV0559FamilyScraggy,
+	PokemonFamilyV0561FamilySigilyph,
+	PokemonFamilyV0562FamilyYamask,
+	PokemonFamilyV0564FamilyTirtouga,
+	PokemonFamilyV0566FamilyArchen,
+	PokemonFamilyV0568FamilyTrubbish,
+	PokemonFamilyV0570FamilyZorua,
+	PokemonFamilyV0572FamilyMinccino,
+	PokemonFamilyV0574FamilyGothita,
+	PokemonFamilyV0577FamilySolosis,
+	PokemonFamilyV0580FamilyDucklett,
+	PokemonFamilyV0582FamilyVanillite,
+	PokemonFamilyV0585FamilyDeerling,
+	PokemonFamilyV0587FamilyEmolga,
+	PokemonFamilyV0588FamilyKarrablast,
+	PokemonFamilyV0590FamilyFoongus,
+	PokemonFamilyV0592FamilyFrillish,
+	PokemonFamilyV0594FamilyAlomomola,
+	PokemonFamilyV0595FamilyJoltik,
+	PokemonFamilyV0597FamilyFerroseed,
+	PokemonFamilyV0599FamilyKlink,
+	PokemonFamilyV0602FamilyTynamo,
+	PokemonFamilyV0605FamilyElgyem,
+	PokemonFamilyV0607FamilyLitwick,
+	PokemonFamilyV0610FamilyAxew,
+	PokemonFamilyV0613FamilyCubchoo,
+	PokemonFamilyV0615FamilyCryogonal,
+	PokemonFamilyV0616FamilyShelmet,
+	PokemonFamilyV0618FamilyStunfisk,
+	PokemonFamilyV0619FamilyMienfoo,
+	PokemonFamilyV0621FamilyDruddigon,
+	PokemonFamilyV0622FamilyGolett,
+	PokemonFamilyV0624FamilyPawniard,
+	PokemonFamilyV0626FamilyBouffalant,
+	PokemonFamilyV0627FamilyRufflet,
+	PokemonFamilyV0629FamilyVullaby,
+	PokemonFamilyV0631FamilyHeatmor,
+	PokemonFamilyV0632FamilyDurant,
+	PokemonFamilyV0633FamilyDeino,
+	PokemonFamilyV0636FamilyLarvesta,
+	PokemonFamilyV0638FamilyCobalion,
+	PokemonFamilyV0639FamilyTerrakion,
+	PokemonFamilyV0640FamilyVirizion,
+	PokemonFamilyV0641FamilyTornadus,
+	PokemonFamilyV0642FamilyThundurus,
+	PokemonFamilyV0643FamilyReshiram,
+	PokemonFamilyV0644FamilyZekrom,
+	PokemonFamilyV0645FamilyLandorus,
+	PokemonFamilyV0646FamilyKyurem,
+	PokemonFamilyV0647FamilyKeldeo,
+	PokemonFamilyV0648FamilyMeloetta,
+	PokemonFamilyV0649FamilyGenesect,
+	PokemonFamilyV0650FamilyChespin,
+	PokemonFamilyV0653FamilyFennekin,
+	PokemonFamilyV0656FamilyFroakie,
+	PokemonFamilyV0659FamilyBunnelby,
+	PokemonFamilyV0661FamilyFletchling,
+	PokemonFamilyV0664FamilyScatterbug,
+	PokemonFamilyV0667FamilyLitleo,
+	PokemonFamilyV0669FamilyFlabebe,
+	PokemonFamilyV0672FamilySkiddo,
+	PokemonFamilyV0674FamilyPancham,
+	PokemonFamilyV0676FamilyFurfrou,
+	PokemonFamilyV0677FamilyEspurr,
+	PokemonFamilyV0679FamilyHonedge,
+	PokemonFamilyV0682FamilySpritzee,
+	PokemonFamilyV0684FamilySwirlix,
+	PokemonFamilyV0686FamilyInkay,
+	PokemonFamilyV0688FamilyBinacle,
+	PokemonFamilyV0690FamilySkrelp,
+	PokemonFamilyV0692FamilyClauncher,
+	PokemonFamilyV0694FamilyHelioptile,
+	PokemonFamilyV0696FamilyTyrunt,
+	PokemonFamilyV0698FamilyAmaura,
+	PokemonFamilyV0701FamilyHawlucha,
+	PokemonFamilyV0702FamilyDedenne,
+	PokemonFamilyV0703FamilyCarbink,
+	PokemonFamilyV0704FamilyGoomy,
+	PokemonFamilyV0707FamilyKlefki,
+	PokemonFamilyV0708FamilyPhantump,
+	PokemonFamilyV0710FamilyPumpkaboo,
+	PokemonFamilyV0712FamilyBergmite,
+	PokemonFamilyV0714FamilyNoibat,
+	PokemonFamilyV0716FamilyXerneas,
+	PokemonFamilyV0717FamilyYveltal,
+	PokemonFamilyV0718FamilyZygarde,
+	PokemonFamilyV0719FamilyDiancie,
+	PokemonFamilyV0720FamilyHoopa,
+	PokemonFamilyV0721FamilyVolcanion,
+	PokemonFamilyV0722FamilyRowlet,
+	PokemonFamilyV0725FamilyLitten,
+	PokemonFamilyV0728FamilyPopplio,
+	PokemonFamilyV0731FamilyPikipek,
+	PokemonFamilyV0734FamilyYungoos,
+	PokemonFamilyV0736FamilyGrubbin,
+	PokemonFamilyV0739FamilyCrabrawler,
+	PokemonFamilyV0741FamilyOricorio,
+	PokemonFamilyV0742FamilyCutiefly,
+	PokemonFamilyV0744FamilyRockruff,
+	PokemonFamilyV0746FamilyWishiwashi,
+	PokemonFamilyV0747FamilyMareanie,
+	PokemonFamilyV0749FamilyMudbray,
+	PokemonFamilyV0751FamilyDewpider,
+	PokemonFamilyV0753FamilyFomantis,
+	PokemonFamilyV0755FamilyMorelull,
+	PokemonFamilyV0757FamilySalandit,
+	PokemonFamilyV0759FamilyStufful,
+	PokemonFamilyV0761FamilyBounsweet,
+	PokemonFamilyV0764FamilyComfey,
+	PokemonFamilyV0765FamilyOranguru,
+	PokemonFamilyV0766FamilyPassimian,
+	PokemonFamilyV0767FamilyWimpod,
+	PokemonFamilyV0769FamilySandygast,
+	PokemonFamilyV0771FamilyPyukumuku,
+	PokemonFamilyV0772FamilyTypeNull,
+	PokemonFamilyV0774FamilyMinior,
+	PokemonFamilyV0775FamilyKomala,
+	PokemonFamilyV0776FamilyTurtonator,
+	PokemonFamilyV0777FamilyTogedemaru,
+	PokemonFamilyV0778FamilyMimikyu,
+	PokemonFamilyV0779FamilyBruxish,
+	PokemonFamilyV0780FamilyDrampa,
+	PokemonFamilyV0781FamilyDhelmise,
+	PokemonFamilyV0782FamilyJangmoO,
+	PokemonFamilyV0785FamilyTapuKoko,
+	PokemonFamilyV0786FamilyTapuLele,
+	PokemonFamilyV0787FamilyTapuBulu,
+	PokemonFamilyV0788FamilyTapuFini,
+	PokemonFamilyV0789FamilyCosmog,
+	PokemonFamilyV0793FamilyNihilego,
+	PokemonFamilyV0794FamilyBuzzwole,
+	PokemonFamilyV0795FamilyPheromosa,
+	PokemonFamilyV0796FamilyXurkitree,
+	PokemonFamilyV0797FamilyCelesteela,
+	PokemonFamilyV0798FamilyKartana,
+	PokemonFamilyV0799FamilyGuzzlord,
+	PokemonFamilyV0800FamilyNecrozma,
+	PokemonFamilyV0801FamilyMagearna,
+	PokemonFamilyV0802FamilyMarshadow,
+	PokemonFamilyV0803FamilyPoipole,
+	PokemonFamilyV0805FamilyStakataka,
+	PokemonFamilyV0806FamilyBlacephalon,
+	PokemonFamilyV0807FamilyZeraora,
+	PokemonFamilyV0808FamilyMeltan,
+	PokemonFamilyV0810FamilyGrookey,
+	PokemonFamilyV0813FamilyScorbunny,
+	PokemonFamilyV0816FamilySobble,
+	PokemonFamilyV0819FamilySkwovet,
+	PokemonFamilyV0821FamilyRookidee,
+	PokemonFamilyV0824FamilyBlipbug,
+	PokemonFamilyV0827FamilyNickit,
+	PokemonFamilyV0829FamilyGossifleur,
+	PokemonFamilyV0831FamilyWooloo,
+	PokemonFamilyV0833FamilyChewtle,
+	PokemonFamilyV0835FamilyYamper,
+	PokemonFamilyV0837FamilyRolycoly,
+	PokemonFamilyV0840FamilyApplin,
+	PokemonFamilyV0843FamilySilicobra,
+	PokemonFamilyV0845FamilyCramorant,
+	PokemonFamilyV0846FamilyArrokuda,
+	PokemonFamilyV0848FamilyToxel,
+	PokemonFamilyV0850FamilySizzlipede,
+	PokemonFamilyV0852FamilyClobbopus,
+	PokemonFamilyV0854FamilySinistea,
+	PokemonFamilyV0856FamilyHatenna,
+	PokemonFamilyV0859FamilyImpidimp,
+	PokemonFamilyV0868FamilyMilcery,
+	PokemonFamilyV0870FamilyFalinks,
+	PokemonFamilyV0871FamilyPincurchin,
+	PokemonFamilyV0872FamilySnom,
+	PokemonFamilyV0874FamilyStonjourner,
+	PokemonFamilyV0875FamilyEiscue,
+	PokemonFamilyV0876FamilyIndeedee,
+	PokemonFamilyV0877FamilyMorpeko,
+	PokemonFamilyV0878FamilyCufant,
+	PokemonFamilyV0880FamilyDracozolt,
+	PokemonFamilyV0881FamilyArctozolt,
+	PokemonFamilyV0882FamilyDracovish,
+	PokemonFamilyV0883FamilyArctovish,
+	PokemonFamilyV0884FamilyDuraludon,
+	PokemonFamilyV0885FamilyDreepy,
+	PokemonFamilyV0888FamilyZacian,
+	PokemonFamilyV0889FamilyZamazenta,
+	PokemonFamilyV0890FamilyEternatus,
+	PokemonFamilyV0891FamilyKubfu,
+	PokemonFamilyV0893FamilyZarude,
+	PokemonFamilyV0894FamilyRegieleki,
+	PokemonFamilyV0895FamilyRegidrago,
+	PokemonFamilyV0896FamilyGlastrier,
+	PokemonFamilyV0897FamilySpectrier,
+	PokemonFamilyV0898FamilyCalyrex,
+	PokemonFamilyV0905FamilyEnamorus,
+	PokemonFamilyV0906FamilySprigatito,
+	PokemonFamilyV0909FamilyFuecoco,
+	PokemonFamilyV0912FamilyQuaxly,
+	PokemonFamilyV0915FamilyLechonk,
+	PokemonFamilyV0917FamilyTarountula,
+	PokemonFamilyV0919FamilyNymble,
+	PokemonFamilyV0921FamilyPawmi,
+	PokemonFamilyV0924FamilyTandemaus,
+	PokemonFamilyV0926FamilyFidough,
+	PokemonFamilyV0928FamilySmoliv,
+	PokemonFamilyV0931FamilySquawkabilly,
+	PokemonFamilyV0932FamilyNacli,
+	PokemonFamilyV0935FamilyCharcadet,
+	PokemonFamilyV0938FamilyTadbulb,
+	PokemonFamilyV0940FamilyWattrel,
+	PokemonFamilyV0942FamilyMaschiff,
+	PokemonFamilyV0944FamilyShroodle,
+	PokemonFamilyV0946FamilyBramblin,
+	PokemonFamilyV0948FamilyToedscool,
+	PokemonFamilyV0950FamilyKlawf,
+	PokemonFamilyV0951FamilyCapsakid,
+	PokemonFamilyV0953FamilyRellor,
+	PokemonFamilyV0955FamilyFlittle,
+	PokemonFamilyV0957FamilyTinkatink,
+	PokemonFamilyV0960FamilyWiglett,
+	PokemonFamilyV0962FamilyBombirdier,
+	PokemonFamilyV0963FamilyFinizen,
+	PokemonFamilyV0965FamilyVaroom,
+	PokemonFamilyV0967FamilyCyclizar,
+	PokemonFamilyV0968FamilyOrthworm,
+	PokemonFamilyV0969FamilyGlimmet,
+	PokemonFamilyV0971FamilyGreavard,
+	PokemonFamilyV0973FamilyFlamigo,
+	PokemonFamilyV0974FamilyCetoddle,
+	PokemonFamilyV0976FamilyVeluza,
+	PokemonFamilyV0977FamilyDondozo,
+	PokemonFamilyV0978FamilyTatsugiri,
+	PokemonFamilyV0984FamilyGreattusk,
+	PokemonFamilyV0985FamilyScreamtail,
+	PokemonFamilyV0986FamilyBrutebonnet,
+	PokemonFamilyV0987FamilyFluttermane,
+	PokemonFamilyV0988FamilySlitherwing,
+	PokemonFamilyV0989FamilySandyshocks,
+	PokemonFamilyV0990FamilyIrontreads,
+	PokemonFamilyV0991FamilyIronbundle,
+	PokemonFamilyV0992FamilyIronhands,
+	PokemonFamilyV0993FamilyIronjugulis,
+	PokemonFamilyV0994FamilyIronmoth,
+	PokemonFamilyV0995FamilyIronthorns,
+	PokemonFamilyV0996FamilyFrigibax,
+	PokemonFamilyV0999FamilyGimmighoul,
+	PokemonFamilyV1001FamilyWochien,
+	PokemonFamilyV1002FamilyChienpao,
+	PokemonFamilyV1003FamilyTinglu,
+	PokemonFamilyV1004FamilyChiyu,
+	PokemonFamilyV1005FamilyRoaringmoon,
+	PokemonFamilyV1006FamilyIronvaliant,
+	PokemonFamilyV1007FamilyKoraidon,
+	PokemonFamilyV1008FamilyMiraidon,
+	PokemonFamilyV1009FamilyWalkingwake,
+	PokemonFamilyV1010FamilyIronleaves,
+	PokemonFamilyV1012FamilyPoltchageist,
+	PokemonFamilyV1014FamilyOkidogi,
+	PokemonFamilyV1015FamilyMunkidori,
+	PokemonFamilyV1016FamilyFezandipiti,
+	PokemonFamilyV1017FamilyOgerpon,
+	PokemonFamilyV1020FamilyGougingfire,
+	PokemonFamilyV1021FamilyRagingbolt,
+	PokemonFamilyV1022FamilyIronboulder,
+	PokemonFamilyV1023FamilyIroncrown,
+	PokemonFamilyV1024FamilyTerapagos,
+	PokemonFamilyV1025FamilyPecharunt,
+} from "pogo-masterfile-types/entries";
+
+export interface PokemonFamilyLookup {
+	V0001_FAMILY_BULBASAUR: PokemonFamilyV0001FamilyBulbasaur;
+	V0004_FAMILY_CHARMANDER: PokemonFamilyV0004FamilyCharmander;
+	V0007_FAMILY_SQUIRTLE: PokemonFamilyV0007FamilySquirtle;
+	V0010_FAMILY_CATERPIE: PokemonFamilyV0010FamilyCaterpie;
+	V0013_FAMILY_WEEDLE: PokemonFamilyV0013FamilyWeedle;
+	V0016_FAMILY_PIDGEY: PokemonFamilyV0016FamilyPidgey;
+	V0019_FAMILY_RATTATA: PokemonFamilyV0019FamilyRattata;
+	V0021_FAMILY_SPEAROW: PokemonFamilyV0021FamilySpearow;
+	V0023_FAMILY_EKANS: PokemonFamilyV0023FamilyEkans;
+	V0025_FAMILY_PIKACHU: PokemonFamilyV0025FamilyPikachu;
+	V0027_FAMILY_SANDSHREW: PokemonFamilyV0027FamilySandshrew;
+	V0029_FAMILY_NIDORAN: PokemonFamilyV0029FamilyNidoran;
+	V0032_FAMILY_NIDORAN: PokemonFamilyV0032FamilyNidoran;
+	V0035_FAMILY_CLEFAIRY: PokemonFamilyV0035FamilyClefairy;
+	V0037_FAMILY_VULPIX: PokemonFamilyV0037FamilyVulpix;
+	V0039_FAMILY_JIGGLYPUFF: PokemonFamilyV0039FamilyJigglypuff;
+	V0041_FAMILY_ZUBAT: PokemonFamilyV0041FamilyZubat;
+	V0043_FAMILY_ODDISH: PokemonFamilyV0043FamilyOddish;
+	V0046_FAMILY_PARAS: PokemonFamilyV0046FamilyParas;
+	V0048_FAMILY_VENONAT: PokemonFamilyV0048FamilyVenonat;
+	V0050_FAMILY_DIGLETT: PokemonFamilyV0050FamilyDiglett;
+	V0052_FAMILY_MEOWTH: PokemonFamilyV0052FamilyMeowth;
+	V0054_FAMILY_PSYDUCK: PokemonFamilyV0054FamilyPsyduck;
+	V0056_FAMILY_MANKEY: PokemonFamilyV0056FamilyMankey;
+	V0058_FAMILY_GROWLITHE: PokemonFamilyV0058FamilyGrowlithe;
+	V0060_FAMILY_POLIWAG: PokemonFamilyV0060FamilyPoliwag;
+	V0063_FAMILY_ABRA: PokemonFamilyV0063FamilyAbra;
+	V0066_FAMILY_MACHOP: PokemonFamilyV0066FamilyMachop;
+	V0069_FAMILY_BELLSPROUT: PokemonFamilyV0069FamilyBellsprout;
+	V0072_FAMILY_TENTACOOL: PokemonFamilyV0072FamilyTentacool;
+	V0074_FAMILY_GEODUDE: PokemonFamilyV0074FamilyGeodude;
+	V0077_FAMILY_PONYTA: PokemonFamilyV0077FamilyPonyta;
+	V0079_FAMILY_SLOWPOKE: PokemonFamilyV0079FamilySlowpoke;
+	V0081_FAMILY_MAGNEMITE: PokemonFamilyV0081FamilyMagnemite;
+	V0083_FAMILY_FARFETCHD: PokemonFamilyV0083FamilyFarfetchd;
+	V0084_FAMILY_DODUO: PokemonFamilyV0084FamilyDoduo;
+	V0086_FAMILY_SEEL: PokemonFamilyV0086FamilySeel;
+	V0088_FAMILY_GRIMER: PokemonFamilyV0088FamilyGrimer;
+	V0090_FAMILY_SHELLDER: PokemonFamilyV0090FamilyShellder;
+	V0092_FAMILY_GASTLY: PokemonFamilyV0092FamilyGastly;
+	V0095_FAMILY_ONIX: PokemonFamilyV0095FamilyOnix;
+	V0096_FAMILY_DROWZEE: PokemonFamilyV0096FamilyDrowzee;
+	V0098_FAMILY_KRABBY: PokemonFamilyV0098FamilyKrabby;
+	V0100_FAMILY_VOLTORB: PokemonFamilyV0100FamilyVoltorb;
+	V0102_FAMILY_EXEGGCUTE: PokemonFamilyV0102FamilyExeggcute;
+	V0104_FAMILY_CUBONE: PokemonFamilyV0104FamilyCubone;
+	V0108_FAMILY_LICKITUNG: PokemonFamilyV0108FamilyLickitung;
+	V0109_FAMILY_KOFFING: PokemonFamilyV0109FamilyKoffing;
+	V0111_FAMILY_RHYHORN: PokemonFamilyV0111FamilyRhyhorn;
+	V0113_FAMILY_CHANSEY: PokemonFamilyV0113FamilyChansey;
+	V0114_FAMILY_TANGELA: PokemonFamilyV0114FamilyTangela;
+	V0115_FAMILY_KANGASKHAN: PokemonFamilyV0115FamilyKangaskhan;
+	V0116_FAMILY_HORSEA: PokemonFamilyV0116FamilyHorsea;
+	V0118_FAMILY_GOLDEEN: PokemonFamilyV0118FamilyGoldeen;
+	V0120_FAMILY_STARYU: PokemonFamilyV0120FamilyStaryu;
+	V0122_FAMILY_MR_MIME: PokemonFamilyV0122FamilyMrMime;
+	V0123_FAMILY_SCYTHER: PokemonFamilyV0123FamilyScyther;
+	V0124_FAMILY_JYNX: PokemonFamilyV0124FamilyJynx;
+	V0125_FAMILY_ELECTABUZZ: PokemonFamilyV0125FamilyElectabuzz;
+	V0126_FAMILY_MAGMAR: PokemonFamilyV0126FamilyMagmar;
+	V0127_FAMILY_PINSIR: PokemonFamilyV0127FamilyPinsir;
+	V0128_FAMILY_TAUROS: PokemonFamilyV0128FamilyTauros;
+	V0129_FAMILY_MAGIKARP: PokemonFamilyV0129FamilyMagikarp;
+	V0131_FAMILY_LAPRAS: PokemonFamilyV0131FamilyLapras;
+	V0132_FAMILY_DITTO: PokemonFamilyV0132FamilyDitto;
+	V0133_FAMILY_EEVEE: PokemonFamilyV0133FamilyEevee;
+	V0137_FAMILY_PORYGON: PokemonFamilyV0137FamilyPorygon;
+	V0138_FAMILY_OMANYTE: PokemonFamilyV0138FamilyOmanyte;
+	V0140_FAMILY_KABUTO: PokemonFamilyV0140FamilyKabuto;
+	V0142_FAMILY_AERODACTYL: PokemonFamilyV0142FamilyAerodactyl;
+	V0143_FAMILY_SNORLAX: PokemonFamilyV0143FamilySnorlax;
+	V0144_FAMILY_ARTICUNO: PokemonFamilyV0144FamilyArticuno;
+	V0145_FAMILY_ZAPDOS: PokemonFamilyV0145FamilyZapdos;
+	V0146_FAMILY_MOLTRES: PokemonFamilyV0146FamilyMoltres;
+	V0147_FAMILY_DRATINI: PokemonFamilyV0147FamilyDratini;
+	V0150_FAMILY_MEWTWO: PokemonFamilyV0150FamilyMewtwo;
+	V0151_FAMILY_MEW: PokemonFamilyV0151FamilyMew;
+	V0152_FAMILY_CHIKORITA: PokemonFamilyV0152FamilyChikorita;
+	V0155_FAMILY_CYNDAQUIL: PokemonFamilyV0155FamilyCyndaquil;
+	V0158_FAMILY_TOTODILE: PokemonFamilyV0158FamilyTotodile;
+	V0161_FAMILY_SENTRET: PokemonFamilyV0161FamilySentret;
+	V0163_FAMILY_HOOTHOOT: PokemonFamilyV0163FamilyHoothoot;
+	V0165_FAMILY_LEDYBA: PokemonFamilyV0165FamilyLedyba;
+	V0167_FAMILY_SPINARAK: PokemonFamilyV0167FamilySpinarak;
+	V0170_FAMILY_CHINCHOU: PokemonFamilyV0170FamilyChinchou;
+	V0175_FAMILY_TOGEPI: PokemonFamilyV0175FamilyTogepi;
+	V0177_FAMILY_NATU: PokemonFamilyV0177FamilyNatu;
+	V0179_FAMILY_MAREEP: PokemonFamilyV0179FamilyMareep;
+	V0183_FAMILY_MARILL: PokemonFamilyV0183FamilyMarill;
+	V0185_FAMILY_SUDOWOODO: PokemonFamilyV0185FamilySudowoodo;
+	V0187_FAMILY_HOPPIP: PokemonFamilyV0187FamilyHoppip;
+	V0190_FAMILY_AIPOM: PokemonFamilyV0190FamilyAipom;
+	V0191_FAMILY_SUNKERN: PokemonFamilyV0191FamilySunkern;
+	V0193_FAMILY_YANMA: PokemonFamilyV0193FamilyYanma;
+	V0194_FAMILY_WOOPER: PokemonFamilyV0194FamilyWooper;
+	V0198_FAMILY_MURKROW: PokemonFamilyV0198FamilyMurkrow;
+	V0200_FAMILY_MISDREAVUS: PokemonFamilyV0200FamilyMisdreavus;
+	V0201_FAMILY_UNOWN: PokemonFamilyV0201FamilyUnown;
+	V0202_FAMILY_WOBBUFFET: PokemonFamilyV0202FamilyWobbuffet;
+	V0203_FAMILY_GIRAFARIG: PokemonFamilyV0203FamilyGirafarig;
+	V0204_FAMILY_PINECO: PokemonFamilyV0204FamilyPineco;
+	V0206_FAMILY_DUNSPARCE: PokemonFamilyV0206FamilyDunsparce;
+	V0207_FAMILY_GLIGAR: PokemonFamilyV0207FamilyGligar;
+	V0209_FAMILY_SNUBBULL: PokemonFamilyV0209FamilySnubbull;
+	V0211_FAMILY_QWILFISH: PokemonFamilyV0211FamilyQwilfish;
+	V0213_FAMILY_SHUCKLE: PokemonFamilyV0213FamilyShuckle;
+	V0214_FAMILY_HERACROSS: PokemonFamilyV0214FamilyHeracross;
+	V0215_FAMILY_SNEASEL: PokemonFamilyV0215FamilySneasel;
+	V0216_FAMILY_TEDDIURSA: PokemonFamilyV0216FamilyTeddiursa;
+	V0218_FAMILY_SLUGMA: PokemonFamilyV0218FamilySlugma;
+	V0220_FAMILY_SWINUB: PokemonFamilyV0220FamilySwinub;
+	V0222_FAMILY_CORSOLA: PokemonFamilyV0222FamilyCorsola;
+	V0223_FAMILY_REMORAID: PokemonFamilyV0223FamilyRemoraid;
+	V0225_FAMILY_DELIBIRD: PokemonFamilyV0225FamilyDelibird;
+	V0226_FAMILY_MANTINE: PokemonFamilyV0226FamilyMantine;
+	V0227_FAMILY_SKARMORY: PokemonFamilyV0227FamilySkarmory;
+	V0228_FAMILY_HOUNDOUR: PokemonFamilyV0228FamilyHoundour;
+	V0231_FAMILY_PHANPY: PokemonFamilyV0231FamilyPhanpy;
+	V0234_FAMILY_STANTLER: PokemonFamilyV0234FamilyStantler;
+	V0235_FAMILY_SMEARGLE: PokemonFamilyV0235FamilySmeargle;
+	V0236_FAMILY_TYROGUE: PokemonFamilyV0236FamilyTyrogue;
+	V0241_FAMILY_MILTANK: PokemonFamilyV0241FamilyMiltank;
+	V0243_FAMILY_RAIKOU: PokemonFamilyV0243FamilyRaikou;
+	V0244_FAMILY_ENTEI: PokemonFamilyV0244FamilyEntei;
+	V0245_FAMILY_SUICUNE: PokemonFamilyV0245FamilySuicune;
+	V0246_FAMILY_LARVITAR: PokemonFamilyV0246FamilyLarvitar;
+	V0249_FAMILY_LUGIA: PokemonFamilyV0249FamilyLugia;
+	V0250_FAMILY_HO_OH: PokemonFamilyV0250FamilyHoOh;
+	V0251_FAMILY_CELEBI: PokemonFamilyV0251FamilyCelebi;
+	V0252_FAMILY_TREECKO: PokemonFamilyV0252FamilyTreecko;
+	V0255_FAMILY_TORCHIC: PokemonFamilyV0255FamilyTorchic;
+	V0258_FAMILY_MUDKIP: PokemonFamilyV0258FamilyMudkip;
+	V0261_FAMILY_POOCHYENA: PokemonFamilyV0261FamilyPoochyena;
+	V0263_FAMILY_ZIGZAGOON: PokemonFamilyV0263FamilyZigzagoon;
+	V0265_FAMILY_WURMPLE: PokemonFamilyV0265FamilyWurmple;
+	V0270_FAMILY_LOTAD: PokemonFamilyV0270FamilyLotad;
+	V0273_FAMILY_SEEDOT: PokemonFamilyV0273FamilySeedot;
+	V0276_FAMILY_TAILLOW: PokemonFamilyV0276FamilyTaillow;
+	V0278_FAMILY_WINGULL: PokemonFamilyV0278FamilyWingull;
+	V0280_FAMILY_RALTS: PokemonFamilyV0280FamilyRalts;
+	V0283_FAMILY_SURSKIT: PokemonFamilyV0283FamilySurskit;
+	V0285_FAMILY_SHROOMISH: PokemonFamilyV0285FamilyShroomish;
+	V0287_FAMILY_SLAKOTH: PokemonFamilyV0287FamilySlakoth;
+	V0290_FAMILY_NINCADA: PokemonFamilyV0290FamilyNincada;
+	V0293_FAMILY_WHISMUR: PokemonFamilyV0293FamilyWhismur;
+	V0296_FAMILY_MAKUHITA: PokemonFamilyV0296FamilyMakuhita;
+	V0299_FAMILY_NOSEPASS: PokemonFamilyV0299FamilyNosepass;
+	V0300_FAMILY_SKITTY: PokemonFamilyV0300FamilySkitty;
+	V0302_FAMILY_SABLEYE: PokemonFamilyV0302FamilySableye;
+	V0303_FAMILY_MAWILE: PokemonFamilyV0303FamilyMawile;
+	V0304_FAMILY_ARON: PokemonFamilyV0304FamilyAron;
+	V0307_FAMILY_MEDITITE: PokemonFamilyV0307FamilyMeditite;
+	V0309_FAMILY_ELECTRIKE: PokemonFamilyV0309FamilyElectrike;
+	V0311_FAMILY_PLUSLE: PokemonFamilyV0311FamilyPlusle;
+	V0312_FAMILY_MINUN: PokemonFamilyV0312FamilyMinun;
+	V0313_FAMILY_VOLBEAT: PokemonFamilyV0313FamilyVolbeat;
+	V0314_FAMILY_ILLUMISE: PokemonFamilyV0314FamilyIllumise;
+	V0315_FAMILY_ROSELIA: PokemonFamilyV0315FamilyRoselia;
+	V0316_FAMILY_GULPIN: PokemonFamilyV0316FamilyGulpin;
+	V0318_FAMILY_CARVANHA: PokemonFamilyV0318FamilyCarvanha;
+	V0320_FAMILY_WAILMER: PokemonFamilyV0320FamilyWailmer;
+	V0322_FAMILY_NUMEL: PokemonFamilyV0322FamilyNumel;
+	V0324_FAMILY_TORKOAL: PokemonFamilyV0324FamilyTorkoal;
+	V0325_FAMILY_SPOINK: PokemonFamilyV0325FamilySpoink;
+	V0327_FAMILY_SPINDA: PokemonFamilyV0327FamilySpinda;
+	V0328_FAMILY_TRAPINCH: PokemonFamilyV0328FamilyTrapinch;
+	V0331_FAMILY_CACNEA: PokemonFamilyV0331FamilyCacnea;
+	V0333_FAMILY_SWABLU: PokemonFamilyV0333FamilySwablu;
+	V0335_FAMILY_ZANGOOSE: PokemonFamilyV0335FamilyZangoose;
+	V0336_FAMILY_SEVIPER: PokemonFamilyV0336FamilySeviper;
+	V0337_FAMILY_LUNATONE: PokemonFamilyV0337FamilyLunatone;
+	V0338_FAMILY_SOLROCK: PokemonFamilyV0338FamilySolrock;
+	V0339_FAMILY_BARBOACH: PokemonFamilyV0339FamilyBarboach;
+	V0341_FAMILY_CORPHISH: PokemonFamilyV0341FamilyCorphish;
+	V0343_FAMILY_BALTOY: PokemonFamilyV0343FamilyBaltoy;
+	V0345_FAMILY_LILEEP: PokemonFamilyV0345FamilyLileep;
+	V0347_FAMILY_ANORITH: PokemonFamilyV0347FamilyAnorith;
+	V0349_FAMILY_FEEBAS: PokemonFamilyV0349FamilyFeebas;
+	V0351_FAMILY_CASTFORM: PokemonFamilyV0351FamilyCastform;
+	V0352_FAMILY_KECLEON: PokemonFamilyV0352FamilyKecleon;
+	V0353_FAMILY_SHUPPET: PokemonFamilyV0353FamilyShuppet;
+	V0355_FAMILY_DUSKULL: PokemonFamilyV0355FamilyDuskull;
+	V0357_FAMILY_TROPIUS: PokemonFamilyV0357FamilyTropius;
+	V0358_FAMILY_CHIMECHO: PokemonFamilyV0358FamilyChimecho;
+	V0359_FAMILY_ABSOL: PokemonFamilyV0359FamilyAbsol;
+	V0361_FAMILY_SNORUNT: PokemonFamilyV0361FamilySnorunt;
+	V0363_FAMILY_SPHEAL: PokemonFamilyV0363FamilySpheal;
+	V0366_FAMILY_CLAMPERL: PokemonFamilyV0366FamilyClamperl;
+	V0369_FAMILY_RELICANTH: PokemonFamilyV0369FamilyRelicanth;
+	V0370_FAMILY_LUVDISC: PokemonFamilyV0370FamilyLuvdisc;
+	V0371_FAMILY_BAGON: PokemonFamilyV0371FamilyBagon;
+	V0374_FAMILY_BELDUM: PokemonFamilyV0374FamilyBeldum;
+	V0377_FAMILY_REGIROCK: PokemonFamilyV0377FamilyRegirock;
+	V0378_FAMILY_REGICE: PokemonFamilyV0378FamilyRegice;
+	V0379_FAMILY_REGISTEEL: PokemonFamilyV0379FamilyRegisteel;
+	V0380_FAMILY_LATIAS: PokemonFamilyV0380FamilyLatias;
+	V0381_FAMILY_LATIOS: PokemonFamilyV0381FamilyLatios;
+	V0382_FAMILY_KYOGRE: PokemonFamilyV0382FamilyKyogre;
+	V0383_FAMILY_GROUDON: PokemonFamilyV0383FamilyGroudon;
+	V0384_FAMILY_RAYQUAZA: PokemonFamilyV0384FamilyRayquaza;
+	V0385_FAMILY_JIRACHI: PokemonFamilyV0385FamilyJirachi;
+	V0386_FAMILY_DEOXYS: PokemonFamilyV0386FamilyDeoxys;
+	V0387_FAMILY_TURTWIG: PokemonFamilyV0387FamilyTurtwig;
+	V0390_FAMILY_CHIMCHAR: PokemonFamilyV0390FamilyChimchar;
+	V0393_FAMILY_PIPLUP: PokemonFamilyV0393FamilyPiplup;
+	V0396_FAMILY_STARLY: PokemonFamilyV0396FamilyStarly;
+	V0399_FAMILY_BIDOOF: PokemonFamilyV0399FamilyBidoof;
+	V0401_FAMILY_KRICKETOT: PokemonFamilyV0401FamilyKricketot;
+	V0403_FAMILY_SHINX: PokemonFamilyV0403FamilyShinx;
+	V0408_FAMILY_CRANIDOS: PokemonFamilyV0408FamilyCranidos;
+	V0410_FAMILY_SHIELDON: PokemonFamilyV0410FamilyShieldon;
+	V0412_FAMILY_BURMY: PokemonFamilyV0412FamilyBurmy;
+	V0415_FAMILY_COMBEE: PokemonFamilyV0415FamilyCombee;
+	V0417_FAMILY_PACHIRISU: PokemonFamilyV0417FamilyPachirisu;
+	V0418_FAMILY_BUIZEL: PokemonFamilyV0418FamilyBuizel;
+	V0420_FAMILY_CHERUBI: PokemonFamilyV0420FamilyCherubi;
+	V0422_FAMILY_SHELLOS: PokemonFamilyV0422FamilyShellos;
+	V0425_FAMILY_DRIFLOON: PokemonFamilyV0425FamilyDrifloon;
+	V0427_FAMILY_BUNEARY: PokemonFamilyV0427FamilyBuneary;
+	V0431_FAMILY_GLAMEOW: PokemonFamilyV0431FamilyGlameow;
+	V0434_FAMILY_STUNKY: PokemonFamilyV0434FamilyStunky;
+	V0436_FAMILY_BRONZOR: PokemonFamilyV0436FamilyBronzor;
+	V0441_FAMILY_CHATOT: PokemonFamilyV0441FamilyChatot;
+	V0442_FAMILY_SPIRITOMB: PokemonFamilyV0442FamilySpiritomb;
+	V0443_FAMILY_GIBLE: PokemonFamilyV0443FamilyGible;
+	V0448_FAMILY_LUCARIO: PokemonFamilyV0448FamilyLucario;
+	V0449_FAMILY_HIPPOPOTAS: PokemonFamilyV0449FamilyHippopotas;
+	V0451_FAMILY_SKORUPI: PokemonFamilyV0451FamilySkorupi;
+	V0453_FAMILY_CROAGUNK: PokemonFamilyV0453FamilyCroagunk;
+	V0455_FAMILY_CARNIVINE: PokemonFamilyV0455FamilyCarnivine;
+	V0456_FAMILY_FINNEON: PokemonFamilyV0456FamilyFinneon;
+	V0459_FAMILY_SNOVER: PokemonFamilyV0459FamilySnover;
+	V0479_FAMILY_ROTOM: PokemonFamilyV0479FamilyRotom;
+	V0480_FAMILY_UXIE: PokemonFamilyV0480FamilyUxie;
+	V0481_FAMILY_MESPRIT: PokemonFamilyV0481FamilyMesprit;
+	V0482_FAMILY_AZELF: PokemonFamilyV0482FamilyAzelf;
+	V0483_FAMILY_DIALGA: PokemonFamilyV0483FamilyDialga;
+	V0484_FAMILY_PALKIA: PokemonFamilyV0484FamilyPalkia;
+	V0485_FAMILY_HEATRAN: PokemonFamilyV0485FamilyHeatran;
+	V0486_FAMILY_REGIGIGAS: PokemonFamilyV0486FamilyRegigigas;
+	V0487_FAMILY_GIRATINA: PokemonFamilyV0487FamilyGiratina;
+	V0488_FAMILY_CRESSELIA: PokemonFamilyV0488FamilyCresselia;
+	V0489_FAMILY_PHIONE: PokemonFamilyV0489FamilyPhione;
+	V0490_FAMILY_MANAPHY: PokemonFamilyV0490FamilyManaphy;
+	V0491_FAMILY_DARKRAI: PokemonFamilyV0491FamilyDarkrai;
+	V0492_FAMILY_SHAYMIN: PokemonFamilyV0492FamilyShaymin;
+	V0493_FAMILY_ARCEUS: PokemonFamilyV0493FamilyArceus;
+	V0494_FAMILY_VICTINI: PokemonFamilyV0494FamilyVictini;
+	V0495_FAMILY_SNIVY: PokemonFamilyV0495FamilySnivy;
+	V0498_FAMILY_TEPIG: PokemonFamilyV0498FamilyTepig;
+	V0501_FAMILY_OSHAWOTT: PokemonFamilyV0501FamilyOshawott;
+	V0504_FAMILY_PATRAT: PokemonFamilyV0504FamilyPatrat;
+	V0506_FAMILY_LILLIPUP: PokemonFamilyV0506FamilyLillipup;
+	V0509_FAMILY_PURRLOIN: PokemonFamilyV0509FamilyPurrloin;
+	V0511_FAMILY_PANSAGE: PokemonFamilyV0511FamilyPansage;
+	V0513_FAMILY_PANSEAR: PokemonFamilyV0513FamilyPansear;
+	V0515_FAMILY_PANPOUR: PokemonFamilyV0515FamilyPanpour;
+	V0517_FAMILY_MUNNA: PokemonFamilyV0517FamilyMunna;
+	V0519_FAMILY_PIDOVE: PokemonFamilyV0519FamilyPidove;
+	V0522_FAMILY_BLITZLE: PokemonFamilyV0522FamilyBlitzle;
+	V0524_FAMILY_ROGGENROLA: PokemonFamilyV0524FamilyRoggenrola;
+	V0527_FAMILY_WOOBAT: PokemonFamilyV0527FamilyWoobat;
+	V0529_FAMILY_DRILBUR: PokemonFamilyV0529FamilyDrilbur;
+	V0531_FAMILY_AUDINO: PokemonFamilyV0531FamilyAudino;
+	V0532_FAMILY_TIMBURR: PokemonFamilyV0532FamilyTimburr;
+	V0535_FAMILY_TYMPOLE: PokemonFamilyV0535FamilyTympole;
+	V0538_FAMILY_THROH: PokemonFamilyV0538FamilyThroh;
+	V0539_FAMILY_SAWK: PokemonFamilyV0539FamilySawk;
+	V0540_FAMILY_SEWADDLE: PokemonFamilyV0540FamilySewaddle;
+	V0543_FAMILY_VENIPEDE: PokemonFamilyV0543FamilyVenipede;
+	V0546_FAMILY_COTTONEE: PokemonFamilyV0546FamilyCottonee;
+	V0548_FAMILY_PETILIL: PokemonFamilyV0548FamilyPetilil;
+	V0550_FAMILY_BASCULIN: PokemonFamilyV0550FamilyBasculin;
+	V0551_FAMILY_SANDILE: PokemonFamilyV0551FamilySandile;
+	V0554_FAMILY_DARUMAKA: PokemonFamilyV0554FamilyDarumaka;
+	V0556_FAMILY_MARACTUS: PokemonFamilyV0556FamilyMaractus;
+	V0557_FAMILY_DWEBBLE: PokemonFamilyV0557FamilyDwebble;
+	V0559_FAMILY_SCRAGGY: PokemonFamilyV0559FamilyScraggy;
+	V0561_FAMILY_SIGILYPH: PokemonFamilyV0561FamilySigilyph;
+	V0562_FAMILY_YAMASK: PokemonFamilyV0562FamilyYamask;
+	V0564_FAMILY_TIRTOUGA: PokemonFamilyV0564FamilyTirtouga;
+	V0566_FAMILY_ARCHEN: PokemonFamilyV0566FamilyArchen;
+	V0568_FAMILY_TRUBBISH: PokemonFamilyV0568FamilyTrubbish;
+	V0570_FAMILY_ZORUA: PokemonFamilyV0570FamilyZorua;
+	V0572_FAMILY_MINCCINO: PokemonFamilyV0572FamilyMinccino;
+	V0574_FAMILY_GOTHITA: PokemonFamilyV0574FamilyGothita;
+	V0577_FAMILY_SOLOSIS: PokemonFamilyV0577FamilySolosis;
+	V0580_FAMILY_DUCKLETT: PokemonFamilyV0580FamilyDucklett;
+	V0582_FAMILY_VANILLITE: PokemonFamilyV0582FamilyVanillite;
+	V0585_FAMILY_DEERLING: PokemonFamilyV0585FamilyDeerling;
+	V0587_FAMILY_EMOLGA: PokemonFamilyV0587FamilyEmolga;
+	V0588_FAMILY_KARRABLAST: PokemonFamilyV0588FamilyKarrablast;
+	V0590_FAMILY_FOONGUS: PokemonFamilyV0590FamilyFoongus;
+	V0592_FAMILY_FRILLISH: PokemonFamilyV0592FamilyFrillish;
+	V0594_FAMILY_ALOMOMOLA: PokemonFamilyV0594FamilyAlomomola;
+	V0595_FAMILY_JOLTIK: PokemonFamilyV0595FamilyJoltik;
+	V0597_FAMILY_FERROSEED: PokemonFamilyV0597FamilyFerroseed;
+	V0599_FAMILY_KLINK: PokemonFamilyV0599FamilyKlink;
+	V0602_FAMILY_TYNAMO: PokemonFamilyV0602FamilyTynamo;
+	V0605_FAMILY_ELGYEM: PokemonFamilyV0605FamilyElgyem;
+	V0607_FAMILY_LITWICK: PokemonFamilyV0607FamilyLitwick;
+	V0610_FAMILY_AXEW: PokemonFamilyV0610FamilyAxew;
+	V0613_FAMILY_CUBCHOO: PokemonFamilyV0613FamilyCubchoo;
+	V0615_FAMILY_CRYOGONAL: PokemonFamilyV0615FamilyCryogonal;
+	V0616_FAMILY_SHELMET: PokemonFamilyV0616FamilyShelmet;
+	V0618_FAMILY_STUNFISK: PokemonFamilyV0618FamilyStunfisk;
+	V0619_FAMILY_MIENFOO: PokemonFamilyV0619FamilyMienfoo;
+	V0621_FAMILY_DRUDDIGON: PokemonFamilyV0621FamilyDruddigon;
+	V0622_FAMILY_GOLETT: PokemonFamilyV0622FamilyGolett;
+	V0624_FAMILY_PAWNIARD: PokemonFamilyV0624FamilyPawniard;
+	V0626_FAMILY_BOUFFALANT: PokemonFamilyV0626FamilyBouffalant;
+	V0627_FAMILY_RUFFLET: PokemonFamilyV0627FamilyRufflet;
+	V0629_FAMILY_VULLABY: PokemonFamilyV0629FamilyVullaby;
+	V0631_FAMILY_HEATMOR: PokemonFamilyV0631FamilyHeatmor;
+	V0632_FAMILY_DURANT: PokemonFamilyV0632FamilyDurant;
+	V0633_FAMILY_DEINO: PokemonFamilyV0633FamilyDeino;
+	V0636_FAMILY_LARVESTA: PokemonFamilyV0636FamilyLarvesta;
+	V0638_FAMILY_COBALION: PokemonFamilyV0638FamilyCobalion;
+	V0639_FAMILY_TERRAKION: PokemonFamilyV0639FamilyTerrakion;
+	V0640_FAMILY_VIRIZION: PokemonFamilyV0640FamilyVirizion;
+	V0641_FAMILY_TORNADUS: PokemonFamilyV0641FamilyTornadus;
+	V0642_FAMILY_THUNDURUS: PokemonFamilyV0642FamilyThundurus;
+	V0643_FAMILY_RESHIRAM: PokemonFamilyV0643FamilyReshiram;
+	V0644_FAMILY_ZEKROM: PokemonFamilyV0644FamilyZekrom;
+	V0645_FAMILY_LANDORUS: PokemonFamilyV0645FamilyLandorus;
+	V0646_FAMILY_KYUREM: PokemonFamilyV0646FamilyKyurem;
+	V0647_FAMILY_KELDEO: PokemonFamilyV0647FamilyKeldeo;
+	V0648_FAMILY_MELOETTA: PokemonFamilyV0648FamilyMeloetta;
+	V0649_FAMILY_GENESECT: PokemonFamilyV0649FamilyGenesect;
+	V0650_FAMILY_CHESPIN: PokemonFamilyV0650FamilyChespin;
+	V0653_FAMILY_FENNEKIN: PokemonFamilyV0653FamilyFennekin;
+	V0656_FAMILY_FROAKIE: PokemonFamilyV0656FamilyFroakie;
+	V0659_FAMILY_BUNNELBY: PokemonFamilyV0659FamilyBunnelby;
+	V0661_FAMILY_FLETCHLING: PokemonFamilyV0661FamilyFletchling;
+	V0664_FAMILY_SCATTERBUG: PokemonFamilyV0664FamilyScatterbug;
+	V0667_FAMILY_LITLEO: PokemonFamilyV0667FamilyLitleo;
+	V0669_FAMILY_FLABEBE: PokemonFamilyV0669FamilyFlabebe;
+	V0672_FAMILY_SKIDDO: PokemonFamilyV0672FamilySkiddo;
+	V0674_FAMILY_PANCHAM: PokemonFamilyV0674FamilyPancham;
+	V0676_FAMILY_FURFROU: PokemonFamilyV0676FamilyFurfrou;
+	V0677_FAMILY_ESPURR: PokemonFamilyV0677FamilyEspurr;
+	V0679_FAMILY_HONEDGE: PokemonFamilyV0679FamilyHonedge;
+	V0682_FAMILY_SPRITZEE: PokemonFamilyV0682FamilySpritzee;
+	V0684_FAMILY_SWIRLIX: PokemonFamilyV0684FamilySwirlix;
+	V0686_FAMILY_INKAY: PokemonFamilyV0686FamilyInkay;
+	V0688_FAMILY_BINACLE: PokemonFamilyV0688FamilyBinacle;
+	V0690_FAMILY_SKRELP: PokemonFamilyV0690FamilySkrelp;
+	V0692_FAMILY_CLAUNCHER: PokemonFamilyV0692FamilyClauncher;
+	V0694_FAMILY_HELIOPTILE: PokemonFamilyV0694FamilyHelioptile;
+	V0696_FAMILY_TYRUNT: PokemonFamilyV0696FamilyTyrunt;
+	V0698_FAMILY_AMAURA: PokemonFamilyV0698FamilyAmaura;
+	V0701_FAMILY_HAWLUCHA: PokemonFamilyV0701FamilyHawlucha;
+	V0702_FAMILY_DEDENNE: PokemonFamilyV0702FamilyDedenne;
+	V0703_FAMILY_CARBINK: PokemonFamilyV0703FamilyCarbink;
+	V0704_FAMILY_GOOMY: PokemonFamilyV0704FamilyGoomy;
+	V0707_FAMILY_KLEFKI: PokemonFamilyV0707FamilyKlefki;
+	V0708_FAMILY_PHANTUMP: PokemonFamilyV0708FamilyPhantump;
+	V0710_FAMILY_PUMPKABOO: PokemonFamilyV0710FamilyPumpkaboo;
+	V0712_FAMILY_BERGMITE: PokemonFamilyV0712FamilyBergmite;
+	V0714_FAMILY_NOIBAT: PokemonFamilyV0714FamilyNoibat;
+	V0716_FAMILY_XERNEAS: PokemonFamilyV0716FamilyXerneas;
+	V0717_FAMILY_YVELTAL: PokemonFamilyV0717FamilyYveltal;
+	V0718_FAMILY_ZYGARDE: PokemonFamilyV0718FamilyZygarde;
+	V0719_FAMILY_DIANCIE: PokemonFamilyV0719FamilyDiancie;
+	V0720_FAMILY_HOOPA: PokemonFamilyV0720FamilyHoopa;
+	V0721_FAMILY_VOLCANION: PokemonFamilyV0721FamilyVolcanion;
+	V0722_FAMILY_ROWLET: PokemonFamilyV0722FamilyRowlet;
+	V0725_FAMILY_LITTEN: PokemonFamilyV0725FamilyLitten;
+	V0728_FAMILY_POPPLIO: PokemonFamilyV0728FamilyPopplio;
+	V0731_FAMILY_PIKIPEK: PokemonFamilyV0731FamilyPikipek;
+	V0734_FAMILY_YUNGOOS: PokemonFamilyV0734FamilyYungoos;
+	V0736_FAMILY_GRUBBIN: PokemonFamilyV0736FamilyGrubbin;
+	V0739_FAMILY_CRABRAWLER: PokemonFamilyV0739FamilyCrabrawler;
+	V0741_FAMILY_ORICORIO: PokemonFamilyV0741FamilyOricorio;
+	V0742_FAMILY_CUTIEFLY: PokemonFamilyV0742FamilyCutiefly;
+	V0744_FAMILY_ROCKRUFF: PokemonFamilyV0744FamilyRockruff;
+	V0746_FAMILY_WISHIWASHI: PokemonFamilyV0746FamilyWishiwashi;
+	V0747_FAMILY_MAREANIE: PokemonFamilyV0747FamilyMareanie;
+	V0749_FAMILY_MUDBRAY: PokemonFamilyV0749FamilyMudbray;
+	V0751_FAMILY_DEWPIDER: PokemonFamilyV0751FamilyDewpider;
+	V0753_FAMILY_FOMANTIS: PokemonFamilyV0753FamilyFomantis;
+	V0755_FAMILY_MORELULL: PokemonFamilyV0755FamilyMorelull;
+	V0757_FAMILY_SALANDIT: PokemonFamilyV0757FamilySalandit;
+	V0759_FAMILY_STUFFUL: PokemonFamilyV0759FamilyStufful;
+	V0761_FAMILY_BOUNSWEET: PokemonFamilyV0761FamilyBounsweet;
+	V0764_FAMILY_COMFEY: PokemonFamilyV0764FamilyComfey;
+	V0765_FAMILY_ORANGURU: PokemonFamilyV0765FamilyOranguru;
+	V0766_FAMILY_PASSIMIAN: PokemonFamilyV0766FamilyPassimian;
+	V0767_FAMILY_WIMPOD: PokemonFamilyV0767FamilyWimpod;
+	V0769_FAMILY_SANDYGAST: PokemonFamilyV0769FamilySandygast;
+	V0771_FAMILY_PYUKUMUKU: PokemonFamilyV0771FamilyPyukumuku;
+	V0772_FAMILY_TYPE_NULL: PokemonFamilyV0772FamilyTypeNull;
+	V0774_FAMILY_MINIOR: PokemonFamilyV0774FamilyMinior;
+	V0775_FAMILY_KOMALA: PokemonFamilyV0775FamilyKomala;
+	V0776_FAMILY_TURTONATOR: PokemonFamilyV0776FamilyTurtonator;
+	V0777_FAMILY_TOGEDEMARU: PokemonFamilyV0777FamilyTogedemaru;
+	V0778_FAMILY_MIMIKYU: PokemonFamilyV0778FamilyMimikyu;
+	V0779_FAMILY_BRUXISH: PokemonFamilyV0779FamilyBruxish;
+	V0780_FAMILY_DRAMPA: PokemonFamilyV0780FamilyDrampa;
+	V0781_FAMILY_DHELMISE: PokemonFamilyV0781FamilyDhelmise;
+	V0782_FAMILY_JANGMO_O: PokemonFamilyV0782FamilyJangmoO;
+	V0785_FAMILY_TAPU_KOKO: PokemonFamilyV0785FamilyTapuKoko;
+	V0786_FAMILY_TAPU_LELE: PokemonFamilyV0786FamilyTapuLele;
+	V0787_FAMILY_TAPU_BULU: PokemonFamilyV0787FamilyTapuBulu;
+	V0788_FAMILY_TAPU_FINI: PokemonFamilyV0788FamilyTapuFini;
+	V0789_FAMILY_COSMOG: PokemonFamilyV0789FamilyCosmog;
+	V0793_FAMILY_NIHILEGO: PokemonFamilyV0793FamilyNihilego;
+	V0794_FAMILY_BUZZWOLE: PokemonFamilyV0794FamilyBuzzwole;
+	V0795_FAMILY_PHEROMOSA: PokemonFamilyV0795FamilyPheromosa;
+	V0796_FAMILY_XURKITREE: PokemonFamilyV0796FamilyXurkitree;
+	V0797_FAMILY_CELESTEELA: PokemonFamilyV0797FamilyCelesteela;
+	V0798_FAMILY_KARTANA: PokemonFamilyV0798FamilyKartana;
+	V0799_FAMILY_GUZZLORD: PokemonFamilyV0799FamilyGuzzlord;
+	V0800_FAMILY_NECROZMA: PokemonFamilyV0800FamilyNecrozma;
+	V0801_FAMILY_MAGEARNA: PokemonFamilyV0801FamilyMagearna;
+	V0802_FAMILY_MARSHADOW: PokemonFamilyV0802FamilyMarshadow;
+	V0803_FAMILY_POIPOLE: PokemonFamilyV0803FamilyPoipole;
+	V0805_FAMILY_STAKATAKA: PokemonFamilyV0805FamilyStakataka;
+	V0806_FAMILY_BLACEPHALON: PokemonFamilyV0806FamilyBlacephalon;
+	V0807_FAMILY_ZERAORA: PokemonFamilyV0807FamilyZeraora;
+	V0808_FAMILY_MELTAN: PokemonFamilyV0808FamilyMeltan;
+	V0810_FAMILY_GROOKEY: PokemonFamilyV0810FamilyGrookey;
+	V0813_FAMILY_SCORBUNNY: PokemonFamilyV0813FamilyScorbunny;
+	V0816_FAMILY_SOBBLE: PokemonFamilyV0816FamilySobble;
+	V0819_FAMILY_SKWOVET: PokemonFamilyV0819FamilySkwovet;
+	V0821_FAMILY_ROOKIDEE: PokemonFamilyV0821FamilyRookidee;
+	V0824_FAMILY_BLIPBUG: PokemonFamilyV0824FamilyBlipbug;
+	V0827_FAMILY_NICKIT: PokemonFamilyV0827FamilyNickit;
+	V0829_FAMILY_GOSSIFLEUR: PokemonFamilyV0829FamilyGossifleur;
+	V0831_FAMILY_WOOLOO: PokemonFamilyV0831FamilyWooloo;
+	V0833_FAMILY_CHEWTLE: PokemonFamilyV0833FamilyChewtle;
+	V0835_FAMILY_YAMPER: PokemonFamilyV0835FamilyYamper;
+	V0837_FAMILY_ROLYCOLY: PokemonFamilyV0837FamilyRolycoly;
+	V0840_FAMILY_APPLIN: PokemonFamilyV0840FamilyApplin;
+	V0843_FAMILY_SILICOBRA: PokemonFamilyV0843FamilySilicobra;
+	V0845_FAMILY_CRAMORANT: PokemonFamilyV0845FamilyCramorant;
+	V0846_FAMILY_ARROKUDA: PokemonFamilyV0846FamilyArrokuda;
+	V0848_FAMILY_TOXEL: PokemonFamilyV0848FamilyToxel;
+	V0850_FAMILY_SIZZLIPEDE: PokemonFamilyV0850FamilySizzlipede;
+	V0852_FAMILY_CLOBBOPUS: PokemonFamilyV0852FamilyClobbopus;
+	V0854_FAMILY_SINISTEA: PokemonFamilyV0854FamilySinistea;
+	V0856_FAMILY_HATENNA: PokemonFamilyV0856FamilyHatenna;
+	V0859_FAMILY_IMPIDIMP: PokemonFamilyV0859FamilyImpidimp;
+	V0868_FAMILY_MILCERY: PokemonFamilyV0868FamilyMilcery;
+	V0870_FAMILY_FALINKS: PokemonFamilyV0870FamilyFalinks;
+	V0871_FAMILY_PINCURCHIN: PokemonFamilyV0871FamilyPincurchin;
+	V0872_FAMILY_SNOM: PokemonFamilyV0872FamilySnom;
+	V0874_FAMILY_STONJOURNER: PokemonFamilyV0874FamilyStonjourner;
+	V0875_FAMILY_EISCUE: PokemonFamilyV0875FamilyEiscue;
+	V0876_FAMILY_INDEEDEE: PokemonFamilyV0876FamilyIndeedee;
+	V0877_FAMILY_MORPEKO: PokemonFamilyV0877FamilyMorpeko;
+	V0878_FAMILY_CUFANT: PokemonFamilyV0878FamilyCufant;
+	V0880_FAMILY_DRACOZOLT: PokemonFamilyV0880FamilyDracozolt;
+	V0881_FAMILY_ARCTOZOLT: PokemonFamilyV0881FamilyArctozolt;
+	V0882_FAMILY_DRACOVISH: PokemonFamilyV0882FamilyDracovish;
+	V0883_FAMILY_ARCTOVISH: PokemonFamilyV0883FamilyArctovish;
+	V0884_FAMILY_DURALUDON: PokemonFamilyV0884FamilyDuraludon;
+	V0885_FAMILY_DREEPY: PokemonFamilyV0885FamilyDreepy;
+	V0888_FAMILY_ZACIAN: PokemonFamilyV0888FamilyZacian;
+	V0889_FAMILY_ZAMAZENTA: PokemonFamilyV0889FamilyZamazenta;
+	V0890_FAMILY_ETERNATUS: PokemonFamilyV0890FamilyEternatus;
+	V0891_FAMILY_KUBFU: PokemonFamilyV0891FamilyKubfu;
+	V0893_FAMILY_ZARUDE: PokemonFamilyV0893FamilyZarude;
+	V0894_FAMILY_REGIELEKI: PokemonFamilyV0894FamilyRegieleki;
+	V0895_FAMILY_REGIDRAGO: PokemonFamilyV0895FamilyRegidrago;
+	V0896_FAMILY_GLASTRIER: PokemonFamilyV0896FamilyGlastrier;
+	V0897_FAMILY_SPECTRIER: PokemonFamilyV0897FamilySpectrier;
+	V0898_FAMILY_CALYREX: PokemonFamilyV0898FamilyCalyrex;
+	V0905_FAMILY_ENAMORUS: PokemonFamilyV0905FamilyEnamorus;
+	V0906_FAMILY_SPRIGATITO: PokemonFamilyV0906FamilySprigatito;
+	V0909_FAMILY_FUECOCO: PokemonFamilyV0909FamilyFuecoco;
+	V0912_FAMILY_QUAXLY: PokemonFamilyV0912FamilyQuaxly;
+	V0915_FAMILY_LECHONK: PokemonFamilyV0915FamilyLechonk;
+	V0917_FAMILY_TAROUNTULA: PokemonFamilyV0917FamilyTarountula;
+	V0919_FAMILY_NYMBLE: PokemonFamilyV0919FamilyNymble;
+	V0921_FAMILY_PAWMI: PokemonFamilyV0921FamilyPawmi;
+	V0924_FAMILY_TANDEMAUS: PokemonFamilyV0924FamilyTandemaus;
+	V0926_FAMILY_FIDOUGH: PokemonFamilyV0926FamilyFidough;
+	V0928_FAMILY_SMOLIV: PokemonFamilyV0928FamilySmoliv;
+	V0931_FAMILY_SQUAWKABILLY: PokemonFamilyV0931FamilySquawkabilly;
+	V0932_FAMILY_NACLI: PokemonFamilyV0932FamilyNacli;
+	V0935_FAMILY_CHARCADET: PokemonFamilyV0935FamilyCharcadet;
+	V0938_FAMILY_TADBULB: PokemonFamilyV0938FamilyTadbulb;
+	V0940_FAMILY_WATTREL: PokemonFamilyV0940FamilyWattrel;
+	V0942_FAMILY_MASCHIFF: PokemonFamilyV0942FamilyMaschiff;
+	V0944_FAMILY_SHROODLE: PokemonFamilyV0944FamilyShroodle;
+	V0946_FAMILY_BRAMBLIN: PokemonFamilyV0946FamilyBramblin;
+	V0948_FAMILY_TOEDSCOOL: PokemonFamilyV0948FamilyToedscool;
+	V0950_FAMILY_KLAWF: PokemonFamilyV0950FamilyKlawf;
+	V0951_FAMILY_CAPSAKID: PokemonFamilyV0951FamilyCapsakid;
+	V0953_FAMILY_RELLOR: PokemonFamilyV0953FamilyRellor;
+	V0955_FAMILY_FLITTLE: PokemonFamilyV0955FamilyFlittle;
+	V0957_FAMILY_TINKATINK: PokemonFamilyV0957FamilyTinkatink;
+	V0960_FAMILY_WIGLETT: PokemonFamilyV0960FamilyWiglett;
+	V0962_FAMILY_BOMBIRDIER: PokemonFamilyV0962FamilyBombirdier;
+	V0963_FAMILY_FINIZEN: PokemonFamilyV0963FamilyFinizen;
+	V0965_FAMILY_VAROOM: PokemonFamilyV0965FamilyVaroom;
+	V0967_FAMILY_CYCLIZAR: PokemonFamilyV0967FamilyCyclizar;
+	V0968_FAMILY_ORTHWORM: PokemonFamilyV0968FamilyOrthworm;
+	V0969_FAMILY_GLIMMET: PokemonFamilyV0969FamilyGlimmet;
+	V0971_FAMILY_GREAVARD: PokemonFamilyV0971FamilyGreavard;
+	V0973_FAMILY_FLAMIGO: PokemonFamilyV0973FamilyFlamigo;
+	V0974_FAMILY_CETODDLE: PokemonFamilyV0974FamilyCetoddle;
+	V0976_FAMILY_VELUZA: PokemonFamilyV0976FamilyVeluza;
+	V0977_FAMILY_DONDOZO: PokemonFamilyV0977FamilyDondozo;
+	V0978_FAMILY_TATSUGIRI: PokemonFamilyV0978FamilyTatsugiri;
+	V0984_FAMILY_GREATTUSK: PokemonFamilyV0984FamilyGreattusk;
+	V0985_FAMILY_SCREAMTAIL: PokemonFamilyV0985FamilyScreamtail;
+	V0986_FAMILY_BRUTEBONNET: PokemonFamilyV0986FamilyBrutebonnet;
+	V0987_FAMILY_FLUTTERMANE: PokemonFamilyV0987FamilyFluttermane;
+	V0988_FAMILY_SLITHERWING: PokemonFamilyV0988FamilySlitherwing;
+	V0989_FAMILY_SANDYSHOCKS: PokemonFamilyV0989FamilySandyshocks;
+	V0990_FAMILY_IRONTREADS: PokemonFamilyV0990FamilyIrontreads;
+	V0991_FAMILY_IRONBUNDLE: PokemonFamilyV0991FamilyIronbundle;
+	V0992_FAMILY_IRONHANDS: PokemonFamilyV0992FamilyIronhands;
+	V0993_FAMILY_IRONJUGULIS: PokemonFamilyV0993FamilyIronjugulis;
+	V0994_FAMILY_IRONMOTH: PokemonFamilyV0994FamilyIronmoth;
+	V0995_FAMILY_IRONTHORNS: PokemonFamilyV0995FamilyIronthorns;
+	V0996_FAMILY_FRIGIBAX: PokemonFamilyV0996FamilyFrigibax;
+	V0999_FAMILY_GIMMIGHOUL: PokemonFamilyV0999FamilyGimmighoul;
+	V1001_FAMILY_WOCHIEN: PokemonFamilyV1001FamilyWochien;
+	V1002_FAMILY_CHIENPAO: PokemonFamilyV1002FamilyChienpao;
+	V1003_FAMILY_TINGLU: PokemonFamilyV1003FamilyTinglu;
+	V1004_FAMILY_CHIYU: PokemonFamilyV1004FamilyChiyu;
+	V1005_FAMILY_ROARINGMOON: PokemonFamilyV1005FamilyRoaringmoon;
+	V1006_FAMILY_IRONVALIANT: PokemonFamilyV1006FamilyIronvaliant;
+	V1007_FAMILY_KORAIDON: PokemonFamilyV1007FamilyKoraidon;
+	V1008_FAMILY_MIRAIDON: PokemonFamilyV1008FamilyMiraidon;
+	V1009_FAMILY_WALKINGWAKE: PokemonFamilyV1009FamilyWalkingwake;
+	V1010_FAMILY_IRONLEAVES: PokemonFamilyV1010FamilyIronleaves;
+	V1012_FAMILY_POLTCHAGEIST: PokemonFamilyV1012FamilyPoltchageist;
+	V1014_FAMILY_OKIDOGI: PokemonFamilyV1014FamilyOkidogi;
+	V1015_FAMILY_MUNKIDORI: PokemonFamilyV1015FamilyMunkidori;
+	V1016_FAMILY_FEZANDIPITI: PokemonFamilyV1016FamilyFezandipiti;
+	V1017_FAMILY_OGERPON: PokemonFamilyV1017FamilyOgerpon;
+	V1020_FAMILY_GOUGINGFIRE: PokemonFamilyV1020FamilyGougingfire;
+	V1021_FAMILY_RAGINGBOLT: PokemonFamilyV1021FamilyRagingbolt;
+	V1022_FAMILY_IRONBOULDER: PokemonFamilyV1022FamilyIronboulder;
+	V1023_FAMILY_IRONCROWN: PokemonFamilyV1023FamilyIroncrown;
+	V1024_FAMILY_TERAPAGOS: PokemonFamilyV1024FamilyTerapagos;
+	V1025_FAMILY_PECHARUNT: PokemonFamilyV1025FamilyPecharunt;
+}

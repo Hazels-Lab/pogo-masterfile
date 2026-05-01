@@ -1,0 +1,21 @@
+// Generated from Pokémon GO masterfile — "pokestopInvasionAvailabilitySettings" lookup table.
+
+import type {
+	PokestopInvasionAvailabilitySettingsFriday,
+	PokestopInvasionAvailabilitySettingsMonday,
+	PokestopInvasionAvailabilitySettingsSaturday,
+	PokestopInvasionAvailabilitySettingsSunday,
+	PokestopInvasionAvailabilitySettingsThursday,
+	PokestopInvasionAvailabilitySettingsTuesday,
+	PokestopInvasionAvailabilitySettingsWednesday,
+} from "pogo-masterfile-types/entries";
+
+export interface PokestopInvasionAvailabilitySettingsLookup {
+	INVASION_AVAILABILITY_SETTINGS_FRIDAY: PokestopInvasionAvailabilitySettingsFriday;
+	INVASION_AVAILABILITY_SETTINGS_MONDAY: PokestopInvasionAvailabilitySettingsMonday;
+	INVASION_AVAILABILITY_SETTINGS_SATURDAY: PokestopInvasionAvailabilitySettingsSaturday;
+	INVASION_AVAILABILITY_SETTINGS_SUNDAY: PokestopInvasionAvailabilitySettingsSunday;
+	INVASION_AVAILABILITY_SETTINGS_THURSDAY: PokestopInvasionAvailabilitySettingsThursday;
+	INVASION_AVAILABILITY_SETTINGS_TUESDAY: PokestopInvasionAvailabilitySettingsTuesday;
+	INVASION_AVAILABILITY_SETTINGS_WEDNESDAY: PokestopInvasionAvailabilitySettingsWednesday;
+}

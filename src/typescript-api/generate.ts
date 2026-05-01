@@ -19,17 +19,24 @@ export async function generateTypeScriptApi(entries: Entry[]): Promise<void> {
 	await mkdir(TEMPLATES_STUBS_DIR, { recursive: true });
 
 	// 2. Emit data-driven files into packages/ts-api/src/.
+	const lookupTables = emitLookupTables(groups);
 	const generated = new Map<string, string>();
 	generated.set("group-names.ts", emitGroupNames(groups));
-	generated.set("lookup-tables.d.ts", emitLookupTables(groups));
+	generated.set("lookup-tables.d.ts", lookupTables.main);
 	generated.set("index.ts", emitIndex());
+	for (const [path, content] of lookupTables.perGroup) {
+		generated.set(path, content);
+	}
 	await writeOutput(generated, SRC_OUT_DIR);
 
 	// 3. Refresh editor stubs alongside the templates so the IDE resolves
 	//    `./group-names` and `./lookup-tables` from within templates/.
 	const stubs = new Map<string, string>();
 	stubs.set("group-names.ts", emitGroupNames(groups));
-	stubs.set("lookup-tables.d.ts", emitLookupTables(groups));
+	stubs.set("lookup-tables.d.ts", lookupTables.main);
+	for (const [path, content] of lookupTables.perGroup) {
+		stubs.set(path, content);
+	}
 	await writeOutput(stubs, TEMPLATES_STUBS_DIR);
 
 	// 4. Copy hand-written runtime templates verbatim into packages/ts-api/src/.

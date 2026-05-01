@@ -1,0 +1,643 @@
+// Generated from Pokémon GO masterfile — "combatMove" lookup table.
+
+import type {
+	CombatMoveV0013MoveWrap,
+	CombatMoveV0014MoveHyperBeam,
+	CombatMoveV0016MoveDarkPulse,
+	CombatMoveV0018MoveSludge,
+	CombatMoveV0020MoveViceGrip,
+	CombatMoveV0021MoveFlameWheel,
+	CombatMoveV0022MoveMegahorn,
+	CombatMoveV0024MoveFlamethrower,
+	CombatMoveV0026MoveDig,
+	CombatMoveV0028MoveCrossChop,
+	CombatMoveV0030MovePsybeam,
+	CombatMoveV0031MoveEarthquake,
+	CombatMoveV0032MoveStoneEdge,
+	CombatMoveV0033MoveIcePunch,
+	CombatMoveV0034MoveHeartStamp,
+	CombatMoveV0035MoveDischarge,
+	CombatMoveV0036MoveFlashCannon,
+	CombatMoveV0038MoveDrillPeck,
+	CombatMoveV0039MoveIceBeam,
+	CombatMoveV0040MoveBlizzard,
+	CombatMoveV0042MoveHeatWave,
+	CombatMoveV0045MoveAerialAce,
+	CombatMoveV0046MoveDrillRun,
+	CombatMoveV0047MovePetalBlizzard,
+	CombatMoveV0048MoveMegaDrain,
+	CombatMoveV0049MoveBugBuzz,
+	CombatMoveV0050MovePoisonFang,
+	CombatMoveV0051MoveNightSlash,
+	CombatMoveV0053MoveBubbleBeam,
+	CombatMoveV0054MoveSubmission,
+	CombatMoveV0056MoveLowSweep,
+	CombatMoveV0057MoveAquaJet,
+	CombatMoveV0058MoveAquaTail,
+	CombatMoveV0059MoveSeedBomb,
+	CombatMoveV0060MovePsyshock,
+	CombatMoveV0062MoveAncientPower,
+	CombatMoveV0063MoveRockTomb,
+	CombatMoveV0064MoveRockSlide,
+	CombatMoveV0065MovePowerGem,
+	CombatMoveV0066MoveShadowSneak,
+	CombatMoveV0067MoveShadowPunch,
+	CombatMoveV0069MoveOminousWind,
+	CombatMoveV0070MoveShadowBall,
+	CombatMoveV0072MoveMagnetBomb,
+	CombatMoveV0074MoveIronHead,
+	CombatMoveV0075MoveParabolicCharge,
+	CombatMoveV0077MoveThunderPunch,
+	CombatMoveV0078MoveThunder,
+	CombatMoveV0079MoveThunderbolt,
+	CombatMoveV0080MoveTwister,
+	CombatMoveV0082MoveDragonPulse,
+	CombatMoveV0083MoveDragonClaw,
+	CombatMoveV0084MoveDisarmingVoice,
+	CombatMoveV0085MoveDrainingKiss,
+	CombatMoveV0086MoveDazzlingGleam,
+	CombatMoveV0087MoveMoonblast,
+	CombatMoveV0088MovePlayRough,
+	CombatMoveV0089MoveCrossPoison,
+	CombatMoveV0090MoveSludgeBomb,
+	CombatMoveV0091MoveSludgeWave,
+	CombatMoveV0092MoveGunkShot,
+	CombatMoveV0094MoveBoneClub,
+	CombatMoveV0095MoveBulldoze,
+	CombatMoveV0096MoveMudBomb,
+	CombatMoveV0099MoveSignalBeam,
+	CombatMoveV0100MoveXScissor,
+	CombatMoveV0101MoveFlameCharge,
+	CombatMoveV0102MoveFlameBurst,
+	CombatMoveV0103MoveFireBlast,
+	CombatMoveV0104MoveBrine,
+	CombatMoveV0105MoveWaterPulse,
+	CombatMoveV0106MoveScald,
+	CombatMoveV0107MoveHydroPump,
+	CombatMoveV0108MovePsychic,
+	CombatMoveV0109MovePsystrike,
+	CombatMoveV0111MoveIcyWind,
+	CombatMoveV0114MoveGigaDrain,
+	CombatMoveV0115MoveFirePunch,
+	CombatMoveV0116MoveSolarBeam,
+	CombatMoveV0117MoveLeafBlade,
+	CombatMoveV0118MovePowerWhip,
+	CombatMoveV0121MoveAirCutter,
+	CombatMoveV0122MoveHurricane,
+	CombatMoveV0123MoveBrickBreak,
+	CombatMoveV0125MoveSwift,
+	CombatMoveV0126MoveHornAttack,
+	CombatMoveV0127MoveStomp,
+	CombatMoveV0129MoveHyperFang,
+	CombatMoveV0131MoveBodySlam,
+	CombatMoveV0132MoveRest,
+	CombatMoveV0133MoveStruggle,
+	CombatMoveV0134MoveScaldBlastoise,
+	CombatMoveV0135MoveHydroPumpBlastoise,
+	CombatMoveV0136MoveWrapGreen,
+	CombatMoveV0137MoveWrapPink,
+	CombatMoveV0200MoveFuryCutterFast,
+	CombatMoveV0201MoveBugBiteFast,
+	CombatMoveV0202MoveBiteFast,
+	CombatMoveV0203MoveSuckerPunchFast,
+	CombatMoveV0204MoveDragonBreathFast,
+	CombatMoveV0205MoveThunderShockFast,
+	CombatMoveV0206MoveSparkFast,
+	CombatMoveV0207MoveLowKickFast,
+	CombatMoveV0208MoveKarateChopFast,
+	CombatMoveV0209MoveEmberFast,
+	CombatMoveV0210MoveWingAttackFast,
+	CombatMoveV0211MovePeckFast,
+	CombatMoveV0212MoveLickFast,
+	CombatMoveV0213MoveShadowClawFast,
+	CombatMoveV0214MoveVineWhipFast,
+	CombatMoveV0215MoveRazorLeafFast,
+	CombatMoveV0216MoveMudShotFast,
+	CombatMoveV0217MoveIceShardFast,
+	CombatMoveV0218MoveFrostBreathFast,
+	CombatMoveV0219MoveQuickAttackFast,
+	CombatMoveV0220MoveScratchFast,
+	CombatMoveV0221MoveTackleFast,
+	CombatMoveV0222MovePoundFast,
+	CombatMoveV0223MoveCutFast,
+	CombatMoveV0224MovePoisonJabFast,
+	CombatMoveV0225MoveAcidFast,
+	CombatMoveV0226MovePsychoCutFast,
+	CombatMoveV0227MoveRockThrowFast,
+	CombatMoveV0228MoveMetalClawFast,
+	CombatMoveV0229MoveBulletPunchFast,
+	CombatMoveV0230MoveWaterGunFast,
+	CombatMoveV0231MoveSplashFast,
+	CombatMoveV0232MoveWaterGunFastBlastoise,
+	CombatMoveV0233MoveMudSlapFast,
+	CombatMoveV0234MoveZenHeadbuttFast,
+	CombatMoveV0235MoveConfusionFast,
+	CombatMoveV0236MovePoisonStingFast,
+	CombatMoveV0237MoveBubbleFast,
+	CombatMoveV0238MoveFeintAttackFast,
+	CombatMoveV0239MoveSteelWingFast,
+	CombatMoveV0240MoveFireFangFast,
+	CombatMoveV0241MoveRockSmashFast,
+	CombatMoveV0242MoveTransformFast,
+	CombatMoveV0243MoveCounterFast,
+	CombatMoveV0244MovePowderSnowFast,
+	CombatMoveV0245MoveCloseCombat,
+	CombatMoveV0246MoveDynamicPunch,
+	CombatMoveV0247MoveFocusBlast,
+	CombatMoveV0248MoveAuroraBeam,
+	CombatMoveV0249MoveChargeBeamFast,
+	CombatMoveV0250MoveVoltSwitchFast,
+	CombatMoveV0251MoveWildCharge,
+	CombatMoveV0252MoveZapCannon,
+	CombatMoveV0253MoveDragonTailFast,
+	CombatMoveV0254MoveAvalanche,
+	CombatMoveV0255MoveAirSlashFast,
+	CombatMoveV0256MoveBraveBird,
+	CombatMoveV0257MoveSkyAttack,
+	CombatMoveV0258MoveSandTomb,
+	CombatMoveV0259MoveRockBlast,
+	CombatMoveV0260MoveInfestationFast,
+	CombatMoveV0261MoveStruggleBugFast,
+	CombatMoveV0262MoveSilverWind,
+	CombatMoveV0263MoveAstonishFast,
+	CombatMoveV0264MoveHexFast,
+	CombatMoveV0265MoveNightShade,
+	CombatMoveV0266MoveIronTailFast,
+	CombatMoveV0267MoveGyroBall,
+	CombatMoveV0268MoveHeavySlam,
+	CombatMoveV0269MoveFireSpinFast,
+	CombatMoveV0270MoveOverheat,
+	CombatMoveV0271MoveBulletSeedFast,
+	CombatMoveV0272MoveGrassKnot,
+	CombatMoveV0273MoveEnergyBall,
+	CombatMoveV0274MoveExtrasensoryFast,
+	CombatMoveV0275MoveFuturesight,
+	CombatMoveV0276MoveMirrorCoat,
+	CombatMoveV0277MoveOutrage,
+	CombatMoveV0278MoveSnarlFast,
+	CombatMoveV0279MoveCrunch,
+	CombatMoveV0280MoveFoulPlay,
+	CombatMoveV0281MoveHiddenPowerFast,
+	CombatMoveV0282MoveTakeDownFast,
+	CombatMoveV0283MoveWaterfallFast,
+	CombatMoveV0284MoveSurf,
+	CombatMoveV0285MoveDracoMeteor,
+	CombatMoveV0286MoveDoomDesire,
+	CombatMoveV0287MoveYawnFast,
+	CombatMoveV0288MovePsychoBoost,
+	CombatMoveV0289MoveOriginPulse,
+	CombatMoveV0290MovePrecipiceBlades,
+	CombatMoveV0291MovePresentFast,
+	CombatMoveV0292MoveWeatherBallFire,
+	CombatMoveV0293MoveWeatherBallIce,
+	CombatMoveV0294MoveWeatherBallRock,
+	CombatMoveV0295MoveWeatherBallWater,
+	CombatMoveV0296MoveFrenzyPlant,
+	CombatMoveV0297MoveSmackDownFast,
+	CombatMoveV0298MoveBlastBurn,
+	CombatMoveV0299MoveHydroCannon,
+	CombatMoveV0300MoveLastResort,
+	CombatMoveV0301MoveMeteorMash,
+	CombatMoveV0302MoveSkullBash,
+	CombatMoveV0303MoveAcidSpray,
+	CombatMoveV0304MoveEarthPower,
+	CombatMoveV0305MoveCrabhammer,
+	CombatMoveV0306MoveLunge,
+	CombatMoveV0308MoveOctazooka,
+	CombatMoveV0309MoveMirrorShot,
+	CombatMoveV0310MoveSuperPower,
+	CombatMoveV0311MoveFellStinger,
+	CombatMoveV0312MoveLeafTornado,
+	CombatMoveV0314MoveDrainPunch,
+	CombatMoveV0315MoveShadowBone,
+	CombatMoveV0316MoveMuddyWater,
+	CombatMoveV0317MoveBlazeKick,
+	CombatMoveV0318MoveRazorShell,
+	CombatMoveV0319MovePowerUpPunch,
+	CombatMoveV0320MoveCharmFast,
+	CombatMoveV0321MoveGigaImpact,
+	CombatMoveV0322MoveFrustration,
+	CombatMoveV0323MoveReturn,
+	CombatMoveV0324MoveSynchronoise,
+	CombatMoveV0325MoveLockOnFast,
+	CombatMoveV0326MoveThunderFangFast,
+	CombatMoveV0327MoveIceFangFast,
+	CombatMoveV0330MoveSacredSword,
+	CombatMoveV0331MoveFlyingPress,
+	CombatMoveV0332MoveAuraSphere,
+	CombatMoveV0333MovePayback,
+	CombatMoveV0334MoveRockWrecker,
+	CombatMoveV0335MoveAeroblast,
+	CombatMoveV0336MoveTechnoBlastNormal,
+	CombatMoveV0337MoveTechnoBlastBurn,
+	CombatMoveV0338MoveTechnoBlastChill,
+	CombatMoveV0339MoveTechnoBlastWater,
+	CombatMoveV0340MoveTechnoBlastShock,
+	CombatMoveV0341MoveFly,
+	CombatMoveV0342MoveVCreate,
+	CombatMoveV0343MoveLeafStorm,
+	CombatMoveV0344MoveTriAttack,
+	CombatMoveV0345MoveGustFast,
+	CombatMoveV0346MoveIncinerateFast,
+	CombatMoveV0348MoveFeatherDance,
+	CombatMoveV0350MoveFairyWindFast,
+	CombatMoveV0352MoveWeatherBallNormal,
+	CombatMoveV0353MovePsychicFangs,
+	CombatMoveV0356MoveDoubleKickFast,
+	CombatMoveV0357MoveMagicalLeafFast,
+	CombatMoveV0358MoveSacredFire,
+	CombatMoveV0359MoveIcicleSpear,
+	CombatMoveV0360MoveAeroblastPlus,
+	CombatMoveV0361MoveAeroblastPlusPlus,
+	CombatMoveV0362MoveSacredFirePlus,
+	CombatMoveV0363MoveSacredFirePlusPlus,
+	CombatMoveV0364MoveAcrobatics,
+	CombatMoveV0365MoveLusterPurge,
+	CombatMoveV0366MoveMistBall,
+	CombatMoveV0367MoveBrutalSwing,
+	CombatMoveV0368MoveRolloutFast,
+	CombatMoveV0369MoveSeedFlare,
+	CombatMoveV0370MoveObstruct,
+	CombatMoveV0371MoveShadowForce,
+	CombatMoveV0372MoveMeteorBeam,
+	CombatMoveV0373MoveWaterShurikenFast,
+	CombatMoveV0374MoveFusionBolt,
+	CombatMoveV0375MoveFusionFlare,
+	CombatMoveV0376MovePoltergeist,
+	CombatMoveV0377MoveHighHorsepower,
+	CombatMoveV0378MoveGlaciate,
+	CombatMoveV0379MoveBreakingSwipe,
+	CombatMoveV0380MoveBoomburst,
+	CombatMoveV0381MoveDoubleIronBash,
+	CombatMoveV0382MoveMysticalFire,
+	CombatMoveV0383MoveLiquidation,
+	CombatMoveV0384MoveDragonAscent,
+	CombatMoveV0385MoveLeafageFast,
+	CombatMoveV0386MoveMagmaStorm,
+	CombatMoveV0387MoveGeomancyFast,
+	CombatMoveV0388MoveSpacialRend,
+	CombatMoveV0389MoveOblivionWing,
+	CombatMoveV0390MoveNaturesMadness,
+	CombatMoveV0391MoveTripleAxel,
+	CombatMoveV0392MoveTrailblaze,
+	CombatMoveV0393MoveScorchingSands,
+	CombatMoveV0394MoveRoarOfTime,
+	CombatMoveV0395MoveBleakwindStorm,
+	CombatMoveV0396MoveSandsearStorm,
+	CombatMoveV0397MoveWildboltStorm,
+	CombatMoveV0398MoveSpiritShackle,
+	CombatMoveV0399MoveVoltTackle,
+	CombatMoveV0400MoveDarkestLariat,
+	CombatMoveV0401MovePsywaveFast,
+	CombatMoveV0402MoveMetalSoundFast,
+	CombatMoveV0403MoveSandAttackFast,
+	CombatMoveV0404MoveSunsteelStrike,
+	CombatMoveV0405MoveMoongeistBeam,
+	CombatMoveV0406MoveAuraWheelElectric,
+	CombatMoveV0407MoveAuraWheelDark,
+	CombatMoveV0408MoveHighJumpKick,
+	CombatMoveV0462MoveForcePalmFast,
+	CombatMoveV0463MoveSparklingAria,
+	CombatMoveV0464MoveRageFist,
+	CombatMoveV0465MoveFlowerTrick,
+	CombatMoveV0466MoveFreezeShock,
+	CombatMoveV0467MoveIceBurn,
+	CombatMoveV0468MoveTorchSong,
+	CombatMoveV0469MoveBehemothBlade,
+	CombatMoveV0470MoveBehemothBash,
+	CombatMoveV0471MoveUpperHand,
+	CombatMoveV0472MoveThunderCage,
+	CombatMoveV0482MoveDynamaxCannon,
+	CombatMoveV0484MoveClangingScales,
+	CombatMoveV0485MoveCrushGrip,
+	CombatMoveV0486MoveDragonEnergy,
+	CombatMoveV0487MoveAquaStep,
+	CombatMoveV0488MoveChillingWater,
+	CombatMoveV0489MoveSecretSword,
+	CombatMoveV0490MoveBeakBlast,
+	CombatMoveV0491MoveMindBlown,
+	CombatMoveV0492MoveDrumBeating,
+	CombatMoveV0493MovePyroball,
+	CombatMoveV0494MoveGigatonHammer,
+} from "pogo-masterfile-types/entries";
+
+export interface CombatMoveLookup {
+	COMBAT_V0013_MOVE_WRAP: CombatMoveV0013MoveWrap;
+	COMBAT_V0014_MOVE_HYPER_BEAM: CombatMoveV0014MoveHyperBeam;
+	COMBAT_V0016_MOVE_DARK_PULSE: CombatMoveV0016MoveDarkPulse;
+	COMBAT_V0018_MOVE_SLUDGE: CombatMoveV0018MoveSludge;
+	COMBAT_V0020_MOVE_VICE_GRIP: CombatMoveV0020MoveViceGrip;
+	COMBAT_V0021_MOVE_FLAME_WHEEL: CombatMoveV0021MoveFlameWheel;
+	COMBAT_V0022_MOVE_MEGAHORN: CombatMoveV0022MoveMegahorn;
+	COMBAT_V0024_MOVE_FLAMETHROWER: CombatMoveV0024MoveFlamethrower;
+	COMBAT_V0026_MOVE_DIG: CombatMoveV0026MoveDig;
+	COMBAT_V0028_MOVE_CROSS_CHOP: CombatMoveV0028MoveCrossChop;
+	COMBAT_V0030_MOVE_PSYBEAM: CombatMoveV0030MovePsybeam;
+	COMBAT_V0031_MOVE_EARTHQUAKE: CombatMoveV0031MoveEarthquake;
+	COMBAT_V0032_MOVE_STONE_EDGE: CombatMoveV0032MoveStoneEdge;
+	COMBAT_V0033_MOVE_ICE_PUNCH: CombatMoveV0033MoveIcePunch;
+	COMBAT_V0034_MOVE_HEART_STAMP: CombatMoveV0034MoveHeartStamp;
+	COMBAT_V0035_MOVE_DISCHARGE: CombatMoveV0035MoveDischarge;
+	COMBAT_V0036_MOVE_FLASH_CANNON: CombatMoveV0036MoveFlashCannon;
+	COMBAT_V0038_MOVE_DRILL_PECK: CombatMoveV0038MoveDrillPeck;
+	COMBAT_V0039_MOVE_ICE_BEAM: CombatMoveV0039MoveIceBeam;
+	COMBAT_V0040_MOVE_BLIZZARD: CombatMoveV0040MoveBlizzard;
+	COMBAT_V0042_MOVE_HEAT_WAVE: CombatMoveV0042MoveHeatWave;
+	COMBAT_V0045_MOVE_AERIAL_ACE: CombatMoveV0045MoveAerialAce;
+	COMBAT_V0046_MOVE_DRILL_RUN: CombatMoveV0046MoveDrillRun;
+	COMBAT_V0047_MOVE_PETAL_BLIZZARD: CombatMoveV0047MovePetalBlizzard;
+	COMBAT_V0048_MOVE_MEGA_DRAIN: CombatMoveV0048MoveMegaDrain;
+	COMBAT_V0049_MOVE_BUG_BUZZ: CombatMoveV0049MoveBugBuzz;
+	COMBAT_V0050_MOVE_POISON_FANG: CombatMoveV0050MovePoisonFang;
+	COMBAT_V0051_MOVE_NIGHT_SLASH: CombatMoveV0051MoveNightSlash;
+	COMBAT_V0053_MOVE_BUBBLE_BEAM: CombatMoveV0053MoveBubbleBeam;
+	COMBAT_V0054_MOVE_SUBMISSION: CombatMoveV0054MoveSubmission;
+	COMBAT_V0056_MOVE_LOW_SWEEP: CombatMoveV0056MoveLowSweep;
+	COMBAT_V0057_MOVE_AQUA_JET: CombatMoveV0057MoveAquaJet;
+	COMBAT_V0058_MOVE_AQUA_TAIL: CombatMoveV0058MoveAquaTail;
+	COMBAT_V0059_MOVE_SEED_BOMB: CombatMoveV0059MoveSeedBomb;
+	COMBAT_V0060_MOVE_PSYSHOCK: CombatMoveV0060MovePsyshock;
+	COMBAT_V0062_MOVE_ANCIENT_POWER: CombatMoveV0062MoveAncientPower;
+	COMBAT_V0063_MOVE_ROCK_TOMB: CombatMoveV0063MoveRockTomb;
+	COMBAT_V0064_MOVE_ROCK_SLIDE: CombatMoveV0064MoveRockSlide;
+	COMBAT_V0065_MOVE_POWER_GEM: CombatMoveV0065MovePowerGem;
+	COMBAT_V0066_MOVE_SHADOW_SNEAK: CombatMoveV0066MoveShadowSneak;
+	COMBAT_V0067_MOVE_SHADOW_PUNCH: CombatMoveV0067MoveShadowPunch;
+	COMBAT_V0069_MOVE_OMINOUS_WIND: CombatMoveV0069MoveOminousWind;
+	COMBAT_V0070_MOVE_SHADOW_BALL: CombatMoveV0070MoveShadowBall;
+	COMBAT_V0072_MOVE_MAGNET_BOMB: CombatMoveV0072MoveMagnetBomb;
+	COMBAT_V0074_MOVE_IRON_HEAD: CombatMoveV0074MoveIronHead;
+	COMBAT_V0075_MOVE_PARABOLIC_CHARGE: CombatMoveV0075MoveParabolicCharge;
+	COMBAT_V0077_MOVE_THUNDER_PUNCH: CombatMoveV0077MoveThunderPunch;
+	COMBAT_V0078_MOVE_THUNDER: CombatMoveV0078MoveThunder;
+	COMBAT_V0079_MOVE_THUNDERBOLT: CombatMoveV0079MoveThunderbolt;
+	COMBAT_V0080_MOVE_TWISTER: CombatMoveV0080MoveTwister;
+	COMBAT_V0082_MOVE_DRAGON_PULSE: CombatMoveV0082MoveDragonPulse;
+	COMBAT_V0083_MOVE_DRAGON_CLAW: CombatMoveV0083MoveDragonClaw;
+	COMBAT_V0084_MOVE_DISARMING_VOICE: CombatMoveV0084MoveDisarmingVoice;
+	COMBAT_V0085_MOVE_DRAINING_KISS: CombatMoveV0085MoveDrainingKiss;
+	COMBAT_V0086_MOVE_DAZZLING_GLEAM: CombatMoveV0086MoveDazzlingGleam;
+	COMBAT_V0087_MOVE_MOONBLAST: CombatMoveV0087MoveMoonblast;
+	COMBAT_V0088_MOVE_PLAY_ROUGH: CombatMoveV0088MovePlayRough;
+	COMBAT_V0089_MOVE_CROSS_POISON: CombatMoveV0089MoveCrossPoison;
+	COMBAT_V0090_MOVE_SLUDGE_BOMB: CombatMoveV0090MoveSludgeBomb;
+	COMBAT_V0091_MOVE_SLUDGE_WAVE: CombatMoveV0091MoveSludgeWave;
+	COMBAT_V0092_MOVE_GUNK_SHOT: CombatMoveV0092MoveGunkShot;
+	COMBAT_V0094_MOVE_BONE_CLUB: CombatMoveV0094MoveBoneClub;
+	COMBAT_V0095_MOVE_BULLDOZE: CombatMoveV0095MoveBulldoze;
+	COMBAT_V0096_MOVE_MUD_BOMB: CombatMoveV0096MoveMudBomb;
+	COMBAT_V0099_MOVE_SIGNAL_BEAM: CombatMoveV0099MoveSignalBeam;
+	COMBAT_V0100_MOVE_X_SCISSOR: CombatMoveV0100MoveXScissor;
+	COMBAT_V0101_MOVE_FLAME_CHARGE: CombatMoveV0101MoveFlameCharge;
+	COMBAT_V0102_MOVE_FLAME_BURST: CombatMoveV0102MoveFlameBurst;
+	COMBAT_V0103_MOVE_FIRE_BLAST: CombatMoveV0103MoveFireBlast;
+	COMBAT_V0104_MOVE_BRINE: CombatMoveV0104MoveBrine;
+	COMBAT_V0105_MOVE_WATER_PULSE: CombatMoveV0105MoveWaterPulse;
+	COMBAT_V0106_MOVE_SCALD: CombatMoveV0106MoveScald;
+	COMBAT_V0107_MOVE_HYDRO_PUMP: CombatMoveV0107MoveHydroPump;
+	COMBAT_V0108_MOVE_PSYCHIC: CombatMoveV0108MovePsychic;
+	COMBAT_V0109_MOVE_PSYSTRIKE: CombatMoveV0109MovePsystrike;
+	COMBAT_V0111_MOVE_ICY_WIND: CombatMoveV0111MoveIcyWind;
+	COMBAT_V0114_MOVE_GIGA_DRAIN: CombatMoveV0114MoveGigaDrain;
+	COMBAT_V0115_MOVE_FIRE_PUNCH: CombatMoveV0115MoveFirePunch;
+	COMBAT_V0116_MOVE_SOLAR_BEAM: CombatMoveV0116MoveSolarBeam;
+	COMBAT_V0117_MOVE_LEAF_BLADE: CombatMoveV0117MoveLeafBlade;
+	COMBAT_V0118_MOVE_POWER_WHIP: CombatMoveV0118MovePowerWhip;
+	COMBAT_V0121_MOVE_AIR_CUTTER: CombatMoveV0121MoveAirCutter;
+	COMBAT_V0122_MOVE_HURRICANE: CombatMoveV0122MoveHurricane;
+	COMBAT_V0123_MOVE_BRICK_BREAK: CombatMoveV0123MoveBrickBreak;
+	COMBAT_V0125_MOVE_SWIFT: CombatMoveV0125MoveSwift;
+	COMBAT_V0126_MOVE_HORN_ATTACK: CombatMoveV0126MoveHornAttack;
+	COMBAT_V0127_MOVE_STOMP: CombatMoveV0127MoveStomp;
+	COMBAT_V0129_MOVE_HYPER_FANG: CombatMoveV0129MoveHyperFang;
+	COMBAT_V0131_MOVE_BODY_SLAM: CombatMoveV0131MoveBodySlam;
+	COMBAT_V0132_MOVE_REST: CombatMoveV0132MoveRest;
+	COMBAT_V0133_MOVE_STRUGGLE: CombatMoveV0133MoveStruggle;
+	COMBAT_V0134_MOVE_SCALD_BLASTOISE: CombatMoveV0134MoveScaldBlastoise;
+	COMBAT_V0135_MOVE_HYDRO_PUMP_BLASTOISE: CombatMoveV0135MoveHydroPumpBlastoise;
+	COMBAT_V0136_MOVE_WRAP_GREEN: CombatMoveV0136MoveWrapGreen;
+	COMBAT_V0137_MOVE_WRAP_PINK: CombatMoveV0137MoveWrapPink;
+	COMBAT_V0200_MOVE_FURY_CUTTER_FAST: CombatMoveV0200MoveFuryCutterFast;
+	COMBAT_V0201_MOVE_BUG_BITE_FAST: CombatMoveV0201MoveBugBiteFast;
+	COMBAT_V0202_MOVE_BITE_FAST: CombatMoveV0202MoveBiteFast;
+	COMBAT_V0203_MOVE_SUCKER_PUNCH_FAST: CombatMoveV0203MoveSuckerPunchFast;
+	COMBAT_V0204_MOVE_DRAGON_BREATH_FAST: CombatMoveV0204MoveDragonBreathFast;
+	COMBAT_V0205_MOVE_THUNDER_SHOCK_FAST: CombatMoveV0205MoveThunderShockFast;
+	COMBAT_V0206_MOVE_SPARK_FAST: CombatMoveV0206MoveSparkFast;
+	COMBAT_V0207_MOVE_LOW_KICK_FAST: CombatMoveV0207MoveLowKickFast;
+	COMBAT_V0208_MOVE_KARATE_CHOP_FAST: CombatMoveV0208MoveKarateChopFast;
+	COMBAT_V0209_MOVE_EMBER_FAST: CombatMoveV0209MoveEmberFast;
+	COMBAT_V0210_MOVE_WING_ATTACK_FAST: CombatMoveV0210MoveWingAttackFast;
+	COMBAT_V0211_MOVE_PECK_FAST: CombatMoveV0211MovePeckFast;
+	COMBAT_V0212_MOVE_LICK_FAST: CombatMoveV0212MoveLickFast;
+	COMBAT_V0213_MOVE_SHADOW_CLAW_FAST: CombatMoveV0213MoveShadowClawFast;
+	COMBAT_V0214_MOVE_VINE_WHIP_FAST: CombatMoveV0214MoveVineWhipFast;
+	COMBAT_V0215_MOVE_RAZOR_LEAF_FAST: CombatMoveV0215MoveRazorLeafFast;
+	COMBAT_V0216_MOVE_MUD_SHOT_FAST: CombatMoveV0216MoveMudShotFast;
+	COMBAT_V0217_MOVE_ICE_SHARD_FAST: CombatMoveV0217MoveIceShardFast;
+	COMBAT_V0218_MOVE_FROST_BREATH_FAST: CombatMoveV0218MoveFrostBreathFast;
+	COMBAT_V0219_MOVE_QUICK_ATTACK_FAST: CombatMoveV0219MoveQuickAttackFast;
+	COMBAT_V0220_MOVE_SCRATCH_FAST: CombatMoveV0220MoveScratchFast;
+	COMBAT_V0221_MOVE_TACKLE_FAST: CombatMoveV0221MoveTackleFast;
+	COMBAT_V0222_MOVE_POUND_FAST: CombatMoveV0222MovePoundFast;
+	COMBAT_V0223_MOVE_CUT_FAST: CombatMoveV0223MoveCutFast;
+	COMBAT_V0224_MOVE_POISON_JAB_FAST: CombatMoveV0224MovePoisonJabFast;
+	COMBAT_V0225_MOVE_ACID_FAST: CombatMoveV0225MoveAcidFast;
+	COMBAT_V0226_MOVE_PSYCHO_CUT_FAST: CombatMoveV0226MovePsychoCutFast;
+	COMBAT_V0227_MOVE_ROCK_THROW_FAST: CombatMoveV0227MoveRockThrowFast;
+	COMBAT_V0228_MOVE_METAL_CLAW_FAST: CombatMoveV0228MoveMetalClawFast;
+	COMBAT_V0229_MOVE_BULLET_PUNCH_FAST: CombatMoveV0229MoveBulletPunchFast;
+	COMBAT_V0230_MOVE_WATER_GUN_FAST: CombatMoveV0230MoveWaterGunFast;
+	COMBAT_V0231_MOVE_SPLASH_FAST: CombatMoveV0231MoveSplashFast;
+	COMBAT_V0232_MOVE_WATER_GUN_FAST_BLASTOISE: CombatMoveV0232MoveWaterGunFastBlastoise;
+	COMBAT_V0233_MOVE_MUD_SLAP_FAST: CombatMoveV0233MoveMudSlapFast;
+	COMBAT_V0234_MOVE_ZEN_HEADBUTT_FAST: CombatMoveV0234MoveZenHeadbuttFast;
+	COMBAT_V0235_MOVE_CONFUSION_FAST: CombatMoveV0235MoveConfusionFast;
+	COMBAT_V0236_MOVE_POISON_STING_FAST: CombatMoveV0236MovePoisonStingFast;
+	COMBAT_V0237_MOVE_BUBBLE_FAST: CombatMoveV0237MoveBubbleFast;
+	COMBAT_V0238_MOVE_FEINT_ATTACK_FAST: CombatMoveV0238MoveFeintAttackFast;
+	COMBAT_V0239_MOVE_STEEL_WING_FAST: CombatMoveV0239MoveSteelWingFast;
+	COMBAT_V0240_MOVE_FIRE_FANG_FAST: CombatMoveV0240MoveFireFangFast;
+	COMBAT_V0241_MOVE_ROCK_SMASH_FAST: CombatMoveV0241MoveRockSmashFast;
+	COMBAT_V0242_MOVE_TRANSFORM_FAST: CombatMoveV0242MoveTransformFast;
+	COMBAT_V0243_MOVE_COUNTER_FAST: CombatMoveV0243MoveCounterFast;
+	COMBAT_V0244_MOVE_POWDER_SNOW_FAST: CombatMoveV0244MovePowderSnowFast;
+	COMBAT_V0245_MOVE_CLOSE_COMBAT: CombatMoveV0245MoveCloseCombat;
+	COMBAT_V0246_MOVE_DYNAMIC_PUNCH: CombatMoveV0246MoveDynamicPunch;
+	COMBAT_V0247_MOVE_FOCUS_BLAST: CombatMoveV0247MoveFocusBlast;
+	COMBAT_V0248_MOVE_AURORA_BEAM: CombatMoveV0248MoveAuroraBeam;
+	COMBAT_V0249_MOVE_CHARGE_BEAM_FAST: CombatMoveV0249MoveChargeBeamFast;
+	COMBAT_V0250_MOVE_VOLT_SWITCH_FAST: CombatMoveV0250MoveVoltSwitchFast;
+	COMBAT_V0251_MOVE_WILD_CHARGE: CombatMoveV0251MoveWildCharge;
+	COMBAT_V0252_MOVE_ZAP_CANNON: CombatMoveV0252MoveZapCannon;
+	COMBAT_V0253_MOVE_DRAGON_TAIL_FAST: CombatMoveV0253MoveDragonTailFast;
+	COMBAT_V0254_MOVE_AVALANCHE: CombatMoveV0254MoveAvalanche;
+	COMBAT_V0255_MOVE_AIR_SLASH_FAST: CombatMoveV0255MoveAirSlashFast;
+	COMBAT_V0256_MOVE_BRAVE_BIRD: CombatMoveV0256MoveBraveBird;
+	COMBAT_V0257_MOVE_SKY_ATTACK: CombatMoveV0257MoveSkyAttack;
+	COMBAT_V0258_MOVE_SAND_TOMB: CombatMoveV0258MoveSandTomb;
+	COMBAT_V0259_MOVE_ROCK_BLAST: CombatMoveV0259MoveRockBlast;
+	COMBAT_V0260_MOVE_INFESTATION_FAST: CombatMoveV0260MoveInfestationFast;
+	COMBAT_V0261_MOVE_STRUGGLE_BUG_FAST: CombatMoveV0261MoveStruggleBugFast;
+	COMBAT_V0262_MOVE_SILVER_WIND: CombatMoveV0262MoveSilverWind;
+	COMBAT_V0263_MOVE_ASTONISH_FAST: CombatMoveV0263MoveAstonishFast;
+	COMBAT_V0264_MOVE_HEX_FAST: CombatMoveV0264MoveHexFast;
+	COMBAT_V0265_MOVE_NIGHT_SHADE: CombatMoveV0265MoveNightShade;
+	COMBAT_V0266_MOVE_IRON_TAIL_FAST: CombatMoveV0266MoveIronTailFast;
+	COMBAT_V0267_MOVE_GYRO_BALL: CombatMoveV0267MoveGyroBall;
+	COMBAT_V0268_MOVE_HEAVY_SLAM: CombatMoveV0268MoveHeavySlam;
+	COMBAT_V0269_MOVE_FIRE_SPIN_FAST: CombatMoveV0269MoveFireSpinFast;
+	COMBAT_V0270_MOVE_OVERHEAT: CombatMoveV0270MoveOverheat;
+	COMBAT_V0271_MOVE_BULLET_SEED_FAST: CombatMoveV0271MoveBulletSeedFast;
+	COMBAT_V0272_MOVE_GRASS_KNOT: CombatMoveV0272MoveGrassKnot;
+	COMBAT_V0273_MOVE_ENERGY_BALL: CombatMoveV0273MoveEnergyBall;
+	COMBAT_V0274_MOVE_EXTRASENSORY_FAST: CombatMoveV0274MoveExtrasensoryFast;
+	COMBAT_V0275_MOVE_FUTURESIGHT: CombatMoveV0275MoveFuturesight;
+	COMBAT_V0276_MOVE_MIRROR_COAT: CombatMoveV0276MoveMirrorCoat;
+	COMBAT_V0277_MOVE_OUTRAGE: CombatMoveV0277MoveOutrage;
+	COMBAT_V0278_MOVE_SNARL_FAST: CombatMoveV0278MoveSnarlFast;
+	COMBAT_V0279_MOVE_CRUNCH: CombatMoveV0279MoveCrunch;
+	COMBAT_V0280_MOVE_FOUL_PLAY: CombatMoveV0280MoveFoulPlay;
+	COMBAT_V0281_MOVE_HIDDEN_POWER_FAST: CombatMoveV0281MoveHiddenPowerFast;
+	COMBAT_V0282_MOVE_TAKE_DOWN_FAST: CombatMoveV0282MoveTakeDownFast;
+	COMBAT_V0283_MOVE_WATERFALL_FAST: CombatMoveV0283MoveWaterfallFast;
+	COMBAT_V0284_MOVE_SURF: CombatMoveV0284MoveSurf;
+	COMBAT_V0285_MOVE_DRACO_METEOR: CombatMoveV0285MoveDracoMeteor;
+	COMBAT_V0286_MOVE_DOOM_DESIRE: CombatMoveV0286MoveDoomDesire;
+	COMBAT_V0287_MOVE_YAWN_FAST: CombatMoveV0287MoveYawnFast;
+	COMBAT_V0288_MOVE_PSYCHO_BOOST: CombatMoveV0288MovePsychoBoost;
+	COMBAT_V0289_MOVE_ORIGIN_PULSE: CombatMoveV0289MoveOriginPulse;
+	COMBAT_V0290_MOVE_PRECIPICE_BLADES: CombatMoveV0290MovePrecipiceBlades;
+	COMBAT_V0291_MOVE_PRESENT_FAST: CombatMoveV0291MovePresentFast;
+	COMBAT_V0292_MOVE_WEATHER_BALL_FIRE: CombatMoveV0292MoveWeatherBallFire;
+	COMBAT_V0293_MOVE_WEATHER_BALL_ICE: CombatMoveV0293MoveWeatherBallIce;
+	COMBAT_V0294_MOVE_WEATHER_BALL_ROCK: CombatMoveV0294MoveWeatherBallRock;
+	COMBAT_V0295_MOVE_WEATHER_BALL_WATER: CombatMoveV0295MoveWeatherBallWater;
+	COMBAT_V0296_MOVE_FRENZY_PLANT: CombatMoveV0296MoveFrenzyPlant;
+	COMBAT_V0297_MOVE_SMACK_DOWN_FAST: CombatMoveV0297MoveSmackDownFast;
+	COMBAT_V0298_MOVE_BLAST_BURN: CombatMoveV0298MoveBlastBurn;
+	COMBAT_V0299_MOVE_HYDRO_CANNON: CombatMoveV0299MoveHydroCannon;
+	COMBAT_V0300_MOVE_LAST_RESORT: CombatMoveV0300MoveLastResort;
+	COMBAT_V0301_MOVE_METEOR_MASH: CombatMoveV0301MoveMeteorMash;
+	COMBAT_V0302_MOVE_SKULL_BASH: CombatMoveV0302MoveSkullBash;
+	COMBAT_V0303_MOVE_ACID_SPRAY: CombatMoveV0303MoveAcidSpray;
+	COMBAT_V0304_MOVE_EARTH_POWER: CombatMoveV0304MoveEarthPower;
+	COMBAT_V0305_MOVE_CRABHAMMER: CombatMoveV0305MoveCrabhammer;
+	COMBAT_V0306_MOVE_LUNGE: CombatMoveV0306MoveLunge;
+	COMBAT_V0308_MOVE_OCTAZOOKA: CombatMoveV0308MoveOctazooka;
+	COMBAT_V0309_MOVE_MIRROR_SHOT: CombatMoveV0309MoveMirrorShot;
+	COMBAT_V0310_MOVE_SUPER_POWER: CombatMoveV0310MoveSuperPower;
+	COMBAT_V0311_MOVE_FELL_STINGER: CombatMoveV0311MoveFellStinger;
+	COMBAT_V0312_MOVE_LEAF_TORNADO: CombatMoveV0312MoveLeafTornado;
+	COMBAT_V0314_MOVE_DRAIN_PUNCH: CombatMoveV0314MoveDrainPunch;
+	COMBAT_V0315_MOVE_SHADOW_BONE: CombatMoveV0315MoveShadowBone;
+	COMBAT_V0316_MOVE_MUDDY_WATER: CombatMoveV0316MoveMuddyWater;
+	COMBAT_V0317_MOVE_BLAZE_KICK: CombatMoveV0317MoveBlazeKick;
+	COMBAT_V0318_MOVE_RAZOR_SHELL: CombatMoveV0318MoveRazorShell;
+	COMBAT_V0319_MOVE_POWER_UP_PUNCH: CombatMoveV0319MovePowerUpPunch;
+	COMBAT_V0320_MOVE_CHARM_FAST: CombatMoveV0320MoveCharmFast;
+	COMBAT_V0321_MOVE_GIGA_IMPACT: CombatMoveV0321MoveGigaImpact;
+	COMBAT_V0322_MOVE_FRUSTRATION: CombatMoveV0322MoveFrustration;
+	COMBAT_V0323_MOVE_RETURN: CombatMoveV0323MoveReturn;
+	COMBAT_V0324_MOVE_SYNCHRONOISE: CombatMoveV0324MoveSynchronoise;
+	COMBAT_V0325_MOVE_LOCK_ON_FAST: CombatMoveV0325MoveLockOnFast;
+	COMBAT_V0326_MOVE_THUNDER_FANG_FAST: CombatMoveV0326MoveThunderFangFast;
+	COMBAT_V0327_MOVE_ICE_FANG_FAST: CombatMoveV0327MoveIceFangFast;
+	COMBAT_V0330_MOVE_SACRED_SWORD: CombatMoveV0330MoveSacredSword;
+	COMBAT_V0331_MOVE_FLYING_PRESS: CombatMoveV0331MoveFlyingPress;
+	COMBAT_V0332_MOVE_AURA_SPHERE: CombatMoveV0332MoveAuraSphere;
+	COMBAT_V0333_MOVE_PAYBACK: CombatMoveV0333MovePayback;
+	COMBAT_V0334_MOVE_ROCK_WRECKER: CombatMoveV0334MoveRockWrecker;
+	COMBAT_V0335_MOVE_AEROBLAST: CombatMoveV0335MoveAeroblast;
+	COMBAT_V0336_MOVE_TECHNO_BLAST_NORMAL: CombatMoveV0336MoveTechnoBlastNormal;
+	COMBAT_V0337_MOVE_TECHNO_BLAST_BURN: CombatMoveV0337MoveTechnoBlastBurn;
+	COMBAT_V0338_MOVE_TECHNO_BLAST_CHILL: CombatMoveV0338MoveTechnoBlastChill;
+	COMBAT_V0339_MOVE_TECHNO_BLAST_WATER: CombatMoveV0339MoveTechnoBlastWater;
+	COMBAT_V0340_MOVE_TECHNO_BLAST_SHOCK: CombatMoveV0340MoveTechnoBlastShock;
+	COMBAT_V0341_MOVE_FLY: CombatMoveV0341MoveFly;
+	COMBAT_V0342_MOVE_V_CREATE: CombatMoveV0342MoveVCreate;
+	COMBAT_V0343_MOVE_LEAF_STORM: CombatMoveV0343MoveLeafStorm;
+	COMBAT_V0344_MOVE_TRI_ATTACK: CombatMoveV0344MoveTriAttack;
+	COMBAT_V0345_MOVE_GUST_FAST: CombatMoveV0345MoveGustFast;
+	COMBAT_V0346_MOVE_INCINERATE_FAST: CombatMoveV0346MoveIncinerateFast;
+	COMBAT_V0348_MOVE_FEATHER_DANCE: CombatMoveV0348MoveFeatherDance;
+	COMBAT_V0350_MOVE_FAIRY_WIND_FAST: CombatMoveV0350MoveFairyWindFast;
+	COMBAT_V0352_MOVE_WEATHER_BALL_NORMAL: CombatMoveV0352MoveWeatherBallNormal;
+	COMBAT_V0353_MOVE_PSYCHIC_FANGS: CombatMoveV0353MovePsychicFangs;
+	COMBAT_V0356_MOVE_DOUBLE_KICK_FAST: CombatMoveV0356MoveDoubleKickFast;
+	COMBAT_V0357_MOVE_MAGICAL_LEAF_FAST: CombatMoveV0357MoveMagicalLeafFast;
+	COMBAT_V0358_MOVE_SACRED_FIRE: CombatMoveV0358MoveSacredFire;
+	COMBAT_V0359_MOVE_ICICLE_SPEAR: CombatMoveV0359MoveIcicleSpear;
+	COMBAT_V0360_MOVE_AEROBLAST_PLUS: CombatMoveV0360MoveAeroblastPlus;
+	COMBAT_V0361_MOVE_AEROBLAST_PLUS_PLUS: CombatMoveV0361MoveAeroblastPlusPlus;
+	COMBAT_V0362_MOVE_SACRED_FIRE_PLUS: CombatMoveV0362MoveSacredFirePlus;
+	COMBAT_V0363_MOVE_SACRED_FIRE_PLUS_PLUS: CombatMoveV0363MoveSacredFirePlusPlus;
+	COMBAT_V0364_MOVE_ACROBATICS: CombatMoveV0364MoveAcrobatics;
+	COMBAT_V0365_MOVE_LUSTER_PURGE: CombatMoveV0365MoveLusterPurge;
+	COMBAT_V0366_MOVE_MIST_BALL: CombatMoveV0366MoveMistBall;
+	COMBAT_V0367_MOVE_BRUTAL_SWING: CombatMoveV0367MoveBrutalSwing;
+	COMBAT_V0368_MOVE_ROLLOUT_FAST: CombatMoveV0368MoveRolloutFast;
+	COMBAT_V0369_MOVE_SEED_FLARE: CombatMoveV0369MoveSeedFlare;
+	COMBAT_V0370_MOVE_OBSTRUCT: CombatMoveV0370MoveObstruct;
+	COMBAT_V0371_MOVE_SHADOW_FORCE: CombatMoveV0371MoveShadowForce;
+	COMBAT_V0372_MOVE_METEOR_BEAM: CombatMoveV0372MoveMeteorBeam;
+	COMBAT_V0373_MOVE_WATER_SHURIKEN_FAST: CombatMoveV0373MoveWaterShurikenFast;
+	COMBAT_V0374_MOVE_FUSION_BOLT: CombatMoveV0374MoveFusionBolt;
+	COMBAT_V0375_MOVE_FUSION_FLARE: CombatMoveV0375MoveFusionFlare;
+	COMBAT_V0376_MOVE_POLTERGEIST: CombatMoveV0376MovePoltergeist;
+	COMBAT_V0377_MOVE_HIGH_HORSEPOWER: CombatMoveV0377MoveHighHorsepower;
+	COMBAT_V0378_MOVE_GLACIATE: CombatMoveV0378MoveGlaciate;
+	COMBAT_V0379_MOVE_BREAKING_SWIPE: CombatMoveV0379MoveBreakingSwipe;
+	COMBAT_V0380_MOVE_BOOMBURST: CombatMoveV0380MoveBoomburst;
+	COMBAT_V0381_MOVE_DOUBLE_IRON_BASH: CombatMoveV0381MoveDoubleIronBash;
+	COMBAT_V0382_MOVE_MYSTICAL_FIRE: CombatMoveV0382MoveMysticalFire;
+	COMBAT_V0383_MOVE_LIQUIDATION: CombatMoveV0383MoveLiquidation;
+	COMBAT_V0384_MOVE_DRAGON_ASCENT: CombatMoveV0384MoveDragonAscent;
+	COMBAT_V0385_MOVE_LEAFAGE_FAST: CombatMoveV0385MoveLeafageFast;
+	COMBAT_V0386_MOVE_MAGMA_STORM: CombatMoveV0386MoveMagmaStorm;
+	COMBAT_V0387_MOVE_GEOMANCY_FAST: CombatMoveV0387MoveGeomancyFast;
+	COMBAT_V0388_MOVE_SPACIAL_REND: CombatMoveV0388MoveSpacialRend;
+	COMBAT_V0389_MOVE_OBLIVION_WING: CombatMoveV0389MoveOblivionWing;
+	COMBAT_V0390_MOVE_NATURES_MADNESS: CombatMoveV0390MoveNaturesMadness;
+	COMBAT_V0391_MOVE_TRIPLE_AXEL: CombatMoveV0391MoveTripleAxel;
+	COMBAT_V0392_MOVE_TRAILBLAZE: CombatMoveV0392MoveTrailblaze;
+	COMBAT_V0393_MOVE_SCORCHING_SANDS: CombatMoveV0393MoveScorchingSands;
+	COMBAT_V0394_MOVE_ROAR_OF_TIME: CombatMoveV0394MoveRoarOfTime;
+	COMBAT_V0395_MOVE_BLEAKWIND_STORM: CombatMoveV0395MoveBleakwindStorm;
+	COMBAT_V0396_MOVE_SANDSEAR_STORM: CombatMoveV0396MoveSandsearStorm;
+	COMBAT_V0397_MOVE_WILDBOLT_STORM: CombatMoveV0397MoveWildboltStorm;
+	COMBAT_V0398_MOVE_SPIRIT_SHACKLE: CombatMoveV0398MoveSpiritShackle;
+	COMBAT_V0399_MOVE_VOLT_TACKLE: CombatMoveV0399MoveVoltTackle;
+	COMBAT_V0400_MOVE_DARKEST_LARIAT: CombatMoveV0400MoveDarkestLariat;
+	COMBAT_V0401_MOVE_PSYWAVE_FAST: CombatMoveV0401MovePsywaveFast;
+	COMBAT_V0402_MOVE_METAL_SOUND_FAST: CombatMoveV0402MoveMetalSoundFast;
+	COMBAT_V0403_MOVE_SAND_ATTACK_FAST: CombatMoveV0403MoveSandAttackFast;
+	COMBAT_V0404_MOVE_SUNSTEEL_STRIKE: CombatMoveV0404MoveSunsteelStrike;
+	COMBAT_V0405_MOVE_MOONGEIST_BEAM: CombatMoveV0405MoveMoongeistBeam;
+	COMBAT_V0406_MOVE_AURA_WHEEL_ELECTRIC: CombatMoveV0406MoveAuraWheelElectric;
+	COMBAT_V0407_MOVE_AURA_WHEEL_DARK: CombatMoveV0407MoveAuraWheelDark;
+	COMBAT_V0408_MOVE_HIGH_JUMP_KICK: CombatMoveV0408MoveHighJumpKick;
+	COMBAT_V0462_MOVE_FORCE_PALM_FAST: CombatMoveV0462MoveForcePalmFast;
+	COMBAT_V0463_MOVE_SPARKLING_ARIA: CombatMoveV0463MoveSparklingAria;
+	COMBAT_V0464_MOVE_RAGE_FIST: CombatMoveV0464MoveRageFist;
+	COMBAT_V0465_MOVE_FLOWER_TRICK: CombatMoveV0465MoveFlowerTrick;
+	COMBAT_V0466_MOVE_FREEZE_SHOCK: CombatMoveV0466MoveFreezeShock;
+	COMBAT_V0467_MOVE_ICE_BURN: CombatMoveV0467MoveIceBurn;
+	COMBAT_V0468_MOVE_TORCH_SONG: CombatMoveV0468MoveTorchSong;
+	COMBAT_V0469_MOVE_BEHEMOTH_BLADE: CombatMoveV0469MoveBehemothBlade;
+	COMBAT_V0470_MOVE_BEHEMOTH_BASH: CombatMoveV0470MoveBehemothBash;
+	COMBAT_V0471_MOVE_UPPER_HAND: CombatMoveV0471MoveUpperHand;
+	COMBAT_V0472_MOVE_THUNDER_CAGE: CombatMoveV0472MoveThunderCage;
+	COMBAT_V0482_MOVE_DYNAMAX_CANNON: CombatMoveV0482MoveDynamaxCannon;
+	COMBAT_V0484_MOVE_CLANGING_SCALES: CombatMoveV0484MoveClangingScales;
+	COMBAT_V0485_MOVE_CRUSH_GRIP: CombatMoveV0485MoveCrushGrip;
+	COMBAT_V0486_MOVE_DRAGON_ENERGY: CombatMoveV0486MoveDragonEnergy;
+	COMBAT_V0487_MOVE_AQUA_STEP: CombatMoveV0487MoveAquaStep;
+	COMBAT_V0488_MOVE_CHILLING_WATER: CombatMoveV0488MoveChillingWater;
+	COMBAT_V0489_MOVE_SECRET_SWORD: CombatMoveV0489MoveSecretSword;
+	COMBAT_V0490_MOVE_BEAK_BLAST: CombatMoveV0490MoveBeakBlast;
+	COMBAT_V0491_MOVE_MIND_BLOWN: CombatMoveV0491MoveMindBlown;
+	COMBAT_V0492_MOVE_DRUM_BEATING: CombatMoveV0492MoveDrumBeating;
+	COMBAT_V0493_MOVE_PYROBALL: CombatMoveV0493MovePyroball;
+	COMBAT_V0494_MOVE_GIGATON_HAMMER: CombatMoveV0494MoveGigatonHammer;
+}

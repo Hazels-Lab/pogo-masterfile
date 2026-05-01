@@ -1,0 +1,97 @@
+// Generated from Pokémon GO masterfile — "photoSetsSettingsProto" lookup table.
+
+import type {
+	PhotoSetsSettingsProtoAlola,
+	PhotoSetsSettingsProtoAncientFossils,
+	PhotoSetsSettingsProtoBattlePokemon,
+	PhotoSetsSettingsProtoBundleOfJoy,
+	PhotoSetsSettingsProtoBusyCity,
+	PhotoSetsSettingsProtoClawedCuties,
+	PhotoSetsSettingsProtoCutePokemonPink,
+	PhotoSetsSettingsProtoFallVibes,
+	PhotoSetsSettingsProtoFeatheredFriends,
+	PhotoSetsSettingsProtoFeatheredFriendsLarge,
+	PhotoSetsSettingsProtoFeelingFancy,
+	PhotoSetsSettingsProtoFurryFriends,
+	PhotoSetsSettingsProtoFurryFriendsLarge,
+	PhotoSetsSettingsProtoGracefulFlyers,
+	PhotoSetsSettingsProtoHisui,
+	PhotoSetsSettingsProtoHoenn,
+	PhotoSetsSettingsProtoJohto,
+	PhotoSetsSettingsProtoJustLovely,
+	PhotoSetsSettingsProtoKalos,
+	PhotoSetsSettingsProtoKanto,
+	PhotoSetsSettingsProtoLittleChonkers,
+	PhotoSetsSettingsProtoMountainPass,
+	PhotoSetsSettingsProtoMuseumFossils,
+	PhotoSetsSettingsProtoPaldea,
+	PhotoSetsSettingsProtoPlayfulPalsLarge,
+	PhotoSetsSettingsProtoRelaxingGarden,
+	PhotoSetsSettingsProtoSafariTrek,
+	PhotoSetsSettingsProtoSandyShoreline,
+	PhotoSetsSettingsProtoShadowsOfNight,
+	PhotoSetsSettingsProtoSinnoh,
+	PhotoSetsSettingsProtoSmallAndCute,
+	PhotoSetsSettingsProtoSmallCutePokemon,
+	PhotoSetsSettingsProtoSmallCutePokemonPikachuAndEevee,
+	PhotoSetsSettingsProtoSmallCutePokemonPink,
+	PhotoSetsSettingsProtoSmallFlowerPokemon,
+	PhotoSetsSettingsProtoSmallFlowerPokemonMedium,
+	PhotoSetsSettingsProtoSmallFlowerPokemonSeeds,
+	PhotoSetsSettingsProtoSmallWaterPokemon,
+	PhotoSetsSettingsProtoSpringVibes,
+	PhotoSetsSettingsProtoStarters,
+	PhotoSetsSettingsProtoSummerVibes,
+	PhotoSetsSettingsProtoTinyTikes,
+	PhotoSetsSettingsProtoUnova,
+	PhotoSetsSettingsProtoWingsPokemon,
+	PhotoSetsSettingsProtoWinterVibes,
+} from "pogo-masterfile-types/entries";
+
+export interface PhotoSetsSettingsProtoLookup {
+	PHOTO_SET_ALOLA: PhotoSetsSettingsProtoAlola;
+	PHOTO_SET_ANCIENT_FOSSILS: PhotoSetsSettingsProtoAncientFossils;
+	PHOTO_SET_BATTLE_POKEMON: PhotoSetsSettingsProtoBattlePokemon;
+	PHOTO_SET_BUNDLE_OF_JOY: PhotoSetsSettingsProtoBundleOfJoy;
+	PHOTO_SET_BUSY_CITY: PhotoSetsSettingsProtoBusyCity;
+	PHOTO_SET_CLAWED_CUTIES: PhotoSetsSettingsProtoClawedCuties;
+	PHOTO_SET_CUTE_POKEMON_PINK: PhotoSetsSettingsProtoCutePokemonPink;
+	PHOTO_SET_FALL_VIBES: PhotoSetsSettingsProtoFallVibes;
+	PHOTO_SET_FEATHERED_FRIENDS: PhotoSetsSettingsProtoFeatheredFriends;
+	PHOTO_SET_FEATHERED_FRIENDS_LARGE: PhotoSetsSettingsProtoFeatheredFriendsLarge;
+	PHOTO_SET_FEELING_FANCY: PhotoSetsSettingsProtoFeelingFancy;
+	PHOTO_SET_FURRY_FRIENDS: PhotoSetsSettingsProtoFurryFriends;
+	PHOTO_SET_FURRY_FRIENDS_LARGE: PhotoSetsSettingsProtoFurryFriendsLarge;
+	PHOTO_SET_GRACEFUL_FLYERS: PhotoSetsSettingsProtoGracefulFlyers;
+	PHOTO_SET_HISUI: PhotoSetsSettingsProtoHisui;
+	PHOTO_SET_HOENN: PhotoSetsSettingsProtoHoenn;
+	PHOTO_SET_JOHTO: PhotoSetsSettingsProtoJohto;
+	PHOTO_SET_JUST_LOVELY: PhotoSetsSettingsProtoJustLovely;
+	PHOTO_SET_KALOS: PhotoSetsSettingsProtoKalos;
+	PHOTO_SET_KANTO: PhotoSetsSettingsProtoKanto;
+	PHOTO_SET_LITTLE_CHONKERS: PhotoSetsSettingsProtoLittleChonkers;
+	PHOTO_SET_MOUNTAIN_PASS: PhotoSetsSettingsProtoMountainPass;
+	PHOTO_SET_MUSEUM_FOSSILS: PhotoSetsSettingsProtoMuseumFossils;
+	PHOTO_SET_PALDEA: PhotoSetsSettingsProtoPaldea;
+	PHOTO_SET_PLAYFUL_PALS_LARGE: PhotoSetsSettingsProtoPlayfulPalsLarge;
+	PHOTO_SET_RELAXING_GARDEN: PhotoSetsSettingsProtoRelaxingGarden;
+	PHOTO_SET_SAFARI_TREK: PhotoSetsSettingsProtoSafariTrek;
+	PHOTO_SET_SANDY_SHORELINE: PhotoSetsSettingsProtoSandyShoreline;
+	PHOTO_SET_SHADOWS_OF_NIGHT: PhotoSetsSettingsProtoShadowsOfNight;
+	PHOTO_SET_SINNOH: PhotoSetsSettingsProtoSinnoh;
+	PHOTO_SET_SMALL_AND_CUTE: PhotoSetsSettingsProtoSmallAndCute;
+	PHOTO_SET_SMALL_CUTE_POKEMON: PhotoSetsSettingsProtoSmallCutePokemon;
+	PHOTO_SET_SMALL_CUTE_POKEMON_PIKACHU_AND_EEVEE: PhotoSetsSettingsProtoSmallCutePokemonPikachuAndEevee;
+	PHOTO_SET_SMALL_CUTE_POKEMON_PINK: PhotoSetsSettingsProtoSmallCutePokemonPink;
+	PHOTO_SET_SMALL_FLOWER_POKEMON: PhotoSetsSettingsProtoSmallFlowerPokemon;
+	PHOTO_SET_SMALL_FLOWER_POKEMON_MEDIUM: PhotoSetsSettingsProtoSmallFlowerPokemonMedium;
+	PHOTO_SET_SMALL_FLOWER_POKEMON_SEEDS: PhotoSetsSettingsProtoSmallFlowerPokemonSeeds;
+	PHOTO_SET_SMALL_WATER_POKEMON: PhotoSetsSettingsProtoSmallWaterPokemon;
+	PHOTO_SET_SPRING_VIBES: PhotoSetsSettingsProtoSpringVibes;
+	PHOTO_SET_STARTERS: PhotoSetsSettingsProtoStarters;
+	PHOTO_SET_SUMMER_VIBES: PhotoSetsSettingsProtoSummerVibes;
+	PHOTO_SET_TINY_TIKES: PhotoSetsSettingsProtoTinyTikes;
+	PHOTO_SET_UNOVA: PhotoSetsSettingsProtoUnova;
+	PHOTO_SET_WINGS_POKEMON: PhotoSetsSettingsProtoWingsPokemon;
+	PHOTO_SET_WINTER_VIBES: PhotoSetsSettingsProtoWinterVibes;
+}

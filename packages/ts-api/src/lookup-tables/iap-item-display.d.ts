@@ -1,0 +1,2247 @@
+// Generated from Pokémon GO masterfile — "iapItemDisplay" lookup table.
+
+import type {
+	IapItemDisplayApril12026DeluxeEventPassTrackUnlock,
+	IapItemDisplayApril12026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayApril22026DeluxeEventPassTrackUnlock,
+	IapItemDisplayApril22026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayApril32026DeluxeEventPassTrackUnlock,
+	IapItemDisplayApril32026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayBattlepassticket1,
+	IapItemDisplayBundleAdventurebrazil1001,
+	IapItemDisplayBundleAdventurebrazil2001,
+	IapItemDisplayBundleAnniversary20231,
+	IapItemDisplayBundleApacmar20251,
+	IapItemDisplayBundleArraia20251,
+	IapItemDisplayBundleArraia20252,
+	IapItemDisplayBundleAtlanticav2box1,
+	IapItemDisplayBundleAtlanticav2box2,
+	IapItemDisplayBundleBlackfridaystickers241,
+	IapItemDisplayBundleBlackfridaystickers242,
+	IapItemDisplayBundleBoost20231,
+	IapItemDisplayBundleBrazil20231,
+	IapItemDisplayBundleBrazilrediscover11,
+	IapItemDisplayBundleBrazilrediscover21,
+	IapItemDisplayBundleBrazilvacations1001,
+	IapItemDisplayBundleCarnival20251,
+	IapItemDisplayBundleCarnival20252,
+	IapItemDisplayBundleCd20221,
+	IapItemDisplayBundleCd20222,
+	IapItemDisplayBundleCdrecapstickers1,
+	IapItemDisplayBundleCitysafari450hktw1,
+	IapItemDisplayBundleCswkmakegoodprep1001,
+	IapItemDisplayBundleCswkmakegoodprep2001,
+	IapItemDisplayBundleCswkmakegoodprep3001,
+	IapItemDisplayBundleDecroutes20231,
+	IapItemDisplayBundleDiademuertos20251,
+	IapItemDisplayBundleDiademuertosmax1001,
+	IapItemDisplayBundleDiademuertosmax2001,
+	IapItemDisplayBundleDiwali20251,
+	IapItemDisplayBundleDiwali20252,
+	IapItemDisplayBundleDiwalimax1001,
+	IapItemDisplayBundleEc200Rpp1,
+	IapItemDisplayBundleEc600Rpp3,
+	IapItemDisplayBundleEliteexp20241,
+	IapItemDisplayBundleEliteexp20242,
+	IapItemDisplayBundleEliteexp20243,
+	IapItemDisplayBundleEliteexp20244,
+	IapItemDisplayBundleEliteexp20245,
+	IapItemDisplayBundleEmcarnival20261,
+	IapItemDisplayBundleEmcarnival20262,
+	IapItemDisplayBundleEmea20231,
+	IapItemDisplayBundleEvolve20221,
+	IapItemDisplayBundleEvolve20222,
+	IapItemDisplayBundleEvolve20223,
+	IapItemDisplayBundleEvolve20224,
+	IapItemDisplayBundleEvolve20225,
+	IapItemDisplayBundleEvolve20226,
+	IapItemDisplayBundleFol20221,
+	IapItemDisplayBundleFol20222,
+	IapItemDisplayBundleFol20223,
+	IapItemDisplayBundleFol20224,
+	IapItemDisplayBundleGeneral1Free1,
+	IapItemDisplayBundleGeneral1Large1,
+	IapItemDisplayBundleGeneral1Medium1,
+	IapItemDisplayBundleGeneral1Medium2,
+	IapItemDisplayBundleGeneral1Medium3,
+	IapItemDisplayBundleGeneral1Rocket1,
+	IapItemDisplayBundleGeneral1Small1,
+	IapItemDisplayBundleGeneral1Tiny2,
+	IapItemDisplayBundleGeneral1Tiny3,
+	IapItemDisplayBundleGeneral1Tiny4,
+	IapItemDisplayBundleGeneral2Free1,
+	IapItemDisplayBundleGeneral2Large1,
+	IapItemDisplayBundleGeneral2Medium1,
+	IapItemDisplayBundleGeneral2Small1,
+	IapItemDisplayBundleGeneral3Free1,
+	IapItemDisplayBundleGeneral3Large1,
+	IapItemDisplayBundleGeneral3Small1,
+	IapItemDisplayBundleGeneral4Large1,
+	IapItemDisplayBundleGeneral4Small2,
+	IapItemDisplayBundleGeneral5Large1,
+	IapItemDisplayBundleGeneral5Small1,
+	IapItemDisplayBundleGeneral5Small2,
+	IapItemDisplayBundleGeneral5Small3,
+	IapItemDisplayBundleGeneral5Small4,
+	IapItemDisplayBundleGeneral5Small5,
+	IapItemDisplayBundleGeneral6Small1,
+	IapItemDisplayBundleGeneralTemplate4,
+	IapItemDisplayBundleGeneralTemplate5,
+	IapItemDisplayBundleGeneralTemplate6,
+	IapItemDisplayBundleGmaxday1,
+	IapItemDisplayBundleGofest20231,
+	IapItemDisplayBundleGofest20232,
+	IapItemDisplayBundleGofest20233,
+	IapItemDisplayBundleGofest20234,
+	IapItemDisplayBundleGofest20235,
+	IapItemDisplayBundleGofest20241,
+	IapItemDisplayBundleGofest20242,
+	IapItemDisplayBundleGofest20243,
+	IapItemDisplayBundleGofest20244,
+	IapItemDisplayBundleGofestmakegoodprep1,
+	IapItemDisplayBundleGofestmakegoodprep2,
+	IapItemDisplayBundleGofestmakegoodprep3,
+	IapItemDisplayBundleGotour20241,
+	IapItemDisplayBundleGotour20242,
+	IapItemDisplayBundleGotour20243,
+	IapItemDisplayBundleGotour20244,
+	IapItemDisplayBundleGotour20245,
+	IapItemDisplayBundleGotour20246,
+	IapItemDisplayBundleGotour20247,
+	IapItemDisplayBundleGowa20241,
+	IapItemDisplayBundleGowa20242,
+	IapItemDisplayBundleGowa20243,
+	IapItemDisplayBundleGowa20244,
+	IapItemDisplayBundleGpdindialaunch1,
+	IapItemDisplayBundleGpmay20231,
+	IapItemDisplayBundleGwlatam20251,
+	IapItemDisplayBundleGwlatam20252,
+	IapItemDisplayBundleGwlatam20253,
+	IapItemDisplayBundleHalloween20221,
+	IapItemDisplayBundleHalloween20222,
+	IapItemDisplayBundleHalloween20223,
+	IapItemDisplayBundleHalloween20231,
+	IapItemDisplayBundleHalloween20232,
+	IapItemDisplayBundleHalloween20233,
+	IapItemDisplayBundleHalloween20251,
+	IapItemDisplayBundleHalloween20252,
+	IapItemDisplayBundleHalloween20253,
+	IapItemDisplayBundleHalloweenAdventure1,
+	IapItemDisplayBundleHalloweenLarge1,
+	IapItemDisplayBundleHalloweenSmall1,
+	IapItemDisplayBundleHarvestcatch1,
+	IapItemDisplayBundleHarvestfestival2025,
+	IapItemDisplayBundleHatchbox20241,
+	IapItemDisplayBundleHawlucha20251,
+	IapItemDisplayBundleHawlucha20252,
+	IapItemDisplayBundleHawluchacelebration1001,
+	IapItemDisplayBundleHawluchacelebration2001,
+	IapItemDisplayBundleHisuiraidday20231,
+	IapItemDisplayBundleHoli20251,
+	IapItemDisplayBundleHoli20252,
+	IapItemDisplayBundleHoliday20221,
+	IapItemDisplayBundleHoliday20222,
+	IapItemDisplayBundleHoliday20223,
+	IapItemDisplayBundleHoliday20241,
+	IapItemDisplayBundleIncenseday1,
+	IapItemDisplayBundleIndiaaugust1001,
+	IapItemDisplayBundleIndiaboxfeature1,
+	IapItemDisplayBundleIndiafestivaloflights1,
+	IapItemDisplayBundleIndiamay20241,
+	IapItemDisplayBundleIndiaseptember1001,
+	IapItemDisplayBundleIndiaseptember2001,
+	IapItemDisplayBundleIndonesiaboxfeature1,
+	IapItemDisplayBundleIndonesialaunch1,
+	IapItemDisplayBundleIndonesialaunch2,
+	IapItemDisplayBundleJakartaaugust1001,
+	IapItemDisplayBundleKoreaseptember1001,
+	IapItemDisplayBundleKoreaseptember2001,
+	IapItemDisplayBundleKsalaunch1001,
+	IapItemDisplayBundleKsalaunch2001,
+	IapItemDisplayBundleLatbox1001,
+	IapItemDisplayBundleLatbox3001,
+	IapItemDisplayBundleLunarnewyear1,
+	IapItemDisplayBundleMaxfinale1,
+	IapItemDisplayBundleMaxfinale2,
+	IapItemDisplayBundleMaxmonday1,
+	IapItemDisplayBundleMegaLucarioRaidDay20241,
+	IapItemDisplayBundleMheracrossraidday20241,
+	IapItemDisplayBundleMidautumn1,
+	IapItemDisplayBundleMidautumn2,
+	IapItemDisplayBundleMidautumn3,
+	IapItemDisplayBundleNewyears20241,
+	IapItemDisplayBundlePlaysummerbox1,
+	IapItemDisplayBundlePrimalraidday20231,
+	IapItemDisplayBundlePsychSpec20221,
+	IapItemDisplayBundlePsychSpec20222,
+	IapItemDisplayBundlePsychSpec20223,
+	IapItemDisplayBundleRamadan1,
+	IapItemDisplayBundleRamadan2,
+	IapItemDisplayBundleRarebundle1,
+	IapItemDisplayBundleRarebundle2,
+	IapItemDisplayBundleRarebundle3,
+	IapItemDisplayBundleRarebundle4,
+	IapItemDisplayBundleRiolu20231,
+	IapItemDisplayBundleRiolu20232,
+	IapItemDisplayBundleRockruffboost1,
+	IapItemDisplayBundleRrpstar1,
+	IapItemDisplayBundleS17seasonstart1,
+	IapItemDisplayBundleSeason10evergreen1,
+	IapItemDisplayBundleSeason10evergreen2,
+	IapItemDisplayBundleSeason10evergreen3,
+	IapItemDisplayBundleSeason11evergreen1,
+	IapItemDisplayBundleSeason11evergreen2,
+	IapItemDisplayBundleSeason11evergreen3,
+	IapItemDisplayBundleSeason12evergreen20231,
+	IapItemDisplayBundleSeason12evergreen20232,
+	IapItemDisplayBundleSeason12evergreen20233,
+	IapItemDisplayBundleSeason13evergreen20231,
+	IapItemDisplayBundleSeason13evergreen20232,
+	IapItemDisplayBundleSeason13evergreen20233,
+	IapItemDisplayBundleSeason14evergreen20241,
+	IapItemDisplayBundleSeason14evergreen20242,
+	IapItemDisplayBundleSeason14evergreen20243,
+	IapItemDisplayBundleSeason15evergreen20241,
+	IapItemDisplayBundleSeason15evergreen20242,
+	IapItemDisplayBundleSeason15evergreen20243,
+	IapItemDisplayBundleSeason16evergreen20241,
+	IapItemDisplayBundleSeason16evergreen20242,
+	IapItemDisplayBundleSeason16evergreen20243,
+	IapItemDisplayBundleSeasonaldelights20241,
+	IapItemDisplayBundleShadowlugia1,
+	IapItemDisplayBundleSmoresbump2025,
+	IapItemDisplayBundleSolstice20231,
+	IapItemDisplayBundleSolstice20232,
+	IapItemDisplayBundleSolstice20233,
+	IapItemDisplayBundleSongkran20251,
+	IapItemDisplayBundleSparkbox1,
+	IapItemDisplayBundleSparkbox2,
+	IapItemDisplayBundleSparkbox3,
+	IapItemDisplayBundleSpringtakeover20231,
+	IapItemDisplayBundleSpringtakeover20232,
+	IapItemDisplayBundleSpringtakeover20233,
+	IapItemDisplayBundleSteelMettle20221,
+	IapItemDisplayBundleSteelMettle20222,
+	IapItemDisplayBundleSteelMettle20223,
+	IapItemDisplayBundleTakeover20221,
+	IapItemDisplayBundleTakeover20222,
+	IapItemDisplayBundleTakeover20223,
+	IapItemDisplayBundleTgrtakeover20241,
+	IapItemDisplayBundleThailandfeatureapril20241,
+	IapItemDisplayBundleTmexpert1,
+	IapItemDisplayBundleUbraidday20221,
+	IapItemDisplayBundleUbraidday20222,
+	IapItemDisplayBundleUkfeature1,
+	IapItemDisplayBundleUltrabeastraid2024,
+	IapItemDisplayBundleUltraunlockraid20231,
+	IapItemDisplayBundleUltraunlockraid20232,
+	IapItemDisplayBundleUustorage1,
+	IapItemDisplayBundleVoyagerouttoplay1,
+	IapItemDisplayBundleWelcomebox1,
+	IapItemDisplayBundleWinterevergreen1,
+	IapItemDisplayBundleWinterevergreen2,
+	IapItemDisplayBundleWinterevergreen3,
+	IapItemDisplayBundleWinterholiday20231,
+	IapItemDisplayBundleWinterholiday20232,
+	IapItemDisplayBundleWinterholiday20233,
+	IapItemDisplayBundleXmasLarge1,
+	IapItemDisplayBundleZoruamakegood2022,
+	IapItemDisplayBundleZzraid1,
+	IapItemDisplayDiademuertos,
+	IapItemDisplayEventPassApril1SeasonStoreRedirect,
+	IapItemDisplayEventPassApril3EventStoreRedirect,
+	IapItemDisplayEventPassGofest2025FinaleStoreRedirect,
+	IapItemDisplayEventPassGofest2025GlobalStoreRedirect,
+	IapItemDisplayEventPassGotour2025GlobalStoreRedirect,
+	IapItemDisplayEventPassGowild2025GlobalStoreRedirect,
+	IapItemDisplayEventPassHalloween2025SeasonStoreRedirect,
+	IapItemDisplayEventPassMarch1SeasonStoreRedirect,
+	IapItemDisplayEventPassMarch2SeasonStoreRedirect,
+	IapItemDisplayEventPassMonth1SeasonStoreRedirect,
+	IapItemDisplayEventPassMonth2SeasonStoreRedirect,
+	IapItemDisplayEventPassMonth3SeasonStoreRedirect,
+	IapItemDisplayEventPassWinterholidays2025SeasonStoreRedirect,
+	IapItemDisplayEvergreenticket1,
+	IapItemDisplayEvergreenticket1Giftable,
+	IapItemDisplayFlairFreeBundle0,
+	IapItemDisplayGeneral1Ticket1,
+	IapItemDisplayGeneral1Ticket1Giftable,
+	IapItemDisplayGeneral1Ticket2,
+	IapItemDisplayGeneral1Ticket2Giftable,
+	IapItemDisplayGeneral1Ticket3,
+	IapItemDisplayGeneral1Ticket4,
+	IapItemDisplayGeneral1Ticket4Giftable,
+	IapItemDisplayGeneral1Ticket5,
+	IapItemDisplayGeneral1Ticket6,
+	IapItemDisplayGeneral2Ticket1,
+	IapItemDisplayGeneral2Ticket10,
+	IapItemDisplayGeneral2Ticket10Giftable,
+	IapItemDisplayGeneral2Ticket1Giftable,
+	IapItemDisplayGeneral2Ticket2,
+	IapItemDisplayGeneral2Ticket2Giftable,
+	IapItemDisplayGeneral2Ticket3,
+	IapItemDisplayGeneral2Ticket3Giftable,
+	IapItemDisplayGeneral2Ticket4,
+	IapItemDisplayGeneral2Ticket4Giftable,
+	IapItemDisplayGeneral2Ticket5,
+	IapItemDisplayGeneral2Ticket5Giftable,
+	IapItemDisplayGeneral2Ticket6,
+	IapItemDisplayGeneral2Ticket7,
+	IapItemDisplayGeneral2Ticket7Giftable,
+	IapItemDisplayGeneral2Ticket8,
+	IapItemDisplayGeneral2Ticket8Giftable,
+	IapItemDisplayGeneral2Ticket9,
+	IapItemDisplayGeneral2Ticket9Giftable,
+	IapItemDisplayGeneral4Medium1,
+	IapItemDisplayGeneral6Small1,
+	IapItemDisplayGoSafariBallIap10,
+	IapItemDisplayGoSafariBallIap25,
+	IapItemDisplayGoSafariBallIap50,
+	IapItemDisplayGofest2025DeluxeEventPassTrackUnlock,
+	IapItemDisplayGofest2025DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayGofest2025FinaleDeluxeEventPassTrackUnlock,
+	IapItemDisplayGofest2025FinaleDeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayGotour2025DeluxeEventPassTrackUnlock,
+	IapItemDisplayGotour2025DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayGowaticketfree1,
+	IapItemDisplayGowild2025DeluxeEventPassTrackUnlock,
+	IapItemDisplayGowild2025DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayHalloween2025DeluxeEventPassTrackUnlock,
+	IapItemDisplayHalloween2025DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayHometransport1,
+	IapItemDisplayIncenseordinary1,
+	IapItemDisplayIncenseordinary8,
+	IapItemDisplayIncubatorbasic1,
+	IapItemDisplayIncubatorsuper1,
+	IapItemDisplayItemEnhancedCurrency200,
+	IapItemDisplayItemEnhancedCurrency600,
+	IapItemDisplayItemleadermap,
+	IapItemDisplayLuckyegg1,
+	IapItemDisplayLuckyegg8,
+	IapItemDisplayMarch12026DeluxeEventPassTrackUnlock,
+	IapItemDisplayMarch12026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayMarch22026DeluxeEventPassTrackUnlock,
+	IapItemDisplayMarch22026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayMaxBoost1,
+	IapItemDisplayMaxBoost3,
+	IapItemDisplayMaxpotion10,
+	IapItemDisplayMaxpotion5,
+	IapItemDisplayMaxrevive3,
+	IapItemDisplayMaxrevive6,
+	IapItemDisplayMonth1DeluxeEventPassTrackUnlock,
+	IapItemDisplayMonth1DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayMonth2DeluxeEventPassTrackUnlock,
+	IapItemDisplayMonth2DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayMonth3DeluxeEventPassTrackUnlock,
+	IapItemDisplayMonth3DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayMpReplenish1,
+	IapItemDisplayMpReplenish3,
+	IapItemDisplayMpReplenishRrp1,
+	IapItemDisplayMpReplenishRrp3,
+	IapItemDisplayPaidraidticket1,
+	IapItemDisplayPaidraidticket3,
+	IapItemDisplayPgoreleaseApril22026DeluxeEventPassTrackRedirect,
+	IapItemDisplayPgoreleaseApril32026DeluxeEventPassTrackUnlock,
+	IapItemDisplayPgoreleaseApril32026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayPgoreleaseBundle1,
+	IapItemDisplayPgoreleaseBundle2,
+	IapItemDisplayPgoreleaseBundleBlanchebox1,
+	IapItemDisplayPgoreleaseBundleCitysafaribarcelona1,
+	IapItemDisplayPgoreleaseBundleCitysafaribarcelona2,
+	IapItemDisplayPgoreleaseBundleCitysafarimexico1,
+	IapItemDisplayPgoreleaseBundleCitysafarimexico2,
+	IapItemDisplayPgoreleaseBundleEliteraidbox1,
+	IapItemDisplayPgoreleaseBundleEliteraidmay2023,
+	IapItemDisplayPgoreleaseBundleFlavoredlures1,
+	IapItemDisplayPgoreleaseBundleFlavoredlures2,
+	IapItemDisplayPgoreleaseBundleFlavoredlures3,
+	IapItemDisplayPgoreleaseBundleFlavoredlures4,
+	IapItemDisplayPgoreleaseBundleFlavoredlures5,
+	IapItemDisplayPgoreleaseBundleFlavoredlures6,
+	IapItemDisplayPgoreleaseBundleFlavoredlures7,
+	IapItemDisplayPgoreleaseBundleFlavoredlures8,
+	IapItemDisplayPgoreleaseBundleFoc2023box1,
+	IapItemDisplayPgoreleaseBundleGeneral11Small1331,
+	IapItemDisplayPgoreleaseBundleGeneral1Tiny4,
+	IapItemDisplayPgoreleaseBundleGeneralThirdpartyLarge2,
+	IapItemDisplayPgoreleaseBundleGeneralThirdpartyLarge4,
+	IapItemDisplayPgoreleaseBundleGeneralThirdpartyMedium1,
+	IapItemDisplayPgoreleaseBundleGeneralThirdpartySmall1,
+	IapItemDisplayPgoreleaseBundleGeneralThirdpartySmall12,
+	IapItemDisplayPgoreleaseBundleGeneralThirdpartySmall2,
+	IapItemDisplayPgoreleaseBundleGotour20230,
+	IapItemDisplayPgoreleaseBundleGotour20231,
+	IapItemDisplayPgoreleaseBundleGotour20232,
+	IapItemDisplayPgoreleaseBundleGotour20233,
+	IapItemDisplayPgoreleaseBundleGotour20234,
+	IapItemDisplayPgoreleaseBundleGotour20235,
+	IapItemDisplayPgoreleaseBundleGotour20236,
+	IapItemDisplayPgoreleaseBundleGp20221,
+	IapItemDisplayPgoreleaseBundleIndiagp20231,
+	IapItemDisplayPgoreleaseBundleLure1,
+	IapItemDisplayPgoreleaseBundlePokemonday1,
+	IapItemDisplayPgoreleaseBundleRaiddaymay20231,
+	IapItemDisplayPgoreleaseBundleRaiddaymay20232,
+	IapItemDisplayPgoreleaseBundleRaiddaymay20233,
+	IapItemDisplayPgoreleaseBundleRaiddaymay20234,
+	IapItemDisplayPgoreleaseBundleRaiddaynov20231,
+	IapItemDisplayPgoreleaseBundleRaidhourbox1,
+	IapItemDisplayPgoreleaseBundleRaidhourbox2,
+	IapItemDisplayPgoreleaseBundleRamadan2023box1,
+	IapItemDisplayPgoreleaseBundleRtsraid,
+	IapItemDisplayPgoreleaseBundleSeason10evergreen1,
+	IapItemDisplayPgoreleaseBundleSeason10evergreen2,
+	IapItemDisplayPgoreleaseBundleSeason10evergreen3,
+	IapItemDisplayPgoreleaseBundleSeason10launch1,
+	IapItemDisplayPgoreleaseBundleSustainabilitybonusmay2023,
+	IapItemDisplayPgoreleaseBundleSustainabilitymay2023,
+	IapItemDisplayPgoreleaseBundleTemplate1,
+	IapItemDisplayPgoreleaseBundleTemplate2,
+	IapItemDisplayPgoreleaseBundleTemplate3,
+	IapItemDisplayPgoreleaseBundleThailandspec20231,
+	IapItemDisplayPgoreleaseBundleWalkeratlantic20221,
+	IapItemDisplayPgoreleaseBundleWalkeratlantic20222,
+	IapItemDisplayPgoreleaseCitysafariticket01,
+	IapItemDisplayPgoreleaseCitysafariticket11,
+	IapItemDisplayPgoreleaseCitysafariticket21,
+	IapItemDisplayPgoreleaseEvergreenticket1,
+	IapItemDisplayPgoreleaseEvergreenticket1Giftable,
+	IapItemDisplayPgoreleaseGeneral1Ticket1,
+	IapItemDisplayPgoreleaseGeneral1Ticket1Giftable,
+	IapItemDisplayPgoreleaseGeneral1Ticket2,
+	IapItemDisplayPgoreleaseGeneral1Ticket2Giftable,
+	IapItemDisplayPgoreleaseGeneral1Ticket4,
+	IapItemDisplayPgoreleaseGeneral1Ticket4Giftable,
+	IapItemDisplayPgoreleaseGeneral2Ticket1,
+	IapItemDisplayPgoreleaseGeneral2Ticket10,
+	IapItemDisplayPgoreleaseGeneral2Ticket10Giftable,
+	IapItemDisplayPgoreleaseGeneral2Ticket1Giftable,
+	IapItemDisplayPgoreleaseGeneral2Ticket2,
+	IapItemDisplayPgoreleaseGeneral2Ticket2Giftable,
+	IapItemDisplayPgoreleaseGeneral2Ticket3,
+	IapItemDisplayPgoreleaseGeneral2Ticket3Giftable,
+	IapItemDisplayPgoreleaseGeneral2Ticket4,
+	IapItemDisplayPgoreleaseGeneral2Ticket4Giftable,
+	IapItemDisplayPgoreleaseGeneral2Ticket5,
+	IapItemDisplayPgoreleaseGeneral2Ticket5Giftable,
+	IapItemDisplayPgoreleaseGeneral2Ticket7,
+	IapItemDisplayPgoreleaseGeneral2Ticket7Giftable,
+	IapItemDisplayPgoreleaseGeneral2Ticket8,
+	IapItemDisplayPgoreleaseGeneral2Ticket8Giftable,
+	IapItemDisplayPgoreleaseGeneral2Ticket9,
+	IapItemDisplayPgoreleaseGeneral2Ticket9Giftable,
+	IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlock,
+	IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayPgoreleasePokecoin15950,
+	IapItemDisplayPgoreleasePokecoin21375,
+	IapItemDisplayPgoreleasePokecoin2750,
+	IapItemDisplayPgoreleasePokecoin5720,
+	IapItemDisplayPoffin,
+	IapItemDisplayPokeball100,
+	IapItemDisplayPokeball20,
+	IapItemDisplayPokeball200,
+	IapItemDisplayPostcardstorageupgrade1,
+	IapItemDisplayRemoteraidticket1,
+	IapItemDisplayRemoteraidticket3,
+	IapItemDisplayStarpiece1,
+	IapItemDisplayStarpiece8,
+	IapItemDisplaySticker2023collab13,
+	IapItemDisplaySticker2023collab15,
+	IapItemDisplaySticker2023collab23,
+	IapItemDisplaySticker2023collab25,
+	IapItemDisplaySticker2023collab33,
+	IapItemDisplaySticker2023collab35,
+	IapItemDisplaySticker2023collab43,
+	IapItemDisplaySticker2023collab45,
+	IapItemDisplaySticker8anniv13,
+	IapItemDisplaySticker8anniv15,
+	IapItemDisplaySticker8anniv23,
+	IapItemDisplaySticker8anniv25,
+	IapItemDisplaySticker8anniv33,
+	IapItemDisplaySticker8anniv35,
+	IapItemDisplaySticker8anniv43,
+	IapItemDisplaySticker8anniv45,
+	IapItemDisplaySticker9anniv13,
+	IapItemDisplaySticker9anniv15,
+	IapItemDisplaySticker9anniv23,
+	IapItemDisplaySticker9anniv25,
+	IapItemDisplaySticker9anniv33,
+	IapItemDisplaySticker9anniv35,
+	IapItemDisplayStickerAprilfool202313,
+	IapItemDisplayStickerAprilfool202315,
+	IapItemDisplayStickerAprilfool202323,
+	IapItemDisplayStickerAprilfool202325,
+	IapItemDisplayStickerAudino3,
+	IapItemDisplayStickerAudino5,
+	IapItemDisplayStickerBellsproutcd13,
+	IapItemDisplayStickerBellsproutcd15,
+	IapItemDisplayStickerBellsproutcd23,
+	IapItemDisplayStickerBellsproutcd25,
+	IapItemDisplayStickerBellsproutcd33,
+	IapItemDisplayStickerBellsproutcd35,
+	IapItemDisplayStickerBellsproutcd43,
+	IapItemDisplayStickerBellsproutcd45,
+	IapItemDisplayStickerBidoofday13,
+	IapItemDisplayStickerBidoofday15,
+	IapItemDisplayStickerBidoofday23,
+	IapItemDisplayStickerBidoofday25,
+	IapItemDisplayStickerBidoofday33,
+	IapItemDisplayStickerBidoofday35,
+	IapItemDisplayStickerBounsweetcd202413,
+	IapItemDisplayStickerBounsweetcd202415,
+	IapItemDisplayStickerBounsweetcd202423,
+	IapItemDisplayStickerBounsweetcd202425,
+	IapItemDisplayStickerBounsweetcd202433,
+	IapItemDisplayStickerBounsweetcd202435,
+	IapItemDisplayStickerBounsweetcd202443,
+	IapItemDisplayStickerBounsweetcd202445,
+	IapItemDisplayStickerChanseycd13,
+	IapItemDisplayStickerChanseycd15,
+	IapItemDisplayStickerChanseycd23,
+	IapItemDisplayStickerChanseycd25,
+	IapItemDisplayStickerChanseycd33,
+	IapItemDisplayStickerChanseycd35,
+	IapItemDisplayStickerChanseycd43,
+	IapItemDisplayStickerChanseycd45,
+	IapItemDisplayStickerDiamondpearlchimchar3,
+	IapItemDisplayStickerDiamondpearlchimchar5,
+	IapItemDisplayStickerDiamondpearldialga3,
+	IapItemDisplayStickerDiamondpearldialga5,
+	IapItemDisplayStickerDiamondpearllucario3,
+	IapItemDisplayStickerDiamondpearllucario5,
+	IapItemDisplayStickerDiamondpearlpalkia3,
+	IapItemDisplayStickerDiamondpearlpalkia5,
+	IapItemDisplayStickerDiamondpearlpiplup3,
+	IapItemDisplayStickerDiamondpearlpiplup5,
+	IapItemDisplayStickerDiamondpearlturtwig3,
+	IapItemDisplayStickerDiamondpearlturtwig5,
+	IapItemDisplayStickerDitto13,
+	IapItemDisplayStickerDitto15,
+	IapItemDisplayStickerDitto23,
+	IapItemDisplayStickerDitto25,
+	IapItemDisplayStickerDitto33,
+	IapItemDisplayStickerDitto35,
+	IapItemDisplayStickerDitto43,
+	IapItemDisplayStickerDitto45,
+	IapItemDisplayStickerDitto53,
+	IapItemDisplayStickerDitto55,
+	IapItemDisplayStickerDitto63,
+	IapItemDisplayStickerDitto65,
+	IapItemDisplayStickerEeveefriends13,
+	IapItemDisplayStickerEeveefriends15,
+	IapItemDisplayStickerEeveefriends23,
+	IapItemDisplayStickerEeveefriends25,
+	IapItemDisplayStickerEeveefriends33,
+	IapItemDisplayStickerEeveefriends35,
+	IapItemDisplayStickerEeveefriends43,
+	IapItemDisplayStickerEeveefriends45,
+	IapItemDisplayStickerEeveefriends53,
+	IapItemDisplayStickerEeveefriends55,
+	IapItemDisplayStickerEeveefriends63,
+	IapItemDisplayStickerEeveefriends65,
+	IapItemDisplayStickerEeveefriends73,
+	IapItemDisplayStickerEeveefriends75,
+	IapItemDisplayStickerEeveefriends83,
+	IapItemDisplayStickerEeveefriends85,
+	IapItemDisplayStickerEeveefriends93,
+	IapItemDisplayStickerEeveefriends95,
+	IapItemDisplayStickerEternatus3,
+	IapItemDisplayStickerEternatus5,
+	IapItemDisplayStickerFall202313,
+	IapItemDisplayStickerFall202315,
+	IapItemDisplayStickerFall202323,
+	IapItemDisplayStickerFall202325,
+	IapItemDisplayStickerFall202333,
+	IapItemDisplayStickerFall202335,
+	IapItemDisplayStickerFall202343,
+	IapItemDisplayStickerFall202345,
+	IapItemDisplayStickerFall202353,
+	IapItemDisplayStickerFall202355,
+	IapItemDisplayStickerFall202363,
+	IapItemDisplayStickerFall202365,
+	IapItemDisplayStickerFall202413,
+	IapItemDisplayStickerFall202415,
+	IapItemDisplayStickerFall202423,
+	IapItemDisplayStickerFall202425,
+	IapItemDisplayStickerFall202433,
+	IapItemDisplayStickerFall202435,
+	IapItemDisplayStickerFall202443,
+	IapItemDisplayStickerFall202445,
+	IapItemDisplayStickerFall202453,
+	IapItemDisplayStickerFall202455,
+	IapItemDisplayStickerFall202463,
+	IapItemDisplayStickerFall202465,
+	IapItemDisplayStickerFall202513,
+	IapItemDisplayStickerFall202515,
+	IapItemDisplayStickerFall202523,
+	IapItemDisplayStickerFall202525,
+	IapItemDisplayStickerFall202533,
+	IapItemDisplayStickerFall202535,
+	IapItemDisplayStickerFall202543,
+	IapItemDisplayStickerFall202545,
+	IapItemDisplayStickerFallSawsbuck3,
+	IapItemDisplayStickerFallSawsbuck5,
+	IapItemDisplayStickerFallShroomish3,
+	IapItemDisplayStickerFallShroomish5,
+	IapItemDisplayStickerFallSkwovet3,
+	IapItemDisplayStickerFallSkwovet5,
+	IapItemDisplayStickerFallTeddiursa3,
+	IapItemDisplayStickerFallTeddiursa5,
+	IapItemDisplayStickerFallTrevenant3,
+	IapItemDisplayStickerFallTrevenant5,
+	IapItemDisplayStickerFallVulpix3,
+	IapItemDisplayStickerFallVulpix5,
+	IapItemDisplayStickerFestivaloflightMorelull3,
+	IapItemDisplayStickerFestivaloflightMorelull5,
+	IapItemDisplayStickerFestivaloflightShiinotic3,
+	IapItemDisplayStickerFestivaloflightShiinotic5,
+	IapItemDisplayStickerFestivalofthelights21V13,
+	IapItemDisplayStickerFestivalofthelights21V15,
+	IapItemDisplayStickerFestivalofthelights21V23,
+	IapItemDisplayStickerFestivalofthelights21V25,
+	IapItemDisplayStickerFestivalofthelights21V33,
+	IapItemDisplayStickerFestivalofthelights21V35,
+	IapItemDisplayStickerFestivalofthelights21V43,
+	IapItemDisplayStickerFestivalofthelights21V45,
+	IapItemDisplayStickerFlabebe13,
+	IapItemDisplayStickerFlabebe15,
+	IapItemDisplayStickerFlabebe23,
+	IapItemDisplayStickerFlabebe25,
+	IapItemDisplayStickerFunawari223123,
+	IapItemDisplayStickerFunawari223125,
+	IapItemDisplayStickerFunwari0206083,
+	IapItemDisplayStickerFunwari0206085,
+	IapItemDisplayStickerFunwari203,
+	IapItemDisplayStickerFunwari205,
+	IapItemDisplayStickerFurfrouheart13,
+	IapItemDisplayStickerFurfrouheart15,
+	IapItemDisplayStickerFurfrouheart23,
+	IapItemDisplayStickerFurfrouheart25,
+	IapItemDisplayStickerGiftthankyou3,
+	IapItemDisplayStickerGiftthankyou5,
+	IapItemDisplayStickerGimmighoul13,
+	IapItemDisplayStickerGimmighoul15,
+	IapItemDisplayStickerGimmighoul23,
+	IapItemDisplayStickerGimmighoul25,
+	IapItemDisplayStickerGimmighoul33,
+	IapItemDisplayStickerGimmighoul35,
+	IapItemDisplayStickerGimmighoul43,
+	IapItemDisplayStickerGimmighoul45,
+	IapItemDisplayStickerGimmighoul53,
+	IapItemDisplayStickerGimmighoul55,
+	IapItemDisplayStickerGoomycd13,
+	IapItemDisplayStickerGoomycd15,
+	IapItemDisplayStickerGoomycd23,
+	IapItemDisplayStickerGoomycd25,
+	IapItemDisplayStickerGoomycd33,
+	IapItemDisplayStickerGoomycd35,
+	IapItemDisplayStickerGoomycd43,
+	IapItemDisplayStickerGoomycd45,
+	IapItemDisplayStickerGotour2025Badge3,
+	IapItemDisplayStickerGotour2025Badge5,
+	IapItemDisplayStickerGotour2025Kyuremblack3,
+	IapItemDisplayStickerGotour2025Kyuremblack5,
+	IapItemDisplayStickerGotour2025Kyuremwhite3,
+	IapItemDisplayStickerGotour2025Kyuremwhite5,
+	IapItemDisplayStickerGotour2025Reshiram3,
+	IapItemDisplayStickerGotour2025Reshiram5,
+	IapItemDisplayStickerGotour2025Rz3,
+	IapItemDisplayStickerGotour2025Rz5,
+	IapItemDisplayStickerGotour2025Zekrom3,
+	IapItemDisplayStickerGotour2025Zekrom5,
+	IapItemDisplayStickerGowa2025013,
+	IapItemDisplayStickerGowa2025015,
+	IapItemDisplayStickerGowa2025023,
+	IapItemDisplayStickerGowa2025025,
+	IapItemDisplayStickerGowa2025033,
+	IapItemDisplayStickerGowa2025035,
+	IapItemDisplayStickerGowa2025043,
+	IapItemDisplayStickerGowa2025045,
+	IapItemDisplayStickerGowa2025053,
+	IapItemDisplayStickerGowa2025055,
+	IapItemDisplayStickerHalloween2025Noibat3,
+	IapItemDisplayStickerHalloween2025Noibat5,
+	IapItemDisplayStickerHalloween2025Teddiursa3,
+	IapItemDisplayStickerHalloween2025Teddiursa5,
+	IapItemDisplayStickerHalloween21Fuwaraid3,
+	IapItemDisplayStickerHalloween21Fuwaraid5,
+	IapItemDisplayStickerHalloween21Ghostpika3,
+	IapItemDisplayStickerHalloween21Ghostpika5,
+	IapItemDisplayStickerHalloween21Pikachu3,
+	IapItemDisplayStickerHalloween21Pikachu5,
+	IapItemDisplayStickerHalloween21Pochama3,
+	IapItemDisplayStickerHalloween21Pochama5,
+	IapItemDisplayStickerHalloween24Froakie3,
+	IapItemDisplayStickerHalloween24Froakie5,
+	IapItemDisplayStickerHalloween24Rowlet3,
+	IapItemDisplayStickerHalloween24Rowlet5,
+	IapItemDisplayStickerHalloweenBulb3,
+	IapItemDisplayStickerHalloweenBulb5,
+	IapItemDisplayStickerHalloweenCharm3,
+	IapItemDisplayStickerHalloweenCharm5,
+	IapItemDisplayStickerHalloweenGengarmd3,
+	IapItemDisplayStickerHalloweenGengarmd5,
+	IapItemDisplayStickerHalloweenPika3,
+	IapItemDisplayStickerHalloweenPika5,
+	IapItemDisplayStickerHalloweenSqu3,
+	IapItemDisplayStickerHalloweenSqu5,
+	IapItemDisplayStickerHaruCherrim3,
+	IapItemDisplayStickerHaruCherrim5,
+	IapItemDisplayStickerHaruDredearpika3,
+	IapItemDisplayStickerHaruDredearpika5,
+	IapItemDisplayStickerHaruKireihana3,
+	IapItemDisplayStickerHaruKireihana5,
+	IapItemDisplayStickerHaruLalantes3,
+	IapItemDisplayStickerHaruLalantes5,
+	IapItemDisplayStickerHaruMebukishikijik3,
+	IapItemDisplayStickerHaruMebukishikijik5,
+	IapItemDisplayStickerHaruMitsuhoney3,
+	IapItemDisplayStickerHaruMitsuhoney5,
+	IapItemDisplayStickerHisuidiscoArcanine3,
+	IapItemDisplayStickerHisuidiscoArcanine5,
+	IapItemDisplayStickerHisuidiscoBraviary3,
+	IapItemDisplayStickerHisuidiscoBraviary5,
+	IapItemDisplayStickerHisuidiscoGrowlithe3,
+	IapItemDisplayStickerHisuidiscoGrowlithe5,
+	IapItemDisplayStickerHolidayevent2113,
+	IapItemDisplayStickerHolidayevent2115,
+	IapItemDisplayStickerHolidayevent2123,
+	IapItemDisplayStickerHolidayevent2125,
+	IapItemDisplayStickerHolidayevent2133,
+	IapItemDisplayStickerHolidayevent2135,
+	IapItemDisplayStickerHolidayevent2143,
+	IapItemDisplayStickerHolidayevent2145,
+	IapItemDisplayStickerHolidayevent22Cubchoo3,
+	IapItemDisplayStickerHolidayevent22Cubchoo5,
+	IapItemDisplayStickerHolidayevent22Scatterbug3,
+	IapItemDisplayStickerHolidayevent22Scatterbug5,
+	IapItemDisplayStickerHolidayevent22Snowpika3,
+	IapItemDisplayStickerHolidayevent22Snowpika5,
+	IapItemDisplayStickerHolidayevent22Vulpix3,
+	IapItemDisplayStickerHolidayevent22Vulpix5,
+	IapItemDisplayStickerHolidayevent23Cetoddle3,
+	IapItemDisplayStickerHolidayevent23Cetoddle5,
+	IapItemDisplayStickerHolidayevent23Cryogonal3,
+	IapItemDisplayStickerHolidayevent23Cryogonal5,
+	IapItemDisplayStickerHolidayevent23Psyduck3,
+	IapItemDisplayStickerHolidayevent23Psyduck5,
+	IapItemDisplayStickerHolidayevent23Seel3,
+	IapItemDisplayStickerHolidayevent23Seel5,
+	IapItemDisplayStickerHolidayevent23Vanillish3,
+	IapItemDisplayStickerHolidayevent23Vanillish5,
+	IapItemDisplayStickerHoppip13,
+	IapItemDisplayStickerHoppip15,
+	IapItemDisplayStickerHoppip23,
+	IapItemDisplayStickerHoppip25,
+	IapItemDisplayStickerHoppip33,
+	IapItemDisplayStickerHoppip35,
+	IapItemDisplayStickerHoppip43,
+	IapItemDisplayStickerHoppip45,
+	IapItemDisplayStickerLentillaunchCamera3,
+	IapItemDisplayStickerLentillaunchCamera5,
+	IapItemDisplayStickerLittencd13,
+	IapItemDisplayStickerLittencd15,
+	IapItemDisplayStickerLittencd23,
+	IapItemDisplayStickerLittencd25,
+	IapItemDisplayStickerLittencd33,
+	IapItemDisplayStickerLittencd35,
+	IapItemDisplayStickerLittencd43,
+	IapItemDisplayStickerLittencd45,
+	IapItemDisplayStickerLuvdisc3,
+	IapItemDisplayStickerLuvdisc5,
+	IapItemDisplayStickerMankey13,
+	IapItemDisplayStickerMankey15,
+	IapItemDisplayStickerMankey23,
+	IapItemDisplayStickerMankey25,
+	IapItemDisplayStickerMankey33,
+	IapItemDisplayStickerMankey35,
+	IapItemDisplayStickerMankey43,
+	IapItemDisplayStickerMankey45,
+	IapItemDisplayStickerNagano063123,
+	IapItemDisplayStickerNagano063125,
+	IapItemDisplayStickerNagano113,
+	IapItemDisplayStickerNagano115,
+	IapItemDisplayStickerNagano153123,
+	IapItemDisplayStickerNagano153125,
+	IapItemDisplayStickerNaganoBath3,
+	IapItemDisplayStickerNaganoBath5,
+	IapItemDisplayStickerNaganoMarill3,
+	IapItemDisplayStickerNaganoMarill5,
+	IapItemDisplayStickerNaganoYadon3,
+	IapItemDisplayStickerNaganoYadon5,
+	IapItemDisplayStickerNewpokemon2153,
+	IapItemDisplayStickerNewpokemon2155,
+	IapItemDisplayStickerNewyears2213,
+	IapItemDisplayStickerNewyears2215,
+	IapItemDisplayStickerNewyears2223,
+	IapItemDisplayStickerNewyears2225,
+	IapItemDisplayStickerNewyears2233,
+	IapItemDisplayStickerNewyears2235,
+	IapItemDisplayStickerNewyears2243,
+	IapItemDisplayStickerNewyears2245,
+	IapItemDisplayStickerNoibatCd13,
+	IapItemDisplayStickerNoibatCd15,
+	IapItemDisplayStickerNoibatCd23,
+	IapItemDisplayStickerNoibatCd25,
+	IapItemDisplayStickerNoibatCd33,
+	IapItemDisplayStickerNoibatCd35,
+	IapItemDisplayStickerNoibatCd43,
+	IapItemDisplayStickerNoibatCd45,
+	IapItemDisplayStickerPgoFest202413,
+	IapItemDisplayStickerPgoFest202415,
+	IapItemDisplayStickerPgoFest202423,
+	IapItemDisplayStickerPgoFest202425,
+	IapItemDisplayStickerPgoFest20243,
+	IapItemDisplayStickerPgoFest202433,
+	IapItemDisplayStickerPgoFest202435,
+	IapItemDisplayStickerPgoFest202443,
+	IapItemDisplayStickerPgoFest202445,
+	IapItemDisplayStickerPgoFest20245,
+	IapItemDisplayStickerPgoFest202453,
+	IapItemDisplayStickerPgoFest202455,
+	IapItemDisplayStickerPgoFest202463,
+	IapItemDisplayStickerPgoFest202465,
+	IapItemDisplayStickerPgoFest2024Logo3,
+	IapItemDisplayStickerPgoFest2024Logo5,
+	IapItemDisplayStickerPgoFest202513,
+	IapItemDisplayStickerPgoFest202515,
+	IapItemDisplayStickerPgoFest202523,
+	IapItemDisplayStickerPgoFest202525,
+	IapItemDisplayStickerPgoFest20253,
+	IapItemDisplayStickerPgoFest202533,
+	IapItemDisplayStickerPgoFest202535,
+	IapItemDisplayStickerPgoFest20255,
+	IapItemDisplayStickerPgoFest2025Logo3,
+	IapItemDisplayStickerPgoFest2025Logo5,
+	IapItemDisplayStickerPgoFestVictini053,
+	IapItemDisplayStickerPgoFestVictini055,
+	IapItemDisplayStickerPgoTour202613,
+	IapItemDisplayStickerPgoTour202615,
+	IapItemDisplayStickerPgoTour202623,
+	IapItemDisplayStickerPgoTour202625,
+	IapItemDisplayStickerPgoTour20263,
+	IapItemDisplayStickerPgoTour202633,
+	IapItemDisplayStickerPgoTour202635,
+	IapItemDisplayStickerPgoTour20265,
+	IapItemDisplayStickerPgoTour2026Logo3,
+	IapItemDisplayStickerPgoTour2026Logo5,
+	IapItemDisplayStickerPgoWildarea202413,
+	IapItemDisplayStickerPgoWildarea202415,
+	IapItemDisplayStickerPgoWildarea202423,
+	IapItemDisplayStickerPgoWildarea202425,
+	IapItemDisplayStickerPgoWildarea20243,
+	IapItemDisplayStickerPgoWildarea202433,
+	IapItemDisplayStickerPgoWildarea202435,
+	IapItemDisplayStickerPgoWildarea202443,
+	IapItemDisplayStickerPgoWildarea202445,
+	IapItemDisplayStickerPgoWildarea20245,
+	IapItemDisplayStickerPgoWildarea2024Logo3,
+	IapItemDisplayStickerPgoWildarea2024Logo5,
+	IapItemDisplayStickerPgofest2021Galarianzigzagoon3,
+	IapItemDisplayStickerPgofest2021Galarianzigzagoon5,
+	IapItemDisplayStickerPgofest2021Meloetta13,
+	IapItemDisplayStickerPgofest2021Meloetta15,
+	IapItemDisplayStickerPgofest2021Meloetta23,
+	IapItemDisplayStickerPgofest2021Meloetta25,
+	IapItemDisplayStickerPgofest2021Ponyta3,
+	IapItemDisplayStickerPgofest2021Ponyta5,
+	IapItemDisplayStickerPgofest2022Groudon3,
+	IapItemDisplayStickerPgofest2022Groudon5,
+	IapItemDisplayStickerPgofest2022Kibago3,
+	IapItemDisplayStickerPgofest2022Kibago5,
+	IapItemDisplayStickerPgofest2022Kyogre3,
+	IapItemDisplayStickerPgofest2022Kyogre5,
+	IapItemDisplayStickerPgofest2022Pikachu3,
+	IapItemDisplayStickerPgofest2022Pikachu5,
+	IapItemDisplayStickerPgofest2022Pochama3,
+	IapItemDisplayStickerPgofest2022Pochama5,
+	IapItemDisplayStickerPgofest2022Shaymin3,
+	IapItemDisplayStickerPgofest2022Shaymin5,
+	IapItemDisplayStickerPikachuJol3,
+	IapItemDisplayStickerPikachuJol5,
+	IapItemDisplayStickerPokemonchatpals2403,
+	IapItemDisplayStickerPokemonchatpals2405,
+	IapItemDisplayStickerPonyta13,
+	IapItemDisplayStickerPonyta15,
+	IapItemDisplayStickerPonyta23,
+	IapItemDisplayStickerPonyta25,
+	IapItemDisplayStickerPonyta33,
+	IapItemDisplayStickerPonyta35,
+	IapItemDisplayStickerPonyta43,
+	IapItemDisplayStickerPonyta45,
+	IapItemDisplayStickerPoppliocd13,
+	IapItemDisplayStickerPoppliocd15,
+	IapItemDisplayStickerPoppliocd23,
+	IapItemDisplayStickerPoppliocd25,
+	IapItemDisplayStickerPoppliocd33,
+	IapItemDisplayStickerPoppliocd35,
+	IapItemDisplayStickerPoppliocd43,
+	IapItemDisplayStickerPoppliocd45,
+	IapItemDisplayStickerPsychicspec21Inkay23,
+	IapItemDisplayStickerPsychicspec21Inkay25,
+	IapItemDisplayStickerPsychicspec21Inkay3,
+	IapItemDisplayStickerPsychicspec21Inkay5,
+	IapItemDisplayStickerRowletcd13,
+	IapItemDisplayStickerRowletcd15,
+	IapItemDisplayStickerRowletcd23,
+	IapItemDisplayStickerRowletcd25,
+	IapItemDisplayStickerRowletcd33,
+	IapItemDisplayStickerRowletcd35,
+	IapItemDisplayStickerRowletcd43,
+	IapItemDisplayStickerRowletcd45,
+	IapItemDisplayStickerSewaddlecd13,
+	IapItemDisplayStickerSewaddlecd15,
+	IapItemDisplayStickerSewaddlecd23,
+	IapItemDisplayStickerSewaddlecd25,
+	IapItemDisplayStickerSewaddlecd33,
+	IapItemDisplayStickerSewaddlecd35,
+	IapItemDisplayStickerSewaddlecd43,
+	IapItemDisplayStickerSewaddlecd45,
+	IapItemDisplayStickerShelmetKarrablast13,
+	IapItemDisplayStickerShelmetKarrablast15,
+	IapItemDisplayStickerShelmetKarrablast23,
+	IapItemDisplayStickerShelmetKarrablast25,
+	IapItemDisplayStickerShelmetKarrablast33,
+	IapItemDisplayStickerShelmetKarrablast35,
+	IapItemDisplayStickerSlowpoke13,
+	IapItemDisplayStickerSlowpoke15,
+	IapItemDisplayStickerSlowpoke23,
+	IapItemDisplayStickerSlowpoke25,
+	IapItemDisplayStickerSlowpoke33,
+	IapItemDisplayStickerSlowpoke35,
+	IapItemDisplayStickerSlowpoke43,
+	IapItemDisplayStickerSlowpoke45,
+	IapItemDisplayStickerSpheal13,
+	IapItemDisplayStickerSpheal15,
+	IapItemDisplayStickerSpheal23,
+	IapItemDisplayStickerSpheal25,
+	IapItemDisplayStickerSpheal33,
+	IapItemDisplayStickerSpheal35,
+	IapItemDisplayStickerSpheal43,
+	IapItemDisplayStickerSpheal45,
+	IapItemDisplayStickerSprigatito13,
+	IapItemDisplayStickerSprigatito15,
+	IapItemDisplayStickerSprigatito23,
+	IapItemDisplayStickerSprigatito25,
+	IapItemDisplayStickerSprigatito33,
+	IapItemDisplayStickerSprigatito35,
+	IapItemDisplayStickerSprigatito43,
+	IapItemDisplayStickerSprigatito45,
+	IapItemDisplayStickerSpring202413,
+	IapItemDisplayStickerSpring202415,
+	IapItemDisplayStickerSpring202423,
+	IapItemDisplayStickerSpring202425,
+	IapItemDisplayStickerSpring202433,
+	IapItemDisplayStickerSpring202435,
+	IapItemDisplayStickerSpring202443,
+	IapItemDisplayStickerSpring202445,
+	IapItemDisplayStickerSpring202453,
+	IapItemDisplayStickerSpring202455,
+	IapItemDisplayStickerSpring202463,
+	IapItemDisplayStickerSpring202465,
+	IapItemDisplayStickerSpring202513,
+	IapItemDisplayStickerSpring202515,
+	IapItemDisplayStickerSpring202523,
+	IapItemDisplayStickerSpring202525,
+	IapItemDisplayStickerSpring202533,
+	IapItemDisplayStickerSpring202535,
+	IapItemDisplayStickerSpring202543,
+	IapItemDisplayStickerSpring202545,
+	IapItemDisplayStickerSpring202613,
+	IapItemDisplayStickerSpring202615,
+	IapItemDisplayStickerSpring202623,
+	IapItemDisplayStickerSpring202625,
+	IapItemDisplayStickerSpring202633,
+	IapItemDisplayStickerSpring202635,
+	IapItemDisplayStickerSpring202643,
+	IapItemDisplayStickerSpring202645,
+	IapItemDisplayStickerSpringEievui3,
+	IapItemDisplayStickerSpringEievui5,
+	IapItemDisplayStickerSpringHapinas3,
+	IapItemDisplayStickerSpringHapinas5,
+	IapItemDisplayStickerSpringMimirol3,
+	IapItemDisplayStickerSpringMimirol5,
+	IapItemDisplayStickerSpringNimphia3,
+	IapItemDisplayStickerSpringNimphia5,
+	IapItemDisplayStickerSpringPikachu3,
+	IapItemDisplayStickerSpringPikachu5,
+	IapItemDisplayStickerSpringPipito3,
+	IapItemDisplayStickerSpringPipito5,
+	IapItemDisplayStickerStufful13,
+	IapItemDisplayStickerStufful15,
+	IapItemDisplayStickerStufful23,
+	IapItemDisplayStickerStufful25,
+	IapItemDisplayStickerStufful33,
+	IapItemDisplayStickerStufful35,
+	IapItemDisplayStickerStufful43,
+	IapItemDisplayStickerStufful45,
+	IapItemDisplayStickerSummer13,
+	IapItemDisplayStickerSummer15,
+	IapItemDisplayStickerSummer2023Blastoise3,
+	IapItemDisplayStickerSummer2023Blastoise5,
+	IapItemDisplayStickerSummer2023Butterfree3,
+	IapItemDisplayStickerSummer2023Butterfree5,
+	IapItemDisplayStickerSummer2023Clamperl3,
+	IapItemDisplayStickerSummer2023Clamperl5,
+	IapItemDisplayStickerSummer2023Ledian3,
+	IapItemDisplayStickerSummer2023Ledian5,
+	IapItemDisplayStickerSummer2023Sawsbuck3,
+	IapItemDisplayStickerSummer2023Sawsbuck5,
+	IapItemDisplayStickerSummer2023Squirtle3,
+	IapItemDisplayStickerSummer2023Squirtle5,
+	IapItemDisplayStickerSummer202413,
+	IapItemDisplayStickerSummer202415,
+	IapItemDisplayStickerSummer202423,
+	IapItemDisplayStickerSummer202425,
+	IapItemDisplayStickerSummer202433,
+	IapItemDisplayStickerSummer202435,
+	IapItemDisplayStickerSummer202443,
+	IapItemDisplayStickerSummer202445,
+	IapItemDisplayStickerSummer202453,
+	IapItemDisplayStickerSummer202455,
+	IapItemDisplayStickerSummer202463,
+	IapItemDisplayStickerSummer202465,
+	IapItemDisplayStickerSummer202513,
+	IapItemDisplayStickerSummer202515,
+	IapItemDisplayStickerSummer202523,
+	IapItemDisplayStickerSummer202525,
+	IapItemDisplayStickerSummer202533,
+	IapItemDisplayStickerSummer202535,
+	IapItemDisplayStickerSummer202543,
+	IapItemDisplayStickerSummer202545,
+	IapItemDisplayStickerSummer23,
+	IapItemDisplayStickerSummer25,
+	IapItemDisplayStickerSummer33,
+	IapItemDisplayStickerSummer35,
+	IapItemDisplayStickerSummer43,
+	IapItemDisplayStickerSummer45,
+	IapItemDisplayStickerSummer53,
+	IapItemDisplayStickerSummer55,
+	IapItemDisplayStickerSummer63,
+	IapItemDisplayStickerSummer65,
+	IapItemDisplayStickerSwordshield2113,
+	IapItemDisplayStickerSwordshield2115,
+	IapItemDisplayStickerSwordshield2123,
+	IapItemDisplayStickerSwordshield2125,
+	IapItemDisplayStickerSwordshield2133,
+	IapItemDisplayStickerSwordshield2135,
+	IapItemDisplayStickerSwordshield2143,
+	IapItemDisplayStickerSwordshield2145,
+	IapItemDisplayStickerSwordshield2153,
+	IapItemDisplayStickerSwordshield2155,
+	IapItemDisplayStickerTlBlanche3,
+	IapItemDisplayStickerTlBlanche5,
+	IapItemDisplayStickerTlCandela3,
+	IapItemDisplayStickerTlCandela5,
+	IapItemDisplayStickerTlSpark3,
+	IapItemDisplayStickerTlSpark5,
+	IapItemDisplayStickerTrArlo3,
+	IapItemDisplayStickerTrArlo5,
+	IapItemDisplayStickerTrCliff3,
+	IapItemDisplayStickerTrCliff5,
+	IapItemDisplayStickerTrSierra3,
+	IapItemDisplayStickerTrSierra5,
+	IapItemDisplayStickerTynamocd13,
+	IapItemDisplayStickerTynamocd15,
+	IapItemDisplayStickerTynamocd23,
+	IapItemDisplayStickerTynamocd25,
+	IapItemDisplayStickerTynamocd33,
+	IapItemDisplayStickerTynamocd35,
+	IapItemDisplayStickerTynamocd43,
+	IapItemDisplayStickerTynamocd45,
+	IapItemDisplayStickerValentine202313,
+	IapItemDisplayStickerValentine202315,
+	IapItemDisplayStickerValentine202323,
+	IapItemDisplayStickerValentine202325,
+	IapItemDisplayStickerValentine202333,
+	IapItemDisplayStickerValentine202335,
+	IapItemDisplayStickerWcs2025CarGroup3,
+	IapItemDisplayStickerWcs2025CarGroup5,
+	IapItemDisplayStickerWcs2025Jigglypuff3,
+	IapItemDisplayStickerWcs2025Jigglypuff5,
+	IapItemDisplayStickerWcs2025Murkrow3,
+	IapItemDisplayStickerWcs2025Murkrow5,
+	IapItemDisplayStickerWcs2025Pikachu3,
+	IapItemDisplayStickerWcs2025Pikachu5,
+	IapItemDisplayStickerWinter202313,
+	IapItemDisplayStickerWinter202315,
+	IapItemDisplayStickerWinter202323,
+	IapItemDisplayStickerWinter202325,
+	IapItemDisplayStickerWinter202333,
+	IapItemDisplayStickerWinter202335,
+	IapItemDisplayStickerWinter202343,
+	IapItemDisplayStickerWinter202345,
+	IapItemDisplayStickerWinter202353,
+	IapItemDisplayStickerWinter202355,
+	IapItemDisplayStickerWinter202363,
+	IapItemDisplayStickerWinter202365,
+	IapItemDisplayStickerWinter202413,
+	IapItemDisplayStickerWinter202415,
+	IapItemDisplayStickerWinter202423,
+	IapItemDisplayStickerWinter202425,
+	IapItemDisplayStickerWinter202433,
+	IapItemDisplayStickerWinter202435,
+	IapItemDisplayStickerWinter202443,
+	IapItemDisplayStickerWinter202445,
+	IapItemDisplayStickerWinter202453,
+	IapItemDisplayStickerWinter202455,
+	IapItemDisplayStickerWinter202463,
+	IapItemDisplayStickerWinter202465,
+	IapItemDisplayStickerWinter202513,
+	IapItemDisplayStickerWinter202515,
+	IapItemDisplayStickerWinter202523,
+	IapItemDisplayStickerWinter202525,
+	IapItemDisplayStickerWinter202533,
+	IapItemDisplayStickerWinter202535,
+	IapItemDisplayStickerWinter202543,
+	IapItemDisplayStickerWinter202545,
+	IapItemDisplayStickerWinterAmaura3,
+	IapItemDisplayStickerWinterAmaura5,
+	IapItemDisplayStickerWinterDarumaka3,
+	IapItemDisplayStickerWinterDarumaka5,
+	IapItemDisplayStickerWinterGlaceon3,
+	IapItemDisplayStickerWinterGlaceon5,
+	IapItemDisplayStickerWinterPikachu3,
+	IapItemDisplayStickerWinterPikachu5,
+	IapItemDisplayStickerWinterSawsbuck3,
+	IapItemDisplayStickerWinterSawsbuck5,
+	IapItemDisplayStickerWinterSnorunt3,
+	IapItemDisplayStickerWinterSnorunt5,
+	IapItemDisplayStickerYurutto123,
+	IapItemDisplayStickerYurutto125,
+	IapItemDisplayStickerYurutto243,
+	IapItemDisplayStickerYurutto245,
+	IapItemDisplayTroydisk1,
+	IapItemDisplayTroydisk8,
+	IapItemDisplayWebCommunityAmbassadorBonusBundle2025,
+	IapItemDisplayWebGoFestHatchBox2023,
+	IapItemDisplayWebGoFestRaidBox2023,
+	IapItemDisplayWebRaidBox071323,
+	IapItemDisplayWebSeasonalDelights2024Box,
+	IapItemDisplayWebVoyagerBox071323,
+	IapItemDisplayWinterholidays2025DeluxeEventPassTrackUnlock,
+	IapItemDisplayWinterholidays2025DeluxeEventPassTrackUnlockPlusPoints,
+} from "pogo-masterfile-types/entries";
+
+export interface IapItemDisplayLookup {
+	APRIL1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayApril12026DeluxeEventPassTrackUnlock;
+	APRIL1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayApril12026DeluxeEventPassTrackUnlockPlusPoints;
+	APRIL2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayApril22026DeluxeEventPassTrackUnlock;
+	APRIL2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayApril22026DeluxeEventPassTrackUnlockPlusPoints;
+	APRIL3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayApril32026DeluxeEventPassTrackUnlock;
+	APRIL3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayApril32026DeluxeEventPassTrackUnlockPlusPoints;
+	"battlepassticket.1": IapItemDisplayBattlepassticket1;
+	BUNDLE_EC_200_RPP_1: IapItemDisplayBundleEc200Rpp1;
+	BUNDLE_EC_600_RPP_3: IapItemDisplayBundleEc600Rpp3;
+	"bundle.adventurebrazil100.1": IapItemDisplayBundleAdventurebrazil1001;
+	"bundle.adventurebrazil200.1": IapItemDisplayBundleAdventurebrazil2001;
+	"bundle.anniversary2023.1": IapItemDisplayBundleAnniversary20231;
+	"bundle.apacmar2025.1": IapItemDisplayBundleApacmar20251;
+	"bundle.arraia2025.1": IapItemDisplayBundleArraia20251;
+	"bundle.arraia2025.2": IapItemDisplayBundleArraia20252;
+	"bundle.atlanticav2box.1": IapItemDisplayBundleAtlanticav2box1;
+	"bundle.atlanticav2box.2": IapItemDisplayBundleAtlanticav2box2;
+	"bundle.blackfridaystickers24.1": IapItemDisplayBundleBlackfridaystickers241;
+	"bundle.blackfridaystickers24.2": IapItemDisplayBundleBlackfridaystickers242;
+	"bundle.boost2023.1": IapItemDisplayBundleBoost20231;
+	"bundle.brazil2023.1": IapItemDisplayBundleBrazil20231;
+	"bundle.brazilrediscover1.1": IapItemDisplayBundleBrazilrediscover11;
+	"bundle.brazilrediscover2.1": IapItemDisplayBundleBrazilrediscover21;
+	"bundle.brazilvacations100.1": IapItemDisplayBundleBrazilvacations1001;
+	"bundle.carnival2025.1": IapItemDisplayBundleCarnival20251;
+	"bundle.carnival2025.2": IapItemDisplayBundleCarnival20252;
+	"bundle.cd2022.1": IapItemDisplayBundleCd20221;
+	"bundle.cd2022.2": IapItemDisplayBundleCd20222;
+	"bundle.cdrecapstickers.1": IapItemDisplayBundleCdrecapstickers1;
+	"bundle.citysafari450hktw.1": IapItemDisplayBundleCitysafari450hktw1;
+	"bundle.cswkmakegoodprep.100.1": IapItemDisplayBundleCswkmakegoodprep1001;
+	"bundle.cswkmakegoodprep.200.1": IapItemDisplayBundleCswkmakegoodprep2001;
+	"bundle.cswkmakegoodprep.300.1": IapItemDisplayBundleCswkmakegoodprep3001;
+	"bundle.decroutes2023.1": IapItemDisplayBundleDecroutes20231;
+	"bundle.diademuertos2025.1": IapItemDisplayBundleDiademuertos20251;
+	"bundle.diademuertosmax100.1": IapItemDisplayBundleDiademuertosmax1001;
+	"bundle.diademuertosmax200.1": IapItemDisplayBundleDiademuertosmax2001;
+	"bundle.diwali2025.1": IapItemDisplayBundleDiwali20251;
+	"bundle.diwali2025.2": IapItemDisplayBundleDiwali20252;
+	"bundle.diwalimax100.1": IapItemDisplayBundleDiwalimax1001;
+	"bundle.EliteExp2024.1": IapItemDisplayBundleEliteexp20241;
+	"bundle.EliteExp2024.2": IapItemDisplayBundleEliteexp20242;
+	"bundle.EliteExp2024.3": IapItemDisplayBundleEliteexp20243;
+	"bundle.EliteExp2024.4": IapItemDisplayBundleEliteexp20244;
+	"bundle.EliteExp2024.5": IapItemDisplayBundleEliteexp20245;
+	"bundle.emcarnival2026.1": IapItemDisplayBundleEmcarnival20261;
+	"bundle.emcarnival2026.2": IapItemDisplayBundleEmcarnival20262;
+	"bundle.emea2023.1": IapItemDisplayBundleEmea20231;
+	"bundle.evolve2022.1": IapItemDisplayBundleEvolve20221;
+	"bundle.evolve2022.2": IapItemDisplayBundleEvolve20222;
+	"bundle.evolve2022.3": IapItemDisplayBundleEvolve20223;
+	"bundle.evolve2022.4": IapItemDisplayBundleEvolve20224;
+	"bundle.evolve2022.5": IapItemDisplayBundleEvolve20225;
+	"bundle.evolve2022.6": IapItemDisplayBundleEvolve20226;
+	"bundle.fol2022.1": IapItemDisplayBundleFol20221;
+	"bundle.fol2022.2": IapItemDisplayBundleFol20222;
+	"bundle.fol2022.3": IapItemDisplayBundleFol20223;
+	"bundle.fol2022.4": IapItemDisplayBundleFol20224;
+	"bundle.general.template4": IapItemDisplayBundleGeneralTemplate4;
+	"bundle.general.template5": IapItemDisplayBundleGeneralTemplate5;
+	"bundle.general.template6": IapItemDisplayBundleGeneralTemplate6;
+	"bundle.general1.free.1": IapItemDisplayBundleGeneral1Free1;
+	"bundle.general1.large.1": IapItemDisplayBundleGeneral1Large1;
+	"bundle.general1.medium.1": IapItemDisplayBundleGeneral1Medium1;
+	"bundle.general1.medium.2": IapItemDisplayBundleGeneral1Medium2;
+	"bundle.general1.medium.3": IapItemDisplayBundleGeneral1Medium3;
+	"bundle.general1.rocket.1": IapItemDisplayBundleGeneral1Rocket1;
+	"bundle.general1.small.1": IapItemDisplayBundleGeneral1Small1;
+	"bundle.general1.tiny.2": IapItemDisplayBundleGeneral1Tiny2;
+	"bundle.general1.tiny.3": IapItemDisplayBundleGeneral1Tiny3;
+	"bundle.general1.tiny.4": IapItemDisplayBundleGeneral1Tiny4;
+	"bundle.general2.free.1": IapItemDisplayBundleGeneral2Free1;
+	"bundle.general2.large.1": IapItemDisplayBundleGeneral2Large1;
+	"bundle.general2.medium.1": IapItemDisplayBundleGeneral2Medium1;
+	"bundle.general2.small.1": IapItemDisplayBundleGeneral2Small1;
+	"bundle.general3.free.1": IapItemDisplayBundleGeneral3Free1;
+	"bundle.general3.large.1": IapItemDisplayBundleGeneral3Large1;
+	"bundle.general3.small.1": IapItemDisplayBundleGeneral3Small1;
+	"bundle.general4.large.1": IapItemDisplayBundleGeneral4Large1;
+	"bundle.general4.small.2": IapItemDisplayBundleGeneral4Small2;
+	"bundle.general5.large.1": IapItemDisplayBundleGeneral5Large1;
+	"bundle.general5.small.1": IapItemDisplayBundleGeneral5Small1;
+	"bundle.general5.small.2": IapItemDisplayBundleGeneral5Small2;
+	"bundle.general5.small.3": IapItemDisplayBundleGeneral5Small3;
+	"bundle.general5.small.4": IapItemDisplayBundleGeneral5Small4;
+	"bundle.general5.small.5": IapItemDisplayBundleGeneral5Small5;
+	"bundle.general6.small.1": IapItemDisplayBundleGeneral6Small1;
+	"bundle.gmaxday.1": IapItemDisplayBundleGmaxday1;
+	"bundle.gofest2023.1": IapItemDisplayBundleGofest20231;
+	"bundle.gofest2023.2": IapItemDisplayBundleGofest20232;
+	"bundle.gofest2023.3": IapItemDisplayBundleGofest20233;
+	"bundle.gofest2023.4": IapItemDisplayBundleGofest20234;
+	"bundle.gofest2023.5": IapItemDisplayBundleGofest20235;
+	"bundle.gofest2024.1": IapItemDisplayBundleGofest20241;
+	"bundle.gofest2024.2": IapItemDisplayBundleGofest20242;
+	"bundle.gofest2024.3": IapItemDisplayBundleGofest20243;
+	"bundle.gofest2024.4": IapItemDisplayBundleGofest20244;
+	"bundle.gofestmakegoodprep.1": IapItemDisplayBundleGofestmakegoodprep1;
+	"bundle.gofestmakegoodprep.2": IapItemDisplayBundleGofestmakegoodprep2;
+	"bundle.gofestmakegoodprep.3": IapItemDisplayBundleGofestmakegoodprep3;
+	"bundle.GOTour2024.1": IapItemDisplayBundleGotour20241;
+	"bundle.GOTour2024.2": IapItemDisplayBundleGotour20242;
+	"bundle.GOTour2024.3": IapItemDisplayBundleGotour20243;
+	"bundle.GOTour2024.4": IapItemDisplayBundleGotour20244;
+	"bundle.GOTour2024.5": IapItemDisplayBundleGotour20245;
+	"bundle.GOTour2024.6": IapItemDisplayBundleGotour20246;
+	"bundle.GOTour2024.7": IapItemDisplayBundleGotour20247;
+	"bundle.gowa2024.1": IapItemDisplayBundleGowa20241;
+	"bundle.gowa2024.2": IapItemDisplayBundleGowa20242;
+	"bundle.gowa2024.3": IapItemDisplayBundleGowa20243;
+	"bundle.gowa2024.4": IapItemDisplayBundleGowa20244;
+	"bundle.gpdindialaunch.1": IapItemDisplayBundleGpdindialaunch1;
+	"bundle.gpmay2023.1": IapItemDisplayBundleGpmay20231;
+	"bundle.gwlatam2025.1": IapItemDisplayBundleGwlatam20251;
+	"bundle.gwlatam2025.2": IapItemDisplayBundleGwlatam20252;
+	"bundle.gwlatam2025.3": IapItemDisplayBundleGwlatam20253;
+	"bundle.halloween.adventure.1": IapItemDisplayBundleHalloweenAdventure1;
+	"bundle.halloween.large.1": IapItemDisplayBundleHalloweenLarge1;
+	"bundle.halloween.small.1": IapItemDisplayBundleHalloweenSmall1;
+	"bundle.halloween2022.1": IapItemDisplayBundleHalloween20221;
+	"bundle.halloween2022.2": IapItemDisplayBundleHalloween20222;
+	"bundle.halloween2022.3": IapItemDisplayBundleHalloween20223;
+	"bundle.halloween2023.1": IapItemDisplayBundleHalloween20231;
+	"bundle.halloween2023.2": IapItemDisplayBundleHalloween20232;
+	"bundle.halloween2023.3": IapItemDisplayBundleHalloween20233;
+	"bundle.halloween2025.1": IapItemDisplayBundleHalloween20251;
+	"bundle.halloween2025.2": IapItemDisplayBundleHalloween20252;
+	"bundle.halloween2025.3": IapItemDisplayBundleHalloween20253;
+	"bundle.harvestcatch.1": IapItemDisplayBundleHarvestcatch1;
+	"bundle.harvestfestival.2025": IapItemDisplayBundleHarvestfestival2025;
+	"bundle.hatchbox2024.1": IapItemDisplayBundleHatchbox20241;
+	"bundle.hawlucha2025.1": IapItemDisplayBundleHawlucha20251;
+	"bundle.hawlucha2025.2": IapItemDisplayBundleHawlucha20252;
+	"bundle.hawluchacelebration100.1": IapItemDisplayBundleHawluchacelebration1001;
+	"bundle.hawluchacelebration200.1": IapItemDisplayBundleHawluchacelebration2001;
+	"bundle.hisuiraidday2023.1": IapItemDisplayBundleHisuiraidday20231;
+	"bundle.holi2025.1": IapItemDisplayBundleHoli20251;
+	"bundle.holi2025.2": IapItemDisplayBundleHoli20252;
+	"bundle.holiday2022.1": IapItemDisplayBundleHoliday20221;
+	"bundle.holiday2022.2": IapItemDisplayBundleHoliday20222;
+	"bundle.holiday2022.3": IapItemDisplayBundleHoliday20223;
+	"bundle.holiday2024.1": IapItemDisplayBundleHoliday20241;
+	"bundle.incenseday.1": IapItemDisplayBundleIncenseday1;
+	"bundle.indiaaugust100.1": IapItemDisplayBundleIndiaaugust1001;
+	"bundle.indiaboxfeature.1": IapItemDisplayBundleIndiaboxfeature1;
+	"bundle.indiafestivaloflights.1": IapItemDisplayBundleIndiafestivaloflights1;
+	"bundle.indiamay2024.1": IapItemDisplayBundleIndiamay20241;
+	"bundle.indiaseptember100.1": IapItemDisplayBundleIndiaseptember1001;
+	"bundle.indiaseptember200.1": IapItemDisplayBundleIndiaseptember2001;
+	"bundle.indonesiaboxfeature.1": IapItemDisplayBundleIndonesiaboxfeature1;
+	"bundle.indonesialaunch.1": IapItemDisplayBundleIndonesialaunch1;
+	"bundle.indonesialaunch.2": IapItemDisplayBundleIndonesialaunch2;
+	"bundle.jakartaaugust100.1": IapItemDisplayBundleJakartaaugust1001;
+	"bundle.koreaseptember100.1": IapItemDisplayBundleKoreaseptember1001;
+	"bundle.koreaseptember200.1": IapItemDisplayBundleKoreaseptember2001;
+	"bundle.ksalaunch100.1": IapItemDisplayBundleKsalaunch1001;
+	"bundle.ksalaunch200.1": IapItemDisplayBundleKsalaunch2001;
+	"bundle.latbox100.1": IapItemDisplayBundleLatbox1001;
+	"bundle.latbox300.1": IapItemDisplayBundleLatbox3001;
+	"bundle.lunarnewyear.1": IapItemDisplayBundleLunarnewyear1;
+	"bundle.maxfinale.1": IapItemDisplayBundleMaxfinale1;
+	"bundle.maxfinale.2": IapItemDisplayBundleMaxfinale2;
+	"bundle.maxmonday.1": IapItemDisplayBundleMaxmonday1;
+	"bundle.mega-lucario-raid-day2024.1": IapItemDisplayBundleMegaLucarioRaidDay20241;
+	"bundle.mheracrossraidday2024.1": IapItemDisplayBundleMheracrossraidday20241;
+	"bundle.midautumn.1": IapItemDisplayBundleMidautumn1;
+	"bundle.midautumn.2": IapItemDisplayBundleMidautumn2;
+	"bundle.midautumn.3": IapItemDisplayBundleMidautumn3;
+	"bundle.newyears2024.1": IapItemDisplayBundleNewyears20241;
+	"bundle.playsummerbox.1": IapItemDisplayBundlePlaysummerbox1;
+	"bundle.primalraidday2023.1": IapItemDisplayBundlePrimalraidday20231;
+	"bundle.psych_spec_2022.1": IapItemDisplayBundlePsychSpec20221;
+	"bundle.psych_spec_2022.2": IapItemDisplayBundlePsychSpec20222;
+	"bundle.psych_spec_2022.3": IapItemDisplayBundlePsychSpec20223;
+	"bundle.ramadan.1": IapItemDisplayBundleRamadan1;
+	"bundle.ramadan.2": IapItemDisplayBundleRamadan2;
+	"bundle.rarebundle.1": IapItemDisplayBundleRarebundle1;
+	"bundle.rarebundle.2": IapItemDisplayBundleRarebundle2;
+	"bundle.rarebundle.3": IapItemDisplayBundleRarebundle3;
+	"bundle.rarebundle.4": IapItemDisplayBundleRarebundle4;
+	"bundle.riolu2023.1": IapItemDisplayBundleRiolu20231;
+	"bundle.riolu2023.2": IapItemDisplayBundleRiolu20232;
+	"bundle.rockruffboost.1": IapItemDisplayBundleRockruffboost1;
+	"bundle.rrpstar.1": IapItemDisplayBundleRrpstar1;
+	"bundle.s17seasonstart.1": IapItemDisplayBundleS17seasonstart1;
+	"bundle.season10evergreen.1": IapItemDisplayBundleSeason10evergreen1;
+	"bundle.season10evergreen.2": IapItemDisplayBundleSeason10evergreen2;
+	"bundle.season10evergreen.3": IapItemDisplayBundleSeason10evergreen3;
+	"bundle.season11evergreen.1": IapItemDisplayBundleSeason11evergreen1;
+	"bundle.season11evergreen.2": IapItemDisplayBundleSeason11evergreen2;
+	"bundle.season11evergreen.3": IapItemDisplayBundleSeason11evergreen3;
+	"bundle.season12evergreen2023.1": IapItemDisplayBundleSeason12evergreen20231;
+	"bundle.season12evergreen2023.2": IapItemDisplayBundleSeason12evergreen20232;
+	"bundle.season12evergreen2023.3": IapItemDisplayBundleSeason12evergreen20233;
+	"bundle.season13evergreen2023.1": IapItemDisplayBundleSeason13evergreen20231;
+	"bundle.season13evergreen2023.2": IapItemDisplayBundleSeason13evergreen20232;
+	"bundle.season13evergreen2023.3": IapItemDisplayBundleSeason13evergreen20233;
+	"bundle.season14evergreen2024.1": IapItemDisplayBundleSeason14evergreen20241;
+	"bundle.season14evergreen2024.2": IapItemDisplayBundleSeason14evergreen20242;
+	"bundle.season14evergreen2024.3": IapItemDisplayBundleSeason14evergreen20243;
+	"bundle.season15evergreen2024.1": IapItemDisplayBundleSeason15evergreen20241;
+	"bundle.season15evergreen2024.2": IapItemDisplayBundleSeason15evergreen20242;
+	"bundle.season15evergreen2024.3": IapItemDisplayBundleSeason15evergreen20243;
+	"bundle.season16evergreen2024.1": IapItemDisplayBundleSeason16evergreen20241;
+	"bundle.season16evergreen2024.2": IapItemDisplayBundleSeason16evergreen20242;
+	"bundle.season16evergreen2024.3": IapItemDisplayBundleSeason16evergreen20243;
+	"bundle.seasonaldelights2024.1": IapItemDisplayBundleSeasonaldelights20241;
+	"bundle.shadowlugia.1": IapItemDisplayBundleShadowlugia1;
+	"bundle.smoresbump.2025": IapItemDisplayBundleSmoresbump2025;
+	"bundle.solstice2023.1": IapItemDisplayBundleSolstice20231;
+	"bundle.solstice2023.2": IapItemDisplayBundleSolstice20232;
+	"bundle.solstice2023.3": IapItemDisplayBundleSolstice20233;
+	"bundle.songkran2025.1": IapItemDisplayBundleSongkran20251;
+	"bundle.sparkbox.1": IapItemDisplayBundleSparkbox1;
+	"bundle.sparkbox.2": IapItemDisplayBundleSparkbox2;
+	"bundle.sparkbox.3": IapItemDisplayBundleSparkbox3;
+	"bundle.springtakeover2023.1": IapItemDisplayBundleSpringtakeover20231;
+	"bundle.springtakeover2023.2": IapItemDisplayBundleSpringtakeover20232;
+	"bundle.springtakeover2023.3": IapItemDisplayBundleSpringtakeover20233;
+	"bundle.steel_mettle2022.1": IapItemDisplayBundleSteelMettle20221;
+	"bundle.steel_mettle2022.2": IapItemDisplayBundleSteelMettle20222;
+	"bundle.steel_mettle2022.3": IapItemDisplayBundleSteelMettle20223;
+	"bundle.takeover2022.1": IapItemDisplayBundleTakeover20221;
+	"bundle.takeover2022.2": IapItemDisplayBundleTakeover20222;
+	"bundle.takeover2022.3": IapItemDisplayBundleTakeover20223;
+	"bundle.tgrtakeover2024.1": IapItemDisplayBundleTgrtakeover20241;
+	"bundle.thailandfeatureapril2024.1": IapItemDisplayBundleThailandfeatureapril20241;
+	"bundle.tmexpert.1": IapItemDisplayBundleTmexpert1;
+	"bundle.ubraidday2022.1": IapItemDisplayBundleUbraidday20221;
+	"bundle.ubraidday2022.2": IapItemDisplayBundleUbraidday20222;
+	"bundle.ukfeature.1": IapItemDisplayBundleUkfeature1;
+	"bundle.ultrabeastraid.2024": IapItemDisplayBundleUltrabeastraid2024;
+	"bundle.ultraunlockraid2023.1": IapItemDisplayBundleUltraunlockraid20231;
+	"bundle.ultraunlockraid2023.2": IapItemDisplayBundleUltraunlockraid20232;
+	"bundle.uustorage.1": IapItemDisplayBundleUustorage1;
+	"bundle.voyagerouttoplay.1": IapItemDisplayBundleVoyagerouttoplay1;
+	"bundle.welcomebox.1": IapItemDisplayBundleWelcomebox1;
+	"bundle.winterevergreen.1": IapItemDisplayBundleWinterevergreen1;
+	"bundle.winterevergreen.2": IapItemDisplayBundleWinterevergreen2;
+	"bundle.winterevergreen.3": IapItemDisplayBundleWinterevergreen3;
+	"bundle.winterholiday2023.1": IapItemDisplayBundleWinterholiday20231;
+	"bundle.winterholiday2023.2": IapItemDisplayBundleWinterholiday20232;
+	"bundle.winterholiday2023.3": IapItemDisplayBundleWinterholiday20233;
+	"bundle.xmas.large.1": IapItemDisplayBundleXmasLarge1;
+	"bundle.zoruamakegood2022": IapItemDisplayBundleZoruamakegood2022;
+	"bundle.zzraid.1": IapItemDisplayBundleZzraid1;
+	diademuertos: IapItemDisplayDiademuertos;
+	EVENT_PASS_APRIL1_SEASON_STORE_REDIRECT: IapItemDisplayEventPassApril1SeasonStoreRedirect;
+	EVENT_PASS_APRIL3_EVENT_STORE_REDIRECT: IapItemDisplayEventPassApril3EventStoreRedirect;
+	EVENT_PASS_GOFEST2025_FINALE_STORE_REDIRECT: IapItemDisplayEventPassGofest2025FinaleStoreRedirect;
+	EVENT_PASS_GOFEST2025_GLOBAL_STORE_REDIRECT: IapItemDisplayEventPassGofest2025GlobalStoreRedirect;
+	EVENT_PASS_GOTOUR2025_GLOBAL_STORE_REDIRECT: IapItemDisplayEventPassGotour2025GlobalStoreRedirect;
+	EVENT_PASS_GOWILD2025_GLOBAL_STORE_REDIRECT: IapItemDisplayEventPassGowild2025GlobalStoreRedirect;
+	EVENT_PASS_HALLOWEEN2025_SEASON_STORE_REDIRECT: IapItemDisplayEventPassHalloween2025SeasonStoreRedirect;
+	EVENT_PASS_MARCH1_SEASON_STORE_REDIRECT: IapItemDisplayEventPassMarch1SeasonStoreRedirect;
+	EVENT_PASS_MARCH2_SEASON_STORE_REDIRECT: IapItemDisplayEventPassMarch2SeasonStoreRedirect;
+	EVENT_PASS_MONTH1_SEASON_STORE_REDIRECT: IapItemDisplayEventPassMonth1SeasonStoreRedirect;
+	EVENT_PASS_MONTH2_SEASON_STORE_REDIRECT: IapItemDisplayEventPassMonth2SeasonStoreRedirect;
+	EVENT_PASS_MONTH3_SEASON_STORE_REDIRECT: IapItemDisplayEventPassMonth3SeasonStoreRedirect;
+	EVENT_PASS_WINTERHOLIDAYS2025_SEASON_STORE_REDIRECT: IapItemDisplayEventPassWinterholidays2025SeasonStoreRedirect;
+	"evergreenticket.1": IapItemDisplayEvergreenticket1;
+	"evergreenticket.1.giftable": IapItemDisplayEvergreenticket1Giftable;
+	FLAIR_FREE_BUNDLE_0: IapItemDisplayFlairFreeBundle0;
+	"general1.ticket.1": IapItemDisplayGeneral1Ticket1;
+	"general1.ticket.1.giftable": IapItemDisplayGeneral1Ticket1Giftable;
+	"general1.ticket.2": IapItemDisplayGeneral1Ticket2;
+	"general1.ticket.2.giftable": IapItemDisplayGeneral1Ticket2Giftable;
+	"general1.ticket.3": IapItemDisplayGeneral1Ticket3;
+	"general1.ticket.4": IapItemDisplayGeneral1Ticket4;
+	"general1.ticket.4.giftable": IapItemDisplayGeneral1Ticket4Giftable;
+	"general1.ticket.5": IapItemDisplayGeneral1Ticket5;
+	"general1.ticket.6": IapItemDisplayGeneral1Ticket6;
+	"general2.ticket.1": IapItemDisplayGeneral2Ticket1;
+	"general2.ticket.1.giftable": IapItemDisplayGeneral2Ticket1Giftable;
+	"general2.ticket.10": IapItemDisplayGeneral2Ticket10;
+	"general2.ticket.10.giftable": IapItemDisplayGeneral2Ticket10Giftable;
+	"general2.ticket.2": IapItemDisplayGeneral2Ticket2;
+	"general2.ticket.2.giftable": IapItemDisplayGeneral2Ticket2Giftable;
+	"general2.ticket.3": IapItemDisplayGeneral2Ticket3;
+	"general2.ticket.3.giftable": IapItemDisplayGeneral2Ticket3Giftable;
+	"general2.ticket.4": IapItemDisplayGeneral2Ticket4;
+	"general2.ticket.4.giftable": IapItemDisplayGeneral2Ticket4Giftable;
+	"general2.ticket.5": IapItemDisplayGeneral2Ticket5;
+	"general2.ticket.5.giftable": IapItemDisplayGeneral2Ticket5Giftable;
+	"general2.ticket.6": IapItemDisplayGeneral2Ticket6;
+	"general2.ticket.7": IapItemDisplayGeneral2Ticket7;
+	"general2.ticket.7.giftable": IapItemDisplayGeneral2Ticket7Giftable;
+	"general2.ticket.8": IapItemDisplayGeneral2Ticket8;
+	"general2.ticket.8.giftable": IapItemDisplayGeneral2Ticket8Giftable;
+	"general2.ticket.9": IapItemDisplayGeneral2Ticket9;
+	"general2.ticket.9.giftable": IapItemDisplayGeneral2Ticket9Giftable;
+	"general4.medium.1": IapItemDisplayGeneral4Medium1;
+	"general6.small.1": IapItemDisplayGeneral6Small1;
+	GO_SAFARI_BALL_IAP_10: IapItemDisplayGoSafariBallIap10;
+	GO_SAFARI_BALL_IAP_25: IapItemDisplayGoSafariBallIap25;
+	GO_SAFARI_BALL_IAP_50: IapItemDisplayGoSafariBallIap50;
+	GOFEST_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayGofest2025DeluxeEventPassTrackUnlock;
+	GOFEST_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayGofest2025DeluxeEventPassTrackUnlockPlusPoints;
+	GOFEST2025_FINALE_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayGofest2025FinaleDeluxeEventPassTrackUnlock;
+	GOFEST2025_FINALE_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayGofest2025FinaleDeluxeEventPassTrackUnlockPlusPoints;
+	GOTOUR_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayGotour2025DeluxeEventPassTrackUnlock;
+	GOTOUR_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayGotour2025DeluxeEventPassTrackUnlockPlusPoints;
+	"gowaticketfree.1": IapItemDisplayGowaticketfree1;
+	GOWILD_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayGowild2025DeluxeEventPassTrackUnlock;
+	GOWILD_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayGowild2025DeluxeEventPassTrackUnlockPlusPoints;
+	HALLOWEEN2025_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayHalloween2025DeluxeEventPassTrackUnlock;
+	HALLOWEEN2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayHalloween2025DeluxeEventPassTrackUnlockPlusPoints;
+	"hometransport.1": IapItemDisplayHometransport1;
+	"incenseordinary.1": IapItemDisplayIncenseordinary1;
+	"incenseordinary.8": IapItemDisplayIncenseordinary8;
+	"incubatorbasic.1": IapItemDisplayIncubatorbasic1;
+	"incubatorsuper.1": IapItemDisplayIncubatorsuper1;
+	ITEM_ENHANCED_CURRENCY_200: IapItemDisplayItemEnhancedCurrency200;
+	ITEM_ENHANCED_CURRENCY_600: IapItemDisplayItemEnhancedCurrency600;
+	itemleadermap: IapItemDisplayItemleadermap;
+	"luckyegg.1": IapItemDisplayLuckyegg1;
+	"luckyegg.8": IapItemDisplayLuckyegg8;
+	MARCH1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayMarch12026DeluxeEventPassTrackUnlock;
+	MARCH1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayMarch12026DeluxeEventPassTrackUnlockPlusPoints;
+	MARCH2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayMarch22026DeluxeEventPassTrackUnlock;
+	MARCH2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayMarch22026DeluxeEventPassTrackUnlockPlusPoints;
+	"max_boost.1": IapItemDisplayMaxBoost1;
+	"max_boost.3": IapItemDisplayMaxBoost3;
+	"maxpotion.10": IapItemDisplayMaxpotion10;
+	"maxpotion.5": IapItemDisplayMaxpotion5;
+	"maxrevive.3": IapItemDisplayMaxrevive3;
+	"maxrevive.6": IapItemDisplayMaxrevive6;
+	MONTH1_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayMonth1DeluxeEventPassTrackUnlock;
+	MONTH1_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayMonth1DeluxeEventPassTrackUnlockPlusPoints;
+	MONTH2_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayMonth2DeluxeEventPassTrackUnlock;
+	MONTH2_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayMonth2DeluxeEventPassTrackUnlockPlusPoints;
+	MONTH3_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayMonth3DeluxeEventPassTrackUnlock;
+	MONTH3_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayMonth3DeluxeEventPassTrackUnlockPlusPoints;
+	"mp_replenish_rrp.1": IapItemDisplayMpReplenishRrp1;
+	"mp_replenish_rrp.3": IapItemDisplayMpReplenishRrp3;
+	"mp_replenish.1": IapItemDisplayMpReplenish1;
+	"mp_replenish.3": IapItemDisplayMpReplenish3;
+	"paidraidticket.1": IapItemDisplayPaidraidticket1;
+	"paidraidticket.3": IapItemDisplayPaidraidticket3;
+	"pgorelease.april2_2026_deluxe_event_pass_track_redirect": IapItemDisplayPgoreleaseApril22026DeluxeEventPassTrackRedirect;
+	"pgorelease.april3_2026_deluxe_event_pass_track_unlock": IapItemDisplayPgoreleaseApril32026DeluxeEventPassTrackUnlock;
+	"pgorelease.april3_2026_deluxe_event_pass_track_unlock_plus_points": IapItemDisplayPgoreleaseApril32026DeluxeEventPassTrackUnlockPlusPoints;
+	"pgorelease.bundle.1": IapItemDisplayPgoreleaseBundle1;
+	"pgorelease.bundle.2": IapItemDisplayPgoreleaseBundle2;
+	"pgorelease.bundle.blanchebox.1": IapItemDisplayPgoreleaseBundleBlanchebox1;
+	"pgorelease.bundle.citysafaribarcelona1": IapItemDisplayPgoreleaseBundleCitysafaribarcelona1;
+	"pgorelease.bundle.citysafaribarcelona2": IapItemDisplayPgoreleaseBundleCitysafaribarcelona2;
+	"pgorelease.bundle.citysafarimexico1": IapItemDisplayPgoreleaseBundleCitysafarimexico1;
+	"pgorelease.bundle.citysafarimexico2": IapItemDisplayPgoreleaseBundleCitysafarimexico2;
+	"pgorelease.bundle.eliteraidbox.1": IapItemDisplayPgoreleaseBundleEliteraidbox1;
+	"pgorelease.bundle.eliteraidmay2023": IapItemDisplayPgoreleaseBundleEliteraidmay2023;
+	"pgorelease.bundle.flavoredlures.1": IapItemDisplayPgoreleaseBundleFlavoredlures1;
+	"pgorelease.bundle.flavoredlures.2": IapItemDisplayPgoreleaseBundleFlavoredlures2;
+	"pgorelease.bundle.flavoredlures.3": IapItemDisplayPgoreleaseBundleFlavoredlures3;
+	"pgorelease.bundle.flavoredlures.4": IapItemDisplayPgoreleaseBundleFlavoredlures4;
+	"pgorelease.bundle.flavoredlures.5": IapItemDisplayPgoreleaseBundleFlavoredlures5;
+	"pgorelease.bundle.flavoredlures.6": IapItemDisplayPgoreleaseBundleFlavoredlures6;
+	"pgorelease.bundle.flavoredlures.7": IapItemDisplayPgoreleaseBundleFlavoredlures7;
+	"pgorelease.bundle.flavoredlures.8": IapItemDisplayPgoreleaseBundleFlavoredlures8;
+	"pgorelease.bundle.foc2023box.1": IapItemDisplayPgoreleaseBundleFoc2023box1;
+	"pgorelease.bundle.general.thirdparty.large.2": IapItemDisplayPgoreleaseBundleGeneralThirdpartyLarge2;
+	"pgorelease.bundle.general.thirdparty.large.4": IapItemDisplayPgoreleaseBundleGeneralThirdpartyLarge4;
+	"pgorelease.bundle.general.thirdparty.medium.1": IapItemDisplayPgoreleaseBundleGeneralThirdpartyMedium1;
+	"pgorelease.bundle.general.thirdparty.small.1": IapItemDisplayPgoreleaseBundleGeneralThirdpartySmall1;
+	"pgorelease.bundle.general.thirdparty.small.1.2": IapItemDisplayPgoreleaseBundleGeneralThirdpartySmall12;
+	"pgorelease.bundle.general.thirdparty.small.2": IapItemDisplayPgoreleaseBundleGeneralThirdpartySmall2;
+	"pgorelease.bundle.general1.tiny.4": IapItemDisplayPgoreleaseBundleGeneral1Tiny4;
+	"pgorelease.bundle.general11.small.1331": IapItemDisplayPgoreleaseBundleGeneral11Small1331;
+	"pgorelease.bundle.gotour2023.0": IapItemDisplayPgoreleaseBundleGotour20230;
+	"pgorelease.bundle.gotour2023.1": IapItemDisplayPgoreleaseBundleGotour20231;
+	"pgorelease.bundle.gotour2023.2": IapItemDisplayPgoreleaseBundleGotour20232;
+	"pgorelease.bundle.gotour2023.3": IapItemDisplayPgoreleaseBundleGotour20233;
+	"pgorelease.bundle.gotour2023.4": IapItemDisplayPgoreleaseBundleGotour20234;
+	"pgorelease.bundle.gotour2023.5": IapItemDisplayPgoreleaseBundleGotour20235;
+	"pgorelease.bundle.gotour2023.6": IapItemDisplayPgoreleaseBundleGotour20236;
+	"pgorelease.bundle.gp2022.1": IapItemDisplayPgoreleaseBundleGp20221;
+	"pgorelease.bundle.indiagp2023.1": IapItemDisplayPgoreleaseBundleIndiagp20231;
+	"pgorelease.bundle.lure.1": IapItemDisplayPgoreleaseBundleLure1;
+	"pgorelease.bundle.pokemonday.1": IapItemDisplayPgoreleaseBundlePokemonday1;
+	"pgorelease.bundle.raiddaymay2023.1": IapItemDisplayPgoreleaseBundleRaiddaymay20231;
+	"pgorelease.bundle.raiddaymay2023.2": IapItemDisplayPgoreleaseBundleRaiddaymay20232;
+	"pgorelease.bundle.raiddaymay2023.3": IapItemDisplayPgoreleaseBundleRaiddaymay20233;
+	"pgorelease.bundle.raiddaymay2023.4": IapItemDisplayPgoreleaseBundleRaiddaymay20234;
+	"pgorelease.bundle.raiddaynov2023.1": IapItemDisplayPgoreleaseBundleRaiddaynov20231;
+	"pgorelease.bundle.raidhourbox.1": IapItemDisplayPgoreleaseBundleRaidhourbox1;
+	"pgorelease.bundle.raidhourbox.2": IapItemDisplayPgoreleaseBundleRaidhourbox2;
+	"pgorelease.bundle.ramadan2023box.1": IapItemDisplayPgoreleaseBundleRamadan2023box1;
+	"pgorelease.bundle.RTSRaid": IapItemDisplayPgoreleaseBundleRtsraid;
+	"pgorelease.bundle.season10evergreen.1": IapItemDisplayPgoreleaseBundleSeason10evergreen1;
+	"pgorelease.bundle.season10evergreen.2": IapItemDisplayPgoreleaseBundleSeason10evergreen2;
+	"pgorelease.bundle.season10evergreen.3": IapItemDisplayPgoreleaseBundleSeason10evergreen3;
+	"pgorelease.bundle.season10launch.1": IapItemDisplayPgoreleaseBundleSeason10launch1;
+	"pgorelease.bundle.sustainabilitybonusmay2023": IapItemDisplayPgoreleaseBundleSustainabilitybonusmay2023;
+	"pgorelease.bundle.sustainabilitymay2023": IapItemDisplayPgoreleaseBundleSustainabilitymay2023;
+	"pgorelease.bundle.template1": IapItemDisplayPgoreleaseBundleTemplate1;
+	"pgorelease.bundle.template2": IapItemDisplayPgoreleaseBundleTemplate2;
+	"pgorelease.bundle.template3": IapItemDisplayPgoreleaseBundleTemplate3;
+	"pgorelease.bundle.thailandspec2023.1": IapItemDisplayPgoreleaseBundleThailandspec20231;
+	"pgorelease.bundle.walkeratlantic2022.1": IapItemDisplayPgoreleaseBundleWalkeratlantic20221;
+	"pgorelease.bundle.walkeratlantic2022.2": IapItemDisplayPgoreleaseBundleWalkeratlantic20222;
+	"pgorelease.citysafariticket0.1": IapItemDisplayPgoreleaseCitysafariticket01;
+	"pgorelease.citysafariticket1.1": IapItemDisplayPgoreleaseCitysafariticket11;
+	"pgorelease.citysafariticket2.1": IapItemDisplayPgoreleaseCitysafariticket21;
+	"pgorelease.evergreenticket.1": IapItemDisplayPgoreleaseEvergreenticket1;
+	"pgorelease.evergreenticket.1.giftable": IapItemDisplayPgoreleaseEvergreenticket1Giftable;
+	"pgorelease.general1.ticket.1": IapItemDisplayPgoreleaseGeneral1Ticket1;
+	"pgorelease.general1.ticket.1.giftable": IapItemDisplayPgoreleaseGeneral1Ticket1Giftable;
+	"pgorelease.general1.ticket.2": IapItemDisplayPgoreleaseGeneral1Ticket2;
+	"pgorelease.general1.ticket.2.giftable": IapItemDisplayPgoreleaseGeneral1Ticket2Giftable;
+	"pgorelease.general1.ticket.4": IapItemDisplayPgoreleaseGeneral1Ticket4;
+	"pgorelease.general1.ticket.4.giftable": IapItemDisplayPgoreleaseGeneral1Ticket4Giftable;
+	"pgorelease.general2.ticket.1": IapItemDisplayPgoreleaseGeneral2Ticket1;
+	"pgorelease.general2.ticket.1.giftable": IapItemDisplayPgoreleaseGeneral2Ticket1Giftable;
+	"pgorelease.general2.ticket.10": IapItemDisplayPgoreleaseGeneral2Ticket10;
+	"pgorelease.general2.ticket.10.giftable": IapItemDisplayPgoreleaseGeneral2Ticket10Giftable;
+	"pgorelease.general2.ticket.2": IapItemDisplayPgoreleaseGeneral2Ticket2;
+	"pgorelease.general2.ticket.2.giftable": IapItemDisplayPgoreleaseGeneral2Ticket2Giftable;
+	"pgorelease.general2.ticket.3": IapItemDisplayPgoreleaseGeneral2Ticket3;
+	"pgorelease.general2.ticket.3.giftable": IapItemDisplayPgoreleaseGeneral2Ticket3Giftable;
+	"pgorelease.general2.ticket.4": IapItemDisplayPgoreleaseGeneral2Ticket4;
+	"pgorelease.general2.ticket.4.giftable": IapItemDisplayPgoreleaseGeneral2Ticket4Giftable;
+	"pgorelease.general2.ticket.5": IapItemDisplayPgoreleaseGeneral2Ticket5;
+	"pgorelease.general2.ticket.5.giftable": IapItemDisplayPgoreleaseGeneral2Ticket5Giftable;
+	"pgorelease.general2.ticket.7": IapItemDisplayPgoreleaseGeneral2Ticket7;
+	"pgorelease.general2.ticket.7.giftable": IapItemDisplayPgoreleaseGeneral2Ticket7Giftable;
+	"pgorelease.general2.ticket.8": IapItemDisplayPgoreleaseGeneral2Ticket8;
+	"pgorelease.general2.ticket.8.giftable": IapItemDisplayPgoreleaseGeneral2Ticket8Giftable;
+	"pgorelease.general2.ticket.9": IapItemDisplayPgoreleaseGeneral2Ticket9;
+	"pgorelease.general2.ticket.9.giftable": IapItemDisplayPgoreleaseGeneral2Ticket9Giftable;
+	"pgorelease.month2_deluxe_event_pass_track_unlock": IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlock;
+	"pgorelease.month2_deluxe_event_pass_track_unlock_plus_points": IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints;
+	"pgorelease.pokecoin.15950": IapItemDisplayPgoreleasePokecoin15950;
+	"pgorelease.pokecoin.21375": IapItemDisplayPgoreleasePokecoin21375;
+	"pgorelease.pokecoin.2750": IapItemDisplayPgoreleasePokecoin2750;
+	"pgorelease.pokecoin.5720": IapItemDisplayPgoreleasePokecoin5720;
+	poffin: IapItemDisplayPoffin;
+	"pokeball.100": IapItemDisplayPokeball100;
+	"pokeball.20": IapItemDisplayPokeball20;
+	"pokeball.200": IapItemDisplayPokeball200;
+	"postcardstorageupgrade.1": IapItemDisplayPostcardstorageupgrade1;
+	"remoteraidticket.1": IapItemDisplayRemoteraidticket1;
+	"remoteraidticket.3": IapItemDisplayRemoteraidticket3;
+	"starpiece.1": IapItemDisplayStarpiece1;
+	"starpiece.8": IapItemDisplayStarpiece8;
+	"STICKER_2023COLLAB_1.3": IapItemDisplaySticker2023collab13;
+	"STICKER_2023COLLAB_1.5": IapItemDisplaySticker2023collab15;
+	"STICKER_2023COLLAB_2.3": IapItemDisplaySticker2023collab23;
+	"STICKER_2023COLLAB_2.5": IapItemDisplaySticker2023collab25;
+	"STICKER_2023COLLAB_3.3": IapItemDisplaySticker2023collab33;
+	"STICKER_2023COLLAB_3.5": IapItemDisplaySticker2023collab35;
+	"STICKER_2023COLLAB_4.3": IapItemDisplaySticker2023collab43;
+	"STICKER_2023COLLAB_4.5": IapItemDisplaySticker2023collab45;
+	"STICKER_8ANNIV_1.3": IapItemDisplaySticker8anniv13;
+	"STICKER_8ANNIV_1.5": IapItemDisplaySticker8anniv15;
+	"STICKER_8ANNIV_2.3": IapItemDisplaySticker8anniv23;
+	"STICKER_8ANNIV_2.5": IapItemDisplaySticker8anniv25;
+	"STICKER_8ANNIV_3.3": IapItemDisplaySticker8anniv33;
+	"STICKER_8ANNIV_3.5": IapItemDisplaySticker8anniv35;
+	"STICKER_8ANNIV_4.3": IapItemDisplaySticker8anniv43;
+	"STICKER_8ANNIV_4.5": IapItemDisplaySticker8anniv45;
+	"STICKER_9ANNIV_1.3": IapItemDisplaySticker9anniv13;
+	"STICKER_9ANNIV_1.5": IapItemDisplaySticker9anniv15;
+	"STICKER_9ANNIV_2.3": IapItemDisplaySticker9anniv23;
+	"STICKER_9ANNIV_2.5": IapItemDisplaySticker9anniv25;
+	"STICKER_9ANNIV_3.3": IapItemDisplaySticker9anniv33;
+	"STICKER_9ANNIV_3.5": IapItemDisplaySticker9anniv35;
+	"STICKER_APRILFOOL2023_1.3": IapItemDisplayStickerAprilfool202313;
+	"STICKER_APRILFOOL2023_1.5": IapItemDisplayStickerAprilfool202315;
+	"STICKER_APRILFOOL2023_2.3": IapItemDisplayStickerAprilfool202323;
+	"STICKER_APRILFOOL2023_2.5": IapItemDisplayStickerAprilfool202325;
+	"STICKER_AUDINO.3": IapItemDisplayStickerAudino3;
+	"STICKER_AUDINO.5": IapItemDisplayStickerAudino5;
+	"STICKER_BELLSPROUTCD_1.3": IapItemDisplayStickerBellsproutcd13;
+	"STICKER_BELLSPROUTCD_1.5": IapItemDisplayStickerBellsproutcd15;
+	"STICKER_BELLSPROUTCD_2.3": IapItemDisplayStickerBellsproutcd23;
+	"STICKER_BELLSPROUTCD_2.5": IapItemDisplayStickerBellsproutcd25;
+	"STICKER_BELLSPROUTCD_3.3": IapItemDisplayStickerBellsproutcd33;
+	"STICKER_BELLSPROUTCD_3.5": IapItemDisplayStickerBellsproutcd35;
+	"STICKER_BELLSPROUTCD_4.3": IapItemDisplayStickerBellsproutcd43;
+	"STICKER_BELLSPROUTCD_4.5": IapItemDisplayStickerBellsproutcd45;
+	"STICKER_BIDOOFDAY_1.3": IapItemDisplayStickerBidoofday13;
+	"STICKER_BIDOOFDAY_1.5": IapItemDisplayStickerBidoofday15;
+	"STICKER_BIDOOFDAY_2.3": IapItemDisplayStickerBidoofday23;
+	"STICKER_BIDOOFDAY_2.5": IapItemDisplayStickerBidoofday25;
+	"STICKER_BIDOOFDAY_3.3": IapItemDisplayStickerBidoofday33;
+	"STICKER_BIDOOFDAY_3.5": IapItemDisplayStickerBidoofday35;
+	"STICKER_BOUNSWEETCD2024_1.3": IapItemDisplayStickerBounsweetcd202413;
+	"STICKER_BOUNSWEETCD2024_1.5": IapItemDisplayStickerBounsweetcd202415;
+	"STICKER_BOUNSWEETCD2024_2.3": IapItemDisplayStickerBounsweetcd202423;
+	"STICKER_BOUNSWEETCD2024_2.5": IapItemDisplayStickerBounsweetcd202425;
+	"STICKER_BOUNSWEETCD2024_3.3": IapItemDisplayStickerBounsweetcd202433;
+	"STICKER_BOUNSWEETCD2024_3.5": IapItemDisplayStickerBounsweetcd202435;
+	"STICKER_BOUNSWEETCD2024_4.3": IapItemDisplayStickerBounsweetcd202443;
+	"STICKER_BOUNSWEETCD2024_4.5": IapItemDisplayStickerBounsweetcd202445;
+	"STICKER_CHANSEYCD_1.3": IapItemDisplayStickerChanseycd13;
+	"STICKER_CHANSEYCD_1.5": IapItemDisplayStickerChanseycd15;
+	"STICKER_CHANSEYCD_2.3": IapItemDisplayStickerChanseycd23;
+	"STICKER_CHANSEYCD_2.5": IapItemDisplayStickerChanseycd25;
+	"STICKER_CHANSEYCD_3.3": IapItemDisplayStickerChanseycd33;
+	"STICKER_CHANSEYCD_3.5": IapItemDisplayStickerChanseycd35;
+	"STICKER_CHANSEYCD_4.3": IapItemDisplayStickerChanseycd43;
+	"STICKER_CHANSEYCD_4.5": IapItemDisplayStickerChanseycd45;
+	"STICKER_DIAMONDPEARLCHIMCHAR.3": IapItemDisplayStickerDiamondpearlchimchar3;
+	"STICKER_DIAMONDPEARLCHIMCHAR.5": IapItemDisplayStickerDiamondpearlchimchar5;
+	"STICKER_DIAMONDPEARLDIALGA.3": IapItemDisplayStickerDiamondpearldialga3;
+	"STICKER_DIAMONDPEARLDIALGA.5": IapItemDisplayStickerDiamondpearldialga5;
+	"STICKER_DIAMONDPEARLLUCARIO.3": IapItemDisplayStickerDiamondpearllucario3;
+	"STICKER_DIAMONDPEARLLUCARIO.5": IapItemDisplayStickerDiamondpearllucario5;
+	"STICKER_DIAMONDPEARLPALKIA.3": IapItemDisplayStickerDiamondpearlpalkia3;
+	"STICKER_DIAMONDPEARLPALKIA.5": IapItemDisplayStickerDiamondpearlpalkia5;
+	"STICKER_DIAMONDPEARLPIPLUP.3": IapItemDisplayStickerDiamondpearlpiplup3;
+	"STICKER_DIAMONDPEARLPIPLUP.5": IapItemDisplayStickerDiamondpearlpiplup5;
+	"STICKER_DIAMONDPEARLTURTWIG.3": IapItemDisplayStickerDiamondpearlturtwig3;
+	"STICKER_DIAMONDPEARLTURTWIG.5": IapItemDisplayStickerDiamondpearlturtwig5;
+	"STICKER_DITTO_1.3": IapItemDisplayStickerDitto13;
+	"STICKER_DITTO_1.5": IapItemDisplayStickerDitto15;
+	"STICKER_DITTO_2.3": IapItemDisplayStickerDitto23;
+	"STICKER_DITTO_2.5": IapItemDisplayStickerDitto25;
+	"STICKER_DITTO_3.3": IapItemDisplayStickerDitto33;
+	"STICKER_DITTO_3.5": IapItemDisplayStickerDitto35;
+	"STICKER_DITTO_4.3": IapItemDisplayStickerDitto43;
+	"STICKER_DITTO_4.5": IapItemDisplayStickerDitto45;
+	"STICKER_DITTO_5.3": IapItemDisplayStickerDitto53;
+	"STICKER_DITTO_5.5": IapItemDisplayStickerDitto55;
+	"STICKER_DITTO_6.3": IapItemDisplayStickerDitto63;
+	"STICKER_DITTO_6.5": IapItemDisplayStickerDitto65;
+	"STICKER_EEVEEFRIENDS_1.3": IapItemDisplayStickerEeveefriends13;
+	"STICKER_EEVEEFRIENDS_1.5": IapItemDisplayStickerEeveefriends15;
+	"STICKER_EEVEEFRIENDS_2.3": IapItemDisplayStickerEeveefriends23;
+	"STICKER_EEVEEFRIENDS_2.5": IapItemDisplayStickerEeveefriends25;
+	"STICKER_EEVEEFRIENDS_3.3": IapItemDisplayStickerEeveefriends33;
+	"STICKER_EEVEEFRIENDS_3.5": IapItemDisplayStickerEeveefriends35;
+	"STICKER_EEVEEFRIENDS_4.3": IapItemDisplayStickerEeveefriends43;
+	"STICKER_EEVEEFRIENDS_4.5": IapItemDisplayStickerEeveefriends45;
+	"STICKER_EEVEEFRIENDS_5.3": IapItemDisplayStickerEeveefriends53;
+	"STICKER_EEVEEFRIENDS_5.5": IapItemDisplayStickerEeveefriends55;
+	"STICKER_EEVEEFRIENDS_6.3": IapItemDisplayStickerEeveefriends63;
+	"STICKER_EEVEEFRIENDS_6.5": IapItemDisplayStickerEeveefriends65;
+	"STICKER_EEVEEFRIENDS_7.3": IapItemDisplayStickerEeveefriends73;
+	"STICKER_EEVEEFRIENDS_7.5": IapItemDisplayStickerEeveefriends75;
+	"STICKER_EEVEEFRIENDS_8.3": IapItemDisplayStickerEeveefriends83;
+	"STICKER_EEVEEFRIENDS_8.5": IapItemDisplayStickerEeveefriends85;
+	"STICKER_EEVEEFRIENDS_9.3": IapItemDisplayStickerEeveefriends93;
+	"STICKER_EEVEEFRIENDS_9.5": IapItemDisplayStickerEeveefriends95;
+	"STICKER_ETERNATUS.3": IapItemDisplayStickerEternatus3;
+	"STICKER_ETERNATUS.5": IapItemDisplayStickerEternatus5;
+	"STICKER_FALL_2023_1.3": IapItemDisplayStickerFall202313;
+	"STICKER_FALL_2023_1.5": IapItemDisplayStickerFall202315;
+	"STICKER_FALL_2023_2.3": IapItemDisplayStickerFall202323;
+	"STICKER_FALL_2023_2.5": IapItemDisplayStickerFall202325;
+	"STICKER_FALL_2023_3.3": IapItemDisplayStickerFall202333;
+	"STICKER_FALL_2023_3.5": IapItemDisplayStickerFall202335;
+	"STICKER_FALL_2023_4.3": IapItemDisplayStickerFall202343;
+	"STICKER_FALL_2023_4.5": IapItemDisplayStickerFall202345;
+	"STICKER_FALL_2023_5.3": IapItemDisplayStickerFall202353;
+	"STICKER_FALL_2023_5.5": IapItemDisplayStickerFall202355;
+	"STICKER_FALL_2023_6.3": IapItemDisplayStickerFall202363;
+	"STICKER_FALL_2023_6.5": IapItemDisplayStickerFall202365;
+	"STICKER_FALL_2024_1.3": IapItemDisplayStickerFall202413;
+	"STICKER_FALL_2024_1.5": IapItemDisplayStickerFall202415;
+	"STICKER_FALL_2024_2.3": IapItemDisplayStickerFall202423;
+	"STICKER_FALL_2024_2.5": IapItemDisplayStickerFall202425;
+	"STICKER_FALL_2024_3.3": IapItemDisplayStickerFall202433;
+	"STICKER_FALL_2024_3.5": IapItemDisplayStickerFall202435;
+	"STICKER_FALL_2024_4.3": IapItemDisplayStickerFall202443;
+	"STICKER_FALL_2024_4.5": IapItemDisplayStickerFall202445;
+	"STICKER_FALL_2024_5.3": IapItemDisplayStickerFall202453;
+	"STICKER_FALL_2024_5.5": IapItemDisplayStickerFall202455;
+	"STICKER_FALL_2024_6.3": IapItemDisplayStickerFall202463;
+	"STICKER_FALL_2024_6.5": IapItemDisplayStickerFall202465;
+	"STICKER_FALL_2025_1.3": IapItemDisplayStickerFall202513;
+	"STICKER_FALL_2025_1.5": IapItemDisplayStickerFall202515;
+	"STICKER_FALL_2025_2.3": IapItemDisplayStickerFall202523;
+	"STICKER_FALL_2025_2.5": IapItemDisplayStickerFall202525;
+	"STICKER_FALL_2025_3.3": IapItemDisplayStickerFall202533;
+	"STICKER_FALL_2025_3.5": IapItemDisplayStickerFall202535;
+	"STICKER_FALL_2025_4.3": IapItemDisplayStickerFall202543;
+	"STICKER_FALL_2025_4.5": IapItemDisplayStickerFall202545;
+	"STICKER_FALL_SAWSBUCK.3": IapItemDisplayStickerFallSawsbuck3;
+	"STICKER_FALL_SAWSBUCK.5": IapItemDisplayStickerFallSawsbuck5;
+	"STICKER_FALL_SHROOMISH.3": IapItemDisplayStickerFallShroomish3;
+	"STICKER_FALL_SHROOMISH.5": IapItemDisplayStickerFallShroomish5;
+	"STICKER_FALL_SKWOVET.3": IapItemDisplayStickerFallSkwovet3;
+	"STICKER_FALL_SKWOVET.5": IapItemDisplayStickerFallSkwovet5;
+	"STICKER_FALL_TEDDIURSA.3": IapItemDisplayStickerFallTeddiursa3;
+	"STICKER_FALL_TEDDIURSA.5": IapItemDisplayStickerFallTeddiursa5;
+	"STICKER_FALL_TREVENANT.3": IapItemDisplayStickerFallTrevenant3;
+	"STICKER_FALL_TREVENANT.5": IapItemDisplayStickerFallTrevenant5;
+	"STICKER_FALL_VULPIX.3": IapItemDisplayStickerFallVulpix3;
+	"STICKER_FALL_VULPIX.5": IapItemDisplayStickerFallVulpix5;
+	"STICKER_FESTIVALOFLIGHT_MORELULL.3": IapItemDisplayStickerFestivaloflightMorelull3;
+	"STICKER_FESTIVALOFLIGHT_MORELULL.5": IapItemDisplayStickerFestivaloflightMorelull5;
+	"STICKER_FESTIVALOFLIGHT_SHIINOTIC.3": IapItemDisplayStickerFestivaloflightShiinotic3;
+	"STICKER_FESTIVALOFLIGHT_SHIINOTIC.5": IapItemDisplayStickerFestivaloflightShiinotic5;
+	"STICKER_FESTIVALOFTHELIGHTS21_V1.3": IapItemDisplayStickerFestivalofthelights21V13;
+	"STICKER_FESTIVALOFTHELIGHTS21_V1.5": IapItemDisplayStickerFestivalofthelights21V15;
+	"STICKER_FESTIVALOFTHELIGHTS21_V2.3": IapItemDisplayStickerFestivalofthelights21V23;
+	"STICKER_FESTIVALOFTHELIGHTS21_V2.5": IapItemDisplayStickerFestivalofthelights21V25;
+	"STICKER_FESTIVALOFTHELIGHTS21_V3.3": IapItemDisplayStickerFestivalofthelights21V33;
+	"STICKER_FESTIVALOFTHELIGHTS21_V3.5": IapItemDisplayStickerFestivalofthelights21V35;
+	"STICKER_FESTIVALOFTHELIGHTS21_V4.3": IapItemDisplayStickerFestivalofthelights21V43;
+	"STICKER_FESTIVALOFTHELIGHTS21_V4.5": IapItemDisplayStickerFestivalofthelights21V45;
+	"STICKER_FLABEBE_1.3": IapItemDisplayStickerFlabebe13;
+	"STICKER_FLABEBE_1.5": IapItemDisplayStickerFlabebe15;
+	"STICKER_FLABEBE_2.3": IapItemDisplayStickerFlabebe23;
+	"STICKER_FLABEBE_2.5": IapItemDisplayStickerFlabebe25;
+	"STICKER_FUNAWARI_22_312.3": IapItemDisplayStickerFunawari223123;
+	"STICKER_FUNAWARI_22_312.5": IapItemDisplayStickerFunawari223125;
+	"STICKER_FUNWARI_02_0608.3": IapItemDisplayStickerFunwari0206083;
+	"STICKER_FUNWARI_02_0608.5": IapItemDisplayStickerFunwari0206085;
+	"STICKER_FUNWARI_20.3": IapItemDisplayStickerFunwari203;
+	"STICKER_FUNWARI_20.5": IapItemDisplayStickerFunwari205;
+	"STICKER_FURFROUHEART_1.3": IapItemDisplayStickerFurfrouheart13;
+	"STICKER_FURFROUHEART_1.5": IapItemDisplayStickerFurfrouheart15;
+	"STICKER_FURFROUHEART_2.3": IapItemDisplayStickerFurfrouheart23;
+	"STICKER_FURFROUHEART_2.5": IapItemDisplayStickerFurfrouheart25;
+	"STICKER_GIFTTHANKYOU.3": IapItemDisplayStickerGiftthankyou3;
+	"STICKER_GIFTTHANKYOU.5": IapItemDisplayStickerGiftthankyou5;
+	"STICKER_GIMMIGHOUL_1.3": IapItemDisplayStickerGimmighoul13;
+	"STICKER_GIMMIGHOUL_1.5": IapItemDisplayStickerGimmighoul15;
+	"STICKER_GIMMIGHOUL_2.3": IapItemDisplayStickerGimmighoul23;
+	"STICKER_GIMMIGHOUL_2.5": IapItemDisplayStickerGimmighoul25;
+	"STICKER_GIMMIGHOUL_3.3": IapItemDisplayStickerGimmighoul33;
+	"STICKER_GIMMIGHOUL_3.5": IapItemDisplayStickerGimmighoul35;
+	"STICKER_GIMMIGHOUL_4.3": IapItemDisplayStickerGimmighoul43;
+	"STICKER_GIMMIGHOUL_4.5": IapItemDisplayStickerGimmighoul45;
+	"STICKER_GIMMIGHOUL_5.3": IapItemDisplayStickerGimmighoul53;
+	"STICKER_GIMMIGHOUL_5.5": IapItemDisplayStickerGimmighoul55;
+	"STICKER_GOOMYCD_1.3": IapItemDisplayStickerGoomycd13;
+	"STICKER_GOOMYCD_1.5": IapItemDisplayStickerGoomycd15;
+	"STICKER_GOOMYCD_2.3": IapItemDisplayStickerGoomycd23;
+	"STICKER_GOOMYCD_2.5": IapItemDisplayStickerGoomycd25;
+	"STICKER_GOOMYCD_3.3": IapItemDisplayStickerGoomycd33;
+	"STICKER_GOOMYCD_3.5": IapItemDisplayStickerGoomycd35;
+	"STICKER_GOOMYCD_4.3": IapItemDisplayStickerGoomycd43;
+	"STICKER_GOOMYCD_4.5": IapItemDisplayStickerGoomycd45;
+	"STICKER_GOTOUR2025_BADGE.3": IapItemDisplayStickerGotour2025Badge3;
+	"STICKER_GOTOUR2025_BADGE.5": IapItemDisplayStickerGotour2025Badge5;
+	"STICKER_GOTOUR2025_KYUREMBLACK.3": IapItemDisplayStickerGotour2025Kyuremblack3;
+	"STICKER_GOTOUR2025_KYUREMBLACK.5": IapItemDisplayStickerGotour2025Kyuremblack5;
+	"STICKER_GOTOUR2025_KYUREMWHITE.3": IapItemDisplayStickerGotour2025Kyuremwhite3;
+	"STICKER_GOTOUR2025_KYUREMWHITE.5": IapItemDisplayStickerGotour2025Kyuremwhite5;
+	"STICKER_GOTOUR2025_RESHIRAM.3": IapItemDisplayStickerGotour2025Reshiram3;
+	"STICKER_GOTOUR2025_RESHIRAM.5": IapItemDisplayStickerGotour2025Reshiram5;
+	"STICKER_GOTOUR2025_RZ.3": IapItemDisplayStickerGotour2025Rz3;
+	"STICKER_GOTOUR2025_RZ.5": IapItemDisplayStickerGotour2025Rz5;
+	"STICKER_GOTOUR2025_ZEKROM.3": IapItemDisplayStickerGotour2025Zekrom3;
+	"STICKER_GOTOUR2025_ZEKROM.5": IapItemDisplayStickerGotour2025Zekrom5;
+	"STICKER_GOWA2025_01.3": IapItemDisplayStickerGowa2025013;
+	"STICKER_GOWA2025_01.5": IapItemDisplayStickerGowa2025015;
+	"STICKER_GOWA2025_02.3": IapItemDisplayStickerGowa2025023;
+	"STICKER_GOWA2025_02.5": IapItemDisplayStickerGowa2025025;
+	"STICKER_GOWA2025_03.3": IapItemDisplayStickerGowa2025033;
+	"STICKER_GOWA2025_03.5": IapItemDisplayStickerGowa2025035;
+	"STICKER_GOWA2025_04.3": IapItemDisplayStickerGowa2025043;
+	"STICKER_GOWA2025_04.5": IapItemDisplayStickerGowa2025045;
+	"STICKER_GOWA2025_05.3": IapItemDisplayStickerGowa2025053;
+	"STICKER_GOWA2025_05.5": IapItemDisplayStickerGowa2025055;
+	"STICKER_HALLOWEEN_BULB.3": IapItemDisplayStickerHalloweenBulb3;
+	"STICKER_HALLOWEEN_BULB.5": IapItemDisplayStickerHalloweenBulb5;
+	"STICKER_HALLOWEEN_CHARM.3": IapItemDisplayStickerHalloweenCharm3;
+	"STICKER_HALLOWEEN_CHARM.5": IapItemDisplayStickerHalloweenCharm5;
+	"STICKER_HALLOWEEN_GENGARMD.3": IapItemDisplayStickerHalloweenGengarmd3;
+	"STICKER_HALLOWEEN_GENGARMD.5": IapItemDisplayStickerHalloweenGengarmd5;
+	"STICKER_HALLOWEEN_PIKA.3": IapItemDisplayStickerHalloweenPika3;
+	"STICKER_HALLOWEEN_PIKA.5": IapItemDisplayStickerHalloweenPika5;
+	"STICKER_HALLOWEEN_SQU.3": IapItemDisplayStickerHalloweenSqu3;
+	"STICKER_HALLOWEEN_SQU.5": IapItemDisplayStickerHalloweenSqu5;
+	"STICKER_HALLOWEEN2025_NOIBAT.3": IapItemDisplayStickerHalloween2025Noibat3;
+	"STICKER_HALLOWEEN2025_NOIBAT.5": IapItemDisplayStickerHalloween2025Noibat5;
+	"STICKER_HALLOWEEN2025_TEDDIURSA.3": IapItemDisplayStickerHalloween2025Teddiursa3;
+	"STICKER_HALLOWEEN2025_TEDDIURSA.5": IapItemDisplayStickerHalloween2025Teddiursa5;
+	"STICKER_HALLOWEEN21_FUWARAID.3": IapItemDisplayStickerHalloween21Fuwaraid3;
+	"STICKER_HALLOWEEN21_FUWARAID.5": IapItemDisplayStickerHalloween21Fuwaraid5;
+	"STICKER_HALLOWEEN21_GHOSTPIKA.3": IapItemDisplayStickerHalloween21Ghostpika3;
+	"STICKER_HALLOWEEN21_GHOSTPIKA.5": IapItemDisplayStickerHalloween21Ghostpika5;
+	"STICKER_HALLOWEEN21_PIKACHU.3": IapItemDisplayStickerHalloween21Pikachu3;
+	"STICKER_HALLOWEEN21_PIKACHU.5": IapItemDisplayStickerHalloween21Pikachu5;
+	"STICKER_HALLOWEEN21_POCHAMA.3": IapItemDisplayStickerHalloween21Pochama3;
+	"STICKER_HALLOWEEN21_POCHAMA.5": IapItemDisplayStickerHalloween21Pochama5;
+	"STICKER_HALLOWEEN24_FROAKIE.3": IapItemDisplayStickerHalloween24Froakie3;
+	"STICKER_HALLOWEEN24_FROAKIE.5": IapItemDisplayStickerHalloween24Froakie5;
+	"STICKER_HALLOWEEN24_ROWLET.3": IapItemDisplayStickerHalloween24Rowlet3;
+	"STICKER_HALLOWEEN24_ROWLET.5": IapItemDisplayStickerHalloween24Rowlet5;
+	"STICKER_HARU_CHERRIM.3": IapItemDisplayStickerHaruCherrim3;
+	"STICKER_HARU_CHERRIM.5": IapItemDisplayStickerHaruCherrim5;
+	"STICKER_HARU_DREDEARPIKA.3": IapItemDisplayStickerHaruDredearpika3;
+	"STICKER_HARU_DREDEARPIKA.5": IapItemDisplayStickerHaruDredearpika5;
+	"STICKER_HARU_KIREIHANA.3": IapItemDisplayStickerHaruKireihana3;
+	"STICKER_HARU_KIREIHANA.5": IapItemDisplayStickerHaruKireihana5;
+	"STICKER_HARU_LALANTES.3": IapItemDisplayStickerHaruLalantes3;
+	"STICKER_HARU_LALANTES.5": IapItemDisplayStickerHaruLalantes5;
+	"STICKER_HARU_MEBUKISHIKIJIK.3": IapItemDisplayStickerHaruMebukishikijik3;
+	"STICKER_HARU_MEBUKISHIKIJIK.5": IapItemDisplayStickerHaruMebukishikijik5;
+	"STICKER_HARU_MITSUHONEY.3": IapItemDisplayStickerHaruMitsuhoney3;
+	"STICKER_HARU_MITSUHONEY.5": IapItemDisplayStickerHaruMitsuhoney5;
+	"STICKER_HISUIDISCO_ARCANINE.3": IapItemDisplayStickerHisuidiscoArcanine3;
+	"STICKER_HISUIDISCO_ARCANINE.5": IapItemDisplayStickerHisuidiscoArcanine5;
+	"STICKER_HISUIDISCO_BRAVIARY.3": IapItemDisplayStickerHisuidiscoBraviary3;
+	"STICKER_HISUIDISCO_BRAVIARY.5": IapItemDisplayStickerHisuidiscoBraviary5;
+	"STICKER_HISUIDISCO_GROWLITHE.3": IapItemDisplayStickerHisuidiscoGrowlithe3;
+	"STICKER_HISUIDISCO_GROWLITHE.5": IapItemDisplayStickerHisuidiscoGrowlithe5;
+	"STICKER_HOLIDAYEVENT21_1.3": IapItemDisplayStickerHolidayevent2113;
+	"STICKER_HOLIDAYEVENT21_1.5": IapItemDisplayStickerHolidayevent2115;
+	"STICKER_HOLIDAYEVENT21_2.3": IapItemDisplayStickerHolidayevent2123;
+	"STICKER_HOLIDAYEVENT21_2.5": IapItemDisplayStickerHolidayevent2125;
+	"STICKER_HOLIDAYEVENT21_3.3": IapItemDisplayStickerHolidayevent2133;
+	"STICKER_HOLIDAYEVENT21_3.5": IapItemDisplayStickerHolidayevent2135;
+	"STICKER_HOLIDAYEVENT21_4.3": IapItemDisplayStickerHolidayevent2143;
+	"STICKER_HOLIDAYEVENT21_4.5": IapItemDisplayStickerHolidayevent2145;
+	"STICKER_HOLIDAYEVENT22_CUBCHOO.3": IapItemDisplayStickerHolidayevent22Cubchoo3;
+	"STICKER_HOLIDAYEVENT22_CUBCHOO.5": IapItemDisplayStickerHolidayevent22Cubchoo5;
+	"STICKER_HOLIDAYEVENT22_SCATTERBUG.3": IapItemDisplayStickerHolidayevent22Scatterbug3;
+	"STICKER_HOLIDAYEVENT22_SCATTERBUG.5": IapItemDisplayStickerHolidayevent22Scatterbug5;
+	"STICKER_HOLIDAYEVENT22_SNOWPIKA.3": IapItemDisplayStickerHolidayevent22Snowpika3;
+	"STICKER_HOLIDAYEVENT22_SNOWPIKA.5": IapItemDisplayStickerHolidayevent22Snowpika5;
+	"STICKER_HOLIDAYEVENT22_VULPIX.3": IapItemDisplayStickerHolidayevent22Vulpix3;
+	"STICKER_HOLIDAYEVENT22_VULPIX.5": IapItemDisplayStickerHolidayevent22Vulpix5;
+	"STICKER_HOLIDAYEVENT23_CETODDLE.3": IapItemDisplayStickerHolidayevent23Cetoddle3;
+	"STICKER_HOLIDAYEVENT23_CETODDLE.5": IapItemDisplayStickerHolidayevent23Cetoddle5;
+	"STICKER_HOLIDAYEVENT23_CRYOGONAL.3": IapItemDisplayStickerHolidayevent23Cryogonal3;
+	"STICKER_HOLIDAYEVENT23_CRYOGONAL.5": IapItemDisplayStickerHolidayevent23Cryogonal5;
+	"STICKER_HOLIDAYEVENT23_PSYDUCK.3": IapItemDisplayStickerHolidayevent23Psyduck3;
+	"STICKER_HOLIDAYEVENT23_PSYDUCK.5": IapItemDisplayStickerHolidayevent23Psyduck5;
+	"STICKER_HOLIDAYEVENT23_SEEL.3": IapItemDisplayStickerHolidayevent23Seel3;
+	"STICKER_HOLIDAYEVENT23_SEEL.5": IapItemDisplayStickerHolidayevent23Seel5;
+	"STICKER_HOLIDAYEVENT23_VANILLISH.3": IapItemDisplayStickerHolidayevent23Vanillish3;
+	"STICKER_HOLIDAYEVENT23_VANILLISH.5": IapItemDisplayStickerHolidayevent23Vanillish5;
+	"STICKER_HOPPIP_1.3": IapItemDisplayStickerHoppip13;
+	"STICKER_HOPPIP_1.5": IapItemDisplayStickerHoppip15;
+	"STICKER_HOPPIP_2.3": IapItemDisplayStickerHoppip23;
+	"STICKER_HOPPIP_2.5": IapItemDisplayStickerHoppip25;
+	"STICKER_HOPPIP_3.3": IapItemDisplayStickerHoppip33;
+	"STICKER_HOPPIP_3.5": IapItemDisplayStickerHoppip35;
+	"STICKER_HOPPIP_4.3": IapItemDisplayStickerHoppip43;
+	"STICKER_HOPPIP_4.5": IapItemDisplayStickerHoppip45;
+	"STICKER_LENTILLAUNCH_CAMERA.3": IapItemDisplayStickerLentillaunchCamera3;
+	"STICKER_LENTILLAUNCH_CAMERA.5": IapItemDisplayStickerLentillaunchCamera5;
+	"STICKER_LITTENCD_1.3": IapItemDisplayStickerLittencd13;
+	"STICKER_LITTENCD_1.5": IapItemDisplayStickerLittencd15;
+	"STICKER_LITTENCD_2.3": IapItemDisplayStickerLittencd23;
+	"STICKER_LITTENCD_2.5": IapItemDisplayStickerLittencd25;
+	"STICKER_LITTENCD_3.3": IapItemDisplayStickerLittencd33;
+	"STICKER_LITTENCD_3.5": IapItemDisplayStickerLittencd35;
+	"STICKER_LITTENCD_4.3": IapItemDisplayStickerLittencd43;
+	"STICKER_LITTENCD_4.5": IapItemDisplayStickerLittencd45;
+	"STICKER_LUVDISC.3": IapItemDisplayStickerLuvdisc3;
+	"STICKER_LUVDISC.5": IapItemDisplayStickerLuvdisc5;
+	"STICKER_MANKEY_1.3": IapItemDisplayStickerMankey13;
+	"STICKER_MANKEY_1.5": IapItemDisplayStickerMankey15;
+	"STICKER_MANKEY_2.3": IapItemDisplayStickerMankey23;
+	"STICKER_MANKEY_2.5": IapItemDisplayStickerMankey25;
+	"STICKER_MANKEY_3.3": IapItemDisplayStickerMankey33;
+	"STICKER_MANKEY_3.5": IapItemDisplayStickerMankey35;
+	"STICKER_MANKEY_4.3": IapItemDisplayStickerMankey43;
+	"STICKER_MANKEY_4.5": IapItemDisplayStickerMankey45;
+	"STICKER_NAGANO_06_312.3": IapItemDisplayStickerNagano063123;
+	"STICKER_NAGANO_06_312.5": IapItemDisplayStickerNagano063125;
+	"STICKER_NAGANO_11.3": IapItemDisplayStickerNagano113;
+	"STICKER_NAGANO_11.5": IapItemDisplayStickerNagano115;
+	"STICKER_NAGANO_15_312.3": IapItemDisplayStickerNagano153123;
+	"STICKER_NAGANO_15_312.5": IapItemDisplayStickerNagano153125;
+	"STICKER_NAGANO_BATH.3": IapItemDisplayStickerNaganoBath3;
+	"STICKER_NAGANO_BATH.5": IapItemDisplayStickerNaganoBath5;
+	"STICKER_NAGANO_MARILL.3": IapItemDisplayStickerNaganoMarill3;
+	"STICKER_NAGANO_MARILL.5": IapItemDisplayStickerNaganoMarill5;
+	"STICKER_NAGANO_YADON.3": IapItemDisplayStickerNaganoYadon3;
+	"STICKER_NAGANO_YADON.5": IapItemDisplayStickerNaganoYadon5;
+	"STICKER_NEWPOKEMON2_15.3": IapItemDisplayStickerNewpokemon2153;
+	"STICKER_NEWPOKEMON2_15.5": IapItemDisplayStickerNewpokemon2155;
+	"STICKER_NEWYEARS22_1.3": IapItemDisplayStickerNewyears2213;
+	"STICKER_NEWYEARS22_1.5": IapItemDisplayStickerNewyears2215;
+	"STICKER_NEWYEARS22_2.3": IapItemDisplayStickerNewyears2223;
+	"STICKER_NEWYEARS22_2.5": IapItemDisplayStickerNewyears2225;
+	"STICKER_NEWYEARS22_3.3": IapItemDisplayStickerNewyears2233;
+	"STICKER_NEWYEARS22_3.5": IapItemDisplayStickerNewyears2235;
+	"STICKER_NEWYEARS22_4.3": IapItemDisplayStickerNewyears2243;
+	"STICKER_NEWYEARS22_4.5": IapItemDisplayStickerNewyears2245;
+	"STICKER_NOIBAT_CD_1.3": IapItemDisplayStickerNoibatCd13;
+	"STICKER_NOIBAT_CD_1.5": IapItemDisplayStickerNoibatCd15;
+	"STICKER_NOIBAT_CD_2.3": IapItemDisplayStickerNoibatCd23;
+	"STICKER_NOIBAT_CD_2.5": IapItemDisplayStickerNoibatCd25;
+	"STICKER_NOIBAT_CD_3.3": IapItemDisplayStickerNoibatCd33;
+	"STICKER_NOIBAT_CD_3.5": IapItemDisplayStickerNoibatCd35;
+	"STICKER_NOIBAT_CD_4.3": IapItemDisplayStickerNoibatCd43;
+	"STICKER_NOIBAT_CD_4.5": IapItemDisplayStickerNoibatCd45;
+	"STICKER_PGO_FEST_2024_1.3": IapItemDisplayStickerPgoFest202413;
+	"STICKER_PGO_FEST_2024_1.5": IapItemDisplayStickerPgoFest202415;
+	"STICKER_PGO_FEST_2024_2.3": IapItemDisplayStickerPgoFest202423;
+	"STICKER_PGO_FEST_2024_2.5": IapItemDisplayStickerPgoFest202425;
+	"STICKER_PGO_FEST_2024_3.3": IapItemDisplayStickerPgoFest202433;
+	"STICKER_PGO_FEST_2024_3.5": IapItemDisplayStickerPgoFest202435;
+	"STICKER_PGO_FEST_2024_4.3": IapItemDisplayStickerPgoFest202443;
+	"STICKER_PGO_FEST_2024_4.5": IapItemDisplayStickerPgoFest202445;
+	"STICKER_PGO_FEST_2024_5.3": IapItemDisplayStickerPgoFest202453;
+	"STICKER_PGO_FEST_2024_5.5": IapItemDisplayStickerPgoFest202455;
+	"STICKER_PGO_FEST_2024_6.3": IapItemDisplayStickerPgoFest202463;
+	"STICKER_PGO_FEST_2024_6.5": IapItemDisplayStickerPgoFest202465;
+	"STICKER_PGO_FEST_2024_LOGO.3": IapItemDisplayStickerPgoFest2024Logo3;
+	"STICKER_PGO_FEST_2024_LOGO.5": IapItemDisplayStickerPgoFest2024Logo5;
+	"STICKER_PGO_FEST_2024.3": IapItemDisplayStickerPgoFest20243;
+	"STICKER_PGO_FEST_2024.5": IapItemDisplayStickerPgoFest20245;
+	"STICKER_PGO_FEST_2025_1.3": IapItemDisplayStickerPgoFest202513;
+	"STICKER_PGO_FEST_2025_1.5": IapItemDisplayStickerPgoFest202515;
+	"STICKER_PGO_FEST_2025_2.3": IapItemDisplayStickerPgoFest202523;
+	"STICKER_PGO_FEST_2025_2.5": IapItemDisplayStickerPgoFest202525;
+	"STICKER_PGO_FEST_2025_3.3": IapItemDisplayStickerPgoFest202533;
+	"STICKER_PGO_FEST_2025_3.5": IapItemDisplayStickerPgoFest202535;
+	"STICKER_PGO_FEST_2025_LOGO.3": IapItemDisplayStickerPgoFest2025Logo3;
+	"STICKER_PGO_FEST_2025_LOGO.5": IapItemDisplayStickerPgoFest2025Logo5;
+	"STICKER_PGO_FEST_2025.3": IapItemDisplayStickerPgoFest20253;
+	"STICKER_PGO_FEST_2025.5": IapItemDisplayStickerPgoFest20255;
+	"STICKER_PGO_FEST_VICTINI_05.3": IapItemDisplayStickerPgoFestVictini053;
+	"STICKER_PGO_FEST_VICTINI_05.5": IapItemDisplayStickerPgoFestVictini055;
+	"STICKER_PGO_TOUR_2026_1.3": IapItemDisplayStickerPgoTour202613;
+	"STICKER_PGO_TOUR_2026_1.5": IapItemDisplayStickerPgoTour202615;
+	"STICKER_PGO_TOUR_2026_2.3": IapItemDisplayStickerPgoTour202623;
+	"STICKER_PGO_TOUR_2026_2.5": IapItemDisplayStickerPgoTour202625;
+	"STICKER_PGO_TOUR_2026_3.3": IapItemDisplayStickerPgoTour202633;
+	"STICKER_PGO_TOUR_2026_3.5": IapItemDisplayStickerPgoTour202635;
+	"STICKER_PGO_TOUR_2026_LOGO.3": IapItemDisplayStickerPgoTour2026Logo3;
+	"STICKER_PGO_TOUR_2026_LOGO.5": IapItemDisplayStickerPgoTour2026Logo5;
+	"STICKER_PGO_TOUR_2026.3": IapItemDisplayStickerPgoTour20263;
+	"STICKER_PGO_TOUR_2026.5": IapItemDisplayStickerPgoTour20265;
+	"STICKER_PGO_WILDAREA_2024_1.3": IapItemDisplayStickerPgoWildarea202413;
+	"STICKER_PGO_WILDAREA_2024_1.5": IapItemDisplayStickerPgoWildarea202415;
+	"STICKER_PGO_WILDAREA_2024_2.3": IapItemDisplayStickerPgoWildarea202423;
+	"STICKER_PGO_WILDAREA_2024_2.5": IapItemDisplayStickerPgoWildarea202425;
+	"STICKER_PGO_WILDAREA_2024_3.3": IapItemDisplayStickerPgoWildarea202433;
+	"STICKER_PGO_WILDAREA_2024_3.5": IapItemDisplayStickerPgoWildarea202435;
+	"STICKER_PGO_WILDAREA_2024_4.3": IapItemDisplayStickerPgoWildarea202443;
+	"STICKER_PGO_WILDAREA_2024_4.5": IapItemDisplayStickerPgoWildarea202445;
+	"STICKER_PGO_WILDAREA_2024_LOGO.3": IapItemDisplayStickerPgoWildarea2024Logo3;
+	"STICKER_PGO_WILDAREA_2024_LOGO.5": IapItemDisplayStickerPgoWildarea2024Logo5;
+	"STICKER_PGO_WILDAREA_2024.3": IapItemDisplayStickerPgoWildarea20243;
+	"STICKER_PGO_WILDAREA_2024.5": IapItemDisplayStickerPgoWildarea20245;
+	"STICKER_PGOFEST2021_GALARIANZIGZAGOON.3": IapItemDisplayStickerPgofest2021Galarianzigzagoon3;
+	"STICKER_PGOFEST2021_GALARIANZIGZAGOON.5": IapItemDisplayStickerPgofest2021Galarianzigzagoon5;
+	"STICKER_PGOFEST2021_MELOETTA_1.3": IapItemDisplayStickerPgofest2021Meloetta13;
+	"STICKER_PGOFEST2021_MELOETTA_1.5": IapItemDisplayStickerPgofest2021Meloetta15;
+	"STICKER_PGOFEST2021_MELOETTA_2.3": IapItemDisplayStickerPgofest2021Meloetta23;
+	"STICKER_PGOFEST2021_MELOETTA_2.5": IapItemDisplayStickerPgofest2021Meloetta25;
+	"STICKER_PGOFEST2021_PONYTA.3": IapItemDisplayStickerPgofest2021Ponyta3;
+	"STICKER_PGOFEST2021_PONYTA.5": IapItemDisplayStickerPgofest2021Ponyta5;
+	"STICKER_PGOFEST2022_GROUDON.3": IapItemDisplayStickerPgofest2022Groudon3;
+	"STICKER_PGOFEST2022_GROUDON.5": IapItemDisplayStickerPgofest2022Groudon5;
+	"STICKER_PGOFEST2022_KIBAGO.3": IapItemDisplayStickerPgofest2022Kibago3;
+	"STICKER_PGOFEST2022_KIBAGO.5": IapItemDisplayStickerPgofest2022Kibago5;
+	"STICKER_PGOFEST2022_KYOGRE.3": IapItemDisplayStickerPgofest2022Kyogre3;
+	"STICKER_PGOFEST2022_KYOGRE.5": IapItemDisplayStickerPgofest2022Kyogre5;
+	"STICKER_PGOFEST2022_PIKACHU.3": IapItemDisplayStickerPgofest2022Pikachu3;
+	"STICKER_PGOFEST2022_PIKACHU.5": IapItemDisplayStickerPgofest2022Pikachu5;
+	"STICKER_PGOFEST2022_POCHAMA.3": IapItemDisplayStickerPgofest2022Pochama3;
+	"STICKER_PGOFEST2022_POCHAMA.5": IapItemDisplayStickerPgofest2022Pochama5;
+	"STICKER_PGOFEST2022_SHAYMIN.3": IapItemDisplayStickerPgofest2022Shaymin3;
+	"STICKER_PGOFEST2022_SHAYMIN.5": IapItemDisplayStickerPgofest2022Shaymin5;
+	"STICKER_PIKACHU_JOL.3": IapItemDisplayStickerPikachuJol3;
+	"STICKER_PIKACHU_JOL.5": IapItemDisplayStickerPikachuJol5;
+	"STICKER_POKEMONCHATPALS2_40.3": IapItemDisplayStickerPokemonchatpals2403;
+	"STICKER_POKEMONCHATPALS2_40.5": IapItemDisplayStickerPokemonchatpals2405;
+	"STICKER_PONYTA_1.3": IapItemDisplayStickerPonyta13;
+	"STICKER_PONYTA_1.5": IapItemDisplayStickerPonyta15;
+	"STICKER_PONYTA_2.3": IapItemDisplayStickerPonyta23;
+	"STICKER_PONYTA_2.5": IapItemDisplayStickerPonyta25;
+	"STICKER_PONYTA_3.3": IapItemDisplayStickerPonyta33;
+	"STICKER_PONYTA_3.5": IapItemDisplayStickerPonyta35;
+	"STICKER_PONYTA_4.3": IapItemDisplayStickerPonyta43;
+	"STICKER_PONYTA_4.5": IapItemDisplayStickerPonyta45;
+	"STICKER_POPPLIOCD_1.3": IapItemDisplayStickerPoppliocd13;
+	"STICKER_POPPLIOCD_1.5": IapItemDisplayStickerPoppliocd15;
+	"STICKER_POPPLIOCD_2.3": IapItemDisplayStickerPoppliocd23;
+	"STICKER_POPPLIOCD_2.5": IapItemDisplayStickerPoppliocd25;
+	"STICKER_POPPLIOCD_3.3": IapItemDisplayStickerPoppliocd33;
+	"STICKER_POPPLIOCD_3.5": IapItemDisplayStickerPoppliocd35;
+	"STICKER_POPPLIOCD_4.3": IapItemDisplayStickerPoppliocd43;
+	"STICKER_POPPLIOCD_4.5": IapItemDisplayStickerPoppliocd45;
+	"STICKER_PSYCHICSPEC21_INKAY.3": IapItemDisplayStickerPsychicspec21Inkay3;
+	"STICKER_PSYCHICSPEC21_INKAY.5": IapItemDisplayStickerPsychicspec21Inkay5;
+	"STICKER_PSYCHICSPEC21_INKAY2.3": IapItemDisplayStickerPsychicspec21Inkay23;
+	"STICKER_PSYCHICSPEC21_INKAY2.5": IapItemDisplayStickerPsychicspec21Inkay25;
+	"STICKER_ROWLETCD_1.3": IapItemDisplayStickerRowletcd13;
+	"STICKER_ROWLETCD_1.5": IapItemDisplayStickerRowletcd15;
+	"STICKER_ROWLETCD_2.3": IapItemDisplayStickerRowletcd23;
+	"STICKER_ROWLETCD_2.5": IapItemDisplayStickerRowletcd25;
+	"STICKER_ROWLETCD_3.3": IapItemDisplayStickerRowletcd33;
+	"STICKER_ROWLETCD_3.5": IapItemDisplayStickerRowletcd35;
+	"STICKER_ROWLETCD_4.3": IapItemDisplayStickerRowletcd43;
+	"STICKER_ROWLETCD_4.5": IapItemDisplayStickerRowletcd45;
+	"STICKER_SEWADDLECD_1.3": IapItemDisplayStickerSewaddlecd13;
+	"STICKER_SEWADDLECD_1.5": IapItemDisplayStickerSewaddlecd15;
+	"STICKER_SEWADDLECD_2.3": IapItemDisplayStickerSewaddlecd23;
+	"STICKER_SEWADDLECD_2.5": IapItemDisplayStickerSewaddlecd25;
+	"STICKER_SEWADDLECD_3.3": IapItemDisplayStickerSewaddlecd33;
+	"STICKER_SEWADDLECD_3.5": IapItemDisplayStickerSewaddlecd35;
+	"STICKER_SEWADDLECD_4.3": IapItemDisplayStickerSewaddlecd43;
+	"STICKER_SEWADDLECD_4.5": IapItemDisplayStickerSewaddlecd45;
+	"STICKER_SHELMET_KARRABLAST_1.3": IapItemDisplayStickerShelmetKarrablast13;
+	"STICKER_SHELMET_KARRABLAST_1.5": IapItemDisplayStickerShelmetKarrablast15;
+	"STICKER_SHELMET_KARRABLAST_2.3": IapItemDisplayStickerShelmetKarrablast23;
+	"STICKER_SHELMET_KARRABLAST_2.5": IapItemDisplayStickerShelmetKarrablast25;
+	"STICKER_SHELMET_KARRABLAST_3.3": IapItemDisplayStickerShelmetKarrablast33;
+	"STICKER_SHELMET_KARRABLAST_3.5": IapItemDisplayStickerShelmetKarrablast35;
+	"STICKER_SLOWPOKE_1.3": IapItemDisplayStickerSlowpoke13;
+	"STICKER_SLOWPOKE_1.5": IapItemDisplayStickerSlowpoke15;
+	"STICKER_SLOWPOKE_2.3": IapItemDisplayStickerSlowpoke23;
+	"STICKER_SLOWPOKE_2.5": IapItemDisplayStickerSlowpoke25;
+	"STICKER_SLOWPOKE_3.3": IapItemDisplayStickerSlowpoke33;
+	"STICKER_SLOWPOKE_3.5": IapItemDisplayStickerSlowpoke35;
+	"STICKER_SLOWPOKE_4.3": IapItemDisplayStickerSlowpoke43;
+	"STICKER_SLOWPOKE_4.5": IapItemDisplayStickerSlowpoke45;
+	"STICKER_SPHEAL_1.3": IapItemDisplayStickerSpheal13;
+	"STICKER_SPHEAL_1.5": IapItemDisplayStickerSpheal15;
+	"STICKER_SPHEAL_2.3": IapItemDisplayStickerSpheal23;
+	"STICKER_SPHEAL_2.5": IapItemDisplayStickerSpheal25;
+	"STICKER_SPHEAL_3.3": IapItemDisplayStickerSpheal33;
+	"STICKER_SPHEAL_3.5": IapItemDisplayStickerSpheal35;
+	"STICKER_SPHEAL_4.3": IapItemDisplayStickerSpheal43;
+	"STICKER_SPHEAL_4.5": IapItemDisplayStickerSpheal45;
+	"STICKER_SPRIGATITO_1.3": IapItemDisplayStickerSprigatito13;
+	"STICKER_SPRIGATITO_1.5": IapItemDisplayStickerSprigatito15;
+	"STICKER_SPRIGATITO_2.3": IapItemDisplayStickerSprigatito23;
+	"STICKER_SPRIGATITO_2.5": IapItemDisplayStickerSprigatito25;
+	"STICKER_SPRIGATITO_3.3": IapItemDisplayStickerSprigatito33;
+	"STICKER_SPRIGATITO_3.5": IapItemDisplayStickerSprigatito35;
+	"STICKER_SPRIGATITO_4.3": IapItemDisplayStickerSprigatito43;
+	"STICKER_SPRIGATITO_4.5": IapItemDisplayStickerSprigatito45;
+	"STICKER_SPRING_2024_1.3": IapItemDisplayStickerSpring202413;
+	"STICKER_SPRING_2024_1.5": IapItemDisplayStickerSpring202415;
+	"STICKER_SPRING_2024_2.3": IapItemDisplayStickerSpring202423;
+	"STICKER_SPRING_2024_2.5": IapItemDisplayStickerSpring202425;
+	"STICKER_SPRING_2024_3.3": IapItemDisplayStickerSpring202433;
+	"STICKER_SPRING_2024_3.5": IapItemDisplayStickerSpring202435;
+	"STICKER_SPRING_2024_4.3": IapItemDisplayStickerSpring202443;
+	"STICKER_SPRING_2024_4.5": IapItemDisplayStickerSpring202445;
+	"STICKER_SPRING_2024_5.3": IapItemDisplayStickerSpring202453;
+	"STICKER_SPRING_2024_5.5": IapItemDisplayStickerSpring202455;
+	"STICKER_SPRING_2024_6.3": IapItemDisplayStickerSpring202463;
+	"STICKER_SPRING_2024_6.5": IapItemDisplayStickerSpring202465;
+	"STICKER_SPRING_2025_1.3": IapItemDisplayStickerSpring202513;
+	"STICKER_SPRING_2025_1.5": IapItemDisplayStickerSpring202515;
+	"STICKER_SPRING_2025_2.3": IapItemDisplayStickerSpring202523;
+	"STICKER_SPRING_2025_2.5": IapItemDisplayStickerSpring202525;
+	"STICKER_SPRING_2025_3.3": IapItemDisplayStickerSpring202533;
+	"STICKER_SPRING_2025_3.5": IapItemDisplayStickerSpring202535;
+	"STICKER_SPRING_2025_4.3": IapItemDisplayStickerSpring202543;
+	"STICKER_SPRING_2025_4.5": IapItemDisplayStickerSpring202545;
+	"STICKER_SPRING_2026_1.3": IapItemDisplayStickerSpring202613;
+	"STICKER_SPRING_2026_1.5": IapItemDisplayStickerSpring202615;
+	"STICKER_SPRING_2026_2.3": IapItemDisplayStickerSpring202623;
+	"STICKER_SPRING_2026_2.5": IapItemDisplayStickerSpring202625;
+	"STICKER_SPRING_2026_3.3": IapItemDisplayStickerSpring202633;
+	"STICKER_SPRING_2026_3.5": IapItemDisplayStickerSpring202635;
+	"STICKER_SPRING_2026_4.3": IapItemDisplayStickerSpring202643;
+	"STICKER_SPRING_2026_4.5": IapItemDisplayStickerSpring202645;
+	"STICKER_SPRING_EIEVUI.3": IapItemDisplayStickerSpringEievui3;
+	"STICKER_SPRING_EIEVUI.5": IapItemDisplayStickerSpringEievui5;
+	"STICKER_SPRING_HAPINAS.3": IapItemDisplayStickerSpringHapinas3;
+	"STICKER_SPRING_HAPINAS.5": IapItemDisplayStickerSpringHapinas5;
+	"STICKER_SPRING_MIMIROL.3": IapItemDisplayStickerSpringMimirol3;
+	"STICKER_SPRING_MIMIROL.5": IapItemDisplayStickerSpringMimirol5;
+	"STICKER_SPRING_NIMPHIA.3": IapItemDisplayStickerSpringNimphia3;
+	"STICKER_SPRING_NIMPHIA.5": IapItemDisplayStickerSpringNimphia5;
+	"STICKER_SPRING_PIKACHU.3": IapItemDisplayStickerSpringPikachu3;
+	"STICKER_SPRING_PIKACHU.5": IapItemDisplayStickerSpringPikachu5;
+	"STICKER_SPRING_PIPITO.3": IapItemDisplayStickerSpringPipito3;
+	"STICKER_SPRING_PIPITO.5": IapItemDisplayStickerSpringPipito5;
+	"STICKER_STUFFUL_1.3": IapItemDisplayStickerStufful13;
+	"STICKER_STUFFUL_1.5": IapItemDisplayStickerStufful15;
+	"STICKER_STUFFUL_2.3": IapItemDisplayStickerStufful23;
+	"STICKER_STUFFUL_2.5": IapItemDisplayStickerStufful25;
+	"STICKER_STUFFUL_3.3": IapItemDisplayStickerStufful33;
+	"STICKER_STUFFUL_3.5": IapItemDisplayStickerStufful35;
+	"STICKER_STUFFUL_4.3": IapItemDisplayStickerStufful43;
+	"STICKER_STUFFUL_4.5": IapItemDisplayStickerStufful45;
+	"STICKER_SUMMER_1.3": IapItemDisplayStickerSummer13;
+	"STICKER_SUMMER_1.5": IapItemDisplayStickerSummer15;
+	"STICKER_SUMMER_2.3": IapItemDisplayStickerSummer23;
+	"STICKER_SUMMER_2.5": IapItemDisplayStickerSummer25;
+	"STICKER_SUMMER_2023_BLASTOISE.3": IapItemDisplayStickerSummer2023Blastoise3;
+	"STICKER_SUMMER_2023_BLASTOISE.5": IapItemDisplayStickerSummer2023Blastoise5;
+	"STICKER_SUMMER_2023_BUTTERFREE.3": IapItemDisplayStickerSummer2023Butterfree3;
+	"STICKER_SUMMER_2023_BUTTERFREE.5": IapItemDisplayStickerSummer2023Butterfree5;
+	"STICKER_SUMMER_2023_CLAMPERL.3": IapItemDisplayStickerSummer2023Clamperl3;
+	"STICKER_SUMMER_2023_CLAMPERL.5": IapItemDisplayStickerSummer2023Clamperl5;
+	"STICKER_SUMMER_2023_LEDIAN.3": IapItemDisplayStickerSummer2023Ledian3;
+	"STICKER_SUMMER_2023_LEDIAN.5": IapItemDisplayStickerSummer2023Ledian5;
+	"STICKER_SUMMER_2023_SAWSBUCK.3": IapItemDisplayStickerSummer2023Sawsbuck3;
+	"STICKER_SUMMER_2023_SAWSBUCK.5": IapItemDisplayStickerSummer2023Sawsbuck5;
+	"STICKER_SUMMER_2023_SQUIRTLE.3": IapItemDisplayStickerSummer2023Squirtle3;
+	"STICKER_SUMMER_2023_SQUIRTLE.5": IapItemDisplayStickerSummer2023Squirtle5;
+	"STICKER_SUMMER_2024_1.3": IapItemDisplayStickerSummer202413;
+	"STICKER_SUMMER_2024_1.5": IapItemDisplayStickerSummer202415;
+	"STICKER_SUMMER_2024_2.3": IapItemDisplayStickerSummer202423;
+	"STICKER_SUMMER_2024_2.5": IapItemDisplayStickerSummer202425;
+	"STICKER_SUMMER_2024_3.3": IapItemDisplayStickerSummer202433;
+	"STICKER_SUMMER_2024_3.5": IapItemDisplayStickerSummer202435;
+	"STICKER_SUMMER_2024_4.3": IapItemDisplayStickerSummer202443;
+	"STICKER_SUMMER_2024_4.5": IapItemDisplayStickerSummer202445;
+	"STICKER_SUMMER_2024_5.3": IapItemDisplayStickerSummer202453;
+	"STICKER_SUMMER_2024_5.5": IapItemDisplayStickerSummer202455;
+	"STICKER_SUMMER_2024_6.3": IapItemDisplayStickerSummer202463;
+	"STICKER_SUMMER_2024_6.5": IapItemDisplayStickerSummer202465;
+	"STICKER_SUMMER_2025_1.3": IapItemDisplayStickerSummer202513;
+	"STICKER_SUMMER_2025_1.5": IapItemDisplayStickerSummer202515;
+	"STICKER_SUMMER_2025_2.3": IapItemDisplayStickerSummer202523;
+	"STICKER_SUMMER_2025_2.5": IapItemDisplayStickerSummer202525;
+	"STICKER_SUMMER_2025_3.3": IapItemDisplayStickerSummer202533;
+	"STICKER_SUMMER_2025_3.5": IapItemDisplayStickerSummer202535;
+	"STICKER_SUMMER_2025_4.3": IapItemDisplayStickerSummer202543;
+	"STICKER_SUMMER_2025_4.5": IapItemDisplayStickerSummer202545;
+	"STICKER_SUMMER_3.3": IapItemDisplayStickerSummer33;
+	"STICKER_SUMMER_3.5": IapItemDisplayStickerSummer35;
+	"STICKER_SUMMER_4.3": IapItemDisplayStickerSummer43;
+	"STICKER_SUMMER_4.5": IapItemDisplayStickerSummer45;
+	"STICKER_SUMMER_5.3": IapItemDisplayStickerSummer53;
+	"STICKER_SUMMER_5.5": IapItemDisplayStickerSummer55;
+	"STICKER_SUMMER_6.3": IapItemDisplayStickerSummer63;
+	"STICKER_SUMMER_6.5": IapItemDisplayStickerSummer65;
+	"STICKER_SWORDSHIELD21_1.3": IapItemDisplayStickerSwordshield2113;
+	"STICKER_SWORDSHIELD21_1.5": IapItemDisplayStickerSwordshield2115;
+	"STICKER_SWORDSHIELD21_2.3": IapItemDisplayStickerSwordshield2123;
+	"STICKER_SWORDSHIELD21_2.5": IapItemDisplayStickerSwordshield2125;
+	"STICKER_SWORDSHIELD21_3.3": IapItemDisplayStickerSwordshield2133;
+	"STICKER_SWORDSHIELD21_3.5": IapItemDisplayStickerSwordshield2135;
+	"STICKER_SWORDSHIELD21_4.3": IapItemDisplayStickerSwordshield2143;
+	"STICKER_SWORDSHIELD21_4.5": IapItemDisplayStickerSwordshield2145;
+	"STICKER_SWORDSHIELD21_5.3": IapItemDisplayStickerSwordshield2153;
+	"STICKER_SWORDSHIELD21_5.5": IapItemDisplayStickerSwordshield2155;
+	"STICKER_TL_BLANCHE.3": IapItemDisplayStickerTlBlanche3;
+	"STICKER_TL_BLANCHE.5": IapItemDisplayStickerTlBlanche5;
+	"STICKER_TL_CANDELA.3": IapItemDisplayStickerTlCandela3;
+	"STICKER_TL_CANDELA.5": IapItemDisplayStickerTlCandela5;
+	"STICKER_TL_SPARK.3": IapItemDisplayStickerTlSpark3;
+	"STICKER_TL_SPARK.5": IapItemDisplayStickerTlSpark5;
+	"STICKER_TR_ARLO.3": IapItemDisplayStickerTrArlo3;
+	"STICKER_TR_ARLO.5": IapItemDisplayStickerTrArlo5;
+	"STICKER_TR_CLIFF.3": IapItemDisplayStickerTrCliff3;
+	"STICKER_TR_CLIFF.5": IapItemDisplayStickerTrCliff5;
+	"STICKER_TR_SIERRA.3": IapItemDisplayStickerTrSierra3;
+	"STICKER_TR_SIERRA.5": IapItemDisplayStickerTrSierra5;
+	"STICKER_TYNAMOCD_1.3": IapItemDisplayStickerTynamocd13;
+	"STICKER_TYNAMOCD_1.5": IapItemDisplayStickerTynamocd15;
+	"STICKER_TYNAMOCD_2.3": IapItemDisplayStickerTynamocd23;
+	"STICKER_TYNAMOCD_2.5": IapItemDisplayStickerTynamocd25;
+	"STICKER_TYNAMOCD_3.3": IapItemDisplayStickerTynamocd33;
+	"STICKER_TYNAMOCD_3.5": IapItemDisplayStickerTynamocd35;
+	"STICKER_TYNAMOCD_4.3": IapItemDisplayStickerTynamocd43;
+	"STICKER_TYNAMOCD_4.5": IapItemDisplayStickerTynamocd45;
+	"STICKER_VALENTINE2023_1.3": IapItemDisplayStickerValentine202313;
+	"STICKER_VALENTINE2023_1.5": IapItemDisplayStickerValentine202315;
+	"STICKER_VALENTINE2023_2.3": IapItemDisplayStickerValentine202323;
+	"STICKER_VALENTINE2023_2.5": IapItemDisplayStickerValentine202325;
+	"STICKER_VALENTINE2023_3.3": IapItemDisplayStickerValentine202333;
+	"STICKER_VALENTINE2023_3.5": IapItemDisplayStickerValentine202335;
+	"STICKER_WCS2025_CAR_GROUP.3": IapItemDisplayStickerWcs2025CarGroup3;
+	"STICKER_WCS2025_CAR_GROUP.5": IapItemDisplayStickerWcs2025CarGroup5;
+	"STICKER_WCS2025_JIGGLYPUFF.3": IapItemDisplayStickerWcs2025Jigglypuff3;
+	"STICKER_WCS2025_JIGGLYPUFF.5": IapItemDisplayStickerWcs2025Jigglypuff5;
+	"STICKER_WCS2025_MURKROW.3": IapItemDisplayStickerWcs2025Murkrow3;
+	"STICKER_WCS2025_MURKROW.5": IapItemDisplayStickerWcs2025Murkrow5;
+	"STICKER_WCS2025_PIKACHU.3": IapItemDisplayStickerWcs2025Pikachu3;
+	"STICKER_WCS2025_PIKACHU.5": IapItemDisplayStickerWcs2025Pikachu5;
+	"STICKER_WINTER_2024_1.3": IapItemDisplayStickerWinter202413;
+	"STICKER_WINTER_2024_1.5": IapItemDisplayStickerWinter202415;
+	"STICKER_WINTER_2024_2.3": IapItemDisplayStickerWinter202423;
+	"STICKER_WINTER_2024_2.5": IapItemDisplayStickerWinter202425;
+	"STICKER_WINTER_2024_3.3": IapItemDisplayStickerWinter202433;
+	"STICKER_WINTER_2024_3.5": IapItemDisplayStickerWinter202435;
+	"STICKER_WINTER_2024_4.3": IapItemDisplayStickerWinter202443;
+	"STICKER_WINTER_2024_4.5": IapItemDisplayStickerWinter202445;
+	"STICKER_WINTER_2024_5.3": IapItemDisplayStickerWinter202453;
+	"STICKER_WINTER_2024_5.5": IapItemDisplayStickerWinter202455;
+	"STICKER_WINTER_2024_6.3": IapItemDisplayStickerWinter202463;
+	"STICKER_WINTER_2024_6.5": IapItemDisplayStickerWinter202465;
+	"STICKER_WINTER_AMAURA.3": IapItemDisplayStickerWinterAmaura3;
+	"STICKER_WINTER_AMAURA.5": IapItemDisplayStickerWinterAmaura5;
+	"STICKER_WINTER_DARUMAKA.3": IapItemDisplayStickerWinterDarumaka3;
+	"STICKER_WINTER_DARUMAKA.5": IapItemDisplayStickerWinterDarumaka5;
+	"STICKER_WINTER_GLACEON.3": IapItemDisplayStickerWinterGlaceon3;
+	"STICKER_WINTER_GLACEON.5": IapItemDisplayStickerWinterGlaceon5;
+	"STICKER_WINTER_PIKACHU.3": IapItemDisplayStickerWinterPikachu3;
+	"STICKER_WINTER_PIKACHU.5": IapItemDisplayStickerWinterPikachu5;
+	"STICKER_WINTER_SAWSBUCK.3": IapItemDisplayStickerWinterSawsbuck3;
+	"STICKER_WINTER_SAWSBUCK.5": IapItemDisplayStickerWinterSawsbuck5;
+	"STICKER_WINTER_SNORUNT.3": IapItemDisplayStickerWinterSnorunt3;
+	"STICKER_WINTER_SNORUNT.5": IapItemDisplayStickerWinterSnorunt5;
+	"STICKER_WINTER2023_1.3": IapItemDisplayStickerWinter202313;
+	"STICKER_WINTER2023_1.5": IapItemDisplayStickerWinter202315;
+	"STICKER_WINTER2023_2.3": IapItemDisplayStickerWinter202323;
+	"STICKER_WINTER2023_2.5": IapItemDisplayStickerWinter202325;
+	"STICKER_WINTER2023_3.3": IapItemDisplayStickerWinter202333;
+	"STICKER_WINTER2023_3.5": IapItemDisplayStickerWinter202335;
+	"STICKER_WINTER2023_4.3": IapItemDisplayStickerWinter202343;
+	"STICKER_WINTER2023_4.5": IapItemDisplayStickerWinter202345;
+	"STICKER_WINTER2023_5.3": IapItemDisplayStickerWinter202353;
+	"STICKER_WINTER2023_5.5": IapItemDisplayStickerWinter202355;
+	"STICKER_WINTER2023_6.3": IapItemDisplayStickerWinter202363;
+	"STICKER_WINTER2023_6.5": IapItemDisplayStickerWinter202365;
+	"STICKER_WINTER2025_1.3": IapItemDisplayStickerWinter202513;
+	"STICKER_WINTER2025_1.5": IapItemDisplayStickerWinter202515;
+	"STICKER_WINTER2025_2.3": IapItemDisplayStickerWinter202523;
+	"STICKER_WINTER2025_2.5": IapItemDisplayStickerWinter202525;
+	"STICKER_WINTER2025_3.3": IapItemDisplayStickerWinter202533;
+	"STICKER_WINTER2025_3.5": IapItemDisplayStickerWinter202535;
+	"STICKER_WINTER2025_4.3": IapItemDisplayStickerWinter202543;
+	"STICKER_WINTER2025_4.5": IapItemDisplayStickerWinter202545;
+	"STICKER_YURUTTO_12.3": IapItemDisplayStickerYurutto123;
+	"STICKER_YURUTTO_12.5": IapItemDisplayStickerYurutto125;
+	"STICKER_YURUTTO_24.3": IapItemDisplayStickerYurutto243;
+	"STICKER_YURUTTO_24.5": IapItemDisplayStickerYurutto245;
+	"troydisk.1": IapItemDisplayTroydisk1;
+	"troydisk.8": IapItemDisplayTroydisk8;
+	"web-community-ambassador-bonus-bundle-2025": IapItemDisplayWebCommunityAmbassadorBonusBundle2025;
+	"web-go-fest-hatch-box-2023": IapItemDisplayWebGoFestHatchBox2023;
+	"web-go-fest-raid-box-2023": IapItemDisplayWebGoFestRaidBox2023;
+	"web-raid-box-071323": IapItemDisplayWebRaidBox071323;
+	"web-seasonal-delights-2024-box": IapItemDisplayWebSeasonalDelights2024Box;
+	"web-voyager-box-071323": IapItemDisplayWebVoyagerBox071323;
+	WINTERHOLIDAYS2025_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayWinterholidays2025DeluxeEventPassTrackUnlock;
+	WINTERHOLIDAYS2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayWinterholidays2025DeluxeEventPassTrackUnlockPlusPoints;
+}

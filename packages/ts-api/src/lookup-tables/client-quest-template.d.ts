@@ -1,0 +1,117 @@
+// Generated from Pokémon GO masterfile — "clientQuestTemplate" lookup table.
+
+import type {
+	ClientQuestTemplateLevel71Cap,
+	ClientQuestTemplateLevel71CapSub0,
+	ClientQuestTemplateLevel71CapSub1,
+	ClientQuestTemplateLevel71CapSub2,
+	ClientQuestTemplateLevel71CapSub3,
+	ClientQuestTemplateLevel72Cap,
+	ClientQuestTemplateLevel72CapSub0,
+	ClientQuestTemplateLevel72CapSub1,
+	ClientQuestTemplateLevel72CapSub2,
+	ClientQuestTemplateLevel72CapSub3,
+	ClientQuestTemplateLevel73Cap,
+	ClientQuestTemplateLevel73CapSub0,
+	ClientQuestTemplateLevel73CapSub1,
+	ClientQuestTemplateLevel73CapSub2,
+	ClientQuestTemplateLevel73CapSub3,
+	ClientQuestTemplateLevel74Cap,
+	ClientQuestTemplateLevel74CapSub0,
+	ClientQuestTemplateLevel74CapSub1,
+	ClientQuestTemplateLevel74CapSub2,
+	ClientQuestTemplateLevel74CapSub3,
+	ClientQuestTemplateLevel75Cap,
+	ClientQuestTemplateLevel75CapSub0,
+	ClientQuestTemplateLevel75CapSub1,
+	ClientQuestTemplateLevel75CapSub2,
+	ClientQuestTemplateLevel75CapSub3,
+	ClientQuestTemplateLevel76Cap,
+	ClientQuestTemplateLevel76CapSub0,
+	ClientQuestTemplateLevel76CapSub1,
+	ClientQuestTemplateLevel76CapSub2,
+	ClientQuestTemplateLevel76CapSub3,
+	ClientQuestTemplateLevel77Cap,
+	ClientQuestTemplateLevel77CapSub0,
+	ClientQuestTemplateLevel77CapSub1,
+	ClientQuestTemplateLevel77CapSub2,
+	ClientQuestTemplateLevel77CapSub3,
+	ClientQuestTemplateLevel78Cap,
+	ClientQuestTemplateLevel78CapSub0,
+	ClientQuestTemplateLevel78CapSub1,
+	ClientQuestTemplateLevel78CapSub2,
+	ClientQuestTemplateLevel78CapSub3,
+	ClientQuestTemplateLevel79Cap,
+	ClientQuestTemplateLevel79CapSub0,
+	ClientQuestTemplateLevel79CapSub1,
+	ClientQuestTemplateLevel79CapSub2,
+	ClientQuestTemplateLevel79CapSub3,
+	ClientQuestTemplateLevel80Cap,
+	ClientQuestTemplateLevel80CapSub0,
+	ClientQuestTemplateLevel80CapSub1,
+	ClientQuestTemplateLevel80CapSub2,
+	ClientQuestTemplateLevel80CapSub3,
+	ClientQuestTemplateWeeklyChallengePartyQuest,
+	ClientQuestTemplateWeeklyChallengePartyQuestWeek1,
+	ClientQuestTemplateWeeklyChallengePartyQuestWeek2,
+	ClientQuestTemplateWeeklyChallengePartyQuestWeek3,
+	ClientQuestTemplateWeeklyChallengePartyQuestWeek4,
+} from "pogo-masterfile-types/entries";
+
+export interface ClientQuestTemplateLookup {
+	LEVEL_71_CAP: ClientQuestTemplateLevel71Cap;
+	LEVEL_71_CAP_SUB_0: ClientQuestTemplateLevel71CapSub0;
+	LEVEL_71_CAP_SUB_1: ClientQuestTemplateLevel71CapSub1;
+	LEVEL_71_CAP_SUB_2: ClientQuestTemplateLevel71CapSub2;
+	LEVEL_71_CAP_SUB_3: ClientQuestTemplateLevel71CapSub3;
+	LEVEL_72_CAP: ClientQuestTemplateLevel72Cap;
+	LEVEL_72_CAP_SUB_0: ClientQuestTemplateLevel72CapSub0;
+	LEVEL_72_CAP_SUB_1: ClientQuestTemplateLevel72CapSub1;
+	LEVEL_72_CAP_SUB_2: ClientQuestTemplateLevel72CapSub2;
+	LEVEL_72_CAP_SUB_3: ClientQuestTemplateLevel72CapSub3;
+	LEVEL_73_CAP: ClientQuestTemplateLevel73Cap;
+	LEVEL_73_CAP_SUB_0: ClientQuestTemplateLevel73CapSub0;
+	LEVEL_73_CAP_SUB_1: ClientQuestTemplateLevel73CapSub1;
+	LEVEL_73_CAP_SUB_2: ClientQuestTemplateLevel73CapSub2;
+	LEVEL_73_CAP_SUB_3: ClientQuestTemplateLevel73CapSub3;
+	LEVEL_74_CAP: ClientQuestTemplateLevel74Cap;
+	LEVEL_74_CAP_SUB_0: ClientQuestTemplateLevel74CapSub0;
+	LEVEL_74_CAP_SUB_1: ClientQuestTemplateLevel74CapSub1;
+	LEVEL_74_CAP_SUB_2: ClientQuestTemplateLevel74CapSub2;
+	LEVEL_74_CAP_SUB_3: ClientQuestTemplateLevel74CapSub3;
+	LEVEL_75_CAP: ClientQuestTemplateLevel75Cap;
+	LEVEL_75_CAP_SUB_0: ClientQuestTemplateLevel75CapSub0;
+	LEVEL_75_CAP_SUB_1: ClientQuestTemplateLevel75CapSub1;
+	LEVEL_75_CAP_SUB_2: ClientQuestTemplateLevel75CapSub2;
+	LEVEL_75_CAP_SUB_3: ClientQuestTemplateLevel75CapSub3;
+	LEVEL_76_CAP: ClientQuestTemplateLevel76Cap;
+	LEVEL_76_CAP_SUB_0: ClientQuestTemplateLevel76CapSub0;
+	LEVEL_76_CAP_SUB_1: ClientQuestTemplateLevel76CapSub1;
+	LEVEL_76_CAP_SUB_2: ClientQuestTemplateLevel76CapSub2;
+	LEVEL_76_CAP_SUB_3: ClientQuestTemplateLevel76CapSub3;
+	LEVEL_77_CAP: ClientQuestTemplateLevel77Cap;
+	LEVEL_77_CAP_SUB_0: ClientQuestTemplateLevel77CapSub0;
+	LEVEL_77_CAP_SUB_1: ClientQuestTemplateLevel77CapSub1;
+	LEVEL_77_CAP_SUB_2: ClientQuestTemplateLevel77CapSub2;
+	LEVEL_77_CAP_SUB_3: ClientQuestTemplateLevel77CapSub3;
+	LEVEL_78_CAP: ClientQuestTemplateLevel78Cap;
+	LEVEL_78_CAP_SUB_0: ClientQuestTemplateLevel78CapSub0;
+	LEVEL_78_CAP_SUB_1: ClientQuestTemplateLevel78CapSub1;
+	LEVEL_78_CAP_SUB_2: ClientQuestTemplateLevel78CapSub2;
+	LEVEL_78_CAP_SUB_3: ClientQuestTemplateLevel78CapSub3;
+	LEVEL_79_CAP: ClientQuestTemplateLevel79Cap;
+	LEVEL_79_CAP_SUB_0: ClientQuestTemplateLevel79CapSub0;
+	LEVEL_79_CAP_SUB_1: ClientQuestTemplateLevel79CapSub1;
+	LEVEL_79_CAP_SUB_2: ClientQuestTemplateLevel79CapSub2;
+	LEVEL_79_CAP_SUB_3: ClientQuestTemplateLevel79CapSub3;
+	LEVEL_80_CAP: ClientQuestTemplateLevel80Cap;
+	LEVEL_80_CAP_SUB_0: ClientQuestTemplateLevel80CapSub0;
+	LEVEL_80_CAP_SUB_1: ClientQuestTemplateLevel80CapSub1;
+	LEVEL_80_CAP_SUB_2: ClientQuestTemplateLevel80CapSub2;
+	LEVEL_80_CAP_SUB_3: ClientQuestTemplateLevel80CapSub3;
+	WEEKLY_CHALLENGE_PARTY_QUEST: ClientQuestTemplateWeeklyChallengePartyQuest;
+	WEEKLY_CHALLENGE_PARTY_QUEST_WEEK1: ClientQuestTemplateWeeklyChallengePartyQuestWeek1;
+	WEEKLY_CHALLENGE_PARTY_QUEST_WEEK2: ClientQuestTemplateWeeklyChallengePartyQuestWeek2;
+	WEEKLY_CHALLENGE_PARTY_QUEST_WEEK3: ClientQuestTemplateWeeklyChallengePartyQuestWeek3;
+	WEEKLY_CHALLENGE_PARTY_QUEST_WEEK4: ClientQuestTemplateWeeklyChallengePartyQuestWeek4;
+}
