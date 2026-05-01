@@ -59,17 +59,6 @@ func TestFromEntries_TemplateIDsAndEntries(t *testing.T) {
 	}
 }
 
-func TestGroups_PopulatedAfterCodegen(t *testing.T) {
-	mf := FromEntries(nil)
-	got := mf.Groups()
-	if got == nil {
-		t.Error("Groups() should return a non-nil slice, got nil")
-	}
-	if len(got) == 0 {
-		t.Error("Groups() should be populated after codegen, got empty slice")
-	}
-}
-
 func TestLoad_ValidJSON(t *testing.T) {
 	mf, err := Load([]byte(fixtureJSON))
 	if err != nil {

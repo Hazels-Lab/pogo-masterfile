@@ -1,0 +1,132 @@
+[
+	{
+		"templateId": "ACCESSIBILITY_CLIENT_SETTINGS",
+		"data": {
+			"templateId": "ACCESSIBILITY_CLIENT_SETTINGS",
+			"accessibilitySettings": {
+				"enabled": true,
+				"pluginEnabled": true
+			}
+		}
+	},
+	{
+		"templateId": "ITEM_POKE_BALL",
+		"data": {
+			"templateId": "ITEM_POKE_BALL",
+			"itemSettings": {
+				"itemId": "ITEM_POKE_BALL",
+				"itemType": "ITEM_TYPE_POKEBALL",
+				"category": "ITEM_CATEGORY_POKEBALL",
+				"dropTrainerLevel": 1
+			}
+		}
+	},
+	{
+		"templateId": "V0001_POKEMON_BULBASAUR",
+		"data": {
+			"templateId": "V0001_POKEMON_BULBASAUR",
+			"pokemonSettings": {
+				"pokemonId": "BULBASAUR",
+				"modelScale": 1.09,
+				"type": "POKEMON_TYPE_GRASS",
+				"type2": "POKEMON_TYPE_POISON",
+				"camera": {
+					"diskRadiusM": 0.5723,
+					"cylinderRadiusM": 0.5,
+					"cylinderHeightM": 0.763,
+					"shoulderModeScale": 0.5
+				},
+				"encounter": {
+					"collisionRadiusM": 0.3815,
+					"collisionHeightM": 0.654,
+					"collisionHeadRadiusM": 0.2725,
+					"movementType": "MOVEMENT_JUMP",
+					"movementTimerS": 10.0,
+					"jumpTimeS": 1.15,
+					"attackTimerS": 29.0,
+					"attackProbability": 0.1,
+					"dodgeProbability": 0.15,
+					"dodgeDurationS": 1.0,
+					"dodgeDistance": 1.0,
+					"cameraDistance": 3.75,
+					"minPokemonActionFrequencyS": 0.2,
+					"maxPokemonActionFrequencyS": 1.6,
+					"shadowBaseCaptureRate": 0.2,
+					"shadowAttackProbability": 0.7,
+					"shadowDodgeProbability": 0.2
+				},
+				"stats": {
+					"baseStamina": 128,
+					"baseAttack": 118,
+					"baseDefense": 111
+				},
+				"quickMoves": ["VINE_WHIP_FAST", "TACKLE_FAST"],
+				"cinematicMoves": ["SLUDGE_BOMB", "SEED_BOMB", "POWER_WHIP"],
+				"animationTime": [1.6667, 0.6667, 1.6667, 1.8333, 0.0, 2.1667, 1.4, 1.466667],
+				"evolutionIds": ["IVYSAUR"],
+				"evolutionPips": 1,
+				"pokedexHeightM": 0.7,
+				"pokedexWeightKg": 6.9,
+				"heightStdDev": 0.0875,
+				"weightStdDev": 0.8625,
+				"familyId": "FAMILY_BULBASAUR",
+				"candyToEvolve": 25,
+				"kmBuddyDistance": 3.0,
+				"modelHeight": 0.7,
+				"evolutionBranch": [
+					{
+						"evolution": "IVYSAUR",
+						"candyCost": 25,
+						"form": "IVYSAUR_NORMAL",
+						"candyCostPurified": 22
+					}
+				],
+				"modelScaleV2": 0.89,
+				"buddyOffsetMale": [0.0, 0.0, 0.0],
+				"buddyOffsetFemale": [0.0, 0.0, 0.0],
+				"buddyScale": 19.0,
+				"thirdMove": {
+					"stardustToUnlock": 10000,
+					"candyToUnlock": 25
+				},
+				"isTransferable": true,
+				"isDeployable": true,
+				"isTradable": true,
+				"shadow": {
+					"purificationStardustNeeded": 3000,
+					"purificationCandyNeeded": 3,
+					"purifiedChargeMove": "RETURN",
+					"shadowChargeMove": "FRUSTRATION"
+				},
+				"buddyGroupNumber": 2,
+				"buddyWalkedMegaEnergyAward": 15,
+				"raidBossDistanceOffset": 3.15,
+				"allowNoevolveEvolution": ["JAN_2020_NOEVOLVE"],
+				"ibfc": {},
+				"breadTierGroup": "GROUP_1"
+			}
+		}
+	},
+	{
+		"templateId": "V0013_MOVE_WRAP",
+		"data": {
+			"templateId": "V0013_MOVE_WRAP",
+			"moveSettings": {
+				"movementId": "WRAP",
+				"animationId": 5,
+				"pokemonType": "POKEMON_TYPE_NORMAL",
+				"power": 60.0,
+				"accuracyChance": 1.0,
+				"criticalChance": 0.05,
+				"staminaLossScalar": 0.06,
+				"trainerLevelMin": 1,
+				"trainerLevelMax": 100,
+				"vfxName": "wrap",
+				"durationMs": 3000,
+				"damageWindowStartMs": 2150,
+				"damageWindowEndMs": 2800,
+				"energyDelta": -33
+			}
+		}
+	}
+]
