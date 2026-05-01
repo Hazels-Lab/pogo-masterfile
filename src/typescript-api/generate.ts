@@ -1,11 +1,23 @@
-import { mkdir } from "node:fs/promises";
+import { copyFile, mkdir } from "node:fs/promises";
+import { join } from "node:path";
 import { type Entry, groupEntries } from "../group.ts";
 import { writeOutput } from "../write.ts";
 import { runTsc } from "./build.ts";
-import { SRC_OUT_DIR, TEMPLATES_STUBS_DIR } from "./constants.ts";
+import {
+	SRC_OUT_DIR,
+	TEMPLATES_DIR,
+	TEMPLATES_STUBS_DIR,
+} from "./constants.ts";
 import { emitGroupNames } from "./emit-group-names.ts";
 import { emitIndex } from "./emit-index.ts";
 import { emitLookupTables } from "./emit-lookup-tables.ts";
+
+const TEMPLATE_FILES_TO_COPY = [
+	"errors.ts",
+	"types.ts",
+	"fetch.ts",
+	"masterfile.ts",
+];
 
 export async function generateTypeScriptApi(entries: Entry[]): Promise<void> {
 	const groups = groupEntries(entries);
@@ -29,7 +41,10 @@ export async function generateTypeScriptApi(entries: Entry[]): Promise<void> {
 	stubs.set("lookup-tables.d.ts", emitLookupTables(groups));
 	await writeOutput(stubs, TEMPLATES_STUBS_DIR);
 
-	// 4. (template copy happens once templates exist — wired in a later task)
+	// 4. Copy hand-written runtime templates verbatim into packages/ts-api/src/.
+	for (const file of TEMPLATE_FILES_TO_COPY) {
+		await copyFile(join(TEMPLATES_DIR, file), join(SRC_OUT_DIR, file));
+	}
 
 	// 5. Compile src/ → dist/ via tsc.
 	await runTsc();
