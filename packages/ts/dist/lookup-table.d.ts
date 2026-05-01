@@ -249,7 +249,67 @@ export type { VsSeekerPokemonRewardsLookup } from "./vs-seeker-pokemon-rewards/l
 export type { WeatherAffinitiesLookup } from "./weather-affinities/lookup-table";
 export type { SingletonsLookup } from "./singletons/lookup-table";
 
-export type GroupName = "avatarCustomization" | "avatarGroupOrderSettings" | "avatarItemDisplay" | "badgeSettings" | "breadMoveLevelSettings" | "buddyActivityCategorySettings" | "buddyEmotionLevelSettings" | "buddyLevelSettings" | "clientQuestTemplate" | "codeGateProto" | "combatLeague" | "combatMove" | "combatNpcPersonality" | "combatNpcTrainer" | "combatRankingProtoSettings" | "combatType" | "eventPassSettings" | "eventPassTierSettings" | "evolutionChainDisplaySettings" | "evolutionQuestTemplate" | "featureGate" | "formSettings" | "fortPowerUpLevelSettings" | "friendshipMilestoneSettings" | "genderSettings" | "iapCategoryDisplay" | "iapItemDisplay" | "invasionNpcDisplaySettings" | "itemExpirationSettings" | "itemSettings" | "languageSettings" | "levelUpRewards" | "limitedPurchaseSkuSettings" | "locationCardSettings" | "megaEvoLevelSettings" | "moveSequenceSettings" | "moveSettings" | "nonCombatMoveSettings" | "partyPlayGeneralSettings" | "photoSetsSettingsProto" | "pokemonExtendedSettings" | "pokemonFamily" | "pokemonHomeEnergyCosts" | "pokemonHomeFormReversions" | "pokemonScaleSettings" | "pokemonSettings" | "pokemonUpgrades" | "pokestopInvasionAvailabilitySettings" | "questSettings" | "recommendedSearchSettings" | "rollBack" | "settingsOverrideRule" | "stickerMetadata" | "tappableSettings" | "temporaryEvolutionSettings" | "typeEffective" | "vsSeekerLoot" | "vsSeekerPokemonRewards" | "weatherAffinities" | "singletons";
+export type GroupName =
+	| "avatarCustomization"
+	| "avatarGroupOrderSettings"
+	| "avatarItemDisplay"
+	| "badgeSettings"
+	| "breadMoveLevelSettings"
+	| "buddyActivityCategorySettings"
+	| "buddyEmotionLevelSettings"
+	| "buddyLevelSettings"
+	| "clientQuestTemplate"
+	| "codeGateProto"
+	| "combatLeague"
+	| "combatMove"
+	| "combatNpcPersonality"
+	| "combatNpcTrainer"
+	| "combatRankingProtoSettings"
+	| "combatType"
+	| "eventPassSettings"
+	| "eventPassTierSettings"
+	| "evolutionChainDisplaySettings"
+	| "evolutionQuestTemplate"
+	| "featureGate"
+	| "formSettings"
+	| "fortPowerUpLevelSettings"
+	| "friendshipMilestoneSettings"
+	| "genderSettings"
+	| "iapCategoryDisplay"
+	| "iapItemDisplay"
+	| "invasionNpcDisplaySettings"
+	| "itemExpirationSettings"
+	| "itemSettings"
+	| "languageSettings"
+	| "levelUpRewards"
+	| "limitedPurchaseSkuSettings"
+	| "locationCardSettings"
+	| "megaEvoLevelSettings"
+	| "moveSequenceSettings"
+	| "moveSettings"
+	| "nonCombatMoveSettings"
+	| "partyPlayGeneralSettings"
+	| "photoSetsSettingsProto"
+	| "pokemonExtendedSettings"
+	| "pokemonFamily"
+	| "pokemonHomeEnergyCosts"
+	| "pokemonHomeFormReversions"
+	| "pokemonScaleSettings"
+	| "pokemonSettings"
+	| "pokemonUpgrades"
+	| "pokestopInvasionAvailabilitySettings"
+	| "questSettings"
+	| "recommendedSearchSettings"
+	| "rollBack"
+	| "settingsOverrideRule"
+	| "stickerMetadata"
+	| "tappableSettings"
+	| "temporaryEvolutionSettings"
+	| "typeEffective"
+	| "vsSeekerLoot"
+	| "vsSeekerPokemonRewards"
+	| "weatherAffinities"
+	| "singletons";
 
 // LookupByGroup maps each group discriminator to its narrow per-group Lookup
 // interface. Indexed access (`LookupByGroup[G][T]`) gives a literal-narrow
@@ -448,64 +508,64 @@ export interface TemplateIDsByGroup {
 // to materialize (~18k keys) — only opt in if you need cross-group literal
 // narrowing. Most consumers should reach for LookupByGroup[G] or per-group
 // Lookup interfaces instead.
-export interface EntryByTemplateID extends
-	AvatarCustomizationLookup,
-	AvatarGroupOrderSettingsLookup,
-	AvatarItemDisplayLookup,
-	BadgeSettingsLookup,
-	BreadMoveLevelSettingsLookup,
-	BuddyActivityCategorySettingsLookup,
-	BuddyEmotionLevelSettingsLookup,
-	BuddyLevelSettingsLookup,
-	ClientQuestTemplateLookup,
-	CodeGateProtoLookup,
-	CombatLeagueLookup,
-	CombatMoveLookup,
-	CombatNpcPersonalityLookup,
-	CombatNpcTrainerLookup,
-	CombatRankingProtoSettingsLookup,
-	CombatTypeLookup,
-	EventPassSettingsLookup,
-	EventPassTierSettingsLookup,
-	EvolutionChainDisplaySettingsLookup,
-	EvolutionQuestTemplateLookup,
-	FeatureGateLookup,
-	FormSettingsLookup,
-	FortPowerUpLevelSettingsLookup,
-	FriendshipMilestoneSettingsLookup,
-	GenderSettingsLookup,
-	IapCategoryDisplayLookup,
-	IapItemDisplayLookup,
-	InvasionNpcDisplaySettingsLookup,
-	ItemExpirationSettingsLookup,
-	ItemSettingsLookup,
-	LanguageSettingsLookup,
-	LevelUpRewardsLookup,
-	LimitedPurchaseSkuSettingsLookup,
-	LocationCardSettingsLookup,
-	MegaEvoLevelSettingsLookup,
-	MoveSequenceSettingsLookup,
-	MoveSettingsLookup,
-	NonCombatMoveSettingsLookup,
-	PartyPlayGeneralSettingsLookup,
-	PhotoSetsSettingsProtoLookup,
-	PokemonExtendedSettingsLookup,
-	PokemonFamilyLookup,
-	PokemonHomeEnergyCostsLookup,
-	PokemonHomeFormReversionsLookup,
-	PokemonScaleSettingsLookup,
-	PokemonSettingsLookup,
-	PokemonUpgradesLookup,
-	PokestopInvasionAvailabilitySettingsLookup,
-	QuestSettingsLookup,
-	RecommendedSearchSettingsLookup,
-	RollBackLookup,
-	SettingsOverrideRuleLookup,
-	StickerMetadataLookup,
-	TappableSettingsLookup,
-	TemporaryEvolutionSettingsLookup,
-	TypeEffectiveLookup,
-	VsSeekerLootLookup,
-	VsSeekerPokemonRewardsLookup,
-	WeatherAffinitiesLookup,
-	SingletonsLookup {}
+export interface EntryByTemplateID
+	extends AvatarCustomizationLookup,
+		AvatarGroupOrderSettingsLookup,
+		AvatarItemDisplayLookup,
+		BadgeSettingsLookup,
+		BreadMoveLevelSettingsLookup,
+		BuddyActivityCategorySettingsLookup,
+		BuddyEmotionLevelSettingsLookup,
+		BuddyLevelSettingsLookup,
+		ClientQuestTemplateLookup,
+		CodeGateProtoLookup,
+		CombatLeagueLookup,
+		CombatMoveLookup,
+		CombatNpcPersonalityLookup,
+		CombatNpcTrainerLookup,
+		CombatRankingProtoSettingsLookup,
+		CombatTypeLookup,
+		EventPassSettingsLookup,
+		EventPassTierSettingsLookup,
+		EvolutionChainDisplaySettingsLookup,
+		EvolutionQuestTemplateLookup,
+		FeatureGateLookup,
+		FormSettingsLookup,
+		FortPowerUpLevelSettingsLookup,
+		FriendshipMilestoneSettingsLookup,
+		GenderSettingsLookup,
+		IapCategoryDisplayLookup,
+		IapItemDisplayLookup,
+		InvasionNpcDisplaySettingsLookup,
+		ItemExpirationSettingsLookup,
+		ItemSettingsLookup,
+		LanguageSettingsLookup,
+		LevelUpRewardsLookup,
+		LimitedPurchaseSkuSettingsLookup,
+		LocationCardSettingsLookup,
+		MegaEvoLevelSettingsLookup,
+		MoveSequenceSettingsLookup,
+		MoveSettingsLookup,
+		NonCombatMoveSettingsLookup,
+		PartyPlayGeneralSettingsLookup,
+		PhotoSetsSettingsProtoLookup,
+		PokemonExtendedSettingsLookup,
+		PokemonFamilyLookup,
+		PokemonHomeEnergyCostsLookup,
+		PokemonHomeFormReversionsLookup,
+		PokemonScaleSettingsLookup,
+		PokemonSettingsLookup,
+		PokemonUpgradesLookup,
+		PokestopInvasionAvailabilitySettingsLookup,
+		QuestSettingsLookup,
+		RecommendedSearchSettingsLookup,
+		RollBackLookup,
+		SettingsOverrideRuleLookup,
+		StickerMetadataLookup,
+		TappableSettingsLookup,
+		TemporaryEvolutionSettingsLookup,
+		TypeEffectiveLookup,
+		VsSeekerLootLookup,
+		VsSeekerPokemonRewardsLookup,
+		WeatherAffinitiesLookup,
+		SingletonsLookup {}

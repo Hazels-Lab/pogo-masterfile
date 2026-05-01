@@ -1,11 +1,6 @@
 // Generated from Pokémon GO masterfile — "pokemonHomeEnergyCosts" lookup table.
 
-import type {
-	PokemonHomeEnergyCostsLegendary,
-	PokemonHomeEnergyCostsMythic,
-	PokemonHomeEnergyCostsNormal,
-	PokemonHomeEnergyCostsUltraBeast,
-} from "./entries";
+import type { PokemonHomeEnergyCostsLegendary, PokemonHomeEnergyCostsMythic, PokemonHomeEnergyCostsNormal, PokemonHomeEnergyCostsUltraBeast } from "./entries";
 
 export interface PokemonHomeEnergyCostsLookup {
 	ENERGY_COSTS_POKEMON_CLASS_LEGENDARY: PokemonHomeEnergyCostsLegendary;

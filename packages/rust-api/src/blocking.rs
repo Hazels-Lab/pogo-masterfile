@@ -119,7 +119,7 @@ impl Masterfile {
     }
 
     pub fn template_ids(&self) -> impl Iterator<Item = &str> + '_ {
-        self.entries.iter().map(|e| entry_template_id(e))
+        self.entries.iter().map(entry_template_id)
     }
 
     pub fn refresh(&mut self) -> Result<()> {

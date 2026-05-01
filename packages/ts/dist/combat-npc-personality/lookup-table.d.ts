@@ -1,10 +1,6 @@
 // Generated from Pokémon GO masterfile — "combatNpcPersonality" lookup table.
 
-import type {
-	CombatNpcPersonalityEasy,
-	CombatNpcPersonalityHard,
-	CombatNpcPersonalityMedium,
-} from "./entries";
+import type { CombatNpcPersonalityEasy, CombatNpcPersonalityHard, CombatNpcPersonalityMedium } from "./entries";
 
 export interface CombatNpcPersonalityLookup {
 	TRAINER_PERSONALITY_EASY: CombatNpcPersonalityEasy;

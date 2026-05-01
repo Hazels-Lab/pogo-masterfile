@@ -18,9 +18,7 @@ export function emitAccessorMod(groups: Map<string, Group>): string {
 	moduleNames.sort();
 
 	const modDecls = moduleNames.map((m) => `pub mod ${m};`).join("\n");
-	const reExports = moduleNames
-		.map((m) => `pub use ${m}::${pascalCase(m)}Accessor;`)
-		.join("\n");
+	const reExports = moduleNames.map((m) => `pub use ${m}::${pascalCase(m)}Accessor;`).join("\n");
 
 	return `//! Generated from Pokémon GO masterfile — per-group accessor modules.
 

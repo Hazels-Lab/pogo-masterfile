@@ -12,22 +12,22 @@ use std::str::FromStr;
 #[cfg(feature = "async")]
 #[tokio::main]
 async fn main() -> pogo_masterfile::Result<()> {
-	let mf = Masterfile::from_remote().await?;
-	println!("loaded {} entries", mf.len());
+    let mf = Masterfile::from_remote().await?;
+    println!("loaded {} entries", mf.len());
 
-	if let Some(typed) = MoveSettingsTemplateId::from_str("V0022_MOVE_MEGAHORN").ok() {
-		if let Some(move_) = mf.move_settings().get(typed) {
-			println!("megahorn templateId: {}", move_.template_id);
-		}
-	}
+    if let Some(typed) = MoveSettingsTemplateId::from_str("V0022_MOVE_MEGAHORN").ok() {
+        if let Some(move_) = mf.move_settings().get(typed) {
+            println!("megahorn templateId: {}", move_.template_id);
+        }
+    }
 
-	let move_count = mf.move_settings().len();
-	println!("moveSettings count: {move_count}");
+    let move_count = mf.move_settings().len();
+    println!("moveSettings count: {move_count}");
 
-	Ok(())
+    Ok(())
 }
 
 #[cfg(not(feature = "async"))]
 fn main() {
-	eprintln!("This example requires --features async");
+    eprintln!("This example requires --features async");
 }

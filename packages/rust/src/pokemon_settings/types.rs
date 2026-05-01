@@ -283,7 +283,8 @@ pub struct PokemonSettings {
     pub buddy_scale: Option<f64>,
     pub buddy_size: Option<String>,
     pub buddy_walked_mega_energy_award: Option<u64>,
-    pub buddy_walked_mega_energy_awards: Option<(BuddyWalkedMegaEnergyAwards, BuddyWalkedMegaEnergyAwardsV2)>,
+    pub buddy_walked_mega_energy_awards:
+        Option<(BuddyWalkedMegaEnergyAwards, BuddyWalkedMegaEnergyAwardsV2)>,
     pub camera: Camera,
     pub candy_to_evolve: Option<u64>,
     pub cinematic_moves: Option<Vec<String>>,

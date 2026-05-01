@@ -3,18 +3,18 @@
 import type { W } from "../_utils";
 
 export interface LimitedPurchaseSkuSettings<TemplateID extends string = string, TData extends LimitedPurchaseSkuSettingsData = LimitedPurchaseSkuSettingsData> {
-    templateId: TemplateID;
-    data: {
-        templateId: TemplateID;
-        limitedPurchaseSkuSettings: TData;
-    };
+	templateId: TemplateID;
+	data: {
+		templateId: TemplateID;
+		limitedPurchaseSkuSettings: TData;
+	};
 }
 export type LimitedPurchaseSkuSettingsType = W<LimitedPurchaseSkuSettings>;
 
 export interface LimitedPurchaseSkuSettingsData {
-    chronoUnit?: "DAY";
-    lootTableId?: "BUNDLE_GENERAL1_FREE1_1_LOOT_TABLE";
-    purchaseLimit: number;
-    resetInterval?: number;
-    version?: number;
+	chronoUnit?: "DAY";
+	lootTableId?: "BUNDLE_GENERAL1_FREE1_1_LOOT_TABLE";
+	purchaseLimit: number;
+	resetInterval?: number;
+	version?: number;
 }

@@ -5,8 +5,8 @@ interface GroupInfo {
 	discriminator: string;
 	pascal: string;
 	snake: string;
-	variant: string;          // MasterfileEntry::<variant>
-	templateIdType: string;   // <Pascal>TemplateId
+	variant: string; // MasterfileEntry::<variant>
+	templateIdType: string; // <Pascal>TemplateId
 }
 
 interface SingletonInfo {
@@ -45,19 +45,12 @@ export function emitLib(groups: Map<string, Group>): string {
 	// Singletons each get their own MasterfileEntry variant, named after their
 	// data-key (e.g. "accessibilitySettings" → AccessibilitySettings). The
 	// templateIdMatchArms must enumerate every variant, including singleton ones.
-	const singletonInfos: SingletonInfo[] = singletons
-		.map((g) => ({ variant: pascalCase(g.discriminator) }))
-		.sort((a, b) => a.variant.localeCompare(b.variant));
+	const singletonInfos: SingletonInfo[] = singletons.map((g) => ({ variant: pascalCase(g.discriminator) })).sort((a, b) => a.variant.localeCompare(b.variant));
 
-	const templateIdImports = infos
-		.map((i) => `\tpub use pogo_masterfile_types::${i.snake}::${i.templateIdType};`)
-		.join("\n");
+	const templateIdImports = infos.map((i) => `\tpub use pogo_masterfile_types::${i.snake}::${i.templateIdType};`).join("\n");
 
 	const indexFields = infos
-		.map(
-			(info) =>
-				`\tpub(crate) ${info.snake}_index: HashMap<${info.templateIdType}, usize>,\n\tpub(crate) ${info.snake}_order: Vec<usize>,`,
-		)
+		.map((info) => `\tpub(crate) ${info.snake}_index: HashMap<${info.templateIdType}, usize>,\n\tpub(crate) ${info.snake}_order: Vec<usize>,`)
 		.join("\n");
 
 	const buildLocals = infos
@@ -76,9 +69,7 @@ export function emitLib(groups: Map<string, Group>): string {
 		)
 		.join("\n");
 
-	const buildAssignments = infos
-		.map((info) => `\t\t\t${info.snake}_index,\n\t\t\t${info.snake}_order,`)
-		.join("\n");
+	const buildAssignments = infos.map((info) => `\t\t\t${info.snake}_index,\n\t\t\t${info.snake}_order,`).join("\n");
 
 	const accessorMethods = infos
 		.map(

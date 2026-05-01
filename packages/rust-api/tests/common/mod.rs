@@ -5,7 +5,7 @@ use pogo_masterfile_types::MasterfileEntry;
 
 /// Tiny fixture with three real entries from three groups.
 pub fn fixture() -> Vec<MasterfileEntry> {
-	let json = r#"[
+    let json = r#"[
 		{
 			"templateId": "ITEM_POTION",
 			"data": {
@@ -60,7 +60,7 @@ pub fn fixture() -> Vec<MasterfileEntry> {
 			}
 		}
 	]"#;
-	pogo_masterfile_types::parse_masterfile(json).expect("parse fixture")
+    pogo_masterfile_types::parse_masterfile(json).expect("parse fixture")
 }
 
 #[cfg(feature = "async")]
@@ -68,11 +68,11 @@ pub struct MockAsyncFetcher(pub Vec<MasterfileEntry>);
 
 #[cfg(feature = "async")]
 impl pogo_masterfile::Fetcher for MockAsyncFetcher {
-	fn fetch(
-		&self,
-		_url: &str,
-	) -> impl std::future::Future<Output = Result<Vec<MasterfileEntry>>> + Send {
-		let entries = self.0.clone();
-		async move { Ok(entries) }
-	}
+    fn fetch(
+        &self,
+        _url: &str,
+    ) -> impl std::future::Future<Output = Result<Vec<MasterfileEntry>>> + Send {
+        let entries = self.0.clone();
+        async move { Ok(entries) }
+    }
 }

@@ -3,22 +3,81 @@
 import type { W } from "../_utils";
 
 export interface PhotoSetsSettingsProto<TemplateID extends string = string, TData extends PhotoSetsSettingsProtoData = PhotoSetsSettingsProtoData> {
-    templateId: TemplateID;
-    data: {
-        templateId: TemplateID;
-        photoSetsSettingsProto: TData & {
-            minimumPokemon: 1;
-        };
-    };
+	templateId: TemplateID;
+	data: {
+		templateId: TemplateID;
+		photoSetsSettingsProto: TData & {
+			minimumPokemon: 1;
+		};
+	};
 }
 export type PhotoSetsSettingsProtoType = W<PhotoSetsSettingsProto>;
 
 export interface PhotoSetsSettingsProtoData {
-    displayOrder: number;
-    frameColor: "Beachside" | "BusyBugs" | "Fighting" | "FloralFriends" | "GreenShoots" | "Halloween" | "Museum" | "Nightfall" | "PinkPals" | "RainyDay" | "Safarizone" | "SummerVibes" | "TinyBuddies" | "UkiyoEuphoria";
-    nameKey: "PHOTO_SET_ALOLA" | "PHOTO_SET_BABIES" | "PHOTO_SET_BATTLE_POKEMON" | "PHOTO_SET_BEACH" | "PHOTO_SET_CITY" | "PHOTO_SET_CLAWED_CUTIES" | "PHOTO_SET_CUTE_POKEMON_PINK" | "PHOTO_SET_FALL_VIBES" | "PHOTO_SET_FANCY" | "PHOTO_SET_FEATHERED_FRIENDS" | "PHOTO_SET_FEATHERED_FRIENDS_SMALL" | "PHOTO_SET_FOSSIL" | "PHOTO_SET_FURRY_FRIENDS" | "PHOTO_SET_FURRY_FRIENDS_BIG" | "PHOTO_SET_GARDEN" | "PHOTO_SET_GRACEFUL_FLYERS" | "PHOTO_SET_HISUI" | "PHOTO_SET_HOENN" | "PHOTO_SET_JOHTO" | "PHOTO_SET_KALOS" | "PHOTO_SET_KANTO" | "PHOTO_SET_LITTLE_CHONKERS" | "PHOTO_SET_LOVELY" | "PHOTO_SET_MOUNTAIN" | "PHOTO_SET_MUSEUM_FOSSILS" | "PHOTO_SET_NIGHT" | "PHOTO_SET_PALDEA" | "PHOTO_SET_PLAYFUL_PALS_BIG" | "PHOTO_SET_SAFARI" | "PHOTO_SET_SINNOH" | "PHOTO_SET_SMALL_AND_CUTE" | "PHOTO_SET_SMALL_CUTE_POKEMON" | "PHOTO_SET_SMALL_CUTE_POKEMON_PIKACHU_AND_EEVEE" | "PHOTO_SET_SMALL_CUTE_POKEMON_PINK" | "PHOTO_SET_SMALL_FLOWER_POKEMON" | "PHOTO_SET_SMALL_FLOWER_POKEMON_MEDIUM" | "PHOTO_SET_SMALL_FLOWER_POKEMON_SEEDS" | "PHOTO_SET_SMALL_WATER_POKEMON" | "PHOTO_SET_SPRING_VIBES" | "PHOTO_SET_STARTERS" | "PHOTO_SET_SUMMER_VIBES" | "PHOTO_SET_TINY_TIKES" | "PHOTO_SET_UNOVA" | "PHOTO_SET_WINGS_POKEMON" | "PHOTO_SET_WINTER_VIBES";
-    pokemon: Array<{
-        form?: string;
-        pokemonId: string;
-    }>;
+	displayOrder: number;
+	frameColor:
+		| "Beachside"
+		| "BusyBugs"
+		| "Fighting"
+		| "FloralFriends"
+		| "GreenShoots"
+		| "Halloween"
+		| "Museum"
+		| "Nightfall"
+		| "PinkPals"
+		| "RainyDay"
+		| "Safarizone"
+		| "SummerVibes"
+		| "TinyBuddies"
+		| "UkiyoEuphoria";
+	nameKey:
+		| "PHOTO_SET_ALOLA"
+		| "PHOTO_SET_BABIES"
+		| "PHOTO_SET_BATTLE_POKEMON"
+		| "PHOTO_SET_BEACH"
+		| "PHOTO_SET_CITY"
+		| "PHOTO_SET_CLAWED_CUTIES"
+		| "PHOTO_SET_CUTE_POKEMON_PINK"
+		| "PHOTO_SET_FALL_VIBES"
+		| "PHOTO_SET_FANCY"
+		| "PHOTO_SET_FEATHERED_FRIENDS"
+		| "PHOTO_SET_FEATHERED_FRIENDS_SMALL"
+		| "PHOTO_SET_FOSSIL"
+		| "PHOTO_SET_FURRY_FRIENDS"
+		| "PHOTO_SET_FURRY_FRIENDS_BIG"
+		| "PHOTO_SET_GARDEN"
+		| "PHOTO_SET_GRACEFUL_FLYERS"
+		| "PHOTO_SET_HISUI"
+		| "PHOTO_SET_HOENN"
+		| "PHOTO_SET_JOHTO"
+		| "PHOTO_SET_KALOS"
+		| "PHOTO_SET_KANTO"
+		| "PHOTO_SET_LITTLE_CHONKERS"
+		| "PHOTO_SET_LOVELY"
+		| "PHOTO_SET_MOUNTAIN"
+		| "PHOTO_SET_MUSEUM_FOSSILS"
+		| "PHOTO_SET_NIGHT"
+		| "PHOTO_SET_PALDEA"
+		| "PHOTO_SET_PLAYFUL_PALS_BIG"
+		| "PHOTO_SET_SAFARI"
+		| "PHOTO_SET_SINNOH"
+		| "PHOTO_SET_SMALL_AND_CUTE"
+		| "PHOTO_SET_SMALL_CUTE_POKEMON"
+		| "PHOTO_SET_SMALL_CUTE_POKEMON_PIKACHU_AND_EEVEE"
+		| "PHOTO_SET_SMALL_CUTE_POKEMON_PINK"
+		| "PHOTO_SET_SMALL_FLOWER_POKEMON"
+		| "PHOTO_SET_SMALL_FLOWER_POKEMON_MEDIUM"
+		| "PHOTO_SET_SMALL_FLOWER_POKEMON_SEEDS"
+		| "PHOTO_SET_SMALL_WATER_POKEMON"
+		| "PHOTO_SET_SPRING_VIBES"
+		| "PHOTO_SET_STARTERS"
+		| "PHOTO_SET_SUMMER_VIBES"
+		| "PHOTO_SET_TINY_TIKES"
+		| "PHOTO_SET_UNOVA"
+		| "PHOTO_SET_WINGS_POKEMON"
+		| "PHOTO_SET_WINTER_VIBES";
+	pokemon: Array<{
+		form?: string;
+		pokemonId: string;
+	}>;
 }

@@ -1,10 +1,6 @@
 // Generated from Pokémon GO masterfile — "questSettings" lookup table.
 
-import type {
-	QuestSettingsCatchOfTheDay,
-	QuestSettingsPokestopOfTheDay,
-	QuestSettingsRouteOfTheDay,
-} from "./entries";
+import type { QuestSettingsCatchOfTheDay, QuestSettingsPokestopOfTheDay, QuestSettingsRouteOfTheDay } from "./entries";
 
 export interface QuestSettingsLookup {
 	QUEST_FIRST_CATCH_OF_THE_DAY: QuestSettingsCatchOfTheDay;
