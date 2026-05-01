@@ -1,6 +1,7 @@
 package masterfileapi
 
 import (
+	"errors"
 	"testing"
 
 	masterfile "github.com/PLACEHOLDER/pogo-masterfile-types/packages/go"
@@ -85,6 +86,9 @@ func TestLoad_NonArrayJSON_ReturnsParseError(t *testing.T) {
 	var pe *ParseError
 	if !errorAsParseError(err, &pe) {
 		t.Errorf("expected *ParseError, got %T: %v", err, err)
+	}
+	if !errors.Is(err, ErrInvalidShape) {
+		t.Errorf("non-array JSON should also match ErrInvalidShape; err = %v", err)
 	}
 }
 

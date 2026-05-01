@@ -14,6 +14,7 @@ import (
 // interface and the caller type-asserts to the concrete type.
 type SingletonsAccessor struct {
 	entries []masterfile.MasterfileEntry
+	ids     []singletons.SingletonsTemplateID
 	index   map[singletons.SingletonsTemplateID]int
 }
 
@@ -25,7 +26,7 @@ func NewSingletonsAccessor(entries []masterfile.MasterfileEntry, ids []singleton
 	for i, id := range ids {
 		idx[id] = i
 	}
-	return &SingletonsAccessor{entries: entries, index: idx}
+	return &SingletonsAccessor{entries: entries, ids: ids, index: idx}
 }
 
 // Get returns the singleton entry registered under id (wide interface — caller
@@ -49,13 +50,9 @@ func (a *SingletonsAccessor) All() []masterfile.MasterfileEntry {
 	return a.entries
 }
 
-// TemplateIDs returns every singleton id in source order.
+// TemplateIDs returns every singleton id in source order (zero-copy view; do not mutate).
 func (a *SingletonsAccessor) TemplateIDs() []singletons.SingletonsTemplateID {
-	ids := make([]singletons.SingletonsTemplateID, 0, len(a.index))
-	for id := range a.index {
-		ids = append(ids, id)
-	}
-	return ids
+	return a.ids
 }
 
 // Len returns the number of singleton entries.

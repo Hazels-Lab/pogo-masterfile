@@ -13,6 +13,10 @@ import (
 )
 
 func main() {
+	// NOTE: this example will fail at runtime — `https://example.test/wrapped`
+	// is a placeholder URL. The example's purpose is to show the FetcherFunc
+	// shape; supply your own URL pointing at a real wrapped-shape upstream.
+
 	// Example: an upstream that wraps the entries inside a {"data": [...]} envelope.
 	customFetcher := masterfileapi.FetcherFunc(func(ctx context.Context, url string) ([]masterfile.MasterfileEntry, error) {
 		req, err := http.NewRequestWithContext(ctx, http.MethodGet, url, nil)

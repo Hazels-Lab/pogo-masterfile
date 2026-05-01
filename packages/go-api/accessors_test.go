@@ -70,3 +70,17 @@ func TestGroups_PopulatedAfterCodegen(t *testing.T) {
 		t.Error("Groups() should be populated after codegen runs")
 	}
 }
+
+func TestSingletonsAccessor_TemplateIDsIsDeterministic(t *testing.T) {
+	mf := loadFixture(t)
+	a := mf.Singletons.TemplateIDs()
+	b := mf.Singletons.TemplateIDs()
+	if len(a) != len(b) {
+		t.Fatalf("length mismatch: %d vs %d", len(a), len(b))
+	}
+	for i := range a {
+		if a[i] != b[i] {
+			t.Errorf("position %d: %q vs %q", i, a[i], b[i])
+		}
+	}
+}

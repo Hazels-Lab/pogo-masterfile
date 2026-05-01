@@ -1,6 +1,9 @@
 package masterfileapi
 
 import (
+	"encoding/json"
+	"errors"
+
 	masterfile "github.com/PLACEHOLDER/pogo-masterfile-types/packages/go"
 )
 
@@ -15,9 +18,21 @@ func FromEntries(entries []masterfile.MasterfileEntry) *Masterfile {
 func Load(jsonBytes []byte) (*Masterfile, error) {
 	entries, err := masterfile.ParseMasterfile(jsonBytes)
 	if err != nil {
-		return nil, &ParseError{Err: err}
+		return nil, wrapParseError(err)
 	}
 	return FromEntries(entries), nil
+}
+
+// wrapParseError classifies a ParseMasterfile failure. If the underlying error
+// is a json.UnmarshalTypeError (the JSON was structurally valid but the wrong
+// shape), the returned ParseError also matches errors.Is(_, ErrInvalidShape).
+// All other parse failures are returned as a plain *ParseError.
+func wrapParseError(err error) *ParseError {
+	var typeErr *json.UnmarshalTypeError
+	if errors.As(err, &typeErr) {
+		return &ParseError{Err: errors.Join(ErrInvalidShape, err)}
+	}
+	return &ParseError{Err: err}
 }
 
 // GetEntry returns the entry registered under id (the wide MasterfileEntry
@@ -62,10 +77,7 @@ func (m *Masterfile) Len() int {
 	return len(m.entries)
 }
 
-// Groups returns every per-group discriminator name in canonical order. After
-// codegen runs this returns the full set; pre-codegen the stub returns an
-// empty slice.
+// Groups returns every per-group discriminator name in canonical order.
 func (m *Masterfile) Groups() []string {
 	return GroupNames
 }
-

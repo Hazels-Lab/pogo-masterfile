@@ -64,7 +64,7 @@ func (f *httpFetcher) Fetch(ctx context.Context, url string) ([]masterfile.Maste
 	}
 	entries, err := masterfile.ParseMasterfile(body)
 	if err != nil {
-		return nil, &ParseError{Err: err}
+		return nil, wrapParseError(err)
 	}
 	return entries, nil
 }
