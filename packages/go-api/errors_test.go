@@ -30,6 +30,9 @@ func TestStatusError_Error(t *testing.T) {
 	if !errors.As(err, &se) || se.Status != 503 {
 		t.Error("errors.As should bind Status")
 	}
+	if got := errors.Unwrap(err); got != nil {
+		t.Errorf("StatusError should not unwrap; got %v", got)
+	}
 }
 
 func TestParseError_ErrorAndUnwrap(t *testing.T) {
