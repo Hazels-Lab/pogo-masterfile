@@ -4,6 +4,7 @@ import type { Entry } from "./group.ts";
 import { configureFloatFieldHints, scanFloatFields } from "./infer.ts";
 import { generateRust } from "./rust/generate.ts";
 import { generateTypeScript } from "./typescript/generate.ts";
+import { generateTypeScriptApi } from "./typescript-api/generate.ts";
 
 async function fetchMasterfile(): Promise<{ entries: Entry[]; rawJson: string }> {
 	const resp = await fetch(GAME_MASTER_URL);
@@ -29,6 +30,7 @@ async function main(): Promise<void> {
 	console.log(`Detected ${floatFields.size} float-typed field names from source.`);
 
 	await generateTypeScript(entries);
+	await generateTypeScriptApi(entries);
 	await generateRust(entries);
 	await generateGo(entries);
 }

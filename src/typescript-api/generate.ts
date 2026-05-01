@@ -1,5 +1,38 @@
-import type { Entry } from "../group.ts";
+import { mkdir } from "node:fs/promises";
+import { type Entry, groupEntries } from "../group.ts";
+import { writeOutput } from "../write.ts";
+import { runTsc } from "./build.ts";
+import { SRC_OUT_DIR, TEMPLATES_STUBS_DIR } from "./constants.ts";
+import { emitGroupNames } from "./emit-group-names.ts";
+import { emitIndex } from "./emit-index.ts";
+import { emitLookupTables } from "./emit-lookup-tables.ts";
 
-export async function generateTypeScriptApi(_entries: Entry[]): Promise<void> {
-	console.log("[typescript-api] (skeleton — no-op)");
+export async function generateTypeScriptApi(entries: Entry[]): Promise<void> {
+	const groups = groupEntries(entries);
+	console.log(`[typescript-api] grouped into ${groups.size} discriminators.`);
+
+	// 1. Ensure output dirs exist.
+	await mkdir(SRC_OUT_DIR, { recursive: true });
+	await mkdir(TEMPLATES_STUBS_DIR, { recursive: true });
+
+	// 2. Emit data-driven files into packages/ts-api/src/.
+	const generated = new Map<string, string>();
+	generated.set("group-names.ts", emitGroupNames(groups));
+	generated.set("lookup-tables.d.ts", emitLookupTables(groups));
+	generated.set("index.ts", emitIndex());
+	await writeOutput(generated, SRC_OUT_DIR);
+
+	// 3. Refresh editor stubs alongside the templates so the IDE resolves
+	//    `./group-names` and `./lookup-tables` from within templates/.
+	const stubs = new Map<string, string>();
+	stubs.set("group-names.ts", emitGroupNames(groups));
+	stubs.set("lookup-tables.d.ts", emitLookupTables(groups));
+	await writeOutput(stubs, TEMPLATES_STUBS_DIR);
+
+	// 4. (template copy happens once templates exist — wired in a later task)
+
+	// 5. Compile src/ → dist/ via tsc.
+	await runTsc();
+
+	console.log(`[typescript-api] wrote runtime to ${SRC_OUT_DIR} and built dist/`);
 }
