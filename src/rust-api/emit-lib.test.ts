@@ -53,11 +53,14 @@ describe("emitLib", () => {
 		expect(out).toMatch(/pub fn \w+\(&self\) -> accessor::\w+Accessor<'_>/);
 	});
 
-	test("emits global entry_template_id dispatcher", () => {
+	test("does NOT emit a custom template_id dispatcher (delegates to TemplateId derive)", () => {
+		// The TemplateId derive on upstream MasterfileEntry provides
+		// `.template_id()`, so the emitter no longer generates the match
+		// arms locally — they live in the macro.
 		const groups = groupEntries(MOCK_MASTERFILE);
 		const out = emitLib(groups);
-		expect(out).toContain("pub(crate) fn entry_template_id(entry: &MasterfileEntry) -> &str");
-		expect(out).toMatch(/MasterfileEntry::\w+\(e\) => e\.template_id\.as_str\(\)/);
+		expect(out).not.toContain("fn entry_template_id");
+		expect(out).not.toContain("template_id.as_str()");
 	});
 
 	test("starts with the generated-file header comment", () => {

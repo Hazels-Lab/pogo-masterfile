@@ -6,8 +6,8 @@ use std::collections::HashMap;
 
 use pogo_masterfile_types::MasterfileEntry;
 
+use crate::GroupIndexes;
 use crate::error::Result;
-use crate::{GroupIndexes, entry_template_id};
 
 #[cfg(feature = "async")]
 use crate::builder::MasterfileBuilder;
@@ -43,7 +43,7 @@ impl Masterfile {
         let by_id = entries
             .iter()
             .enumerate()
-            .map(|(i, e)| (entry_template_id(e).to_string(), i))
+            .map(|(i, e)| (e.template_id().to_string(), i))
             .collect();
         let groups = GroupIndexes::build(&entries);
         Self {
@@ -83,7 +83,7 @@ impl Masterfile {
     }
 
     pub fn template_ids(&self) -> impl Iterator<Item = &str> + '_ {
-        self.entries.iter().map(entry_template_id)
+        self.entries.iter().map(MasterfileEntry::template_id)
     }
 
     // ── Mutation (require &mut self — invalidates outstanding borrows) ──

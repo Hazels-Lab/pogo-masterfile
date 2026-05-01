@@ -12,7 +12,7 @@ use pogo_masterfile_types::MasterfileEntry;
 use crate::error::Result;
 use crate::fetcher::blocking::{BlockingFetcher, ReqwestFetcher};
 use crate::fetcher::DEFAULT_MASTERFILE_URL;
-use crate::{entry_template_id, GroupIndexes};
+use crate::GroupIndexes;
 
 pub struct Masterfile {
 	pub(crate) entries: Vec<MasterfileEntry>,
@@ -83,7 +83,7 @@ impl Masterfile {
 		let by_id = entries
 			.iter()
 			.enumerate()
-			.map(|(i, e)| (entry_template_id(e).to_string(), i))
+			.map(|(i, e)| (e.template_id().to_string(), i))
 			.collect();
 		let groups = GroupIndexes::build(&entries);
 		Self {
@@ -119,7 +119,7 @@ impl Masterfile {
 	}
 
 	pub fn template_ids(&self) -> impl Iterator<Item = &str> + '_ {
-		self.entries.iter().map(entry_template_id)
+		self.entries.iter().map(MasterfileEntry::template_id)
 	}
 
 	pub fn refresh(&mut self) -> Result<()> {

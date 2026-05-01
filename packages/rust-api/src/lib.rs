@@ -3,8 +3,8 @@
 //! Crate root. The hand-written templates (`masterfile.rs`, `error.rs`,
 //! `fetcher.rs`, `builder.rs`, `blocking.rs`) are copied verbatim by codegen;
 //! everything in THIS file (per-group accessor methods, the `GroupIndexes`
-//! storage struct, the `entry_template_id` dispatcher, upstream re-exports)
-//! is regenerated on every `bun run generate`.
+//! storage struct, upstream re-exports) is regenerated on every
+//! `bun run generate`.
 
 use std::collections::HashMap;
 
@@ -426,358 +426,364 @@ impl GroupIndexes {
         for (idx, entry) in entries.iter().enumerate() {
             match entry {
                 MasterfileEntry::AvatarCustomization(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<AvatarCustomizationTemplateId>()
+                    if let Ok(typed) = entry.template_id().parse::<AvatarCustomizationTemplateId>()
                     {
                         avatar_customization_index.insert(typed, idx);
                         avatar_customization_order.push(idx);
                     }
                 }
                 MasterfileEntry::AvatarGroupOrderSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<AvatarGroupOrderSettingsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<AvatarGroupOrderSettingsTemplateId>()
                     {
                         avatar_group_order_settings_index.insert(typed, idx);
                         avatar_group_order_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::AvatarItemDisplay(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<AvatarItemDisplayTemplateId>()
-                    {
+                    if let Ok(typed) = entry.template_id().parse::<AvatarItemDisplayTemplateId>() {
                         avatar_item_display_index.insert(typed, idx);
                         avatar_item_display_order.push(idx);
                     }
                 }
                 MasterfileEntry::BadgeSettings(_) => {
-                    if let Ok(typed) = entry_template_id(entry).parse::<BadgeSettingsTemplateId>() {
+                    if let Ok(typed) = entry.template_id().parse::<BadgeSettingsTemplateId>() {
                         badge_settings_index.insert(typed, idx);
                         badge_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::BreadMoveLevelSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<BreadMoveLevelSettingsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<BreadMoveLevelSettingsTemplateId>()
                     {
                         bread_move_level_settings_index.insert(typed, idx);
                         bread_move_level_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::BuddyActivityCategorySettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<BuddyActivityCategorySettingsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<BuddyActivityCategorySettingsTemplateId>()
                     {
                         buddy_activity_category_settings_index.insert(typed, idx);
                         buddy_activity_category_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::BuddyEmotionLevelSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<BuddyEmotionLevelSettingsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<BuddyEmotionLevelSettingsTemplateId>()
                     {
                         buddy_emotion_level_settings_index.insert(typed, idx);
                         buddy_emotion_level_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::BuddyLevelSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<BuddyLevelSettingsTemplateId>()
-                    {
+                    if let Ok(typed) = entry.template_id().parse::<BuddyLevelSettingsTemplateId>() {
                         buddy_level_settings_index.insert(typed, idx);
                         buddy_level_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::ClientQuestTemplate(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<ClientQuestTemplateTemplateId>()
+                    if let Ok(typed) = entry.template_id().parse::<ClientQuestTemplateTemplateId>()
                     {
                         client_quest_template_index.insert(typed, idx);
                         client_quest_template_order.push(idx);
                     }
                 }
                 MasterfileEntry::CodeGateProto(_) => {
-                    if let Ok(typed) = entry_template_id(entry).parse::<CodeGateProtoTemplateId>() {
+                    if let Ok(typed) = entry.template_id().parse::<CodeGateProtoTemplateId>() {
                         code_gate_proto_index.insert(typed, idx);
                         code_gate_proto_order.push(idx);
                     }
                 }
                 MasterfileEntry::CombatLeague(_) => {
-                    if let Ok(typed) = entry_template_id(entry).parse::<CombatLeagueTemplateId>() {
+                    if let Ok(typed) = entry.template_id().parse::<CombatLeagueTemplateId>() {
                         combat_league_index.insert(typed, idx);
                         combat_league_order.push(idx);
                     }
                 }
                 MasterfileEntry::CombatMove(_) => {
-                    if let Ok(typed) = entry_template_id(entry).parse::<CombatMoveTemplateId>() {
+                    if let Ok(typed) = entry.template_id().parse::<CombatMoveTemplateId>() {
                         combat_move_index.insert(typed, idx);
                         combat_move_order.push(idx);
                     }
                 }
                 MasterfileEntry::CombatNpcPersonality(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<CombatNpcPersonalityTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<CombatNpcPersonalityTemplateId>()
                     {
                         combat_npc_personality_index.insert(typed, idx);
                         combat_npc_personality_order.push(idx);
                     }
                 }
                 MasterfileEntry::CombatNpcTrainer(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<CombatNpcTrainerTemplateId>()
-                    {
+                    if let Ok(typed) = entry.template_id().parse::<CombatNpcTrainerTemplateId>() {
                         combat_npc_trainer_index.insert(typed, idx);
                         combat_npc_trainer_order.push(idx);
                     }
                 }
                 MasterfileEntry::CombatRankingProtoSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<CombatRankingProtoSettingsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<CombatRankingProtoSettingsTemplateId>()
                     {
                         combat_ranking_proto_settings_index.insert(typed, idx);
                         combat_ranking_proto_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::CombatType(_) => {
-                    if let Ok(typed) = entry_template_id(entry).parse::<CombatTypeTemplateId>() {
+                    if let Ok(typed) = entry.template_id().parse::<CombatTypeTemplateId>() {
                         combat_type_index.insert(typed, idx);
                         combat_type_order.push(idx);
                     }
                 }
                 MasterfileEntry::EventPassSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<EventPassSettingsTemplateId>()
-                    {
+                    if let Ok(typed) = entry.template_id().parse::<EventPassSettingsTemplateId>() {
                         event_pass_settings_index.insert(typed, idx);
                         event_pass_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::EventPassTierSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<EventPassTierSettingsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<EventPassTierSettingsTemplateId>()
                     {
                         event_pass_tier_settings_index.insert(typed, idx);
                         event_pass_tier_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::EvolutionChainDisplaySettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<EvolutionChainDisplaySettingsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<EvolutionChainDisplaySettingsTemplateId>()
                     {
                         evolution_chain_display_settings_index.insert(typed, idx);
                         evolution_chain_display_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::EvolutionQuestTemplate(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<EvolutionQuestTemplateTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<EvolutionQuestTemplateTemplateId>()
                     {
                         evolution_quest_template_index.insert(typed, idx);
                         evolution_quest_template_order.push(idx);
                     }
                 }
                 MasterfileEntry::FeatureGate(_) => {
-                    if let Ok(typed) = entry_template_id(entry).parse::<FeatureGateTemplateId>() {
+                    if let Ok(typed) = entry.template_id().parse::<FeatureGateTemplateId>() {
                         feature_gate_index.insert(typed, idx);
                         feature_gate_order.push(idx);
                     }
                 }
                 MasterfileEntry::FormSettings(_) => {
-                    if let Ok(typed) = entry_template_id(entry).parse::<FormSettingsTemplateId>() {
+                    if let Ok(typed) = entry.template_id().parse::<FormSettingsTemplateId>() {
                         form_settings_index.insert(typed, idx);
                         form_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::FortPowerUpLevelSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<FortPowerUpLevelSettingsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<FortPowerUpLevelSettingsTemplateId>()
                     {
                         fort_power_up_level_settings_index.insert(typed, idx);
                         fort_power_up_level_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::FriendshipMilestoneSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<FriendshipMilestoneSettingsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<FriendshipMilestoneSettingsTemplateId>()
                     {
                         friendship_milestone_settings_index.insert(typed, idx);
                         friendship_milestone_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::GenderSettings(_) => {
-                    if let Ok(typed) = entry_template_id(entry).parse::<GenderSettingsTemplateId>()
-                    {
+                    if let Ok(typed) = entry.template_id().parse::<GenderSettingsTemplateId>() {
                         gender_settings_index.insert(typed, idx);
                         gender_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::IapCategoryDisplay(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<IapCategoryDisplayTemplateId>()
-                    {
+                    if let Ok(typed) = entry.template_id().parse::<IapCategoryDisplayTemplateId>() {
                         iap_category_display_index.insert(typed, idx);
                         iap_category_display_order.push(idx);
                     }
                 }
                 MasterfileEntry::IapItemDisplay(_) => {
-                    if let Ok(typed) = entry_template_id(entry).parse::<IapItemDisplayTemplateId>()
-                    {
+                    if let Ok(typed) = entry.template_id().parse::<IapItemDisplayTemplateId>() {
                         iap_item_display_index.insert(typed, idx);
                         iap_item_display_order.push(idx);
                     }
                 }
                 MasterfileEntry::InvasionNpcDisplaySettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<InvasionNpcDisplaySettingsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<InvasionNpcDisplaySettingsTemplateId>()
                     {
                         invasion_npc_display_settings_index.insert(typed, idx);
                         invasion_npc_display_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::ItemExpirationSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<ItemExpirationSettingsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<ItemExpirationSettingsTemplateId>()
                     {
                         item_expiration_settings_index.insert(typed, idx);
                         item_expiration_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::ItemSettings(_) => {
-                    if let Ok(typed) = entry_template_id(entry).parse::<ItemSettingsTemplateId>() {
+                    if let Ok(typed) = entry.template_id().parse::<ItemSettingsTemplateId>() {
                         item_settings_index.insert(typed, idx);
                         item_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::LanguageSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<LanguageSettingsTemplateId>()
-                    {
+                    if let Ok(typed) = entry.template_id().parse::<LanguageSettingsTemplateId>() {
                         language_settings_index.insert(typed, idx);
                         language_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::LevelUpRewards(_) => {
-                    if let Ok(typed) = entry_template_id(entry).parse::<LevelUpRewardsTemplateId>()
-                    {
+                    if let Ok(typed) = entry.template_id().parse::<LevelUpRewardsTemplateId>() {
                         level_up_rewards_index.insert(typed, idx);
                         level_up_rewards_order.push(idx);
                     }
                 }
                 MasterfileEntry::LimitedPurchaseSkuSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<LimitedPurchaseSkuSettingsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<LimitedPurchaseSkuSettingsTemplateId>()
                     {
                         limited_purchase_sku_settings_index.insert(typed, idx);
                         limited_purchase_sku_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::LocationCardSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<LocationCardSettingsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<LocationCardSettingsTemplateId>()
                     {
                         location_card_settings_index.insert(typed, idx);
                         location_card_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::MegaEvoLevelSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<MegaEvoLevelSettingsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<MegaEvoLevelSettingsTemplateId>()
                     {
                         mega_evo_level_settings_index.insert(typed, idx);
                         mega_evo_level_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::MoveSequenceSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<MoveSequenceSettingsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<MoveSequenceSettingsTemplateId>()
                     {
                         move_sequence_settings_index.insert(typed, idx);
                         move_sequence_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::MoveSettings(_) => {
-                    if let Ok(typed) = entry_template_id(entry).parse::<MoveSettingsTemplateId>() {
+                    if let Ok(typed) = entry.template_id().parse::<MoveSettingsTemplateId>() {
                         move_settings_index.insert(typed, idx);
                         move_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::NonCombatMoveSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<NonCombatMoveSettingsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<NonCombatMoveSettingsTemplateId>()
                     {
                         non_combat_move_settings_index.insert(typed, idx);
                         non_combat_move_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::PartyPlayGeneralSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<PartyPlayGeneralSettingsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<PartyPlayGeneralSettingsTemplateId>()
                     {
                         party_play_general_settings_index.insert(typed, idx);
                         party_play_general_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::PhotoSetsSettingsProto(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<PhotoSetsSettingsProtoTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<PhotoSetsSettingsProtoTemplateId>()
                     {
                         photo_sets_settings_proto_index.insert(typed, idx);
                         photo_sets_settings_proto_order.push(idx);
                     }
                 }
                 MasterfileEntry::PokemonExtendedSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<PokemonExtendedSettingsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<PokemonExtendedSettingsTemplateId>()
                     {
                         pokemon_extended_settings_index.insert(typed, idx);
                         pokemon_extended_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::PokemonFamily(_) => {
-                    if let Ok(typed) = entry_template_id(entry).parse::<PokemonFamilyTemplateId>() {
+                    if let Ok(typed) = entry.template_id().parse::<PokemonFamilyTemplateId>() {
                         pokemon_family_index.insert(typed, idx);
                         pokemon_family_order.push(idx);
                     }
                 }
                 MasterfileEntry::PokemonHomeEnergyCosts(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<PokemonHomeEnergyCostsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<PokemonHomeEnergyCostsTemplateId>()
                     {
                         pokemon_home_energy_costs_index.insert(typed, idx);
                         pokemon_home_energy_costs_order.push(idx);
                     }
                 }
                 MasterfileEntry::PokemonHomeFormReversions(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<PokemonHomeFormReversionsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<PokemonHomeFormReversionsTemplateId>()
                     {
                         pokemon_home_form_reversions_index.insert(typed, idx);
                         pokemon_home_form_reversions_order.push(idx);
                     }
                 }
                 MasterfileEntry::PokemonScaleSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<PokemonScaleSettingsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<PokemonScaleSettingsTemplateId>()
                     {
                         pokemon_scale_settings_index.insert(typed, idx);
                         pokemon_scale_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::PokemonSettings(_) => {
-                    if let Ok(typed) = entry_template_id(entry).parse::<PokemonSettingsTemplateId>()
-                    {
+                    if let Ok(typed) = entry.template_id().parse::<PokemonSettingsTemplateId>() {
                         pokemon_settings_index.insert(typed, idx);
                         pokemon_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::PokemonUpgrades(_) => {
-                    if let Ok(typed) = entry_template_id(entry).parse::<PokemonUpgradesTemplateId>()
-                    {
+                    if let Ok(typed) = entry.template_id().parse::<PokemonUpgradesTemplateId>() {
                         pokemon_upgrades_index.insert(typed, idx);
                         pokemon_upgrades_order.push(idx);
                     }
                 }
                 MasterfileEntry::PokestopInvasionAvailabilitySettings(_) => {
-                    if let Ok(typed) = entry_template_id(entry)
+                    if let Ok(typed) = entry
+                        .template_id()
                         .parse::<PokestopInvasionAvailabilitySettingsTemplateId>()
                     {
                         pokestop_invasion_availability_settings_index.insert(typed, idx);
@@ -785,80 +791,79 @@ impl GroupIndexes {
                     }
                 }
                 MasterfileEntry::QuestSettings(_) => {
-                    if let Ok(typed) = entry_template_id(entry).parse::<QuestSettingsTemplateId>() {
+                    if let Ok(typed) = entry.template_id().parse::<QuestSettingsTemplateId>() {
                         quest_settings_index.insert(typed, idx);
                         quest_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::RecommendedSearchSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<RecommendedSearchSettingsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<RecommendedSearchSettingsTemplateId>()
                     {
                         recommended_search_settings_index.insert(typed, idx);
                         recommended_search_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::RollBack(_) => {
-                    if let Ok(typed) = entry_template_id(entry).parse::<RollBackTemplateId>() {
+                    if let Ok(typed) = entry.template_id().parse::<RollBackTemplateId>() {
                         roll_back_index.insert(typed, idx);
                         roll_back_order.push(idx);
                     }
                 }
                 MasterfileEntry::SettingsOverrideRule(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<SettingsOverrideRuleTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<SettingsOverrideRuleTemplateId>()
                     {
                         settings_override_rule_index.insert(typed, idx);
                         settings_override_rule_order.push(idx);
                     }
                 }
                 MasterfileEntry::StickerMetadata(_) => {
-                    if let Ok(typed) = entry_template_id(entry).parse::<StickerMetadataTemplateId>()
-                    {
+                    if let Ok(typed) = entry.template_id().parse::<StickerMetadataTemplateId>() {
                         sticker_metadata_index.insert(typed, idx);
                         sticker_metadata_order.push(idx);
                     }
                 }
                 MasterfileEntry::TappableSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<TappableSettingsTemplateId>()
-                    {
+                    if let Ok(typed) = entry.template_id().parse::<TappableSettingsTemplateId>() {
                         tappable_settings_index.insert(typed, idx);
                         tappable_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::TemporaryEvolutionSettings(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<TemporaryEvolutionSettingsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<TemporaryEvolutionSettingsTemplateId>()
                     {
                         temporary_evolution_settings_index.insert(typed, idx);
                         temporary_evolution_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::TypeEffective(_) => {
-                    if let Ok(typed) = entry_template_id(entry).parse::<TypeEffectiveTemplateId>() {
+                    if let Ok(typed) = entry.template_id().parse::<TypeEffectiveTemplateId>() {
                         type_effective_index.insert(typed, idx);
                         type_effective_order.push(idx);
                     }
                 }
                 MasterfileEntry::VsSeekerLoot(_) => {
-                    if let Ok(typed) = entry_template_id(entry).parse::<VsSeekerLootTemplateId>() {
+                    if let Ok(typed) = entry.template_id().parse::<VsSeekerLootTemplateId>() {
                         vs_seeker_loot_index.insert(typed, idx);
                         vs_seeker_loot_order.push(idx);
                     }
                 }
                 MasterfileEntry::VsSeekerPokemonRewards(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<VsSeekerPokemonRewardsTemplateId>()
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<VsSeekerPokemonRewardsTemplateId>()
                     {
                         vs_seeker_pokemon_rewards_index.insert(typed, idx);
                         vs_seeker_pokemon_rewards_order.push(idx);
                     }
                 }
                 MasterfileEntry::WeatherAffinities(_) => {
-                    if let Ok(typed) =
-                        entry_template_id(entry).parse::<WeatherAffinitiesTemplateId>()
-                    {
+                    if let Ok(typed) = entry.template_id().parse::<WeatherAffinitiesTemplateId>() {
                         weather_affinities_index.insert(typed, idx);
                         weather_affinities_order.push(idx);
                     }
@@ -987,211 +992,6 @@ impl GroupIndexes {
             weather_affinities_index,
             weather_affinities_order,
         }
-    }
-}
-
-/// Extract the templateId string from any MasterfileEntry variant. Total
-/// over every variant including singletons.
-pub(crate) fn entry_template_id(entry: &MasterfileEntry) -> &str {
-    match entry {
-        MasterfileEntry::AvatarCustomization(e) => e.template_id.as_str(),
-        MasterfileEntry::AvatarGroupOrderSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::AvatarItemDisplay(e) => e.template_id.as_str(),
-        MasterfileEntry::BadgeSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BreadMoveLevelSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BuddyActivityCategorySettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BuddyEmotionLevelSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BuddyLevelSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::ClientQuestTemplate(e) => e.template_id.as_str(),
-        MasterfileEntry::CodeGateProto(e) => e.template_id.as_str(),
-        MasterfileEntry::CombatLeague(e) => e.template_id.as_str(),
-        MasterfileEntry::CombatMove(e) => e.template_id.as_str(),
-        MasterfileEntry::CombatNpcPersonality(e) => e.template_id.as_str(),
-        MasterfileEntry::CombatNpcTrainer(e) => e.template_id.as_str(),
-        MasterfileEntry::CombatRankingProtoSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::CombatType(e) => e.template_id.as_str(),
-        MasterfileEntry::EventPassSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::EventPassTierSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::EvolutionChainDisplaySettings(e) => e.template_id.as_str(),
-        MasterfileEntry::EvolutionQuestTemplate(e) => e.template_id.as_str(),
-        MasterfileEntry::FeatureGate(e) => e.template_id.as_str(),
-        MasterfileEntry::FormSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::FortPowerUpLevelSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::FriendshipMilestoneSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::GenderSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::IapCategoryDisplay(e) => e.template_id.as_str(),
-        MasterfileEntry::IapItemDisplay(e) => e.template_id.as_str(),
-        MasterfileEntry::InvasionNpcDisplaySettings(e) => e.template_id.as_str(),
-        MasterfileEntry::ItemExpirationSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::ItemSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::LanguageSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::LevelUpRewards(e) => e.template_id.as_str(),
-        MasterfileEntry::LimitedPurchaseSkuSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::LocationCardSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::MegaEvoLevelSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::MoveSequenceSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::MoveSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::NonCombatMoveSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::PartyPlayGeneralSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::PhotoSetsSettingsProto(e) => e.template_id.as_str(),
-        MasterfileEntry::PokemonExtendedSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::PokemonFamily(e) => e.template_id.as_str(),
-        MasterfileEntry::PokemonHomeEnergyCosts(e) => e.template_id.as_str(),
-        MasterfileEntry::PokemonHomeFormReversions(e) => e.template_id.as_str(),
-        MasterfileEntry::PokemonScaleSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::PokemonSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::PokemonUpgrades(e) => e.template_id.as_str(),
-        MasterfileEntry::PokestopInvasionAvailabilitySettings(e) => e.template_id.as_str(),
-        MasterfileEntry::QuestSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::RecommendedSearchSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::RollBack(e) => e.template_id.as_str(),
-        MasterfileEntry::SettingsOverrideRule(e) => e.template_id.as_str(),
-        MasterfileEntry::StickerMetadata(e) => e.template_id.as_str(),
-        MasterfileEntry::TappableSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::TemporaryEvolutionSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::TypeEffective(e) => e.template_id.as_str(),
-        MasterfileEntry::VsSeekerLoot(e) => e.template_id.as_str(),
-        MasterfileEntry::VsSeekerPokemonRewards(e) => e.template_id.as_str(),
-        MasterfileEntry::WeatherAffinities(e) => e.template_id.as_str(),
-        MasterfileEntry::AccessibilitySettings(e) => e.template_id.as_str(),
-        MasterfileEntry::AdditiveSceneSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::AddressablePokemonSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::AddressBookImportSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::AdvancedSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::ArPhotoFeatureFlags(e) => e.template_id.as_str(),
-        MasterfileEntry::ArTelemetrySettings(e) => e.template_id.as_str(),
-        MasterfileEntry::AssetRefreshProto(e) => e.template_id.as_str(),
-        MasterfileEntry::AvatarFeatureFlags(e) => e.template_id.as_str(),
-        MasterfileEntry::AvatarStoreFooterFlags(e) => e.template_id.as_str(),
-        MasterfileEntry::AvatarStoreSubcategoryFilteringFlags(e) => e.template_id.as_str(),
-        MasterfileEntry::BackgroundModeSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BattleAnimationSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BattleHubBadgeSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BattleHubOrderSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BattleInputBufferSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BattlePartySettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BattleSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BattleVisualSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BelugaPokemonWhitelist(e) => e.template_id.as_str(),
-        MasterfileEntry::BestFriendsPlusSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BreadBattleClientSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BreadFeatureFlags(e) => e.template_id.as_str(),
-        MasterfileEntry::BreadLobbyCounterSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BreadLobbyUpdateSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BreadMoveMappings(e) => e.template_id.as_str(),
-        MasterfileEntry::BreadPokemonScalingSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BreadSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BuddyEncounterCameoSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BuddyHungerSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BuddyInteractionSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BuddySwapSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BuddyWalkSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::BulkHealingSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::ButterflyCollectorSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::CampfireSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::CatchRadiusMultiplierSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::CombatCompetitiveSeasonSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::CombatLeagueSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::CombatSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::CombatStatStageSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::ContestSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::ConversationSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::CrossGameSocialSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::DailyAdventureIncenseSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::DeepLinkingSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::EggHatchImprovementsSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::EncounterSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::EventPlannerPopularNotificationSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::ExternalAddressableAssetsSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::FeatureUnlockLevelSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::GeotargetedQuestSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::GiftingSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::GuiSearchSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::GymBadgeSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::HapticsSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::IapSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::IbfcLightweightSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::ImpressionTrackingSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::InAppSurveySettings(e) => e.template_id.as_str(),
-        MasterfileEntry::IncidentPrioritySettings(e) => e.template_id.as_str(),
-        MasterfileEntry::IncidentVisibilitySettings(e) => e.template_id.as_str(),
-        MasterfileEntry::InventorySettings(e) => e.template_id.as_str(),
-        MasterfileEntry::IrisSocialSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::IrisSocialUxFunnelSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::ItemCurrencyValues(e) => e.template_id.as_str(),
-        MasterfileEntry::ItemInventoryUpdateSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::JoinRaidViaFriendListSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::LanguageSelectorSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::LuckyPokemonSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::MainMenuChanges(e) => e.template_id.as_str(),
-        MasterfileEntry::MapDisplaySettings(e) => e.template_id.as_str(),
-        MasterfileEntry::MapObjectsInteractionRangeSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::MegaEvoSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::MonodepthSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::MpSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::NaturalArtDayNightFeatureSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::NearbyPokemonSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::NeutralAvatarSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::OnboardingSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::OptimizationsProto(e) => e.template_id.as_str(),
-        MasterfileEntry::PartyDarkLaunchSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::PartyIapBoostsSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::PartyRecommendationSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::PhotoSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::PlannerSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::PlayerBonusSystemSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::PlayerLevel(e) => e.template_id.as_str(),
-        MasterfileEntry::PokeballThrowPropertySettings(e) => e.template_id.as_str(),
-        MasterfileEntry::PokecoinPurchaseDisplayGmt(e) => e.template_id.as_str(),
-        MasterfileEntry::PokedexCategoriesSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::PokedexSizeStatsSystemSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::Pokedexv2featureFlags(e) => e.template_id.as_str(),
-        MasterfileEntry::PokedexV2settings(e) => e.template_id.as_str(),
-        MasterfileEntry::PokemonFxSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::PokemonHomeSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::PokemonTagSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::PopupControlSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::PostcardCollectionSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::PowerUpPokestopsSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::PrimalEvoSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::PtcOauthSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::QuestDialogueInboxSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::QuickInviteSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::RaidEntryCostSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::RaidLobbyCounterSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::RaidSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::ReferralSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::RemoteTradeSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::RouteBadgeSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::RouteCreationSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::RouteDiscoverySettings(e) => e.template_id.as_str(),
-        MasterfileEntry::RoutePinSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::RoutePlaySettings(e) => e.template_id.as_str(),
-        MasterfileEntry::RoutesNearbyNotifSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::RoutesPartyPlayInteropSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::RouteStampCategorySettings(e) => e.template_id.as_str(),
-        MasterfileEntry::SharedFusionSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::SharedMoveSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::SoftSfidaSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::SourdoughMoveMappingSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::SpecialEggSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::SponsoredGeofenceGiftSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::SquashSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::StampCollectionSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::StationedPokemonTableSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::StickerCategorySettings(e) => e.template_id.as_str(),
-        MasterfileEntry::StyleShopSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::TicketGiftingSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::TodayViewSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::TutorialSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::UsernameSuggestionSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::VerboseLogCombatSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::VerboseLogRaidSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::VistaGeneralSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::VnextBattleConfig(e) => e.template_id.as_str(),
-        MasterfileEntry::VsSeekerClientSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::VsSeekerScheduleSettings(e) => e.template_id.as_str(),
-        MasterfileEntry::WeatherBonusSettings(e) => e.template_id.as_str(),
     }
 }
 

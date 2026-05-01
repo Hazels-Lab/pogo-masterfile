@@ -136,6 +136,85 @@ pub fn derive_as_str(input: TokenStream) -> TokenStream {
     .into()
 }
 
+/// Derives an inherent `template_id(&self) -> &str` method for an enum
+/// whose every variant is a single-field tuple wrapping a struct with a
+/// `template_id: String` field.
+///
+/// Eliminates boilerplate `match` arms when dispatching on a wide enum
+/// (e.g. `MasterfileEntry`) to read the inner `template_id` — every arm
+/// is mechanically `Self::Variant(e) => e.template_id.as_str()`.
+///
+/// # Requirements
+///
+/// - The type is an enum.
+/// - Every variant is a single-field tuple variant: `Variant(Inner)`.
+/// - The inner type has a `template_id` field of a type that exposes
+///   `.as_str() -> &str` (i.e. `String` or `&str`).
+///
+/// # Example
+///
+/// ```ignore
+/// use pogo_masterfile_macros::TemplateId;
+///
+/// struct Inner { template_id: String }
+///
+/// #[derive(TemplateId)]
+/// enum E { A(Inner), B(Inner) }
+///
+/// let e = E::A(Inner { template_id: "X".into() });
+/// assert_eq!(e.template_id(), "X");
+/// ```
+#[proc_macro_derive(TemplateId)]
+pub fn derive_template_id(input: TokenStream) -> TokenStream {
+    let input = parse_macro_input!(input as DeriveInput);
+    let name = &input.ident;
+
+    let Data::Enum(data_enum) = &input.data else {
+        return syn::Error::new_spanned(name, "TemplateId only applies to enums")
+            .to_compile_error()
+            .into();
+    };
+
+    let mut errors: Vec<syn::Error> = Vec::new();
+    let mut arms: Vec<proc_macro2::TokenStream> = Vec::new();
+
+    for v in &data_enum.variants {
+        let ident = &v.ident;
+        match &v.fields {
+            Fields::Unnamed(fields) if fields.unnamed.len() == 1 => {
+                arms.push(quote! { Self::#ident(inner) => inner.template_id.as_str() });
+            }
+            _ => errors.push(syn::Error::new_spanned(
+                v,
+                "TemplateId requires every variant to be a single-field tuple wrapping a struct with `template_id: String`",
+            )),
+        }
+    }
+
+    if !errors.is_empty() {
+        let combined = errors
+            .into_iter()
+            .reduce(|mut a, b| {
+                a.combine(b);
+                a
+            })
+            .unwrap();
+        return combined.to_compile_error().into();
+    }
+
+    quote! {
+        impl #name {
+            /// Read the `template_id` of whichever variant `self` is.
+            pub fn template_id(&self) -> &str {
+                match self {
+                    #(#arms),*
+                }
+            }
+        }
+    }
+    .into()
+}
+
 /// Derives `impl FromStr` AND `impl TryFrom<&str>` for a unit-only enum.
 /// Both share the same string-matching logic: `#[serde(rename = "...")]`
 /// first, variant ident otherwise. The error type is

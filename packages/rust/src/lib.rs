@@ -43,7 +43,7 @@ extern crate self as pogo_masterfile_types;
 
 use serde::{Deserialize, Serialize};
 
-pub use pogo_masterfile_macros::{AllVariants, AsStr, FromStrEnum};
+pub use pogo_masterfile_macros::{AllVariants, AsStr, FromStrEnum, TemplateId};
 
 /// Error returned by `FromStr` impls on generated templateId enums when the
 /// input string does not match any known templateId for the group.
@@ -174,7 +174,7 @@ pub mod weather_affinities;
 /// `data: { templateId }` only) are shape-indistinguishable. They all
 /// dispatch via `templateId` value match in the deserializer; inspect
 /// `template_id` post-parse if you need to branch on the specific kind.
-#[derive(Debug, Clone, Serialize)]
+#[derive(Debug, Clone, Serialize, TemplateId)]
 #[serde(untagged)]
 pub enum MasterfileEntry {
     PokemonExtendedSettings(pokemon_extended_settings::PokemonExtendedSettingsEntry),

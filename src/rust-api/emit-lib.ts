@@ -9,11 +9,6 @@ interface GroupInfo {
 	templateIdType: string; // <Pascal>TemplateId
 }
 
-interface SingletonInfo {
-	/** The MasterfileEntry variant for this singleton (== pascalCase of its data key). */
-	variant: string;
-}
-
 /**
  * Emit `packages/rust-api/src/lib.rs`.
  *
@@ -31,7 +26,6 @@ interface SingletonInfo {
  */
 export function emitLib(groups: Map<string, Group>): string {
 	const multiEntry = [...groups.values()].filter((g) => g.entries.length > 1);
-	const singletons = [...groups.values()].filter((g) => g.entries.length === 1);
 
 	const infos: GroupInfo[] = multiEntry.map((g) => ({
 		discriminator: g.discriminator,
@@ -41,11 +35,6 @@ export function emitLib(groups: Map<string, Group>): string {
 		templateIdType: `${pascalCase(g.discriminator)}TemplateId`,
 	}));
 	infos.sort((a, b) => a.snake.localeCompare(b.snake));
-
-	// Singletons each get their own MasterfileEntry variant, named after their
-	// data-key (e.g. "accessibilitySettings" → AccessibilitySettings). The
-	// templateIdMatchArms must enumerate every variant, including singleton ones.
-	const singletonInfos: SingletonInfo[] = singletons.map((g) => ({ variant: pascalCase(g.discriminator) })).sort((a, b) => a.variant.localeCompare(b.variant));
 
 	const templateIdImports = infos.map((i) => `\tpub use pogo_masterfile_types::${i.snake}::${i.templateIdType};`).join("\n");
 
@@ -65,7 +54,7 @@ export function emitLib(groups: Map<string, Group>): string {
 	const buildMatchArms = infos
 		.map(
 			(info) =>
-				`\t\t\t\tMasterfileEntry::${info.variant}(_) => {\n\t\t\t\t\tif let Ok(typed) = entry_template_id(entry).parse::<${info.templateIdType}>() {\n\t\t\t\t\t\t${info.snake}_index.insert(typed, idx);\n\t\t\t\t\t\t${info.snake}_order.push(idx);\n\t\t\t\t\t}\n\t\t\t\t}`,
+				`\t\t\t\tMasterfileEntry::${info.variant}(_) => {\n\t\t\t\t\tif let Ok(typed) = entry.template_id().parse::<${info.templateIdType}>() {\n\t\t\t\t\t\t${info.snake}_index.insert(typed, idx);\n\t\t\t\t\t\t${info.snake}_order.push(idx);\n\t\t\t\t\t}\n\t\t\t\t}`,
 		)
 		.join("\n");
 
@@ -78,24 +67,13 @@ export function emitLib(groups: Map<string, Group>): string {
 		)
 		.join("\n\n");
 
-	// templateIdMatchArms must enumerate EVERY MasterfileEntry variant —
-	// multi-entry groups and every singleton — so the function is total.
-	const allVariantArms = [
-		...infos.map((info) => `\t\tMasterfileEntry::${info.variant}(e) => e.template_id.as_str(),`),
-		...singletonInfos.map((s) => `\t\tMasterfileEntry::${s.variant}(e) => e.template_id.as_str(),`),
-	].join("\n");
-
-	// Imports for the variant entry types — we don't actually need them at
-	// the lib.rs level (the match dispatches on enum variants directly), but
-	// we DO need the per-group TemplateId types for GroupIndexes' fields.
-
 	return `//! Generated from Pokémon GO masterfile — runtime API.
 //!
 //! Crate root. The hand-written templates (\`masterfile.rs\`, \`error.rs\`,
 //! \`fetcher.rs\`, \`builder.rs\`, \`blocking.rs\`) are copied verbatim by codegen;
 //! everything in THIS file (per-group accessor methods, the \`GroupIndexes\`
-//! storage struct, the \`entry_template_id\` dispatcher, upstream re-exports)
-//! is regenerated on every \`bun run generate\`.
+//! storage struct, upstream re-exports) is regenerated on every
+//! \`bun run generate\`.
 
 use std::collections::HashMap;
 
@@ -151,14 +129,6 @@ ${buildMatchArms}
 \t\tSelf {
 ${buildAssignments}
 \t\t}
-\t}
-}
-
-/// Extract the templateId string from any MasterfileEntry variant. Total
-/// over every variant including singletons.
-pub(crate) fn entry_template_id(entry: &MasterfileEntry) -> &str {
-\tmatch entry {
-${allVariantArms}
 \t}
 }
 
