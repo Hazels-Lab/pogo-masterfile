@@ -9,7 +9,7 @@ const (
 	VsSeekerPokemonRewardsTemplateIDVsSeekerPokemonRewardsPremium VsSeekerPokemonRewardsTemplateID = "VS_SEEKER_POKEMON_REWARDS_PREMIUM"
 )
 
-var VsSeekerPokemonRewardsTemplateIDValues = []VsSeekerPokemonRewardsTemplateID{
+var VsSeekerPokemonRewardsTemplateIDValues = [...]VsSeekerPokemonRewardsTemplateID{
 	VsSeekerPokemonRewardsTemplateIDVsSeekerPokemonRewardsFree,
 	VsSeekerPokemonRewardsTemplateIDVsSeekerPokemonRewardsPremium,
 }

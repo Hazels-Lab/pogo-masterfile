@@ -2467,7 +2467,7 @@ const (
 	PokemonSettingsTemplateIDV1025PokemonPecharuntNormal                 PokemonSettingsTemplateID = "V1025_POKEMON_PECHARUNT_NORMAL"
 )
 
-var PokemonSettingsTemplateIDValues = []PokemonSettingsTemplateID{
+var PokemonSettingsTemplateIDValues = [...]PokemonSettingsTemplateID{
 	PokemonSettingsTemplateIDV0001PokemonBulbasaur,
 	PokemonSettingsTemplateIDV0001PokemonBulbasaurFall2019,
 	PokemonSettingsTemplateIDV0001PokemonBulbasaurNormal,

@@ -548,7 +548,7 @@ const (
 	PokemonFamilyTemplateIDV1025FamilyPecharunt    PokemonFamilyTemplateID = "V1025_FAMILY_PECHARUNT"
 )
 
-var PokemonFamilyTemplateIDValues = []PokemonFamilyTemplateID{
+var PokemonFamilyTemplateIDValues = [...]PokemonFamilyTemplateID{
 	PokemonFamilyTemplateIDV0001FamilyBulbasaur,
 	PokemonFamilyTemplateIDV0004FamilyCharmander,
 	PokemonFamilyTemplateIDV0007FamilySquirtle,

@@ -391,7 +391,7 @@ const (
 	MoveSettingsTemplateIDVnBm062                        MoveSettingsTemplateID = "VN_BM_062"
 )
 
-var MoveSettingsTemplateIDValues = []MoveSettingsTemplateID{
+var MoveSettingsTemplateIDValues = [...]MoveSettingsTemplateID{
 	MoveSettingsTemplateIDV0013MoveWrap,
 	MoveSettingsTemplateIDV0014MoveHyperBeam,
 	MoveSettingsTemplateIDV0016MoveDarkPulse,

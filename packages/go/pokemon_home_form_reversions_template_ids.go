@@ -14,7 +14,7 @@ const (
 	PokemonHomeFormReversionsTemplateIDV0649PokemonGenesectHomeFormReversion   PokemonHomeFormReversionsTemplateID = "V0649_POKEMON_GENESECT_HOME_FORM_REVERSION"
 )
 
-var PokemonHomeFormReversionsTemplateIDValues = []PokemonHomeFormReversionsTemplateID{
+var PokemonHomeFormReversionsTemplateIDValues = [...]PokemonHomeFormReversionsTemplateID{
 	PokemonHomeFormReversionsTemplateIDV0351PokemonCastformHomeFormReversion,
 	PokemonHomeFormReversionsTemplateIDV0421CherrimHomeFormReversion,
 	PokemonHomeFormReversionsTemplateIDV0487PokemonGiratinaHomeReversion,

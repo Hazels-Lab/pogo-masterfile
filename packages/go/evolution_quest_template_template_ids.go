@@ -44,7 +44,7 @@ const (
 	EvolutionQuestTemplateTemplateIDUmbreonEvolutionQuest            EvolutionQuestTemplateTemplateID = "UMBREON_EVOLUTION_QUEST"
 )
 
-var EvolutionQuestTemplateTemplateIDValues = []EvolutionQuestTemplateTemplateID{
+var EvolutionQuestTemplateTemplateIDValues = [...]EvolutionQuestTemplateTemplateID{
 	EvolutionQuestTemplateTemplateIDAnnihilapeCdEvolutionQuest,
 	EvolutionQuestTemplateTemplateIDAnnihilapeEvolutionQuest,
 	EvolutionQuestTemplateTemplateIDBisharpKingambitEvolutionQuest,

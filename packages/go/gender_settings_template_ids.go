@@ -2470,7 +2470,7 @@ const (
 	GenderSettingsTemplateIDSpawnV1025PokemonPecharuntNormal                 GenderSettingsTemplateID = "SPAWN_V1025_POKEMON_PECHARUNT_NORMAL"
 )
 
-var GenderSettingsTemplateIDValues = []GenderSettingsTemplateID{
+var GenderSettingsTemplateIDValues = [...]GenderSettingsTemplateID{
 	GenderSettingsTemplateIDSpawnV0001PokemonBulbasaur,
 	GenderSettingsTemplateIDSpawnV0001PokemonBulbasaurFall2019,
 	GenderSettingsTemplateIDSpawnV0001PokemonBulbasaurNormal,

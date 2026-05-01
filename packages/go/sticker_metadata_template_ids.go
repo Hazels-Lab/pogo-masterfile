@@ -613,7 +613,7 @@ const (
 	StickerMetadataTemplateIDStickerYurutto37                    StickerMetadataTemplateID = "STICKER_YURUTTO_37"
 )
 
-var StickerMetadataTemplateIDValues = []StickerMetadataTemplateID{
+var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDSticker2023collab1,
 	StickerMetadataTemplateIDSticker2023collab2,
 	StickerMetadataTemplateIDSticker2023collab3,

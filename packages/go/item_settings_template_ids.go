@@ -150,7 +150,7 @@ const (
 	ItemSettingsTemplateIDItemXMiracle                      ItemSettingsTemplateID = "ITEM_X_MIRACLE"
 )
 
-var ItemSettingsTemplateIDValues = []ItemSettingsTemplateID{
+var ItemSettingsTemplateIDValues = [...]ItemSettingsTemplateID{
 	ItemSettingsTemplateIDFusionResourceBlackKyurem,
 	ItemSettingsTemplateIDFusionResourceDawnwingsNecrozma,
 	ItemSettingsTemplateIDFusionResourceDuskmaneNecrozma,

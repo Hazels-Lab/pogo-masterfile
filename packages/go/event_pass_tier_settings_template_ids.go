@@ -587,7 +587,7 @@ const (
 	EventPassTierSettingsTemplateIDEventPassSteeledresolve2026Event9Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT_9_PREMIUM"
 )
 
-var EventPassTierSettingsTemplateIDValues = []EventPassTierSettingsTemplateID{
+var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID{
 	EventPassTierSettingsTemplateIDEventPassApril2026Season100Free,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season100Premium,
 	EventPassTierSettingsTemplateIDEventPassApril2026Season101Free,

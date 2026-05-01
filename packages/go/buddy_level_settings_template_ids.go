@@ -12,7 +12,7 @@ const (
 	BuddyLevelSettingsTemplateIDBuddyLevel4 BuddyLevelSettingsTemplateID = "BUDDY_LEVEL_4"
 )
 
-var BuddyLevelSettingsTemplateIDValues = []BuddyLevelSettingsTemplateID{
+var BuddyLevelSettingsTemplateIDValues = [...]BuddyLevelSettingsTemplateID{
 	BuddyLevelSettingsTemplateIDBuddyLevel0,
 	BuddyLevelSettingsTemplateIDBuddyLevel1,
 	BuddyLevelSettingsTemplateIDBuddyLevel2,

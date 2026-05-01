@@ -57,7 +57,7 @@ const (
 	TemporaryEvolutionSettingsTemplateIDTemporaryEvolutionV0719PokemonDiancie    TemporaryEvolutionSettingsTemplateID = "TEMPORARY_EVOLUTION_V0719_POKEMON_DIANCIE"
 )
 
-var TemporaryEvolutionSettingsTemplateIDValues = []TemporaryEvolutionSettingsTemplateID{
+var TemporaryEvolutionSettingsTemplateIDValues = [...]TemporaryEvolutionSettingsTemplateID{
 	TemporaryEvolutionSettingsTemplateIDTemporaryEvolutionV0003PokemonVenusaur,
 	TemporaryEvolutionSettingsTemplateIDTemporaryEvolutionV0006PokemonCharizard,
 	TemporaryEvolutionSettingsTemplateIDTemporaryEvolutionV0009PokemonBlastoise,

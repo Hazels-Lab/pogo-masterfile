@@ -257,7 +257,7 @@ const (
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyIphonese                SettingsOverrideRuleTemplateID = "SETTINGS_RULES_DENY_IPHONESE"
 )
 
-var SettingsOverrideRuleTemplateIDValues = []SettingsOverrideRuleTemplateID{
+var SettingsOverrideRuleTemplateIDValues = [...]SettingsOverrideRuleTemplateID{
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowAsusasusI006d,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixel6,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixel6a,

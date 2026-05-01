@@ -1127,7 +1127,7 @@ const (
 	IapItemDisplayTemplateIDWebVoyagerBox071323                                      IapItemDisplayTemplateID = "web-voyager-box-071323"
 )
 
-var IapItemDisplayTemplateIDValues = []IapItemDisplayTemplateID{
+var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDApril12026DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDApril12026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDApril22026DeluxeEventPassTrackUnlock,

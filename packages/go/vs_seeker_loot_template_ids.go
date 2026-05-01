@@ -55,7 +55,7 @@ const (
 	VsSeekerLootTemplateIDVsSeekerLootPerWinSettingsRank9Premium  VsSeekerLootTemplateID = "VS_SEEKER_LOOT_PER_WIN_SETTINGS_RANK_9_PREMIUM"
 )
 
-var VsSeekerLootTemplateIDValues = []VsSeekerLootTemplateID{
+var VsSeekerLootTemplateIDValues = [...]VsSeekerLootTemplateID{
 	VsSeekerLootTemplateIDVsSeekerLootPerWinSettingsRank10Free,
 	VsSeekerLootTemplateIDVsSeekerLootPerWinSettingsRank10Premium,
 	VsSeekerLootTemplateIDVsSeekerLootPerWinSettingsRank11Free,

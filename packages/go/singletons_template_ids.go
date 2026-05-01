@@ -146,7 +146,7 @@ const (
 	SingletonsTemplateIDUsernameSuggestionSettings              SingletonsTemplateID = "username_suggestion_settings"
 )
 
-var SingletonsTemplateIDValues = []SingletonsTemplateID{
+var SingletonsTemplateIDValues = [...]SingletonsTemplateID{
 	SingletonsTemplateIDAccessibilityClientSettings,
 	SingletonsTemplateIDAdditiveSceneSettings,
 	SingletonsTemplateIDAddressablePokemonSettings,

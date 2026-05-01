@@ -13,7 +13,7 @@ const (
 	PokemonScaleSettingsTemplateIDPokemonScaleSettingsRaidBossScale      PokemonScaleSettingsTemplateID = "POKEMON_SCALE_SETTINGS_RAID_BOSS_SCALE"
 )
 
-var PokemonScaleSettingsTemplateIDValues = []PokemonScaleSettingsTemplateID{
+var PokemonScaleSettingsTemplateIDValues = [...]PokemonScaleSettingsTemplateID{
 	PokemonScaleSettingsTemplateIDPokemonScaleSettingsBattlePokemonScale,
 	PokemonScaleSettingsTemplateIDPokemonScaleSettingsGuiScale,
 	PokemonScaleSettingsTemplateIDPokemonScaleSettingsGymTopperScale,

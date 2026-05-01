@@ -11,7 +11,7 @@ const (
 	PokemonHomeEnergyCostsTemplateIDEnergyCostsPokemonClassUltraBeast PokemonHomeEnergyCostsTemplateID = "ENERGY_COSTS_POKEMON_CLASS_ULTRA_BEAST"
 )
 
-var PokemonHomeEnergyCostsTemplateIDValues = []PokemonHomeEnergyCostsTemplateID{
+var PokemonHomeEnergyCostsTemplateIDValues = [...]PokemonHomeEnergyCostsTemplateID{
 	PokemonHomeEnergyCostsTemplateIDEnergyCostsPokemonClassLegendary,
 	PokemonHomeEnergyCostsTemplateIDEnergyCostsPokemonClassMythic,
 	PokemonHomeEnergyCostsTemplateIDEnergyCostsPokemonClassNormal,

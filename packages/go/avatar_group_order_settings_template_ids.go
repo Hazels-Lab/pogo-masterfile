@@ -9,7 +9,7 @@ const (
 	AvatarGroupOrderSettingsTemplateIDAvatarGroupSettings      AvatarGroupOrderSettingsTemplateID = "AVATAR_GROUP_SETTINGS"
 )
 
-var AvatarGroupOrderSettingsTemplateIDValues = []AvatarGroupOrderSettingsTemplateID{
+var AvatarGroupOrderSettingsTemplateIDValues = [...]AvatarGroupOrderSettingsTemplateID{
 	AvatarGroupOrderSettingsTemplateIDAvatarGroupOrderSettings,
 	AvatarGroupOrderSettingsTemplateIDAvatarGroupSettings,
 }

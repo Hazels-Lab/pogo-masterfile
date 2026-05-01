@@ -338,7 +338,7 @@ const (
 	MoveSequenceSettingsTemplateIDSequenceZenHeadbuttFast       MoveSequenceSettingsTemplateID = "sequence_zen_headbutt_fast"
 )
 
-var MoveSequenceSettingsTemplateIDValues = []MoveSequenceSettingsTemplateID{
+var MoveSequenceSettingsTemplateIDValues = [...]MoveSequenceSettingsTemplateID{
 	MoveSequenceSettingsTemplateIDSequenceAcidFast,
 	MoveSequenceSettingsTemplateIDSequenceAcidSpray,
 	MoveSequenceSettingsTemplateIDSequenceAcrobatics,

@@ -20,7 +20,7 @@ const (
 	IapCategoryDisplayTemplateIDIapCategoryUpgrades          IapCategoryDisplayTemplateID = "IAP_CATEGORY_UPGRADES"
 )
 
-var IapCategoryDisplayTemplateIDValues = []IapCategoryDisplayTemplateID{
+var IapCategoryDisplayTemplateIDValues = [...]IapCategoryDisplayTemplateID{
 	IapCategoryDisplayTemplateIDIapCategoryAvatar,
 	IapCategoryDisplayTemplateIDIapCategoryBundle,
 	IapCategoryDisplayTemplateIDIapCategoryFlairBundle,

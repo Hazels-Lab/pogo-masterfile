@@ -9,7 +9,7 @@ const (
 	PartyPlayGeneralSettingsTemplateIDWeeklyChallengeGeneralSettings PartyPlayGeneralSettingsTemplateID = "WEEKLY_CHALLENGE_GENERAL_SETTINGS"
 )
 
-var PartyPlayGeneralSettingsTemplateIDValues = []PartyPlayGeneralSettingsTemplateID{
+var PartyPlayGeneralSettingsTemplateIDValues = [...]PartyPlayGeneralSettingsTemplateID{
 	PartyPlayGeneralSettingsTemplateIDPartyPlayGeneralSettings,
 	PartyPlayGeneralSettingsTemplateIDWeeklyChallengeGeneralSettings,
 }

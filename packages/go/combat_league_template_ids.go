@@ -112,7 +112,7 @@ const (
 	CombatLeagueTemplateIDCombatLeagueVsSeekerWillpower               CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_WILLPOWER"
 )
 
-var CombatLeagueTemplateIDValues = []CombatLeagueTemplateID{
+var CombatLeagueTemplateIDValues = [...]CombatLeagueTemplateID{
 	CombatLeagueTemplateIDCombatLeagueDefaultGreat,
 	CombatLeagueTemplateIDCombatLeagueDefaultMaster,
 	CombatLeagueTemplateIDCombatLeagueDefaultUltra,

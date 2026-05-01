@@ -13,7 +13,7 @@ const (
 	FriendshipMilestoneSettingsTemplateIDFriendshipLevel5 FriendshipMilestoneSettingsTemplateID = "FRIENDSHIP_LEVEL_5"
 )
 
-var FriendshipMilestoneSettingsTemplateIDValues = []FriendshipMilestoneSettingsTemplateID{
+var FriendshipMilestoneSettingsTemplateIDValues = [...]FriendshipMilestoneSettingsTemplateID{
 	FriendshipMilestoneSettingsTemplateIDFriendshipLevel0,
 	FriendshipMilestoneSettingsTemplateIDFriendshipLevel1,
 	FriendshipMilestoneSettingsTemplateIDFriendshipLevel2,

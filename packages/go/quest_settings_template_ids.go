@@ -10,7 +10,7 @@ const (
 	QuestSettingsTemplateIDQuestFirstRouteOfTheDay    QuestSettingsTemplateID = "QUEST_FIRST_ROUTE_OF_THE_DAY"
 )
 
-var QuestSettingsTemplateIDValues = []QuestSettingsTemplateID{
+var QuestSettingsTemplateIDValues = [...]QuestSettingsTemplateID{
 	QuestSettingsTemplateIDQuestFirstCatchOfTheDay,
 	QuestSettingsTemplateIDQuestFirstPokestopOfTheDay,
 	QuestSettingsTemplateIDQuestFirstRouteOfTheDay,

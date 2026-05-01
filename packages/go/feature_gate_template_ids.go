@@ -21,7 +21,7 @@ const (
 	FeatureGateTemplateIDVnextPreResponseInputBlockingBehaviorFeatureGate FeatureGateTemplateID = "VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE"
 )
 
-var FeatureGateTemplateIDValues = []FeatureGateTemplateID{
+var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDAdminGmNiaOpsOnlyFilterAmsFeatureGate,
 	FeatureGateTemplateIDAmsFeatureGate,
 	FeatureGateTemplateIDAmsFrontendFeatureGate,

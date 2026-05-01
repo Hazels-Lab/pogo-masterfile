@@ -10,7 +10,7 @@ const (
 	LanguageSettingsTemplateIDLatam      LanguageSettingsTemplateID = "LATAM"
 )
 
-var LanguageSettingsTemplateIDValues = []LanguageSettingsTemplateID{
+var LanguageSettingsTemplateIDValues = [...]LanguageSettingsTemplateID{
 	LanguageSettingsTemplateIDHindi,
 	LanguageSettingsTemplateIDIndonesian,
 	LanguageSettingsTemplateIDLatam,

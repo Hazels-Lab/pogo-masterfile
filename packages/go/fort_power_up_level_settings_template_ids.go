@@ -11,7 +11,7 @@ const (
 	FortPowerUpLevelSettingsTemplateIDFortPowerUpLevel3 FortPowerUpLevelSettingsTemplateID = "FORT_POWER_UP_LEVEL_3"
 )
 
-var FortPowerUpLevelSettingsTemplateIDValues = []FortPowerUpLevelSettingsTemplateID{
+var FortPowerUpLevelSettingsTemplateIDValues = [...]FortPowerUpLevelSettingsTemplateID{
 	FortPowerUpLevelSettingsTemplateIDFortPowerUpLevel0,
 	FortPowerUpLevelSettingsTemplateIDFortPowerUpLevel1,
 	FortPowerUpLevelSettingsTemplateIDFortPowerUpLevel2,

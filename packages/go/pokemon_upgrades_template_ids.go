@@ -9,7 +9,7 @@ const (
 	PokemonUpgradesTemplateIDPokemonUpgradeSettings                              PokemonUpgradesTemplateID = "POKEMON_UPGRADE_SETTINGS"
 )
 
-var PokemonUpgradesTemplateIDValues = []PokemonUpgradesTemplateID{
+var PokemonUpgradesTemplateIDValues = [...]PokemonUpgradesTemplateID{
 	PokemonUpgradesTemplateIDPokemonUpgradeOverrideSettingsV0890PokemonEternatus,
 	PokemonUpgradesTemplateIDPokemonUpgradeSettings,
 }

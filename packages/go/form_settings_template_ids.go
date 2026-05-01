@@ -1032,7 +1032,7 @@ const (
 	FormSettingsTemplateIDFormsV1025PokemonPecharunt    FormSettingsTemplateID = "FORMS_V1025_POKEMON_PECHARUNT"
 )
 
-var FormSettingsTemplateIDValues = []FormSettingsTemplateID{
+var FormSettingsTemplateIDValues = [...]FormSettingsTemplateID{
 	FormSettingsTemplateIDFormsV0001PokemonBulbasaur,
 	FormSettingsTemplateIDFormsV0002PokemonIvysaur,
 	FormSettingsTemplateIDFormsV0003PokemonVenusaur,

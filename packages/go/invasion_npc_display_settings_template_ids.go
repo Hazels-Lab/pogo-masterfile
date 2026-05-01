@@ -74,7 +74,7 @@ const (
 	InvasionNpcDisplaySettingsTemplateIDCharacterWillowb                 InvasionNpcDisplaySettingsTemplateID = "CHARACTER_WILLOWB"
 )
 
-var InvasionNpcDisplaySettingsTemplateIDValues = []InvasionNpcDisplaySettingsTemplateID{
+var InvasionNpcDisplaySettingsTemplateIDValues = [...]InvasionNpcDisplaySettingsTemplateID{
 	InvasionNpcDisplaySettingsTemplateIDCharacterBlanche,
 	InvasionNpcDisplaySettingsTemplateIDCharacterBugGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterBugGruntMale,

@@ -2471,7 +2471,7 @@ const (
 	PokemonExtendedSettingsTemplateIDExtendedV999PokemonGimmighoul                       PokemonExtendedSettingsTemplateID = "EXTENDED_V999_POKEMON_GIMMIGHOUL"
 )
 
-var PokemonExtendedSettingsTemplateIDValues = []PokemonExtendedSettingsTemplateID{
+var PokemonExtendedSettingsTemplateIDValues = [...]PokemonExtendedSettingsTemplateID{
 	PokemonExtendedSettingsTemplateIDExtendedV0001PokemonBulbasaur,
 	PokemonExtendedSettingsTemplateIDExtendedV0001PokemonBulbasaurFall2019,
 	PokemonExtendedSettingsTemplateIDExtendedV0001PokemonBulbasaurNormal,

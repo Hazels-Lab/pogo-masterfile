@@ -14,7 +14,7 @@ const (
 	BuddyEmotionLevelSettingsTemplateIDBuddyEmotionLevel6 BuddyEmotionLevelSettingsTemplateID = "BUDDY_EMOTION_LEVEL_6"
 )
 
-var BuddyEmotionLevelSettingsTemplateIDValues = []BuddyEmotionLevelSettingsTemplateID{
+var BuddyEmotionLevelSettingsTemplateIDValues = [...]BuddyEmotionLevelSettingsTemplateID{
 	BuddyEmotionLevelSettingsTemplateIDBuddyEmotionLevel0,
 	BuddyEmotionLevelSettingsTemplateIDBuddyEmotionLevel1,
 	BuddyEmotionLevelSettingsTemplateIDBuddyEmotionLevel2,

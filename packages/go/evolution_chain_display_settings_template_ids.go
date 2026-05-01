@@ -86,7 +86,7 @@ const (
 	EvolutionChainDisplaySettingsTemplateIDEvolutionV1013PokemonSinistcha    EvolutionChainDisplaySettingsTemplateID = "EVOLUTION_V1013_POKEMON_SINISTCHA"
 )
 
-var EvolutionChainDisplaySettingsTemplateIDValues = []EvolutionChainDisplaySettingsTemplateID{
+var EvolutionChainDisplaySettingsTemplateIDValues = [...]EvolutionChainDisplaySettingsTemplateID{
 	EvolutionChainDisplaySettingsTemplateIDEvolutionV0052PokemonMeowth,
 	EvolutionChainDisplaySettingsTemplateIDEvolutionV0083PokemonFarfetchd,
 	EvolutionChainDisplaySettingsTemplateIDEvolutionV0122PokemonMrMime,

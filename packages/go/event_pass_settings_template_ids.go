@@ -9,7 +9,7 @@ const (
 	EventPassSettingsTemplateIDEventPassSteeledresolve2026Event EventPassSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT"
 )
 
-var EventPassSettingsTemplateIDValues = []EventPassSettingsTemplateID{
+var EventPassSettingsTemplateIDValues = [...]EventPassSettingsTemplateID{
 	EventPassSettingsTemplateIDEventPassApril2026Season,
 	EventPassSettingsTemplateIDEventPassSteeledresolve2026Event,
 }

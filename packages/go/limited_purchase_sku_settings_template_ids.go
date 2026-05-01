@@ -41,7 +41,7 @@ const (
 	LimitedPurchaseSkuSettingsTemplateIDLpskuWeeklyBallsGeneral2Medium1     LimitedPurchaseSkuSettingsTemplateID = "LPSKU_weekly_balls.general2.medium.1"
 )
 
-var LimitedPurchaseSkuSettingsTemplateIDValues = []LimitedPurchaseSkuSettingsTemplateID{
+var LimitedPurchaseSkuSettingsTemplateIDValues = [...]LimitedPurchaseSkuSettingsTemplateID{
 	LimitedPurchaseSkuSettingsTemplateIDLpskuBundleFlairFirsttime1,
 	LimitedPurchaseSkuSettingsTemplateIDLpskuBundleGeneral1Free1,
 	LimitedPurchaseSkuSettingsTemplateIDLpskuBundleGeneral1Medium1,

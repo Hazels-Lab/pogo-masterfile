@@ -29,7 +29,7 @@ const (
 	ItemExpirationSettingsTemplateIDItemExpirationItemWildBallPremier            ItemExpirationSettingsTemplateID = "ITEM_EXPIRATION_ITEM_WILD_BALL_PREMIER"
 )
 
-var ItemExpirationSettingsTemplateIDValues = []ItemExpirationSettingsTemplateID{
+var ItemExpirationSettingsTemplateIDValues = [...]ItemExpirationSettingsTemplateID{
 	ItemExpirationSettingsTemplateIDItemExpirationItemEventPassPointGoFest01,
 	ItemExpirationSettingsTemplateIDItemExpirationItemEventPassPointGoFest02,
 	ItemExpirationSettingsTemplateIDItemExpirationItemEventPassPointGoTour01,

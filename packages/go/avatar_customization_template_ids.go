@@ -1764,7 +1764,7 @@ const (
 	AvatarCustomizationTemplateIDAvatarMSocksSwshuniformdragon             AvatarCustomizationTemplateID = "AVATAR_m_socks_swshuniformdragon"
 )
 
-var AvatarCustomizationTemplateIDValues = []AvatarCustomizationTemplateID{
+var AvatarCustomizationTemplateIDValues = [...]AvatarCustomizationTemplateID{
 	AvatarCustomizationTemplateIDAvatarFBackpackAlolaitemslittenbp,
 	AvatarCustomizationTemplateIDAvatarFBackpackAlolaitemspoppliobp,
 	AvatarCustomizationTemplateIDAvatarFBackpackAlolaitemsrowletbp,

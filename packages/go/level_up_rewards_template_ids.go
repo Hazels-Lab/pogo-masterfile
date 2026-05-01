@@ -104,7 +104,7 @@ const (
 	LevelUpRewardsTemplateIDBackfillAwardsLevel70 LevelUpRewardsTemplateID = "BACKFILL_AWARDS_LEVEL_70"
 )
 
-var LevelUpRewardsTemplateIDValues = []LevelUpRewardsTemplateID{
+var LevelUpRewardsTemplateIDValues = [...]LevelUpRewardsTemplateID{
 	LevelUpRewardsTemplateIDAwardsLevel10,
 	LevelUpRewardsTemplateIDAwardsLevel11,
 	LevelUpRewardsTemplateIDAwardsLevel12,

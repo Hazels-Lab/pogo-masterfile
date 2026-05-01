@@ -62,7 +62,7 @@ const (
 	ClientQuestTemplateTemplateIDWeeklyChallengePartyQuestWeek4 ClientQuestTemplateTemplateID = "WEEKLY_CHALLENGE_PARTY_QUEST_WEEK4"
 )
 
-var ClientQuestTemplateTemplateIDValues = []ClientQuestTemplateTemplateID{
+var ClientQuestTemplateTemplateIDValues = [...]ClientQuestTemplateTemplateID{
 	ClientQuestTemplateTemplateIDLevel71Cap,
 	ClientQuestTemplateTemplateIDLevel71CapSub0,
 	ClientQuestTemplateTemplateIDLevel71CapSub1,

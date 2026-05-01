@@ -1650,7 +1650,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplaySetZacostumeB                        AvatarItemDisplayTemplateID = "N_DISPLAY_set_zacostume_b"
 )
 
-var AvatarItemDisplayTemplateIDValues = []AvatarItemDisplayTemplateID{
+var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayMBackpackEggbackpack0,
 	AvatarItemDisplayTemplateIDNDisplayMBackpackEggbackpack1,
 	AvatarItemDisplayTemplateIDNDisplayMBackpackEggbackpack2,

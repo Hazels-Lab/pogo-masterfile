@@ -325,7 +325,7 @@ const (
 	CombatMoveTemplateIDCombatV0494MoveGigatonHammer         CombatMoveTemplateID = "COMBAT_V0494_MOVE_GIGATON_HAMMER"
 )
 
-var CombatMoveTemplateIDValues = []CombatMoveTemplateID{
+var CombatMoveTemplateIDValues = [...]CombatMoveTemplateID{
 	CombatMoveTemplateIDCombatV0013MoveWrap,
 	CombatMoveTemplateIDCombatV0014MoveHyperBeam,
 	CombatMoveTemplateIDCombatV0016MoveDarkPulse,

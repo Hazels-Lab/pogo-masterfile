@@ -12,7 +12,7 @@ const (
 	TappableSettingsTemplateIDTappableTypePokeball      TappableSettingsTemplateID = "TAPPABLE_TYPE_POKEBALL"
 )
 
-var TappableSettingsTemplateIDValues = []TappableSettingsTemplateID{
+var TappableSettingsTemplateIDValues = [...]TappableSettingsTemplateID{
 	TappableSettingsTemplateIDTappableSettings,
 	TappableSettingsTemplateIDTappableSettingsBreakfast,
 	TappableSettingsTemplateIDTappableTypeHat,

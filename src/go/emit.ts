@@ -374,7 +374,10 @@ function emitGoConstBlock(typeName: string, idsToVariants: Map<string, string>):
 
 	const valuesLines = constNames.map((n) => `\t${n},`).join("\n");
 
-	return `const (\n${constLines}\n)\n\nvar ${typeName}Values = []${typeName}{\n${valuesLines}\n}`;
+	// `[...]T{…}` is a fixed-size array literal — Go computes the length at
+	// compile time. Stronger type info than `[]T` and lets `len(Values)` be a
+	// constant; consumers wanting a slice convert with `Values[:]`.
+	return `const (\n${constLines}\n)\n\nvar ${typeName}Values = [...]${typeName}{\n${valuesLines}\n}`;
 }
 
 export function emitGroupTemplateIdsFile(group: Group): string {

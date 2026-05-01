@@ -110,7 +110,7 @@ const (
 	MegaEvoLevelSettingsTemplateIDMegaEvolutionLevel4V0687PokemonMalamar    MegaEvoLevelSettingsTemplateID = "MEGA_EVOLUTION_LEVEL_4_V0687_POKEMON_MALAMAR"
 )
 
-var MegaEvoLevelSettingsTemplateIDValues = []MegaEvoLevelSettingsTemplateID{
+var MegaEvoLevelSettingsTemplateIDValues = [...]MegaEvoLevelSettingsTemplateID{
 	MegaEvoLevelSettingsTemplateIDMegaEvolutionLevel0,
 	MegaEvoLevelSettingsTemplateIDMegaEvolutionLevel0V0015PokemonBeedrill,
 	MegaEvoLevelSettingsTemplateIDMegaEvolutionLevel0V0018PokemonPidgeot,

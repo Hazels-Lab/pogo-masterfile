@@ -10,7 +10,7 @@ const (
 	CombatNpcPersonalityTemplateIDTrainerPersonalityMedium CombatNpcPersonalityTemplateID = "TRAINER_PERSONALITY_MEDIUM"
 )
 
-var CombatNpcPersonalityTemplateIDValues = []CombatNpcPersonalityTemplateID{
+var CombatNpcPersonalityTemplateIDValues = [...]CombatNpcPersonalityTemplateID{
 	CombatNpcPersonalityTemplateIDTrainerPersonalityEasy,
 	CombatNpcPersonalityTemplateIDTrainerPersonalityHard,
 	CombatNpcPersonalityTemplateIDTrainerPersonalityMedium,

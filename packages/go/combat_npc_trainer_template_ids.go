@@ -16,7 +16,7 @@ const (
 	CombatNpcTrainerTemplateIDTrainerSparkUltra    CombatNpcTrainerTemplateID = "TRAINER_SPARK_ULTRA"
 )
 
-var CombatNpcTrainerTemplateIDValues = []CombatNpcTrainerTemplateID{
+var CombatNpcTrainerTemplateIDValues = [...]CombatNpcTrainerTemplateID{
 	CombatNpcTrainerTemplateIDTrainerBlancheGreat,
 	CombatNpcTrainerTemplateIDTrainerBlancheMaster,
 	CombatNpcTrainerTemplateIDTrainerBlancheUltra,

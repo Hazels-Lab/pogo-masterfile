@@ -15,7 +15,7 @@ const (
 	BuddyActivityCategorySettingsTemplateIDBuddyCategoryWalk     BuddyActivityCategorySettingsTemplateID = "BUDDY_CATEGORY_WALK"
 )
 
-var BuddyActivityCategorySettingsTemplateIDValues = []BuddyActivityCategorySettingsTemplateID{
+var BuddyActivityCategorySettingsTemplateIDValues = [...]BuddyActivityCategorySettingsTemplateID{
 	BuddyActivityCategorySettingsTemplateIDBuddyCategoryBattle,
 	BuddyActivityCategorySettingsTemplateIDBuddyCategoryBonus,
 	BuddyActivityCategorySettingsTemplateIDBuddyCategoryCare,

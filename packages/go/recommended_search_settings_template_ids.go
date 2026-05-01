@@ -17,7 +17,7 @@ const (
 	RecommendedSearchSettingsTemplateIDRecommendedSearchPokemonTypeNormal        RecommendedSearchSettingsTemplateID = "RECOMMENDED_SEARCH_POKEMON_TYPE_NORMAL"
 )
 
-var RecommendedSearchSettingsTemplateIDValues = []RecommendedSearchSettingsTemplateID{
+var RecommendedSearchSettingsTemplateIDValues = [...]RecommendedSearchSettingsTemplateID{
 	RecommendedSearchSettingsTemplateIDRecommendedSearchAppraisalIvHigh,
 	RecommendedSearchSettingsTemplateIDRecommendedSearchAppraisalIvLow,
 	RecommendedSearchSettingsTemplateIDRecommendedSearchAppraisalLabelEvolveMega,

@@ -25,7 +25,7 @@ const (
 	TypeEffectiveTemplateIDPokemonTypeWater    TypeEffectiveTemplateID = "POKEMON_TYPE_WATER"
 )
 
-var TypeEffectiveTemplateIDValues = []TypeEffectiveTemplateID{
+var TypeEffectiveTemplateIDValues = [...]TypeEffectiveTemplateID{
 	TypeEffectiveTemplateIDPokemonTypeBug,
 	TypeEffectiveTemplateIDPokemonTypeDark,
 	TypeEffectiveTemplateIDPokemonTypeDragon,

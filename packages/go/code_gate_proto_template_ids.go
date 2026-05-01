@@ -20,7 +20,7 @@ const (
 	CodeGateProtoTemplateIDUseGmtSkuDataCodeGate                     CodeGateProtoTemplateID = "USE_GMT_SKU_DATA_CODE_GATE"
 )
 
-var CodeGateProtoTemplateIDValues = []CodeGateProtoTemplateID{
+var CodeGateProtoTemplateIDValues = [...]CodeGateProtoTemplateID{
 	CodeGateProtoTemplateIDBattleAccessibilityCodeGate,
 	CodeGateProtoTemplateIDBattleRewardsCodeGate,
 	CodeGateProtoTemplateIDCombatVnextCodeGate,

@@ -16,7 +16,7 @@ const (
 	NonCombatMoveSettingsTemplateIDNonCombatV0482MoveDynamaxCannon  NonCombatMoveSettingsTemplateID = "NON_COMBAT_V0482_MOVE_DYNAMAX_CANNON"
 )
 
-var NonCombatMoveSettingsTemplateIDValues = []NonCombatMoveSettingsTemplateID{
+var NonCombatMoveSettingsTemplateIDValues = [...]NonCombatMoveSettingsTemplateID{
 	NonCombatMoveSettingsTemplateIDNonCombatV0388MoveSpacialRend,
 	NonCombatMoveSettingsTemplateIDNonCombatV0394MoveRoarOfTime,
 	NonCombatMoveSettingsTemplateIDNonCombatV0404MoveSunsteelStrike,

@@ -876,7 +876,7 @@ const (
 	BadgeSettingsTemplateIDBadgeYokosuka31Aug2018Verny                      BadgeSettingsTemplateID = "BADGE_YOKOSUKA_31_AUG_2018_VERNY"
 )
 
-var BadgeSettingsTemplateIDValues = []BadgeSettingsTemplateID{
+var BadgeSettingsTemplateIDValues = [...]BadgeSettingsTemplateID{
 	BadgeSettingsTemplateIDBadge7DayStreaks,
 	BadgeSettingsTemplateIDBadgeAa2023JejuDay00,
 	BadgeSettingsTemplateIDBadgeAa2023JejuDay01,

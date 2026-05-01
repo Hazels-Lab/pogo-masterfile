@@ -191,7 +191,7 @@ const (
 	LocationCardSettingsTemplateIDLcTokmunStamp03                                         LocationCardSettingsTemplateID = "LC_TOKMUN_STAMP_03"
 )
 
-var LocationCardSettingsTemplateIDValues = []LocationCardSettingsTemplateID{
+var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLc2023BarcelonaCitysafari001,
 	LocationCardSettingsTemplateIDLc2023JejuAiradventures001,
 	LocationCardSettingsTemplateIDLc2023LasvegasGotour001,

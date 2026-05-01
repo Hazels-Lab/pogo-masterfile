@@ -52,7 +52,7 @@ const (
 	PhotoSetsSettingsProtoTemplateIDPhotoSetWinterVibes                     PhotoSetsSettingsProtoTemplateID = "PHOTO_SET_WINTER_VIBES"
 )
 
-var PhotoSetsSettingsProtoTemplateIDValues = []PhotoSetsSettingsProtoTemplateID{
+var PhotoSetsSettingsProtoTemplateIDValues = [...]PhotoSetsSettingsProtoTemplateID{
 	PhotoSetsSettingsProtoTemplateIDPhotoSetAlola,
 	PhotoSetsSettingsProtoTemplateIDPhotoSetAncientFossils,
 	PhotoSetsSettingsProtoTemplateIDPhotoSetBattlePokemon,

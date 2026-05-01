@@ -10,7 +10,7 @@ const (
 	RollBackTemplateIDSingleRollShinyRateRollBack                  RollBackTemplateID = "SINGLE_ROLL_SHINY_RATE_ROLL_BACK"
 )
 
-var RollBackTemplateIDValues = []RollBackTemplateID{
+var RollBackTemplateIDValues = [...]RollBackTemplateID{
 	RollBackTemplateIDAndroidSensorsRollBack,
 	RollBackTemplateIDBidirectionalFpWeeklyChallengeRewardRollBack,
 	RollBackTemplateIDSingleRollShinyRateRollBack,

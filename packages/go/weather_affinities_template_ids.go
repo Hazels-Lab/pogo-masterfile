@@ -14,7 +14,7 @@ const (
 	WeatherAffinitiesTemplateIDWeatherAffinityWindy        WeatherAffinitiesTemplateID = "WEATHER_AFFINITY_WINDY"
 )
 
-var WeatherAffinitiesTemplateIDValues = []WeatherAffinitiesTemplateID{
+var WeatherAffinitiesTemplateIDValues = [...]WeatherAffinitiesTemplateID{
 	WeatherAffinitiesTemplateIDWeatherAffinityClear,
 	WeatherAffinitiesTemplateIDWeatherAffinityFog,
 	WeatherAffinitiesTemplateIDWeatherAffinityOvercast,

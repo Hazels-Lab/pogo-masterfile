@@ -28,7 +28,7 @@ const (
 	CombatRankingProtoSettingsTemplateIDCombatRankingSettingsS9  CombatRankingProtoSettingsTemplateID = "COMBAT_RANKING_SETTINGS_S9"
 )
 
-var CombatRankingProtoSettingsTemplateIDValues = []CombatRankingProtoSettingsTemplateID{
+var CombatRankingProtoSettingsTemplateIDValues = [...]CombatRankingProtoSettingsTemplateID{
 	CombatRankingProtoSettingsTemplateIDCombatRankingSettings,
 	CombatRankingProtoSettingsTemplateIDCombatRankingSettingsS10,
 	CombatRankingProtoSettingsTemplateIDCombatRankingSettingsS13,

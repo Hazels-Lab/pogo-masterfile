@@ -18,7 +18,7 @@ describe("emitGroupTemplateIdsFile", () => {
 		expect(out).toContain('TypeEffectiveTemplateID = "POKEMON_TYPE_BUG"');
 		expect(out).toContain("TypeEffectiveTemplateIDPokemonTypeDark");
 		expect(out).toContain('TypeEffectiveTemplateID = "POKEMON_TYPE_DARK"');
-		expect(out).toContain("var TypeEffectiveTemplateIDValues = []TypeEffectiveTemplateID{");
+		expect(out).toContain("var TypeEffectiveTemplateIDValues = [...]TypeEffectiveTemplateID{");
 	});
 });
 
@@ -30,6 +30,6 @@ describe("emitSingletonsTemplateIdsFile", () => {
 
 		expect(out).toContain('// Generated from Pokémon GO masterfile — singletons templateIds.');
 		expect(out).toContain("type SingletonsTemplateID string");
-		expect(out).toContain("var SingletonsTemplateIDValues = []SingletonsTemplateID{");
+		expect(out).toContain("var SingletonsTemplateIDValues = [...]SingletonsTemplateID{");
 	});
 });

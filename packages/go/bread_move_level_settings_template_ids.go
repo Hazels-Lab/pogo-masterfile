@@ -14,7 +14,7 @@ const (
 	BreadMoveLevelSettingsTemplateIDBreadMoveLevelSettingsGroupZ BreadMoveLevelSettingsTemplateID = "BREAD_MOVE_LEVEL_SETTINGS_GROUP_Z"
 )
 
-var BreadMoveLevelSettingsTemplateIDValues = []BreadMoveLevelSettingsTemplateID{
+var BreadMoveLevelSettingsTemplateIDValues = [...]BreadMoveLevelSettingsTemplateID{
 	BreadMoveLevelSettingsTemplateIDBreadMoveLevelSettingsGroup1,
 	BreadMoveLevelSettingsTemplateIDBreadMoveLevelSettingsGroup2,
 	BreadMoveLevelSettingsTemplateIDBreadMoveLevelSettingsGroup3,

@@ -25,7 +25,7 @@ const (
 	CombatTypeTemplateIDCombatPokemonTypeWater    CombatTypeTemplateID = "COMBAT_POKEMON_TYPE_WATER"
 )
 
-var CombatTypeTemplateIDValues = []CombatTypeTemplateID{
+var CombatTypeTemplateIDValues = [...]CombatTypeTemplateID{
 	CombatTypeTemplateIDCombatPokemonTypeBug,
 	CombatTypeTemplateIDCombatPokemonTypeDark,
 	CombatTypeTemplateIDCombatPokemonTypeDragon,
