@@ -183,9 +183,9 @@ function isStubGroup(group: Group): boolean {
 }
 
 // Boilerplate Entry/EntryData pair for a discriminator with payload. Mirrors
-// the Rust macro output but inline (Go has no macros). The unexported
-// `isMasterfileEntry()` method makes Entry types satisfy the `MasterfileEntry`
-// interface in masterfile.go — sealed-trait-style dispatch.
+// the Rust macro output but inline (Go has no macros). The exported
+// `MasterfileEntry()` marker method makes Entry types satisfy the
+// `MasterfileEntry` interface in masterfile.go.
 function entryWrapper(baseName: string, payloadJsonKey: string): string {
 	const goPayloadField = pascalCase(payloadJsonKey);
 	return [
@@ -194,7 +194,7 @@ function entryWrapper(baseName: string, payloadJsonKey: string): string {
 		`\tData       ${baseName}EntryData \`json:"data"\``,
 		`}`,
 		``,
-		`func (${baseName}Entry) isMasterfileEntry() {}`,
+		`func (${baseName}Entry) MasterfileEntry() {}`,
 		``,
 		`type ${baseName}EntryData struct {`,
 		`\tTemplateID     string \`json:"templateId"\``,
@@ -210,7 +210,7 @@ function stubEntryWrapper(baseName: string): string {
 		`\tData       ${baseName}EntryData \`json:"data"\``,
 		`}`,
 		``,
-		`func (${baseName}Entry) isMasterfileEntry() {}`,
+		`func (${baseName}Entry) MasterfileEntry() {}`,
 		``,
 		`type ${baseName}EntryData struct {`,
 		`\tTemplateID string \`json:"templateId"\``,
@@ -302,11 +302,11 @@ import (
 \t"fmt"
 )
 
-// MasterfileEntry is the sealed interface implemented by every per-discriminator
+// MasterfileEntry is the marker interface implemented by every per-discriminator
 // Entry type generated alongside this file. Use a type switch to extract a
 // concrete entry from a parse result.
 type MasterfileEntry interface {
-\tisMasterfileEntry()
+\tMasterfileEntry()
 }
 
 // ParseMasterfile parses a masterfile JSON byte slice into a slice of typed

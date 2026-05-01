@@ -1,7 +1,7 @@
 import { describe, expect, test } from "bun:test";
 import { MOCK_MASTERFILE } from "../fixtures.ts";
 import { groupEntries } from "../group.ts";
-import { emitGroupTemplateIdsFile, emitSingletonsTemplateIdsFile } from "./emit.ts";
+import { emitGroupModule, emitGroupTemplateIdsFile, emitMasterfileFile, emitSingletonsModule, emitSingletonsTemplateIdsFile } from "./emit.ts";
 
 describe("emitGroupTemplateIdsFile", () => {
 	test("emits typed-string + const block + values slice for a group", () => {
@@ -31,5 +31,23 @@ describe("emitSingletonsTemplateIdsFile", () => {
 		expect(out).toContain('// Generated from Pokémon GO masterfile — singletons templateIds.');
 		expect(out).toContain("type SingletonsTemplateID string");
 		expect(out).toContain("var SingletonsTemplateIDValues = [...]SingletonsTemplateID{");
+	});
+});
+
+describe("entryWrapper marker method", () => {
+	test("uses exported MasterfileEntry marker", () => {
+		const groups = groupEntries(MOCK_MASTERFILE);
+		const typeEffective = groups.get("typeEffective")!;
+		const out = emitGroupModule(typeEffective);
+		expect(out).toContain("func (TypeEffectiveEntry) MasterfileEntry() {}");
+		expect(out).not.toContain("isMasterfileEntry");
+	});
+
+	test("singletons wrappers use the exported marker too", () => {
+		const groups = groupEntries(MOCK_MASTERFILE);
+		const accessibility = groups.get("accessibilitySettings")!;
+		const out = emitSingletonsModule([accessibility]);
+		expect(out).toContain("func (AccessibilitySettingsEntry) MasterfileEntry() {}");
+		expect(out).not.toContain("isMasterfileEntry");
 	});
 });
