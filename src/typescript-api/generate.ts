@@ -3,21 +3,12 @@ import { join } from "node:path";
 import { type Entry, groupEntries } from "../group.ts";
 import { writeOutput } from "../write.ts";
 import { runTsc } from "./build.ts";
-import {
-	SRC_OUT_DIR,
-	TEMPLATES_DIR,
-	TEMPLATES_STUBS_DIR,
-} from "./constants.ts";
+import { SRC_OUT_DIR, TEMPLATES_DIR, TEMPLATES_STUBS_DIR } from "./constants.ts";
 import { emitGroupNames } from "./emit-group-names.ts";
 import { emitIndex } from "./emit-index.ts";
 import { emitLookupTables } from "./emit-lookup-tables.ts";
 
-const TEMPLATE_FILES_TO_COPY = [
-	"errors.ts",
-	"types.ts",
-	"fetch.ts",
-	"masterfile.ts",
-];
+const TEMPLATE_FILES_TO_COPY = ["errors.ts", "types.ts", "fetch.ts", "masterfile.ts"];
 
 export async function generateTypeScriptApi(entries: Entry[]): Promise<void> {
 	const groups = groupEntries(entries);

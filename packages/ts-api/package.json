@@ -13,7 +13,13 @@
 	"bugs": {
 		"url": "https://github.com/<GH_OWNER>/pogo-masterfile-types/issues"
 	},
-	"keywords": ["pokemon-go", "pokemon", "masterfile", "api", "typescript"],
+	"keywords": [
+		"pokemon-go",
+		"pokemon",
+		"masterfile",
+		"api",
+		"typescript"
+	],
 	"type": "module",
 	"sideEffects": false,
 	"main": "./dist/index.js",
@@ -32,7 +38,12 @@
 			"types": "./dist/errors.d.ts"
 		}
 	},
-	"files": ["dist", "README.md", "LICENSE", "CHANGELOG.md"],
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE",
+		"CHANGELOG.md"
+	],
 	"publishConfig": {
 		"access": "public"
 	},

@@ -1,7 +1,7 @@
 import { describe, expect, test } from "bun:test";
 import { Masterfile } from "../../../packages/ts-api/src/masterfile.ts";
 
-const E2E_ENABLED = process.env["BUN_E2E"] === "1";
+const E2E_ENABLED = process.env.BUN_E2E === "1";
 const ifE2E = E2E_ENABLED ? test : test.skip;
 
 describe("Masterfile e2e (gated by BUN_E2E=1)", () => {

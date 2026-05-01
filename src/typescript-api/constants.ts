@@ -10,5 +10,4 @@ export const BUILD_TSCONFIG = join(PACKAGE_DIR, "tsconfig.build.json");
 export const TEMPLATES_DIR = join(REPO_ROOT, "src", "typescript-api", "templates");
 export const TEMPLATES_STUBS_DIR = join(REPO_ROOT, "src", "typescript-api", "templates-stubs");
 
-export const DEFAULT_MASTERFILE_URL =
-	"https://raw.githubusercontent.com/alexelgt/game_masters/refs/heads/master/GAME_MASTER.json";
+export const DEFAULT_MASTERFILE_URL = "https://raw.githubusercontent.com/alexelgt/game_masters/refs/heads/master/GAME_MASTER.json";

@@ -1,25 +1,19 @@
+/** biome-ignore-all lint/suspicious/noUnsafeDeclarationMerging: the Masterfile class+interface merge below intentionally adds per-group accessor properties installed dynamically in the constructor. */
+
 import type { MasterfileEntry } from "pogo-masterfile-types/entries";
 import { EntryNotFoundError } from "./errors";
-import { defaultFetcher, DEFAULT_MASTERFILE_URL } from "./fetch";
+import { DEFAULT_MASTERFILE_URL, defaultFetcher } from "./fetch";
 import { GROUP_NAMES, type GroupName } from "./group-names";
-import type {
-	EntriesByGroup,
-	EntryByTemplateID,
-	TemplateIDsByGroup,
-} from "./lookup-tables";
+import type { EntriesByGroup, EntryByTemplateID, TemplateIDsByGroup } from "./lookup-tables";
 import type { FromRemoteOptions } from "./types";
 
 // ── Group accessor ─────────────────────────────────────────────────────────
 
 export interface GroupAccessor<G extends GroupName> {
-	get<T extends TemplateIDsByGroup[G] & keyof EntryByTemplateID>(
-		templateId: T,
-	): EntryByTemplateID[T];
+	get<T extends TemplateIDsByGroup[G] & keyof EntryByTemplateID>(templateId: T): EntryByTemplateID[T];
 	get(templateId: string): EntriesByGroup[G];
 
-	tryGet<T extends TemplateIDsByGroup[G] & keyof EntryByTemplateID>(
-		templateId: T,
-	): EntryByTemplateID[T] | undefined;
+	tryGet<T extends TemplateIDsByGroup[G] & keyof EntryByTemplateID>(templateId: T): EntryByTemplateID[T] | undefined;
 	tryGet(templateId: string): EntriesByGroup[G] | undefined;
 
 	has(templateId: string): templateId is TemplateIDsByGroup[G] & string;
@@ -27,12 +21,8 @@ export interface GroupAccessor<G extends GroupName> {
 	all(): readonly EntriesByGroup[G][];
 	templateIds(): readonly (TemplateIDsByGroup[G] & string)[];
 
-	find(
-		predicate: (entry: EntriesByGroup[G]) => boolean,
-	): EntriesByGroup[G] | undefined;
-	filter(
-		predicate: (entry: EntriesByGroup[G]) => boolean,
-	): readonly EntriesByGroup[G][];
+	find(predicate: (entry: EntriesByGroup[G]) => boolean): EntriesByGroup[G] | undefined;
+	filter(predicate: (entry: EntriesByGroup[G]) => boolean): readonly EntriesByGroup[G][];
 
 	readonly size: number;
 	[Symbol.iterator](): IterableIterator<EntriesByGroup[G]>;
@@ -55,9 +45,7 @@ export class Masterfile {
 	}
 
 	// ── Loaders ──
-	static async fromRemote(
-		opts: FromRemoteOptions = {},
-	): Promise<Masterfile> {
+	static async fromRemote(opts: FromRemoteOptions = {}): Promise<Masterfile> {
 		const url = opts.url ?? DEFAULT_MASTERFILE_URL;
 		const fetcher = opts.fetcher ?? defaultFetcher;
 		const entries = await fetcher(url, opts.signal);
@@ -69,9 +57,7 @@ export class Masterfile {
 	}
 
 	// ── Core lookups ──
-	getEntry<T extends keyof EntryByTemplateID>(
-		templateId: T,
-	): EntryByTemplateID[T];
+	getEntry<T extends keyof EntryByTemplateID>(templateId: T): EntryByTemplateID[T];
 	getEntry(templateId: string): MasterfileEntry;
 	getEntry(templateId: string): MasterfileEntry {
 		const entry = this.#byTemplateId.get(templateId);
@@ -79,9 +65,7 @@ export class Masterfile {
 		return entry;
 	}
 
-	tryGetEntry<T extends keyof EntryByTemplateID>(
-		templateId: T,
-	): EntryByTemplateID[T] | undefined;
+	tryGetEntry<T extends keyof EntryByTemplateID>(templateId: T): EntryByTemplateID[T] | undefined;
 	tryGetEntry(templateId: string): MasterfileEntry | undefined;
 	tryGetEntry(templateId: string): MasterfileEntry | undefined {
 		return this.#byTemplateId.get(templateId);
@@ -108,9 +92,7 @@ export class Masterfile {
 	// union over 18k+ entries exceeds TS's "expression too complex" threshold.
 	// `templateIds(group)` returns the narrow per-group union.
 	templateIds(): readonly string[];
-	templateIds<G extends GroupName>(
-		group: G,
-	): readonly (TemplateIDsByGroup[G] & string)[];
+	templateIds<G extends GroupName>(group: G): readonly (TemplateIDsByGroup[G] & string)[];
 	templateIds(group?: GroupName): readonly string[] {
 		if (group === undefined) {
 			return [...this.#byTemplateId.keys()];
@@ -143,15 +125,11 @@ export class Masterfile {
 	}
 
 	// ── Top-level search ──
-	find(
-		predicate: (entry: MasterfileEntry) => boolean,
-	): MasterfileEntry | undefined {
+	find(predicate: (entry: MasterfileEntry) => boolean): MasterfileEntry | undefined {
 		return this.#entries.find(predicate);
 	}
 
-	filter(
-		predicate: (entry: MasterfileEntry) => boolean,
-	): readonly MasterfileEntry[] {
+	filter(predicate: (entry: MasterfileEntry) => boolean): readonly MasterfileEntry[] {
 		return this.#entries.filter(predicate);
 	}
 
@@ -195,9 +173,7 @@ export class Masterfile {
 				return entry as EntriesByGroup[G];
 			},
 			tryGet(templateId: string): EntriesByGroup[G] | undefined {
-				return self.#byTemplateId.get(templateId) as
-					| EntriesByGroup[G]
-					| undefined;
+				return self.#byTemplateId.get(templateId) as EntriesByGroup[G] | undefined;
 			},
 			has(templateId: string): templateId is TemplateIDsByGroup[G] & string {
 				const list = self.#byGroup.get(groupName) ?? [];
@@ -207,27 +183,19 @@ export class Masterfile {
 				return (self.#byGroup.get(groupName) ?? []) as unknown as readonly EntriesByGroup[G][];
 			},
 			templateIds(): readonly (TemplateIDsByGroup[G] & string)[] {
-				return (self.#byGroup.get(groupName) ?? []).map(
-					(e) => e.templateId,
-				) as unknown as readonly (TemplateIDsByGroup[G] & string)[];
+				return (self.#byGroup.get(groupName) ?? []).map((e) => e.templateId) as unknown as readonly (TemplateIDsByGroup[G] & string)[];
 			},
 			find(predicate: (e: EntriesByGroup[G]) => boolean) {
-				return ((self.#byGroup.get(groupName) ?? []) as unknown as readonly EntriesByGroup[G][]).find(
-					predicate,
-				);
+				return ((self.#byGroup.get(groupName) ?? []) as unknown as readonly EntriesByGroup[G][]).find(predicate);
 			},
 			filter(predicate: (e: EntriesByGroup[G]) => boolean) {
-				return ((self.#byGroup.get(groupName) ?? []) as unknown as readonly EntriesByGroup[G][]).filter(
-					predicate,
-				);
+				return ((self.#byGroup.get(groupName) ?? []) as unknown as readonly EntriesByGroup[G][]).filter(predicate);
 			},
 			get size() {
 				return (self.#byGroup.get(groupName) ?? []).length;
 			},
 			[Symbol.iterator](): IterableIterator<EntriesByGroup[G]> {
-				return ((self.#byGroup.get(groupName) ?? []) as unknown as EntriesByGroup[G][])[
-					Symbol.iterator
-				]();
+				return ((self.#byGroup.get(groupName) ?? []) as unknown as EntriesByGroup[G][])[Symbol.iterator]();
 			},
 		};
 		(this as unknown as Record<string, unknown>)[groupName] = accessor;

@@ -3,7 +3,9 @@
 	"module": "src/generate.ts",
 	"type": "module",
 	"private": true,
-	"workspaces": ["packages/*"],
+	"workspaces": [
+		"packages/*"
+	],
 	"scripts": {
 		"generate": "bun run src/generate.ts && bun run format && (cd packages/rust && cargo fmt) && (cd packages/go && gofmt -w .)",
 		"test": "bun test",

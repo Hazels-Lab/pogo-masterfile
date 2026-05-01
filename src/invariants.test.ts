@@ -18,7 +18,7 @@ describe("deepEqual", () => {
 		expect(deepEqual("a", "b")).toBe(false);
 		expect(deepEqual(true, false)).toBe(false);
 		expect(deepEqual(null, undefined)).toBe(false);
-		expect(deepEqual(1, "1")).toBe(false);
+		expect(deepEqual<unknown>(1, "1")).toBe(false);
 	});
 
 	test("compares arrays element-wise", () => {

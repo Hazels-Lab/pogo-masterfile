@@ -1,12 +1,7 @@
 import { describe, test } from "bun:test";
 import { expectTypeOf } from "expect-type";
 import type { MasterfileEntry } from "pogo-masterfile-types/entries";
-import type {
-	EntriesByGroup,
-	EntryByTemplateID,
-	GroupName,
-	TemplateIDsByGroup,
-} from "../../../packages/ts-api/src/lookup-tables.d.ts";
+import type { EntriesByGroup, EntryByTemplateID, GroupName, TemplateIDsByGroup } from "../../../packages/ts-api/src/lookup-tables.d.ts";
 import type { Masterfile } from "../../../packages/ts-api/src/masterfile.ts";
 
 // Type-only tests. We never actually execute these probes — `expectTypeOf`
@@ -16,9 +11,7 @@ declare const mf: Masterfile;
 describe("Masterfile type narrowing", () => {
 	test("getEntry narrows on literal templateId", () => {
 		const probe = () => mf.getEntry("V0022_MOVE_MEGAHORN");
-		expectTypeOf(probe).returns.toEqualTypeOf<
-			EntryByTemplateID["V0022_MOVE_MEGAHORN"]
-		>();
+		expectTypeOf(probe).returns.toEqualTypeOf<EntryByTemplateID["V0022_MOVE_MEGAHORN"]>();
 	});
 
 	test("getEntry widens on string", () => {
@@ -28,16 +21,12 @@ describe("Masterfile type narrowing", () => {
 
 	test("tryGetEntry returns T | undefined for literals", () => {
 		const probe = () => mf.tryGetEntry("V0022_MOVE_MEGAHORN");
-		expectTypeOf(probe).returns.toEqualTypeOf<
-			EntryByTemplateID["V0022_MOVE_MEGAHORN"] | undefined
-		>();
+		expectTypeOf(probe).returns.toEqualTypeOf<EntryByTemplateID["V0022_MOVE_MEGAHORN"] | undefined>();
 	});
 
 	test("getGroup returns the narrow group union", () => {
 		const probe = () => mf.getGroup("moveSettings");
-		expectTypeOf(probe).returns.toEqualTypeOf<
-			readonly EntriesByGroup["moveSettings"][]
-		>();
+		expectTypeOf(probe).returns.toEqualTypeOf<readonly EntriesByGroup["moveSettings"][]>();
 	});
 
 	test("groups() returns readonly GroupName[]", () => {
@@ -47,9 +36,7 @@ describe("Masterfile type narrowing", () => {
 
 	test("templateIds(group) narrows", () => {
 		const probe = () => mf.templateIds("moveSettings");
-		expectTypeOf(probe).returns.toEqualTypeOf<
-			readonly (TemplateIDsByGroup["moveSettings"] & string)[]
-		>();
+		expectTypeOf(probe).returns.toEqualTypeOf<readonly (TemplateIDsByGroup["moveSettings"] & string)[]>();
 	});
 
 	test("has() narrows string to keyof EntryByTemplateID", () => {

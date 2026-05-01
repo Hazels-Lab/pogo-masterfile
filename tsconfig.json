@@ -27,5 +27,9 @@
 		"noPropertyAccessFromIndexSignature": false,
 
 		"types": ["bun"]
-	}
+	},
+	// Excludes are package boundaries: packages/ts-api/ and the ts-api templates
+	// have their own tsconfigs and depend on workspace deps (pogo-masterfile-types)
+	// that root-level tsc doesn't see.
+	"exclude": ["node_modules", "packages/ts-api/**", "src/typescript-api/templates/**", "src/typescript-api/templates-stubs/**", "src/typescript-api/tests/**"]
 }

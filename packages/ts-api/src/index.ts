@@ -1,8 +1,8 @@
 // Generated from Pokémon GO masterfile — top-level barrel.
 
-export { Masterfile } from "./masterfile";
+export { EntryNotFoundError, MasterfileFetchError, MasterfileParseError } from "./errors";
+export { DEFAULT_MASTERFILE_URL, defaultFetcher } from "./fetch";
+export type { EntriesByGroup, EntryByTemplateID, GroupName, TemplateIDsByGroup } from "./lookup-tables";
 export type { GroupAccessor } from "./masterfile";
-export { defaultFetcher, DEFAULT_MASTERFILE_URL } from "./fetch";
-export type { FromRemoteOptions, Fetcher } from "./types";
-export { MasterfileFetchError, MasterfileParseError, EntryNotFoundError } from "./errors";
-export type { EntryByTemplateID, EntriesByGroup, TemplateIDsByGroup, GroupName } from "./lookup-tables";
+export { Masterfile } from "./masterfile";
+export type { Fetcher, FromRemoteOptions } from "./types";

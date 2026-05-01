@@ -1,12 +1,6 @@
 import { afterEach, describe, expect, mock, test } from "bun:test";
-import {
-	MasterfileFetchError,
-	MasterfileParseError,
-} from "../../../packages/ts-api/src/errors.ts";
-import {
-	DEFAULT_MASTERFILE_URL,
-	defaultFetcher,
-} from "../../../packages/ts-api/src/fetch.ts";
+import { MasterfileFetchError, MasterfileParseError } from "../../../packages/ts-api/src/errors.ts";
+import { DEFAULT_MASTERFILE_URL, defaultFetcher } from "../../../packages/ts-api/src/fetch.ts";
 import { Masterfile } from "../../../packages/ts-api/src/masterfile.ts";
 import { FIXTURE_ENTRIES } from "./fixture.ts";
 
@@ -44,22 +38,13 @@ describe("defaultFetcher", () => {
 	});
 
 	test("non-2xx throws MasterfileFetchError", async () => {
-		globalThis.fetch = mock(
-			async () =>
-				new Response("not found", { status: 404, statusText: "Not Found" }),
-		);
-		await expect(
-			defaultFetcher("https://example/x", undefined),
-		).rejects.toBeInstanceOf(MasterfileFetchError);
+		globalThis.fetch = mock(async () => new Response("not found", { status: 404, statusText: "Not Found" }));
+		await expect(defaultFetcher("https://example/x", undefined)).rejects.toBeInstanceOf(MasterfileFetchError);
 	});
 
 	test("invalid JSON throws MasterfileParseError", async () => {
-		globalThis.fetch = mock(
-			async () => new Response("not json", { status: 200 }),
-		);
-		await expect(
-			defaultFetcher("https://example/x", undefined),
-		).rejects.toBeInstanceOf(MasterfileParseError);
+		globalThis.fetch = mock(async () => new Response("not json", { status: 200 }));
+		await expect(defaultFetcher("https://example/x", undefined)).rejects.toBeInstanceOf(MasterfileParseError);
 	});
 
 	test("non-array JSON throws MasterfileParseError", async () => {
@@ -70,9 +55,7 @@ describe("defaultFetcher", () => {
 					headers: { "Content-Type": "application/json" },
 				}),
 		);
-		await expect(
-			defaultFetcher("https://example/x", undefined),
-		).rejects.toBeInstanceOf(MasterfileParseError);
+		await expect(defaultFetcher("https://example/x", undefined)).rejects.toBeInstanceOf(MasterfileParseError);
 	});
 
 	test("AbortSignal is forwarded to underlying fetch", async () => {

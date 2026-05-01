@@ -14,12 +14,8 @@ const SINGLETONS_KEY = "singletons";
  * MUST be identical, since this file imports them by name.
  */
 export function emitLookupTables(groups: Map<string, Group>): string {
-	const multiEntry = [...groups.values()]
-		.filter((g) => g.entries.length > 1)
-		.sort((a, b) => a.discriminator.localeCompare(b.discriminator));
-	const singletons = [...groups.values()]
-		.filter((g) => g.entries.length === 1)
-		.sort((a, b) => a.discriminator.localeCompare(b.discriminator));
+	const multiEntry = [...groups.values()].filter((g) => g.entries.length > 1).sort((a, b) => a.discriminator.localeCompare(b.discriminator));
+	const singletons = [...groups.values()].filter((g) => g.entries.length === 1).sort((a, b) => a.discriminator.localeCompare(b.discriminator));
 
 	// Per-entry type-name resolution. For multi-entry groups, the existing TS
 	// emitter calls `deriveGroupAliases(sortedIds, gName)` to compute a suffix
@@ -35,9 +31,7 @@ export function emitLookupTables(groups: Map<string, Group>): string {
 		for (const e of g.entries) {
 			const suffix = aliases.get(e.templateId);
 			if (suffix === undefined) {
-				throw new Error(
-					`emit-lookup-tables: no alias derived for templateId "${e.templateId}" in group "${g.discriminator}"`,
-				);
+				throw new Error(`emit-lookup-tables: no alias derived for templateId "${e.templateId}" in group "${g.discriminator}"`);
 			}
 			entryTypeNameByTemplateId.set(e.templateId, `${gName}${suffix}`);
 		}
@@ -47,9 +41,7 @@ export function emitLookupTables(groups: Map<string, Group>): string {
 		const entry = g.entries[0]!;
 		const dataKeys = Object.keys(entry.data).filter((k) => k !== "templateId");
 		const isStub = dataKeys.length === 0;
-		const name = isStub
-			? aliasSuffix(entry.templateId, "")
-			: groupName(g.discriminator);
+		const name = isStub ? aliasSuffix(entry.templateId, "") : groupName(g.discriminator);
 		entryTypeNameByTemplateId.set(entry.templateId, name);
 	}
 
@@ -65,23 +57,22 @@ export function emitLookupTables(groups: Map<string, Group>): string {
 
 	const allImports = [...new Set([...groupLevelImports, ...entryTypeNameByTemplateId.values()])].sort();
 
-	const importBlock = [
-		`import type {`,
-		...allImports.map((n) => `\t${n},`),
-		`} from "pogo-masterfile-types/entries";`,
-	].join("\n");
+	const importBlock = [`import type {`, ...allImports.map((n) => `\t${n},`), `} from "pogo-masterfile-types/entries";`].join("\n");
 
-	// EntryByTemplateID — sorted by templateId
+	// EntryByTemplateID — sorted by templateId. Keys go unquoted when they're
+	// valid JS identifiers (matches biome formatter's preferred style); quoted
+	// otherwise.
 	const entryByIdLines = [...entryTypeNameByTemplateId.entries()]
 		.sort(([a], [b]) => a.localeCompare(b))
-		.map(([id, name]) => `\t"${id}": ${name};`);
+		.map(([id, name]) => {
+			const key = isValidIdentifier(id) ? id : `"${id}"`;
+			return `\t${key}: ${name};`;
+		});
 
 	// EntriesByGroup
 	const entriesByGroupLines: string[] = [];
 	for (const g of multiEntry) {
-		entriesByGroupLines.push(
-			`\t${g.discriminator}: ${groupName(g.discriminator)}MasterfileEntry;`,
-		);
+		entriesByGroupLines.push(`\t${g.discriminator}: ${groupName(g.discriminator)}MasterfileEntry;`);
 	}
 	if (singletons.length > 0) {
 		entriesByGroupLines.push(`\t${SINGLETONS_KEY}: SingletonsMasterfileEntry;`);
@@ -90,9 +81,7 @@ export function emitLookupTables(groups: Map<string, Group>): string {
 	// TemplateIDsByGroup
 	const templateIdsByGroupLines: string[] = [];
 	for (const g of multiEntry) {
-		templateIdsByGroupLines.push(
-			`\t${g.discriminator}: ${groupName(g.discriminator)}TemplateID;`,
-		);
+		templateIdsByGroupLines.push(`\t${g.discriminator}: ${groupName(g.discriminator)}TemplateID;`);
 	}
 	if (singletons.length > 0) {
 		templateIdsByGroupLines.push(`\t${SINGLETONS_KEY}: SingletonsTemplateID;`);
@@ -116,4 +105,8 @@ export interface TemplateIDsByGroup {
 ${templateIdsByGroupLines.join("\n")}
 }
 `;
+}
+
+function isValidIdentifier(s: string): boolean {
+	return /^[A-Za-z_$][A-Za-z0-9_$]*$/.test(s);
 }

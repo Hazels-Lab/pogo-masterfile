@@ -62,8 +62,6 @@ describe("Per-group accessors", () => {
 
 	test("top-level getEntry equals accessor.get for in-group ID", () => {
 		const mf = Masterfile.fromJson(FIXTURE_ENTRIES);
-		expect(mf.getEntry("V0022_MOVE_MEGAHORN")).toBe(
-			mf.moveSettings.get("V0022_MOVE_MEGAHORN"),
-		);
+		expect(mf.getEntry("V0022_MOVE_MEGAHORN")).toBe(mf.moveSettings.get("V0022_MOVE_MEGAHORN"));
 	});
 });

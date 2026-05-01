@@ -25,6 +25,6 @@ export const GROUP_NAMES = [
 ${arrayLines}
 ] as const;
 
-export type GroupName = typeof GROUP_NAMES[number];
+export type GroupName = (typeof GROUP_NAMES)[number];
 `;
 }

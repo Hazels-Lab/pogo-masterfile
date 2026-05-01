@@ -16,7 +16,4 @@ export interface FromRemoteOptions {
  * an array conforming to `MasterfileEntry[]`. They should propagate `signal`
  * to the underlying fetch so cancellation works.
  */
-export type Fetcher = (
-	url: string,
-	signal?: AbortSignal,
-) => Promise<MasterfileEntry[]>;
+export type Fetcher = (url: string, signal?: AbortSignal) => Promise<MasterfileEntry[]>;

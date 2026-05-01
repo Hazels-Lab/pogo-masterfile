@@ -9,7 +9,7 @@ describe("emitGroupNames", () => {
 		const out = emitGroupNames(groups);
 		expect(out).toContain("export const GROUP_NAMES = [");
 		expect(out).toContain("] as const;");
-		expect(out).toContain("export type GroupName = typeof GROUP_NAMES[number];");
+		expect(out).toContain("export type GroupName = (typeof GROUP_NAMES)[number];");
 	});
 
 	test("entries are alphabetically sorted", () => {

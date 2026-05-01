@@ -2,8 +2,7 @@ import type { MasterfileEntry } from "pogo-masterfile-types/entries";
 import { MasterfileFetchError, MasterfileParseError } from "./errors";
 import type { Fetcher } from "./types";
 
-export const DEFAULT_MASTERFILE_URL =
-	"https://raw.githubusercontent.com/alexelgt/game_masters/refs/heads/master/GAME_MASTER.json";
+export const DEFAULT_MASTERFILE_URL = "https://raw.githubusercontent.com/alexelgt/game_masters/refs/heads/master/GAME_MASTER.json";
 
 /**
  * Default fetcher: standard `fetch` + JSON parse, with shape validation.
@@ -18,10 +17,7 @@ export const defaultFetcher: Fetcher = async (url, signal) => {
 		throw new MasterfileFetchError(`network error fetching ${url}`, url, cause);
 	}
 	if (!response.ok) {
-		throw new MasterfileFetchError(
-			`${response.status} ${response.statusText} from ${url}`,
-			url,
-		);
+		throw new MasterfileFetchError(`${response.status} ${response.statusText} from ${url}`, url);
 	}
 	let json: unknown;
 	try {

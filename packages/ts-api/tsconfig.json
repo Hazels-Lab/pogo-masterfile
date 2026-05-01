@@ -4,5 +4,7 @@
 		"noEmit": true,
 		"moduleResolution": "bundler"
 	},
-	"include": ["src/**/*"]
+	"include": ["src/**/*"],
+	// Override the root's excludes — those apply to the root context only.
+	"exclude": ["node_modules", "dist"]
 }

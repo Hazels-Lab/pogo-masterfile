@@ -21,12 +21,12 @@ describe("emitLookupTables", () => {
 		const groups = groupEntries(MOCK_MASTERFILE);
 		const out = emitLookupTables(groups);
 		expect(out).toContain("export interface EntryByTemplateID {");
-		// Sample a known fixture entry
-		const allIds = [...groups.values()].flatMap((g) =>
-			g.entries.map((e) => e.templateId),
-		);
+		// Each templateId is keyed (quoted only when not a valid identifier).
+		const allIds = [...groups.values()].flatMap((g) => g.entries.map((e) => e.templateId));
 		for (const id of allIds) {
-			expect(out).toContain(`"${id}":`);
+			const isValidId = /^[A-Za-z_$][A-Za-z0-9_$]*$/.test(id);
+			const expected = isValidId ? `${id}:` : `"${id}":`;
+			expect(out).toContain(expected);
 		}
 	});
 

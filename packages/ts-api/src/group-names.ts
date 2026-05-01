@@ -63,4 +63,4 @@ export const GROUP_NAMES = [
 	"weatherAffinities",
 ] as const;
 
-export type GroupName = typeof GROUP_NAMES[number];
+export type GroupName = (typeof GROUP_NAMES)[number];
