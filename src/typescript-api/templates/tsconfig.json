@@ -1,0 +1,10 @@
+{
+	"extends": "../../../tsconfig.json",
+	"compilerOptions": {
+		"noEmit": true,
+		"moduleResolution": "bundler",
+		"rootDir": ".",
+		"strict": true
+	},
+	"include": ["./*.ts", "../templates-stubs/*.ts", "../templates-stubs/*.d.ts"]
+}
