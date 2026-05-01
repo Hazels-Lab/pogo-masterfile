@@ -6,6 +6,11 @@ out
 dist
 *.tgz
 
+# packages/ts/dist holds generated .d.ts files that ARE the published artifact
+# (not a tsc build output). Track them so PR review covers regen output.
+!packages/ts/dist
+!packages/ts/dist/**
+
 # code coverage
 coverage
 *.lcov

@@ -17,8 +17,8 @@ import {
 } from "./emit.ts";
 import { buildPromotionRegistry } from "./promoted-unions.ts";
 
-const OUT_DIR = join(import.meta.dir, "..", "..", "packages", "ts", "src");
-const FILE_TYPE = "ts";
+const OUT_DIR = join(import.meta.dir, "..", "..", "packages", "ts", "dist");
+const FILE_TYPE = "d.ts";
 // Recursively materialize a split tree into the files map. At each level:
 //   - Leaf bucket (no children): emitted as a single entry file at the current path.
 //   - Branch bucket (with children): emitted as a subdirectory containing recursive

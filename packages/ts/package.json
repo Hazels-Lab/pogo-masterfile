@@ -56,8 +56,7 @@
 		"access": "public"
 	},
 	"scripts": {
-		"build": "tsc -p tsconfig.build.json",
-		"prepublishOnly": "bun run build"
+		"check": "tsc --noEmit -p tsconfig.build.json"
 	},
 	"peerDependencies": {
 		"typescript": ">=5.0"
