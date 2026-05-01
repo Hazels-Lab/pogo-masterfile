@@ -21,22 +21,22 @@ type BadgeSettingsEventBadgeSettings struct {
 }
 
 type BadgeSettings struct {
-	BadgeRank          uint64                           `json:"badgeRank"`
-	BadgeType          json.RawMessage                  `json:"badgeType"`
-	CaptureReward      []any                            `json:"captureReward,omitempty"`
-	EventBadge         *bool                            `json:"eventBadge,omitempty"`
+	BadgeRank uint64 `json:"badgeRank"`
+	BadgeType json.RawMessage `json:"badgeType"`
+	CaptureReward []any `json:"captureReward,omitempty"`
+	EventBadge *bool `json:"eventBadge,omitempty"`
 	EventBadgeSettings *BadgeSettingsEventBadgeSettings `json:"eventBadgeSettings,omitempty"`
-	Targets            []uint64                         `json:"targets"`
+	Targets []uint64 `json:"targets"`
 }
 
 type BadgeSettingsEntry struct {
-	TemplateID string                 `json:"templateId"`
+	TemplateID string `json:"templateId"`
 	Data       BadgeSettingsEntryData `json:"data"`
 }
 
 func (BadgeSettingsEntry) MasterfileEntry() {}
 
 type BadgeSettingsEntryData struct {
-	TemplateID    string        `json:"templateId"`
+	TemplateID     string `json:"templateId"`
 	BadgeSettings BadgeSettings `json:"badgeSettings"`
 }

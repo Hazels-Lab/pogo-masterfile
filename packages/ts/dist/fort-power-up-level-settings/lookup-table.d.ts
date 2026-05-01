@@ -1,6 +1,11 @@
 // Generated from Pokémon GO masterfile — "fortPowerUpLevelSettings" lookup table.
 
-import type { FortPowerUpLevelSettings0, FortPowerUpLevelSettings1, FortPowerUpLevelSettings2, FortPowerUpLevelSettings3 } from "./entries";
+import type {
+	FortPowerUpLevelSettings0,
+	FortPowerUpLevelSettings1,
+	FortPowerUpLevelSettings2,
+	FortPowerUpLevelSettings3,
+} from "./entries";
 
 export interface FortPowerUpLevelSettingsLookup {
 	FORT_POWER_UP_LEVEL_0: FortPowerUpLevelSettings0;

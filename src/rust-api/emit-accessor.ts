@@ -1,5 +1,5 @@
 import type { Group } from "../group.ts";
-import { pascalCase } from "../naming.ts";
+import { pascalCase, snakeCase } from "../naming.ts";
 
 /**
  * Emit a per-group accessor file at `packages/rust-api/src/accessor/<group>.rs`.
@@ -12,6 +12,7 @@ import { pascalCase } from "../naming.ts";
  */
 export function emitAccessor(group: Group): string {
 	const gName = pascalCase(group.discriminator);
+	const snake = snakeCase(group.discriminator);
 	const entryType = `${gName}Entry`;
 	const templateIdType = `${gName}TemplateId`;
 	const accessorName = `${gName}Accessor`;
@@ -20,7 +21,10 @@ export function emitAccessor(group: Group): string {
 
 use std::collections::HashMap;
 
-use pogo_masterfile_types::{${entryType}, ${templateIdType}, MasterfileEntry};
+use pogo_masterfile_types::{
+\t${snake}::{${entryType}, ${templateIdType}},
+\tMasterfileEntry,
+};
 
 pub struct ${accessorName}<'a> {
 \tpub(crate) entries: &'a [MasterfileEntry],

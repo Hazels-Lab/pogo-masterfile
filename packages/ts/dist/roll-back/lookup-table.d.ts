@@ -1,6 +1,10 @@
 // Generated from Pokémon GO masterfile — "rollBack" lookup table.
 
-import type { RollBackAndroidSensors, RollBackBidirectionalFpWeeklyChallengeReward, RollBackSingleRollShinyRate } from "./entries";
+import type {
+	RollBackAndroidSensors,
+	RollBackBidirectionalFpWeeklyChallengeReward,
+	RollBackSingleRollShinyRate,
+} from "./entries";
 
 export interface RollBackLookup {
 	ANDROID_SENSORS_ROLL_BACK: RollBackAndroidSensors;

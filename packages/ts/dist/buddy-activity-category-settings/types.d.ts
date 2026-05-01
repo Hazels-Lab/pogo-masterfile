@@ -2,20 +2,17 @@
 
 import type { W } from "../_utils";
 
-export interface BuddyActivityCategorySettings<
-	TemplateID extends string = string,
-	TData extends BuddyActivityCategorySettingsData = BuddyActivityCategorySettingsData,
-> {
-	templateId: TemplateID;
-	data: {
-		templateId: TemplateID;
-		buddyActivityCategorySettings: TData & {
-			activityCategory: TemplateID;
-		};
-	};
+export interface BuddyActivityCategorySettings<TemplateID extends string = string, TData extends BuddyActivityCategorySettingsData = BuddyActivityCategorySettingsData> {
+    templateId: TemplateID;
+    data: {
+        templateId: TemplateID;
+        buddyActivityCategorySettings: TData & {
+            activityCategory: TemplateID;
+        };
+    };
 }
 export type BuddyActivityCategorySettingsType = W<BuddyActivityCategorySettings>;
 
 export interface BuddyActivityCategorySettingsData {
-	maxPointsPerDay: number;
+    maxPointsPerDay: number;
 }

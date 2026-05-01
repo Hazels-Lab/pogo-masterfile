@@ -9,10 +9,17 @@ pub const DEFAULT_MASTERFILE_URL: &str =
 
 /// User-replaceable fetcher. Implement on your own struct, OR pass a closure
 /// — closures matching the right shape get a free impl below.
+/// User-replaceable fetcher. Implement on your own struct, OR pass a closure
+/// — closures matching the right shape get a free impl below.
+///
+/// The `+ Send` bound on the returned future is required so spawned tasks
+/// (and trait objects) can move the future across threads.
 #[cfg(feature = "async")]
 pub trait Fetcher: Send + Sync {
-	#[allow(async_fn_in_trait)]
-	async fn fetch(&self, url: &str) -> Result<Vec<MasterfileEntry>>;
+	fn fetch(
+		&self,
+		url: &str,
+	) -> impl std::future::Future<Output = Result<Vec<MasterfileEntry>>> + Send;
 }
 
 #[cfg(feature = "async")]
@@ -21,8 +28,11 @@ where
 	F: Fn(&str) -> Fut + Send + Sync,
 	Fut: std::future::Future<Output = Result<Vec<MasterfileEntry>>> + Send,
 {
-	async fn fetch(&self, url: &str) -> Result<Vec<MasterfileEntry>> {
-		(self)(url).await
+	fn fetch(
+		&self,
+		url: &str,
+	) -> impl std::future::Future<Output = Result<Vec<MasterfileEntry>>> + Send {
+		(self)(url)
 	}
 }
 
@@ -55,27 +65,29 @@ impl Default for ReqwestFetcher {
 
 #[cfg(feature = "async")]
 impl Fetcher for ReqwestFetcher {
-	async fn fetch(&self, url: &str) -> Result<Vec<MasterfileEntry>> {
-		let response = self
-			.client
-			.get(url)
-			.send()
-			.await
-			.map_err(|source| Error::Fetch {
-				url: url.into(),
+	fn fetch(
+		&self,
+		url: &str,
+	) -> impl std::future::Future<Output = Result<Vec<MasterfileEntry>>> + Send {
+		let client = self.client.clone();
+		let url = url.to_string();
+		async move {
+			let response = client.get(&url).send().await.map_err(|source| Error::Fetch {
+				url: url.clone(),
 				source,
 			})?;
-		if !response.status().is_success() {
-			return Err(Error::Status {
-				url: url.into(),
-				status: response.status().as_u16(),
-			});
+			if !response.status().is_success() {
+				return Err(Error::Status {
+					url: url.clone(),
+					status: response.status().as_u16(),
+				});
+			}
+			let body = response.text().await.map_err(|source| Error::Fetch {
+				url: url.clone(),
+				source,
+			})?;
+			parse_masterfile(&body).map_err(Error::from)
 		}
-		let body = response.text().await.map_err(|source| Error::Fetch {
-			url: url.into(),
-			source,
-		})?;
-		parse_masterfile(&body).map_err(Error::from)
 	}
 }
 

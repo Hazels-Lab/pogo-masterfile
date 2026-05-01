@@ -10,10 +10,6 @@ export type * from "./misc";
 export type * from "./proto";
 export type * from "./settings";
 
-export type SingletonsMasterfileEntry =
-	| SingletonsFlagsMasterfileEntry
-	| SingletonsMiscMasterfileEntry
-	| SingletonsProtoMasterfileEntry
-	| SingletonsSettingsMasterfileEntry;
+export type SingletonsMasterfileEntry = SingletonsFlagsMasterfileEntry | SingletonsMiscMasterfileEntry | SingletonsProtoMasterfileEntry | SingletonsSettingsMasterfileEntry;
 
 export type SingletonsTemplateID = SingletonsMasterfileEntry["templateId"];

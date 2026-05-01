@@ -19,14 +19,14 @@ describe("emitAccessorMod", () => {
 		expect(matches).toEqual(sorted);
 	});
 
-	test("includes a singletons module when fixture has any", () => {
+	test("does NOT include a singletons module", () => {
+		// Singletons each get their own MasterfileEntry variant in the upstream
+		// types crate, so the per-group accessor pattern doesn't fit them.
+		// Singleton lookup goes through Masterfile::get_entry().
 		const groups = groupEntries(MOCK_MASTERFILE);
-		const hasSingleton = [...groups.values()].some((g) => g.entries.length === 1);
 		const out = emitAccessorMod(groups);
-		if (hasSingleton) {
-			expect(out).toContain("pub mod singletons;");
-			expect(out).toContain("pub use singletons::SingletonsAccessor;");
-		}
+		expect(out).not.toContain("pub mod singletons;");
+		expect(out).not.toContain("SingletonsAccessor");
 	});
 
 	test("starts with the generated-file header comment", () => {

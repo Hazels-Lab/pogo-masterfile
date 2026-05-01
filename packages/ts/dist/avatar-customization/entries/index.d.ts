@@ -36,23 +36,6 @@ export type * from "./skin";
 export type * from "./socks";
 export type * from "./sponsor";
 
-export type AvatarCustomizationMasterfileEntry =
-	| AvatarCustomizationBackpackMasterfileEntry
-	| AvatarCustomizationBeltMasterfileEntry
-	| AvatarCustomizationEyesMasterfileEntry
-	| AvatarCustomizationFaceMasterfileEntry
-	| AvatarCustomizationGlassesMasterfileEntry
-	| AvatarCustomizationGlovesMasterfileEntry
-	| AvatarCustomizationHairMasterfileEntry
-	| AvatarCustomizationHatMasterfileEntry
-	| AvatarCustomizationNecklaceMasterfileEntry
-	| AvatarCustomizationPantsMasterfileEntry
-	| AvatarCustomizationPosesMasterfileEntry
-	| AvatarCustomizationSeasonalMasterfileEntry
-	| AvatarCustomizationShirtMasterfileEntry
-	| AvatarCustomizationShoesMasterfileEntry
-	| AvatarCustomizationSkinMasterfileEntry
-	| AvatarCustomizationSocksMasterfileEntry
-	| AvatarCustomizationSponsorMasterfileEntry;
+export type AvatarCustomizationMasterfileEntry = AvatarCustomizationBackpackMasterfileEntry | AvatarCustomizationBeltMasterfileEntry | AvatarCustomizationEyesMasterfileEntry | AvatarCustomizationFaceMasterfileEntry | AvatarCustomizationGlassesMasterfileEntry | AvatarCustomizationGlovesMasterfileEntry | AvatarCustomizationHairMasterfileEntry | AvatarCustomizationHatMasterfileEntry | AvatarCustomizationNecklaceMasterfileEntry | AvatarCustomizationPantsMasterfileEntry | AvatarCustomizationPosesMasterfileEntry | AvatarCustomizationSeasonalMasterfileEntry | AvatarCustomizationShirtMasterfileEntry | AvatarCustomizationShoesMasterfileEntry | AvatarCustomizationSkinMasterfileEntry | AvatarCustomizationSocksMasterfileEntry | AvatarCustomizationSponsorMasterfileEntry;
 
 export type AvatarCustomizationTemplateID = AvatarCustomizationMasterfileEntry["templateId"];

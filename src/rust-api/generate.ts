@@ -12,8 +12,6 @@ import { emitLib } from "./emit-lib.ts";
 
 const TEMPLATE_FILES_TO_COPY = ["error.rs", "fetcher.rs", "builder.rs", "masterfile.rs", "blocking.rs"];
 
-const SINGLETONS_KEY = "singletons";
-
 export async function generateRustApi(entries: Entry[]): Promise<void> {
 	const groups = groupEntries(entries);
 	console.log(`[rust-api] grouped into ${groups.size} discriminators.`);
@@ -27,23 +25,13 @@ export async function generateRustApi(entries: Entry[]): Promise<void> {
 	generated.set("lib.rs", emitLib(groups));
 	generated.set("accessor/mod.rs", emitAccessorMod(groups));
 
-	// Per-group accessor files.
+	// Per-group accessor files. Singletons aren't generated — they don't fit
+	// the per-group accessor shape (each singleton is its own MasterfileEntry
+	// variant in the upstream types crate, not a shared Singletons wrapper).
 	const multiEntry = [...groups.values()].filter((g) => g.entries.length > 1);
-	const singletons = [...groups.values()].filter((g) => g.entries.length === 1);
 
 	for (const g of multiEntry) {
 		generated.set(`accessor/${snakeCase(g.discriminator)}.rs`, emitAccessor(g));
-	}
-
-	if (singletons.length > 0) {
-		// Synthesize a singletons "group" so emitAccessor can emit its accessor file.
-		// emitAccessor uses pascalCase("singletons") = "Singletons" for the variant
-		// name and TemplateId prefix, matching the upstream rust-types layout.
-		const synthSingletons = {
-			discriminator: SINGLETONS_KEY,
-			entries: singletons.flatMap((g) => g.entries),
-		};
-		generated.set("accessor/singletons.rs", emitAccessor(synthSingletons));
 	}
 
 	await writeOutput(generated, SRC_OUT_DIR);
