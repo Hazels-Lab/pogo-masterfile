@@ -2,6 +2,8 @@ package masterfileapi
 
 import (
 	"context"
+	"io"
+	"net/http"
 
 	masterfile "github.com/PLACEHOLDER/pogo-masterfile-types/packages/go"
 )
@@ -23,4 +25,40 @@ type FetcherFunc func(ctx context.Context, url string) ([]masterfile.MasterfileE
 // Fetch calls f.
 func (f FetcherFunc) Fetch(ctx context.Context, url string) ([]masterfile.MasterfileEntry, error) {
 	return f(ctx, url)
+}
+
+// httpFetcher is the default Fetcher when WithFetcher is not supplied.
+type httpFetcher struct {
+	client *http.Client // nil → uses http.DefaultClient
+}
+
+func (f *httpFetcher) Fetch(ctx context.Context, url string) ([]masterfile.MasterfileEntry, error) {
+	client := f.client
+	if client == nil {
+		client = http.DefaultClient
+	}
+
+	req, err := http.NewRequestWithContext(ctx, http.MethodGet, url, nil)
+	if err != nil {
+		return nil, &FetchError{URL: url, Err: err}
+	}
+	resp, err := client.Do(req)
+	if err != nil {
+		return nil, &FetchError{URL: url, Err: err}
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode < 200 || resp.StatusCode >= 300 {
+		return nil, &StatusError{URL: url, Status: resp.StatusCode}
+	}
+
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return nil, &FetchError{URL: url, Err: err}
+	}
+	entries, err := masterfile.ParseMasterfile(body)
+	if err != nil {
+		return nil, &ParseError{Err: err}
+	}
+	return entries, nil
 }
