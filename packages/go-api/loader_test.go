@@ -76,16 +76,30 @@ func TestLoadRemote_WithFetcher_BypassesHTTP(t *testing.T) {
 	}
 }
 
-func TestLoadRemote_WithHTTPClient_AppliesTimeoutSettings(t *testing.T) {
+// roundTripFunc adapts a function to http.RoundTripper for testing.
+type roundTripFunc func(*http.Request) (*http.Response, error)
+
+func (f roundTripFunc) RoundTrip(req *http.Request) (*http.Response, error) { return f(req) }
+
+func TestLoadRemote_WithHTTPClient_UsesProvidedClient(t *testing.T) {
 	srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		_, _ = w.Write([]byte(fixtureJSON))
 	}))
 	defer srv.Close()
 
-	client := &http.Client{} // not the default; verifies plumbing
+	called := false
+	client := &http.Client{
+		Transport: roundTripFunc(func(req *http.Request) (*http.Response, error) {
+			called = true
+			return http.DefaultTransport.RoundTrip(req)
+		}),
+	}
 	mf, err := LoadRemote(context.Background(), WithURL(srv.URL), WithHTTPClient(client))
 	if err != nil {
 		t.Fatalf("unexpected: %v", err)
+	}
+	if !called {
+		t.Error("custom client's transport was not invoked")
 	}
 	if mf.Len() != 1 {
 		t.Errorf("Len = %d", mf.Len())
