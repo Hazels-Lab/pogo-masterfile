@@ -3,6 +3,7 @@
 	"module": "src/generate.ts",
 	"type": "module",
 	"private": true,
+	"workspaces": ["packages/*"],
 	"scripts": {
 		"generate": "bun run src/generate.ts && bun run format && (cd packages/rust && cargo fmt) && (cd packages/go && gofmt -w .)",
 		"test": "bun test",
@@ -12,7 +13,8 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.4.12",
-		"@types/bun": "latest"
+		"@types/bun": "latest",
+		"expect-type": "^1.1.0"
 	},
 	"peerDependencies": {
 		"typescript": "^6.0.3"
