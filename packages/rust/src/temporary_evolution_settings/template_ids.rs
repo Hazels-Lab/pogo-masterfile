@@ -4,9 +4,7 @@ use crate::{AllVariants, AsStr, FromStrEnum};
 use serde::{Deserialize, Serialize};
 
 #[derive(
-    Debug, Clone, Copy, PartialEq, Eq, Hash,
-    Serialize, Deserialize,
-    AllVariants, AsStr, FromStrEnum,
+    Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum,
 )]
 pub enum TemporaryEvolutionSettingsTemplateId {
     #[serde(rename = "TEMPORARY_EVOLUTION_V0003_POKEMON_VENUSAUR")]

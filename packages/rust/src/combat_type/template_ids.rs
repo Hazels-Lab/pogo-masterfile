@@ -4,9 +4,7 @@ use crate::{AllVariants, AsStr, FromStrEnum};
 use serde::{Deserialize, Serialize};
 
 #[derive(
-    Debug, Clone, Copy, PartialEq, Eq, Hash,
-    Serialize, Deserialize,
-    AllVariants, AsStr, FromStrEnum,
+    Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum,
 )]
 pub enum CombatTypeTemplateId {
     #[serde(rename = "COMBAT_POKEMON_TYPE_BUG")]
