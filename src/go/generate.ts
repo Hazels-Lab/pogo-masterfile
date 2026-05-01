@@ -51,6 +51,7 @@ export async function generateGo(entries: Entry[]): Promise<void> {
 				isStub: stub,
 				discriminator: group.discriminator,
 				entryCount: group.entries.length,
+				modulePath: SINGLETONS_FILE,
 			});
 			continue;
 		}
@@ -64,6 +65,7 @@ export async function generateGo(entries: Entry[]): Promise<void> {
 			isStub: stub,
 			discriminator: group.discriminator,
 			entryCount: group.entries.length,
+			modulePath: fileName,
 		});
 	}
 
@@ -72,7 +74,7 @@ export async function generateGo(entries: Entry[]): Promise<void> {
 		files.set(`${SINGLETONS_FILE}_template_ids.go`, emitSingletonsTemplateIdsFile(singletons, "masterfile"));
 	}
 
-	files.set("masterfile.go", emitMasterfileFile(enumVariants));
+	files.set("masterfile.go", emitMasterfileFile(enumVariants, _modulePath));
 
 	const preserve = ["go.mod", "go.sum", "doc.go", "README.md", "LICENSE", "CHANGELOG.md", "masterfile_test.go", "examples/parse/main.go"];
 

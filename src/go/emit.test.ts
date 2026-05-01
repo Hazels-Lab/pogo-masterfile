@@ -34,6 +34,60 @@ describe("emitSingletonsTemplateIdsFile", () => {
 	});
 });
 
+describe("emitMasterfileFile cross-package dispatch", () => {
+	test("imports each sub-package and qualifies type references", () => {
+		const variants = [
+			{
+				variantName: "BadgeSettings",
+				entryTypeName: "BadgeSettingsEntry",
+				isStub: false,
+				discriminator: "badgeSettings",
+				entryCount: 869,
+				modulePath: "badge_settings",
+			},
+			{
+				variantName: "AccessibilitySettings",
+				entryTypeName: "AccessibilitySettingsEntry",
+				isStub: false,
+				discriminator: "accessibilitySettings",
+				entryCount: 1,
+				modulePath: "singletons",
+			},
+		];
+		const out = emitMasterfileFile(variants, "github.com/example/pkg/packages/go");
+		expect(out).toContain(`"github.com/example/pkg/packages/go/badge_settings"`);
+		expect(out).toContain(`"github.com/example/pkg/packages/go/singletons"`);
+		expect(out).toContain("var e badge_settings.BadgeSettingsEntry");
+		expect(out).toContain("var e singletons.AccessibilitySettingsEntry");
+		expect(out).toContain("MasterfileEntry()");
+		expect(out).not.toContain("isMasterfileEntry()");
+	});
+
+	test("deduplicates sub-package imports when many groups share the same path", () => {
+		const variants = [
+			{
+				variantName: "AccessibilitySettings",
+				entryTypeName: "AccessibilitySettingsEntry",
+				isStub: false,
+				discriminator: "accessibilitySettings",
+				entryCount: 1,
+				modulePath: "singletons",
+			},
+			{
+				variantName: "AdditiveSceneSettings",
+				entryTypeName: "AdditiveSceneSettingsEntry",
+				isStub: false,
+				discriminator: "additiveSceneSettings",
+				entryCount: 1,
+				modulePath: "singletons",
+			},
+		];
+		const out = emitMasterfileFile(variants, "github.com/example/pkg/packages/go");
+		const matches = out.match(/"github\.com\/example\/pkg\/packages\/go\/singletons"/g) ?? [];
+		expect(matches.length).toBe(1);
+	});
+});
+
 describe("packageName parameter", () => {
 	test("emitGroupModule honors packageName", () => {
 		const groups = groupEntries(MOCK_MASTERFILE);

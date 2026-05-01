@@ -268,27 +268,37 @@ export interface EntryVariant {
 	isStub: boolean;
 	discriminator: string;
 	entryCount: number;
+	// snake_case sub-package directory where the Entry type lives
+	// (e.g., "badge_settings", "singletons"). The masterfile dispatcher
+	// uses this to qualify the type reference in the parse switch.
+	modulePath: string;
 }
 
 // Emit the package's entry-point file: package documentation, the
 // `MasterfileEntry` interface, the `ParseMasterfile` function with O(1) string-
 // switch dispatch, and the supporting probe helper. Sorted by entry count
 // descending so the switch's most common cases come first.
-export function emitMasterfileFile(variants: readonly EntryVariant[]): string {
+export function emitMasterfileFile(variants: readonly EntryVariant[], modulePath: string): string {
 	const sorted = [...variants].sort((a, b) => b.entryCount - a.entryCount || a.variantName.localeCompare(b.variantName));
 	const nonStubs = sorted.filter((v) => !v.isStub);
 	const stubs = sorted.filter((v) => v.isStub);
 
+	// Deduplicated sub-package imports, sorted alphabetically. Each variant's
+	// modulePath becomes <modulePath>/<group>; the dispatch references types
+	// as <group>.EntryType.
+	const subPackages = [...new Set(sorted.map((v) => v.modulePath))].sort();
+	const subPackageImports = subPackages.map((p) => `\t${JSON.stringify(`${modulePath}/${p}`)}`).join("\n");
+
 	const nonStubArms = nonStubs
 		.map(
 			(v) =>
-				`\tcase ${JSON.stringify(v.discriminator)}:\n\t\tvar e ${v.entryTypeName}\n\t\tif err := json.Unmarshal(data, &e); err != nil {\n\t\t\treturn nil, err\n\t\t}\n\t\treturn e, nil`,
+				`\tcase ${JSON.stringify(v.discriminator)}:\n\t\tvar e ${v.modulePath}.${v.entryTypeName}\n\t\tif err := json.Unmarshal(data, &e); err != nil {\n\t\t\treturn nil, err\n\t\t}\n\t\treturn e, nil`,
 		)
 		.join("\n");
 	const stubArms = stubs
 		.map(
 			(v) =>
-				`\t\tcase ${JSON.stringify(v.discriminator)}:\n\t\t\tvar e ${v.entryTypeName}\n\t\t\tif err := json.Unmarshal(data, &e); err != nil {\n\t\t\t\treturn nil, err\n\t\t\t}\n\t\t\treturn e, nil`,
+				`\t\tcase ${JSON.stringify(v.discriminator)}:\n\t\t\tvar e ${v.modulePath}.${v.entryTypeName}\n\t\t\tif err := json.Unmarshal(data, &e); err != nil {\n\t\t\t\treturn nil, err\n\t\t\t}\n\t\t\treturn e, nil`,
 		)
 		.join("\n");
 
@@ -300,11 +310,18 @@ package masterfile
 import (
 \t"encoding/json"
 \t"fmt"
+
+${subPackageImports}
 )
 
 // MasterfileEntry is the marker interface implemented by every per-discriminator
-// Entry type generated alongside this file. Use a type switch to extract a
+// Entry type generated under this module. Use a type switch to extract a
 // concrete entry from a parse result.
+//
+// The marker method is exported because Go's unexported-method sealing trick
+// only works within a single package. Foreign types could implement this
+// interface, but the only thing that produces values of it is ParseMasterfile
+// which only returns generated types.
 type MasterfileEntry interface {
 \tMasterfileEntry()
 }
