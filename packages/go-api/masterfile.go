@@ -68,4 +68,3 @@ func (m *Masterfile) Len() int {
 func (m *Masterfile) Groups() []string {
 	return GroupNames
 }
-

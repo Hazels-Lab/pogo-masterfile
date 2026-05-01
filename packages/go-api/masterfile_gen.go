@@ -7,66 +7,66 @@ import (
 
 	masterfile "github.com/PLACEHOLDER/pogo-masterfile-types/packages/go"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go-api/accessor"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/singletons"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/feature_gate"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/roll_back"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/evolution_quest_template"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/iap_item_display"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/avatar_group_order_settings"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/avatar_customization"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/level_up_rewards"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/avatar_group_order_settings"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/avatar_item_display"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/badge_settings"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/code_gate_proto"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/bread_move_level_settings"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/buddy_activity_category_settings"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/buddy_emotion_level_settings"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/buddy_level_settings"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/invasion_npc_display_settings"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/client_quest_template"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/code_gate_proto"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/combat_league"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/combat_type"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/combat_ranking_proto_settings"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/combat_move"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/pokemon_home_energy_costs"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/combat_npc_personality"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/combat_npc_trainer"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/combat_ranking_proto_settings"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/combat_type"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/event_pass_settings"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/event_pass_tier_settings"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/evolution_chain_display_settings"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/pokemon_extended_settings"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/evolution_quest_template"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/feature_gate"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/form_settings"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/fort_power_up_level_settings"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/friendship_milestone_settings"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/gender_settings"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/iap_category_display"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/iap_item_display"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/invasion_npc_display_settings"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/item_expiration_settings"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/item_settings"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/language_settings"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/iap_category_display"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/pokestop_invasion_availability_settings"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/item_expiration_settings"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/location_card_settings"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/client_quest_template"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/level_up_rewards"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/limited_purchase_sku_settings"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/location_card_settings"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/mega_evo_level_settings"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/move_sequence_settings"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/move_settings"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/non_combat_move_settings"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/avatar_item_display"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/party_play_general_settings"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/photo_sets_settings_proto"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/pokemon_extended_settings"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/pokemon_family"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/pokemon_home_energy_costs"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/pokemon_home_form_reversions"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/pokemon_scale_settings"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/type_effective"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/pokemon_settings"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/pokemon_upgrades"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/pokestop_invasion_availability_settings"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/quest_settings"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/recommended_search_settings"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/roll_back"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/settings_override_rule"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/gender_settings"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/singletons"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/sticker_metadata"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/tappable_settings"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/temporary_evolution_settings"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/combat_npc_trainer"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/combat_npc_personality"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/pokemon_family"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/pokemon_settings"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/move_settings"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/pokemon_home_form_reversions"
+	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/type_effective"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/vs_seeker_loot"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/vs_seeker_pokemon_rewards"
 	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/weather_affinities"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/move_sequence_settings"
 )
 
 // Masterfile is the indexed runtime view of a parsed masterfile. Construct via
@@ -75,66 +75,66 @@ type Masterfile struct {
 	entries []masterfile.MasterfileEntry
 	byID    map[string]int
 
-	FeatureGate *accessor.FeatureGateAccessor
-	RollBack *accessor.RollBackAccessor
-	EvolutionQuestTemplate *accessor.EvolutionQuestTemplateAccessor
-	IapItemDisplay *accessor.IapItemDisplayAccessor
-	AvatarGroupOrderSettings *accessor.AvatarGroupOrderSettingsAccessor
-	AvatarCustomization *accessor.AvatarCustomizationAccessor
-	LevelUpRewards *accessor.LevelUpRewardsAccessor
-	BadgeSettings *accessor.BadgeSettingsAccessor
-	CodeGateProto *accessor.CodeGateProtoAccessor
-	BreadMoveLevelSettings *accessor.BreadMoveLevelSettingsAccessor
-	BuddyActivityCategorySettings *accessor.BuddyActivityCategorySettingsAccessor
-	BuddyEmotionLevelSettings *accessor.BuddyEmotionLevelSettingsAccessor
-	BuddyLevelSettings *accessor.BuddyLevelSettingsAccessor
-	InvasionNpcDisplaySettings *accessor.InvasionNpcDisplaySettingsAccessor
-	CombatLeague *accessor.CombatLeagueAccessor
-	CombatType *accessor.CombatTypeAccessor
-	CombatRankingProtoSettings *accessor.CombatRankingProtoSettingsAccessor
-	CombatMove *accessor.CombatMoveAccessor
-	PokemonHomeEnergyCosts *accessor.PokemonHomeEnergyCostsAccessor
-	EventPassSettings *accessor.EventPassSettingsAccessor
-	EventPassTierSettings *accessor.EventPassTierSettingsAccessor
-	EvolutionChainDisplaySettings *accessor.EvolutionChainDisplaySettingsAccessor
-	PokemonExtendedSettings *accessor.PokemonExtendedSettingsAccessor
-	FormSettings *accessor.FormSettingsAccessor
-	FortPowerUpLevelSettings *accessor.FortPowerUpLevelSettingsAccessor
-	FriendshipMilestoneSettings *accessor.FriendshipMilestoneSettingsAccessor
-	ItemSettings *accessor.ItemSettingsAccessor
-	LanguageSettings *accessor.LanguageSettingsAccessor
-	IapCategoryDisplay *accessor.IapCategoryDisplayAccessor
+	FeatureGate                          *accessor.FeatureGateAccessor
+	RollBack                             *accessor.RollBackAccessor
+	EvolutionQuestTemplate               *accessor.EvolutionQuestTemplateAccessor
+	IapItemDisplay                       *accessor.IapItemDisplayAccessor
+	AvatarGroupOrderSettings             *accessor.AvatarGroupOrderSettingsAccessor
+	AvatarCustomization                  *accessor.AvatarCustomizationAccessor
+	LevelUpRewards                       *accessor.LevelUpRewardsAccessor
+	BadgeSettings                        *accessor.BadgeSettingsAccessor
+	CodeGateProto                        *accessor.CodeGateProtoAccessor
+	BreadMoveLevelSettings               *accessor.BreadMoveLevelSettingsAccessor
+	BuddyActivityCategorySettings        *accessor.BuddyActivityCategorySettingsAccessor
+	BuddyEmotionLevelSettings            *accessor.BuddyEmotionLevelSettingsAccessor
+	BuddyLevelSettings                   *accessor.BuddyLevelSettingsAccessor
+	InvasionNpcDisplaySettings           *accessor.InvasionNpcDisplaySettingsAccessor
+	CombatLeague                         *accessor.CombatLeagueAccessor
+	CombatType                           *accessor.CombatTypeAccessor
+	CombatRankingProtoSettings           *accessor.CombatRankingProtoSettingsAccessor
+	CombatMove                           *accessor.CombatMoveAccessor
+	PokemonHomeEnergyCosts               *accessor.PokemonHomeEnergyCostsAccessor
+	EventPassSettings                    *accessor.EventPassSettingsAccessor
+	EventPassTierSettings                *accessor.EventPassTierSettingsAccessor
+	EvolutionChainDisplaySettings        *accessor.EvolutionChainDisplaySettingsAccessor
+	PokemonExtendedSettings              *accessor.PokemonExtendedSettingsAccessor
+	FormSettings                         *accessor.FormSettingsAccessor
+	FortPowerUpLevelSettings             *accessor.FortPowerUpLevelSettingsAccessor
+	FriendshipMilestoneSettings          *accessor.FriendshipMilestoneSettingsAccessor
+	ItemSettings                         *accessor.ItemSettingsAccessor
+	LanguageSettings                     *accessor.LanguageSettingsAccessor
+	IapCategoryDisplay                   *accessor.IapCategoryDisplayAccessor
 	PokestopInvasionAvailabilitySettings *accessor.PokestopInvasionAvailabilitySettingsAccessor
-	ItemExpirationSettings *accessor.ItemExpirationSettingsAccessor
-	LocationCardSettings *accessor.LocationCardSettingsAccessor
-	ClientQuestTemplate *accessor.ClientQuestTemplateAccessor
-	LimitedPurchaseSkuSettings *accessor.LimitedPurchaseSkuSettingsAccessor
-	MegaEvoLevelSettings *accessor.MegaEvoLevelSettingsAccessor
-	NonCombatMoveSettings *accessor.NonCombatMoveSettingsAccessor
-	AvatarItemDisplay *accessor.AvatarItemDisplayAccessor
-	PartyPlayGeneralSettings *accessor.PartyPlayGeneralSettingsAccessor
-	PhotoSetsSettingsProto *accessor.PhotoSetsSettingsProtoAccessor
-	PokemonScaleSettings *accessor.PokemonScaleSettingsAccessor
-	TypeEffective *accessor.TypeEffectiveAccessor
-	PokemonUpgrades *accessor.PokemonUpgradesAccessor
-	QuestSettings *accessor.QuestSettingsAccessor
-	RecommendedSearchSettings *accessor.RecommendedSearchSettingsAccessor
-	SettingsOverrideRule *accessor.SettingsOverrideRuleAccessor
-	GenderSettings *accessor.GenderSettingsAccessor
-	StickerMetadata *accessor.StickerMetadataAccessor
-	TappableSettings *accessor.TappableSettingsAccessor
-	TemporaryEvolutionSettings *accessor.TemporaryEvolutionSettingsAccessor
-	CombatNpcTrainer *accessor.CombatNpcTrainerAccessor
-	CombatNpcPersonality *accessor.CombatNpcPersonalityAccessor
-	PokemonFamily *accessor.PokemonFamilyAccessor
-	PokemonSettings *accessor.PokemonSettingsAccessor
-	MoveSettings *accessor.MoveSettingsAccessor
-	PokemonHomeFormReversions *accessor.PokemonHomeFormReversionsAccessor
-	VsSeekerLoot *accessor.VsSeekerLootAccessor
-	VsSeekerPokemonRewards *accessor.VsSeekerPokemonRewardsAccessor
-	WeatherAffinities *accessor.WeatherAffinitiesAccessor
-	MoveSequenceSettings *accessor.MoveSequenceSettingsAccessor
-	Singletons *accessor.SingletonsAccessor
+	ItemExpirationSettings               *accessor.ItemExpirationSettingsAccessor
+	LocationCardSettings                 *accessor.LocationCardSettingsAccessor
+	ClientQuestTemplate                  *accessor.ClientQuestTemplateAccessor
+	LimitedPurchaseSkuSettings           *accessor.LimitedPurchaseSkuSettingsAccessor
+	MegaEvoLevelSettings                 *accessor.MegaEvoLevelSettingsAccessor
+	NonCombatMoveSettings                *accessor.NonCombatMoveSettingsAccessor
+	AvatarItemDisplay                    *accessor.AvatarItemDisplayAccessor
+	PartyPlayGeneralSettings             *accessor.PartyPlayGeneralSettingsAccessor
+	PhotoSetsSettingsProto               *accessor.PhotoSetsSettingsProtoAccessor
+	PokemonScaleSettings                 *accessor.PokemonScaleSettingsAccessor
+	TypeEffective                        *accessor.TypeEffectiveAccessor
+	PokemonUpgrades                      *accessor.PokemonUpgradesAccessor
+	QuestSettings                        *accessor.QuestSettingsAccessor
+	RecommendedSearchSettings            *accessor.RecommendedSearchSettingsAccessor
+	SettingsOverrideRule                 *accessor.SettingsOverrideRuleAccessor
+	GenderSettings                       *accessor.GenderSettingsAccessor
+	StickerMetadata                      *accessor.StickerMetadataAccessor
+	TappableSettings                     *accessor.TappableSettingsAccessor
+	TemporaryEvolutionSettings           *accessor.TemporaryEvolutionSettingsAccessor
+	CombatNpcTrainer                     *accessor.CombatNpcTrainerAccessor
+	CombatNpcPersonality                 *accessor.CombatNpcPersonalityAccessor
+	PokemonFamily                        *accessor.PokemonFamilyAccessor
+	PokemonSettings                      *accessor.PokemonSettingsAccessor
+	MoveSettings                         *accessor.MoveSettingsAccessor
+	PokemonHomeFormReversions            *accessor.PokemonHomeFormReversionsAccessor
+	VsSeekerLoot                         *accessor.VsSeekerLootAccessor
+	VsSeekerPokemonRewards               *accessor.VsSeekerPokemonRewardsAccessor
+	WeatherAffinities                    *accessor.WeatherAffinitiesAccessor
+	MoveSequenceSettings                 *accessor.MoveSequenceSettingsAccessor
+	Singletons                           *accessor.SingletonsAccessor
 }
 
 // GroupNames lists every multi-entry group discriminator in canonical order.
