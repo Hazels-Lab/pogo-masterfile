@@ -2,7 +2,7 @@
 
 ## Regenerating types
 
-The three published packages under `packages/` are **fully generated** from `masterfile.json` plus the inference pipeline in `src/`. Don't edit files in `packages/ts/src/`, `packages/rust/src/`, or `packages/go/*.go` by hand — run codegen instead:
+The four published packages under `packages/` are **fully generated** from `masterfile.json` plus the inference pipeline in `src/`. Don't edit files in `packages/ts/src/`, `packages/ts-api/src/`, `packages/rust/src/`, or `packages/go/*.go` by hand — run codegen instead:
 
 ```bash
 bun run generate
@@ -21,11 +21,12 @@ bun run generate
 
 Each language package has its own version and ships independently. Releases are triggered by **pushing a git tag** matching the package's pattern.
 
-| Package    | Tag pattern         | Example tag           | Workflow                                  |
-| ---------- | ------------------- | --------------------- | ----------------------------------------- |
-| TypeScript | `typescript-v*`     | `typescript-v0.1.0`   | `.github/workflows/publish-npm.yml`       |
-| Rust       | `rust-v*`           | `rust-v0.1.0`         | `.github/workflows/publish-rust.yml`      |
-| Go         | `packages/go/v*`    | `packages/go/v0.1.0`  | `.github/workflows/release-go.yml`        |
+| Package        | Tag pattern             | Example tag              | Workflow                                          |
+| -------------- | ----------------------- | ------------------------ | ------------------------------------------------- |
+| TypeScript types | `typescript-v*`       | `typescript-v0.1.0`      | `.github/workflows/publish-npm.yml`               |
+| TS API         | `pogo-masterfile-v*`    | `pogo-masterfile-v0.1.0` | `.github/workflows/publish-pogo-masterfile.yml`   |
+| Rust           | `rust-v*`               | `rust-v0.1.0`            | `.github/workflows/publish-rust.yml`              |
+| Go             | `packages/go/v*`        | `packages/go/v0.1.0`     | `.github/workflows/release-go.yml`                |
 
 ### About the Go tag pattern
 
@@ -55,8 +56,11 @@ Before pushing a release tag for any package:
 ## Local verification before tagging
 
 ```bash
-# TypeScript
-cd packages/ts && bun run build && npm pack --dry-run
+# TypeScript types
+cd packages/ts && bun run check && npm pack --dry-run
+
+# TypeScript API (pogo-masterfile)
+cd packages/ts-api && bun run build && npm pack --dry-run
 
 # Rust
 cd packages/rust && cargo publish --dry-run
