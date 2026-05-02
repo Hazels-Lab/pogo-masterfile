@@ -7,12 +7,12 @@ export function emitMasterfileGen(groups: Map<string, Group>): string {
 
 	// Imports — one per multi-entry group, plus singletons + masterfile + accessor.
 	const importLines: string[] = [
-		'\tmasterfile "github.com/PLACEHOLDER/pogo-masterfile-types/packages/go"',
-		'\t"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go-api/accessor"',
-		'\t"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/singletons"',
+		'\tmasterfile "github.com/Hazels-Lab/pogo-masterfile-types/packages/go"',
+		'\t"github.com/Hazels-Lab/pogo-masterfile-types/packages/go-api/accessor"',
+		'\t"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/singletons"',
 	];
 	for (const g of multiEntry) {
-		importLines.push(`\t"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/${snakeCase(g.discriminator)}"`);
+		importLines.push(`\t"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/${snakeCase(g.discriminator)}"`);
 	}
 
 	// Struct fields — one per multi-entry group, plus Singletons.

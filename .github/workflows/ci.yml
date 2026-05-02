@@ -50,6 +50,74 @@ jobs:
         with:
           go-version: stable
           cache-dependency-path: packages/go/go.sum
+      - name: gofmt
+        run: |
+          out=$(gofmt -l .)
+          if [ -n "$out" ]; then
+            echo "::error::gofmt found unformatted files:"
+            echo "$out"
+            exit 1
+          fi
       - run: go build ./...
       - run: go vet ./...
       - run: go test ./...
+
+  go-api:
+    name: Go API
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/go-api
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+          cache-dependency-path: packages/go-api/go.sum
+      - name: gofmt
+        run: |
+          out=$(gofmt -l .)
+          if [ -n "$out" ]; then
+            echo "::error::gofmt found unformatted files:"
+            echo "$out"
+            exit 1
+          fi
+      - run: go build ./...
+      - run: go vet ./...
+      - run: go test ./...
+
+  rust-api:
+    name: Rust API
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/rust-api
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy, rustfmt
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: packages/rust-api
+      - run: cargo fmt --check
+      - run: cargo clippy --all-targets -- -D warnings
+      - run: cargo test --all-features
+
+  rust-macros:
+    name: Rust Macros
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/rust-macros
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy, rustfmt
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: packages/rust-macros
+      - run: cargo fmt --check
+      - run: cargo clippy --all-targets -- -D warnings
+      - run: cargo test

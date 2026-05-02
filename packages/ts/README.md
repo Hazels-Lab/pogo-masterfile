@@ -55,7 +55,7 @@ Bundler-mode resolution is the default in modern TypeScript projects (Next.js, V
 
 ## Source
 
-Generated from `masterfile.json` via the codegen pipeline at the [repo root](https://github.com/<GH_OWNER>/pogo-masterfile-types). Don't edit emitted files by hand — re-run `bun run generate` instead.
+Generated from `masterfile.json` via the codegen pipeline at the [repo root](https://github.com/Hazels-Lab/pogo-masterfile-types). Don't edit emitted files by hand — re-run `bun run generate` instead.
 
 ## License
 

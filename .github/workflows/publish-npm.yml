@@ -22,8 +22,10 @@ jobs:
           node-version: "20"
           registry-url: "https://registry.npmjs.org"
       - run: bun install --frozen-lockfile
-      - name: Build types
-        run: bun run build
+      # packages/ts ships its committed dist/ verbatim — no build step.
+      # `bun run check` verifies the dist/ matches its source via tsconfig.build.
+      - name: Verify
+        run: bun run check
         working-directory: packages/ts
       - name: Publish
         run: npm publish --provenance --access public

@@ -1,0 +1,25 @@
+name: Publish Rust Macros
+
+on:
+  push:
+    tags:
+      - "rust-macros-v*"
+
+jobs:
+  publish:
+    name: Publish to crates.io
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/rust-macros
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: packages/rust-macros
+      - run: cargo test
+      - name: Publish
+        env:
+          CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
+        run: cargo publish

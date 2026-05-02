@@ -1,0 +1,105 @@
+name: Autoupdate from upstream masterfile
+
+on:
+  schedule:
+    - cron: "30 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: autoupdate
+  cancel-in-progress: false
+
+jobs:
+  regen:
+    name: Regenerate types and open PR
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.AUTOUPDATE_TOKEN }}
+          fetch-depth: 0
+
+      - name: Check upstream HEAD
+        id: upstream
+        run: |
+          new_sha=$(curl -fsSL -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/repos/alexelgt/game_masters/commits/master" \
+            | jq -r .sha)
+          old_sha=$(cat .upstream-sha 2>/dev/null || echo "")
+          echo "new_sha=$new_sha" >> "$GITHUB_OUTPUT"
+          if [ "$new_sha" = "$old_sha" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Upstream unchanged ($new_sha). Nothing to do."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Upstream moved: $old_sha -> $new_sha"
+          fi
+
+      - uses: oven-sh/setup-bun@v2
+        if: steps.upstream.outputs.changed == 'true'
+      - uses: dtolnay/rust-toolchain@stable
+        if: steps.upstream.outputs.changed == 'true'
+        with:
+          components: rustfmt
+      - uses: actions/setup-go@v5
+        if: steps.upstream.outputs.changed == 'true'
+        with:
+          go-version: stable
+
+      - name: Install JS deps
+        if: steps.upstream.outputs.changed == 'true'
+        run: bun install --frozen-lockfile
+
+      - name: Compute baseline hashes
+        if: steps.upstream.outputs.changed == 'true'
+        run: bun run scripts/detect-changes.ts > /tmp/before.json
+
+      - name: Regenerate
+        if: steps.upstream.outputs.changed == 'true'
+        run: bun run generate
+
+      - name: Compute post-regen hashes
+        if: steps.upstream.outputs.changed == 'true'
+        run: bun run scripts/detect-changes.ts > /tmp/after.json
+
+      - name: Bump versions for changed packages
+        if: steps.upstream.outputs.changed == 'true'
+        env:
+          UPSTREAM_SHA: ${{ steps.upstream.outputs.new_sha }}
+        run: bun run scripts/bump-versions.ts /tmp/before.json /tmp/after.json
+
+      - name: Update upstream marker
+        if: steps.upstream.outputs.changed == 'true'
+        env:
+          UPSTREAM_SHA: ${{ steps.upstream.outputs.new_sha }}
+        run: printf '%s\n' "$UPSTREAM_SHA" > .upstream-sha
+
+      - name: Diff check
+        if: steps.upstream.outputs.changed == 'true'
+        id: diff
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "has_diff=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_diff=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open pull request
+        if: steps.upstream.outputs.changed == 'true' && steps.diff.outputs.has_diff == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.AUTOUPDATE_TOKEN }}
+          branch: autoupdate/upstream-${{ steps.upstream.outputs.new_sha }}
+          title: "chore: autoupdate types from upstream"
+          body: |
+            Automated regeneration triggered by upstream commit `${{ steps.upstream.outputs.new_sha }}`.
+
+            Per-package patch bumps and CHANGELOG stubs are included in the diff. Auto-merges when CI is green.
+          labels: autoupdate
+          commit-message: "chore: autoupdate types from upstream"
+          author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>

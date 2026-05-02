@@ -6,12 +6,12 @@
 	"author": "Rin <derick.magnusen@gmail.com>",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/<GH_OWNER>/pogo-masterfile-types.git",
+		"url": "git+https://github.com/Hazels-Lab/pogo-masterfile-types.git",
 		"directory": "packages/ts"
 	},
-	"homepage": "https://github.com/<GH_OWNER>/pogo-masterfile-types#readme",
+	"homepage": "https://github.com/Hazels-Lab/pogo-masterfile-types#readme",
 	"bugs": {
-		"url": "https://github.com/<GH_OWNER>/pogo-masterfile-types/issues"
+		"url": "https://github.com/Hazels-Lab/pogo-masterfile-types/issues"
 	},
 	"keywords": [
 		"pokemon-go",

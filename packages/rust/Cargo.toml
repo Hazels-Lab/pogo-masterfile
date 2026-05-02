@@ -6,9 +6,8 @@ rust-version = "1.85"
 description = "Generated Rust types for the Pokémon GO masterfile, with a typed parse_masterfile dispatcher."
 license = "MIT"
 authors = ["Rin <derick.magnusen@gmail.com>"]
-# TODO: replace <GH_OWNER> once the repo is hosted.
-repository = "https://github.com/<GH_OWNER>/pogo-masterfile-types"
-homepage = "https://github.com/<GH_OWNER>/pogo-masterfile-types"
+repository = "https://github.com/Hazels-Lab/pogo-masterfile-types"
+homepage = "https://github.com/Hazels-Lab/pogo-masterfile-types"
 documentation = "https://docs.rs/pogo-masterfile-types"
 readme = "README.md"
 keywords = ["pokemon-go", "pokemon", "masterfile", "serde", "types"]
