@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/form_settings"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/form_settings"
 )
 
 // FormSettingsAccessor provides typed lookups for the "formSettings" group.

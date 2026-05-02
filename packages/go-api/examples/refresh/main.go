@@ -7,7 +7,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	masterfileapi "github.com/PLACEHOLDER/pogo-masterfile-types/packages/go-api"
+	masterfileapi "github.com/Hazels-Lab/pogo-masterfile-types/packages/go-api"
 )
 
 func main() {

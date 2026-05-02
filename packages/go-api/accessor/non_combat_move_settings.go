@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/non_combat_move_settings"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/non_combat_move_settings"
 )
 
 // NonCombatMoveSettingsAccessor provides typed lookups for the "nonCombatMoveSettings" group.

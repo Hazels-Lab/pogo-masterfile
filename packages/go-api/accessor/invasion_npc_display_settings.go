@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/invasion_npc_display_settings"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/invasion_npc_display_settings"
 )
 
 // InvasionNpcDisplaySettingsAccessor provides typed lookups for the "invasionNpcDisplaySettings" group.

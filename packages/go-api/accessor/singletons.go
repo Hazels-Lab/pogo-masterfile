@@ -3,8 +3,8 @@
 package accessor
 
 import (
-	masterfile "github.com/PLACEHOLDER/pogo-masterfile-types/packages/go"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/singletons"
+	masterfile "github.com/Hazels-Lab/pogo-masterfile-types/packages/go"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/singletons"
 )
 
 // SingletonsAccessor provides lookups across the "singletons" group. Singleton

@@ -5,7 +5,7 @@ import (
 	"io"
 	"net/http"
 
-	masterfile "github.com/PLACEHOLDER/pogo-masterfile-types/packages/go"
+	masterfile "github.com/Hazels-Lab/pogo-masterfile-types/packages/go"
 )
 
 // DefaultMasterfileURL is the upstream URL used by LoadRemote when WithURL is

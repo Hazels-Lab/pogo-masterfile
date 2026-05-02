@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/friendship_milestone_settings"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/friendship_milestone_settings"
 )
 
 // FriendshipMilestoneSettingsAccessor provides typed lookups for the "friendshipMilestoneSettings" group.

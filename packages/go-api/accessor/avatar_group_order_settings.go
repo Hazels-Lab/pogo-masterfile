@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/avatar_group_order_settings"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/avatar_group_order_settings"
 )
 
 // AvatarGroupOrderSettingsAccessor provides typed lookups for the "avatarGroupOrderSettings" group.

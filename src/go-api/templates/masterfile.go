@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"errors"
 
-	masterfile "github.com/PLACEHOLDER/pogo-masterfile-types/packages/go"
+	masterfile "github.com/Hazels-Lab/pogo-masterfile-types/packages/go"
 )
 
 // FromEntries wraps a pre-parsed slice of MasterfileEntry values, building the

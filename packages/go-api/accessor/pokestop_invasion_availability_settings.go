@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/pokestop_invasion_availability_settings"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/pokestop_invasion_availability_settings"
 )
 
 // PokestopInvasionAvailabilitySettingsAccessor provides typed lookups for the "pokestopInvasionAvailabilitySettings" group.

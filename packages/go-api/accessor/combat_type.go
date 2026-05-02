@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/combat_type"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/combat_type"
 )
 
 // CombatTypeAccessor provides typed lookups for the "combatType" group.

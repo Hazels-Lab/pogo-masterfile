@@ -7,7 +7,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	masterfile "github.com/PLACEHOLDER/pogo-masterfile-types/packages/go"
+	masterfile "github.com/Hazels-Lab/pogo-masterfile-types/packages/go"
 )
 
 func TestLoadRemote_Success(t *testing.T) {

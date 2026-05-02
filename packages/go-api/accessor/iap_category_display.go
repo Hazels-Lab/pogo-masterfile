@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/iap_category_display"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/iap_category_display"
 )
 
 // IapCategoryDisplayAccessor provides typed lookups for the "iapCategoryDisplay" group.

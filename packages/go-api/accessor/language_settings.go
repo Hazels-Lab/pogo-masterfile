@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/language_settings"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/language_settings"
 )
 
 // LanguageSettingsAccessor provides typed lookups for the "languageSettings" group.

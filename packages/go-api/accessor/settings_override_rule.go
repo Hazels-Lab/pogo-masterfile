@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/settings_override_rule"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/settings_override_rule"
 )
 
 // SettingsOverrideRuleAccessor provides typed lookups for the "settingsOverrideRule" group.

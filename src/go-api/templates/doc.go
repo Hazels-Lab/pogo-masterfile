@@ -1,13 +1,13 @@
 // Package masterfileapi provides a runtime API for the Pokémon GO masterfile —
 // loads, indexes, and queries entries by templateID with per-group typed
-// accessors. Built on top of the types module at github.com/PLACEHOLDER/pogo-masterfile-types/packages/go.
+// accessors. Built on top of the types module at github.com/Hazels-Lab/pogo-masterfile-types/packages/go.
 //
 // # Quick start
 //
 //	import (
 //	    "context"
-//	    masterfileapi "github.com/PLACEHOLDER/pogo-masterfile-types/packages/go-api"
-//	    "github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/move_settings"
+//	    masterfileapi "github.com/Hazels-Lab/pogo-masterfile-types/packages/go-api"
+//	    "github.com/Hazels-Lab/pogo-masterfile-types/packages/go/move_settings"
 //	)
 //
 //	mf, err := masterfileapi.LoadRemote(context.Background())

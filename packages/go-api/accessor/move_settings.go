@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/move_settings"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/move_settings"
 )
 
 // MoveSettingsAccessor provides typed lookups for the "moveSettings" group.

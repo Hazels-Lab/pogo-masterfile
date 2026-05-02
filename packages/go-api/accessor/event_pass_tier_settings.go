@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/event_pass_tier_settings"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/event_pass_tier_settings"
 )
 
 // EventPassTierSettingsAccessor provides typed lookups for the "eventPassTierSettings" group.

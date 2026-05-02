@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/quest_settings"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/quest_settings"
 )
 
 // QuestSettingsAccessor provides typed lookups for the "questSettings" group.

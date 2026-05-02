@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"log"
 
-	masterfileapi "github.com/PLACEHOLDER/pogo-masterfile-types/packages/go-api"
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/move_settings"
+	masterfileapi "github.com/Hazels-Lab/pogo-masterfile-types/packages/go-api"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/move_settings"
 )
 
 func main() {

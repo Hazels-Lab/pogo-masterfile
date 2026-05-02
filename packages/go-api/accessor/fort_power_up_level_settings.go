@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/fort_power_up_level_settings"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/fort_power_up_level_settings"
 )
 
 // FortPowerUpLevelSettingsAccessor provides typed lookups for the "fortPowerUpLevelSettings" group.

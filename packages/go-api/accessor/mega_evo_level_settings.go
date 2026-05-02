@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/mega_evo_level_settings"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/mega_evo_level_settings"
 )
 
 // MegaEvoLevelSettingsAccessor provides typed lookups for the "megaEvoLevelSettings" group.

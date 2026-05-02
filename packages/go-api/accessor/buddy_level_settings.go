@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/buddy_level_settings"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/buddy_level_settings"
 )
 
 // BuddyLevelSettingsAccessor provides typed lookups for the "buddyLevelSettings" group.

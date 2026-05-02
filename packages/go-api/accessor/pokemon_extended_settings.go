@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/pokemon_extended_settings"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/pokemon_extended_settings"
 )
 
 // PokemonExtendedSettingsAccessor provides typed lookups for the "pokemonExtendedSettings" group.

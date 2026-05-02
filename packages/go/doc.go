@@ -8,7 +8,7 @@
 // # Quick start
 //
 //	import (
-//	    masterfile "github.com/PLACEHOLDER/pogo-masterfile-types/packages/go"
+//	    masterfile "github.com/Hazels-Lab/pogo-masterfile-types/packages/go"
 //	)
 //
 //	json, _ := os.ReadFile("masterfile.json")

@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/pokemon_upgrades"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/pokemon_upgrades"
 )
 
 // PokemonUpgradesAccessor provides typed lookups for the "pokemonUpgrades" group.

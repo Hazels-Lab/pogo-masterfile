@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/photo_sets_settings_proto"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/photo_sets_settings_proto"
 )
 
 // PhotoSetsSettingsProtoAccessor provides typed lookups for the "photoSetsSettingsProto" group.

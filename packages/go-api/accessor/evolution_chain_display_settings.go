@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/PLACEHOLDER/pogo-masterfile-types/packages/go/evolution_chain_display_settings"
+	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/evolution_chain_display_settings"
 )
 
 // EvolutionChainDisplaySettingsAccessor provides typed lookups for the "evolutionChainDisplaySettings" group.
