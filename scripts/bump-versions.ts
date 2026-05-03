@@ -76,7 +76,7 @@ function setManifestVersion(p: PkgInfo, v: string): void {
 	if (p.manifest.type === "package.json") {
 		const obj = JSON.parse(readFileSync(p.manifest.path, "utf8"));
 		obj.version = v;
-		writeFileSync(p.manifest.path, `${JSON.stringify(obj, null, 2)}\n`);
+		writeFileSync(p.manifest.path, `${JSON.stringify(obj, null, "\t")}\n`);
 	} else {
 		const text = readFileSync(p.manifest.path, "utf8");
 		writeFileSync(p.manifest.path, text.replace(/^version\s*=\s*"[^"]+"/m, `version = "${v}"`));
@@ -133,7 +133,9 @@ for (const p of PACKAGES) {
 	console.log(`${p.path}: ${next}`);
 }
 
-writeFileSync(VERSIONS_FILE, `${JSON.stringify(versions, null, 2)}\n`);
+if (Object.keys(bumps).length > 0) {
+	writeFileSync(VERSIONS_FILE, `${JSON.stringify(versions, null, "\t")}\n`);
+}
 
 const goBump = bumps["packages/go"];
 if (goBump) {
