@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/weather_affinities"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/weather_affinities"
 )
 
 // WeatherAffinitiesAccessor provides typed lookups for the "weatherAffinities" group.

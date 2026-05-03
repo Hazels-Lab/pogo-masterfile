@@ -3,8 +3,8 @@ package masterfile
 import (
 	"testing"
 
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/badge_settings"
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/singletons"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/badge_settings"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/singletons"
 )
 
 func TestParseEmptyList(t *testing.T) {

@@ -120,7 +120,7 @@ For lookups, `Option<&Entry>` carries the "not found" case — no exception path
 
 ## Source
 
-Generated from the codegen pipeline at the [repo root](https://github.com/Hazels-Lab/pogo-masterfile-types). Don't edit emitted files — re-run `bun run generate` instead.
+Generated from the codegen pipeline at the [repo root](https://github.com/Hazels-Lab/pogo-masterfile). Don't edit emitted files — re-run `bun run generate` instead.
 
 ## License
 

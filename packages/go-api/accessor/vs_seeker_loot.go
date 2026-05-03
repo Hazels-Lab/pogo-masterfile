@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/vs_seeker_loot"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/vs_seeker_loot"
 )
 
 // VsSeekerLootAccessor provides typed lookups for the "vsSeekerLoot" group.

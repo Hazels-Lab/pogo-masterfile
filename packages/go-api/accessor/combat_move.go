@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/combat_move"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/combat_move"
 )
 
 // CombatMoveAccessor provides typed lookups for the "combatMove" group.

@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/combat_npc_trainer"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/combat_npc_trainer"
 )
 
 // CombatNpcTrainerAccessor provides typed lookups for the "combatNpcTrainer" group.

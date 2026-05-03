@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/iap_item_display"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/iap_item_display"
 )
 
 // IapItemDisplayAccessor provides typed lookups for the "iapItemDisplay" group.

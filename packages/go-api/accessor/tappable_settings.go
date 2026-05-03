@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/tappable_settings"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/tappable_settings"
 )
 
 // TappableSettingsAccessor provides typed lookups for the "tappableSettings" group.

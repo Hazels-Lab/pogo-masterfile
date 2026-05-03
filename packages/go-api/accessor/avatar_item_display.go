@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/avatar_item_display"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/avatar_item_display"
 )
 
 // AvatarItemDisplayAccessor provides typed lookups for the "avatarItemDisplay" group.

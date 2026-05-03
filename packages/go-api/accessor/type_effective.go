@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/type_effective"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/type_effective"
 )
 
 // TypeEffectiveAccessor provides typed lookups for the "typeEffective" group.

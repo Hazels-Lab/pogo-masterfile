@@ -5,7 +5,7 @@ import (
 	"errors"
 	"testing"
 
-	masterfile "github.com/Hazels-Lab/pogo-masterfile-types/packages/go"
+	masterfile "github.com/Hazels-Lab/pogo-masterfile/packages/go"
 )
 
 func TestFetcherFunc_ImplementsFetcher(t *testing.T) {

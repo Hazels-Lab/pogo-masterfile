@@ -8,7 +8,7 @@ import (
 	"os"
 	"time"
 
-	masterfile "github.com/Hazels-Lab/pogo-masterfile-types/packages/go"
+	masterfile "github.com/Hazels-Lab/pogo-masterfile/packages/go"
 )
 
 func main() {

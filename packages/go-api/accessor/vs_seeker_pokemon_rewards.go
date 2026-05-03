@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/vs_seeker_pokemon_rewards"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/vs_seeker_pokemon_rewards"
 )
 
 // VsSeekerPokemonRewardsAccessor provides typed lookups for the "vsSeekerPokemonRewards" group.

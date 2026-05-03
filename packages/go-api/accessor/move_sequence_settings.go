@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/move_sequence_settings"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/move_sequence_settings"
 )
 
 // MoveSequenceSettingsAccessor provides typed lookups for the "moveSequenceSettings" group.

@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/buddy_activity_category_settings"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/buddy_activity_category_settings"
 )
 
 // BuddyActivityCategorySettingsAccessor provides typed lookups for the "buddyActivityCategorySettings" group.

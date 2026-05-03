@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/sticker_metadata"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/sticker_metadata"
 )
 
 // StickerMetadataAccessor provides typed lookups for the "stickerMetadata" group.

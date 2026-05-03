@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	masterfile "github.com/Hazels-Lab/pogo-masterfile-types/packages/go"
+	masterfile "github.com/Hazels-Lab/pogo-masterfile/packages/go"
 )
 
 const fixtureJSON = `[

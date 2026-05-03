@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/recommended_search_settings"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/recommended_search_settings"
 )
 
 // RecommendedSearchSettingsAccessor provides typed lookups for the "recommendedSearchSettings" group.

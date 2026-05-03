@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/badge_settings"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/badge_settings"
 )
 
 // BadgeSettingsAccessor provides typed lookups for the "badgeSettings" group.

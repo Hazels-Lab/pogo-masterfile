@@ -9,8 +9,8 @@ describe("emitSingletonsAccessor", () => {
 	});
 
 	test("imports both upstream packages", () => {
-		expect(out).toContain('masterfile "github.com/Hazels-Lab/pogo-masterfile-types/packages/go"');
-		expect(out).toContain('"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/singletons"');
+		expect(out).toContain('masterfile "github.com/Hazels-Lab/pogo-masterfile/packages/go"');
+		expect(out).toContain('"github.com/Hazels-Lab/pogo-masterfile/packages/go/singletons"');
 	});
 
 	test("constructor accepts entries + ids slice", () => {

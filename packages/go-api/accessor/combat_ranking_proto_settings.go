@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/combat_ranking_proto_settings"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/combat_ranking_proto_settings"
 )
 
 // CombatRankingProtoSettingsAccessor provides typed lookups for the "combatRankingProtoSettings" group.

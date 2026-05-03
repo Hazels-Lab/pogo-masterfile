@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/combat_league"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/combat_league"
 )
 
 // CombatLeagueAccessor provides typed lookups for the "combatLeague" group.

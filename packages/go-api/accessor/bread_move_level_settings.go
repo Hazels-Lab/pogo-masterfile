@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/bread_move_level_settings"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/bread_move_level_settings"
 )
 
 // BreadMoveLevelSettingsAccessor provides typed lookups for the "breadMoveLevelSettings" group.

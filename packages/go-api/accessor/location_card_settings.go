@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/location_card_settings"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/location_card_settings"
 )
 
 // LocationCardSettingsAccessor provides typed lookups for the "locationCardSettings" group.

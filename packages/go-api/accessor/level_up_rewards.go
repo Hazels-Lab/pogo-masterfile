@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/level_up_rewards"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/level_up_rewards"
 )
 
 // LevelUpRewardsAccessor provides typed lookups for the "levelUpRewards" group.

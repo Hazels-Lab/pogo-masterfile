@@ -8,8 +8,8 @@ import (
 	"log"
 	"net/http"
 
-	masterfile "github.com/Hazels-Lab/pogo-masterfile-types/packages/go"
-	masterfileapi "github.com/Hazels-Lab/pogo-masterfile-types/packages/go-api"
+	masterfile "github.com/Hazels-Lab/pogo-masterfile/packages/go"
+	masterfileapi "github.com/Hazels-Lab/pogo-masterfile/packages/go-api"
 )
 
 func main() {

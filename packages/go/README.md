@@ -5,7 +5,7 @@ Generated Go type definitions for the Pokémon GO masterfile, plus a typed `Pars
 ## Install
 
 ```bash
-go get github.com/Hazels-Lab/pogo-masterfile-types/packages/go
+go get github.com/Hazels-Lab/pogo-masterfile/packages/go
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ import (
     "log"
     "os"
 
-    masterfile "github.com/Hazels-Lab/pogo-masterfile-types/packages/go"
+    masterfile "github.com/Hazels-Lab/pogo-masterfile/packages/go"
 )
 
 func main() {
@@ -61,7 +61,7 @@ See [Go modules in subdirectories](https://go.dev/ref/mod#vcs-version) for the u
 
 ## Source
 
-Generated from `masterfile.json` via the codegen pipeline at the [repo root](https://github.com/Hazels-Lab/pogo-masterfile-types). Don't edit emitted files by hand — re-run `bun run generate` instead.
+Generated from `masterfile.json` via the codegen pipeline at the [repo root](https://github.com/Hazels-Lab/pogo-masterfile). Don't edit emitted files by hand — re-run `bun run generate` instead.
 
 ## License
 

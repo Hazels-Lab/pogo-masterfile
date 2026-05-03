@@ -18,7 +18,7 @@ describe("emitAccessor", () => {
 
 	test("imports the per-group sub-package", () => {
 		const out = emitAccessor(sampleGroup);
-		expect(out).toContain('"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/move_settings"');
+		expect(out).toContain('"github.com/Hazels-Lab/pogo-masterfile/packages/go/move_settings"');
 	});
 
 	test("public constructor and method set", () => {

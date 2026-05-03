@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/item_expiration_settings"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/item_expiration_settings"
 )
 
 // ItemExpirationSettingsAccessor provides typed lookups for the "itemExpirationSettings" group.

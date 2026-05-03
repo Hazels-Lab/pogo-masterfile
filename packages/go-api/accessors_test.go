@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/move_settings"
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/singletons"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/move_settings"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/singletons"
 )
 
 func loadFixture(t *testing.T) *Masterfile {

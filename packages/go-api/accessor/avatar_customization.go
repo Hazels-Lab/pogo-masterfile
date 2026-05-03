@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/avatar_customization"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/avatar_customization"
 )
 
 // AvatarCustomizationAccessor provides typed lookups for the "avatarCustomization" group.

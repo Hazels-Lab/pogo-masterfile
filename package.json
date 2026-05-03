@@ -1,5 +1,5 @@
 {
-	"name": "pogo-masterfile-types-monorepo",
+	"name": "pogo-masterfile-monorepo",
 	"module": "src/generate.ts",
 	"type": "module",
 	"private": true,

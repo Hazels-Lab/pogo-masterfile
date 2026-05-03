@@ -13,7 +13,7 @@ export function emitAccessor(group: Group): string {
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/${pkg}"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/${pkg}"
 )
 
 // ${aName} provides typed lookups for the "${disc}" group.

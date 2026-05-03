@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/temporary_evolution_settings"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/temporary_evolution_settings"
 )
 
 // TemporaryEvolutionSettingsAccessor provides typed lookups for the "temporaryEvolutionSettings" group.

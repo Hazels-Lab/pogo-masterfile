@@ -1,18 +1,18 @@
-# pogo-masterfile-types
+# pogo-masterfile
 
-Generated, language-native type definitions for the Pokémon GO masterfile.
+Generated, language-native type definitions and runtime APIs for the Pokémon GO masterfile.
 
-The masterfile is a single JSON document of ~hundreds of strongly-typed entry kinds (`PokemonSettings`, `MoveSettings`, `ItemSettings`, …). This repo treats it as a schema source and emits idiomatic types for three target languages — so you don't have to roll your own.
+The masterfile is a single JSON document of ~hundreds of strongly-typed entry kinds (`PokemonSettings`, `MoveSettings`, `ItemSettings`, …). This repo treats it as a schema source and emits idiomatic types — plus a typed loader/lookup runtime — for three target languages, so you don't have to roll your own.
 
 ## Published artifacts
 
-| Language   | Package                         | Registry                      |
-| ---------- | ------------------------------- | ----------------------------- |
-| TypeScript | `pogo-masterfile-types`         | npm                           |
-| Rust       | `pogo-masterfile-types`         | crates.io                     |
-| Go         | `…/packages/go`                 | proxy.golang.org              |
+| Language   | Types                       | Runtime API           | Registry          |
+| ---------- | --------------------------- | --------------------- | ----------------- |
+| TypeScript | `pogo-masterfile-types`     | `pogo-masterfile`     | npm               |
+| Rust       | `pogo-masterfile-types`     | `pogo-masterfile`     | crates.io         |
+| Go         | `…/packages/go`             | `…/packages/go-api`   | proxy.golang.org  |
 
-Each package ships:
+Each types package ships:
 
 - **An `Entry` / `EntryData` / payload triple** per discriminator — the outer `{ templateId, data: { … } }` wrapper, the inner `data` object, and the discriminator-keyed payload itself.
 - **A `parseMasterfile` (or `ParseMasterfile`) helper** that dispatches each JSON entry to its concrete type by inspecting the inner data object's non-`templateId` key.

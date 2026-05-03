@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/pokemon_home_energy_costs"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/pokemon_home_energy_costs"
 )
 
 // PokemonHomeEnergyCostsAccessor provides typed lookups for the "pokemonHomeEnergyCosts" group.

@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/evolution_quest_template"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/evolution_quest_template"
 )
 
 // EvolutionQuestTemplateAccessor provides typed lookups for the "evolutionQuestTemplate" group.

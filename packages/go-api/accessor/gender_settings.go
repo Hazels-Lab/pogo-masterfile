@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/gender_settings"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/gender_settings"
 )
 
 // GenderSettingsAccessor provides typed lookups for the "genderSettings" group.

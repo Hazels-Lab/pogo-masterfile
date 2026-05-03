@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/combat_npc_personality"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/combat_npc_personality"
 )
 
 // CombatNpcPersonalityAccessor provides typed lookups for the "combatNpcPersonality" group.

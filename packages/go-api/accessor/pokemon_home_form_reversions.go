@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/pokemon_home_form_reversions"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/pokemon_home_form_reversions"
 )
 
 // PokemonHomeFormReversionsAccessor provides typed lookups for the "pokemonHomeFormReversions" group.

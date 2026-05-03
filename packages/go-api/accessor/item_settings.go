@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/item_settings"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/item_settings"
 )
 
 // ItemSettingsAccessor provides typed lookups for the "itemSettings" group.

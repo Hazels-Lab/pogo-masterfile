@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/code_gate_proto"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/code_gate_proto"
 )
 
 // CodeGateProtoAccessor provides typed lookups for the "codeGateProto" group.

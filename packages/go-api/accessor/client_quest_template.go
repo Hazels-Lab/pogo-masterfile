@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/client_quest_template"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/client_quest_template"
 )
 
 // ClientQuestTemplateAccessor provides typed lookups for the "clientQuestTemplate" group.

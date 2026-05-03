@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/limited_purchase_sku_settings"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/limited_purchase_sku_settings"
 )
 
 // LimitedPurchaseSkuSettingsAccessor provides typed lookups for the "limitedPurchaseSkuSettings" group.

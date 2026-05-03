@@ -5,7 +5,7 @@ Runtime API for the Pokémon GO masterfile. Loads, indexes, and queries entries 
 ## Install
 
 ```bash
-go get github.com/Hazels-Lab/pogo-masterfile-types/packages/go-api
+go get github.com/Hazels-Lab/pogo-masterfile/packages/go-api
 ```
 
 ## Quickstart
@@ -18,8 +18,8 @@ import (
     "fmt"
     "log"
 
-    masterfileapi "github.com/Hazels-Lab/pogo-masterfile-types/packages/go-api"
-    "github.com/Hazels-Lab/pogo-masterfile-types/packages/go/move_settings"
+    masterfileapi "github.com/Hazels-Lab/pogo-masterfile/packages/go-api"
+    "github.com/Hazels-Lab/pogo-masterfile/packages/go/move_settings"
 )
 
 func main() {
@@ -127,7 +127,7 @@ See [Go modules in subdirectories](https://go.dev/ref/mod#vcs-version) for the u
 
 ## Source
 
-`masterfile_gen.go` and `accessor/*.go` are generated from the codegen pipeline at the [repo root](https://github.com/Hazels-Lab/pogo-masterfile-types). Don't edit emitted files by hand — re-run `bun run generate` instead. The hand-written runtime templates (`masterfile.go`, `loader.go`, `fetcher.go`, `errors.go`, `doc.go`) live in `src/go-api/templates/` and are copied verbatim on each generate.
+`masterfile_gen.go` and `accessor/*.go` are generated from the codegen pipeline at the [repo root](https://github.com/Hazels-Lab/pogo-masterfile). Don't edit emitted files by hand — re-run `bun run generate` instead. The hand-written runtime templates (`masterfile.go`, `loader.go`, `fetcher.go`, `errors.go`, `doc.go`) live in `src/go-api/templates/` and are copied verbatim on each generate.
 
 ## License
 

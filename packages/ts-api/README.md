@@ -180,7 +180,7 @@ This package ships compiled `.js` + `.d.ts` from a `src/` → `dist/` build. It 
 
 ## Source
 
-All code under `dist/` is built from generated source in `src/`, which is itself produced by the codegen pipeline at the [repo root](https://github.com/Hazels-Lab/pogo-masterfile-types). Don't edit emitted files by hand — re-run `bun run generate`.
+All code under `dist/` is built from generated source in `src/`, which is itself produced by the codegen pipeline at the [repo root](https://github.com/Hazels-Lab/pogo-masterfile). Don't edit emitted files by hand — re-run `bun run generate`.
 
 ## License
 

@@ -3,7 +3,7 @@
 package accessor
 
 import (
-	"github.com/Hazels-Lab/pogo-masterfile-types/packages/go/pokemon_settings"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/pokemon_settings"
 )
 
 // PokemonSettingsAccessor provides typed lookups for the "pokemonSettings" group.

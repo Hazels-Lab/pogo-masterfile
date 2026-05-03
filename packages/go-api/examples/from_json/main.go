@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	masterfileapi "github.com/Hazels-Lab/pogo-masterfile-types/packages/go-api"
+	masterfileapi "github.com/Hazels-Lab/pogo-masterfile/packages/go-api"
 )
 
 func main() {
