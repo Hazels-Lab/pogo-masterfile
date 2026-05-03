@@ -3,7 +3,7 @@
 	"version": "0.1.0",
 	"description": "Runtime API for the Pokémon GO masterfile. Loads, indexes, and queries entries with literal-typed lookups and per-group accessors. Built on `pogo-masterfile-types`.",
 	"license": "MIT",
-	"author": "Rin <derick.magnusen@gmail.com>",
+	"author": "Hazel's Lab (https://github.com/Hazels-Lab)",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/Hazels-Lab/pogo-masterfile.git",
