@@ -2,7 +2,7 @@ name: Tag releases for bumped packages
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
 
 permissions:
   contents: write
@@ -16,7 +16,7 @@ jobs:
     name: Detect bumps and push release tags
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           token: ${{ secrets.AUTOUPDATE_TOKEN }}
           fetch-depth: 2

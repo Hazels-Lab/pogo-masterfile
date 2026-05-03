@@ -2,7 +2,7 @@ name: Autoupdate from upstream masterfile
 
 on:
   schedule:
-    - cron: "30 */6 * * *"
+    - cron: "30 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -18,7 +18,7 @@ jobs:
     name: Regenerate types and open PR
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           token: ${{ secrets.AUTOUPDATE_TOKEN }}
           fetch-depth: 0
@@ -45,7 +45,7 @@ jobs:
         if: steps.upstream.outputs.changed == 'true'
         with:
           components: rustfmt
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         if: steps.upstream.outputs.changed == 'true'
         with:
           go-version: stable
@@ -89,8 +89,9 @@ jobs:
           fi
 
       - name: Open pull request
-        if: steps.upstream.outputs.changed == 'true' && steps.diff.outputs.has_diff == 'true'
-        uses: peter-evans/create-pull-request@v7
+        if: steps.upstream.outputs.changed == 'true' && steps.diff.outputs.has_diff ==
+          'true'
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.AUTOUPDATE_TOKEN }}
           branch: autoupdate/upstream-${{ steps.upstream.outputs.new_sha }}
@@ -101,5 +102,7 @@ jobs:
             Per-package patch bumps and CHANGELOG stubs are included in the diff. Auto-merges when CI is green.
           labels: autoupdate
           commit-message: "chore: autoupdate types from upstream"
-          author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          author: github-actions[bot]
+            <41898282+github-actions[bot]@users.noreply.github.com>
+          committer: github-actions[bot]
+            <41898282+github-actions[bot]@users.noreply.github.com>
