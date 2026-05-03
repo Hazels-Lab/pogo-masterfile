@@ -1,7 +1,4 @@
 //! Builder for `Masterfile::from_remote` — handles URL/timeout/fetcher overrides.
-
-#![cfg(feature = "async")]
-
 use std::time::Duration;
 
 use crate::error::Result;

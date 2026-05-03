@@ -27,16 +27,10 @@ async fn custom_fetcher_error_wraps_in_custom_variant() {
 
     struct ErroringFetcher;
     impl Fetcher for ErroringFetcher {
-        fn fetch(
-            &self,
-            _url: &str,
-        ) -> impl std::future::Future<Output = Result<Vec<MasterfileEntry>>> + Send {
-            async move {
-                Err(Error::Custom(Box::new(std::io::Error::new(
-                    std::io::ErrorKind::Other,
-                    "simulated failure",
-                ))))
-            }
+        async fn fetch(&self, _url: &str) -> Result<Vec<MasterfileEntry>> {
+            Err(Error::Custom(Box::new(std::io::Error::other(
+                "simulated failure",
+            ))))
         }
     }
 

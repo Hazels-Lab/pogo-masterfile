@@ -15,7 +15,7 @@ async fn main() -> pogo_masterfile::Result<()> {
     let mf = Masterfile::from_remote().await?;
     println!("loaded {} entries", mf.len());
 
-    if let Some(typed) = MoveSettingsTemplateId::from_str("V0022_MOVE_MEGAHORN").ok() {
+    if let Ok(typed) = MoveSettingsTemplateId::from_str("V0022_MOVE_MEGAHORN") {
         if let Some(move_) = mf.move_settings().get(typed) {
             println!("megahorn templateId: {}", move_.template_id);
         }
