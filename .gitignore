@@ -67,3 +67,4 @@ target
 
 # Go build artifacts
 *.exe
+docs/**/*.md
