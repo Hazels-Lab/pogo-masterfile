@@ -1,8 +1,8 @@
 # pogo-masterfile
 
-Generated, language-native type definitions and runtime APIs for the Pokémon GO masterfile.
+Generated, language-native type definitions and runtime APIs for the Pokémon GO masterfile — published as `pogo-masterfile-types` / `pogo-masterfile` for **TypeScript** (npm), **Rust** (crates.io), and **Go** (proxy.golang.org).
 
-The masterfile is a single JSON document of ~hundreds of strongly-typed entry kinds (`PokemonSettings`, `MoveSettings`, `ItemSettings`, …). This repo treats it as a schema source and emits idiomatic types — plus a typed loader/lookup runtime — for three target languages, so you don't have to roll your own.
+The masterfile is a single JSON document of ~hundreds of strongly-typed entry kinds (`PokemonSettings`, `MoveSettings`, `ItemSettings`, …). This repo treats it as a schema source and emits idiomatic types — plus a typed loader/lookup runtime — for all three target languages, so you don't have to roll your own.
 
 ## Published artifacts
 
