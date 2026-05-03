@@ -21,6 +21,8 @@ jobs:
         with:
           node-version: "20"
           registry-url: "https://registry.npmjs.org"
+      # Trusted Publishing requires npm >= 11.5.1; Node 20 ships with npm 10.x.
+      - run: npm install -g npm@latest
       - run: bun install --frozen-lockfile
       # packages/ts ships its committed dist/ verbatim — no build step.
       # `bun run check` verifies the dist/ matches its source via tsconfig.build.
@@ -30,5 +32,3 @@ jobs:
       - name: Publish
         run: npm publish --provenance --access public
         working-directory: packages/ts
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
