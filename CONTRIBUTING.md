@@ -33,8 +33,9 @@ Required secrets (Settings → Secrets and variables → Actions):
 | Secret | Permissions | Purpose |
 |---|---|---|
 | `AUTOUPDATE_TOKEN` | Fine-grained PAT with `contents: write` + `pull-requests: write` on this repo | Lets autoupdate workflows open PRs and push tags such that downstream workflows actually fire (the default `GITHUB_TOKEN` cannot trigger workflow chains). |
-| `NPM_TOKEN` | Automation token for the `pogo-masterfile-types` and `pogo-masterfile` npm packages | Used by `publish-npm.yml` and `publish-pogo-masterfile.yml`. |
 | `CARGO_REGISTRY_TOKEN` | Token from <https://crates.io/settings/tokens> with `publish-new` + `publish-update` for the three Rust crates | Used by `publish-rust*.yml`. |
+
+The two npm packages (`pogo-masterfile-types`, `pogo-masterfile`) use **npm Trusted Publishing** instead of a long-lived token — no `NPM_TOKEN` secret is required. Each package's npm.com page has a Trusted Publisher entry that names this repo and the workflow file allowed to publish to it (`publish-npm.yml` for `pogo-masterfile-types`, `publish-pogo-masterfile.yml` for `pogo-masterfile`). The publish step exchanges the workflow's OIDC token for short-lived credentials at publish time.
 
 Repo settings:
 
@@ -51,6 +52,10 @@ git push origin rust-macros-v0.1.0
 ```
 
 After that the pipeline self-services. To pause it: disable the `Autoupdate` workflow in the Actions UI.
+
+#### Renaming an npm publish workflow
+
+If you ever rename `publish-npm.yml` or `publish-pogo-masterfile.yml`, the next publish for that package will be rejected with an OIDC trust mismatch. Update the workflow path in the package's Trusted Publisher config on npm.com (Manage → Trusted Publishers) before pushing a tag against the renamed file.
 
 ### Manual override
 
