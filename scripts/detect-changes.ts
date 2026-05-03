@@ -42,27 +42,69 @@ function hashPackage(pkgPath: string): string {
 	return hasher.digest("hex");
 }
 
-/**
- * TODO — IMPLEMENT THIS (~5–10 lines).
- *
- * Goal: same logical content → same bytes. Codegen sometimes produces
- * non-semantic diffs (reordered keys, trailing whitespace, line-ending
- * differences). Without normalization, those trigger spurious patch releases.
- *
- * Suggested strategy (pick from these or roll your own):
- *   - Files ending in `.json`: JSON.parse + JSON.stringify with sorted keys.
- *   - Text files (.ts/.rs/.go/.toml/.md/etc.): convert to string, normalize
- *     line endings (\r\n → \n), trim trailing whitespace per line, drop a
- *     final trailing newline so single-byte deltas don't trigger.
- *   - Binary or unrecognized extensions: return raw as-is.
- *
- * Hint: dispatch on the file extension. Keep it boring.
- *
- * The autoupdate workflow won't function until this is implemented — that's
- * deliberate, since the choice here directly affects which changes ship.
- */
-function canonicalize(filePath: string, _raw: Buffer): Buffer {
-	throw new Error(`canonicalize not implemented yet for ${filePath} — see TODO in scripts/detect-changes.ts`);
+// Normalize content so non-semantic diffs (reordered JSON keys, trailing
+// whitespace, line-ending differences) don't bump versions. Anything we don't
+// recognize as text passes through byte-identical.
+function canonicalize(filePath: string, raw: Buffer): Buffer {
+	const lower = filePath.toLowerCase();
+
+	// JSON: parse and re-emit with recursively sorted keys.
+	if (lower.endsWith(".json")) {
+		try {
+			return Buffer.from(stableStringify(JSON.parse(raw.toString("utf8"))));
+		} catch {
+			// Malformed JSON — fall through to text normalization rather than
+			// silently passing it through; we'd rather notice odd files.
+		}
+	}
+
+	// Text source: normalize line endings, drop trailing whitespace per line,
+	// collapse trailing blank lines into a single \n.
+	if (isTextLike(lower)) {
+		const text = raw
+			.toString("utf8")
+			.replace(/\r\n/g, "\n")
+			.split("\n")
+			.map((line) => line.replace(/[\t ]+$/, ""))
+			.join("\n")
+			.replace(/\n+$/, "\n");
+		return Buffer.from(text, "utf8");
+	}
+
+	// Unknown extension — assume binary and pass through unchanged.
+	return raw;
+}
+
+function isTextLike(lowerPath: string): boolean {
+	if (
+		lowerPath.endsWith(".ts") ||
+		lowerPath.endsWith(".tsx") ||
+		lowerPath.endsWith(".js") ||
+		lowerPath.endsWith(".rs") ||
+		lowerPath.endsWith(".go") ||
+		lowerPath.endsWith(".toml") ||
+		lowerPath.endsWith(".md") ||
+		lowerPath.endsWith(".mod") ||
+		lowerPath.endsWith(".sum") ||
+		lowerPath.endsWith(".json")
+	) {
+		return true;
+	}
+	// Extensionless tracked text files (LICENSE, etc.).
+	const base = lowerPath.split("/").pop() ?? "";
+	return base === "license" || base === "license.txt";
+}
+
+function stableStringify(value: unknown): string {
+	if (value === null || typeof value !== "object") {
+		return JSON.stringify(value);
+	}
+	if (Array.isArray(value)) {
+		return `[${value.map(stableStringify).join(",")}]`;
+	}
+	const obj = value as Record<string, unknown>;
+	const keys = Object.keys(obj).sort();
+	return `{${keys.map((k) => `${JSON.stringify(k)}:${stableStringify(obj[k])}`).join(",")}}`;
 }
 
 const out: Record<string, string> = {};
