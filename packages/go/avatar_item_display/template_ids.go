@@ -772,6 +772,8 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShirt6thanniversaryA0               AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_6thanniversary_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirt6thanniversaryB0               AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_6thanniversary_b_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirt7thanniversary0                AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_7thanniversary_0"
+	AvatarItemDisplayTemplateIDNDisplayNShirt10thanniversaryBeige           AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_10thanniversary-beige"
+	AvatarItemDisplayTemplateIDNDisplayNShirt10thanniversaryYellow          AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_10thanniversary-yellow"
 	AvatarItemDisplayTemplateIDNDisplayNShirtAcetrainerbwA0                 AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_acetrainerbw_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtAcetrainerbwB0                 AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_acetrainerbw_b_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtAcetrainersmA0                 AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_acetrainersm_a_0"
@@ -1198,6 +1200,8 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2025anaheimYellow0          AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_wcs2025anaheim-yellow_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2025paiditems0              AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_wcs2025paiditems_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2025winnersitems0           AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_wcs2025winnersitems_0"
+	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2026                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_wcs2026"
+	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2027                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_wcs2027"
 	AvatarItemDisplayTemplateIDNDisplayNShirtWcsyokohama0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_wcsyokohama_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtWhitecoat0                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_whitecoat_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtWintersweater20230             AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_wintersweater2023_0"
@@ -2418,6 +2422,8 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShirt6thanniversaryA0,
 	AvatarItemDisplayTemplateIDNDisplayNShirt6thanniversaryB0,
 	AvatarItemDisplayTemplateIDNDisplayNShirt7thanniversary0,
+	AvatarItemDisplayTemplateIDNDisplayNShirt10thanniversaryBeige,
+	AvatarItemDisplayTemplateIDNDisplayNShirt10thanniversaryYellow,
 	AvatarItemDisplayTemplateIDNDisplayNShirtAcetrainerbwA0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtAcetrainerbwB0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtAcetrainersmA0,
@@ -2844,6 +2850,8 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2025anaheimYellow0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2025paiditems0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2025winnersitems0,
+	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2026,
+	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2027,
 	AvatarItemDisplayTemplateIDNDisplayNShirtWcsyokohama0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtWhitecoat0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtWintersweater20230,

@@ -281,8 +281,6 @@ const (
 	IapItemDisplayTemplateIDGeneral2Ticket1Giftable                                  IapItemDisplayTemplateID = "general2.ticket.1.giftable"
 	IapItemDisplayTemplateIDGeneral2Ticket2                                          IapItemDisplayTemplateID = "general2.ticket.2"
 	IapItemDisplayTemplateIDGeneral2Ticket2Giftable                                  IapItemDisplayTemplateID = "general2.ticket.2.giftable"
-	IapItemDisplayTemplateIDGeneral2Ticket3                                          IapItemDisplayTemplateID = "general2.ticket.3"
-	IapItemDisplayTemplateIDGeneral2Ticket3Giftable                                  IapItemDisplayTemplateID = "general2.ticket.3.giftable"
 	IapItemDisplayTemplateIDGeneral2Ticket4                                          IapItemDisplayTemplateID = "general2.ticket.4"
 	IapItemDisplayTemplateIDGeneral2Ticket4Giftable                                  IapItemDisplayTemplateID = "general2.ticket.4.giftable"
 	IapItemDisplayTemplateIDGeneral2Ticket5                                          IapItemDisplayTemplateID = "general2.ticket.5"
@@ -420,8 +418,6 @@ const (
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket1Giftable                        IapItemDisplayTemplateID = "pgorelease.general2.ticket.1.giftable"
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket2                                IapItemDisplayTemplateID = "pgorelease.general2.ticket.2"
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket2Giftable                        IapItemDisplayTemplateID = "pgorelease.general2.ticket.2.giftable"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket3                                IapItemDisplayTemplateID = "pgorelease.general2.ticket.3"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket3Giftable                        IapItemDisplayTemplateID = "pgorelease.general2.ticket.3.giftable"
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket4                                IapItemDisplayTemplateID = "pgorelease.general2.ticket.4"
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket4Giftable                        IapItemDisplayTemplateID = "pgorelease.general2.ticket.4.giftable"
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket5                                IapItemDisplayTemplateID = "pgorelease.general2.ticket.5"
@@ -1404,8 +1400,6 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDGeneral2Ticket1Giftable,
 	IapItemDisplayTemplateIDGeneral2Ticket2,
 	IapItemDisplayTemplateIDGeneral2Ticket2Giftable,
-	IapItemDisplayTemplateIDGeneral2Ticket3,
-	IapItemDisplayTemplateIDGeneral2Ticket3Giftable,
 	IapItemDisplayTemplateIDGeneral2Ticket4,
 	IapItemDisplayTemplateIDGeneral2Ticket4Giftable,
 	IapItemDisplayTemplateIDGeneral2Ticket5,
@@ -1543,8 +1537,6 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket1Giftable,
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket2,
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket2Giftable,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket3,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket3Giftable,
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket4,
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket4Giftable,
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket5,

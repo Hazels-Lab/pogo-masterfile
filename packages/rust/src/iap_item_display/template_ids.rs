@@ -559,10 +559,6 @@ pub enum IapItemDisplayTemplateId {
     General2Ticket2,
     #[serde(rename = "general2.ticket.2.giftable")]
     General2Ticket2Giftable,
-    #[serde(rename = "general2.ticket.3")]
-    General2Ticket3,
-    #[serde(rename = "general2.ticket.3.giftable")]
-    General2Ticket3Giftable,
     #[serde(rename = "general2.ticket.4")]
     General2Ticket4,
     #[serde(rename = "general2.ticket.4.giftable")]
@@ -837,10 +833,6 @@ pub enum IapItemDisplayTemplateId {
     PgoreleaseGeneral2Ticket2,
     #[serde(rename = "pgorelease.general2.ticket.2.giftable")]
     PgoreleaseGeneral2Ticket2Giftable,
-    #[serde(rename = "pgorelease.general2.ticket.3")]
-    PgoreleaseGeneral2Ticket3,
-    #[serde(rename = "pgorelease.general2.ticket.3.giftable")]
-    PgoreleaseGeneral2Ticket3Giftable,
     #[serde(rename = "pgorelease.general2.ticket.4")]
     PgoreleaseGeneral2Ticket4,
     #[serde(rename = "pgorelease.general2.ticket.4.giftable")]

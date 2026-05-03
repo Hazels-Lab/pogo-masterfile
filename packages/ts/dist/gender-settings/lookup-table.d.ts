@@ -113,6 +113,7 @@ import type {
 	GenderSettingsV0025PokemonPikachuTshirt01,
 	GenderSettingsV0025PokemonPikachuTshirt02,
 	GenderSettingsV0025PokemonPikachuTshirt03,
+	GenderSettingsV0025PokemonPikachuVisor2026,
 	GenderSettingsV0025PokemonPikachuVs2019,
 	GenderSettingsV0025PokemonPikachuWcs2022,
 	GenderSettingsV0025PokemonPikachuWcs2023,
@@ -2579,6 +2580,7 @@ export interface GenderSettingsLookup {
 	SPAWN_V0025_POKEMON_PIKACHU_TSHIRT_01: GenderSettingsV0025PokemonPikachuTshirt01;
 	SPAWN_V0025_POKEMON_PIKACHU_TSHIRT_02: GenderSettingsV0025PokemonPikachuTshirt02;
 	SPAWN_V0025_POKEMON_PIKACHU_TSHIRT_03: GenderSettingsV0025PokemonPikachuTshirt03;
+	SPAWN_V0025_POKEMON_PIKACHU_VISOR_2026: GenderSettingsV0025PokemonPikachuVisor2026;
 	SPAWN_V0025_POKEMON_PIKACHU_VS_2019: GenderSettingsV0025PokemonPikachuVs2019;
 	SPAWN_V0025_POKEMON_PIKACHU_WCS_2022: GenderSettingsV0025PokemonPikachuWcs2022;
 	SPAWN_V0025_POKEMON_PIKACHU_WCS_2023: GenderSettingsV0025PokemonPikachuWcs2023;

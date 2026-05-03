@@ -768,6 +768,8 @@ import type {
 	AvatarItemDisplayNShirt6thanniversaryA0,
 	AvatarItemDisplayNShirt6thanniversaryB0,
 	AvatarItemDisplayNShirt7thanniversary0,
+	AvatarItemDisplayNShirt10thanniversaryBeige,
+	AvatarItemDisplayNShirt10thanniversaryYellow,
 	AvatarItemDisplayNShirtAcetrainerbwA0,
 	AvatarItemDisplayNShirtAcetrainerbwB0,
 	AvatarItemDisplayNShirtAcetrainersmA0,
@@ -1190,6 +1192,8 @@ import type {
 	AvatarItemDisplayNShirtWcs2025anaheimYellow0,
 	AvatarItemDisplayNShirtWcs2025paiditems0,
 	AvatarItemDisplayNShirtWcs2025winnersitems0,
+	AvatarItemDisplayNShirtWcs2026,
+	AvatarItemDisplayNShirtWcs2027,
 	AvatarItemDisplayNShirtWcs20220,
 	AvatarItemDisplayNShirtWcs20230,
 	AvatarItemDisplayNShirtWcs20240,
@@ -2414,6 +2418,8 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_6thanniversary_a_0: AvatarItemDisplayNShirt6thanniversaryA0;
 	N_DISPLAY_n_shirt_6thanniversary_b_0: AvatarItemDisplayNShirt6thanniversaryB0;
 	N_DISPLAY_n_shirt_7thanniversary_0: AvatarItemDisplayNShirt7thanniversary0;
+	"N_DISPLAY_n_shirt_10thanniversary-beige": AvatarItemDisplayNShirt10thanniversaryBeige;
+	"N_DISPLAY_n_shirt_10thanniversary-yellow": AvatarItemDisplayNShirt10thanniversaryYellow;
 	N_DISPLAY_n_shirt_acetrainerbw_a_0: AvatarItemDisplayNShirtAcetrainerbwA0;
 	N_DISPLAY_n_shirt_acetrainerbw_b_0: AvatarItemDisplayNShirtAcetrainerbwB0;
 	N_DISPLAY_n_shirt_acetrainersm_a_0: AvatarItemDisplayNShirtAcetrainersmA0;
@@ -2840,6 +2846,8 @@ export interface AvatarItemDisplayLookup {
 	"N_DISPLAY_n_shirt_wcs2025anaheim-yellow_0": AvatarItemDisplayNShirtWcs2025anaheimYellow0;
 	N_DISPLAY_n_shirt_wcs2025paiditems_0: AvatarItemDisplayNShirtWcs2025paiditems0;
 	N_DISPLAY_n_shirt_wcs2025winnersitems_0: AvatarItemDisplayNShirtWcs2025winnersitems0;
+	N_DISPLAY_n_shirt_wcs2026: AvatarItemDisplayNShirtWcs2026;
+	N_DISPLAY_n_shirt_wcs2027: AvatarItemDisplayNShirtWcs2027;
 	N_DISPLAY_n_shirt_wcsyokohama_0: AvatarItemDisplayNShirtWcsyokohama0;
 	N_DISPLAY_n_shirt_whitecoat_0: AvatarItemDisplayNShirtWhitecoat0;
 	N_DISPLAY_n_shirt_wintersweater2023_0: AvatarItemDisplayNShirtWintersweater20230;

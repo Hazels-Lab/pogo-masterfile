@@ -1,25 +1,8 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-hidden-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order-sprite-id-title", 4 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-hidden-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order-sprite-id-title", 2 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
 
-export type IapItemDisplayGeneral2Ticket3Giftable = S<
-	IapItemDisplay<
-		"general2.ticket.3.giftable",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			sku: "general2.ticket.3.giftable";
-			skuDisableTime: "2026-04-11T17:00:00";
-			skuDisableTimeUtcMs: "1775926800000";
-			skuEnableTime: "2019-03-14T08:00:00";
-			skuEnableTimeUtcMs: "1552550400000";
-			sortOrder: 2;
-			spriteId: "general1.ticket.2";
-			title: "general1.ticket_CD_Tinkatink26_title";
-		}
-	>
->;
 export type IapItemDisplayPgoreleaseBundleGeneralThirdpartyMedium1 = S<
 	IapItemDisplay<
 		"pgorelease.bundle.general.thirdparty.medium.1",
@@ -54,26 +37,7 @@ export type IapItemDisplayPgoreleaseBundleGeneralThirdpartySmall2 = S<
 		}
 	>
 >;
-export type IapItemDisplayPgoreleaseGeneral2Ticket3Giftable = S<
-	IapItemDisplay<
-		"pgorelease.general2.ticket.3.giftable",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			sku: "pgorelease.general2.ticket.3.giftable";
-			skuDisableTime: "2026-04-11T17:00:00";
-			skuDisableTimeUtcMs: "1775926800000";
-			skuEnableTime: "2019-03-14T08:00:00";
-			skuEnableTimeUtcMs: "1552550400000";
-			sortOrder: 2;
-			spriteId: "general1.ticket.2";
-			title: "general1.ticket_CD_Tinkatink26_title";
-		}
-	>
->;
 
 export type IapItemDisplayCategoryHiddenSkuDisableTimeSkuDisableTimeUtcMsSkuEnableTimeSkuEnableTimeUtcMsSortOrderSpriteIdTitleMasterfileEntry =
-	| IapItemDisplayGeneral2Ticket3Giftable
 	| IapItemDisplayPgoreleaseBundleGeneralThirdpartyMedium1
-	| IapItemDisplayPgoreleaseBundleGeneralThirdpartySmall2
-	| IapItemDisplayPgoreleaseGeneral2Ticket3Giftable;
+	| IapItemDisplayPgoreleaseBundleGeneralThirdpartySmall2;

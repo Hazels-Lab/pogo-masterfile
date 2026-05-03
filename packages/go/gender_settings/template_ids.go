@@ -117,6 +117,7 @@ const (
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuTshirt01                 GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_TSHIRT_01"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuTshirt02                 GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_TSHIRT_02"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuTshirt03                 GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_TSHIRT_03"
+	GenderSettingsTemplateIDSpawnV0025PokemonPikachuVisor2026                GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_VISOR_2026"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuVs2019                   GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_VS_2019"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuWcs2022                  GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_WCS_2022"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuWcs2023                  GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_WCS_2023"
@@ -2583,6 +2584,7 @@ var GenderSettingsTemplateIDValues = [...]GenderSettingsTemplateID{
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuTshirt01,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuTshirt02,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuTshirt03,
+	GenderSettingsTemplateIDSpawnV0025PokemonPikachuVisor2026,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuVs2019,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuWcs2022,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuWcs2023,

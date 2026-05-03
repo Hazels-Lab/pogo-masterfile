@@ -1541,6 +1541,10 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNShirt6thanniversaryB0,
     #[serde(rename = "N_DISPLAY_n_shirt_7thanniversary_0")]
     NDisplayNShirt7thanniversary0,
+    #[serde(rename = "N_DISPLAY_n_shirt_10thanniversary-beige")]
+    NDisplayNShirt10thanniversaryBeige,
+    #[serde(rename = "N_DISPLAY_n_shirt_10thanniversary-yellow")]
+    NDisplayNShirt10thanniversaryYellow,
     #[serde(rename = "N_DISPLAY_n_shirt_acetrainerbw_a_0")]
     NDisplayNShirtAcetrainerbwA0,
     #[serde(rename = "N_DISPLAY_n_shirt_acetrainerbw_b_0")]
@@ -2393,6 +2397,10 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNShirtWcs2025paiditems0,
     #[serde(rename = "N_DISPLAY_n_shirt_wcs2025winnersitems_0")]
     NDisplayNShirtWcs2025winnersitems0,
+    #[serde(rename = "N_DISPLAY_n_shirt_wcs2026")]
+    NDisplayNShirtWcs2026,
+    #[serde(rename = "N_DISPLAY_n_shirt_wcs2027")]
+    NDisplayNShirtWcs2027,
     #[serde(rename = "N_DISPLAY_n_shirt_wcsyokohama_0")]
     NDisplayNShirtWcsyokohama0,
     #[serde(rename = "N_DISPLAY_n_shirt_whitecoat_0")]

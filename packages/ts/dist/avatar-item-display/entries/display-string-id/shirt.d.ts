@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shirt", 438 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shirt", 442 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -27,6 +27,24 @@ export type AvatarItemDisplayNShirt7thanniversary0 = S<
 		{
 			displayStringId: "n_shirt_7thanniversary_0_display_name";
 			iconAddress: "n_shirt_7thanniversary_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirt10thanniversaryBeige = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_10thanniversary-beige",
+		{
+			displayStringId: "avatar_shirt_10thanniversarybeige";
+			iconAddress: "n_shirt_10thanniversary-beige_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirt10thanniversaryYellow = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_10thanniversary-yellow",
+		{
+			displayStringId: "avatar_shirt_10thanniversaryorange";
+			iconAddress: "n_shirt_10thanniversary-yellow_icon";
 		}
 	>
 >;
@@ -3864,6 +3882,24 @@ export type AvatarItemDisplayNShirtWcs2025winnersitems0 = S<
 		}
 	>
 >;
+export type AvatarItemDisplayNShirtWcs2026 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_wcs2026",
+		{
+			displayStringId: "avatar_shirt_wcsregional2026";
+			iconAddress: "n_shirt_wcs2026_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtWcs2027 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_wcs2027",
+		{
+			displayStringId: "avatar_shirt_wcsregional2027";
+			iconAddress: "n_shirt_wcs2027_icon";
+		}
+	>
+>;
 export type AvatarItemDisplayNShirtWcsyokohama0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_shirt_wcsyokohama_0",
@@ -3950,6 +3986,8 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirt6thanniversaryA0
 	| AvatarItemDisplayNShirt6thanniversaryB0
 	| AvatarItemDisplayNShirt7thanniversary0
+	| AvatarItemDisplayNShirt10thanniversaryBeige
+	| AvatarItemDisplayNShirt10thanniversaryYellow
 	| AvatarItemDisplayNShirtAcetrainerbwA0
 	| AvatarItemDisplayNShirtAcetrainerbwB0
 	| AvatarItemDisplayNShirtAcetrainersmA0
@@ -4376,6 +4414,8 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirtWcs2025anaheimYellow0
 	| AvatarItemDisplayNShirtWcs2025paiditems0
 	| AvatarItemDisplayNShirtWcs2025winnersitems0
+	| AvatarItemDisplayNShirtWcs2026
+	| AvatarItemDisplayNShirtWcs2027
 	| AvatarItemDisplayNShirtWcsyokohama0
 	| AvatarItemDisplayNShirtWhitecoat0
 	| AvatarItemDisplayNShirtWintersweater20230

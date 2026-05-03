@@ -117,6 +117,7 @@ const (
 	PokemonSettingsTemplateIDV0025PokemonPikachuTshirt01                 PokemonSettingsTemplateID = "V0025_POKEMON_PIKACHU_TSHIRT_01"
 	PokemonSettingsTemplateIDV0025PokemonPikachuTshirt02                 PokemonSettingsTemplateID = "V0025_POKEMON_PIKACHU_TSHIRT_02"
 	PokemonSettingsTemplateIDV0025PokemonPikachuTshirt03                 PokemonSettingsTemplateID = "V0025_POKEMON_PIKACHU_TSHIRT_03"
+	PokemonSettingsTemplateIDV0025PokemonPikachuVisor2026                PokemonSettingsTemplateID = "V0025_POKEMON_PIKACHU_VISOR_2026"
 	PokemonSettingsTemplateIDV0025PokemonPikachuVs2019                   PokemonSettingsTemplateID = "V0025_POKEMON_PIKACHU_VS_2019"
 	PokemonSettingsTemplateIDV0025PokemonPikachuWcs2022                  PokemonSettingsTemplateID = "V0025_POKEMON_PIKACHU_WCS_2022"
 	PokemonSettingsTemplateIDV0025PokemonPikachuWcs2023                  PokemonSettingsTemplateID = "V0025_POKEMON_PIKACHU_WCS_2023"
@@ -2580,6 +2581,7 @@ var PokemonSettingsTemplateIDValues = [...]PokemonSettingsTemplateID{
 	PokemonSettingsTemplateIDV0025PokemonPikachuTshirt01,
 	PokemonSettingsTemplateIDV0025PokemonPikachuTshirt02,
 	PokemonSettingsTemplateIDV0025PokemonPikachuTshirt03,
+	PokemonSettingsTemplateIDV0025PokemonPikachuVisor2026,
 	PokemonSettingsTemplateIDV0025PokemonPikachuVs2019,
 	PokemonSettingsTemplateIDV0025PokemonPikachuWcs2022,
 	PokemonSettingsTemplateIDV0025PokemonPikachuWcs2023,

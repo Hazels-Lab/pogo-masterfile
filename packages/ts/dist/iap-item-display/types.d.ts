@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1120 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1116 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -70,7 +70,6 @@ export interface IapItemDisplayData {
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-replay-water-research-day-2026-nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-riolu-hatch-day-2026-nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-shiny-jirachi-masterwork-ticket-nologo-2025.jpg"
-		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-tinkatink-community-day-2026-nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-yampers-paw-prints-ticket-nologo-2025.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FTourPass2026.jpg"
 		| "https://storage.googleapis.com/prod-public-images/GBL_SharedSkies_2024.jpeg"
@@ -115,7 +114,6 @@ export interface IapItemDisplayData {
 		| "2026-03-21T17:00:00"
 		| "2026-03-28T17:00:00"
 		| "2026-04-04T17:00:00"
-		| "2026-04-11T17:00:00"
 		| "2026-04-18T17:00:00"
 		| "2026-04-25T17:00:00"
 		| "2026-05-02T17:00:00"
@@ -157,7 +155,6 @@ export interface IapItemDisplayData {
 		| "1774112400000"
 		| "1774717200000"
 		| "1775322000000"
-		| "1775926800000"
 		| "1776531600000"
 		| "1777136400000"
 		| "1777741200000"
@@ -245,7 +242,6 @@ export interface IapItemDisplayData {
 		| "web-masterball-25-ticket-box"
 		| "web-riolu-hatch-day-ultra"
 		| "web-shadow-entei-raid-box-ultra"
-		| "web-tinkatink-cd-deluxe"
 		| "web-water-research-day-ticket-box";
 	webstoreSkuPriceE6?: number;
 }

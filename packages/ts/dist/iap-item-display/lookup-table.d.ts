@@ -277,8 +277,6 @@ import type {
 	IapItemDisplayGeneral2Ticket1Giftable,
 	IapItemDisplayGeneral2Ticket2,
 	IapItemDisplayGeneral2Ticket2Giftable,
-	IapItemDisplayGeneral2Ticket3,
-	IapItemDisplayGeneral2Ticket3Giftable,
 	IapItemDisplayGeneral2Ticket4,
 	IapItemDisplayGeneral2Ticket4Giftable,
 	IapItemDisplayGeneral2Ticket5,
@@ -416,8 +414,6 @@ import type {
 	IapItemDisplayPgoreleaseGeneral2Ticket1Giftable,
 	IapItemDisplayPgoreleaseGeneral2Ticket2,
 	IapItemDisplayPgoreleaseGeneral2Ticket2Giftable,
-	IapItemDisplayPgoreleaseGeneral2Ticket3,
-	IapItemDisplayPgoreleaseGeneral2Ticket3Giftable,
 	IapItemDisplayPgoreleaseGeneral2Ticket4,
 	IapItemDisplayPgoreleaseGeneral2Ticket4Giftable,
 	IapItemDisplayPgoreleaseGeneral2Ticket5,
@@ -1400,8 +1396,6 @@ export interface IapItemDisplayLookup {
 	"general2.ticket.1.giftable": IapItemDisplayGeneral2Ticket1Giftable;
 	"general2.ticket.2": IapItemDisplayGeneral2Ticket2;
 	"general2.ticket.2.giftable": IapItemDisplayGeneral2Ticket2Giftable;
-	"general2.ticket.3": IapItemDisplayGeneral2Ticket3;
-	"general2.ticket.3.giftable": IapItemDisplayGeneral2Ticket3Giftable;
 	"general2.ticket.4": IapItemDisplayGeneral2Ticket4;
 	"general2.ticket.4.giftable": IapItemDisplayGeneral2Ticket4Giftable;
 	"general2.ticket.5": IapItemDisplayGeneral2Ticket5;
@@ -1539,8 +1533,6 @@ export interface IapItemDisplayLookup {
 	"pgorelease.general2.ticket.1.giftable": IapItemDisplayPgoreleaseGeneral2Ticket1Giftable;
 	"pgorelease.general2.ticket.2": IapItemDisplayPgoreleaseGeneral2Ticket2;
 	"pgorelease.general2.ticket.2.giftable": IapItemDisplayPgoreleaseGeneral2Ticket2Giftable;
-	"pgorelease.general2.ticket.3": IapItemDisplayPgoreleaseGeneral2Ticket3;
-	"pgorelease.general2.ticket.3.giftable": IapItemDisplayPgoreleaseGeneral2Ticket3Giftable;
 	"pgorelease.general2.ticket.4": IapItemDisplayPgoreleaseGeneral2Ticket4;
 	"pgorelease.general2.ticket.4.giftable": IapItemDisplayPgoreleaseGeneral2Ticket4Giftable;
 	"pgorelease.general2.ticket.5": IapItemDisplayPgoreleaseGeneral2Ticket5;

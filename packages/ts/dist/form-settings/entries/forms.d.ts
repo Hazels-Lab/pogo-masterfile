@@ -611,6 +611,10 @@ export type FormSettingsV0025PokemonPikachu = S<
 					form: 3345;
 					isCostume: true;
 				},
+				{
+					form: 3341;
+					isCostume: true;
+				},
 			];
 			pokemon: "PIKACHU";
 		}

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1255 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1256 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -1147,6 +1147,23 @@ export type PokemonExtendedSettingsV0025PokemonPikachuTshirt03 = S<
 		"EXTENDED_V0025_POKEMON_PIKACHU_TSHIRT_03",
 		{
 			form: "PIKACHU_TSHIRT_03";
+			sizeSettings: {
+				mLowerBound: 0.3;
+				mUpperBound: 0.5;
+				xlUpperBound: 0.6;
+				xsLowerBound: 0.2;
+				xxlUpperBound: 0.7;
+				xxsLowerBound: 0.196;
+			};
+			uniqueId: "PIKACHU";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0025PokemonPikachuVisor2026 = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0025_POKEMON_PIKACHU_VISOR_2026",
+		{
+			form: 3341;
 			sizeSettings: {
 				mLowerBound: 0.3;
 				mUpperBound: 0.5;
@@ -21558,6 +21575,7 @@ export type PokemonExtendedSettingsFormMasterfileEntry =
 	| PokemonExtendedSettingsV0025PokemonPikachuTshirt01
 	| PokemonExtendedSettingsV0025PokemonPikachuTshirt02
 	| PokemonExtendedSettingsV0025PokemonPikachuTshirt03
+	| PokemonExtendedSettingsV0025PokemonPikachuVisor2026
 	| PokemonExtendedSettingsV0025PokemonPikachuVs2019
 	| PokemonExtendedSettingsV0025PokemonPikachuWcs2022
 	| PokemonExtendedSettingsV0025PokemonPikachuWcs2023

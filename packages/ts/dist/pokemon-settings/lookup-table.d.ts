@@ -113,6 +113,7 @@ import type {
 	PokemonSettingsV0025PokemonPikachuTshirt01,
 	PokemonSettingsV0025PokemonPikachuTshirt02,
 	PokemonSettingsV0025PokemonPikachuTshirt03,
+	PokemonSettingsV0025PokemonPikachuVisor2026,
 	PokemonSettingsV0025PokemonPikachuVs2019,
 	PokemonSettingsV0025PokemonPikachuWcs2022,
 	PokemonSettingsV0025PokemonPikachuWcs2023,
@@ -2576,6 +2577,7 @@ export interface PokemonSettingsLookup {
 	V0025_POKEMON_PIKACHU_TSHIRT_01: PokemonSettingsV0025PokemonPikachuTshirt01;
 	V0025_POKEMON_PIKACHU_TSHIRT_02: PokemonSettingsV0025PokemonPikachuTshirt02;
 	V0025_POKEMON_PIKACHU_TSHIRT_03: PokemonSettingsV0025PokemonPikachuTshirt03;
+	V0025_POKEMON_PIKACHU_VISOR_2026: PokemonSettingsV0025PokemonPikachuVisor2026;
 	V0025_POKEMON_PIKACHU_VS_2019: PokemonSettingsV0025PokemonPikachuVs2019;
 	V0025_POKEMON_PIKACHU_WCS_2022: PokemonSettingsV0025PokemonPikachuWcs2022;
 	V0025_POKEMON_PIKACHU_WCS_2023: PokemonSettingsV0025PokemonPikachuWcs2023;

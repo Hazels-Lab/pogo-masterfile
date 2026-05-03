@@ -231,6 +231,8 @@ pub enum PokemonSettingsTemplateId {
     V0025PokemonPikachuTshirt02,
     #[serde(rename = "V0025_POKEMON_PIKACHU_TSHIRT_03")]
     V0025PokemonPikachuTshirt03,
+    #[serde(rename = "V0025_POKEMON_PIKACHU_VISOR_2026")]
+    V0025PokemonPikachuVisor2026,
     #[serde(rename = "V0025_POKEMON_PIKACHU_VS_2019")]
     V0025PokemonPikachuVs2019,
     #[serde(rename = "V0025_POKEMON_PIKACHU_WCS_2022")]

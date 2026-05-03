@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-hidden-image-url-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order-sprite-id-title-webstore-sku-id-webstore-sku-price-e6", 21 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-hidden-image-url-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order-sprite-id-title-webstore-sku-id-webstore-sku-price-e6", 20 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -63,6 +63,26 @@ export type IapItemDisplayGeneral1Ticket4 = S<
 		}
 	>
 >;
+export type IapItemDisplayGeneral1Ticket5 = S<
+	IapItemDisplay<
+		"general1.ticket.5",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			hidden: true;
+			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-entei-shadow-raid-day-2026-nologo.jpg";
+			sku: "pgorelease.general1.ticket.5";
+			skuDisableTime: "2026-05-02T17:00:00";
+			skuDisableTimeUtcMs: "1777741200000";
+			skuEnableTime: "2019-03-14T08:00:00";
+			skuEnableTimeUtcMs: "1552550400000";
+			sortOrder: 2;
+			spriteId: "general1.ticket.5";
+			title: "general1.ticket.5.ENTEI_SHADOW_RAID_DAY";
+			webstoreSkuId: "web-shadow-entei-raid-box-ultra";
+			webstoreSkuPriceE6: 4990000;
+		}
+	>
+>;
 export type IapItemDisplayGeneral2Ticket2 = S<
 	IapItemDisplay<
 		"general2.ticket.2",
@@ -79,26 +99,6 @@ export type IapItemDisplayGeneral2Ticket2 = S<
 			spriteId: "general2.ticket.2";
 			title: "general2.ticket2.CATCH_MASTERY_ORICORIO";
 			webstoreSkuId: "web-catch-mastery-feb-26-ticket-box";
-			webstoreSkuPriceE6: 1990000;
-		}
-	>
->;
-export type IapItemDisplayGeneral2Ticket3 = S<
-	IapItemDisplay<
-		"general2.ticket.3",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-tinkatink-community-day-2026-nologo.jpg";
-			sku: "general2.ticket.3";
-			skuDisableTime: "2026-04-11T17:00:00";
-			skuDisableTimeUtcMs: "1775926800000";
-			skuEnableTime: "2019-03-14T08:00:00";
-			skuEnableTimeUtcMs: "1552550400000";
-			sortOrder: 2;
-			spriteId: "general1.ticket.2";
-			title: "general1.ticket_CD_Tinkatink26_title";
-			webstoreSkuId: "web-tinkatink-cd-deluxe";
 			webstoreSkuPriceE6: 1990000;
 		}
 	>
@@ -303,26 +303,6 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket2 = S<
 		}
 	>
 >;
-export type IapItemDisplayPgoreleaseGeneral2Ticket3 = S<
-	IapItemDisplay<
-		"pgorelease.general2.ticket.3",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-tinkatink-community-day-2026-nologo.jpg";
-			sku: "pgorelease.general2.ticket.3";
-			skuDisableTime: "2026-04-11T17:00:00";
-			skuDisableTimeUtcMs: "1775926800000";
-			skuEnableTime: "2019-03-14T08:00:00";
-			skuEnableTimeUtcMs: "1552550400000";
-			sortOrder: 2;
-			spriteId: "general1.ticket.2";
-			title: "general1.ticket_CD_Tinkatink26_title";
-			webstoreSkuId: "web-tinkatink-cd-deluxe";
-			webstoreSkuPriceE6: 1990000;
-		}
-	>
->;
 export type IapItemDisplayPgoreleaseGeneral2Ticket4 = S<
 	IapItemDisplay<
 		"pgorelease.general2.ticket.4",
@@ -428,8 +408,8 @@ export type IapItemDisplayCategoryHiddenImageUrlSkuDisableTimeSkuDisableTimeUtcM
 	| IapItemDisplayEvergreenticket1
 	| IapItemDisplayGeneral1Ticket1
 	| IapItemDisplayGeneral1Ticket4
+	| IapItemDisplayGeneral1Ticket5
 	| IapItemDisplayGeneral2Ticket2
-	| IapItemDisplayGeneral2Ticket3
 	| IapItemDisplayGeneral2Ticket4
 	| IapItemDisplayGeneral2Ticket5
 	| IapItemDisplayGeneral2Ticket6
@@ -440,7 +420,6 @@ export type IapItemDisplayCategoryHiddenImageUrlSkuDisableTimeSkuDisableTimeUtcM
 	| IapItemDisplayPgoreleaseGeneral1Ticket1
 	| IapItemDisplayPgoreleaseGeneral1Ticket4
 	| IapItemDisplayPgoreleaseGeneral2Ticket2
-	| IapItemDisplayPgoreleaseGeneral2Ticket3
 	| IapItemDisplayPgoreleaseGeneral2Ticket4
 	| IapItemDisplayPgoreleaseGeneral2Ticket5
 	| IapItemDisplayPgoreleaseGeneral2Ticket7
