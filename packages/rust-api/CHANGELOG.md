@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1.1] - 2026-05-04
+
+Backfill release from merge commit `39f0ad93d151ad16750bb3fd50d771b87dfaa066`.
+
 ## [Unreleased]
 
 - Initial release: `Masterfile` struct with builder-based `from_remote`, polymorphic typed/string ID lookups via `TryInto`, per-group accessor methods, dual `async` (default) + `blocking` feature flags, single `Error` enum, `Fetcher` trait with closure auto-impl.
