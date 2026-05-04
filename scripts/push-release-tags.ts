@@ -70,8 +70,13 @@ function readVersionsAtRef(ref: string): Record<string, string> | null {
 	return JSON.parse(new TextDecoder().decode(proc.stdout)) as Record<string, string>;
 }
 
+// Check both local and remote. CI checkouts default to fetch-tags=false, so a
+// local-only check would miss tags already on origin and we'd try to re-push
+// them — which fails ("already exists"), failing the workflow even though the
+// real outcome is fine.
 function tagExists(tag: string): boolean {
-	return gitOk("rev-parse", "--verify", `refs/tags/${tag}`);
+	if (gitOk("rev-parse", "--verify", `refs/tags/${tag}`)) return true;
+	return git("ls-remote", "--tags", "origin", `refs/tags/${tag}`).length > 0;
 }
 
 const head = readVersionsAtRef("HEAD");

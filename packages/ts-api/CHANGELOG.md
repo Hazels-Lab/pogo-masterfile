@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1.6] - 2026-05-04
+
+Republish with workspace:`^` correctly resolved (broken in 0.1.5).
+
 ## [0.1.5] - 2026-05-04
 
 Backfill release from merge commit `ec24c91db53139c85fedc3e93614a02d7db6a9e9`.

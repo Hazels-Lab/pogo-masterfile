@@ -1,6 +1,7 @@
 // Generated from Pokémon GO masterfile — "pokemonExtendedSettings" lookup table.
 
 import type {
+	PokemonExtendedSettingsV999PokemonGimmighoul,
 	PokemonExtendedSettingsV0001PokemonBulbasaur,
 	PokemonExtendedSettingsV0001PokemonBulbasaurFall2019,
 	PokemonExtendedSettingsV0001PokemonBulbasaurNormal,
@@ -66,11 +67,11 @@ import type {
 	PokemonExtendedSettingsV0025PokemonPikachuDiwali2024,
 	PokemonExtendedSettingsV0025PokemonPikachuDoctor,
 	PokemonExtendedSettingsV0025PokemonPikachuFall2019,
+	PokemonExtendedSettingsV0025PokemonPikachuFlying5thAnniv,
 	PokemonExtendedSettingsV0025PokemonPikachuFlying01,
 	PokemonExtendedSettingsV0025PokemonPikachuFlying02,
 	PokemonExtendedSettingsV0025PokemonPikachuFlying03,
 	PokemonExtendedSettingsV0025PokemonPikachuFlying04,
-	PokemonExtendedSettingsV0025PokemonPikachuFlying5thAnniv,
 	PokemonExtendedSettingsV0025PokemonPikachuFlyingOkinawa,
 	PokemonExtendedSettingsV0025PokemonPikachuGofest2022,
 	PokemonExtendedSettingsV0025PokemonPikachuGofest2024Mtiara,
@@ -2410,7 +2411,6 @@ import type {
 	PokemonExtendedSettingsV0998PokemonBaxcalibur,
 	PokemonExtendedSettingsV0998PokemonBaxcaliburNormal,
 	PokemonExtendedSettingsV0999PokemonGimmighoul,
-	PokemonExtendedSettingsV999PokemonGimmighoul,
 	PokemonExtendedSettingsV0999PokemonGimmighoulCoinA1,
 	PokemonExtendedSettingsV0999PokemonGimmighoulNormal,
 	PokemonExtendedSettingsV1000PokemonGholdengo,

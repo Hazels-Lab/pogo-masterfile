@@ -36,6 +36,14 @@ jobs:
       - name: Build ts-api dist
         run: bun run build
         working-directory: packages/ts-api
-      - name: Publish
-        run: npm publish --provenance --access public
+      # `npm publish` does not understand the `workspace:` protocol and would
+      # ship `pogo-masterfile-types: workspace:^` literally — breaking installs
+      # for every consumer. `bun pm pack` rewrites `workspace:^` to the actual
+      # caret-versioned dep against the current workspace, so the tarball is
+      # already correct when npm uploads it. Trusted Publishing / OIDC
+      # provenance still works because it's attached at `npm publish` time.
+      - name: Pack and publish
         working-directory: packages/ts-api
+        run: |
+          bun pm pack
+          npm publish "pogo-masterfile-$(node -p 'require("./package.json").version').tgz" --provenance --access public

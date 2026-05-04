@@ -5,6 +5,22 @@
 // is split per-group so the editor can lazily load the slice relevant to the
 // current cursor position.
 
+import type { AvatarCustomizationLookup } from "./avatar-customization/lookup-table";
+import type { AvatarGroupOrderSettingsLookup } from "./avatar-group-order-settings/lookup-table";
+import type { AvatarItemDisplayLookup } from "./avatar-item-display/lookup-table";
+import type { BadgeSettingsLookup } from "./badge-settings/lookup-table";
+import type { BreadMoveLevelSettingsLookup } from "./bread-move-level-settings/lookup-table";
+import type { BuddyActivityCategorySettingsLookup } from "./buddy-activity-category-settings/lookup-table";
+import type { BuddyEmotionLevelSettingsLookup } from "./buddy-emotion-level-settings/lookup-table";
+import type { BuddyLevelSettingsLookup } from "./buddy-level-settings/lookup-table";
+import type { ClientQuestTemplateLookup } from "./client-quest-template/lookup-table";
+import type { CodeGateProtoLookup } from "./code-gate-proto/lookup-table";
+import type { CombatLeagueLookup } from "./combat-league/lookup-table";
+import type { CombatMoveLookup } from "./combat-move/lookup-table";
+import type { CombatNpcPersonalityLookup } from "./combat-npc-personality/lookup-table";
+import type { CombatNpcTrainerLookup } from "./combat-npc-trainer/lookup-table";
+import type { CombatRankingProtoSettingsLookup } from "./combat-ranking-proto-settings/lookup-table";
+import type { CombatTypeLookup } from "./combat-type/lookup-table";
 import type {
 	AvatarCustomizationMasterfileEntry,
 	AvatarCustomizationTemplateID,
@@ -127,22 +143,6 @@ import type {
 	WeatherAffinitiesMasterfileEntry,
 	WeatherAffinitiesTemplateID,
 } from "./entries";
-import type { AvatarCustomizationLookup } from "./avatar-customization/lookup-table";
-import type { AvatarGroupOrderSettingsLookup } from "./avatar-group-order-settings/lookup-table";
-import type { AvatarItemDisplayLookup } from "./avatar-item-display/lookup-table";
-import type { BadgeSettingsLookup } from "./badge-settings/lookup-table";
-import type { BreadMoveLevelSettingsLookup } from "./bread-move-level-settings/lookup-table";
-import type { BuddyActivityCategorySettingsLookup } from "./buddy-activity-category-settings/lookup-table";
-import type { BuddyEmotionLevelSettingsLookup } from "./buddy-emotion-level-settings/lookup-table";
-import type { BuddyLevelSettingsLookup } from "./buddy-level-settings/lookup-table";
-import type { ClientQuestTemplateLookup } from "./client-quest-template/lookup-table";
-import type { CodeGateProtoLookup } from "./code-gate-proto/lookup-table";
-import type { CombatLeagueLookup } from "./combat-league/lookup-table";
-import type { CombatMoveLookup } from "./combat-move/lookup-table";
-import type { CombatNpcPersonalityLookup } from "./combat-npc-personality/lookup-table";
-import type { CombatNpcTrainerLookup } from "./combat-npc-trainer/lookup-table";
-import type { CombatRankingProtoSettingsLookup } from "./combat-ranking-proto-settings/lookup-table";
-import type { CombatTypeLookup } from "./combat-type/lookup-table";
 import type { EventPassSettingsLookup } from "./event-pass-settings/lookup-table";
 import type { EventPassTierSettingsLookup } from "./event-pass-tier-settings/lookup-table";
 import type { EvolutionChainDisplaySettingsLookup } from "./evolution-chain-display-settings/lookup-table";
@@ -179,6 +179,7 @@ import type { QuestSettingsLookup } from "./quest-settings/lookup-table";
 import type { RecommendedSearchSettingsLookup } from "./recommended-search-settings/lookup-table";
 import type { RollBackLookup } from "./roll-back/lookup-table";
 import type { SettingsOverrideRuleLookup } from "./settings-override-rule/lookup-table";
+import type { SingletonsLookup } from "./singletons/lookup-table";
 import type { StickerMetadataLookup } from "./sticker-metadata/lookup-table";
 import type { TappableSettingsLookup } from "./tappable-settings/lookup-table";
 import type { TemporaryEvolutionSettingsLookup } from "./temporary-evolution-settings/lookup-table";
@@ -186,7 +187,6 @@ import type { TypeEffectiveLookup } from "./type-effective/lookup-table";
 import type { VsSeekerLootLookup } from "./vs-seeker-loot/lookup-table";
 import type { VsSeekerPokemonRewardsLookup } from "./vs-seeker-pokemon-rewards/lookup-table";
 import type { WeatherAffinitiesLookup } from "./weather-affinities/lookup-table";
-import type { SingletonsLookup } from "./singletons/lookup-table";
 
 export type { AvatarCustomizationLookup } from "./avatar-customization/lookup-table";
 export type { AvatarGroupOrderSettingsLookup } from "./avatar-group-order-settings/lookup-table";
@@ -240,6 +240,7 @@ export type { QuestSettingsLookup } from "./quest-settings/lookup-table";
 export type { RecommendedSearchSettingsLookup } from "./recommended-search-settings/lookup-table";
 export type { RollBackLookup } from "./roll-back/lookup-table";
 export type { SettingsOverrideRuleLookup } from "./settings-override-rule/lookup-table";
+export type { SingletonsLookup } from "./singletons/lookup-table";
 export type { StickerMetadataLookup } from "./sticker-metadata/lookup-table";
 export type { TappableSettingsLookup } from "./tappable-settings/lookup-table";
 export type { TemporaryEvolutionSettingsLookup } from "./temporary-evolution-settings/lookup-table";
@@ -247,7 +248,6 @@ export type { TypeEffectiveLookup } from "./type-effective/lookup-table";
 export type { VsSeekerLootLookup } from "./vs-seeker-loot/lookup-table";
 export type { VsSeekerPokemonRewardsLookup } from "./vs-seeker-pokemon-rewards/lookup-table";
 export type { WeatherAffinitiesLookup } from "./weather-affinities/lookup-table";
-export type { SingletonsLookup } from "./singletons/lookup-table";
 
 export type GroupName =
 	| "avatarCustomization"

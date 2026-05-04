@@ -106,6 +106,33 @@ function syncCargoLockIfRustBumped(bumps: Record<string, string>): void {
 	console.log("Cargo.lock: synced via `cargo update --workspace`");
 }
 
+// Sync bun.lock whenever ts packages bump. Same drift-prevention motivation as
+// the Cargo case, but with a bun-specific quirk: `bun install` (even with
+// --force) does NOT pick up workspace `version` field changes — only deleting
+// the lockfile and re-resolving does. Without this, the lockfile records stale
+// workspace versions and `bun pm pack` resolves `workspace:^` against them
+// instead of against the freshly-bumped package.json.
+function syncBunLockIfTsBumped(bumps: Record<string, string>): void {
+	const tsBumped = Object.keys(bumps).some((p) => {
+		const pkg = PACKAGES.find((x) => x.path === p);
+		return pkg?.manifest?.type === "package.json";
+	});
+	if (!tsBumped) return;
+
+	const rm = Bun.spawnSync({ cmd: ["rm", "-f", "bun.lock"], stderr: "inherit" });
+	if (rm.exitCode !== 0) throw new Error("rm bun.lock failed");
+
+	const proc = Bun.spawnSync({
+		cmd: ["bun", "install"],
+		stdout: "inherit",
+		stderr: "inherit",
+	});
+	if (proc.exitCode !== 0) {
+		throw new Error("bun install failed — bun.lock not synced.");
+	}
+	console.log("bun.lock: synced via `rm bun.lock && bun install`");
+}
+
 function appendChangelog(p: PkgInfo, version: string, body: string): void {
 	const today = new Date().toISOString().slice(0, 10);
 	const entry = `## [${version}] - ${today}\n\n${body}\n`;
@@ -161,6 +188,7 @@ export function applyBumps(initialChanged: Set<string>, changelogBody: string): 
 	}
 
 	syncCargoLockIfRustBumped(bumps);
+	syncBunLockIfTsBumped(bumps);
 
 	return bumps;
 }
