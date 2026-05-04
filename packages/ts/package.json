@@ -36,6 +36,9 @@
 		"./lookup-table": {
 			"types": "./dist/lookup-table.d.ts"
 		},
+		"./deprecated": {
+			"types": "./dist/deprecated.d.ts"
+		},
 		"./*": {
 			"types": "./dist/*/index.d.ts"
 		},

@@ -7,7 +7,7 @@
 		"packages/*"
 	],
 	"scripts": {
-		"generate": "bun run src/generate.ts && bun run format",
+		"generate": "bun run src/generate.ts && bun run src/update-deprecated.ts && bun run format",
 		"test": "bun test",
 		"typecheck": "tsc --noEmit",
 		"lint": "biome check",

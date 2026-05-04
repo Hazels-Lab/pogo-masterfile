@@ -1,0 +1,23 @@
+// Generated from Pokémon GO masterfile — group "sampleSettings", 2 entries (variant aliases).
+
+import type { S } from "../_utils";
+import type { SampleSettings } from "./index";
+
+export type SampleSettingsAlpha = S<
+	SampleSettings<
+		"SAMPLE_ALPHA",
+		{
+			rank: 1;
+			track: "FREE";
+		}
+	>
+>;
+export type SampleSettingsBeta = S<
+	SampleSettings<
+		"SAMPLE_BETA",
+		{
+			rank: 2;
+			track: "PREMIUM";
+		}
+	>
+>;

@@ -27,6 +27,12 @@ serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 pogo-masterfile-macros = { version = "0.1", path = "../rust-macros" }
 
+[features]
+default = []
+# Opt-in: types for templates that have been removed from upstream GAME_MASTER.json.
+# Each type carries a #[deprecated] attribute; expect compile warnings at use sites.
+deprecated = []
+
 [package.metadata.docs.rs]
 all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
