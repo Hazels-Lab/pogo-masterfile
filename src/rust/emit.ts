@@ -460,7 +460,7 @@ export function emitGroupTypesFile(group: Group): string {
 	}
 	const enumBlock = ["#[derive(Debug, Clone, Serialize, Deserialize)]", "#[serde(untagged)]", `pub enum ${baseName} {`, ...enumVariants, "}"].join("\n");
 
-	return file([SERDE_IMPORT, ...pool.deferred, enumBlock, entryWrapper(baseName, snakeName)]);
+	return file([`//! Generated from Pokémon GO masterfile — ${baseName}.\n\n`, SERDE_IMPORT, ...pool.deferred, enumBlock, entryWrapper(baseName, snakeName)]);
 }
 
 // Shared body for the per-group and singletons templateIds enums. Both files

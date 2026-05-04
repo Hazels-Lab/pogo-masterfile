@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — package entry point.
+// Generated from Pokémon GO masterfile — DO NOT EDIT MANUALLY.
 // Package documentation lives in doc.go.
 
 package masterfile

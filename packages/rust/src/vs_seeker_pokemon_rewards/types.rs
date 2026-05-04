@@ -1,3 +1,5 @@
+//! Generated from Pokémon GO masterfile — VsSeekerPokemonRewards.
+
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

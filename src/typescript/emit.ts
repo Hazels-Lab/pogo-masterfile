@@ -345,7 +345,11 @@ export function emitTopLevelVariants(groupSplits: Map<string, "split" | "flat">)
 }
 
 export function emitIndexFile() {
-	return new AstFileBuilder().exportTypeStar(`./${ENTRIES_LOWER}`).exportTypeStar(`./${TYPES_LOWER}`).render();
+	return new AstFileBuilder()
+		.header(`Generated from Pokémon GO masterfile — DO NOT EDIT MANUALLY`)
+		.exportTypeStar(`./${ENTRIES_LOWER}`)
+		.exportTypeStar(`./${TYPES_LOWER}`)
+		.render();
 }
 
 // ── Lookup-table emitters ───────────────────────────────────────────────────
