@@ -58,9 +58,44 @@ describe("tryH1", () => {
 		expect(tryH1(group)).toBeNull();
 	});
 
-	test("rejects field not present in 100% of variants", () => {
+	test("rejects field below the coverage threshold", () => {
+		// x present in 3/4 entries (75%) — below H1_MIN_COVERAGE = 0.8.
 		const group = mkGroup([{ x: "A" }, { x: "B" }, { y: 1 }, { x: "A" }]);
 		expect(tryH1(group)).toBeNull();
+	});
+
+	test("accepts a field at 95% coverage and bucketizes the missing entries", () => {
+		// 19 entries with category, 1 without → coverage 0.95.
+		const payloads: Array<Record<string, unknown>> = [];
+		for (let i = 0; i < 10; i += 1) payloads.push({ category: "A" });
+		for (let i = 0; i < 9; i += 1) payloads.push({ category: "B" });
+		payloads.push({ other: 1 }); // no category
+		const group = mkGroup(payloads);
+
+		const result = tryH1(group);
+		expect(result?.field).toBe("category");
+		expect(result?.buckets).toHaveLength(3);
+		const missingBucket = result!.buckets.find((b) => b.entries.length === 1);
+		expect(missingBucket?.entries[0]?.data.x).toEqual({ other: 1 });
+	});
+
+	test("rejects a field at 50% coverage", () => {
+		// x present in 5/10 entries → coverage 0.5, below threshold.
+		const payloads: Array<Record<string, unknown>> = [];
+		for (let i = 0; i < 5; i += 1) payloads.push({ x: i % 2 === 0 ? "A" : "B" });
+		for (let i = 0; i < 5; i += 1) payloads.push({ other: 1 });
+		const group = mkGroup(payloads);
+		expect(tryH1(group)).toBeNull();
+	});
+
+	test("accepts a field at exactly 80% coverage (boundary)", () => {
+		// 8/10 entries have x → coverage exactly 0.80, equal to H1_MIN_COVERAGE.
+		// The gate is `< H1_MIN_COVERAGE`, so this must qualify.
+		const payloads: Array<Record<string, unknown>> = [];
+		for (let i = 0; i < 8; i += 1) payloads.push({ x: i % 2 === 0 ? "A" : "B" });
+		for (let i = 0; i < 2; i += 1) payloads.push({ other: 1 });
+		const group = mkGroup(payloads);
+		expect(tryH1(group)?.field).toBe("x");
 	});
 
 	test("picks lowest-dominance field when multiple qualify", () => {
@@ -132,6 +167,35 @@ describe("tryH1 file naming", () => {
 		expect(result).not.toBeNull();
 		const water = result!.buckets.find((b) => b.value === "POKEMON_TYPE_WATER");
 		expect(water?.fileName).toBe("water");
+	});
+
+	test("emits a no-<field> bucket for entries missing the splitter field", () => {
+		// 19 of 20 entries have `category`; 1 doesn't. Coverage = 0.95.
+		const payloads: Array<Record<string, unknown>> = [];
+		for (let i = 0; i < 10; i += 1) payloads.push({ category: "STICKER" });
+		for (let i = 0; i < 9; i += 1) payloads.push({ category: "BUNDLE" });
+		payloads.push({ sku: "lone" });
+		const group = mkGroup(payloads);
+
+		const result = tryH1(group);
+		expect(result?.field).toBe("category");
+		const fileNames = result!.buckets.map((b) => b.fileName).sort();
+		expect(fileNames).toContain("no-category");
+	});
+
+	test("excludes the missing bucket from sharedPrefix calc so real values still strip correctly", () => {
+		// If the sentinel leaked into sharedPrefix, the prefix would shrink to ""
+		// and real values would emit as `iap-category-sticker` / `iap-category-bundle`.
+		const payloads: Array<Record<string, unknown>> = [];
+		for (let i = 0; i < 10; i += 1) payloads.push({ category: "IAP_CATEGORY_STICKER" });
+		for (let i = 0; i < 9; i += 1) payloads.push({ category: "IAP_CATEGORY_BUNDLE" });
+		payloads.push({ sku: "lone" });
+		const group = mkGroup(payloads);
+
+		const fileNames = tryH1(group)!
+			.buckets.map((b) => b.fileName)
+			.sort();
+		expect(fileNames).toEqual(["bundle", "no-category", "sticker"]);
 	});
 });
 

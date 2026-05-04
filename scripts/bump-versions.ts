@@ -83,6 +83,29 @@ function setManifestVersion(p: PkgInfo, v: string): void {
 	}
 }
 
+// Sync Cargo.lock whenever rust crates bump. The per-crate Cargo.toml manifests
+// just got new versions, but the workspace lockfile at the repo root still
+// references the old ones. Without this, the lockfile drifts until someone runs
+// cargo locally — and that drift commits as a separate change later, breaking
+// the "manifest bumps and lockfile updates land together" invariant.
+function syncCargoLockIfRustBumped(bumps: Record<string, string>): void {
+	const rustBumped = Object.keys(bumps).some((p) => {
+		const pkg = PACKAGES.find((x) => x.path === p);
+		return pkg?.manifest?.type === "Cargo.toml";
+	});
+	if (!rustBumped) return;
+
+	const proc = Bun.spawnSync({
+		cmd: ["cargo", "update", "--workspace"],
+		stdout: "inherit",
+		stderr: "inherit",
+	});
+	if (proc.exitCode !== 0) {
+		throw new Error("cargo update --workspace failed — Cargo.lock not synced. Is cargo installed?");
+	}
+	console.log("Cargo.lock: synced via `cargo update --workspace`");
+}
+
 function appendChangelog(p: PkgInfo, version: string, body: string): void {
 	const today = new Date().toISOString().slice(0, 10);
 	const entry = `## [${version}] - ${today}\n\n${body}\n`;
@@ -136,6 +159,8 @@ export function applyBumps(initialChanged: Set<string>, changelogBody: string): 
 		writeFileSync(goApiModPath, text.replace(/(require\s+github\.com\/Hazels-Lab\/pogo-masterfile-types\/packages\/go)\s+v[\w.+-]+/, `$1 v${goBump}`));
 		console.log(`packages/go-api/go.mod: require -> v${goBump}`);
 	}
+
+	syncCargoLockIfRustBumped(bumps);
 
 	return bumps;
 }

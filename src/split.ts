@@ -5,10 +5,14 @@ import { kebabCase, sharedPrefix } from "./naming.ts";
 // H1 (field-based bucketing): a field qualifies as a split key if its distinct values
 // fall in this range. Below MIN, splitting buys nothing; above MAX, the resulting
 // directory has too many tiny files. Above MAX_DOMINANCE one bucket would swallow
-// the rest, defeating the split.
+// the rest, defeating the split. Below MIN_COVERAGE the field is too sparse to be
+// a meaningful axis — entries missing the field would dominate the resulting "no-X"
+// bucket. 0.8 is symmetric with MAX_DOMINANCE: at most 20% missing, at most 20%
+// concentrated in any one bucket.
 const H1_MIN_CARDINALITY = 2;
 const H1_MAX_CARDINALITY = 30;
 const H1_MAX_DOMINANCE = 0.8;
+const H1_MIN_COVERAGE = 0.8;
 
 export interface H1Bucket {
 	value: string;
@@ -28,14 +32,20 @@ function isPlainObject(value: unknown): value is Record<string, unknown> {
 	return typeof value === "object" && value !== null && !Array.isArray(value);
 }
 
+// Sentinel key under which entries lacking the H1 splitter field are bucketed.
+// Distinct from any plausible real value: leading NUL is invalid in JSON strings,
+// and the suffix is human-readable for debugging.
+const MISSING_BUCKET_KEY = "\0__missing__";
+
 interface BucketStats {
 	values: Map<string, Entry[]>;
 	cardinality: number;
 	dominance: number;
+	coverage: number;
 }
 
-// Shared bucketing scaffold for H1 and H2. `keyOf` returning undefined for any
-// entry aborts (parallels the "key must be present in 100% of entries" rule).
+// Shared bucketing scaffold for H2. `keyOf` returning undefined for any entry
+// aborts (parallels the "key must be present in 100% of entries" rule).
 function bucketBy(group: Group, keyOf: (entry: Entry) => string | undefined): BucketStats | null {
 	const values = new Map<string, Entry[]>();
 	for (const entry of group.entries) {
@@ -51,6 +61,31 @@ function bucketBy(group: Group, keyOf: (entry: Entry) => string | undefined): Bu
 		values,
 		cardinality: values.size,
 		dominance: largest / group.entries.length,
+		coverage: 1,
+	};
+}
+
+// H1-specific variant: instead of aborting when an entry's keyOf returns
+// undefined, route those entries to MISSING_BUCKET_KEY. Coverage records the
+// fraction of entries with a real (non-missing) value so tryH1 can gate on it.
+function bucketByWithMissing(group: Group, keyOf: (entry: Entry) => string | undefined): BucketStats {
+	const values = new Map<string, Entry[]>();
+	let missing = 0;
+	for (const entry of group.entries) {
+		const k = keyOf(entry);
+		const bucketKey = k === undefined ? MISSING_BUCKET_KEY : k;
+		if (k === undefined) missing += 1;
+		const bucket = values.get(bucketKey);
+		if (bucket) bucket.push(entry);
+		else values.set(bucketKey, [entry]);
+	}
+	const sizes = [...values.values()].map((b) => b.length);
+	const largest = sizes.reduce((a, b) => Math.max(a, b), 0);
+	return {
+		values,
+		cardinality: values.size,
+		dominance: largest / group.entries.length,
+		coverage: (group.entries.length - missing) / group.entries.length,
 	};
 }
 
@@ -58,15 +93,14 @@ interface FieldStats extends BucketStats {
 	field: string;
 }
 
-function analyzeField(group: Group, field: string): FieldStats | null {
-	const stats = bucketBy(group, (entry) => {
+function analyzeField(group: Group, field: string): FieldStats {
+	const stats = bucketByWithMissing(group, (entry) => {
 		const payload = entry.data[group.discriminator];
 		if (!isPlainObject(payload)) return undefined;
 		const v = payload[field];
 		if (typeof v !== "string") return undefined;
 		return v;
 	});
-	if (!stats) return null;
 	return { field, ...stats };
 }
 
@@ -80,7 +114,7 @@ export function tryH1(group: Group): H1Result | null {
 	const candidates: FieldStats[] = [];
 	for (const field of allFields) {
 		const stats = analyzeField(group, field);
-		if (!stats) continue;
+		if (stats.coverage < H1_MIN_COVERAGE) continue;
 		if (stats.cardinality < H1_MIN_CARDINALITY) continue;
 		if (stats.cardinality > H1_MAX_CARDINALITY) continue;
 		if (stats.dominance > H1_MAX_DOMINANCE) continue;
@@ -95,10 +129,12 @@ export function tryH1(group: Group): H1Result | null {
 	});
 	const winner = candidates[0]!;
 
-	const allValues = [...winner.values.keys()];
+	const realValues = [...winner.values.keys()].filter((v) => v !== MISSING_BUCKET_KEY);
+	const missingFileName = `no-${kebabCase(winner.field)}`;
 	const buckets: H1Bucket[] = [];
 	for (const [value, entries] of winner.values) {
-		buckets.push({ value, fileName: valueFileName(value, allValues), entries });
+		const fileName = value === MISSING_BUCKET_KEY ? missingFileName : valueFileName(value, realValues);
+		buckets.push({ value, fileName, entries });
 	}
 	buckets.sort(compareNaturalBy((t) => t.fileName));
 

@@ -1,4 +1,4 @@
-import { copyFile, mkdir, writeFile } from "node:fs/promises";
+import { copyFile, mkdir } from "node:fs/promises";
 import { join } from "node:path";
 import { type Entry, groupEntries } from "../group.ts";
 import { snakeCase } from "../naming.ts";
@@ -7,7 +7,6 @@ import { writeOutput } from "../write.ts";
 import { PACKAGE_DIR, SRC_OUT_DIR, TEMPLATES_DIR } from "./constants.ts";
 import { emitAccessor } from "./emit-accessor.ts";
 import { emitAccessorMod } from "./emit-accessor-mod.ts";
-import { emitCargo } from "./emit-cargo.ts";
 import { emitLib } from "./emit-lib.ts";
 
 const TEMPLATE_FILES_TO_COPY = ["error.rs", "fetcher.rs", "builder.rs", "masterfile.rs", "blocking.rs"];
@@ -20,7 +19,7 @@ export async function generateRustApi(entries: Entry[]): Promise<void> {
 	await mkdir(SRC_OUT_DIR, { recursive: true });
 	await mkdir(join(SRC_OUT_DIR, "accessor"), { recursive: true });
 
-	// 2. Build the file map for src/. (Cargo.toml goes outside src/, so write it separately.)
+	// 2. Build the file map for src/.
 	const generated = new Map<string, string>();
 	generated.set("lib.rs", emitLib(groups));
 	generated.set("accessor/mod.rs", emitAccessorMod(groups));
@@ -53,10 +52,7 @@ export async function generateRustApi(entries: Entry[]): Promise<void> {
 		}
 	}
 
-	// 4. Write Cargo.toml at the package root (one level above src/).
-	await writeFile(join(PACKAGE_DIR, "Cargo.toml"), emitCargo(), "utf8");
-
-	// 5. cargo fmt — run only if the crate has at least lib.rs + the templates it imports.
+	// 4. cargo fmt — run only if the crate has at least lib.rs + the templates it imports.
 	//    We attempt fmt; if it fails (because templates aren't all there yet), warn and continue.
 	try {
 		await runCommand("cargo", ["fmt"], { cwd: PACKAGE_DIR });
