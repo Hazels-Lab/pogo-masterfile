@@ -895,3 +895,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
 pub fn parse_masterfile(json: &str) -> serde_json::Result<Vec<MasterfileEntry>> {
     serde_json::from_str(json)
 }
+
+#[cfg(feature = "deprecated")]
+pub mod deprecated;
