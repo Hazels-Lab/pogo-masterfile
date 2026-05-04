@@ -1,92 +1,27 @@
 // Generated — deprecated masterfile types. DO NOT EDIT BY HAND.
-// Re-exports live types and adds Deprecated{Discriminator} variants for
+// Re-exports live types and adds DeprecatedTemplateId / DeprecatedMasterfileEntry for
 // templates removed from the upstream GAME_MASTER.json. See
 // docs/superpowers/specs/2026-05-03-deprecated-types-tracking-design.md.
 
 export type * from "./entries";
 export type * from "./types";
 
+/** @deprecated lastSeen 2025-06-06 — 2 entries */
 type Deprecated_markerIds = "EGG_RARITY_FORM_ROLL_BACK" | "HOME_WIDGET_SETTINGS";
 
-export interface Deprecated_markerData {}
-
-/** @deprecated lastSeen 2025-06-06 — 2 entries */
-export type Deprecated_marker<TID extends Deprecated_markerIds = Deprecated_markerIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		_marker: Deprecated_markerData;
-	};
-};
-
+/** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedAdventureSyncV2GmtIds = "adventure_sync_v2_gmt";
 
-export interface DeprecatedAdventureSyncV2GmtData {
-	featureEnabled?: unknown;
-}
-
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
-export type DeprecatedAdventureSyncV2Gmt<TID extends DeprecatedAdventureSyncV2GmtIds = DeprecatedAdventureSyncV2GmtIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		adventureSyncV2Gmt: DeprecatedAdventureSyncV2GmtData;
-	};
-};
-
 type DeprecatedAndroidBackButtonRefactorSettingsIds = "ANDROID_BACK_BUTTON_REFACTOR";
 
-export interface DeprecatedAndroidBackButtonRefactorSettingsData {
-	enabled?: unknown;
-}
-
-/** @deprecated lastSeen 2025-01-10 — 1 entries */
-export type DeprecatedAndroidBackButtonRefactorSettings<
-	TID extends DeprecatedAndroidBackButtonRefactorSettingsIds = DeprecatedAndroidBackButtonRefactorSettingsIds,
-> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		androidBackButtonRefactorSettings: DeprecatedAndroidBackButtonRefactorSettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2024-11-11 — 3 entries */
 type DeprecatedBadgeSettingsIds = "BADGE_GOWA_2024_IRL_SATURDAY_ESSENTIAL" | "BADGE_GOWA_2024_IRL_SUNDAY_ESSENTIAL" | "BADGE_GOWA_2024_IRL_TEST_ESSENTIAL";
 
-export interface DeprecatedBadgeSettingsData {
-	badgeRank?: unknown;
-	badgeType?: unknown;
-	eventBadge?: unknown;
-	targets?: unknown;
-}
-
-/** @deprecated lastSeen 2024-11-11 — 3 entries */
-export type DeprecatedBadgeSettings<TID extends DeprecatedBadgeSettingsIds = DeprecatedBadgeSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		badgeSettings: DeprecatedBadgeSettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedBootSettingsIds = "BOOT_SETTINGS";
 
-export interface DeprecatedBootSettingsData {
-	asyncAddressableDependencyEnabled?: unknown;
-	bootLazyInjectEnabled?: unknown;
-	parallelVersionCheckEnabled?: unknown;
-	skipGlobalAssetEnabled?: unknown;
-}
-
-/** @deprecated lastSeen 2025-01-10 — 1 entries */
-export type DeprecatedBootSettings<TID extends DeprecatedBootSettingsIds = DeprecatedBootSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		bootSettings: DeprecatedBootSettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2025-02-03 — 18 entries */
 type DeprecatedBuddyActivitySettingsIds =
 	| "BUDDY_ACTIVITY_ATTRACTIVE_POI"
 	| "BUDDY_ACTIVITY_FEED"
@@ -107,41 +42,10 @@ type DeprecatedBuddyActivitySettingsIds =
 	| "BUDDY_ACTIVITY_WAINA_SLEEP"
 	| "BUDDY_ACTIVITY_WALK";
 
-export interface DeprecatedBuddyActivitySettingsData {
-	activity?: unknown;
-	activityCategory?: unknown;
-	emotionCooldownDurationMs?: unknown;
-	maxTimesPerDay?: unknown;
-	numEmotionPointsPerAction?: unknown;
-	numPointsPerAction?: unknown;
-}
-
-/** @deprecated lastSeen 2025-02-03 — 18 entries */
-export type DeprecatedBuddyActivitySettings<TID extends DeprecatedBuddyActivitySettingsIds = DeprecatedBuddyActivitySettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		buddyActivitySettings: DeprecatedBuddyActivitySettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedBuffSettingsIds = "BUFF_SETTINGS";
 
-export interface DeprecatedBuffSettingsData {
-	clickExtensionEnabled?: unknown;
-	countdownReminderS?: unknown;
-	friendshipLuckyEggEnabled?: unknown;
-}
-
-/** @deprecated lastSeen 2025-01-10 — 1 entries */
-export type DeprecatedBuffSettings<TID extends DeprecatedBuffSettingsIds = DeprecatedBuffSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		buffSettings: DeprecatedBuffSettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2025-01-10 — 322 entries */
 type DeprecatedCameraIds =
 	| "camera_aerialace"
 	| "camera_aerialace_leader_player_left_"
@@ -466,34 +370,7 @@ type DeprecatedCameraIds =
 	| "camera_waterpulseenter_player_right_leader_"
 	| "camera_xscissor";
 
-export interface DeprecatedCameraData {
-	angleDegree?: unknown;
-	angleOffsetDegree?: unknown;
-	distanceMeters?: unknown;
-	durationSeconds?: unknown;
-	easeInSpeed?: unknown;
-	easeOutSpeed?: unknown;
-	heightPercent?: unknown;
-	interpolation?: unknown;
-	nextCamera?: unknown;
-	pitchDegree?: unknown;
-	pitchOffsetDegree?: unknown;
-	rollDegree?: unknown;
-	targetType?: unknown;
-	transitionSeconds?: unknown;
-	vertCtrRatio?: unknown;
-	waitSeconds?: unknown;
-}
-
-/** @deprecated lastSeen 2025-01-10 — 322 entries */
-export type DeprecatedCamera<TID extends DeprecatedCameraIds = DeprecatedCameraIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		camera: DeprecatedCameraData;
-	};
-};
-
+/** @deprecated lastSeen 2025-10-16 — 50 entries */
 type DeprecatedClientQuestTemplateIds =
 	| "LEVEL_41_CAP"
 	| "LEVEL_41_CAP_SUB_0"
@@ -546,20 +423,7 @@ type DeprecatedClientQuestTemplateIds =
 	| "LEVEL_50_CAP_SUB_2"
 	| "LEVEL_50_CAP_SUB_3";
 
-export interface DeprecatedClientQuestTemplateData {
-	quest?: unknown;
-	questDisplay?: unknown;
-}
-
-/** @deprecated lastSeen 2025-10-16 — 50 entries */
-export type DeprecatedClientQuestTemplate<TID extends DeprecatedClientQuestTemplateIds = DeprecatedClientQuestTemplateIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		clientQuestTemplate: DeprecatedClientQuestTemplateData;
-	};
-};
-
+/** @deprecated lastSeen 2026-01-24 — 30 entries */
 type DeprecatedCodeGateProtoIds =
 	| "AGE_CONFIRM_CODE_GATE"
 	| "BF_PLUS_ROLLOUT_CODE_GATE"
@@ -592,35 +456,10 @@ type DeprecatedCodeGateProtoIds =
 	| "USE_ITEM_MOVE_REROLL_CODE_GATE"
 	| "WEEKLY_CHALLENGES_ROLLOUT_CODE_GATE";
 
-export interface DeprecatedCodeGateProtoData {
-	isEnabled?: unknown;
-	subCodeGateList?: unknown;
-}
-
-/** @deprecated lastSeen 2026-01-24 — 30 entries */
-export type DeprecatedCodeGateProto<TID extends DeprecatedCodeGateProtoIds = DeprecatedCodeGateProtoIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		codeGateProto: DeprecatedCodeGateProtoData;
-	};
-};
-
+/** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedEggTransparencySettingsIds = "EGG_TRANSPARENCY_SETTINGS";
 
-export interface DeprecatedEggTransparencySettingsData {
-	enableEggDistribution?: unknown;
-}
-
-/** @deprecated lastSeen 2025-01-10 — 1 entries */
-export type DeprecatedEggTransparencySettings<TID extends DeprecatedEggTransparencySettingsIds = DeprecatedEggTransparencySettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		eggTransparencySettings: DeprecatedEggTransparencySettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2026-04-22 — 23 entries */
 type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_30ANNIV2026_EVENT"
 	| "EVENT_PASS_APRIL2025_SEASON"
@@ -646,26 +485,7 @@ type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_SUSTAINABILITY2026_EVENT"
 	| "EVENT_PASS_WINTERHOLIDAYS2025_EVENT";
 
-export interface DeprecatedEventPassSettingsData {
-	additionalBonusTiersLevel?: unknown;
-	eventPassDisplaySettings?: unknown;
-	expirationTime?: unknown;
-	gracePeriodEndTime?: unknown;
-	maxTierLevel?: unknown;
-	pointsItemId?: unknown;
-	prefix?: unknown;
-	trackConditions?: unknown;
-}
-
-/** @deprecated lastSeen 2026-04-22 — 23 entries */
-export type DeprecatedEventPassSettings<TID extends DeprecatedEventPassSettingsIds = DeprecatedEventPassSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		eventPassSettings: DeprecatedEventPassSettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2026-04-22 — 11890 entries */
 type DeprecatedEventPassTierSettingsIds =
 	| "EVENT_PASS_30ANNIV2026_EVENT_1_FREE"
 	| "EVENT_PASS_30ANNIV2026_EVENT_1_PREMIUM"
@@ -12558,140 +12378,28 @@ type DeprecatedEventPassTierSettingsIds =
 	| "EVENT_PASS_WINTERHOLIDAYS2025_EVENT_100_FREE"
 	| "EVENT_PASS_WINTERHOLIDAYS2025_EVENT_100_PREMIUM";
 
-export interface DeprecatedEventPassTierSettingsData {
-	activeBonusDisplaySettings?: unknown;
-	bonusSettings?: unknown;
-	minPointsRequired?: unknown;
-	rank?: unknown;
-	rewards?: unknown;
-	track?: unknown;
-}
-
-/** @deprecated lastSeen 2026-04-22 — 11890 entries */
-export type DeprecatedEventPassTierSettings<TID extends DeprecatedEventPassTierSettingsIds = DeprecatedEventPassTierSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		eventPassTierSettings: DeprecatedEventPassTierSettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2025-10-16 — 3 entries */
 type DeprecatedEvolutionChainDisplaySettingsIds = "EVOLUTION_V0840_POKEMON_APPLIN" | "EVOLUTION_V1011_POKEMON_DIPPLIN" | "EVOLUTION_V1019_POKEMON_HYDRAPPLE";
 
-export interface DeprecatedEvolutionChainDisplaySettingsData {
-	evolutionChains?: unknown;
-	pokemon?: unknown;
-}
-
-/** @deprecated lastSeen 2025-10-16 — 3 entries */
-export type DeprecatedEvolutionChainDisplaySettings<TID extends DeprecatedEvolutionChainDisplaySettingsIds = DeprecatedEvolutionChainDisplaySettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		evolutionChainDisplaySettings: DeprecatedEvolutionChainDisplaySettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedEvolvePreviewSettingsIds = "EVOLVE_PREVIEW_SETTINGS";
 
-export interface DeprecatedEvolvePreviewSettingsData {
-	enableMegaEvolvePreview?: unknown;
-	enableNormalEvolvePreview?: unknown;
-}
-
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
-export type DeprecatedEvolvePreviewSettings<TID extends DeprecatedEvolvePreviewSettingsIds = DeprecatedEvolvePreviewSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		evolvePreviewSettings: DeprecatedEvolvePreviewSettingsData;
-	};
-};
-
 type DeprecatedExtendedPrimalSettingsIds = "EXTENDED_PRIMAL_SETTINGS";
 
-export interface DeprecatedExtendedPrimalSettingsData {
-	extendedPrimalsEnabled?: unknown;
-}
-
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
-export type DeprecatedExtendedPrimalSettings<TID extends DeprecatedExtendedPrimalSettingsIds = DeprecatedExtendedPrimalSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		extendedPrimalSettings: DeprecatedExtendedPrimalSettingsData;
-	};
-};
-
 type DeprecatedFormsRefactorSettingsIds = "FORMS_REFACTOR_SETTINGS";
 
-export interface DeprecatedFormsRefactorSettingsData {
-	enableShadowV2Gmts?: unknown;
-	readFromNewPokedexEntryFields?: unknown;
-	validateNoShadowOrPurifiedInGmts?: unknown;
-	validateNoShadowsInQuestOrInvasionGmts?: unknown;
-}
-
-/** @deprecated lastSeen 2025-01-10 — 1 entries */
-export type DeprecatedFormsRefactorSettings<TID extends DeprecatedFormsRefactorSettingsIds = DeprecatedFormsRefactorSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		formsRefactorSettings: DeprecatedFormsRefactorSettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2025-01-10 — 2 entries */
 type DeprecatedFriendProfileSettingsIds = "ENABLE_FRIEND_PROFILE_SWIPING" | "FRIEND_PROFILE_SETTINGS";
 
-export interface DeprecatedFriendProfileSettingsData {
-	enableSwiping?: unknown;
-	enableTrainerCodeTabV2?: unknown;
-}
-
-/** @deprecated lastSeen 2025-01-10 — 2 entries */
-export type DeprecatedFriendProfileSettings<TID extends DeprecatedFriendProfileSettingsIds = DeprecatedFriendProfileSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		friendProfileSettings: DeprecatedFriendProfileSettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedGymLevelIds = "GYM_LEVEL_SETTINGS";
 
-export interface DeprecatedGymLevelData {
-	leaderSlots?: unknown;
-	requiredExperience?: unknown;
-	trainerSlots?: unknown;
-}
-
-/** @deprecated lastSeen 2025-01-10 — 1 entries */
-export type DeprecatedGymLevel<TID extends DeprecatedGymLevelIds = DeprecatedGymLevelIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		gymLevel: DeprecatedGymLevelData;
-	};
-};
-
+/** @deprecated lastSeen 2024-10-14 — 1 entries */
 type DeprecatedIapCategoryDisplayIds = "IAP_CATEGORY_GIFTABLE";
 
-export interface DeprecatedIapCategoryDisplayData {
-	bannerTitle?: unknown;
-	category?: unknown;
-	name?: unknown;
-	sortOrder?: unknown;
-}
-
-/** @deprecated lastSeen 2024-10-14 — 1 entries */
-export type DeprecatedIapCategoryDisplay<TID extends DeprecatedIapCategoryDisplayIds = DeprecatedIapCategoryDisplayIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		iapCategoryDisplay: DeprecatedIapCategoryDisplayData;
-	};
-};
-
+/** @deprecated lastSeen 2026-05-01 — 41 entries */
 type DeprecatedIapItemDisplayIds =
 	| "general1.ticket.5.giftable"
 	| "general2.ticket.3"
@@ -12735,229 +12443,43 @@ type DeprecatedIapItemDisplayIds =
 	| "pgorelease.winterholidays2025_deluxe_event_pass_track_unlock"
 	| "pgorelease.winterholidays2025_deluxe_event_pass_track_unlock_plus_points";
 
-export interface DeprecatedIapItemDisplayData {
-	category?: unknown;
-	description?: unknown;
-	hidden?: unknown;
-	imageUrl?: unknown;
-	sku?: unknown;
-	skuDisableTime?: unknown;
-	skuDisableTimeUtcMs?: unknown;
-	skuEnableTime?: unknown;
-	skuEnableTimeUtcMs?: unknown;
-	sortOrder?: unknown;
-	spriteId?: unknown;
-	title?: unknown;
-	webstoreSkuId?: unknown;
-	webstoreSkuPriceE6?: unknown;
-}
-
-/** @deprecated lastSeen 2026-05-01 — 41 entries */
-export type DeprecatedIapItemDisplay<TID extends DeprecatedIapItemDisplayIds = DeprecatedIapItemDisplayIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		iapItemDisplay: DeprecatedIapItemDisplayData;
-	};
-};
-
+/** @deprecated lastSeen 2025-07-20 — 1 entries */
 type DeprecatedIbfcLightweightSettingsIds = "ibfc_lightweight_settings";
 
-export interface DeprecatedIbfcLightweightSettingsData {
-	defaultDefenseMultiplier?: unknown;
-	defaultDefenseOverride?: unknown;
-	defaultEnergyChargeOverride?: unknown;
-	defaultStaminaOverride?: unknown;
-}
-
-/** @deprecated lastSeen 2025-07-20 — 1 entries */
-export type DeprecatedIbfcLightweightSettings<TID extends DeprecatedIbfcLightweightSettingsIds = DeprecatedIbfcLightweightSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		ibfcLightweightSettings: DeprecatedIbfcLightweightSettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedIncubatorFlowSettingsIds = "INCUBATOR_FLOW_SETTINGS";
 
-export interface DeprecatedIncubatorFlowSettingsData {
-	mainMapIconEnabled?: unknown;
-	pokemonPageIconEnabled?: unknown;
-}
-
-/** @deprecated lastSeen 2025-01-10 — 1 entries */
-export type DeprecatedIncubatorFlowSettings<TID extends DeprecatedIncubatorFlowSettingsIds = DeprecatedIncubatorFlowSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		incubatorFlowSettings: DeprecatedIncubatorFlowSettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2024-10-07 — 1 entries */
 type DeprecatedLanguageSettingsIds = "LATAM_ENABLED";
 
-export interface DeprecatedLanguageSettingsData {
-	isEnabled?: unknown;
-	language?: unknown;
-}
-
-/** @deprecated lastSeen 2024-10-07 — 1 entries */
-export type DeprecatedLanguageSettings<TID extends DeprecatedLanguageSettingsIds = DeprecatedLanguageSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		languageSettings: DeprecatedLanguageSettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedLoadingScreenSettingsIds = "LOADING_SCREEN_SETTINGS";
 
-export interface DeprecatedLoadingScreenSettingsData {
-	colorSettings?: unknown;
-	displayAfterTimestampMs?: unknown;
-	url?: unknown;
-}
-
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
-export type DeprecatedLoadingScreenSettings<TID extends DeprecatedLoadingScreenSettingsIds = DeprecatedLoadingScreenSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		loadingScreenSettings: DeprecatedLoadingScreenSettingsData;
-	};
-};
-
 type DeprecatedLocationCardFeatureSettingsIds = "LOCATION_CARD_FEATURE_SETTINGS";
 
-export interface DeprecatedLocationCardFeatureSettingsData {
-	enabled?: unknown;
-}
-
-/** @deprecated lastSeen 2025-01-10 — 1 entries */
-export type DeprecatedLocationCardFeatureSettings<TID extends DeprecatedLocationCardFeatureSettingsIds = DeprecatedLocationCardFeatureSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		locationCardFeatureSettings: DeprecatedLocationCardFeatureSettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2026-03-01 — 1 entries */
 type DeprecatedMusicSettingsIds = "MUSIC_SETTINGS";
 
-export interface DeprecatedMusicSettingsData {
-	encounterMusicDayOverride?: unknown;
-	encounterMusicNightOverride?: unknown;
-	mapMusicDayOverride?: unknown;
-	mapMusicNightOverride?: unknown;
-	startTimesEnabled?: unknown;
-}
-
-/** @deprecated lastSeen 2026-03-01 — 1 entries */
-export type DeprecatedMusicSettings<TID extends DeprecatedMusicSettingsIds = DeprecatedMusicSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		musicSettings: DeprecatedMusicSettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedNewsFeedClientSettingsIds = "NEWS_FEED_CLIENT_SETTINGS";
 
-export interface DeprecatedNewsFeedClientSettingsData {
-	newsFeedPollingEnabled?: unknown;
-	newsFeedPollingRateMinutes?: unknown;
-}
-
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
-export type DeprecatedNewsFeedClientSettings<TID extends DeprecatedNewsFeedClientSettingsIds = DeprecatedNewsFeedClientSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		newsFeedClientSettings: DeprecatedNewsFeedClientSettingsData;
-	};
-};
-
 type DeprecatedOnboardingV2SettingsIds = "ONBOARDING_V2_SETTINGS";
 
-export interface DeprecatedOnboardingV2SettingsData {
-	eggKmUntilHatch?: unknown;
-	pokedexId?: unknown;
-}
-
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
-export type DeprecatedOnboardingV2Settings<TID extends DeprecatedOnboardingV2SettingsIds = DeprecatedOnboardingV2SettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		onboardingV2Settings: DeprecatedOnboardingV2SettingsData;
-	};
-};
-
 type DeprecatedPlatypusRolloutSettingsIds = "PLATYPUS_ROLLOUT_SETTINGS";
 
-export interface DeprecatedPlatypusRolloutSettingsData {
-	buddyMultiplayerMinPlayerLevel?: unknown;
-	buddyV2MinPlayerLevel?: unknown;
-}
-
-/** @deprecated lastSeen 2025-01-10 — 1 entries */
-export type DeprecatedPlatypusRolloutSettings<TID extends DeprecatedPlatypusRolloutSettingsIds = DeprecatedPlatypusRolloutSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		platypusRolloutSettings: DeprecatedPlatypusRolloutSettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2025-02-03 — 1 entries */
 type DeprecatedPokemonCutsceneRefactorSettingsIds = "POKEMON_CUTSCENE_REFACTOR_SETTINGS";
 
-export interface DeprecatedPokemonCutsceneRefactorSettingsData {
-	enabled?: unknown;
-}
-
-/** @deprecated lastSeen 2025-02-03 — 1 entries */
-export type DeprecatedPokemonCutsceneRefactorSettings<TID extends DeprecatedPokemonCutsceneRefactorSettingsIds = DeprecatedPokemonCutsceneRefactorSettingsIds> =
-	{
-		templateId: TID;
-		data: {
-			templateId: TID;
-			pokemonCutsceneRefactorSettings: DeprecatedPokemonCutsceneRefactorSettingsData;
-		};
-	};
-
+/** @deprecated lastSeen 2025-09-11 — 1 entries */
 type DeprecatedPokemonInfoPanelSettingsIds = "POKEMON_INFO_PANEL_SETTINGS";
 
-export interface DeprecatedPokemonInfoPanelSettingsData {
-	originSectionV2Enabled?: unknown;
-}
-
-/** @deprecated lastSeen 2025-09-11 — 1 entries */
-export type DeprecatedPokemonInfoPanelSettings<TID extends DeprecatedPokemonInfoPanelSettingsIds = DeprecatedPokemonInfoPanelSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		pokemonInfoPanelSettings: DeprecatedPokemonInfoPanelSettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedQuestEvolutionSettingsIds = "QUEST_EVOLUTION_SETTINGS";
 
-export interface DeprecatedQuestEvolutionSettingsData {
-	enableEvolveInBuddyPage?: unknown;
-	enableQuestEvolutions?: unknown;
-	enableWalkingQuestEvolutions?: unknown;
-}
-
-/** @deprecated lastSeen 2025-01-10 — 1 entries */
-export type DeprecatedQuestEvolutionSettings<TID extends DeprecatedQuestEvolutionSettingsIds = DeprecatedQuestEvolutionSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		questEvolutionSettings: DeprecatedQuestEvolutionSettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2026-04-07 — 5 entries */
 type DeprecatedRollBackIds =
 	| "DELAYED_NOTIF_ROLL_BACK"
 	| "PERIODICALLY_CHECK_FOR_VISIBILITY_ROLL_BACK"
@@ -12965,215 +12487,91 @@ type DeprecatedRollBackIds =
 	| "RT_TAG_EFFICIENCY_ROLL_BACK"
 	| "UPDATED_FORM_CHANGE_WARNING_MODAL_ROLL_BACK";
 
-export interface DeprecatedRollBackData {
-	rollbackPercentage?: unknown;
-}
-
-/** @deprecated lastSeen 2026-04-07 — 5 entries */
-export type DeprecatedRollBack<TID extends DeprecatedRollBackIds = DeprecatedRollBackIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		rollBack: DeprecatedRollBackData;
-	};
-};
-
+/** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedRouteNpcGiftSettingsIds = "ROUTE_NPC_GIFT_SETTINGS";
 
-export interface DeprecatedRouteNpcGiftSettingsData {
-	maxNearbyPoiCount?: unknown;
-	maxNearbyPoiDistanceMeters?: unknown;
-	maxS2CellQueryCount?: unknown;
-}
-
-/** @deprecated lastSeen 2025-01-10 — 1 entries */
-export type DeprecatedRouteNpcGiftSettings<TID extends DeprecatedRouteNpcGiftSettingsIds = DeprecatedRouteNpcGiftSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		routeNpcGiftSettings: DeprecatedRouteNpcGiftSettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2026-01-07 — 4 entries */
 type DeprecatedSettingsOverrideRuleIds =
 	| "SETTINGS_RULES_ALLOW_GOOGLEPIXEL10"
 	| "SETTINGS_RULES_ALLOW_GOOGLEPIXEL10PRO"
 	| "SETTINGS_RULES_ALLOW_GOOGLEPIXEL10PROFOLD"
 	| "SETTINGS_RULES_ALLOW_GOOGLEPIXEL10PROXL";
 
-export interface DeprecatedSettingsOverrideRuleData {
-	meshingEnabled?: unknown;
-	occlusionEnabled?: unknown;
-	ruleType?: unknown;
-	ruleValue?: unknown;
-	semanticsEnabled?: unknown;
-	sortOrder?: unknown;
-	vpsEnabled?: unknown;
-}
-
-/** @deprecated lastSeen 2026-01-07 — 4 entries */
-export type DeprecatedSettingsOverrideRule<TID extends DeprecatedSettingsOverrideRuleIds = DeprecatedSettingsOverrideRuleIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		settingsOverrideRule: DeprecatedSettingsOverrideRuleData;
-	};
-};
-
+/** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedSharedNonCombatMoveSettingsIds = "SHARED_NON_COMBAT_MOVE_SETTINGS";
 
-export interface DeprecatedSharedNonCombatMoveSettingsData {
-	nonCombatMoveEnabled?: unknown;
-	pokemonRarityIndicatorEnabled?: unknown;
-}
-
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
-export type DeprecatedSharedNonCombatMoveSettings<TID extends DeprecatedSharedNonCombatMoveSettingsIds = DeprecatedSharedNonCombatMoveSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		sharedNonCombatMoveSettings: DeprecatedSharedNonCombatMoveSettingsData;
-	};
-};
-
 type DeprecatedSmeargleMovesSettingsIds = "SMEARGLE_MOVES_SETTINGS";
 
-export interface DeprecatedSmeargleMovesSettingsData {
-	cinematicMoves?: unknown;
-	quickMoves?: unknown;
-}
-
-/** @deprecated lastSeen 2025-01-10 — 1 entries */
-export type DeprecatedSmeargleMovesSettings<TID extends DeprecatedSmeargleMovesSettingsIds = DeprecatedSmeargleMovesSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		smeargleMovesSettings: DeprecatedSmeargleMovesSettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2025-08-19 — 1 entries */
 type DeprecatedTutorialSettingsIds = "tutorials_settings";
 
-export interface DeprecatedTutorialSettingsData {
-	friendsTutorialEnabled?: unknown;
-	giftsTutorialEnabled?: unknown;
-	luckyFriendTutorialEnabled?: unknown;
-	luckyTradeTutorialEnabled?: unknown;
-	luresTutorialEnabled?: unknown;
-	pokemonTaggingTutorialEnabled?: unknown;
-	razzberryCatchTutorialEnabled?: unknown;
-	revivesAndPotionsTutorialEnabled?: unknown;
-	taskHelpTutorialsEnabled?: unknown;
-	tradingTutorialEnabled?: unknown;
-	tutorialItemRewards?: unknown;
-	typeEffectivenessTipsEnabled?: unknown;
-}
-
-/** @deprecated lastSeen 2025-08-19 — 1 entries */
-export type DeprecatedTutorialSettings<TID extends DeprecatedTutorialSettingsIds = DeprecatedTutorialSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		tutorialSettings: DeprecatedTutorialSettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2025-07-21 — 1 entries */
 type DeprecatedTwoForOneFlagsIds = "TWO_FOR_ONE_FLAGS";
 
-export interface DeprecatedTwoForOneFlagsData {
-	enabled?: unknown;
-}
-
-/** @deprecated lastSeen 2025-07-21 — 1 entries */
-export type DeprecatedTwoForOneFlags<TID extends DeprecatedTwoForOneFlagsIds = DeprecatedTwoForOneFlagsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		twoForOneFlags: DeprecatedTwoForOneFlagsData;
-	};
-};
-
+/** @deprecated lastSeen 2025-08-16 — 1 entries */
 type DeprecatedVistaGeneralSettingsIds = "vista_general_settings";
 
-export interface DeprecatedVistaGeneralSettingsData {
-	isFeatureEnabled?: unknown;
-	isVistaBattleEnabled?: unknown;
-	isVistaEncounterEnabled?: unknown;
-	isVistaMapEnabled?: unknown;
-	isVistaSpawnsEnabled?: unknown;
-	themeOverride?: unknown;
-}
-
-/** @deprecated lastSeen 2025-08-16 — 1 entries */
-export type DeprecatedVistaGeneralSettings<TID extends DeprecatedVistaGeneralSettingsIds = DeprecatedVistaGeneralSettingsIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		vistaGeneralSettings: DeprecatedVistaGeneralSettingsData;
-	};
-};
-
+/** @deprecated lastSeen 2026-04-28 — 2 entries */
 type DeprecatedVnextBattleConfigIds = "CLIENT_VNEXT_BATTLE_CONFIG" | "VNEXT_BATTLE_CONFIG";
 
-export interface DeprecatedVnextBattleConfigData {
-	maxBattleConfig?: unknown;
-	pvpBattleConfig?: unknown;
-	raidsBattleConfig?: unknown;
-}
-
-/** @deprecated lastSeen 2026-04-28 — 2 entries */
-export type DeprecatedVnextBattleConfig<TID extends DeprecatedVnextBattleConfigIds = DeprecatedVnextBattleConfigIds> = {
-	templateId: TID;
-	data: {
-		templateId: TID;
-		vnextBattleConfig: DeprecatedVnextBattleConfigData;
-	};
-};
+/** Union of every currently-deprecated templateId. */
+export type DeprecatedTemplateId =
+	| Deprecated_markerIds
+	| DeprecatedAdventureSyncV2GmtIds
+	| DeprecatedAndroidBackButtonRefactorSettingsIds
+	| DeprecatedBadgeSettingsIds
+	| DeprecatedBootSettingsIds
+	| DeprecatedBuddyActivitySettingsIds
+	| DeprecatedBuffSettingsIds
+	| DeprecatedCameraIds
+	| DeprecatedClientQuestTemplateIds
+	| DeprecatedCodeGateProtoIds
+	| DeprecatedEggTransparencySettingsIds
+	| DeprecatedEventPassSettingsIds
+	| DeprecatedEventPassTierSettingsIds
+	| DeprecatedEvolutionChainDisplaySettingsIds
+	| DeprecatedEvolvePreviewSettingsIds
+	| DeprecatedExtendedPrimalSettingsIds
+	| DeprecatedFormsRefactorSettingsIds
+	| DeprecatedFriendProfileSettingsIds
+	| DeprecatedGymLevelIds
+	| DeprecatedIapCategoryDisplayIds
+	| DeprecatedIapItemDisplayIds
+	| DeprecatedIbfcLightweightSettingsIds
+	| DeprecatedIncubatorFlowSettingsIds
+	| DeprecatedLanguageSettingsIds
+	| DeprecatedLoadingScreenSettingsIds
+	| DeprecatedLocationCardFeatureSettingsIds
+	| DeprecatedMusicSettingsIds
+	| DeprecatedNewsFeedClientSettingsIds
+	| DeprecatedOnboardingV2SettingsIds
+	| DeprecatedPlatypusRolloutSettingsIds
+	| DeprecatedPokemonCutsceneRefactorSettingsIds
+	| DeprecatedPokemonInfoPanelSettingsIds
+	| DeprecatedQuestEvolutionSettingsIds
+	| DeprecatedRollBackIds
+	| DeprecatedRouteNpcGiftSettingsIds
+	| DeprecatedSettingsOverrideRuleIds
+	| DeprecatedSharedNonCombatMoveSettingsIds
+	| DeprecatedSmeargleMovesSettingsIds
+	| DeprecatedTutorialSettingsIds
+	| DeprecatedTwoForOneFlagsIds
+	| DeprecatedVistaGeneralSettingsIds
+	| DeprecatedVnextBattleConfigIds;
 
 /**
- * Union of every currently-deprecated masterfile entry type.
- * Compose with `MasterfileEntry` from "./entries" to get a wide union.
+ * A masterfile entry with a deprecated templateId. Inner data shape is opaque
+ * by default; pass a TData type parameter to narrow.
+ *
+ * @example
+ * type AnyDeprecated = DeprecatedMasterfileEntry;                                // any deprecated id, opaque data
+ * type SpecificId = DeprecatedMasterfileEntry<"FOO_BAR">;                        // narrowed id
+ * type FullyTyped = DeprecatedMasterfileEntry<"FOO_BAR", { foo: { x: 1 } }>;     // narrowed id + data
  */
-export type DeprecatedMasterfileEntry =
-	| Deprecated_marker
-	| DeprecatedAdventureSyncV2Gmt
-	| DeprecatedAndroidBackButtonRefactorSettings
-	| DeprecatedBadgeSettings
-	| DeprecatedBootSettings
-	| DeprecatedBuddyActivitySettings
-	| DeprecatedBuffSettings
-	| DeprecatedCamera
-	| DeprecatedClientQuestTemplate
-	| DeprecatedCodeGateProto
-	| DeprecatedEggTransparencySettings
-	| DeprecatedEventPassSettings
-	| DeprecatedEventPassTierSettings
-	| DeprecatedEvolutionChainDisplaySettings
-	| DeprecatedEvolvePreviewSettings
-	| DeprecatedExtendedPrimalSettings
-	| DeprecatedFormsRefactorSettings
-	| DeprecatedFriendProfileSettings
-	| DeprecatedGymLevel
-	| DeprecatedIapCategoryDisplay
-	| DeprecatedIapItemDisplay
-	| DeprecatedIbfcLightweightSettings
-	| DeprecatedIncubatorFlowSettings
-	| DeprecatedLanguageSettings
-	| DeprecatedLoadingScreenSettings
-	| DeprecatedLocationCardFeatureSettings
-	| DeprecatedMusicSettings
-	| DeprecatedNewsFeedClientSettings
-	| DeprecatedOnboardingV2Settings
-	| DeprecatedPlatypusRolloutSettings
-	| DeprecatedPokemonCutsceneRefactorSettings
-	| DeprecatedPokemonInfoPanelSettings
-	| DeprecatedQuestEvolutionSettings
-	| DeprecatedRollBack
-	| DeprecatedRouteNpcGiftSettings
-	| DeprecatedSettingsOverrideRule
-	| DeprecatedSharedNonCombatMoveSettings
-	| DeprecatedSmeargleMovesSettings
-	| DeprecatedTutorialSettings
-	| DeprecatedTwoForOneFlags
-	| DeprecatedVistaGeneralSettings
-	| DeprecatedVnextBattleConfig;
+export type DeprecatedMasterfileEntry<TemplateID extends string = DeprecatedTemplateId, TData = { [key: string]: unknown }> = {
+	templateId: TemplateID;
+	data: TData & {
+		templateId: TemplateID;
+	};
+};
