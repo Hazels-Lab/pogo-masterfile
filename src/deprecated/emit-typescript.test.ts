@@ -10,21 +10,21 @@ describe("emitTypescript", () => {
 			templateIds: new Set(["FOO", "BAR"]),
 			lastSeen: "2026-04-09",
 			entryCount: 2,
-			dataTypeBody: {
-				ts: `export interface DeprecatedEventPassTierSettingsData {\n\trank?: number;\n\ttrack?: string;\n}`,
-				rust: "",
-				go: "",
-			},
 		});
 		const out = emitTypescript(set);
 		expect(out).toMatch(/^\/\/ Generated/);
 		expect(out).toContain(`export type * from "./entries"`);
 		expect(out).toContain(`export type * from "./types"`);
-		expect(out).toContain("export interface DeprecatedEventPassTierSettingsData");
+		expect(out).not.toContain("DeprecatedEventPassTierSettingsData");
 		expect(out).toContain("@deprecated lastSeen 2026-04-09 — 2 entries");
 		expect(out).toMatch(/type DeprecatedEventPassTierSettingsIds = "BAR" \| "FOO"/);
-		expect(out).toContain("export type DeprecatedEventPassTierSettings");
-		expect(out).toContain("export type DeprecatedMasterfileEntry =");
+		expect(out).toContain("export type DeprecatedTemplateId =");
+		expect(out).toContain("DeprecatedEventPassTierSettingsIds");
+		expect(out).toContain("DeprecatedMasterfileEntry<");
+		expect(out).toContain("TemplateID extends string = DeprecatedTemplateId");
+		expect(out).toContain("TData = { [key: string]: unknown }");
+		expect(out).toContain("TData & {");
+		expect(out).toContain("[key: string]: unknown");
 	});
 
 	test("emits singleton with single-literal union", () => {
@@ -34,16 +34,20 @@ describe("emitTypescript", () => {
 			templateIds: new Set(["GYM_LEVEL_SETTINGS"]),
 			lastSeen: "2025-12-01",
 			entryCount: 1,
-			dataTypeBody: { ts: "export interface DeprecatedGymLevelData { value?: number; }", rust: "", go: "" },
 		});
 		const out = emitTypescript(set);
 		expect(out).toMatch(/type DeprecatedGymLevelIds = "GYM_LEVEL_SETTINGS"/);
 	});
 
-	test("empty set produces a valid file with empty union", () => {
+	test("empty set produces a valid file with DeprecatedTemplateId = never", () => {
 		const out = emitTypescript(new Map());
 		expect(out).toMatch(/^\/\/ Generated/);
 		expect(out).toContain(`export type * from "./entries"`);
-		expect(out).toContain("export type DeprecatedMasterfileEntry = never");
+		expect(out).toContain("export type DeprecatedTemplateId = never");
+		expect(out).toContain("DeprecatedMasterfileEntry<");
+		expect(out).toContain("TemplateID extends string = never");
+		expect(out).toContain("TData = { [key: string]: unknown }");
+		expect(out).toContain("TData & {");
+		expect(out).toContain("[key: string]: unknown");
 	});
 });

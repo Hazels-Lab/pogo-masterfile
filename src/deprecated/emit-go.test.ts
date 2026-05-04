@@ -3,31 +3,30 @@ import { emitGo } from "./emit-go";
 import type { DeprecatedSet } from "./types";
 
 describe("emitGo", () => {
-	test("emits package header and a discriminator with // Deprecated comment", () => {
+	test("emits package header and single MasterfileEntry struct with json.RawMessage", () => {
 		const set: DeprecatedSet = new Map();
 		set.set("eventPassTierSettings", {
 			discriminator: "eventPassTierSettings",
 			templateIds: new Set(["FOO"]),
 			lastSeen: "2026-04-09",
 			entryCount: 1,
-			dataTypeBody: {
-				ts: "",
-				rust: "",
-				go: `type EventPassTierSettingsData struct {\n\tRank  uint64 \`json:"rank"\`\n\tTrack string \`json:"track"\`\n}`,
-			},
 		});
 		const out = emitGo(set);
 		expect(out).toContain("package deprecated");
-		expect(out).toContain("// Deprecated: lastSeen 2026-04-09, 1 entries");
-		expect(out).toContain("type EventPassTierSettingsData struct");
-		expect(out).toContain("type EventPassTierSettings struct");
-		expect(out).toContain("TemplateID");
-		expect(out).toContain("EventPassTierSettings EventPassTierSettingsData");
+		expect(out).toContain(`import "encoding/json"`);
+		expect(out).toContain("Deprecated: historical masterfile entry type for templates removed from upstream");
+		expect(out).toContain("type MasterfileEntry struct");
+		expect(out).toContain("TemplateID string");
+		expect(out).toContain("json.RawMessage");
+		expect(out).not.toContain("EventPassTierSettingsData");
+		expect(out).toContain("Currently tracking 1 deprecated templateIds across 1 discriminators");
 	});
 
-	test("empty set produces a header-only file", () => {
+	test("empty set emits header and struct with no-tracking doc comment", () => {
 		const out = emitGo(new Map());
 		expect(out).toContain("package deprecated");
-		expect(out).not.toContain("// Deprecated:");
+		expect(out).toContain(`import "encoding/json"`);
+		expect(out).toContain("type MasterfileEntry struct");
+		expect(out).toContain("No deprecated templateIds currently tracked");
 	});
 });

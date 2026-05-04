@@ -23,7 +23,7 @@ import { emitGo } from "./deprecated/emit-go";
 import { emitRust } from "./deprecated/emit-rust";
 import { emitTypescript } from "./deprecated/emit-typescript";
 import { extractTemplateIdsFromEntries, parseLiveTsEmission } from "./deprecated/parse-emission";
-import type { DataTypeBody, DeprecatedSet } from "./deprecated/types";
+import type { DeprecatedSet } from "./deprecated/types";
 
 const REPO_ROOT = join(import.meta.dir, "..");
 const TS_DIST = join(REPO_ROOT, "packages", "ts", "dist");
@@ -38,8 +38,6 @@ export interface ApplyDiffInput {
 	newlyRevived: Set<string>;
 	/** Map<templateId, discriminator> from the PREVIOUS live emission. */
 	discriminatorOfId: Map<string, string>;
-	/** Map<discriminator, DataTypeBody> from the PREVIOUS live emission, used when a discriminator is new to deprecated. */
-	dataBodiesByDiscriminator: Map<string, DataTypeBody>;
 	/** Today's date in ISO YYYY-MM-DD form. */
 	today: string;
 }
@@ -53,7 +51,6 @@ export function applyDiff(input: ApplyDiffInput): DeprecatedSet {
 			templateIds: new Set(v.templateIds),
 			lastSeen: v.lastSeen,
 			entryCount: v.entryCount,
-			dataTypeBody: v.dataTypeBody,
 		});
 	}
 
@@ -73,13 +70,11 @@ export function applyDiff(input: ApplyDiffInput): DeprecatedSet {
 		if (!discriminator) continue; // Unknown id — tolerate (shouldn't happen).
 		let record = next.get(discriminator);
 		if (!record) {
-			const dataTypeBody = input.dataBodiesByDiscriminator.get(discriminator) ?? { ts: "", rust: "", go: "" };
 			record = {
 				discriminator,
 				templateIds: new Set(),
 				lastSeen: input.today,
 				entryCount: 0,
-				dataTypeBody,
 			};
 			next.set(discriminator, record);
 		}
@@ -129,40 +124,18 @@ function parsePreLiveFromGit(): Map<string, string> {
 	return result;
 }
 
-/** Fetch PREVIOUS-HEAD type bodies for one discriminator, all three languages. */
-function fetchDataBodiesAtHead(discriminator: string): DataTypeBody {
-	const kebab = camelToKebab(discriminator);
-	const snake = camelToSnake(discriminator);
-	const ts = gitShow("HEAD", `packages/ts/dist/${kebab}/types.d.ts`) ?? "";
-	const rust = gitShow("HEAD", `packages/rust/src/${snake}/types.rs`) ?? "";
-	const go = gitShow("HEAD", `packages/go/${snake}/types.go`) ?? "";
-	return { ts, rust, go };
-}
-
-function extractInterfaceBody(source: string, name: string): string | null {
-	const marker = `export interface ${name} {`;
-	const start = source.indexOf(marker);
-	if (start === -1) return null;
-	let depth = 0;
-	for (let i = start + marker.length - 1; i < source.length; i++) {
-		const ch = source[i];
-		if (ch === "{") depth++;
-		else if (ch === "}") {
-			depth--;
-			if (depth === 0) return source.slice(start, i + 1);
-		}
-	}
-	return null;
-}
-
 function parseCurrentDeprecated(): DeprecatedSet {
 	// Read from git HEAD because src/generate.ts wipes the dist/ directory before
 	// update-deprecated.ts runs. The working-tree file no longer exists at this point.
 	const source = gitShow("HEAD", "packages/ts/dist/deprecated.d.ts");
 	if (!source) return new Map();
 	const set: DeprecatedSet = new Map();
-	const blockRe =
-		/\/\*\* @deprecated lastSeen (\d{4}-\d{2}-\d{2}) — (\d+) entries \*\/\s*\nexport type Deprecated([A-Za-z_][A-Za-z0-9_]*)<[\s\S]*?TID extends Deprecated\3Ids[\s\S]*?>\s*=\s*\{/g;
+
+	// New format (post-migration): JSDoc sits immediately above the Ids literal-union type.
+	const blockRe = /\/\*\* @deprecated lastSeen (\d{4}-\d{2}-\d{2}) — (\d+) entries \*\/\s*\ntype Deprecated([A-Za-z_][A-Za-z0-9_]*)Ids =/g;
+	// Legacy format (pre-migration): JSDoc sits above "export type Deprecated{Pascal}<TID...>".
+	const legacyBlockRe = /\/\*\* @deprecated lastSeen (\d{4}-\d{2}-\d{2}) — (\d+) entries \*\/\s*\nexport type Deprecated([A-Za-z_][A-Za-z0-9_]*)</g;
+
 	const idsRe = /type Deprecated([A-Za-z_][A-Za-z0-9_]*)Ids\s*=\s*([\s\S]+?);/g;
 	const idMap = new Map<string, string[]>();
 	for (const m of source.matchAll(idsRe)) {
@@ -170,21 +143,24 @@ function parseCurrentDeprecated(): DeprecatedSet {
 		const literals = [...m[2]!.matchAll(/"([^"]+)"/g)].map((mm) => mm[1]!);
 		idMap.set(Pascal, literals);
 	}
-	for (const m of source.matchAll(blockRe)) {
-		const lastSeen = m[1]!;
-		const entryCount = Number(m[2]!);
-		const Pascal = m[3]!;
+
+	const seen = new Set<string>();
+	const applyMatch = (lastSeen: string, entryCount: number, Pascal: string) => {
+		if (seen.has(Pascal)) return;
+		seen.add(Pascal);
 		const discriminator = Pascal.charAt(0).toLowerCase() + Pascal.slice(1);
 		const ids = idMap.get(Pascal) ?? [];
-		const dataBody = extractInterfaceBody(source, `Deprecated${Pascal}Data`) ?? "";
 		set.set(discriminator, {
 			discriminator,
 			templateIds: new Set(ids),
 			lastSeen,
 			entryCount,
-			dataTypeBody: { ts: dataBody, rust: "", go: "" },
 		});
-	}
+	};
+
+	for (const m of source.matchAll(blockRe)) applyMatch(m[1]!, Number(m[2]!), m[3]!);
+	for (const m of source.matchAll(legacyBlockRe)) applyMatch(m[1]!, Number(m[2]!), m[3]!);
+
 	return set;
 }
 
@@ -205,22 +181,12 @@ function main(): void {
 
 	const diff = computeDiff({ oldLive: oldLiveIds, newLive: newLiveIds, currentDeprecated: currentIds });
 
-	const newDiscriminators = new Set<string>();
-	for (const id of diff.newlyDeprecated) {
-		const discriminator = oldLiveMap.get(id);
-		if (!discriminator) continue;
-		if (!current.has(discriminator)) newDiscriminators.add(discriminator);
-	}
-	const dataBodies = new Map<string, DataTypeBody>();
-	for (const d of newDiscriminators) dataBodies.set(d, fetchDataBodiesAtHead(d));
-
 	const today = new Date().toISOString().slice(0, 10);
 	const next = applyDiff({
 		current,
 		newlyDeprecated: diff.newlyDeprecated,
 		newlyRevived: diff.newlyRevived,
 		discriminatorOfId: oldLiveMap,
-		dataBodiesByDiscriminator: dataBodies,
 		today,
 	});
 
@@ -266,12 +232,6 @@ package deprecated
 
 function kebabToCamel(s: string): string {
 	return s.replace(/-([a-z])/g, (_, c) => c.toUpperCase());
-}
-function camelToKebab(s: string): string {
-	return s.replace(/[A-Z]/g, (c) => `-${c.toLowerCase()}`);
-}
-function camelToSnake(s: string): string {
-	return s.replace(/[A-Z]/g, (c) => `_${c.toLowerCase()}`);
 }
 function pascalCase(s: string): string {
 	return s.charAt(0).toUpperCase() + s.slice(1);
