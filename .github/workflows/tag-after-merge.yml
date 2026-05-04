@@ -29,5 +29,8 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
+      - name: Backfill version bumps for manual package edits
+        run: bun run scripts/backfill-bump.ts
+
       - name: Push release tags layer-by-layer
         run: bun run scripts/push-release-tags.ts

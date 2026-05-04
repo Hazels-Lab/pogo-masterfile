@@ -11,14 +11,14 @@
 
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 
-interface PkgInfo {
+export interface PkgInfo {
 	path: string;
 	manifest: { path: string; type: "package.json" | "Cargo.toml" } | null;
 	changelog: string;
 	cascade: string[];
 }
 
-const PACKAGES: PkgInfo[] = [
+export const PACKAGES: PkgInfo[] = [
 	{
 		path: "packages/ts",
 		manifest: { path: "packages/ts/package.json", type: "package.json" },
@@ -83,68 +83,81 @@ function setManifestVersion(p: PkgInfo, v: string): void {
 	}
 }
 
-function appendChangelog(p: PkgInfo, version: string, upstreamSha: string): void {
+function appendChangelog(p: PkgInfo, version: string, body: string): void {
 	const today = new Date().toISOString().slice(0, 10);
-	const entry = `## [${version}] - ${today}\n\nAutomated regeneration from upstream masterfile commit \`${upstreamSha}\`.\n`;
-	let body = existsSync(p.changelog) ? readFileSync(p.changelog, "utf8") : "# Changelog\n\n";
-	const idx = body.search(/^## \[/m);
-	body = idx === -1 ? `${body}\n${entry}` : `${body.slice(0, idx)}${entry}\n${body.slice(idx)}`;
-	writeFileSync(p.changelog, body);
+	const entry = `## [${version}] - ${today}\n\n${body}\n`;
+	let existing = existsSync(p.changelog) ? readFileSync(p.changelog, "utf8") : "# Changelog\n\n";
+	const idx = existing.search(/^## \[/m);
+	existing = idx === -1 ? `${existing}\n${entry}` : `${existing.slice(0, idx)}${entry}\n${existing.slice(idx)}`;
+	writeFileSync(p.changelog, existing);
 }
 
-const [beforePath, afterPath] = process.argv.slice(2);
-if (!beforePath || !afterPath) {
-	console.error("Usage: bump-versions.ts <before.json> <after.json>");
-	process.exit(1);
-}
+// Apply patch bumps to `initialChanged` (and everything they cascade to),
+// rewriting .versions.json, language manifests, and CHANGELOGs in place.
+// Returns the final bump map keyed by package path. `changelogBody` is the
+// per-entry text (caller supplies the "why").
+export function applyBumps(initialChanged: Set<string>, changelogBody: string): Record<string, string> {
+	const versions = JSON.parse(readFileSync(VERSIONS_FILE, "utf8")) as Record<string, string>;
 
-const upstreamSha = process.env.UPSTREAM_SHA ?? "unknown";
-const before = JSON.parse(readFileSync(beforePath, "utf8")) as Record<string, string>;
-const after = JSON.parse(readFileSync(afterPath, "utf8")) as Record<string, string>;
-const versions = JSON.parse(readFileSync(VERSIONS_FILE, "utf8")) as Record<string, string>;
-
-const changed = new Set<string>();
-for (const p of PACKAGES) {
-	if (before[p.path] !== after[p.path]) changed.add(p.path);
-}
-
-const queue = [...changed];
-while (queue.length > 0) {
-	const cur = queue.shift();
-	if (!cur) break;
-	const p = PACKAGES.find((x) => x.path === cur);
-	if (!p) continue;
-	for (const dep of p.cascade) {
-		if (!changed.has(dep)) {
-			changed.add(dep);
-			queue.push(dep);
+	const changed = new Set(initialChanged);
+	const queue = [...changed];
+	while (queue.length > 0) {
+		const cur = queue.shift();
+		if (!cur) break;
+		const p = PACKAGES.find((x) => x.path === cur);
+		if (!p) continue;
+		for (const dep of p.cascade) {
+			if (!changed.has(dep)) {
+				changed.add(dep);
+				queue.push(dep);
+			}
 		}
 	}
+
+	const bumps: Record<string, string> = {};
+	for (const p of PACKAGES) {
+		if (!changed.has(p.path)) continue;
+		const next = bumpPatch(versions[p.path] ?? "0.1.0");
+		versions[p.path] = next;
+		bumps[p.path] = next;
+		setManifestVersion(p, next);
+		appendChangelog(p, next, changelogBody);
+		console.log(`${p.path}: ${next}`);
+	}
+
+	if (Object.keys(bumps).length > 0) {
+		writeFileSync(VERSIONS_FILE, `${JSON.stringify(versions, null, "\t")}\n`);
+	}
+
+	const goBump = bumps["packages/go"];
+	if (goBump) {
+		const goApiModPath = "packages/go-api/go.mod";
+		const text = readFileSync(goApiModPath, "utf8");
+		writeFileSync(goApiModPath, text.replace(/(require\s+github\.com\/Hazels-Lab\/pogo-masterfile-types\/packages\/go)\s+v[\w.+-]+/, `$1 v${goBump}`));
+		console.log(`packages/go-api/go.mod: require -> v${goBump}`);
+	}
+
+	return bumps;
 }
 
-const bumps: Record<string, string> = {};
-for (const p of PACKAGES) {
-	if (!changed.has(p.path)) continue;
-	const next = bumpPatch(versions[p.path] ?? "0.1.0");
-	versions[p.path] = next;
-	bumps[p.path] = next;
-	setManifestVersion(p, next);
-	appendChangelog(p, next, upstreamSha);
-	console.log(`${p.path}: ${next}`);
-}
+if (import.meta.main) {
+	const [beforePath, afterPath] = process.argv.slice(2);
+	if (!beforePath || !afterPath) {
+		console.error("Usage: bump-versions.ts <before.json> <after.json>");
+		process.exit(1);
+	}
 
-if (Object.keys(bumps).length > 0) {
-	writeFileSync(VERSIONS_FILE, `${JSON.stringify(versions, null, "\t")}\n`);
-}
+	const upstreamSha = process.env.UPSTREAM_SHA ?? "unknown";
+	const before = JSON.parse(readFileSync(beforePath, "utf8")) as Record<string, string>;
+	const after = JSON.parse(readFileSync(afterPath, "utf8")) as Record<string, string>;
 
-const goBump = bumps["packages/go"];
-if (goBump) {
-	const goApiModPath = "packages/go-api/go.mod";
-	const text = readFileSync(goApiModPath, "utf8");
-	writeFileSync(goApiModPath, text.replace(/(require\s+github\.com\/Hazels-Lab\/pogo-masterfile-types\/packages\/go)\s+v[\w.+-]+/, `$1 v${goBump}`));
-	console.log(`packages/go-api/go.mod: require -> v${goBump}`);
-}
+	const initial = new Set<string>();
+	for (const p of PACKAGES) {
+		if (before[p.path] !== after[p.path]) initial.add(p.path);
+	}
 
-if (Object.keys(bumps).length === 0) {
-	console.log("No effective package changes after canonical hashing.");
+	const bumps = applyBumps(initial, `Automated regeneration from upstream masterfile commit \`${upstreamSha}\`.`);
+	if (Object.keys(bumps).length === 0) {
+		console.log("No effective package changes after canonical hashing.");
+	}
 }
