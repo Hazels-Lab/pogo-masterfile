@@ -28,16 +28,16 @@ pub struct ${Pascal}Data {}`;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct ${Pascal} {
-	pub template_id: String,
-	pub data: ${Pascal}Body,
+    pub template_id: String,
+    pub data: ${Pascal}Body,
 }
 
 #[deprecated(note = "lastSeen ${d.lastSeen} — ${d.entryCount} entries")]
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct ${Pascal}Body {
-	pub template_id: String,
-	pub ${snakeCase(d.discriminator)}: ${Pascal}Data,
+    pub template_id: String,
+    pub ${snakeCase(d.discriminator)}: ${Pascal}Data,
 }`;
 
 	return `${dataBody}\n\n${wrapper}`;

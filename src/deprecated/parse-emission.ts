@@ -14,7 +14,7 @@ export function extractTemplateIdsFromEntries(source: string, discriminatorPasca
 	const pattern = new RegExp(`${escaped}<\\s*"([^"]+)"`, "g");
 	const ids: string[] = [];
 	for (const match of source.matchAll(pattern)) {
-		ids.push(match[1]);
+		ids.push(match[1]!);
 	}
 	return ids;
 }
