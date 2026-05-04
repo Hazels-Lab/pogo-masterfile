@@ -88,6 +88,16 @@ describe("tryH1", () => {
 		expect(tryH1(group)).toBeNull();
 	});
 
+	test("accepts a field at exactly 80% coverage (boundary)", () => {
+		// 8/10 entries have x → coverage exactly 0.80, equal to H1_MIN_COVERAGE.
+		// The gate is `< H1_MIN_COVERAGE`, so this must qualify.
+		const payloads: Array<Record<string, unknown>> = [];
+		for (let i = 0; i < 8; i += 1) payloads.push({ x: i % 2 === 0 ? "A" : "B" });
+		for (let i = 0; i < 2; i += 1) payloads.push({ other: 1 });
+		const group = mkGroup(payloads);
+		expect(tryH1(group)?.field).toBe("x");
+	});
+
 	test("picks lowest-dominance field when multiple qualify", () => {
 		// `balanced` is 50/50; `lopsided` is 75/25 — both qualify, balanced wins.
 		const group = mkGroup([
