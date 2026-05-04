@@ -11,17 +11,17 @@ export interface EventPassSettings<TemplateID extends string = string, TData ext
 				bonusBoxes: [
 					{
 						iconType: "SPAWN_UNKNOWN";
-						quantity: 5;
+						quantity: 10;
 						text: "quest_catch_pokemon_singular";
 					},
 					{
 						iconType: "EGG";
-						quantity: 40;
+						quantity: 80;
 						text: "quest_hatch_egg_singular";
 					},
 					{
 						iconType: "RAID";
-						quantity: 100;
+						quantity: 200;
 						text: "quest_win_raid_singular";
 					},
 				];
