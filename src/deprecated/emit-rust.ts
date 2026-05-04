@@ -15,7 +15,14 @@ export function emitRust(set: DeprecatedSet): string {
 
 function emitOneDiscriminator(d: DeprecatedDiscriminator): string {
 	const Pascal = groupName(d.discriminator);
-	const dataBody = d.dataTypeBody.rust.trim();
+	const rawDataBody = d.dataTypeBody.rust.trim();
+	// When dataTypeBody is empty (bootstrap scaffold), emit a minimal placeholder struct
+	// so that the `XxxData` reference in `XxxBody` resolves.
+	const dataBody =
+		rawDataBody ||
+		`#[deprecated(note = "lastSeen ${d.lastSeen} — ${d.entryCount} entries")]
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct ${Pascal}Data {}`;
 
 	const wrapper = `#[deprecated(note = "lastSeen ${d.lastSeen} — ${d.entryCount} entries")]
 #[derive(Debug, Clone, Serialize, Deserialize)]

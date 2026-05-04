@@ -15,7 +15,13 @@ export function emitGo(set: DeprecatedSet): string {
 
 function emitOneDiscriminator(d: DeprecatedDiscriminator): string {
 	const Pascal = groupName(d.discriminator);
-	const dataBody = d.dataTypeBody.go.trim();
+	const rawDataBody = d.dataTypeBody.go.trim();
+	// When dataTypeBody is empty (bootstrap scaffold), emit a minimal placeholder struct
+	// so that the `XxxData` reference in `XxxBody` resolves.
+	const dataBody =
+		rawDataBody ||
+		`// Deprecated: lastSeen ${d.lastSeen}, ${d.entryCount} entries
+type ${Pascal}Data struct{}`;
 
 	const wrapper = `// Deprecated: lastSeen ${d.lastSeen}, ${d.entryCount} entries
 type ${Pascal} struct {
