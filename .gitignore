@@ -67,4 +67,7 @@ target
 
 # Go build artifacts
 *.exe
+
+# Local-only design notes; track formal specs/plans under docs/superpowers/
 docs/**/*.md
+!docs/superpowers/**
