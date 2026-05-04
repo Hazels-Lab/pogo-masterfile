@@ -5,6 +5,11 @@ on:
     tags:
       - "rust-macros-v*"
   workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to publish (e.g. rust-macros-v0.1.0)"
+        required: true
+        type: string
 
 jobs:
   publish:
@@ -15,6 +20,8 @@ jobs:
         working-directory: packages/rust-macros
     steps:
       - uses: actions/checkout@v6
+        with:
+          ref: ${{ inputs.tag || github.ref }}
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
         with:

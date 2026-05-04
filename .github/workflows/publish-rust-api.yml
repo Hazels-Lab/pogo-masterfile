@@ -5,6 +5,11 @@ on:
     tags:
       - "pogo-masterfile-rust-v*"
   workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to publish (e.g. pogo-masterfile-rust-v0.1.3)"
+        required: true
+        type: string
 
 jobs:
   publish:
@@ -15,6 +20,8 @@ jobs:
         working-directory: packages/rust-api
     steps:
       - uses: actions/checkout@v6
+        with:
+          ref: ${{ inputs.tag || github.ref }}
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
         with:

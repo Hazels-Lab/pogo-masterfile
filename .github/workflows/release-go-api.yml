@@ -5,6 +5,11 @@ on:
     tags:
       - "packages/go-api/v*"
   workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to publish (e.g. packages/go-api/v0.1.3)"
+        required: true
+        type: string
 
 jobs:
   release:
@@ -12,8 +17,12 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
     steps:
       - uses: actions/checkout@v6
+        with:
+          ref: ${{ inputs.tag || github.ref }}
       - uses: actions/setup-go@v6
         with:
           go-version: stable
@@ -29,13 +38,14 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ env.RELEASE_TAG }}
           generate_release_notes: true
           body: |
             Tagged Go module release for `packages/go-api`.
 
             Install:
             ```
-            go get ${{ github.repository }}/packages/go-api@${{ github.ref_name }}
+            go get ${{ github.repository }}/packages/go-api@${{ env.RELEASE_TAG }}
             ```
 
             Note: proxy.golang.org may take a minute to pick up the new tag. If `go get` reports "no matching versions", retry shortly.
