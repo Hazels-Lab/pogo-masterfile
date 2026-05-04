@@ -35,7 +35,7 @@ function isPlainObject(value: unknown): value is Record<string, unknown> {
 // Sentinel key under which entries lacking the H1 splitter field are bucketed.
 // Distinct from any plausible real value: leading NUL is invalid in JSON strings,
 // and the suffix is human-readable for debugging.
-export const MISSING_BUCKET_KEY = "\0__missing__";
+const MISSING_BUCKET_KEY = "\0__missing__";
 
 interface BucketStats {
 	values: Map<string, Entry[]>;
