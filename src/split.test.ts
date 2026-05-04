@@ -192,7 +192,9 @@ describe("tryH1 file naming", () => {
 		payloads.push({ sku: "lone" });
 		const group = mkGroup(payloads);
 
-		const fileNames = tryH1(group)!.buckets.map((b) => b.fileName).sort();
+		const fileNames = tryH1(group)!
+			.buckets.map((b) => b.fileName)
+			.sort();
 		expect(fileNames).toEqual(["bundle", "no-category", "sticker"]);
 	});
 });
