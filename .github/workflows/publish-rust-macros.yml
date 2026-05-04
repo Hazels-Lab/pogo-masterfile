@@ -4,6 +4,7 @@ on:
   push:
     tags:
       - "rust-macros-v*"
+  workflow_dispatch:
 
 jobs:
   publish:
