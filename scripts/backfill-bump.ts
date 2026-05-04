@@ -1,11 +1,21 @@
 // Run on push to main BEFORE push-release-tags.ts. For each published
 // package whose tracked files changed between HEAD~1 and HEAD without a
-// matching bump in .versions.json, bump the patch version (with cascade) and
-// commit the result with [skip ci] so the follow-up tag push triggers
-// publish workflows. No-op when versions are already bumped (autoupdate
-// path) or when the changed files don't qualify as release-worthy.
+// matching bump in .versions.json, bump the patch version (with cascade)
+// and open a PR labeled `autoupdate` so auto-merge.yml squash-merges it
+// onto main. The squash commit triggers tag-after-merge.yml again; that
+// second run pushes the tags. No-op when versions are already bumped
+// (the autoupdate path itself, or a re-entry after our own merge) or
+// when the changed files don't qualify as release-worthy.
+//
+// Why a PR instead of `git push origin HEAD:main`: GitHub suppresses the
+// `push:tags:` webhook for tags that point at commits pushed via `git
+// push` from inside a workflow run, even with a fully-scoped PAT. The
+// suppression does NOT apply to commits created by squash-merge, which
+// is how the autoupdate flow has always worked. Mirroring that path
+// keeps the release chain firing end-to-end.
 //
 // Usage: bun run scripts/backfill-bump.ts
+// Required env: GH_TOKEN (for `gh pr create`).
 
 import { applyBumps } from "./bump-versions";
 
@@ -112,7 +122,39 @@ if (Object.keys(bumps).length === 0) {
 	process.exit(0);
 }
 
+const shortSha = git("rev-parse", "--short", "HEAD");
+const branch = `backfill/${shortSha}`;
+const bumpedList = Object.keys(bumps).join(", ");
+const title = `chore(release): backfill version bumps for ${bumpedList}`;
+const body = [
+	`Automated backfill release for manual package edits in commit \`${mergeSha}\`.`,
+	"",
+	"This PR is opened by `tag-after-merge.yml` because the package files in",
+	"the parent commit qualified for a release but no version bump was",
+	"included. Auto-merging via the `autoupdate` label produces a squash",
+	"commit that the next `tag-after-merge.yml` run uses to push release tags.",
+	"",
+	"Bumped:",
+	...Object.entries(bumps).map(([p, v]) => `- ${p} → \`${v}\``),
+].join("\n");
+
+git("checkout", "-b", branch);
 git("add", "-A");
-git("commit", "-m", `chore(release): backfill version bumps for ${Object.keys(bumps).join(", ")} [skip ci]`);
-git("push", "origin", "HEAD:main");
-console.log("Pushed backfill bump commit to origin/main.");
+git("commit", "-m", title);
+git("push", "origin", `HEAD:refs/heads/${branch}`);
+
+function gh(...args: string[]): string {
+	const proc = Bun.spawnSync({
+		cmd: ["gh", ...args],
+		stdout: "pipe",
+		stderr: "pipe",
+	});
+	if (proc.exitCode !== 0) {
+		const err = new TextDecoder().decode(proc.stderr);
+		throw new Error(`gh ${args.join(" ")}: ${err}`);
+	}
+	return new TextDecoder().decode(proc.stdout).trim();
+}
+
+const prUrl = gh("pr", "create", "--base", "main", "--head", branch, "--title", title, "--body", body, "--label", "autoupdate");
+console.log(`Opened backfill PR: ${prUrl}`);
