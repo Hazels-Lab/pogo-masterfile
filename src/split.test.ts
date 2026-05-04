@@ -58,8 +58,33 @@ describe("tryH1", () => {
 		expect(tryH1(group)).toBeNull();
 	});
 
-	test("rejects field not present in 100% of variants", () => {
+	test("rejects field below the coverage threshold", () => {
+		// x present in 3/4 entries (75%) — below H1_MIN_COVERAGE = 0.8.
 		const group = mkGroup([{ x: "A" }, { x: "B" }, { y: 1 }, { x: "A" }]);
+		expect(tryH1(group)).toBeNull();
+	});
+
+	test("accepts a field at 95% coverage and bucketizes the missing entries", () => {
+		// 19 entries with category, 1 without → coverage 0.95.
+		const payloads: Array<Record<string, unknown>> = [];
+		for (let i = 0; i < 10; i += 1) payloads.push({ category: "A" });
+		for (let i = 0; i < 9; i += 1) payloads.push({ category: "B" });
+		payloads.push({ other: 1 }); // no category
+		const group = mkGroup(payloads);
+
+		const result = tryH1(group);
+		expect(result?.field).toBe("category");
+		expect(result?.buckets).toHaveLength(3);
+		const missingBucket = result!.buckets.find((b) => b.entries.length === 1);
+		expect(missingBucket?.entries[0]?.data.x).toEqual({ other: 1 });
+	});
+
+	test("rejects a field at 50% coverage", () => {
+		// x present in 5/10 entries → coverage 0.5, below threshold.
+		const payloads: Array<Record<string, unknown>> = [];
+		for (let i = 0; i < 5; i += 1) payloads.push({ x: i % 2 === 0 ? "A" : "B" });
+		for (let i = 0; i < 5; i += 1) payloads.push({ other: 1 });
+		const group = mkGroup(payloads);
 		expect(tryH1(group)).toBeNull();
 	});
 
