@@ -182,6 +182,19 @@ describe("tryH1 file naming", () => {
 		const fileNames = result!.buckets.map((b) => b.fileName).sort();
 		expect(fileNames).toContain("no-category");
 	});
+
+	test("excludes the missing bucket from sharedPrefix calc so real values still strip correctly", () => {
+		// If the sentinel leaked into sharedPrefix, the prefix would shrink to ""
+		// and real values would emit as `iap-category-sticker` / `iap-category-bundle`.
+		const payloads: Array<Record<string, unknown>> = [];
+		for (let i = 0; i < 10; i += 1) payloads.push({ category: "IAP_CATEGORY_STICKER" });
+		for (let i = 0; i < 9; i += 1) payloads.push({ category: "IAP_CATEGORY_BUNDLE" });
+		payloads.push({ sku: "lone" });
+		const group = mkGroup(payloads);
+
+		const fileNames = tryH1(group)!.buckets.map((b) => b.fileName).sort();
+		expect(fileNames).toEqual(["bundle", "no-category", "sticker"]);
+	});
 });
 
 describe("tryH3", () => {
