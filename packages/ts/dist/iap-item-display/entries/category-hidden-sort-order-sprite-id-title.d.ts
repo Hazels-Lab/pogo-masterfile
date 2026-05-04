@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-hidden-sort-order-sprite-id-title", 104 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-hidden-sort-order-sprite-id-title", 105 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -1056,6 +1056,19 @@ export type IapItemDisplayBundleThailandfeatureapril20241 = S<
 		}
 	>
 >;
+export type IapItemDisplayBundleUltrabeastraid2024 = S<
+	IapItemDisplay<
+		"bundle.ultrabeastraid.2024",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			sku: "bundle.ultrabeastraid.2024";
+			sortOrder: 1;
+			spriteId: "bundle.general.premiumbox.small.1";
+			title: "raiding_box";
+		}
+	>
+>;
 export type IapItemDisplayBundleWinterholiday20231 = S<
 	IapItemDisplay<
 		"bundle.winterholiday2023.1",
@@ -1438,6 +1451,7 @@ export type IapItemDisplayCategoryHiddenSortOrderSpriteIdTitleMasterfileEntry =
 	| IapItemDisplayBundleSmoresbump2025
 	| IapItemDisplayBundleSongkran20251
 	| IapItemDisplayBundleThailandfeatureapril20241
+	| IapItemDisplayBundleUltrabeastraid2024
 	| IapItemDisplayBundleWinterholiday20231
 	| IapItemDisplayBundleWinterholiday20232
 	| IapItemDisplayBundleWinterholiday20233

@@ -9,7 +9,3 @@
 //
 //	docs/superpowers/specs/2026-05-03-deprecated-types-tracking-design.md
 package deprecated
-
-// v0.1.2 release-trigger
-
-// v0.1.3 release-trigger
