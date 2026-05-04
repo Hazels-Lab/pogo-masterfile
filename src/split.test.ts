@@ -168,6 +168,20 @@ describe("tryH1 file naming", () => {
 		const water = result!.buckets.find((b) => b.value === "POKEMON_TYPE_WATER");
 		expect(water?.fileName).toBe("water");
 	});
+
+	test("emits a no-<field> bucket for entries missing the splitter field", () => {
+		// 19 of 20 entries have `category`; 1 doesn't. Coverage = 0.95.
+		const payloads: Array<Record<string, unknown>> = [];
+		for (let i = 0; i < 10; i += 1) payloads.push({ category: "STICKER" });
+		for (let i = 0; i < 9; i += 1) payloads.push({ category: "BUNDLE" });
+		payloads.push({ sku: "lone" });
+		const group = mkGroup(payloads);
+
+		const result = tryH1(group);
+		expect(result?.field).toBe("category");
+		const fileNames = result!.buckets.map((b) => b.fileName).sort();
+		expect(fileNames).toContain("no-category");
+	});
 });
 
 describe("tryH3", () => {

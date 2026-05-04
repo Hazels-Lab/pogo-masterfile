@@ -129,10 +129,12 @@ export function tryH1(group: Group): H1Result | null {
 	});
 	const winner = candidates[0]!;
 
-	const allValues = [...winner.values.keys()];
+	const realValues = [...winner.values.keys()].filter((v) => v !== MISSING_BUCKET_KEY);
+	const missingFileName = `no-${kebabCase(winner.field)}`;
 	const buckets: H1Bucket[] = [];
 	for (const [value, entries] of winner.values) {
-		buckets.push({ value, fileName: valueFileName(value, allValues), entries });
+		const fileName = value === MISSING_BUCKET_KEY ? missingFileName : valueFileName(value, realValues);
+		buckets.push({ value, fileName, entries });
 	}
 	buckets.sort(compareNaturalBy((t) => t.fileName));
 
