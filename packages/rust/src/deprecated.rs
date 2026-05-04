@@ -14,3 +14,5 @@ pub struct DeprecatedMasterfileEntry {
     pub template_id: String,
     pub data: Value,
 }
+
+// v0.1.2 release-trigger

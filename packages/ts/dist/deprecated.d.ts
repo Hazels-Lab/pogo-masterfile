@@ -12575,3 +12575,5 @@ export type DeprecatedMasterfileEntry<TemplateID extends string = DeprecatedTemp
 		templateId: TemplateID;
 	};
 };
+
+// v0.1.2 release-trigger
