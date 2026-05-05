@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1.10] - 2026-05-05
+
+Backfill release from merge commit `2d4d1d60969f40cddd18f247ffea6e1ae00db0e8`.
+
 ## [0.1.9] - 2026-05-05
 
 Backfill release from merge commit `a6affa1add9a744f1a02dbbb96bf9f69e831d682`.
