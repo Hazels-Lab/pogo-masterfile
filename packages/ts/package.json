@@ -42,7 +42,7 @@
 			"types": "./dist/*/index.d.ts"
 		},
 		"./*/entries": {
-			"types": "./dist/*/entries.d.ts"
+			"types": "./dist/*/entries/index.d.ts"
 		},
 		"./*/types": {
 			"types": "./dist/*/types.d.ts"

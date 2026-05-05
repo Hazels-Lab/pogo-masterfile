@@ -303,8 +303,8 @@ export function fingerprintFileName(fingerprint: string[]): string {
 	return fingerprint.map(kebabCase).join("-");
 }
 
-// Groups under this size emit a single `entries.ts` (no subdirectory). Above it,
-// we try H1 then H2 to decide how to split into multiple files.
+// Groups under this size emit a single `entries/index.ts` (no further splitting).
+// Above it, we try H1 then H2 to decide how to split into multiple bucket files.
 const SPLIT_THRESHOLD = 100;
 
 // Minimum singletons sharing a trailing token before they earn their own bucket file.

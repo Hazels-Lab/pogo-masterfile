@@ -21,15 +21,15 @@ export function extractTemplateIdsFromEntries(source: string, discriminatorPasca
 
 /**
  * Walk `packages/ts/dist/` and build {templateId -> discriminator} for every
- * per-discriminator folder that has an entries.d.ts.
+ * per-discriminator folder that has an entries/index.d.ts.
  *
  * KNOWN LIMITATION: This does NOT walk packages/ts/dist/singletons/, which
  * uses a different emission shape (per-templateId .d.ts files with interface
- * declarations rather than per-discriminator entries.d.ts with type aliases).
- * The bootstrap consumes a JSON snapshot directly so this gap doesn't affect
- * it. Steady-state will miss future deprecations of singleton-mode templates;
- * adding singleton support is a follow-up. See the plan's known-limitations
- * section.
+ * declarations rather than per-discriminator entries/index.d.ts with type
+ * aliases). The bootstrap consumes a JSON snapshot directly so this gap doesn't
+ * affect it. Steady-state will miss future deprecations of singleton-mode
+ * templates; adding singleton support is a follow-up. See the plan's
+ * known-limitations section.
  */
 export function parseLiveTsEmission(distRoot: string): Map<string, string> {
 	const result = new Map<string, string>();
@@ -37,7 +37,7 @@ export function parseLiveTsEmission(distRoot: string): Map<string, string> {
 
 	for (const dirent of readdirSync(distRoot, { withFileTypes: true })) {
 		if (!dirent.isDirectory()) continue;
-		const entriesPath = join(distRoot, dirent.name, "entries.d.ts");
+		const entriesPath = join(distRoot, dirent.name, "entries", "index.d.ts");
 		if (!existsSync(entriesPath)) continue;
 
 		const discriminator = kebabToCamel(dirent.name);

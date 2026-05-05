@@ -114,7 +114,10 @@ function parsePreLiveFromGit(): Map<string, string> {
 		const path = parts[1]!;
 		if (objType !== "tree") continue;
 		const dirName = path.split("/").pop()!;
-		const source = gitShow("HEAD", `${path}/entries.d.ts`);
+		// Try the current `entries/index.d.ts` layout first; fall back to the
+		// pre-migration `entries.d.ts` location so this still works the first
+		// time we regen after the layout change (HEAD still has old paths).
+		const source = gitShow("HEAD", `${path}/entries/index.d.ts`) ?? gitShow("HEAD", `${path}/entries.d.ts`);
 		if (!source) continue;
 		const discriminator = kebabToCamel(dirName);
 		const Pascal = pascalCase(discriminator);

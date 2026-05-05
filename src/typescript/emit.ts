@@ -8,20 +8,7 @@ import { detectInvariants, invariantsToInferredType, stripInvariantsFromValue, s
 import { aliasSuffix, deriveGroupAliases, groupName, kebabCase, pascalCase } from "../naming.ts";
 import type { PromotionContext, PromotionRegistry } from "../promoted-unions.ts";
 import { AstFileBuilder, inferredToType, N, T } from "./builder.ts";
-import {
-	BARREL_FILE,
-	BARREL_TYPE,
-	ENTRIES_LOWER,
-	ENTRY,
-	ENTRY_LOWER,
-	SIMPLIFY,
-	SINGLETONS,
-	TEMPLATE_GENERIC,
-	TYPE,
-	TYPES,
-	TYPES_LOWER,
-	WIDEN,
-} from "./constants.ts";
+import { BARREL_TYPE, ENTRIES_LOWER, ENTRY, ENTRY_LOWER, SIMPLIFY, SINGLETONS, TEMPLATE_GENERIC, TYPE, TYPES, TYPES_LOWER, WIDEN } from "./constants.ts";
 
 // Build `${gName}${suffix}` variant alias declarations for a list of entries (sorted by templateId).
 // Returns the AST statements and the type names emitted, for use in barrel unions.
@@ -185,7 +172,7 @@ export function emitGroupTypes(group: Group, registry: PromotionRegistry = []): 
 		.importNamed("../_utils", [WIDEN], true);
 
 	// Cross-group imports for promoted ${gName}TemplateID references; resolves to the
-	// sibling group's entries.ts (flat) or entries/index.ts (split).
+	// sibling group's entries/index.ts.
 	const sortedImports = [...ctx.imports.entries()].filter(([disc]) => disc !== group.discriminator).sort(compareNaturalKeys);
 	for (const [disc, names] of sortedImports) {
 		file.importNamed(`../${kebabCase(disc)}/${ENTRIES_LOWER}`, [...names].sort(compareNatural), true);
@@ -226,8 +213,8 @@ export function emitEntriesFlat(group: Group): string {
 
 	const file = new AstFileBuilder()
 		.header(`Generated from Pokémon GO masterfile — group "${group.discriminator}", ${entryCount} ${entryWord} (variant aliases).`)
-		.importNamed("../_utils", [SIMPLIFY], true)
-		.importNamed(`./${BARREL_FILE}`, [gName, xdataName], true)
+		.importNamed("../../_utils", [SIMPLIFY], true)
+		.importNamed(`../${TYPES_LOWER}`, [gName, xdataName], true)
 		.blank();
 
 	const sortedIds = [...group.entries].map((e) => e.templateId).sort(compareNatural);

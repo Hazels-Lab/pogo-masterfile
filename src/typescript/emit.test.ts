@@ -246,7 +246,7 @@ describe("emitGroupIndex", () => {
 	test("imports S from the parent _utils", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
 		const output = emitEntriesFlat(group);
-		expect(output).toContain(`import type { S } from "../_utils";`);
+		expect(output).toContain(`import type { S } from "../../_utils";`);
 	});
 });
 
@@ -257,11 +257,11 @@ describe("emitVariantsFlat", () => {
 		expect(output.startsWith(`// Generated from Pokémon GO masterfile — group "typeEffective", 2 entries (variant aliases).\n`)).toBe(true);
 	});
 
-	test("imports the misc interface and XData from the sibling index", () => {
+	test("imports the misc interface and XData from the parent types file", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
 		const output = emitEntriesFlat(group);
-		expect(output).toContain(`import type { S } from "../_utils";`);
-		expect(output).toContain(`import type { TypeEffective, TypeEffectiveData } from "./index";`);
+		expect(output).toContain(`import type { S } from "../../_utils";`);
+		expect(output).toContain(`import type { TypeEffective, TypeEffectiveData } from "../types";`);
 	});
 
 	test("emits each per-variant alias", () => {

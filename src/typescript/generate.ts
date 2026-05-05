@@ -79,7 +79,7 @@ function planFiles(groups: Map<string, Group>): Map<string, string> {
 		files.set(`${dir}/lookup-table.${FILE_TYPE}`, emitGroupLookupTable(g));
 
 		if (plan.kind === "none") {
-			files.set(`${dir}/${ENTRIES_LOWER}.${FILE_TYPE}`, emitEntriesFlat(g));
+			files.set(`${dir}/${ENTRIES_LOWER}/${BARREL_FILE}.${FILE_TYPE}`, emitEntriesFlat(g));
 			groupSplits.set(g.discriminator, "flat");
 			continue;
 		}

@@ -22,20 +22,24 @@
 		"typescript"
 	],
 	"sideEffects": false,
-	"main": "./dist/index.js",
-	"types": "./dist/index.d.ts",
+	"main": "./dist/cjs/index.js",
+	"module": "./dist/esm/index.js",
+	"types": "./dist/esm/index.d.ts",
 	"exports": {
 		".": {
-			"import": "./dist/index.js",
-			"types": "./dist/index.d.ts"
+			"types": "./dist/esm/index.d.ts",
+			"import": "./dist/esm/index.js",
+			"require": "./dist/cjs/index.js"
 		},
 		"./fetch": {
-			"import": "./dist/fetch.js",
-			"types": "./dist/fetch.d.ts"
+			"types": "./dist/esm/fetch.d.ts",
+			"import": "./dist/esm/fetch.js",
+			"require": "./dist/cjs/fetch.js"
 		},
 		"./errors": {
-			"import": "./dist/errors.js",
-			"types": "./dist/errors.d.ts"
+			"types": "./dist/esm/errors.d.ts",
+			"import": "./dist/esm/errors.js",
+			"require": "./dist/cjs/errors.js"
 		}
 	},
 	"files": [
@@ -48,7 +52,7 @@
 		"access": "public"
 	},
 	"scripts": {
-		"build": "tsc -p tsconfig.build.json",
+		"build": "rm -rf dist && tsc -p tsconfig.build.json && tsc -p tsconfig.build.cjs.json && printf '{\"type\":\"module\"}\\n' > dist/esm/package.json && printf '{\"type\":\"commonjs\"}\\n' > dist/cjs/package.json",
 		"check": "tsc --noEmit -p tsconfig.json",
 		"prepublishOnly": "bun run build"
 	},

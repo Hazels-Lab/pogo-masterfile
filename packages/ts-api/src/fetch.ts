@@ -1,6 +1,6 @@
 import type { MasterfileEntry } from "pogo-masterfile-types/entries";
-import { MasterfileFetchError, MasterfileParseError } from "./errors";
-import type { Fetcher } from "./types";
+import { MasterfileFetchError, MasterfileParseError } from "./errors.js";
+import type { Fetcher } from "./types.js";
 
 export const DEFAULT_MASTERFILE_URL = "https://raw.githubusercontent.com/alexelgt/game_masters/refs/heads/master/GAME_MASTER.json";
 

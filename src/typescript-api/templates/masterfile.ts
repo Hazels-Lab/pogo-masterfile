@@ -2,10 +2,10 @@
 
 import type { MasterfileEntry } from "pogo-masterfile-types/entries";
 import type { EntriesByGroup, LookupByGroup, TemplateIDsByGroup } from "pogo-masterfile-types/lookup-table";
-import { EntryNotFoundError } from "./errors";
-import { DEFAULT_MASTERFILE_URL, defaultFetcher } from "./fetch";
-import { GROUP_NAMES, type GroupName } from "./group-names";
-import type { FromRemoteOptions } from "./types";
+import { EntryNotFoundError } from "./errors.js";
+import { DEFAULT_MASTERFILE_URL, defaultFetcher } from "./fetch.js";
+import { GROUP_NAMES, type GroupName } from "./group-names.js";
+import type { FromRemoteOptions } from "./types.js";
 
 // ── Group accessor ─────────────────────────────────────────────────────────
 //

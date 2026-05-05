@@ -4,23 +4,23 @@ import { emitIndex } from "./emit-index.ts";
 describe("emitIndex", () => {
 	test("re-exports the Masterfile class and accessor type", () => {
 		const out = emitIndex();
-		expect(out).toContain('export { Masterfile } from "./masterfile";');
-		expect(out).toContain('export type { GroupAccessor } from "./masterfile";');
+		expect(out).toContain('export { Masterfile } from "./masterfile.js";');
+		expect(out).toContain('export type { GroupAccessor } from "./masterfile.js";');
 	});
 
 	test("re-exports the fetcher and URL constant", () => {
 		const out = emitIndex();
-		expect(out).toContain('export { DEFAULT_MASTERFILE_URL, defaultFetcher } from "./fetch";');
+		expect(out).toContain('export { DEFAULT_MASTERFILE_URL, defaultFetcher } from "./fetch.js";');
 	});
 
 	test("re-exports option/fetcher types", () => {
 		const out = emitIndex();
-		expect(out).toContain('export type { Fetcher, FromRemoteOptions } from "./types";');
+		expect(out).toContain('export type { Fetcher, FromRemoteOptions } from "./types.js";');
 	});
 
 	test("re-exports the error classes", () => {
 		const out = emitIndex();
-		expect(out).toContain('export { EntryNotFoundError, MasterfileFetchError, MasterfileParseError } from "./errors";');
+		expect(out).toContain('export { EntryNotFoundError, MasterfileFetchError, MasterfileParseError } from "./errors.js";');
 	});
 
 	test("does NOT re-export lookup-table types from the barrel", () => {
@@ -36,11 +36,11 @@ describe("emitIndex", () => {
 
 	test("export order matches biome organize-imports default", () => {
 		const out = emitIndex();
-		const errorsIdx = out.indexOf('from "./errors"');
-		const fetchIdx = out.indexOf('from "./fetch"');
+		const errorsIdx = out.indexOf('from "./errors.js"');
+		const fetchIdx = out.indexOf('from "./fetch.js"');
 		const masterfileTypeIdx = out.indexOf("export type { GroupAccessor }");
 		const masterfileValueIdx = out.indexOf("export { Masterfile }");
-		const typesIdx = out.indexOf('from "./types"');
+		const typesIdx = out.indexOf('from "./types.js"');
 		// Alphabetical by module + type-exports before value-exports for same module.
 		expect(errorsIdx).toBeLessThan(fetchIdx);
 		expect(fetchIdx).toBeLessThan(masterfileTypeIdx);
