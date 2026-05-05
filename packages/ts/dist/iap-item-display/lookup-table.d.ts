@@ -428,6 +428,8 @@ import type {
 	IapItemDisplayPgoreleaseGeneral2Ticket10Giftable,
 	IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlock,
 	IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayPgoreleaseMonth3DeluxeEventPassTrackUnlock,
+	IapItemDisplayPgoreleaseMonth3DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayPgoreleasePokecoin2750,
 	IapItemDisplayPgoreleasePokecoin5720,
 	IapItemDisplayPgoreleasePokecoin15950,
@@ -1547,6 +1549,8 @@ export interface IapItemDisplayLookup {
 	"pgorelease.general2.ticket.10.giftable": IapItemDisplayPgoreleaseGeneral2Ticket10Giftable;
 	"pgorelease.month2_deluxe_event_pass_track_unlock": IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlock;
 	"pgorelease.month2_deluxe_event_pass_track_unlock_plus_points": IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints;
+	"pgorelease.month3_deluxe_event_pass_track_unlock": IapItemDisplayPgoreleaseMonth3DeluxeEventPassTrackUnlock;
+	"pgorelease.month3_deluxe_event_pass_track_unlock_plus_points": IapItemDisplayPgoreleaseMonth3DeluxeEventPassTrackUnlockPlusPoints;
 	"pgorelease.pokecoin.2750": IapItemDisplayPgoreleasePokecoin2750;
 	"pgorelease.pokecoin.5720": IapItemDisplayPgoreleasePokecoin5720;
 	"pgorelease.pokecoin.15950": IapItemDisplayPgoreleasePokecoin15950;

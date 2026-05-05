@@ -393,6 +393,8 @@ pub enum MoveSequenceSettingsTemplateId {
     SequencePeckFast,
     #[serde(rename = "sequence_petal_blizzard")]
     SequencePetalBlizzard,
+    #[serde(rename = "sequence_plasma_fists")]
+    SequencePlasmaFists,
     #[serde(rename = "sequence_play_rough")]
     SequencePlayRough,
     #[serde(rename = "sequence_poison_fang")]

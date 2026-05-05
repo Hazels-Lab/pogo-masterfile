@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSequenceSettings", 331 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "moveSequenceSettings", 332 entries (variant aliases).
 
 import type { S } from "../_utils";
 import type { MoveSequenceSettings } from "./index";
@@ -1906,6 +1906,14 @@ export type MoveSequenceSettingsPetalBlizzard = S<
 		}
 	>
 >;
+export type MoveSequenceSettingsPlasmaFists = S<
+	MoveSequenceSettings<
+		"sequence_plasma_fists",
+		{
+			sequence: ["anim attacker atk-move", "wait 0.5", "vfx plasma_fists", "sfx attacker 451-0_charge_beam", "wait 1.0", "sys ui-sync", "sys complete"];
+		}
+	>
+>;
 export type MoveSequenceSettingsPlayRough = S<
 	MoveSequenceSettings<
 		"sequence_play_rough",
@@ -3541,6 +3549,7 @@ export type MoveSequenceSettingsMasterfileEntry =
 	| MoveSequenceSettingsPayback
 	| MoveSequenceSettingsPeckFast
 	| MoveSequenceSettingsPetalBlizzard
+	| MoveSequenceSettingsPlasmaFists
 	| MoveSequenceSettingsPlayRough
 	| MoveSequenceSettingsPoisonFang
 	| MoveSequenceSettingsPoisonJabFast

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSequenceSettings", 331 entries (structural types).
+// Generated from Pokémon GO masterfile — group "moveSequenceSettings", 332 entries (structural types).
 
 import type { W } from "../_utils";
 

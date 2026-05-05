@@ -198,6 +198,7 @@ const (
 	MoveSequenceSettingsTemplateIDSequencePayback               MoveSequenceSettingsTemplateID = "sequence_payback"
 	MoveSequenceSettingsTemplateIDSequencePeckFast              MoveSequenceSettingsTemplateID = "sequence_peck_fast"
 	MoveSequenceSettingsTemplateIDSequencePetalBlizzard         MoveSequenceSettingsTemplateID = "sequence_petal_blizzard"
+	MoveSequenceSettingsTemplateIDSequencePlasmaFists           MoveSequenceSettingsTemplateID = "sequence_plasma_fists"
 	MoveSequenceSettingsTemplateIDSequencePlayRough             MoveSequenceSettingsTemplateID = "sequence_play_rough"
 	MoveSequenceSettingsTemplateIDSequencePoisonFang            MoveSequenceSettingsTemplateID = "sequence_poison_fang"
 	MoveSequenceSettingsTemplateIDSequencePoisonJabFast         MoveSequenceSettingsTemplateID = "sequence_poison_jab_fast"
@@ -532,6 +533,7 @@ var MoveSequenceSettingsTemplateIDValues = [...]MoveSequenceSettingsTemplateID{
 	MoveSequenceSettingsTemplateIDSequencePayback,
 	MoveSequenceSettingsTemplateIDSequencePeckFast,
 	MoveSequenceSettingsTemplateIDSequencePetalBlizzard,
+	MoveSequenceSettingsTemplateIDSequencePlasmaFists,
 	MoveSequenceSettingsTemplateIDSequencePlayRough,
 	MoveSequenceSettingsTemplateIDSequencePoisonFang,
 	MoveSequenceSettingsTemplateIDSequencePoisonJabFast,

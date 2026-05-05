@@ -2,6 +2,10 @@
 
 All notable changes to `pogo-masterfile-types` (crates.io) are recorded here. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.5] - 2026-05-05
+
+Automated regeneration from upstream masterfile commit `dafeb93352512e4091a8abf6b5196fbaa68baa08`.
+
 ## [0.1.4] - 2026-05-04
 
 Automated regeneration from upstream masterfile commit `2c89935444a154d89a845b5466244fdc24a07bd4`.

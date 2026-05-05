@@ -45,6 +45,7 @@ pub struct Rewards {
     pub candy: Option<Candy>,
     pub exp: Option<u64>,
     pub item: Option<Item>,
+    pub pokecoin: Option<u64>,
     pub pokemon_encounter: Option<PokemonEncounter>,
     pub stardust: Option<u64>,
     pub r#type: String,
@@ -81,6 +82,7 @@ pub struct RewardsV3 {
     pub exp: Option<u64>,
     pub item: Option<Item>,
     pub player_attribute: Option<PlayerAttribute>,
+    pub pokecoin: Option<u64>,
     pub pokemon_encounter: Option<PokemonEncounterV2>,
     pub stardust: Option<u64>,
     pub r#type: String,
@@ -106,6 +108,7 @@ pub struct BonusBoxes {
 #[serde(rename_all = "camelCase")]
 pub struct ActiveBonusDisplaySettings {
     pub bonus_boxes: Vec<BonusBoxes>,
+    pub event_name: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

@@ -432,6 +432,8 @@ const (
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket10Giftable                       IapItemDisplayTemplateID = "pgorelease.general2.ticket.10.giftable"
 	IapItemDisplayTemplateIDPgoreleaseMonth2DeluxeEventPassTrackUnlock               IapItemDisplayTemplateID = "pgorelease.month2_deluxe_event_pass_track_unlock"
 	IapItemDisplayTemplateIDPgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints     IapItemDisplayTemplateID = "pgorelease.month2_deluxe_event_pass_track_unlock_plus_points"
+	IapItemDisplayTemplateIDPgoreleaseMonth3DeluxeEventPassTrackUnlock               IapItemDisplayTemplateID = "pgorelease.month3_deluxe_event_pass_track_unlock"
+	IapItemDisplayTemplateIDPgoreleaseMonth3DeluxeEventPassTrackUnlockPlusPoints     IapItemDisplayTemplateID = "pgorelease.month3_deluxe_event_pass_track_unlock_plus_points"
 	IapItemDisplayTemplateIDPgoreleasePokecoin2750                                   IapItemDisplayTemplateID = "pgorelease.pokecoin.2750"
 	IapItemDisplayTemplateIDPgoreleasePokecoin5720                                   IapItemDisplayTemplateID = "pgorelease.pokecoin.5720"
 	IapItemDisplayTemplateIDPgoreleasePokecoin15950                                  IapItemDisplayTemplateID = "pgorelease.pokecoin.15950"
@@ -1551,6 +1553,8 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket10Giftable,
 	IapItemDisplayTemplateIDPgoreleaseMonth2DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDPgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDPgoreleaseMonth3DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDPgoreleaseMonth3DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDPgoreleasePokecoin2750,
 	IapItemDisplayTemplateIDPgoreleasePokecoin5720,
 	IapItemDisplayTemplateIDPgoreleasePokecoin15950,

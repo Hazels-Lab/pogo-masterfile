@@ -651,6 +651,8 @@ pub enum MoveSettingsTemplateId {
     V0493MovePyroball,
     #[serde(rename = "V0494_MOVE_GIGATON_HAMMER")]
     V0494MoveGigatonHammer,
+    #[serde(rename = "V0497_MOVE_PLASMA_FISTS")]
+    V0497MovePlasmaFists,
     #[serde(rename = "VN_BM_001")]
     VnBm001,
     #[serde(rename = "VN_BM_002")]

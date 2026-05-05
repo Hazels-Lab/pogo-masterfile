@@ -6,10 +6,12 @@ type EventPassSettingsTemplateID string
 
 const (
 	EventPassSettingsTemplateIDEventPassApril2026Season         EventPassSettingsTemplateID = "EVENT_PASS_APRIL2026_SEASON"
+	EventPassSettingsTemplateIDEventPassMay2026Season           EventPassSettingsTemplateID = "EVENT_PASS_MAY2026_SEASON"
 	EventPassSettingsTemplateIDEventPassSteeledresolve2026Event EventPassSettingsTemplateID = "EVENT_PASS_STEELEDRESOLVE2026_EVENT"
 )
 
 var EventPassSettingsTemplateIDValues = [...]EventPassSettingsTemplateID{
 	EventPassSettingsTemplateIDEventPassApril2026Season,
+	EventPassSettingsTemplateIDEventPassMay2026Season,
 	EventPassSettingsTemplateIDEventPassSteeledresolve2026Event,
 }

@@ -643,4 +643,6 @@ pub enum CombatMoveTemplateId {
     CombatV0493MovePyroball,
     #[serde(rename = "COMBAT_V0494_MOVE_GIGATON_HAMMER")]
     CombatV0494MoveGigatonHammer,
+    #[serde(rename = "COMBAT_V0497_MOVE_PLASMA_FISTS")]
+    CombatV0497MovePlasmaFists,
 }

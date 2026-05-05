@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1.8] - 2026-05-05
+
+Automated regeneration from upstream masterfile commit `dafeb93352512e4091a8abf6b5196fbaa68baa08`.
+
 ## [0.1.7] - 2026-05-04
 
 Backfill release from merge commit `c506dfe6512928b53ce7daf42746fb181b2d0886`.

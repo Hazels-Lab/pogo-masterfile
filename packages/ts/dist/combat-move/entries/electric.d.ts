@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatMove", split "electric", 18 entries.
+// Generated from Pokémon GO masterfile — group "combatMove", split "electric", 19 entries.
 
 import type { S } from "../../_utils";
 import type { CombatMove } from "../types";
@@ -252,6 +252,18 @@ export type CombatMoveV0472MoveThunderCage = S<
 		}
 	>
 >;
+export type CombatMoveV0497MovePlasmaFists = S<
+	CombatMove<
+		"COMBAT_V0497_MOVE_PLASMA_FISTS",
+		{
+			energyDelta: -35;
+			power: 60;
+			type: "POKEMON_TYPE_ELECTRIC";
+			uniqueId: 497;
+			vfxName: "plasma_fists";
+		}
+	>
+>;
 
 export type CombatMoveElectricMasterfileEntry =
 	| CombatMoveV0035MoveDischarge
@@ -271,4 +283,5 @@ export type CombatMoveElectricMasterfileEntry =
 	| CombatMoveV0397MoveWildboltStorm
 	| CombatMoveV0399MoveVoltTackle
 	| CombatMoveV0406MoveAuraWheelElectric
-	| CombatMoveV0472MoveThunderCage;
+	| CombatMoveV0472MoveThunderCage
+	| CombatMoveV0497MovePlasmaFists;
