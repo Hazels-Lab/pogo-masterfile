@@ -14,7 +14,7 @@
 		"format": "biome check --write --unsafe & (cd packages/rust && cargo fmt) & (cd packages/rust-api && cargo fmt) & (cd packages/go && gofmt -w .) & (cd packages/go-api && gofmt -w .); wait;"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.4.12",
+		"@biomejs/biome": "^2.4.14",
 		"@types/bun": "latest",
 		"@types/node": "^25.6.0",
 		"expect-type": "^1.1.0"
