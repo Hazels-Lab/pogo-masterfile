@@ -452,7 +452,7 @@ export interface ItemSettingsData {
 	};
 	timePeriodCounters?: {
 		playerActivity: {
-			limit?: number;
+			limit: number;
 		};
 	};
 	xpBoost?: {

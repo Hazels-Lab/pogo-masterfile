@@ -9,6 +9,7 @@ type EventPassTierSettingsBonusBoxes struct {
 
 type EventPassTierSettingsActiveBonusDisplaySettings struct {
 	BonusBoxes []EventPassTierSettingsBonusBoxes `json:"bonusBoxes"`
+	EventName  *string                           `json:"eventName,omitempty"`
 }
 
 type EventPassTierSettingsBonusSettings struct {
@@ -53,6 +54,7 @@ type EventPassTierSettingsRewards struct {
 	Exp              *uint64                                `json:"exp,omitempty"`
 	Item             *EventPassTierSettingsItem             `json:"item,omitempty"`
 	PlayerAttribute  *EventPassTierSettingsPlayerAttribute  `json:"playerAttribute,omitempty"`
+	Pokecoin         *uint64                                `json:"pokecoin,omitempty"`
 	PokemonEncounter *EventPassTierSettingsPokemonEncounter `json:"pokemonEncounter,omitempty"`
 	Stardust         *uint64                                `json:"stardust,omitempty"`
 	Type             string                                 `json:"type"`

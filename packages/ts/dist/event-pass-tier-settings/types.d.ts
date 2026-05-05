@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 580 entries (structural types).
+// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 1000 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -25,6 +25,7 @@ export interface EventPassTierSettingsData {
 				| "hatch_xp_double"
 				| "rocket_stardust_double";
 		}>;
+		eventName?: "go_pass_cumulative_bonuses_header";
 	};
 	bonusSettings?: {
 		bonusBoxes: Array<{
@@ -51,7 +52,10 @@ export interface EventPassTierSettingsData {
 				| "BELDUM"
 				| "BINACLE"
 				| "BLIPBUG"
+				| "BOMBIRDIER"
 				| "COMBEE"
+				| "DEINO"
+				| "DRILBUR"
 				| "DRUDDIGON"
 				| "DUCKLETT"
 				| "ENTEI"
@@ -63,19 +67,32 @@ export interface EventPassTierSettingsData {
 				| "HATENNA"
 				| "HONEDGE"
 				| "HOPPIP"
+				| "MANTINE"
 				| "MELTAN"
+				| "NATU"
+				| "ORTHWORM"
 				| "PAWNIARD"
 				| "PHANPY"
 				| "POLTCHAGEIST"
+				| "QWILFISH"
 				| "ROCKRUFF"
 				| "ROGGENROLA"
+				| "RUFFLET"
+				| "SEWADDLE"
 				| "SHIELDON"
+				| "SHROOMISH"
 				| "SINISTEA"
 				| "SIZZLIPEDE"
 				| "SKIDDO"
+				| "SKRELP"
 				| "SLOWPOKE"
 				| "SNOM"
+				| "SPHEAL"
+				| "SUICUNE"
 				| "TEPIG"
+				| "TOTODILE"
+				| "WAILMER"
+				| "WOOBAT"
 				| "WOOPER";
 		};
 		exp?: number;
@@ -119,10 +136,15 @@ export interface EventPassTierSettingsData {
 				| "april2026_season_pass_rank_01"
 				| "april2026_season_pass_rank_02"
 				| "april2026_season_pass_rank_03"
+				| "may2026_season_pass_entitlement"
+				| "may2026_season_pass_rank_01"
+				| "may2026_season_pass_rank_02"
+				| "may2026_season_pass_rank_03"
 				| "steeledresolve2026_season_pass_entitlement"
 				| "steeledresolve2026_season_pass_rank_01"
 				| "steeledresolve2026_season_pass_rank_02";
 		};
+		pokecoin?: number;
 		pokemonEncounter?: {
 			isFeaturedPokemon: boolean;
 			pokemonDisplay?: {
@@ -132,7 +154,12 @@ export interface EventPassTierSettingsData {
 					| "BELDUM_NORMAL"
 					| "BINACLE_NORMAL"
 					| "BLIPBUG_NORMAL"
+					| "BOMBIRDIER_NORMAL"
+					| "BRAVIARY_HISUIAN"
+					| "BRELOOM_NORMAL"
 					| "COMBEE_NORMAL"
+					| "DEINO_NORMAL"
+					| "DRILBUR_NORMAL"
 					| "DRUDDIGON_NORMAL"
 					| "ENTEI_NORMAL"
 					| "EXEGGUTOR_ALOLA"
@@ -143,28 +170,45 @@ export interface EventPassTierSettingsData {
 					| "HATENNA_NORMAL"
 					| "HONEDGE_NORMAL"
 					| "JUMPLUFF_NORMAL"
+					| "LEAVANNY_NORMAL"
+					| "MANTINE_NORMAL"
 					| "MELTAN_NORMAL"
+					| "ORTHWORM_NORMAL"
 					| "PAWNIARD_NORMAL"
 					| "PHANPY_NORMAL"
+					| "QWILFISH_HISUIAN"
+					| "QWILFISH_NORMAL"
 					| "ROCKRUFF_NORMAL"
 					| "ROGGENROLA_NORMAL"
 					| "SHIELDON_NORMAL"
 					| "SIZZLIPEDE_NORMAL"
 					| "SKIDDO_NORMAL"
+					| "SKRELP_NORMAL"
 					| "SLOWPOKE_GALARIAN"
 					| "SLOWPOKE_NORMAL"
 					| "SNOM_NORMAL"
+					| "SPHEAL_NORMAL"
+					| "SUICUNE_NORMAL"
 					| "SWANNA_NORMAL"
 					| "TEPIG_NORMAL"
+					| "TOTODILE_NORMAL"
+					| "WAILMER_NORMAL"
+					| "WOOBAT_NORMAL"
 					| "WOOPER_NORMAL"
-					| "WOOPER_PALDEA";
+					| "WOOPER_PALDEA"
+					| "XATU_NORMAL";
 			};
 			pokemonId:
 				| "AMOONGUSS"
 				| "BELDUM"
 				| "BINACLE"
 				| "BLIPBUG"
+				| "BOMBIRDIER"
+				| "BRAVIARY"
+				| "BRELOOM"
 				| "COMBEE"
+				| "DEINO"
+				| "DRILBUR"
 				| "DRUDDIGON"
 				| "ENTEI"
 				| "EXEGGUTOR"
@@ -175,34 +219,47 @@ export interface EventPassTierSettingsData {
 				| "HATENNA"
 				| "HONEDGE"
 				| "JUMPLUFF"
+				| "LEAVANNY"
+				| "MANTINE"
 				| "MELTAN"
+				| "ORTHWORM"
 				| "PAWNIARD"
 				| "PHANPY"
 				| "POLTCHAGEIST"
+				| "QWILFISH"
 				| "ROCKRUFF"
 				| "ROGGENROLA"
 				| "SHIELDON"
 				| "SINISTEA"
 				| "SIZZLIPEDE"
 				| "SKIDDO"
+				| "SKRELP"
 				| "SLOWPOKE"
 				| "SNOM"
+				| "SPHEAL"
+				| "SUICUNE"
 				| "SWANNA"
 				| "TEPIG"
-				| "WOOPER";
+				| "TOTODILE"
+				| "WAILMER"
+				| "WOOBAT"
+				| "WOOPER"
+				| "XATU";
 			statsLimitsOverride?: {
 				maxPokemonLevel: number;
 				minPokemonLevel: number;
 			};
 		};
 		stardust?: number;
-		type: "CANDY" | "EXPERIENCE" | "ITEM" | "PLAYER_ATTRIBUTE" | "POKEMON_ENCOUNTER" | "STARDUST" | "XL_CANDY";
+		type: "CANDY" | "EXPERIENCE" | "ITEM" | "PLAYER_ATTRIBUTE" | "POKECOIN" | "POKEMON_ENCOUNTER" | "STARDUST" | "XL_CANDY";
 		xlCandy?: {
 			amount: number;
 			pokemonId:
 				| "AXEW"
 				| "BELDUM"
 				| "COMBEE"
+				| "DEINO"
+				| "DRILBUR"
 				| "DUCKLETT"
 				| "ENTEI"
 				| "EXEGGCUTE"
@@ -211,17 +268,26 @@ export interface EventPassTierSettingsData {
 				| "GROWLITHE"
 				| "HATENNA"
 				| "HONEDGE"
+				| "MANTINE"
 				| "MELTAN"
+				| "NATU"
 				| "PAWNIARD"
 				| "PHANPY"
+				| "QWILFISH"
 				| "ROGGENROLA"
+				| "RUFFLET"
 				| "SHIELDON"
 				| "SINISTEA"
 				| "SIZZLIPEDE"
 				| "SKIDDO"
 				| "SLOWPOKE"
 				| "SNOM"
+				| "SPHEAL"
+				| "SUICUNE"
 				| "TEPIG"
+				| "TOTODILE"
+				| "WAILMER"
+				| "WOOBAT"
 				| "WOOPER";
 		};
 	}>;

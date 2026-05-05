@@ -327,6 +327,7 @@ const (
 	MoveSettingsTemplateIDV0492MoveDrumBeating           MoveSettingsTemplateID = "V0492_MOVE_DRUM_BEATING"
 	MoveSettingsTemplateIDV0493MovePyroball              MoveSettingsTemplateID = "V0493_MOVE_PYROBALL"
 	MoveSettingsTemplateIDV0494MoveGigatonHammer         MoveSettingsTemplateID = "V0494_MOVE_GIGATON_HAMMER"
+	MoveSettingsTemplateIDV0497MovePlasmaFists           MoveSettingsTemplateID = "V0497_MOVE_PLASMA_FISTS"
 	MoveSettingsTemplateIDVnBm001                        MoveSettingsTemplateID = "VN_BM_001"
 	MoveSettingsTemplateIDVnBm002                        MoveSettingsTemplateID = "VN_BM_002"
 	MoveSettingsTemplateIDVnBm003                        MoveSettingsTemplateID = "VN_BM_003"
@@ -714,6 +715,7 @@ var MoveSettingsTemplateIDValues = [...]MoveSettingsTemplateID{
 	MoveSettingsTemplateIDV0492MoveDrumBeating,
 	MoveSettingsTemplateIDV0493MovePyroball,
 	MoveSettingsTemplateIDV0494MoveGigatonHammer,
+	MoveSettingsTemplateIDV0497MovePlasmaFists,
 	MoveSettingsTemplateIDVnBm001,
 	MoveSettingsTemplateIDVnBm002,
 	MoveSettingsTemplateIDVnBm003,

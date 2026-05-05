@@ -194,6 +194,7 @@ import type {
 	MoveSequenceSettingsPayback,
 	MoveSequenceSettingsPeckFast,
 	MoveSequenceSettingsPetalBlizzard,
+	MoveSequenceSettingsPlasmaFists,
 	MoveSequenceSettingsPlayRough,
 	MoveSequenceSettingsPoisonFang,
 	MoveSequenceSettingsPoisonJabFast,
@@ -528,6 +529,7 @@ export interface MoveSequenceSettingsLookup {
 	sequence_payback: MoveSequenceSettingsPayback;
 	sequence_peck_fast: MoveSequenceSettingsPeckFast;
 	sequence_petal_blizzard: MoveSequenceSettingsPetalBlizzard;
+	sequence_plasma_fists: MoveSequenceSettingsPlasmaFists;
 	sequence_play_rough: MoveSequenceSettingsPlayRough;
 	sequence_poison_fang: MoveSequenceSettingsPoisonFang;
 	sequence_poison_jab_fast: MoveSequenceSettingsPoisonJabFast;

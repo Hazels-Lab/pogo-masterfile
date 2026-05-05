@@ -26,10 +26,10 @@ type EventPassSettingsEventPassDisplaySettings struct {
 	EventPassTitleKey                 string                                                `json:"eventPassTitleKey"`
 	EventPassTrackUpgradeDescriptions [1]EventPassSettingsEventPassTrackUpgradeDescriptions `json:"eventPassTrackUpgradeDescriptions"`
 	HeaderIconUrl                     string                                                `json:"headerIconUrl"`
-	PremiumRewardBannerBottom         string                                                `json:"premiumRewardBannerBottom"`
-	PremiumRewardBannerImageUrl       string                                                `json:"premiumRewardBannerImageUrl"`
-	PremiumRewardBannerMiddle         string                                                `json:"premiumRewardBannerMiddle"`
-	PremiumRewardBannerTop            string                                                `json:"premiumRewardBannerTop"`
+	PremiumRewardBannerBottom         *string                                               `json:"premiumRewardBannerBottom,omitempty"`
+	PremiumRewardBannerImageUrl       *string                                               `json:"premiumRewardBannerImageUrl,omitempty"`
+	PremiumRewardBannerMiddle         *string                                               `json:"premiumRewardBannerMiddle,omitempty"`
+	PremiumRewardBannerTop            *string                                               `json:"premiumRewardBannerTop,omitempty"`
 	PremiumRewardsDescription         string                                                `json:"premiumRewardsDescription"`
 	SectionDisplayPriority            uint64                                                `json:"sectionDisplayPriority"`
 	TodayViewSection                  string                                                `json:"todayViewSection"`

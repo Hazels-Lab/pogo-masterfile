@@ -184,9 +184,9 @@ pub enum MasterfileEntry {
     AvatarItemDisplay(avatar_item_display::AvatarItemDisplayEntry),
     IapItemDisplay(iap_item_display::IapItemDisplayEntry),
     FormSettings(form_settings::FormSettingsEntry),
+    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     BadgeSettings(badge_settings::BadgeSettingsEntry),
     StickerMetadata(sticker_metadata::StickerMetadataEntry),
-    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     PokemonFamily(pokemon_family::PokemonFamilyEntry),
     MoveSettings(move_settings::MoveSettingsEntry),
     MoveSequenceSettings(move_sequence_settings::MoveSequenceSettingsEntry),
@@ -234,11 +234,11 @@ pub enum MasterfileEntry {
     FortPowerUpLevelSettings(fort_power_up_level_settings::FortPowerUpLevelSettingsEntry),
     PokemonHomeEnergyCosts(pokemon_home_energy_costs::PokemonHomeEnergyCostsEntry),
     CombatNpcPersonality(combat_npc_personality::CombatNpcPersonalityEntry),
+    EventPassSettings(event_pass_settings::EventPassSettingsEntry),
     LanguageSettings(language_settings::LanguageSettingsEntry),
     QuestSettings(quest_settings::QuestSettingsEntry),
     RollBack(roll_back::RollBackEntry),
     AvatarGroupOrderSettings(avatar_group_order_settings::AvatarGroupOrderSettingsEntry),
-    EventPassSettings(event_pass_settings::EventPassSettingsEntry),
     PartyPlayGeneralSettings(party_play_general_settings::PartyPlayGeneralSettingsEntry),
     PokemonUpgrades(pokemon_upgrades::PokemonUpgradesEntry),
     VsSeekerPokemonRewards(vs_seeker_pokemon_rewards::VsSeekerPokemonRewardsEntry),
@@ -422,11 +422,11 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "avatarItemDisplay" => serde_json::from_value(value).map(Self::AvatarItemDisplay),
                 "iapItemDisplay" => serde_json::from_value(value).map(Self::IapItemDisplay),
                 "formSettings" => serde_json::from_value(value).map(Self::FormSettings),
-                "badgeSettings" => serde_json::from_value(value).map(Self::BadgeSettings),
-                "stickerMetadata" => serde_json::from_value(value).map(Self::StickerMetadata),
                 "eventPassTierSettings" => {
                     serde_json::from_value(value).map(Self::EventPassTierSettings)
                 }
+                "badgeSettings" => serde_json::from_value(value).map(Self::BadgeSettings),
+                "stickerMetadata" => serde_json::from_value(value).map(Self::StickerMetadata),
                 "pokemonFamily" => serde_json::from_value(value).map(Self::PokemonFamily),
                 "moveSettings" => serde_json::from_value(value).map(Self::MoveSettings),
                 "moveSequenceSettings" => {
@@ -518,13 +518,13 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "combatNpcPersonality" => {
                     serde_json::from_value(value).map(Self::CombatNpcPersonality)
                 }
+                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "languageSettings" => serde_json::from_value(value).map(Self::LanguageSettings),
                 "questSettings" => serde_json::from_value(value).map(Self::QuestSettings),
                 "rollBack" => serde_json::from_value(value).map(Self::RollBack),
                 "avatarGroupOrderSettings" => {
                     serde_json::from_value(value).map(Self::AvatarGroupOrderSettings)
                 }
-                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "partyPlayGeneralSettings" => {
                     serde_json::from_value(value).map(Self::PartyPlayGeneralSettings)
                 }

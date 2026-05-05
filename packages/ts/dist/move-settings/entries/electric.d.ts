@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSettings", split "electric", 21 entries.
+// Generated from Pokémon GO masterfile — group "moveSettings", split "electric", 22 entries.
 
 import type { S } from "../../_utils";
 import type { MoveSettings } from "../types";
@@ -350,6 +350,25 @@ export type MoveSettingsV0472MoveThunderCage = S<
 		}
 	>
 >;
+export type MoveSettingsV0497MovePlasmaFists = S<
+	MoveSettings<
+		"V0497_MOVE_PLASMA_FISTS",
+		{
+			animationId: 5;
+			damageWindowEndMs: 3000;
+			damageWindowStartMs: 2500;
+			durationMs: 3500;
+			energyDelta: -50;
+			movementId: 497;
+			pokemonType: "POKEMON_TYPE_ELECTRIC";
+			power: 135;
+			staminaLossScalar: 0.01;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "plasma_fists";
+		}
+	>
+>;
 export type MoveSettingsVnBm003 = S<
 	MoveSettings<
 		"VN_BM_003",
@@ -424,6 +443,7 @@ export type MoveSettingsElectricMasterfileEntry =
 	| MoveSettingsV0399MoveVoltTackle
 	| MoveSettingsV0406MoveAuraWheelElectric
 	| MoveSettingsV0472MoveThunderCage
+	| MoveSettingsV0497MovePlasmaFists
 	| MoveSettingsVnBm003
 	| MoveSettingsVnBm021
 	| MoveSettingsVnBm038;
