@@ -52,6 +52,7 @@ const (
 	SingletonsTemplateIDDefaultBattleInputBufferSettings        SingletonsTemplateID = "DEFAULT_BATTLE_INPUT_BUFFER_SETTINGS"
 	SingletonsTemplateIDEggHatchImprovementsSettings            SingletonsTemplateID = "EGG_HATCH_IMPROVEMENTS_SETTINGS"
 	SingletonsTemplateIDEncounterSettings                       SingletonsTemplateID = "ENCOUNTER_SETTINGS"
+	SingletonsTemplateIDErrorReportingSettingsPreLogin          SingletonsTemplateID = "ERROR_REPORTING_SETTINGS_PRE_LOGIN"
 	SingletonsTemplateIDEventPlannerPopularRaidRsvpSettings     SingletonsTemplateID = "EVENT_PLANNER_POPULAR_RAID_RSVP_SETTINGS"
 	SingletonsTemplateIDEventPlannerSettings                    SingletonsTemplateID = "EVENT_PLANNER_SETTINGS"
 	SingletonsTemplateIDExternalAddressableAssetsSettings       SingletonsTemplateID = "EXTERNAL_ADDRESSABLE_ASSETS_SETTINGS"
@@ -194,6 +195,7 @@ var SingletonsTemplateIDValues = [...]SingletonsTemplateID{
 	SingletonsTemplateIDDefaultBattleInputBufferSettings,
 	SingletonsTemplateIDEggHatchImprovementsSettings,
 	SingletonsTemplateIDEncounterSettings,
+	SingletonsTemplateIDErrorReportingSettingsPreLogin,
 	SingletonsTemplateIDEventPlannerPopularRaidRsvpSettings,
 	SingletonsTemplateIDEventPlannerSettings,
 	SingletonsTemplateIDExternalAddressableAssetsSettings,

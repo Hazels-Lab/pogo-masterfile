@@ -1285,6 +1285,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "":
 		switch probe.TemplateID {
+		case "ERROR_REPORTING_SETTINGS_PRE_LOGIN":
+			var e singletons.ErrorReportingSettingsPreLoginEntry
+			if err := json.Unmarshal(data, &e); err != nil {
+				return nil, err
+			}
+			return e, nil
 		case "ITEM_CURRENCY_VALUES":
 			var e singletons.ItemCurrencyValuesEntry
 			if err := json.Unmarshal(data, &e); err != nil {

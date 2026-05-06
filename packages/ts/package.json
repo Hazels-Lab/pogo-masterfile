@@ -1,6 +1,6 @@
 {
 	"name": "pogo-masterfile-types",
-	"version": "0.1.8",
+	"version": "0.1.9",
 	"description": "Generated TypeScript type definitions for the Pokémon GO masterfile, plus a typed `parseMasterfile` helper that dispatches each entry to its concrete payload type.",
 	"license": "MIT",
 	"author": "Hazel's Lab (https://github.com/Hazels-Lab)",

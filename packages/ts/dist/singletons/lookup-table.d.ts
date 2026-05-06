@@ -49,6 +49,7 @@ import type {
 	DeepLinkingSettings,
 	EggHatchImprovementsSettings,
 	EncounterSettings,
+	ErrorReportingSettingsPreLogin,
 	EventPlannerPopularNotificationSettings,
 	ExternalAddressableAssetsSettings,
 	FeatureUnlockLevelSettings,
@@ -190,6 +191,7 @@ export interface SingletonsLookup {
 	DEFAULT_BATTLE_INPUT_BUFFER_SETTINGS: BattleInputBufferSettings;
 	EGG_HATCH_IMPROVEMENTS_SETTINGS: EggHatchImprovementsSettings;
 	ENCOUNTER_SETTINGS: EncounterSettings;
+	ERROR_REPORTING_SETTINGS_PRE_LOGIN: ErrorReportingSettingsPreLogin;
 	EVENT_PLANNER_POPULAR_RAID_RSVP_SETTINGS: EventPlannerPopularNotificationSettings;
 	EVENT_PLANNER_SETTINGS: PlannerSettings;
 	EXTERNAL_ADDRESSABLE_ASSETS_SETTINGS: ExternalAddressableAssetsSettings;
