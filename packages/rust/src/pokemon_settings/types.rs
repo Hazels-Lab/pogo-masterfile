@@ -26,6 +26,13 @@ pub struct Camera {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(untagged)]
+pub enum CinematicMovesValue {
+    Uint(u64),
+    String(String),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct Encounter {
     pub attack_probability: Option<f64>,
@@ -89,13 +96,6 @@ pub struct EvolutionBranch {
 pub struct ExclusiveKeyItem {
     pub count: u64,
     pub item: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(untagged)]
-pub enum FormValue {
-    Uint(u64),
-    String(String),
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -287,7 +287,7 @@ pub struct PokemonSettings {
         Option<(BuddyWalkedMegaEnergyAwards, BuddyWalkedMegaEnergyAwardsV2)>,
     pub camera: Camera,
     pub candy_to_evolve: Option<u64>,
-    pub cinematic_moves: Option<Vec<String>>,
+    pub cinematic_moves: Option<Vec<CinematicMovesValue>>,
     pub combat_default_camera_angle: Option<[f64; 3]>,
     pub combat_opponent_focus_camera_angle: Option<[f64; 3]>,
     pub combat_player_focus_camera_angle: Option<[f64; 3]>,
@@ -302,7 +302,7 @@ pub struct PokemonSettings {
     pub evolution_pips: Option<u64>,
     pub exclusive_key_item: Option<ExclusiveKeyItem>,
     pub family_id: String,
-    pub form: Option<FormValue>,
+    pub form: Option<CinematicMovesValue>,
     pub form_change: Option<Vec<FormChange>>,
     pub height_std_dev: f64,
     pub ibfc: Ibfc,

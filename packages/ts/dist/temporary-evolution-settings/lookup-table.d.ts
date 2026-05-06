@@ -51,6 +51,7 @@ import type {
 	TemporaryEvolutionSettingsV0531PokemonAudino,
 	TemporaryEvolutionSettingsV0687PokemonMalamar,
 	TemporaryEvolutionSettingsV0719PokemonDiancie,
+	TemporaryEvolutionSettingsV0870PokemonFalinks,
 } from "./entries";
 
 export interface TemporaryEvolutionSettingsLookup {
@@ -104,4 +105,5 @@ export interface TemporaryEvolutionSettingsLookup {
 	TEMPORARY_EVOLUTION_V0531_POKEMON_AUDINO: TemporaryEvolutionSettingsV0531PokemonAudino;
 	TEMPORARY_EVOLUTION_V0687_POKEMON_MALAMAR: TemporaryEvolutionSettingsV0687PokemonMalamar;
 	TEMPORARY_EVOLUTION_V0719_POKEMON_DIANCIE: TemporaryEvolutionSettingsV0719PokemonDiancie;
+	TEMPORARY_EVOLUTION_V0870_POKEMON_FALINKS: TemporaryEvolutionSettingsV0870PokemonFalinks;
 }

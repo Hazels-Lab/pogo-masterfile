@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides", 115 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides", 114 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -4129,38 +4129,6 @@ export type PokemonExtendedSettingsV0861PokemonGrimmsnarl = S<
 		}
 	>
 >;
-export type PokemonExtendedSettingsV0870PokemonFalinks = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0870_POKEMON_FALINKS",
-		{
-			breadOverrides: [
-				{
-					breadMode: "BREAD_MODE";
-					maxBattleVisualSettings: {
-						scale: 15.87;
-					};
-					maxEncounterVisualSettings: {
-						cameraDistance: 30;
-						maxReticleSize: 14;
-						scale: 7.94;
-					};
-					maxStationVisualSettings: {
-						scale: 1.08;
-					};
-				},
-			];
-			sizeSettings: {
-				mLowerBound: 2.25;
-				mUpperBound: 3.75;
-				xlUpperBound: 4.5;
-				xsLowerBound: 1.5;
-				xxlUpperBound: 4.65;
-				xxsLowerBound: 1.47;
-			};
-			uniqueId: "FALINKS";
-		}
-	>
->;
 export type PokemonExtendedSettingsV0884PokemonDuraludon = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0884_POKEMON_DURALUDON",
@@ -4379,7 +4347,6 @@ export type PokemonExtendedSettingsBreadOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0857PokemonHattrem
 	| PokemonExtendedSettingsV0858PokemonHatterene
 	| PokemonExtendedSettingsV0861PokemonGrimmsnarl
-	| PokemonExtendedSettingsV0870PokemonFalinks
 	| PokemonExtendedSettingsV0884PokemonDuraludon
 	| PokemonExtendedSettingsV0891PokemonKubfu
 	| PokemonExtendedSettingsV0892PokemonUrshifu;

@@ -18,9 +18,46 @@ pub struct Item {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct PlayerAttribute {
+    pub duration_mins: u64,
+    pub key: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct PokemonDisplay {
     pub bread_mode_enum: Option<String>,
     pub form: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonEncounter {
+    pub is_featured_pokemon: bool,
+    pub pokemon_display: Option<PokemonDisplay>,
+    pub pokemon_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct RewardsV2 {
+    pub candy: Option<Candy>,
+    pub exp: Option<u64>,
+    pub item: Option<Item>,
+    pub player_attribute: Option<PlayerAttribute>,
+    pub pokecoin: Option<u64>,
+    pub pokemon_encounter: Option<PokemonEncounter>,
+    pub stardust: Option<u64>,
+    pub r#type: String,
+    pub xl_candy: Option<Candy>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct Rewards {
+    pub rank: u64,
+    pub rewards: Vec<RewardsV2>,
+    pub track: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -32,7 +69,7 @@ pub struct StatsLimitsOverride {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonEncounter {
+pub struct PokemonEncounterV2 {
     pub is_featured_pokemon: bool,
     pub pokemon_display: Option<PokemonDisplay>,
     pub pokemon_id: String,
@@ -41,12 +78,12 @@ pub struct PokemonEncounter {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Rewards {
+pub struct RewardsV3 {
     pub candy: Option<Candy>,
     pub exp: Option<u64>,
     pub item: Option<Item>,
     pub pokecoin: Option<u64>,
-    pub pokemon_encounter: Option<PokemonEncounter>,
+    pub pokemon_encounter: Option<PokemonEncounterV2>,
     pub stardust: Option<u64>,
     pub r#type: String,
 }
@@ -56,44 +93,7 @@ pub struct Rewards {
 pub struct MinPointsRequiredRewards {
     pub min_points_required: u64,
     pub rank: u64,
-    pub rewards: [Rewards; 1],
-    pub track: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct PlayerAttribute {
-    pub duration_mins: u64,
-    pub key: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct PokemonEncounterV2 {
-    pub is_featured_pokemon: bool,
-    pub pokemon_display: Option<PokemonDisplay>,
-    pub pokemon_id: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct RewardsV3 {
-    pub candy: Option<Candy>,
-    pub exp: Option<u64>,
-    pub item: Option<Item>,
-    pub player_attribute: Option<PlayerAttribute>,
-    pub pokecoin: Option<u64>,
-    pub pokemon_encounter: Option<PokemonEncounterV2>,
-    pub stardust: Option<u64>,
-    pub r#type: String,
-    pub xl_candy: Option<Candy>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct RewardsV2 {
-    pub rank: u64,
-    pub rewards: Vec<RewardsV3>,
+    pub rewards: [RewardsV3; 1],
     pub track: String,
 }
 
@@ -146,8 +146,8 @@ pub struct Misc {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum EventPassTierSettings {
+    Rewards(Rewards),
     MinPointsRequiredRewards(MinPointsRequiredRewards),
-    Rewards(RewardsV2),
     ActiveBonusDisplaySettingsPlus3(ActiveBonusDisplaySettingsPlus3),
     Misc(Misc),
 }

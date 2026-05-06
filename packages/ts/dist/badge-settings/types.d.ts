@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "badgeSettings", 870 entries (structural types).
+// Generated from Pokémon GO masterfile — group "badgeSettings", 871 entries (structural types).
 
 import type { W } from "../_utils";
 

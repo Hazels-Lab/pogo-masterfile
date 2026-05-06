@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form-temp-evo-overrides", 44 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form-temp-evo-overrides", 45 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -1323,6 +1323,36 @@ export type PokemonExtendedSettingsV0719PokemonDiancieNormal = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0870PokemonFalinksGofest2025TrainConductor = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0870_POKEMON_FALINKS_GOFEST_2025_TRAIN_CONDUCTOR",
+		{
+			form: "FALINKS_GOFEST_2025_TRAIN_CONDUCTOR";
+			sizeSettings: {
+				mLowerBound: 2.25;
+				mUpperBound: 3.75;
+				xlUpperBound: 4.5;
+				xsLowerBound: 1.5;
+				xxlUpperBound: 4.65;
+				xxsLowerBound: 1.47;
+			};
+			tempEvoOverrides: [
+				{
+					sizeSettings: {
+						mLowerBound: 2.25;
+						mUpperBound: 3.75;
+						xlUpperBound: 4.5;
+						xsLowerBound: 1.5;
+						xxlUpperBound: 4.65;
+						xxsLowerBound: 1.47;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+			uniqueId: "FALINKS";
+		}
+	>
+>;
 
 export type PokemonExtendedSettingsFormTempEvoOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0015PokemonBeedrillNormal
@@ -1368,4 +1398,5 @@ export type PokemonExtendedSettingsFormTempEvoOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0448PokemonLucarioNormal
 	| PokemonExtendedSettingsV0460PokemonAbomasnowNormal
 	| PokemonExtendedSettingsV0531PokemonAudinoNormal
-	| PokemonExtendedSettingsV0719PokemonDiancieNormal;
+	| PokemonExtendedSettingsV0719PokemonDiancieNormal
+	| PokemonExtendedSettingsV0870PokemonFalinksGofest2025TrainConductor;

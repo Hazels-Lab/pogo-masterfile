@@ -231,7 +231,7 @@ type PokemonSettings struct {
 	BuddyWalkedMegaEnergyAwards       []any                             `json:"buddyWalkedMegaEnergyAwards,omitempty"`
 	Camera                            PokemonSettingsCamera             `json:"camera"`
 	CandyToEvolve                     *uint64                           `json:"candyToEvolve,omitempty"`
-	CinematicMoves                    []string                          `json:"cinematicMoves,omitempty"`
+	CinematicMoves                    []json.RawMessage                 `json:"cinematicMoves,omitempty"`
 	CombatDefaultCameraAngle          *[3]float64                       `json:"combatDefaultCameraAngle,omitempty"`
 	CombatOpponentFocusCameraAngle    *[3]float64                       `json:"combatOpponentFocusCameraAngle,omitempty"`
 	CombatPlayerFocusCameraAngle      *[3]float64                       `json:"combatPlayerFocusCameraAngle,omitempty"`

@@ -55,6 +55,7 @@ const (
 	TemporaryEvolutionSettingsTemplateIDTemporaryEvolutionV0531PokemonAudino     TemporaryEvolutionSettingsTemplateID = "TEMPORARY_EVOLUTION_V0531_POKEMON_AUDINO"
 	TemporaryEvolutionSettingsTemplateIDTemporaryEvolutionV0687PokemonMalamar    TemporaryEvolutionSettingsTemplateID = "TEMPORARY_EVOLUTION_V0687_POKEMON_MALAMAR"
 	TemporaryEvolutionSettingsTemplateIDTemporaryEvolutionV0719PokemonDiancie    TemporaryEvolutionSettingsTemplateID = "TEMPORARY_EVOLUTION_V0719_POKEMON_DIANCIE"
+	TemporaryEvolutionSettingsTemplateIDTemporaryEvolutionV0870PokemonFalinks    TemporaryEvolutionSettingsTemplateID = "TEMPORARY_EVOLUTION_V0870_POKEMON_FALINKS"
 )
 
 var TemporaryEvolutionSettingsTemplateIDValues = [...]TemporaryEvolutionSettingsTemplateID{
@@ -108,4 +109,5 @@ var TemporaryEvolutionSettingsTemplateIDValues = [...]TemporaryEvolutionSettings
 	TemporaryEvolutionSettingsTemplateIDTemporaryEvolutionV0531PokemonAudino,
 	TemporaryEvolutionSettingsTemplateIDTemporaryEvolutionV0687PokemonMalamar,
 	TemporaryEvolutionSettingsTemplateIDTemporaryEvolutionV0719PokemonDiancie,
+	TemporaryEvolutionSettingsTemplateIDTemporaryEvolutionV0870PokemonFalinks,
 }

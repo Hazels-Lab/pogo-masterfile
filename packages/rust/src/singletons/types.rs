@@ -2371,8 +2371,8 @@ pub struct RaidSettings {
     pub remote_raid_distance_validation: bool,
     pub remote_raid_enabled: bool,
     pub remote_raids_min_player_level: u64,
-    pub unsupported_raid_levels_for_friend_invites: [String; 2],
-    pub unsupported_remote_raid_levels: [String; 2],
+    pub unsupported_raid_levels_for_friend_invites: (String, String, u64, u64),
+    pub unsupported_remote_raid_levels: (String, String, u64, u64),
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
