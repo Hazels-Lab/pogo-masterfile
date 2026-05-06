@@ -101,6 +101,8 @@ pub enum SingletonsTemplateId {
     EggHatchImprovementsSettings,
     #[serde(rename = "ENCOUNTER_SETTINGS")]
     EncounterSettings,
+    #[serde(rename = "ERROR_REPORTING_SETTINGS_PRE_LOGIN")]
+    ErrorReportingSettingsPreLogin,
     #[serde(rename = "EVENT_PLANNER_POPULAR_RAID_RSVP_SETTINGS")]
     EventPlannerPopularRaidRsvpSettings,
     #[serde(rename = "EVENT_PLANNER_SETTINGS")]

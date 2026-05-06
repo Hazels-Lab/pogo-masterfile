@@ -2983,6 +2983,11 @@ crate::masterfile_entry!(EggHatchImprovementsSettingsEntry, EggHatchImprovements
 
 crate::masterfile_entry!(EncounterSettingsEntry, EncounterSettingsEntryData, encounter_settings: EncounterSettings);
 
+crate::masterfile_stub_entry!(
+    ErrorReportingSettingsPreLoginEntry,
+    ErrorReportingSettingsPreLoginEntryData
+);
+
 crate::masterfile_entry!(EventPlannerPopularNotificationSettingsEntry, EventPlannerPopularNotificationSettingsEntryData, event_planner_popular_notification_settings: EventPlannerPopularNotificationSettings);
 
 crate::masterfile_entry!(ExternalAddressableAssetsSettingsEntry, ExternalAddressableAssetsSettingsEntryData, external_addressable_assets_settings: ExternalAddressableAssetsSettings);

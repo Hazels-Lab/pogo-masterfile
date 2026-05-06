@@ -2588,6 +2588,17 @@ type EncounterSettingsEntryData struct {
 	EncounterSettings EncounterSettings `json:"encounterSettings"`
 }
 
+type ErrorReportingSettingsPreLoginEntry struct {
+	TemplateID string                                  `json:"templateId"`
+	Data       ErrorReportingSettingsPreLoginEntryData `json:"data"`
+}
+
+func (ErrorReportingSettingsPreLoginEntry) MasterfileEntry() {}
+
+type ErrorReportingSettingsPreLoginEntryData struct {
+	TemplateID string `json:"templateId"`
+}
+
 type EventPlannerPopularNotificationSettingsEntry struct {
 	TemplateID string                                           `json:"templateId"`
 	Data       EventPlannerPopularNotificationSettingsEntryData `json:"data"`

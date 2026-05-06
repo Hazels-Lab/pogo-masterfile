@@ -23,10 +23,11 @@ export interface FeatureGateData {
 			| "MEGA_HUD_SUB_FEATURE_GATE"
 			| "MEGA_HUD_TIMER_SUB_FEATURE_GATE"
 			| "MEGA_LEVEL_4_ENABLED_SUB_FEATURE_GATE"
+			| "MEGA_LEVEL_SPEEDUP_SUB_FEATURE_GATE"
 			| "MEGA_LEVELS_TUTORIAL_SUB_FEATURE_GATE"
 			| "PVP"
 			| "REMOTE_NC_HELP_TEXT_SUB_FEATURE_GATE";
-		rolloutPercentage: number;
+		rolloutPercentage?: number;
 		status: number;
 	}>;
 }

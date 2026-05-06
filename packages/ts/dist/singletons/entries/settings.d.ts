@@ -5760,8 +5760,8 @@ export interface VsSeekerClientSettings {
 		templateId: "VS_SEEKER_CLIENT_SETTINGS";
 		vsSeekerClientSettings: {
 			allowedVsSeekerLeagueTemplateId: [
-				"COMBAT_LEAGUE_VS_SEEKER_GREAT",
-				"COMBAT_LEAGUE_VS_SEEKER_GREAT_FANTASY",
+				"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
+				"COMBAT_LEAGUE_VS_SEEKER_GREAT_JUNGLE",
 				"COMBAT_LEAGUE_VS_SEEKER_GREAT_PVP_NEXT_PREVIEW",
 			];
 		};

@@ -95,6 +95,13 @@ export interface BreadMoveMappings {
 	};
 }
 
+export interface ErrorReportingSettingsPreLogin {
+	templateId: "ERROR_REPORTING_SETTINGS_PRE_LOGIN";
+	data: {
+		templateId: "ERROR_REPORTING_SETTINGS_PRE_LOGIN";
+	};
+}
+
 export interface ItemCurrencyValues {
 	templateId: "ITEM_CURRENCY_VALUES";
 	data: {
@@ -420,6 +427,7 @@ export interface VnextBattleConfig {
 export type SingletonsMiscMasterfileEntry =
 	| BelugaPokemonWhitelist
 	| BreadMoveMappings
+	| ErrorReportingSettingsPreLogin
 	| ItemCurrencyValues
 	| MainMenuChanges
 	| PlayerLevel

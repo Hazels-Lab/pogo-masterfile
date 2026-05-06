@@ -129,6 +129,10 @@ export type FeatureGateMega2026 = S<
 					rolloutPercentage: 100;
 					status: 368387608;
 				},
+				{
+					name: "MEGA_LEVEL_SPEEDUP_SUB_FEATURE_GATE";
+					status: 344171892;
+				},
 			];
 		}
 	>

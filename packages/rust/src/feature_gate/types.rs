@@ -13,7 +13,7 @@ pub struct Misc {
 #[serde(rename_all = "camelCase")]
 pub struct SubFeatureGateListV2 {
     pub name: String,
-    pub rollout_percentage: u64,
+    pub rollout_percentage: Option<u64>,
     pub status: u64,
 }
 
