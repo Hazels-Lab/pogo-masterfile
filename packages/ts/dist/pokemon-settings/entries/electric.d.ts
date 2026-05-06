@@ -10795,7 +10795,7 @@ export type PokemonSettingsV0807PokemonZeraora = S<
 				cylinderHeightM: 0.75;
 				cylinderRadiusM: 0.7;
 			};
-			cinematicMoves: ["THUNDER_PUNCH", "DISCHARGE", "WILD_CHARGE"];
+			cinematicMoves: ["THUNDER_PUNCH", "DISCHARGE", "WILD_CHARGE", 497];
 			encounter: {
 				attackProbability: 0.1;
 				bonusXlCandyCaptureReward: 3;
@@ -10849,7 +10849,7 @@ export type PokemonSettingsV0807PokemonZeraoraNormal = S<
 				cylinderHeightM: 0.75;
 				cylinderRadiusM: 0.7;
 			};
-			cinematicMoves: ["THUNDER_PUNCH", "DISCHARGE", "WILD_CHARGE"];
+			cinematicMoves: ["THUNDER_PUNCH", "DISCHARGE", "WILD_CHARGE", 497];
 			encounter: {
 				attackProbability: 0.1;
 				bonusXlCandyCaptureReward: 3;

@@ -11,6 +11,4 @@ pub enum EventPassSettingsTemplateId {
     EventPassApril2026Season,
     #[serde(rename = "EVENT_PASS_MAY2026_SEASON")]
     EventPassMay2026Season,
-    #[serde(rename = "EVENT_PASS_STEELEDRESOLVE2026_EVENT")]
-    EventPassSteeledresolve2026Event,
 }

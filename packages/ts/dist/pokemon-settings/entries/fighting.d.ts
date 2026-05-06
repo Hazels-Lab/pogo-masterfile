@@ -5289,6 +5289,13 @@ export type PokemonSettingsV0870PokemonFalinks = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementType: "MOVEMENT_JUMP";
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
+					temporaryEvolutionEnergyCost: 200;
+					temporaryEvolutionEnergyCostSubsequent: 40;
+				},
+			];
 			familyId: "FAMILY_FALINKS";
 			heightStdDev: 0.375;
 			ibfc: object;
@@ -5308,6 +5315,19 @@ export type PokemonSettingsV0870PokemonFalinks = S<
 				baseDefense: 170;
 				baseStamina: 163;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 1.6;
+					averageWeightKg: 99;
+					stats: {
+						baseAttack: 267;
+						baseDefense: 229;
+						baseStamina: 163;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+					typeOverride1: "POKEMON_TYPE_FIGHTING";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 75;
 				stardustToUnlock: 75000;
@@ -5347,6 +5367,13 @@ export type PokemonSettingsV0870PokemonFalinksGofest2025TrainConductor = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementType: "MOVEMENT_JUMP";
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
+					temporaryEvolutionEnergyCost: 200;
+					temporaryEvolutionEnergyCostSubsequent: 40;
+				},
+			];
 			familyId: "FAMILY_FALINKS";
 			form: "FALINKS_GOFEST_2025_TRAIN_CONDUCTOR";
 			heightStdDev: 0.375;
@@ -5367,6 +5394,19 @@ export type PokemonSettingsV0870PokemonFalinksGofest2025TrainConductor = S<
 				baseDefense: 170;
 				baseStamina: 163;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 1.6;
+					averageWeightKg: 99;
+					stats: {
+						baseAttack: 267;
+						baseDefense: 229;
+						baseStamina: 163;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+					typeOverride1: "POKEMON_TYPE_FIGHTING";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 75;
 				stardustToUnlock: 75000;
@@ -5405,6 +5445,13 @@ export type PokemonSettingsV0870PokemonFalinksNormal = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementType: "MOVEMENT_JUMP";
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
+					temporaryEvolutionEnergyCost: 200;
+					temporaryEvolutionEnergyCostSubsequent: 40;
+				},
+			];
 			familyId: "FAMILY_FALINKS";
 			form: "FALINKS_NORMAL";
 			heightStdDev: 0.375;
@@ -5425,6 +5472,19 @@ export type PokemonSettingsV0870PokemonFalinksNormal = S<
 				baseDefense: 170;
 				baseStamina: 163;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 1.6;
+					averageWeightKg: 99;
+					stats: {
+						baseAttack: 267;
+						baseDefense: 229;
+						baseStamina: 163;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+					typeOverride1: "POKEMON_TYPE_FIGHTING";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 75;
 				stardustToUnlock: 75000;

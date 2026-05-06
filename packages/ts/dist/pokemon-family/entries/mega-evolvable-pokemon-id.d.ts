@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonFamily", split "mega-evolvable-pokemon-id", 48 entries.
+// Generated from Pokémon GO masterfile — group "pokemonFamily", split "mega-evolvable-pokemon-id", 49 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonFamily } from "../types";
@@ -435,6 +435,15 @@ export type PokemonFamilyV0719FamilyDiancie = S<
 		}
 	>
 >;
+export type PokemonFamilyV0870FamilyFalinks = S<
+	PokemonFamily<
+		"V0870_FAMILY_FALINKS",
+		{
+			familyId: "FAMILY_FALINKS";
+			megaEvolvablePokemonId: "FALINKS";
+		}
+	>
+>;
 
 export type PokemonFamilyMegaEvolvablePokemonIdMasterfileEntry =
 	| PokemonFamilyV0001FamilyBulbasaur
@@ -484,4 +493,5 @@ export type PokemonFamilyMegaEvolvablePokemonIdMasterfileEntry =
 	| PokemonFamilyV0459FamilySnover
 	| PokemonFamilyV0531FamilyAudino
 	| PokemonFamilyV0686FamilyInkay
-	| PokemonFamilyV0719FamilyDiancie;
+	| PokemonFamilyV0719FamilyDiancie
+	| PokemonFamilyV0870FamilyFalinks;

@@ -32,6 +32,7 @@ export interface PokemonFamilyData {
 		| "CHARIZARD"
 		| "DIANCIE"
 		| "DRAGONITE"
+		| "FALINKS"
 		| "GARCHOMP"
 		| "GENGAR"
 		| "GLALIE"

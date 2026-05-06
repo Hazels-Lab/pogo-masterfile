@@ -99,7 +99,7 @@ export type ItemSettingsItemEventPassPointLiveOps01 = S<
 		{
 			category: "ITEM_CATEGORY_EVENT_PASS_POINT";
 			eventPassPoint: {
-				eventPassId: "EVENT_PASS_DECEMBER2025_SEASON";
+				eventPassId: "EVENT_PASS_SPRINGMARATHON2026_EVENT";
 			};
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
@@ -246,7 +246,7 @@ export type ItemSettingsItemEventPassPointLiveOps08 = S<
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
-					limit: 500;
+					limit: 300;
 				};
 			};
 		}

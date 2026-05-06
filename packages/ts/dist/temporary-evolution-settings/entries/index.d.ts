@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "temporaryEvolutionSettings", 50 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "temporaryEvolutionSettings", 51 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { TemporaryEvolutionSettings } from "../types";
@@ -707,6 +707,20 @@ export type TemporaryEvolutionSettingsV0719PokemonDiancie = S<
 		}
 	>
 >;
+export type TemporaryEvolutionSettingsV0870PokemonFalinks = S<
+	TemporaryEvolutionSettings<
+		"TEMPORARY_EVOLUTION_V0870_POKEMON_FALINKS",
+		{
+			pokemonId: "FALINKS";
+			temporaryEvolutions: [
+				{
+					assetBundleValue: 51;
+					temporaryEvolutionId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+		}
+	>
+>;
 
 export type TemporaryEvolutionSettingsMasterfileEntry =
 	| TemporaryEvolutionSettingsV0003PokemonVenusaur
@@ -758,6 +772,7 @@ export type TemporaryEvolutionSettingsMasterfileEntry =
 	| TemporaryEvolutionSettingsV0475PokemonGallade
 	| TemporaryEvolutionSettingsV0531PokemonAudino
 	| TemporaryEvolutionSettingsV0687PokemonMalamar
-	| TemporaryEvolutionSettingsV0719PokemonDiancie;
+	| TemporaryEvolutionSettingsV0719PokemonDiancie
+	| TemporaryEvolutionSettingsV0870PokemonFalinks;
 
 export type TemporaryEvolutionSettingsTemplateID = TemporaryEvolutionSettingsMasterfileEntry["templateId"];

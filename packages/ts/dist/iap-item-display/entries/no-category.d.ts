@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 47 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 46 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -76,10 +76,11 @@ export type IapItemDisplayApril32026DeluxeEventPassTrackUnlock = S<
 		"APRIL3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK",
 		{
 			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
+			hidden: true;
 			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Memory_Lane_Meltan_Celebration_SRR_v1-1024x576.jpg";
 			sku: "pgorelease.april3_2026_deluxe_event_pass_track_unlock";
-			skuDisableTime: "2026-05-06T20:00:00";
-			skuDisableTimeUtcMs: "1778097600000";
+			skuDisableTime: "2025-05-06T20:00:00";
+			skuDisableTimeUtcMs: "1746561600000";
 			skuEnableTime: "2025-04-28T10:00:00";
 			skuEnableTimeUtcMs: "1745834400000";
 			sortOrder: 1;
@@ -92,10 +93,11 @@ export type IapItemDisplayApril32026DeluxeEventPassTrackUnlockPlusPoints = S<
 		"APRIL3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS",
 		{
 			description: "event_pass_plus_points_6_ranks_description";
+			hidden: true;
 			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Memory_Lane_Meltan_Celebration_SRR_v1-1024x576.jpg";
 			sku: "pgorelease.april3_2026_deluxe_event_pass_track_unlock_plus_points";
-			skuDisableTime: "2026-05-06T20:00:00";
-			skuDisableTimeUtcMs: "1778097600000";
+			skuDisableTime: "2025-05-06T20:00:00";
+			skuDisableTimeUtcMs: "1746561600000";
 			skuEnableTime: "2025-04-28T10:00:00";
 			skuEnableTimeUtcMs: "1745834400000";
 			sortOrder: 1;
@@ -138,6 +140,23 @@ export type IapItemDisplayEventPassApril1SeasonStoreRedirect = S<
 			skuEnableTimeUtcMs: "1743415200000";
 			sortOrder: 1;
 			title: "season_pass_premium_track_title_shockingly_good_2026";
+		}
+	>
+>;
+export type IapItemDisplayEventPassApril3EventStoreRedirect = S<
+	IapItemDisplay<
+		"EVENT_PASS_APRIL3_EVENT_STORE_REDIRECT",
+		{
+			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
+			hidden: true;
+			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Memory_Lane_Meltan_Celebration_SRR_v1-1024x576.jpg";
+			sku: "pgorelease.april3_2026_deluxe_event_pass_track_redirect";
+			skuDisableTime: "2025-05-06T20:00:00";
+			skuDisableTimeUtcMs: "1746561600000";
+			skuEnableTime: "2025-04-28T10:00:00";
+			skuEnableTimeUtcMs: "1745834400000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_steeled_resolve_2026";
 		}
 	>
 >;
@@ -647,38 +666,6 @@ export type IapItemDisplayPgoreleaseApril22026DeluxeEventPassTrackRedirect = S<
 		}
 	>
 >;
-export type IapItemDisplayPgoreleaseApril32026DeluxeEventPassTrackUnlock = S<
-	IapItemDisplay<
-		"pgorelease.april3_2026_deluxe_event_pass_track_unlock",
-		{
-			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Memory_Lane_Meltan_Celebration_SRR_v1-1024x576.jpg";
-			sku: "pgorelease.april3_2026_deluxe_event_pass_track_unlock";
-			skuDisableTime: "2026-05-06T20:00:00";
-			skuDisableTimeUtcMs: "1778097600000";
-			skuEnableTime: "2025-04-28T10:00:00";
-			skuEnableTimeUtcMs: "1745834400000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_title_steeled_resolve_2026";
-		}
-	>
->;
-export type IapItemDisplayPgoreleaseApril32026DeluxeEventPassTrackUnlockPlusPoints = S<
-	IapItemDisplay<
-		"pgorelease.april3_2026_deluxe_event_pass_track_unlock_plus_points",
-		{
-			description: "event_pass_plus_points_6_ranks_description";
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Memory_Lane_Meltan_Celebration_SRR_v1-1024x576.jpg";
-			sku: "pgorelease.april3_2026_deluxe_event_pass_track_unlock_plus_points";
-			skuDisableTime: "2026-05-06T20:00:00";
-			skuDisableTimeUtcMs: "1778097600000";
-			skuEnableTime: "2025-04-28T10:00:00";
-			skuEnableTimeUtcMs: "1745834400000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_plus_six_ranks_title_steeled_resolve_2026";
-		}
-	>
->;
 export type IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlock = S<
 	IapItemDisplay<
 		"pgorelease.month2_deluxe_event_pass_track_unlock",
@@ -784,6 +771,7 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayBundleEc200Rpp1
 	| IapItemDisplayBundleEc600Rpp3
 	| IapItemDisplayEventPassApril1SeasonStoreRedirect
+	| IapItemDisplayEventPassApril3EventStoreRedirect
 	| IapItemDisplayEventPassGofest2025FinaleStoreRedirect
 	| IapItemDisplayEventPassGofest2025GlobalStoreRedirect
 	| IapItemDisplayEventPassGotour2025GlobalStoreRedirect
@@ -814,8 +802,6 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayMonth3DeluxeEventPassTrackUnlock
 	| IapItemDisplayMonth3DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayPgoreleaseApril22026DeluxeEventPassTrackRedirect
-	| IapItemDisplayPgoreleaseApril32026DeluxeEventPassTrackUnlock
-	| IapItemDisplayPgoreleaseApril32026DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlock
 	| IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayPgoreleaseMonth3DeluxeEventPassTrackUnlock

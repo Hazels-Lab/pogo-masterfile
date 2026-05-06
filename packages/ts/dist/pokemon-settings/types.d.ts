@@ -43,7 +43,7 @@ export interface PokemonSettingsData {
 		shoulderModeScale?: number;
 	};
 	candyToEvolve?: number;
-	cinematicMoves?: Array<string>;
+	cinematicMoves?: Array<number | string>;
 	combatDefaultCameraAngle?: [number, number, number];
 	combatOpponentFocusCameraAngle?: [number, number, number];
 	combatPlayerFocusCameraAngle?: [number, number, number];

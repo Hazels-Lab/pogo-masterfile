@@ -1624,8 +1624,8 @@ type RaidSettings struct {
 	RemoteRaidDistanceValidation          bool                                   `json:"remoteRaidDistanceValidation"`
 	RemoteRaidEnabled                     bool                                   `json:"remoteRaidEnabled"`
 	RemoteRaidsMinPlayerLevel             uint64                                 `json:"remoteRaidsMinPlayerLevel"`
-	UnsupportedRaidLevelsForFriendInvites [2]string                              `json:"unsupportedRaidLevelsForFriendInvites"`
-	UnsupportedRemoteRaidLevels           [2]string                              `json:"unsupportedRemoteRaidLevels"`
+	UnsupportedRaidLevelsForFriendInvites []any                                  `json:"unsupportedRaidLevelsForFriendInvites"`
+	UnsupportedRemoteRaidLevels           []any                                  `json:"unsupportedRemoteRaidLevels"`
 }
 
 type ReferralSettingsRecentFeatures struct {

@@ -11990,10 +11990,20 @@ export type PokemonSettingsV0955PokemonFlittle = S<
 		"V0955_POKEMON_FLITTLE",
 		{
 			breadTierGroup: "GROUP_2";
-			camera: object;
+			buddyGroupNumber: 1;
+			buddyScale: 14;
+			camera: {
+				cylinderGroundM: 0.375;
+				cylinderHeightM: 0.3;
+				cylinderRadiusM: 0.2;
+			};
 			cinematicMoves: ["PSYBEAM", "PSYSHOCK", "PSYCHIC"];
 			encounter: {
 				attackProbability: 0.1;
+				cameraDistance: 4;
+				collisionHeadRadiusM: 0.2;
+				collisionHeightM: 0.25;
+				collisionRadiusM: 0.2;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
 				jumpTimeS: 1;
@@ -12014,6 +12024,8 @@ export type PokemonSettingsV0955PokemonFlittle = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
+			modelHeight: 0.5;
+			modelScaleV2: 1.6;
 			pokedexHeightM: 0.2;
 			pokedexWeightKg: 1.5;
 			pokemonId: "FLITTLE";
@@ -12037,10 +12049,20 @@ export type PokemonSettingsV0955PokemonFlittleNormal = S<
 		"V0955_POKEMON_FLITTLE_NORMAL",
 		{
 			breadTierGroup: "GROUP_2";
-			camera: object;
+			buddyGroupNumber: 1;
+			buddyScale: 14;
+			camera: {
+				cylinderGroundM: 0.375;
+				cylinderHeightM: 0.3;
+				cylinderRadiusM: 0.2;
+			};
 			cinematicMoves: ["PSYBEAM", "PSYSHOCK", "PSYCHIC"];
 			encounter: {
 				attackProbability: 0.1;
+				cameraDistance: 4;
+				collisionHeadRadiusM: 0.2;
+				collisionHeightM: 0.25;
+				collisionRadiusM: 0.2;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
 				jumpTimeS: 1;
@@ -12063,6 +12085,8 @@ export type PokemonSettingsV0955PokemonFlittleNormal = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
+			modelHeight: 0.5;
+			modelScaleV2: 1.6;
 			pokedexHeightM: 0.2;
 			pokedexWeightKg: 1.5;
 			pokemonId: "FLITTLE";
@@ -12086,13 +12110,23 @@ export type PokemonSettingsV0956PokemonEspathra = S<
 		"V0956_POKEMON_ESPATHRA",
 		{
 			breadTierGroup: "GROUP_2";
-			camera: object;
+			buddyGroupNumber: 2;
+			buddyPortraitOffset: [0, 200, -1300];
+			buddyScale: 19;
+			camera: {
+				cylinderHeightM: 1.9;
+				cylinderRadiusM: 1;
+			};
 			cinematicMoves: ["PSYBEAM", "PSYSHOCK", "PSYCHIC", "DAZZLING_GLEAM"];
 			encounter: {
 				attackProbability: 0.1;
 				bonusCandyCaptureReward: 2;
 				bonusStardustCaptureReward: 200;
 				bonusXlCandyCaptureReward: 1;
+				cameraDistance: 4;
+				collisionHeadRadiusM: 0.25;
+				collisionHeightM: 1.9;
+				collisionRadiusM: 1;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
 				jumpTimeS: 1;
@@ -12107,6 +12141,8 @@ export type PokemonSettingsV0956PokemonEspathra = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
+			modelHeight: 1.9;
+			modelScaleV2: 0.95;
 			parentPokemonId: "FLITTLE";
 			pokedexHeightM: 1.9;
 			pokedexWeightKg: 90;
@@ -12131,13 +12167,23 @@ export type PokemonSettingsV0956PokemonEspathraNormal = S<
 		"V0956_POKEMON_ESPATHRA_NORMAL",
 		{
 			breadTierGroup: "GROUP_2";
-			camera: object;
+			buddyGroupNumber: 2;
+			buddyPortraitOffset: [0, 200, -1300];
+			buddyScale: 19;
+			camera: {
+				cylinderHeightM: 1.9;
+				cylinderRadiusM: 1;
+			};
 			cinematicMoves: ["PSYBEAM", "PSYSHOCK", "PSYCHIC", "DAZZLING_GLEAM"];
 			encounter: {
 				attackProbability: 0.1;
 				bonusCandyCaptureReward: 2;
 				bonusStardustCaptureReward: 200;
 				bonusXlCandyCaptureReward: 1;
+				cameraDistance: 4;
+				collisionHeadRadiusM: 0.25;
+				collisionHeightM: 1.9;
+				collisionRadiusM: 1;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
 				jumpTimeS: 1;
@@ -12153,6 +12199,8 @@ export type PokemonSettingsV0956PokemonEspathraNormal = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
+			modelHeight: 1.9;
+			modelScaleV2: 0.95;
 			parentPokemonId: "FLITTLE";
 			pokedexHeightM: 1.9;
 			pokedexWeightKg: 90;

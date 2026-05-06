@@ -107,4 +107,6 @@ pub enum TemporaryEvolutionSettingsTemplateId {
     TemporaryEvolutionV0687PokemonMalamar,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0719_POKEMON_DIANCIE")]
     TemporaryEvolutionV0719PokemonDiancie,
+    #[serde(rename = "TEMPORARY_EVOLUTION_V0870_POKEMON_FALINKS")]
+    TemporaryEvolutionV0870PokemonFalinks,
 }

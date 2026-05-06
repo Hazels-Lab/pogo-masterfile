@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "temporaryEvolutionSettings", 50 entries (structural types).
+// Generated from Pokémon GO masterfile — group "temporaryEvolutionSettings", 51 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -29,6 +29,7 @@ export interface TemporaryEvolutionSettingsData {
 		| "CHARIZARD"
 		| "DIANCIE"
 		| "DRAGONITE"
+		| "FALINKS"
 		| "GALLADE"
 		| "GARCHOMP"
 		| "GARDEVOIR"

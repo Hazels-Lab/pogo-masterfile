@@ -4847,8 +4847,8 @@ export interface RaidSettings {
 			remoteRaidDistanceValidation: true;
 			remoteRaidEnabled: true;
 			remoteRaidsMinPlayerLevel: 5;
-			unsupportedRaidLevelsForFriendInvites: ["RAID_LEVEL_EXTENDED_EGG", "RAID_LEVEL_4"];
-			unsupportedRemoteRaidLevels: ["RAID_LEVEL_EXTENDED_EGG", "RAID_LEVEL_4"];
+			unsupportedRaidLevelsForFriendInvites: ["RAID_LEVEL_EXTENDED_EGG", "RAID_LEVEL_4", 18, 19];
+			unsupportedRemoteRaidLevels: ["RAID_LEVEL_EXTENDED_EGG", "RAID_LEVEL_4", 18, 19];
 		};
 	};
 }

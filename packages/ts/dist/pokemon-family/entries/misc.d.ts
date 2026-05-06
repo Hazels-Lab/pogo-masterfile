@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonFamily", split "misc", 492 entries.
+// Generated from Pokémon GO masterfile — group "pokemonFamily", split "misc", 491 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonFamily } from "../types";
@@ -3163,14 +3163,6 @@ export type PokemonFamilyV0868FamilyMilcery = S<
 		}
 	>
 >;
-export type PokemonFamilyV0870FamilyFalinks = S<
-	PokemonFamily<
-		"V0870_FAMILY_FALINKS",
-		{
-			familyId: "FAMILY_FALINKS";
-		}
-	>
->;
 export type PokemonFamilyV0871FamilyPincurchin = S<
 	PokemonFamily<
 		"V0871_FAMILY_PINCURCHIN",
@@ -4336,7 +4328,6 @@ export type PokemonFamilyMiscMasterfileEntry =
 	| PokemonFamilyV0856FamilyHatenna
 	| PokemonFamilyV0859FamilyImpidimp
 	| PokemonFamilyV0868FamilyMilcery
-	| PokemonFamilyV0870FamilyFalinks
 	| PokemonFamilyV0871FamilyPincurchin
 	| PokemonFamilyV0872FamilySnom
 	| PokemonFamilyV0874FamilyStonjourner

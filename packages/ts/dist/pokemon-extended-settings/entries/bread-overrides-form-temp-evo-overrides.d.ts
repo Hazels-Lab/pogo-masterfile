@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form-temp-evo-overrides", 12 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form-temp-evo-overrides", 13 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -694,6 +694,52 @@ export type PokemonExtendedSettingsV0687PokemonMalamarNormal = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0870PokemonFalinksNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0870_POKEMON_FALINKS_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 15.87;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 7.94;
+					};
+					maxStationVisualSettings: {
+						scale: 1.08;
+					};
+				},
+			];
+			form: "FALINKS_NORMAL";
+			sizeSettings: {
+				mLowerBound: 2.25;
+				mUpperBound: 3.75;
+				xlUpperBound: 4.5;
+				xsLowerBound: 1.5;
+				xxlUpperBound: 4.65;
+				xxsLowerBound: 1.47;
+			};
+			tempEvoOverrides: [
+				{
+					sizeSettings: {
+						mLowerBound: 2.25;
+						mUpperBound: 3.75;
+						xlUpperBound: 4.5;
+						xsLowerBound: 1.5;
+						xxlUpperBound: 4.65;
+						xxsLowerBound: 1.47;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+			uniqueId: "FALINKS";
+		}
+	>
+>;
 
 export type PokemonExtendedSettingsBreadOverridesFormTempEvoOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0003PokemonVenusaurNormal
@@ -707,4 +753,5 @@ export type PokemonExtendedSettingsBreadOverridesFormTempEvoOverridesMasterfileE
 	| PokemonExtendedSettingsV0380PokemonLatiasNormal
 	| PokemonExtendedSettingsV0381PokemonLatiosNormal
 	| PokemonExtendedSettingsV0475PokemonGalladeNormal
-	| PokemonExtendedSettingsV0687PokemonMalamarNormal;
+	| PokemonExtendedSettingsV0687PokemonMalamarNormal
+	| PokemonExtendedSettingsV0870PokemonFalinksNormal;

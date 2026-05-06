@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1256 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1255 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -18564,23 +18564,6 @@ export type PokemonExtendedSettingsV0869PokemonAlcremieNormal = S<
 		}
 	>
 >;
-export type PokemonExtendedSettingsV0870PokemonFalinksGofest2025TrainConductor = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0870_POKEMON_FALINKS_GOFEST_2025_TRAIN_CONDUCTOR",
-		{
-			form: "FALINKS_GOFEST_2025_TRAIN_CONDUCTOR";
-			sizeSettings: {
-				mLowerBound: 2.25;
-				mUpperBound: 3.75;
-				xlUpperBound: 4.5;
-				xsLowerBound: 1.5;
-				xxlUpperBound: 4.65;
-				xxsLowerBound: 1.47;
-			};
-			uniqueId: "FALINKS";
-		}
-	>
->;
 export type PokemonExtendedSettingsV0871PokemonPincurchinNormal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0871_POKEMON_PINCURCHIN_NORMAL",
@@ -22590,7 +22573,6 @@ export type PokemonExtendedSettingsFormMasterfileEntry =
 	| PokemonExtendedSettingsV0867PokemonRunerigusNormal
 	| PokemonExtendedSettingsV0868PokemonMilceryNormal
 	| PokemonExtendedSettingsV0869PokemonAlcremieNormal
-	| PokemonExtendedSettingsV0870PokemonFalinksGofest2025TrainConductor
 	| PokemonExtendedSettingsV0871PokemonPincurchinNormal
 	| PokemonExtendedSettingsV0872PokemonSnomNormal
 	| PokemonExtendedSettingsV0873PokemonFrosmothNormal
