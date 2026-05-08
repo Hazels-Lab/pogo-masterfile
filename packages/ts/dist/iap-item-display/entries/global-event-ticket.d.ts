@@ -3,23 +3,6 @@
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
 
-export type IapItemDisplayEventPassMonth2SeasonStoreRedirect = S<
-	IapItemDisplay<
-		"EVENT_PASS_MONTH2_SEASON_STORE_REDIRECT",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-deluxe-gopass-april-nologo.jpg";
-			sku: "pgorelease.month2_deluxe_event_pass_track_redirect";
-			skuDisableTime: "2026-05-07T10:00:00";
-			skuDisableTimeUtcMs: "1778148000000";
-			skuEnableTime: "2025-04-07T10:00:00";
-			skuEnableTimeUtcMs: "1744020000000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_title_april";
-		}
-	>
->;
 export type IapItemDisplayEventPassMonth3SeasonStoreRedirect = S<
 	IapItemDisplay<
 		"EVENT_PASS_MONTH3_SEASON_STORE_REDIRECT",
@@ -297,6 +280,24 @@ export type IapItemDisplayGeneral2Ticket2Giftable = S<
 			sortOrder: 1;
 			spriteId: "general2.ticket.2";
 			title: "general2.ticket2.CATCH_MASTERY_ORICORIO";
+		}
+	>
+>;
+export type IapItemDisplayGeneral2Ticket3 = S<
+	IapItemDisplay<
+		"general2.ticket.3",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-lechonk-community-day-2026-nologo.jpg";
+			sku: "pgorelease.general2.ticket.3";
+			skuDisableTime: "2026-05-09T17:00:00";
+			skuDisableTimeUtcMs: "1778346000000";
+			skuEnableTime: "2019-03-14T08:00:00";
+			skuEnableTimeUtcMs: "1552550400000";
+			sortOrder: 2;
+			spriteId: "general1.ticket.2";
+			title: "general1.ticket_CD_Lechonk26_title";
+			useEnvironmentPrefix: true;
 		}
 	>
 >;
@@ -1062,7 +1063,6 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket10Giftable = S<
 >;
 
 export type IapItemDisplayGlobalEventTicketMasterfileEntry =
-	| IapItemDisplayEventPassMonth2SeasonStoreRedirect
 	| IapItemDisplayEventPassMonth3SeasonStoreRedirect
 	| IapItemDisplayEvergreenticket1
 	| IapItemDisplayEvergreenticket1Giftable
@@ -1078,6 +1078,7 @@ export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayGeneral2Ticket1Giftable
 	| IapItemDisplayGeneral2Ticket2
 	| IapItemDisplayGeneral2Ticket2Giftable
+	| IapItemDisplayGeneral2Ticket3
 	| IapItemDisplayGeneral2Ticket4
 	| IapItemDisplayGeneral2Ticket4Giftable
 	| IapItemDisplayGeneral2Ticket5

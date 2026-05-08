@@ -559,6 +559,8 @@ pub enum IapItemDisplayTemplateId {
     General2Ticket2,
     #[serde(rename = "general2.ticket.2.giftable")]
     General2Ticket2Giftable,
+    #[serde(rename = "general2.ticket.3")]
+    General2Ticket3,
     #[serde(rename = "general2.ticket.4")]
     General2Ticket4,
     #[serde(rename = "general2.ticket.4.giftable")]
@@ -599,6 +601,10 @@ pub enum IapItemDisplayTemplateId {
     Gofest2025DeluxeEventPassTrackUnlock,
     #[serde(rename = "GOFEST_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
     Gofest2025DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "GOFEST_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
+    GofestDeluxeEventPassTrackUnlock,
+    #[serde(rename = "GOFEST_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
+    GofestDeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "GOFEST2025_FINALE_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
     Gofest2025FinaleDeluxeEventPassTrackUnlock,
     #[serde(rename = "GOFEST2025_FINALE_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
@@ -657,6 +663,10 @@ pub enum IapItemDisplayTemplateId {
     Maxrevive3,
     #[serde(rename = "maxrevive.6")]
     Maxrevive6,
+    #[serde(rename = "MAY1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
+    May12026DeluxeEventPassTrackUnlock,
+    #[serde(rename = "MAY1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
+    May12026DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "MONTH1_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
     Month1DeluxeEventPassTrackUnlock,
     #[serde(rename = "MONTH1_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
@@ -853,10 +863,12 @@ pub enum IapItemDisplayTemplateId {
     PgoreleaseGeneral2Ticket10,
     #[serde(rename = "pgorelease.general2.ticket.10.giftable")]
     PgoreleaseGeneral2Ticket10Giftable,
-    #[serde(rename = "pgorelease.month2_deluxe_event_pass_track_unlock")]
-    PgoreleaseMonth2DeluxeEventPassTrackUnlock,
-    #[serde(rename = "pgorelease.month2_deluxe_event_pass_track_unlock_plus_points")]
-    PgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "pgorelease.gofest_2025_deluxe_event_pass_track_redirect")]
+    PgoreleaseGofest2025DeluxeEventPassTrackRedirect,
+    #[serde(rename = "pgorelease.may1_2026_deluxe_event_pass_track_redirect")]
+    PgoreleaseMay12026DeluxeEventPassTrackRedirect,
+    #[serde(rename = "pgorelease.may1_2026_deluxe_event_pass_track_unlock_redirect")]
+    PgoreleaseMay12026DeluxeEventPassTrackUnlockRedirect,
     #[serde(rename = "pgorelease.month3_deluxe_event_pass_track_unlock")]
     PgoreleaseMonth3DeluxeEventPassTrackUnlock,
     #[serde(rename = "pgorelease.month3_deluxe_event_pass_track_unlock_plus_points")]

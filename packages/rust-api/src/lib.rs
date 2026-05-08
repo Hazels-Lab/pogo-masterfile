@@ -47,7 +47,6 @@ mod template_ids {
     pub use pogo_masterfile_types::combat_npc_trainer::CombatNpcTrainerTemplateId;
     pub use pogo_masterfile_types::combat_ranking_proto_settings::CombatRankingProtoSettingsTemplateId;
     pub use pogo_masterfile_types::combat_type::CombatTypeTemplateId;
-    pub use pogo_masterfile_types::event_pass_settings::EventPassSettingsTemplateId;
     pub use pogo_masterfile_types::event_pass_tier_settings::EventPassTierSettingsTemplateId;
     pub use pogo_masterfile_types::evolution_chain_display_settings::EvolutionChainDisplaySettingsTemplateId;
     pub use pogo_masterfile_types::evolution_quest_template::EvolutionQuestTemplateTemplateId;
@@ -134,8 +133,6 @@ pub(crate) struct GroupIndexes {
     pub(crate) combat_ranking_proto_settings_order: Vec<usize>,
     pub(crate) combat_type_index: HashMap<CombatTypeTemplateId, usize>,
     pub(crate) combat_type_order: Vec<usize>,
-    pub(crate) event_pass_settings_index: HashMap<EventPassSettingsTemplateId, usize>,
-    pub(crate) event_pass_settings_order: Vec<usize>,
     pub(crate) event_pass_tier_settings_index: HashMap<EventPassTierSettingsTemplateId, usize>,
     pub(crate) event_pass_tier_settings_order: Vec<usize>,
     pub(crate) evolution_chain_display_settings_index:
@@ -288,9 +285,6 @@ impl GroupIndexes {
         let mut combat_ranking_proto_settings_order: Vec<usize> = Vec::new();
         let mut combat_type_index: HashMap<CombatTypeTemplateId, usize> = HashMap::new();
         let mut combat_type_order: Vec<usize> = Vec::new();
-        let mut event_pass_settings_index: HashMap<EventPassSettingsTemplateId, usize> =
-            HashMap::new();
-        let mut event_pass_settings_order: Vec<usize> = Vec::new();
         let mut event_pass_tier_settings_index: HashMap<EventPassTierSettingsTemplateId, usize> =
             HashMap::new();
         let mut event_pass_tier_settings_order: Vec<usize> = Vec::new();
@@ -539,12 +533,6 @@ impl GroupIndexes {
                     if let Ok(typed) = entry.template_id().parse::<CombatTypeTemplateId>() {
                         combat_type_index.insert(typed, idx);
                         combat_type_order.push(idx);
-                    }
-                }
-                MasterfileEntry::EventPassSettings(_) => {
-                    if let Ok(typed) = entry.template_id().parse::<EventPassSettingsTemplateId>() {
-                        event_pass_settings_index.insert(typed, idx);
-                        event_pass_settings_order.push(idx);
                     }
                 }
                 MasterfileEntry::EventPassTierSettings(_) => {
@@ -905,8 +893,6 @@ impl GroupIndexes {
             combat_ranking_proto_settings_order,
             combat_type_index,
             combat_type_order,
-            event_pass_settings_index,
-            event_pass_settings_order,
             event_pass_tier_settings_index,
             event_pass_tier_settings_order,
             evolution_chain_display_settings_index,
@@ -1125,14 +1111,6 @@ impl Masterfile {
             entries: &self.entries,
             index: &self.groups.combat_type_index,
             order: &self.groups.combat_type_order,
-        }
-    }
-
-    pub fn event_pass_settings(&self) -> accessor::EventPassSettingsAccessor<'_> {
-        accessor::EventPassSettingsAccessor {
-            entries: &self.entries,
-            index: &self.groups.event_pass_settings_index,
-            order: &self.groups.event_pass_settings_order,
         }
     }
 
@@ -1614,14 +1592,6 @@ impl blocking::Masterfile {
             entries: &self.entries,
             index: &self.groups.combat_type_index,
             order: &self.groups.combat_type_order,
-        }
-    }
-
-    pub fn event_pass_settings(&self) -> accessor::EventPassSettingsAccessor<'_> {
-        accessor::EventPassSettingsAccessor {
-            entries: &self.entries,
-            index: &self.groups.event_pass_settings_index,
-            order: &self.groups.event_pass_settings_order,
         }
     }
 

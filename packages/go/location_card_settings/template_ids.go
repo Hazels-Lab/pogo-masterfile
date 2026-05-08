@@ -74,7 +74,9 @@ const (
 	LocationCardSettingsTemplateIDLc2025ValenciaCitysafari001                             LocationCardSettingsTemplateID = "LC_2025_VALENCIA_CITYSAFARI_001"
 	LocationCardSettingsTemplateIDLc2025ValenciaRoadtrip001                               LocationCardSettingsTemplateID = "LC_2025_VALENCIA_ROADTRIP_001"
 	LocationCardSettingsTemplateIDLc2025VancouverCitysafari001                            LocationCardSettingsTemplateID = "LC_2025_VANCOUVER_CITYSAFARI_001"
+	LocationCardSettingsTemplateIDLc2026ChicagoGofest001                                  LocationCardSettingsTemplateID = "LC_2026_CHICAGO_GOFEST_001"
 	LocationCardSettingsTemplateIDLc2026CologneCarnival001                                LocationCardSettingsTemplateID = "LC_2026_COLOGNE_CARNIVAL_001"
+	LocationCardSettingsTemplateIDLc2026CopenhagenGofest001                               LocationCardSettingsTemplateID = "LC_2026_COPENHAGEN_GOFEST_001"
 	LocationCardSettingsTemplateIDLc2026LosangelesGotour001                               LocationCardSettingsTemplateID = "LC_2026_LOSANGELES_GOTOUR_001"
 	LocationCardSettingsTemplateIDLc2026Npb001                                            LocationCardSettingsTemplateID = "LC_2026_NPB_001"
 	LocationCardSettingsTemplateIDLc2026Npb002                                            LocationCardSettingsTemplateID = "LC_2026_NPB_002"
@@ -92,6 +94,7 @@ const (
 	LocationCardSettingsTemplateIDLc2026Ppk001                                            LocationCardSettingsTemplateID = "LC_2026_PPK_001"
 	LocationCardSettingsTemplateIDLc2026RiodejaneiroCarnival001                           LocationCardSettingsTemplateID = "LC_2026_RIODEJANEIRO_CARNIVAL_001"
 	LocationCardSettingsTemplateIDLc2026TainanGotour001                                   LocationCardSettingsTemplateID = "LC_2026_TAINAN_GOTOUR_001"
+	LocationCardSettingsTemplateIDLc2026TokyoGofest001                                    LocationCardSettingsTemplateID = "LC_2026_TOKYO_GOFEST_001"
 	LocationCardSettingsTemplateIDLcCitysafari2025Buenosaires                             LocationCardSettingsTemplateID = "LC_CITYSAFARI2025_BUENOSAIRES"
 	LocationCardSettingsTemplateIDLcCitysafari2025Miami                                   LocationCardSettingsTemplateID = "LC_CITYSAFARI2025_MIAMI"
 	LocationCardSettingsTemplateIDLcCitysafari2025Sydney                                  LocationCardSettingsTemplateID = "LC_CITYSAFARI2025_SYDNEY"
@@ -177,6 +180,8 @@ const (
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalSilver001                  LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_GLOBAL_SILVER_001"
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalX001                       LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_GLOBAL_X_001"
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalY001                       LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_GLOBAL_Y_001"
+	LocationCardSettingsTemplateIDLcSpecialbackground2026Mewtwo001                        LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_MEWTWO_001"
+	LocationCardSettingsTemplateIDLcSpecialbackground2026Mewtwo002                        LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_MEWTWO_002"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundCon2025                              LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_CON2025"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundExtra202501                          LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_EXTRA_2025_01"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundExtra202502                          LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_EXTRA_2025_02"
@@ -261,7 +266,9 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLc2025ValenciaCitysafari001,
 	LocationCardSettingsTemplateIDLc2025ValenciaRoadtrip001,
 	LocationCardSettingsTemplateIDLc2025VancouverCitysafari001,
+	LocationCardSettingsTemplateIDLc2026ChicagoGofest001,
 	LocationCardSettingsTemplateIDLc2026CologneCarnival001,
+	LocationCardSettingsTemplateIDLc2026CopenhagenGofest001,
 	LocationCardSettingsTemplateIDLc2026LosangelesGotour001,
 	LocationCardSettingsTemplateIDLc2026Npb001,
 	LocationCardSettingsTemplateIDLc2026Npb002,
@@ -279,6 +286,7 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLc2026Ppk001,
 	LocationCardSettingsTemplateIDLc2026RiodejaneiroCarnival001,
 	LocationCardSettingsTemplateIDLc2026TainanGotour001,
+	LocationCardSettingsTemplateIDLc2026TokyoGofest001,
 	LocationCardSettingsTemplateIDLcCitysafari2025Buenosaires,
 	LocationCardSettingsTemplateIDLcCitysafari2025Miami,
 	LocationCardSettingsTemplateIDLcCitysafari2025Sydney,
@@ -364,6 +372,8 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalSilver001,
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalX001,
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalY001,
+	LocationCardSettingsTemplateIDLcSpecialbackground2026Mewtwo001,
+	LocationCardSettingsTemplateIDLcSpecialbackground2026Mewtwo002,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundCon2025,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundExtra202501,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundExtra202502,
