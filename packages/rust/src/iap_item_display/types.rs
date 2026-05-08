@@ -20,6 +20,7 @@ pub struct IapItemDisplay {
     pub sprite_id: Option<String>,
     pub title: Option<String>,
     pub total_value: Option<u64>,
+    pub use_environment_prefix: Option<bool>,
     pub webstore_sku_id: Option<String>,
     pub webstore_sku_price_e6: Option<u64>,
 }

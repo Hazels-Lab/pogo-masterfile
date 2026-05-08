@@ -290,7 +290,7 @@ pub enum MasterfileEntry {
     DeepLinkingSettings(singletons::DeepLinkingSettingsEntry),
     EggHatchImprovementsSettings(singletons::EggHatchImprovementsSettingsEntry),
     EncounterSettings(singletons::EncounterSettingsEntry),
-    ErrorReportingSettingsPreLogin(singletons::ErrorReportingSettingsPreLoginEntry),
+    ErrorReportingSettings(singletons::ErrorReportingSettingsEntry),
     EventPlannerPopularNotificationSettings(
         singletons::EventPlannerPopularNotificationSettingsEntry,
     ),
@@ -651,6 +651,9 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::EggHatchImprovementsSettings)
                 }
                 "encounterSettings" => serde_json::from_value(value).map(Self::EncounterSettings),
+                "errorReportingSettings" => {
+                    serde_json::from_value(value).map(Self::ErrorReportingSettings)
+                }
                 "eventPlannerPopularNotificationSettings" => {
                     serde_json::from_value(value).map(Self::EventPlannerPopularNotificationSettings)
                 }
@@ -688,6 +691,7 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "irisSocialUxFunnelSettings" => {
                     serde_json::from_value(value).map(Self::IrisSocialUxFunnelSettings)
                 }
+                "itemCurrencyValues" => serde_json::from_value(value).map(Self::ItemCurrencyValues),
                 "itemInventoryUpdateSettings" => {
                     serde_json::from_value(value).map(Self::ItemInventoryUpdateSettings)
                 }
@@ -855,12 +859,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 .and_then(|t| t.as_str())
                 .map(String::from);
             match template_id.as_deref() {
-                Some("ERROR_REPORTING_SETTINGS_PRE_LOGIN") => {
-                    serde_json::from_value(value).map(Self::ErrorReportingSettingsPreLogin)
-                }
-                Some("ITEM_CURRENCY_VALUES") => {
-                    serde_json::from_value(value).map(Self::ItemCurrencyValues)
-                }
                 Some("QUEST_DIALOGUE_INBOX_SETTINGS") => {
                     serde_json::from_value(value).map(Self::QuestDialogueInboxSettings)
                 }

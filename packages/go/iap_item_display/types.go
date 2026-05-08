@@ -20,6 +20,7 @@ type IapItemDisplay struct {
 	SpriteId               *string `json:"spriteId,omitempty"`
 	Title                  *string `json:"title,omitempty"`
 	TotalValue             *uint64 `json:"totalValue,omitempty"`
+	UseEnvironmentPrefix   *bool   `json:"useEnvironmentPrefix,omitempty"`
 	WebstoreSkuId          *string `json:"webstoreSkuId,omitempty"`
 	WebstoreSkuPriceE6     *uint64 `json:"webstoreSkuPriceE6,omitempty"`
 }

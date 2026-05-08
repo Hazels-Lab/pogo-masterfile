@@ -992,7 +992,7 @@ export type PokemonSettingsV0222PokemonCorsolaSpring2026 = S<
 			};
 			evolutionPips: 1;
 			familyId: "FAMILY_CORSOLA";
-			form: 3339;
+			form: "CORSOLA_SPRING_2026";
 			heightStdDev: 0.07625;
 			ibfc: object;
 			isDeployable: true;

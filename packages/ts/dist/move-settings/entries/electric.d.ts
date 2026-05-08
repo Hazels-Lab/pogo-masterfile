@@ -359,7 +359,7 @@ export type MoveSettingsV0497MovePlasmaFists = S<
 			damageWindowStartMs: 2500;
 			durationMs: 3500;
 			energyDelta: -50;
-			movementId: 497;
+			movementId: "PLASMA_FISTS";
 			pokemonType: "POKEMON_TYPE_ELECTRIC";
 			power: 135;
 			staminaLossScalar: 0.01;

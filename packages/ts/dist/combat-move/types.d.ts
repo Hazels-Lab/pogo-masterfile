@@ -24,6 +24,6 @@ export interface CombatMoveData {
 	energyDelta?: number;
 	power?: number;
 	type: TypeEffectiveTemplateID;
-	uniqueId: number | string;
+	uniqueId: string;
 	vfxName: string;
 }

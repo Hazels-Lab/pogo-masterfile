@@ -124,7 +124,7 @@ export type PokemonSettingsV0010PokemonCaterpieGofest2026 = S<
 			};
 			evolutionPips: 1;
 			familyId: "FAMILY_CATERPIE";
-			form: 3346;
+			form: "CATERPIE_GOFEST_2026";
 			heightStdDev: 0.0375;
 			ibfc: object;
 			isDeployable: true;

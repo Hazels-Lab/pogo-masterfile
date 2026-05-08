@@ -8,7 +8,6 @@ export type LocationCardSettingsCitysafari2025Buenosaires = S<
 		"LC_CITYSAFARI2025_BUENOSAIRES",
 		{
 			imageUrl: "lc_CitySafari2025_buenosAires";
-			locationCard: "LC_CITYSAFARI2025_BUENOSAIRES";
 		}
 	>
 >;
@@ -17,7 +16,6 @@ export type LocationCardSettingsCitysafari2025Miami = S<
 		"LC_CITYSAFARI2025_MIAMI",
 		{
 			imageUrl: "lc_CitySafari2025_miami";
-			locationCard: "LC_CITYSAFARI2025_MIAMI";
 		}
 	>
 >;
@@ -26,7 +24,6 @@ export type LocationCardSettingsCitysafari2025Sydney = S<
 		"LC_CITYSAFARI2025_SYDNEY",
 		{
 			imageUrl: "lc_CitySafari2025_sydney";
-			locationCard: "LC_CITYSAFARI2025_SYDNEY";
 		}
 	>
 >;

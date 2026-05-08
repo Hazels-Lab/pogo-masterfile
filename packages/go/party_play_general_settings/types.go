@@ -51,6 +51,7 @@ type PartyPlayGeneralSettings struct {
 	PartyRewardGracePeriodMs           *string                                          `json:"partyRewardGracePeriodMs,omitempty"`
 	PartySchedulingSettings            *PartyPlayGeneralSettingsPartySchedulingSettings `json:"partySchedulingSettings,omitempty"`
 	PgDeliveryMechanic                 *string                                          `json:"pgDeliveryMechanic,omitempty"`
+	QuestUpdateToastEnabled            *bool                                            `json:"questUpdateToastEnabled,omitempty"`
 	RestartPartyRejoinPromptEnabled    *bool                                            `json:"restartPartyRejoinPromptEnabled,omitempty"`
 	SendInviteEnabled                  *bool                                            `json:"sendInviteEnabled,omitempty"`
 }

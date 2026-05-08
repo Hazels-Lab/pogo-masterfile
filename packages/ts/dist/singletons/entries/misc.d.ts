@@ -95,17 +95,106 @@ export interface BreadMoveMappings {
 	};
 }
 
-export interface ErrorReportingSettingsPreLogin {
-	templateId: "ERROR_REPORTING_SETTINGS_PRE_LOGIN";
-	data: {
-		templateId: "ERROR_REPORTING_SETTINGS_PRE_LOGIN";
-	};
-}
-
 export interface ItemCurrencyValues {
 	templateId: "ITEM_CURRENCY_VALUES";
 	data: {
 		templateId: "ITEM_CURRENCY_VALUES";
+		itemCurrencyValues: {
+			itemCoinValues: [
+				{
+					coinValue: 5;
+					item: "ITEM_POKE_BALL";
+				},
+				{
+					coinValue: 25;
+					item: "ITEM_MAX_POTION";
+				},
+				{
+					coinValue: 37.5;
+					item: "ITEM_MAX_REVIVE";
+				},
+				{
+					coinValue: 100;
+					item: "ITEM_POFFIN";
+				},
+				{
+					coinValue: 150;
+					item: "ITEM_INCUBATOR_BASIC";
+				},
+				{
+					coinValue: 200;
+					item: "ITEM_INCUBATOR_SUPER";
+				},
+				{
+					coinValue: 80;
+					item: "ITEM_LUCKY_EGG";
+				},
+				{
+					coinValue: 40;
+					item: "ITEM_INCENSE_ORDINARY";
+				},
+				{
+					coinValue: 100;
+					item: "ITEM_STAR_PIECE";
+				},
+				{
+					coinValue: 100;
+					item: "ITEM_TROY_DISK";
+				},
+				{
+					coinValue: 180;
+					item: "ITEM_TROY_DISK_GLACIAL";
+				},
+				{
+					coinValue: 180;
+					item: "ITEM_TROY_DISK_MAGNETIC";
+				},
+				{
+					coinValue: 180;
+					item: "ITEM_TROY_DISK_MOSSY";
+				},
+				{
+					coinValue: 180;
+					item: "ITEM_TROY_DISK_RAINY";
+				},
+				{
+					coinValue: 400;
+					item: "ITEM_MAX_BOOST";
+				},
+				{
+					coinValue: 200;
+					item: "ITEM_LEADER_MAP";
+				},
+				{
+					coinValue: 100;
+					item: "ITEM_PAID_RAID_TICKET";
+				},
+				{
+					coinValue: 195;
+					item: "ITEM_REMOTE_RAID_TICKET";
+				},
+				{
+					coinValue: 150;
+					item: "ITEM_MP_REPLENISH";
+				},
+				{
+					coinValue: 200;
+					item: "ITEM_ITEM_STORAGE_UPGRADE";
+				},
+				{
+					coinValue: 200;
+					item: "ITEM_POKEMON_STORAGE_UPGRADE";
+				},
+				{
+					coinValue: 100;
+					item: "ITEM_POSTCARD_STORAGE_UPGRADE";
+				},
+				{
+					coinValue: 6;
+					item: "ITEM_WILD_BALL";
+				},
+			];
+		};
 	};
 }
 
@@ -413,6 +502,8 @@ export interface VnextBattleConfig {
 				battleEndTimeoutThresholdMs: "2000";
 				deadNetworkDisconnectThresholdTurns: "120";
 				noOpponentConnectionDisconnectThresholdTurns: "12";
+				preResponseInputBlockDurationMs: "500";
+				submitTurnNumberWithPlayerAction: true;
 			};
 			raidsBattleConfig: {
 				badNetworkWarningThresholdTurns: "12";
@@ -427,7 +518,6 @@ export interface VnextBattleConfig {
 export type SingletonsMiscMasterfileEntry =
 	| BelugaPokemonWhitelist
 	| BreadMoveMappings
-	| ErrorReportingSettingsPreLogin
 	| ItemCurrencyValues
 	| MainMenuChanges
 	| PlayerLevel

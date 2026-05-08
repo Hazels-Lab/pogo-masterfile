@@ -156,7 +156,7 @@ export type FormSettingsV0010PokemonCaterpie = S<
 					form: "CATERPIE_NORMAL";
 				},
 				{
-					form: 3346;
+					form: "CATERPIE_GOFEST_2026";
 					isCostume: true;
 				},
 			];
@@ -600,19 +600,19 @@ export type FormSettingsV0025PokemonPikachu = S<
 					isCostume: true;
 				},
 				{
-					form: 3344;
+					form: "PIKACHU_GOFEST_2026_CAP_RED";
 					isCostume: true;
 				},
 				{
-					form: 3343;
+					form: "PIKACHU_GOFEST_2026_CAP_BLUE";
 					isCostume: true;
 				},
 				{
-					form: 3345;
+					form: "PIKACHU_GOFEST_2026_CAP_YELLOW";
 					isCostume: true;
 				},
 				{
-					form: 3341;
+					form: "PIKACHU_VISOR_2026";
 					isCostume: true;
 				},
 			];
@@ -3502,7 +3502,7 @@ export type FormSettingsV0222PokemonCorsola = S<
 					form: "CORSOLA_GALARIAN";
 				},
 				{
-					form: 3339;
+					form: "CORSOLA_SPRING_2026";
 					isCostume: true;
 				},
 			];

@@ -18,16 +18,9 @@ pub struct Misc {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(untagged)]
-pub enum FormValue {
-    Uint(u64),
-    String(String),
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct Form {
-    pub form: FormValue,
+    pub form: String,
     pub gender: Gender,
     pub pokemon: String,
 }

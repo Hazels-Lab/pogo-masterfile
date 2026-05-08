@@ -239,7 +239,7 @@ export type PokemonExtendedSettingsV0010PokemonCaterpieGofest2026 = S<
 					};
 				},
 			];
-			form: 3346;
+			form: "CATERPIE_GOFEST_2026";
 			sizeSettings: {
 				mLowerBound: 0.225;
 				mUpperBound: 0.375;
@@ -426,7 +426,7 @@ export type PokemonExtendedSettingsV0025PokemonPikachuGofest2026CapBlue = S<
 					modelScaleV2: 0.86;
 				},
 			];
-			form: 3343;
+			form: "PIKACHU_GOFEST_2026_CAP_BLUE";
 			sizeSettings: {
 				mLowerBound: 0.3;
 				mUpperBound: 0.5;
@@ -489,7 +489,7 @@ export type PokemonExtendedSettingsV0025PokemonPikachuGofest2026CapRed = S<
 					modelScaleV2: 0.86;
 				},
 			];
-			form: 3344;
+			form: "PIKACHU_GOFEST_2026_CAP_RED";
 			sizeSettings: {
 				mLowerBound: 0.3;
 				mUpperBound: 0.5;
@@ -552,7 +552,7 @@ export type PokemonExtendedSettingsV0025PokemonPikachuGofest2026CapYellow = S<
 					modelScaleV2: 0.86;
 				},
 			];
-			form: 3345;
+			form: "PIKACHU_GOFEST_2026_CAP_YELLOW";
 			sizeSettings: {
 				mLowerBound: 0.3;
 				mUpperBound: 0.5;

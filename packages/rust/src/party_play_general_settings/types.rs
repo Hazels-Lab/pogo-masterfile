@@ -59,7 +59,7 @@ pub struct PartySchedulingSettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct InviteExpirationMsPlus7 {
+pub struct InviteExpirationMsPlus8 {
     pub enabled: bool,
     pub fallback_party_quest_enabled: bool,
     pub friend_requests_enabled: bool,
@@ -71,6 +71,7 @@ pub struct InviteExpirationMsPlus7 {
     pub notification_milestones: [f64; 4],
     pub party_reward_grace_period_ms: String,
     pub party_scheduling_settings: PartySchedulingSettings,
+    pub quest_update_toast_enabled: bool,
     pub send_invite_enabled: bool,
 }
 
@@ -78,7 +79,7 @@ pub struct InviteExpirationMsPlus7 {
 #[serde(untagged)]
 pub enum PartyPlayGeneralSettings {
     ComplianceZonesEnabledPlus12(ComplianceZonesEnabledPlus12),
-    InviteExpirationMsPlus7(InviteExpirationMsPlus7),
+    InviteExpirationMsPlus8(InviteExpirationMsPlus8),
 }
 
 crate::masterfile_entry!(PartyPlayGeneralSettingsEntry, PartyPlayGeneralSettingsEntryData, party_play_general_settings: PartyPlayGeneralSettings);

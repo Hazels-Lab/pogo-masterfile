@@ -87,6 +87,7 @@ type ArPhotoFeatureFlagsPokemonWithExcludedFormsV8 struct {
 type ArPhotoFeatureFlags struct {
 	ArMenuEntryEnabled        int64                                     `json:"arMenuEntryEnabled"`
 	CaptureSettings           ArPhotoFeatureFlagsCaptureSettings        `json:"captureSettings"`
+	DownloadMessageEnabled    bool                                      `json:"downloadMessageEnabled"`
 	ErrorReportingSettings    ArPhotoFeatureFlagsErrorReportingSettings `json:"errorReportingSettings"`
 	ExcludedPokemonIds        []string                                  `json:"excludedPokemonIds"`
 	Incentives                [2]ArPhotoFeatureFlagsIncentives          `json:"incentives"`
@@ -99,8 +100,11 @@ type ArPhotoFeatureFlags struct {
 	PreLoginDeviceAllowList   [6]string                                 `json:"preLoginDeviceAllowList"`
 	PreLoginMetricsEnabled    int64                                     `json:"preLoginMetricsEnabled"`
 	PreLoginRollOutRatio      float64                                   `json:"preLoginRollOutRatio"`
+	ReorderSummary            bool                                      `json:"reorderSummary"`
 	ShareFunctionalityEnabled uint64                                    `json:"shareFunctionalityEnabled"`
+	ShareMessageEnabled       bool                                      `json:"shareMessageEnabled"`
 	ShowSticker               string                                    `json:"showSticker"`
+	SignInButtonEnabled       bool                                      `json:"signInButtonEnabled"`
 }
 
 type ArTelemetrySettings struct {
@@ -138,9 +142,16 @@ type BackgroundModeSettings struct {
 
 type BattleAnimationSettingsFastAttackSettings struct{}
 
+type BattleAnimationSettingsUiCameraAnimationSettings struct {
+	TransitionInDurationSeconds   float64 `json:"transitionInDurationSeconds"`
+	TransitionInterimDelaySeconds float64 `json:"transitionInterimDelaySeconds"`
+	TransitionOutDurationSeconds  float64 `json:"transitionOutDurationSeconds"`
+}
+
 type BattleAnimationSettingsCombatAnimationConfiguration struct {
-	FastAttackSettings                      BattleAnimationSettingsFastAttackSettings `json:"fastAttackSettings"`
-	ProjectedHealthAnimationDurationSeconds float64                                   `json:"projectedHealthAnimationDurationSeconds"`
+	FastAttackSettings                      BattleAnimationSettingsFastAttackSettings        `json:"fastAttackSettings"`
+	ProjectedHealthAnimationDurationSeconds float64                                          `json:"projectedHealthAnimationDurationSeconds"`
+	UiCameraAnimationSettings               BattleAnimationSettingsUiCameraAnimationSettings `json:"uiCameraAnimationSettings"`
 }
 
 type BattleAnimationSettingsFastAttackSettingsV2 struct {
@@ -180,19 +191,34 @@ type BattleHubOrderSettings struct {
 	SectionGroup []any                            `json:"sectionGroup"`
 }
 
+type BattleInputBufferSettingsInputBlockExceptionList struct {
+	AllowedBufferedActions [1]string `json:"allowedBufferedActions"`
+	CurrentAction          string    `json:"currentAction"`
+}
+
 type BattleInputBufferSettingsBreadInputBufferPriorityList struct {
-	EventPriority         [2]string `json:"eventPriority"`
-	PriorityEventTypeList [3]string `json:"priorityEventTypeList"`
+	BufferBlockingEventTypeList [2]string                                           `json:"bufferBlockingEventTypeList"`
+	EventPriority               [2]string                                           `json:"eventPriority"`
+	InputBlockExceptionList     [1]BattleInputBufferSettingsInputBlockExceptionList `json:"inputBlockExceptionList"`
+	PriorityEventTypeList       [3]string                                           `json:"priorityEventTypeList"`
 }
 
 type BattleInputBufferSettingsCombatInputBufferPriorityList struct {
-	EventPriority         [1]string `json:"eventPriority"`
-	PriorityEventTypeList [2]string `json:"priorityEventTypeList"`
+	BufferBlockingEventTypeList [2]string `json:"bufferBlockingEventTypeList"`
+	EventPriority               [1]string `json:"eventPriority"`
+	PriorityEventTypeList       [2]string `json:"priorityEventTypeList"`
+}
+
+type BattleInputBufferSettingsInputBlockExceptionListV2 struct {
+	AllowedBufferedActions [2]string `json:"allowedBufferedActions"`
+	CurrentAction          string    `json:"currentAction"`
 }
 
 type BattleInputBufferSettingsRaidsInputBufferPriorityList struct {
-	EventPriority         [4]string `json:"eventPriority"`
-	PriorityEventTypeList [5]string `json:"priorityEventTypeList"`
+	BufferBlockingEventTypeList [1]string                                             `json:"bufferBlockingEventTypeList"`
+	EventPriority               [4]string                                             `json:"eventPriority"`
+	InputBlockExceptionList     [1]BattleInputBufferSettingsInputBlockExceptionListV2 `json:"inputBlockExceptionList"`
+	PriorityEventTypeList       [5]string                                             `json:"priorityEventTypeList"`
 }
 
 type BattleInputBufferSettings struct {
@@ -768,6 +794,15 @@ type EncounterSettings struct {
 	SpinBonusThreshold          float64 `json:"spinBonusThreshold"`
 }
 
+type ErrorReportingSettings struct {
+	EventSampleRate              float64 `json:"eventSampleRate"`
+	IsEnabled                    bool    `json:"isEnabled"`
+	MaxEventsPerSlidingWindow    uint64  `json:"maxEventsPerSlidingWindow"`
+	MaxTotalEventsBeforeShutdown string  `json:"maxTotalEventsBeforeShutdown"`
+	PercentChancePlayerSends     float64 `json:"percentChancePlayerSends"`
+	SlidingWindowLengthS         uint64  `json:"slidingWindowLengthS"`
+}
+
 type EventPlannerPopularNotificationSettings struct {
 	BattleLevels                [9]uint64 `json:"battleLevels"`
 	FirstScanOffsetSeconds      string    `json:"firstScanOffsetSeconds"`
@@ -946,6 +981,15 @@ type IrisSocialUxFunnelSettingsEventStepV2 struct {
 type IrisSocialUxFunnelSettings struct {
 	EventStep       []any  `json:"eventStep"`
 	UxFunnelVersion uint64 `json:"uxFunnelVersion"`
+}
+
+type ItemCurrencyValuesItemCoinValues struct {
+	CoinValue float64 `json:"coinValue"`
+	Item      string  `json:"item"`
+}
+
+type ItemCurrencyValues struct {
+	ItemCoinValues [23]ItemCurrencyValuesItemCoinValues `json:"itemCoinValues"`
 }
 
 type ItemInventoryUpdateSettingsCategoryProto struct {
@@ -1967,9 +2011,18 @@ type VnextBattleConfigMaxBattleConfig struct {
 	NoOpponentConnectionDisconnectThresholdTurns string `json:"noOpponentConnectionDisconnectThresholdTurns"`
 }
 
+type VnextBattleConfigPvpBattleConfig struct {
+	BadNetworkWarningThresholdTurns              string `json:"badNetworkWarningThresholdTurns"`
+	BattleEndTimeoutThresholdMs                  string `json:"battleEndTimeoutThresholdMs"`
+	DeadNetworkDisconnectThresholdTurns          string `json:"deadNetworkDisconnectThresholdTurns"`
+	NoOpponentConnectionDisconnectThresholdTurns string `json:"noOpponentConnectionDisconnectThresholdTurns"`
+	PreResponseInputBlockDurationMs              string `json:"preResponseInputBlockDurationMs"`
+	SubmitTurnNumberWithPlayerAction             bool   `json:"submitTurnNumberWithPlayerAction"`
+}
+
 type VnextBattleConfig struct {
 	MaxBattleConfig   VnextBattleConfigMaxBattleConfig `json:"maxBattleConfig"`
-	PvpBattleConfig   VnextBattleConfigMaxBattleConfig `json:"pvpBattleConfig"`
+	PvpBattleConfig   VnextBattleConfigPvpBattleConfig `json:"pvpBattleConfig"`
 	RaidsBattleConfig VnextBattleConfigMaxBattleConfig `json:"raidsBattleConfig"`
 }
 
@@ -2588,15 +2641,16 @@ type EncounterSettingsEntryData struct {
 	EncounterSettings EncounterSettings `json:"encounterSettings"`
 }
 
-type ErrorReportingSettingsPreLoginEntry struct {
-	TemplateID string                                  `json:"templateId"`
-	Data       ErrorReportingSettingsPreLoginEntryData `json:"data"`
+type ErrorReportingSettingsEntry struct {
+	TemplateID string                          `json:"templateId"`
+	Data       ErrorReportingSettingsEntryData `json:"data"`
 }
 
-func (ErrorReportingSettingsPreLoginEntry) MasterfileEntry() {}
+func (ErrorReportingSettingsEntry) MasterfileEntry() {}
 
-type ErrorReportingSettingsPreLoginEntryData struct {
-	TemplateID string `json:"templateId"`
+type ErrorReportingSettingsEntryData struct {
+	TemplateID             string                 `json:"templateId"`
+	ErrorReportingSettings ErrorReportingSettings `json:"errorReportingSettings"`
 }
 
 type EventPlannerPopularNotificationSettingsEntry struct {
@@ -2811,7 +2865,8 @@ type ItemCurrencyValuesEntry struct {
 func (ItemCurrencyValuesEntry) MasterfileEntry() {}
 
 type ItemCurrencyValuesEntryData struct {
-	TemplateID string `json:"templateId"`
+	TemplateID         string             `json:"templateId"`
+	ItemCurrencyValues ItemCurrencyValues `json:"itemCurrencyValues"`
 }
 
 type ItemInventoryUpdateSettingsEntry struct {

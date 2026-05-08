@@ -6,14 +6,15 @@ export interface BadgeSettings<TemplateID extends string = string, TData extends
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;
-		badgeSettings: TData;
+		badgeSettings: TData & {
+			badgeType: TemplateID;
+		};
 	};
 }
 export type BadgeSettingsType = W<BadgeSettings>;
 
 export interface BadgeSettingsData {
 	badgeRank: number;
-	badgeType: number | string;
 	captureReward?: [
 		object,
 		object,

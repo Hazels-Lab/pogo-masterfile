@@ -226,6 +226,7 @@ export interface IapItemDisplayData {
 	spriteId?: string;
 	title?: string;
 	totalValue?: number;
+	useEnvironmentPrefix?: boolean;
 	webstoreSkuId?:
 		| "web-2025-anniversary-ticket-box"
 		| "web-2025-gowa-ticket-box"

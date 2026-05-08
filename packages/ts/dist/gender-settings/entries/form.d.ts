@@ -7,7 +7,7 @@ export type GenderSettingsV0010PokemonCaterpieGofest2026 = S<
 	GenderSettings<
 		"SPAWN_V0010_POKEMON_CATERPIE_GOFEST_2026",
 		{
-			form: 3346;
+			form: "CATERPIE_GOFEST_2026";
 			gender: {
 				femalePercent: 0.5;
 				malePercent: 0.5;
@@ -59,7 +59,7 @@ export type GenderSettingsV0025PokemonPikachuGofest2026CapBlue = S<
 	GenderSettings<
 		"SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2026_CAP_BLUE",
 		{
-			form: 3343;
+			form: "PIKACHU_GOFEST_2026_CAP_BLUE";
 			gender: {
 				femalePercent: 0.5;
 				malePercent: 0.5;
@@ -72,7 +72,7 @@ export type GenderSettingsV0025PokemonPikachuGofest2026CapRed = S<
 	GenderSettings<
 		"SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2026_CAP_RED",
 		{
-			form: 3344;
+			form: "PIKACHU_GOFEST_2026_CAP_RED";
 			gender: {
 				femalePercent: 0.5;
 				malePercent: 0.5;
@@ -85,7 +85,7 @@ export type GenderSettingsV0025PokemonPikachuGofest2026CapYellow = S<
 	GenderSettings<
 		"SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2026_CAP_YELLOW",
 		{
-			form: 3345;
+			form: "PIKACHU_GOFEST_2026_CAP_YELLOW";
 			gender: {
 				femalePercent: 0.5;
 				malePercent: 0.5;

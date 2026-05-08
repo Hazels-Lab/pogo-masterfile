@@ -1,13 +1,6 @@
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(untagged)]
-pub enum MovementIdValue {
-    Uint(u64),
-    String(String),
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct MoveSettings {
     pub accuracy_chance: f64,
@@ -19,7 +12,7 @@ pub struct MoveSettings {
     pub energy_delta: Option<i64>,
     pub heal_scalar: Option<f64>,
     pub is_locked: Option<bool>,
-    pub movement_id: MovementIdValue,
+    pub movement_id: String,
     pub ob_move_settings_number18: Option<[f64; 4]>,
     pub pokemon_type: String,
     pub power: Option<f64>,

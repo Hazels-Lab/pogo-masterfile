@@ -259,7 +259,7 @@ export type CombatMoveV0497MovePlasmaFists = S<
 			energyDelta: -35;
 			power: 60;
 			type: "POKEMON_TYPE_ELECTRIC";
-			uniqueId: 497;
+			uniqueId: "PLASMA_FISTS";
 			vfxName: "plasma_fists";
 		}
 	>

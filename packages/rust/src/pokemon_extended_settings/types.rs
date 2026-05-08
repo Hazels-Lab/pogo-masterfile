@@ -132,7 +132,7 @@ pub struct TempEvoOverrides {
 #[serde(rename_all = "camelCase")]
 pub struct PokemonExtendedSettings {
     pub bread_overrides: Option<Vec<BreadOverrides>>,
-    pub form: Option<BreadModeValue>,
+    pub form: Option<String>,
     pub size_settings: SizeSettingsV2,
     pub temp_evo_overrides: Option<Vec<TempEvoOverrides>>,
     pub unique_id: String,

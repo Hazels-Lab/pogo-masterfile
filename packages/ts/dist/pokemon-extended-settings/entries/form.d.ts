@@ -1163,7 +1163,7 @@ export type PokemonExtendedSettingsV0025PokemonPikachuVisor2026 = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0025_POKEMON_PIKACHU_VISOR_2026",
 		{
-			form: 3341;
+			form: "PIKACHU_VISOR_2026";
 			sizeSettings: {
 				mLowerBound: 0.3;
 				mUpperBound: 0.5;
@@ -5220,7 +5220,7 @@ export type PokemonExtendedSettingsV0222PokemonCorsolaSpring2026 = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0222_POKEMON_CORSOLA_SPRING_2026",
 		{
-			form: 3339;
+			form: "CORSOLA_SPRING_2026";
 			sizeSettings: {
 				mLowerBound: 0.4575;
 				mUpperBound: 0.7625;
