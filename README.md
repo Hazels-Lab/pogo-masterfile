@@ -24,10 +24,6 @@ See each package's README for install lines and a usage example:
 - [packages/rust/README.md](packages/rust/README.md)
 - [packages/go/README.md](packages/go/README.md)
 
-## Where the masterfile comes from
-
-`masterfile.json` at the repo root is the single source of truth for codegen. It comes from the public Niantic GAME_MASTER dump that the community mirrors regularly. The schema itself isn't documented by Niantic — types here are inferred from observation across the full corpus of entries (see `src/infer.ts`).
-
 ## Development
 
 ```bash
