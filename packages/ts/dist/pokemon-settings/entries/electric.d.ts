@@ -1619,7 +1619,7 @@ export type PokemonSettingsV0025PokemonPikachuGofest2026CapBlue = S<
 			};
 			evolutionPips: 1;
 			familyId: "FAMILY_PIKACHU";
-			form: 3343;
+			form: "PIKACHU_GOFEST_2026_CAP_BLUE";
 			heightStdDev: 0.05;
 			ibfc: object;
 			isDeployable: true;
@@ -1688,7 +1688,7 @@ export type PokemonSettingsV0025PokemonPikachuGofest2026CapRed = S<
 			};
 			evolutionPips: 1;
 			familyId: "FAMILY_PIKACHU";
-			form: 3344;
+			form: "PIKACHU_GOFEST_2026_CAP_RED";
 			heightStdDev: 0.05;
 			ibfc: object;
 			isDeployable: true;
@@ -1757,7 +1757,7 @@ export type PokemonSettingsV0025PokemonPikachuGofest2026CapYellow = S<
 			};
 			evolutionPips: 1;
 			familyId: "FAMILY_PIKACHU";
-			form: 3345;
+			form: "PIKACHU_GOFEST_2026_CAP_YELLOW";
 			heightStdDev: 0.05;
 			ibfc: object;
 			isDeployable: true;
@@ -3754,7 +3754,7 @@ export type PokemonSettingsV0025PokemonPikachuVisor2026 = S<
 			evolutionIds: ["RAICHU"];
 			evolutionPips: 1;
 			familyId: "FAMILY_PIKACHU";
-			form: 3341;
+			form: "PIKACHU_VISOR_2026";
 			heightStdDev: 0.05;
 			ibfc: object;
 			isDeployable: true;
@@ -10795,7 +10795,7 @@ export type PokemonSettingsV0807PokemonZeraora = S<
 				cylinderHeightM: 0.75;
 				cylinderRadiusM: 0.7;
 			};
-			cinematicMoves: ["THUNDER_PUNCH", "DISCHARGE", "WILD_CHARGE", 497];
+			cinematicMoves: ["THUNDER_PUNCH", "DISCHARGE", "WILD_CHARGE", "PLASMA_FISTS"];
 			encounter: {
 				attackProbability: 0.1;
 				bonusXlCandyCaptureReward: 3;
@@ -10849,7 +10849,7 @@ export type PokemonSettingsV0807PokemonZeraoraNormal = S<
 				cylinderHeightM: 0.75;
 				cylinderRadiusM: 0.7;
 			};
-			cinematicMoves: ["THUNDER_PUNCH", "DISCHARGE", "WILD_CHARGE", 497];
+			cinematicMoves: ["THUNDER_PUNCH", "DISCHARGE", "WILD_CHARGE", "PLASMA_FISTS"];
 			encounter: {
 				attackProbability: 0.1;
 				bonusXlCandyCaptureReward: 3;

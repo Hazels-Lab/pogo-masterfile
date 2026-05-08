@@ -12,7 +12,7 @@ export interface GenderSettings<TemplateID extends string = string, TData extend
 export type GenderSettingsType = W<GenderSettings>;
 
 export interface GenderSettingsData {
-	form?: number | string;
+	form?: string;
 	gender: {
 		femalePercent?: number;
 		genderlessPercent?: number;

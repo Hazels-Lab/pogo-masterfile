@@ -43,7 +43,7 @@ export interface PokemonSettingsData {
 		shoulderModeScale?: number;
 	};
 	candyToEvolve?: number;
-	cinematicMoves?: Array<number | string>;
+	cinematicMoves?: Array<string>;
 	combatDefaultCameraAngle?: [number, number, number];
 	combatOpponentFocusCameraAngle?: [number, number, number];
 	combatPlayerFocusCameraAngle?: [number, number, number];
@@ -194,7 +194,7 @@ export interface PokemonSettingsData {
 		item: "ITEM_BEANS" | "ITEM_MOVE_REROLL_OTHER_SPECIAL_ATTACK_A";
 	};
 	familyId: string;
-	form?: number | string;
+	form?: string;
 	formChange?: Array<{
 		availableForm: Array<
 			| "FURFROU_DANDY"

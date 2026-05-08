@@ -67,6 +67,7 @@ export interface PartyPlayGeneralSettingsData {
 		};
 	};
 	pgDeliveryMechanic?: "POLLING_BIT";
+	questUpdateToastEnabled?: boolean;
 	restartPartyRejoinPromptEnabled?: boolean;
 	sendInviteEnabled?: boolean;
 }

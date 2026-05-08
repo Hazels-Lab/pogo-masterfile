@@ -126,6 +126,7 @@ pub struct PokemonWithExcludedFormsV9 {
 pub struct ArPhotoFeatureFlags {
     pub ar_menu_entry_enabled: i64,
     pub capture_settings: CaptureSettings,
+    pub download_message_enabled: bool,
     pub error_reporting_settings: ErrorReportingSettings,
     pub excluded_pokemon_ids: Vec<String>,
     pub incentives: [Incentives; 2],
@@ -138,8 +139,11 @@ pub struct ArPhotoFeatureFlags {
     pub pre_login_device_allow_list: [String; 6],
     pub pre_login_metrics_enabled: i64,
     pub pre_login_roll_out_ratio: f64,
+    pub reorder_summary: bool,
     pub share_functionality_enabled: u64,
+    pub share_message_enabled: bool,
     pub show_sticker: String,
+    pub sign_in_button_enabled: bool,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -193,9 +197,18 @@ pub struct FastAttackSettings {}
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct UiCameraAnimationSettings {
+    pub transition_in_duration_seconds: f64,
+    pub transition_interim_delay_seconds: f64,
+    pub transition_out_duration_seconds: f64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct CombatAnimationConfiguration {
     pub fast_attack_settings: FastAttackSettings,
     pub projected_health_animation_duration_seconds: f64,
+    pub ui_camera_animation_settings: UiCameraAnimationSettings,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -253,22 +266,41 @@ pub struct BattleHubOrderSettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct InputBlockExceptionList {
+    pub allowed_buffered_actions: [String; 1],
+    pub current_action: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct BreadInputBufferPriorityList {
+    pub buffer_blocking_event_type_list: [String; 2],
     pub event_priority: [String; 2],
+    pub input_block_exception_list: [InputBlockExceptionList; 1],
     pub priority_event_type_list: [String; 3],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct CombatInputBufferPriorityList {
+    pub buffer_blocking_event_type_list: [String; 2],
     pub event_priority: [String; 1],
     pub priority_event_type_list: [String; 2],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct InputBlockExceptionListV2 {
+    pub allowed_buffered_actions: [String; 2],
+    pub current_action: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct RaidsInputBufferPriorityList {
+    pub buffer_blocking_event_type_list: [String; 1],
     pub event_priority: [String; 4],
+    pub input_block_exception_list: [InputBlockExceptionListV2; 1],
     pub priority_event_type_list: [String; 5],
 }
 
@@ -1182,6 +1214,17 @@ pub struct EncounterSettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct ErrorReportingSettingsV2 {
+    pub event_sample_rate: f64,
+    pub is_enabled: bool,
+    pub max_events_per_sliding_window: u64,
+    pub max_total_events_before_shutdown: String,
+    pub percent_chance_player_sends: f64,
+    pub sliding_window_length_s: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct EventPlannerPopularNotificationSettings {
     pub battle_levels: [u64; 9],
     pub first_scan_offset_seconds: String,
@@ -1459,6 +1502,19 @@ pub struct EventStepV3 {
 pub struct IrisSocialUxFunnelSettings {
     pub event_step: Vec<EventStepV3>,
     pub ux_funnel_version: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct ItemCoinValues {
+    pub coin_value: f64,
+    pub item: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct ItemCurrencyValues {
+    pub item_coin_values: [ItemCoinValues; 23],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2822,9 +2878,20 @@ pub struct MaxBattleConfig {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct PvpBattleConfig {
+    pub bad_network_warning_threshold_turns: String,
+    pub battle_end_timeout_threshold_ms: String,
+    pub dead_network_disconnect_threshold_turns: String,
+    pub no_opponent_connection_disconnect_threshold_turns: String,
+    pub pre_response_input_block_duration_ms: String,
+    pub submit_turn_number_with_player_action: bool,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct VnextBattleConfig {
     pub max_battle_config: MaxBattleConfig,
-    pub pvp_battle_config: MaxBattleConfig,
+    pub pvp_battle_config: PvpBattleConfig,
     pub raids_battle_config: MaxBattleConfig,
 }
 
@@ -2983,10 +3050,7 @@ crate::masterfile_entry!(EggHatchImprovementsSettingsEntry, EggHatchImprovements
 
 crate::masterfile_entry!(EncounterSettingsEntry, EncounterSettingsEntryData, encounter_settings: EncounterSettings);
 
-crate::masterfile_stub_entry!(
-    ErrorReportingSettingsPreLoginEntry,
-    ErrorReportingSettingsPreLoginEntryData
-);
+crate::masterfile_entry!(ErrorReportingSettingsEntry, ErrorReportingSettingsEntryData, error_reporting_settings: ErrorReportingSettings);
 
 crate::masterfile_entry!(EventPlannerPopularNotificationSettingsEntry, EventPlannerPopularNotificationSettingsEntryData, event_planner_popular_notification_settings: EventPlannerPopularNotificationSettings);
 
@@ -3022,7 +3086,7 @@ crate::masterfile_entry!(IrisSocialSettingsEntry, IrisSocialSettingsEntryData, i
 
 crate::masterfile_entry!(IrisSocialUxFunnelSettingsEntry, IrisSocialUxFunnelSettingsEntryData, iris_social_ux_funnel_settings: IrisSocialUxFunnelSettings);
 
-crate::masterfile_stub_entry!(ItemCurrencyValuesEntry, ItemCurrencyValuesEntryData);
+crate::masterfile_entry!(ItemCurrencyValuesEntry, ItemCurrencyValuesEntryData, item_currency_values: ItemCurrencyValues);
 
 crate::masterfile_entry!(ItemInventoryUpdateSettingsEntry, ItemInventoryUpdateSettingsEntryData, item_inventory_update_settings: ItemInventoryUpdateSettings);
 

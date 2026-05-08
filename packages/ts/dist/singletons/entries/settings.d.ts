@@ -91,6 +91,11 @@ export interface BattleAnimationSettings {
 			combatAnimationConfiguration: {
 				fastAttackSettings: object;
 				projectedHealthAnimationDurationSeconds: 0.09;
+				uiCameraAnimationSettings: {
+					transitionInDurationSeconds: 0.06;
+					transitionInterimDelaySeconds: 0.001;
+					transitionOutDurationSeconds: 0.15;
+				};
 			};
 			maxBattleAnimationConfiguration: {
 				fastAttackSettings: {
@@ -156,15 +161,30 @@ export interface BattleInputBufferSettings {
 		templateId: "DEFAULT_BATTLE_INPUT_BUFFER_SETTINGS";
 		battleInputBufferSettings: {
 			breadInputBufferPriorityList: {
+				bufferBlockingEventTypeList: ["CHARGE_ATTACK", "SWAP_POKEMON"];
 				eventPriority: ["DODGE", "SWAP_POKEMON"];
+				inputBlockExceptionList: [
+					{
+						allowedBufferedActions: ["DODGE"];
+						currentAction: "CHARGE_ATTACK";
+					},
+				];
 				priorityEventTypeList: ["DODGE", "SWAP_POKEMON", "CHARGE_ATTACK"];
 			};
 			combatInputBufferPriorityList: {
+				bufferBlockingEventTypeList: ["CHARGE_ATTACK", "SWAP_POKEMON"];
 				eventPriority: ["SWAP_POKEMON"];
 				priorityEventTypeList: ["SWAP_POKEMON", "CHARGE_ATTACK"];
 			};
 			raidsInputBufferPriorityList: {
+				bufferBlockingEventTypeList: ["CHARGE_ATTACK"];
 				eventPriority: ["ACTOR_ABILITY", "ITEM", "DODGE", "SWAP_POKEMON"];
+				inputBlockExceptionList: [
+					{
+						allowedBufferedActions: ["DODGE", "SWAP_POKEMON"];
+						currentAction: "CHARGE_ATTACK";
+					},
+				];
 				priorityEventTypeList: ["ACTOR_ABILITY", "ITEM", "DODGE", "SWAP_POKEMON", "CHARGE_ATTACK"];
 			};
 		};
@@ -2734,6 +2754,21 @@ export interface EncounterSettings {
 			milestoneThreshold: 100;
 			niceThrowThreshold: 1;
 			spinBonusThreshold: 0.5;
+		};
+	};
+}
+
+export interface ErrorReportingSettings {
+	templateId: "ERROR_REPORTING_SETTINGS_PRE_LOGIN";
+	data: {
+		templateId: "ERROR_REPORTING_SETTINGS_PRE_LOGIN";
+		errorReportingSettings: {
+			eventSampleRate: 1;
+			isEnabled: true;
+			maxEventsPerSlidingWindow: 5;
+			maxTotalEventsBeforeShutdown: "1000";
+			percentChancePlayerSends: 1;
+			slidingWindowLengthS: 10;
 		};
 	};
 }
@@ -5910,6 +5945,7 @@ export type SingletonsSettingsMasterfileEntry =
 	| DeepLinkingSettings
 	| EggHatchImprovementsSettings
 	| EncounterSettings
+	| ErrorReportingSettings
 	| EventPlannerPopularNotificationSettings
 	| ExternalAddressableAssetsSettings
 	| FeatureUnlockLevelSettings

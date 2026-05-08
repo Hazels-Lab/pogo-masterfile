@@ -10,6 +10,7 @@ export interface ArPhotoFeatureFlags {
 				contextualCheckIntervalSeconds: 0.5;
 				countdownSeconds: 5;
 			};
+			downloadMessageEnabled: true;
 			errorReportingSettings: {
 				isEnabled: true;
 				maxEventsPerSlidingWindow: 5;
@@ -390,8 +391,11 @@ export interface ArPhotoFeatureFlags {
 			];
 			preLoginMetricsEnabled: -1374928056;
 			preLoginRollOutRatio: 1;
+			reorderSummary: true;
 			shareFunctionalityEnabled: 295065062;
+			shareMessageEnabled: true;
 			showSticker: "SOMETIMES_SHOW";
+			signInButtonEnabled: true;
 		};
 	};
 }

@@ -103,7 +103,7 @@ type PokemonExtendedSettingsTempEvoOverrides struct {
 
 type PokemonExtendedSettings struct {
 	BreadOverrides   []PokemonExtendedSettingsBreadOverrides   `json:"breadOverrides,omitempty"`
-	Form             json.RawMessage                           `json:"form,omitempty"`
+	Form             *string                                   `json:"form,omitempty"`
 	SizeSettings     PokemonExtendedSettingsSizeSettingsV2     `json:"sizeSettings"`
 	TempEvoOverrides []PokemonExtendedSettingsTempEvoOverrides `json:"tempEvoOverrides,omitempty"`
 	UniqueId         string                                    `json:"uniqueId"`

@@ -68,7 +68,7 @@ export interface PokemonExtendedSettingsData {
 			xxsLowerBound: number;
 		};
 	}>;
-	form?: number | string;
+	form?: string;
 	sizeSettings: {
 		disablePokedexRecordDisplayForForms?: boolean;
 		mLowerBound: number;

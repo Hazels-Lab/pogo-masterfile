@@ -761,6 +761,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
+	case "errorReportingSettings":
+		var e singletons.ErrorReportingSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
 	case "eventPlannerPopularNotificationSettings":
 		var e singletons.EventPlannerPopularNotificationSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -859,6 +865,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "irisSocialUxFunnelSettings":
 		var e singletons.IrisSocialUxFunnelSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
+	case "itemCurrencyValues":
+		var e singletons.ItemCurrencyValuesEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -1285,18 +1297,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "":
 		switch probe.TemplateID {
-		case "ERROR_REPORTING_SETTINGS_PRE_LOGIN":
-			var e singletons.ErrorReportingSettingsPreLoginEntry
-			if err := json.Unmarshal(data, &e); err != nil {
-				return nil, err
-			}
-			return e, nil
-		case "ITEM_CURRENCY_VALUES":
-			var e singletons.ItemCurrencyValuesEntry
-			if err := json.Unmarshal(data, &e); err != nil {
-				return nil, err
-			}
-			return e, nil
 		case "QUEST_DIALOGUE_INBOX_SETTINGS":
 			var e singletons.QuestDialogueInboxSettingsEntry
 			if err := json.Unmarshal(data, &e); err != nil {

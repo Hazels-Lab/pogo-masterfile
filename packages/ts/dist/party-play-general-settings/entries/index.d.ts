@@ -67,6 +67,7 @@ export type PartyPlayGeneralSettingsWeeklyChallengeGeneralSettings = S<
 					timezoneId: "UTC";
 				};
 			};
+			questUpdateToastEnabled: true;
 			sendInviteEnabled: true;
 		}
 	>

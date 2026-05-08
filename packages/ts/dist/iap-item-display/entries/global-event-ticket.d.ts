@@ -217,6 +217,7 @@ export type IapItemDisplayGeneral1Ticket5 = S<
 			sortOrder: 2;
 			spriteId: "general1.ticket.5";
 			title: "general1.ticket.5.ENTEI_SHADOW_RAID_DAY";
+			useEnvironmentPrefix: true;
 			webstoreSkuId: "web-shadow-entei-raid-box-ultra";
 			webstoreSkuPriceE6: 4990000;
 		}
@@ -390,6 +391,7 @@ export type IapItemDisplayGeneral2Ticket6 = S<
 			sortOrder: 1;
 			spriteId: "general2.ticket.6";
 			title: "general2.ticket.6.REPLAY_GO_BIGGER";
+			useEnvironmentPrefix: true;
 			webstoreSkuId: "web-gmax-kanto-box-ultra";
 			webstoreSkuPriceE6: 4990000;
 		}
