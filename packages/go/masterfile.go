@@ -23,7 +23,6 @@ import (
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/combat_npc_trainer"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/combat_ranking_proto_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/combat_type"
-	"github.com/Hazels-Lab/pogo-masterfile/packages/go/event_pass_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/event_pass_tier_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/evolution_chain_display_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/evolution_quest_template"
@@ -167,12 +166,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "eventPassTierSettings":
-		var e event_pass_tier_settings.EventPassTierSettingsEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
 	case "stickerMetadata":
 		var e sticker_metadata.StickerMetadataEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -181,6 +174,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "pokemonFamily":
 		var e pokemon_family.PokemonFamilyEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
+	case "eventPassTierSettings":
+		var e event_pass_tier_settings.EventPassTierSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -445,12 +444,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "avatarGroupOrderSettings":
 		var e avatar_group_order_settings.AvatarGroupOrderSettingsEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
-	case "eventPassSettings":
-		var e event_pass_settings.EventPassSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -763,6 +756,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "errorReportingSettings":
 		var e singletons.ErrorReportingSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
+	case "eventPassSettings":
+		var e singletons.EventPassSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}

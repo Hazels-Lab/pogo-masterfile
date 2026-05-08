@@ -281,6 +281,7 @@ const (
 	IapItemDisplayTemplateIDGeneral2Ticket1Giftable                                IapItemDisplayTemplateID = "general2.ticket.1.giftable"
 	IapItemDisplayTemplateIDGeneral2Ticket2                                        IapItemDisplayTemplateID = "general2.ticket.2"
 	IapItemDisplayTemplateIDGeneral2Ticket2Giftable                                IapItemDisplayTemplateID = "general2.ticket.2.giftable"
+	IapItemDisplayTemplateIDGeneral2Ticket3                                        IapItemDisplayTemplateID = "general2.ticket.3"
 	IapItemDisplayTemplateIDGeneral2Ticket4                                        IapItemDisplayTemplateID = "general2.ticket.4"
 	IapItemDisplayTemplateIDGeneral2Ticket4Giftable                                IapItemDisplayTemplateID = "general2.ticket.4.giftable"
 	IapItemDisplayTemplateIDGeneral2Ticket5                                        IapItemDisplayTemplateID = "general2.ticket.5"
@@ -301,6 +302,8 @@ const (
 	IapItemDisplayTemplateIDGoSafariBallIap50                                      IapItemDisplayTemplateID = "GO_SAFARI_BALL_IAP_50"
 	IapItemDisplayTemplateIDGofest2025DeluxeEventPassTrackUnlock                   IapItemDisplayTemplateID = "GOFEST_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK"
 	IapItemDisplayTemplateIDGofest2025DeluxeEventPassTrackUnlockPlusPoints         IapItemDisplayTemplateID = "GOFEST_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
+	IapItemDisplayTemplateIDGofestDeluxeEventPassTrackUnlock                       IapItemDisplayTemplateID = "GOFEST_DELUXE_EVENT_PASS_TRACK_UNLOCK"
+	IapItemDisplayTemplateIDGofestDeluxeEventPassTrackUnlockPlusPoints             IapItemDisplayTemplateID = "GOFEST_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
 	IapItemDisplayTemplateIDGofest2025FinaleDeluxeEventPassTrackUnlock             IapItemDisplayTemplateID = "GOFEST2025_FINALE_DELUXE_EVENT_PASS_TRACK_UNLOCK"
 	IapItemDisplayTemplateIDGofest2025FinaleDeluxeEventPassTrackUnlockPlusPoints   IapItemDisplayTemplateID = "GOFEST2025_FINALE_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
 	IapItemDisplayTemplateIDGotour2025DeluxeEventPassTrackUnlock                   IapItemDisplayTemplateID = "GOTOUR_2025_DELUXE_EVENT_PASS_TRACK_UNLOCK"
@@ -330,6 +333,8 @@ const (
 	IapItemDisplayTemplateIDMaxpotion10                                            IapItemDisplayTemplateID = "maxpotion.10"
 	IapItemDisplayTemplateIDMaxrevive3                                             IapItemDisplayTemplateID = "maxrevive.3"
 	IapItemDisplayTemplateIDMaxrevive6                                             IapItemDisplayTemplateID = "maxrevive.6"
+	IapItemDisplayTemplateIDMay12026DeluxeEventPassTrackUnlock                     IapItemDisplayTemplateID = "MAY1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK"
+	IapItemDisplayTemplateIDMay12026DeluxeEventPassTrackUnlockPlusPoints           IapItemDisplayTemplateID = "MAY1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
 	IapItemDisplayTemplateIDMonth1DeluxeEventPassTrackUnlock                       IapItemDisplayTemplateID = "MONTH1_DELUXE_EVENT_PASS_TRACK_UNLOCK"
 	IapItemDisplayTemplateIDMonth1DeluxeEventPassTrackUnlockPlusPoints             IapItemDisplayTemplateID = "MONTH1_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
 	IapItemDisplayTemplateIDMonth2DeluxeEventPassTrackUnlock                       IapItemDisplayTemplateID = "MONTH2_DELUXE_EVENT_PASS_TRACK_UNLOCK"
@@ -428,8 +433,9 @@ const (
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket9Giftable                      IapItemDisplayTemplateID = "pgorelease.general2.ticket.9.giftable"
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket10                             IapItemDisplayTemplateID = "pgorelease.general2.ticket.10"
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket10Giftable                     IapItemDisplayTemplateID = "pgorelease.general2.ticket.10.giftable"
-	IapItemDisplayTemplateIDPgoreleaseMonth2DeluxeEventPassTrackUnlock             IapItemDisplayTemplateID = "pgorelease.month2_deluxe_event_pass_track_unlock"
-	IapItemDisplayTemplateIDPgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints   IapItemDisplayTemplateID = "pgorelease.month2_deluxe_event_pass_track_unlock_plus_points"
+	IapItemDisplayTemplateIDPgoreleaseGofest2025DeluxeEventPassTrackRedirect       IapItemDisplayTemplateID = "pgorelease.gofest_2025_deluxe_event_pass_track_redirect"
+	IapItemDisplayTemplateIDPgoreleaseMay12026DeluxeEventPassTrackRedirect         IapItemDisplayTemplateID = "pgorelease.may1_2026_deluxe_event_pass_track_redirect"
+	IapItemDisplayTemplateIDPgoreleaseMay12026DeluxeEventPassTrackUnlockRedirect   IapItemDisplayTemplateID = "pgorelease.may1_2026_deluxe_event_pass_track_unlock_redirect"
 	IapItemDisplayTemplateIDPgoreleaseMonth3DeluxeEventPassTrackUnlock             IapItemDisplayTemplateID = "pgorelease.month3_deluxe_event_pass_track_unlock"
 	IapItemDisplayTemplateIDPgoreleaseMonth3DeluxeEventPassTrackUnlockPlusPoints   IapItemDisplayTemplateID = "pgorelease.month3_deluxe_event_pass_track_unlock_plus_points"
 	IapItemDisplayTemplateIDPgoreleasePokecoin2750                                 IapItemDisplayTemplateID = "pgorelease.pokecoin.2750"
@@ -1400,6 +1406,7 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDGeneral2Ticket1Giftable,
 	IapItemDisplayTemplateIDGeneral2Ticket2,
 	IapItemDisplayTemplateIDGeneral2Ticket2Giftable,
+	IapItemDisplayTemplateIDGeneral2Ticket3,
 	IapItemDisplayTemplateIDGeneral2Ticket4,
 	IapItemDisplayTemplateIDGeneral2Ticket4Giftable,
 	IapItemDisplayTemplateIDGeneral2Ticket5,
@@ -1420,6 +1427,8 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDGoSafariBallIap50,
 	IapItemDisplayTemplateIDGofest2025DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDGofest2025DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDGofestDeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDGofestDeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDGofest2025FinaleDeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDGofest2025FinaleDeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDGotour2025DeluxeEventPassTrackUnlock,
@@ -1449,6 +1458,8 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDMaxpotion10,
 	IapItemDisplayTemplateIDMaxrevive3,
 	IapItemDisplayTemplateIDMaxrevive6,
+	IapItemDisplayTemplateIDMay12026DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDMay12026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDMonth1DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDMonth1DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDMonth2DeluxeEventPassTrackUnlock,
@@ -1547,8 +1558,9 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket9Giftable,
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket10,
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket10Giftable,
-	IapItemDisplayTemplateIDPgoreleaseMonth2DeluxeEventPassTrackUnlock,
-	IapItemDisplayTemplateIDPgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDPgoreleaseGofest2025DeluxeEventPassTrackRedirect,
+	IapItemDisplayTemplateIDPgoreleaseMay12026DeluxeEventPassTrackRedirect,
+	IapItemDisplayTemplateIDPgoreleaseMay12026DeluxeEventPassTrackUnlockRedirect,
 	IapItemDisplayTemplateIDPgoreleaseMonth3DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDPgoreleaseMonth3DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDPgoreleasePokecoin2750,

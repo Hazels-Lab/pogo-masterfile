@@ -2773,6 +2773,70 @@ export interface ErrorReportingSettings {
 	};
 }
 
+export interface EventPassSettings {
+	templateId: "EVENT_PASS_MAY2026_SEASON";
+	data: {
+		templateId: "EVENT_PASS_MAY2026_SEASON";
+		eventPassSettings: {
+			additionalBonusTiersLevel: 101;
+			eventPassDisplaySettings: {
+				bonusBoxes: [
+					{
+						iconType: "SPAWN_UNKNOWN";
+						quantity: 5;
+						text: "quest_catch_pokemon_singular";
+					},
+					{
+						iconType: "EGG";
+						quantity: 40;
+						text: "quest_hatch_egg_singular";
+					},
+					{
+						iconType: "RAID";
+						quantity: 100;
+						text: "quest_win_raid_singular";
+					},
+				];
+				eventPassTitleKey: "season_pass_base_track_title_may";
+				eventPassTrackUpgradeDescriptions: [
+					{
+						detailsLinkKey: "season_pass_details_link_may2026";
+						eventDurationKey: "season_pass_may2026_event_duration";
+						eventPassTrackToUpgradeTo: "PREMIUM";
+						passTrackUpgradeHeaderDescription: "season_pass_may2026_track_upgrade_header_description";
+						ranksToHighlightRewards: [94, 99, 100];
+						trackUnlockImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe.png";
+						trackUnlockPlusPointsImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe_plus.png";
+						trackUnlockPlusPointsSkuId: "pgorelease.month3_deluxe_event_pass_track_unlock_plus_points";
+						trackUnlockSkuId: "pgorelease.month3_deluxe_event_pass_track_unlock";
+						upgradeDescriptionKey: "season_pass_may2026_upgrade_description";
+					},
+				];
+				headerIconUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FS22_MemoriesInMotion_Logo.png";
+				premiumRewardsDescription: "season_pass_premium_rewards_desc_monthly_no_disclaimer";
+				sectionDisplayPriority: 11;
+				todayViewSection: "SEASONAL_EVENT_PASS_SECTION";
+			};
+			expirationTime: "2026-06-02T10:00:00";
+			gracePeriodEndTime: "2026-06-04T10:00:00";
+			maxTierLevel: 200;
+			pointsItemId: "ITEM_EVENT_PASS_POINT_MONTHLY_03";
+			prefix: "EVENT_PASS_MAY2026_SEASON";
+			trackConditions: [
+				{
+					track: "FREE";
+					trackTitleKey: "season_pass_base_track_title_may";
+				},
+				{
+					badge: "BADGE_EVENT_0176";
+					track: "PREMIUM";
+					trackTitleKey: "season_pass_premium_track_title_may";
+				},
+			];
+		};
+	};
+}
+
 export interface EventPlannerPopularNotificationSettings {
 	templateId: "EVENT_PLANNER_POPULAR_RAID_RSVP_SETTINGS";
 	data: {
@@ -5946,6 +6010,7 @@ export type SingletonsSettingsMasterfileEntry =
 	| EggHatchImprovementsSettings
 	| EncounterSettings
 	| ErrorReportingSettings
+	| EventPassSettings
 	| EventPlannerPopularNotificationSettings
 	| ExternalAddressableAssetsSettings
 	| FeatureUnlockLevelSettings

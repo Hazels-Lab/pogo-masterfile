@@ -108,13 +108,6 @@ pub struct BonusBoxes {
 #[serde(rename_all = "camelCase")]
 pub struct ActiveBonusDisplaySettings {
     pub bonus_boxes: Vec<BonusBoxes>,
-    pub event_name: Option<String>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct BonusSettings {
-    pub bonus_boxes: Vec<BonusBoxes>,
     pub event_name: String,
 }
 
@@ -129,7 +122,7 @@ pub struct RewardsV4 {
 #[serde(rename_all = "camelCase")]
 pub struct ActiveBonusDisplaySettingsPlus3 {
     pub active_bonus_display_settings: ActiveBonusDisplaySettings,
-    pub bonus_settings: BonusSettings,
+    pub bonus_settings: ActiveBonusDisplaySettings,
     pub min_points_required: u64,
     pub rank: u64,
     pub rewards: [RewardsV4; 1],

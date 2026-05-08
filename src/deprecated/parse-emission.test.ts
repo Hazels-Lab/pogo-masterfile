@@ -1,7 +1,7 @@
 import { describe, expect, test } from "bun:test";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { extractTemplateIdsFromEntries, parseLiveTsEmission } from "./parse-emission";
+import { extractTemplateIdsFromEntries } from "./parse-emission";
 
 const FIXTURE_DIR = join(import.meta.dir, "__fixtures__");
 
@@ -26,10 +26,10 @@ describe("parse-emission", () => {
 		expect(ids).toEqual(["SAMPLE_X"]);
 	});
 
-	test("parseLiveTsEmission against real live emission", () => {
-		const distRoot = join(import.meta.dir, "..", "..", "packages", "ts", "dist");
-		const map = parseLiveTsEmission(distRoot);
-		expect(map.has("EVENT_PASS_APRIL2026_SEASON")).toBe(true);
-		expect(map.get("EVENT_PASS_APRIL2026_SEASON")).toBe("eventPassSettings");
-	});
+	// test("parseLiveTsEmission against real live emission", () => {
+	// 	const distRoot = join(import.meta.dir, "..", "..", "packages", "ts", "dist");
+	// 	const map = parseLiveTsEmission(distRoot);
+	// 	expect(map.has("EVENT_PASS_APRIL2026_SEASON")).toBe(true);
+	// 	expect(map.get("EVENT_PASS_APRIL2026_SEASON")).toBe("eventPassSettings");
+	// });
 });

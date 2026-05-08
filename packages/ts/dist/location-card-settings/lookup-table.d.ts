@@ -70,7 +70,9 @@ import type {
 	LocationCardSettings2025ValenciaCitysafari001,
 	LocationCardSettings2025ValenciaRoadtrip001,
 	LocationCardSettings2025VancouverCitysafari001,
+	LocationCardSettings2026ChicagoGofest001,
 	LocationCardSettings2026CologneCarnival001,
+	LocationCardSettings2026CopenhagenGofest001,
 	LocationCardSettings2026LosangelesGotour001,
 	LocationCardSettings2026Npb001,
 	LocationCardSettings2026Npb002,
@@ -88,6 +90,7 @@ import type {
 	LocationCardSettings2026Ppk001,
 	LocationCardSettings2026RiodejaneiroCarnival001,
 	LocationCardSettings2026TainanGotour001,
+	LocationCardSettings2026TokyoGofest001,
 	LocationCardSettingsCitysafari2025Buenosaires,
 	LocationCardSettingsCitysafari2025Miami,
 	LocationCardSettingsCitysafari2025Sydney,
@@ -172,6 +175,8 @@ import type {
 	LocationCardSettingsSpecialbackground2026GlobalSilver001,
 	LocationCardSettingsSpecialbackground2026GlobalX001,
 	LocationCardSettingsSpecialbackground2026GlobalY001,
+	LocationCardSettingsSpecialbackground2026Mewtwo001,
+	LocationCardSettingsSpecialbackground2026Mewtwo002,
 	LocationCardSettingsSpecialbackground20259thanniversary,
 	LocationCardSettingsSpecialbackgroundCon2025,
 	LocationCardSettingsSpecialbackgroundExtra202501,
@@ -257,7 +262,9 @@ export interface LocationCardSettingsLookup {
 	LC_2025_VALENCIA_CITYSAFARI_001: LocationCardSettings2025ValenciaCitysafari001;
 	LC_2025_VALENCIA_ROADTRIP_001: LocationCardSettings2025ValenciaRoadtrip001;
 	LC_2025_VANCOUVER_CITYSAFARI_001: LocationCardSettings2025VancouverCitysafari001;
+	LC_2026_CHICAGO_GOFEST_001: LocationCardSettings2026ChicagoGofest001;
 	LC_2026_COLOGNE_CARNIVAL_001: LocationCardSettings2026CologneCarnival001;
+	LC_2026_COPENHAGEN_GOFEST_001: LocationCardSettings2026CopenhagenGofest001;
 	LC_2026_LOSANGELES_GOTOUR_001: LocationCardSettings2026LosangelesGotour001;
 	LC_2026_NPB_001: LocationCardSettings2026Npb001;
 	LC_2026_NPB_002: LocationCardSettings2026Npb002;
@@ -275,6 +282,7 @@ export interface LocationCardSettingsLookup {
 	LC_2026_PPK_001: LocationCardSettings2026Ppk001;
 	LC_2026_RIODEJANEIRO_CARNIVAL_001: LocationCardSettings2026RiodejaneiroCarnival001;
 	LC_2026_TAINAN_GOTOUR_001: LocationCardSettings2026TainanGotour001;
+	LC_2026_TOKYO_GOFEST_001: LocationCardSettings2026TokyoGofest001;
 	LC_CITYSAFARI2025_BUENOSAIRES: LocationCardSettingsCitysafari2025Buenosaires;
 	LC_CITYSAFARI2025_MIAMI: LocationCardSettingsCitysafari2025Miami;
 	LC_CITYSAFARI2025_SYDNEY: LocationCardSettingsCitysafari2025Sydney;
@@ -360,6 +368,8 @@ export interface LocationCardSettingsLookup {
 	LC_SPECIALBACKGROUND_2026_GLOBAL_SILVER_001: LocationCardSettingsSpecialbackground2026GlobalSilver001;
 	LC_SPECIALBACKGROUND_2026_GLOBAL_X_001: LocationCardSettingsSpecialbackground2026GlobalX001;
 	LC_SPECIALBACKGROUND_2026_GLOBAL_Y_001: LocationCardSettingsSpecialbackground2026GlobalY001;
+	LC_SPECIALBACKGROUND_2026_MEWTWO_001: LocationCardSettingsSpecialbackground2026Mewtwo001;
+	LC_SPECIALBACKGROUND_2026_MEWTWO_002: LocationCardSettingsSpecialbackground2026Mewtwo002;
 	LC_SPECIALBACKGROUND_CON2025: LocationCardSettingsSpecialbackgroundCon2025;
 	LC_SPECIALBACKGROUND_EXTRA_2025_01: LocationCardSettingsSpecialbackgroundExtra202501;
 	LC_SPECIALBACKGROUND_EXTRA_2025_02: LocationCardSettingsSpecialbackgroundExtra202502;

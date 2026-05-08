@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1116 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1122 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -24,6 +24,8 @@ export interface IapItemDisplayData {
 		| "IAP_CATEGORY_UPGRADES";
 	description?:
 		| "battle_pass_ticket_IAP_description"
+		| "deluxe_event_pass_track_unlock_description"
+		| "deluxe_event_pass_track_unlock_plus_points_description"
 		| "event_pass_plus_points_6_ranks_description"
 		| "first_time_gym_team_intro|2"
 		| "gofest_2025_finale_deluxe_event_pass_track_unlock_description"
@@ -57,6 +59,7 @@ export interface IapItemDisplayData {
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-fashion-raid-day-2026-nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-gmax-kanto-max-battle-day-2026-nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-gmax-pikachu-2026-nologo.jpg"
+		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-lechonk-community-day-2026-nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-legendary-birds-nologo-2026.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Eternatus_Adventure_Effect_v2-1024x576.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_GO_Pass_May_2026_TICKET_v1-1204x576.jpg"
@@ -64,6 +67,7 @@ export interface IapItemDisplayData {
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Into_The_Depths_LiveOp_2026_v3-1024x576-nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Memory_Lane_Meltan_Celebration_SRR_v1-1024x576.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Shiny_Keldeo_KeyArt_v1-1024x576-nologo.jpg"
+		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Spring_Marathon_2026_Event_Pass_v2-1024x576.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Winter_Holiday_2025_EventPass_v2-1024x576-nologo%20(1).jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-paid-shockingly-good-time-2026-nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-paid-sustainability-week-2026-nologo.jpg"
@@ -97,6 +101,8 @@ export interface IapItemDisplayData {
 		| "2025-04-09T10:00:00"
 		| "2025-04-22T20:00:00"
 		| "2025-05-06T20:00:00"
+		| "2025-05-07T10:00:00"
+		| "2025-05-20T20:00:00"
 		| "2025-06-22T23:59:59"
 		| "2025-06-29T23:59:59"
 		| "2025-07-06T20:00:00"
@@ -117,9 +123,11 @@ export interface IapItemDisplayData {
 		| "2026-04-18T17:00:00"
 		| "2026-04-25T17:00:00"
 		| "2026-05-02T17:00:00"
-		| "2026-05-07T10:00:00"
+		| "2026-05-09T17:00:00"
+		| "2026-05-10T23:59:59"
 		| "2026-05-11T22:00:00"
-		| "2026-06-04T10:00:00";
+		| "2026-06-04T10:00:00"
+		| "2026-07-14T23:59:59";
 	skuDisableTimeUtcMs?:
 		| "1595786400000"
 		| "1654174800000"
@@ -137,6 +145,8 @@ export interface IapItemDisplayData {
 		| "1744192800000"
 		| "1745352000000"
 		| "1746561600000"
+		| "1746612000000"
+		| "1747771200000"
 		| "1750636799000"
 		| "1751241599000"
 		| "1751832000000"
@@ -157,9 +167,11 @@ export interface IapItemDisplayData {
 		| "1776531600000"
 		| "1777136400000"
 		| "1777741200000"
-		| "1778148000000"
+		| "1778346000000"
+		| "1778457599000"
 		| "1778536800000"
-		| "1780567200000";
+		| "1780567200000"
+		| "1784073599000";
 	skuEnableTime?:
 		| "2019-03-14T08:00:00"
 		| "2019-10-31T21:00:00"
@@ -190,7 +202,9 @@ export interface IapItemDisplayData {
 		| "2025-04-07T10:00:00"
 		| "2025-04-14T10:00:00"
 		| "2025-04-28T10:00:00"
-		| "2025-06-02T00:00:00";
+		| "2025-05-12T10:00:00"
+		| "2025-06-02T00:00:00"
+		| "2026-07-06T00:00:00";
 	skuEnableTimeUtcMs?:
 		| "1552550400000"
 		| "1572555600000"
@@ -221,7 +235,9 @@ export interface IapItemDisplayData {
 		| "1744020000000"
 		| "1744624800000"
 		| "1745834400000"
-		| "1748822400000";
+		| "1747044000000"
+		| "1748822400000"
+		| "1783296000000";
 	sortOrder?: number;
 	spriteId?: string;
 	title?: string;

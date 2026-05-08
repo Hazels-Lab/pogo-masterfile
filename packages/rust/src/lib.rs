@@ -117,7 +117,6 @@ pub mod combat_npc_personality;
 pub mod combat_npc_trainer;
 pub mod combat_ranking_proto_settings;
 pub mod combat_type;
-pub mod event_pass_settings;
 pub mod event_pass_tier_settings;
 pub mod evolution_chain_display_settings;
 pub mod evolution_quest_template;
@@ -185,9 +184,9 @@ pub enum MasterfileEntry {
     IapItemDisplay(iap_item_display::IapItemDisplayEntry),
     FormSettings(form_settings::FormSettingsEntry),
     BadgeSettings(badge_settings::BadgeSettingsEntry),
-    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     StickerMetadata(sticker_metadata::StickerMetadataEntry),
     PokemonFamily(pokemon_family::PokemonFamilyEntry),
+    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     MoveSettings(move_settings::MoveSettingsEntry),
     MoveSequenceSettings(move_sequence_settings::MoveSequenceSettingsEntry),
     CombatMove(combat_move::CombatMoveEntry),
@@ -238,7 +237,6 @@ pub enum MasterfileEntry {
     QuestSettings(quest_settings::QuestSettingsEntry),
     RollBack(roll_back::RollBackEntry),
     AvatarGroupOrderSettings(avatar_group_order_settings::AvatarGroupOrderSettingsEntry),
-    EventPassSettings(event_pass_settings::EventPassSettingsEntry),
     PartyPlayGeneralSettings(party_play_general_settings::PartyPlayGeneralSettingsEntry),
     PokemonUpgrades(pokemon_upgrades::PokemonUpgradesEntry),
     VsSeekerPokemonRewards(vs_seeker_pokemon_rewards::VsSeekerPokemonRewardsEntry),
@@ -291,6 +289,7 @@ pub enum MasterfileEntry {
     EggHatchImprovementsSettings(singletons::EggHatchImprovementsSettingsEntry),
     EncounterSettings(singletons::EncounterSettingsEntry),
     ErrorReportingSettings(singletons::ErrorReportingSettingsEntry),
+    EventPassSettings(singletons::EventPassSettingsEntry),
     EventPlannerPopularNotificationSettings(
         singletons::EventPlannerPopularNotificationSettingsEntry,
     ),
@@ -424,11 +423,11 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "iapItemDisplay" => serde_json::from_value(value).map(Self::IapItemDisplay),
                 "formSettings" => serde_json::from_value(value).map(Self::FormSettings),
                 "badgeSettings" => serde_json::from_value(value).map(Self::BadgeSettings),
+                "stickerMetadata" => serde_json::from_value(value).map(Self::StickerMetadata),
+                "pokemonFamily" => serde_json::from_value(value).map(Self::PokemonFamily),
                 "eventPassTierSettings" => {
                     serde_json::from_value(value).map(Self::EventPassTierSettings)
                 }
-                "stickerMetadata" => serde_json::from_value(value).map(Self::StickerMetadata),
-                "pokemonFamily" => serde_json::from_value(value).map(Self::PokemonFamily),
                 "moveSettings" => serde_json::from_value(value).map(Self::MoveSettings),
                 "moveSequenceSettings" => {
                     serde_json::from_value(value).map(Self::MoveSequenceSettings)
@@ -525,7 +524,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "avatarGroupOrderSettings" => {
                     serde_json::from_value(value).map(Self::AvatarGroupOrderSettings)
                 }
-                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "partyPlayGeneralSettings" => {
                     serde_json::from_value(value).map(Self::PartyPlayGeneralSettings)
                 }
@@ -654,6 +652,7 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "errorReportingSettings" => {
                     serde_json::from_value(value).map(Self::ErrorReportingSettings)
                 }
+                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "eventPlannerPopularNotificationSettings" => {
                     serde_json::from_value(value).map(Self::EventPlannerPopularNotificationSettings)
                 }

@@ -103,6 +103,8 @@ pub enum SingletonsTemplateId {
     EncounterSettings,
     #[serde(rename = "ERROR_REPORTING_SETTINGS_PRE_LOGIN")]
     ErrorReportingSettingsPreLogin,
+    #[serde(rename = "EVENT_PASS_MAY2026_SEASON")]
+    EventPassMay2026Season,
     #[serde(rename = "EVENT_PLANNER_POPULAR_RAID_RSVP_SETTINGS")]
     EventPlannerPopularRaidRsvpSettings,
     #[serde(rename = "EVENT_PLANNER_SETTINGS")]

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "locationCardSettings", split "specialbackground", 45 entries.
+// Generated from Pokémon GO masterfile — group "locationCardSettings", split "specialbackground", 47 entries.
 
 import type { S } from "../../_utils";
 import type { LocationCardSettings } from "../types";
@@ -275,7 +275,8 @@ export type LocationCardSettingsSpecialbackground2026GlobalGofest001 = S<
 		"LC_SPECIALBACKGROUND_2026_GLOBAL_GOFEST_001",
 		{
 			cardType: "SPECIAL_BACKGROUND";
-			imageUrl: "sb_GoTour2026_mega";
+			imageUrl: "sb_GoFest2026_global";
+			vfxAddress: "bgfx_goFest_2026_global";
 		}
 	>
 >;
@@ -356,6 +357,26 @@ export type LocationCardSettingsSpecialbackground2026GlobalY001 = S<
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoTour2026_y";
 			vfxAddress: "bgfx_Y";
+		}
+	>
+>;
+export type LocationCardSettingsSpecialbackground2026Mewtwo001 = S<
+	LocationCardSettings<
+		"LC_SPECIALBACKGROUND_2026_MEWTWO_001",
+		{
+			cardType: "SPECIAL_BACKGROUND";
+			imageUrl: "sb_GoFest2026_mewtwo";
+			vfxAddress: "bgfx_goFest_2026_mewtwo_002";
+		}
+	>
+>;
+export type LocationCardSettingsSpecialbackground2026Mewtwo002 = S<
+	LocationCardSettings<
+		"LC_SPECIALBACKGROUND_2026_MEWTWO_002",
+		{
+			cardType: "SPECIAL_BACKGROUND";
+			imageUrl: "sb_GoFest2026_mewtwo";
+			vfxAddress: "bgfx_goFest_2026_mewtwo_001";
 		}
 	>
 >;
@@ -480,6 +501,8 @@ export type LocationCardSettingsSpecialbackgroundMasterfileEntry =
 	| LocationCardSettingsSpecialbackground2026GlobalSilver001
 	| LocationCardSettingsSpecialbackground2026GlobalX001
 	| LocationCardSettingsSpecialbackground2026GlobalY001
+	| LocationCardSettingsSpecialbackground2026Mewtwo001
+	| LocationCardSettingsSpecialbackground2026Mewtwo002
 	| LocationCardSettingsSpecialbackgroundCon2025
 	| LocationCardSettingsSpecialbackgroundExtra202501
 	| LocationCardSettingsSpecialbackgroundExtra202502
