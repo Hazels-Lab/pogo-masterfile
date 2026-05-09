@@ -519,9 +519,103 @@ const (
 	BadgeSettingsTemplateIDBadgeGofest2025ParisThursdayParkAfternoon        BadgeSettingsTemplateID = "BADGE_GOFEST_2025_PARIS_THURSDAY_PARK_AFTERNOON"
 	BadgeSettingsTemplateIDBadgeGofest2025ParisThursdayParkMorning          BadgeSettingsTemplateID = "BADGE_GOFEST_2025_PARIS_THURSDAY_PARK_MORNING"
 	BadgeSettingsTemplateIDBadgeGofest2025ParisVip                          BadgeSettingsTemplateID = "BADGE_GOFEST_2025_PARIS_VIP"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoAddonHatch                 BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_ADDON_HATCH"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoAddonRaid                  BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_ADDON_RAID"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoExpert1                    BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_EXPERT_1"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoExpert2                    BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_EXPERT_2"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoExpert3                    BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_EXPERT_3"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoExpert4                    BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_EXPERT_4"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoExpertFull                 BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_EXPERT_FULL"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoFridayCity                 BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_FRIDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoFridayEssential            BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_FRIDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoFridayParkAfternoon        BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_FRIDAY_PARK_AFTERNOON"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoFridayParkMorning          BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_FRIDAY_PARK_MORNING"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoSaturdayCity               BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_SATURDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoSaturdayEssential          BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_SATURDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoSaturdayParkAfternoon      BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_SATURDAY_PARK_AFTERNOON"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoSaturdayParkMorning        BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_SATURDAY_PARK_MORNING"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoSundayCity                 BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_SUNDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoSundayEssential            BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_SUNDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoSundayParkAfternoon        BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_SUNDAY_PARK_AFTERNOON"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoSundayParkMorning          BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_SUNDAY_PARK_MORNING"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoTestAddonHatch             BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_TEST_ADDON_HATCH"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoTestAddonRaid              BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_TEST_ADDON_RAID"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoTestCity                   BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_TEST_CITY"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoTestEssential              BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_TEST_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoTestEverything             BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_TEST_EVERYTHING"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoTestPark                   BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_TEST_PARK"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoThursdayCity               BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_THURSDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoThursdayEssential          BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_THURSDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoVip                        BadgeSettingsTemplateID = "BADGE_GOFEST_2026_CHICAGO_VIP"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenAddonHatch              BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_ADDON_HATCH"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenAddonRaid               BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_ADDON_RAID"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenExpert1                 BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_EXPERT_1"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenExpert2                 BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_EXPERT_2"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenExpert3                 BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_EXPERT_3"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenExpert4                 BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_EXPERT_4"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenExpertFull              BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_EXPERT_FULL"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenFridayCity              BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_FRIDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenFridayEssential         BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_FRIDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenFridayParkAfternoon     BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_FRIDAY_PARK_AFTERNOON"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenFridayParkMorning       BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_FRIDAY_PARK_MORNING"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenSaturdayCity            BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_SATURDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenSaturdayEssential       BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_SATURDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenSaturdayParkAfternoon   BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_SATURDAY_PARK_AFTERNOON"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenSaturdayParkMorning     BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_SATURDAY_PARK_MORNING"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenSundayCity              BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_SUNDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenSundayEssential         BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_SUNDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenSundayParkAfternoon     BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_SUNDAY_PARK_AFTERNOON"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenSundayParkMorning       BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_SUNDAY_PARK_MORNING"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenTestAddonHatch          BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_TEST_ADDON_HATCH"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenTestAddonRaid           BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_TEST_ADDON_RAID"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenTestCity                BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_TEST_CITY"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenTestEssential           BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_TEST_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenTestEverything          BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_TEST_EVERYTHING"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenTestPark                BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_TEST_PARK"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenThursdayCity            BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_THURSDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenThursdayEssential       BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_THURSDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenVip                     BadgeSettingsTemplateID = "BADGE_GOFEST_2026_COPENHAGEN_VIP"
 	BadgeSettingsTemplateIDBadgeGofest2026EventPassDeluxe                   BadgeSettingsTemplateID = "BADGE_GOFEST_2026_EVENT_PASS_DELUXE"
 	BadgeSettingsTemplateIDBadgeGofest2026Global                            BadgeSettingsTemplateID = "BADGE_GOFEST_2026_GLOBAL"
 	BadgeSettingsTemplateIDBadgeGofest2026GlobalTest                        BadgeSettingsTemplateID = "BADGE_GOFEST_2026_GLOBAL_TEST"
+	BadgeSettingsTemplateIDBadgeGofest2026Tokyo1mondayCity                  BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_1MONDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGofest2026Tokyo1mondayEssential             BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_1MONDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGofest2026Tokyo2mondayCity                  BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_2MONDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGofest2026Tokyo2mondayEssential             BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_2MONDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGofest2026Tokyo2mondayParkAfternoon         BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_2MONDAY_PARK_AFTERNOON"
+	BadgeSettingsTemplateIDBadgeGofest2026Tokyo2mondayParkMorning           BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_2MONDAY_PARK_MORNING"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoAddonHatch                   BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_ADDON_HATCH"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoAddonRaid                    BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_ADDON_RAID"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoExpert1                      BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_EXPERT_1"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoExpert2                      BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_EXPERT_2"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoExpert3                      BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_EXPERT_3"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoExpert4                      BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_EXPERT_4"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoExpertFull                   BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_EXPERT_FULL"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoFridayCity                   BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_FRIDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoFridayEssential              BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_FRIDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoFridayParkAfternoon          BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_FRIDAY_PARK_AFTERNOON"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoFridayParkMorning            BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_FRIDAY_PARK_MORNING"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoSaturdayCity                 BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_SATURDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoSaturdayEssential            BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_SATURDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoSaturdayParkAfternoon        BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_SATURDAY_PARK_AFTERNOON"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoSaturdayParkMorning          BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_SATURDAY_PARK_MORNING"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoSundayCity                   BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_SUNDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoSundayEssential              BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_SUNDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoSundayParkAfternoon          BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_SUNDAY_PARK_AFTERNOON"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoSundayParkMorning            BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_SUNDAY_PARK_MORNING"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoTestAddonHatch               BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_TEST_ADDON_HATCH"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoTestAddonRaid                BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_TEST_ADDON_RAID"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoTestCity                     BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_TEST_CITY"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoTestEssential                BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_TEST_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoTestEverything               BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_TEST_EVERYTHING"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoTestPark                     BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_TEST_PARK"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoThursdayCity                 BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_THURSDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoThursdayEssential            BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_THURSDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoTuesdayCity                  BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_TUESDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoTuesdayEssential             BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_TUESDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoVip                          BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_VIP"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoWednesdayCity                BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_WEDNESDAY_CITY"
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoWednesdayEssential           BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_WEDNESDAY_ESSENTIAL"
 	BadgeSettingsTemplateIDBadgeGotour2021GreenGlobal                       BadgeSettingsTemplateID = "BADGE_GOTOUR_2021_GREEN_GLOBAL"
 	BadgeSettingsTemplateIDBadgeGotour2021GreenTest                         BadgeSettingsTemplateID = "BADGE_GOTOUR_2021_GREEN_TEST"
 	BadgeSettingsTemplateIDBadgeGotour2021RedGlobal                         BadgeSettingsTemplateID = "BADGE_GOTOUR_2021_RED_GLOBAL"
@@ -1393,9 +1487,103 @@ var BadgeSettingsTemplateIDValues = [...]BadgeSettingsTemplateID{
 	BadgeSettingsTemplateIDBadgeGofest2025ParisThursdayParkAfternoon,
 	BadgeSettingsTemplateIDBadgeGofest2025ParisThursdayParkMorning,
 	BadgeSettingsTemplateIDBadgeGofest2025ParisVip,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoAddonHatch,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoAddonRaid,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoExpert1,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoExpert2,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoExpert3,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoExpert4,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoExpertFull,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoFridayCity,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoFridayEssential,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoFridayParkAfternoon,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoFridayParkMorning,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoSaturdayCity,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoSaturdayEssential,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoSaturdayParkAfternoon,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoSaturdayParkMorning,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoSundayCity,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoSundayEssential,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoSundayParkAfternoon,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoSundayParkMorning,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoTestAddonHatch,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoTestAddonRaid,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoTestCity,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoTestEssential,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoTestEverything,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoTestPark,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoThursdayCity,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoThursdayEssential,
+	BadgeSettingsTemplateIDBadgeGofest2026ChicagoVip,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenAddonHatch,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenAddonRaid,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenExpert1,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenExpert2,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenExpert3,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenExpert4,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenExpertFull,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenFridayCity,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenFridayEssential,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenFridayParkAfternoon,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenFridayParkMorning,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenSaturdayCity,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenSaturdayEssential,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenSaturdayParkAfternoon,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenSaturdayParkMorning,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenSundayCity,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenSundayEssential,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenSundayParkAfternoon,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenSundayParkMorning,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenTestAddonHatch,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenTestAddonRaid,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenTestCity,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenTestEssential,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenTestEverything,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenTestPark,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenThursdayCity,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenThursdayEssential,
+	BadgeSettingsTemplateIDBadgeGofest2026CopenhagenVip,
 	BadgeSettingsTemplateIDBadgeGofest2026EventPassDeluxe,
 	BadgeSettingsTemplateIDBadgeGofest2026Global,
 	BadgeSettingsTemplateIDBadgeGofest2026GlobalTest,
+	BadgeSettingsTemplateIDBadgeGofest2026Tokyo1mondayCity,
+	BadgeSettingsTemplateIDBadgeGofest2026Tokyo1mondayEssential,
+	BadgeSettingsTemplateIDBadgeGofest2026Tokyo2mondayCity,
+	BadgeSettingsTemplateIDBadgeGofest2026Tokyo2mondayEssential,
+	BadgeSettingsTemplateIDBadgeGofest2026Tokyo2mondayParkAfternoon,
+	BadgeSettingsTemplateIDBadgeGofest2026Tokyo2mondayParkMorning,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoAddonHatch,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoAddonRaid,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoExpert1,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoExpert2,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoExpert3,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoExpert4,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoExpertFull,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoFridayCity,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoFridayEssential,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoFridayParkAfternoon,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoFridayParkMorning,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoSaturdayCity,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoSaturdayEssential,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoSaturdayParkAfternoon,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoSaturdayParkMorning,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoSundayCity,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoSundayEssential,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoSundayParkAfternoon,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoSundayParkMorning,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoTestAddonHatch,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoTestAddonRaid,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoTestCity,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoTestEssential,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoTestEverything,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoTestPark,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoThursdayCity,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoThursdayEssential,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoTuesdayCity,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoTuesdayEssential,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoVip,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoWednesdayCity,
+	BadgeSettingsTemplateIDBadgeGofest2026TokyoWednesdayEssential,
 	BadgeSettingsTemplateIDBadgeGotour2021GreenGlobal,
 	BadgeSettingsTemplateIDBadgeGotour2021GreenTest,
 	BadgeSettingsTemplateIDBadgeGotour2021RedGlobal,

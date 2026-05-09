@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "badgeSettings", split "event-badge", 722 entries.
+// Generated from Pokémon GO masterfile — group "badgeSettings", split "event-badge", 800 entries.
 
 import type { S } from "../../_utils";
 import type { BadgeSettings } from "../types";
@@ -4313,6 +4313,486 @@ export type BadgeSettingsGofest2025ParisVip = S<
 		}
 	>
 >;
+export type BadgeSettingsGofest2026ChicagoAddonHatch = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_ADDON_HATCH",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoAddonRaid = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_ADDON_RAID",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoExpert1 = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_EXPERT_1",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoExpert2 = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_EXPERT_2",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoExpert3 = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_EXPERT_3",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoExpert4 = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_EXPERT_4",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoExpertFull = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_EXPERT_FULL",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoFridayCity = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_FRIDAY_CITY",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoFridayParkAfternoon = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_FRIDAY_PARK_AFTERNOON",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoFridayParkMorning = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_FRIDAY_PARK_MORNING",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoSaturdayCity = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_SATURDAY_CITY",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoSaturdayParkAfternoon = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_SATURDAY_PARK_AFTERNOON",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoSaturdayParkMorning = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_SATURDAY_PARK_MORNING",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoSundayCity = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_SUNDAY_CITY",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoSundayParkAfternoon = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_SUNDAY_PARK_AFTERNOON",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoSundayParkMorning = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_SUNDAY_PARK_MORNING",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoTestAddonHatch = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_TEST_ADDON_HATCH",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoTestAddonRaid = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_TEST_ADDON_RAID",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoTestCity = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_TEST_CITY",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoTestEssential = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_TEST_ESSENTIAL",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoTestEverything = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_TEST_EVERYTHING",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoTestPark = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_TEST_PARK",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoThursdayCity = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_THURSDAY_CITY",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoVip = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_VIP",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenAddonHatch = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_ADDON_HATCH",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenAddonRaid = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_ADDON_RAID",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenExpert1 = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_EXPERT_1",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenExpert2 = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_EXPERT_2",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenExpert3 = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_EXPERT_3",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenExpert4 = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_EXPERT_4",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenExpertFull = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_EXPERT_FULL",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenFridayCity = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_FRIDAY_CITY",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenFridayParkAfternoon = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_FRIDAY_PARK_AFTERNOON",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenFridayParkMorning = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_FRIDAY_PARK_MORNING",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenSaturdayCity = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_SATURDAY_CITY",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenSaturdayParkAfternoon = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_SATURDAY_PARK_AFTERNOON",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenSaturdayParkMorning = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_SATURDAY_PARK_MORNING",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenSundayCity = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_SUNDAY_CITY",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenSundayParkAfternoon = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_SUNDAY_PARK_AFTERNOON",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenSundayParkMorning = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_SUNDAY_PARK_MORNING",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenTestAddonHatch = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_TEST_ADDON_HATCH",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenTestAddonRaid = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_TEST_ADDON_RAID",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenTestCity = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_TEST_CITY",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenTestEssential = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_TEST_ESSENTIAL",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenTestEverything = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_TEST_EVERYTHING",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenTestPark = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_TEST_PARK",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenThursdayCity = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_THURSDAY_CITY",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenVip = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_VIP",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
 export type BadgeSettingsGofest2026Global = S<
 	BadgeSettings<
 		"BADGE_GOFEST_2026_GLOBAL",
@@ -4326,6 +4806,306 @@ export type BadgeSettingsGofest2026Global = S<
 export type BadgeSettingsGofest2026GlobalTest = S<
 	BadgeSettings<
 		"BADGE_GOFEST_2026_GLOBAL_TEST",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026Tokyo1mondayCity = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_1MONDAY_CITY",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026Tokyo2mondayCity = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_2MONDAY_CITY",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026Tokyo2mondayParkAfternoon = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_2MONDAY_PARK_AFTERNOON",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026Tokyo2mondayParkMorning = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_2MONDAY_PARK_MORNING",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoAddonHatch = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_ADDON_HATCH",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoAddonRaid = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_ADDON_RAID",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoExpert1 = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_EXPERT_1",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoExpert2 = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_EXPERT_2",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoExpert3 = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_EXPERT_3",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoExpert4 = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_EXPERT_4",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoExpertFull = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_EXPERT_FULL",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoFridayCity = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_FRIDAY_CITY",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoFridayParkAfternoon = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_FRIDAY_PARK_AFTERNOON",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoFridayParkMorning = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_FRIDAY_PARK_MORNING",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoSaturdayCity = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_SATURDAY_CITY",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoSaturdayParkAfternoon = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_SATURDAY_PARK_AFTERNOON",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoSaturdayParkMorning = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_SATURDAY_PARK_MORNING",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoSundayCity = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_SUNDAY_CITY",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoSundayParkAfternoon = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_SUNDAY_PARK_AFTERNOON",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoSundayParkMorning = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_SUNDAY_PARK_MORNING",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoTestAddonHatch = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_TEST_ADDON_HATCH",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoTestAddonRaid = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_TEST_ADDON_RAID",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoTestCity = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_TEST_CITY",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoTestEssential = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_TEST_ESSENTIAL",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoTestEverything = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_TEST_EVERYTHING",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoTestPark = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_TEST_PARK",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoThursdayCity = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_THURSDAY_CITY",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoTuesdayCity = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_TUESDAY_CITY",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoVip = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_VIP",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoWednesdayCity = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_WEDNESDAY_CITY",
 		{
 			badgeRank: 2;
 			eventBadge: true;
@@ -7656,8 +8436,86 @@ export type BadgeSettingsEventBadgeMasterfileEntry =
 	| BadgeSettingsGofest2025ParisThursdayParkAfternoon
 	| BadgeSettingsGofest2025ParisThursdayParkMorning
 	| BadgeSettingsGofest2025ParisVip
+	| BadgeSettingsGofest2026ChicagoAddonHatch
+	| BadgeSettingsGofest2026ChicagoAddonRaid
+	| BadgeSettingsGofest2026ChicagoExpert1
+	| BadgeSettingsGofest2026ChicagoExpert2
+	| BadgeSettingsGofest2026ChicagoExpert3
+	| BadgeSettingsGofest2026ChicagoExpert4
+	| BadgeSettingsGofest2026ChicagoExpertFull
+	| BadgeSettingsGofest2026ChicagoFridayCity
+	| BadgeSettingsGofest2026ChicagoFridayParkAfternoon
+	| BadgeSettingsGofest2026ChicagoFridayParkMorning
+	| BadgeSettingsGofest2026ChicagoSaturdayCity
+	| BadgeSettingsGofest2026ChicagoSaturdayParkAfternoon
+	| BadgeSettingsGofest2026ChicagoSaturdayParkMorning
+	| BadgeSettingsGofest2026ChicagoSundayCity
+	| BadgeSettingsGofest2026ChicagoSundayParkAfternoon
+	| BadgeSettingsGofest2026ChicagoSundayParkMorning
+	| BadgeSettingsGofest2026ChicagoTestAddonHatch
+	| BadgeSettingsGofest2026ChicagoTestAddonRaid
+	| BadgeSettingsGofest2026ChicagoTestCity
+	| BadgeSettingsGofest2026ChicagoTestEssential
+	| BadgeSettingsGofest2026ChicagoTestEverything
+	| BadgeSettingsGofest2026ChicagoTestPark
+	| BadgeSettingsGofest2026ChicagoThursdayCity
+	| BadgeSettingsGofest2026ChicagoVip
+	| BadgeSettingsGofest2026CopenhagenAddonHatch
+	| BadgeSettingsGofest2026CopenhagenAddonRaid
+	| BadgeSettingsGofest2026CopenhagenExpert1
+	| BadgeSettingsGofest2026CopenhagenExpert2
+	| BadgeSettingsGofest2026CopenhagenExpert3
+	| BadgeSettingsGofest2026CopenhagenExpert4
+	| BadgeSettingsGofest2026CopenhagenExpertFull
+	| BadgeSettingsGofest2026CopenhagenFridayCity
+	| BadgeSettingsGofest2026CopenhagenFridayParkAfternoon
+	| BadgeSettingsGofest2026CopenhagenFridayParkMorning
+	| BadgeSettingsGofest2026CopenhagenSaturdayCity
+	| BadgeSettingsGofest2026CopenhagenSaturdayParkAfternoon
+	| BadgeSettingsGofest2026CopenhagenSaturdayParkMorning
+	| BadgeSettingsGofest2026CopenhagenSundayCity
+	| BadgeSettingsGofest2026CopenhagenSundayParkAfternoon
+	| BadgeSettingsGofest2026CopenhagenSundayParkMorning
+	| BadgeSettingsGofest2026CopenhagenTestAddonHatch
+	| BadgeSettingsGofest2026CopenhagenTestAddonRaid
+	| BadgeSettingsGofest2026CopenhagenTestCity
+	| BadgeSettingsGofest2026CopenhagenTestEssential
+	| BadgeSettingsGofest2026CopenhagenTestEverything
+	| BadgeSettingsGofest2026CopenhagenTestPark
+	| BadgeSettingsGofest2026CopenhagenThursdayCity
+	| BadgeSettingsGofest2026CopenhagenVip
 	| BadgeSettingsGofest2026Global
 	| BadgeSettingsGofest2026GlobalTest
+	| BadgeSettingsGofest2026Tokyo1mondayCity
+	| BadgeSettingsGofest2026Tokyo2mondayCity
+	| BadgeSettingsGofest2026Tokyo2mondayParkAfternoon
+	| BadgeSettingsGofest2026Tokyo2mondayParkMorning
+	| BadgeSettingsGofest2026TokyoAddonHatch
+	| BadgeSettingsGofest2026TokyoAddonRaid
+	| BadgeSettingsGofest2026TokyoExpert1
+	| BadgeSettingsGofest2026TokyoExpert2
+	| BadgeSettingsGofest2026TokyoExpert3
+	| BadgeSettingsGofest2026TokyoExpert4
+	| BadgeSettingsGofest2026TokyoExpertFull
+	| BadgeSettingsGofest2026TokyoFridayCity
+	| BadgeSettingsGofest2026TokyoFridayParkAfternoon
+	| BadgeSettingsGofest2026TokyoFridayParkMorning
+	| BadgeSettingsGofest2026TokyoSaturdayCity
+	| BadgeSettingsGofest2026TokyoSaturdayParkAfternoon
+	| BadgeSettingsGofest2026TokyoSaturdayParkMorning
+	| BadgeSettingsGofest2026TokyoSundayCity
+	| BadgeSettingsGofest2026TokyoSundayParkAfternoon
+	| BadgeSettingsGofest2026TokyoSundayParkMorning
+	| BadgeSettingsGofest2026TokyoTestAddonHatch
+	| BadgeSettingsGofest2026TokyoTestAddonRaid
+	| BadgeSettingsGofest2026TokyoTestCity
+	| BadgeSettingsGofest2026TokyoTestEssential
+	| BadgeSettingsGofest2026TokyoTestEverything
+	| BadgeSettingsGofest2026TokyoTestPark
+	| BadgeSettingsGofest2026TokyoThursdayCity
+	| BadgeSettingsGofest2026TokyoTuesdayCity
+	| BadgeSettingsGofest2026TokyoVip
+	| BadgeSettingsGofest2026TokyoWednesdayCity
 	| BadgeSettingsGotour2021GreenGlobal
 	| BadgeSettingsGotour2021GreenTest
 	| BadgeSettingsGotour2021RedGlobal
