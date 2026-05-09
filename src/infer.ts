@@ -164,6 +164,50 @@ export function widenType(type: InferredType): InferredType {
 	}
 }
 
+// Stricter widening for the `--ts-loose-only` emit mode. Drops EVERY string,
+// number, and boolean literal regardless of count, but otherwise preserves
+// structural types (objects, arrays, unions) so the schema's shape is intact.
+//
+// Tuples are explicitly preserved as tuples — items are widened recursively,
+// but the fixed-length structure stays. This is the rule the consumer of the
+// loose-types package relies on: scalar fields lose their narrow values, but
+// `[float, float, float]` triples (positions, offsets, etc.) keep their arity.
+//
+// `templateIdReference` / `templateIdSlice` are unchanged: they're generic
+// references / template-literal slices, not data literals — they belong to
+// the discriminated-union machinery, not to per-entry payload narrowing.
+//
+// TODO(user): implement this. The shape mirrors widenType above — same
+// switch on `type.kind`, same recursion pattern. The differences are:
+//   - `string` always returns `{ kind: "string", literals: [] }` (no cap check)
+//   - `templateIdReference` / `templateIdSlice` return `type` unchanged
+//   - everything else recurses and reconstructs the same kind
+//
+// See `src/infer.ts` `InferredType` and `widenType` for the kinds & pattern.
+export function looseInferred(type: InferredType): InferredType {
+	switch (type.kind) {
+		case "string":
+			return { ...type, literals: [] };
+		case "object":
+			return {
+				...type,
+				properties: type.properties.map((p) => ({
+					name: p.name,
+					optional: p.optional,
+					type: looseInferred(p.type),
+				})),
+			};
+		case "union":
+			return { ...type, variants: type.variants.map(looseInferred) };
+		case "tuple":
+			return { ...type, items: type.items.map(looseInferred) };
+		case "array":
+			return { ...type, element: looseInferred(type.element) };
+		default:
+			return widenType(type);
+	}
+}
+
 export function inferJsonTypes(values: readonly unknown[]): InferredType {
 	if (values.length === 0) return { kind: "union", variants: [] };
 

@@ -7,7 +7,14 @@
 		"packages/*"
 	],
 	"scripts": {
-		"generate": "bun run src/generate.ts && bun run src/update-deprecated.ts && bun run format",
+		"generate": "bun run src/generate.ts",
+		"generate:go": "bun run generate -- --go-only",
+		"generate:rust": "bun run generate -- --rust-only",
+		"generate:ts": "bun run generate -- --ts-only",
+		"generate:ts-loose": "bun run generate -- --ts-loose",
+		"postgenerate": "bun run deprecated",
+		"deprecated": "bun run src/update-deprecated.ts",
+		"postdeprecated": "bun run format",
 		"test": "bun test",
 		"typecheck": "tsc --noEmit",
 		"lint": "biome check",
