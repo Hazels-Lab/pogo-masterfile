@@ -2,13 +2,22 @@ import ts from "typescript";
 import type { Entry, Group } from "../group.ts";
 import { compareNatural, compareNaturalBy, compareNaturalKeys, isJsonObject } from "../helpers.ts";
 import type { InferredType } from "../infer.ts";
-import { inferJsonType, inferJsonTypes, widenType } from "../infer.ts";
+import { inferJsonType, inferJsonTypes, looseInferred, widenType } from "../infer.ts";
 import type { InvariantTree } from "../invariants.ts";
 import { detectInvariants, invariantsToInferredType, stripInvariantsFromValue, stripInvariantsFromWidened } from "../invariants.ts";
 import { aliasSuffix, deriveGroupAliases, groupName, kebabCase, pascalCase } from "../naming.ts";
 import type { PromotionContext, PromotionRegistry } from "../promoted-unions.ts";
 import { AstFileBuilder, inferredToType, N, T } from "./builder.ts";
 import { BARREL_TYPE, ENTRIES_LOWER, ENTRY, ENTRY_LOWER, SIMPLIFY, SINGLETONS, TEMPLATE_GENERIC, TYPE, TYPES, TYPES_LOWER, WIDEN } from "./constants.ts";
+
+// `loose=true` switches the emitter into "less literal" mode: per-entry payload
+// types pass through `looseInferred` before becoming a TypeNode, so string /
+// number / boolean literals widen to their base types. The discriminating
+// `templateId: "FOO_BAR"` literal is unaffected — it comes from `T.literal()`
+// directly in `variantAliasDeclaration`, not through inferred-type conversion.
+function maybeLoosen(type: InferredType, loose: boolean): InferredType {
+	return loose ? looseInferred(type) : type;
+}
 
 // Build `${gName}${suffix}` variant alias declarations for a list of entries (sorted by templateId).
 // Returns the AST statements and the type names emitted, for use in barrel unions.
@@ -18,6 +27,7 @@ function entryVariantStatements(
 	group: Group,
 	aliases: Map<string, string>,
 	invariants: InvariantTree,
+	loose: boolean,
 ): { statements: ts.Statement[]; typeNames: string[] } {
 	const sortedEntries = [...entries].sort(compareNaturalBy((e) => e.templateId));
 	const statements: ts.Statement[] = [];
@@ -26,19 +36,26 @@ function entryVariantStatements(
 		const variantSuffix = aliases.get(entry.templateId)!;
 		const typeName = `${gName}${variantSuffix}`;
 		typeNames.push(typeName);
-		statements.push(variantAliasDeclaration(typeName, gName, entry, group, invariants));
+		statements.push(variantAliasDeclaration(typeName, gName, entry, group, invariants, loose));
 	}
 	return { statements, typeNames };
 }
 
 // `export type Name = S<G<"id">>` for empty payloads, `S<G<"id", { ...payload }>>` otherwise.
-function variantAliasDeclaration(typeName: string, gName: string, entry: Entry, group: Group, invariants: InvariantTree): ts.TypeAliasDeclaration {
+function variantAliasDeclaration(
+	typeName: string,
+	gName: string,
+	entry: Entry,
+	group: Group,
+	invariants: InvariantTree,
+	loose: boolean,
+): ts.TypeAliasDeclaration {
 	const payload = entry.data[group.discriminator];
 	const stripped = stripInvariantsFromValue(payload, invariants);
 	const isEmpty = !isJsonObject(stripped) || Object.keys(stripped).length === 0;
 
 	const groupArgs: ts.TypeNode[] = [T.literal(entry.templateId)];
-	if (!isEmpty) groupArgs.push(inferredToType(inferJsonType(stripped)));
+	if (!isEmpty) groupArgs.push(inferredToType(maybeLoosen(inferJsonType(stripped), loose)));
 
 	return ts.factory.createTypeAliasDeclaration(
 		[ts.factory.createModifier(ts.SyntaxKind.ExportKeyword)],
@@ -61,7 +78,7 @@ function nameSingletons(singletons: Group[]): Array<{ group: Group; entry: Entry
 	});
 }
 
-export function emitSingletonsFile(bucketName: string, singletons: Group[]): string {
+export function emitSingletonsFile(bucketName: string, singletons: Group[], loose = false): string {
 	const named = nameSingletons(singletons);
 	named.sort(compareNaturalBy((n) => n.name));
 
@@ -70,7 +87,7 @@ export function emitSingletonsFile(bucketName: string, singletons: Group[]): str
 	for (const { group, entry, name, isStub } of named) {
 		const dataMembers: { name: string; type: ts.TypeNode; optional?: boolean }[] = [{ name: "templateId", type: T.literal(entry.templateId) }];
 		if (!isStub) {
-			const payloadType = inferJsonType(entry.data[group.discriminator]);
+			const payloadType = maybeLoosen(inferJsonType(entry.data[group.discriminator]), loose);
 			dataMembers.push({ name: group.discriminator, type: inferredToType(payloadType) });
 		}
 		file.exportInterface(name, [N.propSignature("templateId", T.literal(entry.templateId)), N.propSignature("data", T.objectLiteral(dataMembers))]);
@@ -124,6 +141,53 @@ export function emitSingletonsTypeFile(singletons: Group[]): string {
 	return file.render();
 }
 
+// Loose-mode singletons emit: collapses the literal-mode entries/* + types.d.ts
+// split into ONE file. Each singleton still gets its own interface (singletons
+// don't share a discriminator, so per-discriminator IS per-singleton), but
+// payload types are loose-widened via `looseInferred`. Adds:
+//   - SingletonsTemplateID = literal union of every singleton's templateId
+//   - Singletons / SingletonsType = union of all singleton interface refs
+export function emitSingletonsLooseTypes(singletons: Group[]): string {
+	const named = nameSingletons(singletons);
+	named.sort(compareNaturalBy((n) => n.name));
+
+	const file = new AstFileBuilder().header(`Generated from Pokémon GO masterfile — ${SINGLETONS} ${TYPES} (no shared discriminator, loose).`);
+	file.importNamed("../_utils", [WIDEN], true);
+	file.blank();
+
+	for (const { group, entry, name, isStub } of named) {
+		const dataMembers: { name: string; type: ts.TypeNode; optional?: boolean }[] = [{ name: "templateId", type: T.literal(entry.templateId) }];
+		if (!isStub) {
+			const payloadType = looseInferred(inferJsonType(entry.data[group.discriminator]));
+			dataMembers.push({ name: group.discriminator, type: inferredToType(payloadType) });
+		}
+		file.exportInterface(name, [N.propSignature("templateId", T.literal(entry.templateId)), N.propSignature("data", T.objectLiteral(dataMembers))]);
+		file.blank();
+	}
+
+	for (const { name } of named) {
+		file.exportTypeAlias(`${name}${TYPE}`, T.ref(WIDEN, [T.ref(name)]));
+	}
+	file.blank();
+
+	if (named.length === 0) {
+		file.exportTypeAlias(`${SINGLETONS}${TEMPLATE_GENERIC}`, T.never());
+		file.blank();
+		file.exportTypeAlias(SINGLETONS, T.never());
+		file.exportTypeAlias(`${SINGLETONS}${TYPE}`, T.never());
+	} else {
+		const sortedIds = named.map(({ entry }) => entry.templateId).sort(compareNatural);
+		file.exportTypeAlias(`${SINGLETONS}${TEMPLATE_GENERIC}`, T.union(...sortedIds.map((id) => T.literal(id))));
+		file.blank();
+		file.exportTypeAlias(SINGLETONS, T.union(...named.map(({ name }) => T.ref(`${name}${TYPE}`))));
+		file.blank();
+		file.raw(`/** Same as @see {${SINGLETONS}} */`);
+		file.exportTypeAlias(`${SINGLETONS}${TYPE}`, T.ref(SINGLETONS));
+	}
+
+	return file.render();
+}
+
 function inferGroupPayloadType(group: Group): InferredType {
 	return inferJsonTypes(group.entries.map((entry) => entry.data[group.discriminator]));
 }
@@ -150,19 +214,29 @@ export function emitTypesFile(discriminators: string[]): string {
 	return file.render();
 }
 
-export function emitGroupTypes(group: Group, registry: PromotionRegistry = []): string {
+export function emitGroupTypes(group: Group, registry: PromotionRegistry = [], loose = false): string {
 	const gName = groupName(group.discriminator);
 	const invariants = detectInvariants(group);
-	const xdataType = stripInvariantsFromWidened(widenType(inferGroupPayloadType(group)), invariants);
+	// `widenType` already drops most literals from XData, but it preserves string
+	// literal unions ≤ STRING_LITERAL_UNION_CAP. In loose mode we feed the result
+	// through `looseInferred` to drop those too — and to drop literals on tuple
+	// items, where widenType doesn't dedupe (since tuples already widen items).
+	const widened = widenType(inferGroupPayloadType(group));
+	const xdataType = stripInvariantsFromWidened(maybeLoosen(widened, loose), invariants);
 	const xdataName = `${gName}Data`;
 	const entryCount = group.entries.length;
 	const entryWord = entryCount === 1 ? ENTRY_LOWER : ENTRIES_LOWER;
 
-	const ctx: PromotionContext = { registry, currentGroup: group, imports: new Map() };
+	// Cross-group promotion uses the templateID alias of a sibling group, which
+	// only makes sense for literal-narrow string unions. In loose mode there are
+	// no string literal unions left to promote, so we hand `inferredToType` an
+	// empty registry to short-circuit `tryPromote`.
+	const effectiveRegistry: PromotionRegistry = loose ? [] : registry;
+	const ctx: PromotionContext = { registry: effectiveRegistry, currentGroup: group, imports: new Map() };
 
 	// Compute body AST nodes first; this populates ctx.imports as a side effect.
 	const dataPropType: ts.TypeNode =
-		invariants.size > 0 ? T.intersection(T.ref("TData"), inferredToType(invariantsToInferredType(invariants), ctx)) : T.ref("TData");
+		invariants.size > 0 ? T.intersection(T.ref("TData"), inferredToType(maybeLoosen(invariantsToInferredType(invariants), loose), ctx)) : T.ref("TData");
 
 	const xdataProperties = xdataType.kind === "object" ? xdataType.properties : [];
 	const xdataMembers = xdataProperties.map((p) => N.propSignature(p.name, inferredToType(p.type, ctx), p.optional));
@@ -202,10 +276,25 @@ export function emitGroupTypes(group: Group, registry: PromotionRegistry = []): 
 
 	file.exportInterface(xdataName, xdataMembers);
 
+	// Loose-mode tail: in literal mode, the templateID union and the
+	// `${gName}MasterfileEntry` barrel-entry alias live in `entries/index.d.ts`
+	// (derived from the union of per-entry narrow types). Loose mode skips the
+	// entries/ tree entirely, so we materialize both directly here:
+	//   - ${gName}TemplateID = literal union of every templateId in the group.
+	//   - ${gName}MasterfileEntry = ${gName}<${gName}TemplateID> — the wide,
+	//     non-narrowed barrel that consumers union into MasterfileEntry.
+	if (loose) {
+		const sortedIds = [...group.entries].map((e) => e.templateId).sort(compareNatural);
+		file.blank();
+		file.exportTypeAlias(`${gName}${TEMPLATE_GENERIC}`, T.union(...sortedIds.map((id) => T.literal(id))));
+		file.blank();
+		file.exportTypeAlias(`${gName}${BARREL_TYPE}${ENTRY}`, T.ref(gName, [T.ref(`${gName}${TEMPLATE_GENERIC}`)]));
+	}
+
 	return file.render();
 }
 
-export function emitEntriesFlat(group: Group): string {
+export function emitEntriesFlat(group: Group, loose = false): string {
 	const gName = groupName(group.discriminator);
 	const xdataName = `${gName}Data`;
 	const entryCount = group.entries.length;
@@ -220,7 +309,7 @@ export function emitEntriesFlat(group: Group): string {
 	const sortedIds = [...group.entries].map((e) => e.templateId).sort(compareNatural);
 	const aliases = deriveGroupAliases(sortedIds, gName);
 	const invariants = detectInvariants(group);
-	const { statements, typeNames } = entryVariantStatements(group.entries, gName, group, aliases, invariants);
+	const { statements, typeNames } = entryVariantStatements(group.entries, gName, group, aliases, invariants, loose);
 	for (const stmt of statements) file.addStatement(stmt);
 	file.blank();
 
@@ -240,7 +329,7 @@ export function emitEntriesFlat(group: Group): string {
 //   1. Import paths to ../types and ../../_utils get an extra `../` per nesting level.
 //   2. The exported barrel-type name is qualified by the path so leaves at different
 //      locations don't collide (entries/hat/0.ts vs entries/pants/0.ts both export "0").
-export function emitEntryFile(group: Group, bucketName: string, entries: Entry[], nestedPath: string[] = []): string {
+export function emitEntryFile(group: Group, bucketName: string, entries: Entry[], nestedPath: string[] = [], loose = false): string {
 	const gName = groupName(group.discriminator);
 	const xdataName = `${gName}Data`;
 	const sortedIds = [...group.entries].map((e) => e.templateId).sort(compareNatural);
@@ -261,7 +350,7 @@ export function emitEntryFile(group: Group, bucketName: string, entries: Entry[]
 		.importNamed(typesPath, [gName, xdataName], true)
 		.blank();
 
-	const { statements, typeNames } = entryVariantStatements(entries, gName, group, aliases, invariants);
+	const { statements, typeNames } = entryVariantStatements(entries, gName, group, aliases, invariants, loose);
 	for (const stmt of statements) file.addStatement(stmt);
 	file.blank();
 
@@ -331,12 +420,47 @@ export function emitTopLevelVariants(groupSplits: Map<string, "split" | "flat">)
 	return file.render();
 }
 
-export function emitIndexFile() {
-	return new AstFileBuilder()
-		.header(`Generated from Pokémon GO masterfile — DO NOT EDIT MANUALLY`)
-		.exportTypeStar(`./${ENTRIES_LOWER}`)
-		.exportTypeStar(`./${TYPES_LOWER}`)
-		.render();
+// Loose-mode root entries.d.ts: imports `${gName}MasterfileEntry` and
+// `${gName}TemplateID` from each group's `./types` (literal mode imports them
+// from `./entries`, which doesn't exist in loose mode). The per-group barrels
+// are already structurally wide (`FooSettings<FooSettingsTemplateID>`), so the
+// top-level union is straightforward — no `Extract<MasterfileEntry, …>` helper
+// is meaningful when there are no narrow variants to extract from.
+export function emitTopLevelVariantsLoose(discriminators: string[], hasSingletons: boolean): string {
+	const sortedDiscs = [...discriminators].sort(compareNatural);
+	const file = new AstFileBuilder().header("Generated from Pokémon GO masterfile — top-level entries barrel (loose).");
+
+	for (const disc of sortedDiscs) {
+		file.importNamed(`./${kebabCase(disc)}/${TYPES_LOWER}`, [`${groupName(disc)}${BARREL_TYPE}${ENTRY}`, `${groupName(disc)}${TEMPLATE_GENERIC}`], true);
+	}
+	if (hasSingletons) {
+		file.importNamed(`./${SINGLETONS.toLowerCase()}/${TYPES_LOWER}`, [SINGLETONS, `${SINGLETONS}${TEMPLATE_GENERIC}`], true);
+	}
+	file.blank();
+
+	const entryRefs = sortedDiscs.map((disc) => T.ref(`${groupName(disc)}${BARREL_TYPE}${ENTRY}`));
+	const idRefs = sortedDiscs.map((disc) => T.ref(`${groupName(disc)}${TEMPLATE_GENERIC}`));
+	if (hasSingletons) {
+		entryRefs.push(T.ref(SINGLETONS));
+		idRefs.push(T.ref(`${SINGLETONS}${TEMPLATE_GENERIC}`));
+	}
+
+	file.exportTypeAlias(`${BARREL_TYPE}${ENTRY}`, T.union(...entryRefs));
+	file.blank();
+	file.exportTypeAlias(`${BARREL_TYPE}${TEMPLATE_GENERIC}`, T.union(...idRefs));
+
+	return file.render();
+}
+
+// `paths` are the relative module specifiers to re-export. Used:
+//   - root (literal):    ["./entries", "./types"]
+//   - root (loose):      ["./entries", "./types"]
+//   - per-group literal: ["./entries", "./types"]
+//   - per-group loose:   ["./types"]              (no entries/ subdir emitted)
+export function emitIndexFile(paths: readonly string[] = [`./${ENTRIES_LOWER}`, `./${TYPES_LOWER}`]) {
+	const file = new AstFileBuilder().header(`Generated from Pokémon GO masterfile — DO NOT EDIT MANUALLY`);
+	for (const p of paths) file.exportTypeStar(p);
+	return file.render();
 }
 
 // ── Lookup-table emitters ───────────────────────────────────────────────────
