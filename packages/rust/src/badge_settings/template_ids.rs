@@ -1035,12 +1035,200 @@ pub enum BadgeSettingsTemplateId {
     BadgeGofest2025ParisThursdayParkMorning,
     #[serde(rename = "BADGE_GOFEST_2025_PARIS_VIP")]
     BadgeGofest2025ParisVip,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_ADDON_HATCH")]
+    BadgeGofest2026ChicagoAddonHatch,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_ADDON_RAID")]
+    BadgeGofest2026ChicagoAddonRaid,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_EXPERT_1")]
+    BadgeGofest2026ChicagoExpert1,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_EXPERT_2")]
+    BadgeGofest2026ChicagoExpert2,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_EXPERT_3")]
+    BadgeGofest2026ChicagoExpert3,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_EXPERT_4")]
+    BadgeGofest2026ChicagoExpert4,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_EXPERT_FULL")]
+    BadgeGofest2026ChicagoExpertFull,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_FRIDAY_CITY")]
+    BadgeGofest2026ChicagoFridayCity,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_FRIDAY_ESSENTIAL")]
+    BadgeGofest2026ChicagoFridayEssential,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_FRIDAY_PARK_AFTERNOON")]
+    BadgeGofest2026ChicagoFridayParkAfternoon,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_FRIDAY_PARK_MORNING")]
+    BadgeGofest2026ChicagoFridayParkMorning,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_SATURDAY_CITY")]
+    BadgeGofest2026ChicagoSaturdayCity,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_SATURDAY_ESSENTIAL")]
+    BadgeGofest2026ChicagoSaturdayEssential,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_SATURDAY_PARK_AFTERNOON")]
+    BadgeGofest2026ChicagoSaturdayParkAfternoon,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_SATURDAY_PARK_MORNING")]
+    BadgeGofest2026ChicagoSaturdayParkMorning,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_SUNDAY_CITY")]
+    BadgeGofest2026ChicagoSundayCity,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_SUNDAY_ESSENTIAL")]
+    BadgeGofest2026ChicagoSundayEssential,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_SUNDAY_PARK_AFTERNOON")]
+    BadgeGofest2026ChicagoSundayParkAfternoon,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_SUNDAY_PARK_MORNING")]
+    BadgeGofest2026ChicagoSundayParkMorning,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_TEST_ADDON_HATCH")]
+    BadgeGofest2026ChicagoTestAddonHatch,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_TEST_ADDON_RAID")]
+    BadgeGofest2026ChicagoTestAddonRaid,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_TEST_CITY")]
+    BadgeGofest2026ChicagoTestCity,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_TEST_ESSENTIAL")]
+    BadgeGofest2026ChicagoTestEssential,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_TEST_EVERYTHING")]
+    BadgeGofest2026ChicagoTestEverything,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_TEST_PARK")]
+    BadgeGofest2026ChicagoTestPark,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_THURSDAY_CITY")]
+    BadgeGofest2026ChicagoThursdayCity,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_THURSDAY_ESSENTIAL")]
+    BadgeGofest2026ChicagoThursdayEssential,
+    #[serde(rename = "BADGE_GOFEST_2026_CHICAGO_VIP")]
+    BadgeGofest2026ChicagoVip,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_ADDON_HATCH")]
+    BadgeGofest2026CopenhagenAddonHatch,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_ADDON_RAID")]
+    BadgeGofest2026CopenhagenAddonRaid,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_EXPERT_1")]
+    BadgeGofest2026CopenhagenExpert1,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_EXPERT_2")]
+    BadgeGofest2026CopenhagenExpert2,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_EXPERT_3")]
+    BadgeGofest2026CopenhagenExpert3,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_EXPERT_4")]
+    BadgeGofest2026CopenhagenExpert4,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_EXPERT_FULL")]
+    BadgeGofest2026CopenhagenExpertFull,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_FRIDAY_CITY")]
+    BadgeGofest2026CopenhagenFridayCity,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_FRIDAY_ESSENTIAL")]
+    BadgeGofest2026CopenhagenFridayEssential,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_FRIDAY_PARK_AFTERNOON")]
+    BadgeGofest2026CopenhagenFridayParkAfternoon,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_FRIDAY_PARK_MORNING")]
+    BadgeGofest2026CopenhagenFridayParkMorning,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_SATURDAY_CITY")]
+    BadgeGofest2026CopenhagenSaturdayCity,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_SATURDAY_ESSENTIAL")]
+    BadgeGofest2026CopenhagenSaturdayEssential,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_SATURDAY_PARK_AFTERNOON")]
+    BadgeGofest2026CopenhagenSaturdayParkAfternoon,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_SATURDAY_PARK_MORNING")]
+    BadgeGofest2026CopenhagenSaturdayParkMorning,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_SUNDAY_CITY")]
+    BadgeGofest2026CopenhagenSundayCity,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_SUNDAY_ESSENTIAL")]
+    BadgeGofest2026CopenhagenSundayEssential,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_SUNDAY_PARK_AFTERNOON")]
+    BadgeGofest2026CopenhagenSundayParkAfternoon,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_SUNDAY_PARK_MORNING")]
+    BadgeGofest2026CopenhagenSundayParkMorning,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_TEST_ADDON_HATCH")]
+    BadgeGofest2026CopenhagenTestAddonHatch,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_TEST_ADDON_RAID")]
+    BadgeGofest2026CopenhagenTestAddonRaid,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_TEST_CITY")]
+    BadgeGofest2026CopenhagenTestCity,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_TEST_ESSENTIAL")]
+    BadgeGofest2026CopenhagenTestEssential,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_TEST_EVERYTHING")]
+    BadgeGofest2026CopenhagenTestEverything,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_TEST_PARK")]
+    BadgeGofest2026CopenhagenTestPark,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_THURSDAY_CITY")]
+    BadgeGofest2026CopenhagenThursdayCity,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_THURSDAY_ESSENTIAL")]
+    BadgeGofest2026CopenhagenThursdayEssential,
+    #[serde(rename = "BADGE_GOFEST_2026_COPENHAGEN_VIP")]
+    BadgeGofest2026CopenhagenVip,
     #[serde(rename = "BADGE_GOFEST_2026_EVENT_PASS_DELUXE")]
     BadgeGofest2026EventPassDeluxe,
     #[serde(rename = "BADGE_GOFEST_2026_GLOBAL")]
     BadgeGofest2026Global,
     #[serde(rename = "BADGE_GOFEST_2026_GLOBAL_TEST")]
     BadgeGofest2026GlobalTest,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_1MONDAY_CITY")]
+    BadgeGofest2026Tokyo1mondayCity,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_1MONDAY_ESSENTIAL")]
+    BadgeGofest2026Tokyo1mondayEssential,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_2MONDAY_CITY")]
+    BadgeGofest2026Tokyo2mondayCity,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_2MONDAY_ESSENTIAL")]
+    BadgeGofest2026Tokyo2mondayEssential,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_2MONDAY_PARK_AFTERNOON")]
+    BadgeGofest2026Tokyo2mondayParkAfternoon,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_2MONDAY_PARK_MORNING")]
+    BadgeGofest2026Tokyo2mondayParkMorning,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_ADDON_HATCH")]
+    BadgeGofest2026TokyoAddonHatch,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_ADDON_RAID")]
+    BadgeGofest2026TokyoAddonRaid,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_EXPERT_1")]
+    BadgeGofest2026TokyoExpert1,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_EXPERT_2")]
+    BadgeGofest2026TokyoExpert2,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_EXPERT_3")]
+    BadgeGofest2026TokyoExpert3,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_EXPERT_4")]
+    BadgeGofest2026TokyoExpert4,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_EXPERT_FULL")]
+    BadgeGofest2026TokyoExpertFull,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_FRIDAY_CITY")]
+    BadgeGofest2026TokyoFridayCity,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_FRIDAY_ESSENTIAL")]
+    BadgeGofest2026TokyoFridayEssential,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_FRIDAY_PARK_AFTERNOON")]
+    BadgeGofest2026TokyoFridayParkAfternoon,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_FRIDAY_PARK_MORNING")]
+    BadgeGofest2026TokyoFridayParkMorning,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_SATURDAY_CITY")]
+    BadgeGofest2026TokyoSaturdayCity,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_SATURDAY_ESSENTIAL")]
+    BadgeGofest2026TokyoSaturdayEssential,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_SATURDAY_PARK_AFTERNOON")]
+    BadgeGofest2026TokyoSaturdayParkAfternoon,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_SATURDAY_PARK_MORNING")]
+    BadgeGofest2026TokyoSaturdayParkMorning,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_SUNDAY_CITY")]
+    BadgeGofest2026TokyoSundayCity,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_SUNDAY_ESSENTIAL")]
+    BadgeGofest2026TokyoSundayEssential,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_SUNDAY_PARK_AFTERNOON")]
+    BadgeGofest2026TokyoSundayParkAfternoon,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_SUNDAY_PARK_MORNING")]
+    BadgeGofest2026TokyoSundayParkMorning,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_TEST_ADDON_HATCH")]
+    BadgeGofest2026TokyoTestAddonHatch,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_TEST_ADDON_RAID")]
+    BadgeGofest2026TokyoTestAddonRaid,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_TEST_CITY")]
+    BadgeGofest2026TokyoTestCity,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_TEST_ESSENTIAL")]
+    BadgeGofest2026TokyoTestEssential,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_TEST_EVERYTHING")]
+    BadgeGofest2026TokyoTestEverything,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_TEST_PARK")]
+    BadgeGofest2026TokyoTestPark,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_THURSDAY_CITY")]
+    BadgeGofest2026TokyoThursdayCity,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_THURSDAY_ESSENTIAL")]
+    BadgeGofest2026TokyoThursdayEssential,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_TUESDAY_CITY")]
+    BadgeGofest2026TokyoTuesdayCity,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_TUESDAY_ESSENTIAL")]
+    BadgeGofest2026TokyoTuesdayEssential,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_VIP")]
+    BadgeGofest2026TokyoVip,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_WEDNESDAY_CITY")]
+    BadgeGofest2026TokyoWednesdayCity,
+    #[serde(rename = "BADGE_GOFEST_2026_TOKYO_WEDNESDAY_ESSENTIAL")]
+    BadgeGofest2026TokyoWednesdayEssential,
     #[serde(rename = "BADGE_GOTOUR_2021_GREEN_GLOBAL")]
     BadgeGotour2021GreenGlobal,
     #[serde(rename = "BADGE_GOTOUR_2021_GREEN_TEST")]

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "badgeSettings", split "event-badge-event-badge-settings", 74 entries.
+// Generated from Pokémon GO masterfile — group "badgeSettings", split "event-badge-event-badge-settings", 90 entries.
 
 import type { S } from "../../_utils";
 import type { BadgeSettings } from "../types";
@@ -913,9 +913,217 @@ export type BadgeSettingsGofest2025ParisThursdayEssential = S<
 		}
 	>
 >;
+export type BadgeSettingsGofest2026ChicagoFridayEssential = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_FRIDAY_ESSENTIAL",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoSaturdayEssential = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_SATURDAY_ESSENTIAL",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoSundayEssential = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_SUNDAY_ESSENTIAL",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026ChicagoThursdayEssential = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_CHICAGO_THURSDAY_ESSENTIAL",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenFridayEssential = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_FRIDAY_ESSENTIAL",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenSaturdayEssential = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_SATURDAY_ESSENTIAL",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenSundayEssential = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_SUNDAY_ESSENTIAL",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026CopenhagenThursdayEssential = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_COPENHAGEN_THURSDAY_ESSENTIAL",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
 export type BadgeSettingsGofest2026EventPassDeluxe = S<
 	BadgeSettings<
 		"BADGE_GOFEST_2026_EVENT_PASS_DELUXE",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026Tokyo1mondayEssential = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_1MONDAY_ESSENTIAL",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026Tokyo2mondayEssential = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_2MONDAY_ESSENTIAL",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoFridayEssential = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_FRIDAY_ESSENTIAL",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoSaturdayEssential = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_SATURDAY_ESSENTIAL",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoSundayEssential = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_SUNDAY_ESSENTIAL",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoThursdayEssential = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_THURSDAY_ESSENTIAL",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoTuesdayEssential = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_TUESDAY_ESSENTIAL",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofest2026TokyoWednesdayEssential = S<
+	BadgeSettings<
+		"BADGE_GOFEST_2026_TOKYO_WEDNESDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
 			eventBadge: true;
@@ -1037,7 +1245,23 @@ export type BadgeSettingsEventBadgeEventBadgeSettingsMasterfileEntry =
 	| BadgeSettingsGofest2025ParisSaturdayEssential
 	| BadgeSettingsGofest2025ParisSundayEssential
 	| BadgeSettingsGofest2025ParisThursdayEssential
+	| BadgeSettingsGofest2026ChicagoFridayEssential
+	| BadgeSettingsGofest2026ChicagoSaturdayEssential
+	| BadgeSettingsGofest2026ChicagoSundayEssential
+	| BadgeSettingsGofest2026ChicagoThursdayEssential
+	| BadgeSettingsGofest2026CopenhagenFridayEssential
+	| BadgeSettingsGofest2026CopenhagenSaturdayEssential
+	| BadgeSettingsGofest2026CopenhagenSundayEssential
+	| BadgeSettingsGofest2026CopenhagenThursdayEssential
 	| BadgeSettingsGofest2026EventPassDeluxe
+	| BadgeSettingsGofest2026Tokyo1mondayEssential
+	| BadgeSettingsGofest2026Tokyo2mondayEssential
+	| BadgeSettingsGofest2026TokyoFridayEssential
+	| BadgeSettingsGofest2026TokyoSaturdayEssential
+	| BadgeSettingsGofest2026TokyoSundayEssential
+	| BadgeSettingsGofest2026TokyoThursdayEssential
+	| BadgeSettingsGofest2026TokyoTuesdayEssential
+	| BadgeSettingsGofest2026TokyoWednesdayEssential
 	| BadgeSettingsQuestDialogueInboxControl
 	| BadgeSettingsQuestDialogueInboxRollout
 	| BadgeSettingsWeeklyChallengeEligible;

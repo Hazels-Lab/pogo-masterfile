@@ -7,7 +7,7 @@ export type ItemExpirationSettingsEventPassPointGoFest01 = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_GO_FEST_01",
 		{
-			expirationTime: "2025-06-29T23:59:59";
+			expirationTime: "2026-07-14T23:59:59";
 		}
 	>
 >;
@@ -188,7 +188,7 @@ export type ItemExpirationSettingsTripleStatIncrease = S<
 					},
 				];
 			};
-			expirationTime: "2025-07-06T23:59:59";
+			expirationTime: "2026-07-19T23:59:59";
 		}
 	>
 >;
