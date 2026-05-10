@@ -109,6 +109,8 @@ pub enum SingletonsTemplateId {
     EventPlannerPopularRaidRsvpSettings,
     #[serde(rename = "EVENT_PLANNER_SETTINGS")]
     EventPlannerSettings,
+    #[serde(rename = "EVENT_SERVER_SETTINGS")]
+    EventServerSettings,
     #[serde(rename = "EXTERNAL_ADDRESSABLE_ASSETS_SETTINGS")]
     ExternalAddressableAssetsSettings,
     #[serde(rename = "FEATURE_UNLOCK_LEVEL_SETTINGS")]

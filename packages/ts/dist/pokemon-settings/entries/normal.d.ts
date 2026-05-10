@@ -19357,6 +19357,7 @@ export type PokemonSettingsV0916PokemonOinkologne = S<
 				cylinderRadiusM: 0.5;
 			};
 			cinematicMoves: ["DIG", "TRAILBLAZE", "BODY_SLAM"];
+			eliteQuickMove: ["MUD_SLAP_FAST"];
 			encounter: {
 				attackProbability: 0.2;
 				bonusCandyCaptureReward: 2;
@@ -19416,6 +19417,7 @@ export type PokemonSettingsV0916PokemonOinkologneFemale = S<
 				cylinderRadiusM: 0.5;
 			};
 			cinematicMoves: ["DIG", "TRAILBLAZE", "BODY_SLAM"];
+			eliteQuickMove: ["MUD_SLAP_FAST"];
 			encounter: {
 				attackProbability: 0.2;
 				bonusCandyCaptureReward: 2;
@@ -19476,6 +19478,7 @@ export type PokemonSettingsV0916PokemonOinkologneNormal = S<
 				cylinderRadiusM: 0.5;
 			};
 			cinematicMoves: ["DIG", "TRAILBLAZE", "BODY_SLAM"];
+			eliteQuickMove: ["MUD_SLAP_FAST"];
 			encounter: {
 				attackProbability: 0.2;
 				bonusCandyCaptureReward: 2;

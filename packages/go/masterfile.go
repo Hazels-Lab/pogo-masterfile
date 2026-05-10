@@ -1296,6 +1296,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "":
 		switch probe.TemplateID {
+		case "EVENT_SERVER_SETTINGS":
+			var e singletons.EventServerSettingsEntry
+			if err := json.Unmarshal(data, &e); err != nil {
+				return nil, err
+			}
+			return e, nil
 		case "QUEST_DIALOGUE_INBOX_SETTINGS":
 			var e singletons.QuestDialogueInboxSettingsEntry
 			if err := json.Unmarshal(data, &e); err != nil {

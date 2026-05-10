@@ -74,6 +74,7 @@ export interface PokemonSettingsData {
 		| "LOW_KICK_FAST"
 		| "MAGICAL_LEAF_FAST"
 		| "MUD_SHOT_FAST"
+		| "MUD_SLAP_FAST"
 		| "POISON_JAB_FAST"
 		| "POUND_FAST"
 		| "POWDER_SNOW_FAST"

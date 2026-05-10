@@ -52,6 +52,7 @@ import type {
 	ErrorReportingSettings,
 	EventPassSettings,
 	EventPlannerPopularNotificationSettings,
+	EventServerSettings,
 	ExternalAddressableAssetsSettings,
 	FeatureUnlockLevelSettings,
 	GeotargetedQuestSettings,
@@ -196,6 +197,7 @@ export interface SingletonsLookup {
 	EVENT_PASS_MAY2026_SEASON: EventPassSettings;
 	EVENT_PLANNER_POPULAR_RAID_RSVP_SETTINGS: EventPlannerPopularNotificationSettings;
 	EVENT_PLANNER_SETTINGS: PlannerSettings;
+	EVENT_SERVER_SETTINGS: EventServerSettings;
 	EXTERNAL_ADDRESSABLE_ASSETS_SETTINGS: ExternalAddressableAssetsSettings;
 	FEATURE_UNLOCK_LEVEL_SETTINGS: FeatureUnlockLevelSettings;
 	GEOTARGETED_QUEST_SETTINGS: GeotargetedQuestSettings;

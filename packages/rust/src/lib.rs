@@ -293,6 +293,7 @@ pub enum MasterfileEntry {
     EventPlannerPopularNotificationSettings(
         singletons::EventPlannerPopularNotificationSettingsEntry,
     ),
+    EventServerSettings(singletons::EventServerSettingsEntry),
     ExternalAddressableAssetsSettings(singletons::ExternalAddressableAssetsSettingsEntry),
     FeatureUnlockLevelSettings(singletons::FeatureUnlockLevelSettingsEntry),
     GeotargetedQuestSettings(singletons::GeotargetedQuestSettingsEntry),
@@ -858,6 +859,9 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 .and_then(|t| t.as_str())
                 .map(String::from);
             match template_id.as_deref() {
+                Some("EVENT_SERVER_SETTINGS") => {
+                    serde_json::from_value(value).map(Self::EventServerSettings)
+                }
                 Some("QUEST_DIALOGUE_INBOX_SETTINGS") => {
                     serde_json::from_value(value).map(Self::QuestDialogueInboxSettings)
                 }

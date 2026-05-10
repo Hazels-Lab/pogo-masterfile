@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 56 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 55 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -280,24 +280,6 @@ export type IapItemDisplayGeneral2Ticket2Giftable = S<
 			sortOrder: 1;
 			spriteId: "general2.ticket.2";
 			title: "general2.ticket2.CATCH_MASTERY_ORICORIO";
-		}
-	>
->;
-export type IapItemDisplayGeneral2Ticket3 = S<
-	IapItemDisplay<
-		"general2.ticket.3",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-lechonk-community-day-2026-nologo.jpg";
-			sku: "pgorelease.general2.ticket.3";
-			skuDisableTime: "2026-05-09T17:00:00";
-			skuDisableTimeUtcMs: "1778346000000";
-			skuEnableTime: "2019-03-14T08:00:00";
-			skuEnableTimeUtcMs: "1552550400000";
-			sortOrder: 2;
-			spriteId: "general1.ticket.2";
-			title: "general1.ticket_CD_Lechonk26_title";
-			useEnvironmentPrefix: true;
 		}
 	>
 >;
@@ -1078,7 +1060,6 @@ export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayGeneral2Ticket1Giftable
 	| IapItemDisplayGeneral2Ticket2
 	| IapItemDisplayGeneral2Ticket2Giftable
-	| IapItemDisplayGeneral2Ticket3
 	| IapItemDisplayGeneral2Ticket4
 	| IapItemDisplayGeneral2Ticket4Giftable
 	| IapItemDisplayGeneral2Ticket5

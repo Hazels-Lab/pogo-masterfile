@@ -281,7 +281,6 @@ const (
 	IapItemDisplayTemplateIDGeneral2Ticket1Giftable                                IapItemDisplayTemplateID = "general2.ticket.1.giftable"
 	IapItemDisplayTemplateIDGeneral2Ticket2                                        IapItemDisplayTemplateID = "general2.ticket.2"
 	IapItemDisplayTemplateIDGeneral2Ticket2Giftable                                IapItemDisplayTemplateID = "general2.ticket.2.giftable"
-	IapItemDisplayTemplateIDGeneral2Ticket3                                        IapItemDisplayTemplateID = "general2.ticket.3"
 	IapItemDisplayTemplateIDGeneral2Ticket4                                        IapItemDisplayTemplateID = "general2.ticket.4"
 	IapItemDisplayTemplateIDGeneral2Ticket4Giftable                                IapItemDisplayTemplateID = "general2.ticket.4.giftable"
 	IapItemDisplayTemplateIDGeneral2Ticket5                                        IapItemDisplayTemplateID = "general2.ticket.5"
@@ -1406,7 +1405,6 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDGeneral2Ticket1Giftable,
 	IapItemDisplayTemplateIDGeneral2Ticket2,
 	IapItemDisplayTemplateIDGeneral2Ticket2Giftable,
-	IapItemDisplayTemplateIDGeneral2Ticket3,
 	IapItemDisplayTemplateIDGeneral2Ticket4,
 	IapItemDisplayTemplateIDGeneral2Ticket4Giftable,
 	IapItemDisplayTemplateIDGeneral2Ticket5,

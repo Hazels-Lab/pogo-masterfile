@@ -3119,6 +3119,8 @@ crate::masterfile_entry!(EventPassSettingsEntry, EventPassSettingsEntryData, eve
 
 crate::masterfile_entry!(EventPlannerPopularNotificationSettingsEntry, EventPlannerPopularNotificationSettingsEntryData, event_planner_popular_notification_settings: EventPlannerPopularNotificationSettings);
 
+crate::masterfile_stub_entry!(EventServerSettingsEntry, EventServerSettingsEntryData);
+
 crate::masterfile_entry!(ExternalAddressableAssetsSettingsEntry, ExternalAddressableAssetsSettingsEntryData, external_addressable_assets_settings: ExternalAddressableAssetsSettings);
 
 crate::masterfile_entry!(FeatureUnlockLevelSettingsEntry, FeatureUnlockLevelSettingsEntryData, feature_unlock_level_settings: FeatureUnlockLevelSettings);
