@@ -53,6 +53,7 @@ import type {
 	ErrorReportingSettings,
 	EventPassSettings,
 	EventPlannerPopularNotificationSettings,
+	EventServerSettings,
 	ExternalAddressableAssetsSettings,
 	FeatureUnlockLevelSettings,
 	GeotargetedQuestSettings,
@@ -196,6 +197,7 @@ export type EncounterSettingsType = W<EncounterSettings>;
 export type ErrorReportingSettingsType = W<ErrorReportingSettings>;
 export type EventPassSettingsType = W<EventPassSettings>;
 export type EventPlannerPopularNotificationSettingsType = W<EventPlannerPopularNotificationSettings>;
+export type EventServerSettingsType = W<EventServerSettings>;
 export type ExternalAddressableAssetsSettingsType = W<ExternalAddressableAssetsSettings>;
 export type FeatureUnlockLevelSettingsType = W<FeatureUnlockLevelSettings>;
 export type GeotargetedQuestSettingsType = W<GeotargetedQuestSettings>;
@@ -339,6 +341,7 @@ export type Singletons =
 	| ErrorReportingSettingsType
 	| EventPassSettingsType
 	| EventPlannerPopularNotificationSettingsType
+	| EventServerSettingsType
 	| ExternalAddressableAssetsSettingsType
 	| FeatureUnlockLevelSettingsType
 	| GeotargetedQuestSettingsType

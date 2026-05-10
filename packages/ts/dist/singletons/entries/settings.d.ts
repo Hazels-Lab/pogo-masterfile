@@ -2855,6 +2855,13 @@ export interface EventPlannerPopularNotificationSettings {
 	};
 }
 
+export interface EventServerSettings {
+	templateId: "EVENT_SERVER_SETTINGS";
+	data: {
+		templateId: "EVENT_SERVER_SETTINGS";
+	};
+}
+
 export interface ExternalAddressableAssetsSettings {
 	templateId: "EXTERNAL_ADDRESSABLE_ASSETS_SETTINGS";
 	data: {
@@ -6012,6 +6019,7 @@ export type SingletonsSettingsMasterfileEntry =
 	| ErrorReportingSettings
 	| EventPassSettings
 	| EventPlannerPopularNotificationSettings
+	| EventServerSettings
 	| ExternalAddressableAssetsSettings
 	| FeatureUnlockLevelSettings
 	| GeotargetedQuestSettings

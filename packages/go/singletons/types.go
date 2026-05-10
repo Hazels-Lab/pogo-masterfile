@@ -2728,6 +2728,17 @@ type EventPlannerPopularNotificationSettingsEntryData struct {
 	EventPlannerPopularNotificationSettings EventPlannerPopularNotificationSettings `json:"eventPlannerPopularNotificationSettings"`
 }
 
+type EventServerSettingsEntry struct {
+	TemplateID string                       `json:"templateId"`
+	Data       EventServerSettingsEntryData `json:"data"`
+}
+
+func (EventServerSettingsEntry) MasterfileEntry() {}
+
+type EventServerSettingsEntryData struct {
+	TemplateID string `json:"templateId"`
+}
+
 type ExternalAddressableAssetsSettingsEntry struct {
 	TemplateID string                                     `json:"templateId"`
 	Data       ExternalAddressableAssetsSettingsEntryData `json:"data"`

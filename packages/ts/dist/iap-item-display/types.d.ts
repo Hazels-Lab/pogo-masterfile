@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1122 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1121 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -59,7 +59,6 @@ export interface IapItemDisplayData {
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-fashion-raid-day-2026-nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-gmax-kanto-max-battle-day-2026-nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-gmax-pikachu-2026-nologo.jpg"
-		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-lechonk-community-day-2026-nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-legendary-birds-nologo-2026.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Eternatus_Adventure_Effect_v2-1024x576.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_GO_Pass_May_2026_TICKET_v1-1204x576.jpg"
@@ -123,7 +122,6 @@ export interface IapItemDisplayData {
 		| "2026-04-18T17:00:00"
 		| "2026-04-25T17:00:00"
 		| "2026-05-02T17:00:00"
-		| "2026-05-09T17:00:00"
 		| "2026-05-10T23:59:59"
 		| "2026-05-11T22:00:00"
 		| "2026-06-04T10:00:00"
@@ -167,7 +165,6 @@ export interface IapItemDisplayData {
 		| "1776531600000"
 		| "1777136400000"
 		| "1777741200000"
-		| "1778346000000"
 		| "1778457599000"
 		| "1778536800000"
 		| "1780567200000"

@@ -4,6 +4,10 @@ All notable changes to the Go module are recorded here. The format is based on [
 
 > Note: Go module releases for this package are tagged as `packages/go/vX.Y.Z` (subdirectory-prefixed), per Go's monorepo tagging rules.
 
+## [0.1.11] - 2026-05-10
+
+Automated regeneration from upstream masterfile commit `af379b35f08bf90feb0946be90fe1156d2858498`.
+
 ## [0.1.10] - 2026-05-09
 
 Automated regeneration from upstream masterfile commit `4c9b3dfd5594e0c614ec133b762d261835a16b2a`.

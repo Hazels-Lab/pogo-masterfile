@@ -56,6 +56,7 @@ const (
 	SingletonsTemplateIDEventPassMay2026Season                  SingletonsTemplateID = "EVENT_PASS_MAY2026_SEASON"
 	SingletonsTemplateIDEventPlannerPopularRaidRsvpSettings     SingletonsTemplateID = "EVENT_PLANNER_POPULAR_RAID_RSVP_SETTINGS"
 	SingletonsTemplateIDEventPlannerSettings                    SingletonsTemplateID = "EVENT_PLANNER_SETTINGS"
+	SingletonsTemplateIDEventServerSettings                     SingletonsTemplateID = "EVENT_SERVER_SETTINGS"
 	SingletonsTemplateIDExternalAddressableAssetsSettings       SingletonsTemplateID = "EXTERNAL_ADDRESSABLE_ASSETS_SETTINGS"
 	SingletonsTemplateIDFeatureUnlockLevelSettings              SingletonsTemplateID = "FEATURE_UNLOCK_LEVEL_SETTINGS"
 	SingletonsTemplateIDGeotargetedQuestSettings                SingletonsTemplateID = "GEOTARGETED_QUEST_SETTINGS"
@@ -200,6 +201,7 @@ var SingletonsTemplateIDValues = [...]SingletonsTemplateID{
 	SingletonsTemplateIDEventPassMay2026Season,
 	SingletonsTemplateIDEventPlannerPopularRaidRsvpSettings,
 	SingletonsTemplateIDEventPlannerSettings,
+	SingletonsTemplateIDEventServerSettings,
 	SingletonsTemplateIDExternalAddressableAssetsSettings,
 	SingletonsTemplateIDFeatureUnlockLevelSettings,
 	SingletonsTemplateIDGeotargetedQuestSettings,
