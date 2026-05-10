@@ -3,9 +3,17 @@
 import type { MasterfileEntry } from "pogo-masterfile-types/entries";
 import type { EntriesByGroup, LookupByGroup, TemplateIDsByGroup } from "pogo-masterfile-types/lookup-table";
 import { EntryNotFoundError } from "./errors.js";
-import { DEFAULT_MASTERFILE_URL, defaultFetcher } from "./fetch.js";
+import { DEFAULT_MASTERFILE_URL, defaultFetcher, type Fetcher } from "./fetch.js";
 import { GROUP_NAMES, type GroupName } from "./group-names.js";
-import type { FromRemoteOptions } from "./types.js";
+
+export interface FromRemoteOptions {
+	/** URL to fetch from. Defaults to `DEFAULT_MASTERFILE_URL`. */
+	url?: string;
+	/** Custom fetcher. Default uses global `fetch` + `response.json()`. */
+	fetcher?: Fetcher;
+	/** Cancellation. */
+	signal?: AbortSignal;
+}
 
 // ── Group accessor ─────────────────────────────────────────────────────────
 //
@@ -22,6 +30,7 @@ export interface GroupAccessor<G extends GroupName> {
 	tryGet(templateId: string): EntriesByGroup[G] | undefined;
 
 	has(templateId: string): templateId is keyof LookupByGroup[G] & string;
+	is(entry: unknown): entry is G;
 
 	all(): readonly EntriesByGroup[G][];
 	templateIds(): readonly (TemplateIDsByGroup[G] & string)[];
@@ -171,6 +180,9 @@ export class Masterfile {
 	#installAccessor<G extends GroupName>(groupName: G): void {
 		const self = this;
 		const accessor: GroupAccessor<G> = {
+			is(entry): entry is G {
+				return !!(entry && typeof entry === "object" && groupName in entry);
+			},
 			get(templateId: string): EntriesByGroup[G] {
 				const entry = self.#byTemplateId.get(templateId);
 				if (!entry) throw new EntryNotFoundError(templateId);

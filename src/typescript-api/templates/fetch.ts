@@ -1,8 +1,16 @@
 import type { MasterfileEntry } from "pogo-masterfile-types/entries";
 import { MasterfileFetchError, MasterfileParseError } from "./errors.js";
-import type { Fetcher } from "./types.js";
 
 export const DEFAULT_MASTERFILE_URL = "https://raw.githubusercontent.com/alexelgt/game_masters/refs/heads/master/GAME_MASTER.json";
+
+/**
+ * Fetch the masterfile JSON and normalize it to `MasterfileEntry[]`.
+ *
+ * Custom fetchers MUST handle whatever upstream shape they receive and return
+ * an array conforming to `MasterfileEntry[]`. They should propagate `signal`
+ * to the underlying fetch so cancellation works.
+ */
+export type Fetcher = (url: string, signal?: AbortSignal) => Promise<MasterfileEntry[]>;
 
 /**
  * Default fetcher: standard `fetch` + JSON parse, with shape validation.
