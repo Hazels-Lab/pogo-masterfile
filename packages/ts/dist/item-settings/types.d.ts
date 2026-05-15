@@ -47,7 +47,6 @@ export interface ItemSettingsData {
 		| "ITEM_CATEGORY_XP_BOOST";
 	descriptionOverride?:
 		| "item_event_ticket_02_details_CATCH_MASTERY_ORICORIO"
-		| "item_event_ticket_05_desc_GMAX_PIKACHU_MAX_BATTLE"
 		| "item_event_ticket_06_desc_ENTEI_SHADOW_RAID_DAY"
 		| "item_event_ticket_06_desc_REPLAY_GO_BIGGER"
 		| "item_event_ticket_07_desc_masterball25"
@@ -61,7 +60,8 @@ export interface ItemSettingsData {
 		| "item_event_ticket_evergreen_details_IntoTDepths26"
 		| "item_event_ticket_evergreen_details_Riolu0426"
 		| "item_event_ticket_gray_desc_FinalJustice2025"
-		| "item_event_ticket_pink_details_CD_Lechonk26"
+		| "item_event_ticket_gray_desc_MegaFalinksRaidDay"
+		| "item_event_ticket_pink_details_CDC_Deino26"
 		| "item_event_ticket_pink_details_WaterRRD26"
 		| "item_global_event_ticket_details_GOTour2026"
 		| "item_postcard_inventory_desc_stamp";
@@ -80,6 +80,7 @@ export interface ItemSettingsData {
 	eventPassPoint?: {
 		eventPassId:
 			| "EVENT_PASS_APRIL2026_SEASON"
+			| "EVENT_PASS_BLANCHE2026_EVENT"
 			| "EVENT_PASS_BUGOUTBUDDIES2026_EVENT"
 			| "EVENT_PASS_FEBRUARY2026_SEASON"
 			| "EVENT_PASS_GOFEST2025_GLOBAL"
@@ -87,8 +88,7 @@ export interface ItemSettingsData {
 			| "EVENT_PASS_GOTOUR2026_GLOBAL"
 			| "EVENT_PASS_GOTOUR2026_IRL"
 			| "EVENT_PASS_GOWA_2025"
-			| "EVENT_PASS_JANUARY2026_SEASON"
-			| "EVENT_PASS_MARCH2026_SEASON"
+			| "EVENT_PASS_JUNE2026_SEASON"
 			| "EVENT_PASS_MAY2026_SEASON"
 			| "EVENT_PASS_SHOCKINGLYGOOD2026_EVENT"
 			| "EVENT_PASS_SPRINGMARATHON2026_EVENT"
@@ -117,11 +117,11 @@ export interface ItemSettingsData {
 		backgroundImageUrl?:
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512_logoless.jpg"
+			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-deino-community-day-classic-2026-nologo.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-fashion-raid-day-2026-nologo.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-gmax-kanto-max-battle-day-2026-nologo.jpg"
-			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-gmax-pikachu-2026-nologo.jpg"
-			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-lechonk-community-day-2026-nologo.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Into_The_Depths_LiveOp_2026_v3-1024x576-nologo.jpg"
+			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Mega_Falinks_Raid_Day_v3-1024x576-nologo.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Shiny_Keldeo_KeyArt_v1-1024x576-nologo.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-replay-water-research-day-2026-nologo.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-riolu-hatch-day-2026-nologo.jpg"
@@ -140,13 +140,13 @@ export interface ItemSettingsData {
 			| "1771790400000"
 			| "1772409599000"
 			| "1774112400000"
-			| "1774717200000"
 			| "1775210400000"
 			| "1775322000000"
 			| "1776531600000"
 			| "1777136400000"
 			| "1777741200000"
-			| "1778346000000";
+			| "1778950800000"
+			| "1779555600000";
 		clientEventStartTimeUtcMs:
 			| "1696845600000"
 			| "1697364000000"
@@ -160,17 +160,17 @@ export interface ItemSettingsData {
 			| "1772236800000"
 			| "1772542800000"
 			| "1774101600000"
-			| "1774706400000"
 			| "1775311200000"
 			| "1776510000000"
 			| "1777125600000"
 			| "1777730400000"
-			| "1778335200000";
+			| "1778940000000"
+			| "1779544800000";
 		detailsLinkKey?:
 			| "details_link_key"
 			| "details_link_key_ENTEI_SHADOW_RAID_DAY"
 			| "details_link_key_fashion_raid_day"
-			| "details_link_key_GMAX_PIKACHU_MAX_BATTLE"
+			| "details_link_key_mega_falinks_raid_day"
 			| "details_link_key_ORICORIO_MASTERY_FEB2026"
 			| "details_link_key_REPLAY_GO_BIGGER_MAX_BATTLE"
 			| "details_link_key_Riolu_Hatch0426"
@@ -182,12 +182,12 @@ export interface ItemSettingsData {
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO_MCS_MasterBall_KeyArt_TK_GP_V2_S14_1024x512_nologo.jpg"
+			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-deino-community-day-classic-2026-nologo.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-entei-shadow-raid-day-2026-nologo.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-fashion-raid-day-2026-nologo.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-gmax-kanto-max-battle-day-2026-nologo.jpg"
-			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-gmax-pikachu-2026-nologo.jpg"
-			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-lechonk-community-day-2026-nologo.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Into_The_Depths_LiveOp_2026_v3-1024x576-nologo.jpg"
+			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Mega_Falinks_Raid_Day_v3-1024x576-nologo.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Shiny_Keldeo_KeyArt_v1-1024x576-nologo.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-replay-water-research-day-2026-nologo.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-riolu-hatch-day-2026-nologo.jpg"
@@ -195,13 +195,13 @@ export interface ItemSettingsData {
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-yampers-paw-prints-ticket-nologo-2025.jpg";
 		eventDatetimeRangeKey?:
 			| "event_datetime_range_key_CATCH_MASTERY_ORICORIO"
-			| "event_datetime_range_key_CD_Lechonk26"
+			| "event_datetime_range_key_CDC_Deino26"
 			| "event_datetime_range_key_ENTEI_SHADOW_RAID_DAY"
 			| "event_datetime_range_key_fashionRaidDay_s22"
 			| "event_datetime_range_key_FinalJustice2025"
-			| "event_datetime_range_key_GMAX_PIKACHU_MAX_BATTLE"
 			| "event_datetime_range_key_GOTour2026"
 			| "event_datetime_range_key_IntoTDepths26"
+			| "event_datetime_range_key_MegaFalinksRaidDay"
 			| "event_datetime_range_key_PawPrint_20250620"
 			| "event_datetime_range_key_REPLAY_GO_BIGGER"
 			| "event_datetime_range_key_Riolu0426"
@@ -218,13 +218,13 @@ export interface ItemSettingsData {
 			| "2026-02-22T20:00:00"
 			| "2026-03-01T23:59:59"
 			| "2026-03-21T17:00:00"
-			| "2026-03-28T17:00:00"
 			| "2026-04-03T10:00:00"
 			| "2026-04-04T17:00:00"
 			| "2026-04-18T17:00:00"
 			| "2026-04-25T17:00:00"
 			| "2026-05-02T17:00:00"
-			| "2026-05-09T17:00:00";
+			| "2026-05-16T17:00:00"
+			| "2026-05-23T17:00:00";
 		eventStartTime:
 			| "2023-10-09T10:00:00"
 			| "2023-10-15T10:00:00"
@@ -238,12 +238,12 @@ export interface ItemSettingsData {
 			| "2026-02-28T00:00:00"
 			| "2026-03-03T13:00:00"
 			| "2026-03-21T14:00:00"
-			| "2026-03-28T14:00:00"
 			| "2026-04-04T14:00:00"
 			| "2026-04-18T11:00:00"
 			| "2026-04-25T14:00:00"
 			| "2026-05-02T14:00:00"
-			| "2026-05-09T14:00:00";
+			| "2026-05-16T14:00:00"
+			| "2026-05-23T14:00:00";
 		giftable?: boolean;
 		giftItem?:
 			| "ITEM_EVENT_TICKET_02_TO_GIFT"
@@ -271,8 +271,8 @@ export interface ItemSettingsData {
 				item:
 					| "ITEM_FREE_RAID_TICKET"
 					| "ITEM_INCENSE_ORDINARY"
-					| "ITEM_INCUBATOR_BASIC"
 					| "ITEM_INCUBATOR_SUPER"
+					| "ITEM_LUCKY_EGG"
 					| "ITEM_MASTER_BALL"
 					| "ITEM_MAX_BOOST"
 					| "ITEM_STAR_PIECE"
@@ -289,11 +289,11 @@ export interface ItemSettingsData {
 						| "DIGLETT_NORMAL"
 						| "FEEBAS_NORMAL"
 						| "GLIMMET_NORMAL"
+						| "HYDREIGON_NORMAL"
 						| "KELDEO_ORDINARY"
 						| "LATIAS_NORMAL"
 						| "LATIOS_NORMAL"
 						| "LOTAD_NORMAL"
-						| "OINKOLOGNE_NORMAL"
 						| "ROCKRUFF_NORMAL"
 						| "YUNGOOS_NORMAL";
 					shiny?: boolean;
@@ -304,11 +304,11 @@ export interface ItemSettingsData {
 					| "DIGLETT"
 					| "FEEBAS"
 					| "GLIMMET"
+					| "HYDREIGON"
 					| "KELDEO"
 					| "LATIAS"
 					| "LATIOS"
 					| "LOTAD"
-					| "OINKOLOGNE"
 					| "ROCKRUFF"
 					| "YAMPER"
 					| "YUNGOOS";
@@ -319,7 +319,6 @@ export interface ItemSettingsData {
 		itemBagDescriptionKey:
 			| "item_battle_pass_ticket_desc"
 			| "item_event_ticket_02_desc_CATCH_MASTERY_ORICORIO"
-			| "item_event_ticket_05_details_GMAX_PIKACHU_MAX_BATTLE"
 			| "item_event_ticket_06_details_REPLAY_GO_BIGGER"
 			| "item_event_ticket_07_desc_masterball25"
 			| "item_event_ticket_07_details_masterball25"
@@ -332,8 +331,9 @@ export interface ItemSettingsData {
 			| "item_event_ticket_evergreen_details_PawPrint_20250620"
 			| "item_event_ticket_evergreen_details_Riolu0426"
 			| "item_event_ticket_gray_desc_FinalJustice2025"
+			| "item_event_ticket_gray_desc_MegaFalinksRaidDay"
 			| "item_event_ticket_gray_details_ENTEI_SHADOW_RAID_DAY"
-			| "item_event_ticket_pink_desc_CD_Lechonk26"
+			| "item_event_ticket_pink_desc_CDC_Deino26"
 			| "item_event_ticket_pink_desc_WaterRRD26"
 			| "item_global_event_ticket_details_GOTour2026"
 			| "item_ticket_city_safari_00_desc"
@@ -341,14 +341,14 @@ export interface ItemSettingsData {
 			| "item_ticket_city_safari_02_desc";
 		textRewardsKey?:
 			| "text_rewards_key_CATCH_MASTERY_ORICORIO"
-			| "text_rewards_key_CD_Lechonk26"
+			| "text_rewards_key_CDC_Deino26"
 			| "text_rewards_key_ENTEI_SHADOW_RAID_DAY"
 			| "text_rewards_key_fashionRaidDay26"
 			| "text_rewards_key_FinalJustice2025"
-			| "text_rewards_key_GMAX_PIKACHU_MAX_BATTLE"
 			| "text_rewards_key_GOTour2026"
 			| "text_rewards_key_IntoTDepths26"
 			| "text_rewards_key_masterball25"
+			| "text_rewards_key_MegaFalinksRaidDay"
 			| "text_rewards_key_PawPrint_20250620"
 			| "text_rewards_key_REPLAY_GO_BIGGER"
 			| "text_rewards_key_Riolu0426"
@@ -419,19 +419,18 @@ export interface ItemSettingsData {
 		| "ITEM_TYPE_TEAM_CHANGE"
 		| "ITEM_TYPE_XP_BOOST";
 	nameOverride?:
-		| "general1.ticket_CD_Lechonk26_title"
+		| "general1.ticket_CDC_Deino26_title"
 		| "general1.ticket._GOWA2024GSBEA_title"
 		| "general1.ticket.2_WaterRRD26_title"
 		| "general1.ticket.4_Riolu0426_title"
 		| "general1.ticket.5_IntoTDepths26_title"
 		| "general1.ticket.5.ENTEI_SHADOW_RAID_DAY"
+		| "general2.ticket.5_MegaFalinksRaidDay"
 		| "general2.ticket.6.REPLAY_GO_BIGGER"
 		| "general2.ticket.7_masterball25_title"
 		| "general2.ticket.9_fashionRaidDay26_title"
 		| "general2.ticket2.CATCH_MASTERY_ORICORIO"
-		| "general2.ticket5.GMAX_PIKACHU_MAX_BATTLE"
 		| "GOTour_2026_ticket_title"
-		| "ITEM_EVENT_PASS_POINT_LIVE_OPS_01_name"
 		| "item_postcard_inventory_name_stamp";
 	potion?: {
 		staAmount?: number;

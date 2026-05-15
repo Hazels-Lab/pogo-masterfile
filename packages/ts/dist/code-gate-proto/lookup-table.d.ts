@@ -11,7 +11,6 @@ import type {
 	CodeGateProtoPredictChargeMoveOnSubmitRollBackCodeGate,
 	CodeGateProtoPushGatewayMultiActionCodeGate,
 	CodeGateProtoStampCollectionSnapshotEnabledCodeGate,
-	CodeGateProtoTodayViewV3CodeGate,
 	CodeGateProtoUseExtendedSettingsForMaxScaleCodeGate,
 	CodeGateProtoUseGmtSkuDataCodeGate,
 } from "./entries";
@@ -27,7 +26,6 @@ export interface CodeGateProtoLookup {
 	PREDICT_CHARGE_MOVE_ON_SUBMIT_ROLL_BACK_CODE_GATE: CodeGateProtoPredictChargeMoveOnSubmitRollBackCodeGate;
 	PUSH_GATEWAY_MULTI_ACTION_CODE_GATE: CodeGateProtoPushGatewayMultiActionCodeGate;
 	STAMP_COLLECTION_SNAPSHOT_ENABLED_CODE_GATE: CodeGateProtoStampCollectionSnapshotEnabledCodeGate;
-	TODAY_VIEW_V3_CODE_GATE: CodeGateProtoTodayViewV3CodeGate;
 	USE_EXTENDED_SETTINGS_FOR_MAX_SCALE_CODE_GATE: CodeGateProtoUseExtendedSettingsForMaxScaleCodeGate;
 	USE_GMT_SKU_DATA_CODE_GATE: CodeGateProtoUseGmtSkuDataCodeGate;
 }

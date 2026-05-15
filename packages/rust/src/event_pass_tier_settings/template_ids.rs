@@ -847,4 +847,244 @@ pub enum EventPassTierSettingsTemplateId {
     EventPassMay2026Season210Free,
     #[serde(rename = "EVENT_PASS_MAY2026_SEASON_210_PREMIUM")]
     EventPassMay2026Season210Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_1_FREE")]
+    EventPassSpringmarathon2026Event1Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_1_PREMIUM")]
+    EventPassSpringmarathon2026Event1Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_2_FREE")]
+    EventPassSpringmarathon2026Event2Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_2_PREMIUM")]
+    EventPassSpringmarathon2026Event2Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_3_FREE")]
+    EventPassSpringmarathon2026Event3Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_3_PREMIUM")]
+    EventPassSpringmarathon2026Event3Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_4_FREE")]
+    EventPassSpringmarathon2026Event4Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_4_PREMIUM")]
+    EventPassSpringmarathon2026Event4Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_5_FREE")]
+    EventPassSpringmarathon2026Event5Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_5_PREMIUM")]
+    EventPassSpringmarathon2026Event5Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_6_FREE")]
+    EventPassSpringmarathon2026Event6Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_6_PREMIUM")]
+    EventPassSpringmarathon2026Event6Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_7_FREE")]
+    EventPassSpringmarathon2026Event7Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_7_PREMIUM")]
+    EventPassSpringmarathon2026Event7Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_8_FREE")]
+    EventPassSpringmarathon2026Event8Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_8_PREMIUM")]
+    EventPassSpringmarathon2026Event8Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_9_FREE")]
+    EventPassSpringmarathon2026Event9Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_9_PREMIUM")]
+    EventPassSpringmarathon2026Event9Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_10_FREE")]
+    EventPassSpringmarathon2026Event10Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_10_PREMIUM")]
+    EventPassSpringmarathon2026Event10Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_11_FREE")]
+    EventPassSpringmarathon2026Event11Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_11_PREMIUM")]
+    EventPassSpringmarathon2026Event11Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_12_FREE")]
+    EventPassSpringmarathon2026Event12Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_12_PREMIUM")]
+    EventPassSpringmarathon2026Event12Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_13_FREE")]
+    EventPassSpringmarathon2026Event13Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_13_PREMIUM")]
+    EventPassSpringmarathon2026Event13Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_14_FREE")]
+    EventPassSpringmarathon2026Event14Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_14_PREMIUM")]
+    EventPassSpringmarathon2026Event14Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_15_FREE")]
+    EventPassSpringmarathon2026Event15Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_15_PREMIUM")]
+    EventPassSpringmarathon2026Event15Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_16_FREE")]
+    EventPassSpringmarathon2026Event16Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_16_PREMIUM")]
+    EventPassSpringmarathon2026Event16Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_17_FREE")]
+    EventPassSpringmarathon2026Event17Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_17_PREMIUM")]
+    EventPassSpringmarathon2026Event17Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_18_FREE")]
+    EventPassSpringmarathon2026Event18Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_18_PREMIUM")]
+    EventPassSpringmarathon2026Event18Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_19_FREE")]
+    EventPassSpringmarathon2026Event19Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_19_PREMIUM")]
+    EventPassSpringmarathon2026Event19Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_20_FREE")]
+    EventPassSpringmarathon2026Event20Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_20_PREMIUM")]
+    EventPassSpringmarathon2026Event20Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_21_FREE")]
+    EventPassSpringmarathon2026Event21Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_21_PREMIUM")]
+    EventPassSpringmarathon2026Event21Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_22_FREE")]
+    EventPassSpringmarathon2026Event22Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_22_PREMIUM")]
+    EventPassSpringmarathon2026Event22Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_23_FREE")]
+    EventPassSpringmarathon2026Event23Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_23_PREMIUM")]
+    EventPassSpringmarathon2026Event23Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_24_FREE")]
+    EventPassSpringmarathon2026Event24Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_24_PREMIUM")]
+    EventPassSpringmarathon2026Event24Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_25_FREE")]
+    EventPassSpringmarathon2026Event25Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_25_PREMIUM")]
+    EventPassSpringmarathon2026Event25Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_26_FREE")]
+    EventPassSpringmarathon2026Event26Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_26_PREMIUM")]
+    EventPassSpringmarathon2026Event26Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_27_FREE")]
+    EventPassSpringmarathon2026Event27Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_27_PREMIUM")]
+    EventPassSpringmarathon2026Event27Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_28_FREE")]
+    EventPassSpringmarathon2026Event28Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_28_PREMIUM")]
+    EventPassSpringmarathon2026Event28Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_29_FREE")]
+    EventPassSpringmarathon2026Event29Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_29_PREMIUM")]
+    EventPassSpringmarathon2026Event29Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_30_FREE")]
+    EventPassSpringmarathon2026Event30Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_30_PREMIUM")]
+    EventPassSpringmarathon2026Event30Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_31_FREE")]
+    EventPassSpringmarathon2026Event31Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_31_PREMIUM")]
+    EventPassSpringmarathon2026Event31Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_32_FREE")]
+    EventPassSpringmarathon2026Event32Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_32_PREMIUM")]
+    EventPassSpringmarathon2026Event32Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_33_FREE")]
+    EventPassSpringmarathon2026Event33Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_33_PREMIUM")]
+    EventPassSpringmarathon2026Event33Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_34_FREE")]
+    EventPassSpringmarathon2026Event34Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_34_PREMIUM")]
+    EventPassSpringmarathon2026Event34Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_35_FREE")]
+    EventPassSpringmarathon2026Event35Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_35_PREMIUM")]
+    EventPassSpringmarathon2026Event35Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_36_FREE")]
+    EventPassSpringmarathon2026Event36Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_36_PREMIUM")]
+    EventPassSpringmarathon2026Event36Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_37_FREE")]
+    EventPassSpringmarathon2026Event37Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_37_PREMIUM")]
+    EventPassSpringmarathon2026Event37Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_38_FREE")]
+    EventPassSpringmarathon2026Event38Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_38_PREMIUM")]
+    EventPassSpringmarathon2026Event38Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_39_FREE")]
+    EventPassSpringmarathon2026Event39Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_39_PREMIUM")]
+    EventPassSpringmarathon2026Event39Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_40_FREE")]
+    EventPassSpringmarathon2026Event40Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_40_PREMIUM")]
+    EventPassSpringmarathon2026Event40Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_41_FREE")]
+    EventPassSpringmarathon2026Event41Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_41_PREMIUM")]
+    EventPassSpringmarathon2026Event41Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_42_FREE")]
+    EventPassSpringmarathon2026Event42Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_42_PREMIUM")]
+    EventPassSpringmarathon2026Event42Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_43_FREE")]
+    EventPassSpringmarathon2026Event43Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_43_PREMIUM")]
+    EventPassSpringmarathon2026Event43Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_44_FREE")]
+    EventPassSpringmarathon2026Event44Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_44_PREMIUM")]
+    EventPassSpringmarathon2026Event44Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_45_FREE")]
+    EventPassSpringmarathon2026Event45Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_45_PREMIUM")]
+    EventPassSpringmarathon2026Event45Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_46_FREE")]
+    EventPassSpringmarathon2026Event46Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_46_PREMIUM")]
+    EventPassSpringmarathon2026Event46Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_47_FREE")]
+    EventPassSpringmarathon2026Event47Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_47_PREMIUM")]
+    EventPassSpringmarathon2026Event47Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_48_FREE")]
+    EventPassSpringmarathon2026Event48Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_48_PREMIUM")]
+    EventPassSpringmarathon2026Event48Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_49_FREE")]
+    EventPassSpringmarathon2026Event49Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_49_PREMIUM")]
+    EventPassSpringmarathon2026Event49Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_50_FREE")]
+    EventPassSpringmarathon2026Event50Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_50_PREMIUM")]
+    EventPassSpringmarathon2026Event50Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_51_FREE")]
+    EventPassSpringmarathon2026Event51Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_51_PREMIUM")]
+    EventPassSpringmarathon2026Event51Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_52_FREE")]
+    EventPassSpringmarathon2026Event52Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_52_PREMIUM")]
+    EventPassSpringmarathon2026Event52Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_53_FREE")]
+    EventPassSpringmarathon2026Event53Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_53_PREMIUM")]
+    EventPassSpringmarathon2026Event53Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_54_FREE")]
+    EventPassSpringmarathon2026Event54Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_54_PREMIUM")]
+    EventPassSpringmarathon2026Event54Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_55_FREE")]
+    EventPassSpringmarathon2026Event55Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_55_PREMIUM")]
+    EventPassSpringmarathon2026Event55Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_56_FREE")]
+    EventPassSpringmarathon2026Event56Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_56_PREMIUM")]
+    EventPassSpringmarathon2026Event56Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_57_FREE")]
+    EventPassSpringmarathon2026Event57Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_57_PREMIUM")]
+    EventPassSpringmarathon2026Event57Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_58_FREE")]
+    EventPassSpringmarathon2026Event58Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_58_PREMIUM")]
+    EventPassSpringmarathon2026Event58Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_59_FREE")]
+    EventPassSpringmarathon2026Event59Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_59_PREMIUM")]
+    EventPassSpringmarathon2026Event59Premium,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_60_FREE")]
+    EventPassSpringmarathon2026Event60Free,
+    #[serde(rename = "EVENT_PASS_SPRINGMARATHON2026_EVENT_60_PREMIUM")]
+    EventPassSpringmarathon2026Event60Premium,
 }

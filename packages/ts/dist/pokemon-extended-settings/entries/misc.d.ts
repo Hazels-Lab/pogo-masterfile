@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 863 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 861 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -4946,38 +4946,6 @@ export type PokemonExtendedSettingsV0414PokemonMothim = S<
 				xxsLowerBound: 0.441;
 			};
 			uniqueId: "MOTHIM";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0415PokemonCombee = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0415_POKEMON_COMBEE",
-		{
-			sizeSettings: {
-				mLowerBound: 0.225;
-				mUpperBound: 0.375;
-				xlUpperBound: 0.45;
-				xsLowerBound: 0.15;
-				xxlUpperBound: 0.525;
-				xxsLowerBound: 0.147;
-			};
-			uniqueId: "COMBEE";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0416PokemonVespiquen = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0416_POKEMON_VESPIQUEN",
-		{
-			sizeSettings: {
-				mLowerBound: 0.9;
-				mUpperBound: 1.5;
-				xlUpperBound: 1.8;
-				xsLowerBound: 0.6;
-				xxlUpperBound: 2.1;
-				xxsLowerBound: 0.588;
-			};
-			uniqueId: "VESPIQUEN";
 		}
 	>
 >;
@@ -14137,8 +14105,6 @@ export type PokemonExtendedSettingsMiscMasterfileEntry =
 	| PokemonExtendedSettingsV0412PokemonBurmy
 	| PokemonExtendedSettingsV0413PokemonWormadam
 	| PokemonExtendedSettingsV0414PokemonMothim
-	| PokemonExtendedSettingsV0415PokemonCombee
-	| PokemonExtendedSettingsV0416PokemonVespiquen
 	| PokemonExtendedSettingsV0417PokemonPachirisu
 	| PokemonExtendedSettingsV0418PokemonBuizel
 	| PokemonExtendedSettingsV0419PokemonFloatzel

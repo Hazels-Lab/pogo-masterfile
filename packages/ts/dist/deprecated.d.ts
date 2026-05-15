@@ -423,7 +423,7 @@ type DeprecatedClientQuestTemplateIds =
 	| "LEVEL_50_CAP_SUB_2"
 	| "LEVEL_50_CAP_SUB_3";
 
-/** @deprecated lastSeen 2026-01-24 — 30 entries */
+/** @deprecated lastSeen 2026-05-15 — 31 entries */
 type DeprecatedCodeGateProtoIds =
 	| "AGE_CONFIRM_CODE_GATE"
 	| "BF_PLUS_ROLLOUT_CODE_GATE"
@@ -452,6 +452,7 @@ type DeprecatedCodeGateProtoIds =
 	| "SHOW_RAID_GROUP_CODE_GATE"
 	| "SHOW_STAMP_GIFTING_SETTING_CODE_GATE"
 	| "SPECIAL_TRADE_SURFACING_CODE_GATE"
+	| "TODAY_VIEW_V3_CODE_GATE"
 	| "TRADE_SPECIAL_BACKGROUND_CODE_GATE"
 	| "USE_ITEM_MOVE_REROLL_CODE_GATE"
 	| "WEEKLY_CHALLENGES_ROLLOUT_CODE_GATE";
@@ -459,7 +460,7 @@ type DeprecatedCodeGateProtoIds =
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedEggTransparencySettingsIds = "EGG_TRANSPARENCY_SETTINGS";
 
-/** @deprecated lastSeen 2026-05-08 — 26 entries */
+/** @deprecated lastSeen 2026-05-08 — 25 entries */
 type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_30ANNIV2026_EVENT"
 	| "EVENT_PASS_APRIL2025_SEASON"
@@ -479,7 +480,6 @@ type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_JUNE2025_SEASON"
 	| "EVENT_PASS_MARCH2026_SEASON"
 	| "EVENT_PASS_MAY2025_SEASON"
-	| "EVENT_PASS_MAY2026_SEASON"
 	| "EVENT_PASS_NOVEMBER2025_SEASON"
 	| "EVENT_PASS_OCTOBER2025_SEASON"
 	| "EVENT_PASS_SEPTEMBER2025_SEASON"
@@ -12390,6 +12390,9 @@ type DeprecatedEvolvePreviewSettingsIds = "EVOLVE_PREVIEW_SETTINGS";
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedExtendedPrimalSettingsIds = "EXTENDED_PRIMAL_SETTINGS";
 
+/** @deprecated lastSeen 2026-05-15 — 2 entries */
+type DeprecatedFeatureGateIds = "EVENT_LIST_FEATURE_GATE" | "UPDATE_TICKETS_STRING_FEATURE_GATE";
+
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedFormsRefactorSettingsIds = "FORMS_REFACTOR_SETTINGS";
 
@@ -12482,8 +12485,9 @@ type DeprecatedPokemonInfoPanelSettingsIds = "POKEMON_INFO_PANEL_SETTINGS";
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedQuestEvolutionSettingsIds = "QUEST_EVOLUTION_SETTINGS";
 
-/** @deprecated lastSeen 2026-04-07 — 5 entries */
+/** @deprecated lastSeen 2026-05-15 — 6 entries */
 type DeprecatedRollBackIds =
+	| "BIDIRECTIONAL_FP_WEEKLY_CHALLENGE_REWARD_ROLL_BACK"
 	| "DELAYED_NOTIF_ROLL_BACK"
 	| "PERIODICALLY_CHECK_FOR_VISIBILITY_ROLL_BACK"
 	| "REMOVE_UI_CAM_ROLL_BACK"
@@ -12536,6 +12540,7 @@ export type DeprecatedTemplateId =
 	| DeprecatedEvolutionChainDisplaySettingsIds
 	| DeprecatedEvolvePreviewSettingsIds
 	| DeprecatedExtendedPrimalSettingsIds
+	| DeprecatedFeatureGateIds
 	| DeprecatedFormsRefactorSettingsIds
 	| DeprecatedFriendProfileSettingsIds
 	| DeprecatedGymLevelIds

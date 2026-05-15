@@ -9,8 +9,8 @@ use serde::{Deserialize, Serialize};
 pub enum RollBackTemplateId {
     #[serde(rename = "ANDROID_SENSORS_ROLL_BACK")]
     AndroidSensorsRollBack,
-    #[serde(rename = "BIDIRECTIONAL_FP_WEEKLY_CHALLENGE_REWARD_ROLL_BACK")]
-    BidirectionalFpWeeklyChallengeRewardRollBack,
+    #[serde(rename = "NPC_LEAGUE_SUFFIX_ROLL_BACK")]
+    NpcLeagueSuffixRollBack,
     #[serde(rename = "SINGLE_ROLL_SHINY_RATE_ROLL_BACK")]
     SingleRollShinyRateRollBack,
 }

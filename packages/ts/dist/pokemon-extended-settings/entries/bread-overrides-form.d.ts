@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 124 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 127 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -373,6 +373,69 @@ export type PokemonExtendedSettingsV0012PokemonButterfreeNormal = S<
 				xxsLowerBound: 0.539;
 			};
 			uniqueId: "BUTTERFREE";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0025PokemonPikachuFossil2026 = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0025_POKEMON_PIKACHU_FOSSIL_2026",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 62;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 27.5;
+						maxReticleSize: 14;
+						scale: 31;
+					};
+					maxStationVisualSettings: {
+						scale: 4.22;
+					};
+				},
+				{
+					averageHeightM: 21;
+					breadMode: "BREAD_DOUGH_MODE";
+					camera: {
+						cylinderHeightM: 1.1;
+						cylinderRadiusM: 1.3;
+					};
+					catchOverrideSettings: {
+						collisionHeadRadiusM: 0.25;
+						collisionRadiusM: 0.25;
+					};
+					maxBattleTrainerVisualSettings: {
+						xOffset: -5;
+						yOffset: -5;
+					};
+					maxBattleVisualSettings: {
+						scale: 20;
+						xOffset: 3;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 32.5;
+						maxReticleSize: 14;
+						scale: 10.5;
+					};
+					maxStationVisualSettings: {
+						scale: 1.25;
+					};
+					modelHeight: 2.57;
+					modelScaleV2: 0.86;
+				},
+			];
+			form: "PIKACHU_FOSSIL_2026";
+			sizeSettings: {
+				mLowerBound: 0.3;
+				mUpperBound: 0.5;
+				xlUpperBound: 0.6;
+				xsLowerBound: 0.2;
+				xxlUpperBound: 0.7;
+				xxsLowerBound: 0.196;
+			};
+			uniqueId: "PIKACHU";
 		}
 	>
 >;
@@ -2727,6 +2790,82 @@ export type PokemonExtendedSettingsV0379PokemonRegisteelNormal = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0415PokemonCombeeNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0415_POKEMON_COMBEE_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 55;
+						xOffset: 2;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 20;
+						maxReticleSize: 14;
+						scale: 18;
+					};
+					maxLobbyVisualSettings: {
+						scale: 50;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 0.56;
+					};
+					maxStationVisualSettings: {
+						scale: 3;
+					};
+				},
+			];
+			form: "COMBEE_NORMAL";
+			sizeSettings: {
+				mLowerBound: 0.225;
+				mUpperBound: 0.375;
+				xlUpperBound: 0.45;
+				xsLowerBound: 0.15;
+				xxlUpperBound: 0.525;
+				xxsLowerBound: 0.147;
+			};
+			uniqueId: "COMBEE";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0416PokemonVespiquenNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0416_POKEMON_VESPIQUEN_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 24.66;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 28;
+						maxReticleSize: 14;
+						scale: 9.5;
+					};
+					maxLobbyVisualSettings: {
+						scale: 0.8;
+					};
+					maxStationVisualSettings: {
+						scale: 1.84;
+					};
+				},
+			];
+			form: "VESPIQUEN_NORMAL";
+			sizeSettings: {
+				mLowerBound: 0.9;
+				mUpperBound: 1.5;
+				xlUpperBound: 1.8;
+				xsLowerBound: 0.6;
+				xxlUpperBound: 2.1;
+				xxsLowerBound: 0.588;
+			};
+			uniqueId: "VESPIQUEN";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0470PokemonLeafeonNormal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0470_POKEMON_LEAFEON_NORMAL",
@@ -4861,6 +5000,7 @@ export type PokemonExtendedSettingsBreadOverridesFormMasterfileEntry =
 	| PokemonExtendedSettingsV0010PokemonCaterpieNormal
 	| PokemonExtendedSettingsV0011PokemonMetapodNormal
 	| PokemonExtendedSettingsV0012PokemonButterfreeNormal
+	| PokemonExtendedSettingsV0025PokemonPikachuFossil2026
 	| PokemonExtendedSettingsV0025PokemonPikachuGofest2026CapBlue
 	| PokemonExtendedSettingsV0025PokemonPikachuGofest2026CapRed
 	| PokemonExtendedSettingsV0025PokemonPikachuGofest2026CapYellow
@@ -4921,6 +5061,8 @@ export type PokemonExtendedSettingsBreadOverridesFormMasterfileEntry =
 	| PokemonExtendedSettingsV0377PokemonRegirockNormal
 	| PokemonExtendedSettingsV0378PokemonRegiceNormal
 	| PokemonExtendedSettingsV0379PokemonRegisteelNormal
+	| PokemonExtendedSettingsV0415PokemonCombeeNormal
+	| PokemonExtendedSettingsV0416PokemonVespiquenNormal
 	| PokemonExtendedSettingsV0470PokemonLeafeonNormal
 	| PokemonExtendedSettingsV0471PokemonGlaceonNormal
 	| PokemonExtendedSettingsV0519PokemonPidoveNormal

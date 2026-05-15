@@ -17,8 +17,6 @@ pub enum FeatureGateTemplateId {
     DayNightPoiFeatureGate,
     #[serde(rename = "ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE")]
     EnablePvpChallengeSpannerFeatureGate,
-    #[serde(rename = "EVENT_LIST_FEATURE_GATE")]
-    EventListFeatureGate,
     #[serde(rename = "EVENT_PASS_BONUS_RANKS_FEATURE_GATE")]
     EventPassBonusRanksFeatureGate,
     #[serde(rename = "EVENT_PASS_CLAIMABLE_REWARD_TOGGLE_FEATURE_GATE")]
@@ -31,8 +29,6 @@ pub enum FeatureGateTemplateId {
     Mega2026FeatureGate,
     #[serde(rename = "STORE_REFRESH_FEATURE_GATE")]
     StoreRefreshFeatureGate,
-    #[serde(rename = "UPDATE_TICKETS_STRING_FEATURE_GATE")]
-    UpdateTicketsStringFeatureGate,
     #[serde(rename = "VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE")]
     VnextPreResponseInputBlockingBehaviorFeatureGate,
 }

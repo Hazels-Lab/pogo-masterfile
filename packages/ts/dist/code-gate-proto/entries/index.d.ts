@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "codeGateProto", 13 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "codeGateProto", 12 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { CodeGateProto } from "../types";
@@ -52,7 +52,6 @@ export type CodeGateProtoMapThemeLowPerfCodeGate = S<CodeGateProto<"MAP_THEME_LO
 export type CodeGateProtoPredictChargeMoveOnSubmitRollBackCodeGate = S<CodeGateProto<"PREDICT_CHARGE_MOVE_ON_SUBMIT_ROLL_BACK_CODE_GATE">>;
 export type CodeGateProtoPushGatewayMultiActionCodeGate = S<CodeGateProto<"PUSH_GATEWAY_MULTI_ACTION_CODE_GATE">>;
 export type CodeGateProtoStampCollectionSnapshotEnabledCodeGate = S<CodeGateProto<"STAMP_COLLECTION_SNAPSHOT_ENABLED_CODE_GATE">>;
-export type CodeGateProtoTodayViewV3CodeGate = S<CodeGateProto<"TODAY_VIEW_V3_CODE_GATE">>;
 export type CodeGateProtoUseExtendedSettingsForMaxScaleCodeGate = S<CodeGateProto<"USE_EXTENDED_SETTINGS_FOR_MAX_SCALE_CODE_GATE">>;
 export type CodeGateProtoUseGmtSkuDataCodeGate = S<CodeGateProto<"USE_GMT_SKU_DATA_CODE_GATE">>;
 
@@ -67,7 +66,6 @@ export type CodeGateProtoMasterfileEntry =
 	| CodeGateProtoPredictChargeMoveOnSubmitRollBackCodeGate
 	| CodeGateProtoPushGatewayMultiActionCodeGate
 	| CodeGateProtoStampCollectionSnapshotEnabledCodeGate
-	| CodeGateProtoTodayViewV3CodeGate
 	| CodeGateProtoUseExtendedSettingsForMaxScaleCodeGate
 	| CodeGateProtoUseGmtSkuDataCodeGate;
 

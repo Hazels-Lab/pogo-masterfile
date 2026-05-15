@@ -117,6 +117,7 @@ pub mod combat_npc_personality;
 pub mod combat_npc_trainer;
 pub mod combat_ranking_proto_settings;
 pub mod combat_type;
+pub mod event_pass_settings;
 pub mod event_pass_tier_settings;
 pub mod evolution_chain_display_settings;
 pub mod evolution_quest_template;
@@ -210,9 +211,9 @@ pub enum MasterfileEntry {
     CombatRankingProtoSettings(combat_ranking_proto_settings::CombatRankingProtoSettingsEntry),
     CombatType(combat_type::CombatTypeEntry),
     TypeEffective(type_effective::TypeEffectiveEntry),
-    FeatureGate(feature_gate::FeatureGateEntry),
-    CodeGateProto(code_gate_proto::CodeGateProtoEntry),
     IapCategoryDisplay(iap_category_display::IapCategoryDisplayEntry),
+    CodeGateProto(code_gate_proto::CodeGateProtoEntry),
+    FeatureGate(feature_gate::FeatureGateEntry),
     RecommendedSearchSettings(recommended_search_settings::RecommendedSearchSettingsEntry),
     CombatNpcTrainer(combat_npc_trainer::CombatNpcTrainerEntry),
     NonCombatMoveSettings(non_combat_move_settings::NonCombatMoveSettingsEntry),
@@ -237,6 +238,7 @@ pub enum MasterfileEntry {
     QuestSettings(quest_settings::QuestSettingsEntry),
     RollBack(roll_back::RollBackEntry),
     AvatarGroupOrderSettings(avatar_group_order_settings::AvatarGroupOrderSettingsEntry),
+    EventPassSettings(event_pass_settings::EventPassSettingsEntry),
     PartyPlayGeneralSettings(party_play_general_settings::PartyPlayGeneralSettingsEntry),
     PokemonUpgrades(pokemon_upgrades::PokemonUpgradesEntry),
     VsSeekerPokemonRewards(vs_seeker_pokemon_rewards::VsSeekerPokemonRewardsEntry),
@@ -289,7 +291,6 @@ pub enum MasterfileEntry {
     EggHatchImprovementsSettings(singletons::EggHatchImprovementsSettingsEntry),
     EncounterSettings(singletons::EncounterSettingsEntry),
     ErrorReportingSettings(singletons::ErrorReportingSettingsEntry),
-    EventPassSettings(singletons::EventPassSettingsEntry),
     EventPlannerPopularNotificationSettings(
         singletons::EventPlannerPopularNotificationSettingsEntry,
     ),
@@ -476,9 +477,9 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 }
                 "combatType" => serde_json::from_value(value).map(Self::CombatType),
                 "typeEffective" => serde_json::from_value(value).map(Self::TypeEffective),
-                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
-                "codeGateProto" => serde_json::from_value(value).map(Self::CodeGateProto),
                 "iapCategoryDisplay" => serde_json::from_value(value).map(Self::IapCategoryDisplay),
+                "codeGateProto" => serde_json::from_value(value).map(Self::CodeGateProto),
+                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
                 "recommendedSearchSettings" => {
                     serde_json::from_value(value).map(Self::RecommendedSearchSettings)
                 }
@@ -525,6 +526,7 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "avatarGroupOrderSettings" => {
                     serde_json::from_value(value).map(Self::AvatarGroupOrderSettings)
                 }
+                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "partyPlayGeneralSettings" => {
                     serde_json::from_value(value).map(Self::PartyPlayGeneralSettings)
                 }
@@ -653,7 +655,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "errorReportingSettings" => {
                     serde_json::from_value(value).map(Self::ErrorReportingSettings)
                 }
-                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "eventPlannerPopularNotificationSettings" => {
                     serde_json::from_value(value).map(Self::EventPlannerPopularNotificationSettings)
                 }

@@ -1,9 +1,9 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings", split "premium", 210 entries.
+// Generated from Pokémon GO masterfile — group "eventPassTierSettings", split "premium/may2026", 210 entries.
 
-import type { S } from "../../_utils";
-import type { EventPassTierSettings } from "../types";
+import type { S } from "../../../_utils";
+import type { EventPassTierSettings } from "../../types";
 
-export type EventPassTierSettings1Premium = S<
+export type EventPassTierSettingsMay2026Season1Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_1_PREMIUM",
 		{
@@ -18,7 +18,7 @@ export type EventPassTierSettings1Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings2Premium = S<
+export type EventPassTierSettingsMay2026Season2Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_2_PREMIUM",
 		{
@@ -36,7 +36,7 @@ export type EventPassTierSettings2Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings3Premium = S<
+export type EventPassTierSettingsMay2026Season3Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_3_PREMIUM",
 		{
@@ -54,7 +54,7 @@ export type EventPassTierSettings3Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings4Premium = S<
+export type EventPassTierSettingsMay2026Season4Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_4_PREMIUM",
 		{
@@ -72,7 +72,7 @@ export type EventPassTierSettings4Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings5Premium = S<
+export type EventPassTierSettingsMay2026Season5Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_5_PREMIUM",
 		{
@@ -87,7 +87,7 @@ export type EventPassTierSettings5Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings6Premium = S<
+export type EventPassTierSettingsMay2026Season6Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_6_PREMIUM",
 		{
@@ -102,7 +102,7 @@ export type EventPassTierSettings6Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings7Premium = S<
+export type EventPassTierSettingsMay2026Season7Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_7_PREMIUM",
 		{
@@ -120,7 +120,7 @@ export type EventPassTierSettings7Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings8Premium = S<
+export type EventPassTierSettingsMay2026Season8Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_8_PREMIUM",
 		{
@@ -138,7 +138,7 @@ export type EventPassTierSettings8Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings9Premium = S<
+export type EventPassTierSettingsMay2026Season9Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_9_PREMIUM",
 		{
@@ -159,7 +159,7 @@ export type EventPassTierSettings9Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings10Premium = S<
+export type EventPassTierSettingsMay2026Season10Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_10_PREMIUM",
 		{
@@ -174,7 +174,7 @@ export type EventPassTierSettings10Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings11Premium = S<
+export type EventPassTierSettingsMay2026Season11Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_11_PREMIUM",
 		{
@@ -192,7 +192,7 @@ export type EventPassTierSettings11Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings12Premium = S<
+export type EventPassTierSettingsMay2026Season12Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_12_PREMIUM",
 		{
@@ -210,7 +210,7 @@ export type EventPassTierSettings12Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings13Premium = S<
+export type EventPassTierSettingsMay2026Season13Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_13_PREMIUM",
 		{
@@ -228,7 +228,7 @@ export type EventPassTierSettings13Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings14Premium = S<
+export type EventPassTierSettingsMay2026Season14Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_14_PREMIUM",
 		{
@@ -246,7 +246,7 @@ export type EventPassTierSettings14Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings15Premium = S<
+export type EventPassTierSettingsMay2026Season15Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_15_PREMIUM",
 		{
@@ -261,7 +261,7 @@ export type EventPassTierSettings15Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings16Premium = S<
+export type EventPassTierSettingsMay2026Season16Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_16_PREMIUM",
 		{
@@ -276,7 +276,7 @@ export type EventPassTierSettings16Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings17Premium = S<
+export type EventPassTierSettingsMay2026Season17Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_17_PREMIUM",
 		{
@@ -297,7 +297,7 @@ export type EventPassTierSettings17Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings18Premium = S<
+export type EventPassTierSettingsMay2026Season18Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_18_PREMIUM",
 		{
@@ -315,7 +315,7 @@ export type EventPassTierSettings18Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings19Premium = S<
+export type EventPassTierSettingsMay2026Season19Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_19_PREMIUM",
 		{
@@ -333,7 +333,7 @@ export type EventPassTierSettings19Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings20Premium = S<
+export type EventPassTierSettingsMay2026Season20Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_20_PREMIUM",
 		{
@@ -348,7 +348,7 @@ export type EventPassTierSettings20Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings21Premium = S<
+export type EventPassTierSettingsMay2026Season21Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_21_PREMIUM",
 		{
@@ -366,7 +366,7 @@ export type EventPassTierSettings21Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings22Premium = S<
+export type EventPassTierSettingsMay2026Season22Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_22_PREMIUM",
 		{
@@ -384,7 +384,7 @@ export type EventPassTierSettings22Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings23Premium = S<
+export type EventPassTierSettingsMay2026Season23Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_23_PREMIUM",
 		{
@@ -402,7 +402,7 @@ export type EventPassTierSettings23Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings24Premium = S<
+export type EventPassTierSettingsMay2026Season24Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_24_PREMIUM",
 		{
@@ -423,7 +423,7 @@ export type EventPassTierSettings24Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings25Premium = S<
+export type EventPassTierSettingsMay2026Season25Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_25_PREMIUM",
 		{
@@ -432,7 +432,7 @@ export type EventPassTierSettings25Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings26Premium = S<
+export type EventPassTierSettingsMay2026Season26Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_26_PREMIUM",
 		{
@@ -450,7 +450,7 @@ export type EventPassTierSettings26Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings27Premium = S<
+export type EventPassTierSettingsMay2026Season27Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_27_PREMIUM",
 		{
@@ -472,7 +472,7 @@ export type EventPassTierSettings27Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings28Premium = S<
+export type EventPassTierSettingsMay2026Season28Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_28_PREMIUM",
 		{
@@ -490,7 +490,7 @@ export type EventPassTierSettings28Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings29Premium = S<
+export type EventPassTierSettingsMay2026Season29Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_29_PREMIUM",
 		{
@@ -508,7 +508,7 @@ export type EventPassTierSettings29Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings30Premium = S<
+export type EventPassTierSettingsMay2026Season30Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_30_PREMIUM",
 		{
@@ -523,7 +523,7 @@ export type EventPassTierSettings30Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings31Premium = S<
+export type EventPassTierSettingsMay2026Season31Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_31_PREMIUM",
 		{
@@ -541,7 +541,7 @@ export type EventPassTierSettings31Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings32Premium = S<
+export type EventPassTierSettingsMay2026Season32Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_32_PREMIUM",
 		{
@@ -559,7 +559,7 @@ export type EventPassTierSettings32Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings33Premium = S<
+export type EventPassTierSettingsMay2026Season33Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_33_PREMIUM",
 		{
@@ -577,7 +577,7 @@ export type EventPassTierSettings33Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings34Premium = S<
+export type EventPassTierSettingsMay2026Season34Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_34_PREMIUM",
 		{
@@ -592,7 +592,7 @@ export type EventPassTierSettings34Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings35Premium = S<
+export type EventPassTierSettingsMay2026Season35Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_35_PREMIUM",
 		{
@@ -610,7 +610,7 @@ export type EventPassTierSettings35Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings36Premium = S<
+export type EventPassTierSettingsMay2026Season36Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_36_PREMIUM",
 		{
@@ -625,7 +625,7 @@ export type EventPassTierSettings36Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings37Premium = S<
+export type EventPassTierSettingsMay2026Season37Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_37_PREMIUM",
 		{
@@ -643,7 +643,7 @@ export type EventPassTierSettings37Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings38Premium = S<
+export type EventPassTierSettingsMay2026Season38Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_38_PREMIUM",
 		{
@@ -661,7 +661,7 @@ export type EventPassTierSettings38Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings39Premium = S<
+export type EventPassTierSettingsMay2026Season39Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_39_PREMIUM",
 		{
@@ -682,7 +682,7 @@ export type EventPassTierSettings39Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings40Premium = S<
+export type EventPassTierSettingsMay2026Season40Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_40_PREMIUM",
 		{
@@ -697,7 +697,7 @@ export type EventPassTierSettings40Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings41Premium = S<
+export type EventPassTierSettingsMay2026Season41Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_41_PREMIUM",
 		{
@@ -715,7 +715,7 @@ export type EventPassTierSettings41Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings42Premium = S<
+export type EventPassTierSettingsMay2026Season42Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_42_PREMIUM",
 		{
@@ -733,7 +733,7 @@ export type EventPassTierSettings42Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings43Premium = S<
+export type EventPassTierSettingsMay2026Season43Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_43_PREMIUM",
 		{
@@ -751,7 +751,7 @@ export type EventPassTierSettings43Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings44Premium = S<
+export type EventPassTierSettingsMay2026Season44Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_44_PREMIUM",
 		{
@@ -766,7 +766,7 @@ export type EventPassTierSettings44Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings45Premium = S<
+export type EventPassTierSettingsMay2026Season45Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_45_PREMIUM",
 		{
@@ -784,7 +784,7 @@ export type EventPassTierSettings45Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings46Premium = S<
+export type EventPassTierSettingsMay2026Season46Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_46_PREMIUM",
 		{
@@ -799,7 +799,7 @@ export type EventPassTierSettings46Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings47Premium = S<
+export type EventPassTierSettingsMay2026Season47Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_47_PREMIUM",
 		{
@@ -817,7 +817,7 @@ export type EventPassTierSettings47Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings48Premium = S<
+export type EventPassTierSettingsMay2026Season48Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_48_PREMIUM",
 		{
@@ -835,7 +835,7 @@ export type EventPassTierSettings48Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings49Premium = S<
+export type EventPassTierSettingsMay2026Season49Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_49_PREMIUM",
 		{
@@ -853,7 +853,7 @@ export type EventPassTierSettings49Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings50Premium = S<
+export type EventPassTierSettingsMay2026Season50Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_50_PREMIUM",
 		{
@@ -862,7 +862,7 @@ export type EventPassTierSettings50Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings51Premium = S<
+export type EventPassTierSettingsMay2026Season51Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_51_PREMIUM",
 		{
@@ -880,7 +880,7 @@ export type EventPassTierSettings51Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings52Premium = S<
+export type EventPassTierSettingsMay2026Season52Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_52_PREMIUM",
 		{
@@ -898,7 +898,7 @@ export type EventPassTierSettings52Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings53Premium = S<
+export type EventPassTierSettingsMay2026Season53Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_53_PREMIUM",
 		{
@@ -916,7 +916,7 @@ export type EventPassTierSettings53Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings54Premium = S<
+export type EventPassTierSettingsMay2026Season54Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_54_PREMIUM",
 		{
@@ -937,7 +937,7 @@ export type EventPassTierSettings54Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings55Premium = S<
+export type EventPassTierSettingsMay2026Season55Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_55_PREMIUM",
 		{
@@ -955,7 +955,7 @@ export type EventPassTierSettings55Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings56Premium = S<
+export type EventPassTierSettingsMay2026Season56Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_56_PREMIUM",
 		{
@@ -973,7 +973,7 @@ export type EventPassTierSettings56Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings57Premium = S<
+export type EventPassTierSettingsMay2026Season57Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_57_PREMIUM",
 		{
@@ -991,7 +991,7 @@ export type EventPassTierSettings57Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings58Premium = S<
+export type EventPassTierSettingsMay2026Season58Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_58_PREMIUM",
 		{
@@ -1009,7 +1009,7 @@ export type EventPassTierSettings58Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings59Premium = S<
+export type EventPassTierSettingsMay2026Season59Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_59_PREMIUM",
 		{
@@ -1027,7 +1027,7 @@ export type EventPassTierSettings59Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings60Premium = S<
+export type EventPassTierSettingsMay2026Season60Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_60_PREMIUM",
 		{
@@ -1042,7 +1042,7 @@ export type EventPassTierSettings60Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings61Premium = S<
+export type EventPassTierSettingsMay2026Season61Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_61_PREMIUM",
 		{
@@ -1060,7 +1060,7 @@ export type EventPassTierSettings61Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings62Premium = S<
+export type EventPassTierSettingsMay2026Season62Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_62_PREMIUM",
 		{
@@ -1081,7 +1081,7 @@ export type EventPassTierSettings62Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings63Premium = S<
+export type EventPassTierSettingsMay2026Season63Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_63_PREMIUM",
 		{
@@ -1099,7 +1099,7 @@ export type EventPassTierSettings63Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings64Premium = S<
+export type EventPassTierSettingsMay2026Season64Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_64_PREMIUM",
 		{
@@ -1114,7 +1114,7 @@ export type EventPassTierSettings64Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings65Premium = S<
+export type EventPassTierSettingsMay2026Season65Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_65_PREMIUM",
 		{
@@ -1132,7 +1132,7 @@ export type EventPassTierSettings65Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings66Premium = S<
+export type EventPassTierSettingsMay2026Season66Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_66_PREMIUM",
 		{
@@ -1147,7 +1147,7 @@ export type EventPassTierSettings66Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings67Premium = S<
+export type EventPassTierSettingsMay2026Season67Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_67_PREMIUM",
 		{
@@ -1165,7 +1165,7 @@ export type EventPassTierSettings67Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings68Premium = S<
+export type EventPassTierSettingsMay2026Season68Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_68_PREMIUM",
 		{
@@ -1183,7 +1183,7 @@ export type EventPassTierSettings68Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings69Premium = S<
+export type EventPassTierSettingsMay2026Season69Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_69_PREMIUM",
 		{
@@ -1201,7 +1201,7 @@ export type EventPassTierSettings69Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings70Premium = S<
+export type EventPassTierSettingsMay2026Season70Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_70_PREMIUM",
 		{
@@ -1216,7 +1216,7 @@ export type EventPassTierSettings70Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings71Premium = S<
+export type EventPassTierSettingsMay2026Season71Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_71_PREMIUM",
 		{
@@ -1234,7 +1234,7 @@ export type EventPassTierSettings71Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings72Premium = S<
+export type EventPassTierSettingsMay2026Season72Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_72_PREMIUM",
 		{
@@ -1252,7 +1252,7 @@ export type EventPassTierSettings72Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings73Premium = S<
+export type EventPassTierSettingsMay2026Season73Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_73_PREMIUM",
 		{
@@ -1270,7 +1270,7 @@ export type EventPassTierSettings73Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings74Premium = S<
+export type EventPassTierSettingsMay2026Season74Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_74_PREMIUM",
 		{
@@ -1288,7 +1288,7 @@ export type EventPassTierSettings74Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings75Premium = S<
+export type EventPassTierSettingsMay2026Season75Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_75_PREMIUM",
 		{
@@ -1297,7 +1297,7 @@ export type EventPassTierSettings75Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings76Premium = S<
+export type EventPassTierSettingsMay2026Season76Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_76_PREMIUM",
 		{
@@ -1315,7 +1315,7 @@ export type EventPassTierSettings76Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings77Premium = S<
+export type EventPassTierSettingsMay2026Season77Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_77_PREMIUM",
 		{
@@ -1333,7 +1333,7 @@ export type EventPassTierSettings77Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings78Premium = S<
+export type EventPassTierSettingsMay2026Season78Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_78_PREMIUM",
 		{
@@ -1351,7 +1351,7 @@ export type EventPassTierSettings78Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings79Premium = S<
+export type EventPassTierSettingsMay2026Season79Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_79_PREMIUM",
 		{
@@ -1366,7 +1366,7 @@ export type EventPassTierSettings79Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings80Premium = S<
+export type EventPassTierSettingsMay2026Season80Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_80_PREMIUM",
 		{
@@ -1381,7 +1381,7 @@ export type EventPassTierSettings80Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings81Premium = S<
+export type EventPassTierSettingsMay2026Season81Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_81_PREMIUM",
 		{
@@ -1396,7 +1396,7 @@ export type EventPassTierSettings81Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings82Premium = S<
+export type EventPassTierSettingsMay2026Season82Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_82_PREMIUM",
 		{
@@ -1417,7 +1417,7 @@ export type EventPassTierSettings82Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings83Premium = S<
+export type EventPassTierSettingsMay2026Season83Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_83_PREMIUM",
 		{
@@ -1435,7 +1435,7 @@ export type EventPassTierSettings83Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings84Premium = S<
+export type EventPassTierSettingsMay2026Season84Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_84_PREMIUM",
 		{
@@ -1456,7 +1456,7 @@ export type EventPassTierSettings84Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings85Premium = S<
+export type EventPassTierSettingsMay2026Season85Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_85_PREMIUM",
 		{
@@ -1474,7 +1474,7 @@ export type EventPassTierSettings85Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings86Premium = S<
+export type EventPassTierSettingsMay2026Season86Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_86_PREMIUM",
 		{
@@ -1492,7 +1492,7 @@ export type EventPassTierSettings86Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings87Premium = S<
+export type EventPassTierSettingsMay2026Season87Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_87_PREMIUM",
 		{
@@ -1510,7 +1510,7 @@ export type EventPassTierSettings87Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings88Premium = S<
+export type EventPassTierSettingsMay2026Season88Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_88_PREMIUM",
 		{
@@ -1528,7 +1528,7 @@ export type EventPassTierSettings88Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings89Premium = S<
+export type EventPassTierSettingsMay2026Season89Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_89_PREMIUM",
 		{
@@ -1546,7 +1546,7 @@ export type EventPassTierSettings89Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings90Premium = S<
+export type EventPassTierSettingsMay2026Season90Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_90_PREMIUM",
 		{
@@ -1561,7 +1561,7 @@ export type EventPassTierSettings90Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings91Premium = S<
+export type EventPassTierSettingsMay2026Season91Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_91_PREMIUM",
 		{
@@ -1579,7 +1579,7 @@ export type EventPassTierSettings91Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings92Premium = S<
+export type EventPassTierSettingsMay2026Season92Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_92_PREMIUM",
 		{
@@ -1597,7 +1597,7 @@ export type EventPassTierSettings92Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings93Premium = S<
+export type EventPassTierSettingsMay2026Season93Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_93_PREMIUM",
 		{
@@ -1615,7 +1615,7 @@ export type EventPassTierSettings93Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings94Premium = S<
+export type EventPassTierSettingsMay2026Season94Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_94_PREMIUM",
 		{
@@ -1636,7 +1636,7 @@ export type EventPassTierSettings94Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings95Premium = S<
+export type EventPassTierSettingsMay2026Season95Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_95_PREMIUM",
 		{
@@ -1654,7 +1654,7 @@ export type EventPassTierSettings95Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings96Premium = S<
+export type EventPassTierSettingsMay2026Season96Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_96_PREMIUM",
 		{
@@ -1672,7 +1672,7 @@ export type EventPassTierSettings96Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings97Premium = S<
+export type EventPassTierSettingsMay2026Season97Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_97_PREMIUM",
 		{
@@ -1690,7 +1690,7 @@ export type EventPassTierSettings97Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings98Premium = S<
+export type EventPassTierSettingsMay2026Season98Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_98_PREMIUM",
 		{
@@ -1708,7 +1708,7 @@ export type EventPassTierSettings98Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings99Premium = S<
+export type EventPassTierSettingsMay2026Season99Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_99_PREMIUM",
 		{
@@ -1726,7 +1726,7 @@ export type EventPassTierSettings99Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings100Premium = S<
+export type EventPassTierSettingsMay2026Season100Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_100_PREMIUM",
 		{
@@ -1741,7 +1741,7 @@ export type EventPassTierSettings100Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings101Premium = S<
+export type EventPassTierSettingsMay2026Season101Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_101_PREMIUM",
 		{
@@ -1756,7 +1756,7 @@ export type EventPassTierSettings101Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings102Premium = S<
+export type EventPassTierSettingsMay2026Season102Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_102_PREMIUM",
 		{
@@ -1771,7 +1771,7 @@ export type EventPassTierSettings102Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings103Premium = S<
+export type EventPassTierSettingsMay2026Season103Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_103_PREMIUM",
 		{
@@ -1786,7 +1786,7 @@ export type EventPassTierSettings103Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings104Premium = S<
+export type EventPassTierSettingsMay2026Season104Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_104_PREMIUM",
 		{
@@ -1801,7 +1801,7 @@ export type EventPassTierSettings104Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings105Premium = S<
+export type EventPassTierSettingsMay2026Season105Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_105_PREMIUM",
 		{
@@ -1816,7 +1816,7 @@ export type EventPassTierSettings105Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings106Premium = S<
+export type EventPassTierSettingsMay2026Season106Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_106_PREMIUM",
 		{
@@ -1831,7 +1831,7 @@ export type EventPassTierSettings106Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings107Premium = S<
+export type EventPassTierSettingsMay2026Season107Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_107_PREMIUM",
 		{
@@ -1846,7 +1846,7 @@ export type EventPassTierSettings107Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings108Premium = S<
+export type EventPassTierSettingsMay2026Season108Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_108_PREMIUM",
 		{
@@ -1861,7 +1861,7 @@ export type EventPassTierSettings108Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings109Premium = S<
+export type EventPassTierSettingsMay2026Season109Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_109_PREMIUM",
 		{
@@ -1876,7 +1876,7 @@ export type EventPassTierSettings109Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings110Premium = S<
+export type EventPassTierSettingsMay2026Season110Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_110_PREMIUM",
 		{
@@ -1891,7 +1891,7 @@ export type EventPassTierSettings110Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings111Premium = S<
+export type EventPassTierSettingsMay2026Season111Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_111_PREMIUM",
 		{
@@ -1906,7 +1906,7 @@ export type EventPassTierSettings111Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings112Premium = S<
+export type EventPassTierSettingsMay2026Season112Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_112_PREMIUM",
 		{
@@ -1921,7 +1921,7 @@ export type EventPassTierSettings112Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings113Premium = S<
+export type EventPassTierSettingsMay2026Season113Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_113_PREMIUM",
 		{
@@ -1936,7 +1936,7 @@ export type EventPassTierSettings113Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings114Premium = S<
+export type EventPassTierSettingsMay2026Season114Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_114_PREMIUM",
 		{
@@ -1951,7 +1951,7 @@ export type EventPassTierSettings114Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings115Premium = S<
+export type EventPassTierSettingsMay2026Season115Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_115_PREMIUM",
 		{
@@ -1966,7 +1966,7 @@ export type EventPassTierSettings115Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings116Premium = S<
+export type EventPassTierSettingsMay2026Season116Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_116_PREMIUM",
 		{
@@ -1981,7 +1981,7 @@ export type EventPassTierSettings116Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings117Premium = S<
+export type EventPassTierSettingsMay2026Season117Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_117_PREMIUM",
 		{
@@ -1996,7 +1996,7 @@ export type EventPassTierSettings117Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings118Premium = S<
+export type EventPassTierSettingsMay2026Season118Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_118_PREMIUM",
 		{
@@ -2011,7 +2011,7 @@ export type EventPassTierSettings118Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings119Premium = S<
+export type EventPassTierSettingsMay2026Season119Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_119_PREMIUM",
 		{
@@ -2026,7 +2026,7 @@ export type EventPassTierSettings119Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings120Premium = S<
+export type EventPassTierSettingsMay2026Season120Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_120_PREMIUM",
 		{
@@ -2041,7 +2041,7 @@ export type EventPassTierSettings120Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings121Premium = S<
+export type EventPassTierSettingsMay2026Season121Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_121_PREMIUM",
 		{
@@ -2056,7 +2056,7 @@ export type EventPassTierSettings121Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings122Premium = S<
+export type EventPassTierSettingsMay2026Season122Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_122_PREMIUM",
 		{
@@ -2071,7 +2071,7 @@ export type EventPassTierSettings122Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings123Premium = S<
+export type EventPassTierSettingsMay2026Season123Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_123_PREMIUM",
 		{
@@ -2086,7 +2086,7 @@ export type EventPassTierSettings123Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings124Premium = S<
+export type EventPassTierSettingsMay2026Season124Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_124_PREMIUM",
 		{
@@ -2101,7 +2101,7 @@ export type EventPassTierSettings124Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings125Premium = S<
+export type EventPassTierSettingsMay2026Season125Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_125_PREMIUM",
 		{
@@ -2116,7 +2116,7 @@ export type EventPassTierSettings125Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings126Premium = S<
+export type EventPassTierSettingsMay2026Season126Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_126_PREMIUM",
 		{
@@ -2131,7 +2131,7 @@ export type EventPassTierSettings126Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings127Premium = S<
+export type EventPassTierSettingsMay2026Season127Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_127_PREMIUM",
 		{
@@ -2146,7 +2146,7 @@ export type EventPassTierSettings127Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings128Premium = S<
+export type EventPassTierSettingsMay2026Season128Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_128_PREMIUM",
 		{
@@ -2161,7 +2161,7 @@ export type EventPassTierSettings128Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings129Premium = S<
+export type EventPassTierSettingsMay2026Season129Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_129_PREMIUM",
 		{
@@ -2176,7 +2176,7 @@ export type EventPassTierSettings129Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings130Premium = S<
+export type EventPassTierSettingsMay2026Season130Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_130_PREMIUM",
 		{
@@ -2191,7 +2191,7 @@ export type EventPassTierSettings130Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings131Premium = S<
+export type EventPassTierSettingsMay2026Season131Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_131_PREMIUM",
 		{
@@ -2206,7 +2206,7 @@ export type EventPassTierSettings131Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings132Premium = S<
+export type EventPassTierSettingsMay2026Season132Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_132_PREMIUM",
 		{
@@ -2221,7 +2221,7 @@ export type EventPassTierSettings132Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings133Premium = S<
+export type EventPassTierSettingsMay2026Season133Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_133_PREMIUM",
 		{
@@ -2236,7 +2236,7 @@ export type EventPassTierSettings133Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings134Premium = S<
+export type EventPassTierSettingsMay2026Season134Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_134_PREMIUM",
 		{
@@ -2251,7 +2251,7 @@ export type EventPassTierSettings134Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings135Premium = S<
+export type EventPassTierSettingsMay2026Season135Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_135_PREMIUM",
 		{
@@ -2266,7 +2266,7 @@ export type EventPassTierSettings135Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings136Premium = S<
+export type EventPassTierSettingsMay2026Season136Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_136_PREMIUM",
 		{
@@ -2281,7 +2281,7 @@ export type EventPassTierSettings136Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings137Premium = S<
+export type EventPassTierSettingsMay2026Season137Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_137_PREMIUM",
 		{
@@ -2296,7 +2296,7 @@ export type EventPassTierSettings137Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings138Premium = S<
+export type EventPassTierSettingsMay2026Season138Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_138_PREMIUM",
 		{
@@ -2311,7 +2311,7 @@ export type EventPassTierSettings138Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings139Premium = S<
+export type EventPassTierSettingsMay2026Season139Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_139_PREMIUM",
 		{
@@ -2326,7 +2326,7 @@ export type EventPassTierSettings139Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings140Premium = S<
+export type EventPassTierSettingsMay2026Season140Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_140_PREMIUM",
 		{
@@ -2341,7 +2341,7 @@ export type EventPassTierSettings140Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings141Premium = S<
+export type EventPassTierSettingsMay2026Season141Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_141_PREMIUM",
 		{
@@ -2356,7 +2356,7 @@ export type EventPassTierSettings141Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings142Premium = S<
+export type EventPassTierSettingsMay2026Season142Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_142_PREMIUM",
 		{
@@ -2371,7 +2371,7 @@ export type EventPassTierSettings142Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings143Premium = S<
+export type EventPassTierSettingsMay2026Season143Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_143_PREMIUM",
 		{
@@ -2386,7 +2386,7 @@ export type EventPassTierSettings143Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings144Premium = S<
+export type EventPassTierSettingsMay2026Season144Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_144_PREMIUM",
 		{
@@ -2401,7 +2401,7 @@ export type EventPassTierSettings144Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings145Premium = S<
+export type EventPassTierSettingsMay2026Season145Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_145_PREMIUM",
 		{
@@ -2416,7 +2416,7 @@ export type EventPassTierSettings145Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings146Premium = S<
+export type EventPassTierSettingsMay2026Season146Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_146_PREMIUM",
 		{
@@ -2431,7 +2431,7 @@ export type EventPassTierSettings146Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings147Premium = S<
+export type EventPassTierSettingsMay2026Season147Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_147_PREMIUM",
 		{
@@ -2446,7 +2446,7 @@ export type EventPassTierSettings147Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings148Premium = S<
+export type EventPassTierSettingsMay2026Season148Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_148_PREMIUM",
 		{
@@ -2461,7 +2461,7 @@ export type EventPassTierSettings148Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings149Premium = S<
+export type EventPassTierSettingsMay2026Season149Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_149_PREMIUM",
 		{
@@ -2476,7 +2476,7 @@ export type EventPassTierSettings149Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings150Premium = S<
+export type EventPassTierSettingsMay2026Season150Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_150_PREMIUM",
 		{
@@ -2491,7 +2491,7 @@ export type EventPassTierSettings150Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings151Premium = S<
+export type EventPassTierSettingsMay2026Season151Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_151_PREMIUM",
 		{
@@ -2506,7 +2506,7 @@ export type EventPassTierSettings151Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings152Premium = S<
+export type EventPassTierSettingsMay2026Season152Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_152_PREMIUM",
 		{
@@ -2521,7 +2521,7 @@ export type EventPassTierSettings152Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings153Premium = S<
+export type EventPassTierSettingsMay2026Season153Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_153_PREMIUM",
 		{
@@ -2536,7 +2536,7 @@ export type EventPassTierSettings153Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings154Premium = S<
+export type EventPassTierSettingsMay2026Season154Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_154_PREMIUM",
 		{
@@ -2551,7 +2551,7 @@ export type EventPassTierSettings154Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings155Premium = S<
+export type EventPassTierSettingsMay2026Season155Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_155_PREMIUM",
 		{
@@ -2566,7 +2566,7 @@ export type EventPassTierSettings155Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings156Premium = S<
+export type EventPassTierSettingsMay2026Season156Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_156_PREMIUM",
 		{
@@ -2581,7 +2581,7 @@ export type EventPassTierSettings156Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings157Premium = S<
+export type EventPassTierSettingsMay2026Season157Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_157_PREMIUM",
 		{
@@ -2596,7 +2596,7 @@ export type EventPassTierSettings157Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings158Premium = S<
+export type EventPassTierSettingsMay2026Season158Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_158_PREMIUM",
 		{
@@ -2611,7 +2611,7 @@ export type EventPassTierSettings158Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings159Premium = S<
+export type EventPassTierSettingsMay2026Season159Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_159_PREMIUM",
 		{
@@ -2626,7 +2626,7 @@ export type EventPassTierSettings159Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings160Premium = S<
+export type EventPassTierSettingsMay2026Season160Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_160_PREMIUM",
 		{
@@ -2641,7 +2641,7 @@ export type EventPassTierSettings160Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings161Premium = S<
+export type EventPassTierSettingsMay2026Season161Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_161_PREMIUM",
 		{
@@ -2656,7 +2656,7 @@ export type EventPassTierSettings161Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings162Premium = S<
+export type EventPassTierSettingsMay2026Season162Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_162_PREMIUM",
 		{
@@ -2671,7 +2671,7 @@ export type EventPassTierSettings162Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings163Premium = S<
+export type EventPassTierSettingsMay2026Season163Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_163_PREMIUM",
 		{
@@ -2686,7 +2686,7 @@ export type EventPassTierSettings163Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings164Premium = S<
+export type EventPassTierSettingsMay2026Season164Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_164_PREMIUM",
 		{
@@ -2701,7 +2701,7 @@ export type EventPassTierSettings164Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings165Premium = S<
+export type EventPassTierSettingsMay2026Season165Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_165_PREMIUM",
 		{
@@ -2716,7 +2716,7 @@ export type EventPassTierSettings165Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings166Premium = S<
+export type EventPassTierSettingsMay2026Season166Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_166_PREMIUM",
 		{
@@ -2731,7 +2731,7 @@ export type EventPassTierSettings166Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings167Premium = S<
+export type EventPassTierSettingsMay2026Season167Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_167_PREMIUM",
 		{
@@ -2746,7 +2746,7 @@ export type EventPassTierSettings167Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings168Premium = S<
+export type EventPassTierSettingsMay2026Season168Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_168_PREMIUM",
 		{
@@ -2761,7 +2761,7 @@ export type EventPassTierSettings168Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings169Premium = S<
+export type EventPassTierSettingsMay2026Season169Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_169_PREMIUM",
 		{
@@ -2776,7 +2776,7 @@ export type EventPassTierSettings169Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings170Premium = S<
+export type EventPassTierSettingsMay2026Season170Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_170_PREMIUM",
 		{
@@ -2791,7 +2791,7 @@ export type EventPassTierSettings170Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings171Premium = S<
+export type EventPassTierSettingsMay2026Season171Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_171_PREMIUM",
 		{
@@ -2806,7 +2806,7 @@ export type EventPassTierSettings171Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings172Premium = S<
+export type EventPassTierSettingsMay2026Season172Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_172_PREMIUM",
 		{
@@ -2821,7 +2821,7 @@ export type EventPassTierSettings172Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings173Premium = S<
+export type EventPassTierSettingsMay2026Season173Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_173_PREMIUM",
 		{
@@ -2836,7 +2836,7 @@ export type EventPassTierSettings173Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings174Premium = S<
+export type EventPassTierSettingsMay2026Season174Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_174_PREMIUM",
 		{
@@ -2851,7 +2851,7 @@ export type EventPassTierSettings174Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings175Premium = S<
+export type EventPassTierSettingsMay2026Season175Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_175_PREMIUM",
 		{
@@ -2866,7 +2866,7 @@ export type EventPassTierSettings175Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings176Premium = S<
+export type EventPassTierSettingsMay2026Season176Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_176_PREMIUM",
 		{
@@ -2881,7 +2881,7 @@ export type EventPassTierSettings176Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings177Premium = S<
+export type EventPassTierSettingsMay2026Season177Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_177_PREMIUM",
 		{
@@ -2896,7 +2896,7 @@ export type EventPassTierSettings177Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings178Premium = S<
+export type EventPassTierSettingsMay2026Season178Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_178_PREMIUM",
 		{
@@ -2911,7 +2911,7 @@ export type EventPassTierSettings178Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings179Premium = S<
+export type EventPassTierSettingsMay2026Season179Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_179_PREMIUM",
 		{
@@ -2926,7 +2926,7 @@ export type EventPassTierSettings179Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings180Premium = S<
+export type EventPassTierSettingsMay2026Season180Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_180_PREMIUM",
 		{
@@ -2941,7 +2941,7 @@ export type EventPassTierSettings180Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings181Premium = S<
+export type EventPassTierSettingsMay2026Season181Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_181_PREMIUM",
 		{
@@ -2956,7 +2956,7 @@ export type EventPassTierSettings181Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings182Premium = S<
+export type EventPassTierSettingsMay2026Season182Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_182_PREMIUM",
 		{
@@ -2971,7 +2971,7 @@ export type EventPassTierSettings182Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings183Premium = S<
+export type EventPassTierSettingsMay2026Season183Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_183_PREMIUM",
 		{
@@ -2986,7 +2986,7 @@ export type EventPassTierSettings183Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings184Premium = S<
+export type EventPassTierSettingsMay2026Season184Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_184_PREMIUM",
 		{
@@ -3001,7 +3001,7 @@ export type EventPassTierSettings184Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings185Premium = S<
+export type EventPassTierSettingsMay2026Season185Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_185_PREMIUM",
 		{
@@ -3016,7 +3016,7 @@ export type EventPassTierSettings185Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings186Premium = S<
+export type EventPassTierSettingsMay2026Season186Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_186_PREMIUM",
 		{
@@ -3031,7 +3031,7 @@ export type EventPassTierSettings186Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings187Premium = S<
+export type EventPassTierSettingsMay2026Season187Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_187_PREMIUM",
 		{
@@ -3046,7 +3046,7 @@ export type EventPassTierSettings187Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings188Premium = S<
+export type EventPassTierSettingsMay2026Season188Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_188_PREMIUM",
 		{
@@ -3061,7 +3061,7 @@ export type EventPassTierSettings188Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings189Premium = S<
+export type EventPassTierSettingsMay2026Season189Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_189_PREMIUM",
 		{
@@ -3076,7 +3076,7 @@ export type EventPassTierSettings189Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings190Premium = S<
+export type EventPassTierSettingsMay2026Season190Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_190_PREMIUM",
 		{
@@ -3091,7 +3091,7 @@ export type EventPassTierSettings190Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings191Premium = S<
+export type EventPassTierSettingsMay2026Season191Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_191_PREMIUM",
 		{
@@ -3106,7 +3106,7 @@ export type EventPassTierSettings191Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings192Premium = S<
+export type EventPassTierSettingsMay2026Season192Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_192_PREMIUM",
 		{
@@ -3121,7 +3121,7 @@ export type EventPassTierSettings192Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings193Premium = S<
+export type EventPassTierSettingsMay2026Season193Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_193_PREMIUM",
 		{
@@ -3136,7 +3136,7 @@ export type EventPassTierSettings193Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings194Premium = S<
+export type EventPassTierSettingsMay2026Season194Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_194_PREMIUM",
 		{
@@ -3151,7 +3151,7 @@ export type EventPassTierSettings194Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings195Premium = S<
+export type EventPassTierSettingsMay2026Season195Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_195_PREMIUM",
 		{
@@ -3166,7 +3166,7 @@ export type EventPassTierSettings195Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings196Premium = S<
+export type EventPassTierSettingsMay2026Season196Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_196_PREMIUM",
 		{
@@ -3181,7 +3181,7 @@ export type EventPassTierSettings196Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings197Premium = S<
+export type EventPassTierSettingsMay2026Season197Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_197_PREMIUM",
 		{
@@ -3196,7 +3196,7 @@ export type EventPassTierSettings197Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings198Premium = S<
+export type EventPassTierSettingsMay2026Season198Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_198_PREMIUM",
 		{
@@ -3211,7 +3211,7 @@ export type EventPassTierSettings198Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings199Premium = S<
+export type EventPassTierSettingsMay2026Season199Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_199_PREMIUM",
 		{
@@ -3226,7 +3226,7 @@ export type EventPassTierSettings199Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings200Premium = S<
+export type EventPassTierSettingsMay2026Season200Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_200_PREMIUM",
 		{
@@ -3241,7 +3241,7 @@ export type EventPassTierSettings200Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings201Premium = S<
+export type EventPassTierSettingsMay2026Season201Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_201_PREMIUM",
 		{
@@ -3256,7 +3256,7 @@ export type EventPassTierSettings201Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings202Premium = S<
+export type EventPassTierSettingsMay2026Season202Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_202_PREMIUM",
 		{
@@ -3271,7 +3271,7 @@ export type EventPassTierSettings202Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings203Premium = S<
+export type EventPassTierSettingsMay2026Season203Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_203_PREMIUM",
 		{
@@ -3286,7 +3286,7 @@ export type EventPassTierSettings203Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings204Premium = S<
+export type EventPassTierSettingsMay2026Season204Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_204_PREMIUM",
 		{
@@ -3301,7 +3301,7 @@ export type EventPassTierSettings204Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings205Premium = S<
+export type EventPassTierSettingsMay2026Season205Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_205_PREMIUM",
 		{
@@ -3316,7 +3316,7 @@ export type EventPassTierSettings205Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings206Premium = S<
+export type EventPassTierSettingsMay2026Season206Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_206_PREMIUM",
 		{
@@ -3331,7 +3331,7 @@ export type EventPassTierSettings206Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings207Premium = S<
+export type EventPassTierSettingsMay2026Season207Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_207_PREMIUM",
 		{
@@ -3346,7 +3346,7 @@ export type EventPassTierSettings207Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings208Premium = S<
+export type EventPassTierSettingsMay2026Season208Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_208_PREMIUM",
 		{
@@ -3361,7 +3361,7 @@ export type EventPassTierSettings208Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings209Premium = S<
+export type EventPassTierSettingsMay2026Season209Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_209_PREMIUM",
 		{
@@ -3376,7 +3376,7 @@ export type EventPassTierSettings209Premium = S<
 		}
 	>
 >;
-export type EventPassTierSettings210Premium = S<
+export type EventPassTierSettingsMay2026Season210Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_MAY2026_SEASON_210_PREMIUM",
 		{
@@ -3392,214 +3392,214 @@ export type EventPassTierSettings210Premium = S<
 	>
 >;
 
-export type EventPassTierSettingsPremiumMasterfileEntry =
-	| EventPassTierSettings1Premium
-	| EventPassTierSettings2Premium
-	| EventPassTierSettings3Premium
-	| EventPassTierSettings4Premium
-	| EventPassTierSettings5Premium
-	| EventPassTierSettings6Premium
-	| EventPassTierSettings7Premium
-	| EventPassTierSettings8Premium
-	| EventPassTierSettings9Premium
-	| EventPassTierSettings10Premium
-	| EventPassTierSettings11Premium
-	| EventPassTierSettings12Premium
-	| EventPassTierSettings13Premium
-	| EventPassTierSettings14Premium
-	| EventPassTierSettings15Premium
-	| EventPassTierSettings16Premium
-	| EventPassTierSettings17Premium
-	| EventPassTierSettings18Premium
-	| EventPassTierSettings19Premium
-	| EventPassTierSettings20Premium
-	| EventPassTierSettings21Premium
-	| EventPassTierSettings22Premium
-	| EventPassTierSettings23Premium
-	| EventPassTierSettings24Premium
-	| EventPassTierSettings25Premium
-	| EventPassTierSettings26Premium
-	| EventPassTierSettings27Premium
-	| EventPassTierSettings28Premium
-	| EventPassTierSettings29Premium
-	| EventPassTierSettings30Premium
-	| EventPassTierSettings31Premium
-	| EventPassTierSettings32Premium
-	| EventPassTierSettings33Premium
-	| EventPassTierSettings34Premium
-	| EventPassTierSettings35Premium
-	| EventPassTierSettings36Premium
-	| EventPassTierSettings37Premium
-	| EventPassTierSettings38Premium
-	| EventPassTierSettings39Premium
-	| EventPassTierSettings40Premium
-	| EventPassTierSettings41Premium
-	| EventPassTierSettings42Premium
-	| EventPassTierSettings43Premium
-	| EventPassTierSettings44Premium
-	| EventPassTierSettings45Premium
-	| EventPassTierSettings46Premium
-	| EventPassTierSettings47Premium
-	| EventPassTierSettings48Premium
-	| EventPassTierSettings49Premium
-	| EventPassTierSettings50Premium
-	| EventPassTierSettings51Premium
-	| EventPassTierSettings52Premium
-	| EventPassTierSettings53Premium
-	| EventPassTierSettings54Premium
-	| EventPassTierSettings55Premium
-	| EventPassTierSettings56Premium
-	| EventPassTierSettings57Premium
-	| EventPassTierSettings58Premium
-	| EventPassTierSettings59Premium
-	| EventPassTierSettings60Premium
-	| EventPassTierSettings61Premium
-	| EventPassTierSettings62Premium
-	| EventPassTierSettings63Premium
-	| EventPassTierSettings64Premium
-	| EventPassTierSettings65Premium
-	| EventPassTierSettings66Premium
-	| EventPassTierSettings67Premium
-	| EventPassTierSettings68Premium
-	| EventPassTierSettings69Premium
-	| EventPassTierSettings70Premium
-	| EventPassTierSettings71Premium
-	| EventPassTierSettings72Premium
-	| EventPassTierSettings73Premium
-	| EventPassTierSettings74Premium
-	| EventPassTierSettings75Premium
-	| EventPassTierSettings76Premium
-	| EventPassTierSettings77Premium
-	| EventPassTierSettings78Premium
-	| EventPassTierSettings79Premium
-	| EventPassTierSettings80Premium
-	| EventPassTierSettings81Premium
-	| EventPassTierSettings82Premium
-	| EventPassTierSettings83Premium
-	| EventPassTierSettings84Premium
-	| EventPassTierSettings85Premium
-	| EventPassTierSettings86Premium
-	| EventPassTierSettings87Premium
-	| EventPassTierSettings88Premium
-	| EventPassTierSettings89Premium
-	| EventPassTierSettings90Premium
-	| EventPassTierSettings91Premium
-	| EventPassTierSettings92Premium
-	| EventPassTierSettings93Premium
-	| EventPassTierSettings94Premium
-	| EventPassTierSettings95Premium
-	| EventPassTierSettings96Premium
-	| EventPassTierSettings97Premium
-	| EventPassTierSettings98Premium
-	| EventPassTierSettings99Premium
-	| EventPassTierSettings100Premium
-	| EventPassTierSettings101Premium
-	| EventPassTierSettings102Premium
-	| EventPassTierSettings103Premium
-	| EventPassTierSettings104Premium
-	| EventPassTierSettings105Premium
-	| EventPassTierSettings106Premium
-	| EventPassTierSettings107Premium
-	| EventPassTierSettings108Premium
-	| EventPassTierSettings109Premium
-	| EventPassTierSettings110Premium
-	| EventPassTierSettings111Premium
-	| EventPassTierSettings112Premium
-	| EventPassTierSettings113Premium
-	| EventPassTierSettings114Premium
-	| EventPassTierSettings115Premium
-	| EventPassTierSettings116Premium
-	| EventPassTierSettings117Premium
-	| EventPassTierSettings118Premium
-	| EventPassTierSettings119Premium
-	| EventPassTierSettings120Premium
-	| EventPassTierSettings121Premium
-	| EventPassTierSettings122Premium
-	| EventPassTierSettings123Premium
-	| EventPassTierSettings124Premium
-	| EventPassTierSettings125Premium
-	| EventPassTierSettings126Premium
-	| EventPassTierSettings127Premium
-	| EventPassTierSettings128Premium
-	| EventPassTierSettings129Premium
-	| EventPassTierSettings130Premium
-	| EventPassTierSettings131Premium
-	| EventPassTierSettings132Premium
-	| EventPassTierSettings133Premium
-	| EventPassTierSettings134Premium
-	| EventPassTierSettings135Premium
-	| EventPassTierSettings136Premium
-	| EventPassTierSettings137Premium
-	| EventPassTierSettings138Premium
-	| EventPassTierSettings139Premium
-	| EventPassTierSettings140Premium
-	| EventPassTierSettings141Premium
-	| EventPassTierSettings142Premium
-	| EventPassTierSettings143Premium
-	| EventPassTierSettings144Premium
-	| EventPassTierSettings145Premium
-	| EventPassTierSettings146Premium
-	| EventPassTierSettings147Premium
-	| EventPassTierSettings148Premium
-	| EventPassTierSettings149Premium
-	| EventPassTierSettings150Premium
-	| EventPassTierSettings151Premium
-	| EventPassTierSettings152Premium
-	| EventPassTierSettings153Premium
-	| EventPassTierSettings154Premium
-	| EventPassTierSettings155Premium
-	| EventPassTierSettings156Premium
-	| EventPassTierSettings157Premium
-	| EventPassTierSettings158Premium
-	| EventPassTierSettings159Premium
-	| EventPassTierSettings160Premium
-	| EventPassTierSettings161Premium
-	| EventPassTierSettings162Premium
-	| EventPassTierSettings163Premium
-	| EventPassTierSettings164Premium
-	| EventPassTierSettings165Premium
-	| EventPassTierSettings166Premium
-	| EventPassTierSettings167Premium
-	| EventPassTierSettings168Premium
-	| EventPassTierSettings169Premium
-	| EventPassTierSettings170Premium
-	| EventPassTierSettings171Premium
-	| EventPassTierSettings172Premium
-	| EventPassTierSettings173Premium
-	| EventPassTierSettings174Premium
-	| EventPassTierSettings175Premium
-	| EventPassTierSettings176Premium
-	| EventPassTierSettings177Premium
-	| EventPassTierSettings178Premium
-	| EventPassTierSettings179Premium
-	| EventPassTierSettings180Premium
-	| EventPassTierSettings181Premium
-	| EventPassTierSettings182Premium
-	| EventPassTierSettings183Premium
-	| EventPassTierSettings184Premium
-	| EventPassTierSettings185Premium
-	| EventPassTierSettings186Premium
-	| EventPassTierSettings187Premium
-	| EventPassTierSettings188Premium
-	| EventPassTierSettings189Premium
-	| EventPassTierSettings190Premium
-	| EventPassTierSettings191Premium
-	| EventPassTierSettings192Premium
-	| EventPassTierSettings193Premium
-	| EventPassTierSettings194Premium
-	| EventPassTierSettings195Premium
-	| EventPassTierSettings196Premium
-	| EventPassTierSettings197Premium
-	| EventPassTierSettings198Premium
-	| EventPassTierSettings199Premium
-	| EventPassTierSettings200Premium
-	| EventPassTierSettings201Premium
-	| EventPassTierSettings202Premium
-	| EventPassTierSettings203Premium
-	| EventPassTierSettings204Premium
-	| EventPassTierSettings205Premium
-	| EventPassTierSettings206Premium
-	| EventPassTierSettings207Premium
-	| EventPassTierSettings208Premium
-	| EventPassTierSettings209Premium
-	| EventPassTierSettings210Premium;
+export type EventPassTierSettingsPremiumMay2026MasterfileEntry =
+	| EventPassTierSettingsMay2026Season1Premium
+	| EventPassTierSettingsMay2026Season2Premium
+	| EventPassTierSettingsMay2026Season3Premium
+	| EventPassTierSettingsMay2026Season4Premium
+	| EventPassTierSettingsMay2026Season5Premium
+	| EventPassTierSettingsMay2026Season6Premium
+	| EventPassTierSettingsMay2026Season7Premium
+	| EventPassTierSettingsMay2026Season8Premium
+	| EventPassTierSettingsMay2026Season9Premium
+	| EventPassTierSettingsMay2026Season10Premium
+	| EventPassTierSettingsMay2026Season11Premium
+	| EventPassTierSettingsMay2026Season12Premium
+	| EventPassTierSettingsMay2026Season13Premium
+	| EventPassTierSettingsMay2026Season14Premium
+	| EventPassTierSettingsMay2026Season15Premium
+	| EventPassTierSettingsMay2026Season16Premium
+	| EventPassTierSettingsMay2026Season17Premium
+	| EventPassTierSettingsMay2026Season18Premium
+	| EventPassTierSettingsMay2026Season19Premium
+	| EventPassTierSettingsMay2026Season20Premium
+	| EventPassTierSettingsMay2026Season21Premium
+	| EventPassTierSettingsMay2026Season22Premium
+	| EventPassTierSettingsMay2026Season23Premium
+	| EventPassTierSettingsMay2026Season24Premium
+	| EventPassTierSettingsMay2026Season25Premium
+	| EventPassTierSettingsMay2026Season26Premium
+	| EventPassTierSettingsMay2026Season27Premium
+	| EventPassTierSettingsMay2026Season28Premium
+	| EventPassTierSettingsMay2026Season29Premium
+	| EventPassTierSettingsMay2026Season30Premium
+	| EventPassTierSettingsMay2026Season31Premium
+	| EventPassTierSettingsMay2026Season32Premium
+	| EventPassTierSettingsMay2026Season33Premium
+	| EventPassTierSettingsMay2026Season34Premium
+	| EventPassTierSettingsMay2026Season35Premium
+	| EventPassTierSettingsMay2026Season36Premium
+	| EventPassTierSettingsMay2026Season37Premium
+	| EventPassTierSettingsMay2026Season38Premium
+	| EventPassTierSettingsMay2026Season39Premium
+	| EventPassTierSettingsMay2026Season40Premium
+	| EventPassTierSettingsMay2026Season41Premium
+	| EventPassTierSettingsMay2026Season42Premium
+	| EventPassTierSettingsMay2026Season43Premium
+	| EventPassTierSettingsMay2026Season44Premium
+	| EventPassTierSettingsMay2026Season45Premium
+	| EventPassTierSettingsMay2026Season46Premium
+	| EventPassTierSettingsMay2026Season47Premium
+	| EventPassTierSettingsMay2026Season48Premium
+	| EventPassTierSettingsMay2026Season49Premium
+	| EventPassTierSettingsMay2026Season50Premium
+	| EventPassTierSettingsMay2026Season51Premium
+	| EventPassTierSettingsMay2026Season52Premium
+	| EventPassTierSettingsMay2026Season53Premium
+	| EventPassTierSettingsMay2026Season54Premium
+	| EventPassTierSettingsMay2026Season55Premium
+	| EventPassTierSettingsMay2026Season56Premium
+	| EventPassTierSettingsMay2026Season57Premium
+	| EventPassTierSettingsMay2026Season58Premium
+	| EventPassTierSettingsMay2026Season59Premium
+	| EventPassTierSettingsMay2026Season60Premium
+	| EventPassTierSettingsMay2026Season61Premium
+	| EventPassTierSettingsMay2026Season62Premium
+	| EventPassTierSettingsMay2026Season63Premium
+	| EventPassTierSettingsMay2026Season64Premium
+	| EventPassTierSettingsMay2026Season65Premium
+	| EventPassTierSettingsMay2026Season66Premium
+	| EventPassTierSettingsMay2026Season67Premium
+	| EventPassTierSettingsMay2026Season68Premium
+	| EventPassTierSettingsMay2026Season69Premium
+	| EventPassTierSettingsMay2026Season70Premium
+	| EventPassTierSettingsMay2026Season71Premium
+	| EventPassTierSettingsMay2026Season72Premium
+	| EventPassTierSettingsMay2026Season73Premium
+	| EventPassTierSettingsMay2026Season74Premium
+	| EventPassTierSettingsMay2026Season75Premium
+	| EventPassTierSettingsMay2026Season76Premium
+	| EventPassTierSettingsMay2026Season77Premium
+	| EventPassTierSettingsMay2026Season78Premium
+	| EventPassTierSettingsMay2026Season79Premium
+	| EventPassTierSettingsMay2026Season80Premium
+	| EventPassTierSettingsMay2026Season81Premium
+	| EventPassTierSettingsMay2026Season82Premium
+	| EventPassTierSettingsMay2026Season83Premium
+	| EventPassTierSettingsMay2026Season84Premium
+	| EventPassTierSettingsMay2026Season85Premium
+	| EventPassTierSettingsMay2026Season86Premium
+	| EventPassTierSettingsMay2026Season87Premium
+	| EventPassTierSettingsMay2026Season88Premium
+	| EventPassTierSettingsMay2026Season89Premium
+	| EventPassTierSettingsMay2026Season90Premium
+	| EventPassTierSettingsMay2026Season91Premium
+	| EventPassTierSettingsMay2026Season92Premium
+	| EventPassTierSettingsMay2026Season93Premium
+	| EventPassTierSettingsMay2026Season94Premium
+	| EventPassTierSettingsMay2026Season95Premium
+	| EventPassTierSettingsMay2026Season96Premium
+	| EventPassTierSettingsMay2026Season97Premium
+	| EventPassTierSettingsMay2026Season98Premium
+	| EventPassTierSettingsMay2026Season99Premium
+	| EventPassTierSettingsMay2026Season100Premium
+	| EventPassTierSettingsMay2026Season101Premium
+	| EventPassTierSettingsMay2026Season102Premium
+	| EventPassTierSettingsMay2026Season103Premium
+	| EventPassTierSettingsMay2026Season104Premium
+	| EventPassTierSettingsMay2026Season105Premium
+	| EventPassTierSettingsMay2026Season106Premium
+	| EventPassTierSettingsMay2026Season107Premium
+	| EventPassTierSettingsMay2026Season108Premium
+	| EventPassTierSettingsMay2026Season109Premium
+	| EventPassTierSettingsMay2026Season110Premium
+	| EventPassTierSettingsMay2026Season111Premium
+	| EventPassTierSettingsMay2026Season112Premium
+	| EventPassTierSettingsMay2026Season113Premium
+	| EventPassTierSettingsMay2026Season114Premium
+	| EventPassTierSettingsMay2026Season115Premium
+	| EventPassTierSettingsMay2026Season116Premium
+	| EventPassTierSettingsMay2026Season117Premium
+	| EventPassTierSettingsMay2026Season118Premium
+	| EventPassTierSettingsMay2026Season119Premium
+	| EventPassTierSettingsMay2026Season120Premium
+	| EventPassTierSettingsMay2026Season121Premium
+	| EventPassTierSettingsMay2026Season122Premium
+	| EventPassTierSettingsMay2026Season123Premium
+	| EventPassTierSettingsMay2026Season124Premium
+	| EventPassTierSettingsMay2026Season125Premium
+	| EventPassTierSettingsMay2026Season126Premium
+	| EventPassTierSettingsMay2026Season127Premium
+	| EventPassTierSettingsMay2026Season128Premium
+	| EventPassTierSettingsMay2026Season129Premium
+	| EventPassTierSettingsMay2026Season130Premium
+	| EventPassTierSettingsMay2026Season131Premium
+	| EventPassTierSettingsMay2026Season132Premium
+	| EventPassTierSettingsMay2026Season133Premium
+	| EventPassTierSettingsMay2026Season134Premium
+	| EventPassTierSettingsMay2026Season135Premium
+	| EventPassTierSettingsMay2026Season136Premium
+	| EventPassTierSettingsMay2026Season137Premium
+	| EventPassTierSettingsMay2026Season138Premium
+	| EventPassTierSettingsMay2026Season139Premium
+	| EventPassTierSettingsMay2026Season140Premium
+	| EventPassTierSettingsMay2026Season141Premium
+	| EventPassTierSettingsMay2026Season142Premium
+	| EventPassTierSettingsMay2026Season143Premium
+	| EventPassTierSettingsMay2026Season144Premium
+	| EventPassTierSettingsMay2026Season145Premium
+	| EventPassTierSettingsMay2026Season146Premium
+	| EventPassTierSettingsMay2026Season147Premium
+	| EventPassTierSettingsMay2026Season148Premium
+	| EventPassTierSettingsMay2026Season149Premium
+	| EventPassTierSettingsMay2026Season150Premium
+	| EventPassTierSettingsMay2026Season151Premium
+	| EventPassTierSettingsMay2026Season152Premium
+	| EventPassTierSettingsMay2026Season153Premium
+	| EventPassTierSettingsMay2026Season154Premium
+	| EventPassTierSettingsMay2026Season155Premium
+	| EventPassTierSettingsMay2026Season156Premium
+	| EventPassTierSettingsMay2026Season157Premium
+	| EventPassTierSettingsMay2026Season158Premium
+	| EventPassTierSettingsMay2026Season159Premium
+	| EventPassTierSettingsMay2026Season160Premium
+	| EventPassTierSettingsMay2026Season161Premium
+	| EventPassTierSettingsMay2026Season162Premium
+	| EventPassTierSettingsMay2026Season163Premium
+	| EventPassTierSettingsMay2026Season164Premium
+	| EventPassTierSettingsMay2026Season165Premium
+	| EventPassTierSettingsMay2026Season166Premium
+	| EventPassTierSettingsMay2026Season167Premium
+	| EventPassTierSettingsMay2026Season168Premium
+	| EventPassTierSettingsMay2026Season169Premium
+	| EventPassTierSettingsMay2026Season170Premium
+	| EventPassTierSettingsMay2026Season171Premium
+	| EventPassTierSettingsMay2026Season172Premium
+	| EventPassTierSettingsMay2026Season173Premium
+	| EventPassTierSettingsMay2026Season174Premium
+	| EventPassTierSettingsMay2026Season175Premium
+	| EventPassTierSettingsMay2026Season176Premium
+	| EventPassTierSettingsMay2026Season177Premium
+	| EventPassTierSettingsMay2026Season178Premium
+	| EventPassTierSettingsMay2026Season179Premium
+	| EventPassTierSettingsMay2026Season180Premium
+	| EventPassTierSettingsMay2026Season181Premium
+	| EventPassTierSettingsMay2026Season182Premium
+	| EventPassTierSettingsMay2026Season183Premium
+	| EventPassTierSettingsMay2026Season184Premium
+	| EventPassTierSettingsMay2026Season185Premium
+	| EventPassTierSettingsMay2026Season186Premium
+	| EventPassTierSettingsMay2026Season187Premium
+	| EventPassTierSettingsMay2026Season188Premium
+	| EventPassTierSettingsMay2026Season189Premium
+	| EventPassTierSettingsMay2026Season190Premium
+	| EventPassTierSettingsMay2026Season191Premium
+	| EventPassTierSettingsMay2026Season192Premium
+	| EventPassTierSettingsMay2026Season193Premium
+	| EventPassTierSettingsMay2026Season194Premium
+	| EventPassTierSettingsMay2026Season195Premium
+	| EventPassTierSettingsMay2026Season196Premium
+	| EventPassTierSettingsMay2026Season197Premium
+	| EventPassTierSettingsMay2026Season198Premium
+	| EventPassTierSettingsMay2026Season199Premium
+	| EventPassTierSettingsMay2026Season200Premium
+	| EventPassTierSettingsMay2026Season201Premium
+	| EventPassTierSettingsMay2026Season202Premium
+	| EventPassTierSettingsMay2026Season203Premium
+	| EventPassTierSettingsMay2026Season204Premium
+	| EventPassTierSettingsMay2026Season205Premium
+	| EventPassTierSettingsMay2026Season206Premium
+	| EventPassTierSettingsMay2026Season207Premium
+	| EventPassTierSettingsMay2026Season208Premium
+	| EventPassTierSettingsMay2026Season209Premium
+	| EventPassTierSettingsMay2026Season210Premium;

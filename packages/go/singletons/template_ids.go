@@ -53,7 +53,6 @@ const (
 	SingletonsTemplateIDEggHatchImprovementsSettings            SingletonsTemplateID = "EGG_HATCH_IMPROVEMENTS_SETTINGS"
 	SingletonsTemplateIDEncounterSettings                       SingletonsTemplateID = "ENCOUNTER_SETTINGS"
 	SingletonsTemplateIDErrorReportingSettingsPreLogin          SingletonsTemplateID = "ERROR_REPORTING_SETTINGS_PRE_LOGIN"
-	SingletonsTemplateIDEventPassMay2026Season                  SingletonsTemplateID = "EVENT_PASS_MAY2026_SEASON"
 	SingletonsTemplateIDEventPlannerPopularRaidRsvpSettings     SingletonsTemplateID = "EVENT_PLANNER_POPULAR_RAID_RSVP_SETTINGS"
 	SingletonsTemplateIDEventPlannerSettings                    SingletonsTemplateID = "EVENT_PLANNER_SETTINGS"
 	SingletonsTemplateIDEventServerSettings                     SingletonsTemplateID = "EVENT_SERVER_SETTINGS"
@@ -198,7 +197,6 @@ var SingletonsTemplateIDValues = [...]SingletonsTemplateID{
 	SingletonsTemplateIDEggHatchImprovementsSettings,
 	SingletonsTemplateIDEncounterSettings,
 	SingletonsTemplateIDErrorReportingSettingsPreLogin,
-	SingletonsTemplateIDEventPassMay2026Season,
 	SingletonsTemplateIDEventPlannerPopularRaidRsvpSettings,
 	SingletonsTemplateIDEventPlannerSettings,
 	SingletonsTemplateIDEventServerSettings,

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 14 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 12 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -38,14 +38,6 @@ export type FeatureGateDayNightPoi = S<
 export type FeatureGateEnablePvpChallengeSpanner = S<
 	FeatureGate<
 		"ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE",
-		{
-			status: 1;
-		}
-	>
->;
-export type FeatureGateEventList = S<
-	FeatureGate<
-		"EVENT_LIST_FEATURE_GATE",
 		{
 			status: 1;
 		}
@@ -145,14 +137,6 @@ export type FeatureGateStoreRefresh = S<
 		}
 	>
 >;
-export type FeatureGateUpdateTicketsString = S<
-	FeatureGate<
-		"UPDATE_TICKETS_STRING_FEATURE_GATE",
-		{
-			status: 29825861;
-		}
-	>
->;
 export type FeatureGateVnextPreResponseInputBlockingBehavior = S<
 	FeatureGate<
 		"VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE",
@@ -175,14 +159,12 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateAmsFrontend
 	| FeatureGateDayNightPoi
 	| FeatureGateEnablePvpChallengeSpanner
-	| FeatureGateEventList
 	| FeatureGateEventPassBonusRanks
 	| FeatureGateEventPassClaimableRewardToggle
 	| FeatureGateEventPassMilestoneRewards
 	| FeatureGateHealToast
 	| FeatureGateMega2026
 	| FeatureGateStoreRefresh
-	| FeatureGateUpdateTicketsString
 	| FeatureGateVnextPreResponseInputBlockingBehavior;
 
 export type FeatureGateTemplateID = FeatureGateMasterfileEntry["templateId"];
