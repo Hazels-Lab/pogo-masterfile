@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "genderSettings", split "form", 92 entries.
+// Generated from Pokémon GO masterfile — group "genderSettings", split "form", 93 entries.
 
 import type { S } from "../../_utils";
 import type { GenderSettings } from "../types";
@@ -52,6 +52,19 @@ export type GenderSettingsV0012PokemonButterfreeNormal = S<
 				malePercent: 0.5;
 			};
 			pokemon: "BUTTERFREE";
+		}
+	>
+>;
+export type GenderSettingsV0025PokemonPikachuFossil2026 = S<
+	GenderSettings<
+		"SPAWN_V0025_POKEMON_PIKACHU_FOSSIL_2026",
+		{
+			form: "PIKACHU_FOSSIL_2026";
+			gender: {
+				femalePercent: 0.5;
+				malePercent: 0.5;
+			};
+			pokemon: "PIKACHU";
 		}
 	>
 >;
@@ -1165,6 +1178,7 @@ export type GenderSettingsFormMasterfileEntry =
 	| GenderSettingsV0010PokemonCaterpieNormal
 	| GenderSettingsV0011PokemonMetapodNormal
 	| GenderSettingsV0012PokemonButterfreeNormal
+	| GenderSettingsV0025PokemonPikachuFossil2026
 	| GenderSettingsV0025PokemonPikachuGofest2026CapBlue
 	| GenderSettingsV0025PokemonPikachuGofest2026CapRed
 	| GenderSettingsV0025PokemonPikachuGofest2026CapYellow

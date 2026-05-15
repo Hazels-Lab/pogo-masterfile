@@ -7,6 +7,7 @@ type CombatLeagueTemplateID string
 const (
 	CombatLeagueTemplateIDCombatLeagueDefaultGreat                    CombatLeagueTemplateID = "COMBAT_LEAGUE_DEFAULT_GREAT"
 	CombatLeagueTemplateIDCombatLeagueDefaultMaster                   CombatLeagueTemplateID = "COMBAT_LEAGUE_DEFAULT_MASTER"
+	CombatLeagueTemplateIDCombatLeagueDefaultMasterNpc                CombatLeagueTemplateID = "COMBAT_LEAGUE_DEFAULT_MASTER_NPC"
 	CombatLeagueTemplateIDCombatLeagueDefaultUltra                    CombatLeagueTemplateID = "COMBAT_LEAGUE_DEFAULT_ULTRA"
 	CombatLeagueTemplateIDCombatLeagueSafariBarcelona202301           CombatLeagueTemplateID = "COMBAT_LEAGUE_SAFARI_BARCELONA_2023_01"
 	CombatLeagueTemplateIDCombatLeagueSafariBarcelona202302           CombatLeagueTemplateID = "COMBAT_LEAGUE_SAFARI_BARCELONA_2023_02"
@@ -115,6 +116,7 @@ const (
 var CombatLeagueTemplateIDValues = [...]CombatLeagueTemplateID{
 	CombatLeagueTemplateIDCombatLeagueDefaultGreat,
 	CombatLeagueTemplateIDCombatLeagueDefaultMaster,
+	CombatLeagueTemplateIDCombatLeagueDefaultMasterNpc,
 	CombatLeagueTemplateIDCombatLeagueDefaultUltra,
 	CombatLeagueTemplateIDCombatLeagueSafariBarcelona202301,
 	CombatLeagueTemplateIDCombatLeagueSafariBarcelona202302,

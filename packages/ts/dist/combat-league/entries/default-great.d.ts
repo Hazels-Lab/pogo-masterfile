@@ -9676,6 +9676,22 @@ export type CombatLeagueVsSeekerGreatCatchS22 = S<
 				"VOLCANION",
 				"MARSHADOW",
 				"MIMIKYU",
+				"XERNEAS",
+				"YVELTAL",
+				"COBALION",
+				"TERRAKION",
+				"VIRIZION",
+				"RESHIRAM",
+				"ZEKROM",
+				"KYUREM",
+				"TAPU_KOKO",
+				"TAPU_LELE",
+				"TAPU_BULU",
+				"SOLGALEO",
+				"LUNALA",
+				"ZACIAN",
+				"ZAMAZENTA",
+				"ENAMORUS",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/premierball_sprite.png";

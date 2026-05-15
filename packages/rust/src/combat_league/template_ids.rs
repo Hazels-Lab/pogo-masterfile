@@ -11,6 +11,8 @@ pub enum CombatLeagueTemplateId {
     CombatLeagueDefaultGreat,
     #[serde(rename = "COMBAT_LEAGUE_DEFAULT_MASTER")]
     CombatLeagueDefaultMaster,
+    #[serde(rename = "COMBAT_LEAGUE_DEFAULT_MASTER_NPC")]
+    CombatLeagueDefaultMasterNpc,
     #[serde(rename = "COMBAT_LEAGUE_DEFAULT_ULTRA")]
     CombatLeagueDefaultUltra,
     #[serde(rename = "COMBAT_LEAGUE_SAFARI_BARCELONA_2023_01")]

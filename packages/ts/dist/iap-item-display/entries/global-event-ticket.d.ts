@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 55 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 54 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -283,6 +283,24 @@ export type IapItemDisplayGeneral2Ticket2Giftable = S<
 		}
 	>
 >;
+export type IapItemDisplayGeneral2Ticket3 = S<
+	IapItemDisplay<
+		"general2.ticket.3",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-deino-community-day-classic-2026-nologo.jpg";
+			sku: "pgorelease.general2.ticket.3";
+			skuDisableTime: "2026-05-16T17:00:00";
+			skuDisableTimeUtcMs: "1778950800000";
+			skuEnableTime: "2019-03-14T08:00:00";
+			skuEnableTimeUtcMs: "1552550400000";
+			sortOrder: 2;
+			spriteId: "general1.ticket.2";
+			title: "general1.ticket_CDC_Deino26_title";
+			useEnvironmentPrefix: true;
+		}
+	>
+>;
 export type IapItemDisplayGeneral2Ticket4 = S<
 	IapItemDisplay<
 		"general2.ticket.4",
@@ -318,44 +336,6 @@ export type IapItemDisplayGeneral2Ticket4Giftable = S<
 			sortOrder: 1;
 			spriteId: "general2.ticket.2";
 			title: "general1.ticket.2_WaterRRD26_title";
-		}
-	>
->;
-export type IapItemDisplayGeneral2Ticket5 = S<
-	IapItemDisplay<
-		"general2.ticket.5",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-gmax-pikachu-2026-nologo.jpg";
-			sku: "general2.ticket.5";
-			skuDisableTime: "2026-03-28T17:00:00";
-			skuDisableTimeUtcMs: "1774717200000";
-			skuEnableTime: "2023-01-01T11:00:04";
-			skuEnableTimeUtcMs: "1672570804000";
-			sortOrder: 1;
-			spriteId: "general2.ticket.5";
-			title: "general2.ticket5.GMAX_PIKACHU_MAX_BATTLE";
-			webstoreSkuId: "web-gmax-pika-ticket-box";
-			webstoreSkuPriceE6: 4990000;
-		}
-	>
->;
-export type IapItemDisplayGeneral2Ticket5Giftable = S<
-	IapItemDisplay<
-		"general2.ticket.5.giftable",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-gmax-pikachu-2026-nologo.jpg";
-			sku: "general2.ticket.5.giftable";
-			skuDisableTime: "2026-03-28T17:00:00";
-			skuDisableTimeUtcMs: "1774717200000";
-			skuEnableTime: "2023-01-01T11:00:04";
-			skuEnableTimeUtcMs: "1672570804000";
-			sortOrder: 1;
-			spriteId: "general2.ticket.5";
-			title: "general2.ticket5.GMAX_PIKACHU_MAX_BATTLE";
 		}
 	>
 >;
@@ -853,44 +833,6 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket4Giftable = S<
 		}
 	>
 >;
-export type IapItemDisplayPgoreleaseGeneral2Ticket5 = S<
-	IapItemDisplay<
-		"pgorelease.general2.ticket.5",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-gmax-pikachu-2026-nologo.jpg";
-			sku: "pgorelease.general2.ticket.5";
-			skuDisableTime: "2026-03-28T17:00:00";
-			skuDisableTimeUtcMs: "1774717200000";
-			skuEnableTime: "2023-01-01T11:00:01";
-			skuEnableTimeUtcMs: "1672570801000";
-			sortOrder: 1;
-			spriteId: "general2.ticket.2";
-			title: "general2.ticket5.GMAX_PIKACHU_MAX_BATTLE";
-			webstoreSkuId: "web-gmax-pika-ticket-box";
-			webstoreSkuPriceE6: 4990000;
-		}
-	>
->;
-export type IapItemDisplayPgoreleaseGeneral2Ticket5Giftable = S<
-	IapItemDisplay<
-		"pgorelease.general2.ticket.5.giftable",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-gmax-pikachu-2026-nologo.jpg";
-			sku: "pgorelease.general2.ticket.5.giftable";
-			skuDisableTime: "2026-03-28T17:00:00";
-			skuDisableTimeUtcMs: "1774717200000";
-			skuEnableTime: "2023-01-01T11:00:01";
-			skuEnableTimeUtcMs: "1672570801000";
-			sortOrder: 1;
-			spriteId: "general2.ticket.2";
-			title: "general2.ticket5.GMAX_PIKACHU_MAX_BATTLE";
-		}
-	>
->;
 export type IapItemDisplayPgoreleaseGeneral2Ticket7 = S<
 	IapItemDisplay<
 		"pgorelease.general2.ticket.7",
@@ -1043,6 +985,40 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket10Giftable = S<
 		}
 	>
 >;
+export type IapItemDisplayPgoreleaseMay12026DeluxeEventPassTrackRedirect = S<
+	IapItemDisplay<
+		"pgorelease.may1_2026_deluxe_event_pass_track_redirect",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
+			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Spring_Marathon_2026_Event_Pass_v2-1024x576.jpg";
+			sku: "pgorelease.may1_2026_deluxe_event_pass_track_redirect";
+			skuDisableTime: "2026-05-20T20:00:00";
+			skuDisableTimeUtcMs: "1779307200000";
+			skuEnableTime: "2025-05-12T10:00:00";
+			skuEnableTimeUtcMs: "1747044000000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_spring_marathon_2026";
+		}
+	>
+>;
+export type IapItemDisplayPgoreleaseMay12026DeluxeEventPassTrackUnlockRedirect = S<
+	IapItemDisplay<
+		"pgorelease.may1_2026_deluxe_event_pass_track_unlock_redirect",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
+			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Spring_Marathon_2026_Event_Pass_v2-1024x576.jpg";
+			sku: "pgorelease.may1_2026_deluxe_event_pass_track_unlock_redirect";
+			skuDisableTime: "2026-05-20T20:00:00";
+			skuDisableTimeUtcMs: "1779307200000";
+			skuEnableTime: "2025-05-12T10:00:00";
+			skuEnableTimeUtcMs: "1747044000000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_spring_marathon_2026";
+		}
+	>
+>;
 
 export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayEventPassMonth3SeasonStoreRedirect
@@ -1060,10 +1036,9 @@ export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayGeneral2Ticket1Giftable
 	| IapItemDisplayGeneral2Ticket2
 	| IapItemDisplayGeneral2Ticket2Giftable
+	| IapItemDisplayGeneral2Ticket3
 	| IapItemDisplayGeneral2Ticket4
 	| IapItemDisplayGeneral2Ticket4Giftable
-	| IapItemDisplayGeneral2Ticket5
-	| IapItemDisplayGeneral2Ticket5Giftable
 	| IapItemDisplayGeneral2Ticket6
 	| IapItemDisplayGeneral2Ticket7
 	| IapItemDisplayGeneral2Ticket7Giftable
@@ -1090,8 +1065,6 @@ export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayPgoreleaseGeneral2Ticket2Giftable
 	| IapItemDisplayPgoreleaseGeneral2Ticket4
 	| IapItemDisplayPgoreleaseGeneral2Ticket4Giftable
-	| IapItemDisplayPgoreleaseGeneral2Ticket5
-	| IapItemDisplayPgoreleaseGeneral2Ticket5Giftable
 	| IapItemDisplayPgoreleaseGeneral2Ticket7
 	| IapItemDisplayPgoreleaseGeneral2Ticket7Giftable
 	| IapItemDisplayPgoreleaseGeneral2Ticket8
@@ -1099,4 +1072,6 @@ export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayPgoreleaseGeneral2Ticket9
 	| IapItemDisplayPgoreleaseGeneral2Ticket9Giftable
 	| IapItemDisplayPgoreleaseGeneral2Ticket10
-	| IapItemDisplayPgoreleaseGeneral2Ticket10Giftable;
+	| IapItemDisplayPgoreleaseGeneral2Ticket10Giftable
+	| IapItemDisplayPgoreleaseMay12026DeluxeEventPassTrackRedirect
+	| IapItemDisplayPgoreleaseMay12026DeluxeEventPassTrackUnlockRedirect;

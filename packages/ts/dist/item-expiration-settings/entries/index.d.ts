@@ -57,8 +57,8 @@ export type ItemExpirationSettingsEventPassPointLiveOps02 = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_LIVE_OPS_02",
 		{
-			emergencyExpirationTime: "2026-02-07T10:00:00";
-			expirationTime: "2026-02-05T10:00:00";
+			emergencyExpirationTime: "2026-06-06T10:00:00";
+			expirationTime: "2026-06-05T20:00:00";
 		}
 	>
 >;
@@ -120,8 +120,8 @@ export type ItemExpirationSettingsEventPassPointMonthly01 = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_MONTHLY_01",
 		{
-			emergencyExpirationTime: "2026-04-11T10:00:00";
-			expirationTime: "2026-04-09T10:00:00";
+			emergencyExpirationTime: "2026-07-11T10:00:00";
+			expirationTime: "2026-07-09T10:00:00";
 		}
 	>
 >;
@@ -155,8 +155,7 @@ export type ItemExpirationSettingsLuckyFriendApplicator = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_LUCKY_FRIEND_APPLICATOR",
 		{
-			emergencyExpirationTime: "2026-05-13T10:00:00";
-			expirationTime: "2026-05-12T23:59:00";
+			expirationTime: "2026-03-08T23:59:59";
 		}
 	>
 >;

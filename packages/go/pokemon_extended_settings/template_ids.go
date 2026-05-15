@@ -76,6 +76,7 @@ const (
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuFlying04                 PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_FLYING_04"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuFlying5thAnniv           PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_FLYING_5TH_ANNIV"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuFlyingOkinawa            PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_FLYING_OKINAWA"
+	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuFossil2026               PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_FOSSIL_2026"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuGofest2022               PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_GOFEST_2022"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuGofest2024Mtiara         PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_GOFEST_2024_MTIARA"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuGofest2024Stiara         PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_GOFEST_2024_STIARA"
@@ -2544,6 +2545,7 @@ var PokemonExtendedSettingsTemplateIDValues = [...]PokemonExtendedSettingsTempla
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuFlying04,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuFlying5thAnniv,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuFlyingOkinawa,
+	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuFossil2026,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuGofest2022,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuGofest2024Mtiara,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuGofest2024Stiara,

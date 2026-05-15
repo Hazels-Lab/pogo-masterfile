@@ -2828,12 +2828,8 @@ export type IapItemDisplayBundleUkfeature1 = S<
 		"bundle.ukfeature.1",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
-			sale: true;
+			hidden: true;
 			sku: "bundle.ukfeature.1";
-			skuDisableTime: "2026-05-11T22:00:00";
-			skuDisableTimeUtcMs: "1778536800000";
-			skuEnableTime: "2022-10-13T12:00:00";
-			skuEnableTimeUtcMs: "1665662400000";
 			sortOrder: 6;
 			spriteId: "bundle.general5.small.1";
 			title: "bundle.general5.small.1_title";

@@ -3,6 +3,7 @@
 import type {
 	CombatLeagueDefaultGreat,
 	CombatLeagueDefaultMaster,
+	CombatLeagueDefaultMasterNpc,
 	CombatLeagueDefaultUltra,
 	CombatLeagueSafariBarcelona2023Test,
 	CombatLeagueSafariBarcelona202301,
@@ -111,6 +112,7 @@ import type {
 export interface CombatLeagueLookup {
 	COMBAT_LEAGUE_DEFAULT_GREAT: CombatLeagueDefaultGreat;
 	COMBAT_LEAGUE_DEFAULT_MASTER: CombatLeagueDefaultMaster;
+	COMBAT_LEAGUE_DEFAULT_MASTER_NPC: CombatLeagueDefaultMasterNpc;
 	COMBAT_LEAGUE_DEFAULT_ULTRA: CombatLeagueDefaultUltra;
 	COMBAT_LEAGUE_SAFARI_BARCELONA_2023_01: CombatLeagueSafariBarcelona202301;
 	COMBAT_LEAGUE_SAFARI_BARCELONA_2023_02: CombatLeagueSafariBarcelona202302;

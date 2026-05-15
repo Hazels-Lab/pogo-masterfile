@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatLeague", 105 entries (structural types).
+// Generated from Pokémon GO masterfile — group "combatLeague", 106 entries (structural types).
 
 import type { W } from "../_utils";
 import type { TypeEffectiveTemplateID } from "../type-effective/entries";

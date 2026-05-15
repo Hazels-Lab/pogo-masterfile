@@ -669,9 +669,9 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					};
 					pokemon: {
 						pokemonDisplay: {
-							form: "NIHILEGO_NORMAL";
+							form: "PHEROMOSA_NORMAL";
 						};
-						pokemonId: "NIHILEGO";
+						pokemonId: "PHEROMOSA";
 					};
 					staminaIvOverride: {
 						range: {

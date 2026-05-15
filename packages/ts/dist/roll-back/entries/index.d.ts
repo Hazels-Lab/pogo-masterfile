@@ -4,9 +4,9 @@ import type { S } from "../../_utils";
 import type { RollBack } from "../types";
 
 export type RollBackAndroidSensors = S<RollBack<"ANDROID_SENSORS_ROLL_BACK">>;
-export type RollBackBidirectionalFpWeeklyChallengeReward = S<RollBack<"BIDIRECTIONAL_FP_WEEKLY_CHALLENGE_REWARD_ROLL_BACK">>;
+export type RollBackNpcLeagueSuffix = S<RollBack<"NPC_LEAGUE_SUFFIX_ROLL_BACK">>;
 export type RollBackSingleRollShinyRate = S<RollBack<"SINGLE_ROLL_SHINY_RATE_ROLL_BACK">>;
 
-export type RollBackMasterfileEntry = RollBackAndroidSensors | RollBackBidirectionalFpWeeklyChallengeReward | RollBackSingleRollShinyRate;
+export type RollBackMasterfileEntry = RollBackAndroidSensors | RollBackNpcLeagueSuffix | RollBackSingleRollShinyRate;
 
 export type RollBackTemplateID = RollBackMasterfileEntry["templateId"];

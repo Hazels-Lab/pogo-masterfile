@@ -6,14 +6,12 @@ import type {
 	FeatureGateAmsFrontend,
 	FeatureGateDayNightPoi,
 	FeatureGateEnablePvpChallengeSpanner,
-	FeatureGateEventList,
 	FeatureGateEventPassBonusRanks,
 	FeatureGateEventPassClaimableRewardToggle,
 	FeatureGateEventPassMilestoneRewards,
 	FeatureGateHealToast,
 	FeatureGateMega2026,
 	FeatureGateStoreRefresh,
-	FeatureGateUpdateTicketsString,
 	FeatureGateVnextPreResponseInputBlockingBehavior,
 } from "./entries";
 
@@ -23,13 +21,11 @@ export interface FeatureGateLookup {
 	AMS_FRONTEND_FEATURE_GATE: FeatureGateAmsFrontend;
 	DAY_NIGHT_POI_FEATURE_GATE: FeatureGateDayNightPoi;
 	ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE: FeatureGateEnablePvpChallengeSpanner;
-	EVENT_LIST_FEATURE_GATE: FeatureGateEventList;
 	EVENT_PASS_BONUS_RANKS_FEATURE_GATE: FeatureGateEventPassBonusRanks;
 	EVENT_PASS_CLAIMABLE_REWARD_TOGGLE_FEATURE_GATE: FeatureGateEventPassClaimableRewardToggle;
 	EVENT_PASS_MILESTONE_REWARDS_FEATURE_GATE: FeatureGateEventPassMilestoneRewards;
 	HEAL_TOAST_FEATURE_GATE: FeatureGateHealToast;
 	MEGA_2026_FEATURE_GATE: FeatureGateMega2026;
 	STORE_REFRESH_FEATURE_GATE: FeatureGateStoreRefresh;
-	UPDATE_TICKETS_STRING_FEATURE_GATE: FeatureGateUpdateTicketsString;
 	VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE: FeatureGateVnextPreResponseInputBlockingBehavior;
 }

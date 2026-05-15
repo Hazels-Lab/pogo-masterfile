@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1121 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1123 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -46,19 +46,20 @@ export interface IapItemDisplayData {
 		| "text_rewards_key_GOWA25";
 	hidden?: boolean;
 	imageUrl?:
+		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F73951fa4_20260428_pgo_s23_gopass_june_ticket_1024x576_nologo%20(1).jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FEvent%20Pass%20Placeholder.png"
+		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Ff6da0ab4_PGO-MCS_GO_Fest_2026_APAC_Global_LiveOp_v2-1024x576.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FGO_Wild_Area_2025_Global_1024x512_logo.png"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FGOWA_GO_Pass_Ticket_1024x512.png"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO_MCS_MasterBall_KeyArt_TK_GP_V2_S14_1024x512_nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-bug-out-2026-nologo.jpg"
+		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-deino-community-day-classic-2026-nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-deluxe-gopass-april-nologo.jpg"
-		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-deluxe-gopass-march-2026-nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-entei-shadow-raid-day-2026-nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-fashion-raid-day-2026-nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-gmax-kanto-max-battle-day-2026-nologo.jpg"
-		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-gmax-pikachu-2026-nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-legendary-birds-nologo-2026.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Eternatus_Adventure_Effect_v2-1024x576.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_GO_Pass_May_2026_TICKET_v1-1204x576.jpg"
@@ -97,14 +98,14 @@ export interface IapItemDisplayData {
 		| "2025-01-02T00:00:00"
 		| "2025-03-24T00:00:00"
 		| "2025-04-08T20:00:00"
-		| "2025-04-09T10:00:00"
 		| "2025-04-22T20:00:00"
 		| "2025-05-06T20:00:00"
 		| "2025-05-07T10:00:00"
-		| "2025-05-20T20:00:00"
+		| "2025-06-03T20:00:00"
 		| "2025-06-22T23:59:59"
 		| "2025-06-29T23:59:59"
 		| "2025-07-06T20:00:00"
+		| "2025-07-09T10:00:00"
 		| "2025-08-26T21:00:00"
 		| "2025-11-16T18:00:00"
 		| "2025-11-30T20:00:00"
@@ -117,12 +118,12 @@ export interface IapItemDisplayData {
 		| "2026-03-01T18:00:00"
 		| "2026-03-15T20:00:00"
 		| "2026-03-21T17:00:00"
-		| "2026-03-28T17:00:00"
 		| "2026-04-04T17:00:00"
 		| "2026-04-18T17:00:00"
 		| "2026-04-25T17:00:00"
 		| "2026-05-02T17:00:00"
-		| "2026-05-11T22:00:00"
+		| "2026-05-16T17:00:00"
+		| "2026-05-20T20:00:00"
 		| "2026-06-04T10:00:00"
 		| "2026-07-14T23:59:59";
 	skuDisableTimeUtcMs?:
@@ -139,14 +140,14 @@ export interface IapItemDisplayData {
 		| "1735776000000"
 		| "1742774400000"
 		| "1744142400000"
-		| "1744192800000"
 		| "1745352000000"
 		| "1746561600000"
 		| "1746612000000"
-		| "1747771200000"
+		| "1748980800000"
 		| "1750636799000"
 		| "1751241599000"
 		| "1751832000000"
+		| "1752055200000"
 		| "1756242000000"
 		| "1763316000000"
 		| "1764532800000"
@@ -159,12 +160,12 @@ export interface IapItemDisplayData {
 		| "1772388000000"
 		| "1773604800000"
 		| "1774112400000"
-		| "1774717200000"
 		| "1775322000000"
 		| "1776531600000"
 		| "1777136400000"
 		| "1777741200000"
-		| "1778536800000"
+		| "1778950800000"
+		| "1779307200000"
 		| "1780567200000"
 		| "1784073599000";
 	skuEnableTime?:
@@ -173,7 +174,6 @@ export interface IapItemDisplayData {
 		| "2020-01-01T00:00:00"
 		| "2020-06-02T08:00:00"
 		| "2022-03-01T00:00:00"
-		| "2022-10-13T12:00:00"
 		| "2023-01-01T11:00:01"
 		| "2023-01-01T11:00:03"
 		| "2023-01-01T11:00:04"
@@ -198,7 +198,9 @@ export interface IapItemDisplayData {
 		| "2025-04-14T10:00:00"
 		| "2025-04-28T10:00:00"
 		| "2025-05-12T10:00:00"
+		| "2025-05-26T10:00:00"
 		| "2025-06-02T00:00:00"
+		| "2025-06-02T10:00:00"
 		| "2026-07-06T00:00:00";
 	skuEnableTimeUtcMs?:
 		| "1552550400000"
@@ -206,7 +208,6 @@ export interface IapItemDisplayData {
 		| "1577836800000"
 		| "1591084800000"
 		| "1646092800000"
-		| "1665662400000"
 		| "1672570801000"
 		| "1672570803000"
 		| "1672570804000"
@@ -231,7 +232,9 @@ export interface IapItemDisplayData {
 		| "1744624800000"
 		| "1745834400000"
 		| "1747044000000"
+		| "1748253600000"
 		| "1748822400000"
+		| "1748858400000"
 		| "1783296000000";
 	sortOrder?: number;
 	spriteId?: string;
@@ -245,7 +248,6 @@ export interface IapItemDisplayData {
 		| "web-encounter-jan-26-ticket-box"
 		| "web-fashion-raid-2026-ticket-box"
 		| "web-gmax-kanto-box-ultra"
-		| "web-gmax-pika-ticket-box"
 		| "web-gotour-26-ticket-box"
 		| "web-masterball-25-ticket-box"
 		| "web-riolu-hatch-day-ultra"

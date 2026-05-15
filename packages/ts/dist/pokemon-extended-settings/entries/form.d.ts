@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1255 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1253 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -8361,40 +8361,6 @@ export type PokemonExtendedSettingsV0414PokemonMothimNormal = S<
 				xxsLowerBound: 0.441;
 			};
 			uniqueId: "MOTHIM";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0415PokemonCombeeNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0415_POKEMON_COMBEE_NORMAL",
-		{
-			form: "COMBEE_NORMAL";
-			sizeSettings: {
-				mLowerBound: 0.225;
-				mUpperBound: 0.375;
-				xlUpperBound: 0.45;
-				xsLowerBound: 0.15;
-				xxlUpperBound: 0.525;
-				xxsLowerBound: 0.147;
-			};
-			uniqueId: "COMBEE";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0416PokemonVespiquenNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0416_POKEMON_VESPIQUEN_NORMAL",
-		{
-			form: "VESPIQUEN_NORMAL";
-			sizeSettings: {
-				mLowerBound: 0.9;
-				mUpperBound: 1.5;
-				xlUpperBound: 1.8;
-				xsLowerBound: 0.6;
-				xxlUpperBound: 2.1;
-				xxsLowerBound: 0.588;
-			};
-			uniqueId: "VESPIQUEN";
 		}
 	>
 >;
@@ -21979,8 +21945,6 @@ export type PokemonExtendedSettingsFormMasterfileEntry =
 	| PokemonExtendedSettingsV0413PokemonWormadamSandy
 	| PokemonExtendedSettingsV0413PokemonWormadamTrash
 	| PokemonExtendedSettingsV0414PokemonMothimNormal
-	| PokemonExtendedSettingsV0415PokemonCombeeNormal
-	| PokemonExtendedSettingsV0416PokemonVespiquenNormal
 	| PokemonExtendedSettingsV0417PokemonPachirisuNormal
 	| PokemonExtendedSettingsV0418PokemonBuizelNormal
 	| PokemonExtendedSettingsV0419PokemonFloatzelNormal

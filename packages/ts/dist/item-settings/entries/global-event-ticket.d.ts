@@ -82,33 +82,33 @@ export type ItemSettingsItemEventTicket03 = S<
 		"ITEM_EVENT_TICKET_03",
 		{
 			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
-			descriptionOverride: "item_event_ticket_pink_details_CD_Lechonk26";
+			descriptionOverride: "item_event_ticket_pink_details_CDC_Deino26";
 			globalEventTicket: {
-				backgroundImageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-lechonk-community-day-2026-nologo.jpg";
-				clientEventEndTimeUtcMs: "1778346000000";
-				clientEventStartTimeUtcMs: "1778335200000";
+				backgroundImageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-deino-community-day-classic-2026-nologo.jpg";
+				clientEventEndTimeUtcMs: "1778950800000";
+				clientEventStartTimeUtcMs: "1778940000000";
 				detailsLinkKey: "details_link_key";
 				displayV2Enabled: true;
-				eventBannerUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-lechonk-community-day-2026-nologo.jpg";
-				eventDatetimeRangeKey: "event_datetime_range_key_CD_Lechonk26";
-				eventEndTime: "2026-05-09T17:00:00";
-				eventStartTime: "2026-05-09T14:00:00";
+				eventBannerUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-deino-community-day-classic-2026-nologo.jpg";
+				eventDatetimeRangeKey: "event_datetime_range_key_CDC_Deino26";
+				eventEndTime: "2026-05-16T17:00:00";
+				eventStartTime: "2026-05-16T14:00:00";
 				giftable: true;
 				giftItem: "ITEM_EVENT_TICKET_03_TO_GIFT";
 				iconRewards: [
 					{
 						pokemonEncounter: {
 							pokemonDisplay: {
-								form: "OINKOLOGNE_NORMAL";
+								form: "HYDREIGON_NORMAL";
 							};
-							pokemonId: "OINKOLOGNE";
+							pokemonId: "HYDREIGON";
 						};
 						type: "POKEMON_ENCOUNTER";
 					},
 					{
 						item: {
 							amount: 1;
-							item: "ITEM_INCUBATOR_BASIC";
+							item: "ITEM_LUCKY_EGG";
 						};
 						type: "ITEM";
 					},
@@ -120,11 +120,11 @@ export type ItemSettingsItemEventTicket03 = S<
 						type: "ITEM";
 					},
 				];
-				itemBagDescriptionKey: "item_event_ticket_pink_desc_CD_Lechonk26";
-				textRewardsKey: "text_rewards_key_CD_Lechonk26";
+				itemBagDescriptionKey: "item_event_ticket_pink_desc_CDC_Deino26";
+				textRewardsKey: "text_rewards_key_CDC_Deino26";
 			};
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
-			nameOverride: "general1.ticket_CD_Lechonk26_title";
+			nameOverride: "general1.ticket_CDC_Deino26_title";
 		}
 	>
 >;
@@ -133,19 +133,19 @@ export type ItemSettingsItemEventTicket03ToGift = S<
 		"ITEM_EVENT_TICKET_03_TO_GIFT",
 		{
 			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
-			descriptionOverride: "item_event_ticket_pink_details_CD_Lechonk26";
+			descriptionOverride: "item_event_ticket_pink_details_CDC_Deino26";
 			globalEventTicket: {
-				clientEventEndTimeUtcMs: "1778346000000";
-				clientEventStartTimeUtcMs: "1778335200000";
-				eventBannerUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-lechonk-community-day-2026-nologo.jpg";
-				eventEndTime: "2026-05-09T17:00:00";
-				eventStartTime: "2026-05-09T14:00:00";
-				itemBagDescriptionKey: "item_event_ticket_pink_desc_CD_Lechonk26";
+				clientEventEndTimeUtcMs: "1778950800000";
+				clientEventStartTimeUtcMs: "1778940000000";
+				eventBannerUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-deino-community-day-classic-2026-nologo.jpg";
+				eventEndTime: "2026-05-16T17:00:00";
+				eventStartTime: "2026-05-16T14:00:00";
+				itemBagDescriptionKey: "item_event_ticket_pink_desc_CDC_Deino26";
 				ticketItem: "ITEM_EVENT_TICKET_03";
 			};
 			ignoreInventorySpace: true;
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
-			nameOverride: "general1.ticket_CD_Lechonk26_title";
+			nameOverride: "general1.ticket_CDC_Deino26_title";
 		}
 	>
 >;
@@ -229,37 +229,39 @@ export type ItemSettingsItemEventTicket05 = S<
 		"ITEM_EVENT_TICKET_05",
 		{
 			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
-			descriptionOverride: "item_event_ticket_05_desc_GMAX_PIKACHU_MAX_BATTLE";
+			descriptionOverride: "item_event_ticket_gray_desc_MegaFalinksRaidDay";
 			globalEventTicket: {
-				backgroundImageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-gmax-pikachu-2026-nologo.jpg";
-				clientEventEndTimeUtcMs: "1774717200000";
-				clientEventStartTimeUtcMs: "1774706400000";
-				detailsLinkKey: "details_link_key_GMAX_PIKACHU_MAX_BATTLE";
+				backgroundImageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Mega_Falinks_Raid_Day_v3-1024x576-nologo.jpg";
+				clientEventEndTimeUtcMs: "1779555600000";
+				clientEventStartTimeUtcMs: "1779544800000";
+				detailsLinkKey: "details_link_key_mega_falinks_raid_day";
 				displayV2Enabled: true;
-				eventBannerUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-gmax-pikachu-2026-nologo.jpg";
-				eventDatetimeRangeKey: "event_datetime_range_key_GMAX_PIKACHU_MAX_BATTLE";
-				eventEndTime: "2026-03-28T17:00:00";
-				eventStartTime: "2026-03-28T14:00:00";
+				eventBannerUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Mega_Falinks_Raid_Day_v3-1024x576-nologo.jpg";
+				eventDatetimeRangeKey: "event_datetime_range_key_MegaFalinksRaidDay";
+				eventEndTime: "2026-05-23T17:00:00";
+				eventStartTime: "2026-05-23T14:00:00";
 				giftable: true;
 				giftItem: "ITEM_EVENT_TICKET_05_TO_GIFT";
 				iconRewards: [
 					{
 						item: {
-							amount: 1;
-							item: "ITEM_MAX_BOOST";
+							amount: 8;
+							item: "ITEM_FREE_RAID_TICKET";
 						};
 						type: "ITEM";
 					},
 					{
-						exp: 25000;
-						type: "EXPERIENCE";
+						item: {
+							item: "ITEM_XL_RARE_CANDY";
+						};
+						type: "ITEM";
 					},
 				];
-				itemBagDescriptionKey: "item_event_ticket_05_details_GMAX_PIKACHU_MAX_BATTLE";
-				textRewardsKey: "text_rewards_key_GMAX_PIKACHU_MAX_BATTLE";
+				itemBagDescriptionKey: "item_event_ticket_gray_desc_MegaFalinksRaidDay";
+				textRewardsKey: "text_rewards_key_MegaFalinksRaidDay";
 			};
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
-			nameOverride: "general2.ticket5.GMAX_PIKACHU_MAX_BATTLE";
+			nameOverride: "general2.ticket.5_MegaFalinksRaidDay";
 		}
 	>
 >;
@@ -268,20 +270,20 @@ export type ItemSettingsItemEventTicket05ToGift = S<
 		"ITEM_EVENT_TICKET_05_TO_GIFT",
 		{
 			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
-			descriptionOverride: "item_event_ticket_05_desc_GMAX_PIKACHU_MAX_BATTLE";
+			descriptionOverride: "item_event_ticket_gray_desc_MegaFalinksRaidDay";
 			globalEventTicket: {
-				backgroundImageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-gmax-pikachu-2026-nologo.jpg";
-				clientEventEndTimeUtcMs: "1774717200000";
-				clientEventStartTimeUtcMs: "1774706400000";
-				eventBannerUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-gmax-pikachu-2026-nologo.jpg";
-				eventEndTime: "2026-03-28T17:00:00";
-				eventStartTime: "2026-03-28T14:00:00";
-				itemBagDescriptionKey: "item_event_ticket_05_details_GMAX_PIKACHU_MAX_BATTLE";
+				backgroundImageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Mega_Falinks_Raid_Day_v3-1024x576-nologo.jpg";
+				clientEventEndTimeUtcMs: "1779555600000";
+				clientEventStartTimeUtcMs: "1779544800000";
+				eventBannerUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Mega_Falinks_Raid_Day_v3-1024x576-nologo.jpg";
+				eventEndTime: "2026-05-23T17:00:00";
+				eventStartTime: "2026-05-23T14:00:00";
+				itemBagDescriptionKey: "item_event_ticket_gray_desc_MegaFalinksRaidDay";
 				ticketItem: "ITEM_EVENT_TICKET_05";
 			};
 			ignoreInventorySpace: true;
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
-			nameOverride: "general2.ticket5.GMAX_PIKACHU_MAX_BATTLE";
+			nameOverride: "general2.ticket.5_MegaFalinksRaidDay";
 		}
 	>
 >;

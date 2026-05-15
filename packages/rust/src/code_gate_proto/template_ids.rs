@@ -27,8 +27,6 @@ pub enum CodeGateProtoTemplateId {
     PushGatewayMultiActionCodeGate,
     #[serde(rename = "STAMP_COLLECTION_SNAPSHOT_ENABLED_CODE_GATE")]
     StampCollectionSnapshotEnabledCodeGate,
-    #[serde(rename = "TODAY_VIEW_V3_CODE_GATE")]
-    TodayViewV3CodeGate,
     #[serde(rename = "USE_EXTENDED_SETTINGS_FOR_MAX_SCALE_CODE_GATE")]
     UseExtendedSettingsForMaxScaleCodeGate,
     #[serde(rename = "USE_GMT_SKU_DATA_CODE_GATE")]

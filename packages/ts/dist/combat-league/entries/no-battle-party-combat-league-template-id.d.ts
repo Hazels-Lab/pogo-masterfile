@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatLeague", split "no-battle-party-combat-league-template-id", 3 entries.
+// Generated from Pokémon GO masterfile — group "combatLeague", split "no-battle-party-combat-league-template-id", 4 entries.
 
 import type { S } from "../../_utils";
 import type { CombatLeague } from "../types";
@@ -75,6 +75,36 @@ export type CombatLeagueDefaultMaster = S<
 		}
 	>
 >;
+export type CombatLeagueDefaultMasterNpc = S<
+	CombatLeague<
+		"COMBAT_LEAGUE_DEFAULT_MASTER_NPC",
+		{
+			allowTempEvos: true;
+			badgeType: "BADGE_MASTER_LEAGUE";
+			iconUrl: "https://storage.googleapis.com/prod-public-images/pogo_master_league.png";
+			leagueType: "STANDARD";
+			pokemonCondition: [
+				{
+					type: "WITH_POKEMON_CP_LIMIT";
+					withPokemonCpLimit: {
+						maxCp: 10000;
+					};
+				},
+			];
+			title: "combat_master_league";
+			unlockCondition: [
+				{
+					minPokemonCount: 3;
+					type: "WITH_POKEMON_CP_LIMIT";
+					withPokemonCpLimit: {
+						maxCp: 50000;
+						minCp: 2500;
+					};
+				},
+			];
+		}
+	>
+>;
 export type CombatLeagueDefaultUltra = S<
 	CombatLeague<
 		"COMBAT_LEAGUE_DEFAULT_ULTRA",
@@ -107,4 +137,8 @@ export type CombatLeagueDefaultUltra = S<
 	>
 >;
 
-export type CombatLeagueNoBattlePartyCombatLeagueTemplateIdMasterfileEntry = CombatLeagueDefaultGreat | CombatLeagueDefaultMaster | CombatLeagueDefaultUltra;
+export type CombatLeagueNoBattlePartyCombatLeagueTemplateIdMasterfileEntry =
+	| CombatLeagueDefaultGreat
+	| CombatLeagueDefaultMaster
+	| CombatLeagueDefaultMasterNpc
+	| CombatLeagueDefaultUltra;

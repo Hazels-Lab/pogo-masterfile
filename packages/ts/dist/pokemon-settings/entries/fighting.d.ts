@@ -5292,8 +5292,8 @@ export type PokemonSettingsV0870PokemonFalinks = S<
 			evolutionBranch: [
 				{
 					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
-					temporaryEvolutionEnergyCost: 200;
-					temporaryEvolutionEnergyCostSubsequent: 40;
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 60;
 				},
 			];
 			familyId: "FAMILY_FALINKS";
@@ -5370,8 +5370,8 @@ export type PokemonSettingsV0870PokemonFalinksGofest2025TrainConductor = S<
 			evolutionBranch: [
 				{
 					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
-					temporaryEvolutionEnergyCost: 200;
-					temporaryEvolutionEnergyCostSubsequent: 40;
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 60;
 				},
 			];
 			familyId: "FAMILY_FALINKS";
@@ -5448,8 +5448,8 @@ export type PokemonSettingsV0870PokemonFalinksNormal = S<
 			evolutionBranch: [
 				{
 					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
-					temporaryEvolutionEnergyCost: 200;
-					temporaryEvolutionEnergyCostSubsequent: 40;
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 60;
 				},
 			];
 			familyId: "FAMILY_FALINKS";

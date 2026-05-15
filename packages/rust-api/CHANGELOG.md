@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1.12] - 2026-05-15
+
+Automated regeneration from upstream masterfile commit `d5f2d83e76e59ffb463e30cf6542b356f1faab22`.
+
 ## [0.1.11] - 2026-05-10
 
 Automated regeneration from upstream masterfile commit `af379b35f08bf90feb0946be90fe1156d2858498`.

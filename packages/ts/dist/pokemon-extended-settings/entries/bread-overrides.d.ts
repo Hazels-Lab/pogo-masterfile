@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides", 114 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides", 116 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -2330,6 +2330,80 @@ export type PokemonExtendedSettingsV0379PokemonRegisteel = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0415PokemonCombee = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0415_POKEMON_COMBEE",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 55;
+						xOffset: 2;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 20;
+						maxReticleSize: 14;
+						scale: 18;
+					};
+					maxLobbyVisualSettings: {
+						scale: 50;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 0.56;
+					};
+					maxStationVisualSettings: {
+						scale: 3;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 0.225;
+				mUpperBound: 0.375;
+				xlUpperBound: 0.45;
+				xsLowerBound: 0.15;
+				xxlUpperBound: 0.525;
+				xxsLowerBound: 0.147;
+			};
+			uniqueId: "COMBEE";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0416PokemonVespiquen = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0416_POKEMON_VESPIQUEN",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 24.66;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 28;
+						maxReticleSize: 14;
+						scale: 9.5;
+					};
+					maxLobbyVisualSettings: {
+						scale: 0.8;
+					};
+					maxStationVisualSettings: {
+						scale: 1.84;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 0.9;
+				mUpperBound: 1.5;
+				xlUpperBound: 1.8;
+				xsLowerBound: 0.6;
+				xxlUpperBound: 2.1;
+				xxsLowerBound: 0.588;
+			};
+			uniqueId: "VESPIQUEN";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0470PokemonLeafeon = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0470_POKEMON_LEAFEON",
@@ -4299,6 +4373,8 @@ export type PokemonExtendedSettingsBreadOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0377PokemonRegirock
 	| PokemonExtendedSettingsV0378PokemonRegice
 	| PokemonExtendedSettingsV0379PokemonRegisteel
+	| PokemonExtendedSettingsV0415PokemonCombee
+	| PokemonExtendedSettingsV0416PokemonVespiquen
 	| PokemonExtendedSettingsV0470PokemonLeafeon
 	| PokemonExtendedSettingsV0471PokemonGlaceon
 	| PokemonExtendedSettingsV0519PokemonPidove
