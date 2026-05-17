@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "temp-evo-overrides", 38 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "temp-evo-overrides", 37 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -174,35 +174,6 @@ export type PokemonExtendedSettingsV0127PokemonPinsir = S<
 				},
 			];
 			uniqueId: "PINSIR";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0130PokemonGyarados = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0130_POKEMON_GYARADOS",
-		{
-			sizeSettings: {
-				mLowerBound: 4.875;
-				mUpperBound: 8.125;
-				xlUpperBound: 9.75;
-				xsLowerBound: 3.25;
-				xxlUpperBound: 13;
-				xxsLowerBound: 3.185;
-			};
-			tempEvoOverrides: [
-				{
-					sizeSettings: {
-						mLowerBound: 4.875;
-						mUpperBound: 8.125;
-						xlUpperBound: 9.75;
-						xsLowerBound: 3.25;
-						xxlUpperBound: 10.075;
-						xxsLowerBound: 3.185;
-					};
-					tempEvoId: "TEMP_EVOLUTION_MEGA";
-				},
-			];
-			uniqueId: "GYARADOS";
 		}
 	>
 >;
@@ -1113,7 +1084,6 @@ export type PokemonExtendedSettingsTempEvoOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0080PokemonSlowbro
 	| PokemonExtendedSettingsV0115PokemonKangaskhan
 	| PokemonExtendedSettingsV0127PokemonPinsir
-	| PokemonExtendedSettingsV0130PokemonGyarados
 	| PokemonExtendedSettingsV0142PokemonAerodactyl
 	| PokemonExtendedSettingsV0149PokemonDragonite
 	| PokemonExtendedSettingsV0181PokemonAmpharos

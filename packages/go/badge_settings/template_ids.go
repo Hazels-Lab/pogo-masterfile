@@ -728,6 +728,8 @@ const (
 	BadgeSettingsTemplateIDBadgeRaidBattleStat                              BadgeSettingsTemplateID = "BADGE_RAID_BATTLE_STAT"
 	BadgeSettingsTemplateIDBadgeRaidBattleWon                               BadgeSettingsTemplateID = "BADGE_RAID_BATTLE_WON"
 	BadgeSettingsTemplateIDBadgeRaidsWithFriends                            BadgeSettingsTemplateID = "BADGE_RAIDS_WITH_FRIENDS"
+	BadgeSettingsTemplateIDBadgeReducedEntryFlowControl                     BadgeSettingsTemplateID = "BADGE_REDUCED_ENTRY_FLOW_CONTROL"
+	BadgeSettingsTemplateIDBadgeReducedEntryFlowRollout                     BadgeSettingsTemplateID = "BADGE_REDUCED_ENTRY_FLOW_ROLLOUT"
 	BadgeSettingsTemplateIDBadgeRocketGiovanniDefeated                      BadgeSettingsTemplateID = "BADGE_ROCKET_GIOVANNI_DEFEATED"
 	BadgeSettingsTemplateIDBadgeRocketGruntsDefeated                        BadgeSettingsTemplateID = "BADGE_ROCKET_GRUNTS_DEFEATED"
 	BadgeSettingsTemplateIDBadgeSafari2023BarcelonaAddOnHatch               BadgeSettingsTemplateID = "BADGE_SAFARI_2023_BARCELONA_ADD_ON_HATCH"
@@ -1698,6 +1700,8 @@ var BadgeSettingsTemplateIDValues = [...]BadgeSettingsTemplateID{
 	BadgeSettingsTemplateIDBadgeRaidBattleStat,
 	BadgeSettingsTemplateIDBadgeRaidBattleWon,
 	BadgeSettingsTemplateIDBadgeRaidsWithFriends,
+	BadgeSettingsTemplateIDBadgeReducedEntryFlowControl,
+	BadgeSettingsTemplateIDBadgeReducedEntryFlowRollout,
 	BadgeSettingsTemplateIDBadgeRocketGiovanniDefeated,
 	BadgeSettingsTemplateIDBadgeRocketGruntsDefeated,
 	BadgeSettingsTemplateIDBadgeSafari2023BarcelonaAddOnHatch,

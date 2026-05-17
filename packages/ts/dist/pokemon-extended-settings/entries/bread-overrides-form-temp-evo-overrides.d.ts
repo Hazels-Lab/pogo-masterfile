@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form-temp-evo-overrides", 13 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form-temp-evo-overrides", 14 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -345,6 +345,57 @@ export type PokemonExtendedSettingsV0094PokemonGengarNormal = S<
 				},
 			];
 			uniqueId: "GENGAR";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0130PokemonGyaradosNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0130_POKEMON_GYARADOS_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						xOffset: 9;
+						yOffset: 5;
+					};
+					maxBattleVisualSettings: {
+						scale: 11.56;
+						yOffset: -5;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 4.43;
+					};
+					maxStationVisualSettings: {
+						scale: 0.6;
+					};
+				},
+			];
+			form: "GYARADOS_NORMAL";
+			sizeSettings: {
+				mLowerBound: 4.875;
+				mUpperBound: 8.125;
+				xlUpperBound: 9.75;
+				xsLowerBound: 3.25;
+				xxlUpperBound: 13;
+				xxsLowerBound: 3.185;
+			};
+			tempEvoOverrides: [
+				{
+					sizeSettings: {
+						mLowerBound: 4.875;
+						mUpperBound: 8.125;
+						xlUpperBound: 9.75;
+						xsLowerBound: 3.25;
+						xxlUpperBound: 10.075;
+						xxsLowerBound: 3.185;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+			uniqueId: "GYARADOS";
 		}
 	>
 >;
@@ -747,6 +798,7 @@ export type PokemonExtendedSettingsBreadOverridesFormTempEvoOverridesMasterfileE
 	| PokemonExtendedSettingsV0009PokemonBlastoiseNormal
 	| PokemonExtendedSettingsV0065PokemonAlakazamNormal
 	| PokemonExtendedSettingsV0094PokemonGengarNormal
+	| PokemonExtendedSettingsV0130PokemonGyaradosNormal
 	| PokemonExtendedSettingsV0282PokemonGardevoirNormal
 	| PokemonExtendedSettingsV0302PokemonSableyeNormal
 	| PokemonExtendedSettingsV0376PokemonMetagrossNormal

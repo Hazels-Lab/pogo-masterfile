@@ -10,6 +10,7 @@ const (
 	SingletonsTemplateIDAddressBookImportSettings               SingletonsTemplateID = "ADDRESS_BOOK_IMPORT_SETTINGS"
 	SingletonsTemplateIDAddressablePokemonSettings              SingletonsTemplateID = "ADDRESSABLE_POKEMON_SETTINGS"
 	SingletonsTemplateIDAdvancedSettings                        SingletonsTemplateID = "ADVANCED_SETTINGS"
+	SingletonsTemplateIDAmuseBoucheWelcomeBackRewards           SingletonsTemplateID = "AMUSE_BOUCHE_WELCOME_BACK_REWARDS"
 	SingletonsTemplateIDArPhotoFeatureFlags                     SingletonsTemplateID = "AR_PHOTO_FEATURE_FLAGS"
 	SingletonsTemplateIDArTelemetrySettings                     SingletonsTemplateID = "AR_TELEMETRY_SETTINGS"
 	SingletonsTemplateIDAssetRefreshProto                       SingletonsTemplateID = "ASSET_REFRESH_PROTO"
@@ -154,6 +155,7 @@ var SingletonsTemplateIDValues = [...]SingletonsTemplateID{
 	SingletonsTemplateIDAddressBookImportSettings,
 	SingletonsTemplateIDAddressablePokemonSettings,
 	SingletonsTemplateIDAdvancedSettings,
+	SingletonsTemplateIDAmuseBoucheWelcomeBackRewards,
 	SingletonsTemplateIDArPhotoFeatureFlags,
 	SingletonsTemplateIDArTelemetrySettings,
 	SingletonsTemplateIDAssetRefreshProto,

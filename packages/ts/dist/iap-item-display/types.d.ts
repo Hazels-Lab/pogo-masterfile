@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1123 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1451 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -55,7 +55,6 @@ export interface IapItemDisplayData {
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FGOWA_GO_Pass_Ticket_1024x512.png"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO_MCS_MasterBall_KeyArt_TK_GP_V2_S14_1024x512_nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-bug-out-2026-nologo.jpg"
-		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-deino-community-day-classic-2026-nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-deluxe-gopass-april-nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-entei-shadow-raid-day-2026-nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-fashion-raid-day-2026-nologo.jpg"
@@ -83,7 +82,7 @@ export interface IapItemDisplayData {
 	sale?: boolean;
 	showDiscountTag?: boolean;
 	showStrikethroughPrice?: boolean;
-	sku: string;
+	sku?: string;
 	skuDisableTime?:
 		| "2020-07-26T18:00:00"
 		| "2022-06-02T13:00:00"
@@ -122,7 +121,7 @@ export interface IapItemDisplayData {
 		| "2026-04-18T17:00:00"
 		| "2026-04-25T17:00:00"
 		| "2026-05-02T17:00:00"
-		| "2026-05-16T17:00:00"
+		| "2026-05-17T23:59:59"
 		| "2026-05-20T20:00:00"
 		| "2026-06-04T10:00:00"
 		| "2026-07-14T23:59:59";
@@ -164,7 +163,7 @@ export interface IapItemDisplayData {
 		| "1776531600000"
 		| "1777136400000"
 		| "1777741200000"
-		| "1778950800000"
+		| "1779062399000"
 		| "1779307200000"
 		| "1780567200000"
 		| "1784073599000";
@@ -174,6 +173,7 @@ export interface IapItemDisplayData {
 		| "2020-01-01T00:00:00"
 		| "2020-06-02T08:00:00"
 		| "2022-03-01T00:00:00"
+		| "2022-10-13T12:00:00"
 		| "2023-01-01T11:00:01"
 		| "2023-01-01T11:00:03"
 		| "2023-01-01T11:00:04"
@@ -208,6 +208,7 @@ export interface IapItemDisplayData {
 		| "1577836800000"
 		| "1591084800000"
 		| "1646092800000"
+		| "1665662400000"
 		| "1672570801000"
 		| "1672570803000"
 		| "1672570804000"

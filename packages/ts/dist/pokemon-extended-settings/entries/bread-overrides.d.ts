@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides", 116 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides", 132 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -1004,6 +1004,105 @@ export type PokemonExtendedSettingsV0113PokemonChansey = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0125PokemonElectabuzz = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0125_POKEMON_ELECTABUZZ",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 28.56;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 14.28;
+					};
+					maxStationVisualSettings: {
+						scale: 1.94;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 0.825;
+				mUpperBound: 1.375;
+				xlUpperBound: 1.65;
+				xsLowerBound: 0.55;
+				xxlUpperBound: 1.925;
+				xxsLowerBound: 0.539;
+			};
+			uniqueId: "ELECTABUZZ";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0126PokemonMagmar = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0126_POKEMON_MAGMAR",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 25.38;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 28;
+						maxReticleSize: 14;
+						scale: 11.36;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 1;
+					};
+					maxStationVisualSettings: {
+						scale: 1.73;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 0.975;
+				mUpperBound: 1.625;
+				xlUpperBound: 1.95;
+				xsLowerBound: 0.65;
+				xxlUpperBound: 2.275;
+				xxsLowerBound: 0.637;
+			};
+			uniqueId: "MAGMAR";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0129PokemonMagikarp = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0129_POKEMON_MAGIKARP",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 38.08;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 19.04;
+					};
+					maxStationVisualSettings: {
+						scale: 2.59;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 0.675;
+				mUpperBound: 1.125;
+				xlUpperBound: 1.35;
+				xsLowerBound: 0.45;
+				xxlUpperBound: 1.8;
+				xxsLowerBound: 0.441;
+			};
+			uniqueId: "MAGIKARP";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0131PokemonLapras = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0131_POKEMON_LAPRAS",
@@ -1489,6 +1588,75 @@ export type PokemonExtendedSettingsV0146PokemonMoltres = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0163PokemonHoothoot = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0163_POKEMON_HOOTHOOT",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: object;
+					maxBattleVisualSettings: {
+						scale: 46.24;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 35;
+						maxReticleSize: 14;
+						scale: 23.12;
+					};
+					maxStationVisualSettings: {
+						scale: 3.15;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 0.5325;
+				mUpperBound: 0.8875;
+				xlUpperBound: 1.065;
+				xsLowerBound: 0.355;
+				xxlUpperBound: 1.2425;
+				xxsLowerBound: 0.3479;
+			};
+			uniqueId: "HOOTHOOT";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0164PokemonNoctowl = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0164_POKEMON_NOCTOWL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: object;
+					maxBattleVisualSettings: {
+						scale: 25.96;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 35;
+						maxReticleSize: 20;
+						scale: 12.98;
+					};
+					maxLobbyVisualSettings: {
+						yOffset: -2;
+					};
+					maxStationVisualSettings: {
+						scale: 1.77;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 1.2;
+				mUpperBound: 2;
+				xlUpperBound: 2.4;
+				xsLowerBound: 0.8;
+				xxlUpperBound: 2.8;
+				xxsLowerBound: 0.784;
+			};
+			uniqueId: "NOCTOWL";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0196PokemonEspeon = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0196_POKEMON_ESPEON",
@@ -1582,6 +1750,140 @@ export type PokemonExtendedSettingsV0213PokemonShuckle = S<
 				xxsLowerBound: 0.2989;
 			};
 			uniqueId: "SHUCKLE";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0236PokemonTyrogue = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0236_POKEMON_TYROGUE",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						xOffset: -5;
+					};
+					maxBattleVisualSettings: {
+						scale: 38.08;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 19.04;
+					};
+					maxStationVisualSettings: {
+						scale: 2.59;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 0.5325;
+				mUpperBound: 0.8875;
+				xlUpperBound: 1.065;
+				xsLowerBound: 0.355;
+				xxlUpperBound: 1.2425;
+				xxsLowerBound: 0.3479;
+			};
+			uniqueId: "TYROGUE";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0237PokemonHitmontop = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0237_POKEMON_HITMONTOP",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 26.36;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 13.18;
+					};
+					maxStationVisualSettings: {
+						scale: 1.79;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 1.05;
+				mUpperBound: 1.75;
+				xlUpperBound: 2.1;
+				xsLowerBound: 0.7;
+				xxlUpperBound: 2.45;
+				xxsLowerBound: 0.686;
+			};
+			uniqueId: "HITMONTOP";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0239PokemonElekid = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0239_POKEMON_ELEKID",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 44.42;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 35;
+						maxReticleSize: 14;
+						scale: 34.42;
+					};
+					maxStationVisualSettings: {
+						scale: 3.02;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 0.4575;
+				mUpperBound: 0.7625;
+				xlUpperBound: 0.915;
+				xsLowerBound: 0.305;
+				xxlUpperBound: 1.0675;
+				xxsLowerBound: 0.2989;
+			};
+			uniqueId: "ELEKID";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0240PokemonMagby = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0240_POKEMON_MAGBY",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 38.08;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 28;
+						maxReticleSize: 14;
+						scale: 19.04;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 1;
+					};
+					maxStationVisualSettings: {
+						scale: 2.59;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 0.5325;
+				mUpperBound: 0.8875;
+				xlUpperBound: 1.065;
+				xsLowerBound: 0.355;
+				xxlUpperBound: 1.2425;
+				xxsLowerBound: 0.3479;
+			};
+			uniqueId: "MAGBY";
 		}
 	>
 >;
@@ -2038,6 +2340,81 @@ export type PokemonExtendedSettingsV0330PokemonFlygon = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0349PokemonFeebas = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0349_POKEMON_FEEBAS",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 50;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 39.2;
+						maxReticleSize: 14;
+						scale: 25;
+					};
+					maxLobbyVisualSettings: {
+						scale: 50;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 0.4575;
+				mUpperBound: 0.7625;
+				xlUpperBound: 0.915;
+				xsLowerBound: 0.305;
+				xxlUpperBound: 1.22;
+				xxsLowerBound: 0.2989;
+			};
+			uniqueId: "FEEBAS";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0350PokemonMilotic = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0350_POKEMON_MILOTIC",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						yOffset: 11;
+					};
+					maxBattleVisualSettings: {
+						scale: 16;
+						xOffset: 4;
+						yOffset: -17;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 39.2;
+						maxReticleSize: 14;
+						scale: 8;
+					};
+					maxLobbyVisualSettings: {
+						scale: 16;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 0.7;
+					};
+					maxStationVisualSettings: {
+						scale: 1.1;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 4.65;
+				mUpperBound: 7.75;
+				xlUpperBound: 9.3;
+				xsLowerBound: 3.1;
+				xxlUpperBound: 12.4;
+				xxsLowerBound: 3.038;
+			};
+			uniqueId: "MILOTIC";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0363PokemonSpheal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0363_POKEMON_SPHEAL",
@@ -2401,6 +2778,73 @@ export type PokemonExtendedSettingsV0416PokemonVespiquen = S<
 				xxsLowerBound: 0.588;
 			};
 			uniqueId: "VESPIQUEN";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0466PokemonElectivire = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0466_POKEMON_ELECTIVIRE",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 20.68;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 10.34;
+					};
+					maxStationVisualSettings: {
+						scale: 1.41;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 1.35;
+				mUpperBound: 2.25;
+				xlUpperBound: 2.7;
+				xsLowerBound: 0.9;
+				xxlUpperBound: 2.79;
+				xxsLowerBound: 0.882;
+			};
+			uniqueId: "ELECTIVIRE";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0467PokemonMagmortar = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0467_POKEMON_MAGMORTAR",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 20.68;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 28;
+						maxReticleSize: 14;
+						scale: 9.36;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 0.89;
+					};
+					maxStationVisualSettings: {
+						scale: 1.41;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 1.2;
+				mUpperBound: 2;
+				xlUpperBound: 2.4;
+				xsLowerBound: 0.8;
+				xxlUpperBound: 2.8;
+				xxsLowerBound: 0.784;
+			};
+			uniqueId: "MAGMORTAR";
 		}
 	>
 >;
@@ -3079,6 +3523,108 @@ export type PokemonExtendedSettingsV0615PokemonCryogonal = S<
 				xxsLowerBound: 0.539;
 			};
 			uniqueId: "CRYOGONAL";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0633PokemonDeino = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0633_POKEMON_DEINO",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						xOffset: -10;
+					};
+					maxBattleVisualSettings: {
+						scale: 34.5;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 18.8;
+					};
+					maxStationVisualSettings: {
+						scale: 3.02;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 0.6;
+				mUpperBound: 1;
+				xlUpperBound: 1.2;
+				xsLowerBound: 0.4;
+				xxlUpperBound: 1.4;
+				xxsLowerBound: 0.392;
+			};
+			uniqueId: "DEINO";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0634PokemonZweilous = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0634_POKEMON_ZWEILOUS",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						xOffset: -5;
+					};
+					maxBattleVisualSettings: {
+						scale: 24;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 40;
+						maxReticleSize: 14;
+						scale: 13.5;
+					};
+					maxStationVisualSettings: {
+						scale: 1.78;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 1.05;
+				mUpperBound: 1.75;
+				xlUpperBound: 2.1;
+				xsLowerBound: 0.7;
+				xxlUpperBound: 2.45;
+				xxsLowerBound: 0.686;
+			};
+			uniqueId: "ZWEILOUS";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0635PokemonHydreigon = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0635_POKEMON_HYDREIGON",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 22.28;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 31.65;
+						maxReticleSize: 14;
+						scale: 11.14;
+					};
+					maxStationVisualSettings: {
+						scale: 1.52;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 1.35;
+				mUpperBound: 2.25;
+				xlUpperBound: 2.7;
+				xsLowerBound: 0.9;
+				xxlUpperBound: 3.15;
+				xxsLowerBound: 0.882;
+			};
+			uniqueId: "HYDREIGON";
 		}
 	>
 >;
@@ -4336,6 +4882,9 @@ export type PokemonExtendedSettingsBreadOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0106PokemonHitmonlee
 	| PokemonExtendedSettingsV0107PokemonHitmonchan
 	| PokemonExtendedSettingsV0113PokemonChansey
+	| PokemonExtendedSettingsV0125PokemonElectabuzz
+	| PokemonExtendedSettingsV0126PokemonMagmar
+	| PokemonExtendedSettingsV0129PokemonMagikarp
 	| PokemonExtendedSettingsV0131PokemonLapras
 	| PokemonExtendedSettingsV0133PokemonEevee
 	| PokemonExtendedSettingsV0134PokemonVaporeon
@@ -4349,9 +4898,15 @@ export type PokemonExtendedSettingsBreadOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0144PokemonArticuno
 	| PokemonExtendedSettingsV0145PokemonZapdos
 	| PokemonExtendedSettingsV0146PokemonMoltres
+	| PokemonExtendedSettingsV0163PokemonHoothoot
+	| PokemonExtendedSettingsV0164PokemonNoctowl
 	| PokemonExtendedSettingsV0196PokemonEspeon
 	| PokemonExtendedSettingsV0197PokemonUmbreon
 	| PokemonExtendedSettingsV0213PokemonShuckle
+	| PokemonExtendedSettingsV0236PokemonTyrogue
+	| PokemonExtendedSettingsV0237PokemonHitmontop
+	| PokemonExtendedSettingsV0239PokemonElekid
+	| PokemonExtendedSettingsV0240PokemonMagby
 	| PokemonExtendedSettingsV0242PokemonBlissey
 	| PokemonExtendedSettingsV0243PokemonRaikou
 	| PokemonExtendedSettingsV0244PokemonEntei
@@ -4365,6 +4920,8 @@ export type PokemonExtendedSettingsBreadOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0328PokemonTrapinch
 	| PokemonExtendedSettingsV0329PokemonVibrava
 	| PokemonExtendedSettingsV0330PokemonFlygon
+	| PokemonExtendedSettingsV0349PokemonFeebas
+	| PokemonExtendedSettingsV0350PokemonMilotic
 	| PokemonExtendedSettingsV0363PokemonSpheal
 	| PokemonExtendedSettingsV0364PokemonSealeo
 	| PokemonExtendedSettingsV0365PokemonWalrein
@@ -4375,6 +4932,8 @@ export type PokemonExtendedSettingsBreadOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0379PokemonRegisteel
 	| PokemonExtendedSettingsV0415PokemonCombee
 	| PokemonExtendedSettingsV0416PokemonVespiquen
+	| PokemonExtendedSettingsV0466PokemonElectivire
+	| PokemonExtendedSettingsV0467PokemonMagmortar
 	| PokemonExtendedSettingsV0470PokemonLeafeon
 	| PokemonExtendedSettingsV0471PokemonGlaceon
 	| PokemonExtendedSettingsV0519PokemonPidove
@@ -4394,6 +4953,9 @@ export type PokemonExtendedSettingsBreadOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0568PokemonTrubbish
 	| PokemonExtendedSettingsV0569PokemonGarbodor
 	| PokemonExtendedSettingsV0615PokemonCryogonal
+	| PokemonExtendedSettingsV0633PokemonDeino
+	| PokemonExtendedSettingsV0634PokemonZweilous
+	| PokemonExtendedSettingsV0635PokemonHydreigon
 	| PokemonExtendedSettingsV0686PokemonInkay
 	| PokemonExtendedSettingsV0700PokemonSylveon
 	| PokemonExtendedSettingsV0761PokemonBounsweet

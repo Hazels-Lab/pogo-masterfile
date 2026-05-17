@@ -724,6 +724,8 @@ import type {
 	BadgeSettingsRaidBattleStat,
 	BadgeSettingsRaidBattleWon,
 	BadgeSettingsRaidsWithFriends,
+	BadgeSettingsReducedEntryFlowControl,
+	BadgeSettingsReducedEntryFlowRollout,
 	BadgeSettingsRocketGiovanniDefeated,
 	BadgeSettingsRocketGruntsDefeated,
 	BadgeSettingsSafari2023BarcelonaAddOnHatch,
@@ -1694,6 +1696,8 @@ export interface BadgeSettingsLookup {
 	BADGE_RAID_BATTLE_STAT: BadgeSettingsRaidBattleStat;
 	BADGE_RAID_BATTLE_WON: BadgeSettingsRaidBattleWon;
 	BADGE_RAIDS_WITH_FRIENDS: BadgeSettingsRaidsWithFriends;
+	BADGE_REDUCED_ENTRY_FLOW_CONTROL: BadgeSettingsReducedEntryFlowControl;
+	BADGE_REDUCED_ENTRY_FLOW_ROLLOUT: BadgeSettingsReducedEntryFlowRollout;
 	BADGE_ROCKET_GIOVANNI_DEFEATED: BadgeSettingsRocketGiovanniDefeated;
 	BADGE_ROCKET_GRUNTS_DEFEATED: BadgeSettingsRocketGruntsDefeated;
 	BADGE_SAFARI_2023_BARCELONA_ADD_ON_HATCH: BadgeSettingsSafari2023BarcelonaAddOnHatch;

@@ -621,7 +621,7 @@ type CatchRadiusMultiplierSettings struct {
 type CombatCompetitiveSeasonSettings struct {
 	RankingAdjustmentPercentage float64    `json:"rankingAdjustmentPercentage"`
 	RatingAdjustmentPercentage  float64    `json:"ratingAdjustmentPercentage"`
-	SeasonEndTimeTimestamp      [30]string `json:"seasonEndTimeTimestamp"`
+	SeasonEndTimeTimestamp      [31]string `json:"seasonEndTimeTimestamp"`
 }
 
 type CombatLeagueSettings struct {
@@ -2123,6 +2123,17 @@ func (AdvancedSettingsEntry) MasterfileEntry() {}
 type AdvancedSettingsEntryData struct {
 	TemplateID       string           `json:"templateId"`
 	AdvancedSettings AdvancedSettings `json:"advancedSettings"`
+}
+
+type AmuseBoucheWelcomeBackRewardsEntry struct {
+	TemplateID string                                 `json:"templateId"`
+	Data       AmuseBoucheWelcomeBackRewardsEntryData `json:"data"`
+}
+
+func (AmuseBoucheWelcomeBackRewardsEntry) MasterfileEntry() {}
+
+type AmuseBoucheWelcomeBackRewardsEntryData struct {
+	TemplateID string `json:"templateId"`
 }
 
 type ArPhotoFeatureFlagsEntry struct {

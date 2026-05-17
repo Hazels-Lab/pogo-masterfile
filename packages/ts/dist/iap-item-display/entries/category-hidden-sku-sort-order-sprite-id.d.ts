@@ -1,8 +1,20 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "pokecoins", 4 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-hidden-sku-sort-order-sprite-id", 4 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
 
+export type IapItemDisplayBundleGeneral3Free1 = S<
+	IapItemDisplay<
+		"bundle.general3.free.1",
+		{
+			category: "IAP_CATEGORY_FREE";
+			hidden: true;
+			sku: "bundle.general3.free.1";
+			sortOrder: 3;
+			spriteId: "bundle.general1.free.1";
+		}
+	>
+>;
 export type IapItemDisplayPgoreleasePokecoin2750 = S<
 	IapItemDisplay<
 		"pgorelease.pokecoin.2750",
@@ -39,20 +51,9 @@ export type IapItemDisplayPgoreleasePokecoin15950 = S<
 		}
 	>
 >;
-export type IapItemDisplayPgoreleasePokecoin21375 = S<
-	IapItemDisplay<
-		"pgorelease.pokecoin.21375",
-		{
-			category: "IAP_CATEGORY_POKECOINS";
-			hidden: true;
-			sku: "pgorelease.pokecoin.21375";
-			sortOrder: 1;
-		}
-	>
->;
 
-export type IapItemDisplayPokecoinsMasterfileEntry =
+export type IapItemDisplayCategoryHiddenSkuSortOrderSpriteIdMasterfileEntry =
+	| IapItemDisplayBundleGeneral3Free1
 	| IapItemDisplayPgoreleasePokecoin2750
 	| IapItemDisplayPgoreleasePokecoin5720
-	| IapItemDisplayPgoreleasePokecoin15950
-	| IapItemDisplayPgoreleasePokecoin21375;
+	| IapItemDisplayPgoreleasePokecoin15950;

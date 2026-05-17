@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-temp-evo-overrides", 13 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-temp-evo-overrides", 14 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -340,6 +340,56 @@ export type PokemonExtendedSettingsV0094PokemonGengar = S<
 				},
 			];
 			uniqueId: "GENGAR";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0130PokemonGyarados = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0130_POKEMON_GYARADOS",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						xOffset: 9;
+						yOffset: 5;
+					};
+					maxBattleVisualSettings: {
+						scale: 11.56;
+						yOffset: -5;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 4.43;
+					};
+					maxStationVisualSettings: {
+						scale: 0.6;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 4.875;
+				mUpperBound: 8.125;
+				xlUpperBound: 9.75;
+				xsLowerBound: 3.25;
+				xxlUpperBound: 13;
+				xxsLowerBound: 3.185;
+			};
+			tempEvoOverrides: [
+				{
+					sizeSettings: {
+						mLowerBound: 4.875;
+						mUpperBound: 8.125;
+						xlUpperBound: 9.75;
+						xsLowerBound: 3.25;
+						xxlUpperBound: 10.075;
+						xxsLowerBound: 3.185;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+			uniqueId: "GYARADOS";
 		}
 	>
 >;
@@ -734,6 +784,7 @@ export type PokemonExtendedSettingsBreadOverridesTempEvoOverridesMasterfileEntry
 	| PokemonExtendedSettingsV0009PokemonBlastoise
 	| PokemonExtendedSettingsV0065PokemonAlakazam
 	| PokemonExtendedSettingsV0094PokemonGengar
+	| PokemonExtendedSettingsV0130PokemonGyarados
 	| PokemonExtendedSettingsV0282PokemonGardevoir
 	| PokemonExtendedSettingsV0302PokemonSableye
 	| PokemonExtendedSettingsV0376PokemonMetagross

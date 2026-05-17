@@ -9,11 +9,11 @@ export type ItemSettingsItemBattlePassTicket = S<
 		{
 			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
 			globalEventTicket: {
-				clientEventEndTimeUtcMs: "1775210400000";
-				clientEventStartTimeUtcMs: "1772542800000";
+				clientEventEndTimeUtcMs: "1781604000000";
+				clientEventStartTimeUtcMs: "1780405200000";
 				eventBannerUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-s22-gbl-nologo-2026.jpg";
-				eventEndTime: "2026-04-03T10:00:00";
-				eventStartTime: "2026-03-03T13:00:00";
+				eventEndTime: "2026-06-16T10:00:00";
+				eventStartTime: "2026-06-02T13:00:00";
 				itemBagDescriptionKey: "item_battle_pass_ticket_desc";
 			};
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";

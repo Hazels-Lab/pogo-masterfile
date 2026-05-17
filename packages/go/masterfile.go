@@ -287,14 +287,14 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "itemExpirationSettings":
-		var e item_expiration_settings.ItemExpirationSettingsEntry
+	case "combatRankingProtoSettings":
+		var e combat_ranking_proto_settings.CombatRankingProtoSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
 		return e, nil
-	case "combatRankingProtoSettings":
-		var e combat_ranking_proto_settings.CombatRankingProtoSettingsEntry
+	case "itemExpirationSettings":
+		var e item_expiration_settings.ItemExpirationSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -1297,6 +1297,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "":
 		switch probe.TemplateID {
+		case "AMUSE_BOUCHE_WELCOME_BACK_REWARDS":
+			var e singletons.AmuseBoucheWelcomeBackRewardsEntry
+			if err := json.Unmarshal(data, &e); err != nil {
+				return nil, err
+			}
+			return e, nil
 		case "EVENT_SERVER_SETTINGS":
 			var e singletons.EventServerSettingsEntry
 			if err := json.Unmarshal(data, &e); err != nil {

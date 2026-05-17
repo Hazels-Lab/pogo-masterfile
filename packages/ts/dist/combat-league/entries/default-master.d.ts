@@ -83,7 +83,7 @@ export type CombatLeagueVsSeekerMasterMegas = S<
 				{
 					type: "WITH_POKEMON_CP_LIMIT";
 					withPokemonCpLimit: {
-						maxCp: 7000;
+						maxCp: 9999;
 					};
 				},
 				{

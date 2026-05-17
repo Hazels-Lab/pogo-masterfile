@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatLeague", split "default-ultra", 10 entries.
+// Generated from Pokémon GO masterfile — group "combatLeague", split "default-ultra", 11 entries.
 
 import type { S } from "../../_utils";
 import type { CombatLeague } from "../types";
@@ -139,6 +139,37 @@ export type CombatLeagueVsSeekerUltraHoliday = S<
 				},
 			];
 			title: "holiday_cup_ultra_title";
+			unlockCondition: [
+				{
+					minPokemonCount: 3;
+					type: "WITH_UNIQUE_POKEMON";
+				},
+			];
+		}
+	>
+>;
+export type CombatLeagueVsSeekerUltraMegas = S<
+	CombatLeague<
+		"COMBAT_LEAGUE_VS_SEEKER_ULTRA_MEGAS",
+		{
+			allowTempEvos: true;
+			badgeType: "BADGE_ULTRA_LEAGUE";
+			bannedPokemon: ["DITTO", "SHEDINJA", "MIMIKYU"];
+			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_ULTRA";
+			iconUrl: "https://storage.googleapis.com/prod-public-images/pogo_ultra_league.png";
+			leagueType: "STANDARD";
+			pokemonCondition: [
+				{
+					type: "WITH_POKEMON_CP_LIMIT";
+					withPokemonCpLimit: {
+						maxCp: 2500;
+					};
+				},
+				{
+					type: "WITH_UNIQUE_POKEMON";
+				},
+			];
+			title: "ultra_league_mega_title";
 			unlockCondition: [
 				{
 					minPokemonCount: 3;
@@ -674,6 +705,7 @@ export type CombatLeagueDefaultUltraMasterfileEntry =
 	| CombatLeagueVsSeekerHalloweenUltra
 	| CombatLeagueVsSeekerUltra
 	| CombatLeagueVsSeekerUltraHoliday
+	| CombatLeagueVsSeekerUltraMegas
 	| CombatLeagueVsSeekerUltraNoLegendary
 	| CombatLeagueVsSeekerUltraPremier
 	| CombatLeagueVsSeekerUltraPremierClassic

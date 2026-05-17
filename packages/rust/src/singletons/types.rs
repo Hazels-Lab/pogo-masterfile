@@ -997,7 +997,7 @@ pub struct CatchRadiusMultiplierSettings {
 pub struct CombatCompetitiveSeasonSettings {
     pub ranking_adjustment_percentage: f64,
     pub rating_adjustment_percentage: f64,
-    pub season_end_time_timestamp: [String; 30],
+    pub season_end_time_timestamp: [String; 31],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2963,6 +2963,11 @@ crate::masterfile_entry!(AddressablePokemonSettingsEntry, AddressablePokemonSett
 crate::masterfile_entry!(AddressBookImportSettingsEntry, AddressBookImportSettingsEntryData, address_book_import_settings: AddressBookImportSettings);
 
 crate::masterfile_entry!(AdvancedSettingsEntry, AdvancedSettingsEntryData, advanced_settings: AdvancedSettings);
+
+crate::masterfile_stub_entry!(
+    AmuseBoucheWelcomeBackRewardsEntry,
+    AmuseBoucheWelcomeBackRewardsEntryData
+);
 
 crate::masterfile_entry!(ArPhotoFeatureFlagsEntry, ArPhotoFeatureFlagsEntryData, ar_photo_feature_flags: ArPhotoFeatureFlags);
 
