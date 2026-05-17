@@ -19,6 +19,664 @@ pub enum IapItemDisplayTemplateId {
     April32026DeluxeEventPassTrackUnlock,
     #[serde(rename = "APRIL3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
     April32026DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "avatar.n_backpack_alolaitemspoppliobp_0")]
+    AvatarNBackpackAlolaitemspoppliobp0,
+    #[serde(rename = "avatar.n_backpack_alolaitemsrowletbp_0")]
+    AvatarNBackpackAlolaitemsrowletbp0,
+    #[serde(rename = "avatar.n_backpack_backpacker_0")]
+    AvatarNBackpackBackpacker0,
+    #[serde(rename = "avatar.n_backpack_combeebackpack_0")]
+    AvatarNBackpackCombeebackpack0,
+    #[serde(rename = "avatar.n_backpack_eggbackpack_0")]
+    AvatarNBackpackEggbackpack0,
+    #[serde(rename = "avatar.n_backpack_eggbackpack_1")]
+    AvatarNBackpackEggbackpack1,
+    #[serde(rename = "avatar.n_backpack_eggbackpack_2")]
+    AvatarNBackpackEggbackpack2,
+    #[serde(rename = "avatar.n_backpack_frlg_a_0")]
+    AvatarNBackpackFrlgA0,
+    #[serde(rename = "avatar.n_backpack_frlg_b_0")]
+    AvatarNBackpackFrlgB0,
+    #[serde(rename = "avatar.n_backpack_hgss_a_0")]
+    AvatarNBackpackHgssA0,
+    #[serde(rename = "avatar.n_backpack_lunarnewyr_0")]
+    AvatarNBackpackLunarnewyr0,
+    #[serde(rename = "avatar.n_backpack_pkmnhoodie004_0")]
+    AvatarNBackpackPkmnhoodie0040,
+    #[serde(rename = "avatar.n_backpack_tatsugiribackpack-stretchy_0")]
+    AvatarNBackpackTatsugiribackpackStretchy0,
+    #[serde(rename = "avatar.n_backpack_zubatbp_0")]
+    AvatarNBackpackZubatbp0,
+    #[serde(rename = "avatar.n_belt_acetrainerbw_0")]
+    AvatarNBeltAcetrainerbw0,
+    #[serde(rename = "avatar.n_belt_simple_0")]
+    AvatarNBeltSimple0,
+    #[serde(rename = "avatar.n_belt_simple_1")]
+    AvatarNBeltSimple1,
+    #[serde(rename = "avatar.n_belt_simple_2")]
+    AvatarNBeltSimple2,
+    #[serde(rename = "avatar.n_belt_teamrocket_0")]
+    AvatarNBeltTeamrocket0,
+    #[serde(rename = "avatar.n_belt_teamrocket_1")]
+    AvatarNBeltTeamrocket1,
+    #[serde(rename = "avatar.n_glasses_divingsuit_0")]
+    AvatarNGlassesDivingsuit0,
+    #[serde(rename = "avatar.n_glasses_mask_0")]
+    AvatarNGlassesMask0,
+    #[serde(rename = "avatar.n_glasses_mask_1")]
+    AvatarNGlassesMask1,
+    #[serde(rename = "avatar.n_glasses_newyear2022_0")]
+    AvatarNGlassesNewyear20220,
+    #[serde(rename = "avatar.n_glasses_newyearglasses2020_0")]
+    AvatarNGlassesNewyearglasses20200,
+    #[serde(rename = "avatar.n_glasses_newyearglasses2021_0")]
+    AvatarNGlassesNewyearglasses20210,
+    #[serde(rename = "avatar.n_gloves_battlegirl_0")]
+    AvatarNGlovesBattlegirl0,
+    #[serde(rename = "avatar.n_gloves_delibird_0")]
+    AvatarNGlovesDelibird0,
+    #[serde(rename = "avatar.n_gloves_swshuniformdragon_0")]
+    AvatarNGlovesSwshuniformdragon0,
+    #[serde(rename = "avatar.n_gloves_teamaqua_a_0")]
+    AvatarNGlovesTeamaquaA0,
+    #[serde(rename = "avatar.n_gloves_teamspark_a_0")]
+    AvatarNGlovesTeamsparkA0,
+    #[serde(rename = "avatar.n_hat_6thanniversary_a_0")]
+    AvatarNHat6thanniversaryA0,
+    #[serde(rename = "avatar.n_hat_6thanniversary_b_0")]
+    AvatarNHat6thanniversaryB0,
+    #[serde(rename = "avatar.n_hat_acetrainersm_a_0")]
+    AvatarNHatAcetrainersmA0,
+    #[serde(rename = "avatar.n_hat_acetrainersm_b_0")]
+    AvatarNHatAcetrainersmB0,
+    #[serde(rename = "avatar.n_hat_cetoddlehat_0")]
+    AvatarNHatCetoddlehat0,
+    #[serde(rename = "avatar.n_hat_cosmog_0")]
+    AvatarNHatCosmog0,
+    #[serde(rename = "avatar.n_hat_darumakahat_0")]
+    AvatarNHatDarumakahat0,
+    #[serde(rename = "avatar.n_hat_delibird_0")]
+    AvatarNHatDelibird0,
+    #[serde(rename = "avatar.n_hat_drifloon_0")]
+    AvatarNHatDrifloon0,
+    #[serde(rename = "avatar.n_hat_earringsburmysandy_0")]
+    AvatarNHatEarringsburmysandy0,
+    #[serde(rename = "avatar.n_hat_fedora_0")]
+    AvatarNHatFedora0,
+    #[serde(rename = "avatar.n_hat_fedora_1")]
+    AvatarNHatFedora1,
+    #[serde(rename = "avatar.n_hat_fisher_0")]
+    AvatarNHatFisher0,
+    #[serde(rename = "avatar.n_hat_frlg_a_0")]
+    AvatarNHatFrlgA0,
+    #[serde(rename = "avatar.n_hat_gimmighoulitems_0")]
+    AvatarNHatGimmighoulitems0,
+    #[serde(rename = "avatar.n_hat_greavardwig_0")]
+    AvatarNHatGreavardwig0,
+    #[serde(rename = "avatar.n_hat_greencoat_0")]
+    AvatarNHatGreencoat0,
+    #[serde(rename = "avatar.n_hat_growlithehelmet_0")]
+    AvatarNHatGrowlithehelmet0,
+    #[serde(rename = "avatar.n_hat_gtr2024eeveefanmask_0")]
+    AvatarNHatGtr2024eeveefanmask0,
+    #[serde(rename = "avatar.n_hat_gtr2024pikachufanmask_0")]
+    AvatarNHatGtr2024pikachufanmask0,
+    #[serde(rename = "avatar.n_hat_halloween2024_0")]
+    AvatarNHatHalloween20240,
+    #[serde(rename = "avatar.n_hat_hoopaearmuffs_0")]
+    AvatarNHatHoopaearmuffs0,
+    #[serde(rename = "avatar.n_hat_jogger_0")]
+    AvatarNHatJogger0,
+    #[serde(rename = "avatar.n_hat_litwickhat_0")]
+    AvatarNHatLitwickhat0,
+    #[serde(rename = "avatar.n_hat_mareaniehat_0")]
+    AvatarNHatMareaniehat0,
+    #[serde(rename = "avatar.n_hat_newyear2022_0")]
+    AvatarNHatNewyear20220,
+    #[serde(rename = "avatar.n_hat_newyearhat2021_0")]
+    AvatarNHatNewyearhat20210,
+    #[serde(rename = "avatar.n_hat_newyearhat2023_0")]
+    AvatarNHatNewyearhat20230,
+    #[serde(rename = "avatar.n_hat_noibat_0")]
+    AvatarNHatNoibat0,
+    #[serde(rename = "avatar.n_hat_obstagoonitems_0")]
+    AvatarNHatObstagoonitems0,
+    #[serde(rename = "avatar.n_hat_oricoriopink_0")]
+    AvatarNHatOricoriopink0,
+    #[serde(rename = "avatar.n_hat_oricoriopurple_0")]
+    AvatarNHatOricoriopurple0,
+    #[serde(rename = "avatar.n_hat_oricoriored_0")]
+    AvatarNHatOricoriored0,
+    #[serde(rename = "avatar.n_hat_oricorioyellow_0")]
+    AvatarNHatOricorioyellow0,
+    #[serde(rename = "avatar.n_hat_phantump_0")]
+    AvatarNHatPhantump0,
+    #[serde(rename = "avatar.n_hat_pikachubutler-yellow_0")]
+    AvatarNHatPikachubutlerYellow0,
+    #[serde(rename = "avatar.n_hat_pikachufan_0")]
+    AvatarNHatPikachufan0,
+    #[serde(rename = "avatar.n_hat_pkmncap_0")]
+    AvatarNHatPkmncap0,
+    #[serde(rename = "avatar.n_hat_pkmncap_1")]
+    AvatarNHatPkmncap1,
+    #[serde(rename = "avatar.n_hat_pkmncap_2")]
+    AvatarNHatPkmncap2,
+    #[serde(rename = "avatar.n_hat_poipole_0")]
+    AvatarNHatPoipole0,
+    #[serde(rename = "avatar.n_hat_regiicejersies_0")]
+    AvatarNHatRegiicejersies0,
+    #[serde(rename = "avatar.n_hat_regirockjersies_0")]
+    AvatarNHatRegirockjersies0,
+    #[serde(rename = "avatar.n_hat_ruinmaniac_a_0")]
+    AvatarNHatRuinmaniacA0,
+    #[serde(rename = "avatar.n_hat_ruinmaniac_b_0")]
+    AvatarNHatRuinmaniacB0,
+    #[serde(rename = "avatar.n_hat_stantlerheadband_0")]
+    AvatarNHatStantlerheadband0,
+    #[serde(rename = "avatar.n_hat_sylveonitems_b_0")]
+    AvatarNHatSylveonitemsB0,
+    #[serde(rename = "avatar.n_hat_tophat_0")]
+    AvatarNHatTophat0,
+    #[serde(rename = "avatar.n_hat_wcs2025_0")]
+    AvatarNHatWcs20250,
+    #[serde(rename = "avatar.n_hat_whimsicottearmuff_0")]
+    AvatarNHatWhimsicottearmuff0,
+    #[serde(rename = "avatar.n_hat_woobatearrings_0")]
+    AvatarNHatWoobatearrings0,
+    #[serde(rename = "avatar.n_hat_yamaskhat_0")]
+    AvatarNHatYamaskhat0,
+    #[serde(rename = "avatar.n_hat_zubathat_0")]
+    AvatarNHatZubathat0,
+    #[serde(rename = "avatar.n_pants_acetrainerbw_a_0")]
+    AvatarNPantsAcetrainerbwA0,
+    #[serde(rename = "avatar.n_pants_acetrainerbw_b_0")]
+    AvatarNPantsAcetrainerbwB0,
+    #[serde(rename = "avatar.n_pants_acetrainersm_0")]
+    AvatarNPantsAcetrainersm0,
+    #[serde(rename = "avatar.n_pants_backpacker_a_0")]
+    AvatarNPantsBackpackerA0,
+    #[serde(rename = "avatar.n_pants_battlegirl_0")]
+    AvatarNPantsBattlegirl0,
+    #[serde(rename = "avatar.n_pants_bounsweetitems_0")]
+    AvatarNPantsBounsweetitems0,
+    #[serde(rename = "avatar.n_pants_fisher_0")]
+    AvatarNPantsFisher0,
+    #[serde(rename = "avatar.n_pants_frlg_a_0")]
+    AvatarNPantsFrlgA0,
+    #[serde(rename = "avatar.n_pants_greencoat_0")]
+    AvatarNPantsGreencoat0,
+    #[serde(rename = "avatar.n_pants_gymleader_a_0")]
+    AvatarNPantsGymleaderA0,
+    #[serde(rename = "avatar.n_pants_gymleader_a_1")]
+    AvatarNPantsGymleaderA1,
+    #[serde(rename = "avatar.n_pants_gymleader_a_2")]
+    AvatarNPantsGymleaderA2,
+    #[serde(rename = "avatar.n_pants_gymleader_b_0")]
+    AvatarNPantsGymleaderB0,
+    #[serde(rename = "avatar.n_pants_gymleader_b_1")]
+    AvatarNPantsGymleaderB1,
+    #[serde(rename = "avatar.n_pants_gymleader_b_2")]
+    AvatarNPantsGymleaderB2,
+    #[serde(rename = "avatar.n_pants_hgss_b_0")]
+    AvatarNPantsHgssB0,
+    #[serde(rename = "avatar.n_pants_jogger_0")]
+    AvatarNPantsJogger0,
+    #[serde(rename = "avatar.n_pants_luvdiscpack_b_0")]
+    AvatarNPantsLuvdiscpackB0,
+    #[serde(rename = "avatar.n_pants_miniskirt_0")]
+    AvatarNPantsMiniskirt0,
+    #[serde(rename = "avatar.n_pants_miniskirt_1")]
+    AvatarNPantsMiniskirt1,
+    #[serde(rename = "avatar.n_pants_miniskirt_2")]
+    AvatarNPantsMiniskirt2,
+    #[serde(rename = "avatar.n_pants_miniskirt_3")]
+    AvatarNPantsMiniskirt3,
+    #[serde(rename = "avatar.n_pants_neon-solid_0")]
+    AvatarNPantsNeonSolid0,
+    #[serde(rename = "avatar.n_pants_neon-solid_1")]
+    AvatarNPantsNeonSolid1,
+    #[serde(rename = "avatar.n_pants_neon-solid_2")]
+    AvatarNPantsNeonSolid2,
+    #[serde(rename = "avatar.n_pants_neon-stripes_0")]
+    AvatarNPantsNeonStripes0,
+    #[serde(rename = "avatar.n_pants_neon-stripes_1")]
+    AvatarNPantsNeonStripes1,
+    #[serde(rename = "avatar.n_pants_pumpkabooitems_0")]
+    AvatarNPantsPumpkabooitems0,
+    #[serde(rename = "avatar.n_pants_regiicejersies_0")]
+    AvatarNPantsRegiicejersies0,
+    #[serde(rename = "avatar.n_pants_shorts_1")]
+    AvatarNPantsShorts1,
+    #[serde(rename = "avatar.n_pants_shorts_2")]
+    AvatarNPantsShorts2,
+    #[serde(rename = "avatar.n_pants_shorts_3")]
+    AvatarNPantsShorts3,
+    #[serde(rename = "avatar.n_pants_sweats_0")]
+    AvatarNPantsSweats0,
+    #[serde(rename = "avatar.n_pants_sweats_1")]
+    AvatarNPantsSweats1,
+    #[serde(rename = "avatar.n_pants_sweats_2")]
+    AvatarNPantsSweats2,
+    #[serde(rename = "avatar.n_pants_sweats_3")]
+    AvatarNPantsSweats3,
+    #[serde(rename = "avatar.n_pants_swshuniformdark_a_0")]
+    AvatarNPantsSwshuniformdarkA0,
+    #[serde(rename = "avatar.n_pants_swshuniformdark_b_0")]
+    AvatarNPantsSwshuniformdarkB0,
+    #[serde(rename = "avatar.n_pants_swshuniformdragon_a_0")]
+    AvatarNPantsSwshuniformdragonA0,
+    #[serde(rename = "avatar.n_pants_teamaqua_b_0")]
+    AvatarNPantsTeamaquaB0,
+    #[serde(rename = "avatar.n_pants_teamblanche_a_0")]
+    AvatarNPantsTeamblancheA0,
+    #[serde(rename = "avatar.n_pants_teamblanche_b_0")]
+    AvatarNPantsTeamblancheB0,
+    #[serde(rename = "avatar.n_pants_teammagma_b_0")]
+    AvatarNPantsTeammagmaB0,
+    #[serde(rename = "avatar.n_pants_teamrocket_b_0")]
+    AvatarNPantsTeamrocketB0,
+    #[serde(rename = "avatar.n_pants_turbine_0")]
+    AvatarNPantsTurbine0,
+    #[serde(rename = "avatar.n_pants_turbine_1")]
+    AvatarNPantsTurbine1,
+    #[serde(rename = "avatar.n_pants_turbine_2")]
+    AvatarNPantsTurbine2,
+    #[serde(rename = "avatar.n_pants_veterantrainerxy_a_0")]
+    AvatarNPantsVeterantrainerxyA0,
+    #[serde(rename = "avatar.n_pants_veterantrainerxy_b_0")]
+    AvatarNPantsVeterantrainerxyB0,
+    #[serde(rename = "avatar.n_pose_038")]
+    AvatarNPose038,
+    #[serde(rename = "avatar.n_pose_040")]
+    AvatarNPose040,
+    #[serde(rename = "avatar.n_pose_urshifusinglestrike")]
+    AvatarNPoseUrshifusinglestrike,
+    #[serde(rename = "avatar.n_shirt_6thanniversary_a_0")]
+    AvatarNShirt6thanniversaryA0,
+    #[serde(rename = "avatar.n_shirt_7thanniversary_0")]
+    AvatarNShirt7thanniversary0,
+    #[serde(rename = "avatar.n_shirt_acetrainerbw_0")]
+    AvatarNShirtAcetrainerbw0,
+    #[serde(rename = "avatar.n_shirt_acetrainersm_a_0")]
+    AvatarNShirtAcetrainersmA0,
+    #[serde(rename = "avatar.n_shirt_acetrainersm_b_0")]
+    AvatarNShirtAcetrainersmB0,
+    #[serde(rename = "avatar.n_shirt_ballguy_0")]
+    AvatarNShirtBallguy0,
+    #[serde(rename = "avatar.n_shirt_battlegirl_0")]
+    AvatarNShirtBattlegirl0,
+    #[serde(rename = "avatar.n_shirt_brock_0")]
+    AvatarNShirtBrock0,
+    #[serde(rename = "avatar.n_shirt_buttondown_0")]
+    AvatarNShirtButtondown0,
+    #[serde(rename = "avatar.n_shirt_chimcharonesie_0")]
+    AvatarNShirtChimcharonesie0,
+    #[serde(rename = "avatar.n_shirt_cofagrigusitems_0")]
+    AvatarNShirtCofagrigusitems0,
+    #[serde(rename = "avatar.n_shirt_cowichansweater_0")]
+    AvatarNShirtCowichansweater0,
+    #[serde(rename = "avatar.n_shirt_delibird_0")]
+    AvatarNShirtDelibird0,
+    #[serde(rename = "avatar.n_shirt_delibirdonesie_0")]
+    AvatarNShirtDelibirdonesie0,
+    #[serde(rename = "avatar.n_shirt_divingsuit_0")]
+    AvatarNShirtDivingsuit0,
+    #[serde(rename = "avatar.n_shirt_drifblim_0")]
+    AvatarNShirtDrifblim0,
+    #[serde(rename = "avatar.n_shirt_dudunsparceitem_0")]
+    AvatarNShirtDudunsparceitem0,
+    #[serde(rename = "avatar.n_shirt_fashionweek2022_0")]
+    AvatarNShirtFashionweek20220,
+    #[serde(rename = "avatar.n_shirt_fisher_0")]
+    AvatarNShirtFisher0,
+    #[serde(rename = "avatar.n_shirt_flabebepack_0")]
+    AvatarNShirtFlabebepack0,
+    #[serde(rename = "avatar.n_shirt_frlg_a_0")]
+    AvatarNShirtFrlgA0,
+    #[serde(rename = "avatar.n_shirt_fw2022_b_0")]
+    AvatarNShirtFw2022B0,
+    #[serde(rename = "avatar.n_shirt_galaxyoutfit_a_0")]
+    AvatarNShirtGalaxyoutfitA0,
+    #[serde(rename = "avatar.n_shirt_galaxyoutfit_b_0")]
+    AvatarNShirtGalaxyoutfitB0,
+    #[serde(rename = "avatar.n_shirt_giovanni_a_0")]
+    AvatarNShirtGiovanniA0,
+    #[serde(rename = "avatar.n_shirt_goteamrocketcliff_a_0")]
+    AvatarNShirtGoteamrocketcliffA0,
+    #[serde(rename = "avatar.n_shirt_goteamrocketsierra_a_0")]
+    AvatarNShirtGoteamrocketsierraA0,
+    #[serde(rename = "avatar.n_shirt_goteamrocketsierra_b_0")]
+    AvatarNShirtGoteamrocketsierraB0,
+    #[serde(rename = "avatar.n_shirt_greedentsweater_0")]
+    AvatarNShirtGreedentsweater0,
+    #[serde(rename = "avatar.n_shirt_greencoat_0")]
+    AvatarNShirtGreencoat0,
+    #[serde(rename = "avatar.n_shirt_gymleader_a_0")]
+    AvatarNShirtGymleaderA0,
+    #[serde(rename = "avatar.n_shirt_gymleader_a_1")]
+    AvatarNShirtGymleaderA1,
+    #[serde(rename = "avatar.n_shirt_gymleader_a_2")]
+    AvatarNShirtGymleaderA2,
+    #[serde(rename = "avatar.n_shirt_gymleader_b_0")]
+    AvatarNShirtGymleaderB0,
+    #[serde(rename = "avatar.n_shirt_gymleader_b_1")]
+    AvatarNShirtGymleaderB1,
+    #[serde(rename = "avatar.n_shirt_gymleader_b_2")]
+    AvatarNShirtGymleaderB2,
+    #[serde(rename = "avatar.n_shirt_halloween2024_0")]
+    AvatarNShirtHalloween20240,
+    #[serde(rename = "avatar.n_shirt_happi_0")]
+    AvatarNShirtHappi0,
+    #[serde(rename = "avatar.n_shirt_happi_1")]
+    AvatarNShirtHappi1,
+    #[serde(rename = "avatar.n_shirt_happi_2")]
+    AvatarNShirtHappi2,
+    #[serde(rename = "avatar.n_shirt_hgss_a_0")]
+    AvatarNShirtHgssA0,
+    #[serde(rename = "avatar.n_shirt_hgss_b_0")]
+    AvatarNShirtHgssB0,
+    #[serde(rename = "avatar.n_shirt_holiday2022santacostumes_0")]
+    AvatarNShirtHoliday2022santacostumes0,
+    #[serde(rename = "avatar.n_shirt_holiday2024-marshtompsweater_0")]
+    AvatarNShirtHoliday2024Marshtompsweater0,
+    #[serde(rename = "avatar.n_shirt_holiday2024-staryusweater_0")]
+    AvatarNShirtHoliday2024Staryusweater0,
+    #[serde(rename = "avatar.n_shirt_jogger_0")]
+    AvatarNShirtJogger0,
+    #[serde(rename = "avatar.n_shirt_ladiamondoutfit_a_0")]
+    AvatarNShirtLadiamondoutfitA0,
+    #[serde(rename = "avatar.n_shirt_ladiamondoutfit_b_0")]
+    AvatarNShirtLadiamondoutfitB0,
+    #[serde(rename = "avatar.n_shirt_lapearloutfit_a_0")]
+    AvatarNShirtLapearloutfitA0,
+    #[serde(rename = "avatar.n_shirt_lapearloutfit_b_0")]
+    AvatarNShirtLapearloutfitB0,
+    #[serde(rename = "avatar.n_shirt_latias-latios_0")]
+    AvatarNShirtLatiasLatios0,
+    #[serde(rename = "avatar.n_shirt_longsleeves-charizard_0")]
+    AvatarNShirtLongsleevesCharizard0,
+    #[serde(rename = "avatar.n_shirt_longsleeves-charizard_1")]
+    AvatarNShirtLongsleevesCharizard1,
+    #[serde(rename = "avatar.n_shirt_longsleeves-charizard_2")]
+    AvatarNShirtLongsleevesCharizard2,
+    #[serde(rename = "avatar.n_shirt_longsleeves-pikachu_0")]
+    AvatarNShirtLongsleevesPikachu0,
+    #[serde(rename = "avatar.n_shirt_longsleeves-pikachu_1")]
+    AvatarNShirtLongsleevesPikachu1,
+    #[serde(rename = "avatar.n_shirt_longsleeves-pikachu_2")]
+    AvatarNShirtLongsleevesPikachu2,
+    #[serde(rename = "avatar.n_shirt_luvdiscpack_b_0")]
+    AvatarNShirtLuvdiscpackB0,
+    #[serde(rename = "avatar.n_shirt_melmetaljacket_0")]
+    AvatarNShirtMelmetaljacket0,
+    #[serde(rename = "avatar.n_shirt_meltan_0")]
+    AvatarNShirtMeltan0,
+    #[serde(rename = "avatar.n_shirt_munnapack_a_0")]
+    AvatarNShirtMunnapackA0,
+    #[serde(rename = "avatar.n_shirt_ocshirt-045_a_0")]
+    AvatarNShirtOcshirt045A0,
+    #[serde(rename = "avatar.n_shirt_ocshirt-045_b_0")]
+    AvatarNShirtOcshirt045B0,
+    #[serde(rename = "avatar.n_shirt_ocshirt-108_a_0")]
+    AvatarNShirtOcshirt108A0,
+    #[serde(rename = "avatar.n_shirt_ocshirt-108_b_0")]
+    AvatarNShirtOcshirt108B0,
+    #[serde(rename = "avatar.n_shirt_ocshirt-129_a_0")]
+    AvatarNShirtOcshirt129A0,
+    #[serde(rename = "avatar.n_shirt_ocshirt-129_b_0")]
+    AvatarNShirtOcshirt129B0,
+    #[serde(rename = "avatar.n_shirt_ocshirt-143_b_0")]
+    AvatarNShirtOcshirt143B0,
+    #[serde(rename = "avatar.n_shirt_pajamas2022_0")]
+    AvatarNShirtPajamas20220,
+    #[serde(rename = "avatar.n_shirt_pajamas2022_1")]
+    AvatarNShirtPajamas20221,
+    #[serde(rename = "avatar.n_shirt_pikachufan_a_0")]
+    AvatarNShirtPikachufanA0,
+    #[serde(rename = "avatar.n_shirt_pikachufan_b_0")]
+    AvatarNShirtPikachufanB0,
+    #[serde(rename = "avatar.n_shirt_pkmnshirts-165_0")]
+    AvatarNShirtPkmnshirts1650,
+    #[serde(rename = "avatar.n_shirt_pkmnshirts-188_0")]
+    AvatarNShirtPkmnshirts1880,
+    #[serde(rename = "avatar.n_shirt_pkmnshirts-201_0")]
+    AvatarNShirtPkmnshirts2010,
+    #[serde(rename = "avatar.n_shirt_pkmnshirts-238_0")]
+    AvatarNShirtPkmnshirts2380,
+    #[serde(rename = "avatar.n_shirt_pkmnshirts2021_0")]
+    AvatarNShirtPkmnshirts20210,
+    #[serde(rename = "avatar.n_shirt_pkmnshirts2021_1")]
+    AvatarNShirtPkmnshirts20211,
+    #[serde(rename = "avatar.n_shirt_pkmnshirts2021_2")]
+    AvatarNShirtPkmnshirts20212,
+    #[serde(rename = "avatar.n_shirt_poloshirt_0")]
+    AvatarNShirtPoloshirt0,
+    #[serde(rename = "avatar.n_shirt_poloshirt_1")]
+    AvatarNShirtPoloshirt1,
+    #[serde(rename = "avatar.n_shirt_poloshirt_2")]
+    AvatarNShirtPoloshirt2,
+    #[serde(rename = "avatar.n_shirt_regiicejersies_0")]
+    AvatarNShirtRegiicejersies0,
+    #[serde(rename = "avatar.n_shirt_regirockjersies_0")]
+    AvatarNShirtRegirockjersies0,
+    #[serde(rename = "avatar.n_shirt_ruinmaniac_a_0")]
+    AvatarNShirtRuinmaniacA0,
+    #[serde(rename = "avatar.n_shirt_spiritomb_0")]
+    AvatarNShirtSpiritomb0,
+    #[serde(rename = "avatar.n_shirt_spring2021gulpin_a_0")]
+    AvatarNShirtSpring2021gulpinA0,
+    #[serde(rename = "avatar.n_shirt_sukajanblastoise_0")]
+    AvatarNShirtSukajanblastoise0,
+    #[serde(rename = "avatar.n_shirt_sukajancharizard_0")]
+    AvatarNShirtSukajancharizard0,
+    #[serde(rename = "avatar.n_shirt_sukajanhouou_0")]
+    AvatarNShirtSukajanhouou0,
+    #[serde(rename = "avatar.n_shirt_sukajanlugia_0")]
+    AvatarNShirtSukajanlugia0,
+    #[serde(rename = "avatar.n_shirt_sukajanvenusaur_0")]
+    AvatarNShirtSukajanvenusaur0,
+    #[serde(rename = "avatar.n_shirt_sweater-30_0")]
+    AvatarNShirtSweater300,
+    #[serde(rename = "avatar.n_shirt_sweater-30_1")]
+    AvatarNShirtSweater301,
+    #[serde(rename = "avatar.n_shirt_sweater-30_2")]
+    AvatarNShirtSweater302,
+    #[serde(rename = "avatar.n_shirt_sweater-instinct_0")]
+    AvatarNShirtSweaterInstinct0,
+    #[serde(rename = "avatar.n_shirt_sweater-mystic_0")]
+    AvatarNShirtSweaterMystic0,
+    #[serde(rename = "avatar.n_shirt_sweater-valor_0")]
+    AvatarNShirtSweaterValor0,
+    #[serde(rename = "avatar.n_shirt_sweatshirt-sporty_0")]
+    AvatarNShirtSweatshirtSporty0,
+    #[serde(rename = "avatar.n_shirt_sweatshirt-sporty_1")]
+    AvatarNShirtSweatshirtSporty1,
+    #[serde(rename = "avatar.n_shirt_sweatshirt-sporty_2")]
+    AvatarNShirtSweatshirtSporty2,
+    #[serde(rename = "avatar.n_shirt_sweatshirt-sporty_3")]
+    AvatarNShirtSweatshirtSporty3,
+    #[serde(rename = "avatar.n_shirt_sweatshirt-streak_0")]
+    AvatarNShirtSweatshirtStreak0,
+    #[serde(rename = "avatar.n_shirt_sweatshirt-streak_1")]
+    AvatarNShirtSweatshirtStreak1,
+    #[serde(rename = "avatar.n_shirt_sweatshirt-streak_2")]
+    AvatarNShirtSweatshirtStreak2,
+    #[serde(rename = "avatar.n_shirt_sweatshirt-streak_3")]
+    AvatarNShirtSweatshirtStreak3,
+    #[serde(rename = "avatar.n_shirt_swshuniformdark_b_0")]
+    AvatarNShirtSwshuniformdarkB0,
+    #[serde(rename = "avatar.n_shirt_tanktop_0")]
+    AvatarNShirtTanktop0,
+    #[serde(rename = "avatar.n_shirt_tanktop_1")]
+    AvatarNShirtTanktop1,
+    #[serde(rename = "avatar.n_shirt_tanktop_2")]
+    AvatarNShirtTanktop2,
+    #[serde(rename = "avatar.n_shirt_tanktop-charizard_0")]
+    AvatarNShirtTanktopCharizard0,
+    #[serde(rename = "avatar.n_shirt_tanktop-charizard_1")]
+    AvatarNShirtTanktopCharizard1,
+    #[serde(rename = "avatar.n_shirt_tanktop-charizard_2")]
+    AvatarNShirtTanktopCharizard2,
+    #[serde(rename = "avatar.n_shirt_tanktop-pikachu_0")]
+    AvatarNShirtTanktopPikachu0,
+    #[serde(rename = "avatar.n_shirt_tanktop-pikachu_1")]
+    AvatarNShirtTanktopPikachu1,
+    #[serde(rename = "avatar.n_shirt_tanktop-pikachu_2")]
+    AvatarNShirtTanktopPikachu2,
+    #[serde(rename = "avatar.n_shirt_teamblanche_a_0")]
+    AvatarNShirtTeamblancheA0,
+    #[serde(rename = "avatar.n_shirt_teamblanche_b_0")]
+    AvatarNShirtTeamblancheB0,
+    #[serde(rename = "avatar.n_shirt_teamcandela_a_0")]
+    AvatarNShirtTeamcandelaA0,
+    #[serde(rename = "avatar.n_shirt_teamcandela_b_0")]
+    AvatarNShirtTeamcandelaB0,
+    #[serde(rename = "avatar.n_shirt_teamrocket_a_0")]
+    AvatarNShirtTeamrocketA0,
+    #[serde(rename = "avatar.n_shirt_teamrocket_a_1")]
+    AvatarNShirtTeamrocketA1,
+    #[serde(rename = "avatar.n_shirt_teamrocket_b_0")]
+    AvatarNShirtTeamrocketB0,
+    #[serde(rename = "avatar.n_shirt_teamrocket_b_1")]
+    AvatarNShirtTeamrocketB1,
+    #[serde(rename = "avatar.n_shirt_teamspark_a_0")]
+    AvatarNShirtTeamsparkA0,
+    #[serde(rename = "avatar.n_shirt_tracksuitskyogre_0")]
+    AvatarNShirtTracksuitskyogre0,
+    #[serde(rename = "avatar.n_shirt_tshirt-cycling_0")]
+    AvatarNShirtTshirtCycling0,
+    #[serde(rename = "avatar.n_shirt_tshirt-cycling_1")]
+    AvatarNShirtTshirtCycling1,
+    #[serde(rename = "avatar.n_shirt_tshirt-cycling_2")]
+    AvatarNShirtTshirtCycling2,
+    #[serde(rename = "avatar.n_shirt_tshirt-cycling_3")]
+    AvatarNShirtTshirtCycling3,
+    #[serde(rename = "avatar.n_shirt_tshirt-geometric_0")]
+    AvatarNShirtTshirtGeometric0,
+    #[serde(rename = "avatar.n_shirt_tshirt-geometric_1")]
+    AvatarNShirtTshirtGeometric1,
+    #[serde(rename = "avatar.n_shirt_tshirt-geometric_2")]
+    AvatarNShirtTshirtGeometric2,
+    #[serde(rename = "avatar.n_shirt_tshirt-instinct_0")]
+    AvatarNShirtTshirtInstinct0,
+    #[serde(rename = "avatar.n_shirt_tshirt-mystic_0")]
+    AvatarNShirtTshirtMystic0,
+    #[serde(rename = "avatar.n_shirt_tshirt-pikachu_0")]
+    AvatarNShirtTshirtPikachu0,
+    #[serde(rename = "avatar.n_shirt_tshirt-pikachu_1")]
+    AvatarNShirtTshirtPikachu1,
+    #[serde(rename = "avatar.n_shirt_tshirt-pikachu_2")]
+    AvatarNShirtTshirtPikachu2,
+    #[serde(rename = "avatar.n_shirt_tshirt-pikachu_3")]
+    AvatarNShirtTshirtPikachu3,
+    #[serde(rename = "avatar.n_shirt_tshirt-pikachu_4")]
+    AvatarNShirtTshirtPikachu4,
+    #[serde(rename = "avatar.n_shirt_tshirt-pikachu_5")]
+    AvatarNShirtTshirtPikachu5,
+    #[serde(rename = "avatar.n_shirt_tshirt-pikachu_6")]
+    AvatarNShirtTshirtPikachu6,
+    #[serde(rename = "avatar.n_shirt_tshirt-valor_0")]
+    AvatarNShirtTshirtValor0,
+    #[serde(rename = "avatar.n_shirt_turtleneck-30_0")]
+    AvatarNShirtTurtleneck300,
+    #[serde(rename = "avatar.n_shirt_turtleneck-30_1")]
+    AvatarNShirtTurtleneck301,
+    #[serde(rename = "avatar.n_shirt_turtleneck-30_2")]
+    AvatarNShirtTurtleneck302,
+    #[serde(rename = "avatar.n_shirt_turtleneck-30_3")]
+    AvatarNShirtTurtleneck303,
+    #[serde(rename = "avatar.n_shirt_turtwigonesie_0")]
+    AvatarNShirtTurtwigonesie0,
+    #[serde(rename = "avatar.n_shirt_uglysweatersudowoodo_0")]
+    AvatarNShirtUglysweatersudowoodo0,
+    #[serde(rename = "avatar.n_shirt_ultrareconsquad_0")]
+    AvatarNShirtUltrareconsquad0,
+    #[serde(rename = "avatar.n_shirt_veterantrainerxy_a_0")]
+    AvatarNShirtVeterantrainerxyA0,
+    #[serde(rename = "avatar.n_shirt_veterantrainerxy_b_0")]
+    AvatarNShirtVeterantrainerxyB0,
+    #[serde(rename = "avatar.n_shirt_wcs2023sukajan_0")]
+    AvatarNShirtWcs2023sukajan0,
+    #[serde(rename = "avatar.n_shirt_whitecoat_0")]
+    AvatarNShirtWhitecoat0,
+    #[serde(rename = "avatar.n_shirt_wintersweater2023_0")]
+    AvatarNShirtWintersweater20230,
+    #[serde(rename = "avatar.n_shoes_acetrainerbw_a_0")]
+    AvatarNShoesAcetrainerbwA0,
+    #[serde(rename = "avatar.n_shoes_acetrainerbw_b_0")]
+    AvatarNShoesAcetrainerbwB0,
+    #[serde(rename = "avatar.n_shoes_acetrainersm_a_0")]
+    AvatarNShoesAcetrainersmA0,
+    #[serde(rename = "avatar.n_shoes_acetrainersm_b_0")]
+    AvatarNShoesAcetrainersmB0,
+    #[serde(rename = "avatar.n_shoes_backpacker_a_0")]
+    AvatarNShoesBackpackerA0,
+    #[serde(rename = "avatar.n_shoes_backpacker_b_0")]
+    AvatarNShoesBackpackerB0,
+    #[serde(rename = "avatar.n_shoes_battlegirl_0")]
+    AvatarNShoesBattlegirl0,
+    #[serde(rename = "avatar.n_shoes_brock_0")]
+    AvatarNShoesBrock0,
+    #[serde(rename = "avatar.n_shoes_delibird_0")]
+    AvatarNShoesDelibird0,
+    #[serde(rename = "avatar.n_shoes_frlg_a_0")]
+    AvatarNShoesFrlgA0,
+    #[serde(rename = "avatar.n_shoes_giovanni_a_0")]
+    AvatarNShoesGiovanniA0,
+    #[serde(rename = "avatar.n_shoes_gymleader_0")]
+    AvatarNShoesGymleader0,
+    #[serde(rename = "avatar.n_shoes_gymleader_1")]
+    AvatarNShoesGymleader1,
+    #[serde(rename = "avatar.n_shoes_gymleader_2")]
+    AvatarNShoesGymleader2,
+    #[serde(rename = "avatar.n_shoes_hgss_a_0")]
+    AvatarNShoesHgssA0,
+    #[serde(rename = "avatar.n_shoes_hgss_b_0")]
+    AvatarNShoesHgssB0,
+    #[serde(rename = "avatar.n_shoes_jogger_0")]
+    AvatarNShoesJogger0,
+    #[serde(rename = "avatar.n_shoes_lapearloutfit_a_0")]
+    AvatarNShoesLapearloutfitA0,
+    #[serde(rename = "avatar.n_shoes_lapearloutfit_b_0")]
+    AvatarNShoesLapearloutfitB0,
+    #[serde(rename = "avatar.n_shoes_loosepants_1")]
+    AvatarNShoesLoosepants1,
+    #[serde(rename = "avatar.n_shoes_loosepants_2")]
+    AvatarNShoesLoosepants2,
+    #[serde(rename = "avatar.n_shoes_melmetalshoes_0")]
+    AvatarNShoesMelmetalshoes0,
+    #[serde(rename = "avatar.n_shoes_misty_0")]
+    AvatarNShoesMisty0,
+    #[serde(rename = "avatar.n_shoes_regiicejersies_0")]
+    AvatarNShoesRegiicejersies0,
+    #[serde(rename = "avatar.n_shoes_regirockjersies_0")]
+    AvatarNShoesRegirockjersies0,
+    #[serde(rename = "avatar.n_shoes_registeeljersies_0")]
+    AvatarNShoesRegisteeljersies0,
+    #[serde(rename = "avatar.n_shoes_ruinmaniac_a_0")]
+    AvatarNShoesRuinmaniacA0,
+    #[serde(rename = "avatar.n_shoes_solgaleoitems_0")]
+    AvatarNShoesSolgaleoitems0,
+    #[serde(rename = "avatar.n_shoes_teamblanche_a_0")]
+    AvatarNShoesTeamblancheA0,
+    #[serde(rename = "avatar.n_shoes_teamblanche_b_0")]
+    AvatarNShoesTeamblancheB0,
+    #[serde(rename = "avatar.n_shoes_teamrocket_a_0")]
+    AvatarNShoesTeamrocketA0,
+    #[serde(rename = "avatar.n_shoes_teamrocket_a_1")]
+    AvatarNShoesTeamrocketA1,
+    #[serde(rename = "avatar.n_shoes_teamrocket_b_0")]
+    AvatarNShoesTeamrocketB0,
+    #[serde(rename = "avatar.n_shoes_teamrocket_b_1")]
+    AvatarNShoesTeamrocketB1,
+    #[serde(rename = "avatar.n_shoes_veterantrainerxy_a_0")]
+    AvatarNShoesVeterantrainerxyA0,
+    #[serde(rename = "avatar.n_shoes_veterantrainerxy_b_0")]
+    AvatarNShoesVeterantrainerxyB0,
+    #[serde(rename = "avatar.n_shoes_winterboots_3")]
+    AvatarNShoesWinterboots3,
+    #[serde(rename = "avatar.n_teamyellgrunts-long_0")]
+    AvatarNTeamyellgruntsLong0,
     #[serde(rename = "battlepassticket.1")]
     Battlepassticket1,
     #[serde(rename = "BUNDLE_EC_200_RPP_1")]
@@ -559,8 +1217,6 @@ pub enum IapItemDisplayTemplateId {
     General2Ticket2,
     #[serde(rename = "general2.ticket.2.giftable")]
     General2Ticket2Giftable,
-    #[serde(rename = "general2.ticket.3")]
-    General2Ticket3,
     #[serde(rename = "general2.ticket.4")]
     General2Ticket4,
     #[serde(rename = "general2.ticket.4.giftable")]

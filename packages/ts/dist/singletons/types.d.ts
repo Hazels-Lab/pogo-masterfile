@@ -7,6 +7,7 @@ import type {
 	AddressablePokemonSettings,
 	AddressBookImportSettings,
 	AdvancedSettings,
+	AmuseBoucheWelcomeBackRewards,
 	ArPhotoFeatureFlags,
 	ArTelemetrySettings,
 	AssetRefreshProto,
@@ -150,6 +151,7 @@ export type AdditiveSceneSettingsType = W<AdditiveSceneSettings>;
 export type AddressablePokemonSettingsType = W<AddressablePokemonSettings>;
 export type AddressBookImportSettingsType = W<AddressBookImportSettings>;
 export type AdvancedSettingsType = W<AdvancedSettings>;
+export type AmuseBoucheWelcomeBackRewardsType = W<AmuseBoucheWelcomeBackRewards>;
 export type ArPhotoFeatureFlagsType = W<ArPhotoFeatureFlags>;
 export type ArTelemetrySettingsType = W<ArTelemetrySettings>;
 export type AssetRefreshProtoType = W<AssetRefreshProto>;
@@ -293,6 +295,7 @@ export type Singletons =
 	| AddressablePokemonSettingsType
 	| AddressBookImportSettingsType
 	| AdvancedSettingsType
+	| AmuseBoucheWelcomeBackRewardsType
 	| ArPhotoFeatureFlagsType
 	| ArTelemetrySettingsType
 	| AssetRefreshProtoType

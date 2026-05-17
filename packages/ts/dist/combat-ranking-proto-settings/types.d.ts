@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatRankingProtoSettings", 21 entries (structural types).
+// Generated from Pokémon GO masterfile — group "combatRankingProtoSettings", 22 entries (structural types).
 
 import type { W } from "../_utils";
 

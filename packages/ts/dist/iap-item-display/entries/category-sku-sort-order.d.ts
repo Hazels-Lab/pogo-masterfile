@@ -1,8 +1,18 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "sticker/misc", 344 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-sku-sort-order", 345 entries.
 
-import type { S } from "../../../_utils";
-import type { IapItemDisplay } from "../../types";
+import type { S } from "../../_utils";
+import type { IapItemDisplay } from "../types";
 
+export type IapItemDisplayBundleGeneral1Free1 = S<
+	IapItemDisplay<
+		"bundle.general1.free.1",
+		{
+			category: "IAP_CATEGORY_FREE";
+			sku: "bundle.general1.free.1";
+			sortOrder: 4;
+		}
+	>
+>;
 export type IapItemDisplaySticker8anniv13 = S<
 	IapItemDisplay<
 		"STICKER_8ANNIV_1.3",
@@ -3444,7 +3454,8 @@ export type IapItemDisplayStickerWinter202545 = S<
 	>
 >;
 
-export type IapItemDisplayStickerMiscMasterfileEntry =
+export type IapItemDisplayCategorySkuSortOrderMasterfileEntry =
+	| IapItemDisplayBundleGeneral1Free1
 	| IapItemDisplaySticker8anniv13
 	| IapItemDisplaySticker8anniv15
 	| IapItemDisplaySticker8anniv23

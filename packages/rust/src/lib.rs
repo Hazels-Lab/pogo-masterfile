@@ -207,8 +207,8 @@ pub enum MasterfileEntry {
     PhotoSetsSettingsProto(photo_sets_settings_proto::PhotoSetsSettingsProtoEntry),
     EvolutionQuestTemplate(evolution_quest_template::EvolutionQuestTemplateEntry),
     LimitedPurchaseSkuSettings(limited_purchase_sku_settings::LimitedPurchaseSkuSettingsEntry),
-    ItemExpirationSettings(item_expiration_settings::ItemExpirationSettingsEntry),
     CombatRankingProtoSettings(combat_ranking_proto_settings::CombatRankingProtoSettingsEntry),
+    ItemExpirationSettings(item_expiration_settings::ItemExpirationSettingsEntry),
     CombatType(combat_type::CombatTypeEntry),
     TypeEffective(type_effective::TypeEffectiveEntry),
     IapCategoryDisplay(iap_category_display::IapCategoryDisplayEntry),
@@ -247,6 +247,7 @@ pub enum MasterfileEntry {
     AddressablePokemonSettings(singletons::AddressablePokemonSettingsEntry),
     AddressBookImportSettings(singletons::AddressBookImportSettingsEntry),
     AdvancedSettings(singletons::AdvancedSettingsEntry),
+    AmuseBoucheWelcomeBackRewards(singletons::AmuseBoucheWelcomeBackRewardsEntry),
     ArPhotoFeatureFlags(singletons::ArPhotoFeatureFlagsEntry),
     ArTelemetrySettings(singletons::ArTelemetrySettingsEntry),
     AssetRefreshProto(singletons::AssetRefreshProtoEntry),
@@ -469,11 +470,11 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "limitedPurchaseSkuSettings" => {
                     serde_json::from_value(value).map(Self::LimitedPurchaseSkuSettings)
                 }
-                "itemExpirationSettings" => {
-                    serde_json::from_value(value).map(Self::ItemExpirationSettings)
-                }
                 "combatRankingProtoSettings" => {
                     serde_json::from_value(value).map(Self::CombatRankingProtoSettings)
+                }
+                "itemExpirationSettings" => {
+                    serde_json::from_value(value).map(Self::ItemExpirationSettings)
                 }
                 "combatType" => serde_json::from_value(value).map(Self::CombatType),
                 "typeEffective" => serde_json::from_value(value).map(Self::TypeEffective),
@@ -860,6 +861,9 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 .and_then(|t| t.as_str())
                 .map(String::from);
             match template_id.as_deref() {
+                Some("AMUSE_BOUCHE_WELCOME_BACK_REWARDS") => {
+                    serde_json::from_value(value).map(Self::AmuseBoucheWelcomeBackRewards)
+                }
                 Some("EVENT_SERVER_SETTINGS") => {
                     serde_json::from_value(value).map(Self::EventServerSettings)
                 }

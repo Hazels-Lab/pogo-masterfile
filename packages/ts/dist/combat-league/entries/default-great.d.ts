@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatLeague", split "default-great", 81 entries.
+// Generated from Pokémon GO masterfile — group "combatLeague", split "default-great", 83 entries.
 
 import type { S } from "../../_utils";
 import type { CombatLeague } from "../types";
@@ -9776,6 +9776,1168 @@ export type CombatLeagueVsSeekerGreatCatchSeason11 = S<
 		}
 	>
 >;
+export type CombatLeagueVsSeekerGreatChampionshipNaic = S<
+	CombatLeague<
+		"COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_NAIC",
+		{
+			badgeType: "BADGE_GREAT_LEAGUE";
+			bannedPokemon: ["DITTO", "SHEDINJA"];
+			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
+			iconUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FGBL_Pokemon_GO_Championship_Series_Logo.png";
+			leagueType: "STANDARD";
+			pokemonCondition: [
+				{
+					type: "WITH_POKEMON_CP_LIMIT";
+					withPokemonCpLimit: {
+						maxCp: 1500;
+					};
+				},
+				{
+					type: "WITH_UNIQUE_POKEMON";
+				},
+				{
+					pokemonWhiteList: {
+						pokemon: [
+							{
+								id: "SQUIRTLE";
+							},
+							{
+								id: "WARTORTLE";
+							},
+							{
+								id: "BLASTOISE";
+							},
+							{
+								id: "PIDGEY";
+							},
+							{
+								id: "PIDGEOTTO";
+							},
+							{
+								id: "PIDGEOT";
+							},
+							{
+								forms: ["FORM_UNSET", "RATTATA_NORMAL"];
+								id: "RATTATA";
+							},
+							{
+								forms: ["FORM_UNSET", "RATICATE_NORMAL"];
+								id: "RATICATE";
+							},
+							{
+								id: "SPEAROW";
+							},
+							{
+								id: "FEAROW";
+							},
+							{
+								forms: ["RAICHU_ALOLA"];
+								id: "RAICHU";
+							},
+							{
+								id: "CLEFAIRY";
+							},
+							{
+								forms: ["NINETALES_ALOLA"];
+								id: "NINETALES";
+							},
+							{
+								id: "JIGGLYPUFF";
+							},
+							{
+								forms: ["FORM_UNSET", "MEOWTH_NORMAL"];
+								id: "MEOWTH";
+							},
+							{
+								forms: ["FORM_UNSET", "PERSIAN_NORMAL"];
+								id: "PERSIAN";
+							},
+							{
+								id: "PSYDUCK";
+							},
+							{
+								id: "GOLDUCK";
+							},
+							{
+								id: "POLIWAG";
+							},
+							{
+								id: "POLIWHIRL";
+							},
+							{
+								id: "ABRA";
+							},
+							{
+								id: "KADABRA";
+							},
+							{
+								id: "ALAKAZAM";
+							},
+							{
+								id: "TENTACOOL";
+							},
+							{
+								id: "TENTACRUEL";
+							},
+							{
+								forms: ["PONYTA_GALARIAN"];
+								id: "PONYTA";
+							},
+							{
+								forms: ["RAPIDASH_GALARIAN"];
+								id: "RAPIDASH";
+							},
+							{
+								id: "SLOWPOKE";
+							},
+							{
+								id: "SLOWBRO";
+							},
+							{
+								id: "DODUO";
+							},
+							{
+								id: "DODRIO";
+							},
+							{
+								id: "SEEL";
+							},
+							{
+								id: "DEWGONG";
+							},
+							{
+								id: "SHELLDER";
+							},
+							{
+								id: "CLOYSTER";
+							},
+							{
+								id: "DROWZEE";
+							},
+							{
+								id: "HYPNO";
+							},
+							{
+								id: "KRABBY";
+							},
+							{
+								id: "KINGLER";
+							},
+							{
+								forms: ["WEEZING_GALARIAN"];
+								id: "WEEZING";
+							},
+							{
+								id: "KANGASKHAN";
+							},
+							{
+								id: "HORSEA";
+							},
+							{
+								id: "SEADRA";
+							},
+							{
+								id: "GOLDEEN";
+							},
+							{
+								id: "SEAKING";
+							},
+							{
+								id: "STARYU";
+							},
+							{
+								id: "STARMIE";
+							},
+							{
+								id: "MR_MIME";
+							},
+							{
+								id: "JYNX";
+							},
+							{
+								forms: ["FORM_UNSET", "TAUROS_NORMAL", "TAUROS_PALDEA_AQUA"];
+								id: "TAUROS";
+							},
+							{
+								id: "MAGIKARP";
+							},
+							{
+								id: "GYARADOS";
+							},
+							{
+								id: "LAPRAS";
+							},
+							{
+								id: "EEVEE";
+							},
+							{
+								id: "VAPOREON";
+							},
+							{
+								id: "PORYGON";
+							},
+							{
+								id: "OMANYTE";
+							},
+							{
+								id: "OMASTAR";
+							},
+							{
+								id: "KABUTO";
+							},
+							{
+								id: "KABUTOPS";
+							},
+							{
+								id: "SNORLAX";
+							},
+							{
+								forms: ["ARTICUNO_GALARIAN"];
+								id: "ARTICUNO";
+							},
+							{
+								id: "MEWTWO";
+							},
+							{
+								id: "MEW";
+							},
+							{
+								id: "TOTODILE";
+							},
+							{
+								id: "CROCONAW";
+							},
+							{
+								id: "FERALIGATR";
+							},
+							{
+								id: "SENTRET";
+							},
+							{
+								id: "HOOTHOOT";
+							},
+							{
+								id: "NOCTOWL";
+							},
+							{
+								id: "CLEFFA";
+							},
+							{
+								id: "IGGLYBUFF";
+							},
+							{
+								id: "TOGEPI";
+							},
+							{
+								id: "TOGETIC";
+							},
+							{
+								id: "NATU";
+							},
+							{
+								id: "XATU";
+							},
+							{
+								id: "MARILL";
+							},
+							{
+								id: "AZUMARILL";
+							},
+							{
+								id: "POLITOED";
+							},
+							{
+								id: "AIPOM";
+							},
+							{
+								forms: ["FORM_UNSET", "WOOPER_NORMAL"];
+								id: "WOOPER";
+							},
+							{
+								id: "QUAGSIRE";
+							},
+							{
+								id: "ESPEON";
+							},
+							{
+								id: "SLOWKING";
+							},
+							{
+								id: "UNOWN";
+							},
+							{
+								id: "WOBBUFFET";
+							},
+							{
+								id: "GIRAFARIG";
+							},
+							{
+								id: "DUNSPARCE";
+							},
+							{
+								id: "SNUBBULL";
+							},
+							{
+								id: "GRANBULL";
+							},
+							{
+								forms: ["FORM_UNSET", "QWILFISH_NORMAL"];
+								id: "QWILFISH";
+							},
+							{
+								id: "TEDDIURSA";
+							},
+							{
+								id: "URSARING";
+							},
+							{
+								forms: ["FORM_UNSET", "CORSOLA_NORMAL"];
+								id: "CORSOLA";
+							},
+							{
+								id: "REMORAID";
+							},
+							{
+								id: "OCTILLERY";
+							},
+							{
+								id: "MANTINE";
+							},
+							{
+								id: "KINGDRA";
+							},
+							{
+								id: "PORYGON2";
+							},
+							{
+								id: "STANTLER";
+							},
+							{
+								id: "SMEARGLE";
+							},
+							{
+								id: "SMOOCHUM";
+							},
+							{
+								id: "MILTANK";
+							},
+							{
+								id: "BLISSEY";
+							},
+							{
+								id: "SUICUNE";
+							},
+							{
+								id: "MUDKIP";
+							},
+							{
+								id: "MARSHTOMP";
+							},
+							{
+								id: "SWAMPERT";
+							},
+							{
+								forms: ["FORM_UNSET", "ZIGZAGOON_NORMAL"];
+								id: "ZIGZAGOON";
+							},
+							{
+								forms: ["FORM_UNSET", "LINOONE_NORMAL"];
+								id: "LINOONE";
+							},
+							{
+								id: "TAILLOW";
+							},
+							{
+								id: "SWELLOW";
+							},
+							{
+								id: "WINGULL";
+							},
+							{
+								id: "PELIPPER";
+							},
+							{
+								id: "RALTS";
+							},
+							{
+								id: "KIRLIA";
+							},
+							{
+								id: "GARDEVOIR";
+							},
+							{
+								id: "SURSKIT";
+							},
+							{
+								id: "SLAKOTH";
+							},
+							{
+								id: "VIGOROTH";
+							},
+							{
+								id: "SLAKING";
+							},
+							{
+								id: "WHISMUR";
+							},
+							{
+								id: "LOUDRED";
+							},
+							{
+								id: "EXPLOUD";
+							},
+							{
+								id: "AZURILL";
+							},
+							{
+								id: "SKITTY";
+							},
+							{
+								id: "DELCATTY";
+							},
+							{
+								id: "MEDITITE";
+							},
+							{
+								id: "WAILMER";
+							},
+							{
+								id: "WAILORD";
+							},
+							{
+								id: "SPOINK";
+							},
+							{
+								id: "GRUMPIG";
+							},
+							{
+								id: "SPINDA";
+							},
+							{
+								id: "SWABLU";
+							},
+							{
+								id: "ZANGOOSE";
+							},
+							{
+								id: "LUNATONE";
+							},
+							{
+								id: "SOLROCK";
+							},
+							{
+								id: "BARBOACH";
+							},
+							{
+								id: "WHISCASH";
+							},
+							{
+								id: "CORPHISH";
+							},
+							{
+								id: "BALTOY";
+							},
+							{
+								id: "FEEBAS";
+							},
+							{
+								id: "MILOTIC";
+							},
+							{
+								forms: ["FORM_UNSET", "CASTFORM_NORMAL", "CASTFORM_RAINY"];
+								id: "CASTFORM";
+							},
+							{
+								id: "KECLEON";
+							},
+							{
+								id: "CHIMECHO";
+							},
+							{
+								id: "WYNAUT";
+							},
+							{
+								id: "SPHEAL";
+							},
+							{
+								id: "SEALEO";
+							},
+							{
+								id: "WALREIN";
+							},
+							{
+								id: "CLAMPERL";
+							},
+							{
+								id: "HUNTAIL";
+							},
+							{
+								id: "GOREBYSS";
+							},
+							{
+								id: "RELICANTH";
+							},
+							{
+								id: "LUVDISC";
+							},
+							{
+								id: "LATIAS";
+							},
+							{
+								id: "LATIOS";
+							},
+							{
+								id: "KYOGRE";
+							},
+							{
+								id: "DEOXYS";
+							},
+							{
+								id: "PIPLUP";
+							},
+							{
+								id: "PRINPLUP";
+							},
+							{
+								id: "STARLY";
+							},
+							{
+								id: "STARAVIA";
+							},
+							{
+								id: "STARAPTOR";
+							},
+							{
+								id: "BIDOOF";
+							},
+							{
+								id: "BIBAREL";
+							},
+							{
+								id: "BUIZEL";
+							},
+							{
+								id: "FLOATZEL";
+							},
+							{
+								id: "SHELLOS";
+							},
+							{
+								id: "AMBIPOM";
+							},
+							{
+								id: "BUNEARY";
+							},
+							{
+								id: "LOPUNNY";
+							},
+							{
+								id: "GLAMEOW";
+							},
+							{
+								id: "PURUGLY";
+							},
+							{
+								id: "CHINGLING";
+							},
+							{
+								id: "MIME_JR";
+							},
+							{
+								id: "HAPPINY";
+							},
+							{
+								id: "CHATOT";
+							},
+							{
+								id: "MUNCHLAX";
+							},
+							{
+								id: "FINNEON";
+							},
+							{
+								id: "LUMINEON";
+							},
+							{
+								id: "MANTYKE";
+							},
+							{
+								id: "TOGEKISS";
+							},
+							{
+								id: "PORYGON_Z";
+							},
+							{
+								id: "GALLADE";
+							},
+							{
+								id: "UXIE";
+							},
+							{
+								id: "MESPRIT";
+							},
+							{
+								id: "AZELF";
+							},
+							{
+								id: "PALKIA";
+							},
+							{
+								id: "REGIGIGAS";
+							},
+							{
+								id: "PHIONE";
+							},
+							{
+								id: "MANAPHY";
+							},
+							{
+								forms: ["FORM_UNSET", "ARCEUS_FAIRY", "ARCEUS_NORMAL", "ARCEUS_PSYCHIC", "ARCEUS_WATER"];
+								id: "ARCEUS";
+							},
+							{
+								id: "VICTINI";
+							},
+							{
+								id: "OSHAWOTT";
+							},
+							{
+								id: "DEWOTT";
+							},
+							{
+								forms: ["FORM_UNSET", "SAMUROTT_NORMAL"];
+								id: "SAMUROTT";
+							},
+							{
+								id: "PATRAT";
+							},
+							{
+								id: "WATCHOG";
+							},
+							{
+								id: "LILLIPUP";
+							},
+							{
+								id: "HERDIER";
+							},
+							{
+								id: "STOUTLAND";
+							},
+							{
+								id: "PANPOUR";
+							},
+							{
+								id: "SIMIPOUR";
+							},
+							{
+								id: "MUNNA";
+							},
+							{
+								id: "MUSHARNA";
+							},
+							{
+								id: "PIDOVE";
+							},
+							{
+								id: "TRANQUILL";
+							},
+							{
+								id: "UNFEZANT";
+							},
+							{
+								id: "WOOBAT";
+							},
+							{
+								id: "SWOOBAT";
+							},
+							{
+								id: "AUDINO";
+							},
+							{
+								id: "TYMPOLE";
+							},
+							{
+								id: "PALPITOAD";
+							},
+							{
+								id: "SEISMITOAD";
+							},
+							{
+								id: "BASCULIN";
+							},
+							{
+								forms: ["DARMANITAN_ZEN"];
+								id: "DARMANITAN";
+							},
+							{
+								id: "SIGILYPH";
+							},
+							{
+								id: "TIRTOUGA";
+							},
+							{
+								id: "CARRACOSTA";
+							},
+							{
+								forms: ["ZORUA_HISUIAN"];
+								id: "ZORUA";
+							},
+							{
+								forms: ["ZOROARK_HISUIAN"];
+								id: "ZOROARK";
+							},
+							{
+								id: "MINCCINO";
+							},
+							{
+								id: "CINCCINO";
+							},
+							{
+								id: "GOTHITA";
+							},
+							{
+								id: "GOTHORITA";
+							},
+							{
+								id: "GOTHITELLE";
+							},
+							{
+								id: "SOLOSIS";
+							},
+							{
+								id: "DUOSION";
+							},
+							{
+								id: "REUNICLUS";
+							},
+							{
+								id: "DUCKLETT";
+							},
+							{
+								id: "SWANNA";
+							},
+							{
+								id: "FRILLISH";
+							},
+							{
+								id: "ALOMOMOLA";
+							},
+							{
+								id: "ELGYEM";
+							},
+							{
+								id: "BEHEEYEM";
+							},
+							{
+								id: "BOUFFALANT";
+							},
+							{
+								id: "RUFFLET";
+							},
+							{
+								id: "BRAVIARY";
+							},
+							{
+								id: "KELDEO";
+							},
+							{
+								id: "MELOETTA";
+							},
+							{
+								id: "DELPHOX";
+							},
+							{
+								id: "FROAKIE";
+							},
+							{
+								id: "FROGADIER";
+							},
+							{
+								id: "BUNNELBY";
+							},
+							{
+								id: "FLETCHLING";
+							},
+							{
+								id: "LITLEO";
+							},
+							{
+								id: "PYROAR";
+							},
+							{
+								id: "FLABEBE";
+							},
+							{
+								id: "FLOETTE";
+							},
+							{
+								id: "FLORGES";
+							},
+							{
+								id: "FURFROU";
+							},
+							{
+								id: "ESPURR";
+							},
+							{
+								id: "MEOWSTIC";
+							},
+							{
+								id: "SPRITZEE";
+							},
+							{
+								id: "AROMATISSE";
+							},
+							{
+								id: "SWIRLIX";
+							},
+							{
+								id: "SLURPUFF";
+							},
+							{
+								id: "BINACLE";
+							},
+							{
+								id: "BARBARACLE";
+							},
+							{
+								id: "SKRELP";
+							},
+							{
+								id: "CLAUNCHER";
+							},
+							{
+								id: "CLAWITZER";
+							},
+							{
+								id: "HELIOPTILE";
+							},
+							{
+								id: "HELIOLISK";
+							},
+							{
+								id: "SYLVEON";
+							},
+							{
+								id: "XERNEAS";
+							},
+							{
+								id: "DIANCIE";
+							},
+							{
+								forms: ["FORM_UNSET", "HOOPA_CONFINED"];
+								id: "HOOPA";
+							},
+							{
+								id: "VOLCANION";
+							},
+							{
+								id: "POPPLIO";
+							},
+							{
+								id: "BRIONNE";
+							},
+							{
+								id: "PRIMARINA";
+							},
+							{
+								id: "PIKIPEK";
+							},
+							{
+								id: "TRUMBEAK";
+							},
+							{
+								id: "TOUCANNON";
+							},
+							{
+								id: "YUNGOOS";
+							},
+							{
+								id: "GUMSHOOS";
+							},
+							{
+								forms: ["ORICORIO_PAU"];
+								id: "ORICORIO";
+							},
+							{
+								id: "CUTIEFLY";
+							},
+							{
+								id: "RIBOMBEE";
+							},
+							{
+								id: "WISHIWASHI";
+							},
+							{
+								id: "MAREANIE";
+							},
+							{
+								id: "DEWPIDER";
+							},
+							{
+								id: "STUFFUL";
+							},
+							{
+								id: "BEWEAR";
+							},
+							{
+								id: "COMFEY";
+							},
+							{
+								id: "WIMPOD";
+							},
+							{
+								id: "PYUKUMUKU";
+							},
+							{
+								id: "TYPE_NULL";
+							},
+							{
+								forms: ["FORM_UNSET", "SILVALLY_FAIRY", "SILVALLY_NORMAL", "SILVALLY_PSYCHIC", "SILVALLY_WATER"];
+								id: "SILVALLY";
+							},
+							{
+								id: "KOMALA";
+							},
+							{
+								id: "BRUXISH";
+							},
+							{
+								id: "DRAMPA";
+							},
+							{
+								id: "TAPU_KOKO";
+							},
+							{
+								id: "TAPU_LELE";
+							},
+							{
+								id: "TAPU_FINI";
+							},
+							{
+								id: "COSMOG";
+							},
+							{
+								id: "COSMOEM";
+							},
+							{
+								id: "LUNALA";
+							},
+							{
+								forms: ["FORM_UNSET", "NECROZMA_DAWN_WINGS", "NECROZMA_NORMAL", "NECROZMA_ULTRA"];
+								id: "NECROZMA";
+							},
+							{
+								id: "SOBBLE";
+							},
+							{
+								id: "DRIZZILE";
+							},
+							{
+								id: "INTELEON";
+							},
+							{
+								id: "SKWOVET";
+							},
+							{
+								id: "DOTTLER";
+							},
+							{
+								id: "ORBEETLE";
+							},
+							{
+								id: "WOOLOO";
+							},
+							{
+								id: "DUBWOOL";
+							},
+							{
+								id: "CHEWTLE";
+							},
+							{
+								id: "DREDNAW";
+							},
+							{
+								id: "CRAMORANT";
+							},
+							{
+								id: "ARROKUDA";
+							},
+							{
+								id: "BARRASKEWDA";
+							},
+							{
+								id: "HATENNA";
+							},
+							{
+								id: "HATTREM";
+							},
+							{
+								id: "HATTERENE";
+							},
+							{
+								id: "MR_RIME";
+							},
+							{
+								id: "MILCERY";
+							},
+							{
+								id: "ALCREMIE";
+							},
+							{
+								id: "INDEEDEE";
+							},
+							{
+								id: "DRACOVISH";
+							},
+							{
+								id: "ARCTOVISH";
+							},
+							{
+								forms: ["ZACIAN_HERO"];
+								id: "ZACIAN";
+							},
+							{
+								forms: ["URSHIFU_RAPID_STRIKE"];
+								id: "URSHIFU";
+							},
+							{
+								forms: ["CALYREX_ICE_RIDER", "CALYREX_SHADOW_RIDER"];
+								id: "CALYREX";
+							},
+							{
+								id: "WYRDEER";
+							},
+							{
+								id: "URSALUNA";
+							},
+							{
+								id: "BASCULEGION";
+							},
+							{
+								id: "ENAMORUS";
+							},
+							{
+								id: "QUAXLY";
+							},
+							{
+								id: "QUAXWELL";
+							},
+							{
+								id: "QUAQUAVAL";
+							},
+							{
+								id: "LECHONK";
+							},
+							{
+								id: "OINKOLOGNE";
+							},
+							{
+								id: "TANDEMAUS";
+							},
+							{
+								id: "MAUSHOLD";
+							},
+							{
+								id: "FIDOUGH";
+							},
+							{
+								id: "DACHSBUN";
+							},
+							{
+								id: "SQUAWKABILLY";
+							},
+							{
+								id: "ARMAROUGE";
+							},
+							{
+								id: "SHROODLE";
+							},
+							{
+								id: "GRAFAIAI";
+							},
+							{
+								id: "RABSCA";
+							},
+							{
+								id: "FLITTLE";
+							},
+							{
+								id: "ESPATHRA";
+							},
+							{
+								id: "WIGLETT";
+							},
+							{
+								id: "WUGTRIO";
+							},
+							{
+								id: "FINIZEN";
+							},
+							{
+								id: "PALAFIN";
+							},
+							{
+								id: "CYCLIZAR";
+							},
+							{
+								id: "VELUZA";
+							},
+							{
+								id: "DONDOZO";
+							},
+							{
+								id: "TATSUGIRI";
+							},
+							{
+								id: "FARIGIRAF";
+							},
+							{
+								id: "DUDUNSPARCE";
+							},
+							{
+								id: "SCREAMTAIL";
+							},
+							{
+								id: "FLUTTERMANE";
+							},
+							{
+								id: "IRONBUNDLE";
+							},
+							{
+								id: "IRONVALIANT";
+							},
+							{
+								id: "WALKINGWAKE";
+							},
+							{
+								id: "MUNKIDORI";
+							},
+							{
+								id: "FEZANDIPITI";
+							},
+							{
+								id: "IRONBOULDER";
+							},
+							{
+								forms: ["FORM_UNSET", "TERAPAGOS_NORMAL"];
+								id: "TERAPAGOS";
+							},
+						];
+					};
+					type: "POKEMON_WHITELIST";
+				},
+			];
+			title: "great_league_championship_series_2026";
+			unlockCondition: [
+				{
+					minPokemonCount: 3;
+					type: "WITH_UNIQUE_POKEMON";
+				},
+			];
+		}
+	>
+>;
 export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 	CombatLeague<
 		"COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_SERIES",
@@ -16601,6 +17763,37 @@ export type CombatLeagueVsSeekerGreatLove = S<
 		}
 	>
 >;
+export type CombatLeagueVsSeekerGreatMegas = S<
+	CombatLeague<
+		"COMBAT_LEAGUE_VS_SEEKER_GREAT_MEGAS",
+		{
+			allowTempEvos: true;
+			badgeType: "BADGE_GREAT_LEAGUE";
+			bannedPokemon: ["DITTO", "SHEDINJA", "MIMIKYU"];
+			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
+			iconUrl: "https://storage.googleapis.com/prod-public-images/pogo_great_league.png";
+			leagueType: "STANDARD";
+			pokemonCondition: [
+				{
+					type: "WITH_POKEMON_CP_LIMIT";
+					withPokemonCpLimit: {
+						maxCp: 1500;
+					};
+				},
+				{
+					type: "WITH_UNIQUE_POKEMON";
+				},
+			];
+			title: "great_league_mega_title";
+			unlockCondition: [
+				{
+					minPokemonCount: 3;
+					type: "WITH_UNIQUE_POKEMON";
+				},
+			];
+		}
+	>
+>;
 export type CombatLeagueVsSeekerGreatPvpNextPreview = S<
 	CombatLeague<
 		"COMBAT_LEAGUE_VS_SEEKER_GREAT_PVP_NEXT_PREVIEW",
@@ -21029,6 +22222,7 @@ export type CombatLeagueDefaultGreatMasterfileEntry =
 	| CombatLeagueVsSeekerGreatCatchS20
 	| CombatLeagueVsSeekerGreatCatchS22
 	| CombatLeagueVsSeekerGreatCatchSeason11
+	| CombatLeagueVsSeekerGreatChampionshipNaic
 	| CombatLeagueVsSeekerGreatChampionshipSeries
 	| CombatLeagueVsSeekerGreatElectric
 	| CombatLeagueVsSeekerGreatElement
@@ -21048,6 +22242,7 @@ export type CombatLeagueDefaultGreatMasterfileEntry =
 	| CombatLeagueVsSeekerGreatLittle
 	| CombatLeagueVsSeekerGreatLittleRemix
 	| CombatLeagueVsSeekerGreatLove
+	| CombatLeagueVsSeekerGreatMegas
 	| CombatLeagueVsSeekerGreatPvpNextPreview
 	| CombatLeagueVsSeekerGreatRemix
 	| CombatLeagueVsSeekerGreatRetro

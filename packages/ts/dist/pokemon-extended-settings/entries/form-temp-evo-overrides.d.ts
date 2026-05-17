@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form-temp-evo-overrides", 45 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form-temp-evo-overrides", 44 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -240,36 +240,6 @@ export type PokemonExtendedSettingsV0127PokemonPinsirNormal = S<
 				},
 			];
 			uniqueId: "PINSIR";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0130PokemonGyaradosNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0130_POKEMON_GYARADOS_NORMAL",
-		{
-			form: "GYARADOS_NORMAL";
-			sizeSettings: {
-				mLowerBound: 4.875;
-				mUpperBound: 8.125;
-				xlUpperBound: 9.75;
-				xsLowerBound: 3.25;
-				xxlUpperBound: 13;
-				xxsLowerBound: 3.185;
-			};
-			tempEvoOverrides: [
-				{
-					sizeSettings: {
-						mLowerBound: 4.875;
-						mUpperBound: 8.125;
-						xlUpperBound: 9.75;
-						xsLowerBound: 3.25;
-						xxlUpperBound: 10.075;
-						xxsLowerBound: 3.185;
-					};
-					tempEvoId: "TEMP_EVOLUTION_MEGA";
-				},
-			];
-			uniqueId: "GYARADOS";
 		}
 	>
 >;
@@ -1363,7 +1333,6 @@ export type PokemonExtendedSettingsFormTempEvoOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0094PokemonGengarCostume2020
 	| PokemonExtendedSettingsV0115PokemonKangaskhanNormal
 	| PokemonExtendedSettingsV0127PokemonPinsirNormal
-	| PokemonExtendedSettingsV0130PokemonGyaradosNormal
 	| PokemonExtendedSettingsV0142PokemonAerodactylNormal
 	| PokemonExtendedSettingsV0142PokemonAerodactylSummer2023
 	| PokemonExtendedSettingsV0149PokemonDragoniteNormal

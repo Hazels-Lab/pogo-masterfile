@@ -49,4 +49,6 @@ pub enum CombatRankingProtoSettingsTemplateId {
     CombatRankingSettingsS28,
     #[serde(rename = "COMBAT_RANKING_SETTINGS_S29")]
     CombatRankingSettingsS29,
+    #[serde(rename = "COMBAT_RANKING_SETTINGS_S30")]
+    CombatRankingSettingsS30,
 }

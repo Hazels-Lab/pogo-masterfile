@@ -1,5 +1,12 @@
 // Generated from Pokémon GO masterfile — Singletons entries (no shared discriminator).
 
+export interface AmuseBoucheWelcomeBackRewards {
+	templateId: "AMUSE_BOUCHE_WELCOME_BACK_REWARDS";
+	data: {
+		templateId: "AMUSE_BOUCHE_WELCOME_BACK_REWARDS";
+	};
+}
+
 export interface BelugaPokemonWhitelist {
 	templateId: "BELUGA_POKEMON_WHITELIST";
 	data: {
@@ -516,6 +523,7 @@ export interface VnextBattleConfig {
 }
 
 export type SingletonsMiscMasterfileEntry =
+	| AmuseBoucheWelcomeBackRewards
 	| BelugaPokemonWhitelist
 	| BreadMoveMappings
 	| ItemCurrencyValues

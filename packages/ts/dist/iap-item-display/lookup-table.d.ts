@@ -7,6 +7,335 @@ import type {
 	IapItemDisplayApril22026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayApril32026DeluxeEventPassTrackUnlock,
 	IapItemDisplayApril32026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayAvatarNBackpackAlolaitemspoppliobp0,
+	IapItemDisplayAvatarNBackpackAlolaitemsrowletbp0,
+	IapItemDisplayAvatarNBackpackBackpacker0,
+	IapItemDisplayAvatarNBackpackCombeebackpack0,
+	IapItemDisplayAvatarNBackpackEggbackpack0,
+	IapItemDisplayAvatarNBackpackEggbackpack1,
+	IapItemDisplayAvatarNBackpackEggbackpack2,
+	IapItemDisplayAvatarNBackpackFrlgA0,
+	IapItemDisplayAvatarNBackpackFrlgB0,
+	IapItemDisplayAvatarNBackpackHgssA0,
+	IapItemDisplayAvatarNBackpackLunarnewyr0,
+	IapItemDisplayAvatarNBackpackPkmnhoodie0040,
+	IapItemDisplayAvatarNBackpackTatsugiribackpackStretchy0,
+	IapItemDisplayAvatarNBackpackZubatbp0,
+	IapItemDisplayAvatarNBeltAcetrainerbw0,
+	IapItemDisplayAvatarNBeltSimple0,
+	IapItemDisplayAvatarNBeltSimple1,
+	IapItemDisplayAvatarNBeltSimple2,
+	IapItemDisplayAvatarNBeltTeamrocket0,
+	IapItemDisplayAvatarNBeltTeamrocket1,
+	IapItemDisplayAvatarNGlassesDivingsuit0,
+	IapItemDisplayAvatarNGlassesMask0,
+	IapItemDisplayAvatarNGlassesMask1,
+	IapItemDisplayAvatarNGlassesNewyear20220,
+	IapItemDisplayAvatarNGlassesNewyearglasses20200,
+	IapItemDisplayAvatarNGlassesNewyearglasses20210,
+	IapItemDisplayAvatarNGlovesBattlegirl0,
+	IapItemDisplayAvatarNGlovesDelibird0,
+	IapItemDisplayAvatarNGlovesSwshuniformdragon0,
+	IapItemDisplayAvatarNGlovesTeamaquaA0,
+	IapItemDisplayAvatarNGlovesTeamsparkA0,
+	IapItemDisplayAvatarNHat6thanniversaryA0,
+	IapItemDisplayAvatarNHat6thanniversaryB0,
+	IapItemDisplayAvatarNHatAcetrainersmA0,
+	IapItemDisplayAvatarNHatAcetrainersmB0,
+	IapItemDisplayAvatarNHatCetoddlehat0,
+	IapItemDisplayAvatarNHatCosmog0,
+	IapItemDisplayAvatarNHatDarumakahat0,
+	IapItemDisplayAvatarNHatDelibird0,
+	IapItemDisplayAvatarNHatDrifloon0,
+	IapItemDisplayAvatarNHatEarringsburmysandy0,
+	IapItemDisplayAvatarNHatFedora0,
+	IapItemDisplayAvatarNHatFedora1,
+	IapItemDisplayAvatarNHatFisher0,
+	IapItemDisplayAvatarNHatFrlgA0,
+	IapItemDisplayAvatarNHatGimmighoulitems0,
+	IapItemDisplayAvatarNHatGreavardwig0,
+	IapItemDisplayAvatarNHatGreencoat0,
+	IapItemDisplayAvatarNHatGrowlithehelmet0,
+	IapItemDisplayAvatarNHatGtr2024eeveefanmask0,
+	IapItemDisplayAvatarNHatGtr2024pikachufanmask0,
+	IapItemDisplayAvatarNHatHalloween20240,
+	IapItemDisplayAvatarNHatHoopaearmuffs0,
+	IapItemDisplayAvatarNHatJogger0,
+	IapItemDisplayAvatarNHatLitwickhat0,
+	IapItemDisplayAvatarNHatMareaniehat0,
+	IapItemDisplayAvatarNHatNewyear20220,
+	IapItemDisplayAvatarNHatNewyearhat20210,
+	IapItemDisplayAvatarNHatNewyearhat20230,
+	IapItemDisplayAvatarNHatNoibat0,
+	IapItemDisplayAvatarNHatObstagoonitems0,
+	IapItemDisplayAvatarNHatOricoriopink0,
+	IapItemDisplayAvatarNHatOricoriopurple0,
+	IapItemDisplayAvatarNHatOricoriored0,
+	IapItemDisplayAvatarNHatOricorioyellow0,
+	IapItemDisplayAvatarNHatPhantump0,
+	IapItemDisplayAvatarNHatPikachubutlerYellow0,
+	IapItemDisplayAvatarNHatPikachufan0,
+	IapItemDisplayAvatarNHatPkmncap0,
+	IapItemDisplayAvatarNHatPkmncap1,
+	IapItemDisplayAvatarNHatPkmncap2,
+	IapItemDisplayAvatarNHatPoipole0,
+	IapItemDisplayAvatarNHatRegiicejersies0,
+	IapItemDisplayAvatarNHatRegirockjersies0,
+	IapItemDisplayAvatarNHatRuinmaniacA0,
+	IapItemDisplayAvatarNHatRuinmaniacB0,
+	IapItemDisplayAvatarNHatStantlerheadband0,
+	IapItemDisplayAvatarNHatSylveonitemsB0,
+	IapItemDisplayAvatarNHatTophat0,
+	IapItemDisplayAvatarNHatWcs20250,
+	IapItemDisplayAvatarNHatWhimsicottearmuff0,
+	IapItemDisplayAvatarNHatWoobatearrings0,
+	IapItemDisplayAvatarNHatYamaskhat0,
+	IapItemDisplayAvatarNHatZubathat0,
+	IapItemDisplayAvatarNPantsAcetrainerbwA0,
+	IapItemDisplayAvatarNPantsAcetrainerbwB0,
+	IapItemDisplayAvatarNPantsAcetrainersm0,
+	IapItemDisplayAvatarNPantsBackpackerA0,
+	IapItemDisplayAvatarNPantsBattlegirl0,
+	IapItemDisplayAvatarNPantsBounsweetitems0,
+	IapItemDisplayAvatarNPantsFisher0,
+	IapItemDisplayAvatarNPantsFrlgA0,
+	IapItemDisplayAvatarNPantsGreencoat0,
+	IapItemDisplayAvatarNPantsGymleaderA0,
+	IapItemDisplayAvatarNPantsGymleaderA1,
+	IapItemDisplayAvatarNPantsGymleaderA2,
+	IapItemDisplayAvatarNPantsGymleaderB0,
+	IapItemDisplayAvatarNPantsGymleaderB1,
+	IapItemDisplayAvatarNPantsGymleaderB2,
+	IapItemDisplayAvatarNPantsHgssB0,
+	IapItemDisplayAvatarNPantsJogger0,
+	IapItemDisplayAvatarNPantsLuvdiscpackB0,
+	IapItemDisplayAvatarNPantsMiniskirt0,
+	IapItemDisplayAvatarNPantsMiniskirt1,
+	IapItemDisplayAvatarNPantsMiniskirt2,
+	IapItemDisplayAvatarNPantsMiniskirt3,
+	IapItemDisplayAvatarNPantsNeonSolid0,
+	IapItemDisplayAvatarNPantsNeonSolid1,
+	IapItemDisplayAvatarNPantsNeonSolid2,
+	IapItemDisplayAvatarNPantsNeonStripes0,
+	IapItemDisplayAvatarNPantsNeonStripes1,
+	IapItemDisplayAvatarNPantsPumpkabooitems0,
+	IapItemDisplayAvatarNPantsRegiicejersies0,
+	IapItemDisplayAvatarNPantsShorts1,
+	IapItemDisplayAvatarNPantsShorts2,
+	IapItemDisplayAvatarNPantsShorts3,
+	IapItemDisplayAvatarNPantsSweats0,
+	IapItemDisplayAvatarNPantsSweats1,
+	IapItemDisplayAvatarNPantsSweats2,
+	IapItemDisplayAvatarNPantsSweats3,
+	IapItemDisplayAvatarNPantsSwshuniformdarkA0,
+	IapItemDisplayAvatarNPantsSwshuniformdarkB0,
+	IapItemDisplayAvatarNPantsSwshuniformdragonA0,
+	IapItemDisplayAvatarNPantsTeamaquaB0,
+	IapItemDisplayAvatarNPantsTeamblancheA0,
+	IapItemDisplayAvatarNPantsTeamblancheB0,
+	IapItemDisplayAvatarNPantsTeammagmaB0,
+	IapItemDisplayAvatarNPantsTeamrocketB0,
+	IapItemDisplayAvatarNPantsTurbine0,
+	IapItemDisplayAvatarNPantsTurbine1,
+	IapItemDisplayAvatarNPantsTurbine2,
+	IapItemDisplayAvatarNPantsVeterantrainerxyA0,
+	IapItemDisplayAvatarNPantsVeterantrainerxyB0,
+	IapItemDisplayAvatarNPose038,
+	IapItemDisplayAvatarNPose040,
+	IapItemDisplayAvatarNPoseUrshifusinglestrike,
+	IapItemDisplayAvatarNShirt6thanniversaryA0,
+	IapItemDisplayAvatarNShirt7thanniversary0,
+	IapItemDisplayAvatarNShirtAcetrainerbw0,
+	IapItemDisplayAvatarNShirtAcetrainersmA0,
+	IapItemDisplayAvatarNShirtAcetrainersmB0,
+	IapItemDisplayAvatarNShirtBallguy0,
+	IapItemDisplayAvatarNShirtBattlegirl0,
+	IapItemDisplayAvatarNShirtBrock0,
+	IapItemDisplayAvatarNShirtButtondown0,
+	IapItemDisplayAvatarNShirtChimcharonesie0,
+	IapItemDisplayAvatarNShirtCofagrigusitems0,
+	IapItemDisplayAvatarNShirtCowichansweater0,
+	IapItemDisplayAvatarNShirtDelibird0,
+	IapItemDisplayAvatarNShirtDelibirdonesie0,
+	IapItemDisplayAvatarNShirtDivingsuit0,
+	IapItemDisplayAvatarNShirtDrifblim0,
+	IapItemDisplayAvatarNShirtDudunsparceitem0,
+	IapItemDisplayAvatarNShirtFashionweek20220,
+	IapItemDisplayAvatarNShirtFisher0,
+	IapItemDisplayAvatarNShirtFlabebepack0,
+	IapItemDisplayAvatarNShirtFrlgA0,
+	IapItemDisplayAvatarNShirtFw2022B0,
+	IapItemDisplayAvatarNShirtGalaxyoutfitA0,
+	IapItemDisplayAvatarNShirtGalaxyoutfitB0,
+	IapItemDisplayAvatarNShirtGiovanniA0,
+	IapItemDisplayAvatarNShirtGoteamrocketcliffA0,
+	IapItemDisplayAvatarNShirtGoteamrocketsierraA0,
+	IapItemDisplayAvatarNShirtGoteamrocketsierraB0,
+	IapItemDisplayAvatarNShirtGreedentsweater0,
+	IapItemDisplayAvatarNShirtGreencoat0,
+	IapItemDisplayAvatarNShirtGymleaderA0,
+	IapItemDisplayAvatarNShirtGymleaderA1,
+	IapItemDisplayAvatarNShirtGymleaderA2,
+	IapItemDisplayAvatarNShirtGymleaderB0,
+	IapItemDisplayAvatarNShirtGymleaderB1,
+	IapItemDisplayAvatarNShirtGymleaderB2,
+	IapItemDisplayAvatarNShirtHalloween20240,
+	IapItemDisplayAvatarNShirtHappi0,
+	IapItemDisplayAvatarNShirtHappi1,
+	IapItemDisplayAvatarNShirtHappi2,
+	IapItemDisplayAvatarNShirtHgssA0,
+	IapItemDisplayAvatarNShirtHgssB0,
+	IapItemDisplayAvatarNShirtHoliday2022santacostumes0,
+	IapItemDisplayAvatarNShirtHoliday2024Marshtompsweater0,
+	IapItemDisplayAvatarNShirtHoliday2024Staryusweater0,
+	IapItemDisplayAvatarNShirtJogger0,
+	IapItemDisplayAvatarNShirtLadiamondoutfitA0,
+	IapItemDisplayAvatarNShirtLadiamondoutfitB0,
+	IapItemDisplayAvatarNShirtLapearloutfitA0,
+	IapItemDisplayAvatarNShirtLapearloutfitB0,
+	IapItemDisplayAvatarNShirtLatiasLatios0,
+	IapItemDisplayAvatarNShirtLongsleevesCharizard0,
+	IapItemDisplayAvatarNShirtLongsleevesCharizard1,
+	IapItemDisplayAvatarNShirtLongsleevesCharizard2,
+	IapItemDisplayAvatarNShirtLongsleevesPikachu0,
+	IapItemDisplayAvatarNShirtLongsleevesPikachu1,
+	IapItemDisplayAvatarNShirtLongsleevesPikachu2,
+	IapItemDisplayAvatarNShirtLuvdiscpackB0,
+	IapItemDisplayAvatarNShirtMelmetaljacket0,
+	IapItemDisplayAvatarNShirtMeltan0,
+	IapItemDisplayAvatarNShirtMunnapackA0,
+	IapItemDisplayAvatarNShirtOcshirt045A0,
+	IapItemDisplayAvatarNShirtOcshirt045B0,
+	IapItemDisplayAvatarNShirtOcshirt108A0,
+	IapItemDisplayAvatarNShirtOcshirt108B0,
+	IapItemDisplayAvatarNShirtOcshirt129A0,
+	IapItemDisplayAvatarNShirtOcshirt129B0,
+	IapItemDisplayAvatarNShirtOcshirt143B0,
+	IapItemDisplayAvatarNShirtPajamas20220,
+	IapItemDisplayAvatarNShirtPajamas20221,
+	IapItemDisplayAvatarNShirtPikachufanA0,
+	IapItemDisplayAvatarNShirtPikachufanB0,
+	IapItemDisplayAvatarNShirtPkmnshirts1650,
+	IapItemDisplayAvatarNShirtPkmnshirts1880,
+	IapItemDisplayAvatarNShirtPkmnshirts2010,
+	IapItemDisplayAvatarNShirtPkmnshirts2380,
+	IapItemDisplayAvatarNShirtPkmnshirts20210,
+	IapItemDisplayAvatarNShirtPkmnshirts20211,
+	IapItemDisplayAvatarNShirtPkmnshirts20212,
+	IapItemDisplayAvatarNShirtPoloshirt0,
+	IapItemDisplayAvatarNShirtPoloshirt1,
+	IapItemDisplayAvatarNShirtPoloshirt2,
+	IapItemDisplayAvatarNShirtRegiicejersies0,
+	IapItemDisplayAvatarNShirtRegirockjersies0,
+	IapItemDisplayAvatarNShirtRuinmaniacA0,
+	IapItemDisplayAvatarNShirtSpiritomb0,
+	IapItemDisplayAvatarNShirtSpring2021gulpinA0,
+	IapItemDisplayAvatarNShirtSukajanblastoise0,
+	IapItemDisplayAvatarNShirtSukajancharizard0,
+	IapItemDisplayAvatarNShirtSukajanhouou0,
+	IapItemDisplayAvatarNShirtSukajanlugia0,
+	IapItemDisplayAvatarNShirtSukajanvenusaur0,
+	IapItemDisplayAvatarNShirtSweater300,
+	IapItemDisplayAvatarNShirtSweater301,
+	IapItemDisplayAvatarNShirtSweater302,
+	IapItemDisplayAvatarNShirtSweaterInstinct0,
+	IapItemDisplayAvatarNShirtSweaterMystic0,
+	IapItemDisplayAvatarNShirtSweaterValor0,
+	IapItemDisplayAvatarNShirtSweatshirtSporty0,
+	IapItemDisplayAvatarNShirtSweatshirtSporty1,
+	IapItemDisplayAvatarNShirtSweatshirtSporty2,
+	IapItemDisplayAvatarNShirtSweatshirtSporty3,
+	IapItemDisplayAvatarNShirtSweatshirtStreak0,
+	IapItemDisplayAvatarNShirtSweatshirtStreak1,
+	IapItemDisplayAvatarNShirtSweatshirtStreak2,
+	IapItemDisplayAvatarNShirtSweatshirtStreak3,
+	IapItemDisplayAvatarNShirtSwshuniformdarkB0,
+	IapItemDisplayAvatarNShirtTanktop0,
+	IapItemDisplayAvatarNShirtTanktop1,
+	IapItemDisplayAvatarNShirtTanktop2,
+	IapItemDisplayAvatarNShirtTanktopCharizard0,
+	IapItemDisplayAvatarNShirtTanktopCharizard1,
+	IapItemDisplayAvatarNShirtTanktopCharizard2,
+	IapItemDisplayAvatarNShirtTanktopPikachu0,
+	IapItemDisplayAvatarNShirtTanktopPikachu1,
+	IapItemDisplayAvatarNShirtTanktopPikachu2,
+	IapItemDisplayAvatarNShirtTeamblancheA0,
+	IapItemDisplayAvatarNShirtTeamblancheB0,
+	IapItemDisplayAvatarNShirtTeamcandelaA0,
+	IapItemDisplayAvatarNShirtTeamcandelaB0,
+	IapItemDisplayAvatarNShirtTeamrocketA0,
+	IapItemDisplayAvatarNShirtTeamrocketA1,
+	IapItemDisplayAvatarNShirtTeamrocketB0,
+	IapItemDisplayAvatarNShirtTeamrocketB1,
+	IapItemDisplayAvatarNShirtTeamsparkA0,
+	IapItemDisplayAvatarNShirtTracksuitskyogre0,
+	IapItemDisplayAvatarNShirtTshirtCycling0,
+	IapItemDisplayAvatarNShirtTshirtCycling1,
+	IapItemDisplayAvatarNShirtTshirtCycling2,
+	IapItemDisplayAvatarNShirtTshirtCycling3,
+	IapItemDisplayAvatarNShirtTshirtGeometric0,
+	IapItemDisplayAvatarNShirtTshirtGeometric1,
+	IapItemDisplayAvatarNShirtTshirtGeometric2,
+	IapItemDisplayAvatarNShirtTshirtInstinct0,
+	IapItemDisplayAvatarNShirtTshirtMystic0,
+	IapItemDisplayAvatarNShirtTshirtPikachu0,
+	IapItemDisplayAvatarNShirtTshirtPikachu1,
+	IapItemDisplayAvatarNShirtTshirtPikachu2,
+	IapItemDisplayAvatarNShirtTshirtPikachu3,
+	IapItemDisplayAvatarNShirtTshirtPikachu4,
+	IapItemDisplayAvatarNShirtTshirtPikachu5,
+	IapItemDisplayAvatarNShirtTshirtPikachu6,
+	IapItemDisplayAvatarNShirtTshirtValor0,
+	IapItemDisplayAvatarNShirtTurtleneck300,
+	IapItemDisplayAvatarNShirtTurtleneck301,
+	IapItemDisplayAvatarNShirtTurtleneck302,
+	IapItemDisplayAvatarNShirtTurtleneck303,
+	IapItemDisplayAvatarNShirtTurtwigonesie0,
+	IapItemDisplayAvatarNShirtUglysweatersudowoodo0,
+	IapItemDisplayAvatarNShirtUltrareconsquad0,
+	IapItemDisplayAvatarNShirtVeterantrainerxyA0,
+	IapItemDisplayAvatarNShirtVeterantrainerxyB0,
+	IapItemDisplayAvatarNShirtWcs2023sukajan0,
+	IapItemDisplayAvatarNShirtWhitecoat0,
+	IapItemDisplayAvatarNShirtWintersweater20230,
+	IapItemDisplayAvatarNShoesAcetrainerbwA0,
+	IapItemDisplayAvatarNShoesAcetrainerbwB0,
+	IapItemDisplayAvatarNShoesAcetrainersmA0,
+	IapItemDisplayAvatarNShoesAcetrainersmB0,
+	IapItemDisplayAvatarNShoesBackpackerA0,
+	IapItemDisplayAvatarNShoesBackpackerB0,
+	IapItemDisplayAvatarNShoesBattlegirl0,
+	IapItemDisplayAvatarNShoesBrock0,
+	IapItemDisplayAvatarNShoesDelibird0,
+	IapItemDisplayAvatarNShoesFrlgA0,
+	IapItemDisplayAvatarNShoesGiovanniA0,
+	IapItemDisplayAvatarNShoesGymleader0,
+	IapItemDisplayAvatarNShoesGymleader1,
+	IapItemDisplayAvatarNShoesGymleader2,
+	IapItemDisplayAvatarNShoesHgssA0,
+	IapItemDisplayAvatarNShoesHgssB0,
+	IapItemDisplayAvatarNShoesJogger0,
+	IapItemDisplayAvatarNShoesLapearloutfitA0,
+	IapItemDisplayAvatarNShoesLapearloutfitB0,
+	IapItemDisplayAvatarNShoesLoosepants1,
+	IapItemDisplayAvatarNShoesLoosepants2,
+	IapItemDisplayAvatarNShoesMelmetalshoes0,
+	IapItemDisplayAvatarNShoesMisty0,
+	IapItemDisplayAvatarNShoesRegiicejersies0,
+	IapItemDisplayAvatarNShoesRegirockjersies0,
+	IapItemDisplayAvatarNShoesRegisteeljersies0,
+	IapItemDisplayAvatarNShoesRuinmaniacA0,
+	IapItemDisplayAvatarNShoesSolgaleoitems0,
+	IapItemDisplayAvatarNShoesTeamblancheA0,
+	IapItemDisplayAvatarNShoesTeamblancheB0,
+	IapItemDisplayAvatarNShoesTeamrocketA0,
+	IapItemDisplayAvatarNShoesTeamrocketA1,
+	IapItemDisplayAvatarNShoesTeamrocketB0,
+	IapItemDisplayAvatarNShoesTeamrocketB1,
+	IapItemDisplayAvatarNShoesVeterantrainerxyA0,
+	IapItemDisplayAvatarNShoesVeterantrainerxyB0,
+	IapItemDisplayAvatarNShoesWinterboots3,
+	IapItemDisplayAvatarNTeamyellgruntsLong0,
 	IapItemDisplayBattlepassticket1,
 	IapItemDisplayBundleAdventurebrazil1001,
 	IapItemDisplayBundleAdventurebrazil2001,
@@ -277,7 +606,6 @@ import type {
 	IapItemDisplayGeneral2Ticket1Giftable,
 	IapItemDisplayGeneral2Ticket2,
 	IapItemDisplayGeneral2Ticket2Giftable,
-	IapItemDisplayGeneral2Ticket3,
 	IapItemDisplayGeneral2Ticket4,
 	IapItemDisplayGeneral2Ticket4Giftable,
 	IapItemDisplayGeneral2Ticket6,
@@ -1133,6 +1461,335 @@ export interface IapItemDisplayLookup {
 	APRIL2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayApril22026DeluxeEventPassTrackUnlockPlusPoints;
 	APRIL3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayApril32026DeluxeEventPassTrackUnlock;
 	APRIL3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayApril32026DeluxeEventPassTrackUnlockPlusPoints;
+	"avatar.n_backpack_alolaitemspoppliobp_0": IapItemDisplayAvatarNBackpackAlolaitemspoppliobp0;
+	"avatar.n_backpack_alolaitemsrowletbp_0": IapItemDisplayAvatarNBackpackAlolaitemsrowletbp0;
+	"avatar.n_backpack_backpacker_0": IapItemDisplayAvatarNBackpackBackpacker0;
+	"avatar.n_backpack_combeebackpack_0": IapItemDisplayAvatarNBackpackCombeebackpack0;
+	"avatar.n_backpack_eggbackpack_0": IapItemDisplayAvatarNBackpackEggbackpack0;
+	"avatar.n_backpack_eggbackpack_1": IapItemDisplayAvatarNBackpackEggbackpack1;
+	"avatar.n_backpack_eggbackpack_2": IapItemDisplayAvatarNBackpackEggbackpack2;
+	"avatar.n_backpack_frlg_a_0": IapItemDisplayAvatarNBackpackFrlgA0;
+	"avatar.n_backpack_frlg_b_0": IapItemDisplayAvatarNBackpackFrlgB0;
+	"avatar.n_backpack_hgss_a_0": IapItemDisplayAvatarNBackpackHgssA0;
+	"avatar.n_backpack_lunarnewyr_0": IapItemDisplayAvatarNBackpackLunarnewyr0;
+	"avatar.n_backpack_pkmnhoodie004_0": IapItemDisplayAvatarNBackpackPkmnhoodie0040;
+	"avatar.n_backpack_tatsugiribackpack-stretchy_0": IapItemDisplayAvatarNBackpackTatsugiribackpackStretchy0;
+	"avatar.n_backpack_zubatbp_0": IapItemDisplayAvatarNBackpackZubatbp0;
+	"avatar.n_belt_acetrainerbw_0": IapItemDisplayAvatarNBeltAcetrainerbw0;
+	"avatar.n_belt_simple_0": IapItemDisplayAvatarNBeltSimple0;
+	"avatar.n_belt_simple_1": IapItemDisplayAvatarNBeltSimple1;
+	"avatar.n_belt_simple_2": IapItemDisplayAvatarNBeltSimple2;
+	"avatar.n_belt_teamrocket_0": IapItemDisplayAvatarNBeltTeamrocket0;
+	"avatar.n_belt_teamrocket_1": IapItemDisplayAvatarNBeltTeamrocket1;
+	"avatar.n_glasses_divingsuit_0": IapItemDisplayAvatarNGlassesDivingsuit0;
+	"avatar.n_glasses_mask_0": IapItemDisplayAvatarNGlassesMask0;
+	"avatar.n_glasses_mask_1": IapItemDisplayAvatarNGlassesMask1;
+	"avatar.n_glasses_newyear2022_0": IapItemDisplayAvatarNGlassesNewyear20220;
+	"avatar.n_glasses_newyearglasses2020_0": IapItemDisplayAvatarNGlassesNewyearglasses20200;
+	"avatar.n_glasses_newyearglasses2021_0": IapItemDisplayAvatarNGlassesNewyearglasses20210;
+	"avatar.n_gloves_battlegirl_0": IapItemDisplayAvatarNGlovesBattlegirl0;
+	"avatar.n_gloves_delibird_0": IapItemDisplayAvatarNGlovesDelibird0;
+	"avatar.n_gloves_swshuniformdragon_0": IapItemDisplayAvatarNGlovesSwshuniformdragon0;
+	"avatar.n_gloves_teamaqua_a_0": IapItemDisplayAvatarNGlovesTeamaquaA0;
+	"avatar.n_gloves_teamspark_a_0": IapItemDisplayAvatarNGlovesTeamsparkA0;
+	"avatar.n_hat_6thanniversary_a_0": IapItemDisplayAvatarNHat6thanniversaryA0;
+	"avatar.n_hat_6thanniversary_b_0": IapItemDisplayAvatarNHat6thanniversaryB0;
+	"avatar.n_hat_acetrainersm_a_0": IapItemDisplayAvatarNHatAcetrainersmA0;
+	"avatar.n_hat_acetrainersm_b_0": IapItemDisplayAvatarNHatAcetrainersmB0;
+	"avatar.n_hat_cetoddlehat_0": IapItemDisplayAvatarNHatCetoddlehat0;
+	"avatar.n_hat_cosmog_0": IapItemDisplayAvatarNHatCosmog0;
+	"avatar.n_hat_darumakahat_0": IapItemDisplayAvatarNHatDarumakahat0;
+	"avatar.n_hat_delibird_0": IapItemDisplayAvatarNHatDelibird0;
+	"avatar.n_hat_drifloon_0": IapItemDisplayAvatarNHatDrifloon0;
+	"avatar.n_hat_earringsburmysandy_0": IapItemDisplayAvatarNHatEarringsburmysandy0;
+	"avatar.n_hat_fedora_0": IapItemDisplayAvatarNHatFedora0;
+	"avatar.n_hat_fedora_1": IapItemDisplayAvatarNHatFedora1;
+	"avatar.n_hat_fisher_0": IapItemDisplayAvatarNHatFisher0;
+	"avatar.n_hat_frlg_a_0": IapItemDisplayAvatarNHatFrlgA0;
+	"avatar.n_hat_gimmighoulitems_0": IapItemDisplayAvatarNHatGimmighoulitems0;
+	"avatar.n_hat_greavardwig_0": IapItemDisplayAvatarNHatGreavardwig0;
+	"avatar.n_hat_greencoat_0": IapItemDisplayAvatarNHatGreencoat0;
+	"avatar.n_hat_growlithehelmet_0": IapItemDisplayAvatarNHatGrowlithehelmet0;
+	"avatar.n_hat_gtr2024eeveefanmask_0": IapItemDisplayAvatarNHatGtr2024eeveefanmask0;
+	"avatar.n_hat_gtr2024pikachufanmask_0": IapItemDisplayAvatarNHatGtr2024pikachufanmask0;
+	"avatar.n_hat_halloween2024_0": IapItemDisplayAvatarNHatHalloween20240;
+	"avatar.n_hat_hoopaearmuffs_0": IapItemDisplayAvatarNHatHoopaearmuffs0;
+	"avatar.n_hat_jogger_0": IapItemDisplayAvatarNHatJogger0;
+	"avatar.n_hat_litwickhat_0": IapItemDisplayAvatarNHatLitwickhat0;
+	"avatar.n_hat_mareaniehat_0": IapItemDisplayAvatarNHatMareaniehat0;
+	"avatar.n_hat_newyear2022_0": IapItemDisplayAvatarNHatNewyear20220;
+	"avatar.n_hat_newyearhat2021_0": IapItemDisplayAvatarNHatNewyearhat20210;
+	"avatar.n_hat_newyearhat2023_0": IapItemDisplayAvatarNHatNewyearhat20230;
+	"avatar.n_hat_noibat_0": IapItemDisplayAvatarNHatNoibat0;
+	"avatar.n_hat_obstagoonitems_0": IapItemDisplayAvatarNHatObstagoonitems0;
+	"avatar.n_hat_oricoriopink_0": IapItemDisplayAvatarNHatOricoriopink0;
+	"avatar.n_hat_oricoriopurple_0": IapItemDisplayAvatarNHatOricoriopurple0;
+	"avatar.n_hat_oricoriored_0": IapItemDisplayAvatarNHatOricoriored0;
+	"avatar.n_hat_oricorioyellow_0": IapItemDisplayAvatarNHatOricorioyellow0;
+	"avatar.n_hat_phantump_0": IapItemDisplayAvatarNHatPhantump0;
+	"avatar.n_hat_pikachubutler-yellow_0": IapItemDisplayAvatarNHatPikachubutlerYellow0;
+	"avatar.n_hat_pikachufan_0": IapItemDisplayAvatarNHatPikachufan0;
+	"avatar.n_hat_pkmncap_0": IapItemDisplayAvatarNHatPkmncap0;
+	"avatar.n_hat_pkmncap_1": IapItemDisplayAvatarNHatPkmncap1;
+	"avatar.n_hat_pkmncap_2": IapItemDisplayAvatarNHatPkmncap2;
+	"avatar.n_hat_poipole_0": IapItemDisplayAvatarNHatPoipole0;
+	"avatar.n_hat_regiicejersies_0": IapItemDisplayAvatarNHatRegiicejersies0;
+	"avatar.n_hat_regirockjersies_0": IapItemDisplayAvatarNHatRegirockjersies0;
+	"avatar.n_hat_ruinmaniac_a_0": IapItemDisplayAvatarNHatRuinmaniacA0;
+	"avatar.n_hat_ruinmaniac_b_0": IapItemDisplayAvatarNHatRuinmaniacB0;
+	"avatar.n_hat_stantlerheadband_0": IapItemDisplayAvatarNHatStantlerheadband0;
+	"avatar.n_hat_sylveonitems_b_0": IapItemDisplayAvatarNHatSylveonitemsB0;
+	"avatar.n_hat_tophat_0": IapItemDisplayAvatarNHatTophat0;
+	"avatar.n_hat_wcs2025_0": IapItemDisplayAvatarNHatWcs20250;
+	"avatar.n_hat_whimsicottearmuff_0": IapItemDisplayAvatarNHatWhimsicottearmuff0;
+	"avatar.n_hat_woobatearrings_0": IapItemDisplayAvatarNHatWoobatearrings0;
+	"avatar.n_hat_yamaskhat_0": IapItemDisplayAvatarNHatYamaskhat0;
+	"avatar.n_hat_zubathat_0": IapItemDisplayAvatarNHatZubathat0;
+	"avatar.n_pants_acetrainerbw_a_0": IapItemDisplayAvatarNPantsAcetrainerbwA0;
+	"avatar.n_pants_acetrainerbw_b_0": IapItemDisplayAvatarNPantsAcetrainerbwB0;
+	"avatar.n_pants_acetrainersm_0": IapItemDisplayAvatarNPantsAcetrainersm0;
+	"avatar.n_pants_backpacker_a_0": IapItemDisplayAvatarNPantsBackpackerA0;
+	"avatar.n_pants_battlegirl_0": IapItemDisplayAvatarNPantsBattlegirl0;
+	"avatar.n_pants_bounsweetitems_0": IapItemDisplayAvatarNPantsBounsweetitems0;
+	"avatar.n_pants_fisher_0": IapItemDisplayAvatarNPantsFisher0;
+	"avatar.n_pants_frlg_a_0": IapItemDisplayAvatarNPantsFrlgA0;
+	"avatar.n_pants_greencoat_0": IapItemDisplayAvatarNPantsGreencoat0;
+	"avatar.n_pants_gymleader_a_0": IapItemDisplayAvatarNPantsGymleaderA0;
+	"avatar.n_pants_gymleader_a_1": IapItemDisplayAvatarNPantsGymleaderA1;
+	"avatar.n_pants_gymleader_a_2": IapItemDisplayAvatarNPantsGymleaderA2;
+	"avatar.n_pants_gymleader_b_0": IapItemDisplayAvatarNPantsGymleaderB0;
+	"avatar.n_pants_gymleader_b_1": IapItemDisplayAvatarNPantsGymleaderB1;
+	"avatar.n_pants_gymleader_b_2": IapItemDisplayAvatarNPantsGymleaderB2;
+	"avatar.n_pants_hgss_b_0": IapItemDisplayAvatarNPantsHgssB0;
+	"avatar.n_pants_jogger_0": IapItemDisplayAvatarNPantsJogger0;
+	"avatar.n_pants_luvdiscpack_b_0": IapItemDisplayAvatarNPantsLuvdiscpackB0;
+	"avatar.n_pants_miniskirt_0": IapItemDisplayAvatarNPantsMiniskirt0;
+	"avatar.n_pants_miniskirt_1": IapItemDisplayAvatarNPantsMiniskirt1;
+	"avatar.n_pants_miniskirt_2": IapItemDisplayAvatarNPantsMiniskirt2;
+	"avatar.n_pants_miniskirt_3": IapItemDisplayAvatarNPantsMiniskirt3;
+	"avatar.n_pants_neon-solid_0": IapItemDisplayAvatarNPantsNeonSolid0;
+	"avatar.n_pants_neon-solid_1": IapItemDisplayAvatarNPantsNeonSolid1;
+	"avatar.n_pants_neon-solid_2": IapItemDisplayAvatarNPantsNeonSolid2;
+	"avatar.n_pants_neon-stripes_0": IapItemDisplayAvatarNPantsNeonStripes0;
+	"avatar.n_pants_neon-stripes_1": IapItemDisplayAvatarNPantsNeonStripes1;
+	"avatar.n_pants_pumpkabooitems_0": IapItemDisplayAvatarNPantsPumpkabooitems0;
+	"avatar.n_pants_regiicejersies_0": IapItemDisplayAvatarNPantsRegiicejersies0;
+	"avatar.n_pants_shorts_1": IapItemDisplayAvatarNPantsShorts1;
+	"avatar.n_pants_shorts_2": IapItemDisplayAvatarNPantsShorts2;
+	"avatar.n_pants_shorts_3": IapItemDisplayAvatarNPantsShorts3;
+	"avatar.n_pants_sweats_0": IapItemDisplayAvatarNPantsSweats0;
+	"avatar.n_pants_sweats_1": IapItemDisplayAvatarNPantsSweats1;
+	"avatar.n_pants_sweats_2": IapItemDisplayAvatarNPantsSweats2;
+	"avatar.n_pants_sweats_3": IapItemDisplayAvatarNPantsSweats3;
+	"avatar.n_pants_swshuniformdark_a_0": IapItemDisplayAvatarNPantsSwshuniformdarkA0;
+	"avatar.n_pants_swshuniformdark_b_0": IapItemDisplayAvatarNPantsSwshuniformdarkB0;
+	"avatar.n_pants_swshuniformdragon_a_0": IapItemDisplayAvatarNPantsSwshuniformdragonA0;
+	"avatar.n_pants_teamaqua_b_0": IapItemDisplayAvatarNPantsTeamaquaB0;
+	"avatar.n_pants_teamblanche_a_0": IapItemDisplayAvatarNPantsTeamblancheA0;
+	"avatar.n_pants_teamblanche_b_0": IapItemDisplayAvatarNPantsTeamblancheB0;
+	"avatar.n_pants_teammagma_b_0": IapItemDisplayAvatarNPantsTeammagmaB0;
+	"avatar.n_pants_teamrocket_b_0": IapItemDisplayAvatarNPantsTeamrocketB0;
+	"avatar.n_pants_turbine_0": IapItemDisplayAvatarNPantsTurbine0;
+	"avatar.n_pants_turbine_1": IapItemDisplayAvatarNPantsTurbine1;
+	"avatar.n_pants_turbine_2": IapItemDisplayAvatarNPantsTurbine2;
+	"avatar.n_pants_veterantrainerxy_a_0": IapItemDisplayAvatarNPantsVeterantrainerxyA0;
+	"avatar.n_pants_veterantrainerxy_b_0": IapItemDisplayAvatarNPantsVeterantrainerxyB0;
+	"avatar.n_pose_038": IapItemDisplayAvatarNPose038;
+	"avatar.n_pose_040": IapItemDisplayAvatarNPose040;
+	"avatar.n_pose_urshifusinglestrike": IapItemDisplayAvatarNPoseUrshifusinglestrike;
+	"avatar.n_shirt_6thanniversary_a_0": IapItemDisplayAvatarNShirt6thanniversaryA0;
+	"avatar.n_shirt_7thanniversary_0": IapItemDisplayAvatarNShirt7thanniversary0;
+	"avatar.n_shirt_acetrainerbw_0": IapItemDisplayAvatarNShirtAcetrainerbw0;
+	"avatar.n_shirt_acetrainersm_a_0": IapItemDisplayAvatarNShirtAcetrainersmA0;
+	"avatar.n_shirt_acetrainersm_b_0": IapItemDisplayAvatarNShirtAcetrainersmB0;
+	"avatar.n_shirt_ballguy_0": IapItemDisplayAvatarNShirtBallguy0;
+	"avatar.n_shirt_battlegirl_0": IapItemDisplayAvatarNShirtBattlegirl0;
+	"avatar.n_shirt_brock_0": IapItemDisplayAvatarNShirtBrock0;
+	"avatar.n_shirt_buttondown_0": IapItemDisplayAvatarNShirtButtondown0;
+	"avatar.n_shirt_chimcharonesie_0": IapItemDisplayAvatarNShirtChimcharonesie0;
+	"avatar.n_shirt_cofagrigusitems_0": IapItemDisplayAvatarNShirtCofagrigusitems0;
+	"avatar.n_shirt_cowichansweater_0": IapItemDisplayAvatarNShirtCowichansweater0;
+	"avatar.n_shirt_delibird_0": IapItemDisplayAvatarNShirtDelibird0;
+	"avatar.n_shirt_delibirdonesie_0": IapItemDisplayAvatarNShirtDelibirdonesie0;
+	"avatar.n_shirt_divingsuit_0": IapItemDisplayAvatarNShirtDivingsuit0;
+	"avatar.n_shirt_drifblim_0": IapItemDisplayAvatarNShirtDrifblim0;
+	"avatar.n_shirt_dudunsparceitem_0": IapItemDisplayAvatarNShirtDudunsparceitem0;
+	"avatar.n_shirt_fashionweek2022_0": IapItemDisplayAvatarNShirtFashionweek20220;
+	"avatar.n_shirt_fisher_0": IapItemDisplayAvatarNShirtFisher0;
+	"avatar.n_shirt_flabebepack_0": IapItemDisplayAvatarNShirtFlabebepack0;
+	"avatar.n_shirt_frlg_a_0": IapItemDisplayAvatarNShirtFrlgA0;
+	"avatar.n_shirt_fw2022_b_0": IapItemDisplayAvatarNShirtFw2022B0;
+	"avatar.n_shirt_galaxyoutfit_a_0": IapItemDisplayAvatarNShirtGalaxyoutfitA0;
+	"avatar.n_shirt_galaxyoutfit_b_0": IapItemDisplayAvatarNShirtGalaxyoutfitB0;
+	"avatar.n_shirt_giovanni_a_0": IapItemDisplayAvatarNShirtGiovanniA0;
+	"avatar.n_shirt_goteamrocketcliff_a_0": IapItemDisplayAvatarNShirtGoteamrocketcliffA0;
+	"avatar.n_shirt_goteamrocketsierra_a_0": IapItemDisplayAvatarNShirtGoteamrocketsierraA0;
+	"avatar.n_shirt_goteamrocketsierra_b_0": IapItemDisplayAvatarNShirtGoteamrocketsierraB0;
+	"avatar.n_shirt_greedentsweater_0": IapItemDisplayAvatarNShirtGreedentsweater0;
+	"avatar.n_shirt_greencoat_0": IapItemDisplayAvatarNShirtGreencoat0;
+	"avatar.n_shirt_gymleader_a_0": IapItemDisplayAvatarNShirtGymleaderA0;
+	"avatar.n_shirt_gymleader_a_1": IapItemDisplayAvatarNShirtGymleaderA1;
+	"avatar.n_shirt_gymleader_a_2": IapItemDisplayAvatarNShirtGymleaderA2;
+	"avatar.n_shirt_gymleader_b_0": IapItemDisplayAvatarNShirtGymleaderB0;
+	"avatar.n_shirt_gymleader_b_1": IapItemDisplayAvatarNShirtGymleaderB1;
+	"avatar.n_shirt_gymleader_b_2": IapItemDisplayAvatarNShirtGymleaderB2;
+	"avatar.n_shirt_halloween2024_0": IapItemDisplayAvatarNShirtHalloween20240;
+	"avatar.n_shirt_happi_0": IapItemDisplayAvatarNShirtHappi0;
+	"avatar.n_shirt_happi_1": IapItemDisplayAvatarNShirtHappi1;
+	"avatar.n_shirt_happi_2": IapItemDisplayAvatarNShirtHappi2;
+	"avatar.n_shirt_hgss_a_0": IapItemDisplayAvatarNShirtHgssA0;
+	"avatar.n_shirt_hgss_b_0": IapItemDisplayAvatarNShirtHgssB0;
+	"avatar.n_shirt_holiday2022santacostumes_0": IapItemDisplayAvatarNShirtHoliday2022santacostumes0;
+	"avatar.n_shirt_holiday2024-marshtompsweater_0": IapItemDisplayAvatarNShirtHoliday2024Marshtompsweater0;
+	"avatar.n_shirt_holiday2024-staryusweater_0": IapItemDisplayAvatarNShirtHoliday2024Staryusweater0;
+	"avatar.n_shirt_jogger_0": IapItemDisplayAvatarNShirtJogger0;
+	"avatar.n_shirt_ladiamondoutfit_a_0": IapItemDisplayAvatarNShirtLadiamondoutfitA0;
+	"avatar.n_shirt_ladiamondoutfit_b_0": IapItemDisplayAvatarNShirtLadiamondoutfitB0;
+	"avatar.n_shirt_lapearloutfit_a_0": IapItemDisplayAvatarNShirtLapearloutfitA0;
+	"avatar.n_shirt_lapearloutfit_b_0": IapItemDisplayAvatarNShirtLapearloutfitB0;
+	"avatar.n_shirt_latias-latios_0": IapItemDisplayAvatarNShirtLatiasLatios0;
+	"avatar.n_shirt_longsleeves-charizard_0": IapItemDisplayAvatarNShirtLongsleevesCharizard0;
+	"avatar.n_shirt_longsleeves-charizard_1": IapItemDisplayAvatarNShirtLongsleevesCharizard1;
+	"avatar.n_shirt_longsleeves-charizard_2": IapItemDisplayAvatarNShirtLongsleevesCharizard2;
+	"avatar.n_shirt_longsleeves-pikachu_0": IapItemDisplayAvatarNShirtLongsleevesPikachu0;
+	"avatar.n_shirt_longsleeves-pikachu_1": IapItemDisplayAvatarNShirtLongsleevesPikachu1;
+	"avatar.n_shirt_longsleeves-pikachu_2": IapItemDisplayAvatarNShirtLongsleevesPikachu2;
+	"avatar.n_shirt_luvdiscpack_b_0": IapItemDisplayAvatarNShirtLuvdiscpackB0;
+	"avatar.n_shirt_melmetaljacket_0": IapItemDisplayAvatarNShirtMelmetaljacket0;
+	"avatar.n_shirt_meltan_0": IapItemDisplayAvatarNShirtMeltan0;
+	"avatar.n_shirt_munnapack_a_0": IapItemDisplayAvatarNShirtMunnapackA0;
+	"avatar.n_shirt_ocshirt-045_a_0": IapItemDisplayAvatarNShirtOcshirt045A0;
+	"avatar.n_shirt_ocshirt-045_b_0": IapItemDisplayAvatarNShirtOcshirt045B0;
+	"avatar.n_shirt_ocshirt-108_a_0": IapItemDisplayAvatarNShirtOcshirt108A0;
+	"avatar.n_shirt_ocshirt-108_b_0": IapItemDisplayAvatarNShirtOcshirt108B0;
+	"avatar.n_shirt_ocshirt-129_a_0": IapItemDisplayAvatarNShirtOcshirt129A0;
+	"avatar.n_shirt_ocshirt-129_b_0": IapItemDisplayAvatarNShirtOcshirt129B0;
+	"avatar.n_shirt_ocshirt-143_b_0": IapItemDisplayAvatarNShirtOcshirt143B0;
+	"avatar.n_shirt_pajamas2022_0": IapItemDisplayAvatarNShirtPajamas20220;
+	"avatar.n_shirt_pajamas2022_1": IapItemDisplayAvatarNShirtPajamas20221;
+	"avatar.n_shirt_pikachufan_a_0": IapItemDisplayAvatarNShirtPikachufanA0;
+	"avatar.n_shirt_pikachufan_b_0": IapItemDisplayAvatarNShirtPikachufanB0;
+	"avatar.n_shirt_pkmnshirts-165_0": IapItemDisplayAvatarNShirtPkmnshirts1650;
+	"avatar.n_shirt_pkmnshirts-188_0": IapItemDisplayAvatarNShirtPkmnshirts1880;
+	"avatar.n_shirt_pkmnshirts-201_0": IapItemDisplayAvatarNShirtPkmnshirts2010;
+	"avatar.n_shirt_pkmnshirts-238_0": IapItemDisplayAvatarNShirtPkmnshirts2380;
+	"avatar.n_shirt_pkmnshirts2021_0": IapItemDisplayAvatarNShirtPkmnshirts20210;
+	"avatar.n_shirt_pkmnshirts2021_1": IapItemDisplayAvatarNShirtPkmnshirts20211;
+	"avatar.n_shirt_pkmnshirts2021_2": IapItemDisplayAvatarNShirtPkmnshirts20212;
+	"avatar.n_shirt_poloshirt_0": IapItemDisplayAvatarNShirtPoloshirt0;
+	"avatar.n_shirt_poloshirt_1": IapItemDisplayAvatarNShirtPoloshirt1;
+	"avatar.n_shirt_poloshirt_2": IapItemDisplayAvatarNShirtPoloshirt2;
+	"avatar.n_shirt_regiicejersies_0": IapItemDisplayAvatarNShirtRegiicejersies0;
+	"avatar.n_shirt_regirockjersies_0": IapItemDisplayAvatarNShirtRegirockjersies0;
+	"avatar.n_shirt_ruinmaniac_a_0": IapItemDisplayAvatarNShirtRuinmaniacA0;
+	"avatar.n_shirt_spiritomb_0": IapItemDisplayAvatarNShirtSpiritomb0;
+	"avatar.n_shirt_spring2021gulpin_a_0": IapItemDisplayAvatarNShirtSpring2021gulpinA0;
+	"avatar.n_shirt_sukajanblastoise_0": IapItemDisplayAvatarNShirtSukajanblastoise0;
+	"avatar.n_shirt_sukajancharizard_0": IapItemDisplayAvatarNShirtSukajancharizard0;
+	"avatar.n_shirt_sukajanhouou_0": IapItemDisplayAvatarNShirtSukajanhouou0;
+	"avatar.n_shirt_sukajanlugia_0": IapItemDisplayAvatarNShirtSukajanlugia0;
+	"avatar.n_shirt_sukajanvenusaur_0": IapItemDisplayAvatarNShirtSukajanvenusaur0;
+	"avatar.n_shirt_sweater-30_0": IapItemDisplayAvatarNShirtSweater300;
+	"avatar.n_shirt_sweater-30_1": IapItemDisplayAvatarNShirtSweater301;
+	"avatar.n_shirt_sweater-30_2": IapItemDisplayAvatarNShirtSweater302;
+	"avatar.n_shirt_sweater-instinct_0": IapItemDisplayAvatarNShirtSweaterInstinct0;
+	"avatar.n_shirt_sweater-mystic_0": IapItemDisplayAvatarNShirtSweaterMystic0;
+	"avatar.n_shirt_sweater-valor_0": IapItemDisplayAvatarNShirtSweaterValor0;
+	"avatar.n_shirt_sweatshirt-sporty_0": IapItemDisplayAvatarNShirtSweatshirtSporty0;
+	"avatar.n_shirt_sweatshirt-sporty_1": IapItemDisplayAvatarNShirtSweatshirtSporty1;
+	"avatar.n_shirt_sweatshirt-sporty_2": IapItemDisplayAvatarNShirtSweatshirtSporty2;
+	"avatar.n_shirt_sweatshirt-sporty_3": IapItemDisplayAvatarNShirtSweatshirtSporty3;
+	"avatar.n_shirt_sweatshirt-streak_0": IapItemDisplayAvatarNShirtSweatshirtStreak0;
+	"avatar.n_shirt_sweatshirt-streak_1": IapItemDisplayAvatarNShirtSweatshirtStreak1;
+	"avatar.n_shirt_sweatshirt-streak_2": IapItemDisplayAvatarNShirtSweatshirtStreak2;
+	"avatar.n_shirt_sweatshirt-streak_3": IapItemDisplayAvatarNShirtSweatshirtStreak3;
+	"avatar.n_shirt_swshuniformdark_b_0": IapItemDisplayAvatarNShirtSwshuniformdarkB0;
+	"avatar.n_shirt_tanktop_0": IapItemDisplayAvatarNShirtTanktop0;
+	"avatar.n_shirt_tanktop_1": IapItemDisplayAvatarNShirtTanktop1;
+	"avatar.n_shirt_tanktop_2": IapItemDisplayAvatarNShirtTanktop2;
+	"avatar.n_shirt_tanktop-charizard_0": IapItemDisplayAvatarNShirtTanktopCharizard0;
+	"avatar.n_shirt_tanktop-charizard_1": IapItemDisplayAvatarNShirtTanktopCharizard1;
+	"avatar.n_shirt_tanktop-charizard_2": IapItemDisplayAvatarNShirtTanktopCharizard2;
+	"avatar.n_shirt_tanktop-pikachu_0": IapItemDisplayAvatarNShirtTanktopPikachu0;
+	"avatar.n_shirt_tanktop-pikachu_1": IapItemDisplayAvatarNShirtTanktopPikachu1;
+	"avatar.n_shirt_tanktop-pikachu_2": IapItemDisplayAvatarNShirtTanktopPikachu2;
+	"avatar.n_shirt_teamblanche_a_0": IapItemDisplayAvatarNShirtTeamblancheA0;
+	"avatar.n_shirt_teamblanche_b_0": IapItemDisplayAvatarNShirtTeamblancheB0;
+	"avatar.n_shirt_teamcandela_a_0": IapItemDisplayAvatarNShirtTeamcandelaA0;
+	"avatar.n_shirt_teamcandela_b_0": IapItemDisplayAvatarNShirtTeamcandelaB0;
+	"avatar.n_shirt_teamrocket_a_0": IapItemDisplayAvatarNShirtTeamrocketA0;
+	"avatar.n_shirt_teamrocket_a_1": IapItemDisplayAvatarNShirtTeamrocketA1;
+	"avatar.n_shirt_teamrocket_b_0": IapItemDisplayAvatarNShirtTeamrocketB0;
+	"avatar.n_shirt_teamrocket_b_1": IapItemDisplayAvatarNShirtTeamrocketB1;
+	"avatar.n_shirt_teamspark_a_0": IapItemDisplayAvatarNShirtTeamsparkA0;
+	"avatar.n_shirt_tracksuitskyogre_0": IapItemDisplayAvatarNShirtTracksuitskyogre0;
+	"avatar.n_shirt_tshirt-cycling_0": IapItemDisplayAvatarNShirtTshirtCycling0;
+	"avatar.n_shirt_tshirt-cycling_1": IapItemDisplayAvatarNShirtTshirtCycling1;
+	"avatar.n_shirt_tshirt-cycling_2": IapItemDisplayAvatarNShirtTshirtCycling2;
+	"avatar.n_shirt_tshirt-cycling_3": IapItemDisplayAvatarNShirtTshirtCycling3;
+	"avatar.n_shirt_tshirt-geometric_0": IapItemDisplayAvatarNShirtTshirtGeometric0;
+	"avatar.n_shirt_tshirt-geometric_1": IapItemDisplayAvatarNShirtTshirtGeometric1;
+	"avatar.n_shirt_tshirt-geometric_2": IapItemDisplayAvatarNShirtTshirtGeometric2;
+	"avatar.n_shirt_tshirt-instinct_0": IapItemDisplayAvatarNShirtTshirtInstinct0;
+	"avatar.n_shirt_tshirt-mystic_0": IapItemDisplayAvatarNShirtTshirtMystic0;
+	"avatar.n_shirt_tshirt-pikachu_0": IapItemDisplayAvatarNShirtTshirtPikachu0;
+	"avatar.n_shirt_tshirt-pikachu_1": IapItemDisplayAvatarNShirtTshirtPikachu1;
+	"avatar.n_shirt_tshirt-pikachu_2": IapItemDisplayAvatarNShirtTshirtPikachu2;
+	"avatar.n_shirt_tshirt-pikachu_3": IapItemDisplayAvatarNShirtTshirtPikachu3;
+	"avatar.n_shirt_tshirt-pikachu_4": IapItemDisplayAvatarNShirtTshirtPikachu4;
+	"avatar.n_shirt_tshirt-pikachu_5": IapItemDisplayAvatarNShirtTshirtPikachu5;
+	"avatar.n_shirt_tshirt-pikachu_6": IapItemDisplayAvatarNShirtTshirtPikachu6;
+	"avatar.n_shirt_tshirt-valor_0": IapItemDisplayAvatarNShirtTshirtValor0;
+	"avatar.n_shirt_turtleneck-30_0": IapItemDisplayAvatarNShirtTurtleneck300;
+	"avatar.n_shirt_turtleneck-30_1": IapItemDisplayAvatarNShirtTurtleneck301;
+	"avatar.n_shirt_turtleneck-30_2": IapItemDisplayAvatarNShirtTurtleneck302;
+	"avatar.n_shirt_turtleneck-30_3": IapItemDisplayAvatarNShirtTurtleneck303;
+	"avatar.n_shirt_turtwigonesie_0": IapItemDisplayAvatarNShirtTurtwigonesie0;
+	"avatar.n_shirt_uglysweatersudowoodo_0": IapItemDisplayAvatarNShirtUglysweatersudowoodo0;
+	"avatar.n_shirt_ultrareconsquad_0": IapItemDisplayAvatarNShirtUltrareconsquad0;
+	"avatar.n_shirt_veterantrainerxy_a_0": IapItemDisplayAvatarNShirtVeterantrainerxyA0;
+	"avatar.n_shirt_veterantrainerxy_b_0": IapItemDisplayAvatarNShirtVeterantrainerxyB0;
+	"avatar.n_shirt_wcs2023sukajan_0": IapItemDisplayAvatarNShirtWcs2023sukajan0;
+	"avatar.n_shirt_whitecoat_0": IapItemDisplayAvatarNShirtWhitecoat0;
+	"avatar.n_shirt_wintersweater2023_0": IapItemDisplayAvatarNShirtWintersweater20230;
+	"avatar.n_shoes_acetrainerbw_a_0": IapItemDisplayAvatarNShoesAcetrainerbwA0;
+	"avatar.n_shoes_acetrainerbw_b_0": IapItemDisplayAvatarNShoesAcetrainerbwB0;
+	"avatar.n_shoes_acetrainersm_a_0": IapItemDisplayAvatarNShoesAcetrainersmA0;
+	"avatar.n_shoes_acetrainersm_b_0": IapItemDisplayAvatarNShoesAcetrainersmB0;
+	"avatar.n_shoes_backpacker_a_0": IapItemDisplayAvatarNShoesBackpackerA0;
+	"avatar.n_shoes_backpacker_b_0": IapItemDisplayAvatarNShoesBackpackerB0;
+	"avatar.n_shoes_battlegirl_0": IapItemDisplayAvatarNShoesBattlegirl0;
+	"avatar.n_shoes_brock_0": IapItemDisplayAvatarNShoesBrock0;
+	"avatar.n_shoes_delibird_0": IapItemDisplayAvatarNShoesDelibird0;
+	"avatar.n_shoes_frlg_a_0": IapItemDisplayAvatarNShoesFrlgA0;
+	"avatar.n_shoes_giovanni_a_0": IapItemDisplayAvatarNShoesGiovanniA0;
+	"avatar.n_shoes_gymleader_0": IapItemDisplayAvatarNShoesGymleader0;
+	"avatar.n_shoes_gymleader_1": IapItemDisplayAvatarNShoesGymleader1;
+	"avatar.n_shoes_gymleader_2": IapItemDisplayAvatarNShoesGymleader2;
+	"avatar.n_shoes_hgss_a_0": IapItemDisplayAvatarNShoesHgssA0;
+	"avatar.n_shoes_hgss_b_0": IapItemDisplayAvatarNShoesHgssB0;
+	"avatar.n_shoes_jogger_0": IapItemDisplayAvatarNShoesJogger0;
+	"avatar.n_shoes_lapearloutfit_a_0": IapItemDisplayAvatarNShoesLapearloutfitA0;
+	"avatar.n_shoes_lapearloutfit_b_0": IapItemDisplayAvatarNShoesLapearloutfitB0;
+	"avatar.n_shoes_loosepants_1": IapItemDisplayAvatarNShoesLoosepants1;
+	"avatar.n_shoes_loosepants_2": IapItemDisplayAvatarNShoesLoosepants2;
+	"avatar.n_shoes_melmetalshoes_0": IapItemDisplayAvatarNShoesMelmetalshoes0;
+	"avatar.n_shoes_misty_0": IapItemDisplayAvatarNShoesMisty0;
+	"avatar.n_shoes_regiicejersies_0": IapItemDisplayAvatarNShoesRegiicejersies0;
+	"avatar.n_shoes_regirockjersies_0": IapItemDisplayAvatarNShoesRegirockjersies0;
+	"avatar.n_shoes_registeeljersies_0": IapItemDisplayAvatarNShoesRegisteeljersies0;
+	"avatar.n_shoes_ruinmaniac_a_0": IapItemDisplayAvatarNShoesRuinmaniacA0;
+	"avatar.n_shoes_solgaleoitems_0": IapItemDisplayAvatarNShoesSolgaleoitems0;
+	"avatar.n_shoes_teamblanche_a_0": IapItemDisplayAvatarNShoesTeamblancheA0;
+	"avatar.n_shoes_teamblanche_b_0": IapItemDisplayAvatarNShoesTeamblancheB0;
+	"avatar.n_shoes_teamrocket_a_0": IapItemDisplayAvatarNShoesTeamrocketA0;
+	"avatar.n_shoes_teamrocket_a_1": IapItemDisplayAvatarNShoesTeamrocketA1;
+	"avatar.n_shoes_teamrocket_b_0": IapItemDisplayAvatarNShoesTeamrocketB0;
+	"avatar.n_shoes_teamrocket_b_1": IapItemDisplayAvatarNShoesTeamrocketB1;
+	"avatar.n_shoes_veterantrainerxy_a_0": IapItemDisplayAvatarNShoesVeterantrainerxyA0;
+	"avatar.n_shoes_veterantrainerxy_b_0": IapItemDisplayAvatarNShoesVeterantrainerxyB0;
+	"avatar.n_shoes_winterboots_3": IapItemDisplayAvatarNShoesWinterboots3;
+	"avatar.n_teamyellgrunts-long_0": IapItemDisplayAvatarNTeamyellgruntsLong0;
 	"battlepassticket.1": IapItemDisplayBattlepassticket1;
 	BUNDLE_EC_200_RPP_1: IapItemDisplayBundleEc200Rpp1;
 	BUNDLE_EC_600_RPP_3: IapItemDisplayBundleEc600Rpp3;
@@ -1403,7 +2060,6 @@ export interface IapItemDisplayLookup {
 	"general2.ticket.1.giftable": IapItemDisplayGeneral2Ticket1Giftable;
 	"general2.ticket.2": IapItemDisplayGeneral2Ticket2;
 	"general2.ticket.2.giftable": IapItemDisplayGeneral2Ticket2Giftable;
-	"general2.ticket.3": IapItemDisplayGeneral2Ticket3;
 	"general2.ticket.4": IapItemDisplayGeneral2Ticket4;
 	"general2.ticket.4.giftable": IapItemDisplayGeneral2Ticket4Giftable;
 	"general2.ticket.6": IapItemDisplayGeneral2Ticket6;

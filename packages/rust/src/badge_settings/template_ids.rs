@@ -1453,6 +1453,10 @@ pub enum BadgeSettingsTemplateId {
     BadgeRaidBattleWon,
     #[serde(rename = "BADGE_RAIDS_WITH_FRIENDS")]
     BadgeRaidsWithFriends,
+    #[serde(rename = "BADGE_REDUCED_ENTRY_FLOW_CONTROL")]
+    BadgeReducedEntryFlowControl,
+    #[serde(rename = "BADGE_REDUCED_ENTRY_FLOW_ROLLOUT")]
+    BadgeReducedEntryFlowRollout,
     #[serde(rename = "BADGE_ROCKET_GIOVANNI_DEFEATED")]
     BadgeRocketGiovanniDefeated,
     #[serde(rename = "BADGE_ROCKET_GRUNTS_DEFEATED")]

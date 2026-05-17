@@ -366,7 +366,7 @@ export type LocationCardSettingsSpecialbackground2026Mewtwo001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoFest2026_mewtwo";
-			vfxAddress: "bgfx_goFest_2026_mewtwo_002";
+			vfxAddress: "bgfx_goFest_2026_mewtwo_001";
 		}
 	>
 >;
@@ -376,7 +376,7 @@ export type LocationCardSettingsSpecialbackground2026Mewtwo002 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoFest2026_mewtwo";
-			vfxAddress: "bgfx_goFest_2026_mewtwo_001";
+			vfxAddress: "bgfx_goFest_2026_mewtwo_002";
 		}
 	>
 >;

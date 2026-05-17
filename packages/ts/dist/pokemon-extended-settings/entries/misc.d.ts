@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 861 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 845 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -1411,38 +1411,6 @@ export type PokemonExtendedSettingsV0124PokemonJynx = S<
 		}
 	>
 >;
-export type PokemonExtendedSettingsV0125PokemonElectabuzz = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0125_POKEMON_ELECTABUZZ",
-		{
-			sizeSettings: {
-				mLowerBound: 0.825;
-				mUpperBound: 1.375;
-				xlUpperBound: 1.65;
-				xsLowerBound: 0.55;
-				xxlUpperBound: 1.925;
-				xxsLowerBound: 0.539;
-			};
-			uniqueId: "ELECTABUZZ";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0126PokemonMagmar = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0126_POKEMON_MAGMAR",
-		{
-			sizeSettings: {
-				mLowerBound: 0.975;
-				mUpperBound: 1.625;
-				xlUpperBound: 1.95;
-				xsLowerBound: 0.65;
-				xxlUpperBound: 2.275;
-				xxsLowerBound: 0.637;
-			};
-			uniqueId: "MAGMAR";
-		}
-	>
->;
 export type PokemonExtendedSettingsV0128PokemonTauros = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0128_POKEMON_TAUROS",
@@ -1456,22 +1424,6 @@ export type PokemonExtendedSettingsV0128PokemonTauros = S<
 				xxsLowerBound: 0.686;
 			};
 			uniqueId: "TAUROS";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0129PokemonMagikarp = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0129_POKEMON_MAGIKARP",
-		{
-			sizeSettings: {
-				mLowerBound: 0.675;
-				mUpperBound: 1.125;
-				xlUpperBound: 1.35;
-				xsLowerBound: 0.45;
-				xxlUpperBound: 1.8;
-				xxsLowerBound: 0.441;
-			};
-			uniqueId: "MAGIKARP";
 		}
 	>
 >;
@@ -1744,38 +1696,6 @@ export type PokemonExtendedSettingsV0162PokemonFurret = S<
 				xxsLowerBound: 0.882;
 			};
 			uniqueId: "FURRET";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0163PokemonHoothoot = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0163_POKEMON_HOOTHOOT",
-		{
-			sizeSettings: {
-				mLowerBound: 0.5325;
-				mUpperBound: 0.8875;
-				xlUpperBound: 1.065;
-				xsLowerBound: 0.355;
-				xxlUpperBound: 1.2425;
-				xxsLowerBound: 0.3479;
-			};
-			uniqueId: "HOOTHOOT";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0164PokemonNoctowl = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0164_POKEMON_NOCTOWL",
-		{
-			sizeSettings: {
-				mLowerBound: 1.2;
-				mUpperBound: 2;
-				xlUpperBound: 2.4;
-				xsLowerBound: 0.8;
-				xxlUpperBound: 2.8;
-				xxsLowerBound: 0.784;
-			};
-			uniqueId: "NOCTOWL";
 		}
 	>
 >;
@@ -2788,38 +2708,6 @@ export type PokemonExtendedSettingsV0235PokemonSmeargle = S<
 		}
 	>
 >;
-export type PokemonExtendedSettingsV0236PokemonTyrogue = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0236_POKEMON_TYROGUE",
-		{
-			sizeSettings: {
-				mLowerBound: 0.5325;
-				mUpperBound: 0.8875;
-				xlUpperBound: 1.065;
-				xsLowerBound: 0.355;
-				xxlUpperBound: 1.2425;
-				xxsLowerBound: 0.3479;
-			};
-			uniqueId: "TYROGUE";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0237PokemonHitmontop = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0237_POKEMON_HITMONTOP",
-		{
-			sizeSettings: {
-				mLowerBound: 1.05;
-				mUpperBound: 1.75;
-				xlUpperBound: 2.1;
-				xsLowerBound: 0.7;
-				xxlUpperBound: 2.45;
-				xxsLowerBound: 0.686;
-			};
-			uniqueId: "HITMONTOP";
-		}
-	>
->;
 export type PokemonExtendedSettingsV0238PokemonSmoochum = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0238_POKEMON_SMOOCHUM",
@@ -2833,38 +2721,6 @@ export type PokemonExtendedSettingsV0238PokemonSmoochum = S<
 				xxsLowerBound: 0.2009;
 			};
 			uniqueId: "SMOOCHUM";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0239PokemonElekid = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0239_POKEMON_ELEKID",
-		{
-			sizeSettings: {
-				mLowerBound: 0.4575;
-				mUpperBound: 0.7625;
-				xlUpperBound: 0.915;
-				xsLowerBound: 0.305;
-				xxlUpperBound: 1.0675;
-				xxsLowerBound: 0.2989;
-			};
-			uniqueId: "ELEKID";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0240PokemonMagby = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0240_POKEMON_MAGBY",
-		{
-			sizeSettings: {
-				mLowerBound: 0.5325;
-				mUpperBound: 0.8875;
-				xlUpperBound: 1.065;
-				xsLowerBound: 0.355;
-				xxlUpperBound: 1.2425;
-				xxsLowerBound: 0.3479;
-			};
-			uniqueId: "MAGBY";
 		}
 	>
 >;
@@ -4178,38 +4034,6 @@ export type PokemonExtendedSettingsV0348PokemonArmaldo = S<
 				xxsLowerBound: 0.735;
 			};
 			uniqueId: "ARMALDO";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0349PokemonFeebas = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0349_POKEMON_FEEBAS",
-		{
-			sizeSettings: {
-				mLowerBound: 0.4575;
-				mUpperBound: 0.7625;
-				xlUpperBound: 0.915;
-				xsLowerBound: 0.305;
-				xxlUpperBound: 1.22;
-				xxsLowerBound: 0.2989;
-			};
-			uniqueId: "FEEBAS";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0350PokemonMilotic = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0350_POKEMON_MILOTIC",
-		{
-			sizeSettings: {
-				mLowerBound: 4.65;
-				mUpperBound: 7.75;
-				xlUpperBound: 9.3;
-				xsLowerBound: 3.1;
-				xxlUpperBound: 12.4;
-				xxsLowerBound: 3.038;
-			};
-			uniqueId: "MILOTIC";
 		}
 	>
 >;
@@ -5666,38 +5490,6 @@ export type PokemonExtendedSettingsV0465PokemonTangrowth = S<
 				xxsLowerBound: 0.98;
 			};
 			uniqueId: "TANGROWTH";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0466PokemonElectivire = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0466_POKEMON_ELECTIVIRE",
-		{
-			sizeSettings: {
-				mLowerBound: 1.35;
-				mUpperBound: 2.25;
-				xlUpperBound: 2.7;
-				xsLowerBound: 0.9;
-				xxlUpperBound: 2.79;
-				xxsLowerBound: 0.882;
-			};
-			uniqueId: "ELECTIVIRE";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0467PokemonMagmortar = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0467_POKEMON_MAGMORTAR",
-		{
-			sizeSettings: {
-				mLowerBound: 1.2;
-				mUpperBound: 2;
-				xlUpperBound: 2.4;
-				xsLowerBound: 0.8;
-				xxlUpperBound: 2.8;
-				xxsLowerBound: 0.784;
-			};
-			uniqueId: "MAGMORTAR";
 		}
 	>
 >;
@@ -8034,54 +7826,6 @@ export type PokemonExtendedSettingsV0632PokemonDurant = S<
 				xxsLowerBound: 0.147;
 			};
 			uniqueId: "DURANT";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0633PokemonDeino = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0633_POKEMON_DEINO",
-		{
-			sizeSettings: {
-				mLowerBound: 0.6;
-				mUpperBound: 1;
-				xlUpperBound: 1.2;
-				xsLowerBound: 0.4;
-				xxlUpperBound: 1.4;
-				xxsLowerBound: 0.392;
-			};
-			uniqueId: "DEINO";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0634PokemonZweilous = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0634_POKEMON_ZWEILOUS",
-		{
-			sizeSettings: {
-				mLowerBound: 1.05;
-				mUpperBound: 1.75;
-				xlUpperBound: 2.1;
-				xsLowerBound: 0.7;
-				xxlUpperBound: 2.45;
-				xxsLowerBound: 0.686;
-			};
-			uniqueId: "ZWEILOUS";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0635PokemonHydreigon = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0635_POKEMON_HYDREIGON",
-		{
-			sizeSettings: {
-				mLowerBound: 1.35;
-				mUpperBound: 2.25;
-				xlUpperBound: 2.7;
-				xsLowerBound: 0.9;
-				xxlUpperBound: 3.15;
-				xxsLowerBound: 0.882;
-			};
-			uniqueId: "HYDREIGON";
 		}
 	>
 >;
@@ -13884,10 +13628,7 @@ export type PokemonExtendedSettingsMiscMasterfileEntry =
 	| PokemonExtendedSettingsV0122PokemonMrMime
 	| PokemonExtendedSettingsV0123PokemonScyther
 	| PokemonExtendedSettingsV0124PokemonJynx
-	| PokemonExtendedSettingsV0125PokemonElectabuzz
-	| PokemonExtendedSettingsV0126PokemonMagmar
 	| PokemonExtendedSettingsV0128PokemonTauros
-	| PokemonExtendedSettingsV0129PokemonMagikarp
 	| PokemonExtendedSettingsV0132PokemonDitto
 	| PokemonExtendedSettingsV0137PokemonPorygon
 	| PokemonExtendedSettingsV0147PokemonDratini
@@ -13905,8 +13646,6 @@ export type PokemonExtendedSettingsMiscMasterfileEntry =
 	| PokemonExtendedSettingsV0160PokemonFeraligatr
 	| PokemonExtendedSettingsV0161PokemonSentret
 	| PokemonExtendedSettingsV0162PokemonFurret
-	| PokemonExtendedSettingsV0163PokemonHoothoot
-	| PokemonExtendedSettingsV0164PokemonNoctowl
 	| PokemonExtendedSettingsV0165PokemonLedyba
 	| PokemonExtendedSettingsV0166PokemonLedian
 	| PokemonExtendedSettingsV0167PokemonSpinarak
@@ -13970,11 +13709,7 @@ export type PokemonExtendedSettingsMiscMasterfileEntry =
 	| PokemonExtendedSettingsV0233PokemonPorygon2
 	| PokemonExtendedSettingsV0234PokemonStantler
 	| PokemonExtendedSettingsV0235PokemonSmeargle
-	| PokemonExtendedSettingsV0236PokemonTyrogue
-	| PokemonExtendedSettingsV0237PokemonHitmontop
 	| PokemonExtendedSettingsV0238PokemonSmoochum
-	| PokemonExtendedSettingsV0239PokemonElekid
-	| PokemonExtendedSettingsV0240PokemonMagby
 	| PokemonExtendedSettingsV0241PokemonMiltank
 	| PokemonExtendedSettingsV0246PokemonLarvitar
 	| PokemonExtendedSettingsV0247PokemonPupitar
@@ -14057,8 +13792,6 @@ export type PokemonExtendedSettingsMiscMasterfileEntry =
 	| PokemonExtendedSettingsV0346PokemonCradily
 	| PokemonExtendedSettingsV0347PokemonAnorith
 	| PokemonExtendedSettingsV0348PokemonArmaldo
-	| PokemonExtendedSettingsV0349PokemonFeebas
-	| PokemonExtendedSettingsV0350PokemonMilotic
 	| PokemonExtendedSettingsV0351PokemonCastform
 	| PokemonExtendedSettingsV0352PokemonKecleon
 	| PokemonExtendedSettingsV0353PokemonShuppet
@@ -14150,8 +13883,6 @@ export type PokemonExtendedSettingsMiscMasterfileEntry =
 	| PokemonExtendedSettingsV0463PokemonLickilicky
 	| PokemonExtendedSettingsV0464PokemonRhyperior
 	| PokemonExtendedSettingsV0465PokemonTangrowth
-	| PokemonExtendedSettingsV0466PokemonElectivire
-	| PokemonExtendedSettingsV0467PokemonMagmortar
 	| PokemonExtendedSettingsV0468PokemonTogekiss
 	| PokemonExtendedSettingsV0469PokemonYanmega
 	| PokemonExtendedSettingsV0472PokemonGliscor
@@ -14298,9 +14029,6 @@ export type PokemonExtendedSettingsMiscMasterfileEntry =
 	| PokemonExtendedSettingsV0630PokemonMandibuzz
 	| PokemonExtendedSettingsV0631PokemonHeatmor
 	| PokemonExtendedSettingsV0632PokemonDurant
-	| PokemonExtendedSettingsV0633PokemonDeino
-	| PokemonExtendedSettingsV0634PokemonZweilous
-	| PokemonExtendedSettingsV0635PokemonHydreigon
 	| PokemonExtendedSettingsV0636PokemonLarvesta
 	| PokemonExtendedSettingsV0637PokemonVolcarona
 	| PokemonExtendedSettingsV0638PokemonCobalion

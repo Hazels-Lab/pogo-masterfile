@@ -6,6 +6,7 @@ import type {
 	AddressablePokemonSettings,
 	AddressBookImportSettings,
 	AdvancedSettings,
+	AmuseBoucheWelcomeBackRewards,
 	ArPhotoFeatureFlags,
 	ArTelemetrySettings,
 	AssetRefreshProto,
@@ -150,6 +151,7 @@ export interface SingletonsLookup {
 	ADDRESS_BOOK_IMPORT_SETTINGS: AddressBookImportSettings;
 	ADDRESSABLE_POKEMON_SETTINGS: AddressablePokemonSettings;
 	ADVANCED_SETTINGS: AdvancedSettings;
+	AMUSE_BOUCHE_WELCOME_BACK_REWARDS: AmuseBoucheWelcomeBackRewards;
 	AR_PHOTO_FEATURE_FLAGS: ArPhotoFeatureFlags;
 	AR_TELEMETRY_SETTINGS: ArTelemetrySettings;
 	ASSET_REFRESH_PROTO: AssetRefreshProto;

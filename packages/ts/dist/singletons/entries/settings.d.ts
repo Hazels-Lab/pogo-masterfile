@@ -2456,6 +2456,7 @@ export interface CombatCompetitiveSeasonSettings {
 				"1764709200000",
 				"1772571600000",
 				"1780430400000",
+				"1788897600000",
 				"4070980800000",
 			];
 		};

@@ -17,6 +17,8 @@ pub enum SingletonsTemplateId {
     AddressablePokemonSettings,
     #[serde(rename = "ADVANCED_SETTINGS")]
     AdvancedSettings,
+    #[serde(rename = "AMUSE_BOUCHE_WELCOME_BACK_REWARDS")]
+    AmuseBoucheWelcomeBackRewards,
     #[serde(rename = "AR_PHOTO_FEATURE_FLAGS")]
     ArPhotoFeatureFlags,
     #[serde(rename = "AR_TELEMETRY_SETTINGS")]

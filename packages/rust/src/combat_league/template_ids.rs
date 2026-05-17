@@ -113,6 +113,8 @@ pub enum CombatLeagueTemplateId {
     CombatLeagueVsSeekerGreatCatchS22,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_SEASON11")]
     CombatLeagueVsSeekerGreatCatchSeason11,
+    #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_NAIC")]
+    CombatLeagueVsSeekerGreatChampionshipNaic,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_SERIES")]
     CombatLeagueVsSeekerGreatChampionshipSeries,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_ELECTRIC")]
@@ -151,6 +153,8 @@ pub enum CombatLeagueTemplateId {
     CombatLeagueVsSeekerGreatLittleRemix,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_LOVE")]
     CombatLeagueVsSeekerGreatLove,
+    #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_MEGAS")]
+    CombatLeagueVsSeekerGreatMegas,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_PVP_NEXT_PREVIEW")]
     CombatLeagueVsSeekerGreatPvpNextPreview,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_REMIX")]
@@ -205,6 +209,8 @@ pub enum CombatLeagueTemplateId {
     CombatLeagueVsSeekerUltra,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_ULTRA_HOLIDAY")]
     CombatLeagueVsSeekerUltraHoliday,
+    #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_ULTRA_MEGAS")]
+    CombatLeagueVsSeekerUltraMegas,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_ULTRA_NO_LEGENDARY")]
     CombatLeagueVsSeekerUltraNoLegendary,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_ULTRA_PREMIER")]

@@ -54,6 +54,7 @@ import type {
 	CombatLeagueVsSeekerGreatCatchS20,
 	CombatLeagueVsSeekerGreatCatchS22,
 	CombatLeagueVsSeekerGreatCatchSeason11,
+	CombatLeagueVsSeekerGreatChampionshipNaic,
 	CombatLeagueVsSeekerGreatChampionshipSeries,
 	CombatLeagueVsSeekerGreatElectric,
 	CombatLeagueVsSeekerGreatElement,
@@ -73,6 +74,7 @@ import type {
 	CombatLeagueVsSeekerGreatLittle,
 	CombatLeagueVsSeekerGreatLittleRemix,
 	CombatLeagueVsSeekerGreatLove,
+	CombatLeagueVsSeekerGreatMegas,
 	CombatLeagueVsSeekerGreatPvpNextPreview,
 	CombatLeagueVsSeekerGreatRemix,
 	CombatLeagueVsSeekerGreatRetro,
@@ -100,6 +102,7 @@ import type {
 	CombatLeagueVsSeekerSunshineGreat,
 	CombatLeagueVsSeekerUltra,
 	CombatLeagueVsSeekerUltraHoliday,
+	CombatLeagueVsSeekerUltraMegas,
 	CombatLeagueVsSeekerUltraNoLegendary,
 	CombatLeagueVsSeekerUltraPremier,
 	CombatLeagueVsSeekerUltraPremierClassic,
@@ -163,6 +166,7 @@ export interface CombatLeagueLookup {
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S20: CombatLeagueVsSeekerGreatCatchS20;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S22: CombatLeagueVsSeekerGreatCatchS22;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_SEASON11: CombatLeagueVsSeekerGreatCatchSeason11;
+	COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_NAIC: CombatLeagueVsSeekerGreatChampionshipNaic;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_SERIES: CombatLeagueVsSeekerGreatChampionshipSeries;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_ELECTRIC: CombatLeagueVsSeekerGreatElectric;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_ELEMENT: CombatLeagueVsSeekerGreatElement;
@@ -182,6 +186,7 @@ export interface CombatLeagueLookup {
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_LITTLE: CombatLeagueVsSeekerGreatLittle;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_LITTLE_REMIX: CombatLeagueVsSeekerGreatLittleRemix;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_LOVE: CombatLeagueVsSeekerGreatLove;
+	COMBAT_LEAGUE_VS_SEEKER_GREAT_MEGAS: CombatLeagueVsSeekerGreatMegas;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_PVP_NEXT_PREVIEW: CombatLeagueVsSeekerGreatPvpNextPreview;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_REMIX: CombatLeagueVsSeekerGreatRemix;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_RETRO: CombatLeagueVsSeekerGreatRetro;
@@ -209,6 +214,7 @@ export interface CombatLeagueLookup {
 	COMBAT_LEAGUE_VS_SEEKER_SUNSHINE_GREAT: CombatLeagueVsSeekerSunshineGreat;
 	COMBAT_LEAGUE_VS_SEEKER_ULTRA: CombatLeagueVsSeekerUltra;
 	COMBAT_LEAGUE_VS_SEEKER_ULTRA_HOLIDAY: CombatLeagueVsSeekerUltraHoliday;
+	COMBAT_LEAGUE_VS_SEEKER_ULTRA_MEGAS: CombatLeagueVsSeekerUltraMegas;
 	COMBAT_LEAGUE_VS_SEEKER_ULTRA_NO_LEGENDARY: CombatLeagueVsSeekerUltraNoLegendary;
 	COMBAT_LEAGUE_VS_SEEKER_ULTRA_PREMIER: CombatLeagueVsSeekerUltraPremier;
 	COMBAT_LEAGUE_VS_SEEKER_ULTRA_PREMIER_CLASSIC: CombatLeagueVsSeekerUltraPremierClassic;
