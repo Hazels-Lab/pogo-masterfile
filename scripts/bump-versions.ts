@@ -6,7 +6,7 @@
 // line is rewritten to the new go version so go-api resolves correctly when
 // published.
 //
-// Usage: bun run scripts/bump-versions.ts <before.json> <after.json>
+// Usage: bun run scripts/bump-versions.ts <before.json> <after.json> <before-template-ids.txt> <after-template-ids.txt>
 // Env:   UPSTREAM_SHA — recorded in CHANGELOG entries.
 
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
