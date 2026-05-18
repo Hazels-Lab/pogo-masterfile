@@ -11,6 +11,26 @@
 
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 
+// Diffs two newline-separated template-ID lists and returns a markdown block
+// suitable for prepending to a CHANGELOG entry body. Returns "" when the sets
+// are identical (no section emitted). When non-empty, leads with "\n\n" so the
+// caller can concatenate it directly onto the commit-sha sentence.
+export function formatTemplateIdDiff(beforeText: string, afterText: string): string {
+	const before = new Set(beforeText.split("\n").filter(Boolean));
+	const after = new Set(afterText.split("\n").filter(Boolean));
+	const added = [...after].filter((x) => !before.has(x)).sort();
+	const removed = [...before].filter((x) => !after.has(x)).sort();
+
+	const sections: string[] = [];
+	if (added.length > 0) {
+		sections.push(`### Added template IDs (${added.length})\n\n${added.map((x) => `- ${x}`).join("\n")}`);
+	}
+	if (removed.length > 0) {
+		sections.push(`### Removed template IDs (${removed.length})\n\n${removed.map((x) => `- ${x}`).join("\n")}`);
+	}
+	return sections.length === 0 ? "" : `\n\n${sections.join("\n\n")}`;
+}
+
 export interface PkgInfo {
 	path: string;
 	manifest: { path: string; type: "package.json" | "Cargo.toml" } | null;
