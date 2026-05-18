@@ -214,9 +214,9 @@ export function applyBumps(initialChanged: Set<string>, changelogBody: string): 
 }
 
 if (import.meta.main) {
-	const [beforePath, afterPath] = process.argv.slice(2);
-	if (!beforePath || !afterPath) {
-		console.error("Usage: bump-versions.ts <before.json> <after.json>");
+	const [beforePath, afterPath, beforeIdsPath, afterIdsPath] = process.argv.slice(2);
+	if (!beforePath || !afterPath || !beforeIdsPath || !afterIdsPath) {
+		console.error("Usage: bump-versions.ts <before.json> <after.json> <before-template-ids.txt> <after-template-ids.txt>");
 		process.exit(1);
 	}
 
@@ -224,12 +224,16 @@ if (import.meta.main) {
 	const before = JSON.parse(readFileSync(beforePath, "utf8")) as Record<string, string>;
 	const after = JSON.parse(readFileSync(afterPath, "utf8")) as Record<string, string>;
 
+	const beforeIdsText = readFileSync(beforeIdsPath, "utf8");
+	const afterIdsText = readFileSync(afterIdsPath, "utf8");
+
 	const initial = new Set<string>();
 	for (const p of PACKAGES) {
 		if (before[p.path] !== after[p.path]) initial.add(p.path);
 	}
 
-	const bumps = applyBumps(initial, `Automated regeneration from upstream masterfile commit \`${upstreamSha}\`.`);
+	const body = `Automated regeneration from upstream masterfile commit \`${upstreamSha}\`.${formatTemplateIdDiff(beforeIdsText, afterIdsText)}`;
+	const bumps = applyBumps(initial, body);
 	if (Object.keys(bumps).length === 0) {
 		console.log("No effective package changes after canonical hashing.");
 	}
