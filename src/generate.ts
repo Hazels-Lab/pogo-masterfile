@@ -1,3 +1,4 @@
+import { writeFileSync } from "node:fs";
 import { GAME_MASTER_URL } from "./constants.ts";
 import { generateGo } from "./go/generate.ts";
 import { generateGoApi } from "./go-api/generate.ts";
@@ -102,6 +103,14 @@ async function main(): Promise<void> {
 	console.log(`Fetching ${GAME_MASTER_URL}...`);
 	const { entries, rawJson } = await fetchMasterfile();
 	console.log(`Fetched ${entries.length} entries.`);
+
+	// Snapshot template IDs to a tracked artifact so the autoupdate workflow can
+	// diff this run against the prior commit and surface added/removed IDs in
+	// each package's CHANGELOG entry. Sort + one-per-line + trailing newline so
+	// git diffs read cleanly.
+	const sortedIds = entries.map((e) => e.templateId).sort();
+	writeFileSync("template-ids.txt", `${sortedIds.join("\n")}\n`);
+	console.log(`Wrote template-ids.txt with ${sortedIds.length} ids.`);
 
 	// Pre-scan the raw JSON text for fields that appear with decimal/exponent
 	// syntax. JS's JSON.parse collapses "1.0" and "1" into the same Number, so
