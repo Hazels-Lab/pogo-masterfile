@@ -6,10 +6,30 @@
 // line is rewritten to the new go version so go-api resolves correctly when
 // published.
 //
-// Usage: bun run scripts/bump-versions.ts <before.json> <after.json>
+// Usage: bun run scripts/bump-versions.ts <before.json> <after.json> <before-template-ids.txt> <after-template-ids.txt>
 // Env:   UPSTREAM_SHA — recorded in CHANGELOG entries.
 
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
+
+// Diffs two newline-separated template-ID lists and returns a markdown block
+// suitable for prepending to a CHANGELOG entry body. Returns "" when the sets
+// are identical (no section emitted). When non-empty, leads with "\n\n" so the
+// caller can concatenate it directly onto the commit-sha sentence.
+export function formatTemplateIdDiff(beforeText: string, afterText: string): string {
+	const before = new Set(beforeText.split("\n").filter(Boolean));
+	const after = new Set(afterText.split("\n").filter(Boolean));
+	const added = [...after].filter((x) => !before.has(x)).sort();
+	const removed = [...before].filter((x) => !after.has(x)).sort();
+
+	const sections: string[] = [];
+	if (added.length > 0) {
+		sections.push(`### Added template IDs (${added.length})\n\n${added.map((x) => `- ${x}`).join("\n")}`);
+	}
+	if (removed.length > 0) {
+		sections.push(`### Removed template IDs (${removed.length})\n\n${removed.map((x) => `- ${x}`).join("\n")}`);
+	}
+	return sections.length === 0 ? "" : `\n\n${sections.join("\n\n")}`;
+}
 
 export interface PkgInfo {
 	path: string;
@@ -194,9 +214,9 @@ export function applyBumps(initialChanged: Set<string>, changelogBody: string): 
 }
 
 if (import.meta.main) {
-	const [beforePath, afterPath] = process.argv.slice(2);
-	if (!beforePath || !afterPath) {
-		console.error("Usage: bump-versions.ts <before.json> <after.json>");
+	const [beforePath, afterPath, beforeIdsPath, afterIdsPath] = process.argv.slice(2);
+	if (!beforePath || !afterPath || !beforeIdsPath || !afterIdsPath) {
+		console.error("Usage: bump-versions.ts <before.json> <after.json> <before-template-ids.txt> <after-template-ids.txt>");
 		process.exit(1);
 	}
 
@@ -204,12 +224,16 @@ if (import.meta.main) {
 	const before = JSON.parse(readFileSync(beforePath, "utf8")) as Record<string, string>;
 	const after = JSON.parse(readFileSync(afterPath, "utf8")) as Record<string, string>;
 
+	const beforeIdsText = readFileSync(beforeIdsPath, "utf8");
+	const afterIdsText = readFileSync(afterIdsPath, "utf8");
+
 	const initial = new Set<string>();
 	for (const p of PACKAGES) {
 		if (before[p.path] !== after[p.path]) initial.add(p.path);
 	}
 
-	const bumps = applyBumps(initial, `Automated regeneration from upstream masterfile commit \`${upstreamSha}\`.`);
+	const body = `Automated regeneration from upstream masterfile commit \`${upstreamSha}\`.${formatTemplateIdDiff(beforeIdsText, afterIdsText)}`;
+	const bumps = applyBumps(initial, body);
 	if (Object.keys(bumps).length === 0) {
 		console.log("No effective package changes after canonical hashing.");
 	}

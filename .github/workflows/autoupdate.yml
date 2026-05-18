@@ -58,6 +58,12 @@ jobs:
         if: steps.upstream.outputs.changed == 'true'
         run: bun run scripts/detect-changes.ts > /tmp/before.json
 
+      - name: Snapshot template IDs (before regen)
+        if: steps.upstream.outputs.changed == 'true'
+        # Falls back to an empty file on the (one-time) case where template-ids.txt
+        # hasn't been committed yet. After the backfill lands, the cp always succeeds.
+        run: cp template-ids.txt /tmp/template-ids-before.txt 2>/dev/null || : > /tmp/template-ids-before.txt
+
       - name: Regenerate
         if: steps.upstream.outputs.changed == 'true'
         run: bun run generate
@@ -66,11 +72,15 @@ jobs:
         if: steps.upstream.outputs.changed == 'true'
         run: bun run scripts/detect-changes.ts > /tmp/after.json
 
+      - name: Snapshot template IDs (after regen)
+        if: steps.upstream.outputs.changed == 'true'
+        run: cp template-ids.txt /tmp/template-ids-after.txt
+
       - name: Bump versions for changed packages
         if: steps.upstream.outputs.changed == 'true'
         env:
           UPSTREAM_SHA: ${{ steps.upstream.outputs.new_sha }}
-        run: bun run scripts/bump-versions.ts /tmp/before.json /tmp/after.json
+        run: bun run scripts/bump-versions.ts /tmp/before.json /tmp/after.json /tmp/template-ids-before.txt /tmp/template-ids-after.txt
 
       - name: Update upstream marker
         if: steps.upstream.outputs.changed == 'true'
