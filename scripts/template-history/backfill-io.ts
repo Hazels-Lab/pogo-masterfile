@@ -11,14 +11,10 @@ export function crawlArchive(prevDir: string): Map<string, SeenEntry> {
 	let skipped = 0;
 	for (const d of readdirSync(prevDir, { withFileTypes: true })) {
 		if (!d.isDirectory()) continue;
-		let date: string;
-		try {
-			date = parseSnapshotDate(d.name);
-		} catch {
-			console.warn(`skip ${d.name}: cannot parse date`);
-			skipped++;
-			continue;
-		}
+		// Unparseable folder name is a HARD error by design: every snapshot must
+		// be counted, and a name that doesn't match means a new timestamp format
+		// to handle (see PokeMiners README), not a snapshot to silently drop.
+		const date = parseSnapshotDate(d.name);
 		const file = join(prevDir, d.name, "game_master.json");
 		if (!existsSync(file)) {
 			console.warn(`skip ${d.name}: no game_master.json`);
