@@ -1,5 +1,5 @@
-import type { Entry } from "../../src/group";
 import type { DeprecatedSet } from "../../src/deprecated/types";
+import type { Entry } from "../../src/group";
 
 /** One template id observed in the archive: its discriminator + most-recent date. */
 export interface SeenEntry {

@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
-import { accumulateSeen, buildReport, classifyLegacy, discriminatorOf, isShadowPurified, mergeBackfill, parseSnapshotDate } from "./backfill-lib";
 import type { DeprecatedSet } from "../../src/deprecated/types";
+import { accumulateSeen, buildReport, classifyLegacy, discriminatorOf, isShadowPurified, mergeBackfill, parseSnapshotDate } from "./backfill-lib";
 
 describe("parseSnapshotDate", () => {
 	test("extracts ISO date from snapshot folder name", () => {
@@ -70,10 +70,13 @@ describe("isShadowPurified", () => {
 
 describe("mergeBackfill", () => {
 	test("adds a brand-new discriminator with max lastSeen of its ids", () => {
-		const out = mergeBackfill(new Map(), new Map([
-			["EX_RAID_SETTINGS", { discriminator: "exRaidSettings", lastSeen: "2023-08-30" }],
-			["EX_RAID_OTHER", { discriminator: "exRaidSettings", lastSeen: "2022-01-01" }],
-		]));
+		const out = mergeBackfill(
+			new Map(),
+			new Map([
+				["EX_RAID_SETTINGS", { discriminator: "exRaidSettings", lastSeen: "2023-08-30" }],
+				["EX_RAID_OTHER", { discriminator: "exRaidSettings", lastSeen: "2022-01-01" }],
+			]),
+		);
 		expect(out.get("exRaidSettings")?.templateIds).toEqual(new Set(["EX_RAID_SETTINGS", "EX_RAID_OTHER"]));
 		expect(out.get("exRaidSettings")?.entryCount).toBe(2);
 		expect(out.get("exRaidSettings")?.lastSeen).toBe("2023-08-30");
@@ -83,18 +86,14 @@ describe("mergeBackfill", () => {
 		const current: DeprecatedSet = new Map([
 			["badgeSettings", { discriminator: "badgeSettings", templateIds: new Set(["BADGE_NEW"]), lastSeen: "2025-02-03", entryCount: 1 }],
 		]);
-		const out = mergeBackfill(current, new Map([
-			["BADGE_EVENT_0008", { discriminator: "badgeSettings", lastSeen: "2022-09-22" }],
-		]));
+		const out = mergeBackfill(current, new Map([["BADGE_EVENT_0008", { discriminator: "badgeSettings", lastSeen: "2022-09-22" }]]));
 		expect(out.get("badgeSettings")?.templateIds).toEqual(new Set(["BADGE_NEW", "BADGE_EVENT_0008"]));
 		expect(out.get("badgeSettings")?.entryCount).toBe(2);
 		expect(out.get("badgeSettings")?.lastSeen).toBe("2025-02-03"); // unchanged: backfill date is older
 	});
 
 	test("does not mutate the input set", () => {
-		const current: DeprecatedSet = new Map([
-			["x", { discriminator: "x", templateIds: new Set(["A"]), lastSeen: "2025-01-01", entryCount: 1 }],
-		]);
+		const current: DeprecatedSet = new Map([["x", { discriminator: "x", templateIds: new Set(["A"]), lastSeen: "2025-01-01", entryCount: 1 }]]);
 		mergeBackfill(current, new Map([["B", { discriminator: "x", lastSeen: "2021-01-01" }]]));
 		expect(current.get("x")?.templateIds).toEqual(new Set(["A"])); // original untouched
 	});
@@ -107,9 +106,7 @@ describe("buildReport", () => {
 			["V0002_POKEMON_IVYSAUR_SHADOW", { discriminator: "pokemonSettings", lastSeen: "2021-11-03" }],
 			["EX_RAID_SETTINGS", { discriminator: "exRaidSettings", lastSeen: "2023-08-30" }],
 		]);
-		const current = new Map([
-			["pokemonSettings", { discriminator: "pokemonSettings", templateIds: new Set(["LIVE"]), lastSeen: "2025-01-01", entryCount: 1 }],
-		]);
+		const current = new Map([["pokemonSettings", { discriminator: "pokemonSettings", templateIds: new Set(["LIVE"]), lastSeen: "2025-01-01", entryCount: 1 }]]);
 		const report = buildReport(legacy, current);
 
 		expect(report.totalLegacy).toBe(3);
