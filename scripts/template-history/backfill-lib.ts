@@ -88,3 +88,61 @@ export function mergeBackfill(current: DeprecatedSet, legacy: Map<string, SeenEn
 	}
 	return next;
 }
+
+export interface DiscriminatorReport {
+	discriminator: string;
+	count: number;
+	firstSeen: string;
+	lastSeen: string;
+	isNew: boolean;
+	sampleIds: string[];
+}
+
+export interface BackfillReport {
+	totalLegacy: number;
+	discriminatorCount: number;
+	newDiscriminators: number;
+	shadowPurifiedCount: number;
+	byDiscriminator: DiscriminatorReport[];
+}
+
+/** Build the dry-run report. Pure: groups legacy ids by discriminator. */
+export function buildReport(legacy: Map<string, SeenEntry>, current: DeprecatedSet): BackfillReport {
+	const byDisc = new Map<string, { ids: string[]; min: string; max: string }>();
+	let shadowPurifiedCount = 0;
+	for (const [id, info] of legacy) {
+		if (isShadowPurified(id)) shadowPurifiedCount++;
+		let g = byDisc.get(info.discriminator);
+		if (!g) {
+			g = { ids: [], min: info.lastSeen, max: info.lastSeen };
+			byDisc.set(info.discriminator, g);
+		}
+		g.ids.push(id);
+		if (info.lastSeen < g.min) g.min = info.lastSeen;
+		if (info.lastSeen > g.max) g.max = info.lastSeen;
+	}
+
+	const reports: DiscriminatorReport[] = [];
+	let newDiscriminators = 0;
+	for (const [disc, g] of byDisc) {
+		const isNew = !current.has(disc);
+		if (isNew) newDiscriminators++;
+		reports.push({
+			discriminator: disc,
+			count: g.ids.length,
+			firstSeen: g.min,
+			lastSeen: g.max,
+			isNew,
+			sampleIds: [...g.ids].sort().slice(0, 5),
+		});
+	}
+	reports.sort((a, b) => b.count - a.count || a.discriminator.localeCompare(b.discriminator));
+
+	return {
+		totalLegacy: legacy.size,
+		discriminatorCount: reports.length,
+		newDiscriminators,
+		shadowPurifiedCount,
+		byDiscriminator: reports,
+	};
+}

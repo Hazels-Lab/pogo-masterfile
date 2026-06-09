@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { accumulateSeen, classifyLegacy, discriminatorOf, isShadowPurified, mergeBackfill, parseSnapshotDate } from "./backfill-lib";
+import { accumulateSeen, buildReport, classifyLegacy, discriminatorOf, isShadowPurified, mergeBackfill, parseSnapshotDate } from "./backfill-lib";
 import type { DeprecatedSet } from "../../src/deprecated/types";
 
 describe("parseSnapshotDate", () => {
@@ -97,5 +97,32 @@ describe("mergeBackfill", () => {
 		]);
 		mergeBackfill(current, new Map([["B", { discriminator: "x", lastSeen: "2021-01-01" }]]));
 		expect(current.get("x")?.templateIds).toEqual(new Set(["A"])); // original untouched
+	});
+});
+
+describe("buildReport", () => {
+	test("groups by discriminator, flags new vs existing, counts shadow/purified, sorts by count", () => {
+		const legacy = new Map([
+			["V0001_POKEMON_BULBASAUR_SHADOW", { discriminator: "pokemonSettings", lastSeen: "2021-06-03" }],
+			["V0002_POKEMON_IVYSAUR_SHADOW", { discriminator: "pokemonSettings", lastSeen: "2021-11-03" }],
+			["EX_RAID_SETTINGS", { discriminator: "exRaidSettings", lastSeen: "2023-08-30" }],
+		]);
+		const current = new Map([
+			["pokemonSettings", { discriminator: "pokemonSettings", templateIds: new Set(["LIVE"]), lastSeen: "2025-01-01", entryCount: 1 }],
+		]);
+		const report = buildReport(legacy, current);
+
+		expect(report.totalLegacy).toBe(3);
+		expect(report.discriminatorCount).toBe(2);
+		expect(report.newDiscriminators).toBe(1); // exRaidSettings new; pokemonSettings exists
+		expect(report.shadowPurifiedCount).toBe(2);
+		// sorted by count desc → pokemonSettings (2) first
+		expect(report.byDiscriminator[0]?.discriminator).toBe("pokemonSettings");
+		expect(report.byDiscriminator[0]?.count).toBe(2);
+		expect(report.byDiscriminator[0]?.isNew).toBe(false);
+		expect(report.byDiscriminator[0]?.firstSeen).toBe("2021-06-03");
+		expect(report.byDiscriminator[0]?.lastSeen).toBe("2021-11-03");
+		expect(report.byDiscriminator[1]?.discriminator).toBe("exRaidSettings");
+		expect(report.byDiscriminator[1]?.isNew).toBe(true);
 	});
 });
