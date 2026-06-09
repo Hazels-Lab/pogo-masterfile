@@ -15,8 +15,20 @@ type DeprecatedAdventureSyncV2GmtIds = "adventure_sync_v2_gmt";
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedAndroidBackButtonRefactorSettingsIds = "ANDROID_BACK_BUTTON_REFACTOR";
 
-/** @deprecated lastSeen 2024-11-11 — 3 entries */
-type DeprecatedBadgeSettingsIds = "BADGE_GOWA_2024_IRL_SATURDAY_ESSENTIAL" | "BADGE_GOWA_2024_IRL_SUNDAY_ESSENTIAL" | "BADGE_GOWA_2024_IRL_TEST_ESSENTIAL";
+/** @deprecated lastSeen 2024-11-11 — 12 entries */
+type DeprecatedBadgeSettingsIds =
+	| "BADGE_EVENT_0008"
+	| "BADGE_GOWA_2024_IRL_SATURDAY_ESSENTIAL"
+	| "BADGE_GOWA_2024_IRL_SUNDAY_ESSENTIAL"
+	| "BADGE_GOWA_2024_IRL_TEST_ESSENTIAL"
+	| "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_00_EARLYACCESS"
+	| "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_00_GENERAL"
+	| "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_01_EARLYACCESS"
+	| "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_01_GENERAL"
+	| "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_02_EARLYACCESS"
+	| "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_02_GENERAL"
+	| "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_03_EARLYACCESS"
+	| "BADGE_SAFARIZONE_2022_SINGAPORE_DAY_03_GENERAL";
 
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedBootSettingsIds = "BOOT_SETTINGS";
@@ -12387,11 +12399,14 @@ type DeprecatedEvolutionChainDisplaySettingsIds = "EVOLUTION_V0840_POKEMON_APPLI
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedEvolvePreviewSettingsIds = "EVOLVE_PREVIEW_SETTINGS";
 
+/** @deprecated lastSeen 2024-01-10 — 1 entries */
+type DeprecatedExRaidSettingsIds = "EX_RAID_SETTINGS";
+
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedExtendedPrimalSettingsIds = "EXTENDED_PRIMAL_SETTINGS";
 
-/** @deprecated lastSeen 2026-05-15 — 2 entries */
-type DeprecatedFeatureGateIds = "EVENT_LIST_FEATURE_GATE" | "UPDATE_TICKETS_STRING_FEATURE_GATE";
+/** @deprecated lastSeen 2026-05-15 — 3 entries */
+type DeprecatedFeatureGateIds = "EVENT_LIST_FEATURE_GATE" | "UPDATE_TICKETS_STRING_FEATURE_GATE" | "WEB_STORE_LINK_OUT_FEATURE_GATE";
 
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedFormsRefactorSettingsIds = "FORMS_REFACTOR_SETTINGS";
@@ -12405,7 +12420,7 @@ type DeprecatedGymLevelIds = "GYM_LEVEL_SETTINGS";
 /** @deprecated lastSeen 2024-10-14 — 1 entries */
 type DeprecatedIapCategoryDisplayIds = "IAP_CATEGORY_GIFTABLE";
 
-/** @deprecated lastSeen 2026-05-01 — 41 entries */
+/** @deprecated lastSeen 2026-05-01 — 42 entries */
 type DeprecatedIapItemDisplayIds =
 	| "general1.ticket.5.giftable"
 	| "general2.ticket.3"
@@ -12415,6 +12430,7 @@ type DeprecatedIapItemDisplayIds =
 	| "pgorelease.april1_2026_deluxe_event_pass_track_unlock_plus_points"
 	| "pgorelease.april2_2026_deluxe_event_pass_track_unlock"
 	| "pgorelease.april2_2026_deluxe_event_pass_track_unlock_plus_points"
+	| "pgorelease.bundle.general1.tiny.2"
 	| "pgorelease.general1.ticket.5"
 	| "pgorelease.general1.ticket.5.giftable"
 	| "pgorelease.general2.ticket.3"
@@ -12449,11 +12465,17 @@ type DeprecatedIapItemDisplayIds =
 	| "pgorelease.winterholidays2025_deluxe_event_pass_track_unlock"
 	| "pgorelease.winterholidays2025_deluxe_event_pass_track_unlock_plus_points";
 
+/** @deprecated lastSeen 2025-07-19 — 2 entries */
+type DeprecatedIapStoreBannerIds = "WEB_STORE_LIVE_EVENTS_BANNER" | "WEB_STORE_POKECOINS_BANNER";
+
 /** @deprecated lastSeen 2025-07-20 — 1 entries */
 type DeprecatedIbfcLightweightSettingsIds = "ibfc_lightweight_settings";
 
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedIncubatorFlowSettingsIds = "INCUBATOR_FLOW_SETTINGS";
+
+/** @deprecated lastSeen 2023-12-25 — 1 entries */
+type DeprecatedItemSettingsIds = "ITEM_LEGENDARY_RAID_TICKET";
 
 /** @deprecated lastSeen 2024-10-07 — 1 entries */
 type DeprecatedLanguageSettingsIds = "LATAM_ENABLED";
@@ -12470,6 +12492,44 @@ type DeprecatedMusicSettingsIds = "MUSIC_SETTINGS";
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedNewsFeedClientSettingsIds = "NEWS_FEED_CLIENT_SETTINGS";
 
+/** @deprecated lastSeen 2024-01-10 — 1 entries */
+type DeprecatedObPushGatewaySettingsIds = "PUSH_GATEWAY_SETTINGS";
+
+/** @deprecated lastSeen 2024-05-14 — 32 entries */
+type DeprecatedObSettingsOverrideRulesIds =
+	| "SETTINGS_RULES_DENY_IPAD8_1"
+	| "SETTINGS_RULES_DENY_IPAD8_2"
+	| "SETTINGS_RULES_DENY_IPAD8_3"
+	| "SETTINGS_RULES_DENY_IPAD8_4"
+	| "SETTINGS_RULES_DENY_IPAD8_5"
+	| "SETTINGS_RULES_DENY_IPAD8_6"
+	| "SETTINGS_RULES_DENY_IPAD8_7"
+	| "SETTINGS_RULES_DENY_IPAD8_8"
+	| "SETTINGS_RULES_DENY_IPAD8_9"
+	| "SETTINGS_RULES_DENY_IPAD8_10"
+	| "SETTINGS_RULES_DENY_IPAD8_11"
+	| "SETTINGS_RULES_DENY_IPAD8_12"
+	| "SETTINGS_RULES_DENY_IPAD13_4"
+	| "SETTINGS_RULES_DENY_IPAD13_5"
+	| "SETTINGS_RULES_DENY_IPAD13_6"
+	| "SETTINGS_RULES_DENY_IPAD13_7"
+	| "SETTINGS_RULES_DENY_IPAD13_8"
+	| "SETTINGS_RULES_DENY_IPAD13_9"
+	| "SETTINGS_RULES_DENY_IPAD13_10"
+	| "SETTINGS_RULES_DENY_IPAD13_11"
+	| "SETTINGS_RULES_DENY_IPAD14_3"
+	| "SETTINGS_RULES_DENY_IPAD14_4"
+	| "SETTINGS_RULES_DENY_IPAD14_5"
+	| "SETTINGS_RULES_DENY_IPAD14_6"
+	| "SETTINGS_RULES_DENY_IPHONE13_3"
+	| "SETTINGS_RULES_DENY_IPHONE13_4"
+	| "SETTINGS_RULES_DENY_IPHONE14_2"
+	| "SETTINGS_RULES_DENY_IPHONE14_3"
+	| "SETTINGS_RULES_DENY_IPHONE15_2"
+	| "SETTINGS_RULES_DENY_IPHONE15_3"
+	| "SETTINGS_RULES_DENY_IPHONE16_1"
+	| "SETTINGS_RULES_DENY_IPHONE16_2";
+
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedOnboardingV2SettingsIds = "ONBOARDING_V2_SETTINGS";
 
@@ -12478,6 +12538,14 @@ type DeprecatedPlatypusRolloutSettingsIds = "PLATYPUS_ROLLOUT_SETTINGS";
 
 /** @deprecated lastSeen 2025-02-03 — 1 entries */
 type DeprecatedPokemonCutsceneRefactorSettingsIds = "POKEMON_CUTSCENE_REFACTOR_SETTINGS";
+
+/** @deprecated lastSeen 2024-08-29 — 5 entries */
+type DeprecatedPokemonExtendedSettingsIds =
+	| "EXTENDED_POKEMON_PIKACHU_GOTOUR_2024_A"
+	| "EXTENDED_POKEMON_PIKACHU_GOTOUR_2024_A_02"
+	| "EXTENDED_POKEMON_PIKACHU_GOTOUR_2024_B"
+	| "EXTENDED_POKEMON_PIKACHU_GOTOUR_2024_B_02"
+	| "EXTENDED_POKEMON_PIKACHU_HORIZONS";
 
 /** @deprecated lastSeen 2025-09-11 — 1 entries */
 type DeprecatedPokemonInfoPanelSettingsIds = "POKEMON_INFO_PANEL_SETTINGS";
@@ -12522,6 +12590,9 @@ type DeprecatedVistaGeneralSettingsIds = "vista_general_settings";
 /** @deprecated lastSeen 2026-04-28 — 2 entries */
 type DeprecatedVnextBattleConfigIds = "CLIENT_VNEXT_BATTLE_CONFIG" | "VNEXT_BATTLE_CONFIG";
 
+/** @deprecated lastSeen 2024-05-14 — 1 entries */
+type DeprecatedVpsEventSettingsIds = "PhotoSafari";
+
 /** Union of every currently-deprecated templateId. */
 export type DeprecatedTemplateId =
 	| Deprecated_markerIds
@@ -12539,6 +12610,7 @@ export type DeprecatedTemplateId =
 	| DeprecatedEventPassTierSettingsIds
 	| DeprecatedEvolutionChainDisplaySettingsIds
 	| DeprecatedEvolvePreviewSettingsIds
+	| DeprecatedExRaidSettingsIds
 	| DeprecatedExtendedPrimalSettingsIds
 	| DeprecatedFeatureGateIds
 	| DeprecatedFormsRefactorSettingsIds
@@ -12546,16 +12618,21 @@ export type DeprecatedTemplateId =
 	| DeprecatedGymLevelIds
 	| DeprecatedIapCategoryDisplayIds
 	| DeprecatedIapItemDisplayIds
+	| DeprecatedIapStoreBannerIds
 	| DeprecatedIbfcLightweightSettingsIds
 	| DeprecatedIncubatorFlowSettingsIds
+	| DeprecatedItemSettingsIds
 	| DeprecatedLanguageSettingsIds
 	| DeprecatedLoadingScreenSettingsIds
 	| DeprecatedLocationCardFeatureSettingsIds
 	| DeprecatedMusicSettingsIds
 	| DeprecatedNewsFeedClientSettingsIds
+	| DeprecatedObPushGatewaySettingsIds
+	| DeprecatedObSettingsOverrideRulesIds
 	| DeprecatedOnboardingV2SettingsIds
 	| DeprecatedPlatypusRolloutSettingsIds
 	| DeprecatedPokemonCutsceneRefactorSettingsIds
+	| DeprecatedPokemonExtendedSettingsIds
 	| DeprecatedPokemonInfoPanelSettingsIds
 	| DeprecatedQuestEvolutionSettingsIds
 	| DeprecatedRollBackIds
@@ -12566,7 +12643,8 @@ export type DeprecatedTemplateId =
 	| DeprecatedTutorialSettingsIds
 	| DeprecatedTwoForOneFlagsIds
 	| DeprecatedVistaGeneralSettingsIds
-	| DeprecatedVnextBattleConfigIds;
+	| DeprecatedVnextBattleConfigIds
+	| DeprecatedVpsEventSettingsIds;
 
 /**
  * A masterfile entry with a deprecated templateId. Inner data shape is opaque
