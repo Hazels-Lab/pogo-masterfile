@@ -42,3 +42,25 @@ export function accumulateSeen(seen: Map<string, SeenEntry>, entries: Entry[], d
 		}
 	}
 }
+
+export interface ClassifyInput {
+	seen: Map<string, SeenEntry>;
+	live: Set<string>;
+	alreadyDeprecated: Set<string>;
+}
+
+/** legacy = seen − live − alreadyDeprecated. */
+export function classifyLegacy(input: ClassifyInput): Map<string, SeenEntry> {
+	const legacy = new Map<string, SeenEntry>();
+	for (const [id, info] of input.seen) {
+		if (input.live.has(id)) continue;
+		if (input.alreadyDeprecated.has(id)) continue;
+		legacy.set(id, info);
+	}
+	return legacy;
+}
+
+/** True for the standalone shadow/purified pokemon family (the dominant 2021 bucket). */
+export function isShadowPurified(id: string): boolean {
+	return /_(SHADOW|PURIFIED)$/.test(id);
+}

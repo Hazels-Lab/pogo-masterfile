@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { accumulateSeen, discriminatorOf, parseSnapshotDate } from "./backfill-lib";
+import { accumulateSeen, classifyLegacy, discriminatorOf, isShadowPurified, parseSnapshotDate } from "./backfill-lib";
 
 describe("parseSnapshotDate", () => {
 	test("extracts ISO date from snapshot folder name", () => {
@@ -38,5 +38,31 @@ describe("accumulateSeen", () => {
 		accumulateSeen(seen, [{ templateId: "A", data: { templateId: "A", newDisc: {} } }], "2023-08-30");
 		accumulateSeen(seen, [{ templateId: "A", data: { templateId: "A", oldDisc: {} } }], "2021-06-03");
 		expect(seen.get("A")).toEqual({ discriminator: "newDisc", lastSeen: "2023-08-30" });
+	});
+});
+
+describe("classifyLegacy", () => {
+	test("legacy = seen − live − alreadyDeprecated", () => {
+		const seen = new Map([
+			["LIVE_ID", { discriminator: "a", lastSeen: "2024-01-01" }],
+			["DEP_ID", { discriminator: "b", lastSeen: "2023-01-01" }],
+			["LEGACY_ID", { discriminator: "c", lastSeen: "2021-06-03" }],
+		]);
+		const legacy = classifyLegacy({
+			seen,
+			live: new Set(["LIVE_ID"]),
+			alreadyDeprecated: new Set(["DEP_ID"]),
+		});
+		expect([...legacy.keys()]).toEqual(["LEGACY_ID"]);
+		expect(legacy.get("LEGACY_ID")?.discriminator).toBe("c");
+	});
+});
+
+describe("isShadowPurified", () => {
+	test("matches the standalone shadow/purified pokemon family", () => {
+		expect(isShadowPurified("V0001_POKEMON_BULBASAUR_SHADOW")).toBe(true);
+		expect(isShadowPurified("SPAWN_V0001_POKEMON_BULBASAUR_PURIFIED")).toBe(true);
+		expect(isShadowPurified("V0001_POKEMON_BULBASAUR")).toBe(false);
+		expect(isShadowPurified("EX_RAID_SETTINGS")).toBe(false);
 	});
 });
