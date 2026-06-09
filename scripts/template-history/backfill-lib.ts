@@ -28,3 +28,17 @@ export function discriminatorOf(data: Record<string, unknown>): string {
 	if (keys.length === 1) return keys[0]!;
 	return [...keys].sort()[0]!;
 }
+
+/**
+ * Fold one snapshot's entries into the running seen-map. Per templateId, keeps
+ * the discriminator + date from its MOST RECENT appearance (max ISO date wins).
+ * Order-independent across snapshots.
+ */
+export function accumulateSeen(seen: Map<string, SeenEntry>, entries: Entry[], date: string): void {
+	for (const e of entries) {
+		const prev = seen.get(e.templateId);
+		if (!prev || date > prev.lastSeen) {
+			seen.set(e.templateId, { discriminator: discriminatorOf(e.data), lastSeen: date });
+		}
+	}
+}

@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { discriminatorOf, parseSnapshotDate } from "./backfill-lib";
+import { accumulateSeen, discriminatorOf, parseSnapshotDate } from "./backfill-lib";
 
 describe("parseSnapshotDate", () => {
 	test("extracts ISO date from snapshot folder name", () => {
@@ -20,5 +20,23 @@ describe("discriminatorOf", () => {
 	});
 	test(">=2 keys → deterministic sorted-first fallback", () => {
 		expect(discriminatorOf({ templateId: "X", zeta: {}, alpha: {} })).toBe("alpha");
+	});
+});
+
+describe("accumulateSeen", () => {
+	test("keeps discriminator + date from the most recent appearance", () => {
+		const seen = new Map();
+		// older snapshot first
+		accumulateSeen(seen, [{ templateId: "A", data: { templateId: "A", oldDisc: {} } }], "2021-06-03");
+		// newer snapshot: same id, different shape
+		accumulateSeen(seen, [{ templateId: "A", data: { templateId: "A", newDisc: {} } }], "2023-08-30");
+		expect(seen.get("A")).toEqual({ discriminator: "newDisc", lastSeen: "2023-08-30" });
+	});
+
+	test("order-independent: newer processed before older still keeps newer", () => {
+		const seen = new Map();
+		accumulateSeen(seen, [{ templateId: "A", data: { templateId: "A", newDisc: {} } }], "2023-08-30");
+		accumulateSeen(seen, [{ templateId: "A", data: { templateId: "A", oldDisc: {} } }], "2021-06-03");
+		expect(seen.get("A")).toEqual({ discriminator: "newDisc", lastSeen: "2023-08-30" });
 	});
 });
