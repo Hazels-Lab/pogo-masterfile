@@ -4,7 +4,7 @@
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
 
-/// Currently tracking 12429 deprecated templateIds across 43 discriminators.
+/// Currently tracking 12483 deprecated templateIds across 50 discriminators.
 /// See deprecated.d.ts (TypeScript) for the full enumerated list.
 /// Most recently deprecated: 2026-05-15.
 #[deprecated(note = "Historical masterfile entry type for templates removed from upstream")]
