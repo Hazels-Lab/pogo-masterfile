@@ -23,6 +23,7 @@ import { emitGo } from "./deprecated/emit-go";
 import { emitRust } from "./deprecated/emit-rust";
 import { emitTypescript } from "./deprecated/emit-typescript";
 import { extractTemplateIdsFromEntries, parseLiveTsEmission } from "./deprecated/parse-emission";
+import { parseDeprecatedSource } from "./deprecated/parse-source";
 import type { DeprecatedSet } from "./deprecated/types";
 
 const REPO_ROOT = join(import.meta.dir, "..");
@@ -132,39 +133,7 @@ function parseCurrentDeprecated(): DeprecatedSet {
 	// update-deprecated.ts runs. The working-tree file no longer exists at this point.
 	const source = gitShow("HEAD", "packages/ts/dist/deprecated.d.ts");
 	if (!source) return new Map();
-	const set: DeprecatedSet = new Map();
-
-	// New format (post-migration): JSDoc sits immediately above the Ids literal-union type.
-	const blockRe = /\/\*\* @deprecated lastSeen (\d{4}-\d{2}-\d{2}) — (\d+) entries \*\/\s*\ntype Deprecated([A-Za-z_][A-Za-z0-9_]*)Ids =/g;
-	// Legacy format (pre-migration): JSDoc sits above "export type Deprecated{Pascal}<TID...>".
-	const legacyBlockRe = /\/\*\* @deprecated lastSeen (\d{4}-\d{2}-\d{2}) — (\d+) entries \*\/\s*\nexport type Deprecated([A-Za-z_][A-Za-z0-9_]*)</g;
-
-	const idsRe = /type Deprecated([A-Za-z_][A-Za-z0-9_]*)Ids\s*=\s*([\s\S]+?);/g;
-	const idMap = new Map<string, string[]>();
-	for (const m of source.matchAll(idsRe)) {
-		const Pascal = m[1]!;
-		const literals = [...m[2]!.matchAll(/"([^"]+)"/g)].map((mm) => mm[1]!);
-		idMap.set(Pascal, literals);
-	}
-
-	const seen = new Set<string>();
-	const applyMatch = (lastSeen: string, entryCount: number, Pascal: string) => {
-		if (seen.has(Pascal)) return;
-		seen.add(Pascal);
-		const discriminator = Pascal.charAt(0).toLowerCase() + Pascal.slice(1);
-		const ids = idMap.get(Pascal) ?? [];
-		set.set(discriminator, {
-			discriminator,
-			templateIds: new Set(ids),
-			lastSeen,
-			entryCount,
-		});
-	};
-
-	for (const m of source.matchAll(blockRe)) applyMatch(m[1]!, Number(m[2]!), m[3]!);
-	for (const m of source.matchAll(legacyBlockRe)) applyMatch(m[1]!, Number(m[2]!), m[3]!);
-
-	return set;
+	return parseDeprecatedSource(source);
 }
 
 function main(): void {
