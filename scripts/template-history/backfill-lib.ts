@@ -64,3 +64,27 @@ export function classifyLegacy(input: ClassifyInput): Map<string, SeenEntry> {
 export function isShadowPurified(id: string): boolean {
 	return /_(SHADOW|PURIFIED)$/.test(id);
 }
+
+/**
+ * Non-destructive merge of legacy ids into a clone of `current`. Unions ids into
+ * existing discriminator records (creating new ones as needed) and bumps each
+ * record's lastSeen to the max ISO date among its ids. Backfill dates are older
+ * than steady-state dates, so existing records' lastSeen never regress.
+ */
+export function mergeBackfill(current: DeprecatedSet, legacy: Map<string, SeenEntry>): DeprecatedSet {
+	const next: DeprecatedSet = new Map();
+	for (const [k, v] of current) {
+		next.set(k, { discriminator: v.discriminator, templateIds: new Set(v.templateIds), lastSeen: v.lastSeen, entryCount: v.entryCount });
+	}
+	for (const [id, info] of legacy) {
+		let rec = next.get(info.discriminator);
+		if (!rec) {
+			rec = { discriminator: info.discriminator, templateIds: new Set(), lastSeen: info.lastSeen, entryCount: 0 };
+			next.set(info.discriminator, rec);
+		}
+		rec.templateIds.add(id);
+		rec.entryCount = rec.templateIds.size;
+		if (info.lastSeen > rec.lastSeen) rec.lastSeen = info.lastSeen;
+	}
+	return next;
+}

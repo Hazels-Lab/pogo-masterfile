@@ -1,5 +1,6 @@
 import { describe, expect, test } from "bun:test";
-import { accumulateSeen, classifyLegacy, discriminatorOf, isShadowPurified, parseSnapshotDate } from "./backfill-lib";
+import { accumulateSeen, classifyLegacy, discriminatorOf, isShadowPurified, mergeBackfill, parseSnapshotDate } from "./backfill-lib";
+import type { DeprecatedSet } from "../../src/deprecated/types";
 
 describe("parseSnapshotDate", () => {
 	test("extracts ISO date from snapshot folder name", () => {
@@ -64,5 +65,37 @@ describe("isShadowPurified", () => {
 		expect(isShadowPurified("SPAWN_V0001_POKEMON_BULBASAUR_PURIFIED")).toBe(true);
 		expect(isShadowPurified("V0001_POKEMON_BULBASAUR")).toBe(false);
 		expect(isShadowPurified("EX_RAID_SETTINGS")).toBe(false);
+	});
+});
+
+describe("mergeBackfill", () => {
+	test("adds a brand-new discriminator with max lastSeen of its ids", () => {
+		const out = mergeBackfill(new Map(), new Map([
+			["EX_RAID_SETTINGS", { discriminator: "exRaidSettings", lastSeen: "2023-08-30" }],
+			["EX_RAID_OTHER", { discriminator: "exRaidSettings", lastSeen: "2022-01-01" }],
+		]));
+		expect(out.get("exRaidSettings")?.templateIds).toEqual(new Set(["EX_RAID_SETTINGS", "EX_RAID_OTHER"]));
+		expect(out.get("exRaidSettings")?.entryCount).toBe(2);
+		expect(out.get("exRaidSettings")?.lastSeen).toBe("2023-08-30");
+	});
+
+	test("merges into an existing record without regressing a newer lastSeen", () => {
+		const current: DeprecatedSet = new Map([
+			["badgeSettings", { discriminator: "badgeSettings", templateIds: new Set(["BADGE_NEW"]), lastSeen: "2025-02-03", entryCount: 1 }],
+		]);
+		const out = mergeBackfill(current, new Map([
+			["BADGE_EVENT_0008", { discriminator: "badgeSettings", lastSeen: "2022-09-22" }],
+		]));
+		expect(out.get("badgeSettings")?.templateIds).toEqual(new Set(["BADGE_NEW", "BADGE_EVENT_0008"]));
+		expect(out.get("badgeSettings")?.entryCount).toBe(2);
+		expect(out.get("badgeSettings")?.lastSeen).toBe("2025-02-03"); // unchanged: backfill date is older
+	});
+
+	test("does not mutate the input set", () => {
+		const current: DeprecatedSet = new Map([
+			["x", { discriminator: "x", templateIds: new Set(["A"]), lastSeen: "2025-01-01", entryCount: 1 }],
+		]);
+		mergeBackfill(current, new Map([["B", { discriminator: "x", lastSeen: "2021-01-01" }]]));
+		expect(current.get("x")?.templateIds).toEqual(new Set(["A"])); // original untouched
 	});
 });
