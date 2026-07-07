@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 38 entries.
+// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 39 entries.
 
 import type { S } from "../../_utils";
 import type { ItemSettings } from "../types";
@@ -973,6 +973,7 @@ export type ItemSettingsItemEventTicketS23202604 = S<
 				eventEndTime: "2026-07-18T17:00:00";
 				eventStartTime: "2026-07-18T14:00:00";
 				giftable: true;
+				giftItem: 2240;
 				iconRewards: [
 					{
 						item: {
@@ -992,6 +993,29 @@ export type ItemSettingsItemEventTicketS23202604 = S<
 				textRewardsKey: "text_rewards_key_RaichuRaidDay";
 			};
 			itemId: 2208;
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general2.ticket.5_MegaRaichuRaidDay";
+		}
+	>
+>;
+export type ItemSettingsItemEventTicketS23202604ToGift = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S23_2026_04_TO_GIFT",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "item_event_ticket_gray_desc_MegaRaichuRaidDay";
+			globalEventTicket: {
+				backgroundImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F97c2eaee_PGO-MCS_Raichu_Super_Mega_Raid_Day_v3-1024x576-nologo.jpg";
+				clientEventEndTimeUtcMs: "1784394000000";
+				clientEventStartTimeUtcMs: "1784383200000";
+				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F97c2eaee_PGO-MCS_Raichu_Super_Mega_Raid_Day_v3-1024x576-nologo.jpg";
+				eventEndTime: "2026-07-18T17:00:00";
+				eventStartTime: "2026-07-18T14:00:00";
+				itemBagDescriptionKey: "item_event_ticket_gray_desc_MegaRaichuRaidDay";
+				ticketItem: 2208;
+			};
+			ignoreInventorySpace: true;
+			itemId: 2240;
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general2.ticket.5_MegaRaichuRaidDay";
 		}
@@ -1297,6 +1321,7 @@ export type ItemSettingsGlobalEventTicketMasterfileEntry =
 	| ItemSettingsItemEventTicketS23202602ToGift
 	| ItemSettingsItemEventTicketS23202603
 	| ItemSettingsItemEventTicketS23202604
+	| ItemSettingsItemEventTicketS23202604ToGift
 	| ItemSettingsItemEventTicketS23202609
 	| ItemSettingsItemEvergreenTicket
 	| ItemSettingsItemEvergreenTicketToGift

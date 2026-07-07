@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", 1663 entries (structural types).
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", 1664 entries (structural types).
 
 import type { W } from "../_utils";
 

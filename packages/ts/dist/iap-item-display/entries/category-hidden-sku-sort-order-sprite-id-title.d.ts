@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-hidden-sku-sort-order-sprite-id-title", 113 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-hidden-sku-sort-order-sprite-id-title", 106 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -454,97 +454,6 @@ export type IapItemDisplayBundleGofest20244 = S<
 			sku: "bundle.gofest2024.4";
 			sortOrder: 7;
 			spriteId: "bundle.general.adventure.1";
-			title: "sticker_box";
-		}
-	>
->;
-export type IapItemDisplayBundleGofest20261 = S<
-	IapItemDisplay<
-		"bundle.GOFest2026.1",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sku: "bundle.GOFest2026.1";
-			sortOrder: 4;
-			spriteId: "bundle.general5.small.1";
-			title: "great_storage_box";
-		}
-	>
->;
-export type IapItemDisplayBundleGofest20262 = S<
-	IapItemDisplay<
-		"bundle.GOFest2026.2",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sku: "bundle.GOFest2026.2";
-			sortOrder: 5;
-			spriteId: "bundle.general2.large.2";
-			title: "voyager_box_title";
-		}
-	>
->;
-export type IapItemDisplayBundleGofest20263 = S<
-	IapItemDisplay<
-		"bundle.GOFest2026.3",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sku: "bundle.GOFest2026.3";
-			sortOrder: 6;
-			spriteId: "bundle.general.premiumbox.large.1";
-			title: "great_raid_box_title";
-		}
-	>
->;
-export type IapItemDisplayBundleGofest20264 = S<
-	IapItemDisplay<
-		"bundle.GOFest2026.4",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sku: "bundle.GOFest2026.4";
-			sortOrder: 7;
-			spriteId: "bundle.xmas.large.1";
-			title: "bundle.general1.tiny.2_title";
-		}
-	>
->;
-export type IapItemDisplayBundleGofest20265 = S<
-	IapItemDisplay<
-		"bundle.GOFest2026.5",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sku: "bundle.GOFest2026.5";
-			sortOrder: 7;
-			spriteId: "bundle.general.adventure.1";
-			title: "bundle.general3.medium.1_title";
-		}
-	>
->;
-export type IapItemDisplayBundleGofest20266 = S<
-	IapItemDisplay<
-		"bundle.GOFest2026.6",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sku: "bundle.GOFest2026.6";
-			sortOrder: 7;
-			spriteId: "bundle.general.premiumbox.large.1";
-			title: "master_raid_box_title";
-		}
-	>
->;
-export type IapItemDisplayBundleGofest20267 = S<
-	IapItemDisplay<
-		"bundle.GOFest2026.7",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sku: "bundle.GOFest2026.7";
-			sortOrder: 7;
-			spriteId: "bundle.xmas.medium.1";
 			title: "sticker_box";
 		}
 	>
@@ -1509,13 +1418,6 @@ export type IapItemDisplayCategoryHiddenSkuSortOrderSpriteIdTitleMasterfileEntry
 	| IapItemDisplayBundleGofest20242
 	| IapItemDisplayBundleGofest20243
 	| IapItemDisplayBundleGofest20244
-	| IapItemDisplayBundleGofest20261
-	| IapItemDisplayBundleGofest20262
-	| IapItemDisplayBundleGofest20263
-	| IapItemDisplayBundleGofest20264
-	| IapItemDisplayBundleGofest20265
-	| IapItemDisplayBundleGofest20266
-	| IapItemDisplayBundleGofest20267
 	| IapItemDisplayBundleGofestmakegoodprep1
 	| IapItemDisplayBundleGofestmakegoodprep2
 	| IapItemDisplayBundleGofestmakegoodprep3

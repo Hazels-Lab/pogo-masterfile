@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", 150 entries (structural types).
+// Generated from Pokémon GO masterfile — group "itemSettings", 151 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -385,6 +385,7 @@ export interface ItemSettingsData {
 			| "item_event_ticket_evergreen_details_Riolu0426"
 			| "item_event_ticket_gray_desc_FinalJustice2025"
 			| "item_event_ticket_gray_desc_MegaFalinksRaidDay"
+			| "item_event_ticket_gray_desc_MegaRaichuRaidDay"
 			| "item_event_ticket_gray_details_ENTEI_SHADOW_RAID_DAY"
 			| "item_event_ticket_gray_details_MegaRaichuRaidDay"
 			| "item_event_ticket_gray_details_MegaSkarmoryRaidDay"
@@ -416,6 +417,7 @@ export interface ItemSettingsData {
 			| "text_rewards_key_Riolu0426"
 			| "text_rewards_key_WaterRRD26";
 		ticketItem?:
+			| number
 			| "ITEM_EVENT_TICKET_02"
 			| "ITEM_EVENT_TICKET_03"
 			| "ITEM_EVENT_TICKET_04"

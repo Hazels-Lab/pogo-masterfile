@@ -110,7 +110,7 @@ pub struct GlobalEventTicket {
     pub icon_rewards: Option<Vec<IconRewards>>,
     pub item_bag_description_key: String,
     pub text_rewards_key: Option<String>,
-    pub ticket_item: Option<String>,
+    pub ticket_item: Option<GiftItemValue>,
     pub title_image_url: Option<String>,
 }
 

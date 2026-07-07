@@ -21,12 +21,13 @@ import type { IapItemDisplayCategoryHiddenSkuSortOrderSpriteIdMasterfileEntry } 
 import type { IapItemDisplayCategoryHiddenSkuSortOrderSpriteIdTitleMasterfileEntry } from "./category-hidden-sku-sort-order-sprite-id-title";
 import type { IapItemDisplayCategoryHiddenSkuSortOrderSpriteIdTitleTotalValueMasterfileEntry } from "./category-hidden-sku-sort-order-sprite-id-title-total-value";
 import type { IapItemDisplayCategoryHiddenSkuSortOrderTitleMasterfileEntry } from "./category-hidden-sku-sort-order-title";
-import type { IapItemDisplayCategoryImageUrlSkuSkuDisableTimeSkuDisableTimeUtcMsSkuEnableTimeSkuEnableTimeUtcMsSortOrderSpriteIdTitleUseEnvironmentPrefixMasterfileEntry } from "./category-image-url-sku-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order-sprite-id-title-use-environment-prefix";
 import type { IapItemDisplayCategoryMaxLevelSaleSkuSortOrderSpriteIdTitleMasterfileEntry } from "./category-max-level-sale-sku-sort-order-sprite-id-title";
 import type { IapItemDisplayCategorySaleSkuSkuDisableTimeSkuDisableTimeUtcMsSkuEnableTimeSkuEnableTimeUtcMsSortOrderMasterfileEntry } from "./category-sale-sku-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order";
 import type { IapItemDisplayCategorySaleSkuSortOrderSpriteIdTitleMasterfileEntry } from "./category-sale-sku-sort-order-sprite-id-title";
+import type { IapItemDisplayCategoryShowDiscountTagShowStrikethroughPriceSkuSkuDisableTimeSkuDisableTimeUtcMsSkuEnableTimeSkuEnableTimeUtcMsSortOrderSpriteIdTitleMasterfileEntry } from "./category-show-discount-tag-show-strikethrough-price-sku-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order-sprite-id-title";
 import type { IapItemDisplayCategoryShowDiscountTagShowStrikethroughPriceSkuSortOrderSpriteIdTotalValueMasterfileEntry } from "./category-show-discount-tag-show-strikethrough-price-sku-sort-order-sprite-id-total-value";
 import type { IapItemDisplayCategorySkuMasterfileEntry } from "./category-sku";
+import type { IapItemDisplayCategorySkuSkuDisableTimeSkuDisableTimeUtcMsSkuEnableTimeSkuEnableTimeUtcMsSortOrderSpriteIdTitleMasterfileEntry } from "./category-sku-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order-sprite-id-title";
 import type { IapItemDisplayCategorySkuSortOrderMasterfileEntry } from "./category-sku-sort-order";
 import type { IapItemDisplayCategorySkuSortOrderSpriteIdMasterfileEntry } from "./category-sku-sort-order-sprite-id";
 import type { IapItemDisplayCategorySkuSortOrderSpriteIdTitleMasterfileEntry } from "./category-sku-sort-order-sprite-id-title";
@@ -59,12 +60,13 @@ export type * from "./category-hidden-sku-sort-order-sprite-id";
 export type * from "./category-hidden-sku-sort-order-sprite-id-title";
 export type * from "./category-hidden-sku-sort-order-sprite-id-title-total-value";
 export type * from "./category-hidden-sku-sort-order-title";
-export type * from "./category-image-url-sku-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order-sprite-id-title-use-environment-prefix";
 export type * from "./category-max-level-sale-sku-sort-order-sprite-id-title";
 export type * from "./category-sale-sku-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order";
 export type * from "./category-sale-sku-sort-order-sprite-id-title";
+export type * from "./category-show-discount-tag-show-strikethrough-price-sku-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order-sprite-id-title";
 export type * from "./category-show-discount-tag-show-strikethrough-price-sku-sort-order-sprite-id-total-value";
 export type * from "./category-sku";
+export type * from "./category-sku-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order-sprite-id-title";
 export type * from "./category-sku-sort-order";
 export type * from "./category-sku-sort-order-sprite-id";
 export type * from "./category-sku-sort-order-sprite-id-title";
@@ -98,12 +100,13 @@ export type IapItemDisplayMasterfileEntry =
 	| IapItemDisplayCategoryHiddenSkuSortOrderSpriteIdTitleMasterfileEntry
 	| IapItemDisplayCategoryHiddenSkuSortOrderSpriteIdTitleTotalValueMasterfileEntry
 	| IapItemDisplayCategoryHiddenSkuSortOrderTitleMasterfileEntry
-	| IapItemDisplayCategoryImageUrlSkuSkuDisableTimeSkuDisableTimeUtcMsSkuEnableTimeSkuEnableTimeUtcMsSortOrderSpriteIdTitleUseEnvironmentPrefixMasterfileEntry
 	| IapItemDisplayCategoryMaxLevelSaleSkuSortOrderSpriteIdTitleMasterfileEntry
 	| IapItemDisplayCategorySaleSkuSkuDisableTimeSkuDisableTimeUtcMsSkuEnableTimeSkuEnableTimeUtcMsSortOrderMasterfileEntry
 	| IapItemDisplayCategorySaleSkuSortOrderSpriteIdTitleMasterfileEntry
+	| IapItemDisplayCategoryShowDiscountTagShowStrikethroughPriceSkuSkuDisableTimeSkuDisableTimeUtcMsSkuEnableTimeSkuEnableTimeUtcMsSortOrderSpriteIdTitleMasterfileEntry
 	| IapItemDisplayCategoryShowDiscountTagShowStrikethroughPriceSkuSortOrderSpriteIdTotalValueMasterfileEntry
 	| IapItemDisplayCategorySkuMasterfileEntry
+	| IapItemDisplayCategorySkuSkuDisableTimeSkuDisableTimeUtcMsSkuEnableTimeSkuEnableTimeUtcMsSortOrderSpriteIdTitleMasterfileEntry
 	| IapItemDisplayCategorySkuSortOrderMasterfileEntry
 	| IapItemDisplayCategorySkuSortOrderSpriteIdMasterfileEntry
 	| IapItemDisplayCategorySkuSortOrderSpriteIdTitleMasterfileEntry

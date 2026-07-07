@@ -1528,7 +1528,6 @@ pub struct MainMenuChanges {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct MapDisplaySettings {
-    pub map_effect_name: String,
     pub show_enhanced_sky: bool,
 }
 

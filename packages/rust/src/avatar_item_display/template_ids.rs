@@ -2441,6 +2441,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNShirtZacostumeA0,
     #[serde(rename = "N_DISPLAY_n_shirt_zacostume_b_0")]
     NDisplayNShirtZacostumeB0,
+    #[serde(rename = "N_DISPLAY_n_shirt_zeraoraonesie")]
+    NDisplayNShirtZeraoraonesie,
     #[serde(rename = "N_DISPLAY_n_shirt_zeraoratshirt")]
     NDisplayNShirtZeraoratshirt,
     #[serde(rename = "N_DISPLAY_n_shirt_zoruaonesie_0")]

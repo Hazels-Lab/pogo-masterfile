@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1489 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1491 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -117,7 +117,6 @@ export interface IapItemDisplayData {
 		| "2025-07-01T20:00:00"
 		| "2025-07-06T20:00:00"
 		| "2025-07-22T20:00:00"
-		| "2025-08-06T10:00:00"
 		| "2025-08-26T21:00:00"
 		| "2025-11-16T18:00:00"
 		| "2025-11-30T20:00:00"
@@ -136,7 +135,9 @@ export interface IapItemDisplayData {
 		| "2026-07-04T17:00:00"
 		| "2026-07-06T20:00:00"
 		| "2026-07-09T10:00:00"
-		| "2026-07-14T23:59:59";
+		| "2026-07-12T22:00:00"
+		| "2026-07-14T23:59:59"
+		| "2026-08-06T10:00:00";
 	skuDisableTimeUtcMs?:
 		| "1595786400000"
 		| "1654174800000"
@@ -164,7 +165,6 @@ export interface IapItemDisplayData {
 		| "1751400000000"
 		| "1751832000000"
 		| "1753214400000"
-		| "1754474400000"
 		| "1756242000000"
 		| "1763316000000"
 		| "1764532800000"
@@ -183,7 +183,9 @@ export interface IapItemDisplayData {
 		| "1783184400000"
 		| "1783368000000"
 		| "1783591200000"
-		| "1784073599000";
+		| "1783893600000"
+		| "1784073599000"
+		| "1786010400000";
 	skuEnableTime?:
 		| "2019-03-14T08:00:00"
 		| "2019-10-31T21:00:00"
@@ -220,7 +222,6 @@ export interface IapItemDisplayData {
 		| "2025-06-09T10:00:00"
 		| "2025-06-23T10:00:00"
 		| "2025-07-06T00:00:00"
-		| "2025-07-07T10:00:00"
 		| "2025-07-13T10:00:00"
 		| "2026-03-03T13:00:00";
 	skuEnableTimeUtcMs?:
@@ -259,7 +260,6 @@ export interface IapItemDisplayData {
 		| "1749463200000"
 		| "1750672800000"
 		| "1751760000000"
-		| "1751882400000"
 		| "1752400800000"
 		| "1772542800000";
 	sortOrder?: number;

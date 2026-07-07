@@ -3594,7 +3594,6 @@ export interface MapDisplaySettings {
 	data: {
 		templateId: "MAP_DISPLAY_SETTINGS";
 		mapDisplaySettings: {
-			mapEffectName: "fx_map_fireworks";
 			showEnhancedSky: true;
 		};
 	};
