@@ -24,7 +24,7 @@ export type MegaEvoLevelSettings1V0149PokemonDragonite = S<
 		"MEGA_EVOLUTION_LEVEL_1_V0149_POKEMON_DRAGONITE",
 		{
 			cooldown: {
-				bypassCostInitial: 40;
+				bypassCostInitial: 60;
 				durationMs: "604800000";
 			};
 			effects: {
@@ -43,7 +43,7 @@ export type MegaEvoLevelSettings2V0149PokemonDragonite = S<
 		"MEGA_EVOLUTION_LEVEL_2_V0149_POKEMON_DRAGONITE",
 		{
 			cooldown: {
-				bypassCostInitial: 20;
+				bypassCostInitial: 30;
 				durationMs: "432000000";
 			};
 			effects: {
@@ -64,7 +64,7 @@ export type MegaEvoLevelSettings3V0149PokemonDragonite = S<
 		"MEGA_EVOLUTION_LEVEL_3_V0149_POKEMON_DRAGONITE",
 		{
 			cooldown: {
-				bypassCostInitial: 10;
+				bypassCostInitial: 15;
 				durationMs: "259200000";
 			};
 			effects: {

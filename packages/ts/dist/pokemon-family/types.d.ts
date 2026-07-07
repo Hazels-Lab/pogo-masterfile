@@ -29,7 +29,6 @@ export interface PokemonFamilyData {
 		| "BLASTOISE"
 		| "BLAZIKEN"
 		| "CAMERUPT"
-		| "CHARIZARD"
 		| "DIANCIE"
 		| "DRAGONITE"
 		| "FALINKS"
@@ -59,11 +58,12 @@ export interface PokemonFamilyData {
 		| "SCEPTILE"
 		| "SCIZOR"
 		| "SHARPEDO"
+		| "SKARMORY"
 		| "SLOWBRO"
 		| "STEELIX"
 		| "SWAMPERT"
 		| "TYRANITAR"
 		| "VENUSAUR"
 		| "VICTREEBEL";
-	megaEvolvablePokemonIds?: ["GARDEVOIR", "GALLADE"];
+	megaEvolvablePokemonIds?: Array<"CHARIZARD" | "GALLADE" | "GARDEVOIR" | "MEWTWO" | "RAICHU">;
 }

@@ -56,6 +56,7 @@ import type {
 	CombatLeagueVsSeekerGreatCatchSeason11,
 	CombatLeagueVsSeekerGreatChampionshipNaic,
 	CombatLeagueVsSeekerGreatChampionshipSeries,
+	CombatLeagueVsSeekerGreatChampionshipsLegacy,
 	CombatLeagueVsSeekerGreatElectric,
 	CombatLeagueVsSeekerGreatElement,
 	CombatLeagueVsSeekerGreatFantasy,
@@ -168,6 +169,7 @@ export interface CombatLeagueLookup {
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_SEASON11: CombatLeagueVsSeekerGreatCatchSeason11;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_NAIC: CombatLeagueVsSeekerGreatChampionshipNaic;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_SERIES: CombatLeagueVsSeekerGreatChampionshipSeries;
+	COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIPS_LEGACY: CombatLeagueVsSeekerGreatChampionshipsLegacy;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_ELECTRIC: CombatLeagueVsSeekerGreatElectric;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_ELEMENT: CombatLeagueVsSeekerGreatElement;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_FANTASY: CombatLeagueVsSeekerGreatFantasy;

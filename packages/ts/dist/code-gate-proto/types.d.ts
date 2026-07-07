@@ -15,7 +15,7 @@ export type CodeGateProtoType = W<CodeGateProto>;
 
 export interface CodeGateProtoData {
 	subCodeGateList?: {
-		isEnabled?: boolean;
-		name: "LEADER_VNEXT_CODE_GATE" | "show_move_effectiveness" | "trade_sub_code_gate" | "UNLIMITED_PLAYER_ACTIVITY_REWARDS_SUB_CODE_GATE";
+		isEnabled: boolean;
+		name: "LEADER_VNEXT_CODE_GATE" | "show_move_effectiveness" | "trade_sub_code_gate";
 	};
 }

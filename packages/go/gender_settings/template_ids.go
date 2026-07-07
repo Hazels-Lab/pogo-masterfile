@@ -2416,6 +2416,7 @@ const (
 	GenderSettingsTemplateIDSpawnV0998PokemonBaxcaliburNormal                GenderSettingsTemplateID = "SPAWN_V0998_POKEMON_BAXCALIBUR_NORMAL"
 	GenderSettingsTemplateIDSpawnV0999PokemonGimmighoul                      GenderSettingsTemplateID = "SPAWN_V0999_POKEMON_GIMMIGHOUL"
 	GenderSettingsTemplateIDSpawnV0999PokemonGimmighoulCoinA1                GenderSettingsTemplateID = "SPAWN_V0999_POKEMON_GIMMIGHOUL_COIN_A1"
+	GenderSettingsTemplateIDSpawnV0999PokemonGimmighoulCoinA22026            GenderSettingsTemplateID = "SPAWN_V0999_POKEMON_GIMMIGHOUL_COIN_A2_2026"
 	GenderSettingsTemplateIDSpawnV0999PokemonGimmighoulNormal                GenderSettingsTemplateID = "SPAWN_V0999_POKEMON_GIMMIGHOUL_NORMAL"
 	GenderSettingsTemplateIDSpawnV1000PokemonGholdengo                       GenderSettingsTemplateID = "SPAWN_V1000_POKEMON_GHOLDENGO"
 	GenderSettingsTemplateIDSpawnV1000PokemonGholdengoNormal                 GenderSettingsTemplateID = "SPAWN_V1000_POKEMON_GHOLDENGO_NORMAL"
@@ -4884,6 +4885,7 @@ var GenderSettingsTemplateIDValues = [...]GenderSettingsTemplateID{
 	GenderSettingsTemplateIDSpawnV0998PokemonBaxcaliburNormal,
 	GenderSettingsTemplateIDSpawnV0999PokemonGimmighoul,
 	GenderSettingsTemplateIDSpawnV0999PokemonGimmighoulCoinA1,
+	GenderSettingsTemplateIDSpawnV0999PokemonGimmighoulCoinA22026,
 	GenderSettingsTemplateIDSpawnV0999PokemonGimmighoulNormal,
 	GenderSettingsTemplateIDSpawnV1000PokemonGholdengo,
 	GenderSettingsTemplateIDSpawnV1000PokemonGholdengoNormal,

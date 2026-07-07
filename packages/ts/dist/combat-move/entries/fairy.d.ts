@@ -73,7 +73,7 @@ export type CombatMoveV0320MoveCharmFast = S<
 		{
 			durationTurns: 2;
 			energyDelta: 8;
-			power: 13;
+			power: 12;
 			type: "POKEMON_TYPE_FAIRY";
 			uniqueId: "CHARM_FAST";
 			vfxName: "charm_fast";

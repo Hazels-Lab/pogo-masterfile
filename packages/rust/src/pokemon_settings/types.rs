@@ -10,7 +10,7 @@ pub struct BuddyWalkedMegaEnergyAwards {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct BuddyWalkedMegaEnergyAwardsV2 {
-    pub gender_requirement: String,
+    pub gender_requirement: Option<String>,
     pub mega_energy_award_amount: u64,
     pub mega_pokemon_id: String,
 }
@@ -265,7 +265,7 @@ pub struct ThirdMove {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PokemonSettings {
-    pub allow_noevolve_evolution: Option<[String; 1]>,
+    pub allow_noevolve_evolution: Option<Vec<String>>,
     pub animation_time: Option<Vec<f64>>,
     pub bread_tier_group: Option<String>,
     pub buddy_group_number: Option<u64>,

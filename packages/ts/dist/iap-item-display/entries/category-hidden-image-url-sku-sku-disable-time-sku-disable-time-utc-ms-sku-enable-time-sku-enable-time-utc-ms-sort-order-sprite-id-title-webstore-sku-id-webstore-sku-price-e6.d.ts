@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-hidden-image-url-sku-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order-sprite-id-title-webstore-sku-id-webstore-sku-price-e6", 16 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-hidden-image-url-sku-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order-sprite-id-title-webstore-sku-id-webstore-sku-price-e6", 12 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -9,7 +9,7 @@ export type IapItemDisplayEvergreenticket1 = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Into_The_Depths_LiveOp_2026_v3-1024x576-nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Into_The_Depths_LiveOp_2026_v3-1024x576-nologo.jpg";
 			sku: "evergreenticket.1";
 			skuDisableTime: "2026-02-01T20:00:00";
 			skuDisableTimeUtcMs: "1769976000000";
@@ -29,7 +29,7 @@ export type IapItemDisplayGeneral1Ticket1 = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-shiny-jirachi-masterwork-ticket-nologo-2025.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-shiny-jirachi-masterwork-ticket-nologo-2025.jpg";
 			sku: "general1.ticket.1";
 			skuDisableTime: "2025-07-06T20:00:00";
 			skuDisableTimeUtcMs: "1751832000000";
@@ -43,33 +43,13 @@ export type IapItemDisplayGeneral1Ticket1 = S<
 		}
 	>
 >;
-export type IapItemDisplayGeneral1Ticket4 = S<
-	IapItemDisplay<
-		"general1.ticket.4",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-riolu-hatch-day-2026-nologo.jpg";
-			sku: "general1.ticket.4";
-			skuDisableTime: "2026-04-18T17:00:00";
-			skuDisableTimeUtcMs: "1776531600000";
-			skuEnableTime: "2023-01-01T11:00:01";
-			skuEnableTimeUtcMs: "1672570801000";
-			sortOrder: 1;
-			spriteId: "general1.ticket.4";
-			title: "general1.ticket.4_Riolu0426_title";
-			webstoreSkuId: "web-riolu-hatch-day-ultra";
-			webstoreSkuPriceE6: 1990000;
-		}
-	>
->;
 export type IapItemDisplayGeneral2Ticket2 = S<
 	IapItemDisplay<
 		"general2.ticket.2",
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg";
 			sku: "general2.ticket.2";
 			skuDisableTime: "2026-02-07T20:00:00";
 			skuDisableTimeUtcMs: "1770494400000";
@@ -89,7 +69,7 @@ export type IapItemDisplayGeneral2Ticket4 = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-replay-water-research-day-2026-nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-replay-water-research-day-2026-nologo.jpg";
 			sku: "general2.ticket.4";
 			skuDisableTime: "2026-03-21T17:00:00";
 			skuDisableTimeUtcMs: "1774112400000";
@@ -109,7 +89,7 @@ export type IapItemDisplayGeneral2Ticket7 = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO_MCS_MasterBall_KeyArt_TK_GP_V2_S14_1024x512_nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO_MCS_MasterBall_KeyArt_TK_GP_V2_S14_1024x512_nologo.jpg";
 			sku: "general2.ticket.7";
 			skuDisableTime: "2025-12-31T20:00:00";
 			skuDisableTimeUtcMs: "1767211200000";
@@ -123,33 +103,13 @@ export type IapItemDisplayGeneral2Ticket7 = S<
 		}
 	>
 >;
-export type IapItemDisplayGeneral2Ticket9 = S<
-	IapItemDisplay<
-		"general2.ticket.9",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-fashion-raid-day-2026-nologo.jpg";
-			sku: "general2.ticket.9";
-			skuDisableTime: "2026-04-04T17:00:00";
-			skuDisableTimeUtcMs: "1775322000000";
-			skuEnableTime: "2019-03-14T08:00:00";
-			skuEnableTimeUtcMs: "1552550400000";
-			sortOrder: 2;
-			spriteId: "general2.ticket.9";
-			title: "general2.ticket.9_fashionRaidDay26_title";
-			webstoreSkuId: "web-fashion-raid-2026-ticket-box";
-			webstoreSkuPriceE6: 4990000;
-		}
-	>
->;
 export type IapItemDisplayGeneral2Ticket10 = S<
 	IapItemDisplay<
 		"general2.ticket.10",
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg";
 			sku: "general2.ticket.10";
 			skuDisableTime: "2026-03-01T18:00:00";
 			skuDisableTimeUtcMs: "1772388000000";
@@ -169,7 +129,7 @@ export type IapItemDisplayPgoreleaseEvergreenticket1 = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Into_The_Depths_LiveOp_2026_v3-1024x576-nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Into_The_Depths_LiveOp_2026_v3-1024x576-nologo.jpg";
 			sku: "pgorelease.evergreenticket.1";
 			skuDisableTime: "2026-02-01T20:00:00";
 			skuDisableTimeUtcMs: "1769976000000";
@@ -189,7 +149,7 @@ export type IapItemDisplayPgoreleaseGeneral1Ticket1 = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-shiny-jirachi-masterwork-ticket-nologo-2025.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-shiny-jirachi-masterwork-ticket-nologo-2025.jpg";
 			sku: "pgorelease.general1.ticket.1";
 			skuDisableTime: "2025-07-06T20:00:00";
 			skuDisableTimeUtcMs: "1751832000000";
@@ -203,33 +163,13 @@ export type IapItemDisplayPgoreleaseGeneral1Ticket1 = S<
 		}
 	>
 >;
-export type IapItemDisplayPgoreleaseGeneral1Ticket4 = S<
-	IapItemDisplay<
-		"pgorelease.general1.ticket.4",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-riolu-hatch-day-2026-nologo.jpg";
-			sku: "pgorelease.general1.ticket.4";
-			skuDisableTime: "2026-04-18T17:00:00";
-			skuDisableTimeUtcMs: "1776531600000";
-			skuEnableTime: "2023-01-01T11:00:03";
-			skuEnableTimeUtcMs: "1672570803000";
-			sortOrder: 1;
-			spriteId: "general1.ticket.4";
-			title: "general1.ticket.4_Riolu0426_title";
-			webstoreSkuId: "web-riolu-hatch-day-ultra";
-			webstoreSkuPriceE6: 1990000;
-		}
-	>
->;
 export type IapItemDisplayPgoreleaseGeneral2Ticket2 = S<
 	IapItemDisplay<
 		"pgorelease.general2.ticket.2",
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg";
 			sku: "pgorelease.general2.ticket.2";
 			skuDisableTime: "2026-02-07T20:00:00";
 			skuDisableTimeUtcMs: "1770494400000";
@@ -249,7 +189,7 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket4 = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-replay-water-research-day-2026-nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-replay-water-research-day-2026-nologo.jpg";
 			sku: "pgorelease.general2.ticket.4";
 			skuDisableTime: "2026-03-21T17:00:00";
 			skuDisableTimeUtcMs: "1774112400000";
@@ -269,7 +209,7 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket7 = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO_MCS_MasterBall_KeyArt_TK_GP_V2_S14_1024x512_nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO_MCS_MasterBall_KeyArt_TK_GP_V2_S14_1024x512_nologo.jpg";
 			sku: "pgorelease.general2.ticket.7";
 			skuDisableTime: "2025-12-31T20:00:00";
 			skuDisableTimeUtcMs: "1767211200000";
@@ -283,33 +223,13 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket7 = S<
 		}
 	>
 >;
-export type IapItemDisplayPgoreleaseGeneral2Ticket9 = S<
-	IapItemDisplay<
-		"pgorelease.general2.ticket.9",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-fashion-raid-day-2026-nologo.jpg";
-			sku: "pgorelease.general2.ticket.9";
-			skuDisableTime: "2026-04-04T17:00:00";
-			skuDisableTimeUtcMs: "1775322000000";
-			skuEnableTime: "2019-03-14T08:00:00";
-			skuEnableTimeUtcMs: "1552550400000";
-			sortOrder: 2;
-			spriteId: "general2.ticket.9";
-			title: "general2.ticket.9_fashionRaidDay26_title";
-			webstoreSkuId: "web-fashion-raid-2026-ticket-box";
-			webstoreSkuPriceE6: 4990000;
-		}
-	>
->;
 export type IapItemDisplayPgoreleaseGeneral2Ticket10 = S<
 	IapItemDisplay<
 		"pgorelease.general2.ticket.10",
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg";
 			sku: "pgorelease.general2.ticket.10";
 			skuDisableTime: "2026-03-01T18:00:00";
 			skuDisableTimeUtcMs: "1772388000000";
@@ -327,17 +247,13 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket10 = S<
 export type IapItemDisplayCategoryHiddenImageUrlSkuSkuDisableTimeSkuDisableTimeUtcMsSkuEnableTimeSkuEnableTimeUtcMsSortOrderSpriteIdTitleWebstoreSkuIdWebstoreSkuPriceE6MasterfileEntry =
 	| IapItemDisplayEvergreenticket1
 	| IapItemDisplayGeneral1Ticket1
-	| IapItemDisplayGeneral1Ticket4
 	| IapItemDisplayGeneral2Ticket2
 	| IapItemDisplayGeneral2Ticket4
 	| IapItemDisplayGeneral2Ticket7
-	| IapItemDisplayGeneral2Ticket9
 	| IapItemDisplayGeneral2Ticket10
 	| IapItemDisplayPgoreleaseEvergreenticket1
 	| IapItemDisplayPgoreleaseGeneral1Ticket1
-	| IapItemDisplayPgoreleaseGeneral1Ticket4
 	| IapItemDisplayPgoreleaseGeneral2Ticket2
 	| IapItemDisplayPgoreleaseGeneral2Ticket4
 	| IapItemDisplayPgoreleaseGeneral2Ticket7
-	| IapItemDisplayPgoreleaseGeneral2Ticket9
 	| IapItemDisplayPgoreleaseGeneral2Ticket10;

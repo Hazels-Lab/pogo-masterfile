@@ -74,6 +74,7 @@ const (
 	LocationCardSettingsTemplateIDLc2025ValenciaCitysafari001                             LocationCardSettingsTemplateID = "LC_2025_VALENCIA_CITYSAFARI_001"
 	LocationCardSettingsTemplateIDLc2025ValenciaRoadtrip001                               LocationCardSettingsTemplateID = "LC_2025_VALENCIA_ROADTRIP_001"
 	LocationCardSettingsTemplateIDLc2025VancouverCitysafari001                            LocationCardSettingsTemplateID = "LC_2025_VANCOUVER_CITYSAFARI_001"
+	LocationCardSettingsTemplateIDLc2026Br001                                             LocationCardSettingsTemplateID = "LC_2026_BR_001"
 	LocationCardSettingsTemplateIDLc2026ChicagoGofest001                                  LocationCardSettingsTemplateID = "LC_2026_CHICAGO_GOFEST_001"
 	LocationCardSettingsTemplateIDLc2026CologneCarnival001                                LocationCardSettingsTemplateID = "LC_2026_COLOGNE_CARNIVAL_001"
 	LocationCardSettingsTemplateIDLc2026CopenhagenGofest001                               LocationCardSettingsTemplateID = "LC_2026_COPENHAGEN_GOFEST_001"
@@ -98,7 +99,26 @@ const (
 	LocationCardSettingsTemplateIDLcCitysafari2025Buenosaires                             LocationCardSettingsTemplateID = "LC_CITYSAFARI2025_BUENOSAIRES"
 	LocationCardSettingsTemplateIDLcCitysafari2025Miami                                   LocationCardSettingsTemplateID = "LC_CITYSAFARI2025_MIAMI"
 	LocationCardSettingsTemplateIDLcCitysafari2025Sydney                                  LocationCardSettingsTemplateID = "LC_CITYSAFARI2025_SYDNEY"
+	LocationCardSettingsTemplateIDLcCr2026001                                             LocationCardSettingsTemplateID = "LC_CR_2026_001"
 	LocationCardSettingsTemplateIDLcIdCarFreeDay                                          LocationCardSettingsTemplateID = "LC_ID_CAR_FREE_DAY"
+	LocationCardSettingsTemplateIDLcJapanStampRally1                                      LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_1"
+	LocationCardSettingsTemplateIDLcJapanStampRally2                                      LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_2"
+	LocationCardSettingsTemplateIDLcJapanStampRally3                                      LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_3"
+	LocationCardSettingsTemplateIDLcJapanStampRally4                                      LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_4"
+	LocationCardSettingsTemplateIDLcJapanStampRally5                                      LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_5"
+	LocationCardSettingsTemplateIDLcJapanStampRally6                                      LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_6"
+	LocationCardSettingsTemplateIDLcJapanStampRally7                                      LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_7"
+	LocationCardSettingsTemplateIDLcJapanStampRally8                                      LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_8"
+	LocationCardSettingsTemplateIDLcJapanStampRally9                                      LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_9"
+	LocationCardSettingsTemplateIDLcJapanStampRally10                                     LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_10"
+	LocationCardSettingsTemplateIDLcJapanStampRally11                                     LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_11"
+	LocationCardSettingsTemplateIDLcJapanStampRally12                                     LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_12"
+	LocationCardSettingsTemplateIDLcJapanStampRally13                                     LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_13"
+	LocationCardSettingsTemplateIDLcJapanStampRally14                                     LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_14"
+	LocationCardSettingsTemplateIDLcJapanStampRally15                                     LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_15"
+	LocationCardSettingsTemplateIDLcJapanStampRally16                                     LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_16"
+	LocationCardSettingsTemplateIDLcJapanStampRally17                                     LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_17"
+	LocationCardSettingsTemplateIDLcJapanStampRally18                                     LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_18"
 	LocationCardSettingsTemplateIDLcJejuStampRally                                        LocationCardSettingsTemplateID = "LC_JEJU_STAMP_RALLY"
 	LocationCardSettingsTemplateIDLcPokelidAichi                                          LocationCardSettingsTemplateID = "LC_POKELID_AICHI"
 	LocationCardSettingsTemplateIDLcPokelidAkita                                          LocationCardSettingsTemplateID = "LC_POKELID_AKITA"
@@ -144,6 +164,7 @@ const (
 	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestMoonUltraWormhole001 LocationCardSettingsTemplateID = "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_MOON_ULTRA_WORMHOLE_001"
 	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestSunUltraWormhole001  LocationCardSettingsTemplateID = "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_SUN_ULTRA_WORMHOLE_001"
 	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestUltraWormhole001     LocationCardSettingsTemplateID = "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_ULTRA_WORMHOLE_001"
+	LocationCardSettingsTemplateIDLcSpecialbackground10ani2026                            LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_10ANI2026"
 	LocationCardSettingsTemplateIDLcSpecialbackground2024Decembercdrecap                  LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2024_DECEMBERCDRECAP"
 	LocationCardSettingsTemplateIDLcSpecialbackground2024GlobalGofestRadiance001          LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2024_GLOBAL_GOFEST_RADIANCE_001"
 	LocationCardSettingsTemplateIDLcSpecialbackground2024GlobalGofestUmbra001             LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2024_GLOBAL_GOFEST_UMBRA_001"
@@ -169,6 +190,7 @@ const (
 	LocationCardSettingsTemplateIDLcSpecialbackground2025Season17                         LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2025_SEASON17"
 	LocationCardSettingsTemplateIDLcSpecialbackground2025Season19                         LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2025_SEASON19"
 	LocationCardSettingsTemplateIDLcSpecialbackground2025Season20                         LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2025_SEASON20"
+	LocationCardSettingsTemplateIDLcSpecialbackground2026Arraia                           LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_ARRAIA"
 	LocationCardSettingsTemplateIDLcSpecialbackground2026Communityday                     LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_COMMUNITYDAY"
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalDiamond001                 LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_GLOBAL_DIAMOND_001"
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalGofest001                  LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_GLOBAL_GOFEST_001"
@@ -185,7 +207,9 @@ const (
 	LocationCardSettingsTemplateIDLcSpecialbackgroundCon2025                              LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_CON2025"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundExtra202501                          LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_EXTRA_2025_01"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundExtra202502                          LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_EXTRA_2025_02"
+	LocationCardSettingsTemplateIDLcSpecialbackgroundGg2026                               LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_GG2026"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundKr2025Lotte01                        LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_KR2025_LOTTE_01"
+	LocationCardSettingsTemplateIDLcSpecialbackgroundLego202601                           LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_LEGO_2026_01"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundObservatoryExhibitionTour            LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_OBSERVATORY_EXHIBITION_TOUR"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundPok2026                              LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_POK2026"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundTeamBlue                             LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_TEAM_BLUE"
@@ -266,6 +290,7 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLc2025ValenciaCitysafari001,
 	LocationCardSettingsTemplateIDLc2025ValenciaRoadtrip001,
 	LocationCardSettingsTemplateIDLc2025VancouverCitysafari001,
+	LocationCardSettingsTemplateIDLc2026Br001,
 	LocationCardSettingsTemplateIDLc2026ChicagoGofest001,
 	LocationCardSettingsTemplateIDLc2026CologneCarnival001,
 	LocationCardSettingsTemplateIDLc2026CopenhagenGofest001,
@@ -290,7 +315,26 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLcCitysafari2025Buenosaires,
 	LocationCardSettingsTemplateIDLcCitysafari2025Miami,
 	LocationCardSettingsTemplateIDLcCitysafari2025Sydney,
+	LocationCardSettingsTemplateIDLcCr2026001,
 	LocationCardSettingsTemplateIDLcIdCarFreeDay,
+	LocationCardSettingsTemplateIDLcJapanStampRally1,
+	LocationCardSettingsTemplateIDLcJapanStampRally2,
+	LocationCardSettingsTemplateIDLcJapanStampRally3,
+	LocationCardSettingsTemplateIDLcJapanStampRally4,
+	LocationCardSettingsTemplateIDLcJapanStampRally5,
+	LocationCardSettingsTemplateIDLcJapanStampRally6,
+	LocationCardSettingsTemplateIDLcJapanStampRally7,
+	LocationCardSettingsTemplateIDLcJapanStampRally8,
+	LocationCardSettingsTemplateIDLcJapanStampRally9,
+	LocationCardSettingsTemplateIDLcJapanStampRally10,
+	LocationCardSettingsTemplateIDLcJapanStampRally11,
+	LocationCardSettingsTemplateIDLcJapanStampRally12,
+	LocationCardSettingsTemplateIDLcJapanStampRally13,
+	LocationCardSettingsTemplateIDLcJapanStampRally14,
+	LocationCardSettingsTemplateIDLcJapanStampRally15,
+	LocationCardSettingsTemplateIDLcJapanStampRally16,
+	LocationCardSettingsTemplateIDLcJapanStampRally17,
+	LocationCardSettingsTemplateIDLcJapanStampRally18,
 	LocationCardSettingsTemplateIDLcJejuStampRally,
 	LocationCardSettingsTemplateIDLcPokelidAichi,
 	LocationCardSettingsTemplateIDLcPokelidAkita,
@@ -336,6 +380,7 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestMoonUltraWormhole001,
 	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestSunUltraWormhole001,
 	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestUltraWormhole001,
+	LocationCardSettingsTemplateIDLcSpecialbackground10ani2026,
 	LocationCardSettingsTemplateIDLcSpecialbackground2024Decembercdrecap,
 	LocationCardSettingsTemplateIDLcSpecialbackground2024GlobalGofestRadiance001,
 	LocationCardSettingsTemplateIDLcSpecialbackground2024GlobalGofestUmbra001,
@@ -361,6 +406,7 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLcSpecialbackground2025Season17,
 	LocationCardSettingsTemplateIDLcSpecialbackground2025Season19,
 	LocationCardSettingsTemplateIDLcSpecialbackground2025Season20,
+	LocationCardSettingsTemplateIDLcSpecialbackground2026Arraia,
 	LocationCardSettingsTemplateIDLcSpecialbackground2026Communityday,
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalDiamond001,
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalGofest001,
@@ -377,7 +423,9 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLcSpecialbackgroundCon2025,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundExtra202501,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundExtra202502,
+	LocationCardSettingsTemplateIDLcSpecialbackgroundGg2026,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundKr2025Lotte01,
+	LocationCardSettingsTemplateIDLcSpecialbackgroundLego202601,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundObservatoryExhibitionTour,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundPok2026,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundTeamBlue,

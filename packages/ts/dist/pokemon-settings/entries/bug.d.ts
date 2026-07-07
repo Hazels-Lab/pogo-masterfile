@@ -2290,7 +2290,7 @@ export type PokemonSettingsV0166PokemonLedian = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["BUG_BUZZ", "SILVER_WIND", "AERIAL_ACE", "DYNAMIC_PUNCH"];
+			cinematicMoves: ["BUG_BUZZ", "SILVER_WIND", "AERIAL_ACE", "DYNAMIC_PUNCH", "ACROBATICS"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 20;
@@ -2329,7 +2329,7 @@ export type PokemonSettingsV0166PokemonLedian = S<
 			pokedexHeightM: 1.4;
 			pokedexWeightKg: 35.6;
 			pokemonId: "LEDIAN";
-			quickMoves: ["STRUGGLE_BUG_FAST", "BUG_BITE_FAST", "COUNTER_FAST"];
+			quickMoves: ["STRUGGLE_BUG_FAST", "BUG_BITE_FAST", "COUNTER_FAST", "ROLLOUT_FAST"];
 			shadow: {
 				purificationCandyNeeded: 1;
 				purificationStardustNeeded: 1000;
@@ -2370,7 +2370,7 @@ export type PokemonSettingsV0166PokemonLedianNormal = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["BUG_BUZZ", "SILVER_WIND", "AERIAL_ACE", "DYNAMIC_PUNCH"];
+			cinematicMoves: ["BUG_BUZZ", "SILVER_WIND", "AERIAL_ACE", "DYNAMIC_PUNCH", "ACROBATICS"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 20;
@@ -2410,7 +2410,7 @@ export type PokemonSettingsV0166PokemonLedianNormal = S<
 			pokedexHeightM: 1.4;
 			pokedexWeightKg: 35.6;
 			pokemonId: "LEDIAN";
-			quickMoves: ["STRUGGLE_BUG_FAST", "BUG_BITE_FAST", "COUNTER_FAST"];
+			quickMoves: ["STRUGGLE_BUG_FAST", "BUG_BITE_FAST", "COUNTER_FAST", "ROLLOUT_FAST"];
 			shadow: {
 				purificationCandyNeeded: 1;
 				purificationStardustNeeded: 1000;

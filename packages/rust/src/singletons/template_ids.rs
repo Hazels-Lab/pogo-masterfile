@@ -255,6 +255,8 @@ pub enum SingletonsTemplateId {
     SourdoughMoveMappingSettings,
     #[serde(rename = "SPECIAL_EGG_SETTINGS")]
     SpecialEggSettings,
+    #[serde(rename = "SPECIAL_RESEARCH_VISUAL_REFRESH_SETTINGS")]
+    SpecialResearchVisualRefreshSettings,
     #[serde(rename = "SPONSORED_GEOFENCE_GIFT_SETTINGS")]
     SponsoredGeofenceGiftSettings,
     #[serde(rename = "STAMP_COLLECTION_SETTINGS")]

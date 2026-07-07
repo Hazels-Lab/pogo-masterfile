@@ -1,21 +1,8 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-sale-sku-sort-order-sprite-id-title", 5 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-sale-sku-sort-order-sprite-id-title", 4 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
 
-export type IapItemDisplayBundleAtlanticav2box1 = S<
-	IapItemDisplay<
-		"bundle.atlanticav2box.1",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			sale: true;
-			sku: "bundle.atlanticav2box.1";
-			sortOrder: 1;
-			spriteId: "bundle.general2.free.1";
-			title: "boost_box_title";
-		}
-	>
->;
 export type IapItemDisplayBundleGeneral1Large1 = S<
 	IapItemDisplay<
 		"bundle.general1.large.1",
@@ -70,7 +57,6 @@ export type IapItemDisplayBundleGeneral4Small2 = S<
 >;
 
 export type IapItemDisplayCategorySaleSkuSortOrderSpriteIdTitleMasterfileEntry =
-	| IapItemDisplayBundleAtlanticav2box1
 	| IapItemDisplayBundleGeneral1Large1
 	| IapItemDisplayBundleGeneral1Small1
 	| IapItemDisplayBundleGeneral2Large1

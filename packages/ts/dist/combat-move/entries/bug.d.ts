@@ -120,7 +120,7 @@ export type CombatMoveV0262MoveSilverWind = S<
 				buffActivationChance: 0.1;
 			};
 			energyDelta: -45;
-			power: 60;
+			power: 75;
 			type: "POKEMON_TYPE_BUG";
 			uniqueId: "SILVER_WIND";
 			vfxName: "silver_wind";

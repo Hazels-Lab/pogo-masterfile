@@ -145,6 +145,8 @@ pub enum LocationCardSettingsTemplateId {
     Lc2025ValenciaRoadtrip001,
     #[serde(rename = "LC_2025_VANCOUVER_CITYSAFARI_001")]
     Lc2025VancouverCitysafari001,
+    #[serde(rename = "LC_2026_BR_001")]
+    Lc2026Br001,
     #[serde(rename = "LC_2026_CHICAGO_GOFEST_001")]
     Lc2026ChicagoGofest001,
     #[serde(rename = "LC_2026_COLOGNE_CARNIVAL_001")]
@@ -193,8 +195,46 @@ pub enum LocationCardSettingsTemplateId {
     LcCitysafari2025Miami,
     #[serde(rename = "LC_CITYSAFARI2025_SYDNEY")]
     LcCitysafari2025Sydney,
+    #[serde(rename = "LC_CR_2026_001")]
+    LcCr2026001,
     #[serde(rename = "LC_ID_CAR_FREE_DAY")]
     LcIdCarFreeDay,
+    #[serde(rename = "LC_JAPAN_STAMP_RALLY_1")]
+    LcJapanStampRally1,
+    #[serde(rename = "LC_JAPAN_STAMP_RALLY_2")]
+    LcJapanStampRally2,
+    #[serde(rename = "LC_JAPAN_STAMP_RALLY_3")]
+    LcJapanStampRally3,
+    #[serde(rename = "LC_JAPAN_STAMP_RALLY_4")]
+    LcJapanStampRally4,
+    #[serde(rename = "LC_JAPAN_STAMP_RALLY_5")]
+    LcJapanStampRally5,
+    #[serde(rename = "LC_JAPAN_STAMP_RALLY_6")]
+    LcJapanStampRally6,
+    #[serde(rename = "LC_JAPAN_STAMP_RALLY_7")]
+    LcJapanStampRally7,
+    #[serde(rename = "LC_JAPAN_STAMP_RALLY_8")]
+    LcJapanStampRally8,
+    #[serde(rename = "LC_JAPAN_STAMP_RALLY_9")]
+    LcJapanStampRally9,
+    #[serde(rename = "LC_JAPAN_STAMP_RALLY_10")]
+    LcJapanStampRally10,
+    #[serde(rename = "LC_JAPAN_STAMP_RALLY_11")]
+    LcJapanStampRally11,
+    #[serde(rename = "LC_JAPAN_STAMP_RALLY_12")]
+    LcJapanStampRally12,
+    #[serde(rename = "LC_JAPAN_STAMP_RALLY_13")]
+    LcJapanStampRally13,
+    #[serde(rename = "LC_JAPAN_STAMP_RALLY_14")]
+    LcJapanStampRally14,
+    #[serde(rename = "LC_JAPAN_STAMP_RALLY_15")]
+    LcJapanStampRally15,
+    #[serde(rename = "LC_JAPAN_STAMP_RALLY_16")]
+    LcJapanStampRally16,
+    #[serde(rename = "LC_JAPAN_STAMP_RALLY_17")]
+    LcJapanStampRally17,
+    #[serde(rename = "LC_JAPAN_STAMP_RALLY_18")]
+    LcJapanStampRally18,
     #[serde(rename = "LC_JEJU_STAMP_RALLY")]
     LcJejuStampRally,
     #[serde(rename = "LC_POKELID_AICHI")]
@@ -285,6 +325,8 @@ pub enum LocationCardSettingsTemplateId {
     LcSpecialBackground2024GlobalGofestSunUltraWormhole001,
     #[serde(rename = "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_ULTRA_WORMHOLE_001")]
     LcSpecialBackground2024GlobalGofestUltraWormhole001,
+    #[serde(rename = "LC_SPECIALBACKGROUND_10ANI2026")]
+    LcSpecialbackground10ani2026,
     #[serde(rename = "LC_SPECIALBACKGROUND_2024_DECEMBERCDRECAP")]
     LcSpecialbackground2024Decembercdrecap,
     #[serde(rename = "LC_SPECIALBACKGROUND_2024_GLOBAL_GOFEST_RADIANCE_001")]
@@ -335,6 +377,8 @@ pub enum LocationCardSettingsTemplateId {
     LcSpecialbackground2025Season19,
     #[serde(rename = "LC_SPECIALBACKGROUND_2025_SEASON20")]
     LcSpecialbackground2025Season20,
+    #[serde(rename = "LC_SPECIALBACKGROUND_2026_ARRAIA")]
+    LcSpecialbackground2026Arraia,
     #[serde(rename = "LC_SPECIALBACKGROUND_2026_COMMUNITYDAY")]
     LcSpecialbackground2026Communityday,
     #[serde(rename = "LC_SPECIALBACKGROUND_2026_GLOBAL_DIAMOND_001")]
@@ -367,8 +411,12 @@ pub enum LocationCardSettingsTemplateId {
     LcSpecialbackgroundExtra202501,
     #[serde(rename = "LC_SPECIALBACKGROUND_EXTRA_2025_02")]
     LcSpecialbackgroundExtra202502,
+    #[serde(rename = "LC_SPECIALBACKGROUND_GG2026")]
+    LcSpecialbackgroundGg2026,
     #[serde(rename = "LC_SPECIALBACKGROUND_KR2025_LOTTE_01")]
     LcSpecialbackgroundKr2025Lotte01,
+    #[serde(rename = "LC_SPECIALBACKGROUND_LEGO_2026_01")]
+    LcSpecialbackgroundLego202601,
     #[serde(rename = "LC_SPECIALBACKGROUND_OBSERVATORY_EXHIBITION_TOUR")]
     LcSpecialbackgroundObservatoryExhibitionTour,
     #[serde(rename = "LC_SPECIALBACKGROUND_POK2026")]

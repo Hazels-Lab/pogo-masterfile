@@ -431,6 +431,13 @@ const (
 	IapItemDisplayTemplateIDBundleGofest20242                                      IapItemDisplayTemplateID = "bundle.gofest2024.2"
 	IapItemDisplayTemplateIDBundleGofest20243                                      IapItemDisplayTemplateID = "bundle.gofest2024.3"
 	IapItemDisplayTemplateIDBundleGofest20244                                      IapItemDisplayTemplateID = "bundle.gofest2024.4"
+	IapItemDisplayTemplateIDBundleGofest20261                                      IapItemDisplayTemplateID = "bundle.GOFest2026.1"
+	IapItemDisplayTemplateIDBundleGofest20262                                      IapItemDisplayTemplateID = "bundle.GOFest2026.2"
+	IapItemDisplayTemplateIDBundleGofest20263                                      IapItemDisplayTemplateID = "bundle.GOFest2026.3"
+	IapItemDisplayTemplateIDBundleGofest20264                                      IapItemDisplayTemplateID = "bundle.GOFest2026.4"
+	IapItemDisplayTemplateIDBundleGofest20265                                      IapItemDisplayTemplateID = "bundle.GOFest2026.5"
+	IapItemDisplayTemplateIDBundleGofest20266                                      IapItemDisplayTemplateID = "bundle.GOFest2026.6"
+	IapItemDisplayTemplateIDBundleGofest20267                                      IapItemDisplayTemplateID = "bundle.GOFest2026.7"
 	IapItemDisplayTemplateIDBundleGofestmakegoodprep1                              IapItemDisplayTemplateID = "bundle.gofestmakegoodprep.1"
 	IapItemDisplayTemplateIDBundleGofestmakegoodprep2                              IapItemDisplayTemplateID = "bundle.gofestmakegoodprep.2"
 	IapItemDisplayTemplateIDBundleGofestmakegoodprep3                              IapItemDisplayTemplateID = "bundle.gofestmakegoodprep.3"
@@ -581,6 +588,7 @@ const (
 	IapItemDisplayTemplateIDBundleZoruamakegood2022                                IapItemDisplayTemplateID = "bundle.zoruamakegood2022"
 	IapItemDisplayTemplateIDBundleZzraid1                                          IapItemDisplayTemplateID = "bundle.zzraid.1"
 	IapItemDisplayTemplateIDDiademuertos                                           IapItemDisplayTemplateID = "diademuertos"
+	IapItemDisplayTemplateIDEventPassAmer2026StoreRedirect                         IapItemDisplayTemplateID = "EVENT_PASS_AMER2026_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEventPassApril1SeasonStoreRedirect                     IapItemDisplayTemplateID = "EVENT_PASS_APRIL1_SEASON_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEventPassApril3EventStoreRedirect                      IapItemDisplayTemplateID = "EVENT_PASS_APRIL3_EVENT_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEventPassGofest2025FinaleStoreRedirect                 IapItemDisplayTemplateID = "EVENT_PASS_GOFEST2025_FINALE_STORE_REDIRECT"
@@ -588,8 +596,11 @@ const (
 	IapItemDisplayTemplateIDEventPassGotour2025GlobalStoreRedirect                 IapItemDisplayTemplateID = "EVENT_PASS_GOTOUR2025_GLOBAL_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEventPassGowild2025GlobalStoreRedirect                 IapItemDisplayTemplateID = "EVENT_PASS_GOWILD2025_GLOBAL_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEventPassHalloween2025SeasonStoreRedirect              IapItemDisplayTemplateID = "EVENT_PASS_HALLOWEEN2025_SEASON_STORE_REDIRECT"
+	IapItemDisplayTemplateIDEventPassJune2EventStoreRedirect                       IapItemDisplayTemplateID = "EVENT_PASS_JUNE2_EVENT_STORE_REDIRECT"
+	IapItemDisplayTemplateIDEventPassJune4EventStoreRedirect                       IapItemDisplayTemplateID = "EVENT_PASS_JUNE4_EVENT_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEventPassMarch1SeasonStoreRedirect                     IapItemDisplayTemplateID = "EVENT_PASS_MARCH1_SEASON_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEventPassMarch2SeasonStoreRedirect                     IapItemDisplayTemplateID = "EVENT_PASS_MARCH2_SEASON_STORE_REDIRECT"
+	IapItemDisplayTemplateIDEventPassMay2EventStoreRedirect                        IapItemDisplayTemplateID = "EVENT_PASS_MAY2_EVENT_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEventPassMonth1SeasonStoreRedirect                     IapItemDisplayTemplateID = "EVENT_PASS_MONTH1_SEASON_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEventPassMonth2SeasonStoreRedirect                     IapItemDisplayTemplateID = "EVENT_PASS_MONTH2_SEASON_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEventPassMonth3SeasonStoreRedirect                     IapItemDisplayTemplateID = "EVENT_PASS_MONTH3_SEASON_STORE_REDIRECT"
@@ -603,13 +614,13 @@ const (
 	IapItemDisplayTemplateIDGeneral1Ticket2Giftable                                IapItemDisplayTemplateID = "general1.ticket.2.giftable"
 	IapItemDisplayTemplateIDGeneral1Ticket3                                        IapItemDisplayTemplateID = "general1.ticket.3"
 	IapItemDisplayTemplateIDGeneral1Ticket4                                        IapItemDisplayTemplateID = "general1.ticket.4"
-	IapItemDisplayTemplateIDGeneral1Ticket4Giftable                                IapItemDisplayTemplateID = "general1.ticket.4.giftable"
 	IapItemDisplayTemplateIDGeneral1Ticket5                                        IapItemDisplayTemplateID = "general1.ticket.5"
 	IapItemDisplayTemplateIDGeneral1Ticket6                                        IapItemDisplayTemplateID = "general1.ticket.6"
 	IapItemDisplayTemplateIDGeneral2Ticket1                                        IapItemDisplayTemplateID = "general2.ticket.1"
 	IapItemDisplayTemplateIDGeneral2Ticket1Giftable                                IapItemDisplayTemplateID = "general2.ticket.1.giftable"
 	IapItemDisplayTemplateIDGeneral2Ticket2                                        IapItemDisplayTemplateID = "general2.ticket.2"
 	IapItemDisplayTemplateIDGeneral2Ticket2Giftable                                IapItemDisplayTemplateID = "general2.ticket.2.giftable"
+	IapItemDisplayTemplateIDGeneral2Ticket3                                        IapItemDisplayTemplateID = "general2.ticket.3"
 	IapItemDisplayTemplateIDGeneral2Ticket4                                        IapItemDisplayTemplateID = "general2.ticket.4"
 	IapItemDisplayTemplateIDGeneral2Ticket4Giftable                                IapItemDisplayTemplateID = "general2.ticket.4.giftable"
 	IapItemDisplayTemplateIDGeneral2Ticket6                                        IapItemDisplayTemplateID = "general2.ticket.6"
@@ -618,7 +629,6 @@ const (
 	IapItemDisplayTemplateIDGeneral2Ticket8                                        IapItemDisplayTemplateID = "general2.ticket.8"
 	IapItemDisplayTemplateIDGeneral2Ticket8Giftable                                IapItemDisplayTemplateID = "general2.ticket.8.giftable"
 	IapItemDisplayTemplateIDGeneral2Ticket9                                        IapItemDisplayTemplateID = "general2.ticket.9"
-	IapItemDisplayTemplateIDGeneral2Ticket9Giftable                                IapItemDisplayTemplateID = "general2.ticket.9.giftable"
 	IapItemDisplayTemplateIDGeneral2Ticket10                                       IapItemDisplayTemplateID = "general2.ticket.10"
 	IapItemDisplayTemplateIDGeneral2Ticket10Giftable                               IapItemDisplayTemplateID = "general2.ticket.10.giftable"
 	IapItemDisplayTemplateIDGeneral4Medium1                                        IapItemDisplayTemplateID = "general4.medium.1"
@@ -647,6 +657,14 @@ const (
 	IapItemDisplayTemplateIDItemEnhancedCurrency200                                IapItemDisplayTemplateID = "ITEM_ENHANCED_CURRENCY_200"
 	IapItemDisplayTemplateIDItemEnhancedCurrency600                                IapItemDisplayTemplateID = "ITEM_ENHANCED_CURRENCY_600"
 	IapItemDisplayTemplateIDItemleadermap                                          IapItemDisplayTemplateID = "itemleadermap"
+	IapItemDisplayTemplateIDJuly1DeluxeEventPassTrackUnlock                        IapItemDisplayTemplateID = "JULY1_DELUXE_EVENT_PASS_TRACK_UNLOCK"
+	IapItemDisplayTemplateIDJuly1DeluxeEventPassTrackUnlockPlusPoints              IapItemDisplayTemplateID = "JULY1_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
+	IapItemDisplayTemplateIDJune12026DeluxeEventPassTrackUnlock                    IapItemDisplayTemplateID = "JUNE1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK"
+	IapItemDisplayTemplateIDJune12026DeluxeEventPassTrackUnlockPlusPoints          IapItemDisplayTemplateID = "JUNE1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
+	IapItemDisplayTemplateIDJune22026DeluxeEventPassTrackUnlock                    IapItemDisplayTemplateID = "JUNE2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK"
+	IapItemDisplayTemplateIDJune22026DeluxeEventPassTrackUnlockPlusPoints          IapItemDisplayTemplateID = "JUNE2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
+	IapItemDisplayTemplateIDJune42026DeluxeEventPassTrackUnlock                    IapItemDisplayTemplateID = "JUNE4_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK"
+	IapItemDisplayTemplateIDJune42026DeluxeEventPassTrackUnlockPlusPoints          IapItemDisplayTemplateID = "JUNE4_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
 	IapItemDisplayTemplateIDLuckyegg1                                              IapItemDisplayTemplateID = "luckyegg.1"
 	IapItemDisplayTemplateIDLuckyegg8                                              IapItemDisplayTemplateID = "luckyegg.8"
 	IapItemDisplayTemplateIDMarch12026DeluxeEventPassTrackUnlock                   IapItemDisplayTemplateID = "MARCH1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK"
@@ -743,8 +761,6 @@ const (
 	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket1Giftable                      IapItemDisplayTemplateID = "pgorelease.general1.ticket.1.giftable"
 	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket2                              IapItemDisplayTemplateID = "pgorelease.general1.ticket.2"
 	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket2Giftable                      IapItemDisplayTemplateID = "pgorelease.general1.ticket.2.giftable"
-	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket4                              IapItemDisplayTemplateID = "pgorelease.general1.ticket.4"
-	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket4Giftable                      IapItemDisplayTemplateID = "pgorelease.general1.ticket.4.giftable"
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket1                              IapItemDisplayTemplateID = "pgorelease.general2.ticket.1"
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket1Giftable                      IapItemDisplayTemplateID = "pgorelease.general2.ticket.1.giftable"
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket2                              IapItemDisplayTemplateID = "pgorelease.general2.ticket.2"
@@ -755,18 +771,16 @@ const (
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket7Giftable                      IapItemDisplayTemplateID = "pgorelease.general2.ticket.7.giftable"
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket8                              IapItemDisplayTemplateID = "pgorelease.general2.ticket.8"
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket8Giftable                      IapItemDisplayTemplateID = "pgorelease.general2.ticket.8.giftable"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket9                              IapItemDisplayTemplateID = "pgorelease.general2.ticket.9"
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket9Giftable                      IapItemDisplayTemplateID = "pgorelease.general2.ticket.9.giftable"
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket10                             IapItemDisplayTemplateID = "pgorelease.general2.ticket.10"
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket10Giftable                     IapItemDisplayTemplateID = "pgorelease.general2.ticket.10.giftable"
 	IapItemDisplayTemplateIDPgoreleaseGofest2025DeluxeEventPassTrackRedirect       IapItemDisplayTemplateID = "pgorelease.gofest_2025_deluxe_event_pass_track_redirect"
+	IapItemDisplayTemplateIDPgoreleaseGofestDeluxeEventPassTrackUnlock             IapItemDisplayTemplateID = "pgorelease.gofest_deluxe_event_pass_track_unlock"
+	IapItemDisplayTemplateIDPgoreleaseGofestDeluxeEventPassTrackUnlockPlusPoints   IapItemDisplayTemplateID = "pgorelease.gofest_deluxe_event_pass_track_unlock_plus_points"
+	IapItemDisplayTemplateIDPgoreleaseJuly1DeluxeEventPassTrackRedirect            IapItemDisplayTemplateID = "pgorelease.july1_deluxe_event_pass_track_redirect"
 	IapItemDisplayTemplateIDPgoreleaseMay12026DeluxeEventPassTrackRedirect         IapItemDisplayTemplateID = "pgorelease.may1_2026_deluxe_event_pass_track_redirect"
-	IapItemDisplayTemplateIDPgoreleaseMay12026DeluxeEventPassTrackUnlock           IapItemDisplayTemplateID = "pgorelease.may1_2026_deluxe_event_pass_track_unlock"
-	IapItemDisplayTemplateIDPgoreleaseMay12026DeluxeEventPassTrackUnlockPlusPoints IapItemDisplayTemplateID = "pgorelease.may1_2026_deluxe_event_pass_track_unlock_plus_points"
 	IapItemDisplayTemplateIDPgoreleaseMay12026DeluxeEventPassTrackUnlockRedirect   IapItemDisplayTemplateID = "pgorelease.may1_2026_deluxe_event_pass_track_unlock_redirect"
-	IapItemDisplayTemplateIDPgoreleaseMay22026DeluxeEventPassTrackUnlockRedirect   IapItemDisplayTemplateID = "pgorelease.may2_2026_deluxe_event_pass_track_unlock_redirect"
-	IapItemDisplayTemplateIDPgoreleaseMonth3DeluxeEventPassTrackUnlock             IapItemDisplayTemplateID = "pgorelease.month3_deluxe_event_pass_track_unlock"
-	IapItemDisplayTemplateIDPgoreleaseMonth3DeluxeEventPassTrackUnlockPlusPoints   IapItemDisplayTemplateID = "pgorelease.month3_deluxe_event_pass_track_unlock_plus_points"
+	IapItemDisplayTemplateIDPgoreleaseMonth1DeluxeEventPassTrackUnlock             IapItemDisplayTemplateID = "pgorelease.month1_deluxe_event_pass_track_unlock"
+	IapItemDisplayTemplateIDPgoreleaseMonth1DeluxeEventPassTrackUnlockPlusPoints   IapItemDisplayTemplateID = "pgorelease.month1_deluxe_event_pass_track_unlock_plus_points"
 	IapItemDisplayTemplateIDPgoreleasePokecoin2750                                 IapItemDisplayTemplateID = "pgorelease.pokecoin.2750"
 	IapItemDisplayTemplateIDPgoreleasePokecoin5720                                 IapItemDisplayTemplateID = "pgorelease.pokecoin.5720"
 	IapItemDisplayTemplateIDPgoreleasePokecoin15950                                IapItemDisplayTemplateID = "pgorelease.pokecoin.15950"
@@ -794,6 +808,10 @@ const (
 	IapItemDisplayTemplateIDSticker9anniv25                                        IapItemDisplayTemplateID = "STICKER_9ANNIV_2.5"
 	IapItemDisplayTemplateIDSticker9anniv33                                        IapItemDisplayTemplateID = "STICKER_9ANNIV_3.3"
 	IapItemDisplayTemplateIDSticker9anniv35                                        IapItemDisplayTemplateID = "STICKER_9ANNIV_3.5"
+	IapItemDisplayTemplateIDSticker10anniv13                                       IapItemDisplayTemplateID = "STICKER_10ANNIV_1.3"
+	IapItemDisplayTemplateIDSticker10anniv15                                       IapItemDisplayTemplateID = "STICKER_10ANNIV_1.5"
+	IapItemDisplayTemplateIDSticker10anniv23                                       IapItemDisplayTemplateID = "STICKER_10ANNIV_2.3"
+	IapItemDisplayTemplateIDSticker10anniv25                                       IapItemDisplayTemplateID = "STICKER_10ANNIV_2.5"
 	IapItemDisplayTemplateIDSticker2023collab13                                    IapItemDisplayTemplateID = "STICKER_2023COLLAB_1.3"
 	IapItemDisplayTemplateIDSticker2023collab15                                    IapItemDisplayTemplateID = "STICKER_2023COLLAB_1.5"
 	IapItemDisplayTemplateIDSticker2023collab23                                    IapItemDisplayTemplateID = "STICKER_2023COLLAB_2.3"
@@ -1148,6 +1166,18 @@ const (
 	IapItemDisplayTemplateIDStickerPgoFest2025Logo5                                IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025_LOGO.5"
 	IapItemDisplayTemplateIDStickerPgoFest20253                                    IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025.3"
 	IapItemDisplayTemplateIDStickerPgoFest20255                                    IapItemDisplayTemplateID = "STICKER_PGO_FEST_2025.5"
+	IapItemDisplayTemplateIDStickerPgoFest202613                                   IapItemDisplayTemplateID = "STICKER_PGO_FEST_2026_1.3"
+	IapItemDisplayTemplateIDStickerPgoFest202615                                   IapItemDisplayTemplateID = "STICKER_PGO_FEST_2026_1.5"
+	IapItemDisplayTemplateIDStickerPgoFest202623                                   IapItemDisplayTemplateID = "STICKER_PGO_FEST_2026_2.3"
+	IapItemDisplayTemplateIDStickerPgoFest202625                                   IapItemDisplayTemplateID = "STICKER_PGO_FEST_2026_2.5"
+	IapItemDisplayTemplateIDStickerPgoFest202633                                   IapItemDisplayTemplateID = "STICKER_PGO_FEST_2026_3.3"
+	IapItemDisplayTemplateIDStickerPgoFest202635                                   IapItemDisplayTemplateID = "STICKER_PGO_FEST_2026_3.5"
+	IapItemDisplayTemplateIDStickerPgoFest202643                                   IapItemDisplayTemplateID = "STICKER_PGO_FEST_2026_4.3"
+	IapItemDisplayTemplateIDStickerPgoFest202645                                   IapItemDisplayTemplateID = "STICKER_PGO_FEST_2026_4.5"
+	IapItemDisplayTemplateIDStickerPgoFest2026Logo3                                IapItemDisplayTemplateID = "STICKER_PGO_FEST_2026_LOGO.3"
+	IapItemDisplayTemplateIDStickerPgoFest2026Logo5                                IapItemDisplayTemplateID = "STICKER_PGO_FEST_2026_LOGO.5"
+	IapItemDisplayTemplateIDStickerPgoFest20263                                    IapItemDisplayTemplateID = "STICKER_PGO_FEST_2026.3"
+	IapItemDisplayTemplateIDStickerPgoFest20265                                    IapItemDisplayTemplateID = "STICKER_PGO_FEST_2026.5"
 	IapItemDisplayTemplateIDStickerPgoFestVictini053                               IapItemDisplayTemplateID = "STICKER_PGO_FEST_VICTINI_05.3"
 	IapItemDisplayTemplateIDStickerPgoFestVictini055                               IapItemDisplayTemplateID = "STICKER_PGO_FEST_VICTINI_05.5"
 	IapItemDisplayTemplateIDStickerPgoTour202613                                   IapItemDisplayTemplateID = "STICKER_PGO_TOUR_2026_1.3"
@@ -1354,6 +1384,14 @@ const (
 	IapItemDisplayTemplateIDStickerSummer202535                                    IapItemDisplayTemplateID = "STICKER_SUMMER_2025_3.5"
 	IapItemDisplayTemplateIDStickerSummer202543                                    IapItemDisplayTemplateID = "STICKER_SUMMER_2025_4.3"
 	IapItemDisplayTemplateIDStickerSummer202545                                    IapItemDisplayTemplateID = "STICKER_SUMMER_2025_4.5"
+	IapItemDisplayTemplateIDStickerSummer202613                                    IapItemDisplayTemplateID = "STICKER_SUMMER_2026_1.3"
+	IapItemDisplayTemplateIDStickerSummer202615                                    IapItemDisplayTemplateID = "STICKER_SUMMER_2026_1.5"
+	IapItemDisplayTemplateIDStickerSummer202623                                    IapItemDisplayTemplateID = "STICKER_SUMMER_2026_2.3"
+	IapItemDisplayTemplateIDStickerSummer202625                                    IapItemDisplayTemplateID = "STICKER_SUMMER_2026_2.5"
+	IapItemDisplayTemplateIDStickerSummer202633                                    IapItemDisplayTemplateID = "STICKER_SUMMER_2026_3.3"
+	IapItemDisplayTemplateIDStickerSummer202635                                    IapItemDisplayTemplateID = "STICKER_SUMMER_2026_3.5"
+	IapItemDisplayTemplateIDStickerSummer202643                                    IapItemDisplayTemplateID = "STICKER_SUMMER_2026_4.3"
+	IapItemDisplayTemplateIDStickerSummer202645                                    IapItemDisplayTemplateID = "STICKER_SUMMER_2026_4.5"
 	IapItemDisplayTemplateIDStickerSwordshield2113                                 IapItemDisplayTemplateID = "STICKER_SWORDSHIELD21_1.3"
 	IapItemDisplayTemplateIDStickerSwordshield2115                                 IapItemDisplayTemplateID = "STICKER_SWORDSHIELD21_1.5"
 	IapItemDisplayTemplateIDStickerSwordshield2123                                 IapItemDisplayTemplateID = "STICKER_SWORDSHIELD21_2.3"
@@ -1885,6 +1923,13 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDBundleGofest20242,
 	IapItemDisplayTemplateIDBundleGofest20243,
 	IapItemDisplayTemplateIDBundleGofest20244,
+	IapItemDisplayTemplateIDBundleGofest20261,
+	IapItemDisplayTemplateIDBundleGofest20262,
+	IapItemDisplayTemplateIDBundleGofest20263,
+	IapItemDisplayTemplateIDBundleGofest20264,
+	IapItemDisplayTemplateIDBundleGofest20265,
+	IapItemDisplayTemplateIDBundleGofest20266,
+	IapItemDisplayTemplateIDBundleGofest20267,
 	IapItemDisplayTemplateIDBundleGofestmakegoodprep1,
 	IapItemDisplayTemplateIDBundleGofestmakegoodprep2,
 	IapItemDisplayTemplateIDBundleGofestmakegoodprep3,
@@ -2035,6 +2080,7 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDBundleZoruamakegood2022,
 	IapItemDisplayTemplateIDBundleZzraid1,
 	IapItemDisplayTemplateIDDiademuertos,
+	IapItemDisplayTemplateIDEventPassAmer2026StoreRedirect,
 	IapItemDisplayTemplateIDEventPassApril1SeasonStoreRedirect,
 	IapItemDisplayTemplateIDEventPassApril3EventStoreRedirect,
 	IapItemDisplayTemplateIDEventPassGofest2025FinaleStoreRedirect,
@@ -2042,8 +2088,11 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDEventPassGotour2025GlobalStoreRedirect,
 	IapItemDisplayTemplateIDEventPassGowild2025GlobalStoreRedirect,
 	IapItemDisplayTemplateIDEventPassHalloween2025SeasonStoreRedirect,
+	IapItemDisplayTemplateIDEventPassJune2EventStoreRedirect,
+	IapItemDisplayTemplateIDEventPassJune4EventStoreRedirect,
 	IapItemDisplayTemplateIDEventPassMarch1SeasonStoreRedirect,
 	IapItemDisplayTemplateIDEventPassMarch2SeasonStoreRedirect,
+	IapItemDisplayTemplateIDEventPassMay2EventStoreRedirect,
 	IapItemDisplayTemplateIDEventPassMonth1SeasonStoreRedirect,
 	IapItemDisplayTemplateIDEventPassMonth2SeasonStoreRedirect,
 	IapItemDisplayTemplateIDEventPassMonth3SeasonStoreRedirect,
@@ -2057,13 +2106,13 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDGeneral1Ticket2Giftable,
 	IapItemDisplayTemplateIDGeneral1Ticket3,
 	IapItemDisplayTemplateIDGeneral1Ticket4,
-	IapItemDisplayTemplateIDGeneral1Ticket4Giftable,
 	IapItemDisplayTemplateIDGeneral1Ticket5,
 	IapItemDisplayTemplateIDGeneral1Ticket6,
 	IapItemDisplayTemplateIDGeneral2Ticket1,
 	IapItemDisplayTemplateIDGeneral2Ticket1Giftable,
 	IapItemDisplayTemplateIDGeneral2Ticket2,
 	IapItemDisplayTemplateIDGeneral2Ticket2Giftable,
+	IapItemDisplayTemplateIDGeneral2Ticket3,
 	IapItemDisplayTemplateIDGeneral2Ticket4,
 	IapItemDisplayTemplateIDGeneral2Ticket4Giftable,
 	IapItemDisplayTemplateIDGeneral2Ticket6,
@@ -2072,7 +2121,6 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDGeneral2Ticket8,
 	IapItemDisplayTemplateIDGeneral2Ticket8Giftable,
 	IapItemDisplayTemplateIDGeneral2Ticket9,
-	IapItemDisplayTemplateIDGeneral2Ticket9Giftable,
 	IapItemDisplayTemplateIDGeneral2Ticket10,
 	IapItemDisplayTemplateIDGeneral2Ticket10Giftable,
 	IapItemDisplayTemplateIDGeneral4Medium1,
@@ -2101,6 +2149,14 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDItemEnhancedCurrency200,
 	IapItemDisplayTemplateIDItemEnhancedCurrency600,
 	IapItemDisplayTemplateIDItemleadermap,
+	IapItemDisplayTemplateIDJuly1DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDJuly1DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDJune12026DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDJune12026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDJune22026DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDJune22026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDJune42026DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDJune42026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDLuckyegg1,
 	IapItemDisplayTemplateIDLuckyegg8,
 	IapItemDisplayTemplateIDMarch12026DeluxeEventPassTrackUnlock,
@@ -2197,8 +2253,6 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket1Giftable,
 	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket2,
 	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket2Giftable,
-	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket4,
-	IapItemDisplayTemplateIDPgoreleaseGeneral1Ticket4Giftable,
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket1,
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket1Giftable,
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket2,
@@ -2209,18 +2263,16 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket7Giftable,
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket8,
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket8Giftable,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket9,
-	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket9Giftable,
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket10,
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket10Giftable,
 	IapItemDisplayTemplateIDPgoreleaseGofest2025DeluxeEventPassTrackRedirect,
+	IapItemDisplayTemplateIDPgoreleaseGofestDeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDPgoreleaseGofestDeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDPgoreleaseJuly1DeluxeEventPassTrackRedirect,
 	IapItemDisplayTemplateIDPgoreleaseMay12026DeluxeEventPassTrackRedirect,
-	IapItemDisplayTemplateIDPgoreleaseMay12026DeluxeEventPassTrackUnlock,
-	IapItemDisplayTemplateIDPgoreleaseMay12026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDPgoreleaseMay12026DeluxeEventPassTrackUnlockRedirect,
-	IapItemDisplayTemplateIDPgoreleaseMay22026DeluxeEventPassTrackUnlockRedirect,
-	IapItemDisplayTemplateIDPgoreleaseMonth3DeluxeEventPassTrackUnlock,
-	IapItemDisplayTemplateIDPgoreleaseMonth3DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDPgoreleaseMonth1DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDPgoreleaseMonth1DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDPgoreleasePokecoin2750,
 	IapItemDisplayTemplateIDPgoreleasePokecoin5720,
 	IapItemDisplayTemplateIDPgoreleasePokecoin15950,
@@ -2248,6 +2300,10 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDSticker9anniv25,
 	IapItemDisplayTemplateIDSticker9anniv33,
 	IapItemDisplayTemplateIDSticker9anniv35,
+	IapItemDisplayTemplateIDSticker10anniv13,
+	IapItemDisplayTemplateIDSticker10anniv15,
+	IapItemDisplayTemplateIDSticker10anniv23,
+	IapItemDisplayTemplateIDSticker10anniv25,
 	IapItemDisplayTemplateIDSticker2023collab13,
 	IapItemDisplayTemplateIDSticker2023collab15,
 	IapItemDisplayTemplateIDSticker2023collab23,
@@ -2602,6 +2658,18 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDStickerPgoFest2025Logo5,
 	IapItemDisplayTemplateIDStickerPgoFest20253,
 	IapItemDisplayTemplateIDStickerPgoFest20255,
+	IapItemDisplayTemplateIDStickerPgoFest202613,
+	IapItemDisplayTemplateIDStickerPgoFest202615,
+	IapItemDisplayTemplateIDStickerPgoFest202623,
+	IapItemDisplayTemplateIDStickerPgoFest202625,
+	IapItemDisplayTemplateIDStickerPgoFest202633,
+	IapItemDisplayTemplateIDStickerPgoFest202635,
+	IapItemDisplayTemplateIDStickerPgoFest202643,
+	IapItemDisplayTemplateIDStickerPgoFest202645,
+	IapItemDisplayTemplateIDStickerPgoFest2026Logo3,
+	IapItemDisplayTemplateIDStickerPgoFest2026Logo5,
+	IapItemDisplayTemplateIDStickerPgoFest20263,
+	IapItemDisplayTemplateIDStickerPgoFest20265,
 	IapItemDisplayTemplateIDStickerPgoFestVictini053,
 	IapItemDisplayTemplateIDStickerPgoFestVictini055,
 	IapItemDisplayTemplateIDStickerPgoTour202613,
@@ -2808,6 +2876,14 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDStickerSummer202535,
 	IapItemDisplayTemplateIDStickerSummer202543,
 	IapItemDisplayTemplateIDStickerSummer202545,
+	IapItemDisplayTemplateIDStickerSummer202613,
+	IapItemDisplayTemplateIDStickerSummer202615,
+	IapItemDisplayTemplateIDStickerSummer202623,
+	IapItemDisplayTemplateIDStickerSummer202625,
+	IapItemDisplayTemplateIDStickerSummer202633,
+	IapItemDisplayTemplateIDStickerSummer202635,
+	IapItemDisplayTemplateIDStickerSummer202643,
+	IapItemDisplayTemplateIDStickerSummer202645,
 	IapItemDisplayTemplateIDStickerSwordshield2113,
 	IapItemDisplayTemplateIDStickerSwordshield2115,
 	IapItemDisplayTemplateIDStickerSwordshield2123,

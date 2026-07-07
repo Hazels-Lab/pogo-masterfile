@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-region-id-release-date", 258 entries.
+// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-region-id-release-date", 261 entries.
 
 import type { S } from "../../_utils";
 import type { StickerMetadata } from "../types";
@@ -33,6 +33,28 @@ export type StickerMetadata8anniv4 = S<
 			pokemonId: "MELTAN";
 			regionId: 6;
 			releaseDate: 20240620;
+		}
+	>
+>;
+export type StickerMetadata10anniv1 = S<
+	StickerMetadata<
+		"STICKER_10ANNIV_1",
+		{
+			category: ["Pokemon"];
+			pokemonId: "GIMMIGHOUL";
+			regionId: 1001;
+			releaseDate: 20260703;
+		}
+	>
+>;
+export type StickerMetadata10anniv2 = S<
+	StickerMetadata<
+		"STICKER_10ANNIV_2",
+		{
+			category: ["Pokemon"];
+			pokemonId: "GHOLDENGO";
+			regionId: 1001;
+			releaseDate: 20260703;
 		}
 	>
 >;
@@ -2346,6 +2368,17 @@ export type StickerMetadataSummer20254 = S<
 		}
 	>
 >;
+export type StickerMetadataSummer20264 = S<
+	StickerMetadata<
+		"STICKER_SUMMER_2026_4",
+		{
+			category: ["Pokemon"];
+			pokemonId: "LUDICOLO";
+			regionId: 2;
+			releaseDate: 20260602;
+		}
+	>
+>;
 export type StickerMetadataTeddiursa1 = S<
 	StickerMetadata<
 		"STICKER_TEDDIURSA_1",
@@ -2846,6 +2879,8 @@ export type StickerMetadataPokemonIdRegionIdReleaseDateMasterfileEntry =
 	| StickerMetadata7anniv5
 	| StickerMetadata8anniv3
 	| StickerMetadata8anniv4
+	| StickerMetadata10anniv1
+	| StickerMetadata10anniv2
 	| StickerMetadataAlolaishi1
 	| StickerMetadataAlolaishi2
 	| StickerMetadataAlolaishi3
@@ -3056,6 +3091,7 @@ export type StickerMetadataPokemonIdRegionIdReleaseDateMasterfileEntry =
 	| StickerMetadataSummer20252
 	| StickerMetadataSummer20253
 	| StickerMetadataSummer20254
+	| StickerMetadataSummer20264
 	| StickerMetadataTeddiursa1
 	| StickerMetadataTeddiursa2
 	| StickerMetadataTeddiursa3

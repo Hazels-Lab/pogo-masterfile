@@ -302,9 +302,6 @@ export interface PlayerLevel {
 				0.8653,
 				0.8653,
 			];
-			extendedPlayerLevelThreshold: 70;
-			levelRequirementsV2Enabled: true;
-			levelUpScreenV3Enabled: true;
 			maxEggPlayerLevel: 20;
 			maxEncounterPlayerLevel: 30;
 			maxQuestEncounterPlayerLevel: 15;
@@ -473,8 +470,7 @@ export interface PlayerLevel {
 				187353000,
 				203353000,
 			];
-			smoreFtueImageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Smores_Launch_KeyArt_v8_1024x512_ingame.jpg";
-			xpRewardV2Enabled: true;
+			smoreFtueImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Smores_Launch_KeyArt_v8_1024x512_ingame.jpg";
 			xpRewardV2Thresholds: {
 				source: "EVENT_PASS";
 				threshold: 1000000;

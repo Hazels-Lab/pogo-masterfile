@@ -2850,10 +2850,14 @@ export type PokemonSettingsV0610PokemonAxew = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 10;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.4;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 25;
+					candyCostPurified: 22;
 					evolution: "FRAXURE";
 				},
 			];
@@ -2872,6 +2876,12 @@ export type PokemonSettingsV0610PokemonAxew = S<
 			pokedexWeightKg: 18;
 			pokemonId: "AXEW";
 			quickMoves: ["SCRATCH_FAST", "IRON_TAIL_FAST"];
+			shadow: {
+				purificationCandyNeeded: 5;
+				purificationStardustNeeded: 5000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 154;
 				baseDefense: 101;
@@ -2919,10 +2929,14 @@ export type PokemonSettingsV0610PokemonAxewNormal = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 10;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.4;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 25;
+					candyCostPurified: 22;
 					evolution: "FRAXURE";
 					form: "FRAXURE_NORMAL";
 				},
@@ -2943,6 +2957,12 @@ export type PokemonSettingsV0610PokemonAxewNormal = S<
 			pokedexWeightKg: 18;
 			pokemonId: "AXEW";
 			quickMoves: ["SCRATCH_FAST", "IRON_TAIL_FAST"];
+			shadow: {
+				purificationCandyNeeded: 5;
+				purificationStardustNeeded: 5000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 154;
 				baseDefense: 101;
@@ -2993,10 +3013,14 @@ export type PokemonSettingsV0611PokemonFraxure = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 10;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.1;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 100;
+					candyCostPurified: 90;
 					evolution: "HAXORUS";
 				},
 			];
@@ -3016,6 +3040,12 @@ export type PokemonSettingsV0611PokemonFraxure = S<
 			pokedexWeightKg: 36;
 			pokemonId: "FRAXURE";
 			quickMoves: ["DRAGON_TAIL_FAST", "IRON_TAIL_FAST"];
+			shadow: {
+				purificationCandyNeeded: 5;
+				purificationStardustNeeded: 5000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 212;
 				baseDefense: 123;
@@ -3066,10 +3096,14 @@ export type PokemonSettingsV0611PokemonFraxureNormal = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 10;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.1;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 100;
+					candyCostPurified: 90;
 					evolution: "HAXORUS";
 					form: "HAXORUS_NORMAL";
 				},
@@ -3091,6 +3125,12 @@ export type PokemonSettingsV0611PokemonFraxureNormal = S<
 			pokedexWeightKg: 36;
 			pokemonId: "FRAXURE";
 			quickMoves: ["DRAGON_TAIL_FAST", "IRON_TAIL_FAST"];
+			shadow: {
+				purificationCandyNeeded: 5;
+				purificationStardustNeeded: 5000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 212;
 				baseDefense: 123;
@@ -3142,6 +3182,9 @@ export type PokemonSettingsV0612PokemonHaxorus = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 10;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.05;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionPips: 1;
 			familyId: "FAMILY_AXEW";
@@ -3159,6 +3202,12 @@ export type PokemonSettingsV0612PokemonHaxorus = S<
 			pokedexWeightKg: 105.5;
 			pokemonId: "HAXORUS";
 			quickMoves: ["DRAGON_TAIL_FAST", "COUNTER_FAST"];
+			shadow: {
+				purificationCandyNeeded: 5;
+				purificationStardustNeeded: 5000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 284;
 				baseDefense: 172;
@@ -3210,6 +3259,9 @@ export type PokemonSettingsV0612PokemonHaxorusNormal = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 10;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.05;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionPips: 1;
 			familyId: "FAMILY_AXEW";
@@ -3228,6 +3280,12 @@ export type PokemonSettingsV0612PokemonHaxorusNormal = S<
 			pokedexWeightKg: 105.5;
 			pokemonId: "HAXORUS";
 			quickMoves: ["DRAGON_TAIL_FAST", "COUNTER_FAST"];
+			shadow: {
+				purificationCandyNeeded: 5;
+				purificationStardustNeeded: 5000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 284;
 				baseDefense: 172;
@@ -3407,6 +3465,9 @@ export type PokemonSettingsV0643PokemonReshiram = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 10;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.02;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionPips: 1;
 			familyId: "FAMILY_RESHIRAM";
@@ -3423,6 +3484,12 @@ export type PokemonSettingsV0643PokemonReshiram = S<
 			pokemonClass: "POKEMON_CLASS_LEGENDARY";
 			pokemonId: "RESHIRAM";
 			quickMoves: ["DRAGON_BREATH_FAST", "FIRE_FANG_FAST"];
+			shadow: {
+				purificationCandyNeeded: 20;
+				purificationStardustNeeded: 20000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 275;
 				baseDefense: 211;
@@ -3474,6 +3541,9 @@ export type PokemonSettingsV0643PokemonReshiramNormal = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 10;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.02;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionPips: 1;
 			familyId: "FAMILY_RESHIRAM";
@@ -3491,6 +3561,12 @@ export type PokemonSettingsV0643PokemonReshiramNormal = S<
 			pokemonClass: "POKEMON_CLASS_LEGENDARY";
 			pokemonId: "RESHIRAM";
 			quickMoves: ["DRAGON_BREATH_FAST", "FIRE_FANG_FAST"];
+			shadow: {
+				purificationCandyNeeded: 20;
+				purificationStardustNeeded: 20000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 275;
 				baseDefense: 211;
@@ -4179,7 +4255,7 @@ export type PokemonSettingsV0705PokemonSliggoo = S<
 				cylinderHeightM: 1.2;
 				cylinderRadiusM: 0.5;
 			};
-			cinematicMoves: ["DRAGON_PULSE", "SLUDGE_WAVE", "MUDDY_WATER", "WATER_PULSE"];
+			cinematicMoves: ["DRAGON_PULSE", "SLUDGE_WAVE", "MUDDY_WATER", "WATER_PULSE", "BODY_SLAM"];
 			encounter: {
 				attackProbability: 0.3;
 				attackTimerS: 29;
@@ -4218,7 +4294,7 @@ export type PokemonSettingsV0705PokemonSliggoo = S<
 			pokedexHeightM: 0.8;
 			pokedexWeightKg: 17.5;
 			pokemonId: "SLIGGOO";
-			quickMoves: ["WATER_GUN_FAST", "TACKLE_FAST"];
+			quickMoves: ["WATER_GUN_FAST", "TACKLE_FAST", "DRAGON_BREATH_FAST"];
 			stats: {
 				baseAttack: 159;
 				baseDefense: 176;
@@ -4246,7 +4322,7 @@ export type PokemonSettingsV0705PokemonSliggooNormal = S<
 				cylinderHeightM: 1.2;
 				cylinderRadiusM: 0.5;
 			};
-			cinematicMoves: ["DRAGON_PULSE", "SLUDGE_WAVE", "MUDDY_WATER", "WATER_PULSE"];
+			cinematicMoves: ["DRAGON_PULSE", "SLUDGE_WAVE", "MUDDY_WATER", "WATER_PULSE", "BODY_SLAM"];
 			encounter: {
 				attackProbability: 0.3;
 				attackTimerS: 29;
@@ -4287,7 +4363,7 @@ export type PokemonSettingsV0705PokemonSliggooNormal = S<
 			pokedexHeightM: 0.8;
 			pokedexWeightKg: 17.5;
 			pokemonId: "SLIGGOO";
-			quickMoves: ["WATER_GUN_FAST", "TACKLE_FAST"];
+			quickMoves: ["WATER_GUN_FAST", "TACKLE_FAST", "DRAGON_BREATH_FAST"];
 			stats: {
 				baseAttack: 159;
 				baseDefense: 176;
@@ -5692,8 +5768,8 @@ export type PokemonSettingsV0895PokemonRegidrago = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 20;
-			modelHeight: 2.1;
-			modelScaleV2: 1.4;
+			modelHeight: 2.4;
+			modelScaleV2: 1.2;
 			pokedexHeightM: 2.1;
 			pokedexWeightKg: 200;
 			pokemonClass: "POKEMON_CLASS_LEGENDARY";
@@ -5755,8 +5831,8 @@ export type PokemonSettingsV0895PokemonRegidragoNormal = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 20;
-			modelHeight: 2.1;
-			modelScaleV2: 1.4;
+			modelHeight: 2.4;
+			modelScaleV2: 1.2;
 			pokedexHeightM: 2.1;
 			pokedexWeightKg: 200;
 			pokemonClass: "POKEMON_CLASS_LEGENDARY";
@@ -6375,6 +6451,7 @@ export type PokemonSettingsV0998PokemonBaxcalibur = S<
 				cylinderRadiusM: 0.9;
 			};
 			cinematicMoves: ["DRAGON_CLAW", "AVALANCHE", "OUTRAGE", "BLIZZARD", "ICY_WIND"];
+			eliteCinematicMove: ["GLAIVE_RUSH"];
 			encounter: {
 				attackProbability: 0.2;
 				bonusCandyCaptureReward: 7;
@@ -6436,6 +6513,7 @@ export type PokemonSettingsV0998PokemonBaxcaliburNormal = S<
 				cylinderRadiusM: 0.9;
 			};
 			cinematicMoves: ["DRAGON_CLAW", "AVALANCHE", "OUTRAGE", "BLIZZARD", "ICY_WIND"];
+			eliteCinematicMove: ["GLAIVE_RUSH"];
 			encounter: {
 				attackProbability: 0.2;
 				bonusCandyCaptureReward: 7;

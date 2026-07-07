@@ -2412,6 +2412,7 @@ import type {
 	GenderSettingsV0998PokemonBaxcaliburNormal,
 	GenderSettingsV0999PokemonGimmighoul,
 	GenderSettingsV0999PokemonGimmighoulCoinA1,
+	GenderSettingsV0999PokemonGimmighoulCoinA22026,
 	GenderSettingsV0999PokemonGimmighoulNormal,
 	GenderSettingsV1000PokemonGholdengo,
 	GenderSettingsV1000PokemonGholdengoNormal,
@@ -4880,6 +4881,7 @@ export interface GenderSettingsLookup {
 	SPAWN_V0998_POKEMON_BAXCALIBUR_NORMAL: GenderSettingsV0998PokemonBaxcaliburNormal;
 	SPAWN_V0999_POKEMON_GIMMIGHOUL: GenderSettingsV0999PokemonGimmighoul;
 	SPAWN_V0999_POKEMON_GIMMIGHOUL_COIN_A1: GenderSettingsV0999PokemonGimmighoulCoinA1;
+	SPAWN_V0999_POKEMON_GIMMIGHOUL_COIN_A2_2026: GenderSettingsV0999PokemonGimmighoulCoinA22026;
 	SPAWN_V0999_POKEMON_GIMMIGHOUL_NORMAL: GenderSettingsV0999PokemonGimmighoulNormal;
 	SPAWN_V1000_POKEMON_GHOLDENGO: GenderSettingsV1000PokemonGholdengo;
 	SPAWN_V1000_POKEMON_GHOLDENGO_NORMAL: GenderSettingsV1000PokemonGholdengoNormal;

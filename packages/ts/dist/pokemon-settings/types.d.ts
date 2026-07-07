@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonSettings", 2462 entries (structural types).
+// Generated from Pokémon GO masterfile — group "pokemonSettings", 2463 entries (structural types).
 
 import type { W } from "../_utils";
 import type { TypeEffectiveTemplateID } from "../type-effective/entries";
@@ -13,7 +13,9 @@ export interface PokemonSettings<TemplateID extends string = string, TData exten
 export type PokemonSettingsType = W<PokemonSettings>;
 
 export interface PokemonSettingsData {
-	allowNoevolveEvolution?: ["APRIL_2020_NOEVOLVE" | "FALL_2020_NOEVOLVE" | "FALL_2022" | "FALL_2022_NOEVOLVE" | "JAN_2020_NOEVOLVE" | "JAN_2022_NOEVOLVE"];
+	allowNoevolveEvolution?: Array<
+		"APRIL_2020_NOEVOLVE" | "FALL_2020_NOEVOLVE" | "FALL_2022" | "FALL_2022_NOEVOLVE" | "JAN_2020_NOEVOLVE" | "JAN_2022_NOEVOLVE" | "SPRING_2020_NOEVOLVE"
+	>;
 	animationTime?: Array<number>;
 	breadTierGroup?: "GROUP_1" | "GROUP_2" | "GROUP_3" | "GROUP_4" | "GROUP_8" | "GROUP_Z";
 	buddyGroupNumber?: number;
@@ -27,12 +29,12 @@ export interface PokemonSettingsData {
 	buddyWalkedMegaEnergyAwards?: [
 		{
 			megaEnergyAwardAmount: number;
-			megaPokemonId: "GARDEVOIR";
+			megaPokemonId: "CHARIZARD" | "GARDEVOIR" | "MEWTWO" | "RAICHU";
 		},
 		{
-			genderRequirement: "MALE";
+			genderRequirement?: "MALE";
 			megaEnergyAwardAmount: number;
-			megaPokemonId: "GALLADE";
+			megaPokemonId: "CHARIZARD" | "GALLADE" | "MEWTWO" | "RAICHU";
 		},
 	];
 	camera: {

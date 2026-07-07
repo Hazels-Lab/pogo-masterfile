@@ -7,14 +7,26 @@ use serde::{Deserialize, Serialize};
     Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum,
 )]
 pub enum InvasionNpcDisplaySettingsTemplateId {
+    #[serde(rename = "CHARACTER_BALLOON_GRUNT_FEMALE")]
+    CharacterBalloonGruntFemale,
+    #[serde(rename = "CHARACTER_BALLOON_GRUNT_MALE")]
+    CharacterBalloonGruntMale,
     #[serde(rename = "CHARACTER_BLANCHE")]
     CharacterBlanche,
+    #[serde(rename = "CHARACTER_BUG_BALLOON_GRUNT_FEMALE")]
+    CharacterBugBalloonGruntFemale,
+    #[serde(rename = "CHARACTER_BUG_BALLOON_GRUNT_MALE")]
+    CharacterBugBalloonGruntMale,
     #[serde(rename = "CHARACTER_BUG_GRUNT_FEMALE")]
     CharacterBugGruntFemale,
     #[serde(rename = "CHARACTER_BUG_GRUNT_MALE")]
     CharacterBugGruntMale,
     #[serde(rename = "CHARACTER_CANDELA")]
     CharacterCandela,
+    #[serde(rename = "CHARACTER_DARK_BALLOON_GRUNT_FEMALE")]
+    CharacterDarkBalloonGruntFemale,
+    #[serde(rename = "CHARACTER_DARK_BALLOON_GRUNT_MALE")]
+    CharacterDarkBalloonGruntMale,
     #[serde(rename = "CHARACTER_DARK_GRUNT_FEMALE")]
     CharacterDarkGruntFemale,
     #[serde(rename = "CHARACTER_DARK_GRUNT_MALE")]
@@ -23,10 +35,18 @@ pub enum InvasionNpcDisplaySettingsTemplateId {
     CharacterDecoyGruntFemale,
     #[serde(rename = "CHARACTER_DECOY_GRUNT_MALE")]
     CharacterDecoyGruntMale,
+    #[serde(rename = "CHARACTER_DRAGON_BALLOON_GRUNT_FEMALE")]
+    CharacterDragonBalloonGruntFemale,
+    #[serde(rename = "CHARACTER_DRAGON_BALLOON_GRUNT_MALE")]
+    CharacterDragonBalloonGruntMale,
     #[serde(rename = "CHARACTER_DRAGON_GRUNT_FEMALE")]
     CharacterDragonGruntFemale,
     #[serde(rename = "CHARACTER_DRAGON_GRUNT_MALE")]
     CharacterDragonGruntMale,
+    #[serde(rename = "CHARACTER_ELECTRIC_BALLOON_GRUNT_FEMALE")]
+    CharacterElectricBalloonGruntFemale,
+    #[serde(rename = "CHARACTER_ELECTRIC_BALLOON_GRUNT_MALE")]
+    CharacterElectricBalloonGruntMale,
     #[serde(rename = "CHARACTER_ELECTRIC_GRUNT_FEMALE")]
     CharacterElectricGruntFemale,
     #[serde(rename = "CHARACTER_ELECTRIC_GRUNT_MALE")]
@@ -69,32 +89,60 @@ pub enum InvasionNpcDisplaySettingsTemplateId {
     CharacterExecutiveSierra,
     #[serde(rename = "CHARACTER_EXPLORER")]
     CharacterExplorer,
+    #[serde(rename = "CHARACTER_FAIRY_BALLOON_GRUNT_FEMALE")]
+    CharacterFairyBalloonGruntFemale,
+    #[serde(rename = "CHARACTER_FAIRY_BALLOON_GRUNT_MALE")]
+    CharacterFairyBalloonGruntMale,
     #[serde(rename = "CHARACTER_FAIRY_GRUNT_FEMALE")]
     CharacterFairyGruntFemale,
     #[serde(rename = "CHARACTER_FAIRY_GRUNT_MALE")]
     CharacterFairyGruntMale,
+    #[serde(rename = "CHARACTER_FIGHTING_BALLOON_GRUNT_FEMALE")]
+    CharacterFightingBalloonGruntFemale,
+    #[serde(rename = "CHARACTER_FIGHTING_BALLOON_GRUNT_MALE")]
+    CharacterFightingBalloonGruntMale,
     #[serde(rename = "CHARACTER_FIGHTING_GRUNT_FEMALE")]
     CharacterFightingGruntFemale,
     #[serde(rename = "CHARACTER_FIGHTING_GRUNT_MALE")]
     CharacterFightingGruntMale,
+    #[serde(rename = "CHARACTER_FIRE_BALLOON_GRUNT_FEMALE")]
+    CharacterFireBalloonGruntFemale,
+    #[serde(rename = "CHARACTER_FIRE_BALLOON_GRUNT_MALE")]
+    CharacterFireBalloonGruntMale,
     #[serde(rename = "CHARACTER_FIRE_GRUNT_FEMALE")]
     CharacterFireGruntFemale,
     #[serde(rename = "CHARACTER_FIRE_GRUNT_MALE")]
     CharacterFireGruntMale,
+    #[serde(rename = "CHARACTER_FLYING_BALLOON_GRUNT_FEMALE")]
+    CharacterFlyingBalloonGruntFemale,
+    #[serde(rename = "CHARACTER_FLYING_BALLOON_GRUNT_MALE")]
+    CharacterFlyingBalloonGruntMale,
     #[serde(rename = "CHARACTER_FLYING_GRUNT_FEMALE")]
     CharacterFlyingGruntFemale,
     #[serde(rename = "CHARACTER_FLYING_GRUNT_MALE")]
     CharacterFlyingGruntMale,
+    #[serde(rename = "CHARACTER_GHOST_BALLOON_GRUNT_FEMALE")]
+    CharacterGhostBalloonGruntFemale,
+    #[serde(rename = "CHARACTER_GHOST_BALLOON_GRUNT_MALE")]
+    CharacterGhostBalloonGruntMale,
     #[serde(rename = "CHARACTER_GHOST_GRUNT_FEMALE")]
     CharacterGhostGruntFemale,
     #[serde(rename = "CHARACTER_GHOST_GRUNT_MALE")]
     CharacterGhostGruntMale,
     #[serde(rename = "CHARACTER_GIOVANNI")]
     CharacterGiovanni,
+    #[serde(rename = "CHARACTER_GRASS_BALLOON_GRUNT_FEMALE")]
+    CharacterGrassBalloonGruntFemale,
+    #[serde(rename = "CHARACTER_GRASS_BALLOON_GRUNT_MALE")]
+    CharacterGrassBalloonGruntMale,
     #[serde(rename = "CHARACTER_GRASS_GRUNT_FEMALE")]
     CharacterGrassGruntFemale,
     #[serde(rename = "CHARACTER_GRASS_GRUNT_MALE")]
     CharacterGrassGruntMale,
+    #[serde(rename = "CHARACTER_GROUND_BALLOON_GRUNT_FEMALE")]
+    CharacterGroundBalloonGruntFemale,
+    #[serde(rename = "CHARACTER_GROUND_BALLOON_GRUNT_MALE")]
+    CharacterGroundBalloonGruntMale,
     #[serde(rename = "CHARACTER_GROUND_GRUNT_FEMALE")]
     CharacterGroundGruntFemale,
     #[serde(rename = "CHARACTER_GROUND_GRUNT_MALE")]
@@ -107,32 +155,60 @@ pub enum InvasionNpcDisplaySettingsTemplateId {
     CharacterGruntbFemale,
     #[serde(rename = "CHARACTER_GRUNTB_MALE")]
     CharacterGruntbMale,
+    #[serde(rename = "CHARACTER_ICE_BALLOON_GRUNT_FEMALE")]
+    CharacterIceBalloonGruntFemale,
+    #[serde(rename = "CHARACTER_ICE_BALLOON_GRUNT_MALE")]
+    CharacterIceBalloonGruntMale,
     #[serde(rename = "CHARACTER_ICE_GRUNT_FEMALE")]
     CharacterIceGruntFemale,
     #[serde(rename = "CHARACTER_ICE_GRUNT_MALE")]
     CharacterIceGruntMale,
+    #[serde(rename = "CHARACTER_METAL_BALLOON_GRUNT_FEMALE")]
+    CharacterMetalBalloonGruntFemale,
+    #[serde(rename = "CHARACTER_METAL_BALLOON_GRUNT_MALE")]
+    CharacterMetalBalloonGruntMale,
     #[serde(rename = "CHARACTER_METAL_GRUNT_FEMALE")]
     CharacterMetalGruntFemale,
     #[serde(rename = "CHARACTER_METAL_GRUNT_MALE")]
     CharacterMetalGruntMale,
+    #[serde(rename = "CHARACTER_NORMAL_BALLOON_GRUNT_FEMALE")]
+    CharacterNormalBalloonGruntFemale,
+    #[serde(rename = "CHARACTER_NORMAL_BALLOON_GRUNT_MALE")]
+    CharacterNormalBalloonGruntMale,
     #[serde(rename = "CHARACTER_NORMAL_GRUNT_FEMALE")]
     CharacterNormalGruntFemale,
     #[serde(rename = "CHARACTER_NORMAL_GRUNT_MALE")]
     CharacterNormalGruntMale,
+    #[serde(rename = "CHARACTER_POISON_BALLOON_GRUNT_FEMALE")]
+    CharacterPoisonBalloonGruntFemale,
+    #[serde(rename = "CHARACTER_POISON_BALLOON_GRUNT_MALE")]
+    CharacterPoisonBalloonGruntMale,
     #[serde(rename = "CHARACTER_POISON_GRUNT_FEMALE")]
     CharacterPoisonGruntFemale,
     #[serde(rename = "CHARACTER_POISON_GRUNT_MALE")]
     CharacterPoisonGruntMale,
+    #[serde(rename = "CHARACTER_PSYCHIC_BALLOON_GRUNT_FEMALE")]
+    CharacterPsychicBalloonGruntFemale,
+    #[serde(rename = "CHARACTER_PSYCHIC_BALLOON_GRUNT_MALE")]
+    CharacterPsychicBalloonGruntMale,
     #[serde(rename = "CHARACTER_PSYCHIC_GRUNT_FEMALE")]
     CharacterPsychicGruntFemale,
     #[serde(rename = "CHARACTER_PSYCHIC_GRUNT_MALE")]
     CharacterPsychicGruntMale,
+    #[serde(rename = "CHARACTER_ROCK_BALLOON_GRUNT_FEMALE")]
+    CharacterRockBalloonGruntFemale,
+    #[serde(rename = "CHARACTER_ROCK_BALLOON_GRUNT_MALE")]
+    CharacterRockBalloonGruntMale,
     #[serde(rename = "CHARACTER_ROCK_GRUNT_FEMALE")]
     CharacterRockGruntFemale,
     #[serde(rename = "CHARACTER_ROCK_GRUNT_MALE")]
     CharacterRockGruntMale,
     #[serde(rename = "CHARACTER_SPARK")]
     CharacterSpark,
+    #[serde(rename = "CHARACTER_WATER_BALLOON_GRUNT_FEMALE")]
+    CharacterWaterBalloonGruntFemale,
+    #[serde(rename = "CHARACTER_WATER_BALLOON_GRUNT_MALE")]
+    CharacterWaterBalloonGruntMale,
     #[serde(rename = "CHARACTER_WATER_GRUNT_FEMALE")]
     CharacterWaterGruntFemale,
     #[serde(rename = "CHARACTER_WATER_GRUNT_MALE")]

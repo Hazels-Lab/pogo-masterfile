@@ -8,7 +8,7 @@ export type CombatLeagueVsSeekerMaster = S<
 		"COMBAT_LEAGUE_VS_SEEKER_MASTER",
 		{
 			badgeType: "BADGE_MASTER_LEAGUE";
-			bannedPokemon: ["DITTO", "SHEDINJA", "MIMIKYU"];
+			bannedPokemon: ["DITTO", "SHEDINJA"];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_MASTER";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/pogo_master_league.png";
 			leagueType: "STANDARD";
@@ -38,7 +38,7 @@ export type CombatLeagueVsSeekerMasterClassic = S<
 		"COMBAT_LEAGUE_VS_SEEKER_MASTER_CLASSIC",
 		{
 			badgeType: "BADGE_MASTER_LEAGUE";
-			bannedPokemon: ["DITTO", "SHEDINJA", "MIMIKYU"];
+			bannedPokemon: ["DITTO", "SHEDINJA"];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_MASTER";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/pogo_master_league.png";
 			leagueType: "PREMIER";
@@ -75,9 +75,9 @@ export type CombatLeagueVsSeekerMasterMegas = S<
 		{
 			allowTempEvos: true;
 			badgeType: "BADGE_MASTER_LEAGUE";
-			bannedPokemon: ["DITTO", "SHEDINJA", "MIMIKYU"];
+			bannedPokemon: ["DITTO", "SHEDINJA"];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_MASTER";
-			iconUrl: "https://storage.googleapis.com/prod-public-images/pogo_master_league.png";
+			iconUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe00ac85c_GblMasterLeague_icon.png";
 			leagueType: "STANDARD";
 			pokemonCondition: [
 				{
@@ -165,7 +165,6 @@ export type CombatLeagueVsSeekerMasterNoLegendary = S<
 				"MELMETAL",
 				"ZACIAN",
 				"ZAMAZENTA",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_MASTER";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/premierball_sprite.png";
@@ -304,7 +303,6 @@ export type CombatLeagueVsSeekerMasterPremier = S<
 				"OGERPON",
 				"TERAPAGOS",
 				"PECHARUNT",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_MASTER";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/premierball_sprite.png";
@@ -443,7 +441,6 @@ export type CombatLeagueVsSeekerMasterPremierClassic = S<
 				"OGERPON",
 				"TERAPAGOS",
 				"PECHARUNT",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_MASTER";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/premierball_sprite.png";

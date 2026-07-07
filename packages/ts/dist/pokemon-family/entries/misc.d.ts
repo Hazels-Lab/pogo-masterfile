@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonFamily", split "misc", 491 entries.
+// Generated from Pokémon GO masterfile — group "pokemonFamily", split "misc", 488 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonFamily } from "../types";
@@ -32,14 +32,6 @@ export type PokemonFamilyV0023FamilyEkans = S<
 		"V0023_FAMILY_EKANS",
 		{
 			familyId: "FAMILY_EKANS";
-		}
-	>
->;
-export type PokemonFamilyV0025FamilyPikachu = S<
-	PokemonFamily<
-		"V0025_FAMILY_PIKACHU",
-		{
-			familyId: "FAMILY_PIKACHU";
 		}
 	>
 >;
@@ -475,14 +467,6 @@ export type PokemonFamilyV0146FamilyMoltres = S<
 		}
 	>
 >;
-export type PokemonFamilyV0150FamilyMewtwo = S<
-	PokemonFamily<
-		"V0150_FAMILY_MEWTWO",
-		{
-			familyId: "FAMILY_MEWTWO";
-		}
-	>
->;
 export type PokemonFamilyV0151FamilyMew = S<
 	PokemonFamily<
 		"V0151_FAMILY_MEW",
@@ -776,14 +760,6 @@ export type PokemonFamilyV0226FamilyMantine = S<
 		"V0226_FAMILY_MANTINE",
 		{
 			familyId: "FAMILY_MANTINE";
-		}
-	>
->;
-export type PokemonFamilyV0227FamilySkarmory = S<
-	PokemonFamily<
-		"V0227_FAMILY_SKARMORY",
-		{
-			familyId: "FAMILY_SKARMORY";
 		}
 	>
 >;
@@ -3937,7 +3913,6 @@ export type PokemonFamilyMiscMasterfileEntry =
 	| PokemonFamilyV0019FamilyRattata
 	| PokemonFamilyV0021FamilySpearow
 	| PokemonFamilyV0023FamilyEkans
-	| PokemonFamilyV0025FamilyPikachu
 	| PokemonFamilyV0027FamilySandshrew
 	| PokemonFamilyV0029FamilyNidoran
 	| PokemonFamilyV0032FamilyNidoran
@@ -3992,7 +3967,6 @@ export type PokemonFamilyMiscMasterfileEntry =
 	| PokemonFamilyV0144FamilyArticuno
 	| PokemonFamilyV0145FamilyZapdos
 	| PokemonFamilyV0146FamilyMoltres
-	| PokemonFamilyV0150FamilyMewtwo
 	| PokemonFamilyV0151FamilyMew
 	| PokemonFamilyV0152FamilyChikorita
 	| PokemonFamilyV0155FamilyCyndaquil
@@ -4030,7 +4004,6 @@ export type PokemonFamilyMiscMasterfileEntry =
 	| PokemonFamilyV0223FamilyRemoraid
 	| PokemonFamilyV0225FamilyDelibird
 	| PokemonFamilyV0226FamilyMantine
-	| PokemonFamilyV0227FamilySkarmory
 	| PokemonFamilyV0231FamilyPhanpy
 	| PokemonFamilyV0234FamilyStantler
 	| PokemonFamilyV0235FamilySmeargle

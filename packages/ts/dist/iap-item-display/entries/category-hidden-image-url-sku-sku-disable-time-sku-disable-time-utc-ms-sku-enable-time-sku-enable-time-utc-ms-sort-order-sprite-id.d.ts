@@ -9,7 +9,7 @@ export type IapItemDisplayEvergreenticket1Giftable = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Into_The_Depths_LiveOp_2026_v3-1024x576-nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Into_The_Depths_LiveOp_2026_v3-1024x576-nologo.jpg";
 			sku: "evergreenticket.1.giftable";
 			skuDisableTime: "2026-02-01T20:00:00";
 			skuDisableTimeUtcMs: "1769976000000";
@@ -26,7 +26,7 @@ export type IapItemDisplayPgoreleaseEvergreenticket1Giftable = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Into_The_Depths_LiveOp_2026_v3-1024x576-nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Into_The_Depths_LiveOp_2026_v3-1024x576-nologo.jpg";
 			sku: "pgorelease.evergreenticket.1.giftable";
 			skuDisableTime: "2026-02-01T20:00:00";
 			skuDisableTimeUtcMs: "1769976000000";

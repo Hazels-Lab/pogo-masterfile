@@ -4829,6 +4829,8 @@ pub enum GenderSettingsTemplateId {
     SpawnV0999PokemonGimmighoul,
     #[serde(rename = "SPAWN_V0999_POKEMON_GIMMIGHOUL_COIN_A1")]
     SpawnV0999PokemonGimmighoulCoinA1,
+    #[serde(rename = "SPAWN_V0999_POKEMON_GIMMIGHOUL_COIN_A2_2026")]
+    SpawnV0999PokemonGimmighoulCoinA22026,
     #[serde(rename = "SPAWN_V0999_POKEMON_GIMMIGHOUL_NORMAL")]
     SpawnV0999PokemonGimmighoulNormal,
     #[serde(rename = "SPAWN_V1000_POKEMON_GHOLDENGO")]

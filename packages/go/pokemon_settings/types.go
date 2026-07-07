@@ -8,9 +8,9 @@ type PokemonSettingsBuddyWalkedMegaEnergyAwards struct {
 }
 
 type PokemonSettingsBuddyWalkedMegaEnergyAwardsV2 struct {
-	GenderRequirement     string `json:"genderRequirement"`
-	MegaEnergyAwardAmount uint64 `json:"megaEnergyAwardAmount"`
-	MegaPokemonId         string `json:"megaPokemonId"`
+	GenderRequirement     *string `json:"genderRequirement,omitempty"`
+	MegaEnergyAwardAmount uint64  `json:"megaEnergyAwardAmount"`
+	MegaPokemonId         string  `json:"megaPokemonId"`
 }
 
 type PokemonSettingsCamera struct {
@@ -215,7 +215,7 @@ type PokemonSettingsThirdMove struct {
 }
 
 type PokemonSettings struct {
-	AllowNoevolveEvolution            *[1]string                        `json:"allowNoevolveEvolution,omitempty"`
+	AllowNoevolveEvolution            []string                          `json:"allowNoevolveEvolution,omitempty"`
 	AnimationTime                     []float64                         `json:"animationTime,omitempty"`
 	BreadTierGroup                    *string                           `json:"breadTierGroup,omitempty"`
 	BuddyGroupNumber                  *uint64                           `json:"buddyGroupNumber,omitempty"`

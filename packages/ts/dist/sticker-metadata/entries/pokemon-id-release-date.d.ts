@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-release-date", 105 entries.
+// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-release-date", 113 entries.
 
 import type { S } from "../../_utils";
 import type { StickerMetadata } from "../types";
@@ -160,6 +160,56 @@ export type StickerMetadata2023collab3 = S<
 			category: ["Pokemon"];
 			pokemonId: "SLOWPOKE";
 			releaseDate: 20230926;
+		}
+	>
+>;
+export type StickerMetadataAcornPartnership1 = S<
+	StickerMetadata<
+		"STICKER_ACORN_PARTNERSHIP_1",
+		{
+			category: ["Pokemon"];
+			pokemonId: "EEVEE";
+			releaseDate: 20260612;
+		}
+	>
+>;
+export type StickerMetadataAcornPartnership2 = S<
+	StickerMetadata<
+		"STICKER_ACORN_PARTNERSHIP_2",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PIKACHU";
+			releaseDate: 20260612;
+		}
+	>
+>;
+export type StickerMetadataAcornPartnership3 = S<
+	StickerMetadata<
+		"STICKER_ACORN_PARTNERSHIP_3",
+		{
+			category: ["Pokemon"];
+			pokemonId: "CHARIZARD";
+			releaseDate: 20260612;
+		}
+	>
+>;
+export type StickerMetadataAcornPartnership4 = S<
+	StickerMetadata<
+		"STICKER_ACORN_PARTNERSHIP_4",
+		{
+			category: ["Pokemon"];
+			pokemonId: "BLASTOISE";
+			releaseDate: 20260612;
+		}
+	>
+>;
+export type StickerMetadataAcornPartnership5 = S<
+	StickerMetadata<
+		"STICKER_ACORN_PARTNERSHIP_5",
+		{
+			category: ["Pokemon"];
+			pokemonId: "VENUSAUR";
+			releaseDate: 20260612;
 		}
 	>
 >;
@@ -1023,6 +1073,36 @@ export type StickerMetadataSummer2023Squirtle = S<
 		}
 	>
 >;
+export type StickerMetadataSummer20261 = S<
+	StickerMetadata<
+		"STICKER_SUMMER_2026_1",
+		{
+			category: ["Pokemon"];
+			pokemonId: "STARMIE";
+			releaseDate: 20260602;
+		}
+	>
+>;
+export type StickerMetadataSummer20262 = S<
+	StickerMetadata<
+		"STICKER_SUMMER_2026_2",
+		{
+			category: ["Pokemon"];
+			pokemonId: "VAPOREON";
+			releaseDate: 20260602;
+		}
+	>
+>;
+export type StickerMetadataSummer20263 = S<
+	StickerMetadata<
+		"STICKER_SUMMER_2026_3",
+		{
+			category: ["Pokemon"];
+			pokemonId: "DRAGONAIR";
+			releaseDate: 20260602;
+		}
+	>
+>;
 export type StickerMetadataWcs2025Jigglypuff = S<
 	StickerMetadata<
 		"STICKER_WCS2025_JIGGLYPUFF",
@@ -1071,6 +1151,11 @@ export type StickerMetadataPokemonIdReleaseDateMasterfileEntry =
 	| StickerMetadata2023collab1
 	| StickerMetadata2023collab2
 	| StickerMetadata2023collab3
+	| StickerMetadataAcornPartnership1
+	| StickerMetadataAcornPartnership2
+	| StickerMetadataAcornPartnership3
+	| StickerMetadataAcornPartnership4
+	| StickerMetadataAcornPartnership5
 	| StickerMetadataAprilfool20231
 	| StickerMetadataAprilfool20232
 	| StickerMetadataBellsproutcd1
@@ -1157,6 +1242,9 @@ export type StickerMetadataPokemonIdReleaseDateMasterfileEntry =
 	| StickerMetadataSummer2023Blastoise
 	| StickerMetadataSummer2023Butterfree
 	| StickerMetadataSummer2023Squirtle
+	| StickerMetadataSummer20261
+	| StickerMetadataSummer20262
+	| StickerMetadataSummer20263
 	| StickerMetadataWcs2025Jigglypuff
 	| StickerMetadataWcs2025Pikachu
 	| StickerMetadataWinter20254;

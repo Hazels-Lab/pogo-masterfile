@@ -9,12 +9,18 @@ export type ItemSettingsItemEventPassPointGoFest01 = S<
 		{
 			category: "ITEM_CATEGORY_EVENT_PASS_POINT";
 			eventPassPoint: {
-				eventPassId: "EVENT_PASS_GOFEST2025_GLOBAL";
+				eventPassId: "EVENT_PASS_GOFEST2026_GLOBAL";
 			};
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
 			itemCap: 999999;
+			itemId: "ITEM_EVENT_PASS_POINT_GO_FEST_01";
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
+			timePeriodCounters: {
+				playerActivity: {
+					limit: 1000;
+				};
+			};
 		}
 	>
 >;
@@ -29,6 +35,7 @@ export type ItemSettingsItemEventPassPointGoFest02 = S<
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
 			itemCap: 999999;
+			itemId: "ITEM_EVENT_PASS_POINT_GO_FEST_02";
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
@@ -49,6 +56,7 @@ export type ItemSettingsItemEventPassPointGoTour01 = S<
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
 			itemCap: 999999;
+			itemId: "ITEM_EVENT_PASS_POINT_GO_TOUR_01";
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
@@ -69,6 +77,7 @@ export type ItemSettingsItemEventPassPointGoTour02 = S<
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
 			itemCap: 999999;
+			itemId: "ITEM_EVENT_PASS_POINT_GO_TOUR_02";
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 		}
 	>
@@ -84,6 +93,7 @@ export type ItemSettingsItemEventPassPointGoWildArea01 = S<
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
 			itemCap: 6000;
+			itemId: "ITEM_EVENT_PASS_POINT_GO_WILD_AREA_01";
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
@@ -104,9 +114,12 @@ export type ItemSettingsItemEventPassPointLiveOps01 = S<
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
 			itemCap: 999999;
+			itemId: "ITEM_EVENT_PASS_POINT_LIVE_OPS_01";
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
-				playerActivity: object;
+				playerActivity: {
+					limit: 300;
+				};
 			};
 		}
 	>
@@ -119,8 +132,10 @@ export type ItemSettingsItemEventPassPointLiveOps02 = S<
 			eventPassPoint: {
 				eventPassId: "EVENT_PASS_BLANCHE2026_EVENT";
 			};
+			hideItemInInventory: true;
 			ignoreInventorySpace: true;
 			itemCap: 999999;
+			itemId: "ITEM_EVENT_PASS_POINT_LIVE_OPS_02";
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
@@ -136,11 +151,12 @@ export type ItemSettingsItemEventPassPointLiveOps03 = S<
 		{
 			category: "ITEM_CATEGORY_EVENT_PASS_POINT";
 			eventPassPoint: {
-				eventPassId: "EVENT_PASS_FEBRUARY2026_SEASON";
+				eventPassId: "EVENT_PASS_AMER2026_EVENT";
 			};
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
 			itemCap: 999999;
+			itemId: "ITEM_EVENT_PASS_POINT_LIVE_OPS_03";
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
@@ -161,6 +177,7 @@ export type ItemSettingsItemEventPassPointLiveOps04 = S<
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
 			itemCap: 999999;
+			itemId: "ITEM_EVENT_PASS_POINT_LIVE_OPS_04";
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
@@ -176,11 +193,12 @@ export type ItemSettingsItemEventPassPointLiveOps05 = S<
 		{
 			category: "ITEM_CATEGORY_EVENT_PASS_POINT";
 			eventPassPoint: {
-				eventPassId: "EVENT_PASS_BUGOUTBUDDIES2026_EVENT";
+				eventPassId: "EVENT_PASS_EMEA2026_EVENT";
 			};
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
 			itemCap: 999999;
+			itemId: "ITEM_EVENT_PASS_POINT_LIVE_OPS_05";
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
@@ -196,11 +214,12 @@ export type ItemSettingsItemEventPassPointLiveOps06 = S<
 		{
 			category: "ITEM_CATEGORY_EVENT_PASS_POINT";
 			eventPassPoint: {
-				eventPassId: "EVENT_PASS_SHOCKINGLYGOOD2026_EVENT";
+				eventPassId: "EVENT_PASS_FLYINGTAXI2026_EVENT";
 			};
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
 			itemCap: 999999;
+			itemId: "ITEM_EVENT_PASS_POINT_LIVE_OPS_06";
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
@@ -216,10 +235,12 @@ export type ItemSettingsItemEventPassPointLiveOps07 = S<
 		{
 			category: "ITEM_CATEGORY_EVENT_PASS_POINT";
 			eventPassPoint: {
-				eventPassId: "EVENT_PASS_SUSTAINABILITY2026_EVENT";
+				eventPassId: "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT";
 			};
+			hideItemInInventory: true;
 			ignoreInventorySpace: true;
 			itemCap: 999999;
+			itemId: "ITEM_EVENT_PASS_POINT_LIVE_OPS_07";
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
@@ -240,6 +261,7 @@ export type ItemSettingsItemEventPassPointLiveOps08 = S<
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
 			itemCap: 999999;
+			itemId: "ITEM_EVENT_PASS_POINT_LIVE_OPS_08";
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
@@ -260,10 +282,11 @@ export type ItemSettingsItemEventPassPointMonthly01 = S<
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
 			itemCap: 999999;
+			itemId: "ITEM_EVENT_PASS_POINT_MONTHLY_01";
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
-					limit: 300;
+					limit: 250;
 				};
 			};
 		}
@@ -275,10 +298,12 @@ export type ItemSettingsItemEventPassPointMonthly02 = S<
 		{
 			category: "ITEM_CATEGORY_EVENT_PASS_POINT";
 			eventPassPoint: {
-				eventPassId: "EVENT_PASS_APRIL2026_SEASON";
+				eventPassId: "EVENT_PASS_JULY2026_SEASON";
 			};
+			hideItemInInventory: true;
 			ignoreInventorySpace: true;
 			itemCap: 999999;
+			itemId: "ITEM_EVENT_PASS_POINT_MONTHLY_02";
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
@@ -299,10 +324,11 @@ export type ItemSettingsItemEventPassPointMonthly03 = S<
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
 			itemCap: 999999;
+			itemId: "ITEM_EVENT_PASS_POINT_MONTHLY_03";
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
-					limit: 250;
+					limit: 300;
 				};
 			};
 		}

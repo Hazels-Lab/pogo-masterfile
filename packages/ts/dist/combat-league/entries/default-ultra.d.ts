@@ -44,7 +44,7 @@ export type CombatLeagueVsSeekerHalloweenUltra = S<
 		"COMBAT_LEAGUE_VS_SEEKER_HALLOWEEN_ULTRA",
 		{
 			badgeType: "BADGE_ULTRA_LEAGUE";
-			bannedPokemon: ["DITTO", "SHEDINJA", "MIMIKYU"];
+			bannedPokemon: ["DITTO", "SHEDINJA"];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_ULTRA";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/halloween_cup.png";
 			leagueType: "PREMIER";
@@ -80,7 +80,7 @@ export type CombatLeagueVsSeekerUltra = S<
 		"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
 		{
 			badgeType: "BADGE_ULTRA_LEAGUE";
-			bannedPokemon: ["DITTO", "SHEDINJA", "MIMIKYU"];
+			bannedPokemon: ["DITTO", "SHEDINJA"];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_ULTRA";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/pogo_ultra_league.png";
 			leagueType: "STANDARD";
@@ -110,7 +110,7 @@ export type CombatLeagueVsSeekerUltraHoliday = S<
 		"COMBAT_LEAGUE_VS_SEEKER_ULTRA_HOLIDAY",
 		{
 			badgeType: "BADGE_ULTRA_LEAGUE";
-			bannedPokemon: ["DITTO", "SHEDINJA", "MIMIKYU"];
+			bannedPokemon: ["DITTO", "SHEDINJA"];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_ULTRA";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/holiday_league_icon.png";
 			leagueType: "PREMIER";
@@ -154,9 +154,9 @@ export type CombatLeagueVsSeekerUltraMegas = S<
 		{
 			allowTempEvos: true;
 			badgeType: "BADGE_ULTRA_LEAGUE";
-			bannedPokemon: ["DITTO", "SHEDINJA", "MIMIKYU"];
+			bannedPokemon: ["DITTO", "SHEDINJA"];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_ULTRA";
-			iconUrl: "https://storage.googleapis.com/prod-public-images/pogo_ultra_league.png";
+			iconUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F34c7dd20_pogo_mega_ultra_league.png";
 			leagueType: "STANDARD";
 			pokemonCondition: [
 				{
@@ -244,7 +244,6 @@ export type CombatLeagueVsSeekerUltraNoLegendary = S<
 				"MELMETAL",
 				"ZACIAN",
 				"ZAMAZENTA",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_ULTRA";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/premierball_sprite.png";
@@ -383,7 +382,6 @@ export type CombatLeagueVsSeekerUltraPremier = S<
 				"OGERPON",
 				"TERAPAGOS",
 				"PECHARUNT",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_ULTRA";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/premierball_sprite.png";
@@ -522,7 +520,6 @@ export type CombatLeagueVsSeekerUltraPremierClassic = S<
 				"OGERPON",
 				"TERAPAGOS",
 				"PECHARUNT",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_ULTRA";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/premierball_sprite.png";
@@ -559,7 +556,6 @@ export type CombatLeagueVsSeekerUltraRemix = S<
 		"COMBAT_LEAGUE_VS_SEEKER_ULTRA_REMIX",
 		{
 			badgeType: "BADGE_ULTRA_LEAGUE";
-			bannedPokemon: ["MIMIKYU"];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_ULTRA";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/league_icon_ultra_pokemon_limit.png";
 			leagueType: "PREMIER";
@@ -632,7 +628,7 @@ export type CombatLeagueVsSeekerUltraSummer = S<
 		"COMBAT_LEAGUE_VS_SEEKER_ULTRA_SUMMER",
 		{
 			badgeType: "BADGE_ULTRA_LEAGUE";
-			bannedPokemon: ["DITTO", "SHEDINJA", "MIMIKYU"];
+			bannedPokemon: ["DITTO", "SHEDINJA"];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_ULTRA";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/summer_gblcup.png";
 			leagueType: "PREMIER";
@@ -668,7 +664,7 @@ export type CombatLeagueVsSeekerWeather = S<
 		"COMBAT_LEAGUE_VS_SEEKER_WEATHER",
 		{
 			badgeType: "BADGE_ULTRA_LEAGUE";
-			bannedPokemon: ["DITTO", "SHEDINJA", "MIMIKYU"];
+			bannedPokemon: ["DITTO", "SHEDINJA"];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_ULTRA";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/weatherCup_icon.png";
 			leagueType: "PREMIER";

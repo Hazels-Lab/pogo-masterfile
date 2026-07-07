@@ -3282,7 +3282,7 @@ export type PokemonSettingsV0464PokemonRhyperior = S<
 				shoulderModeScale: 0.5;
 			};
 			candyToEvolve: 25;
-			cinematicMoves: ["SURF", "EARTHQUAKE", "STONE_EDGE", "SKULL_BASH", "SUPER_POWER", "BREAKING_SWIPE"];
+			cinematicMoves: ["SURF", "EARTHQUAKE", "STONE_EDGE", "SKULL_BASH", "SUPER_POWER", "BREAKING_SWIPE", "DRILL_RUN"];
 			combatDefaultCameraAngle: [3, 2.5, 2];
 			combatOpponentFocusCameraAngle: [1.9, 0, 0];
 			eliteCinematicMove: ["ROCK_WRECKER"];
@@ -3363,7 +3363,7 @@ export type PokemonSettingsV0464PokemonRhyperiorNormal = S<
 				shoulderModeScale: 0.5;
 			};
 			candyToEvolve: 25;
-			cinematicMoves: ["SURF", "EARTHQUAKE", "STONE_EDGE", "SKULL_BASH", "SUPER_POWER", "BREAKING_SWIPE"];
+			cinematicMoves: ["SURF", "EARTHQUAKE", "STONE_EDGE", "SKULL_BASH", "SUPER_POWER", "BREAKING_SWIPE", "DRILL_RUN"];
 			combatDefaultCameraAngle: [3, 2.5, 2];
 			combatOpponentFocusCameraAngle: [1.9, 0, 0];
 			eliteCinematicMove: ["ROCK_WRECKER"];

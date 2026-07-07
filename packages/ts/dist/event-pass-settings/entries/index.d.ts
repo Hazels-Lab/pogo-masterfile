@@ -3,93 +3,132 @@
 import type { S } from "../../_utils";
 import type { EventPassSettings } from "../types";
 
-export type EventPassSettingsMay2026Season = S<
+export type EventPassSettingsGofest2026Global = S<
 	EventPassSettings<
-		"EVENT_PASS_MAY2026_SEASON",
+		"EVENT_PASS_GOFEST2026_GLOBAL",
 		{
-			additionalBonusTiersLevel: 101;
 			eventPassDisplaySettings: {
-				eventPassTitleKey: "season_pass_base_track_title_may";
-				eventPassTrackUpgradeDescriptions: [
+				bonusBoxes: [
 					{
-						detailsLinkKey: "season_pass_details_link_may2026";
-						eventDurationKey: "season_pass_may2026_event_duration";
-						eventPassTrackToUpgradeTo: "PREMIUM";
-						passTrackUpgradeHeaderDescription: "season_pass_may2026_track_upgrade_header_description";
-						ranksToHighlightRewards: [94, 99, 100];
-						trackUnlockImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe.png";
-						trackUnlockPlusPointsImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe_plus.png";
-						trackUnlockPlusPointsSkuId: "pgorelease.month3_deluxe_event_pass_track_unlock_plus_points";
-						trackUnlockSkuId: "pgorelease.month3_deluxe_event_pass_track_unlock";
-						upgradeDescriptionKey: "season_pass_may2026_upgrade_description";
+						iconType: "SPAWN_UNKNOWN";
+						quantity: 5;
+						text: "quest_catch_pokemon_singular";
+					},
+					{
+						iconType: "RAID";
+						quantity: 100;
+						text: "quest_win_raid_singular";
+					},
+					{
+						iconType: "EGG";
+						quantity: 250;
+						text: "quest_hatch_egg_singular";
 					},
 				];
-				sectionDisplayPriority: 11;
+				eventPassTitleKey: "event_pass_gofest2026_base_track_title";
+				eventPassTrackUpgradeDescriptions: [
+					{
+						detailsLinkKey: "gofest2026_details_link";
+						eventDurationKey: "event_pass_gofest2026_event_duration";
+						eventPassTrackToUpgradeTo: "PREMIUM";
+						passTrackUpgradeHeaderDescription: "event_pass_gofest2026_track_upgrade_header_description";
+						ranksToHighlightRewards: [80, 90, 100];
+						trackUnlockImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe.png";
+						trackUnlockPlusPointsImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe_plus.png";
+						trackUnlockPlusPointsSkuId: "pgorelease.gofest_deluxe_event_pass_track_unlock_plus_points";
+						trackUnlockSkuId: "pgorelease.gofest_deluxe_event_pass_track_unlock";
+						upgradeDescriptionKey: "event_pass_gofest2026_upgrade_description";
+					},
+				];
+				headerIconUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F1ba4259b_PGO_Fest25_Logo_2026_Global.png";
+				premiumRewardBannerBottom: "event_pass_premium_reward_banner_bottom_text";
+				premiumRewardBannerImageUrl: "https://storage.googleapis.com/prod-public-images/gofest2025/bottlecap_gold.png";
+				premiumRewardBannerMiddle: "item_triple_stat_increase_name";
+				premiumRewardsDescription: "season_pass_premium_rewards_desc_monthly";
+				todayViewSection: 2;
 			};
-			expirationTime: "2026-06-02T10:00:00";
-			gracePeriodEndTime: "2026-06-04T10:00:00";
-			maxTierLevel: 200;
-			pointsItemId: "ITEM_EVENT_PASS_POINT_MONTHLY_03";
+			expirationTime: "2026-07-12T23:59:59";
+			gracePeriodEndTime: "2026-07-14T23:59:59";
+			maxTierLevel: 500;
+			pointsItemId: "ITEM_EVENT_PASS_POINT_GO_FEST_01";
 			trackConditions: [
 				{
 					track: "FREE";
-					trackTitleKey: "season_pass_base_track_title_may";
+					trackTitleKey: "event_pass_gofest2026_base_track_title";
 				},
 				{
-					badge: "BADGE_EVENT_0176";
+					badge: "BADGE_GOFEST_2026_EVENT_PASS_DELUXE";
 					track: "PREMIUM";
-					trackTitleKey: "season_pass_premium_track_title_may";
+					trackTitleKey: "event_pass_gofest2026_premium_track_title";
 				},
 			];
 		}
 	>
 >;
-export type EventPassSettingsSpringmarathon2026Event = S<
+export type EventPassSettingsJune2026Season = S<
 	EventPassSettings<
-		"EVENT_PASS_SPRINGMARATHON2026_EVENT",
+		"EVENT_PASS_JUNE2026_SEASON",
 		{
-			additionalBonusTiersLevel: 31;
 			eventPassDisplaySettings: {
-				eventPassTitleKey: "season_pass_base_track_title_spring_marathon_2026";
-				eventPassTrackUpgradeDescriptions: [
+				bonusBoxes: [
 					{
-						detailsLinkKey: "season_pass_details_link_spring_marathon_2026";
-						eventDurationKey: "season_pass_spring_marathon_2026_event_duration";
-						eventPassTrackToUpgradeTo: "PREMIUM";
-						passTrackUpgradeHeaderDescription: "season_pass_spring_marathon_2026_track_upgrade_header_description";
-						ranksToHighlightRewards: [15, 29, 30];
-						trackUnlockImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe.png";
-						trackUnlockPlusPointsImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe_plus.png";
-						trackUnlockPlusPointsSkuId: "pgorelease.may1_2026_deluxe_event_pass_track_unlock_plus_points";
-						trackUnlockSkuId: "pgorelease.may1_2026_deluxe_event_pass_track_unlock";
-						upgradeDescriptionKey: "season_pass_spring_marathon_2026_upgrade_description";
+						iconType: "SPAWN_UNKNOWN";
+						quantity: 5;
+						text: "quest_catch_pokemon_singular";
+					},
+					{
+						iconType: "EGG";
+						quantity: 40;
+						text: "quest_hatch_egg_singular";
+					},
+					{
+						iconType: "RAID";
+						quantity: 100;
+						text: "quest_win_raid_singular";
 					},
 				];
-				premiumRewardBannerBottom: "event_pass_premium_reward_banner_bottom_text_spring_marathon_2026";
-				premiumRewardBannerImageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FS22_MemoriesInMotion_Logo.png";
-				premiumRewardBannerMiddle: "item_spring_marathon_2026_milestone_name";
-				premiumRewardBannerTop: "event_pass_premium_reward_banner_top_text";
-				sectionDisplayPriority: 50;
+				eventPassTitleKey: "season_pass_base_track_title_june";
+				eventPassTrackUpgradeDescriptions: [
+					{
+						detailsLinkKey: "season_pass_details_link_june2026";
+						eventDurationKey: "season_pass_june2026_event_duration";
+						eventPassTrackToUpgradeTo: "PREMIUM";
+						passTrackUpgradeHeaderDescription: "season_pass_june2026_track_upgrade_header_description";
+						ranksToHighlightRewards: [20, 82, 99];
+						trackUnlockImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe.png";
+						trackUnlockPlusPointsImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe_plus.png";
+						trackUnlockPlusPointsSkuId: "pgorelease.month1_deluxe_event_pass_track_unlock_plus_points";
+						trackUnlockSkuId: "pgorelease.month1_deluxe_event_pass_track_unlock";
+						upgradeDescriptionKey: "season_pass_june2026_upgrade_description";
+					},
+				];
+				headerIconUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fd99f7e15_Logo_256x256.png";
+				premiumRewardBannerBottom: "event_pass_premium_reward_banner_bottom_text_timed_incubator";
+				premiumRewardBannerImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets/Incubator_green128x128.png";
+				premiumRewardBannerMiddle: "item_incubator_timed_name";
+				premiumRewardsDescription: "season_pass_premium_rewards_desc_monthly_no_disclaimer";
+				sectionDisplayPriority: 12;
+				todayViewSection: "SEASONAL_EVENT_PASS_SECTION";
 			};
-			expirationTime: "2026-05-18T20:00:00";
-			gracePeriodEndTime: "2026-05-20T20:00:00";
-			maxTierLevel: 60;
-			pointsItemId: "ITEM_EVENT_PASS_POINT_LIVE_OPS_01";
+			expirationTime: "2026-07-07T10:00:00";
+			gracePeriodEndTime: "2026-07-09T10:00:00";
+			maxTierLevel: 200;
+			pointsItemId: "ITEM_EVENT_PASS_POINT_MONTHLY_01";
 			trackConditions: [
 				{
 					track: "FREE";
-					trackTitleKey: "season_pass_base_track_title_spring_marathon_2026";
+					trackTitleKey: "season_pass_base_track_title_june";
 				},
 				{
-					badge: "BADGE_EVENT_0193";
+					badge: "BADGE_EVENT_0190";
 					track: "PREMIUM";
-					trackTitleKey: "season_pass_premium_track_title_spring_marathon_2026";
+					trackTitleKey: "season_pass_premium_track_title_june";
 				},
 			];
 		}
 	>
 >;
 
-export type EventPassSettingsMasterfileEntry = EventPassSettingsMay2026Season | EventPassSettingsSpringmarathon2026Event;
+export type EventPassSettingsMasterfileEntry = EventPassSettingsGofest2026Global | EventPassSettingsJune2026Season;
 
 export type EventPassSettingsTemplateID = EventPassSettingsMasterfileEntry["templateId"];

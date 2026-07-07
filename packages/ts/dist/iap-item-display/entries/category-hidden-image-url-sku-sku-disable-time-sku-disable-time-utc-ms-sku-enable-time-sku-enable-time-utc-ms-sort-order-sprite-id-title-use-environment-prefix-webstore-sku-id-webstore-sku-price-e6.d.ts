@@ -9,7 +9,7 @@ export type IapItemDisplayGeneral1Ticket5 = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-entei-shadow-raid-day-2026-nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-entei-shadow-raid-day-2026-nologo.jpg";
 			sku: "pgorelease.general1.ticket.5";
 			skuDisableTime: "2026-05-02T17:00:00";
 			skuDisableTimeUtcMs: "1777741200000";
@@ -30,7 +30,7 @@ export type IapItemDisplayGeneral2Ticket6 = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-gmax-kanto-max-battle-day-2026-nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-gmax-kanto-max-battle-day-2026-nologo.jpg";
 			sku: "pgorelease.general2.ticket.6";
 			skuDisableTime: "2026-04-25T17:00:00";
 			skuDisableTimeUtcMs: "1777136400000";

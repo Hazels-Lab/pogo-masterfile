@@ -2417,6 +2417,7 @@ const (
 	PokemonExtendedSettingsTemplateIDExtendedV0999PokemonGimmighoul                      PokemonExtendedSettingsTemplateID = "EXTENDED_V0999_POKEMON_GIMMIGHOUL"
 	PokemonExtendedSettingsTemplateIDExtendedV999PokemonGimmighoul                       PokemonExtendedSettingsTemplateID = "EXTENDED_V999_POKEMON_GIMMIGHOUL"
 	PokemonExtendedSettingsTemplateIDExtendedV0999PokemonGimmighoulCoinA1                PokemonExtendedSettingsTemplateID = "EXTENDED_V0999_POKEMON_GIMMIGHOUL_COIN_A1"
+	PokemonExtendedSettingsTemplateIDExtendedV0999PokemonGimmighoulCoinA22026            PokemonExtendedSettingsTemplateID = "EXTENDED_V0999_POKEMON_GIMMIGHOUL_COIN_A2_2026"
 	PokemonExtendedSettingsTemplateIDExtendedV0999PokemonGimmighoulNormal                PokemonExtendedSettingsTemplateID = "EXTENDED_V0999_POKEMON_GIMMIGHOUL_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV1000PokemonGholdengo                       PokemonExtendedSettingsTemplateID = "EXTENDED_V1000_POKEMON_GHOLDENGO"
 	PokemonExtendedSettingsTemplateIDExtendedV1000PokemonGholdengoNormal                 PokemonExtendedSettingsTemplateID = "EXTENDED_V1000_POKEMON_GHOLDENGO_NORMAL"
@@ -4886,6 +4887,7 @@ var PokemonExtendedSettingsTemplateIDValues = [...]PokemonExtendedSettingsTempla
 	PokemonExtendedSettingsTemplateIDExtendedV0999PokemonGimmighoul,
 	PokemonExtendedSettingsTemplateIDExtendedV999PokemonGimmighoul,
 	PokemonExtendedSettingsTemplateIDExtendedV0999PokemonGimmighoulCoinA1,
+	PokemonExtendedSettingsTemplateIDExtendedV0999PokemonGimmighoulCoinA22026,
 	PokemonExtendedSettingsTemplateIDExtendedV0999PokemonGimmighoulNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV1000PokemonGholdengo,
 	PokemonExtendedSettingsTemplateIDExtendedV1000PokemonGholdengoNormal,

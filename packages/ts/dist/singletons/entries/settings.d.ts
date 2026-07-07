@@ -270,7 +270,7 @@ export interface BreadBattleClientSettings {
 			maxPlayersPerBreadDoughLobby: 100;
 			maxPlayersPerBreadLobby: 4;
 			maxPlayersToPrepareBreadDoughLobby: 98;
-			maxRemoteBreadBattlePassesAllowed: 10;
+			maxRemoteBreadBattlePassesAllowed: 999999;
 			maxRemotePlayersPerBreadDoughLobby: 100;
 			maxRemotePlayersPerBreadLobby: 4;
 			minPlayersToPrepareBreadLobby: 1;
@@ -327,7 +327,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 38.08;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 25;
 										maxReticleSize: 14;
 										scale: 19.04;
@@ -354,7 +354,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 27.42;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 27.15;
 										maxReticleSize: 14;
 										scale: 13.71;
@@ -382,7 +382,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 19.04;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30.72;
 										maxReticleSize: 14;
 										scale: 9.52;
@@ -401,7 +401,7 @@ export interface BreadPokemonScalingSettings {
 										scale: 21.47;
 										yOffset: -7;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 32.3;
 										maxReticleSize: 14;
 										scale: 10.74;
@@ -428,7 +428,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 44.43;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 25;
 										maxReticleSize: 14;
 										scale: 22.22;
@@ -455,7 +455,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 33.27;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 26.45;
 										maxReticleSize: 14;
 										scale: 16.64;
@@ -479,7 +479,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 22.28;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 31.65;
 										maxReticleSize: 14;
 										scale: 11.14;
@@ -496,7 +496,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 25.06;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 29.9;
 										maxReticleSize: 18;
 										scale: 12.53;
@@ -523,7 +523,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 52.6;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 25;
 										maxReticleSize: 14;
 										scale: 26.3;
@@ -550,7 +550,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 34.27;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 27.32;
 										maxReticleSize: 14;
 										scale: 17.14;
@@ -574,7 +574,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 30.58;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 34;
 										maxReticleSize: 14;
 										scale: 15.29;
@@ -592,7 +592,7 @@ export interface BreadPokemonScalingSettings {
 										scale: 20.32;
 										xOffset: 9.6;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 39.2;
 										maxReticleSize: 22;
 										scale: 10.16;
@@ -617,7 +617,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 40.46;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 28.5;
 										maxReticleSize: 14;
 										scale: 20.23;
@@ -641,7 +641,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 25.844;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 12.922;
@@ -665,7 +665,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 24.122;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 32.5;
 										maxReticleSize: 14;
 										scale: 12.06;
@@ -692,7 +692,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 29.38;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 14.69;
@@ -716,7 +716,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 19.51;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 38.74;
 										maxReticleSize: 14;
 										scale: 9.76;
@@ -743,7 +743,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 20.68;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 10.34;
@@ -767,7 +767,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 21.33;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 10.67;
@@ -791,7 +791,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 37.55;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 18.775;
@@ -815,7 +815,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 25;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 35;
 										maxReticleSize: 14;
 										scale: 12.5;
@@ -839,7 +839,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 26;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 35;
 										maxReticleSize: 14;
 										scale: 13;
@@ -863,7 +863,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 14.94;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 7.47;
@@ -887,7 +887,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 53.06;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 26.53;
@@ -911,7 +911,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 23.65;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 11.83;
@@ -935,7 +935,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 14.64;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 7.32;
@@ -962,7 +962,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 78.4;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 39.2;
@@ -986,7 +986,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 48.31;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 24.16;
@@ -1009,7 +1009,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 29.28;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 35;
 										maxReticleSize: 14;
 										scale: 14.64;
@@ -1035,7 +1035,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 78.4;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 25.27;
 										maxReticleSize: 14;
 										scale: 39.2;
@@ -1061,7 +1061,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 35.36;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 27.24;
 										maxReticleSize: 14;
 										scale: 17.68;
@@ -1085,7 +1085,7 @@ export interface BreadPokemonScalingSettings {
 										scale: 18.13;
 										yOffset: -5;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 9.07;
@@ -1108,7 +1108,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 21.33;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 10.67;
@@ -1134,7 +1134,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 78.4;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 26.5;
 										maxReticleSize: 14;
 										scale: 39.2;
@@ -1160,7 +1160,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 44.42;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 24.94;
 										maxReticleSize: 14;
 										scale: 22.21;
@@ -1186,7 +1186,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 25.84;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 26.5;
 										maxReticleSize: 14;
 										scale: 12.92;
@@ -1212,7 +1212,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 30.86;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 26.5;
 										maxReticleSize: 14;
 										scale: 15.43;
@@ -1238,7 +1238,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 78.4;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 22.23;
 										maxReticleSize: 14;
 										scale: 39.2;
@@ -1264,7 +1264,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 38.08;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 25.1;
 										maxReticleSize: 14;
 										scale: 19.4;
@@ -1290,7 +1290,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 19.04;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 24.78;
 										maxReticleSize: 14;
 										scale: 9.52;
@@ -1313,7 +1313,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 33.68;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 16.84;
@@ -1339,7 +1339,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 78.4;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 27.48;
 										maxReticleSize: 14;
 										scale: 39.2;
@@ -1365,7 +1365,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 50.77;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30.72;
 										maxReticleSize: 14;
 										scale: 25.39;
@@ -1388,7 +1388,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 44.42;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30.72;
 										maxReticleSize: 14;
 										scale: 22.21;
@@ -1411,7 +1411,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 26.36;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30.72;
 										maxReticleSize: 14;
 										scale: 13.18;
@@ -1437,7 +1437,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 62.72;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 24.9;
 										maxReticleSize: 14;
 										scale: 31.36;
@@ -1464,7 +1464,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 22.61;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 22.7;
 										maxReticleSize: 14;
 										scale: 11.31;
@@ -1491,7 +1491,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 22.61;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 22.7;
 										maxReticleSize: 14;
 										scale: 11.31;
@@ -1519,7 +1519,7 @@ export interface BreadPokemonScalingSettings {
 										scale: 24;
 										yOffset: -5;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 12;
 										scale: 12;
@@ -1547,7 +1547,7 @@ export interface BreadPokemonScalingSettings {
 										scale: 24;
 										yOffset: -5;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 12;
 										scale: 12;
@@ -1570,7 +1570,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 15.87;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 7.94;
@@ -1594,7 +1594,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 22.19;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 35;
 										maxReticleSize: 14;
 										scale: 11.1;
@@ -1618,7 +1618,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 42.5;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 21.25;
@@ -1642,7 +1642,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 27.48;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 13.74;
@@ -1666,7 +1666,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 81.1;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 40.55;
@@ -1690,7 +1690,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 38.26;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 19.13;
@@ -1714,7 +1714,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 31.15;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 15.58;
@@ -1738,7 +1738,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 17.23;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 8.62;
@@ -1762,7 +1762,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 18.98;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 9.49;
@@ -1786,7 +1786,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 14.94;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 7.47;
@@ -1809,7 +1809,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 40;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 26;
 										maxReticleSize: 14;
 										scale: 30;
@@ -1833,7 +1833,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 22.19;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 25;
 										maxReticleSize: 14;
 										scale: 8.9;
@@ -1857,7 +1857,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 22.19;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 25;
 										maxReticleSize: 14;
 										scale: 8.9;
@@ -1881,7 +1881,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 20.1;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 10.05;
@@ -1905,7 +1905,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 18.13;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 9.07;
@@ -1929,7 +1929,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 18.13;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 9.07;
@@ -1952,7 +1952,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 115.54;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 57.77;
@@ -1975,7 +1975,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 38.08;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										scale: 19.04;
 									};
@@ -1997,7 +1997,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 36.08;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 30;
 										maxReticleSize: 14;
 										scale: 18.04;
@@ -2020,7 +2020,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 31.15;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 32.5;
 										maxReticleSize: 14;
 										scale: 15.58;
@@ -2043,7 +2043,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 25;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 20;
 										maxReticleSize: 14;
 										scale: 8;
@@ -2067,7 +2067,7 @@ export interface BreadPokemonScalingSettings {
 									breadBattleVisualData: {
 										scale: 16.5;
 									};
-									breadEncounterVisiualData: {
+									breadEncounterVisualData: {
 										cameraDistance: 22.75;
 										maxReticleSize: 14;
 										scale: 5;
@@ -2093,7 +2093,7 @@ export interface BreadPokemonScalingSettings {
 										xOffset: 3.06;
 										yOffset: 9.74;
 									};
-									breadMode: 4;
+									breadMode: "BREAD_SPECIAL_MODE";
 								},
 							];
 						},
@@ -2468,7 +2468,12 @@ export interface CombatLeagueSettings {
 	data: {
 		templateId: "COMBAT_LEAGUE_SETTINGS";
 		combatLeagueSettings: {
-			combatLeagueTemplateId: ["COMBAT_LEAGUE_DEFAULT_GREAT", "COMBAT_LEAGUE_DEFAULT_ULTRA", "COMBAT_LEAGUE_DEFAULT_MASTER"];
+			combatLeagueTemplateId: [
+				"COMBAT_LEAGUE_DEFAULT_GREAT",
+				"COMBAT_LEAGUE_DEFAULT_ULTRA",
+				"COMBAT_LEAGUE_DEFAULT_MASTER",
+				"COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIPS_LEGACY",
+			];
 		};
 	};
 }
@@ -2612,13 +2617,11 @@ export interface ContestSettings {
 			isContestInNearbyMenu: true;
 			isFeatureEnabled: true;
 			isFriendsDisplayEnabled: true;
-			isNormalizedScoreToSpecies: true;
-			isPokemonScalarEnabled: true;
 			isV2FeatureEnabled: true;
 			isV2FocusesEnabled: true;
 			maxCatchPromptRange: 500;
 			minCooldownBeforeSeasonEndMs: "50000000";
-			playerContestMaxEntries: 3;
+			playerContestMaxEntries: 5;
 		};
 	};
 }
@@ -3054,10 +3057,10 @@ export interface InventorySettings {
 			easyIncubatorBuyEnabled: true;
 			enableEggsNotInventory: true;
 			luckyFriendApplicatorSettingsToggleEnabled: true;
-			maxBagItems: 11000;
+			maxBagItems: 12000;
 			maxItemBoostDurationMs: "86400000";
-			maxPokemon: 11650;
-			maxPostcards: 2000;
+			maxPokemon: 12650;
+			maxPostcards: 3000;
 			maxStoneACount: 9999;
 			maxTeamChanges: 1;
 			specialEggOverflowSpots: 3;
@@ -3106,7 +3109,6 @@ export interface IrisSocialSettings {
 			guidanceInCarThreshold: 0.8;
 			guidancePathNearbyFinishDelayMs: 1000;
 			guidancePathNearbyFinishDistanceMeters: 1;
-			irisSocialEnabled: true;
 			irisSocialPoiDeactivationCooldownMs: "1209600000";
 			limitedLocalizationTimeoutDurationMs: "30000";
 			limitedPokedexIds: [
@@ -3267,8 +3269,9 @@ export interface IrisSocialSettings {
 			maxTimeBgModeBeforeExpulsionMs: "15000";
 			maxTimeNoActivityPlayerInactiveMs: "60000";
 			minBoundaryAreaSqMeters: 49;
+			minVpsScore: 0.4;
 			pokeballPingTimeDelayMs: 3000;
-			pokemonExpireAfterMs: "172800000";
+			pokemonExpireAfterMs: "7200000";
 			pokemonSpawnStaggerDurationMs: "500";
 			pushGatewayEnabled: true;
 			sunriseThresholdOffsetMs: "-5400000";
@@ -3591,6 +3594,7 @@ export interface MapDisplaySettings {
 	data: {
 		templateId: "MAP_DISPLAY_SETTINGS";
 		mapDisplaySettings: {
+			mapEffectName: "fx_map_fireworks";
 			showEnhancedSky: true;
 		};
 	};
@@ -3623,7 +3627,7 @@ export interface MegaEvoSettings {
 			enableMegaLevel: true;
 			enableMegaLevelLegacyAward: true;
 			evolutionLengthMs: "28800000";
-			maxCandyHoardSize: 10000;
+			maxCandyHoardSize: 50000;
 			numMegaLevels: 4;
 		};
 	};
@@ -4381,7 +4385,7 @@ export interface PhotoSettings {
 		templateId: "PHOTO_SETTINGS";
 		photoSettings: {
 			bannerImageUrl: ["PokemonSetsHeaderImage01", "PokemonSetsHeaderImage02", "PokemonSetsHeaderImage03"];
-			irisFlags: 2011175120;
+			irisFlags: 2009075920;
 			isIrisEnabled: true;
 			screenCaptureSize: 2;
 		};
@@ -4683,7 +4687,7 @@ export interface PowerUpPokestopsSettings {
 	data: {
 		templateId: "POWER_UP_POKESTOP_SHARED_SETTINGS";
 		powerUpPokestopsSettings: {
-			powerUpPokestopsMinPlayerLevel: 20;
+			powerUpPokestopsMinPlayerLevel: 200;
 			validatePokestopOnFortSearchPercent: 1;
 		};
 	};
@@ -4787,18 +4791,17 @@ export interface RaidSettings {
 			bootSoloMs: 30000;
 			canInviteFriendsInPerson: true;
 			canInviteFriendsRemotely: true;
-			failedFriendInviteInfoEnabled: true;
 			fetchProfileFromSocialEnabled: true;
 			friendInviteCutoffTimeSec: 20;
 			friendRequestsEnabled: true;
 			inviteCooldownDurationMillis: "30000";
-			maxNumFriendInvites: 5;
-			maxNumFriendInvitesPerAction: 5;
+			maxNumFriendInvites: 10;
+			maxNumFriendInvitesPerAction: 10;
 			maxPlayersPerLobby: 20;
 			maxRemotePlayersPerLobby: 10;
 			maxRemoteRaidPasses: 3;
 			minPlayersToBoot: 2;
-			obRaidClientSettingsNumber1: 1;
+			obRaidClientSettingsNumber1: 2;
 			obRaidClientSettingsNumber29: 1;
 			pokemonMusicOverrides: [
 				{
@@ -4995,7 +4998,7 @@ export interface RouteCreationSettings {
 			maxOpenRoutes: 5;
 			maxPostPunishmentBanTimeMs: "1";
 			maxRecallCountThreshold: 1;
-			maxRecordingSpeedMetersPerSecond: 1000;
+			maxRecordingSpeedMetersPerSecond: 20;
 			maxSubmissionCountThreshold: 10;
 			maxTotalDistanceM: 20000;
 			minBreadcrumbDistanceDeltaMeters: 3;
@@ -5463,6 +5466,13 @@ export interface SpecialEggSettings {
 	};
 }
 
+export interface SpecialResearchVisualRefreshSettings {
+	templateId: "SPECIAL_RESEARCH_VISUAL_REFRESH_SETTINGS";
+	data: {
+		templateId: "SPECIAL_RESEARCH_VISUAL_REFRESH_SETTINGS";
+	};
+}
+
 export interface SponsoredGeofenceGiftSettings {
 	templateId: "SPONSORED_GEOFENCE_GIFT_SETTINGS";
 	data: {
@@ -5487,8 +5497,7 @@ export interface SquashSettings {
 	data: {
 		templateId: "REMOTE_RAID_LIMIT_SETTINGS";
 		squashSettings: {
-			dailySquashLimit: 10;
-			enabled: true;
+			dailySquashLimit: 999999;
 		};
 	};
 }
@@ -5807,9 +5816,9 @@ export interface VsSeekerClientSettings {
 		templateId: "VS_SEEKER_CLIENT_SETTINGS";
 		vsSeekerClientSettings: {
 			allowedVsSeekerLeagueTemplateId: [
-				"COMBAT_LEAGUE_VS_SEEKER_MASTER",
-				"COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S22",
-				"COMBAT_LEAGUE_VS_SEEKER_GREAT_PVP_NEXT_PREVIEW",
+				"COMBAT_LEAGUE_VS_SEEKER_GREAT",
+				"COMBAT_LEAGUE_VS_SEEKER_GREAT_SUMMER",
+				"COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIPS_LEGACY",
 			];
 		};
 	};
@@ -5825,74 +5834,78 @@ export interface VsSeekerScheduleSettings {
 			enableTodayView: true;
 			seasonSchedules: [
 				{
-					blogUrl: "https://pokemongolive.com/post/go-battle-league-memories-in-motion";
-					descriptionKey: "22";
-					seasonTitle: "22";
+					descriptionKey: "23";
+					seasonTitle: "23";
 					vsSeekerSchedules: [
 						{
-							endTimeMs: "1773172800000";
-							startTimeMs: "1772571600000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_GREAT_KANTO"];
+							endTimeMs: "1781035200000";
+							startTimeMs: "1780430400000";
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_NAIC"];
 						},
 						{
-							endTimeMs: "1773777600000";
-							startTimeMs: "1773172800000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_SPRING_GREAT"];
+							endTimeMs: "1781640000000";
+							startTimeMs: "1781035200000";
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_NAIC"];
 						},
 						{
-							endTimeMs: "1774382400000";
-							startTimeMs: "1773777600000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_MASTER", "COMBAT_LEAGUE_VS_SEEKER_GREAT_JUNGLE"];
+							endTimeMs: "1782244800000";
+							startTimeMs: "1781640000000";
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_MASTER_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_SUNSHINE_GREAT"];
 						},
 						{
-							endTimeMs: "1774987200000";
-							startTimeMs: "1774382400000";
+							endTimeMs: "1782849600000";
+							startTimeMs: "1782244800000";
 							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_MASTER"];
 						},
 						{
-							endTimeMs: "1775592000000";
-							startTimeMs: "1774987200000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_GREAT_ELECTRIC"];
+							endTimeMs: "1783454400000";
+							startTimeMs: "1782849600000";
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_GREAT_SUMMER"];
 						},
 						{
-							endTimeMs: "1776196800000";
-							startTimeMs: "1775592000000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_GREAT_FANTASY"];
+							endTimeMs: "1784059200000";
+							startTimeMs: "1783454400000";
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_FANTASY_ULTRA"];
 						},
 						{
-							endTimeMs: "1776801600000";
-							startTimeMs: "1776196800000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_MASTER", "COMBAT_LEAGUE_VS_SEEKER_SPRING_GREAT"];
+							endTimeMs: "1784664000000";
+							startTimeMs: "1784059200000";
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_MASTER", "COMBAT_LEAGUE_VS_SEEKER_GREAT_RETRO"];
 						},
 						{
-							endTimeMs: "1777406400000";
-							startTimeMs: "1776801600000";
+							endTimeMs: "1785268800000";
+							startTimeMs: "1784664000000";
 							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_MASTER"];
 						},
 						{
-							endTimeMs: "1778011200000";
-							startTimeMs: "1777406400000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_GREAT_FANTASY"];
+							endTimeMs: "1785873600000";
+							startTimeMs: "1785268800000";
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_MASTER_PREMIER"];
 						},
 						{
-							endTimeMs: "1778616000000";
-							startTimeMs: "1778011200000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_GREAT_JUNGLE"];
+							endTimeMs: "1786478400000";
+							startTimeMs: "1785873600000";
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_GREAT_WEATHER"];
 						},
 						{
-							endTimeMs: "1779220800000";
-							startTimeMs: "1778616000000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_MASTER", "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S22"];
+							endTimeMs: "1787083200000";
+							startTimeMs: "1786478400000";
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_MASTER", "COMBAT_LEAGUE_VS_SEEKER_EVOLUTION"];
 						},
 						{
-							endTimeMs: "1779825600000";
-							startTimeMs: "1779220800000";
+							endTimeMs: "1787688000000";
+							startTimeMs: "1787083200000";
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_GREAT_SCROLL"];
+						},
+						{
+							endTimeMs: "1788292800000";
+							startTimeMs: "1787688000000";
 							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_MASTER"];
 						},
 						{
-							endTimeMs: "1780430400000";
-							startTimeMs: "1779825600000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_MASTER"];
+							endTimeMs: "1788897600000";
+							startTimeMs: "1788292800000";
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_ULTRA_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_MASTER_MEGAS"];
 						},
 					];
 				},
@@ -6027,6 +6040,7 @@ export type SingletonsSettingsMasterfileEntry =
 	| SoftSfidaSettings
 	| SourdoughMoveMappingSettings
 	| SpecialEggSettings
+	| SpecialResearchVisualRefreshSettings
 	| SponsoredGeofenceGiftSettings
 	| SquashSettings
 	| StampCollectionSettings

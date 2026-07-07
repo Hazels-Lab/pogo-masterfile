@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatMove", split "dragon", 13 entries.
+// Generated from Pokémon GO masterfile — group "combatMove", split "dragon", 14 entries.
 
 import type { S } from "../../_utils";
 import type { CombatMove } from "../types";
@@ -172,6 +172,22 @@ export type CombatMoveV0486MoveDragonEnergy = S<
 		}
 	>
 >;
+export type CombatMoveV0590MoveGlaiveRush = S<
+	CombatMove<
+		"COMBAT_V0590_MOVE_GLAIVE_RUSH",
+		{
+			buffs: {
+				attackerDefenseStatStageChange: -1;
+				buffActivationChance: 1;
+			};
+			energyDelta: -40;
+			power: 90;
+			type: "POKEMON_TYPE_DRAGON";
+			uniqueId: "GLAIVE_RUSH";
+			vfxName: "glaive_rush";
+		}
+	>
+>;
 
 export type CombatMoveDragonMasterfileEntry =
 	| CombatMoveV0080MoveTwister
@@ -186,4 +202,5 @@ export type CombatMoveDragonMasterfileEntry =
 	| CombatMoveV0394MoveRoarOfTime
 	| CombatMoveV0482MoveDynamaxCannon
 	| CombatMoveV0484MoveClangingScales
-	| CombatMoveV0486MoveDragonEnergy;
+	| CombatMoveV0486MoveDragonEnergy
+	| CombatMoveV0590MoveGlaiveRush;

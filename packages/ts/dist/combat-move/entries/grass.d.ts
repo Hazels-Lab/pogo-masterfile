@@ -146,8 +146,8 @@ export type CombatMoveV0273MoveEnergyBall = S<
 				buffActivationChance: 0.1;
 				targetDefenseStatStageChange: -1;
 			};
-			energyDelta: -55;
-			power: 90;
+			energyDelta: -45;
+			power: 80;
 			type: "POKEMON_TYPE_GRASS";
 			uniqueId: "ENERGY_BALL";
 			vfxName: "energy_ball";

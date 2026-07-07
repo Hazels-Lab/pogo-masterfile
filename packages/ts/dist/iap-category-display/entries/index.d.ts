@@ -9,7 +9,7 @@ export type IapCategoryDisplayAvatar = S<
 		{
 			category: "IAP_CATEGORY_AVATAR";
 			description: "avatar_shop_description_new";
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGOAvatar_HammerPose_1024%20x%20512%20no%20logo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F243f9324_PGO_Gholdengo_Avatar_Item-nologo.jpg";
 			sortOrder: 5;
 		}
 	>

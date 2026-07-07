@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 12 entries (structural types).
+// Generated from Pokémon GO masterfile — group "featureGate", 17 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -6,17 +6,17 @@ export interface FeatureGate<TemplateID extends string = string, TData extends F
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;
-		featureGate: TData & {
-			rolloutPercentage: 100;
-		};
+		featureGate: TData;
 	};
 }
 export type FeatureGateType = W<FeatureGate>;
 
 export interface FeatureGateData {
+	rolloutPercentage: number;
 	status: number;
 	subFeatureGateList?: Array<{
 		name:
+			| "ALWAYS_USE_EXPANDED_TIME_RANGE"
 			| "MEGA_2026_FTUE_SUB_FEATURE_GATE"
 			| "MEGA_CP_BOOST_ENABLED_SUB_FEATURE_GATE"
 			| "MEGA_EVOLVE_BUTTON_SUB_FEATURE_GATE"
@@ -26,8 +26,11 @@ export interface FeatureGateData {
 			| "MEGA_LEVEL_SPEEDUP_SUB_FEATURE_GATE"
 			| "MEGA_LEVELS_TUTORIAL_SUB_FEATURE_GATE"
 			| "PVP"
-			| "REMOTE_NC_HELP_TEXT_SUB_FEATURE_GATE";
-		rolloutPercentage?: number;
+			| "RAIDS"
+			| "REMOTE_NC_HELP_TEXT_SUB_FEATURE_GATE"
+			| "ROUTES"
+			| "STATIONS";
+		rolloutPercentage: number;
 		status: number;
 	}>;
 }

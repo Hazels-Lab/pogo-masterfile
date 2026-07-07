@@ -116,6 +116,7 @@ import type {
 	MoveSequenceSettingsGigaImpact,
 	MoveSequenceSettingsGigatonHammer,
 	MoveSequenceSettingsGlaciate,
+	MoveSequenceSettingsGlaiveRush,
 	MoveSequenceSettingsGrassKnot,
 	MoveSequenceSettingsGunkShot,
 	MoveSequenceSettingsGustFast,
@@ -271,6 +272,7 @@ import type {
 	MoveSequenceSettingsSmackDown,
 	MoveSequenceSettingsSmackDownFast,
 	MoveSequenceSettingsSnarlFast,
+	MoveSequenceSettingsSnipeShot,
 	MoveSequenceSettingsSolarBeam,
 	MoveSequenceSettingsSpacialRend,
 	MoveSequenceSettingsSparkFast,
@@ -451,6 +453,7 @@ export interface MoveSequenceSettingsLookup {
 	sequence_giga_impact: MoveSequenceSettingsGigaImpact;
 	sequence_gigaton_hammer: MoveSequenceSettingsGigatonHammer;
 	sequence_glaciate: MoveSequenceSettingsGlaciate;
+	sequence_glaive_rush: MoveSequenceSettingsGlaiveRush;
 	sequence_grass_knot: MoveSequenceSettingsGrassKnot;
 	sequence_gunk_shot: MoveSequenceSettingsGunkShot;
 	sequence_gust_fast: MoveSequenceSettingsGustFast;
@@ -606,6 +609,7 @@ export interface MoveSequenceSettingsLookup {
 	sequence_smack_down: MoveSequenceSettingsSmackDown;
 	sequence_smack_down_fast: MoveSequenceSettingsSmackDownFast;
 	sequence_snarl_fast: MoveSequenceSettingsSnarlFast;
+	sequence_snipe_shot: MoveSequenceSettingsSnipeShot;
 	sequence_solar_beam: MoveSequenceSettingsSolarBeam;
 	sequence_spacial_rend: MoveSequenceSettingsSpacialRend;
 	sequence_spark_fast: MoveSequenceSettingsSparkFast;

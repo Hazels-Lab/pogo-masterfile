@@ -10,7 +10,7 @@ export type IapItemDisplayGeneral2Ticket1 = S<
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			description: "text_rewards_key_GOWA25";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FGO_Wild_Area_2025_Global_1024x512_logo.png";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FGO_Wild_Area_2025_Global_1024x512_logo.png";
 			sku: "general2.ticket.1";
 			skuDisableTime: "2025-11-16T18:00:00";
 			skuDisableTimeUtcMs: "1763316000000";
@@ -31,7 +31,7 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket1 = S<
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			description: "text_rewards_key_GOWA25";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FGO_Wild_Area_2025_Global_1024x512_logo.png";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FGO_Wild_Area_2025_Global_1024x512_logo.png";
 			sku: "pgorelease.general2.ticket.1";
 			skuDisableTime: "2025-11-16T18:00:00";
 			skuDisableTimeUtcMs: "1763316000000";

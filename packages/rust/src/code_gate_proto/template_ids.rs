@@ -7,12 +7,14 @@ use serde::{Deserialize, Serialize};
     Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum,
 )]
 pub enum CodeGateProtoTemplateId {
+    #[serde(rename = "AR_PHOTO_MULTIPLE_CONCURRENT_CAMPAIGN_CODE_GATE")]
+    ArPhotoMultipleConcurrentCampaignCodeGate,
     #[serde(rename = "BATTLE_ACCESSIBILITY_CODE_GATE")]
     BattleAccessibilityCodeGate,
-    #[serde(rename = "BATTLE_REWARDS_CODE_GATE")]
-    BattleRewardsCodeGate,
     #[serde(rename = "COMBAT_VNEXT_CODE_GATE")]
     CombatVnextCodeGate,
+    #[serde(rename = "EVENT_POI_REFRESH_CODE_GATE")]
+    EventPoiRefreshCodeGate,
     #[serde(rename = "IBFC_LWS_CODE_GATE")]
     IbfcLwsCodeGate,
     #[serde(rename = "INPUT_TRACKER_CODE_GATE")]
@@ -23,12 +25,10 @@ pub enum CodeGateProtoTemplateId {
     MapThemeLowPerfCodeGate,
     #[serde(rename = "PREDICT_CHARGE_MOVE_ON_SUBMIT_ROLL_BACK_CODE_GATE")]
     PredictChargeMoveOnSubmitRollBackCodeGate,
-    #[serde(rename = "PUSH_GATEWAY_MULTI_ACTION_CODE_GATE")]
-    PushGatewayMultiActionCodeGate,
     #[serde(rename = "STAMP_COLLECTION_SNAPSHOT_ENABLED_CODE_GATE")]
     StampCollectionSnapshotEnabledCodeGate,
-    #[serde(rename = "USE_EXTENDED_SETTINGS_FOR_MAX_SCALE_CODE_GATE")]
-    UseExtendedSettingsForMaxScaleCodeGate,
+    #[serde(rename = "TODAY_VIEW_V3_CODE_GATE")]
+    TodayViewV3CodeGate,
     #[serde(rename = "USE_GMT_SKU_DATA_CODE_GATE")]
     UseGmtSkuDataCodeGate,
 }

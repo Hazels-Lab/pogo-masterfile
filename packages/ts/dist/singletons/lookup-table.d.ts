@@ -126,6 +126,7 @@ import type {
 	SoftSfidaSettings,
 	SourdoughMoveMappingSettings,
 	SpecialEggSettings,
+	SpecialResearchVisualRefreshSettings,
 	SponsoredGeofenceGiftSettings,
 	SquashSettings,
 	StampCollectionSettings,
@@ -270,6 +271,7 @@ export interface SingletonsLookup {
 	SOFT_SFIDA_SETTINGS: SoftSfidaSettings;
 	SOURDOUGH_MOVE_MAPPING_SETTINGS: SourdoughMoveMappingSettings;
 	SPECIAL_EGG_SETTINGS: SpecialEggSettings;
+	SPECIAL_RESEARCH_VISUAL_REFRESH_SETTINGS: SpecialResearchVisualRefreshSettings;
 	SPONSORED_GEOFENCE_GIFT_SETTINGS: SponsoredGeofenceGiftSettings;
 	STAMP_COLLECTION_SETTINGS: StampCollectionSettings;
 	STATIONED_POKEMON_POWER_BOOST_TABLE_SETTINGS: StationedPokemonTableSettings;

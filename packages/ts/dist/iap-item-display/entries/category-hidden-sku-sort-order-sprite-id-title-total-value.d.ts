@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-show-discount-tag-show-strikethrough-price-sku-sort-order-sprite-id-title-total-value", 3 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-hidden-sku-sort-order-sprite-id-title-total-value", 3 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -8,8 +8,7 @@ export type IapItemDisplayBundleSeason16evergreen20241 = S<
 		"bundle.season16evergreen2024.1",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
-			showDiscountTag: true;
-			showStrikethroughPrice: true;
+			hidden: true;
 			sku: "bundle.season16evergreen2024.1";
 			sortOrder: 4;
 			spriteId: "bundle.general1.small.2";
@@ -23,8 +22,7 @@ export type IapItemDisplayBundleSeason16evergreen20242 = S<
 		"bundle.season16evergreen2024.2",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
-			showDiscountTag: true;
-			showStrikethroughPrice: true;
+			hidden: true;
 			sku: "bundle.season16evergreen2024.2";
 			sortOrder: 5;
 			spriteId: "bundle.general.remotebox.medium.1";
@@ -38,8 +36,7 @@ export type IapItemDisplayBundleSeason16evergreen20243 = S<
 		"bundle.season16evergreen2024.3",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
-			showDiscountTag: true;
-			showStrikethroughPrice: true;
+			hidden: true;
 			sku: "bundle.season16evergreen2024.3";
 			sortOrder: 6;
 			spriteId: "bundle.general2.large.2";
@@ -49,7 +46,7 @@ export type IapItemDisplayBundleSeason16evergreen20243 = S<
 	>
 >;
 
-export type IapItemDisplayCategoryShowDiscountTagShowStrikethroughPriceSkuSortOrderSpriteIdTitleTotalValueMasterfileEntry =
+export type IapItemDisplayCategoryHiddenSkuSortOrderSpriteIdTitleTotalValueMasterfileEntry =
 	| IapItemDisplayBundleSeason16evergreen20241
 	| IapItemDisplayBundleSeason16evergreen20242
 	| IapItemDisplayBundleSeason16evergreen20243;

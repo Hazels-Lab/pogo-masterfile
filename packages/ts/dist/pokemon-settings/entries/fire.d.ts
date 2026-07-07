@@ -7,14 +7,23 @@ export type PokemonSettingsV0004PokemonCharmander = S<
 	PokemonSettings<
 		"V0004_POKEMON_CHARMANDER",
 		{
-			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE"];
+			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE", "SPRING_2020_NOEVOLVE"];
 			animationTime: [2.1333, 0.6667, 1.6667, 1.8333, 0, 2.1333, 1.1667, 1.333333];
 			breadTierGroup: "GROUP_1";
 			buddyGroupNumber: 2;
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 19;
-			buddyWalkedMegaEnergyAward: 15;
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+				},
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.65;
 				cylinderRadiusM: 0.3125;
@@ -96,7 +105,16 @@ export type PokemonSettingsV0004PokemonCharmanderFall2019 = S<
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 19;
-			buddyWalkedMegaEnergyAward: 15;
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+				},
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.65;
 				cylinderRadiusM: 0.3125;
@@ -164,14 +182,23 @@ export type PokemonSettingsV0004PokemonCharmanderNormal = S<
 	PokemonSettings<
 		"V0004_POKEMON_CHARMANDER_NORMAL",
 		{
-			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE"];
+			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE", "SPRING_2020_NOEVOLVE"];
 			animationTime: [2.1333, 0.6667, 1.6667, 1.8333, 0, 2.1333, 1.1667, 1.333333];
 			breadTierGroup: "GROUP_1";
 			buddyGroupNumber: 2;
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 19;
-			buddyWalkedMegaEnergyAward: 15;
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+				},
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.65;
 				cylinderRadiusM: 0.3125;
@@ -248,14 +275,23 @@ export type PokemonSettingsV0005PokemonCharmeleon = S<
 	PokemonSettings<
 		"V0005_POKEMON_CHARMELEON",
 		{
-			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE"];
+			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE", "SPRING_2020_NOEVOLVE"];
 			animationTime: [1.8667, 0.6667, 1.8333, 1.5, 6.666667, 2.3333, 2, 2.533334];
 			breadTierGroup: "GROUP_1";
 			buddyGroupNumber: 2;
 			buddyOffsetFemale: [8.8, 0, 0.3];
 			buddyOffsetMale: [8.8, 0, 0.3];
 			buddyScale: 19;
-			buddyWalkedMegaEnergyAward: 15;
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+				},
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+				},
+			];
 			camera: {
 				cylinderHeightM: 1.133;
 				cylinderRadiusM: 0.4635;
@@ -336,14 +372,23 @@ export type PokemonSettingsV0005PokemonCharmeleonNormal = S<
 	PokemonSettings<
 		"V0005_POKEMON_CHARMELEON_NORMAL",
 		{
-			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE"];
+			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE", "SPRING_2020_NOEVOLVE"];
 			animationTime: [1.8667, 0.6667, 1.8333, 1.5, 6.666667, 2.3333, 2, 2.533334];
 			breadTierGroup: "GROUP_1";
 			buddyGroupNumber: 2;
 			buddyOffsetFemale: [8.8, 0, 0.3];
 			buddyOffsetMale: [8.8, 0, 0.3];
 			buddyScale: 19;
-			buddyWalkedMegaEnergyAward: 15;
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+				},
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+				},
+			];
 			camera: {
 				cylinderHeightM: 1.133;
 				cylinderRadiusM: 0.4635;
@@ -432,7 +477,16 @@ export type PokemonSettingsV0006PokemonCharizard = S<
 			buddyOffsetMale: [1.8, -11.4, 36.04];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
-			buddyWalkedMegaEnergyAward: 15;
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+				},
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+				},
+			];
 			camera: {
 				cylinderGroundM: 0.5;
 				cylinderHeightM: 1.5;
@@ -569,7 +623,16 @@ export type PokemonSettingsV0006PokemonCharizardCopy2019 = S<
 			buddyOffsetMale: [1.8, -11.4, 36.04];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
-			buddyWalkedMegaEnergyAward: 15;
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+				},
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+				},
+			];
 			camera: {
 				cylinderGroundM: 0.5;
 				cylinderHeightM: 1.5;
@@ -654,7 +717,16 @@ export type PokemonSettingsV0006PokemonCharizardNormal = S<
 			buddyOffsetMale: [1.8, -11.4, 36.04];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
-			buddyWalkedMegaEnergyAward: 15;
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+				},
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+				},
+			];
 			camera: {
 				cylinderGroundM: 0.5;
 				cylinderHeightM: 1.5;

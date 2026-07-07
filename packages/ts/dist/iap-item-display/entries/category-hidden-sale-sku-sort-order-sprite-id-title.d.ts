@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-hidden-sale-sku-sort-order-sprite-id-title", 155 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-hidden-sale-sku-sort-order-sprite-id-title", 158 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -14,6 +14,20 @@ export type IapItemDisplayBundleAnniversary20231 = S<
 			sortOrder: 1;
 			spriteId: "bundle.general1.large.2";
 			title: "oneyearanniversary.1_title";
+		}
+	>
+>;
+export type IapItemDisplayBundleAtlanticav2box1 = S<
+	IapItemDisplay<
+		"bundle.atlanticav2box.1",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			sale: true;
+			sku: "bundle.atlanticav2box.1";
+			sortOrder: 1;
+			spriteId: "bundle.general2.free.1";
+			title: "boost_box_title";
 		}
 	>
 >;
@@ -84,6 +98,34 @@ export type IapItemDisplayBundleBrazil20231 = S<
 			sortOrder: 1;
 			spriteId: "bundle.general5.small.1";
 			title: "bundle.general5.small.1_title";
+		}
+	>
+>;
+export type IapItemDisplayBundleCd20221 = S<
+	IapItemDisplay<
+		"bundle.cd2022.1",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			sale: true;
+			sku: "bundle.cd2022.1";
+			sortOrder: 1;
+			spriteId: "bundle.halloween.small.1";
+			title: "bundle.halloween.small.1_title";
+		}
+	>
+>;
+export type IapItemDisplayBundleCd20222 = S<
+	IapItemDisplay<
+		"bundle.cd2022.2",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			sale: true;
+			sku: "bundle.cd2022.2";
+			sortOrder: 2;
+			spriteId: "bundle.halloween.adventure.1";
+			title: "bundle.halloween.adventure.1_title";
 		}
 	>
 >;
@@ -2176,11 +2218,14 @@ export type IapItemDisplayPgoreleaseBundleWalkeratlantic20222 = S<
 
 export type IapItemDisplayCategoryHiddenSaleSkuSortOrderSpriteIdTitleMasterfileEntry =
 	| IapItemDisplayBundleAnniversary20231
+	| IapItemDisplayBundleAtlanticav2box1
 	| IapItemDisplayBundleAtlanticav2box2
 	| IapItemDisplayBundleBlackfridaystickers241
 	| IapItemDisplayBundleBlackfridaystickers242
 	| IapItemDisplayBundleBoost20231
 	| IapItemDisplayBundleBrazil20231
+	| IapItemDisplayBundleCd20221
+	| IapItemDisplayBundleCd20222
 	| IapItemDisplayBundleCdrecapstickers1
 	| IapItemDisplayBundleEliteexp20241
 	| IapItemDisplayBundleEliteexp20242

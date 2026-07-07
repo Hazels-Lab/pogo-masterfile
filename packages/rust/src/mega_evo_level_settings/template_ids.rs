@@ -13,6 +13,8 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel0V0015PokemonBeedrill,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0018_POKEMON_PIDGEOT")]
     MegaEvolutionLevel0V0018PokemonPidgeot,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0026_POKEMON_RAICHU")]
+    MegaEvolutionLevel0V0026PokemonRaichu,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0071_POKEMON_VICTREEBEL")]
     MegaEvolutionLevel0V0071PokemonVictreebel,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0080_POKEMON_SLOWBRO")]
@@ -23,6 +25,8 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel0V0149PokemonDragonite,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0150_POKEMON_MEWTWO")]
     MegaEvolutionLevel0V0150PokemonMewtwo,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0227_POKEMON_SKARMORY")]
+    MegaEvolutionLevel0V0227PokemonSkarmory,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0229_POKEMON_HOUNDOOM")]
     MegaEvolutionLevel0V0229PokemonHoundoom,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0248_POKEMON_TYRANITAR")]
@@ -57,12 +61,16 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel0V0687PokemonMalamar,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0719_POKEMON_DIANCIE")]
     MegaEvolutionLevel0V0719PokemonDiancie,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0870_POKEMON_FALINKS")]
+    MegaEvolutionLevel0V0870PokemonFalinks,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_1")]
     MegaEvolutionLevel1,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0015_POKEMON_BEEDRILL")]
     MegaEvolutionLevel1V0015PokemonBeedrill,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0018_POKEMON_PIDGEOT")]
     MegaEvolutionLevel1V0018PokemonPidgeot,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0026_POKEMON_RAICHU")]
+    MegaEvolutionLevel1V0026PokemonRaichu,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0071_POKEMON_VICTREEBEL")]
     MegaEvolutionLevel1V0071PokemonVictreebel,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0080_POKEMON_SLOWBRO")]
@@ -73,6 +81,8 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel1V0149PokemonDragonite,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0150_POKEMON_MEWTWO")]
     MegaEvolutionLevel1V0150PokemonMewtwo,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0227_POKEMON_SKARMORY")]
+    MegaEvolutionLevel1V0227PokemonSkarmory,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0229_POKEMON_HOUNDOOM")]
     MegaEvolutionLevel1V0229PokemonHoundoom,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0248_POKEMON_TYRANITAR")]
@@ -107,12 +117,16 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel1V0687PokemonMalamar,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0719_POKEMON_DIANCIE")]
     MegaEvolutionLevel1V0719PokemonDiancie,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0870_POKEMON_FALINKS")]
+    MegaEvolutionLevel1V0870PokemonFalinks,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_2")]
     MegaEvolutionLevel2,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0015_POKEMON_BEEDRILL")]
     MegaEvolutionLevel2V0015PokemonBeedrill,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0018_POKEMON_PIDGEOT")]
     MegaEvolutionLevel2V0018PokemonPidgeot,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0026_POKEMON_RAICHU")]
+    MegaEvolutionLevel2V0026PokemonRaichu,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0071_POKEMON_VICTREEBEL")]
     MegaEvolutionLevel2V0071PokemonVictreebel,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0080_POKEMON_SLOWBRO")]
@@ -123,6 +137,8 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel2V0149PokemonDragonite,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0150_POKEMON_MEWTWO")]
     MegaEvolutionLevel2V0150PokemonMewtwo,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0227_POKEMON_SKARMORY")]
+    MegaEvolutionLevel2V0227PokemonSkarmory,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0229_POKEMON_HOUNDOOM")]
     MegaEvolutionLevel2V0229PokemonHoundoom,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0248_POKEMON_TYRANITAR")]
@@ -157,12 +173,16 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel2V0687PokemonMalamar,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0719_POKEMON_DIANCIE")]
     MegaEvolutionLevel2V0719PokemonDiancie,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0870_POKEMON_FALINKS")]
+    MegaEvolutionLevel2V0870PokemonFalinks,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_3")]
     MegaEvolutionLevel3,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0015_POKEMON_BEEDRILL")]
     MegaEvolutionLevel3V0015PokemonBeedrill,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0018_POKEMON_PIDGEOT")]
     MegaEvolutionLevel3V0018PokemonPidgeot,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0026_POKEMON_RAICHU")]
+    MegaEvolutionLevel3V0026PokemonRaichu,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0071_POKEMON_VICTREEBEL")]
     MegaEvolutionLevel3V0071PokemonVictreebel,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0080_POKEMON_SLOWBRO")]
@@ -173,6 +193,8 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel3V0149PokemonDragonite,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0150_POKEMON_MEWTWO")]
     MegaEvolutionLevel3V0150PokemonMewtwo,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0227_POKEMON_SKARMORY")]
+    MegaEvolutionLevel3V0227PokemonSkarmory,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0229_POKEMON_HOUNDOOM")]
     MegaEvolutionLevel3V0229PokemonHoundoom,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0248_POKEMON_TYRANITAR")]
@@ -207,10 +229,20 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel3V0687PokemonMalamar,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0719_POKEMON_DIANCIE")]
     MegaEvolutionLevel3V0719PokemonDiancie,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0870_POKEMON_FALINKS")]
+    MegaEvolutionLevel3V0870PokemonFalinks,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0026_POKEMON_RAICHU")]
+    MegaEvolutionLevel4V0026PokemonRaichu,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0071_POKEMON_VICTREEBEL")]
     MegaEvolutionLevel4V0071PokemonVictreebel,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0149_POKEMON_DRAGONITE")]
     MegaEvolutionLevel4V0149PokemonDragonite,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0150_POKEMON_MEWTWO")]
+    MegaEvolutionLevel4V0150PokemonMewtwo,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0227_POKEMON_SKARMORY")]
+    MegaEvolutionLevel4V0227PokemonSkarmory,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0687_POKEMON_MALAMAR")]
     MegaEvolutionLevel4V0687PokemonMalamar,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0870_POKEMON_FALINKS")]
+    MegaEvolutionLevel4V0870PokemonFalinks,
 }

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSequenceSettings", 332 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "moveSequenceSettings", 334 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { MoveSequenceSettings } from "../types";
@@ -1129,6 +1129,14 @@ export type MoveSequenceSettingsGlaciate = S<
 		"sequence_glaciate",
 		{
 			sequence: ["anim attacker atk-move", "wait 0.25", "vfx glaciate", "sfx attacker 549-0_glaciate", "wait 1.5", "sys ui-sync", "sys complete"];
+		}
+	>
+>;
+export type MoveSequenceSettingsGlaiveRush = S<
+	MoveSequenceSettings<
+		"sequence_glaive_rush",
+		{
+			sequence: ["anim attacker atk-move", "wait 0.5", "vfx glaive_rush", "sfx attacker 413-0_brave_bird", "wait 1.0", "sys ui-sync", "sys complete"];
 		}
 	>
 >;
@@ -2725,6 +2733,14 @@ export type MoveSequenceSettingsSnarlFast = S<
 		}
 	>
 >;
+export type MoveSequenceSettingsSnipeShot = S<
+	MoveSequenceSettings<
+		"sequence_snipe_shot",
+		{
+			sequence: ["anim attacker atk-move", "wait 0.5", "vfx snipe_shot", "sfx attacker 745-0_snipe_shot", "wait 1.0", "sys ui-sync", "sys complete"];
+		}
+	>
+>;
 export type MoveSequenceSettingsSolarBeam = S<
 	MoveSequenceSettings<
 		"sequence_solar_beam",
@@ -3471,6 +3487,7 @@ export type MoveSequenceSettingsMasterfileEntry =
 	| MoveSequenceSettingsGigaImpact
 	| MoveSequenceSettingsGigatonHammer
 	| MoveSequenceSettingsGlaciate
+	| MoveSequenceSettingsGlaiveRush
 	| MoveSequenceSettingsGrassKnot
 	| MoveSequenceSettingsGunkShot
 	| MoveSequenceSettingsGustFast
@@ -3626,6 +3643,7 @@ export type MoveSequenceSettingsMasterfileEntry =
 	| MoveSequenceSettingsSmackDown
 	| MoveSequenceSettingsSmackDownFast
 	| MoveSequenceSettingsSnarlFast
+	| MoveSequenceSettingsSnipeShot
 	| MoveSequenceSettingsSolarBeam
 	| MoveSequenceSettingsSpacialRend
 	| MoveSequenceSettingsSparkFast

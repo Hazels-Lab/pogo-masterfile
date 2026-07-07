@@ -2409,6 +2409,7 @@ import type {
 	PokemonSettingsV0998PokemonBaxcaliburNormal,
 	PokemonSettingsV0999PokemonGimmighoul,
 	PokemonSettingsV0999PokemonGimmighoulCoinA1,
+	PokemonSettingsV0999PokemonGimmighoulCoinA22026,
 	PokemonSettingsV0999PokemonGimmighoulNormal,
 	PokemonSettingsV1000PokemonGholdengo,
 	PokemonSettingsV1000PokemonGholdengoNormal,
@@ -4874,6 +4875,7 @@ export interface PokemonSettingsLookup {
 	V0998_POKEMON_BAXCALIBUR_NORMAL: PokemonSettingsV0998PokemonBaxcaliburNormal;
 	V0999_POKEMON_GIMMIGHOUL: PokemonSettingsV0999PokemonGimmighoul;
 	V0999_POKEMON_GIMMIGHOUL_COIN_A1: PokemonSettingsV0999PokemonGimmighoulCoinA1;
+	V0999_POKEMON_GIMMIGHOUL_COIN_A2_2026: PokemonSettingsV0999PokemonGimmighoulCoinA22026;
 	V0999_POKEMON_GIMMIGHOUL_NORMAL: PokemonSettingsV0999PokemonGimmighoulNormal;
 	V1000_POKEMON_GHOLDENGO: PokemonSettingsV1000PokemonGholdengo;
 	V1000_POKEMON_GHOLDENGO_NORMAL: PokemonSettingsV1000PokemonGholdengoNormal;

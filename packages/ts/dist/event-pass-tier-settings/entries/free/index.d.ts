@@ -1,13 +1,11 @@
 // Generated from Pokémon GO masterfile — group "eventPassTierSettings free" entries barrel.
 
-import type { EventPassTierSettingsFreeMay2026MasterfileEntry } from "./may2026";
-import type { EventPassTierSettingsFreeSpringmarathon2026MasterfileEntry } from "./springmarathon2026";
+import type { EventPassTierSettingsFreeGofest2026MasterfileEntry } from "./gofest2026";
+import type { EventPassTierSettingsFreeJune2026MasterfileEntry } from "./june2026";
 
-export type * from "./may2026";
-export type * from "./springmarathon2026";
+export type * from "./gofest2026";
+export type * from "./june2026";
 
-export type EventPassTierSettingsFreeMasterfileEntry =
-	| EventPassTierSettingsFreeMay2026MasterfileEntry
-	| EventPassTierSettingsFreeSpringmarathon2026MasterfileEntry;
+export type EventPassTierSettingsFreeMasterfileEntry = EventPassTierSettingsFreeGofest2026MasterfileEntry | EventPassTierSettingsFreeJune2026MasterfileEntry;
 
 export type EventPassTierSettingsFreeTemplateID = EventPassTierSettingsFreeMasterfileEntry["templateId"];

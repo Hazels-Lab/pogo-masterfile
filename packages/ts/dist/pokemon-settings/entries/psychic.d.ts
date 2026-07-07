@@ -1363,6 +1363,16 @@ export type PokemonSettingsV0150PokemonMewtwo = S<
 			buddyOffsetMale: [20, 0, 59.2];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 100;
+					megaPokemonId: "MEWTWO";
+				},
+				{
+					megaEnergyAwardAmount: 100;
+					megaPokemonId: "MEWTWO";
+				},
+			];
 			camera: {
 				cylinderHeightM: 2;
 				cylinderRadiusM: 0.6;
@@ -1391,6 +1401,18 @@ export type PokemonSettingsV0150PokemonMewtwo = S<
 				shadowBaseCaptureRate: 0.02;
 				shadowDodgeProbability: 0.2;
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA_X";
+					temporaryEvolutionEnergyCost: 7500;
+					temporaryEvolutionEnergyCostSubsequent: 150;
+				},
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA_Y";
+					temporaryEvolutionEnergyCost: 7500;
+					temporaryEvolutionEnergyCostSubsequent: 150;
+				},
+			];
 			evolutionPips: 1;
 			familyId: "FAMILY_MEWTWO";
 			heightStdDev: 0.25;
@@ -1417,6 +1439,43 @@ export type PokemonSettingsV0150PokemonMewtwo = S<
 				baseDefense: 182;
 				baseStamina: 214;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 2.3;
+					averageWeightKg: 127;
+					camera: {
+						cylinderHeightM: 2.4;
+						cylinderRadiusM: 1;
+					};
+					modelHeight: 2.3;
+					modelScaleV2: 0.86;
+					stats: {
+						baseAttack: 399;
+						baseDefense: 215;
+						baseStamina: 228;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
+					typeOverride1: "POKEMON_TYPE_PSYCHIC";
+					typeOverride2: "POKEMON_TYPE_FIGHTING";
+				},
+				{
+					averageHeightM: 1.5;
+					averageWeightKg: 33;
+					camera: {
+						cylinderHeightM: 2;
+						cylinderRadiusM: 0.9;
+					};
+					modelHeight: 1.7;
+					modelScaleV2: 1.2;
+					stats: {
+						baseAttack: 413;
+						baseDefense: 223;
+						baseStamina: 228;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
+					typeOverride1: "POKEMON_TYPE_PSYCHIC";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 100;
 				stardustToUnlock: 100000;
@@ -1437,6 +1496,16 @@ export type PokemonSettingsV0150PokemonMewtwoA = S<
 			buddyOffsetMale: [20, 0, 59.2];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 100;
+					megaPokemonId: "MEWTWO";
+				},
+				{
+					megaEnergyAwardAmount: 100;
+					megaPokemonId: "MEWTWO";
+				},
+			];
 			camera: {
 				cylinderHeightM: 2;
 				cylinderRadiusM: 0.6;
@@ -1513,6 +1582,16 @@ export type PokemonSettingsV0150PokemonMewtwoNormal = S<
 			buddyOffsetMale: [20, 0, 59.2];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 100;
+					megaPokemonId: "MEWTWO";
+				},
+				{
+					megaEnergyAwardAmount: 100;
+					megaPokemonId: "MEWTWO";
+				},
+			];
 			camera: {
 				cylinderHeightM: 2;
 				cylinderRadiusM: 0.6;
@@ -1541,6 +1620,18 @@ export type PokemonSettingsV0150PokemonMewtwoNormal = S<
 				shadowBaseCaptureRate: 0.02;
 				shadowDodgeProbability: 0.2;
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA_X";
+					temporaryEvolutionEnergyCost: 7500;
+					temporaryEvolutionEnergyCostSubsequent: 150;
+				},
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA_Y";
+					temporaryEvolutionEnergyCost: 7500;
+					temporaryEvolutionEnergyCostSubsequent: 150;
+				},
+			];
 			evolutionPips: 1;
 			familyId: "FAMILY_MEWTWO";
 			form: "MEWTWO_NORMAL";
@@ -1568,6 +1659,43 @@ export type PokemonSettingsV0150PokemonMewtwoNormal = S<
 				baseDefense: 182;
 				baseStamina: 214;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 2.3;
+					averageWeightKg: 127;
+					camera: {
+						cylinderHeightM: 2.4;
+						cylinderRadiusM: 1;
+					};
+					modelHeight: 2.3;
+					modelScaleV2: 0.86;
+					stats: {
+						baseAttack: 399;
+						baseDefense: 215;
+						baseStamina: 228;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
+					typeOverride1: "POKEMON_TYPE_PSYCHIC";
+					typeOverride2: "POKEMON_TYPE_FIGHTING";
+				},
+				{
+					averageHeightM: 1.5;
+					averageWeightKg: 33;
+					camera: {
+						cylinderHeightM: 2;
+						cylinderRadiusM: 0.9;
+					};
+					modelHeight: 1.7;
+					modelScaleV2: 1.2;
+					stats: {
+						baseAttack: 413;
+						baseDefense: 223;
+						baseStamina: 228;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
+					typeOverride1: "POKEMON_TYPE_PSYCHIC";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 100;
 				stardustToUnlock: 100000;
@@ -1968,7 +2096,7 @@ export type PokemonSettingsV0178PokemonXatu = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["OMINOUS_WIND", "FUTURESIGHT", "AERIAL_ACE", "PSYSHOCK"];
+			cinematicMoves: ["OMINOUS_WIND", "FUTURESIGHT", "AERIAL_ACE", "PSYSHOCK", "SHADOW_BALL"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 20;
@@ -2048,7 +2176,7 @@ export type PokemonSettingsV0178PokemonXatuNormal = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["OMINOUS_WIND", "FUTURESIGHT", "AERIAL_ACE", "PSYSHOCK"];
+			cinematicMoves: ["OMINOUS_WIND", "FUTURESIGHT", "AERIAL_ACE", "PSYSHOCK", "SHADOW_BALL"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 20;

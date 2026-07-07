@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", 103 entries (structural types).
+// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", 119 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -34,7 +34,7 @@ export interface MegaEvoLevelSettingsData {
 		sameTypeExtraCatchXp?: number;
 		selfCpBoostAdditionalLevel?: number;
 	};
-	ftueExpirationTimestamp?: "1775001600000";
+	ftueExpirationTimestamp?: "1775001600000" | "4083189477000";
 	level?: number;
 	megaEnergyCostToUnlock?: number;
 	pokemonId?:
@@ -43,6 +43,7 @@ export interface MegaEvoLevelSettingsData {
 		| "BEEDRILL"
 		| "DIANCIE"
 		| "DRAGONITE"
+		| "FALINKS"
 		| "GARCHOMP"
 		| "GROUDON"
 		| "GYARADOS"
@@ -56,9 +57,11 @@ export interface MegaEvoLevelSettingsData {
 		| "METAGROSS"
 		| "MEWTWO"
 		| "PIDGEOT"
+		| "RAICHU"
 		| "RAYQUAZA"
 		| "SABLEYE"
 		| "SALAMENCE"
+		| "SKARMORY"
 		| "SLOWBRO"
 		| "TYRANITAR"
 		| "VICTREEBEL";

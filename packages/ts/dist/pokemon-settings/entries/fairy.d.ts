@@ -2682,7 +2682,7 @@ export type PokemonSettingsV0683PokemonAromatisse = S<
 			pokedexHeightM: 0.8;
 			pokedexWeightKg: 15.5;
 			pokemonId: "AROMATISSE";
-			quickMoves: ["CHARM_FAST", "CHARGE_BEAM_FAST"];
+			quickMoves: ["CHARM_FAST", "CHARGE_BEAM_FAST", "FAIRY_WIND_FAST"];
 			stats: {
 				baseAttack: 173;
 				baseDefense: 150;
@@ -2742,7 +2742,7 @@ export type PokemonSettingsV0683PokemonAromatisseNormal = S<
 			pokedexHeightM: 0.8;
 			pokedexWeightKg: 15.5;
 			pokemonId: "AROMATISSE";
-			quickMoves: ["CHARM_FAST", "CHARGE_BEAM_FAST"];
+			quickMoves: ["CHARM_FAST", "CHARGE_BEAM_FAST", "FAIRY_WIND_FAST"];
 			stats: {
 				baseAttack: 173;
 				baseDefense: 150;
@@ -3029,7 +3029,7 @@ export type PokemonSettingsV0700PokemonSylveon = S<
 				cylinderHeightM: 1;
 				cylinderRadiusM: 0.4;
 			};
-			cinematicMoves: ["MOONBLAST", "DAZZLING_GLEAM", "DRAINING_KISS"];
+			cinematicMoves: ["MOONBLAST", "DAZZLING_GLEAM", "DRAINING_KISS", "SHADOW_BALL"];
 			eliteCinematicMove: ["LAST_RESORT", "PSYSHOCK"];
 			encounter: {
 				attackProbability: 0.2;
@@ -3062,7 +3062,7 @@ export type PokemonSettingsV0700PokemonSylveon = S<
 			pokedexHeightM: 1;
 			pokedexWeightKg: 23.5;
 			pokemonId: "SYLVEON";
-			quickMoves: ["CHARM_FAST", "QUICK_ATTACK_FAST"];
+			quickMoves: ["CHARM_FAST", "QUICK_ATTACK_FAST", "FAIRY_WIND_FAST"];
 			stats: {
 				baseAttack: 203;
 				baseDefense: 205;
@@ -3090,7 +3090,7 @@ export type PokemonSettingsV0700PokemonSylveonNormal = S<
 				cylinderHeightM: 1;
 				cylinderRadiusM: 0.4;
 			};
-			cinematicMoves: ["MOONBLAST", "DAZZLING_GLEAM", "DRAINING_KISS"];
+			cinematicMoves: ["MOONBLAST", "DAZZLING_GLEAM", "DRAINING_KISS", "SHADOW_BALL"];
 			eliteCinematicMove: ["LAST_RESORT", "PSYSHOCK"];
 			encounter: {
 				attackProbability: 0.2;
@@ -3124,7 +3124,7 @@ export type PokemonSettingsV0700PokemonSylveonNormal = S<
 			pokedexHeightM: 1;
 			pokedexWeightKg: 23.5;
 			pokemonId: "SYLVEON";
-			quickMoves: ["CHARM_FAST", "QUICK_ATTACK_FAST"];
+			quickMoves: ["CHARM_FAST", "QUICK_ATTACK_FAST", "FAIRY_WIND_FAST"];
 			stats: {
 				baseAttack: 203;
 				baseDefense: 205;

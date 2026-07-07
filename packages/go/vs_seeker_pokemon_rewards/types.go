@@ -16,9 +16,8 @@ type VsSeekerPokemonRewardsPokemonDisplay struct {
 }
 
 type VsSeekerPokemonRewardsPokemon struct {
-	PokemonDisplay   VsSeekerPokemonRewardsPokemonDisplay `json:"pokemonDisplay"`
-	PokemonId        string                               `json:"pokemonId"`
-	ShinyProbability float64                              `json:"shinyProbability"`
+	PokemonDisplay VsSeekerPokemonRewardsPokemonDisplay `json:"pokemonDisplay"`
+	PokemonId      string                               `json:"pokemonId"`
 }
 
 type VsSeekerPokemonRewardsGuaranteedLimitedPokemonReward struct {
@@ -35,15 +34,10 @@ type VsSeekerPokemonRewardsAvailablePokemon struct {
 	UnlockedAtRank                 uint64                                               `json:"unlockedAtRank"`
 }
 
-type VsSeekerPokemonRewardsPokemonV2 struct {
-	PokemonDisplay VsSeekerPokemonRewardsPokemonDisplay `json:"pokemonDisplay"`
-	PokemonId      string                               `json:"pokemonId"`
-}
-
 type VsSeekerPokemonRewardsGuaranteedLimitedPokemonRewardV2 struct {
-	Identifier       string                          `json:"identifier"`
-	LifetimeMaxCount uint64                          `json:"lifetimeMaxCount"`
-	Pokemon          VsSeekerPokemonRewardsPokemonV2 `json:"pokemon"`
+	Identifier       string                        `json:"identifier"`
+	LifetimeMaxCount uint64                        `json:"lifetimeMaxCount"`
+	Pokemon          VsSeekerPokemonRewardsPokemon `json:"pokemon"`
 }
 
 type VsSeekerPokemonRewardsAvailablePokemonV2 struct {
@@ -57,7 +51,7 @@ type VsSeekerPokemonRewardsAvailablePokemonV2 struct {
 type VsSeekerPokemonRewardsAvailablePokemonV3 struct {
 	AttackIvOverride  VsSeekerPokemonRewardsAttackIvOverride `json:"attackIvOverride"`
 	DefenseIvOverride VsSeekerPokemonRewardsAttackIvOverride `json:"defenseIvOverride"`
-	Pokemon           VsSeekerPokemonRewardsPokemonV2        `json:"pokemon"`
+	Pokemon           VsSeekerPokemonRewardsPokemon          `json:"pokemon"`
 	StaminaIvOverride VsSeekerPokemonRewardsAttackIvOverride `json:"staminaIvOverride"`
 	UnlockedAtRank    uint64                                 `json:"unlockedAtRank"`
 }

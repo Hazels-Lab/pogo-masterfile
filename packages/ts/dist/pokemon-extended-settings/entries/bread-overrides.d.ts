@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides", 132 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides", 131 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -393,41 +393,6 @@ export type PokemonExtendedSettingsV0025PokemonPikachu = S<
 				xxsLowerBound: 0.196;
 			};
 			uniqueId: "PIKACHU";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0026PokemonRaichu = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0026_POKEMON_RAICHU",
-		{
-			breadOverrides: [
-				{
-					breadMode: "BREAD_MODE";
-					maxBattleVisualSettings: {
-						scale: 39;
-					};
-					maxEncounterVisualSettings: {
-						cameraDistance: 24;
-						maxReticleSize: 14;
-						scale: 15;
-					};
-					maxPowerspotTopperVisualSettings: {
-						scale: 1;
-					};
-					maxStationVisualSettings: {
-						scale: 2.9;
-					};
-				},
-			];
-			sizeSettings: {
-				mLowerBound: 0.6;
-				mUpperBound: 1;
-				xlUpperBound: 1.2;
-				xsLowerBound: 0.4;
-				xxlUpperBound: 1.4;
-				xxsLowerBound: 0.392;
-			};
-			uniqueId: "RAICHU";
 		}
 	>
 >;
@@ -4866,7 +4831,6 @@ export type PokemonExtendedSettingsBreadOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0011PokemonMetapod
 	| PokemonExtendedSettingsV0012PokemonButterfree
 	| PokemonExtendedSettingsV0025PokemonPikachu
-	| PokemonExtendedSettingsV0026PokemonRaichu
 	| PokemonExtendedSettingsV0052PokemonMeowth
 	| PokemonExtendedSettingsV0058PokemonGrowlithe
 	| PokemonExtendedSettingsV0059PokemonArcanine

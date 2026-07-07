@@ -107,6 +107,20 @@ pub enum ItemSettingsTemplateId {
     ItemEventTicketPink,
     #[serde(rename = "ITEM_EVENT_TICKET_PINK_TO_GIFT")]
     ItemEventTicketPinkToGift,
+    #[serde(rename = "ITEM_EVENT_TICKET_S23_2026_01")]
+    ItemEventTicketS23202601,
+    #[serde(rename = "ITEM_EVENT_TICKET_S23_2026_01_TO_GIFT")]
+    ItemEventTicketS23202601ToGift,
+    #[serde(rename = "ITEM_EVENT_TICKET_S23_2026_02")]
+    ItemEventTicketS23202602,
+    #[serde(rename = "ITEM_EVENT_TICKET_S23_2026_02_TO_GIFT")]
+    ItemEventTicketS23202602ToGift,
+    #[serde(rename = "ITEM_EVENT_TICKET_S23_2026_03")]
+    ItemEventTicketS23202603,
+    #[serde(rename = "ITEM_EVENT_TICKET_S23_2026_04")]
+    ItemEventTicketS23202604,
+    #[serde(rename = "ITEM_EVENT_TICKET_S23_2026_09")]
+    ItemEventTicketS23202609,
     #[serde(rename = "ITEM_EVERGREEN_TICKET")]
     ItemEvergreenTicket,
     #[serde(rename = "ITEM_EVERGREEN_TICKET_TO_GIFT")]

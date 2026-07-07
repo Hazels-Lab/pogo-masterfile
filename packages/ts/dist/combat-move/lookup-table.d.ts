@@ -320,6 +320,8 @@ import type {
 	CombatMoveV0493MovePyroball,
 	CombatMoveV0494MoveGigatonHammer,
 	CombatMoveV0497MovePlasmaFists,
+	CombatMoveV0590MoveGlaiveRush,
+	CombatMoveV0592MoveSnipeShot,
 } from "./entries";
 
 export interface CombatMoveLookup {
@@ -642,4 +644,6 @@ export interface CombatMoveLookup {
 	COMBAT_V0493_MOVE_PYROBALL: CombatMoveV0493MovePyroball;
 	COMBAT_V0494_MOVE_GIGATON_HAMMER: CombatMoveV0494MoveGigatonHammer;
 	COMBAT_V0497_MOVE_PLASMA_FISTS: CombatMoveV0497MovePlasmaFists;
+	COMBAT_V0590_MOVE_GLAIVE_RUSH: CombatMoveV0590MoveGlaiveRush;
+	COMBAT_V0592_MOVE_SNIPE_SHOT: CombatMoveV0592MoveSnipeShot;
 }

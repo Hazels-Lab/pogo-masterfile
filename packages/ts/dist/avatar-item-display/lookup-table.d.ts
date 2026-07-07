@@ -266,6 +266,8 @@ import type {
 	AvatarItemDisplayNGradientTesteye1,
 	AvatarItemDisplayNGradientTesthair0,
 	AvatarItemDisplayNGradientTesthair1,
+	AvatarItemDisplayNHairBlanche,
+	AvatarItemDisplayNHairCandela,
 	AvatarItemDisplayNHairCoilyshort0,
 	AvatarItemDisplayNHairCurlymedium0,
 	AvatarItemDisplayNHairDefaultA0,
@@ -278,6 +280,7 @@ import type {
 	AvatarItemDisplayNHairMohawk00,
 	AvatarItemDisplayNHairMohawk10,
 	AvatarItemDisplayNHairMorgrem0,
+	AvatarItemDisplayNHairSpark,
 	AvatarItemDisplayNHairStraightlong0,
 	AvatarItemDisplayNHairStraightmedium0,
 	AvatarItemDisplayNHairStraightshort0,
@@ -292,6 +295,7 @@ import type {
 	AvatarItemDisplayNHat6thanniversaryB0,
 	AvatarItemDisplayNHatAcetrainersmA0,
 	AvatarItemDisplayNHatAcetrainersmB0,
+	AvatarItemDisplayNHatAcorn,
 	AvatarItemDisplayNHatAdventure0,
 	AvatarItemDisplayNHatAlolanexeggutorhat0,
 	AvatarItemDisplayNHatApplinitems0,
@@ -311,6 +315,7 @@ import type {
 	AvatarItemDisplayNHatCrownmoon0,
 	AvatarItemDisplayNHatCrownsun0,
 	AvatarItemDisplayNHatCubonehat0,
+	AvatarItemDisplayNHatCynthia,
 	AvatarItemDisplayNHatDarumakahat0,
 	AvatarItemDisplayNHatDedenneitems0,
 	AvatarItemDisplayNHatDefaultA0,
@@ -531,6 +536,7 @@ import type {
 	AvatarItemDisplayNPantsCasualB0,
 	AvatarItemDisplayNPantsCasualB1,
 	AvatarItemDisplayNPantsClay0,
+	AvatarItemDisplayNPantsCynthia,
 	AvatarItemDisplayNPantsDefaultA0,
 	AvatarItemDisplayNPantsDefaultA1,
 	AvatarItemDisplayNPantsDefaultA2,
@@ -759,6 +765,7 @@ import type {
 	AvatarItemDisplayNPoseS19gbl,
 	AvatarItemDisplayNPoseS20gbl,
 	AvatarItemDisplayNPoseS22gbl,
+	AvatarItemDisplayNPoseS23gbl,
 	AvatarItemDisplayNPoseSustainability,
 	AvatarItemDisplayNPoseTeapot,
 	AvatarItemDisplayNPoseTinkatonhammer,
@@ -774,6 +781,7 @@ import type {
 	AvatarItemDisplayNShirtAcetrainerbwB0,
 	AvatarItemDisplayNShirtAcetrainersmA0,
 	AvatarItemDisplayNShirtAcetrainersmB0,
+	AvatarItemDisplayNShirtAcorn,
 	AvatarItemDisplayNShirtAllister0,
 	AvatarItemDisplayNShirtAlolacomfey0,
 	AvatarItemDisplayNShirtAnimegou0,
@@ -810,6 +818,7 @@ import type {
 	AvatarItemDisplayNShirtConcierge0,
 	AvatarItemDisplayNShirtCosmog0,
 	AvatarItemDisplayNShirtCowichansweater0,
+	AvatarItemDisplayNShirtCynthia,
 	AvatarItemDisplayNShirtDayofdead0,
 	AvatarItemDisplayNShirtDefaultA0,
 	AvatarItemDisplayNShirtDefaultA1,
@@ -876,6 +885,7 @@ import type {
 	AvatarItemDisplayNShirtGenderlessskirt0,
 	AvatarItemDisplayNShirtGengar0,
 	AvatarItemDisplayNShirtGengaronesie0,
+	AvatarItemDisplayNShirtGholdengoitem,
 	AvatarItemDisplayNShirtGiovanniA0,
 	AvatarItemDisplayNShirtGiovanniB0,
 	AvatarItemDisplayNShirtGiratinaitems0,
@@ -959,6 +969,7 @@ import type {
 	AvatarItemDisplayNShirtLapearloutfitB0,
 	AvatarItemDisplayNShirtLasecuritycorpsA0,
 	AvatarItemDisplayNShirtLasecuritycorpsB0,
+	AvatarItemDisplayNShirtLatamfootballshirt,
 	AvatarItemDisplayNShirtLatiasLatios0,
 	AvatarItemDisplayNShirtLegendofarceusA0,
 	AvatarItemDisplayNShirtLegendofarceusB0,
@@ -978,6 +989,8 @@ import type {
 	AvatarItemDisplayNShirtLysandre0,
 	AvatarItemDisplayNShirtMarshadowtshirt0,
 	AvatarItemDisplayNShirtMegalopunnyitems0,
+	AvatarItemDisplayNShirtMegamewtwox,
+	AvatarItemDisplayNShirtMegamewtwoy,
 	AvatarItemDisplayNShirtMegarayquaza0,
 	AvatarItemDisplayNShirtMelmetaljacket0,
 	AvatarItemDisplayNShirtMelmetalvest0,
@@ -987,6 +1000,7 @@ import type {
 	AvatarItemDisplayNShirtMewtwoA0,
 	AvatarItemDisplayNShirtMewtwoB0,
 	AvatarItemDisplayNShirtMisty0,
+	AvatarItemDisplayNShirtMlb,
 	AvatarItemDisplayNShirtMorpekofullonesie0,
 	AvatarItemDisplayNShirtMorpekohangryonesie0,
 	AvatarItemDisplayNShirtMovie2020jessiejamesA0,
@@ -1225,6 +1239,7 @@ import type {
 	AvatarItemDisplayNShoesClay0,
 	AvatarItemDisplayNShoesClemont0,
 	AvatarItemDisplayNShoesCoolboots0,
+	AvatarItemDisplayNShoesCynthia,
 	AvatarItemDisplayNShoesDedenneitems0,
 	AvatarItemDisplayNShoesDefaultA0,
 	AvatarItemDisplayNShoesDefaultA1,
@@ -1417,6 +1432,7 @@ import type {
 	AvatarItemDisplaySetCofagrigusM,
 	AvatarItemDisplaySetCosmogF,
 	AvatarItemDisplaySetCosmogM,
+	AvatarItemDisplaySetCynthia,
 	AvatarItemDisplaySetDayofthedeadF,
 	AvatarItemDisplaySetDayofthedeadM,
 	AvatarItemDisplaySetDedenneitemsF,
@@ -1916,6 +1932,8 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_gradient_testeye_1: AvatarItemDisplayNGradientTesteye1;
 	N_DISPLAY_n_gradient_testhair_0: AvatarItemDisplayNGradientTesthair0;
 	N_DISPLAY_n_gradient_testhair_1: AvatarItemDisplayNGradientTesthair1;
+	N_DISPLAY_n_hair_blanche: AvatarItemDisplayNHairBlanche;
+	N_DISPLAY_n_hair_candela: AvatarItemDisplayNHairCandela;
 	N_DISPLAY_n_hair_coilyshort_0: AvatarItemDisplayNHairCoilyshort0;
 	N_DISPLAY_n_hair_curlymedium_0: AvatarItemDisplayNHairCurlymedium0;
 	N_DISPLAY_n_hair_default_a_0: AvatarItemDisplayNHairDefaultA0;
@@ -1928,6 +1946,7 @@ export interface AvatarItemDisplayLookup {
 	"N_DISPLAY_n_hair_mohawk-0_0": AvatarItemDisplayNHairMohawk00;
 	"N_DISPLAY_n_hair_mohawk-1_0": AvatarItemDisplayNHairMohawk10;
 	N_DISPLAY_n_hair_morgrem_0: AvatarItemDisplayNHairMorgrem0;
+	N_DISPLAY_n_hair_spark: AvatarItemDisplayNHairSpark;
 	N_DISPLAY_n_hair_straightlong_0: AvatarItemDisplayNHairStraightlong0;
 	N_DISPLAY_n_hair_straightmedium_0: AvatarItemDisplayNHairStraightmedium0;
 	N_DISPLAY_n_hair_straightshort_0: AvatarItemDisplayNHairStraightshort0;
@@ -1942,6 +1961,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_hat_6thanniversary_b_0: AvatarItemDisplayNHat6thanniversaryB0;
 	N_DISPLAY_n_hat_acetrainersm_a_0: AvatarItemDisplayNHatAcetrainersmA0;
 	N_DISPLAY_n_hat_acetrainersm_b_0: AvatarItemDisplayNHatAcetrainersmB0;
+	N_DISPLAY_n_hat_acorn: AvatarItemDisplayNHatAcorn;
 	N_DISPLAY_n_hat_adventure_0: AvatarItemDisplayNHatAdventure0;
 	N_DISPLAY_n_hat_alolanexeggutorhat_0: AvatarItemDisplayNHatAlolanexeggutorhat0;
 	N_DISPLAY_n_hat_applinitems_0: AvatarItemDisplayNHatApplinitems0;
@@ -1961,6 +1981,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_hat_crownmoon_0: AvatarItemDisplayNHatCrownmoon0;
 	N_DISPLAY_n_hat_crownsun_0: AvatarItemDisplayNHatCrownsun0;
 	N_DISPLAY_n_hat_cubonehat_0: AvatarItemDisplayNHatCubonehat0;
+	N_DISPLAY_n_hat_cynthia: AvatarItemDisplayNHatCynthia;
 	N_DISPLAY_n_hat_darumakahat_0: AvatarItemDisplayNHatDarumakahat0;
 	N_DISPLAY_n_hat_dedenneitems_0: AvatarItemDisplayNHatDedenneitems0;
 	N_DISPLAY_n_hat_default_a_0: AvatarItemDisplayNHatDefaultA0;
@@ -2181,6 +2202,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_pants_casual_b_0: AvatarItemDisplayNPantsCasualB0;
 	N_DISPLAY_n_pants_casual_b_1: AvatarItemDisplayNPantsCasualB1;
 	N_DISPLAY_n_pants_clay_0: AvatarItemDisplayNPantsClay0;
+	N_DISPLAY_n_pants_cynthia: AvatarItemDisplayNPantsCynthia;
 	N_DISPLAY_n_pants_default_a_0: AvatarItemDisplayNPantsDefaultA0;
 	N_DISPLAY_n_pants_default_a_1: AvatarItemDisplayNPantsDefaultA1;
 	N_DISPLAY_n_pants_default_a_2: AvatarItemDisplayNPantsDefaultA2;
@@ -2409,6 +2431,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_pose_s19gbl: AvatarItemDisplayNPoseS19gbl;
 	N_DISPLAY_n_pose_s20gbl: AvatarItemDisplayNPoseS20gbl;
 	N_DISPLAY_n_pose_s22gbl: AvatarItemDisplayNPoseS22gbl;
+	N_DISPLAY_n_pose_s23gbl: AvatarItemDisplayNPoseS23gbl;
 	N_DISPLAY_n_pose_sustainability: AvatarItemDisplayNPoseSustainability;
 	N_DISPLAY_n_pose_teapot: AvatarItemDisplayNPoseTeapot;
 	N_DISPLAY_n_pose_tinkatonhammer: AvatarItemDisplayNPoseTinkatonhammer;
@@ -2424,6 +2447,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_acetrainerbw_b_0: AvatarItemDisplayNShirtAcetrainerbwB0;
 	N_DISPLAY_n_shirt_acetrainersm_a_0: AvatarItemDisplayNShirtAcetrainersmA0;
 	N_DISPLAY_n_shirt_acetrainersm_b_0: AvatarItemDisplayNShirtAcetrainersmB0;
+	N_DISPLAY_n_shirt_acorn: AvatarItemDisplayNShirtAcorn;
 	N_DISPLAY_n_shirt_allister_0: AvatarItemDisplayNShirtAllister0;
 	N_DISPLAY_n_shirt_alolacomfey_0: AvatarItemDisplayNShirtAlolacomfey0;
 	N_DISPLAY_n_shirt_animegou_0: AvatarItemDisplayNShirtAnimegou0;
@@ -2460,6 +2484,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_concierge_0: AvatarItemDisplayNShirtConcierge0;
 	N_DISPLAY_n_shirt_cosmog_0: AvatarItemDisplayNShirtCosmog0;
 	N_DISPLAY_n_shirt_cowichansweater_0: AvatarItemDisplayNShirtCowichansweater0;
+	N_DISPLAY_n_shirt_cynthia: AvatarItemDisplayNShirtCynthia;
 	N_DISPLAY_n_shirt_dayofdead_0: AvatarItemDisplayNShirtDayofdead0;
 	N_DISPLAY_n_shirt_default_a_0: AvatarItemDisplayNShirtDefaultA0;
 	N_DISPLAY_n_shirt_default_a_1: AvatarItemDisplayNShirtDefaultA1;
@@ -2526,6 +2551,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_genderlessskirt_0: AvatarItemDisplayNShirtGenderlessskirt0;
 	N_DISPLAY_n_shirt_gengar_0: AvatarItemDisplayNShirtGengar0;
 	N_DISPLAY_n_shirt_gengaronesie_0: AvatarItemDisplayNShirtGengaronesie0;
+	N_DISPLAY_n_shirt_gholdengoitem: AvatarItemDisplayNShirtGholdengoitem;
 	N_DISPLAY_n_shirt_giovanni_a_0: AvatarItemDisplayNShirtGiovanniA0;
 	N_DISPLAY_n_shirt_giovanni_b_0: AvatarItemDisplayNShirtGiovanniB0;
 	N_DISPLAY_n_shirt_giratinaitems_0: AvatarItemDisplayNShirtGiratinaitems0;
@@ -2609,6 +2635,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_lapearloutfit_b_0: AvatarItemDisplayNShirtLapearloutfitB0;
 	N_DISPLAY_n_shirt_lasecuritycorps_a_0: AvatarItemDisplayNShirtLasecuritycorpsA0;
 	N_DISPLAY_n_shirt_lasecuritycorps_b_0: AvatarItemDisplayNShirtLasecuritycorpsB0;
+	N_DISPLAY_n_shirt_latamfootballshirt: AvatarItemDisplayNShirtLatamfootballshirt;
 	"N_DISPLAY_n_shirt_latias-latios_0": AvatarItemDisplayNShirtLatiasLatios0;
 	N_DISPLAY_n_shirt_legendofarceus_a_0: AvatarItemDisplayNShirtLegendofarceusA0;
 	N_DISPLAY_n_shirt_legendofarceus_b_0: AvatarItemDisplayNShirtLegendofarceusB0;
@@ -2628,6 +2655,8 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_lysandre_0: AvatarItemDisplayNShirtLysandre0;
 	N_DISPLAY_n_shirt_marshadowtshirt_0: AvatarItemDisplayNShirtMarshadowtshirt0;
 	N_DISPLAY_n_shirt_megalopunnyitems_0: AvatarItemDisplayNShirtMegalopunnyitems0;
+	N_DISPLAY_n_shirt_megamewtwox: AvatarItemDisplayNShirtMegamewtwox;
+	N_DISPLAY_n_shirt_megamewtwoy: AvatarItemDisplayNShirtMegamewtwoy;
 	N_DISPLAY_n_shirt_megarayquaza_0: AvatarItemDisplayNShirtMegarayquaza0;
 	N_DISPLAY_n_shirt_melmetaljacket_0: AvatarItemDisplayNShirtMelmetaljacket0;
 	N_DISPLAY_n_shirt_melmetalvest_0: AvatarItemDisplayNShirtMelmetalvest0;
@@ -2637,6 +2666,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_mewtwo_a_0: AvatarItemDisplayNShirtMewtwoA0;
 	N_DISPLAY_n_shirt_mewtwo_b_0: AvatarItemDisplayNShirtMewtwoB0;
 	N_DISPLAY_n_shirt_misty_0: AvatarItemDisplayNShirtMisty0;
+	N_DISPLAY_n_shirt_mlb: AvatarItemDisplayNShirtMlb;
 	N_DISPLAY_n_shirt_morpekofullonesie_0: AvatarItemDisplayNShirtMorpekofullonesie0;
 	N_DISPLAY_n_shirt_morpekohangryonesie_0: AvatarItemDisplayNShirtMorpekohangryonesie0;
 	N_DISPLAY_n_shirt_movie2020jessiejames_a_0: AvatarItemDisplayNShirtMovie2020jessiejamesA0;
@@ -2875,6 +2905,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shoes_clay_0: AvatarItemDisplayNShoesClay0;
 	N_DISPLAY_n_shoes_clemont_0: AvatarItemDisplayNShoesClemont0;
 	N_DISPLAY_n_shoes_coolboots_0: AvatarItemDisplayNShoesCoolboots0;
+	N_DISPLAY_n_shoes_cynthia: AvatarItemDisplayNShoesCynthia;
 	N_DISPLAY_n_shoes_dedenneitems_0: AvatarItemDisplayNShoesDedenneitems0;
 	N_DISPLAY_n_shoes_default_a_0: AvatarItemDisplayNShoesDefaultA0;
 	N_DISPLAY_n_shoes_default_a_1: AvatarItemDisplayNShoesDefaultA1;
@@ -3067,6 +3098,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_set_cofagrigus_m: AvatarItemDisplaySetCofagrigusM;
 	N_DISPLAY_set_cosmog_f: AvatarItemDisplaySetCosmogF;
 	N_DISPLAY_set_cosmog_m: AvatarItemDisplaySetCosmogM;
+	N_DISPLAY_set_cynthia: AvatarItemDisplaySetCynthia;
 	N_DISPLAY_set_dayofthedead_f: AvatarItemDisplaySetDayofthedeadF;
 	N_DISPLAY_set_dayofthedead_m: AvatarItemDisplaySetDayofthedeadM;
 	N_DISPLAY_set_dedenneitems_f: AvatarItemDisplaySetDedenneitemsF;

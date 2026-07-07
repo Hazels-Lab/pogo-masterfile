@@ -14,6 +14,7 @@ export type ItemSettingsItemBlukBerry = S<
 				itemEffect: ["ITEM_EFFECT_CAP_NO_MOVEMENT"];
 				itemEffectPercent: [1];
 			};
+			itemId: "ITEM_BLUK_BERRY";
 			itemType: "ITEM_TYPE_FOOD";
 		}
 	>
@@ -35,6 +36,7 @@ export type ItemSettingsItemGoldenPinapBerry = S<
 				remoteBerryMultiplier: 0.5;
 				timeFullDurationMs: "10800000";
 			};
+			itemId: "ITEM_GOLDEN_PINAP_BERRY";
 			itemType: "ITEM_TYPE_FOOD";
 		}
 	>
@@ -56,6 +58,7 @@ export type ItemSettingsItemGoldenRazzBerry = S<
 				remoteBerryMultiplier: 1;
 				timeFullDurationMs: "10800000";
 			};
+			itemId: "ITEM_GOLDEN_RAZZ_BERRY";
 			itemType: "ITEM_TYPE_FOOD";
 		}
 	>
@@ -77,6 +80,7 @@ export type ItemSettingsItemNanabBerry = S<
 				remoteBerryMultiplier: 0.3125;
 				timeFullDurationMs: "3600000";
 			};
+			itemId: "ITEM_NANAB_BERRY";
 			itemType: "ITEM_TYPE_FOOD";
 		}
 	>
@@ -98,6 +102,7 @@ export type ItemSettingsItemPinapBerry = S<
 				remoteBerryMultiplier: 0.25;
 				timeFullDurationMs: "3600000";
 			};
+			itemId: "ITEM_PINAP_BERRY";
 			itemType: "ITEM_TYPE_FOOD";
 		}
 	>
@@ -119,6 +124,7 @@ export type ItemSettingsItemRazzBerry = S<
 				remoteBerryMultiplier: 0.25;
 				timeFullDurationMs: "3600000";
 			};
+			itemId: "ITEM_RAZZ_BERRY";
 			itemType: "ITEM_TYPE_FOOD";
 		}
 	>
@@ -134,6 +140,7 @@ export type ItemSettingsItemWeparBerry = S<
 				itemEffect: ["ITEM_EFFECT_CAP_TARGET_MAX"];
 				itemEffectPercent: [1];
 			};
+			itemId: "ITEM_WEPAR_BERRY";
 			itemType: "ITEM_TYPE_FOOD";
 		}
 	>

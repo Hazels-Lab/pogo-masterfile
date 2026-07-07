@@ -10,6 +10,7 @@ export type ItemSettingsItemPostcardInventory = S<
 			category: "ITEM_CATEGORY_POSTCARD_INVENTORY";
 			descriptionOverride: "item_postcard_inventory_desc_stamp";
 			dropTrainerLevel: 100;
+			itemId: "ITEM_POSTCARD_INVENTORY";
 			itemType: "ITEM_TYPE_POSTCARD_INVENTORY";
 			nameOverride: "item_postcard_inventory_name_stamp";
 		}

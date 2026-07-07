@@ -55,6 +55,13 @@ const (
 	ItemSettingsTemplateIDItemEventTicketGrayToGift         ItemSettingsTemplateID = "ITEM_EVENT_TICKET_GRAY_TO_GIFT"
 	ItemSettingsTemplateIDItemEventTicketPink               ItemSettingsTemplateID = "ITEM_EVENT_TICKET_PINK"
 	ItemSettingsTemplateIDItemEventTicketPinkToGift         ItemSettingsTemplateID = "ITEM_EVENT_TICKET_PINK_TO_GIFT"
+	ItemSettingsTemplateIDItemEventTicketS23202601          ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_01"
+	ItemSettingsTemplateIDItemEventTicketS23202601ToGift    ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_01_TO_GIFT"
+	ItemSettingsTemplateIDItemEventTicketS23202602          ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_02"
+	ItemSettingsTemplateIDItemEventTicketS23202602ToGift    ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_02_TO_GIFT"
+	ItemSettingsTemplateIDItemEventTicketS23202603          ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_03"
+	ItemSettingsTemplateIDItemEventTicketS23202604          ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_04"
+	ItemSettingsTemplateIDItemEventTicketS23202609          ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_09"
 	ItemSettingsTemplateIDItemEvergreenTicket               ItemSettingsTemplateID = "ITEM_EVERGREEN_TICKET"
 	ItemSettingsTemplateIDItemEvergreenTicketToGift         ItemSettingsTemplateID = "ITEM_EVERGREEN_TICKET_TO_GIFT"
 	ItemSettingsTemplateIDItemFreeRaidTicket                ItemSettingsTemplateID = "ITEM_FREE_RAID_TICKET"
@@ -201,6 +208,13 @@ var ItemSettingsTemplateIDValues = [...]ItemSettingsTemplateID{
 	ItemSettingsTemplateIDItemEventTicketGrayToGift,
 	ItemSettingsTemplateIDItemEventTicketPink,
 	ItemSettingsTemplateIDItemEventTicketPinkToGift,
+	ItemSettingsTemplateIDItemEventTicketS23202601,
+	ItemSettingsTemplateIDItemEventTicketS23202601ToGift,
+	ItemSettingsTemplateIDItemEventTicketS23202602,
+	ItemSettingsTemplateIDItemEventTicketS23202602ToGift,
+	ItemSettingsTemplateIDItemEventTicketS23202603,
+	ItemSettingsTemplateIDItemEventTicketS23202604,
+	ItemSettingsTemplateIDItemEventTicketS23202609,
 	ItemSettingsTemplateIDItemEvergreenTicket,
 	ItemSettingsTemplateIDItemEvergreenTicketToGift,
 	ItemSettingsTemplateIDItemFreeRaidTicket,

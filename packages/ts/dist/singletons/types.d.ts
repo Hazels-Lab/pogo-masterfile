@@ -127,6 +127,7 @@ import type {
 	SoftSfidaSettings,
 	SourdoughMoveMappingSettings,
 	SpecialEggSettings,
+	SpecialResearchVisualRefreshSettings,
 	SponsoredGeofenceGiftSettings,
 	SquashSettings,
 	StampCollectionSettings,
@@ -271,6 +272,7 @@ export type SharedMoveSettingsType = W<SharedMoveSettings>;
 export type SoftSfidaSettingsType = W<SoftSfidaSettings>;
 export type SourdoughMoveMappingSettingsType = W<SourdoughMoveMappingSettings>;
 export type SpecialEggSettingsType = W<SpecialEggSettings>;
+export type SpecialResearchVisualRefreshSettingsType = W<SpecialResearchVisualRefreshSettings>;
 export type SponsoredGeofenceGiftSettingsType = W<SponsoredGeofenceGiftSettings>;
 export type SquashSettingsType = W<SquashSettings>;
 export type StampCollectionSettingsType = W<StampCollectionSettings>;
@@ -415,6 +417,7 @@ export type Singletons =
 	| SoftSfidaSettingsType
 	| SourdoughMoveMappingSettingsType
 	| SpecialEggSettingsType
+	| SpecialResearchVisualRefreshSettingsType
 	| SponsoredGeofenceGiftSettingsType
 	| SquashSettingsType
 	| StampCollectionSettingsType

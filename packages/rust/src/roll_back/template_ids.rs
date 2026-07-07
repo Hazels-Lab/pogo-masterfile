@@ -7,10 +7,16 @@ use serde::{Deserialize, Serialize};
     Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum,
 )]
 pub enum RollBackTemplateId {
-    #[serde(rename = "ANDROID_SENSORS_ROLL_BACK")]
-    AndroidSensorsRollBack,
-    #[serde(rename = "NPC_LEAGUE_SUFFIX_ROLL_BACK")]
-    NpcLeagueSuffixRollBack,
-    #[serde(rename = "SINGLE_ROLL_SHINY_RATE_ROLL_BACK")]
-    SingleRollShinyRateRollBack,
+    #[serde(rename = "COMBAT_VNEXT_USE_MATCHING_START_TURN_FOR_FAST_ATTACK_ENABLE_ROLL_BACK")]
+    CombatVnextUseMatchingStartTurnForFastAttackEnableRollBack,
+    #[serde(rename = "FRIENDS_AND_SOCIAL_LAZY_LOAD_ROLL_BACK")]
+    FriendsAndSocialLazyLoadRollBack,
+    #[serde(rename = "MAP_RADIUS_ENHANCE_GRAPHICS_ROLL_BACK")]
+    MapRadiusEnhanceGraphicsRollBack,
+    #[serde(rename = "OPTIMIZE_RAID_LOBBY_AVATAR_DETAILS_ROLL_BACK")]
+    OptimizeRaidLobbyAvatarDetailsRollBack,
+    #[serde(rename = "PERIODIC_MAP_UNLOAD_ROLL_BACK")]
+    PeriodicMapUnloadRollBack,
+    #[serde(rename = "REALTIME_POKEMON_SHADOW_NULL_ROOT_BONE_CRASH_FIX_ROLL_BACK")]
+    RealtimePokemonShadowNullRootBoneCrashFixRollBack,
 }

@@ -17,6 +17,8 @@ pub enum TemporaryEvolutionSettingsTemplateId {
     TemporaryEvolutionV0015PokemonBeedrill,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0018_POKEMON_PIDGEOT")]
     TemporaryEvolutionV0018PokemonPidgeot,
+    #[serde(rename = "TEMPORARY_EVOLUTION_V0026_POKEMON_RAICHU")]
+    TemporaryEvolutionV0026PokemonRaichu,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0065_POKEMON_ALAKAZAM")]
     TemporaryEvolutionV0065PokemonAlakazam,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0071_POKEMON_VICTREEBEL")]
@@ -35,6 +37,8 @@ pub enum TemporaryEvolutionSettingsTemplateId {
     TemporaryEvolutionV0142PokemonAerodactyl,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0149_POKEMON_DRAGONITE")]
     TemporaryEvolutionV0149PokemonDragonite,
+    #[serde(rename = "TEMPORARY_EVOLUTION_V0150_POKEMON_MEWTWO")]
+    TemporaryEvolutionV0150PokemonMewtwo,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0181_POKEMON_AMPHAROS")]
     TemporaryEvolutionV0181PokemonAmpharos,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0208_POKEMON_STEELIX")]
@@ -43,6 +47,8 @@ pub enum TemporaryEvolutionSettingsTemplateId {
     TemporaryEvolutionV0212PokemonScizor,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0214_POKEMON_HERACROSS")]
     TemporaryEvolutionV0214PokemonHeracross,
+    #[serde(rename = "TEMPORARY_EVOLUTION_V0227_POKEMON_SKARMORY")]
+    TemporaryEvolutionV0227PokemonSkarmory,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0229_POKEMON_HOUNDOOM")]
     TemporaryEvolutionV0229PokemonHoundoom,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0248_POKEMON_TYRANITAR")]
@@ -95,6 +101,8 @@ pub enum TemporaryEvolutionSettingsTemplateId {
     TemporaryEvolutionV0428PokemonGarchomp,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0428_POKEMON_LOPUNNY")]
     TemporaryEvolutionV0428PokemonLopunny,
+    #[serde(rename = "TEMPORARY_EVOLUTION_V0445_POKEMON_GARCHOMP")]
+    TemporaryEvolutionV0445PokemonGarchomp,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0448_POKEMON_LUCARIO")]
     TemporaryEvolutionV0448PokemonLucario,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0460_POKEMON_ABOMASNOW")]

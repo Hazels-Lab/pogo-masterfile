@@ -29,7 +29,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 								form: "PIKACHU_VS_2019";
 							};
 							pokemonId: "PIKACHU";
-							shinyProbability: 0.05;
 						};
 					};
 					staminaIvOverride: {
@@ -54,13 +53,13 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 						};
 					};
 					guaranteedLimitedPokemonReward: {
-						identifier: "season29_pidgeot";
+						identifier: "season30_gabite";
 						lifetimeMaxCount: 1;
 						pokemon: {
 							pokemonDisplay: {
-								form: "PIDGEOT_NORMAL";
+								form: "GABITE_NORMAL";
 							};
-							pokemonId: "PIDGEOT";
+							pokemonId: "GABITE";
 						};
 					};
 					staminaIvOverride: {
@@ -84,15 +83,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 							min: 10;
 						};
 					};
-					guaranteedLimitedPokemonReward: {
-						identifier: "season29_pancham";
-						lifetimeMaxCount: 1;
-						pokemon: {
-							pokemonDisplay: {
-								form: "PANCHAM_NORMAL";
-							};
-							pokemonId: "PANCHAM";
+					pokemon: {
+						pokemonDisplay: {
+							form: "DRATINI_NORMAL";
 						};
+						pokemonId: "DRATINI";
 					};
 					staminaIvOverride: {
 						range: {
@@ -100,7 +95,7 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 							min: 10;
 						};
 					};
-					unlockedAtRank: 6;
+					unlockedAtRank: 21;
 				},
 				{
 					attackIvOverride: {
@@ -116,13 +111,13 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 						};
 					};
 					guaranteedLimitedPokemonReward: {
-						identifier: "season29_togetic";
+						identifier: "season30_lucario";
 						lifetimeMaxCount: 1;
 						pokemon: {
 							pokemonDisplay: {
-								form: "TOGETIC_NORMAL";
+								form: "LUCARIO_NORMAL";
 							};
-							pokemonId: "TOGETIC";
+							pokemonId: "LUCARIO";
 						};
 					};
 					staminaIvOverride: {
@@ -147,7 +142,7 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 						};
 					};
 					guaranteedLimitedPokemonReward: {
-						identifier: "season29_honedge";
+						identifier: "season30_honedge";
 						lifetimeMaxCount: 1;
 						pokemon: {
 							pokemonDisplay: {
@@ -178,7 +173,7 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 						};
 					};
 					guaranteedLimitedPokemonReward: {
-						identifier: "season29_dreepy";
+						identifier: "season30_dreepy";
 						lifetimeMaxCount: 1;
 						pokemon: {
 							pokemonDisplay: {
@@ -210,9 +205,9 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					};
 					pokemon: {
 						pokemonDisplay: {
-							form: "PINECO_NORMAL";
+							form: "SWABLU_NORMAL";
 						};
-						pokemonId: "PINECO";
+						pokemonId: "SWABLU";
 					};
 					staminaIvOverride: {
 						range: {
@@ -264,9 +259,9 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					};
 					pokemon: {
 						pokemonDisplay: {
-							form: "TOTODILE_NORMAL";
+							form: "MANKEY_NORMAL";
 						};
-						pokemonId: "TOTODILE";
+						pokemonId: "MANKEY";
 					};
 					staminaIvOverride: {
 						range: {
@@ -291,9 +286,9 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					};
 					pokemon: {
 						pokemonDisplay: {
-							form: "DUSKULL_NORMAL";
+							form: "INKAY_NORMAL";
 						};
-						pokemonId: "DUSKULL";
+						pokemonId: "INKAY";
 					};
 					staminaIvOverride: {
 						range: {
@@ -318,9 +313,9 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					};
 					pokemon: {
 						pokemonDisplay: {
-							form: "ROOKIDEE_NORMAL";
+							form: "LICKITUNG_NORMAL";
 						};
-						pokemonId: "ROOKIDEE";
+						pokemonId: "LICKITUNG";
 					};
 					staminaIvOverride: {
 						range: {
@@ -372,9 +367,9 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					};
 					pokemon: {
 						pokemonDisplay: {
-							form: "FURRET_NORMAL";
+							form: "VULPIX_ALOLA";
 						};
-						pokemonId: "FURRET";
+						pokemonId: "VULPIX";
 					};
 					staminaIvOverride: {
 						range: {
@@ -399,9 +394,9 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					};
 					pokemon: {
 						pokemonDisplay: {
-							form: "MORPEKO_FULL_BELLY";
+							form: "FRILLISH_NORMAL";
 						};
-						pokemonId: "MORPEKO";
+						pokemonId: "FRILLISH";
 					};
 					staminaIvOverride: {
 						range: {
@@ -453,9 +448,9 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					};
 					pokemon: {
 						pokemonDisplay: {
-							form: "LAPRAS_NORMAL";
+							form: "GIBLE_NORMAL";
 						};
-						pokemonId: "LAPRAS";
+						pokemonId: "GIBLE";
 					};
 					staminaIvOverride: {
 						range: {
@@ -480,9 +475,9 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					};
 					pokemon: {
 						pokemonDisplay: {
-							form: "BELDUM_NORMAL";
+							form: "STUNFISK_GALARIAN";
 						};
-						pokemonId: "BELDUM";
+						pokemonId: "STUNFISK";
 					};
 					staminaIvOverride: {
 						range: {
@@ -588,9 +583,9 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					};
 					pokemon: {
 						pokemonDisplay: {
-							form: "JANGMO_O_NORMAL";
+							form: "MORPEKO_FULL_BELLY";
 						};
-						pokemonId: "JANGMO_O";
+						pokemonId: "MORPEKO";
 					};
 					staminaIvOverride: {
 						range: {
@@ -598,7 +593,34 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 							min: 10;
 						};
 					};
-					unlockedAtRank: 21;
+					unlockedAtRank: 16;
+				},
+				{
+					attackIvOverride: {
+						range: {
+							max: 15;
+							min: 10;
+						};
+					};
+					defenseIvOverride: {
+						range: {
+							max: 15;
+							min: 10;
+						};
+					};
+					pokemon: {
+						pokemonDisplay: {
+							form: "GOOMY_NORMAL";
+						};
+						pokemonId: "GOOMY";
+					};
+					staminaIvOverride: {
+						range: {
+							max: 15;
+							min: 10;
+						};
+					};
+					unlockedAtRank: 22;
 				},
 				{
 					attackIvOverride: {
@@ -625,33 +647,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 							min: 10;
 						};
 					};
-					unlockedAtRank: 22;
-				},
-				{
-					attackIvOverride: {
-						range: {
-							max: 15;
-							min: 10;
-						};
-					};
-					defenseIvOverride: {
-						range: {
-							max: 15;
-							min: 10;
-						};
-					};
-					pokemon: {
-						pokemonDisplay: {
-							form: "DREEPY_NORMAL";
-						};
-						pokemonId: "DREEPY";
-					};
-					staminaIvOverride: {
-						range: {
-							max: 15;
-							min: 10;
-						};
-					};
 					unlockedAtRank: 23;
 				},
 				{
@@ -669,9 +664,63 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					};
 					pokemon: {
 						pokemonDisplay: {
-							form: "PHEROMOSA_NORMAL";
+							form: "ARTICUNO_NORMAL";
 						};
-						pokemonId: "PHEROMOSA";
+						pokemonId: "ARTICUNO";
+					};
+					staminaIvOverride: {
+						range: {
+							max: 15;
+							min: 10;
+						};
+					};
+					unlockedAtRank: 20;
+				},
+				{
+					attackIvOverride: {
+						range: {
+							max: 15;
+							min: 10;
+						};
+					};
+					defenseIvOverride: {
+						range: {
+							max: 15;
+							min: 10;
+						};
+					};
+					pokemon: {
+						pokemonDisplay: {
+							form: "ZAPDOS_NORMAL";
+						};
+						pokemonId: "ZAPDOS";
+					};
+					staminaIvOverride: {
+						range: {
+							max: 15;
+							min: 10;
+						};
+					};
+					unlockedAtRank: 20;
+				},
+				{
+					attackIvOverride: {
+						range: {
+							max: 15;
+							min: 10;
+						};
+					};
+					defenseIvOverride: {
+						range: {
+							max: 15;
+							min: 10;
+						};
+					};
+					pokemon: {
+						pokemonDisplay: {
+							form: "MOLTRES_NORMAL";
+						};
+						pokemonId: "MOLTRES";
 					};
 					staminaIvOverride: {
 						range: {
