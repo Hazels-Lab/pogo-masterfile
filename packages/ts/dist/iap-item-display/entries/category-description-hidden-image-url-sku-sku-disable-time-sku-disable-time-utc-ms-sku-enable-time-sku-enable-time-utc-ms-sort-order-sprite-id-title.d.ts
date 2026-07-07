@@ -29,7 +29,7 @@ export type IapItemDisplayGeneral2Ticket8 = S<
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			description: "item_event_ticket_gray_details_FinalJustice2025";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Shiny_Keldeo_KeyArt_v1-1024x576-nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Shiny_Keldeo_KeyArt_v1-1024x576-nologo.jpg";
 			sku: "general2.ticket.8";
 			skuDisableTime: "2025-11-30T20:00:00";
 			skuDisableTimeUtcMs: "1764532800000";
@@ -48,7 +48,7 @@ export type IapItemDisplayGeneral2Ticket8Giftable = S<
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			description: "item_event_ticket_gray_details_FinalJustice2025";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Shiny_Keldeo_KeyArt_v1-1024x576-nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Shiny_Keldeo_KeyArt_v1-1024x576-nologo.jpg";
 			sku: "general2.ticket.8.giftable";
 			skuDisableTime: "2025-11-30T20:00:00";
 			skuDisableTimeUtcMs: "1764532800000";
@@ -124,7 +124,7 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket8 = S<
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			description: "item_event_ticket_gray_details_FinalJustice2025";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Shiny_Keldeo_KeyArt_v1-1024x576-nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Shiny_Keldeo_KeyArt_v1-1024x576-nologo.jpg";
 			sku: "pgorelease.general2.ticket.8";
 			skuDisableTime: "2025-11-30T20:00:00";
 			skuDisableTimeUtcMs: "1764532800000";
@@ -143,7 +143,7 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket8Giftable = S<
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			description: "item_event_ticket_gray_details_FinalJustice2025";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Shiny_Keldeo_KeyArt_v1-1024x576-nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Shiny_Keldeo_KeyArt_v1-1024x576-nologo.jpg";
 			sku: "pgorelease.general2.ticket.8.giftable";
 			skuDisableTime: "2025-11-30T20:00:00";
 			skuDisableTimeUtcMs: "1764532800000";

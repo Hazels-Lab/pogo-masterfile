@@ -372,7 +372,7 @@ export type PokemonSettingsV0018PokemonPidgeot = S<
 				diskRadiusM: 1.296;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["HURRICANE", "AERIAL_ACE", "BRAVE_BIRD", "FEATHER_DANCE", "HEAT_WAVE"];
+			cinematicMoves: ["HURRICANE", "AERIAL_ACE", "BRAVE_BIRD", "FEATHER_DANCE", "HEAT_WAVE", "TWISTER"];
 			eliteCinematicMove: ["AIR_CUTTER"];
 			eliteQuickMove: ["WING_ATTACK_FAST", "GUST_FAST"];
 			encounter: {
@@ -485,7 +485,7 @@ export type PokemonSettingsV0018PokemonPidgeotNormal = S<
 				diskRadiusM: 1.296;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["HURRICANE", "AERIAL_ACE", "BRAVE_BIRD", "FEATHER_DANCE", "HEAT_WAVE"];
+			cinematicMoves: ["HURRICANE", "AERIAL_ACE", "BRAVE_BIRD", "FEATHER_DANCE", "HEAT_WAVE", "TWISTER"];
 			eliteCinematicMove: ["AIR_CUTTER"];
 			eliteQuickMove: ["WING_ATTACK_FAST", "GUST_FAST"];
 			encounter: {
@@ -4218,10 +4218,14 @@ export type PokemonSettingsV0163PokemonHoothoot = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 11;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.5;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 50;
+					candyCostPurified: 45;
 					evolution: "NOCTOWL";
 				},
 			];
@@ -4241,6 +4245,12 @@ export type PokemonSettingsV0163PokemonHoothoot = S<
 			pokedexWeightKg: 21.2;
 			pokemonId: "HOOTHOOT";
 			quickMoves: ["FEINT_ATTACK_FAST", "PECK_FAST"];
+			shadow: {
+				purificationCandyNeeded: 1;
+				purificationStardustNeeded: 1000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 67;
 				baseDefense: 88;
@@ -4290,10 +4300,14 @@ export type PokemonSettingsV0163PokemonHoothootNormal = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 11;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.5;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 50;
+					candyCostPurified: 45;
 					evolution: "NOCTOWL";
 					form: "NOCTOWL_NORMAL";
 				},
@@ -4315,6 +4329,12 @@ export type PokemonSettingsV0163PokemonHoothootNormal = S<
 			pokedexWeightKg: 21.2;
 			pokemonId: "HOOTHOOT";
 			quickMoves: ["FEINT_ATTACK_FAST", "PECK_FAST"];
+			shadow: {
+				purificationCandyNeeded: 1;
+				purificationStardustNeeded: 1000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 67;
 				baseDefense: 88;
@@ -4367,6 +4387,9 @@ export type PokemonSettingsV0164PokemonNoctowl = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 11;
 				movementType: "MOVEMENT_FLYING";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.15;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionPips: 1;
 			familyId: "FAMILY_HOOTHOOT";
@@ -4385,6 +4408,12 @@ export type PokemonSettingsV0164PokemonNoctowl = S<
 			pokedexWeightKg: 40.8;
 			pokemonId: "NOCTOWL";
 			quickMoves: ["WING_ATTACK_FAST", "EXTRASENSORY_FAST"];
+			shadow: {
+				purificationCandyNeeded: 1;
+				purificationStardustNeeded: 1000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 145;
 				baseDefense: 156;
@@ -4438,6 +4467,9 @@ export type PokemonSettingsV0164PokemonNoctowlNormal = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 11;
 				movementType: "MOVEMENT_FLYING";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.15;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionPips: 1;
 			familyId: "FAMILY_HOOTHOOT";
@@ -4457,6 +4489,12 @@ export type PokemonSettingsV0164PokemonNoctowlNormal = S<
 			pokedexWeightKg: 40.8;
 			pokemonId: "NOCTOWL";
 			quickMoves: ["WING_ATTACK_FAST", "EXTRASENSORY_FAST"];
+			shadow: {
+				purificationCandyNeeded: 1;
+				purificationStardustNeeded: 1000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 145;
 				baseDefense: 156;
@@ -9931,7 +9969,7 @@ export type PokemonSettingsV0352PokemonKecleon = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["FOUL_PLAY", "FLAMETHROWER", "THUNDER", "ICE_BEAM", "AERIAL_ACE", "SHADOW_SNEAK"];
+			cinematicMoves: ["FOUL_PLAY", "FLAMETHROWER", "THUNDER", "ICE_BEAM", "AERIAL_ACE", "SHADOW_SNEAK", "DYNAMIC_PUNCH", "THUNDER_PUNCH"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 20;
@@ -9993,7 +10031,7 @@ export type PokemonSettingsV0352PokemonKecleonNormal = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["FOUL_PLAY", "FLAMETHROWER", "THUNDER", "ICE_BEAM", "AERIAL_ACE", "SHADOW_SNEAK"];
+			cinematicMoves: ["FOUL_PLAY", "FLAMETHROWER", "THUNDER", "ICE_BEAM", "AERIAL_ACE", "SHADOW_SNEAK", "DYNAMIC_PUNCH", "THUNDER_PUNCH"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 20;
@@ -11183,7 +11221,7 @@ export type PokemonSettingsV0428PokemonLopunny = S<
 				shoulderModeScale: 0.5;
 			};
 			candyToEvolve: 25;
-			cinematicMoves: ["FIRE_PUNCH", "HYPER_BEAM", "FOCUS_BLAST", "TRIPLE_AXEL"];
+			cinematicMoves: ["FIRE_PUNCH", "HYPER_BEAM", "FOCUS_BLAST", "TRIPLE_AXEL", "SHADOW_BALL", "THUNDER_PUNCH"];
 			encounter: {
 				attackProbability: 0.3;
 				attackTimerS: 29;
@@ -11275,7 +11313,7 @@ export type PokemonSettingsV0428PokemonLopunnyNormal = S<
 				shoulderModeScale: 0.5;
 			};
 			candyToEvolve: 25;
-			cinematicMoves: ["FIRE_PUNCH", "HYPER_BEAM", "FOCUS_BLAST", "TRIPLE_AXEL"];
+			cinematicMoves: ["FIRE_PUNCH", "HYPER_BEAM", "FOCUS_BLAST", "TRIPLE_AXEL", "SHADOW_BALL", "THUNDER_PUNCH"];
 			encounter: {
 				attackProbability: 0.3;
 				attackTimerS: 29;
@@ -19854,10 +19892,21 @@ export type PokemonSettingsV0931PokemonSquawkabilly = S<
 		"V0931_POKEMON_SQUAWKABILLY",
 		{
 			breadTierGroup: "GROUP_3";
-			camera: object;
+			buddyPortraitOffset: [-10, 80, 140];
+			buddyPortraitRotation: [0, -10, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderGroundM: 0.5;
+				cylinderHeightM: 0.79;
+				cylinderRadiusM: 0.56;
+			};
 			cinematicMoves: ["AERIAL_ACE", "BRAVE_BIRD", "FLY"];
 			encounter: {
 				attackProbability: 0.1;
+				cameraDistance: 3.8;
+				collisionHeadRadiusM: 0.2;
+				collisionHeightM: 0.6;
+				collisionRadiusM: 0.6;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
 				jumpTimeS: 1;
@@ -19872,6 +19921,8 @@ export type PokemonSettingsV0931PokemonSquawkabilly = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
+			modelHeight: 1;
+			modelScaleV2: 1.14;
 			pokedexHeightM: 0.6;
 			pokedexWeightKg: 2.4;
 			pokemonId: "SQUAWKABILLY";
@@ -19896,10 +19947,21 @@ export type PokemonSettingsV0931PokemonSquawkabillyBlue = S<
 		"V0931_POKEMON_SQUAWKABILLY_BLUE",
 		{
 			breadTierGroup: "GROUP_3";
-			camera: object;
+			buddyPortraitOffset: [-10, 80, 140];
+			buddyPortraitRotation: [0, -10, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderGroundM: 0.5;
+				cylinderHeightM: 0.79;
+				cylinderRadiusM: 0.56;
+			};
 			cinematicMoves: ["AERIAL_ACE", "BRAVE_BIRD", "FLY"];
 			encounter: {
 				attackProbability: 0.1;
+				cameraDistance: 3.8;
+				collisionHeadRadiusM: 0.2;
+				collisionHeightM: 0.6;
+				collisionRadiusM: 0.6;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
 				jumpTimeS: 1;
@@ -19915,6 +19977,8 @@ export type PokemonSettingsV0931PokemonSquawkabillyBlue = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
+			modelHeight: 1;
+			modelScaleV2: 1.14;
 			pokedexHeightM: 0.6;
 			pokedexWeightKg: 2.4;
 			pokemonId: "SQUAWKABILLY";
@@ -19939,10 +20003,21 @@ export type PokemonSettingsV0931PokemonSquawkabillyGreen = S<
 		"V0931_POKEMON_SQUAWKABILLY_GREEN",
 		{
 			breadTierGroup: "GROUP_3";
-			camera: object;
+			buddyPortraitOffset: [-10, 80, 140];
+			buddyPortraitRotation: [0, -10, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderGroundM: 0.5;
+				cylinderHeightM: 0.79;
+				cylinderRadiusM: 0.56;
+			};
 			cinematicMoves: ["AERIAL_ACE", "BRAVE_BIRD", "FLY"];
 			encounter: {
 				attackProbability: 0.1;
+				cameraDistance: 3.8;
+				collisionHeadRadiusM: 0.2;
+				collisionHeightM: 0.6;
+				collisionRadiusM: 0.6;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
 				jumpTimeS: 1;
@@ -19958,6 +20033,8 @@ export type PokemonSettingsV0931PokemonSquawkabillyGreen = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
+			modelHeight: 1;
+			modelScaleV2: 1.14;
 			pokedexHeightM: 0.6;
 			pokedexWeightKg: 2.4;
 			pokemonId: "SQUAWKABILLY";
@@ -19982,10 +20059,21 @@ export type PokemonSettingsV0931PokemonSquawkabillyWhite = S<
 		"V0931_POKEMON_SQUAWKABILLY_WHITE",
 		{
 			breadTierGroup: "GROUP_3";
-			camera: object;
+			buddyPortraitOffset: [-10, 80, 140];
+			buddyPortraitRotation: [0, -10, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderGroundM: 0.5;
+				cylinderHeightM: 0.79;
+				cylinderRadiusM: 0.56;
+			};
 			cinematicMoves: ["AERIAL_ACE", "BRAVE_BIRD", "FLY"];
 			encounter: {
 				attackProbability: 0.1;
+				cameraDistance: 3.8;
+				collisionHeadRadiusM: 0.2;
+				collisionHeightM: 0.6;
+				collisionRadiusM: 0.6;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
 				jumpTimeS: 1;
@@ -20001,6 +20089,8 @@ export type PokemonSettingsV0931PokemonSquawkabillyWhite = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
+			modelHeight: 1;
+			modelScaleV2: 1.14;
 			pokedexHeightM: 0.6;
 			pokedexWeightKg: 2.4;
 			pokemonId: "SQUAWKABILLY";
@@ -20025,15 +20115,26 @@ export type PokemonSettingsV0931PokemonSquawkabillyYellow = S<
 		"V0931_POKEMON_SQUAWKABILLY_YELLOW",
 		{
 			breadTierGroup: "GROUP_3";
-			camera: object;
+			buddyPortraitOffset: [-10, 80, 140];
+			buddyPortraitRotation: [0, -10, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderGroundM: 0.5;
+				cylinderHeightM: 0.79;
+				cylinderRadiusM: 0.56;
+			};
 			cinematicMoves: ["AERIAL_ACE", "BRAVE_BIRD", "FLY"];
 			encounter: {
-				attackProbability: 0.1;
+				attackProbability: 0.3;
+				cameraDistance: 3.8;
+				collisionHeadRadiusM: 0.2;
+				collisionHeightM: 0.6;
+				collisionRadiusM: 0.6;
 				dodgeDurationS: 1;
-				dodgeProbability: 0.15;
+				dodgeProbability: 0.6;
 				jumpTimeS: 1;
 				maxPokemonActionFrequencyS: 1.6;
-				minPokemonActionFrequencyS: 0.2;
+				minPokemonActionFrequencyS: 0.3;
 				movementType: "MOVEMENT_FLYING";
 			};
 			familyId: "FAMILY_SQUAWKABILLY";
@@ -20044,6 +20145,8 @@ export type PokemonSettingsV0931PokemonSquawkabillyYellow = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
+			modelHeight: 1;
+			modelScaleV2: 1.14;
 			pokedexHeightM: 0.6;
 			pokedexWeightKg: 2.4;
 			pokemonId: "SQUAWKABILLY";

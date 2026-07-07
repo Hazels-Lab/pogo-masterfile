@@ -300,6 +300,7 @@ export type PokemonSettingsV0227PokemonSkarmory = S<
 			buddyOffsetMale: [15, 0, 29.2];
 			buddyScale: 19;
 			buddySize: "BUDDY_FLYING";
+			buddyWalkedMegaEnergyAward: 25;
 			camera: {
 				cylinderGroundM: 0.64935064;
 				cylinderHeightM: 1.3;
@@ -327,6 +328,13 @@ export type PokemonSettingsV0227PokemonSkarmory = S<
 				shadowBaseCaptureRate: 0.2;
 				shadowDodgeProbability: 0.2;
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 60;
+				},
+			];
 			evolutionPips: 1;
 			familyId: "FAMILY_SKARMORY";
 			heightStdDev: 0.2125;
@@ -354,6 +362,27 @@ export type PokemonSettingsV0227PokemonSkarmory = S<
 				baseDefense: 226;
 				baseStamina: 163;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 1.7;
+					averageWeightKg: 40.4;
+					camera: {
+						cylinderGroundM: 2.1;
+						cylinderHeightM: 0.01;
+						cylinderRadiusM: 1;
+					};
+					modelHeight: 1.1;
+					modelScaleV2: 1;
+					stats: {
+						baseAttack: 273;
+						baseDefense: 228;
+						baseStamina: 163;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+					typeOverride1: "POKEMON_TYPE_STEEL";
+					typeOverride2: "POKEMON_TYPE_FLYING";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 75;
 				stardustToUnlock: 75000;
@@ -376,6 +405,7 @@ export type PokemonSettingsV0227PokemonSkarmoryNormal = S<
 			buddyOffsetMale: [15, 0, 29.2];
 			buddyScale: 19;
 			buddySize: "BUDDY_FLYING";
+			buddyWalkedMegaEnergyAward: 25;
 			camera: {
 				cylinderGroundM: 0.64935064;
 				cylinderHeightM: 1.3;
@@ -403,6 +433,13 @@ export type PokemonSettingsV0227PokemonSkarmoryNormal = S<
 				shadowBaseCaptureRate: 0.2;
 				shadowDodgeProbability: 0.2;
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 60;
+				},
+			];
 			evolutionPips: 1;
 			familyId: "FAMILY_SKARMORY";
 			form: "SKARMORY_NORMAL";
@@ -431,6 +468,27 @@ export type PokemonSettingsV0227PokemonSkarmoryNormal = S<
 				baseDefense: 226;
 				baseStamina: 163;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 1.7;
+					averageWeightKg: 40.4;
+					camera: {
+						cylinderGroundM: 2.1;
+						cylinderHeightM: 0.01;
+						cylinderRadiusM: 1;
+					};
+					modelHeight: 1.1;
+					modelScaleV2: 1;
+					stats: {
+						baseAttack: 273;
+						baseDefense: 228;
+						baseStamina: 163;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+					typeOverride1: "POKEMON_TYPE_STEEL";
+					typeOverride2: "POKEMON_TYPE_FLYING";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 75;
 				stardustToUnlock: 75000;
@@ -2494,6 +2552,7 @@ export type PokemonSettingsV0483PokemonDialgaOrigin = S<
 			candyToEvolve: 25;
 			cinematicMoves: ["DRACO_METEOR", "IRON_HEAD", "THUNDER"];
 			disableTransferToPokemonHome: true;
+			eliteCinematicMove: ["ROAR_OF_TIME"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 29;
@@ -4253,7 +4312,7 @@ export type PokemonSettingsV0809PokemonMelmetal = S<
 				shoulderModeScale: 0.5;
 			};
 			candyToEvolve: 25;
-			cinematicMoves: ["FLASH_CANNON", "THUNDERBOLT", "HYPER_BEAM", "ROCK_SLIDE", "SUPER_POWER"];
+			cinematicMoves: ["FLASH_CANNON", "THUNDERBOLT", "HYPER_BEAM", "ROCK_SLIDE", "SUPER_POWER", "DYNAMIC_PUNCH"];
 			combatDefaultCameraAngle: [2, 3, 1];
 			combatPlayerFocusCameraAngle: [-1.5, -1, 0.4];
 			combatShoulderCameraAngle: [1.3, 0.5, 1];
@@ -4326,7 +4385,7 @@ export type PokemonSettingsV0809PokemonMelmetalNormal = S<
 				shoulderModeScale: 0.5;
 			};
 			candyToEvolve: 25;
-			cinematicMoves: ["FLASH_CANNON", "THUNDERBOLT", "HYPER_BEAM", "ROCK_SLIDE", "SUPER_POWER"];
+			cinematicMoves: ["FLASH_CANNON", "THUNDERBOLT", "HYPER_BEAM", "ROCK_SLIDE", "SUPER_POWER", "DYNAMIC_PUNCH"];
 			combatDefaultCameraAngle: [2, 3, 1];
 			combatPlayerFocusCameraAngle: [-1.5, -1, 0.4];
 			combatShoulderCameraAngle: [1.3, 0.5, 1];

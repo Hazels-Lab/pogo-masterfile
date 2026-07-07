@@ -1488,7 +1488,7 @@ export type PokemonSettingsV0145PokemonZapdosGalarian = S<
 			pokedexWeightKg: 58.2;
 			pokemonClass: "POKEMON_CLASS_LEGENDARY";
 			pokemonId: "ZAPDOS";
-			quickMoves: ["COUNTER_FAST"];
+			quickMoves: ["COUNTER_FAST", "LOW_KICK_FAST"];
 			shadow: {
 				purificationCandyNeeded: 20;
 				purificationStardustNeeded: 20000;
@@ -3327,7 +3327,7 @@ export type PokemonSettingsV0534PokemonConkeldurr = S<
 			pokedexHeightM: 1.4;
 			pokedexWeightKg: 87;
 			pokemonId: "CONKELDURR";
-			quickMoves: ["COUNTER_FAST", "POISON_JAB_FAST"];
+			quickMoves: ["COUNTER_FAST", "POISON_JAB_FAST", "FORCE_PALM_FAST"];
 			shadow: {
 				purificationCandyNeeded: 3;
 				purificationStardustNeeded: 3000;
@@ -3405,7 +3405,7 @@ export type PokemonSettingsV0534PokemonConkeldurrNormal = S<
 			pokedexHeightM: 1.4;
 			pokedexWeightKg: 87;
 			pokemonId: "CONKELDURR";
-			quickMoves: ["COUNTER_FAST", "POISON_JAB_FAST"];
+			quickMoves: ["COUNTER_FAST", "POISON_JAB_FAST", "FORCE_PALM_FAST"];
 			shadow: {
 				purificationCandyNeeded: 3;
 				purificationStardustNeeded: 3000;
@@ -3999,6 +3999,7 @@ export type PokemonSettingsV0674PokemonPancham = S<
 		{
 			animationTime: [1.9, 0.6666, 1.7666, 0, 2.4, 0.08667, 0];
 			breadTierGroup: "GROUP_2";
+			buddyPortraitOffset: [0, -110, 320];
 			camera: {
 				cylinderHeightM: 0.6;
 				cylinderRadiusM: 0.25;
@@ -4063,6 +4064,7 @@ export type PokemonSettingsV0674PokemonPanchamNormal = S<
 		{
 			animationTime: [1.9, 0.6666, 1.7666, 0, 2.4, 0.08667, 0];
 			breadTierGroup: "GROUP_2";
+			buddyPortraitOffset: [0, -110, 320];
 			camera: {
 				cylinderHeightM: 0.6;
 				cylinderRadiusM: 0.25;
@@ -5270,9 +5272,10 @@ export type PokemonSettingsV0870PokemonFalinks = S<
 			buddyOffsetMale: [17, 0, -89];
 			buddyPortraitOffset: [-20, 0, -1700];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 25;
 			camera: {
 				cylinderHeightM: 1;
-				cylinderRadiusM: 2.5;
+				cylinderRadiusM: 2.2;
 			};
 			cinematicMoves: ["SUPER_POWER", "BRICK_BREAK", "MEGAHORN"];
 			encounter: {
@@ -5319,6 +5322,13 @@ export type PokemonSettingsV0870PokemonFalinks = S<
 				{
 					averageHeightM: 1.6;
 					averageWeightKg: 99;
+					buddyPortraitOffset: [0, -200, 0];
+					camera: {
+						cylinderHeightM: 3;
+						cylinderRadiusM: 1.5;
+					};
+					modelHeight: 2.9;
+					modelScaleV2: 0.8;
 					stats: {
 						baseAttack: 267;
 						baseDefense: 229;
@@ -5347,9 +5357,10 @@ export type PokemonSettingsV0870PokemonFalinksGofest2025TrainConductor = S<
 			buddyOffsetMale: [17, 0, -89];
 			buddyPortraitOffset: [-20, 0, -1700];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 25;
 			camera: {
 				cylinderHeightM: 1;
-				cylinderRadiusM: 2.5;
+				cylinderRadiusM: 2.2;
 			};
 			cinematicMoves: ["SUPER_POWER", "BRICK_BREAK", "MEGAHORN"];
 			disableTransferToPokemonHome: true;
@@ -5398,6 +5409,13 @@ export type PokemonSettingsV0870PokemonFalinksGofest2025TrainConductor = S<
 				{
 					averageHeightM: 1.6;
 					averageWeightKg: 99;
+					buddyPortraitOffset: [0, -200, 0];
+					camera: {
+						cylinderHeightM: 3;
+						cylinderRadiusM: 1.5;
+					};
+					modelHeight: 2.9;
+					modelScaleV2: 0.8;
 					stats: {
 						baseAttack: 267;
 						baseDefense: 229;
@@ -5426,9 +5444,10 @@ export type PokemonSettingsV0870PokemonFalinksNormal = S<
 			buddyOffsetMale: [17, 0, -89];
 			buddyPortraitOffset: [-20, 0, -1700];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 25;
 			camera: {
 				cylinderHeightM: 1;
-				cylinderRadiusM: 2.5;
+				cylinderRadiusM: 2.2;
 			};
 			cinematicMoves: ["SUPER_POWER", "BRICK_BREAK", "MEGAHORN"];
 			encounter: {
@@ -5476,6 +5495,13 @@ export type PokemonSettingsV0870PokemonFalinksNormal = S<
 				{
 					averageHeightM: 1.6;
 					averageWeightKg: 99;
+					buddyPortraitOffset: [0, -200, 0];
+					camera: {
+						cylinderHeightM: 3;
+						cylinderRadiusM: 1.5;
+					};
+					modelHeight: 2.9;
+					modelScaleV2: 0.8;
 					stats: {
 						baseAttack: 267;
 						baseDefense: 229;

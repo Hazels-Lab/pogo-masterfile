@@ -11,7 +11,7 @@ pub struct Misc {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct SubCodeGateListV2 {
-    pub is_enabled: Option<bool>,
+    pub is_enabled: bool,
     pub name: String,
 }
 

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-hidden-image-url-sku-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order-sprite-id-title", 20 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-hidden-image-url-sku-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order-sprite-id-title", 16 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -9,7 +9,7 @@ export type IapItemDisplayGeneral1Ticket1Giftable = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-shiny-jirachi-masterwork-ticket-nologo-2025.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-shiny-jirachi-masterwork-ticket-nologo-2025.jpg";
 			sku: "general1.ticket.1.giftable";
 			skuDisableTime: "2025-07-06T20:00:00";
 			skuDisableTimeUtcMs: "1751832000000";
@@ -27,7 +27,7 @@ export type IapItemDisplayGeneral1Ticket2 = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-yampers-paw-prints-ticket-nologo-2025.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-yampers-paw-prints-ticket-nologo-2025.jpg";
 			sku: "general1.ticket.2";
 			skuDisableTime: "2025-06-22T23:59:59";
 			skuDisableTimeUtcMs: "1750636799000";
@@ -45,7 +45,7 @@ export type IapItemDisplayGeneral1Ticket2Giftable = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-yampers-paw-prints-ticket-nologo-2025.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-yampers-paw-prints-ticket-nologo-2025.jpg";
 			sku: "general1.ticket.2.giftable";
 			skuDisableTime: "2025-06-22T23:59:59";
 			skuDisableTimeUtcMs: "1750636799000";
@@ -57,31 +57,13 @@ export type IapItemDisplayGeneral1Ticket2Giftable = S<
 		}
 	>
 >;
-export type IapItemDisplayGeneral1Ticket4Giftable = S<
-	IapItemDisplay<
-		"general1.ticket.4.giftable",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-riolu-hatch-day-2026-nologo.jpg";
-			sku: "general1.ticket.4.giftable";
-			skuDisableTime: "2026-04-18T17:00:00";
-			skuDisableTimeUtcMs: "1776531600000";
-			skuEnableTime: "2023-01-01T11:00:01";
-			skuEnableTimeUtcMs: "1672570801000";
-			sortOrder: 1;
-			spriteId: "general1.ticket.4";
-			title: "general1.ticket.4_Riolu0426_title";
-		}
-	>
->;
 export type IapItemDisplayGeneral2Ticket1Giftable = S<
 	IapItemDisplay<
 		"general2.ticket.1.giftable",
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FGO_Wild_Area_2025_Global_1024x512_logo.png";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FGO_Wild_Area_2025_Global_1024x512_logo.png";
 			sku: "general2.ticket.1.giftable";
 			skuDisableTime: "2025-11-16T18:00:00";
 			skuDisableTimeUtcMs: "1763316000000";
@@ -99,7 +81,7 @@ export type IapItemDisplayGeneral2Ticket2Giftable = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg";
 			sku: "general2.ticket.2.giftable";
 			skuDisableTime: "2026-02-07T20:00:00";
 			skuDisableTimeUtcMs: "1770494400000";
@@ -117,7 +99,7 @@ export type IapItemDisplayGeneral2Ticket4Giftable = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-replay-water-research-day-2026-nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-replay-water-research-day-2026-nologo.jpg";
 			sku: "general2.ticket.4.giftable";
 			skuDisableTime: "2026-03-21T17:00:00";
 			skuDisableTimeUtcMs: "1774112400000";
@@ -135,7 +117,7 @@ export type IapItemDisplayGeneral2Ticket7Giftable = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO_MCS_MasterBall_KeyArt_TK_GP_V2_S14_1024x512_nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO_MCS_MasterBall_KeyArt_TK_GP_V2_S14_1024x512_nologo.jpg";
 			sku: "general2.ticket.7.giftable";
 			skuDisableTime: "2025-12-31T20:00:00";
 			skuDisableTimeUtcMs: "1767211200000";
@@ -147,31 +129,13 @@ export type IapItemDisplayGeneral2Ticket7Giftable = S<
 		}
 	>
 >;
-export type IapItemDisplayGeneral2Ticket9Giftable = S<
-	IapItemDisplay<
-		"general2.ticket.9.giftable",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-fashion-raid-day-2026-nologo.jpg";
-			sku: "general2.ticket.9.giftable";
-			skuDisableTime: "2026-04-04T17:00:00";
-			skuDisableTimeUtcMs: "1775322000000";
-			skuEnableTime: "2019-03-14T08:00:00";
-			skuEnableTimeUtcMs: "1552550400000";
-			sortOrder: 2;
-			spriteId: "general2.ticket.9";
-			title: "general2.ticket.9_fashionRaidDay26_title";
-		}
-	>
->;
 export type IapItemDisplayGeneral2Ticket10Giftable = S<
 	IapItemDisplay<
 		"general2.ticket.10.giftable",
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg";
 			sku: "general2.ticket.10.giftable";
 			skuDisableTime: "2026-03-01T18:00:00";
 			skuDisableTimeUtcMs: "1772388000000";
@@ -189,7 +153,7 @@ export type IapItemDisplayPgoreleaseGeneral1Ticket1Giftable = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-shiny-jirachi-masterwork-ticket-nologo-2025.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-shiny-jirachi-masterwork-ticket-nologo-2025.jpg";
 			sku: "pgorelease.general1.ticket.1.giftable";
 			skuDisableTime: "2025-07-06T20:00:00";
 			skuDisableTimeUtcMs: "1751832000000";
@@ -207,7 +171,7 @@ export type IapItemDisplayPgoreleaseGeneral1Ticket2 = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-yampers-paw-prints-ticket-nologo-2025.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-yampers-paw-prints-ticket-nologo-2025.jpg";
 			sku: "pgorelease.general1.ticket.2";
 			skuDisableTime: "2025-06-22T23:59:59";
 			skuDisableTimeUtcMs: "1750636799000";
@@ -225,7 +189,7 @@ export type IapItemDisplayPgoreleaseGeneral1Ticket2Giftable = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-yampers-paw-prints-ticket-nologo-2025.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-yampers-paw-prints-ticket-nologo-2025.jpg";
 			sku: "pgorelease.general1.ticket.2.giftable";
 			skuDisableTime: "2025-06-22T23:59:59";
 			skuDisableTimeUtcMs: "1750636799000";
@@ -237,31 +201,13 @@ export type IapItemDisplayPgoreleaseGeneral1Ticket2Giftable = S<
 		}
 	>
 >;
-export type IapItemDisplayPgoreleaseGeneral1Ticket4Giftable = S<
-	IapItemDisplay<
-		"pgorelease.general1.ticket.4.giftable",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-riolu-hatch-day-2026-nologo.jpg";
-			sku: "pgorelease.general1.ticket.4.giftable";
-			skuDisableTime: "2026-04-18T17:00:00";
-			skuDisableTimeUtcMs: "1776531600000";
-			skuEnableTime: "2023-01-01T11:00:03";
-			skuEnableTimeUtcMs: "1672570803000";
-			sortOrder: 1;
-			spriteId: "general1.ticket.4";
-			title: "general1.ticket.4_Riolu0426_title";
-		}
-	>
->;
 export type IapItemDisplayPgoreleaseGeneral2Ticket1Giftable = S<
 	IapItemDisplay<
 		"pgorelease.general2.ticket.1.giftable",
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FGO_Wild_Area_2025_Global_1024x512_logo.png";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FGO_Wild_Area_2025_Global_1024x512_logo.png";
 			sku: "pgorelease.general2.ticket.1.giftable";
 			skuDisableTime: "2025-11-16T18:00:00";
 			skuDisableTimeUtcMs: "1763316000000";
@@ -279,7 +225,7 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket2Giftable = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg";
 			sku: "pgorelease.general2.ticket.2.giftable";
 			skuDisableTime: "2026-02-07T20:00:00";
 			skuDisableTimeUtcMs: "1770494400000";
@@ -297,7 +243,7 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket4Giftable = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-replay-water-research-day-2026-nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-replay-water-research-day-2026-nologo.jpg";
 			sku: "pgorelease.general2.ticket.4.giftable";
 			skuDisableTime: "2026-03-21T17:00:00";
 			skuDisableTimeUtcMs: "1774112400000";
@@ -315,7 +261,7 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket7Giftable = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO_MCS_MasterBall_KeyArt_TK_GP_V2_S14_1024x512_nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO_MCS_MasterBall_KeyArt_TK_GP_V2_S14_1024x512_nologo.jpg";
 			sku: "pgorelease.general2.ticket.7.giftable";
 			skuDisableTime: "2025-12-31T20:00:00";
 			skuDisableTimeUtcMs: "1767211200000";
@@ -327,31 +273,13 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket7Giftable = S<
 		}
 	>
 >;
-export type IapItemDisplayPgoreleaseGeneral2Ticket9Giftable = S<
-	IapItemDisplay<
-		"pgorelease.general2.ticket.9.giftable",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fpgo-fashion-raid-day-2026-nologo.jpg";
-			sku: "pgorelease.general2.ticket.9.giftable";
-			skuDisableTime: "2026-04-04T17:00:00";
-			skuDisableTimeUtcMs: "1775322000000";
-			skuEnableTime: "2019-03-14T08:00:00";
-			skuEnableTimeUtcMs: "1552550400000";
-			sortOrder: 2;
-			spriteId: "general2.ticket.9";
-			title: "general2.ticket.9_fashionRaidDay26_title";
-		}
-	>
->;
 export type IapItemDisplayPgoreleaseGeneral2Ticket10Giftable = S<
 	IapItemDisplay<
 		"pgorelease.general2.ticket.10.giftable",
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg";
 			sku: "pgorelease.general2.ticket.10.giftable";
 			skuDisableTime: "2026-03-01T18:00:00";
 			skuDisableTimeUtcMs: "1772388000000";
@@ -368,20 +296,16 @@ export type IapItemDisplayCategoryHiddenImageUrlSkuSkuDisableTimeSkuDisableTimeU
 	| IapItemDisplayGeneral1Ticket1Giftable
 	| IapItemDisplayGeneral1Ticket2
 	| IapItemDisplayGeneral1Ticket2Giftable
-	| IapItemDisplayGeneral1Ticket4Giftable
 	| IapItemDisplayGeneral2Ticket1Giftable
 	| IapItemDisplayGeneral2Ticket2Giftable
 	| IapItemDisplayGeneral2Ticket4Giftable
 	| IapItemDisplayGeneral2Ticket7Giftable
-	| IapItemDisplayGeneral2Ticket9Giftable
 	| IapItemDisplayGeneral2Ticket10Giftable
 	| IapItemDisplayPgoreleaseGeneral1Ticket1Giftable
 	| IapItemDisplayPgoreleaseGeneral1Ticket2
 	| IapItemDisplayPgoreleaseGeneral1Ticket2Giftable
-	| IapItemDisplayPgoreleaseGeneral1Ticket4Giftable
 	| IapItemDisplayPgoreleaseGeneral2Ticket1Giftable
 	| IapItemDisplayPgoreleaseGeneral2Ticket2Giftable
 	| IapItemDisplayPgoreleaseGeneral2Ticket4Giftable
 	| IapItemDisplayPgoreleaseGeneral2Ticket7Giftable
-	| IapItemDisplayPgoreleaseGeneral2Ticket9Giftable
 	| IapItemDisplayPgoreleaseGeneral2Ticket10Giftable;

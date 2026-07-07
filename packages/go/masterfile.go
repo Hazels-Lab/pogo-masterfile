@@ -155,6 +155,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
+	case "eventPassTierSettings":
+		var e event_pass_tier_settings.EventPassTierSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
 	case "formSettings":
 		var e form_settings.FormSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -175,12 +181,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "pokemonFamily":
 		var e pokemon_family.PokemonFamilyEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
-	case "eventPassTierSettings":
-		var e event_pass_tier_settings.EventPassTierSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -221,14 +221,20 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
+	case "megaEvoLevelSettings":
+		var e mega_evo_level_settings.MegaEvoLevelSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
 	case "combatLeague":
 		var e combat_league.CombatLeagueEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
 		return e, nil
-	case "megaEvoLevelSettings":
-		var e mega_evo_level_settings.MegaEvoLevelSettingsEntry
+	case "invasionNpcDisplaySettings":
+		var e invasion_npc_display_settings.InvasionNpcDisplaySettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -241,12 +247,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "evolutionChainDisplaySettings":
 		var e evolution_chain_display_settings.EvolutionChainDisplaySettingsEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
-	case "invasionNpcDisplaySettings":
-		var e invasion_npc_display_settings.InvasionNpcDisplaySettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -311,6 +311,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
+	case "featureGate":
+		var e feature_gate.FeatureGateEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
 	case "iapCategoryDisplay":
 		var e iap_category_display.IapCategoryDisplayEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -319,12 +325,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "codeGateProto":
 		var e code_gate_proto.CodeGateProtoEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
-	case "featureGate":
-		var e feature_gate.FeatureGateEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -395,6 +395,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
+	case "rollBack":
+		var e roll_back.RollBackEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
 	case "buddyLevelSettings":
 		var e buddy_level_settings.BuddyLevelSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -433,12 +439,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "questSettings":
 		var e quest_settings.QuestSettingsEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
-	case "rollBack":
-		var e roll_back.RollBackEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -1323,6 +1323,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return e, nil
 		case "SOFT_SFIDA_SETTINGS":
 			var e singletons.SoftSfidaSettingsEntry
+			if err := json.Unmarshal(data, &e); err != nil {
+				return nil, err
+			}
+			return e, nil
+		case "SPECIAL_RESEARCH_VISUAL_REFRESH_SETTINGS":
+			var e singletons.SpecialResearchVisualRefreshSettingsEntry
 			if err := json.Unmarshal(data, &e); err != nil {
 				return nil, err
 			}

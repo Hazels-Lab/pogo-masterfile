@@ -1,31 +1,31 @@
 // Generated from Pokémon GO masterfile — "codeGateProto" lookup table.
 
 import type {
+	CodeGateProtoArPhotoMultipleConcurrentCampaignCodeGate,
 	CodeGateProtoBattleAccessibilityCodeGate,
-	CodeGateProtoBattleRewardsCodeGate,
 	CodeGateProtoCombatVnextCodeGate,
+	CodeGateProtoEventPoiRefreshCodeGate,
 	CodeGateProtoIbfcLwsCodeGate,
 	CodeGateProtoInputTrackerCodeGate,
 	CodeGateProtoIsSkuAvailableNoAppIdCodeGate,
 	CodeGateProtoMapThemeLowPerfCodeGate,
 	CodeGateProtoPredictChargeMoveOnSubmitRollBackCodeGate,
-	CodeGateProtoPushGatewayMultiActionCodeGate,
 	CodeGateProtoStampCollectionSnapshotEnabledCodeGate,
-	CodeGateProtoUseExtendedSettingsForMaxScaleCodeGate,
+	CodeGateProtoTodayViewV3CodeGate,
 	CodeGateProtoUseGmtSkuDataCodeGate,
 } from "./entries";
 
 export interface CodeGateProtoLookup {
+	AR_PHOTO_MULTIPLE_CONCURRENT_CAMPAIGN_CODE_GATE: CodeGateProtoArPhotoMultipleConcurrentCampaignCodeGate;
 	BATTLE_ACCESSIBILITY_CODE_GATE: CodeGateProtoBattleAccessibilityCodeGate;
-	BATTLE_REWARDS_CODE_GATE: CodeGateProtoBattleRewardsCodeGate;
 	COMBAT_VNEXT_CODE_GATE: CodeGateProtoCombatVnextCodeGate;
+	EVENT_POI_REFRESH_CODE_GATE: CodeGateProtoEventPoiRefreshCodeGate;
 	IBFC_LWS_CODE_GATE: CodeGateProtoIbfcLwsCodeGate;
 	INPUT_TRACKER_CODE_GATE: CodeGateProtoInputTrackerCodeGate;
 	IS_SKU_AVAILABLE_NO_APP_ID_CODE_GATE: CodeGateProtoIsSkuAvailableNoAppIdCodeGate;
 	MAP_THEME_LOW_PERF_CODE_GATE: CodeGateProtoMapThemeLowPerfCodeGate;
 	PREDICT_CHARGE_MOVE_ON_SUBMIT_ROLL_BACK_CODE_GATE: CodeGateProtoPredictChargeMoveOnSubmitRollBackCodeGate;
-	PUSH_GATEWAY_MULTI_ACTION_CODE_GATE: CodeGateProtoPushGatewayMultiActionCodeGate;
 	STAMP_COLLECTION_SNAPSHOT_ENABLED_CODE_GATE: CodeGateProtoStampCollectionSnapshotEnabledCodeGate;
-	USE_EXTENDED_SETTINGS_FOR_MAX_SCALE_CODE_GATE: CodeGateProtoUseExtendedSettingsForMaxScaleCodeGate;
+	TODAY_VIEW_V3_CODE_GATE: CodeGateProtoTodayViewV3CodeGate;
 	USE_GMT_SKU_DATA_CODE_GATE: CodeGateProtoUseGmtSkuDataCodeGate;
 }

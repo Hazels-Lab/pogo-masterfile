@@ -12,7 +12,7 @@ export type CombatMoveV0013MoveWrap = S<
 				targetDefenseStatStageChange: -1;
 			};
 			energyDelta: -45;
-			power: 60;
+			power: 70;
 			type: "POKEMON_TYPE_NORMAL";
 			uniqueId: "WRAP";
 			vfxName: "wrap";

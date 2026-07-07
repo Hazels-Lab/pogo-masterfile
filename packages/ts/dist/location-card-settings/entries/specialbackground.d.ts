@@ -1,8 +1,18 @@
-// Generated from Pokémon GO masterfile — group "locationCardSettings", split "specialbackground", 47 entries.
+// Generated from Pokémon GO masterfile — group "locationCardSettings", split "specialbackground", 51 entries.
 
 import type { S } from "../../_utils";
 import type { LocationCardSettings } from "../types";
 
+export type LocationCardSettingsSpecialbackground10ani2026 = S<
+	LocationCardSettings<
+		"LC_SPECIALBACKGROUND_10ANI2026",
+		{
+			cardType: "SPECIAL_BACKGROUND";
+			imageUrl: "sb_GoFest2024_wormhole_moon";
+			vfxAddress: "bgfx_UltraWormhole";
+		}
+	>
+>;
 export type LocationCardSettingsSpecialbackground2024Decembercdrecap = S<
 	LocationCardSettings<
 		"LC_SPECIALBACKGROUND_2024_DECEMBERCDRECAP",
@@ -250,6 +260,16 @@ export type LocationCardSettingsSpecialbackground2025Season20 = S<
 		}
 	>
 >;
+export type LocationCardSettingsSpecialbackground2026Arraia = S<
+	LocationCardSettings<
+		"LC_SPECIALBACKGROUND_2026_ARRAIA",
+		{
+			cardType: "SPECIAL_BACKGROUND";
+			imageUrl: "sb_arraia_2026";
+			vfxAddress: "bgfx_arraia_2026";
+		}
+	>
+>;
 export type LocationCardSettingsSpecialbackground2026Communityday = S<
 	LocationCardSettings<
 		"LC_SPECIALBACKGROUND_2026_COMMUNITYDAY",
@@ -407,11 +427,30 @@ export type LocationCardSettingsSpecialbackgroundExtra202502 = S<
 		}
 	>
 >;
+export type LocationCardSettingsSpecialbackgroundGg2026 = S<
+	LocationCardSettings<
+		"LC_SPECIALBACKGROUND_GG2026",
+		{
+			cardType: "SPECIAL_BACKGROUND";
+			imageUrl: "sb_9thAnniversary";
+			vfxAddress: "bgfx_10thAnni";
+		}
+	>
+>;
 export type LocationCardSettingsSpecialbackgroundKr2025Lotte01 = S<
 	LocationCardSettings<
 		"LC_SPECIALBACKGROUND_KR2025_LOTTE_01",
 		{
 			imageUrl: "lc_LotteGiants";
+		}
+	>
+>;
+export type LocationCardSettingsSpecialbackgroundLego202601 = S<
+	LocationCardSettings<
+		"LC_SPECIALBACKGROUND_LEGO_2026_01",
+		{
+			cardType: "SPECIAL_BACKGROUND";
+			imageUrl: "sb_lego_2026";
 		}
 	>
 >;
@@ -465,6 +504,7 @@ export type LocationCardSettingsSpecialbackgroundTeamYellow = S<
 >;
 
 export type LocationCardSettingsSpecialbackgroundMasterfileEntry =
+	| LocationCardSettingsSpecialbackground10ani2026
 	| LocationCardSettingsSpecialbackground2024Decembercdrecap
 	| LocationCardSettingsSpecialbackground2024GlobalGofestRadiance001
 	| LocationCardSettingsSpecialbackground2024GlobalGofestUmbra001
@@ -490,6 +530,7 @@ export type LocationCardSettingsSpecialbackgroundMasterfileEntry =
 	| LocationCardSettingsSpecialbackground2025Season17
 	| LocationCardSettingsSpecialbackground2025Season19
 	| LocationCardSettingsSpecialbackground2025Season20
+	| LocationCardSettingsSpecialbackground2026Arraia
 	| LocationCardSettingsSpecialbackground2026Communityday
 	| LocationCardSettingsSpecialbackground2026GlobalDiamond001
 	| LocationCardSettingsSpecialbackground2026GlobalGofest001
@@ -506,7 +547,9 @@ export type LocationCardSettingsSpecialbackgroundMasterfileEntry =
 	| LocationCardSettingsSpecialbackgroundCon2025
 	| LocationCardSettingsSpecialbackgroundExtra202501
 	| LocationCardSettingsSpecialbackgroundExtra202502
+	| LocationCardSettingsSpecialbackgroundGg2026
 	| LocationCardSettingsSpecialbackgroundKr2025Lotte01
+	| LocationCardSettingsSpecialbackgroundLego202601
 	| LocationCardSettingsSpecialbackgroundObservatoryExhibitionTour
 	| LocationCardSettingsSpecialbackgroundPok2026
 	| LocationCardSettingsSpecialbackgroundTeamBlue

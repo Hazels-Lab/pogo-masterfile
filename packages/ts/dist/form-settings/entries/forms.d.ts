@@ -14577,6 +14577,10 @@ export type FormSettingsV0999PokemonGimmighoul = S<
 					form: "GIMMIGHOUL_COIN_A1";
 					isCostume: true;
 				},
+				{
+					form: "GIMMIGHOUL_COIN_A2_2026";
+					isCostume: true;
+				},
 			];
 			pokemon: "GIMMIGHOUL";
 		}

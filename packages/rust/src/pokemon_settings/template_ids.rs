@@ -4823,6 +4823,8 @@ pub enum PokemonSettingsTemplateId {
     V0999PokemonGimmighoul,
     #[serde(rename = "V0999_POKEMON_GIMMIGHOUL_COIN_A1")]
     V0999PokemonGimmighoulCoinA1,
+    #[serde(rename = "V0999_POKEMON_GIMMIGHOUL_COIN_A2_2026")]
+    V0999PokemonGimmighoulCoinA22026,
     #[serde(rename = "V0999_POKEMON_GIMMIGHOUL_NORMAL")]
     V0999PokemonGimmighoulNormal,
     #[serde(rename = "V1000_POKEMON_GHOLDENGO")]

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonSettings", split "ghost", 87 entries.
+// Generated from Pokémon GO masterfile — group "pokemonSettings", split "ghost", 88 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonSettings } from "../types";
@@ -6425,6 +6425,72 @@ export type PokemonSettingsV0999PokemonGimmighoulCoinA1 = S<
 		}
 	>
 >;
+export type PokemonSettingsV0999PokemonGimmighoulCoinA22026 = S<
+	PokemonSettings<
+		"V0999_POKEMON_GIMMIGHOUL_COIN_A2_2026",
+		{
+			animationTime: [1.6667, 0.6667, 1.6667, 1.8333, 0, 2.1667, 1.4, 1.466667];
+			breadTierGroup: "GROUP_1";
+			buddyGroupNumber: 1;
+			buddyOffsetFemale: [0, 0, 0];
+			buddyOffsetMale: [0, 0, 0];
+			buddyPortraitOffset: [0, -20, -800];
+			buddyScale: 19;
+			camera: {
+				cylinderHeightM: 0.2;
+				cylinderRadiusM: 0.3;
+				diskRadiusM: 0.5723;
+				shoulderModeScale: 0.5;
+			};
+			cinematicMoves: ["SHADOW_BALL"];
+			disableTransferToPokemonHome: true;
+			encounter: {
+				attackProbability: 0.1;
+				attackTimerS: 29;
+				cameraDistance: 2;
+				collisionHeadRadiusM: 0.13;
+				collisionHeightM: 0.08;
+				collisionRadiusM: 0.08;
+				dodgeDistance: 1;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.15;
+				jumpTimeS: 1.15;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementTimerS: 10;
+				movementType: "MOVEMENT_JUMP";
+			};
+			evolutionIds: ["GIMMIGHOUL"];
+			evolutionPips: 1;
+			familyId: "FAMILY_GIMMIGHOUL";
+			form: "GIMMIGHOUL_COIN_A2_2026";
+			heightStdDev: 0.0125;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 5;
+			modelHeight: 0.4;
+			modelScale: 1.09;
+			modelScaleV2: 1;
+			pokedexHeightM: 0.1;
+			pokedexWeightKg: 0.1;
+			pokemonId: "GIMMIGHOUL";
+			quickMoves: ["ASTONISH_FAST"];
+			stats: {
+				baseAttack: 140;
+				baseDefense: 76;
+				baseStamina: 128;
+			};
+			thirdMove: {
+				candyToUnlock: 25;
+				stardustToUnlock: 10000;
+			};
+			type: "POKEMON_TYPE_GHOST";
+			weightStdDev: 0.0125;
+		}
+	>
+>;
 export type PokemonSettingsV0999PokemonGimmighoulNormal = S<
 	PokemonSettings<
 		"V0999_POKEMON_GIMMIGHOUL_NORMAL",
@@ -6585,4 +6651,5 @@ export type PokemonSettingsGhostMasterfileEntry =
 	| PokemonSettingsV0987PokemonFluttermaneNormal
 	| PokemonSettingsV0999PokemonGimmighoul
 	| PokemonSettingsV0999PokemonGimmighoulCoinA1
+	| PokemonSettingsV0999PokemonGimmighoulCoinA22026
 	| PokemonSettingsV0999PokemonGimmighoulNormal;

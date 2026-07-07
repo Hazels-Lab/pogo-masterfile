@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 540 entries (structural types).
+// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 1420 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -13,217 +13,196 @@ export type EventPassTierSettingsType = W<EventPassTierSettings>;
 
 export interface EventPassTierSettingsData {
 	activeBonusDisplaySettings?: {
-		bonusBoxes?: Array<{
-			iconType: "GIFT" | "INCENSE" | "LUCKY_EGG" | "STARDUST";
-			text: "dai_duration_double" | "gift_open_more_daily" | "gift_send_more_daily" | "gift_storage_more" | "hatch_stardust_double" | "hatch_xp_double";
+		bonusBoxes: Array<{
+			iconType: number | "CANDY_GENERAL" | "CANDY_XL" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "STARDUST" | "TRADE" | "XP";
+			text:
+				| "bonus_go_tour_2023_add_on_raid_02"
+				| "bonus_link_charge_cap_2000"
+				| "bonus_raid_1_xl_candy"
+				| "bonus_raid_3_candy"
+				| "dai_duration_double"
+				| "gift_open_more_daily"
+				| "gift_storage_more"
+				| "hatch_candy_double"
+				| "hatch_stardust_double"
+				| "incubator_distance_half"
+				| "season_pass_bonus_hatch_xp_stardust"
+				| "trade_extra_candy"
+				| "trade_guaranteed_candyxl";
 		}>;
-		eventName: "go_pass_cumulative_bonuses_header";
+		eventName: "active_bonuses_label" | "go_pass_cumulative_bonuses_header";
 	};
 	bonusSettings?: {
 		bonusBoxes: Array<{
-			iconType: "EGG" | "GIFT" | "INCENSE" | "LUCKY_EGG" | "POKESTOP" | "STARDUST";
+			iconType: "CANDY_GENERAL" | "CANDY_XL" | "EGG_INCUBATOR" | "EVENT" | "GIFT" | "INCENSE" | "STARDUST" | "TRADE" | "XP";
 			text:
+				| "bonus_go_tour_2023_add_on_raid_02"
+				| "bonus_link_charge_cap_2000"
+				| "bonus_raid_1_xl_candy"
+				| "bonus_raid_3_candy"
 				| "dai_duration_double"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
 				| "gift_storage_more"
+				| "hatch_candy_double"
 				| "hatch_stardust_double"
-				| "hatch_xp_double"
 				| "incubator_distance_half"
-				| "pokestop_spin_xp_double"
-				| "pokestop_spin_xp_triple";
+				| "season_pass_bonus_hatch_xp_stardust"
+				| "trade_extra_candy"
+				| "trade_guaranteed_candyxl";
 		}>;
-		eventName: "season_pass_milestone_bonus_title_01" | "season_pass_milestone_bonus_title_02" | "season_pass_milestone_bonus_title_03";
+		eventName:
+			| "season_pass_milestone_bonus_title_01"
+			| "season_pass_milestone_bonus_title_02"
+			| "season_pass_milestone_bonus_title_03"
+			| "season_pass_milestone_bonus_title_04"
+			| "short_bonus_go_tour_2023_add_on_raid_02"
+			| "short_bonus_link_charge_cap_2000"
+			| "short_bonus_raid_1_xl_candy"
+			| "short_bonus_raid_3_candy"
+			| "short_hatch_candy_double"
+			| "short_hatch_stardust_double"
+			| "short_incubator_distance_half";
 	};
 	minPointsRequired?: number;
 	rank: number;
 	rewards?: Array<{
 		candy?: {
 			amount: number;
-			pokemonId:
-				| "AXEW"
-				| "BOMBIRDIER"
-				| "BUNEARY"
-				| "CHANSEY"
-				| "COMBEE"
-				| "DEINO"
-				| "DRILBUR"
-				| "FLITTLE"
-				| "HONEDGE"
-				| "MANTINE"
-				| "NATU"
-				| "ORTHWORM"
-				| "POLTCHAGEIST"
-				| "QWILFISH"
-				| "ROCKRUFF"
-				| "ROSELIA"
-				| "RUFFLET"
-				| "SEWADDLE"
-				| "SHROOMISH"
-				| "SINISTEA"
-				| "SKIDDO"
-				| "SKRELP"
-				| "SLOWPOKE"
-				| "SNOM"
-				| "SPHEAL"
-				| "SPRIGATITO"
-				| "SUICUNE"
-				| "TOTODILE"
-				| "WAILMER"
-				| "WOOBAT";
+			pokemonId: string;
 		};
 		exp?: number;
 		item?: {
 			amount: number;
 			item:
+				| "ITEM_ENHANCED_CURRENCY"
 				| "ITEM_GOLDEN_PINAP_BERRY"
 				| "ITEM_GOLDEN_RAZZ_BERRY"
 				| "ITEM_GREAT_BALL"
 				| "ITEM_INCENSE_ORDINARY"
 				| "ITEM_INCUBATOR_BASIC"
 				| "ITEM_INCUBATOR_SUPER"
+				| "ITEM_INCUBATOR_TIMED"
 				| "ITEM_LEADER_MAP_FRAGMENT"
 				| "ITEM_LUCKY_EGG"
+				| "ITEM_LUCKY_FRIEND_APPLICATOR"
 				| "ITEM_MOVE_REROLL_FAST_ATTACK"
 				| "ITEM_MOVE_REROLL_SPECIAL_ATTACK"
 				| "ITEM_MP"
 				| "ITEM_NANAB_BERRY"
-				| "ITEM_PINAP_BERRY"
+				| "ITEM_PAID_RAID_TICKET"
 				| "ITEM_POFFIN"
 				| "ITEM_POKE_BALL"
 				| "ITEM_RARE_CANDY"
 				| "ITEM_RAZZ_BERRY"
+				| "ITEM_STAR_PIECE"
+				| "ITEM_TRIPLE_STAT_INCREASE"
+				| "ITEM_TROY_DISK"
 				| "ITEM_ULTRA_BALL"
 				| "ITEM_XL_RARE_CANDY";
 		};
+		megaResource?: {
+			amount: number;
+			pokemonId: "GARDEVOIR";
+		};
 		neutralAvatarItemTemplate?: {
-			displayTemplateId: "N_DISPLAY_n_shoes_pikachuathletic";
-			itemTemplateId: "N_AVATAR_n_shoes_pikachuathletic";
+			displayTemplateId: "N_DISPLAY_n_pose_gofest2026" | "N_DISPLAY_n_shirt_gofest2026-purple";
+			itemTemplateId: "N_AVATAR_n_pose_gofest2026" | "N_AVATAR_n_shirt_gofest2026-purple";
 		};
 		playerAttribute?: {
 			durationMins: number;
 			key:
-				| "may2026_season_pass_entitlement"
-				| "may2026_season_pass_rank_01"
-				| "may2026_season_pass_rank_02"
-				| "may2026_season_pass_rank_03"
-				| "springmarathon2026_season_pass_entitlement"
-				| "springmarathon2026_season_pass_rank_01"
-				| "springmarathon2026_season_pass_rank_01_paid"
-				| "springmarathon2026_season_pass_rank_02";
+				| "EVENT_PASS_GOFEST2026_HALF_HATCH"
+				| "EVENT_PASS_GOFEST2026_HATCH_CANDY"
+				| "EVENT_PASS_GOFEST2026_HATCH_STARDUST"
+				| "EVENT_PASS_GOFEST2026_LINK_CHARGE"
+				| "EVENT_PASS_GOFEST2026_RAID_CANDY"
+				| "EVENT_PASS_GOFEST2026_RAID_XL_CANDY"
+				| "EVENT_PASS_GOFEST2026_RAID_XP"
+				| "june2026_season_pass_entitlement"
+				| "june2026_season_pass_rank_01"
+				| "june2026_season_pass_rank_02"
+				| "june2026_season_pass_rank_03"
+				| "june2026_season_pass_rank_04";
 		};
-		pokecoin?: number;
 		pokemonEncounter?: {
 			isFeaturedPokemon: boolean;
 			pokemonDisplay?: {
 				breadModeEnum?: "BREAD_MODE";
-				costume?: "APRIL_2020_NOEVOLVE" | "NOVEMBER_2018" | "SPRING_2024";
 				form:
-					| "AUDINO_NORMAL"
-					| "BOMBIRDIER_NORMAL"
-					| "BRAVIARY_HISUIAN"
-					| "BRELOOM_NORMAL"
-					| "BUNEARY_NORMAL"
-					| "CHANSEY_NORMAL"
-					| "COMBEE_NORMAL"
-					| "COTTONEE_NORMAL"
-					| "DEINO_NORMAL"
-					| "DRILBUR_NORMAL"
-					| "FLABEBE_WHITE"
+					| "CHIMECHO_NORMAL"
+					| "CLAMPERL_NORMAL"
+					| "DHELMISE_NORMAL"
+					| "EEVEE_NORMAL"
 					| "FLITTLE_NORMAL"
-					| "FRAXURE_NORMAL"
-					| "HONEDGE_NORMAL"
-					| "JUMPLUFF_NORMAL"
-					| "LEAVANNY_NORMAL"
-					| "MANTINE_NORMAL"
-					| "ORTHWORM_NORMAL"
-					| "QWILFISH_HISUIAN"
-					| "QWILFISH_NORMAL"
+					| "FRILLISH_NORMAL"
+					| "GARBODOR_NORMAL"
+					| "GARDEVOIR_NORMAL"
+					| "GIBLE_NORMAL"
+					| "GROOKEY_NORMAL"
+					| "HITMONLEE_NORMAL"
+					| "LILLIGANT_HISUIAN"
+					| "LUGIA_NORMAL"
+					| "MEDICHAM_NORMAL"
+					| "MEOWTH_GALARIAN"
+					| "MEOWTH_NORMAL"
+					| "MEWTWO_NORMAL"
+					| "OMASTAR_NORMAL"
+					| "PIKACHU_GOFEST_2026_CAP_BLUE"
+					| "PIKACHU_GOFEST_2026_CAP_RED"
+					| "PIKACHU_GOFEST_2026_CAP_YELLOW"
 					| "ROCKRUFF_NORMAL"
-					| "ROSELIA_NORMAL"
-					| "SKIDDO_NORMAL"
-					| "SKRELP_NORMAL"
-					| "SLOWPOKE_GALARIAN"
-					| "SLOWPOKE_NORMAL"
+					| "SIZZLIPEDE_NORMAL"
+					| "SNEASEL_HISUIAN"
+					| "SNEASEL_NORMAL"
 					| "SNOM_NORMAL"
-					| "SPHEAL_NORMAL"
-					| "SPRIGATITO_NORMAL"
-					| "SUICUNE_NORMAL"
-					| "TOGETIC_NORMAL"
-					| "TOTODILE_NORMAL"
-					| "WAILMER_NORMAL"
-					| "WOOBAT_NORMAL"
-					| "XATU_NORMAL";
+					| "STANTLER_NORMAL"
+					| "TRAPINCH_NORMAL"
+					| "TREECKO_NORMAL"
+					| "ZWEILOUS_NORMAL";
+				locationCard?: {
+					locationCard: "LC_SPECIALBACKGROUND_2026_MEWTWO_001";
+				};
 			};
 			pokemonId:
-				| "AUDINO"
-				| "BOMBIRDIER"
-				| "BRAVIARY"
-				| "BRELOOM"
-				| "BUNEARY"
-				| "CHANSEY"
-				| "COMBEE"
-				| "COTTONEE"
-				| "DEINO"
-				| "DRILBUR"
-				| "FLABEBE"
+				| "CHIMECHO"
+				| "CLAMPERL"
+				| "DHELMISE"
+				| "EEVEE"
 				| "FLITTLE"
-				| "FRAXURE"
-				| "HONEDGE"
-				| "JUMPLUFF"
-				| "LEAVANNY"
-				| "MANTINE"
-				| "ORTHWORM"
+				| "FRILLISH"
+				| "GARBODOR"
+				| "GARDEVOIR"
+				| "GIBLE"
+				| "GROOKEY"
+				| "HITMONLEE"
+				| "LILLIGANT"
+				| "LUGIA"
+				| "MEDICHAM"
+				| "MEOWTH"
+				| "MEWTWO"
+				| "OMASTAR"
+				| "PIKACHU"
 				| "POLTCHAGEIST"
-				| "QWILFISH"
 				| "ROCKRUFF"
-				| "ROSELIA"
 				| "SINISTEA"
-				| "SKIDDO"
-				| "SKRELP"
-				| "SLOWPOKE"
+				| "SIZZLIPEDE"
+				| "SNEASEL"
 				| "SNOM"
-				| "SPHEAL"
-				| "SPRIGATITO"
-				| "SUICUNE"
-				| "TOGETIC"
-				| "TOTODILE"
-				| "WAILMER"
-				| "WOOBAT"
-				| "XATU";
+				| "STANTLER"
+				| "TRAPINCH"
+				| "TREECKO"
+				| "ZWEILOUS";
 			statsLimitsOverride?: {
 				maxPokemonLevel: number;
 				minPokemonLevel: number;
 			};
 		};
 		stardust?: number;
-		type: "AVATAR_CLOTHING" | "CANDY" | "EXPERIENCE" | "ITEM" | "PLAYER_ATTRIBUTE" | "POKECOIN" | "POKEMON_ENCOUNTER" | "STARDUST" | "XL_CANDY";
+		type: "AVATAR_CLOTHING" | "CANDY" | "EXPERIENCE" | "ITEM" | "MEGA_RESOURCE" | "PLAYER_ATTRIBUTE" | "POKEMON_ENCOUNTER" | "STARDUST" | "XL_CANDY";
 		xlCandy?: {
 			amount: number;
-			pokemonId:
-				| "AXEW"
-				| "BUNEARY"
-				| "CHANSEY"
-				| "COMBEE"
-				| "DEINO"
-				| "DRILBUR"
-				| "FLITTLE"
-				| "HONEDGE"
-				| "MANTINE"
-				| "NATU"
-				| "QWILFISH"
-				| "ROSELIA"
-				| "RUFFLET"
-				| "SINISTEA"
-				| "SKIDDO"
-				| "SLOWPOKE"
-				| "SNOM"
-				| "SPHEAL"
-				| "SPRIGATITO"
-				| "SUICUNE"
-				| "TOTODILE"
-				| "WAILMER"
-				| "WOOBAT";
+			pokemonId: string;
 		};
 	}>;
 	track: "FREE" | "PREMIUM";

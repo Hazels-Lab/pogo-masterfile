@@ -324,6 +324,8 @@ import type {
 	MoveSettingsV0493MovePyroball,
 	MoveSettingsV0494MoveGigatonHammer,
 	MoveSettingsV0497MovePlasmaFists,
+	MoveSettingsV0590MoveGlaiveRush,
+	MoveSettingsV0592MoveSnipeShot,
 	MoveSettingsVnBm001,
 	MoveSettingsVnBm002,
 	MoveSettingsVnBm003,
@@ -712,6 +714,8 @@ export interface MoveSettingsLookup {
 	V0493_MOVE_PYROBALL: MoveSettingsV0493MovePyroball;
 	V0494_MOVE_GIGATON_HAMMER: MoveSettingsV0494MoveGigatonHammer;
 	V0497_MOVE_PLASMA_FISTS: MoveSettingsV0497MovePlasmaFists;
+	V0590_MOVE_GLAIVE_RUSH: MoveSettingsV0590MoveGlaiveRush;
+	V0592_MOVE_SNIPE_SHOT: MoveSettingsV0592MoveSnipeShot;
 	VN_BM_001: MoveSettingsVnBm001;
 	VN_BM_002: MoveSettingsVnBm002;
 	VN_BM_003: MoveSettingsVnBm003;

@@ -3,7 +3,7 @@
 package code_gate_proto
 
 type CodeGateProtoSubCodeGateList struct {
-	IsEnabled *bool  `json:"isEnabled,omitempty"`
+	IsEnabled bool   `json:"isEnabled"`
 	Name      string `json:"name"`
 }
 

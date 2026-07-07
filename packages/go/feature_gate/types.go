@@ -3,9 +3,9 @@
 package feature_gate
 
 type FeatureGateSubFeatureGateList struct {
-	Name              string  `json:"name"`
-	RolloutPercentage *uint64 `json:"rolloutPercentage,omitempty"`
-	Status            uint64  `json:"status"`
+	Name              string `json:"name"`
+	RolloutPercentage uint64 `json:"rolloutPercentage"`
+	Status            uint64 `json:"status"`
 }
 
 type FeatureGate struct {

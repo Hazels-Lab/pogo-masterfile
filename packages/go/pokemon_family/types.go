@@ -3,10 +3,10 @@
 package pokemon_family
 
 type PokemonFamily struct {
-	CandyPerXlCandy         uint64     `json:"candyPerXlCandy"`
-	FamilyId                string     `json:"familyId"`
-	MegaEvolvablePokemonId  *string    `json:"megaEvolvablePokemonId,omitempty"`
-	MegaEvolvablePokemonIds *[2]string `json:"megaEvolvablePokemonIds,omitempty"`
+	CandyPerXlCandy         uint64   `json:"candyPerXlCandy"`
+	FamilyId                string   `json:"familyId"`
+	MegaEvolvablePokemonId  *string  `json:"megaEvolvablePokemonId,omitempty"`
+	MegaEvolvablePokemonIds []string `json:"megaEvolvablePokemonIds,omitempty"`
 }
 
 type PokemonFamilyEntry struct {

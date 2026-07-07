@@ -7,7 +7,7 @@ export type CombatMoveV0036MoveFlashCannon = S<
 	CombatMove<
 		"COMBAT_V0036_MOVE_FLASH_CANNON",
 		{
-			energyDelta: -70;
+			energyDelta: -65;
 			power: 110;
 			type: "POKEMON_TYPE_STEEL";
 			uniqueId: "FLASH_CANNON";

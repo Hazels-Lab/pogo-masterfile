@@ -43,6 +43,10 @@ pub enum StickerMetadataTemplateId {
     Sticker9anniv2,
     #[serde(rename = "STICKER_9ANNIV_3")]
     Sticker9anniv3,
+    #[serde(rename = "STICKER_10ANNIV_1")]
+    Sticker10anniv1,
+    #[serde(rename = "STICKER_10ANNIV_2")]
+    Sticker10anniv2,
     #[serde(rename = "STICKER_2023COLLAB_1")]
     Sticker2023collab1,
     #[serde(rename = "STICKER_2023COLLAB_2")]
@@ -51,6 +55,16 @@ pub enum StickerMetadataTemplateId {
     Sticker2023collab3,
     #[serde(rename = "STICKER_2023COLLAB_4")]
     Sticker2023collab4,
+    #[serde(rename = "STICKER_ACORN_PARTNERSHIP_1")]
+    StickerAcornPartnership1,
+    #[serde(rename = "STICKER_ACORN_PARTNERSHIP_2")]
+    StickerAcornPartnership2,
+    #[serde(rename = "STICKER_ACORN_PARTNERSHIP_3")]
+    StickerAcornPartnership3,
+    #[serde(rename = "STICKER_ACORN_PARTNERSHIP_4")]
+    StickerAcornPartnership4,
+    #[serde(rename = "STICKER_ACORN_PARTNERSHIP_5")]
+    StickerAcornPartnership5,
     #[serde(rename = "STICKER_ALOLAISHI_1")]
     StickerAlolaishi1,
     #[serde(rename = "STICKER_ALOLAISHI_2")]
@@ -1077,6 +1091,14 @@ pub enum StickerMetadataTemplateId {
     StickerSummer20253,
     #[serde(rename = "STICKER_SUMMER_2025_4")]
     StickerSummer20254,
+    #[serde(rename = "STICKER_SUMMER_2026_1")]
+    StickerSummer20261,
+    #[serde(rename = "STICKER_SUMMER_2026_2")]
+    StickerSummer20262,
+    #[serde(rename = "STICKER_SUMMER_2026_3")]
+    StickerSummer20263,
+    #[serde(rename = "STICKER_SUMMER_2026_4")]
+    StickerSummer20264,
     #[serde(rename = "STICKER_SWORDSHIELD21_1")]
     StickerSwordshield211,
     #[serde(rename = "STICKER_SWORDSHIELD21_2")]

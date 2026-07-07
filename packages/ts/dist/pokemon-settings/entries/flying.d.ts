@@ -333,10 +333,14 @@ export type PokemonSettingsV0714PokemonNoibat = S<
 				minPokemonActionFrequencyS: 0.9;
 				movementTimerS: 10;
 				movementType: "MOVEMENT_ELECTRIC";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.4;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 400;
+					candyCostPurified: 360;
 					evolution: "NOIVERN";
 				},
 			];
@@ -355,6 +359,12 @@ export type PokemonSettingsV0714PokemonNoibat = S<
 			pokedexWeightKg: 8;
 			pokemonId: "NOIBAT";
 			quickMoves: ["WING_ATTACK_FAST", "BITE_FAST"];
+			shadow: {
+				purificationCandyNeeded: 5;
+				purificationStardustNeeded: 5000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 83;
 				baseDefense: 73;
@@ -408,10 +418,14 @@ export type PokemonSettingsV0714PokemonNoibatNormal = S<
 				minPokemonActionFrequencyS: 0.9;
 				movementTimerS: 10;
 				movementType: "MOVEMENT_ELECTRIC";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.4;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 400;
+					candyCostPurified: 360;
 					evolution: "NOIVERN";
 					form: "NOIVERN_NORMAL";
 				},
@@ -432,6 +446,12 @@ export type PokemonSettingsV0714PokemonNoibatNormal = S<
 			pokedexWeightKg: 8;
 			pokemonId: "NOIBAT";
 			quickMoves: ["WING_ATTACK_FAST", "BITE_FAST"];
+			shadow: {
+				purificationCandyNeeded: 5;
+				purificationStardustNeeded: 5000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 83;
 				baseDefense: 73;
@@ -484,6 +504,9 @@ export type PokemonSettingsV0715PokemonNoivern = S<
 				minPokemonActionFrequencyS: 0.9;
 				movementTimerS: 10;
 				movementType: "MOVEMENT_FLYING";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.15;
+				shadowDodgeProbability: 0.2;
 			};
 			familyId: "FAMILY_NOIBAT";
 			heightStdDev: 0.1875;
@@ -501,6 +524,12 @@ export type PokemonSettingsV0715PokemonNoivern = S<
 			pokedexWeightKg: 85;
 			pokemonId: "NOIVERN";
 			quickMoves: ["AIR_SLASH_FAST", "BITE_FAST"];
+			shadow: {
+				purificationCandyNeeded: 5;
+				purificationStardustNeeded: 5000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 205;
 				baseDefense: 175;
@@ -553,6 +582,9 @@ export type PokemonSettingsV0715PokemonNoivernNormal = S<
 				minPokemonActionFrequencyS: 0.9;
 				movementTimerS: 10;
 				movementType: "MOVEMENT_FLYING";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.15;
+				shadowDodgeProbability: 0.2;
 			};
 			familyId: "FAMILY_NOIBAT";
 			form: "NOIVERN_NORMAL";
@@ -571,6 +603,12 @@ export type PokemonSettingsV0715PokemonNoivernNormal = S<
 			pokedexWeightKg: 85;
 			pokemonId: "NOIVERN";
 			quickMoves: ["AIR_SLASH_FAST", "BITE_FAST"];
+			shadow: {
+				purificationCandyNeeded: 5;
+				purificationStardustNeeded: 5000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 205;
 				baseDefense: 175;
@@ -666,10 +704,14 @@ export type PokemonSettingsV0821PokemonRookidee = S<
 				jumpTimeS: 1;
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.5;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 25;
+					candyCostPurified: 22;
 					evolution: "CORVISQUIRE";
 				},
 			];
@@ -687,6 +729,12 @@ export type PokemonSettingsV0821PokemonRookidee = S<
 			pokemonId: "ROOKIDEE";
 			quickMoves: ["PECK_FAST", "AIR_SLASH_FAST", "SAND_ATTACK_FAST"];
 			raidBossDistanceOffset: 3;
+			shadow: {
+				purificationCandyNeeded: 1;
+				purificationStardustNeeded: 1000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 88;
 				baseDefense: 67;
@@ -728,10 +776,14 @@ export type PokemonSettingsV0821PokemonRookideeNormal = S<
 				jumpTimeS: 1;
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.5;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 25;
+					candyCostPurified: 22;
 					evolution: "CORVISQUIRE";
 					form: "CORVISQUIRE_NORMAL";
 				},
@@ -751,6 +803,12 @@ export type PokemonSettingsV0821PokemonRookideeNormal = S<
 			pokemonId: "ROOKIDEE";
 			quickMoves: ["PECK_FAST", "AIR_SLASH_FAST", "SAND_ATTACK_FAST"];
 			raidBossDistanceOffset: 3;
+			shadow: {
+				purificationCandyNeeded: 1;
+				purificationStardustNeeded: 1000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 88;
 				baseDefense: 67;
@@ -797,10 +855,14 @@ export type PokemonSettingsV0822PokemonCorvisquire = S<
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
 				movementType: "MOVEMENT_FLYING";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.2;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 100;
+					candyCostPurified: 90;
 					evolution: "CORVIKNIGHT";
 				},
 			];
@@ -819,6 +881,12 @@ export type PokemonSettingsV0822PokemonCorvisquire = S<
 			pokemonId: "CORVISQUIRE";
 			quickMoves: ["PECK_FAST", "AIR_SLASH_FAST", "SAND_ATTACK_FAST"];
 			raidBossDistanceOffset: 3;
+			shadow: {
+				purificationCandyNeeded: 1;
+				purificationStardustNeeded: 1000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 129;
 				baseDefense: 110;
@@ -865,10 +933,14 @@ export type PokemonSettingsV0822PokemonCorvisquireNormal = S<
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
 				movementType: "MOVEMENT_FLYING";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.2;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 100;
+					candyCostPurified: 90;
 					evolution: "CORVIKNIGHT";
 					form: "CORVIKNIGHT_NORMAL";
 				},
@@ -889,6 +961,12 @@ export type PokemonSettingsV0822PokemonCorvisquireNormal = S<
 			pokemonId: "CORVISQUIRE";
 			quickMoves: ["PECK_FAST", "AIR_SLASH_FAST", "SAND_ATTACK_FAST"];
 			raidBossDistanceOffset: 3;
+			shadow: {
+				purificationCandyNeeded: 1;
+				purificationStardustNeeded: 1000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 129;
 				baseDefense: 110;
@@ -937,6 +1015,9 @@ export type PokemonSettingsV0823PokemonCorviknight = S<
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
 				movementType: "MOVEMENT_FLYING";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.125;
+				shadowDodgeProbability: 0.2;
 			};
 			familyId: "FAMILY_ROOKIDEE";
 			heightStdDev: 0.275;
@@ -953,6 +1034,12 @@ export type PokemonSettingsV0823PokemonCorviknight = S<
 			pokemonId: "CORVIKNIGHT";
 			quickMoves: ["STEEL_WING_FAST", "AIR_SLASH_FAST", "SAND_ATTACK_FAST"];
 			raidBossDistanceOffset: 3;
+			shadow: {
+				purificationCandyNeeded: 1;
+				purificationStardustNeeded: 1000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 163;
 				baseDefense: 192;
@@ -1002,6 +1089,9 @@ export type PokemonSettingsV0823PokemonCorviknightNormal = S<
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
 				movementType: "MOVEMENT_FLYING";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.125;
+				shadowDodgeProbability: 0.2;
 			};
 			familyId: "FAMILY_ROOKIDEE";
 			form: "CORVIKNIGHT_NORMAL";
@@ -1019,6 +1109,12 @@ export type PokemonSettingsV0823PokemonCorviknightNormal = S<
 			pokemonId: "CORVIKNIGHT";
 			quickMoves: ["STEEL_WING_FAST", "AIR_SLASH_FAST", "SAND_ATTACK_FAST"];
 			raidBossDistanceOffset: 3;
+			shadow: {
+				purificationCandyNeeded: 1;
+				purificationStardustNeeded: 1000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 163;
 				baseDefense: 192;

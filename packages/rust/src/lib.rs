@@ -183,24 +183,24 @@ pub enum MasterfileEntry {
     AvatarCustomization(avatar_customization::AvatarCustomizationEntry),
     AvatarItemDisplay(avatar_item_display::AvatarItemDisplayEntry),
     IapItemDisplay(iap_item_display::IapItemDisplayEntry),
+    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     FormSettings(form_settings::FormSettingsEntry),
     BadgeSettings(badge_settings::BadgeSettingsEntry),
     StickerMetadata(sticker_metadata::StickerMetadataEntry),
     PokemonFamily(pokemon_family::PokemonFamilyEntry),
-    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     MoveSettings(move_settings::MoveSettingsEntry),
     MoveSequenceSettings(move_sequence_settings::MoveSequenceSettingsEntry),
     CombatMove(combat_move::CombatMoveEntry),
     SettingsOverrideRule(settings_override_rule::SettingsOverrideRuleEntry),
     LocationCardSettings(location_card_settings::LocationCardSettingsEntry),
     ItemSettings(item_settings::ItemSettingsEntry),
-    CombatLeague(combat_league::CombatLeagueEntry),
     MegaEvoLevelSettings(mega_evo_level_settings::MegaEvoLevelSettingsEntry),
+    CombatLeague(combat_league::CombatLeagueEntry),
+    InvasionNpcDisplaySettings(invasion_npc_display_settings::InvasionNpcDisplaySettingsEntry),
     LevelUpRewards(level_up_rewards::LevelUpRewardsEntry),
     EvolutionChainDisplaySettings(
         evolution_chain_display_settings::EvolutionChainDisplaySettingsEntry,
     ),
-    InvasionNpcDisplaySettings(invasion_npc_display_settings::InvasionNpcDisplaySettingsEntry),
     ClientQuestTemplate(client_quest_template::ClientQuestTemplateEntry),
     TemporaryEvolutionSettings(temporary_evolution_settings::TemporaryEvolutionSettingsEntry),
     VsSeekerLoot(vs_seeker_loot::VsSeekerLootEntry),
@@ -211,9 +211,9 @@ pub enum MasterfileEntry {
     ItemExpirationSettings(item_expiration_settings::ItemExpirationSettingsEntry),
     CombatType(combat_type::CombatTypeEntry),
     TypeEffective(type_effective::TypeEffectiveEntry),
+    FeatureGate(feature_gate::FeatureGateEntry),
     IapCategoryDisplay(iap_category_display::IapCategoryDisplayEntry),
     CodeGateProto(code_gate_proto::CodeGateProtoEntry),
-    FeatureGate(feature_gate::FeatureGateEntry),
     RecommendedSearchSettings(recommended_search_settings::RecommendedSearchSettingsEntry),
     CombatNpcTrainer(combat_npc_trainer::CombatNpcTrainerEntry),
     NonCombatMoveSettings(non_combat_move_settings::NonCombatMoveSettingsEntry),
@@ -229,6 +229,7 @@ pub enum MasterfileEntry {
     WeatherAffinities(weather_affinities::WeatherAffinitiesEntry),
     FriendshipMilestoneSettings(friendship_milestone_settings::FriendshipMilestoneSettingsEntry),
     PokemonScaleSettings(pokemon_scale_settings::PokemonScaleSettingsEntry),
+    RollBack(roll_back::RollBackEntry),
     BuddyLevelSettings(buddy_level_settings::BuddyLevelSettingsEntry),
     TappableSettings(tappable_settings::TappableSettingsEntry),
     FortPowerUpLevelSettings(fort_power_up_level_settings::FortPowerUpLevelSettingsEntry),
@@ -236,7 +237,6 @@ pub enum MasterfileEntry {
     CombatNpcPersonality(combat_npc_personality::CombatNpcPersonalityEntry),
     LanguageSettings(language_settings::LanguageSettingsEntry),
     QuestSettings(quest_settings::QuestSettingsEntry),
-    RollBack(roll_back::RollBackEntry),
     AvatarGroupOrderSettings(avatar_group_order_settings::AvatarGroupOrderSettingsEntry),
     EventPassSettings(event_pass_settings::EventPassSettingsEntry),
     PartyPlayGeneralSettings(party_play_general_settings::PartyPlayGeneralSettingsEntry),
@@ -369,6 +369,7 @@ pub enum MasterfileEntry {
     SoftSfidaSettings(singletons::SoftSfidaSettingsEntry),
     SourdoughMoveMappingSettings(singletons::SourdoughMoveMappingSettingsEntry),
     SpecialEggSettings(singletons::SpecialEggSettingsEntry),
+    SpecialResearchVisualRefreshSettings(singletons::SpecialResearchVisualRefreshSettingsEntry),
     SponsoredGeofenceGiftSettings(singletons::SponsoredGeofenceGiftSettingsEntry),
     SquashSettings(singletons::SquashSettingsEntry),
     StampCollectionSettings(singletons::StampCollectionSettingsEntry),
@@ -424,13 +425,13 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 }
                 "avatarItemDisplay" => serde_json::from_value(value).map(Self::AvatarItemDisplay),
                 "iapItemDisplay" => serde_json::from_value(value).map(Self::IapItemDisplay),
+                "eventPassTierSettings" => {
+                    serde_json::from_value(value).map(Self::EventPassTierSettings)
+                }
                 "formSettings" => serde_json::from_value(value).map(Self::FormSettings),
                 "badgeSettings" => serde_json::from_value(value).map(Self::BadgeSettings),
                 "stickerMetadata" => serde_json::from_value(value).map(Self::StickerMetadata),
                 "pokemonFamily" => serde_json::from_value(value).map(Self::PokemonFamily),
-                "eventPassTierSettings" => {
-                    serde_json::from_value(value).map(Self::EventPassTierSettings)
-                }
                 "moveSettings" => serde_json::from_value(value).map(Self::MoveSettings),
                 "moveSequenceSettings" => {
                     serde_json::from_value(value).map(Self::MoveSequenceSettings)
@@ -443,16 +444,16 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::LocationCardSettings)
                 }
                 "itemSettings" => serde_json::from_value(value).map(Self::ItemSettings),
-                "combatLeague" => serde_json::from_value(value).map(Self::CombatLeague),
                 "megaEvoLevelSettings" => {
                     serde_json::from_value(value).map(Self::MegaEvoLevelSettings)
+                }
+                "combatLeague" => serde_json::from_value(value).map(Self::CombatLeague),
+                "invasionNpcDisplaySettings" => {
+                    serde_json::from_value(value).map(Self::InvasionNpcDisplaySettings)
                 }
                 "levelUpRewards" => serde_json::from_value(value).map(Self::LevelUpRewards),
                 "evolutionChainDisplaySettings" => {
                     serde_json::from_value(value).map(Self::EvolutionChainDisplaySettings)
-                }
-                "invasionNpcDisplaySettings" => {
-                    serde_json::from_value(value).map(Self::InvasionNpcDisplaySettings)
                 }
                 "clientQuestTemplate" => {
                     serde_json::from_value(value).map(Self::ClientQuestTemplate)
@@ -478,9 +479,9 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 }
                 "combatType" => serde_json::from_value(value).map(Self::CombatType),
                 "typeEffective" => serde_json::from_value(value).map(Self::TypeEffective),
+                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
                 "iapCategoryDisplay" => serde_json::from_value(value).map(Self::IapCategoryDisplay),
                 "codeGateProto" => serde_json::from_value(value).map(Self::CodeGateProto),
-                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
                 "recommendedSearchSettings" => {
                     serde_json::from_value(value).map(Self::RecommendedSearchSettings)
                 }
@@ -510,6 +511,7 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "pokemonScaleSettings" => {
                     serde_json::from_value(value).map(Self::PokemonScaleSettings)
                 }
+                "rollBack" => serde_json::from_value(value).map(Self::RollBack),
                 "buddyLevelSettings" => serde_json::from_value(value).map(Self::BuddyLevelSettings),
                 "tappableSettings" => serde_json::from_value(value).map(Self::TappableSettings),
                 "fortPowerUpLevelSettings" => {
@@ -523,7 +525,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 }
                 "languageSettings" => serde_json::from_value(value).map(Self::LanguageSettings),
                 "questSettings" => serde_json::from_value(value).map(Self::QuestSettings),
-                "rollBack" => serde_json::from_value(value).map(Self::RollBack),
                 "avatarGroupOrderSettings" => {
                     serde_json::from_value(value).map(Self::AvatarGroupOrderSettings)
                 }
@@ -875,6 +876,9 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 }
                 Some("SOFT_SFIDA_SETTINGS") => {
                     serde_json::from_value(value).map(Self::SoftSfidaSettings)
+                }
+                Some("SPECIAL_RESEARCH_VISUAL_REFRESH_SETTINGS") => {
+                    serde_json::from_value(value).map(Self::SpecialResearchVisualRefreshSettings)
                 }
                 Some(other) => Err(serde_json::Error::custom(format!(
                     "unknown stub templateId: {}",

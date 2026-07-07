@@ -91,6 +91,8 @@ pub enum BadgeSettingsTemplateId {
     BadgeCityExplorerPass02,
     #[serde(rename = "BADGE_CITY_EXPLORER_PASS_03")]
     BadgeCityExplorerPass03,
+    #[serde(rename = "BADGE_CR_2026_001")]
+    BadgeCr2026001,
     #[serde(rename = "BADGE_EVENT_0001")]
     BadgeEvent0001,
     #[serde(rename = "BADGE_EVENT_0002")]
@@ -301,6 +303,8 @@ pub enum BadgeSettingsTemplateId {
     BadgeEvent0189,
     #[serde(rename = "BADGE_EVENT_0190")]
     BadgeEvent0190,
+    #[serde(rename = "BADGE_EVENT_0191")]
+    BadgeEvent0191,
     #[serde(rename = "BADGE_EVENT_0193")]
     BadgeEvent0193,
     #[serde(rename = "BADGE_EVENT_0194")]
@@ -309,10 +313,54 @@ pub enum BadgeSettingsTemplateId {
     BadgeEvent0195,
     #[serde(rename = "BADGE_EVENT_0196")]
     BadgeEvent0196,
+    #[serde(rename = "BADGE_EVENT_0197")]
+    BadgeEvent0197,
+    #[serde(rename = "BADGE_EVENT_0199")]
+    BadgeEvent0199,
     #[serde(rename = "BADGE_EVENT_0200")]
     BadgeEvent0200,
+    #[serde(rename = "BADGE_EVENT_0202")]
+    BadgeEvent0202,
+    #[serde(rename = "BADGE_EVENT_0203")]
+    BadgeEvent0203,
     #[serde(rename = "BADGE_EVENT_0205")]
     BadgeEvent0205,
+    #[serde(rename = "BADGE_EVENT_0206")]
+    BadgeEvent0206,
+    #[serde(rename = "BADGE_EVENT_0207")]
+    BadgeEvent0207,
+    #[serde(rename = "BADGE_EVENT_0211")]
+    BadgeEvent0211,
+    #[serde(rename = "BADGE_EVENT_0212")]
+    BadgeEvent0212,
+    #[serde(rename = "BADGE_EVENT_0213")]
+    BadgeEvent0213,
+    #[serde(rename = "BADGE_EVENT_0214")]
+    BadgeEvent0214,
+    #[serde(rename = "BADGE_EVENT_0215")]
+    BadgeEvent0215,
+    #[serde(rename = "BADGE_EVENT_0216")]
+    BadgeEvent0216,
+    #[serde(rename = "BADGE_EVENT_0217")]
+    BadgeEvent0217,
+    #[serde(rename = "BADGE_EVENT_0218")]
+    BadgeEvent0218,
+    #[serde(rename = "BADGE_EVENT_0219")]
+    BadgeEvent0219,
+    #[serde(rename = "BADGE_EVENT_0220")]
+    BadgeEvent0220,
+    #[serde(rename = "BADGE_EVENT_0221")]
+    BadgeEvent0221,
+    #[serde(rename = "BADGE_EVENT_0222")]
+    BadgeEvent0222,
+    #[serde(rename = "BADGE_EVENT_0223")]
+    BadgeEvent0223,
+    #[serde(rename = "BADGE_EVENT_0224")]
+    BadgeEvent0224,
+    #[serde(rename = "BADGE_EVENT_0225")]
+    BadgeEvent0225,
+    #[serde(rename = "BADGE_EVENT_0234")]
+    BadgeEvent0234,
     #[serde(rename = "BADGE_EVENT_0279")]
     BadgeEvent0279,
     #[serde(rename = "BADGE_EVENT_0280")]

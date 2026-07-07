@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "temp-evo-overrides", 37 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "temp-evo-overrides", 38 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -232,6 +232,46 @@ export type PokemonExtendedSettingsV0149PokemonDragonite = S<
 				},
 			];
 			uniqueId: "DRAGONITE";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0150PokemonMewtwo = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0150_POKEMON_MEWTWO",
+		{
+			sizeSettings: {
+				mLowerBound: 1.5;
+				mUpperBound: 2.5;
+				xlUpperBound: 3;
+				xsLowerBound: 1;
+				xxlUpperBound: 3.5;
+				xxsLowerBound: 0.98;
+			};
+			tempEvoOverrides: [
+				{
+					sizeSettings: {
+						mLowerBound: 1.725;
+						mUpperBound: 2.875;
+						xlUpperBound: 3.45;
+						xsLowerBound: 1.15;
+						xxlUpperBound: 3.565;
+						xxsLowerBound: 1.127;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
+				},
+				{
+					sizeSettings: {
+						mLowerBound: 1.125;
+						mUpperBound: 1.875;
+						xlUpperBound: 2.25;
+						xsLowerBound: 0.75;
+						xxlUpperBound: 2.325;
+						xxsLowerBound: 0.735;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
+				},
+			];
+			uniqueId: "MEWTWO";
 		}
 	>
 >;
@@ -1086,6 +1126,7 @@ export type PokemonExtendedSettingsTempEvoOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0127PokemonPinsir
 	| PokemonExtendedSettingsV0142PokemonAerodactyl
 	| PokemonExtendedSettingsV0149PokemonDragonite
+	| PokemonExtendedSettingsV0150PokemonMewtwo
 	| PokemonExtendedSettingsV0181PokemonAmpharos
 	| PokemonExtendedSettingsV0208PokemonSteelix
 	| PokemonExtendedSettingsV0212PokemonScizor

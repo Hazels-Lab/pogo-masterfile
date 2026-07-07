@@ -16,7 +16,7 @@ describe("detectInvariants", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
 		const tree = detectInvariants(group);
 		const effectGroup = tree.get("effectGroup");
-		if (!effectGroup || effectGroup.kind !== "nested") {
+		if (effectGroup?.kind !== "nested") {
 			throw new Error("expected effectGroup to be a nested node");
 		}
 		expect(effectGroup.children.get("accuracyChance")).toEqual({
@@ -29,11 +29,11 @@ describe("detectInvariants", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
 		const tree = detectInvariants(group);
 		const effectGroup = tree.get("effectGroup");
-		if (!effectGroup || effectGroup.kind !== "nested") {
+		if (effectGroup?.kind !== "nested") {
 			throw new Error("expected effectGroup to be a nested node");
 		}
 		const nested = effectGroup.children.get("nested");
-		if (!nested || nested.kind !== "nested") {
+		if (nested?.kind !== "nested") {
 			throw new Error("expected effectGroup.nested to be a nested node");
 		}
 		expect(nested.children.get("combatType")).toEqual({ kind: "templateIdTie" });
@@ -45,7 +45,7 @@ describe("detectInvariants", () => {
 		// attackScalar varies per-entry → not an invariant
 		expect(tree.has("attackScalar")).toBe(false);
 		const effectGroup = tree.get("effectGroup");
-		if (!effectGroup || effectGroup.kind !== "nested") {
+		if (effectGroup?.kind !== "nested") {
 			throw new Error("expected effectGroup to be a nested node");
 		}
 		// tags varies (length differs) → not an invariant
@@ -89,7 +89,7 @@ describe("detectInvariants", () => {
 		const group = groupEntries(MOCK_MASTERFILE).get("typeEffective")!;
 		const tree = detectInvariants(group);
 		const effectGroup = tree.get("effectGroup");
-		if (!effectGroup || effectGroup.kind !== "nested") {
+		if (effectGroup?.kind !== "nested") {
 			throw new Error("expected effectGroup to be a nested node");
 		}
 		expect(effectGroup.children.get("typeCode")).toEqual({

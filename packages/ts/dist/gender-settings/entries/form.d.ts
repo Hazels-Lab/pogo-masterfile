@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "genderSettings", split "form", 93 entries.
+// Generated from Pokémon GO masterfile — group "genderSettings", split "form", 94 entries.
 
 import type { S } from "../../_utils";
 import type { GenderSettings } from "../types";
@@ -1172,6 +1172,18 @@ export type GenderSettingsV0916PokemonOinkologneNormal = S<
 		}
 	>
 >;
+export type GenderSettingsV0999PokemonGimmighoulCoinA22026 = S<
+	GenderSettings<
+		"SPAWN_V0999_POKEMON_GIMMIGHOUL_COIN_A2_2026",
+		{
+			form: "GIMMIGHOUL_COIN_A2_2026";
+			gender: {
+				genderlessPercent: 1;
+			};
+			pokemon: "GIMMIGHOUL";
+		}
+	>
+>;
 
 export type GenderSettingsFormMasterfileEntry =
 	| GenderSettingsV0010PokemonCaterpieGofest2026
@@ -1266,4 +1278,5 @@ export type GenderSettingsFormMasterfileEntry =
 	| GenderSettingsV0760PokemonBewearNormal
 	| GenderSettingsV0760PokemonBewearWildarea2025
 	| GenderSettingsV0916PokemonOinkologneFemale
-	| GenderSettingsV0916PokemonOinkologneNormal;
+	| GenderSettingsV0916PokemonOinkologneNormal
+	| GenderSettingsV0999PokemonGimmighoulCoinA22026;

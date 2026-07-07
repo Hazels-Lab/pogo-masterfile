@@ -47,6 +47,7 @@ const (
 	BadgeSettingsTemplateIDBadgeCityExplorerPass01                          BadgeSettingsTemplateID = "BADGE_CITY_EXPLORER_PASS_01"
 	BadgeSettingsTemplateIDBadgeCityExplorerPass02                          BadgeSettingsTemplateID = "BADGE_CITY_EXPLORER_PASS_02"
 	BadgeSettingsTemplateIDBadgeCityExplorerPass03                          BadgeSettingsTemplateID = "BADGE_CITY_EXPLORER_PASS_03"
+	BadgeSettingsTemplateIDBadgeCr2026001                                   BadgeSettingsTemplateID = "BADGE_CR_2026_001"
 	BadgeSettingsTemplateIDBadgeEvent0001                                   BadgeSettingsTemplateID = "BADGE_EVENT_0001"
 	BadgeSettingsTemplateIDBadgeEvent0002                                   BadgeSettingsTemplateID = "BADGE_EVENT_0002"
 	BadgeSettingsTemplateIDBadgeEvent0003                                   BadgeSettingsTemplateID = "BADGE_EVENT_0003"
@@ -152,12 +153,35 @@ const (
 	BadgeSettingsTemplateIDBadgeEvent0188                                   BadgeSettingsTemplateID = "BADGE_EVENT_0188"
 	BadgeSettingsTemplateIDBadgeEvent0189                                   BadgeSettingsTemplateID = "BADGE_EVENT_0189"
 	BadgeSettingsTemplateIDBadgeEvent0190                                   BadgeSettingsTemplateID = "BADGE_EVENT_0190"
+	BadgeSettingsTemplateIDBadgeEvent0191                                   BadgeSettingsTemplateID = "BADGE_EVENT_0191"
 	BadgeSettingsTemplateIDBadgeEvent0193                                   BadgeSettingsTemplateID = "BADGE_EVENT_0193"
 	BadgeSettingsTemplateIDBadgeEvent0194                                   BadgeSettingsTemplateID = "BADGE_EVENT_0194"
 	BadgeSettingsTemplateIDBadgeEvent0195                                   BadgeSettingsTemplateID = "BADGE_EVENT_0195"
 	BadgeSettingsTemplateIDBadgeEvent0196                                   BadgeSettingsTemplateID = "BADGE_EVENT_0196"
+	BadgeSettingsTemplateIDBadgeEvent0197                                   BadgeSettingsTemplateID = "BADGE_EVENT_0197"
+	BadgeSettingsTemplateIDBadgeEvent0199                                   BadgeSettingsTemplateID = "BADGE_EVENT_0199"
 	BadgeSettingsTemplateIDBadgeEvent0200                                   BadgeSettingsTemplateID = "BADGE_EVENT_0200"
+	BadgeSettingsTemplateIDBadgeEvent0202                                   BadgeSettingsTemplateID = "BADGE_EVENT_0202"
+	BadgeSettingsTemplateIDBadgeEvent0203                                   BadgeSettingsTemplateID = "BADGE_EVENT_0203"
 	BadgeSettingsTemplateIDBadgeEvent0205                                   BadgeSettingsTemplateID = "BADGE_EVENT_0205"
+	BadgeSettingsTemplateIDBadgeEvent0206                                   BadgeSettingsTemplateID = "BADGE_EVENT_0206"
+	BadgeSettingsTemplateIDBadgeEvent0207                                   BadgeSettingsTemplateID = "BADGE_EVENT_0207"
+	BadgeSettingsTemplateIDBadgeEvent0211                                   BadgeSettingsTemplateID = "BADGE_EVENT_0211"
+	BadgeSettingsTemplateIDBadgeEvent0212                                   BadgeSettingsTemplateID = "BADGE_EVENT_0212"
+	BadgeSettingsTemplateIDBadgeEvent0213                                   BadgeSettingsTemplateID = "BADGE_EVENT_0213"
+	BadgeSettingsTemplateIDBadgeEvent0214                                   BadgeSettingsTemplateID = "BADGE_EVENT_0214"
+	BadgeSettingsTemplateIDBadgeEvent0215                                   BadgeSettingsTemplateID = "BADGE_EVENT_0215"
+	BadgeSettingsTemplateIDBadgeEvent0216                                   BadgeSettingsTemplateID = "BADGE_EVENT_0216"
+	BadgeSettingsTemplateIDBadgeEvent0217                                   BadgeSettingsTemplateID = "BADGE_EVENT_0217"
+	BadgeSettingsTemplateIDBadgeEvent0218                                   BadgeSettingsTemplateID = "BADGE_EVENT_0218"
+	BadgeSettingsTemplateIDBadgeEvent0219                                   BadgeSettingsTemplateID = "BADGE_EVENT_0219"
+	BadgeSettingsTemplateIDBadgeEvent0220                                   BadgeSettingsTemplateID = "BADGE_EVENT_0220"
+	BadgeSettingsTemplateIDBadgeEvent0221                                   BadgeSettingsTemplateID = "BADGE_EVENT_0221"
+	BadgeSettingsTemplateIDBadgeEvent0222                                   BadgeSettingsTemplateID = "BADGE_EVENT_0222"
+	BadgeSettingsTemplateIDBadgeEvent0223                                   BadgeSettingsTemplateID = "BADGE_EVENT_0223"
+	BadgeSettingsTemplateIDBadgeEvent0224                                   BadgeSettingsTemplateID = "BADGE_EVENT_0224"
+	BadgeSettingsTemplateIDBadgeEvent0225                                   BadgeSettingsTemplateID = "BADGE_EVENT_0225"
+	BadgeSettingsTemplateIDBadgeEvent0234                                   BadgeSettingsTemplateID = "BADGE_EVENT_0234"
 	BadgeSettingsTemplateIDBadgeEvent0279                                   BadgeSettingsTemplateID = "BADGE_EVENT_0279"
 	BadgeSettingsTemplateIDBadgeEvent0280                                   BadgeSettingsTemplateID = "BADGE_EVENT_0280"
 	BadgeSettingsTemplateIDBadgeEvolvedTotal                                BadgeSettingsTemplateID = "BADGE_EVOLVED_TOTAL"
@@ -1019,6 +1043,7 @@ var BadgeSettingsTemplateIDValues = [...]BadgeSettingsTemplateID{
 	BadgeSettingsTemplateIDBadgeCityExplorerPass01,
 	BadgeSettingsTemplateIDBadgeCityExplorerPass02,
 	BadgeSettingsTemplateIDBadgeCityExplorerPass03,
+	BadgeSettingsTemplateIDBadgeCr2026001,
 	BadgeSettingsTemplateIDBadgeEvent0001,
 	BadgeSettingsTemplateIDBadgeEvent0002,
 	BadgeSettingsTemplateIDBadgeEvent0003,
@@ -1124,12 +1149,35 @@ var BadgeSettingsTemplateIDValues = [...]BadgeSettingsTemplateID{
 	BadgeSettingsTemplateIDBadgeEvent0188,
 	BadgeSettingsTemplateIDBadgeEvent0189,
 	BadgeSettingsTemplateIDBadgeEvent0190,
+	BadgeSettingsTemplateIDBadgeEvent0191,
 	BadgeSettingsTemplateIDBadgeEvent0193,
 	BadgeSettingsTemplateIDBadgeEvent0194,
 	BadgeSettingsTemplateIDBadgeEvent0195,
 	BadgeSettingsTemplateIDBadgeEvent0196,
+	BadgeSettingsTemplateIDBadgeEvent0197,
+	BadgeSettingsTemplateIDBadgeEvent0199,
 	BadgeSettingsTemplateIDBadgeEvent0200,
+	BadgeSettingsTemplateIDBadgeEvent0202,
+	BadgeSettingsTemplateIDBadgeEvent0203,
 	BadgeSettingsTemplateIDBadgeEvent0205,
+	BadgeSettingsTemplateIDBadgeEvent0206,
+	BadgeSettingsTemplateIDBadgeEvent0207,
+	BadgeSettingsTemplateIDBadgeEvent0211,
+	BadgeSettingsTemplateIDBadgeEvent0212,
+	BadgeSettingsTemplateIDBadgeEvent0213,
+	BadgeSettingsTemplateIDBadgeEvent0214,
+	BadgeSettingsTemplateIDBadgeEvent0215,
+	BadgeSettingsTemplateIDBadgeEvent0216,
+	BadgeSettingsTemplateIDBadgeEvent0217,
+	BadgeSettingsTemplateIDBadgeEvent0218,
+	BadgeSettingsTemplateIDBadgeEvent0219,
+	BadgeSettingsTemplateIDBadgeEvent0220,
+	BadgeSettingsTemplateIDBadgeEvent0221,
+	BadgeSettingsTemplateIDBadgeEvent0222,
+	BadgeSettingsTemplateIDBadgeEvent0223,
+	BadgeSettingsTemplateIDBadgeEvent0224,
+	BadgeSettingsTemplateIDBadgeEvent0225,
+	BadgeSettingsTemplateIDBadgeEvent0234,
 	BadgeSettingsTemplateIDBadgeEvent0279,
 	BadgeSettingsTemplateIDBadgeEvent0280,
 	BadgeSettingsTemplateIDBadgeEvolvedTotal,

@@ -23,10 +23,17 @@ const (
 	StickerMetadataTemplateIDSticker9anniv1                      StickerMetadataTemplateID = "STICKER_9ANNIV_1"
 	StickerMetadataTemplateIDSticker9anniv2                      StickerMetadataTemplateID = "STICKER_9ANNIV_2"
 	StickerMetadataTemplateIDSticker9anniv3                      StickerMetadataTemplateID = "STICKER_9ANNIV_3"
+	StickerMetadataTemplateIDSticker10anniv1                     StickerMetadataTemplateID = "STICKER_10ANNIV_1"
+	StickerMetadataTemplateIDSticker10anniv2                     StickerMetadataTemplateID = "STICKER_10ANNIV_2"
 	StickerMetadataTemplateIDSticker2023collab1                  StickerMetadataTemplateID = "STICKER_2023COLLAB_1"
 	StickerMetadataTemplateIDSticker2023collab2                  StickerMetadataTemplateID = "STICKER_2023COLLAB_2"
 	StickerMetadataTemplateIDSticker2023collab3                  StickerMetadataTemplateID = "STICKER_2023COLLAB_3"
 	StickerMetadataTemplateIDSticker2023collab4                  StickerMetadataTemplateID = "STICKER_2023COLLAB_4"
+	StickerMetadataTemplateIDStickerAcornPartnership1            StickerMetadataTemplateID = "STICKER_ACORN_PARTNERSHIP_1"
+	StickerMetadataTemplateIDStickerAcornPartnership2            StickerMetadataTemplateID = "STICKER_ACORN_PARTNERSHIP_2"
+	StickerMetadataTemplateIDStickerAcornPartnership3            StickerMetadataTemplateID = "STICKER_ACORN_PARTNERSHIP_3"
+	StickerMetadataTemplateIDStickerAcornPartnership4            StickerMetadataTemplateID = "STICKER_ACORN_PARTNERSHIP_4"
+	StickerMetadataTemplateIDStickerAcornPartnership5            StickerMetadataTemplateID = "STICKER_ACORN_PARTNERSHIP_5"
 	StickerMetadataTemplateIDStickerAlolaishi1                   StickerMetadataTemplateID = "STICKER_ALOLAISHI_1"
 	StickerMetadataTemplateIDStickerAlolaishi2                   StickerMetadataTemplateID = "STICKER_ALOLAISHI_2"
 	StickerMetadataTemplateIDStickerAlolaishi3                   StickerMetadataTemplateID = "STICKER_ALOLAISHI_3"
@@ -540,6 +547,10 @@ const (
 	StickerMetadataTemplateIDStickerSummer20252                  StickerMetadataTemplateID = "STICKER_SUMMER_2025_2"
 	StickerMetadataTemplateIDStickerSummer20253                  StickerMetadataTemplateID = "STICKER_SUMMER_2025_3"
 	StickerMetadataTemplateIDStickerSummer20254                  StickerMetadataTemplateID = "STICKER_SUMMER_2025_4"
+	StickerMetadataTemplateIDStickerSummer20261                  StickerMetadataTemplateID = "STICKER_SUMMER_2026_1"
+	StickerMetadataTemplateIDStickerSummer20262                  StickerMetadataTemplateID = "STICKER_SUMMER_2026_2"
+	StickerMetadataTemplateIDStickerSummer20263                  StickerMetadataTemplateID = "STICKER_SUMMER_2026_3"
+	StickerMetadataTemplateIDStickerSummer20264                  StickerMetadataTemplateID = "STICKER_SUMMER_2026_4"
 	StickerMetadataTemplateIDStickerSwordshield211               StickerMetadataTemplateID = "STICKER_SWORDSHIELD21_1"
 	StickerMetadataTemplateIDStickerSwordshield212               StickerMetadataTemplateID = "STICKER_SWORDSHIELD21_2"
 	StickerMetadataTemplateIDStickerSwordshield213               StickerMetadataTemplateID = "STICKER_SWORDSHIELD21_3"
@@ -632,10 +643,17 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDSticker9anniv1,
 	StickerMetadataTemplateIDSticker9anniv2,
 	StickerMetadataTemplateIDSticker9anniv3,
+	StickerMetadataTemplateIDSticker10anniv1,
+	StickerMetadataTemplateIDSticker10anniv2,
 	StickerMetadataTemplateIDSticker2023collab1,
 	StickerMetadataTemplateIDSticker2023collab2,
 	StickerMetadataTemplateIDSticker2023collab3,
 	StickerMetadataTemplateIDSticker2023collab4,
+	StickerMetadataTemplateIDStickerAcornPartnership1,
+	StickerMetadataTemplateIDStickerAcornPartnership2,
+	StickerMetadataTemplateIDStickerAcornPartnership3,
+	StickerMetadataTemplateIDStickerAcornPartnership4,
+	StickerMetadataTemplateIDStickerAcornPartnership5,
 	StickerMetadataTemplateIDStickerAlolaishi1,
 	StickerMetadataTemplateIDStickerAlolaishi2,
 	StickerMetadataTemplateIDStickerAlolaishi3,
@@ -1149,6 +1167,10 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDStickerSummer20252,
 	StickerMetadataTemplateIDStickerSummer20253,
 	StickerMetadataTemplateIDStickerSummer20254,
+	StickerMetadataTemplateIDStickerSummer20261,
+	StickerMetadataTemplateIDStickerSummer20262,
+	StickerMetadataTemplateIDStickerSummer20263,
+	StickerMetadataTemplateIDStickerSummer20264,
 	StickerMetadataTemplateIDStickerSwordshield211,
 	StickerMetadataTemplateIDStickerSwordshield212,
 	StickerMetadataTemplateIDStickerSwordshield213,

@@ -117,6 +117,8 @@ pub enum CombatLeagueTemplateId {
     CombatLeagueVsSeekerGreatChampionshipNaic,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_SERIES")]
     CombatLeagueVsSeekerGreatChampionshipSeries,
+    #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIPS_LEGACY")]
+    CombatLeagueVsSeekerGreatChampionshipsLegacy,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_ELECTRIC")]
     CombatLeagueVsSeekerGreatElectric,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_ELEMENT")]

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 12 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 17 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -7,6 +7,7 @@ export type FeatureGateAdminGmNiaOpsOnlyFilterAms = S<
 	FeatureGate<
 		"ADMIN_GM_NIA_OPS_ONLY_FILTER_AMS_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -15,6 +16,7 @@ export type FeatureGateAms = S<
 	FeatureGate<
 		"AMS_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 24;
 		}
 	>
@@ -23,6 +25,7 @@ export type FeatureGateAmsFrontend = S<
 	FeatureGate<
 		"AMS_FRONTEND_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -31,6 +34,7 @@ export type FeatureGateDayNightPoi = S<
 	FeatureGate<
 		"DAY_NIGHT_POI_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1827323905;
 		}
 	>
@@ -39,6 +43,25 @@ export type FeatureGateEnablePvpChallengeSpanner = S<
 	FeatureGate<
 		"ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateEnhancedCurrencyOverflowStardust = S<
+	FeatureGate<
+		"ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE",
+		{
+			rolloutPercentage: 100;
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateEventList = S<
+	FeatureGate<
+		"EVENT_LIST_FEATURE_GATE",
+		{
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -47,6 +70,7 @@ export type FeatureGateEventPassBonusRanks = S<
 	FeatureGate<
 		"EVENT_PASS_BONUS_RANKS_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -55,6 +79,7 @@ export type FeatureGateEventPassClaimableRewardToggle = S<
 	FeatureGate<
 		"EVENT_PASS_CLAIMABLE_REWARD_TOGGLE_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -63,15 +88,59 @@ export type FeatureGateEventPassMilestoneRewards = S<
 	FeatureGate<
 		"EVENT_PASS_MILESTONE_REWARDS_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
 >;
-export type FeatureGateHealToast = S<
+export type FeatureGateEventTicketDatetimeRange = S<
 	FeatureGate<
-		"HEAL_TOAST_FEATURE_GATE",
+		"EVENT_TICKET_DATETIME_RANGE_FEATURE_GATE",
 		{
-			status: 41414141;
+			rolloutPercentage: 100;
+			status: 1;
+			subFeatureGateList: [
+				{
+					name: "ALWAYS_USE_EXPANDED_TIME_RANGE";
+					rolloutPercentage: 100;
+					status: 1;
+				},
+			];
+		}
+	>
+>;
+export type FeatureGateFriendshipResyncOnRead = S<
+	FeatureGate<
+		"FRIENDSHIP_RESYNC_ON_READ_FEATURE_GATE",
+		{
+			rolloutPercentage: 50;
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateGamesiteWebviewNearbyButtons = S<
+	FeatureGate<
+		"GAMESITE_WEBVIEW_NEARBY_BUTTONS_FEATURE_GATE",
+		{
+			rolloutPercentage: 100;
+			status: 1;
+			subFeatureGateList: [
+				{
+					name: "RAIDS";
+					rolloutPercentage: 100;
+					status: 1;
+				},
+				{
+					name: "STATIONS";
+					rolloutPercentage: 100;
+					status: 1;
+				},
+				{
+					name: "ROUTES";
+					rolloutPercentage: 100;
+					status: 1;
+				},
+			];
 		}
 	>
 >;
@@ -79,6 +148,7 @@ export type FeatureGateMega2026 = S<
 	FeatureGate<
 		"MEGA_2026_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 216426293;
 			subFeatureGateList: [
 				{
@@ -123,17 +193,28 @@ export type FeatureGateMega2026 = S<
 				},
 				{
 					name: "MEGA_LEVEL_SPEEDUP_SUB_FEATURE_GATE";
+					rolloutPercentage: 100;
 					status: 344171892;
 				},
 			];
 		}
 	>
 >;
-export type FeatureGateStoreRefresh = S<
+export type FeatureGateSeafGetMapObjectsRateLimiter = S<
 	FeatureGate<
-		"STORE_REFRESH_FEATURE_GATE",
+		"SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE",
 		{
-			status: 87970808;
+			rolloutPercentage: 100;
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateUpdateTicketsString = S<
+	FeatureGate<
+		"UPDATE_TICKETS_STRING_FEATURE_GATE",
+		{
+			rolloutPercentage: 100;
+			status: 29825861;
 		}
 	>
 >;
@@ -141,6 +222,7 @@ export type FeatureGateVnextPreResponseInputBlockingBehavior = S<
 	FeatureGate<
 		"VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 			subFeatureGateList: [
 				{
@@ -159,12 +241,17 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateAmsFrontend
 	| FeatureGateDayNightPoi
 	| FeatureGateEnablePvpChallengeSpanner
+	| FeatureGateEnhancedCurrencyOverflowStardust
+	| FeatureGateEventList
 	| FeatureGateEventPassBonusRanks
 	| FeatureGateEventPassClaimableRewardToggle
 	| FeatureGateEventPassMilestoneRewards
-	| FeatureGateHealToast
+	| FeatureGateEventTicketDatetimeRange
+	| FeatureGateFriendshipResyncOnRead
+	| FeatureGateGamesiteWebviewNearbyButtons
 	| FeatureGateMega2026
-	| FeatureGateStoreRefresh
+	| FeatureGateSeafGetMapObjectsRateLimiter
+	| FeatureGateUpdateTicketsString
 	| FeatureGateVnextPreResponseInputBlockingBehavior;
 
 export type FeatureGateTemplateID = FeatureGateMasterfileEntry["templateId"];

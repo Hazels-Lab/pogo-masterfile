@@ -31,7 +31,7 @@ export interface IapCategoryDisplayData {
 	displayRows?: number;
 	hidden?: boolean;
 	imageUrl?:
-		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGOAvatar_HammerPose_1024%20x%20512%20no%20logo.jpg"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F243f9324_PGO_Gholdengo_Avatar_Item-nologo.jpg"
 		| "https://storage.googleapis.com/prod-public-images/GOFestFinaleTicket.jpg";
 	name?: "REWARDED_SPEND_MONTHLY_REWARD_ROAD_KEY" | "shop_category_global_events" | "shop_sticker";
 	sortOrder?: number;

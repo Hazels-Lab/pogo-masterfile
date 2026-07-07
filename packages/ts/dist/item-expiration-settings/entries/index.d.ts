@@ -66,8 +66,8 @@ export type ItemExpirationSettingsEventPassPointLiveOps03 = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_LIVE_OPS_03",
 		{
-			emergencyExpirationTime: "2026-03-07T10:00:00";
-			expirationTime: "2026-03-05T10:00:00";
+			emergencyExpirationTime: "2026-06-13T10:00:00";
+			expirationTime: "2026-06-12T20:00:00";
 		}
 	>
 >;
@@ -84,8 +84,8 @@ export type ItemExpirationSettingsEventPassPointLiveOps05 = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_LIVE_OPS_05",
 		{
-			emergencyExpirationTime: "2026-03-27T10:00:00";
-			expirationTime: "2026-03-25T20:00:00";
+			emergencyExpirationTime: "2026-06-20T10:00:00";
+			expirationTime: "2026-06-19T20:00:00";
 		}
 	>
 >;
@@ -93,8 +93,8 @@ export type ItemExpirationSettingsEventPassPointLiveOps06 = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_LIVE_OPS_06",
 		{
-			emergencyExpirationTime: "2026-04-10T10:00:00";
-			expirationTime: "2026-04-08T20:00:00";
+			emergencyExpirationTime: "2026-07-04T10:00:00";
+			expirationTime: "2026-07-03T20:00:00";
 		}
 	>
 >;
@@ -102,8 +102,8 @@ export type ItemExpirationSettingsEventPassPointLiveOps07 = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_LIVE_OPS_07",
 		{
-			emergencyExpirationTime: "2026-04-25T10:00:00";
-			expirationTime: "2026-04-24T20:00:00";
+			emergencyExpirationTime: "2026-07-25T10:00:00";
+			expirationTime: "2026-07-24T20:00:00";
 		}
 	>
 >;
@@ -129,8 +129,8 @@ export type ItemExpirationSettingsEventPassPointMonthly02 = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_MONTHLY_02",
 		{
-			emergencyExpirationTime: "2026-05-09T10:00:00";
-			expirationTime: "2026-05-07T10:00:00";
+			emergencyExpirationTime: "2026-08-08T10:00:00";
+			expirationTime: "2026-08-06T10:00:00";
 		}
 	>
 >;
@@ -147,7 +147,7 @@ export type ItemExpirationSettingsIncubatorTimed = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_INCUBATOR_TIMED",
 		{
-			expirationTime: "2026-01-13T10:00:00";
+			expirationTime: "2026-07-14T10:00:00";
 		}
 	>
 >;
@@ -155,7 +155,7 @@ export type ItemExpirationSettingsLuckyFriendApplicator = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_LUCKY_FRIEND_APPLICATOR",
 		{
-			expirationTime: "2026-03-08T23:59:59";
+			expirationTime: "2026-07-19T23:59:59";
 		}
 	>
 >;

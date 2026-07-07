@@ -19,10 +19,17 @@ import type {
 	StickerMetadata9anniv1,
 	StickerMetadata9anniv2,
 	StickerMetadata9anniv3,
+	StickerMetadata10anniv1,
+	StickerMetadata10anniv2,
 	StickerMetadata2023collab1,
 	StickerMetadata2023collab2,
 	StickerMetadata2023collab3,
 	StickerMetadata2023collab4,
+	StickerMetadataAcornPartnership1,
+	StickerMetadataAcornPartnership2,
+	StickerMetadataAcornPartnership3,
+	StickerMetadataAcornPartnership4,
+	StickerMetadataAcornPartnership5,
 	StickerMetadataAlolaishi1,
 	StickerMetadataAlolaishi2,
 	StickerMetadataAlolaishi3,
@@ -536,6 +543,10 @@ import type {
 	StickerMetadataSummer20252,
 	StickerMetadataSummer20253,
 	StickerMetadataSummer20254,
+	StickerMetadataSummer20261,
+	StickerMetadataSummer20262,
+	StickerMetadataSummer20263,
+	StickerMetadataSummer20264,
 	StickerMetadataSwordshield211,
 	StickerMetadataSwordshield212,
 	StickerMetadataSwordshield213,
@@ -628,10 +639,17 @@ export interface StickerMetadataLookup {
 	STICKER_9ANNIV_1: StickerMetadata9anniv1;
 	STICKER_9ANNIV_2: StickerMetadata9anniv2;
 	STICKER_9ANNIV_3: StickerMetadata9anniv3;
+	STICKER_10ANNIV_1: StickerMetadata10anniv1;
+	STICKER_10ANNIV_2: StickerMetadata10anniv2;
 	STICKER_2023COLLAB_1: StickerMetadata2023collab1;
 	STICKER_2023COLLAB_2: StickerMetadata2023collab2;
 	STICKER_2023COLLAB_3: StickerMetadata2023collab3;
 	STICKER_2023COLLAB_4: StickerMetadata2023collab4;
+	STICKER_ACORN_PARTNERSHIP_1: StickerMetadataAcornPartnership1;
+	STICKER_ACORN_PARTNERSHIP_2: StickerMetadataAcornPartnership2;
+	STICKER_ACORN_PARTNERSHIP_3: StickerMetadataAcornPartnership3;
+	STICKER_ACORN_PARTNERSHIP_4: StickerMetadataAcornPartnership4;
+	STICKER_ACORN_PARTNERSHIP_5: StickerMetadataAcornPartnership5;
 	STICKER_ALOLAISHI_1: StickerMetadataAlolaishi1;
 	STICKER_ALOLAISHI_2: StickerMetadataAlolaishi2;
 	STICKER_ALOLAISHI_3: StickerMetadataAlolaishi3;
@@ -1145,6 +1163,10 @@ export interface StickerMetadataLookup {
 	STICKER_SUMMER_2025_2: StickerMetadataSummer20252;
 	STICKER_SUMMER_2025_3: StickerMetadataSummer20253;
 	STICKER_SUMMER_2025_4: StickerMetadataSummer20254;
+	STICKER_SUMMER_2026_1: StickerMetadataSummer20261;
+	STICKER_SUMMER_2026_2: StickerMetadataSummer20262;
+	STICKER_SUMMER_2026_3: StickerMetadataSummer20263;
+	STICKER_SUMMER_2026_4: StickerMetadataSummer20264;
 	STICKER_SWORDSHIELD21_1: StickerMetadataSwordshield211;
 	STICKER_SWORDSHIELD21_2: StickerMetadataSwordshield212;
 	STICKER_SWORDSHIELD21_3: StickerMetadataSwordshield213;

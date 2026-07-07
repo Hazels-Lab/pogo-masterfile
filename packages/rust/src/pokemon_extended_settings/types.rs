@@ -1,13 +1,6 @@
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(untagged)]
-pub enum BreadModeValue {
-    Uint(u64),
-    String(String),
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct Camera {
     pub cylinder_ground_m: Option<f64>,
@@ -80,7 +73,7 @@ pub struct SizeSettings {
 pub struct BreadOverrides {
     pub average_height_m: Option<f64>,
     pub average_weight_kg: Option<f64>,
-    pub bread_mode: Option<BreadModeValue>,
+    pub bread_mode: Option<String>,
     pub camera: Option<Camera>,
     pub catch_override_settings: Option<CatchOverrideSettings>,
     pub max_battle_trainer_visual_settings: Option<MaxBattleTrainerVisualSettings>,

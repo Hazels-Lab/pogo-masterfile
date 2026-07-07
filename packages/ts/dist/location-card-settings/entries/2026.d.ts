@@ -1,8 +1,16 @@
-// Generated from Pokémon GO masterfile — group "locationCardSettings", split "2026", 21 entries.
+// Generated from Pokémon GO masterfile — group "locationCardSettings", split "2026", 22 entries.
 
 import type { S } from "../../_utils";
 import type { LocationCardSettings } from "../types";
 
+export type LocationCardSettings2026Br001 = S<
+	LocationCardSettings<
+		"LC_2026_BR_001",
+		{
+			imageUrl: "lc_2026_br_001";
+		}
+	>
+>;
 export type LocationCardSettings2026ChicagoGofest001 = S<
 	LocationCardSettings<
 		"LC_2026_CHICAGO_GOFEST_001",
@@ -58,7 +66,7 @@ export type LocationCardSettings2026Npb003 = S<
 	LocationCardSettings<
 		"LC_2026_NPB_003",
 		{
-			imageUrl: "lc_2026_ppk_001";
+			imageUrl: "lc_2026_NPB_tokyoSwallows";
 		}
 	>
 >;
@@ -90,7 +98,7 @@ export type LocationCardSettings2026Npb007 = S<
 	LocationCardSettings<
 		"LC_2026_NPB_007",
 		{
-			imageUrl: "lc_2026_ppk_001";
+			imageUrl: "lc_2026_NPB_toyamaAllstars";
 		}
 	>
 >;
@@ -130,7 +138,7 @@ export type LocationCardSettings2026Npb012 = S<
 	LocationCardSettings<
 		"LC_2026_NPB_012",
 		{
-			imageUrl: "lc_2026_ppk_001";
+			imageUrl: "lc_2026_NPB_chunichiDragons";
 		}
 	>
 >;
@@ -138,7 +146,7 @@ export type LocationCardSettings2026Npb013 = S<
 	LocationCardSettings<
 		"LC_2026_NPB_013",
 		{
-			imageUrl: "lc_2026_ppk_001";
+			imageUrl: "lc_2026_NPB_hokkaidoFighters";
 		}
 	>
 >;
@@ -178,6 +186,7 @@ export type LocationCardSettings2026TokyoGofest001 = S<
 >;
 
 export type LocationCardSettings2026MasterfileEntry =
+	| LocationCardSettings2026Br001
 	| LocationCardSettings2026ChicagoGofest001
 	| LocationCardSettings2026CologneCarnival001
 	| LocationCardSettings2026CopenhagenGofest001

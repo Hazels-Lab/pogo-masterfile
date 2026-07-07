@@ -120,6 +120,7 @@ const (
 	MoveSequenceSettingsTemplateIDSequenceGigaImpact            MoveSequenceSettingsTemplateID = "sequence_giga_impact"
 	MoveSequenceSettingsTemplateIDSequenceGigatonHammer         MoveSequenceSettingsTemplateID = "sequence_gigaton_hammer"
 	MoveSequenceSettingsTemplateIDSequenceGlaciate              MoveSequenceSettingsTemplateID = "sequence_glaciate"
+	MoveSequenceSettingsTemplateIDSequenceGlaiveRush            MoveSequenceSettingsTemplateID = "sequence_glaive_rush"
 	MoveSequenceSettingsTemplateIDSequenceGrassKnot             MoveSequenceSettingsTemplateID = "sequence_grass_knot"
 	MoveSequenceSettingsTemplateIDSequenceGunkShot              MoveSequenceSettingsTemplateID = "sequence_gunk_shot"
 	MoveSequenceSettingsTemplateIDSequenceGustFast              MoveSequenceSettingsTemplateID = "sequence_gust_fast"
@@ -275,6 +276,7 @@ const (
 	MoveSequenceSettingsTemplateIDSequenceSmackDown             MoveSequenceSettingsTemplateID = "sequence_smack_down"
 	MoveSequenceSettingsTemplateIDSequenceSmackDownFast         MoveSequenceSettingsTemplateID = "sequence_smack_down_fast"
 	MoveSequenceSettingsTemplateIDSequenceSnarlFast             MoveSequenceSettingsTemplateID = "sequence_snarl_fast"
+	MoveSequenceSettingsTemplateIDSequenceSnipeShot             MoveSequenceSettingsTemplateID = "sequence_snipe_shot"
 	MoveSequenceSettingsTemplateIDSequenceSolarBeam             MoveSequenceSettingsTemplateID = "sequence_solar_beam"
 	MoveSequenceSettingsTemplateIDSequenceSpacialRend           MoveSequenceSettingsTemplateID = "sequence_spacial_rend"
 	MoveSequenceSettingsTemplateIDSequenceSparkFast             MoveSequenceSettingsTemplateID = "sequence_spark_fast"
@@ -455,6 +457,7 @@ var MoveSequenceSettingsTemplateIDValues = [...]MoveSequenceSettingsTemplateID{
 	MoveSequenceSettingsTemplateIDSequenceGigaImpact,
 	MoveSequenceSettingsTemplateIDSequenceGigatonHammer,
 	MoveSequenceSettingsTemplateIDSequenceGlaciate,
+	MoveSequenceSettingsTemplateIDSequenceGlaiveRush,
 	MoveSequenceSettingsTemplateIDSequenceGrassKnot,
 	MoveSequenceSettingsTemplateIDSequenceGunkShot,
 	MoveSequenceSettingsTemplateIDSequenceGustFast,
@@ -610,6 +613,7 @@ var MoveSequenceSettingsTemplateIDValues = [...]MoveSequenceSettingsTemplateID{
 	MoveSequenceSettingsTemplateIDSequenceSmackDown,
 	MoveSequenceSettingsTemplateIDSequenceSmackDownFast,
 	MoveSequenceSettingsTemplateIDSequenceSnarlFast,
+	MoveSequenceSettingsTemplateIDSequenceSnipeShot,
 	MoveSequenceSettingsTemplateIDSequenceSolarBeam,
 	MoveSequenceSettingsTemplateIDSequenceSpacialRend,
 	MoveSequenceSettingsTemplateIDSequenceSparkFast,

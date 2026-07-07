@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 845 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 844 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -1488,22 +1488,6 @@ export type PokemonExtendedSettingsV0148PokemonDragonair = S<
 				xxsLowerBound: 1.96;
 			};
 			uniqueId: "DRAGONAIR";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0150PokemonMewtwo = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0150_POKEMON_MEWTWO",
-		{
-			sizeSettings: {
-				mLowerBound: 1.5;
-				mUpperBound: 2.5;
-				xlUpperBound: 3;
-				xsLowerBound: 1;
-				xxlUpperBound: 3.5;
-				xxsLowerBound: 0.98;
-			};
-			uniqueId: "MEWTWO";
 		}
 	>
 >;
@@ -13633,7 +13617,6 @@ export type PokemonExtendedSettingsMiscMasterfileEntry =
 	| PokemonExtendedSettingsV0137PokemonPorygon
 	| PokemonExtendedSettingsV0147PokemonDratini
 	| PokemonExtendedSettingsV0148PokemonDragonair
-	| PokemonExtendedSettingsV0150PokemonMewtwo
 	| PokemonExtendedSettingsV0151PokemonMew
 	| PokemonExtendedSettingsV0152PokemonChikorita
 	| PokemonExtendedSettingsV0153PokemonBayleef

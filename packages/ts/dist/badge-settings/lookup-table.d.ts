@@ -43,6 +43,7 @@ import type {
 	BadgeSettingsCityExplorerPass01,
 	BadgeSettingsCityExplorerPass02,
 	BadgeSettingsCityExplorerPass03,
+	BadgeSettingsCr2026001,
 	BadgeSettingsEvent0001,
 	BadgeSettingsEvent0002,
 	BadgeSettingsEvent0003,
@@ -148,12 +149,35 @@ import type {
 	BadgeSettingsEvent0188,
 	BadgeSettingsEvent0189,
 	BadgeSettingsEvent0190,
+	BadgeSettingsEvent0191,
 	BadgeSettingsEvent0193,
 	BadgeSettingsEvent0194,
 	BadgeSettingsEvent0195,
 	BadgeSettingsEvent0196,
+	BadgeSettingsEvent0197,
+	BadgeSettingsEvent0199,
 	BadgeSettingsEvent0200,
+	BadgeSettingsEvent0202,
+	BadgeSettingsEvent0203,
 	BadgeSettingsEvent0205,
+	BadgeSettingsEvent0206,
+	BadgeSettingsEvent0207,
+	BadgeSettingsEvent0211,
+	BadgeSettingsEvent0212,
+	BadgeSettingsEvent0213,
+	BadgeSettingsEvent0214,
+	BadgeSettingsEvent0215,
+	BadgeSettingsEvent0216,
+	BadgeSettingsEvent0217,
+	BadgeSettingsEvent0218,
+	BadgeSettingsEvent0219,
+	BadgeSettingsEvent0220,
+	BadgeSettingsEvent0221,
+	BadgeSettingsEvent0222,
+	BadgeSettingsEvent0223,
+	BadgeSettingsEvent0224,
+	BadgeSettingsEvent0225,
+	BadgeSettingsEvent0234,
 	BadgeSettingsEvent0279,
 	BadgeSettingsEvent0280,
 	BadgeSettingsEvolvedTotal,
@@ -1015,6 +1039,7 @@ export interface BadgeSettingsLookup {
 	BADGE_CITY_EXPLORER_PASS_01: BadgeSettingsCityExplorerPass01;
 	BADGE_CITY_EXPLORER_PASS_02: BadgeSettingsCityExplorerPass02;
 	BADGE_CITY_EXPLORER_PASS_03: BadgeSettingsCityExplorerPass03;
+	BADGE_CR_2026_001: BadgeSettingsCr2026001;
 	BADGE_EVENT_0001: BadgeSettingsEvent0001;
 	BADGE_EVENT_0002: BadgeSettingsEvent0002;
 	BADGE_EVENT_0003: BadgeSettingsEvent0003;
@@ -1120,12 +1145,35 @@ export interface BadgeSettingsLookup {
 	BADGE_EVENT_0188: BadgeSettingsEvent0188;
 	BADGE_EVENT_0189: BadgeSettingsEvent0189;
 	BADGE_EVENT_0190: BadgeSettingsEvent0190;
+	BADGE_EVENT_0191: BadgeSettingsEvent0191;
 	BADGE_EVENT_0193: BadgeSettingsEvent0193;
 	BADGE_EVENT_0194: BadgeSettingsEvent0194;
 	BADGE_EVENT_0195: BadgeSettingsEvent0195;
 	BADGE_EVENT_0196: BadgeSettingsEvent0196;
+	BADGE_EVENT_0197: BadgeSettingsEvent0197;
+	BADGE_EVENT_0199: BadgeSettingsEvent0199;
 	BADGE_EVENT_0200: BadgeSettingsEvent0200;
+	BADGE_EVENT_0202: BadgeSettingsEvent0202;
+	BADGE_EVENT_0203: BadgeSettingsEvent0203;
 	BADGE_EVENT_0205: BadgeSettingsEvent0205;
+	BADGE_EVENT_0206: BadgeSettingsEvent0206;
+	BADGE_EVENT_0207: BadgeSettingsEvent0207;
+	BADGE_EVENT_0211: BadgeSettingsEvent0211;
+	BADGE_EVENT_0212: BadgeSettingsEvent0212;
+	BADGE_EVENT_0213: BadgeSettingsEvent0213;
+	BADGE_EVENT_0214: BadgeSettingsEvent0214;
+	BADGE_EVENT_0215: BadgeSettingsEvent0215;
+	BADGE_EVENT_0216: BadgeSettingsEvent0216;
+	BADGE_EVENT_0217: BadgeSettingsEvent0217;
+	BADGE_EVENT_0218: BadgeSettingsEvent0218;
+	BADGE_EVENT_0219: BadgeSettingsEvent0219;
+	BADGE_EVENT_0220: BadgeSettingsEvent0220;
+	BADGE_EVENT_0221: BadgeSettingsEvent0221;
+	BADGE_EVENT_0222: BadgeSettingsEvent0222;
+	BADGE_EVENT_0223: BadgeSettingsEvent0223;
+	BADGE_EVENT_0224: BadgeSettingsEvent0224;
+	BADGE_EVENT_0225: BadgeSettingsEvent0225;
+	BADGE_EVENT_0234: BadgeSettingsEvent0234;
 	BADGE_EVENT_0279: BadgeSettingsEvent0279;
 	BADGE_EVENT_0280: BadgeSettingsEvent0280;
 	BADGE_EVOLVED_TOTAL: BadgeSettingsEvolvedTotal;

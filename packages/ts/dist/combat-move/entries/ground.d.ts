@@ -20,7 +20,7 @@ export type CombatMoveV0031MoveEarthquake = S<
 		"COMBAT_V0031_MOVE_EARTHQUAKE",
 		{
 			energyDelta: -65;
-			power: 110;
+			power: 120;
 			type: "POKEMON_TYPE_GROUND";
 			uniqueId: "EARTHQUAKE";
 			vfxName: "earthquake";
@@ -31,8 +31,8 @@ export type CombatMoveV0046MoveDrillRun = S<
 	CombatMove<
 		"COMBAT_V0046_MOVE_DRILL_RUN",
 		{
-			energyDelta: -45;
-			power: 80;
+			energyDelta: -40;
+			power: 70;
 			type: "POKEMON_TYPE_GROUND";
 			uniqueId: "DRILL_RUN";
 			vfxName: "drill_run";
@@ -141,7 +141,7 @@ export type CombatMoveV0304MoveEarthPower = S<
 				buffActivationChance: 0.1;
 				targetDefenseStatStageChange: -1;
 			};
-			energyDelta: -55;
+			energyDelta: -50;
 			power: 90;
 			type: "POKEMON_TYPE_GROUND";
 			uniqueId: "EARTH_POWER";

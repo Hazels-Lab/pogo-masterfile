@@ -2,8 +2,6 @@
 
 package pokemon_extended_settings
 
-import "encoding/json"
-
 type PokemonExtendedSettingsCamera struct {
 	CylinderGroundM *float64 `json:"cylinderGroundM,omitempty"`
 	CylinderHeightM float64  `json:"cylinderHeightM"`
@@ -59,7 +57,7 @@ type PokemonExtendedSettingsSizeSettings struct {
 type PokemonExtendedSettingsBreadOverrides struct {
 	AverageHeightM                   *float64                                                 `json:"averageHeightM,omitempty"`
 	AverageWeightKg                  *float64                                                 `json:"averageWeightKg,omitempty"`
-	BreadMode                        json.RawMessage                                          `json:"breadMode,omitempty"`
+	BreadMode                        *string                                                  `json:"breadMode,omitempty"`
 	Camera                           *PokemonExtendedSettingsCamera                           `json:"camera,omitempty"`
 	CatchOverrideSettings            *PokemonExtendedSettingsCatchOverrideSettings            `json:"catchOverrideSettings,omitempty"`
 	MaxBattleTrainerVisualSettings   *PokemonExtendedSettingsMaxBattleTrainerVisualSettings   `json:"maxBattleTrainerVisualSettings,omitempty"`

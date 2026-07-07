@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSettings", split "water", 34 entries.
+// Generated from Pokémon GO masterfile — group "moveSettings", split "water", 35 entries.
 
 import type { S } from "../../_utils";
 import type { MoveSettings } from "../types";
@@ -541,6 +541,25 @@ export type MoveSettingsV0488MoveChillingWater = S<
 		}
 	>
 >;
+export type MoveSettingsV0592MoveSnipeShot = S<
+	MoveSettings<
+		"V0592_MOVE_SNIPE_SHOT",
+		{
+			animationId: 5;
+			damageWindowEndMs: 2900;
+			damageWindowStartMs: 2000;
+			durationMs: 3500;
+			energyDelta: -33;
+			movementId: "SNIPE_SHOT";
+			pokemonType: "POKEMON_TYPE_WATER";
+			power: 100;
+			staminaLossScalar: 0.01;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "snipe_shot";
+		}
+	>
+>;
 export type MoveSettingsVnBm009 = S<
 	MoveSettings<
 		"VN_BM_009",
@@ -679,6 +698,7 @@ export type MoveSettingsWaterMasterfileEntry =
 	| MoveSettingsV0463MoveSparklingAria
 	| MoveSettingsV0487MoveAquaStep
 	| MoveSettingsV0488MoveChillingWater
+	| MoveSettingsV0592MoveSnipeShot
 	| MoveSettingsVnBm009
 	| MoveSettingsVnBm025
 	| MoveSettingsVnBm033

@@ -5,11 +5,11 @@ package event_pass_settings
 type EventPassSettingsTemplateID string
 
 const (
-	EventPassSettingsTemplateIDEventPassMay2026Season           EventPassSettingsTemplateID = "EVENT_PASS_MAY2026_SEASON"
-	EventPassSettingsTemplateIDEventPassSpringmarathon2026Event EventPassSettingsTemplateID = "EVENT_PASS_SPRINGMARATHON2026_EVENT"
+	EventPassSettingsTemplateIDEventPassGofest2026Global EventPassSettingsTemplateID = "EVENT_PASS_GOFEST2026_GLOBAL"
+	EventPassSettingsTemplateIDEventPassJune2026Season   EventPassSettingsTemplateID = "EVENT_PASS_JUNE2026_SEASON"
 )
 
 var EventPassSettingsTemplateIDValues = [...]EventPassSettingsTemplateID{
-	EventPassSettingsTemplateIDEventPassMay2026Season,
-	EventPassSettingsTemplateIDEventPassSpringmarathon2026Event,
+	EventPassSettingsTemplateIDEventPassGofest2026Global,
+	EventPassSettingsTemplateIDEventPassJune2026Season,
 }

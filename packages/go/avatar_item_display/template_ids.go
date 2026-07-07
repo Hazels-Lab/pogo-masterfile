@@ -270,6 +270,8 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNGradientTesteye1                    AvatarItemDisplayTemplateID = "N_DISPLAY_n_gradient_testeye_1"
 	AvatarItemDisplayTemplateIDNDisplayNGradientTesthair0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_gradient_testhair_0"
 	AvatarItemDisplayTemplateIDNDisplayNGradientTesthair1                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_gradient_testhair_1"
+	AvatarItemDisplayTemplateIDNDisplayNHairBlanche                         AvatarItemDisplayTemplateID = "N_DISPLAY_n_hair_blanche"
+	AvatarItemDisplayTemplateIDNDisplayNHairCandela                         AvatarItemDisplayTemplateID = "N_DISPLAY_n_hair_candela"
 	AvatarItemDisplayTemplateIDNDisplayNHairCoilyshort0                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_hair_coilyshort_0"
 	AvatarItemDisplayTemplateIDNDisplayNHairCurlymedium0                    AvatarItemDisplayTemplateID = "N_DISPLAY_n_hair_curlymedium_0"
 	AvatarItemDisplayTemplateIDNDisplayNHairDefaultA0                       AvatarItemDisplayTemplateID = "N_DISPLAY_n_hair_default_a_0"
@@ -282,6 +284,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNHairMohawk00                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_hair_mohawk-0_0"
 	AvatarItemDisplayTemplateIDNDisplayNHairMohawk10                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_hair_mohawk-1_0"
 	AvatarItemDisplayTemplateIDNDisplayNHairMorgrem0                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_hair_morgrem_0"
+	AvatarItemDisplayTemplateIDNDisplayNHairSpark                           AvatarItemDisplayTemplateID = "N_DISPLAY_n_hair_spark"
 	AvatarItemDisplayTemplateIDNDisplayNHairStraightlong0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_hair_straightlong_0"
 	AvatarItemDisplayTemplateIDNDisplayNHairStraightmedium0                 AvatarItemDisplayTemplateID = "N_DISPLAY_n_hair_straightmedium_0"
 	AvatarItemDisplayTemplateIDNDisplayNHairStraightshort0                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_hair_straightshort_0"
@@ -296,6 +299,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNHat6thanniversaryB0                 AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_6thanniversary_b_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatAcetrainersmA0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_acetrainersm_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatAcetrainersmB0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_acetrainersm_b_0"
+	AvatarItemDisplayTemplateIDNDisplayNHatAcorn                            AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_acorn"
 	AvatarItemDisplayTemplateIDNDisplayNHatAdventure0                       AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_adventure_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatAlolanexeggutorhat0              AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_alolanexeggutorhat_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatApplinitems0                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_applinitems_0"
@@ -315,6 +319,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNHatCrownmoon0                       AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_crownmoon_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatCrownsun0                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_crownsun_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatCubonehat0                       AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_cubonehat_0"
+	AvatarItemDisplayTemplateIDNDisplayNHatCynthia                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_cynthia"
 	AvatarItemDisplayTemplateIDNDisplayNHatDarumakahat0                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_darumakahat_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatDedenneitems0                    AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_dedenneitems_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatDefaultA0                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_default_a_0"
@@ -535,6 +540,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNPantsCasualB0                       AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_casual_b_0"
 	AvatarItemDisplayTemplateIDNDisplayNPantsCasualB1                       AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_casual_b_1"
 	AvatarItemDisplayTemplateIDNDisplayNPantsClay0                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_clay_0"
+	AvatarItemDisplayTemplateIDNDisplayNPantsCynthia                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_cynthia"
 	AvatarItemDisplayTemplateIDNDisplayNPantsDefaultA0                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_default_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNPantsDefaultA1                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_default_a_1"
 	AvatarItemDisplayTemplateIDNDisplayNPantsDefaultA2                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_default_a_2"
@@ -763,6 +769,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNPoseS19gbl                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_s19gbl"
 	AvatarItemDisplayTemplateIDNDisplayNPoseS20gbl                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_s20gbl"
 	AvatarItemDisplayTemplateIDNDisplayNPoseS22gbl                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_s22gbl"
+	AvatarItemDisplayTemplateIDNDisplayNPoseS23gbl                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_s23gbl"
 	AvatarItemDisplayTemplateIDNDisplayNPoseSustainability                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_sustainability"
 	AvatarItemDisplayTemplateIDNDisplayNPoseTeapot                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_teapot"
 	AvatarItemDisplayTemplateIDNDisplayNPoseTinkatonhammer                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_tinkatonhammer"
@@ -778,6 +785,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShirtAcetrainerbwB0                 AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_acetrainerbw_b_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtAcetrainersmA0                 AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_acetrainersm_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtAcetrainersmB0                 AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_acetrainersm_b_0"
+	AvatarItemDisplayTemplateIDNDisplayNShirtAcorn                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_acorn"
 	AvatarItemDisplayTemplateIDNDisplayNShirtAllister0                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_allister_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtAlolacomfey0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_alolacomfey_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtAnimegou0                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_animegou_0"
@@ -814,6 +822,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShirtConcierge0                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_concierge_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtCosmog0                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_cosmog_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtCowichansweater0               AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_cowichansweater_0"
+	AvatarItemDisplayTemplateIDNDisplayNShirtCynthia                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_cynthia"
 	AvatarItemDisplayTemplateIDNDisplayNShirtDayofdead0                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_dayofdead_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtDefaultA0                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_default_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtDefaultA1                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_default_a_1"
@@ -880,6 +889,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShirtGenderlessskirt0               AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_genderlessskirt_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGengar0                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gengar_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGengaronesie0                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gengaronesie_0"
+	AvatarItemDisplayTemplateIDNDisplayNShirtGholdengoitem                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gholdengoitem"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGiovanniA0                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_giovanni_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGiovanniB0                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_giovanni_b_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGiratinaitems0                 AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_giratinaitems_0"
@@ -963,6 +973,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShirtLapearloutfitB0                AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_lapearloutfit_b_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtLasecuritycorpsA0              AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_lasecuritycorps_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtLasecuritycorpsB0              AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_lasecuritycorps_b_0"
+	AvatarItemDisplayTemplateIDNDisplayNShirtLatamfootballshirt             AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_latamfootballshirt"
 	AvatarItemDisplayTemplateIDNDisplayNShirtLatiasLatios0                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_latias-latios_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtLegendofarceusA0               AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_legendofarceus_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtLegendofarceusB0               AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_legendofarceus_b_0"
@@ -982,6 +993,8 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShirtLysandre0                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_lysandre_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtMarshadowtshirt0               AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_marshadowtshirt_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtMegalopunnyitems0              AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_megalopunnyitems_0"
+	AvatarItemDisplayTemplateIDNDisplayNShirtMegamewtwox                    AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_megamewtwox"
+	AvatarItemDisplayTemplateIDNDisplayNShirtMegamewtwoy                    AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_megamewtwoy"
 	AvatarItemDisplayTemplateIDNDisplayNShirtMegarayquaza0                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_megarayquaza_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtMelmetaljacket0                AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_melmetaljacket_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtMelmetalvest0                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_melmetalvest_0"
@@ -991,6 +1004,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShirtMewtwoA0                       AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_mewtwo_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtMewtwoB0                       AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_mewtwo_b_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtMisty0                         AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_misty_0"
+	AvatarItemDisplayTemplateIDNDisplayNShirtMlb                            AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_mlb"
 	AvatarItemDisplayTemplateIDNDisplayNShirtMorpekofullonesie0             AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_morpekofullonesie_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtMorpekohangryonesie0           AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_morpekohangryonesie_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtMovie2020jessiejamesA0         AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_movie2020jessiejames_a_0"
@@ -1229,6 +1243,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShoesClay0                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_clay_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesClemont0                       AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_clemont_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesCoolboots0                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_coolboots_0"
+	AvatarItemDisplayTemplateIDNDisplayNShoesCynthia                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_cynthia"
 	AvatarItemDisplayTemplateIDNDisplayNShoesDedenneitems0                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_dedenneitems_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesDefaultA0                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_default_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesDefaultA1                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_default_a_1"
@@ -1421,6 +1436,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplaySetCofagrigusM                       AvatarItemDisplayTemplateID = "N_DISPLAY_set_cofagrigus_m"
 	AvatarItemDisplayTemplateIDNDisplaySetCosmogF                           AvatarItemDisplayTemplateID = "N_DISPLAY_set_cosmog_f"
 	AvatarItemDisplayTemplateIDNDisplaySetCosmogM                           AvatarItemDisplayTemplateID = "N_DISPLAY_set_cosmog_m"
+	AvatarItemDisplayTemplateIDNDisplaySetCynthia                           AvatarItemDisplayTemplateID = "N_DISPLAY_set_cynthia"
 	AvatarItemDisplayTemplateIDNDisplaySetDayofthedeadF                     AvatarItemDisplayTemplateID = "N_DISPLAY_set_dayofthedead_f"
 	AvatarItemDisplayTemplateIDNDisplaySetDayofthedeadM                     AvatarItemDisplayTemplateID = "N_DISPLAY_set_dayofthedead_m"
 	AvatarItemDisplayTemplateIDNDisplaySetDedenneitemsF                     AvatarItemDisplayTemplateID = "N_DISPLAY_set_dedenneitems_f"
@@ -1920,6 +1936,8 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNGradientTesteye1,
 	AvatarItemDisplayTemplateIDNDisplayNGradientTesthair0,
 	AvatarItemDisplayTemplateIDNDisplayNGradientTesthair1,
+	AvatarItemDisplayTemplateIDNDisplayNHairBlanche,
+	AvatarItemDisplayTemplateIDNDisplayNHairCandela,
 	AvatarItemDisplayTemplateIDNDisplayNHairCoilyshort0,
 	AvatarItemDisplayTemplateIDNDisplayNHairCurlymedium0,
 	AvatarItemDisplayTemplateIDNDisplayNHairDefaultA0,
@@ -1932,6 +1950,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNHairMohawk00,
 	AvatarItemDisplayTemplateIDNDisplayNHairMohawk10,
 	AvatarItemDisplayTemplateIDNDisplayNHairMorgrem0,
+	AvatarItemDisplayTemplateIDNDisplayNHairSpark,
 	AvatarItemDisplayTemplateIDNDisplayNHairStraightlong0,
 	AvatarItemDisplayTemplateIDNDisplayNHairStraightmedium0,
 	AvatarItemDisplayTemplateIDNDisplayNHairStraightshort0,
@@ -1946,6 +1965,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNHat6thanniversaryB0,
 	AvatarItemDisplayTemplateIDNDisplayNHatAcetrainersmA0,
 	AvatarItemDisplayTemplateIDNDisplayNHatAcetrainersmB0,
+	AvatarItemDisplayTemplateIDNDisplayNHatAcorn,
 	AvatarItemDisplayTemplateIDNDisplayNHatAdventure0,
 	AvatarItemDisplayTemplateIDNDisplayNHatAlolanexeggutorhat0,
 	AvatarItemDisplayTemplateIDNDisplayNHatApplinitems0,
@@ -1965,6 +1985,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNHatCrownmoon0,
 	AvatarItemDisplayTemplateIDNDisplayNHatCrownsun0,
 	AvatarItemDisplayTemplateIDNDisplayNHatCubonehat0,
+	AvatarItemDisplayTemplateIDNDisplayNHatCynthia,
 	AvatarItemDisplayTemplateIDNDisplayNHatDarumakahat0,
 	AvatarItemDisplayTemplateIDNDisplayNHatDedenneitems0,
 	AvatarItemDisplayTemplateIDNDisplayNHatDefaultA0,
@@ -2185,6 +2206,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNPantsCasualB0,
 	AvatarItemDisplayTemplateIDNDisplayNPantsCasualB1,
 	AvatarItemDisplayTemplateIDNDisplayNPantsClay0,
+	AvatarItemDisplayTemplateIDNDisplayNPantsCynthia,
 	AvatarItemDisplayTemplateIDNDisplayNPantsDefaultA0,
 	AvatarItemDisplayTemplateIDNDisplayNPantsDefaultA1,
 	AvatarItemDisplayTemplateIDNDisplayNPantsDefaultA2,
@@ -2413,6 +2435,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNPoseS19gbl,
 	AvatarItemDisplayTemplateIDNDisplayNPoseS20gbl,
 	AvatarItemDisplayTemplateIDNDisplayNPoseS22gbl,
+	AvatarItemDisplayTemplateIDNDisplayNPoseS23gbl,
 	AvatarItemDisplayTemplateIDNDisplayNPoseSustainability,
 	AvatarItemDisplayTemplateIDNDisplayNPoseTeapot,
 	AvatarItemDisplayTemplateIDNDisplayNPoseTinkatonhammer,
@@ -2428,6 +2451,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShirtAcetrainerbwB0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtAcetrainersmA0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtAcetrainersmB0,
+	AvatarItemDisplayTemplateIDNDisplayNShirtAcorn,
 	AvatarItemDisplayTemplateIDNDisplayNShirtAllister0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtAlolacomfey0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtAnimegou0,
@@ -2464,6 +2488,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShirtConcierge0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtCosmog0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtCowichansweater0,
+	AvatarItemDisplayTemplateIDNDisplayNShirtCynthia,
 	AvatarItemDisplayTemplateIDNDisplayNShirtDayofdead0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtDefaultA0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtDefaultA1,
@@ -2530,6 +2555,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShirtGenderlessskirt0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGengar0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGengaronesie0,
+	AvatarItemDisplayTemplateIDNDisplayNShirtGholdengoitem,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGiovanniA0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGiovanniB0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGiratinaitems0,
@@ -2613,6 +2639,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShirtLapearloutfitB0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtLasecuritycorpsA0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtLasecuritycorpsB0,
+	AvatarItemDisplayTemplateIDNDisplayNShirtLatamfootballshirt,
 	AvatarItemDisplayTemplateIDNDisplayNShirtLatiasLatios0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtLegendofarceusA0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtLegendofarceusB0,
@@ -2632,6 +2659,8 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShirtLysandre0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtMarshadowtshirt0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtMegalopunnyitems0,
+	AvatarItemDisplayTemplateIDNDisplayNShirtMegamewtwox,
+	AvatarItemDisplayTemplateIDNDisplayNShirtMegamewtwoy,
 	AvatarItemDisplayTemplateIDNDisplayNShirtMegarayquaza0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtMelmetaljacket0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtMelmetalvest0,
@@ -2641,6 +2670,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShirtMewtwoA0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtMewtwoB0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtMisty0,
+	AvatarItemDisplayTemplateIDNDisplayNShirtMlb,
 	AvatarItemDisplayTemplateIDNDisplayNShirtMorpekofullonesie0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtMorpekohangryonesie0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtMovie2020jessiejamesA0,
@@ -2879,6 +2909,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShoesClay0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesClemont0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesCoolboots0,
+	AvatarItemDisplayTemplateIDNDisplayNShoesCynthia,
 	AvatarItemDisplayTemplateIDNDisplayNShoesDedenneitems0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesDefaultA0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesDefaultA1,
@@ -3071,6 +3102,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplaySetCofagrigusM,
 	AvatarItemDisplayTemplateIDNDisplaySetCosmogF,
 	AvatarItemDisplayTemplateIDNDisplaySetCosmogM,
+	AvatarItemDisplayTemplateIDNDisplaySetCynthia,
 	AvatarItemDisplayTemplateIDNDisplaySetDayofthedeadF,
 	AvatarItemDisplayTemplateIDNDisplaySetDayofthedeadM,
 	AvatarItemDisplayTemplateIDNDisplaySetDedenneitemsF,

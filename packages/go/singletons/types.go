@@ -342,7 +342,7 @@ type BreadPokemonScalingSettingsBreadBattleVisualData struct {
 	Scale float64 `json:"scale"`
 }
 
-type BreadPokemonScalingSettingsBreadEncounterVisiualData struct {
+type BreadPokemonScalingSettingsBreadEncounterVisualData struct {
 	CameraDistance float64 `json:"cameraDistance"`
 	MaxReticleSize float64 `json:"maxReticleSize"`
 	Scale          float64 `json:"scale"`
@@ -351,7 +351,7 @@ type BreadPokemonScalingSettingsBreadEncounterVisiualData struct {
 type BreadPokemonScalingSettingsVisualData struct {
 	BreadBattleTrainerVisualData BreadPokemonScalingSettingsBreadBattleTrainerVisualData `json:"breadBattleTrainerVisualData"`
 	BreadBattleVisualData        BreadPokemonScalingSettingsBreadBattleVisualData        `json:"breadBattleVisualData"`
-	BreadEncounterVisiualData    BreadPokemonScalingSettingsBreadEncounterVisiualData    `json:"breadEncounterVisiualData"`
+	BreadEncounterVisualData     BreadPokemonScalingSettingsBreadEncounterVisualData     `json:"breadEncounterVisualData"`
 	BreadMode                    string                                                  `json:"breadMode"`
 	BreadStationVisualData       BreadPokemonScalingSettingsBreadBattleVisualData        `json:"breadStationVisualData"`
 }
@@ -374,7 +374,7 @@ type BreadPokemonScalingSettingsBreadBattleTrainerVisualDataV2 struct {
 type BreadPokemonScalingSettingsVisualDataV2 struct {
 	BreadBattleTrainerVisualData BreadPokemonScalingSettingsBreadBattleTrainerVisualDataV2 `json:"breadBattleTrainerVisualData"`
 	BreadBattleVisualData        BreadPokemonScalingSettingsBreadBattleVisualData          `json:"breadBattleVisualData"`
-	BreadEncounterVisiualData    BreadPokemonScalingSettingsBreadEncounterVisiualData      `json:"breadEncounterVisiualData"`
+	BreadEncounterVisualData     BreadPokemonScalingSettingsBreadEncounterVisualData       `json:"breadEncounterVisualData"`
 	BreadMode                    string                                                    `json:"breadMode"`
 	BreadStationVisualData       BreadPokemonScalingSettingsBreadBattleVisualData          `json:"breadStationVisualData"`
 }
@@ -387,7 +387,7 @@ type BreadPokemonScalingSettingsBreadBattleVisualDataV2 struct {
 type BreadPokemonScalingSettingsVisualDataV3 struct {
 	BreadBattleTrainerVisualData BreadPokemonScalingSettingsBreadBattleTrainerVisualDataV2 `json:"breadBattleTrainerVisualData"`
 	BreadBattleVisualData        BreadPokemonScalingSettingsBreadBattleVisualDataV2        `json:"breadBattleVisualData"`
-	BreadEncounterVisiualData    BreadPokemonScalingSettingsBreadEncounterVisiualData      `json:"breadEncounterVisiualData"`
+	BreadEncounterVisualData     BreadPokemonScalingSettingsBreadEncounterVisualData       `json:"breadEncounterVisualData"`
 	BreadMode                    string                                                    `json:"breadMode"`
 	BreadStationVisualData       BreadPokemonScalingSettingsBreadBattleVisualData          `json:"breadStationVisualData"`
 }
@@ -403,10 +403,10 @@ type BreadPokemonScalingSettingsVisualSettingsV2 struct {
 }
 
 type BreadPokemonScalingSettingsVisualDataV4 struct {
-	BreadBattleVisualData     BreadPokemonScalingSettingsBreadBattleVisualData     `json:"breadBattleVisualData"`
-	BreadEncounterVisiualData BreadPokemonScalingSettingsBreadEncounterVisiualData `json:"breadEncounterVisiualData"`
-	BreadMode                 string                                               `json:"breadMode"`
-	BreadStationVisualData    BreadPokemonScalingSettingsBreadBattleVisualData     `json:"breadStationVisualData"`
+	BreadBattleVisualData    BreadPokemonScalingSettingsBreadBattleVisualData    `json:"breadBattleVisualData"`
+	BreadEncounterVisualData BreadPokemonScalingSettingsBreadEncounterVisualData `json:"breadEncounterVisualData"`
+	BreadMode                string                                              `json:"breadMode"`
+	BreadStationVisualData   BreadPokemonScalingSettingsBreadBattleVisualData    `json:"breadStationVisualData"`
 }
 
 type BreadPokemonScalingSettingsBreadBattleVisualDataV3 struct {
@@ -417,7 +417,7 @@ type BreadPokemonScalingSettingsBreadBattleVisualDataV3 struct {
 type BreadPokemonScalingSettingsVisualDataV5 struct {
 	BreadBattleTrainerVisualData BreadPokemonScalingSettingsBreadBattleTrainerVisualData `json:"breadBattleTrainerVisualData"`
 	BreadBattleVisualData        BreadPokemonScalingSettingsBreadBattleVisualDataV3      `json:"breadBattleVisualData"`
-	BreadEncounterVisiualData    BreadPokemonScalingSettingsBreadEncounterVisiualData    `json:"breadEncounterVisiualData"`
+	BreadEncounterVisualData     BreadPokemonScalingSettingsBreadEncounterVisualData     `json:"breadEncounterVisualData"`
 	BreadMode                    string                                                  `json:"breadMode"`
 	BreadStationVisualData       BreadPokemonScalingSettingsBreadBattleVisualDataV3      `json:"breadStationVisualData"`
 }
@@ -451,10 +451,10 @@ type BreadPokemonScalingSettingsVisualSettingsV5 struct {
 }
 
 type BreadPokemonScalingSettingsVisualDataV6 struct {
-	BreadBattleVisualData     BreadPokemonScalingSettingsBreadBattleVisualDataV2   `json:"breadBattleVisualData"`
-	BreadEncounterVisiualData BreadPokemonScalingSettingsBreadEncounterVisiualData `json:"breadEncounterVisiualData"`
-	BreadMode                 string                                               `json:"breadMode"`
-	BreadStationVisualData    BreadPokemonScalingSettingsBreadBattleVisualData     `json:"breadStationVisualData"`
+	BreadBattleVisualData    BreadPokemonScalingSettingsBreadBattleVisualDataV2  `json:"breadBattleVisualData"`
+	BreadEncounterVisualData BreadPokemonScalingSettingsBreadEncounterVisualData `json:"breadEncounterVisualData"`
+	BreadMode                string                                              `json:"breadMode"`
+	BreadStationVisualData   BreadPokemonScalingSettingsBreadBattleVisualData    `json:"breadStationVisualData"`
 }
 
 type BreadPokemonScalingSettingsPokemonFormDataV6 struct {
@@ -469,7 +469,7 @@ type BreadPokemonScalingSettingsVisualSettingsV6 struct {
 type BreadPokemonScalingSettingsVisualDataV7 struct {
 	BreadBattleTrainerVisualData BreadPokemonScalingSettingsBreadBattleTrainerVisualData `json:"breadBattleTrainerVisualData"`
 	BreadBattleVisualData        BreadPokemonScalingSettingsBreadBattleVisualDataV2      `json:"breadBattleVisualData"`
-	BreadEncounterVisiualData    BreadPokemonScalingSettingsBreadEncounterVisiualData    `json:"breadEncounterVisiualData"`
+	BreadEncounterVisualData     BreadPokemonScalingSettingsBreadEncounterVisualData     `json:"breadEncounterVisualData"`
 	BreadMode                    string                                                  `json:"breadMode"`
 	BreadStationVisualData       BreadPokemonScalingSettingsBreadBattleVisualData        `json:"breadStationVisualData"`
 }
@@ -484,16 +484,16 @@ type BreadPokemonScalingSettingsVisualSettingsV7 struct {
 	PokemonId       string                                          `json:"pokemonId"`
 }
 
-type BreadPokemonScalingSettingsBreadEncounterVisiualDataV2 struct {
+type BreadPokemonScalingSettingsBreadEncounterVisualDataV2 struct {
 	CameraDistance float64 `json:"cameraDistance"`
 	Scale          float64 `json:"scale"`
 }
 
 type BreadPokemonScalingSettingsVisualDataV8 struct {
-	BreadBattleVisualData     BreadPokemonScalingSettingsBreadBattleVisualData       `json:"breadBattleVisualData"`
-	BreadEncounterVisiualData BreadPokemonScalingSettingsBreadEncounterVisiualDataV2 `json:"breadEncounterVisiualData"`
-	BreadMode                 string                                                 `json:"breadMode"`
-	BreadStationVisualData    BreadPokemonScalingSettingsBreadBattleVisualData       `json:"breadStationVisualData"`
+	BreadBattleVisualData    BreadPokemonScalingSettingsBreadBattleVisualData      `json:"breadBattleVisualData"`
+	BreadEncounterVisualData BreadPokemonScalingSettingsBreadEncounterVisualDataV2 `json:"breadEncounterVisualData"`
+	BreadMode                string                                                `json:"breadMode"`
+	BreadStationVisualData   BreadPokemonScalingSettingsBreadBattleVisualData      `json:"breadStationVisualData"`
 }
 
 type BreadPokemonScalingSettingsPokemonFormDataV8 struct {
@@ -513,7 +513,7 @@ type BreadPokemonScalingSettingsBreadBattleBossVisualData struct {
 
 type BreadPokemonScalingSettingsVisualDataV9 struct {
 	BreadBattleBossVisualData BreadPokemonScalingSettingsBreadBattleBossVisualData `json:"breadBattleBossVisualData"`
-	BreadMode                 uint64                                               `json:"breadMode"`
+	BreadMode                 string                                               `json:"breadMode"`
 }
 
 type BreadPokemonScalingSettingsPokemonFormDataV9 struct {
@@ -625,7 +625,7 @@ type CombatCompetitiveSeasonSettings struct {
 }
 
 type CombatLeagueSettings struct {
-	CombatLeagueTemplateId [3]string `json:"combatLeagueTemplateId"`
+	CombatLeagueTemplateId [4]string `json:"combatLeagueTemplateId"`
 }
 
 type CombatSettingsClockSyncSettings struct {
@@ -725,8 +725,6 @@ type ContestSettings struct {
 	IsContestInNearbyMenu               bool                                                  `json:"isContestInNearbyMenu"`
 	IsFeatureEnabled                    bool                                                  `json:"isFeatureEnabled"`
 	IsFriendsDisplayEnabled             bool                                                  `json:"isFriendsDisplayEnabled"`
-	IsNormalizedScoreToSpecies          bool                                                  `json:"isNormalizedScoreToSpecies"`
-	IsPokemonScalarEnabled              bool                                                  `json:"isPokemonScalarEnabled"`
 	IsV2featureEnabled                  bool                                                  `json:"isV2FeatureEnabled"`
 	IsV2focusesEnabled                  bool                                                  `json:"isV2FocusesEnabled"`
 	MaxCatchPromptRange                 float64                                               `json:"maxCatchPromptRange"`
@@ -943,7 +941,6 @@ type IrisSocialSettings struct {
 	GuidanceInCarThreshold                 float64    `json:"guidanceInCarThreshold"`
 	GuidancePathNearbyFinishDelayMs        float64    `json:"guidancePathNearbyFinishDelayMs"`
 	GuidancePathNearbyFinishDistanceMeters float64    `json:"guidancePathNearbyFinishDistanceMeters"`
-	IrisSocialEnabled                      bool       `json:"irisSocialEnabled"`
 	IrisSocialPoiDeactivationCooldownMs    string     `json:"irisSocialPoiDeactivationCooldownMs"`
 	LimitedLocalizationTimeoutDurationMs   string     `json:"limitedLocalizationTimeoutDurationMs"`
 	LimitedPokedexIds                      []string   `json:"limitedPokedexIds"`
@@ -957,6 +954,7 @@ type IrisSocialSettings struct {
 	MaxTimeBgModeBeforeExpulsionMs         string     `json:"maxTimeBgModeBeforeExpulsionMs"`
 	MaxTimeNoActivityPlayerInactiveMs      string     `json:"maxTimeNoActivityPlayerInactiveMs"`
 	MinBoundaryAreaSqMeters                float64    `json:"minBoundaryAreaSqMeters"`
+	MinVpsScore                            float64    `json:"minVpsScore"`
 	PokeballPingTimeDelayMs                float64    `json:"pokeballPingTimeDelayMs"`
 	PokemonExpireAfterMs                   string     `json:"pokemonExpireAfterMs"`
 	PokemonSpawnStaggerDurationMs          string     `json:"pokemonSpawnStaggerDurationMs"`
@@ -1048,7 +1046,8 @@ type MainMenuChanges struct {
 }
 
 type MapDisplaySettings struct {
-	ShowEnhancedSky bool `json:"showEnhancedSky"`
+	MapEffectName   string `json:"mapEffectName"`
+	ShowEnhancedSky bool   `json:"showEnhancedSky"`
 }
 
 type MapObjectsInteractionRangeSettings struct {
@@ -1430,9 +1429,6 @@ type PlayerLevelXpRewardV2thresholds struct {
 
 type PlayerLevel struct {
 	CpMultiplier                 []float64                       `json:"cpMultiplier"`
-	ExtendedPlayerLevelThreshold uint64                          `json:"extendedPlayerLevelThreshold"`
-	LevelRequirementsV2enabled   bool                            `json:"levelRequirementsV2Enabled"`
-	LevelUpScreenV3enabled       bool                            `json:"levelUpScreenV3Enabled"`
 	MaxEggPlayerLevel            uint64                          `json:"maxEggPlayerLevel"`
 	MaxEncounterPlayerLevel      uint64                          `json:"maxEncounterPlayerLevel"`
 	MaxQuestEncounterPlayerLevel uint64                          `json:"maxQuestEncounterPlayerLevel"`
@@ -1440,7 +1436,6 @@ type PlayerLevel struct {
 	RankNum                      []uint64                        `json:"rankNum"`
 	RequiredExperience           []uint64                        `json:"requiredExperience"`
 	SmoreFtueImageUrl            string                          `json:"smoreFtueImageUrl"`
-	XpRewardV2enabled            bool                            `json:"xpRewardV2Enabled"`
 	XpRewardV2thresholds         PlayerLevelXpRewardV2thresholds `json:"xpRewardV2Thresholds"`
 }
 
@@ -1647,7 +1642,6 @@ type RaidSettings struct {
 	BootSoloMs                            uint64                                 `json:"bootSoloMs"`
 	CanInviteFriendsInPerson              bool                                   `json:"canInviteFriendsInPerson"`
 	CanInviteFriendsRemotely              bool                                   `json:"canInviteFriendsRemotely"`
-	FailedFriendInviteInfoEnabled         bool                                   `json:"failedFriendInviteInfoEnabled"`
 	FetchProfileFromSocialEnabled         bool                                   `json:"fetchProfileFromSocialEnabled"`
 	FriendInviteCutoffTimeSec             uint64                                 `json:"friendInviteCutoffTimeSec"`
 	FriendRequestsEnabled                 bool                                   `json:"friendRequestsEnabled"`
@@ -1873,7 +1867,6 @@ type SponsoredGeofenceGiftSettings struct {
 
 type SquashSettings struct {
 	DailySquashLimit uint64 `json:"dailySquashLimit"`
-	Enabled          bool   `json:"enabled"`
 }
 
 type StampCollectionSettings struct {
@@ -2043,7 +2036,6 @@ type VsSeekerScheduleSettingsVsSeekerSchedulesV2 struct {
 }
 
 type VsSeekerScheduleSettingsSeasonSchedules struct {
-	BlogUrl           string `json:"blogUrl"`
 	DescriptionKey    string `json:"descriptionKey"`
 	SeasonTitle       string `json:"seasonTitle"`
 	VsSeekerSchedules []any  `json:"vsSeekerSchedules"`
@@ -3558,6 +3550,17 @@ func (SpecialEggSettingsEntry) MasterfileEntry() {}
 type SpecialEggSettingsEntryData struct {
 	TemplateID         string             `json:"templateId"`
 	SpecialEggSettings SpecialEggSettings `json:"specialEggSettings"`
+}
+
+type SpecialResearchVisualRefreshSettingsEntry struct {
+	TemplateID string                                        `json:"templateId"`
+	Data       SpecialResearchVisualRefreshSettingsEntryData `json:"data"`
+}
+
+func (SpecialResearchVisualRefreshSettingsEntry) MasterfileEntry() {}
+
+type SpecialResearchVisualRefreshSettingsEntryData struct {
+	TemplateID string `json:"templateId"`
 }
 
 type SponsoredGeofenceGiftSettingsEntry struct {

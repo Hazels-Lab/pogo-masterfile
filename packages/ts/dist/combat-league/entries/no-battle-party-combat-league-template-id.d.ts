@@ -17,7 +17,6 @@ export type CombatLeagueDefaultGreat = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -28,7 +27,6 @@ export type CombatLeagueDefaultGreat = S<
 				"ZACIAN",
 				"ZAMAZENTA",
 				"ENAMORUS",
-				"MIMIKYU",
 			];
 			iconUrl: "https://storage.googleapis.com/prod-public-images/pogo_great_league.png";
 			leagueType: "STANDARD";
@@ -50,7 +48,7 @@ export type CombatLeagueDefaultMaster = S<
 		{
 			allowTempEvos: true;
 			badgeType: "BADGE_MASTER_LEAGUE";
-			bannedPokemon: ["DITTO", "SHEDINJA", "MIMIKYU"];
+			bannedPokemon: ["DITTO", "SHEDINJA"];
 			iconUrl: "https://storage.googleapis.com/prod-public-images/pogo_master_league.png";
 			leagueType: "STANDARD";
 			pokemonCondition: [
@@ -111,7 +109,7 @@ export type CombatLeagueDefaultUltra = S<
 		{
 			allowTempEvos: true;
 			badgeType: "BADGE_ULTRA_LEAGUE";
-			bannedPokemon: ["DITTO", "SHEDINJA", "MIMIKYU"];
+			bannedPokemon: ["DITTO", "SHEDINJA"];
 			iconUrl: "https://storage.googleapis.com/prod-public-images/pogo_ultra_league.png";
 			leagueType: "STANDARD";
 			pokemonCondition: [

@@ -1429,7 +1429,7 @@ export type PokemonSettingsV0141PokemonKabutops = S<
 				diskRadiusM: 0.6825;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["ANCIENT_POWER", "WATER_PULSE", "STONE_EDGE"];
+			cinematicMoves: ["ANCIENT_POWER", "WATER_PULSE", "STONE_EDGE", "AQUA_JET"];
 			eliteQuickMove: ["FURY_CUTTER_FAST"];
 			encounter: {
 				attackProbability: 0.1;
@@ -1507,7 +1507,7 @@ export type PokemonSettingsV0141PokemonKabutopsNormal = S<
 				diskRadiusM: 0.6825;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["ANCIENT_POWER", "WATER_PULSE", "STONE_EDGE"];
+			cinematicMoves: ["ANCIENT_POWER", "WATER_PULSE", "STONE_EDGE", "AQUA_JET"];
 			eliteQuickMove: ["FURY_CUTTER_FAST"];
 			encounter: {
 				attackProbability: 0.1;
@@ -5249,7 +5249,7 @@ export type PokemonSettingsV0526PokemonGigalith = S<
 			pokedexHeightM: 1.7;
 			pokedexWeightKg: 260;
 			pokemonId: "GIGALITH";
-			quickMoves: ["MUD_SLAP_FAST", "SMACK_DOWN_FAST"];
+			quickMoves: ["MUD_SLAP_FAST", "SMACK_DOWN_FAST", "LOCK_ON_FAST"];
 			shadow: {
 				purificationCandyNeeded: 3;
 				purificationStardustNeeded: 3000;
@@ -5328,7 +5328,7 @@ export type PokemonSettingsV0526PokemonGigalithNormal = S<
 			pokedexHeightM: 1.7;
 			pokedexWeightKg: 260;
 			pokemonId: "GIGALITH";
-			quickMoves: ["MUD_SLAP_FAST", "SMACK_DOWN_FAST"];
+			quickMoves: ["MUD_SLAP_FAST", "SMACK_DOWN_FAST", "LOCK_ON_FAST"];
 			shadow: {
 				purificationCandyNeeded: 3;
 				purificationStardustNeeded: 3000;

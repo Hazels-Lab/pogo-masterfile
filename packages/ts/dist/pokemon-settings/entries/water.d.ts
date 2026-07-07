@@ -7,7 +7,7 @@ export type PokemonSettingsV0007PokemonSquirtle = S<
 	PokemonSettings<
 		"V0007_POKEMON_SQUIRTLE",
 		{
-			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE"];
+			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE", "SPRING_2020_NOEVOLVE"];
 			animationTime: [1.7333, 0.6667, 1.6667, 1.5, 0, 2.1667, 1, 1.333333];
 			breadTierGroup: "GROUP_1";
 			buddyGroupNumber: 2;
@@ -164,7 +164,7 @@ export type PokemonSettingsV0007PokemonSquirtleNormal = S<
 	PokemonSettings<
 		"V0007_POKEMON_SQUIRTLE_NORMAL",
 		{
-			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE"];
+			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE", "SPRING_2020_NOEVOLVE"];
 			animationTime: [1.7333, 0.6667, 1.6667, 1.5, 0, 2.1667, 1, 1.333333];
 			breadTierGroup: "GROUP_1";
 			buddyGroupNumber: 2;
@@ -248,7 +248,7 @@ export type PokemonSettingsV0008PokemonWartortle = S<
 	PokemonSettings<
 		"V0008_POKEMON_WARTORTLE",
 		{
-			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE"];
+			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE", "SPRING_2020_NOEVOLVE"];
 			animationTime: [2, 0.6667, 1.6667, 1.8333, 0, 1.8, 1.0667, 1.133333];
 			breadTierGroup: "GROUP_1";
 			buddyGroupNumber: 2;
@@ -335,7 +335,7 @@ export type PokemonSettingsV0008PokemonWartortleNormal = S<
 	PokemonSettings<
 		"V0008_POKEMON_WARTORTLE_NORMAL",
 		{
-			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE"];
+			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE", "SPRING_2020_NOEVOLVE"];
 			animationTime: [2, 0.6667, 1.6667, 1.8333, 0, 1.8, 1.0667, 1.133333];
 			breadTierGroup: "GROUP_1";
 			buddyGroupNumber: 2;
@@ -2570,10 +2570,14 @@ export type PokemonSettingsV0086PokemonSeel = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 10;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.5;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 50;
+					candyCostPurified: 45;
 					evolution: "DEWGONG";
 				},
 			];
@@ -2593,6 +2597,12 @@ export type PokemonSettingsV0086PokemonSeel = S<
 			pokedexWeightKg: 90;
 			pokemonId: "SEEL";
 			quickMoves: ["ICE_SHARD_FAST", "LICK_FAST"];
+			shadow: {
+				purificationCandyNeeded: 3;
+				purificationStardustNeeded: 3000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 85;
 				baseDefense: 121;
@@ -2642,10 +2652,14 @@ export type PokemonSettingsV0086PokemonSeelNormal = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 10;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.5;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 50;
+					candyCostPurified: 45;
 					evolution: "DEWGONG";
 					form: "DEWGONG_NORMAL";
 				},
@@ -2667,6 +2681,12 @@ export type PokemonSettingsV0086PokemonSeelNormal = S<
 			pokedexWeightKg: 90;
 			pokemonId: "SEEL";
 			quickMoves: ["ICE_SHARD_FAST", "LICK_FAST"];
+			shadow: {
+				purificationCandyNeeded: 3;
+				purificationStardustNeeded: 3000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 85;
 				baseDefense: 121;
@@ -2719,6 +2739,9 @@ export type PokemonSettingsV0087PokemonDewgong = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 5;
 				movementType: "MOVEMENT_HOVERING";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.2;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionPips: 1;
 			familyId: "FAMILY_SEEL";
@@ -2736,6 +2759,12 @@ export type PokemonSettingsV0087PokemonDewgong = S<
 			pokedexWeightKg: 120;
 			pokemonId: "DEWGONG";
 			quickMoves: ["FROST_BREATH_FAST", "IRON_TAIL_FAST"];
+			shadow: {
+				purificationCandyNeeded: 3;
+				purificationStardustNeeded: 3000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 139;
 				baseDefense: 177;
@@ -2789,6 +2818,9 @@ export type PokemonSettingsV0087PokemonDewgongNormal = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 5;
 				movementType: "MOVEMENT_HOVERING";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.2;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionPips: 1;
 			familyId: "FAMILY_SEEL";
@@ -2807,6 +2839,12 @@ export type PokemonSettingsV0087PokemonDewgongNormal = S<
 			pokedexWeightKg: 120;
 			pokemonId: "DEWGONG";
 			quickMoves: ["FROST_BREATH_FAST", "IRON_TAIL_FAST"];
+			shadow: {
+				purificationCandyNeeded: 3;
+				purificationStardustNeeded: 3000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 139;
 				baseDefense: 177;
@@ -4272,7 +4310,7 @@ export type PokemonSettingsV0121PokemonStarmie = S<
 				diskRadiusM: 0.7275;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["HYDRO_PUMP", "POWER_GEM", "PSYCHIC", "THUNDER", "ICE_BEAM", "PSYBEAM", "SURF"];
+			cinematicMoves: ["HYDRO_PUMP", "POWER_GEM", "PSYCHIC", "THUNDER", "ICE_BEAM", "PSYBEAM", "SURF", "AQUA_JET"];
 			eliteQuickMove: ["TACKLE_FAST"];
 			encounter: {
 				attackProbability: 0.1;
@@ -4350,7 +4388,7 @@ export type PokemonSettingsV0121PokemonStarmieNormal = S<
 				diskRadiusM: 0.7275;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["HYDRO_PUMP", "POWER_GEM", "PSYCHIC", "THUNDER", "ICE_BEAM", "PSYBEAM", "SURF"];
+			cinematicMoves: ["HYDRO_PUMP", "POWER_GEM", "PSYCHIC", "THUNDER", "ICE_BEAM", "PSYBEAM", "SURF", "AQUA_JET"];
 			eliteQuickMove: ["TACKLE_FAST"];
 			encounter: {
 				attackProbability: 0.1;
@@ -6929,7 +6967,7 @@ export type PokemonSettingsV0211PokemonQwilfish = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["AQUA_TAIL", "ICE_BEAM", "SLUDGE_WAVE", "ACID_SPRAY", "FELL_STINGER", "SCALD"];
+			cinematicMoves: ["AQUA_TAIL", "ICE_BEAM", "SLUDGE_WAVE", "ACID_SPRAY", "FELL_STINGER", "SCALD", "SHADOW_BALL"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 20;
@@ -7002,7 +7040,7 @@ export type PokemonSettingsV0211PokemonQwilfishNormal = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["AQUA_TAIL", "ICE_BEAM", "SLUDGE_WAVE", "ACID_SPRAY", "FELL_STINGER", "SCALD"];
+			cinematicMoves: ["AQUA_TAIL", "ICE_BEAM", "SLUDGE_WAVE", "ACID_SPRAY", "FELL_STINGER", "SCALD", "SHADOW_BALL"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 20;
@@ -7479,7 +7517,7 @@ export type PokemonSettingsV0226PokemonMantine = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["WATER_PULSE", "ICE_BEAM", "AERIAL_ACE", "BUBBLE_BEAM"];
+			cinematicMoves: ["WATER_PULSE", "ICE_BEAM", "AERIAL_ACE", "BUBBLE_BEAM", "TWISTER"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 20;
@@ -7545,7 +7583,7 @@ export type PokemonSettingsV0226PokemonMantineNormal = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["WATER_PULSE", "ICE_BEAM", "AERIAL_ACE", "BUBBLE_BEAM"];
+			cinematicMoves: ["WATER_PULSE", "ICE_BEAM", "AERIAL_ACE", "BUBBLE_BEAM", "TWISTER"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 20;
@@ -7612,7 +7650,7 @@ export type PokemonSettingsV0230PokemonKingdra = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["HYDRO_PUMP", "BLIZZARD", "OUTRAGE", "OCTAZOOKA", "SWIFT"];
+			cinematicMoves: ["HYDRO_PUMP", "BLIZZARD", "OUTRAGE", "OCTAZOOKA", "SWIFT", "SURF"];
 			eliteQuickMove: ["WATER_GUN_FAST"];
 			encounter: {
 				attackProbability: 0.1;
@@ -7691,7 +7729,7 @@ export type PokemonSettingsV0230PokemonKingdraNormal = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["HYDRO_PUMP", "BLIZZARD", "OUTRAGE", "OCTAZOOKA", "SWIFT"];
+			cinematicMoves: ["HYDRO_PUMP", "BLIZZARD", "OUTRAGE", "OCTAZOOKA", "SWIFT", "SURF"];
 			eliteQuickMove: ["WATER_GUN_FAST"];
 			encounter: {
 				attackProbability: 0.1;
@@ -13237,7 +13275,7 @@ export type PokemonSettingsV0457PokemonLumineon = S<
 			pokedexHeightM: 1.2;
 			pokedexWeightKg: 24;
 			pokemonId: "LUMINEON";
-			quickMoves: ["WATERFALL_FAST", "WATER_GUN_FAST"];
+			quickMoves: ["WATERFALL_FAST", "WATER_GUN_FAST", "GUST_FAST"];
 			stats: {
 				baseAttack: 142;
 				baseDefense: 170;
@@ -13306,7 +13344,7 @@ export type PokemonSettingsV0457PokemonLumineonNormal = S<
 			pokedexHeightM: 1.2;
 			pokedexWeightKg: 24;
 			pokemonId: "LUMINEON";
-			quickMoves: ["WATERFALL_FAST", "WATER_GUN_FAST"];
+			quickMoves: ["WATERFALL_FAST", "WATER_GUN_FAST", "GUST_FAST"];
 			stats: {
 				baseAttack: 142;
 				baseDefense: 170;
@@ -13637,6 +13675,7 @@ export type PokemonSettingsV0484PokemonPalkiaOrigin = S<
 			candyToEvolve: 25;
 			cinematicMoves: ["DRACO_METEOR", "FIRE_BLAST", "HYDRO_PUMP", "AQUA_TAIL"];
 			disableTransferToPokemonHome: true;
+			eliteCinematicMove: ["SPACIAL_REND"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 29;
@@ -13867,7 +13906,6 @@ export type PokemonSettingsV0490PokemonManaphy = S<
 			modelHeight: 0.35;
 			modelScale: 1.26;
 			modelScaleV2: 1.17;
-			parentPokemonId: "PHIONE";
 			pokedexHeightM: 0.3;
 			pokedexWeightKg: 1.4;
 			pokemonClass: "POKEMON_CLASS_MYTHIC";
@@ -13931,7 +13969,6 @@ export type PokemonSettingsV0490PokemonManaphyNormal = S<
 			modelHeight: 0.35;
 			modelScale: 1.26;
 			modelScaleV2: 1.17;
-			parentPokemonId: "PHIONE";
 			pokedexHeightM: 0.3;
 			pokedexWeightKg: 1.4;
 			pokemonClass: "POKEMON_CLASS_MYTHIC";
@@ -15160,7 +15197,7 @@ export type PokemonSettingsV0537PokemonSeismitoad = S<
 				shoulderModeScale: 0.5;
 			};
 			candyToEvolve: 25;
-			cinematicMoves: ["MUDDY_WATER", "EARTH_POWER", "SLUDGE_BOMB"];
+			cinematicMoves: ["MUDDY_WATER", "EARTH_POWER", "SLUDGE_BOMB", "ICY_WIND"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 29;
@@ -15228,7 +15265,7 @@ export type PokemonSettingsV0537PokemonSeismitoadNormal = S<
 				shoulderModeScale: 0.5;
 			};
 			candyToEvolve: 25;
-			cinematicMoves: ["MUDDY_WATER", "EARTH_POWER", "SLUDGE_BOMB"];
+			cinematicMoves: ["MUDDY_WATER", "EARTH_POWER", "SLUDGE_BOMB", "ICY_WIND"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 29;
@@ -16037,7 +16074,7 @@ export type PokemonSettingsV0581PokemonSwanna = S<
 				shoulderModeScale: 0.5;
 			};
 			candyToEvolve: 25;
-			cinematicMoves: ["ICE_BEAM", "BUBBLE_BEAM", "HURRICANE", "FLY"];
+			cinematicMoves: ["ICE_BEAM", "BUBBLE_BEAM", "HURRICANE", "FLY", "AQUA_JET"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 29;
@@ -16076,7 +16113,7 @@ export type PokemonSettingsV0581PokemonSwanna = S<
 			pokedexHeightM: 1.3;
 			pokedexWeightKg: 24.2;
 			pokemonId: "SWANNA";
-			quickMoves: ["WATER_GUN_FAST", "AIR_SLASH_FAST"];
+			quickMoves: ["WATER_GUN_FAST", "AIR_SLASH_FAST", "GUST_FAST"];
 			shadow: {
 				purificationCandyNeeded: 1;
 				purificationStardustNeeded: 1000;
@@ -16118,7 +16155,7 @@ export type PokemonSettingsV0581PokemonSwannaNormal = S<
 				shoulderModeScale: 0.5;
 			};
 			candyToEvolve: 25;
-			cinematicMoves: ["ICE_BEAM", "BUBBLE_BEAM", "HURRICANE", "FLY"];
+			cinematicMoves: ["ICE_BEAM", "BUBBLE_BEAM", "HURRICANE", "FLY", "AQUA_JET"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 29;
@@ -16158,7 +16195,7 @@ export type PokemonSettingsV0581PokemonSwannaNormal = S<
 			pokedexHeightM: 1.3;
 			pokedexWeightKg: 24.2;
 			pokemonId: "SWANNA";
-			quickMoves: ["WATER_GUN_FAST", "AIR_SLASH_FAST"];
+			quickMoves: ["WATER_GUN_FAST", "AIR_SLASH_FAST", "GUST_FAST"];
 			shadow: {
 				purificationCandyNeeded: 1;
 				purificationStardustNeeded: 1000;
@@ -19213,7 +19250,8 @@ export type PokemonSettingsV0818PokemonInteleon = S<
 				cylinderHeightM: 2.3;
 				cylinderRadiusM: 0.88;
 			};
-			cinematicMoves: ["WATER_PULSE", "SURF", "SHADOW_BALL"];
+			cinematicMoves: ["WATER_PULSE", "SURF", "SHADOW_BALL", "SNIPE_SHOT"];
+			eliteCinematicMove: ["HYDRO_CANNON"];
 			encounter: {
 				attackProbability: 0.2;
 				bonusCandyCaptureReward: 7;
@@ -19273,7 +19311,8 @@ export type PokemonSettingsV0818PokemonInteleonNormal = S<
 				cylinderHeightM: 2.3;
 				cylinderRadiusM: 0.88;
 			};
-			cinematicMoves: ["WATER_PULSE", "SURF", "SHADOW_BALL"];
+			cinematicMoves: ["WATER_PULSE", "SURF", "SHADOW_BALL", "SNIPE_SHOT"];
+			eliteCinematicMove: ["HYDRO_CANNON"];
 			encounter: {
 				attackProbability: 0.2;
 				bonusCandyCaptureReward: 7;
@@ -20240,7 +20279,7 @@ export type PokemonSettingsV0914PokemonQuaquaval = S<
 			pokedexHeightM: 1.8;
 			pokedexWeightKg: 61.9;
 			pokemonId: "QUAQUAVAL";
-			quickMoves: ["WATER_GUN_FAST", "WING_ATTACK_FAST"];
+			quickMoves: ["WATER_GUN_FAST", "WING_ATTACK_FAST", "LOW_KICK_FAST"];
 			stats: {
 				baseAttack: 236;
 				baseDefense: 159;
@@ -20302,7 +20341,7 @@ export type PokemonSettingsV0914PokemonQuaquavalNormal = S<
 			pokedexHeightM: 1.8;
 			pokedexWeightKg: 61.9;
 			pokemonId: "QUAQUAVAL";
-			quickMoves: ["WATER_GUN_FAST", "WING_ATTACK_FAST"];
+			quickMoves: ["WATER_GUN_FAST", "WING_ATTACK_FAST", "LOW_KICK_FAST"];
 			stats: {
 				baseAttack: 236;
 				baseDefense: 159;

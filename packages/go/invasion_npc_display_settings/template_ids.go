@@ -5,86 +5,134 @@ package invasion_npc_display_settings
 type InvasionNpcDisplaySettingsTemplateID string
 
 const (
-	InvasionNpcDisplaySettingsTemplateIDCharacterBlanche                 InvasionNpcDisplaySettingsTemplateID = "CHARACTER_BLANCHE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterBugGruntFemale          InvasionNpcDisplaySettingsTemplateID = "CHARACTER_BUG_GRUNT_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterBugGruntMale            InvasionNpcDisplaySettingsTemplateID = "CHARACTER_BUG_GRUNT_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterCandela                 InvasionNpcDisplaySettingsTemplateID = "CHARACTER_CANDELA"
-	InvasionNpcDisplaySettingsTemplateIDCharacterDarkGruntFemale         InvasionNpcDisplaySettingsTemplateID = "CHARACTER_DARK_GRUNT_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterDarkGruntMale           InvasionNpcDisplaySettingsTemplateID = "CHARACTER_DARK_GRUNT_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterDecoyGruntFemale        InvasionNpcDisplaySettingsTemplateID = "CHARACTER_DECOY_GRUNT_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterDecoyGruntMale          InvasionNpcDisplaySettingsTemplateID = "CHARACTER_DECOY_GRUNT_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterDragonGruntFemale       InvasionNpcDisplaySettingsTemplateID = "CHARACTER_DRAGON_GRUNT_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterDragonGruntMale         InvasionNpcDisplaySettingsTemplateID = "CHARACTER_DRAGON_GRUNT_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterElectricGruntFemale     InvasionNpcDisplaySettingsTemplateID = "CHARACTER_ELECTRIC_GRUNT_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterElectricGruntMale       InvasionNpcDisplaySettingsTemplateID = "CHARACTER_ELECTRIC_GRUNT_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterEventArloUnticketed     InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_ARLO_UNTICKETED"
-	InvasionNpcDisplaySettingsTemplateIDCharacterEventCliffUnticketed    InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_CLIFF_UNTICKETED"
-	InvasionNpcDisplaySettingsTemplateIDCharacterEventGiovanniUnticketed InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_GIOVANNI_UNTICKETED"
-	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc0               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_0"
-	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc1               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_1"
-	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc2               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_2"
-	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc3               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_3"
-	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc4               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_4"
-	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc5               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_5"
-	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc6               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_6"
-	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc7               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_7"
-	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc8               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_8"
-	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc9               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_9"
-	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc10              InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_10"
-	InvasionNpcDisplaySettingsTemplateIDCharacterEventSierraUnticketed   InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_SIERRA_UNTICKETED"
-	InvasionNpcDisplaySettingsTemplateIDCharacterExecutiveArlo           InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EXECUTIVE_ARLO"
-	InvasionNpcDisplaySettingsTemplateIDCharacterExecutiveCliff          InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EXECUTIVE_CLIFF"
-	InvasionNpcDisplaySettingsTemplateIDCharacterExecutiveSierra         InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EXECUTIVE_SIERRA"
-	InvasionNpcDisplaySettingsTemplateIDCharacterExplorer                InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EXPLORER"
-	InvasionNpcDisplaySettingsTemplateIDCharacterFairyGruntFemale        InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FAIRY_GRUNT_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterFairyGruntMale          InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FAIRY_GRUNT_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterFightingGruntFemale     InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FIGHTING_GRUNT_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterFightingGruntMale       InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FIGHTING_GRUNT_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterFireGruntFemale         InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FIRE_GRUNT_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterFireGruntMale           InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FIRE_GRUNT_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterFlyingGruntFemale       InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FLYING_GRUNT_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterFlyingGruntMale         InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FLYING_GRUNT_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterGhostGruntFemale        InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GHOST_GRUNT_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterGhostGruntMale          InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GHOST_GRUNT_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterGiovanni                InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GIOVANNI"
-	InvasionNpcDisplaySettingsTemplateIDCharacterGrassGruntFemale        InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GRASS_GRUNT_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterGrassGruntMale          InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GRASS_GRUNT_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterGroundGruntFemale       InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GROUND_GRUNT_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterGroundGruntMale         InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GROUND_GRUNT_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterGruntFemale             InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GRUNT_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterGruntMale               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GRUNT_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterGruntbFemale            InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GRUNTB_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterGruntbMale              InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GRUNTB_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterIceGruntFemale          InvasionNpcDisplaySettingsTemplateID = "CHARACTER_ICE_GRUNT_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterIceGruntMale            InvasionNpcDisplaySettingsTemplateID = "CHARACTER_ICE_GRUNT_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterMetalGruntFemale        InvasionNpcDisplaySettingsTemplateID = "CHARACTER_METAL_GRUNT_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterMetalGruntMale          InvasionNpcDisplaySettingsTemplateID = "CHARACTER_METAL_GRUNT_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterNormalGruntFemale       InvasionNpcDisplaySettingsTemplateID = "CHARACTER_NORMAL_GRUNT_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterNormalGruntMale         InvasionNpcDisplaySettingsTemplateID = "CHARACTER_NORMAL_GRUNT_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterPoisonGruntFemale       InvasionNpcDisplaySettingsTemplateID = "CHARACTER_POISON_GRUNT_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterPoisonGruntMale         InvasionNpcDisplaySettingsTemplateID = "CHARACTER_POISON_GRUNT_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterPsychicGruntFemale      InvasionNpcDisplaySettingsTemplateID = "CHARACTER_PSYCHIC_GRUNT_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterPsychicGruntMale        InvasionNpcDisplaySettingsTemplateID = "CHARACTER_PSYCHIC_GRUNT_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterRockGruntFemale         InvasionNpcDisplaySettingsTemplateID = "CHARACTER_ROCK_GRUNT_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterRockGruntMale           InvasionNpcDisplaySettingsTemplateID = "CHARACTER_ROCK_GRUNT_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterSpark                   InvasionNpcDisplaySettingsTemplateID = "CHARACTER_SPARK"
-	InvasionNpcDisplaySettingsTemplateIDCharacterWaterGruntFemale        InvasionNpcDisplaySettingsTemplateID = "CHARACTER_WATER_GRUNT_FEMALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterWaterGruntMale          InvasionNpcDisplaySettingsTemplateID = "CHARACTER_WATER_GRUNT_MALE"
-	InvasionNpcDisplaySettingsTemplateIDCharacterWillow                  InvasionNpcDisplaySettingsTemplateID = "CHARACTER_WILLOW"
-	InvasionNpcDisplaySettingsTemplateIDCharacterWillowb                 InvasionNpcDisplaySettingsTemplateID = "CHARACTER_WILLOWB"
+	InvasionNpcDisplaySettingsTemplateIDCharacterBalloonGruntFemale         InvasionNpcDisplaySettingsTemplateID = "CHARACTER_BALLOON_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterBalloonGruntMale           InvasionNpcDisplaySettingsTemplateID = "CHARACTER_BALLOON_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterBlanche                    InvasionNpcDisplaySettingsTemplateID = "CHARACTER_BLANCHE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterBugBalloonGruntFemale      InvasionNpcDisplaySettingsTemplateID = "CHARACTER_BUG_BALLOON_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterBugBalloonGruntMale        InvasionNpcDisplaySettingsTemplateID = "CHARACTER_BUG_BALLOON_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterBugGruntFemale             InvasionNpcDisplaySettingsTemplateID = "CHARACTER_BUG_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterBugGruntMale               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_BUG_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterCandela                    InvasionNpcDisplaySettingsTemplateID = "CHARACTER_CANDELA"
+	InvasionNpcDisplaySettingsTemplateIDCharacterDarkBalloonGruntFemale     InvasionNpcDisplaySettingsTemplateID = "CHARACTER_DARK_BALLOON_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterDarkBalloonGruntMale       InvasionNpcDisplaySettingsTemplateID = "CHARACTER_DARK_BALLOON_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterDarkGruntFemale            InvasionNpcDisplaySettingsTemplateID = "CHARACTER_DARK_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterDarkGruntMale              InvasionNpcDisplaySettingsTemplateID = "CHARACTER_DARK_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterDecoyGruntFemale           InvasionNpcDisplaySettingsTemplateID = "CHARACTER_DECOY_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterDecoyGruntMale             InvasionNpcDisplaySettingsTemplateID = "CHARACTER_DECOY_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterDragonBalloonGruntFemale   InvasionNpcDisplaySettingsTemplateID = "CHARACTER_DRAGON_BALLOON_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterDragonBalloonGruntMale     InvasionNpcDisplaySettingsTemplateID = "CHARACTER_DRAGON_BALLOON_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterDragonGruntFemale          InvasionNpcDisplaySettingsTemplateID = "CHARACTER_DRAGON_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterDragonGruntMale            InvasionNpcDisplaySettingsTemplateID = "CHARACTER_DRAGON_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterElectricBalloonGruntFemale InvasionNpcDisplaySettingsTemplateID = "CHARACTER_ELECTRIC_BALLOON_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterElectricBalloonGruntMale   InvasionNpcDisplaySettingsTemplateID = "CHARACTER_ELECTRIC_BALLOON_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterElectricGruntFemale        InvasionNpcDisplaySettingsTemplateID = "CHARACTER_ELECTRIC_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterElectricGruntMale          InvasionNpcDisplaySettingsTemplateID = "CHARACTER_ELECTRIC_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterEventArloUnticketed        InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_ARLO_UNTICKETED"
+	InvasionNpcDisplaySettingsTemplateIDCharacterEventCliffUnticketed       InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_CLIFF_UNTICKETED"
+	InvasionNpcDisplaySettingsTemplateIDCharacterEventGiovanniUnticketed    InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_GIOVANNI_UNTICKETED"
+	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc0                  InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_0"
+	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc1                  InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_1"
+	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc2                  InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_2"
+	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc3                  InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_3"
+	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc4                  InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_4"
+	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc5                  InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_5"
+	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc6                  InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_6"
+	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc7                  InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_7"
+	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc8                  InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_8"
+	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc9                  InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_9"
+	InvasionNpcDisplaySettingsTemplateIDCharacterEventNpc10                 InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_NPC_10"
+	InvasionNpcDisplaySettingsTemplateIDCharacterEventSierraUnticketed      InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EVENT_SIERRA_UNTICKETED"
+	InvasionNpcDisplaySettingsTemplateIDCharacterExecutiveArlo              InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EXECUTIVE_ARLO"
+	InvasionNpcDisplaySettingsTemplateIDCharacterExecutiveCliff             InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EXECUTIVE_CLIFF"
+	InvasionNpcDisplaySettingsTemplateIDCharacterExecutiveSierra            InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EXECUTIVE_SIERRA"
+	InvasionNpcDisplaySettingsTemplateIDCharacterExplorer                   InvasionNpcDisplaySettingsTemplateID = "CHARACTER_EXPLORER"
+	InvasionNpcDisplaySettingsTemplateIDCharacterFairyBalloonGruntFemale    InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FAIRY_BALLOON_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterFairyBalloonGruntMale      InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FAIRY_BALLOON_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterFairyGruntFemale           InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FAIRY_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterFairyGruntMale             InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FAIRY_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterFightingBalloonGruntFemale InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FIGHTING_BALLOON_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterFightingBalloonGruntMale   InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FIGHTING_BALLOON_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterFightingGruntFemale        InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FIGHTING_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterFightingGruntMale          InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FIGHTING_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterFireBalloonGruntFemale     InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FIRE_BALLOON_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterFireBalloonGruntMale       InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FIRE_BALLOON_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterFireGruntFemale            InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FIRE_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterFireGruntMale              InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FIRE_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterFlyingBalloonGruntFemale   InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FLYING_BALLOON_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterFlyingBalloonGruntMale     InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FLYING_BALLOON_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterFlyingGruntFemale          InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FLYING_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterFlyingGruntMale            InvasionNpcDisplaySettingsTemplateID = "CHARACTER_FLYING_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterGhostBalloonGruntFemale    InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GHOST_BALLOON_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterGhostBalloonGruntMale      InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GHOST_BALLOON_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterGhostGruntFemale           InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GHOST_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterGhostGruntMale             InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GHOST_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterGiovanni                   InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GIOVANNI"
+	InvasionNpcDisplaySettingsTemplateIDCharacterGrassBalloonGruntFemale    InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GRASS_BALLOON_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterGrassBalloonGruntMale      InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GRASS_BALLOON_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterGrassGruntFemale           InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GRASS_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterGrassGruntMale             InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GRASS_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterGroundBalloonGruntFemale   InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GROUND_BALLOON_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterGroundBalloonGruntMale     InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GROUND_BALLOON_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterGroundGruntFemale          InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GROUND_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterGroundGruntMale            InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GROUND_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterGruntFemale                InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterGruntMale                  InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterGruntbFemale               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GRUNTB_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterGruntbMale                 InvasionNpcDisplaySettingsTemplateID = "CHARACTER_GRUNTB_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterIceBalloonGruntFemale      InvasionNpcDisplaySettingsTemplateID = "CHARACTER_ICE_BALLOON_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterIceBalloonGruntMale        InvasionNpcDisplaySettingsTemplateID = "CHARACTER_ICE_BALLOON_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterIceGruntFemale             InvasionNpcDisplaySettingsTemplateID = "CHARACTER_ICE_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterIceGruntMale               InvasionNpcDisplaySettingsTemplateID = "CHARACTER_ICE_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterMetalBalloonGruntFemale    InvasionNpcDisplaySettingsTemplateID = "CHARACTER_METAL_BALLOON_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterMetalBalloonGruntMale      InvasionNpcDisplaySettingsTemplateID = "CHARACTER_METAL_BALLOON_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterMetalGruntFemale           InvasionNpcDisplaySettingsTemplateID = "CHARACTER_METAL_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterMetalGruntMale             InvasionNpcDisplaySettingsTemplateID = "CHARACTER_METAL_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterNormalBalloonGruntFemale   InvasionNpcDisplaySettingsTemplateID = "CHARACTER_NORMAL_BALLOON_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterNormalBalloonGruntMale     InvasionNpcDisplaySettingsTemplateID = "CHARACTER_NORMAL_BALLOON_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterNormalGruntFemale          InvasionNpcDisplaySettingsTemplateID = "CHARACTER_NORMAL_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterNormalGruntMale            InvasionNpcDisplaySettingsTemplateID = "CHARACTER_NORMAL_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterPoisonBalloonGruntFemale   InvasionNpcDisplaySettingsTemplateID = "CHARACTER_POISON_BALLOON_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterPoisonBalloonGruntMale     InvasionNpcDisplaySettingsTemplateID = "CHARACTER_POISON_BALLOON_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterPoisonGruntFemale          InvasionNpcDisplaySettingsTemplateID = "CHARACTER_POISON_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterPoisonGruntMale            InvasionNpcDisplaySettingsTemplateID = "CHARACTER_POISON_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterPsychicBalloonGruntFemale  InvasionNpcDisplaySettingsTemplateID = "CHARACTER_PSYCHIC_BALLOON_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterPsychicBalloonGruntMale    InvasionNpcDisplaySettingsTemplateID = "CHARACTER_PSYCHIC_BALLOON_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterPsychicGruntFemale         InvasionNpcDisplaySettingsTemplateID = "CHARACTER_PSYCHIC_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterPsychicGruntMale           InvasionNpcDisplaySettingsTemplateID = "CHARACTER_PSYCHIC_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterRockBalloonGruntFemale     InvasionNpcDisplaySettingsTemplateID = "CHARACTER_ROCK_BALLOON_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterRockBalloonGruntMale       InvasionNpcDisplaySettingsTemplateID = "CHARACTER_ROCK_BALLOON_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterRockGruntFemale            InvasionNpcDisplaySettingsTemplateID = "CHARACTER_ROCK_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterRockGruntMale              InvasionNpcDisplaySettingsTemplateID = "CHARACTER_ROCK_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterSpark                      InvasionNpcDisplaySettingsTemplateID = "CHARACTER_SPARK"
+	InvasionNpcDisplaySettingsTemplateIDCharacterWaterBalloonGruntFemale    InvasionNpcDisplaySettingsTemplateID = "CHARACTER_WATER_BALLOON_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterWaterBalloonGruntMale      InvasionNpcDisplaySettingsTemplateID = "CHARACTER_WATER_BALLOON_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterWaterGruntFemale           InvasionNpcDisplaySettingsTemplateID = "CHARACTER_WATER_GRUNT_FEMALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterWaterGruntMale             InvasionNpcDisplaySettingsTemplateID = "CHARACTER_WATER_GRUNT_MALE"
+	InvasionNpcDisplaySettingsTemplateIDCharacterWillow                     InvasionNpcDisplaySettingsTemplateID = "CHARACTER_WILLOW"
+	InvasionNpcDisplaySettingsTemplateIDCharacterWillowb                    InvasionNpcDisplaySettingsTemplateID = "CHARACTER_WILLOWB"
 )
 
 var InvasionNpcDisplaySettingsTemplateIDValues = [...]InvasionNpcDisplaySettingsTemplateID{
+	InvasionNpcDisplaySettingsTemplateIDCharacterBalloonGruntFemale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterBalloonGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterBlanche,
+	InvasionNpcDisplaySettingsTemplateIDCharacterBugBalloonGruntFemale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterBugBalloonGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterBugGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterBugGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterCandela,
+	InvasionNpcDisplaySettingsTemplateIDCharacterDarkBalloonGruntFemale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterDarkBalloonGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterDarkGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterDarkGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterDecoyGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterDecoyGruntMale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterDragonBalloonGruntFemale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterDragonBalloonGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterDragonGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterDragonGruntMale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterElectricBalloonGruntFemale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterElectricBalloonGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterElectricGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterElectricGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterEventArloUnticketed,
@@ -106,38 +154,66 @@ var InvasionNpcDisplaySettingsTemplateIDValues = [...]InvasionNpcDisplaySettings
 	InvasionNpcDisplaySettingsTemplateIDCharacterExecutiveCliff,
 	InvasionNpcDisplaySettingsTemplateIDCharacterExecutiveSierra,
 	InvasionNpcDisplaySettingsTemplateIDCharacterExplorer,
+	InvasionNpcDisplaySettingsTemplateIDCharacterFairyBalloonGruntFemale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterFairyBalloonGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterFairyGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterFairyGruntMale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterFightingBalloonGruntFemale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterFightingBalloonGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterFightingGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterFightingGruntMale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterFireBalloonGruntFemale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterFireBalloonGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterFireGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterFireGruntMale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterFlyingBalloonGruntFemale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterFlyingBalloonGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterFlyingGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterFlyingGruntMale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterGhostBalloonGruntFemale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterGhostBalloonGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterGhostGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterGhostGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterGiovanni,
+	InvasionNpcDisplaySettingsTemplateIDCharacterGrassBalloonGruntFemale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterGrassBalloonGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterGrassGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterGrassGruntMale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterGroundBalloonGruntFemale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterGroundBalloonGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterGroundGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterGroundGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterGruntbFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterGruntbMale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterIceBalloonGruntFemale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterIceBalloonGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterIceGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterIceGruntMale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterMetalBalloonGruntFemale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterMetalBalloonGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterMetalGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterMetalGruntMale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterNormalBalloonGruntFemale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterNormalBalloonGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterNormalGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterNormalGruntMale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterPoisonBalloonGruntFemale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterPoisonBalloonGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterPoisonGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterPoisonGruntMale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterPsychicBalloonGruntFemale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterPsychicBalloonGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterPsychicGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterPsychicGruntMale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterRockBalloonGruntFemale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterRockBalloonGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterRockGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterRockGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterSpark,
+	InvasionNpcDisplaySettingsTemplateIDCharacterWaterBalloonGruntFemale,
+	InvasionNpcDisplaySettingsTemplateIDCharacterWaterBalloonGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterWaterGruntFemale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterWaterGruntMale,
 	InvasionNpcDisplaySettingsTemplateIDCharacterWillow,

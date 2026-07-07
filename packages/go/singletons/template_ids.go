@@ -129,6 +129,7 @@ const (
 	SingletonsTemplateIDSoftSfidaSettings                       SingletonsTemplateID = "SOFT_SFIDA_SETTINGS"
 	SingletonsTemplateIDSourdoughMoveMappingSettings            SingletonsTemplateID = "SOURDOUGH_MOVE_MAPPING_SETTINGS"
 	SingletonsTemplateIDSpecialEggSettings                      SingletonsTemplateID = "SPECIAL_EGG_SETTINGS"
+	SingletonsTemplateIDSpecialResearchVisualRefreshSettings    SingletonsTemplateID = "SPECIAL_RESEARCH_VISUAL_REFRESH_SETTINGS"
 	SingletonsTemplateIDSponsoredGeofenceGiftSettings           SingletonsTemplateID = "SPONSORED_GEOFENCE_GIFT_SETTINGS"
 	SingletonsTemplateIDStampCollectionSettings                 SingletonsTemplateID = "STAMP_COLLECTION_SETTINGS"
 	SingletonsTemplateIDStationedPokemonPowerBoostTableSettings SingletonsTemplateID = "STATIONED_POKEMON_POWER_BOOST_TABLE_SETTINGS"
@@ -274,6 +275,7 @@ var SingletonsTemplateIDValues = [...]SingletonsTemplateID{
 	SingletonsTemplateIDSoftSfidaSettings,
 	SingletonsTemplateIDSourdoughMoveMappingSettings,
 	SingletonsTemplateIDSpecialEggSettings,
+	SingletonsTemplateIDSpecialResearchVisualRefreshSettings,
 	SingletonsTemplateIDSponsoredGeofenceGiftSettings,
 	SingletonsTemplateIDStampCollectionSettings,
 	SingletonsTemplateIDStationedPokemonPowerBoostTableSettings,

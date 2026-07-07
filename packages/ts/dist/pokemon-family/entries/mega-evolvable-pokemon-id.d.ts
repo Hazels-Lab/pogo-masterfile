@@ -12,15 +12,6 @@ export type PokemonFamilyV0001FamilyBulbasaur = S<
 		}
 	>
 >;
-export type PokemonFamilyV0004FamilyCharmander = S<
-	PokemonFamily<
-		"V0004_FAMILY_CHARMANDER",
-		{
-			familyId: "FAMILY_CHARMANDER";
-			megaEvolvablePokemonId: "CHARIZARD";
-		}
-	>
->;
 export type PokemonFamilyV0007FamilySquirtle = S<
 	PokemonFamily<
 		"V0007_FAMILY_SQUIRTLE",
@@ -162,6 +153,15 @@ export type PokemonFamilyV0214FamilyHeracross = S<
 		{
 			familyId: "FAMILY_HERACROSS";
 			megaEvolvablePokemonId: "HERACROSS";
+		}
+	>
+>;
+export type PokemonFamilyV0227FamilySkarmory = S<
+	PokemonFamily<
+		"V0227_FAMILY_SKARMORY",
+		{
+			familyId: "FAMILY_SKARMORY";
+			megaEvolvablePokemonId: "SKARMORY";
 		}
 	>
 >;
@@ -447,7 +447,6 @@ export type PokemonFamilyV0870FamilyFalinks = S<
 
 export type PokemonFamilyMegaEvolvablePokemonIdMasterfileEntry =
 	| PokemonFamilyV0001FamilyBulbasaur
-	| PokemonFamilyV0004FamilyCharmander
 	| PokemonFamilyV0007FamilySquirtle
 	| PokemonFamilyV0013FamilyWeedle
 	| PokemonFamilyV0016FamilyPidgey
@@ -464,6 +463,7 @@ export type PokemonFamilyMegaEvolvablePokemonIdMasterfileEntry =
 	| PokemonFamilyV0147FamilyDratini
 	| PokemonFamilyV0179FamilyMareep
 	| PokemonFamilyV0214FamilyHeracross
+	| PokemonFamilyV0227FamilySkarmory
 	| PokemonFamilyV0228FamilyHoundour
 	| PokemonFamilyV0246FamilyLarvitar
 	| PokemonFamilyV0252FamilyTreecko

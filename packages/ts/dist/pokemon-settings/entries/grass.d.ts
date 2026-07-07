@@ -7,7 +7,7 @@ export type PokemonSettingsV0001PokemonBulbasaur = S<
 	PokemonSettings<
 		"V0001_POKEMON_BULBASAUR",
 		{
-			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE"];
+			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE", "SPRING_2020_NOEVOLVE"];
 			animationTime: [1.6667, 0.6667, 1.6667, 1.8333, 0, 2.1667, 1.4, 1.466667];
 			breadTierGroup: "GROUP_1";
 			buddyGroupNumber: 2;
@@ -167,7 +167,7 @@ export type PokemonSettingsV0001PokemonBulbasaurNormal = S<
 	PokemonSettings<
 		"V0001_POKEMON_BULBASAUR_NORMAL",
 		{
-			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE"];
+			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE", "SPRING_2020_NOEVOLVE"];
 			animationTime: [1.6667, 0.6667, 1.6667, 1.8333, 0, 2.1667, 1.4, 1.466667];
 			breadTierGroup: "GROUP_1";
 			buddyGroupNumber: 2;
@@ -253,7 +253,7 @@ export type PokemonSettingsV0002PokemonIvysaur = S<
 	PokemonSettings<
 		"V0002_POKEMON_IVYSAUR",
 		{
-			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE"];
+			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE", "SPRING_2020_NOEVOLVE"];
 			animationTime: [2.6667, 0.6667, 1.6667, 2.1667, 0, 2, 1.6667, 1.733333];
 			breadTierGroup: "GROUP_1";
 			buddyGroupNumber: 3;
@@ -342,7 +342,7 @@ export type PokemonSettingsV0002PokemonIvysaurNormal = S<
 	PokemonSettings<
 		"V0002_POKEMON_IVYSAUR_NORMAL",
 		{
-			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE"];
+			allowNoevolveEvolution: ["JAN_2020_NOEVOLVE", "SPRING_2020_NOEVOLVE"];
 			animationTime: [2.6667, 0.6667, 1.6667, 2.1667, 0, 2, 1.6667, 1.733333];
 			breadTierGroup: "GROUP_1";
 			buddyGroupNumber: 3;

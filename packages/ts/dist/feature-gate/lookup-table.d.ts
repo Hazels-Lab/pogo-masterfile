@@ -6,12 +6,17 @@ import type {
 	FeatureGateAmsFrontend,
 	FeatureGateDayNightPoi,
 	FeatureGateEnablePvpChallengeSpanner,
+	FeatureGateEnhancedCurrencyOverflowStardust,
+	FeatureGateEventList,
 	FeatureGateEventPassBonusRanks,
 	FeatureGateEventPassClaimableRewardToggle,
 	FeatureGateEventPassMilestoneRewards,
-	FeatureGateHealToast,
+	FeatureGateEventTicketDatetimeRange,
+	FeatureGateFriendshipResyncOnRead,
+	FeatureGateGamesiteWebviewNearbyButtons,
 	FeatureGateMega2026,
-	FeatureGateStoreRefresh,
+	FeatureGateSeafGetMapObjectsRateLimiter,
+	FeatureGateUpdateTicketsString,
 	FeatureGateVnextPreResponseInputBlockingBehavior,
 } from "./entries";
 
@@ -21,11 +26,16 @@ export interface FeatureGateLookup {
 	AMS_FRONTEND_FEATURE_GATE: FeatureGateAmsFrontend;
 	DAY_NIGHT_POI_FEATURE_GATE: FeatureGateDayNightPoi;
 	ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE: FeatureGateEnablePvpChallengeSpanner;
+	ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE: FeatureGateEnhancedCurrencyOverflowStardust;
+	EVENT_LIST_FEATURE_GATE: FeatureGateEventList;
 	EVENT_PASS_BONUS_RANKS_FEATURE_GATE: FeatureGateEventPassBonusRanks;
 	EVENT_PASS_CLAIMABLE_REWARD_TOGGLE_FEATURE_GATE: FeatureGateEventPassClaimableRewardToggle;
 	EVENT_PASS_MILESTONE_REWARDS_FEATURE_GATE: FeatureGateEventPassMilestoneRewards;
-	HEAL_TOAST_FEATURE_GATE: FeatureGateHealToast;
+	EVENT_TICKET_DATETIME_RANGE_FEATURE_GATE: FeatureGateEventTicketDatetimeRange;
+	FRIENDSHIP_RESYNC_ON_READ_FEATURE_GATE: FeatureGateFriendshipResyncOnRead;
+	GAMESITE_WEBVIEW_NEARBY_BUTTONS_FEATURE_GATE: FeatureGateGamesiteWebviewNearbyButtons;
 	MEGA_2026_FEATURE_GATE: FeatureGateMega2026;
-	STORE_REFRESH_FEATURE_GATE: FeatureGateStoreRefresh;
+	SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE: FeatureGateSeafGetMapObjectsRateLimiter;
+	UPDATE_TICKETS_STRING_FEATURE_GATE: FeatureGateUpdateTicketsString;
 	VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE: FeatureGateVnextPreResponseInputBlockingBehavior;
 }

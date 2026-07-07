@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatMove", split "water", 28 entries.
+// Generated from Pokémon GO masterfile — group "combatMove", split "water", 29 entries.
 
 import type { S } from "../../_utils";
 import type { CombatMove } from "../types";
@@ -379,6 +379,22 @@ export type CombatMoveV0488MoveChillingWater = S<
 		}
 	>
 >;
+export type CombatMoveV0592MoveSnipeShot = S<
+	CombatMove<
+		"COMBAT_V0592_MOVE_SNIPE_SHOT",
+		{
+			buffs: {
+				attackerAttackStatStageChange: 2;
+				buffActivationChance: 0.125;
+			};
+			energyDelta: -35;
+			power: 65;
+			type: "POKEMON_TYPE_WATER";
+			uniqueId: "SNIPE_SHOT";
+			vfxName: "snipe_shot";
+		}
+	>
+>;
 
 export type CombatMoveWaterMasterfileEntry =
 	| CombatMoveV0053MoveBubbleBeam
@@ -408,4 +424,5 @@ export type CombatMoveWaterMasterfileEntry =
 	| CombatMoveV0383MoveLiquidation
 	| CombatMoveV0463MoveSparklingAria
 	| CombatMoveV0487MoveAquaStep
-	| CombatMoveV0488MoveChillingWater;
+	| CombatMoveV0488MoveChillingWater
+	| CombatMoveV0592MoveSnipeShot;

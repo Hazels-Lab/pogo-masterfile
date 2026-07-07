@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatLeague", split "default-great", 83 entries.
+// Generated from Pokémon GO masterfile — group "combatLeague", split "default-great", 84 entries.
 
 import type { S } from "../../_utils";
 import type { CombatLeague } from "../types";
@@ -5035,7 +5035,6 @@ export type CombatLeagueVsSeekerColorGreat = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -5048,7 +5047,6 @@ export type CombatLeagueVsSeekerColorGreat = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/colorCup_Icon.png";
@@ -5108,7 +5106,6 @@ export type CombatLeagueVsSeekerElementRemix = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/elementCupRemix_icon.png";
@@ -5520,7 +5517,6 @@ export type CombatLeagueVsSeekerEvolution = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/gbl_evolution_cup.png";
@@ -5942,6 +5938,14 @@ export type CombatLeagueVsSeekerEvolution = S<
 								forms: ["FORM_UNSET", "ARCTIBAX_NORMAL"];
 								id: "ARCTIBAX";
 							},
+							{
+								forms: ["FORM_UNSET", "BISHARP_NORMAL"];
+								id: "BISHARP";
+							},
+							{
+								forms: ["FORM_UNSET", "DIPPLIN_NORMAL"];
+								id: "DIPPLIN";
+							},
 						];
 					};
 					type: "POKEMON_WHITELIST";
@@ -5971,7 +5975,6 @@ export type CombatLeagueVsSeekerGalarGreat = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -5984,7 +5987,6 @@ export type CombatLeagueVsSeekerGalarGreat = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/galarCup_icon.png";
@@ -7576,7 +7578,6 @@ export type CombatLeagueVsSeekerGalarLittle = S<
 				"OGERPON",
 				"TERAPAGOS",
 				"PECHARUNT",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/galarCup_icon.png";
@@ -9067,7 +9068,6 @@ export type CombatLeagueVsSeekerGreat = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -9078,7 +9078,6 @@ export type CombatLeagueVsSeekerGreat = S<
 				"ZACIAN",
 				"ZAMAZENTA",
 				"ENAMORUS",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/pogo_great_league.png";
@@ -9157,7 +9156,6 @@ export type CombatLeagueVsSeekerGreatCatch = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -9170,7 +9168,6 @@ export type CombatLeagueVsSeekerGreatCatch = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/premierball_sprite.png";
@@ -9675,13 +9672,11 @@ export type CombatLeagueVsSeekerGreatCatchS22 = S<
 				"KELDEO",
 				"VOLCANION",
 				"MARSHADOW",
-				"MIMIKYU",
 				"XERNEAS",
 				"YVELTAL",
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -9783,7 +9778,7 @@ export type CombatLeagueVsSeekerGreatChampionshipNaic = S<
 			badgeType: "BADGE_GREAT_LEAGUE";
 			bannedPokemon: ["DITTO", "SHEDINJA"];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
-			iconUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FGBL_Pokemon_GO_Championship_Series_Logo.png";
+			iconUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FGBL_Pokemon_GO_Championship_Series_Logo.png";
 			leagueType: "STANDARD";
 			pokemonCondition: [
 				{
@@ -10949,7 +10944,6 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -10965,7 +10959,7 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
-			iconUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FGBL_Pokemon_GO_Championship_Series_Logo.png";
+			iconUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FGBL_Pokemon_GO_Championship_Series_Logo.png";
 			leagueType: "STANDARD";
 			pokemonCondition: [
 				{
@@ -11744,6 +11738,55 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 		}
 	>
 >;
+export type CombatLeagueVsSeekerGreatChampionshipsLegacy = S<
+	CombatLeague<
+		"COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIPS_LEGACY",
+		{
+			badgeType: "BADGE_GREAT_LEAGUE";
+			bannedPokemon: [
+				"DITTO",
+				"SHEDINJA",
+				"XERNEAS",
+				"YVELTAL",
+				"COBALION",
+				"TERRAKION",
+				"VIRIZION",
+				"ZEKROM",
+				"KYUREM",
+				"TAPU_KOKO",
+				"TAPU_LELE",
+				"TAPU_BULU",
+				"SOLGALEO",
+				"LUNALA",
+				"ZACIAN",
+				"ZAMAZENTA",
+				"ENAMORUS",
+				"MIMIKYU",
+			];
+			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
+			iconUrl: "https://storage.googleapis.com/prod-public-images/pogo_great_league.png";
+			leagueType: "STANDARD";
+			pokemonCondition: [
+				{
+					type: "WITH_POKEMON_CP_LIMIT";
+					withPokemonCpLimit: {
+						maxCp: 1500;
+					};
+				},
+				{
+					type: "WITH_UNIQUE_POKEMON";
+				},
+			];
+			title: "combat_great_league_championships_legacy";
+			unlockCondition: [
+				{
+					minPokemonCount: 3;
+					type: "WITH_UNIQUE_POKEMON";
+				},
+			];
+		}
+	>
+>;
 export type CombatLeagueVsSeekerGreatElectric = S<
 	CombatLeague<
 		"COMBAT_LEAGUE_VS_SEEKER_GREAT_ELECTRIC",
@@ -11757,7 +11800,6 @@ export type CombatLeagueVsSeekerGreatElectric = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -11770,7 +11812,6 @@ export type CombatLeagueVsSeekerGreatElectric = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/electric_cup.png";
@@ -11813,7 +11854,6 @@ export type CombatLeagueVsSeekerGreatElement = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -11826,7 +11866,6 @@ export type CombatLeagueVsSeekerGreatElement = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/element_cup.png";
@@ -12314,7 +12353,6 @@ export type CombatLeagueVsSeekerGreatFantasy = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -12327,7 +12365,6 @@ export type CombatLeagueVsSeekerGreatFantasy = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/fantasy_cup_icon%20-%201x1.png";
@@ -12373,7 +12410,6 @@ export type CombatLeagueVsSeekerGreatFighting = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -12386,7 +12422,6 @@ export type CombatLeagueVsSeekerGreatFighting = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/fight2022_icon.png";
@@ -12436,7 +12471,6 @@ export type CombatLeagueVsSeekerGreatFightingRemix = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -12449,7 +12483,6 @@ export type CombatLeagueVsSeekerGreatFightingRemix = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/fight2022_remix_icon.png";
@@ -12492,7 +12525,6 @@ export type CombatLeagueVsSeekerGreatFlying = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -12505,7 +12537,6 @@ export type CombatLeagueVsSeekerGreatFlying = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/flying_cup.png";
@@ -12554,7 +12585,6 @@ export type CombatLeagueVsSeekerGreatFossil = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -12567,7 +12597,6 @@ export type CombatLeagueVsSeekerGreatFossil = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/fossil_gblcup.png";
@@ -12610,7 +12639,6 @@ export type CombatLeagueVsSeekerGreatHalloween = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -12623,7 +12651,6 @@ export type CombatLeagueVsSeekerGreatHalloween = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/halloween_cup.png";
@@ -12705,7 +12732,6 @@ export type CombatLeagueVsSeekerGreatHalloweenLittle = S<
 				"VIRIZION",
 				"TORNADUS",
 				"THUNDURUS",
-				"RESHIRAM",
 				"ZEKROM",
 				"LANDORUS",
 				"KYUREM",
@@ -12769,7 +12795,6 @@ export type CombatLeagueVsSeekerGreatHalloweenLittle = S<
 				"OGERPON",
 				"TERAPAGOS",
 				"PECHARUNT",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/halloween_cup.png";
@@ -12810,7 +12835,6 @@ export type CombatLeagueVsSeekerGreatHisui = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -12823,7 +12847,6 @@ export type CombatLeagueVsSeekerGreatHisui = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/hisui_icon.png";
@@ -13309,7 +13332,6 @@ export type CombatLeagueVsSeekerGreatHoenn = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -13322,7 +13344,6 @@ export type CombatLeagueVsSeekerGreatHoenn = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/premierball_sprite.png";
@@ -13849,7 +13870,6 @@ export type CombatLeagueVsSeekerGreatHoliday = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -13862,7 +13882,6 @@ export type CombatLeagueVsSeekerGreatHoliday = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/holiday_league_icon.png";
@@ -13910,7 +13929,6 @@ export type CombatLeagueVsSeekerGreatJohto = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -13923,7 +13941,6 @@ export type CombatLeagueVsSeekerGreatJohto = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/johtoLeague2022_icon.png";
@@ -14309,7 +14326,6 @@ export type CombatLeagueVsSeekerGreatJungle = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -14322,7 +14338,6 @@ export type CombatLeagueVsSeekerGreatJungle = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/jungleLeague2022_icon.png";
@@ -14443,7 +14458,6 @@ export type CombatLeagueVsSeekerGreatKanto = S<
 				"TERRAKION",
 				"VIRIZION",
 				"LANDORUS",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -14456,7 +14470,6 @@ export type CombatLeagueVsSeekerGreatKanto = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/kantoLeague2022_icon.png";
@@ -15024,7 +15037,6 @@ export type CombatLeagueVsSeekerGreatLittle = S<
 				"VIRIZION",
 				"TORNADUS",
 				"THUNDURUS",
-				"RESHIRAM",
 				"ZEKROM",
 				"LANDORUS",
 				"KYUREM",
@@ -15088,7 +15100,6 @@ export type CombatLeagueVsSeekerGreatLittle = S<
 				"OGERPON",
 				"TERAPAGOS",
 				"PECHARUNT",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/GBL_littlecup.png";
@@ -16131,7 +16142,6 @@ export type CombatLeagueVsSeekerGreatLittleRemix = S<
 				"VIRIZION",
 				"TORNADUS",
 				"THUNDURUS",
-				"RESHIRAM",
 				"ZEKROM",
 				"LANDORUS",
 				"KYUREM",
@@ -16195,7 +16205,6 @@ export type CombatLeagueVsSeekerGreatLittleRemix = S<
 				"OGERPON",
 				"TERAPAGOS",
 				"PECHARUNT",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/GBL_littlecupremix.png";
@@ -17165,7 +17174,6 @@ export type CombatLeagueVsSeekerGreatLove = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -17178,7 +17186,6 @@ export type CombatLeagueVsSeekerGreatLove = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/loveLeague2022_icon.png";
@@ -17769,9 +17776,9 @@ export type CombatLeagueVsSeekerGreatMegas = S<
 		{
 			allowTempEvos: true;
 			badgeType: "BADGE_GREAT_LEAGUE";
-			bannedPokemon: ["DITTO", "SHEDINJA", "MIMIKYU"];
+			bannedPokemon: ["DITTO", "SHEDINJA"];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
-			iconUrl: "https://storage.googleapis.com/prod-public-images/pogo_great_league.png";
+			iconUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F58ea0c64_pogo_mega_great_league.png";
 			leagueType: "STANDARD";
 			pokemonCondition: [
 				{
@@ -17807,7 +17814,6 @@ export type CombatLeagueVsSeekerGreatPvpNextPreview = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -17818,7 +17824,6 @@ export type CombatLeagueVsSeekerGreatPvpNextPreview = S<
 				"ZACIAN",
 				"ZAMAZENTA",
 				"ENAMORUS",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/pogo_great_league.png";
@@ -17853,7 +17858,6 @@ export type CombatLeagueVsSeekerGreatRemix = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -17866,7 +17870,6 @@ export type CombatLeagueVsSeekerGreatRemix = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/league_icon_great_pokemon_limit.png";
@@ -17986,7 +17989,6 @@ export type CombatLeagueVsSeekerGreatRetro = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -17999,7 +18001,6 @@ export type CombatLeagueVsSeekerGreatRetro = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/GBL_retrocup.png";
@@ -18747,6 +18748,74 @@ export type CombatLeagueVsSeekerGreatRetro = S<
 								forms: ["URSHIFU_SINGLE_STRIKE"];
 								id: "URSHIFU";
 							},
+							{
+								forms: ["FORM_UNSET", "MASCHIFF_NORMAL"];
+								id: "MASCHIFF";
+							},
+							{
+								forms: ["FORM_UNSET", "MABOSSTIFF_NORMAL"];
+								id: "MABOSSTIFF";
+							},
+							{
+								forms: ["FORM_UNSET", "BRUTEBONNET_NORMAL"];
+								id: "BRUTEBONNET";
+							},
+							{
+								forms: ["FORM_UNSET", "IRONJUGULIS_NORMAL"];
+								id: "IRONJUGULIS";
+							},
+							{
+								forms: ["FORM_UNSET", "WOCHIEN_NORMAL"];
+								id: "WOCHIEN";
+							},
+							{
+								forms: ["FORM_UNSET", "CHIENPAO_NORMAL"];
+								id: "CHIENPAO";
+							},
+							{
+								forms: ["FORM_UNSET", "TINGLU_NORMAL"];
+								id: "TINGLU";
+							},
+							{
+								forms: ["FORM_UNSET", "CHIYU_NORMAL"];
+								id: "CHIYU";
+							},
+							{
+								forms: ["FORM_UNSET", "ROARINGMOON_NORMAL"];
+								id: "ROARINGMOON";
+							},
+							{
+								forms: ["FORM_UNSET", "ORTHWORM_NORMAL"];
+								id: "ORTHWORM";
+							},
+							{
+								forms: ["FORM_UNSET", "IRONTREADS_NORMAL"];
+								id: "IRONTREADS";
+							},
+							{
+								forms: ["FORM_UNSET", "ARCHALUDON_NORMAL"];
+								id: "ARCHALUDON";
+							},
+							{
+								forms: ["FORM_UNSET", "IRONCROWN_NORMAL"];
+								id: "IRONCROWN";
+							},
+							{
+								forms: ["FORM_UNSET", "SCREAMTAIL_NORMAL"];
+								id: "SCREAMTAIL";
+							},
+							{
+								forms: ["FORM_UNSET", "FLUTTERMANE_NORMAL"];
+								id: "FLUTTERMANE";
+							},
+							{
+								forms: ["FORM_UNSET", "IRONVALIANT_NORMAL"];
+								id: "IRONVALIANT";
+							},
+							{
+								forms: ["FORM_UNSET", "FEZANDIPITI_NORMAL"];
+								id: "FEZANDIPITI";
+							},
 						];
 					};
 					type: "POKEMON_BANLIST";
@@ -18774,7 +18843,6 @@ export type CombatLeagueVsSeekerGreatScroll = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -18787,7 +18855,6 @@ export type CombatLeagueVsSeekerGreatScroll = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/pgo-s18-gbl-icon-2025.png";
@@ -18830,7 +18897,6 @@ export type CombatLeagueVsSeekerGreatSingleType = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -18843,7 +18909,6 @@ export type CombatLeagueVsSeekerGreatSingleType = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/monoType_icon.png";
@@ -20609,7 +20674,6 @@ export type CombatLeagueVsSeekerGreatSinnoh = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -20622,7 +20686,6 @@ export type CombatLeagueVsSeekerGreatSinnoh = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/premierball_sprite.png";
@@ -21032,7 +21095,6 @@ export type CombatLeagueVsSeekerGreatSummer = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -21045,7 +21107,6 @@ export type CombatLeagueVsSeekerGreatSummer = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/summer_gblcup.png";
@@ -21088,7 +21149,6 @@ export type CombatLeagueVsSeekerGreatWeather = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -21101,7 +21161,6 @@ export type CombatLeagueVsSeekerGreatWeather = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/weatherCup_icon.png";
@@ -21247,7 +21306,6 @@ export type CombatLeagueVsSeekerLittleCatch = S<
 				"OGERPON",
 				"TERAPAGOS",
 				"PECHARUNT",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/premierball_sprite.png";
@@ -21503,7 +21561,6 @@ export type CombatLeagueVsSeekerLittleHoliday = S<
 				"OGERPON",
 				"TERAPAGOS",
 				"PECHARUNT",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/holiday_league_icon.png";
@@ -21656,7 +21713,6 @@ export type CombatLeagueVsSeekerLittleJungle = S<
 				"OGERPON",
 				"TERAPAGOS",
 				"PECHARUNT",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/jungleLeague2022_icon.png";
@@ -21847,7 +21903,6 @@ export type CombatLeagueVsSeekerLittleJungleRemix = S<
 				"OGERPON",
 				"TERAPAGOS",
 				"PECHARUNT",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/jungleCupRemix_icon.png";
@@ -21900,7 +21955,6 @@ export type CombatLeagueVsSeekerMountainGreat = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -21913,7 +21967,6 @@ export type CombatLeagueVsSeekerMountainGreat = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/mountainCup_icon.png";
@@ -21970,7 +22023,6 @@ export type CombatLeagueVsSeekerPsychic = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/psychic_gbl.png";
@@ -22016,7 +22068,6 @@ export type CombatLeagueVsSeekerSpringGreat = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -22029,7 +22080,6 @@ export type CombatLeagueVsSeekerSpringGreat = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/spring_cup_icon.png";
@@ -22073,7 +22123,6 @@ export type CombatLeagueVsSeekerSunshineGreat = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -22086,7 +22135,6 @@ export type CombatLeagueVsSeekerSunshineGreat = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/sunshine_cup_icon.png";
@@ -22145,7 +22193,6 @@ export type CombatLeagueVsSeekerWillpower = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
-				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/willpower_cup_icon.png";
@@ -22224,6 +22271,7 @@ export type CombatLeagueDefaultGreatMasterfileEntry =
 	| CombatLeagueVsSeekerGreatCatchSeason11
 	| CombatLeagueVsSeekerGreatChampionshipNaic
 	| CombatLeagueVsSeekerGreatChampionshipSeries
+	| CombatLeagueVsSeekerGreatChampionshipsLegacy
 	| CombatLeagueVsSeekerGreatElectric
 	| CombatLeagueVsSeekerGreatElement
 	| CombatLeagueVsSeekerGreatFantasy

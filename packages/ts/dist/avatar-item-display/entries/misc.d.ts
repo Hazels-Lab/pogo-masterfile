@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "misc", 344 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "misc", 348 entries.
 
 import type { S } from "../../_utils";
 import type { AvatarItemDisplay } from "../types";
@@ -451,6 +451,22 @@ export type AvatarItemDisplayNGradientTesthair1 = S<
 		}
 	>
 >;
+export type AvatarItemDisplayNHairBlanche = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_hair_blanche",
+		{
+			iconAddress: "n_hair_blanche_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNHairCandela = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_hair_candela",
+		{
+			iconAddress: "n_hair_candela_icon";
+		}
+	>
+>;
 export type AvatarItemDisplayNHairCoilyshort0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_hair_coilyshort_0",
@@ -544,6 +560,14 @@ export type AvatarItemDisplayNHairMorgrem0 = S<
 		"N_DISPLAY_n_hair_morgrem_0",
 		{
 			iconAddress: "n_hair_morgrem_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNHairSpark = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_hair_spark",
+		{
+			iconAddress: "n_hair_spark_icon";
 		}
 	>
 >;
@@ -904,6 +928,14 @@ export type AvatarItemDisplaySetCosmogM = S<
 		"N_DISPLAY_set_cosmog_m",
 		{
 			iconAddress: "set_cosmog_b";
+		}
+	>
+>;
+export type AvatarItemDisplaySetCynthia = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_set_cynthia",
+		{
+			iconAddress: "set_cynthia";
 		}
 	>
 >;
@@ -2813,6 +2845,8 @@ export type AvatarItemDisplayMiscMasterfileEntry =
 	| AvatarItemDisplayNGradientTesteye1
 	| AvatarItemDisplayNGradientTesthair0
 	| AvatarItemDisplayNGradientTesthair1
+	| AvatarItemDisplayNHairBlanche
+	| AvatarItemDisplayNHairCandela
 	| AvatarItemDisplayNHairCoilyshort0
 	| AvatarItemDisplayNHairCurlymedium0
 	| AvatarItemDisplayNHairDefaultA0
@@ -2825,6 +2859,7 @@ export type AvatarItemDisplayMiscMasterfileEntry =
 	| AvatarItemDisplayNHairMohawk00
 	| AvatarItemDisplayNHairMohawk10
 	| AvatarItemDisplayNHairMorgrem0
+	| AvatarItemDisplayNHairSpark
 	| AvatarItemDisplayNHairStraightlong0
 	| AvatarItemDisplayNHairStraightmedium0
 	| AvatarItemDisplayNHairStraightshort0
@@ -2870,6 +2905,7 @@ export type AvatarItemDisplayMiscMasterfileEntry =
 	| AvatarItemDisplaySetCofagrigusM
 	| AvatarItemDisplaySetCosmogF
 	| AvatarItemDisplaySetCosmogM
+	| AvatarItemDisplaySetCynthia
 	| AvatarItemDisplaySetDayofthedeadF
 	| AvatarItemDisplaySetDayofthedeadM
 	| AvatarItemDisplaySetDedenneitemsF

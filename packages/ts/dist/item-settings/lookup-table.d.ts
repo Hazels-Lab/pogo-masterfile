@@ -51,6 +51,13 @@ import type {
 	ItemSettingsItemEventTicketGrayToGift,
 	ItemSettingsItemEventTicketPink,
 	ItemSettingsItemEventTicketPinkToGift,
+	ItemSettingsItemEventTicketS23202601,
+	ItemSettingsItemEventTicketS23202601ToGift,
+	ItemSettingsItemEventTicketS23202602,
+	ItemSettingsItemEventTicketS23202602ToGift,
+	ItemSettingsItemEventTicketS23202603,
+	ItemSettingsItemEventTicketS23202604,
+	ItemSettingsItemEventTicketS23202609,
 	ItemSettingsItemEvergreenTicket,
 	ItemSettingsItemEvergreenTicketToGift,
 	ItemSettingsItemFreeRaidTicket,
@@ -197,6 +204,13 @@ export interface ItemSettingsLookup {
 	ITEM_EVENT_TICKET_GRAY_TO_GIFT: ItemSettingsItemEventTicketGrayToGift;
 	ITEM_EVENT_TICKET_PINK: ItemSettingsItemEventTicketPink;
 	ITEM_EVENT_TICKET_PINK_TO_GIFT: ItemSettingsItemEventTicketPinkToGift;
+	ITEM_EVENT_TICKET_S23_2026_01: ItemSettingsItemEventTicketS23202601;
+	ITEM_EVENT_TICKET_S23_2026_01_TO_GIFT: ItemSettingsItemEventTicketS23202601ToGift;
+	ITEM_EVENT_TICKET_S23_2026_02: ItemSettingsItemEventTicketS23202602;
+	ITEM_EVENT_TICKET_S23_2026_02_TO_GIFT: ItemSettingsItemEventTicketS23202602ToGift;
+	ITEM_EVENT_TICKET_S23_2026_03: ItemSettingsItemEventTicketS23202603;
+	ITEM_EVENT_TICKET_S23_2026_04: ItemSettingsItemEventTicketS23202604;
+	ITEM_EVENT_TICKET_S23_2026_09: ItemSettingsItemEventTicketS23202609;
 	ITEM_EVERGREEN_TICKET: ItemSettingsItemEvergreenTicket;
 	ITEM_EVERGREEN_TICKET_TO_GIFT: ItemSettingsItemEvergreenTicketToGift;
 	ITEM_FREE_RAID_TICKET: ItemSettingsItemFreeRaidTicket;

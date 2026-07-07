@@ -2413,6 +2413,7 @@ const (
 	PokemonSettingsTemplateIDV0998PokemonBaxcaliburNormal                PokemonSettingsTemplateID = "V0998_POKEMON_BAXCALIBUR_NORMAL"
 	PokemonSettingsTemplateIDV0999PokemonGimmighoul                      PokemonSettingsTemplateID = "V0999_POKEMON_GIMMIGHOUL"
 	PokemonSettingsTemplateIDV0999PokemonGimmighoulCoinA1                PokemonSettingsTemplateID = "V0999_POKEMON_GIMMIGHOUL_COIN_A1"
+	PokemonSettingsTemplateIDV0999PokemonGimmighoulCoinA22026            PokemonSettingsTemplateID = "V0999_POKEMON_GIMMIGHOUL_COIN_A2_2026"
 	PokemonSettingsTemplateIDV0999PokemonGimmighoulNormal                PokemonSettingsTemplateID = "V0999_POKEMON_GIMMIGHOUL_NORMAL"
 	PokemonSettingsTemplateIDV1000PokemonGholdengo                       PokemonSettingsTemplateID = "V1000_POKEMON_GHOLDENGO"
 	PokemonSettingsTemplateIDV1000PokemonGholdengoNormal                 PokemonSettingsTemplateID = "V1000_POKEMON_GHOLDENGO_NORMAL"
@@ -4878,6 +4879,7 @@ var PokemonSettingsTemplateIDValues = [...]PokemonSettingsTemplateID{
 	PokemonSettingsTemplateIDV0998PokemonBaxcaliburNormal,
 	PokemonSettingsTemplateIDV0999PokemonGimmighoul,
 	PokemonSettingsTemplateIDV0999PokemonGimmighoulCoinA1,
+	PokemonSettingsTemplateIDV0999PokemonGimmighoulCoinA22026,
 	PokemonSettingsTemplateIDV0999PokemonGimmighoulNormal,
 	PokemonSettingsTemplateIDV1000PokemonGholdengo,
 	PokemonSettingsTemplateIDV1000PokemonGholdengoNormal,

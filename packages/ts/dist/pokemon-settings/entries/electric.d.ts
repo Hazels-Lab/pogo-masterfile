@@ -14,6 +14,16 @@ export type PokemonSettingsV0025PokemonPikachu = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -88,6 +98,16 @@ export type PokemonSettingsV0025PokemonPikachuAdventureHat2020 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -157,6 +177,16 @@ export type PokemonSettingsV0025PokemonPikachuBb2026 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -223,6 +253,16 @@ export type PokemonSettingsV0025PokemonPikachuCopy2019 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -290,6 +330,16 @@ export type PokemonSettingsV0025PokemonPikachuCostume2020 = S<
 			buddyOffsetFemale: [5, 0, 0];
 			buddyOffsetMale: [5, 0, 0];
 			buddyScale: 11;
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderGroundM: 0.4;
 				cylinderHeightM: 0.5;
@@ -359,6 +409,16 @@ export type PokemonSettingsV0025PokemonPikachuDiwali2024 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -428,6 +488,16 @@ export type PokemonSettingsV0025PokemonPikachuDoctor = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -495,6 +565,16 @@ export type PokemonSettingsV0025PokemonPikachuFall2019 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -562,6 +642,16 @@ export type PokemonSettingsV0025PokemonPikachuFlying01 = S<
 			buddyOffsetFemale: [5, 0, 0];
 			buddyOffsetMale: [5, 0, 0];
 			buddyScale: 11;
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderGroundM: 0.4;
 				cylinderHeightM: 1;
@@ -630,6 +720,16 @@ export type PokemonSettingsV0025PokemonPikachuFlying02 = S<
 			buddyOffsetFemale: [5, 0, 0];
 			buddyOffsetMale: [5, 0, 0];
 			buddyScale: 11;
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderGroundM: 0.4;
 				cylinderHeightM: 1;
@@ -698,6 +798,16 @@ export type PokemonSettingsV0025PokemonPikachuFlying03 = S<
 			buddyOffsetFemale: [5, 0, 0];
 			buddyOffsetMale: [5, 0, 0];
 			buddyScale: 11;
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderGroundM: 0.4;
 				cylinderHeightM: 1;
@@ -766,6 +876,16 @@ export type PokemonSettingsV0025PokemonPikachuFlying04 = S<
 			buddyOffsetFemale: [5, 0, 0];
 			buddyOffsetMale: [5, 0, 0];
 			buddyScale: 11;
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderGroundM: 0.4;
 				cylinderHeightM: 1;
@@ -833,6 +953,16 @@ export type PokemonSettingsV0025PokemonPikachuFlying5thAnniv = S<
 			buddyOffsetFemale: [5, 0, 0];
 			buddyOffsetMale: [5, 0, 0];
 			buddyScale: 11;
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderGroundM: 0.4;
 				cylinderHeightM: 0.5;
@@ -901,6 +1031,16 @@ export type PokemonSettingsV0025PokemonPikachuFlyingOkinawa = S<
 			buddyOffsetFemale: [5, 0, 0];
 			buddyOffsetMale: [5, 0, 0];
 			buddyScale: 11;
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderGroundM: 0.4;
 				cylinderHeightM: 0.5;
@@ -970,6 +1110,16 @@ export type PokemonSettingsV0025PokemonPikachuFossil2026 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -997,6 +1147,7 @@ export type PokemonSettingsV0025PokemonPikachuFossil2026 = S<
 				movementTimerS: 10;
 				movementType: "MOVEMENT_JUMP";
 			};
+			evolutionIds: ["RAICHU"];
 			evolutionPips: 1;
 			familyId: "FAMILY_PIKACHU";
 			form: "PIKACHU_FOSSIL_2026";
@@ -1039,6 +1190,16 @@ export type PokemonSettingsV0025PokemonPikachuGofest2022 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -1107,6 +1268,16 @@ export type PokemonSettingsV0025PokemonPikachuGofest2024Mtiara = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -1173,6 +1344,16 @@ export type PokemonSettingsV0025PokemonPikachuGofest2024Stiara = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -1239,6 +1420,16 @@ export type PokemonSettingsV0025PokemonPikachuGofest2025GogglesBlue = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -1309,6 +1500,16 @@ export type PokemonSettingsV0025PokemonPikachuGofest2025GogglesRed = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -1379,6 +1580,16 @@ export type PokemonSettingsV0025PokemonPikachuGofest2025GogglesYellow = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -1449,6 +1660,16 @@ export type PokemonSettingsV0025PokemonPikachuGofest2025MonocleBlue = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -1519,6 +1740,16 @@ export type PokemonSettingsV0025PokemonPikachuGofest2025MonocleRed = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -1589,6 +1820,16 @@ export type PokemonSettingsV0025PokemonPikachuGofest2025MonocleYellow = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -1659,6 +1900,16 @@ export type PokemonSettingsV0025PokemonPikachuGofest2026CapBlue = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -1728,6 +1979,16 @@ export type PokemonSettingsV0025PokemonPikachuGofest2026CapRed = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -1797,6 +2058,16 @@ export type PokemonSettingsV0025PokemonPikachuGofest2026CapYellow = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -1866,6 +2137,16 @@ export type PokemonSettingsV0025PokemonPikachuGotour2024A = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -1932,6 +2213,16 @@ export type PokemonSettingsV0025PokemonPikachuGotour2024A02 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -1998,6 +2289,16 @@ export type PokemonSettingsV0025PokemonPikachuGotour2024B = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -2064,6 +2365,16 @@ export type PokemonSettingsV0025PokemonPikachuGotour2024B02 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -2130,6 +2441,16 @@ export type PokemonSettingsV0025PokemonPikachuGotour2025A = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -2196,6 +2517,16 @@ export type PokemonSettingsV0025PokemonPikachuGotour2025A02 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -2262,6 +2593,16 @@ export type PokemonSettingsV0025PokemonPikachuGotour2025B = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -2328,6 +2669,16 @@ export type PokemonSettingsV0025PokemonPikachuGotour2025B02 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -2394,6 +2745,16 @@ export type PokemonSettingsV0025PokemonPikachuGotour2026A = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -2460,6 +2821,16 @@ export type PokemonSettingsV0025PokemonPikachuGotour2026A02 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -2526,6 +2897,16 @@ export type PokemonSettingsV0025PokemonPikachuGotour2026B = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -2592,6 +2973,16 @@ export type PokemonSettingsV0025PokemonPikachuGotour2026B02 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -2658,6 +3049,16 @@ export type PokemonSettingsV0025PokemonPikachuGotour2026C = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -2724,6 +3125,16 @@ export type PokemonSettingsV0025PokemonPikachuGotour2026C02 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -2790,6 +3201,16 @@ export type PokemonSettingsV0025PokemonPikachuHorizons = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -2857,6 +3278,16 @@ export type PokemonSettingsV0025PokemonPikachuJeju = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -2923,6 +3354,16 @@ export type PokemonSettingsV0025PokemonPikachuKariyushi = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -2989,6 +3430,16 @@ export type PokemonSettingsV0025PokemonPikachuKurta = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -3058,6 +3509,16 @@ export type PokemonSettingsV0025PokemonPikachuNormal = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -3133,6 +3594,16 @@ export type PokemonSettingsV0025PokemonPikachuPopStar = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -3199,6 +3670,16 @@ export type PokemonSettingsV0025PokemonPikachuRockStar = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -3265,6 +3746,16 @@ export type PokemonSettingsV0025PokemonPikachuSummer2023A = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -3331,6 +3822,16 @@ export type PokemonSettingsV0025PokemonPikachuSummer2023B = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -3397,6 +3898,16 @@ export type PokemonSettingsV0025PokemonPikachuSummer2023C = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -3463,6 +3974,16 @@ export type PokemonSettingsV0025PokemonPikachuSummer2023D = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -3529,6 +4050,16 @@ export type PokemonSettingsV0025PokemonPikachuSummer2023E = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -3595,6 +4126,16 @@ export type PokemonSettingsV0025PokemonPikachuTshirt01 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -3661,6 +4202,16 @@ export type PokemonSettingsV0025PokemonPikachuTshirt02 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -3727,6 +4278,16 @@ export type PokemonSettingsV0025PokemonPikachuTshirt03 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -3793,6 +4354,16 @@ export type PokemonSettingsV0025PokemonPikachuVisor2026 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -3863,6 +4434,16 @@ export type PokemonSettingsV0025PokemonPikachuVs2019 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -3929,6 +4510,16 @@ export type PokemonSettingsV0025PokemonPikachuWcs2022 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -3999,6 +4590,16 @@ export type PokemonSettingsV0025PokemonPikachuWcs2023 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -4069,6 +4670,16 @@ export type PokemonSettingsV0025PokemonPikachuWcs2024 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -4139,6 +4750,16 @@ export type PokemonSettingsV0025PokemonPikachuWcs2025 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -4208,6 +4829,16 @@ export type PokemonSettingsV0025PokemonPikachuWinter2020 = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 11;
 			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.5;
 				cylinderRadiusM: 0.37;
@@ -4276,6 +4907,16 @@ export type PokemonSettingsV0026PokemonRaichu = S<
 			buddyOffsetFemale: [6.9, 0, -14.2];
 			buddyOffsetMale: [6.9, 0, -14.2];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.75;
 				cylinderRadiusM: 0.486;
@@ -4303,6 +4944,18 @@ export type PokemonSettingsV0026PokemonRaichu = S<
 				movementTimerS: 6;
 				movementType: "MOVEMENT_JUMP";
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA_X";
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 60;
+				},
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA_Y";
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 60;
+				},
+			];
 			evolutionPips: 1;
 			familyId: "FAMILY_PIKACHU";
 			heightStdDev: 0.1;
@@ -4324,6 +4977,35 @@ export type PokemonSettingsV0026PokemonRaichu = S<
 				baseDefense: 151;
 				baseStamina: 155;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 1.2;
+					averageWeightKg: 38;
+					buddyPortraitOffset: [0, 0, -1100];
+					camera: {
+						cylinderHeightM: 1;
+						cylinderRadiusM: 1;
+					};
+					stats: {
+						baseAttack: 277;
+						baseDefense: 203;
+						baseStamina: 155;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
+					typeOverride1: "POKEMON_TYPE_ELECTRIC";
+				},
+				{
+					averageHeightM: 1;
+					averageWeightKg: 26;
+					stats: {
+						baseAttack: 339;
+						baseDefense: 157;
+						baseStamina: 155;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
+					typeOverride1: "POKEMON_TYPE_ELECTRIC";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 25;
 				stardustToUnlock: 10000;
@@ -4343,6 +5025,16 @@ export type PokemonSettingsV0026PokemonRaichuAlola = S<
 			buddyOffsetFemale: [6.9, 0, -14.2];
 			buddyOffsetMale: [6.9, 0, -14.2];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.75;
 				cylinderRadiusM: 0.486;
@@ -4411,6 +5103,16 @@ export type PokemonSettingsV0026PokemonRaichuNormal = S<
 			buddyOffsetFemale: [6.9, 0, -14.2];
 			buddyOffsetMale: [6.9, 0, -14.2];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.75;
 				cylinderRadiusM: 0.486;
@@ -4438,6 +5140,18 @@ export type PokemonSettingsV0026PokemonRaichuNormal = S<
 				movementTimerS: 6;
 				movementType: "MOVEMENT_JUMP";
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA_X";
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 60;
+				},
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA_Y";
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 60;
+				},
+			];
 			evolutionPips: 1;
 			familyId: "FAMILY_PIKACHU";
 			form: "RAICHU_NORMAL";
@@ -4460,6 +5174,35 @@ export type PokemonSettingsV0026PokemonRaichuNormal = S<
 				baseDefense: 151;
 				baseStamina: 155;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 1.2;
+					averageWeightKg: 38;
+					buddyPortraitOffset: [0, 0, -1100];
+					camera: {
+						cylinderHeightM: 1;
+						cylinderRadiusM: 1;
+					};
+					stats: {
+						baseAttack: 277;
+						baseDefense: 203;
+						baseStamina: 155;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
+					typeOverride1: "POKEMON_TYPE_ELECTRIC";
+				},
+				{
+					averageHeightM: 1;
+					averageWeightKg: 26;
+					stats: {
+						baseAttack: 339;
+						baseDefense: 157;
+						baseStamina: 155;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
+					typeOverride1: "POKEMON_TYPE_ELECTRIC";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 25;
 				stardustToUnlock: 10000;
@@ -5768,6 +6511,16 @@ export type PokemonSettingsV0172PokemonPichu = S<
 			buddyOffsetMale: [0, 0.5, -0.2];
 			buddyScale: 13;
 			buddySize: "BUDDY_BABY";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.4;
 				cylinderRadiusM: 0.2;
@@ -5839,6 +6592,16 @@ export type PokemonSettingsV0172PokemonPichuNormal = S<
 			buddyOffsetMale: [0, 0.5, -0.2];
 			buddyScale: 13;
 			buddySize: "BUDDY_BABY";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
 			camera: {
 				cylinderHeightM: 0.4;
 				cylinderRadiusM: 0.2;

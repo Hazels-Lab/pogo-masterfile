@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "temporaryEvolutionSettings", 51 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "temporaryEvolutionSettings", 55 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { TemporaryEvolutionSettings } from "../types";
@@ -72,6 +72,24 @@ export type TemporaryEvolutionSettingsV0018PokemonPidgeot = S<
 				{
 					assetBundleValue: 51;
 					temporaryEvolutionId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+		}
+	>
+>;
+export type TemporaryEvolutionSettingsV0026PokemonRaichu = S<
+	TemporaryEvolutionSettings<
+		"TEMPORARY_EVOLUTION_V0026_POKEMON_RAICHU",
+		{
+			pokemonId: "RAICHU";
+			temporaryEvolutions: [
+				{
+					assetBundleValue: 51;
+					temporaryEvolutionId: "TEMP_EVOLUTION_MEGA_X";
+				},
+				{
+					assetBundleValue: 52;
+					temporaryEvolutionId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 		}
@@ -203,6 +221,24 @@ export type TemporaryEvolutionSettingsV0149PokemonDragonite = S<
 		}
 	>
 >;
+export type TemporaryEvolutionSettingsV0150PokemonMewtwo = S<
+	TemporaryEvolutionSettings<
+		"TEMPORARY_EVOLUTION_V0150_POKEMON_MEWTWO",
+		{
+			pokemonId: "MEWTWO";
+			temporaryEvolutions: [
+				{
+					assetBundleValue: 51;
+					temporaryEvolutionId: "TEMP_EVOLUTION_MEGA_X";
+				},
+				{
+					assetBundleValue: 52;
+					temporaryEvolutionId: "TEMP_EVOLUTION_MEGA_Y";
+				},
+			];
+		}
+	>
+>;
 export type TemporaryEvolutionSettingsV0181PokemonAmpharos = S<
 	TemporaryEvolutionSettings<
 		"TEMPORARY_EVOLUTION_V0181_POKEMON_AMPHAROS",
@@ -250,6 +286,20 @@ export type TemporaryEvolutionSettingsV0214PokemonHeracross = S<
 		"TEMPORARY_EVOLUTION_V0214_POKEMON_HERACROSS",
 		{
 			pokemonId: "HERACROSS";
+			temporaryEvolutions: [
+				{
+					assetBundleValue: 51;
+					temporaryEvolutionId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+		}
+	>
+>;
+export type TemporaryEvolutionSettingsV0227PokemonSkarmory = S<
+	TemporaryEvolutionSettings<
+		"TEMPORARY_EVOLUTION_V0227_POKEMON_SKARMORY",
+		{
+			pokemonId: "SKARMORY";
 			temporaryEvolutions: [
 				{
 					assetBundleValue: 51;
@@ -623,6 +673,20 @@ export type TemporaryEvolutionSettingsV0428PokemonLopunny = S<
 		}
 	>
 >;
+export type TemporaryEvolutionSettingsV0445PokemonGarchomp = S<
+	TemporaryEvolutionSettings<
+		"TEMPORARY_EVOLUTION_V0445_POKEMON_GARCHOMP",
+		{
+			pokemonId: "GARCHOMP";
+			temporaryEvolutions: [
+				{
+					assetBundleValue: 51;
+					temporaryEvolutionId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+		}
+	>
+>;
 export type TemporaryEvolutionSettingsV0448PokemonLucario = S<
 	TemporaryEvolutionSettings<
 		"TEMPORARY_EVOLUTION_V0448_POKEMON_LUCARIO",
@@ -728,6 +792,7 @@ export type TemporaryEvolutionSettingsMasterfileEntry =
 	| TemporaryEvolutionSettingsV0009PokemonBlastoise
 	| TemporaryEvolutionSettingsV0015PokemonBeedrill
 	| TemporaryEvolutionSettingsV0018PokemonPidgeot
+	| TemporaryEvolutionSettingsV0026PokemonRaichu
 	| TemporaryEvolutionSettingsV0065PokemonAlakazam
 	| TemporaryEvolutionSettingsV0071PokemonVictreebel
 	| TemporaryEvolutionSettingsV0080PokemonSlowbro
@@ -737,10 +802,12 @@ export type TemporaryEvolutionSettingsMasterfileEntry =
 	| TemporaryEvolutionSettingsV0130PokemonGyarados
 	| TemporaryEvolutionSettingsV0142PokemonAerodactyl
 	| TemporaryEvolutionSettingsV0149PokemonDragonite
+	| TemporaryEvolutionSettingsV0150PokemonMewtwo
 	| TemporaryEvolutionSettingsV0181PokemonAmpharos
 	| TemporaryEvolutionSettingsV0208PokemonSteelix
 	| TemporaryEvolutionSettingsV0212PokemonScizor
 	| TemporaryEvolutionSettingsV0214PokemonHeracross
+	| TemporaryEvolutionSettingsV0227PokemonSkarmory
 	| TemporaryEvolutionSettingsV0229PokemonHoundoom
 	| TemporaryEvolutionSettingsV0248PokemonTyranitar
 	| TemporaryEvolutionSettingsV0254PokemonSceptile
@@ -767,6 +834,7 @@ export type TemporaryEvolutionSettingsMasterfileEntry =
 	| TemporaryEvolutionSettingsV0384PokemonRayquaza
 	| TemporaryEvolutionSettingsV0428PokemonGarchomp
 	| TemporaryEvolutionSettingsV0428PokemonLopunny
+	| TemporaryEvolutionSettingsV0445PokemonGarchomp
 	| TemporaryEvolutionSettingsV0448PokemonLucario
 	| TemporaryEvolutionSettingsV0460PokemonAbomasnow
 	| TemporaryEvolutionSettingsV0475PokemonGallade

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-temp-evo-overrides", 14 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-temp-evo-overrides", 15 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -226,6 +226,65 @@ export type PokemonExtendedSettingsV0009PokemonBlastoise = S<
 				},
 			];
 			uniqueId: "BLASTOISE";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0026PokemonRaichu = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0026_POKEMON_RAICHU",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 39;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 24;
+						maxReticleSize: 14;
+						scale: 15;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 1;
+					};
+					maxStationVisualSettings: {
+						scale: 2.9;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 0.6;
+				mUpperBound: 1;
+				xlUpperBound: 1.2;
+				xsLowerBound: 0.4;
+				xxlUpperBound: 1.4;
+				xxsLowerBound: 0.392;
+			};
+			tempEvoOverrides: [
+				{
+					sizeSettings: {
+						mLowerBound: 0.9;
+						mUpperBound: 1.5;
+						xlUpperBound: 1.8;
+						xsLowerBound: 0.6;
+						xxlUpperBound: 2.1;
+						xxsLowerBound: 0.588;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+				},
+				{
+					sizeSettings: {
+						mLowerBound: 0.75;
+						mUpperBound: 1.25;
+						xlUpperBound: 1.5;
+						xsLowerBound: 0.5;
+						xxlUpperBound: 1.75;
+						xxsLowerBound: 0.49;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
+				},
+			];
+			uniqueId: "RAICHU";
 		}
 	>
 >;
@@ -782,6 +841,7 @@ export type PokemonExtendedSettingsBreadOverridesTempEvoOverridesMasterfileEntry
 	| PokemonExtendedSettingsV0003PokemonVenusaur
 	| PokemonExtendedSettingsV0006PokemonCharizard
 	| PokemonExtendedSettingsV0009PokemonBlastoise
+	| PokemonExtendedSettingsV0026PokemonRaichu
 	| PokemonExtendedSettingsV0065PokemonAlakazam
 	| PokemonExtendedSettingsV0094PokemonGengar
 	| PokemonExtendedSettingsV0130PokemonGyarados

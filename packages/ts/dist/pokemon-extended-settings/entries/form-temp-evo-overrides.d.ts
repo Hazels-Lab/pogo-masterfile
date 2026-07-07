@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form-temp-evo-overrides", 44 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form-temp-evo-overrides", 45 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -330,6 +330,47 @@ export type PokemonExtendedSettingsV0149PokemonDragoniteNormal = S<
 				},
 			];
 			uniqueId: "DRAGONITE";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0150PokemonMewtwoNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0150_POKEMON_MEWTWO_NORMAL",
+		{
+			form: "MEWTWO_NORMAL";
+			sizeSettings: {
+				mLowerBound: 1.5;
+				mUpperBound: 2.5;
+				xlUpperBound: 3;
+				xsLowerBound: 1;
+				xxlUpperBound: 3.5;
+				xxsLowerBound: 0.98;
+			};
+			tempEvoOverrides: [
+				{
+					sizeSettings: {
+						mLowerBound: 1.725;
+						mUpperBound: 2.875;
+						xlUpperBound: 3.45;
+						xsLowerBound: 1.15;
+						xxlUpperBound: 3.565;
+						xxsLowerBound: 1.127;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
+				},
+				{
+					sizeSettings: {
+						mLowerBound: 1.125;
+						mUpperBound: 1.875;
+						xlUpperBound: 2.25;
+						xsLowerBound: 0.75;
+						xxlUpperBound: 2.325;
+						xxsLowerBound: 0.735;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
+				},
+			];
+			uniqueId: "MEWTWO";
 		}
 	>
 >;
@@ -1336,6 +1377,7 @@ export type PokemonExtendedSettingsFormTempEvoOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0142PokemonAerodactylNormal
 	| PokemonExtendedSettingsV0142PokemonAerodactylSummer2023
 	| PokemonExtendedSettingsV0149PokemonDragoniteNormal
+	| PokemonExtendedSettingsV0150PokemonMewtwoNormal
 	| PokemonExtendedSettingsV0181PokemonAmpharosNormal
 	| PokemonExtendedSettingsV0208PokemonSteelixNormal
 	| PokemonExtendedSettingsV0212PokemonScizorNormal

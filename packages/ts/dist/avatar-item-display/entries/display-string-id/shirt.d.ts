@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shirt", 442 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shirt", 449 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -81,6 +81,15 @@ export type AvatarItemDisplayNShirtAcetrainersmB0 = S<
 		{
 			displayStringId: "n_shirt_acetrainersm_b_0_display_name";
 			iconAddress: "n_shirt_acetrainersm_b_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtAcorn = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_acorn",
+		{
+			displayStringId: "avatar_shirt_lego_jacket_2026";
+			iconAddress: "n_shirt_acorn_icon";
 		}
 	>
 >;
@@ -405,6 +414,15 @@ export type AvatarItemDisplayNShirtCowichansweater0 = S<
 		{
 			displayStringId: "n_shirt_cowichansweater_0_display_name";
 			iconAddress: "n_shirt_cowichansweater_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtCynthia = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_cynthia",
+		{
+			displayStringId: "avatar_shirt_s23cynthia";
+			iconAddress: "n_shirt_cynthia_icon";
 		}
 	>
 >;
@@ -999,6 +1017,15 @@ export type AvatarItemDisplayNShirtGengaronesie0 = S<
 		{
 			displayStringId: "n_shirt_gengaronesie_0_display_name";
 			iconAddress: "n_shirt_gengaronesie_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtGholdengoitem = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_gholdengoitem",
+		{
+			displayStringId: "avatar_shirt_gholdengo_jumpsuit";
+			iconAddress: "n_shirt_gholdengoitem_icon";
 		}
 	>
 >;
@@ -1749,6 +1776,15 @@ export type AvatarItemDisplayNShirtLasecuritycorpsB0 = S<
 		}
 	>
 >;
+export type AvatarItemDisplayNShirtLatamfootballshirt = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_latamfootballshirt",
+		{
+			displayStringId: "avatar_shirt_soccerjersey_10";
+			iconAddress: "n_shirt_latamfootballshirt_icon";
+		}
+	>
+>;
 export type AvatarItemDisplayNShirtLatiasLatios0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_shirt_latias-latios_0",
@@ -1920,6 +1956,24 @@ export type AvatarItemDisplayNShirtMegalopunnyitems0 = S<
 		}
 	>
 >;
+export type AvatarItemDisplayNShirtMegamewtwox = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_megamewtwox",
+		{
+			displayStringId: "avatar_shirt_100thieves_x";
+			iconAddress: "n_shirt_megamewtwox_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtMegamewtwoy = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_megamewtwoy",
+		{
+			displayStringId: "avatar_shirt_100thieves_y";
+			iconAddress: "n_shirt_megamewtwoy_icon";
+		}
+	>
+>;
 export type AvatarItemDisplayNShirtMegarayquaza0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_shirt_megarayquaza_0",
@@ -1998,6 +2052,15 @@ export type AvatarItemDisplayNShirtMisty0 = S<
 		{
 			displayStringId: "n_shirt_misty_0_display_name";
 			iconAddress: "n_shirt_misty_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtMlb = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_mlb",
+		{
+			displayStringId: "avatar_shirt_MLB2026";
+			iconAddress: "n_shirt_mlb_icon";
 		}
 	>
 >;
@@ -3958,7 +4021,7 @@ export type AvatarItemDisplayNShirtZeraoratshirt = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_shirt_zeraoratshirt",
 		{
-			displayStringId: "avatar_n_shirt_zeraoratshirt";
+			displayStringId: "avatar_shirt_gofest2026zeraora";
 			iconAddress: "n_shirt_zeraoratshirt_icon";
 		}
 	>
@@ -3992,6 +4055,7 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirtAcetrainerbwB0
 	| AvatarItemDisplayNShirtAcetrainersmA0
 	| AvatarItemDisplayNShirtAcetrainersmB0
+	| AvatarItemDisplayNShirtAcorn
 	| AvatarItemDisplayNShirtAllister0
 	| AvatarItemDisplayNShirtAlolacomfey0
 	| AvatarItemDisplayNShirtAnimegou0
@@ -4028,6 +4092,7 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirtConcierge0
 	| AvatarItemDisplayNShirtCosmog0
 	| AvatarItemDisplayNShirtCowichansweater0
+	| AvatarItemDisplayNShirtCynthia
 	| AvatarItemDisplayNShirtDayofdead0
 	| AvatarItemDisplayNShirtDefaultA0
 	| AvatarItemDisplayNShirtDefaultA1
@@ -4094,6 +4159,7 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirtGenderlessskirt0
 	| AvatarItemDisplayNShirtGengar0
 	| AvatarItemDisplayNShirtGengaronesie0
+	| AvatarItemDisplayNShirtGholdengoitem
 	| AvatarItemDisplayNShirtGiovanniA0
 	| AvatarItemDisplayNShirtGiovanniB0
 	| AvatarItemDisplayNShirtGiratinaitems0
@@ -4177,6 +4243,7 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirtLapearloutfitB0
 	| AvatarItemDisplayNShirtLasecuritycorpsA0
 	| AvatarItemDisplayNShirtLasecuritycorpsB0
+	| AvatarItemDisplayNShirtLatamfootballshirt
 	| AvatarItemDisplayNShirtLatiasLatios0
 	| AvatarItemDisplayNShirtLegendofarceusA0
 	| AvatarItemDisplayNShirtLegendofarceusB0
@@ -4196,6 +4263,8 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirtLysandre0
 	| AvatarItemDisplayNShirtMarshadowtshirt0
 	| AvatarItemDisplayNShirtMegalopunnyitems0
+	| AvatarItemDisplayNShirtMegamewtwox
+	| AvatarItemDisplayNShirtMegamewtwoy
 	| AvatarItemDisplayNShirtMegarayquaza0
 	| AvatarItemDisplayNShirtMelmetaljacket0
 	| AvatarItemDisplayNShirtMelmetalvest0
@@ -4205,6 +4274,7 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirtMewtwoA0
 	| AvatarItemDisplayNShirtMewtwoB0
 	| AvatarItemDisplayNShirtMisty0
+	| AvatarItemDisplayNShirtMlb
 	| AvatarItemDisplayNShirtMorpekofullonesie0
 	| AvatarItemDisplayNShirtMorpekohangryonesie0
 	| AvatarItemDisplayNShirtMovie2020jessiejamesA0

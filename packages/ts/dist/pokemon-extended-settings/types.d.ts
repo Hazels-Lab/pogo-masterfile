@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", 2466 entries (structural types).
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", 2467 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -15,7 +15,7 @@ export interface PokemonExtendedSettingsData {
 	breadOverrides?: Array<{
 		averageHeightM?: number;
 		averageWeightKg?: number;
-		breadMode?: number | "BREAD_DOUGH_MODE" | "BREAD_DOUGH_MODE_2" | "BREAD_MODE";
+		breadMode?: "BREAD_DOUGH_MODE" | "BREAD_DOUGH_MODE_2" | "BREAD_MODE" | "BREAD_SPECIAL_MODE";
 		camera?: {
 			cylinderGroundM?: number;
 			cylinderHeightM: number;

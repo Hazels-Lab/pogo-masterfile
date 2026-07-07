@@ -47,7 +47,7 @@ export type CombatMoveV0122MoveHurricane = S<
 	CombatMove<
 		"COMBAT_V0122_MOVE_HURRICANE",
 		{
-			energyDelta: -65;
+			energyDelta: -60;
 			power: 110;
 			type: "POKEMON_TYPE_FLYING";
 			uniqueId: "HURRICANE";
@@ -155,7 +155,7 @@ export type CombatMoveV0345MoveGustFast = S<
 		"COMBAT_V0345_MOVE_GUST_FAST",
 		{
 			durationTurns: 3;
-			energyDelta: 12;
+			energyDelta: 14;
 			power: 16;
 			type: "POKEMON_TYPE_FLYING";
 			uniqueId: "GUST_FAST";
@@ -231,8 +231,8 @@ export type CombatMoveV0384MoveDragonAscent = S<
 				attackerDefenseStatStageChange: -1;
 				buffActivationChance: 1;
 			};
-			energyDelta: -70;
-			power: 150;
+			energyDelta: -45;
+			power: 110;
 			type: "POKEMON_TYPE_FLYING";
 			uniqueId: "DRAGON_ASCENT";
 			vfxName: "dragon_ascent";

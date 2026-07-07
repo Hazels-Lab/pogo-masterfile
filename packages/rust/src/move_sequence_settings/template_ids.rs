@@ -237,6 +237,8 @@ pub enum MoveSequenceSettingsTemplateId {
     SequenceGigatonHammer,
     #[serde(rename = "sequence_glaciate")]
     SequenceGlaciate,
+    #[serde(rename = "sequence_glaive_rush")]
+    SequenceGlaiveRush,
     #[serde(rename = "sequence_grass_knot")]
     SequenceGrassKnot,
     #[serde(rename = "sequence_gunk_shot")]
@@ -547,6 +549,8 @@ pub enum MoveSequenceSettingsTemplateId {
     SequenceSmackDownFast,
     #[serde(rename = "sequence_snarl_fast")]
     SequenceSnarlFast,
+    #[serde(rename = "sequence_snipe_shot")]
+    SequenceSnipeShot,
     #[serde(rename = "sequence_solar_beam")]
     SequenceSolarBeam,
     #[serde(rename = "sequence_spacial_rend")]

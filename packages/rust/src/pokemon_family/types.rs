@@ -22,7 +22,7 @@ pub struct MegaEvolvablePokemonId {
 pub struct MegaEvolvablePokemonIds {
     pub candy_per_xl_candy: u64,
     pub family_id: String,
-    pub mega_evolvable_pokemon_ids: [String; 2],
+    pub mega_evolvable_pokemon_ids: Vec<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

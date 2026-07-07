@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/hat", 219 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/hat", 221 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -36,6 +36,15 @@ export type AvatarItemDisplayNHatAcetrainersmB0 = S<
 		{
 			displayStringId: "n_hat_acetrainersm_b_0_display_name";
 			iconAddress: "n_hat_acetrainersm_b_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNHatAcorn = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_hat_acorn",
+		{
+			displayStringId: "avatar_shirt_lego_hat_2026";
+			iconAddress: "n_hat_acorn_icon";
 		}
 	>
 >;
@@ -207,6 +216,15 @@ export type AvatarItemDisplayNHatCubonehat0 = S<
 		{
 			displayStringId: "n_hat_cubonehat_0_display_name";
 			iconAddress: "n_hat_cubonehat_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNHatCynthia = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_hat_cynthia",
+		{
+			displayStringId: "avatar_hat_hairpin_s23cynthia";
+			iconAddress: "n_hat_cynthia_icon";
 		}
 	>
 >;
@@ -1980,6 +1998,7 @@ export type AvatarItemDisplayDisplayStringIdHatMasterfileEntry =
 	| AvatarItemDisplayNHat6thanniversaryB0
 	| AvatarItemDisplayNHatAcetrainersmA0
 	| AvatarItemDisplayNHatAcetrainersmB0
+	| AvatarItemDisplayNHatAcorn
 	| AvatarItemDisplayNHatAdventure0
 	| AvatarItemDisplayNHatAlolanexeggutorhat0
 	| AvatarItemDisplayNHatApplinitems0
@@ -1999,6 +2018,7 @@ export type AvatarItemDisplayDisplayStringIdHatMasterfileEntry =
 	| AvatarItemDisplayNHatCrownmoon0
 	| AvatarItemDisplayNHatCrownsun0
 	| AvatarItemDisplayNHatCubonehat0
+	| AvatarItemDisplayNHatCynthia
 	| AvatarItemDisplayNHatDarumakahat0
 	| AvatarItemDisplayNHatDedenneitems0
 	| AvatarItemDisplayNHatDefaultA0

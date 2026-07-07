@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatLeague", 109 entries (structural types).
+// Generated from Pokémon GO masterfile — group "combatLeague", 110 entries (structural types).
 
 import type { W } from "../_utils";
 import type { TypeEffectiveTemplateID } from "../type-effective/entries";
@@ -25,7 +25,10 @@ export interface CombatLeagueData {
 		| "COMBAT_LEAGUE_DEFAULT_ULTRA"
 		| "COMBAT_LEAGUE_VS_SEEKER_GREAT";
 	iconUrl:
-		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FGBL_Pokemon_GO_Championship_Series_Logo.png"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F34c7dd20_pogo_mega_ultra_league.png"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F58ea0c64_pogo_mega_great_league.png"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe00ac85c_GblMasterLeague_icon.png"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FGBL_Pokemon_GO_Championship_Series_Logo.png"
 		| "https://prodholoholo-public-images.nianticlabs.com/LeagueIcons/gofestCatch2022_icon.png"
 		| "https://storage.googleapis.com/prod-public-images/colorCup_Icon.png"
 		| "https://storage.googleapis.com/prod-public-images/fantasy_cup_icon%20-%201x1.png"
