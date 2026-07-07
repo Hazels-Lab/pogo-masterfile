@@ -1222,6 +1222,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShirtYveltaljacket                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_yveltaljacket"
 	AvatarItemDisplayTemplateIDNDisplayNShirtZacostumeA0                    AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_zacostume_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtZacostumeB0                    AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_zacostume_b_0"
+	AvatarItemDisplayTemplateIDNDisplayNShirtZeraoraonesie                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_zeraoraonesie"
 	AvatarItemDisplayTemplateIDNDisplayNShirtZeraoratshirt                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_zeraoratshirt"
 	AvatarItemDisplayTemplateIDNDisplayNShirtZoruaonesie0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_zoruaonesie_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtZygarde100items0               AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_zygarde100items_0"
@@ -2888,6 +2889,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShirtYveltaljacket,
 	AvatarItemDisplayTemplateIDNDisplayNShirtZacostumeA0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtZacostumeB0,
+	AvatarItemDisplayTemplateIDNDisplayNShirtZeraoraonesie,
 	AvatarItemDisplayTemplateIDNDisplayNShirtZeraoratshirt,
 	AvatarItemDisplayTemplateIDNDisplayNShirtZoruaonesie0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtZygarde100items0,

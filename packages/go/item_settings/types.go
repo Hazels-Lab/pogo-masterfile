@@ -85,7 +85,7 @@ type ItemSettingsGlobalEventTicket struct {
 	IconRewards                  []ItemSettingsIconRewards `json:"iconRewards,omitempty"`
 	ItemBagDescriptionKey        string                    `json:"itemBagDescriptionKey"`
 	TextRewardsKey               *string                   `json:"textRewardsKey,omitempty"`
-	TicketItem                   *string                   `json:"ticketItem,omitempty"`
+	TicketItem                   json.RawMessage           `json:"ticketItem,omitempty"`
 	TitleImageUrl                *string                   `json:"titleImageUrl,omitempty"`
 }
 

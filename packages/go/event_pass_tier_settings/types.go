@@ -73,6 +73,7 @@ type EventPassTierSettingsRewards struct {
 	MegaResource              *EventPassTierSettingsCandy                     `json:"megaResource,omitempty"`
 	NeutralAvatarItemTemplate *EventPassTierSettingsNeutralAvatarItemTemplate `json:"neutralAvatarItemTemplate,omitempty"`
 	PlayerAttribute           *EventPassTierSettingsPlayerAttribute           `json:"playerAttribute,omitempty"`
+	Pokecoin                  *uint64                                         `json:"pokecoin,omitempty"`
 	PokemonEncounter          *EventPassTierSettingsPokemonEncounter          `json:"pokemonEncounter,omitempty"`
 	Stardust                  *uint64                                         `json:"stardust,omitempty"`
 	Type                      string                                          `json:"type"`

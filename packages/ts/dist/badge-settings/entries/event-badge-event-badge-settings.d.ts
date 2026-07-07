@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "badgeSettings", split "event-badge-event-badge-settings", 118 entries.
+// Generated from Pokémon GO masterfile — group "badgeSettings", split "event-badge-event-badge-settings", 117 entries.
 
 import type { S } from "../../_utils";
 import type { BadgeSettings } from "../types";
@@ -6,19 +6,6 @@ import type { BadgeSettings } from "../types";
 export type BadgeSettingsBestFriendsPlusEligible = S<
 	BadgeSettings<
 		"BADGE_BEST_FRIENDS_PLUS_ELIGIBLE",
-		{
-			badgeRank: 2;
-			eventBadge: true;
-			eventBadgeSettings: {
-				obEventBadgeSettingsNumber6: 1;
-			};
-			targets: [100];
-		}
-	>
->;
-export type BadgeSettingsCr2026001 = S<
-	BadgeSettings<
-		"BADGE_CR_2026_001",
 		{
 			badgeRank: 2;
 			eventBadge: true;
@@ -1540,7 +1527,6 @@ export type BadgeSettingsWeeklyChallengeEligible = S<
 
 export type BadgeSettingsEventBadgeEventBadgeSettingsMasterfileEntry =
 	| BadgeSettingsBestFriendsPlusEligible
-	| BadgeSettingsCr2026001
 	| BadgeSettingsEvent0103
 	| BadgeSettingsEvent0105
 	| BadgeSettingsEvent0106

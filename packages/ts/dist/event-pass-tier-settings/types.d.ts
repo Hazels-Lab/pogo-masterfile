@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 1420 entries (structural types).
+// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 1840 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -119,12 +119,18 @@ export interface EventPassTierSettingsData {
 				| "EVENT_PASS_GOFEST2026_RAID_CANDY"
 				| "EVENT_PASS_GOFEST2026_RAID_XL_CANDY"
 				| "EVENT_PASS_GOFEST2026_RAID_XP"
+				| "july2026_season_pass_entitlement"
+				| "july2026_season_pass_rank_01"
+				| "july2026_season_pass_rank_02"
+				| "july2026_season_pass_rank_03"
+				| "july2026_season_pass_rank_04"
 				| "june2026_season_pass_entitlement"
 				| "june2026_season_pass_rank_01"
 				| "june2026_season_pass_rank_02"
 				| "june2026_season_pass_rank_03"
 				| "june2026_season_pass_rank_04";
 		};
+		pokecoin?: number;
 		pokemonEncounter?: {
 			isFeaturedPokemon: boolean;
 			pokemonDisplay?: {
@@ -132,66 +138,102 @@ export interface EventPassTierSettingsData {
 				form:
 					| "CHIMECHO_NORMAL"
 					| "CLAMPERL_NORMAL"
+					| "CLOYSTER_NORMAL"
 					| "DHELMISE_NORMAL"
+					| "DRAMPA_NORMAL"
 					| "EEVEE_NORMAL"
 					| "FLITTLE_NORMAL"
 					| "FRILLISH_NORMAL"
+					| "FURFROU_NATURAL"
 					| "GARBODOR_NORMAL"
 					| "GARDEVOIR_NORMAL"
 					| "GIBLE_NORMAL"
+					| "GIMMIGHOUL_COIN_A2_2026"
+					| "GOOMY_NORMAL"
 					| "GROOKEY_NORMAL"
+					| "HIPPOPOTAS_NORMAL"
+					| "HITMONCHAN_NORMAL"
 					| "HITMONLEE_NORMAL"
+					| "HO_OH_NORMAL"
+					| "HOUNDOOM_NORMAL"
+					| "KABUTOPS_NORMAL"
 					| "LILLIGANT_HISUIAN"
 					| "LUGIA_NORMAL"
 					| "MEDICHAM_NORMAL"
 					| "MEOWTH_GALARIAN"
 					| "MEOWTH_NORMAL"
 					| "MEWTWO_NORMAL"
+					| "MR_MIME_GALARIAN"
 					| "OMASTAR_NORMAL"
 					| "PIKACHU_GOFEST_2026_CAP_BLUE"
 					| "PIKACHU_GOFEST_2026_CAP_RED"
 					| "PIKACHU_GOFEST_2026_CAP_YELLOW"
+					| "PONYTA_GALARIAN"
+					| "PONYTA_NORMAL"
 					| "ROCKRUFF_NORMAL"
+					| "SCORBUNNY_NORMAL"
 					| "SIZZLIPEDE_NORMAL"
 					| "SNEASEL_HISUIAN"
 					| "SNEASEL_NORMAL"
 					| "SNOM_NORMAL"
 					| "STANTLER_NORMAL"
+					| "TADBULB_NORMAL"
+					| "TINKATINK_NORMAL"
+					| "TORCHIC_NORMAL"
 					| "TRAPINCH_NORMAL"
 					| "TREECKO_NORMAL"
+					| "VULPIX_ALOLA"
+					| "VULPIX_NORMAL"
 					| "ZWEILOUS_NORMAL";
 				locationCard?: {
-					locationCard: "LC_SPECIALBACKGROUND_2026_MEWTWO_001";
+					locationCard: "LC_SPECIALBACKGROUND_2026_MEWTWO_001" | "LC_SPECIALBACKGROUND_GG2026";
 				};
 			};
 			pokemonId:
 				| "CHIMECHO"
 				| "CLAMPERL"
+				| "CLOYSTER"
 				| "DHELMISE"
+				| "DRAMPA"
 				| "EEVEE"
 				| "FLITTLE"
 				| "FRILLISH"
+				| "FURFROU"
 				| "GARBODOR"
 				| "GARDEVOIR"
 				| "GIBLE"
+				| "GIMMIGHOUL"
+				| "GOOMY"
 				| "GROOKEY"
+				| "HIPPOPOTAS"
+				| "HITMONCHAN"
 				| "HITMONLEE"
+				| "HO_OH"
+				| "HOUNDOOM"
+				| "KABUTOPS"
 				| "LILLIGANT"
 				| "LUGIA"
 				| "MEDICHAM"
 				| "MEOWTH"
 				| "MEWTWO"
+				| "MR_MIME"
 				| "OMASTAR"
 				| "PIKACHU"
 				| "POLTCHAGEIST"
+				| "PONYTA"
 				| "ROCKRUFF"
+				| "SCORBUNNY"
 				| "SINISTEA"
 				| "SIZZLIPEDE"
 				| "SNEASEL"
 				| "SNOM"
 				| "STANTLER"
+				| "TADBULB"
+				| "TINKATINK"
+				| "TORCHIC"
 				| "TRAPINCH"
 				| "TREECKO"
+				| "VULPIX"
 				| "ZWEILOUS";
 			statsLimitsOverride?: {
 				maxPokemonLevel: number;
@@ -199,7 +241,17 @@ export interface EventPassTierSettingsData {
 			};
 		};
 		stardust?: number;
-		type: "AVATAR_CLOTHING" | "CANDY" | "EXPERIENCE" | "ITEM" | "MEGA_RESOURCE" | "PLAYER_ATTRIBUTE" | "POKEMON_ENCOUNTER" | "STARDUST" | "XL_CANDY";
+		type:
+			| "AVATAR_CLOTHING"
+			| "CANDY"
+			| "EXPERIENCE"
+			| "ITEM"
+			| "MEGA_RESOURCE"
+			| "PLAYER_ATTRIBUTE"
+			| "POKECOIN"
+			| "POKEMON_ENCOUNTER"
+			| "STARDUST"
+			| "XL_CANDY";
 		xlCandy?: {
 			amount: number;
 			pokemonId: string;

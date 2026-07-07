@@ -1218,6 +1218,7 @@ import type {
 	AvatarItemDisplayNShirtYveltaljacket,
 	AvatarItemDisplayNShirtZacostumeA0,
 	AvatarItemDisplayNShirtZacostumeB0,
+	AvatarItemDisplayNShirtZeraoraonesie,
 	AvatarItemDisplayNShirtZeraoratshirt,
 	AvatarItemDisplayNShirtZoruaonesie0,
 	AvatarItemDisplayNShirtZygarde100items0,
@@ -2884,6 +2885,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_yveltaljacket: AvatarItemDisplayNShirtYveltaljacket;
 	N_DISPLAY_n_shirt_zacostume_a_0: AvatarItemDisplayNShirtZacostumeA0;
 	N_DISPLAY_n_shirt_zacostume_b_0: AvatarItemDisplayNShirtZacostumeB0;
+	N_DISPLAY_n_shirt_zeraoraonesie: AvatarItemDisplayNShirtZeraoraonesie;
 	N_DISPLAY_n_shirt_zeraoratshirt: AvatarItemDisplayNShirtZeraoratshirt;
 	N_DISPLAY_n_shirt_zoruaonesie_0: AvatarItemDisplayNShirtZoruaonesie0;
 	N_DISPLAY_n_shirt_zygarde100items_0: AvatarItemDisplayNShirtZygarde100items0;

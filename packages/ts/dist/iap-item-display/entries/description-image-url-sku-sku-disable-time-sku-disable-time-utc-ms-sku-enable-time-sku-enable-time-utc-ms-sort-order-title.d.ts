@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "description-image-url-sku-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order-title", 4 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "description-image-url-sku-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order-title", 6 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -67,9 +67,43 @@ export type IapItemDisplayMonth1DeluxeEventPassTrackUnlockPlusPoints = S<
 		}
 	>
 >;
+export type IapItemDisplayMonth2DeluxeEventPassTrackUnlock = S<
+	IapItemDisplay<
+		"MONTH2_DELUXE_EVENT_PASS_TRACK_UNLOCK",
+		{
+			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff2c7f843_PGO-MCS_GO_Pass_July_2026_ticket_v1-1024x576_nologo.jpg";
+			sku: "pgorelease.month2_deluxe_event_pass_track_unlock";
+			skuDisableTime: "2026-08-06T10:00:00";
+			skuDisableTimeUtcMs: "1786010400000";
+			skuEnableTime: "2025-05-26T10:00:00";
+			skuEnableTimeUtcMs: "1748253600000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_july";
+		}
+	>
+>;
+export type IapItemDisplayMonth2DeluxeEventPassTrackUnlockPlusPoints = S<
+	IapItemDisplay<
+		"MONTH2_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS",
+		{
+			description: "gotour_2025_deluxe_event_pass_track_unlock_plus_points_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff2c7f843_PGO-MCS_GO_Pass_July_2026_ticket_v1-1024x576_nologo.jpg";
+			sku: "pgorelease.month2_deluxe_event_pass_track_unlock_plus_points";
+			skuDisableTime: "2026-08-06T10:00:00";
+			skuDisableTimeUtcMs: "1786010400000";
+			skuEnableTime: "2025-05-26T10:00:00";
+			skuEnableTimeUtcMs: "1748253600000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_plus_ten_ranks_title_july";
+		}
+	>
+>;
 
 export type IapItemDisplayDescriptionImageUrlSkuSkuDisableTimeSkuDisableTimeUtcMsSkuEnableTimeSkuEnableTimeUtcMsSortOrderTitleMasterfileEntry =
 	| IapItemDisplayGofestDeluxeEventPassTrackUnlock
 	| IapItemDisplayGofestDeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayMonth1DeluxeEventPassTrackUnlock
-	| IapItemDisplayMonth1DeluxeEventPassTrackUnlockPlusPoints;
+	| IapItemDisplayMonth1DeluxeEventPassTrackUnlockPlusPoints
+	| IapItemDisplayMonth2DeluxeEventPassTrackUnlock
+	| IapItemDisplayMonth2DeluxeEventPassTrackUnlockPlusPoints;
