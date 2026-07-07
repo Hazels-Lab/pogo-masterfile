@@ -62,7 +62,8 @@ jobs:
         if: steps.upstream.outputs.changed == 'true'
         # Falls back to an empty file on the (one-time) case where template-ids.txt
         # hasn't been committed yet. After the backfill lands, the cp always succeeds.
-        run: cp template-ids.txt /tmp/template-ids-before.txt 2>/dev/null || : > /tmp/template-ids-before.txt
+        run: |
+          cp template-ids.txt /tmp/template-ids-before.txt 2>/dev/null || : > /tmp/template-ids-before.txt
 
       - name: Regenerate
         if: steps.upstream.outputs.changed == 'true'
@@ -99,7 +100,8 @@ jobs:
           fi
 
       - name: Open pull request
-        if: steps.upstream.outputs.changed == 'true' && steps.diff.outputs.has_diff ==
+        if:
+          steps.upstream.outputs.changed == 'true' && steps.diff.outputs.has_diff ==
           'true'
         uses: peter-evans/create-pull-request@v8
         with:
