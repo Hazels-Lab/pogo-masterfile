@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "genderSettings", split "misc", 2372 entries.
+// Generated from Pokémon GO masterfile — group "genderSettings", split "misc", 2373 entries.
 
 import type { S } from "../../_utils";
 import type { GenderSettings } from "../types";
@@ -654,6 +654,18 @@ export type GenderSettingsV0025PokemonPikachu = S<
 export type GenderSettingsV0025PokemonPikachuAdventureHat2020 = S<
 	GenderSettings<
 		"SPAWN_V0025_POKEMON_PIKACHU_ADVENTURE_HAT_2020",
+		{
+			gender: {
+				femalePercent: 0.5;
+				malePercent: 0.5;
+			};
+			pokemon: "PIKACHU";
+		}
+	>
+>;
+export type GenderSettingsV0025PokemonPikachuAnniversary2026 = S<
+	GenderSettings<
+		"SPAWN_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026",
 		{
 			gender: {
 				femalePercent: 0.5;
@@ -27955,6 +27967,7 @@ export type GenderSettingsMiscMasterfileEntry =
 	| GenderSettingsV0024PokemonArbokNormal
 	| GenderSettingsV0025PokemonPikachu
 	| GenderSettingsV0025PokemonPikachuAdventureHat2020
+	| GenderSettingsV0025PokemonPikachuAnniversary2026
 	| GenderSettingsV0025PokemonPikachuBb2026
 	| GenderSettingsV0025PokemonPikachuCopy2019
 	| GenderSettingsV0025PokemonPikachuCostume2020

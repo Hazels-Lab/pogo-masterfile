@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1491 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1489 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -116,6 +116,7 @@ export interface IapItemDisplayData {
 		| "2025-06-29T23:59:59"
 		| "2025-07-01T20:00:00"
 		| "2025-07-06T20:00:00"
+		| "2025-07-09T10:00:00"
 		| "2025-07-22T20:00:00"
 		| "2025-08-26T21:00:00"
 		| "2025-11-16T18:00:00"
@@ -134,7 +135,6 @@ export interface IapItemDisplayData {
 		| "2026-06-27T17:00:00"
 		| "2026-07-04T17:00:00"
 		| "2026-07-06T20:00:00"
-		| "2026-07-09T10:00:00"
 		| "2026-07-12T22:00:00"
 		| "2026-07-14T23:59:59"
 		| "2026-08-06T10:00:00";
@@ -164,6 +164,7 @@ export interface IapItemDisplayData {
 		| "1751241599000"
 		| "1751400000000"
 		| "1751832000000"
+		| "1752055200000"
 		| "1753214400000"
 		| "1756242000000"
 		| "1763316000000"
@@ -182,7 +183,6 @@ export interface IapItemDisplayData {
 		| "1782579600000"
 		| "1783184400000"
 		| "1783368000000"
-		| "1783591200000"
 		| "1783893600000"
 		| "1784073599000"
 		| "1786010400000";

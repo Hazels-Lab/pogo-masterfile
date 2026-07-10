@@ -270,7 +270,7 @@ export type PokemonExtendedSettingsV0026PokemonRaichu = S<
 						xxlUpperBound: 2.1;
 						xxsLowerBound: 0.588;
 					};
-					tempEvoId: "TEMP_EVOLUTION_MEGA";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					sizeSettings: {

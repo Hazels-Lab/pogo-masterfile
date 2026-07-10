@@ -125,6 +125,8 @@ pub enum GenderSettingsTemplateId {
     SpawnV0025PokemonPikachu,
     #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_ADVENTURE_HAT_2020")]
     SpawnV0025PokemonPikachuAdventureHat2020,
+    #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026")]
+    SpawnV0025PokemonPikachuAnniversary2026,
     #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_BB_2026")]
     SpawnV0025PokemonPikachuBb2026,
     #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_COPY_2019")]

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonSettings", 2463 entries (structural types).
+// Generated from Pokémon GO masterfile — group "pokemonSettings", 2464 entries (structural types).
 
 import type { W } from "../_utils";
 import type { TypeEffectiveTemplateID } from "../type-effective/entries";

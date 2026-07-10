@@ -82,6 +82,7 @@ export interface ItemSettingsData {
 	};
 	eventPassPoint?: {
 		eventPassId:
+			| "EVENT_PASS_AFTERPARTY2026_EVENT"
 			| "EVENT_PASS_AMER2026_EVENT"
 			| "EVENT_PASS_BLANCHE2026_EVENT"
 			| "EVENT_PASS_EMEA2026_EVENT"

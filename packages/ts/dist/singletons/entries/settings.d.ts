@@ -4800,7 +4800,7 @@ export interface RaidSettings {
 			maxRemotePlayersPerLobby: 10;
 			maxRemoteRaidPasses: 3;
 			minPlayersToBoot: 2;
-			obRaidClientSettingsNumber1: 2;
+			obRaidClientSettingsNumber1: 1;
 			obRaidClientSettingsNumber29: 1;
 			pokemonMusicOverrides: [
 				{
@@ -5815,8 +5815,8 @@ export interface VsSeekerClientSettings {
 		templateId: "VS_SEEKER_CLIENT_SETTINGS";
 		vsSeekerClientSettings: {
 			allowedVsSeekerLeagueTemplateId: [
-				"COMBAT_LEAGUE_VS_SEEKER_GREAT",
-				"COMBAT_LEAGUE_VS_SEEKER_GREAT_SUMMER",
+				"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
+				"COMBAT_LEAGUE_VS_SEEKER_FANTASY_ULTRA",
 				"COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIPS_LEGACY",
 			];
 		};

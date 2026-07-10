@@ -64,6 +64,7 @@ const (
 	PokemonExtendedSettingsTemplateIDExtendedV0024PokemonArbokNormal                     PokemonExtendedSettingsTemplateID = "EXTENDED_V0024_POKEMON_ARBOK_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachu                         PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuAdventureHat2020         PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_ADVENTURE_HAT_2020"
+	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuAnniversary2026          PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuBb2026                   PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_BB_2026"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuCopy2019                 PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_COPY_2019"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuCostume2020              PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_COSTUME_2020"
@@ -2534,6 +2535,7 @@ var PokemonExtendedSettingsTemplateIDValues = [...]PokemonExtendedSettingsTempla
 	PokemonExtendedSettingsTemplateIDExtendedV0024PokemonArbokNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachu,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuAdventureHat2020,
+	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuAnniversary2026,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuBb2026,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuCopy2019,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuCostume2020,

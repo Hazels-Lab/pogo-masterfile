@@ -111,8 +111,8 @@ export type ItemExpirationSettingsEventPassPointLiveOps08 = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_LIVE_OPS_08",
 		{
-			emergencyExpirationTime: "2026-05-09T10:00:00";
-			expirationTime: "2026-05-08T20:00:00";
+			emergencyExpirationTime: "2026-08-01T10:00:00";
+			expirationTime: "2026-07-31T20:00:00";
 		}
 	>
 >;
@@ -147,7 +147,7 @@ export type ItemExpirationSettingsIncubatorTimed = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_INCUBATOR_TIMED",
 		{
-			expirationTime: "2026-07-14T10:00:00";
+			expirationTime: "2026-01-13T10:00:00";
 		}
 	>
 >;

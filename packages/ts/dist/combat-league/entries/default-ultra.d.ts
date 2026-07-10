@@ -8,7 +8,7 @@ export type CombatLeagueVsSeekerFantasyUltra = S<
 		"COMBAT_LEAGUE_VS_SEEKER_FANTASY_ULTRA",
 		{
 			badgeType: "BADGE_ULTRA_LEAGUE";
-			bannedPokemon: ["DITTO", "SHEDINJA", "STUNFISK", "COBALION"];
+			bannedPokemon: ["DITTO", "SHEDINJA"];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_ULTRA";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/fantasy_cup_icon%20-%201x1.png";
 			leagueType: "PREMIER";

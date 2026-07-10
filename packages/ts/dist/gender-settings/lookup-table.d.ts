@@ -60,6 +60,7 @@ import type {
 	GenderSettingsV0024PokemonArbokNormal,
 	GenderSettingsV0025PokemonPikachu,
 	GenderSettingsV0025PokemonPikachuAdventureHat2020,
+	GenderSettingsV0025PokemonPikachuAnniversary2026,
 	GenderSettingsV0025PokemonPikachuBb2026,
 	GenderSettingsV0025PokemonPikachuCopy2019,
 	GenderSettingsV0025PokemonPikachuCostume2020,
@@ -2529,6 +2530,7 @@ export interface GenderSettingsLookup {
 	SPAWN_V0024_POKEMON_ARBOK_NORMAL: GenderSettingsV0024PokemonArbokNormal;
 	SPAWN_V0025_POKEMON_PIKACHU: GenderSettingsV0025PokemonPikachu;
 	SPAWN_V0025_POKEMON_PIKACHU_ADVENTURE_HAT_2020: GenderSettingsV0025PokemonPikachuAdventureHat2020;
+	SPAWN_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026: GenderSettingsV0025PokemonPikachuAnniversary2026;
 	SPAWN_V0025_POKEMON_PIKACHU_BB_2026: GenderSettingsV0025PokemonPikachuBb2026;
 	SPAWN_V0025_POKEMON_PIKACHU_COPY_2019: GenderSettingsV0025PokemonPikachuCopy2019;
 	SPAWN_V0025_POKEMON_PIKACHU_COSTUME_2020: GenderSettingsV0025PokemonPikachuCostume2020;

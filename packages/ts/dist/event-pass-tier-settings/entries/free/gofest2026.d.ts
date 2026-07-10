@@ -31,6 +31,10 @@ export type EventPassTierSettingsGofest2026Global2Free = S<
 						iconType: 43;
 						text: "bonus_link_charge_cap_2000";
 					},
+					{
+						iconType: "EGG_INCUBATOR";
+						text: "incubator_distance_half";
+					},
 				];
 				eventName: "active_bonuses_label";
 			};

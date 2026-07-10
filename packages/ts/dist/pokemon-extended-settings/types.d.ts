@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", 2467 entries (structural types).
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", 2468 entries (structural types).
 
 import type { W } from "../_utils";
 
