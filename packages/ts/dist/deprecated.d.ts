@@ -474,7 +474,7 @@ type DeprecatedCodeGateProtoIds =
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedEggTransparencySettingsIds = "EGG_TRANSPARENCY_SETTINGS";
 
-/** @deprecated lastSeen 2026-07-07 — 27 entries */
+/** @deprecated lastSeen 2026-07-10 — 28 entries */
 type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_30ANNIV2026_EVENT"
 	| "EVENT_PASS_APRIL2025_SEASON"
@@ -492,6 +492,7 @@ type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_JANUARY2026_SEASON"
 	| "EVENT_PASS_JULY2025_SEASON"
 	| "EVENT_PASS_JUNE2025_SEASON"
+	| "EVENT_PASS_JUNE2026_SEASON"
 	| "EVENT_PASS_MARCH2026_SEASON"
 	| "EVENT_PASS_MAY2025_SEASON"
 	| "EVENT_PASS_MAY2026_SEASON"
@@ -12627,13 +12628,15 @@ type DeprecatedPokemonInfoPanelSettingsIds = "POKEMON_INFO_PANEL_SETTINGS";
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedQuestEvolutionSettingsIds = "QUEST_EVOLUTION_SETTINGS";
 
-/** @deprecated lastSeen 2026-07-07 — 9 entries */
+/** @deprecated lastSeen 2026-07-10 — 11 entries */
 type DeprecatedRollBackIds =
 	| "ANDROID_SENSORS_ROLL_BACK"
 	| "BIDIRECTIONAL_FP_WEEKLY_CHALLENGE_REWARD_ROLL_BACK"
 	| "DELAYED_NOTIF_ROLL_BACK"
+	| "MAP_RADIUS_ENHANCE_GRAPHICS_ROLL_BACK"
 	| "NPC_LEAGUE_SUFFIX_ROLL_BACK"
 	| "PERIODICALLY_CHECK_FOR_VISIBILITY_ROLL_BACK"
+	| "REALTIME_POKEMON_SHADOW_NULL_ROOT_BONE_CRASH_FIX_ROLL_BACK"
 	| "REMOVE_UI_CAM_ROLL_BACK"
 	| "RT_TAG_EFFICIENCY_ROLL_BACK"
 	| "SINGLE_ROLL_SHINY_RATE_ROLL_BACK"

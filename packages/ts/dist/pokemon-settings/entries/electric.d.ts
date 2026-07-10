@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonSettings", split "electric", 194 entries.
+// Generated from Pokémon GO masterfile — group "pokemonSettings", split "electric", 195 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonSettings } from "../types";
@@ -138,6 +138,85 @@ export type PokemonSettingsV0025PokemonPikachuAdventureHat2020 = S<
 			evolutionPips: 1;
 			familyId: "FAMILY_PIKACHU";
 			form: "PIKACHU_ADVENTURE_HAT_2020";
+			heightStdDev: 0.05;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 1;
+			modelHeight: 0.4;
+			modelScale: 1.48;
+			modelScaleV2: 1.1;
+			parentPokemonId: "PICHU";
+			pokedexHeightM: 0.4;
+			pokedexWeightKg: 6;
+			pokemonId: "PIKACHU";
+			quickMoves: ["THUNDER_SHOCK_FAST", "QUICK_ATTACK_FAST"];
+			stats: {
+				baseAttack: 112;
+				baseDefense: 96;
+				baseStamina: 111;
+			};
+			thirdMove: {
+				candyToUnlock: 25;
+				stardustToUnlock: 10000;
+			};
+			type: "POKEMON_TYPE_ELECTRIC";
+			weightStdDev: 0.75;
+		}
+	>
+>;
+export type PokemonSettingsV0025PokemonPikachuAnniversary2026 = S<
+	PokemonSettings<
+		"V0025_POKEMON_PIKACHU_ANNIVERSARY_2026",
+		{
+			animationTime: [1.8333, 0.6667, 1.6, 1.5667, 0, 1.8, 1.1333, 1.066667];
+			breadTierGroup: "GROUP_1";
+			buddyGroupNumber: 1;
+			buddyOffsetFemale: [0, 0, 0];
+			buddyOffsetMale: [0, 0, 0];
+			buddyScale: 11;
+			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+				},
+			];
+			camera: {
+				cylinderHeightM: 0.5;
+				cylinderRadiusM: 0.37;
+				diskRadiusM: 0.555;
+				shoulderModeScale: 0.5;
+			};
+			candyToEvolve: 50;
+			cinematicMoves: ["DISCHARGE", "THUNDERBOLT", "WILD_CHARGE"];
+			disableTransferToPokemonHome: true;
+			eliteCinematicMove: ["SURF", "THUNDER"];
+			eliteQuickMove: ["PRESENT_FAST"];
+			encounter: {
+				attackProbability: 0.1;
+				attackTimerS: 29;
+				cameraDistance: 2.775;
+				collisionHeadRadiusM: 0.13;
+				collisionHeightM: 0.16;
+				collisionRadiusM: 0.16;
+				dodgeDistance: 1;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.15;
+				jumpTimeS: 1;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementTimerS: 10;
+				movementType: "MOVEMENT_JUMP";
+			};
+			evolutionPips: 1;
+			familyId: "FAMILY_PIKACHU";
+			form: "PIKACHU_ANNIVERSARY_2026";
 			heightStdDev: 0.05;
 			ibfc: object;
 			isDeployable: true;
@@ -14033,6 +14112,7 @@ export type PokemonSettingsV1021PokemonRagingboltNormal = S<
 export type PokemonSettingsElectricMasterfileEntry =
 	| PokemonSettingsV0025PokemonPikachu
 	| PokemonSettingsV0025PokemonPikachuAdventureHat2020
+	| PokemonSettingsV0025PokemonPikachuAnniversary2026
 	| PokemonSettingsV0025PokemonPikachuBb2026
 	| PokemonSettingsV0025PokemonPikachuCopy2019
 	| PokemonSettingsV0025PokemonPikachuCostume2020

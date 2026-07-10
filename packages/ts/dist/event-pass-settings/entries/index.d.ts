@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassSettings", 3 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "eventPassSettings", 2 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { EventPassSettings } from "../types";
@@ -41,7 +41,6 @@ export type EventPassSettingsGofest2026Global = S<
 					},
 				];
 				headerIconUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F1ba4259b_PGO_Fest25_Logo_2026_Global.png";
-				premiumRewardBannerBottom: "event_pass_premium_reward_banner_bottom_text";
 				premiumRewardBannerImageUrl: "https://storage.googleapis.com/prod-public-images/gofest2025/bottlecap_gold.png";
 				premiumRewardBannerMiddle: "item_triple_stat_increase_name";
 				premiumRewardsDescription: "season_pass_premium_rewards_desc_monthly";
@@ -103,7 +102,6 @@ export type EventPassSettingsJuly2026Season = S<
 					},
 				];
 				headerIconUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fd99f7e15_Logo_256x256.png";
-				premiumRewardBannerBottom: "event_pass_premium_reward_banner_bottom_text";
 				premiumRewardBannerImageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F0_poke%CC%81coin.png";
 				premiumRewardBannerMiddle: "today_view_pokecoins_section_title";
 				premiumRewardsDescription: "season_pass_premium_rewards_desc_monthly_no_disclaimer";
@@ -128,70 +126,7 @@ export type EventPassSettingsJuly2026Season = S<
 		}
 	>
 >;
-export type EventPassSettingsJune2026Season = S<
-	EventPassSettings<
-		"EVENT_PASS_JUNE2026_SEASON",
-		{
-			eventPassDisplaySettings: {
-				bonusBoxes: [
-					{
-						iconType: "SPAWN_UNKNOWN";
-						quantity: 5;
-						text: "quest_catch_pokemon_singular";
-					},
-					{
-						iconType: "EGG";
-						quantity: 40;
-						text: "quest_hatch_egg_singular";
-					},
-					{
-						iconType: "RAID";
-						quantity: 100;
-						text: "quest_win_raid_singular";
-					},
-				];
-				eventPassTitleKey: "season_pass_base_track_title_june";
-				eventPassTrackUpgradeDescriptions: [
-					{
-						detailsLinkKey: "season_pass_details_link_june2026";
-						eventDurationKey: "season_pass_june2026_event_duration";
-						eventPassTrackToUpgradeTo: "PREMIUM";
-						passTrackUpgradeHeaderDescription: "season_pass_june2026_track_upgrade_header_description";
-						ranksToHighlightRewards: [20, 82, 99];
-						trackUnlockImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe.png";
-						trackUnlockPlusPointsImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe_plus.png";
-						trackUnlockPlusPointsSkuId: "pgorelease.month1_deluxe_event_pass_track_unlock_plus_points";
-						trackUnlockSkuId: "pgorelease.month1_deluxe_event_pass_track_unlock";
-						upgradeDescriptionKey: "season_pass_june2026_upgrade_description";
-					},
-				];
-				headerIconUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fd99f7e15_Logo_256x256.png";
-				premiumRewardBannerBottom: "event_pass_premium_reward_banner_bottom_text_timed_incubator";
-				premiumRewardBannerImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets/Incubator_green128x128.png";
-				premiumRewardBannerMiddle: "item_incubator_timed_name";
-				premiumRewardsDescription: "season_pass_premium_rewards_desc_monthly_no_disclaimer";
-				sectionDisplayPriority: 12;
-				todayViewSection: "SEASONAL_EVENT_PASS_SECTION";
-			};
-			expirationTime: "2026-07-07T10:00:00";
-			gracePeriodEndTime: "2026-07-09T10:00:00";
-			maxTierLevel: 200;
-			pointsItemId: "ITEM_EVENT_PASS_POINT_MONTHLY_01";
-			trackConditions: [
-				{
-					track: "FREE";
-					trackTitleKey: "season_pass_base_track_title_june";
-				},
-				{
-					badge: "BADGE_EVENT_0190";
-					track: "PREMIUM";
-					trackTitleKey: "season_pass_premium_track_title_june";
-				},
-			];
-		}
-	>
->;
 
-export type EventPassSettingsMasterfileEntry = EventPassSettingsGofest2026Global | EventPassSettingsJuly2026Season | EventPassSettingsJune2026Season;
+export type EventPassSettingsMasterfileEntry = EventPassSettingsGofest2026Global | EventPassSettingsJuly2026Season;
 
 export type EventPassSettingsTemplateID = EventPassSettingsMasterfileEntry["templateId"];

@@ -60,6 +60,7 @@ import type {
 	PokemonSettingsV0024PokemonArbokNormal,
 	PokemonSettingsV0025PokemonPikachu,
 	PokemonSettingsV0025PokemonPikachuAdventureHat2020,
+	PokemonSettingsV0025PokemonPikachuAnniversary2026,
 	PokemonSettingsV0025PokemonPikachuBb2026,
 	PokemonSettingsV0025PokemonPikachuCopy2019,
 	PokemonSettingsV0025PokemonPikachuCostume2020,
@@ -2526,6 +2527,7 @@ export interface PokemonSettingsLookup {
 	V0024_POKEMON_ARBOK_NORMAL: PokemonSettingsV0024PokemonArbokNormal;
 	V0025_POKEMON_PIKACHU: PokemonSettingsV0025PokemonPikachu;
 	V0025_POKEMON_PIKACHU_ADVENTURE_HAT_2020: PokemonSettingsV0025PokemonPikachuAdventureHat2020;
+	V0025_POKEMON_PIKACHU_ANNIVERSARY_2026: PokemonSettingsV0025PokemonPikachuAnniversary2026;
 	V0025_POKEMON_PIKACHU_BB_2026: PokemonSettingsV0025PokemonPikachuBb2026;
 	V0025_POKEMON_PIKACHU_COPY_2019: PokemonSettingsV0025PokemonPikachuCopy2019;
 	V0025_POKEMON_PIKACHU_COSTUME_2020: PokemonSettingsV0025PokemonPikachuCostume2020;
