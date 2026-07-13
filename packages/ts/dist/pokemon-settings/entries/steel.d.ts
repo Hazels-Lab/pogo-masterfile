@@ -2552,7 +2552,6 @@ export type PokemonSettingsV0483PokemonDialgaOrigin = S<
 			candyToEvolve: 25;
 			cinematicMoves: ["DRACO_METEOR", "IRON_HEAD", "THUNDER"];
 			disableTransferToPokemonHome: true;
-			eliteCinematicMove: ["ROAR_OF_TIME"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 29;

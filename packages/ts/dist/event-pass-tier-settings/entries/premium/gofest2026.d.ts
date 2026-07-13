@@ -235,10 +235,6 @@ export type EventPassTierSettingsGofest2026Global6Premium = S<
 						iconType: "CANDY_XL";
 						text: "bonus_raid_1_xl_candy";
 					},
-					{
-						iconType: "EGG_INCUBATOR";
-						text: "incubator_distance_half";
-					},
 				];
 				eventName: "active_bonuses_label";
 			};
