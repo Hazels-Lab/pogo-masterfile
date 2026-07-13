@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-hidden-sale-sku-sort-order-sprite-id-title", 158 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-hidden-sale-sku-sort-order-sprite-id-title", 157 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -14,20 +14,6 @@ export type IapItemDisplayBundleAnniversary20231 = S<
 			sortOrder: 1;
 			spriteId: "bundle.general1.large.2";
 			title: "oneyearanniversary.1_title";
-		}
-	>
->;
-export type IapItemDisplayBundleAtlanticav2box1 = S<
-	IapItemDisplay<
-		"bundle.atlanticav2box.1",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sale: true;
-			sku: "bundle.atlanticav2box.1";
-			sortOrder: 1;
-			spriteId: "bundle.general2.free.1";
-			title: "boost_box_title";
 		}
 	>
 >;
@@ -2218,7 +2204,6 @@ export type IapItemDisplayPgoreleaseBundleWalkeratlantic20222 = S<
 
 export type IapItemDisplayCategoryHiddenSaleSkuSortOrderSpriteIdTitleMasterfileEntry =
 	| IapItemDisplayBundleAnniversary20231
-	| IapItemDisplayBundleAtlanticav2box1
 	| IapItemDisplayBundleAtlanticav2box2
 	| IapItemDisplayBundleBlackfridaystickers241
 	| IapItemDisplayBundleBlackfridaystickers242

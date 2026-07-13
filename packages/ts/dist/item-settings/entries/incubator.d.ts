@@ -10,7 +10,7 @@ export type ItemSettingsItemIncubatorBasic = S<
 			category: "ITEM_CATEGORY_INCUBATOR";
 			dropTrainerLevel: 1;
 			eggIncubator: {
-				distanceMultiplier: 0.5;
+				distanceMultiplier: 1;
 				incubatorType: "INCUBATOR_DISTANCE";
 				uses: 3;
 			};
@@ -26,7 +26,7 @@ export type ItemSettingsItemIncubatorBasicUnlimited = S<
 			category: "ITEM_CATEGORY_INCUBATOR";
 			dropTrainerLevel: 100;
 			eggIncubator: {
-				distanceMultiplier: 0.5;
+				distanceMultiplier: 1;
 				incubatorType: "INCUBATOR_DISTANCE";
 			};
 			itemId: "ITEM_INCUBATOR_BASIC_UNLIMITED";
@@ -58,7 +58,7 @@ export type ItemSettingsItemIncubatorSuper = S<
 			category: "ITEM_CATEGORY_INCUBATOR";
 			dropTrainerLevel: 1;
 			eggIncubator: {
-				distanceMultiplier: 0.33333334;
+				distanceMultiplier: 0.6666667;
 				incubatorType: "INCUBATOR_DISTANCE";
 				uses: 3;
 			};
@@ -74,7 +74,7 @@ export type ItemSettingsItemIncubatorTimed = S<
 			category: "ITEM_CATEGORY_INCUBATOR";
 			dropTrainerLevel: 100;
 			eggIncubator: {
-				distanceMultiplier: 0.5;
+				distanceMultiplier: 1;
 				expiredIncubatorReplacement: {
 					incubatorReplacement: "ITEM_INCUBATOR_BASIC";
 					usesCountOverride: 1;
