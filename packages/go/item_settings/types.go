@@ -49,8 +49,8 @@ type ItemSettingsNeutralAvatarItemTemplate struct {
 }
 
 type ItemSettingsPokemonDisplay struct {
-	Form  string `json:"form"`
-	Shiny *bool  `json:"shiny,omitempty"`
+	Form  *string `json:"form,omitempty"`
+	Shiny *bool   `json:"shiny,omitempty"`
 }
 
 type ItemSettingsPokemonEncounter struct {
@@ -72,6 +72,7 @@ type ItemSettingsGlobalEventTicket struct {
 	BackgroundImageUrl           *string                   `json:"backgroundImageUrl,omitempty"`
 	ClientEventEndTimeUtcMs      string                    `json:"clientEventEndTimeUtcMs"`
 	ClientEventStartTimeUtcMs    string                    `json:"clientEventStartTimeUtcMs"`
+	ConflictStoryQuestIds        *[2]string                `json:"conflictStoryQuestIds,omitempty"`
 	DetailsLinkKey               *string                   `json:"detailsLinkKey,omitempty"`
 	DisplayV2enabled             *bool                     `json:"displayV2Enabled,omitempty"`
 	EventBadge                   *string                   `json:"eventBadge,omitempty"`

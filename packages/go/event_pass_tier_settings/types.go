@@ -11,7 +11,7 @@ type EventPassTierSettingsBonusBoxes struct {
 
 type EventPassTierSettingsActiveBonusDisplaySettings struct {
 	BonusBoxes []EventPassTierSettingsBonusBoxes `json:"bonusBoxes"`
-	EventName  string                            `json:"eventName"`
+	EventName  *string                           `json:"eventName,omitempty"`
 }
 
 type EventPassTierSettingsBonusBoxesV2 struct {
@@ -50,6 +50,7 @@ type EventPassTierSettingsLocationCard struct {
 
 type EventPassTierSettingsPokemonDisplay struct {
 	BreadModeEnum *string                            `json:"breadModeEnum,omitempty"`
+	Costume       *string                            `json:"costume,omitempty"`
 	Form          string                             `json:"form"`
 	LocationCard  *EventPassTierSettingsLocationCard `json:"locationCard,omitempty"`
 }

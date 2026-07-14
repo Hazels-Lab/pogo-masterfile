@@ -2847,4 +2847,244 @@ pub enum EventPassTierSettingsTemplateId {
     EventPassJuly2026Season210Free,
     #[serde(rename = "EVENT_PASS_JULY2026_SEASON_210_PREMIUM")]
     EventPassJuly2026Season210Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_1_FREE")]
+    EventPassPikachuCelebration2026Event1Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_1_PREMIUM")]
+    EventPassPikachuCelebration2026Event1Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_2_FREE")]
+    EventPassPikachuCelebration2026Event2Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_2_PREMIUM")]
+    EventPassPikachuCelebration2026Event2Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_3_FREE")]
+    EventPassPikachuCelebration2026Event3Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_3_PREMIUM")]
+    EventPassPikachuCelebration2026Event3Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_4_FREE")]
+    EventPassPikachuCelebration2026Event4Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_4_PREMIUM")]
+    EventPassPikachuCelebration2026Event4Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_5_FREE")]
+    EventPassPikachuCelebration2026Event5Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_5_PREMIUM")]
+    EventPassPikachuCelebration2026Event5Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_6_FREE")]
+    EventPassPikachuCelebration2026Event6Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_6_PREMIUM")]
+    EventPassPikachuCelebration2026Event6Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_7_FREE")]
+    EventPassPikachuCelebration2026Event7Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_7_PREMIUM")]
+    EventPassPikachuCelebration2026Event7Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_8_FREE")]
+    EventPassPikachuCelebration2026Event8Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_8_PREMIUM")]
+    EventPassPikachuCelebration2026Event8Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_9_FREE")]
+    EventPassPikachuCelebration2026Event9Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_9_PREMIUM")]
+    EventPassPikachuCelebration2026Event9Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_10_FREE")]
+    EventPassPikachuCelebration2026Event10Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_10_PREMIUM")]
+    EventPassPikachuCelebration2026Event10Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_11_FREE")]
+    EventPassPikachuCelebration2026Event11Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_11_PREMIUM")]
+    EventPassPikachuCelebration2026Event11Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_12_FREE")]
+    EventPassPikachuCelebration2026Event12Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_12_PREMIUM")]
+    EventPassPikachuCelebration2026Event12Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_13_FREE")]
+    EventPassPikachuCelebration2026Event13Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_13_PREMIUM")]
+    EventPassPikachuCelebration2026Event13Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_14_FREE")]
+    EventPassPikachuCelebration2026Event14Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_14_PREMIUM")]
+    EventPassPikachuCelebration2026Event14Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_15_FREE")]
+    EventPassPikachuCelebration2026Event15Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_15_PREMIUM")]
+    EventPassPikachuCelebration2026Event15Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_16_FREE")]
+    EventPassPikachuCelebration2026Event16Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_16_PREMIUM")]
+    EventPassPikachuCelebration2026Event16Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_17_FREE")]
+    EventPassPikachuCelebration2026Event17Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_17_PREMIUM")]
+    EventPassPikachuCelebration2026Event17Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_18_FREE")]
+    EventPassPikachuCelebration2026Event18Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_18_PREMIUM")]
+    EventPassPikachuCelebration2026Event18Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_19_FREE")]
+    EventPassPikachuCelebration2026Event19Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_19_PREMIUM")]
+    EventPassPikachuCelebration2026Event19Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_20_FREE")]
+    EventPassPikachuCelebration2026Event20Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_20_PREMIUM")]
+    EventPassPikachuCelebration2026Event20Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_21_FREE")]
+    EventPassPikachuCelebration2026Event21Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_21_PREMIUM")]
+    EventPassPikachuCelebration2026Event21Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_22_FREE")]
+    EventPassPikachuCelebration2026Event22Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_22_PREMIUM")]
+    EventPassPikachuCelebration2026Event22Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_23_FREE")]
+    EventPassPikachuCelebration2026Event23Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_23_PREMIUM")]
+    EventPassPikachuCelebration2026Event23Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_24_FREE")]
+    EventPassPikachuCelebration2026Event24Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_24_PREMIUM")]
+    EventPassPikachuCelebration2026Event24Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_25_FREE")]
+    EventPassPikachuCelebration2026Event25Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_25_PREMIUM")]
+    EventPassPikachuCelebration2026Event25Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_26_FREE")]
+    EventPassPikachuCelebration2026Event26Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_26_PREMIUM")]
+    EventPassPikachuCelebration2026Event26Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_27_FREE")]
+    EventPassPikachuCelebration2026Event27Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_27_PREMIUM")]
+    EventPassPikachuCelebration2026Event27Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_28_FREE")]
+    EventPassPikachuCelebration2026Event28Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_28_PREMIUM")]
+    EventPassPikachuCelebration2026Event28Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_29_FREE")]
+    EventPassPikachuCelebration2026Event29Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_29_PREMIUM")]
+    EventPassPikachuCelebration2026Event29Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_30_FREE")]
+    EventPassPikachuCelebration2026Event30Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_30_PREMIUM")]
+    EventPassPikachuCelebration2026Event30Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_31_FREE")]
+    EventPassPikachuCelebration2026Event31Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_31_PREMIUM")]
+    EventPassPikachuCelebration2026Event31Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_32_FREE")]
+    EventPassPikachuCelebration2026Event32Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_32_PREMIUM")]
+    EventPassPikachuCelebration2026Event32Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_33_FREE")]
+    EventPassPikachuCelebration2026Event33Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_33_PREMIUM")]
+    EventPassPikachuCelebration2026Event33Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_34_FREE")]
+    EventPassPikachuCelebration2026Event34Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_34_PREMIUM")]
+    EventPassPikachuCelebration2026Event34Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_35_FREE")]
+    EventPassPikachuCelebration2026Event35Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_35_PREMIUM")]
+    EventPassPikachuCelebration2026Event35Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_36_FREE")]
+    EventPassPikachuCelebration2026Event36Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_36_PREMIUM")]
+    EventPassPikachuCelebration2026Event36Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_37_FREE")]
+    EventPassPikachuCelebration2026Event37Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_37_PREMIUM")]
+    EventPassPikachuCelebration2026Event37Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_38_FREE")]
+    EventPassPikachuCelebration2026Event38Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_38_PREMIUM")]
+    EventPassPikachuCelebration2026Event38Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_39_FREE")]
+    EventPassPikachuCelebration2026Event39Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_39_PREMIUM")]
+    EventPassPikachuCelebration2026Event39Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_40_FREE")]
+    EventPassPikachuCelebration2026Event40Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_40_PREMIUM")]
+    EventPassPikachuCelebration2026Event40Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_41_FREE")]
+    EventPassPikachuCelebration2026Event41Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_41_PREMIUM")]
+    EventPassPikachuCelebration2026Event41Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_42_FREE")]
+    EventPassPikachuCelebration2026Event42Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_42_PREMIUM")]
+    EventPassPikachuCelebration2026Event42Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_43_FREE")]
+    EventPassPikachuCelebration2026Event43Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_43_PREMIUM")]
+    EventPassPikachuCelebration2026Event43Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_44_FREE")]
+    EventPassPikachuCelebration2026Event44Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_44_PREMIUM")]
+    EventPassPikachuCelebration2026Event44Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_45_FREE")]
+    EventPassPikachuCelebration2026Event45Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_45_PREMIUM")]
+    EventPassPikachuCelebration2026Event45Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_46_FREE")]
+    EventPassPikachuCelebration2026Event46Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_46_PREMIUM")]
+    EventPassPikachuCelebration2026Event46Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_47_FREE")]
+    EventPassPikachuCelebration2026Event47Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_47_PREMIUM")]
+    EventPassPikachuCelebration2026Event47Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_48_FREE")]
+    EventPassPikachuCelebration2026Event48Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_48_PREMIUM")]
+    EventPassPikachuCelebration2026Event48Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_49_FREE")]
+    EventPassPikachuCelebration2026Event49Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_49_PREMIUM")]
+    EventPassPikachuCelebration2026Event49Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_50_FREE")]
+    EventPassPikachuCelebration2026Event50Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_50_PREMIUM")]
+    EventPassPikachuCelebration2026Event50Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_51_FREE")]
+    EventPassPikachuCelebration2026Event51Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_51_PREMIUM")]
+    EventPassPikachuCelebration2026Event51Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_52_FREE")]
+    EventPassPikachuCelebration2026Event52Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_52_PREMIUM")]
+    EventPassPikachuCelebration2026Event52Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_53_FREE")]
+    EventPassPikachuCelebration2026Event53Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_53_PREMIUM")]
+    EventPassPikachuCelebration2026Event53Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_54_FREE")]
+    EventPassPikachuCelebration2026Event54Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_54_PREMIUM")]
+    EventPassPikachuCelebration2026Event54Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_55_FREE")]
+    EventPassPikachuCelebration2026Event55Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_55_PREMIUM")]
+    EventPassPikachuCelebration2026Event55Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_56_FREE")]
+    EventPassPikachuCelebration2026Event56Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_56_PREMIUM")]
+    EventPassPikachuCelebration2026Event56Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_57_FREE")]
+    EventPassPikachuCelebration2026Event57Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_57_PREMIUM")]
+    EventPassPikachuCelebration2026Event57Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_58_FREE")]
+    EventPassPikachuCelebration2026Event58Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_58_PREMIUM")]
+    EventPassPikachuCelebration2026Event58Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_59_FREE")]
+    EventPassPikachuCelebration2026Event59Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_59_PREMIUM")]
+    EventPassPikachuCelebration2026Event59Premium,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_60_FREE")]
+    EventPassPikachuCelebration2026Event60Free,
+    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT_60_PREMIUM")]
+    EventPassPikachuCelebration2026Event60Premium,
 }

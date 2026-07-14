@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 1420 entries (structural types).
+// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 1540 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -14,23 +14,32 @@ export type EventPassTierSettingsType = W<EventPassTierSettings>;
 export interface EventPassTierSettingsData {
 	activeBonusDisplaySettings?: {
 		bonusBoxes: Array<{
-			iconType: number | "CANDY_GENERAL" | "CANDY_XL" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "STARDUST" | "TRADE" | "XP";
+			iconType: number | "CANDY_GENERAL" | "CANDY_XL" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "RAID" | "STARDUST" | "TRADE" | "XP";
 			text:
+				| "1.5x_xp_raid_bonus"
 				| "bonus_go_tour_2023_add_on_raid_02"
 				| "bonus_link_charge_cap_2000"
 				| "bonus_raid_1_xl_candy"
 				| "bonus_raid_3_candy"
+				| "catch_stardust_double"
+				| "catch_stardust_triple"
 				| "dai_duration_double"
+				| "gift_additional_items"
 				| "gift_open_more_daily"
 				| "gift_storage_more"
+				| "gift_xp_double"
 				| "hatch_candy_double"
 				| "hatch_stardust_double"
 				| "incubator_distance_half"
 				| "season_pass_bonus_hatch_xp_stardust"
 				| "trade_extra_candy"
-				| "trade_guaranteed_candyxl";
+				| "trade_guaranteed_candyxl"
+				| "transfer_candy_double"
+				| "transfer_candy_triple"
+				| "transfer_candy_xl_chance_double"
+				| "transfer_candy_xl_chance_triple";
 		}>;
-		eventName: "active_bonuses_label" | "go_pass_cumulative_bonuses_header";
+		eventName?: "active_bonuses_label" | "go_pass_cumulative_bonuses_header";
 	};
 	bonusSettings?: {
 		bonusBoxes: Array<{
@@ -40,6 +49,8 @@ export interface EventPassTierSettingsData {
 				| "bonus_link_charge_cap_2000"
 				| "bonus_raid_1_xl_candy"
 				| "bonus_raid_3_candy"
+				| "catch_stardust_double"
+				| "catch_stardust_triple"
 				| "dai_duration_double"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
@@ -49,7 +60,11 @@ export interface EventPassTierSettingsData {
 				| "incubator_distance_half"
 				| "season_pass_bonus_hatch_xp_stardust"
 				| "trade_extra_candy"
-				| "trade_guaranteed_candyxl";
+				| "trade_guaranteed_candyxl"
+				| "transfer_candy_double"
+				| "transfer_candy_triple"
+				| "transfer_candy_xl_chance_double"
+				| "transfer_candy_xl_chance_triple";
 		}>;
 		eventName:
 			| "season_pass_milestone_bonus_title_01"
@@ -90,6 +105,7 @@ export interface EventPassTierSettingsData {
 				| "ITEM_MP"
 				| "ITEM_NANAB_BERRY"
 				| "ITEM_PAID_RAID_TICKET"
+				| "ITEM_PINAP_BERRY"
 				| "ITEM_POFFIN"
 				| "ITEM_POKE_BALL"
 				| "ITEM_RARE_CANDY"
@@ -122,13 +138,18 @@ export interface EventPassTierSettingsData {
 				| "july2026_season_pass_rank_01"
 				| "july2026_season_pass_rank_02"
 				| "july2026_season_pass_rank_03"
-				| "july2026_season_pass_rank_04";
+				| "july2026_season_pass_rank_04"
+				| "pikachu_celebration_2026_season_pass_entitlement"
+				| "pikachu_celebration_2026_season_pass_rank_01"
+				| "pikachu_celebration_2026_season_pass_rank_01_paid"
+				| "pikachu_celebration_2026_season_pass_rank_02";
 		};
 		pokecoin?: number;
 		pokemonEncounter?: {
 			isFeaturedPokemon: boolean;
 			pokemonDisplay?: {
 				breadModeEnum?: "BREAD_MODE";
+				costume?: "GOFEST_2021_NOEVOLVE" | "GOFEST_2022_NOEVOLVE";
 				form:
 					| "CHIMECHO_NORMAL"
 					| "CLAMPERL_NORMAL"
@@ -147,9 +168,15 @@ export interface EventPassTierSettingsData {
 					| "KABUTOPS_NORMAL"
 					| "MEWTWO_NORMAL"
 					| "MR_MIME_GALARIAN"
+					| "PIKACHU_COSTUME_2020"
+					| "PIKACHU_GOFEST_2022"
 					| "PIKACHU_GOFEST_2026_CAP_BLUE"
 					| "PIKACHU_GOFEST_2026_CAP_RED"
 					| "PIKACHU_GOFEST_2026_CAP_YELLOW"
+					| "PIKACHU_NORMAL"
+					| "PIKACHU_POP_STAR"
+					| "PIKACHU_ROCK_STAR"
+					| "PIKACHU_SUMMER_2023_E"
 					| "PONYTA_GALARIAN"
 					| "PONYTA_NORMAL"
 					| "ROCKRUFF_NORMAL"

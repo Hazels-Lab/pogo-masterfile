@@ -107,7 +107,6 @@ const (
 	SingletonsTemplateIDPostcardCollectionSettings              SingletonsTemplateID = "POSTCARD_COLLECTION_SETTINGS"
 	SingletonsTemplateIDPowerUpPokestopSharedSettings           SingletonsTemplateID = "POWER_UP_POKESTOP_SHARED_SETTINGS"
 	SingletonsTemplateIDPrimalEvoSettings                       SingletonsTemplateID = "PRIMAL_EVO_SETTINGS"
-	SingletonsTemplateIDPtcOauthSettings                        SingletonsTemplateID = "PTC_OAUTH_SETTINGS"
 	SingletonsTemplateIDQuestDialogueInboxSettings              SingletonsTemplateID = "QUEST_DIALOGUE_INBOX_SETTINGS"
 	SingletonsTemplateIDQuickInviteSettingsRaid                 SingletonsTemplateID = "QUICK_INVITE_SETTINGS_RAID"
 	SingletonsTemplateIDRaidClientSettings                      SingletonsTemplateID = "RAID_CLIENT_SETTINGS"
@@ -253,7 +252,6 @@ var SingletonsTemplateIDValues = [...]SingletonsTemplateID{
 	SingletonsTemplateIDPostcardCollectionSettings,
 	SingletonsTemplateIDPowerUpPokestopSharedSettings,
 	SingletonsTemplateIDPrimalEvoSettings,
-	SingletonsTemplateIDPtcOauthSettings,
 	SingletonsTemplateIDQuestDialogueInboxSettings,
 	SingletonsTemplateIDQuickInviteSettingsRaid,
 	SingletonsTemplateIDRaidClientSettings,

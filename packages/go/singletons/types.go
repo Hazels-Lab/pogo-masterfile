@@ -1576,12 +1576,6 @@ type PrimalEvoSettings struct {
 	TypeBoosts         [3]PrimalEvoSettingsTypeBoosts      `json:"typeBoosts"`
 }
 
-type PtcOauthSettings struct {
-	EndTimeMs                string `json:"endTimeMs"`
-	LinkingRewardItem        string `json:"linkingRewardItem"`
-	PtcAccountLinkingEnabled bool   `json:"ptcAccountLinkingEnabled"`
-}
-
 type QuickInviteSettings struct {
 	Enabled                   bool   `json:"enabled"`
 	SuggestedPlayersVariation string `json:"suggestedPlayersVariation"`
@@ -1641,6 +1635,7 @@ type RaidSettings struct {
 	BootSoloMs                            uint64                                 `json:"bootSoloMs"`
 	CanInviteFriendsInPerson              bool                                   `json:"canInviteFriendsInPerson"`
 	CanInviteFriendsRemotely              bool                                   `json:"canInviteFriendsRemotely"`
+	FailedFriendInviteInfoEnabled         bool                                   `json:"failedFriendInviteInfoEnabled"`
 	FetchProfileFromSocialEnabled         bool                                   `json:"fetchProfileFromSocialEnabled"`
 	FriendInviteCutoffTimeSec             uint64                                 `json:"friendInviteCutoffTimeSec"`
 	FriendRequestsEnabled                 bool                                   `json:"friendRequestsEnabled"`
@@ -1866,6 +1861,7 @@ type SponsoredGeofenceGiftSettings struct {
 
 type SquashSettings struct {
 	DailySquashLimit uint64 `json:"dailySquashLimit"`
+	Enabled          bool   `json:"enabled"`
 }
 
 type StampCollectionSettings struct {
@@ -3300,18 +3296,6 @@ func (PrimalEvoSettingsEntry) MasterfileEntry() {}
 type PrimalEvoSettingsEntryData struct {
 	TemplateID        string            `json:"templateId"`
 	PrimalEvoSettings PrimalEvoSettings `json:"primalEvoSettings"`
-}
-
-type PtcOauthSettingsEntry struct {
-	TemplateID string                    `json:"templateId"`
-	Data       PtcOauthSettingsEntryData `json:"data"`
-}
-
-func (PtcOauthSettingsEntry) MasterfileEntry() {}
-
-type PtcOauthSettingsEntryData struct {
-	TemplateID       string           `json:"templateId"`
-	PtcOauthSettings PtcOauthSettings `json:"ptcOauthSettings"`
 }
 
 type QuestDialogueInboxSettingsEntry struct {

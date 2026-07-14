@@ -2,10 +2,15 @@
 
 import type { EventPassTierSettingsFreeGofest2026MasterfileEntry } from "./gofest2026";
 import type { EventPassTierSettingsFreeJuly2026MasterfileEntry } from "./july2026";
+import type { EventPassTierSettingsFreePikachuMasterfileEntry } from "./pikachu";
 
 export type * from "./gofest2026";
 export type * from "./july2026";
+export type * from "./pikachu";
 
-export type EventPassTierSettingsFreeMasterfileEntry = EventPassTierSettingsFreeGofest2026MasterfileEntry | EventPassTierSettingsFreeJuly2026MasterfileEntry;
+export type EventPassTierSettingsFreeMasterfileEntry =
+	| EventPassTierSettingsFreeGofest2026MasterfileEntry
+	| EventPassTierSettingsFreeJuly2026MasterfileEntry
+	| EventPassTierSettingsFreePikachuMasterfileEntry;
 
 export type EventPassTierSettingsFreeTemplateID = EventPassTierSettingsFreeMasterfileEntry["templateId"];
