@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1489 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1494 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -48,6 +48,7 @@ export interface IapItemDisplayData {
 	hidden?: boolean;
 	imageUrl?:
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F1e924512_PGO-MCS_GO_Fest_2026_EMEA_Global_LiveOp_v3-1024x576.jpg"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F07b0cffa_PGO-MCS_2026_Ultra_Unlock_01_v6-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F68bf81f3_PGO-MCS_GO_Pass_Special_Anniversary_Pikachu_Celebration_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F73951fa4_20260428_pgo_s23_gopass_june_ticket_1024x576_nologo%20(1).jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
@@ -64,7 +65,6 @@ export interface IapItemDisplayData {
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO_MCS_MasterBall_KeyArt_TK_GP_V2_S14_1024x512_nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-bug-out-2026-nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-entei-shadow-raid-day-2026-nologo.jpg"
-		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-gmax-kanto-max-battle-day-2026-nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-legendary-birds-nologo-2026.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Eternatus_Adventure_Effect_v2-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO-MCS_GO_Pass_May_2026_TICKET_v1-1204x576.jpg"
@@ -82,6 +82,7 @@ export interface IapItemDisplayData {
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FTourPass2026.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F3b085206_PGO-MCS_10th_Anniversary_Celebration_TICKET_v2-1024x576.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F9398cb22_PGO-MCS_Skarmory_Super_Mega_Raid_Day_v4-1024x576.jpg"
+		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fe2400534_20260511_pgo_s23_ShinyShaymin_1024x576_nologo.jpg"
 		| "https://storage.googleapis.com/prod-public-images/GBL_SharedSkies_2024.jpeg"
 		| "https://storage.googleapis.com/prod-public-images/gf20.jpg"
 		| "https://storage.googleapis.com/prod-public-images/Safari_ticket_banner.png";
@@ -117,7 +118,7 @@ export interface IapItemDisplayData {
 		| "2025-07-01T20:00:00"
 		| "2025-07-06T20:00:00"
 		| "2025-07-09T10:00:00"
-		| "2025-07-22T20:00:00"
+		| "2025-07-29T20:00:00"
 		| "2025-08-26T21:00:00"
 		| "2025-11-16T18:00:00"
 		| "2025-11-30T20:00:00"
@@ -130,12 +131,13 @@ export interface IapItemDisplayData {
 		| "2026-03-01T18:00:00"
 		| "2026-03-15T20:00:00"
 		| "2026-03-21T17:00:00"
-		| "2026-04-25T17:00:00"
 		| "2026-05-02T17:00:00"
 		| "2026-06-27T17:00:00"
 		| "2026-07-04T17:00:00"
 		| "2026-07-06T20:00:00"
 		| "2026-07-14T23:59:59"
+		| "2026-07-22T20:00:00"
+		| "2026-07-27T20:00:00"
 		| "2026-08-06T10:00:00";
 	skuDisableTimeUtcMs?:
 		| "1595786400000"
@@ -164,7 +166,7 @@ export interface IapItemDisplayData {
 		| "1751400000000"
 		| "1751832000000"
 		| "1752055200000"
-		| "1753214400000"
+		| "1753819200000"
 		| "1756242000000"
 		| "1763316000000"
 		| "1764532800000"
@@ -177,12 +179,13 @@ export interface IapItemDisplayData {
 		| "1772388000000"
 		| "1773604800000"
 		| "1774112400000"
-		| "1777136400000"
 		| "1777741200000"
 		| "1782579600000"
 		| "1783184400000"
 		| "1783368000000"
 		| "1784073599000"
+		| "1784750400000"
+		| "1785182400000"
 		| "1786010400000";
 	skuEnableTime?:
 		| "2019-03-14T08:00:00"
@@ -192,7 +195,6 @@ export interface IapItemDisplayData {
 		| "2022-03-01T00:00:00"
 		| "2023-01-01T11:00:01"
 		| "2023-01-01T11:00:03"
-		| "2023-01-01T11:00:04"
 		| "2023-02-27T20:00:00"
 		| "2023-04-06T10:00:00"
 		| "2023-07-31T00:00:00"
@@ -218,9 +220,11 @@ export interface IapItemDisplayData {
 		| "2025-06-02T00:00:00"
 		| "2025-06-02T10:00:00"
 		| "2025-06-09T10:00:00"
+		| "2025-06-21T10:00:00"
 		| "2025-06-23T10:00:00"
 		| "2025-07-06T00:00:00"
 		| "2025-07-13T10:00:00"
+		| "2025-07-21T10:00:00"
 		| "2026-03-03T13:00:00";
 	skuEnableTimeUtcMs?:
 		| "1552550400000"
@@ -230,7 +234,6 @@ export interface IapItemDisplayData {
 		| "1646092800000"
 		| "1672570801000"
 		| "1672570803000"
-		| "1672570804000"
 		| "1677528000000"
 		| "1680775200000"
 		| "1690761600000"
@@ -256,9 +259,11 @@ export interface IapItemDisplayData {
 		| "1748822400000"
 		| "1748858400000"
 		| "1749463200000"
+		| "1750500000000"
 		| "1750672800000"
 		| "1751760000000"
 		| "1752400800000"
+		| "1753092000000"
 		| "1772542800000";
 	sortOrder?: number;
 	spriteId?: string;
@@ -270,7 +275,6 @@ export interface IapItemDisplayData {
 		| "web-2025-gowa-ticket-box"
 		| "web-catch-mastery-feb-26-ticket-box"
 		| "web-encounter-jan-26-ticket-box"
-		| "web-gmax-kanto-box-ultra"
 		| "web-gotour-26-ticket-box"
 		| "web-masterball-25-ticket-box"
 		| "web-shadow-entei-raid-box-ultra"

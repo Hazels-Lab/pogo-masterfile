@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 39 entries.
+// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 41 entries.
 
 import type { S } from "../../_utils";
 import type { ItemSettings } from "../types";
@@ -1021,6 +1021,85 @@ export type ItemSettingsItemEventTicketS23202604ToGift = S<
 		}
 	>
 >;
+export type ItemSettingsItemEventTicketS23202606 = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S23_2026_06",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "item_event_ticket_gray_desc_shayminmasterworkrerun";
+			globalEventTicket: {
+				backgroundImageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fe2400534_20260511_pgo_s23_ShinyShaymin_1024x576_nologo.jpg";
+				clientEventEndTimeUtcMs: "1785182400000";
+				clientEventStartTimeUtcMs: "1784628000000";
+				conflictStoryQuestIds: ["RERUN_MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER", "MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER"];
+				detailsLinkKey: "details_link_key_shayminmasterworkrerun";
+				displayV2Enabled: true;
+				eventBannerUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fe2400534_20260511_pgo_s23_ShinyShaymin_1024x576_nologo.jpg";
+				eventDatetimeRangeKey: "event_datetime_range_key_shayminmasterworkrerun";
+				eventEndTime: "2026-07-27T20:00:00";
+				eventStartTime: "2026-07-21T10:00:00";
+				giftable: true;
+				giftItem: 2242;
+				iconRewards: [
+					{
+						pokemonEncounter: {
+							pokemonDisplay: {
+								shiny: true;
+							};
+							pokemonId: "SHAYMIN";
+						};
+						type: "POKEMON_ENCOUNTER";
+					},
+					{
+						candy: {
+							amount: 30;
+							pokemonId: "SHAYMIN";
+						};
+						type: "CANDY";
+					},
+					{
+						item: {
+							amount: 3;
+							item: "ITEM_LEADER_MAP";
+						};
+						type: "ITEM";
+					},
+				];
+				itemBagDescriptionKey: "item_event_ticket_gray_details_shayminmasterworkrerun";
+				textRewardsKey: "text_rewards_key_shayminmasterworkrerun";
+			};
+			itemId: 2210;
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general2.ticket.5_shayminmasterworkrerun";
+		}
+	>
+>;
+export type ItemSettingsItemEventTicketS23202607 = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S23_2026_07",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "item_event_ticket_pink_details_MegaRayquaza26";
+			globalEventTicket: {
+				backgroundImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F0ba8ff0a_20260508_pgo_s23_megarayquaza_1024x576_nologo.jpg";
+				clientEventEndTimeUtcMs: "1785096000000";
+				clientEventStartTimeUtcMs: "1784973600000";
+				detailsLinkKey: "details_link_key";
+				displayV2Enabled: true;
+				eventDatetimeRangeKey: "event_datetime_range_key_MegaRayquaza26";
+				eventEndTime: "2026-07-26T20:00:00";
+				eventStartTime: "2026-07-25T10:00:00";
+				giftable: true;
+				giftItem: 2243;
+				itemBagDescriptionKey: "item_event_ticket_pink_desc_MegaRayquaza26";
+				textRewardsKey: "text_rewards_key_MegaRayquaza26";
+			};
+			itemId: 2211;
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general1.ticket.2_MegaRayquaza_title";
+		}
+	>
+>;
 export type ItemSettingsItemEventTicketS23202609 = S<
 	ItemSettings<
 		"ITEM_EVENT_TICKET_S23_2026_09",
@@ -1322,6 +1401,8 @@ export type ItemSettingsGlobalEventTicketMasterfileEntry =
 	| ItemSettingsItemEventTicketS23202603
 	| ItemSettingsItemEventTicketS23202604
 	| ItemSettingsItemEventTicketS23202604ToGift
+	| ItemSettingsItemEventTicketS23202606
+	| ItemSettingsItemEventTicketS23202607
 	| ItemSettingsItemEventTicketS23202609
 	| ItemSettingsItemEvergreenTicket
 	| ItemSettingsItemEvergreenTicketToGift

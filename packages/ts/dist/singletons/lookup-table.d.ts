@@ -105,7 +105,6 @@ import type {
 	PostcardCollectionSettings,
 	PowerUpPokestopsSettings,
 	PrimalEvoSettings,
-	PtcOauthSettings,
 	QuestDialogueInboxSettings,
 	QuickInviteSettings,
 	RaidEntryCostSettings,
@@ -249,7 +248,6 @@ export interface SingletonsLookup {
 	POSTCARD_COLLECTION_SETTINGS: PostcardCollectionSettings;
 	POWER_UP_POKESTOP_SHARED_SETTINGS: PowerUpPokestopsSettings;
 	PRIMAL_EVO_SETTINGS: PrimalEvoSettings;
-	PTC_OAUTH_SETTINGS: PtcOauthSettings;
 	QUEST_DIALOGUE_INBOX_SETTINGS: QuestDialogueInboxSettings;
 	QUICK_INVITE_SETTINGS_RAID: QuickInviteSettings;
 	RAID_CLIENT_SETTINGS: RaidSettings;

@@ -11,12 +11,10 @@ pub enum RollBackTemplateId {
     CombatVnextUseMatchingStartTurnForFastAttackEnableRollBack,
     #[serde(rename = "FRIENDS_AND_SOCIAL_LAZY_LOAD_ROLL_BACK")]
     FriendsAndSocialLazyLoadRollBack,
+    #[serde(rename = "MAP_RADIUS_ENHANCE_GRAPHICS_ROLL_BACK")]
+    MapRadiusEnhanceGraphicsRollBack,
     #[serde(rename = "OPTIMIZE_RAID_LOBBY_AVATAR_DETAILS_ROLL_BACK")]
     OptimizeRaidLobbyAvatarDetailsRollBack,
     #[serde(rename = "PERIODIC_MAP_UNLOAD_ROLL_BACK")]
     PeriodicMapUnloadRollBack,
-    #[serde(rename = "SCENE_POP_MEM_CLEANUP_ROLL_BACK")]
-    ScenePopMemCleanupRollBack,
-    #[serde(rename = "UNLOAD_ALL_ASSETS_CODE_GATE")]
-    UnloadAllAssetsCodeGate,
 }

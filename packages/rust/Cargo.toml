@@ -1,6 +1,6 @@
 [package]
 name = "pogo-masterfile-types"
-version = "0.1.17"
+version = "0.1.18"
 edition = "2024"
 rust-version = "1.85"
 description = "Generated Rust types for the Pokémon GO masterfile, with a typed parse_masterfile dispatcher."

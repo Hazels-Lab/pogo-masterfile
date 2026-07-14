@@ -244,7 +244,7 @@ export type ItemSettingsItemEventPassPointLiveOps07 = S<
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
-					limit: 300;
+					limit: 500;
 				};
 			};
 		}

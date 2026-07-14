@@ -18,7 +18,7 @@ pub struct BonusBoxes {
 #[serde(rename_all = "camelCase")]
 pub struct ActiveBonusDisplaySettings {
     pub bonus_boxes: Vec<BonusBoxes>,
-    pub event_name: String,
+    pub event_name: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -73,6 +73,7 @@ pub struct LocationCard {
 #[serde(rename_all = "camelCase")]
 pub struct PokemonDisplay {
     pub bread_mode_enum: Option<String>,
+    pub costume: Option<String>,
     pub form: String,
     pub location_card: Option<LocationCard>,
 }

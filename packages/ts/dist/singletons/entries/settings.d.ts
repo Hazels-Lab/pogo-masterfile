@@ -270,7 +270,7 @@ export interface BreadBattleClientSettings {
 			maxPlayersPerBreadDoughLobby: 100;
 			maxPlayersPerBreadLobby: 4;
 			maxPlayersToPrepareBreadDoughLobby: 98;
-			maxRemoteBreadBattlePassesAllowed: 999999;
+			maxRemoteBreadBattlePassesAllowed: 10;
 			maxRemotePlayersPerBreadDoughLobby: 100;
 			maxRemotePlayersPerBreadLobby: 4;
 			minPlayersToPrepareBreadLobby: 1;
@@ -4721,18 +4721,6 @@ export interface PrimalEvoSettings {
 	};
 }
 
-export interface PtcOauthSettings {
-	templateId: "PTC_OAUTH_SETTINGS";
-	data: {
-		templateId: "PTC_OAUTH_SETTINGS";
-		ptcOauthSettings: {
-			endTimeMs: "2022190740000";
-			linkingRewardItem: "ITEM_INCUBATOR_BASIC";
-			ptcAccountLinkingEnabled: true;
-		};
-	};
-}
-
 export interface QuestDialogueInboxSettings {
 	templateId: "QUEST_DIALOGUE_INBOX_SETTINGS";
 	data: {
@@ -4790,6 +4778,7 @@ export interface RaidSettings {
 			bootSoloMs: 30000;
 			canInviteFriendsInPerson: true;
 			canInviteFriendsRemotely: true;
+			failedFriendInviteInfoEnabled: true;
 			fetchProfileFromSocialEnabled: true;
 			friendInviteCutoffTimeSec: 20;
 			friendRequestsEnabled: true;
@@ -5496,7 +5485,8 @@ export interface SquashSettings {
 	data: {
 		templateId: "REMOTE_RAID_LIMIT_SETTINGS";
 		squashSettings: {
-			dailySquashLimit: 999999;
+			dailySquashLimit: 10;
+			enabled: true;
 		};
 	};
 }
@@ -6018,7 +6008,6 @@ export type SingletonsSettingsMasterfileEntry =
 	| PostcardCollectionSettings
 	| PowerUpPokestopsSettings
 	| PrimalEvoSettings
-	| PtcOauthSettings
 	| QuestDialogueInboxSettings
 	| QuickInviteSettings
 	| RaidEntryCostSettings

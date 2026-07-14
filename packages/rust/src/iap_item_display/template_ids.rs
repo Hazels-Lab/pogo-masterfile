@@ -1189,6 +1189,8 @@ pub enum IapItemDisplayTemplateId {
     EventPassGowild2025GlobalStoreRedirect,
     #[serde(rename = "EVENT_PASS_HALLOWEEN2025_SEASON_STORE_REDIRECT")]
     EventPassHalloween2025SeasonStoreRedirect,
+    #[serde(rename = "EVENT_PASS_JULY2_EVENT_STORE_REDIRECT")]
+    EventPassJuly2EventStoreRedirect,
     #[serde(rename = "EVENT_PASS_JUNE2_EVENT_STORE_REDIRECT")]
     EventPassJune2EventStoreRedirect,
     #[serde(rename = "EVENT_PASS_JUNE4_EVENT_STORE_REDIRECT")]
@@ -1315,6 +1317,10 @@ pub enum IapItemDisplayTemplateId {
     July1DeluxeEventPassTrackUnlock,
     #[serde(rename = "JULY1_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
     July1DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "JULY2_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
+    July2DeluxeEventPassTrackUnlock,
+    #[serde(rename = "JULY2_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
+    July2DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "JUNE1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
     June12026DeluxeEventPassTrackUnlock,
     #[serde(rename = "JUNE1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
@@ -1551,6 +1557,10 @@ pub enum IapItemDisplayTemplateId {
     PgoreleaseGofestDeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "pgorelease.july1_deluxe_event_pass_track_redirect")]
     PgoreleaseJuly1DeluxeEventPassTrackRedirect,
+    #[serde(rename = "pgorelease.july1_deluxe_event_pass_track_unlock")]
+    PgoreleaseJuly1DeluxeEventPassTrackUnlock,
+    #[serde(rename = "pgorelease.july1_deluxe_event_pass_track_unlock_plus_points")]
+    PgoreleaseJuly1DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "pgorelease.may1_2026_deluxe_event_pass_track_redirect")]
     PgoreleaseMay12026DeluxeEventPassTrackRedirect,
     #[serde(rename = "pgorelease.may1_2026_deluxe_event_pass_track_unlock_redirect")]

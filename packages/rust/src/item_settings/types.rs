@@ -68,7 +68,7 @@ pub struct NeutralAvatarItemTemplate {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PokemonDisplay {
-    pub form: String,
+    pub form: Option<String>,
     pub shiny: Option<bool>,
 }
 
@@ -97,6 +97,7 @@ pub struct GlobalEventTicket {
     pub background_image_url: Option<String>,
     pub client_event_end_time_utc_ms: String,
     pub client_event_start_time_utc_ms: String,
+    pub conflict_story_quest_ids: Option<[String; 2]>,
     pub details_link_key: Option<String>,
     pub display_v2_enabled: Option<bool>,
     pub event_badge: Option<String>,

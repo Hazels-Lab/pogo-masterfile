@@ -149,14 +149,14 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "iapItemDisplay":
-		var e iap_item_display.IapItemDisplayEntry
+	case "eventPassTierSettings":
+		var e event_pass_tier_settings.EventPassTierSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
 		return e, nil
-	case "eventPassTierSettings":
-		var e event_pass_tier_settings.EventPassTierSettingsEntry
+	case "iapItemDisplay":
+		var e iap_item_display.IapItemDisplayEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -395,14 +395,14 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "rollBack":
-		var e roll_back.RollBackEntry
+	case "buddyLevelSettings":
+		var e buddy_level_settings.BuddyLevelSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
 		return e, nil
-	case "buddyLevelSettings":
-		var e buddy_level_settings.BuddyLevelSettingsEntry
+	case "rollBack":
+		var e roll_back.RollBackEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -431,6 +431,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
+	case "eventPassSettings":
+		var e event_pass_settings.EventPassSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
 	case "languageSettings":
 		var e language_settings.LanguageSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -445,12 +451,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "avatarGroupOrderSettings":
 		var e avatar_group_order_settings.AvatarGroupOrderSettingsEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
-	case "eventPassSettings":
-		var e event_pass_settings.EventPassSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -1081,12 +1081,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "primalEvoSettings":
 		var e singletons.PrimalEvoSettingsEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
-	case "ptcOauthSettings":
-		var e singletons.PtcOauthSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}

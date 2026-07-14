@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-hidden-image-url-sku-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order-sprite-id-title-use-environment-prefix", 3 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-hidden-image-url-sku-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order-sprite-id-title-use-environment-prefix", 4 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -41,6 +41,25 @@ export type IapItemDisplayGeneral2Ticket3 = S<
 		}
 	>
 >;
+export type IapItemDisplayGeneral2Ticket6 = S<
+	IapItemDisplay<
+		"general2.ticket.6",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			hidden: true;
+			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fe2400534_20260511_pgo_s23_ShinyShaymin_1024x576_nologo.jpg";
+			sku: "pgorelease.general2.ticket.6";
+			skuDisableTime: "2026-07-27T20:00:00";
+			skuDisableTimeUtcMs: "1785182400000";
+			skuEnableTime: "2025-06-21T10:00:00";
+			skuEnableTimeUtcMs: "1750500000000";
+			sortOrder: 1;
+			spriteId: "general2.ticket.6";
+			title: "general2.ticket.5_shayminmasterworkrerun";
+			useEnvironmentPrefix: true;
+		}
+	>
+>;
 export type IapItemDisplayGeneral2Ticket9 = S<
 	IapItemDisplay<
 		"general2.ticket.9",
@@ -64,4 +83,5 @@ export type IapItemDisplayGeneral2Ticket9 = S<
 export type IapItemDisplayCategoryHiddenImageUrlSkuSkuDisableTimeSkuDisableTimeUtcMsSkuEnableTimeSkuEnableTimeUtcMsSortOrderSpriteIdTitleUseEnvironmentPrefixMasterfileEntry =
 	| IapItemDisplayGeneral1Ticket4
 	| IapItemDisplayGeneral2Ticket3
+	| IapItemDisplayGeneral2Ticket6
 	| IapItemDisplayGeneral2Ticket9;
