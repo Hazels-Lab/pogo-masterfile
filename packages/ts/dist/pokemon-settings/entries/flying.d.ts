@@ -1210,9 +1210,15 @@ export type PokemonSettingsV0845PokemonCramorantGorging = S<
 			};
 			cinematicMoves: [593, "FLY", "HYDRO_PUMP", "SURF"];
 			encounter: {
+				attackProbability: 0.2;
 				cameraDistance: 4;
 				collisionHeadRadiusM: 0.2;
 				collisionRadiusM: 0.5;
+				dodgeDistance: 0.5;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.1;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
 			};
 			familyId: "FAMILY_CRAMORANT";
 			form: 3350;
@@ -1260,9 +1266,15 @@ export type PokemonSettingsV0845PokemonCramorantGulping = S<
 			};
 			cinematicMoves: [593, "FLY", "HYDRO_PUMP", "SURF"];
 			encounter: {
+				attackProbability: 0.2;
 				cameraDistance: 4;
 				collisionHeadRadiusM: 0.2;
 				collisionRadiusM: 0.5;
+				dodgeDistance: 0.5;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.1;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
 			};
 			familyId: "FAMILY_CRAMORANT";
 			form: 3349;

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-sku", 1 entry.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "transporter-energy", 1 entry.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -13,4 +13,4 @@ export type IapItemDisplayHometransport1 = S<
 	>
 >;
 
-export type IapItemDisplayCategorySkuMasterfileEntry = IapItemDisplayHometransport1;
+export type IapItemDisplayTransporterEnergyMasterfileEntry = IapItemDisplayHometransport1;

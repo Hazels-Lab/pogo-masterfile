@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1492 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1163 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -90,7 +90,7 @@ export interface IapItemDisplayData {
 	sale?: boolean;
 	showDiscountTag?: boolean;
 	showStrikethroughPrice?: boolean;
-	sku?: string;
+	sku: string;
 	skuDisableTime?:
 		| "2020-07-26T18:00:00"
 		| "2022-06-02T13:00:00"

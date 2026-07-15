@@ -11,7 +11,7 @@ pub struct IapItemDisplay {
     pub sale: Option<bool>,
     pub show_discount_tag: Option<bool>,
     pub show_strikethrough_price: Option<bool>,
-    pub sku: Option<String>,
+    pub sku: String,
     pub sku_disable_time: Option<String>,
     pub sku_disable_time_utc_ms: Option<String>,
     pub sku_enable_time: Option<String>,
