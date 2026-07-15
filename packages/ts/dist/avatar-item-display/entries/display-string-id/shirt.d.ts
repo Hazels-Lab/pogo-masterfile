@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shirt", 450 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shirt", 452 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -1674,6 +1674,15 @@ export type AvatarItemDisplayNShirtJirachi0 = S<
 		{
 			displayStringId: "n_shirt_jirachi_0_display_name";
 			iconAddress: "n_shirt_jirachi_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtJleague = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_jleague",
+		{
+			displayStringId: "avatar_shirt_ JLeague_2026";
+			iconAddress: "n_shirt_jleague_icon";
 		}
 	>
 >;
@@ -3981,6 +3990,15 @@ export type AvatarItemDisplayNShirtWhitecoat0 = S<
 		}
 	>
 >;
+export type AvatarItemDisplayNShirtWillow = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_willow",
+		{
+			displayStringId: "avatar_shirt_default_willow_coat";
+			iconAddress: "n_shirt_willow_icon";
+		}
+	>
+>;
 export type AvatarItemDisplayNShirtWintersweater20230 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_shirt_wintersweater2023_0",
@@ -4241,6 +4259,7 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirtJames0
 	| AvatarItemDisplayNShirtJessie0
 	| AvatarItemDisplayNShirtJirachi0
+	| AvatarItemDisplayNShirtJleague
 	| AvatarItemDisplayNShirtJogger0
 	| AvatarItemDisplayNShirtKeldeotshirt0
 	| AvatarItemDisplayNShirtKorrinaA0
@@ -4497,6 +4516,7 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirtWcs2027
 	| AvatarItemDisplayNShirtWcsyokohama0
 	| AvatarItemDisplayNShirtWhitecoat0
+	| AvatarItemDisplayNShirtWillow
 	| AvatarItemDisplayNShirtWintersweater20230
 	| AvatarItemDisplayNShirtYveltaljacket
 	| AvatarItemDisplayNShirtZacostumeA0

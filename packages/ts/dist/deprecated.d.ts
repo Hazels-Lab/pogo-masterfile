@@ -435,7 +435,7 @@ type DeprecatedClientQuestTemplateIds =
 	| "LEVEL_50_CAP_SUB_2"
 	| "LEVEL_50_CAP_SUB_3";
 
-/** @deprecated lastSeen 2026-07-07 — 33 entries */
+/** @deprecated lastSeen 2026-07-15 — 34 entries */
 type DeprecatedCodeGateProtoIds =
 	| "AGE_CONFIRM_CODE_GATE"
 	| "BATTLE_REWARDS_CODE_GATE"
@@ -457,6 +457,7 @@ type DeprecatedCodeGateProtoIds =
 	| "PARTY_TAB_SOCIAL_TAB_REORGANIZATION_CODE_GATE"
 	| "PARTY_TRACKING_REFACTOR_CODE_GATE"
 	| "POKEBALL_SOFTLOCK_FIX"
+	| "PREDICT_CHARGE_MOVE_ON_SUBMIT_ROLL_BACK_CODE_GATE"
 	| "PUSH_GATEWAY_MULTI_ACTION_CODE_GATE"
 	| "RAID_LOCATION_VERIFICATION_CODE_GATE"
 	| "RECORD_COMBAT_LEAGUE_PERFORMANCE_CODE_GATE"
@@ -474,7 +475,7 @@ type DeprecatedCodeGateProtoIds =
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedEggTransparencySettingsIds = "EGG_TRANSPARENCY_SETTINGS";
 
-/** @deprecated lastSeen 2026-07-10 — 28 entries */
+/** @deprecated lastSeen 2026-07-15 — 29 entries */
 type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_30ANNIV2026_EVENT"
 	| "EVENT_PASS_APRIL2025_SEASON"
@@ -485,6 +486,7 @@ type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_FEBRUARY2026_SEASON"
 	| "EVENT_PASS_GOFEST2025_GLOBAL"
 	| "EVENT_PASS_GOFEST2025_MAXFINALE"
+	| "EVENT_PASS_GOFEST2026_GLOBAL"
 	| "EVENT_PASS_GOTOUR2025_GLOBAL"
 	| "EVENT_PASS_GOTOUR2026_GLOBAL"
 	| "EVENT_PASS_GOWA_2025"

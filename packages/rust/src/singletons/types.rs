@@ -2231,6 +2231,14 @@ pub struct PrimalEvoSettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct PtcOauthSettings {
+    pub end_time_ms: String,
+    pub linking_reward_item: String,
+    pub ptc_account_linking_enabled: bool,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct QuickInviteSettings {
     pub enabled: bool,
     pub suggested_players_variation: String,
@@ -3071,6 +3079,8 @@ crate::masterfile_entry!(PostcardCollectionSettingsEntry, PostcardCollectionSett
 crate::masterfile_entry!(PowerUpPokestopsSettingsEntry, PowerUpPokestopsSettingsEntryData, power_up_pokestops_settings: PowerUpPokestopsSettings);
 
 crate::masterfile_entry!(PrimalEvoSettingsEntry, PrimalEvoSettingsEntryData, primal_evo_settings: PrimalEvoSettings);
+
+crate::masterfile_entry!(PtcOauthSettingsEntry, PtcOauthSettingsEntryData, ptc_oauth_settings: PtcOauthSettings);
 
 crate::masterfile_stub_entry!(
     QuestDialogueInboxSettingsEntry,

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1180 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1182 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -16915,6 +16915,40 @@ export type PokemonExtendedSettingsV0844PokemonSandacondaNormal = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0845PokemonCramorantGorging = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0845_POKEMON_CRAMORANT_GORGING",
+		{
+			form: 3350;
+			sizeSettings: {
+				mLowerBound: 0.6;
+				mUpperBound: 1;
+				xlUpperBound: 1.2;
+				xsLowerBound: 0.4;
+				xxlUpperBound: 1.4;
+				xxsLowerBound: 0.392;
+			};
+			uniqueId: "CRAMORANT";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0845PokemonCramorantGulping = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0845_POKEMON_CRAMORANT_GULPING",
+		{
+			form: 3349;
+			sizeSettings: {
+				mLowerBound: 0.6;
+				mUpperBound: 1;
+				xlUpperBound: 1.2;
+				xsLowerBound: 0.4;
+				xxlUpperBound: 1.4;
+				xxsLowerBound: 0.392;
+			};
+			uniqueId: "CRAMORANT";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0845PokemonCramorantNormal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0845_POKEMON_CRAMORANT_NORMAL",
@@ -21201,6 +21235,8 @@ export type PokemonExtendedSettingsFormMasterfileEntry =
 	| PokemonExtendedSettingsV0842PokemonAppletunNormal
 	| PokemonExtendedSettingsV0843PokemonSilicobraNormal
 	| PokemonExtendedSettingsV0844PokemonSandacondaNormal
+	| PokemonExtendedSettingsV0845PokemonCramorantGorging
+	| PokemonExtendedSettingsV0845PokemonCramorantGulping
 	| PokemonExtendedSettingsV0845PokemonCramorantNormal
 	| PokemonExtendedSettingsV0846PokemonArrokudaNormal
 	| PokemonExtendedSettingsV0847PokemonBarraskewdaNormal

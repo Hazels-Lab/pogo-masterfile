@@ -7,6 +7,7 @@ export type MoveSettingsV0084MoveDisarmingVoice = S<
 	MoveSettings<
 		"V0084_MOVE_DISARMING_VOICE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 3600;
@@ -27,6 +28,7 @@ export type MoveSettingsV0085MoveDrainingKiss = S<
 	MoveSettings<
 		"V0085_MOVE_DRAINING_KISS",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1200;
@@ -48,6 +50,7 @@ export type MoveSettingsV0086MoveDazzlingGleam = S<
 	MoveSettings<
 		"V0086_MOVE_DAZZLING_GLEAM",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 3300;
@@ -68,6 +71,7 @@ export type MoveSettingsV0087MoveMoonblast = S<
 	MoveSettings<
 		"V0087_MOVE_MOONBLAST",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 3800;
@@ -88,6 +92,7 @@ export type MoveSettingsV0088MovePlayRough = S<
 	MoveSettings<
 		"V0088_MOVE_PLAY_ROUGH",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2800;
@@ -108,6 +113,7 @@ export type MoveSettingsV0320MoveCharmFast = S<
 	MoveSettings<
 		"V0320_MOVE_CHARM_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1200;
 			damageWindowStartMs: 900;
@@ -127,6 +133,7 @@ export type MoveSettingsV0350MoveFairyWindFast = S<
 	MoveSettings<
 		"V0350_MOVE_FAIRY_WIND_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1000;
 			damageWindowStartMs: 630;
@@ -146,6 +153,7 @@ export type MoveSettingsV0387MoveGeomancyFast = S<
 	MoveSettings<
 		"V0387_MOVE_GEOMANCY_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1500;
 			damageWindowStartMs: 1000;
@@ -165,6 +173,7 @@ export type MoveSettingsV0390MoveNaturesMadness = S<
 	MoveSettings<
 		"V0390_MOVE_NATURES_MADNESS",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1900;
 			damageWindowStartMs: 1300;
@@ -184,6 +193,7 @@ export type MoveSettingsVnBm011 = S<
 	MoveSettings<
 		"VN_BM_011",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -202,6 +212,7 @@ export type MoveSettingsVnBm040 = S<
 	MoveSettings<
 		"VN_BM_040",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -220,6 +231,7 @@ export type MoveSettingsVnBm042 = S<
 	MoveSettings<
 		"VN_BM_042",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;

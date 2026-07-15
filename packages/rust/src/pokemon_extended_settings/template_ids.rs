@@ -4165,6 +4165,10 @@ pub enum PokemonExtendedSettingsTemplateId {
     ExtendedV0844PokemonSandacondaNormal,
     #[serde(rename = "EXTENDED_V0845_POKEMON_CRAMORANT")]
     ExtendedV0845PokemonCramorant,
+    #[serde(rename = "EXTENDED_V0845_POKEMON_CRAMORANT_GORGING")]
+    ExtendedV0845PokemonCramorantGorging,
+    #[serde(rename = "EXTENDED_V0845_POKEMON_CRAMORANT_GULPING")]
+    ExtendedV0845PokemonCramorantGulping,
     #[serde(rename = "EXTENDED_V0845_POKEMON_CRAMORANT_NORMAL")]
     ExtendedV0845PokemonCramorantNormal,
     #[serde(rename = "EXTENDED_V0846_POKEMON_ARROKUDA")]

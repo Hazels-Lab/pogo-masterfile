@@ -80,7 +80,7 @@ export type CombatLeagueVsSeekerUltra = S<
 		"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
 		{
 			badgeType: "BADGE_ULTRA_LEAGUE";
-			bannedPokemon: ["DITTO", "SHEDINJA"];
+			bannedPokemon: ["DITTO", "SHEDINJA", "KYUREM"];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_ULTRA";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/pogo_ultra_league.png";
 			leagueType: "STANDARD";
@@ -154,7 +154,7 @@ export type CombatLeagueVsSeekerUltraMegas = S<
 		{
 			allowTempEvos: true;
 			badgeType: "BADGE_ULTRA_LEAGUE";
-			bannedPokemon: ["DITTO", "SHEDINJA"];
+			bannedPokemon: ["DITTO", "SHEDINJA", "KYUREM"];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_ULTRA";
 			iconUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F34c7dd20_pogo_mega_ultra_league.png";
 			leagueType: "STANDARD";

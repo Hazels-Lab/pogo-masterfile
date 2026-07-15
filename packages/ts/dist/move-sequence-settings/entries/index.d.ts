@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSequenceSettings", 334 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "moveSequenceSettings", 337 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { MoveSequenceSettings } from "../types";
@@ -584,6 +584,14 @@ export type MoveSequenceSettingsDischarge = S<
 		}
 	>
 >;
+export type MoveSequenceSettingsDive = S<
+	MoveSequenceSettings<
+		"sequence_dive",
+		{
+			sequence: ["anim attacker atk-move", "wait 0.5", "vfx dive", "sfx attacker 291-0_dive", "wait 0.5", "sys ui-sync", "sys complete"];
+		}
+	>
+>;
 export type MoveSequenceSettingsDoomDesire = S<
 	MoveSequenceSettings<
 		"sequence_doom_desire",
@@ -1151,6 +1159,38 @@ export type MoveSequenceSettingsGrassKnot = S<
 				"wait 0.25",
 				"sfx attacker 447-0_grass_knot",
 				"wait 1.5",
+				"sys ui-sync",
+				"sys complete",
+			];
+		}
+	>
+>;
+export type MoveSequenceSettingsGulpMissileGorging = S<
+	MoveSequenceSettings<
+		"sequence_gulp_missile_gorging",
+		{
+			sequence: [
+				"anim attacker atk-move",
+				"wait 1.5",
+				"vfx gulp_missile_gorging",
+				"sfx attacker 269-0_gulp_missile_gorging",
+				"wait 1.0",
+				"sys ui-sync",
+				"sys complete",
+			];
+		}
+	>
+>;
+export type MoveSequenceSettingsGulpMissileGulping = S<
+	MoveSequenceSettings<
+		"sequence_gulp_missile_gulping",
+		{
+			sequence: [
+				"anim attacker atk-move",
+				"wait 1.5",
+				"vfx gulp_missile_gulping",
+				"sfx attacker 269-0_gulp_missile_gulping",
+				"wait 1.0",
 				"sys ui-sync",
 				"sys complete",
 			];
@@ -3433,6 +3473,7 @@ export type MoveSequenceSettingsMasterfileEntry =
 	| MoveSequenceSettingsDig
 	| MoveSequenceSettingsDisarmingVoice
 	| MoveSequenceSettingsDischarge
+	| MoveSequenceSettingsDive
 	| MoveSequenceSettingsDoomDesire
 	| MoveSequenceSettingsDoubleIronBash
 	| MoveSequenceSettingsDoubleKickFast
@@ -3489,6 +3530,8 @@ export type MoveSequenceSettingsMasterfileEntry =
 	| MoveSequenceSettingsGlaciate
 	| MoveSequenceSettingsGlaiveRush
 	| MoveSequenceSettingsGrassKnot
+	| MoveSequenceSettingsGulpMissileGorging
+	| MoveSequenceSettingsGulpMissileGulping
 	| MoveSequenceSettingsGunkShot
 	| MoveSequenceSettingsGustFast
 	| MoveSequenceSettingsGyroBall

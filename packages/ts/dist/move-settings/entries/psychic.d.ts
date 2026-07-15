@@ -7,6 +7,7 @@ export type MoveSettingsV0030MovePsybeam = S<
 	MoveSettings<
 		"V0030_MOVE_PSYBEAM",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2500;
@@ -27,6 +28,7 @@ export type MoveSettingsV0034MoveHeartStamp = S<
 	MoveSettings<
 		"V0034_MOVE_HEART_STAMP",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1700;
@@ -47,6 +49,7 @@ export type MoveSettingsV0060MovePsyshock = S<
 	MoveSettings<
 		"V0060_MOVE_PSYSHOCK",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2400;
@@ -67,6 +70,7 @@ export type MoveSettingsV0108MovePsychic = S<
 	MoveSettings<
 		"V0108_MOVE_PSYCHIC",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2800;
@@ -87,6 +91,7 @@ export type MoveSettingsV0109MovePsystrike = S<
 	MoveSettings<
 		"V0109_MOVE_PSYSTRIKE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2200;
@@ -107,6 +112,7 @@ export type MoveSettingsV0226MovePsychoCutFast = S<
 	MoveSettings<
 		"V0226_MOVE_PSYCHO_CUT_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 470;
 			damageWindowStartMs: 270;
@@ -126,6 +132,7 @@ export type MoveSettingsV0234MoveZenHeadbuttFast = S<
 	MoveSettings<
 		"V0234_MOVE_ZEN_HEADBUTT_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 950;
 			damageWindowStartMs: 750;
@@ -145,6 +152,7 @@ export type MoveSettingsV0235MoveConfusionFast = S<
 	MoveSettings<
 		"V0235_MOVE_CONFUSION_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1500;
 			damageWindowStartMs: 500;
@@ -164,6 +172,7 @@ export type MoveSettingsV0274MoveExtrasensoryFast = S<
 	MoveSettings<
 		"V0274_MOVE_EXTRASENSORY_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 950;
 			damageWindowStartMs: 750;
@@ -183,6 +192,7 @@ export type MoveSettingsV0275MoveFuturesight = S<
 	MoveSettings<
 		"V0275_MOVE_FUTURESIGHT",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2500;
@@ -203,6 +213,7 @@ export type MoveSettingsV0276MoveMirrorCoat = S<
 	MoveSettings<
 		"V0276_MOVE_MIRROR_COAT",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2400;
@@ -223,6 +234,7 @@ export type MoveSettingsV0288MovePsychoBoost = S<
 	MoveSettings<
 		"V0288_MOVE_PSYCHO_BOOST",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 4000;
 			damageWindowStartMs: 3500;
@@ -242,6 +254,7 @@ export type MoveSettingsV0324MoveSynchronoise = S<
 	MoveSettings<
 		"V0324_MOVE_SYNCHRONOISE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1500;
 			damageWindowStartMs: 750;
@@ -261,6 +274,7 @@ export type MoveSettingsV0353MovePsychicFangs = S<
 	MoveSettings<
 		"V0353_MOVE_PSYCHIC_FANGS",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 900;
 			damageWindowStartMs: 200;
@@ -280,6 +294,7 @@ export type MoveSettingsV0365MoveLusterPurge = S<
 	MoveSettings<
 		"V0365_MOVE_LUSTER_PURGE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1500;
 			damageWindowStartMs: 500;
@@ -299,6 +314,7 @@ export type MoveSettingsV0366MoveMistBall = S<
 	MoveSettings<
 		"V0366_MOVE_MIST_BALL",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1700;
 			damageWindowStartMs: 1200;
@@ -318,6 +334,7 @@ export type MoveSettingsV0401MovePsywaveFast = S<
 	MoveSettings<
 		"V0401_MOVE_PSYWAVE_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 600;
 			damageWindowStartMs: 300;
@@ -337,6 +354,7 @@ export type MoveSettingsVnBm013 = S<
 	MoveSettings<
 		"VN_BM_013",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -355,6 +373,7 @@ export type MoveSettingsVnBm032 = S<
 	MoveSettings<
 		"VN_BM_032",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;

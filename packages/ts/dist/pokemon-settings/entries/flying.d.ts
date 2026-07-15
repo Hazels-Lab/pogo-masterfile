@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonSettings", split "flying", 21 entries.
+// Generated from Pokémon GO masterfile — group "pokemonSettings", split "flying", 23 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonSettings } from "../types";
@@ -1138,12 +1138,24 @@ export type PokemonSettingsV0845PokemonCramorant = S<
 			buddyGroupNumber: 2;
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
+			buddyPortraitOffset: [0, 0, 0];
+			buddyPortraitRotation: [0, 0, 0];
 			buddyScale: 19;
-			camera: object;
-			cinematicMoves: ["DRILL_PECK", "FLY", "HYDRO_PUMP"];
+			camera: {
+				cylinderHeightM: 1;
+				cylinderRadiusM: 0.5;
+			};
+			cinematicMoves: [593, "FLY", "HYDRO_PUMP", "SURF"];
+			combatDefaultCameraAngle: [0, 0, 0];
+			combatOpponentFocusCameraAngle: [0, 0, 0];
+			combatPlayerFocusCameraAngle: [0, 0, 0];
+			combatPlayerPokemonPositionOffset: [0, 0, 0];
+			combatShoulderCameraAngle: [0, 0, 0];
 			encounter: {
 				attackProbability: 0.2;
 				cameraDistance: 4;
+				collisionHeadRadiusM: 0.2;
+				collisionRadiusM: 0.5;
 				dodgeDistance: 0.5;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.1;
@@ -1152,13 +1164,116 @@ export type PokemonSettingsV0845PokemonCramorant = S<
 			};
 			familyId: "FAMILY_CRAMORANT";
 			heightStdDev: 0.1;
+			ibfc: {
+				combatEnable: true;
+				defaultForm: "CRAMORANT_NORMAL";
+			};
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 3;
+			modelHeight: 0.9;
+			modelScaleV2: 1.05;
+			pokedexHeightM: 0.8;
+			pokedexWeightKg: 18;
+			pokemonId: "CRAMORANT";
+			quickMoves: ["PECK_FAST", "WATER_GUN_FAST"];
+			stats: {
+				baseAttack: 173;
+				baseDefense: 163;
+				baseStamina: 172;
+			};
+			thirdMove: {
+				candyToUnlock: 50;
+				stardustToUnlock: 50000;
+			};
+			type: "POKEMON_TYPE_FLYING";
+			type2: "POKEMON_TYPE_WATER";
+			weightStdDev: 2.25;
+		}
+	>
+>;
+export type PokemonSettingsV0845PokemonCramorantGorging = S<
+	PokemonSettings<
+		"V0845_POKEMON_CRAMORANT_GORGING",
+		{
+			breadTierGroup: "GROUP_2";
+			buddyGroupNumber: 2;
+			buddyOffsetFemale: [0, 0, 0];
+			buddyOffsetMale: [0, 0, 0];
+			buddyPortraitOffset: [0, 0, 0];
+			buddyPortraitRotation: [0, 0, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderHeightM: 1;
+				cylinderRadiusM: 0.5;
+			};
+			cinematicMoves: [593, "FLY", "HYDRO_PUMP", "SURF"];
+			encounter: {
+				cameraDistance: 4;
+				collisionHeadRadiusM: 0.2;
+				collisionRadiusM: 0.5;
+			};
+			familyId: "FAMILY_CRAMORANT";
+			form: 3350;
+			heightStdDev: 0.1;
 			ibfc: object;
 			isDeployable: true;
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
-			modelHeight: 1;
-			modelScaleV2: 1;
+			modelHeight: 0.9;
+			modelScaleV2: 1.05;
+			pokedexHeightM: 0.8;
+			pokedexWeightKg: 18;
+			pokemonId: "CRAMORANT";
+			quickMoves: ["PECK_FAST", "WATER_GUN_FAST"];
+			stats: {
+				baseAttack: 173;
+				baseDefense: 163;
+				baseStamina: 172;
+			};
+			thirdMove: {
+				candyToUnlock: 50;
+				stardustToUnlock: 50000;
+			};
+			type: "POKEMON_TYPE_FLYING";
+			type2: "POKEMON_TYPE_WATER";
+			weightStdDev: 2.25;
+		}
+	>
+>;
+export type PokemonSettingsV0845PokemonCramorantGulping = S<
+	PokemonSettings<
+		"V0845_POKEMON_CRAMORANT_GULPING",
+		{
+			breadTierGroup: "GROUP_2";
+			buddyGroupNumber: 2;
+			buddyOffsetFemale: [0, 0, 0];
+			buddyOffsetMale: [0, 0, 0];
+			buddyPortraitOffset: [0, 0, 0];
+			buddyPortraitRotation: [0, 0, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderHeightM: 1;
+				cylinderRadiusM: 0.5;
+			};
+			cinematicMoves: [593, "FLY", "HYDRO_PUMP", "SURF"];
+			encounter: {
+				cameraDistance: 4;
+				collisionHeadRadiusM: 0.2;
+				collisionRadiusM: 0.5;
+			};
+			familyId: "FAMILY_CRAMORANT";
+			form: 3349;
+			heightStdDev: 0.1;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 3;
+			modelHeight: 0.9;
+			modelScaleV2: 1.05;
 			pokedexHeightM: 0.8;
 			pokedexWeightKg: 18;
 			pokemonId: "CRAMORANT";
@@ -1186,12 +1301,24 @@ export type PokemonSettingsV0845PokemonCramorantNormal = S<
 			buddyGroupNumber: 2;
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
+			buddyPortraitOffset: [0, 0, 0];
+			buddyPortraitRotation: [0, 0, 0];
 			buddyScale: 19;
-			camera: object;
-			cinematicMoves: ["DRILL_PECK", "FLY", "HYDRO_PUMP"];
+			camera: {
+				cylinderHeightM: 1;
+				cylinderRadiusM: 0.5;
+			};
+			cinematicMoves: [593, "FLY", "HYDRO_PUMP", "SURF"];
+			combatDefaultCameraAngle: [0, 0, 0];
+			combatOpponentFocusCameraAngle: [0, 0, 0];
+			combatPlayerFocusCameraAngle: [0, 0, 0];
+			combatPlayerPokemonPositionOffset: [0, 0, 0];
+			combatShoulderCameraAngle: [0, 0, 0];
 			encounter: {
 				attackProbability: 0.2;
 				cameraDistance: 4;
+				collisionHeadRadiusM: 0.2;
+				collisionRadiusM: 0.5;
 				dodgeDistance: 0.5;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.1;
@@ -1206,8 +1333,8 @@ export type PokemonSettingsV0845PokemonCramorantNormal = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
-			modelHeight: 1;
-			modelScaleV2: 1;
+			modelHeight: 0.9;
+			modelScaleV2: 1.05;
 			pokedexHeightM: 0.8;
 			pokedexWeightKg: 18;
 			pokemonId: "CRAMORANT";
@@ -1471,6 +1598,8 @@ export type PokemonSettingsFlyingMasterfileEntry =
 	| PokemonSettingsV0823PokemonCorviknight
 	| PokemonSettingsV0823PokemonCorviknightNormal
 	| PokemonSettingsV0845PokemonCramorant
+	| PokemonSettingsV0845PokemonCramorantGorging
+	| PokemonSettingsV0845PokemonCramorantGulping
 	| PokemonSettingsV0845PokemonCramorantNormal
 	| PokemonSettingsV0962PokemonBombirdier
 	| PokemonSettingsV0962PokemonBombirdierNormal

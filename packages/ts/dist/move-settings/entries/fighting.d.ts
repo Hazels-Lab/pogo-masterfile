@@ -7,6 +7,7 @@ export type MoveSettingsV0028MoveCrossChop = S<
 	MoveSettings<
 		"V0028_MOVE_CROSS_CHOP",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.25;
 			damageWindowEndMs: 1200;
@@ -27,6 +28,7 @@ export type MoveSettingsV0054MoveSubmission = S<
 	MoveSettings<
 		"V0054_MOVE_SUBMISSION",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1800;
@@ -47,6 +49,7 @@ export type MoveSettingsV0056MoveLowSweep = S<
 	MoveSettings<
 		"V0056_MOVE_LOW_SWEEP",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1750;
@@ -67,6 +70,7 @@ export type MoveSettingsV0123MoveBrickBreak = S<
 	MoveSettings<
 		"V0123_MOVE_BRICK_BREAK",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.25;
 			damageWindowEndMs: 1300;
@@ -87,6 +91,7 @@ export type MoveSettingsV0207MoveLowKickFast = S<
 	MoveSettings<
 		"V0207_MOVE_LOW_KICK_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 500;
 			damageWindowStartMs: 200;
@@ -106,6 +111,7 @@ export type MoveSettingsV0208MoveKarateChopFast = S<
 	MoveSettings<
 		"V0208_MOVE_KARATE_CHOP_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1000;
 			damageWindowStartMs: 800;
@@ -125,6 +131,7 @@ export type MoveSettingsV0241MoveRockSmashFast = S<
 	MoveSettings<
 		"V0241_MOVE_ROCK_SMASH_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1000;
 			damageWindowStartMs: 750;
@@ -144,6 +151,7 @@ export type MoveSettingsV0243MoveCounterFast = S<
 	MoveSettings<
 		"V0243_MOVE_COUNTER_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1000;
 			damageWindowStartMs: 800;
@@ -163,6 +171,7 @@ export type MoveSettingsV0245MoveCloseCombat = S<
 	MoveSettings<
 		"V0245_MOVE_CLOSE_COMBAT",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2500;
@@ -183,6 +192,7 @@ export type MoveSettingsV0246MoveDynamicPunch = S<
 	MoveSettings<
 		"V0246_MOVE_DYNAMIC_PUNCH",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2500;
@@ -203,6 +213,7 @@ export type MoveSettingsV0247MoveFocusBlast = S<
 	MoveSettings<
 		"V0247_MOVE_FOCUS_BLAST",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 3500;
@@ -223,6 +234,7 @@ export type MoveSettingsV0310MoveSuperPower = S<
 	MoveSettings<
 		"V0310_MOVE_SUPER_POWER",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2800;
 			damageWindowStartMs: 2100;
@@ -242,6 +254,7 @@ export type MoveSettingsV0314MoveDrainPunch = S<
 	MoveSettings<
 		"V0314_MOVE_DRAIN_PUNCH",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1600;
 			damageWindowStartMs: 1100;
@@ -261,6 +274,7 @@ export type MoveSettingsV0319MovePowerUpPunch = S<
 	MoveSettings<
 		"V0319_MOVE_POWER_UP_PUNCH",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1900;
 			damageWindowStartMs: 1700;
@@ -280,6 +294,7 @@ export type MoveSettingsV0330MoveSacredSword = S<
 	MoveSettings<
 		"V0330_MOVE_SACRED_SWORD",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 800;
 			damageWindowStartMs: 300;
@@ -299,6 +314,7 @@ export type MoveSettingsV0331MoveFlyingPress = S<
 	MoveSettings<
 		"V0331_MOVE_FLYING_PRESS",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2200;
 			damageWindowStartMs: 1200;
@@ -318,6 +334,7 @@ export type MoveSettingsV0332MoveAuraSphere = S<
 	MoveSettings<
 		"V0332_MOVE_AURA_SPHERE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1800;
 			damageWindowStartMs: 1200;
@@ -337,6 +354,7 @@ export type MoveSettingsV0356MoveDoubleKickFast = S<
 	MoveSettings<
 		"V0356_MOVE_DOUBLE_KICK_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 800;
 			damageWindowStartMs: 300;
@@ -356,6 +374,7 @@ export type MoveSettingsV0408MoveHighJumpKick = S<
 	MoveSettings<
 		"V0408_MOVE_HIGH_JUMP_KICK",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 800;
 			damageWindowStartMs: 450;
@@ -375,6 +394,7 @@ export type MoveSettingsV0462MoveForcePalmFast = S<
 	MoveSettings<
 		"V0462_MOVE_FORCE_PALM_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1000;
 			damageWindowStartMs: 800;
@@ -394,6 +414,7 @@ export type MoveSettingsV0471MoveUpperHand = S<
 	MoveSettings<
 		"V0471_MOVE_UPPER_HAND",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3100;
 			damageWindowStartMs: 2300;
@@ -413,6 +434,7 @@ export type MoveSettingsV0489MoveSecretSword = S<
 	MoveSettings<
 		"V0489_MOVE_SECRET_SWORD",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1600;
 			damageWindowStartMs: 1200;
@@ -433,6 +455,7 @@ export type MoveSettingsVnBm005 = S<
 	MoveSettings<
 		"VN_BM_005",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -451,6 +474,7 @@ export type MoveSettingsVnBm023 = S<
 	MoveSettings<
 		"VN_BM_023",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;

@@ -2080,6 +2080,8 @@ import type {
 	GenderSettingsV0844PokemonSandaconda,
 	GenderSettingsV0844PokemonSandacondaNormal,
 	GenderSettingsV0845PokemonCramorant,
+	GenderSettingsV0845PokemonCramorantGorging,
+	GenderSettingsV0845PokemonCramorantGulping,
 	GenderSettingsV0845PokemonCramorantNormal,
 	GenderSettingsV0846PokemonArrokuda,
 	GenderSettingsV0846PokemonArrokudaNormal,
@@ -4550,6 +4552,8 @@ export interface GenderSettingsLookup {
 	SPAWN_V0844_POKEMON_SANDACONDA: GenderSettingsV0844PokemonSandaconda;
 	SPAWN_V0844_POKEMON_SANDACONDA_NORMAL: GenderSettingsV0844PokemonSandacondaNormal;
 	SPAWN_V0845_POKEMON_CRAMORANT: GenderSettingsV0845PokemonCramorant;
+	SPAWN_V0845_POKEMON_CRAMORANT_GORGING: GenderSettingsV0845PokemonCramorantGorging;
+	SPAWN_V0845_POKEMON_CRAMORANT_GULPING: GenderSettingsV0845PokemonCramorantGulping;
 	SPAWN_V0845_POKEMON_CRAMORANT_NORMAL: GenderSettingsV0845PokemonCramorantNormal;
 	SPAWN_V0846_POKEMON_ARROKUDA: GenderSettingsV0846PokemonArrokuda;
 	SPAWN_V0846_POKEMON_ARROKUDA_NORMAL: GenderSettingsV0846PokemonArrokudaNormal;

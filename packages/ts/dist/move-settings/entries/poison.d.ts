@@ -7,6 +7,7 @@ export type MoveSettingsV0018MoveSludge = S<
 	MoveSettings<
 		"V0018_MOVE_SLUDGE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1450;
@@ -27,6 +28,7 @@ export type MoveSettingsV0050MovePoisonFang = S<
 	MoveSettings<
 		"V0050_MOVE_POISON_FANG",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1200;
@@ -47,6 +49,7 @@ export type MoveSettingsV0089MoveCrossPoison = S<
 	MoveSettings<
 		"V0089_MOVE_CROSS_POISON",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.25;
 			damageWindowEndMs: 1300;
@@ -67,6 +70,7 @@ export type MoveSettingsV0090MoveSludgeBomb = S<
 	MoveSettings<
 		"V0090_MOVE_SLUDGE_BOMB",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2300;
@@ -87,6 +91,7 @@ export type MoveSettingsV0091MoveSludgeWave = S<
 	MoveSettings<
 		"V0091_MOVE_SLUDGE_WAVE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2800;
@@ -107,6 +112,7 @@ export type MoveSettingsV0092MoveGunkShot = S<
 	MoveSettings<
 		"V0092_MOVE_GUNK_SHOT",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2600;
@@ -127,6 +133,7 @@ export type MoveSettingsV0224MovePoisonJabFast = S<
 	MoveSettings<
 		"V0224_MOVE_POISON_JAB_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1000;
 			damageWindowStartMs: 400;
@@ -146,6 +153,7 @@ export type MoveSettingsV0225MoveAcidFast = S<
 	MoveSettings<
 		"V0225_MOVE_ACID_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 800;
 			damageWindowStartMs: 600;
@@ -165,6 +173,7 @@ export type MoveSettingsV0236MovePoisonStingFast = S<
 	MoveSettings<
 		"V0236_MOVE_POISON_STING_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 475;
 			damageWindowStartMs: 275;
@@ -184,6 +193,7 @@ export type MoveSettingsV0303MoveAcidSpray = S<
 	MoveSettings<
 		"V0303_MOVE_ACID_SPRAY",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2800;
 			damageWindowStartMs: 2100;
@@ -203,6 +213,7 @@ export type MoveSettingsVnBm008 = S<
 	MoveSettings<
 		"VN_BM_008",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -221,6 +232,7 @@ export type MoveSettingsVnBm029 = S<
 	MoveSettings<
 		"VN_BM_029",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;

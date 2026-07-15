@@ -2080,6 +2080,8 @@ import type {
 	PokemonSettingsV0844PokemonSandaconda,
 	PokemonSettingsV0844PokemonSandacondaNormal,
 	PokemonSettingsV0845PokemonCramorant,
+	PokemonSettingsV0845PokemonCramorantGorging,
+	PokemonSettingsV0845PokemonCramorantGulping,
 	PokemonSettingsV0845PokemonCramorantNormal,
 	PokemonSettingsV0846PokemonArrokuda,
 	PokemonSettingsV0846PokemonArrokudaNormal,
@@ -4547,6 +4549,8 @@ export interface PokemonSettingsLookup {
 	V0844_POKEMON_SANDACONDA: PokemonSettingsV0844PokemonSandaconda;
 	V0844_POKEMON_SANDACONDA_NORMAL: PokemonSettingsV0844PokemonSandacondaNormal;
 	V0845_POKEMON_CRAMORANT: PokemonSettingsV0845PokemonCramorant;
+	V0845_POKEMON_CRAMORANT_GORGING: PokemonSettingsV0845PokemonCramorantGorging;
+	V0845_POKEMON_CRAMORANT_GULPING: PokemonSettingsV0845PokemonCramorantGulping;
 	V0845_POKEMON_CRAMORANT_NORMAL: PokemonSettingsV0845PokemonCramorantNormal;
 	V0846_POKEMON_ARROKUDA: PokemonSettingsV0846PokemonArrokuda;
 	V0846_POKEMON_ARROKUDA_NORMAL: PokemonSettingsV0846PokemonArrokudaNormal;

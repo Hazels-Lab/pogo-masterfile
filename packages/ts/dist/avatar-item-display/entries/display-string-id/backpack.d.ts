@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/backpack", 81 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/backpack", 82 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -723,6 +723,15 @@ export type AvatarItemDisplayNBackpackWhitekyuremitem0 = S<
 		}
 	>
 >;
+export type AvatarItemDisplayNBackpackWillow = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_backpack_willow",
+		{
+			displayStringId: "avatar_backpack_default_willow_backpack";
+			iconAddress: "n_backpack_willow_icon";
+		}
+	>
+>;
 export type AvatarItemDisplayNBackpackZubatbp0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_backpack_zubatbp_0",
@@ -814,4 +823,5 @@ export type AvatarItemDisplayDisplayStringIdBackpackMasterfileEntry =
 	| AvatarItemDisplayNBackpackUnequip0
 	| AvatarItemDisplayNBackpackVerizon20210
 	| AvatarItemDisplayNBackpackWhitekyuremitem0
+	| AvatarItemDisplayNBackpackWillow
 	| AvatarItemDisplayNBackpackZubatbp0;

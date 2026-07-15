@@ -1551,10 +1551,6 @@ pub enum IapItemDisplayTemplateId {
     PgoreleaseGeneral2Ticket10Giftable,
     #[serde(rename = "pgorelease.gofest_2025_deluxe_event_pass_track_redirect")]
     PgoreleaseGofest2025DeluxeEventPassTrackRedirect,
-    #[serde(rename = "pgorelease.gofest_deluxe_event_pass_track_unlock")]
-    PgoreleaseGofestDeluxeEventPassTrackUnlock,
-    #[serde(rename = "pgorelease.gofest_deluxe_event_pass_track_unlock_plus_points")]
-    PgoreleaseGofestDeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "pgorelease.july1_deluxe_event_pass_track_redirect")]
     PgoreleaseJuly1DeluxeEventPassTrackRedirect,
     #[serde(rename = "pgorelease.july1_deluxe_event_pass_track_unlock")]

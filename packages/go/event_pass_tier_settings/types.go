@@ -2,11 +2,9 @@
 
 package event_pass_tier_settings
 
-import "encoding/json"
-
 type EventPassTierSettingsBonusBoxes struct {
-	IconType json.RawMessage `json:"iconType"`
-	Text     string          `json:"text"`
+	IconType string `json:"iconType"`
+	Text     string `json:"text"`
 }
 
 type EventPassTierSettingsActiveBonusDisplaySettings struct {
@@ -14,14 +12,9 @@ type EventPassTierSettingsActiveBonusDisplaySettings struct {
 	EventName  *string                           `json:"eventName,omitempty"`
 }
 
-type EventPassTierSettingsBonusBoxesV2 struct {
-	IconType string `json:"iconType"`
-	Text     string `json:"text"`
-}
-
 type EventPassTierSettingsBonusSettings struct {
-	BonusBoxes []EventPassTierSettingsBonusBoxesV2 `json:"bonusBoxes"`
-	EventName  string                              `json:"eventName"`
+	BonusBoxes []EventPassTierSettingsBonusBoxes `json:"bonusBoxes"`
+	EventName  string                            `json:"eventName"`
 }
 
 type EventPassTierSettingsCandy struct {
@@ -32,11 +25,6 @@ type EventPassTierSettingsCandy struct {
 type EventPassTierSettingsItem struct {
 	Amount uint64 `json:"amount"`
 	Item   string `json:"item"`
-}
-
-type EventPassTierSettingsNeutralAvatarItemTemplate struct {
-	DisplayTemplateId string `json:"displayTemplateId"`
-	ItemTemplateId    string `json:"itemTemplateId"`
 }
 
 type EventPassTierSettingsPlayerAttribute struct {
@@ -68,17 +56,15 @@ type EventPassTierSettingsPokemonEncounter struct {
 }
 
 type EventPassTierSettingsRewards struct {
-	Candy                     *EventPassTierSettingsCandy                     `json:"candy,omitempty"`
-	Exp                       *uint64                                         `json:"exp,omitempty"`
-	Item                      *EventPassTierSettingsItem                      `json:"item,omitempty"`
-	MegaResource              *EventPassTierSettingsCandy                     `json:"megaResource,omitempty"`
-	NeutralAvatarItemTemplate *EventPassTierSettingsNeutralAvatarItemTemplate `json:"neutralAvatarItemTemplate,omitempty"`
-	PlayerAttribute           *EventPassTierSettingsPlayerAttribute           `json:"playerAttribute,omitempty"`
-	Pokecoin                  *uint64                                         `json:"pokecoin,omitempty"`
-	PokemonEncounter          *EventPassTierSettingsPokemonEncounter          `json:"pokemonEncounter,omitempty"`
-	Stardust                  *uint64                                         `json:"stardust,omitempty"`
-	Type                      string                                          `json:"type"`
-	XlCandy                   *EventPassTierSettingsCandy                     `json:"xlCandy,omitempty"`
+	Candy            *EventPassTierSettingsCandy            `json:"candy,omitempty"`
+	Exp              *uint64                                `json:"exp,omitempty"`
+	Item             *EventPassTierSettingsItem             `json:"item,omitempty"`
+	PlayerAttribute  *EventPassTierSettingsPlayerAttribute  `json:"playerAttribute,omitempty"`
+	Pokecoin         *uint64                                `json:"pokecoin,omitempty"`
+	PokemonEncounter *EventPassTierSettingsPokemonEncounter `json:"pokemonEncounter,omitempty"`
+	Stardust         *uint64                                `json:"stardust,omitempty"`
+	Type             string                                 `json:"type"`
+	XlCandy          *EventPassTierSettingsCandy            `json:"xlCandy,omitempty"`
 }
 
 type EventPassTierSettings struct {

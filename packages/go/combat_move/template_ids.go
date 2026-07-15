@@ -326,6 +326,9 @@ const (
 	CombatMoveTemplateIDCombatV0497MovePlasmaFists           CombatMoveTemplateID = "COMBAT_V0497_MOVE_PLASMA_FISTS"
 	CombatMoveTemplateIDCombatV0590MoveGlaiveRush            CombatMoveTemplateID = "COMBAT_V0590_MOVE_GLAIVE_RUSH"
 	CombatMoveTemplateIDCombatV0592MoveSnipeShot             CombatMoveTemplateID = "COMBAT_V0592_MOVE_SNIPE_SHOT"
+	CombatMoveTemplateIDCombatV0593MoveDive                  CombatMoveTemplateID = "COMBAT_V0593_MOVE_DIVE"
+	CombatMoveTemplateIDCombatV0594MoveGulpMissileGulping    CombatMoveTemplateID = "COMBAT_V0594_MOVE_GULP_MISSILE_GULPING"
+	CombatMoveTemplateIDCombatV0595MoveGulpMissileGorging    CombatMoveTemplateID = "COMBAT_V0595_MOVE_GULP_MISSILE_GORGING"
 )
 
 var CombatMoveTemplateIDValues = [...]CombatMoveTemplateID{
@@ -650,4 +653,7 @@ var CombatMoveTemplateIDValues = [...]CombatMoveTemplateID{
 	CombatMoveTemplateIDCombatV0497MovePlasmaFists,
 	CombatMoveTemplateIDCombatV0590MoveGlaiveRush,
 	CombatMoveTemplateIDCombatV0592MoveSnipeShot,
+	CombatMoveTemplateIDCombatV0593MoveDive,
+	CombatMoveTemplateIDCombatV0594MoveGulpMissileGulping,
+	CombatMoveTemplateIDCombatV0595MoveGulpMissileGorging,
 }

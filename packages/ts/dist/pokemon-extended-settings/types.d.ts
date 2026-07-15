@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", 2468 entries (structural types).
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", 2470 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -68,7 +68,7 @@ export interface PokemonExtendedSettingsData {
 			xxsLowerBound: number;
 		};
 	}>;
-	form?: string;
+	form?: number | string;
 	sizeSettings: {
 		disablePokedexRecordDisplayForForms?: boolean;
 		mLowerBound: number;

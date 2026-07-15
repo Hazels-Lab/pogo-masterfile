@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatMove", split "water", 29 entries.
+// Generated from Pokémon GO masterfile — group "combatMove", split "water", 30 entries.
 
 import type { S } from "../../_utils";
 import type { CombatMove } from "../types";
@@ -395,6 +395,18 @@ export type CombatMoveV0592MoveSnipeShot = S<
 		}
 	>
 >;
+export type CombatMoveV0593MoveDive = S<
+	CombatMove<
+		"COMBAT_V0593_MOVE_DIVE",
+		{
+			energyDelta: -40;
+			power: 50;
+			type: "POKEMON_TYPE_WATER";
+			uniqueId: 593;
+			vfxName: "dive";
+		}
+	>
+>;
 
 export type CombatMoveWaterMasterfileEntry =
 	| CombatMoveV0053MoveBubbleBeam
@@ -425,4 +437,5 @@ export type CombatMoveWaterMasterfileEntry =
 	| CombatMoveV0463MoveSparklingAria
 	| CombatMoveV0487MoveAquaStep
 	| CombatMoveV0488MoveChillingWater
-	| CombatMoveV0592MoveSnipeShot;
+	| CombatMoveV0592MoveSnipeShot
+	| CombatMoveV0593MoveDive;

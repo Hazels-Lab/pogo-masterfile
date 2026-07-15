@@ -7,6 +7,7 @@ export type MoveSettingsV0080MoveTwister = S<
 	MoveSettings<
 		"V0080_MOVE_TWISTER",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2800;
@@ -27,6 +28,7 @@ export type MoveSettingsV0082MoveDragonPulse = S<
 	MoveSettings<
 		"V0082_MOVE_DRAGON_PULSE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 3200;
@@ -47,6 +49,7 @@ export type MoveSettingsV0083MoveDragonClaw = S<
 	MoveSettings<
 		"V0083_MOVE_DRAGON_CLAW",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.25;
 			damageWindowEndMs: 1100;
@@ -67,6 +70,7 @@ export type MoveSettingsV0204MoveDragonBreathFast = S<
 	MoveSettings<
 		"V0204_MOVE_DRAGON_BREATH_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 500;
 			damageWindowStartMs: 300;
@@ -86,6 +90,7 @@ export type MoveSettingsV0253MoveDragonTailFast = S<
 	MoveSettings<
 		"V0253_MOVE_DRAGON_TAIL_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 950;
 			damageWindowStartMs: 750;
@@ -105,6 +110,7 @@ export type MoveSettingsV0277MoveOutrage = S<
 	MoveSettings<
 		"V0277_MOVE_OUTRAGE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 3800;
@@ -125,6 +131,7 @@ export type MoveSettingsV0285MoveDracoMeteor = S<
 	MoveSettings<
 		"V0285_MOVE_DRACO_METEOR",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2900;
@@ -144,6 +151,7 @@ export type MoveSettingsV0379MoveBreakingSwipe = S<
 	MoveSettings<
 		"V0379_MOVE_BREAKING_SWIPE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 900;
 			damageWindowStartMs: 470;
@@ -163,6 +171,7 @@ export type MoveSettingsV0388MoveSpacialRend = S<
 	MoveSettings<
 		"V0388_MOVE_SPACIAL_REND",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2950;
 			damageWindowStartMs: 1370;
@@ -182,6 +191,7 @@ export type MoveSettingsV0394MoveRoarOfTime = S<
 	MoveSettings<
 		"V0394_MOVE_ROAR_OF_TIME",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2300;
 			damageWindowStartMs: 850;
@@ -201,6 +211,7 @@ export type MoveSettingsV0482MoveDynamaxCannon = S<
 	MoveSettings<
 		"V0482_MOVE_DYNAMAX_CANNON",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1400;
 			damageWindowStartMs: 900;
@@ -221,6 +232,7 @@ export type MoveSettingsV0484MoveClangingScales = S<
 	MoveSettings<
 		"V0484_MOVE_CLANGING_SCALES",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3200;
 			damageWindowStartMs: 1880;
@@ -240,6 +252,7 @@ export type MoveSettingsV0486MoveDragonEnergy = S<
 	MoveSettings<
 		"V0486_MOVE_DRAGON_ENERGY",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3200;
 			damageWindowStartMs: 1880;
@@ -259,6 +272,7 @@ export type MoveSettingsV0590MoveGlaiveRush = S<
 	MoveSettings<
 		"V0590_MOVE_GLAIVE_RUSH",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1900;
 			damageWindowStartMs: 1700;
@@ -278,6 +292,7 @@ export type MoveSettingsVnBm012 = S<
 	MoveSettings<
 		"VN_BM_012",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -296,6 +311,7 @@ export type MoveSettingsVnBm044 = S<
 	MoveSettings<
 		"VN_BM_044",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -314,6 +330,7 @@ export type MoveSettingsVnBm062 = S<
 	MoveSettings<
 		"VN_BM_062",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;

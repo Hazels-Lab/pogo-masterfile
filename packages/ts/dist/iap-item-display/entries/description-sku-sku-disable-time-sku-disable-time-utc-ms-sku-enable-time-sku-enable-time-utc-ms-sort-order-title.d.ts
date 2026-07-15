@@ -1,38 +1,8 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "description-sku-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order-title", 4 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "description-sku-sku-disable-time-sku-disable-time-utc-ms-sku-enable-time-sku-enable-time-utc-ms-sort-order-title", 2 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
 
-export type IapItemDisplayPgoreleaseGofestDeluxeEventPassTrackUnlock = S<
-	IapItemDisplay<
-		"pgorelease.gofest_deluxe_event_pass_track_unlock",
-		{
-			description: "deluxe_event_pass_track_unlock_description";
-			sku: "pgorelease.gofest_deluxe_event_pass_track_unlock";
-			skuDisableTime: "2026-07-14T23:59:59";
-			skuDisableTimeUtcMs: "1784073599000";
-			skuEnableTime: "2025-07-06T00:00:00";
-			skuEnableTimeUtcMs: "1751760000000";
-			sortOrder: 1;
-			title: "event_pass_gofest2026_premium_track_title";
-		}
-	>
->;
-export type IapItemDisplayPgoreleaseGofestDeluxeEventPassTrackUnlockPlusPoints = S<
-	IapItemDisplay<
-		"pgorelease.gofest_deluxe_event_pass_track_unlock_plus_points",
-		{
-			description: "deluxe_event_pass_track_unlock_plus_points_description";
-			sku: "pgorelease.gofest_deluxe_event_pass_track_unlock_plus_points";
-			skuDisableTime: "2026-07-14T23:59:59";
-			skuDisableTimeUtcMs: "1784073599000";
-			skuEnableTime: "2025-07-06T00:00:00";
-			skuEnableTimeUtcMs: "1751760000000";
-			sortOrder: 1;
-			title: "event_pass_gofest2026_premium_track_plus_points_title";
-		}
-	>
->;
 export type IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlock = S<
 	IapItemDisplay<
 		"pgorelease.month2_deluxe_event_pass_track_unlock",
@@ -65,7 +35,5 @@ export type IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints =
 >;
 
 export type IapItemDisplayDescriptionSkuSkuDisableTimeSkuDisableTimeUtcMsSkuEnableTimeSkuEnableTimeUtcMsSortOrderTitleMasterfileEntry =
-	| IapItemDisplayPgoreleaseGofestDeluxeEventPassTrackUnlock
-	| IapItemDisplayPgoreleaseGofestDeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlock
 	| IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints;

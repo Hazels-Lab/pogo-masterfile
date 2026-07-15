@@ -89,8 +89,8 @@ export interface ItemSettingsData {
 			| "EVENT_PASS_BLANCHE2026_EVENT"
 			| "EVENT_PASS_EMEA2026_EVENT"
 			| "EVENT_PASS_FLYINGTAXI2026_EVENT"
+			| "EVENT_PASS_GOFEST2025_GLOBAL"
 			| "EVENT_PASS_GOFEST2025_MAXFINALE"
-			| "EVENT_PASS_GOFEST2026_GLOBAL"
 			| "EVENT_PASS_GOTOUR2026_GLOBAL"
 			| "EVENT_PASS_GOTOUR2026_IRL"
 			| "EVENT_PASS_GOWA_2025"
@@ -348,7 +348,7 @@ export interface ItemSettingsData {
 			};
 			pokemonEncounter?: {
 				pokemonDisplay?: {
-					form?:
+					form:
 						| "BAXCALIBUR_NORMAL"
 						| "CLAMPERL_NORMAL"
 						| "DIANCIE_NORMAL"
@@ -363,6 +363,7 @@ export interface ItemSettingsData {
 						| "LATIOS_NORMAL"
 						| "LOTAD_NORMAL"
 						| "ROCKRUFF_NORMAL"
+						| "SHAYMIN_LAND"
 						| "YUNGOOS_NORMAL";
 					shiny?: boolean;
 				};

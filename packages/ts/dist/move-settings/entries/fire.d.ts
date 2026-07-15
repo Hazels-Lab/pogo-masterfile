@@ -7,6 +7,7 @@ export type MoveSettingsV0021MoveFlameWheel = S<
 	MoveSettings<
 		"V0021_MOVE_FLAME_WHEEL",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2200;
@@ -27,6 +28,7 @@ export type MoveSettingsV0024MoveFlamethrower = S<
 	MoveSettings<
 		"V0024_MOVE_FLAMETHROWER",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1500;
@@ -47,6 +49,7 @@ export type MoveSettingsV0042MoveHeatWave = S<
 	MoveSettings<
 		"V0042_MOVE_HEAT_WAVE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2800;
@@ -67,6 +70,7 @@ export type MoveSettingsV0101MoveFlameCharge = S<
 	MoveSettings<
 		"V0101_MOVE_FLAME_CHARGE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 3650;
@@ -87,6 +91,7 @@ export type MoveSettingsV0102MoveFlameBurst = S<
 	MoveSettings<
 		"V0102_MOVE_FLAME_BURST",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2000;
@@ -107,6 +112,7 @@ export type MoveSettingsV0103MoveFireBlast = S<
 	MoveSettings<
 		"V0103_MOVE_FIRE_BLAST",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 3700;
@@ -127,6 +133,7 @@ export type MoveSettingsV0115MoveFirePunch = S<
 	MoveSettings<
 		"V0115_MOVE_FIRE_PUNCH",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1700;
@@ -147,6 +154,7 @@ export type MoveSettingsV0209MoveEmberFast = S<
 	MoveSettings<
 		"V0209_MOVE_EMBER_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 800;
 			damageWindowStartMs: 600;
@@ -166,6 +174,7 @@ export type MoveSettingsV0240MoveFireFangFast = S<
 	MoveSettings<
 		"V0240_MOVE_FIRE_FANG_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 940;
 			damageWindowStartMs: 740;
@@ -185,6 +194,7 @@ export type MoveSettingsV0269MoveFireSpinFast = S<
 	MoveSettings<
 		"V0269_MOVE_FIRE_SPIN_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 950;
 			damageWindowStartMs: 750;
@@ -204,6 +214,7 @@ export type MoveSettingsV0270MoveOverheat = S<
 	MoveSettings<
 		"V0270_MOVE_OVERHEAT",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 3800;
@@ -224,6 +235,7 @@ export type MoveSettingsV0292MoveWeatherBallFire = S<
 	MoveSettings<
 		"V0292_MOVE_WEATHER_BALL_FIRE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1500;
 			damageWindowStartMs: 1250;
@@ -243,6 +255,7 @@ export type MoveSettingsV0298MoveBlastBurn = S<
 	MoveSettings<
 		"V0298_MOVE_BLAST_BURN",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2950;
@@ -262,6 +275,7 @@ export type MoveSettingsV0317MoveBlazeKick = S<
 	MoveSettings<
 		"V0317_MOVE_BLAZE_KICK",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 600;
 			damageWindowStartMs: 250;
@@ -281,6 +295,7 @@ export type MoveSettingsV0337MoveTechnoBlastBurn = S<
 	MoveSettings<
 		"V0337_MOVE_TECHNO_BLAST_BURN",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2000;
 			damageWindowStartMs: 1400;
@@ -297,6 +312,7 @@ export type MoveSettingsV0342MoveVCreate = S<
 	MoveSettings<
 		"V0342_MOVE_V_CREATE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2700;
 			damageWindowStartMs: 1900;
@@ -316,6 +332,7 @@ export type MoveSettingsV0346MoveIncinerateFast = S<
 	MoveSettings<
 		"V0346_MOVE_INCINERATE_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2500;
 			damageWindowStartMs: 700;
@@ -335,6 +352,7 @@ export type MoveSettingsV0358MoveSacredFire = S<
 	MoveSettings<
 		"V0358_MOVE_SACRED_FIRE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2300;
 			damageWindowStartMs: 1100;
@@ -354,6 +372,7 @@ export type MoveSettingsV0362MoveSacredFirePlus = S<
 	MoveSettings<
 		"V0362_MOVE_SACRED_FIRE_PLUS",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2300;
 			damageWindowStartMs: 1100;
@@ -373,6 +392,7 @@ export type MoveSettingsV0363MoveSacredFirePlusPlus = S<
 	MoveSettings<
 		"V0363_MOVE_SACRED_FIRE_PLUS_PLUS",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2300;
 			damageWindowStartMs: 1100;
@@ -392,6 +412,7 @@ export type MoveSettingsV0375MoveFusionFlare = S<
 	MoveSettings<
 		"V0375_MOVE_FUSION_FLARE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1800;
 			damageWindowStartMs: 1300;
@@ -411,6 +432,7 @@ export type MoveSettingsV0382MoveMysticalFire = S<
 	MoveSettings<
 		"V0382_MOVE_MYSTICAL_FIRE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2000;
 			damageWindowStartMs: 1300;
@@ -430,6 +452,7 @@ export type MoveSettingsV0386MoveMagmaStorm = S<
 	MoveSettings<
 		"V0386_MOVE_MAGMA_STORM",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2800;
 			damageWindowStartMs: 1300;
@@ -449,6 +472,7 @@ export type MoveSettingsV0468MoveTorchSong = S<
 	MoveSettings<
 		"V0468_MOVE_TORCH_SONG",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3500;
 			damageWindowStartMs: 2500;
@@ -468,6 +492,7 @@ export type MoveSettingsV0491MoveMindBlown = S<
 	MoveSettings<
 		"V0491_MOVE_MIND_BLOWN",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 4000;
 			damageWindowStartMs: 3000;
@@ -487,6 +512,7 @@ export type MoveSettingsV0493MovePyroball = S<
 	MoveSettings<
 		"V0493_MOVE_PYROBALL",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1600;
 			damageWindowStartMs: 900;
@@ -506,6 +532,7 @@ export type MoveSettingsVnBm001 = S<
 	MoveSettings<
 		"VN_BM_001",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -524,6 +551,7 @@ export type MoveSettingsVnBm019 = S<
 	MoveSettings<
 		"VN_BM_019",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -542,6 +570,7 @@ export type MoveSettingsVnBm039 = S<
 	MoveSettings<
 		"VN_BM_039",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -560,6 +589,7 @@ export type MoveSettingsVnBm048 = S<
 	MoveSettings<
 		"VN_BM_048",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;

@@ -7,6 +7,7 @@ export type MoveSettingsV0047MovePetalBlizzard = S<
 	MoveSettings<
 		"V0047_MOVE_PETAL_BLIZZARD",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2200;
@@ -27,6 +28,7 @@ export type MoveSettingsV0048MoveMegaDrain = S<
 	MoveSettings<
 		"V0048_MOVE_MEGA_DRAIN",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1900;
@@ -48,6 +50,7 @@ export type MoveSettingsV0059MoveSeedBomb = S<
 	MoveSettings<
 		"V0059_MOVE_SEED_BOMB",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1800;
@@ -68,6 +71,7 @@ export type MoveSettingsV0114MoveGigaDrain = S<
 	MoveSettings<
 		"V0114_MOVE_GIGA_DRAIN",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2300;
@@ -89,6 +93,7 @@ export type MoveSettingsV0116MoveSolarBeam = S<
 	MoveSettings<
 		"V0116_MOVE_SOLAR_BEAM",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 4800;
@@ -109,6 +114,7 @@ export type MoveSettingsV0117MoveLeafBlade = S<
 	MoveSettings<
 		"V0117_MOVE_LEAF_BLADE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.25;
 			damageWindowEndMs: 2300;
@@ -129,6 +135,7 @@ export type MoveSettingsV0118MovePowerWhip = S<
 	MoveSettings<
 		"V0118_MOVE_POWER_WHIP",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2250;
 			damageWindowStartMs: 1150;
@@ -148,6 +155,7 @@ export type MoveSettingsV0214MoveVineWhipFast = S<
 	MoveSettings<
 		"V0214_MOVE_VINE_WHIP_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 500;
 			damageWindowStartMs: 250;
@@ -167,6 +175,7 @@ export type MoveSettingsV0215MoveRazorLeafFast = S<
 	MoveSettings<
 		"V0215_MOVE_RAZOR_LEAF_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 850;
 			damageWindowStartMs: 600;
@@ -186,6 +195,7 @@ export type MoveSettingsV0271MoveBulletSeedFast = S<
 	MoveSettings<
 		"V0271_MOVE_BULLET_SEED_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 950;
 			damageWindowStartMs: 750;
@@ -205,6 +215,7 @@ export type MoveSettingsV0272MoveGrassKnot = S<
 	MoveSettings<
 		"V0272_MOVE_GRASS_KNOT",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2500;
@@ -225,6 +236,7 @@ export type MoveSettingsV0273MoveEnergyBall = S<
 	MoveSettings<
 		"V0273_MOVE_ENERGY_BALL",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 3900;
@@ -245,6 +257,7 @@ export type MoveSettingsV0296MoveFrenzyPlant = S<
 	MoveSettings<
 		"V0296_MOVE_FRENZY_PLANT",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2450;
 			damageWindowStartMs: 2045;
@@ -264,6 +277,7 @@ export type MoveSettingsV0312MoveLeafTornado = S<
 	MoveSettings<
 		"V0312_MOVE_LEAF_TORNADO",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2500;
 			damageWindowStartMs: 1900;
@@ -283,6 +297,7 @@ export type MoveSettingsV0343MoveLeafStorm = S<
 	MoveSettings<
 		"V0343_MOVE_LEAF_STORM",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1250;
 			damageWindowStartMs: 1100;
@@ -302,6 +317,7 @@ export type MoveSettingsV0357MoveMagicalLeafFast = S<
 	MoveSettings<
 		"V0357_MOVE_MAGICAL_LEAF_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1400;
 			damageWindowStartMs: 850;
@@ -321,6 +337,7 @@ export type MoveSettingsV0369MoveSeedFlare = S<
 	MoveSettings<
 		"V0369_MOVE_SEED_FLARE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2400;
 			damageWindowStartMs: 2300;
@@ -340,6 +357,7 @@ export type MoveSettingsV0385MoveLeafageFast = S<
 	MoveSettings<
 		"V0385_MOVE_LEAFAGE_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 700;
 			damageWindowStartMs: 200;
@@ -359,6 +377,7 @@ export type MoveSettingsV0392MoveTrailblaze = S<
 	MoveSettings<
 		"V0392_MOVE_TRAILBLAZE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1900;
 			damageWindowStartMs: 1200;
@@ -378,6 +397,7 @@ export type MoveSettingsV0465MoveFlowerTrick = S<
 	MoveSettings<
 		"V0465_MOVE_FLOWER_TRICK",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2700;
 			damageWindowStartMs: 1800;
@@ -397,6 +417,7 @@ export type MoveSettingsV0492MoveDrumBeating = S<
 	MoveSettings<
 		"V0492_MOVE_DRUM_BEATING",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 4000;
 			damageWindowStartMs: 3000;
@@ -416,6 +437,7 @@ export type MoveSettingsVnBm017 = S<
 	MoveSettings<
 		"VN_BM_017",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -434,6 +456,7 @@ export type MoveSettingsVnBm035 = S<
 	MoveSettings<
 		"VN_BM_035",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -452,6 +475,7 @@ export type MoveSettingsVnBm036 = S<
 	MoveSettings<
 		"VN_BM_036",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -470,6 +494,7 @@ export type MoveSettingsVnBm045 = S<
 	MoveSettings<
 		"VN_BM_045",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -488,6 +513,7 @@ export type MoveSettingsVnBm047 = S<
 	MoveSettings<
 		"VN_BM_047",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;

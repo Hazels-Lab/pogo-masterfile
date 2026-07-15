@@ -2084,6 +2084,8 @@ const (
 	GenderSettingsTemplateIDSpawnV0844PokemonSandaconda                      GenderSettingsTemplateID = "SPAWN_V0844_POKEMON_SANDACONDA"
 	GenderSettingsTemplateIDSpawnV0844PokemonSandacondaNormal                GenderSettingsTemplateID = "SPAWN_V0844_POKEMON_SANDACONDA_NORMAL"
 	GenderSettingsTemplateIDSpawnV0845PokemonCramorant                       GenderSettingsTemplateID = "SPAWN_V0845_POKEMON_CRAMORANT"
+	GenderSettingsTemplateIDSpawnV0845PokemonCramorantGorging                GenderSettingsTemplateID = "SPAWN_V0845_POKEMON_CRAMORANT_GORGING"
+	GenderSettingsTemplateIDSpawnV0845PokemonCramorantGulping                GenderSettingsTemplateID = "SPAWN_V0845_POKEMON_CRAMORANT_GULPING"
 	GenderSettingsTemplateIDSpawnV0845PokemonCramorantNormal                 GenderSettingsTemplateID = "SPAWN_V0845_POKEMON_CRAMORANT_NORMAL"
 	GenderSettingsTemplateIDSpawnV0846PokemonArrokuda                        GenderSettingsTemplateID = "SPAWN_V0846_POKEMON_ARROKUDA"
 	GenderSettingsTemplateIDSpawnV0846PokemonArrokudaNormal                  GenderSettingsTemplateID = "SPAWN_V0846_POKEMON_ARROKUDA_NORMAL"
@@ -4554,6 +4556,8 @@ var GenderSettingsTemplateIDValues = [...]GenderSettingsTemplateID{
 	GenderSettingsTemplateIDSpawnV0844PokemonSandaconda,
 	GenderSettingsTemplateIDSpawnV0844PokemonSandacondaNormal,
 	GenderSettingsTemplateIDSpawnV0845PokemonCramorant,
+	GenderSettingsTemplateIDSpawnV0845PokemonCramorantGorging,
+	GenderSettingsTemplateIDSpawnV0845PokemonCramorantGulping,
 	GenderSettingsTemplateIDSpawnV0845PokemonCramorantNormal,
 	GenderSettingsTemplateIDSpawnV0846PokemonArrokuda,
 	GenderSettingsTemplateIDSpawnV0846PokemonArrokudaNormal,

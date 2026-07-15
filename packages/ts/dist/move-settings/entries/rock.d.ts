@@ -7,6 +7,7 @@ export type MoveSettingsV0032MoveStoneEdge = S<
 	MoveSettings<
 		"V0032_MOVE_STONE_EDGE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.5;
 			damageWindowEndMs: 2300;
@@ -27,6 +28,7 @@ export type MoveSettingsV0062MoveAncientPower = S<
 	MoveSettings<
 		"V0062_MOVE_ANCIENT_POWER",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 3100;
@@ -47,6 +49,7 @@ export type MoveSettingsV0063MoveRockTomb = S<
 	MoveSettings<
 		"V0063_MOVE_ROCK_TOMB",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.25;
 			damageWindowEndMs: 2800;
@@ -67,6 +70,7 @@ export type MoveSettingsV0064MoveRockSlide = S<
 	MoveSettings<
 		"V0064_MOVE_ROCK_SLIDE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2400;
@@ -87,6 +91,7 @@ export type MoveSettingsV0065MovePowerGem = S<
 	MoveSettings<
 		"V0065_MOVE_POWER_GEM",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2800;
@@ -107,6 +112,7 @@ export type MoveSettingsV0227MoveRockThrowFast = S<
 	MoveSettings<
 		"V0227_MOVE_ROCK_THROW_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 900;
 			damageWindowStartMs: 600;
@@ -126,6 +132,7 @@ export type MoveSettingsV0259MoveRockBlast = S<
 	MoveSettings<
 		"V0259_MOVE_ROCK_BLAST",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1900;
@@ -146,6 +153,7 @@ export type MoveSettingsV0294MoveWeatherBallRock = S<
 	MoveSettings<
 		"V0294_MOVE_WEATHER_BALL_ROCK",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1500;
 			damageWindowStartMs: 1250;
@@ -165,6 +173,7 @@ export type MoveSettingsV0297MoveSmackDownFast = S<
 	MoveSettings<
 		"V0297_MOVE_SMACK_DOWN_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 900;
 			damageWindowStartMs: 600;
@@ -184,6 +193,7 @@ export type MoveSettingsV0334MoveRockWrecker = S<
 	MoveSettings<
 		"V0334_MOVE_ROCK_WRECKER",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2600;
 			damageWindowStartMs: 1900;
@@ -203,6 +213,7 @@ export type MoveSettingsV0368MoveRolloutFast = S<
 	MoveSettings<
 		"V0368_MOVE_ROLLOUT_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1300;
 			damageWindowStartMs: 1060;
@@ -222,6 +233,7 @@ export type MoveSettingsV0372MoveMeteorBeam = S<
 	MoveSettings<
 		"V0372_MOVE_METEOR_BEAM",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2000;
 			damageWindowStartMs: 1100;
@@ -241,6 +253,7 @@ export type MoveSettingsVnBm014 = S<
 	MoveSettings<
 		"VN_BM_014",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -259,6 +272,7 @@ export type MoveSettingsVnBm034 = S<
 	MoveSettings<
 		"VN_BM_034",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;

@@ -23,8 +23,6 @@ pub enum CodeGateProtoTemplateId {
     IsSkuAvailableNoAppIdCodeGate,
     #[serde(rename = "MAP_THEME_LOW_PERF_CODE_GATE")]
     MapThemeLowPerfCodeGate,
-    #[serde(rename = "PREDICT_CHARGE_MOVE_ON_SUBMIT_ROLL_BACK_CODE_GATE")]
-    PredictChargeMoveOnSubmitRollBackCodeGate,
     #[serde(rename = "STAMP_COLLECTION_SNAPSHOT_ENABLED_CODE_GATE")]
     StampCollectionSnapshotEnabledCodeGate,
     #[serde(rename = "TODAY_VIEW_V3_CODE_GATE")]

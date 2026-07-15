@@ -7,6 +7,7 @@ export type MoveSettingsV0033MoveIcePunch = S<
 	MoveSettings<
 		"V0033_MOVE_ICE_PUNCH",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1700;
@@ -27,6 +28,7 @@ export type MoveSettingsV0039MoveIceBeam = S<
 	MoveSettings<
 		"V0039_MOVE_ICE_BEAM",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 3000;
@@ -47,6 +49,7 @@ export type MoveSettingsV0040MoveBlizzard = S<
 	MoveSettings<
 		"V0040_MOVE_BLIZZARD",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2800;
@@ -67,6 +70,7 @@ export type MoveSettingsV0111MoveIcyWind = S<
 	MoveSettings<
 		"V0111_MOVE_ICY_WIND",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 3000;
@@ -87,6 +91,7 @@ export type MoveSettingsV0217MoveIceShardFast = S<
 	MoveSettings<
 		"V0217_MOVE_ICE_SHARD_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 700;
 			damageWindowStartMs: 400;
@@ -106,6 +111,7 @@ export type MoveSettingsV0218MoveFrostBreathFast = S<
 	MoveSettings<
 		"V0218_MOVE_FROST_BREATH_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 850;
 			damageWindowStartMs: 550;
@@ -125,6 +131,7 @@ export type MoveSettingsV0244MovePowderSnowFast = S<
 	MoveSettings<
 		"V0244_MOVE_POWDER_SNOW_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1000;
 			damageWindowStartMs: 850;
@@ -144,6 +151,7 @@ export type MoveSettingsV0248MoveAuroraBeam = S<
 	MoveSettings<
 		"V0248_MOVE_AURORA_BEAM",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 3500;
@@ -164,6 +172,7 @@ export type MoveSettingsV0254MoveAvalanche = S<
 	MoveSettings<
 		"V0254_MOVE_AVALANCHE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1900;
@@ -184,6 +193,7 @@ export type MoveSettingsV0293MoveWeatherBallIce = S<
 	MoveSettings<
 		"V0293_MOVE_WEATHER_BALL_ICE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1500;
 			damageWindowStartMs: 1250;
@@ -203,6 +213,7 @@ export type MoveSettingsV0327MoveIceFangFast = S<
 	MoveSettings<
 		"V0327_MOVE_ICE_FANG_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1000;
 			damageWindowStartMs: 400;
@@ -222,6 +233,7 @@ export type MoveSettingsV0338MoveTechnoBlastChill = S<
 	MoveSettings<
 		"V0338_MOVE_TECHNO_BLAST_CHILL",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2000;
 			damageWindowStartMs: 1400;
@@ -238,6 +250,7 @@ export type MoveSettingsV0359MoveIcicleSpear = S<
 	MoveSettings<
 		"V0359_MOVE_ICICLE_SPEAR",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1600;
 			damageWindowStartMs: 1000;
@@ -257,6 +270,7 @@ export type MoveSettingsV0378MoveGlaciate = S<
 	MoveSettings<
 		"V0378_MOVE_GLACIATE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2500;
 			damageWindowStartMs: 1500;
@@ -276,6 +290,7 @@ export type MoveSettingsV0391MoveTripleAxel = S<
 	MoveSettings<
 		"V0391_MOVE_TRIPLE_AXEL",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1700;
 			damageWindowStartMs: 1500;
@@ -295,6 +310,7 @@ export type MoveSettingsV0466MoveFreezeShock = S<
 	MoveSettings<
 		"V0466_MOVE_FREEZE_SHOCK",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1400;
 			damageWindowStartMs: 900;
@@ -314,6 +330,7 @@ export type MoveSettingsV0467MoveIceBurn = S<
 	MoveSettings<
 		"V0467_MOVE_ICE_BURN",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2200;
 			damageWindowStartMs: 1800;
@@ -333,6 +350,7 @@ export type MoveSettingsVnBm007 = S<
 	MoveSettings<
 		"VN_BM_007",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -351,6 +369,7 @@ export type MoveSettingsVnBm026 = S<
 	MoveSettings<
 		"VN_BM_026",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;

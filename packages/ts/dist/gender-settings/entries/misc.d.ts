@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "genderSettings", split "misc", 2373 entries.
+// Generated from Pokémon GO masterfile — group "genderSettings", split "misc", 2374 entries.
 
 import type { S } from "../../_utils";
 import type { GenderSettings } from "../types";
@@ -654,18 +654,6 @@ export type GenderSettingsV0025PokemonPikachu = S<
 export type GenderSettingsV0025PokemonPikachuAdventureHat2020 = S<
 	GenderSettings<
 		"SPAWN_V0025_POKEMON_PIKACHU_ADVENTURE_HAT_2020",
-		{
-			gender: {
-				femalePercent: 0.5;
-				malePercent: 0.5;
-			};
-			pokemon: "PIKACHU";
-		}
-	>
->;
-export type GenderSettingsV0025PokemonPikachuAnniversary2026 = S<
-	GenderSettings<
-		"SPAWN_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026",
 		{
 			gender: {
 				femalePercent: 0.5;
@@ -23440,6 +23428,30 @@ export type GenderSettingsV0845PokemonCramorant = S<
 		}
 	>
 >;
+export type GenderSettingsV0845PokemonCramorantGorging = S<
+	GenderSettings<
+		"SPAWN_V0845_POKEMON_CRAMORANT_GORGING",
+		{
+			gender: {
+				femalePercent: 0.5;
+				malePercent: 0.5;
+			};
+			pokemon: "CRAMORANT";
+		}
+	>
+>;
+export type GenderSettingsV0845PokemonCramorantGulping = S<
+	GenderSettings<
+		"SPAWN_V0845_POKEMON_CRAMORANT_GULPING",
+		{
+			gender: {
+				femalePercent: 0.5;
+				malePercent: 0.5;
+			};
+			pokemon: "CRAMORANT";
+		}
+	>
+>;
 export type GenderSettingsV0845PokemonCramorantNormal = S<
 	GenderSettings<
 		"SPAWN_V0845_POKEMON_CRAMORANT_NORMAL",
@@ -27967,7 +27979,6 @@ export type GenderSettingsMiscMasterfileEntry =
 	| GenderSettingsV0024PokemonArbokNormal
 	| GenderSettingsV0025PokemonPikachu
 	| GenderSettingsV0025PokemonPikachuAdventureHat2020
-	| GenderSettingsV0025PokemonPikachuAnniversary2026
 	| GenderSettingsV0025PokemonPikachuBb2026
 	| GenderSettingsV0025PokemonPikachuCopy2019
 	| GenderSettingsV0025PokemonPikachuCostume2020
@@ -29900,6 +29911,8 @@ export type GenderSettingsMiscMasterfileEntry =
 	| GenderSettingsV0844PokemonSandaconda
 	| GenderSettingsV0844PokemonSandacondaNormal
 	| GenderSettingsV0845PokemonCramorant
+	| GenderSettingsV0845PokemonCramorantGorging
+	| GenderSettingsV0845PokemonCramorantGulping
 	| GenderSettingsV0845PokemonCramorantNormal
 	| GenderSettingsV0846PokemonArrokuda
 	| GenderSettingsV0846PokemonArrokudaNormal

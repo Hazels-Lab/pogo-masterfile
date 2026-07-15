@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatMove", split "normal", 33 entries.
+// Generated from Pokémon GO masterfile — group "combatMove", split "normal", 35 entries.
 
 import type { S } from "../../_utils";
 import type { CombatMove } from "../types";
@@ -416,6 +416,34 @@ export type CombatMoveV0485MoveCrushGrip = S<
 		}
 	>
 >;
+export type CombatMoveV0594MoveGulpMissileGulping = S<
+	CombatMove<
+		"COMBAT_V0594_MOVE_GULP_MISSILE_GULPING",
+		{
+			buffs: {
+				buffActivationChance: 1;
+				targetDefenseStatStageChange: -1;
+			};
+			type: "POKEMON_TYPE_NORMAL";
+			uniqueId: 594;
+			vfxName: "gulp_missile_gulping";
+		}
+	>
+>;
+export type CombatMoveV0595MoveGulpMissileGorging = S<
+	CombatMove<
+		"COMBAT_V0595_MOVE_GULP_MISSILE_GORGING",
+		{
+			buffs: {
+				buffActivationChance: 1;
+				targetAttackStatStageChange: -2;
+			};
+			type: "POKEMON_TYPE_NORMAL";
+			uniqueId: 595;
+			vfxName: "gulp_missile_gorging";
+		}
+	>
+>;
 
 export type CombatMoveNormalMasterfileEntry =
 	| CombatMoveV0013MoveWrap
@@ -450,4 +478,6 @@ export type CombatMoveNormalMasterfileEntry =
 	| CombatMoveV0344MoveTriAttack
 	| CombatMoveV0352MoveWeatherBallNormal
 	| CombatMoveV0380MoveBoomburst
-	| CombatMoveV0485MoveCrushGrip;
+	| CombatMoveV0485MoveCrushGrip
+	| CombatMoveV0594MoveGulpMissileGulping
+	| CombatMoveV0595MoveGulpMissileGorging;

@@ -7,6 +7,7 @@ export type MoveSettingsV0066MoveShadowSneak = S<
 	MoveSettings<
 		"V0066_MOVE_SHADOW_SNEAK",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2800;
@@ -27,6 +28,7 @@ export type MoveSettingsV0067MoveShadowPunch = S<
 	MoveSettings<
 		"V0067_MOVE_SHADOW_PUNCH",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1300;
@@ -47,6 +49,7 @@ export type MoveSettingsV0069MoveOminousWind = S<
 	MoveSettings<
 		"V0069_MOVE_OMINOUS_WIND",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2300;
@@ -67,6 +70,7 @@ export type MoveSettingsV0070MoveShadowBall = S<
 	MoveSettings<
 		"V0070_MOVE_SHADOW_BALL",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2800;
@@ -87,6 +91,7 @@ export type MoveSettingsV0212MoveLickFast = S<
 	MoveSettings<
 		"V0212_MOVE_LICK_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 500;
 			damageWindowStartMs: 200;
@@ -106,6 +111,7 @@ export type MoveSettingsV0213MoveShadowClawFast = S<
 	MoveSettings<
 		"V0213_MOVE_SHADOW_CLAW_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 300;
 			damageWindowStartMs: 50;
@@ -125,6 +131,7 @@ export type MoveSettingsV0263MoveAstonishFast = S<
 	MoveSettings<
 		"V0263_MOVE_ASTONISH_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 950;
 			damageWindowStartMs: 600;
@@ -144,6 +151,7 @@ export type MoveSettingsV0264MoveHexFast = S<
 	MoveSettings<
 		"V0264_MOVE_HEX_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1000;
 			damageWindowStartMs: 800;
@@ -163,6 +171,7 @@ export type MoveSettingsV0265MoveNightShade = S<
 	MoveSettings<
 		"V0265_MOVE_NIGHT_SHADE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2400;
@@ -183,6 +192,7 @@ export type MoveSettingsV0315MoveShadowBone = S<
 	MoveSettings<
 		"V0315_MOVE_SHADOW_BONE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2900;
 			damageWindowStartMs: 2450;
@@ -202,6 +212,7 @@ export type MoveSettingsV0371MoveShadowForce = S<
 	MoveSettings<
 		"V0371_MOVE_SHADOW_FORCE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2000;
 			damageWindowStartMs: 1800;
@@ -221,6 +232,7 @@ export type MoveSettingsV0376MovePoltergeist = S<
 	MoveSettings<
 		"V0376_MOVE_POLTERGEIST",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2900;
 			damageWindowStartMs: 2700;
@@ -240,6 +252,7 @@ export type MoveSettingsV0398MoveSpiritShackle = S<
 	MoveSettings<
 		"V0398_MOVE_SPIRIT_SHACKLE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -259,6 +272,7 @@ export type MoveSettingsV0405MoveMoongeistBeam = S<
 	MoveSettings<
 		"V0405_MOVE_MOONGEIST_BEAM",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 3000;
 			damageWindowStartMs: 2200;
@@ -278,6 +292,7 @@ export type MoveSettingsV0464MoveRageFist = S<
 	MoveSettings<
 		"V0464_MOVE_RAGE_FIST",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3000;
 			damageWindowStartMs: 2750;
@@ -297,6 +312,7 @@ export type MoveSettingsVnBm006 = S<
 	MoveSettings<
 		"VN_BM_006",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -315,6 +331,7 @@ export type MoveSettingsVnBm024 = S<
 	MoveSettings<
 		"VN_BM_024",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;

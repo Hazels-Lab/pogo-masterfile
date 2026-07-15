@@ -664,63 +664,9 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					};
 					pokemon: {
 						pokemonDisplay: {
-							form: "ARTICUNO_NORMAL";
+							form: "KYOGRE_NORMAL";
 						};
-						pokemonId: "ARTICUNO";
-					};
-					staminaIvOverride: {
-						range: {
-							max: 15;
-							min: 10;
-						};
-					};
-					unlockedAtRank: 20;
-				},
-				{
-					attackIvOverride: {
-						range: {
-							max: 15;
-							min: 10;
-						};
-					};
-					defenseIvOverride: {
-						range: {
-							max: 15;
-							min: 10;
-						};
-					};
-					pokemon: {
-						pokemonDisplay: {
-							form: "ZAPDOS_NORMAL";
-						};
-						pokemonId: "ZAPDOS";
-					};
-					staminaIvOverride: {
-						range: {
-							max: 15;
-							min: 10;
-						};
-					};
-					unlockedAtRank: 20;
-				},
-				{
-					attackIvOverride: {
-						range: {
-							max: 15;
-							min: 10;
-						};
-					};
-					defenseIvOverride: {
-						range: {
-							max: 15;
-							min: 10;
-						};
-					};
-					pokemon: {
-						pokemonDisplay: {
-							form: "MOLTRES_NORMAL";
-						};
-						pokemonId: "MOLTRES";
+						pokemonId: "KYOGRE";
 					};
 					staminaIvOverride: {
 						range: {

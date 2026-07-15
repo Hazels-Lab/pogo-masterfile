@@ -1044,6 +1044,7 @@ export type ItemSettingsItemEventTicketS23202606 = S<
 					{
 						pokemonEncounter: {
 							pokemonDisplay: {
+								form: "SHAYMIN_LAND";
 								shiny: true;
 							};
 							pokemonId: "SHAYMIN";
