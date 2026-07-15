@@ -49,8 +49,8 @@ type ItemSettingsNeutralAvatarItemTemplate struct {
 }
 
 type ItemSettingsPokemonDisplay struct {
-	Form  *string `json:"form,omitempty"`
-	Shiny *bool   `json:"shiny,omitempty"`
+	Form  string `json:"form"`
+	Shiny *bool  `json:"shiny,omitempty"`
 }
 
 type ItemSettingsPokemonEncounter struct {

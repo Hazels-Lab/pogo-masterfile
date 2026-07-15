@@ -649,4 +649,10 @@ pub enum CombatMoveTemplateId {
     CombatV0590MoveGlaiveRush,
     #[serde(rename = "COMBAT_V0592_MOVE_SNIPE_SHOT")]
     CombatV0592MoveSnipeShot,
+    #[serde(rename = "COMBAT_V0593_MOVE_DIVE")]
+    CombatV0593MoveDive,
+    #[serde(rename = "COMBAT_V0594_MOVE_GULP_MISSILE_GULPING")]
+    CombatV0594MoveGulpMissileGulping,
+    #[serde(rename = "COMBAT_V0595_MOVE_GULP_MISSILE_GORGING")]
+    CombatV0595MoveGulpMissileGorging,
 }

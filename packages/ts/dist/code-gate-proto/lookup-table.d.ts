@@ -9,7 +9,6 @@ import type {
 	CodeGateProtoInputTrackerCodeGate,
 	CodeGateProtoIsSkuAvailableNoAppIdCodeGate,
 	CodeGateProtoMapThemeLowPerfCodeGate,
-	CodeGateProtoPredictChargeMoveOnSubmitRollBackCodeGate,
 	CodeGateProtoStampCollectionSnapshotEnabledCodeGate,
 	CodeGateProtoTodayViewV3CodeGate,
 	CodeGateProtoUseGmtSkuDataCodeGate,
@@ -24,7 +23,6 @@ export interface CodeGateProtoLookup {
 	INPUT_TRACKER_CODE_GATE: CodeGateProtoInputTrackerCodeGate;
 	IS_SKU_AVAILABLE_NO_APP_ID_CODE_GATE: CodeGateProtoIsSkuAvailableNoAppIdCodeGate;
 	MAP_THEME_LOW_PERF_CODE_GATE: CodeGateProtoMapThemeLowPerfCodeGate;
-	PREDICT_CHARGE_MOVE_ON_SUBMIT_ROLL_BACK_CODE_GATE: CodeGateProtoPredictChargeMoveOnSubmitRollBackCodeGate;
 	STAMP_COLLECTION_SNAPSHOT_ENABLED_CODE_GATE: CodeGateProtoStampCollectionSnapshotEnabledCodeGate;
 	TODAY_VIEW_V3_CODE_GATE: CodeGateProtoTodayViewV3CodeGate;
 	USE_GMT_SKU_DATA_CODE_GATE: CodeGateProtoUseGmtSkuDataCodeGate;

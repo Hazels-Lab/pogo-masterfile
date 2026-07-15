@@ -1,16 +1,9 @@
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(untagged)]
-pub enum IconTypeValue {
-    Uint(u64),
-    String(String),
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct BonusBoxes {
-    pub icon_type: IconTypeValue,
+    pub icon_type: String,
     pub text: String,
 }
 
@@ -23,15 +16,8 @@ pub struct ActiveBonusDisplaySettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct BonusBoxesV2 {
-    pub icon_type: String,
-    pub text: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
 pub struct BonusSettings {
-    pub bonus_boxes: Vec<BonusBoxesV2>,
+    pub bonus_boxes: Vec<BonusBoxes>,
     pub event_name: String,
 }
 
@@ -47,13 +33,6 @@ pub struct Candy {
 pub struct Item {
     pub amount: u64,
     pub item: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct NeutralAvatarItemTemplate {
-    pub display_template_id: String,
-    pub item_template_id: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -100,8 +79,6 @@ pub struct Rewards {
     pub candy: Option<Candy>,
     pub exp: Option<u64>,
     pub item: Option<Item>,
-    pub mega_resource: Option<Candy>,
-    pub neutral_avatar_item_template: Option<NeutralAvatarItemTemplate>,
     pub player_attribute: Option<PlayerAttribute>,
     pub pokecoin: Option<u64>,
     pub pokemon_encounter: Option<PokemonEncounter>,

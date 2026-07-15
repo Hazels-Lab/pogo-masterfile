@@ -657,6 +657,12 @@ pub enum MoveSettingsTemplateId {
     V0590MoveGlaiveRush,
     #[serde(rename = "V0592_MOVE_SNIPE_SHOT")]
     V0592MoveSnipeShot,
+    #[serde(rename = "V0593_MOVE_DIVE")]
+    V0593MoveDive,
+    #[serde(rename = "V0594_MOVE_GULP_MISSILE_GULPING")]
+    V0594MoveGulpMissileGulping,
+    #[serde(rename = "V0595_MOVE_GULP_MISSILE_GORGING")]
+    V0595MoveGulpMissileGorging,
     #[serde(rename = "VN_BM_001")]
     VnBm001,
     #[serde(rename = "VN_BM_002")]

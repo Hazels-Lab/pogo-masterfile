@@ -4721,6 +4721,18 @@ export interface PrimalEvoSettings {
 	};
 }
 
+export interface PtcOauthSettings {
+	templateId: "PTC_OAUTH_SETTINGS";
+	data: {
+		templateId: "PTC_OAUTH_SETTINGS";
+		ptcOauthSettings: {
+			endTimeMs: "2022190740000";
+			linkingRewardItem: "ITEM_INCUBATOR_BASIC";
+			ptcAccountLinkingEnabled: true;
+		};
+	};
+}
+
 export interface QuestDialogueInboxSettings {
 	templateId: "QUEST_DIALOGUE_INBOX_SETTINGS";
 	data: {
@@ -5805,8 +5817,8 @@ export interface VsSeekerClientSettings {
 		templateId: "VS_SEEKER_CLIENT_SETTINGS";
 		vsSeekerClientSettings: {
 			allowedVsSeekerLeagueTemplateId: [
-				"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
-				"COMBAT_LEAGUE_VS_SEEKER_FANTASY_ULTRA",
+				"COMBAT_LEAGUE_VS_SEEKER_MASTER",
+				"COMBAT_LEAGUE_VS_SEEKER_GREAT_RETRO",
 				"COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIPS_LEGACY",
 			];
 		};
@@ -6008,6 +6020,7 @@ export type SingletonsSettingsMasterfileEntry =
 	| PostcardCollectionSettings
 	| PowerUpPokestopsSettings
 	| PrimalEvoSettings
+	| PtcOauthSettings
 	| QuestDialogueInboxSettings
 	| QuickInviteSettings
 	| RaidEntryCostSettings

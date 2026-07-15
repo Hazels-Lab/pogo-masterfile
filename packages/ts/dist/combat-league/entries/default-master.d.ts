@@ -8,7 +8,7 @@ export type CombatLeagueVsSeekerMaster = S<
 		"COMBAT_LEAGUE_VS_SEEKER_MASTER",
 		{
 			badgeType: "BADGE_MASTER_LEAGUE";
-			bannedPokemon: ["DITTO", "SHEDINJA"];
+			bannedPokemon: ["DITTO", "SHEDINJA", "KYUREM"];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_MASTER";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/pogo_master_league.png";
 			leagueType: "STANDARD";
@@ -75,7 +75,7 @@ export type CombatLeagueVsSeekerMasterMegas = S<
 		{
 			allowTempEvos: true;
 			badgeType: "BADGE_MASTER_LEAGUE";
-			bannedPokemon: ["DITTO", "SHEDINJA"];
+			bannedPokemon: ["DITTO", "SHEDINJA", "KYUREM"];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_MASTER";
 			iconUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe00ac85c_GblMasterLeague_icon.png";
 			leagueType: "STANDARD";

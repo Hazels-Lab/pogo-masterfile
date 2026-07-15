@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSettings", split "water", 35 entries.
+// Generated from Pokémon GO masterfile — group "moveSettings", split "water", 36 entries.
 
 import type { S } from "../../_utils";
 import type { MoveSettings } from "../types";
@@ -7,6 +7,7 @@ export type MoveSettingsV0053MoveBubbleBeam = S<
 	MoveSettings<
 		"V0053_MOVE_BUBBLE_BEAM",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1800;
@@ -27,6 +28,7 @@ export type MoveSettingsV0057MoveAquaJet = S<
 	MoveSettings<
 		"V0057_MOVE_AQUA_JET",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2000;
@@ -47,6 +49,7 @@ export type MoveSettingsV0058MoveAquaTail = S<
 	MoveSettings<
 		"V0058_MOVE_AQUA_TAIL",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1750;
@@ -67,6 +70,7 @@ export type MoveSettingsV0104MoveBrine = S<
 	MoveSettings<
 		"V0104_MOVE_BRINE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2300;
@@ -87,6 +91,7 @@ export type MoveSettingsV0105MoveWaterPulse = S<
 	MoveSettings<
 		"V0105_MOVE_WATER_PULSE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2700;
@@ -107,6 +112,7 @@ export type MoveSettingsV0106MoveScald = S<
 	MoveSettings<
 		"V0106_MOVE_SCALD",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 3200;
@@ -127,6 +133,7 @@ export type MoveSettingsV0107MoveHydroPump = S<
 	MoveSettings<
 		"V0107_MOVE_HYDRO_PUMP",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 3200;
@@ -147,6 +154,7 @@ export type MoveSettingsV0134MoveScaldBlastoise = S<
 	MoveSettings<
 		"V0134_MOVE_SCALD_BLASTOISE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 4400;
@@ -167,6 +175,7 @@ export type MoveSettingsV0135MoveHydroPumpBlastoise = S<
 	MoveSettings<
 		"V0135_MOVE_HYDRO_PUMP_BLASTOISE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 4300;
@@ -187,6 +196,7 @@ export type MoveSettingsV0230MoveWaterGunFast = S<
 	MoveSettings<
 		"V0230_MOVE_WATER_GUN_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 500;
 			damageWindowStartMs: 300;
@@ -206,6 +216,7 @@ export type MoveSettingsV0231MoveSplashFast = S<
 	MoveSettings<
 		"V0231_MOVE_SPLASH_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1000;
 			damageWindowStartMs: 800;
@@ -224,6 +235,7 @@ export type MoveSettingsV0232MoveWaterGunFastBlastoise = S<
 	MoveSettings<
 		"V0232_MOVE_WATER_GUN_FAST_BLASTOISE",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 500;
 			damageWindowStartMs: 300;
@@ -243,6 +255,7 @@ export type MoveSettingsV0237MoveBubbleFast = S<
 	MoveSettings<
 		"V0237_MOVE_BUBBLE_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 800;
 			damageWindowStartMs: 550;
@@ -262,6 +275,7 @@ export type MoveSettingsV0283MoveWaterfallFast = S<
 	MoveSettings<
 		"V0283_MOVE_WATERFALL_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 900;
 			damageWindowStartMs: 750;
@@ -281,6 +295,7 @@ export type MoveSettingsV0284MoveSurf = S<
 	MoveSettings<
 		"V0284_MOVE_SURF",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1400;
 			damageWindowStartMs: 1200;
@@ -300,6 +315,7 @@ export type MoveSettingsV0289MoveOriginPulse = S<
 	MoveSettings<
 		"V0289_MOVE_ORIGIN_PULSE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1400;
 			damageWindowStartMs: 1200;
@@ -319,6 +335,7 @@ export type MoveSettingsV0295MoveWeatherBallWater = S<
 	MoveSettings<
 		"V0295_MOVE_WEATHER_BALL_WATER",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1500;
 			damageWindowStartMs: 1250;
@@ -338,6 +355,7 @@ export type MoveSettingsV0299MoveHydroCannon = S<
 	MoveSettings<
 		"V0299_MOVE_HYDRO_CANNON",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1700;
@@ -358,6 +376,7 @@ export type MoveSettingsV0305MoveCrabhammer = S<
 	MoveSettings<
 		"V0305_MOVE_CRABHAMMER",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1850;
 			damageWindowStartMs: 1600;
@@ -377,6 +396,7 @@ export type MoveSettingsV0308MoveOctazooka = S<
 	MoveSettings<
 		"V0308_MOVE_OCTAZOOKA",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1800;
 			damageWindowStartMs: 1500;
@@ -396,6 +416,7 @@ export type MoveSettingsV0316MoveMuddyWater = S<
 	MoveSettings<
 		"V0316_MOVE_MUDDY_WATER",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1700;
 			damageWindowStartMs: 1000;
@@ -415,6 +436,7 @@ export type MoveSettingsV0318MoveRazorShell = S<
 	MoveSettings<
 		"V0318_MOVE_RAZOR_SHELL",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1200;
 			damageWindowStartMs: 850;
@@ -434,6 +456,7 @@ export type MoveSettingsV0339MoveTechnoBlastWater = S<
 	MoveSettings<
 		"V0339_MOVE_TECHNO_BLAST_WATER",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2000;
 			damageWindowStartMs: 1500;
@@ -450,6 +473,7 @@ export type MoveSettingsV0373MoveWaterShurikenFast = S<
 	MoveSettings<
 		"V0373_MOVE_WATER_SHURIKEN_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1000;
 			damageWindowStartMs: 900;
@@ -469,6 +493,7 @@ export type MoveSettingsV0383MoveLiquidation = S<
 	MoveSettings<
 		"V0383_MOVE_LIQUIDATION",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2700;
 			damageWindowStartMs: 2000;
@@ -488,6 +513,7 @@ export type MoveSettingsV0463MoveSparklingAria = S<
 	MoveSettings<
 		"V0463_MOVE_SPARKLING_ARIA",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2900;
 			damageWindowStartMs: 1700;
@@ -507,6 +533,7 @@ export type MoveSettingsV0487MoveAquaStep = S<
 	MoveSettings<
 		"V0487_MOVE_AQUA_STEP",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3100;
 			damageWindowStartMs: 2050;
@@ -526,6 +553,7 @@ export type MoveSettingsV0488MoveChillingWater = S<
 	MoveSettings<
 		"V0488_MOVE_CHILLING_WATER",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3100;
 			damageWindowStartMs: 2050;
@@ -545,6 +573,7 @@ export type MoveSettingsV0592MoveSnipeShot = S<
 	MoveSettings<
 		"V0592_MOVE_SNIPE_SHOT",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2900;
 			damageWindowStartMs: 2000;
@@ -560,10 +589,28 @@ export type MoveSettingsV0592MoveSnipeShot = S<
 		}
 	>
 >;
+export type MoveSettingsV0593MoveDive = S<
+	MoveSettings<
+		"V0593_MOVE_DIVE",
+		{
+			accuracyChance: 1;
+			animationId: 5;
+			durationMs: 3300;
+			energyDelta: -33;
+			movementId: 593;
+			pokemonType: "POKEMON_TYPE_WATER";
+			power: 70;
+			staminaLossScalar: 0.01;
+			trainerLevelMax: 100;
+			vfxName: "dive";
+		}
+	>
+>;
 export type MoveSettingsVnBm009 = S<
 	MoveSettings<
 		"VN_BM_009",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -582,6 +629,7 @@ export type MoveSettingsVnBm025 = S<
 	MoveSettings<
 		"VN_BM_025",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -600,6 +648,7 @@ export type MoveSettingsVnBm033 = S<
 	MoveSettings<
 		"VN_BM_033",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -618,6 +667,7 @@ export type MoveSettingsVnBm046 = S<
 	MoveSettings<
 		"VN_BM_046",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -636,6 +686,7 @@ export type MoveSettingsVnBm049 = S<
 	MoveSettings<
 		"VN_BM_049",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -654,6 +705,7 @@ export type MoveSettingsVnBm051 = S<
 	MoveSettings<
 		"VN_BM_051",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -699,6 +751,7 @@ export type MoveSettingsWaterMasterfileEntry =
 	| MoveSettingsV0487MoveAquaStep
 	| MoveSettingsV0488MoveChillingWater
 	| MoveSettingsV0592MoveSnipeShot
+	| MoveSettingsV0593MoveDive
 	| MoveSettingsVnBm009
 	| MoveSettingsVnBm025
 	| MoveSettingsVnBm033

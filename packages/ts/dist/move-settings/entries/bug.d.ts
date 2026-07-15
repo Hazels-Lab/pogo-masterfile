@@ -7,6 +7,7 @@ export type MoveSettingsV0022MoveMegahorn = S<
 	MoveSettings<
 		"V0022_MOVE_MEGAHORN",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1700;
@@ -27,6 +28,7 @@ export type MoveSettingsV0049MoveBugBuzz = S<
 	MoveSettings<
 		"V0049_MOVE_BUG_BUZZ",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2900;
@@ -47,6 +49,7 @@ export type MoveSettingsV0099MoveSignalBeam = S<
 	MoveSettings<
 		"V0099_MOVE_SIGNAL_BEAM",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2700;
@@ -67,6 +70,7 @@ export type MoveSettingsV0100MoveXScissor = S<
 	MoveSettings<
 		"V0100_MOVE_X_SCISSOR",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1300;
@@ -87,6 +91,7 @@ export type MoveSettingsV0200MoveFuryCutterFast = S<
 	MoveSettings<
 		"V0200_MOVE_FURY_CUTTER_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 500;
 			damageWindowStartMs: 200;
@@ -106,6 +111,7 @@ export type MoveSettingsV0201MoveBugBiteFast = S<
 	MoveSettings<
 		"V0201_MOVE_BUG_BITE_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 450;
 			damageWindowStartMs: 250;
@@ -125,6 +131,7 @@ export type MoveSettingsV0260MoveInfestationFast = S<
 	MoveSettings<
 		"V0260_MOVE_INFESTATION_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 950;
 			damageWindowStartMs: 750;
@@ -144,6 +151,7 @@ export type MoveSettingsV0261MoveStruggleBugFast = S<
 	MoveSettings<
 		"V0261_MOVE_STRUGGLE_BUG_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1500;
 			damageWindowStartMs: 1200;
@@ -163,6 +171,7 @@ export type MoveSettingsV0262MoveSilverWind = S<
 	MoveSettings<
 		"V0262_MOVE_SILVER_WIND",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 3300;
@@ -183,6 +192,7 @@ export type MoveSettingsV0306MoveLunge = S<
 	MoveSettings<
 		"V0306_MOVE_LUNGE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2800;
 			damageWindowStartMs: 2500;
@@ -202,6 +212,7 @@ export type MoveSettingsV0311MoveFellStinger = S<
 	MoveSettings<
 		"V0311_MOVE_FELL_STINGER",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1800;
 			damageWindowStartMs: 1600;
@@ -221,6 +232,7 @@ export type MoveSettingsV0313MoveLeechLife = S<
 	MoveSettings<
 		"V0313_MOVE_LEECH_LIFE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1400;
 			damageWindowStartMs: 1150;
@@ -238,6 +250,7 @@ export type MoveSettingsVnBm002 = S<
 	MoveSettings<
 		"VN_BM_002",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -256,6 +269,7 @@ export type MoveSettingsVnBm020 = S<
 	MoveSettings<
 		"VN_BM_020",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;

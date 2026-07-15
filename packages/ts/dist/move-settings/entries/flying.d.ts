@@ -7,6 +7,7 @@ export type MoveSettingsV0038MoveDrillPeck = S<
 	MoveSettings<
 		"V0038_MOVE_DRILL_PECK",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2300;
@@ -27,6 +28,7 @@ export type MoveSettingsV0045MoveAerialAce = S<
 	MoveSettings<
 		"V0045_MOVE_AERIAL_ACE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2300;
@@ -47,6 +49,7 @@ export type MoveSettingsV0121MoveAirCutter = S<
 	MoveSettings<
 		"V0121_MOVE_AIR_CUTTER",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.25;
 			damageWindowEndMs: 2300;
@@ -67,6 +70,7 @@ export type MoveSettingsV0122MoveHurricane = S<
 	MoveSettings<
 		"V0122_MOVE_HURRICANE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2200;
@@ -87,6 +91,7 @@ export type MoveSettingsV0210MoveWingAttackFast = S<
 	MoveSettings<
 		"V0210_MOVE_WING_ATTACK_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 950;
 			damageWindowStartMs: 750;
@@ -106,6 +111,7 @@ export type MoveSettingsV0211MovePeckFast = S<
 	MoveSettings<
 		"V0211_MOVE_PECK_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 900;
 			damageWindowStartMs: 450;
@@ -125,6 +131,7 @@ export type MoveSettingsV0255MoveAirSlashFast = S<
 	MoveSettings<
 		"V0255_MOVE_AIR_SLASH_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1000;
 			damageWindowStartMs: 800;
@@ -144,6 +151,7 @@ export type MoveSettingsV0256MoveBraveBird = S<
 	MoveSettings<
 		"V0256_MOVE_BRAVE_BIRD",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1600;
@@ -164,6 +172,7 @@ export type MoveSettingsV0257MoveSkyAttack = S<
 	MoveSettings<
 		"V0257_MOVE_SKY_ATTACK",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1700;
@@ -184,6 +193,7 @@ export type MoveSettingsV0335MoveAeroblast = S<
 	MoveSettings<
 		"V0335_MOVE_AEROBLAST",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3500;
 			damageWindowStartMs: 3300;
@@ -203,6 +213,7 @@ export type MoveSettingsV0341MoveFly = S<
 	MoveSettings<
 		"V0341_MOVE_FLY",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1700;
 			damageWindowStartMs: 1400;
@@ -222,6 +233,7 @@ export type MoveSettingsV0345MoveGustFast = S<
 	MoveSettings<
 		"V0345_MOVE_GUST_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2000;
 			damageWindowStartMs: 900;
@@ -241,6 +253,7 @@ export type MoveSettingsV0348MoveFeatherDance = S<
 	MoveSettings<
 		"V0348_MOVE_FEATHER_DANCE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2700;
 			damageWindowStartMs: 1900;
@@ -260,6 +273,7 @@ export type MoveSettingsV0360MoveAeroblastPlus = S<
 	MoveSettings<
 		"V0360_MOVE_AEROBLAST_PLUS",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3500;
 			damageWindowStartMs: 3300;
@@ -279,6 +293,7 @@ export type MoveSettingsV0361MoveAeroblastPlusPlus = S<
 	MoveSettings<
 		"V0361_MOVE_AEROBLAST_PLUS_PLUS",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3500;
 			damageWindowStartMs: 3300;
@@ -298,6 +313,7 @@ export type MoveSettingsV0364MoveAcrobatics = S<
 	MoveSettings<
 		"V0364_MOVE_ACROBATICS",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1700;
 			damageWindowStartMs: 600;
@@ -317,6 +333,7 @@ export type MoveSettingsV0384MoveDragonAscent = S<
 	MoveSettings<
 		"V0384_MOVE_DRAGON_ASCENT",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 3250;
@@ -336,6 +353,7 @@ export type MoveSettingsV0389MoveOblivionWing = S<
 	MoveSettings<
 		"V0389_MOVE_OBLIVION_WING",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1900;
 			damageWindowStartMs: 1500;
@@ -355,6 +373,7 @@ export type MoveSettingsV0395MoveBleakwindStorm = S<
 	MoveSettings<
 		"V0395_MOVE_BLEAKWIND_STORM",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2800;
 			damageWindowStartMs: 2000;
@@ -374,6 +393,7 @@ export type MoveSettingsV0490MoveBeakBlast = S<
 	MoveSettings<
 		"V0490_MOVE_BEAK_BLAST",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2500;
 			damageWindowStartMs: 1500;
@@ -393,6 +413,7 @@ export type MoveSettingsVnBm010 = S<
 	MoveSettings<
 		"VN_BM_010",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -411,6 +432,7 @@ export type MoveSettingsVnBm031 = S<
 	MoveSettings<
 		"VN_BM_031",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;

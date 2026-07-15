@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/gloves", 56 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/gloves", 57 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -498,6 +498,15 @@ export type AvatarItemDisplayNGlovesUnequip0 = S<
 		}
 	>
 >;
+export type AvatarItemDisplayNGlovesWillow = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_gloves_willow",
+		{
+			displayStringId: "avatar_shirt_default_willow_gloves";
+			iconAddress: "n_gloves_willow_icon";
+		}
+	>
+>;
 export type AvatarItemDisplayNGlovesWintergloves20230 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_gloves_wintergloves2023_0",
@@ -564,4 +573,5 @@ export type AvatarItemDisplayDisplayStringIdGlovesMasterfileEntry =
 	| AvatarItemDisplayNGlovesTeamwristband3
 	| AvatarItemDisplayNGlovesTeamyellgrunts0
 	| AvatarItemDisplayNGlovesUnequip0
+	| AvatarItemDisplayNGlovesWillow
 	| AvatarItemDisplayNGlovesWintergloves20230;

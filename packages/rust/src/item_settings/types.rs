@@ -68,7 +68,7 @@ pub struct NeutralAvatarItemTemplate {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PokemonDisplay {
-    pub form: Option<String>,
+    pub form: String,
     pub shiny: Option<bool>,
 }
 

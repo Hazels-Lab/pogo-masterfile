@@ -9,18 +9,13 @@ export type ItemSettingsItemEventPassPointGoFest01 = S<
 		{
 			category: "ITEM_CATEGORY_EVENT_PASS_POINT";
 			eventPassPoint: {
-				eventPassId: "EVENT_PASS_GOFEST2026_GLOBAL";
+				eventPassId: "EVENT_PASS_GOFEST2025_GLOBAL";
 			};
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
 			itemCap: 999999;
 			itemId: "ITEM_EVENT_PASS_POINT_GO_FEST_01";
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
-			timePeriodCounters: {
-				playerActivity: {
-					limit: 1000;
-				};
-			};
 		}
 	>
 >;

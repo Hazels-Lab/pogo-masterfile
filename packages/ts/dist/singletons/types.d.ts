@@ -106,6 +106,7 @@ import type {
 	PostcardCollectionSettings,
 	PowerUpPokestopsSettings,
 	PrimalEvoSettings,
+	PtcOauthSettings,
 	QuestDialogueInboxSettings,
 	QuickInviteSettings,
 	RaidEntryCostSettings,
@@ -250,6 +251,7 @@ export type PopupControlSettingsType = W<PopupControlSettings>;
 export type PostcardCollectionSettingsType = W<PostcardCollectionSettings>;
 export type PowerUpPokestopsSettingsType = W<PowerUpPokestopsSettings>;
 export type PrimalEvoSettingsType = W<PrimalEvoSettings>;
+export type PtcOauthSettingsType = W<PtcOauthSettings>;
 export type QuestDialogueInboxSettingsType = W<QuestDialogueInboxSettings>;
 export type QuickInviteSettingsType = W<QuickInviteSettings>;
 export type RaidEntryCostSettingsType = W<RaidEntryCostSettings>;
@@ -394,6 +396,7 @@ export type Singletons =
 	| PostcardCollectionSettingsType
 	| PowerUpPokestopsSettingsType
 	| PrimalEvoSettingsType
+	| PtcOauthSettingsType
 	| QuestDialogueInboxSettingsType
 	| QuickInviteSettingsType
 	| RaidEntryCostSettingsType

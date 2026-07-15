@@ -81,6 +81,7 @@ import type {
 	AvatarItemDisplayNBackpackUnequip0,
 	AvatarItemDisplayNBackpackVerizon20210,
 	AvatarItemDisplayNBackpackWhitekyuremitem0,
+	AvatarItemDisplayNBackpackWillow,
 	AvatarItemDisplayNBackpackZubatbp0,
 	AvatarItemDisplayNBeltAcetrainerbw0,
 	AvatarItemDisplayNBeltDefaultA0,
@@ -209,6 +210,7 @@ import type {
 	AvatarItemDisplayNGlovesTeamwristband3,
 	AvatarItemDisplayNGlovesTeamyellgrunts0,
 	AvatarItemDisplayNGlovesUnequip0,
+	AvatarItemDisplayNGlovesWillow,
 	AvatarItemDisplayNGlovesWintergloves20230,
 	AvatarItemDisplayNGradientEye0,
 	AvatarItemDisplayNGradientEye1,
@@ -674,6 +676,7 @@ import type {
 	AvatarItemDisplayNPantsWcs2022winnersitems0,
 	AvatarItemDisplayNPantsWcs2024winnersitems0,
 	AvatarItemDisplayNPantsWcs2025winnersitems0,
+	AvatarItemDisplayNPantsWillow,
 	AvatarItemDisplayNPose001,
 	AvatarItemDisplayNPose002,
 	AvatarItemDisplayNPose003,
@@ -958,6 +961,7 @@ import type {
 	AvatarItemDisplayNShirtJames0,
 	AvatarItemDisplayNShirtJessie0,
 	AvatarItemDisplayNShirtJirachi0,
+	AvatarItemDisplayNShirtJleague,
 	AvatarItemDisplayNShirtJogger0,
 	AvatarItemDisplayNShirtKeldeotshirt0,
 	AvatarItemDisplayNShirtKorrinaA0,
@@ -1214,6 +1218,7 @@ import type {
 	AvatarItemDisplayNShirtWcs20250,
 	AvatarItemDisplayNShirtWcsyokohama0,
 	AvatarItemDisplayNShirtWhitecoat0,
+	AvatarItemDisplayNShirtWillow,
 	AvatarItemDisplayNShirtWintersweater20230,
 	AvatarItemDisplayNShirtYveltaljacket,
 	AvatarItemDisplayNShirtZacostumeA0,
@@ -1373,6 +1378,7 @@ import type {
 	AvatarItemDisplayNShoesWcs2022winnersitems0,
 	AvatarItemDisplayNShoesWcs2023winnersitems0,
 	AvatarItemDisplayNShoesWcs2024winnersitems0,
+	AvatarItemDisplayNShoesWillow,
 	AvatarItemDisplayNShoesWinterboots0,
 	AvatarItemDisplayNShoesWinterboots1,
 	AvatarItemDisplayNShoesWinterboots2,
@@ -1662,6 +1668,7 @@ import type {
 	AvatarItemDisplaySetWcs2024paiditems0,
 	AvatarItemDisplaySetWcs2024winnersitems0,
 	AvatarItemDisplaySetWcs2025winnersitems0,
+	AvatarItemDisplaySetWillow,
 	AvatarItemDisplaySetWinter2023,
 	AvatarItemDisplaySetZacostumeA,
 	AvatarItemDisplaySetZacostumeB,
@@ -1748,6 +1755,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_backpack_unequip_0: AvatarItemDisplayNBackpackUnequip0;
 	N_DISPLAY_n_backpack_verizon2021_0: AvatarItemDisplayNBackpackVerizon20210;
 	N_DISPLAY_n_backpack_whitekyuremitem_0: AvatarItemDisplayNBackpackWhitekyuremitem0;
+	N_DISPLAY_n_backpack_willow: AvatarItemDisplayNBackpackWillow;
 	N_DISPLAY_n_backpack_zubatbp_0: AvatarItemDisplayNBackpackZubatbp0;
 	N_DISPLAY_n_belt_acetrainerbw_0: AvatarItemDisplayNBeltAcetrainerbw0;
 	N_DISPLAY_n_belt_default_a_0: AvatarItemDisplayNBeltDefaultA0;
@@ -1876,6 +1884,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_gloves_teamwristband_3: AvatarItemDisplayNGlovesTeamwristband3;
 	N_DISPLAY_n_gloves_teamyellgrunts_0: AvatarItemDisplayNGlovesTeamyellgrunts0;
 	N_DISPLAY_n_gloves_unequip_0: AvatarItemDisplayNGlovesUnequip0;
+	N_DISPLAY_n_gloves_willow: AvatarItemDisplayNGlovesWillow;
 	N_DISPLAY_n_gloves_wintergloves2023_0: AvatarItemDisplayNGlovesWintergloves20230;
 	N_DISPLAY_n_gradient_eye_0: AvatarItemDisplayNGradientEye0;
 	N_DISPLAY_n_gradient_eye_1: AvatarItemDisplayNGradientEye1;
@@ -2341,6 +2350,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_pants_wcs2022winnersitems_0: AvatarItemDisplayNPantsWcs2022winnersitems0;
 	N_DISPLAY_n_pants_wcs2024winnersitems_0: AvatarItemDisplayNPantsWcs2024winnersitems0;
 	N_DISPLAY_n_pants_wcs2025winnersitems_0: AvatarItemDisplayNPantsWcs2025winnersitems0;
+	N_DISPLAY_n_pants_willow: AvatarItemDisplayNPantsWillow;
 	N_DISPLAY_n_pose_001: AvatarItemDisplayNPose001;
 	N_DISPLAY_n_pose_002: AvatarItemDisplayNPose002;
 	N_DISPLAY_n_pose_003: AvatarItemDisplayNPose003;
@@ -2625,6 +2635,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_james_0: AvatarItemDisplayNShirtJames0;
 	N_DISPLAY_n_shirt_jessie_0: AvatarItemDisplayNShirtJessie0;
 	N_DISPLAY_n_shirt_jirachi_0: AvatarItemDisplayNShirtJirachi0;
+	N_DISPLAY_n_shirt_jleague: AvatarItemDisplayNShirtJleague;
 	N_DISPLAY_n_shirt_jogger_0: AvatarItemDisplayNShirtJogger0;
 	N_DISPLAY_n_shirt_keldeotshirt_0: AvatarItemDisplayNShirtKeldeotshirt0;
 	N_DISPLAY_n_shirt_korrina_a_0: AvatarItemDisplayNShirtKorrinaA0;
@@ -2881,6 +2892,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_wcs2027: AvatarItemDisplayNShirtWcs2027;
 	N_DISPLAY_n_shirt_wcsyokohama_0: AvatarItemDisplayNShirtWcsyokohama0;
 	N_DISPLAY_n_shirt_whitecoat_0: AvatarItemDisplayNShirtWhitecoat0;
+	N_DISPLAY_n_shirt_willow: AvatarItemDisplayNShirtWillow;
 	N_DISPLAY_n_shirt_wintersweater2023_0: AvatarItemDisplayNShirtWintersweater20230;
 	N_DISPLAY_n_shirt_yveltaljacket: AvatarItemDisplayNShirtYveltaljacket;
 	N_DISPLAY_n_shirt_zacostume_a_0: AvatarItemDisplayNShirtZacostumeA0;
@@ -3040,6 +3052,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shoes_wcs2022winnersitems_0: AvatarItemDisplayNShoesWcs2022winnersitems0;
 	N_DISPLAY_n_shoes_wcs2023winnersitems_0: AvatarItemDisplayNShoesWcs2023winnersitems0;
 	N_DISPLAY_n_shoes_wcs2024winnersitems_0: AvatarItemDisplayNShoesWcs2024winnersitems0;
+	N_DISPLAY_n_shoes_willow: AvatarItemDisplayNShoesWillow;
 	N_DISPLAY_n_shoes_winterboots_0: AvatarItemDisplayNShoesWinterboots0;
 	N_DISPLAY_n_shoes_winterboots_1: AvatarItemDisplayNShoesWinterboots1;
 	N_DISPLAY_n_shoes_winterboots_2: AvatarItemDisplayNShoesWinterboots2;
@@ -3329,6 +3342,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_set_wcs2024paiditems_0: AvatarItemDisplaySetWcs2024paiditems0;
 	N_DISPLAY_set_wcs2024winnersitems_0: AvatarItemDisplaySetWcs2024winnersitems0;
 	N_DISPLAY_set_wcs2025winnersitems_0: AvatarItemDisplaySetWcs2025winnersitems0;
+	N_DISPLAY_set_willow: AvatarItemDisplaySetWillow;
 	N_DISPLAY_set_winter2023: AvatarItemDisplaySetWinter2023;
 	N_DISPLAY_set_zacostume_a: AvatarItemDisplaySetZacostumeA;
 	N_DISPLAY_set_zacostume_b: AvatarItemDisplaySetZacostumeB;

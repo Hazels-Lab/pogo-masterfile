@@ -7,6 +7,7 @@ export type MoveSettingsV0016MoveDarkPulse = S<
 	MoveSettings<
 		"V0016_MOVE_DARK_PULSE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2300;
@@ -27,6 +28,7 @@ export type MoveSettingsV0051MoveNightSlash = S<
 	MoveSettings<
 		"V0051_MOVE_NIGHT_SLASH",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.25;
 			damageWindowEndMs: 1800;
@@ -47,6 +49,7 @@ export type MoveSettingsV0202MoveBiteFast = S<
 	MoveSettings<
 		"V0202_MOVE_BITE_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 500;
 			damageWindowStartMs: 300;
@@ -66,6 +69,7 @@ export type MoveSettingsV0203MoveSuckerPunchFast = S<
 	MoveSettings<
 		"V0203_MOVE_SUCKER_PUNCH_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 500;
 			damageWindowStartMs: 100;
@@ -85,6 +89,7 @@ export type MoveSettingsV0238MoveFeintAttackFast = S<
 	MoveSettings<
 		"V0238_MOVE_FEINT_ATTACK_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1000;
 			damageWindowStartMs: 850;
@@ -104,6 +109,7 @@ export type MoveSettingsV0278MoveSnarlFast = S<
 	MoveSettings<
 		"V0278_MOVE_SNARL_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 950;
 			damageWindowStartMs: 750;
@@ -123,6 +129,7 @@ export type MoveSettingsV0279MoveCrunch = S<
 	MoveSettings<
 		"V0279_MOVE_CRUNCH",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2800;
@@ -143,6 +150,7 @@ export type MoveSettingsV0280MoveFoulPlay = S<
 	MoveSettings<
 		"V0280_MOVE_FOUL_PLAY",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1900;
@@ -163,6 +171,7 @@ export type MoveSettingsV0333MovePayback = S<
 	MoveSettings<
 		"V0333_MOVE_PAYBACK",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1800;
 			damageWindowStartMs: 900;
@@ -182,6 +191,7 @@ export type MoveSettingsV0367MoveBrutalSwing = S<
 	MoveSettings<
 		"V0367_MOVE_BRUTAL_SWING",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1700;
 			damageWindowStartMs: 1300;
@@ -201,6 +211,7 @@ export type MoveSettingsV0370MoveObstruct = S<
 	MoveSettings<
 		"V0370_MOVE_OBSTRUCT",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1400;
 			damageWindowStartMs: 300;
@@ -220,6 +231,7 @@ export type MoveSettingsV0400MoveDarkestLariat = S<
 	MoveSettings<
 		"V0400_MOVE_DARKEST_LARIAT",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2000;
 			damageWindowStartMs: 1200;
@@ -239,6 +251,7 @@ export type MoveSettingsV0407MoveAuraWheelDark = S<
 	MoveSettings<
 		"V0407_MOVE_AURA_WHEEL_DARK",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2500;
 			damageWindowStartMs: 2100;
@@ -258,6 +271,7 @@ export type MoveSettingsVnBm016 = S<
 	MoveSettings<
 		"VN_BM_016",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -276,6 +290,7 @@ export type MoveSettingsVnBm041 = S<
 	MoveSettings<
 		"VN_BM_041",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -294,6 +309,7 @@ export type MoveSettingsVnBm050 = S<
 	MoveSettings<
 		"VN_BM_050",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSettings", split "normal", 47 entries.
+// Generated from Pokémon GO masterfile — group "moveSettings", split "normal", 49 entries.
 
 import type { S } from "../../_utils";
 import type { MoveSettings } from "../types";
@@ -7,6 +7,7 @@ export type MoveSettingsV0013MoveWrap = S<
 	MoveSettings<
 		"V0013_MOVE_WRAP",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2800;
@@ -27,6 +28,7 @@ export type MoveSettingsV0014MoveHyperBeam = S<
 	MoveSettings<
 		"V0014_MOVE_HYPER_BEAM",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 3800;
@@ -47,6 +49,7 @@ export type MoveSettingsV0020MoveViceGrip = S<
 	MoveSettings<
 		"V0020_MOVE_VICE_GRIP",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1600;
@@ -67,6 +70,7 @@ export type MoveSettingsV0125MoveSwift = S<
 	MoveSettings<
 		"V0125_MOVE_SWIFT",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2800;
@@ -87,6 +91,7 @@ export type MoveSettingsV0126MoveHornAttack = S<
 	MoveSettings<
 		"V0126_MOVE_HORN_ATTACK",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1800;
@@ -107,6 +112,7 @@ export type MoveSettingsV0127MoveStomp = S<
 	MoveSettings<
 		"V0127_MOVE_STOMP",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1300;
@@ -127,6 +133,7 @@ export type MoveSettingsV0129MoveHyperFang = S<
 	MoveSettings<
 		"V0129_MOVE_HYPER_FANG",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2000;
@@ -147,6 +154,7 @@ export type MoveSettingsV0131MoveBodySlam = S<
 	MoveSettings<
 		"V0131_MOVE_BODY_SLAM",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1800;
@@ -167,6 +175,7 @@ export type MoveSettingsV0132MoveRest = S<
 	MoveSettings<
 		"V0132_MOVE_REST",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1800;
 			damageWindowStartMs: 1600;
@@ -186,6 +195,7 @@ export type MoveSettingsV0133MoveStruggle = S<
 	MoveSettings<
 		"V0133_MOVE_STRUGGLE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1800;
 			damageWindowStartMs: 1000;
@@ -204,6 +214,7 @@ export type MoveSettingsV0136MoveWrapGreen = S<
 	MoveSettings<
 		"V0136_MOVE_WRAP_GREEN",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2800;
@@ -224,6 +235,7 @@ export type MoveSettingsV0137MoveWrapPink = S<
 	MoveSettings<
 		"V0137_MOVE_WRAP_PINK",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2800;
@@ -244,6 +256,7 @@ export type MoveSettingsV0219MoveQuickAttackFast = S<
 	MoveSettings<
 		"V0219_MOVE_QUICK_ATTACK_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 750;
 			damageWindowStartMs: 450;
@@ -263,6 +276,7 @@ export type MoveSettingsV0220MoveScratchFast = S<
 	MoveSettings<
 		"V0220_MOVE_SCRATCH_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 500;
 			damageWindowStartMs: 300;
@@ -282,6 +296,7 @@ export type MoveSettingsV0221MoveTackleFast = S<
 	MoveSettings<
 		"V0221_MOVE_TACKLE_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 500;
 			damageWindowStartMs: 300;
@@ -301,6 +316,7 @@ export type MoveSettingsV0222MovePoundFast = S<
 	MoveSettings<
 		"V0222_MOVE_POUND_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 440;
 			damageWindowStartMs: 240;
@@ -320,6 +336,7 @@ export type MoveSettingsV0223MoveCutFast = S<
 	MoveSettings<
 		"V0223_MOVE_CUT_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 500;
 			damageWindowStartMs: 300;
@@ -339,6 +356,7 @@ export type MoveSettingsV0242MoveTransformFast = S<
 	MoveSettings<
 		"V0242_MOVE_TRANSFORM_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 470;
 			damageWindowStartMs: 70;
@@ -356,6 +374,7 @@ export type MoveSettingsV0281MoveHiddenPowerFast = S<
 	MoveSettings<
 		"V0281_MOVE_HIDDEN_POWER_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1400;
@@ -376,6 +395,7 @@ export type MoveSettingsV0282MoveTakeDownFast = S<
 	MoveSettings<
 		"V0282_MOVE_TAKE_DOWN_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 900;
 			damageWindowStartMs: 750;
@@ -395,6 +415,7 @@ export type MoveSettingsV0287MoveYawnFast = S<
 	MoveSettings<
 		"V0287_MOVE_YAWN_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1400;
 			damageWindowStartMs: 1200;
@@ -413,6 +434,7 @@ export type MoveSettingsV0291MovePresentFast = S<
 	MoveSettings<
 		"V0291_MOVE_PRESENT_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1500;
 			damageWindowStartMs: 1300;
@@ -432,6 +454,7 @@ export type MoveSettingsV0300MoveLastResort = S<
 	MoveSettings<
 		"V0300_MOVE_LAST_RESORT",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2950;
@@ -452,6 +475,7 @@ export type MoveSettingsV0302MoveSkullBash = S<
 	MoveSettings<
 		"V0302_MOVE_SKULL_BASH",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2200;
 			damageWindowStartMs: 1700;
@@ -471,6 +495,7 @@ export type MoveSettingsV0307MoveCrushClaw = S<
 	MoveSettings<
 		"V0307_MOVE_CRUSH_CLAW",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1800;
 			damageWindowStartMs: 1300;
@@ -488,6 +513,7 @@ export type MoveSettingsV0321MoveGigaImpact = S<
 	MoveSettings<
 		"V0321_MOVE_GIGA_IMPACT",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2200;
 			damageWindowStartMs: 800;
@@ -507,6 +533,7 @@ export type MoveSettingsV0322MoveFrustration = S<
 	MoveSettings<
 		"V0322_MOVE_FRUSTRATION",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1800;
 			damageWindowStartMs: 1000;
@@ -527,6 +554,7 @@ export type MoveSettingsV0323MoveReturn = S<
 	MoveSettings<
 		"V0323_MOVE_RETURN",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 150;
 			durationMs: 500;
@@ -545,6 +573,7 @@ export type MoveSettingsV0325MoveLockOnFast = S<
 	MoveSettings<
 		"V0325_MOVE_LOCK_ON_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 500;
 			damageWindowStartMs: 370;
@@ -564,6 +593,7 @@ export type MoveSettingsV0328MoveHornDrill = S<
 	MoveSettings<
 		"V0328_MOVE_HORN_DRILL",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1600;
 			damageWindowStartMs: 600;
@@ -583,6 +613,7 @@ export type MoveSettingsV0336MoveTechnoBlastNormal = S<
 	MoveSettings<
 		"V0336_MOVE_TECHNO_BLAST_NORMAL",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2000;
 			damageWindowStartMs: 1600;
@@ -599,6 +630,7 @@ export type MoveSettingsV0344MoveTriAttack = S<
 	MoveSettings<
 		"V0344_MOVE_TRI_ATTACK",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2400;
 			damageWindowStartMs: 1300;
@@ -618,6 +650,7 @@ export type MoveSettingsV0352MoveWeatherBallNormal = S<
 	MoveSettings<
 		"V0352_MOVE_WEATHER_BALL_NORMAL",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1500;
 			damageWindowStartMs: 1250;
@@ -637,6 +670,7 @@ export type MoveSettingsV0380MoveBoomburst = S<
 	MoveSettings<
 		"V0380_MOVE_BOOMBURST",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2200;
 			damageWindowStartMs: 1200;
@@ -656,6 +690,7 @@ export type MoveSettingsV0485MoveCrushGrip = S<
 	MoveSettings<
 		"V0485_MOVE_CRUSH_GRIP",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1700;
 			damageWindowStartMs: 700;
@@ -671,10 +706,35 @@ export type MoveSettingsV0485MoveCrushGrip = S<
 		}
 	>
 >;
+export type MoveSettingsV0594MoveGulpMissileGulping = S<
+	MoveSettings<
+		"V0594_MOVE_GULP_MISSILE_GULPING",
+		{
+			animationId: 5;
+			durationMs: 2500;
+			movementId: 594;
+			pokemonType: "POKEMON_TYPE_NORMAL";
+			vfxName: "gulp_missile_gulping";
+		}
+	>
+>;
+export type MoveSettingsV0595MoveGulpMissileGorging = S<
+	MoveSettings<
+		"V0595_MOVE_GULP_MISSILE_GORGING",
+		{
+			animationId: 5;
+			durationMs: 2500;
+			movementId: 595;
+			pokemonType: "POKEMON_TYPE_NORMAL";
+			vfxName: "gulp_missile_gorging";
+		}
+	>
+>;
 export type MoveSettingsVnBm004 = S<
 	MoveSettings<
 		"VN_BM_004",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -693,6 +753,7 @@ export type MoveSettingsVnBm022 = S<
 	MoveSettings<
 		"VN_BM_022",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -711,6 +772,7 @@ export type MoveSettingsVnBm027 = S<
 	MoveSettings<
 		"VN_BM_027",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -729,6 +791,7 @@ export type MoveSettingsVnBm028 = S<
 	MoveSettings<
 		"VN_BM_028",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -747,6 +810,7 @@ export type MoveSettingsVnBm052 = S<
 	MoveSettings<
 		"VN_BM_052",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -765,6 +829,7 @@ export type MoveSettingsVnBm053 = S<
 	MoveSettings<
 		"VN_BM_053",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -783,6 +848,7 @@ export type MoveSettingsVnBm054 = S<
 	MoveSettings<
 		"VN_BM_054",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -801,6 +867,7 @@ export type MoveSettingsVnBm055 = S<
 	MoveSettings<
 		"VN_BM_055",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -819,6 +886,7 @@ export type MoveSettingsVnBm056 = S<
 	MoveSettings<
 		"VN_BM_056",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -837,6 +905,7 @@ export type MoveSettingsVnBm057 = S<
 	MoveSettings<
 		"VN_BM_057",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -855,6 +924,7 @@ export type MoveSettingsVnBm058 = S<
 	MoveSettings<
 		"VN_BM_058",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -873,6 +943,7 @@ export type MoveSettingsVnBm059 = S<
 	MoveSettings<
 		"VN_BM_059",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -924,6 +995,8 @@ export type MoveSettingsNormalMasterfileEntry =
 	| MoveSettingsV0352MoveWeatherBallNormal
 	| MoveSettingsV0380MoveBoomburst
 	| MoveSettingsV0485MoveCrushGrip
+	| MoveSettingsV0594MoveGulpMissileGulping
+	| MoveSettingsV0595MoveGulpMissileGorging
 	| MoveSettingsVnBm004
 	| MoveSettingsVnBm022
 	| MoveSettingsVnBm027

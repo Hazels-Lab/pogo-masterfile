@@ -7,6 +7,7 @@ export type MoveSettingsV0026MoveDig = S<
 	MoveSettings<
 		"V0026_MOVE_DIG",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 4300;
@@ -27,6 +28,7 @@ export type MoveSettingsV0031MoveEarthquake = S<
 	MoveSettings<
 		"V0031_MOVE_EARTHQUAKE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 3400;
@@ -47,6 +49,7 @@ export type MoveSettingsV0046MoveDrillRun = S<
 	MoveSettings<
 		"V0046_MOVE_DRILL_RUN",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.25;
 			damageWindowEndMs: 2800;
@@ -67,6 +70,7 @@ export type MoveSettingsV0094MoveBoneClub = S<
 	MoveSettings<
 		"V0094_MOVE_BONE_CLUB",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1300;
@@ -87,6 +91,7 @@ export type MoveSettingsV0095MoveBulldoze = S<
 	MoveSettings<
 		"V0095_MOVE_BULLDOZE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 3100;
@@ -107,6 +112,7 @@ export type MoveSettingsV0096MoveMudBomb = S<
 	MoveSettings<
 		"V0096_MOVE_MUD_BOMB",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2300;
@@ -127,6 +133,7 @@ export type MoveSettingsV0216MoveMudShotFast = S<
 	MoveSettings<
 		"V0216_MOVE_MUD_SHOT_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 450;
 			damageWindowStartMs: 250;
@@ -146,6 +153,7 @@ export type MoveSettingsV0233MoveMudSlapFast = S<
 	MoveSettings<
 		"V0233_MOVE_MUD_SLAP_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1450;
 			damageWindowStartMs: 1250;
@@ -165,6 +173,7 @@ export type MoveSettingsV0258MoveSandTomb = S<
 	MoveSettings<
 		"V0258_MOVE_SAND_TOMB",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 4000;
@@ -185,6 +194,7 @@ export type MoveSettingsV0290MovePrecipiceBlades = S<
 	MoveSettings<
 		"V0290_MOVE_PRECIPICE_BLADES",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1400;
 			damageWindowStartMs: 1200;
@@ -204,6 +214,7 @@ export type MoveSettingsV0304MoveEarthPower = S<
 	MoveSettings<
 		"V0304_MOVE_EARTH_POWER",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3300;
 			damageWindowStartMs: 2600;
@@ -223,6 +234,7 @@ export type MoveSettingsV0329MoveFissure = S<
 	MoveSettings<
 		"V0329_MOVE_FISSURE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2500;
 			damageWindowStartMs: 1200;
@@ -242,6 +254,7 @@ export type MoveSettingsV0377MoveHighHorsepower = S<
 	MoveSettings<
 		"V0377_MOVE_HIGH_HORSEPOWER",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1100;
 			damageWindowStartMs: 900;
@@ -261,6 +274,7 @@ export type MoveSettingsV0393MoveScorchingSands = S<
 	MoveSettings<
 		"V0393_MOVE_SCORCHING_SANDS",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2300;
 			damageWindowStartMs: 1400;
@@ -280,6 +294,7 @@ export type MoveSettingsV0396MoveSandsearStorm = S<
 	MoveSettings<
 		"V0396_MOVE_SANDSEAR_STORM",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2800;
 			damageWindowStartMs: 2000;
@@ -299,6 +314,7 @@ export type MoveSettingsV0403MoveSandAttackFast = S<
 	MoveSettings<
 		"V0403_MOVE_SAND_ATTACK_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 600;
 			damageWindowStartMs: 300;
@@ -318,6 +334,7 @@ export type MoveSettingsVnBm015 = S<
 	MoveSettings<
 		"VN_BM_015",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -336,6 +353,7 @@ export type MoveSettingsVnBm037 = S<
 	MoveSettings<
 		"VN_BM_037",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;

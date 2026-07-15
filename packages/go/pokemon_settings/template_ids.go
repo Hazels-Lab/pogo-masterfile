@@ -2084,6 +2084,8 @@ const (
 	PokemonSettingsTemplateIDV0844PokemonSandaconda                      PokemonSettingsTemplateID = "V0844_POKEMON_SANDACONDA"
 	PokemonSettingsTemplateIDV0844PokemonSandacondaNormal                PokemonSettingsTemplateID = "V0844_POKEMON_SANDACONDA_NORMAL"
 	PokemonSettingsTemplateIDV0845PokemonCramorant                       PokemonSettingsTemplateID = "V0845_POKEMON_CRAMORANT"
+	PokemonSettingsTemplateIDV0845PokemonCramorantGorging                PokemonSettingsTemplateID = "V0845_POKEMON_CRAMORANT_GORGING"
+	PokemonSettingsTemplateIDV0845PokemonCramorantGulping                PokemonSettingsTemplateID = "V0845_POKEMON_CRAMORANT_GULPING"
 	PokemonSettingsTemplateIDV0845PokemonCramorantNormal                 PokemonSettingsTemplateID = "V0845_POKEMON_CRAMORANT_NORMAL"
 	PokemonSettingsTemplateIDV0846PokemonArrokuda                        PokemonSettingsTemplateID = "V0846_POKEMON_ARROKUDA"
 	PokemonSettingsTemplateIDV0846PokemonArrokudaNormal                  PokemonSettingsTemplateID = "V0846_POKEMON_ARROKUDA_NORMAL"
@@ -4551,6 +4553,8 @@ var PokemonSettingsTemplateIDValues = [...]PokemonSettingsTemplateID{
 	PokemonSettingsTemplateIDV0844PokemonSandaconda,
 	PokemonSettingsTemplateIDV0844PokemonSandacondaNormal,
 	PokemonSettingsTemplateIDV0845PokemonCramorant,
+	PokemonSettingsTemplateIDV0845PokemonCramorantGorging,
+	PokemonSettingsTemplateIDV0845PokemonCramorantGulping,
 	PokemonSettingsTemplateIDV0845PokemonCramorantNormal,
 	PokemonSettingsTemplateIDV0846PokemonArrokuda,
 	PokemonSettingsTemplateIDV0846PokemonArrokudaNormal,

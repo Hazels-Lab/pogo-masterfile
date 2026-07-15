@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonSettings", 2464 entries (structural types).
+// Generated from Pokémon GO masterfile — group "pokemonSettings", 2466 entries (structural types).
 
 import type { W } from "../_utils";
 import type { TypeEffectiveTemplateID } from "../type-effective/entries";
@@ -45,7 +45,7 @@ export interface PokemonSettingsData {
 		shoulderModeScale?: number;
 	};
 	candyToEvolve?: number;
-	cinematicMoves?: Array<string>;
+	cinematicMoves?: Array<number | string>;
 	combatDefaultCameraAngle?: [number, number, number];
 	combatOpponentFocusCameraAngle?: [number, number, number];
 	combatPlayerFocusCameraAngle?: [number, number, number];
@@ -197,10 +197,11 @@ export interface PokemonSettingsData {
 		item: "ITEM_BEANS" | "ITEM_MOVE_REROLL_OTHER_SPECIAL_ATTACK_A";
 	};
 	familyId: string;
-	form?: string;
+	form?: number | string;
 	formChange?: Array<{
 		availableForm: Array<
 			| "FURFROU_DANDY"
+			| "FURFROU_DIAMOND"
 			| "FURFROU_MATRON"
 			| "FURFROU_NATURAL"
 			| "HOOPA_CONFINED"
@@ -330,7 +331,7 @@ export interface PokemonSettingsData {
 			replacementMove?: "AURA_WHEEL_ELECTRIC";
 		};
 		combatEnable?: boolean;
-		defaultForm?: "AEGISLASH_SHIELD" | "MIMIKYU_DISGUISED" | "MORPEKO_FULL_BELLY";
+		defaultForm?: "AEGISLASH_SHIELD" | "CRAMORANT_NORMAL" | "MIMIKYU_DISGUISED" | "MORPEKO_FULL_BELLY";
 		defaultToAlternateIbfcSettings?: {
 			animationDurationTurns: number;
 			animationPlayPoint: "AFTER_CM_ATTACKER" | "BEFORE_CM_ATTACKER";

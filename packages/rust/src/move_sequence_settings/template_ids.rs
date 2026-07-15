@@ -129,6 +129,8 @@ pub enum MoveSequenceSettingsTemplateId {
     SequenceDisarmingVoice,
     #[serde(rename = "sequence_discharge")]
     SequenceDischarge,
+    #[serde(rename = "sequence_dive")]
+    SequenceDive,
     #[serde(rename = "sequence_doom_desire")]
     SequenceDoomDesire,
     #[serde(rename = "sequence_double_iron_bash")]
@@ -241,6 +243,10 @@ pub enum MoveSequenceSettingsTemplateId {
     SequenceGlaiveRush,
     #[serde(rename = "sequence_grass_knot")]
     SequenceGrassKnot,
+    #[serde(rename = "sequence_gulp_missile_gorging")]
+    SequenceGulpMissileGorging,
+    #[serde(rename = "sequence_gulp_missile_gulping")]
+    SequenceGulpMissileGulping,
     #[serde(rename = "sequence_gunk_shot")]
     SequenceGunkShot,
     #[serde(rename = "sequence_gust_fast")]

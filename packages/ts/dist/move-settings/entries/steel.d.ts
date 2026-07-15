@@ -7,6 +7,7 @@ export type MoveSettingsV0036MoveFlashCannon = S<
 	MoveSettings<
 		"V0036_MOVE_FLASH_CANNON",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2300;
@@ -27,6 +28,7 @@ export type MoveSettingsV0072MoveMagnetBomb = S<
 	MoveSettings<
 		"V0072_MOVE_MAGNET_BOMB",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2800;
@@ -47,6 +49,7 @@ export type MoveSettingsV0074MoveIronHead = S<
 	MoveSettings<
 		"V0074_MOVE_IRON_HEAD",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1800;
@@ -67,6 +70,7 @@ export type MoveSettingsV0228MoveMetalClawFast = S<
 	MoveSettings<
 		"V0228_MOVE_METAL_CLAW_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 430;
 			damageWindowStartMs: 230;
@@ -86,6 +90,7 @@ export type MoveSettingsV0229MoveBulletPunchFast = S<
 	MoveSettings<
 		"V0229_MOVE_BULLET_PUNCH_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1000;
 			damageWindowStartMs: 400;
@@ -105,6 +110,7 @@ export type MoveSettingsV0239MoveSteelWingFast = S<
 	MoveSettings<
 		"V0239_MOVE_STEEL_WING_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 1000;
 			damageWindowStartMs: 700;
@@ -124,6 +130,7 @@ export type MoveSettingsV0266MoveIronTailFast = S<
 	MoveSettings<
 		"V0266_MOVE_IRON_TAIL_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 950;
 			damageWindowStartMs: 750;
@@ -143,6 +150,7 @@ export type MoveSettingsV0267MoveGyroBall = S<
 	MoveSettings<
 		"V0267_MOVE_GYRO_BALL",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 3500;
@@ -163,6 +171,7 @@ export type MoveSettingsV0268MoveHeavySlam = S<
 	MoveSettings<
 		"V0268_MOVE_HEAVY_SLAM",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 1800;
@@ -183,6 +192,7 @@ export type MoveSettingsV0286MoveDoomDesire = S<
 	MoveSettings<
 		"V0286_MOVE_DOOM_DESIRE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1400;
 			damageWindowStartMs: 1200;
@@ -202,6 +212,7 @@ export type MoveSettingsV0301MoveMeteorMash = S<
 	MoveSettings<
 		"V0301_MOVE_METEOR_MASH",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			criticalChance: 0.05;
 			damageWindowEndMs: 2400;
@@ -222,6 +233,7 @@ export type MoveSettingsV0309MoveMirrorShot = S<
 	MoveSettings<
 		"V0309_MOVE_MIRROR_SHOT",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2300;
 			damageWindowStartMs: 1900;
@@ -241,6 +253,7 @@ export type MoveSettingsV0381MoveDoubleIronBash = S<
 	MoveSettings<
 		"V0381_MOVE_DOUBLE_IRON_BASH",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 2000;
 			damageWindowStartMs: 1300;
@@ -260,6 +273,7 @@ export type MoveSettingsV0402MoveMetalSoundFast = S<
 	MoveSettings<
 		"V0402_MOVE_METAL_SOUND_FAST",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 700;
 			damageWindowStartMs: 200;
@@ -279,6 +293,7 @@ export type MoveSettingsV0404MoveSunsteelStrike = S<
 	MoveSettings<
 		"V0404_MOVE_SUNSTEEL_STRIKE",
 		{
+			accuracyChance: 1;
 			animationId: 4;
 			damageWindowEndMs: 3000;
 			damageWindowStartMs: 2200;
@@ -298,6 +313,7 @@ export type MoveSettingsV0469MoveBehemothBlade = S<
 	MoveSettings<
 		"V0469_MOVE_BEHEMOTH_BLADE",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3500;
 			damageWindowStartMs: 2500;
@@ -318,6 +334,7 @@ export type MoveSettingsV0470MoveBehemothBash = S<
 	MoveSettings<
 		"V0470_MOVE_BEHEMOTH_BASH",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 1400;
 			damageWindowStartMs: 900;
@@ -338,6 +355,7 @@ export type MoveSettingsV0494MoveGigatonHammer = S<
 	MoveSettings<
 		"V0494_MOVE_GIGATON_HAMMER",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3100;
 			damageWindowStartMs: 2000;
@@ -357,6 +375,7 @@ export type MoveSettingsVnBm018 = S<
 	MoveSettings<
 		"VN_BM_018",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -375,6 +394,7 @@ export type MoveSettingsVnBm030 = S<
 	MoveSettings<
 		"VN_BM_030",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -393,6 +413,7 @@ export type MoveSettingsVnBm043 = S<
 	MoveSettings<
 		"VN_BM_043",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -411,6 +432,7 @@ export type MoveSettingsVnBm060 = S<
 	MoveSettings<
 		"VN_BM_060",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;
@@ -429,6 +451,7 @@ export type MoveSettingsVnBm061 = S<
 	MoveSettings<
 		"VN_BM_061",
 		{
+			accuracyChance: 1;
 			animationId: 5;
 			damageWindowEndMs: 3400;
 			damageWindowStartMs: 2000;

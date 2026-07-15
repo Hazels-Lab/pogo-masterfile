@@ -4165,6 +4165,10 @@ pub enum GenderSettingsTemplateId {
     SpawnV0844PokemonSandacondaNormal,
     #[serde(rename = "SPAWN_V0845_POKEMON_CRAMORANT")]
     SpawnV0845PokemonCramorant,
+    #[serde(rename = "SPAWN_V0845_POKEMON_CRAMORANT_GORGING")]
+    SpawnV0845PokemonCramorantGorging,
+    #[serde(rename = "SPAWN_V0845_POKEMON_CRAMORANT_GULPING")]
+    SpawnV0845PokemonCramorantGulping,
     #[serde(rename = "SPAWN_V0845_POKEMON_CRAMORANT_NORMAL")]
     SpawnV0845PokemonCramorantNormal,
     #[serde(rename = "SPAWN_V0846_POKEMON_ARROKUDA")]

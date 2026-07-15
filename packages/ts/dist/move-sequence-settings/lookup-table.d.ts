@@ -62,6 +62,7 @@ import type {
 	MoveSequenceSettingsDig,
 	MoveSequenceSettingsDisarmingVoice,
 	MoveSequenceSettingsDischarge,
+	MoveSequenceSettingsDive,
 	MoveSequenceSettingsDoomDesire,
 	MoveSequenceSettingsDoubleIronBash,
 	MoveSequenceSettingsDoubleKickFast,
@@ -118,6 +119,8 @@ import type {
 	MoveSequenceSettingsGlaciate,
 	MoveSequenceSettingsGlaiveRush,
 	MoveSequenceSettingsGrassKnot,
+	MoveSequenceSettingsGulpMissileGorging,
+	MoveSequenceSettingsGulpMissileGulping,
 	MoveSequenceSettingsGunkShot,
 	MoveSequenceSettingsGustFast,
 	MoveSequenceSettingsGyroBall,
@@ -399,6 +402,7 @@ export interface MoveSequenceSettingsLookup {
 	sequence_dig: MoveSequenceSettingsDig;
 	sequence_disarming_voice: MoveSequenceSettingsDisarmingVoice;
 	sequence_discharge: MoveSequenceSettingsDischarge;
+	sequence_dive: MoveSequenceSettingsDive;
 	sequence_doom_desire: MoveSequenceSettingsDoomDesire;
 	sequence_double_iron_bash: MoveSequenceSettingsDoubleIronBash;
 	sequence_double_kick_fast: MoveSequenceSettingsDoubleKickFast;
@@ -455,6 +459,8 @@ export interface MoveSequenceSettingsLookup {
 	sequence_glaciate: MoveSequenceSettingsGlaciate;
 	sequence_glaive_rush: MoveSequenceSettingsGlaiveRush;
 	sequence_grass_knot: MoveSequenceSettingsGrassKnot;
+	sequence_gulp_missile_gorging: MoveSequenceSettingsGulpMissileGorging;
+	sequence_gulp_missile_gulping: MoveSequenceSettingsGulpMissileGulping;
 	sequence_gunk_shot: MoveSequenceSettingsGunkShot;
 	sequence_gust_fast: MoveSequenceSettingsGustFast;
 	sequence_gyro_ball: MoveSequenceSettingsGyroBall;

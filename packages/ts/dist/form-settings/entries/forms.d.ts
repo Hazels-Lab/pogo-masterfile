@@ -12481,6 +12481,12 @@ export type FormSettingsV0845PokemonCramorant = S<
 				{
 					form: "CRAMORANT_NORMAL";
 				},
+				{
+					form: 3349;
+				},
+				{
+					form: 3350;
+				},
 			];
 			pokemon: "CRAMORANT";
 		}

@@ -326,6 +326,9 @@ import type {
 	MoveSettingsV0497MovePlasmaFists,
 	MoveSettingsV0590MoveGlaiveRush,
 	MoveSettingsV0592MoveSnipeShot,
+	MoveSettingsV0593MoveDive,
+	MoveSettingsV0594MoveGulpMissileGulping,
+	MoveSettingsV0595MoveGulpMissileGorging,
 	MoveSettingsVnBm001,
 	MoveSettingsVnBm002,
 	MoveSettingsVnBm003,
@@ -716,6 +719,9 @@ export interface MoveSettingsLookup {
 	V0497_MOVE_PLASMA_FISTS: MoveSettingsV0497MovePlasmaFists;
 	V0590_MOVE_GLAIVE_RUSH: MoveSettingsV0590MoveGlaiveRush;
 	V0592_MOVE_SNIPE_SHOT: MoveSettingsV0592MoveSnipeShot;
+	V0593_MOVE_DIVE: MoveSettingsV0593MoveDive;
+	V0594_MOVE_GULP_MISSILE_GULPING: MoveSettingsV0594MoveGulpMissileGulping;
+	V0595_MOVE_GULP_MISSILE_GORGING: MoveSettingsV0595MoveGulpMissileGorging;
 	VN_BM_001: MoveSettingsVnBm001;
 	VN_BM_002: MoveSettingsVnBm002;
 	VN_BM_003: MoveSettingsVnBm003;

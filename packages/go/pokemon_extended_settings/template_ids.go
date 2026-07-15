@@ -2084,6 +2084,8 @@ const (
 	PokemonExtendedSettingsTemplateIDExtendedV0844PokemonSandaconda                      PokemonExtendedSettingsTemplateID = "EXTENDED_V0844_POKEMON_SANDACONDA"
 	PokemonExtendedSettingsTemplateIDExtendedV0844PokemonSandacondaNormal                PokemonExtendedSettingsTemplateID = "EXTENDED_V0844_POKEMON_SANDACONDA_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV0845PokemonCramorant                       PokemonExtendedSettingsTemplateID = "EXTENDED_V0845_POKEMON_CRAMORANT"
+	PokemonExtendedSettingsTemplateIDExtendedV0845PokemonCramorantGorging                PokemonExtendedSettingsTemplateID = "EXTENDED_V0845_POKEMON_CRAMORANT_GORGING"
+	PokemonExtendedSettingsTemplateIDExtendedV0845PokemonCramorantGulping                PokemonExtendedSettingsTemplateID = "EXTENDED_V0845_POKEMON_CRAMORANT_GULPING"
 	PokemonExtendedSettingsTemplateIDExtendedV0845PokemonCramorantNormal                 PokemonExtendedSettingsTemplateID = "EXTENDED_V0845_POKEMON_CRAMORANT_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV0846PokemonArrokuda                        PokemonExtendedSettingsTemplateID = "EXTENDED_V0846_POKEMON_ARROKUDA"
 	PokemonExtendedSettingsTemplateIDExtendedV0846PokemonArrokudaNormal                  PokemonExtendedSettingsTemplateID = "EXTENDED_V0846_POKEMON_ARROKUDA_NORMAL"
@@ -4555,6 +4557,8 @@ var PokemonExtendedSettingsTemplateIDValues = [...]PokemonExtendedSettingsTempla
 	PokemonExtendedSettingsTemplateIDExtendedV0844PokemonSandaconda,
 	PokemonExtendedSettingsTemplateIDExtendedV0844PokemonSandacondaNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV0845PokemonCramorant,
+	PokemonExtendedSettingsTemplateIDExtendedV0845PokemonCramorantGorging,
+	PokemonExtendedSettingsTemplateIDExtendedV0845PokemonCramorantGulping,
 	PokemonExtendedSettingsTemplateIDExtendedV0845PokemonCramorantNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV0846PokemonArrokuda,
 	PokemonExtendedSettingsTemplateIDExtendedV0846PokemonArrokudaNormal,

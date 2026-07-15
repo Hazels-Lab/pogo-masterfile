@@ -66,6 +66,7 @@ const (
 	MoveSequenceSettingsTemplateIDSequenceDig                   MoveSequenceSettingsTemplateID = "sequence_dig"
 	MoveSequenceSettingsTemplateIDSequenceDisarmingVoice        MoveSequenceSettingsTemplateID = "sequence_disarming_voice"
 	MoveSequenceSettingsTemplateIDSequenceDischarge             MoveSequenceSettingsTemplateID = "sequence_discharge"
+	MoveSequenceSettingsTemplateIDSequenceDive                  MoveSequenceSettingsTemplateID = "sequence_dive"
 	MoveSequenceSettingsTemplateIDSequenceDoomDesire            MoveSequenceSettingsTemplateID = "sequence_doom_desire"
 	MoveSequenceSettingsTemplateIDSequenceDoubleIronBash        MoveSequenceSettingsTemplateID = "sequence_double_iron_bash"
 	MoveSequenceSettingsTemplateIDSequenceDoubleKickFast        MoveSequenceSettingsTemplateID = "sequence_double_kick_fast"
@@ -122,6 +123,8 @@ const (
 	MoveSequenceSettingsTemplateIDSequenceGlaciate              MoveSequenceSettingsTemplateID = "sequence_glaciate"
 	MoveSequenceSettingsTemplateIDSequenceGlaiveRush            MoveSequenceSettingsTemplateID = "sequence_glaive_rush"
 	MoveSequenceSettingsTemplateIDSequenceGrassKnot             MoveSequenceSettingsTemplateID = "sequence_grass_knot"
+	MoveSequenceSettingsTemplateIDSequenceGulpMissileGorging    MoveSequenceSettingsTemplateID = "sequence_gulp_missile_gorging"
+	MoveSequenceSettingsTemplateIDSequenceGulpMissileGulping    MoveSequenceSettingsTemplateID = "sequence_gulp_missile_gulping"
 	MoveSequenceSettingsTemplateIDSequenceGunkShot              MoveSequenceSettingsTemplateID = "sequence_gunk_shot"
 	MoveSequenceSettingsTemplateIDSequenceGustFast              MoveSequenceSettingsTemplateID = "sequence_gust_fast"
 	MoveSequenceSettingsTemplateIDSequenceGyroBall              MoveSequenceSettingsTemplateID = "sequence_gyro_ball"
@@ -403,6 +406,7 @@ var MoveSequenceSettingsTemplateIDValues = [...]MoveSequenceSettingsTemplateID{
 	MoveSequenceSettingsTemplateIDSequenceDig,
 	MoveSequenceSettingsTemplateIDSequenceDisarmingVoice,
 	MoveSequenceSettingsTemplateIDSequenceDischarge,
+	MoveSequenceSettingsTemplateIDSequenceDive,
 	MoveSequenceSettingsTemplateIDSequenceDoomDesire,
 	MoveSequenceSettingsTemplateIDSequenceDoubleIronBash,
 	MoveSequenceSettingsTemplateIDSequenceDoubleKickFast,
@@ -459,6 +463,8 @@ var MoveSequenceSettingsTemplateIDValues = [...]MoveSequenceSettingsTemplateID{
 	MoveSequenceSettingsTemplateIDSequenceGlaciate,
 	MoveSequenceSettingsTemplateIDSequenceGlaiveRush,
 	MoveSequenceSettingsTemplateIDSequenceGrassKnot,
+	MoveSequenceSettingsTemplateIDSequenceGulpMissileGorging,
+	MoveSequenceSettingsTemplateIDSequenceGulpMissileGulping,
 	MoveSequenceSettingsTemplateIDSequenceGunkShot,
 	MoveSequenceSettingsTemplateIDSequenceGustFast,
 	MoveSequenceSettingsTemplateIDSequenceGyroBall,
