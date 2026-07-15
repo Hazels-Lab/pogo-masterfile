@@ -1,19 +1,8 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "category-hidden-sku-sort-order", 324 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "sticker/hidden", 322 entries.
 
-import type { S } from "../../_utils";
-import type { IapItemDisplay } from "../types";
+import type { S } from "../../../_utils";
+import type { IapItemDisplay } from "../../types";
 
-export type IapItemDisplayPgoreleasePokecoin21375 = S<
-	IapItemDisplay<
-		"pgorelease.pokecoin.21375",
-		{
-			category: "IAP_CATEGORY_POKECOINS";
-			hidden: true;
-			sku: "pgorelease.pokecoin.21375";
-			sortOrder: 1;
-		}
-	>
->;
 export type IapItemDisplayStickerAprilfool202313 = S<
 	IapItemDisplay<
 		"STICKER_APRILFOOL2023_1.3",
@@ -3556,20 +3545,8 @@ export type IapItemDisplayStickerYurutto245 = S<
 		}
 	>
 >;
-export type IapItemDisplayWebCommunityAmbassadorBonusBundle2025 = S<
-	IapItemDisplay<
-		"web-community-ambassador-bonus-bundle-2025",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sku: "web-community-ambassador-bonus-bundle-2025";
-			sortOrder: 1;
-		}
-	>
->;
 
-export type IapItemDisplayCategoryHiddenSkuSortOrderMasterfileEntry =
-	| IapItemDisplayPgoreleasePokecoin21375
+export type IapItemDisplayStickerHiddenMasterfileEntry =
 	| IapItemDisplayStickerAprilfool202313
 	| IapItemDisplayStickerAprilfool202315
 	| IapItemDisplayStickerAprilfool202323
@@ -3891,5 +3868,4 @@ export type IapItemDisplayCategoryHiddenSkuSortOrderMasterfileEntry =
 	| IapItemDisplayStickerYurutto123
 	| IapItemDisplayStickerYurutto125
 	| IapItemDisplayStickerYurutto243
-	| IapItemDisplayStickerYurutto245
-	| IapItemDisplayWebCommunityAmbassadorBonusBundle2025;
+	| IapItemDisplayStickerYurutto245;

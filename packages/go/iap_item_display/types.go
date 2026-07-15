@@ -11,7 +11,7 @@ type IapItemDisplay struct {
 	Sale                   *bool   `json:"sale,omitempty"`
 	ShowDiscountTag        *bool   `json:"showDiscountTag,omitempty"`
 	ShowStrikethroughPrice *bool   `json:"showStrikethroughPrice,omitempty"`
-	Sku                    *string `json:"sku,omitempty"`
+	Sku                    string  `json:"sku"`
 	SkuDisableTime         *string `json:"skuDisableTime,omitempty"`
 	SkuDisableTimeUtcMs    *string `json:"skuDisableTimeUtcMs,omitempty"`
 	SkuEnableTime          *string `json:"skuEnableTime,omitempty"`

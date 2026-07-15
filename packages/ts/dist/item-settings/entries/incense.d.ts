@@ -26,7 +26,7 @@ export type ItemSettingsItemIncenseDailyAdventure = S<
 			dropTrainerLevel: 6;
 			ignoreInventorySpace: true;
 			incense: {
-				incenseLifetimeSeconds: 900;
+				incenseLifetimeSeconds: 1800;
 				spawnTableProbability: 0.25;
 			};
 			itemId: "ITEM_INCENSE_DAILY_ADVENTURE";
