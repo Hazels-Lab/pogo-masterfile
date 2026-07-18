@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", 153 entries (structural types).
+// Generated from Pokémon GO masterfile — group "itemSettings", 156 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -68,6 +68,8 @@ export interface ItemSettingsData {
 		| "item_event_ticket_pink_details_CDC_Deino26"
 		| "item_event_ticket_pink_details_MegaRayquaza26"
 		| "item_event_ticket_pink_details_WaterRRD26"
+		| "ITEM_EVENT_TICKET_S23_2026_08_desc_gmaxRillaboom26"
+		| "ITEM_EVENT_TICKET_S23_2026_08_details_gmaxRillaboom26"
 		| "item_global_event_ticket_details_GOTour2026"
 		| "item_postcard_inventory_desc_stamp";
 	dropTrainerLevel?: number;
@@ -136,6 +138,7 @@ export interface ItemSettingsData {
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-riolu-hatch-day-2026-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-yampers-paw-prints-ticket-nologo-2025.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F3b085206_PGO-MCS_10th_Anniversary_Celebration_TICKET_v2-1024x576.jpg"
+			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F871eef71_PGO-MCS_GMAX_Rillaboom_Max_Battle_Day_v1-1024x576-nologo.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F9398cb22_PGO-MCS_Skarmory_Super_Mega_Raid_Day_v4-1024x576.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fe2400534_20260511_pgo_s23_ShinyShaymin_1024x576_nologo.jpg"
 			| "https://storage.googleapis.com/prod-public-images/1054x512.jpg"
@@ -166,7 +169,8 @@ export interface ItemSettingsData {
 			| "1783368000000"
 			| "1784394000000"
 			| "1785096000000"
-			| "1785182400000";
+			| "1785182400000"
+			| "1785603600000";
 		clientEventStartTimeUtcMs:
 			| "1696845600000"
 			| "1697364000000"
@@ -192,7 +196,8 @@ export interface ItemSettingsData {
 			| "1783173600000"
 			| "1784383200000"
 			| "1784628000000"
-			| "1784973600000";
+			| "1784973600000"
+			| "1785592800000";
 		conflictStoryQuestIds?: ["RERUN_MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER", "MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER"];
 		detailsLinkKey?:
 			| "details_link_key"
@@ -211,6 +216,7 @@ export interface ItemSettingsData {
 		displayV2Enabled?: boolean;
 		eventBadge?: "BADGE_GO_TOUR_2026_GLOBAL";
 		eventBannerUrl?:
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F0ba8ff0a_20260508_pgo_s23_megarayquaza_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F97c2eaee_PGO-MCS_Raichu_Super_Mega_Raid_Day_v3-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg"
@@ -228,6 +234,7 @@ export interface ItemSettingsData {
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-s22-gbl-nologo-2026.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-yampers-paw-prints-ticket-nologo-2025.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F3b085206_PGO-MCS_10th_Anniversary_Celebration_TICKET_v2-1024x576.jpg"
+			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F871eef71_PGO-MCS_GMAX_Rillaboom_Max_Battle_Day_v1-1024x576-nologo.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F9398cb22_PGO-MCS_Skarmory_Super_Mega_Raid_Day_v4-1024x576.jpg"
 			| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fe2400534_20260511_pgo_s23_ShinyShaymin_1024x576_nologo.jpg"
 			| "https://storage.googleapis.com/prod-public-images/1024x512.jpg";
@@ -240,6 +247,7 @@ export interface ItemSettingsData {
 			| "event_datetime_range_key_ENTEI_SHADOW_RAID_DAY"
 			| "event_datetime_range_key_fashionRaidDay_s22"
 			| "event_datetime_range_key_FinalJustice2025"
+			| "event_datetime_range_key_gmaxRillaboom26"
 			| "event_datetime_range_key_GOTour2026"
 			| "event_datetime_range_key_IntoTDepths26"
 			| "event_datetime_range_key_MegaFalinksRaidDay"
@@ -276,7 +284,8 @@ export interface ItemSettingsData {
 			| "2026-07-06T20:00:00"
 			| "2026-07-18T17:00:00"
 			| "2026-07-26T20:00:00"
-			| "2026-07-27T20:00:00";
+			| "2026-07-27T20:00:00"
+			| "2026-08-01T17:00:00";
 		eventStartTime:
 			| "2023-10-09T10:00:00"
 			| "2023-10-15T10:00:00"
@@ -302,7 +311,8 @@ export interface ItemSettingsData {
 			| "2026-07-04T14:00:00"
 			| "2026-07-18T14:00:00"
 			| "2026-07-21T10:00:00"
-			| "2026-07-25T10:00:00";
+			| "2026-07-25T10:00:00"
+			| "2026-08-01T14:00:00";
 		giftable?: boolean;
 		giftItem?:
 			| number
@@ -339,6 +349,8 @@ export interface ItemSettingsData {
 					| "ITEM_LUCKY_EGG"
 					| "ITEM_MASTER_BALL"
 					| "ITEM_MAX_BOOST"
+					| "ITEM_MOVE_REROLL_OTHER_SPECIAL_ATTACK_A"
+					| "ITEM_MP"
 					| "ITEM_PAID_RAID_TICKET"
 					| "ITEM_STAR_PIECE"
 					| "ITEM_XL_RARE_CANDY";
@@ -381,6 +393,7 @@ export interface ItemSettingsData {
 					| "LATIAS"
 					| "LATIOS"
 					| "LOTAD"
+					| "RAYQUAZA"
 					| "ROCKRUFF"
 					| "SHAYMIN"
 					| "YAMPER"
@@ -416,6 +429,9 @@ export interface ItemSettingsData {
 			| "item_event_ticket_pink_desc_CDC_Deino26"
 			| "item_event_ticket_pink_desc_MegaRayquaza26"
 			| "item_event_ticket_pink_desc_WaterRRD26"
+			| "item_event_ticket_pink_details_MegaRayquaza26"
+			| "ITEM_EVENT_TICKET_S23_2026_08_desc_gmaxRillaboom26"
+			| "ITEM_EVENT_TICKET_S23_2026_08_details_gmaxRillaboom26"
 			| "item_global_event_ticket_details_GOTour2026"
 			| "item_ticket_city_safari_00_desc"
 			| "item_ticket_city_safari_01_desc"
@@ -429,6 +445,7 @@ export interface ItemSettingsData {
 			| "text_rewards_key_ENTEI_SHADOW_RAID_DAY"
 			| "text_rewards_key_fashionRaidDay26"
 			| "text_rewards_key_FinalJustice2025"
+			| "text_rewards_key_gmaxRillaboom26"
 			| "text_rewards_key_GOTour2026"
 			| "text_rewards_key_IntoTDepths26"
 			| "text_rewards_key_masterball25"
@@ -518,6 +535,7 @@ export interface ItemSettingsData {
 		| "general1.ticket.1_10THPARTY0726_title"
 		| "general1.ticket.2_MegaRayquaza_title"
 		| "general1.ticket.2_WaterRRD26_title"
+		| "general1.ticket.4_gmaxRillaboom26_title"
 		| "general1.ticket.4_Riolu0426_title"
 		| "general1.ticket.5_IntoTDepths26_title"
 		| "general1.ticket.5.ENTEI_SHADOW_RAID_DAY"

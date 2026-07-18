@@ -120,6 +120,33 @@ const (
 	LocationCardSettingsTemplateIDLcJapanStampRally17                                     LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_17"
 	LocationCardSettingsTemplateIDLcJapanStampRally18                                     LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_18"
 	LocationCardSettingsTemplateIDLcJejuStampRally                                        LocationCardSettingsTemplateID = "LC_JEJU_STAMP_RALLY"
+	LocationCardSettingsTemplateIDLcNt1                                                   LocationCardSettingsTemplateID = "LC_NT_1"
+	LocationCardSettingsTemplateIDLcNt2                                                   LocationCardSettingsTemplateID = "LC_NT_2"
+	LocationCardSettingsTemplateIDLcNt3                                                   LocationCardSettingsTemplateID = "LC_NT_3"
+	LocationCardSettingsTemplateIDLcNt4                                                   LocationCardSettingsTemplateID = "LC_NT_4"
+	LocationCardSettingsTemplateIDLcNt5                                                   LocationCardSettingsTemplateID = "LC_NT_5"
+	LocationCardSettingsTemplateIDLcNt6                                                   LocationCardSettingsTemplateID = "LC_NT_6"
+	LocationCardSettingsTemplateIDLcNt7                                                   LocationCardSettingsTemplateID = "LC_NT_7"
+	LocationCardSettingsTemplateIDLcNt8                                                   LocationCardSettingsTemplateID = "LC_NT_8"
+	LocationCardSettingsTemplateIDLcNt9                                                   LocationCardSettingsTemplateID = "LC_NT_9"
+	LocationCardSettingsTemplateIDLcNt10                                                  LocationCardSettingsTemplateID = "LC_NT_10"
+	LocationCardSettingsTemplateIDLcNt11                                                  LocationCardSettingsTemplateID = "LC_NT_11"
+	LocationCardSettingsTemplateIDLcNt12                                                  LocationCardSettingsTemplateID = "LC_NT_12"
+	LocationCardSettingsTemplateIDLcNt13                                                  LocationCardSettingsTemplateID = "LC_NT_13"
+	LocationCardSettingsTemplateIDLcNt14                                                  LocationCardSettingsTemplateID = "LC_NT_14"
+	LocationCardSettingsTemplateIDLcNt15                                                  LocationCardSettingsTemplateID = "LC_NT_15"
+	LocationCardSettingsTemplateIDLcNt16                                                  LocationCardSettingsTemplateID = "LC_NT_16"
+	LocationCardSettingsTemplateIDLcNt17                                                  LocationCardSettingsTemplateID = "LC_NT_17"
+	LocationCardSettingsTemplateIDLcNt18                                                  LocationCardSettingsTemplateID = "LC_NT_18"
+	LocationCardSettingsTemplateIDLcNt19                                                  LocationCardSettingsTemplateID = "LC_NT_19"
+	LocationCardSettingsTemplateIDLcNt20                                                  LocationCardSettingsTemplateID = "LC_NT_20"
+	LocationCardSettingsTemplateIDLcNt21                                                  LocationCardSettingsTemplateID = "LC_NT_21"
+	LocationCardSettingsTemplateIDLcNt22                                                  LocationCardSettingsTemplateID = "LC_NT_22"
+	LocationCardSettingsTemplateIDLcNt23                                                  LocationCardSettingsTemplateID = "LC_NT_23"
+	LocationCardSettingsTemplateIDLcNt24                                                  LocationCardSettingsTemplateID = "LC_NT_24"
+	LocationCardSettingsTemplateIDLcNt25                                                  LocationCardSettingsTemplateID = "LC_NT_25"
+	LocationCardSettingsTemplateIDLcNt26                                                  LocationCardSettingsTemplateID = "LC_NT_26"
+	LocationCardSettingsTemplateIDLcNt27                                                  LocationCardSettingsTemplateID = "LC_NT_27"
 	LocationCardSettingsTemplateIDLcPokelidAichi                                          LocationCardSettingsTemplateID = "LC_POKELID_AICHI"
 	LocationCardSettingsTemplateIDLcPokelidAkita                                          LocationCardSettingsTemplateID = "LC_POKELID_AKITA"
 	LocationCardSettingsTemplateIDLcPokelidAomori                                         LocationCardSettingsTemplateID = "LC_POKELID_AOMORI"
@@ -336,6 +363,33 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLcJapanStampRally17,
 	LocationCardSettingsTemplateIDLcJapanStampRally18,
 	LocationCardSettingsTemplateIDLcJejuStampRally,
+	LocationCardSettingsTemplateIDLcNt1,
+	LocationCardSettingsTemplateIDLcNt2,
+	LocationCardSettingsTemplateIDLcNt3,
+	LocationCardSettingsTemplateIDLcNt4,
+	LocationCardSettingsTemplateIDLcNt5,
+	LocationCardSettingsTemplateIDLcNt6,
+	LocationCardSettingsTemplateIDLcNt7,
+	LocationCardSettingsTemplateIDLcNt8,
+	LocationCardSettingsTemplateIDLcNt9,
+	LocationCardSettingsTemplateIDLcNt10,
+	LocationCardSettingsTemplateIDLcNt11,
+	LocationCardSettingsTemplateIDLcNt12,
+	LocationCardSettingsTemplateIDLcNt13,
+	LocationCardSettingsTemplateIDLcNt14,
+	LocationCardSettingsTemplateIDLcNt15,
+	LocationCardSettingsTemplateIDLcNt16,
+	LocationCardSettingsTemplateIDLcNt17,
+	LocationCardSettingsTemplateIDLcNt18,
+	LocationCardSettingsTemplateIDLcNt19,
+	LocationCardSettingsTemplateIDLcNt20,
+	LocationCardSettingsTemplateIDLcNt21,
+	LocationCardSettingsTemplateIDLcNt22,
+	LocationCardSettingsTemplateIDLcNt23,
+	LocationCardSettingsTemplateIDLcNt24,
+	LocationCardSettingsTemplateIDLcNt25,
+	LocationCardSettingsTemplateIDLcNt26,
+	LocationCardSettingsTemplateIDLcNt27,
 	LocationCardSettingsTemplateIDLcPokelidAichi,
 	LocationCardSettingsTemplateIDLcPokelidAkita,
 	LocationCardSettingsTemplateIDLcPokelidAomori,

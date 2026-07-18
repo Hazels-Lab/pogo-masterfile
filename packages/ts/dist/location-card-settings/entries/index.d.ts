@@ -9,6 +9,7 @@ import type { LocationCardSettingsCrMasterfileEntry } from "./cr";
 import type { LocationCardSettingsIdMasterfileEntry } from "./id";
 import type { LocationCardSettingsJapanMasterfileEntry } from "./japan";
 import type { LocationCardSettingsJejuMasterfileEntry } from "./jeju";
+import type { LocationCardSettingsNtMasterfileEntry } from "./nt";
 import type { LocationCardSettingsPokelidMasterfileEntry } from "./pokelid";
 import type { LocationCardSettingsSpecialMasterfileEntry } from "./special";
 import type { LocationCardSettingsSpecialbackgroundMasterfileEntry } from "./specialbackground";
@@ -23,6 +24,7 @@ export type * from "./cr";
 export type * from "./id";
 export type * from "./japan";
 export type * from "./jeju";
+export type * from "./nt";
 export type * from "./pokelid";
 export type * from "./special";
 export type * from "./specialbackground";
@@ -38,6 +40,7 @@ export type LocationCardSettingsMasterfileEntry =
 	| LocationCardSettingsIdMasterfileEntry
 	| LocationCardSettingsJapanMasterfileEntry
 	| LocationCardSettingsJejuMasterfileEntry
+	| LocationCardSettingsNtMasterfileEntry
 	| LocationCardSettingsPokelidMasterfileEntry
 	| LocationCardSettingsSpecialMasterfileEntry
 	| LocationCardSettingsSpecialbackgroundMasterfileEntry

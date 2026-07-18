@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1163 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1164 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -50,6 +50,7 @@ export interface IapItemDisplayData {
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F1e924512_PGO-MCS_GO_Fest_2026_EMEA_Global_LiveOp_v3-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F07b0cffa_PGO-MCS_2026_Ultra_Unlock_01_v6-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F68bf81f3_PGO-MCS_GO_Pass_Special_Anniversary_Pikachu_Celebration_v1-1024x576.jpg"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F97c2eaee_PGO-MCS_Raichu_Super_Mega_Raid_Day_v3-1024x576-nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F73951fa4_20260428_pgo_s23_gopass_june_ticket_1024x576_nologo%20(1).jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F53190080_PGO-MCS_Flying_Taxi_TICKET_v1-1024x576.jpg"
@@ -136,6 +137,7 @@ export interface IapItemDisplayData {
 		| "2026-07-04T17:00:00"
 		| "2026-07-06T20:00:00"
 		| "2026-07-14T23:59:59"
+		| "2026-07-18T17:00:00"
 		| "2026-07-22T20:00:00"
 		| "2026-07-27T20:00:00"
 		| "2026-08-06T10:00:00";
@@ -184,6 +186,7 @@ export interface IapItemDisplayData {
 		| "1783184400000"
 		| "1783368000000"
 		| "1784073599000"
+		| "1784394000000"
 		| "1784750400000"
 		| "1785182400000"
 		| "1786010400000";

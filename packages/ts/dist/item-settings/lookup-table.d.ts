@@ -60,6 +60,9 @@ import type {
 	ItemSettingsItemEventTicketS23202604ToGift,
 	ItemSettingsItemEventTicketS23202606,
 	ItemSettingsItemEventTicketS23202607,
+	ItemSettingsItemEventTicketS23202607ToGift,
+	ItemSettingsItemEventTicketS23202608,
+	ItemSettingsItemEventTicketS23202608ToGift,
 	ItemSettingsItemEventTicketS23202609,
 	ItemSettingsItemEvergreenTicket,
 	ItemSettingsItemEvergreenTicketToGift,
@@ -216,6 +219,9 @@ export interface ItemSettingsLookup {
 	ITEM_EVENT_TICKET_S23_2026_04_TO_GIFT: ItemSettingsItemEventTicketS23202604ToGift;
 	ITEM_EVENT_TICKET_S23_2026_06: ItemSettingsItemEventTicketS23202606;
 	ITEM_EVENT_TICKET_S23_2026_07: ItemSettingsItemEventTicketS23202607;
+	ITEM_EVENT_TICKET_S23_2026_07_TO_GIFT: ItemSettingsItemEventTicketS23202607ToGift;
+	ITEM_EVENT_TICKET_S23_2026_08: ItemSettingsItemEventTicketS23202608;
+	ITEM_EVENT_TICKET_S23_2026_08_TO_GIFT: ItemSettingsItemEventTicketS23202608ToGift;
 	ITEM_EVENT_TICKET_S23_2026_09: ItemSettingsItemEventTicketS23202609;
 	ITEM_EVERGREEN_TICKET: ItemSettingsItemEvergreenTicket;
 	ITEM_EVERGREEN_TICKET_TO_GIFT: ItemSettingsItemEvergreenTicketToGift;

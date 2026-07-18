@@ -14,6 +14,7 @@ import type {
 	FeatureGateEventTicketDatetimeRange,
 	FeatureGateFriendshipResyncOnRead,
 	FeatureGateGamesiteWebviewNearbyButtons,
+	FeatureGateHideCampfireMapButtons,
 	FeatureGateMega2026,
 	FeatureGateSeafGetMapObjectsRateLimiter,
 	FeatureGateUpdateTicketsString,
@@ -34,6 +35,7 @@ export interface FeatureGateLookup {
 	EVENT_TICKET_DATETIME_RANGE_FEATURE_GATE: FeatureGateEventTicketDatetimeRange;
 	FRIENDSHIP_RESYNC_ON_READ_FEATURE_GATE: FeatureGateFriendshipResyncOnRead;
 	GAMESITE_WEBVIEW_NEARBY_BUTTONS_FEATURE_GATE: FeatureGateGamesiteWebviewNearbyButtons;
+	HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE: FeatureGateHideCampfireMapButtons;
 	MEGA_2026_FEATURE_GATE: FeatureGateMega2026;
 	SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE: FeatureGateSeafGetMapObjectsRateLimiter;
 	UPDATE_TICKETS_STRING_FEATURE_GATE: FeatureGateUpdateTicketsString;

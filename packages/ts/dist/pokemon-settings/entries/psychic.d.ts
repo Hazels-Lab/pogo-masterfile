@@ -1381,6 +1381,7 @@ export type PokemonSettingsV0150PokemonMewtwo = S<
 			};
 			cinematicMoves: ["PSYCHIC", "THUNDERBOLT", "ICE_BEAM", "FOCUS_BLAST", "FLAMETHROWER"];
 			eliteCinematicMove: ["PSYSTRIKE", "SHADOW_BALL", "HYPER_BEAM"];
+			eliteQuickMove: ["COUNTER_FAST"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 3;
@@ -1600,6 +1601,7 @@ export type PokemonSettingsV0150PokemonMewtwoNormal = S<
 			};
 			cinematicMoves: ["PSYCHIC", "THUNDERBOLT", "ICE_BEAM", "FOCUS_BLAST", "FLAMETHROWER"];
 			eliteCinematicMove: ["PSYSTRIKE", "SHADOW_BALL", "HYPER_BEAM"];
+			eliteQuickMove: ["COUNTER_FAST"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 3;

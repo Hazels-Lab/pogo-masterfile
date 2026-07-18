@@ -9,6 +9,7 @@ export type LocationCardSettingsSpecialbackground10ani2026 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoFest2024_wormhole_moon";
+			locationCard: "LC_SPECIALBACKGROUND_10ANI2026";
 			vfxAddress: "bgfx_UltraWormhole";
 		}
 	>
@@ -19,6 +20,7 @@ export type LocationCardSettingsSpecialbackground2024Decembercdrecap = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_2024_decemberCdRecap";
+			locationCard: "LC_SPECIALBACKGROUND_2024_DECEMBERCDRECAP";
 		}
 	>
 >;
@@ -28,6 +30,7 @@ export type LocationCardSettingsSpecialbackground2024GlobalGofestRadiance001 = S
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoFest2024_radiance";
+			locationCard: "LC_SPECIALBACKGROUND_2024_GLOBAL_GOFEST_RADIANCE_001";
 			vfxAddress: "bgfx_Sun";
 		}
 	>
@@ -38,6 +41,7 @@ export type LocationCardSettingsSpecialbackground2024GlobalGofestUmbra001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoFest2024_umbra";
+			locationCard: "LC_SPECIALBACKGROUND_2024_GLOBAL_GOFEST_UMBRA_001";
 			vfxAddress: "bgfx_Moon";
 		}
 	>
@@ -48,6 +52,7 @@ export type LocationCardSettingsSpecialbackground2024GlobalGowa001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GOWA_fukuoka";
+			locationCard: "LC_SPECIALBACKGROUND_2024_GLOBAL_GOWA_001";
 		}
 	>
 >;
@@ -57,6 +62,7 @@ export type LocationCardSettingsSpecialbackground20259thanniversary = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_9thAnniversary";
+			locationCard: "LC_SPECIALBACKGROUND_2025_9THANNIVERSARY";
 			vfxAddress: "bgfx_9thAnni";
 		}
 	>
@@ -67,6 +73,7 @@ export type LocationCardSettingsSpecialbackground2025GlobalEnigma001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoTour2025_black";
+			locationCard: "LC_SPECIALBACKGROUND_2025_GLOBAL_ENIGMA_001";
 			vfxAddress: "bgfx_N";
 		}
 	>
@@ -77,6 +84,7 @@ export type LocationCardSettingsSpecialbackground2025GlobalGofestDd001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoFest2025_Eternatus";
+			locationCard: "LC_SPECIALBACKGROUND_2025_GLOBAL_GOFEST_DD_001";
 			vfxAddress: "bgfx_goFest_2025_eternatus";
 		}
 	>
@@ -87,6 +95,7 @@ export type LocationCardSettingsSpecialbackground2025GlobalGofestRegi001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoFest2025";
+			locationCard: "LC_SPECIALBACKGROUND_2025_GLOBAL_GOFEST_REGI_001";
 			vfxAddress: "bgfx_goFest_2025_rock_001";
 		}
 	>
@@ -97,6 +106,7 @@ export type LocationCardSettingsSpecialbackground2025GlobalGofestRegi002 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoFest2025";
+			locationCard: "LC_SPECIALBACKGROUND_2025_GLOBAL_GOFEST_REGI_002";
 			vfxAddress: "bgfx_goFest_2025_rock_002";
 		}
 	>
@@ -107,6 +117,7 @@ export type LocationCardSettingsSpecialbackground2025GlobalGofestRegi003 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoFest2025";
+			locationCard: "LC_SPECIALBACKGROUND_2025_GLOBAL_GOFEST_REGI_003";
 			vfxAddress: "bgfx_goFest_2025_rock_003";
 		}
 	>
@@ -117,6 +128,7 @@ export type LocationCardSettingsSpecialbackground2025GlobalGofestRegi004 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoFest2025";
+			locationCard: "LC_SPECIALBACKGROUND_2025_GLOBAL_GOFEST_REGI_004";
 			vfxAddress: "bgfx_goFest_2025_rock_004";
 		}
 	>
@@ -127,6 +139,7 @@ export type LocationCardSettingsSpecialbackground2025GlobalGofestRegi005 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoFest2025";
+			locationCard: "LC_SPECIALBACKGROUND_2025_GLOBAL_GOFEST_REGI_005";
 			vfxAddress: "bgfx_goFest_2025_rock_005";
 		}
 	>
@@ -137,6 +150,7 @@ export type LocationCardSettingsSpecialbackground2025GlobalGofestRegi006 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoFest2025";
+			locationCard: "LC_SPECIALBACKGROUND_2025_GLOBAL_GOFEST_REGI_006";
 			vfxAddress: "bgfx_goFest_2025_rock_006";
 		}
 	>
@@ -147,6 +161,7 @@ export type LocationCardSettingsSpecialbackground2025GlobalGofestShield001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoTour2025_black";
+			locationCard: "LC_SPECIALBACKGROUND_2025_GLOBAL_GOFEST_SHIELD_001";
 			vfxAddress: "bgfx_goFest_2025_shield";
 		}
 	>
@@ -157,6 +172,7 @@ export type LocationCardSettingsSpecialbackground2025GlobalGofestShieldCrowned00
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoTour2025_black";
+			locationCard: "LC_SPECIALBACKGROUND_2025_GLOBAL_GOFEST_SHIELD_CROWNED_001";
 			vfxAddress: "bgfx_goFest_2025_shield_c";
 		}
 	>
@@ -167,6 +183,7 @@ export type LocationCardSettingsSpecialbackground2025GlobalGofestSword001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoTour2025_black";
+			locationCard: "LC_SPECIALBACKGROUND_2025_GLOBAL_GOFEST_SWORD_001";
 			vfxAddress: "bgfx_goFest_2025_sword";
 		}
 	>
@@ -177,6 +194,7 @@ export type LocationCardSettingsSpecialbackground2025GlobalGofestSwordCrowned001
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoTour2025_black";
+			locationCard: "LC_SPECIALBACKGROUND_2025_GLOBAL_GOFEST_SWORD_CROWNED_001";
 			vfxAddress: "bgfx_goFest_2025_sword_c";
 		}
 	>
@@ -187,6 +205,7 @@ export type LocationCardSettingsSpecialbackground2025GlobalGotourBlack001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoTour2025_black";
+			locationCard: "LC_SPECIALBACKGROUND_2025_GLOBAL_GOTOUR_BLACK_001";
 			vfxAddress: "bgfx_Black";
 		}
 	>
@@ -197,6 +216,7 @@ export type LocationCardSettingsSpecialbackground2025GlobalGotourBlackWhite001 =
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoTour2025_black";
+			locationCard: "LC_SPECIALBACKGROUND_2025_GLOBAL_GOTOUR_BLACK_WHITE_001";
 			vfxAddress: "bgfx_Fusion";
 		}
 	>
@@ -207,6 +227,7 @@ export type LocationCardSettingsSpecialbackground2025GlobalGotourWhite001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoTour2025_black";
+			locationCard: "LC_SPECIALBACKGROUND_2025_GLOBAL_GOTOUR_WHITE_001";
 			vfxAddress: "bgfx_White";
 		}
 	>
@@ -217,6 +238,7 @@ export type LocationCardSettingsSpecialbackground2025GowaGlobal = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_gowa2025_global";
+			locationCard: "LC_SPECIALBACKGROUND_2025_GOWA_GLOBAL";
 			vfxAddress: "bgfx_gowa";
 		}
 	>
@@ -227,6 +249,7 @@ export type LocationCardSettingsSpecialbackground2025S18 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_Season18_MightAndMastery";
+			locationCard: "LC_SPECIALBACKGROUND_2025_S18";
 			vfxAddress: "bgfx_MightAndMastery";
 		}
 	>
@@ -237,6 +260,7 @@ export type LocationCardSettingsSpecialbackground2025Season17 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_Season17_DuelDestiny";
+			locationCard: "LC_SPECIALBACKGROUND_2025_SEASON17";
 		}
 	>
 >;
@@ -246,6 +270,7 @@ export type LocationCardSettingsSpecialbackground2025Season19 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_Season19_DelightfulDays";
+			locationCard: "LC_SPECIALBACKGROUND_2025_SEASON19";
 			vfxAddress: "bgfx_DelightfulDays";
 		}
 	>
@@ -256,6 +281,7 @@ export type LocationCardSettingsSpecialbackground2025Season20 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_Season20_TalesOfTransformation";
+			locationCard: "LC_SPECIALBACKGROUND_2025_SEASON20";
 			vfxAddress: "bgfx_TalesOfTransformation";
 		}
 	>
@@ -266,6 +292,7 @@ export type LocationCardSettingsSpecialbackground2026Arraia = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_arraia_2026";
+			locationCard: "LC_SPECIALBACKGROUND_2026_ARRAIA";
 			vfxAddress: "bgfx_arraia_2026";
 		}
 	>
@@ -276,6 +303,7 @@ export type LocationCardSettingsSpecialbackground2026Communityday = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_Community_2026";
+			locationCard: "LC_SPECIALBACKGROUND_2026_COMMUNITYDAY";
 			vfxAddress: "bgfx_CommunityDay_2026";
 		}
 	>
@@ -286,6 +314,7 @@ export type LocationCardSettingsSpecialbackground2026GlobalDiamond001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoTour2026_diamond";
+			locationCard: "LC_SPECIALBACKGROUND_2026_GLOBAL_DIAMOND_001";
 			vfxAddress: "bgfx_Diamond";
 		}
 	>
@@ -296,6 +325,7 @@ export type LocationCardSettingsSpecialbackground2026GlobalGofest001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoFest2026_global";
+			locationCard: "LC_SPECIALBACKGROUND_2026_GLOBAL_GOFEST_001";
 			vfxAddress: "bgfx_goFest_2026_global";
 		}
 	>
@@ -306,6 +336,7 @@ export type LocationCardSettingsSpecialbackground2026GlobalGold001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoTour2026_gold";
+			locationCard: "LC_SPECIALBACKGROUND_2026_GLOBAL_GOLD_001";
 			vfxAddress: "bgfx_Gold";
 		}
 	>
@@ -316,6 +347,7 @@ export type LocationCardSettingsSpecialbackground2026GlobalMega001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoTour2026_mega";
+			locationCard: "LC_SPECIALBACKGROUND_2026_GLOBAL_MEGA_001";
 			vfxAddress: "bgfx_Mega";
 		}
 	>
@@ -326,6 +358,7 @@ export type LocationCardSettingsSpecialbackground2026GlobalPearl001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoTour2026_pearl";
+			locationCard: "LC_SPECIALBACKGROUND_2026_GLOBAL_PEARL_001";
 			vfxAddress: "bgfx_Pearl";
 		}
 	>
@@ -336,6 +369,7 @@ export type LocationCardSettingsSpecialbackground2026GlobalRuby001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoTour2026_ruby";
+			locationCard: "LC_SPECIALBACKGROUND_2026_GLOBAL_RUBY_001";
 			vfxAddress: "bgfx_Ruby";
 		}
 	>
@@ -346,6 +380,7 @@ export type LocationCardSettingsSpecialbackground2026GlobalSapphire001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoTour2026_sapphire";
+			locationCard: "LC_SPECIALBACKGROUND_2026_GLOBAL_SAPPHIRE_001";
 			vfxAddress: "bgfx_Sapphire";
 		}
 	>
@@ -356,6 +391,7 @@ export type LocationCardSettingsSpecialbackground2026GlobalSilver001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoTour2026_silver";
+			locationCard: "LC_SPECIALBACKGROUND_2026_GLOBAL_SILVER_001";
 			vfxAddress: "bgfx_Silver";
 		}
 	>
@@ -366,6 +402,7 @@ export type LocationCardSettingsSpecialbackground2026GlobalX001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoTour2026_x";
+			locationCard: "LC_SPECIALBACKGROUND_2026_GLOBAL_X_001";
 			vfxAddress: "bgfx_X";
 		}
 	>
@@ -376,6 +413,7 @@ export type LocationCardSettingsSpecialbackground2026GlobalY001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoTour2026_y";
+			locationCard: "LC_SPECIALBACKGROUND_2026_GLOBAL_Y_001";
 			vfxAddress: "bgfx_Y";
 		}
 	>
@@ -386,6 +424,7 @@ export type LocationCardSettingsSpecialbackground2026Mewtwo001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoFest2026_mewtwo";
+			locationCard: "LC_SPECIALBACKGROUND_2026_MEWTWO_001";
 			vfxAddress: "bgfx_goFest_2026_mewtwo_001";
 		}
 	>
@@ -396,6 +435,7 @@ export type LocationCardSettingsSpecialbackground2026Mewtwo002 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoFest2026_mewtwo";
+			locationCard: "LC_SPECIALBACKGROUND_2026_MEWTWO_002";
 			vfxAddress: "bgfx_goFest_2026_mewtwo_002";
 		}
 	>
@@ -406,6 +446,7 @@ export type LocationCardSettingsSpecialbackgroundCon2025 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_Concierge2025";
+			locationCard: "LC_SPECIALBACKGROUND_CON2025";
 		}
 	>
 >;
@@ -415,6 +456,7 @@ export type LocationCardSettingsSpecialbackgroundExtra202501 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_FestivalofColors_2026";
+			locationCard: "LC_SPECIALBACKGROUND_EXTRA_2025_01";
 			vfxAddress: "bgfx_holi_2026";
 		}
 	>
@@ -424,6 +466,7 @@ export type LocationCardSettingsSpecialbackgroundExtra202502 = S<
 		"LC_SPECIALBACKGROUND_EXTRA_2025_02",
 		{
 			imageUrl: "lc_taipeiFlowerFestival_2026";
+			locationCard: "LC_SPECIALBACKGROUND_EXTRA_2025_02";
 		}
 	>
 >;
@@ -433,6 +476,7 @@ export type LocationCardSettingsSpecialbackgroundGg2026 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_9thAnniversary";
+			locationCard: "LC_SPECIALBACKGROUND_GG2026";
 			vfxAddress: "bgfx_10thAnni";
 		}
 	>
@@ -442,6 +486,7 @@ export type LocationCardSettingsSpecialbackgroundKr2025Lotte01 = S<
 		"LC_SPECIALBACKGROUND_KR2025_LOTTE_01",
 		{
 			imageUrl: "lc_LotteGiants";
+			locationCard: "LC_SPECIALBACKGROUND_KR2025_LOTTE_01";
 		}
 	>
 >;
@@ -451,6 +496,7 @@ export type LocationCardSettingsSpecialbackgroundLego202601 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_lego_2026";
+			locationCard: "LC_SPECIALBACKGROUND_LEGO_2026_01";
 		}
 	>
 >;
@@ -460,6 +506,7 @@ export type LocationCardSettingsSpecialbackgroundObservatoryExhibitionTour = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_ObservatoryExhibitionTour";
+			locationCard: "LC_SPECIALBACKGROUND_OBSERVATORY_EXHIBITION_TOUR";
 		}
 	>
 >;
@@ -469,6 +516,7 @@ export type LocationCardSettingsSpecialbackgroundPok2026 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "lc_pokopia2026";
+			locationCard: "LC_SPECIALBACKGROUND_POK2026";
 		}
 	>
 >;
@@ -478,6 +526,7 @@ export type LocationCardSettingsSpecialbackgroundTeamBlue = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_TeamLeader_blue";
+			locationCard: "LC_SPECIALBACKGROUND_TEAM_BLUE";
 			vfxAddress: "bgfx_TeamLeader_blue";
 		}
 	>
@@ -488,6 +537,7 @@ export type LocationCardSettingsSpecialbackgroundTeamRed = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_TeamLeader_red";
+			locationCard: "LC_SPECIALBACKGROUND_TEAM_RED";
 			vfxAddress: "bgfx_TeamLeader_red";
 		}
 	>
@@ -498,6 +548,7 @@ export type LocationCardSettingsSpecialbackgroundTeamYellow = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_TeamLeader_yellow";
+			locationCard: "LC_SPECIALBACKGROUND_TEAM_YELLOW";
 			vfxAddress: "bgfx_TeamLeader_yellow";
 		}
 	>

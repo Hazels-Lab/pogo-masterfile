@@ -305,14 +305,14 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "typeEffective":
-		var e type_effective.TypeEffectiveEntry
+	case "featureGate":
+		var e feature_gate.FeatureGateEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
 		return e, nil
-	case "featureGate":
-		var e feature_gate.FeatureGateEntry
+	case "typeEffective":
+		var e type_effective.TypeEffectiveEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}

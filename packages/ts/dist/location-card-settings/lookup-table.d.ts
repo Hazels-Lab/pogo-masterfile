@@ -116,6 +116,33 @@ import type {
 	LocationCardSettingsJapanStampRally17,
 	LocationCardSettingsJapanStampRally18,
 	LocationCardSettingsJejuStampRally,
+	LocationCardSettingsNt1,
+	LocationCardSettingsNt2,
+	LocationCardSettingsNt3,
+	LocationCardSettingsNt4,
+	LocationCardSettingsNt5,
+	LocationCardSettingsNt6,
+	LocationCardSettingsNt7,
+	LocationCardSettingsNt8,
+	LocationCardSettingsNt9,
+	LocationCardSettingsNt10,
+	LocationCardSettingsNt11,
+	LocationCardSettingsNt12,
+	LocationCardSettingsNt13,
+	LocationCardSettingsNt14,
+	LocationCardSettingsNt15,
+	LocationCardSettingsNt16,
+	LocationCardSettingsNt17,
+	LocationCardSettingsNt18,
+	LocationCardSettingsNt19,
+	LocationCardSettingsNt20,
+	LocationCardSettingsNt21,
+	LocationCardSettingsNt22,
+	LocationCardSettingsNt23,
+	LocationCardSettingsNt24,
+	LocationCardSettingsNt25,
+	LocationCardSettingsNt26,
+	LocationCardSettingsNt27,
 	LocationCardSettingsPokelidAichi,
 	LocationCardSettingsPokelidAkita,
 	LocationCardSettingsPokelidAomori,
@@ -332,6 +359,33 @@ export interface LocationCardSettingsLookup {
 	LC_JAPAN_STAMP_RALLY_17: LocationCardSettingsJapanStampRally17;
 	LC_JAPAN_STAMP_RALLY_18: LocationCardSettingsJapanStampRally18;
 	LC_JEJU_STAMP_RALLY: LocationCardSettingsJejuStampRally;
+	LC_NT_1: LocationCardSettingsNt1;
+	LC_NT_2: LocationCardSettingsNt2;
+	LC_NT_3: LocationCardSettingsNt3;
+	LC_NT_4: LocationCardSettingsNt4;
+	LC_NT_5: LocationCardSettingsNt5;
+	LC_NT_6: LocationCardSettingsNt6;
+	LC_NT_7: LocationCardSettingsNt7;
+	LC_NT_8: LocationCardSettingsNt8;
+	LC_NT_9: LocationCardSettingsNt9;
+	LC_NT_10: LocationCardSettingsNt10;
+	LC_NT_11: LocationCardSettingsNt11;
+	LC_NT_12: LocationCardSettingsNt12;
+	LC_NT_13: LocationCardSettingsNt13;
+	LC_NT_14: LocationCardSettingsNt14;
+	LC_NT_15: LocationCardSettingsNt15;
+	LC_NT_16: LocationCardSettingsNt16;
+	LC_NT_17: LocationCardSettingsNt17;
+	LC_NT_18: LocationCardSettingsNt18;
+	LC_NT_19: LocationCardSettingsNt19;
+	LC_NT_20: LocationCardSettingsNt20;
+	LC_NT_21: LocationCardSettingsNt21;
+	LC_NT_22: LocationCardSettingsNt22;
+	LC_NT_23: LocationCardSettingsNt23;
+	LC_NT_24: LocationCardSettingsNt24;
+	LC_NT_25: LocationCardSettingsNt25;
+	LC_NT_26: LocationCardSettingsNt26;
+	LC_NT_27: LocationCardSettingsNt27;
 	LC_POKELID_AICHI: LocationCardSettingsPokelidAichi;
 	LC_POKELID_AKITA: LocationCardSettingsPokelidAkita;
 	LC_POKELID_AOMORI: LocationCardSettingsPokelidAomori;

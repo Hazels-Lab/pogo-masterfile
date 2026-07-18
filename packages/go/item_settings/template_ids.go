@@ -64,6 +64,9 @@ const (
 	ItemSettingsTemplateIDItemEventTicketS23202604ToGift    ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_04_TO_GIFT"
 	ItemSettingsTemplateIDItemEventTicketS23202606          ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_06"
 	ItemSettingsTemplateIDItemEventTicketS23202607          ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_07"
+	ItemSettingsTemplateIDItemEventTicketS23202607ToGift    ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_07_TO_GIFT"
+	ItemSettingsTemplateIDItemEventTicketS23202608          ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_08"
+	ItemSettingsTemplateIDItemEventTicketS23202608ToGift    ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_08_TO_GIFT"
 	ItemSettingsTemplateIDItemEventTicketS23202609          ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_09"
 	ItemSettingsTemplateIDItemEvergreenTicket               ItemSettingsTemplateID = "ITEM_EVERGREEN_TICKET"
 	ItemSettingsTemplateIDItemEvergreenTicketToGift         ItemSettingsTemplateID = "ITEM_EVERGREEN_TICKET_TO_GIFT"
@@ -220,6 +223,9 @@ var ItemSettingsTemplateIDValues = [...]ItemSettingsTemplateID{
 	ItemSettingsTemplateIDItemEventTicketS23202604ToGift,
 	ItemSettingsTemplateIDItemEventTicketS23202606,
 	ItemSettingsTemplateIDItemEventTicketS23202607,
+	ItemSettingsTemplateIDItemEventTicketS23202607ToGift,
+	ItemSettingsTemplateIDItemEventTicketS23202608,
+	ItemSettingsTemplateIDItemEventTicketS23202608ToGift,
 	ItemSettingsTemplateIDItemEventTicketS23202609,
 	ItemSettingsTemplateIDItemEvergreenTicket,
 	ItemSettingsTemplateIDItemEvergreenTicketToGift,

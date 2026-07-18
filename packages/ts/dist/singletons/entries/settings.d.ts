@@ -270,7 +270,7 @@ export interface BreadBattleClientSettings {
 			maxPlayersPerBreadDoughLobby: 100;
 			maxPlayersPerBreadLobby: 4;
 			maxPlayersToPrepareBreadDoughLobby: 98;
-			maxRemoteBreadBattlePassesAllowed: 10;
+			maxRemoteBreadBattlePassesAllowed: 20;
 			maxRemotePlayersPerBreadDoughLobby: 100;
 			maxRemotePlayersPerBreadLobby: 4;
 			minPlayersToPrepareBreadLobby: 1;
@@ -5497,7 +5497,7 @@ export interface SquashSettings {
 	data: {
 		templateId: "REMOTE_RAID_LIMIT_SETTINGS";
 		squashSettings: {
-			dailySquashLimit: 10;
+			dailySquashLimit: 20;
 			enabled: true;
 		};
 	};

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 17 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 18 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -144,6 +144,15 @@ export type FeatureGateGamesiteWebviewNearbyButtons = S<
 		}
 	>
 >;
+export type FeatureGateHideCampfireMapButtons = S<
+	FeatureGate<
+		"HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE",
+		{
+			rolloutPercentage: 100;
+			status: 1;
+		}
+	>
+>;
 export type FeatureGateMega2026 = S<
 	FeatureGate<
 		"MEGA_2026_FEATURE_GATE",
@@ -249,6 +258,7 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateEventTicketDatetimeRange
 	| FeatureGateFriendshipResyncOnRead
 	| FeatureGateGamesiteWebviewNearbyButtons
+	| FeatureGateHideCampfireMapButtons
 	| FeatureGateMega2026
 	| FeatureGateSeafGetMapObjectsRateLimiter
 	| FeatureGateUpdateTicketsString
