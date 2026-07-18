@@ -33,6 +33,8 @@ pub enum FeatureGateTemplateId {
     FriendshipResyncOnReadFeatureGate,
     #[serde(rename = "GAMESITE_WEBVIEW_NEARBY_BUTTONS_FEATURE_GATE")]
     GamesiteWebviewNearbyButtonsFeatureGate,
+    #[serde(rename = "HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE")]
+    HideCampfireMapButtonsFeatureGate,
     #[serde(rename = "MEGA_2026_FEATURE_GATE")]
     Mega2026FeatureGate,
     #[serde(rename = "SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE")]

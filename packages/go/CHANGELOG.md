@@ -4,6 +4,45 @@ All notable changes to the Go module are recorded here. The format is based on [
 
 > Note: Go module releases for this package are tagged as `packages/go/vX.Y.Z` (subdirectory-prefixed), per Go's monorepo tagging rules.
 
+## [0.1.21] - 2026-07-18
+
+Automated regeneration from upstream masterfile commit `e7ae9be0a7d857e8ef4b2fc1b50ce42fd4ed9d7d`.
+
+### Added template IDs (32)
+
+- HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE
+- ITEM_EVENT_TICKET_S23_2026_07_TO_GIFT
+- ITEM_EVENT_TICKET_S23_2026_08
+- ITEM_EVENT_TICKET_S23_2026_08_TO_GIFT
+- LC_NT_1
+- LC_NT_10
+- LC_NT_11
+- LC_NT_12
+- LC_NT_13
+- LC_NT_14
+- LC_NT_15
+- LC_NT_16
+- LC_NT_17
+- LC_NT_18
+- LC_NT_19
+- LC_NT_2
+- LC_NT_20
+- LC_NT_21
+- LC_NT_22
+- LC_NT_23
+- LC_NT_24
+- LC_NT_25
+- LC_NT_26
+- LC_NT_27
+- LC_NT_3
+- LC_NT_4
+- LC_NT_5
+- LC_NT_6
+- LC_NT_7
+- LC_NT_8
+- LC_NT_9
+- general2.ticket.5
+
 ## [0.1.20] - 2026-07-15
 
 Automated regeneration from upstream masterfile commit `1ea996dfd48072c0fbf280033d5f6d4a064e01c8`.

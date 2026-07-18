@@ -237,6 +237,60 @@ pub enum LocationCardSettingsTemplateId {
     LcJapanStampRally18,
     #[serde(rename = "LC_JEJU_STAMP_RALLY")]
     LcJejuStampRally,
+    #[serde(rename = "LC_NT_1")]
+    LcNt1,
+    #[serde(rename = "LC_NT_2")]
+    LcNt2,
+    #[serde(rename = "LC_NT_3")]
+    LcNt3,
+    #[serde(rename = "LC_NT_4")]
+    LcNt4,
+    #[serde(rename = "LC_NT_5")]
+    LcNt5,
+    #[serde(rename = "LC_NT_6")]
+    LcNt6,
+    #[serde(rename = "LC_NT_7")]
+    LcNt7,
+    #[serde(rename = "LC_NT_8")]
+    LcNt8,
+    #[serde(rename = "LC_NT_9")]
+    LcNt9,
+    #[serde(rename = "LC_NT_10")]
+    LcNt10,
+    #[serde(rename = "LC_NT_11")]
+    LcNt11,
+    #[serde(rename = "LC_NT_12")]
+    LcNt12,
+    #[serde(rename = "LC_NT_13")]
+    LcNt13,
+    #[serde(rename = "LC_NT_14")]
+    LcNt14,
+    #[serde(rename = "LC_NT_15")]
+    LcNt15,
+    #[serde(rename = "LC_NT_16")]
+    LcNt16,
+    #[serde(rename = "LC_NT_17")]
+    LcNt17,
+    #[serde(rename = "LC_NT_18")]
+    LcNt18,
+    #[serde(rename = "LC_NT_19")]
+    LcNt19,
+    #[serde(rename = "LC_NT_20")]
+    LcNt20,
+    #[serde(rename = "LC_NT_21")]
+    LcNt21,
+    #[serde(rename = "LC_NT_22")]
+    LcNt22,
+    #[serde(rename = "LC_NT_23")]
+    LcNt23,
+    #[serde(rename = "LC_NT_24")]
+    LcNt24,
+    #[serde(rename = "LC_NT_25")]
+    LcNt25,
+    #[serde(rename = "LC_NT_26")]
+    LcNt26,
+    #[serde(rename = "LC_NT_27")]
+    LcNt27,
     #[serde(rename = "LC_POKELID_AICHI")]
     LcPokelidAichi,
     #[serde(rename = "LC_POKELID_AKITA")]

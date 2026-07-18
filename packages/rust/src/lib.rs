@@ -210,8 +210,8 @@ pub enum MasterfileEntry {
     CombatRankingProtoSettings(combat_ranking_proto_settings::CombatRankingProtoSettingsEntry),
     ItemExpirationSettings(item_expiration_settings::ItemExpirationSettingsEntry),
     CombatType(combat_type::CombatTypeEntry),
-    TypeEffective(type_effective::TypeEffectiveEntry),
     FeatureGate(feature_gate::FeatureGateEntry),
+    TypeEffective(type_effective::TypeEffectiveEntry),
     IapCategoryDisplay(iap_category_display::IapCategoryDisplayEntry),
     CodeGateProto(code_gate_proto::CodeGateProtoEntry),
     RecommendedSearchSettings(recommended_search_settings::RecommendedSearchSettingsEntry),
@@ -478,8 +478,8 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::ItemExpirationSettings)
                 }
                 "combatType" => serde_json::from_value(value).map(Self::CombatType),
-                "typeEffective" => serde_json::from_value(value).map(Self::TypeEffective),
                 "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
+                "typeEffective" => serde_json::from_value(value).map(Self::TypeEffective),
                 "iapCategoryDisplay" => serde_json::from_value(value).map(Self::IapCategoryDisplay),
                 "codeGateProto" => serde_json::from_value(value).map(Self::CodeGateProto),
                 "recommendedSearchSettings" => {

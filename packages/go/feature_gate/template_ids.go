@@ -18,6 +18,7 @@ const (
 	FeatureGateTemplateIDEventTicketDatetimeRangeFeatureGate              FeatureGateTemplateID = "EVENT_TICKET_DATETIME_RANGE_FEATURE_GATE"
 	FeatureGateTemplateIDFriendshipResyncOnReadFeatureGate                FeatureGateTemplateID = "FRIENDSHIP_RESYNC_ON_READ_FEATURE_GATE"
 	FeatureGateTemplateIDGamesiteWebviewNearbyButtonsFeatureGate          FeatureGateTemplateID = "GAMESITE_WEBVIEW_NEARBY_BUTTONS_FEATURE_GATE"
+	FeatureGateTemplateIDHideCampfireMapButtonsFeatureGate                FeatureGateTemplateID = "HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE"
 	FeatureGateTemplateIDMega2026FeatureGate                              FeatureGateTemplateID = "MEGA_2026_FEATURE_GATE"
 	FeatureGateTemplateIDSeafGetMapObjectsRateLimiterFeatureGate          FeatureGateTemplateID = "SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE"
 	FeatureGateTemplateIDUpdateTicketsStringFeatureGate                   FeatureGateTemplateID = "UPDATE_TICKETS_STRING_FEATURE_GATE"
@@ -38,6 +39,7 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDEventTicketDatetimeRangeFeatureGate,
 	FeatureGateTemplateIDFriendshipResyncOnReadFeatureGate,
 	FeatureGateTemplateIDGamesiteWebviewNearbyButtonsFeatureGate,
+	FeatureGateTemplateIDHideCampfireMapButtonsFeatureGate,
 	FeatureGateTemplateIDMega2026FeatureGate,
 	FeatureGateTemplateIDSeafGetMapObjectsRateLimiterFeatureGate,
 	FeatureGateTemplateIDUpdateTicketsStringFeatureGate,

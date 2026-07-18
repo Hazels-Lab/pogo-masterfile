@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 41 entries.
+// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 44 entries.
 
 import type { S } from "../../_utils";
 import type { ItemSettings } from "../types";
@@ -1087,17 +1087,127 @@ export type ItemSettingsItemEventTicketS23202607 = S<
 				clientEventStartTimeUtcMs: "1784973600000";
 				detailsLinkKey: "details_link_key";
 				displayV2Enabled: true;
+				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F0ba8ff0a_20260508_pgo_s23_megarayquaza_1024x576_nologo.jpg";
 				eventDatetimeRangeKey: "event_datetime_range_key_MegaRayquaza26";
 				eventEndTime: "2026-07-26T20:00:00";
 				eventStartTime: "2026-07-25T10:00:00";
 				giftable: true;
 				giftItem: 2243;
+				iconRewards: [
+					{
+						item: {
+							item: "ITEM_MOVE_REROLL_OTHER_SPECIAL_ATTACK_A";
+						};
+						type: "ITEM";
+					},
+					{
+						pokemonEncounter: {
+							pokemonId: "RAYQUAZA";
+						};
+						type: "POKEMON_ENCOUNTER";
+					},
+					{
+						stardust: 3840;
+						type: "STARDUST";
+					},
+				];
 				itemBagDescriptionKey: "item_event_ticket_pink_desc_MegaRayquaza26";
 				textRewardsKey: "text_rewards_key_MegaRayquaza26";
 			};
 			itemId: 2211;
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general1.ticket.2_MegaRayquaza_title";
+		}
+	>
+>;
+export type ItemSettingsItemEventTicketS23202607ToGift = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S23_2026_07_TO_GIFT",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "item_event_ticket_pink_details_MegaRayquaza26";
+			globalEventTicket: {
+				backgroundImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F0ba8ff0a_20260508_pgo_s23_megarayquaza_1024x576_nologo.jpg";
+				clientEventEndTimeUtcMs: "1785096000000";
+				clientEventStartTimeUtcMs: "1784973600000";
+				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F0ba8ff0a_20260508_pgo_s23_megarayquaza_1024x576_nologo.jpg";
+				eventEndTime: "2026-07-26T20:00:00";
+				eventStartTime: "2026-07-25T10:00:00";
+				itemBagDescriptionKey: "item_event_ticket_pink_details_MegaRayquaza26";
+				ticketItem: 2211;
+			};
+			ignoreInventorySpace: true;
+			itemId: 2243;
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general1.ticket.2_MegaRayquaza_title";
+		}
+	>
+>;
+export type ItemSettingsItemEventTicketS23202608 = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S23_2026_08",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "ITEM_EVENT_TICKET_S23_2026_08_desc_gmaxRillaboom26";
+			globalEventTicket: {
+				backgroundImageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F871eef71_PGO-MCS_GMAX_Rillaboom_Max_Battle_Day_v1-1024x576-nologo.jpg";
+				clientEventEndTimeUtcMs: "1785603600000";
+				clientEventStartTimeUtcMs: "1785592800000";
+				detailsLinkKey: "details_link_key";
+				displayV2Enabled: true;
+				eventBannerUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F871eef71_PGO-MCS_GMAX_Rillaboom_Max_Battle_Day_v1-1024x576-nologo.jpg";
+				eventDatetimeRangeKey: "event_datetime_range_key_gmaxRillaboom26";
+				eventEndTime: "2026-08-01T17:00:00";
+				eventStartTime: "2026-08-01T14:00:00";
+				giftable: true;
+				giftItem: 2244;
+				iconRewards: [
+					{
+						item: {
+							amount: 1;
+							item: "ITEM_MAX_BOOST";
+						};
+						type: "ITEM";
+					},
+					{
+						exp: 25000;
+						type: "EXPERIENCE";
+					},
+					{
+						item: {
+							amount: 6400;
+							item: "ITEM_MP";
+						};
+						type: "ITEM";
+					},
+				];
+				itemBagDescriptionKey: "ITEM_EVENT_TICKET_S23_2026_08_desc_gmaxRillaboom26";
+				textRewardsKey: "text_rewards_key_gmaxRillaboom26";
+			};
+			itemId: 2212;
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general1.ticket.4_gmaxRillaboom26_title";
+		}
+	>
+>;
+export type ItemSettingsItemEventTicketS23202608ToGift = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S23_2026_08_TO_GIFT",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "ITEM_EVENT_TICKET_S23_2026_08_details_gmaxRillaboom26";
+			globalEventTicket: {
+				clientEventEndTimeUtcMs: "1785603600000";
+				clientEventStartTimeUtcMs: "1785592800000";
+				eventBannerUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F871eef71_PGO-MCS_GMAX_Rillaboom_Max_Battle_Day_v1-1024x576-nologo.jpg";
+				eventEndTime: "2026-08-01T17:00:00";
+				eventStartTime: "2026-08-01T14:00:00";
+				itemBagDescriptionKey: "ITEM_EVENT_TICKET_S23_2026_08_details_gmaxRillaboom26";
+				ticketItem: 2212;
+			};
+			ignoreInventorySpace: true;
+			itemId: 2244;
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 		}
 	>
 >;
@@ -1404,6 +1514,9 @@ export type ItemSettingsGlobalEventTicketMasterfileEntry =
 	| ItemSettingsItemEventTicketS23202604ToGift
 	| ItemSettingsItemEventTicketS23202606
 	| ItemSettingsItemEventTicketS23202607
+	| ItemSettingsItemEventTicketS23202607ToGift
+	| ItemSettingsItemEventTicketS23202608
+	| ItemSettingsItemEventTicketS23202608ToGift
 	| ItemSettingsItemEventTicketS23202609
 	| ItemSettingsItemEvergreenTicket
 	| ItemSettingsItemEvergreenTicketToGift
