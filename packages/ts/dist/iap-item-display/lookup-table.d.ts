@@ -291,7 +291,6 @@ import type {
 	IapItemDisplayGeneral2Ticket3,
 	IapItemDisplayGeneral2Ticket4,
 	IapItemDisplayGeneral2Ticket4Giftable,
-	IapItemDisplayGeneral2Ticket5,
 	IapItemDisplayGeneral2Ticket6,
 	IapItemDisplayGeneral2Ticket7,
 	IapItemDisplayGeneral2Ticket7Giftable,
@@ -1458,7 +1457,6 @@ export interface IapItemDisplayLookup {
 	"general2.ticket.3": IapItemDisplayGeneral2Ticket3;
 	"general2.ticket.4": IapItemDisplayGeneral2Ticket4;
 	"general2.ticket.4.giftable": IapItemDisplayGeneral2Ticket4Giftable;
-	"general2.ticket.5": IapItemDisplayGeneral2Ticket5;
 	"general2.ticket.6": IapItemDisplayGeneral2Ticket6;
 	"general2.ticket.7": IapItemDisplayGeneral2Ticket7;
 	"general2.ticket.7.giftable": IapItemDisplayGeneral2Ticket7Giftable;
