@@ -36,6 +36,7 @@ export interface MegaEvoLevelSettingsData {
 	};
 	ftueExpirationTimestamp?: "1775001600000" | "4083189477000";
 	level?: number;
+	megaEnergyCostPerPoint?: number;
 	megaEnergyCostToUnlock?: number;
 	pokemonId?:
 		| "ALTARIA"

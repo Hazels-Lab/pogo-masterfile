@@ -28,6 +28,7 @@ type MegaEvoLevelSettings struct {
 	Effects                 MegaEvoLevelSettingsEffects     `json:"effects"`
 	FtueExpirationTimestamp *string                         `json:"ftueExpirationTimestamp,omitempty"`
 	Level                   *uint64                         `json:"level,omitempty"`
+	MegaEnergyCostPerPoint  *uint64                         `json:"megaEnergyCostPerPoint,omitempty"`
 	MegaEnergyCostToUnlock  *uint64                         `json:"megaEnergyCostToUnlock,omitempty"`
 	PokemonId               *string                         `json:"pokemonId,omitempty"`
 	Progression             MegaEvoLevelSettingsProgression `json:"progression"`

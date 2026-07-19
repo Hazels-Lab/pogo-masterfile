@@ -52,6 +52,7 @@ export type MegaEvoLevelSettings2V0373PokemonSalamence = S<
 				sameTypeExtraCatchXp: 50;
 			};
 			level: 2;
+			megaEnergyCostPerPoint: 160;
 			pokemonId: "SALAMENCE";
 			progression: {
 				pointsRequired: 7;
@@ -73,6 +74,7 @@ export type MegaEvoLevelSettings3V0373PokemonSalamence = S<
 				sameTypeExtraCatchXp: 100;
 			};
 			level: 3;
+			megaEnergyCostPerPoint: 80;
 			pokemonId: "SALAMENCE";
 			progression: {
 				pointsRequired: 30;

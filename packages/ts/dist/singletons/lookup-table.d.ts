@@ -6,7 +6,6 @@ import type {
 	AddressablePokemonSettings,
 	AddressBookImportSettings,
 	AdvancedSettings,
-	AmuseBoucheWelcomeBackRewards,
 	ArPhotoFeatureFlags,
 	ArTelemetrySettings,
 	AssetRefreshProto,
@@ -51,8 +50,8 @@ import type {
 	EggHatchImprovementsSettings,
 	EncounterSettings,
 	ErrorReportingSettings,
+	EventMapRefreshSettings,
 	EventPlannerPopularNotificationSettings,
-	EventServerSettings,
 	ExternalAddressableAssetsSettings,
 	FeatureUnlockLevelSettings,
 	GeotargetedQuestSettings,
@@ -144,6 +143,7 @@ import type {
 	VsSeekerClientSettings,
 	VsSeekerScheduleSettings,
 	WeatherBonusSettings,
+	WelcomeBackRewardsSettings,
 } from "./entries";
 
 export interface SingletonsLookup {
@@ -152,7 +152,7 @@ export interface SingletonsLookup {
 	ADDRESS_BOOK_IMPORT_SETTINGS: AddressBookImportSettings;
 	ADDRESSABLE_POKEMON_SETTINGS: AddressablePokemonSettings;
 	ADVANCED_SETTINGS: AdvancedSettings;
-	AMUSE_BOUCHE_WELCOME_BACK_REWARDS: AmuseBoucheWelcomeBackRewards;
+	AMUSE_BOUCHE_WELCOME_BACK_REWARDS: WelcomeBackRewardsSettings;
 	AR_PHOTO_FEATURE_FLAGS: ArPhotoFeatureFlags;
 	AR_TELEMETRY_SETTINGS: ArTelemetrySettings;
 	ASSET_REFRESH_PROTO: AssetRefreshProto;
@@ -198,7 +198,7 @@ export interface SingletonsLookup {
 	ERROR_REPORTING_SETTINGS_PRE_LOGIN: ErrorReportingSettings;
 	EVENT_PLANNER_POPULAR_RAID_RSVP_SETTINGS: EventPlannerPopularNotificationSettings;
 	EVENT_PLANNER_SETTINGS: PlannerSettings;
-	EVENT_SERVER_SETTINGS: EventServerSettings;
+	EVENT_SERVER_SETTINGS: EventMapRefreshSettings;
 	EXTERNAL_ADDRESSABLE_ASSETS_SETTINGS: ExternalAddressableAssetsSettings;
 	FEATURE_UNLOCK_LEVEL_SETTINGS: FeatureUnlockLevelSettings;
 	GEOTARGETED_QUEST_SETTINGS: GeotargetedQuestSettings;

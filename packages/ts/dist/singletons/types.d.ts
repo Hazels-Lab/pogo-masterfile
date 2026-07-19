@@ -7,7 +7,6 @@ import type {
 	AddressablePokemonSettings,
 	AddressBookImportSettings,
 	AdvancedSettings,
-	AmuseBoucheWelcomeBackRewards,
 	ArPhotoFeatureFlags,
 	ArTelemetrySettings,
 	AssetRefreshProto,
@@ -52,8 +51,8 @@ import type {
 	EggHatchImprovementsSettings,
 	EncounterSettings,
 	ErrorReportingSettings,
+	EventMapRefreshSettings,
 	EventPlannerPopularNotificationSettings,
-	EventServerSettings,
 	ExternalAddressableAssetsSettings,
 	FeatureUnlockLevelSettings,
 	GeotargetedQuestSettings,
@@ -145,6 +144,7 @@ import type {
 	VsSeekerClientSettings,
 	VsSeekerScheduleSettings,
 	WeatherBonusSettings,
+	WelcomeBackRewardsSettings,
 } from "./entries";
 
 export type AccessibilitySettingsType = W<AccessibilitySettings>;
@@ -152,7 +152,6 @@ export type AdditiveSceneSettingsType = W<AdditiveSceneSettings>;
 export type AddressablePokemonSettingsType = W<AddressablePokemonSettings>;
 export type AddressBookImportSettingsType = W<AddressBookImportSettings>;
 export type AdvancedSettingsType = W<AdvancedSettings>;
-export type AmuseBoucheWelcomeBackRewardsType = W<AmuseBoucheWelcomeBackRewards>;
 export type ArPhotoFeatureFlagsType = W<ArPhotoFeatureFlags>;
 export type ArTelemetrySettingsType = W<ArTelemetrySettings>;
 export type AssetRefreshProtoType = W<AssetRefreshProto>;
@@ -197,8 +196,8 @@ export type DeepLinkingSettingsType = W<DeepLinkingSettings>;
 export type EggHatchImprovementsSettingsType = W<EggHatchImprovementsSettings>;
 export type EncounterSettingsType = W<EncounterSettings>;
 export type ErrorReportingSettingsType = W<ErrorReportingSettings>;
+export type EventMapRefreshSettingsType = W<EventMapRefreshSettings>;
 export type EventPlannerPopularNotificationSettingsType = W<EventPlannerPopularNotificationSettings>;
-export type EventServerSettingsType = W<EventServerSettings>;
 export type ExternalAddressableAssetsSettingsType = W<ExternalAddressableAssetsSettings>;
 export type FeatureUnlockLevelSettingsType = W<FeatureUnlockLevelSettings>;
 export type GeotargetedQuestSettingsType = W<GeotargetedQuestSettings>;
@@ -290,6 +289,7 @@ export type VnextBattleConfigType = W<VnextBattleConfig>;
 export type VsSeekerClientSettingsType = W<VsSeekerClientSettings>;
 export type VsSeekerScheduleSettingsType = W<VsSeekerScheduleSettings>;
 export type WeatherBonusSettingsType = W<WeatherBonusSettings>;
+export type WelcomeBackRewardsSettingsType = W<WelcomeBackRewardsSettings>;
 
 export type Singletons =
 	| AccessibilitySettingsType
@@ -297,7 +297,6 @@ export type Singletons =
 	| AddressablePokemonSettingsType
 	| AddressBookImportSettingsType
 	| AdvancedSettingsType
-	| AmuseBoucheWelcomeBackRewardsType
 	| ArPhotoFeatureFlagsType
 	| ArTelemetrySettingsType
 	| AssetRefreshProtoType
@@ -342,8 +341,8 @@ export type Singletons =
 	| EggHatchImprovementsSettingsType
 	| EncounterSettingsType
 	| ErrorReportingSettingsType
+	| EventMapRefreshSettingsType
 	| EventPlannerPopularNotificationSettingsType
-	| EventServerSettingsType
 	| ExternalAddressableAssetsSettingsType
 	| FeatureUnlockLevelSettingsType
 	| GeotargetedQuestSettingsType
@@ -434,7 +433,8 @@ export type Singletons =
 	| VnextBattleConfigType
 	| VsSeekerClientSettingsType
 	| VsSeekerScheduleSettingsType
-	| WeatherBonusSettingsType;
+	| WeatherBonusSettingsType
+	| WelcomeBackRewardsSettingsType;
 
 /** Same as @see {Singletons} */
 export type SingletonsType = Singletons;

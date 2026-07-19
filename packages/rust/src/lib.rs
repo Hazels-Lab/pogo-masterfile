@@ -247,7 +247,6 @@ pub enum MasterfileEntry {
     AddressablePokemonSettings(singletons::AddressablePokemonSettingsEntry),
     AddressBookImportSettings(singletons::AddressBookImportSettingsEntry),
     AdvancedSettings(singletons::AdvancedSettingsEntry),
-    AmuseBoucheWelcomeBackRewards(singletons::AmuseBoucheWelcomeBackRewardsEntry),
     ArPhotoFeatureFlags(singletons::ArPhotoFeatureFlagsEntry),
     ArTelemetrySettings(singletons::ArTelemetrySettingsEntry),
     AssetRefreshProto(singletons::AssetRefreshProtoEntry),
@@ -292,10 +291,10 @@ pub enum MasterfileEntry {
     EggHatchImprovementsSettings(singletons::EggHatchImprovementsSettingsEntry),
     EncounterSettings(singletons::EncounterSettingsEntry),
     ErrorReportingSettings(singletons::ErrorReportingSettingsEntry),
+    EventMapRefreshSettings(singletons::EventMapRefreshSettingsEntry),
     EventPlannerPopularNotificationSettings(
         singletons::EventPlannerPopularNotificationSettingsEntry,
     ),
-    EventServerSettings(singletons::EventServerSettingsEntry),
     ExternalAddressableAssetsSettings(singletons::ExternalAddressableAssetsSettingsEntry),
     FeatureUnlockLevelSettings(singletons::FeatureUnlockLevelSettingsEntry),
     GeotargetedQuestSettings(singletons::GeotargetedQuestSettingsEntry),
@@ -387,6 +386,7 @@ pub enum MasterfileEntry {
     VsSeekerClientSettings(singletons::VsSeekerClientSettingsEntry),
     VsSeekerScheduleSettings(singletons::VsSeekerScheduleSettingsEntry),
     WeatherBonusSettings(singletons::WeatherBonusSettingsEntry),
+    WelcomeBackRewardsSettings(singletons::WelcomeBackRewardsSettingsEntry),
 }
 
 // O(1)-dispatch deserializer for MasterfileEntry. Avoids serde's untagged
@@ -657,6 +657,9 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "errorReportingSettings" => {
                     serde_json::from_value(value).map(Self::ErrorReportingSettings)
                 }
+                "eventMapRefreshSettings" => {
+                    serde_json::from_value(value).map(Self::EventMapRefreshSettings)
+                }
                 "eventPlannerPopularNotificationSettings" => {
                     serde_json::from_value(value).map(Self::EventPlannerPopularNotificationSettings)
                 }
@@ -773,8 +776,14 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 }
                 "primalEvoSettings" => serde_json::from_value(value).map(Self::PrimalEvoSettings),
                 "ptcOauthSettings" => serde_json::from_value(value).map(Self::PtcOauthSettings),
+                "questDialogueInboxSettings" => {
+                    serde_json::from_value(value).map(Self::QuestDialogueInboxSettings)
+                }
                 "quickInviteSettings" => {
                     serde_json::from_value(value).map(Self::QuickInviteSettings)
+                }
+                "raidEntryCostSettings" => {
+                    serde_json::from_value(value).map(Self::RaidEntryCostSettings)
                 }
                 "raidLobbyCounterSettings" => {
                     serde_json::from_value(value).map(Self::RaidLobbyCounterSettings)
@@ -806,10 +815,14 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::SharedFusionSettings)
                 }
                 "sharedMoveSettings" => serde_json::from_value(value).map(Self::SharedMoveSettings),
+                "softSfidaSettings" => serde_json::from_value(value).map(Self::SoftSfidaSettings),
                 "sourdoughMoveMappingSettings" => {
                     serde_json::from_value(value).map(Self::SourdoughMoveMappingSettings)
                 }
                 "specialEggSettings" => serde_json::from_value(value).map(Self::SpecialEggSettings),
+                "specialResearchVisualRefreshSettings" => {
+                    serde_json::from_value(value).map(Self::SpecialResearchVisualRefreshSettings)
+                }
                 "sponsoredGeofenceGiftSettings" => {
                     serde_json::from_value(value).map(Self::SponsoredGeofenceGiftSettings)
                 }
@@ -851,6 +864,9 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "weatherBonusSettings" => {
                     serde_json::from_value(value).map(Self::WeatherBonusSettings)
                 }
+                "welcomeBackRewardsSettings" => {
+                    serde_json::from_value(value).map(Self::WelcomeBackRewardsSettings)
+                }
                 other => Err(serde_json::Error::custom(format!(
                     "unknown discriminator: {}",
                     other
@@ -862,24 +878,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 .and_then(|t| t.as_str())
                 .map(String::from);
             match template_id.as_deref() {
-                Some("AMUSE_BOUCHE_WELCOME_BACK_REWARDS") => {
-                    serde_json::from_value(value).map(Self::AmuseBoucheWelcomeBackRewards)
-                }
-                Some("EVENT_SERVER_SETTINGS") => {
-                    serde_json::from_value(value).map(Self::EventServerSettings)
-                }
-                Some("QUEST_DIALOGUE_INBOX_SETTINGS") => {
-                    serde_json::from_value(value).map(Self::QuestDialogueInboxSettings)
-                }
-                Some("RAID_ENTRY_COST_SETTINGS") => {
-                    serde_json::from_value(value).map(Self::RaidEntryCostSettings)
-                }
-                Some("SOFT_SFIDA_SETTINGS") => {
-                    serde_json::from_value(value).map(Self::SoftSfidaSettings)
-                }
-                Some("SPECIAL_RESEARCH_VISUAL_REFRESH_SETTINGS") => {
-                    serde_json::from_value(value).map(Self::SpecialResearchVisualRefreshSettings)
-                }
                 Some(other) => Err(serde_json::Error::custom(format!(
                     "unknown stub templateId: {}",
                     other

@@ -9,7 +9,6 @@ export type LocationCardSettingsCr2026001 = S<
 		{
 			cardType: "LOCATION_CARD";
 			imageUrl: "lc_CR_2026_001";
-			locationCard: "LC_CR_2026_001";
 		}
 	>
 >;

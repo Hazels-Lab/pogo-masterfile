@@ -32,6 +32,8 @@ pub struct AddressBookImportSettings {
 #[serde(rename_all = "camelCase")]
 pub struct AdvancedSettings {
     pub download_all_assets_enabled: bool,
+    pub max_device_memory_for_high_quality_mode_mb: u64,
+    pub max_device_memory_for_standard_quality_mode_mb: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -197,6 +199,13 @@ pub struct FastAttackSettings {}
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct MissedFastAttackRecoverySettings {
+    pub enabled: bool,
+    pub max_catch_up_attacks: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct UiCameraAnimationSettings {
     pub transition_in_duration_seconds: f64,
     pub transition_interim_delay_seconds: f64,
@@ -207,6 +216,7 @@ pub struct UiCameraAnimationSettings {
 #[serde(rename_all = "camelCase")]
 pub struct CombatAnimationConfiguration {
     pub fast_attack_settings: FastAttackSettings,
+    pub missed_fast_attack_recovery_settings: MissedFastAttackRecoverySettings,
     pub projected_health_animation_duration_seconds: f64,
     pub ui_camera_animation_settings: UiCameraAnimationSettings,
 }
@@ -1145,6 +1155,12 @@ pub struct ErrorReportingSettingsV2 {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct EventMapRefreshSettings {
+    pub event_server_settings_hash: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct EventPlannerPopularNotificationSettings {
     pub battle_levels: [u64; 9],
     pub first_scan_offset_seconds: String,
@@ -1542,6 +1558,13 @@ pub struct MapObjectsInteractionRangeSettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct SeparatedTempEvoBranches {
+    pub pokedex_id: String,
+    pub temp_evo_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct MegaEvoSettings {
     pub active_mega_bonus_catch_candy: u64,
     pub attack_boost_from_mega_different_type: f64,
@@ -1554,6 +1577,7 @@ pub struct MegaEvoSettings {
     pub evolution_length_ms: String,
     pub max_candy_hoard_size: u64,
     pub num_mega_levels: u64,
+    pub separated_temp_evo_branches: [SeparatedTempEvoBranches; 6],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2239,9 +2263,43 @@ pub struct PtcOauthSettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct QuestDialogueTriggers {
+    pub number_of_interactions: u64,
+    pub trigger: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct QuestDialogueInboxSettings {
+    pub cooldown_duration_ms: String,
+    pub quest_dialogue_triggers: [QuestDialogueTriggers; 8],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct QuickInviteSettings {
     pub enabled: bool,
     pub suggested_players_variation: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct RaidEntryCost {
+    pub item_requirement: LootItem,
+    pub raid_type: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct RaidLevelEntryCost {
+    pub raid_entry_cost: [RaidEntryCost; 4],
+    pub raid_level: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct RaidEntryCostSettings {
+    pub raid_level_entry_cost: [RaidLevelEntryCost; 4],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2308,6 +2366,14 @@ pub struct RaidFeatureFlags {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct RaidLevelEncounterTimings {
+    pub auto_throw_countdown_start_seconds: u64,
+    pub auto_throw_seconds: u64,
+    pub show_catch_loot_on_pokemon_page: bool,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct RaidLevelMusicOverrides {
     pub battle_music_key: String,
     pub raid_level: String,
@@ -2338,13 +2404,14 @@ pub struct RaidSettings {
     pub pokemon_music_overrides: Vec<PokemonMusicOverridesV5>,
     pub popup_time_ms: u64,
     pub raid_feature_flags: RaidFeatureFlags,
+    pub raid_level_encounter_timings: [RaidLevelEncounterTimings; 2],
     pub raid_level_music_overrides: [RaidLevelMusicOverrides; 5],
     pub remote_damage_modifier: f64,
     pub remote_raid_distance_validation: bool,
     pub remote_raid_enabled: bool,
     pub remote_raids_min_player_level: u64,
-    pub unsupported_raid_levels_for_friend_invites: (String, String, u64, u64),
-    pub unsupported_remote_raid_levels: (String, String, u64, u64),
+    pub unsupported_raid_levels_for_friend_invites: [String; 4],
+    pub unsupported_remote_raid_levels: [String; 4],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2516,7 +2583,15 @@ pub struct RouteStampCategorySettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct FusionAlignmentSettings {
+    pub disable_purified_pokemon_as_component: bool,
+    pub disable_shadow_pokemon_as_component: bool,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct SharedFusionSettings {
+    pub fusion_alignment_settings: FusionAlignmentSettings,
     pub fusion_enabled: bool,
 }
 
@@ -2528,6 +2603,16 @@ pub struct SharedMoveSettings {
     pub shadow_third_move_unlock_candy_multiplier: f64,
     pub shadow_third_move_unlock_stardust_multiplier: f64,
     pub shared_move_settings_bool1: bool,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct SoftSfidaSettings {
+    pub catch_action_delay_ms: u64,
+    pub geofence_size_m: f64,
+    pub min_player_level: u64,
+    pub reserved_geofence_count: u64,
+    pub spin_action_delay_ms: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2585,6 +2670,17 @@ pub struct SpecialEggSettings {
     pub map_icon_enabled: bool,
     pub min_level: u64,
     pub xp_reward: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct SpecialResearchVisualRefreshSettings {
+    pub multiple_favorites_enabled: bool,
+    pub new_quest_indicators_enabled: bool,
+    pub special_research_categories_enabled: bool,
+    pub special_research_category_colors_enabled: bool,
+    pub tag_new_quest_from_lapsed_state: bool,
+    pub updated_sorting_enabled: bool,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2869,6 +2965,55 @@ pub struct WeatherBonusSettings {
     pub stardust_bonus_multiplier: f64,
 }
 
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct ItemV2 {
+    pub amount: u64,
+    pub item: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct RewardData {
+    pub item: ItemV2,
+    pub r#type: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct QuestIconCarousels {
+    pub quest_template_id: String,
+    pub reward_data: [RewardData; 1],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct QuestIconCarouselsV2 {
+    pub quest_template_id: String,
+    pub reward_data: [RewardData; 3],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct CarouselDisplaySettings {
+    pub quest_icon_carousels: (
+        QuestIconCarousels,
+        QuestIconCarousels,
+        QuestIconCarousels,
+        QuestIconCarousels,
+        QuestIconCarousels,
+        QuestIconCarousels,
+        QuestIconCarouselsV2,
+    ),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct WelcomeBackRewardsSettings {
+    pub carousel_display_settings: CarouselDisplaySettings,
+    pub enable_multi_day_rewards: bool,
+}
+
 crate::masterfile_entry!(AccessibilitySettingsEntry, AccessibilitySettingsEntryData, accessibility_settings: AccessibilitySettings);
 
 crate::masterfile_entry!(AdditiveSceneSettingsEntry, AdditiveSceneSettingsEntryData, additive_scene_settings: AdditiveSceneSettings);
@@ -2878,11 +3023,6 @@ crate::masterfile_entry!(AddressablePokemonSettingsEntry, AddressablePokemonSett
 crate::masterfile_entry!(AddressBookImportSettingsEntry, AddressBookImportSettingsEntryData, address_book_import_settings: AddressBookImportSettings);
 
 crate::masterfile_entry!(AdvancedSettingsEntry, AdvancedSettingsEntryData, advanced_settings: AdvancedSettings);
-
-crate::masterfile_stub_entry!(
-    AmuseBoucheWelcomeBackRewardsEntry,
-    AmuseBoucheWelcomeBackRewardsEntryData
-);
 
 crate::masterfile_entry!(ArPhotoFeatureFlagsEntry, ArPhotoFeatureFlagsEntryData, ar_photo_feature_flags: ArPhotoFeatureFlags);
 
@@ -2972,9 +3112,9 @@ crate::masterfile_entry!(EncounterSettingsEntry, EncounterSettingsEntryData, enc
 
 crate::masterfile_entry!(ErrorReportingSettingsEntry, ErrorReportingSettingsEntryData, error_reporting_settings: ErrorReportingSettings);
 
-crate::masterfile_entry!(EventPlannerPopularNotificationSettingsEntry, EventPlannerPopularNotificationSettingsEntryData, event_planner_popular_notification_settings: EventPlannerPopularNotificationSettings);
+crate::masterfile_entry!(EventMapRefreshSettingsEntry, EventMapRefreshSettingsEntryData, event_map_refresh_settings: EventMapRefreshSettings);
 
-crate::masterfile_stub_entry!(EventServerSettingsEntry, EventServerSettingsEntryData);
+crate::masterfile_entry!(EventPlannerPopularNotificationSettingsEntry, EventPlannerPopularNotificationSettingsEntryData, event_planner_popular_notification_settings: EventPlannerPopularNotificationSettings);
 
 crate::masterfile_entry!(ExternalAddressableAssetsSettingsEntry, ExternalAddressableAssetsSettingsEntryData, external_addressable_assets_settings: ExternalAddressableAssetsSettings);
 
@@ -3082,14 +3222,11 @@ crate::masterfile_entry!(PrimalEvoSettingsEntry, PrimalEvoSettingsEntryData, pri
 
 crate::masterfile_entry!(PtcOauthSettingsEntry, PtcOauthSettingsEntryData, ptc_oauth_settings: PtcOauthSettings);
 
-crate::masterfile_stub_entry!(
-    QuestDialogueInboxSettingsEntry,
-    QuestDialogueInboxSettingsEntryData
-);
+crate::masterfile_entry!(QuestDialogueInboxSettingsEntry, QuestDialogueInboxSettingsEntryData, quest_dialogue_inbox_settings: QuestDialogueInboxSettings);
 
 crate::masterfile_entry!(QuickInviteSettingsEntry, QuickInviteSettingsEntryData, quick_invite_settings: QuickInviteSettings);
 
-crate::masterfile_stub_entry!(RaidEntryCostSettingsEntry, RaidEntryCostSettingsEntryData);
+crate::masterfile_entry!(RaidEntryCostSettingsEntry, RaidEntryCostSettingsEntryData, raid_entry_cost_settings: RaidEntryCostSettings);
 
 crate::masterfile_entry!(RaidLobbyCounterSettingsEntry, RaidLobbyCounterSettingsEntryData, raid_lobby_counter_settings: RaidLobbyCounterSettings);
 
@@ -3119,16 +3256,13 @@ crate::masterfile_entry!(SharedFusionSettingsEntry, SharedFusionSettingsEntryDat
 
 crate::masterfile_entry!(SharedMoveSettingsEntry, SharedMoveSettingsEntryData, shared_move_settings: SharedMoveSettings);
 
-crate::masterfile_stub_entry!(SoftSfidaSettingsEntry, SoftSfidaSettingsEntryData);
+crate::masterfile_entry!(SoftSfidaSettingsEntry, SoftSfidaSettingsEntryData, soft_sfida_settings: SoftSfidaSettings);
 
 crate::masterfile_entry!(SourdoughMoveMappingSettingsEntry, SourdoughMoveMappingSettingsEntryData, sourdough_move_mapping_settings: SourdoughMoveMappingSettings);
 
 crate::masterfile_entry!(SpecialEggSettingsEntry, SpecialEggSettingsEntryData, special_egg_settings: SpecialEggSettings);
 
-crate::masterfile_stub_entry!(
-    SpecialResearchVisualRefreshSettingsEntry,
-    SpecialResearchVisualRefreshSettingsEntryData
-);
+crate::masterfile_entry!(SpecialResearchVisualRefreshSettingsEntry, SpecialResearchVisualRefreshSettingsEntryData, special_research_visual_refresh_settings: SpecialResearchVisualRefreshSettings);
 
 crate::masterfile_entry!(SponsoredGeofenceGiftSettingsEntry, SponsoredGeofenceGiftSettingsEntryData, sponsored_geofence_gift_settings: SponsoredGeofenceGiftSettings);
 
@@ -3163,3 +3297,5 @@ crate::masterfile_entry!(VsSeekerClientSettingsEntry, VsSeekerClientSettingsEntr
 crate::masterfile_entry!(VsSeekerScheduleSettingsEntry, VsSeekerScheduleSettingsEntryData, vs_seeker_schedule_settings: VsSeekerScheduleSettings);
 
 crate::masterfile_entry!(WeatherBonusSettingsEntry, WeatherBonusSettingsEntryData, weather_bonus_settings: WeatherBonusSettings);
+
+crate::masterfile_entry!(WelcomeBackRewardsSettingsEntry, WelcomeBackRewardsSettingsEntryData, welcome_back_rewards_settings: WelcomeBackRewardsSettings);

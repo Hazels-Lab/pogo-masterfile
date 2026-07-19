@@ -16919,7 +16919,7 @@ export type PokemonExtendedSettingsV0845PokemonCramorantGorging = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0845_POKEMON_CRAMORANT_GORGING",
 		{
-			form: 3350;
+			form: "CRAMORANT_GORGING";
 			sizeSettings: {
 				mLowerBound: 0.6;
 				mUpperBound: 1;
@@ -16936,7 +16936,7 @@ export type PokemonExtendedSettingsV0845PokemonCramorantGulping = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0845_POKEMON_CRAMORANT_GULPING",
 		{
-			form: 3349;
+			form: "CRAMORANT_GULPING";
 			sizeSettings: {
 				mLowerBound: 0.6;
 				mUpperBound: 1;

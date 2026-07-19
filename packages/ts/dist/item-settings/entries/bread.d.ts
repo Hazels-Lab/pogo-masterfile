@@ -10,7 +10,6 @@ export type ItemSettingsItemMpReplenish = S<
 			category: "ITEM_CATEGORY_BREAD";
 			dropTrainerLevel: 1;
 			itemCap: 12;
-			itemId: "ITEM_MP_REPLENISH";
 			itemType: "ITEM_TYPE_MP_REPLENISH";
 			replenishMp: {
 				mpAmount: 800;

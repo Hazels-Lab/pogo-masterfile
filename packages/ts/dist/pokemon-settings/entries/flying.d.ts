@@ -1145,7 +1145,7 @@ export type PokemonSettingsV0845PokemonCramorant = S<
 				cylinderHeightM: 1;
 				cylinderRadiusM: 0.5;
 			};
-			cinematicMoves: [593, "FLY", "HYDRO_PUMP", "SURF"];
+			cinematicMoves: ["DIVE", "FLY", "HYDRO_PUMP", "SURF"];
 			combatDefaultCameraAngle: [0, 0, 0];
 			combatOpponentFocusCameraAngle: [0, 0, 0];
 			combatPlayerFocusCameraAngle: [0, 0, 0];
@@ -1165,6 +1165,7 @@ export type PokemonSettingsV0845PokemonCramorant = S<
 			familyId: "FAMILY_CRAMORANT";
 			heightStdDev: 0.1;
 			ibfc: {
+				aternateForms: ["CRAMORANT_GULPING", "CRAMORANT_GORGING"];
 				combatEnable: true;
 				defaultForm: "CRAMORANT_NORMAL";
 			};
@@ -1208,7 +1209,7 @@ export type PokemonSettingsV0845PokemonCramorantGorging = S<
 				cylinderHeightM: 1;
 				cylinderRadiusM: 0.5;
 			};
-			cinematicMoves: [593, "FLY", "HYDRO_PUMP", "SURF"];
+			cinematicMoves: ["DIVE", "FLY", "HYDRO_PUMP", "SURF"];
 			encounter: {
 				attackProbability: 0.2;
 				cameraDistance: 4;
@@ -1221,7 +1222,7 @@ export type PokemonSettingsV0845PokemonCramorantGorging = S<
 				minPokemonActionFrequencyS: 0.2;
 			};
 			familyId: "FAMILY_CRAMORANT";
-			form: 3350;
+			form: "CRAMORANT_GORGING";
 			heightStdDev: 0.1;
 			ibfc: object;
 			isDeployable: true;
@@ -1264,7 +1265,7 @@ export type PokemonSettingsV0845PokemonCramorantGulping = S<
 				cylinderHeightM: 1;
 				cylinderRadiusM: 0.5;
 			};
-			cinematicMoves: [593, "FLY", "HYDRO_PUMP", "SURF"];
+			cinematicMoves: ["DIVE", "FLY", "HYDRO_PUMP", "SURF"];
 			encounter: {
 				attackProbability: 0.2;
 				cameraDistance: 4;
@@ -1277,7 +1278,7 @@ export type PokemonSettingsV0845PokemonCramorantGulping = S<
 				minPokemonActionFrequencyS: 0.2;
 			};
 			familyId: "FAMILY_CRAMORANT";
-			form: 3349;
+			form: "CRAMORANT_GULPING";
 			heightStdDev: 0.1;
 			ibfc: object;
 			isDeployable: true;
@@ -1320,7 +1321,7 @@ export type PokemonSettingsV0845PokemonCramorantNormal = S<
 				cylinderHeightM: 1;
 				cylinderRadiusM: 0.5;
 			};
-			cinematicMoves: [593, "FLY", "HYDRO_PUMP", "SURF"];
+			cinematicMoves: ["DIVE", "FLY", "HYDRO_PUMP", "SURF"];
 			combatDefaultCameraAngle: [0, 0, 0];
 			combatOpponentFocusCameraAngle: [0, 0, 0];
 			combatPlayerFocusCameraAngle: [0, 0, 0];

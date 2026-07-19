@@ -23,7 +23,9 @@ type AddressBookImportSettings struct {
 }
 
 type AdvancedSettings struct {
-	DownloadAllAssetsEnabled bool `json:"downloadAllAssetsEnabled"`
+	DownloadAllAssetsEnabled                bool   `json:"downloadAllAssetsEnabled"`
+	MaxDeviceMemoryForHighQualityModeMb     uint64 `json:"maxDeviceMemoryForHighQualityModeMb"`
+	MaxDeviceMemoryForStandardQualityModeMb uint64 `json:"maxDeviceMemoryForStandardQualityModeMb"`
 }
 
 type ArPhotoFeatureFlagsCaptureSettings struct {
@@ -142,6 +144,11 @@ type BackgroundModeSettings struct {
 
 type BattleAnimationSettingsFastAttackSettings struct{}
 
+type BattleAnimationSettingsMissedFastAttackRecoverySettings struct {
+	Enabled           bool   `json:"enabled"`
+	MaxCatchUpAttacks uint64 `json:"maxCatchUpAttacks"`
+}
+
 type BattleAnimationSettingsUiCameraAnimationSettings struct {
 	TransitionInDurationSeconds   float64 `json:"transitionInDurationSeconds"`
 	TransitionInterimDelaySeconds float64 `json:"transitionInterimDelaySeconds"`
@@ -149,9 +156,10 @@ type BattleAnimationSettingsUiCameraAnimationSettings struct {
 }
 
 type BattleAnimationSettingsCombatAnimationConfiguration struct {
-	FastAttackSettings                      BattleAnimationSettingsFastAttackSettings        `json:"fastAttackSettings"`
-	ProjectedHealthAnimationDurationSeconds float64                                          `json:"projectedHealthAnimationDurationSeconds"`
-	UiCameraAnimationSettings               BattleAnimationSettingsUiCameraAnimationSettings `json:"uiCameraAnimationSettings"`
+	FastAttackSettings                      BattleAnimationSettingsFastAttackSettings               `json:"fastAttackSettings"`
+	MissedFastAttackRecoverySettings        BattleAnimationSettingsMissedFastAttackRecoverySettings `json:"missedFastAttackRecoverySettings"`
+	ProjectedHealthAnimationDurationSeconds float64                                                 `json:"projectedHealthAnimationDurationSeconds"`
+	UiCameraAnimationSettings               BattleAnimationSettingsUiCameraAnimationSettings        `json:"uiCameraAnimationSettings"`
 }
 
 type BattleAnimationSettingsFastAttackSettingsV2 struct {
@@ -801,6 +809,10 @@ type ErrorReportingSettings struct {
 	SlidingWindowLengthS         uint64  `json:"slidingWindowLengthS"`
 }
 
+type EventMapRefreshSettings struct {
+	EventServerSettingsHash string `json:"eventServerSettingsHash"`
+}
+
 type EventPlannerPopularNotificationSettings struct {
 	BattleLevels                [9]uint64 `json:"battleLevels"`
 	FirstScanOffsetSeconds      string    `json:"firstScanOffsetSeconds"`
@@ -1056,18 +1068,24 @@ type MapObjectsInteractionRangeSettings struct {
 	WhitePulseRadiusMeters       float64 `json:"whitePulseRadiusMeters"`
 }
 
+type MegaEvoSettingsSeparatedTempEvoBranches struct {
+	PokedexId string `json:"pokedexId"`
+	TempEvoId string `json:"tempEvoId"`
+}
+
 type MegaEvoSettings struct {
-	ActiveMegaBonusCatchCandy         uint64  `json:"activeMegaBonusCatchCandy"`
-	AttackBoostFromMegaDifferentType  float64 `json:"attackBoostFromMegaDifferentType"`
-	AttackBoostFromMegaSameType       float64 `json:"attackBoostFromMegaSameType"`
-	ClientMegaCooldownBufferMs        uint64  `json:"clientMegaCooldownBufferMs"`
-	EnableBuddyWalkingMegaEnergyAward bool    `json:"enableBuddyWalkingMegaEnergyAward"`
-	EnableMegaEvolveInLobby           bool    `json:"enableMegaEvolveInLobby"`
-	EnableMegaLevel                   bool    `json:"enableMegaLevel"`
-	EnableMegaLevelLegacyAward        bool    `json:"enableMegaLevelLegacyAward"`
-	EvolutionLengthMs                 string  `json:"evolutionLengthMs"`
-	MaxCandyHoardSize                 uint64  `json:"maxCandyHoardSize"`
-	NumMegaLevels                     uint64  `json:"numMegaLevels"`
+	ActiveMegaBonusCatchCandy         uint64                                     `json:"activeMegaBonusCatchCandy"`
+	AttackBoostFromMegaDifferentType  float64                                    `json:"attackBoostFromMegaDifferentType"`
+	AttackBoostFromMegaSameType       float64                                    `json:"attackBoostFromMegaSameType"`
+	ClientMegaCooldownBufferMs        uint64                                     `json:"clientMegaCooldownBufferMs"`
+	EnableBuddyWalkingMegaEnergyAward bool                                       `json:"enableBuddyWalkingMegaEnergyAward"`
+	EnableMegaEvolveInLobby           bool                                       `json:"enableMegaEvolveInLobby"`
+	EnableMegaLevel                   bool                                       `json:"enableMegaLevel"`
+	EnableMegaLevelLegacyAward        bool                                       `json:"enableMegaLevelLegacyAward"`
+	EvolutionLengthMs                 string                                     `json:"evolutionLengthMs"`
+	MaxCandyHoardSize                 uint64                                     `json:"maxCandyHoardSize"`
+	NumMegaLevels                     uint64                                     `json:"numMegaLevels"`
+	SeparatedTempEvoBranches          [6]MegaEvoSettingsSeparatedTempEvoBranches `json:"separatedTempEvoBranches"`
 }
 
 type MonodepthSettings struct {
@@ -1582,9 +1600,33 @@ type PtcOauthSettings struct {
 	PtcAccountLinkingEnabled bool   `json:"ptcAccountLinkingEnabled"`
 }
 
+type QuestDialogueInboxSettingsQuestDialogueTriggers struct {
+	NumberOfInteractions uint64 `json:"numberOfInteractions"`
+	Trigger              string `json:"trigger"`
+}
+
+type QuestDialogueInboxSettings struct {
+	CooldownDurationMs    string                                             `json:"cooldownDurationMs"`
+	QuestDialogueTriggers [8]QuestDialogueInboxSettingsQuestDialogueTriggers `json:"QuestDialogueTriggers"`
+}
+
 type QuickInviteSettings struct {
 	Enabled                   bool   `json:"enabled"`
 	SuggestedPlayersVariation string `json:"suggestedPlayersVariation"`
+}
+
+type RaidEntryCostSettingsRaidEntryCost struct {
+	ItemRequirement DailyAdventureIncenseSettingsLootItem `json:"itemRequirement"`
+	RaidType        string                                `json:"raidType"`
+}
+
+type RaidEntryCostSettingsRaidLevelEntryCost struct {
+	RaidEntryCost [4]RaidEntryCostSettingsRaidEntryCost `json:"raidEntryCost"`
+	RaidLevel     string                                `json:"raidLevel"`
+}
+
+type RaidEntryCostSettings struct {
+	RaidLevelEntryCost [4]RaidEntryCostSettingsRaidLevelEntryCost `json:"raidLevelEntryCost"`
 }
 
 type RaidLobbyCounterSettings struct {
@@ -1629,41 +1671,48 @@ type RaidSettingsRaidFeatureFlags struct {
 	UseCachedRaidBossPokemon bool `json:"useCachedRaidBossPokemon"`
 }
 
+type RaidSettingsRaidLevelEncounterTimings struct {
+	AutoThrowCountdownStartSeconds uint64 `json:"autoThrowCountdownStartSeconds"`
+	AutoThrowSeconds               uint64 `json:"autoThrowSeconds"`
+	ShowCatchLootOnPokemonPage     bool   `json:"showCatchLootOnPokemonPage"`
+}
+
 type RaidSettingsRaidLevelMusicOverrides struct {
 	BattleMusicKey string `json:"battleMusicKey"`
 	RaidLevel      string `json:"raidLevel"`
 }
 
 type RaidSettings struct {
-	Ablcemdnbkc                           bool                                   `json:"ablcemdnbkc"`
-	BootCutoffMs                          uint64                                 `json:"bootCutoffMs"`
-	BootRaidEnabled                       bool                                   `json:"bootRaidEnabled"`
-	BootSoloMs                            uint64                                 `json:"bootSoloMs"`
-	CanInviteFriendsInPerson              bool                                   `json:"canInviteFriendsInPerson"`
-	CanInviteFriendsRemotely              bool                                   `json:"canInviteFriendsRemotely"`
-	FailedFriendInviteInfoEnabled         bool                                   `json:"failedFriendInviteInfoEnabled"`
-	FetchProfileFromSocialEnabled         bool                                   `json:"fetchProfileFromSocialEnabled"`
-	FriendInviteCutoffTimeSec             uint64                                 `json:"friendInviteCutoffTimeSec"`
-	FriendRequestsEnabled                 bool                                   `json:"friendRequestsEnabled"`
-	InviteCooldownDurationMillis          string                                 `json:"inviteCooldownDurationMillis"`
-	MaxNumFriendInvites                   uint64                                 `json:"maxNumFriendInvites"`
-	MaxNumFriendInvitesPerAction          uint64                                 `json:"maxNumFriendInvitesPerAction"`
-	MaxPlayersPerLobby                    uint64                                 `json:"maxPlayersPerLobby"`
-	MaxRemotePlayersPerLobby              uint64                                 `json:"maxRemotePlayersPerLobby"`
-	MaxRemoteRaidPasses                   uint64                                 `json:"maxRemoteRaidPasses"`
-	MinPlayersToBoot                      uint64                                 `json:"minPlayersToBoot"`
-	ObRaidClientSettingsNumber1           uint64                                 `json:"obRaidClientSettingsNumber1"`
-	ObRaidClientSettingsNumber29          uint64                                 `json:"obRaidClientSettingsNumber29"`
-	PokemonMusicOverrides                 []any                                  `json:"pokemonMusicOverrides"`
-	PopupTimeMs                           uint64                                 `json:"popupTimeMs"`
-	RaidFeatureFlags                      RaidSettingsRaidFeatureFlags           `json:"raidFeatureFlags"`
-	RaidLevelMusicOverrides               [5]RaidSettingsRaidLevelMusicOverrides `json:"raidLevelMusicOverrides"`
-	RemoteDamageModifier                  float64                                `json:"remoteDamageModifier"`
-	RemoteRaidDistanceValidation          bool                                   `json:"remoteRaidDistanceValidation"`
-	RemoteRaidEnabled                     bool                                   `json:"remoteRaidEnabled"`
-	RemoteRaidsMinPlayerLevel             uint64                                 `json:"remoteRaidsMinPlayerLevel"`
-	UnsupportedRaidLevelsForFriendInvites []any                                  `json:"unsupportedRaidLevelsForFriendInvites"`
-	UnsupportedRemoteRaidLevels           []any                                  `json:"unsupportedRemoteRaidLevels"`
+	Ablcemdnbkc                           bool                                     `json:"ablcemdnbkc"`
+	BootCutoffMs                          uint64                                   `json:"bootCutoffMs"`
+	BootRaidEnabled                       bool                                     `json:"bootRaidEnabled"`
+	BootSoloMs                            uint64                                   `json:"bootSoloMs"`
+	CanInviteFriendsInPerson              bool                                     `json:"canInviteFriendsInPerson"`
+	CanInviteFriendsRemotely              bool                                     `json:"canInviteFriendsRemotely"`
+	FailedFriendInviteInfoEnabled         bool                                     `json:"failedFriendInviteInfoEnabled"`
+	FetchProfileFromSocialEnabled         bool                                     `json:"fetchProfileFromSocialEnabled"`
+	FriendInviteCutoffTimeSec             uint64                                   `json:"friendInviteCutoffTimeSec"`
+	FriendRequestsEnabled                 bool                                     `json:"friendRequestsEnabled"`
+	InviteCooldownDurationMillis          string                                   `json:"inviteCooldownDurationMillis"`
+	MaxNumFriendInvites                   uint64                                   `json:"maxNumFriendInvites"`
+	MaxNumFriendInvitesPerAction          uint64                                   `json:"maxNumFriendInvitesPerAction"`
+	MaxPlayersPerLobby                    uint64                                   `json:"maxPlayersPerLobby"`
+	MaxRemotePlayersPerLobby              uint64                                   `json:"maxRemotePlayersPerLobby"`
+	MaxRemoteRaidPasses                   uint64                                   `json:"maxRemoteRaidPasses"`
+	MinPlayersToBoot                      uint64                                   `json:"minPlayersToBoot"`
+	ObRaidClientSettingsNumber1           uint64                                   `json:"obRaidClientSettingsNumber1"`
+	ObRaidClientSettingsNumber29          uint64                                   `json:"obRaidClientSettingsNumber29"`
+	PokemonMusicOverrides                 []any                                    `json:"pokemonMusicOverrides"`
+	PopupTimeMs                           uint64                                   `json:"popupTimeMs"`
+	RaidFeatureFlags                      RaidSettingsRaidFeatureFlags             `json:"raidFeatureFlags"`
+	RaidLevelEncounterTimings             [2]RaidSettingsRaidLevelEncounterTimings `json:"raidLevelEncounterTimings"`
+	RaidLevelMusicOverrides               [5]RaidSettingsRaidLevelMusicOverrides   `json:"raidLevelMusicOverrides"`
+	RemoteDamageModifier                  float64                                  `json:"remoteDamageModifier"`
+	RemoteRaidDistanceValidation          bool                                     `json:"remoteRaidDistanceValidation"`
+	RemoteRaidEnabled                     bool                                     `json:"remoteRaidEnabled"`
+	RemoteRaidsMinPlayerLevel             uint64                                   `json:"remoteRaidsMinPlayerLevel"`
+	UnsupportedRaidLevelsForFriendInvites [4]string                                `json:"unsupportedRaidLevelsForFriendInvites"`
+	UnsupportedRemoteRaidLevels           [4]string                                `json:"unsupportedRemoteRaidLevels"`
 }
 
 type ReferralSettingsRecentFeatures struct {
@@ -1803,8 +1852,14 @@ type RouteStampCategorySettings struct {
 	SortOrder      uint64 `json:"sortOrder"`
 }
 
+type SharedFusionSettingsFusionAlignmentSettings struct {
+	DisablePurifiedPokemonAsComponent bool `json:"disablePurifiedPokemonAsComponent"`
+	DisableShadowPokemonAsComponent   bool `json:"disableShadowPokemonAsComponent"`
+}
+
 type SharedFusionSettings struct {
-	FusionEnabled bool `json:"fusionEnabled"`
+	FusionAlignmentSettings SharedFusionSettingsFusionAlignmentSettings `json:"fusionAlignmentSettings"`
+	FusionEnabled           bool                                        `json:"fusionEnabled"`
 }
 
 type SharedMoveSettings struct {
@@ -1813,6 +1868,14 @@ type SharedMoveSettings struct {
 	ShadowThirdMoveUnlockCandyMultiplier      float64 `json:"shadowThirdMoveUnlockCandyMultiplier"`
 	ShadowThirdMoveUnlockStardustMultiplier   float64 `json:"shadowThirdMoveUnlockStardustMultiplier"`
 	SharedMoveSettingsBool1                   bool    `json:"sharedMoveSettingsBool1"`
+}
+
+type SoftSfidaSettings struct {
+	CatchActionDelayMs    uint64  `json:"catchActionDelayMs"`
+	GeofenceSizeM         float64 `json:"geofenceSizeM"`
+	MinPlayerLevel        uint64  `json:"minPlayerLevel"`
+	ReservedGeofenceCount uint64  `json:"reservedGeofenceCount"`
+	SpinActionDelayMs     uint64  `json:"spinActionDelayMs"`
 }
 
 type SourdoughMoveMappingSettingsMappings struct {
@@ -1848,6 +1911,15 @@ type SpecialEggSettings struct {
 	MapIconEnabled bool   `json:"mapIconEnabled"`
 	MinLevel       uint64 `json:"minLevel"`
 	XpReward       uint64 `json:"xpReward"`
+}
+
+type SpecialResearchVisualRefreshSettings struct {
+	MultipleFavoritesEnabled             bool `json:"multipleFavoritesEnabled"`
+	NewQuestIndicatorsEnabled            bool `json:"newQuestIndicatorsEnabled"`
+	SpecialResearchCategoriesEnabled     bool `json:"specialResearchCategoriesEnabled"`
+	SpecialResearchCategoryColorsEnabled bool `json:"specialResearchCategoryColorsEnabled"`
+	TagNewQuestFromLapsedState           bool `json:"tagNewQuestFromLapsedState"`
+	UpdatedSortingEnabled                bool `json:"updatedSortingEnabled"`
 }
 
 type SponsoredGeofenceGiftSettingsBalloonGiftSettings struct {
@@ -2058,6 +2130,35 @@ type WeatherBonusSettings struct {
 	StardustBonusMultiplier                 float64 `json:"stardustBonusMultiplier"`
 }
 
+type WelcomeBackRewardsSettingsItem struct {
+	Amount uint64 `json:"amount"`
+	Item   string `json:"item"`
+}
+
+type WelcomeBackRewardsSettingsRewardData struct {
+	Item WelcomeBackRewardsSettingsItem `json:"item"`
+	Type string                         `json:"type"`
+}
+
+type WelcomeBackRewardsSettingsQuestIconCarousels struct {
+	QuestTemplateId string                                  `json:"questTemplateId"`
+	RewardData      [1]WelcomeBackRewardsSettingsRewardData `json:"rewardData"`
+}
+
+type WelcomeBackRewardsSettingsQuestIconCarouselsV2 struct {
+	QuestTemplateId string                                  `json:"questTemplateId"`
+	RewardData      [3]WelcomeBackRewardsSettingsRewardData `json:"rewardData"`
+}
+
+type WelcomeBackRewardsSettingsCarouselDisplaySettings struct {
+	QuestIconCarousels []any `json:"questIconCarousels"`
+}
+
+type WelcomeBackRewardsSettings struct {
+	CarouselDisplaySettings WelcomeBackRewardsSettingsCarouselDisplaySettings `json:"carouselDisplaySettings"`
+	EnableMultiDayRewards   bool                                              `json:"enableMultiDayRewards"`
+}
+
 type AccessibilitySettingsEntry struct {
 	TemplateID string                         `json:"templateId"`
 	Data       AccessibilitySettingsEntryData `json:"data"`
@@ -2116,17 +2217,6 @@ func (AdvancedSettingsEntry) MasterfileEntry() {}
 type AdvancedSettingsEntryData struct {
 	TemplateID       string           `json:"templateId"`
 	AdvancedSettings AdvancedSettings `json:"advancedSettings"`
-}
-
-type AmuseBoucheWelcomeBackRewardsEntry struct {
-	TemplateID string                                 `json:"templateId"`
-	Data       AmuseBoucheWelcomeBackRewardsEntryData `json:"data"`
-}
-
-func (AmuseBoucheWelcomeBackRewardsEntry) MasterfileEntry() {}
-
-type AmuseBoucheWelcomeBackRewardsEntryData struct {
-	TemplateID string `json:"templateId"`
 }
 
 type ArPhotoFeatureFlagsEntry struct {
@@ -2657,6 +2747,18 @@ type ErrorReportingSettingsEntryData struct {
 	ErrorReportingSettings ErrorReportingSettings `json:"errorReportingSettings"`
 }
 
+type EventMapRefreshSettingsEntry struct {
+	TemplateID string                           `json:"templateId"`
+	Data       EventMapRefreshSettingsEntryData `json:"data"`
+}
+
+func (EventMapRefreshSettingsEntry) MasterfileEntry() {}
+
+type EventMapRefreshSettingsEntryData struct {
+	TemplateID              string                  `json:"templateId"`
+	EventMapRefreshSettings EventMapRefreshSettings `json:"eventMapRefreshSettings"`
+}
+
 type EventPlannerPopularNotificationSettingsEntry struct {
 	TemplateID string                                           `json:"templateId"`
 	Data       EventPlannerPopularNotificationSettingsEntryData `json:"data"`
@@ -2667,17 +2769,6 @@ func (EventPlannerPopularNotificationSettingsEntry) MasterfileEntry() {}
 type EventPlannerPopularNotificationSettingsEntryData struct {
 	TemplateID                              string                                  `json:"templateId"`
 	EventPlannerPopularNotificationSettings EventPlannerPopularNotificationSettings `json:"eventPlannerPopularNotificationSettings"`
-}
-
-type EventServerSettingsEntry struct {
-	TemplateID string                       `json:"templateId"`
-	Data       EventServerSettingsEntryData `json:"data"`
-}
-
-func (EventServerSettingsEntry) MasterfileEntry() {}
-
-type EventServerSettingsEntryData struct {
-	TemplateID string `json:"templateId"`
 }
 
 type ExternalAddressableAssetsSettingsEntry struct {
@@ -3324,7 +3415,8 @@ type QuestDialogueInboxSettingsEntry struct {
 func (QuestDialogueInboxSettingsEntry) MasterfileEntry() {}
 
 type QuestDialogueInboxSettingsEntryData struct {
-	TemplateID string `json:"templateId"`
+	TemplateID                 string                     `json:"templateId"`
+	QuestDialogueInboxSettings QuestDialogueInboxSettings `json:"questDialogueInboxSettings"`
 }
 
 type QuickInviteSettingsEntry struct {
@@ -3347,7 +3439,8 @@ type RaidEntryCostSettingsEntry struct {
 func (RaidEntryCostSettingsEntry) MasterfileEntry() {}
 
 type RaidEntryCostSettingsEntryData struct {
-	TemplateID string `json:"templateId"`
+	TemplateID            string                `json:"templateId"`
+	RaidEntryCostSettings RaidEntryCostSettings `json:"raidEntryCostSettings"`
 }
 
 type RaidLobbyCounterSettingsEntry struct {
@@ -3526,7 +3619,8 @@ type SoftSfidaSettingsEntry struct {
 func (SoftSfidaSettingsEntry) MasterfileEntry() {}
 
 type SoftSfidaSettingsEntryData struct {
-	TemplateID string `json:"templateId"`
+	TemplateID        string            `json:"templateId"`
+	SoftSfidaSettings SoftSfidaSettings `json:"softSfidaSettings"`
 }
 
 type SourdoughMoveMappingSettingsEntry struct {
@@ -3561,7 +3655,8 @@ type SpecialResearchVisualRefreshSettingsEntry struct {
 func (SpecialResearchVisualRefreshSettingsEntry) MasterfileEntry() {}
 
 type SpecialResearchVisualRefreshSettingsEntryData struct {
-	TemplateID string `json:"templateId"`
+	TemplateID                           string                               `json:"templateId"`
+	SpecialResearchVisualRefreshSettings SpecialResearchVisualRefreshSettings `json:"specialResearchVisualRefreshSettings"`
 }
 
 type SponsoredGeofenceGiftSettingsEntry struct {
@@ -3766,4 +3861,16 @@ func (WeatherBonusSettingsEntry) MasterfileEntry() {}
 type WeatherBonusSettingsEntryData struct {
 	TemplateID           string               `json:"templateId"`
 	WeatherBonusSettings WeatherBonusSettings `json:"weatherBonusSettings"`
+}
+
+type WelcomeBackRewardsSettingsEntry struct {
+	TemplateID string                              `json:"templateId"`
+	Data       WelcomeBackRewardsSettingsEntryData `json:"data"`
+}
+
+func (WelcomeBackRewardsSettingsEntry) MasterfileEntry() {}
+
+type WelcomeBackRewardsSettingsEntryData struct {
+	TemplateID                 string                     `json:"templateId"`
+	WelcomeBackRewardsSettings WelcomeBackRewardsSettings `json:"welcomeBackRewardsSettings"`
 }

@@ -9,7 +9,6 @@ export type ItemSettingsItemRareCandy = S<
 		{
 			category: "ITEM_CATEGORY_CANDY";
 			dropTrainerLevel: 5;
-			itemId: "ITEM_RARE_CANDY";
 			itemType: "ITEM_TYPE_CANDY";
 		}
 	>
@@ -20,7 +19,6 @@ export type ItemSettingsItemXlRareCandy = S<
 		{
 			category: "ITEM_CATEGORY_CANDY";
 			dropTrainerLevel: 31;
-			itemId: "ITEM_XL_RARE_CANDY";
 			itemType: "ITEM_TYPE_CANDY";
 		}
 	>

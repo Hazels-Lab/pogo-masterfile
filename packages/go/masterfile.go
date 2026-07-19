@@ -767,6 +767,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
+	case "eventMapRefreshSettings":
+		var e singletons.EventMapRefreshSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
 	case "eventPlannerPopularNotificationSettings":
 		var e singletons.EventPlannerPopularNotificationSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -1091,8 +1097,20 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
+	case "questDialogueInboxSettings":
+		var e singletons.QuestDialogueInboxSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
 	case "quickInviteSettings":
 		var e singletons.QuickInviteSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
+	case "raidEntryCostSettings":
+		var e singletons.RaidEntryCostSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -1181,6 +1199,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
+	case "softSfidaSettings":
+		var e singletons.SoftSfidaSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
 	case "sourdoughMoveMappingSettings":
 		var e singletons.SourdoughMoveMappingSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -1189,6 +1213,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "specialEggSettings":
 		var e singletons.SpecialEggSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
+	case "specialResearchVisualRefreshSettings":
+		var e singletons.SpecialResearchVisualRefreshSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -1295,44 +1325,15 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
+	case "welcomeBackRewardsSettings":
+		var e singletons.WelcomeBackRewardsSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
 	case "":
 		switch probe.TemplateID {
-		case "AMUSE_BOUCHE_WELCOME_BACK_REWARDS":
-			var e singletons.AmuseBoucheWelcomeBackRewardsEntry
-			if err := json.Unmarshal(data, &e); err != nil {
-				return nil, err
-			}
-			return e, nil
-		case "EVENT_SERVER_SETTINGS":
-			var e singletons.EventServerSettingsEntry
-			if err := json.Unmarshal(data, &e); err != nil {
-				return nil, err
-			}
-			return e, nil
-		case "QUEST_DIALOGUE_INBOX_SETTINGS":
-			var e singletons.QuestDialogueInboxSettingsEntry
-			if err := json.Unmarshal(data, &e); err != nil {
-				return nil, err
-			}
-			return e, nil
-		case "RAID_ENTRY_COST_SETTINGS":
-			var e singletons.RaidEntryCostSettingsEntry
-			if err := json.Unmarshal(data, &e); err != nil {
-				return nil, err
-			}
-			return e, nil
-		case "SOFT_SFIDA_SETTINGS":
-			var e singletons.SoftSfidaSettingsEntry
-			if err := json.Unmarshal(data, &e); err != nil {
-				return nil, err
-			}
-			return e, nil
-		case "SPECIAL_RESEARCH_VISUAL_REFRESH_SETTINGS":
-			var e singletons.SpecialResearchVisualRefreshSettingsEntry
-			if err := json.Unmarshal(data, &e); err != nil {
-				return nil, err
-			}
-			return e, nil
+
 		default:
 			return nil, fmt.Errorf("unknown stub templateId: %s", probe.TemplateID)
 		}

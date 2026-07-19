@@ -52,6 +52,7 @@ export type MegaEvoLevelSettings2V0870PokemonFalinks = S<
 				sameTypeExtraCatchXp: 50;
 			};
 			level: 2;
+			megaEnergyCostPerPoint: 160;
 			pokemonId: "FALINKS";
 			progression: {
 				pointsRequired: 7;
@@ -73,6 +74,7 @@ export type MegaEvoLevelSettings3V0870PokemonFalinks = S<
 				sameTypeExtraCatchXp: 100;
 			};
 			level: 3;
+			megaEnergyCostPerPoint: 80;
 			pokemonId: "FALINKS";
 			progression: {
 				pointsRequired: 30;

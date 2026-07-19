@@ -52,6 +52,7 @@ export type MegaEvoLevelSettings2V0354PokemonBanette = S<
 				sameTypeExtraCatchXp: 50;
 			};
 			level: 2;
+			megaEnergyCostPerPoint: 80;
 			pokemonId: "BANETTE";
 			progression: {
 				pointsRequired: 7;
@@ -73,6 +74,7 @@ export type MegaEvoLevelSettings3V0354PokemonBanette = S<
 				sameTypeExtraCatchXp: 100;
 			};
 			level: 3;
+			megaEnergyCostPerPoint: 40;
 			pokemonId: "BANETTE";
 			progression: {
 				pointsRequired: 30;

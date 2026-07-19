@@ -52,6 +52,7 @@ export type MegaEvoLevelSettings2V0248PokemonTyranitar = S<
 				sameTypeExtraCatchXp: 50;
 			};
 			level: 2;
+			megaEnergyCostPerPoint: 160;
 			pokemonId: "TYRANITAR";
 			progression: {
 				pointsRequired: 7;
@@ -73,6 +74,7 @@ export type MegaEvoLevelSettings3V0248PokemonTyranitar = S<
 				sameTypeExtraCatchXp: 100;
 			};
 			level: 3;
+			megaEnergyCostPerPoint: 80;
 			pokemonId: "TYRANITAR";
 			progression: {
 				pointsRequired: 30;

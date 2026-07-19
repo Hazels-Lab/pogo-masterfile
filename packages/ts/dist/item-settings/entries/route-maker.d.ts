@@ -9,7 +9,6 @@ export type ItemSettingsItemRouteMaker = S<
 		{
 			category: "ITEM_CATEGORY_ROUTE_MAKER";
 			dropTrainerLevel: 100;
-			itemId: "ITEM_ROUTE_MAKER";
 			itemType: "ITEM_TYPE_ROUTE_MAKER";
 		}
 	>

@@ -52,6 +52,7 @@ export type MegaEvoLevelSettings2V0080PokemonSlowbro = S<
 				sameTypeExtraCatchXp: 50;
 			};
 			level: 2;
+			megaEnergyCostPerPoint: 80;
 			pokemonId: "SLOWBRO";
 			progression: {
 				pointsRequired: 7;
@@ -73,6 +74,7 @@ export type MegaEvoLevelSettings3V0080PokemonSlowbro = S<
 				sameTypeExtraCatchXp: 100;
 			};
 			level: 3;
+			megaEnergyCostPerPoint: 40;
 			pokemonId: "SLOWBRO";
 			progression: {
 				pointsRequired: 30;

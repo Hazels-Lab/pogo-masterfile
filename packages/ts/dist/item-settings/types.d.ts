@@ -6,7 +6,9 @@ export interface ItemSettings<TemplateID extends string = string, TData extends 
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;
-		itemSettings: TData;
+		itemSettings: TData & {
+			itemId: TemplateID;
+		};
 	};
 }
 export type ItemSettingsType = W<ItemSettings>;
@@ -315,7 +317,6 @@ export interface ItemSettingsData {
 			| "2026-08-01T14:00:00";
 		giftable?: boolean;
 		giftItem?:
-			| number
 			| "ITEM_EVENT_TICKET_02_TO_GIFT"
 			| "ITEM_EVENT_TICKET_03_TO_GIFT"
 			| "ITEM_EVENT_TICKET_04_TO_GIFT"
@@ -329,6 +330,12 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_PINK_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S23_2026_01_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S23_2026_02_TO_GIFT"
+			| "ITEM_EVENT_TICKET_S23_2026_03_TO_GIFT"
+			| "ITEM_EVENT_TICKET_S23_2026_04_TO_GIFT"
+			| "ITEM_EVENT_TICKET_S23_2026_06_TO_GIFT"
+			| "ITEM_EVENT_TICKET_S23_2026_07_TO_GIFT"
+			| "ITEM_EVENT_TICKET_S23_2026_08_TO_GIFT"
+			| "ITEM_EVENT_TICKET_S23_2026_09_TO_GIFT"
 			| "ITEM_EVERGREEN_TICKET_TO_GIFT"
 			| "ITEM_GLOBAL_EVENT_TICKET_TO_GIFT";
 		grantBadgeBeforeEventStartMs?: "1769904000000";
@@ -459,7 +466,6 @@ export interface ItemSettingsData {
 			| "text_rewards_key_shayminmasterworkrerun"
 			| "text_rewards_key_WaterRRD26";
 		ticketItem?:
-			| number
 			| "ITEM_EVENT_TICKET_02"
 			| "ITEM_EVENT_TICKET_03"
 			| "ITEM_EVENT_TICKET_04"
@@ -473,6 +479,9 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_PINK"
 			| "ITEM_EVENT_TICKET_S23_2026_01"
 			| "ITEM_EVENT_TICKET_S23_2026_02"
+			| "ITEM_EVENT_TICKET_S23_2026_04"
+			| "ITEM_EVENT_TICKET_S23_2026_07"
+			| "ITEM_EVENT_TICKET_S23_2026_08"
 			| "ITEM_EVERGREEN_TICKET"
 			| "ITEM_GLOBAL_EVENT_TICKET";
 		titleImageUrl?: "https://storage.googleapis.com/prod-public-images/gotourlogo_1914247967.png";
@@ -493,7 +502,6 @@ export interface ItemSettingsData {
 		upgradeType: "INCREASE_ITEM_STORAGE" | "INCREASE_POKEMON_STORAGE" | "INCREASE_POSTCARD_STORAGE";
 	};
 	itemCap?: number;
-	itemId: number | string;
 	itemType:
 		| "ITEM_TYPE_BATTLE"
 		| "ITEM_TYPE_BREAKFAST"
