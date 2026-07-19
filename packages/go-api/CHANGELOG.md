@@ -4,6 +4,14 @@ All notable changes to the Go runtime API module are recorded here. The format i
 
 > Note: Go module releases for this package are tagged as `packages/go-api/vX.Y.Z` (subdirectory-prefixed), per Go's monorepo tagging rules.
 
+## [0.1.22] - 2026-07-19
+
+Automated regeneration from upstream masterfile commit `2beaffdfe486ca495c3c3110ed36550ecc850216`.
+
+### Removed template IDs (1)
+
+- general2.ticket.5
+
 ## [0.1.21] - 2026-07-18
 
 Automated regeneration from upstream masterfile commit `e7ae9be0a7d857e8ef4b2fc1b50ce42fd4ed9d7d`.

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 48 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 47 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -318,24 +318,6 @@ export type IapItemDisplayGeneral2Ticket4Giftable = S<
 			sortOrder: 1;
 			spriteId: "general2.ticket.2";
 			title: "general1.ticket.2_WaterRRD26_title";
-		}
-	>
->;
-export type IapItemDisplayGeneral2Ticket5 = S<
-	IapItemDisplay<
-		"general2.ticket.5",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F97c2eaee_PGO-MCS_Raichu_Super_Mega_Raid_Day_v3-1024x576-nologo.jpg";
-			sku: "pgorelease.general2.ticket.5";
-			skuDisableTime: "2026-07-18T17:00:00";
-			skuDisableTimeUtcMs: "1784394000000";
-			skuEnableTime: "2019-03-14T08:00:00";
-			skuEnableTimeUtcMs: "1552550400000";
-			sortOrder: 2;
-			spriteId: "general2.ticket.6";
-			title: "general2.ticket.5_MegaRaichuRaidDay";
-			useEnvironmentPrefix: true;
 		}
 	>
 >;
@@ -924,7 +906,6 @@ export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayGeneral2Ticket3
 	| IapItemDisplayGeneral2Ticket4
 	| IapItemDisplayGeneral2Ticket4Giftable
-	| IapItemDisplayGeneral2Ticket5
 	| IapItemDisplayGeneral2Ticket6
 	| IapItemDisplayGeneral2Ticket7
 	| IapItemDisplayGeneral2Ticket7Giftable
