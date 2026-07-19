@@ -30,11 +30,13 @@ export interface PokemonSettingsData {
 		{
 			megaEnergyAwardAmount: number;
 			megaPokemonId: "CHARIZARD" | "GARDEVOIR" | "MEWTWO" | "RAICHU";
+			tempEvoId?: "TEMP_EVOLUTION_MEGA_X";
 		},
 		{
 			genderRequirement?: "MALE";
 			megaEnergyAwardAmount: number;
 			megaPokemonId: "CHARIZARD" | "GALLADE" | "MEWTWO" | "RAICHU";
+			tempEvoId?: "TEMP_EVOLUTION_MEGA_Y";
 		},
 	];
 	camera: {
@@ -45,7 +47,7 @@ export interface PokemonSettingsData {
 		shoulderModeScale?: number;
 	};
 	candyToEvolve?: number;
-	cinematicMoves?: Array<number | string>;
+	cinematicMoves?: Array<string>;
 	combatDefaultCameraAngle?: [number, number, number];
 	combatOpponentFocusCameraAngle?: [number, number, number];
 	combatPlayerFocusCameraAngle?: [number, number, number];
@@ -197,7 +199,7 @@ export interface PokemonSettingsData {
 		item: "ITEM_BEANS" | "ITEM_MOVE_REROLL_OTHER_SPECIAL_ATTACK_A";
 	};
 	familyId: string;
-	form?: number | string;
+	form?: string;
 	formChange?: Array<{
 		availableForm: Array<
 			| "FURFROU_DANDY"
@@ -330,6 +332,7 @@ export interface PokemonSettingsData {
 			ibfcVfxKey: "ALTERNATE_TO_DEFAULT";
 			replacementMove?: "AURA_WHEEL_ELECTRIC";
 		};
+		aternateForms?: ["CRAMORANT_GULPING", "CRAMORANT_GORGING"];
 		combatEnable?: boolean;
 		defaultForm?: "AEGISLASH_SHIELD" | "CRAMORANT_NORMAL" | "MIMIKYU_DISGUISED" | "MORPEKO_FULL_BELLY";
 		defaultToAlternateIbfcSettings?: {

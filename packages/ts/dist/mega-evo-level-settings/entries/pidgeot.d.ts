@@ -52,6 +52,7 @@ export type MegaEvoLevelSettings2V0018PokemonPidgeot = S<
 				sameTypeExtraCatchXp: 50;
 			};
 			level: 2;
+			megaEnergyCostPerPoint: 80;
 			pokemonId: "PIDGEOT";
 			progression: {
 				pointsRequired: 7;
@@ -73,6 +74,7 @@ export type MegaEvoLevelSettings3V0018PokemonPidgeot = S<
 				sameTypeExtraCatchXp: 100;
 			};
 			level: 3;
+			megaEnergyCostPerPoint: 40;
 			pokemonId: "PIDGEOT";
 			progression: {
 				pointsRequired: 30;

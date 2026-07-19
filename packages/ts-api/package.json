@@ -1,6 +1,6 @@
 {
 	"name": "pogo-masterfile",
-	"version": "0.1.29",
+	"version": "0.1.30",
 	"description": "Runtime API for the Pokémon GO masterfile. Loads, indexes, and queries entries with literal-typed lookups and per-group accessors. Built on `pogo-masterfile-types`.",
 	"license": "MIT",
 	"author": "Hazel's Lab (https://github.com/Hazels-Lab)",

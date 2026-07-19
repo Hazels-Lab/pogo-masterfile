@@ -5,6 +5,7 @@ use serde::{Deserialize, Serialize};
 pub struct BuddyWalkedMegaEnergyAwards {
     pub mega_energy_award_amount: u64,
     pub mega_pokemon_id: String,
+    pub temp_evo_id: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -13,6 +14,7 @@ pub struct BuddyWalkedMegaEnergyAwardsV2 {
     pub gender_requirement: Option<String>,
     pub mega_energy_award_amount: u64,
     pub mega_pokemon_id: String,
+    pub temp_evo_id: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -23,13 +25,6 @@ pub struct Camera {
     pub cylinder_radius_m: Option<f64>,
     pub disk_radius_m: Option<f64>,
     pub shoulder_mode_scale: Option<f64>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(untagged)]
-pub enum CinematicMovesValue {
-    Uint(u64),
-    String(String),
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -197,6 +192,7 @@ pub struct AlternateToDefaultIbfcSettings {
 pub struct Ibfc {
     pub alternate_form: Option<String>,
     pub alternate_to_default_ibfc_settings: Option<AlternateToDefaultIbfcSettings>,
+    pub aternate_forms: Option<[String; 2]>,
     pub combat_enable: Option<bool>,
     pub default_form: Option<String>,
     pub default_to_alternate_ibfc_settings: Option<AlternateToDefaultIbfcSettings>,
@@ -287,7 +283,7 @@ pub struct PokemonSettings {
         Option<(BuddyWalkedMegaEnergyAwards, BuddyWalkedMegaEnergyAwardsV2)>,
     pub camera: Camera,
     pub candy_to_evolve: Option<u64>,
-    pub cinematic_moves: Option<Vec<CinematicMovesValue>>,
+    pub cinematic_moves: Option<Vec<String>>,
     pub combat_default_camera_angle: Option<[f64; 3]>,
     pub combat_opponent_focus_camera_angle: Option<[f64; 3]>,
     pub combat_player_focus_camera_angle: Option<[f64; 3]>,
@@ -302,7 +298,7 @@ pub struct PokemonSettings {
     pub evolution_pips: Option<u64>,
     pub exclusive_key_item: Option<ExclusiveKeyItem>,
     pub family_id: String,
-    pub form: Option<CinematicMovesValue>,
+    pub form: Option<String>,
     pub form_change: Option<Vec<FormChange>>,
     pub height_std_dev: f64,
     pub ibfc: Ibfc,

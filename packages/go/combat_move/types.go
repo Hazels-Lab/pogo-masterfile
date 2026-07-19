@@ -2,8 +2,6 @@
 
 package combat_move
 
-import "encoding/json"
-
 type CombatMoveBuffs struct {
 	AttackerAttackStatStageChange  *int64   `json:"attackerAttackStatStageChange,omitempty"`
 	AttackerDefenseStatStageChange *int64   `json:"attackerDefenseStatStageChange,omitempty"`
@@ -18,7 +16,7 @@ type CombatMove struct {
 	EnergyDelta   *int64           `json:"energyDelta,omitempty"`
 	Power         *float64         `json:"power,omitempty"`
 	Type          string           `json:"type"`
-	UniqueId      json.RawMessage  `json:"uniqueId"`
+	UniqueId      string           `json:"uniqueId"`
 	VfxName       string           `json:"vfxName"`
 }
 

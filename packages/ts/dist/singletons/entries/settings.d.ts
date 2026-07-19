@@ -50,6 +50,8 @@ export interface AdvancedSettings {
 		templateId: "ADVANCED_SETTINGS";
 		advancedSettings: {
 			downloadAllAssetsEnabled: true;
+			maxDeviceMemoryForHighQualityModeMb: 6144;
+			maxDeviceMemoryForStandardQualityModeMb: 6100;
 		};
 	};
 }
@@ -90,6 +92,10 @@ export interface BattleAnimationSettings {
 		battleAnimationSettings: {
 			combatAnimationConfiguration: {
 				fastAttackSettings: object;
+				missedFastAttackRecoverySettings: {
+					enabled: true;
+					maxCatchUpAttacks: 3;
+				};
 				projectedHealthAnimationDurationSeconds: 0.09;
 				uiCameraAnimationSettings: {
 					transitionInDurationSeconds: 0.06;
@@ -2777,6 +2783,16 @@ export interface ErrorReportingSettings {
 	};
 }
 
+export interface EventMapRefreshSettings {
+	templateId: "EVENT_SERVER_SETTINGS";
+	data: {
+		templateId: "EVENT_SERVER_SETTINGS";
+		eventMapRefreshSettings: {
+			eventServerSettingsHash: "484769a62f4e0466590d0664cf05f427914e6cdaba72145abdf07651bba66698";
+		};
+	};
+}
+
 export interface EventPlannerPopularNotificationSettings {
 	templateId: "EVENT_PLANNER_POPULAR_RAID_RSVP_SETTINGS";
 	data: {
@@ -2792,13 +2808,6 @@ export interface EventPlannerPopularNotificationSettings {
 			timeslotBufferWindowSeconds: "600";
 			urbanThreshold: 1;
 		};
-	};
-}
-
-export interface EventServerSettings {
-	templateId: "EVENT_SERVER_SETTINGS";
-	data: {
-		templateId: "EVENT_SERVER_SETTINGS";
 	};
 }
 
@@ -3628,6 +3637,32 @@ export interface MegaEvoSettings {
 			evolutionLengthMs: "28800000";
 			maxCandyHoardSize: 50000;
 			numMegaLevels: 4;
+			separatedTempEvoBranches: [
+				{
+					pokedexId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
+				},
+				{
+					pokedexId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
+				},
+				{
+					pokedexId: "MEWTWO";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
+				},
+				{
+					pokedexId: "MEWTWO";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
+				},
+				{
+					pokedexId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
+				},
+				{
+					pokedexId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
+				},
+			];
 		};
 	};
 }
@@ -4737,6 +4772,43 @@ export interface QuestDialogueInboxSettings {
 	templateId: "QUEST_DIALOGUE_INBOX_SETTINGS";
 	data: {
 		templateId: "QUEST_DIALOGUE_INBOX_SETTINGS";
+		questDialogueInboxSettings: {
+			cooldownDurationMs: "300000";
+			QuestDialogueTriggers: [
+				{
+					numberOfInteractions: 1;
+					trigger: "CATCH_POKEMON";
+				},
+				{
+					numberOfInteractions: 1;
+					trigger: "PLAYER_PROFILE";
+				},
+				{
+					numberOfInteractions: 1;
+					trigger: "INCENSE";
+				},
+				{
+					numberOfInteractions: 1;
+					trigger: "ROUTE";
+				},
+				{
+					numberOfInteractions: 1;
+					trigger: "TGR";
+				},
+				{
+					numberOfInteractions: 1;
+					trigger: "PARTY_PLAY";
+				},
+				{
+					numberOfInteractions: 1;
+					trigger: "MEGA_ENERGY";
+				},
+				{
+					numberOfInteractions: 1;
+					trigger: "POWER_SPOT";
+				},
+			];
+		};
 	};
 }
 
@@ -4755,6 +4827,142 @@ export interface RaidEntryCostSettings {
 	templateId: "RAID_ENTRY_COST_SETTINGS";
 	data: {
 		templateId: "RAID_ENTRY_COST_SETTINGS";
+		raidEntryCostSettings: {
+			raidLevelEntryCost: [
+				{
+					raidEntryCost: [
+						{
+							itemRequirement: {
+								count: 1;
+								item: "ITEM_PAID_RAID_TICKET";
+							};
+							raidType: "RAID_LOCATION_REQUERIMENT_IN_PERSON";
+						},
+						{
+							itemRequirement: {
+								count: 200;
+								item: "ITEM_ENHANCED_CURRENCY";
+							};
+							raidType: "RAID_LOCATION_REQUERIMENT_REMOTE";
+						},
+						{
+							itemRequirement: {
+								count: 1;
+								item: "ITEM_FREE_RAID_TICKET";
+							};
+							raidType: "RAID_LOCATION_REQUERIMENT_IN_PERSON";
+						},
+						{
+							itemRequirement: {
+								count: 200;
+								item: "ITEM_ENHANCED_CURRENCY";
+							};
+							raidType: "RAID_LOCATION_REQUERIMENT_IN_PERSON";
+						},
+					];
+					raidLevel: "RAID_LEVEL_4_MEGA_ENHANCED";
+				},
+				{
+					raidEntryCost: [
+						{
+							itemRequirement: {
+								count: 1;
+								item: "ITEM_PAID_RAID_TICKET";
+							};
+							raidType: "RAID_LOCATION_REQUERIMENT_IN_PERSON";
+						},
+						{
+							itemRequirement: {
+								count: 200;
+								item: "ITEM_ENHANCED_CURRENCY";
+							};
+							raidType: "RAID_LOCATION_REQUERIMENT_REMOTE";
+						},
+						{
+							itemRequirement: {
+								count: 1;
+								item: "ITEM_FREE_RAID_TICKET";
+							};
+							raidType: "RAID_LOCATION_REQUERIMENT_IN_PERSON";
+						},
+						{
+							itemRequirement: {
+								count: 200;
+								item: "ITEM_ENHANCED_CURRENCY";
+							};
+							raidType: "RAID_LOCATION_REQUERIMENT_IN_PERSON";
+						},
+					];
+					raidLevel: "RAID_LEVEL_5_MEGA_ENHANCED";
+				},
+				{
+					raidEntryCost: [
+						{
+							itemRequirement: {
+								count: 1;
+								item: "ITEM_PAID_RAID_TICKET";
+							};
+							raidType: "RAID_LOCATION_REQUERIMENT_IN_PERSON";
+						},
+						{
+							itemRequirement: {
+								count: 1;
+								item: "ITEM_REMOTE_RAID_TICKET";
+							};
+							raidType: "RAID_LOCATION_REQUERIMENT_REMOTE";
+						},
+						{
+							itemRequirement: {
+								count: 1;
+								item: "ITEM_FREE_RAID_TICKET";
+							};
+							raidType: "RAID_LOCATION_REQUERIMENT_IN_PERSON";
+						},
+						{
+							itemRequirement: {
+								count: 150;
+								item: "ITEM_ENHANCED_CURRENCY";
+							};
+							raidType: "RAID_LOCATION_REQUERIMENT_IN_PERSON";
+						},
+					];
+					raidLevel: "RAID_LEVEL_MEGA";
+				},
+				{
+					raidEntryCost: [
+						{
+							itemRequirement: {
+								count: 1;
+								item: "ITEM_PAID_RAID_TICKET";
+							};
+							raidType: "RAID_LOCATION_REQUERIMENT_IN_PERSON";
+						},
+						{
+							itemRequirement: {
+								count: 1;
+								item: "ITEM_REMOTE_RAID_TICKET";
+							};
+							raidType: "RAID_LOCATION_REQUERIMENT_REMOTE";
+						},
+						{
+							itemRequirement: {
+								count: 1;
+								item: "ITEM_FREE_RAID_TICKET";
+							};
+							raidType: "RAID_LOCATION_REQUERIMENT_IN_PERSON";
+						},
+						{
+							itemRequirement: {
+								count: 150;
+								item: "ITEM_ENHANCED_CURRENCY";
+							};
+							raidType: "RAID_LOCATION_REQUERIMENT_IN_PERSON";
+						},
+					];
+					raidLevel: "RAID_LEVEL_MEGA_5";
+				},
+			];
+		};
 	};
 }
 
@@ -4871,6 +5079,18 @@ export interface RaidSettings {
 			raidFeatureFlags: {
 				useCachedRaidBossPokemon: true;
 			};
+			raidLevelEncounterTimings: [
+				{
+					autoThrowCountdownStartSeconds: 5;
+					autoThrowSeconds: 20;
+					showCatchLootOnPokemonPage: true;
+				},
+				{
+					autoThrowCountdownStartSeconds: 20;
+					autoThrowSeconds: 20;
+					showCatchLootOnPokemonPage: true;
+				},
+			];
 			raidLevelMusicOverrides: [
 				{
 					battleMusicKey: "GoFest2022Music_Battle";
@@ -4897,8 +5117,8 @@ export interface RaidSettings {
 			remoteRaidDistanceValidation: true;
 			remoteRaidEnabled: true;
 			remoteRaidsMinPlayerLevel: 5;
-			unsupportedRaidLevelsForFriendInvites: ["RAID_LEVEL_EXTENDED_EGG", "RAID_LEVEL_4", 18, 19];
-			unsupportedRemoteRaidLevels: ["RAID_LEVEL_EXTENDED_EGG", "RAID_LEVEL_4", 18, 19];
+			unsupportedRaidLevelsForFriendInvites: ["RAID_LEVEL_EXTENDED_EGG", "RAID_LEVEL_4", "RAID_LEVEL_COORDINATED_1", "RAID_LEVEL_COORDINATED_2"];
+			unsupportedRemoteRaidLevels: ["RAID_LEVEL_EXTENDED_EGG", "RAID_LEVEL_4", "RAID_LEVEL_COORDINATED_1", "RAID_LEVEL_COORDINATED_2"];
 		};
 	};
 }
@@ -5126,6 +5346,10 @@ export interface SharedFusionSettings {
 	data: {
 		templateId: "SHARED_FUSION_SETTINGS";
 		sharedFusionSettings: {
+			fusionAlignmentSettings: {
+				disablePurifiedPokemonAsComponent: true;
+				disableShadowPokemonAsComponent: true;
+			};
 			fusionEnabled: true;
 		};
 	};
@@ -5149,6 +5373,13 @@ export interface SoftSfidaSettings {
 	templateId: "SOFT_SFIDA_SETTINGS";
 	data: {
 		templateId: "SOFT_SFIDA_SETTINGS";
+		softSfidaSettings: {
+			catchActionDelayMs: 5000;
+			geofenceSizeM: 50;
+			minPlayerLevel: 20;
+			reservedGeofenceCount: 4;
+			spinActionDelayMs: 10000;
+		};
 	};
 }
 
@@ -5470,6 +5701,14 @@ export interface SpecialResearchVisualRefreshSettings {
 	templateId: "SPECIAL_RESEARCH_VISUAL_REFRESH_SETTINGS";
 	data: {
 		templateId: "SPECIAL_RESEARCH_VISUAL_REFRESH_SETTINGS";
+		specialResearchVisualRefreshSettings: {
+			multipleFavoritesEnabled: true;
+			newQuestIndicatorsEnabled: true;
+			specialResearchCategoriesEnabled: true;
+			specialResearchCategoryColorsEnabled: true;
+			tagNewQuestFromLapsedState: true;
+			updatedSortingEnabled: true;
+		};
 	};
 }
 
@@ -5930,6 +6169,118 @@ export interface WeatherBonusSettings {
 	};
 }
 
+export interface WelcomeBackRewardsSettings {
+	templateId: "AMUSE_BOUCHE_WELCOME_BACK_REWARDS";
+	data: {
+		templateId: "AMUSE_BOUCHE_WELCOME_BACK_REWARDS";
+		welcomeBackRewardsSettings: {
+			carouselDisplaySettings: {
+				questIconCarousels: [
+					{
+						questTemplateId: "AMUSE_BOUCHE_WB_REWARDS_MULTIPLE_SHORT_0";
+						rewardData: [
+							{
+								item: {
+									amount: 5;
+									item: "ITEM_POKE_BALL";
+								};
+								type: "ITEM";
+							},
+						];
+					},
+					{
+						questTemplateId: "AMUSE_BOUCHE_WB_REWARDS_MULTIPLE_SHORT_1";
+						rewardData: [
+							{
+								item: {
+									amount: 1;
+									item: "ITEM_LUCKY_EGG";
+								};
+								type: "ITEM";
+							},
+						];
+					},
+					{
+						questTemplateId: "AMUSE_BOUCHE_WB_REWARDS_MULTIPLE_SHORT_2";
+						rewardData: [
+							{
+								item: {
+									amount: 5;
+									item: "ITEM_GREAT_BALL";
+								};
+								type: "ITEM";
+							},
+						];
+					},
+					{
+						questTemplateId: "AMUSE_BOUCHE_WB_REWARDS_MULTIPLE_SHORT_3";
+						rewardData: [
+							{
+								item: {
+									amount: 1;
+									item: "ITEM_TROY_DISK";
+								};
+								type: "ITEM";
+							},
+						];
+					},
+					{
+						questTemplateId: "AMUSE_BOUCHE_WB_REWARDS_MULTIPLE_SHORT_4";
+						rewardData: [
+							{
+								item: {
+									amount: 5;
+									item: "ITEM_ULTRA_BALL";
+								};
+								type: "ITEM";
+							},
+						];
+					},
+					{
+						questTemplateId: "AMUSE_BOUCHE_WB_REWARDS_MULTIPLE_SHORT_5";
+						rewardData: [
+							{
+								item: {
+									amount: 1;
+									item: "ITEM_INCUBATOR_BASIC";
+								};
+								type: "ITEM";
+							},
+						];
+					},
+					{
+						questTemplateId: "AMUSE_BOUCHE_WB_REWARDS_MULTIPLE_SHORT_6";
+						rewardData: [
+							{
+								item: {
+									amount: 1;
+									item: "ITEM_PAID_RAID_TICKET";
+								};
+								type: "ITEM";
+							},
+							{
+								item: {
+									amount: 1;
+									item: "ITEM_POFFIN";
+								};
+								type: "ITEM";
+							},
+							{
+								item: {
+									amount: 1;
+									item: "ITEM_GEN4_EVOLUTION_STONE";
+								};
+								type: "ITEM";
+							},
+						];
+					},
+				];
+			};
+			enableMultiDayRewards: true;
+		};
+	};
+}
+
 export type SingletonsSettingsMasterfileEntry =
 	| AccessibilitySettings
 	| AdditiveSceneSettings
@@ -5972,8 +6323,8 @@ export type SingletonsSettingsMasterfileEntry =
 	| EggHatchImprovementsSettings
 	| EncounterSettings
 	| ErrorReportingSettings
+	| EventMapRefreshSettings
 	| EventPlannerPopularNotificationSettings
-	| EventServerSettings
 	| ExternalAddressableAssetsSettings
 	| FeatureUnlockLevelSettings
 	| GeotargetedQuestSettings
@@ -6057,6 +6408,7 @@ export type SingletonsSettingsMasterfileEntry =
 	| VistaGeneralSettings
 	| VsSeekerClientSettings
 	| VsSeekerScheduleSettings
-	| WeatherBonusSettings;
+	| WeatherBonusSettings
+	| WelcomeBackRewardsSettings;
 
 export type SingletonsSettingsTemplateID = SingletonsSettingsMasterfileEntry["templateId"];

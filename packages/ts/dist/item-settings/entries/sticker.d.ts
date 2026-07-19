@@ -9,7 +9,6 @@ export type ItemSettingsItemStickerInventory = S<
 		{
 			category: "ITEM_CATEGORY_STICKER";
 			dropTrainerLevel: 100;
-			itemId: "ITEM_STICKER_INVENTORY";
 			itemType: "ITEM_TYPE_STICKER_INVENTORY";
 		}
 	>

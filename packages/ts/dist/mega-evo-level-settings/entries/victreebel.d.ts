@@ -52,6 +52,7 @@ export type MegaEvoLevelSettings2V0071PokemonVictreebel = S<
 				sameTypeExtraCatchXp: 50;
 			};
 			level: 2;
+			megaEnergyCostPerPoint: 160;
 			pokemonId: "VICTREEBEL";
 			progression: {
 				pointsRequired: 7;
@@ -73,6 +74,7 @@ export type MegaEvoLevelSettings3V0071PokemonVictreebel = S<
 				sameTypeExtraCatchXp: 100;
 			};
 			level: 3;
+			megaEnergyCostPerPoint: 80;
 			pokemonId: "VICTREEBEL";
 			progression: {
 				pointsRequired: 30;

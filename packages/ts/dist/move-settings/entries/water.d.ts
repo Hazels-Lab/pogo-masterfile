@@ -597,7 +597,7 @@ export type MoveSettingsV0593MoveDive = S<
 			animationId: 5;
 			durationMs: 3300;
 			energyDelta: -33;
-			movementId: 593;
+			movementId: "DIVE";
 			pokemonType: "POKEMON_TYPE_WATER";
 			power: 70;
 			staminaLossScalar: 0.01;

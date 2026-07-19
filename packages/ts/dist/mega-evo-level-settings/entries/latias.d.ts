@@ -52,6 +52,7 @@ export type MegaEvoLevelSettings2V0380PokemonLatias = S<
 				sameTypeExtraCatchXp: 50;
 			};
 			level: 2;
+			megaEnergyCostPerPoint: 160;
 			pokemonId: "LATIAS";
 			progression: {
 				pointsRequired: 7;
@@ -73,6 +74,7 @@ export type MegaEvoLevelSettings3V0380PokemonLatias = S<
 				sameTypeExtraCatchXp: 100;
 			};
 			level: 3;
+			megaEnergyCostPerPoint: 80;
 			pokemonId: "LATIAS";
 			progression: {
 				pointsRequired: 30;

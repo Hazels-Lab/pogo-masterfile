@@ -6,7 +6,9 @@ export interface LocationCardSettings<TemplateID extends string = string, TData 
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;
-		locationCardSettings: TData;
+		locationCardSettings: TData & {
+			locationCard: TemplateID;
+		};
 	};
 }
 export type LocationCardSettingsType = W<LocationCardSettings>;
@@ -14,7 +16,6 @@ export type LocationCardSettingsType = W<LocationCardSettings>;
 export interface LocationCardSettingsData {
 	cardType?: "LOCATION_CARD" | "SPECIAL_BACKGROUND";
 	imageUrl: string;
-	locationCard: number | string;
 	vfxAddress?:
 		| "bgfx_9thAnni"
 		| "bgfx_10thAnni"

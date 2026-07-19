@@ -18,10 +18,12 @@ export type PokemonSettingsV0025PokemonPikachu = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -102,10 +104,12 @@ export type PokemonSettingsV0025PokemonPikachuAdventureHat2020 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -181,10 +185,12 @@ export type PokemonSettingsV0025PokemonPikachuAnniversary2026 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -260,10 +266,12 @@ export type PokemonSettingsV0025PokemonPikachuBb2026 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -336,10 +344,12 @@ export type PokemonSettingsV0025PokemonPikachuCopy2019 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -413,10 +423,12 @@ export type PokemonSettingsV0025PokemonPikachuCostume2020 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -492,10 +504,12 @@ export type PokemonSettingsV0025PokemonPikachuDiwali2024 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -571,10 +585,12 @@ export type PokemonSettingsV0025PokemonPikachuDoctor = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -648,10 +664,12 @@ export type PokemonSettingsV0025PokemonPikachuFall2019 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -725,10 +743,12 @@ export type PokemonSettingsV0025PokemonPikachuFlying01 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -803,10 +823,12 @@ export type PokemonSettingsV0025PokemonPikachuFlying02 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -881,10 +903,12 @@ export type PokemonSettingsV0025PokemonPikachuFlying03 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -959,10 +983,12 @@ export type PokemonSettingsV0025PokemonPikachuFlying04 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -1036,10 +1062,12 @@ export type PokemonSettingsV0025PokemonPikachuFlying5thAnniv = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -1114,10 +1142,12 @@ export type PokemonSettingsV0025PokemonPikachuFlyingOkinawa = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -1193,10 +1223,12 @@ export type PokemonSettingsV0025PokemonPikachuFossil2026 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -1273,10 +1305,12 @@ export type PokemonSettingsV0025PokemonPikachuGofest2022 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -1351,10 +1385,12 @@ export type PokemonSettingsV0025PokemonPikachuGofest2024Mtiara = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -1427,10 +1463,12 @@ export type PokemonSettingsV0025PokemonPikachuGofest2024Stiara = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -1503,10 +1541,12 @@ export type PokemonSettingsV0025PokemonPikachuGofest2025GogglesBlue = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -1583,10 +1623,12 @@ export type PokemonSettingsV0025PokemonPikachuGofest2025GogglesRed = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -1663,10 +1705,12 @@ export type PokemonSettingsV0025PokemonPikachuGofest2025GogglesYellow = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -1743,10 +1787,12 @@ export type PokemonSettingsV0025PokemonPikachuGofest2025MonocleBlue = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -1823,10 +1869,12 @@ export type PokemonSettingsV0025PokemonPikachuGofest2025MonocleRed = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -1903,10 +1951,12 @@ export type PokemonSettingsV0025PokemonPikachuGofest2025MonocleYellow = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -1983,10 +2033,12 @@ export type PokemonSettingsV0025PokemonPikachuGofest2026CapBlue = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -2062,10 +2114,12 @@ export type PokemonSettingsV0025PokemonPikachuGofest2026CapRed = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -2141,10 +2195,12 @@ export type PokemonSettingsV0025PokemonPikachuGofest2026CapYellow = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -2220,10 +2276,12 @@ export type PokemonSettingsV0025PokemonPikachuGotour2024A = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -2296,10 +2354,12 @@ export type PokemonSettingsV0025PokemonPikachuGotour2024A02 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -2372,10 +2432,12 @@ export type PokemonSettingsV0025PokemonPikachuGotour2024B = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -2448,10 +2510,12 @@ export type PokemonSettingsV0025PokemonPikachuGotour2024B02 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -2524,10 +2588,12 @@ export type PokemonSettingsV0025PokemonPikachuGotour2025A = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -2600,10 +2666,12 @@ export type PokemonSettingsV0025PokemonPikachuGotour2025A02 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -2676,10 +2744,12 @@ export type PokemonSettingsV0025PokemonPikachuGotour2025B = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -2752,10 +2822,12 @@ export type PokemonSettingsV0025PokemonPikachuGotour2025B02 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -2828,10 +2900,12 @@ export type PokemonSettingsV0025PokemonPikachuGotour2026A = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -2904,10 +2978,12 @@ export type PokemonSettingsV0025PokemonPikachuGotour2026A02 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -2980,10 +3056,12 @@ export type PokemonSettingsV0025PokemonPikachuGotour2026B = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -3056,10 +3134,12 @@ export type PokemonSettingsV0025PokemonPikachuGotour2026B02 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -3132,10 +3212,12 @@ export type PokemonSettingsV0025PokemonPikachuGotour2026C = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -3208,10 +3290,12 @@ export type PokemonSettingsV0025PokemonPikachuGotour2026C02 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -3284,10 +3368,12 @@ export type PokemonSettingsV0025PokemonPikachuHorizons = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -3361,10 +3447,12 @@ export type PokemonSettingsV0025PokemonPikachuJeju = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -3437,10 +3525,12 @@ export type PokemonSettingsV0025PokemonPikachuKariyushi = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -3513,10 +3603,12 @@ export type PokemonSettingsV0025PokemonPikachuKurta = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -3592,10 +3684,12 @@ export type PokemonSettingsV0025PokemonPikachuNormal = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -3677,10 +3771,12 @@ export type PokemonSettingsV0025PokemonPikachuPopStar = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -3753,10 +3849,12 @@ export type PokemonSettingsV0025PokemonPikachuRockStar = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -3829,10 +3927,12 @@ export type PokemonSettingsV0025PokemonPikachuSummer2023A = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -3905,10 +4005,12 @@ export type PokemonSettingsV0025PokemonPikachuSummer2023B = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -3981,10 +4083,12 @@ export type PokemonSettingsV0025PokemonPikachuSummer2023C = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -4057,10 +4161,12 @@ export type PokemonSettingsV0025PokemonPikachuSummer2023D = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -4133,10 +4239,12 @@ export type PokemonSettingsV0025PokemonPikachuSummer2023E = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -4209,10 +4317,12 @@ export type PokemonSettingsV0025PokemonPikachuTshirt01 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -4285,10 +4395,12 @@ export type PokemonSettingsV0025PokemonPikachuTshirt02 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -4361,10 +4473,12 @@ export type PokemonSettingsV0025PokemonPikachuTshirt03 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -4437,10 +4551,12 @@ export type PokemonSettingsV0025PokemonPikachuVisor2026 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -4517,10 +4633,12 @@ export type PokemonSettingsV0025PokemonPikachuVs2019 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -4593,10 +4711,12 @@ export type PokemonSettingsV0025PokemonPikachuWcs2022 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -4673,10 +4793,12 @@ export type PokemonSettingsV0025PokemonPikachuWcs2023 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -4753,10 +4875,12 @@ export type PokemonSettingsV0025PokemonPikachuWcs2024 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -4833,10 +4957,12 @@ export type PokemonSettingsV0025PokemonPikachuWcs2025 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -4912,10 +5038,12 @@ export type PokemonSettingsV0025PokemonPikachuWinter2020 = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -4990,10 +5118,12 @@ export type PokemonSettingsV0026PokemonRaichu = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -5108,10 +5238,12 @@ export type PokemonSettingsV0026PokemonRaichuAlola = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -5186,10 +5318,12 @@ export type PokemonSettingsV0026PokemonRaichuNormal = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -6594,10 +6728,12 @@ export type PokemonSettingsV0172PokemonPichu = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -6675,10 +6811,12 @@ export type PokemonSettingsV0172PokemonPichuNormal = S<
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 5;
 					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {

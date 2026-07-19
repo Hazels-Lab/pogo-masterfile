@@ -2,17 +2,17 @@
 
 package pokemon_settings
 
-import "encoding/json"
-
 type PokemonSettingsBuddyWalkedMegaEnergyAwards struct {
-	MegaEnergyAwardAmount uint64 `json:"megaEnergyAwardAmount"`
-	MegaPokemonId         string `json:"megaPokemonId"`
+	MegaEnergyAwardAmount uint64  `json:"megaEnergyAwardAmount"`
+	MegaPokemonId         string  `json:"megaPokemonId"`
+	TempEvoId             *string `json:"tempEvoId,omitempty"`
 }
 
 type PokemonSettingsBuddyWalkedMegaEnergyAwardsV2 struct {
 	GenderRequirement     *string `json:"genderRequirement,omitempty"`
 	MegaEnergyAwardAmount uint64  `json:"megaEnergyAwardAmount"`
 	MegaPokemonId         string  `json:"megaPokemonId"`
+	TempEvoId             *string `json:"tempEvoId,omitempty"`
 }
 
 type PokemonSettingsCamera struct {
@@ -156,6 +156,7 @@ type PokemonSettingsAlternateToDefaultIbfcSettings struct {
 type PokemonSettingsIbfc struct {
 	AlternateForm                  *string                                        `json:"alternateForm,omitempty"`
 	AlternateToDefaultIbfcSettings *PokemonSettingsAlternateToDefaultIbfcSettings `json:"alternateToDefaultIbfcSettings,omitempty"`
+	AternateForms                  *[2]string                                     `json:"aternateForms,omitempty"`
 	CombatEnable                   *bool                                          `json:"combatEnable,omitempty"`
 	DefaultForm                    *string                                        `json:"defaultForm,omitempty"`
 	DefaultToAlternateIbfcSettings *PokemonSettingsAlternateToDefaultIbfcSettings `json:"defaultToAlternateIbfcSettings,omitempty"`
@@ -231,7 +232,7 @@ type PokemonSettings struct {
 	BuddyWalkedMegaEnergyAwards       []any                             `json:"buddyWalkedMegaEnergyAwards,omitempty"`
 	Camera                            PokemonSettingsCamera             `json:"camera"`
 	CandyToEvolve                     *uint64                           `json:"candyToEvolve,omitempty"`
-	CinematicMoves                    []json.RawMessage                 `json:"cinematicMoves,omitempty"`
+	CinematicMoves                    []string                          `json:"cinematicMoves,omitempty"`
 	CombatDefaultCameraAngle          *[3]float64                       `json:"combatDefaultCameraAngle,omitempty"`
 	CombatOpponentFocusCameraAngle    *[3]float64                       `json:"combatOpponentFocusCameraAngle,omitempty"`
 	CombatPlayerFocusCameraAngle      *[3]float64                       `json:"combatPlayerFocusCameraAngle,omitempty"`
@@ -246,7 +247,7 @@ type PokemonSettings struct {
 	EvolutionPips                     *uint64                           `json:"evolutionPips,omitempty"`
 	ExclusiveKeyItem                  *PokemonSettingsExclusiveKeyItem  `json:"exclusiveKeyItem,omitempty"`
 	FamilyId                          string                            `json:"familyId"`
-	Form                              json.RawMessage                   `json:"form,omitempty"`
+	Form                              *string                           `json:"form,omitempty"`
 	FormChange                        []PokemonSettingsFormChange       `json:"formChange,omitempty"`
 	HeightStdDev                      float64                           `json:"heightStdDev"`
 	Ibfc                              PokemonSettingsIbfc               `json:"ibfc"`

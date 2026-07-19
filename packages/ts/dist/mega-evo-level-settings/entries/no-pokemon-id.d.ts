@@ -50,6 +50,7 @@ export type MegaEvoLevelSettings2 = S<
 				sameTypeExtraCatchXp: 50;
 			};
 			level: 2;
+			megaEnergyCostPerPoint: 80;
 			progression: {
 				pointsRequired: 7;
 			};
@@ -70,6 +71,7 @@ export type MegaEvoLevelSettings3 = S<
 				sameTypeExtraCatchXp: 100;
 			};
 			level: 3;
+			megaEnergyCostPerPoint: 40;
 			progression: {
 				pointsRequired: 30;
 			};

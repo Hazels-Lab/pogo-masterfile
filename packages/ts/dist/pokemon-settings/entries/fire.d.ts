@@ -18,10 +18,12 @@ export type PokemonSettingsV0004PokemonCharmander = S<
 				{
 					megaEnergyAwardAmount: 15;
 					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 15;
 					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -109,10 +111,12 @@ export type PokemonSettingsV0004PokemonCharmanderFall2019 = S<
 				{
 					megaEnergyAwardAmount: 15;
 					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 15;
 					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -193,10 +197,12 @@ export type PokemonSettingsV0004PokemonCharmanderNormal = S<
 				{
 					megaEnergyAwardAmount: 15;
 					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 15;
 					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -286,10 +292,12 @@ export type PokemonSettingsV0005PokemonCharmeleon = S<
 				{
 					megaEnergyAwardAmount: 15;
 					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 15;
 					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -383,10 +391,12 @@ export type PokemonSettingsV0005PokemonCharmeleonNormal = S<
 				{
 					megaEnergyAwardAmount: 15;
 					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 15;
 					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -481,10 +491,12 @@ export type PokemonSettingsV0006PokemonCharizard = S<
 				{
 					megaEnergyAwardAmount: 15;
 					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 15;
 					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -627,10 +639,12 @@ export type PokemonSettingsV0006PokemonCharizardCopy2019 = S<
 				{
 					megaEnergyAwardAmount: 15;
 					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 15;
 					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -721,10 +735,12 @@ export type PokemonSettingsV0006PokemonCharizardNormal = S<
 				{
 					megaEnergyAwardAmount: 15;
 					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 15;
 					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {

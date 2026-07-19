@@ -425,7 +425,7 @@ export type CombatMoveV0594MoveGulpMissileGulping = S<
 				targetDefenseStatStageChange: -1;
 			};
 			type: "POKEMON_TYPE_NORMAL";
-			uniqueId: 594;
+			uniqueId: "GULP_MISSILE_GULPING";
 			vfxName: "gulp_missile_gulping";
 		}
 	>
@@ -439,7 +439,7 @@ export type CombatMoveV0595MoveGulpMissileGorging = S<
 				targetAttackStatStageChange: -2;
 			};
 			type: "POKEMON_TYPE_NORMAL";
-			uniqueId: 595;
+			uniqueId: "GULP_MISSILE_GORGING";
 			vfxName: "gulp_missile_gorging";
 		}
 	>

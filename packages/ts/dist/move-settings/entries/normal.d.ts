@@ -712,7 +712,7 @@ export type MoveSettingsV0594MoveGulpMissileGulping = S<
 		{
 			animationId: 5;
 			durationMs: 2500;
-			movementId: 594;
+			movementId: "GULP_MISSILE_GULPING";
 			pokemonType: "POKEMON_TYPE_NORMAL";
 			vfxName: "gulp_missile_gulping";
 		}
@@ -724,7 +724,7 @@ export type MoveSettingsV0595MoveGulpMissileGorging = S<
 		{
 			animationId: 5;
 			durationMs: 2500;
-			movementId: 595;
+			movementId: "GULP_MISSILE_GORGING";
 			pokemonType: "POKEMON_TYPE_NORMAL";
 			vfxName: "gulp_missile_gorging";
 		}

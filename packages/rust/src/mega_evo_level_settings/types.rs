@@ -34,6 +34,7 @@ pub struct MegaEvoLevelSettings {
     pub effects: Effects,
     pub ftue_expiration_timestamp: Option<String>,
     pub level: Option<u64>,
+    pub mega_energy_cost_per_point: Option<u64>,
     pub mega_energy_cost_to_unlock: Option<u64>,
     pub pokemon_id: Option<String>,
     pub progression: Progression,

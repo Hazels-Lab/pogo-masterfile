@@ -52,6 +52,7 @@ export type MegaEvoLevelSettings2V0308PokemonMedicham = S<
 				sameTypeExtraCatchXp: 50;
 			};
 			level: 2;
+			megaEnergyCostPerPoint: 80;
 			pokemonId: "MEDICHAM";
 			progression: {
 				pointsRequired: 7;
@@ -73,6 +74,7 @@ export type MegaEvoLevelSettings3V0308PokemonMedicham = S<
 				sameTypeExtraCatchXp: 100;
 			};
 			level: 3;
+			megaEnergyCostPerPoint: 40;
 			pokemonId: "MEDICHAM";
 			progression: {
 				pointsRequired: 30;

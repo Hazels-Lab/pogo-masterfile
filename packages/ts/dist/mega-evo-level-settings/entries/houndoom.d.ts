@@ -52,6 +52,7 @@ export type MegaEvoLevelSettings2V0229PokemonHoundoom = S<
 				sameTypeExtraCatchXp: 50;
 			};
 			level: 2;
+			megaEnergyCostPerPoint: 80;
 			pokemonId: "HOUNDOOM";
 			progression: {
 				pointsRequired: 7;
@@ -73,6 +74,7 @@ export type MegaEvoLevelSettings3V0229PokemonHoundoom = S<
 				sameTypeExtraCatchXp: 100;
 			};
 			level: 3;
+			megaEnergyCostPerPoint: 40;
 			pokemonId: "HOUNDOOM";
 			progression: {
 				pointsRequired: 30;

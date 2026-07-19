@@ -9,7 +9,6 @@ export type ItemSettingsItemLuckyEgg = S<
 		{
 			category: "ITEM_CATEGORY_XP_BOOST";
 			dropTrainerLevel: 1;
-			itemId: "ITEM_LUCKY_EGG";
 			itemType: "ITEM_TYPE_XP_BOOST";
 			xpBoost: {
 				boostDurationMs: 1800000;
@@ -23,7 +22,6 @@ export type ItemSettingsItemLuckyFriendApplicator = S<
 		"ITEM_LUCKY_FRIEND_APPLICATOR",
 		{
 			category: "ITEM_CATEGORY_XP_BOOST";
-			itemId: "ITEM_LUCKY_FRIEND_APPLICATOR";
 			itemType: "ITEM_TYPE_FRIEND_BOOST";
 		}
 	>

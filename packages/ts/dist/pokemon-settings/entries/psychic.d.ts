@@ -1367,10 +1367,12 @@ export type PokemonSettingsV0150PokemonMewtwo = S<
 				{
 					megaEnergyAwardAmount: 100;
 					megaPokemonId: "MEWTWO";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 100;
 					megaPokemonId: "MEWTWO";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -1501,10 +1503,12 @@ export type PokemonSettingsV0150PokemonMewtwoA = S<
 				{
 					megaEnergyAwardAmount: 100;
 					megaPokemonId: "MEWTWO";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 100;
 					megaPokemonId: "MEWTWO";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {
@@ -1587,10 +1591,12 @@ export type PokemonSettingsV0150PokemonMewtwoNormal = S<
 				{
 					megaEnergyAwardAmount: 100;
 					megaPokemonId: "MEWTWO";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
 				},
 				{
 					megaEnergyAwardAmount: 100;
 					megaPokemonId: "MEWTWO";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
 				},
 			];
 			camera: {

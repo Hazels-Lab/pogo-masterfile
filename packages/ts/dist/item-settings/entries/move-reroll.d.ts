@@ -9,7 +9,6 @@ export type ItemSettingsItemMoveRerollEliteFastAttack = S<
 		{
 			category: "ITEM_CATEGORY_MOVE_REROLL";
 			dropTrainerLevel: 1;
-			itemId: "ITEM_MOVE_REROLL_ELITE_FAST_ATTACK";
 			itemType: "ITEM_TYPE_MOVE_REROLL";
 		}
 	>
@@ -20,7 +19,6 @@ export type ItemSettingsItemMoveRerollEliteSpecialAttack = S<
 		{
 			category: "ITEM_CATEGORY_MOVE_REROLL";
 			dropTrainerLevel: 1;
-			itemId: "ITEM_MOVE_REROLL_ELITE_SPECIAL_ATTACK";
 			itemType: "ITEM_TYPE_MOVE_REROLL";
 		}
 	>
@@ -31,7 +29,6 @@ export type ItemSettingsItemMoveRerollFastAttack = S<
 		{
 			category: "ITEM_CATEGORY_MOVE_REROLL";
 			dropTrainerLevel: 15;
-			itemId: "ITEM_MOVE_REROLL_FAST_ATTACK";
 			itemType: "ITEM_TYPE_MOVE_REROLL";
 		}
 	>
@@ -42,7 +39,6 @@ export type ItemSettingsItemMoveRerollOtherSpecialAttackA = S<
 		{
 			category: "ITEM_CATEGORY_MOVE_REROLL";
 			ignoreInventorySpace: true;
-			itemId: "ITEM_MOVE_REROLL_OTHER_SPECIAL_ATTACK_A";
 			itemType: "ITEM_TYPE_MOVE_REROLL";
 		}
 	>
@@ -53,7 +49,6 @@ export type ItemSettingsItemMoveRerollSpecialAttack = S<
 		{
 			category: "ITEM_CATEGORY_MOVE_REROLL";
 			dropTrainerLevel: 25;
-			itemId: "ITEM_MOVE_REROLL_SPECIAL_ATTACK";
 			itemType: "ITEM_TYPE_MOVE_REROLL";
 		}
 	>

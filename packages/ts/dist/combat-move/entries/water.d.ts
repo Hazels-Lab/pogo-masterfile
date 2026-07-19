@@ -402,7 +402,7 @@ export type CombatMoveV0593MoveDive = S<
 			energyDelta: -40;
 			power: 50;
 			type: "POKEMON_TYPE_WATER";
-			uniqueId: 593;
+			uniqueId: "DIVE";
 			vfxName: "dive";
 		}
 	>
