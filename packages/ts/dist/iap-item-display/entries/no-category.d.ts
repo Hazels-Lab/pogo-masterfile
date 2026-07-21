@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 73 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 74 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -259,23 +259,6 @@ export type IapItemDisplayEventPassHalloween2025SeasonStoreRedirect = S<
 			skuEnableTimeUtcMs: "1729504800000";
 			sortOrder: 1;
 			title: "season_pass_premium_track_title_halloween_2025";
-		}
-	>
->;
-export type IapItemDisplayEventPassJuly2EventStoreRedirect = S<
-	IapItemDisplay<
-		"EVENT_PASS_JULY2_EVENT_STORE_REDIRECT",
-		{
-			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
-			hidden: true;
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F07b0cffa_PGO-MCS_2026_Ultra_Unlock_01_v6-1024x576.jpg";
-			sku: "pgorelease.july2_deluxe_event_pass_track_redirect";
-			skuDisableTime: "2025-07-29T20:00:00";
-			skuDisableTimeUtcMs: "1753819200000";
-			skuEnableTime: "2025-07-21T10:00:00";
-			skuEnableTimeUtcMs: "1753092000000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_title_10th_anniversary_2026";
 		}
 	>
 >;
@@ -656,11 +639,10 @@ export type IapItemDisplayJuly2DeluxeEventPassTrackUnlock = S<
 		"JULY2_DELUXE_EVENT_PASS_TRACK_UNLOCK",
 		{
 			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
-			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F07b0cffa_PGO-MCS_2026_Ultra_Unlock_01_v6-1024x576.jpg";
 			sku: "pgorelease.july2_deluxe_event_pass_track_unlock";
-			skuDisableTime: "2025-07-29T20:00:00";
-			skuDisableTimeUtcMs: "1753819200000";
+			skuDisableTime: "2026-07-29T20:00:00";
+			skuDisableTimeUtcMs: "1785355200000";
 			skuEnableTime: "2025-07-21T10:00:00";
 			skuEnableTimeUtcMs: "1753092000000";
 			sortOrder: 1;
@@ -673,11 +655,10 @@ export type IapItemDisplayJuly2DeluxeEventPassTrackUnlockPlusPoints = S<
 		"JULY2_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS",
 		{
 			description: "event_pass_plus_points_6_ranks_description";
-			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F07b0cffa_PGO-MCS_2026_Ultra_Unlock_01_v6-1024x576.jpg";
 			sku: "pgorelease.july2_deluxe_event_pass_track_unlock_plus_points";
-			skuDisableTime: "2025-07-29T20:00:00";
-			skuDisableTimeUtcMs: "1753819200000";
+			skuDisableTime: "2026-07-29T20:00:00";
+			skuDisableTimeUtcMs: "1785355200000";
 			skuEnableTime: "2025-07-21T10:00:00";
 			skuEnableTimeUtcMs: "1753092000000";
 			sortOrder: 1;
@@ -1105,6 +1086,38 @@ export type IapItemDisplayPgoreleaseJuly1DeluxeEventPassTrackUnlockPlusPoints = 
 		}
 	>
 >;
+export type IapItemDisplayPgoreleaseJuly2DeluxeEventPassTrackUnlock = S<
+	IapItemDisplay<
+		"pgorelease.july2_deluxe_event_pass_track_unlock",
+		{
+			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F07b0cffa_PGO-MCS_2026_Ultra_Unlock_01_v6-1024x576.jpg";
+			sku: "pgorelease.july2_deluxe_event_pass_track_unlock";
+			skuDisableTime: "2026-07-29T20:00:00";
+			skuDisableTimeUtcMs: "1785355200000";
+			skuEnableTime: "2025-07-21T10:00:00";
+			skuEnableTimeUtcMs: "1753092000000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_10th_anniversary_2026";
+		}
+	>
+>;
+export type IapItemDisplayPgoreleaseJuly2DeluxeEventPassTrackUnlockPlusPoints = S<
+	IapItemDisplay<
+		"pgorelease.july2_deluxe_event_pass_track_unlock_plus_points",
+		{
+			description: "event_pass_plus_points_6_ranks_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F07b0cffa_PGO-MCS_2026_Ultra_Unlock_01_v6-1024x576.jpg";
+			sku: "pgorelease.july2_deluxe_event_pass_track_unlock_plus_points";
+			skuDisableTime: "2026-07-29T20:00:00";
+			skuDisableTimeUtcMs: "1785355200000";
+			skuEnableTime: "2025-07-21T10:00:00";
+			skuEnableTimeUtcMs: "1753092000000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_plus_six_ranks_title_10th_anniversary_2026";
+		}
+	>
+>;
 export type IapItemDisplayPgoreleaseMay12026DeluxeEventPassTrackRedirect = S<
 	IapItemDisplay<
 		"pgorelease.may1_2026_deluxe_event_pass_track_redirect",
@@ -1221,7 +1234,6 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayEventPassGotour2025GlobalStoreRedirect
 	| IapItemDisplayEventPassGowild2025GlobalStoreRedirect
 	| IapItemDisplayEventPassHalloween2025SeasonStoreRedirect
-	| IapItemDisplayEventPassJuly2EventStoreRedirect
 	| IapItemDisplayEventPassJune2EventStoreRedirect
 	| IapItemDisplayEventPassJune4EventStoreRedirect
 	| IapItemDisplayEventPassMarch1SeasonStoreRedirect
@@ -1272,6 +1284,8 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayPgoreleaseGofest2025DeluxeEventPassTrackRedirect
 	| IapItemDisplayPgoreleaseJuly1DeluxeEventPassTrackUnlock
 	| IapItemDisplayPgoreleaseJuly1DeluxeEventPassTrackUnlockPlusPoints
+	| IapItemDisplayPgoreleaseJuly2DeluxeEventPassTrackUnlock
+	| IapItemDisplayPgoreleaseJuly2DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayPgoreleaseMay12026DeluxeEventPassTrackRedirect
 	| IapItemDisplayPgoreleaseMay12026DeluxeEventPassTrackUnlockRedirect
 	| IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlock

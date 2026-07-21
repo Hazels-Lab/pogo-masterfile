@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 540 entries (structural types).
+// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 740 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -17,6 +17,9 @@ export interface EventPassTierSettingsData {
 			iconType: "CANDY_GENERAL" | "CANDY_XL" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "RAID" | "STARDUST" | "TRADE";
 			text:
 				| "1.5x_xp_raid_bonus"
+				| "bonus_xl_candy_nice_great_excel"
+				| "catch_candy_double"
+				| "catch_candy_triple"
 				| "catch_stardust_double"
 				| "catch_stardust_triple"
 				| "dai_duration_double"
@@ -35,15 +38,18 @@ export interface EventPassTierSettingsData {
 		eventName?: "go_pass_cumulative_bonuses_header";
 	};
 	bonusSettings?: {
-		bonusBoxes: Array<{
+		bonusBoxes?: Array<{
 			iconType: "CANDY_GENERAL" | "CANDY_XL" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "STARDUST" | "TRADE";
 			text:
+				| "catch_candy_double"
+				| "catch_candy_triple"
 				| "catch_stardust_double"
 				| "catch_stardust_triple"
 				| "dai_duration_double"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
 				| "gift_storage_more"
+				| "increased_XL_candy_chance_catch_bonus"
 				| "season_pass_bonus_hatch_xp_stardust"
 				| "trade_extra_candy"
 				| "trade_guaranteed_candyxl"
@@ -97,6 +103,7 @@ export interface EventPassTierSettingsData {
 				| "ITEM_GOLDEN_PINAP_BERRY"
 				| "ITEM_GOLDEN_RAZZ_BERRY"
 				| "ITEM_GREAT_BALL"
+				| "ITEM_INCENSE_ORDINARY"
 				| "ITEM_INCUBATOR_SUPER"
 				| "ITEM_LEADER_MAP_FRAGMENT"
 				| "ITEM_LUCKY_EGG"
@@ -112,12 +119,21 @@ export interface EventPassTierSettingsData {
 				| "ITEM_RAZZ_BERRY"
 				| "ITEM_STAR_PIECE"
 				| "ITEM_TROY_DISK"
+				| "ITEM_TROY_DISK_SPARKLY"
 				| "ITEM_ULTRA_BALL"
 				| "ITEM_XL_RARE_CANDY";
+		};
+		neutralAvatarItemTemplate?: {
+			displayTemplateId: "N_DISPLAY_n_shirt_10thanniversary-yellow";
+			itemTemplateId: "N_AVATAR_n_shirt_10thanniversary-yellow";
 		};
 		playerAttribute?: {
 			durationMins: number;
 			key:
+				| "afterparty2026_season_pass_entitlement"
+				| "afterparty2026_season_pass_rank_01"
+				| "afterparty2026_season_pass_rank_01_paid"
+				| "afterparty2026_season_pass_rank_02"
 				| "july2026_season_pass_entitlement"
 				| "july2026_season_pass_rank_01"
 				| "july2026_season_pass_rank_02"
@@ -133,8 +149,10 @@ export interface EventPassTierSettingsData {
 			isFeaturedPokemon: boolean;
 			pokemonDisplay?: {
 				breadModeEnum?: "BREAD_MODE";
-				costume?: "GOFEST_2021_NOEVOLVE" | "GOFEST_2022_NOEVOLVE";
+				costume?: "GOFEST_2021_NOEVOLVE" | "GOFEST_2022_NOEVOLVE" | "JAN_2020_NOEVOLVE";
 				form:
+					| "BULBASAUR_NORMAL"
+					| "CHARMANDER_NORMAL"
 					| "CHIMECHO_NORMAL"
 					| "CLAMPERL_NORMAL"
 					| "CLOYSTER_NORMAL"
@@ -150,6 +168,7 @@ export interface EventPassTierSettingsData {
 					| "HOUNDOOM_NORMAL"
 					| "KABUTOPS_NORMAL"
 					| "MR_MIME_GALARIAN"
+					| "PIKACHU_ANNIVERSARY_2026"
 					| "PIKACHU_COSTUME_2020"
 					| "PIKACHU_GOFEST_2022"
 					| "PIKACHU_NORMAL"
@@ -161,6 +180,7 @@ export interface EventPassTierSettingsData {
 					| "ROCKRUFF_NORMAL"
 					| "SCORBUNNY_NORMAL"
 					| "SNOM_NORMAL"
+					| "SQUIRTLE_NORMAL"
 					| "TADBULB_NORMAL"
 					| "TINKATINK_NORMAL"
 					| "TORCHIC_NORMAL"
@@ -168,10 +188,12 @@ export interface EventPassTierSettingsData {
 					| "VULPIX_NORMAL"
 					| "ZWEILOUS_NORMAL";
 				locationCard?: {
-					locationCard: "LC_SPECIALBACKGROUND_GG2026";
+					locationCard: "LC_SPECIALBACKGROUND_GG2026" | "LC_SPECIALBACKGROUND_TEAM_YELLOW";
 				};
 			};
 			pokemonId:
+				| "BULBASAUR"
+				| "CHARMANDER"
 				| "CHIMECHO"
 				| "CLAMPERL"
 				| "CLOYSTER"
@@ -194,6 +216,7 @@ export interface EventPassTierSettingsData {
 				| "SCORBUNNY"
 				| "SINISTEA"
 				| "SNOM"
+				| "SQUIRTLE"
 				| "TADBULB"
 				| "TINKATINK"
 				| "TORCHIC"
@@ -205,7 +228,7 @@ export interface EventPassTierSettingsData {
 			};
 		};
 		stardust?: number;
-		type: "CANDY" | "EXPERIENCE" | "ITEM" | "PLAYER_ATTRIBUTE" | "POKECOIN" | "POKEMON_ENCOUNTER" | "STARDUST" | "XL_CANDY";
+		type: "AVATAR_CLOTHING" | "CANDY" | "EXPERIENCE" | "ITEM" | "PLAYER_ATTRIBUTE" | "POKECOIN" | "POKEMON_ENCOUNTER" | "STARDUST" | "XL_CANDY";
 		xlCandy?: {
 			amount: number;
 			pokemonId:

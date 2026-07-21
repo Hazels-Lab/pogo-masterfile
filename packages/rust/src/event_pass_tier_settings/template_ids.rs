@@ -7,6 +7,406 @@ use serde::{Deserialize, Serialize};
     Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum,
 )]
 pub enum EventPassTierSettingsTemplateId {
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_1_FREE")]
+    EventPassAfterparty2026Event1Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_1_PREMIUM")]
+    EventPassAfterparty2026Event1Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_2_FREE")]
+    EventPassAfterparty2026Event2Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_2_PREMIUM")]
+    EventPassAfterparty2026Event2Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_3_FREE")]
+    EventPassAfterparty2026Event3Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_3_PREMIUM")]
+    EventPassAfterparty2026Event3Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_4_FREE")]
+    EventPassAfterparty2026Event4Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_4_PREMIUM")]
+    EventPassAfterparty2026Event4Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_5_FREE")]
+    EventPassAfterparty2026Event5Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_5_PREMIUM")]
+    EventPassAfterparty2026Event5Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_6_FREE")]
+    EventPassAfterparty2026Event6Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_6_PREMIUM")]
+    EventPassAfterparty2026Event6Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_7_FREE")]
+    EventPassAfterparty2026Event7Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_7_PREMIUM")]
+    EventPassAfterparty2026Event7Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_8_FREE")]
+    EventPassAfterparty2026Event8Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_8_PREMIUM")]
+    EventPassAfterparty2026Event8Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_9_FREE")]
+    EventPassAfterparty2026Event9Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_9_PREMIUM")]
+    EventPassAfterparty2026Event9Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_10_FREE")]
+    EventPassAfterparty2026Event10Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_10_PREMIUM")]
+    EventPassAfterparty2026Event10Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_11_FREE")]
+    EventPassAfterparty2026Event11Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_11_PREMIUM")]
+    EventPassAfterparty2026Event11Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_12_FREE")]
+    EventPassAfterparty2026Event12Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_12_PREMIUM")]
+    EventPassAfterparty2026Event12Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_13_FREE")]
+    EventPassAfterparty2026Event13Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_13_PREMIUM")]
+    EventPassAfterparty2026Event13Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_14_FREE")]
+    EventPassAfterparty2026Event14Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_14_PREMIUM")]
+    EventPassAfterparty2026Event14Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_15_FREE")]
+    EventPassAfterparty2026Event15Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_15_PREMIUM")]
+    EventPassAfterparty2026Event15Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_16_FREE")]
+    EventPassAfterparty2026Event16Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_16_PREMIUM")]
+    EventPassAfterparty2026Event16Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_17_FREE")]
+    EventPassAfterparty2026Event17Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_17_PREMIUM")]
+    EventPassAfterparty2026Event17Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_18_FREE")]
+    EventPassAfterparty2026Event18Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_18_PREMIUM")]
+    EventPassAfterparty2026Event18Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_19_FREE")]
+    EventPassAfterparty2026Event19Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_19_PREMIUM")]
+    EventPassAfterparty2026Event19Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_20_FREE")]
+    EventPassAfterparty2026Event20Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_20_PREMIUM")]
+    EventPassAfterparty2026Event20Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_21_FREE")]
+    EventPassAfterparty2026Event21Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_21_PREMIUM")]
+    EventPassAfterparty2026Event21Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_22_FREE")]
+    EventPassAfterparty2026Event22Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_22_PREMIUM")]
+    EventPassAfterparty2026Event22Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_23_FREE")]
+    EventPassAfterparty2026Event23Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_23_PREMIUM")]
+    EventPassAfterparty2026Event23Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_24_FREE")]
+    EventPassAfterparty2026Event24Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_24_PREMIUM")]
+    EventPassAfterparty2026Event24Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_25_FREE")]
+    EventPassAfterparty2026Event25Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_25_PREMIUM")]
+    EventPassAfterparty2026Event25Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_26_FREE")]
+    EventPassAfterparty2026Event26Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_26_PREMIUM")]
+    EventPassAfterparty2026Event26Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_27_FREE")]
+    EventPassAfterparty2026Event27Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_27_PREMIUM")]
+    EventPassAfterparty2026Event27Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_28_FREE")]
+    EventPassAfterparty2026Event28Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_28_PREMIUM")]
+    EventPassAfterparty2026Event28Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_29_FREE")]
+    EventPassAfterparty2026Event29Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_29_PREMIUM")]
+    EventPassAfterparty2026Event29Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_30_FREE")]
+    EventPassAfterparty2026Event30Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_30_PREMIUM")]
+    EventPassAfterparty2026Event30Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_31_FREE")]
+    EventPassAfterparty2026Event31Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_31_PREMIUM")]
+    EventPassAfterparty2026Event31Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_32_FREE")]
+    EventPassAfterparty2026Event32Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_32_PREMIUM")]
+    EventPassAfterparty2026Event32Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_33_FREE")]
+    EventPassAfterparty2026Event33Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_33_PREMIUM")]
+    EventPassAfterparty2026Event33Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_34_FREE")]
+    EventPassAfterparty2026Event34Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_34_PREMIUM")]
+    EventPassAfterparty2026Event34Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_35_FREE")]
+    EventPassAfterparty2026Event35Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_35_PREMIUM")]
+    EventPassAfterparty2026Event35Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_36_FREE")]
+    EventPassAfterparty2026Event36Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_36_PREMIUM")]
+    EventPassAfterparty2026Event36Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_37_FREE")]
+    EventPassAfterparty2026Event37Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_37_PREMIUM")]
+    EventPassAfterparty2026Event37Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_38_FREE")]
+    EventPassAfterparty2026Event38Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_38_PREMIUM")]
+    EventPassAfterparty2026Event38Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_39_FREE")]
+    EventPassAfterparty2026Event39Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_39_PREMIUM")]
+    EventPassAfterparty2026Event39Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_40_FREE")]
+    EventPassAfterparty2026Event40Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_40_PREMIUM")]
+    EventPassAfterparty2026Event40Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_41_FREE")]
+    EventPassAfterparty2026Event41Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_41_PREMIUM")]
+    EventPassAfterparty2026Event41Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_42_FREE")]
+    EventPassAfterparty2026Event42Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_42_PREMIUM")]
+    EventPassAfterparty2026Event42Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_43_FREE")]
+    EventPassAfterparty2026Event43Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_43_PREMIUM")]
+    EventPassAfterparty2026Event43Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_44_FREE")]
+    EventPassAfterparty2026Event44Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_44_PREMIUM")]
+    EventPassAfterparty2026Event44Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_45_FREE")]
+    EventPassAfterparty2026Event45Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_45_PREMIUM")]
+    EventPassAfterparty2026Event45Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_46_FREE")]
+    EventPassAfterparty2026Event46Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_46_PREMIUM")]
+    EventPassAfterparty2026Event46Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_47_FREE")]
+    EventPassAfterparty2026Event47Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_47_PREMIUM")]
+    EventPassAfterparty2026Event47Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_48_FREE")]
+    EventPassAfterparty2026Event48Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_48_PREMIUM")]
+    EventPassAfterparty2026Event48Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_49_FREE")]
+    EventPassAfterparty2026Event49Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_49_PREMIUM")]
+    EventPassAfterparty2026Event49Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_50_FREE")]
+    EventPassAfterparty2026Event50Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_50_PREMIUM")]
+    EventPassAfterparty2026Event50Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_51_FREE")]
+    EventPassAfterparty2026Event51Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_51_PREMIUM")]
+    EventPassAfterparty2026Event51Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_52_FREE")]
+    EventPassAfterparty2026Event52Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_52_PREMIUM")]
+    EventPassAfterparty2026Event52Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_53_FREE")]
+    EventPassAfterparty2026Event53Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_53_PREMIUM")]
+    EventPassAfterparty2026Event53Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_54_FREE")]
+    EventPassAfterparty2026Event54Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_54_PREMIUM")]
+    EventPassAfterparty2026Event54Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_55_FREE")]
+    EventPassAfterparty2026Event55Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_55_PREMIUM")]
+    EventPassAfterparty2026Event55Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_56_FREE")]
+    EventPassAfterparty2026Event56Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_56_PREMIUM")]
+    EventPassAfterparty2026Event56Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_57_FREE")]
+    EventPassAfterparty2026Event57Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_57_PREMIUM")]
+    EventPassAfterparty2026Event57Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_58_FREE")]
+    EventPassAfterparty2026Event58Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_58_PREMIUM")]
+    EventPassAfterparty2026Event58Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_59_FREE")]
+    EventPassAfterparty2026Event59Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_59_PREMIUM")]
+    EventPassAfterparty2026Event59Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_60_FREE")]
+    EventPassAfterparty2026Event60Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_60_PREMIUM")]
+    EventPassAfterparty2026Event60Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_61_FREE")]
+    EventPassAfterparty2026Event61Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_61_PREMIUM")]
+    EventPassAfterparty2026Event61Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_62_FREE")]
+    EventPassAfterparty2026Event62Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_62_PREMIUM")]
+    EventPassAfterparty2026Event62Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_63_FREE")]
+    EventPassAfterparty2026Event63Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_63_PREMIUM")]
+    EventPassAfterparty2026Event63Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_64_FREE")]
+    EventPassAfterparty2026Event64Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_64_PREMIUM")]
+    EventPassAfterparty2026Event64Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_65_FREE")]
+    EventPassAfterparty2026Event65Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_65_PREMIUM")]
+    EventPassAfterparty2026Event65Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_66_FREE")]
+    EventPassAfterparty2026Event66Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_66_PREMIUM")]
+    EventPassAfterparty2026Event66Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_67_FREE")]
+    EventPassAfterparty2026Event67Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_67_PREMIUM")]
+    EventPassAfterparty2026Event67Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_68_FREE")]
+    EventPassAfterparty2026Event68Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_68_PREMIUM")]
+    EventPassAfterparty2026Event68Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_69_FREE")]
+    EventPassAfterparty2026Event69Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_69_PREMIUM")]
+    EventPassAfterparty2026Event69Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_70_FREE")]
+    EventPassAfterparty2026Event70Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_70_PREMIUM")]
+    EventPassAfterparty2026Event70Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_71_FREE")]
+    EventPassAfterparty2026Event71Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_71_PREMIUM")]
+    EventPassAfterparty2026Event71Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_72_FREE")]
+    EventPassAfterparty2026Event72Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_72_PREMIUM")]
+    EventPassAfterparty2026Event72Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_73_FREE")]
+    EventPassAfterparty2026Event73Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_73_PREMIUM")]
+    EventPassAfterparty2026Event73Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_74_FREE")]
+    EventPassAfterparty2026Event74Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_74_PREMIUM")]
+    EventPassAfterparty2026Event74Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_75_FREE")]
+    EventPassAfterparty2026Event75Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_75_PREMIUM")]
+    EventPassAfterparty2026Event75Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_76_FREE")]
+    EventPassAfterparty2026Event76Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_76_PREMIUM")]
+    EventPassAfterparty2026Event76Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_77_FREE")]
+    EventPassAfterparty2026Event77Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_77_PREMIUM")]
+    EventPassAfterparty2026Event77Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_78_FREE")]
+    EventPassAfterparty2026Event78Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_78_PREMIUM")]
+    EventPassAfterparty2026Event78Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_79_FREE")]
+    EventPassAfterparty2026Event79Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_79_PREMIUM")]
+    EventPassAfterparty2026Event79Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_80_FREE")]
+    EventPassAfterparty2026Event80Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_80_PREMIUM")]
+    EventPassAfterparty2026Event80Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_81_FREE")]
+    EventPassAfterparty2026Event81Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_81_PREMIUM")]
+    EventPassAfterparty2026Event81Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_82_FREE")]
+    EventPassAfterparty2026Event82Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_82_PREMIUM")]
+    EventPassAfterparty2026Event82Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_83_FREE")]
+    EventPassAfterparty2026Event83Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_83_PREMIUM")]
+    EventPassAfterparty2026Event83Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_84_FREE")]
+    EventPassAfterparty2026Event84Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_84_PREMIUM")]
+    EventPassAfterparty2026Event84Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_85_FREE")]
+    EventPassAfterparty2026Event85Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_85_PREMIUM")]
+    EventPassAfterparty2026Event85Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_86_FREE")]
+    EventPassAfterparty2026Event86Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_86_PREMIUM")]
+    EventPassAfterparty2026Event86Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_87_FREE")]
+    EventPassAfterparty2026Event87Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_87_PREMIUM")]
+    EventPassAfterparty2026Event87Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_88_FREE")]
+    EventPassAfterparty2026Event88Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_88_PREMIUM")]
+    EventPassAfterparty2026Event88Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_89_FREE")]
+    EventPassAfterparty2026Event89Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_89_PREMIUM")]
+    EventPassAfterparty2026Event89Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_90_FREE")]
+    EventPassAfterparty2026Event90Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_90_PREMIUM")]
+    EventPassAfterparty2026Event90Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_91_FREE")]
+    EventPassAfterparty2026Event91Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_91_PREMIUM")]
+    EventPassAfterparty2026Event91Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_92_FREE")]
+    EventPassAfterparty2026Event92Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_92_PREMIUM")]
+    EventPassAfterparty2026Event92Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_93_FREE")]
+    EventPassAfterparty2026Event93Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_93_PREMIUM")]
+    EventPassAfterparty2026Event93Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_94_FREE")]
+    EventPassAfterparty2026Event94Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_94_PREMIUM")]
+    EventPassAfterparty2026Event94Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_95_FREE")]
+    EventPassAfterparty2026Event95Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_95_PREMIUM")]
+    EventPassAfterparty2026Event95Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_96_FREE")]
+    EventPassAfterparty2026Event96Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_96_PREMIUM")]
+    EventPassAfterparty2026Event96Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_97_FREE")]
+    EventPassAfterparty2026Event97Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_97_PREMIUM")]
+    EventPassAfterparty2026Event97Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_98_FREE")]
+    EventPassAfterparty2026Event98Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_98_PREMIUM")]
+    EventPassAfterparty2026Event98Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_99_FREE")]
+    EventPassAfterparty2026Event99Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_99_PREMIUM")]
+    EventPassAfterparty2026Event99Premium,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_100_FREE")]
+    EventPassAfterparty2026Event100Free,
+    #[serde(rename = "EVENT_PASS_AFTERPARTY2026_EVENT_100_PREMIUM")]
+    EventPassAfterparty2026Event100Premium,
     #[serde(rename = "EVENT_PASS_JULY2026_SEASON_1_FREE")]
     EventPassJuly2026Season1Free,
     #[serde(rename = "EVENT_PASS_JULY2026_SEASON_1_PREMIUM")]

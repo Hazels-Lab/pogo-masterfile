@@ -1058,7 +1058,8 @@ type MainMenuChanges struct {
 }
 
 type MapDisplaySettings struct {
-	ShowEnhancedSky bool `json:"showEnhancedSky"`
+	MapEffectName   string `json:"mapEffectName"`
+	ShowEnhancedSky bool   `json:"showEnhancedSky"`
 }
 
 type MapObjectsInteractionRangeSettings struct {

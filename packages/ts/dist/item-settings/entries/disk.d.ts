@@ -59,7 +59,7 @@ export type ItemSettingsItemTroyDiskSparkly = S<
 		{
 			category: "ITEM_CATEGORY_DISK";
 			dropTrainerLevel: 1;
-			itemCap: 1;
+			itemCap: 5;
 			itemType: "ITEM_TYPE_DISK";
 		}
 	>
