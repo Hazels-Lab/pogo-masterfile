@@ -899,6 +899,10 @@ pub enum IapItemDisplayTemplateId {
     PgoreleaseJuly1DeluxeEventPassTrackUnlock,
     #[serde(rename = "pgorelease.july1_deluxe_event_pass_track_unlock_plus_points")]
     PgoreleaseJuly1DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "pgorelease.july2_deluxe_event_pass_track_unlock")]
+    PgoreleaseJuly2DeluxeEventPassTrackUnlock,
+    #[serde(rename = "pgorelease.july2_deluxe_event_pass_track_unlock_plus_points")]
+    PgoreleaseJuly2DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "pgorelease.may1_2026_deluxe_event_pass_track_redirect")]
     PgoreleaseMay12026DeluxeEventPassTrackRedirect,
     #[serde(rename = "pgorelease.may1_2026_deluxe_event_pass_track_unlock_redirect")]

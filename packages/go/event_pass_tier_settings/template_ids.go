@@ -5,6 +5,206 @@ package event_pass_tier_settings
 type EventPassTierSettingsTemplateID string
 
 const (
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event1Free             EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_1_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event1Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_1_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event2Free             EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_2_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event2Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_2_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event3Free             EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_3_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event3Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_3_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event4Free             EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_4_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event4Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_4_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event5Free             EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_5_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event5Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_5_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event6Free             EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_6_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event6Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_6_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event7Free             EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_7_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event7Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_7_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event8Free             EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_8_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event8Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_8_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event9Free             EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_9_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event9Premium          EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_9_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event10Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_10_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event10Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_10_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event11Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_11_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event11Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_11_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event12Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_12_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event12Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_12_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event13Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_13_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event13Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_13_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event14Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_14_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event14Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_14_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event15Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_15_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event15Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_15_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event16Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_16_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event16Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_16_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event17Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_17_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event17Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_17_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event18Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_18_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event18Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_18_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event19Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_19_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event19Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_19_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event20Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_20_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event20Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_20_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event21Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_21_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event21Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_21_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event22Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_22_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event22Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_22_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event23Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_23_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event23Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_23_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event24Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_24_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event24Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_24_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event25Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_25_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event25Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_25_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event26Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_26_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event26Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_26_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event27Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_27_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event27Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_27_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event28Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_28_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event28Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_28_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event29Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_29_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event29Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_29_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event30Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_30_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event30Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_30_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event31Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_31_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event31Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_31_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event32Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_32_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event32Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_32_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event33Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_33_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event33Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_33_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event34Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_34_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event34Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_34_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event35Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_35_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event35Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_35_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event36Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_36_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event36Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_36_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event37Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_37_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event37Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_37_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event38Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_38_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event38Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_38_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event39Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_39_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event39Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_39_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event40Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_40_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event40Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_40_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event41Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_41_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event41Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_41_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event42Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_42_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event42Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_42_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event43Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_43_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event43Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_43_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event44Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_44_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event44Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_44_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event45Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_45_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event45Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_45_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event46Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_46_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event46Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_46_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event47Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_47_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event47Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_47_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event48Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_48_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event48Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_48_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event49Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_49_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event49Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_49_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event50Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_50_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event50Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_50_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event51Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_51_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event51Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_51_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event52Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_52_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event52Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_52_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event53Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_53_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event53Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_53_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event54Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_54_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event54Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_54_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event55Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_55_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event55Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_55_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event56Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_56_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event56Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_56_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event57Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_57_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event57Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_57_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event58Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_58_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event58Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_58_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event59Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_59_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event59Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_59_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event60Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_60_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event60Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_60_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event61Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_61_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event61Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_61_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event62Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_62_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event62Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_62_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event63Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_63_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event63Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_63_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event64Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_64_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event64Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_64_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event65Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_65_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event65Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_65_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event66Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_66_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event66Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_66_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event67Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_67_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event67Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_67_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event68Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_68_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event68Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_68_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event69Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_69_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event69Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_69_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event70Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_70_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event70Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_70_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event71Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_71_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event71Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_71_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event72Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_72_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event72Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_72_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event73Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_73_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event73Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_73_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event74Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_74_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event74Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_74_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event75Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_75_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event75Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_75_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event76Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_76_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event76Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_76_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event77Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_77_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event77Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_77_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event78Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_78_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event78Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_78_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event79Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_79_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event79Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_79_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event80Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_80_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event80Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_80_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event81Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_81_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event81Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_81_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event82Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_82_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event82Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_82_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event83Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_83_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event83Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_83_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event84Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_84_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event84Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_84_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event85Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_85_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event85Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_85_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event86Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_86_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event86Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_86_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event87Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_87_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event87Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_87_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event88Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_88_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event88Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_88_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event89Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_89_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event89Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_89_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event90Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_90_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event90Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_90_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event91Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_91_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event91Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_91_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event92Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_92_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event92Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_92_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event93Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_93_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event93Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_93_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event94Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_94_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event94Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_94_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event95Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_95_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event95Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_95_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event96Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_96_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event96Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_96_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event97Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_97_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event97Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_97_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event98Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_98_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event98Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_98_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event99Free            EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_99_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event99Premium         EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_99_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event100Free           EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_100_FREE"
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event100Premium        EventPassTierSettingsTemplateID = "EVENT_PASS_AFTERPARTY2026_EVENT_100_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassJuly2026Season1Free                  EventPassTierSettingsTemplateID = "EVENT_PASS_JULY2026_SEASON_1_FREE"
 	EventPassTierSettingsTemplateIDEventPassJuly2026Season1Premium               EventPassTierSettingsTemplateID = "EVENT_PASS_JULY2026_SEASON_1_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassJuly2026Season2Free                  EventPassTierSettingsTemplateID = "EVENT_PASS_JULY2026_SEASON_2_FREE"
@@ -548,6 +748,206 @@ const (
 )
 
 var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID{
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event1Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event1Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event2Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event2Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event3Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event3Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event4Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event4Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event5Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event5Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event6Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event6Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event7Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event7Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event8Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event8Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event9Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event9Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event10Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event10Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event11Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event11Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event12Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event12Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event13Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event13Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event14Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event14Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event15Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event15Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event16Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event16Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event17Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event17Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event18Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event18Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event19Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event19Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event20Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event20Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event21Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event21Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event22Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event22Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event23Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event23Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event24Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event24Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event25Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event25Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event26Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event26Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event27Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event27Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event28Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event28Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event29Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event29Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event30Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event30Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event31Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event31Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event32Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event32Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event33Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event33Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event34Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event34Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event35Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event35Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event36Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event36Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event37Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event37Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event38Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event38Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event39Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event39Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event40Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event40Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event41Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event41Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event42Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event42Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event43Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event43Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event44Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event44Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event45Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event45Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event46Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event46Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event47Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event47Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event48Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event48Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event49Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event49Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event50Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event50Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event51Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event51Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event52Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event52Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event53Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event53Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event54Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event54Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event55Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event55Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event56Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event56Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event57Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event57Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event58Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event58Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event59Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event59Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event60Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event60Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event61Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event61Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event62Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event62Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event63Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event63Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event64Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event64Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event65Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event65Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event66Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event66Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event67Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event67Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event68Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event68Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event69Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event69Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event70Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event70Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event71Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event71Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event72Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event72Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event73Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event73Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event74Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event74Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event75Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event75Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event76Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event76Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event77Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event77Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event78Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event78Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event79Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event79Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event80Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event80Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event81Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event81Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event82Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event82Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event83Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event83Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event84Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event84Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event85Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event85Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event86Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event86Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event87Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event87Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event88Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event88Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event89Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event89Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event90Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event90Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event91Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event91Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event92Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event92Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event93Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event93Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event94Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event94Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event95Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event95Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event96Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event96Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event97Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event97Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event98Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event98Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event99Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event99Premium,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event100Free,
+	EventPassTierSettingsTemplateIDEventPassAfterparty2026Event100Premium,
 	EventPassTierSettingsTemplateIDEventPassJuly2026Season1Free,
 	EventPassTierSettingsTemplateIDEventPassJuly2026Season1Premium,
 	EventPassTierSettingsTemplateIDEventPassJuly2026Season2Free,

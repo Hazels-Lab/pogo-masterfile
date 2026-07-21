@@ -3603,6 +3603,7 @@ export interface MapDisplaySettings {
 	data: {
 		templateId: "MAP_DISPLAY_SETTINGS";
 		mapDisplaySettings: {
+			mapEffectName: "fx_map_fireworks_pokeball";
 			showEnhancedSky: true;
 		};
 	};
@@ -5298,7 +5299,7 @@ export interface RoutePlaySettings {
 			obRoutePlaySettingsNumber29: 1;
 			obRoutePlaySettingsNumber30: 27;
 			obRoutePlaySettingsNumber33: 7;
-			obRoutePlaySettingsNumber45: 6;
+			obRoutePlaySettingsNumber45: 1;
 			resumeRangeMeters: 40;
 			routeEngagementStatsShardCount: 3;
 			routeExpirationMinutes: 185;
