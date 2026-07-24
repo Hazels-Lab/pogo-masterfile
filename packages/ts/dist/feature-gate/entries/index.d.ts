@@ -113,7 +113,7 @@ export type FeatureGateFriendshipResyncOnRead = S<
 	FeatureGate<
 		"FRIENDSHIP_RESYNC_ON_READ_FEATURE_GATE",
 		{
-			rolloutPercentage: 50;
+			rolloutPercentage: 70;
 			status: 1;
 		}
 	>

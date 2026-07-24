@@ -96,7 +96,7 @@ export interface BattleAnimationSettings {
 					enabled: true;
 					maxCatchUpAttacks: 3;
 				};
-				projectedHealthAnimationDurationSeconds: 0.09;
+				projectedHealthAnimationDurationSeconds: 0.5;
 				uiCameraAnimationSettings: {
 					transitionInDurationSeconds: 0.06;
 					transitionInterimDelaySeconds: 0.001;
@@ -6057,8 +6057,9 @@ export interface VsSeekerClientSettings {
 		templateId: "VS_SEEKER_CLIENT_SETTINGS";
 		vsSeekerClientSettings: {
 			allowedVsSeekerLeagueTemplateId: [
+				"COMBAT_LEAGUE_VS_SEEKER_GREAT",
+				"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
 				"COMBAT_LEAGUE_VS_SEEKER_MASTER",
-				"COMBAT_LEAGUE_VS_SEEKER_GREAT_RETRO",
 				"COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIPS_LEGACY",
 			];
 		};

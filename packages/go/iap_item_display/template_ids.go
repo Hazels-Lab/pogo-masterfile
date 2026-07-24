@@ -11,6 +11,8 @@ const (
 	IapItemDisplayTemplateIDApril22026DeluxeEventPassTrackUnlockPlusPoints         IapItemDisplayTemplateID = "APRIL2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
 	IapItemDisplayTemplateIDApril32026DeluxeEventPassTrackUnlock                   IapItemDisplayTemplateID = "APRIL3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK"
 	IapItemDisplayTemplateIDApril32026DeluxeEventPassTrackUnlockPlusPoints         IapItemDisplayTemplateID = "APRIL3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
+	IapItemDisplayTemplateIDAugust1DeluxeEventPassTrackUnlock                      IapItemDisplayTemplateID = "AUGUST1_DELUXE_EVENT_PASS_TRACK_UNLOCK"
+	IapItemDisplayTemplateIDAugust1DeluxeEventPassTrackUnlockPlusPoints            IapItemDisplayTemplateID = "AUGUST1_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
 	IapItemDisplayTemplateIDBattlepassticket1                                      IapItemDisplayTemplateID = "battlepassticket.1"
 	IapItemDisplayTemplateIDBundleEc200Rpp1                                        IapItemDisplayTemplateID = "BUNDLE_EC_200_RPP_1"
 	IapItemDisplayTemplateIDBundleEc600Rpp3                                        IapItemDisplayTemplateID = "BUNDLE_EC_600_RPP_3"
@@ -276,6 +278,7 @@ const (
 	IapItemDisplayTemplateIDEventPassMonth1SeasonStoreRedirect                     IapItemDisplayTemplateID = "EVENT_PASS_MONTH1_SEASON_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEventPassMonth2SeasonStoreRedirect                     IapItemDisplayTemplateID = "EVENT_PASS_MONTH2_SEASON_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEventPassMonth3SeasonStoreRedirect                     IapItemDisplayTemplateID = "EVENT_PASS_MONTH3_SEASON_STORE_REDIRECT"
+	IapItemDisplayTemplateIDEventPassRedirectSummerMarathon2026                    IapItemDisplayTemplateID = "EVENT_PASS_REDIRECT_SUMMER_MARATHON_2026"
 	IapItemDisplayTemplateIDEventPassWinterholidays2025SeasonStoreRedirect         IapItemDisplayTemplateID = "EVENT_PASS_WINTERHOLIDAYS2025_SEASON_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEvergreenticket1                                       IapItemDisplayTemplateID = "evergreenticket.1"
 	IapItemDisplayTemplateIDEvergreenticket1Giftable                               IapItemDisplayTemplateID = "evergreenticket.1.giftable"
@@ -449,8 +452,6 @@ const (
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket10Giftable                     IapItemDisplayTemplateID = "pgorelease.general2.ticket.10.giftable"
 	IapItemDisplayTemplateIDPgoreleaseGofest2025DeluxeEventPassTrackRedirect       IapItemDisplayTemplateID = "pgorelease.gofest_2025_deluxe_event_pass_track_redirect"
 	IapItemDisplayTemplateIDPgoreleaseJuly1DeluxeEventPassTrackRedirect            IapItemDisplayTemplateID = "pgorelease.july1_deluxe_event_pass_track_redirect"
-	IapItemDisplayTemplateIDPgoreleaseJuly1DeluxeEventPassTrackUnlock              IapItemDisplayTemplateID = "pgorelease.july1_deluxe_event_pass_track_unlock"
-	IapItemDisplayTemplateIDPgoreleaseJuly1DeluxeEventPassTrackUnlockPlusPoints    IapItemDisplayTemplateID = "pgorelease.july1_deluxe_event_pass_track_unlock_plus_points"
 	IapItemDisplayTemplateIDPgoreleaseJuly2DeluxeEventPassTrackUnlock              IapItemDisplayTemplateID = "pgorelease.july2_deluxe_event_pass_track_unlock"
 	IapItemDisplayTemplateIDPgoreleaseJuly2DeluxeEventPassTrackUnlockPlusPoints    IapItemDisplayTemplateID = "pgorelease.july2_deluxe_event_pass_track_unlock_plus_points"
 	IapItemDisplayTemplateIDPgoreleaseMay12026DeluxeEventPassTrackRedirect         IapItemDisplayTemplateID = "pgorelease.may1_2026_deluxe_event_pass_track_redirect"
@@ -1179,6 +1180,8 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDApril22026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDApril32026DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDApril32026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDAugust1DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDAugust1DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDBattlepassticket1,
 	IapItemDisplayTemplateIDBundleEc200Rpp1,
 	IapItemDisplayTemplateIDBundleEc600Rpp3,
@@ -1444,6 +1447,7 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDEventPassMonth1SeasonStoreRedirect,
 	IapItemDisplayTemplateIDEventPassMonth2SeasonStoreRedirect,
 	IapItemDisplayTemplateIDEventPassMonth3SeasonStoreRedirect,
+	IapItemDisplayTemplateIDEventPassRedirectSummerMarathon2026,
 	IapItemDisplayTemplateIDEventPassWinterholidays2025SeasonStoreRedirect,
 	IapItemDisplayTemplateIDEvergreenticket1,
 	IapItemDisplayTemplateIDEvergreenticket1Giftable,
@@ -1617,8 +1621,6 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDPgoreleaseGeneral2Ticket10Giftable,
 	IapItemDisplayTemplateIDPgoreleaseGofest2025DeluxeEventPassTrackRedirect,
 	IapItemDisplayTemplateIDPgoreleaseJuly1DeluxeEventPassTrackRedirect,
-	IapItemDisplayTemplateIDPgoreleaseJuly1DeluxeEventPassTrackUnlock,
-	IapItemDisplayTemplateIDPgoreleaseJuly1DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDPgoreleaseJuly2DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDPgoreleaseJuly2DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDPgoreleaseMay12026DeluxeEventPassTrackRedirect,

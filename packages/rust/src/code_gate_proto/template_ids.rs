@@ -15,8 +15,6 @@ pub enum CodeGateProtoTemplateId {
     CombatVnextCodeGate,
     #[serde(rename = "EVENT_POI_REFRESH_CODE_GATE")]
     EventPoiRefreshCodeGate,
-    #[serde(rename = "IBFC_LWS_CODE_GATE")]
-    IbfcLwsCodeGate,
     #[serde(rename = "INPUT_TRACKER_CODE_GATE")]
     InputTrackerCodeGate,
     #[serde(rename = "IS_SKU_AVAILABLE_NO_APP_ID_CODE_GATE")]

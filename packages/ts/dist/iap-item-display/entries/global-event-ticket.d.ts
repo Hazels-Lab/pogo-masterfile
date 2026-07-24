@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 48 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 47 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -886,23 +886,6 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket10Giftable = S<
 		}
 	>
 >;
-export type IapItemDisplayPgoreleaseJuly1DeluxeEventPassTrackRedirect = S<
-	IapItemDisplay<
-		"pgorelease.july1_deluxe_event_pass_track_redirect",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			description: "pikachu_celebration_2026_deluxe_event_pass_track_unlock_description";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F68bf81f3_PGO-MCS_GO_Pass_Special_Anniversary_Pikachu_Celebration_v1-1024x576.jpg";
-			sku: "pgorelease.july1_deluxe_event_pass_track_redirect";
-			skuDisableTime: "2026-07-22T20:00:00";
-			skuDisableTimeUtcMs: "1784750400000";
-			skuEnableTime: "2025-07-13T10:00:00";
-			skuEnableTimeUtcMs: "1752400800000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_title_pikachu_celebration_2026";
-		}
-	>
->;
 
 export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayEventPassJuly2EventStoreRedirect
@@ -951,5 +934,4 @@ export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayPgoreleaseGeneral2Ticket8
 	| IapItemDisplayPgoreleaseGeneral2Ticket8Giftable
 	| IapItemDisplayPgoreleaseGeneral2Ticket10
-	| IapItemDisplayPgoreleaseGeneral2Ticket10Giftable
-	| IapItemDisplayPgoreleaseJuly1DeluxeEventPassTrackRedirect;
+	| IapItemDisplayPgoreleaseGeneral2Ticket10Giftable;

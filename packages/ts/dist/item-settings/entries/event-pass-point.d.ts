@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", split "event-pass-point", 16 entries.
+// Generated from Pokémon GO masterfile — group "itemSettings", split "event-pass-point", 17 entries.
 
 import type { S } from "../../_utils";
 import type { ItemSettings } from "../types";
@@ -227,7 +227,7 @@ export type ItemSettingsItemEventPassPointLiveOps07 = S<
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
-					limit: 500;
+					limit: 300;
 				};
 			};
 		}
@@ -248,6 +248,26 @@ export type ItemSettingsItemEventPassPointLiveOps08 = S<
 			timePeriodCounters: {
 				playerActivity: {
 					limit: 500;
+				};
+			};
+		}
+	>
+>;
+export type ItemSettingsItemEventPassPointLiveOps09 = S<
+	ItemSettings<
+		"ITEM_EVENT_PASS_POINT_LIVE_OPS_09",
+		{
+			category: "ITEM_CATEGORY_EVENT_PASS_POINT";
+			eventPassPoint: {
+				eventPassId: "EVENT_PASS_SUMMER_MARATHON_2026_EVENT";
+			};
+			hideItemInInventory: true;
+			ignoreInventorySpace: true;
+			itemCap: 999999;
+			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
+			timePeriodCounters: {
+				playerActivity: {
+					limit: 300;
 				};
 			};
 		}
@@ -299,7 +319,7 @@ export type ItemSettingsItemEventPassPointMonthly03 = S<
 		{
 			category: "ITEM_CATEGORY_EVENT_PASS_POINT";
 			eventPassPoint: {
-				eventPassId: "EVENT_PASS_MAY2026_SEASON";
+				eventPassId: "EVENT_PASS_AUGUST2026_SEASON";
 			};
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
@@ -328,6 +348,7 @@ export type ItemSettingsEventPassPointMasterfileEntry =
 	| ItemSettingsItemEventPassPointLiveOps06
 	| ItemSettingsItemEventPassPointLiveOps07
 	| ItemSettingsItemEventPassPointLiveOps08
+	| ItemSettingsItemEventPassPointLiveOps09
 	| ItemSettingsItemEventPassPointMonthly01
 	| ItemSettingsItemEventPassPointMonthly02
 	| ItemSettingsItemEventPassPointMonthly03;

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", 156 entries (structural types).
+// Generated from Pokémon GO masterfile — group "itemSettings", 157 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -47,6 +47,7 @@ export interface ItemSettingsData {
 		| "ITEM_CATEGORY_XP_BOOST";
 	descriptionOverride?:
 		| "item_event_ticket_02_details_CATCH_MASTERY_ORICORIO"
+		| "ITEM_EVENT_TICKET_05_details_gmaxRillaboom26"
 		| "item_event_ticket_06_desc_ENTEI_SHADOW_RAID_DAY"
 		| "item_event_ticket_06_desc_REPLAY_GO_BIGGER"
 		| "item_event_ticket_07_desc_masterball25"
@@ -70,8 +71,6 @@ export interface ItemSettingsData {
 		| "item_event_ticket_pink_details_CDC_Deino26"
 		| "item_event_ticket_pink_details_MegaRayquaza26"
 		| "item_event_ticket_pink_details_WaterRRD26"
-		| "ITEM_EVENT_TICKET_S23_2026_08_desc_gmaxRillaboom26"
-		| "ITEM_EVENT_TICKET_S23_2026_08_details_gmaxRillaboom26"
 		| "item_global_event_ticket_details_GOTour2026"
 		| "item_postcard_inventory_desc_stamp";
 	dropTrainerLevel?: number;
@@ -90,6 +89,7 @@ export interface ItemSettingsData {
 		eventPassId:
 			| "EVENT_PASS_AFTERPARTY2026_EVENT"
 			| "EVENT_PASS_AMER2026_EVENT"
+			| "EVENT_PASS_AUGUST2026_SEASON"
 			| "EVENT_PASS_BLANCHE2026_EVENT"
 			| "EVENT_PASS_EMEA2026_EVENT"
 			| "EVENT_PASS_FLYINGTAXI2026_EVENT"
@@ -100,10 +100,10 @@ export interface ItemSettingsData {
 			| "EVENT_PASS_GOWA_2025"
 			| "EVENT_PASS_JULY2026_SEASON"
 			| "EVENT_PASS_JUNE2026_SEASON"
-			| "EVENT_PASS_MAY2026_SEASON"
 			| "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT"
 			| "EVENT_PASS_SPRINGMARATHON2026_EVENT"
-			| "EVENT_PASS_STEELEDRESOLVE2026_EVENT";
+			| "EVENT_PASS_STEELEDRESOLVE2026_EVENT"
+			| "EVENT_PASS_SUMMER_MARATHON_2026_EVENT";
 	};
 	food?: {
 		berryMultiplier?: number;
@@ -412,6 +412,7 @@ export interface ItemSettingsData {
 		itemBagDescriptionKey:
 			| "item_battle_pass_ticket_desc"
 			| "item_event_ticket_02_desc_CATCH_MASTERY_ORICORIO"
+			| "ITEM_EVENT_TICKET_05_desc_gmaxRillaboom26"
 			| "item_event_ticket_06_details_REPLAY_GO_BIGGER"
 			| "item_event_ticket_07_desc_masterball25"
 			| "item_event_ticket_07_details_masterball25"
@@ -437,8 +438,6 @@ export interface ItemSettingsData {
 			| "item_event_ticket_pink_desc_MegaRayquaza26"
 			| "item_event_ticket_pink_desc_WaterRRD26"
 			| "item_event_ticket_pink_details_MegaRayquaza26"
-			| "ITEM_EVENT_TICKET_S23_2026_08_desc_gmaxRillaboom26"
-			| "ITEM_EVENT_TICKET_S23_2026_08_details_gmaxRillaboom26"
 			| "item_global_event_ticket_details_GOTour2026"
 			| "item_ticket_city_safari_00_desc"
 			| "item_ticket_city_safari_01_desc"

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 74 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 76 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -102,6 +102,40 @@ export type IapItemDisplayApril32026DeluxeEventPassTrackUnlockPlusPoints = S<
 			skuEnableTimeUtcMs: "1745834400000";
 			sortOrder: 1;
 			title: "season_pass_premium_track_plus_six_ranks_title_steeled_resolve_2026";
+		}
+	>
+>;
+export type IapItemDisplayAugust1DeluxeEventPassTrackUnlock = S<
+	IapItemDisplay<
+		"AUGUST1_DELUXE_EVENT_PASS_TRACK_UNLOCK",
+		{
+			description: "deluxe_event_pass_track_unlock_description";
+			hidden: true;
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Faab1ed22_PGO-MCS_Summer_Marathon_Fire_Ice_v3b-1024x576.jpg";
+			sku: "pgorelease.august1_deluxe_event_pass_track_unlock";
+			skuDisableTime: "2025-08-12T20:00:00";
+			skuDisableTimeUtcMs: "1755028800000";
+			skuEnableTime: "2025-08-04T10:00:00";
+			skuEnableTimeUtcMs: "1754301600000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_summermarathon2026";
+		}
+	>
+>;
+export type IapItemDisplayAugust1DeluxeEventPassTrackUnlockPlusPoints = S<
+	IapItemDisplay<
+		"AUGUST1_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS",
+		{
+			description: "event_pass_plus_points_6_ranks_description";
+			hidden: true;
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Faab1ed22_PGO-MCS_Summer_Marathon_Fire_Ice_v3b-1024x576.jpg";
+			sku: "pgorelease.august1_deluxe_event_pass_track_unlock_plus_points";
+			skuDisableTime: "2025-08-12T20:00:00";
+			skuDisableTimeUtcMs: "1755028800000";
+			skuEnableTime: "2025-08-04T10:00:00";
+			skuEnableTimeUtcMs: "1754301600000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_plus_six_ranks_title_summermarathon2026";
 		}
 	>
 >;
@@ -370,14 +404,31 @@ export type IapItemDisplayEventPassMonth3SeasonStoreRedirect = S<
 		{
 			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
 			hidden: true;
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO-MCS_GO_Pass_May_2026_TICKET_v1-1204x576.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F84f00147_PGO-MCS_GO_Pass_August_2026_TICKET_v1-1024x576.jpg";
 			sku: "pgorelease.month3_deluxe_event_pass_track_redirect";
-			skuDisableTime: "2025-06-04T10:00:00";
-			skuDisableTimeUtcMs: "1749031200000";
-			skuEnableTime: "2025-05-05T10:00:00";
-			skuEnableTimeUtcMs: "1746439200000";
+			skuDisableTime: "2025-09-10T10:00:00";
+			skuDisableTimeUtcMs: "1757498400000";
+			skuEnableTime: "2025-08-04T10:00:00";
+			skuEnableTimeUtcMs: "1754301600000";
 			sortOrder: 1;
-			title: "season_pass_premium_track_title_may";
+			title: "season_pass_premium_track_title_aug";
+		}
+	>
+>;
+export type IapItemDisplayEventPassRedirectSummerMarathon2026 = S<
+	IapItemDisplay<
+		"EVENT_PASS_REDIRECT_SUMMER_MARATHON_2026",
+		{
+			description: "deluxe_event_pass_track_unlock_description";
+			hidden: true;
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Faab1ed22_PGO-MCS_Summer_Marathon_Fire_Ice_v3b-1024x576.jpg";
+			sku: "pgorelease.august1_deluxe_event_pass_track_unlock_redirect";
+			skuDisableTime: "2025-08-12T20:00:00";
+			skuDisableTimeUtcMs: "1755028800000";
+			skuEnableTime: "2025-08-04T10:00:00";
+			skuEnableTimeUtcMs: "1754301600000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_summermarathon2026";
 		}
 	>
 >;
@@ -607,10 +658,11 @@ export type IapItemDisplayJuly1DeluxeEventPassTrackUnlock = S<
 		"JULY1_DELUXE_EVENT_PASS_TRACK_UNLOCK",
 		{
 			description: "pikachu_celebration_2026_deluxe_event_pass_track_unlock_description";
+			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F68bf81f3_PGO-MCS_GO_Pass_Special_Anniversary_Pikachu_Celebration_v1-1024x576.jpg";
 			sku: "pgorelease.july1_deluxe_event_pass_track_unlock";
-			skuDisableTime: "2026-07-22T20:00:00";
-			skuDisableTimeUtcMs: "1784750400000";
+			skuDisableTime: "2025-07-22T20:00:00";
+			skuDisableTimeUtcMs: "1753214400000";
 			skuEnableTime: "2025-07-13T10:00:00";
 			skuEnableTimeUtcMs: "1752400800000";
 			sortOrder: 1;
@@ -623,10 +675,11 @@ export type IapItemDisplayJuly1DeluxeEventPassTrackUnlockPlusPoints = S<
 		"JULY1_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS",
 		{
 			description: "event_pass_plus_points_6_ranks_description";
+			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F68bf81f3_PGO-MCS_GO_Pass_Special_Anniversary_Pikachu_Celebration_v1-1024x576.jpg";
 			sku: "pgorelease.july1_deluxe_event_pass_track_unlock_plus_points";
-			skuDisableTime: "2026-07-22T20:00:00";
-			skuDisableTimeUtcMs: "1784750400000";
+			skuDisableTime: "2025-07-22T20:00:00";
+			skuDisableTimeUtcMs: "1753214400000";
 			skuEnableTime: "2025-07-13T10:00:00";
 			skuEnableTimeUtcMs: "1752400800000";
 			sortOrder: 1;
@@ -976,14 +1029,14 @@ export type IapItemDisplayMonth3DeluxeEventPassTrackUnlock = S<
 		{
 			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
 			hidden: true;
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO-MCS_GO_Pass_May_2026_TICKET_v1-1204x576.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F84f00147_PGO-MCS_GO_Pass_August_2026_TICKET_v1-1024x576.jpg";
 			sku: "pgorelease.month3_deluxe_event_pass_track_unlock";
-			skuDisableTime: "2025-06-04T10:00:00";
-			skuDisableTimeUtcMs: "1749031200000";
-			skuEnableTime: "2025-05-05T10:00:00";
-			skuEnableTimeUtcMs: "1746439200000";
+			skuDisableTime: "2025-09-10T10:00:00";
+			skuDisableTimeUtcMs: "1757498400000";
+			skuEnableTime: "2025-08-04T10:00:00";
+			skuEnableTimeUtcMs: "1754301600000";
 			sortOrder: 1;
-			title: "season_pass_premium_track_title_may";
+			title: "season_pass_premium_track_title_aug";
 		}
 	>
 >;
@@ -993,14 +1046,14 @@ export type IapItemDisplayMonth3DeluxeEventPassTrackUnlockPlusPoints = S<
 		{
 			description: "gotour_2025_deluxe_event_pass_track_unlock_plus_points_description";
 			hidden: true;
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO-MCS_GO_Pass_May_2026_TICKET_v1-1204x576.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F84f00147_PGO-MCS_GO_Pass_August_2026_TICKET_v1-1024x576.jpg";
 			sku: "pgorelease.month3_deluxe_event_pass_track_unlock_plus_points";
-			skuDisableTime: "2025-06-04T10:00:00";
-			skuDisableTimeUtcMs: "1749031200000";
-			skuEnableTime: "2025-05-05T10:00:00";
-			skuEnableTimeUtcMs: "1746439200000";
+			skuDisableTime: "2025-09-10T10:00:00";
+			skuDisableTimeUtcMs: "1757498400000";
+			skuEnableTime: "2025-08-04T10:00:00";
+			skuEnableTimeUtcMs: "1754301600000";
 			sortOrder: 1;
-			title: "season_pass_premium_track_plus_ten_ranks_title_may";
+			title: "season_pass_premium_track_plus_ten_ranks_title_aug";
 		}
 	>
 >;
@@ -1054,35 +1107,20 @@ export type IapItemDisplayPgoreleaseGofest2025DeluxeEventPassTrackRedirect = S<
 		}
 	>
 >;
-export type IapItemDisplayPgoreleaseJuly1DeluxeEventPassTrackUnlock = S<
+export type IapItemDisplayPgoreleaseJuly1DeluxeEventPassTrackRedirect = S<
 	IapItemDisplay<
-		"pgorelease.july1_deluxe_event_pass_track_unlock",
+		"pgorelease.july1_deluxe_event_pass_track_redirect",
 		{
 			description: "pikachu_celebration_2026_deluxe_event_pass_track_unlock_description";
+			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F68bf81f3_PGO-MCS_GO_Pass_Special_Anniversary_Pikachu_Celebration_v1-1024x576.jpg";
-			sku: "pgorelease.july1_deluxe_event_pass_track_unlock";
-			skuDisableTime: "2026-07-22T20:00:00";
-			skuDisableTimeUtcMs: "1784750400000";
+			sku: "pgorelease.july1_deluxe_event_pass_track_redirect";
+			skuDisableTime: "2025-07-22T20:00:00";
+			skuDisableTimeUtcMs: "1753214400000";
 			skuEnableTime: "2025-07-13T10:00:00";
 			skuEnableTimeUtcMs: "1752400800000";
 			sortOrder: 1;
 			title: "season_pass_premium_track_title_pikachu_celebration_2026";
-		}
-	>
->;
-export type IapItemDisplayPgoreleaseJuly1DeluxeEventPassTrackUnlockPlusPoints = S<
-	IapItemDisplay<
-		"pgorelease.july1_deluxe_event_pass_track_unlock_plus_points",
-		{
-			description: "event_pass_plus_points_6_ranks_description";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F68bf81f3_PGO-MCS_GO_Pass_Special_Anniversary_Pikachu_Celebration_v1-1024x576.jpg";
-			sku: "pgorelease.july1_deluxe_event_pass_track_unlock_plus_points";
-			skuDisableTime: "2026-07-22T20:00:00";
-			skuDisableTimeUtcMs: "1784750400000";
-			skuEnableTime: "2025-07-13T10:00:00";
-			skuEnableTimeUtcMs: "1752400800000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_plus_six_ranks_title_pikachu_celebration_2026";
 		}
 	>
 >;
@@ -1224,6 +1262,8 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayApril22026DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayApril32026DeluxeEventPassTrackUnlock
 	| IapItemDisplayApril32026DeluxeEventPassTrackUnlockPlusPoints
+	| IapItemDisplayAugust1DeluxeEventPassTrackUnlock
+	| IapItemDisplayAugust1DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayBundleEc200Rpp1
 	| IapItemDisplayBundleEc600Rpp3
 	| IapItemDisplayEventPassAmer2026StoreRedirect
@@ -1241,6 +1281,7 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayEventPassMay2EventStoreRedirect
 	| IapItemDisplayEventPassMonth1SeasonStoreRedirect
 	| IapItemDisplayEventPassMonth3SeasonStoreRedirect
+	| IapItemDisplayEventPassRedirectSummerMarathon2026
 	| IapItemDisplayEventPassWinterholidays2025SeasonStoreRedirect
 	| IapItemDisplayGofest2025DeluxeEventPassTrackUnlock
 	| IapItemDisplayGofest2025DeluxeEventPassTrackUnlockPlusPoints
@@ -1282,8 +1323,7 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayMpReplenishRrp3
 	| IapItemDisplayPgoreleaseApril22026DeluxeEventPassTrackRedirect
 	| IapItemDisplayPgoreleaseGofest2025DeluxeEventPassTrackRedirect
-	| IapItemDisplayPgoreleaseJuly1DeluxeEventPassTrackUnlock
-	| IapItemDisplayPgoreleaseJuly1DeluxeEventPassTrackUnlockPlusPoints
+	| IapItemDisplayPgoreleaseJuly1DeluxeEventPassTrackRedirect
 	| IapItemDisplayPgoreleaseJuly2DeluxeEventPassTrackUnlock
 	| IapItemDisplayPgoreleaseJuly2DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayPgoreleaseMay12026DeluxeEventPassTrackRedirect

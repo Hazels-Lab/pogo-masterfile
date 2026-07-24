@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemExpirationSettings", 22 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "itemExpirationSettings", 23 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { ItemExpirationSettings } from "../types";
@@ -116,6 +116,15 @@ export type ItemExpirationSettingsEventPassPointLiveOps08 = S<
 		}
 	>
 >;
+export type ItemExpirationSettingsEventPassPointLiveOps09 = S<
+	ItemExpirationSettings<
+		"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_LIVE_OPS_09",
+		{
+			emergencyExpirationTime: "2026-08-15T10:00:00";
+			expirationTime: "2026-08-14T20:00:00";
+		}
+	>
+>;
 export type ItemExpirationSettingsEventPassPointMonthly01 = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_MONTHLY_01",
@@ -138,8 +147,8 @@ export type ItemExpirationSettingsEventPassPointMonthly03 = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_MONTHLY_03",
 		{
-			emergencyExpirationTime: "2026-06-06T10:00:00";
-			expirationTime: "2026-06-04T10:00:00";
+			emergencyExpirationTime: "2026-09-12T10:00:00";
+			expirationTime: "2026-09-10T10:00:00";
 		}
 	>
 >;
@@ -248,6 +257,7 @@ export type ItemExpirationSettingsMasterfileEntry =
 	| ItemExpirationSettingsEventPassPointLiveOps06
 	| ItemExpirationSettingsEventPassPointLiveOps07
 	| ItemExpirationSettingsEventPassPointLiveOps08
+	| ItemExpirationSettingsEventPassPointLiveOps09
 	| ItemExpirationSettingsEventPassPointMonthly01
 	| ItemExpirationSettingsEventPassPointMonthly02
 	| ItemExpirationSettingsEventPassPointMonthly03
