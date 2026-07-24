@@ -11,7 +11,7 @@ pub struct BonusBoxes {
 #[serde(rename_all = "camelCase")]
 pub struct ActiveBonusDisplaySettings {
     pub bonus_boxes: Vec<BonusBoxes>,
-    pub event_name: Option<String>,
+    pub event_name: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

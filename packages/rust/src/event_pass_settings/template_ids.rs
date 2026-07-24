@@ -11,6 +11,4 @@ pub enum EventPassSettingsTemplateId {
     EventPassAfterparty2026Event,
     #[serde(rename = "EVENT_PASS_JULY2026_SEASON")]
     EventPassJuly2026Season,
-    #[serde(rename = "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT")]
-    EventPassPikachuCelebration2026Event,
 }

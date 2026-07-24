@@ -2911,7 +2911,7 @@ pub struct VnextBattleConfig {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct VsSeekerClientSettings {
-    pub allowed_vs_seeker_league_template_id: [String; 3],
+    pub allowed_vs_seeker_league_template_id: [String; 4],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

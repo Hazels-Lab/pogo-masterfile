@@ -1115,7 +1115,7 @@ export type ItemSettingsItemEventTicketS23202608 = S<
 		"ITEM_EVENT_TICKET_S23_2026_08",
 		{
 			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
-			descriptionOverride: "ITEM_EVENT_TICKET_S23_2026_08_desc_gmaxRillaboom26";
+			descriptionOverride: "ITEM_EVENT_TICKET_05_details_gmaxRillaboom26";
 			globalEventTicket: {
 				backgroundImageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F871eef71_PGO-MCS_GMAX_Rillaboom_Max_Battle_Day_v1-1024x576-nologo.jpg";
 				clientEventEndTimeUtcMs: "1785603600000";
@@ -1148,7 +1148,7 @@ export type ItemSettingsItemEventTicketS23202608 = S<
 						type: "ITEM";
 					},
 				];
-				itemBagDescriptionKey: "ITEM_EVENT_TICKET_S23_2026_08_desc_gmaxRillaboom26";
+				itemBagDescriptionKey: "ITEM_EVENT_TICKET_05_desc_gmaxRillaboom26";
 				textRewardsKey: "text_rewards_key_gmaxRillaboom26";
 			};
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
@@ -1161,14 +1161,14 @@ export type ItemSettingsItemEventTicketS23202608ToGift = S<
 		"ITEM_EVENT_TICKET_S23_2026_08_TO_GIFT",
 		{
 			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
-			descriptionOverride: "ITEM_EVENT_TICKET_S23_2026_08_details_gmaxRillaboom26";
+			descriptionOverride: "ITEM_EVENT_TICKET_05_details_gmaxRillaboom26";
 			globalEventTicket: {
 				clientEventEndTimeUtcMs: "1785603600000";
 				clientEventStartTimeUtcMs: "1785592800000";
 				eventBannerUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F871eef71_PGO-MCS_GMAX_Rillaboom_Max_Battle_Day_v1-1024x576-nologo.jpg";
 				eventEndTime: "2026-08-01T17:00:00";
 				eventStartTime: "2026-08-01T14:00:00";
-				itemBagDescriptionKey: "ITEM_EVENT_TICKET_S23_2026_08_details_gmaxRillaboom26";
+				itemBagDescriptionKey: "ITEM_EVENT_TICKET_05_desc_gmaxRillaboom26";
 				ticketItem: "ITEM_EVENT_TICKET_S23_2026_08";
 			};
 			ignoreInventorySpace: true;

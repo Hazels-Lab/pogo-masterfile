@@ -30,6 +30,7 @@ const (
 	ItemSettingsTemplateIDItemEventPassPointLiveOps06       ItemSettingsTemplateID = "ITEM_EVENT_PASS_POINT_LIVE_OPS_06"
 	ItemSettingsTemplateIDItemEventPassPointLiveOps07       ItemSettingsTemplateID = "ITEM_EVENT_PASS_POINT_LIVE_OPS_07"
 	ItemSettingsTemplateIDItemEventPassPointLiveOps08       ItemSettingsTemplateID = "ITEM_EVENT_PASS_POINT_LIVE_OPS_08"
+	ItemSettingsTemplateIDItemEventPassPointLiveOps09       ItemSettingsTemplateID = "ITEM_EVENT_PASS_POINT_LIVE_OPS_09"
 	ItemSettingsTemplateIDItemEventPassPointMonthly01       ItemSettingsTemplateID = "ITEM_EVENT_PASS_POINT_MONTHLY_01"
 	ItemSettingsTemplateIDItemEventPassPointMonthly02       ItemSettingsTemplateID = "ITEM_EVENT_PASS_POINT_MONTHLY_02"
 	ItemSettingsTemplateIDItemEventPassPointMonthly03       ItemSettingsTemplateID = "ITEM_EVENT_PASS_POINT_MONTHLY_03"
@@ -189,6 +190,7 @@ var ItemSettingsTemplateIDValues = [...]ItemSettingsTemplateID{
 	ItemSettingsTemplateIDItemEventPassPointLiveOps06,
 	ItemSettingsTemplateIDItemEventPassPointLiveOps07,
 	ItemSettingsTemplateIDItemEventPassPointLiveOps08,
+	ItemSettingsTemplateIDItemEventPassPointLiveOps09,
 	ItemSettingsTemplateIDItemEventPassPointMonthly01,
 	ItemSettingsTemplateIDItemEventPassPointMonthly02,
 	ItemSettingsTemplateIDItemEventPassPointMonthly03,

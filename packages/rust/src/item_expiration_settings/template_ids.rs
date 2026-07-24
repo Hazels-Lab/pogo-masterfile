@@ -33,6 +33,8 @@ pub enum ItemExpirationSettingsTemplateId {
     ItemExpirationItemEventPassPointLiveOps07,
     #[serde(rename = "ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_LIVE_OPS_08")]
     ItemExpirationItemEventPassPointLiveOps08,
+    #[serde(rename = "ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_LIVE_OPS_09")]
+    ItemExpirationItemEventPassPointLiveOps09,
     #[serde(rename = "ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_MONTHLY_01")]
     ItemExpirationItemEventPassPointMonthly01,
     #[serde(rename = "ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_MONTHLY_02")]

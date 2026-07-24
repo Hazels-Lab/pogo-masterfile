@@ -435,7 +435,7 @@ type DeprecatedClientQuestTemplateIds =
 	| "LEVEL_50_CAP_SUB_2"
 	| "LEVEL_50_CAP_SUB_3";
 
-/** @deprecated lastSeen 2026-07-15 — 34 entries */
+/** @deprecated lastSeen 2026-07-24 — 35 entries */
 type DeprecatedCodeGateProtoIds =
 	| "AGE_CONFIRM_CODE_GATE"
 	| "BATTLE_REWARDS_CODE_GATE"
@@ -447,6 +447,7 @@ type DeprecatedCodeGateProtoIds =
 	| "FOUR_SHIELD_BREAD_GUI_CODE_GATE"
 	| "FUSION_CODE_GATE"
 	| "HOLD_ONTO_SPECIAL_TRADE_CODE_GATE"
+	| "IBFC_LWS_CODE_GATE"
 	| "LEAVE_PARTY_REFACTOR_CODE_GATE"
 	| "OLD_EMAIL_TICKET_FIX_CODE_GATE"
 	| "PARTY_CREATION_REFACTOR_CODE_GATE"
@@ -475,7 +476,7 @@ type DeprecatedCodeGateProtoIds =
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedEggTransparencySettingsIds = "EGG_TRANSPARENCY_SETTINGS";
 
-/** @deprecated lastSeen 2026-07-15 — 29 entries */
+/** @deprecated lastSeen 2026-07-24 — 30 entries */
 type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_30ANNIV2026_EVENT"
 	| "EVENT_PASS_APRIL2025_SEASON"
@@ -500,6 +501,7 @@ type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_MAY2026_SEASON"
 	| "EVENT_PASS_NOVEMBER2025_SEASON"
 	| "EVENT_PASS_OCTOBER2025_SEASON"
+	| "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT"
 	| "EVENT_PASS_SEPTEMBER2025_SEASON"
 	| "EVENT_PASS_SHOCKINGLYGOOD2026_EVENT"
 	| "EVENT_PASS_SPRINGMARATHON2026_EVENT"

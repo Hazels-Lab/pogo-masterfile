@@ -664,9 +664,9 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					};
 					pokemon: {
 						pokemonDisplay: {
-							form: "KYOGRE_NORMAL";
+							form: "SOLGALEO_NORMAL";
 						};
-						pokemonId: "KYOGRE";
+						pokemonId: "SOLGALEO";
 					};
 					staminaIvOverride: {
 						range: {

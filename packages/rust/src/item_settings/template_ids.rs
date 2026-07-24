@@ -57,6 +57,8 @@ pub enum ItemSettingsTemplateId {
     ItemEventPassPointLiveOps07,
     #[serde(rename = "ITEM_EVENT_PASS_POINT_LIVE_OPS_08")]
     ItemEventPassPointLiveOps08,
+    #[serde(rename = "ITEM_EVENT_PASS_POINT_LIVE_OPS_09")]
+    ItemEventPassPointLiveOps09,
     #[serde(rename = "ITEM_EVENT_PASS_POINT_MONTHLY_01")]
     ItemEventPassPointMonthly01,
     #[serde(rename = "ITEM_EVENT_PASS_POINT_MONTHLY_02")]

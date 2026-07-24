@@ -26,6 +26,7 @@ import type {
 	ItemSettingsItemEventPassPointLiveOps06,
 	ItemSettingsItemEventPassPointLiveOps07,
 	ItemSettingsItemEventPassPointLiveOps08,
+	ItemSettingsItemEventPassPointLiveOps09,
 	ItemSettingsItemEventPassPointMonthly01,
 	ItemSettingsItemEventPassPointMonthly02,
 	ItemSettingsItemEventPassPointMonthly03,
@@ -185,6 +186,7 @@ export interface ItemSettingsLookup {
 	ITEM_EVENT_PASS_POINT_LIVE_OPS_06: ItemSettingsItemEventPassPointLiveOps06;
 	ITEM_EVENT_PASS_POINT_LIVE_OPS_07: ItemSettingsItemEventPassPointLiveOps07;
 	ITEM_EVENT_PASS_POINT_LIVE_OPS_08: ItemSettingsItemEventPassPointLiveOps08;
+	ITEM_EVENT_PASS_POINT_LIVE_OPS_09: ItemSettingsItemEventPassPointLiveOps09;
 	ITEM_EVENT_PASS_POINT_MONTHLY_01: ItemSettingsItemEventPassPointMonthly01;
 	ITEM_EVENT_PASS_POINT_MONTHLY_02: ItemSettingsItemEventPassPointMonthly02;
 	ITEM_EVENT_PASS_POINT_MONTHLY_03: ItemSettingsItemEventPassPointMonthly03;

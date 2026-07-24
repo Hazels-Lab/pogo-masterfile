@@ -5,7 +5,6 @@ import type {
 	CodeGateProtoBattleAccessibilityCodeGate,
 	CodeGateProtoCombatVnextCodeGate,
 	CodeGateProtoEventPoiRefreshCodeGate,
-	CodeGateProtoIbfcLwsCodeGate,
 	CodeGateProtoInputTrackerCodeGate,
 	CodeGateProtoIsSkuAvailableNoAppIdCodeGate,
 	CodeGateProtoMapThemeLowPerfCodeGate,
@@ -19,7 +18,6 @@ export interface CodeGateProtoLookup {
 	BATTLE_ACCESSIBILITY_CODE_GATE: CodeGateProtoBattleAccessibilityCodeGate;
 	COMBAT_VNEXT_CODE_GATE: CodeGateProtoCombatVnextCodeGate;
 	EVENT_POI_REFRESH_CODE_GATE: CodeGateProtoEventPoiRefreshCodeGate;
-	IBFC_LWS_CODE_GATE: CodeGateProtoIbfcLwsCodeGate;
 	INPUT_TRACKER_CODE_GATE: CodeGateProtoInputTrackerCodeGate;
 	IS_SKU_AVAILABLE_NO_APP_ID_CODE_GATE: CodeGateProtoIsSkuAvailableNoAppIdCodeGate;
 	MAP_THEME_LOW_PERF_CODE_GATE: CodeGateProtoMapThemeLowPerfCodeGate;

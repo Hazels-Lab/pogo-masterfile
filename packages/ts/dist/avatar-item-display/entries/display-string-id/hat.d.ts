@@ -1906,7 +1906,7 @@ export type AvatarItemDisplayNHatWillowglasses0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_hat_willowglasses_0",
 		{
-			displayStringId: "n_hat_willowglasses_0 _display_name";
+			displayStringId: "n_hat_willowglasses_0_display_name";
 			iconAddress: "n_hat_willowglasses_0_icon";
 		}
 	>

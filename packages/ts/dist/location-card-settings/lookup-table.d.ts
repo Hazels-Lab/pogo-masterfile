@@ -74,6 +74,7 @@ import type {
 	LocationCardSettings2026ChicagoGofest001,
 	LocationCardSettings2026CologneCarnival001,
 	LocationCardSettings2026CopenhagenGofest001,
+	LocationCardSettings2026JpRed,
 	LocationCardSettings2026LosangelesGotour001,
 	LocationCardSettings2026Npb001,
 	LocationCardSettings2026Npb002,
@@ -317,6 +318,7 @@ export interface LocationCardSettingsLookup {
 	LC_2026_CHICAGO_GOFEST_001: LocationCardSettings2026ChicagoGofest001;
 	LC_2026_COLOGNE_CARNIVAL_001: LocationCardSettings2026CologneCarnival001;
 	LC_2026_COPENHAGEN_GOFEST_001: LocationCardSettings2026CopenhagenGofest001;
+	LC_2026_JP_RED: LocationCardSettings2026JpRed;
 	LC_2026_LOSANGELES_GOTOUR_001: LocationCardSettings2026LosangelesGotour001;
 	LC_2026_NPB_001: LocationCardSettings2026Npb001;
 	LC_2026_NPB_002: LocationCardSettings2026Npb002;

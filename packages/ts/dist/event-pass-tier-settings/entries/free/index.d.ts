@@ -2,15 +2,12 @@
 
 import type { EventPassTierSettingsFreeAfterparty2026MasterfileEntry } from "./afterparty2026";
 import type { EventPassTierSettingsFreeJuly2026MasterfileEntry } from "./july2026";
-import type { EventPassTierSettingsFreePikachuMasterfileEntry } from "./pikachu";
 
 export type * from "./afterparty2026";
 export type * from "./july2026";
-export type * from "./pikachu";
 
 export type EventPassTierSettingsFreeMasterfileEntry =
 	| EventPassTierSettingsFreeAfterparty2026MasterfileEntry
-	| EventPassTierSettingsFreeJuly2026MasterfileEntry
-	| EventPassTierSettingsFreePikachuMasterfileEntry;
+	| EventPassTierSettingsFreeJuly2026MasterfileEntry;
 
 export type EventPassTierSettingsFreeTemplateID = EventPassTierSettingsFreeMasterfileEntry["templateId"];
