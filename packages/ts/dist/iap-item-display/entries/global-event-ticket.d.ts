@@ -437,16 +437,15 @@ export type IapItemDisplayGeneral2Ticket9 = S<
 		"general2.ticket.9",
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F9398cb22_PGO-MCS_Skarmory_Super_Mega_Raid_Day_v4-1024x576.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F0ba8ff0a_20260508_pgo_s23_megarayquaza_1024x576_nologo.jpg";
 			sku: "pgorelease.general2.ticket.9";
-			skuDisableTime: "2026-06-27T17:00:00";
-			skuDisableTimeUtcMs: "1782579600000";
-			skuEnableTime: "2026-03-03T13:00:00";
-			skuEnableTimeUtcMs: "1772542800000";
-			sortOrder: 2;
-			spriteId: "general2.ticket.9";
-			title: "general2.ticket.5_MegaSkarmoryRaidDay";
+			skuDisableTime: "2026-07-26T20:00:00";
+			skuDisableTimeUtcMs: "1785096000000";
+			skuEnableTime: "2023-01-01T11:00:01";
+			skuEnableTimeUtcMs: "1672570801000";
+			sortOrder: 1;
+			spriteId: "general2.ticket.2";
+			title: "general1.ticket.2_MegaRayquaza_title";
 			useEnvironmentPrefix: true;
 		}
 	>
