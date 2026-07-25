@@ -3461,15 +3461,15 @@ export type IapItemDisplayPgoreleaseBundleGeneralThirdpartySmall2 = S<
 		"pgorelease.bundle.general.thirdparty.small.2",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
+			sale: true;
 			sku: "pgorelease.bundle.general.thirdparty.small.2";
-			skuDisableTime: "2026-01-08T20:00:00";
-			skuDisableTimeUtcMs: "1767902400000";
+			skuDisableTime: "2026-08-16T20:00:00";
+			skuDisableTimeUtcMs: "1786910400000";
 			skuEnableTime: "2019-10-31T21:00:00";
 			skuEnableTimeUtcMs: "1572555600000";
 			sortOrder: 1;
-			spriteId: "bundle.general2.small.1";
-			title: "holiday_box";
+			spriteId: "bundle.xmas.medium.1";
+			title: "bundle.xmas.small.1_title";
 		}
 	>
 >;
