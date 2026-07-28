@@ -14,14 +14,11 @@ export type PartyPlayGeneralSettingsPartyPlayGeneralSettings = S<
 			maxStackedEncounterReward: 1;
 			minPlayerLevel: 21;
 			partyCatchTagsEnabled: true;
-			partyExpiryDurationMs: "32400000";
-			partyExpiryWarningMinutes: 30;
+			partyExpiryDurationMs: "10800000";
+			partyExpiryWarningMinutes: 10;
 			partyIapBoostsEnabled: true;
 			partyNewQuestNotificationV2Enabled: true;
 			partyQuestEncounterRewardEnabled: true;
-			partySchedulingSettings: {
-				partyExpiryDurationMs: "32400000";
-			};
 			pgDeliveryMechanic: "POLLING_BIT";
 			restartPartyRejoinPromptEnabled: true;
 		}

@@ -13675,7 +13675,6 @@ export type PokemonSettingsV0484PokemonPalkiaOrigin = S<
 			candyToEvolve: 25;
 			cinematicMoves: ["DRACO_METEOR", "FIRE_BLAST", "HYDRO_PUMP", "AQUA_TAIL"];
 			disableTransferToPokemonHome: true;
-			eliteCinematicMove: ["SPACIAL_REND"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 29;

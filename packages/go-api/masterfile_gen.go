@@ -92,7 +92,6 @@ type Masterfile struct {
 	CombatType                           *accessor.CombatTypeAccessor
 	CombatRankingProtoSettings           *accessor.CombatRankingProtoSettingsAccessor
 	CombatMove                           *accessor.CombatMoveAccessor
-	RollBack                             *accessor.RollBackAccessor
 	PokemonHomeEnergyCosts               *accessor.PokemonHomeEnergyCostsAccessor
 	EventPassSettings                    *accessor.EventPassSettingsAccessor
 	EventPassTierSettings                *accessor.EventPassTierSettingsAccessor
@@ -101,6 +100,7 @@ type Masterfile struct {
 	FormSettings                         *accessor.FormSettingsAccessor
 	FortPowerUpLevelSettings             *accessor.FortPowerUpLevelSettingsAccessor
 	FriendshipMilestoneSettings          *accessor.FriendshipMilestoneSettingsAccessor
+	RollBack                             *accessor.RollBackAccessor
 	ItemSettings                         *accessor.ItemSettingsAccessor
 	LanguageSettings                     *accessor.LanguageSettingsAccessor
 	IapCategoryDisplay                   *accessor.IapCategoryDisplayAccessor
@@ -157,7 +157,6 @@ var GroupNames = []string{
 	"combatType",
 	"combatRankingProtoSettings",
 	"combatMove",
-	"rollBack",
 	"pokemonHomeEnergyCosts",
 	"eventPassSettings",
 	"eventPassTierSettings",
@@ -166,6 +165,7 @@ var GroupNames = []string{
 	"formSettings",
 	"fortPowerUpLevelSettings",
 	"friendshipMilestoneSettings",
+	"rollBack",
 	"itemSettings",
 	"languageSettings",
 	"iapCategoryDisplay",
@@ -224,7 +224,6 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 	combatTypeBucket := []combat_type.CombatTypeEntry{}
 	combatRankingProtoSettingsBucket := []combat_ranking_proto_settings.CombatRankingProtoSettingsEntry{}
 	combatMoveBucket := []combat_move.CombatMoveEntry{}
-	rollBackBucket := []roll_back.RollBackEntry{}
 	pokemonHomeEnergyCostsBucket := []pokemon_home_energy_costs.PokemonHomeEnergyCostsEntry{}
 	eventPassSettingsBucket := []event_pass_settings.EventPassSettingsEntry{}
 	eventPassTierSettingsBucket := []event_pass_tier_settings.EventPassTierSettingsEntry{}
@@ -233,6 +232,7 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 	formSettingsBucket := []form_settings.FormSettingsEntry{}
 	fortPowerUpLevelSettingsBucket := []fort_power_up_level_settings.FortPowerUpLevelSettingsEntry{}
 	friendshipMilestoneSettingsBucket := []friendship_milestone_settings.FriendshipMilestoneSettingsEntry{}
+	rollBackBucket := []roll_back.RollBackEntry{}
 	itemSettingsBucket := []item_settings.ItemSettingsEntry{}
 	languageSettingsBucket := []language_settings.LanguageSettingsEntry{}
 	iapCategoryDisplayBucket := []iap_category_display.IapCategoryDisplayEntry{}
@@ -322,9 +322,6 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 		case combat_move.CombatMoveEntry:
 			m.byID[v.TemplateID] = i
 			combatMoveBucket = append(combatMoveBucket, v)
-		case roll_back.RollBackEntry:
-			m.byID[v.TemplateID] = i
-			rollBackBucket = append(rollBackBucket, v)
 		case pokemon_home_energy_costs.PokemonHomeEnergyCostsEntry:
 			m.byID[v.TemplateID] = i
 			pokemonHomeEnergyCostsBucket = append(pokemonHomeEnergyCostsBucket, v)
@@ -349,6 +346,9 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 		case friendship_milestone_settings.FriendshipMilestoneSettingsEntry:
 			m.byID[v.TemplateID] = i
 			friendshipMilestoneSettingsBucket = append(friendshipMilestoneSettingsBucket, v)
+		case roll_back.RollBackEntry:
+			m.byID[v.TemplateID] = i
+			rollBackBucket = append(rollBackBucket, v)
 		case item_settings.ItemSettingsEntry:
 			m.byID[v.TemplateID] = i
 			itemSettingsBucket = append(itemSettingsBucket, v)
@@ -475,7 +475,6 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 	m.CombatType = accessor.NewCombatTypeAccessor(combatTypeBucket)
 	m.CombatRankingProtoSettings = accessor.NewCombatRankingProtoSettingsAccessor(combatRankingProtoSettingsBucket)
 	m.CombatMove = accessor.NewCombatMoveAccessor(combatMoveBucket)
-	m.RollBack = accessor.NewRollBackAccessor(rollBackBucket)
 	m.PokemonHomeEnergyCosts = accessor.NewPokemonHomeEnergyCostsAccessor(pokemonHomeEnergyCostsBucket)
 	m.EventPassSettings = accessor.NewEventPassSettingsAccessor(eventPassSettingsBucket)
 	m.EventPassTierSettings = accessor.NewEventPassTierSettingsAccessor(eventPassTierSettingsBucket)
@@ -484,6 +483,7 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 	m.FormSettings = accessor.NewFormSettingsAccessor(formSettingsBucket)
 	m.FortPowerUpLevelSettings = accessor.NewFortPowerUpLevelSettingsAccessor(fortPowerUpLevelSettingsBucket)
 	m.FriendshipMilestoneSettings = accessor.NewFriendshipMilestoneSettingsAccessor(friendshipMilestoneSettingsBucket)
+	m.RollBack = accessor.NewRollBackAccessor(rollBackBucket)
 	m.ItemSettings = accessor.NewItemSettingsAccessor(itemSettingsBucket)
 	m.LanguageSettings = accessor.NewLanguageSettingsAccessor(languageSettingsBucket)
 	m.IapCategoryDisplay = accessor.NewIapCategoryDisplayAccessor(iapCategoryDisplayBucket)

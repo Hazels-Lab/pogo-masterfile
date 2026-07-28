@@ -9,8 +9,6 @@ use serde::{Deserialize, Serialize};
 pub enum CodeGateProtoTemplateId {
     #[serde(rename = "AR_PHOTO_MULTIPLE_CONCURRENT_CAMPAIGN_CODE_GATE")]
     ArPhotoMultipleConcurrentCampaignCodeGate,
-    #[serde(rename = "BATTLE_ACCESSIBILITY_CODE_GATE")]
-    BattleAccessibilityCodeGate,
     #[serde(rename = "COMBAT_VNEXT_CODE_GATE")]
     CombatVnextCodeGate,
     #[serde(rename = "EVENT_POI_REFRESH_CODE_GATE")]

@@ -2175,8 +2175,8 @@ export type StickerMetadataSpring20262 = S<
 		"STICKER_SPRING_2026_2",
 		{
 			category: ["Pokemon"];
-			pokemonId: "LEAFEON";
-			regionId: 3;
+			pokemonId: "FEEBAS";
+			regionId: 2;
 			releaseDate: 20260303;
 		}
 	>
@@ -2186,8 +2186,8 @@ export type StickerMetadataSpring20263 = S<
 		"STICKER_SPRING_2026_3",
 		{
 			category: ["Pokemon"];
-			pokemonId: "ESPURR";
-			regionId: 5;
+			pokemonId: "LEAFEON";
+			regionId: 3;
 			releaseDate: 20260303;
 		}
 	>
@@ -2197,8 +2197,8 @@ export type StickerMetadataSpring20264 = S<
 		"STICKER_SPRING_2026_4",
 		{
 			category: ["Pokemon"];
-			pokemonId: "FEEBAS";
-			regionId: 2;
+			pokemonId: "ESPURR";
+			regionId: 5;
 			releaseDate: 20260303;
 		}
 	>

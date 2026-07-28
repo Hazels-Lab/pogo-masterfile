@@ -276,7 +276,7 @@ export interface BreadBattleClientSettings {
 			maxPlayersPerBreadDoughLobby: 100;
 			maxPlayersPerBreadLobby: 4;
 			maxPlayersToPrepareBreadDoughLobby: 98;
-			maxRemoteBreadBattlePassesAllowed: 999999;
+			maxRemoteBreadBattlePassesAllowed: 10;
 			maxRemotePlayersPerBreadDoughLobby: 100;
 			maxRemotePlayersPerBreadLobby: 4;
 			minPlayersToPrepareBreadLobby: 1;
@@ -3603,7 +3603,6 @@ export interface MapDisplaySettings {
 	data: {
 		templateId: "MAP_DISPLAY_SETTINGS";
 		mapDisplaySettings: {
-			mapEffectName: "fx_map_fireworks_pokeball";
 			showEnhancedSky: true;
 		};
 	};
@@ -4999,6 +4998,7 @@ export interface RaidSettings {
 			bootSoloMs: 30000;
 			canInviteFriendsInPerson: true;
 			canInviteFriendsRemotely: true;
+			failedFriendInviteInfoEnabled: true;
 			fetchProfileFromSocialEnabled: true;
 			friendInviteCutoffTimeSec: 20;
 			friendRequestsEnabled: true;
@@ -5298,7 +5298,7 @@ export interface RoutePlaySettings {
 			obRoutePlaySettingsNumber29: 1;
 			obRoutePlaySettingsNumber30: 27;
 			obRoutePlaySettingsNumber33: 7;
-			obRoutePlaySettingsNumber45: 6;
+			obRoutePlaySettingsNumber45: 1;
 			resumeRangeMeters: 40;
 			routeEngagementStatsShardCount: 3;
 			routeExpirationMinutes: 185;
@@ -5736,7 +5736,8 @@ export interface SquashSettings {
 	data: {
 		templateId: "REMOTE_RAID_LIMIT_SETTINGS";
 		squashSettings: {
-			dailySquashLimit: 999999;
+			dailySquashLimit: 10;
+			enabled: true;
 		};
 	};
 }

@@ -323,14 +323,14 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "codeGateProto":
-		var e code_gate_proto.CodeGateProtoEntry
+	case "recommendedSearchSettings":
+		var e recommended_search_settings.RecommendedSearchSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
 		return e, nil
-	case "recommendedSearchSettings":
-		var e recommended_search_settings.RecommendedSearchSettingsEntry
+	case "codeGateProto":
+		var e code_gate_proto.CodeGateProtoEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -401,12 +401,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "rollBack":
-		var e roll_back.RollBackEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
 	case "tappableSettings":
 		var e tappable_settings.TappableSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -421,6 +415,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "pokemonHomeEnergyCosts":
 		var e pokemon_home_energy_costs.PokemonHomeEnergyCostsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
+	case "rollBack":
+		var e roll_back.RollBackEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
