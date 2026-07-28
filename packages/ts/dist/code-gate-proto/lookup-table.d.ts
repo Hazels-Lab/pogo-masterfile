@@ -2,7 +2,6 @@
 
 import type {
 	CodeGateProtoArPhotoMultipleConcurrentCampaignCodeGate,
-	CodeGateProtoBattleAccessibilityCodeGate,
 	CodeGateProtoCombatVnextCodeGate,
 	CodeGateProtoEventPoiRefreshCodeGate,
 	CodeGateProtoInputTrackerCodeGate,
@@ -15,7 +14,6 @@ import type {
 
 export interface CodeGateProtoLookup {
 	AR_PHOTO_MULTIPLE_CONCURRENT_CAMPAIGN_CODE_GATE: CodeGateProtoArPhotoMultipleConcurrentCampaignCodeGate;
-	BATTLE_ACCESSIBILITY_CODE_GATE: CodeGateProtoBattleAccessibilityCodeGate;
 	COMBAT_VNEXT_CODE_GATE: CodeGateProtoCombatVnextCodeGate;
 	EVENT_POI_REFRESH_CODE_GATE: CodeGateProtoEventPoiRefreshCodeGate;
 	INPUT_TRACKER_CODE_GATE: CodeGateProtoInputTrackerCodeGate;

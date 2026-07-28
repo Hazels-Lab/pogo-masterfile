@@ -435,9 +435,10 @@ type DeprecatedClientQuestTemplateIds =
 	| "LEVEL_50_CAP_SUB_2"
 	| "LEVEL_50_CAP_SUB_3";
 
-/** @deprecated lastSeen 2026-07-24 — 35 entries */
+/** @deprecated lastSeen 2026-07-28 — 36 entries */
 type DeprecatedCodeGateProtoIds =
 	| "AGE_CONFIRM_CODE_GATE"
+	| "BATTLE_ACCESSIBILITY_CODE_GATE"
 	| "BATTLE_REWARDS_CODE_GATE"
 	| "BF_PLUS_ROLLOUT_CODE_GATE"
 	| "BREAD_CODE_GATE"
@@ -12632,10 +12633,11 @@ type DeprecatedPokemonInfoPanelSettingsIds = "POKEMON_INFO_PANEL_SETTINGS";
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedQuestEvolutionSettingsIds = "QUEST_EVOLUTION_SETTINGS";
 
-/** @deprecated lastSeen 2026-07-14 — 12 entries */
+/** @deprecated lastSeen 2026-07-28 — 13 entries */
 type DeprecatedRollBackIds =
 	| "ANDROID_SENSORS_ROLL_BACK"
 	| "BIDIRECTIONAL_FP_WEEKLY_CHALLENGE_REWARD_ROLL_BACK"
+	| "COMBAT_VNEXT_USE_MATCHING_START_TURN_FOR_FAST_ATTACK_ENABLE_ROLL_BACK"
 	| "DELAYED_NOTIF_ROLL_BACK"
 	| "NPC_LEAGUE_SUFFIX_ROLL_BACK"
 	| "PERIODICALLY_CHECK_FOR_VISIBILITY_ROLL_BACK"

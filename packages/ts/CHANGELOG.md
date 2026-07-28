@@ -2,6 +2,15 @@
 
 All notable changes to `pogo-masterfile-types` (npm) are recorded here. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.33] - 2026-07-28
+
+Automated regeneration from upstream masterfile commit `36eab32c1afab69566ad34845211c7d4252fffe3`.
+
+### Removed template IDs (2)
+
+- BATTLE_ACCESSIBILITY_CODE_GATE
+- COMBAT_VNEXT_USE_MATCHING_START_TURN_FOR_FAST_ATTACK_ENABLE_ROLL_BACK
+
 ## [0.1.32] - 2026-07-26
 
 Automated regeneration from upstream masterfile commit `1a51ef863dd2cbf31ee86e499cee461651c56ac9`.

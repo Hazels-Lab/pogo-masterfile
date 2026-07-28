@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "codeGateProto", 10 entries (structural types).
+// Generated from Pokémon GO masterfile — group "codeGateProto", 9 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -16,6 +16,6 @@ export type CodeGateProtoType = W<CodeGateProto>;
 export interface CodeGateProtoData {
 	subCodeGateList?: {
 		isEnabled: boolean;
-		name: "LEADER_VNEXT_CODE_GATE" | "show_move_effectiveness" | "trade_sub_code_gate";
+		name: "LEADER_VNEXT_CODE_GATE" | "trade_sub_code_gate";
 	};
 }

@@ -4,12 +4,6 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PartySchedulingSettings {
-    pub party_expiry_duration_ms: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
 pub struct ComplianceZonesEnabledPlus12 {
     pub compliance_zones_enabled: bool,
     pub creation_to_start_timeout_ms: String,
@@ -26,7 +20,6 @@ pub struct ComplianceZonesEnabledPlus12 {
     pub party_iap_boosts_enabled: bool,
     pub party_new_quest_notification_v2_enabled: bool,
     pub party_quest_encounter_reward_enabled: bool,
-    pub party_scheduling_settings: PartySchedulingSettings,
     pub pg_delivery_mechanic: String,
     pub restart_party_rejoin_prompt_enabled: bool,
 }
@@ -60,13 +53,13 @@ pub struct RecurringChallengeSchedule {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PartySchedulingSettingsV2 {
+pub struct PartySchedulingSettings {
     pub recurring_challenge_schedule: RecurringChallengeSchedule,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct InviteExpirationMsPlus7 {
+pub struct InviteExpirationMsPlus8 {
     pub enabled: bool,
     pub fallback_party_quest_enabled: bool,
     pub friend_requests_enabled: bool,
@@ -77,7 +70,7 @@ pub struct InviteExpirationMsPlus7 {
     pub min_player_level: u64,
     pub notification_milestones: [f64; 4],
     pub party_reward_grace_period_ms: String,
-    pub party_scheduling_settings: PartySchedulingSettingsV2,
+    pub party_scheduling_settings: PartySchedulingSettings,
     pub quest_update_toast_enabled: bool,
     pub send_invite_enabled: bool,
 }
@@ -86,7 +79,7 @@ pub struct InviteExpirationMsPlus7 {
 #[serde(untagged)]
 pub enum PartyPlayGeneralSettings {
     ComplianceZonesEnabledPlus12(ComplianceZonesEnabledPlus12),
-    InviteExpirationMsPlus7(InviteExpirationMsPlus7),
+    InviteExpirationMsPlus8(InviteExpirationMsPlus8),
 }
 
 crate::masterfile_entry!(PartyPlayGeneralSettingsEntry, PartyPlayGeneralSettingsEntryData, party_play_general_settings: PartyPlayGeneralSettings);

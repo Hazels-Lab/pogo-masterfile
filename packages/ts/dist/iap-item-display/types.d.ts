@@ -47,7 +47,6 @@ export interface IapItemDisplayData {
 		| "text_rewards_key_GOWA25";
 	hidden?: boolean;
 	imageUrl?:
-		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F0ba8ff0a_20260508_pgo_s23_megarayquaza_1024x576_nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F1e924512_PGO-MCS_GO_Fest_2026_EMEA_Global_LiveOp_v3-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F07b0cffa_PGO-MCS_2026_Ultra_Unlock_01_v6-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F68bf81f3_PGO-MCS_GO_Pass_Special_Anniversary_Pikachu_Celebration_v1-1024x576.jpg"
@@ -83,6 +82,7 @@ export interface IapItemDisplayData {
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-yampers-paw-prints-ticket-nologo-2025.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FTourPass2026.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F3b085206_PGO-MCS_10th_Anniversary_Celebration_TICKET_v2-1024x576.jpg"
+		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F9398cb22_PGO-MCS_Skarmory_Super_Mega_Raid_Day_v4-1024x576.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fe2400534_20260511_pgo_s23_ShinyShaymin_1024x576_nologo.jpg"
 		| "https://storage.googleapis.com/prod-public-images/GBL_SharedSkies_2024.jpeg"
 		| "https://storage.googleapis.com/prod-public-images/gf20.jpg"
@@ -133,10 +133,10 @@ export interface IapItemDisplayData {
 		| "2026-03-15T20:00:00"
 		| "2026-03-21T17:00:00"
 		| "2026-05-02T17:00:00"
+		| "2026-06-27T17:00:00"
 		| "2026-07-04T17:00:00"
 		| "2026-07-06T20:00:00"
 		| "2026-07-14T23:59:59"
-		| "2026-07-26T20:00:00"
 		| "2026-07-27T20:00:00"
 		| "2026-07-29T20:00:00"
 		| "2026-08-06T10:00:00"
@@ -182,10 +182,10 @@ export interface IapItemDisplayData {
 		| "1773604800000"
 		| "1774112400000"
 		| "1777741200000"
+		| "1782579600000"
 		| "1783184400000"
 		| "1783368000000"
 		| "1784073599000"
-		| "1785096000000"
 		| "1785182400000"
 		| "1785355200000"
 		| "1786010400000"
@@ -227,6 +227,7 @@ export interface IapItemDisplayData {
 		| "2025-07-13T10:00:00"
 		| "2025-07-21T10:00:00"
 		| "2025-08-04T10:00:00"
+		| "2026-03-03T13:00:00"
 		| "2026-07-06T00:00:00";
 	skuEnableTimeUtcMs?:
 		| "1552550400000"
@@ -265,6 +266,7 @@ export interface IapItemDisplayData {
 		| "1752400800000"
 		| "1753092000000"
 		| "1754301600000"
+		| "1772542800000"
 		| "1783296000000";
 	sortOrder?: number;
 	spriteId?: string;

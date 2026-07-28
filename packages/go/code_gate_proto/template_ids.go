@@ -6,7 +6,6 @@ type CodeGateProtoTemplateID string
 
 const (
 	CodeGateProtoTemplateIDArPhotoMultipleConcurrentCampaignCodeGate CodeGateProtoTemplateID = "AR_PHOTO_MULTIPLE_CONCURRENT_CAMPAIGN_CODE_GATE"
-	CodeGateProtoTemplateIDBattleAccessibilityCodeGate               CodeGateProtoTemplateID = "BATTLE_ACCESSIBILITY_CODE_GATE"
 	CodeGateProtoTemplateIDCombatVnextCodeGate                       CodeGateProtoTemplateID = "COMBAT_VNEXT_CODE_GATE"
 	CodeGateProtoTemplateIDEventPoiRefreshCodeGate                   CodeGateProtoTemplateID = "EVENT_POI_REFRESH_CODE_GATE"
 	CodeGateProtoTemplateIDInputTrackerCodeGate                      CodeGateProtoTemplateID = "INPUT_TRACKER_CODE_GATE"
@@ -19,7 +18,6 @@ const (
 
 var CodeGateProtoTemplateIDValues = [...]CodeGateProtoTemplateID{
 	CodeGateProtoTemplateIDArPhotoMultipleConcurrentCampaignCodeGate,
-	CodeGateProtoTemplateIDBattleAccessibilityCodeGate,
 	CodeGateProtoTemplateIDCombatVnextCodeGate,
 	CodeGateProtoTemplateIDEventPoiRefreshCodeGate,
 	CodeGateProtoTemplateIDInputTrackerCodeGate,

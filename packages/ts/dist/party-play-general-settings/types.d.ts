@@ -28,15 +28,14 @@ export interface PartyPlayGeneralSettingsData {
 	minPlayerLevel: number;
 	notificationMilestones?: [number, number, number, number];
 	partyCatchTagsEnabled?: boolean;
-	partyExpiryDurationMs?: "32400000";
+	partyExpiryDurationMs?: "10800000";
 	partyExpiryWarningMinutes?: number;
 	partyIapBoostsEnabled?: boolean;
 	partyNewQuestNotificationV2Enabled?: boolean;
 	partyQuestEncounterRewardEnabled?: boolean;
 	partyRewardGracePeriodMs?: "604800000";
-	partySchedulingSettings: {
-		partyExpiryDurationMs?: "32400000";
-		recurringChallengeSchedule?: {
+	partySchedulingSettings?: {
+		recurringChallengeSchedule: {
 			dayAndTimeEndTime: {
 				dayOfWeek: number;
 				hourOfDay: number;

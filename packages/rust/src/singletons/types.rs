@@ -1544,7 +1544,6 @@ pub struct MainMenuChanges {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct MapDisplaySettings {
-    pub map_effect_name: String,
     pub show_enhanced_sky: bool,
 }
 
@@ -2389,6 +2388,7 @@ pub struct RaidSettings {
     pub boot_solo_ms: u64,
     pub can_invite_friends_in_person: bool,
     pub can_invite_friends_remotely: bool,
+    pub failed_friend_invite_info_enabled: bool,
     pub fetch_profile_from_social_enabled: bool,
     pub friend_invite_cutoff_time_sec: u64,
     pub friend_requests_enabled: bool,
@@ -2706,6 +2706,7 @@ pub struct SponsoredGeofenceGiftSettings {
 #[serde(rename_all = "camelCase")]
 pub struct SquashSettings {
     pub daily_squash_limit: u64,
+    pub enabled: bool,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
