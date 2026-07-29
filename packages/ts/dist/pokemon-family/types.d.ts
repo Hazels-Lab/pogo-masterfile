@@ -60,6 +60,7 @@ export interface PokemonFamilyData {
 		| "SHARPEDO"
 		| "SKARMORY"
 		| "SLOWBRO"
+		| "STARMIE"
 		| "STEELIX"
 		| "SWAMPERT"
 		| "TYRANITAR"

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "temporaryEvolutionSettings", 55 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "temporaryEvolutionSettings", 56 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { TemporaryEvolutionSettings } from "../types";
@@ -156,6 +156,20 @@ export type TemporaryEvolutionSettingsV0115PokemonKangaskhan = S<
 		"TEMPORARY_EVOLUTION_V0115_POKEMON_KANGASKHAN",
 		{
 			pokemonId: "KANGASKHAN";
+			temporaryEvolutions: [
+				{
+					assetBundleValue: 51;
+					temporaryEvolutionId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+		}
+	>
+>;
+export type TemporaryEvolutionSettingsV0121PokemonStarmie = S<
+	TemporaryEvolutionSettings<
+		"TEMPORARY_EVOLUTION_V0121_POKEMON_STARMIE",
+		{
+			pokemonId: "STARMIE";
 			temporaryEvolutions: [
 				{
 					assetBundleValue: 51;
@@ -798,6 +812,7 @@ export type TemporaryEvolutionSettingsMasterfileEntry =
 	| TemporaryEvolutionSettingsV0080PokemonSlowbro
 	| TemporaryEvolutionSettingsV0094PokemonGengar
 	| TemporaryEvolutionSettingsV0115PokemonKangaskhan
+	| TemporaryEvolutionSettingsV0121PokemonStarmie
 	| TemporaryEvolutionSettingsV0127PokemonPinsir
 	| TemporaryEvolutionSettingsV0130PokemonGyarados
 	| TemporaryEvolutionSettingsV0142PokemonAerodactyl

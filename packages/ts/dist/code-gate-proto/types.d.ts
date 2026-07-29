@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "codeGateProto", 9 entries (structural types).
+// Generated from Pokémon GO masterfile — group "codeGateProto", 8 entries (structural types).
 
 import type { W } from "../_utils";
 

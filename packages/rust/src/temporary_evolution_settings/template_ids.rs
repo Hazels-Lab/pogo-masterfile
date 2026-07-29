@@ -29,6 +29,8 @@ pub enum TemporaryEvolutionSettingsTemplateId {
     TemporaryEvolutionV0094PokemonGengar,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0115_POKEMON_KANGASKHAN")]
     TemporaryEvolutionV0115PokemonKangaskhan,
+    #[serde(rename = "TEMPORARY_EVOLUTION_V0121_POKEMON_STARMIE")]
+    TemporaryEvolutionV0121PokemonStarmie,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0127_POKEMON_PINSIR")]
     TemporaryEvolutionV0127PokemonPinsir,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0130_POKEMON_GYARADOS")]

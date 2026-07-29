@@ -16,13 +16,6 @@ pub struct ActiveBonusDisplaySettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct BonusSettings {
-    pub bonus_boxes: Option<Vec<BonusBoxes>>,
-    pub event_name: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
 pub struct Candy {
     pub amount: u64,
     pub pokemon_id: String,
@@ -33,13 +26,6 @@ pub struct Candy {
 pub struct Item {
     pub amount: u64,
     pub item: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct NeutralAvatarItemTemplate {
-    pub display_template_id: String,
-    pub item_template_id: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -59,7 +45,6 @@ pub struct LocationCard {
 #[serde(rename_all = "camelCase")]
 pub struct PokemonDisplay {
     pub bread_mode_enum: Option<String>,
-    pub costume: Option<String>,
     pub form: String,
     pub location_card: Option<LocationCard>,
 }
@@ -86,7 +71,6 @@ pub struct Rewards {
     pub candy: Option<Candy>,
     pub exp: Option<u64>,
     pub item: Option<Item>,
-    pub neutral_avatar_item_template: Option<NeutralAvatarItemTemplate>,
     pub player_attribute: Option<PlayerAttribute>,
     pub pokecoin: Option<u64>,
     pub pokemon_encounter: Option<PokemonEncounter>,
@@ -99,7 +83,7 @@ pub struct Rewards {
 #[serde(rename_all = "camelCase")]
 pub struct EventPassTierSettings {
     pub active_bonus_display_settings: Option<ActiveBonusDisplaySettings>,
-    pub bonus_settings: Option<BonusSettings>,
+    pub bonus_settings: Option<ActiveBonusDisplaySettings>,
     pub min_points_required: Option<u64>,
     pub rank: u64,
     pub rewards: Option<Vec<Rewards>>,

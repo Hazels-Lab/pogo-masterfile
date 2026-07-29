@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form-temp-evo-overrides", 15 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form-temp-evo-overrides", 16 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -405,6 +405,44 @@ export type PokemonExtendedSettingsV0094PokemonGengarNormal = S<
 				},
 			];
 			uniqueId: "GENGAR";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0121PokemonStarmieNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0121_POKEMON_STARMIE_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 39;
+					};
+				},
+			];
+			form: "STARMIE_NORMAL";
+			sizeSettings: {
+				mLowerBound: 0.825;
+				mUpperBound: 1.375;
+				xlUpperBound: 1.65;
+				xsLowerBound: 0.55;
+				xxlUpperBound: 1.925;
+				xxsLowerBound: 0.539;
+			};
+			tempEvoOverrides: [
+				{
+					sizeSettings: {
+						mLowerBound: 1.8;
+						mUpperBound: 3;
+						xlUpperBound: 3.6;
+						xsLowerBound: 1.2;
+						xxlUpperBound: 4.2;
+						xxsLowerBound: 1.176;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+			uniqueId: "STARMIE";
 		}
 	>
 >;
@@ -859,6 +897,7 @@ export type PokemonExtendedSettingsBreadOverridesFormTempEvoOverridesMasterfileE
 	| PokemonExtendedSettingsV0026PokemonRaichuNormal
 	| PokemonExtendedSettingsV0065PokemonAlakazamNormal
 	| PokemonExtendedSettingsV0094PokemonGengarNormal
+	| PokemonExtendedSettingsV0121PokemonStarmieNormal
 	| PokemonExtendedSettingsV0130PokemonGyaradosNormal
 	| PokemonExtendedSettingsV0282PokemonGardevoirNormal
 	| PokemonExtendedSettingsV0302PokemonSableyeNormal

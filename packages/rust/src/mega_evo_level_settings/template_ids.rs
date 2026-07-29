@@ -19,6 +19,8 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel0V0071PokemonVictreebel,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0080_POKEMON_SLOWBRO")]
     MegaEvolutionLevel0V0080PokemonSlowbro,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0121_POKEMON_STARMIE")]
+    MegaEvolutionLevel0V0121PokemonStarmie,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0130_POKEMON_GYARADOS")]
     MegaEvolutionLevel0V0130PokemonGyarados,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0149_POKEMON_DRAGONITE")]
@@ -75,6 +77,8 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel1V0071PokemonVictreebel,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0080_POKEMON_SLOWBRO")]
     MegaEvolutionLevel1V0080PokemonSlowbro,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0121_POKEMON_STARMIE")]
+    MegaEvolutionLevel1V0121PokemonStarmie,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0130_POKEMON_GYARADOS")]
     MegaEvolutionLevel1V0130PokemonGyarados,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0149_POKEMON_DRAGONITE")]
@@ -131,6 +135,8 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel2V0071PokemonVictreebel,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0080_POKEMON_SLOWBRO")]
     MegaEvolutionLevel2V0080PokemonSlowbro,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0121_POKEMON_STARMIE")]
+    MegaEvolutionLevel2V0121PokemonStarmie,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0130_POKEMON_GYARADOS")]
     MegaEvolutionLevel2V0130PokemonGyarados,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0149_POKEMON_DRAGONITE")]
@@ -187,6 +193,8 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel3V0071PokemonVictreebel,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0080_POKEMON_SLOWBRO")]
     MegaEvolutionLevel3V0080PokemonSlowbro,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0121_POKEMON_STARMIE")]
+    MegaEvolutionLevel3V0121PokemonStarmie,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0130_POKEMON_GYARADOS")]
     MegaEvolutionLevel3V0130PokemonGyarados,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0149_POKEMON_DRAGONITE")]
@@ -235,6 +243,8 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel4V0026PokemonRaichu,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0071_POKEMON_VICTREEBEL")]
     MegaEvolutionLevel4V0071PokemonVictreebel,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0121_POKEMON_STARMIE")]
+    MegaEvolutionLevel4V0121PokemonStarmie,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0149_POKEMON_DRAGONITE")]
     MegaEvolutionLevel4V0149PokemonDragonite,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0150_POKEMON_MEWTWO")]

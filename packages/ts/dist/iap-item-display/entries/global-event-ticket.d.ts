@@ -1,25 +1,8 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 47 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 46 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
 
-export type IapItemDisplayEventPassJuly2EventStoreRedirect = S<
-	IapItemDisplay<
-		"EVENT_PASS_JULY2_EVENT_STORE_REDIRECT",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F07b0cffa_PGO-MCS_2026_Ultra_Unlock_01_v6-1024x576.jpg";
-			sku: "pgorelease.july2_deluxe_event_pass_track_redirect";
-			skuDisableTime: "2026-07-29T20:00:00";
-			skuDisableTimeUtcMs: "1785355200000";
-			skuEnableTime: "2025-07-21T10:00:00";
-			skuEnableTimeUtcMs: "1753092000000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_title_10th_anniversary_2026";
-		}
-	>
->;
 export type IapItemDisplayEventPassMonth2SeasonStoreRedirect = S<
 	IapItemDisplay<
 		"EVENT_PASS_MONTH2_SEASON_STORE_REDIRECT",
@@ -889,7 +872,6 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket10Giftable = S<
 >;
 
 export type IapItemDisplayGlobalEventTicketMasterfileEntry =
-	| IapItemDisplayEventPassJuly2EventStoreRedirect
 	| IapItemDisplayEventPassMonth2SeasonStoreRedirect
 	| IapItemDisplayEvergreenticket1
 	| IapItemDisplayEvergreenticket1Giftable

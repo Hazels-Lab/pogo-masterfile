@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-temp-evo-overrides", 15 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-temp-evo-overrides", 16 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -399,6 +399,43 @@ export type PokemonExtendedSettingsV0094PokemonGengar = S<
 				},
 			];
 			uniqueId: "GENGAR";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0121PokemonStarmie = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0121_POKEMON_STARMIE",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 39;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 0.825;
+				mUpperBound: 1.375;
+				xlUpperBound: 1.65;
+				xsLowerBound: 0.55;
+				xxlUpperBound: 1.925;
+				xxsLowerBound: 0.539;
+			};
+			tempEvoOverrides: [
+				{
+					sizeSettings: {
+						mLowerBound: 1.8;
+						mUpperBound: 3;
+						xlUpperBound: 3.6;
+						xsLowerBound: 1.2;
+						xxlUpperBound: 4.2;
+						xxsLowerBound: 1.176;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+			uniqueId: "STARMIE";
 		}
 	>
 >;
@@ -844,6 +881,7 @@ export type PokemonExtendedSettingsBreadOverridesTempEvoOverridesMasterfileEntry
 	| PokemonExtendedSettingsV0026PokemonRaichu
 	| PokemonExtendedSettingsV0065PokemonAlakazam
 	| PokemonExtendedSettingsV0094PokemonGengar
+	| PokemonExtendedSettingsV0121PokemonStarmie
 	| PokemonExtendedSettingsV0130PokemonGyarados
 	| PokemonExtendedSettingsV0282PokemonGardevoir
 	| PokemonExtendedSettingsV0302PokemonSableye

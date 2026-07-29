@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonFamily", split "mega-evolvable-pokemon-id", 49 entries.
+// Generated from Pokémon GO masterfile — group "pokemonFamily", split "mega-evolvable-pokemon-id", 50 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonFamily } from "../types";
@@ -90,6 +90,15 @@ export type PokemonFamilyV0115FamilyKangaskhan = S<
 		{
 			familyId: "FAMILY_KANGASKHAN";
 			megaEvolvablePokemonId: "KANGASKHAN";
+		}
+	>
+>;
+export type PokemonFamilyV0120FamilyStaryu = S<
+	PokemonFamily<
+		"V0120_FAMILY_STARYU",
+		{
+			familyId: "FAMILY_STARYU";
+			megaEvolvablePokemonId: "STARMIE";
 		}
 	>
 >;
@@ -456,6 +465,7 @@ export type PokemonFamilyMegaEvolvablePokemonIdMasterfileEntry =
 	| PokemonFamilyV0092FamilyGastly
 	| PokemonFamilyV0095FamilyOnix
 	| PokemonFamilyV0115FamilyKangaskhan
+	| PokemonFamilyV0120FamilyStaryu
 	| PokemonFamilyV0123FamilyScyther
 	| PokemonFamilyV0127FamilyPinsir
 	| PokemonFamilyV0129FamilyMagikarp
