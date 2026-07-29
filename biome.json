@@ -8,7 +8,12 @@
 	"files": {
 		"ignoreUnknown": false,
 		"maxSize": 10485760,
-		"includes": ["**", "!**/*.rs", "!**/*.go"]
+		"includes": [
+			"**",
+			"!**/*.rs",
+			"!**/*.go",
+			"!**/.claude/worktrees"
+		]
 	},
 	"formatter": {
 		"enabled": true,
