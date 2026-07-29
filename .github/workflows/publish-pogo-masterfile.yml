@@ -25,12 +25,15 @@ jobs:
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
+      # Trusted Publishing requires npm >= 11.5.1. Node 24 bundles npm 11.16+,
+      # so it is already satisfied — do NOT add a `npm install -g npm@latest`
+      # step here. That is what broke this workflow for three weeks: npm 12
+      # requires Node >= 22.22.2, so installing it on top of a pinned Node 20
+      # failed EBADENGINE before `npm publish` ever ran. Bump this pin instead.
       - uses: actions/setup-node@v6
         with:
-          node-version: "20"
+          node-version: "24"
           registry-url: "https://registry.npmjs.org"
-      # Trusted Publishing requires npm >= 11.5.1; Node 20 ships with npm 10.x.
-      - run: npm install -g npm@latest
       - run: bun install --frozen-lockfile
       # dist/ is gitignored; build it from the committed src/.
       - name: Build ts-api dist
