@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1182 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1181 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -2023,23 +2023,6 @@ export type PokemonExtendedSettingsV0120PokemonStaryuNormal = S<
 				xxsLowerBound: 0.392;
 			};
 			uniqueId: "STARYU";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0121PokemonStarmieNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0121_POKEMON_STARMIE_NORMAL",
-		{
-			form: "STARMIE_NORMAL";
-			sizeSettings: {
-				mLowerBound: 0.825;
-				mUpperBound: 1.375;
-				xlUpperBound: 1.65;
-				xsLowerBound: 0.55;
-				xxlUpperBound: 1.925;
-				xxsLowerBound: 0.539;
-			};
-			uniqueId: "STARMIE";
 		}
 	>
 >;
@@ -20368,7 +20351,6 @@ export type PokemonExtendedSettingsFormMasterfileEntry =
 	| PokemonExtendedSettingsV0118PokemonGoldeenNormal
 	| PokemonExtendedSettingsV0119PokemonSeakingNormal
 	| PokemonExtendedSettingsV0120PokemonStaryuNormal
-	| PokemonExtendedSettingsV0121PokemonStarmieNormal
 	| PokemonExtendedSettingsV0122PokemonMrMimeGalarian
 	| PokemonExtendedSettingsV0122PokemonMrMimeNormal
 	| PokemonExtendedSettingsV0123PokemonScytherNormal

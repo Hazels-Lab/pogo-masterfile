@@ -224,6 +224,7 @@ const (
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalGofest001                  LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_GLOBAL_GOFEST_001"
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalGold001                    LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_GLOBAL_GOLD_001"
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalMega001                    LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_GLOBAL_MEGA_001"
+	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalMega002                    LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_GLOBAL_MEGA_002"
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalPearl001                   LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_GLOBAL_PEARL_001"
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalRuby001                    LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_GLOBAL_RUBY_001"
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalSapphire001                LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_GLOBAL_SAPPHIRE_001"
@@ -468,6 +469,7 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalGofest001,
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalGold001,
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalMega001,
+	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalMega002,
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalPearl001,
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalRuby001,
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalSapphire001,

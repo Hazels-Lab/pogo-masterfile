@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonFamily", split "misc", 488 entries.
+// Generated from Pokémon GO masterfile — group "pokemonFamily", split "misc", 487 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonFamily } from "../types";
@@ -336,14 +336,6 @@ export type PokemonFamilyV0118FamilyGoldeen = S<
 		"V0118_FAMILY_GOLDEEN",
 		{
 			familyId: "FAMILY_GOLDEEN";
-		}
-	>
->;
-export type PokemonFamilyV0120FamilyStaryu = S<
-	PokemonFamily<
-		"V0120_FAMILY_STARYU",
-		{
-			familyId: "FAMILY_STARYU";
 		}
 	>
 >;
@@ -3951,7 +3943,6 @@ export type PokemonFamilyMiscMasterfileEntry =
 	| PokemonFamilyV0114FamilyTangela
 	| PokemonFamilyV0116FamilyHorsea
 	| PokemonFamilyV0118FamilyGoldeen
-	| PokemonFamilyV0120FamilyStaryu
 	| PokemonFamilyV0122FamilyMrMime
 	| PokemonFamilyV0124FamilyJynx
 	| PokemonFamilyV0125FamilyElectabuzz

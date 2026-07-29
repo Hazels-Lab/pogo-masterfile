@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", 119 entries (structural types).
+// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", 124 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -64,6 +64,7 @@ export interface MegaEvoLevelSettingsData {
 		| "SALAMENCE"
 		| "SKARMORY"
 		| "SLOWBRO"
+		| "STARMIE"
 		| "TYRANITAR"
 		| "VICTREEBEL";
 	progression: {

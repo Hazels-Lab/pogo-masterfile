@@ -26,6 +26,7 @@ import type { MegaEvoLevelSettingsSableyeMasterfileEntry } from "./sableye";
 import type { MegaEvoLevelSettingsSalamenceMasterfileEntry } from "./salamence";
 import type { MegaEvoLevelSettingsSkarmoryMasterfileEntry } from "./skarmory";
 import type { MegaEvoLevelSettingsSlowbroMasterfileEntry } from "./slowbro";
+import type { MegaEvoLevelSettingsStarmieMasterfileEntry } from "./starmie";
 import type { MegaEvoLevelSettingsTyranitarMasterfileEntry } from "./tyranitar";
 import type { MegaEvoLevelSettingsVictreebelMasterfileEntry } from "./victreebel";
 
@@ -55,6 +56,7 @@ export type * from "./sableye";
 export type * from "./salamence";
 export type * from "./skarmory";
 export type * from "./slowbro";
+export type * from "./starmie";
 export type * from "./tyranitar";
 export type * from "./victreebel";
 
@@ -85,6 +87,7 @@ export type MegaEvoLevelSettingsMasterfileEntry =
 	| MegaEvoLevelSettingsSalamenceMasterfileEntry
 	| MegaEvoLevelSettingsSkarmoryMasterfileEntry
 	| MegaEvoLevelSettingsSlowbroMasterfileEntry
+	| MegaEvoLevelSettingsStarmieMasterfileEntry
 	| MegaEvoLevelSettingsTyranitarMasterfileEntry
 	| MegaEvoLevelSettingsVictreebelMasterfileEntry;
 

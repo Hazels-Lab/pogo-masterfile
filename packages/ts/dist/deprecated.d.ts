@@ -435,7 +435,7 @@ type DeprecatedClientQuestTemplateIds =
 	| "LEVEL_50_CAP_SUB_2"
 	| "LEVEL_50_CAP_SUB_3";
 
-/** @deprecated lastSeen 2026-07-28 — 36 entries */
+/** @deprecated lastSeen 2026-07-29 — 37 entries */
 type DeprecatedCodeGateProtoIds =
 	| "AGE_CONFIRM_CODE_GATE"
 	| "BATTLE_ACCESSIBILITY_CODE_GATE"
@@ -445,6 +445,7 @@ type DeprecatedCodeGateProtoIds =
 	| "DISABLE_POKEBALL_SOFTLOCK_FIX_CODE_GATE"
 	| "DISABLE_ROUTE_SHORT_CODES"
 	| "EVENT_PASS_CODE_GATE"
+	| "EVENT_POI_REFRESH_CODE_GATE"
 	| "FOUR_SHIELD_BREAD_GUI_CODE_GATE"
 	| "FUSION_CODE_GATE"
 	| "HOLD_ONTO_SPECIAL_TRADE_CODE_GATE"
@@ -477,9 +478,10 @@ type DeprecatedCodeGateProtoIds =
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedEggTransparencySettingsIds = "EGG_TRANSPARENCY_SETTINGS";
 
-/** @deprecated lastSeen 2026-07-24 — 30 entries */
+/** @deprecated lastSeen 2026-07-29 — 32 entries */
 type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_30ANNIV2026_EVENT"
+	| "EVENT_PASS_AFTERPARTY2026_EVENT"
 	| "EVENT_PASS_APRIL2025_SEASON"
 	| "EVENT_PASS_APRIL2026_SEASON"
 	| "EVENT_PASS_AUGUST2025_SEASON"
@@ -495,6 +497,7 @@ type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_HALLOWEEN2025_EVENT"
 	| "EVENT_PASS_JANUARY2026_SEASON"
 	| "EVENT_PASS_JULY2025_SEASON"
+	| "EVENT_PASS_JULY2026_SEASON"
 	| "EVENT_PASS_JUNE2025_SEASON"
 	| "EVENT_PASS_JUNE2026_SEASON"
 	| "EVENT_PASS_MARCH2026_SEASON"

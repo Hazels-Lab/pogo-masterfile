@@ -4138,6 +4138,7 @@ export type PokemonSettingsV0120PokemonStaryu = S<
 			buddyOffsetMale: [25, 0, 60];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 0.8800001;
 				cylinderRadiusM: 0.4125;
@@ -4220,6 +4221,7 @@ export type PokemonSettingsV0120PokemonStaryuNormal = S<
 			buddyOffsetMale: [25, 0, 60];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 0.8800001;
 				cylinderRadiusM: 0.4125;
@@ -4304,6 +4306,7 @@ export type PokemonSettingsV0121PokemonStarmie = S<
 			buddyOffsetMale: [30, 0, 62.2];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 1.067;
 				cylinderRadiusM: 0.6;
@@ -4334,6 +4337,13 @@ export type PokemonSettingsV0121PokemonStarmie = S<
 				shadowBaseCaptureRate: 0.2;
 				shadowDodgeProbability: 0.2;
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 60;
+				},
+			];
 			evolutionPips: 1;
 			familyId: "FAMILY_STARYU";
 			heightStdDev: 0.1375;
@@ -4361,6 +4371,27 @@ export type PokemonSettingsV0121PokemonStarmie = S<
 				baseDefense: 184;
 				baseStamina: 155;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 2.3;
+					averageWeightKg: 80;
+					buddyPortraitOffset: [0, 220, 0];
+					camera: {
+						cylinderHeightM: 2.22;
+						cylinderRadiusM: 0.96;
+					};
+					modelHeight: 1;
+					modelScaleV2: 1.08;
+					stats: {
+						baseAttack: 276;
+						baseDefense: 229;
+						baseStamina: 155;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+					typeOverride1: "POKEMON_TYPE_WATER";
+					typeOverride2: "POKEMON_TYPE_PSYCHIC";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 50;
 				stardustToUnlock: 50000;
@@ -4382,6 +4413,7 @@ export type PokemonSettingsV0121PokemonStarmieNormal = S<
 			buddyOffsetMale: [30, 0, 62.2];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 1.067;
 				cylinderRadiusM: 0.6;
@@ -4412,6 +4444,13 @@ export type PokemonSettingsV0121PokemonStarmieNormal = S<
 				shadowBaseCaptureRate: 0.2;
 				shadowDodgeProbability: 0.2;
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 60;
+				},
+			];
 			evolutionPips: 1;
 			familyId: "FAMILY_STARYU";
 			form: "STARMIE_NORMAL";
@@ -4440,6 +4479,27 @@ export type PokemonSettingsV0121PokemonStarmieNormal = S<
 				baseDefense: 184;
 				baseStamina: 155;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 2.3;
+					averageWeightKg: 80;
+					buddyPortraitOffset: [0, 220, 0];
+					camera: {
+						cylinderHeightM: 2.22;
+						cylinderRadiusM: 0.96;
+					};
+					modelHeight: 1;
+					modelScaleV2: 1.08;
+					stats: {
+						baseAttack: 276;
+						baseDefense: 229;
+						baseStamina: 155;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+					typeOverride1: "POKEMON_TYPE_WATER";
+					typeOverride2: "POKEMON_TYPE_PSYCHIC";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 50;
 				stardustToUnlock: 50000;
