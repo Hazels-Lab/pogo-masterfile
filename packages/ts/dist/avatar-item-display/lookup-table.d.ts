@@ -898,6 +898,9 @@ import type {
 	AvatarItemDisplayNShirtGofest2024purple0,
 	AvatarItemDisplayNShirtGofest2025cream0,
 	AvatarItemDisplayNShirtGofest2026Black,
+	AvatarItemDisplayNShirtGofest2026finblue,
+	AvatarItemDisplayNShirtGofest2026fingreen,
+	AvatarItemDisplayNShirtGofest2026finred,
 	AvatarItemDisplayNShirtGofest2026Purple,
 	AvatarItemDisplayNShirtGofest20190,
 	AvatarItemDisplayNShirtGofest20200,
@@ -2579,6 +2582,9 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_gofest2025cream_0: AvatarItemDisplayNShirtGofest2025cream0;
 	"N_DISPLAY_n_shirt_gofest2026-black": AvatarItemDisplayNShirtGofest2026Black;
 	"N_DISPLAY_n_shirt_gofest2026-purple": AvatarItemDisplayNShirtGofest2026Purple;
+	N_DISPLAY_n_shirt_gofest2026finblue: AvatarItemDisplayNShirtGofest2026finblue;
+	N_DISPLAY_n_shirt_gofest2026fingreen: AvatarItemDisplayNShirtGofest2026fingreen;
+	N_DISPLAY_n_shirt_gofest2026finred: AvatarItemDisplayNShirtGofest2026finred;
 	N_DISPLAY_n_shirt_gofestglobal2023_0: AvatarItemDisplayNShirtGofestglobal20230;
 	N_DISPLAY_n_shirt_goteamrocketarlo_a_0: AvatarItemDisplayNShirtGoteamrocketarloA0;
 	N_DISPLAY_n_shirt_goteamrocketarlo_b_0: AvatarItemDisplayNShirtGoteamrocketarloB0;

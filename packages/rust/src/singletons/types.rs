@@ -2734,7 +2734,6 @@ pub struct SourdoughMoveMappingSettings {
 #[serde(rename_all = "camelCase")]
 pub struct SpecialEggSettings {
     pub enabled: bool,
-    pub map_icon_enabled: bool,
     pub min_level: u64,
     pub xp_reward: u64,
 }

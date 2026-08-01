@@ -497,7 +497,7 @@ export interface VnextBattleConfig {
 				badNetworkWarningThresholdTurns: "12";
 				battleEndTimeoutThresholdMs: "2000";
 				deadNetworkDisconnectThresholdTurns: "120";
-				noOpponentConnectionDisconnectThresholdTurns: "12";
+				noOpponentConnectionDisconnectThresholdTurns: "21";
 				preResponseInputBlockDurationMs: "500";
 				submitTurnNumberWithPlayerAction: true;
 			};

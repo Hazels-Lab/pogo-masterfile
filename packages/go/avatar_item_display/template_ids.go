@@ -909,6 +909,9 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShirtGofest2025cream0               AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gofest2025cream_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGofest2026Black                AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gofest2026-black"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGofest2026Purple               AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gofest2026-purple"
+	AvatarItemDisplayTemplateIDNDisplayNShirtGofest2026finblue              AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gofest2026finblue"
+	AvatarItemDisplayTemplateIDNDisplayNShirtGofest2026fingreen             AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gofest2026fingreen"
+	AvatarItemDisplayTemplateIDNDisplayNShirtGofest2026finred               AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gofest2026finred"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGofestglobal20230              AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gofestglobal2023_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGoteamrocketarloA0             AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_goteamrocketarlo_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGoteamrocketarloB0             AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_goteamrocketarlo_b_0"
@@ -2583,6 +2586,9 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShirtGofest2025cream0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGofest2026Black,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGofest2026Purple,
+	AvatarItemDisplayTemplateIDNDisplayNShirtGofest2026finblue,
+	AvatarItemDisplayTemplateIDNDisplayNShirtGofest2026fingreen,
+	AvatarItemDisplayTemplateIDNDisplayNShirtGofest2026finred,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGofestglobal20230,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGoteamrocketarloA0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGoteamrocketarloB0,

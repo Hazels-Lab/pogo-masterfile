@@ -1815,6 +1815,12 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNShirtGofest2026Black,
     #[serde(rename = "N_DISPLAY_n_shirt_gofest2026-purple")]
     NDisplayNShirtGofest2026Purple,
+    #[serde(rename = "N_DISPLAY_n_shirt_gofest2026finblue")]
+    NDisplayNShirtGofest2026finblue,
+    #[serde(rename = "N_DISPLAY_n_shirt_gofest2026fingreen")]
+    NDisplayNShirtGofest2026fingreen,
+    #[serde(rename = "N_DISPLAY_n_shirt_gofest2026finred")]
+    NDisplayNShirtGofest2026finred,
     #[serde(rename = "N_DISPLAY_n_shirt_gofestglobal2023_0")]
     NDisplayNShirtGofestglobal20230,
     #[serde(rename = "N_DISPLAY_n_shirt_goteamrocketarlo_a_0")]
