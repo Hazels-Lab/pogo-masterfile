@@ -4,6 +4,20 @@ All notable changes to the Go module are recorded here. The format is based on [
 
 > Note: Go module releases for this package are tagged as `packages/go/vX.Y.Z` (subdirectory-prefixed), per Go's monorepo tagging rules.
 
+## [0.1.30] - 2026-08-01
+
+Automated regeneration from upstream masterfile commit `5ce1d45a0562ca83f2487ec3c85ab939e2925551`.
+
+### Added template IDs (7)
+
+- ITEM_EVENT_TICKET_S23_2026_10
+- ITEM_EVENT_TICKET_S23_2026_10_TO_GIFT
+- LC_2026_MLB_TBRAYS
+- N_DISPLAY_n_shirt_gofest2026finblue
+- N_DISPLAY_n_shirt_gofest2026fingreen
+- N_DISPLAY_n_shirt_gofest2026finred
+- general2.ticket.5
+
 ## [0.1.29] - 2026-07-29
 
 Automated regeneration from upstream masterfile commit `3b49df8633f2733903d8fa7b75ca85f5ac67c359`.

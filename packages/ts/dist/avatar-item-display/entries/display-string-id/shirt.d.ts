@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shirt", 452 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shirt", 455 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -1170,6 +1170,33 @@ export type AvatarItemDisplayNShirtGofest2026Purple = S<
 		{
 			displayStringId: "avatar_shirt_gofest2026purple";
 			iconAddress: "n_shirt_gofest2026-purple_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtGofest2026finblue = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_gofest2026finblue",
+		{
+			displayStringId: "avatar_shirt_gofest_finale_greninja";
+			iconAddress: "n_shirt_gofest2026finblue_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtGofest2026fingreen = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_gofest2026fingreen",
+		{
+			displayStringId: "avatar_shirt_gofest_finale_chesnaught";
+			iconAddress: "n_shirt_gofest2026fingreen_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtGofest2026finred = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_gofest2026finred",
+		{
+			displayStringId: "avatar_shirt_gofest_finale_delphox";
+			iconAddress: "n_shirt_gofest2026finred_icon";
 		}
 	>
 >;
@@ -4203,6 +4230,9 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirtGofest2025cream0
 	| AvatarItemDisplayNShirtGofest2026Black
 	| AvatarItemDisplayNShirtGofest2026Purple
+	| AvatarItemDisplayNShirtGofest2026finblue
+	| AvatarItemDisplayNShirtGofest2026fingreen
+	| AvatarItemDisplayNShirtGofest2026finred
 	| AvatarItemDisplayNShirtGofestglobal20230
 	| AvatarItemDisplayNShirtGoteamrocketarloA0
 	| AvatarItemDisplayNShirtGoteamrocketarloB0

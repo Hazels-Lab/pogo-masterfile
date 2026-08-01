@@ -1962,10 +1962,9 @@ type SourdoughMoveMappingSettings struct {
 }
 
 type SpecialEggSettings struct {
-	Enabled        bool   `json:"enabled"`
-	MapIconEnabled bool   `json:"mapIconEnabled"`
-	MinLevel       uint64 `json:"minLevel"`
-	XpReward       uint64 `json:"xpReward"`
+	Enabled  bool   `json:"enabled"`
+	MinLevel uint64 `json:"minLevel"`
+	XpReward uint64 `json:"xpReward"`
 }
 
 type SpecialResearchVisualRefreshSettings struct {

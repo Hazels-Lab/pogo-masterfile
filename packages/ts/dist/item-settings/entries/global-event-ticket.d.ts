@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 44 entries.
+// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 46 entries.
 
 import type { S } from "../../_utils";
 import type { ItemSettings } from "../types";
@@ -1227,6 +1227,78 @@ export type ItemSettingsItemEventTicketS23202609 = S<
 		}
 	>
 >;
+export type ItemSettingsItemEventTicketS23202610 = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S23_2026_10",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "item_event_ticket_pink_details_CD_Nickit26";
+			globalEventTicket: {
+				backgroundImageUrl: "https://storage.googleapis.com/prod-public-images/pink-ticket-generic1024x512.jpg";
+				clientEventEndTimeUtcMs: "1786899600000";
+				clientEventStartTimeUtcMs: "1786888800000";
+				detailsLinkKey: "details_link_key";
+				displayV2Enabled: true;
+				eventBannerUrl: "https://storage.googleapis.com/prod-public-images/1024x512.jpg";
+				eventDatetimeRangeKey: "event_datetime_range_key_CD_Nickit26";
+				eventEndTime: "2026-08-16T17:00:00";
+				eventStartTime: "2026-08-16T14:00:00";
+				giftable: true;
+				giftItem: "ITEM_EVENT_TICKET_S23_2026_10_TO_GIFT";
+				iconRewards: [
+					{
+						pokemonEncounter: {
+							pokemonDisplay: {
+								form: "THIEVUL_NORMAL";
+							};
+							pokemonId: "THIEVUL";
+						};
+						type: "POKEMON_ENCOUNTER";
+					},
+					{
+						item: {
+							amount: 1;
+							item: "ITEM_STAR_PIECE";
+						};
+						type: "ITEM";
+					},
+					{
+						item: {
+							amount: 1;
+							item: "ITEM_XL_RARE_CANDY";
+						};
+						type: "ITEM";
+					},
+				];
+				itemBagDescriptionKey: "item_event_ticket_pink_desc_CD_Nickit26";
+				textRewardsKey: "text_rewards_key_CD_Nickit26";
+			};
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general1.ticket_CD_Nickit26_title";
+		}
+	>
+>;
+export type ItemSettingsItemEventTicketS23202610ToGift = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S23_2026_10_TO_GIFT",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "item_event_ticket_pink_details_CD_Nickit26";
+			globalEventTicket: {
+				clientEventEndTimeUtcMs: "1786899600000";
+				clientEventStartTimeUtcMs: "1786888800000";
+				eventBannerUrl: "https://storage.googleapis.com/prod-public-images/1024x512.jpg";
+				eventEndTime: "2026-08-16T17:00:00";
+				eventStartTime: "2026-08-16T14:00:00";
+				itemBagDescriptionKey: "item_event_ticket_pink_desc_CD_Nickit26";
+				ticketItem: "ITEM_EVENT_TICKET_S23_2026_10";
+			};
+			ignoreInventorySpace: true;
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general1.ticket_CD_Nickit26_title";
+		}
+	>
+>;
 export type ItemSettingsItemEvergreenTicket = S<
 	ItemSettings<
 		"ITEM_EVERGREEN_TICKET",
@@ -1474,6 +1546,8 @@ export type ItemSettingsGlobalEventTicketMasterfileEntry =
 	| ItemSettingsItemEventTicketS23202608
 	| ItemSettingsItemEventTicketS23202608ToGift
 	| ItemSettingsItemEventTicketS23202609
+	| ItemSettingsItemEventTicketS23202610
+	| ItemSettingsItemEventTicketS23202610ToGift
 	| ItemSettingsItemEvergreenTicket
 	| ItemSettingsItemEvergreenTicketToGift
 	| ItemSettingsItemGlobalEventTicket

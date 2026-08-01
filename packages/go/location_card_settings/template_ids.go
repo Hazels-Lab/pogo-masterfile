@@ -80,6 +80,7 @@ const (
 	LocationCardSettingsTemplateIDLc2026CopenhagenGofest001                               LocationCardSettingsTemplateID = "LC_2026_COPENHAGEN_GOFEST_001"
 	LocationCardSettingsTemplateIDLc2026JpRed                                             LocationCardSettingsTemplateID = "LC_2026_JP_RED"
 	LocationCardSettingsTemplateIDLc2026LosangelesGotour001                               LocationCardSettingsTemplateID = "LC_2026_LOSANGELES_GOTOUR_001"
+	LocationCardSettingsTemplateIDLc2026MlbTbrays                                         LocationCardSettingsTemplateID = "LC_2026_MLB_TBRAYS"
 	LocationCardSettingsTemplateIDLc2026Npb001                                            LocationCardSettingsTemplateID = "LC_2026_NPB_001"
 	LocationCardSettingsTemplateIDLc2026Npb002                                            LocationCardSettingsTemplateID = "LC_2026_NPB_002"
 	LocationCardSettingsTemplateIDLc2026Npb003                                            LocationCardSettingsTemplateID = "LC_2026_NPB_003"
@@ -325,6 +326,7 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLc2026CopenhagenGofest001,
 	LocationCardSettingsTemplateIDLc2026JpRed,
 	LocationCardSettingsTemplateIDLc2026LosangelesGotour001,
+	LocationCardSettingsTemplateIDLc2026MlbTbrays,
 	LocationCardSettingsTemplateIDLc2026Npb001,
 	LocationCardSettingsTemplateIDLc2026Npb002,
 	LocationCardSettingsTemplateIDLc2026Npb003,

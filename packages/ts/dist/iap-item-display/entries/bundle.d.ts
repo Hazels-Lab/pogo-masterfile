@@ -914,10 +914,13 @@ export type IapItemDisplayBundleGmaxday1 = S<
 		"bundle.gmaxday.1",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
 			showDiscountTag: true;
 			showStrikethroughPrice: true;
 			sku: "bundle.gmaxday.1";
+			skuDisableTime: "2026-08-01T20:00:00";
+			skuDisableTimeUtcMs: "1785614400000";
+			skuEnableTime: "2019-10-31T21:00:00";
+			skuEnableTimeUtcMs: "1572555600000";
 			sortOrder: 1;
 			spriteId: "bundle3.sprite.d";
 			title: "ace_box_title";

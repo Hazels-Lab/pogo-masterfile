@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", 157 entries (structural types).
+// Generated from Pokémon GO masterfile — group "itemSettings", 159 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -67,6 +67,7 @@ export interface ItemSettingsData {
 		| "item_event_ticket_gray_desc_MegaSkarmoryRaidDay"
 		| "item_event_ticket_gray_desc_shayminmasterworkrerun"
 		| "item_event_ticket_pink_details_CD_Frigibax26"
+		| "item_event_ticket_pink_details_CD_Nickit26"
 		| "item_event_ticket_pink_details_CD_Sobble26"
 		| "item_event_ticket_pink_details_CDC_Deino26"
 		| "item_event_ticket_pink_details_MegaRayquaza26"
@@ -172,7 +173,8 @@ export interface ItemSettingsData {
 			| "1784394000000"
 			| "1785096000000"
 			| "1785182400000"
-			| "1785603600000";
+			| "1785603600000"
+			| "1786899600000";
 		clientEventStartTimeUtcMs:
 			| "1696845600000"
 			| "1697364000000"
@@ -199,7 +201,8 @@ export interface ItemSettingsData {
 			| "1784383200000"
 			| "1784628000000"
 			| "1784973600000"
-			| "1785592800000";
+			| "1785592800000"
+			| "1786888800000";
 		conflictStoryQuestIds?: ["RERUN_MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER", "MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER"];
 		detailsLinkKey?:
 			| "details_link_key"
@@ -244,6 +247,7 @@ export interface ItemSettingsData {
 			| "event_datetime_range_key_10THPARTY0726"
 			| "event_datetime_range_key_CATCH_MASTERY_ORICORIO"
 			| "event_datetime_range_key_CD_Frigibax26"
+			| "event_datetime_range_key_CD_Nickit26"
 			| "event_datetime_range_key_CD_Sobble26"
 			| "event_datetime_range_key_CDC_Deino26"
 			| "event_datetime_range_key_ENTEI_SHADOW_RAID_DAY"
@@ -287,7 +291,8 @@ export interface ItemSettingsData {
 			| "2026-07-18T17:00:00"
 			| "2026-07-26T20:00:00"
 			| "2026-07-27T20:00:00"
-			| "2026-08-01T17:00:00";
+			| "2026-08-01T17:00:00"
+			| "2026-08-16T17:00:00";
 		eventStartTime:
 			| "2023-10-09T10:00:00"
 			| "2023-10-15T10:00:00"
@@ -314,7 +319,8 @@ export interface ItemSettingsData {
 			| "2026-07-18T14:00:00"
 			| "2026-07-21T10:00:00"
 			| "2026-07-25T10:00:00"
-			| "2026-08-01T14:00:00";
+			| "2026-08-01T14:00:00"
+			| "2026-08-16T14:00:00";
 		giftable?: boolean;
 		giftItem?:
 			| "ITEM_EVENT_TICKET_02_TO_GIFT"
@@ -336,6 +342,7 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S23_2026_07_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S23_2026_08_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S23_2026_09_TO_GIFT"
+			| "ITEM_EVENT_TICKET_S23_2026_10_TO_GIFT"
 			| "ITEM_EVERGREEN_TICKET_TO_GIFT"
 			| "ITEM_GLOBAL_EVENT_TICKET_TO_GIFT";
 		grantBadgeBeforeEventStartMs?: "1769904000000";
@@ -383,6 +390,7 @@ export interface ItemSettingsData {
 						| "LOTAD_NORMAL"
 						| "ROCKRUFF_NORMAL"
 						| "SHAYMIN_LAND"
+						| "THIEVUL_NORMAL"
 						| "YUNGOOS_NORMAL";
 					shiny?: boolean;
 				};
@@ -403,6 +411,7 @@ export interface ItemSettingsData {
 					| "RAYQUAZA"
 					| "ROCKRUFF"
 					| "SHAYMIN"
+					| "THIEVUL"
 					| "YAMPER"
 					| "YUNGOOS";
 			};
@@ -433,6 +442,7 @@ export interface ItemSettingsData {
 			| "item_event_ticket_gray_details_MegaSkarmoryRaidDay"
 			| "item_event_ticket_gray_details_shayminmasterworkrerun"
 			| "item_event_ticket_pink_desc_CD_Frigibax26"
+			| "item_event_ticket_pink_desc_CD_Nickit26"
 			| "item_event_ticket_pink_desc_CD_Sobble26"
 			| "item_event_ticket_pink_desc_CDC_Deino26"
 			| "item_event_ticket_pink_desc_MegaRayquaza26"
@@ -446,6 +456,7 @@ export interface ItemSettingsData {
 			| "text_rewards_key_10THPARTY0726"
 			| "text_rewards_key_CATCH_MASTERY_ORICORIO"
 			| "text_rewards_key_CD_Frigibax26"
+			| "text_rewards_key_CD_Nickit26"
 			| "text_rewards_key_CD_Sobble26"
 			| "text_rewards_key_CDC_Deino26"
 			| "text_rewards_key_ENTEI_SHADOW_RAID_DAY"
@@ -481,6 +492,7 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S23_2026_04"
 			| "ITEM_EVENT_TICKET_S23_2026_07"
 			| "ITEM_EVENT_TICKET_S23_2026_08"
+			| "ITEM_EVENT_TICKET_S23_2026_10"
 			| "ITEM_EVERGREEN_TICKET"
 			| "ITEM_GLOBAL_EVENT_TICKET";
 		titleImageUrl?: "https://storage.googleapis.com/prod-public-images/gotourlogo_1914247967.png";
@@ -536,6 +548,7 @@ export interface ItemSettingsData {
 		| "ITEM_TYPE_XP_BOOST";
 	nameOverride?:
 		| "general1.ticket_CD_Frigibax26_title"
+		| "general1.ticket_CD_Nickit26_title"
 		| "general1.ticket_CD_Sobble26_title"
 		| "general1.ticket_CDC_Deino26_title"
 		| "general1.ticket._GOWA2024GSBEA_title"
@@ -575,7 +588,7 @@ export interface ItemSettingsData {
 	};
 	timePeriodCounters?: {
 		playerActivity: {
-			limit: number;
+			limit?: number;
 		};
 	};
 	xpBoost?: {

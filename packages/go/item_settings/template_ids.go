@@ -69,6 +69,8 @@ const (
 	ItemSettingsTemplateIDItemEventTicketS23202608          ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_08"
 	ItemSettingsTemplateIDItemEventTicketS23202608ToGift    ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_08_TO_GIFT"
 	ItemSettingsTemplateIDItemEventTicketS23202609          ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_09"
+	ItemSettingsTemplateIDItemEventTicketS23202610          ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_10"
+	ItemSettingsTemplateIDItemEventTicketS23202610ToGift    ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_10_TO_GIFT"
 	ItemSettingsTemplateIDItemEvergreenTicket               ItemSettingsTemplateID = "ITEM_EVERGREEN_TICKET"
 	ItemSettingsTemplateIDItemEvergreenTicketToGift         ItemSettingsTemplateID = "ITEM_EVERGREEN_TICKET_TO_GIFT"
 	ItemSettingsTemplateIDItemFreeRaidTicket                ItemSettingsTemplateID = "ITEM_FREE_RAID_TICKET"
@@ -229,6 +231,8 @@ var ItemSettingsTemplateIDValues = [...]ItemSettingsTemplateID{
 	ItemSettingsTemplateIDItemEventTicketS23202608,
 	ItemSettingsTemplateIDItemEventTicketS23202608ToGift,
 	ItemSettingsTemplateIDItemEventTicketS23202609,
+	ItemSettingsTemplateIDItemEventTicketS23202610,
+	ItemSettingsTemplateIDItemEventTicketS23202610ToGift,
 	ItemSettingsTemplateIDItemEvergreenTicket,
 	ItemSettingsTemplateIDItemEvergreenTicketToGift,
 	ItemSettingsTemplateIDItemFreeRaidTicket,

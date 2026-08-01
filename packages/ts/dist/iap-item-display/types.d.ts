@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1164 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1165 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -51,6 +51,7 @@ export interface IapItemDisplayData {
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F07b0cffa_PGO-MCS_2026_Ultra_Unlock_01_v6-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F68bf81f3_PGO-MCS_GO_Pass_Special_Anniversary_Pikachu_Celebration_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F84f00147_PGO-MCS_GO_Pass_August_2026_TICKET_v1-1024x576.jpg"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F11274b46_PGO_MCS_CD_KeyArt_Nickit_v1-1024x576-nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F73951fa4_20260428_pgo_s23_gopass_june_ticket_1024x576_nologo%20(1).jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F53190080_PGO-MCS_Flying_Taxi_TICKET_v1-1024x576.jpg"
@@ -60,7 +61,6 @@ export interface IapItemDisplayData {
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FEvent%20Pass%20Placeholder.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff2c7f843_PGO-MCS_GO_Pass_July_2026_ticket_v1-1024x576_nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff6da0ab4_PGO-MCS_GO_Fest_2026_APAC_Global_LiveOp_v2-1024x576.jpg"
-		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff314609f_PGO_MCS_CD_KeyArt_Sobble_v2-1024x576-nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FGO_Wild_Area_2025_Global_1024x512_logo.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FGOWA_GO_Pass_Ticket_1024x512.png"
@@ -82,6 +82,7 @@ export interface IapItemDisplayData {
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-yampers-paw-prints-ticket-nologo-2025.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FTourPass2026.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F3b085206_PGO-MCS_10th_Anniversary_Celebration_TICKET_v2-1024x576.jpg"
+		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F871eef71_PGO-MCS_GMAX_Rillaboom_Max_Battle_Day_v1-1024x576-nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F9398cb22_PGO-MCS_Skarmory_Super_Mega_Raid_Day_v4-1024x576.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fe2400534_20260511_pgo_s23_ShinyShaymin_1024x576_nologo.jpg"
 		| "https://storage.googleapis.com/prod-public-images/GBL_SharedSkies_2024.jpeg"
@@ -135,11 +136,13 @@ export interface IapItemDisplayData {
 		| "2026-03-21T17:00:00"
 		| "2026-05-02T17:00:00"
 		| "2026-06-27T17:00:00"
-		| "2026-07-04T17:00:00"
 		| "2026-07-06T20:00:00"
 		| "2026-07-14T23:59:59"
 		| "2026-07-27T20:00:00"
+		| "2026-08-01T17:00:00"
+		| "2026-08-01T20:00:00"
 		| "2026-08-06T10:00:00"
+		| "2026-08-16T17:00:00"
 		| "2026-08-16T20:00:00";
 	skuDisableTimeUtcMs?:
 		| "1595786400000"
@@ -184,11 +187,13 @@ export interface IapItemDisplayData {
 		| "1774112400000"
 		| "1777741200000"
 		| "1782579600000"
-		| "1783184400000"
 		| "1783368000000"
 		| "1784073599000"
 		| "1785182400000"
+		| "1785603600000"
+		| "1785614400000"
 		| "1786010400000"
+		| "1786899600000"
 		| "1786910400000";
 	skuEnableTime?:
 		| "2019-03-14T08:00:00"
