@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 47 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 46 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -318,24 +318,6 @@ export type IapItemDisplayGeneral2Ticket4Giftable = S<
 			sortOrder: 1;
 			spriteId: "general2.ticket.2";
 			title: "general1.ticket.2_WaterRRD26_title";
-		}
-	>
->;
-export type IapItemDisplayGeneral2Ticket5 = S<
-	IapItemDisplay<
-		"general2.ticket.5",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F871eef71_PGO-MCS_GMAX_Rillaboom_Max_Battle_Day_v1-1024x576-nologo.jpg";
-			sku: "pgorelease.general2.ticket.5";
-			skuDisableTime: "2026-08-01T17:00:00";
-			skuDisableTimeUtcMs: "1785603600000";
-			skuEnableTime: "2019-03-14T08:00:00";
-			skuEnableTimeUtcMs: "1552550400000";
-			sortOrder: 2;
-			spriteId: "general2.ticket.8";
-			title: "general1.ticket.4_gmaxRillaboom26_title";
-			useEnvironmentPrefix: true;
 		}
 	>
 >;
@@ -907,7 +889,6 @@ export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayGeneral2Ticket3
 	| IapItemDisplayGeneral2Ticket4
 	| IapItemDisplayGeneral2Ticket4Giftable
-	| IapItemDisplayGeneral2Ticket5
 	| IapItemDisplayGeneral2Ticket6
 	| IapItemDisplayGeneral2Ticket7
 	| IapItemDisplayGeneral2Ticket7Giftable
