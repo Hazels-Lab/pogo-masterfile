@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1165 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1164 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -82,7 +82,6 @@ export interface IapItemDisplayData {
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-yampers-paw-prints-ticket-nologo-2025.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FTourPass2026.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F3b085206_PGO-MCS_10th_Anniversary_Celebration_TICKET_v2-1024x576.jpg"
-		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F871eef71_PGO-MCS_GMAX_Rillaboom_Max_Battle_Day_v1-1024x576-nologo.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F9398cb22_PGO-MCS_Skarmory_Super_Mega_Raid_Day_v4-1024x576.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fe2400534_20260511_pgo_s23_ShinyShaymin_1024x576_nologo.jpg"
 		| "https://storage.googleapis.com/prod-public-images/GBL_SharedSkies_2024.jpeg"
@@ -139,8 +138,6 @@ export interface IapItemDisplayData {
 		| "2026-07-06T20:00:00"
 		| "2026-07-14T23:59:59"
 		| "2026-07-27T20:00:00"
-		| "2026-08-01T17:00:00"
-		| "2026-08-01T20:00:00"
 		| "2026-08-06T10:00:00"
 		| "2026-08-16T17:00:00"
 		| "2026-08-16T20:00:00";
@@ -190,8 +187,6 @@ export interface IapItemDisplayData {
 		| "1783368000000"
 		| "1784073599000"
 		| "1785182400000"
-		| "1785603600000"
-		| "1785614400000"
 		| "1786010400000"
 		| "1786899600000"
 		| "1786910400000";
