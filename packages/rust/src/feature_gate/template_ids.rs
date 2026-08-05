@@ -13,8 +13,6 @@ pub enum FeatureGateTemplateId {
     AmsFeatureGate,
     #[serde(rename = "AMS_FRONTEND_FEATURE_GATE")]
     AmsFrontendFeatureGate,
-    #[serde(rename = "DAY_NIGHT_POI_FEATURE_GATE")]
-    DayNightPoiFeatureGate,
     #[serde(rename = "ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE")]
     EnablePvpChallengeSpannerFeatureGate,
     #[serde(rename = "ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE")]

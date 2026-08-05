@@ -23,6 +23,7 @@ import (
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/combat_npc_trainer"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/combat_ranking_proto_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/combat_type"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/event_pass_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/event_pass_tier_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/evolution_chain_display_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/evolution_quest_template"
@@ -166,6 +167,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
+	case "eventPassTierSettings":
+		var e event_pass_tier_settings.EventPassTierSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
 	case "stickerMetadata":
 		var e sticker_metadata.StickerMetadataEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -174,12 +181,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "pokemonFamily":
 		var e pokemon_family.PokemonFamilyEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
-	case "eventPassTierSettings":
-		var e event_pass_tier_settings.EventPassTierSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -304,14 +305,14 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "featureGate":
-		var e feature_gate.FeatureGateEntry
+	case "typeEffective":
+		var e type_effective.TypeEffectiveEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
 		return e, nil
-	case "typeEffective":
-		var e type_effective.TypeEffectiveEntry
+	case "featureGate":
+		var e feature_gate.FeatureGateEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -346,12 +347,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "codeGateProto":
-		var e code_gate_proto.CodeGateProtoEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
 	case "breadMoveLevelSettings":
 		var e bread_move_level_settings.BreadMoveLevelSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -360,6 +355,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "buddyEmotionLevelSettings":
 		var e buddy_emotion_level_settings.BuddyEmotionLevelSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
+	case "codeGateProto":
+		var e code_gate_proto.CodeGateProtoEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -426,6 +427,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "combatNpcPersonality":
 		var e combat_npc_personality.CombatNpcPersonalityEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
+	case "eventPassSettings":
+		var e event_pass_settings.EventPassSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -762,12 +769,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "eventMapRefreshSettings":
 		var e singletons.EventMapRefreshSettingsEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
-	case "eventPassSettings":
-		var e singletons.EventPassSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}

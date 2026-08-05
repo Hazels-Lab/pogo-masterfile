@@ -10,11 +10,18 @@ pub struct Misc {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(untagged)]
+pub enum LocationCardValue {
+    Uint(u64),
+    String(String),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct CardTypeVfxAddress {
     pub card_type: String,
     pub image_url: String,
-    pub location_card: String,
+    pub location_card: LocationCardValue,
     pub vfx_address: String,
 }
 

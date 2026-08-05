@@ -435,7 +435,7 @@ type DeprecatedClientQuestTemplateIds =
 	| "LEVEL_50_CAP_SUB_2"
 	| "LEVEL_50_CAP_SUB_3";
 
-/** @deprecated lastSeen 2026-07-29 — 37 entries */
+/** @deprecated lastSeen 2026-08-05 — 38 entries */
 type DeprecatedCodeGateProtoIds =
 	| "AGE_CONFIRM_CODE_GATE"
 	| "BATTLE_ACCESSIBILITY_CODE_GATE"
@@ -451,6 +451,7 @@ type DeprecatedCodeGateProtoIds =
 	| "HOLD_ONTO_SPECIAL_TRADE_CODE_GATE"
 	| "IBFC_LWS_CODE_GATE"
 	| "LEAVE_PARTY_REFACTOR_CODE_GATE"
+	| "MAP_THEME_LOW_PERF_CODE_GATE"
 	| "OLD_EMAIL_TICKET_FIX_CODE_GATE"
 	| "PARTY_CREATION_REFACTOR_CODE_GATE"
 	| "PARTY_GET_REFACTOR_CODE_GATE"
@@ -478,7 +479,7 @@ type DeprecatedCodeGateProtoIds =
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedEggTransparencySettingsIds = "EGG_TRANSPARENCY_SETTINGS";
 
-/** @deprecated lastSeen 2026-07-29 — 32 entries */
+/** @deprecated lastSeen 2026-07-29 — 31 entries */
 type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_30ANNIV2026_EVENT"
 	| "EVENT_PASS_AFTERPARTY2026_EVENT"
@@ -497,7 +498,6 @@ type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_HALLOWEEN2025_EVENT"
 	| "EVENT_PASS_JANUARY2026_SEASON"
 	| "EVENT_PASS_JULY2025_SEASON"
-	| "EVENT_PASS_JULY2026_SEASON"
 	| "EVENT_PASS_JUNE2025_SEASON"
 	| "EVENT_PASS_JUNE2026_SEASON"
 	| "EVENT_PASS_MARCH2026_SEASON"
@@ -12418,8 +12418,8 @@ type DeprecatedExRaidSettingsIds = "EX_RAID_SETTINGS";
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedExtendedPrimalSettingsIds = "EXTENDED_PRIMAL_SETTINGS";
 
-/** @deprecated lastSeen 2026-07-07 — 3 entries */
-type DeprecatedFeatureGateIds = "HEAL_TOAST_FEATURE_GATE" | "STORE_REFRESH_FEATURE_GATE" | "WEB_STORE_LINK_OUT_FEATURE_GATE";
+/** @deprecated lastSeen 2026-08-05 — 4 entries */
+type DeprecatedFeatureGateIds = "DAY_NIGHT_POI_FEATURE_GATE" | "HEAL_TOAST_FEATURE_GATE" | "STORE_REFRESH_FEATURE_GATE" | "WEB_STORE_LINK_OUT_FEATURE_GATE";
 
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedFormsRefactorSettingsIds = "FORMS_REFACTOR_SETTINGS";

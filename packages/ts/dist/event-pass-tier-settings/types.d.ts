@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 420 entries (structural types).
+// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 960 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -14,25 +14,35 @@ export type EventPassTierSettingsType = W<EventPassTierSettings>;
 export interface EventPassTierSettingsData {
 	activeBonusDisplaySettings?: {
 		bonusBoxes: Array<{
-			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "TRADE";
+			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "POKESTOP" | "TRADE";
 			text:
 				| "dai_duration_double"
+				| "daily_free_single_incubator"
 				| "gift_open_more_daily"
 				| "gift_storage_more"
+				| "incubator_distance_half"
+				| "incubator_distance_quarter"
+				| "pokestop_spin_xp_double"
+				| "pokestop_spin_xp_triple"
 				| "season_pass_bonus_hatch_xp_stardust"
 				| "trade_extra_candy"
 				| "trade_guaranteed_candyxl";
 		}>;
-		eventName: "go_pass_cumulative_bonuses_header";
+		eventName?: "go_pass_cumulative_bonuses_header";
 	};
 	bonusSettings?: {
 		bonusBoxes: Array<{
-			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "TRADE";
+			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "POKESTOP" | "TRADE";
 			text:
 				| "dai_duration_double"
+				| "daily_free_single_incubator"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
 				| "gift_storage_more"
+				| "incubator_distance_half"
+				| "incubator_distance_quarter"
+				| "pokestop_spin_xp_double"
+				| "pokestop_spin_xp_triple"
 				| "season_pass_bonus_hatch_xp_stardust"
 				| "trade_extra_candy"
 				| "trade_guaranteed_candyxl";
@@ -49,28 +59,45 @@ export interface EventPassTierSettingsData {
 		candy?: {
 			amount: number;
 			pokemonId:
+				| "ABRA"
+				| "AERODACTYL"
+				| "AUDINO"
 				| "CHIMECHO"
 				| "CLAMPERL"
 				| "DEINO"
+				| "DONDOZO"
 				| "DRAMPA"
 				| "EEVEE"
 				| "FRILLISH"
 				| "FURFROU"
+				| "GLIMMET"
 				| "GOOMY"
+				| "GROWLITHE"
 				| "HIPPOPOTAS"
 				| "HO_OH"
 				| "HOUNDOUR"
+				| "JANGMO_O"
 				| "KABUTO"
+				| "LATIAS"
+				| "MEOWTH"
 				| "MR_MIME"
+				| "MUDKIP"
+				| "ORTHWORM"
 				| "POLTCHAGEIST"
 				| "PONYTA"
 				| "ROCKRUFF"
 				| "SCORBUNNY"
 				| "SHELLDER"
 				| "SINISTEA"
+				| "SLUGMA"
 				| "SNOM"
+				| "SNOVER"
+				| "SOBBLE"
+				| "STANTLER"
+				| "SWINUB"
 				| "TADBULB"
 				| "TINKATINK"
+				| "TOGEDEMARU"
 				| "TORCHIC"
 				| "TYROGUE"
 				| "VULPIX";
@@ -82,93 +109,151 @@ export interface EventPassTierSettingsData {
 				| "ITEM_GOLDEN_PINAP_BERRY"
 				| "ITEM_GOLDEN_RAZZ_BERRY"
 				| "ITEM_GREAT_BALL"
+				| "ITEM_INCENSE_ORDINARY"
+				| "ITEM_INCUBATOR_BASIC"
 				| "ITEM_INCUBATOR_SUPER"
 				| "ITEM_LEADER_MAP_FRAGMENT"
 				| "ITEM_LUCKY_EGG"
+				| "ITEM_LUCKY_FRIEND_APPLICATOR"
 				| "ITEM_MOVE_REROLL_FAST_ATTACK"
 				| "ITEM_MOVE_REROLL_SPECIAL_ATTACK"
 				| "ITEM_MP"
 				| "ITEM_NANAB_BERRY"
 				| "ITEM_PAID_RAID_TICKET"
+				| "ITEM_PINAP_BERRY"
 				| "ITEM_POFFIN"
 				| "ITEM_POKE_BALL"
 				| "ITEM_RARE_CANDY"
 				| "ITEM_RAZZ_BERRY"
 				| "ITEM_STAR_PIECE"
+				| "ITEM_TROY_DISK"
 				| "ITEM_ULTRA_BALL"
 				| "ITEM_XL_RARE_CANDY";
 		};
 		playerAttribute?: {
 			durationMins: number;
 			key:
+				| "august2026_season_pass_entitlement"
+				| "august2026_season_pass_rank_01"
+				| "august2026_season_pass_rank_01_paid"
+				| "august2026_season_pass_rank_02"
+				| "august2026_season_pass_rank_03"
+				| "august2026_season_pass_rank_04"
 				| "july2026_season_pass_entitlement"
 				| "july2026_season_pass_rank_01"
 				| "july2026_season_pass_rank_02"
 				| "july2026_season_pass_rank_03"
-				| "july2026_season_pass_rank_04";
+				| "july2026_season_pass_rank_04"
+				| "summermarathon2026_season_pass_rank_01_free"
+				| "summermarathon2026_season_pass_rank_01_paid"
+				| "summermarathon2026_season_pass_rank_02_free"
+				| "summermarathon2026_season_pass_rank_02_paid";
 		};
 		pokecoin?: number;
 		pokemonEncounter?: {
-			isFeaturedPokemon: boolean;
+			isFeaturedPokemon?: boolean;
 			pokemonDisplay?: {
 				breadModeEnum?: "BREAD_MODE";
 				form:
+					| "AERODACTYL_NORMAL"
+					| "ALAKAZAM_NORMAL"
+					| "AUDINO_NORMAL"
 					| "CHIMECHO_NORMAL"
 					| "CLAMPERL_NORMAL"
 					| "CLOYSTER_NORMAL"
+					| "DARUMAKA_GALARIAN"
+					| "DARUMAKA_NORMAL"
+					| "DONDOZO_NORMAL"
 					| "DRAMPA_NORMAL"
 					| "EEVEE_NORMAL"
 					| "FRILLISH_NORMAL"
 					| "FURFROU_NATURAL"
 					| "GIMMIGHOUL_COIN_A2_2026"
+					| "GLIMMET_NORMAL"
 					| "GOOMY_NORMAL"
+					| "GROWLITHE_HISUIAN"
+					| "GROWLITHE_NORMAL"
 					| "HIPPOPOTAS_NORMAL"
 					| "HITMONCHAN_NORMAL"
 					| "HO_OH_NORMAL"
 					| "HOUNDOOM_NORMAL"
+					| "JANGMO_O_NORMAL"
 					| "KABUTOPS_NORMAL"
+					| "LATIAS_NORMAL"
+					| "MEOWTH_ALOLA"
+					| "MEOWTH_NORMAL"
 					| "MR_MIME_GALARIAN"
+					| "MUDKIP_NORMAL"
+					| "ORTHWORM_NORMAL"
 					| "PONYTA_GALARIAN"
 					| "PONYTA_NORMAL"
 					| "ROCKRUFF_NORMAL"
 					| "SCORBUNNY_NORMAL"
+					| "SIZZLIPEDE_NORMAL"
+					| "SLUGMA_NORMAL"
+					| "SNEASEL_NORMAL"
 					| "SNOM_NORMAL"
+					| "SNOVER_NORMAL"
+					| "SOBBLE_NORMAL"
+					| "SWINUB_NORMAL"
 					| "TADBULB_NORMAL"
 					| "TINKATINK_NORMAL"
+					| "TOGEDEMARU_NORMAL"
 					| "TORCHIC_NORMAL"
 					| "VULPIX_ALOLA"
 					| "VULPIX_NORMAL"
+					| "WYRDEER_NORMAL"
 					| "ZWEILOUS_NORMAL";
 				locationCard?: {
 					locationCard: "LC_SPECIALBACKGROUND_GG2026";
 				};
 			};
 			pokemonId:
+				| "AERODACTYL"
+				| "ALAKAZAM"
+				| "AUDINO"
 				| "CHIMECHO"
 				| "CLAMPERL"
 				| "CLOYSTER"
+				| "DARUMAKA"
+				| "DONDOZO"
 				| "DRAMPA"
 				| "EEVEE"
 				| "FRILLISH"
 				| "FURFROU"
 				| "GIMMIGHOUL"
+				| "GLIMMET"
 				| "GOOMY"
+				| "GROWLITHE"
 				| "HIPPOPOTAS"
 				| "HITMONCHAN"
 				| "HO_OH"
 				| "HOUNDOOM"
+				| "JANGMO_O"
 				| "KABUTOPS"
+				| "LATIAS"
+				| "MEOWTH"
 				| "MR_MIME"
+				| "MUDKIP"
+				| "ORTHWORM"
 				| "POLTCHAGEIST"
 				| "PONYTA"
 				| "ROCKRUFF"
 				| "SCORBUNNY"
 				| "SINISTEA"
+				| "SIZZLIPEDE"
+				| "SLUGMA"
+				| "SNEASEL"
 				| "SNOM"
+				| "SNOVER"
+				| "SOBBLE"
+				| "SWINUB"
 				| "TADBULB"
 				| "TINKATINK"
+				| "TOGEDEMARU"
 				| "TORCHIC"
 				| "VULPIX"
+				| "WYRDEER"
 				| "ZWEILOUS";
 			statsLimitsOverride?: {
 				maxPokemonLevel: number;
@@ -180,22 +265,35 @@ export interface EventPassTierSettingsData {
 		xlCandy?: {
 			amount: number;
 			pokemonId:
+				| "AERODACTYL"
+				| "AUDINO"
 				| "CHIMECHO"
 				| "CLAMPERL"
 				| "DEINO"
 				| "EEVEE"
 				| "FURFROU"
+				| "GLIMMET"
 				| "GOOMY"
+				| "GROWLITHE"
 				| "HIPPOPOTAS"
 				| "HO_OH"
+				| "JANGMO_O"
 				| "KABUTO"
+				| "LATIAS"
+				| "MEOWTH"
 				| "MR_MIME"
 				| "PONYTA"
 				| "SCORBUNNY"
 				| "SHELLDER"
 				| "SINISTEA"
+				| "SLUGMA"
 				| "SNOM"
+				| "SNOVER"
+				| "SOBBLE"
+				| "STANTLER"
+				| "SWINUB"
 				| "TADBULB"
+				| "TOGEDEMARU"
 				| "TYROGUE"
 				| "VULPIX";
 		};

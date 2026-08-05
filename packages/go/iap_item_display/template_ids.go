@@ -371,6 +371,8 @@ const (
 	IapItemDisplayTemplateIDPaidraidticket1                                        IapItemDisplayTemplateID = "paidraidticket.1"
 	IapItemDisplayTemplateIDPaidraidticket3                                        IapItemDisplayTemplateID = "paidraidticket.3"
 	IapItemDisplayTemplateIDPgoreleaseApril22026DeluxeEventPassTrackRedirect       IapItemDisplayTemplateID = "pgorelease.april2_2026_deluxe_event_pass_track_redirect"
+	IapItemDisplayTemplateIDPgoreleaseAugust1DeluxeEventPassTrackUnlock            IapItemDisplayTemplateID = "pgorelease.august1_deluxe_event_pass_track_unlock"
+	IapItemDisplayTemplateIDPgoreleaseAugust1DeluxeEventPassTrackUnlockPlusPoints  IapItemDisplayTemplateID = "pgorelease.august1_deluxe_event_pass_track_unlock_plus_points"
 	IapItemDisplayTemplateIDPgoreleaseBundle1                                      IapItemDisplayTemplateID = "pgorelease.bundle.1"
 	IapItemDisplayTemplateIDPgoreleaseBundle2                                      IapItemDisplayTemplateID = "pgorelease.bundle.2"
 	IapItemDisplayTemplateIDPgoreleaseBundleBlanchebox1                            IapItemDisplayTemplateID = "pgorelease.bundle.blanchebox.1"
@@ -456,6 +458,8 @@ const (
 	IapItemDisplayTemplateIDPgoreleaseMay12026DeluxeEventPassTrackUnlockRedirect   IapItemDisplayTemplateID = "pgorelease.may1_2026_deluxe_event_pass_track_unlock_redirect"
 	IapItemDisplayTemplateIDPgoreleaseMonth2DeluxeEventPassTrackUnlock             IapItemDisplayTemplateID = "pgorelease.month2_deluxe_event_pass_track_unlock"
 	IapItemDisplayTemplateIDPgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints   IapItemDisplayTemplateID = "pgorelease.month2_deluxe_event_pass_track_unlock_plus_points"
+	IapItemDisplayTemplateIDPgoreleaseMonth3DeluxeEventPassTrackUnlock             IapItemDisplayTemplateID = "pgorelease.month3_deluxe_event_pass_track_unlock"
+	IapItemDisplayTemplateIDPgoreleaseMonth3DeluxeEventPassTrackUnlockPlusPoints   IapItemDisplayTemplateID = "pgorelease.month3_deluxe_event_pass_track_unlock_plus_points"
 	IapItemDisplayTemplateIDPgoreleasePokecoin2750                                 IapItemDisplayTemplateID = "pgorelease.pokecoin.2750"
 	IapItemDisplayTemplateIDPgoreleasePokecoin5720                                 IapItemDisplayTemplateID = "pgorelease.pokecoin.5720"
 	IapItemDisplayTemplateIDPgoreleasePokecoin15950                                IapItemDisplayTemplateID = "pgorelease.pokecoin.15950"
@@ -1538,6 +1542,8 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDPaidraidticket1,
 	IapItemDisplayTemplateIDPaidraidticket3,
 	IapItemDisplayTemplateIDPgoreleaseApril22026DeluxeEventPassTrackRedirect,
+	IapItemDisplayTemplateIDPgoreleaseAugust1DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDPgoreleaseAugust1DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDPgoreleaseBundle1,
 	IapItemDisplayTemplateIDPgoreleaseBundle2,
 	IapItemDisplayTemplateIDPgoreleaseBundleBlanchebox1,
@@ -1623,6 +1629,8 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDPgoreleaseMay12026DeluxeEventPassTrackUnlockRedirect,
 	IapItemDisplayTemplateIDPgoreleaseMonth2DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDPgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDPgoreleaseMonth3DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDPgoreleaseMonth3DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDPgoreleasePokecoin2750,
 	IapItemDisplayTemplateIDPgoreleasePokecoin5720,
 	IapItemDisplayTemplateIDPgoreleasePokecoin15950,

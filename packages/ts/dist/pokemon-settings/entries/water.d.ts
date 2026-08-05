@@ -19635,15 +19635,23 @@ export type PokemonSettingsV0846PokemonArrokuda = S<
 		"V0846_POKEMON_ARROKUDA",
 		{
 			breadTierGroup: "GROUP_2";
-			buddyGroupNumber: 2;
+			buddyGroupNumber: 1;
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
+			buddyPortraitOffset: [-100, 0, -700];
 			buddyScale: 19;
-			camera: object;
+			camera: {
+				cylinderGroundM: 0.15;
+				cylinderHeightM: 0.4;
+				cylinderRadiusM: 0.32;
+			};
 			cinematicMoves: ["CRUNCH", "AQUA_JET", "CLOSE_COMBAT"];
 			encounter: {
 				attackProbability: 0.2;
-				cameraDistance: 4;
+				cameraDistance: 2.5;
+				collisionHeadRadiusM: 0.2;
+				collisionHeightM: 0.2;
+				collisionRadiusM: 0.25;
 				dodgeDistance: 0.5;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.1;
@@ -19664,7 +19672,7 @@ export type PokemonSettingsV0846PokemonArrokuda = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
-			modelHeight: 1;
+			modelHeight: 0.5;
 			modelScaleV2: 1;
 			pokedexHeightM: 0.5;
 			pokedexWeightKg: 1;
@@ -19689,15 +19697,23 @@ export type PokemonSettingsV0846PokemonArrokudaNormal = S<
 		"V0846_POKEMON_ARROKUDA_NORMAL",
 		{
 			breadTierGroup: "GROUP_2";
-			buddyGroupNumber: 2;
+			buddyGroupNumber: 1;
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
+			buddyPortraitOffset: [-100, 0, -700];
 			buddyScale: 19;
-			camera: object;
+			camera: {
+				cylinderGroundM: 0.15;
+				cylinderHeightM: 0.4;
+				cylinderRadiusM: 0.32;
+			};
 			cinematicMoves: ["CRUNCH", "AQUA_JET", "CLOSE_COMBAT"];
 			encounter: {
 				attackProbability: 0.2;
-				cameraDistance: 4;
+				cameraDistance: 2.5;
+				collisionHeadRadiusM: 0.2;
+				collisionHeightM: 0.2;
+				collisionRadiusM: 0.25;
 				dodgeDistance: 0.5;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.1;
@@ -19720,7 +19736,7 @@ export type PokemonSettingsV0846PokemonArrokudaNormal = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
-			modelHeight: 1;
+			modelHeight: 0.5;
 			modelScaleV2: 1;
 			pokedexHeightM: 0.5;
 			pokedexWeightKg: 1;
@@ -19748,8 +19764,13 @@ export type PokemonSettingsV0847PokemonBarraskewda = S<
 			buddyGroupNumber: 2;
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
+			buddyPortraitOffset: [-50, 50, -550];
 			buddyScale: 19;
-			camera: object;
+			camera: {
+				cylinderGroundM: 0.1;
+				cylinderHeightM: 1;
+				cylinderRadiusM: 0.7;
+			};
 			cinematicMoves: ["CRUNCH", "AQUA_JET", "CLOSE_COMBAT"];
 			encounter: {
 				attackProbability: 0.2;
@@ -19757,6 +19778,9 @@ export type PokemonSettingsV0847PokemonBarraskewda = S<
 				bonusStardustCaptureReward: 200;
 				bonusXlCandyCaptureReward: 1;
 				cameraDistance: 4;
+				collisionHeadRadiusM: 0.2;
+				collisionHeightM: 0.5;
+				collisionRadiusM: 1;
 				dodgeDistance: 0.5;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
@@ -19771,7 +19795,7 @@ export type PokemonSettingsV0847PokemonBarraskewda = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
-			modelHeight: 1;
+			modelHeight: 1.3;
 			modelScaleV2: 1;
 			parentPokemonId: "ARROKUDA";
 			pokedexHeightM: 1.3;
@@ -19800,8 +19824,13 @@ export type PokemonSettingsV0847PokemonBarraskewdaNormal = S<
 			buddyGroupNumber: 2;
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
+			buddyPortraitOffset: [-50, 50, -550];
 			buddyScale: 19;
-			camera: object;
+			camera: {
+				cylinderGroundM: 0.1;
+				cylinderHeightM: 1;
+				cylinderRadiusM: 0.7;
+			};
 			cinematicMoves: ["CRUNCH", "AQUA_JET", "CLOSE_COMBAT"];
 			encounter: {
 				attackProbability: 0.2;
@@ -19809,6 +19838,9 @@ export type PokemonSettingsV0847PokemonBarraskewdaNormal = S<
 				bonusStardustCaptureReward: 200;
 				bonusXlCandyCaptureReward: 1;
 				cameraDistance: 4;
+				collisionHeadRadiusM: 0.2;
+				collisionHeightM: 0.5;
+				collisionRadiusM: 1;
 				dodgeDistance: 0.5;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
@@ -19824,7 +19856,7 @@ export type PokemonSettingsV0847PokemonBarraskewdaNormal = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
-			modelHeight: 1;
+			modelHeight: 1.3;
 			modelScaleV2: 1;
 			parentPokemonId: "ARROKUDA";
 			pokedexHeightM: 1.3;

@@ -367,6 +367,8 @@ import type {
 	IapItemDisplayPaidraidticket1,
 	IapItemDisplayPaidraidticket3,
 	IapItemDisplayPgoreleaseApril22026DeluxeEventPassTrackRedirect,
+	IapItemDisplayPgoreleaseAugust1DeluxeEventPassTrackUnlock,
+	IapItemDisplayPgoreleaseAugust1DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayPgoreleaseBundle1,
 	IapItemDisplayPgoreleaseBundle2,
 	IapItemDisplayPgoreleaseBundleBlanchebox1,
@@ -452,6 +454,8 @@ import type {
 	IapItemDisplayPgoreleaseMay12026DeluxeEventPassTrackUnlockRedirect,
 	IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlock,
 	IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayPgoreleaseMonth3DeluxeEventPassTrackUnlock,
+	IapItemDisplayPgoreleaseMonth3DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayPgoreleasePokecoin2750,
 	IapItemDisplayPgoreleasePokecoin5720,
 	IapItemDisplayPgoreleasePokecoin15950,
@@ -1534,6 +1538,8 @@ export interface IapItemDisplayLookup {
 	"paidraidticket.1": IapItemDisplayPaidraidticket1;
 	"paidraidticket.3": IapItemDisplayPaidraidticket3;
 	"pgorelease.april2_2026_deluxe_event_pass_track_redirect": IapItemDisplayPgoreleaseApril22026DeluxeEventPassTrackRedirect;
+	"pgorelease.august1_deluxe_event_pass_track_unlock": IapItemDisplayPgoreleaseAugust1DeluxeEventPassTrackUnlock;
+	"pgorelease.august1_deluxe_event_pass_track_unlock_plus_points": IapItemDisplayPgoreleaseAugust1DeluxeEventPassTrackUnlockPlusPoints;
 	"pgorelease.bundle.1": IapItemDisplayPgoreleaseBundle1;
 	"pgorelease.bundle.2": IapItemDisplayPgoreleaseBundle2;
 	"pgorelease.bundle.blanchebox.1": IapItemDisplayPgoreleaseBundleBlanchebox1;
@@ -1619,6 +1625,8 @@ export interface IapItemDisplayLookup {
 	"pgorelease.may1_2026_deluxe_event_pass_track_unlock_redirect": IapItemDisplayPgoreleaseMay12026DeluxeEventPassTrackUnlockRedirect;
 	"pgorelease.month2_deluxe_event_pass_track_unlock": IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlock;
 	"pgorelease.month2_deluxe_event_pass_track_unlock_plus_points": IapItemDisplayPgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints;
+	"pgorelease.month3_deluxe_event_pass_track_unlock": IapItemDisplayPgoreleaseMonth3DeluxeEventPassTrackUnlock;
+	"pgorelease.month3_deluxe_event_pass_track_unlock_plus_points": IapItemDisplayPgoreleaseMonth3DeluxeEventPassTrackUnlockPlusPoints;
 	"pgorelease.pokecoin.2750": IapItemDisplayPgoreleasePokecoin2750;
 	"pgorelease.pokecoin.5720": IapItemDisplayPgoreleasePokecoin5720;
 	"pgorelease.pokecoin.15950": IapItemDisplayPgoreleasePokecoin15950;

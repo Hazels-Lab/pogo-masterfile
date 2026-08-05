@@ -568,6 +568,7 @@ export interface ItemSettingsData {
 		| "general2.ticket.9_fashionRaidDay26_title"
 		| "general2.ticket2.CATCH_MASTERY_ORICORIO"
 		| "GOTour_2026_ticket_title"
+		| "ITEM_EVENT_PASS_POINT_GO_TOUR_01_name"
 		| "item_postcard_inventory_name_stamp";
 	potion?: {
 		staAmount?: number;
@@ -588,7 +589,7 @@ export interface ItemSettingsData {
 	};
 	timePeriodCounters?: {
 		playerActivity: {
-			limit?: number;
+			limit: number;
 		};
 	};
 	xpBoost?: {
