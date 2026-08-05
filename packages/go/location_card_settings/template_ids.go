@@ -219,6 +219,7 @@ const (
 	LocationCardSettingsTemplateIDLcSpecialbackground2025Season17                         LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2025_SEASON17"
 	LocationCardSettingsTemplateIDLcSpecialbackground2025Season19                         LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2025_SEASON19"
 	LocationCardSettingsTemplateIDLcSpecialbackground2025Season20                         LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2025_SEASON20"
+	LocationCardSettingsTemplateIDLcSpecialbackground202610thAnniversary001               LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_10TH_ANNIVERSARY_001"
 	LocationCardSettingsTemplateIDLcSpecialbackground2026Arraia                           LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_ARRAIA"
 	LocationCardSettingsTemplateIDLcSpecialbackground2026Communityday                     LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_COMMUNITYDAY"
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalDiamond001                 LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_GLOBAL_DIAMOND_001"
@@ -465,6 +466,7 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLcSpecialbackground2025Season17,
 	LocationCardSettingsTemplateIDLcSpecialbackground2025Season19,
 	LocationCardSettingsTemplateIDLcSpecialbackground2025Season20,
+	LocationCardSettingsTemplateIDLcSpecialbackground202610thAnniversary001,
 	LocationCardSettingsTemplateIDLcSpecialbackground2026Arraia,
 	LocationCardSettingsTemplateIDLcSpecialbackground2026Communityday,
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalDiamond001,

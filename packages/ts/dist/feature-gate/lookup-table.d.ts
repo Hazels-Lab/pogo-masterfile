@@ -4,7 +4,6 @@ import type {
 	FeatureGateAdminGmNiaOpsOnlyFilterAms,
 	FeatureGateAms,
 	FeatureGateAmsFrontend,
-	FeatureGateDayNightPoi,
 	FeatureGateEnablePvpChallengeSpanner,
 	FeatureGateEnhancedCurrencyOverflowStardust,
 	FeatureGateEventList,
@@ -25,7 +24,6 @@ export interface FeatureGateLookup {
 	ADMIN_GM_NIA_OPS_ONLY_FILTER_AMS_FEATURE_GATE: FeatureGateAdminGmNiaOpsOnlyFilterAms;
 	AMS_FEATURE_GATE: FeatureGateAms;
 	AMS_FRONTEND_FEATURE_GATE: FeatureGateAmsFrontend;
-	DAY_NIGHT_POI_FEATURE_GATE: FeatureGateDayNightPoi;
 	ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE: FeatureGateEnablePvpChallengeSpanner;
 	ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE: FeatureGateEnhancedCurrencyOverflowStardust;
 	EVENT_LIST_FEATURE_GATE: FeatureGateEventList;

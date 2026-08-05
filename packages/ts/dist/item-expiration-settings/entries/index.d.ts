@@ -164,7 +164,8 @@ export type ItemExpirationSettingsLuckyFriendApplicator = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_LUCKY_FRIEND_APPLICATOR",
 		{
-			expirationTime: "2026-07-19T23:59:59";
+			emergencyExpirationTime: "2026-09-14T10:00:00";
+			expirationTime: "2026-09-13T23:59:00";
 		}
 	>
 >;

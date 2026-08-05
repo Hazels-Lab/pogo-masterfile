@@ -265,9 +265,10 @@ export type ItemSettingsItemEventPassPointLiveOps09 = S<
 			ignoreInventorySpace: true;
 			itemCap: 999999;
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
+			nameOverride: "ITEM_EVENT_PASS_POINT_GO_TOUR_01_name";
 			timePeriodCounters: {
 				playerActivity: {
-					limit: 300;
+					limit: 500;
 				};
 			};
 		}
@@ -306,7 +307,9 @@ export type ItemSettingsItemEventPassPointMonthly02 = S<
 			itemCap: 999999;
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
-				playerActivity: object;
+				playerActivity: {
+					limit: 250;
+				};
 			};
 		}
 	>
@@ -325,7 +328,7 @@ export type ItemSettingsItemEventPassPointMonthly03 = S<
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
-					limit: 300;
+					limit: 250;
 				};
 			};
 		}

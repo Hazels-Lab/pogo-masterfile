@@ -8,7 +8,6 @@ const (
 	FeatureGateTemplateIDAdminGmNiaOpsOnlyFilterAmsFeatureGate            FeatureGateTemplateID = "ADMIN_GM_NIA_OPS_ONLY_FILTER_AMS_FEATURE_GATE"
 	FeatureGateTemplateIDAmsFeatureGate                                   FeatureGateTemplateID = "AMS_FEATURE_GATE"
 	FeatureGateTemplateIDAmsFrontendFeatureGate                           FeatureGateTemplateID = "AMS_FRONTEND_FEATURE_GATE"
-	FeatureGateTemplateIDDayNightPoiFeatureGate                           FeatureGateTemplateID = "DAY_NIGHT_POI_FEATURE_GATE"
 	FeatureGateTemplateIDEnablePvpChallengeSpannerFeatureGate             FeatureGateTemplateID = "ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE"
 	FeatureGateTemplateIDEnhancedCurrencyOverflowStardustFeatureGate      FeatureGateTemplateID = "ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE"
 	FeatureGateTemplateIDEventListFeatureGate                             FeatureGateTemplateID = "EVENT_LIST_FEATURE_GATE"
@@ -29,7 +28,6 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDAdminGmNiaOpsOnlyFilterAmsFeatureGate,
 	FeatureGateTemplateIDAmsFeatureGate,
 	FeatureGateTemplateIDAmsFrontendFeatureGate,
-	FeatureGateTemplateIDDayNightPoiFeatureGate,
 	FeatureGateTemplateIDEnablePvpChallengeSpannerFeatureGate,
 	FeatureGateTemplateIDEnhancedCurrencyOverflowStardustFeatureGate,
 	FeatureGateTemplateIDEventListFeatureGate,

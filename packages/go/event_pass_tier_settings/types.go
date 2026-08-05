@@ -9,6 +9,11 @@ type EventPassTierSettingsBonusBoxes struct {
 
 type EventPassTierSettingsActiveBonusDisplaySettings struct {
 	BonusBoxes []EventPassTierSettingsBonusBoxes `json:"bonusBoxes"`
+	EventName  *string                           `json:"eventName,omitempty"`
+}
+
+type EventPassTierSettingsBonusSettings struct {
+	BonusBoxes []EventPassTierSettingsBonusBoxes `json:"bonusBoxes"`
 	EventName  string                            `json:"eventName"`
 }
 
@@ -43,7 +48,7 @@ type EventPassTierSettingsStatsLimitsOverride struct {
 }
 
 type EventPassTierSettingsPokemonEncounter struct {
-	IsFeaturedPokemon   bool                                      `json:"isFeaturedPokemon"`
+	IsFeaturedPokemon   *bool                                     `json:"isFeaturedPokemon,omitempty"`
 	PokemonDisplay      *EventPassTierSettingsPokemonDisplay      `json:"pokemonDisplay,omitempty"`
 	PokemonId           string                                    `json:"pokemonId"`
 	StatsLimitsOverride *EventPassTierSettingsStatsLimitsOverride `json:"statsLimitsOverride,omitempty"`
@@ -63,7 +68,7 @@ type EventPassTierSettingsRewards struct {
 
 type EventPassTierSettings struct {
 	ActiveBonusDisplaySettings *EventPassTierSettingsActiveBonusDisplaySettings `json:"activeBonusDisplaySettings,omitempty"`
-	BonusSettings              *EventPassTierSettingsActiveBonusDisplaySettings `json:"bonusSettings,omitempty"`
+	BonusSettings              *EventPassTierSettingsBonusSettings              `json:"bonusSettings,omitempty"`
 	MinPointsRequired          *uint64                                          `json:"minPointsRequired,omitempty"`
 	Rank                       uint64                                           `json:"rank"`
 	Rewards                    []EventPassTierSettingsRewards                   `json:"rewards,omitempty"`

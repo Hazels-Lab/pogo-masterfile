@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 18 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 17 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -27,15 +27,6 @@ export type FeatureGateAmsFrontend = S<
 		{
 			rolloutPercentage: 100;
 			status: 1;
-		}
-	>
->;
-export type FeatureGateDayNightPoi = S<
-	FeatureGate<
-		"DAY_NIGHT_POI_FEATURE_GATE",
-		{
-			rolloutPercentage: 100;
-			status: 1827323905;
 		}
 	>
 >;
@@ -248,7 +239,6 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateAdminGmNiaOpsOnlyFilterAms
 	| FeatureGateAms
 	| FeatureGateAmsFrontend
-	| FeatureGateDayNightPoi
 	| FeatureGateEnablePvpChallengeSpanner
 	| FeatureGateEnhancedCurrencyOverflowStardust
 	| FeatureGateEventList

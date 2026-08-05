@@ -664,9 +664,9 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					};
 					pokemon: {
 						pokemonDisplay: {
-							form: "KYUREM_NORMAL";
+							form: "MESPRIT_NORMAL";
 						};
-						pokemonId: "KYUREM";
+						pokemonId: "MESPRIT";
 					};
 					staminaIvOverride: {
 						range: {

@@ -739,6 +739,10 @@ pub enum IapItemDisplayTemplateId {
     Paidraidticket3,
     #[serde(rename = "pgorelease.april2_2026_deluxe_event_pass_track_redirect")]
     PgoreleaseApril22026DeluxeEventPassTrackRedirect,
+    #[serde(rename = "pgorelease.august1_deluxe_event_pass_track_unlock")]
+    PgoreleaseAugust1DeluxeEventPassTrackUnlock,
+    #[serde(rename = "pgorelease.august1_deluxe_event_pass_track_unlock_plus_points")]
+    PgoreleaseAugust1DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "pgorelease.bundle.1")]
     PgoreleaseBundle1,
     #[serde(rename = "pgorelease.bundle.2")]
@@ -909,6 +913,10 @@ pub enum IapItemDisplayTemplateId {
     PgoreleaseMonth2DeluxeEventPassTrackUnlock,
     #[serde(rename = "pgorelease.month2_deluxe_event_pass_track_unlock_plus_points")]
     PgoreleaseMonth2DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "pgorelease.month3_deluxe_event_pass_track_unlock")]
+    PgoreleaseMonth3DeluxeEventPassTrackUnlock,
+    #[serde(rename = "pgorelease.month3_deluxe_event_pass_track_unlock_plus_points")]
+    PgoreleaseMonth3DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "pgorelease.pokecoin.2750")]
     PgoreleasePokecoin2750,
     #[serde(rename = "pgorelease.pokecoin.5720")]

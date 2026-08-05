@@ -9,6 +9,7 @@ export type LocationCardSettingsSpecialBackground2024GlobalGofestMoonUltraWormho
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoFest2024_wormhole_moon";
+			locationCard: "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_MOON_ULTRA_WORMHOLE_001";
 			vfxAddress: "bgfx_UltraWormhole";
 		}
 	>
@@ -19,6 +20,7 @@ export type LocationCardSettingsSpecialBackground2024GlobalGofestSunUltraWormhol
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoFest2024_wormhole_sun";
+			locationCard: "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_SUN_ULTRA_WORMHOLE_001";
 			vfxAddress: "bgfx_UltraWormhole";
 		}
 	>
@@ -29,6 +31,7 @@ export type LocationCardSettingsSpecialBackground2024GlobalGofestUltraWormhole00
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_GoFest2024_wormhole";
+			locationCard: "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_ULTRA_WORMHOLE_001";
 			vfxAddress: "bgfx_UltraWormhole";
 		}
 	>

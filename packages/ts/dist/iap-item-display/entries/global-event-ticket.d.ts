@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 46 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 48 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -17,6 +17,40 @@ export type IapItemDisplayEventPassMonth2SeasonStoreRedirect = S<
 			skuEnableTimeUtcMs: "1748253600000";
 			sortOrder: 1;
 			title: "season_pass_premium_track_title_july";
+		}
+	>
+>;
+export type IapItemDisplayEventPassMonth3SeasonStoreRedirect = S<
+	IapItemDisplay<
+		"EVENT_PASS_MONTH3_SEASON_STORE_REDIRECT",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F84f00147_PGO-MCS_GO_Pass_August_2026_TICKET_v1-1024x576.jpg";
+			sku: "pgorelease.month3_deluxe_event_pass_track_redirect";
+			skuDisableTime: "2026-09-10T10:00:00";
+			skuDisableTimeUtcMs: "1789034400000";
+			skuEnableTime: "2025-08-04T10:00:00";
+			skuEnableTimeUtcMs: "1754301600000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_aug";
+		}
+	>
+>;
+export type IapItemDisplayEventPassRedirectSummerMarathon2026 = S<
+	IapItemDisplay<
+		"EVENT_PASS_REDIRECT_SUMMER_MARATHON_2026",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			description: "deluxe_event_pass_track_unlock_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Faab1ed22_PGO-MCS_Summer_Marathon_Fire_Ice_v3b-1024x576.jpg";
+			sku: "pgorelease.august1_deluxe_event_pass_track_unlock_redirect";
+			skuDisableTime: "2026-08-12T20:00:00";
+			skuDisableTimeUtcMs: "1786564800000";
+			skuEnableTime: "2025-08-04T10:00:00";
+			skuEnableTimeUtcMs: "1754301600000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_summermarathon2026";
 		}
 	>
 >;
@@ -873,6 +907,8 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket10Giftable = S<
 
 export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayEventPassMonth2SeasonStoreRedirect
+	| IapItemDisplayEventPassMonth3SeasonStoreRedirect
+	| IapItemDisplayEventPassRedirectSummerMarathon2026
 	| IapItemDisplayEvergreenticket1
 	| IapItemDisplayEvergreenticket1Giftable
 	| IapItemDisplayGeneral1Ticket1
