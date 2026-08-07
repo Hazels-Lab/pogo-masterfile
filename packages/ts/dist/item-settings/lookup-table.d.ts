@@ -27,6 +27,7 @@ import type {
 	ItemSettingsItemEventPassPointLiveOps07,
 	ItemSettingsItemEventPassPointLiveOps08,
 	ItemSettingsItemEventPassPointLiveOps09,
+	ItemSettingsItemEventPassPointLiveOps10,
 	ItemSettingsItemEventPassPointMonthly01,
 	ItemSettingsItemEventPassPointMonthly02,
 	ItemSettingsItemEventPassPointMonthly03,
@@ -67,6 +68,8 @@ import type {
 	ItemSettingsItemEventTicketS23202609,
 	ItemSettingsItemEventTicketS23202610,
 	ItemSettingsItemEventTicketS23202610ToGift,
+	ItemSettingsItemEventTicketS23202612,
+	ItemSettingsItemEventTicketS23202612ToGift,
 	ItemSettingsItemEvergreenTicket,
 	ItemSettingsItemEvergreenTicketToGift,
 	ItemSettingsItemFreeRaidTicket,
@@ -189,6 +192,7 @@ export interface ItemSettingsLookup {
 	ITEM_EVENT_PASS_POINT_LIVE_OPS_07: ItemSettingsItemEventPassPointLiveOps07;
 	ITEM_EVENT_PASS_POINT_LIVE_OPS_08: ItemSettingsItemEventPassPointLiveOps08;
 	ITEM_EVENT_PASS_POINT_LIVE_OPS_09: ItemSettingsItemEventPassPointLiveOps09;
+	ITEM_EVENT_PASS_POINT_LIVE_OPS_10: ItemSettingsItemEventPassPointLiveOps10;
 	ITEM_EVENT_PASS_POINT_MONTHLY_01: ItemSettingsItemEventPassPointMonthly01;
 	ITEM_EVENT_PASS_POINT_MONTHLY_02: ItemSettingsItemEventPassPointMonthly02;
 	ITEM_EVENT_PASS_POINT_MONTHLY_03: ItemSettingsItemEventPassPointMonthly03;
@@ -229,6 +233,8 @@ export interface ItemSettingsLookup {
 	ITEM_EVENT_TICKET_S23_2026_09: ItemSettingsItemEventTicketS23202609;
 	ITEM_EVENT_TICKET_S23_2026_10: ItemSettingsItemEventTicketS23202610;
 	ITEM_EVENT_TICKET_S23_2026_10_TO_GIFT: ItemSettingsItemEventTicketS23202610ToGift;
+	ITEM_EVENT_TICKET_S23_2026_12: ItemSettingsItemEventTicketS23202612;
+	ITEM_EVENT_TICKET_S23_2026_12_TO_GIFT: ItemSettingsItemEventTicketS23202612ToGift;
 	ITEM_EVERGREEN_TICKET: ItemSettingsItemEvergreenTicket;
 	ITEM_EVERGREEN_TICKET_TO_GIFT: ItemSettingsItemEvergreenTicketToGift;
 	ITEM_FREE_RAID_TICKET: ItemSettingsItemFreeRaidTicket;

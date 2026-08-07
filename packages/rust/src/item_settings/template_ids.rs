@@ -59,6 +59,8 @@ pub enum ItemSettingsTemplateId {
     ItemEventPassPointLiveOps08,
     #[serde(rename = "ITEM_EVENT_PASS_POINT_LIVE_OPS_09")]
     ItemEventPassPointLiveOps09,
+    #[serde(rename = "ITEM_EVENT_PASS_POINT_LIVE_OPS_10")]
+    ItemEventPassPointLiveOps10,
     #[serde(rename = "ITEM_EVENT_PASS_POINT_MONTHLY_01")]
     ItemEventPassPointMonthly01,
     #[serde(rename = "ITEM_EVENT_PASS_POINT_MONTHLY_02")]
@@ -139,6 +141,10 @@ pub enum ItemSettingsTemplateId {
     ItemEventTicketS23202610,
     #[serde(rename = "ITEM_EVENT_TICKET_S23_2026_10_TO_GIFT")]
     ItemEventTicketS23202610ToGift,
+    #[serde(rename = "ITEM_EVENT_TICKET_S23_2026_12")]
+    ItemEventTicketS23202612,
+    #[serde(rename = "ITEM_EVENT_TICKET_S23_2026_12_TO_GIFT")]
+    ItemEventTicketS23202612ToGift,
     #[serde(rename = "ITEM_EVERGREEN_TICKET")]
     ItemEvergreenTicket,
     #[serde(rename = "ITEM_EVERGREEN_TICKET_TO_GIFT")]

@@ -32,14 +32,9 @@ type EventPassTierSettingsPlayerAttribute struct {
 	Key          string `json:"key"`
 }
 
-type EventPassTierSettingsLocationCard struct {
-	LocationCard string `json:"locationCard"`
-}
-
 type EventPassTierSettingsPokemonDisplay struct {
-	BreadModeEnum *string                            `json:"breadModeEnum,omitempty"`
-	Form          string                             `json:"form"`
-	LocationCard  *EventPassTierSettingsLocationCard `json:"locationCard,omitempty"`
+	BreadModeEnum *string `json:"breadModeEnum,omitempty"`
+	Form          string  `json:"form"`
 }
 
 type EventPassTierSettingsStatsLimitsOverride struct {
@@ -59,7 +54,6 @@ type EventPassTierSettingsRewards struct {
 	Exp              *uint64                                `json:"exp,omitempty"`
 	Item             *EventPassTierSettingsItem             `json:"item,omitempty"`
 	PlayerAttribute  *EventPassTierSettingsPlayerAttribute  `json:"playerAttribute,omitempty"`
-	Pokecoin         *uint64                                `json:"pokecoin,omitempty"`
 	PokemonEncounter *EventPassTierSettingsPokemonEncounter `json:"pokemonEncounter,omitempty"`
 	Stardust         *uint64                                `json:"stardust,omitempty"`
 	Type             string                                 `json:"type"`

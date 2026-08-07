@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 960 entries (structural types).
+// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 540 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -66,28 +66,18 @@ export interface EventPassTierSettingsData {
 				| "CLAMPERL"
 				| "DEINO"
 				| "DONDOZO"
-				| "DRAMPA"
 				| "EEVEE"
 				| "FRILLISH"
-				| "FURFROU"
 				| "GLIMMET"
-				| "GOOMY"
 				| "GROWLITHE"
-				| "HIPPOPOTAS"
-				| "HO_OH"
-				| "HOUNDOUR"
 				| "JANGMO_O"
-				| "KABUTO"
 				| "LATIAS"
 				| "MEOWTH"
-				| "MR_MIME"
 				| "MUDKIP"
 				| "ORTHWORM"
 				| "POLTCHAGEIST"
 				| "PONYTA"
 				| "ROCKRUFF"
-				| "SCORBUNNY"
-				| "SHELLDER"
 				| "SINISTEA"
 				| "SLUGMA"
 				| "SNOM"
@@ -95,12 +85,8 @@ export interface EventPassTierSettingsData {
 				| "SOBBLE"
 				| "STANTLER"
 				| "SWINUB"
-				| "TADBULB"
-				| "TINKATINK"
 				| "TOGEDEMARU"
-				| "TORCHIC"
-				| "TYROGUE"
-				| "VULPIX";
+				| "TYROGUE";
 		};
 		exp?: number;
 		item?: {
@@ -139,17 +125,11 @@ export interface EventPassTierSettingsData {
 				| "august2026_season_pass_rank_02"
 				| "august2026_season_pass_rank_03"
 				| "august2026_season_pass_rank_04"
-				| "july2026_season_pass_entitlement"
-				| "july2026_season_pass_rank_01"
-				| "july2026_season_pass_rank_02"
-				| "july2026_season_pass_rank_03"
-				| "july2026_season_pass_rank_04"
 				| "summermarathon2026_season_pass_rank_01_free"
 				| "summermarathon2026_season_pass_rank_01_paid"
 				| "summermarathon2026_season_pass_rank_02_free"
 				| "summermarathon2026_season_pass_rank_02_paid";
 		};
-		pokecoin?: number;
 		pokemonEncounter?: {
 			isFeaturedPokemon?: boolean;
 			pokemonDisplay?: {
@@ -160,35 +140,23 @@ export interface EventPassTierSettingsData {
 					| "AUDINO_NORMAL"
 					| "CHIMECHO_NORMAL"
 					| "CLAMPERL_NORMAL"
-					| "CLOYSTER_NORMAL"
 					| "DARUMAKA_GALARIAN"
 					| "DARUMAKA_NORMAL"
 					| "DONDOZO_NORMAL"
-					| "DRAMPA_NORMAL"
 					| "EEVEE_NORMAL"
 					| "FRILLISH_NORMAL"
-					| "FURFROU_NATURAL"
-					| "GIMMIGHOUL_COIN_A2_2026"
 					| "GLIMMET_NORMAL"
-					| "GOOMY_NORMAL"
 					| "GROWLITHE_HISUIAN"
 					| "GROWLITHE_NORMAL"
-					| "HIPPOPOTAS_NORMAL"
 					| "HITMONCHAN_NORMAL"
-					| "HO_OH_NORMAL"
-					| "HOUNDOOM_NORMAL"
 					| "JANGMO_O_NORMAL"
-					| "KABUTOPS_NORMAL"
 					| "LATIAS_NORMAL"
 					| "MEOWTH_ALOLA"
 					| "MEOWTH_NORMAL"
-					| "MR_MIME_GALARIAN"
 					| "MUDKIP_NORMAL"
 					| "ORTHWORM_NORMAL"
-					| "PONYTA_GALARIAN"
 					| "PONYTA_NORMAL"
 					| "ROCKRUFF_NORMAL"
-					| "SCORBUNNY_NORMAL"
 					| "SIZZLIPEDE_NORMAL"
 					| "SLUGMA_NORMAL"
 					| "SNEASEL_NORMAL"
@@ -196,17 +164,11 @@ export interface EventPassTierSettingsData {
 					| "SNOVER_NORMAL"
 					| "SOBBLE_NORMAL"
 					| "SWINUB_NORMAL"
-					| "TADBULB_NORMAL"
-					| "TINKATINK_NORMAL"
 					| "TOGEDEMARU_NORMAL"
-					| "TORCHIC_NORMAL"
 					| "VULPIX_ALOLA"
 					| "VULPIX_NORMAL"
 					| "WYRDEER_NORMAL"
 					| "ZWEILOUS_NORMAL";
-				locationCard?: {
-					locationCard: "LC_SPECIALBACKGROUND_GG2026";
-				};
 			};
 			pokemonId:
 				| "AERODACTYL"
@@ -214,32 +176,21 @@ export interface EventPassTierSettingsData {
 				| "AUDINO"
 				| "CHIMECHO"
 				| "CLAMPERL"
-				| "CLOYSTER"
 				| "DARUMAKA"
 				| "DONDOZO"
-				| "DRAMPA"
 				| "EEVEE"
 				| "FRILLISH"
-				| "FURFROU"
-				| "GIMMIGHOUL"
 				| "GLIMMET"
-				| "GOOMY"
 				| "GROWLITHE"
-				| "HIPPOPOTAS"
 				| "HITMONCHAN"
-				| "HO_OH"
-				| "HOUNDOOM"
 				| "JANGMO_O"
-				| "KABUTOPS"
 				| "LATIAS"
 				| "MEOWTH"
-				| "MR_MIME"
 				| "MUDKIP"
 				| "ORTHWORM"
 				| "POLTCHAGEIST"
 				| "PONYTA"
 				| "ROCKRUFF"
-				| "SCORBUNNY"
 				| "SINISTEA"
 				| "SIZZLIPEDE"
 				| "SLUGMA"
@@ -248,10 +199,7 @@ export interface EventPassTierSettingsData {
 				| "SNOVER"
 				| "SOBBLE"
 				| "SWINUB"
-				| "TADBULB"
-				| "TINKATINK"
 				| "TOGEDEMARU"
-				| "TORCHIC"
 				| "VULPIX"
 				| "WYRDEER"
 				| "ZWEILOUS";
@@ -261,7 +209,7 @@ export interface EventPassTierSettingsData {
 			};
 		};
 		stardust?: number;
-		type: "CANDY" | "EXPERIENCE" | "ITEM" | "PLAYER_ATTRIBUTE" | "POKECOIN" | "POKEMON_ENCOUNTER" | "STARDUST" | "XL_CANDY";
+		type: "CANDY" | "EXPERIENCE" | "ITEM" | "PLAYER_ATTRIBUTE" | "POKEMON_ENCOUNTER" | "STARDUST" | "XL_CANDY";
 		xlCandy?: {
 			amount: number;
 			pokemonId:
@@ -271,20 +219,12 @@ export interface EventPassTierSettingsData {
 				| "CLAMPERL"
 				| "DEINO"
 				| "EEVEE"
-				| "FURFROU"
 				| "GLIMMET"
-				| "GOOMY"
 				| "GROWLITHE"
-				| "HIPPOPOTAS"
-				| "HO_OH"
 				| "JANGMO_O"
-				| "KABUTO"
 				| "LATIAS"
 				| "MEOWTH"
-				| "MR_MIME"
 				| "PONYTA"
-				| "SCORBUNNY"
-				| "SHELLDER"
 				| "SINISTEA"
 				| "SLUGMA"
 				| "SNOM"
@@ -292,10 +232,8 @@ export interface EventPassTierSettingsData {
 				| "SOBBLE"
 				| "STANTLER"
 				| "SWINUB"
-				| "TADBULB"
 				| "TOGEDEMARU"
-				| "TYROGUE"
-				| "VULPIX";
+				| "TYROGUE";
 		};
 	}>;
 	track: "FREE" | "PREMIUM";
