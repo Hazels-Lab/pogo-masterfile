@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatMove", split "flying", 20 entries.
+// Generated from Pokémon GO masterfile — group "combatMove", split "flying", 21 entries.
 
 import type { S } from "../../_utils";
 import type { CombatMove } from "../types";
@@ -287,6 +287,18 @@ export type CombatMoveV0490MoveBeakBlast = S<
 		}
 	>
 >;
+export type CombatMoveVmMoveTempEvolutionMegaV0227PokemonSkarmory = S<
+	CombatMove<
+		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0227_POKEMON_SKARMORY",
+		{
+			energyDelta: -35;
+			power: 60;
+			type: "POKEMON_TYPE_FLYING";
+			uniqueId: "TEMP_EVOLUTION_MEGA_V0227_POKEMON_SKARMORY";
+			vfxName: "drill_peck";
+		}
+	>
+>;
 
 export type CombatMoveFlyingMasterfileEntry =
 	| CombatMoveV0038MoveDrillPeck
@@ -308,4 +320,5 @@ export type CombatMoveFlyingMasterfileEntry =
 	| CombatMoveV0384MoveDragonAscent
 	| CombatMoveV0389MoveOblivionWing
 	| CombatMoveV0395MoveBleakwindStorm
-	| CombatMoveV0490MoveBeakBlast;
+	| CombatMoveV0490MoveBeakBlast
+	| CombatMoveVmMoveTempEvolutionMegaV0227PokemonSkarmory;

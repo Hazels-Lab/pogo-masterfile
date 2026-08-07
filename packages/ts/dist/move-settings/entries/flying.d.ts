@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSettings", split "flying", 22 entries.
+// Generated from Pokémon GO masterfile — group "moveSettings", split "flying", 23 entries.
 
 import type { S } from "../../_utils";
 import type { MoveSettings } from "../types";
@@ -409,6 +409,28 @@ export type MoveSettingsV0490MoveBeakBlast = S<
 		}
 	>
 >;
+export type MoveSettingsVmMoveTempEvolutionMegaV0227PokemonSkarmory = S<
+	MoveSettings<
+		"VM_MOVE_TEMP_EVOLUTION_MEGA_V0227_POKEMON_SKARMORY",
+		{
+			accuracyChance: 1;
+			animationId: 5;
+			criticalChance: 0.05;
+			damageWindowEndMs: 2300;
+			damageWindowStartMs: 1900;
+			durationMs: 2500;
+			energyDelta: -100;
+			isLocked: true;
+			movementId: "TEMP_EVOLUTION_MEGA_V0227_POKEMON_SKARMORY";
+			pokemonType: "POKEMON_TYPE_FLYING";
+			power: 170;
+			staminaLossScalar: 0.08;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "drill_peck";
+		}
+	>
+>;
 export type MoveSettingsVnBm010 = S<
 	MoveSettings<
 		"VN_BM_010",
@@ -469,5 +491,6 @@ export type MoveSettingsFlyingMasterfileEntry =
 	| MoveSettingsV0389MoveOblivionWing
 	| MoveSettingsV0395MoveBleakwindStorm
 	| MoveSettingsV0490MoveBeakBlast
+	| MoveSettingsVmMoveTempEvolutionMegaV0227PokemonSkarmory
 	| MoveSettingsVnBm010
 	| MoveSettingsVnBm031;

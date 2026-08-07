@@ -64,6 +64,7 @@ import type {
 	AvatarItemDisplayNBackpackSnapcamera0,
 	AvatarItemDisplayNBackpackSsA0,
 	AvatarItemDisplayNBackpackSsB0,
+	AvatarItemDisplayNBackpackStarmie,
 	AvatarItemDisplayNBackpackSvcostumescarletschool0,
 	AvatarItemDisplayNBackpackSvcostumevioletschool0,
 	AvatarItemDisplayNBackpackSvdlc2spring0,
@@ -1741,6 +1742,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_backpack_snapcamera_0: AvatarItemDisplayNBackpackSnapcamera0;
 	N_DISPLAY_n_backpack_ss_a_0: AvatarItemDisplayNBackpackSsA0;
 	N_DISPLAY_n_backpack_ss_b_0: AvatarItemDisplayNBackpackSsB0;
+	N_DISPLAY_n_backpack_starmie: AvatarItemDisplayNBackpackStarmie;
 	N_DISPLAY_n_backpack_svcostumescarletschool_0: AvatarItemDisplayNBackpackSvcostumescarletschool0;
 	N_DISPLAY_n_backpack_svcostumevioletschool_0: AvatarItemDisplayNBackpackSvcostumevioletschool0;
 	N_DISPLAY_n_backpack_svdlc1_0: AvatarItemDisplayNBackpackSvdlc10;

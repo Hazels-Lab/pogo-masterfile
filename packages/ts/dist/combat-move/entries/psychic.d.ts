@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatMove", split "psychic", 17 entries.
+// Generated from Pokémon GO masterfile — group "combatMove", split "psychic", 19 entries.
 
 import type { S } from "../../_utils";
 import type { CombatMove } from "../types";
@@ -231,6 +231,30 @@ export type CombatMoveV0401MovePsywaveFast = S<
 		}
 	>
 >;
+export type CombatMoveVmMoveTempEvolutionMegaV0687PokemonMalamar = S<
+	CombatMove<
+		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0687_POKEMON_MALAMAR",
+		{
+			energyDelta: -45;
+			power: 60;
+			type: "POKEMON_TYPE_PSYCHIC";
+			uniqueId: "TEMP_EVOLUTION_MEGA_V0687_POKEMON_MALAMAR";
+			vfxName: "psybeam";
+		}
+	>
+>;
+export type CombatMoveVmMoveTempEvolutionMegaYV0150PokemonMewtwo = S<
+	CombatMove<
+		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_Y_V0150_POKEMON_MEWTWO",
+		{
+			energyDelta: -80;
+			power: 130;
+			type: "POKEMON_TYPE_PSYCHIC";
+			uniqueId: "TEMP_EVOLUTION_MEGA_Y_V0150_POKEMON_MEWTWO";
+			vfxName: "futuresight";
+		}
+	>
+>;
 
 export type CombatMovePsychicMasterfileEntry =
 	| CombatMoveV0030MovePsybeam
@@ -249,4 +273,6 @@ export type CombatMovePsychicMasterfileEntry =
 	| CombatMoveV0353MovePsychicFangs
 	| CombatMoveV0365MoveLusterPurge
 	| CombatMoveV0366MoveMistBall
-	| CombatMoveV0401MovePsywaveFast;
+	| CombatMoveV0401MovePsywaveFast
+	| CombatMoveVmMoveTempEvolutionMegaV0687PokemonMalamar
+	| CombatMoveVmMoveTempEvolutionMegaYV0150PokemonMewtwo;

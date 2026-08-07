@@ -23,6 +23,10 @@ pub enum IapItemDisplayTemplateId {
     August1DeluxeEventPassTrackUnlock,
     #[serde(rename = "AUGUST1_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
     August1DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "AUGUST2_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
+    August2DeluxeEventPassTrackUnlock,
+    #[serde(rename = "AUGUST2_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
+    August2DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "battlepassticket.1")]
     Battlepassticket1,
     #[serde(rename = "BUNDLE_EC_200_RPP_1")]
@@ -525,6 +529,8 @@ pub enum IapItemDisplayTemplateId {
     EventPassApril1SeasonStoreRedirect,
     #[serde(rename = "EVENT_PASS_APRIL3_EVENT_STORE_REDIRECT")]
     EventPassApril3EventStoreRedirect,
+    #[serde(rename = "EVENT_PASS_AUGUST2_REDIRECT")]
+    EventPassAugust2Redirect,
     #[serde(rename = "EVENT_PASS_GOFEST2025_FINALE_STORE_REDIRECT")]
     EventPassGofest2025FinaleStoreRedirect,
     #[serde(rename = "EVENT_PASS_GOFEST2025_GLOBAL_STORE_REDIRECT")]

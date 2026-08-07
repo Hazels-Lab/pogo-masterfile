@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSettings", split "water", 36 entries.
+// Generated from Pokémon GO masterfile — group "moveSettings", split "water", 38 entries.
 
 import type { S } from "../../_utils";
 import type { MoveSettings } from "../types";
@@ -606,6 +606,48 @@ export type MoveSettingsV0593MoveDive = S<
 		}
 	>
 >;
+export type MoveSettingsVmMoveTempEvolutionMegaV0121PokemonStarmie = S<
+	MoveSettings<
+		"VM_MOVE_TEMP_EVOLUTION_MEGA_V0121_POKEMON_STARMIE",
+		{
+			accuracyChance: 1;
+			animationId: 5;
+			damageWindowEndMs: 2700;
+			damageWindowStartMs: 2000;
+			durationMs: 3000;
+			energyDelta: -100;
+			isLocked: true;
+			movementId: "TEMP_EVOLUTION_MEGA_V0121_POKEMON_STARMIE";
+			pokemonType: "POKEMON_TYPE_WATER";
+			power: 180;
+			staminaLossScalar: 0.01;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "liquidation";
+		}
+	>
+>;
+export type MoveSettingsVmMoveTempEvolutionMegaV0658PokemonGreninja = S<
+	MoveSettings<
+		"VM_MOVE_TEMP_EVOLUTION_MEGA_V0658_POKEMON_GRENINJA",
+		{
+			accuracyChance: 1;
+			animationId: 5;
+			damageWindowEndMs: 1400;
+			damageWindowStartMs: 1200;
+			durationMs: 1500;
+			energyDelta: -100;
+			isLocked: true;
+			movementId: "TEMP_EVOLUTION_MEGA_V0658_POKEMON_GRENINJA";
+			pokemonType: "POKEMON_TYPE_WATER";
+			power: 130;
+			staminaLossScalar: 0.01;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "surf";
+		}
+	>
+>;
 export type MoveSettingsVnBm009 = S<
 	MoveSettings<
 		"VN_BM_009",
@@ -752,6 +794,8 @@ export type MoveSettingsWaterMasterfileEntry =
 	| MoveSettingsV0488MoveChillingWater
 	| MoveSettingsV0592MoveSnipeShot
 	| MoveSettingsV0593MoveDive
+	| MoveSettingsVmMoveTempEvolutionMegaV0121PokemonStarmie
+	| MoveSettingsVmMoveTempEvolutionMegaV0658PokemonGreninja
 	| MoveSettingsVnBm009
 	| MoveSettingsVnBm025
 	| MoveSettingsVnBm033

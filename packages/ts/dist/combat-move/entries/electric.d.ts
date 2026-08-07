@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatMove", split "electric", 19 entries.
+// Generated from Pokémon GO masterfile — group "combatMove", split "electric", 21 entries.
 
 import type { S } from "../../_utils";
 import type { CombatMove } from "../types";
@@ -264,6 +264,38 @@ export type CombatMoveV0497MovePlasmaFists = S<
 		}
 	>
 >;
+export type CombatMoveVmMoveTempEvolutionMegaXV0026PokemonRaichu = S<
+	CombatMove<
+		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_X_V0026_POKEMON_RAICHU",
+		{
+			buffs: {
+				attackerDefenseStatStageChange: -1;
+				buffActivationChance: 1;
+			};
+			energyDelta: -35;
+			power: 65;
+			type: "POKEMON_TYPE_ELECTRIC";
+			uniqueId: "TEMP_EVOLUTION_MEGA_X_V0026_POKEMON_RAICHU";
+			vfxName: "volt_tackle";
+		}
+	>
+>;
+export type CombatMoveVmMoveTempEvolutionMegaYV0026PokemonRaichu = S<
+	CombatMove<
+		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_Y_V0026_POKEMON_RAICHU",
+		{
+			buffs: {
+				buffActivationChance: 1;
+				targetAttackStatStageChange: -1;
+			};
+			energyDelta: -45;
+			power: 70;
+			type: "POKEMON_TYPE_ELECTRIC";
+			uniqueId: "TEMP_EVOLUTION_MEGA_Y_V0026_POKEMON_RAICHU";
+			vfxName: "zap_cannon";
+		}
+	>
+>;
 
 export type CombatMoveElectricMasterfileEntry =
 	| CombatMoveV0035MoveDischarge
@@ -284,4 +316,6 @@ export type CombatMoveElectricMasterfileEntry =
 	| CombatMoveV0399MoveVoltTackle
 	| CombatMoveV0406MoveAuraWheelElectric
 	| CombatMoveV0472MoveThunderCage
-	| CombatMoveV0497MovePlasmaFists;
+	| CombatMoveV0497MovePlasmaFists
+	| CombatMoveVmMoveTempEvolutionMegaXV0026PokemonRaichu
+	| CombatMoveVmMoveTempEvolutionMegaYV0026PokemonRaichu;

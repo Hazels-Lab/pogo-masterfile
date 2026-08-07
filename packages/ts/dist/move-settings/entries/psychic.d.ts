@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSettings", split "psychic", 19 entries.
+// Generated from Pokémon GO masterfile — group "moveSettings", split "psychic", 21 entries.
 
 import type { S } from "../../_utils";
 import type { MoveSettings } from "../types";
@@ -350,6 +350,50 @@ export type MoveSettingsV0401MovePsywaveFast = S<
 		}
 	>
 >;
+export type MoveSettingsVmMoveTempEvolutionMegaV0687PokemonMalamar = S<
+	MoveSettings<
+		"VM_MOVE_TEMP_EVOLUTION_MEGA_V0687_POKEMON_MALAMAR",
+		{
+			accuracyChance: 1;
+			animationId: 5;
+			criticalChance: 0.05;
+			damageWindowEndMs: 2500;
+			damageWindowStartMs: 1100;
+			durationMs: 3000;
+			energyDelta: -100;
+			isLocked: true;
+			movementId: "TEMP_EVOLUTION_MEGA_V0687_POKEMON_MALAMAR";
+			pokemonType: "POKEMON_TYPE_PSYCHIC";
+			power: 170;
+			staminaLossScalar: 0.065;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "psybeam";
+		}
+	>
+>;
+export type MoveSettingsVmMoveTempEvolutionMegaYV0150PokemonMewtwo = S<
+	MoveSettings<
+		"VM_MOVE_TEMP_EVOLUTION_MEGA_Y_V0150_POKEMON_MEWTWO",
+		{
+			accuracyChance: 1;
+			animationId: 5;
+			criticalChance: 0.05;
+			damageWindowEndMs: 2500;
+			damageWindowStartMs: 1200;
+			durationMs: 2500;
+			energyDelta: -100;
+			isLocked: true;
+			movementId: "TEMP_EVOLUTION_MEGA_Y_V0150_POKEMON_MEWTWO";
+			pokemonType: "POKEMON_TYPE_PSYCHIC";
+			power: 140;
+			staminaLossScalar: 0.04;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "futuresight";
+		}
+	>
+>;
 export type MoveSettingsVnBm013 = S<
 	MoveSettings<
 		"VN_BM_013",
@@ -407,5 +451,7 @@ export type MoveSettingsPsychicMasterfileEntry =
 	| MoveSettingsV0365MoveLusterPurge
 	| MoveSettingsV0366MoveMistBall
 	| MoveSettingsV0401MovePsywaveFast
+	| MoveSettingsVmMoveTempEvolutionMegaV0687PokemonMalamar
+	| MoveSettingsVmMoveTempEvolutionMegaYV0150PokemonMewtwo
 	| MoveSettingsVnBm013
 	| MoveSettingsVnBm032;

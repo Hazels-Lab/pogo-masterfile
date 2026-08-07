@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSettings", split "electric", 22 entries.
+// Generated from Pokémon GO masterfile — group "moveSettings", split "electric", 24 entries.
 
 import type { S } from "../../_utils";
 import type { MoveSettings } from "../types";
@@ -388,6 +388,49 @@ export type MoveSettingsV0497MovePlasmaFists = S<
 		}
 	>
 >;
+export type MoveSettingsVmMoveTempEvolutionMegaXV0026PokemonRaichu = S<
+	MoveSettings<
+		"VM_MOVE_TEMP_EVOLUTION_MEGA_X_V0026_POKEMON_RAICHU",
+		{
+			accuracyChance: 1;
+			animationId: 5;
+			damageWindowEndMs: 2600;
+			damageWindowStartMs: 2100;
+			durationMs: 3500;
+			energyDelta: -100;
+			isLocked: true;
+			movementId: "TEMP_EVOLUTION_MEGA_X_V0026_POKEMON_RAICHU";
+			pokemonType: "POKEMON_TYPE_ELECTRIC";
+			power: 170;
+			staminaLossScalar: 0.01;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "volt_tackle";
+		}
+	>
+>;
+export type MoveSettingsVmMoveTempEvolutionMegaYV0026PokemonRaichu = S<
+	MoveSettings<
+		"VM_MOVE_TEMP_EVOLUTION_MEGA_Y_V0026_POKEMON_RAICHU",
+		{
+			accuracyChance: 1;
+			animationId: 5;
+			criticalChance: 0.05;
+			damageWindowEndMs: 3300;
+			damageWindowStartMs: 2800;
+			durationMs: 3500;
+			energyDelta: -100;
+			isLocked: true;
+			movementId: "TEMP_EVOLUTION_MEGA_Y_V0026_POKEMON_RAICHU";
+			pokemonType: "POKEMON_TYPE_ELECTRIC";
+			power: 160;
+			staminaLossScalar: 0.04;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "zap_cannon";
+		}
+	>
+>;
 export type MoveSettingsVnBm003 = S<
 	MoveSettings<
 		"VN_BM_003",
@@ -466,6 +509,8 @@ export type MoveSettingsElectricMasterfileEntry =
 	| MoveSettingsV0406MoveAuraWheelElectric
 	| MoveSettingsV0472MoveThunderCage
 	| MoveSettingsV0497MovePlasmaFists
+	| MoveSettingsVmMoveTempEvolutionMegaXV0026PokemonRaichu
+	| MoveSettingsVmMoveTempEvolutionMegaYV0026PokemonRaichu
 	| MoveSettingsVnBm003
 	| MoveSettingsVnBm021
 	| MoveSettingsVnBm038;

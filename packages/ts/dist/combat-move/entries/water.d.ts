@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatMove", split "water", 30 entries.
+// Generated from Pokémon GO masterfile — group "combatMove", split "water", 32 entries.
 
 import type { S } from "../../_utils";
 import type { CombatMove } from "../types";
@@ -407,6 +407,34 @@ export type CombatMoveV0593MoveDive = S<
 		}
 	>
 >;
+export type CombatMoveVmMoveTempEvolutionMegaV0121PokemonStarmie = S<
+	CombatMove<
+		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0121_POKEMON_STARMIE",
+		{
+			buffs: {
+				buffActivationChance: 0.3;
+				targetDefenseStatStageChange: -1;
+			};
+			energyDelta: -40;
+			power: 55;
+			type: "POKEMON_TYPE_WATER";
+			uniqueId: "TEMP_EVOLUTION_MEGA_V0121_POKEMON_STARMIE";
+			vfxName: "liquidation";
+		}
+	>
+>;
+export type CombatMoveVmMoveTempEvolutionMegaV0658PokemonGreninja = S<
+	CombatMove<
+		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0658_POKEMON_GRENINJA",
+		{
+			energyDelta: -35;
+			power: 55;
+			type: "POKEMON_TYPE_WATER";
+			uniqueId: "TEMP_EVOLUTION_MEGA_V0658_POKEMON_GRENINJA";
+			vfxName: "surf";
+		}
+	>
+>;
 
 export type CombatMoveWaterMasterfileEntry =
 	| CombatMoveV0053MoveBubbleBeam
@@ -438,4 +466,6 @@ export type CombatMoveWaterMasterfileEntry =
 	| CombatMoveV0487MoveAquaStep
 	| CombatMoveV0488MoveChillingWater
 	| CombatMoveV0592MoveSnipeShot
-	| CombatMoveV0593MoveDive;
+	| CombatMoveV0593MoveDive
+	| CombatMoveVmMoveTempEvolutionMegaV0121PokemonStarmie
+	| CombatMoveVmMoveTempEvolutionMegaV0658PokemonGreninja;

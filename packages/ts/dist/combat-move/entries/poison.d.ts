@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatMove", split "poison", 10 entries.
+// Generated from Pokémon GO masterfile — group "combatMove", split "poison", 11 entries.
 
 import type { S } from "../../_utils";
 import type { CombatMove } from "../types";
@@ -138,6 +138,22 @@ export type CombatMoveV0303MoveAcidSpray = S<
 		}
 	>
 >;
+export type CombatMoveVmMoveTempEvolutionMegaV0071PokemonVictreebel = S<
+	CombatMove<
+		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0071_POKEMON_VICTREEBEL",
+		{
+			buffs: {
+				buffActivationChance: 1;
+				targetDefenseStatStageChange: -2;
+			};
+			energyDelta: -40;
+			power: 20;
+			type: "POKEMON_TYPE_POISON";
+			uniqueId: "TEMP_EVOLUTION_MEGA_V0071_POKEMON_VICTREEBEL";
+			vfxName: "acid_spray";
+		}
+	>
+>;
 
 export type CombatMovePoisonMasterfileEntry =
 	| CombatMoveV0018MoveSludge
@@ -149,4 +165,5 @@ export type CombatMovePoisonMasterfileEntry =
 	| CombatMoveV0224MovePoisonJabFast
 	| CombatMoveV0225MoveAcidFast
 	| CombatMoveV0236MovePoisonStingFast
-	| CombatMoveV0303MoveAcidSpray;
+	| CombatMoveV0303MoveAcidSpray
+	| CombatMoveVmMoveTempEvolutionMegaV0071PokemonVictreebel;

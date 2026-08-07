@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSettings", split "fire", 30 entries.
+// Generated from Pokémon GO masterfile — group "moveSettings", split "fire", 31 entries.
 
 import type { S } from "../../_utils";
 import type { MoveSettings } from "../types";
@@ -528,6 +528,27 @@ export type MoveSettingsV0493MovePyroball = S<
 		}
 	>
 >;
+export type MoveSettingsVmMoveTempEvolutionMegaV0655PokemonDelphox = S<
+	MoveSettings<
+		"VM_MOVE_TEMP_EVOLUTION_MEGA_V0655_POKEMON_DELPHOX",
+		{
+			accuracyChance: 1;
+			animationId: 5;
+			damageWindowEndMs: 2000;
+			damageWindowStartMs: 1300;
+			durationMs: 2000;
+			energyDelta: -100;
+			isLocked: true;
+			movementId: "TEMP_EVOLUTION_MEGA_V0655_POKEMON_DELPHOX";
+			pokemonType: "POKEMON_TYPE_FIRE";
+			power: 140;
+			staminaLossScalar: 0.01;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "myst_fire";
+		}
+	>
+>;
 export type MoveSettingsVnBm001 = S<
 	MoveSettings<
 		"VN_BM_001",
@@ -632,6 +653,7 @@ export type MoveSettingsFireMasterfileEntry =
 	| MoveSettingsV0468MoveTorchSong
 	| MoveSettingsV0491MoveMindBlown
 	| MoveSettingsV0493MovePyroball
+	| MoveSettingsVmMoveTempEvolutionMegaV0655PokemonDelphox
 	| MoveSettingsVnBm001
 	| MoveSettingsVnBm019
 	| MoveSettingsVnBm039

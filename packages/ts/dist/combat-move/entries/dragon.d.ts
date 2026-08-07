@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatMove", split "dragon", 14 entries.
+// Generated from Pokémon GO masterfile — group "combatMove", split "dragon", 15 entries.
 
 import type { S } from "../../_utils";
 import type { CombatMove } from "../types";
@@ -188,6 +188,18 @@ export type CombatMoveV0590MoveGlaiveRush = S<
 		}
 	>
 >;
+export type CombatMoveVmMoveTempEvolutionMegaV0149PokemonDragonite = S<
+	CombatMove<
+		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0149_POKEMON_DRAGONITE",
+		{
+			energyDelta: -50;
+			power: 80;
+			type: "POKEMON_TYPE_DRAGON";
+			uniqueId: "TEMP_EVOLUTION_MEGA_V0149_POKEMON_DRAGONITE";
+			vfxName: "outrage";
+		}
+	>
+>;
 
 export type CombatMoveDragonMasterfileEntry =
 	| CombatMoveV0080MoveTwister
@@ -203,4 +215,5 @@ export type CombatMoveDragonMasterfileEntry =
 	| CombatMoveV0482MoveDynamaxCannon
 	| CombatMoveV0484MoveClangingScales
 	| CombatMoveV0486MoveDragonEnergy
-	| CombatMoveV0590MoveGlaiveRush;
+	| CombatMoveV0590MoveGlaiveRush
+	| CombatMoveVmMoveTempEvolutionMegaV0149PokemonDragonite;

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSettings", split "dragon", 17 entries.
+// Generated from Pokémon GO masterfile — group "moveSettings", split "dragon", 18 entries.
 
 import type { S } from "../../_utils";
 import type { MoveSettings } from "../types";
@@ -288,6 +288,28 @@ export type MoveSettingsV0590MoveGlaiveRush = S<
 		}
 	>
 >;
+export type MoveSettingsVmMoveTempEvolutionMegaV0149PokemonDragonite = S<
+	MoveSettings<
+		"VM_MOVE_TEMP_EVOLUTION_MEGA_V0149_POKEMON_DRAGONITE",
+		{
+			accuracyChance: 1;
+			animationId: 5;
+			criticalChance: 0.05;
+			damageWindowEndMs: 3800;
+			damageWindowStartMs: 2600;
+			durationMs: 4000;
+			energyDelta: -100;
+			isLocked: true;
+			movementId: "TEMP_EVOLUTION_MEGA_V0149_POKEMON_DRAGONITE";
+			pokemonType: "POKEMON_TYPE_DRAGON";
+			power: 185;
+			staminaLossScalar: 0.04;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "outrage";
+		}
+	>
+>;
 export type MoveSettingsVnBm012 = S<
 	MoveSettings<
 		"VN_BM_012",
@@ -361,6 +383,7 @@ export type MoveSettingsDragonMasterfileEntry =
 	| MoveSettingsV0484MoveClangingScales
 	| MoveSettingsV0486MoveDragonEnergy
 	| MoveSettingsV0590MoveGlaiveRush
+	| MoveSettingsVmMoveTempEvolutionMegaV0149PokemonDragonite
 	| MoveSettingsVnBm012
 	| MoveSettingsVnBm044
 	| MoveSettingsVnBm062;

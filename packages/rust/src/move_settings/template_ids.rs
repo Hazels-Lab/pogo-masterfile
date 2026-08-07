@@ -663,6 +663,32 @@ pub enum MoveSettingsTemplateId {
     V0594MoveGulpMissileGulping,
     #[serde(rename = "V0595_MOVE_GULP_MISSILE_GORGING")]
     V0595MoveGulpMissileGorging,
+    #[serde(rename = "VM_MOVE_TEMP_EVOLUTION_MEGA_V0071_POKEMON_VICTREEBEL")]
+    VmMoveTempEvolutionMegaV0071PokemonVictreebel,
+    #[serde(rename = "VM_MOVE_TEMP_EVOLUTION_MEGA_V0121_POKEMON_STARMIE")]
+    VmMoveTempEvolutionMegaV0121PokemonStarmie,
+    #[serde(rename = "VM_MOVE_TEMP_EVOLUTION_MEGA_V0149_POKEMON_DRAGONITE")]
+    VmMoveTempEvolutionMegaV0149PokemonDragonite,
+    #[serde(rename = "VM_MOVE_TEMP_EVOLUTION_MEGA_V0227_POKEMON_SKARMORY")]
+    VmMoveTempEvolutionMegaV0227PokemonSkarmory,
+    #[serde(rename = "VM_MOVE_TEMP_EVOLUTION_MEGA_V0652_POKEMON_CHESNAUGHT")]
+    VmMoveTempEvolutionMegaV0652PokemonChesnaught,
+    #[serde(rename = "VM_MOVE_TEMP_EVOLUTION_MEGA_V0655_POKEMON_DELPHOX")]
+    VmMoveTempEvolutionMegaV0655PokemonDelphox,
+    #[serde(rename = "VM_MOVE_TEMP_EVOLUTION_MEGA_V0658_POKEMON_GRENINJA")]
+    VmMoveTempEvolutionMegaV0658PokemonGreninja,
+    #[serde(rename = "VM_MOVE_TEMP_EVOLUTION_MEGA_V0687_POKEMON_MALAMAR")]
+    VmMoveTempEvolutionMegaV0687PokemonMalamar,
+    #[serde(rename = "VM_MOVE_TEMP_EVOLUTION_MEGA_V0870_POKEMON_FALINKS")]
+    VmMoveTempEvolutionMegaV0870PokemonFalinks,
+    #[serde(rename = "VM_MOVE_TEMP_EVOLUTION_MEGA_X_V0026_POKEMON_RAICHU")]
+    VmMoveTempEvolutionMegaXV0026PokemonRaichu,
+    #[serde(rename = "VM_MOVE_TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO")]
+    VmMoveTempEvolutionMegaXV0150PokemonMewtwo,
+    #[serde(rename = "VM_MOVE_TEMP_EVOLUTION_MEGA_Y_V0026_POKEMON_RAICHU")]
+    VmMoveTempEvolutionMegaYV0026PokemonRaichu,
+    #[serde(rename = "VM_MOVE_TEMP_EVOLUTION_MEGA_Y_V0150_POKEMON_MEWTWO")]
+    VmMoveTempEvolutionMegaYV0150PokemonMewtwo,
     #[serde(rename = "VN_BM_001")]
     VnBm001,
     #[serde(rename = "VN_BM_002")]

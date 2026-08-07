@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSettings", split "poison", 12 entries.
+// Generated from Pokémon GO masterfile — group "moveSettings", split "poison", 13 entries.
 
 import type { S } from "../../_utils";
 import type { MoveSettings } from "../types";
@@ -209,6 +209,27 @@ export type MoveSettingsV0303MoveAcidSpray = S<
 		}
 	>
 >;
+export type MoveSettingsVmMoveTempEvolutionMegaV0071PokemonVictreebel = S<
+	MoveSettings<
+		"VM_MOVE_TEMP_EVOLUTION_MEGA_V0071_POKEMON_VICTREEBEL",
+		{
+			accuracyChance: 1;
+			animationId: 5;
+			damageWindowEndMs: 2800;
+			damageWindowStartMs: 2100;
+			durationMs: 3000;
+			energyDelta: -100;
+			isLocked: true;
+			movementId: "TEMP_EVOLUTION_MEGA_V0071_POKEMON_VICTREEBEL";
+			pokemonType: "POKEMON_TYPE_POISON";
+			power: 160;
+			staminaLossScalar: 0.01;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "acid_spray";
+		}
+	>
+>;
 export type MoveSettingsVnBm008 = S<
 	MoveSettings<
 		"VN_BM_008",
@@ -259,5 +280,6 @@ export type MoveSettingsPoisonMasterfileEntry =
 	| MoveSettingsV0225MoveAcidFast
 	| MoveSettingsV0236MovePoisonStingFast
 	| MoveSettingsV0303MoveAcidSpray
+	| MoveSettingsVmMoveTempEvolutionMegaV0071PokemonVictreebel
 	| MoveSettingsVnBm008
 	| MoveSettingsVnBm029;

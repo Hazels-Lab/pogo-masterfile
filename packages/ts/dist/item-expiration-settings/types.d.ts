@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemExpirationSettings", 23 entries (structural types).
+// Generated from Pokémon GO masterfile — group "itemExpirationSettings", 24 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -58,6 +58,7 @@ export interface ItemExpirationSettingsData {
 		| "2026-07-31T20:00:00"
 		| "2026-08-06T10:00:00"
 		| "2026-08-14T20:00:00"
+		| "2026-08-31T20:00:00"
 		| "2026-09-10T10:00:00"
 		| "2026-09-13T23:59:00";
 	itemEnablementSettings?: {
