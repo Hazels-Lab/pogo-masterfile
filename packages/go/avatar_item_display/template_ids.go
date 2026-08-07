@@ -68,6 +68,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNBackpackSnapcamera0                 AvatarItemDisplayTemplateID = "N_DISPLAY_n_backpack_snapcamera_0"
 	AvatarItemDisplayTemplateIDNDisplayNBackpackSsA0                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_backpack_ss_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNBackpackSsB0                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_backpack_ss_b_0"
+	AvatarItemDisplayTemplateIDNDisplayNBackpackStarmie                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_backpack_starmie"
 	AvatarItemDisplayTemplateIDNDisplayNBackpackSvcostumescarletschool0     AvatarItemDisplayTemplateID = "N_DISPLAY_n_backpack_svcostumescarletschool_0"
 	AvatarItemDisplayTemplateIDNDisplayNBackpackSvcostumevioletschool0      AvatarItemDisplayTemplateID = "N_DISPLAY_n_backpack_svcostumevioletschool_0"
 	AvatarItemDisplayTemplateIDNDisplayNBackpackSvdlc10                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_backpack_svdlc1_0"
@@ -1745,6 +1746,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNBackpackSnapcamera0,
 	AvatarItemDisplayTemplateIDNDisplayNBackpackSsA0,
 	AvatarItemDisplayTemplateIDNDisplayNBackpackSsB0,
+	AvatarItemDisplayTemplateIDNDisplayNBackpackStarmie,
 	AvatarItemDisplayTemplateIDNDisplayNBackpackSvcostumescarletschool0,
 	AvatarItemDisplayTemplateIDNDisplayNBackpackSvcostumevioletschool0,
 	AvatarItemDisplayTemplateIDNDisplayNBackpackSvdlc10,

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSettings", split "fighting", 24 entries.
+// Generated from Pokémon GO masterfile — group "moveSettings", split "fighting", 26 entries.
 
 import type { S } from "../../_utils";
 import type { MoveSettings } from "../types";
@@ -451,6 +451,50 @@ export type MoveSettingsV0489MoveSecretSword = S<
 		}
 	>
 >;
+export type MoveSettingsVmMoveTempEvolutionMegaV0870PokemonFalinks = S<
+	MoveSettings<
+		"VM_MOVE_TEMP_EVOLUTION_MEGA_V0870_POKEMON_FALINKS",
+		{
+			accuracyChance: 1;
+			animationId: 5;
+			criticalChance: 0.25;
+			damageWindowEndMs: 1300;
+			damageWindowStartMs: 700;
+			durationMs: 1500;
+			energyDelta: -100;
+			isLocked: true;
+			movementId: "TEMP_EVOLUTION_MEGA_V0870_POKEMON_FALINKS";
+			pokemonType: "POKEMON_TYPE_FIGHTING";
+			power: 150;
+			staminaLossScalar: 0.075;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "brick_break";
+		}
+	>
+>;
+export type MoveSettingsVmMoveTempEvolutionMegaXV0150PokemonMewtwo = S<
+	MoveSettings<
+		"VM_MOVE_TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO",
+		{
+			accuracyChance: 1;
+			animationId: 5;
+			criticalChance: 0.05;
+			damageWindowEndMs: 2500;
+			damageWindowStartMs: 1000;
+			durationMs: 2500;
+			energyDelta: -100;
+			isLocked: true;
+			movementId: "TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO";
+			pokemonType: "POKEMON_TYPE_FIGHTING";
+			power: 130;
+			staminaLossScalar: 0.04;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "dynamic_punch";
+		}
+	>
+>;
 export type MoveSettingsVnBm005 = S<
 	MoveSettings<
 		"VN_BM_005",
@@ -513,5 +557,7 @@ export type MoveSettingsFightingMasterfileEntry =
 	| MoveSettingsV0462MoveForcePalmFast
 	| MoveSettingsV0471MoveUpperHand
 	| MoveSettingsV0489MoveSecretSword
+	| MoveSettingsVmMoveTempEvolutionMegaV0870PokemonFalinks
+	| MoveSettingsVmMoveTempEvolutionMegaXV0150PokemonMewtwo
 	| MoveSettingsVnBm005
 	| MoveSettingsVnBm023;

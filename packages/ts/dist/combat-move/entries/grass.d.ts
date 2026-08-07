@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatMove", split "grass", 21 entries.
+// Generated from Pokémon GO masterfile — group "combatMove", split "grass", 22 entries.
 
 import type { S } from "../../_utils";
 import type { CombatMove } from "../types";
@@ -288,6 +288,18 @@ export type CombatMoveV0492MoveDrumBeating = S<
 		}
 	>
 >;
+export type CombatMoveVmMoveTempEvolutionMegaV0652PokemonChesnaught = S<
+	CombatMove<
+		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0652_POKEMON_CHESNAUGHT",
+		{
+			energyDelta: -40;
+			power: 60;
+			type: "POKEMON_TYPE_GRASS";
+			uniqueId: "TEMP_EVOLUTION_MEGA_V0652_POKEMON_CHESNAUGHT";
+			vfxName: "seed_bomb";
+		}
+	>
+>;
 
 export type CombatMoveGrassMasterfileEntry =
 	| CombatMoveV0047MovePetalBlizzard
@@ -310,4 +322,5 @@ export type CombatMoveGrassMasterfileEntry =
 	| CombatMoveV0385MoveLeafageFast
 	| CombatMoveV0392MoveTrailblaze
 	| CombatMoveV0465MoveFlowerTrick
-	| CombatMoveV0492MoveDrumBeating;
+	| CombatMoveV0492MoveDrumBeating
+	| CombatMoveVmMoveTempEvolutionMegaV0652PokemonChesnaught;

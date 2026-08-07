@@ -189,8 +189,8 @@ pub enum MasterfileEntry {
     PokemonFamily(pokemon_family::PokemonFamilyEntry),
     EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     MoveSettings(move_settings::MoveSettingsEntry),
-    MoveSequenceSettings(move_sequence_settings::MoveSequenceSettingsEntry),
     CombatMove(combat_move::CombatMoveEntry),
+    MoveSequenceSettings(move_sequence_settings::MoveSequenceSettingsEntry),
     SettingsOverrideRule(settings_override_rule::SettingsOverrideRuleEntry),
     LocationCardSettings(location_card_settings::LocationCardSettingsEntry),
     ItemSettings(item_settings::ItemSettingsEntry),
@@ -210,8 +210,8 @@ pub enum MasterfileEntry {
     ItemExpirationSettings(item_expiration_settings::ItemExpirationSettingsEntry),
     CombatRankingProtoSettings(combat_ranking_proto_settings::CombatRankingProtoSettingsEntry),
     CombatType(combat_type::CombatTypeEntry),
-    TypeEffective(type_effective::TypeEffectiveEntry),
     FeatureGate(feature_gate::FeatureGateEntry),
+    TypeEffective(type_effective::TypeEffectiveEntry),
     IapCategoryDisplay(iap_category_display::IapCategoryDisplayEntry),
     RecommendedSearchSettings(recommended_search_settings::RecommendedSearchSettingsEntry),
     CombatNpcTrainer(combat_npc_trainer::CombatNpcTrainerEntry),
@@ -433,10 +433,10 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::EventPassTierSettings)
                 }
                 "moveSettings" => serde_json::from_value(value).map(Self::MoveSettings),
+                "combatMove" => serde_json::from_value(value).map(Self::CombatMove),
                 "moveSequenceSettings" => {
                     serde_json::from_value(value).map(Self::MoveSequenceSettings)
                 }
-                "combatMove" => serde_json::from_value(value).map(Self::CombatMove),
                 "settingsOverrideRule" => {
                     serde_json::from_value(value).map(Self::SettingsOverrideRule)
                 }
@@ -478,8 +478,8 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::CombatRankingProtoSettings)
                 }
                 "combatType" => serde_json::from_value(value).map(Self::CombatType),
-                "typeEffective" => serde_json::from_value(value).map(Self::TypeEffective),
                 "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
+                "typeEffective" => serde_json::from_value(value).map(Self::TypeEffective),
                 "iapCategoryDisplay" => serde_json::from_value(value).map(Self::IapCategoryDisplay),
                 "recommendedSearchSettings" => {
                     serde_json::from_value(value).map(Self::RecommendedSearchSettings)

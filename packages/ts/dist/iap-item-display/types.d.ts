@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1166 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1169 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -44,6 +44,7 @@ export interface IapItemDisplayData {
 		| "MAXREVIVE.3_DESCRIPTION"
 		| "pikachu_celebration_2026_deluxe_event_pass_track_unlock_description"
 		| "POSTCARD_EXPANSION_1_description"
+		| "season_pass_uu_water_festival_2026_upgrade_description"
 		| "text_rewards_key_GOWA25";
 	hidden?: boolean;
 	imageUrl?:
@@ -57,6 +58,7 @@ export interface IapItemDisplayData {
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F53190080_PGO-MCS_Flying_Taxi_TICKET_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Faab1ed22_PGO-MCS_Summer_Marathon_Fire_Ice_v3b-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fd07cba0c_PGO-MCS_GOFest_2026_GOPass_v3-16x9.jpg"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe8d77631_PGO-MCS_Water_Festival_2026_TICKET_v2-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe3025fe6_PGO-MCS_GO_Fest_2026_AMER_Global_LiveOp_v2-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FEvent%20Pass%20Placeholder.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff2c7f843_PGO-MCS_GO_Pass_July_2026_ticket_v1-1024x576_nologo.jpg"
@@ -141,6 +143,7 @@ export interface IapItemDisplayData {
 		| "2026-08-12T20:00:00"
 		| "2026-08-16T17:00:00"
 		| "2026-08-16T20:00:00"
+		| "2026-08-24T20:00:00"
 		| "2026-09-10T10:00:00";
 	skuDisableTimeUtcMs?:
 		| "1595786400000"
@@ -191,6 +194,7 @@ export interface IapItemDisplayData {
 		| "1786564800000"
 		| "1786899600000"
 		| "1786910400000"
+		| "1787601600000"
 		| "1789034400000";
 	skuEnableTime?:
 		| "2019-03-14T08:00:00"
@@ -232,6 +236,9 @@ export interface IapItemDisplayData {
 		| "2025-07-21T10:00:00"
 		| "2025-07-28T10:00:00"
 		| "2025-08-04T10:00:00"
+		| "2025-08-18T10:00:00"
+		| "2025-08-18T10:00:02"
+		| "2025-08-18T10:00:04"
 		| "2026-03-03T13:00:00"
 		| "2026-07-06T00:00:00";
 	skuEnableTimeUtcMs?:
@@ -274,6 +281,9 @@ export interface IapItemDisplayData {
 		| "1753092000000"
 		| "1753696800000"
 		| "1754301600000"
+		| "1755511200000"
+		| "1755511202000"
+		| "1755511204000"
 		| "1772542800000"
 		| "1783296000000";
 	sortOrder?: number;

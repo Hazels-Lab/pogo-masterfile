@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatMove", split "fire", 26 entries.
+// Generated from Pokémon GO masterfile — group "combatMove", split "fire", 27 entries.
 
 import type { S } from "../../_utils";
 import type { CombatMove } from "../types";
@@ -355,6 +355,22 @@ export type CombatMoveV0493MovePyroball = S<
 		}
 	>
 >;
+export type CombatMoveVmMoveTempEvolutionMegaV0655PokemonDelphox = S<
+	CombatMove<
+		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0655_POKEMON_DELPHOX",
+		{
+			buffs: {
+				buffActivationChance: 1;
+				targetAttackStatStageChange: -1;
+			};
+			energyDelta: -40;
+			power: 50;
+			type: "POKEMON_TYPE_FIRE";
+			uniqueId: "TEMP_EVOLUTION_MEGA_V0655_POKEMON_DELPHOX";
+			vfxName: "myst_fire";
+		}
+	>
+>;
 
 export type CombatMoveFireMasterfileEntry =
 	| CombatMoveV0021MoveFlameWheel
@@ -382,4 +398,5 @@ export type CombatMoveFireMasterfileEntry =
 	| CombatMoveV0386MoveMagmaStorm
 	| CombatMoveV0468MoveTorchSong
 	| CombatMoveV0491MoveMindBlown
-	| CombatMoveV0493MovePyroball;
+	| CombatMoveV0493MovePyroball
+	| CombatMoveVmMoveTempEvolutionMegaV0655PokemonDelphox;

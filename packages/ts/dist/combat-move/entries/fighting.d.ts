@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatMove", split "fighting", 22 entries.
+// Generated from Pokémon GO masterfile — group "combatMove", split "fighting", 24 entries.
 
 import type { S } from "../../_utils";
 import type { CombatMove } from "../types";
@@ -303,6 +303,34 @@ export type CombatMoveV0489MoveSecretSword = S<
 		}
 	>
 >;
+export type CombatMoveVmMoveTempEvolutionMegaV0870PokemonFalinks = S<
+	CombatMove<
+		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0870_POKEMON_FALINKS",
+		{
+			buffs: {
+				buffActivationChance: 1;
+				targetDefenseStatStageChange: -1;
+			};
+			energyDelta: -35;
+			power: 40;
+			type: "POKEMON_TYPE_FIGHTING";
+			uniqueId: "TEMP_EVOLUTION_MEGA_V0870_POKEMON_FALINKS";
+			vfxName: "brick_break";
+		}
+	>
+>;
+export type CombatMoveVmMoveTempEvolutionMegaXV0150PokemonMewtwo = S<
+	CombatMove<
+		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO",
+		{
+			energyDelta: -80;
+			power: 130;
+			type: "POKEMON_TYPE_FIGHTING";
+			uniqueId: "TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO";
+			vfxName: "dynamic_punch";
+		}
+	>
+>;
 
 export type CombatMoveFightingMasterfileEntry =
 	| CombatMoveV0028MoveCrossChop
@@ -326,4 +354,6 @@ export type CombatMoveFightingMasterfileEntry =
 	| CombatMoveV0408MoveHighJumpKick
 	| CombatMoveV0462MoveForcePalmFast
 	| CombatMoveV0471MoveUpperHand
-	| CombatMoveV0489MoveSecretSword;
+	| CombatMoveV0489MoveSecretSword
+	| CombatMoveVmMoveTempEvolutionMegaV0870PokemonFalinks
+	| CombatMoveVmMoveTempEvolutionMegaXV0150PokemonMewtwo;

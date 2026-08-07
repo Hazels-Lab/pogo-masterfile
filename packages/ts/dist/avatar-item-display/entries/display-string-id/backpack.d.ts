@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/backpack", 82 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/backpack", 83 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -570,6 +570,15 @@ export type AvatarItemDisplayNBackpackSsB0 = S<
 		}
 	>
 >;
+export type AvatarItemDisplayNBackpackStarmie = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_backpack_starmie",
+		{
+			displayStringId: "avatar_backpack_starmie";
+			iconAddress: "n_backpack_starmie_icon";
+		}
+	>
+>;
 export type AvatarItemDisplayNBackpackSvcostumescarletschool0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_backpack_svcostumescarletschool_0",
@@ -806,6 +815,7 @@ export type AvatarItemDisplayDisplayStringIdBackpackMasterfileEntry =
 	| AvatarItemDisplayNBackpackSnapcamera0
 	| AvatarItemDisplayNBackpackSsA0
 	| AvatarItemDisplayNBackpackSsB0
+	| AvatarItemDisplayNBackpackStarmie
 	| AvatarItemDisplayNBackpackSvcostumescarletschool0
 	| AvatarItemDisplayNBackpackSvcostumevioletschool0
 	| AvatarItemDisplayNBackpackSvdlc10

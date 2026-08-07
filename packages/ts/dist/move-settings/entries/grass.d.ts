@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSettings", split "grass", 26 entries.
+// Generated from Pokémon GO masterfile — group "moveSettings", split "grass", 27 entries.
 
 import type { S } from "../../_utils";
 import type { MoveSettings } from "../types";
@@ -433,6 +433,28 @@ export type MoveSettingsV0492MoveDrumBeating = S<
 		}
 	>
 >;
+export type MoveSettingsVmMoveTempEvolutionMegaV0652PokemonChesnaught = S<
+	MoveSettings<
+		"VM_MOVE_TEMP_EVOLUTION_MEGA_V0652_POKEMON_CHESNAUGHT",
+		{
+			accuracyChance: 1;
+			animationId: 5;
+			criticalChance: 0.05;
+			damageWindowEndMs: 1800;
+			damageWindowStartMs: 1100;
+			durationMs: 2000;
+			energyDelta: -100;
+			isLocked: true;
+			movementId: "TEMP_EVOLUTION_MEGA_V0652_POKEMON_CHESNAUGHT";
+			pokemonType: "POKEMON_TYPE_GRASS";
+			power: 150;
+			staminaLossScalar: 0.08;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "seed_bomb";
+		}
+	>
+>;
 export type MoveSettingsVnBm017 = S<
 	MoveSettings<
 		"VN_BM_017",
@@ -551,6 +573,7 @@ export type MoveSettingsGrassMasterfileEntry =
 	| MoveSettingsV0392MoveTrailblaze
 	| MoveSettingsV0465MoveFlowerTrick
 	| MoveSettingsV0492MoveDrumBeating
+	| MoveSettingsVmMoveTempEvolutionMegaV0652PokemonChesnaught
 	| MoveSettingsVnBm017
 	| MoveSettingsVnBm035
 	| MoveSettingsVnBm036

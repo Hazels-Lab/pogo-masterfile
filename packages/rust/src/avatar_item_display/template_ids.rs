@@ -133,6 +133,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNBackpackSsA0,
     #[serde(rename = "N_DISPLAY_n_backpack_ss_b_0")]
     NDisplayNBackpackSsB0,
+    #[serde(rename = "N_DISPLAY_n_backpack_starmie")]
+    NDisplayNBackpackStarmie,
     #[serde(rename = "N_DISPLAY_n_backpack_svcostumescarletschool_0")]
     NDisplayNBackpackSvcostumescarletschool0,
     #[serde(rename = "N_DISPLAY_n_backpack_svcostumevioletschool_0")]
