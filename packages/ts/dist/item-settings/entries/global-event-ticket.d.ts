@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 46 entries.
+// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 48 entries.
 
 import type { S } from "../../_utils";
 import type { ItemSettings } from "../types";
@@ -1299,6 +1299,70 @@ export type ItemSettingsItemEventTicketS23202610ToGift = S<
 		}
 	>
 >;
+export type ItemSettingsItemEventTicketS23202612 = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S23_2026_12",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "item_event_ticket_desc_MegaStarmieRaidDay";
+			globalEventTicket: {
+				backgroundImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg";
+				clientEventEndTimeUtcMs: "1787418000000";
+				clientEventStartTimeUtcMs: "1787396400000";
+				detailsLinkKey: "details_link_key_MegaStarmieRaidDay";
+				displayV2Enabled: true;
+				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg";
+				eventDatetimeRangeKey: "event_datetime_range_key_MegaStarmieRaidDay";
+				eventEndTime: "2026-08-22T17:00:00";
+				eventStartTime: "2026-08-22T11:00:00";
+				giftable: true;
+				giftItem: "ITEM_EVENT_TICKET_S23_2026_12_TO_GIFT";
+				iconRewards: [
+					{
+						item: {
+							amount: 8;
+							item: "ITEM_FREE_RAID_TICKET";
+						};
+						type: "ITEM";
+					},
+					{
+						item: {
+							item: "ITEM_XL_RARE_CANDY";
+						};
+						type: "ITEM";
+					},
+				];
+				itemBagDescriptionKey: "item_event_ticket_details_MegaStarmieRaidDay";
+				textRewardsKey: "text_rewards_key_StarmieRaidDay";
+			};
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general2.ticket.5_MegaStarmieRaidDay";
+		}
+	>
+>;
+export type ItemSettingsItemEventTicketS23202612ToGift = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S23_2026_12_TO_GIFT",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "item_event_ticket_desc_MegaStarmieRaidDay";
+			globalEventTicket: {
+				backgroundImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg";
+				clientEventEndTimeUtcMs: "1787418000000";
+				clientEventStartTimeUtcMs: "1787396400000";
+				displayV2Enabled: true;
+				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg";
+				eventEndTime: "2026-08-22T17:00:00";
+				eventStartTime: "2026-08-22T11:00:00";
+				itemBagDescriptionKey: "item_event_ticket_details_MegaStarmieRaidDay";
+				ticketItem: "ITEM_EVENT_TICKET_S23_2026_12";
+			};
+			ignoreInventorySpace: true;
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general2.ticket.5_MegaStarmieRaidDay";
+		}
+	>
+>;
 export type ItemSettingsItemEvergreenTicket = S<
 	ItemSettings<
 		"ITEM_EVERGREEN_TICKET",
@@ -1548,6 +1612,8 @@ export type ItemSettingsGlobalEventTicketMasterfileEntry =
 	| ItemSettingsItemEventTicketS23202609
 	| ItemSettingsItemEventTicketS23202610
 	| ItemSettingsItemEventTicketS23202610ToGift
+	| ItemSettingsItemEventTicketS23202612
+	| ItemSettingsItemEventTicketS23202612ToGift
 	| ItemSettingsItemEvergreenTicket
 	| ItemSettingsItemEvergreenTicketToGift
 	| ItemSettingsItemGlobalEventTicket

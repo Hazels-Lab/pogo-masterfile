@@ -44,16 +44,9 @@ pub struct PlayerAttribute {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct LocationCard {
-    pub location_card: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
 pub struct PokemonDisplay {
     pub bread_mode_enum: Option<String>,
     pub form: String,
-    pub location_card: Option<LocationCard>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -79,7 +72,6 @@ pub struct Rewards {
     pub exp: Option<u64>,
     pub item: Option<Item>,
     pub player_attribute: Option<PlayerAttribute>,
-    pub pokecoin: Option<u64>,
     pub pokemon_encounter: Option<PokemonEncounter>,
     pub stardust: Option<u64>,
     pub r#type: String,

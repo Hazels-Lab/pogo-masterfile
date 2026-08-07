@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", split "event-pass-point", 17 entries.
+// Generated from Pokémon GO masterfile — group "itemSettings", split "event-pass-point", 18 entries.
 
 import type { S } from "../../_utils";
 import type { ItemSettings } from "../types";
@@ -274,6 +274,27 @@ export type ItemSettingsItemEventPassPointLiveOps09 = S<
 		}
 	>
 >;
+export type ItemSettingsItemEventPassPointLiveOps10 = S<
+	ItemSettings<
+		"ITEM_EVENT_PASS_POINT_LIVE_OPS_10",
+		{
+			category: "ITEM_CATEGORY_EVENT_PASS_POINT";
+			eventPassPoint: {
+				eventPassId: "EVENT_PASS_UU_WATER_FESTIVAL_2026_EVENT";
+			};
+			hideItemInInventory: true;
+			ignoreInventorySpace: true;
+			itemCap: 999999;
+			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
+			nameOverride: "ITEM_EVENT_PASS_POINT_GO_TOUR_01_name";
+			timePeriodCounters: {
+				playerActivity: {
+					limit: 300;
+				};
+			};
+		}
+	>
+>;
 export type ItemSettingsItemEventPassPointMonthly01 = S<
 	ItemSettings<
 		"ITEM_EVENT_PASS_POINT_MONTHLY_01",
@@ -308,7 +329,7 @@ export type ItemSettingsItemEventPassPointMonthly02 = S<
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
-					limit: 250;
+					limit: 300;
 				};
 			};
 		}
@@ -350,6 +371,7 @@ export type ItemSettingsEventPassPointMasterfileEntry =
 	| ItemSettingsItemEventPassPointLiveOps07
 	| ItemSettingsItemEventPassPointLiveOps08
 	| ItemSettingsItemEventPassPointLiveOps09
+	| ItemSettingsItemEventPassPointLiveOps10
 	| ItemSettingsItemEventPassPointMonthly01
 	| ItemSettingsItemEventPassPointMonthly02
 	| ItemSettingsItemEventPassPointMonthly03;

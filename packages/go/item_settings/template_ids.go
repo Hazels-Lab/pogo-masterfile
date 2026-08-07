@@ -31,6 +31,7 @@ const (
 	ItemSettingsTemplateIDItemEventPassPointLiveOps07       ItemSettingsTemplateID = "ITEM_EVENT_PASS_POINT_LIVE_OPS_07"
 	ItemSettingsTemplateIDItemEventPassPointLiveOps08       ItemSettingsTemplateID = "ITEM_EVENT_PASS_POINT_LIVE_OPS_08"
 	ItemSettingsTemplateIDItemEventPassPointLiveOps09       ItemSettingsTemplateID = "ITEM_EVENT_PASS_POINT_LIVE_OPS_09"
+	ItemSettingsTemplateIDItemEventPassPointLiveOps10       ItemSettingsTemplateID = "ITEM_EVENT_PASS_POINT_LIVE_OPS_10"
 	ItemSettingsTemplateIDItemEventPassPointMonthly01       ItemSettingsTemplateID = "ITEM_EVENT_PASS_POINT_MONTHLY_01"
 	ItemSettingsTemplateIDItemEventPassPointMonthly02       ItemSettingsTemplateID = "ITEM_EVENT_PASS_POINT_MONTHLY_02"
 	ItemSettingsTemplateIDItemEventPassPointMonthly03       ItemSettingsTemplateID = "ITEM_EVENT_PASS_POINT_MONTHLY_03"
@@ -71,6 +72,8 @@ const (
 	ItemSettingsTemplateIDItemEventTicketS23202609          ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_09"
 	ItemSettingsTemplateIDItemEventTicketS23202610          ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_10"
 	ItemSettingsTemplateIDItemEventTicketS23202610ToGift    ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_10_TO_GIFT"
+	ItemSettingsTemplateIDItemEventTicketS23202612          ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_12"
+	ItemSettingsTemplateIDItemEventTicketS23202612ToGift    ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_12_TO_GIFT"
 	ItemSettingsTemplateIDItemEvergreenTicket               ItemSettingsTemplateID = "ITEM_EVERGREEN_TICKET"
 	ItemSettingsTemplateIDItemEvergreenTicketToGift         ItemSettingsTemplateID = "ITEM_EVERGREEN_TICKET_TO_GIFT"
 	ItemSettingsTemplateIDItemFreeRaidTicket                ItemSettingsTemplateID = "ITEM_FREE_RAID_TICKET"
@@ -193,6 +196,7 @@ var ItemSettingsTemplateIDValues = [...]ItemSettingsTemplateID{
 	ItemSettingsTemplateIDItemEventPassPointLiveOps07,
 	ItemSettingsTemplateIDItemEventPassPointLiveOps08,
 	ItemSettingsTemplateIDItemEventPassPointLiveOps09,
+	ItemSettingsTemplateIDItemEventPassPointLiveOps10,
 	ItemSettingsTemplateIDItemEventPassPointMonthly01,
 	ItemSettingsTemplateIDItemEventPassPointMonthly02,
 	ItemSettingsTemplateIDItemEventPassPointMonthly03,
@@ -233,6 +237,8 @@ var ItemSettingsTemplateIDValues = [...]ItemSettingsTemplateID{
 	ItemSettingsTemplateIDItemEventTicketS23202609,
 	ItemSettingsTemplateIDItemEventTicketS23202610,
 	ItemSettingsTemplateIDItemEventTicketS23202610ToGift,
+	ItemSettingsTemplateIDItemEventTicketS23202612,
+	ItemSettingsTemplateIDItemEventTicketS23202612ToGift,
 	ItemSettingsTemplateIDItemEvergreenTicket,
 	ItemSettingsTemplateIDItemEvergreenTicketToGift,
 	ItemSettingsTemplateIDItemFreeRaidTicket,

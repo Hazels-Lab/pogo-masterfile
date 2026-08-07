@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", 159 entries (structural types).
+// Generated from Pokémon GO masterfile — group "itemSettings", 162 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -54,6 +54,7 @@ export interface ItemSettingsData {
 		| "item_event_ticket_07_details_masterball25"
 		| "ITEM_EVENT_TICKET_09_desc_fashionRaidDay26"
 		| "ITEM_EVENT_TICKET_09_details_fashionRaidDay26"
+		| "item_event_ticket_desc_MegaStarmieRaidDay"
 		| "item_event_ticket_evergreen_desc_10THPARTY0726"
 		| "item_event_ticket_evergreen_desc_IntoTDepths26"
 		| "item_event_ticket_evergreen_desc_PawPrint_20250620"
@@ -104,7 +105,8 @@ export interface ItemSettingsData {
 			| "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT"
 			| "EVENT_PASS_SPRINGMARATHON2026_EVENT"
 			| "EVENT_PASS_STEELEDRESOLVE2026_EVENT"
-			| "EVENT_PASS_SUMMER_MARATHON_2026_EVENT";
+			| "EVENT_PASS_SUMMER_MARATHON_2026_EVENT"
+			| "EVENT_PASS_UU_WATER_FESTIVAL_2026_EVENT";
 	};
 	food?: {
 		berryMultiplier?: number;
@@ -128,6 +130,7 @@ export interface ItemSettingsData {
 		backgroundImageUrl?:
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F0ba8ff0a_20260508_pgo_s23_megarayquaza_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F97c2eaee_PGO-MCS_Raichu_Super_Mega_Raid_Day_v3-1024x576-nologo.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512_logoless.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO_MCS_CD_KeyArt_Frigibax_v1-1024x576-nologo.jpg"
@@ -174,7 +177,8 @@ export interface ItemSettingsData {
 			| "1785096000000"
 			| "1785182400000"
 			| "1785603600000"
-			| "1786899600000";
+			| "1786899600000"
+			| "1787418000000";
 		clientEventStartTimeUtcMs:
 			| "1696845600000"
 			| "1697364000000"
@@ -202,7 +206,8 @@ export interface ItemSettingsData {
 			| "1784628000000"
 			| "1784973600000"
 			| "1785592800000"
-			| "1786888800000";
+			| "1786888800000"
+			| "1787396400000";
 		conflictStoryQuestIds?: ["RERUN_MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER", "MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER"];
 		detailsLinkKey?:
 			| "details_link_key"
@@ -212,6 +217,7 @@ export interface ItemSettingsData {
 			| "details_link_key_mega_falinks_raid_day"
 			| "details_link_key_mega_skarmory_raid_day"
 			| "details_link_key_MegaRaichuRaidDay"
+			| "details_link_key_MegaStarmieRaidDay"
 			| "details_link_key_ORICORIO_MASTERY_FEB2026"
 			| "details_link_key_REPLAY_GO_BIGGER_MAX_BATTLE"
 			| "details_link_key_Riolu_Hatch0426"
@@ -223,6 +229,7 @@ export interface ItemSettingsData {
 		eventBannerUrl?:
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F0ba8ff0a_20260508_pgo_s23_megarayquaza_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F97c2eaee_PGO-MCS_Raichu_Super_Mega_Raid_Day_v3-1024x576-nologo.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO_MCS_CD_KeyArt_Frigibax_v1-1024x576-nologo.jpg"
@@ -260,6 +267,7 @@ export interface ItemSettingsData {
 			| "event_datetime_range_key_MegaRaichuRaidDay"
 			| "event_datetime_range_key_MegaRayquaza26"
 			| "event_datetime_range_key_MegaSkarmoryRaidDay"
+			| "event_datetime_range_key_MegaStarmieRaidDay"
 			| "event_datetime_range_key_PawPrint_20250620"
 			| "event_datetime_range_key_REPLAY_GO_BIGGER"
 			| "event_datetime_range_key_Riolu0426"
@@ -292,7 +300,8 @@ export interface ItemSettingsData {
 			| "2026-07-26T20:00:00"
 			| "2026-07-27T20:00:00"
 			| "2026-08-01T17:00:00"
-			| "2026-08-16T17:00:00";
+			| "2026-08-16T17:00:00"
+			| "2026-08-22T17:00:00";
 		eventStartTime:
 			| "2023-10-09T10:00:00"
 			| "2023-10-15T10:00:00"
@@ -320,7 +329,8 @@ export interface ItemSettingsData {
 			| "2026-07-21T10:00:00"
 			| "2026-07-25T10:00:00"
 			| "2026-08-01T14:00:00"
-			| "2026-08-16T14:00:00";
+			| "2026-08-16T14:00:00"
+			| "2026-08-22T11:00:00";
 		giftable?: boolean;
 		giftItem?:
 			| "ITEM_EVENT_TICKET_02_TO_GIFT"
@@ -343,6 +353,7 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S23_2026_08_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S23_2026_09_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S23_2026_10_TO_GIFT"
+			| "ITEM_EVENT_TICKET_S23_2026_12_TO_GIFT"
 			| "ITEM_EVERGREEN_TICKET_TO_GIFT"
 			| "ITEM_GLOBAL_EVENT_TICKET_TO_GIFT";
 		grantBadgeBeforeEventStartMs?: "1769904000000";
@@ -427,6 +438,7 @@ export interface ItemSettingsData {
 			| "item_event_ticket_07_details_masterball25"
 			| "ITEM_EVENT_TICKET_09_desc_fashionRaidDay26"
 			| "ITEM_EVENT_TICKET_09_details_fashionRaidDay26"
+			| "item_event_ticket_details_MegaStarmieRaidDay"
 			| "item_event_ticket_evergreen_desc_10THPARTY0726"
 			| "item_event_ticket_evergreen_desc_GOWA2024GSBEA"
 			| "item_event_ticket_evergreen_desc_IntoTDepths26"
@@ -474,6 +486,7 @@ export interface ItemSettingsData {
 			| "text_rewards_key_REPLAY_GO_BIGGER"
 			| "text_rewards_key_Riolu0426"
 			| "text_rewards_key_shayminmasterworkrerun"
+			| "text_rewards_key_StarmieRaidDay"
 			| "text_rewards_key_WaterRRD26";
 		ticketItem?:
 			| "ITEM_EVENT_TICKET_02"
@@ -493,6 +506,7 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S23_2026_07"
 			| "ITEM_EVENT_TICKET_S23_2026_08"
 			| "ITEM_EVENT_TICKET_S23_2026_10"
+			| "ITEM_EVENT_TICKET_S23_2026_12"
 			| "ITEM_EVERGREEN_TICKET"
 			| "ITEM_GLOBAL_EVENT_TICKET";
 		titleImageUrl?: "https://storage.googleapis.com/prod-public-images/gotourlogo_1914247967.png";
@@ -562,6 +576,7 @@ export interface ItemSettingsData {
 		| "general2.ticket.5_MegaFalinksRaidDay"
 		| "general2.ticket.5_MegaRaichuRaidDay"
 		| "general2.ticket.5_MegaSkarmoryRaidDay"
+		| "general2.ticket.5_MegaStarmieRaidDay"
 		| "general2.ticket.5_shayminmasterworkrerun"
 		| "general2.ticket.6.REPLAY_GO_BIGGER"
 		| "general2.ticket.7_masterball25_title"
