@@ -44,7 +44,6 @@ export interface IapItemDisplayData {
 		| "MAXREVIVE.3_DESCRIPTION"
 		| "pikachu_celebration_2026_deluxe_event_pass_track_unlock_description"
 		| "POSTCARD_EXPANSION_1_description"
-		| "season_pass_uu_water_festival_2026_upgrade_description"
 		| "text_rewards_key_GOWA25";
 	hidden?: boolean;
 	imageUrl?:
@@ -143,7 +142,7 @@ export interface IapItemDisplayData {
 		| "2026-08-12T20:00:00"
 		| "2026-08-16T17:00:00"
 		| "2026-08-16T20:00:00"
-		| "2026-08-24T20:00:00"
+		| "2026-08-26T20:00:00"
 		| "2026-09-10T10:00:00";
 	skuDisableTimeUtcMs?:
 		| "1595786400000"
@@ -194,7 +193,7 @@ export interface IapItemDisplayData {
 		| "1786564800000"
 		| "1786899600000"
 		| "1786910400000"
-		| "1787601600000"
+		| "1787774400000"
 		| "1789034400000";
 	skuEnableTime?:
 		| "2019-03-14T08:00:00"

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "misc", 349 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "misc", 350 entries.
 
 import type { S } from "../../_utils";
 import type { AvatarItemDisplay } from "../types";
@@ -2763,6 +2763,14 @@ export type AvatarItemDisplaySetWcs2025winnersitems0 = S<
 		}
 	>
 >;
+export type AvatarItemDisplaySetWcs2026winnersitems = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_set_wcs2026winnersitems",
+		{
+			iconAddress: "set_wcs2026winnersitems";
+		}
+	>
+>;
 export type AvatarItemDisplaySetWillow = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_set_willow",
@@ -3142,6 +3150,7 @@ export type AvatarItemDisplayMiscMasterfileEntry =
 	| AvatarItemDisplaySetWcs2024paiditems0
 	| AvatarItemDisplaySetWcs2024winnersitems0
 	| AvatarItemDisplaySetWcs2025winnersitems0
+	| AvatarItemDisplaySetWcs2026winnersitems
 	| AvatarItemDisplaySetWillow
 	| AvatarItemDisplaySetWinter2023
 	| AvatarItemDisplaySetZacostumeA

@@ -24,7 +24,7 @@ export type ItemSettingsItemEventPassPointGoFest02 = S<
 		{
 			category: "ITEM_CATEGORY_EVENT_PASS_POINT";
 			eventPassPoint: {
-				eventPassId: "EVENT_PASS_GOFEST2025_MAXFINALE";
+				eventPassId: "EVENT_PASS_GOFEST2026_FINALE";
 			};
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
@@ -267,9 +267,7 @@ export type ItemSettingsItemEventPassPointLiveOps09 = S<
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			nameOverride: "ITEM_EVENT_PASS_POINT_GO_TOUR_01_name";
 			timePeriodCounters: {
-				playerActivity: {
-					limit: 500;
-				};
+				playerActivity: object;
 			};
 		}
 	>
@@ -286,6 +284,7 @@ export type ItemSettingsItemEventPassPointLiveOps10 = S<
 			ignoreInventorySpace: true;
 			itemCap: 999999;
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
+			nameOverride: "ITEM_EVENT_PASS_POINT_GO_TOUR_01_name";
 			timePeriodCounters: {
 				playerActivity: {
 					limit: 500;

@@ -1293,6 +1293,8 @@ pub enum BadgeSettingsTemplateId {
     BadgeGofest2026TokyoWednesdayCity,
     #[serde(rename = "BADGE_GOFEST_2026_TOKYO_WEDNESDAY_ESSENTIAL")]
     BadgeGofest2026TokyoWednesdayEssential,
+    #[serde(rename = "BADGE_GOFEST_FINALE_2026_EVENT_PASS_DELUXE")]
+    BadgeGofestFinale2026EventPassDeluxe,
     #[serde(rename = "BADGE_GOTOUR_2021_GREEN_GLOBAL")]
     BadgeGotour2021GreenGlobal,
     #[serde(rename = "BADGE_GOTOUR_2021_GREEN_TEST")]

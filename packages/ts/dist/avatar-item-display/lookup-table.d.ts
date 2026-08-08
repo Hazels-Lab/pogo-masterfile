@@ -81,6 +81,7 @@ import type {
 	AvatarItemDisplayNBackpackUltraB0,
 	AvatarItemDisplayNBackpackUnequip0,
 	AvatarItemDisplayNBackpackVerizon20210,
+	AvatarItemDisplayNBackpackWcspxp2026,
 	AvatarItemDisplayNBackpackWhitekyuremitem0,
 	AvatarItemDisplayNBackpackWillow,
 	AvatarItemDisplayNBackpackZubatbp0,
@@ -211,6 +212,7 @@ import type {
 	AvatarItemDisplayNGlovesTeamwristband3,
 	AvatarItemDisplayNGlovesTeamyellgrunts0,
 	AvatarItemDisplayNGlovesUnequip0,
+	AvatarItemDisplayNGlovesWcs2026winnersitems,
 	AvatarItemDisplayNGlovesWillow,
 	AvatarItemDisplayNGlovesWintergloves20230,
 	AvatarItemDisplayNGradientEye0,
@@ -503,6 +505,7 @@ import type {
 	AvatarItemDisplayNHatWcs2022winnersitems0,
 	AvatarItemDisplayNHatWcs2024paiditems0,
 	AvatarItemDisplayNHatWcs2025winnersitems0,
+	AvatarItemDisplayNHatWcs2026winnersitems,
 	AvatarItemDisplayNHatWcs20250,
 	AvatarItemDisplayNHatWhimsicottearmuff0,
 	AvatarItemDisplayNHatWillowglasses0,
@@ -677,6 +680,7 @@ import type {
 	AvatarItemDisplayNPantsWcs2022winnersitems0,
 	AvatarItemDisplayNPantsWcs2024winnersitems0,
 	AvatarItemDisplayNPantsWcs2025winnersitems0,
+	AvatarItemDisplayNPantsWcs2026winnersitems,
 	AvatarItemDisplayNPantsWillow,
 	AvatarItemDisplayNPose001,
 	AvatarItemDisplayNPose002,
@@ -1215,6 +1219,9 @@ import type {
 	AvatarItemDisplayNShirtWcs2025paiditems0,
 	AvatarItemDisplayNShirtWcs2025winnersitems0,
 	AvatarItemDisplayNShirtWcs2026,
+	AvatarItemDisplayNShirtWcs2026sfGreen,
+	AvatarItemDisplayNShirtWcs2026sfRed,
+	AvatarItemDisplayNShirtWcs2026winnersitems,
 	AvatarItemDisplayNShirtWcs2027,
 	AvatarItemDisplayNShirtWcs20220,
 	AvatarItemDisplayNShirtWcs20230,
@@ -1382,6 +1389,7 @@ import type {
 	AvatarItemDisplayNShoesWcs2022winnersitems0,
 	AvatarItemDisplayNShoesWcs2023winnersitems0,
 	AvatarItemDisplayNShoesWcs2024winnersitems0,
+	AvatarItemDisplayNShoesWcs2026winnersitems,
 	AvatarItemDisplayNShoesWillow,
 	AvatarItemDisplayNShoesWinterboots0,
 	AvatarItemDisplayNShoesWinterboots1,
@@ -1672,6 +1680,7 @@ import type {
 	AvatarItemDisplaySetWcs2024paiditems0,
 	AvatarItemDisplaySetWcs2024winnersitems0,
 	AvatarItemDisplaySetWcs2025winnersitems0,
+	AvatarItemDisplaySetWcs2026winnersitems,
 	AvatarItemDisplaySetWillow,
 	AvatarItemDisplaySetWinter2023,
 	AvatarItemDisplaySetZacostumeA,
@@ -1759,6 +1768,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_backpack_ultra_b_0: AvatarItemDisplayNBackpackUltraB0;
 	N_DISPLAY_n_backpack_unequip_0: AvatarItemDisplayNBackpackUnequip0;
 	N_DISPLAY_n_backpack_verizon2021_0: AvatarItemDisplayNBackpackVerizon20210;
+	N_DISPLAY_n_backpack_wcspxp2026: AvatarItemDisplayNBackpackWcspxp2026;
 	N_DISPLAY_n_backpack_whitekyuremitem_0: AvatarItemDisplayNBackpackWhitekyuremitem0;
 	N_DISPLAY_n_backpack_willow: AvatarItemDisplayNBackpackWillow;
 	N_DISPLAY_n_backpack_zubatbp_0: AvatarItemDisplayNBackpackZubatbp0;
@@ -1889,6 +1899,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_gloves_teamwristband_3: AvatarItemDisplayNGlovesTeamwristband3;
 	N_DISPLAY_n_gloves_teamyellgrunts_0: AvatarItemDisplayNGlovesTeamyellgrunts0;
 	N_DISPLAY_n_gloves_unequip_0: AvatarItemDisplayNGlovesUnequip0;
+	N_DISPLAY_n_gloves_wcs2026winnersitems: AvatarItemDisplayNGlovesWcs2026winnersitems;
 	N_DISPLAY_n_gloves_willow: AvatarItemDisplayNGlovesWillow;
 	N_DISPLAY_n_gloves_wintergloves2023_0: AvatarItemDisplayNGlovesWintergloves20230;
 	N_DISPLAY_n_gradient_eye_0: AvatarItemDisplayNGradientEye0;
@@ -2182,6 +2193,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_hat_wcs2024paiditems_0: AvatarItemDisplayNHatWcs2024paiditems0;
 	N_DISPLAY_n_hat_wcs2025_0: AvatarItemDisplayNHatWcs20250;
 	N_DISPLAY_n_hat_wcs2025winnersitems_0: AvatarItemDisplayNHatWcs2025winnersitems0;
+	N_DISPLAY_n_hat_wcs2026winnersitems: AvatarItemDisplayNHatWcs2026winnersitems;
 	N_DISPLAY_n_hat_whimsicottearmuff_0: AvatarItemDisplayNHatWhimsicottearmuff0;
 	N_DISPLAY_n_hat_willowglasses_0: AvatarItemDisplayNHatWillowglasses0;
 	N_DISPLAY_n_hat_woobatearrings_0: AvatarItemDisplayNHatWoobatearrings0;
@@ -2355,6 +2367,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_pants_wcs2022winnersitems_0: AvatarItemDisplayNPantsWcs2022winnersitems0;
 	N_DISPLAY_n_pants_wcs2024winnersitems_0: AvatarItemDisplayNPantsWcs2024winnersitems0;
 	N_DISPLAY_n_pants_wcs2025winnersitems_0: AvatarItemDisplayNPantsWcs2025winnersitems0;
+	N_DISPLAY_n_pants_wcs2026winnersitems: AvatarItemDisplayNPantsWcs2026winnersitems;
 	N_DISPLAY_n_pants_willow: AvatarItemDisplayNPantsWillow;
 	N_DISPLAY_n_pose_001: AvatarItemDisplayNPose001;
 	N_DISPLAY_n_pose_002: AvatarItemDisplayNPose002;
@@ -2897,6 +2910,9 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_wcs2025paiditems_0: AvatarItemDisplayNShirtWcs2025paiditems0;
 	N_DISPLAY_n_shirt_wcs2025winnersitems_0: AvatarItemDisplayNShirtWcs2025winnersitems0;
 	N_DISPLAY_n_shirt_wcs2026: AvatarItemDisplayNShirtWcs2026;
+	"N_DISPLAY_n_shirt_wcs2026sf-green": AvatarItemDisplayNShirtWcs2026sfGreen;
+	"N_DISPLAY_n_shirt_wcs2026sf-red": AvatarItemDisplayNShirtWcs2026sfRed;
+	N_DISPLAY_n_shirt_wcs2026winnersitems: AvatarItemDisplayNShirtWcs2026winnersitems;
 	N_DISPLAY_n_shirt_wcs2027: AvatarItemDisplayNShirtWcs2027;
 	N_DISPLAY_n_shirt_wcsyokohama_0: AvatarItemDisplayNShirtWcsyokohama0;
 	N_DISPLAY_n_shirt_whitecoat_0: AvatarItemDisplayNShirtWhitecoat0;
@@ -3060,6 +3076,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shoes_wcs2022winnersitems_0: AvatarItemDisplayNShoesWcs2022winnersitems0;
 	N_DISPLAY_n_shoes_wcs2023winnersitems_0: AvatarItemDisplayNShoesWcs2023winnersitems0;
 	N_DISPLAY_n_shoes_wcs2024winnersitems_0: AvatarItemDisplayNShoesWcs2024winnersitems0;
+	N_DISPLAY_n_shoes_wcs2026winnersitems: AvatarItemDisplayNShoesWcs2026winnersitems;
 	N_DISPLAY_n_shoes_willow: AvatarItemDisplayNShoesWillow;
 	N_DISPLAY_n_shoes_winterboots_0: AvatarItemDisplayNShoesWinterboots0;
 	N_DISPLAY_n_shoes_winterboots_1: AvatarItemDisplayNShoesWinterboots1;
@@ -3350,6 +3367,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_set_wcs2024paiditems_0: AvatarItemDisplaySetWcs2024paiditems0;
 	N_DISPLAY_set_wcs2024winnersitems_0: AvatarItemDisplaySetWcs2024winnersitems0;
 	N_DISPLAY_set_wcs2025winnersitems_0: AvatarItemDisplaySetWcs2025winnersitems0;
+	N_DISPLAY_set_wcs2026winnersitems: AvatarItemDisplaySetWcs2026winnersitems;
 	N_DISPLAY_set_willow: AvatarItemDisplaySetWillow;
 	N_DISPLAY_set_winter2023: AvatarItemDisplaySetWinter2023;
 	N_DISPLAY_set_zacostume_a: AvatarItemDisplaySetZacostumeA;

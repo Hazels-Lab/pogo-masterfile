@@ -576,6 +576,7 @@ import type {
 	BadgeSettingsGofest2026TokyoVip,
 	BadgeSettingsGofest2026TokyoWednesdayCity,
 	BadgeSettingsGofest2026TokyoWednesdayEssential,
+	BadgeSettingsGofestFinale2026EventPassDeluxe,
 	BadgeSettingsGoTour2025GlobalBlackVersion,
 	BadgeSettingsGoTour2025GlobalWhiteVersion,
 	BadgeSettingsGoTour2025LosAngelesAddOnHatch,
@@ -1646,6 +1647,7 @@ export interface BadgeSettingsLookup {
 	BADGE_GOFEST_2026_TOKYO_VIP: BadgeSettingsGofest2026TokyoVip;
 	BADGE_GOFEST_2026_TOKYO_WEDNESDAY_CITY: BadgeSettingsGofest2026TokyoWednesdayCity;
 	BADGE_GOFEST_2026_TOKYO_WEDNESDAY_ESSENTIAL: BadgeSettingsGofest2026TokyoWednesdayEssential;
+	BADGE_GOFEST_FINALE_2026_EVENT_PASS_DELUXE: BadgeSettingsGofestFinale2026EventPassDeluxe;
 	BADGE_GOTOUR_2021_GREEN_GLOBAL: BadgeSettingsGotour2021GreenGlobal;
 	BADGE_GOTOUR_2021_GREEN_TEST: BadgeSettingsGotour2021GreenTest;
 	BADGE_GOTOUR_2021_RED_GLOBAL: BadgeSettingsGotour2021RedGlobal;

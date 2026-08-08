@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/hat", 221 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/hat", 222 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -1893,6 +1893,15 @@ export type AvatarItemDisplayNHatWcs2025winnersitems0 = S<
 		}
 	>
 >;
+export type AvatarItemDisplayNHatWcs2026winnersitems = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_hat_wcs2026winnersitems",
+		{
+			displayStringId: "avatar_hat_wcs2026champion";
+			iconAddress: "n_hat_wcs2026winnersitems_icon";
+		}
+	>
+>;
 export type AvatarItemDisplayNHatWhimsicottearmuff0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_hat_whimsicottearmuff_0",
@@ -2204,6 +2213,7 @@ export type AvatarItemDisplayDisplayStringIdHatMasterfileEntry =
 	| AvatarItemDisplayNHatWcs2024paiditems0
 	| AvatarItemDisplayNHatWcs20250
 	| AvatarItemDisplayNHatWcs2025winnersitems0
+	| AvatarItemDisplayNHatWcs2026winnersitems
 	| AvatarItemDisplayNHatWhimsicottearmuff0
 	| AvatarItemDisplayNHatWillowglasses0
 	| AvatarItemDisplayNHatWoobatearrings0

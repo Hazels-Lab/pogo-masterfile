@@ -12,6 +12,13 @@ pub struct EventBadge {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(untagged)]
+pub enum BadgeTypeValue {
+    Uint(u64),
+    String(String),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct EventBadgeSettings {
     pub ob_event_badge_settings_number6: u64,
@@ -21,7 +28,7 @@ pub struct EventBadgeSettings {
 #[serde(rename_all = "camelCase")]
 pub struct EventBadgeEventBadgeSettings {
     pub badge_rank: u64,
-    pub badge_type: String,
+    pub badge_type: BadgeTypeValue,
     pub event_badge: bool,
     pub event_badge_settings: EventBadgeSettings,
     pub targets: [u64; 1],

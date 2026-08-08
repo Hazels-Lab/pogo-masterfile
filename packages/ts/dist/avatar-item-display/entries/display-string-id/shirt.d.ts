@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shirt", 455 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shirt", 458 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -3990,6 +3990,33 @@ export type AvatarItemDisplayNShirtWcs2026 = S<
 		}
 	>
 >;
+export type AvatarItemDisplayNShirtWcs2026sfGreen = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_wcs2026sf-green",
+		{
+			displayStringId: "avatar_shirt_wcs2026green";
+			iconAddress: "n_shirt_wcs2026sf-green_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtWcs2026sfRed = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_wcs2026sf-red",
+		{
+			displayStringId: "avatar_shirt_wcs2026red";
+			iconAddress: "n_shirt_wcs2026sf-red_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtWcs2026winnersitems = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_wcs2026winnersitems",
+		{
+			displayStringId: "avatar_shirt_wcs2026champion";
+			iconAddress: "n_shirt_wcs2026winnersitems_icon";
+		}
+	>
+>;
 export type AvatarItemDisplayNShirtWcs2027 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_shirt_wcs2027",
@@ -4543,6 +4570,9 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirtWcs2025paiditems0
 	| AvatarItemDisplayNShirtWcs2025winnersitems0
 	| AvatarItemDisplayNShirtWcs2026
+	| AvatarItemDisplayNShirtWcs2026sfGreen
+	| AvatarItemDisplayNShirtWcs2026sfRed
+	| AvatarItemDisplayNShirtWcs2026winnersitems
 	| AvatarItemDisplayNShirtWcs2027
 	| AvatarItemDisplayNShirtWcsyokohama0
 	| AvatarItemDisplayNShirtWhitecoat0

@@ -1237,7 +1237,7 @@ export type ItemSettingsItemEventTicketS23202610 = S<
 				backgroundImageUrl: "https://storage.googleapis.com/prod-public-images/pink-ticket-generic1024x512.jpg";
 				clientEventEndTimeUtcMs: "1786899600000";
 				clientEventStartTimeUtcMs: "1786888800000";
-				detailsLinkKey: "details_link_key";
+				detailsLinkKey: "nickit_website_link";
 				displayV2Enabled: true;
 				eventBannerUrl: "https://storage.googleapis.com/prod-public-images/1024x512.jpg";
 				eventDatetimeRangeKey: "event_datetime_range_key_CD_Nickit26";
@@ -1312,7 +1312,6 @@ export type ItemSettingsItemEventTicketS23202612 = S<
 				detailsLinkKey: "details_link_key_MegaStarmieRaidDay";
 				displayV2Enabled: true;
 				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg";
-				eventDatetimeRangeKey: "event_datetime_range_key_MegaStarmieRaidDay";
 				eventEndTime: "2026-08-22T17:00:00";
 				eventStartTime: "2026-08-22T11:00:00";
 				giftable: true;
