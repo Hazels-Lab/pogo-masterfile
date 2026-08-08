@@ -96,7 +96,7 @@ export interface ItemSettingsData {
 			| "EVENT_PASS_EMEA2026_EVENT"
 			| "EVENT_PASS_FLYINGTAXI2026_EVENT"
 			| "EVENT_PASS_GOFEST2025_GLOBAL"
-			| "EVENT_PASS_GOFEST2025_MAXFINALE"
+			| "EVENT_PASS_GOFEST2026_FINALE"
 			| "EVENT_PASS_GOTOUR2026_GLOBAL"
 			| "EVENT_PASS_GOTOUR2026_IRL"
 			| "EVENT_PASS_GOWA_2025"
@@ -223,7 +223,8 @@ export interface ItemSettingsData {
 			| "details_link_key_Riolu_Hatch0426"
 			| "details_link_key_shayminmasterworkrerun"
 			| "item_event_ticket_evergreen_details_PawPrint_20250620"
-			| "item_global_event_ticket_details_GOTour2026";
+			| "item_global_event_ticket_details_GOTour2026"
+			| "nickit_website_link";
 		displayV2Enabled?: boolean;
 		eventBadge?: "BADGE_GO_TOUR_2026_GLOBAL";
 		eventBannerUrl?:
@@ -267,7 +268,6 @@ export interface ItemSettingsData {
 			| "event_datetime_range_key_MegaRaichuRaidDay"
 			| "event_datetime_range_key_MegaRayquaza26"
 			| "event_datetime_range_key_MegaSkarmoryRaidDay"
-			| "event_datetime_range_key_MegaStarmieRaidDay"
 			| "event_datetime_range_key_PawPrint_20250620"
 			| "event_datetime_range_key_REPLAY_GO_BIGGER"
 			| "event_datetime_range_key_Riolu0426"
@@ -604,7 +604,7 @@ export interface ItemSettingsData {
 	};
 	timePeriodCounters?: {
 		playerActivity: {
-			limit: number;
+			limit?: number;
 		};
 	};
 	xpBoost?: {

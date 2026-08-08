@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "badgeSettings", split "event-badge-event-badge-settings", 123 entries.
+// Generated from Pokémon GO masterfile — group "badgeSettings", split "event-badge-event-badge-settings", 124 entries.
 
 import type { S } from "../../_utils";
 import type { BadgeSettings } from "../types";
@@ -8,6 +8,7 @@ export type BadgeSettingsBestFriendsPlusEligible = S<
 		"BADGE_BEST_FRIENDS_PLUS_ELIGIBLE",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_BEST_FRIENDS_PLUS_ELIGIBLE";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -21,6 +22,7 @@ export type BadgeSettingsEvent0103 = S<
 		"BADGE_EVENT_0103",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0103";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -34,6 +36,7 @@ export type BadgeSettingsEvent0105 = S<
 		"BADGE_EVENT_0105",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0105";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -47,6 +50,7 @@ export type BadgeSettingsEvent0106 = S<
 		"BADGE_EVENT_0106",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0106";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -60,6 +64,7 @@ export type BadgeSettingsEvent0107 = S<
 		"BADGE_EVENT_0107",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0107";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -73,6 +78,7 @@ export type BadgeSettingsEvent0112 = S<
 		"BADGE_EVENT_0112",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0112";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -86,6 +92,7 @@ export type BadgeSettingsEvent0113 = S<
 		"BADGE_EVENT_0113",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0113";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -99,6 +106,7 @@ export type BadgeSettingsEvent0114 = S<
 		"BADGE_EVENT_0114",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0114";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -112,6 +120,7 @@ export type BadgeSettingsEvent0115 = S<
 		"BADGE_EVENT_0115",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0115";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -125,6 +134,7 @@ export type BadgeSettingsEvent0116 = S<
 		"BADGE_EVENT_0116",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0116";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -138,6 +148,7 @@ export type BadgeSettingsEvent0118 = S<
 		"BADGE_EVENT_0118",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0118";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -151,6 +162,7 @@ export type BadgeSettingsEvent0119 = S<
 		"BADGE_EVENT_0119",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0119";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -164,6 +176,7 @@ export type BadgeSettingsEvent0128 = S<
 		"BADGE_EVENT_0128",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0128";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -177,6 +190,7 @@ export type BadgeSettingsEvent0129 = S<
 		"BADGE_EVENT_0129",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0129";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -190,6 +204,7 @@ export type BadgeSettingsEvent0130 = S<
 		"BADGE_EVENT_0130",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0130";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -203,6 +218,7 @@ export type BadgeSettingsEvent0133 = S<
 		"BADGE_EVENT_0133",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0133";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -216,6 +232,7 @@ export type BadgeSettingsEvent0134 = S<
 		"BADGE_EVENT_0134",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0134";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -229,6 +246,7 @@ export type BadgeSettingsEvent0135 = S<
 		"BADGE_EVENT_0135",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0135";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -242,6 +260,7 @@ export type BadgeSettingsEvent0137 = S<
 		"BADGE_EVENT_0137",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0137";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -255,6 +274,7 @@ export type BadgeSettingsEvent0138 = S<
 		"BADGE_EVENT_0138",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0138";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -268,6 +288,7 @@ export type BadgeSettingsEvent0139 = S<
 		"BADGE_EVENT_0139",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0139";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -281,6 +302,7 @@ export type BadgeSettingsEvent0140 = S<
 		"BADGE_EVENT_0140",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0140";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -294,6 +316,7 @@ export type BadgeSettingsEvent0141 = S<
 		"BADGE_EVENT_0141",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0141";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -307,6 +330,7 @@ export type BadgeSettingsEvent0142 = S<
 		"BADGE_EVENT_0142",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0142";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -320,6 +344,7 @@ export type BadgeSettingsEvent0144 = S<
 		"BADGE_EVENT_0144",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0144";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -333,6 +358,7 @@ export type BadgeSettingsEvent0145 = S<
 		"BADGE_EVENT_0145",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0145";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -346,6 +372,7 @@ export type BadgeSettingsEvent0146 = S<
 		"BADGE_EVENT_0146",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0146";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -359,6 +386,7 @@ export type BadgeSettingsEvent0149 = S<
 		"BADGE_EVENT_0149",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0149";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -372,6 +400,7 @@ export type BadgeSettingsEvent0151 = S<
 		"BADGE_EVENT_0151",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0151";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -385,6 +414,7 @@ export type BadgeSettingsEvent0152 = S<
 		"BADGE_EVENT_0152",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0152";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -398,6 +428,7 @@ export type BadgeSettingsEvent0153 = S<
 		"BADGE_EVENT_0153",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0153";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -411,6 +442,7 @@ export type BadgeSettingsEvent0154 = S<
 		"BADGE_EVENT_0154",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0154";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -424,6 +456,7 @@ export type BadgeSettingsEvent0170 = S<
 		"BADGE_EVENT_0170",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0170";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -437,6 +470,7 @@ export type BadgeSettingsEvent0172 = S<
 		"BADGE_EVENT_0172",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0172";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -450,6 +484,7 @@ export type BadgeSettingsEvent0173 = S<
 		"BADGE_EVENT_0173",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0173";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -463,6 +498,7 @@ export type BadgeSettingsEvent0174 = S<
 		"BADGE_EVENT_0174",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0174";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -476,6 +512,7 @@ export type BadgeSettingsEvent0175 = S<
 		"BADGE_EVENT_0175",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0175";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -489,6 +526,7 @@ export type BadgeSettingsEvent0176 = S<
 		"BADGE_EVENT_0176",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0176";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -502,6 +540,7 @@ export type BadgeSettingsEvent0177 = S<
 		"BADGE_EVENT_0177",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0177";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -515,6 +554,7 @@ export type BadgeSettingsEvent0178 = S<
 		"BADGE_EVENT_0178",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0178";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -528,6 +568,7 @@ export type BadgeSettingsEvent0179 = S<
 		"BADGE_EVENT_0179",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0179";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -541,6 +582,7 @@ export type BadgeSettingsEvent0183 = S<
 		"BADGE_EVENT_0183",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0183";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -554,6 +596,7 @@ export type BadgeSettingsEvent0184 = S<
 		"BADGE_EVENT_0184",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0184";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -567,6 +610,7 @@ export type BadgeSettingsEvent0185 = S<
 		"BADGE_EVENT_0185",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0185";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -580,6 +624,7 @@ export type BadgeSettingsEvent0186 = S<
 		"BADGE_EVENT_0186",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0186";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -593,6 +638,7 @@ export type BadgeSettingsEvent0187 = S<
 		"BADGE_EVENT_0187",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0187";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -606,6 +652,7 @@ export type BadgeSettingsEvent0188 = S<
 		"BADGE_EVENT_0188",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0188";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -619,6 +666,7 @@ export type BadgeSettingsEvent0189 = S<
 		"BADGE_EVENT_0189",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0189";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -632,6 +680,7 @@ export type BadgeSettingsEvent0190 = S<
 		"BADGE_EVENT_0190",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0190";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -645,6 +694,7 @@ export type BadgeSettingsEvent0191 = S<
 		"BADGE_EVENT_0191",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0191";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -658,6 +708,7 @@ export type BadgeSettingsEvent0192 = S<
 		"BADGE_EVENT_0192",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0192";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -671,6 +722,7 @@ export type BadgeSettingsEvent0193 = S<
 		"BADGE_EVENT_0193",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0193";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -684,6 +736,7 @@ export type BadgeSettingsEvent0194 = S<
 		"BADGE_EVENT_0194",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0194";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -697,6 +750,7 @@ export type BadgeSettingsEvent0195 = S<
 		"BADGE_EVENT_0195",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0195";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -710,6 +764,7 @@ export type BadgeSettingsEvent0196 = S<
 		"BADGE_EVENT_0196",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0196";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -723,6 +778,7 @@ export type BadgeSettingsEvent0197 = S<
 		"BADGE_EVENT_0197",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0197";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -736,6 +792,7 @@ export type BadgeSettingsEvent0199 = S<
 		"BADGE_EVENT_0199",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0199";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -749,6 +806,7 @@ export type BadgeSettingsEvent0200 = S<
 		"BADGE_EVENT_0200",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0200";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -762,6 +820,7 @@ export type BadgeSettingsEvent0201 = S<
 		"BADGE_EVENT_0201",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0201";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -775,6 +834,7 @@ export type BadgeSettingsEvent0202 = S<
 		"BADGE_EVENT_0202",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0202";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -788,6 +848,7 @@ export type BadgeSettingsEvent0203 = S<
 		"BADGE_EVENT_0203",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0203";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -801,6 +862,7 @@ export type BadgeSettingsEvent0204 = S<
 		"BADGE_EVENT_0204",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0204";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -814,6 +876,7 @@ export type BadgeSettingsEvent0205 = S<
 		"BADGE_EVENT_0205",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0205";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -827,6 +890,7 @@ export type BadgeSettingsEvent0206 = S<
 		"BADGE_EVENT_0206",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0206";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -840,6 +904,7 @@ export type BadgeSettingsEvent0207 = S<
 		"BADGE_EVENT_0207",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0207";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -853,6 +918,7 @@ export type BadgeSettingsEvent0208 = S<
 		"BADGE_EVENT_0208",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0208";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -866,6 +932,7 @@ export type BadgeSettingsEvent0211 = S<
 		"BADGE_EVENT_0211",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0211";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -879,6 +946,7 @@ export type BadgeSettingsEvent0212 = S<
 		"BADGE_EVENT_0212",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0212";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -892,6 +960,7 @@ export type BadgeSettingsEvent0213 = S<
 		"BADGE_EVENT_0213",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0213";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -905,6 +974,7 @@ export type BadgeSettingsEvent0214 = S<
 		"BADGE_EVENT_0214",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0214";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -918,6 +988,7 @@ export type BadgeSettingsEvent0215 = S<
 		"BADGE_EVENT_0215",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0215";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -931,6 +1002,7 @@ export type BadgeSettingsEvent0216 = S<
 		"BADGE_EVENT_0216",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0216";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -944,6 +1016,7 @@ export type BadgeSettingsEvent0217 = S<
 		"BADGE_EVENT_0217",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0217";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -957,6 +1030,7 @@ export type BadgeSettingsEvent0218 = S<
 		"BADGE_EVENT_0218",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0218";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -970,6 +1044,7 @@ export type BadgeSettingsEvent0219 = S<
 		"BADGE_EVENT_0219",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0219";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -983,6 +1058,7 @@ export type BadgeSettingsEvent0220 = S<
 		"BADGE_EVENT_0220",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0220";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -996,6 +1072,7 @@ export type BadgeSettingsEvent0221 = S<
 		"BADGE_EVENT_0221",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0221";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1009,6 +1086,7 @@ export type BadgeSettingsEvent0222 = S<
 		"BADGE_EVENT_0222",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0222";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1022,6 +1100,7 @@ export type BadgeSettingsEvent0223 = S<
 		"BADGE_EVENT_0223",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0223";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1035,6 +1114,7 @@ export type BadgeSettingsEvent0224 = S<
 		"BADGE_EVENT_0224",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0224";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1048,6 +1128,7 @@ export type BadgeSettingsEvent0225 = S<
 		"BADGE_EVENT_0225",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0225";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1061,6 +1142,7 @@ export type BadgeSettingsEvent0227 = S<
 		"BADGE_EVENT_0227",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0227";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1074,6 +1156,7 @@ export type BadgeSettingsEvent0234 = S<
 		"BADGE_EVENT_0234",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0234";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1087,6 +1170,7 @@ export type BadgeSettingsEvent0253 = S<
 		"BADGE_EVENT_0253",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0253";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1100,6 +1184,7 @@ export type BadgeSettingsEvent0279 = S<
 		"BADGE_EVENT_0279",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0279";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1113,6 +1198,7 @@ export type BadgeSettingsEvent0280 = S<
 		"BADGE_EVENT_0280",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0280";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1126,6 +1212,7 @@ export type BadgeSettingsGoTour2026DeluxePass = S<
 		"BADGE_GO_TOUR_2026_DELUXE_PASS",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_DELUXE_PASS";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1139,6 +1226,7 @@ export type BadgeSettingsGoTour2026GlobalSecret01 = S<
 		"BADGE_GO_TOUR_2026_GLOBAL_SECRET_01",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GO_TOUR_2026_GLOBAL_SECRET_01";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1152,6 +1240,7 @@ export type BadgeSettingsGofest2025EventPassDeluxe = S<
 		"BADGE_GOFEST_2025_EVENT_PASS_DELUXE",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2025_EVENT_PASS_DELUXE";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1165,6 +1254,7 @@ export type BadgeSettingsGofest2025JerseycityFridayEssential = S<
 		"BADGE_GOFEST_2025_JERSEYCITY_FRIDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2025_JERSEYCITY_FRIDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1178,6 +1268,7 @@ export type BadgeSettingsGofest2025JerseycitySaturdayEssential = S<
 		"BADGE_GOFEST_2025_JERSEYCITY_SATURDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2025_JERSEYCITY_SATURDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1191,6 +1282,7 @@ export type BadgeSettingsGofest2025JerseycitySundayEssential = S<
 		"BADGE_GOFEST_2025_JERSEYCITY_SUNDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2025_JERSEYCITY_SUNDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1204,6 +1296,7 @@ export type BadgeSettingsGofest2025JerseycityThursdayEssential = S<
 		"BADGE_GOFEST_2025_JERSEYCITY_THURSDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2025_JERSEYCITY_THURSDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1217,6 +1310,7 @@ export type BadgeSettingsGofest2025OsakaFridayEssential = S<
 		"BADGE_GOFEST_2025_OSAKA_FRIDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2025_OSAKA_FRIDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1230,6 +1324,7 @@ export type BadgeSettingsGofest2025OsakaSaturdayEssential = S<
 		"BADGE_GOFEST_2025_OSAKA_SATURDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2025_OSAKA_SATURDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1243,6 +1338,7 @@ export type BadgeSettingsGofest2025OsakaSundayEssential = S<
 		"BADGE_GOFEST_2025_OSAKA_SUNDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2025_OSAKA_SUNDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1256,6 +1352,7 @@ export type BadgeSettingsGofest2025OsakaThursdayEssential = S<
 		"BADGE_GOFEST_2025_OSAKA_THURSDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2025_OSAKA_THURSDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1269,6 +1366,7 @@ export type BadgeSettingsGofest2025ParisFridayEssential = S<
 		"BADGE_GOFEST_2025_PARIS_FRIDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2025_PARIS_FRIDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1282,6 +1380,7 @@ export type BadgeSettingsGofest2025ParisSaturdayEssential = S<
 		"BADGE_GOFEST_2025_PARIS_SATURDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2025_PARIS_SATURDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1295,6 +1394,7 @@ export type BadgeSettingsGofest2025ParisSundayEssential = S<
 		"BADGE_GOFEST_2025_PARIS_SUNDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2025_PARIS_SUNDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1308,6 +1408,7 @@ export type BadgeSettingsGofest2025ParisThursdayEssential = S<
 		"BADGE_GOFEST_2025_PARIS_THURSDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2025_PARIS_THURSDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1321,6 +1422,7 @@ export type BadgeSettingsGofest2026ChicagoFridayEssential = S<
 		"BADGE_GOFEST_2026_CHICAGO_FRIDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2026_CHICAGO_FRIDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1334,6 +1436,7 @@ export type BadgeSettingsGofest2026ChicagoSaturdayEssential = S<
 		"BADGE_GOFEST_2026_CHICAGO_SATURDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2026_CHICAGO_SATURDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1347,6 +1450,7 @@ export type BadgeSettingsGofest2026ChicagoSundayEssential = S<
 		"BADGE_GOFEST_2026_CHICAGO_SUNDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2026_CHICAGO_SUNDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1360,6 +1464,7 @@ export type BadgeSettingsGofest2026ChicagoThursdayEssential = S<
 		"BADGE_GOFEST_2026_CHICAGO_THURSDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2026_CHICAGO_THURSDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1373,6 +1478,7 @@ export type BadgeSettingsGofest2026CopenhagenFridayEssential = S<
 		"BADGE_GOFEST_2026_COPENHAGEN_FRIDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2026_COPENHAGEN_FRIDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1386,6 +1492,7 @@ export type BadgeSettingsGofest2026CopenhagenSaturdayEssential = S<
 		"BADGE_GOFEST_2026_COPENHAGEN_SATURDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2026_COPENHAGEN_SATURDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1399,6 +1506,7 @@ export type BadgeSettingsGofest2026CopenhagenSundayEssential = S<
 		"BADGE_GOFEST_2026_COPENHAGEN_SUNDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2026_COPENHAGEN_SUNDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1412,6 +1520,7 @@ export type BadgeSettingsGofest2026CopenhagenThursdayEssential = S<
 		"BADGE_GOFEST_2026_COPENHAGEN_THURSDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2026_COPENHAGEN_THURSDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1425,6 +1534,7 @@ export type BadgeSettingsGofest2026EventPassDeluxe = S<
 		"BADGE_GOFEST_2026_EVENT_PASS_DELUXE",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2026_EVENT_PASS_DELUXE";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1438,6 +1548,7 @@ export type BadgeSettingsGofest2026Tokyo1mondayEssential = S<
 		"BADGE_GOFEST_2026_TOKYO_1MONDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2026_TOKYO_1MONDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1451,6 +1562,7 @@ export type BadgeSettingsGofest2026Tokyo2mondayEssential = S<
 		"BADGE_GOFEST_2026_TOKYO_2MONDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2026_TOKYO_2MONDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1464,6 +1576,7 @@ export type BadgeSettingsGofest2026TokyoFridayEssential = S<
 		"BADGE_GOFEST_2026_TOKYO_FRIDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2026_TOKYO_FRIDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1477,6 +1590,7 @@ export type BadgeSettingsGofest2026TokyoSaturdayEssential = S<
 		"BADGE_GOFEST_2026_TOKYO_SATURDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2026_TOKYO_SATURDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1490,6 +1604,7 @@ export type BadgeSettingsGofest2026TokyoSundayEssential = S<
 		"BADGE_GOFEST_2026_TOKYO_SUNDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2026_TOKYO_SUNDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1503,6 +1618,7 @@ export type BadgeSettingsGofest2026TokyoThursdayEssential = S<
 		"BADGE_GOFEST_2026_TOKYO_THURSDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2026_TOKYO_THURSDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1516,6 +1632,7 @@ export type BadgeSettingsGofest2026TokyoTuesdayEssential = S<
 		"BADGE_GOFEST_2026_TOKYO_TUESDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2026_TOKYO_TUESDAY_ESSENTIAL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1529,6 +1646,21 @@ export type BadgeSettingsGofest2026TokyoWednesdayEssential = S<
 		"BADGE_GOFEST_2026_TOKYO_WEDNESDAY_ESSENTIAL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_GOFEST_2026_TOKYO_WEDNESDAY_ESSENTIAL";
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsGofestFinale2026EventPassDeluxe = S<
+	BadgeSettings<
+		"BADGE_GOFEST_FINALE_2026_EVENT_PASS_DELUXE",
+		{
+			badgeRank: 2;
+			badgeType: 6261;
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1542,6 +1674,7 @@ export type BadgeSettingsQuestDialogueInboxControl = S<
 		"BADGE_QUEST_DIALOGUE_INBOX_CONTROL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_QUEST_DIALOGUE_INBOX_CONTROL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1555,6 +1688,7 @@ export type BadgeSettingsQuestDialogueInboxRollout = S<
 		"BADGE_QUEST_DIALOGUE_INBOX_ROLLOUT",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_QUEST_DIALOGUE_INBOX_ROLLOUT";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1568,6 +1702,7 @@ export type BadgeSettingsReducedEntryFlowControl = S<
 		"BADGE_REDUCED_ENTRY_FLOW_CONTROL",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_REDUCED_ENTRY_FLOW_CONTROL";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1581,6 +1716,7 @@ export type BadgeSettingsReducedEntryFlowRollout = S<
 		"BADGE_REDUCED_ENTRY_FLOW_ROLLOUT",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_REDUCED_ENTRY_FLOW_ROLLOUT";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1594,6 +1730,7 @@ export type BadgeSettingsWeeklyChallengeEligible = S<
 		"BADGE_WEEKLY_CHALLENGE_ELIGIBLE",
 		{
 			badgeRank: 2;
+			badgeType: "BADGE_WEEKLY_CHALLENGE_ELIGIBLE";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -1722,6 +1859,7 @@ export type BadgeSettingsEventBadgeEventBadgeSettingsMasterfileEntry =
 	| BadgeSettingsGofest2026TokyoThursdayEssential
 	| BadgeSettingsGofest2026TokyoTuesdayEssential
 	| BadgeSettingsGofest2026TokyoWednesdayEssential
+	| BadgeSettingsGofestFinale2026EventPassDeluxe
 	| BadgeSettingsQuestDialogueInboxControl
 	| BadgeSettingsQuestDialogueInboxRollout
 	| BadgeSettingsReducedEntryFlowControl

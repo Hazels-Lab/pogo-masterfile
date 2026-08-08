@@ -141,12 +141,12 @@ export type IapItemDisplayAugust2DeluxeEventPassTrackUnlock = S<
 	IapItemDisplay<
 		"AUGUST2_DELUXE_EVENT_PASS_TRACK_UNLOCK",
 		{
-			description: "season_pass_uu_water_festival_2026_upgrade_description";
+			description: "deluxe_event_pass_track_unlock_description";
 			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe8d77631_PGO-MCS_Water_Festival_2026_TICKET_v2-1024x576.jpg";
 			sku: "pgorelease.august2_deluxe_event_pass_track_unlock";
-			skuDisableTime: "2026-08-24T20:00:00";
-			skuDisableTimeUtcMs: "1787601600000";
+			skuDisableTime: "2026-08-26T20:00:00";
+			skuDisableTimeUtcMs: "1787774400000";
 			skuEnableTime: "2025-08-18T10:00:02";
 			skuEnableTimeUtcMs: "1755511202000";
 			sortOrder: 1;
@@ -162,8 +162,8 @@ export type IapItemDisplayAugust2DeluxeEventPassTrackUnlockPlusPoints = S<
 			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe8d77631_PGO-MCS_Water_Festival_2026_TICKET_v2-1024x576.jpg";
 			sku: "pgorelease.august2_deluxe_event_pass_track_unlock_plus_points";
-			skuDisableTime: "2026-08-24T20:00:00";
-			skuDisableTimeUtcMs: "1787601600000";
+			skuDisableTime: "2026-08-26T20:00:00";
+			skuDisableTimeUtcMs: "1787774400000";
 			skuEnableTime: "2025-08-18T10:00:04";
 			skuEnableTimeUtcMs: "1755511204000";
 			sortOrder: 1;
@@ -247,12 +247,12 @@ export type IapItemDisplayEventPassAugust2Redirect = S<
 	IapItemDisplay<
 		"EVENT_PASS_AUGUST2_REDIRECT",
 		{
-			description: "season_pass_uu_water_festival_2026_upgrade_description";
+			description: "deluxe_event_pass_track_unlock_description";
 			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe8d77631_PGO-MCS_Water_Festival_2026_TICKET_v2-1024x576.jpg";
 			sku: "pgorelease.august2_deluxe_event_pass_track_unlock_redirect";
-			skuDisableTime: "2026-08-24T20:00:00";
-			skuDisableTimeUtcMs: "1787601600000";
+			skuDisableTime: "2026-08-26T20:00:00";
+			skuDisableTimeUtcMs: "1787774400000";
 			skuEnableTime: "2025-08-18T10:00:00";
 			skuEnableTimeUtcMs: "1755511200000";
 			sortOrder: 1;

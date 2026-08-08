@@ -648,6 +648,7 @@ const (
 	BadgeSettingsTemplateIDBadgeGofest2026TokyoVip                          BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_VIP"
 	BadgeSettingsTemplateIDBadgeGofest2026TokyoWednesdayCity                BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_WEDNESDAY_CITY"
 	BadgeSettingsTemplateIDBadgeGofest2026TokyoWednesdayEssential           BadgeSettingsTemplateID = "BADGE_GOFEST_2026_TOKYO_WEDNESDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGofestFinale2026EventPassDeluxe             BadgeSettingsTemplateID = "BADGE_GOFEST_FINALE_2026_EVENT_PASS_DELUXE"
 	BadgeSettingsTemplateIDBadgeGotour2021GreenGlobal                       BadgeSettingsTemplateID = "BADGE_GOTOUR_2021_GREEN_GLOBAL"
 	BadgeSettingsTemplateIDBadgeGotour2021GreenTest                         BadgeSettingsTemplateID = "BADGE_GOTOUR_2021_GREEN_TEST"
 	BadgeSettingsTemplateIDBadgeGotour2021RedGlobal                         BadgeSettingsTemplateID = "BADGE_GOTOUR_2021_RED_GLOBAL"
@@ -1650,6 +1651,7 @@ var BadgeSettingsTemplateIDValues = [...]BadgeSettingsTemplateID{
 	BadgeSettingsTemplateIDBadgeGofest2026TokyoVip,
 	BadgeSettingsTemplateIDBadgeGofest2026TokyoWednesdayCity,
 	BadgeSettingsTemplateIDBadgeGofest2026TokyoWednesdayEssential,
+	BadgeSettingsTemplateIDBadgeGofestFinale2026EventPassDeluxe,
 	BadgeSettingsTemplateIDBadgeGotour2021GreenGlobal,
 	BadgeSettingsTemplateIDBadgeGotour2021GreenTest,
 	BadgeSettingsTemplateIDBadgeGotour2021RedGlobal,

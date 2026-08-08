@@ -2,6 +2,23 @@
 
 All notable changes to `pogo-masterfile-types` (crates.io) are recorded here. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.35] - 2026-08-08
+
+Automated regeneration from upstream masterfile commit `d30f7dd7e3d38ca9ab890e2053573ef10e699631`.
+
+### Added template IDs (10)
+
+- BADGE_GOFEST_FINALE_2026_EVENT_PASS_DELUXE
+- N_DISPLAY_n_backpack_wcspxp2026
+- N_DISPLAY_n_gloves_wcs2026winnersitems
+- N_DISPLAY_n_hat_wcs2026winnersitems
+- N_DISPLAY_n_pants_wcs2026winnersitems
+- N_DISPLAY_n_shirt_wcs2026sf-green
+- N_DISPLAY_n_shirt_wcs2026sf-red
+- N_DISPLAY_n_shirt_wcs2026winnersitems
+- N_DISPLAY_n_shoes_wcs2026winnersitems
+- N_DISPLAY_set_wcs2026winnersitems
+
 ## [0.1.34] - 2026-08-07
 
 Automated regeneration from upstream masterfile commit `c5cbe71491d1b1ee10c04cabf9645ee656d8c000`.

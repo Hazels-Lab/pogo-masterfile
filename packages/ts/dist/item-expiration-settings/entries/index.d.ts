@@ -15,8 +15,7 @@ export type ItemExpirationSettingsEventPassPointGoFest02 = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_GO_FEST_02",
 		{
-			emergencyExpirationTime: "2025-09-25T21:00:00";
-			expirationTime: "2025-08-26T21:00:00";
+			expirationTime: "2026-09-08T23:59:59";
 		}
 	>
 >;

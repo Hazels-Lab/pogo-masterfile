@@ -85,6 +85,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNBackpackUltraB0                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_backpack_ultra_b_0"
 	AvatarItemDisplayTemplateIDNDisplayNBackpackUnequip0                    AvatarItemDisplayTemplateID = "N_DISPLAY_n_backpack_unequip_0"
 	AvatarItemDisplayTemplateIDNDisplayNBackpackVerizon20210                AvatarItemDisplayTemplateID = "N_DISPLAY_n_backpack_verizon2021_0"
+	AvatarItemDisplayTemplateIDNDisplayNBackpackWcspxp2026                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_backpack_wcspxp2026"
 	AvatarItemDisplayTemplateIDNDisplayNBackpackWhitekyuremitem0            AvatarItemDisplayTemplateID = "N_DISPLAY_n_backpack_whitekyuremitem_0"
 	AvatarItemDisplayTemplateIDNDisplayNBackpackWillow                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_backpack_willow"
 	AvatarItemDisplayTemplateIDNDisplayNBackpackZubatbp0                    AvatarItemDisplayTemplateID = "N_DISPLAY_n_backpack_zubatbp_0"
@@ -215,6 +216,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNGlovesTeamwristband3                AvatarItemDisplayTemplateID = "N_DISPLAY_n_gloves_teamwristband_3"
 	AvatarItemDisplayTemplateIDNDisplayNGlovesTeamyellgrunts0               AvatarItemDisplayTemplateID = "N_DISPLAY_n_gloves_teamyellgrunts_0"
 	AvatarItemDisplayTemplateIDNDisplayNGlovesUnequip0                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_gloves_unequip_0"
+	AvatarItemDisplayTemplateIDNDisplayNGlovesWcs2026winnersitems           AvatarItemDisplayTemplateID = "N_DISPLAY_n_gloves_wcs2026winnersitems"
 	AvatarItemDisplayTemplateIDNDisplayNGlovesWillow                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_gloves_willow"
 	AvatarItemDisplayTemplateIDNDisplayNGlovesWintergloves20230             AvatarItemDisplayTemplateID = "N_DISPLAY_n_gloves_wintergloves2023_0"
 	AvatarItemDisplayTemplateIDNDisplayNGradientEye0                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_gradient_eye_0"
@@ -508,6 +510,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNHatWcs2024paiditems0                AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_wcs2024paiditems_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatWcs20250                         AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_wcs2025_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatWcs2025winnersitems0             AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_wcs2025winnersitems_0"
+	AvatarItemDisplayTemplateIDNDisplayNHatWcs2026winnersitems              AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_wcs2026winnersitems"
 	AvatarItemDisplayTemplateIDNDisplayNHatWhimsicottearmuff0               AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_whimsicottearmuff_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatWillowglasses0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_willowglasses_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatWoobatearrings0                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_woobatearrings_0"
@@ -681,6 +684,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNPantsWcs2022winnersitems0           AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_wcs2022winnersitems_0"
 	AvatarItemDisplayTemplateIDNDisplayNPantsWcs2024winnersitems0           AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_wcs2024winnersitems_0"
 	AvatarItemDisplayTemplateIDNDisplayNPantsWcs2025winnersitems0           AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_wcs2025winnersitems_0"
+	AvatarItemDisplayTemplateIDNDisplayNPantsWcs2026winnersitems            AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_wcs2026winnersitems"
 	AvatarItemDisplayTemplateIDNDisplayNPantsWillow                         AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_willow"
 	AvatarItemDisplayTemplateIDNDisplayNPose001                             AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_001"
 	AvatarItemDisplayTemplateIDNDisplayNPose002                             AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_002"
@@ -1223,6 +1227,9 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2025paiditems0              AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_wcs2025paiditems_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2025winnersitems0           AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_wcs2025winnersitems_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2026                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_wcs2026"
+	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2026sfGreen                 AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_wcs2026sf-green"
+	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2026sfRed                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_wcs2026sf-red"
+	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2026winnersitems            AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_wcs2026winnersitems"
 	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2027                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_wcs2027"
 	AvatarItemDisplayTemplateIDNDisplayNShirtWcsyokohama0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_wcsyokohama_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtWhitecoat0                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_whitecoat_0"
@@ -1386,6 +1393,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShoesWcs2022winnersitems0           AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_wcs2022winnersitems_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesWcs2023winnersitems0           AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_wcs2023winnersitems_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesWcs2024winnersitems0           AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_wcs2024winnersitems_0"
+	AvatarItemDisplayTemplateIDNDisplayNShoesWcs2026winnersitems            AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_wcs2026winnersitems"
 	AvatarItemDisplayTemplateIDNDisplayNShoesWillow                         AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_willow"
 	AvatarItemDisplayTemplateIDNDisplayNShoesWinterboots0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_winterboots_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesWinterboots1                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_winterboots_1"
@@ -1676,6 +1684,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplaySetWcs2024paiditems0                 AvatarItemDisplayTemplateID = "N_DISPLAY_set_wcs2024paiditems_0"
 	AvatarItemDisplayTemplateIDNDisplaySetWcs2024winnersitems0              AvatarItemDisplayTemplateID = "N_DISPLAY_set_wcs2024winnersitems_0"
 	AvatarItemDisplayTemplateIDNDisplaySetWcs2025winnersitems0              AvatarItemDisplayTemplateID = "N_DISPLAY_set_wcs2025winnersitems_0"
+	AvatarItemDisplayTemplateIDNDisplaySetWcs2026winnersitems               AvatarItemDisplayTemplateID = "N_DISPLAY_set_wcs2026winnersitems"
 	AvatarItemDisplayTemplateIDNDisplaySetWillow                            AvatarItemDisplayTemplateID = "N_DISPLAY_set_willow"
 	AvatarItemDisplayTemplateIDNDisplaySetWinter2023                        AvatarItemDisplayTemplateID = "N_DISPLAY_set_winter2023"
 	AvatarItemDisplayTemplateIDNDisplaySetZacostumeA                        AvatarItemDisplayTemplateID = "N_DISPLAY_set_zacostume_a"
@@ -1763,6 +1772,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNBackpackUltraB0,
 	AvatarItemDisplayTemplateIDNDisplayNBackpackUnequip0,
 	AvatarItemDisplayTemplateIDNDisplayNBackpackVerizon20210,
+	AvatarItemDisplayTemplateIDNDisplayNBackpackWcspxp2026,
 	AvatarItemDisplayTemplateIDNDisplayNBackpackWhitekyuremitem0,
 	AvatarItemDisplayTemplateIDNDisplayNBackpackWillow,
 	AvatarItemDisplayTemplateIDNDisplayNBackpackZubatbp0,
@@ -1893,6 +1903,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNGlovesTeamwristband3,
 	AvatarItemDisplayTemplateIDNDisplayNGlovesTeamyellgrunts0,
 	AvatarItemDisplayTemplateIDNDisplayNGlovesUnequip0,
+	AvatarItemDisplayTemplateIDNDisplayNGlovesWcs2026winnersitems,
 	AvatarItemDisplayTemplateIDNDisplayNGlovesWillow,
 	AvatarItemDisplayTemplateIDNDisplayNGlovesWintergloves20230,
 	AvatarItemDisplayTemplateIDNDisplayNGradientEye0,
@@ -2186,6 +2197,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNHatWcs2024paiditems0,
 	AvatarItemDisplayTemplateIDNDisplayNHatWcs20250,
 	AvatarItemDisplayTemplateIDNDisplayNHatWcs2025winnersitems0,
+	AvatarItemDisplayTemplateIDNDisplayNHatWcs2026winnersitems,
 	AvatarItemDisplayTemplateIDNDisplayNHatWhimsicottearmuff0,
 	AvatarItemDisplayTemplateIDNDisplayNHatWillowglasses0,
 	AvatarItemDisplayTemplateIDNDisplayNHatWoobatearrings0,
@@ -2359,6 +2371,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNPantsWcs2022winnersitems0,
 	AvatarItemDisplayTemplateIDNDisplayNPantsWcs2024winnersitems0,
 	AvatarItemDisplayTemplateIDNDisplayNPantsWcs2025winnersitems0,
+	AvatarItemDisplayTemplateIDNDisplayNPantsWcs2026winnersitems,
 	AvatarItemDisplayTemplateIDNDisplayNPantsWillow,
 	AvatarItemDisplayTemplateIDNDisplayNPose001,
 	AvatarItemDisplayTemplateIDNDisplayNPose002,
@@ -2901,6 +2914,9 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2025paiditems0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2025winnersitems0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2026,
+	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2026sfGreen,
+	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2026sfRed,
+	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2026winnersitems,
 	AvatarItemDisplayTemplateIDNDisplayNShirtWcs2027,
 	AvatarItemDisplayTemplateIDNDisplayNShirtWcsyokohama0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtWhitecoat0,
@@ -3064,6 +3080,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShoesWcs2022winnersitems0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesWcs2023winnersitems0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesWcs2024winnersitems0,
+	AvatarItemDisplayTemplateIDNDisplayNShoesWcs2026winnersitems,
 	AvatarItemDisplayTemplateIDNDisplayNShoesWillow,
 	AvatarItemDisplayTemplateIDNDisplayNShoesWinterboots0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesWinterboots1,
@@ -3354,6 +3371,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplaySetWcs2024paiditems0,
 	AvatarItemDisplayTemplateIDNDisplaySetWcs2024winnersitems0,
 	AvatarItemDisplayTemplateIDNDisplaySetWcs2025winnersitems0,
+	AvatarItemDisplayTemplateIDNDisplaySetWcs2026winnersitems,
 	AvatarItemDisplayTemplateIDNDisplaySetWillow,
 	AvatarItemDisplayTemplateIDNDisplaySetWinter2023,
 	AvatarItemDisplayTemplateIDNDisplaySetZacostumeA,
