@@ -106,6 +106,7 @@ import type {
 	PokemonSettingsV0025PokemonPikachuKurta,
 	PokemonSettingsV0025PokemonPikachuNormal,
 	PokemonSettingsV0025PokemonPikachuPopStar,
+	PokemonSettingsV0025PokemonPikachuPxp2026,
 	PokemonSettingsV0025PokemonPikachuRockStar,
 	PokemonSettingsV0025PokemonPikachuSummer2023A,
 	PokemonSettingsV0025PokemonPikachuSummer2023B,
@@ -121,6 +122,7 @@ import type {
 	PokemonSettingsV0025PokemonPikachuWcs2023,
 	PokemonSettingsV0025PokemonPikachuWcs2024,
 	PokemonSettingsV0025PokemonPikachuWcs2025,
+	PokemonSettingsV0025PokemonPikachuWcs2026,
 	PokemonSettingsV0025PokemonPikachuWinter2020,
 	PokemonSettingsV0026PokemonRaichu,
 	PokemonSettingsV0026PokemonRaichuAlola,
@@ -2575,6 +2577,7 @@ export interface PokemonSettingsLookup {
 	V0025_POKEMON_PIKACHU_KURTA: PokemonSettingsV0025PokemonPikachuKurta;
 	V0025_POKEMON_PIKACHU_NORMAL: PokemonSettingsV0025PokemonPikachuNormal;
 	V0025_POKEMON_PIKACHU_POP_STAR: PokemonSettingsV0025PokemonPikachuPopStar;
+	V0025_POKEMON_PIKACHU_PXP_2026: PokemonSettingsV0025PokemonPikachuPxp2026;
 	V0025_POKEMON_PIKACHU_ROCK_STAR: PokemonSettingsV0025PokemonPikachuRockStar;
 	V0025_POKEMON_PIKACHU_SUMMER_2023_A: PokemonSettingsV0025PokemonPikachuSummer2023A;
 	V0025_POKEMON_PIKACHU_SUMMER_2023_B: PokemonSettingsV0025PokemonPikachuSummer2023B;
@@ -2590,6 +2593,7 @@ export interface PokemonSettingsLookup {
 	V0025_POKEMON_PIKACHU_WCS_2023: PokemonSettingsV0025PokemonPikachuWcs2023;
 	V0025_POKEMON_PIKACHU_WCS_2024: PokemonSettingsV0025PokemonPikachuWcs2024;
 	V0025_POKEMON_PIKACHU_WCS_2025: PokemonSettingsV0025PokemonPikachuWcs2025;
+	V0025_POKEMON_PIKACHU_WCS_2026: PokemonSettingsV0025PokemonPikachuWcs2026;
 	V0025_POKEMON_PIKACHU_WINTER_2020: PokemonSettingsV0025PokemonPikachuWinter2020;
 	V0026_POKEMON_RAICHU: PokemonSettingsV0026PokemonRaichu;
 	V0026_POKEMON_RAICHU_ALOLA: PokemonSettingsV0026PokemonRaichuAlola;

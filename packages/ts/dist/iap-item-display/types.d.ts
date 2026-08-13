@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1169 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1182 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -62,6 +62,7 @@ export interface IapItemDisplayData {
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FEvent%20Pass%20Placeholder.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff2c7f843_PGO-MCS_GO_Pass_July_2026_ticket_v1-1024x576_nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff6da0ab4_PGO-MCS_GO_Fest_2026_APAC_Global_LiveOp_v2-1024x576.jpg"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff9eaebcb_PGO-WCS_2026_Backpack_v2-1024x512-nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FGO_Wild_Area_2025_Global_1024x512_logo.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FGOWA_GO_Pass_Ticket_1024x512.png"
@@ -122,7 +123,9 @@ export interface IapItemDisplayData {
 		| "2025-07-22T20:00:00"
 		| "2025-07-29T20:00:00"
 		| "2025-08-06T10:00:00"
+		| "2025-08-12T20:00:00"
 		| "2025-08-26T21:00:00"
+		| "2025-09-01T20:00:00"
 		| "2025-11-16T18:00:00"
 		| "2025-11-30T20:00:00"
 		| "2025-12-29T23:59:00"
@@ -138,8 +141,6 @@ export interface IapItemDisplayData {
 		| "2026-07-06T20:00:00"
 		| "2026-07-14T23:59:59"
 		| "2026-07-27T20:00:00"
-		| "2026-08-10T20:00:00"
-		| "2026-08-12T20:00:00"
 		| "2026-08-16T17:00:00"
 		| "2026-08-16T20:00:00"
 		| "2026-08-26T20:00:00"
@@ -173,7 +174,9 @@ export interface IapItemDisplayData {
 		| "1753214400000"
 		| "1753819200000"
 		| "1754474400000"
+		| "1755028800000"
 		| "1756242000000"
+		| "1756756800000"
 		| "1763316000000"
 		| "1764532800000"
 		| "1767052740000"
@@ -189,8 +192,6 @@ export interface IapItemDisplayData {
 		| "1783368000000"
 		| "1784073599000"
 		| "1785182400000"
-		| "1786392000000"
-		| "1786564800000"
 		| "1786899600000"
 		| "1786910400000"
 		| "1787774400000"
@@ -201,7 +202,6 @@ export interface IapItemDisplayData {
 		| "2020-01-01T00:00:00"
 		| "2020-06-02T08:00:00"
 		| "2022-03-01T00:00:00"
-		| "2022-10-13T12:00:00"
 		| "2023-01-01T11:00:01"
 		| "2023-01-01T11:00:03"
 		| "2023-02-27T20:00:00"
@@ -238,6 +238,7 @@ export interface IapItemDisplayData {
 		| "2025-08-18T10:00:00"
 		| "2025-08-18T10:00:02"
 		| "2025-08-18T10:00:04"
+		| "2025-08-25T10:00:00"
 		| "2026-03-03T13:00:00"
 		| "2026-07-06T00:00:00";
 	skuEnableTimeUtcMs?:
@@ -246,7 +247,6 @@ export interface IapItemDisplayData {
 		| "1577836800000"
 		| "1591084800000"
 		| "1646092800000"
-		| "1665662400000"
 		| "1672570801000"
 		| "1672570803000"
 		| "1677528000000"
@@ -283,6 +283,7 @@ export interface IapItemDisplayData {
 		| "1755511200000"
 		| "1755511202000"
 		| "1755511204000"
+		| "1756116000000"
 		| "1772542800000"
 		| "1783296000000";
 	sortOrder?: number;

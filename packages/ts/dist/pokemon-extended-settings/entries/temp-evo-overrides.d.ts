@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "temp-evo-overrides", 38 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "temp-evo-overrides", 41 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -1087,6 +1087,93 @@ export type PokemonExtendedSettingsV0531PokemonAudino = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0652PokemonChesnaught = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0652_POKEMON_CHESNAUGHT",
+		{
+			sizeSettings: {
+				mLowerBound: 1.2;
+				mUpperBound: 2;
+				xlUpperBound: 2.4;
+				xsLowerBound: 0.8;
+				xxlUpperBound: 2.8;
+				xxsLowerBound: 0.784;
+			};
+			tempEvoOverrides: [
+				{
+					sizeSettings: {
+						mLowerBound: 1.2;
+						mUpperBound: 2;
+						xlUpperBound: 2.4;
+						xsLowerBound: 0.8;
+						xxlUpperBound: 2.48;
+						xxsLowerBound: 0.784;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+			uniqueId: "CHESNAUGHT";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0655PokemonDelphox = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0655_POKEMON_DELPHOX",
+		{
+			sizeSettings: {
+				mLowerBound: 1.125;
+				mUpperBound: 1.875;
+				xlUpperBound: 2.25;
+				xsLowerBound: 0.75;
+				xxlUpperBound: 2.625;
+				xxsLowerBound: 0.735;
+			};
+			tempEvoOverrides: [
+				{
+					sizeSettings: {
+						mLowerBound: 1.125;
+						mUpperBound: 1.875;
+						xlUpperBound: 2.25;
+						xsLowerBound: 0.75;
+						xxlUpperBound: 2.325;
+						xxsLowerBound: 0.735;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+			uniqueId: "DELPHOX";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0658PokemonGreninja = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0658_POKEMON_GRENINJA",
+		{
+			sizeSettings: {
+				mLowerBound: 1.125;
+				mUpperBound: 1.875;
+				xlUpperBound: 2.25;
+				xsLowerBound: 0.75;
+				xxlUpperBound: 2.625;
+				xxsLowerBound: 0.735;
+			};
+			tempEvoOverrides: [
+				{
+					sizeSettings: {
+						mLowerBound: 1.125;
+						mUpperBound: 1.875;
+						xlUpperBound: 2.25;
+						xsLowerBound: 0.75;
+						xxlUpperBound: 2.325;
+						xxsLowerBound: 0.735;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+			uniqueId: "GRENINJA";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0719PokemonDiancie = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0719_POKEMON_DIANCIE",
@@ -1155,4 +1242,7 @@ export type PokemonExtendedSettingsTempEvoOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0448PokemonLucario
 	| PokemonExtendedSettingsV0460PokemonAbomasnow
 	| PokemonExtendedSettingsV0531PokemonAudino
+	| PokemonExtendedSettingsV0652PokemonChesnaught
+	| PokemonExtendedSettingsV0655PokemonDelphox
+	| PokemonExtendedSettingsV0658PokemonGreninja
 	| PokemonExtendedSettingsV0719PokemonDiancie;

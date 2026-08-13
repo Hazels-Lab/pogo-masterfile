@@ -117,7 +117,6 @@ pub mod combat_npc_personality;
 pub mod combat_npc_trainer;
 pub mod combat_ranking_proto_settings;
 pub mod combat_type;
-pub mod event_pass_settings;
 pub mod event_pass_tier_settings;
 pub mod evolution_chain_display_settings;
 pub mod evolution_quest_template;
@@ -209,8 +208,8 @@ pub enum MasterfileEntry {
     LimitedPurchaseSkuSettings(limited_purchase_sku_settings::LimitedPurchaseSkuSettingsEntry),
     ItemExpirationSettings(item_expiration_settings::ItemExpirationSettingsEntry),
     CombatRankingProtoSettings(combat_ranking_proto_settings::CombatRankingProtoSettingsEntry),
-    CombatType(combat_type::CombatTypeEntry),
     FeatureGate(feature_gate::FeatureGateEntry),
+    CombatType(combat_type::CombatTypeEntry),
     TypeEffective(type_effective::TypeEffectiveEntry),
     IapCategoryDisplay(iap_category_display::IapCategoryDisplayEntry),
     RecommendedSearchSettings(recommended_search_settings::RecommendedSearchSettingsEntry),
@@ -221,12 +220,12 @@ pub enum MasterfileEntry {
     ),
     BreadMoveLevelSettings(bread_move_level_settings::BreadMoveLevelSettingsEntry),
     BuddyEmotionLevelSettings(buddy_emotion_level_settings::BuddyEmotionLevelSettingsEntry),
-    CodeGateProto(code_gate_proto::CodeGateProtoEntry),
     PokemonHomeFormReversions(pokemon_home_form_reversions::PokemonHomeFormReversionsEntry),
     PokestopInvasionAvailabilitySettings(
         pokestop_invasion_availability_settings::PokestopInvasionAvailabilitySettingsEntry,
     ),
     WeatherAffinities(weather_affinities::WeatherAffinitiesEntry),
+    CodeGateProto(code_gate_proto::CodeGateProtoEntry),
     FriendshipMilestoneSettings(friendship_milestone_settings::FriendshipMilestoneSettingsEntry),
     PokemonScaleSettings(pokemon_scale_settings::PokemonScaleSettingsEntry),
     BuddyLevelSettings(buddy_level_settings::BuddyLevelSettingsEntry),
@@ -238,7 +237,6 @@ pub enum MasterfileEntry {
     LanguageSettings(language_settings::LanguageSettingsEntry),
     QuestSettings(quest_settings::QuestSettingsEntry),
     AvatarGroupOrderSettings(avatar_group_order_settings::AvatarGroupOrderSettingsEntry),
-    EventPassSettings(event_pass_settings::EventPassSettingsEntry),
     PartyPlayGeneralSettings(party_play_general_settings::PartyPlayGeneralSettingsEntry),
     PokemonUpgrades(pokemon_upgrades::PokemonUpgradesEntry),
     VsSeekerPokemonRewards(vs_seeker_pokemon_rewards::VsSeekerPokemonRewardsEntry),
@@ -292,6 +290,7 @@ pub enum MasterfileEntry {
     EncounterSettings(singletons::EncounterSettingsEntry),
     ErrorReportingSettings(singletons::ErrorReportingSettingsEntry),
     EventMapRefreshSettings(singletons::EventMapRefreshSettingsEntry),
+    EventPassSettings(singletons::EventPassSettingsEntry),
     EventPlannerPopularNotificationSettings(
         singletons::EventPlannerPopularNotificationSettingsEntry,
     ),
@@ -477,8 +476,8 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "combatRankingProtoSettings" => {
                     serde_json::from_value(value).map(Self::CombatRankingProtoSettings)
                 }
-                "combatType" => serde_json::from_value(value).map(Self::CombatType),
                 "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
+                "combatType" => serde_json::from_value(value).map(Self::CombatType),
                 "typeEffective" => serde_json::from_value(value).map(Self::TypeEffective),
                 "iapCategoryDisplay" => serde_json::from_value(value).map(Self::IapCategoryDisplay),
                 "recommendedSearchSettings" => {
@@ -497,7 +496,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "buddyEmotionLevelSettings" => {
                     serde_json::from_value(value).map(Self::BuddyEmotionLevelSettings)
                 }
-                "codeGateProto" => serde_json::from_value(value).map(Self::CodeGateProto),
                 "pokemonHomeFormReversions" => {
                     serde_json::from_value(value).map(Self::PokemonHomeFormReversions)
                 }
@@ -505,6 +503,7 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::PokestopInvasionAvailabilitySettings)
                 }
                 "weatherAffinities" => serde_json::from_value(value).map(Self::WeatherAffinities),
+                "codeGateProto" => serde_json::from_value(value).map(Self::CodeGateProto),
                 "friendshipMilestoneSettings" => {
                     serde_json::from_value(value).map(Self::FriendshipMilestoneSettings)
                 }
@@ -528,7 +527,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "avatarGroupOrderSettings" => {
                     serde_json::from_value(value).map(Self::AvatarGroupOrderSettings)
                 }
-                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "partyPlayGeneralSettings" => {
                     serde_json::from_value(value).map(Self::PartyPlayGeneralSettings)
                 }
@@ -660,6 +658,7 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "eventMapRefreshSettings" => {
                     serde_json::from_value(value).map(Self::EventMapRefreshSettings)
                 }
+                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "eventPlannerPopularNotificationSettings" => {
                     serde_json::from_value(value).map(Self::EventPlannerPopularNotificationSettings)
                 }

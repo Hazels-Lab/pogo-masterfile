@@ -127,7 +127,7 @@ type ItemSettingsStatIncrease struct {
 }
 
 type ItemSettingsPlayerActivity struct {
-	Limit *uint64 `json:"limit,omitempty"`
+	Limit uint64 `json:"limit"`
 }
 
 type ItemSettingsTimePeriodCounters struct {

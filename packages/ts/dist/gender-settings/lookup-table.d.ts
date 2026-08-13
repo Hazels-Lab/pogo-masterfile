@@ -106,6 +106,7 @@ import type {
 	GenderSettingsV0025PokemonPikachuKurta,
 	GenderSettingsV0025PokemonPikachuNormal,
 	GenderSettingsV0025PokemonPikachuPopStar,
+	GenderSettingsV0025PokemonPikachuPxp2026,
 	GenderSettingsV0025PokemonPikachuRockStar,
 	GenderSettingsV0025PokemonPikachuSummer2023A,
 	GenderSettingsV0025PokemonPikachuSummer2023B,
@@ -121,6 +122,7 @@ import type {
 	GenderSettingsV0025PokemonPikachuWcs2023,
 	GenderSettingsV0025PokemonPikachuWcs2024,
 	GenderSettingsV0025PokemonPikachuWcs2025,
+	GenderSettingsV0025PokemonPikachuWcs2026,
 	GenderSettingsV0025PokemonPikachuWinter2020,
 	GenderSettingsV0026PokemonRaichu,
 	GenderSettingsV0026PokemonRaichuAlola,
@@ -2578,6 +2580,7 @@ export interface GenderSettingsLookup {
 	SPAWN_V0025_POKEMON_PIKACHU_KURTA: GenderSettingsV0025PokemonPikachuKurta;
 	SPAWN_V0025_POKEMON_PIKACHU_NORMAL: GenderSettingsV0025PokemonPikachuNormal;
 	SPAWN_V0025_POKEMON_PIKACHU_POP_STAR: GenderSettingsV0025PokemonPikachuPopStar;
+	SPAWN_V0025_POKEMON_PIKACHU_PXP_2026: GenderSettingsV0025PokemonPikachuPxp2026;
 	SPAWN_V0025_POKEMON_PIKACHU_ROCK_STAR: GenderSettingsV0025PokemonPikachuRockStar;
 	SPAWN_V0025_POKEMON_PIKACHU_SUMMER_2023_A: GenderSettingsV0025PokemonPikachuSummer2023A;
 	SPAWN_V0025_POKEMON_PIKACHU_SUMMER_2023_B: GenderSettingsV0025PokemonPikachuSummer2023B;
@@ -2593,6 +2596,7 @@ export interface GenderSettingsLookup {
 	SPAWN_V0025_POKEMON_PIKACHU_WCS_2023: GenderSettingsV0025PokemonPikachuWcs2023;
 	SPAWN_V0025_POKEMON_PIKACHU_WCS_2024: GenderSettingsV0025PokemonPikachuWcs2024;
 	SPAWN_V0025_POKEMON_PIKACHU_WCS_2025: GenderSettingsV0025PokemonPikachuWcs2025;
+	SPAWN_V0025_POKEMON_PIKACHU_WCS_2026: GenderSettingsV0025PokemonPikachuWcs2026;
 	SPAWN_V0025_POKEMON_PIKACHU_WINTER_2020: GenderSettingsV0025PokemonPikachuWinter2020;
 	SPAWN_V0026_POKEMON_RAICHU: GenderSettingsV0026PokemonRaichu;
 	SPAWN_V0026_POKEMON_RAICHU_ALOLA: GenderSettingsV0026PokemonRaichuAlola;

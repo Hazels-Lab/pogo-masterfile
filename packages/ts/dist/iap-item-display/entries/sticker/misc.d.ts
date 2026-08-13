@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "sticker/misc", 368 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "sticker/misc", 380 entries.
 
 import type { S } from "../../../_utils";
 import type { IapItemDisplay } from "../../types";
@@ -1949,7 +1949,7 @@ export type IapItemDisplayStickerPgoFest202613 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_PGO_FEST_2026_1.3";
-			sortOrder: 14;
+			sortOrder: 22;
 		}
 	>
 >;
@@ -1959,7 +1959,7 @@ export type IapItemDisplayStickerPgoFest202615 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_PGO_FEST_2026_1.5";
-			sortOrder: 13;
+			sortOrder: 21;
 		}
 	>
 >;
@@ -1969,7 +1969,7 @@ export type IapItemDisplayStickerPgoFest202623 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_PGO_FEST_2026_2.3";
-			sortOrder: 12;
+			sortOrder: 20;
 		}
 	>
 >;
@@ -1979,7 +1979,7 @@ export type IapItemDisplayStickerPgoFest202625 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_PGO_FEST_2026_2.5";
-			sortOrder: 11;
+			sortOrder: 19;
 		}
 	>
 >;
@@ -1989,7 +1989,7 @@ export type IapItemDisplayStickerPgoFest202633 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_PGO_FEST_2026_3.3";
-			sortOrder: 10;
+			sortOrder: 18;
 		}
 	>
 >;
@@ -1999,7 +1999,7 @@ export type IapItemDisplayStickerPgoFest202635 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_PGO_FEST_2026_3.5";
-			sortOrder: 9;
+			sortOrder: 17;
 		}
 	>
 >;
@@ -2009,7 +2009,7 @@ export type IapItemDisplayStickerPgoFest202643 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_PGO_FEST_2026_4.3";
-			sortOrder: 8;
+			sortOrder: 16;
 		}
 	>
 >;
@@ -2019,7 +2019,7 @@ export type IapItemDisplayStickerPgoFest202645 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_PGO_FEST_2026_4.5";
-			sortOrder: 7;
+			sortOrder: 15;
 		}
 	>
 >;
@@ -2029,7 +2029,7 @@ export type IapItemDisplayStickerPgoFest2026Logo3 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_PGO_FEST_2026_LOGO.3";
-			sortOrder: 6;
+			sortOrder: 14;
 		}
 	>
 >;
@@ -2039,7 +2039,7 @@ export type IapItemDisplayStickerPgoFest2026Logo5 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_PGO_FEST_2026_LOGO.5";
-			sortOrder: 5;
+			sortOrder: 13;
 		}
 	>
 >;
@@ -2049,7 +2049,7 @@ export type IapItemDisplayStickerPgoFest20263 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_PGO_FEST_2026.3";
-			sortOrder: 16;
+			sortOrder: 24;
 		}
 	>
 >;
@@ -2059,7 +2059,7 @@ export type IapItemDisplayStickerPgoFest20265 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_PGO_FEST_2026.5";
-			sortOrder: 15;
+			sortOrder: 23;
 		}
 	>
 >;
@@ -3249,7 +3249,7 @@ export type IapItemDisplayStickerSummer202613 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_SUMMER_2026_1.3";
-			sortOrder: 480;
+			sortOrder: 32;
 		}
 	>
 >;
@@ -3259,7 +3259,7 @@ export type IapItemDisplayStickerSummer202615 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_SUMMER_2026_1.5";
-			sortOrder: 479;
+			sortOrder: 31;
 		}
 	>
 >;
@@ -3269,7 +3269,7 @@ export type IapItemDisplayStickerSummer202623 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_SUMMER_2026_2.3";
-			sortOrder: 478;
+			sortOrder: 30;
 		}
 	>
 >;
@@ -3279,7 +3279,7 @@ export type IapItemDisplayStickerSummer202625 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_SUMMER_2026_2.5";
-			sortOrder: 477;
+			sortOrder: 29;
 		}
 	>
 >;
@@ -3289,7 +3289,7 @@ export type IapItemDisplayStickerSummer202633 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_SUMMER_2026_3.3";
-			sortOrder: 476;
+			sortOrder: 28;
 		}
 	>
 >;
@@ -3299,7 +3299,7 @@ export type IapItemDisplayStickerSummer202635 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_SUMMER_2026_3.5";
-			sortOrder: 475;
+			sortOrder: 27;
 		}
 	>
 >;
@@ -3309,7 +3309,7 @@ export type IapItemDisplayStickerSummer202643 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_SUMMER_2026_4.3";
-			sortOrder: 474;
+			sortOrder: 26;
 		}
 	>
 >;
@@ -3319,7 +3319,7 @@ export type IapItemDisplayStickerSummer202645 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_SUMMER_2026_4.5";
-			sortOrder: 473;
+			sortOrder: 25;
 		}
 	>
 >;
@@ -3480,6 +3480,126 @@ export type IapItemDisplayStickerWcs2025Pikachu5 = S<
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_WCS2025_PIKACHU.5";
 			sortOrder: 13;
+		}
+	>
+>;
+export type IapItemDisplayStickerWcspxp202613 = S<
+	IapItemDisplay<
+		"STICKER_WCSPXP2026_1.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_WCSPXP2026_1.3";
+			sortOrder: 12;
+		}
+	>
+>;
+export type IapItemDisplayStickerWcspxp202615 = S<
+	IapItemDisplay<
+		"STICKER_WCSPXP2026_1.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_WCSPXP2026_1.5";
+			sortOrder: 11;
+		}
+	>
+>;
+export type IapItemDisplayStickerWcspxp202623 = S<
+	IapItemDisplay<
+		"STICKER_WCSPXP2026_2.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_WCSPXP2026_2.3";
+			sortOrder: 10;
+		}
+	>
+>;
+export type IapItemDisplayStickerWcspxp202625 = S<
+	IapItemDisplay<
+		"STICKER_WCSPXP2026_2.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_WCSPXP2026_2.5";
+			sortOrder: 9;
+		}
+	>
+>;
+export type IapItemDisplayStickerWcspxp202633 = S<
+	IapItemDisplay<
+		"STICKER_WCSPXP2026_3.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_WCSPXP2026_3.3";
+			sortOrder: 8;
+		}
+	>
+>;
+export type IapItemDisplayStickerWcspxp202635 = S<
+	IapItemDisplay<
+		"STICKER_WCSPXP2026_3.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_WCSPXP2026_3.5";
+			sortOrder: 7;
+		}
+	>
+>;
+export type IapItemDisplayStickerWcspxp202643 = S<
+	IapItemDisplay<
+		"STICKER_WCSPXP2026_4.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_WCSPXP2026_4.3";
+			sortOrder: 6;
+		}
+	>
+>;
+export type IapItemDisplayStickerWcspxp202645 = S<
+	IapItemDisplay<
+		"STICKER_WCSPXP2026_4.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_WCSPXP2026_4.5";
+			sortOrder: 5;
+		}
+	>
+>;
+export type IapItemDisplayStickerWcspxp202653 = S<
+	IapItemDisplay<
+		"STICKER_WCSPXP2026_5.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_WCSPXP2026_5.3";
+			sortOrder: 4;
+		}
+	>
+>;
+export type IapItemDisplayStickerWcspxp202655 = S<
+	IapItemDisplay<
+		"STICKER_WCSPXP2026_5.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_WCSPXP2026_5.5";
+			sortOrder: 3;
+		}
+	>
+>;
+export type IapItemDisplayStickerWcspxp202663 = S<
+	IapItemDisplay<
+		"STICKER_WCSPXP2026_6.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_WCSPXP2026_6.3";
+			sortOrder: 2;
+		}
+	>
+>;
+export type IapItemDisplayStickerWcspxp202665 = S<
+	IapItemDisplay<
+		"STICKER_WCSPXP2026_6.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_WCSPXP2026_6.5";
+			sortOrder: 1;
 		}
 	>
 >;
@@ -4033,6 +4153,18 @@ export type IapItemDisplayStickerMiscMasterfileEntry =
 	| IapItemDisplayStickerWcs2025Murkrow5
 	| IapItemDisplayStickerWcs2025Pikachu3
 	| IapItemDisplayStickerWcs2025Pikachu5
+	| IapItemDisplayStickerWcspxp202613
+	| IapItemDisplayStickerWcspxp202615
+	| IapItemDisplayStickerWcspxp202623
+	| IapItemDisplayStickerWcspxp202625
+	| IapItemDisplayStickerWcspxp202633
+	| IapItemDisplayStickerWcspxp202635
+	| IapItemDisplayStickerWcspxp202643
+	| IapItemDisplayStickerWcspxp202645
+	| IapItemDisplayStickerWcspxp202653
+	| IapItemDisplayStickerWcspxp202655
+	| IapItemDisplayStickerWcspxp202663
+	| IapItemDisplayStickerWcspxp202665
 	| IapItemDisplayStickerWinter202413
 	| IapItemDisplayStickerWinter202415
 	| IapItemDisplayStickerWinter202423

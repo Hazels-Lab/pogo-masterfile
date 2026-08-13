@@ -1568,17 +1568,11 @@ export type IapItemDisplayBundleHatchbox20241 = S<
 		"bundle.hatchbox2024.1",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
-			showDiscountTag: true;
-			showStrikethroughPrice: true;
+			hidden: true;
 			sku: "bundle.hatchbox2024.1";
-			skuDisableTime: "2026-08-10T20:00:00";
-			skuDisableTimeUtcMs: "1786392000000";
-			skuEnableTime: "2022-10-13T12:00:00";
-			skuEnableTimeUtcMs: "1665662400000";
 			sortOrder: 1;
 			spriteId: "bundle.general.adventure.1";
 			title: "bundle.xmas.large.1_title";
-			totalValue: 1910;
 		}
 	>
 >;

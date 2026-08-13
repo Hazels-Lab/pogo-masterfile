@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", 124 entries (structural types).
+// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", 139 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -15,7 +15,6 @@ export interface MegaEvoLevelSettings<TemplateID extends string = string, TData 
 				sameTypeAttackBoost: 1.3;
 			};
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsPerMegaEvoAction: 1;
 			};
 		};
@@ -34,7 +33,7 @@ export interface MegaEvoLevelSettingsData {
 		sameTypeExtraCatchXp?: number;
 		selfCpBoostAdditionalLevel?: number;
 	};
-	ftueExpirationTimestamp?: "1775001600000" | "4083189477000";
+	ftueExpirationTimestamp?: "1775001600000" | "1777147462000" | "4083189477000";
 	level?: number;
 	megaEnergyCostPerPoint?: number;
 	megaEnergyCostToUnlock?: number;
@@ -42,10 +41,13 @@ export interface MegaEvoLevelSettingsData {
 		| "ALTARIA"
 		| "BANETTE"
 		| "BEEDRILL"
+		| "CHESNAUGHT"
+		| "DELPHOX"
 		| "DIANCIE"
 		| "DRAGONITE"
 		| "FALINKS"
 		| "GARCHOMP"
+		| "GRENINJA"
 		| "GROUDON"
 		| "GYARADOS"
 		| "HOUNDOOM"
@@ -68,6 +70,7 @@ export interface MegaEvoLevelSettingsData {
 		| "TYRANITAR"
 		| "VICTREEBEL";
 	progression: {
+		pointsLimitPerPeriod: number;
 		pointsRequired?: number;
 	};
 }

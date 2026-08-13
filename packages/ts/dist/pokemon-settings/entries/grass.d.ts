@@ -10534,6 +10534,7 @@ export type PokemonSettingsV0652PokemonChesnaught = S<
 			buddyOffsetMale: [12, 0, 29];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 1.85;
 				cylinderRadiusM: 1.15;
@@ -10562,6 +10563,13 @@ export type PokemonSettingsV0652PokemonChesnaught = S<
 				shadowBaseCaptureRate: 0.05;
 				shadowDodgeProbability: 0.2;
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 80;
+				},
+			];
 			familyId: "FAMILY_CHESPIN";
 			heightStdDev: 0.2;
 			ibfc: object;
@@ -10588,6 +10596,20 @@ export type PokemonSettingsV0652PokemonChesnaught = S<
 				baseDefense: 204;
 				baseStamina: 204;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 1.6;
+					averageWeightKg: 90;
+					stats: {
+						baseAttack: 242;
+						baseDefense: 282;
+						baseStamina: 204;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+					typeOverride1: "POKEMON_TYPE_GRASS";
+					typeOverride2: "POKEMON_TYPE_FIGHTING";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 25;
 				stardustToUnlock: 10000;
@@ -10609,6 +10631,7 @@ export type PokemonSettingsV0652PokemonChesnaughtNormal = S<
 			buddyOffsetMale: [12, 0, 29];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 1.85;
 				cylinderRadiusM: 1.15;
@@ -10637,6 +10660,13 @@ export type PokemonSettingsV0652PokemonChesnaughtNormal = S<
 				shadowBaseCaptureRate: 0.05;
 				shadowDodgeProbability: 0.2;
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 80;
+				},
+			];
 			familyId: "FAMILY_CHESPIN";
 			form: "CHESNAUGHT_NORMAL";
 			heightStdDev: 0.2;
@@ -10664,6 +10694,20 @@ export type PokemonSettingsV0652PokemonChesnaughtNormal = S<
 				baseDefense: 204;
 				baseStamina: 204;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 1.6;
+					averageWeightKg: 90;
+					stats: {
+						baseAttack: 242;
+						baseDefense: 282;
+						baseStamina: 204;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+					typeOverride1: "POKEMON_TYPE_GRASS";
+					typeOverride2: "POKEMON_TYPE_FIGHTING";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 25;
 				stardustToUnlock: 10000;

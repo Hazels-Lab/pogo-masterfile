@@ -17395,6 +17395,7 @@ export type PokemonSettingsV0658PokemonGreninja = S<
 			buddyOffsetMale: [12.9, 0, 45.2];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 1.02;
 				cylinderRadiusM: 1.12;
@@ -17423,6 +17424,13 @@ export type PokemonSettingsV0658PokemonGreninja = S<
 				shadowBaseCaptureRate: 0.05;
 				shadowDodgeProbability: 0.2;
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 80;
+				},
+			];
 			familyId: "FAMILY_FROAKIE";
 			heightStdDev: 0.1875;
 			ibfc: object;
@@ -17450,6 +17458,27 @@ export type PokemonSettingsV0658PokemonGreninja = S<
 				baseDefense: 152;
 				baseStamina: 176;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 1.5;
+					averageWeightKg: 40;
+					buddyPortraitOffset: [0, 0, -2000];
+					camera: {
+						cylinderHeightM: 1.8;
+						cylinderRadiusM: 1.4;
+					};
+					modelHeight: 2.8;
+					modelScaleV2: 0.7;
+					stats: {
+						baseAttack: 299;
+						baseDefense: 180;
+						baseStamina: 176;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+					typeOverride1: "POKEMON_TYPE_WATER";
+					typeOverride2: "POKEMON_TYPE_DARK";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 25;
 				stardustToUnlock: 10000;
@@ -17471,6 +17500,7 @@ export type PokemonSettingsV0658PokemonGreninjaNormal = S<
 			buddyOffsetMale: [12.9, 0, 45.2];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 1.02;
 				cylinderRadiusM: 1.12;
@@ -17499,6 +17529,13 @@ export type PokemonSettingsV0658PokemonGreninjaNormal = S<
 				shadowBaseCaptureRate: 0.05;
 				shadowDodgeProbability: 0.2;
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 80;
+				},
+			];
 			familyId: "FAMILY_FROAKIE";
 			form: "GRENINJA_NORMAL";
 			heightStdDev: 0.1875;
@@ -17527,6 +17564,27 @@ export type PokemonSettingsV0658PokemonGreninjaNormal = S<
 				baseDefense: 152;
 				baseStamina: 176;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 1.5;
+					averageWeightKg: 40;
+					buddyPortraitOffset: [0, 0, -2000];
+					camera: {
+						cylinderHeightM: 1.8;
+						cylinderRadiusM: 1.4;
+					};
+					modelHeight: 2.8;
+					modelScaleV2: 0.7;
+					stats: {
+						baseAttack: 299;
+						baseDefense: 180;
+						baseStamina: 176;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+					typeOverride1: "POKEMON_TYPE_WATER";
+					typeOverride2: "POKEMON_TYPE_DARK";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 25;
 				stardustToUnlock: 10000;

@@ -586,6 +586,12 @@ const (
 	StickerMetadataTemplateIDStickerWcs2025Jigglypuff            StickerMetadataTemplateID = "STICKER_WCS2025_JIGGLYPUFF"
 	StickerMetadataTemplateIDStickerWcs2025Murkrow               StickerMetadataTemplateID = "STICKER_WCS2025_MURKROW"
 	StickerMetadataTemplateIDStickerWcs2025Pikachu               StickerMetadataTemplateID = "STICKER_WCS2025_PIKACHU"
+	StickerMetadataTemplateIDStickerWcspxp20261                  StickerMetadataTemplateID = "STICKER_WCSPXP2026_1"
+	StickerMetadataTemplateIDStickerWcspxp20262                  StickerMetadataTemplateID = "STICKER_WCSPXP2026_2"
+	StickerMetadataTemplateIDStickerWcspxp20263                  StickerMetadataTemplateID = "STICKER_WCSPXP2026_3"
+	StickerMetadataTemplateIDStickerWcspxp20264                  StickerMetadataTemplateID = "STICKER_WCSPXP2026_4"
+	StickerMetadataTemplateIDStickerWcspxp20265                  StickerMetadataTemplateID = "STICKER_WCSPXP2026_5"
+	StickerMetadataTemplateIDStickerWcspxp20266                  StickerMetadataTemplateID = "STICKER_WCSPXP2026_6"
 	StickerMetadataTemplateIDStickerWillowBronze                 StickerMetadataTemplateID = "STICKER_WILLOW_BRONZE"
 	StickerMetadataTemplateIDStickerWillowGold                   StickerMetadataTemplateID = "STICKER_WILLOW_GOLD"
 	StickerMetadataTemplateIDStickerWillowSilver                 StickerMetadataTemplateID = "STICKER_WILLOW_SILVER"
@@ -1206,6 +1212,12 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDStickerWcs2025Jigglypuff,
 	StickerMetadataTemplateIDStickerWcs2025Murkrow,
 	StickerMetadataTemplateIDStickerWcs2025Pikachu,
+	StickerMetadataTemplateIDStickerWcspxp20261,
+	StickerMetadataTemplateIDStickerWcspxp20262,
+	StickerMetadataTemplateIDStickerWcspxp20263,
+	StickerMetadataTemplateIDStickerWcspxp20264,
+	StickerMetadataTemplateIDStickerWcspxp20265,
+	StickerMetadataTemplateIDStickerWcspxp20266,
 	StickerMetadataTemplateIDStickerWillowBronze,
 	StickerMetadataTemplateIDStickerWillowGold,
 	StickerMetadataTemplateIDStickerWillowSilver,

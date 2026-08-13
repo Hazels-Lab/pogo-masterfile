@@ -59,6 +59,12 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel0V0384PokemonRayquaza,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0445_POKEMON_GARCHOMP")]
     MegaEvolutionLevel0V0445PokemonGarchomp,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0652_POKEMON_CHESNAUGHT")]
+    MegaEvolutionLevel0V0652PokemonChesnaught,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0655_POKEMON_DELPHOX")]
+    MegaEvolutionLevel0V0655PokemonDelphox,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0658_POKEMON_GRENINJA")]
+    MegaEvolutionLevel0V0658PokemonGreninja,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0687_POKEMON_MALAMAR")]
     MegaEvolutionLevel0V0687PokemonMalamar,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0719_POKEMON_DIANCIE")]
@@ -117,6 +123,12 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel1V0384PokemonRayquaza,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0445_POKEMON_GARCHOMP")]
     MegaEvolutionLevel1V0445PokemonGarchomp,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0652_POKEMON_CHESNAUGHT")]
+    MegaEvolutionLevel1V0652PokemonChesnaught,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0655_POKEMON_DELPHOX")]
+    MegaEvolutionLevel1V0655PokemonDelphox,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0658_POKEMON_GRENINJA")]
+    MegaEvolutionLevel1V0658PokemonGreninja,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0687_POKEMON_MALAMAR")]
     MegaEvolutionLevel1V0687PokemonMalamar,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0719_POKEMON_DIANCIE")]
@@ -175,6 +187,12 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel2V0384PokemonRayquaza,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0445_POKEMON_GARCHOMP")]
     MegaEvolutionLevel2V0445PokemonGarchomp,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0652_POKEMON_CHESNAUGHT")]
+    MegaEvolutionLevel2V0652PokemonChesnaught,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0655_POKEMON_DELPHOX")]
+    MegaEvolutionLevel2V0655PokemonDelphox,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0658_POKEMON_GRENINJA")]
+    MegaEvolutionLevel2V0658PokemonGreninja,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0687_POKEMON_MALAMAR")]
     MegaEvolutionLevel2V0687PokemonMalamar,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0719_POKEMON_DIANCIE")]
@@ -233,6 +251,12 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel3V0384PokemonRayquaza,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0445_POKEMON_GARCHOMP")]
     MegaEvolutionLevel3V0445PokemonGarchomp,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0652_POKEMON_CHESNAUGHT")]
+    MegaEvolutionLevel3V0652PokemonChesnaught,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0655_POKEMON_DELPHOX")]
+    MegaEvolutionLevel3V0655PokemonDelphox,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0658_POKEMON_GRENINJA")]
+    MegaEvolutionLevel3V0658PokemonGreninja,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0687_POKEMON_MALAMAR")]
     MegaEvolutionLevel3V0687PokemonMalamar,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0719_POKEMON_DIANCIE")]
@@ -251,6 +275,12 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel4V0150PokemonMewtwo,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0227_POKEMON_SKARMORY")]
     MegaEvolutionLevel4V0227PokemonSkarmory,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0652_POKEMON_CHESNAUGHT")]
+    MegaEvolutionLevel4V0652PokemonChesnaught,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0655_POKEMON_DELPHOX")]
+    MegaEvolutionLevel4V0655PokemonDelphox,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0658_POKEMON_GRENINJA")]
+    MegaEvolutionLevel4V0658PokemonGreninja,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0687_POKEMON_MALAMAR")]
     MegaEvolutionLevel4V0687PokemonMalamar,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0870_POKEMON_FALINKS")]

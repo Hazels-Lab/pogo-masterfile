@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "locationCardSettings", split "2026", 24 entries.
+// Generated from Pokémon GO masterfile — group "locationCardSettings", split "2026", 25 entries.
 
 import type { S } from "../../_utils";
 import type { LocationCardSettings } from "../types";
@@ -204,6 +204,15 @@ export type LocationCardSettings2026RiodejaneiroCarnival001 = S<
 		}
 	>
 >;
+export type LocationCardSettings2026SanfranciscoWcs001 = S<
+	LocationCardSettings<
+		"LC_2026_SANFRANCISCO_WCS_001",
+		{
+			imageUrl: "lc_Wcs2026_sanFrancisco";
+			locationCard: "LC_2026_SANFRANCISCO_WCS_001";
+		}
+	>
+>;
 export type LocationCardSettings2026TainanGotour001 = S<
 	LocationCardSettings<
 		"LC_2026_TAINAN_GOTOUR_001",
@@ -248,5 +257,6 @@ export type LocationCardSettings2026MasterfileEntry =
 	| LocationCardSettings2026Npb013
 	| LocationCardSettings2026Ppk001
 	| LocationCardSettings2026RiodejaneiroCarnival001
+	| LocationCardSettings2026SanfranciscoWcs001
 	| LocationCardSettings2026TainanGotour001
 	| LocationCardSettings2026TokyoGofest001;

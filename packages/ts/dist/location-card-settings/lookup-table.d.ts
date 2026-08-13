@@ -92,6 +92,7 @@ import type {
 	LocationCardSettings2026Npb013,
 	LocationCardSettings2026Ppk001,
 	LocationCardSettings2026RiodejaneiroCarnival001,
+	LocationCardSettings2026SanfranciscoWcs001,
 	LocationCardSettings2026TainanGotour001,
 	LocationCardSettings2026TokyoGofest001,
 	LocationCardSettingsCitysafari2025Buenosaires,
@@ -229,6 +230,7 @@ import type {
 	LocationCardSettingsSpecialbackground2026GlobalY001,
 	LocationCardSettingsSpecialbackground2026Mewtwo001,
 	LocationCardSettingsSpecialbackground2026Mewtwo002,
+	LocationCardSettingsSpecialbackground2026Wcs,
 	LocationCardSettingsSpecialbackground20259thanniversary,
 	LocationCardSettingsSpecialbackground202610thAnniversary001,
 	LocationCardSettingsSpecialbackgroundCon2025,
@@ -339,6 +341,7 @@ export interface LocationCardSettingsLookup {
 	LC_2026_NPB_013: LocationCardSettings2026Npb013;
 	LC_2026_PPK_001: LocationCardSettings2026Ppk001;
 	LC_2026_RIODEJANEIRO_CARNIVAL_001: LocationCardSettings2026RiodejaneiroCarnival001;
+	LC_2026_SANFRANCISCO_WCS_001: LocationCardSettings2026SanfranciscoWcs001;
 	LC_2026_TAINAN_GOTOUR_001: LocationCardSettings2026TainanGotour001;
 	LC_2026_TOKYO_GOFEST_001: LocationCardSettings2026TokyoGofest001;
 	LC_CITYSAFARI2025_BUENOSAIRES: LocationCardSettingsCitysafari2025Buenosaires;
@@ -478,6 +481,7 @@ export interface LocationCardSettingsLookup {
 	LC_SPECIALBACKGROUND_2026_GLOBAL_Y_001: LocationCardSettingsSpecialbackground2026GlobalY001;
 	LC_SPECIALBACKGROUND_2026_MEWTWO_001: LocationCardSettingsSpecialbackground2026Mewtwo001;
 	LC_SPECIALBACKGROUND_2026_MEWTWO_002: LocationCardSettingsSpecialbackground2026Mewtwo002;
+	LC_SPECIALBACKGROUND_2026_WCS: LocationCardSettingsSpecialbackground2026Wcs;
 	LC_SPECIALBACKGROUND_CON2025: LocationCardSettingsSpecialbackgroundCon2025;
 	LC_SPECIALBACKGROUND_EXTRA_2025_01: LocationCardSettingsSpecialbackgroundExtra202501;
 	LC_SPECIALBACKGROUND_EXTRA_2025_02: LocationCardSettingsSpecialbackgroundExtra202502;

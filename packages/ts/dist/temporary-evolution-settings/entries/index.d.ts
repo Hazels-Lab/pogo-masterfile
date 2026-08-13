@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "temporaryEvolutionSettings", 56 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "temporaryEvolutionSettings", 59 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { TemporaryEvolutionSettings } from "../types";
@@ -757,6 +757,48 @@ export type TemporaryEvolutionSettingsV0531PokemonAudino = S<
 		}
 	>
 >;
+export type TemporaryEvolutionSettingsV0652PokemonChesnaught = S<
+	TemporaryEvolutionSettings<
+		"TEMPORARY_EVOLUTION_V0652_POKEMON_CHESNAUGHT",
+		{
+			pokemonId: "CHESNAUGHT";
+			temporaryEvolutions: [
+				{
+					assetBundleValue: 51;
+					temporaryEvolutionId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+		}
+	>
+>;
+export type TemporaryEvolutionSettingsV0655PokemonDelphox = S<
+	TemporaryEvolutionSettings<
+		"TEMPORARY_EVOLUTION_V0655_POKEMON_DELPHOX",
+		{
+			pokemonId: "DELPHOX";
+			temporaryEvolutions: [
+				{
+					assetBundleValue: 51;
+					temporaryEvolutionId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+		}
+	>
+>;
+export type TemporaryEvolutionSettingsV0658PokemonGreninja = S<
+	TemporaryEvolutionSettings<
+		"TEMPORARY_EVOLUTION_V0658_POKEMON_GRENINJA",
+		{
+			pokemonId: "GRENINJA";
+			temporaryEvolutions: [
+				{
+					assetBundleValue: 51;
+					temporaryEvolutionId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+		}
+	>
+>;
 export type TemporaryEvolutionSettingsV0687PokemonMalamar = S<
 	TemporaryEvolutionSettings<
 		"TEMPORARY_EVOLUTION_V0687_POKEMON_MALAMAR",
@@ -854,6 +896,9 @@ export type TemporaryEvolutionSettingsMasterfileEntry =
 	| TemporaryEvolutionSettingsV0460PokemonAbomasnow
 	| TemporaryEvolutionSettingsV0475PokemonGallade
 	| TemporaryEvolutionSettingsV0531PokemonAudino
+	| TemporaryEvolutionSettingsV0652PokemonChesnaught
+	| TemporaryEvolutionSettingsV0655PokemonDelphox
+	| TemporaryEvolutionSettingsV0658PokemonGreninja
 	| TemporaryEvolutionSettingsV0687PokemonMalamar
 	| TemporaryEvolutionSettingsV0719PokemonDiancie
 	| TemporaryEvolutionSettingsV0870PokemonFalinks;

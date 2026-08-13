@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 200 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 202 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -3337,6 +3337,69 @@ export type PokemonExtendedSettingsV0025PokemonPikachuPopStar = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0025PokemonPikachuPxp2026 = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0025_POKEMON_PIKACHU_PXP_2026",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 62;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 27.5;
+						maxReticleSize: 14;
+						scale: 31;
+					};
+					maxStationVisualSettings: {
+						scale: 4.22;
+					};
+				},
+				{
+					averageHeightM: 21;
+					breadMode: "BREAD_DOUGH_MODE";
+					camera: {
+						cylinderHeightM: 1.1;
+						cylinderRadiusM: 1.3;
+					};
+					catchOverrideSettings: {
+						collisionHeadRadiusM: 0.25;
+						collisionRadiusM: 0.25;
+					};
+					maxBattleTrainerVisualSettings: {
+						xOffset: -5;
+						yOffset: -5;
+					};
+					maxBattleVisualSettings: {
+						scale: 20;
+						xOffset: 3;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 32.5;
+						maxReticleSize: 14;
+						scale: 10.5;
+					};
+					maxStationVisualSettings: {
+						scale: 1.25;
+					};
+					modelHeight: 2.57;
+					modelScaleV2: 0.86;
+				},
+			];
+			form: "PIKACHU_PXP_2026";
+			sizeSettings: {
+				mLowerBound: 0.3;
+				mUpperBound: 0.5;
+				xlUpperBound: 0.6;
+				xsLowerBound: 0.2;
+				xxlUpperBound: 0.7;
+				xxsLowerBound: 0.196;
+			};
+			uniqueId: "PIKACHU";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0025PokemonPikachuRockStar = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0025_POKEMON_PIKACHU_ROCK_STAR",
@@ -4270,6 +4333,69 @@ export type PokemonExtendedSettingsV0025PokemonPikachuWcs2025 = S<
 				},
 			];
 			form: "PIKACHU_WCS_2025";
+			sizeSettings: {
+				mLowerBound: 0.3;
+				mUpperBound: 0.5;
+				xlUpperBound: 0.6;
+				xsLowerBound: 0.2;
+				xxlUpperBound: 0.7;
+				xxsLowerBound: 0.196;
+			};
+			uniqueId: "PIKACHU";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0025PokemonPikachuWcs2026 = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0025_POKEMON_PIKACHU_WCS_2026",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 62;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 27.5;
+						maxReticleSize: 14;
+						scale: 31;
+					};
+					maxStationVisualSettings: {
+						scale: 4.22;
+					};
+				},
+				{
+					averageHeightM: 21;
+					breadMode: "BREAD_DOUGH_MODE";
+					camera: {
+						cylinderHeightM: 1.1;
+						cylinderRadiusM: 1.3;
+					};
+					catchOverrideSettings: {
+						collisionHeadRadiusM: 0.25;
+						collisionRadiusM: 0.25;
+					};
+					maxBattleTrainerVisualSettings: {
+						xOffset: -5;
+						yOffset: -5;
+					};
+					maxBattleVisualSettings: {
+						scale: 20;
+						xOffset: 3;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 32.5;
+						maxReticleSize: 14;
+						scale: 10.5;
+					};
+					maxStationVisualSettings: {
+						scale: 1.25;
+					};
+					modelHeight: 2.57;
+					modelScaleV2: 0.86;
+				},
+			];
+			form: "PIKACHU_WCS_2026";
 			sizeSettings: {
 				mLowerBound: 0.3;
 				mUpperBound: 0.5;
@@ -9227,6 +9353,7 @@ export type PokemonExtendedSettingsBreadOverridesFormMasterfileEntry =
 	| PokemonExtendedSettingsV0025PokemonPikachuKurta
 	| PokemonExtendedSettingsV0025PokemonPikachuNormal
 	| PokemonExtendedSettingsV0025PokemonPikachuPopStar
+	| PokemonExtendedSettingsV0025PokemonPikachuPxp2026
 	| PokemonExtendedSettingsV0025PokemonPikachuRockStar
 	| PokemonExtendedSettingsV0025PokemonPikachuSummer2023A
 	| PokemonExtendedSettingsV0025PokemonPikachuSummer2023B
@@ -9242,6 +9369,7 @@ export type PokemonExtendedSettingsBreadOverridesFormMasterfileEntry =
 	| PokemonExtendedSettingsV0025PokemonPikachuWcs2023
 	| PokemonExtendedSettingsV0025PokemonPikachuWcs2024
 	| PokemonExtendedSettingsV0025PokemonPikachuWcs2025
+	| PokemonExtendedSettingsV0025PokemonPikachuWcs2026
 	| PokemonExtendedSettingsV0025PokemonPikachuWinter2020
 	| PokemonExtendedSettingsV0052PokemonMeowthAlola
 	| PokemonExtendedSettingsV0052PokemonMeowthGalarian

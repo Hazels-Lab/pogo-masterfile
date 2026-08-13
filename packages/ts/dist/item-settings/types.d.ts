@@ -102,11 +102,11 @@ export interface ItemSettingsData {
 			| "EVENT_PASS_GOWA_2025"
 			| "EVENT_PASS_JULY2026_SEASON"
 			| "EVENT_PASS_JUNE2026_SEASON"
-			| "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT"
 			| "EVENT_PASS_SPRINGMARATHON2026_EVENT"
 			| "EVENT_PASS_STEELEDRESOLVE2026_EVENT"
 			| "EVENT_PASS_SUMMER_MARATHON_2026_EVENT"
-			| "EVENT_PASS_UU_WATER_FESTIVAL_2026_EVENT";
+			| "EVENT_PASS_UU_WATER_FESTIVAL_2026_EVENT"
+			| "EVENT_PASS_WCS2026_EVENT";
 	};
 	food?: {
 		berryMultiplier?: number;
@@ -168,7 +168,6 @@ export interface ItemSettingsData {
 			| "1777741200000"
 			| "1778950800000"
 			| "1779555600000"
-			| "1781604000000"
 			| "1781974800000"
 			| "1782579600000"
 			| "1783184400000"
@@ -178,7 +177,8 @@ export interface ItemSettingsData {
 			| "1785182400000"
 			| "1785603600000"
 			| "1786899600000"
-			| "1787418000000";
+			| "1787418000000"
+			| "1790071200000";
 		clientEventStartTimeUtcMs:
 			| "1696845600000"
 			| "1697364000000"
@@ -197,7 +197,6 @@ export interface ItemSettingsData {
 			| "1777730400000"
 			| "1778940000000"
 			| "1779544800000"
-			| "1780405200000"
 			| "1781964000000"
 			| "1782568800000"
 			| "1783159200000"
@@ -207,7 +206,8 @@ export interface ItemSettingsData {
 			| "1784973600000"
 			| "1785592800000"
 			| "1786888800000"
-			| "1787396400000";
+			| "1787396400000"
+			| "1788872400000";
 		conflictStoryQuestIds?: ["RERUN_MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER", "MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER"];
 		detailsLinkKey?:
 			| "details_link_key"
@@ -291,7 +291,6 @@ export interface ItemSettingsData {
 			| "2026-05-02T17:00:00"
 			| "2026-05-16T17:00:00"
 			| "2026-05-23T17:00:00"
-			| "2026-06-16T10:00:00"
 			| "2026-06-20T17:00:00"
 			| "2026-06-27T17:00:00"
 			| "2026-07-04T17:00:00"
@@ -301,7 +300,8 @@ export interface ItemSettingsData {
 			| "2026-07-27T20:00:00"
 			| "2026-08-01T17:00:00"
 			| "2026-08-16T17:00:00"
-			| "2026-08-22T17:00:00";
+			| "2026-08-22T17:00:00"
+			| "2026-09-22T10:00:00";
 		eventStartTime:
 			| "2023-10-09T10:00:00"
 			| "2023-10-15T10:00:00"
@@ -320,7 +320,6 @@ export interface ItemSettingsData {
 			| "2026-05-02T14:00:00"
 			| "2026-05-16T14:00:00"
 			| "2026-05-23T14:00:00"
-			| "2026-06-02T13:00:00"
 			| "2026-06-20T14:00:00"
 			| "2026-06-27T14:00:00"
 			| "2026-07-04T10:00:00"
@@ -330,7 +329,8 @@ export interface ItemSettingsData {
 			| "2026-07-25T10:00:00"
 			| "2026-08-01T14:00:00"
 			| "2026-08-16T14:00:00"
-			| "2026-08-22T11:00:00";
+			| "2026-08-22T11:00:00"
+			| "2026-09-08T13:00:00";
 		giftable?: boolean;
 		giftItem?:
 			| "ITEM_EVENT_TICKET_02_TO_GIFT"
@@ -604,7 +604,7 @@ export interface ItemSettingsData {
 	};
 	timePeriodCounters?: {
 		playerActivity: {
-			limit?: number;
+			limit: number;
 		};
 	};
 	xpBoost?: {

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "codeGateProto", 7 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "codeGateProto", 6 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { CodeGateProto } from "../types";
@@ -27,7 +27,6 @@ export type CodeGateProtoInputTrackerCodeGate = S<
 	>
 >;
 export type CodeGateProtoIsSkuAvailableNoAppIdCodeGate = S<CodeGateProto<"IS_SKU_AVAILABLE_NO_APP_ID_CODE_GATE">>;
-export type CodeGateProtoStampCollectionSnapshotEnabledCodeGate = S<CodeGateProto<"STAMP_COLLECTION_SNAPSHOT_ENABLED_CODE_GATE">>;
 export type CodeGateProtoTodayViewV3CodeGate = S<CodeGateProto<"TODAY_VIEW_V3_CODE_GATE">>;
 export type CodeGateProtoUseGmtSkuDataCodeGate = S<CodeGateProto<"USE_GMT_SKU_DATA_CODE_GATE">>;
 
@@ -36,7 +35,6 @@ export type CodeGateProtoMasterfileEntry =
 	| CodeGateProtoCombatVnextCodeGate
 	| CodeGateProtoInputTrackerCodeGate
 	| CodeGateProtoIsSkuAvailableNoAppIdCodeGate
-	| CodeGateProtoStampCollectionSnapshotEnabledCodeGate
 	| CodeGateProtoTodayViewV3CodeGate
 	| CodeGateProtoUseGmtSkuDataCodeGate;
 

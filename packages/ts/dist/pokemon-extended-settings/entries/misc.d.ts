@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 843 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 840 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -8053,22 +8053,6 @@ export type PokemonExtendedSettingsV0651PokemonQuilladin = S<
 		}
 	>
 >;
-export type PokemonExtendedSettingsV0652PokemonChesnaught = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0652_POKEMON_CHESNAUGHT",
-		{
-			sizeSettings: {
-				mLowerBound: 1.2;
-				mUpperBound: 2;
-				xlUpperBound: 2.4;
-				xsLowerBound: 0.8;
-				xxlUpperBound: 2.8;
-				xxsLowerBound: 0.784;
-			};
-			uniqueId: "CHESNAUGHT";
-		}
-	>
->;
 export type PokemonExtendedSettingsV0653PokemonFennekin = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0653_POKEMON_FENNEKIN",
@@ -8101,22 +8085,6 @@ export type PokemonExtendedSettingsV0654PokemonBraixen = S<
 		}
 	>
 >;
-export type PokemonExtendedSettingsV0655PokemonDelphox = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0655_POKEMON_DELPHOX",
-		{
-			sizeSettings: {
-				mLowerBound: 1.125;
-				mUpperBound: 1.875;
-				xlUpperBound: 2.25;
-				xsLowerBound: 0.75;
-				xxlUpperBound: 2.625;
-				xxsLowerBound: 0.735;
-			};
-			uniqueId: "DELPHOX";
-		}
-	>
->;
 export type PokemonExtendedSettingsV0656PokemonFroakie = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0656_POKEMON_FROAKIE",
@@ -8146,22 +8114,6 @@ export type PokemonExtendedSettingsV0657PokemonFrogadier = S<
 				xxsLowerBound: 0.294;
 			};
 			uniqueId: "FROGADIER";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0658PokemonGreninja = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0658_POKEMON_GRENINJA",
-		{
-			sizeSettings: {
-				mLowerBound: 1.125;
-				mUpperBound: 1.875;
-				xlUpperBound: 2.25;
-				xsLowerBound: 0.75;
-				xxlUpperBound: 2.625;
-				xxsLowerBound: 0.735;
-			};
-			uniqueId: "GRENINJA";
 		}
 	>
 >;
@@ -14011,13 +13963,10 @@ export type PokemonExtendedSettingsMiscMasterfileEntry =
 	| PokemonExtendedSettingsV0649PokemonGenesect
 	| PokemonExtendedSettingsV0650PokemonChespin
 	| PokemonExtendedSettingsV0651PokemonQuilladin
-	| PokemonExtendedSettingsV0652PokemonChesnaught
 	| PokemonExtendedSettingsV0653PokemonFennekin
 	| PokemonExtendedSettingsV0654PokemonBraixen
-	| PokemonExtendedSettingsV0655PokemonDelphox
 	| PokemonExtendedSettingsV0656PokemonFroakie
 	| PokemonExtendedSettingsV0657PokemonFrogadier
-	| PokemonExtendedSettingsV0658PokemonGreninja
 	| PokemonExtendedSettingsV0659PokemonBunnelby
 	| PokemonExtendedSettingsV0660PokemonDiggersby
 	| PokemonExtendedSettingsV0661PokemonFletchling

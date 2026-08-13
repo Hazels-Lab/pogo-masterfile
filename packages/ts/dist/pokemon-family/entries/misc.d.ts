@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonFamily", split "misc", 487 entries.
+// Generated from Pokémon GO masterfile — group "pokemonFamily", split "misc", 484 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonFamily } from "../types";
@@ -2227,30 +2227,6 @@ export type PokemonFamilyV0649FamilyGenesect = S<
 		}
 	>
 >;
-export type PokemonFamilyV0650FamilyChespin = S<
-	PokemonFamily<
-		"V0650_FAMILY_CHESPIN",
-		{
-			familyId: "FAMILY_CHESPIN";
-		}
-	>
->;
-export type PokemonFamilyV0653FamilyFennekin = S<
-	PokemonFamily<
-		"V0653_FAMILY_FENNEKIN",
-		{
-			familyId: "FAMILY_FENNEKIN";
-		}
-	>
->;
-export type PokemonFamilyV0656FamilyFroakie = S<
-	PokemonFamily<
-		"V0656_FAMILY_FROAKIE",
-		{
-			familyId: "FAMILY_FROAKIE";
-		}
-	>
->;
 export type PokemonFamilyV0659FamilyBunnelby = S<
 	PokemonFamily<
 		"V0659_FAMILY_BUNNELBY",
@@ -4179,9 +4155,6 @@ export type PokemonFamilyMiscMasterfileEntry =
 	| PokemonFamilyV0647FamilyKeldeo
 	| PokemonFamilyV0648FamilyMeloetta
 	| PokemonFamilyV0649FamilyGenesect
-	| PokemonFamilyV0650FamilyChespin
-	| PokemonFamilyV0653FamilyFennekin
-	| PokemonFamilyV0656FamilyFroakie
 	| PokemonFamilyV0659FamilyBunnelby
 	| PokemonFamilyV0661FamilyFletchling
 	| PokemonFamilyV0664FamilyScatterbug
