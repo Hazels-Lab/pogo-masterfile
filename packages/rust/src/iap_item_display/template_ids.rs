@@ -27,6 +27,12 @@ pub enum IapItemDisplayTemplateId {
     August2DeluxeEventPassTrackUnlock,
     #[serde(rename = "AUGUST2_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
     August2DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "AUGUST3_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
+    August3DeluxeEventPassTrackUnlock,
+    #[serde(rename = "AUGUST3_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
+    August3DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "august3_deluxe_event_pass_track_unlock_redirect")]
+    August3DeluxeEventPassTrackUnlockRedirect,
     #[serde(rename = "battlepassticket.1")]
     Battlepassticket1,
     #[serde(rename = "BUNDLE_EC_200_RPP_1")]
@@ -745,10 +751,6 @@ pub enum IapItemDisplayTemplateId {
     Paidraidticket3,
     #[serde(rename = "pgorelease.april2_2026_deluxe_event_pass_track_redirect")]
     PgoreleaseApril22026DeluxeEventPassTrackRedirect,
-    #[serde(rename = "pgorelease.august1_deluxe_event_pass_track_unlock")]
-    PgoreleaseAugust1DeluxeEventPassTrackUnlock,
-    #[serde(rename = "pgorelease.august1_deluxe_event_pass_track_unlock_plus_points")]
-    PgoreleaseAugust1DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "pgorelease.bundle.1")]
     PgoreleaseBundle1,
     #[serde(rename = "pgorelease.bundle.2")]
@@ -2229,6 +2231,30 @@ pub enum IapItemDisplayTemplateId {
     StickerWcs2025Pikachu3,
     #[serde(rename = "STICKER_WCS2025_PIKACHU.5")]
     StickerWcs2025Pikachu5,
+    #[serde(rename = "STICKER_WCSPXP2026_1.3")]
+    StickerWcspxp202613,
+    #[serde(rename = "STICKER_WCSPXP2026_1.5")]
+    StickerWcspxp202615,
+    #[serde(rename = "STICKER_WCSPXP2026_2.3")]
+    StickerWcspxp202623,
+    #[serde(rename = "STICKER_WCSPXP2026_2.5")]
+    StickerWcspxp202625,
+    #[serde(rename = "STICKER_WCSPXP2026_3.3")]
+    StickerWcspxp202633,
+    #[serde(rename = "STICKER_WCSPXP2026_3.5")]
+    StickerWcspxp202635,
+    #[serde(rename = "STICKER_WCSPXP2026_4.3")]
+    StickerWcspxp202643,
+    #[serde(rename = "STICKER_WCSPXP2026_4.5")]
+    StickerWcspxp202645,
+    #[serde(rename = "STICKER_WCSPXP2026_5.3")]
+    StickerWcspxp202653,
+    #[serde(rename = "STICKER_WCSPXP2026_5.5")]
+    StickerWcspxp202655,
+    #[serde(rename = "STICKER_WCSPXP2026_6.3")]
+    StickerWcspxp202663,
+    #[serde(rename = "STICKER_WCSPXP2026_6.5")]
+    StickerWcspxp202665,
     #[serde(rename = "STICKER_WINTER_2024_1.3")]
     StickerWinter202413,
     #[serde(rename = "STICKER_WINTER_2024_1.5")]

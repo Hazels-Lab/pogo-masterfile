@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-release-date", 113 entries.
+// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-release-date", 116 entries.
 
 import type { S } from "../../_utils";
 import type { StickerMetadata } from "../types";
@@ -1123,6 +1123,36 @@ export type StickerMetadataWcs2025Pikachu = S<
 		}
 	>
 >;
+export type StickerMetadataWcspxp20261 = S<
+	StickerMetadata<
+		"STICKER_WCSPXP2026_1",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PIKACHU";
+			releaseDate: 20260828;
+		}
+	>
+>;
+export type StickerMetadataWcspxp20263 = S<
+	StickerMetadata<
+		"STICKER_WCSPXP2026_3",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PIKACHU";
+			releaseDate: 20260828;
+		}
+	>
+>;
+export type StickerMetadataWcspxp20266 = S<
+	StickerMetadata<
+		"STICKER_WCSPXP2026_6",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PIKACHU";
+			releaseDate: 20260828;
+		}
+	>
+>;
 export type StickerMetadataWinter20254 = S<
 	StickerMetadata<
 		"STICKER_WINTER2025_4",
@@ -1247,4 +1277,7 @@ export type StickerMetadataPokemonIdReleaseDateMasterfileEntry =
 	| StickerMetadataSummer20263
 	| StickerMetadataWcs2025Jigglypuff
 	| StickerMetadataWcs2025Pikachu
+	| StickerMetadataWcspxp20261
+	| StickerMetadataWcspxp20263
+	| StickerMetadataWcspxp20266
 	| StickerMetadataWinter20254;

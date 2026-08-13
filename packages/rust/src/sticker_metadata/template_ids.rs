@@ -1169,6 +1169,18 @@ pub enum StickerMetadataTemplateId {
     StickerWcs2025Murkrow,
     #[serde(rename = "STICKER_WCS2025_PIKACHU")]
     StickerWcs2025Pikachu,
+    #[serde(rename = "STICKER_WCSPXP2026_1")]
+    StickerWcspxp20261,
+    #[serde(rename = "STICKER_WCSPXP2026_2")]
+    StickerWcspxp20262,
+    #[serde(rename = "STICKER_WCSPXP2026_3")]
+    StickerWcspxp20263,
+    #[serde(rename = "STICKER_WCSPXP2026_4")]
+    StickerWcspxp20264,
+    #[serde(rename = "STICKER_WCSPXP2026_5")]
+    StickerWcspxp20265,
+    #[serde(rename = "STICKER_WCSPXP2026_6")]
+    StickerWcspxp20266,
     #[serde(rename = "STICKER_WILLOW_BRONZE")]
     StickerWillowBronze,
     #[serde(rename = "STICKER_WILLOW_GOLD")]

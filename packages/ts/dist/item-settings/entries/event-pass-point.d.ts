@@ -219,7 +219,7 @@ export type ItemSettingsItemEventPassPointLiveOps07 = S<
 		{
 			category: "ITEM_CATEGORY_EVENT_PASS_POINT";
 			eventPassPoint: {
-				eventPassId: "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT";
+				eventPassId: "EVENT_PASS_WCS2026_EVENT";
 			};
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
@@ -267,7 +267,9 @@ export type ItemSettingsItemEventPassPointLiveOps09 = S<
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			nameOverride: "ITEM_EVENT_PASS_POINT_GO_TOUR_01_name";
 			timePeriodCounters: {
-				playerActivity: object;
+				playerActivity: {
+					limit: 300;
+				};
 			};
 		}
 	>

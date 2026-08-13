@@ -110,6 +110,7 @@ const (
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuKurta                    GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_KURTA"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuNormal                   GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_NORMAL"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuPopStar                  GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_POP_STAR"
+	GenderSettingsTemplateIDSpawnV0025PokemonPikachuPxp2026                  GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_PXP_2026"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuRockStar                 GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_ROCK_STAR"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuSummer2023A              GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_SUMMER_2023_A"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuSummer2023B              GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_SUMMER_2023_B"
@@ -125,6 +126,7 @@ const (
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuWcs2023                  GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_WCS_2023"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuWcs2024                  GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_WCS_2024"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuWcs2025                  GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_WCS_2025"
+	GenderSettingsTemplateIDSpawnV0025PokemonPikachuWcs2026                  GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_WCS_2026"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuWinter2020               GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_WINTER_2020"
 	GenderSettingsTemplateIDSpawnV0026PokemonRaichu                          GenderSettingsTemplateID = "SPAWN_V0026_POKEMON_RAICHU"
 	GenderSettingsTemplateIDSpawnV0026PokemonRaichuAlola                     GenderSettingsTemplateID = "SPAWN_V0026_POKEMON_RAICHU_ALOLA"
@@ -2582,6 +2584,7 @@ var GenderSettingsTemplateIDValues = [...]GenderSettingsTemplateID{
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuKurta,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuNormal,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuPopStar,
+	GenderSettingsTemplateIDSpawnV0025PokemonPikachuPxp2026,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuRockStar,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuSummer2023A,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuSummer2023B,
@@ -2597,6 +2600,7 @@ var GenderSettingsTemplateIDValues = [...]GenderSettingsTemplateID{
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuWcs2023,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuWcs2024,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuWcs2025,
+	GenderSettingsTemplateIDSpawnV0025PokemonPikachuWcs2026,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuWinter2020,
 	GenderSettingsTemplateIDSpawnV0026PokemonRaichu,
 	GenderSettingsTemplateIDSpawnV0026PokemonRaichuAlola,

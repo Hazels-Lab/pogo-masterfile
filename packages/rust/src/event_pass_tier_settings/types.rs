@@ -11,13 +11,6 @@ pub struct BonusBoxes {
 #[serde(rename_all = "camelCase")]
 pub struct ActiveBonusDisplaySettings {
     pub bonus_boxes: Vec<BonusBoxes>,
-    pub event_name: Option<String>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct BonusSettings {
-    pub bonus_boxes: Vec<BonusBoxes>,
     pub event_name: String,
 }
 
@@ -59,7 +52,7 @@ pub struct StatsLimitsOverride {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PokemonEncounter {
-    pub is_featured_pokemon: Option<bool>,
+    pub is_featured_pokemon: bool,
     pub pokemon_display: Option<PokemonDisplay>,
     pub pokemon_id: String,
     pub stats_limits_override: Option<StatsLimitsOverride>,
@@ -82,7 +75,7 @@ pub struct Rewards {
 #[serde(rename_all = "camelCase")]
 pub struct EventPassTierSettings {
     pub active_bonus_display_settings: Option<ActiveBonusDisplaySettings>,
-    pub bonus_settings: Option<BonusSettings>,
+    pub bonus_settings: Option<ActiveBonusDisplaySettings>,
     pub min_points_required: Option<u64>,
     pub rank: u64,
     pub rewards: Option<Vec<Rewards>>,

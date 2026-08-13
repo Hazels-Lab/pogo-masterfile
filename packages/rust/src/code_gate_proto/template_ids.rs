@@ -15,8 +15,6 @@ pub enum CodeGateProtoTemplateId {
     InputTrackerCodeGate,
     #[serde(rename = "IS_SKU_AVAILABLE_NO_APP_ID_CODE_GATE")]
     IsSkuAvailableNoAppIdCodeGate,
-    #[serde(rename = "STAMP_COLLECTION_SNAPSHOT_ENABLED_CODE_GATE")]
-    StampCollectionSnapshotEnabledCodeGate,
     #[serde(rename = "TODAY_VIEW_V3_CODE_GATE")]
     TodayViewV3CodeGate,
     #[serde(rename = "USE_GMT_SKU_DATA_CODE_GATE")]

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-region-id-release-date", 261 entries.
+// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-region-id-release-date", 264 entries.
 
 import type { S } from "../../_utils";
 import type { StickerMetadata } from "../types";
@@ -2599,6 +2599,39 @@ export type StickerMetadataWcs2025Murkrow = S<
 		}
 	>
 >;
+export type StickerMetadataWcspxp20262 = S<
+	StickerMetadata<
+		"STICKER_WCSPXP2026_2",
+		{
+			category: ["Pokemon"];
+			pokemonId: "FERROTHORN";
+			regionId: 4;
+			releaseDate: 20260828;
+		}
+	>
+>;
+export type StickerMetadataWcspxp20264 = S<
+	StickerMetadata<
+		"STICKER_WCSPXP2026_4",
+		{
+			category: ["Pokemon"];
+			pokemonId: "GRENINJA";
+			regionId: 5;
+			releaseDate: 20260828;
+		}
+	>
+>;
+export type StickerMetadataWcspxp20265 = S<
+	StickerMetadata<
+		"STICKER_WCSPXP2026_5",
+		{
+			category: ["Pokemon"];
+			pokemonId: "INCINEROAR";
+			regionId: 6;
+			releaseDate: 20260828;
+		}
+	>
+>;
 export type StickerMetadataWinter20241 = S<
 	StickerMetadata<
 		"STICKER_WINTER_2024_1",
@@ -3112,6 +3145,9 @@ export type StickerMetadataPokemonIdRegionIdReleaseDateMasterfileEntry =
 	| StickerMetadataValentine20232
 	| StickerMetadataValentine20233
 	| StickerMetadataWcs2025Murkrow
+	| StickerMetadataWcspxp20262
+	| StickerMetadataWcspxp20264
+	| StickerMetadataWcspxp20265
 	| StickerMetadataWinter20241
 	| StickerMetadataWinter20242
 	| StickerMetadataWinter20243

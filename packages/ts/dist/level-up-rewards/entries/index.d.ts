@@ -225,7 +225,7 @@ export type LevelUpRewardsAwardsLevel20 = S<
 		"AWARDS_LEVEL_20",
 		{
 			clientOverrideDisplayOrder: true;
-			featuresUnlocked: ["FEATURE_MAX_BATTLE"];
+			featuresUnlocked: ["FEATURE_MAX_BATTLE", 19];
 			items: [
 				"ITEM_ULTRA_BALL",
 				"ITEM_PINAP_BERRY",

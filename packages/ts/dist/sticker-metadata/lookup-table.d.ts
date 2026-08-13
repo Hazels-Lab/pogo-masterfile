@@ -582,6 +582,12 @@ import type {
 	StickerMetadataWcs2025Murkrow,
 	StickerMetadataWcs2025Pikachu,
 	StickerMetadataWcsPlay,
+	StickerMetadataWcspxp20261,
+	StickerMetadataWcspxp20262,
+	StickerMetadataWcspxp20263,
+	StickerMetadataWcspxp20264,
+	StickerMetadataWcspxp20265,
+	StickerMetadataWcspxp20266,
 	StickerMetadataWillowBronze,
 	StickerMetadataWillowGold,
 	StickerMetadataWillowSilver,
@@ -1202,6 +1208,12 @@ export interface StickerMetadataLookup {
 	STICKER_WCS2025_JIGGLYPUFF: StickerMetadataWcs2025Jigglypuff;
 	STICKER_WCS2025_MURKROW: StickerMetadataWcs2025Murkrow;
 	STICKER_WCS2025_PIKACHU: StickerMetadataWcs2025Pikachu;
+	STICKER_WCSPXP2026_1: StickerMetadataWcspxp20261;
+	STICKER_WCSPXP2026_2: StickerMetadataWcspxp20262;
+	STICKER_WCSPXP2026_3: StickerMetadataWcspxp20263;
+	STICKER_WCSPXP2026_4: StickerMetadataWcspxp20264;
+	STICKER_WCSPXP2026_5: StickerMetadataWcspxp20265;
+	STICKER_WCSPXP2026_6: StickerMetadataWcspxp20266;
 	STICKER_WILLOW_BRONZE: StickerMetadataWillowBronze;
 	STICKER_WILLOW_GOLD: StickerMetadataWillowGold;
 	STICKER_WILLOW_SILVER: StickerMetadataWillowSilver;

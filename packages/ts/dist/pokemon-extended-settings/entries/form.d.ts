@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1181 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1178 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -11696,23 +11696,6 @@ export type PokemonExtendedSettingsV0651PokemonQuilladinNormal = S<
 		}
 	>
 >;
-export type PokemonExtendedSettingsV0652PokemonChesnaughtNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0652_POKEMON_CHESNAUGHT_NORMAL",
-		{
-			form: "CHESNAUGHT_NORMAL";
-			sizeSettings: {
-				mLowerBound: 1.2;
-				mUpperBound: 2;
-				xlUpperBound: 2.4;
-				xsLowerBound: 0.8;
-				xxlUpperBound: 2.8;
-				xxsLowerBound: 0.784;
-			};
-			uniqueId: "CHESNAUGHT";
-		}
-	>
->;
 export type PokemonExtendedSettingsV0653PokemonFennekinNormal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0653_POKEMON_FENNEKIN_NORMAL",
@@ -11747,23 +11730,6 @@ export type PokemonExtendedSettingsV0654PokemonBraixenNormal = S<
 		}
 	>
 >;
-export type PokemonExtendedSettingsV0655PokemonDelphoxNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0655_POKEMON_DELPHOX_NORMAL",
-		{
-			form: "DELPHOX_NORMAL";
-			sizeSettings: {
-				mLowerBound: 1.125;
-				mUpperBound: 1.875;
-				xlUpperBound: 2.25;
-				xsLowerBound: 0.75;
-				xxlUpperBound: 2.625;
-				xxsLowerBound: 0.735;
-			};
-			uniqueId: "DELPHOX";
-		}
-	>
->;
 export type PokemonExtendedSettingsV0656PokemonFroakieNormal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0656_POKEMON_FROAKIE_NORMAL",
@@ -11795,23 +11761,6 @@ export type PokemonExtendedSettingsV0657PokemonFrogadierNormal = S<
 				xxsLowerBound: 0.294;
 			};
 			uniqueId: "FROGADIER";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0658PokemonGreninjaNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0658_POKEMON_GRENINJA_NORMAL",
-		{
-			form: "GRENINJA_NORMAL";
-			sizeSettings: {
-				mLowerBound: 1.125;
-				mUpperBound: 1.875;
-				xlUpperBound: 2.25;
-				xsLowerBound: 0.75;
-				xxlUpperBound: 2.625;
-				xxsLowerBound: 0.735;
-			};
-			uniqueId: "GRENINJA";
 		}
 	>
 >;
@@ -20917,13 +20866,10 @@ export type PokemonExtendedSettingsFormMasterfileEntry =
 	| PokemonExtendedSettingsV0649PokemonGenesectShock
 	| PokemonExtendedSettingsV0650PokemonChespinNormal
 	| PokemonExtendedSettingsV0651PokemonQuilladinNormal
-	| PokemonExtendedSettingsV0652PokemonChesnaughtNormal
 	| PokemonExtendedSettingsV0653PokemonFennekinNormal
 	| PokemonExtendedSettingsV0654PokemonBraixenNormal
-	| PokemonExtendedSettingsV0655PokemonDelphoxNormal
 	| PokemonExtendedSettingsV0656PokemonFroakieNormal
 	| PokemonExtendedSettingsV0657PokemonFrogadierNormal
-	| PokemonExtendedSettingsV0658PokemonGreninjaNormal
 	| PokemonExtendedSettingsV0659PokemonBunnelbyNormal
 	| PokemonExtendedSettingsV0660PokemonDiggersbyNormal
 	| PokemonExtendedSettingsV0661PokemonFletchlingNormal

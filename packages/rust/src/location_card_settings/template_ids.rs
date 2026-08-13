@@ -189,6 +189,8 @@ pub enum LocationCardSettingsTemplateId {
     Lc2026Ppk001,
     #[serde(rename = "LC_2026_RIODEJANEIRO_CARNIVAL_001")]
     Lc2026RiodejaneiroCarnival001,
+    #[serde(rename = "LC_2026_SANFRANCISCO_WCS_001")]
+    Lc2026SanfranciscoWcs001,
     #[serde(rename = "LC_2026_TAINAN_GOTOUR_001")]
     Lc2026TainanGotour001,
     #[serde(rename = "LC_2026_TOKYO_GOFEST_001")]
@@ -467,6 +469,8 @@ pub enum LocationCardSettingsTemplateId {
     LcSpecialbackground2026Mewtwo001,
     #[serde(rename = "LC_SPECIALBACKGROUND_2026_MEWTWO_002")]
     LcSpecialbackground2026Mewtwo002,
+    #[serde(rename = "LC_SPECIALBACKGROUND_2026_WCS")]
+    LcSpecialbackground2026Wcs,
     #[serde(rename = "LC_SPECIALBACKGROUND_CON2025")]
     LcSpecialbackgroundCon2025,
     #[serde(rename = "LC_SPECIALBACKGROUND_EXTRA_2025_01")]

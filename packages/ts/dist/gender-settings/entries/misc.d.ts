@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "genderSettings", split "misc", 2375 entries.
+// Generated from Pokémon GO masterfile — group "genderSettings", split "misc", 2377 entries.
 
 import type { S } from "../../_utils";
 import type { GenderSettings } from "../types";
@@ -982,6 +982,17 @@ export type GenderSettingsV0025PokemonPikachuNormal = S<
 		}
 	>
 >;
+export type GenderSettingsV0025PokemonPikachuPxp2026 = S<
+	GenderSettings<
+		"SPAWN_V0025_POKEMON_PIKACHU_PXP_2026",
+		{
+			gender: {
+				femalePercent: 1;
+			};
+			pokemon: "PIKACHU";
+		}
+	>
+>;
 export type GenderSettingsV0025PokemonPikachuSummer2023A = S<
 	GenderSettings<
 		"SPAWN_V0025_POKEMON_PIKACHU_SUMMER_2023_A",
@@ -1144,6 +1155,17 @@ export type GenderSettingsV0025PokemonPikachuWcs2025 = S<
 			gender: {
 				femalePercent: 0.5;
 				malePercent: 0.5;
+			};
+			pokemon: "PIKACHU";
+		}
+	>
+>;
+export type GenderSettingsV0025PokemonPikachuWcs2026 = S<
+	GenderSettings<
+		"SPAWN_V0025_POKEMON_PIKACHU_WCS_2026",
+		{
+			gender: {
+				malePercent: 1;
 			};
 			pokemon: "PIKACHU";
 		}
@@ -28018,6 +28040,7 @@ export type GenderSettingsMiscMasterfileEntry =
 	| GenderSettingsV0025PokemonPikachuKariyushi
 	| GenderSettingsV0025PokemonPikachuKurta
 	| GenderSettingsV0025PokemonPikachuNormal
+	| GenderSettingsV0025PokemonPikachuPxp2026
 	| GenderSettingsV0025PokemonPikachuSummer2023A
 	| GenderSettingsV0025PokemonPikachuSummer2023B
 	| GenderSettingsV0025PokemonPikachuSummer2023C
@@ -28032,6 +28055,7 @@ export type GenderSettingsMiscMasterfileEntry =
 	| GenderSettingsV0025PokemonPikachuWcs2023
 	| GenderSettingsV0025PokemonPikachuWcs2024
 	| GenderSettingsV0025PokemonPikachuWcs2025
+	| GenderSettingsV0025PokemonPikachuWcs2026
 	| GenderSettingsV0025PokemonPikachuWinter2020
 	| GenderSettingsV0026PokemonRaichu
 	| GenderSettingsV0026PokemonRaichuAlola

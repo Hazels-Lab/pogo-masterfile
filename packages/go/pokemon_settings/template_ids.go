@@ -110,6 +110,7 @@ const (
 	PokemonSettingsTemplateIDV0025PokemonPikachuKurta                    PokemonSettingsTemplateID = "V0025_POKEMON_PIKACHU_KURTA"
 	PokemonSettingsTemplateIDV0025PokemonPikachuNormal                   PokemonSettingsTemplateID = "V0025_POKEMON_PIKACHU_NORMAL"
 	PokemonSettingsTemplateIDV0025PokemonPikachuPopStar                  PokemonSettingsTemplateID = "V0025_POKEMON_PIKACHU_POP_STAR"
+	PokemonSettingsTemplateIDV0025PokemonPikachuPxp2026                  PokemonSettingsTemplateID = "V0025_POKEMON_PIKACHU_PXP_2026"
 	PokemonSettingsTemplateIDV0025PokemonPikachuRockStar                 PokemonSettingsTemplateID = "V0025_POKEMON_PIKACHU_ROCK_STAR"
 	PokemonSettingsTemplateIDV0025PokemonPikachuSummer2023A              PokemonSettingsTemplateID = "V0025_POKEMON_PIKACHU_SUMMER_2023_A"
 	PokemonSettingsTemplateIDV0025PokemonPikachuSummer2023B              PokemonSettingsTemplateID = "V0025_POKEMON_PIKACHU_SUMMER_2023_B"
@@ -125,6 +126,7 @@ const (
 	PokemonSettingsTemplateIDV0025PokemonPikachuWcs2023                  PokemonSettingsTemplateID = "V0025_POKEMON_PIKACHU_WCS_2023"
 	PokemonSettingsTemplateIDV0025PokemonPikachuWcs2024                  PokemonSettingsTemplateID = "V0025_POKEMON_PIKACHU_WCS_2024"
 	PokemonSettingsTemplateIDV0025PokemonPikachuWcs2025                  PokemonSettingsTemplateID = "V0025_POKEMON_PIKACHU_WCS_2025"
+	PokemonSettingsTemplateIDV0025PokemonPikachuWcs2026                  PokemonSettingsTemplateID = "V0025_POKEMON_PIKACHU_WCS_2026"
 	PokemonSettingsTemplateIDV0025PokemonPikachuWinter2020               PokemonSettingsTemplateID = "V0025_POKEMON_PIKACHU_WINTER_2020"
 	PokemonSettingsTemplateIDV0026PokemonRaichu                          PokemonSettingsTemplateID = "V0026_POKEMON_RAICHU"
 	PokemonSettingsTemplateIDV0026PokemonRaichuAlola                     PokemonSettingsTemplateID = "V0026_POKEMON_RAICHU_ALOLA"
@@ -2579,6 +2581,7 @@ var PokemonSettingsTemplateIDValues = [...]PokemonSettingsTemplateID{
 	PokemonSettingsTemplateIDV0025PokemonPikachuKurta,
 	PokemonSettingsTemplateIDV0025PokemonPikachuNormal,
 	PokemonSettingsTemplateIDV0025PokemonPikachuPopStar,
+	PokemonSettingsTemplateIDV0025PokemonPikachuPxp2026,
 	PokemonSettingsTemplateIDV0025PokemonPikachuRockStar,
 	PokemonSettingsTemplateIDV0025PokemonPikachuSummer2023A,
 	PokemonSettingsTemplateIDV0025PokemonPikachuSummer2023B,
@@ -2594,6 +2597,7 @@ var PokemonSettingsTemplateIDValues = [...]PokemonSettingsTemplateID{
 	PokemonSettingsTemplateIDV0025PokemonPikachuWcs2023,
 	PokemonSettingsTemplateIDV0025PokemonPikachuWcs2024,
 	PokemonSettingsTemplateIDV0025PokemonPikachuWcs2025,
+	PokemonSettingsTemplateIDV0025PokemonPikachuWcs2026,
 	PokemonSettingsTemplateIDV0025PokemonPikachuWinter2020,
 	PokemonSettingsTemplateIDV0026PokemonRaichu,
 	PokemonSettingsTemplateIDV0026PokemonRaichuAlola,

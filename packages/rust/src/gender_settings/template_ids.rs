@@ -217,6 +217,8 @@ pub enum GenderSettingsTemplateId {
     SpawnV0025PokemonPikachuNormal,
     #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_POP_STAR")]
     SpawnV0025PokemonPikachuPopStar,
+    #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_PXP_2026")]
+    SpawnV0025PokemonPikachuPxp2026,
     #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_ROCK_STAR")]
     SpawnV0025PokemonPikachuRockStar,
     #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_SUMMER_2023_A")]
@@ -247,6 +249,8 @@ pub enum GenderSettingsTemplateId {
     SpawnV0025PokemonPikachuWcs2024,
     #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_WCS_2025")]
     SpawnV0025PokemonPikachuWcs2025,
+    #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_WCS_2026")]
+    SpawnV0025PokemonPikachuWcs2026,
     #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_WINTER_2020")]
     SpawnV0025PokemonPikachuWinter2020,
     #[serde(rename = "SPAWN_V0026_POKEMON_RAICHU")]

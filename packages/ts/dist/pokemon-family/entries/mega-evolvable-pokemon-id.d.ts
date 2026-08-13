@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonFamily", split "mega-evolvable-pokemon-id", 50 entries.
+// Generated from Pokémon GO masterfile — group "pokemonFamily", split "mega-evolvable-pokemon-id", 53 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonFamily } from "../types";
@@ -426,6 +426,33 @@ export type PokemonFamilyV0531FamilyAudino = S<
 		}
 	>
 >;
+export type PokemonFamilyV0650FamilyChespin = S<
+	PokemonFamily<
+		"V0650_FAMILY_CHESPIN",
+		{
+			familyId: "FAMILY_CHESPIN";
+			megaEvolvablePokemonId: "CHESNAUGHT";
+		}
+	>
+>;
+export type PokemonFamilyV0653FamilyFennekin = S<
+	PokemonFamily<
+		"V0653_FAMILY_FENNEKIN",
+		{
+			familyId: "FAMILY_FENNEKIN";
+			megaEvolvablePokemonId: "DELPHOX";
+		}
+	>
+>;
+export type PokemonFamilyV0656FamilyFroakie = S<
+	PokemonFamily<
+		"V0656_FAMILY_FROAKIE",
+		{
+			familyId: "FAMILY_FROAKIE";
+			megaEvolvablePokemonId: "GRENINJA";
+		}
+	>
+>;
 export type PokemonFamilyV0686FamilyInkay = S<
 	PokemonFamily<
 		"V0686_FAMILY_INKAY",
@@ -502,6 +529,9 @@ export type PokemonFamilyMegaEvolvablePokemonIdMasterfileEntry =
 	| PokemonFamilyV0448FamilyLucario
 	| PokemonFamilyV0459FamilySnover
 	| PokemonFamilyV0531FamilyAudino
+	| PokemonFamilyV0650FamilyChespin
+	| PokemonFamilyV0653FamilyFennekin
+	| PokemonFamilyV0656FamilyFroakie
 	| PokemonFamilyV0686FamilyInkay
 	| PokemonFamilyV0719FamilyDiancie
 	| PokemonFamilyV0870FamilyFalinks;

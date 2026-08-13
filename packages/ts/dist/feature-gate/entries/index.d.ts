@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 18 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 20 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -209,6 +209,24 @@ export type FeatureGateMega2026 = S<
 		}
 	>
 >;
+export type FeatureGateMepEggReadMigration = S<
+	FeatureGate<
+		"MEP_EGG_READ_MIGRATION_FEATURE_GATE",
+		{
+			rolloutPercentage: 100;
+			status: 11;
+		}
+	>
+>;
+export type FeatureGateMepEggWriteMigration = S<
+	FeatureGate<
+		"MEP_EGG_WRITE_MIGRATION_FEATURE_GATE",
+		{
+			rolloutPercentage: 100;
+			status: 11;
+		}
+	>
+>;
 export type FeatureGateSeafGetMapObjectsRateLimiter = S<
 	FeatureGate<
 		"SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE",
@@ -260,6 +278,8 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateGamesiteWebviewNearbyButtons
 	| FeatureGateHideCampfireMapButtons
 	| FeatureGateMega2026
+	| FeatureGateMepEggReadMigration
+	| FeatureGateMepEggWriteMigration
 	| FeatureGateSeafGetMapObjectsRateLimiter
 	| FeatureGateUpdateTicketsString
 	| FeatureGateVnextPreResponseInputBlockingBehavior;

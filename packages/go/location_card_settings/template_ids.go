@@ -96,6 +96,7 @@ const (
 	LocationCardSettingsTemplateIDLc2026Npb013                                            LocationCardSettingsTemplateID = "LC_2026_NPB_013"
 	LocationCardSettingsTemplateIDLc2026Ppk001                                            LocationCardSettingsTemplateID = "LC_2026_PPK_001"
 	LocationCardSettingsTemplateIDLc2026RiodejaneiroCarnival001                           LocationCardSettingsTemplateID = "LC_2026_RIODEJANEIRO_CARNIVAL_001"
+	LocationCardSettingsTemplateIDLc2026SanfranciscoWcs001                                LocationCardSettingsTemplateID = "LC_2026_SANFRANCISCO_WCS_001"
 	LocationCardSettingsTemplateIDLc2026TainanGotour001                                   LocationCardSettingsTemplateID = "LC_2026_TAINAN_GOTOUR_001"
 	LocationCardSettingsTemplateIDLc2026TokyoGofest001                                    LocationCardSettingsTemplateID = "LC_2026_TOKYO_GOFEST_001"
 	LocationCardSettingsTemplateIDLcCitysafari2025Buenosaires                             LocationCardSettingsTemplateID = "LC_CITYSAFARI2025_BUENOSAIRES"
@@ -235,6 +236,7 @@ const (
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalY001                       LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_GLOBAL_Y_001"
 	LocationCardSettingsTemplateIDLcSpecialbackground2026Mewtwo001                        LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_MEWTWO_001"
 	LocationCardSettingsTemplateIDLcSpecialbackground2026Mewtwo002                        LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_MEWTWO_002"
+	LocationCardSettingsTemplateIDLcSpecialbackground2026Wcs                              LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_WCS"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundCon2025                              LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_CON2025"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundExtra202501                          LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_EXTRA_2025_01"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundExtra202502                          LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_EXTRA_2025_02"
@@ -343,6 +345,7 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLc2026Npb013,
 	LocationCardSettingsTemplateIDLc2026Ppk001,
 	LocationCardSettingsTemplateIDLc2026RiodejaneiroCarnival001,
+	LocationCardSettingsTemplateIDLc2026SanfranciscoWcs001,
 	LocationCardSettingsTemplateIDLc2026TainanGotour001,
 	LocationCardSettingsTemplateIDLc2026TokyoGofest001,
 	LocationCardSettingsTemplateIDLcCitysafari2025Buenosaires,
@@ -482,6 +485,7 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalY001,
 	LocationCardSettingsTemplateIDLcSpecialbackground2026Mewtwo001,
 	LocationCardSettingsTemplateIDLcSpecialbackground2026Mewtwo002,
+	LocationCardSettingsTemplateIDLcSpecialbackground2026Wcs,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundCon2025,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundExtra202501,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundExtra202502,

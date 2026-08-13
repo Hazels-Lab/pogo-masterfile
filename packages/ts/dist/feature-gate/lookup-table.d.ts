@@ -16,6 +16,8 @@ import type {
 	FeatureGateGamesiteWebviewNearbyButtons,
 	FeatureGateHideCampfireMapButtons,
 	FeatureGateMega2026,
+	FeatureGateMepEggReadMigration,
+	FeatureGateMepEggWriteMigration,
 	FeatureGateSeafGetMapObjectsRateLimiter,
 	FeatureGateUpdateTicketsString,
 	FeatureGateVnextPreResponseInputBlockingBehavior,
@@ -37,6 +39,8 @@ export interface FeatureGateLookup {
 	GAMESITE_WEBVIEW_NEARBY_BUTTONS_FEATURE_GATE: FeatureGateGamesiteWebviewNearbyButtons;
 	HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE: FeatureGateHideCampfireMapButtons;
 	MEGA_2026_FEATURE_GATE: FeatureGateMega2026;
+	MEP_EGG_READ_MIGRATION_FEATURE_GATE: FeatureGateMepEggReadMigration;
+	MEP_EGG_WRITE_MIGRATION_FEATURE_GATE: FeatureGateMepEggWriteMigration;
 	SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE: FeatureGateSeafGetMapObjectsRateLimiter;
 	UPDATE_TICKETS_STRING_FEATURE_GATE: FeatureGateUpdateTicketsString;
 	VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE: FeatureGateVnextPreResponseInputBlockingBehavior;

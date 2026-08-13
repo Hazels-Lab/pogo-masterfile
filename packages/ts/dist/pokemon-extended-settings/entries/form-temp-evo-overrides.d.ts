@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form-temp-evo-overrides", 45 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form-temp-evo-overrides", 48 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -1304,6 +1304,96 @@ export type PokemonExtendedSettingsV0531PokemonAudinoNormal = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0652PokemonChesnaughtNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0652_POKEMON_CHESNAUGHT_NORMAL",
+		{
+			form: "CHESNAUGHT_NORMAL";
+			sizeSettings: {
+				mLowerBound: 1.2;
+				mUpperBound: 2;
+				xlUpperBound: 2.4;
+				xsLowerBound: 0.8;
+				xxlUpperBound: 2.8;
+				xxsLowerBound: 0.784;
+			};
+			tempEvoOverrides: [
+				{
+					sizeSettings: {
+						mLowerBound: 1.2;
+						mUpperBound: 2;
+						xlUpperBound: 2.4;
+						xsLowerBound: 0.8;
+						xxlUpperBound: 2.48;
+						xxsLowerBound: 0.784;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+			uniqueId: "CHESNAUGHT";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0655PokemonDelphoxNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0655_POKEMON_DELPHOX_NORMAL",
+		{
+			form: "DELPHOX_NORMAL";
+			sizeSettings: {
+				mLowerBound: 1.125;
+				mUpperBound: 1.875;
+				xlUpperBound: 2.25;
+				xsLowerBound: 0.75;
+				xxlUpperBound: 2.625;
+				xxsLowerBound: 0.735;
+			};
+			tempEvoOverrides: [
+				{
+					sizeSettings: {
+						mLowerBound: 1.125;
+						mUpperBound: 1.875;
+						xlUpperBound: 2.25;
+						xsLowerBound: 0.75;
+						xxlUpperBound: 2.325;
+						xxsLowerBound: 0.735;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+			uniqueId: "DELPHOX";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0658PokemonGreninjaNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0658_POKEMON_GRENINJA_NORMAL",
+		{
+			form: "GRENINJA_NORMAL";
+			sizeSettings: {
+				mLowerBound: 1.125;
+				mUpperBound: 1.875;
+				xlUpperBound: 2.25;
+				xsLowerBound: 0.75;
+				xxlUpperBound: 2.625;
+				xxsLowerBound: 0.735;
+			};
+			tempEvoOverrides: [
+				{
+					sizeSettings: {
+						mLowerBound: 1.125;
+						mUpperBound: 1.875;
+						xlUpperBound: 2.25;
+						xsLowerBound: 0.75;
+						xxlUpperBound: 2.325;
+						xxsLowerBound: 0.735;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+			uniqueId: "GRENINJA";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0719PokemonDiancieNormal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0719_POKEMON_DIANCIE_NORMAL",
@@ -1409,5 +1499,8 @@ export type PokemonExtendedSettingsFormTempEvoOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0448PokemonLucarioNormal
 	| PokemonExtendedSettingsV0460PokemonAbomasnowNormal
 	| PokemonExtendedSettingsV0531PokemonAudinoNormal
+	| PokemonExtendedSettingsV0652PokemonChesnaughtNormal
+	| PokemonExtendedSettingsV0655PokemonDelphoxNormal
+	| PokemonExtendedSettingsV0658PokemonGreninjaNormal
 	| PokemonExtendedSettingsV0719PokemonDiancieNormal
 	| PokemonExtendedSettingsV0870PokemonFalinksGofest2025TrainConductor;

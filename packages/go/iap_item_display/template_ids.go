@@ -15,6 +15,9 @@ const (
 	IapItemDisplayTemplateIDAugust1DeluxeEventPassTrackUnlockPlusPoints            IapItemDisplayTemplateID = "AUGUST1_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
 	IapItemDisplayTemplateIDAugust2DeluxeEventPassTrackUnlock                      IapItemDisplayTemplateID = "AUGUST2_DELUXE_EVENT_PASS_TRACK_UNLOCK"
 	IapItemDisplayTemplateIDAugust2DeluxeEventPassTrackUnlockPlusPoints            IapItemDisplayTemplateID = "AUGUST2_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
+	IapItemDisplayTemplateIDAugust3DeluxeEventPassTrackUnlock                      IapItemDisplayTemplateID = "AUGUST3_DELUXE_EVENT_PASS_TRACK_UNLOCK"
+	IapItemDisplayTemplateIDAugust3DeluxeEventPassTrackUnlockPlusPoints            IapItemDisplayTemplateID = "AUGUST3_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
+	IapItemDisplayTemplateIDAugust3DeluxeEventPassTrackUnlockRedirect              IapItemDisplayTemplateID = "august3_deluxe_event_pass_track_unlock_redirect"
 	IapItemDisplayTemplateIDBattlepassticket1                                      IapItemDisplayTemplateID = "battlepassticket.1"
 	IapItemDisplayTemplateIDBundleEc200Rpp1                                        IapItemDisplayTemplateID = "BUNDLE_EC_200_RPP_1"
 	IapItemDisplayTemplateIDBundleEc600Rpp3                                        IapItemDisplayTemplateID = "BUNDLE_EC_600_RPP_3"
@@ -374,8 +377,6 @@ const (
 	IapItemDisplayTemplateIDPaidraidticket1                                        IapItemDisplayTemplateID = "paidraidticket.1"
 	IapItemDisplayTemplateIDPaidraidticket3                                        IapItemDisplayTemplateID = "paidraidticket.3"
 	IapItemDisplayTemplateIDPgoreleaseApril22026DeluxeEventPassTrackRedirect       IapItemDisplayTemplateID = "pgorelease.april2_2026_deluxe_event_pass_track_redirect"
-	IapItemDisplayTemplateIDPgoreleaseAugust1DeluxeEventPassTrackUnlock            IapItemDisplayTemplateID = "pgorelease.august1_deluxe_event_pass_track_unlock"
-	IapItemDisplayTemplateIDPgoreleaseAugust1DeluxeEventPassTrackUnlockPlusPoints  IapItemDisplayTemplateID = "pgorelease.august1_deluxe_event_pass_track_unlock_plus_points"
 	IapItemDisplayTemplateIDPgoreleaseBundle1                                      IapItemDisplayTemplateID = "pgorelease.bundle.1"
 	IapItemDisplayTemplateIDPgoreleaseBundle2                                      IapItemDisplayTemplateID = "pgorelease.bundle.2"
 	IapItemDisplayTemplateIDPgoreleaseBundleBlanchebox1                            IapItemDisplayTemplateID = "pgorelease.bundle.blanchebox.1"
@@ -1116,6 +1117,18 @@ const (
 	IapItemDisplayTemplateIDStickerWcs2025Murkrow5                                 IapItemDisplayTemplateID = "STICKER_WCS2025_MURKROW.5"
 	IapItemDisplayTemplateIDStickerWcs2025Pikachu3                                 IapItemDisplayTemplateID = "STICKER_WCS2025_PIKACHU.3"
 	IapItemDisplayTemplateIDStickerWcs2025Pikachu5                                 IapItemDisplayTemplateID = "STICKER_WCS2025_PIKACHU.5"
+	IapItemDisplayTemplateIDStickerWcspxp202613                                    IapItemDisplayTemplateID = "STICKER_WCSPXP2026_1.3"
+	IapItemDisplayTemplateIDStickerWcspxp202615                                    IapItemDisplayTemplateID = "STICKER_WCSPXP2026_1.5"
+	IapItemDisplayTemplateIDStickerWcspxp202623                                    IapItemDisplayTemplateID = "STICKER_WCSPXP2026_2.3"
+	IapItemDisplayTemplateIDStickerWcspxp202625                                    IapItemDisplayTemplateID = "STICKER_WCSPXP2026_2.5"
+	IapItemDisplayTemplateIDStickerWcspxp202633                                    IapItemDisplayTemplateID = "STICKER_WCSPXP2026_3.3"
+	IapItemDisplayTemplateIDStickerWcspxp202635                                    IapItemDisplayTemplateID = "STICKER_WCSPXP2026_3.5"
+	IapItemDisplayTemplateIDStickerWcspxp202643                                    IapItemDisplayTemplateID = "STICKER_WCSPXP2026_4.3"
+	IapItemDisplayTemplateIDStickerWcspxp202645                                    IapItemDisplayTemplateID = "STICKER_WCSPXP2026_4.5"
+	IapItemDisplayTemplateIDStickerWcspxp202653                                    IapItemDisplayTemplateID = "STICKER_WCSPXP2026_5.3"
+	IapItemDisplayTemplateIDStickerWcspxp202655                                    IapItemDisplayTemplateID = "STICKER_WCSPXP2026_5.5"
+	IapItemDisplayTemplateIDStickerWcspxp202663                                    IapItemDisplayTemplateID = "STICKER_WCSPXP2026_6.3"
+	IapItemDisplayTemplateIDStickerWcspxp202665                                    IapItemDisplayTemplateID = "STICKER_WCSPXP2026_6.5"
 	IapItemDisplayTemplateIDStickerWinter202413                                    IapItemDisplayTemplateID = "STICKER_WINTER_2024_1.3"
 	IapItemDisplayTemplateIDStickerWinter202415                                    IapItemDisplayTemplateID = "STICKER_WINTER_2024_1.5"
 	IapItemDisplayTemplateIDStickerWinter202423                                    IapItemDisplayTemplateID = "STICKER_WINTER_2024_2.3"
@@ -1187,6 +1200,9 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDAugust1DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDAugust2DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDAugust2DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDAugust3DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDAugust3DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDAugust3DeluxeEventPassTrackUnlockRedirect,
 	IapItemDisplayTemplateIDBattlepassticket1,
 	IapItemDisplayTemplateIDBundleEc200Rpp1,
 	IapItemDisplayTemplateIDBundleEc600Rpp3,
@@ -1546,8 +1562,6 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDPaidraidticket1,
 	IapItemDisplayTemplateIDPaidraidticket3,
 	IapItemDisplayTemplateIDPgoreleaseApril22026DeluxeEventPassTrackRedirect,
-	IapItemDisplayTemplateIDPgoreleaseAugust1DeluxeEventPassTrackUnlock,
-	IapItemDisplayTemplateIDPgoreleaseAugust1DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDPgoreleaseBundle1,
 	IapItemDisplayTemplateIDPgoreleaseBundle2,
 	IapItemDisplayTemplateIDPgoreleaseBundleBlanchebox1,
@@ -2288,6 +2302,18 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDStickerWcs2025Murkrow5,
 	IapItemDisplayTemplateIDStickerWcs2025Pikachu3,
 	IapItemDisplayTemplateIDStickerWcs2025Pikachu5,
+	IapItemDisplayTemplateIDStickerWcspxp202613,
+	IapItemDisplayTemplateIDStickerWcspxp202615,
+	IapItemDisplayTemplateIDStickerWcspxp202623,
+	IapItemDisplayTemplateIDStickerWcspxp202625,
+	IapItemDisplayTemplateIDStickerWcspxp202633,
+	IapItemDisplayTemplateIDStickerWcspxp202635,
+	IapItemDisplayTemplateIDStickerWcspxp202643,
+	IapItemDisplayTemplateIDStickerWcspxp202645,
+	IapItemDisplayTemplateIDStickerWcspxp202653,
+	IapItemDisplayTemplateIDStickerWcspxp202655,
+	IapItemDisplayTemplateIDStickerWcspxp202663,
+	IapItemDisplayTemplateIDStickerWcspxp202665,
 	IapItemDisplayTemplateIDStickerWinter202413,
 	IapItemDisplayTemplateIDStickerWinter202415,
 	IapItemDisplayTemplateIDStickerWinter202423,

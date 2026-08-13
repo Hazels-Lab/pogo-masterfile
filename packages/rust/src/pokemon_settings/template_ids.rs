@@ -217,6 +217,8 @@ pub enum PokemonSettingsTemplateId {
     V0025PokemonPikachuNormal,
     #[serde(rename = "V0025_POKEMON_PIKACHU_POP_STAR")]
     V0025PokemonPikachuPopStar,
+    #[serde(rename = "V0025_POKEMON_PIKACHU_PXP_2026")]
+    V0025PokemonPikachuPxp2026,
     #[serde(rename = "V0025_POKEMON_PIKACHU_ROCK_STAR")]
     V0025PokemonPikachuRockStar,
     #[serde(rename = "V0025_POKEMON_PIKACHU_SUMMER_2023_A")]
@@ -247,6 +249,8 @@ pub enum PokemonSettingsTemplateId {
     V0025PokemonPikachuWcs2024,
     #[serde(rename = "V0025_POKEMON_PIKACHU_WCS_2025")]
     V0025PokemonPikachuWcs2025,
+    #[serde(rename = "V0025_POKEMON_PIKACHU_WCS_2026")]
+    V0025PokemonPikachuWcs2026,
     #[serde(rename = "V0025_POKEMON_PIKACHU_WINTER_2020")]
     V0025PokemonPikachuWinter2020,
     #[serde(rename = "V0026_POKEMON_RAICHU")]

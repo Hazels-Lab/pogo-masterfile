@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonSettings", split "electric", 195 entries.
+// Generated from Pokémon GO masterfile — group "pokemonSettings", split "electric", 197 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonSettings } from "../types";
@@ -3834,6 +3834,87 @@ export type PokemonSettingsV0025PokemonPikachuPopStar = S<
 		}
 	>
 >;
+export type PokemonSettingsV0025PokemonPikachuPxp2026 = S<
+	PokemonSettings<
+		"V0025_POKEMON_PIKACHU_PXP_2026",
+		{
+			animationTime: [1.8333, 0.6667, 1.6, 1.5667, 0, 1.8, 1.1333, 1.066667];
+			breadTierGroup: "GROUP_1";
+			buddyGroupNumber: 1;
+			buddyOffsetFemale: [0, 0, 0];
+			buddyOffsetMale: [0, 0, 0];
+			buddyScale: 11;
+			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
+				},
+			];
+			camera: {
+				cylinderHeightM: 0.5;
+				cylinderRadiusM: 0.37;
+				diskRadiusM: 0.555;
+				shoulderModeScale: 0.5;
+			};
+			cinematicMoves: ["DISCHARGE", "THUNDERBOLT", "WILD_CHARGE"];
+			disableTransferToPokemonHome: true;
+			eliteCinematicMove: ["SURF", "THUNDER"];
+			eliteQuickMove: ["PRESENT_FAST"];
+			encounter: {
+				attackProbability: 0.1;
+				attackTimerS: 29;
+				cameraDistance: 2.775;
+				collisionHeadRadiusM: 0.13;
+				collisionHeightM: 0.16;
+				collisionRadiusM: 0.16;
+				dodgeDistance: 1;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.15;
+				jumpTimeS: 1;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementTimerS: 10;
+				movementType: "MOVEMENT_JUMP";
+			};
+			evolutionIds: ["RAICHU"];
+			evolutionPips: 1;
+			familyId: "FAMILY_PIKACHU";
+			form: "PIKACHU_PXP_2026";
+			heightStdDev: 0.05;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 1;
+			modelHeight: 0.4;
+			modelScale: 1.48;
+			modelScaleV2: 1.1;
+			parentPokemonId: "PICHU";
+			pokedexHeightM: 0.4;
+			pokedexWeightKg: 6;
+			pokemonId: "PIKACHU";
+			quickMoves: ["THUNDER_SHOCK_FAST", "QUICK_ATTACK_FAST"];
+			stats: {
+				baseAttack: 112;
+				baseDefense: 96;
+				baseStamina: 111;
+			};
+			thirdMove: {
+				candyToUnlock: 25;
+				stardustToUnlock: 10000;
+			};
+			type: "POKEMON_TYPE_ELECTRIC";
+			weightStdDev: 0.75;
+		}
+	>
+>;
 export type PokemonSettingsV0025PokemonPikachuRockStar = S<
 	PokemonSettings<
 		"V0025_POKEMON_PIKACHU_ROCK_STAR",
@@ -4995,6 +5076,87 @@ export type PokemonSettingsV0025PokemonPikachuWcs2025 = S<
 			evolutionPips: 1;
 			familyId: "FAMILY_PIKACHU";
 			form: "PIKACHU_WCS_2025";
+			heightStdDev: 0.05;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 1;
+			modelHeight: 0.4;
+			modelScale: 1.48;
+			modelScaleV2: 1.1;
+			parentPokemonId: "PICHU";
+			pokedexHeightM: 0.4;
+			pokedexWeightKg: 6;
+			pokemonId: "PIKACHU";
+			quickMoves: ["THUNDER_SHOCK_FAST", "QUICK_ATTACK_FAST"];
+			stats: {
+				baseAttack: 112;
+				baseDefense: 96;
+				baseStamina: 111;
+			};
+			thirdMove: {
+				candyToUnlock: 25;
+				stardustToUnlock: 10000;
+			};
+			type: "POKEMON_TYPE_ELECTRIC";
+			weightStdDev: 0.75;
+		}
+	>
+>;
+export type PokemonSettingsV0025PokemonPikachuWcs2026 = S<
+	PokemonSettings<
+		"V0025_POKEMON_PIKACHU_WCS_2026",
+		{
+			animationTime: [1.8333, 0.6667, 1.6, 1.5667, 0, 1.8, 1.1333, 1.066667];
+			breadTierGroup: "GROUP_1";
+			buddyGroupNumber: 1;
+			buddyOffsetFemale: [0, 0, 0];
+			buddyOffsetMale: [0, 0, 0];
+			buddyScale: 11;
+			buddySize: "BUDDY_SHOULDER";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
+				},
+				{
+					megaEnergyAwardAmount: 5;
+					megaPokemonId: "RAICHU";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
+				},
+			];
+			camera: {
+				cylinderHeightM: 0.5;
+				cylinderRadiusM: 0.37;
+				diskRadiusM: 0.555;
+				shoulderModeScale: 0.5;
+			};
+			cinematicMoves: ["DISCHARGE", "THUNDERBOLT", "WILD_CHARGE"];
+			disableTransferToPokemonHome: true;
+			eliteCinematicMove: ["SURF", "THUNDER"];
+			eliteQuickMove: ["PRESENT_FAST"];
+			encounter: {
+				attackProbability: 0.1;
+				attackTimerS: 29;
+				cameraDistance: 2.775;
+				collisionHeadRadiusM: 0.13;
+				collisionHeightM: 0.16;
+				collisionRadiusM: 0.16;
+				dodgeDistance: 1;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.15;
+				jumpTimeS: 1;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementTimerS: 10;
+				movementType: "MOVEMENT_JUMP";
+			};
+			evolutionIds: ["RAICHU"];
+			evolutionPips: 1;
+			familyId: "FAMILY_PIKACHU";
+			form: "PIKACHU_WCS_2026";
 			heightStdDev: 0.05;
 			ibfc: object;
 			isDeployable: true;
@@ -14296,6 +14458,7 @@ export type PokemonSettingsElectricMasterfileEntry =
 	| PokemonSettingsV0025PokemonPikachuKurta
 	| PokemonSettingsV0025PokemonPikachuNormal
 	| PokemonSettingsV0025PokemonPikachuPopStar
+	| PokemonSettingsV0025PokemonPikachuPxp2026
 	| PokemonSettingsV0025PokemonPikachuRockStar
 	| PokemonSettingsV0025PokemonPikachuSummer2023A
 	| PokemonSettingsV0025PokemonPikachuSummer2023B
@@ -14311,6 +14474,7 @@ export type PokemonSettingsElectricMasterfileEntry =
 	| PokemonSettingsV0025PokemonPikachuWcs2023
 	| PokemonSettingsV0025PokemonPikachuWcs2024
 	| PokemonSettingsV0025PokemonPikachuWcs2025
+	| PokemonSettingsV0025PokemonPikachuWcs2026
 	| PokemonSettingsV0025PokemonPikachuWinter2020
 	| PokemonSettingsV0026PokemonRaichu
 	| PokemonSettingsV0026PokemonRaichuAlola

@@ -20,6 +20,8 @@ const (
 	FeatureGateTemplateIDGamesiteWebviewNearbyButtonsFeatureGate            FeatureGateTemplateID = "GAMESITE_WEBVIEW_NEARBY_BUTTONS_FEATURE_GATE"
 	FeatureGateTemplateIDHideCampfireMapButtonsFeatureGate                  FeatureGateTemplateID = "HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE"
 	FeatureGateTemplateIDMega2026FeatureGate                                FeatureGateTemplateID = "MEGA_2026_FEATURE_GATE"
+	FeatureGateTemplateIDMepEggReadMigrationFeatureGate                     FeatureGateTemplateID = "MEP_EGG_READ_MIGRATION_FEATURE_GATE"
+	FeatureGateTemplateIDMepEggWriteMigrationFeatureGate                    FeatureGateTemplateID = "MEP_EGG_WRITE_MIGRATION_FEATURE_GATE"
 	FeatureGateTemplateIDSeafGetMapObjectsRateLimiterFeatureGate            FeatureGateTemplateID = "SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE"
 	FeatureGateTemplateIDUpdateTicketsStringFeatureGate                     FeatureGateTemplateID = "UPDATE_TICKETS_STRING_FEATURE_GATE"
 	FeatureGateTemplateIDVnextPreResponseInputBlockingBehaviorFeatureGate   FeatureGateTemplateID = "VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE"
@@ -41,6 +43,8 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDGamesiteWebviewNearbyButtonsFeatureGate,
 	FeatureGateTemplateIDHideCampfireMapButtonsFeatureGate,
 	FeatureGateTemplateIDMega2026FeatureGate,
+	FeatureGateTemplateIDMepEggReadMigrationFeatureGate,
+	FeatureGateTemplateIDMepEggWriteMigrationFeatureGate,
 	FeatureGateTemplateIDSeafGetMapObjectsRateLimiterFeatureGate,
 	FeatureGateTemplateIDUpdateTicketsStringFeatureGate,
 	FeatureGateTemplateIDVnextPreResponseInputBlockingBehaviorFeatureGate,

@@ -11,6 +11,9 @@ import type {
 	IapItemDisplayAugust1DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayAugust2DeluxeEventPassTrackUnlock,
 	IapItemDisplayAugust2DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayAugust3DeluxeEventPassTrackUnlock,
+	IapItemDisplayAugust3DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayAugust3DeluxeEventPassTrackUnlockRedirect,
 	IapItemDisplayBattlepassticket1,
 	IapItemDisplayBundleAdventurebrazil1001,
 	IapItemDisplayBundleAdventurebrazil2001,
@@ -370,8 +373,6 @@ import type {
 	IapItemDisplayPaidraidticket1,
 	IapItemDisplayPaidraidticket3,
 	IapItemDisplayPgoreleaseApril22026DeluxeEventPassTrackRedirect,
-	IapItemDisplayPgoreleaseAugust1DeluxeEventPassTrackUnlock,
-	IapItemDisplayPgoreleaseAugust1DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayPgoreleaseBundle1,
 	IapItemDisplayPgoreleaseBundle2,
 	IapItemDisplayPgoreleaseBundleBlanchebox1,
@@ -1112,6 +1113,18 @@ import type {
 	IapItemDisplayStickerWcs2025Murkrow5,
 	IapItemDisplayStickerWcs2025Pikachu3,
 	IapItemDisplayStickerWcs2025Pikachu5,
+	IapItemDisplayStickerWcspxp202613,
+	IapItemDisplayStickerWcspxp202615,
+	IapItemDisplayStickerWcspxp202623,
+	IapItemDisplayStickerWcspxp202625,
+	IapItemDisplayStickerWcspxp202633,
+	IapItemDisplayStickerWcspxp202635,
+	IapItemDisplayStickerWcspxp202643,
+	IapItemDisplayStickerWcspxp202645,
+	IapItemDisplayStickerWcspxp202653,
+	IapItemDisplayStickerWcspxp202655,
+	IapItemDisplayStickerWcspxp202663,
+	IapItemDisplayStickerWcspxp202665,
 	IapItemDisplayStickerWinter202313,
 	IapItemDisplayStickerWinter202315,
 	IapItemDisplayStickerWinter202323,
@@ -1183,6 +1196,9 @@ export interface IapItemDisplayLookup {
 	AUGUST1_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayAugust1DeluxeEventPassTrackUnlockPlusPoints;
 	AUGUST2_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayAugust2DeluxeEventPassTrackUnlock;
 	AUGUST2_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayAugust2DeluxeEventPassTrackUnlockPlusPoints;
+	AUGUST3_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayAugust3DeluxeEventPassTrackUnlock;
+	AUGUST3_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayAugust3DeluxeEventPassTrackUnlockPlusPoints;
+	august3_deluxe_event_pass_track_unlock_redirect: IapItemDisplayAugust3DeluxeEventPassTrackUnlockRedirect;
 	"battlepassticket.1": IapItemDisplayBattlepassticket1;
 	BUNDLE_EC_200_RPP_1: IapItemDisplayBundleEc200Rpp1;
 	BUNDLE_EC_600_RPP_3: IapItemDisplayBundleEc600Rpp3;
@@ -1542,8 +1558,6 @@ export interface IapItemDisplayLookup {
 	"paidraidticket.1": IapItemDisplayPaidraidticket1;
 	"paidraidticket.3": IapItemDisplayPaidraidticket3;
 	"pgorelease.april2_2026_deluxe_event_pass_track_redirect": IapItemDisplayPgoreleaseApril22026DeluxeEventPassTrackRedirect;
-	"pgorelease.august1_deluxe_event_pass_track_unlock": IapItemDisplayPgoreleaseAugust1DeluxeEventPassTrackUnlock;
-	"pgorelease.august1_deluxe_event_pass_track_unlock_plus_points": IapItemDisplayPgoreleaseAugust1DeluxeEventPassTrackUnlockPlusPoints;
 	"pgorelease.bundle.1": IapItemDisplayPgoreleaseBundle1;
 	"pgorelease.bundle.2": IapItemDisplayPgoreleaseBundle2;
 	"pgorelease.bundle.blanchebox.1": IapItemDisplayPgoreleaseBundleBlanchebox1;
@@ -2284,6 +2298,18 @@ export interface IapItemDisplayLookup {
 	"STICKER_WCS2025_MURKROW.5": IapItemDisplayStickerWcs2025Murkrow5;
 	"STICKER_WCS2025_PIKACHU.3": IapItemDisplayStickerWcs2025Pikachu3;
 	"STICKER_WCS2025_PIKACHU.5": IapItemDisplayStickerWcs2025Pikachu5;
+	"STICKER_WCSPXP2026_1.3": IapItemDisplayStickerWcspxp202613;
+	"STICKER_WCSPXP2026_1.5": IapItemDisplayStickerWcspxp202615;
+	"STICKER_WCSPXP2026_2.3": IapItemDisplayStickerWcspxp202623;
+	"STICKER_WCSPXP2026_2.5": IapItemDisplayStickerWcspxp202625;
+	"STICKER_WCSPXP2026_3.3": IapItemDisplayStickerWcspxp202633;
+	"STICKER_WCSPXP2026_3.5": IapItemDisplayStickerWcspxp202635;
+	"STICKER_WCSPXP2026_4.3": IapItemDisplayStickerWcspxp202643;
+	"STICKER_WCSPXP2026_4.5": IapItemDisplayStickerWcspxp202645;
+	"STICKER_WCSPXP2026_5.3": IapItemDisplayStickerWcspxp202653;
+	"STICKER_WCSPXP2026_5.5": IapItemDisplayStickerWcspxp202655;
+	"STICKER_WCSPXP2026_6.3": IapItemDisplayStickerWcspxp202663;
+	"STICKER_WCSPXP2026_6.5": IapItemDisplayStickerWcspxp202665;
 	"STICKER_WINTER_2024_1.3": IapItemDisplayStickerWinter202413;
 	"STICKER_WINTER_2024_1.5": IapItemDisplayStickerWinter202415;
 	"STICKER_WINTER_2024_2.3": IapItemDisplayStickerWinter202423;

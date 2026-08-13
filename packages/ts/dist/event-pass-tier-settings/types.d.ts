@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 540 entries (structural types).
+// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 420 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -14,35 +14,27 @@ export type EventPassTierSettingsType = W<EventPassTierSettings>;
 export interface EventPassTierSettingsData {
 	activeBonusDisplaySettings?: {
 		bonusBoxes: Array<{
-			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "POKESTOP" | "TRADE";
+			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "TRADE";
 			text:
 				| "dai_duration_double"
 				| "daily_free_single_incubator"
 				| "gift_open_more_daily"
 				| "gift_storage_more"
-				| "incubator_distance_half"
-				| "incubator_distance_quarter"
-				| "pokestop_spin_xp_double"
-				| "pokestop_spin_xp_triple"
 				| "season_pass_bonus_hatch_xp_stardust"
 				| "trade_extra_candy"
 				| "trade_guaranteed_candyxl";
 		}>;
-		eventName?: "go_pass_cumulative_bonuses_header";
+		eventName: "go_pass_cumulative_bonuses_header";
 	};
 	bonusSettings?: {
 		bonusBoxes: Array<{
-			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "POKESTOP" | "TRADE";
+			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "TRADE";
 			text:
 				| "dai_duration_double"
 				| "daily_free_single_incubator"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
 				| "gift_storage_more"
-				| "incubator_distance_half"
-				| "incubator_distance_quarter"
-				| "pokestop_spin_xp_double"
-				| "pokestop_spin_xp_triple"
 				| "season_pass_bonus_hatch_xp_stardust"
 				| "trade_extra_candy"
 				| "trade_guaranteed_candyxl";
@@ -76,12 +68,9 @@ export interface EventPassTierSettingsData {
 				| "MUDKIP"
 				| "ORTHWORM"
 				| "POLTCHAGEIST"
-				| "PONYTA"
 				| "ROCKRUFF"
 				| "SINISTEA"
-				| "SLUGMA"
 				| "SNOM"
-				| "SNOVER"
 				| "SOBBLE"
 				| "STANTLER"
 				| "SWINUB"
@@ -96,8 +85,6 @@ export interface EventPassTierSettingsData {
 				| "ITEM_GOLDEN_RAZZ_BERRY"
 				| "ITEM_GREAT_BALL"
 				| "ITEM_INCENSE_ORDINARY"
-				| "ITEM_INCUBATOR_BASIC"
-				| "ITEM_INCUBATOR_SUPER"
 				| "ITEM_LEADER_MAP_FRAGMENT"
 				| "ITEM_LUCKY_EGG"
 				| "ITEM_LUCKY_FRIEND_APPLICATOR"
@@ -106,7 +93,6 @@ export interface EventPassTierSettingsData {
 				| "ITEM_MP"
 				| "ITEM_NANAB_BERRY"
 				| "ITEM_PAID_RAID_TICKET"
-				| "ITEM_PINAP_BERRY"
 				| "ITEM_POFFIN"
 				| "ITEM_POKE_BALL"
 				| "ITEM_RARE_CANDY"
@@ -124,14 +110,10 @@ export interface EventPassTierSettingsData {
 				| "august2026_season_pass_rank_01_paid"
 				| "august2026_season_pass_rank_02"
 				| "august2026_season_pass_rank_03"
-				| "august2026_season_pass_rank_04"
-				| "summermarathon2026_season_pass_rank_01_free"
-				| "summermarathon2026_season_pass_rank_01_paid"
-				| "summermarathon2026_season_pass_rank_02_free"
-				| "summermarathon2026_season_pass_rank_02_paid";
+				| "august2026_season_pass_rank_04";
 		};
 		pokemonEncounter?: {
-			isFeaturedPokemon?: boolean;
+			isFeaturedPokemon: boolean;
 			pokemonDisplay?: {
 				breadModeEnum?: "BREAD_MODE";
 				form:
@@ -140,8 +122,6 @@ export interface EventPassTierSettingsData {
 					| "AUDINO_NORMAL"
 					| "CHIMECHO_NORMAL"
 					| "CLAMPERL_NORMAL"
-					| "DARUMAKA_GALARIAN"
-					| "DARUMAKA_NORMAL"
 					| "DONDOZO_NORMAL"
 					| "EEVEE_NORMAL"
 					| "FRILLISH_NORMAL"
@@ -155,18 +135,11 @@ export interface EventPassTierSettingsData {
 					| "MEOWTH_NORMAL"
 					| "MUDKIP_NORMAL"
 					| "ORTHWORM_NORMAL"
-					| "PONYTA_NORMAL"
 					| "ROCKRUFF_NORMAL"
-					| "SIZZLIPEDE_NORMAL"
-					| "SLUGMA_NORMAL"
-					| "SNEASEL_NORMAL"
 					| "SNOM_NORMAL"
-					| "SNOVER_NORMAL"
 					| "SOBBLE_NORMAL"
 					| "SWINUB_NORMAL"
 					| "TOGEDEMARU_NORMAL"
-					| "VULPIX_ALOLA"
-					| "VULPIX_NORMAL"
 					| "WYRDEER_NORMAL"
 					| "ZWEILOUS_NORMAL";
 			};
@@ -176,7 +149,6 @@ export interface EventPassTierSettingsData {
 				| "AUDINO"
 				| "CHIMECHO"
 				| "CLAMPERL"
-				| "DARUMAKA"
 				| "DONDOZO"
 				| "EEVEE"
 				| "FRILLISH"
@@ -189,18 +161,12 @@ export interface EventPassTierSettingsData {
 				| "MUDKIP"
 				| "ORTHWORM"
 				| "POLTCHAGEIST"
-				| "PONYTA"
 				| "ROCKRUFF"
 				| "SINISTEA"
-				| "SIZZLIPEDE"
-				| "SLUGMA"
-				| "SNEASEL"
 				| "SNOM"
-				| "SNOVER"
 				| "SOBBLE"
 				| "SWINUB"
 				| "TOGEDEMARU"
-				| "VULPIX"
 				| "WYRDEER"
 				| "ZWEILOUS";
 			statsLimitsOverride?: {
@@ -224,11 +190,8 @@ export interface EventPassTierSettingsData {
 				| "JANGMO_O"
 				| "LATIAS"
 				| "MEOWTH"
-				| "PONYTA"
 				| "SINISTEA"
-				| "SLUGMA"
 				| "SNOM"
-				| "SNOVER"
 				| "SOBBLE"
 				| "STANTLER"
 				| "SWINUB"

@@ -7562,6 +7562,7 @@ export type PokemonSettingsV0655PokemonDelphox = S<
 			buddyOffsetMale: [17.5, 0, 57.5];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 1.8;
 				cylinderRadiusM: 0.8;
@@ -7590,6 +7591,13 @@ export type PokemonSettingsV0655PokemonDelphox = S<
 				shadowBaseCaptureRate: 0.05;
 				shadowDodgeProbability: 0.2;
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 80;
+				},
+			];
 			familyId: "FAMILY_FENNEKIN";
 			heightStdDev: 0.1875;
 			ibfc: object;
@@ -7616,6 +7624,25 @@ export type PokemonSettingsV0655PokemonDelphox = S<
 				baseDefense: 189;
 				baseStamina: 181;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 1.5;
+					averageWeightKg: 39;
+					buddyPortraitOffset: [0, 0, -300];
+					camera: {
+						cylinderHeightM: 3;
+						cylinderRadiusM: 1.6;
+					};
+					stats: {
+						baseAttack: 331;
+						baseDefense: 235;
+						baseStamina: 181;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+					typeOverride1: "POKEMON_TYPE_FIRE";
+					typeOverride2: "POKEMON_TYPE_PSYCHIC";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 25;
 				stardustToUnlock: 10000;
@@ -7637,6 +7664,7 @@ export type PokemonSettingsV0655PokemonDelphoxNormal = S<
 			buddyOffsetMale: [17.5, 0, 57.5];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 1.8;
 				cylinderRadiusM: 0.8;
@@ -7665,6 +7693,13 @@ export type PokemonSettingsV0655PokemonDelphoxNormal = S<
 				shadowBaseCaptureRate: 0.05;
 				shadowDodgeProbability: 0.2;
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 80;
+				},
+			];
 			familyId: "FAMILY_FENNEKIN";
 			form: "DELPHOX_NORMAL";
 			heightStdDev: 0.1875;
@@ -7692,6 +7727,25 @@ export type PokemonSettingsV0655PokemonDelphoxNormal = S<
 				baseDefense: 189;
 				baseStamina: 181;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 1.5;
+					averageWeightKg: 39;
+					buddyPortraitOffset: [0, 0, -300];
+					camera: {
+						cylinderHeightM: 3;
+						cylinderRadiusM: 1.6;
+					};
+					stats: {
+						baseAttack: 331;
+						baseDefense: 235;
+						baseStamina: 181;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+					typeOverride1: "POKEMON_TYPE_FIRE";
+					typeOverride2: "POKEMON_TYPE_PSYCHIC";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 25;
 				stardustToUnlock: 10000;

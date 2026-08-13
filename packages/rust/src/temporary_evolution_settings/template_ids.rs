@@ -113,6 +113,12 @@ pub enum TemporaryEvolutionSettingsTemplateId {
     TemporaryEvolutionV0475PokemonGallade,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0531_POKEMON_AUDINO")]
     TemporaryEvolutionV0531PokemonAudino,
+    #[serde(rename = "TEMPORARY_EVOLUTION_V0652_POKEMON_CHESNAUGHT")]
+    TemporaryEvolutionV0652PokemonChesnaught,
+    #[serde(rename = "TEMPORARY_EVOLUTION_V0655_POKEMON_DELPHOX")]
+    TemporaryEvolutionV0655PokemonDelphox,
+    #[serde(rename = "TEMPORARY_EVOLUTION_V0658_POKEMON_GRENINJA")]
+    TemporaryEvolutionV0658PokemonGreninja,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0687_POKEMON_MALAMAR")]
     TemporaryEvolutionV0687PokemonMalamar,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0719_POKEMON_DIANCIE")]

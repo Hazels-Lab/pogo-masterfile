@@ -5,7 +5,6 @@ import type {
 	CodeGateProtoCombatVnextCodeGate,
 	CodeGateProtoInputTrackerCodeGate,
 	CodeGateProtoIsSkuAvailableNoAppIdCodeGate,
-	CodeGateProtoStampCollectionSnapshotEnabledCodeGate,
 	CodeGateProtoTodayViewV3CodeGate,
 	CodeGateProtoUseGmtSkuDataCodeGate,
 } from "./entries";
@@ -15,7 +14,6 @@ export interface CodeGateProtoLookup {
 	COMBAT_VNEXT_CODE_GATE: CodeGateProtoCombatVnextCodeGate;
 	INPUT_TRACKER_CODE_GATE: CodeGateProtoInputTrackerCodeGate;
 	IS_SKU_AVAILABLE_NO_APP_ID_CODE_GATE: CodeGateProtoIsSkuAvailableNoAppIdCodeGate;
-	STAMP_COLLECTION_SNAPSHOT_ENABLED_CODE_GATE: CodeGateProtoStampCollectionSnapshotEnabledCodeGate;
 	TODAY_VIEW_V3_CODE_GATE: CodeGateProtoTodayViewV3CodeGate;
 	USE_GMT_SKU_DATA_CODE_GATE: CodeGateProtoUseGmtSkuDataCodeGate;
 }

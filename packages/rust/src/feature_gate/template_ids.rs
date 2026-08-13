@@ -37,6 +37,10 @@ pub enum FeatureGateTemplateId {
     HideCampfireMapButtonsFeatureGate,
     #[serde(rename = "MEGA_2026_FEATURE_GATE")]
     Mega2026FeatureGate,
+    #[serde(rename = "MEP_EGG_READ_MIGRATION_FEATURE_GATE")]
+    MepEggReadMigrationFeatureGate,
+    #[serde(rename = "MEP_EGG_WRITE_MIGRATION_FEATURE_GATE")]
+    MepEggWriteMigrationFeatureGate,
     #[serde(rename = "SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE")]
     SeafGetMapObjectsRateLimiterFeatureGate,
     #[serde(rename = "UPDATE_TICKETS_STRING_FEATURE_GATE")]
