@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1178 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1173 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -1887,40 +1887,6 @@ export type PokemonExtendedSettingsV0110PokemonWeezingNormal = S<
 				xxsLowerBound: 0.588;
 			};
 			uniqueId: "WEEZING";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0111PokemonRhyhornNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0111_POKEMON_RHYHORN_NORMAL",
-		{
-			form: "RHYHORN_NORMAL";
-			sizeSettings: {
-				mLowerBound: 0.75;
-				mUpperBound: 1.25;
-				xlUpperBound: 1.5;
-				xsLowerBound: 0.5;
-				xxlUpperBound: 1.75;
-				xxsLowerBound: 0.49;
-			};
-			uniqueId: "RHYHORN";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0112PokemonRhydonNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0112_POKEMON_RHYDON_NORMAL",
-		{
-			form: "RHYDON_NORMAL";
-			sizeSettings: {
-				mLowerBound: 1.425;
-				mUpperBound: 2.375;
-				xlUpperBound: 2.85;
-				xsLowerBound: 0.95;
-				xxlUpperBound: 3.325;
-				xxsLowerBound: 0.931;
-			};
-			uniqueId: "RHYDON";
 		}
 	>
 >;
@@ -3970,23 +3936,6 @@ export type PokemonExtendedSettingsV0215PokemonSneaselHisuian = S<
 				xsLowerBound: 0.45;
 				xxlUpperBound: 1.575;
 				xxsLowerBound: 0.441;
-			};
-			uniqueId: "SNEASEL";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0215PokemonSneaselNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0215_POKEMON_SNEASEL_NORMAL",
-		{
-			form: "SNEASEL_NORMAL";
-			sizeSettings: {
-				mLowerBound: 0.6675;
-				mUpperBound: 1.1125;
-				xlUpperBound: 1.335;
-				xsLowerBound: 0.445;
-				xxlUpperBound: 1.5575;
-				xxsLowerBound: 0.4361;
 			};
 			uniqueId: "SNEASEL";
 		}
@@ -7905,23 +7854,6 @@ export type PokemonExtendedSettingsV0459PokemonSnoverNormal = S<
 		}
 	>
 >;
-export type PokemonExtendedSettingsV0461PokemonWeavileNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0461_POKEMON_WEAVILE_NORMAL",
-		{
-			form: "WEAVILE_NORMAL";
-			sizeSettings: {
-				mLowerBound: 0.825;
-				mUpperBound: 1.375;
-				xlUpperBound: 1.65;
-				xsLowerBound: 0.55;
-				xxlUpperBound: 1.705;
-				xxsLowerBound: 0.539;
-			};
-			uniqueId: "WEAVILE";
-		}
-	>
->;
 export type PokemonExtendedSettingsV0462PokemonMagnezoneNormal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0462_POKEMON_MAGNEZONE_NORMAL",
@@ -7953,23 +7885,6 @@ export type PokemonExtendedSettingsV0463PokemonLickilickyNormal = S<
 				xxsLowerBound: 0.833;
 			};
 			uniqueId: "LICKILICKY";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0464PokemonRhyperiorNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0464_POKEMON_RHYPERIOR_NORMAL",
-		{
-			form: "RHYPERIOR_NORMAL";
-			sizeSettings: {
-				mLowerBound: 1.8;
-				mUpperBound: 3;
-				xlUpperBound: 3.6;
-				xsLowerBound: 1.2;
-				xxlUpperBound: 3.72;
-				xxsLowerBound: 1.176;
-			};
-			uniqueId: "RHYPERIOR";
 		}
 	>
 >;
@@ -20292,8 +20207,6 @@ export type PokemonExtendedSettingsFormMasterfileEntry =
 	| PokemonExtendedSettingsV0109PokemonKoffingNormal
 	| PokemonExtendedSettingsV0110PokemonWeezingGalarian
 	| PokemonExtendedSettingsV0110PokemonWeezingNormal
-	| PokemonExtendedSettingsV0111PokemonRhyhornNormal
-	| PokemonExtendedSettingsV0112PokemonRhydonNormal
 	| PokemonExtendedSettingsV0114PokemonTangelaNormal
 	| PokemonExtendedSettingsV0116PokemonHorseaNormal
 	| PokemonExtendedSettingsV0117PokemonSeadraNormal
@@ -20413,7 +20326,6 @@ export type PokemonExtendedSettingsFormMasterfileEntry =
 	| PokemonExtendedSettingsV0211PokemonQwilfishHisuian
 	| PokemonExtendedSettingsV0211PokemonQwilfishNormal
 	| PokemonExtendedSettingsV0215PokemonSneaselHisuian
-	| PokemonExtendedSettingsV0215PokemonSneaselNormal
 	| PokemonExtendedSettingsV0216PokemonTeddiursaNormal
 	| PokemonExtendedSettingsV0217PokemonUrsaringNormal
 	| PokemonExtendedSettingsV0218PokemonSlugmaNormal
@@ -20643,10 +20555,8 @@ export type PokemonExtendedSettingsFormMasterfileEntry =
 	| PokemonExtendedSettingsV0457PokemonLumineonNormal
 	| PokemonExtendedSettingsV0458PokemonMantykeNormal
 	| PokemonExtendedSettingsV0459PokemonSnoverNormal
-	| PokemonExtendedSettingsV0461PokemonWeavileNormal
 	| PokemonExtendedSettingsV0462PokemonMagnezoneNormal
 	| PokemonExtendedSettingsV0463PokemonLickilickyNormal
-	| PokemonExtendedSettingsV0464PokemonRhyperiorNormal
 	| PokemonExtendedSettingsV0465PokemonTangrowthNormal
 	| PokemonExtendedSettingsV0468PokemonTogekissNormal
 	| PokemonExtendedSettingsV0469PokemonYanmegaNormal

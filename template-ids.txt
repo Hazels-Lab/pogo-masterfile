@@ -2066,6 +2066,7 @@ BADGE_EVENT_0225
 BADGE_EVENT_0227
 BADGE_EVENT_0231
 BADGE_EVENT_0234
+BADGE_EVENT_0236
 BADGE_EVENT_0253
 BADGE_EVENT_0279
 BADGE_EVENT_0280
@@ -18127,6 +18128,7 @@ mp_replenish_rrp.3
 paidraidticket.1
 paidraidticket.3
 pgorelease.april2_2026_deluxe_event_pass_track_redirect
+pgorelease.august3_deluxe_event_pass_track_unlock_redirect
 pgorelease.bundle.1
 pgorelease.bundle.2
 pgorelease.bundle.RTSRaid

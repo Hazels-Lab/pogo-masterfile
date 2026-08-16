@@ -5661,6 +5661,7 @@ export type PokemonSettingsV0828PokemonThievul = S<
 				cylinderRadiusM: 1.1;
 			};
 			cinematicMoves: ["NIGHT_SLASH", "PLAY_ROUGH"];
+			eliteCinematicMove: ["ICY_WIND"];
 			encounter: {
 				attackProbability: 0.4;
 				bonusCandyCaptureReward: 2;
@@ -5721,6 +5722,7 @@ export type PokemonSettingsV0828PokemonThievulNormal = S<
 				cylinderRadiusM: 1.1;
 			};
 			cinematicMoves: ["NIGHT_SLASH", "PLAY_ROUGH"];
+			eliteCinematicMove: ["ICY_WIND"];
 			encounter: {
 				attackProbability: 0.4;
 				bonusCandyCaptureReward: 2;

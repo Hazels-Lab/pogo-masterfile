@@ -751,6 +751,8 @@ pub enum IapItemDisplayTemplateId {
     Paidraidticket3,
     #[serde(rename = "pgorelease.april2_2026_deluxe_event_pass_track_redirect")]
     PgoreleaseApril22026DeluxeEventPassTrackRedirect,
+    #[serde(rename = "pgorelease.august3_deluxe_event_pass_track_unlock_redirect")]
+    PgoreleaseAugust3DeluxeEventPassTrackUnlockRedirect,
     #[serde(rename = "pgorelease.bundle.1")]
     PgoreleaseBundle1,
     #[serde(rename = "pgorelease.bundle.2")]

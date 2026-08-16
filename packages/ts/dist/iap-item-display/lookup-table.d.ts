@@ -373,6 +373,7 @@ import type {
 	IapItemDisplayPaidraidticket1,
 	IapItemDisplayPaidraidticket3,
 	IapItemDisplayPgoreleaseApril22026DeluxeEventPassTrackRedirect,
+	IapItemDisplayPgoreleaseAugust3DeluxeEventPassTrackUnlockRedirect,
 	IapItemDisplayPgoreleaseBundle1,
 	IapItemDisplayPgoreleaseBundle2,
 	IapItemDisplayPgoreleaseBundleBlanchebox1,
@@ -1558,6 +1559,7 @@ export interface IapItemDisplayLookup {
 	"paidraidticket.1": IapItemDisplayPaidraidticket1;
 	"paidraidticket.3": IapItemDisplayPaidraidticket3;
 	"pgorelease.april2_2026_deluxe_event_pass_track_redirect": IapItemDisplayPgoreleaseApril22026DeluxeEventPassTrackRedirect;
+	"pgorelease.august3_deluxe_event_pass_track_unlock_redirect": IapItemDisplayPgoreleaseAugust3DeluxeEventPassTrackUnlockRedirect;
 	"pgorelease.bundle.1": IapItemDisplayPgoreleaseBundle1;
 	"pgorelease.bundle.2": IapItemDisplayPgoreleaseBundle2;
 	"pgorelease.bundle.blanchebox.1": IapItemDisplayPgoreleaseBundleBlanchebox1;

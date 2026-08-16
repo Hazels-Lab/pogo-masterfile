@@ -2788,7 +2788,7 @@ export interface EventMapRefreshSettings {
 	data: {
 		templateId: "EVENT_SERVER_SETTINGS";
 		eventMapRefreshSettings: {
-			eventServerSettingsHash: "484769a62f4e0466590d0664cf05f427914e6cdaba72145abdf07651bba66698";
+			eventServerSettingsHash: "f053bb4654fdf6445dfeead6208d3641627cda61ef1905f272ee69f3ba54c7ab";
 		};
 	};
 }
@@ -5366,7 +5366,7 @@ export interface RoutePlaySettings {
 			obRoutePlaySettingsNumber29: 1;
 			obRoutePlaySettingsNumber30: 27;
 			obRoutePlaySettingsNumber33: 7;
-			obRoutePlaySettingsNumber45: 1;
+			obRoutePlaySettingsNumber45: 6;
 			resumeRangeMeters: 40;
 			routeEngagementStatsShardCount: 3;
 			routeExpirationMinutes: 185;

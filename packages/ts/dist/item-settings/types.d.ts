@@ -101,7 +101,7 @@ export interface ItemSettingsData {
 			| "EVENT_PASS_GOTOUR2026_IRL"
 			| "EVENT_PASS_GOWA_2025"
 			| "EVENT_PASS_JULY2026_SEASON"
-			| "EVENT_PASS_JUNE2026_SEASON"
+			| "EVENT_PASS_SEPTEMBER2026_SEASON"
 			| "EVENT_PASS_SPRINGMARATHON2026_EVENT"
 			| "EVENT_PASS_STEELEDRESOLVE2026_EVENT"
 			| "EVENT_PASS_SUMMER_MARATHON_2026_EVENT"
@@ -515,7 +515,7 @@ export interface ItemSettingsData {
 	ignoreInventorySpace?: boolean;
 	incense?: {
 		incenseLifetimeSeconds: number;
-		spawnTableProbability?: number;
+		spawnTableProbability: number;
 	};
 	incidentTicket?: {
 		ignoreFullInventory?: boolean;

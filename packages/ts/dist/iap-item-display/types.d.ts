@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1182 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1183 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -49,15 +49,14 @@ export interface IapItemDisplayData {
 	imageUrl?:
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F1e924512_PGO-MCS_GO_Fest_2026_EMEA_Global_LiveOp_v3-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F07b0cffa_PGO-MCS_2026_Ultra_Unlock_01_v6-1024x576.jpg"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20ad29e8_PGO-MCS_Water_Festival_2026_TICKET_v3-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F68bf81f3_PGO-MCS_GO_Pass_Special_Anniversary_Pikachu_Celebration_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F84f00147_PGO-MCS_GO_Pass_August_2026_TICKET_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F11274b46_PGO_MCS_CD_KeyArt_Nickit_v1-1024x576-nologo.jpg"
-		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F73951fa4_20260428_pgo_s23_gopass_june_ticket_1024x576_nologo%20(1).jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F53190080_PGO-MCS_Flying_Taxi_TICKET_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Faab1ed22_PGO-MCS_Summer_Marathon_Fire_Ice_v3b-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fd07cba0c_PGO-MCS_GOFest_2026_GOPass_v3-16x9.jpg"
-		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe8d77631_PGO-MCS_Water_Festival_2026_TICKET_v2-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe3025fe6_PGO-MCS_GO_Fest_2026_AMER_Global_LiveOp_v2-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FEvent%20Pass%20Placeholder.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff2c7f843_PGO-MCS_GO_Pass_July_2026_ticket_v1-1024x576_nologo.jpg"
@@ -86,6 +85,7 @@ export interface IapItemDisplayData {
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F3b085206_PGO-MCS_10th_Anniversary_Celebration_TICKET_v2-1024x576.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F9398cb22_PGO-MCS_Skarmory_Super_Mega_Raid_Day_v4-1024x576.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fe2400534_20260511_pgo_s23_ShinyShaymin_1024x576_nologo.jpg"
+		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_GOPass_SEP_v4_1024x576-nologo.jpg"
 		| "https://storage.googleapis.com/prod-public-images/GBL_SharedSkies_2024.jpeg"
 		| "https://storage.googleapis.com/prod-public-images/gf20.jpg"
 		| "https://storage.googleapis.com/prod-public-images/Safari_ticket_banner.png";
@@ -119,7 +119,6 @@ export interface IapItemDisplayData {
 		| "2025-06-29T23:59:59"
 		| "2025-07-01T20:00:00"
 		| "2025-07-06T20:00:00"
-		| "2025-07-09T10:00:00"
 		| "2025-07-22T20:00:00"
 		| "2025-07-29T20:00:00"
 		| "2025-08-06T10:00:00"
@@ -143,8 +142,10 @@ export interface IapItemDisplayData {
 		| "2026-07-27T20:00:00"
 		| "2026-08-16T17:00:00"
 		| "2026-08-16T20:00:00"
+		| "2026-08-16T23:59:59"
 		| "2026-08-26T20:00:00"
-		| "2026-09-10T10:00:00";
+		| "2026-09-10T10:00:00"
+		| "2026-10-08T10:00:00";
 	skuDisableTimeUtcMs?:
 		| "1595786400000"
 		| "1654174800000"
@@ -170,7 +171,6 @@ export interface IapItemDisplayData {
 		| "1751241599000"
 		| "1751400000000"
 		| "1751832000000"
-		| "1752055200000"
 		| "1753214400000"
 		| "1753819200000"
 		| "1754474400000"
@@ -194,14 +194,17 @@ export interface IapItemDisplayData {
 		| "1785182400000"
 		| "1786899600000"
 		| "1786910400000"
+		| "1786924799000"
 		| "1787774400000"
-		| "1789034400000";
+		| "1789034400000"
+		| "1791453600000";
 	skuEnableTime?:
 		| "2019-03-14T08:00:00"
 		| "2019-10-31T21:00:00"
 		| "2020-01-01T00:00:00"
 		| "2020-06-02T08:00:00"
 		| "2022-03-01T00:00:00"
+		| "2022-10-13T12:00:00"
 		| "2023-01-01T11:00:01"
 		| "2023-01-01T11:00:03"
 		| "2023-02-27T20:00:00"
@@ -240,13 +243,15 @@ export interface IapItemDisplayData {
 		| "2025-08-18T10:00:04"
 		| "2025-08-25T10:00:00"
 		| "2026-03-03T13:00:00"
-		| "2026-07-06T00:00:00";
+		| "2026-07-06T00:00:00"
+		| "2026-09-08T10:00:00";
 	skuEnableTimeUtcMs?:
 		| "1552550400000"
 		| "1572555600000"
 		| "1577836800000"
 		| "1591084800000"
 		| "1646092800000"
+		| "1665662400000"
 		| "1672570801000"
 		| "1672570803000"
 		| "1677528000000"
@@ -285,7 +290,8 @@ export interface IapItemDisplayData {
 		| "1755511204000"
 		| "1756116000000"
 		| "1772542800000"
-		| "1783296000000";
+		| "1783296000000"
+		| "1788861600000";
 	sortOrder?: number;
 	spriteId?: string;
 	title?: string;
