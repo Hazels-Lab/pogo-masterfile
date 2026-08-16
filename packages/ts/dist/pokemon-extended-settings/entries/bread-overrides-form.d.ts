@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 202 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 207 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -5094,6 +5094,83 @@ export type PokemonExtendedSettingsV0107PokemonHitmonchanNormal = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0111PokemonRhyhornNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0111_POKEMON_RHYHORN_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						xOffset: 5;
+						yOffset: -5;
+					};
+					maxBattleVisualSettings: {
+						scale: 34.27;
+						yOffset: -12;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 34;
+						maxReticleSize: 12;
+						scale: 17.14;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 1;
+					};
+					maxStationVisualSettings: {
+						scale: 2.33;
+					};
+				},
+			];
+			form: "RHYHORN_NORMAL";
+			sizeSettings: {
+				mLowerBound: 0.75;
+				mUpperBound: 1.25;
+				xlUpperBound: 1.5;
+				xsLowerBound: 0.5;
+				xxlUpperBound: 1.75;
+				xxsLowerBound: 0.49;
+			};
+			uniqueId: "RHYHORN";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0112PokemonRhydonNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0112_POKEMON_RHYDON_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 19.56;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 32;
+						maxReticleSize: 12;
+						scale: 9.78;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 0.85;
+					};
+					maxStationVisualSettings: {
+						scale: 1.33;
+					};
+				},
+			];
+			form: "RHYDON_NORMAL";
+			sizeSettings: {
+				mLowerBound: 1.425;
+				mUpperBound: 2.375;
+				xlUpperBound: 2.85;
+				xsLowerBound: 0.95;
+				xxlUpperBound: 3.325;
+				xxsLowerBound: 0.931;
+			};
+			uniqueId: "RHYDON";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0113PokemonChanseyNormal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0113_POKEMON_CHANSEY_NORMAL",
@@ -5894,6 +5971,42 @@ export type PokemonExtendedSettingsV0213PokemonShuckleNormal = S<
 				xxsLowerBound: 0.2989;
 			};
 			uniqueId: "SHUCKLE";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0215PokemonSneaselNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0215_POKEMON_SNEASEL_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						xOffset: -5;
+					};
+					maxBattleVisualSettings: {
+						scale: 40.46;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 25;
+						maxReticleSize: 10;
+						scale: 20.23;
+					};
+					maxStationVisualSettings: {
+						scale: 2.75;
+					};
+				},
+			];
+			form: "SNEASEL_NORMAL";
+			sizeSettings: {
+				mLowerBound: 0.6675;
+				mUpperBound: 1.1125;
+				xlUpperBound: 1.335;
+				xsLowerBound: 0.445;
+				xxlUpperBound: 1.5575;
+				xxsLowerBound: 0.4361;
+			};
+			uniqueId: "SNEASEL";
 		}
 	>
 >;
@@ -6995,6 +7108,82 @@ export type PokemonExtendedSettingsV0416PokemonVespiquenNormal = S<
 				xxsLowerBound: 0.588;
 			};
 			uniqueId: "VESPIQUEN";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0461PokemonWeavileNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0461_POKEMON_WEAVILE_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						xOffset: -5;
+					};
+					maxBattleVisualSettings: {
+						scale: 33.94;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 28;
+						maxReticleSize: 11;
+						scale: 16.97;
+					};
+					maxStationVisualSettings: {
+						scale: 2.31;
+					};
+				},
+			];
+			form: "WEAVILE_NORMAL";
+			sizeSettings: {
+				mLowerBound: 0.825;
+				mUpperBound: 1.375;
+				xlUpperBound: 1.65;
+				xsLowerBound: 0.55;
+				xxlUpperBound: 1.705;
+				xxsLowerBound: 0.539;
+			};
+			uniqueId: "WEAVILE";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0464PokemonRhyperiorNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0464_POKEMON_RHYPERIOR_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						xOffset: 10;
+					};
+					maxBattleVisualSettings: {
+						scale: 16.59;
+						yOffset: -20;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 32;
+						maxReticleSize: 16;
+						scale: 8.3;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 0.8;
+					};
+					maxStationVisualSettings: {
+						scale: 1.13;
+					};
+				},
+			];
+			form: "RHYPERIOR_NORMAL";
+			sizeSettings: {
+				mLowerBound: 1.8;
+				mUpperBound: 3;
+				xlUpperBound: 3.6;
+				xsLowerBound: 1.2;
+				xxlUpperBound: 3.72;
+				xxsLowerBound: 1.176;
+			};
+			uniqueId: "RHYPERIOR";
 		}
 	>
 >;
@@ -9387,6 +9576,8 @@ export type PokemonExtendedSettingsBreadOverridesFormMasterfileEntry =
 	| PokemonExtendedSettingsV0099PokemonKinglerNormal
 	| PokemonExtendedSettingsV0106PokemonHitmonleeNormal
 	| PokemonExtendedSettingsV0107PokemonHitmonchanNormal
+	| PokemonExtendedSettingsV0111PokemonRhyhornNormal
+	| PokemonExtendedSettingsV0112PokemonRhydonNormal
 	| PokemonExtendedSettingsV0113PokemonChanseyNormal
 	| PokemonExtendedSettingsV0125PokemonElectabuzzNormal
 	| PokemonExtendedSettingsV0126PokemonMagmarNormal
@@ -9409,6 +9600,7 @@ export type PokemonExtendedSettingsBreadOverridesFormMasterfileEntry =
 	| PokemonExtendedSettingsV0196PokemonEspeonNormal
 	| PokemonExtendedSettingsV0197PokemonUmbreonNormal
 	| PokemonExtendedSettingsV0213PokemonShuckleNormal
+	| PokemonExtendedSettingsV0215PokemonSneaselNormal
 	| PokemonExtendedSettingsV0236PokemonTyrogueNormal
 	| PokemonExtendedSettingsV0237PokemonHitmontopNormal
 	| PokemonExtendedSettingsV0239PokemonElekidNormal
@@ -9439,6 +9631,8 @@ export type PokemonExtendedSettingsBreadOverridesFormMasterfileEntry =
 	| PokemonExtendedSettingsV0379PokemonRegisteelNormal
 	| PokemonExtendedSettingsV0415PokemonCombeeNormal
 	| PokemonExtendedSettingsV0416PokemonVespiquenNormal
+	| PokemonExtendedSettingsV0461PokemonWeavileNormal
+	| PokemonExtendedSettingsV0464PokemonRhyperiorNormal
 	| PokemonExtendedSettingsV0466PokemonElectivireNormal
 	| PokemonExtendedSettingsV0467PokemonMagmortarNormal
 	| PokemonExtendedSettingsV0470PokemonLeafeonNormal

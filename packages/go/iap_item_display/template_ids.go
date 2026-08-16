@@ -377,6 +377,7 @@ const (
 	IapItemDisplayTemplateIDPaidraidticket1                                        IapItemDisplayTemplateID = "paidraidticket.1"
 	IapItemDisplayTemplateIDPaidraidticket3                                        IapItemDisplayTemplateID = "paidraidticket.3"
 	IapItemDisplayTemplateIDPgoreleaseApril22026DeluxeEventPassTrackRedirect       IapItemDisplayTemplateID = "pgorelease.april2_2026_deluxe_event_pass_track_redirect"
+	IapItemDisplayTemplateIDPgoreleaseAugust3DeluxeEventPassTrackUnlockRedirect    IapItemDisplayTemplateID = "pgorelease.august3_deluxe_event_pass_track_unlock_redirect"
 	IapItemDisplayTemplateIDPgoreleaseBundle1                                      IapItemDisplayTemplateID = "pgorelease.bundle.1"
 	IapItemDisplayTemplateIDPgoreleaseBundle2                                      IapItemDisplayTemplateID = "pgorelease.bundle.2"
 	IapItemDisplayTemplateIDPgoreleaseBundleBlanchebox1                            IapItemDisplayTemplateID = "pgorelease.bundle.blanchebox.1"
@@ -1562,6 +1563,7 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDPaidraidticket1,
 	IapItemDisplayTemplateIDPaidraidticket3,
 	IapItemDisplayTemplateIDPgoreleaseApril22026DeluxeEventPassTrackRedirect,
+	IapItemDisplayTemplateIDPgoreleaseAugust3DeluxeEventPassTrackUnlockRedirect,
 	IapItemDisplayTemplateIDPgoreleaseBundle1,
 	IapItemDisplayTemplateIDPgoreleaseBundle2,
 	IapItemDisplayTemplateIDPgoreleaseBundleBlanchebox1,
