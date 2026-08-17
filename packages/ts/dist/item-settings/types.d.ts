@@ -515,7 +515,7 @@ export interface ItemSettingsData {
 	ignoreInventorySpace?: boolean;
 	incense?: {
 		incenseLifetimeSeconds: number;
-		spawnTableProbability: number;
+		spawnTableProbability?: number;
 	};
 	incidentTicket?: {
 		ignoreFullInventory?: boolean;

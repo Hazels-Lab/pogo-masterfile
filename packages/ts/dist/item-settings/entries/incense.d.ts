@@ -69,8 +69,7 @@ export type ItemSettingsItemIncenseOrdinary = S<
 			category: "ITEM_CATEGORY_INCENSE";
 			dropTrainerLevel: 1;
 			incense: {
-				incenseLifetimeSeconds: 10800;
-				spawnTableProbability: 0.9;
+				incenseLifetimeSeconds: 3600;
 			};
 			itemType: "ITEM_TYPE_INCENSE";
 		}

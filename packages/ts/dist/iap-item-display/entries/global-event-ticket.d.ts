@@ -269,6 +269,7 @@ export type IapItemDisplayGeneral2Ticket3 = S<
 		"general2.ticket.3",
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F11274b46_PGO_MCS_CD_KeyArt_Nickit_v1-1024x576-nologo.jpg";
 			sku: "pgorelease.general2.ticket.3";
 			skuDisableTime: "2026-08-16T17:00:00";
