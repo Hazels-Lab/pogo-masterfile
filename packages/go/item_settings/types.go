@@ -89,8 +89,8 @@ type ItemSettingsGlobalEventTicket struct {
 }
 
 type ItemSettingsIncense struct {
-	IncenseLifetimeSeconds uint64  `json:"incenseLifetimeSeconds"`
-	SpawnTableProbability  float64 `json:"spawnTableProbability"`
+	IncenseLifetimeSeconds uint64   `json:"incenseLifetimeSeconds"`
+	SpawnTableProbability  *float64 `json:"spawnTableProbability,omitempty"`
 }
 
 type ItemSettingsIncidentTicket struct {
