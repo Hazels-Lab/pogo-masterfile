@@ -664,9 +664,9 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					};
 					pokemon: {
 						pokemonDisplay: {
-							form: "GROUDON_NORMAL";
+							form: "LUNALA_NORMAL";
 						};
-						pokemonId: "GROUDON";
+						pokemonId: "LUNALA";
 					};
 					staminaIvOverride: {
 						range: {
@@ -675,6 +675,33 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 						};
 					};
 					unlockedAtRank: 20;
+				},
+				{
+					attackIvOverride: {
+						range: {
+							max: 15;
+							min: 10;
+						};
+					};
+					defenseIvOverride: {
+						range: {
+							max: 15;
+							min: 10;
+						};
+					};
+					pokemon: {
+						pokemonDisplay: {
+							form: "CRAMORANT_NORMAL";
+						};
+						pokemonId: "CRAMORANT";
+					};
+					staminaIvOverride: {
+						range: {
+							max: 15;
+							min: 10;
+						};
+					};
+					unlockedAtRank: 16;
 				},
 			];
 		};

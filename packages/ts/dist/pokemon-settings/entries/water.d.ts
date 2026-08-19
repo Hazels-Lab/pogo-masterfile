@@ -17428,7 +17428,7 @@ export type PokemonSettingsV0658PokemonGreninja = S<
 				{
 					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
 					temporaryEvolutionEnergyCost: 300;
-					temporaryEvolutionEnergyCostSubsequent: 80;
+					temporaryEvolutionEnergyCostSubsequent: 60;
 				},
 			];
 			familyId: "FAMILY_FROAKIE";
@@ -17533,7 +17533,7 @@ export type PokemonSettingsV0658PokemonGreninjaNormal = S<
 				{
 					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
 					temporaryEvolutionEnergyCost: 300;
-					temporaryEvolutionEnergyCostSubsequent: 80;
+					temporaryEvolutionEnergyCostSubsequent: 60;
 				},
 			];
 			familyId: "FAMILY_FROAKIE";

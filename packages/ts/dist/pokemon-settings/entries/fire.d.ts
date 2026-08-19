@@ -7595,7 +7595,7 @@ export type PokemonSettingsV0655PokemonDelphox = S<
 				{
 					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
 					temporaryEvolutionEnergyCost: 300;
-					temporaryEvolutionEnergyCostSubsequent: 80;
+					temporaryEvolutionEnergyCostSubsequent: 60;
 				},
 			];
 			familyId: "FAMILY_FENNEKIN";
@@ -7697,7 +7697,7 @@ export type PokemonSettingsV0655PokemonDelphoxNormal = S<
 				{
 					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
 					temporaryEvolutionEnergyCost: 300;
-					temporaryEvolutionEnergyCostSubsequent: 80;
+					temporaryEvolutionEnergyCostSubsequent: 60;
 				},
 			];
 			familyId: "FAMILY_FENNEKIN";

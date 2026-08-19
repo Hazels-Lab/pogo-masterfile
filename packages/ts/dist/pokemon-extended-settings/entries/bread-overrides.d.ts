@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides", 136 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides", 138 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -4753,6 +4753,77 @@ export type PokemonExtendedSettingsV0849PokemonToxtricity = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0850PokemonSizzlipede = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0850_POKEMON_SIZZLIPEDE",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						yOffset: 10;
+					};
+					maxBattleVisualSettings: {
+						scale: 80;
+						yOffset: -5;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 22;
+						maxReticleSize: 12;
+						scale: 30;
+					};
+					maxStationVisualSettings: {
+						scale: 6;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 0.525;
+				mUpperBound: 0.875;
+				xlUpperBound: 1.05;
+				xsLowerBound: 0.35;
+				xxlUpperBound: 1.225;
+				xxsLowerBound: 0.343;
+			};
+			uniqueId: "SIZZLIPEDE";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0851PokemonCentiskorch = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0851_POKEMON_CENTISKORCH",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						yOffset: 10;
+					};
+					maxBattleVisualSettings: {
+						scale: 25;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 15;
+						maxReticleSize: 7;
+						scale: 6.35;
+					};
+					maxStationVisualSettings: {
+						scale: 2;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 2.25;
+				mUpperBound: 3.75;
+				xlUpperBound: 4.5;
+				xsLowerBound: 1.5;
+				xxlUpperBound: 4.65;
+				xxsLowerBound: 1.47;
+			};
+			uniqueId: "CENTISKORCH";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0856PokemonHatenna = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0856_POKEMON_HATENNA",
@@ -5134,6 +5205,8 @@ export type PokemonExtendedSettingsBreadOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0832PokemonDubwool
 	| PokemonExtendedSettingsV0848PokemonToxel
 	| PokemonExtendedSettingsV0849PokemonToxtricity
+	| PokemonExtendedSettingsV0850PokemonSizzlipede
+	| PokemonExtendedSettingsV0851PokemonCentiskorch
 	| PokemonExtendedSettingsV0856PokemonHatenna
 	| PokemonExtendedSettingsV0857PokemonHattrem
 	| PokemonExtendedSettingsV0858PokemonHatterene

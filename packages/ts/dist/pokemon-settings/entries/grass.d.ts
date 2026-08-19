@@ -10567,7 +10567,7 @@ export type PokemonSettingsV0652PokemonChesnaught = S<
 				{
 					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
 					temporaryEvolutionEnergyCost: 300;
-					temporaryEvolutionEnergyCostSubsequent: 80;
+					temporaryEvolutionEnergyCostSubsequent: 60;
 				},
 			];
 			familyId: "FAMILY_CHESPIN";
@@ -10664,7 +10664,7 @@ export type PokemonSettingsV0652PokemonChesnaughtNormal = S<
 				{
 					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
 					temporaryEvolutionEnergyCost: 300;
-					temporaryEvolutionEnergyCostSubsequent: 80;
+					temporaryEvolutionEnergyCostSubsequent: 60;
 				},
 			];
 			familyId: "FAMILY_CHESPIN";

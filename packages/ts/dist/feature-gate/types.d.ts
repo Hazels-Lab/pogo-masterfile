@@ -6,13 +6,14 @@ export interface FeatureGate<TemplateID extends string = string, TData extends F
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;
-		featureGate: TData;
+		featureGate: TData & {
+			rolloutPercentage: 100;
+		};
 	};
 }
 export type FeatureGateType = W<FeatureGate>;
 
 export interface FeatureGateData {
-	rolloutPercentage: number;
 	status: number;
 	subFeatureGateList?: Array<{
 		name:

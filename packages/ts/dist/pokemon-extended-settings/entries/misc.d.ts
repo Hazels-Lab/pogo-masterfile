@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 835 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 833 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -10674,38 +10674,6 @@ export type PokemonExtendedSettingsV0847PokemonBarraskewda = S<
 		}
 	>
 >;
-export type PokemonExtendedSettingsV0850PokemonSizzlipede = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0850_POKEMON_SIZZLIPEDE",
-		{
-			sizeSettings: {
-				mLowerBound: 0.525;
-				mUpperBound: 0.875;
-				xlUpperBound: 1.05;
-				xsLowerBound: 0.35;
-				xxlUpperBound: 1.225;
-				xxsLowerBound: 0.343;
-			};
-			uniqueId: "SIZZLIPEDE";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0851PokemonCentiskorch = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0851_POKEMON_CENTISKORCH",
-		{
-			sizeSettings: {
-				mLowerBound: 2.25;
-				mUpperBound: 3.75;
-				xlUpperBound: 4.5;
-				xsLowerBound: 1.5;
-				xxlUpperBound: 4.65;
-				xxsLowerBound: 1.47;
-			};
-			uniqueId: "CENTISKORCH";
-		}
-	>
->;
 export type PokemonExtendedSettingsV0852PokemonClobbopus = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0852_POKEMON_CLOBBOPUS",
@@ -14046,8 +14014,6 @@ export type PokemonExtendedSettingsMiscMasterfileEntry =
 	| PokemonExtendedSettingsV0845PokemonCramorant
 	| PokemonExtendedSettingsV0846PokemonArrokuda
 	| PokemonExtendedSettingsV0847PokemonBarraskewda
-	| PokemonExtendedSettingsV0850PokemonSizzlipede
-	| PokemonExtendedSettingsV0851PokemonCentiskorch
 	| PokemonExtendedSettingsV0852PokemonClobbopus
 	| PokemonExtendedSettingsV0853PokemonGrapploct
 	| PokemonExtendedSettingsV0854PokemonSinistea

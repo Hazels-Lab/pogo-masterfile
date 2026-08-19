@@ -16,7 +16,6 @@ export type MegaEvoLevelSettings1 = S<
 			};
 			level: 1;
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -36,7 +35,6 @@ export type MegaEvoLevelSettings1V0015PokemonBeedrill = S<
 			level: 1;
 			pokemonId: "BEEDRILL";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -56,7 +54,6 @@ export type MegaEvoLevelSettings1V0018PokemonPidgeot = S<
 			level: 1;
 			pokemonId: "PIDGEOT";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -76,7 +73,6 @@ export type MegaEvoLevelSettings1V0026PokemonRaichu = S<
 			level: 1;
 			pokemonId: "RAICHU";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -96,7 +92,6 @@ export type MegaEvoLevelSettings1V0071PokemonVictreebel = S<
 			level: 1;
 			pokemonId: "VICTREEBEL";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -116,7 +111,6 @@ export type MegaEvoLevelSettings1V0080PokemonSlowbro = S<
 			level: 1;
 			pokemonId: "SLOWBRO";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -136,7 +130,6 @@ export type MegaEvoLevelSettings1V0121PokemonStarmie = S<
 			level: 1;
 			pokemonId: "STARMIE";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -156,7 +149,6 @@ export type MegaEvoLevelSettings1V0130PokemonGyarados = S<
 			level: 1;
 			pokemonId: "GYARADOS";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -176,7 +168,6 @@ export type MegaEvoLevelSettings1V0149PokemonDragonite = S<
 			level: 1;
 			pokemonId: "DRAGONITE";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -196,7 +187,6 @@ export type MegaEvoLevelSettings1V0150PokemonMewtwo = S<
 			level: 1;
 			pokemonId: "MEWTWO";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -216,7 +206,6 @@ export type MegaEvoLevelSettings1V0227PokemonSkarmory = S<
 			level: 1;
 			pokemonId: "SKARMORY";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -236,7 +225,6 @@ export type MegaEvoLevelSettings1V0229PokemonHoundoom = S<
 			level: 1;
 			pokemonId: "HOUNDOOM";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -256,7 +244,6 @@ export type MegaEvoLevelSettings1V0248PokemonTyranitar = S<
 			level: 1;
 			pokemonId: "TYRANITAR";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -276,7 +263,6 @@ export type MegaEvoLevelSettings1V0302PokemonSableye = S<
 			level: 1;
 			pokemonId: "SABLEYE";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -296,7 +282,6 @@ export type MegaEvoLevelSettings1V0308PokemonMedicham = S<
 			level: 1;
 			pokemonId: "MEDICHAM";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -316,7 +301,6 @@ export type MegaEvoLevelSettings1V0310PokemonManectric = S<
 			level: 1;
 			pokemonId: "MANECTRIC";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -336,7 +320,6 @@ export type MegaEvoLevelSettings1V0334PokemonAltaria = S<
 			level: 1;
 			pokemonId: "ALTARIA";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -356,7 +339,6 @@ export type MegaEvoLevelSettings1V0354PokemonBanette = S<
 			level: 1;
 			pokemonId: "BANETTE";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -376,7 +358,6 @@ export type MegaEvoLevelSettings1V0373PokemonSalamence = S<
 			level: 1;
 			pokemonId: "SALAMENCE";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -396,7 +377,6 @@ export type MegaEvoLevelSettings1V0376PokemonMetagross = S<
 			level: 1;
 			pokemonId: "METAGROSS";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -416,7 +396,6 @@ export type MegaEvoLevelSettings1V0380PokemonLatias = S<
 			level: 1;
 			pokemonId: "LATIAS";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -436,7 +415,6 @@ export type MegaEvoLevelSettings1V0381PokemonLatios = S<
 			level: 1;
 			pokemonId: "LATIOS";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -456,7 +434,6 @@ export type MegaEvoLevelSettings1V0382PokemonKyogre = S<
 			level: 1;
 			pokemonId: "KYOGRE";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -476,7 +453,6 @@ export type MegaEvoLevelSettings1V0383PokemonGroudon = S<
 			level: 1;
 			pokemonId: "GROUDON";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -496,7 +472,6 @@ export type MegaEvoLevelSettings1V0384PokemonRayquaza = S<
 			level: 1;
 			pokemonId: "RAYQUAZA";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -516,7 +491,6 @@ export type MegaEvoLevelSettings1V0445PokemonGarchomp = S<
 			level: 1;
 			pokemonId: "GARCHOMP";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -527,7 +501,7 @@ export type MegaEvoLevelSettings1V0652PokemonChesnaught = S<
 		"MEGA_EVOLUTION_LEVEL_1_V0652_POKEMON_CHESNAUGHT",
 		{
 			cooldown: {
-				bypassCostInitial: 80;
+				bypassCostInitial: 60;
 				durationMs: "604800000";
 			};
 			effects: {
@@ -536,7 +510,6 @@ export type MegaEvoLevelSettings1V0652PokemonChesnaught = S<
 			level: 1;
 			pokemonId: "CHESNAUGHT";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -547,7 +520,7 @@ export type MegaEvoLevelSettings1V0655PokemonDelphox = S<
 		"MEGA_EVOLUTION_LEVEL_1_V0655_POKEMON_DELPHOX",
 		{
 			cooldown: {
-				bypassCostInitial: 80;
+				bypassCostInitial: 60;
 				durationMs: "604800000";
 			};
 			effects: {
@@ -556,7 +529,6 @@ export type MegaEvoLevelSettings1V0655PokemonDelphox = S<
 			level: 1;
 			pokemonId: "DELPHOX";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -567,7 +539,7 @@ export type MegaEvoLevelSettings1V0658PokemonGreninja = S<
 		"MEGA_EVOLUTION_LEVEL_1_V0658_POKEMON_GRENINJA",
 		{
 			cooldown: {
-				bypassCostInitial: 80;
+				bypassCostInitial: 60;
 				durationMs: "604800000";
 			};
 			effects: {
@@ -576,7 +548,6 @@ export type MegaEvoLevelSettings1V0658PokemonGreninja = S<
 			level: 1;
 			pokemonId: "GRENINJA";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -596,7 +567,6 @@ export type MegaEvoLevelSettings1V0687PokemonMalamar = S<
 			level: 1;
 			pokemonId: "MALAMAR";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -616,7 +586,6 @@ export type MegaEvoLevelSettings1V0719PokemonDiancie = S<
 			level: 1;
 			pokemonId: "DIANCIE";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}
@@ -636,7 +605,6 @@ export type MegaEvoLevelSettings1V0870PokemonFalinks = S<
 			level: 1;
 			pokemonId: "FALINKS";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 1;
 			};
 		}

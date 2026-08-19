@@ -22,7 +22,6 @@ export type MegaEvoLevelSettings4V0026PokemonRaichu = S<
 			megaEnergyCostToUnlock: 5000;
 			pokemonId: "RAICHU";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 30;
 			};
 		}
@@ -47,7 +46,6 @@ export type MegaEvoLevelSettings4V0071PokemonVictreebel = S<
 			megaEnergyCostToUnlock: 5000;
 			pokemonId: "VICTREEBEL";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 30;
 			};
 		}
@@ -72,7 +70,6 @@ export type MegaEvoLevelSettings4V0121PokemonStarmie = S<
 			megaEnergyCostToUnlock: 5000;
 			pokemonId: "STARMIE";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 30;
 			};
 		}
@@ -97,7 +94,6 @@ export type MegaEvoLevelSettings4V0149PokemonDragonite = S<
 			megaEnergyCostToUnlock: 5000;
 			pokemonId: "DRAGONITE";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 30;
 			};
 		}
@@ -122,7 +118,6 @@ export type MegaEvoLevelSettings4V0150PokemonMewtwo = S<
 			megaEnergyCostToUnlock: 5000;
 			pokemonId: "MEWTWO";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 30;
 			};
 		}
@@ -147,7 +142,6 @@ export type MegaEvoLevelSettings4V0227PokemonSkarmory = S<
 			megaEnergyCostToUnlock: 5000;
 			pokemonId: "SKARMORY";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 30;
 			};
 		}
@@ -165,14 +159,13 @@ export type MegaEvoLevelSettings4V0652PokemonChesnaught = S<
 				sameTypeExtraCatchCandy: 3;
 				sameTypeExtraCatchCandyXlChance: 0.3;
 				sameTypeExtraCatchXp: 200;
-				selfCpBoostAdditionalLevel: 4;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			ftueExpirationTimestamp: "1777147462000";
 			level: 4;
 			megaEnergyCostToUnlock: 5000;
 			pokemonId: "CHESNAUGHT";
 			progression: {
-				pointsLimitPerPeriod: 40;
 				pointsRequired: 30;
 			};
 		}
@@ -190,14 +183,13 @@ export type MegaEvoLevelSettings4V0655PokemonDelphox = S<
 				sameTypeExtraCatchCandy: 3;
 				sameTypeExtraCatchCandyXlChance: 0.3;
 				sameTypeExtraCatchXp: 200;
-				selfCpBoostAdditionalLevel: 4;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			ftueExpirationTimestamp: "1777147462000";
 			level: 4;
 			megaEnergyCostToUnlock: 5000;
 			pokemonId: "DELPHOX";
 			progression: {
-				pointsLimitPerPeriod: 40;
 				pointsRequired: 30;
 			};
 		}
@@ -215,14 +207,13 @@ export type MegaEvoLevelSettings4V0658PokemonGreninja = S<
 				sameTypeExtraCatchCandy: 3;
 				sameTypeExtraCatchCandyXlChance: 0.3;
 				sameTypeExtraCatchXp: 200;
-				selfCpBoostAdditionalLevel: 4;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			ftueExpirationTimestamp: "1777147462000";
 			level: 4;
 			megaEnergyCostToUnlock: 5000;
 			pokemonId: "GRENINJA";
 			progression: {
-				pointsLimitPerPeriod: 40;
 				pointsRequired: 30;
 			};
 		}
@@ -247,7 +238,6 @@ export type MegaEvoLevelSettings4V0687PokemonMalamar = S<
 			megaEnergyCostToUnlock: 5000;
 			pokemonId: "MALAMAR";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 30;
 			};
 		}
@@ -272,7 +262,6 @@ export type MegaEvoLevelSettings4V0870PokemonFalinks = S<
 			megaEnergyCostToUnlock: 5000;
 			pokemonId: "FALINKS";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 30;
 			};
 		}

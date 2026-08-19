@@ -229,6 +229,14 @@ pub enum IapItemDisplayTemplateId {
     BundleGofest20266,
     #[serde(rename = "bundle.GOFest2026.7")]
     BundleGofest20267,
+    #[serde(rename = "bundle.GOFest2026Finale.1")]
+    BundleGofest2026finale1,
+    #[serde(rename = "bundle.GOFest2026Finale.2")]
+    BundleGofest2026finale2,
+    #[serde(rename = "bundle.GOFest2026Finale.3")]
+    BundleGofest2026finale3,
+    #[serde(rename = "bundle.GOFest2026Finale.4")]
+    BundleGofest2026finale4,
     #[serde(rename = "bundle.gofestmakegoodprep.1")]
     BundleGofestmakegoodprep1,
     #[serde(rename = "bundle.gofestmakegoodprep.2")]
@@ -751,6 +759,10 @@ pub enum IapItemDisplayTemplateId {
     Paidraidticket3,
     #[serde(rename = "pgorelease.april2_2026_deluxe_event_pass_track_redirect")]
     PgoreleaseApril22026DeluxeEventPassTrackRedirect,
+    #[serde(rename = "pgorelease.august2_deluxe_event_pass_track_unlock")]
+    PgoreleaseAugust2DeluxeEventPassTrackUnlock,
+    #[serde(rename = "pgorelease.august2_deluxe_event_pass_track_unlock_plus_points")]
+    PgoreleaseAugust2DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "pgorelease.august3_deluxe_event_pass_track_unlock_redirect")]
     PgoreleaseAugust3DeluxeEventPassTrackUnlockRedirect,
     #[serde(rename = "pgorelease.bundle.1")]

@@ -54,6 +54,8 @@ import type {
 	CombatRankingProtoSettingsTemplateID,
 	CombatTypeMasterfileEntry,
 	CombatTypeTemplateID,
+	EventPassSettingsMasterfileEntry,
+	EventPassSettingsTemplateID,
 	EventPassTierSettingsMasterfileEntry,
 	EventPassTierSettingsTemplateID,
 	EvolutionChainDisplaySettingsMasterfileEntry,
@@ -141,6 +143,7 @@ import type {
 	WeatherAffinitiesMasterfileEntry,
 	WeatherAffinitiesTemplateID,
 } from "./entries";
+import type { EventPassSettingsLookup } from "./event-pass-settings/lookup-table";
 import type { EventPassTierSettingsLookup } from "./event-pass-tier-settings/lookup-table";
 import type { EvolutionChainDisplaySettingsLookup } from "./evolution-chain-display-settings/lookup-table";
 import type { EvolutionQuestTemplateLookup } from "./evolution-quest-template/lookup-table";
@@ -201,6 +204,7 @@ export type { CombatNpcPersonalityLookup } from "./combat-npc-personality/lookup
 export type { CombatNpcTrainerLookup } from "./combat-npc-trainer/lookup-table";
 export type { CombatRankingProtoSettingsLookup } from "./combat-ranking-proto-settings/lookup-table";
 export type { CombatTypeLookup } from "./combat-type/lookup-table";
+export type { EventPassSettingsLookup } from "./event-pass-settings/lookup-table";
 export type { EventPassTierSettingsLookup } from "./event-pass-tier-settings/lookup-table";
 export type { EvolutionChainDisplaySettingsLookup } from "./evolution-chain-display-settings/lookup-table";
 export type { EvolutionQuestTemplateLookup } from "./evolution-quest-template/lookup-table";
@@ -262,6 +266,7 @@ export type GroupName =
 	| "combatNpcTrainer"
 	| "combatRankingProtoSettings"
 	| "combatType"
+	| "eventPassSettings"
 	| "eventPassTierSettings"
 	| "evolutionChainDisplaySettings"
 	| "evolutionQuestTemplate"
@@ -327,6 +332,7 @@ export interface LookupByGroup {
 	combatNpcTrainer: CombatNpcTrainerLookup;
 	combatRankingProtoSettings: CombatRankingProtoSettingsLookup;
 	combatType: CombatTypeLookup;
+	eventPassSettings: EventPassSettingsLookup;
 	eventPassTierSettings: EventPassTierSettingsLookup;
 	evolutionChainDisplaySettings: EvolutionChainDisplaySettingsLookup;
 	evolutionQuestTemplate: EvolutionQuestTemplateLookup;
@@ -389,6 +395,7 @@ export interface EntriesByGroup {
 	combatNpcTrainer: CombatNpcTrainerMasterfileEntry;
 	combatRankingProtoSettings: CombatRankingProtoSettingsMasterfileEntry;
 	combatType: CombatTypeMasterfileEntry;
+	eventPassSettings: EventPassSettingsMasterfileEntry;
 	eventPassTierSettings: EventPassTierSettingsMasterfileEntry;
 	evolutionChainDisplaySettings: EvolutionChainDisplaySettingsMasterfileEntry;
 	evolutionQuestTemplate: EvolutionQuestTemplateMasterfileEntry;
@@ -451,6 +458,7 @@ export interface TemplateIDsByGroup {
 	combatNpcTrainer: CombatNpcTrainerTemplateID;
 	combatRankingProtoSettings: CombatRankingProtoSettingsTemplateID;
 	combatType: CombatTypeTemplateID;
+	eventPassSettings: EventPassSettingsTemplateID;
 	eventPassTierSettings: EventPassTierSettingsTemplateID;
 	evolutionChainDisplaySettings: EvolutionChainDisplaySettingsTemplateID;
 	evolutionQuestTemplate: EvolutionQuestTemplateTemplateID;
@@ -517,6 +525,7 @@ export interface EntryByTemplateID
 		CombatNpcTrainerLookup,
 		CombatRankingProtoSettingsLookup,
 		CombatTypeLookup,
+		EventPassSettingsLookup,
 		EventPassTierSettingsLookup,
 		EvolutionChainDisplaySettingsLookup,
 		EvolutionQuestTemplateLookup,
