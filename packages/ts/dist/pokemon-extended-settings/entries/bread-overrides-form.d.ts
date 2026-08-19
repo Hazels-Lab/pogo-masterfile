@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 207 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 209 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -9128,6 +9128,79 @@ export type PokemonExtendedSettingsV0849PokemonToxtricityLowKey = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0850PokemonSizzlipedeNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0850_POKEMON_SIZZLIPEDE_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						yOffset: 10;
+					};
+					maxBattleVisualSettings: {
+						scale: 80;
+						yOffset: -5;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 22;
+						maxReticleSize: 12;
+						scale: 30;
+					};
+					maxStationVisualSettings: {
+						scale: 6;
+					};
+				},
+			];
+			form: "SIZZLIPEDE_NORMAL";
+			sizeSettings: {
+				mLowerBound: 0.525;
+				mUpperBound: 0.875;
+				xlUpperBound: 1.05;
+				xsLowerBound: 0.35;
+				xxlUpperBound: 1.225;
+				xxsLowerBound: 0.343;
+			};
+			uniqueId: "SIZZLIPEDE";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0851PokemonCentiskorchNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0851_POKEMON_CENTISKORCH_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						yOffset: 10;
+					};
+					maxBattleVisualSettings: {
+						scale: 25;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 15;
+						maxReticleSize: 7;
+						scale: 6.35;
+					};
+					maxStationVisualSettings: {
+						scale: 2;
+					};
+				},
+			];
+			form: "CENTISKORCH_NORMAL";
+			sizeSettings: {
+				mLowerBound: 2.25;
+				mUpperBound: 3.75;
+				xlUpperBound: 4.5;
+				xsLowerBound: 1.5;
+				xxlUpperBound: 4.65;
+				xxsLowerBound: 1.47;
+			};
+			uniqueId: "CENTISKORCH";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0856PokemonHatennaNormal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0856_POKEMON_HATENNA_NORMAL",
@@ -9683,6 +9756,8 @@ export type PokemonExtendedSettingsBreadOverridesFormMasterfileEntry =
 	| PokemonExtendedSettingsV0848PokemonToxelNormal
 	| PokemonExtendedSettingsV0849PokemonToxtricityAmped
 	| PokemonExtendedSettingsV0849PokemonToxtricityLowKey
+	| PokemonExtendedSettingsV0850PokemonSizzlipedeNormal
+	| PokemonExtendedSettingsV0851PokemonCentiskorchNormal
 	| PokemonExtendedSettingsV0856PokemonHatennaNormal
 	| PokemonExtendedSettingsV0857PokemonHattremNormal
 	| PokemonExtendedSettingsV0858PokemonHattereneNormal

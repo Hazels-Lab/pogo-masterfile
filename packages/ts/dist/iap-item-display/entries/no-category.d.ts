@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 82 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 83 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -144,13 +144,12 @@ export type IapItemDisplayAugust2DeluxeEventPassTrackUnlock = S<
 		"AUGUST2_DELUXE_EVENT_PASS_TRACK_UNLOCK",
 		{
 			description: "deluxe_event_pass_track_unlock_description";
-			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20ad29e8_PGO-MCS_Water_Festival_2026_TICKET_v3-1024x576.jpg";
 			sku: "pgorelease.august2_deluxe_event_pass_track_unlock";
 			skuDisableTime: "2026-08-26T20:00:00";
 			skuDisableTimeUtcMs: "1787774400000";
-			skuEnableTime: "2025-08-18T10:00:02";
-			skuEnableTimeUtcMs: "1755511202000";
+			skuEnableTime: "2025-08-18T10:00:03";
+			skuEnableTimeUtcMs: "1755511203000";
 			sortOrder: 1;
 			title: "season_pass_premium_track_title_uu_water_festival_2026";
 		}
@@ -161,13 +160,12 @@ export type IapItemDisplayAugust2DeluxeEventPassTrackUnlockPlusPoints = S<
 		"AUGUST2_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS",
 		{
 			description: "event_pass_plus_points_6_ranks_description";
-			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20ad29e8_PGO-MCS_Water_Festival_2026_TICKET_v3-1024x576.jpg";
 			sku: "pgorelease.august2_deluxe_event_pass_track_unlock_plus_points";
 			skuDisableTime: "2026-08-26T20:00:00";
 			skuDisableTimeUtcMs: "1787774400000";
-			skuEnableTime: "2025-08-18T10:00:04";
-			skuEnableTimeUtcMs: "1755511204000";
+			skuEnableTime: "2025-08-18T10:00:05";
+			skuEnableTimeUtcMs: "1755511205000";
 			sortOrder: 1;
 			title: "season_pass_premium_track_plus_six_ranks_title_uu_water_festival_2026";
 		}
@@ -293,23 +291,6 @@ export type IapItemDisplayEventPassApril3EventStoreRedirect = S<
 			skuEnableTimeUtcMs: "1745834400000";
 			sortOrder: 1;
 			title: "season_pass_premium_track_title_steeled_resolve_2026";
-		}
-	>
->;
-export type IapItemDisplayEventPassAugust2Redirect = S<
-	IapItemDisplay<
-		"EVENT_PASS_AUGUST2_REDIRECT",
-		{
-			description: "deluxe_event_pass_track_unlock_description";
-			hidden: true;
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20ad29e8_PGO-MCS_Water_Festival_2026_TICKET_v3-1024x576.jpg";
-			sku: "pgorelease.august2_deluxe_event_pass_track_unlock_redirect";
-			skuDisableTime: "2026-08-26T20:00:00";
-			skuDisableTimeUtcMs: "1787774400000";
-			skuEnableTime: "2025-08-18T10:00:00";
-			skuEnableTimeUtcMs: "1755511200000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_title_uu_water_festival_2026";
 		}
 	>
 >;
@@ -506,7 +487,7 @@ export type IapItemDisplayEventPassMonth1SeasonStoreRedirect = S<
 		{
 			description: "deluxe_event_pass_track_unlock_description";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_GOPass_SEP_v4_1024x576-nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fb8786503_PGO-MCS_GO_Pass_September_2026_TICKET_v1-1024x576.jpg";
 			sku: "pgorelease.month1_deluxe_event_pass_track_redirect";
 			skuDisableTime: "2026-10-08T10:00:00";
 			skuDisableTimeUtcMs: "1791453600000";
@@ -1084,7 +1065,7 @@ export type IapItemDisplayMonth1DeluxeEventPassTrackUnlock = S<
 		{
 			description: "deluxe_event_pass_track_unlock_description";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_GOPass_SEP_v4_1024x576-nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fb8786503_PGO-MCS_GO_Pass_September_2026_TICKET_v1-1024x576.jpg";
 			sku: "pgorelease.month1_deluxe_event_pass_track_unlock";
 			skuDisableTime: "2026-10-08T10:00:00";
 			skuDisableTimeUtcMs: "1791453600000";
@@ -1101,7 +1082,7 @@ export type IapItemDisplayMonth1DeluxeEventPassTrackUnlockPlusPoints = S<
 		{
 			description: "deluxe_event_pass_track_unlock_plus_points_description";
 			hidden: true;
-			imageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_GOPass_SEP_v4_1024x576-nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fb8786503_PGO-MCS_GO_Pass_September_2026_TICKET_v1-1024x576.jpg";
 			sku: "pgorelease.month1_deluxe_event_pass_track_unlock_plus_points";
 			skuDisableTime: "2026-10-08T10:00:00";
 			skuDisableTimeUtcMs: "1791453600000";
@@ -1208,6 +1189,38 @@ export type IapItemDisplayPgoreleaseApril22026DeluxeEventPassTrackRedirect = S<
 			skuEnableTimeUtcMs: "1744624800000";
 			sortOrder: 1;
 			title: "season_pass_premium_track_title_sustainabilityweek2026";
+		}
+	>
+>;
+export type IapItemDisplayPgoreleaseAugust2DeluxeEventPassTrackUnlock = S<
+	IapItemDisplay<
+		"pgorelease.august2_deluxe_event_pass_track_unlock",
+		{
+			description: "deluxe_event_pass_track_unlock_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20ad29e8_PGO-MCS_Water_Festival_2026_TICKET_v3-1024x576.jpg";
+			sku: "pgorelease.august2_deluxe_event_pass_track_unlock";
+			skuDisableTime: "2026-08-26T20:00:00";
+			skuDisableTimeUtcMs: "1787774400000";
+			skuEnableTime: "2025-08-18T10:00:06";
+			skuEnableTimeUtcMs: "1755511206000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_uu_water_festival_2026";
+		}
+	>
+>;
+export type IapItemDisplayPgoreleaseAugust2DeluxeEventPassTrackUnlockPlusPoints = S<
+	IapItemDisplay<
+		"pgorelease.august2_deluxe_event_pass_track_unlock_plus_points",
+		{
+			description: "event_pass_plus_points_6_ranks_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20ad29e8_PGO-MCS_Water_Festival_2026_TICKET_v3-1024x576.jpg";
+			sku: "pgorelease.august2_deluxe_event_pass_track_unlock_plus_points";
+			skuDisableTime: "2026-08-26T20:00:00";
+			skuDisableTimeUtcMs: "1787774400000";
+			skuEnableTime: "2025-08-18T10:00:07";
+			skuEnableTimeUtcMs: "1755511207000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_plus_six_ranks_title_uu_water_festival_2026";
 		}
 	>
 >;
@@ -1380,7 +1393,6 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayEventPassAmer2026StoreRedirect
 	| IapItemDisplayEventPassApril1SeasonStoreRedirect
 	| IapItemDisplayEventPassApril3EventStoreRedirect
-	| IapItemDisplayEventPassAugust2Redirect
 	| IapItemDisplayEventPassGofest2025FinaleStoreRedirect
 	| IapItemDisplayEventPassGofest2025GlobalStoreRedirect
 	| IapItemDisplayEventPassGotour2025GlobalStoreRedirect
@@ -1435,6 +1447,8 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayMpReplenishRrp1
 	| IapItemDisplayMpReplenishRrp3
 	| IapItemDisplayPgoreleaseApril22026DeluxeEventPassTrackRedirect
+	| IapItemDisplayPgoreleaseAugust2DeluxeEventPassTrackUnlock
+	| IapItemDisplayPgoreleaseAugust2DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayPgoreleaseAugust3DeluxeEventPassTrackUnlockRedirect
 	| IapItemDisplayPgoreleaseGofest2025DeluxeEventPassTrackRedirect
 	| IapItemDisplayPgoreleaseJuly1DeluxeEventPassTrackRedirect

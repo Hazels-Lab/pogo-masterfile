@@ -15,6 +15,7 @@ export interface MegaEvoLevelSettings<TemplateID extends string = string, TData 
 				sameTypeAttackBoost: 1.3;
 			};
 			progression: {
+				pointsLimitPerPeriod: 1;
 				pointsPerMegaEvoAction: 1;
 			};
 		};
@@ -70,7 +71,6 @@ export interface MegaEvoLevelSettingsData {
 		| "TYRANITAR"
 		| "VICTREEBEL";
 	progression: {
-		pointsLimitPerPeriod: number;
 		pointsRequired?: number;
 	};
 }

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1183 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1189 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -56,6 +56,7 @@ export interface IapItemDisplayData {
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F53190080_PGO-MCS_Flying_Taxi_TICKET_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Faab1ed22_PGO-MCS_Summer_Marathon_Fire_Ice_v3b-1024x576.jpg"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fb8786503_PGO-MCS_GO_Pass_September_2026_TICKET_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fd07cba0c_PGO-MCS_GOFest_2026_GOPass_v3-16x9.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe3025fe6_PGO-MCS_GO_Fest_2026_AMER_Global_LiveOp_v2-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FEvent%20Pass%20Placeholder.png"
@@ -85,7 +86,6 @@ export interface IapItemDisplayData {
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F3b085206_PGO-MCS_10th_Anniversary_Celebration_TICKET_v2-1024x576.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F9398cb22_PGO-MCS_Skarmory_Super_Mega_Raid_Day_v4-1024x576.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fe2400534_20260511_pgo_s23_ShinyShaymin_1024x576_nologo.jpg"
-		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FPGO-MCS_GOPass_SEP_v4_1024x576-nologo.jpg"
 		| "https://storage.googleapis.com/prod-public-images/GBL_SharedSkies_2024.jpeg"
 		| "https://storage.googleapis.com/prod-public-images/gf20.jpg"
 		| "https://storage.googleapis.com/prod-public-images/Safari_ticket_banner.png";
@@ -129,6 +129,7 @@ export interface IapItemDisplayData {
 		| "2025-11-30T20:00:00"
 		| "2025-12-29T23:59:00"
 		| "2025-12-31T20:00:00"
+		| "2026-01-02T22:00:00"
 		| "2026-01-08T20:00:00"
 		| "2026-01-25T23:59:00"
 		| "2026-02-01T20:00:00"
@@ -180,6 +181,7 @@ export interface IapItemDisplayData {
 		| "1764532800000"
 		| "1767052740000"
 		| "1767211200000"
+		| "1767391200000"
 		| "1767902400000"
 		| "1769385540000"
 		| "1769976000000"
@@ -235,10 +237,13 @@ export interface IapItemDisplayData {
 		| "2025-07-21T10:00:00"
 		| "2025-07-28T10:00:00"
 		| "2025-08-04T10:00:00"
-		| "2025-08-18T10:00:00"
-		| "2025-08-18T10:00:02"
-		| "2025-08-18T10:00:04"
+		| "2025-08-18T10:00:01"
+		| "2025-08-18T10:00:03"
+		| "2025-08-18T10:00:05"
+		| "2025-08-18T10:00:06"
+		| "2025-08-18T10:00:07"
 		| "2025-08-25T10:00:00"
+		| "2026-01-02T20:00:00"
 		| "2026-03-03T13:00:00"
 		| "2026-07-06T00:00:00"
 		| "2026-09-08T10:00:00";
@@ -281,10 +286,13 @@ export interface IapItemDisplayData {
 		| "1753092000000"
 		| "1753696800000"
 		| "1754301600000"
-		| "1755511200000"
-		| "1755511202000"
-		| "1755511204000"
+		| "1755511201000"
+		| "1755511203000"
+		| "1755511205000"
+		| "1755511206000"
+		| "1755511207000"
 		| "1756116000000"
+		| "1767384000000"
 		| "1772542800000"
 		| "1783296000000"
 		| "1788861600000";

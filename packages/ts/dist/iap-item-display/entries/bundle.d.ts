@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "bundle", 282 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "bundle", 286 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -1135,6 +1135,80 @@ export type IapItemDisplayBundleGofest20267 = S<
 			sortOrder: 7;
 			spriteId: "bundle.xmas.medium.1";
 			title: "sticker_box";
+		}
+	>
+>;
+export type IapItemDisplayBundleGofest2026finale1 = S<
+	IapItemDisplay<
+		"bundle.GOFest2026Finale.1",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			showDiscountTag: true;
+			showStrikethroughPrice: true;
+			sku: "bundle.GOFest2026Finale.1";
+			skuDisableTime: "2026-01-02T22:00:00";
+			skuDisableTimeUtcMs: "1767391200000";
+			skuEnableTime: "2026-01-02T20:00:00";
+			skuEnableTimeUtcMs: "1767384000000";
+			sortOrder: 1;
+			spriteId: "bundle.general.remotebox.small.1";
+			title: "box_goraid";
+		}
+	>
+>;
+export type IapItemDisplayBundleGofest2026finale2 = S<
+	IapItemDisplay<
+		"bundle.GOFest2026Finale.2",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			showDiscountTag: true;
+			showStrikethroughPrice: true;
+			sku: "bundle.GOFest2026Finale.2";
+			skuDisableTime: "2026-01-02T22:00:00";
+			skuDisableTimeUtcMs: "1767391200000";
+			skuEnableTime: "2026-01-02T20:00:00";
+			skuEnableTimeUtcMs: "1767384000000";
+			sortOrder: 2;
+			spriteId: "bundle.general1.small.2";
+			title: "box_gocatch";
+		}
+	>
+>;
+export type IapItemDisplayBundleGofest2026finale3 = S<
+	IapItemDisplay<
+		"bundle.GOFest2026Finale.3",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			sku: "bundle.GOFest2026Finale.3";
+			skuDisableTime: "2026-01-02T22:00:00";
+			skuDisableTimeUtcMs: "1767391200000";
+			skuEnableTime: "2026-01-02T20:00:00";
+			skuEnableTimeUtcMs: "1767384000000";
+			sortOrder: 3;
+			spriteId: "bundle.general.premiumbox.large.1";
+			title: "box_gomaster";
+		}
+	>
+>;
+export type IapItemDisplayBundleGofest2026finale4 = S<
+	IapItemDisplay<
+		"bundle.GOFest2026Finale.4",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			showDiscountTag: true;
+			showStrikethroughPrice: true;
+			sku: "bundle.GOFest2026Finale.4";
+			skuDisableTime: "2026-01-02T22:00:00";
+			skuDisableTimeUtcMs: "1767391200000";
+			skuEnableTime: "2026-01-02T20:00:00";
+			skuEnableTimeUtcMs: "1767384000000";
+			sortOrder: 4;
+			spriteId: "bundle.general.adventure.1";
+			title: "box_gosticker";
 		}
 	>
 >;
@@ -3990,6 +4064,10 @@ export type IapItemDisplayBundleMasterfileEntry =
 	| IapItemDisplayBundleGofest20265
 	| IapItemDisplayBundleGofest20266
 	| IapItemDisplayBundleGofest20267
+	| IapItemDisplayBundleGofest2026finale1
+	| IapItemDisplayBundleGofest2026finale2
+	| IapItemDisplayBundleGofest2026finale3
+	| IapItemDisplayBundleGofest2026finale4
 	| IapItemDisplayBundleGotour20241
 	| IapItemDisplayBundleGotour20242
 	| IapItemDisplayBundleGotour20243

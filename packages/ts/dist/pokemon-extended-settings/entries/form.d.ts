@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1173 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1171 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -16847,40 +16847,6 @@ export type PokemonExtendedSettingsV0847PokemonBarraskewdaNormal = S<
 		}
 	>
 >;
-export type PokemonExtendedSettingsV0850PokemonSizzlipedeNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0850_POKEMON_SIZZLIPEDE_NORMAL",
-		{
-			form: "SIZZLIPEDE_NORMAL";
-			sizeSettings: {
-				mLowerBound: 0.525;
-				mUpperBound: 0.875;
-				xlUpperBound: 1.05;
-				xsLowerBound: 0.35;
-				xxlUpperBound: 1.225;
-				xxsLowerBound: 0.343;
-			};
-			uniqueId: "SIZZLIPEDE";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0851PokemonCentiskorchNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0851_POKEMON_CENTISKORCH_NORMAL",
-		{
-			form: "CENTISKORCH_NORMAL";
-			sizeSettings: {
-				mLowerBound: 2.25;
-				mUpperBound: 3.75;
-				xlUpperBound: 4.5;
-				xsLowerBound: 1.5;
-				xxlUpperBound: 4.65;
-				xxsLowerBound: 1.47;
-			};
-			uniqueId: "CENTISKORCH";
-		}
-	>
->;
 export type PokemonExtendedSettingsV0852PokemonClobbopusNormal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0852_POKEMON_CLOBBOPUS_NORMAL",
@@ -21078,8 +21044,6 @@ export type PokemonExtendedSettingsFormMasterfileEntry =
 	| PokemonExtendedSettingsV0845PokemonCramorantNormal
 	| PokemonExtendedSettingsV0846PokemonArrokudaNormal
 	| PokemonExtendedSettingsV0847PokemonBarraskewdaNormal
-	| PokemonExtendedSettingsV0850PokemonSizzlipedeNormal
-	| PokemonExtendedSettingsV0851PokemonCentiskorchNormal
 	| PokemonExtendedSettingsV0852PokemonClobbopusNormal
 	| PokemonExtendedSettingsV0853PokemonGrapploctNormal
 	| PokemonExtendedSettingsV0854PokemonSinisteaAntique

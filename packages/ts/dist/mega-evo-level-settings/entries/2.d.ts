@@ -19,7 +19,6 @@ export type MegaEvoLevelSettings2 = S<
 			level: 2;
 			megaEnergyCostPerPoint: 80;
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -42,7 +41,6 @@ export type MegaEvoLevelSettings2V0015PokemonBeedrill = S<
 			megaEnergyCostPerPoint: 80;
 			pokemonId: "BEEDRILL";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -65,7 +63,6 @@ export type MegaEvoLevelSettings2V0018PokemonPidgeot = S<
 			megaEnergyCostPerPoint: 80;
 			pokemonId: "PIDGEOT";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -88,7 +85,6 @@ export type MegaEvoLevelSettings2V0026PokemonRaichu = S<
 			megaEnergyCostPerPoint: 160;
 			pokemonId: "RAICHU";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -111,7 +107,6 @@ export type MegaEvoLevelSettings2V0071PokemonVictreebel = S<
 			megaEnergyCostPerPoint: 160;
 			pokemonId: "VICTREEBEL";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -134,7 +129,6 @@ export type MegaEvoLevelSettings2V0080PokemonSlowbro = S<
 			megaEnergyCostPerPoint: 80;
 			pokemonId: "SLOWBRO";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -157,7 +151,6 @@ export type MegaEvoLevelSettings2V0121PokemonStarmie = S<
 			megaEnergyCostPerPoint: 160;
 			pokemonId: "STARMIE";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -180,7 +173,6 @@ export type MegaEvoLevelSettings2V0130PokemonGyarados = S<
 			megaEnergyCostPerPoint: 160;
 			pokemonId: "GYARADOS";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -203,7 +195,6 @@ export type MegaEvoLevelSettings2V0149PokemonDragonite = S<
 			megaEnergyCostPerPoint: 160;
 			pokemonId: "DRAGONITE";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -226,7 +217,6 @@ export type MegaEvoLevelSettings2V0150PokemonMewtwo = S<
 			megaEnergyCostPerPoint: 160;
 			pokemonId: "MEWTWO";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -249,7 +239,6 @@ export type MegaEvoLevelSettings2V0227PokemonSkarmory = S<
 			megaEnergyCostPerPoint: 160;
 			pokemonId: "SKARMORY";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -272,7 +261,6 @@ export type MegaEvoLevelSettings2V0229PokemonHoundoom = S<
 			megaEnergyCostPerPoint: 80;
 			pokemonId: "HOUNDOOM";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -295,7 +283,6 @@ export type MegaEvoLevelSettings2V0248PokemonTyranitar = S<
 			megaEnergyCostPerPoint: 160;
 			pokemonId: "TYRANITAR";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -318,7 +305,6 @@ export type MegaEvoLevelSettings2V0302PokemonSableye = S<
 			megaEnergyCostPerPoint: 80;
 			pokemonId: "SABLEYE";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -341,7 +327,6 @@ export type MegaEvoLevelSettings2V0308PokemonMedicham = S<
 			megaEnergyCostPerPoint: 80;
 			pokemonId: "MEDICHAM";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -364,7 +349,6 @@ export type MegaEvoLevelSettings2V0310PokemonManectric = S<
 			megaEnergyCostPerPoint: 80;
 			pokemonId: "MANECTRIC";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -387,7 +371,6 @@ export type MegaEvoLevelSettings2V0334PokemonAltaria = S<
 			megaEnergyCostPerPoint: 160;
 			pokemonId: "ALTARIA";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -410,7 +393,6 @@ export type MegaEvoLevelSettings2V0354PokemonBanette = S<
 			megaEnergyCostPerPoint: 80;
 			pokemonId: "BANETTE";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -433,7 +415,6 @@ export type MegaEvoLevelSettings2V0373PokemonSalamence = S<
 			megaEnergyCostPerPoint: 160;
 			pokemonId: "SALAMENCE";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -456,7 +437,6 @@ export type MegaEvoLevelSettings2V0376PokemonMetagross = S<
 			megaEnergyCostPerPoint: 160;
 			pokemonId: "METAGROSS";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -479,7 +459,6 @@ export type MegaEvoLevelSettings2V0380PokemonLatias = S<
 			megaEnergyCostPerPoint: 160;
 			pokemonId: "LATIAS";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -502,7 +481,6 @@ export type MegaEvoLevelSettings2V0381PokemonLatios = S<
 			megaEnergyCostPerPoint: 160;
 			pokemonId: "LATIOS";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -525,7 +503,6 @@ export type MegaEvoLevelSettings2V0382PokemonKyogre = S<
 			megaEnergyCostPerPoint: 160;
 			pokemonId: "KYOGRE";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -548,7 +525,6 @@ export type MegaEvoLevelSettings2V0383PokemonGroudon = S<
 			megaEnergyCostPerPoint: 160;
 			pokemonId: "GROUDON";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -571,7 +547,6 @@ export type MegaEvoLevelSettings2V0384PokemonRayquaza = S<
 			megaEnergyCostPerPoint: 160;
 			pokemonId: "RAYQUAZA";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -594,7 +569,6 @@ export type MegaEvoLevelSettings2V0445PokemonGarchomp = S<
 			megaEnergyCostPerPoint: 160;
 			pokemonId: "GARCHOMP";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -605,7 +579,7 @@ export type MegaEvoLevelSettings2V0652PokemonChesnaught = S<
 		"MEGA_EVOLUTION_LEVEL_2_V0652_POKEMON_CHESNAUGHT",
 		{
 			cooldown: {
-				bypassCostInitial: 40;
+				bypassCostInitial: 30;
 				durationMs: "432000000";
 			};
 			effects: {
@@ -614,9 +588,9 @@ export type MegaEvoLevelSettings2V0652PokemonChesnaught = S<
 				sameTypeExtraCatchXp: 50;
 			};
 			level: 2;
+			megaEnergyCostPerPoint: 160;
 			pokemonId: "CHESNAUGHT";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -627,7 +601,7 @@ export type MegaEvoLevelSettings2V0655PokemonDelphox = S<
 		"MEGA_EVOLUTION_LEVEL_2_V0655_POKEMON_DELPHOX",
 		{
 			cooldown: {
-				bypassCostInitial: 40;
+				bypassCostInitial: 30;
 				durationMs: "432000000";
 			};
 			effects: {
@@ -636,9 +610,9 @@ export type MegaEvoLevelSettings2V0655PokemonDelphox = S<
 				sameTypeExtraCatchXp: 50;
 			};
 			level: 2;
+			megaEnergyCostPerPoint: 160;
 			pokemonId: "DELPHOX";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -649,7 +623,7 @@ export type MegaEvoLevelSettings2V0658PokemonGreninja = S<
 		"MEGA_EVOLUTION_LEVEL_2_V0658_POKEMON_GRENINJA",
 		{
 			cooldown: {
-				bypassCostInitial: 40;
+				bypassCostInitial: 30;
 				durationMs: "432000000";
 			};
 			effects: {
@@ -658,9 +632,9 @@ export type MegaEvoLevelSettings2V0658PokemonGreninja = S<
 				sameTypeExtraCatchXp: 50;
 			};
 			level: 2;
+			megaEnergyCostPerPoint: 160;
 			pokemonId: "GRENINJA";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -683,7 +657,6 @@ export type MegaEvoLevelSettings2V0687PokemonMalamar = S<
 			megaEnergyCostPerPoint: 160;
 			pokemonId: "MALAMAR";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -706,7 +679,6 @@ export type MegaEvoLevelSettings2V0719PokemonDiancie = S<
 			megaEnergyCostPerPoint: 160;
 			pokemonId: "DIANCIE";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}
@@ -729,7 +701,6 @@ export type MegaEvoLevelSettings2V0870PokemonFalinks = S<
 			megaEnergyCostPerPoint: 160;
 			pokemonId: "FALINKS";
 			progression: {
-				pointsLimitPerPeriod: 1;
 				pointsRequired: 7;
 			};
 		}

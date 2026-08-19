@@ -96,6 +96,10 @@ import type {
 	IapItemDisplayBundleGeneralTemplate5,
 	IapItemDisplayBundleGeneralTemplate6,
 	IapItemDisplayBundleGmaxday1,
+	IapItemDisplayBundleGofest2026finale1,
+	IapItemDisplayBundleGofest2026finale2,
+	IapItemDisplayBundleGofest2026finale3,
+	IapItemDisplayBundleGofest2026finale4,
 	IapItemDisplayBundleGofest20231,
 	IapItemDisplayBundleGofest20232,
 	IapItemDisplayBundleGofest20233,
@@ -373,6 +377,8 @@ import type {
 	IapItemDisplayPaidraidticket1,
 	IapItemDisplayPaidraidticket3,
 	IapItemDisplayPgoreleaseApril22026DeluxeEventPassTrackRedirect,
+	IapItemDisplayPgoreleaseAugust2DeluxeEventPassTrackUnlock,
+	IapItemDisplayPgoreleaseAugust2DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayPgoreleaseAugust3DeluxeEventPassTrackUnlockRedirect,
 	IapItemDisplayPgoreleaseBundle1,
 	IapItemDisplayPgoreleaseBundle2,
@@ -1298,6 +1304,10 @@ export interface IapItemDisplayLookup {
 	"bundle.GOFest2026.5": IapItemDisplayBundleGofest20265;
 	"bundle.GOFest2026.6": IapItemDisplayBundleGofest20266;
 	"bundle.GOFest2026.7": IapItemDisplayBundleGofest20267;
+	"bundle.GOFest2026Finale.1": IapItemDisplayBundleGofest2026finale1;
+	"bundle.GOFest2026Finale.2": IapItemDisplayBundleGofest2026finale2;
+	"bundle.GOFest2026Finale.3": IapItemDisplayBundleGofest2026finale3;
+	"bundle.GOFest2026Finale.4": IapItemDisplayBundleGofest2026finale4;
 	"bundle.gofestmakegoodprep.1": IapItemDisplayBundleGofestmakegoodprep1;
 	"bundle.gofestmakegoodprep.2": IapItemDisplayBundleGofestmakegoodprep2;
 	"bundle.gofestmakegoodprep.3": IapItemDisplayBundleGofestmakegoodprep3;
@@ -1559,6 +1569,8 @@ export interface IapItemDisplayLookup {
 	"paidraidticket.1": IapItemDisplayPaidraidticket1;
 	"paidraidticket.3": IapItemDisplayPaidraidticket3;
 	"pgorelease.april2_2026_deluxe_event_pass_track_redirect": IapItemDisplayPgoreleaseApril22026DeluxeEventPassTrackRedirect;
+	"pgorelease.august2_deluxe_event_pass_track_unlock": IapItemDisplayPgoreleaseAugust2DeluxeEventPassTrackUnlock;
+	"pgorelease.august2_deluxe_event_pass_track_unlock_plus_points": IapItemDisplayPgoreleaseAugust2DeluxeEventPassTrackUnlockPlusPoints;
 	"pgorelease.august3_deluxe_event_pass_track_unlock_redirect": IapItemDisplayPgoreleaseAugust3DeluxeEventPassTrackUnlockRedirect;
 	"pgorelease.bundle.1": IapItemDisplayPgoreleaseBundle1;
 	"pgorelease.bundle.2": IapItemDisplayPgoreleaseBundle2;
