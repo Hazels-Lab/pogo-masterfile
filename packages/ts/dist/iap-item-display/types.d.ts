@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1189 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1192 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -49,6 +49,7 @@ export interface IapItemDisplayData {
 	imageUrl?:
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F1e924512_PGO-MCS_GO_Fest_2026_EMEA_Global_LiveOp_v3-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F07b0cffa_PGO-MCS_2026_Ultra_Unlock_01_v6-1024x576.jpg"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F13d4dacd_PGO-MCS_Avatar_Maschiff_Top_v2-1024x576%20no%20logo.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20ad29e8_PGO-MCS_Water_Festival_2026_TICKET_v3-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F68bf81f3_PGO-MCS_GO_Pass_Special_Anniversary_Pikachu_Celebration_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F84f00147_PGO-MCS_GO_Pass_August_2026_TICKET_v1-1024x576.jpg"
@@ -125,6 +126,7 @@ export interface IapItemDisplayData {
 		| "2025-08-12T20:00:00"
 		| "2025-08-26T21:00:00"
 		| "2025-09-01T20:00:00"
+		| "2025-09-16T20:00:00"
 		| "2025-11-16T18:00:00"
 		| "2025-11-30T20:00:00"
 		| "2025-12-29T23:59:00"
@@ -177,6 +179,7 @@ export interface IapItemDisplayData {
 		| "1755028800000"
 		| "1756242000000"
 		| "1756756800000"
+		| "1758052800000"
 		| "1763316000000"
 		| "1764532800000"
 		| "1767052740000"
@@ -243,6 +246,7 @@ export interface IapItemDisplayData {
 		| "2025-08-18T10:00:06"
 		| "2025-08-18T10:00:07"
 		| "2025-08-25T10:00:00"
+		| "2025-09-08T10:00:00"
 		| "2026-01-02T20:00:00"
 		| "2026-03-03T13:00:00"
 		| "2026-07-06T00:00:00"
@@ -292,6 +296,7 @@ export interface IapItemDisplayData {
 		| "1755511206000"
 		| "1755511207000"
 		| "1756116000000"
+		| "1757325600000"
 		| "1767384000000"
 		| "1772542800000"
 		| "1783296000000"

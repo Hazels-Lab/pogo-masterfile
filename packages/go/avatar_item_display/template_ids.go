@@ -472,6 +472,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNHatRegisteeljersies0                AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_registeeljersies_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatRuinmaniacA0                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_ruinmaniac_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatRuinmaniacB0                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_ruinmaniac_b_0"
+	AvatarItemDisplayTemplateIDNDisplayNHatRyme                             AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_ryme"
 	AvatarItemDisplayTemplateIDNDisplayNHatSableyegoggles0                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_sableyegoggles_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatSamsungsummer20200               AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_samsungsummer2020_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatSandygasthat0                    AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_sandygasthat_0"
@@ -778,6 +779,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNPoseS20gbl                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_s20gbl"
 	AvatarItemDisplayTemplateIDNDisplayNPoseS22gbl                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_s22gbl"
 	AvatarItemDisplayTemplateIDNDisplayNPoseS23gbl                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_s23gbl"
+	AvatarItemDisplayTemplateIDNDisplayNPoseS24gbl                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_s24gbl"
 	AvatarItemDisplayTemplateIDNDisplayNPoseSustainability                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_sustainability"
 	AvatarItemDisplayTemplateIDNDisplayNPoseTeapot                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_teapot"
 	AvatarItemDisplayTemplateIDNDisplayNPoseTinkatonhammer                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_tinkatonhammer"
@@ -1077,6 +1079,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShirtReuniclusitems0                AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_reuniclusitems_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtRuinmaniacA0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_ruinmaniac_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtRuinmaniacB0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_ruinmaniac_b_0"
+	AvatarItemDisplayTemplateIDNDisplayNShirtRyme                           AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_ryme"
 	AvatarItemDisplayTemplateIDNDisplayNShirtS19gbl0                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_s19gbl_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtSafarizone2020A0               AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_safarizone2020_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtSafarizone2020B0               AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_safarizone2020_b_0"
@@ -1347,6 +1350,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShoesReuniclusitems0                AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_reuniclusitems_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesRuinmaniacA0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_ruinmaniac_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesRuinmaniacB0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_ruinmaniac_b_0"
+	AvatarItemDisplayTemplateIDNDisplayNShoesRyme                           AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_ryme"
 	AvatarItemDisplayTemplateIDNDisplayNShoesS19gbl0                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_s19gbl_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesSandals0                       AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_sandals_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesSandals1                       AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_sandals_1"
@@ -1613,6 +1617,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplaySetRegisteeljersiesM                 AvatarItemDisplayTemplateID = "N_DISPLAY_set_registeeljersies_m"
 	AvatarItemDisplayTemplateIDNDisplaySetRuinmaniacF                       AvatarItemDisplayTemplateID = "N_DISPLAY_set_ruinmaniac_f"
 	AvatarItemDisplayTemplateIDNDisplaySetRuinmaniacM                       AvatarItemDisplayTemplateID = "N_DISPLAY_set_ruinmaniac_m"
+	AvatarItemDisplayTemplateIDNDisplaySetRyme                              AvatarItemDisplayTemplateID = "N_DISPLAY_set_ryme"
 	AvatarItemDisplayTemplateIDNDisplaySetS19gbl0                           AvatarItemDisplayTemplateID = "N_DISPLAY_set_s19gbl_0"
 	AvatarItemDisplayTemplateIDNDisplaySetS22gbl0                           AvatarItemDisplayTemplateID = "N_DISPLAY_set_s22gbl_0"
 	AvatarItemDisplayTemplateIDNDisplaySetShayminLandF                      AvatarItemDisplayTemplateID = "N_DISPLAY_set_shaymin_land_f"
@@ -2159,6 +2164,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNHatRegisteeljersies0,
 	AvatarItemDisplayTemplateIDNDisplayNHatRuinmaniacA0,
 	AvatarItemDisplayTemplateIDNDisplayNHatRuinmaniacB0,
+	AvatarItemDisplayTemplateIDNDisplayNHatRyme,
 	AvatarItemDisplayTemplateIDNDisplayNHatSableyegoggles0,
 	AvatarItemDisplayTemplateIDNDisplayNHatSamsungsummer20200,
 	AvatarItemDisplayTemplateIDNDisplayNHatSandygasthat0,
@@ -2465,6 +2471,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNPoseS20gbl,
 	AvatarItemDisplayTemplateIDNDisplayNPoseS22gbl,
 	AvatarItemDisplayTemplateIDNDisplayNPoseS23gbl,
+	AvatarItemDisplayTemplateIDNDisplayNPoseS24gbl,
 	AvatarItemDisplayTemplateIDNDisplayNPoseSustainability,
 	AvatarItemDisplayTemplateIDNDisplayNPoseTeapot,
 	AvatarItemDisplayTemplateIDNDisplayNPoseTinkatonhammer,
@@ -2764,6 +2771,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShirtReuniclusitems0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtRuinmaniacA0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtRuinmaniacB0,
+	AvatarItemDisplayTemplateIDNDisplayNShirtRyme,
 	AvatarItemDisplayTemplateIDNDisplayNShirtS19gbl0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtSafarizone2020A0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtSafarizone2020B0,
@@ -3034,6 +3042,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShoesReuniclusitems0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesRuinmaniacA0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesRuinmaniacB0,
+	AvatarItemDisplayTemplateIDNDisplayNShoesRyme,
 	AvatarItemDisplayTemplateIDNDisplayNShoesS19gbl0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesSandals0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesSandals1,
@@ -3300,6 +3309,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplaySetRegisteeljersiesM,
 	AvatarItemDisplayTemplateIDNDisplaySetRuinmaniacF,
 	AvatarItemDisplayTemplateIDNDisplaySetRuinmaniacM,
+	AvatarItemDisplayTemplateIDNDisplaySetRyme,
 	AvatarItemDisplayTemplateIDNDisplaySetS19gbl0,
 	AvatarItemDisplayTemplateIDNDisplaySetS22gbl0,
 	AvatarItemDisplayTemplateIDNDisplaySetShayminLandF,

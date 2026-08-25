@@ -2,6 +2,7 @@
 
 import type {
 	RollBackFriendsAndSocialLazyLoad,
+	RollBackGetFriendDetailsPaginated,
 	RollBackMapRadiusEnhanceGraphics,
 	RollBackOptimizeRaidLobbyAvatarDetails,
 	RollBackPeriodicMapUnload,
@@ -9,6 +10,7 @@ import type {
 
 export interface RollBackLookup {
 	FRIENDS_AND_SOCIAL_LAZY_LOAD_ROLL_BACK: RollBackFriendsAndSocialLazyLoad;
+	GET_FRIEND_DETAILS_PAGINATED_ROLL_BACK: RollBackGetFriendDetailsPaginated;
 	MAP_RADIUS_ENHANCE_GRAPHICS_ROLL_BACK: RollBackMapRadiusEnhanceGraphics;
 	OPTIMIZE_RAID_LOBBY_AVATAR_DETAILS_ROLL_BACK: RollBackOptimizeRaidLobbyAvatarDetails;
 	PERIODIC_MAP_UNLOAD_ROLL_BACK: RollBackPeriodicMapUnload;

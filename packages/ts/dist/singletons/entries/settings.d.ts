@@ -6045,6 +6045,7 @@ export interface VistaGeneralSettings {
 			isVistaEncounterEnabled: true;
 			isVistaMapEnabled: true;
 			isVistaSpawnsEnabled: true;
+			themeOverride: "WCS";
 		};
 	};
 }

@@ -289,6 +289,7 @@ const (
 	IapItemDisplayTemplateIDEventPassMonth2SeasonStoreRedirect                     IapItemDisplayTemplateID = "EVENT_PASS_MONTH2_SEASON_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEventPassMonth3SeasonStoreRedirect                     IapItemDisplayTemplateID = "EVENT_PASS_MONTH3_SEASON_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEventPassRedirectSummerMarathon2026                    IapItemDisplayTemplateID = "EVENT_PASS_REDIRECT_SUMMER_MARATHON_2026"
+	IapItemDisplayTemplateIDEventPassSeptember1EventStoreRedirect                  IapItemDisplayTemplateID = "EVENT_PASS_SEPTEMBER1_EVENT_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEventPassWinterholidays2025SeasonStoreRedirect         IapItemDisplayTemplateID = "EVENT_PASS_WINTERHOLIDAYS2025_SEASON_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEvergreenticket1                                       IapItemDisplayTemplateID = "evergreenticket.1"
 	IapItemDisplayTemplateIDEvergreenticket1Giftable                               IapItemDisplayTemplateID = "evergreenticket.1.giftable"
@@ -480,6 +481,8 @@ const (
 	IapItemDisplayTemplateIDPostcardstorageupgrade1                                IapItemDisplayTemplateID = "postcardstorageupgrade.1"
 	IapItemDisplayTemplateIDRemoteraidticket1                                      IapItemDisplayTemplateID = "remoteraidticket.1"
 	IapItemDisplayTemplateIDRemoteraidticket3                                      IapItemDisplayTemplateID = "remoteraidticket.3"
+	IapItemDisplayTemplateIDSeptember12026DeluxeEventPassTrackUnlock               IapItemDisplayTemplateID = "SEPTEMBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK"
+	IapItemDisplayTemplateIDSeptember12026DeluxeEventPassTrackUnlockPlusPoints     IapItemDisplayTemplateID = "SEPTEMBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
 	IapItemDisplayTemplateIDStarpiece1                                             IapItemDisplayTemplateID = "starpiece.1"
 	IapItemDisplayTemplateIDStarpiece8                                             IapItemDisplayTemplateID = "starpiece.8"
 	IapItemDisplayTemplateIDSticker8anniv13                                        IapItemDisplayTemplateID = "STICKER_8ANNIV_1.3"
@@ -1481,6 +1484,7 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDEventPassMonth2SeasonStoreRedirect,
 	IapItemDisplayTemplateIDEventPassMonth3SeasonStoreRedirect,
 	IapItemDisplayTemplateIDEventPassRedirectSummerMarathon2026,
+	IapItemDisplayTemplateIDEventPassSeptember1EventStoreRedirect,
 	IapItemDisplayTemplateIDEventPassWinterholidays2025SeasonStoreRedirect,
 	IapItemDisplayTemplateIDEvergreenticket1,
 	IapItemDisplayTemplateIDEvergreenticket1Giftable,
@@ -1672,6 +1676,8 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDPostcardstorageupgrade1,
 	IapItemDisplayTemplateIDRemoteraidticket1,
 	IapItemDisplayTemplateIDRemoteraidticket3,
+	IapItemDisplayTemplateIDSeptember12026DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDSeptember12026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDStarpiece1,
 	IapItemDisplayTemplateIDStarpiece8,
 	IapItemDisplayTemplateIDSticker8anniv13,

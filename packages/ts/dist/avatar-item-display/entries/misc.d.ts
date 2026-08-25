@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "misc", 350 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "misc", 351 entries.
 
 import type { S } from "../../_utils";
 import type { AvatarItemDisplay } from "../types";
@@ -2195,6 +2195,14 @@ export type AvatarItemDisplaySetRuinmaniacM = S<
 		}
 	>
 >;
+export type AvatarItemDisplaySetRyme = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_set_ryme",
+		{
+			iconAddress: "set_ryme";
+		}
+	>
+>;
 export type AvatarItemDisplaySetS19gbl0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_set_s19gbl_0",
@@ -3079,6 +3087,7 @@ export type AvatarItemDisplayMiscMasterfileEntry =
 	| AvatarItemDisplaySetRegisteeljersiesM
 	| AvatarItemDisplaySetRuinmaniacF
 	| AvatarItemDisplaySetRuinmaniacM
+	| AvatarItemDisplaySetRyme
 	| AvatarItemDisplaySetS19gbl0
 	| AvatarItemDisplaySetS22gbl0
 	| AvatarItemDisplaySetShayminLandF
