@@ -1087,4 +1087,404 @@ pub enum EventPassTierSettingsTemplateId {
     EventPassUuWaterFestival2026Event60Free,
     #[serde(rename = "EVENT_PASS_UU_WATER_FESTIVAL_2026_EVENT_60_PREMIUM")]
     EventPassUuWaterFestival2026Event60Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_1_FREE")]
+    EventPassWcs2026Event1Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_1_PREMIUM")]
+    EventPassWcs2026Event1Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_2_FREE")]
+    EventPassWcs2026Event2Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_2_PREMIUM")]
+    EventPassWcs2026Event2Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_3_FREE")]
+    EventPassWcs2026Event3Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_3_PREMIUM")]
+    EventPassWcs2026Event3Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_4_FREE")]
+    EventPassWcs2026Event4Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_4_PREMIUM")]
+    EventPassWcs2026Event4Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_5_FREE")]
+    EventPassWcs2026Event5Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_5_PREMIUM")]
+    EventPassWcs2026Event5Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_6_FREE")]
+    EventPassWcs2026Event6Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_6_PREMIUM")]
+    EventPassWcs2026Event6Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_7_FREE")]
+    EventPassWcs2026Event7Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_7_PREMIUM")]
+    EventPassWcs2026Event7Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_8_FREE")]
+    EventPassWcs2026Event8Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_8_PREMIUM")]
+    EventPassWcs2026Event8Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_9_FREE")]
+    EventPassWcs2026Event9Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_9_PREMIUM")]
+    EventPassWcs2026Event9Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_10_FREE")]
+    EventPassWcs2026Event10Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_10_PREMIUM")]
+    EventPassWcs2026Event10Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_11_FREE")]
+    EventPassWcs2026Event11Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_11_PREMIUM")]
+    EventPassWcs2026Event11Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_12_FREE")]
+    EventPassWcs2026Event12Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_12_PREMIUM")]
+    EventPassWcs2026Event12Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_13_FREE")]
+    EventPassWcs2026Event13Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_13_PREMIUM")]
+    EventPassWcs2026Event13Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_14_FREE")]
+    EventPassWcs2026Event14Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_14_PREMIUM")]
+    EventPassWcs2026Event14Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_15_FREE")]
+    EventPassWcs2026Event15Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_15_PREMIUM")]
+    EventPassWcs2026Event15Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_16_FREE")]
+    EventPassWcs2026Event16Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_16_PREMIUM")]
+    EventPassWcs2026Event16Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_17_FREE")]
+    EventPassWcs2026Event17Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_17_PREMIUM")]
+    EventPassWcs2026Event17Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_18_FREE")]
+    EventPassWcs2026Event18Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_18_PREMIUM")]
+    EventPassWcs2026Event18Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_19_FREE")]
+    EventPassWcs2026Event19Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_19_PREMIUM")]
+    EventPassWcs2026Event19Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_20_FREE")]
+    EventPassWcs2026Event20Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_20_PREMIUM")]
+    EventPassWcs2026Event20Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_21_FREE")]
+    EventPassWcs2026Event21Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_21_PREMIUM")]
+    EventPassWcs2026Event21Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_22_FREE")]
+    EventPassWcs2026Event22Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_22_PREMIUM")]
+    EventPassWcs2026Event22Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_23_FREE")]
+    EventPassWcs2026Event23Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_23_PREMIUM")]
+    EventPassWcs2026Event23Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_24_FREE")]
+    EventPassWcs2026Event24Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_24_PREMIUM")]
+    EventPassWcs2026Event24Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_25_FREE")]
+    EventPassWcs2026Event25Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_25_PREMIUM")]
+    EventPassWcs2026Event25Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_26_FREE")]
+    EventPassWcs2026Event26Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_26_PREMIUM")]
+    EventPassWcs2026Event26Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_27_FREE")]
+    EventPassWcs2026Event27Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_27_PREMIUM")]
+    EventPassWcs2026Event27Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_28_FREE")]
+    EventPassWcs2026Event28Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_28_PREMIUM")]
+    EventPassWcs2026Event28Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_29_FREE")]
+    EventPassWcs2026Event29Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_29_PREMIUM")]
+    EventPassWcs2026Event29Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_30_FREE")]
+    EventPassWcs2026Event30Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_30_PREMIUM")]
+    EventPassWcs2026Event30Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_31_FREE")]
+    EventPassWcs2026Event31Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_31_PREMIUM")]
+    EventPassWcs2026Event31Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_32_FREE")]
+    EventPassWcs2026Event32Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_32_PREMIUM")]
+    EventPassWcs2026Event32Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_33_FREE")]
+    EventPassWcs2026Event33Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_33_PREMIUM")]
+    EventPassWcs2026Event33Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_34_FREE")]
+    EventPassWcs2026Event34Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_34_PREMIUM")]
+    EventPassWcs2026Event34Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_35_FREE")]
+    EventPassWcs2026Event35Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_35_PREMIUM")]
+    EventPassWcs2026Event35Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_36_FREE")]
+    EventPassWcs2026Event36Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_36_PREMIUM")]
+    EventPassWcs2026Event36Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_37_FREE")]
+    EventPassWcs2026Event37Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_37_PREMIUM")]
+    EventPassWcs2026Event37Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_38_FREE")]
+    EventPassWcs2026Event38Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_38_PREMIUM")]
+    EventPassWcs2026Event38Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_39_FREE")]
+    EventPassWcs2026Event39Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_39_PREMIUM")]
+    EventPassWcs2026Event39Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_40_FREE")]
+    EventPassWcs2026Event40Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_40_PREMIUM")]
+    EventPassWcs2026Event40Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_41_FREE")]
+    EventPassWcs2026Event41Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_41_PREMIUM")]
+    EventPassWcs2026Event41Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_42_FREE")]
+    EventPassWcs2026Event42Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_42_PREMIUM")]
+    EventPassWcs2026Event42Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_43_FREE")]
+    EventPassWcs2026Event43Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_43_PREMIUM")]
+    EventPassWcs2026Event43Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_44_FREE")]
+    EventPassWcs2026Event44Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_44_PREMIUM")]
+    EventPassWcs2026Event44Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_45_FREE")]
+    EventPassWcs2026Event45Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_45_PREMIUM")]
+    EventPassWcs2026Event45Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_46_FREE")]
+    EventPassWcs2026Event46Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_46_PREMIUM")]
+    EventPassWcs2026Event46Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_47_FREE")]
+    EventPassWcs2026Event47Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_47_PREMIUM")]
+    EventPassWcs2026Event47Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_48_FREE")]
+    EventPassWcs2026Event48Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_48_PREMIUM")]
+    EventPassWcs2026Event48Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_49_FREE")]
+    EventPassWcs2026Event49Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_49_PREMIUM")]
+    EventPassWcs2026Event49Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_50_FREE")]
+    EventPassWcs2026Event50Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_50_PREMIUM")]
+    EventPassWcs2026Event50Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_51_FREE")]
+    EventPassWcs2026Event51Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_51_PREMIUM")]
+    EventPassWcs2026Event51Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_52_FREE")]
+    EventPassWcs2026Event52Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_52_PREMIUM")]
+    EventPassWcs2026Event52Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_53_FREE")]
+    EventPassWcs2026Event53Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_53_PREMIUM")]
+    EventPassWcs2026Event53Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_54_FREE")]
+    EventPassWcs2026Event54Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_54_PREMIUM")]
+    EventPassWcs2026Event54Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_55_FREE")]
+    EventPassWcs2026Event55Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_55_PREMIUM")]
+    EventPassWcs2026Event55Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_56_FREE")]
+    EventPassWcs2026Event56Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_56_PREMIUM")]
+    EventPassWcs2026Event56Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_57_FREE")]
+    EventPassWcs2026Event57Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_57_PREMIUM")]
+    EventPassWcs2026Event57Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_58_FREE")]
+    EventPassWcs2026Event58Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_58_PREMIUM")]
+    EventPassWcs2026Event58Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_59_FREE")]
+    EventPassWcs2026Event59Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_59_PREMIUM")]
+    EventPassWcs2026Event59Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_60_FREE")]
+    EventPassWcs2026Event60Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_60_PREMIUM")]
+    EventPassWcs2026Event60Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_61_FREE")]
+    EventPassWcs2026Event61Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_61_PREMIUM")]
+    EventPassWcs2026Event61Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_62_FREE")]
+    EventPassWcs2026Event62Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_62_PREMIUM")]
+    EventPassWcs2026Event62Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_63_FREE")]
+    EventPassWcs2026Event63Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_63_PREMIUM")]
+    EventPassWcs2026Event63Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_64_FREE")]
+    EventPassWcs2026Event64Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_64_PREMIUM")]
+    EventPassWcs2026Event64Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_65_FREE")]
+    EventPassWcs2026Event65Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_65_PREMIUM")]
+    EventPassWcs2026Event65Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_66_FREE")]
+    EventPassWcs2026Event66Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_66_PREMIUM")]
+    EventPassWcs2026Event66Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_67_FREE")]
+    EventPassWcs2026Event67Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_67_PREMIUM")]
+    EventPassWcs2026Event67Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_68_FREE")]
+    EventPassWcs2026Event68Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_68_PREMIUM")]
+    EventPassWcs2026Event68Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_69_FREE")]
+    EventPassWcs2026Event69Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_69_PREMIUM")]
+    EventPassWcs2026Event69Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_70_FREE")]
+    EventPassWcs2026Event70Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_70_PREMIUM")]
+    EventPassWcs2026Event70Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_71_FREE")]
+    EventPassWcs2026Event71Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_71_PREMIUM")]
+    EventPassWcs2026Event71Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_72_FREE")]
+    EventPassWcs2026Event72Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_72_PREMIUM")]
+    EventPassWcs2026Event72Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_73_FREE")]
+    EventPassWcs2026Event73Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_73_PREMIUM")]
+    EventPassWcs2026Event73Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_74_FREE")]
+    EventPassWcs2026Event74Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_74_PREMIUM")]
+    EventPassWcs2026Event74Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_75_FREE")]
+    EventPassWcs2026Event75Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_75_PREMIUM")]
+    EventPassWcs2026Event75Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_76_FREE")]
+    EventPassWcs2026Event76Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_76_PREMIUM")]
+    EventPassWcs2026Event76Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_77_FREE")]
+    EventPassWcs2026Event77Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_77_PREMIUM")]
+    EventPassWcs2026Event77Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_78_FREE")]
+    EventPassWcs2026Event78Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_78_PREMIUM")]
+    EventPassWcs2026Event78Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_79_FREE")]
+    EventPassWcs2026Event79Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_79_PREMIUM")]
+    EventPassWcs2026Event79Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_80_FREE")]
+    EventPassWcs2026Event80Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_80_PREMIUM")]
+    EventPassWcs2026Event80Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_81_FREE")]
+    EventPassWcs2026Event81Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_81_PREMIUM")]
+    EventPassWcs2026Event81Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_82_FREE")]
+    EventPassWcs2026Event82Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_82_PREMIUM")]
+    EventPassWcs2026Event82Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_83_FREE")]
+    EventPassWcs2026Event83Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_83_PREMIUM")]
+    EventPassWcs2026Event83Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_84_FREE")]
+    EventPassWcs2026Event84Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_84_PREMIUM")]
+    EventPassWcs2026Event84Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_85_FREE")]
+    EventPassWcs2026Event85Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_85_PREMIUM")]
+    EventPassWcs2026Event85Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_86_FREE")]
+    EventPassWcs2026Event86Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_86_PREMIUM")]
+    EventPassWcs2026Event86Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_87_FREE")]
+    EventPassWcs2026Event87Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_87_PREMIUM")]
+    EventPassWcs2026Event87Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_88_FREE")]
+    EventPassWcs2026Event88Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_88_PREMIUM")]
+    EventPassWcs2026Event88Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_89_FREE")]
+    EventPassWcs2026Event89Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_89_PREMIUM")]
+    EventPassWcs2026Event89Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_90_FREE")]
+    EventPassWcs2026Event90Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_90_PREMIUM")]
+    EventPassWcs2026Event90Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_91_FREE")]
+    EventPassWcs2026Event91Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_91_PREMIUM")]
+    EventPassWcs2026Event91Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_92_FREE")]
+    EventPassWcs2026Event92Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_92_PREMIUM")]
+    EventPassWcs2026Event92Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_93_FREE")]
+    EventPassWcs2026Event93Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_93_PREMIUM")]
+    EventPassWcs2026Event93Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_94_FREE")]
+    EventPassWcs2026Event94Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_94_PREMIUM")]
+    EventPassWcs2026Event94Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_95_FREE")]
+    EventPassWcs2026Event95Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_95_PREMIUM")]
+    EventPassWcs2026Event95Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_96_FREE")]
+    EventPassWcs2026Event96Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_96_PREMIUM")]
+    EventPassWcs2026Event96Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_97_FREE")]
+    EventPassWcs2026Event97Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_97_PREMIUM")]
+    EventPassWcs2026Event97Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_98_FREE")]
+    EventPassWcs2026Event98Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_98_PREMIUM")]
+    EventPassWcs2026Event98Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_99_FREE")]
+    EventPassWcs2026Event99Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_99_PREMIUM")]
+    EventPassWcs2026Event99Premium,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_100_FREE")]
+    EventPassWcs2026Event100Free,
+    #[serde(rename = "EVENT_PASS_WCS2026_EVENT_100_PREMIUM")]
+    EventPassWcs2026Event100Premium,
 }

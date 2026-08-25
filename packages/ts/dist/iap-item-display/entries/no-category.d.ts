@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 86 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 87 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -176,11 +176,10 @@ export type IapItemDisplayAugust3DeluxeEventPassTrackUnlock = S<
 		"AUGUST3_DELUXE_EVENT_PASS_TRACK_UNLOCK",
 		{
 			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
-			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff9eaebcb_PGO-WCS_2026_Backpack_v2-1024x512-nologo.jpg";
 			sku: "pgorelease.august3_deluxe_event_pass_track_unlock";
-			skuDisableTime: "2025-09-01T20:00:00";
-			skuDisableTimeUtcMs: "1756756800000";
+			skuDisableTime: "2026-09-01T20:00:00";
+			skuDisableTimeUtcMs: "1788292800000";
 			skuEnableTime: "2025-08-25T10:00:00";
 			skuEnableTimeUtcMs: "1756116000000";
 			sortOrder: 1;
@@ -193,11 +192,10 @@ export type IapItemDisplayAugust3DeluxeEventPassTrackUnlockPlusPoints = S<
 		"AUGUST3_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS",
 		{
 			description: "event_pass_plus_points_6_ranks_description";
-			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff9eaebcb_PGO-WCS_2026_Backpack_v2-1024x512-nologo.jpg";
 			sku: "pgorelease.august3_deluxe_event_pass_track_unlock_plus_points";
-			skuDisableTime: "2025-09-01T20:00:00";
-			skuDisableTimeUtcMs: "1756756800000";
+			skuDisableTime: "2026-09-01T20:00:00";
+			skuDisableTimeUtcMs: "1788292800000";
 			skuEnableTime: "2025-08-25T10:00:00";
 			skuEnableTimeUtcMs: "1756116000000";
 			sortOrder: 1;
@@ -1241,20 +1239,35 @@ export type IapItemDisplayPgoreleaseAugust2DeluxeEventPassTrackUnlockPlusPoints 
 		}
 	>
 >;
-export type IapItemDisplayPgoreleaseAugust3DeluxeEventPassTrackUnlockRedirect = S<
+export type IapItemDisplayPgoreleaseAugust3DeluxeEventPassTrackUnlock = S<
 	IapItemDisplay<
-		"pgorelease.august3_deluxe_event_pass_track_unlock_redirect",
+		"pgorelease.august3_deluxe_event_pass_track_unlock",
 		{
 			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
-			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff9eaebcb_PGO-WCS_2026_Backpack_v2-1024x512-nologo.jpg";
-			sku: "pgorelease.august3_deluxe_event_pass_track_unlock_redirect";
-			skuDisableTime: "2025-09-01T20:00:00";
-			skuDisableTimeUtcMs: "1756756800000";
+			sku: "pgorelease.august3_deluxe_event_pass_track_unlock";
+			skuDisableTime: "2026-09-01T20:00:00";
+			skuDisableTimeUtcMs: "1788292800000";
 			skuEnableTime: "2025-08-25T10:00:00";
 			skuEnableTimeUtcMs: "1756116000000";
 			sortOrder: 1;
 			title: "season_pass_premium_track_title_WCS_2026";
+		}
+	>
+>;
+export type IapItemDisplayPgoreleaseAugust3DeluxeEventPassTrackUnlockPlusPoints = S<
+	IapItemDisplay<
+		"pgorelease.august3_deluxe_event_pass_track_unlock_plus_points",
+		{
+			description: "event_pass_plus_points_6_ranks_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff9eaebcb_PGO-WCS_2026_Backpack_v2-1024x512-nologo.jpg";
+			sku: "pgorelease.august3_deluxe_event_pass_track_unlock_plus_points";
+			skuDisableTime: "2026-09-01T20:00:00";
+			skuDisableTimeUtcMs: "1788292800000";
+			skuEnableTime: "2025-08-25T10:00:00";
+			skuEnableTimeUtcMs: "1756116000000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_plus_six_ranks_title_WCS_2026";
 		}
 	>
 >;
@@ -1501,7 +1514,8 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayPgoreleaseApril22026DeluxeEventPassTrackRedirect
 	| IapItemDisplayPgoreleaseAugust2DeluxeEventPassTrackUnlock
 	| IapItemDisplayPgoreleaseAugust2DeluxeEventPassTrackUnlockPlusPoints
-	| IapItemDisplayPgoreleaseAugust3DeluxeEventPassTrackUnlockRedirect
+	| IapItemDisplayPgoreleaseAugust3DeluxeEventPassTrackUnlock
+	| IapItemDisplayPgoreleaseAugust3DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayPgoreleaseGofest2025DeluxeEventPassTrackRedirect
 	| IapItemDisplayPgoreleaseJuly1DeluxeEventPassTrackRedirect
 	| IapItemDisplayPgoreleaseMay12026DeluxeEventPassTrackRedirect

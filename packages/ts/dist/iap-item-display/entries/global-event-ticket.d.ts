@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 47 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 48 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -490,6 +490,23 @@ export type IapItemDisplayGeneral2Ticket10Giftable = S<
 		}
 	>
 >;
+export type IapItemDisplayPgoreleaseAugust3DeluxeEventPassTrackUnlockRedirect = S<
+	IapItemDisplay<
+		"pgorelease.august3_deluxe_event_pass_track_unlock_redirect",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff9eaebcb_PGO-WCS_2026_Backpack_v2-1024x512-nologo.jpg";
+			sku: "pgorelease.august3_deluxe_event_pass_track_unlock_redirect";
+			skuDisableTime: "2026-09-01T20:00:00";
+			skuDisableTimeUtcMs: "1788292800000";
+			skuEnableTime: "2025-08-25T10:00:00";
+			skuEnableTimeUtcMs: "1756116000000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_WCS_2026";
+		}
+	>
+>;
 export type IapItemDisplayPgoreleaseCitysafariticket01 = S<
 	IapItemDisplay<
 		"pgorelease.citysafariticket0.1",
@@ -915,6 +932,7 @@ export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayGeneral2Ticket9
 	| IapItemDisplayGeneral2Ticket10
 	| IapItemDisplayGeneral2Ticket10Giftable
+	| IapItemDisplayPgoreleaseAugust3DeluxeEventPassTrackUnlockRedirect
 	| IapItemDisplayPgoreleaseCitysafariticket01
 	| IapItemDisplayPgoreleaseCitysafariticket11
 	| IapItemDisplayPgoreleaseCitysafariticket21

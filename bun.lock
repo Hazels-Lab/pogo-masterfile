@@ -16,7 +16,7 @@
     },
     "packages/ts": {
       "name": "pogo-masterfile-types",
-      "version": "0.1.45",
+      "version": "0.1.46",
       "peerDependencies": {
         "typescript": ">=5.0",
       },
@@ -26,7 +26,7 @@
     },
     "packages/ts-api": {
       "name": "pogo-masterfile",
-      "version": "0.1.47",
+      "version": "0.1.48",
       "dependencies": {
         "pogo-masterfile-types": "workspace:^",
       },
