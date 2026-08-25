@@ -59,7 +59,13 @@ pub struct PokemonDisplay {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct StatsLimitsOverride {
+    pub max_attack: Option<u64>,
+    pub max_defense: Option<u64>,
+    pub max_hp: Option<u64>,
     pub max_pokemon_level: u64,
+    pub min_attack: Option<i64>,
+    pub min_defense: Option<i64>,
+    pub min_hp: Option<i64>,
     pub min_pokemon_level: u64,
 }
 

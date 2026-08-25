@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 540 entries (structural types).
+// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 740 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -14,9 +14,12 @@ export type EventPassTierSettingsType = W<EventPassTierSettings>;
 export interface EventPassTierSettingsData {
 	activeBonusDisplaySettings?: {
 		bonusBoxes: Array<{
-			iconType: "CANDY_GENERAL" | "EGG" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "TRADE";
+			iconType: "CANDY_GENERAL" | "EGG" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "RAID_PASS" | "STARDUST" | "TRADE" | "XP";
 			text:
+				| "bonus_3_daily_raid_passes"
+				| "bonus_3000_raid_xp"
 				| "catch_candy_double"
+				| "catch_stardust_double"
 				| "dai_duration_double"
 				| "daily_free_single_incubator"
 				| "gift_open_more_daily"
@@ -30,9 +33,12 @@ export interface EventPassTierSettingsData {
 	};
 	bonusSettings?: {
 		bonusBoxes: Array<{
-			iconType: "CANDY_GENERAL" | "EGG" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "TRADE";
+			iconType: "CANDY_GENERAL" | "EGG" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "RAID_PASS" | "STARDUST" | "TRADE" | "XP";
 			text:
+				| "bonus_3_daily_raid_passes"
+				| "bonus_3000_raid_xp"
 				| "catch_candy_double"
+				| "catch_stardust_double"
 				| "dai_duration_double"
 				| "daily_free_single_incubator"
 				| "gift_open_more_daily"
@@ -70,13 +76,17 @@ export interface EventPassTierSettingsData {
 				| "FRILLISH"
 				| "GLIMMET"
 				| "GROWLITHE"
+				| "HONEDGE"
+				| "IMPIDIMP"
 				| "JANGMO_O"
 				| "LATIAS"
 				| "MEOWTH"
+				| "MIMIKYU"
 				| "MUDKIP"
 				| "ORTHWORM"
 				| "OSHAWOTT"
 				| "POLTCHAGEIST"
+				| "RALTS"
 				| "ROCKRUFF"
 				| "SINISTEA"
 				| "SNOM"
@@ -84,7 +94,8 @@ export interface EventPassTierSettingsData {
 				| "STANTLER"
 				| "SWINUB"
 				| "TOGEDEMARU"
-				| "TYROGUE";
+				| "TYROGUE"
+				| "ZAPDOS";
 		};
 		exp?: number;
 		item?: {
@@ -115,8 +126,8 @@ export interface EventPassTierSettingsData {
 				| "ITEM_XL_RARE_CANDY";
 		};
 		neutralAvatarItemTemplate?: {
-			displayTemplateId: "N_DISPLAY_n_backpack_starmie";
-			itemTemplateId: "N_AVATAR_n_backpack_starmie";
+			displayTemplateId: "N_DISPLAY_n_backpack_starmie" | "N_DISPLAY_n_backpack_wcspxp2026";
+			itemTemplateId: "N_AVATAR_n_backpack_starmie" | "N_AVATAR_n_backpack_wcspxp2026";
 		};
 		playerAttribute?: {
 			durationMins?: number;
@@ -127,6 +138,10 @@ export interface EventPassTierSettingsData {
 				| "august2026_season_pass_rank_02"
 				| "august2026_season_pass_rank_03"
 				| "august2026_season_pass_rank_04"
+				| "pxp_wcs_2026_season_pass_entitlement"
+				| "pxp_wcs_2026_season_pass_rank_01"
+				| "pxp_wcs_2026_season_pass_rank_02"
+				| "pxp_wcs_2026_season_pass_rank_02_paid"
 				| "uu_water_festival_2026_event_pass_rank_01_free"
 				| "uu_water_festival_2026_event_pass_rank_01_paid"
 				| "uu_water_festival_2026_event_pass_rank_02_free"
@@ -144,6 +159,7 @@ export interface EventPassTierSettingsData {
 					| "CHIMECHO_NORMAL"
 					| "CLAMPERL_NORMAL"
 					| "CRAMORANT_NORMAL"
+					| "DEINO_NORMAL"
 					| "DEWPIDER_NORMAL"
 					| "DONDOZO_NORMAL"
 					| "DUCKLETT_NORMAL"
@@ -154,13 +170,20 @@ export interface EventPassTierSettingsData {
 					| "GROWLITHE_HISUIAN"
 					| "GROWLITHE_NORMAL"
 					| "HITMONCHAN_NORMAL"
+					| "HONEDGE_NORMAL"
+					| "IMPIDIMP_NORMAL"
 					| "JANGMO_O_NORMAL"
 					| "LAPRAS_COSTUME_2020"
 					| "LATIAS_NORMAL"
+					| "LEDIAN_NORMAL"
 					| "MEOWTH_ALOLA"
 					| "MEOWTH_NORMAL"
+					| "MIMIKYU_DISGUISED"
 					| "MUDKIP_NORMAL"
 					| "ORTHWORM_NORMAL"
+					| "PIKACHU_PXP_2026"
+					| "PIKACHU_WCS_2026"
+					| "RALTS_NORMAL"
 					| "ROCKRUFF_NORMAL"
 					| "SAMUROTT_HISUIAN"
 					| "SNOM_NORMAL"
@@ -168,6 +191,7 @@ export interface EventPassTierSettingsData {
 					| "SWINUB_NORMAL"
 					| "TOGEDEMARU_NORMAL"
 					| "WYRDEER_NORMAL"
+					| "ZAPDOS_NORMAL"
 					| "ZWEILOUS_NORMAL";
 			};
 			pokemonId:
@@ -178,6 +202,7 @@ export interface EventPassTierSettingsData {
 				| "CHIMECHO"
 				| "CLAMPERL"
 				| "CRAMORANT"
+				| "DEINO"
 				| "DEWPIDER"
 				| "DONDOZO"
 				| "DUCKLETT"
@@ -187,13 +212,19 @@ export interface EventPassTierSettingsData {
 				| "GLIMMET"
 				| "GROWLITHE"
 				| "HITMONCHAN"
+				| "HONEDGE"
+				| "IMPIDIMP"
 				| "JANGMO_O"
 				| "LAPRAS"
 				| "LATIAS"
+				| "LEDIAN"
 				| "MEOWTH"
+				| "MIMIKYU"
 				| "MUDKIP"
 				| "ORTHWORM"
+				| "PIKACHU"
 				| "POLTCHAGEIST"
+				| "RALTS"
 				| "ROCKRUFF"
 				| "SAMUROTT"
 				| "SINISTEA"
@@ -202,9 +233,16 @@ export interface EventPassTierSettingsData {
 				| "SWINUB"
 				| "TOGEDEMARU"
 				| "WYRDEER"
+				| "ZAPDOS"
 				| "ZWEILOUS";
 			statsLimitsOverride?: {
+				maxAttack?: number;
+				maxDefense?: number;
+				maxHp?: number;
 				maxPokemonLevel: number;
+				minAttack?: number;
+				minDefense?: number;
+				minHp?: number;
 				minPokemonLevel: number;
 			};
 		};
@@ -228,6 +266,7 @@ export interface EventPassTierSettingsData {
 				| "JANGMO_O"
 				| "LATIAS"
 				| "MEOWTH"
+				| "MIMIKYU"
 				| "OSHAWOTT"
 				| "SINISTEA"
 				| "SNOM"

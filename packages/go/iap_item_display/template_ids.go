@@ -384,6 +384,8 @@ const (
 	IapItemDisplayTemplateIDPgoreleaseApril22026DeluxeEventPassTrackRedirect       IapItemDisplayTemplateID = "pgorelease.april2_2026_deluxe_event_pass_track_redirect"
 	IapItemDisplayTemplateIDPgoreleaseAugust2DeluxeEventPassTrackUnlock            IapItemDisplayTemplateID = "pgorelease.august2_deluxe_event_pass_track_unlock"
 	IapItemDisplayTemplateIDPgoreleaseAugust2DeluxeEventPassTrackUnlockPlusPoints  IapItemDisplayTemplateID = "pgorelease.august2_deluxe_event_pass_track_unlock_plus_points"
+	IapItemDisplayTemplateIDPgoreleaseAugust3DeluxeEventPassTrackUnlock            IapItemDisplayTemplateID = "pgorelease.august3_deluxe_event_pass_track_unlock"
+	IapItemDisplayTemplateIDPgoreleaseAugust3DeluxeEventPassTrackUnlockPlusPoints  IapItemDisplayTemplateID = "pgorelease.august3_deluxe_event_pass_track_unlock_plus_points"
 	IapItemDisplayTemplateIDPgoreleaseAugust3DeluxeEventPassTrackUnlockRedirect    IapItemDisplayTemplateID = "pgorelease.august3_deluxe_event_pass_track_unlock_redirect"
 	IapItemDisplayTemplateIDPgoreleaseBundle1                                      IapItemDisplayTemplateID = "pgorelease.bundle.1"
 	IapItemDisplayTemplateIDPgoreleaseBundle2                                      IapItemDisplayTemplateID = "pgorelease.bundle.2"
@@ -1579,6 +1581,8 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDPgoreleaseApril22026DeluxeEventPassTrackRedirect,
 	IapItemDisplayTemplateIDPgoreleaseAugust2DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDPgoreleaseAugust2DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDPgoreleaseAugust3DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDPgoreleaseAugust3DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDPgoreleaseAugust3DeluxeEventPassTrackUnlockRedirect,
 	IapItemDisplayTemplateIDPgoreleaseBundle1,
 	IapItemDisplayTemplateIDPgoreleaseBundle2,

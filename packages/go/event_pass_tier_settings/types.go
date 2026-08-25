@@ -43,8 +43,14 @@ type EventPassTierSettingsPokemonDisplay struct {
 }
 
 type EventPassTierSettingsStatsLimitsOverride struct {
-	MaxPokemonLevel uint64 `json:"maxPokemonLevel"`
-	MinPokemonLevel uint64 `json:"minPokemonLevel"`
+	MaxAttack       *uint64 `json:"maxAttack,omitempty"`
+	MaxDefense      *uint64 `json:"maxDefense,omitempty"`
+	MaxHp           *uint64 `json:"maxHp,omitempty"`
+	MaxPokemonLevel uint64  `json:"maxPokemonLevel"`
+	MinAttack       *int64  `json:"minAttack,omitempty"`
+	MinDefense      *int64  `json:"minDefense,omitempty"`
+	MinHp           *int64  `json:"minHp,omitempty"`
+	MinPokemonLevel uint64  `json:"minPokemonLevel"`
 }
 
 type EventPassTierSettingsPokemonEncounter struct {

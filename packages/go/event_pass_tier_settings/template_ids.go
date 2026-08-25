@@ -545,6 +545,206 @@ const (
 	EventPassTierSettingsTemplateIDEventPassUuWaterFestival2026Event59Premium EventPassTierSettingsTemplateID = "EVENT_PASS_UU_WATER_FESTIVAL_2026_EVENT_59_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassUuWaterFestival2026Event60Free    EventPassTierSettingsTemplateID = "EVENT_PASS_UU_WATER_FESTIVAL_2026_EVENT_60_FREE"
 	EventPassTierSettingsTemplateIDEventPassUuWaterFestival2026Event60Premium EventPassTierSettingsTemplateID = "EVENT_PASS_UU_WATER_FESTIVAL_2026_EVENT_60_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event1Free                 EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_1_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event1Premium              EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_1_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event2Free                 EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_2_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event2Premium              EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_2_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event3Free                 EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_3_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event3Premium              EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_3_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event4Free                 EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_4_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event4Premium              EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_4_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event5Free                 EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_5_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event5Premium              EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_5_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event6Free                 EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_6_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event6Premium              EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_6_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event7Free                 EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_7_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event7Premium              EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_7_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event8Free                 EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_8_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event8Premium              EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_8_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event9Free                 EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_9_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event9Premium              EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_9_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event10Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_10_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event10Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_10_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event11Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_11_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event11Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_11_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event12Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_12_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event12Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_12_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event13Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_13_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event13Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_13_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event14Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_14_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event14Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_14_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event15Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_15_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event15Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_15_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event16Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_16_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event16Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_16_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event17Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_17_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event17Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_17_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event18Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_18_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event18Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_18_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event19Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_19_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event19Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_19_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event20Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_20_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event20Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_20_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event21Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_21_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event21Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_21_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event22Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_22_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event22Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_22_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event23Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_23_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event23Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_23_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event24Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_24_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event24Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_24_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event25Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_25_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event25Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_25_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event26Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_26_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event26Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_26_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event27Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_27_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event27Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_27_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event28Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_28_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event28Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_28_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event29Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_29_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event29Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_29_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event30Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_30_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event30Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_30_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event31Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_31_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event31Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_31_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event32Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_32_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event32Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_32_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event33Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_33_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event33Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_33_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event34Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_34_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event34Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_34_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event35Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_35_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event35Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_35_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event36Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_36_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event36Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_36_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event37Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_37_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event37Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_37_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event38Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_38_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event38Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_38_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event39Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_39_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event39Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_39_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event40Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_40_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event40Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_40_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event41Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_41_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event41Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_41_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event42Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_42_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event42Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_42_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event43Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_43_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event43Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_43_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event44Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_44_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event44Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_44_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event45Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_45_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event45Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_45_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event46Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_46_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event46Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_46_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event47Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_47_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event47Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_47_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event48Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_48_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event48Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_48_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event49Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_49_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event49Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_49_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event50Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_50_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event50Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_50_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event51Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_51_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event51Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_51_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event52Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_52_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event52Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_52_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event53Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_53_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event53Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_53_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event54Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_54_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event54Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_54_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event55Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_55_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event55Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_55_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event56Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_56_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event56Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_56_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event57Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_57_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event57Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_57_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event58Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_58_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event58Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_58_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event59Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_59_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event59Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_59_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event60Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_60_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event60Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_60_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event61Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_61_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event61Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_61_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event62Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_62_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event62Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_62_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event63Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_63_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event63Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_63_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event64Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_64_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event64Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_64_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event65Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_65_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event65Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_65_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event66Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_66_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event66Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_66_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event67Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_67_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event67Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_67_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event68Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_68_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event68Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_68_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event69Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_69_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event69Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_69_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event70Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_70_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event70Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_70_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event71Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_71_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event71Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_71_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event72Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_72_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event72Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_72_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event73Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_73_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event73Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_73_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event74Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_74_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event74Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_74_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event75Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_75_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event75Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_75_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event76Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_76_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event76Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_76_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event77Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_77_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event77Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_77_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event78Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_78_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event78Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_78_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event79Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_79_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event79Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_79_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event80Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_80_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event80Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_80_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event81Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_81_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event81Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_81_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event82Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_82_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event82Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_82_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event83Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_83_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event83Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_83_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event84Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_84_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event84Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_84_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event85Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_85_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event85Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_85_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event86Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_86_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event86Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_86_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event87Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_87_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event87Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_87_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event88Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_88_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event88Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_88_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event89Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_89_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event89Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_89_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event90Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_90_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event90Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_90_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event91Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_91_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event91Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_91_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event92Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_92_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event92Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_92_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event93Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_93_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event93Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_93_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event94Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_94_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event94Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_94_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event95Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_95_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event95Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_95_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event96Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_96_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event96Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_96_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event97Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_97_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event97Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_97_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event98Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_98_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event98Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_98_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event99Free                EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_99_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event99Premium             EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_99_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event100Free               EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_100_FREE"
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event100Premium            EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_100_PREMIUM"
 )
 
 var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID{
@@ -1088,4 +1288,204 @@ var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID
 	EventPassTierSettingsTemplateIDEventPassUuWaterFestival2026Event59Premium,
 	EventPassTierSettingsTemplateIDEventPassUuWaterFestival2026Event60Free,
 	EventPassTierSettingsTemplateIDEventPassUuWaterFestival2026Event60Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event1Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event1Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event2Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event2Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event3Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event3Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event4Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event4Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event5Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event5Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event6Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event6Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event7Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event7Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event8Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event8Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event9Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event9Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event10Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event10Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event11Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event11Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event12Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event12Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event13Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event13Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event14Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event14Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event15Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event15Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event16Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event16Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event17Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event17Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event18Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event18Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event19Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event19Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event20Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event20Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event21Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event21Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event22Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event22Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event23Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event23Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event24Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event24Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event25Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event25Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event26Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event26Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event27Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event27Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event28Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event28Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event29Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event29Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event30Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event30Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event31Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event31Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event32Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event32Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event33Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event33Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event34Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event34Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event35Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event35Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event36Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event36Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event37Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event37Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event38Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event38Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event39Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event39Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event40Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event40Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event41Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event41Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event42Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event42Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event43Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event43Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event44Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event44Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event45Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event45Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event46Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event46Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event47Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event47Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event48Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event48Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event49Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event49Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event50Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event50Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event51Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event51Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event52Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event52Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event53Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event53Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event54Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event54Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event55Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event55Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event56Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event56Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event57Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event57Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event58Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event58Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event59Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event59Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event60Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event60Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event61Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event61Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event62Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event62Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event63Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event63Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event64Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event64Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event65Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event65Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event66Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event66Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event67Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event67Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event68Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event68Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event69Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event69Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event70Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event70Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event71Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event71Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event72Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event72Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event73Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event73Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event74Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event74Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event75Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event75Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event76Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event76Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event77Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event77Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event78Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event78Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event79Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event79Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event80Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event80Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event81Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event81Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event82Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event82Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event83Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event83Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event84Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event84Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event85Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event85Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event86Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event86Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event87Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event87Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event88Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event88Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event89Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event89Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event90Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event90Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event91Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event91Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event92Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event92Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event93Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event93Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event94Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event94Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event95Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event95Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event96Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event96Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event97Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event97Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event98Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event98Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event99Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event99Premium,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event100Free,
+	EventPassTierSettingsTemplateIDEventPassWcs2026Event100Premium,
 }

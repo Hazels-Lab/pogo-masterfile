@@ -12,13 +12,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					guaranteedLimitedPokemonReward: {
@@ -34,7 +32,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 24;
@@ -43,13 +40,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					guaranteedLimitedPokemonReward: {
@@ -65,7 +60,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 1;
@@ -74,13 +68,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					pokemon: {
@@ -92,7 +84,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 21;
@@ -101,13 +92,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					guaranteedLimitedPokemonReward: {
@@ -123,7 +112,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 21;
@@ -132,13 +120,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					guaranteedLimitedPokemonReward: {
@@ -154,7 +140,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 22;
@@ -163,13 +148,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					guaranteedLimitedPokemonReward: {
@@ -185,7 +168,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 23;
@@ -194,13 +176,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					pokemon: {
@@ -212,7 +192,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 1;
@@ -221,13 +200,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					pokemon: {
@@ -239,7 +216,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 1;
@@ -248,13 +224,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					pokemon: {
@@ -266,7 +240,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 1;
@@ -275,13 +248,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					pokemon: {
@@ -293,7 +264,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 1;
@@ -302,13 +272,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					pokemon: {
@@ -320,7 +288,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 1;
@@ -329,13 +296,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					pokemon: {
@@ -347,7 +312,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 6;
@@ -356,13 +320,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					pokemon: {
@@ -374,7 +336,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 6;
@@ -383,13 +344,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					pokemon: {
@@ -401,7 +360,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 11;
@@ -410,13 +368,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					pokemon: {
@@ -428,7 +384,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 11;
@@ -437,13 +392,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					pokemon: {
@@ -455,7 +408,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 11;
@@ -464,13 +416,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					pokemon: {
@@ -482,7 +432,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 11;
@@ -491,13 +440,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					pokemon: {
@@ -509,7 +456,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 16;
@@ -518,13 +464,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					pokemon: {
@@ -536,7 +480,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 16;
@@ -545,13 +488,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					pokemon: {
@@ -563,7 +504,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 16;
@@ -572,13 +512,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					pokemon: {
@@ -590,7 +528,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 16;
@@ -599,13 +536,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					pokemon: {
@@ -617,7 +552,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 22;
@@ -626,13 +560,11 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					attackIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					defenseIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					pokemon: {
@@ -644,7 +576,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					staminaIvOverride: {
 						range: {
 							max: 15;
-							min: 10;
 						};
 					};
 					unlockedAtRank: 23;
@@ -675,33 +606,6 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 						};
 					};
 					unlockedAtRank: 20;
-				},
-				{
-					attackIvOverride: {
-						range: {
-							max: 15;
-							min: 10;
-						};
-					};
-					defenseIvOverride: {
-						range: {
-							max: 15;
-							min: 10;
-						};
-					};
-					pokemon: {
-						pokemonDisplay: {
-							form: "CRAMORANT_NORMAL";
-						};
-						pokemonId: "CRAMORANT";
-					};
-					staminaIvOverride: {
-						range: {
-							max: 15;
-							min: 10;
-						};
-					};
-					unlockedAtRank: 16;
 				},
 			];
 		};
