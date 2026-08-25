@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 83 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 86 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -529,6 +529,23 @@ export type IapItemDisplayEventPassRedirectSummerMarathon2026 = S<
 			skuEnableTimeUtcMs: "1754301600000";
 			sortOrder: 1;
 			title: "season_pass_premium_track_title_summermarathon2026";
+		}
+	>
+>;
+export type IapItemDisplayEventPassSeptember1EventStoreRedirect = S<
+	IapItemDisplay<
+		"EVENT_PASS_SEPTEMBER1_EVENT_STORE_REDIRECT",
+		{
+			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
+			hidden: true;
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F13d4dacd_PGO-MCS_Avatar_Maschiff_Top_v2-1024x576%20no%20logo.png";
+			sku: "pgorelease.september1_2026_deluxe_event_pass_track_redirect";
+			skuDisableTime: "2025-09-16T20:00:00";
+			skuDisableTimeUtcMs: "1758052800000";
+			skuEnableTime: "2025-09-08T10:00:00";
+			skuEnableTimeUtcMs: "1757325600000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_mega_squads_2026";
 		}
 	>
 >;
@@ -1339,6 +1356,40 @@ export type IapItemDisplayPgoreleaseMonth3DeluxeEventPassTrackUnlockPlusPoints =
 		}
 	>
 >;
+export type IapItemDisplaySeptember12026DeluxeEventPassTrackUnlock = S<
+	IapItemDisplay<
+		"SEPTEMBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK",
+		{
+			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
+			hidden: true;
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F13d4dacd_PGO-MCS_Avatar_Maschiff_Top_v2-1024x576%20no%20logo.png";
+			sku: "pgorelease.september1_2026_deluxe_event_pass_track_unlock";
+			skuDisableTime: "2025-09-16T20:00:00";
+			skuDisableTimeUtcMs: "1758052800000";
+			skuEnableTime: "2025-09-08T10:00:00";
+			skuEnableTimeUtcMs: "1757325600000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_mega_squads_2026";
+		}
+	>
+>;
+export type IapItemDisplaySeptember12026DeluxeEventPassTrackUnlockPlusPoints = S<
+	IapItemDisplay<
+		"SEPTEMBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS",
+		{
+			description: "event_pass_plus_points_6_ranks_description";
+			hidden: true;
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F13d4dacd_PGO-MCS_Avatar_Maschiff_Top_v2-1024x576%20no%20logo.png";
+			sku: "pgorelease.september1_2026_deluxe_event_pass_track_unlock_plus_points";
+			skuDisableTime: "2025-09-16T20:00:00";
+			skuDisableTimeUtcMs: "1758052800000";
+			skuEnableTime: "2025-09-08T10:00:00";
+			skuEnableTimeUtcMs: "1757325600000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_plus_six_ranks_title_mega_squads_2026";
+		}
+	>
+>;
 export type IapItemDisplayWinterholidays2025DeluxeEventPassTrackUnlock = S<
 	IapItemDisplay<
 		"WINTERHOLIDAYS2025_DELUXE_EVENT_PASS_TRACK_UNLOCK",
@@ -1407,6 +1458,7 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayEventPassMonth1SeasonStoreRedirect
 	| IapItemDisplayEventPassMonth2SeasonStoreRedirect
 	| IapItemDisplayEventPassRedirectSummerMarathon2026
+	| IapItemDisplayEventPassSeptember1EventStoreRedirect
 	| IapItemDisplayEventPassWinterholidays2025SeasonStoreRedirect
 	| IapItemDisplayGofest2025DeluxeEventPassTrackUnlock
 	| IapItemDisplayGofest2025DeluxeEventPassTrackUnlockPlusPoints
@@ -1456,5 +1508,7 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayPgoreleaseMay12026DeluxeEventPassTrackUnlockRedirect
 	| IapItemDisplayPgoreleaseMonth3DeluxeEventPassTrackUnlock
 	| IapItemDisplayPgoreleaseMonth3DeluxeEventPassTrackUnlockPlusPoints
+	| IapItemDisplaySeptember12026DeluxeEventPassTrackUnlock
+	| IapItemDisplaySeptember12026DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayWinterholidays2025DeluxeEventPassTrackUnlock
 	| IapItemDisplayWinterholidays2025DeluxeEventPassTrackUnlockPlusPoints;

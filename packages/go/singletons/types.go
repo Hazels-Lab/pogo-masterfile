@@ -2061,11 +2061,12 @@ type VerboseLogRaidSettings struct {
 }
 
 type VistaGeneralSettings struct {
-	IsFeatureEnabled        bool `json:"isFeatureEnabled"`
-	IsVistaBattleEnabled    bool `json:"isVistaBattleEnabled"`
-	IsVistaEncounterEnabled bool `json:"isVistaEncounterEnabled"`
-	IsVistaMapEnabled       bool `json:"isVistaMapEnabled"`
-	IsVistaSpawnsEnabled    bool `json:"isVistaSpawnsEnabled"`
+	IsFeatureEnabled        bool   `json:"isFeatureEnabled"`
+	IsVistaBattleEnabled    bool   `json:"isVistaBattleEnabled"`
+	IsVistaEncounterEnabled bool   `json:"isVistaEncounterEnabled"`
+	IsVistaMapEnabled       bool   `json:"isVistaMapEnabled"`
+	IsVistaSpawnsEnabled    bool   `json:"isVistaSpawnsEnabled"`
+	ThemeOverride           string `json:"themeOverride"`
 }
 
 type VnextBattleConfigMaxBattleConfig struct {

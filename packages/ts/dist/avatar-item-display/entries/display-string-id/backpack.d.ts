@@ -727,7 +727,7 @@ export type AvatarItemDisplayNBackpackWcspxp2026 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_backpack_wcspxp2026",
 		{
-			displayStringId: "avatar_backpack_wcspxp";
+			displayStringId: "avatar_generic_name";
 			iconAddress: "n_backpack_wcspxp2026_icon";
 		}
 	>

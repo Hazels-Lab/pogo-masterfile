@@ -2875,6 +2875,7 @@ pub struct VistaGeneralSettings {
     pub is_vista_encounter_enabled: bool,
     pub is_vista_map_enabled: bool,
     pub is_vista_spawns_enabled: bool,
+    pub theme_override: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

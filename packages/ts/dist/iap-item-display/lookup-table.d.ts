@@ -285,6 +285,7 @@ import type {
 	IapItemDisplayEventPassMonth2SeasonStoreRedirect,
 	IapItemDisplayEventPassMonth3SeasonStoreRedirect,
 	IapItemDisplayEventPassRedirectSummerMarathon2026,
+	IapItemDisplayEventPassSeptember1EventStoreRedirect,
 	IapItemDisplayEventPassWinterholidays2025SeasonStoreRedirect,
 	IapItemDisplayEvergreenticket1,
 	IapItemDisplayEvergreenticket1Giftable,
@@ -476,6 +477,8 @@ import type {
 	IapItemDisplayPostcardstorageupgrade1,
 	IapItemDisplayRemoteraidticket1,
 	IapItemDisplayRemoteraidticket3,
+	IapItemDisplaySeptember12026DeluxeEventPassTrackUnlock,
+	IapItemDisplaySeptember12026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayStarpiece1,
 	IapItemDisplayStarpiece8,
 	IapItemDisplaySticker8anniv13,
@@ -1477,6 +1480,7 @@ export interface IapItemDisplayLookup {
 	EVENT_PASS_MONTH2_SEASON_STORE_REDIRECT: IapItemDisplayEventPassMonth2SeasonStoreRedirect;
 	EVENT_PASS_MONTH3_SEASON_STORE_REDIRECT: IapItemDisplayEventPassMonth3SeasonStoreRedirect;
 	EVENT_PASS_REDIRECT_SUMMER_MARATHON_2026: IapItemDisplayEventPassRedirectSummerMarathon2026;
+	EVENT_PASS_SEPTEMBER1_EVENT_STORE_REDIRECT: IapItemDisplayEventPassSeptember1EventStoreRedirect;
 	EVENT_PASS_WINTERHOLIDAYS2025_SEASON_STORE_REDIRECT: IapItemDisplayEventPassWinterholidays2025SeasonStoreRedirect;
 	"evergreenticket.1": IapItemDisplayEvergreenticket1;
 	"evergreenticket.1.giftable": IapItemDisplayEvergreenticket1Giftable;
@@ -1668,6 +1672,8 @@ export interface IapItemDisplayLookup {
 	"postcardstorageupgrade.1": IapItemDisplayPostcardstorageupgrade1;
 	"remoteraidticket.1": IapItemDisplayRemoteraidticket1;
 	"remoteraidticket.3": IapItemDisplayRemoteraidticket3;
+	SEPTEMBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplaySeptember12026DeluxeEventPassTrackUnlock;
+	SEPTEMBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplaySeptember12026DeluxeEventPassTrackUnlockPlusPoints;
 	"starpiece.1": IapItemDisplayStarpiece1;
 	"starpiece.8": IapItemDisplayStarpiece8;
 	"STICKER_8ANNIV_1.3": IapItemDisplaySticker8anniv13;

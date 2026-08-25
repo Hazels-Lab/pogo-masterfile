@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.1.47] - 2026-08-25
+
+Automated regeneration from upstream masterfile commit `921ca77ad54d22aac87243239c50f512d45c015e`.
+
+### Added template IDs (11)
+
+- BADGE_EVENT_0233
+- BADGE_EVENT_0241
+- EVENT_PASS_SEPTEMBER1_EVENT_STORE_REDIRECT
+- GET_FRIEND_DETAILS_PAGINATED_ROLL_BACK
+- N_DISPLAY_n_hat_ryme
+- N_DISPLAY_n_pose_s24gbl
+- N_DISPLAY_n_shirt_ryme
+- N_DISPLAY_n_shoes_ryme
+- N_DISPLAY_set_ryme
+- SEPTEMBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK
+- SEPTEMBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS
+
 ## [0.1.46] - 2026-08-19
 
 Automated regeneration from upstream masterfile commit `04b47b7a0ca40b5826a9e1f475dcf8d5119496e5`.

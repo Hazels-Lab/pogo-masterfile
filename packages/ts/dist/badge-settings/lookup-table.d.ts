@@ -183,8 +183,10 @@ import type {
 	BadgeSettingsEvent0225,
 	BadgeSettingsEvent0227,
 	BadgeSettingsEvent0231,
+	BadgeSettingsEvent0233,
 	BadgeSettingsEvent0234,
 	BadgeSettingsEvent0236,
+	BadgeSettingsEvent0241,
 	BadgeSettingsEvent0253,
 	BadgeSettingsEvent0259,
 	BadgeSettingsEvent0260,
@@ -1190,8 +1192,10 @@ export interface BadgeSettingsLookup {
 	BADGE_EVENT_0225: BadgeSettingsEvent0225;
 	BADGE_EVENT_0227: BadgeSettingsEvent0227;
 	BADGE_EVENT_0231: BadgeSettingsEvent0231;
+	BADGE_EVENT_0233: BadgeSettingsEvent0233;
 	BADGE_EVENT_0234: BadgeSettingsEvent0234;
 	BADGE_EVENT_0236: BadgeSettingsEvent0236;
+	BADGE_EVENT_0241: BadgeSettingsEvent0241;
 	BADGE_EVENT_0253: BadgeSettingsEvent0253;
 	BADGE_EVENT_0259: BadgeSettingsEvent0259;
 	BADGE_EVENT_0260: BadgeSettingsEvent0260;

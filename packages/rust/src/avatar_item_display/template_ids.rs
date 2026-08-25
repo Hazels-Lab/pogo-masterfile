@@ -941,6 +941,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNHatRuinmaniacA0,
     #[serde(rename = "N_DISPLAY_n_hat_ruinmaniac_b_0")]
     NDisplayNHatRuinmaniacB0,
+    #[serde(rename = "N_DISPLAY_n_hat_ryme")]
+    NDisplayNHatRyme,
     #[serde(rename = "N_DISPLAY_n_hat_sableyegoggles_0")]
     NDisplayNHatSableyegoggles0,
     #[serde(rename = "N_DISPLAY_n_hat_samsungsummer2020_0")]
@@ -1553,6 +1555,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNPoseS22gbl,
     #[serde(rename = "N_DISPLAY_n_pose_s23gbl")]
     NDisplayNPoseS23gbl,
+    #[serde(rename = "N_DISPLAY_n_pose_s24gbl")]
+    NDisplayNPoseS24gbl,
     #[serde(rename = "N_DISPLAY_n_pose_sustainability")]
     NDisplayNPoseSustainability,
     #[serde(rename = "N_DISPLAY_n_pose_teapot")]
@@ -2151,6 +2155,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNShirtRuinmaniacA0,
     #[serde(rename = "N_DISPLAY_n_shirt_ruinmaniac_b_0")]
     NDisplayNShirtRuinmaniacB0,
+    #[serde(rename = "N_DISPLAY_n_shirt_ryme")]
+    NDisplayNShirtRyme,
     #[serde(rename = "N_DISPLAY_n_shirt_s19gbl_0")]
     NDisplayNShirtS19gbl0,
     #[serde(rename = "N_DISPLAY_n_shirt_safarizone2020_a_0")]
@@ -2691,6 +2697,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNShoesRuinmaniacA0,
     #[serde(rename = "N_DISPLAY_n_shoes_ruinmaniac_b_0")]
     NDisplayNShoesRuinmaniacB0,
+    #[serde(rename = "N_DISPLAY_n_shoes_ryme")]
+    NDisplayNShoesRyme,
     #[serde(rename = "N_DISPLAY_n_shoes_s19gbl_0")]
     NDisplayNShoesS19gbl0,
     #[serde(rename = "N_DISPLAY_n_shoes_sandals_0")]
@@ -3223,6 +3231,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplaySetRuinmaniacF,
     #[serde(rename = "N_DISPLAY_set_ruinmaniac_m")]
     NDisplaySetRuinmaniacM,
+    #[serde(rename = "N_DISPLAY_set_ryme")]
+    NDisplaySetRyme,
     #[serde(rename = "N_DISPLAY_set_s19gbl_0")]
     NDisplaySetS19gbl0,
     #[serde(rename = "N_DISPLAY_set_s22gbl_0")]

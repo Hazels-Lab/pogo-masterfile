@@ -575,6 +575,8 @@ pub enum IapItemDisplayTemplateId {
     EventPassMonth3SeasonStoreRedirect,
     #[serde(rename = "EVENT_PASS_REDIRECT_SUMMER_MARATHON_2026")]
     EventPassRedirectSummerMarathon2026,
+    #[serde(rename = "EVENT_PASS_SEPTEMBER1_EVENT_STORE_REDIRECT")]
+    EventPassSeptember1EventStoreRedirect,
     #[serde(rename = "EVENT_PASS_WINTERHOLIDAYS2025_SEASON_STORE_REDIRECT")]
     EventPassWinterholidays2025SeasonStoreRedirect,
     #[serde(rename = "evergreenticket.1")]
@@ -957,6 +959,10 @@ pub enum IapItemDisplayTemplateId {
     Remoteraidticket1,
     #[serde(rename = "remoteraidticket.3")]
     Remoteraidticket3,
+    #[serde(rename = "SEPTEMBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
+    September12026DeluxeEventPassTrackUnlock,
+    #[serde(rename = "SEPTEMBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
+    September12026DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "starpiece.1")]
     Starpiece1,
     #[serde(rename = "starpiece.8")]

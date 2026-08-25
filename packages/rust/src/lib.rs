@@ -230,10 +230,10 @@ pub enum MasterfileEntry {
     FriendshipMilestoneSettings(friendship_milestone_settings::FriendshipMilestoneSettingsEntry),
     PokemonScaleSettings(pokemon_scale_settings::PokemonScaleSettingsEntry),
     BuddyLevelSettings(buddy_level_settings::BuddyLevelSettingsEntry),
+    RollBack(roll_back::RollBackEntry),
     TappableSettings(tappable_settings::TappableSettingsEntry),
     FortPowerUpLevelSettings(fort_power_up_level_settings::FortPowerUpLevelSettingsEntry),
     PokemonHomeEnergyCosts(pokemon_home_energy_costs::PokemonHomeEnergyCostsEntry),
-    RollBack(roll_back::RollBackEntry),
     CombatNpcPersonality(combat_npc_personality::CombatNpcPersonalityEntry),
     LanguageSettings(language_settings::LanguageSettingsEntry),
     QuestSettings(quest_settings::QuestSettingsEntry),
@@ -512,6 +512,7 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::PokemonScaleSettings)
                 }
                 "buddyLevelSettings" => serde_json::from_value(value).map(Self::BuddyLevelSettings),
+                "rollBack" => serde_json::from_value(value).map(Self::RollBack),
                 "tappableSettings" => serde_json::from_value(value).map(Self::TappableSettings),
                 "fortPowerUpLevelSettings" => {
                     serde_json::from_value(value).map(Self::FortPowerUpLevelSettings)
@@ -519,7 +520,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "pokemonHomeEnergyCosts" => {
                     serde_json::from_value(value).map(Self::PokemonHomeEnergyCosts)
                 }
-                "rollBack" => serde_json::from_value(value).map(Self::RollBack),
                 "combatNpcPersonality" => {
                     serde_json::from_value(value).map(Self::CombatNpcPersonality)
                 }

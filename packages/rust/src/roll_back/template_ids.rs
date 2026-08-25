@@ -9,6 +9,8 @@ use serde::{Deserialize, Serialize};
 pub enum RollBackTemplateId {
     #[serde(rename = "FRIENDS_AND_SOCIAL_LAZY_LOAD_ROLL_BACK")]
     FriendsAndSocialLazyLoadRollBack,
+    #[serde(rename = "GET_FRIEND_DETAILS_PAGINATED_ROLL_BACK")]
+    GetFriendDetailsPaginatedRollBack,
     #[serde(rename = "MAP_RADIUS_ENHANCE_GRAPHICS_ROLL_BACK")]
     MapRadiusEnhanceGraphicsRollBack,
     #[serde(rename = "OPTIMIZE_RAID_LOBBY_AVATAR_DETAILS_ROLL_BACK")]

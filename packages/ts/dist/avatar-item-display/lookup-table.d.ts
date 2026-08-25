@@ -468,6 +468,7 @@ import type {
 	AvatarItemDisplayNHatRegisteeljersies0,
 	AvatarItemDisplayNHatRuinmaniacA0,
 	AvatarItemDisplayNHatRuinmaniacB0,
+	AvatarItemDisplayNHatRyme,
 	AvatarItemDisplayNHatSableyegoggles0,
 	AvatarItemDisplayNHatSamsungsummer20200,
 	AvatarItemDisplayNHatSandygasthat0,
@@ -774,6 +775,7 @@ import type {
 	AvatarItemDisplayNPoseS20gbl,
 	AvatarItemDisplayNPoseS22gbl,
 	AvatarItemDisplayNPoseS23gbl,
+	AvatarItemDisplayNPoseS24gbl,
 	AvatarItemDisplayNPoseSustainability,
 	AvatarItemDisplayNPoseTeapot,
 	AvatarItemDisplayNPoseTinkatonhammer,
@@ -1073,6 +1075,7 @@ import type {
 	AvatarItemDisplayNShirtReuniclusitems0,
 	AvatarItemDisplayNShirtRuinmaniacA0,
 	AvatarItemDisplayNShirtRuinmaniacB0,
+	AvatarItemDisplayNShirtRyme,
 	AvatarItemDisplayNShirtS19gbl0,
 	AvatarItemDisplayNShirtSafarizone2020A0,
 	AvatarItemDisplayNShirtSafarizone2020B0,
@@ -1343,6 +1346,7 @@ import type {
 	AvatarItemDisplayNShoesReuniclusitems0,
 	AvatarItemDisplayNShoesRuinmaniacA0,
 	AvatarItemDisplayNShoesRuinmaniacB0,
+	AvatarItemDisplayNShoesRyme,
 	AvatarItemDisplayNShoesS19gbl0,
 	AvatarItemDisplayNShoesSandals0,
 	AvatarItemDisplayNShoesSandals1,
@@ -1609,6 +1613,7 @@ import type {
 	AvatarItemDisplaySetRegisteeljersiesM,
 	AvatarItemDisplaySetRuinmaniacF,
 	AvatarItemDisplaySetRuinmaniacM,
+	AvatarItemDisplaySetRyme,
 	AvatarItemDisplaySetS19gbl0,
 	AvatarItemDisplaySetS22gbl0,
 	AvatarItemDisplaySetShayminLandF,
@@ -2155,6 +2160,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_hat_registeeljersies_0: AvatarItemDisplayNHatRegisteeljersies0;
 	N_DISPLAY_n_hat_ruinmaniac_a_0: AvatarItemDisplayNHatRuinmaniacA0;
 	N_DISPLAY_n_hat_ruinmaniac_b_0: AvatarItemDisplayNHatRuinmaniacB0;
+	N_DISPLAY_n_hat_ryme: AvatarItemDisplayNHatRyme;
 	N_DISPLAY_n_hat_sableyegoggles_0: AvatarItemDisplayNHatSableyegoggles0;
 	N_DISPLAY_n_hat_samsungsummer2020_0: AvatarItemDisplayNHatSamsungsummer20200;
 	N_DISPLAY_n_hat_sandygasthat_0: AvatarItemDisplayNHatSandygasthat0;
@@ -2461,6 +2467,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_pose_s20gbl: AvatarItemDisplayNPoseS20gbl;
 	N_DISPLAY_n_pose_s22gbl: AvatarItemDisplayNPoseS22gbl;
 	N_DISPLAY_n_pose_s23gbl: AvatarItemDisplayNPoseS23gbl;
+	N_DISPLAY_n_pose_s24gbl: AvatarItemDisplayNPoseS24gbl;
 	N_DISPLAY_n_pose_sustainability: AvatarItemDisplayNPoseSustainability;
 	N_DISPLAY_n_pose_teapot: AvatarItemDisplayNPoseTeapot;
 	N_DISPLAY_n_pose_tinkatonhammer: AvatarItemDisplayNPoseTinkatonhammer;
@@ -2760,6 +2767,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_reuniclusitems_0: AvatarItemDisplayNShirtReuniclusitems0;
 	N_DISPLAY_n_shirt_ruinmaniac_a_0: AvatarItemDisplayNShirtRuinmaniacA0;
 	N_DISPLAY_n_shirt_ruinmaniac_b_0: AvatarItemDisplayNShirtRuinmaniacB0;
+	N_DISPLAY_n_shirt_ryme: AvatarItemDisplayNShirtRyme;
 	N_DISPLAY_n_shirt_s19gbl_0: AvatarItemDisplayNShirtS19gbl0;
 	N_DISPLAY_n_shirt_safarizone2020_a_0: AvatarItemDisplayNShirtSafarizone2020A0;
 	N_DISPLAY_n_shirt_safarizone2020_b_0: AvatarItemDisplayNShirtSafarizone2020B0;
@@ -3030,6 +3038,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shoes_reuniclusitems_0: AvatarItemDisplayNShoesReuniclusitems0;
 	N_DISPLAY_n_shoes_ruinmaniac_a_0: AvatarItemDisplayNShoesRuinmaniacA0;
 	N_DISPLAY_n_shoes_ruinmaniac_b_0: AvatarItemDisplayNShoesRuinmaniacB0;
+	N_DISPLAY_n_shoes_ryme: AvatarItemDisplayNShoesRyme;
 	N_DISPLAY_n_shoes_s19gbl_0: AvatarItemDisplayNShoesS19gbl0;
 	N_DISPLAY_n_shoes_sandals_0: AvatarItemDisplayNShoesSandals0;
 	N_DISPLAY_n_shoes_sandals_1: AvatarItemDisplayNShoesSandals1;
@@ -3296,6 +3305,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_set_registeeljersies_m: AvatarItemDisplaySetRegisteeljersiesM;
 	N_DISPLAY_set_ruinmaniac_f: AvatarItemDisplaySetRuinmaniacF;
 	N_DISPLAY_set_ruinmaniac_m: AvatarItemDisplaySetRuinmaniacM;
+	N_DISPLAY_set_ryme: AvatarItemDisplaySetRyme;
 	N_DISPLAY_set_s19gbl_0: AvatarItemDisplaySetS19gbl0;
 	N_DISPLAY_set_s22gbl_0: AvatarItemDisplaySetS22gbl0;
 	N_DISPLAY_set_shaymin_land_f: AvatarItemDisplaySetShayminLandF;

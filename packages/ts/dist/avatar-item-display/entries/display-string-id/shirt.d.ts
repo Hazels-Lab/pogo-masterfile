@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shirt", 458 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shirt", 459 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -2640,6 +2640,15 @@ export type AvatarItemDisplayNShirtRuinmaniacB0 = S<
 		}
 	>
 >;
+export type AvatarItemDisplayNShirtRyme = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_ryme",
+		{
+			displayStringId: "avatar_shirt_ryme";
+			iconAddress: "n_shirt_ryme_icon";
+		}
+	>
+>;
 export type AvatarItemDisplayNShirtS19gbl0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_shirt_s19gbl_0",
@@ -4420,6 +4429,7 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirtReuniclusitems0
 	| AvatarItemDisplayNShirtRuinmaniacA0
 	| AvatarItemDisplayNShirtRuinmaniacB0
+	| AvatarItemDisplayNShirtRyme
 	| AvatarItemDisplayNShirtS19gbl0
 	| AvatarItemDisplayNShirtSafarizone2020A0
 	| AvatarItemDisplayNShirtSafarizone2020B0
