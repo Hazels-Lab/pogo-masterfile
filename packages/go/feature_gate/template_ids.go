@@ -19,9 +19,12 @@ const (
 	FeatureGateTemplateIDFriendshipResyncOnReadFeatureGate                  FeatureGateTemplateID = "FRIENDSHIP_RESYNC_ON_READ_FEATURE_GATE"
 	FeatureGateTemplateIDGamesiteWebviewNearbyButtonsFeatureGate            FeatureGateTemplateID = "GAMESITE_WEBVIEW_NEARBY_BUTTONS_FEATURE_GATE"
 	FeatureGateTemplateIDHideCampfireMapButtonsFeatureGate                  FeatureGateTemplateID = "HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE"
+	FeatureGateTemplateIDLuckyTradeNewStringsFeatureGate                    FeatureGateTemplateID = "LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE"
+	FeatureGateTemplateIDMeetupReminderNotificationsFeatureGate             FeatureGateTemplateID = "MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE"
 	FeatureGateTemplateIDMega2026FeatureGate                                FeatureGateTemplateID = "MEGA_2026_FEATURE_GATE"
 	FeatureGateTemplateIDMepEggReadMigrationFeatureGate                     FeatureGateTemplateID = "MEP_EGG_READ_MIGRATION_FEATURE_GATE"
 	FeatureGateTemplateIDMepEggWriteMigrationFeatureGate                    FeatureGateTemplateID = "MEP_EGG_WRITE_MIGRATION_FEATURE_GATE"
+	FeatureGateTemplateIDRemoteTradeImprovementsFeatureGate                 FeatureGateTemplateID = "REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE"
 	FeatureGateTemplateIDSeafGetMapObjectsRateLimiterFeatureGate            FeatureGateTemplateID = "SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE"
 	FeatureGateTemplateIDUpdateTicketsStringFeatureGate                     FeatureGateTemplateID = "UPDATE_TICKETS_STRING_FEATURE_GATE"
 	FeatureGateTemplateIDVnextPreResponseInputBlockingBehaviorFeatureGate   FeatureGateTemplateID = "VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE"
@@ -42,9 +45,12 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDFriendshipResyncOnReadFeatureGate,
 	FeatureGateTemplateIDGamesiteWebviewNearbyButtonsFeatureGate,
 	FeatureGateTemplateIDHideCampfireMapButtonsFeatureGate,
+	FeatureGateTemplateIDLuckyTradeNewStringsFeatureGate,
+	FeatureGateTemplateIDMeetupReminderNotificationsFeatureGate,
 	FeatureGateTemplateIDMega2026FeatureGate,
 	FeatureGateTemplateIDMepEggReadMigrationFeatureGate,
 	FeatureGateTemplateIDMepEggWriteMigrationFeatureGate,
+	FeatureGateTemplateIDRemoteTradeImprovementsFeatureGate,
 	FeatureGateTemplateIDSeafGetMapObjectsRateLimiterFeatureGate,
 	FeatureGateTemplateIDUpdateTicketsStringFeatureGate,
 	FeatureGateTemplateIDVnextPreResponseInputBlockingBehaviorFeatureGate,

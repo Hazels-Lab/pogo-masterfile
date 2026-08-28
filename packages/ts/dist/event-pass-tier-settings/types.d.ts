@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 740 entries (structural types).
+// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 620 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -14,37 +14,33 @@ export type EventPassTierSettingsType = W<EventPassTierSettings>;
 export interface EventPassTierSettingsData {
 	activeBonusDisplaySettings?: {
 		bonusBoxes: Array<{
-			iconType: "CANDY_GENERAL" | "EGG" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "RAID_PASS" | "STARDUST" | "TRADE" | "XP";
+			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "RAID_PASS" | "STARDUST" | "TRADE" | "XP";
 			text:
 				| "bonus_3_daily_raid_passes"
 				| "bonus_3000_raid_xp"
-				| "catch_candy_double"
 				| "catch_stardust_double"
 				| "dai_duration_double"
 				| "daily_free_single_incubator"
 				| "gift_open_more_daily"
 				| "gift_storage_more"
-				| "incubator_distance_half"
 				| "season_pass_bonus_hatch_xp_stardust"
 				| "trade_extra_candy"
 				| "trade_guaranteed_candyxl";
 		}>;
-		eventName?: "go_pass_cumulative_bonuses_header";
+		eventName: "go_pass_cumulative_bonuses_header";
 	};
 	bonusSettings?: {
 		bonusBoxes: Array<{
-			iconType: "CANDY_GENERAL" | "EGG" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "RAID_PASS" | "STARDUST" | "TRADE" | "XP";
+			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "RAID_PASS" | "STARDUST" | "TRADE" | "XP";
 			text:
 				| "bonus_3_daily_raid_passes"
 				| "bonus_3000_raid_xp"
-				| "catch_candy_double"
 				| "catch_stardust_double"
 				| "dai_duration_double"
 				| "daily_free_single_incubator"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
 				| "gift_storage_more"
-				| "incubator_distance_half"
 				| "season_pass_bonus_hatch_xp_stardust"
 				| "trade_extra_candy"
 				| "trade_guaranteed_candyxl";
@@ -63,15 +59,11 @@ export interface EventPassTierSettingsData {
 			pokemonId:
 				| "ABRA"
 				| "AERODACTYL"
-				| "ARROKUDA"
 				| "AUDINO"
 				| "CHIMECHO"
 				| "CLAMPERL"
-				| "CRAMORANT"
 				| "DEINO"
-				| "DEWPIDER"
 				| "DONDOZO"
-				| "DUCKLETT"
 				| "EEVEE"
 				| "FRILLISH"
 				| "GLIMMET"
@@ -84,7 +76,6 @@ export interface EventPassTierSettingsData {
 				| "MIMIKYU"
 				| "MUDKIP"
 				| "ORTHWORM"
-				| "OSHAWOTT"
 				| "POLTCHAGEIST"
 				| "RALTS"
 				| "ROCKRUFF"
@@ -105,7 +96,6 @@ export interface EventPassTierSettingsData {
 				| "ITEM_GOLDEN_RAZZ_BERRY"
 				| "ITEM_GREAT_BALL"
 				| "ITEM_INCENSE_ORDINARY"
-				| "ITEM_INCUBATOR_BASIC"
 				| "ITEM_LEADER_MAP_FRAGMENT"
 				| "ITEM_LUCKY_EGG"
 				| "ITEM_LUCKY_FRIEND_APPLICATOR"
@@ -121,16 +111,15 @@ export interface EventPassTierSettingsData {
 				| "ITEM_RAZZ_BERRY"
 				| "ITEM_STAR_PIECE"
 				| "ITEM_TROY_DISK"
-				| "ITEM_TROY_DISK_RAINY"
 				| "ITEM_ULTRA_BALL"
 				| "ITEM_XL_RARE_CANDY";
 		};
 		neutralAvatarItemTemplate?: {
-			displayTemplateId: "N_DISPLAY_n_backpack_starmie" | "N_DISPLAY_n_backpack_wcspxp2026";
-			itemTemplateId: "N_AVATAR_n_backpack_starmie" | "N_AVATAR_n_backpack_wcspxp2026";
+			displayTemplateId: "N_DISPLAY_n_backpack_wcspxp2026";
+			itemTemplateId: "N_AVATAR_n_backpack_wcspxp2026";
 		};
 		playerAttribute?: {
-			durationMins?: number;
+			durationMins: number;
 			key:
 				| "august2026_season_pass_entitlement"
 				| "august2026_season_pass_rank_01"
@@ -141,11 +130,7 @@ export interface EventPassTierSettingsData {
 				| "pxp_wcs_2026_season_pass_entitlement"
 				| "pxp_wcs_2026_season_pass_rank_01"
 				| "pxp_wcs_2026_season_pass_rank_02"
-				| "pxp_wcs_2026_season_pass_rank_02_paid"
-				| "uu_water_festival_2026_event_pass_rank_01_free"
-				| "uu_water_festival_2026_event_pass_rank_01_paid"
-				| "uu_water_festival_2026_event_pass_rank_02_free"
-				| "uu_water_festival_2026_event_pass_rank_02_paid";
+				| "pxp_wcs_2026_season_pass_rank_02_paid";
 		};
 		pokemonEncounter?: {
 			isFeaturedPokemon: boolean;
@@ -154,17 +139,12 @@ export interface EventPassTierSettingsData {
 				form:
 					| "AERODACTYL_NORMAL"
 					| "ALAKAZAM_NORMAL"
-					| "ARROKUDA_NORMAL"
 					| "AUDINO_NORMAL"
 					| "CHIMECHO_NORMAL"
 					| "CLAMPERL_NORMAL"
-					| "CRAMORANT_NORMAL"
 					| "DEINO_NORMAL"
-					| "DEWPIDER_NORMAL"
 					| "DONDOZO_NORMAL"
-					| "DUCKLETT_NORMAL"
 					| "EEVEE_NORMAL"
-					| "FEEBAS_NORMAL"
 					| "FRILLISH_NORMAL"
 					| "GLIMMET_NORMAL"
 					| "GROWLITHE_HISUIAN"
@@ -173,7 +153,6 @@ export interface EventPassTierSettingsData {
 					| "HONEDGE_NORMAL"
 					| "IMPIDIMP_NORMAL"
 					| "JANGMO_O_NORMAL"
-					| "LAPRAS_COSTUME_2020"
 					| "LATIAS_NORMAL"
 					| "LEDIAN_NORMAL"
 					| "MEOWTH_ALOLA"
@@ -185,7 +164,6 @@ export interface EventPassTierSettingsData {
 					| "PIKACHU_WCS_2026"
 					| "RALTS_NORMAL"
 					| "ROCKRUFF_NORMAL"
-					| "SAMUROTT_HISUIAN"
 					| "SNOM_NORMAL"
 					| "SOBBLE_NORMAL"
 					| "SWINUB_NORMAL"
@@ -197,17 +175,12 @@ export interface EventPassTierSettingsData {
 			pokemonId:
 				| "AERODACTYL"
 				| "ALAKAZAM"
-				| "ARROKUDA"
 				| "AUDINO"
 				| "CHIMECHO"
 				| "CLAMPERL"
-				| "CRAMORANT"
 				| "DEINO"
-				| "DEWPIDER"
 				| "DONDOZO"
-				| "DUCKLETT"
 				| "EEVEE"
-				| "FEEBAS"
 				| "FRILLISH"
 				| "GLIMMET"
 				| "GROWLITHE"
@@ -215,7 +188,6 @@ export interface EventPassTierSettingsData {
 				| "HONEDGE"
 				| "IMPIDIMP"
 				| "JANGMO_O"
-				| "LAPRAS"
 				| "LATIAS"
 				| "LEDIAN"
 				| "MEOWTH"
@@ -226,7 +198,6 @@ export interface EventPassTierSettingsData {
 				| "POLTCHAGEIST"
 				| "RALTS"
 				| "ROCKRUFF"
-				| "SAMUROTT"
 				| "SINISTEA"
 				| "SNOM"
 				| "SOBBLE"
@@ -252,14 +223,10 @@ export interface EventPassTierSettingsData {
 			amount: number;
 			pokemonId:
 				| "AERODACTYL"
-				| "ARROKUDA"
 				| "AUDINO"
 				| "CHIMECHO"
 				| "CLAMPERL"
-				| "CRAMORANT"
 				| "DEINO"
-				| "DEWPIDER"
-				| "DUCKLETT"
 				| "EEVEE"
 				| "GLIMMET"
 				| "GROWLITHE"
@@ -267,7 +234,6 @@ export interface EventPassTierSettingsData {
 				| "LATIAS"
 				| "MEOWTH"
 				| "MIMIKYU"
-				| "OSHAWOTT"
 				| "SINISTEA"
 				| "SNOM"
 				| "SOBBLE"

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shirt", 459 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shirt", 460 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -1980,6 +1980,15 @@ export type AvatarItemDisplayNShirtMarshadowtshirt0 = S<
 		{
 			displayStringId: "N_Marshadow_Tee";
 			iconAddress: "n_shirt_marshadowtshirt_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtMaschiff = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_maschiff",
+		{
+			displayStringId: "avatar_shirt_maschiff";
+			iconAddress: "n_shirt_maschiff_icon";
 		}
 	>
 >;
@@ -4356,6 +4365,7 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirtLvl80Circuitjacket0
 	| AvatarItemDisplayNShirtLysandre0
 	| AvatarItemDisplayNShirtMarshadowtshirt0
+	| AvatarItemDisplayNShirtMaschiff
 	| AvatarItemDisplayNShirtMegalopunnyitems0
 	| AvatarItemDisplayNShirtMegamewtwox
 	| AvatarItemDisplayNShirtMegamewtwoy

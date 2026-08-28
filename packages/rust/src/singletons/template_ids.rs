@@ -19,6 +19,8 @@ pub enum SingletonsTemplateId {
     AdvancedSettings,
     #[serde(rename = "AMUSE_BOUCHE_WELCOME_BACK_REWARDS")]
     AmuseBoucheWelcomeBackRewards,
+    #[serde(rename = "AR_BACKEND_SETTINGS")]
+    ArBackendSettings,
     #[serde(rename = "AR_PHOTO_FEATURE_FLAGS")]
     ArPhotoFeatureFlags,
     #[serde(rename = "AR_TELEMETRY_SETTINGS")]

@@ -1,25 +1,8 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 48 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 47 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
 
-export type IapItemDisplayEventPassAugust2Redirect = S<
-	IapItemDisplay<
-		"EVENT_PASS_AUGUST2_REDIRECT",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			description: "deluxe_event_pass_track_unlock_description";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20ad29e8_PGO-MCS_Water_Festival_2026_TICKET_v3-1024x576.jpg";
-			sku: "pgorelease.august2_deluxe_event_pass_track_unlock_redirect";
-			skuDisableTime: "2026-08-26T20:00:00";
-			skuDisableTimeUtcMs: "1787774400000";
-			skuEnableTime: "2025-08-18T10:00:01";
-			skuEnableTimeUtcMs: "1755511201000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_title_uu_water_festival_2026";
-		}
-	>
->;
 export type IapItemDisplayEventPassMonth3SeasonStoreRedirect = S<
 	IapItemDisplay<
 		"EVENT_PASS_MONTH3_SEASON_STORE_REDIRECT",
@@ -906,7 +889,6 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket10Giftable = S<
 >;
 
 export type IapItemDisplayGlobalEventTicketMasterfileEntry =
-	| IapItemDisplayEventPassAugust2Redirect
 	| IapItemDisplayEventPassMonth3SeasonStoreRedirect
 	| IapItemDisplayEvergreenticket1
 	| IapItemDisplayEvergreenticket1Giftable

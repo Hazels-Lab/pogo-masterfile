@@ -121,6 +121,14 @@ pub enum PokemonExtendedSettingsTemplateId {
     ExtendedV0024PokemonArbok,
     #[serde(rename = "EXTENDED_V0024_POKEMON_ARBOK_NORMAL")]
     ExtendedV0024PokemonArbokNormal,
+    #[serde(rename = "EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_MALAYSIA_01")]
+    ExtendedV0025PikachuAnniversary2026Malaysia01,
+    #[serde(rename = "EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_PHILIPPINE_01")]
+    ExtendedV0025PikachuAnniversary2026Philippine01,
+    #[serde(rename = "EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_SINGAPORE_01")]
+    ExtendedV0025PikachuAnniversary2026Singapore01,
+    #[serde(rename = "EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_TAIWAN_01")]
+    ExtendedV0025PikachuAnniversary2026Taiwan01,
     #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU")]
     ExtendedV0025PokemonPikachu,
     #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_ADVENTURE_HAT_2020")]

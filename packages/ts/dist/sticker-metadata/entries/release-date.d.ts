@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "stickerMetadata", split "release-date", 34 entries.
+// Generated from Pokémon GO masterfile — group "stickerMetadata", split "release-date", 35 entries.
 
 import type { S } from "../../_utils";
 import type { StickerMetadata } from "../types";
@@ -264,6 +264,15 @@ export type StickerMetadataPgoWildarea2024Logo = S<
 		}
 	>
 >;
+export type StickerMetadataPokexcitingTurqoise = S<
+	StickerMetadata<
+		"STICKER_POKEXCITING_TURQOISE",
+		{
+			category: ["Pokemon"];
+			releaseDate: 20260902;
+		}
+	>
+>;
 export type StickerMetadataSummer4 = S<
 	StickerMetadata<
 		"STICKER_SUMMER_4",
@@ -340,6 +349,7 @@ export type StickerMetadataReleaseDateMasterfileEntry =
 	| StickerMetadataPgoTour2026Logo
 	| StickerMetadataPgoWildarea2024
 	| StickerMetadataPgoWildarea2024Logo
+	| StickerMetadataPokexcitingTurqoise
 	| StickerMetadataSummer4
 	| StickerMetadataWcsPlay
 	| StickerMetadataWillowBronze

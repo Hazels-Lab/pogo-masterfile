@@ -1006,6 +1006,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShirtLvl80Circuitjacket0            AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_lvl80-circuitjacket_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtLysandre0                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_lysandre_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtMarshadowtshirt0               AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_marshadowtshirt_0"
+	AvatarItemDisplayTemplateIDNDisplayNShirtMaschiff                       AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_maschiff"
 	AvatarItemDisplayTemplateIDNDisplayNShirtMegalopunnyitems0              AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_megalopunnyitems_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtMegamewtwox                    AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_megamewtwox"
 	AvatarItemDisplayTemplateIDNDisplayNShirtMegamewtwoy                    AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_megamewtwoy"
@@ -2698,6 +2699,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShirtLvl80Circuitjacket0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtLysandre0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtMarshadowtshirt0,
+	AvatarItemDisplayTemplateIDNDisplayNShirtMaschiff,
 	AvatarItemDisplayTemplateIDNDisplayNShirtMegalopunnyitems0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtMegamewtwox,
 	AvatarItemDisplayTemplateIDNDisplayNShirtMegamewtwoy,

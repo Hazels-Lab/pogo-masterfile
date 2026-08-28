@@ -1002,6 +1002,7 @@ import type {
 	AvatarItemDisplayNShirtLvl501,
 	AvatarItemDisplayNShirtLysandre0,
 	AvatarItemDisplayNShirtMarshadowtshirt0,
+	AvatarItemDisplayNShirtMaschiff,
 	AvatarItemDisplayNShirtMegalopunnyitems0,
 	AvatarItemDisplayNShirtMegamewtwox,
 	AvatarItemDisplayNShirtMegamewtwoy,
@@ -2694,6 +2695,7 @@ export interface AvatarItemDisplayLookup {
 	"N_DISPLAY_n_shirt_lvl80-circuitjacket_0": AvatarItemDisplayNShirtLvl80Circuitjacket0;
 	N_DISPLAY_n_shirt_lysandre_0: AvatarItemDisplayNShirtLysandre0;
 	N_DISPLAY_n_shirt_marshadowtshirt_0: AvatarItemDisplayNShirtMarshadowtshirt0;
+	N_DISPLAY_n_shirt_maschiff: AvatarItemDisplayNShirtMaschiff;
 	N_DISPLAY_n_shirt_megalopunnyitems_0: AvatarItemDisplayNShirtMegalopunnyitems0;
 	N_DISPLAY_n_shirt_megamewtwox: AvatarItemDisplayNShirtMegamewtwox;
 	N_DISPLAY_n_shirt_megamewtwoy: AvatarItemDisplayNShirtMegamewtwoy;

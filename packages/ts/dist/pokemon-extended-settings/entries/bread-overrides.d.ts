@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides", 138 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides", 140 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -3777,6 +3777,76 @@ export type PokemonExtendedSettingsV0635PokemonHydreigon = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0677PokemonEspurr = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0677_POKEMON_ESPURR",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						xOffset: -10;
+					};
+					maxBattleVisualSettings: {
+						scale: 78.4;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 39.2;
+					};
+					maxStationVisualSettings: {
+						scale: 5.33;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 0.225;
+				mUpperBound: 0.375;
+				xlUpperBound: 0.45;
+				xsLowerBound: 0.15;
+				xxlUpperBound: 0.525;
+				xxsLowerBound: 0.147;
+			};
+			uniqueId: "ESPURR";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0678PokemonMeowstic = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0678_POKEMON_MEOWSTIC",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						xOffset: -10;
+					};
+					maxBattleVisualSettings: {
+						scale: 44.42;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 22.21;
+					};
+					maxStationVisualSettings: {
+						scale: 3.02;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 0.45;
+				mUpperBound: 0.75;
+				xlUpperBound: 0.9;
+				xsLowerBound: 0.3;
+				xxlUpperBound: 1.05;
+				xxsLowerBound: 0.294;
+			};
+			uniqueId: "MEOWSTIC";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0686PokemonInkay = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0686_POKEMON_INKAY",
@@ -5180,6 +5250,8 @@ export type PokemonExtendedSettingsBreadOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0633PokemonDeino
 	| PokemonExtendedSettingsV0634PokemonZweilous
 	| PokemonExtendedSettingsV0635PokemonHydreigon
+	| PokemonExtendedSettingsV0677PokemonEspurr
+	| PokemonExtendedSettingsV0678PokemonMeowstic
 	| PokemonExtendedSettingsV0686PokemonInkay
 	| PokemonExtendedSettingsV0700PokemonSylveon
 	| PokemonExtendedSettingsV0761PokemonBounsweet

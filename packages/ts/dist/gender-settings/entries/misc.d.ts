@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "genderSettings", split "misc", 2377 entries.
+// Generated from Pokémon GO masterfile — group "genderSettings", split "misc", 2381 entries.
 
 import type { S } from "../../_utils";
 import type { GenderSettings } from "../types";
@@ -666,6 +666,54 @@ export type GenderSettingsV0025PokemonPikachuAdventureHat2020 = S<
 export type GenderSettingsV0025PokemonPikachuAnniversary2026 = S<
 	GenderSettings<
 		"SPAWN_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026",
+		{
+			gender: {
+				femalePercent: 0.5;
+				malePercent: 0.5;
+			};
+			pokemon: "PIKACHU";
+		}
+	>
+>;
+export type GenderSettingsV0025PokemonPikachuAnniversary2026Malaysia01 = S<
+	GenderSettings<
+		"SPAWN_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026_MALAYSIA_01",
+		{
+			gender: {
+				femalePercent: 0.5;
+				malePercent: 0.5;
+			};
+			pokemon: "PIKACHU";
+		}
+	>
+>;
+export type GenderSettingsV0025PokemonPikachuAnniversary2026Philippine01 = S<
+	GenderSettings<
+		"SPAWN_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026_PHILIPPINE_01",
+		{
+			gender: {
+				femalePercent: 0.5;
+				malePercent: 0.5;
+			};
+			pokemon: "PIKACHU";
+		}
+	>
+>;
+export type GenderSettingsV0025PokemonPikachuAnniversary2026Singapore01 = S<
+	GenderSettings<
+		"SPAWN_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026_SINGAPORE_01",
+		{
+			gender: {
+				femalePercent: 0.5;
+				malePercent: 0.5;
+			};
+			pokemon: "PIKACHU";
+		}
+	>
+>;
+export type GenderSettingsV0025PokemonPikachuAnniversary2026Taiwan01 = S<
+	GenderSettings<
+		"SPAWN_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026_TAIWAN_01",
 		{
 			gender: {
 				femalePercent: 0.5;
@@ -28014,6 +28062,10 @@ export type GenderSettingsMiscMasterfileEntry =
 	| GenderSettingsV0025PokemonPikachu
 	| GenderSettingsV0025PokemonPikachuAdventureHat2020
 	| GenderSettingsV0025PokemonPikachuAnniversary2026
+	| GenderSettingsV0025PokemonPikachuAnniversary2026Malaysia01
+	| GenderSettingsV0025PokemonPikachuAnniversary2026Philippine01
+	| GenderSettingsV0025PokemonPikachuAnniversary2026Singapore01
+	| GenderSettingsV0025PokemonPikachuAnniversary2026Taiwan01
 	| GenderSettingsV0025PokemonPikachuBb2026
 	| GenderSettingsV0025PokemonPikachuCopy2019
 	| GenderSettingsV0025PokemonPikachuCostume2020

@@ -167,14 +167,14 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "eventPassTierSettings":
-		var e event_pass_tier_settings.EventPassTierSettingsEntry
+	case "stickerMetadata":
+		var e sticker_metadata.StickerMetadataEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
 		return e, nil
-	case "stickerMetadata":
-		var e sticker_metadata.StickerMetadataEntry
+	case "eventPassTierSettings":
+		var e event_pass_tier_settings.EventPassTierSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -293,14 +293,14 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "combatRankingProtoSettings":
-		var e combat_ranking_proto_settings.CombatRankingProtoSettingsEntry
+	case "featureGate":
+		var e feature_gate.FeatureGateEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
 		return e, nil
-	case "featureGate":
-		var e feature_gate.FeatureGateEntry
+	case "combatRankingProtoSettings":
+		var e combat_ranking_proto_settings.CombatRankingProtoSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -401,12 +401,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "rollBack":
-		var e roll_back.RollBackEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
 	case "tappableSettings":
 		var e tappable_settings.TappableSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -425,14 +419,14 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "combatNpcPersonality":
-		var e combat_npc_personality.CombatNpcPersonalityEntry
+	case "rollBack":
+		var e roll_back.RollBackEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
 		return e, nil
-	case "eventPassSettings":
-		var e event_pass_settings.EventPassSettingsEntry
+	case "combatNpcPersonality":
+		var e combat_npc_personality.CombatNpcPersonalityEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -451,6 +445,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "avatarGroupOrderSettings":
 		var e avatar_group_order_settings.AvatarGroupOrderSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
+	case "eventPassSettings":
+		var e event_pass_settings.EventPassSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -1333,7 +1333,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "":
 		switch probe.TemplateID {
-
+		case "AR_BACKEND_SETTINGS":
+			var e singletons.ArBackendSettingsEntry
+			if err := json.Unmarshal(data, &e); err != nil {
+				return nil, err
+			}
+			return e, nil
 		default:
 			return nil, fmt.Errorf("unknown stub templateId: %s", probe.TemplateID)
 		}

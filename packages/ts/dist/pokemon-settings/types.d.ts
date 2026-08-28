@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonSettings", 2468 entries (structural types).
+// Generated from Pokémon GO masterfile — group "pokemonSettings", 2472 entries (structural types).
 
 import type { W } from "../_utils";
 import type { TypeEffectiveTemplateID } from "../type-effective/entries";
@@ -199,7 +199,7 @@ export interface PokemonSettingsData {
 		item: "ITEM_BEANS" | "ITEM_MOVE_REROLL_OTHER_SPECIAL_ATTACK_A";
 	};
 	familyId: string;
-	form?: string;
+	form?: number | string;
 	formChange?: Array<{
 		availableForm: Array<
 			| "FURFROU_DANDY"

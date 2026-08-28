@@ -15,9 +15,12 @@ import type {
 	FeatureGateFriendshipResyncOnRead,
 	FeatureGateGamesiteWebviewNearbyButtons,
 	FeatureGateHideCampfireMapButtons,
+	FeatureGateLuckyTradeNewStrings,
+	FeatureGateMeetupReminderNotifications,
 	FeatureGateMega2026,
 	FeatureGateMepEggReadMigration,
 	FeatureGateMepEggWriteMigration,
+	FeatureGateRemoteTradeImprovements,
 	FeatureGateSeafGetMapObjectsRateLimiter,
 	FeatureGateUpdateTicketsString,
 	FeatureGateVnextPreResponseInputBlockingBehavior,
@@ -38,9 +41,12 @@ export interface FeatureGateLookup {
 	FRIENDSHIP_RESYNC_ON_READ_FEATURE_GATE: FeatureGateFriendshipResyncOnRead;
 	GAMESITE_WEBVIEW_NEARBY_BUTTONS_FEATURE_GATE: FeatureGateGamesiteWebviewNearbyButtons;
 	HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE: FeatureGateHideCampfireMapButtons;
+	LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE: FeatureGateLuckyTradeNewStrings;
+	MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE: FeatureGateMeetupReminderNotifications;
 	MEGA_2026_FEATURE_GATE: FeatureGateMega2026;
 	MEP_EGG_READ_MIGRATION_FEATURE_GATE: FeatureGateMepEggReadMigration;
 	MEP_EGG_WRITE_MIGRATION_FEATURE_GATE: FeatureGateMepEggWriteMigration;
+	REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE: FeatureGateRemoteTradeImprovements;
 	SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE: FeatureGateSeafGetMapObjectsRateLimiter;
 	UPDATE_TICKETS_STRING_FEATURE_GATE: FeatureGateUpdateTicketsString;
 	VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE: FeatureGateVnextPreResponseInputBlockingBehavior;

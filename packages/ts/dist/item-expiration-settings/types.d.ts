@@ -25,7 +25,6 @@ export interface ItemExpirationSettingsData {
 	emergencyExpirationTime?:
 		| "2025-11-16T18:00:00"
 		| "2026-05-09T10:00:00"
-		| "2026-05-23T10:00:00"
 		| "2026-06-06T10:00:00"
 		| "2026-06-13T10:00:00"
 		| "2026-06-20T10:00:00"
@@ -36,6 +35,7 @@ export interface ItemExpirationSettingsData {
 		| "2026-09-04T10:00:00"
 		| "2026-09-12T10:00:00"
 		| "2026-09-14T10:00:00"
+		| "2026-09-19T10:00:00"
 		| "2026-10-10T10:00:00";
 	expirationTime:
 		| "2025-11-16T18:00:00"
@@ -44,7 +44,6 @@ export interface ItemExpirationSettingsData {
 		| "2026-02-22T17:00:00"
 		| "2026-03-03T18:00:00"
 		| "2026-05-08T20:00:00"
-		| "2026-05-22T20:00:00"
 		| "2026-06-05T20:00:00"
 		| "2026-06-12T20:00:00"
 		| "2026-06-19T20:00:00"
@@ -59,6 +58,7 @@ export interface ItemExpirationSettingsData {
 		| "2026-09-08T23:59:59"
 		| "2026-09-10T10:00:00"
 		| "2026-09-13T23:59:00"
+		| "2026-09-18T20:00:00"
 		| "2026-10-08T10:00:00";
 	itemEnablementSettings?: {
 		enabledTimePeriods: [

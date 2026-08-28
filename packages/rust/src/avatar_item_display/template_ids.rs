@@ -2009,6 +2009,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNShirtLysandre0,
     #[serde(rename = "N_DISPLAY_n_shirt_marshadowtshirt_0")]
     NDisplayNShirtMarshadowtshirt0,
+    #[serde(rename = "N_DISPLAY_n_shirt_maschiff")]
+    NDisplayNShirtMaschiff,
     #[serde(rename = "N_DISPLAY_n_shirt_megalopunnyitems_0")]
     NDisplayNShirtMegalopunnyitems0,
     #[serde(rename = "N_DISPLAY_n_shirt_megamewtwox")]
