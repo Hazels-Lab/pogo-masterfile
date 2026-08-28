@@ -595,9 +595,9 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 					};
 					pokemon: {
 						pokemonDisplay: {
-							form: "LUNALA_NORMAL";
+							form: "REGIROCK_NORMAL";
 						};
-						pokemonId: "LUNALA";
+						pokemonId: "REGIROCK";
 					};
 					staminaIvOverride: {
 						range: {
@@ -606,6 +606,84 @@ export interface VsSeekerPokemonRewards<TemplateID extends string = string, TDat
 						};
 					};
 					unlockedAtRank: 20;
+				},
+				{
+					attackIvOverride: {
+						range: {
+							max: 15;
+							min: 10;
+						};
+					};
+					defenseIvOverride: {
+						range: {
+							max: 15;
+							min: 10;
+						};
+					};
+					pokemon: {
+						pokemonDisplay: {
+							form: "REGISTEEL_NORMAL";
+						};
+						pokemonId: "REGISTEEL";
+					};
+					staminaIvOverride: {
+						range: {
+							max: 15;
+							min: 10;
+						};
+					};
+					unlockedAtRank: 20;
+				},
+				{
+					attackIvOverride: {
+						range: {
+							max: 15;
+							min: 10;
+						};
+					};
+					defenseIvOverride: {
+						range: {
+							max: 15;
+							min: 10;
+						};
+					};
+					pokemon: {
+						pokemonDisplay: {
+							form: "REGICE_NORMAL";
+						};
+						pokemonId: "REGICE";
+					};
+					staminaIvOverride: {
+						range: {
+							max: 15;
+							min: 10;
+						};
+					};
+					unlockedAtRank: 20;
+				},
+				{
+					attackIvOverride: {
+						range: {
+							max: 15;
+						};
+					};
+					defenseIvOverride: {
+						range: {
+							max: 15;
+						};
+					};
+					pokemon: {
+						pokemonDisplay: {
+							form: "CRAMORANT_NORMAL";
+						};
+						pokemonId: "CRAMORANT";
+					};
+					staminaIvOverride: {
+						range: {
+							max: 15;
+						};
+					};
+					unlockedAtRank: 16;
 				},
 			];
 		};

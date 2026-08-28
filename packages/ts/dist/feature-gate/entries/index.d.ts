@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 20 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 23 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -139,6 +139,22 @@ export type FeatureGateHideCampfireMapButtons = S<
 		}
 	>
 >;
+export type FeatureGateLuckyTradeNewStrings = S<
+	FeatureGate<
+		"LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE",
+		{
+			status: 1284637195;
+		}
+	>
+>;
+export type FeatureGateMeetupReminderNotifications = S<
+	FeatureGate<
+		"MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE",
+		{
+			status: 2084830192;
+		}
+	>
+>;
 export type FeatureGateMega2026 = S<
 	FeatureGate<
 		"MEGA_2026_FEATURE_GATE",
@@ -210,6 +226,14 @@ export type FeatureGateMepEggWriteMigration = S<
 		}
 	>
 >;
+export type FeatureGateRemoteTradeImprovements = S<
+	FeatureGate<
+		"REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE",
+		{
+			status: 1284637195;
+		}
+	>
+>;
 export type FeatureGateSeafGetMapObjectsRateLimiter = S<
 	FeatureGate<
 		"SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE",
@@ -257,9 +281,12 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateFriendshipResyncOnRead
 	| FeatureGateGamesiteWebviewNearbyButtons
 	| FeatureGateHideCampfireMapButtons
+	| FeatureGateLuckyTradeNewStrings
+	| FeatureGateMeetupReminderNotifications
 	| FeatureGateMega2026
 	| FeatureGateMepEggReadMigration
 	| FeatureGateMepEggWriteMigration
+	| FeatureGateRemoteTradeImprovements
 	| FeatureGateSeafGetMapObjectsRateLimiter
 	| FeatureGateUpdateTicketsString
 	| FeatureGateVnextPreResponseInputBlockingBehavior;

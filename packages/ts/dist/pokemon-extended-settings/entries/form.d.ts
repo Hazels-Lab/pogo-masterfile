@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1171 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1168 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -13388,57 +13388,6 @@ export type PokemonExtendedSettingsV0676PokemonFurfrouStar = S<
 		}
 	>
 >;
-export type PokemonExtendedSettingsV0677PokemonEspurrNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0677_POKEMON_ESPURR_NORMAL",
-		{
-			form: "ESPURR_NORMAL";
-			sizeSettings: {
-				mLowerBound: 0.225;
-				mUpperBound: 0.375;
-				xlUpperBound: 0.45;
-				xsLowerBound: 0.15;
-				xxlUpperBound: 0.525;
-				xxsLowerBound: 0.147;
-			};
-			uniqueId: "ESPURR";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0678PokemonMeowsticFemale = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0678_POKEMON_MEOWSTIC_FEMALE",
-		{
-			form: "MEOWSTIC_FEMALE";
-			sizeSettings: {
-				mLowerBound: 0.45;
-				mUpperBound: 0.75;
-				xlUpperBound: 0.9;
-				xsLowerBound: 0.3;
-				xxlUpperBound: 1.05;
-				xxsLowerBound: 0.294;
-			};
-			uniqueId: "MEOWSTIC";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0678PokemonMeowsticNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0678_POKEMON_MEOWSTIC_NORMAL",
-		{
-			form: "MEOWSTIC_NORMAL";
-			sizeSettings: {
-				mLowerBound: 0.45;
-				mUpperBound: 0.75;
-				xlUpperBound: 0.9;
-				xsLowerBound: 0.3;
-				xxlUpperBound: 1.05;
-				xxsLowerBound: 0.294;
-			};
-			uniqueId: "MEOWSTIC";
-		}
-	>
->;
 export type PokemonExtendedSettingsV0679PokemonHonedgeNormal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0679_POKEMON_HONEDGE_NORMAL",
@@ -20843,9 +20792,6 @@ export type PokemonExtendedSettingsFormMasterfileEntry =
 	| PokemonExtendedSettingsV0676PokemonFurfrouNatural
 	| PokemonExtendedSettingsV0676PokemonFurfrouPharaoh
 	| PokemonExtendedSettingsV0676PokemonFurfrouStar
-	| PokemonExtendedSettingsV0677PokemonEspurrNormal
-	| PokemonExtendedSettingsV0678PokemonMeowsticFemale
-	| PokemonExtendedSettingsV0678PokemonMeowsticNormal
 	| PokemonExtendedSettingsV0679PokemonHonedgeNormal
 	| PokemonExtendedSettingsV0680PokemonDoubladeNormal
 	| PokemonExtendedSettingsV0681PokemonAegislashBlade

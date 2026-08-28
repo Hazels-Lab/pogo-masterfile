@@ -62,6 +62,10 @@ const (
 	PokemonExtendedSettingsTemplateIDExtendedV0023PokemonEkansNormal                     PokemonExtendedSettingsTemplateID = "EXTENDED_V0023_POKEMON_EKANS_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV0024PokemonArbok                           PokemonExtendedSettingsTemplateID = "EXTENDED_V0024_POKEMON_ARBOK"
 	PokemonExtendedSettingsTemplateIDExtendedV0024PokemonArbokNormal                     PokemonExtendedSettingsTemplateID = "EXTENDED_V0024_POKEMON_ARBOK_NORMAL"
+	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuAnniversary2026Malaysia01       PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_MALAYSIA_01"
+	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuAnniversary2026Philippine01     PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_PHILIPPINE_01"
+	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuAnniversary2026Singapore01      PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_SINGAPORE_01"
+	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuAnniversary2026Taiwan01         PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_TAIWAN_01"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachu                         PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuAdventureHat2020         PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_ADVENTURE_HAT_2020"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuAnniversary2026          PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026"
@@ -2537,6 +2541,10 @@ var PokemonExtendedSettingsTemplateIDValues = [...]PokemonExtendedSettingsTempla
 	PokemonExtendedSettingsTemplateIDExtendedV0023PokemonEkansNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV0024PokemonArbok,
 	PokemonExtendedSettingsTemplateIDExtendedV0024PokemonArbokNormal,
+	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuAnniversary2026Malaysia01,
+	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuAnniversary2026Philippine01,
+	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuAnniversary2026Singapore01,
+	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuAnniversary2026Taiwan01,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachu,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuAdventureHat2020,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuAnniversary2026,

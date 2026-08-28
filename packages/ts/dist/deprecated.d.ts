@@ -480,7 +480,7 @@ type DeprecatedCodeGateProtoIds =
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedEggTransparencySettingsIds = "EGG_TRANSPARENCY_SETTINGS";
 
-/** @deprecated lastSeen 2026-08-13 — 33 entries */
+/** @deprecated lastSeen 2026-08-28 — 34 entries */
 type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_30ANNIV2026_EVENT"
 	| "EVENT_PASS_AFTERPARTY2026_EVENT"
@@ -514,6 +514,7 @@ type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_STEELEDRESOLVE2026_EVENT"
 	| "EVENT_PASS_SUMMER_MARATHON_2026_EVENT"
 	| "EVENT_PASS_SUSTAINABILITY2026_EVENT"
+	| "EVENT_PASS_UU_WATER_FESTIVAL_2026_EVENT"
 	| "EVENT_PASS_WINTERHOLIDAYS2025_EVENT";
 
 /** @deprecated lastSeen 2026-04-22 — 11890 entries */
@@ -12639,13 +12640,14 @@ type DeprecatedPokemonInfoPanelSettingsIds = "POKEMON_INFO_PANEL_SETTINGS";
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedQuestEvolutionSettingsIds = "QUEST_EVOLUTION_SETTINGS";
 
-/** @deprecated lastSeen 2026-07-28 — 13 entries */
+/** @deprecated lastSeen 2026-08-28 — 14 entries */
 type DeprecatedRollBackIds =
 	| "ANDROID_SENSORS_ROLL_BACK"
 	| "BIDIRECTIONAL_FP_WEEKLY_CHALLENGE_REWARD_ROLL_BACK"
 	| "COMBAT_VNEXT_USE_MATCHING_START_TURN_FOR_FAST_ATTACK_ENABLE_ROLL_BACK"
 	| "DELAYED_NOTIF_ROLL_BACK"
 	| "NPC_LEAGUE_SUFFIX_ROLL_BACK"
+	| "OPTIMIZE_RAID_LOBBY_AVATAR_DETAILS_ROLL_BACK"
 	| "PERIODICALLY_CHECK_FOR_VISIBILITY_ROLL_BACK"
 	| "REALTIME_POKEMON_SHADOW_NULL_ROOT_BONE_CRASH_FIX_ROLL_BACK"
 	| "REMOVE_UI_CAM_ROLL_BACK"

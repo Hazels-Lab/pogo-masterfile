@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 209 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 216 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -373,6 +373,258 @@ export type PokemonExtendedSettingsV0012PokemonButterfreeNormal = S<
 				xxsLowerBound: 0.539;
 			};
 			uniqueId: "BUTTERFREE";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0025PikachuAnniversary2026Malaysia01 = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_MALAYSIA_01",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 62;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 27.5;
+						maxReticleSize: 14;
+						scale: 31;
+					};
+					maxStationVisualSettings: {
+						scale: 4.22;
+					};
+				},
+				{
+					averageHeightM: 21;
+					breadMode: "BREAD_DOUGH_MODE";
+					camera: {
+						cylinderHeightM: 1.1;
+						cylinderRadiusM: 1.3;
+					};
+					catchOverrideSettings: {
+						collisionHeadRadiusM: 0.25;
+						collisionRadiusM: 0.25;
+					};
+					maxBattleTrainerVisualSettings: {
+						xOffset: -5;
+						yOffset: -5;
+					};
+					maxBattleVisualSettings: {
+						scale: 20;
+						xOffset: 3;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 32.5;
+						maxReticleSize: 14;
+						scale: 10.5;
+					};
+					maxStationVisualSettings: {
+						scale: 1.25;
+					};
+					modelHeight: 2.57;
+					modelScaleV2: 0.86;
+				},
+			];
+			form: 3358;
+			sizeSettings: {
+				mLowerBound: 0.3;
+				mUpperBound: 0.5;
+				xlUpperBound: 0.6;
+				xsLowerBound: 0.2;
+				xxlUpperBound: 0.7;
+				xxsLowerBound: 0.196;
+			};
+			uniqueId: "PIKACHU";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0025PikachuAnniversary2026Philippine01 = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_PHILIPPINE_01",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 62;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 27.5;
+						maxReticleSize: 14;
+						scale: 31;
+					};
+					maxStationVisualSettings: {
+						scale: 4.22;
+					};
+				},
+				{
+					averageHeightM: 21;
+					breadMode: "BREAD_DOUGH_MODE";
+					camera: {
+						cylinderHeightM: 1.1;
+						cylinderRadiusM: 1.3;
+					};
+					catchOverrideSettings: {
+						collisionHeadRadiusM: 0.25;
+						collisionRadiusM: 0.25;
+					};
+					maxBattleTrainerVisualSettings: {
+						xOffset: -5;
+						yOffset: -5;
+					};
+					maxBattleVisualSettings: {
+						scale: 20;
+						xOffset: 3;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 32.5;
+						maxReticleSize: 14;
+						scale: 10.5;
+					};
+					maxStationVisualSettings: {
+						scale: 1.25;
+					};
+					modelHeight: 2.57;
+					modelScaleV2: 0.86;
+				},
+			];
+			form: 3375;
+			sizeSettings: {
+				mLowerBound: 0.3;
+				mUpperBound: 0.5;
+				xlUpperBound: 0.6;
+				xsLowerBound: 0.2;
+				xxlUpperBound: 0.7;
+				xxsLowerBound: 0.196;
+			};
+			uniqueId: "PIKACHU";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0025PikachuAnniversary2026Singapore01 = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_SINGAPORE_01",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 62;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 27.5;
+						maxReticleSize: 14;
+						scale: 31;
+					};
+					maxStationVisualSettings: {
+						scale: 4.22;
+					};
+				},
+				{
+					averageHeightM: 21;
+					breadMode: "BREAD_DOUGH_MODE";
+					camera: {
+						cylinderHeightM: 1.1;
+						cylinderRadiusM: 1.3;
+					};
+					catchOverrideSettings: {
+						collisionHeadRadiusM: 0.25;
+						collisionRadiusM: 0.25;
+					};
+					maxBattleTrainerVisualSettings: {
+						xOffset: -5;
+						yOffset: -5;
+					};
+					maxBattleVisualSettings: {
+						scale: 20;
+						xOffset: 3;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 32.5;
+						maxReticleSize: 14;
+						scale: 10.5;
+					};
+					maxStationVisualSettings: {
+						scale: 1.25;
+					};
+					modelHeight: 2.57;
+					modelScaleV2: 0.86;
+				},
+			];
+			form: 3359;
+			sizeSettings: {
+				mLowerBound: 0.3;
+				mUpperBound: 0.5;
+				xlUpperBound: 0.6;
+				xsLowerBound: 0.2;
+				xxlUpperBound: 0.7;
+				xxsLowerBound: 0.196;
+			};
+			uniqueId: "PIKACHU";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0025PikachuAnniversary2026Taiwan01 = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_TAIWAN_01",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 62;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 27.5;
+						maxReticleSize: 14;
+						scale: 31;
+					};
+					maxStationVisualSettings: {
+						scale: 4.22;
+					};
+				},
+				{
+					averageHeightM: 21;
+					breadMode: "BREAD_DOUGH_MODE";
+					camera: {
+						cylinderHeightM: 1.1;
+						cylinderRadiusM: 1.3;
+					};
+					catchOverrideSettings: {
+						collisionHeadRadiusM: 0.25;
+						collisionRadiusM: 0.25;
+					};
+					maxBattleTrainerVisualSettings: {
+						xOffset: -5;
+						yOffset: -5;
+					};
+					maxBattleVisualSettings: {
+						scale: 20;
+						xOffset: 3;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 32.5;
+						maxReticleSize: 14;
+						scale: 10.5;
+					};
+					maxStationVisualSettings: {
+						scale: 1.25;
+					};
+					modelHeight: 2.57;
+					modelScaleV2: 0.86;
+				},
+			];
+			form: 3360;
+			sizeSettings: {
+				mLowerBound: 0.3;
+				mUpperBound: 0.5;
+				xlUpperBound: 0.6;
+				xsLowerBound: 0.2;
+				xxlUpperBound: 0.7;
+				xxsLowerBound: 0.196;
+			};
+			uniqueId: "PIKACHU";
 		}
 	>
 >;
@@ -8058,6 +8310,114 @@ export type PokemonExtendedSettingsV0635PokemonHydreigonNormal = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0677PokemonEspurrNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0677_POKEMON_ESPURR_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						xOffset: -10;
+					};
+					maxBattleVisualSettings: {
+						scale: 78.4;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 39.2;
+					};
+					maxStationVisualSettings: {
+						scale: 5.33;
+					};
+				},
+			];
+			form: "ESPURR_NORMAL";
+			sizeSettings: {
+				mLowerBound: 0.225;
+				mUpperBound: 0.375;
+				xlUpperBound: 0.45;
+				xsLowerBound: 0.15;
+				xxlUpperBound: 0.525;
+				xxsLowerBound: 0.147;
+			};
+			uniqueId: "ESPURR";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0678PokemonMeowsticFemale = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0678_POKEMON_MEOWSTIC_FEMALE",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						xOffset: -10;
+					};
+					maxBattleVisualSettings: {
+						scale: 44.42;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 22.21;
+					};
+					maxStationVisualSettings: {
+						scale: 3.02;
+					};
+				},
+			];
+			form: "MEOWSTIC_FEMALE";
+			sizeSettings: {
+				mLowerBound: 0.45;
+				mUpperBound: 0.75;
+				xlUpperBound: 0.9;
+				xsLowerBound: 0.3;
+				xxlUpperBound: 1.05;
+				xxsLowerBound: 0.294;
+			};
+			uniqueId: "MEOWSTIC";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0678PokemonMeowsticNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0678_POKEMON_MEOWSTIC_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						xOffset: -10;
+					};
+					maxBattleVisualSettings: {
+						scale: 44.42;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 22.21;
+					};
+					maxStationVisualSettings: {
+						scale: 3.02;
+					};
+				},
+			];
+			form: "MEOWSTIC_NORMAL";
+			sizeSettings: {
+				mLowerBound: 0.45;
+				mUpperBound: 0.75;
+				xlUpperBound: 0.9;
+				xsLowerBound: 0.3;
+				xxlUpperBound: 1.05;
+				xxsLowerBound: 0.294;
+			};
+			uniqueId: "MEOWSTIC";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0686PokemonInkayNormal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0686_POKEMON_INKAY_NORMAL",
@@ -9568,6 +9928,10 @@ export type PokemonExtendedSettingsBreadOverridesFormMasterfileEntry =
 	| PokemonExtendedSettingsV0010PokemonCaterpieNormal
 	| PokemonExtendedSettingsV0011PokemonMetapodNormal
 	| PokemonExtendedSettingsV0012PokemonButterfreeNormal
+	| PokemonExtendedSettingsV0025PikachuAnniversary2026Malaysia01
+	| PokemonExtendedSettingsV0025PikachuAnniversary2026Philippine01
+	| PokemonExtendedSettingsV0025PikachuAnniversary2026Singapore01
+	| PokemonExtendedSettingsV0025PikachuAnniversary2026Taiwan01
 	| PokemonExtendedSettingsV0025PokemonPikachuAdventureHat2020
 	| PokemonExtendedSettingsV0025PokemonPikachuAnniversary2026
 	| PokemonExtendedSettingsV0025PokemonPikachuBb2026
@@ -9730,6 +10094,9 @@ export type PokemonExtendedSettingsBreadOverridesFormMasterfileEntry =
 	| PokemonExtendedSettingsV0633PokemonDeinoNormal
 	| PokemonExtendedSettingsV0634PokemonZweilousNormal
 	| PokemonExtendedSettingsV0635PokemonHydreigonNormal
+	| PokemonExtendedSettingsV0677PokemonEspurrNormal
+	| PokemonExtendedSettingsV0678PokemonMeowsticFemale
+	| PokemonExtendedSettingsV0678PokemonMeowsticNormal
 	| PokemonExtendedSettingsV0686PokemonInkayNormal
 	| PokemonExtendedSettingsV0700PokemonSylveonNormal
 	| PokemonExtendedSettingsV0761PokemonBounsweetNormal

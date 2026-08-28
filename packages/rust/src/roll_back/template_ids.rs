@@ -13,8 +13,6 @@ pub enum RollBackTemplateId {
     GetFriendDetailsPaginatedRollBack,
     #[serde(rename = "MAP_RADIUS_ENHANCE_GRAPHICS_ROLL_BACK")]
     MapRadiusEnhanceGraphicsRollBack,
-    #[serde(rename = "OPTIMIZE_RAID_LOBBY_AVATAR_DETAILS_ROLL_BACK")]
-    OptimizeRaidLobbyAvatarDetailsRollBack,
     #[serde(rename = "PERIODIC_MAP_UNLOAD_ROLL_BACK")]
     PeriodicMapUnloadRollBack,
 }

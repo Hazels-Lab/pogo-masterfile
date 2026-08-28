@@ -185,8 +185,8 @@ pub enum MasterfileEntry {
     IapItemDisplay(iap_item_display::IapItemDisplayEntry),
     FormSettings(form_settings::FormSettingsEntry),
     BadgeSettings(badge_settings::BadgeSettingsEntry),
-    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     StickerMetadata(sticker_metadata::StickerMetadataEntry),
+    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     PokemonFamily(pokemon_family::PokemonFamilyEntry),
     MoveSettings(move_settings::MoveSettingsEntry),
     CombatMove(combat_move::CombatMoveEntry),
@@ -208,8 +208,8 @@ pub enum MasterfileEntry {
     EvolutionQuestTemplate(evolution_quest_template::EvolutionQuestTemplateEntry),
     LimitedPurchaseSkuSettings(limited_purchase_sku_settings::LimitedPurchaseSkuSettingsEntry),
     ItemExpirationSettings(item_expiration_settings::ItemExpirationSettingsEntry),
-    CombatRankingProtoSettings(combat_ranking_proto_settings::CombatRankingProtoSettingsEntry),
     FeatureGate(feature_gate::FeatureGateEntry),
+    CombatRankingProtoSettings(combat_ranking_proto_settings::CombatRankingProtoSettingsEntry),
     CombatType(combat_type::CombatTypeEntry),
     TypeEffective(type_effective::TypeEffectiveEntry),
     IapCategoryDisplay(iap_category_display::IapCategoryDisplayEntry),
@@ -230,15 +230,15 @@ pub enum MasterfileEntry {
     FriendshipMilestoneSettings(friendship_milestone_settings::FriendshipMilestoneSettingsEntry),
     PokemonScaleSettings(pokemon_scale_settings::PokemonScaleSettingsEntry),
     BuddyLevelSettings(buddy_level_settings::BuddyLevelSettingsEntry),
-    RollBack(roll_back::RollBackEntry),
     TappableSettings(tappable_settings::TappableSettingsEntry),
     FortPowerUpLevelSettings(fort_power_up_level_settings::FortPowerUpLevelSettingsEntry),
     PokemonHomeEnergyCosts(pokemon_home_energy_costs::PokemonHomeEnergyCostsEntry),
+    RollBack(roll_back::RollBackEntry),
     CombatNpcPersonality(combat_npc_personality::CombatNpcPersonalityEntry),
-    EventPassSettings(event_pass_settings::EventPassSettingsEntry),
     LanguageSettings(language_settings::LanguageSettingsEntry),
     QuestSettings(quest_settings::QuestSettingsEntry),
     AvatarGroupOrderSettings(avatar_group_order_settings::AvatarGroupOrderSettingsEntry),
+    EventPassSettings(event_pass_settings::EventPassSettingsEntry),
     PartyPlayGeneralSettings(party_play_general_settings::PartyPlayGeneralSettingsEntry),
     PokemonUpgrades(pokemon_upgrades::PokemonUpgradesEntry),
     VsSeekerPokemonRewards(vs_seeker_pokemon_rewards::VsSeekerPokemonRewardsEntry),
@@ -247,6 +247,7 @@ pub enum MasterfileEntry {
     AddressablePokemonSettings(singletons::AddressablePokemonSettingsEntry),
     AddressBookImportSettings(singletons::AddressBookImportSettingsEntry),
     AdvancedSettings(singletons::AdvancedSettingsEntry),
+    ArBackendSettings(singletons::ArBackendSettingsEntry),
     ArPhotoFeatureFlags(singletons::ArPhotoFeatureFlagsEntry),
     ArTelemetrySettings(singletons::ArTelemetrySettingsEntry),
     AssetRefreshProto(singletons::AssetRefreshProtoEntry),
@@ -427,10 +428,10 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "iapItemDisplay" => serde_json::from_value(value).map(Self::IapItemDisplay),
                 "formSettings" => serde_json::from_value(value).map(Self::FormSettings),
                 "badgeSettings" => serde_json::from_value(value).map(Self::BadgeSettings),
+                "stickerMetadata" => serde_json::from_value(value).map(Self::StickerMetadata),
                 "eventPassTierSettings" => {
                     serde_json::from_value(value).map(Self::EventPassTierSettings)
                 }
-                "stickerMetadata" => serde_json::from_value(value).map(Self::StickerMetadata),
                 "pokemonFamily" => serde_json::from_value(value).map(Self::PokemonFamily),
                 "moveSettings" => serde_json::from_value(value).map(Self::MoveSettings),
                 "combatMove" => serde_json::from_value(value).map(Self::CombatMove),
@@ -474,10 +475,10 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "itemExpirationSettings" => {
                     serde_json::from_value(value).map(Self::ItemExpirationSettings)
                 }
+                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
                 "combatRankingProtoSettings" => {
                     serde_json::from_value(value).map(Self::CombatRankingProtoSettings)
                 }
-                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
                 "combatType" => serde_json::from_value(value).map(Self::CombatType),
                 "typeEffective" => serde_json::from_value(value).map(Self::TypeEffective),
                 "iapCategoryDisplay" => serde_json::from_value(value).map(Self::IapCategoryDisplay),
@@ -512,7 +513,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::PokemonScaleSettings)
                 }
                 "buddyLevelSettings" => serde_json::from_value(value).map(Self::BuddyLevelSettings),
-                "rollBack" => serde_json::from_value(value).map(Self::RollBack),
                 "tappableSettings" => serde_json::from_value(value).map(Self::TappableSettings),
                 "fortPowerUpLevelSettings" => {
                     serde_json::from_value(value).map(Self::FortPowerUpLevelSettings)
@@ -520,15 +520,16 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "pokemonHomeEnergyCosts" => {
                     serde_json::from_value(value).map(Self::PokemonHomeEnergyCosts)
                 }
+                "rollBack" => serde_json::from_value(value).map(Self::RollBack),
                 "combatNpcPersonality" => {
                     serde_json::from_value(value).map(Self::CombatNpcPersonality)
                 }
-                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "languageSettings" => serde_json::from_value(value).map(Self::LanguageSettings),
                 "questSettings" => serde_json::from_value(value).map(Self::QuestSettings),
                 "avatarGroupOrderSettings" => {
                     serde_json::from_value(value).map(Self::AvatarGroupOrderSettings)
                 }
+                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "partyPlayGeneralSettings" => {
                     serde_json::from_value(value).map(Self::PartyPlayGeneralSettings)
                 }
@@ -878,6 +879,9 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 .and_then(|t| t.as_str())
                 .map(String::from);
             match template_id.as_deref() {
+                Some("AR_BACKEND_SETTINGS") => {
+                    serde_json::from_value(value).map(Self::ArBackendSettings)
+                }
                 Some(other) => Err(serde_json::Error::custom(format!(
                     "unknown stub templateId: {}",
                     other

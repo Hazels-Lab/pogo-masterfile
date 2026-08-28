@@ -35,12 +35,18 @@ pub enum FeatureGateTemplateId {
     GamesiteWebviewNearbyButtonsFeatureGate,
     #[serde(rename = "HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE")]
     HideCampfireMapButtonsFeatureGate,
+    #[serde(rename = "LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE")]
+    LuckyTradeNewStringsFeatureGate,
+    #[serde(rename = "MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE")]
+    MeetupReminderNotificationsFeatureGate,
     #[serde(rename = "MEGA_2026_FEATURE_GATE")]
     Mega2026FeatureGate,
     #[serde(rename = "MEP_EGG_READ_MIGRATION_FEATURE_GATE")]
     MepEggReadMigrationFeatureGate,
     #[serde(rename = "MEP_EGG_WRITE_MIGRATION_FEATURE_GATE")]
     MepEggWriteMigrationFeatureGate,
+    #[serde(rename = "REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE")]
+    RemoteTradeImprovementsFeatureGate,
     #[serde(rename = "SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE")]
     SeafGetMapObjectsRateLimiterFeatureGate,
     #[serde(rename = "UPDATE_TICKETS_STRING_FEATURE_GATE")]

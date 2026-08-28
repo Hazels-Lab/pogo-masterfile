@@ -2,6 +2,8 @@
 
 package pokemon_settings
 
+import "encoding/json"
+
 type PokemonSettingsBuddyWalkedMegaEnergyAwards struct {
 	MegaEnergyAwardAmount uint64  `json:"megaEnergyAwardAmount"`
 	MegaPokemonId         string  `json:"megaPokemonId"`
@@ -247,7 +249,7 @@ type PokemonSettings struct {
 	EvolutionPips                     *uint64                           `json:"evolutionPips,omitempty"`
 	ExclusiveKeyItem                  *PokemonSettingsExclusiveKeyItem  `json:"exclusiveKeyItem,omitempty"`
 	FamilyId                          string                            `json:"familyId"`
-	Form                              *string                           `json:"form,omitempty"`
+	Form                              json.RawMessage                   `json:"form,omitempty"`
 	FormChange                        []PokemonSettingsFormChange       `json:"formChange,omitempty"`
 	HeightStdDev                      float64                           `json:"heightStdDev"`
 	Ibfc                              PokemonSettingsIbfc               `json:"ibfc"`

@@ -2092,7 +2092,7 @@ type VnextBattleConfig struct {
 }
 
 type VsSeekerClientSettings struct {
-	AllowedVsSeekerLeagueTemplateId [3]string `json:"allowedVsSeekerLeagueTemplateId"`
+	AllowedVsSeekerLeagueTemplateId [4]string `json:"allowedVsSeekerLeagueTemplateId"`
 }
 
 type VsSeekerScheduleSettingsVsSeekerSchedules struct {
@@ -2216,6 +2216,17 @@ func (AdvancedSettingsEntry) MasterfileEntry() {}
 type AdvancedSettingsEntryData struct {
 	TemplateID       string           `json:"templateId"`
 	AdvancedSettings AdvancedSettings `json:"advancedSettings"`
+}
+
+type ArBackendSettingsEntry struct {
+	TemplateID string                     `json:"templateId"`
+	Data       ArBackendSettingsEntryData `json:"data"`
+}
+
+func (ArBackendSettingsEntry) MasterfileEntry() {}
+
+type ArBackendSettingsEntryData struct {
+	TemplateID string `json:"templateId"`
 }
 
 type ArPhotoFeatureFlagsEntry struct {

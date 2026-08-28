@@ -433,6 +433,7 @@ const (
 	StickerMetadataTemplateIDStickerPikachuJol                   StickerMetadataTemplateID = "STICKER_PIKACHU_JOL"
 	StickerMetadataTemplateIDStickerPokemonchatpals204           StickerMetadataTemplateID = "STICKER_POKEMONCHATPALS2_04"
 	StickerMetadataTemplateIDStickerPokemonchatpals240           StickerMetadataTemplateID = "STICKER_POKEMONCHATPALS2_40"
+	StickerMetadataTemplateIDStickerPokexcitingTurqoise          StickerMetadataTemplateID = "STICKER_POKEXCITING_TURQOISE"
 	StickerMetadataTemplateIDStickerPokopiaBulbasaur             StickerMetadataTemplateID = "STICKER_POKOPIA_BULBASAUR"
 	StickerMetadataTemplateIDStickerPokopiaPikachu               StickerMetadataTemplateID = "STICKER_POKOPIA_PIKACHU"
 	StickerMetadataTemplateIDStickerPokopiaSnorlax               StickerMetadataTemplateID = "STICKER_POKOPIA_SNORLAX"
@@ -1059,6 +1060,7 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDStickerPikachuJol,
 	StickerMetadataTemplateIDStickerPokemonchatpals204,
 	StickerMetadataTemplateIDStickerPokemonchatpals240,
+	StickerMetadataTemplateIDStickerPokexcitingTurqoise,
 	StickerMetadataTemplateIDStickerPokopiaBulbasaur,
 	StickerMetadataTemplateIDStickerPokopiaPikachu,
 	StickerMetadataTemplateIDStickerPokopiaSnorlax,

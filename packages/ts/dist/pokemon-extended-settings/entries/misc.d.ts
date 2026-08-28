@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 833 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 831 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -8328,38 +8328,6 @@ export type PokemonExtendedSettingsV0676PokemonFurfrou = S<
 		}
 	>
 >;
-export type PokemonExtendedSettingsV0677PokemonEspurr = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0677_POKEMON_ESPURR",
-		{
-			sizeSettings: {
-				mLowerBound: 0.225;
-				mUpperBound: 0.375;
-				xlUpperBound: 0.45;
-				xsLowerBound: 0.15;
-				xxlUpperBound: 0.525;
-				xxsLowerBound: 0.147;
-			};
-			uniqueId: "ESPURR";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0678PokemonMeowstic = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0678_POKEMON_MEOWSTIC",
-		{
-			sizeSettings: {
-				mLowerBound: 0.45;
-				mUpperBound: 0.75;
-				xlUpperBound: 0.9;
-				xsLowerBound: 0.3;
-				xxlUpperBound: 1.05;
-				xxsLowerBound: 0.294;
-			};
-			uniqueId: "MEOWSTIC";
-		}
-	>
->;
 export type PokemonExtendedSettingsV0679PokemonHonedge = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0679_POKEMON_HONEDGE",
@@ -13868,8 +13836,6 @@ export type PokemonExtendedSettingsMiscMasterfileEntry =
 	| PokemonExtendedSettingsV0674PokemonPancham
 	| PokemonExtendedSettingsV0675PokemonPangoro
 	| PokemonExtendedSettingsV0676PokemonFurfrou
-	| PokemonExtendedSettingsV0677PokemonEspurr
-	| PokemonExtendedSettingsV0678PokemonMeowstic
 	| PokemonExtendedSettingsV0679PokemonHonedge
 	| PokemonExtendedSettingsV0680PokemonDoublade
 	| PokemonExtendedSettingsV0681PokemonAegislash

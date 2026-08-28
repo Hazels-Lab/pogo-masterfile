@@ -127,6 +127,14 @@ pub enum GenderSettingsTemplateId {
     SpawnV0025PokemonPikachuAdventureHat2020,
     #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026")]
     SpawnV0025PokemonPikachuAnniversary2026,
+    #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026_MALAYSIA_01")]
+    SpawnV0025PokemonPikachuAnniversary2026Malaysia01,
+    #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026_PHILIPPINE_01")]
+    SpawnV0025PokemonPikachuAnniversary2026Philippine01,
+    #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026_SINGAPORE_01")]
+    SpawnV0025PokemonPikachuAnniversary2026Singapore01,
+    #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026_TAIWAN_01")]
+    SpawnV0025PokemonPikachuAnniversary2026Taiwan01,
     #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_BB_2026")]
     SpawnV0025PokemonPikachuBb2026,
     #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_COPY_2019")]

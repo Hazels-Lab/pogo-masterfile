@@ -863,6 +863,8 @@ pub enum StickerMetadataTemplateId {
     StickerPokemonchatpals204,
     #[serde(rename = "STICKER_POKEMONCHATPALS2_40")]
     StickerPokemonchatpals240,
+    #[serde(rename = "STICKER_POKEXCITING_TURQOISE")]
+    StickerPokexcitingTurqoise,
     #[serde(rename = "STICKER_POKOPIA_BULBASAUR")]
     StickerPokopiaBulbasaur,
     #[serde(rename = "STICKER_POKOPIA_PIKACHU")]

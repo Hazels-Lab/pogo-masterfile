@@ -2909,7 +2909,7 @@ pub struct VnextBattleConfig {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct VsSeekerClientSettings {
-    pub allowed_vs_seeker_league_template_id: [String; 3],
+    pub allowed_vs_seeker_league_template_id: [String; 4],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -3022,6 +3022,8 @@ crate::masterfile_entry!(AddressablePokemonSettingsEntry, AddressablePokemonSett
 crate::masterfile_entry!(AddressBookImportSettingsEntry, AddressBookImportSettingsEntryData, address_book_import_settings: AddressBookImportSettings);
 
 crate::masterfile_entry!(AdvancedSettingsEntry, AdvancedSettingsEntryData, advanced_settings: AdvancedSettings);
+
+crate::masterfile_stub_entry!(ArBackendSettingsEntry, ArBackendSettingsEntryData);
 
 crate::masterfile_entry!(ArPhotoFeatureFlagsEntry, ArPhotoFeatureFlagsEntryData, ar_photo_feature_flags: ArPhotoFeatureFlags);
 

@@ -56,6 +56,13 @@ export interface AdvancedSettings {
 	};
 }
 
+export interface ArBackendSettings {
+	templateId: "AR_BACKEND_SETTINGS";
+	data: {
+		templateId: "AR_BACKEND_SETTINGS";
+	};
+}
+
 export interface ArTelemetrySettings {
 	templateId: "AR_TELEMETRY_SETTINGS";
 	data: {
@@ -6057,7 +6064,8 @@ export interface VsSeekerClientSettings {
 		vsSeekerClientSettings: {
 			allowedVsSeekerLeagueTemplateId: [
 				"COMBAT_LEAGUE_VS_SEEKER_GREAT",
-				"COMBAT_LEAGUE_VS_SEEKER_GREAT_SCROLL",
+				"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
+				"COMBAT_LEAGUE_VS_SEEKER_MASTER",
 				"COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIPS_LEGACY",
 			];
 		};
@@ -6287,6 +6295,7 @@ export type SingletonsSettingsMasterfileEntry =
 	| AddressablePokemonSettings
 	| AddressBookImportSettings
 	| AdvancedSettings
+	| ArBackendSettings
 	| ArTelemetrySettings
 	| BackgroundModeSettings
 	| BattleAnimationSettings
