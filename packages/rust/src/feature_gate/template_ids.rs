@@ -19,6 +19,8 @@ pub enum FeatureGateTemplateId {
     EnablePvpChallengeSpannerFeatureGate,
     #[serde(rename = "ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE")]
     EnhancedCurrencyOverflowStardustFeatureGate,
+    #[serde(rename = "ENHANCED_MEGA_RAID_READY_CHECK_FEATURE_GATE")]
+    EnhancedMegaRaidReadyCheckFeatureGate,
     #[serde(rename = "EVENT_LIST_FEATURE_GATE")]
     EventListFeatureGate,
     #[serde(rename = "EVENT_PASS_BONUS_RANKS_FEATURE_GATE")]
@@ -45,12 +47,18 @@ pub enum FeatureGateTemplateId {
     MepEggReadMigrationFeatureGate,
     #[serde(rename = "MEP_EGG_WRITE_MIGRATION_FEATURE_GATE")]
     MepEggWriteMigrationFeatureGate,
+    #[serde(rename = "PRELOADED_MEGA_STATUS_STRING_FEATURE_GATE")]
+    PreloadedMegaStatusStringFeatureGate,
     #[serde(rename = "REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE")]
     RemoteTradeImprovementsFeatureGate,
     #[serde(rename = "SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE")]
     SeafGetMapObjectsRateLimiterFeatureGate,
+    #[serde(rename = "SHIELD_BREAK_POWER_DISPLAY_FEATURE_GATE")]
+    ShieldBreakPowerDisplayFeatureGate,
     #[serde(rename = "UPDATE_TICKETS_STRING_FEATURE_GATE")]
     UpdateTicketsStringFeatureGate,
+    #[serde(rename = "UPDATED_PRELOADED_MEGA_ANIMATION_FEATURE_GATE")]
+    UpdatedPreloadedMegaAnimationFeatureGate,
     #[serde(rename = "VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE")]
     VnextPreResponseInputBlockingBehaviorFeatureGate,
 }

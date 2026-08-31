@@ -934,7 +934,7 @@ pub struct CombatCompetitiveSeasonSettings {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct CombatLeagueSettings {
-    pub combat_league_template_id: [String; 4],
+    pub combat_league_template_id: [String; 3],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2875,7 +2875,6 @@ pub struct VistaGeneralSettings {
     pub is_vista_encounter_enabled: bool,
     pub is_vista_map_enabled: bool,
     pub is_vista_spawns_enabled: bool,
-    pub theme_override: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2909,7 +2908,7 @@ pub struct VnextBattleConfig {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct VsSeekerClientSettings {
-    pub allowed_vs_seeker_league_template_id: [String; 4],
+    pub allowed_vs_seeker_league_template_id: [String; 3],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

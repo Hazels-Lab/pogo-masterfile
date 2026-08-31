@@ -7,6 +7,7 @@ import type {
 	FeatureGateCombatSuppressFastMovePredictionsOnSwap,
 	FeatureGateEnablePvpChallengeSpanner,
 	FeatureGateEnhancedCurrencyOverflowStardust,
+	FeatureGateEnhancedMegaRaidReadyCheck,
 	FeatureGateEventList,
 	FeatureGateEventPassBonusRanks,
 	FeatureGateEventPassClaimableRewardToggle,
@@ -20,8 +21,11 @@ import type {
 	FeatureGateMega2026,
 	FeatureGateMepEggReadMigration,
 	FeatureGateMepEggWriteMigration,
+	FeatureGatePreloadedMegaStatusString,
 	FeatureGateRemoteTradeImprovements,
 	FeatureGateSeafGetMapObjectsRateLimiter,
+	FeatureGateShieldBreakPowerDisplay,
+	FeatureGateUpdatedPreloadedMegaAnimation,
 	FeatureGateUpdateTicketsString,
 	FeatureGateVnextPreResponseInputBlockingBehavior,
 } from "./entries";
@@ -33,6 +37,7 @@ export interface FeatureGateLookup {
 	COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE: FeatureGateCombatSuppressFastMovePredictionsOnSwap;
 	ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE: FeatureGateEnablePvpChallengeSpanner;
 	ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE: FeatureGateEnhancedCurrencyOverflowStardust;
+	ENHANCED_MEGA_RAID_READY_CHECK_FEATURE_GATE: FeatureGateEnhancedMegaRaidReadyCheck;
 	EVENT_LIST_FEATURE_GATE: FeatureGateEventList;
 	EVENT_PASS_BONUS_RANKS_FEATURE_GATE: FeatureGateEventPassBonusRanks;
 	EVENT_PASS_CLAIMABLE_REWARD_TOGGLE_FEATURE_GATE: FeatureGateEventPassClaimableRewardToggle;
@@ -46,8 +51,11 @@ export interface FeatureGateLookup {
 	MEGA_2026_FEATURE_GATE: FeatureGateMega2026;
 	MEP_EGG_READ_MIGRATION_FEATURE_GATE: FeatureGateMepEggReadMigration;
 	MEP_EGG_WRITE_MIGRATION_FEATURE_GATE: FeatureGateMepEggWriteMigration;
+	PRELOADED_MEGA_STATUS_STRING_FEATURE_GATE: FeatureGatePreloadedMegaStatusString;
 	REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE: FeatureGateRemoteTradeImprovements;
 	SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE: FeatureGateSeafGetMapObjectsRateLimiter;
+	SHIELD_BREAK_POWER_DISPLAY_FEATURE_GATE: FeatureGateShieldBreakPowerDisplay;
 	UPDATE_TICKETS_STRING_FEATURE_GATE: FeatureGateUpdateTicketsString;
+	UPDATED_PRELOADED_MEGA_ANIMATION_FEATURE_GATE: FeatureGateUpdatedPreloadedMegaAnimation;
 	VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE: FeatureGateVnextPreResponseInputBlockingBehavior;
 }

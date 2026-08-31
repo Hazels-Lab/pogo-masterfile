@@ -283,7 +283,7 @@ export interface BreadBattleClientSettings {
 			maxPlayersPerBreadDoughLobby: 100;
 			maxPlayersPerBreadLobby: 4;
 			maxPlayersToPrepareBreadDoughLobby: 98;
-			maxRemoteBreadBattlePassesAllowed: 10;
+			maxRemoteBreadBattlePassesAllowed: 30;
 			maxRemotePlayersPerBreadDoughLobby: 100;
 			maxRemotePlayersPerBreadLobby: 4;
 			minPlayersToPrepareBreadLobby: 1;
@@ -2481,12 +2481,7 @@ export interface CombatLeagueSettings {
 	data: {
 		templateId: "COMBAT_LEAGUE_SETTINGS";
 		combatLeagueSettings: {
-			combatLeagueTemplateId: [
-				"COMBAT_LEAGUE_DEFAULT_GREAT",
-				"COMBAT_LEAGUE_DEFAULT_ULTRA",
-				"COMBAT_LEAGUE_DEFAULT_MASTER",
-				"COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIPS_LEGACY",
-			];
+			combatLeagueTemplateId: ["COMBAT_LEAGUE_DEFAULT_GREAT", "COMBAT_LEAGUE_DEFAULT_ULTRA", "COMBAT_LEAGUE_DEFAULT_MASTER"];
 		};
 	};
 }
@@ -5742,7 +5737,7 @@ export interface SquashSettings {
 	data: {
 		templateId: "REMOTE_RAID_LIMIT_SETTINGS";
 		squashSettings: {
-			dailySquashLimit: 10;
+			dailySquashLimit: 30;
 			enabled: true;
 		};
 	};
@@ -6052,7 +6047,6 @@ export interface VistaGeneralSettings {
 			isVistaEncounterEnabled: true;
 			isVistaMapEnabled: true;
 			isVistaSpawnsEnabled: true;
-			themeOverride: "WCS";
 		};
 	};
 }
@@ -6062,12 +6056,7 @@ export interface VsSeekerClientSettings {
 	data: {
 		templateId: "VS_SEEKER_CLIENT_SETTINGS";
 		vsSeekerClientSettings: {
-			allowedVsSeekerLeagueTemplateId: [
-				"COMBAT_LEAGUE_VS_SEEKER_GREAT",
-				"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
-				"COMBAT_LEAGUE_VS_SEEKER_MASTER",
-				"COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIPS_LEGACY",
-			];
+			allowedVsSeekerLeagueTemplateId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_MASTER"];
 		};
 	};
 }

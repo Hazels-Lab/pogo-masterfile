@@ -4,6 +4,7 @@ package vs_seeker_pokemon_rewards
 
 type VsSeekerPokemonRewardsRange struct {
 	Max uint64 `json:"max"`
+	Min uint64 `json:"min"`
 }
 
 type VsSeekerPokemonRewardsAttackIvOverride struct {
@@ -53,23 +54,6 @@ type VsSeekerPokemonRewardsAvailablePokemonV3 struct {
 	Pokemon           VsSeekerPokemonRewardsPokemon          `json:"pokemon"`
 	StaminaIvOverride VsSeekerPokemonRewardsAttackIvOverride `json:"staminaIvOverride"`
 	UnlockedAtRank    uint64                                 `json:"unlockedAtRank"`
-}
-
-type VsSeekerPokemonRewardsRangeV2 struct {
-	Max uint64 `json:"max"`
-	Min uint64 `json:"min"`
-}
-
-type VsSeekerPokemonRewardsAttackIvOverrideV2 struct {
-	Range VsSeekerPokemonRewardsRangeV2 `json:"range"`
-}
-
-type VsSeekerPokemonRewardsAvailablePokemonV4 struct {
-	AttackIvOverride  VsSeekerPokemonRewardsAttackIvOverrideV2 `json:"attackIvOverride"`
-	DefenseIvOverride VsSeekerPokemonRewardsAttackIvOverrideV2 `json:"defenseIvOverride"`
-	Pokemon           VsSeekerPokemonRewardsPokemon            `json:"pokemon"`
-	StaminaIvOverride VsSeekerPokemonRewardsAttackIvOverrideV2 `json:"staminaIvOverride"`
-	UnlockedAtRank    uint64                                   `json:"unlockedAtRank"`
 }
 
 type VsSeekerPokemonRewards struct {

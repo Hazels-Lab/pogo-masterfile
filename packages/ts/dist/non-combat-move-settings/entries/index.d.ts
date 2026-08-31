@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "nonCombatMoveSettings", 9 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "nonCombatMoveSettings", 11 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { NonCombatMoveSettings } from "../types";
@@ -201,6 +201,34 @@ export type NonCombatMoveSettingsV0482MoveDynamaxCannon = S<
 		}
 	>
 >;
+export type NonCombatMoveSettingsVmMoveTempEvolutionMegaXV0150PokemonMewtwo = S<
+	NonCombatMoveSettings<
+		"NON_COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO",
+		{
+			bonusEffect: object;
+			bonusType: 10;
+			cost: {
+				candyCost: 5;
+			};
+			durationMs: "600000";
+			uniqueId: "TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO";
+		}
+	>
+>;
+export type NonCombatMoveSettingsVmMoveTempEvolutionMegaYV0150PokemonMewtwo = S<
+	NonCombatMoveSettings<
+		"NON_COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_Y_V0150_POKEMON_MEWTWO",
+		{
+			bonusEffect: object;
+			bonusType: 11;
+			cost: {
+				candyCost: 5;
+			};
+			durationMs: "720000";
+			uniqueId: "TEMP_EVOLUTION_MEGA_Y_V0150_POKEMON_MEWTWO";
+		}
+	>
+>;
 
 export type NonCombatMoveSettingsMasterfileEntry =
 	| NonCombatMoveSettingsV0388MoveSpacialRend
@@ -211,6 +239,8 @@ export type NonCombatMoveSettingsMasterfileEntry =
 	| NonCombatMoveSettingsV0467MoveIceBurn
 	| NonCombatMoveSettingsV0469MoveBehemothBlade
 	| NonCombatMoveSettingsV0470MoveBehemothBash
-	| NonCombatMoveSettingsV0482MoveDynamaxCannon;
+	| NonCombatMoveSettingsV0482MoveDynamaxCannon
+	| NonCombatMoveSettingsVmMoveTempEvolutionMegaXV0150PokemonMewtwo
+	| NonCombatMoveSettingsVmMoveTempEvolutionMegaYV0150PokemonMewtwo;
 
 export type NonCombatMoveSettingsTemplateID = NonCombatMoveSettingsMasterfileEntry["templateId"];

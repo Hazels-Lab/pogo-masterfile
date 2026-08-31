@@ -2,6 +2,8 @@
 
 package non_combat_move_settings
 
+import "encoding/json"
+
 type NonCombatMoveSettingsAttributes struct {
 	AttackMultiplier  *float64  `json:"attackMultiplier,omitempty"`
 	CombatTypes       [1]string `json:"combatTypes"`
@@ -54,13 +56,13 @@ type NonCombatMoveSettingsBonusEffect struct {
 }
 
 type NonCombatMoveSettingsCost struct {
-	CandyCost    uint64 `json:"candyCost"`
-	StardustCost uint64 `json:"stardustCost"`
+	CandyCost    uint64  `json:"candyCost"`
+	StardustCost *uint64 `json:"stardustCost,omitempty"`
 }
 
 type NonCombatMoveSettings struct {
 	BonusEffect         NonCombatMoveSettingsBonusEffect `json:"bonusEffect"`
-	BonusType           string                           `json:"bonusType"`
+	BonusType           json.RawMessage                  `json:"bonusType"`
 	Cost                NonCombatMoveSettingsCost        `json:"cost"`
 	DurationMs          string                           `json:"durationMs"`
 	EnableMultiUse      bool                             `json:"enableMultiUse"`

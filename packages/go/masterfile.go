@@ -287,14 +287,14 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "itemExpirationSettings":
-		var e item_expiration_settings.ItemExpirationSettingsEntry
+	case "featureGate":
+		var e feature_gate.FeatureGateEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
 		return e, nil
-	case "featureGate":
-		var e feature_gate.FeatureGateEntry
+	case "itemExpirationSettings":
+		var e item_expiration_settings.ItemExpirationSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -323,6 +323,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
+	case "nonCombatMoveSettings":
+		var e non_combat_move_settings.NonCombatMoveSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
 	case "recommendedSearchSettings":
 		var e recommended_search_settings.RecommendedSearchSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -331,12 +337,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "combatNpcTrainer":
 		var e combat_npc_trainer.CombatNpcTrainerEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
-	case "nonCombatMoveSettings":
-		var e non_combat_move_settings.NonCombatMoveSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}

@@ -34,7 +34,7 @@ export interface MegaEvoLevelSettingsData {
 		sameTypeExtraCatchXp?: number;
 		selfCpBoostAdditionalLevel?: number;
 	};
-	ftueExpirationTimestamp?: "1775001600000" | "1777147462000" | "4083189477000";
+	ftueExpirationTimestamp?: "1775001600000" | "4083189477000";
 	level?: number;
 	megaEnergyCostPerPoint?: number;
 	megaEnergyCostToUnlock?: number;

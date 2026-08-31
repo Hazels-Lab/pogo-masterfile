@@ -5,15 +5,17 @@ package non_combat_move_settings
 type NonCombatMoveSettingsTemplateID string
 
 const (
-	NonCombatMoveSettingsTemplateIDNonCombatV0388MoveSpacialRend    NonCombatMoveSettingsTemplateID = "NON_COMBAT_V0388_MOVE_SPACIAL_REND"
-	NonCombatMoveSettingsTemplateIDNonCombatV0394MoveRoarOfTime     NonCombatMoveSettingsTemplateID = "NON_COMBAT_V0394_MOVE_ROAR_OF_TIME"
-	NonCombatMoveSettingsTemplateIDNonCombatV0404MoveSunsteelStrike NonCombatMoveSettingsTemplateID = "NON_COMBAT_V0404_MOVE_SUNSTEEL_STRIKE"
-	NonCombatMoveSettingsTemplateIDNonCombatV0405MoveMoongeistBeam  NonCombatMoveSettingsTemplateID = "NON_COMBAT_V0405_MOVE_MOONGEIST_BEAM"
-	NonCombatMoveSettingsTemplateIDNonCombatV0466MoveFreezeShock    NonCombatMoveSettingsTemplateID = "NON_COMBAT_V0466_MOVE_FREEZE_SHOCK"
-	NonCombatMoveSettingsTemplateIDNonCombatV0467MoveIceBurn        NonCombatMoveSettingsTemplateID = "NON_COMBAT_V0467_MOVE_ICE_BURN"
-	NonCombatMoveSettingsTemplateIDNonCombatV0469MoveBehemothBlade  NonCombatMoveSettingsTemplateID = "NON_COMBAT_V0469_MOVE_BEHEMOTH_BLADE"
-	NonCombatMoveSettingsTemplateIDNonCombatV0470MoveBehemothBash   NonCombatMoveSettingsTemplateID = "NON_COMBAT_V0470_MOVE_BEHEMOTH_BASH"
-	NonCombatMoveSettingsTemplateIDNonCombatV0482MoveDynamaxCannon  NonCombatMoveSettingsTemplateID = "NON_COMBAT_V0482_MOVE_DYNAMAX_CANNON"
+	NonCombatMoveSettingsTemplateIDNonCombatV0388MoveSpacialRend                       NonCombatMoveSettingsTemplateID = "NON_COMBAT_V0388_MOVE_SPACIAL_REND"
+	NonCombatMoveSettingsTemplateIDNonCombatV0394MoveRoarOfTime                        NonCombatMoveSettingsTemplateID = "NON_COMBAT_V0394_MOVE_ROAR_OF_TIME"
+	NonCombatMoveSettingsTemplateIDNonCombatV0404MoveSunsteelStrike                    NonCombatMoveSettingsTemplateID = "NON_COMBAT_V0404_MOVE_SUNSTEEL_STRIKE"
+	NonCombatMoveSettingsTemplateIDNonCombatV0405MoveMoongeistBeam                     NonCombatMoveSettingsTemplateID = "NON_COMBAT_V0405_MOVE_MOONGEIST_BEAM"
+	NonCombatMoveSettingsTemplateIDNonCombatV0466MoveFreezeShock                       NonCombatMoveSettingsTemplateID = "NON_COMBAT_V0466_MOVE_FREEZE_SHOCK"
+	NonCombatMoveSettingsTemplateIDNonCombatV0467MoveIceBurn                           NonCombatMoveSettingsTemplateID = "NON_COMBAT_V0467_MOVE_ICE_BURN"
+	NonCombatMoveSettingsTemplateIDNonCombatV0469MoveBehemothBlade                     NonCombatMoveSettingsTemplateID = "NON_COMBAT_V0469_MOVE_BEHEMOTH_BLADE"
+	NonCombatMoveSettingsTemplateIDNonCombatV0470MoveBehemothBash                      NonCombatMoveSettingsTemplateID = "NON_COMBAT_V0470_MOVE_BEHEMOTH_BASH"
+	NonCombatMoveSettingsTemplateIDNonCombatV0482MoveDynamaxCannon                     NonCombatMoveSettingsTemplateID = "NON_COMBAT_V0482_MOVE_DYNAMAX_CANNON"
+	NonCombatMoveSettingsTemplateIDNonCombatVmMoveTempEvolutionMegaXV0150PokemonMewtwo NonCombatMoveSettingsTemplateID = "NON_COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO"
+	NonCombatMoveSettingsTemplateIDNonCombatVmMoveTempEvolutionMegaYV0150PokemonMewtwo NonCombatMoveSettingsTemplateID = "NON_COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_Y_V0150_POKEMON_MEWTWO"
 )
 
 var NonCombatMoveSettingsTemplateIDValues = [...]NonCombatMoveSettingsTemplateID{
@@ -26,4 +28,6 @@ var NonCombatMoveSettingsTemplateIDValues = [...]NonCombatMoveSettingsTemplateID
 	NonCombatMoveSettingsTemplateIDNonCombatV0469MoveBehemothBlade,
 	NonCombatMoveSettingsTemplateIDNonCombatV0470MoveBehemothBash,
 	NonCombatMoveSettingsTemplateIDNonCombatV0482MoveDynamaxCannon,
+	NonCombatMoveSettingsTemplateIDNonCombatVmMoveTempEvolutionMegaXV0150PokemonMewtwo,
+	NonCombatMoveSettingsTemplateIDNonCombatVmMoveTempEvolutionMegaYV0150PokemonMewtwo,
 }
