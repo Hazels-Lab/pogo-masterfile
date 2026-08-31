@@ -632,7 +632,7 @@ type CombatCompetitiveSeasonSettings struct {
 }
 
 type CombatLeagueSettings struct {
-	CombatLeagueTemplateId [4]string `json:"combatLeagueTemplateId"`
+	CombatLeagueTemplateId [3]string `json:"combatLeagueTemplateId"`
 }
 
 type CombatSettingsClockSyncSettings struct {
@@ -2061,12 +2061,11 @@ type VerboseLogRaidSettings struct {
 }
 
 type VistaGeneralSettings struct {
-	IsFeatureEnabled        bool   `json:"isFeatureEnabled"`
-	IsVistaBattleEnabled    bool   `json:"isVistaBattleEnabled"`
-	IsVistaEncounterEnabled bool   `json:"isVistaEncounterEnabled"`
-	IsVistaMapEnabled       bool   `json:"isVistaMapEnabled"`
-	IsVistaSpawnsEnabled    bool   `json:"isVistaSpawnsEnabled"`
-	ThemeOverride           string `json:"themeOverride"`
+	IsFeatureEnabled        bool `json:"isFeatureEnabled"`
+	IsVistaBattleEnabled    bool `json:"isVistaBattleEnabled"`
+	IsVistaEncounterEnabled bool `json:"isVistaEncounterEnabled"`
+	IsVistaMapEnabled       bool `json:"isVistaMapEnabled"`
+	IsVistaSpawnsEnabled    bool `json:"isVistaSpawnsEnabled"`
 }
 
 type VnextBattleConfigMaxBattleConfig struct {
@@ -2092,7 +2091,7 @@ type VnextBattleConfig struct {
 }
 
 type VsSeekerClientSettings struct {
-	AllowedVsSeekerLeagueTemplateId [4]string `json:"allowedVsSeekerLeagueTemplateId"`
+	AllowedVsSeekerLeagueTemplateId [3]string `json:"allowedVsSeekerLeagueTemplateId"`
 }
 
 type VsSeekerScheduleSettingsVsSeekerSchedules struct {

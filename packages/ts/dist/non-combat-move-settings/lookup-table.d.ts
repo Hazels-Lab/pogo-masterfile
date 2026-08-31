@@ -10,6 +10,8 @@ import type {
 	NonCombatMoveSettingsV0469MoveBehemothBlade,
 	NonCombatMoveSettingsV0470MoveBehemothBash,
 	NonCombatMoveSettingsV0482MoveDynamaxCannon,
+	NonCombatMoveSettingsVmMoveTempEvolutionMegaXV0150PokemonMewtwo,
+	NonCombatMoveSettingsVmMoveTempEvolutionMegaYV0150PokemonMewtwo,
 } from "./entries";
 
 export interface NonCombatMoveSettingsLookup {
@@ -22,4 +24,6 @@ export interface NonCombatMoveSettingsLookup {
 	NON_COMBAT_V0469_MOVE_BEHEMOTH_BLADE: NonCombatMoveSettingsV0469MoveBehemothBlade;
 	NON_COMBAT_V0470_MOVE_BEHEMOTH_BASH: NonCombatMoveSettingsV0470MoveBehemothBash;
 	NON_COMBAT_V0482_MOVE_DYNAMAX_CANNON: NonCombatMoveSettingsV0482MoveDynamaxCannon;
+	NON_COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO: NonCombatMoveSettingsVmMoveTempEvolutionMegaXV0150PokemonMewtwo;
+	NON_COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_Y_V0150_POKEMON_MEWTWO: NonCombatMoveSettingsVmMoveTempEvolutionMegaYV0150PokemonMewtwo;
 }

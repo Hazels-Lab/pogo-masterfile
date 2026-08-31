@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "nonCombatMoveSettings", 9 entries (structural types).
+// Generated from Pokémon GO masterfile — group "nonCombatMoveSettings", 11 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -53,12 +53,22 @@ export interface NonCombatMoveSettingsData {
 			affectedItems: ["ITEM_INCENSE_ORDINARY", "ITEM_INCENSE_DAILY_ADVENTURE", "ITEM_STAR_PIECE", "ITEM_LUCKY_EGG"];
 		};
 	};
-	bonusType: "ATTACK_BONUS" | "DAY_BONUS" | "DEFENSE_BONUS" | "FREEZE_BONUS" | "MAX_MOVE_BONUS" | "NIGHT_BONUS" | "SLOW_BONUS" | "SPACE_BONUS" | "TIME_BONUS";
+	bonusType:
+		| number
+		| "ATTACK_BONUS"
+		| "DAY_BONUS"
+		| "DEFENSE_BONUS"
+		| "FREEZE_BONUS"
+		| "MAX_MOVE_BONUS"
+		| "NIGHT_BONUS"
+		| "SLOW_BONUS"
+		| "SPACE_BONUS"
+		| "TIME_BONUS";
 	cost: {
 		candyCost: number;
-		stardustCost: number;
+		stardustCost?: number;
 	};
-	durationMs: "360000" | "600000";
+	durationMs: "360000" | "600000" | "720000";
 	uniqueId:
 		| "BEHEMOTH_BASH"
 		| "BEHEMOTH_BLADE"
@@ -68,5 +78,7 @@ export interface NonCombatMoveSettingsData {
 		| "MOONGEIST_BEAM"
 		| "ROAR_OF_TIME"
 		| "SPACIAL_REND"
-		| "SUNSTEEL_STRIKE";
+		| "SUNSTEEL_STRIKE"
+		| "TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO"
+		| "TEMP_EVOLUTION_MEGA_Y_V0150_POKEMON_MEWTWO";
 }

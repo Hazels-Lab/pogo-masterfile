@@ -161,7 +161,7 @@ export type MegaEvoLevelSettings4V0652PokemonChesnaught = S<
 				sameTypeExtraCatchXp: 200;
 				selfCpBoostAdditionalLevel: 2;
 			};
-			ftueExpirationTimestamp: "1777147462000";
+			ftueExpirationTimestamp: "1775001600000";
 			level: 4;
 			megaEnergyCostToUnlock: 5000;
 			pokemonId: "CHESNAUGHT";
@@ -185,7 +185,7 @@ export type MegaEvoLevelSettings4V0655PokemonDelphox = S<
 				sameTypeExtraCatchXp: 200;
 				selfCpBoostAdditionalLevel: 2;
 			};
-			ftueExpirationTimestamp: "1777147462000";
+			ftueExpirationTimestamp: "1775001600000";
 			level: 4;
 			megaEnergyCostToUnlock: 5000;
 			pokemonId: "DELPHOX";
@@ -209,7 +209,7 @@ export type MegaEvoLevelSettings4V0658PokemonGreninja = S<
 				sameTypeExtraCatchXp: 200;
 				selfCpBoostAdditionalLevel: 2;
 			};
-			ftueExpirationTimestamp: "1777147462000";
+			ftueExpirationTimestamp: "1775001600000";
 			level: 4;
 			megaEnergyCostToUnlock: 5000;
 			pokemonId: "GRENINJA";

@@ -70,17 +70,24 @@ pub struct BonusEffect {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(untagged)]
+pub enum BonusTypeValue {
+    Uint(u64),
+    String(String),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct Cost {
     pub candy_cost: u64,
-    pub stardust_cost: u64,
+    pub stardust_cost: Option<u64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct NonCombatMoveSettings {
     pub bonus_effect: BonusEffect,
-    pub bonus_type: String,
+    pub bonus_type: BonusTypeValue,
     pub cost: Cost,
     pub duration_ms: String,
     pub enable_multi_use: bool,

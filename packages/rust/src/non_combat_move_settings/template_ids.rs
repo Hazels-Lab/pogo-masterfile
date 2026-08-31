@@ -25,4 +25,8 @@ pub enum NonCombatMoveSettingsTemplateId {
     NonCombatV0470MoveBehemothBash,
     #[serde(rename = "NON_COMBAT_V0482_MOVE_DYNAMAX_CANNON")]
     NonCombatV0482MoveDynamaxCannon,
+    #[serde(rename = "NON_COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO")]
+    NonCombatVmMoveTempEvolutionMegaXV0150PokemonMewtwo,
+    #[serde(rename = "NON_COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_Y_V0150_POKEMON_MEWTWO")]
+    NonCombatVmMoveTempEvolutionMegaYV0150PokemonMewtwo,
 }

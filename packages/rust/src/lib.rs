@@ -207,15 +207,15 @@ pub enum MasterfileEntry {
     PhotoSetsSettingsProto(photo_sets_settings_proto::PhotoSetsSettingsProtoEntry),
     EvolutionQuestTemplate(evolution_quest_template::EvolutionQuestTemplateEntry),
     LimitedPurchaseSkuSettings(limited_purchase_sku_settings::LimitedPurchaseSkuSettingsEntry),
-    ItemExpirationSettings(item_expiration_settings::ItemExpirationSettingsEntry),
     FeatureGate(feature_gate::FeatureGateEntry),
+    ItemExpirationSettings(item_expiration_settings::ItemExpirationSettingsEntry),
     CombatRankingProtoSettings(combat_ranking_proto_settings::CombatRankingProtoSettingsEntry),
     CombatType(combat_type::CombatTypeEntry),
     TypeEffective(type_effective::TypeEffectiveEntry),
     IapCategoryDisplay(iap_category_display::IapCategoryDisplayEntry),
+    NonCombatMoveSettings(non_combat_move_settings::NonCombatMoveSettingsEntry),
     RecommendedSearchSettings(recommended_search_settings::RecommendedSearchSettingsEntry),
     CombatNpcTrainer(combat_npc_trainer::CombatNpcTrainerEntry),
-    NonCombatMoveSettings(non_combat_move_settings::NonCombatMoveSettingsEntry),
     BuddyActivityCategorySettings(
         buddy_activity_category_settings::BuddyActivityCategorySettingsEntry,
     ),
@@ -472,23 +472,23 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "limitedPurchaseSkuSettings" => {
                     serde_json::from_value(value).map(Self::LimitedPurchaseSkuSettings)
                 }
+                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
                 "itemExpirationSettings" => {
                     serde_json::from_value(value).map(Self::ItemExpirationSettings)
                 }
-                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
                 "combatRankingProtoSettings" => {
                     serde_json::from_value(value).map(Self::CombatRankingProtoSettings)
                 }
                 "combatType" => serde_json::from_value(value).map(Self::CombatType),
                 "typeEffective" => serde_json::from_value(value).map(Self::TypeEffective),
                 "iapCategoryDisplay" => serde_json::from_value(value).map(Self::IapCategoryDisplay),
+                "nonCombatMoveSettings" => {
+                    serde_json::from_value(value).map(Self::NonCombatMoveSettings)
+                }
                 "recommendedSearchSettings" => {
                     serde_json::from_value(value).map(Self::RecommendedSearchSettings)
                 }
                 "combatNpcTrainer" => serde_json::from_value(value).map(Self::CombatNpcTrainer),
-                "nonCombatMoveSettings" => {
-                    serde_json::from_value(value).map(Self::NonCombatMoveSettings)
-                }
                 "buddyActivityCategorySettings" => {
                     serde_json::from_value(value).map(Self::BuddyActivityCategorySettings)
                 }

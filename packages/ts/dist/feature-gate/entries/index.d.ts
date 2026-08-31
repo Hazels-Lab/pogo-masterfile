@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 23 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 27 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -48,6 +48,14 @@ export type FeatureGateEnhancedCurrencyOverflowStardust = S<
 		"ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE",
 		{
 			status: 1;
+		}
+	>
+>;
+export type FeatureGateEnhancedMegaRaidReadyCheck = S<
+	FeatureGate<
+		"ENHANCED_MEGA_RAID_READY_CHECK_FEATURE_GATE",
+		{
+			status: 195735672;
 		}
 	>
 >;
@@ -197,14 +205,19 @@ export type FeatureGateMega2026 = S<
 					status: 222;
 				},
 				{
-					name: "MEGA_CP_BOOST_ENABLED_SUB_FEATURE_GATE";
-					rolloutPercentage: 100;
-					status: 368387608;
-				},
-				{
 					name: "MEGA_LEVEL_SPEEDUP_SUB_FEATURE_GATE";
 					rolloutPercentage: 100;
 					status: 344171892;
+				},
+				{
+					name: "THIRD_CHARGE_MOVE_SUB_FEATURE_GATE";
+					rolloutPercentage: 100;
+					status: 755488416;
+				},
+				{
+					name: "MEGA_COMBAT_BUTTONS_SUB_FEATURE_GATE";
+					rolloutPercentage: 100;
+					status: 276593972;
 				},
 			];
 		}
@@ -226,6 +239,14 @@ export type FeatureGateMepEggWriteMigration = S<
 		}
 	>
 >;
+export type FeatureGatePreloadedMegaStatusString = S<
+	FeatureGate<
+		"PRELOADED_MEGA_STATUS_STRING_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
 export type FeatureGateRemoteTradeImprovements = S<
 	FeatureGate<
 		"REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE",
@@ -242,11 +263,27 @@ export type FeatureGateSeafGetMapObjectsRateLimiter = S<
 		}
 	>
 >;
+export type FeatureGateShieldBreakPowerDisplay = S<
+	FeatureGate<
+		"SHIELD_BREAK_POWER_DISPLAY_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
 export type FeatureGateUpdateTicketsString = S<
 	FeatureGate<
 		"UPDATE_TICKETS_STRING_FEATURE_GATE",
 		{
 			status: 29825861;
+		}
+	>
+>;
+export type FeatureGateUpdatedPreloadedMegaAnimation = S<
+	FeatureGate<
+		"UPDATED_PRELOADED_MEGA_ANIMATION_FEATURE_GATE",
+		{
+			status: 1;
 		}
 	>
 >;
@@ -273,6 +310,7 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateCombatSuppressFastMovePredictionsOnSwap
 	| FeatureGateEnablePvpChallengeSpanner
 	| FeatureGateEnhancedCurrencyOverflowStardust
+	| FeatureGateEnhancedMegaRaidReadyCheck
 	| FeatureGateEventList
 	| FeatureGateEventPassBonusRanks
 	| FeatureGateEventPassClaimableRewardToggle
@@ -286,9 +324,12 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateMega2026
 	| FeatureGateMepEggReadMigration
 	| FeatureGateMepEggWriteMigration
+	| FeatureGatePreloadedMegaStatusString
 	| FeatureGateRemoteTradeImprovements
 	| FeatureGateSeafGetMapObjectsRateLimiter
+	| FeatureGateShieldBreakPowerDisplay
 	| FeatureGateUpdateTicketsString
+	| FeatureGateUpdatedPreloadedMegaAnimation
 	| FeatureGateVnextPreResponseInputBlockingBehavior;
 
 export type FeatureGateTemplateID = FeatureGateMasterfileEntry["templateId"];
