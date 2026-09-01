@@ -110,6 +110,7 @@ const (
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuGotour2026C02               GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_C_02"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuHorizons                    GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_HORIZONS"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuJeju                        GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_JEJU"
+	GenderSettingsTemplateIDSpawnV0025PokemonPikachuK2026A01                    GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_K_2026_A_01"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuKariyushi                   GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_KARIYUSHI"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuKurta                       GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_KURTA"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuNormal                      GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_NORMAL"
@@ -2588,6 +2589,7 @@ var GenderSettingsTemplateIDValues = [...]GenderSettingsTemplateID{
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuGotour2026C02,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuHorizons,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuJeju,
+	GenderSettingsTemplateIDSpawnV0025PokemonPikachuK2026A01,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuKariyushi,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuKurta,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuNormal,

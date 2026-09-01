@@ -9,6 +9,7 @@ export type ItemSettingsItemStarPiece = S<
 		{
 			category: "ITEM_CATEGORY_STARDUST_BOOST";
 			dropTrainerLevel: 1;
+			itemId: "ITEM_STAR_PIECE";
 			itemType: "ITEM_TYPE_STARDUST_BOOST";
 			stardustBoost: {
 				boostDurationMs: 1800000;

@@ -106,6 +106,7 @@ import type {
 	GenderSettingsV0025PokemonPikachuGotour2026C02,
 	GenderSettingsV0025PokemonPikachuHorizons,
 	GenderSettingsV0025PokemonPikachuJeju,
+	GenderSettingsV0025PokemonPikachuK2026A01,
 	GenderSettingsV0025PokemonPikachuKariyushi,
 	GenderSettingsV0025PokemonPikachuKurta,
 	GenderSettingsV0025PokemonPikachuNormal,
@@ -2584,6 +2585,7 @@ export interface GenderSettingsLookup {
 	SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_C_02: GenderSettingsV0025PokemonPikachuGotour2026C02;
 	SPAWN_V0025_POKEMON_PIKACHU_HORIZONS: GenderSettingsV0025PokemonPikachuHorizons;
 	SPAWN_V0025_POKEMON_PIKACHU_JEJU: GenderSettingsV0025PokemonPikachuJeju;
+	SPAWN_V0025_POKEMON_PIKACHU_K_2026_A_01: GenderSettingsV0025PokemonPikachuK2026A01;
 	SPAWN_V0025_POKEMON_PIKACHU_KARIYUSHI: GenderSettingsV0025PokemonPikachuKariyushi;
 	SPAWN_V0025_POKEMON_PIKACHU_KURTA: GenderSettingsV0025PokemonPikachuKurta;
 	SPAWN_V0025_POKEMON_PIKACHU_NORMAL: GenderSettingsV0025PokemonPikachuNormal;

@@ -6056,7 +6056,7 @@ export interface VsSeekerClientSettings {
 	data: {
 		templateId: "VS_SEEKER_CLIENT_SETTINGS";
 		vsSeekerClientSettings: {
-			allowedVsSeekerLeagueTemplateId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_MASTER"];
+			allowedVsSeekerLeagueTemplateId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_ULTRA_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_MASTER_MEGAS"];
 		};
 	};
 }

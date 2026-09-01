@@ -9,6 +9,7 @@ export type ItemSettingsItemTeamChange = S<
 		{
 			category: "ITEM_CATEGORY_TEAM_CHANGE";
 			dropTrainerLevel: 100;
+			itemId: "ITEM_TEAM_CHANGE";
 			itemType: "ITEM_TYPE_TEAM_CHANGE";
 		}
 	>

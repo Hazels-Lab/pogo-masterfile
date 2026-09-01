@@ -6586,10 +6586,19 @@ export type PokemonSettingsV0942PokemonMaschiff = S<
 		"V0942_POKEMON_MASCHIFF",
 		{
 			breadTierGroup: "GROUP_2";
-			camera: object;
-			cinematicMoves: ["CRUNCH", "PAYBACK", "DIG"];
+			buddyGroupNumber: 2;
+			buddyScale: 19;
+			camera: {
+				cylinderHeightM: 0.51;
+				cylinderRadiusM: 0.58;
+			};
+			cinematicMoves: ["CRUNCH", "PSYCHIC_FANGS", "DIG"];
 			encounter: {
 				attackProbability: 0.1;
+				cameraDistance: 4;
+				collisionHeadRadiusM: 0.25;
+				collisionHeightM: 0.2;
+				collisionRadiusM: 0.2;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
 				jumpTimeS: 1;
@@ -6610,10 +6619,13 @@ export type PokemonSettingsV0942PokemonMaschiff = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
+			modelHeight: 0.62;
+			modelScaleV2: 1;
 			pokedexHeightM: 0.5;
 			pokedexWeightKg: 16;
 			pokemonId: "MASCHIFF";
 			quickMoves: ["SNARL_FAST", "BITE_FAST"];
+			raidBossDistanceOffset: 2;
 			stats: {
 				baseAttack: 140;
 				baseDefense: 108;
@@ -6633,10 +6645,19 @@ export type PokemonSettingsV0942PokemonMaschiffNormal = S<
 		"V0942_POKEMON_MASCHIFF_NORMAL",
 		{
 			breadTierGroup: "GROUP_2";
-			camera: object;
-			cinematicMoves: ["CRUNCH", "PAYBACK", "DIG"];
+			buddyGroupNumber: 2;
+			buddyScale: 19;
+			camera: {
+				cylinderHeightM: 0.51;
+				cylinderRadiusM: 0.58;
+			};
+			cinematicMoves: ["CRUNCH", "PSYCHIC_FANGS", "DIG"];
 			encounter: {
 				attackProbability: 0.1;
+				cameraDistance: 4;
+				collisionHeadRadiusM: 0.25;
+				collisionHeightM: 0.2;
+				collisionRadiusM: 0.2;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
 				jumpTimeS: 1;
@@ -6659,10 +6680,13 @@ export type PokemonSettingsV0942PokemonMaschiffNormal = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
+			modelHeight: 0.62;
+			modelScaleV2: 1;
 			pokedexHeightM: 0.5;
 			pokedexWeightKg: 16;
 			pokemonId: "MASCHIFF";
 			quickMoves: ["SNARL_FAST", "BITE_FAST"];
+			raidBossDistanceOffset: 2;
 			stats: {
 				baseAttack: 140;
 				baseDefense: 108;
@@ -6682,13 +6706,22 @@ export type PokemonSettingsV0943PokemonMabosstiff = S<
 		"V0943_POKEMON_MABOSSTIFF",
 		{
 			breadTierGroup: "GROUP_2";
-			camera: object;
-			cinematicMoves: ["CRUNCH", "PAYBACK", "DIG"];
+			buddyGroupNumber: 3;
+			buddyScale: 19;
+			camera: {
+				cylinderHeightM: 1.26;
+				cylinderRadiusM: 1.08;
+			};
+			cinematicMoves: ["CRUNCH", "PSYCHIC_FANGS", "DIG"];
 			encounter: {
 				attackProbability: 0.1;
 				bonusCandyCaptureReward: 2;
 				bonusStardustCaptureReward: 200;
 				bonusXlCandyCaptureReward: 1;
+				cameraDistance: 5;
+				collisionHeadRadiusM: 0.25;
+				collisionHeightM: 0.2;
+				collisionRadiusM: 0.2;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
 				jumpTimeS: 1;
@@ -6703,11 +6736,14 @@ export type PokemonSettingsV0943PokemonMabosstiff = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
+			modelHeight: 1.38;
+			modelScaleV2: 1;
 			parentPokemonId: "MASCHIFF";
 			pokedexHeightM: 1.1;
 			pokedexWeightKg: 61;
 			pokemonId: "MABOSSTIFF";
 			quickMoves: ["SNARL_FAST", "BITE_FAST"];
+			raidBossDistanceOffset: 6;
 			stats: {
 				baseAttack: 230;
 				baseDefense: 168;
@@ -6727,13 +6763,22 @@ export type PokemonSettingsV0943PokemonMabosstiffNormal = S<
 		"V0943_POKEMON_MABOSSTIFF_NORMAL",
 		{
 			breadTierGroup: "GROUP_2";
-			camera: object;
-			cinematicMoves: ["CRUNCH", "PAYBACK", "DIG"];
+			buddyGroupNumber: 3;
+			buddyScale: 19;
+			camera: {
+				cylinderHeightM: 1.26;
+				cylinderRadiusM: 1.08;
+			};
+			cinematicMoves: ["CRUNCH", "PSYCHIC_FANGS", "DIG"];
 			encounter: {
 				attackProbability: 0.1;
 				bonusCandyCaptureReward: 2;
 				bonusStardustCaptureReward: 200;
 				bonusXlCandyCaptureReward: 1;
+				cameraDistance: 5;
+				collisionHeadRadiusM: 0.25;
+				collisionHeightM: 0.2;
+				collisionRadiusM: 0.2;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
 				jumpTimeS: 1;
@@ -6749,11 +6794,14 @@ export type PokemonSettingsV0943PokemonMabosstiffNormal = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
+			modelHeight: 1.38;
+			modelScaleV2: 1;
 			parentPokemonId: "MASCHIFF";
 			pokedexHeightM: 1.1;
 			pokedexWeightKg: 61;
 			pokemonId: "MABOSSTIFF";
 			quickMoves: ["SNARL_FAST", "BITE_FAST"];
+			raidBossDistanceOffset: 6;
 			stats: {
 				baseAttack: 230;
 				baseDefense: 168;

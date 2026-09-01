@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatLeague", split "default-great", 84 entries.
+// Generated from Pokémon GO masterfile — group "combatLeague", split "default-great", 87 entries.
 
 import type { S } from "../../_utils";
 import type { CombatLeague } from "../types";
@@ -5078,6 +5078,61 @@ export type CombatLeagueVsSeekerColorGreat = S<
 		}
 	>
 >;
+export type CombatLeagueVsSeekerColorGreatMegas = S<
+	CombatLeague<
+		"COMBAT_LEAGUE_VS_SEEKER_COLOR_GREAT_MEGAS",
+		{
+			allowTempEvos: true;
+			badgeType: "BADGE_GREAT_LEAGUE";
+			bannedPokemon: [
+				"DITTO",
+				"SHEDINJA",
+				"COBALION",
+				"TERRAKION",
+				"VIRIZION",
+				"ZEKROM",
+				"KYUREM",
+				"TAPU_KOKO",
+				"TAPU_LELE",
+				"TAPU_BULU",
+				"SOLGALEO",
+				"LUNALA",
+				"ZACIAN",
+				"ZAMAZENTA",
+				"ENAMORUS",
+				"XERNEAS",
+				"YVELTAL",
+			];
+			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
+			iconUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe5891216_MegaColorCup_icon.png";
+			leagueType: "PREMIER";
+			pokemonCondition: [
+				{
+					type: "WITH_POKEMON_CP_LIMIT";
+					withPokemonCpLimit: {
+						maxCp: 1500;
+					};
+				},
+				{
+					type: "WITH_UNIQUE_POKEMON";
+				},
+				{
+					type: "WITH_POKEMON_TYPE";
+					withPokemonType: {
+						pokemonType: ["POKEMON_TYPE_FIRE", "POKEMON_TYPE_ELECTRIC", "POKEMON_TYPE_WATER", "POKEMON_TYPE_GRASS"];
+					};
+				},
+			];
+			title: "mega_color_cup_great_title";
+			unlockCondition: [
+				{
+					minPokemonCount: 3;
+					type: "WITH_UNIQUE_POKEMON";
+				},
+			];
+		}
+	>
+>;
 export type CombatLeagueVsSeekerElementRemix = S<
 	CombatLeague<
 		"COMBAT_LEAGUE_VS_SEEKER_ELEMENT_REMIX",
@@ -9719,6 +9774,80 @@ export type CombatLeagueVsSeekerGreatCatchS22 = S<
 		}
 	>
 >;
+export type CombatLeagueVsSeekerGreatCatchS24Megas = S<
+	CombatLeague<
+		"COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S24_MEGAS",
+		{
+			allowTempEvos: true;
+			badgeType: "BADGE_GREAT_LEAGUE";
+			bannedPokemon: [
+				"DITTO",
+				"SHEDINJA",
+				"MEW",
+				"CELEBI",
+				"JIRACHI",
+				"DEOXYS",
+				"DARKRAI",
+				"VICTINI",
+				"MELOETTA",
+				"GENESECT",
+				"HOOPA",
+				"MELTAN",
+				"MELMETAL",
+				"ZARUDE",
+				"DIANCIE",
+				"SHAYMIN",
+				"KELDEO",
+				"VOLCANION",
+				"MARSHADOW",
+				"XERNEAS",
+				"YVELTAL",
+				"COBALION",
+				"TERRAKION",
+				"VIRIZION",
+				"ZEKROM",
+				"KYUREM",
+				"TAPU_KOKO",
+				"TAPU_LELE",
+				"TAPU_BULU",
+				"SOLGALEO",
+				"LUNALA",
+				"ZACIAN",
+				"ZAMAZENTA",
+				"ENAMORUS",
+				"ZERAORA",
+			];
+			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
+			iconUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fb5bc1551_MegaCatchCup_icon.png";
+			leagueType: "PREMIER";
+			pokemonCondition: [
+				{
+					type: "WITH_POKEMON_CP_LIMIT";
+					withPokemonCpLimit: {
+						maxCp: 1500;
+					};
+				},
+				{
+					type: "WITH_UNIQUE_POKEMON";
+				},
+				{
+					pokemonCaughtTimestamp: {
+						afterTimestamp: "1788897600000";
+						beforeTimestamp: "1796158800000";
+					};
+					type: "POKEMON_CAUGHT_TIMESTAMP";
+				},
+			];
+			title: "mega_catch_cup_great_title";
+			unlockCondition: [
+				{
+					minPokemonCount: 3;
+					type: "WITH_UNIQUE_POKEMON";
+				},
+			];
+		}
+	>
+>;
 export type CombatLeagueVsSeekerGreatCatchSeason11 = S<
 	CombatLeague<
 		"COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_SEASON11",
@@ -12818,6 +12947,61 @@ export type CombatLeagueVsSeekerGreatHalloweenLittle = S<
 				},
 			];
 			title: "halloween_cup_little_title";
+			unlockCondition: [
+				{
+					minPokemonCount: 3;
+					type: "WITH_UNIQUE_POKEMON";
+				},
+			];
+		}
+	>
+>;
+export type CombatLeagueVsSeekerGreatHalloweenMegas = S<
+	CombatLeague<
+		"COMBAT_LEAGUE_VS_SEEKER_GREAT_HALLOWEEN_MEGAS",
+		{
+			allowTempEvos: true;
+			badgeType: "BADGE_GREAT_LEAGUE";
+			bannedPokemon: [
+				"DITTO",
+				"SHEDINJA",
+				"COBALION",
+				"TERRAKION",
+				"VIRIZION",
+				"ZEKROM",
+				"KYUREM",
+				"TAPU_KOKO",
+				"TAPU_LELE",
+				"TAPU_BULU",
+				"SOLGALEO",
+				"LUNALA",
+				"ZACIAN",
+				"ZAMAZENTA",
+				"ENAMORUS",
+				"XERNEAS",
+				"YVELTAL",
+			];
+			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
+			iconUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F03c91055_MegaHalloweenCup_icon.png";
+			leagueType: "PREMIER";
+			pokemonCondition: [
+				{
+					type: "WITH_POKEMON_CP_LIMIT";
+					withPokemonCpLimit: {
+						maxCp: 1500;
+					};
+				},
+				{
+					type: "WITH_UNIQUE_POKEMON";
+				},
+				{
+					type: "WITH_POKEMON_TYPE";
+					withPokemonType: {
+						pokemonType: ["POKEMON_TYPE_BUG", "POKEMON_TYPE_POISON", "POKEMON_TYPE_DARK", "POKEMON_TYPE_FAIRY", "POKEMON_TYPE_GHOST"];
+					};
+				},
+			];
+			title: "mega_halloween_cup_great_title";
 			unlockCondition: [
 				{
 					minPokemonCount: 3;
@@ -22252,6 +22436,7 @@ export type CombatLeagueDefaultGreatMasterfileEntry =
 	| CombatLeagueSafariZoneTaipei202203
 	| CombatLeagueSafariZoneTaipei2022Test
 	| CombatLeagueVsSeekerColorGreat
+	| CombatLeagueVsSeekerColorGreatMegas
 	| CombatLeagueVsSeekerElementRemix
 	| CombatLeagueVsSeekerEvolution
 	| CombatLeagueVsSeekerGalarGreat
@@ -22269,6 +22454,7 @@ export type CombatLeagueDefaultGreatMasterfileEntry =
 	| CombatLeagueVsSeekerGreatCatchS19
 	| CombatLeagueVsSeekerGreatCatchS20
 	| CombatLeagueVsSeekerGreatCatchS22
+	| CombatLeagueVsSeekerGreatCatchS24Megas
 	| CombatLeagueVsSeekerGreatCatchSeason11
 	| CombatLeagueVsSeekerGreatChampionshipNaic
 	| CombatLeagueVsSeekerGreatChampionshipSeries
@@ -22282,6 +22468,7 @@ export type CombatLeagueDefaultGreatMasterfileEntry =
 	| CombatLeagueVsSeekerGreatFossil
 	| CombatLeagueVsSeekerGreatHalloween
 	| CombatLeagueVsSeekerGreatHalloweenLittle
+	| CombatLeagueVsSeekerGreatHalloweenMegas
 	| CombatLeagueVsSeekerGreatHisui
 	| CombatLeagueVsSeekerGreatHoenn
 	| CombatLeagueVsSeekerGreatHoliday

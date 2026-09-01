@@ -217,6 +217,8 @@ pub enum PokemonExtendedSettingsTemplateId {
     ExtendedV0025PokemonPikachuHorizons,
     #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_JEJU")]
     ExtendedV0025PokemonPikachuJeju,
+    #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_K_2026_A_01")]
+    ExtendedV0025PokemonPikachuK2026A01,
     #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_KARIYUSHI")]
     ExtendedV0025PokemonPikachuKariyushi,
     #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_KURTA")]

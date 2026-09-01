@@ -32,6 +32,7 @@ const (
 	FeatureGateTemplateIDUpdateTicketsStringFeatureGate                     FeatureGateTemplateID = "UPDATE_TICKETS_STRING_FEATURE_GATE"
 	FeatureGateTemplateIDUpdatedPreloadedMegaAnimationFeatureGate           FeatureGateTemplateID = "UPDATED_PRELOADED_MEGA_ANIMATION_FEATURE_GATE"
 	FeatureGateTemplateIDVnextPreResponseInputBlockingBehaviorFeatureGate   FeatureGateTemplateID = "VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE"
+	FeatureGateTemplateIDWayfarerSubmitLinkoutFeatureGate                   FeatureGateTemplateID = "WAYFARER_SUBMIT_LINKOUT_FEATURE_GATE"
 )
 
 var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
@@ -62,4 +63,5 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDUpdateTicketsStringFeatureGate,
 	FeatureGateTemplateIDUpdatedPreloadedMegaAnimationFeatureGate,
 	FeatureGateTemplateIDVnextPreResponseInputBlockingBehaviorFeatureGate,
+	FeatureGateTemplateIDWayfarerSubmitLinkoutFeatureGate,
 }

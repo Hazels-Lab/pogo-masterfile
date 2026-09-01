@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonFamily", split "mega-evolvable-pokemon-ids", 4 entries.
+// Generated from Pokémon GO masterfile — group "pokemonFamily", split "mega-evolvable-pokemon-ids", 5 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonFamily } from "../types";
@@ -39,9 +39,19 @@ export type PokemonFamilyV0280FamilyRalts = S<
 		}
 	>
 >;
+export type PokemonFamilyV0396FamilyStarly = S<
+	PokemonFamily<
+		"V0396_FAMILY_STARLY",
+		{
+			familyId: "FAMILY_STARLY";
+			megaEvolvablePokemonIds: ["STARAPTOR"];
+		}
+	>
+>;
 
 export type PokemonFamilyMegaEvolvablePokemonIdsMasterfileEntry =
 	| PokemonFamilyV0004FamilyCharmander
 	| PokemonFamilyV0025FamilyPikachu
 	| PokemonFamilyV0150FamilyMewtwo
-	| PokemonFamilyV0280FamilyRalts;
+	| PokemonFamilyV0280FamilyRalts
+	| PokemonFamilyV0396FamilyStarly;

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 27 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 28 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -302,6 +302,14 @@ export type FeatureGateVnextPreResponseInputBlockingBehavior = S<
 		}
 	>
 >;
+export type FeatureGateWayfarerSubmitLinkout = S<
+	FeatureGate<
+		"WAYFARER_SUBMIT_LINKOUT_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
 
 export type FeatureGateMasterfileEntry =
 	| FeatureGateAdminGmNiaOpsOnlyFilterAms
@@ -330,6 +338,7 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateShieldBreakPowerDisplay
 	| FeatureGateUpdateTicketsString
 	| FeatureGateUpdatedPreloadedMegaAnimation
-	| FeatureGateVnextPreResponseInputBlockingBehavior;
+	| FeatureGateVnextPreResponseInputBlockingBehavior
+	| FeatureGateWayfarerSubmitLinkout;
 
 export type FeatureGateTemplateID = FeatureGateMasterfileEntry["templateId"];

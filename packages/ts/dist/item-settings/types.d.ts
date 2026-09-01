@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", 162 entries (structural types).
+// Generated from Pokémon GO masterfile — group "itemSettings", 164 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -6,9 +6,7 @@ export interface ItemSettings<TemplateID extends string = string, TData extends 
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;
-		itemSettings: TData & {
-			itemId: TemplateID;
-		};
+		itemSettings: TData;
 	};
 }
 export type ItemSettingsType = W<ItemSettings>;
@@ -71,6 +69,7 @@ export interface ItemSettingsData {
 		| "item_event_ticket_pink_details_CD_Nickit26"
 		| "item_event_ticket_pink_details_CD_Sobble26"
 		| "item_event_ticket_pink_details_CDC_Deino26"
+		| "item_event_ticket_pink_details_CDC_Gible26"
 		| "item_event_ticket_pink_details_MegaRayquaza26"
 		| "item_event_ticket_pink_details_WaterRRD26"
 		| "item_global_event_ticket_details_GOTour2026"
@@ -178,6 +177,7 @@ export interface ItemSettingsData {
 			| "1785603600000"
 			| "1786899600000"
 			| "1787418000000"
+			| "1789232400000"
 			| "1790071200000";
 		clientEventStartTimeUtcMs:
 			| "1696845600000"
@@ -207,7 +207,8 @@ export interface ItemSettingsData {
 			| "1785592800000"
 			| "1786888800000"
 			| "1787396400000"
-			| "1788872400000";
+			| "1788872400000"
+			| "1789221600000";
 		conflictStoryQuestIds?: ["RERUN_MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER", "MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER"];
 		detailsLinkKey?:
 			| "details_link_key"
@@ -258,6 +259,7 @@ export interface ItemSettingsData {
 			| "event_datetime_range_key_CD_Nickit26"
 			| "event_datetime_range_key_CD_Sobble26"
 			| "event_datetime_range_key_CDC_Deino26"
+			| "event_datetime_range_key_CDC_Gible26"
 			| "event_datetime_range_key_ENTEI_SHADOW_RAID_DAY"
 			| "event_datetime_range_key_fashionRaidDay_s22"
 			| "event_datetime_range_key_FinalJustice2025"
@@ -301,6 +303,7 @@ export interface ItemSettingsData {
 			| "2026-08-01T17:00:00"
 			| "2026-08-16T17:00:00"
 			| "2026-08-22T17:00:00"
+			| "2026-09-12T17:00:00"
 			| "2026-09-22T10:00:00";
 		eventStartTime:
 			| "2023-10-09T10:00:00"
@@ -330,9 +333,11 @@ export interface ItemSettingsData {
 			| "2026-08-01T14:00:00"
 			| "2026-08-16T14:00:00"
 			| "2026-08-22T11:00:00"
-			| "2026-09-08T13:00:00";
+			| "2026-09-08T13:00:00"
+			| "2026-09-12T14:00:00";
 		giftable?: boolean;
 		giftItem?:
+			| number
 			| "ITEM_EVENT_TICKET_02_TO_GIFT"
 			| "ITEM_EVENT_TICKET_03_TO_GIFT"
 			| "ITEM_EVENT_TICKET_04_TO_GIFT"
@@ -391,6 +396,7 @@ export interface ItemSettingsData {
 						| "DIANCIE_NORMAL"
 						| "DIGLETT_NORMAL"
 						| "FEEBAS_NORMAL"
+						| "GARCHOMP_NORMAL"
 						| "GIMMIGHOUL_COIN_A2_2026"
 						| "GLIMMET_NORMAL"
 						| "HYDREIGON_NORMAL"
@@ -411,6 +417,7 @@ export interface ItemSettingsData {
 					| "DIANCIE"
 					| "DIGLETT"
 					| "FEEBAS"
+					| "GARCHOMP"
 					| "GIMMIGHOUL"
 					| "GLIMMET"
 					| "HYDREIGON"
@@ -457,6 +464,7 @@ export interface ItemSettingsData {
 			| "item_event_ticket_pink_desc_CD_Nickit26"
 			| "item_event_ticket_pink_desc_CD_Sobble26"
 			| "item_event_ticket_pink_desc_CDC_Deino26"
+			| "item_event_ticket_pink_desc_CDC_Gible26"
 			| "item_event_ticket_pink_desc_MegaRayquaza26"
 			| "item_event_ticket_pink_desc_WaterRRD26"
 			| "item_event_ticket_pink_details_MegaRayquaza26"
@@ -471,6 +479,7 @@ export interface ItemSettingsData {
 			| "text_rewards_key_CD_Nickit26"
 			| "text_rewards_key_CD_Sobble26"
 			| "text_rewards_key_CDC_Deino26"
+			| "text_rewards_key_CDC_Gible26"
 			| "text_rewards_key_ENTEI_SHADOW_RAID_DAY"
 			| "text_rewards_key_fashionRaidDay26"
 			| "text_rewards_key_FinalJustice2025"
@@ -489,6 +498,7 @@ export interface ItemSettingsData {
 			| "text_rewards_key_StarmieRaidDay"
 			| "text_rewards_key_WaterRRD26";
 		ticketItem?:
+			| number
 			| "ITEM_EVENT_TICKET_02"
 			| "ITEM_EVENT_TICKET_03"
 			| "ITEM_EVENT_TICKET_04"
@@ -509,7 +519,9 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S23_2026_12"
 			| "ITEM_EVERGREEN_TICKET"
 			| "ITEM_GLOBAL_EVENT_TICKET";
-		titleImageUrl?: "https://storage.googleapis.com/prod-public-images/gotourlogo_1914247967.png";
+		titleImageUrl?:
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fdaa6a9dd_PGO_MCS_CD_Classic_KeyArt_Gible_v1-1024x576.jpg"
+			| "https://storage.googleapis.com/prod-public-images/gotourlogo_1914247967.png";
 	};
 	hideItemInInventory?: boolean;
 	ignoreInventorySpace?: boolean;
@@ -527,6 +539,7 @@ export interface ItemSettingsData {
 		upgradeType: "INCREASE_ITEM_STORAGE" | "INCREASE_POKEMON_STORAGE" | "INCREASE_POSTCARD_STORAGE";
 	};
 	itemCap?: number;
+	itemId: number | string;
 	itemType:
 		| "ITEM_TYPE_BATTLE"
 		| "ITEM_TYPE_BREAKFAST"
@@ -565,6 +578,7 @@ export interface ItemSettingsData {
 		| "general1.ticket_CD_Nickit26_title"
 		| "general1.ticket_CD_Sobble26_title"
 		| "general1.ticket_CDC_Deino26_title"
+		| "general1.ticket_CDC_Gible26_title"
 		| "general1.ticket._GOWA2024GSBEA_title"
 		| "general1.ticket.1_10THPARTY0726_title"
 		| "general1.ticket.2_MegaRayquaza_title"

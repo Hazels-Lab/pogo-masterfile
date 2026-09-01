@@ -149,6 +149,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
+	case "eventPassTierSettings":
+		var e event_pass_tier_settings.EventPassTierSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
 	case "iapItemDisplay":
 		var e iap_item_display.IapItemDisplayEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -169,12 +175,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "stickerMetadata":
 		var e sticker_metadata.StickerMetadataEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
-	case "eventPassTierSettings":
-		var e event_pass_tier_settings.EventPassTierSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -359,6 +359,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
+	case "codeGateProto":
+		var e code_gate_proto.CodeGateProtoEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
 	case "pokemonHomeFormReversions":
 		var e pokemon_home_form_reversions.PokemonHomeFormReversionsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -373,12 +379,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "weatherAffinities":
 		var e weather_affinities.WeatherAffinitiesEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
-	case "codeGateProto":
-		var e code_gate_proto.CodeGateProtoEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}

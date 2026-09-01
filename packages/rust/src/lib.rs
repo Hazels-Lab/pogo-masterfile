@@ -182,11 +182,11 @@ pub enum MasterfileEntry {
     PokemonSettings(pokemon_settings::PokemonSettingsEntry),
     AvatarCustomization(avatar_customization::AvatarCustomizationEntry),
     AvatarItemDisplay(avatar_item_display::AvatarItemDisplayEntry),
+    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     IapItemDisplay(iap_item_display::IapItemDisplayEntry),
     FormSettings(form_settings::FormSettingsEntry),
     BadgeSettings(badge_settings::BadgeSettingsEntry),
     StickerMetadata(sticker_metadata::StickerMetadataEntry),
-    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     PokemonFamily(pokemon_family::PokemonFamilyEntry),
     MoveSettings(move_settings::MoveSettingsEntry),
     CombatMove(combat_move::CombatMoveEntry),
@@ -221,12 +221,12 @@ pub enum MasterfileEntry {
     ),
     BreadMoveLevelSettings(bread_move_level_settings::BreadMoveLevelSettingsEntry),
     BuddyEmotionLevelSettings(buddy_emotion_level_settings::BuddyEmotionLevelSettingsEntry),
+    CodeGateProto(code_gate_proto::CodeGateProtoEntry),
     PokemonHomeFormReversions(pokemon_home_form_reversions::PokemonHomeFormReversionsEntry),
     PokestopInvasionAvailabilitySettings(
         pokestop_invasion_availability_settings::PokestopInvasionAvailabilitySettingsEntry,
     ),
     WeatherAffinities(weather_affinities::WeatherAffinitiesEntry),
-    CodeGateProto(code_gate_proto::CodeGateProtoEntry),
     FriendshipMilestoneSettings(friendship_milestone_settings::FriendshipMilestoneSettingsEntry),
     PokemonScaleSettings(pokemon_scale_settings::PokemonScaleSettingsEntry),
     BuddyLevelSettings(buddy_level_settings::BuddyLevelSettingsEntry),
@@ -425,13 +425,13 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::AvatarCustomization)
                 }
                 "avatarItemDisplay" => serde_json::from_value(value).map(Self::AvatarItemDisplay),
+                "eventPassTierSettings" => {
+                    serde_json::from_value(value).map(Self::EventPassTierSettings)
+                }
                 "iapItemDisplay" => serde_json::from_value(value).map(Self::IapItemDisplay),
                 "formSettings" => serde_json::from_value(value).map(Self::FormSettings),
                 "badgeSettings" => serde_json::from_value(value).map(Self::BadgeSettings),
                 "stickerMetadata" => serde_json::from_value(value).map(Self::StickerMetadata),
-                "eventPassTierSettings" => {
-                    serde_json::from_value(value).map(Self::EventPassTierSettings)
-                }
                 "pokemonFamily" => serde_json::from_value(value).map(Self::PokemonFamily),
                 "moveSettings" => serde_json::from_value(value).map(Self::MoveSettings),
                 "combatMove" => serde_json::from_value(value).map(Self::CombatMove),
@@ -498,6 +498,7 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "buddyEmotionLevelSettings" => {
                     serde_json::from_value(value).map(Self::BuddyEmotionLevelSettings)
                 }
+                "codeGateProto" => serde_json::from_value(value).map(Self::CodeGateProto),
                 "pokemonHomeFormReversions" => {
                     serde_json::from_value(value).map(Self::PokemonHomeFormReversions)
                 }
@@ -505,7 +506,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::PokestopInvasionAvailabilitySettings)
                 }
                 "weatherAffinities" => serde_json::from_value(value).map(Self::WeatherAffinities),
-                "codeGateProto" => serde_json::from_value(value).map(Self::CodeGateProto),
                 "friendshipMilestoneSettings" => {
                     serde_json::from_value(value).map(Self::FriendshipMilestoneSettings)
                 }

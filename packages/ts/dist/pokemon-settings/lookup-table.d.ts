@@ -106,6 +106,7 @@ import type {
 	PokemonSettingsV0025PokemonPikachuGotour2026C02,
 	PokemonSettingsV0025PokemonPikachuHorizons,
 	PokemonSettingsV0025PokemonPikachuJeju,
+	PokemonSettingsV0025PokemonPikachuK2026A01,
 	PokemonSettingsV0025PokemonPikachuKariyushi,
 	PokemonSettingsV0025PokemonPikachuKurta,
 	PokemonSettingsV0025PokemonPikachuNormal,
@@ -2581,6 +2582,7 @@ export interface PokemonSettingsLookup {
 	V0025_POKEMON_PIKACHU_GOTOUR_2026_C_02: PokemonSettingsV0025PokemonPikachuGotour2026C02;
 	V0025_POKEMON_PIKACHU_HORIZONS: PokemonSettingsV0025PokemonPikachuHorizons;
 	V0025_POKEMON_PIKACHU_JEJU: PokemonSettingsV0025PokemonPikachuJeju;
+	V0025_POKEMON_PIKACHU_K_2026_A_01: PokemonSettingsV0025PokemonPikachuK2026A01;
 	V0025_POKEMON_PIKACHU_KARIYUSHI: PokemonSettingsV0025PokemonPikachuKariyushi;
 	V0025_POKEMON_PIKACHU_KURTA: PokemonSettingsV0025PokemonPikachuKurta;
 	V0025_POKEMON_PIKACHU_NORMAL: PokemonSettingsV0025PokemonPikachuNormal;

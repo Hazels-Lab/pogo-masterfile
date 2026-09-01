@@ -28,6 +28,7 @@ import type {
 	FeatureGateUpdatedPreloadedMegaAnimation,
 	FeatureGateUpdateTicketsString,
 	FeatureGateVnextPreResponseInputBlockingBehavior,
+	FeatureGateWayfarerSubmitLinkout,
 } from "./entries";
 
 export interface FeatureGateLookup {
@@ -58,4 +59,5 @@ export interface FeatureGateLookup {
 	UPDATE_TICKETS_STRING_FEATURE_GATE: FeatureGateUpdateTicketsString;
 	UPDATED_PRELOADED_MEGA_ANIMATION_FEATURE_GATE: FeatureGateUpdatedPreloadedMegaAnimation;
 	VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE: FeatureGateVnextPreResponseInputBlockingBehavior;
+	WAYFARER_SUBMIT_LINKOUT_FEATURE_GATE: FeatureGateWayfarerSubmitLinkout;
 }

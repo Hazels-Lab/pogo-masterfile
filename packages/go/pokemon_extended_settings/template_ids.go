@@ -110,6 +110,7 @@ const (
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuGotour2026C02            PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_GOTOUR_2026_C_02"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuHorizons                 PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_HORIZONS"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuJeju                     PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_JEJU"
+	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuK2026A01                 PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_K_2026_A_01"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuKariyushi                PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_KARIYUSHI"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuKurta                    PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_KURTA"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuNormal                   PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_NORMAL"
@@ -2589,6 +2590,7 @@ var PokemonExtendedSettingsTemplateIDValues = [...]PokemonExtendedSettingsTempla
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuGotour2026C02,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuHorizons,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuJeju,
+	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuK2026A01,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuKariyushi,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuKurta,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuNormal,

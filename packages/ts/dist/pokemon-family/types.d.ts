@@ -69,5 +69,5 @@ export interface PokemonFamilyData {
 		| "TYRANITAR"
 		| "VENUSAUR"
 		| "VICTREEBEL";
-	megaEvolvablePokemonIds?: Array<"CHARIZARD" | "GALLADE" | "GARDEVOIR" | "MEWTWO" | "RAICHU">;
+	megaEvolvablePokemonIds?: Array<"CHARIZARD" | "GALLADE" | "GARDEVOIR" | "MEWTWO" | "RAICHU" | "STARAPTOR">;
 }

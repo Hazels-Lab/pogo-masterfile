@@ -3,6 +3,23 @@
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
 
+export type IapItemDisplayEventPassGofest2025FinaleStoreRedirect = S<
+	IapItemDisplay<
+		"EVENT_PASS_GOFEST2025_FINALE_STORE_REDIRECT",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			description: "deluxe_event_pass_track_unlock_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff26f8d69_PGO-MCS_GO_Pass_Mega_Finale_Deluxe_v2-720x360-nologo.jpg";
+			sku: "pgorelease.gofest_finale_2025_deluxe_event_pass_track_redirect";
+			skuDisableTime: "2026-09-08T23:59:59";
+			skuDisableTimeUtcMs: "1788911999000";
+			skuEnableTime: "2026-08-31T10:00:00";
+			skuEnableTimeUtcMs: "1788170400000";
+			sortOrder: 1;
+			title: "event_pass_gofest2026_finale_base_track_title";
+		}
+	>
+>;
 export type IapItemDisplayEventPassMonth3SeasonStoreRedirect = S<
 	IapItemDisplay<
 		"EVENT_PASS_MONTH3_SEASON_STORE_REDIRECT",
@@ -270,15 +287,15 @@ export type IapItemDisplayGeneral2Ticket3 = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F11274b46_PGO_MCS_CD_KeyArt_Nickit_v1-1024x576-nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fdaa6a9dd_PGO_MCS_CD_Classic_KeyArt_Gible_v1-1024x576.jpg";
 			sku: "pgorelease.general2.ticket.3";
-			skuDisableTime: "2026-08-16T17:00:00";
-			skuDisableTimeUtcMs: "1786899600000";
+			skuDisableTime: "2026-09-12T17:00:00";
+			skuDisableTimeUtcMs: "1789232400000";
 			skuEnableTime: "2019-03-14T08:00:00";
 			skuEnableTimeUtcMs: "1552550400000";
 			sortOrder: 2;
 			spriteId: "general1.ticket.2";
-			title: "general1.ticket_CD_Nickit26_title";
+			title: "general1.ticket_CDC_Gible26_title";
 			useEnvironmentPrefix: true;
 		}
 	>
@@ -470,23 +487,6 @@ export type IapItemDisplayGeneral2Ticket10Giftable = S<
 			sortOrder: 1;
 			spriteId: "general1.ticket.1";
 			title: "GOTour_2026_ticket_title";
-		}
-	>
->;
-export type IapItemDisplayPgoreleaseAugust3DeluxeEventPassTrackUnlockRedirect = S<
-	IapItemDisplay<
-		"pgorelease.august3_deluxe_event_pass_track_unlock_redirect",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff9eaebcb_PGO-WCS_2026_Backpack_v2-1024x512-nologo.jpg";
-			sku: "pgorelease.august3_deluxe_event_pass_track_unlock_redirect";
-			skuDisableTime: "2026-09-01T20:00:00";
-			skuDisableTimeUtcMs: "1788292800000";
-			skuEnableTime: "2025-08-25T10:00:00";
-			skuEnableTimeUtcMs: "1756116000000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_title_WCS_2026";
 		}
 	>
 >;
@@ -889,6 +889,7 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket10Giftable = S<
 >;
 
 export type IapItemDisplayGlobalEventTicketMasterfileEntry =
+	| IapItemDisplayEventPassGofest2025FinaleStoreRedirect
 	| IapItemDisplayEventPassMonth3SeasonStoreRedirect
 	| IapItemDisplayEvergreenticket1
 	| IapItemDisplayEvergreenticket1Giftable
@@ -914,7 +915,6 @@ export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayGeneral2Ticket9
 	| IapItemDisplayGeneral2Ticket10
 	| IapItemDisplayGeneral2Ticket10Giftable
-	| IapItemDisplayPgoreleaseAugust3DeluxeEventPassTrackUnlockRedirect
 	| IapItemDisplayPgoreleaseCitysafariticket01
 	| IapItemDisplayPgoreleaseCitysafariticket11
 	| IapItemDisplayPgoreleaseCitysafariticket21

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 48 entries.
+// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 50 entries.
 
 import type { S } from "../../_utils";
 import type { ItemSettings } from "../types";
@@ -16,6 +16,7 @@ export type ItemSettingsItemBattlePassTicket = S<
 				eventStartTime: "2026-09-08T13:00:00";
 				itemBagDescriptionKey: "item_battle_pass_ticket_desc";
 			};
+			itemId: "ITEM_BATTLE_PASS_TICKET";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 		}
 	>
@@ -51,6 +52,7 @@ export type ItemSettingsItemEventTicket02 = S<
 				itemBagDescriptionKey: "item_event_ticket_02_desc_CATCH_MASTERY_ORICORIO";
 				textRewardsKey: "text_rewards_key_CATCH_MASTERY_ORICORIO";
 			};
+			itemId: "ITEM_EVENT_TICKET_02";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general2.ticket2.CATCH_MASTERY_ORICORIO";
 		}
@@ -72,6 +74,7 @@ export type ItemSettingsItemEventTicket02ToGift = S<
 				ticketItem: "ITEM_EVENT_TICKET_02";
 			};
 			ignoreInventorySpace: true;
+			itemId: "ITEM_EVENT_TICKET_02_TO_GIFT";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general2.ticket2.CATCH_MASTERY_ORICORIO";
 		}
@@ -123,6 +126,7 @@ export type ItemSettingsItemEventTicket03 = S<
 				itemBagDescriptionKey: "item_event_ticket_pink_desc_CDC_Deino26";
 				textRewardsKey: "text_rewards_key_CDC_Deino26";
 			};
+			itemId: "ITEM_EVENT_TICKET_03";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general1.ticket_CDC_Deino26_title";
 		}
@@ -144,6 +148,7 @@ export type ItemSettingsItemEventTicket03ToGift = S<
 				ticketItem: "ITEM_EVENT_TICKET_03";
 			};
 			ignoreInventorySpace: true;
+			itemId: "ITEM_EVENT_TICKET_03_TO_GIFT";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general1.ticket_CDC_Deino26_title";
 		}
@@ -199,6 +204,7 @@ export type ItemSettingsItemEventTicket04 = S<
 				itemBagDescriptionKey: "item_event_ticket_pink_desc_WaterRRD26";
 				textRewardsKey: "text_rewards_key_WaterRRD26";
 			};
+			itemId: "ITEM_EVENT_TICKET_04";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general1.ticket.2_WaterRRD26_title";
 		}
@@ -220,6 +226,7 @@ export type ItemSettingsItemEventTicket04ToGift = S<
 				ticketItem: "ITEM_EVENT_TICKET_04";
 			};
 			ignoreInventorySpace: true;
+			itemId: "ITEM_EVENT_TICKET_04_TO_GIFT";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 		}
 	>
@@ -260,6 +267,7 @@ export type ItemSettingsItemEventTicket05 = S<
 				itemBagDescriptionKey: "item_event_ticket_gray_desc_MegaFalinksRaidDay";
 				textRewardsKey: "text_rewards_key_MegaFalinksRaidDay";
 			};
+			itemId: "ITEM_EVENT_TICKET_05";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general2.ticket.5_MegaFalinksRaidDay";
 		}
@@ -282,6 +290,7 @@ export type ItemSettingsItemEventTicket05ToGift = S<
 				ticketItem: "ITEM_EVENT_TICKET_05";
 			};
 			ignoreInventorySpace: true;
+			itemId: "ITEM_EVENT_TICKET_05_TO_GIFT";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general2.ticket.5_MegaFalinksRaidDay";
 		}
@@ -321,6 +330,7 @@ export type ItemSettingsItemEventTicket06 = S<
 				itemBagDescriptionKey: "item_event_ticket_06_details_REPLAY_GO_BIGGER";
 				textRewardsKey: "text_rewards_key_REPLAY_GO_BIGGER";
 			};
+			itemId: "ITEM_EVENT_TICKET_06";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general2.ticket.6.REPLAY_GO_BIGGER";
 		}
@@ -342,6 +352,7 @@ export type ItemSettingsItemEventTicket06ToGift = S<
 				ticketItem: "ITEM_EVENT_TICKET_06";
 			};
 			ignoreInventorySpace: true;
+			itemId: "ITEM_EVENT_TICKET_06_TO_GIFT";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general2.ticket.6.REPLAY_GO_BIGGER";
 		}
@@ -376,6 +387,7 @@ export type ItemSettingsItemEventTicket07 = S<
 				itemBagDescriptionKey: "item_event_ticket_07_desc_masterball25";
 				textRewardsKey: "text_rewards_key_masterball25";
 			};
+			itemId: "ITEM_EVENT_TICKET_07";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general2.ticket.7_masterball25_title";
 		}
@@ -397,6 +409,7 @@ export type ItemSettingsItemEventTicket07ToGift = S<
 				ticketItem: "ITEM_EVENT_TICKET_07";
 			};
 			ignoreInventorySpace: true;
+			itemId: "ITEM_EVENT_TICKET_07_TO_GIFT";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 		}
 	>
@@ -447,6 +460,7 @@ export type ItemSettingsItemEventTicket08 = S<
 				itemBagDescriptionKey: "item_event_ticket_gray_desc_FinalJustice2025";
 				textRewardsKey: "text_rewards_key_FinalJustice2025";
 			};
+			itemId: "ITEM_EVENT_TICKET_08";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 		}
 	>
@@ -467,6 +481,7 @@ export type ItemSettingsItemEventTicket08ToGift = S<
 				ticketItem: "ITEM_EVENT_TICKET_08";
 			};
 			ignoreInventorySpace: true;
+			itemId: "ITEM_EVENT_TICKET_08_TO_GIFT";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 		}
 	>
@@ -507,6 +522,7 @@ export type ItemSettingsItemEventTicket09 = S<
 				itemBagDescriptionKey: "ITEM_EVENT_TICKET_09_desc_fashionRaidDay26";
 				textRewardsKey: "text_rewards_key_fashionRaidDay26";
 			};
+			itemId: "ITEM_EVENT_TICKET_09";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general2.ticket.9_fashionRaidDay26_title";
 		}
@@ -528,6 +544,7 @@ export type ItemSettingsItemEventTicket09ToGift = S<
 				ticketItem: "ITEM_EVENT_TICKET_09";
 			};
 			ignoreInventorySpace: true;
+			itemId: "ITEM_EVENT_TICKET_09_TO_GIFT";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general2.ticket.9_fashionRaidDay26_title";
 		}
@@ -587,6 +604,7 @@ export type ItemSettingsItemEventTicket10 = S<
 				textRewardsKey: "text_rewards_key_GOTour2026";
 				titleImageUrl: "https://storage.googleapis.com/prod-public-images/gotourlogo_1914247967.png";
 			};
+			itemId: "ITEM_EVENT_TICKET_10";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "GOTour_2026_ticket_title";
 		}
@@ -608,6 +626,7 @@ export type ItemSettingsItemEventTicket10ToGift = S<
 				ticketItem: "ITEM_EVENT_TICKET_10";
 			};
 			ignoreInventorySpace: true;
+			itemId: "ITEM_EVENT_TICKET_10_TO_GIFT";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "GOTour_2026_ticket_title";
 		}
@@ -647,6 +666,7 @@ export type ItemSettingsItemEventTicketGray = S<
 				itemBagDescriptionKey: "item_event_ticket_gray_details_ENTEI_SHADOW_RAID_DAY";
 				textRewardsKey: "text_rewards_key_ENTEI_SHADOW_RAID_DAY";
 			};
+			itemId: "ITEM_EVENT_TICKET_GRAY";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general1.ticket.5.ENTEI_SHADOW_RAID_DAY";
 		}
@@ -669,6 +689,7 @@ export type ItemSettingsItemEventTicketGrayToGift = S<
 				ticketItem: "ITEM_EVENT_TICKET_GRAY";
 			};
 			ignoreInventorySpace: true;
+			itemId: "ITEM_EVENT_TICKET_GRAY_TO_GIFT";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general1.ticket.5.ENTEI_SHADOW_RAID_DAY";
 		}
@@ -719,6 +740,7 @@ export type ItemSettingsItemEventTicketPink = S<
 				itemBagDescriptionKey: "item_event_ticket_evergreen_details_PawPrint_20250620";
 				textRewardsKey: "text_rewards_key_PawPrint_20250620";
 			};
+			itemId: "ITEM_EVENT_TICKET_PINK";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 		}
 	>
@@ -739,6 +761,7 @@ export type ItemSettingsItemEventTicketPinkToGift = S<
 				ticketItem: "ITEM_EVENT_TICKET_PINK";
 			};
 			ignoreInventorySpace: true;
+			itemId: "ITEM_EVENT_TICKET_PINK_TO_GIFT";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 		}
 	>
@@ -789,6 +812,7 @@ export type ItemSettingsItemEventTicketS23202601 = S<
 				itemBagDescriptionKey: "item_event_ticket_pink_desc_CD_Frigibax26";
 				textRewardsKey: "text_rewards_key_CD_Frigibax26";
 			};
+			itemId: "ITEM_EVENT_TICKET_S23_2026_01";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general1.ticket_CD_Frigibax26_title";
 		}
@@ -810,6 +834,7 @@ export type ItemSettingsItemEventTicketS23202601ToGift = S<
 				ticketItem: "ITEM_EVENT_TICKET_S23_2026_01";
 			};
 			ignoreInventorySpace: true;
+			itemId: "ITEM_EVENT_TICKET_S23_2026_01_TO_GIFT";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general1.ticket_CD_Frigibax26_title";
 		}
@@ -861,6 +886,7 @@ export type ItemSettingsItemEventTicketS23202602 = S<
 				itemBagDescriptionKey: "item_event_ticket_pink_desc_CD_Sobble26";
 				textRewardsKey: "text_rewards_key_CD_Sobble26";
 			};
+			itemId: "ITEM_EVENT_TICKET_S23_2026_02";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general1.ticket_CD_Sobble26_title";
 		}
@@ -882,6 +908,7 @@ export type ItemSettingsItemEventTicketS23202602ToGift = S<
 				ticketItem: "ITEM_EVENT_TICKET_S23_2026_02";
 			};
 			ignoreInventorySpace: true;
+			itemId: "ITEM_EVENT_TICKET_S23_2026_02_TO_GIFT";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general1.ticket_CD_Sobble26_title";
 		}
@@ -923,6 +950,7 @@ export type ItemSettingsItemEventTicketS23202603 = S<
 				itemBagDescriptionKey: "item_event_ticket_gray_details_MegaSkarmoryRaidDay";
 				textRewardsKey: "text_rewards_key_MegaSkarmoryRaidDay";
 			};
+			itemId: "ITEM_EVENT_TICKET_S23_2026_03";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general2.ticket.5_MegaSkarmoryRaidDay";
 		}
@@ -964,6 +992,7 @@ export type ItemSettingsItemEventTicketS23202604 = S<
 				itemBagDescriptionKey: "item_event_ticket_gray_details_MegaRaichuRaidDay";
 				textRewardsKey: "text_rewards_key_RaichuRaidDay";
 			};
+			itemId: "ITEM_EVENT_TICKET_S23_2026_04";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general2.ticket.5_MegaRaichuRaidDay";
 		}
@@ -986,6 +1015,7 @@ export type ItemSettingsItemEventTicketS23202604ToGift = S<
 				ticketItem: "ITEM_EVENT_TICKET_S23_2026_04";
 			};
 			ignoreInventorySpace: true;
+			itemId: "ITEM_EVENT_TICKET_S23_2026_04_TO_GIFT";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general2.ticket.5_MegaRaichuRaidDay";
 		}
@@ -1039,6 +1069,7 @@ export type ItemSettingsItemEventTicketS23202606 = S<
 				itemBagDescriptionKey: "item_event_ticket_gray_details_shayminmasterworkrerun";
 				textRewardsKey: "text_rewards_key_shayminmasterworkrerun";
 			};
+			itemId: "ITEM_EVENT_TICKET_S23_2026_06";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general2.ticket.5_shayminmasterworkrerun";
 		}
@@ -1083,6 +1114,7 @@ export type ItemSettingsItemEventTicketS23202607 = S<
 				itemBagDescriptionKey: "item_event_ticket_pink_desc_MegaRayquaza26";
 				textRewardsKey: "text_rewards_key_MegaRayquaza26";
 			};
+			itemId: "ITEM_EVENT_TICKET_S23_2026_07";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general1.ticket.2_MegaRayquaza_title";
 		}
@@ -1105,6 +1137,7 @@ export type ItemSettingsItemEventTicketS23202607ToGift = S<
 				ticketItem: "ITEM_EVENT_TICKET_S23_2026_07";
 			};
 			ignoreInventorySpace: true;
+			itemId: "ITEM_EVENT_TICKET_S23_2026_07_TO_GIFT";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general1.ticket.2_MegaRayquaza_title";
 		}
@@ -1151,6 +1184,7 @@ export type ItemSettingsItemEventTicketS23202608 = S<
 				itemBagDescriptionKey: "ITEM_EVENT_TICKET_05_desc_gmaxRillaboom26";
 				textRewardsKey: "text_rewards_key_gmaxRillaboom26";
 			};
+			itemId: "ITEM_EVENT_TICKET_S23_2026_08";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general1.ticket.4_gmaxRillaboom26_title";
 		}
@@ -1172,6 +1206,7 @@ export type ItemSettingsItemEventTicketS23202608ToGift = S<
 				ticketItem: "ITEM_EVENT_TICKET_S23_2026_08";
 			};
 			ignoreInventorySpace: true;
+			itemId: "ITEM_EVENT_TICKET_S23_2026_08_TO_GIFT";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 		}
 	>
@@ -1222,6 +1257,7 @@ export type ItemSettingsItemEventTicketS23202609 = S<
 				itemBagDescriptionKey: "item_event_ticket_evergreen_desc_10THPARTY0726";
 				textRewardsKey: "text_rewards_key_10THPARTY0726";
 			};
+			itemId: "ITEM_EVENT_TICKET_S23_2026_09";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general1.ticket.1_10THPARTY0726_title";
 		}
@@ -1273,6 +1309,7 @@ export type ItemSettingsItemEventTicketS23202610 = S<
 				itemBagDescriptionKey: "item_event_ticket_pink_desc_CD_Nickit26";
 				textRewardsKey: "text_rewards_key_CD_Nickit26";
 			};
+			itemId: "ITEM_EVENT_TICKET_S23_2026_10";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general1.ticket_CD_Nickit26_title";
 		}
@@ -1294,6 +1331,7 @@ export type ItemSettingsItemEventTicketS23202610ToGift = S<
 				ticketItem: "ITEM_EVENT_TICKET_S23_2026_10";
 			};
 			ignoreInventorySpace: true;
+			itemId: "ITEM_EVENT_TICKET_S23_2026_10_TO_GIFT";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general1.ticket_CD_Nickit26_title";
 		}
@@ -1334,6 +1372,7 @@ export type ItemSettingsItemEventTicketS23202612 = S<
 				itemBagDescriptionKey: "item_event_ticket_details_MegaStarmieRaidDay";
 				textRewardsKey: "text_rewards_key_StarmieRaidDay";
 			};
+			itemId: "ITEM_EVENT_TICKET_S23_2026_12";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general2.ticket.5_MegaStarmieRaidDay";
 		}
@@ -1357,8 +1396,84 @@ export type ItemSettingsItemEventTicketS23202612ToGift = S<
 				ticketItem: "ITEM_EVENT_TICKET_S23_2026_12";
 			};
 			ignoreInventorySpace: true;
+			itemId: "ITEM_EVENT_TICKET_S23_2026_12_TO_GIFT";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general2.ticket.5_MegaStarmieRaidDay";
+		}
+	>
+>;
+export type ItemSettingsItemEventTicketS24Sep12Community = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "item_event_ticket_pink_details_CDC_Gible26";
+			globalEventTicket: {
+				backgroundImageUrl: "https://storage.googleapis.com/prod-public-images/pink-ticket-generic1024x512.jpg";
+				clientEventEndTimeUtcMs: "1789232400000";
+				clientEventStartTimeUtcMs: "1789221600000";
+				detailsLinkKey: "details_link_key";
+				displayV2Enabled: true;
+				eventBannerUrl: "https://storage.googleapis.com/prod-public-images/1024x512.jpg";
+				eventDatetimeRangeKey: "event_datetime_range_key_CDC_Gible26";
+				eventEndTime: "2026-09-12T17:00:00";
+				eventStartTime: "2026-09-12T14:00:00";
+				giftable: true;
+				giftItem: 2254;
+				iconRewards: [
+					{
+						pokemonEncounter: {
+							pokemonDisplay: {
+								form: "GARCHOMP_NORMAL";
+							};
+							pokemonId: "GARCHOMP";
+						};
+						type: "POKEMON_ENCOUNTER";
+					},
+					{
+						item: {
+							amount: 1;
+							item: "ITEM_LUCKY_EGG";
+						};
+						type: "ITEM";
+					},
+					{
+						item: {
+							amount: 1;
+							item: "ITEM_XL_RARE_CANDY";
+						};
+						type: "ITEM";
+					},
+				];
+				itemBagDescriptionKey: "item_event_ticket_pink_desc_CDC_Gible26";
+				textRewardsKey: "text_rewards_key_CDC_Gible26";
+				titleImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fdaa6a9dd_PGO_MCS_CD_Classic_KeyArt_Gible_v1-1024x576.jpg";
+			};
+			itemId: 2253;
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general1.ticket_CDC_Gible26_title";
+		}
+	>
+>;
+export type ItemSettingsItemEventTicketS24Sep12CommunityToGift = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY_TO_GIFT",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "item_event_ticket_pink_details_CDC_Gible26";
+			globalEventTicket: {
+				clientEventEndTimeUtcMs: "1789232400000";
+				clientEventStartTimeUtcMs: "1789221600000";
+				eventBannerUrl: "https://storage.googleapis.com/prod-public-images/1024x512.jpg";
+				eventEndTime: "2026-09-12T17:00:00";
+				eventStartTime: "2026-09-12T14:00:00";
+				itemBagDescriptionKey: "item_event_ticket_pink_desc_CDC_Gible26";
+				ticketItem: 2253;
+			};
+			ignoreInventorySpace: true;
+			itemId: 2254;
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general1.ticket_CDC_Gible26_title";
 		}
 	>
 >;
@@ -1412,6 +1527,7 @@ export type ItemSettingsItemEvergreenTicket = S<
 				itemBagDescriptionKey: "item_event_ticket_evergreen_desc_IntoTDepths26";
 				textRewardsKey: "text_rewards_key_IntoTDepths26";
 			};
+			itemId: "ITEM_EVERGREEN_TICKET";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general1.ticket.5_IntoTDepths26_title";
 		}
@@ -1433,6 +1549,7 @@ export type ItemSettingsItemEvergreenTicketToGift = S<
 				ticketItem: "ITEM_EVERGREEN_TICKET";
 			};
 			ignoreInventorySpace: true;
+			itemId: "ITEM_EVERGREEN_TICKET_TO_GIFT";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 		}
 	>
@@ -1478,6 +1595,7 @@ export type ItemSettingsItemGlobalEventTicket = S<
 				itemBagDescriptionKey: "item_event_ticket_evergreen_desc_Riolu0426";
 				textRewardsKey: "text_rewards_key_Riolu0426";
 			};
+			itemId: "ITEM_GLOBAL_EVENT_TICKET";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general1.ticket.4_Riolu0426_title";
 		}
@@ -1499,6 +1617,7 @@ export type ItemSettingsItemGlobalEventTicketToGift = S<
 				ticketItem: "ITEM_GLOBAL_EVENT_TICKET";
 			};
 			ignoreInventorySpace: true;
+			itemId: "ITEM_GLOBAL_EVENT_TICKET_TO_GIFT";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general1.ticket.4_Riolu0426_title";
 		}
@@ -1516,6 +1635,7 @@ export type ItemSettingsItemTicketCitySafari00 = S<
 				eventStartTime: "2023-10-09T10:00:00";
 				itemBagDescriptionKey: "item_ticket_city_safari_00_desc";
 			};
+			itemId: "ITEM_TICKET_CITY_SAFARI_00";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 		}
 	>
@@ -1532,6 +1652,7 @@ export type ItemSettingsItemTicketCitySafari01 = S<
 				eventStartTime: "2023-10-15T10:00:00";
 				itemBagDescriptionKey: "item_ticket_city_safari_01_desc";
 			};
+			itemId: "ITEM_TICKET_CITY_SAFARI_01";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 		}
 	>
@@ -1548,6 +1669,7 @@ export type ItemSettingsItemTicketCitySafari02 = S<
 				eventStartTime: "2023-11-06T10:00:00";
 				itemBagDescriptionKey: "item_ticket_city_safari_02_desc";
 			};
+			itemId: "ITEM_TICKET_CITY_SAFARI_02";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 		}
 	>
@@ -1566,6 +1688,7 @@ export type ItemSettingsItemTicketCitySafari04 = S<
 				itemBagDescriptionKey: "item_event_ticket_evergreen_desc_GOWA2024GSBEA";
 			};
 			ignoreInventorySpace: true;
+			itemId: "ITEM_TICKET_CITY_SAFARI_04";
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general1.ticket._GOWA2024GSBEA_title";
 		}
@@ -1613,6 +1736,8 @@ export type ItemSettingsGlobalEventTicketMasterfileEntry =
 	| ItemSettingsItemEventTicketS23202610ToGift
 	| ItemSettingsItemEventTicketS23202612
 	| ItemSettingsItemEventTicketS23202612ToGift
+	| ItemSettingsItemEventTicketS24Sep12Community
+	| ItemSettingsItemEventTicketS24Sep12CommunityToGift
 	| ItemSettingsItemEvergreenTicket
 	| ItemSettingsItemEvergreenTicketToGift
 	| ItemSettingsItemGlobalEventTicket

@@ -425,206 +425,1206 @@ const (
 	EventPassTierSettingsTemplateIDEventPassAugust2026Season209Premium EventPassTierSettingsTemplateID = "EVENT_PASS_AUGUST2026_SEASON_209_PREMIUM"
 	EventPassTierSettingsTemplateIDEventPassAugust2026Season210Free    EventPassTierSettingsTemplateID = "EVENT_PASS_AUGUST2026_SEASON_210_FREE"
 	EventPassTierSettingsTemplateIDEventPassAugust2026Season210Premium EventPassTierSettingsTemplateID = "EVENT_PASS_AUGUST2026_SEASON_210_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event1Free          EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_1_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event1Premium       EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_1_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event2Free          EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_2_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event2Premium       EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_2_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event3Free          EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_3_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event3Premium       EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_3_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event4Free          EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_4_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event4Premium       EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_4_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event5Free          EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_5_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event5Premium       EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_5_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event6Free          EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_6_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event6Premium       EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_6_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event7Free          EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_7_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event7Premium       EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_7_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event8Free          EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_8_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event8Premium       EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_8_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event9Free          EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_9_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event9Premium       EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_9_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event10Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_10_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event10Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_10_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event11Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_11_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event11Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_11_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event12Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_12_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event12Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_12_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event13Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_13_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event13Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_13_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event14Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_14_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event14Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_14_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event15Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_15_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event15Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_15_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event16Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_16_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event16Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_16_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event17Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_17_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event17Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_17_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event18Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_18_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event18Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_18_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event19Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_19_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event19Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_19_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event20Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_20_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event20Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_20_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event21Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_21_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event21Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_21_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event22Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_22_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event22Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_22_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event23Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_23_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event23Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_23_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event24Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_24_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event24Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_24_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event25Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_25_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event25Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_25_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event26Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_26_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event26Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_26_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event27Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_27_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event27Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_27_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event28Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_28_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event28Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_28_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event29Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_29_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event29Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_29_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event30Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_30_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event30Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_30_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event31Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_31_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event31Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_31_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event32Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_32_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event32Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_32_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event33Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_33_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event33Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_33_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event34Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_34_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event34Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_34_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event35Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_35_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event35Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_35_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event36Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_36_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event36Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_36_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event37Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_37_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event37Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_37_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event38Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_38_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event38Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_38_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event39Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_39_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event39Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_39_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event40Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_40_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event40Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_40_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event41Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_41_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event41Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_41_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event42Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_42_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event42Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_42_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event43Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_43_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event43Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_43_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event44Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_44_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event44Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_44_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event45Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_45_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event45Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_45_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event46Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_46_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event46Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_46_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event47Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_47_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event47Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_47_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event48Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_48_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event48Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_48_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event49Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_49_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event49Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_49_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event50Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_50_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event50Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_50_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event51Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_51_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event51Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_51_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event52Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_52_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event52Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_52_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event53Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_53_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event53Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_53_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event54Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_54_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event54Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_54_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event55Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_55_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event55Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_55_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event56Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_56_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event56Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_56_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event57Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_57_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event57Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_57_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event58Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_58_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event58Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_58_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event59Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_59_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event59Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_59_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event60Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_60_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event60Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_60_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event61Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_61_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event61Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_61_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event62Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_62_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event62Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_62_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event63Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_63_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event63Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_63_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event64Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_64_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event64Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_64_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event65Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_65_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event65Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_65_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event66Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_66_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event66Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_66_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event67Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_67_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event67Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_67_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event68Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_68_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event68Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_68_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event69Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_69_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event69Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_69_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event70Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_70_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event70Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_70_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event71Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_71_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event71Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_71_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event72Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_72_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event72Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_72_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event73Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_73_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event73Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_73_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event74Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_74_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event74Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_74_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event75Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_75_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event75Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_75_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event76Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_76_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event76Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_76_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event77Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_77_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event77Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_77_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event78Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_78_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event78Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_78_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event79Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_79_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event79Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_79_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event80Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_80_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event80Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_80_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event81Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_81_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event81Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_81_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event82Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_82_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event82Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_82_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event83Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_83_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event83Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_83_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event84Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_84_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event84Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_84_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event85Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_85_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event85Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_85_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event86Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_86_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event86Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_86_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event87Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_87_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event87Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_87_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event88Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_88_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event88Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_88_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event89Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_89_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event89Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_89_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event90Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_90_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event90Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_90_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event91Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_91_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event91Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_91_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event92Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_92_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event92Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_92_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event93Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_93_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event93Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_93_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event94Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_94_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event94Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_94_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event95Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_95_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event95Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_95_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event96Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_96_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event96Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_96_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event97Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_97_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event97Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_97_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event98Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_98_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event98Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_98_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event99Free         EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_99_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event99Premium      EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_99_PREMIUM"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event100Free        EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_100_FREE"
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event100Premium     EventPassTierSettingsTemplateID = "EVENT_PASS_WCS2026_EVENT_100_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale1Free      EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_1_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale1Premium   EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_1_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale2Free      EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_2_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale2Premium   EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_2_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale3Free      EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_3_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale3Premium   EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_3_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale4Free      EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_4_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale4Premium   EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_4_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale5Free      EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_5_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale5Premium   EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_5_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale6Free      EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_6_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale6Premium   EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_6_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale7Free      EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_7_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale7Premium   EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_7_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale8Free      EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_8_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale8Premium   EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_8_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale9Free      EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_9_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale9Premium   EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_9_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale10Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_10_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale10Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_10_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale11Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_11_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale11Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_11_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale12Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_12_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale12Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_12_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale13Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_13_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale13Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_13_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale14Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_14_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale14Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_14_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale15Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_15_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale15Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_15_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale16Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_16_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale16Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_16_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale17Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_17_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale17Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_17_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale18Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_18_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale18Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_18_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale19Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_19_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale19Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_19_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale20Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_20_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale20Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_20_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale21Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_21_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale21Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_21_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale22Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_22_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale22Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_22_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale23Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_23_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale23Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_23_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale24Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_24_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale24Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_24_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale25Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_25_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale25Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_25_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale26Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_26_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale26Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_26_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale27Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_27_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale27Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_27_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale28Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_28_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale28Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_28_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale29Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_29_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale29Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_29_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale30Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_30_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale30Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_30_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale31Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_31_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale31Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_31_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale32Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_32_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale32Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_32_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale33Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_33_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale33Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_33_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale34Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_34_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale34Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_34_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale35Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_35_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale35Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_35_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale36Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_36_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale36Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_36_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale37Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_37_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale37Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_37_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale38Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_38_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale38Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_38_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale39Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_39_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale39Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_39_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale40Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_40_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale40Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_40_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale41Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_41_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale41Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_41_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale42Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_42_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale42Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_42_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale43Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_43_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale43Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_43_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale44Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_44_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale44Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_44_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale45Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_45_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale45Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_45_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale46Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_46_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale46Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_46_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale47Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_47_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale47Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_47_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale48Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_48_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale48Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_48_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale49Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_49_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale49Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_49_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale50Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_50_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale50Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_50_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale51Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_51_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale51Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_51_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale52Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_52_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale52Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_52_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale53Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_53_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale53Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_53_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale54Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_54_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale54Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_54_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale55Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_55_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale55Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_55_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale56Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_56_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale56Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_56_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale57Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_57_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale57Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_57_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale58Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_58_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale58Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_58_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale59Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_59_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale59Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_59_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale60Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_60_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale60Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_60_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale61Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_61_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale61Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_61_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale62Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_62_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale62Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_62_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale63Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_63_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale63Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_63_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale64Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_64_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale64Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_64_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale65Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_65_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale65Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_65_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale66Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_66_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale66Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_66_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale67Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_67_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale67Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_67_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale68Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_68_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale68Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_68_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale69Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_69_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale69Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_69_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale70Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_70_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale70Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_70_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale71Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_71_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale71Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_71_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale72Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_72_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale72Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_72_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale73Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_73_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale73Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_73_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale74Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_74_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale74Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_74_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale75Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_75_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale75Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_75_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale76Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_76_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale76Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_76_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale77Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_77_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale77Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_77_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale78Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_78_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale78Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_78_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale79Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_79_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale79Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_79_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale80Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_80_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale80Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_80_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale81Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_81_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale81Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_81_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale82Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_82_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale82Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_82_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale83Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_83_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale83Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_83_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale84Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_84_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale84Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_84_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale85Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_85_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale85Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_85_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale86Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_86_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale86Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_86_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale87Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_87_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale87Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_87_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale88Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_88_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale88Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_88_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale89Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_89_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale89Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_89_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale90Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_90_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale90Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_90_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale91Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_91_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale91Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_91_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale92Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_92_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale92Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_92_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale93Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_93_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale93Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_93_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale94Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_94_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale94Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_94_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale95Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_95_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale95Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_95_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale96Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_96_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale96Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_96_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale97Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_97_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale97Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_97_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale98Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_98_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale98Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_98_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale99Free     EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_99_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale99Premium  EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_99_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale100Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_100_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale100Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_100_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale101Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_101_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale101Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_101_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale102Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_102_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale102Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_102_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale103Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_103_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale103Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_103_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale104Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_104_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale104Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_104_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale105Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_105_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale105Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_105_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale106Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_106_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale106Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_106_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale107Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_107_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale107Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_107_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale108Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_108_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale108Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_108_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale109Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_109_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale109Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_109_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale110Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_110_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale110Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_110_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale111Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_111_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale111Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_111_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale112Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_112_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale112Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_112_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale113Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_113_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale113Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_113_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale114Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_114_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale114Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_114_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale115Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_115_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale115Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_115_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale116Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_116_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale116Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_116_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale117Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_117_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale117Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_117_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale118Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_118_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale118Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_118_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale119Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_119_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale119Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_119_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale120Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_120_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale120Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_120_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale121Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_121_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale121Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_121_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale122Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_122_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale122Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_122_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale123Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_123_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale123Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_123_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale124Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_124_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale124Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_124_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale125Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_125_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale125Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_125_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale126Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_126_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale126Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_126_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale127Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_127_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale127Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_127_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale128Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_128_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale128Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_128_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale129Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_129_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale129Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_129_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale130Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_130_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale130Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_130_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale131Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_131_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale131Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_131_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale132Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_132_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale132Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_132_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale133Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_133_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale133Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_133_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale134Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_134_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale134Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_134_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale135Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_135_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale135Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_135_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale136Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_136_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale136Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_136_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale137Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_137_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale137Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_137_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale138Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_138_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale138Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_138_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale139Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_139_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale139Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_139_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale140Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_140_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale140Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_140_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale141Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_141_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale141Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_141_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale142Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_142_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale142Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_142_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale143Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_143_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale143Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_143_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale144Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_144_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale144Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_144_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale145Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_145_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale145Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_145_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale146Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_146_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale146Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_146_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale147Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_147_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale147Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_147_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale148Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_148_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale148Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_148_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale149Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_149_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale149Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_149_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale150Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_150_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale150Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_150_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale151Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_151_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale151Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_151_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale152Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_152_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale152Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_152_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale153Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_153_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale153Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_153_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale154Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_154_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale154Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_154_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale155Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_155_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale155Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_155_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale156Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_156_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale156Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_156_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale157Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_157_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale157Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_157_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale158Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_158_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale158Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_158_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale159Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_159_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale159Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_159_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale160Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_160_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale160Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_160_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale161Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_161_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale161Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_161_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale162Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_162_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale162Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_162_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale163Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_163_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale163Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_163_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale164Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_164_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale164Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_164_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale165Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_165_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale165Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_165_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale166Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_166_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale166Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_166_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale167Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_167_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale167Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_167_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale168Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_168_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale168Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_168_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale169Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_169_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale169Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_169_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale170Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_170_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale170Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_170_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale171Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_171_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale171Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_171_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale172Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_172_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale172Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_172_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale173Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_173_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale173Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_173_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale174Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_174_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale174Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_174_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale175Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_175_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale175Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_175_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale176Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_176_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale176Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_176_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale177Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_177_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale177Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_177_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale178Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_178_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale178Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_178_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale179Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_179_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale179Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_179_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale180Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_180_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale180Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_180_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale181Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_181_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale181Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_181_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale182Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_182_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale182Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_182_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale183Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_183_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale183Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_183_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale184Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_184_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale184Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_184_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale185Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_185_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale185Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_185_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale186Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_186_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale186Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_186_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale187Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_187_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale187Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_187_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale188Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_188_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale188Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_188_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale189Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_189_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale189Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_189_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale190Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_190_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale190Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_190_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale191Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_191_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale191Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_191_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale192Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_192_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale192Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_192_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale193Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_193_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale193Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_193_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale194Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_194_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale194Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_194_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale195Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_195_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale195Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_195_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale196Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_196_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale196Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_196_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale197Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_197_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale197Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_197_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale198Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_198_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale198Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_198_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale199Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_199_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale199Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_199_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale200Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_200_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale200Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_200_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale201Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_201_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale201Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_201_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale202Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_202_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale202Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_202_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale203Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_203_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale203Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_203_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale204Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_204_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale204Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_204_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale205Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_205_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale205Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_205_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale206Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_206_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale206Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_206_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale207Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_207_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale207Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_207_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale208Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_208_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale208Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_208_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale209Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_209_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale209Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_209_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale210Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_210_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale210Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_210_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale211Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_211_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale211Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_211_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale212Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_212_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale212Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_212_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale213Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_213_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale213Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_213_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale214Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_214_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale214Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_214_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale215Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_215_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale215Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_215_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale216Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_216_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale216Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_216_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale217Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_217_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale217Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_217_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale218Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_218_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale218Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_218_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale219Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_219_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale219Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_219_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale220Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_220_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale220Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_220_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale221Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_221_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale221Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_221_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale222Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_222_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale222Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_222_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale223Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_223_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale223Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_223_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale224Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_224_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale224Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_224_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale225Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_225_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale225Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_225_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale226Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_226_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale226Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_226_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale227Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_227_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale227Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_227_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale228Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_228_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale228Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_228_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale229Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_229_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale229Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_229_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale230Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_230_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale230Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_230_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale231Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_231_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale231Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_231_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale232Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_232_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale232Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_232_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale233Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_233_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale233Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_233_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale234Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_234_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale234Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_234_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale235Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_235_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale235Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_235_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale236Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_236_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale236Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_236_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale237Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_237_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale237Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_237_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale238Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_238_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale238Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_238_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale239Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_239_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale239Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_239_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale240Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_240_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale240Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_240_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale241Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_241_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale241Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_241_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale242Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_242_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale242Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_242_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale243Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_243_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale243Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_243_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale244Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_244_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale244Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_244_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale245Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_245_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale245Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_245_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale246Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_246_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale246Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_246_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale247Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_247_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale247Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_247_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale248Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_248_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale248Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_248_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale249Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_249_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale249Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_249_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale250Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_250_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale250Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_250_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale251Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_251_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale251Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_251_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale252Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_252_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale252Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_252_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale253Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_253_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale253Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_253_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale254Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_254_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale254Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_254_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale255Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_255_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale255Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_255_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale256Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_256_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale256Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_256_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale257Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_257_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale257Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_257_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale258Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_258_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale258Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_258_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale259Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_259_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale259Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_259_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale260Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_260_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale260Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_260_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale261Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_261_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale261Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_261_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale262Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_262_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale262Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_262_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale263Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_263_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale263Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_263_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale264Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_264_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale264Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_264_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale265Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_265_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale265Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_265_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale266Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_266_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale266Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_266_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale267Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_267_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale267Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_267_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale268Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_268_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale268Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_268_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale269Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_269_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale269Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_269_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale270Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_270_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale270Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_270_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale271Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_271_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale271Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_271_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale272Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_272_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale272Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_272_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale273Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_273_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale273Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_273_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale274Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_274_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale274Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_274_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale275Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_275_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale275Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_275_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale276Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_276_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale276Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_276_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale277Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_277_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale277Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_277_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale278Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_278_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale278Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_278_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale279Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_279_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale279Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_279_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale280Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_280_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale280Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_280_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale281Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_281_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale281Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_281_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale282Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_282_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale282Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_282_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale283Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_283_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale283Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_283_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale284Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_284_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale284Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_284_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale285Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_285_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale285Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_285_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale286Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_286_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale286Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_286_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale287Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_287_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale287Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_287_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale288Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_288_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale288Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_288_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale289Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_289_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale289Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_289_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale290Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_290_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale290Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_290_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale291Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_291_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale291Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_291_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale292Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_292_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale292Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_292_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale293Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_293_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale293Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_293_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale294Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_294_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale294Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_294_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale295Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_295_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale295Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_295_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale296Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_296_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale296Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_296_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale297Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_297_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale297Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_297_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale298Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_298_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale298Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_298_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale299Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_299_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale299Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_299_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale300Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_300_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale300Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_300_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale301Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_301_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale301Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_301_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale302Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_302_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale302Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_302_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale303Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_303_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale303Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_303_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale304Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_304_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale304Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_304_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale305Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_305_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale305Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_305_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale306Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_306_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale306Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_306_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale307Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_307_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale307Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_307_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale308Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_308_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale308Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_308_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale309Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_309_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale309Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_309_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale310Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_310_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale310Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_310_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale311Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_311_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale311Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_311_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale312Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_312_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale312Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_312_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale313Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_313_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale313Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_313_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale314Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_314_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale314Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_314_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale315Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_315_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale315Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_315_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale316Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_316_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale316Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_316_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale317Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_317_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale317Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_317_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale318Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_318_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale318Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_318_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale319Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_319_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale319Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_319_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale320Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_320_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale320Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_320_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale321Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_321_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale321Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_321_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale322Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_322_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale322Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_322_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale323Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_323_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale323Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_323_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale324Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_324_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale324Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_324_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale325Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_325_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale325Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_325_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale326Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_326_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale326Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_326_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale327Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_327_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale327Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_327_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale328Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_328_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale328Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_328_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale329Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_329_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale329Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_329_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale330Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_330_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale330Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_330_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale331Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_331_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale331Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_331_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale332Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_332_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale332Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_332_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale333Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_333_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale333Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_333_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale334Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_334_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale334Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_334_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale335Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_335_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale335Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_335_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale336Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_336_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale336Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_336_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale337Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_337_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale337Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_337_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale338Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_338_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale338Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_338_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale339Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_339_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale339Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_339_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale340Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_340_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale340Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_340_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale341Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_341_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale341Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_341_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale342Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_342_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale342Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_342_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale343Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_343_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale343Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_343_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale344Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_344_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale344Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_344_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale345Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_345_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale345Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_345_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale346Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_346_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale346Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_346_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale347Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_347_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale347Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_347_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale348Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_348_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale348Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_348_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale349Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_349_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale349Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_349_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale350Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_350_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale350Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_350_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale351Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_351_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale351Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_351_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale352Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_352_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale352Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_352_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale353Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_353_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale353Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_353_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale354Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_354_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale354Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_354_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale355Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_355_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale355Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_355_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale356Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_356_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale356Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_356_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale357Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_357_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale357Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_357_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale358Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_358_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale358Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_358_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale359Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_359_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale359Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_359_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale360Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_360_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale360Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_360_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale361Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_361_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale361Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_361_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale362Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_362_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale362Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_362_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale363Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_363_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale363Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_363_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale364Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_364_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale364Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_364_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale365Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_365_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale365Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_365_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale366Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_366_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale366Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_366_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale367Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_367_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale367Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_367_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale368Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_368_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale368Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_368_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale369Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_369_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale369Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_369_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale370Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_370_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale370Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_370_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale371Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_371_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale371Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_371_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale372Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_372_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale372Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_372_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale373Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_373_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale373Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_373_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale374Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_374_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale374Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_374_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale375Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_375_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale375Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_375_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale376Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_376_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale376Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_376_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale377Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_377_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale377Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_377_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale378Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_378_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale378Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_378_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale379Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_379_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale379Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_379_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale380Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_380_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale380Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_380_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale381Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_381_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale381Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_381_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale382Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_382_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale382Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_382_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale383Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_383_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale383Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_383_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale384Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_384_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale384Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_384_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale385Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_385_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale385Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_385_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale386Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_386_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale386Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_386_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale387Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_387_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale387Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_387_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale388Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_388_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale388Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_388_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale389Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_389_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale389Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_389_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale390Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_390_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale390Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_390_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale391Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_391_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale391Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_391_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale392Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_392_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale392Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_392_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale393Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_393_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale393Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_393_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale394Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_394_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale394Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_394_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale395Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_395_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale395Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_395_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale396Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_396_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale396Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_396_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale397Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_397_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale397Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_397_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale398Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_398_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale398Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_398_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale399Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_399_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale399Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_399_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale400Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_400_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale400Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_400_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale401Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_401_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale401Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_401_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale402Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_402_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale402Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_402_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale403Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_403_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale403Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_403_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale404Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_404_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale404Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_404_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale405Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_405_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale405Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_405_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale406Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_406_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale406Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_406_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale407Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_407_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale407Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_407_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale408Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_408_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale408Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_408_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale409Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_409_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale409Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_409_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale410Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_410_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale410Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_410_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale411Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_411_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale411Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_411_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale412Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_412_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale412Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_412_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale413Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_413_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale413Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_413_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale414Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_414_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale414Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_414_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale415Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_415_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale415Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_415_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale416Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_416_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale416Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_416_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale417Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_417_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale417Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_417_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale418Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_418_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale418Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_418_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale419Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_419_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale419Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_419_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale420Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_420_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale420Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_420_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale421Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_421_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale421Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_421_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale422Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_422_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale422Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_422_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale423Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_423_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale423Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_423_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale424Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_424_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale424Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_424_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale425Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_425_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale425Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_425_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale426Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_426_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale426Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_426_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale427Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_427_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale427Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_427_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale428Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_428_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale428Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_428_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale429Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_429_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale429Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_429_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale430Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_430_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale430Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_430_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale431Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_431_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale431Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_431_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale432Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_432_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale432Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_432_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale433Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_433_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale433Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_433_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale434Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_434_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale434Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_434_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale435Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_435_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale435Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_435_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale436Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_436_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale436Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_436_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale437Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_437_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale437Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_437_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale438Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_438_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale438Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_438_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale439Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_439_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale439Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_439_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale440Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_440_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale440Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_440_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale441Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_441_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale441Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_441_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale442Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_442_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale442Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_442_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale443Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_443_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale443Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_443_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale444Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_444_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale444Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_444_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale445Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_445_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale445Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_445_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale446Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_446_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale446Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_446_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale447Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_447_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale447Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_447_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale448Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_448_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale448Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_448_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale449Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_449_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale449Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_449_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale450Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_450_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale450Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_450_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale451Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_451_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale451Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_451_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale452Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_452_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale452Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_452_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale453Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_453_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale453Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_453_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale454Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_454_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale454Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_454_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale455Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_455_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale455Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_455_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale456Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_456_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale456Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_456_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale457Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_457_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale457Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_457_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale458Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_458_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale458Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_458_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale459Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_459_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale459Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_459_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale460Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_460_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale460Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_460_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale461Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_461_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale461Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_461_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale462Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_462_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale462Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_462_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale463Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_463_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale463Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_463_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale464Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_464_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale464Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_464_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale465Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_465_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale465Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_465_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale466Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_466_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale466Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_466_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale467Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_467_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale467Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_467_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale468Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_468_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale468Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_468_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale469Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_469_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale469Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_469_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale470Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_470_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale470Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_470_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale471Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_471_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale471Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_471_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale472Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_472_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale472Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_472_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale473Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_473_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale473Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_473_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale474Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_474_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale474Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_474_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale475Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_475_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale475Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_475_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale476Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_476_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale476Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_476_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale477Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_477_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale477Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_477_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale478Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_478_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale478Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_478_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale479Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_479_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale479Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_479_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale480Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_480_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale480Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_480_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale481Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_481_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale481Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_481_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale482Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_482_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale482Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_482_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale483Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_483_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale483Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_483_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale484Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_484_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale484Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_484_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale485Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_485_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale485Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_485_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale486Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_486_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale486Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_486_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale487Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_487_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale487Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_487_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale488Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_488_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale488Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_488_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale489Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_489_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale489Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_489_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale490Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_490_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale490Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_490_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale491Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_491_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale491Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_491_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale492Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_492_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale492Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_492_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale493Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_493_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale493Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_493_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale494Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_494_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale494Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_494_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale495Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_495_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale495Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_495_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale496Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_496_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale496Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_496_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale497Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_497_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale497Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_497_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale498Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_498_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale498Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_498_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale499Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_499_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale499Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_499_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale500Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_500_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale500Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_500_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale501Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_501_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale501Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_501_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale502Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_502_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale502Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_502_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale503Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_503_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale503Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_503_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale504Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_504_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale504Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_504_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale505Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_505_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale505Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_505_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale506Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_506_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale506Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_506_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale507Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_507_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale507Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_507_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale508Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_508_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale508Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_508_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale509Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_509_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale509Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_509_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale510Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_510_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale510Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_510_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale511Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_511_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale511Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_511_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale512Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_512_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale512Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_512_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale513Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_513_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale513Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_513_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale514Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_514_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale514Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_514_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale515Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_515_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale515Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_515_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale516Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_516_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale516Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_516_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale517Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_517_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale517Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_517_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale518Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_518_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale518Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_518_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale519Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_519_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale519Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_519_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale520Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_520_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale520Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_520_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale521Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_521_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale521Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_521_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale522Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_522_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale522Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_522_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale523Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_523_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale523Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_523_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale524Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_524_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale524Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_524_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale525Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_525_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale525Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_525_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale526Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_526_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale526Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_526_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale527Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_527_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale527Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_527_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale528Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_528_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale528Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_528_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale529Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_529_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale529Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_529_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale530Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_530_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale530Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_530_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale531Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_531_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale531Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_531_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale532Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_532_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale532Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_532_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale533Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_533_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale533Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_533_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale534Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_534_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale534Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_534_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale535Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_535_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale535Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_535_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale536Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_536_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale536Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_536_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale537Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_537_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale537Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_537_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale538Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_538_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale538Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_538_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale539Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_539_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale539Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_539_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale540Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_540_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale540Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_540_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale541Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_541_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale541Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_541_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale542Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_542_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale542Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_542_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale543Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_543_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale543Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_543_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale544Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_544_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale544Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_544_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale545Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_545_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale545Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_545_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale546Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_546_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale546Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_546_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale547Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_547_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale547Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_547_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale548Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_548_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale548Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_548_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale549Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_549_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale549Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_549_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale550Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_550_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale550Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_550_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale551Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_551_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale551Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_551_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale552Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_552_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale552Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_552_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale553Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_553_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale553Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_553_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale554Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_554_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale554Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_554_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale555Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_555_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale555Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_555_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale556Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_556_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale556Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_556_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale557Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_557_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale557Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_557_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale558Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_558_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale558Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_558_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale559Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_559_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale559Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_559_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale560Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_560_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale560Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_560_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale561Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_561_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale561Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_561_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale562Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_562_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale562Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_562_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale563Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_563_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale563Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_563_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale564Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_564_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale564Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_564_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale565Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_565_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale565Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_565_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale566Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_566_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale566Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_566_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale567Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_567_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale567Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_567_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale568Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_568_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale568Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_568_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale569Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_569_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale569Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_569_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale570Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_570_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale570Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_570_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale571Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_571_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale571Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_571_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale572Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_572_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale572Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_572_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale573Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_573_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale573Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_573_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale574Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_574_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale574Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_574_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale575Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_575_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale575Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_575_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale576Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_576_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale576Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_576_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale577Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_577_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale577Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_577_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale578Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_578_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale578Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_578_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale579Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_579_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale579Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_579_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale580Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_580_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale580Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_580_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale581Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_581_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale581Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_581_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale582Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_582_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale582Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_582_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale583Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_583_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale583Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_583_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale584Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_584_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale584Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_584_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale585Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_585_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale585Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_585_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale586Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_586_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale586Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_586_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale587Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_587_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale587Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_587_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale588Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_588_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale588Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_588_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale589Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_589_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale589Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_589_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale590Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_590_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale590Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_590_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale591Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_591_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale591Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_591_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale592Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_592_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale592Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_592_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale593Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_593_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale593Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_593_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale594Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_594_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale594Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_594_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale595Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_595_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale595Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_595_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale596Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_596_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale596Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_596_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale597Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_597_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale597Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_597_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale598Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_598_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale598Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_598_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale599Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_599_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale599Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_599_PREMIUM"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale600Free    EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_600_FREE"
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale600Premium EventPassTierSettingsTemplateID = "EVENT_PASS_GOFEST2026_FINALE_600_PREMIUM"
 )
 
 var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID{
@@ -1048,204 +2048,1204 @@ var EventPassTierSettingsTemplateIDValues = [...]EventPassTierSettingsTemplateID
 	EventPassTierSettingsTemplateIDEventPassAugust2026Season209Premium,
 	EventPassTierSettingsTemplateIDEventPassAugust2026Season210Free,
 	EventPassTierSettingsTemplateIDEventPassAugust2026Season210Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event1Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event1Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event2Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event2Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event3Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event3Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event4Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event4Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event5Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event5Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event6Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event6Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event7Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event7Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event8Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event8Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event9Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event9Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event10Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event10Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event11Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event11Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event12Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event12Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event13Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event13Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event14Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event14Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event15Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event15Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event16Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event16Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event17Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event17Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event18Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event18Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event19Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event19Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event20Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event20Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event21Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event21Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event22Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event22Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event23Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event23Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event24Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event24Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event25Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event25Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event26Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event26Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event27Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event27Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event28Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event28Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event29Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event29Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event30Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event30Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event31Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event31Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event32Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event32Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event33Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event33Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event34Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event34Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event35Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event35Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event36Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event36Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event37Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event37Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event38Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event38Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event39Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event39Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event40Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event40Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event41Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event41Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event42Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event42Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event43Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event43Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event44Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event44Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event45Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event45Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event46Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event46Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event47Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event47Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event48Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event48Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event49Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event49Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event50Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event50Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event51Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event51Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event52Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event52Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event53Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event53Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event54Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event54Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event55Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event55Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event56Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event56Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event57Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event57Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event58Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event58Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event59Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event59Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event60Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event60Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event61Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event61Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event62Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event62Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event63Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event63Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event64Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event64Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event65Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event65Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event66Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event66Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event67Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event67Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event68Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event68Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event69Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event69Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event70Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event70Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event71Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event71Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event72Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event72Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event73Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event73Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event74Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event74Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event75Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event75Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event76Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event76Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event77Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event77Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event78Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event78Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event79Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event79Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event80Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event80Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event81Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event81Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event82Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event82Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event83Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event83Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event84Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event84Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event85Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event85Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event86Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event86Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event87Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event87Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event88Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event88Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event89Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event89Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event90Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event90Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event91Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event91Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event92Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event92Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event93Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event93Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event94Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event94Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event95Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event95Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event96Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event96Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event97Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event97Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event98Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event98Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event99Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event99Premium,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event100Free,
-	EventPassTierSettingsTemplateIDEventPassWcs2026Event100Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale1Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale1Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale2Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale2Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale3Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale3Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale4Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale4Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale5Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale5Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale6Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale6Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale7Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale7Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale8Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale8Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale9Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale9Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale10Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale10Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale11Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale11Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale12Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale12Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale13Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale13Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale14Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale14Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale15Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale15Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale16Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale16Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale17Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale17Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale18Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale18Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale19Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale19Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale20Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale20Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale21Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale21Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale22Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale22Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale23Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale23Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale24Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale24Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale25Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale25Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale26Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale26Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale27Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale27Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale28Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale28Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale29Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale29Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale30Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale30Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale31Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale31Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale32Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale32Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale33Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale33Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale34Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale34Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale35Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale35Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale36Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale36Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale37Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale37Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale38Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale38Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale39Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale39Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale40Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale40Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale41Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale41Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale42Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale42Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale43Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale43Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale44Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale44Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale45Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale45Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale46Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale46Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale47Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale47Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale48Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale48Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale49Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale49Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale50Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale50Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale51Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale51Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale52Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale52Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale53Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale53Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale54Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale54Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale55Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale55Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale56Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale56Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale57Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale57Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale58Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale58Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale59Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale59Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale60Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale60Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale61Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale61Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale62Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale62Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale63Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale63Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale64Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale64Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale65Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale65Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale66Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale66Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale67Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale67Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale68Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale68Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale69Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale69Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale70Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale70Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale71Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale71Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale72Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale72Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale73Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale73Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale74Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale74Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale75Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale75Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale76Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale76Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale77Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale77Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale78Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale78Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale79Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale79Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale80Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale80Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale81Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale81Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale82Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale82Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale83Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale83Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale84Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale84Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale85Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale85Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale86Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale86Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale87Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale87Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale88Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale88Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale89Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale89Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale90Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale90Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale91Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale91Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale92Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale92Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale93Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale93Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale94Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale94Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale95Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale95Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale96Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale96Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale97Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale97Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale98Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale98Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale99Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale99Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale100Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale100Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale101Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale101Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale102Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale102Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale103Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale103Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale104Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale104Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale105Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale105Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale106Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale106Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale107Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale107Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale108Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale108Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale109Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale109Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale110Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale110Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale111Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale111Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale112Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale112Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale113Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale113Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale114Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale114Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale115Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale115Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale116Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale116Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale117Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale117Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale118Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale118Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale119Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale119Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale120Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale120Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale121Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale121Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale122Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale122Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale123Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale123Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale124Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale124Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale125Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale125Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale126Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale126Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale127Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale127Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale128Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale128Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale129Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale129Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale130Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale130Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale131Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale131Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale132Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale132Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale133Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale133Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale134Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale134Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale135Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale135Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale136Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale136Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale137Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale137Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale138Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale138Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale139Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale139Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale140Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale140Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale141Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale141Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale142Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale142Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale143Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale143Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale144Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale144Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale145Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale145Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale146Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale146Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale147Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale147Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale148Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale148Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale149Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale149Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale150Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale150Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale151Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale151Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale152Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale152Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale153Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale153Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale154Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale154Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale155Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale155Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale156Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale156Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale157Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale157Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale158Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale158Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale159Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale159Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale160Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale160Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale161Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale161Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale162Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale162Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale163Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale163Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale164Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale164Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale165Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale165Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale166Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale166Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale167Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale167Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale168Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale168Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale169Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale169Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale170Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale170Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale171Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale171Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale172Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale172Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale173Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale173Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale174Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale174Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale175Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale175Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale176Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale176Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale177Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale177Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale178Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale178Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale179Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale179Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale180Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale180Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale181Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale181Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale182Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale182Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale183Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale183Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale184Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale184Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale185Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale185Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale186Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale186Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale187Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale187Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale188Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale188Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale189Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale189Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale190Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale190Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale191Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale191Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale192Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale192Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale193Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale193Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale194Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale194Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale195Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale195Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale196Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale196Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale197Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale197Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale198Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale198Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale199Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale199Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale200Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale200Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale201Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale201Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale202Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale202Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale203Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale203Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale204Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale204Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale205Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale205Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale206Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale206Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale207Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale207Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale208Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale208Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale209Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale209Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale210Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale210Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale211Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale211Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale212Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale212Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale213Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale213Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale214Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale214Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale215Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale215Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale216Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale216Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale217Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale217Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale218Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale218Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale219Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale219Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale220Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale220Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale221Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale221Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale222Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale222Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale223Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale223Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale224Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale224Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale225Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale225Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale226Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale226Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale227Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale227Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale228Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale228Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale229Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale229Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale230Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale230Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale231Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale231Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale232Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale232Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale233Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale233Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale234Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale234Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale235Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale235Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale236Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale236Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale237Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale237Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale238Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale238Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale239Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale239Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale240Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale240Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale241Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale241Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale242Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale242Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale243Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale243Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale244Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale244Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale245Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale245Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale246Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale246Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale247Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale247Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale248Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale248Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale249Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale249Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale250Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale250Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale251Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale251Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale252Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale252Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale253Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale253Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale254Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale254Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale255Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale255Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale256Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale256Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale257Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale257Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale258Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale258Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale259Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale259Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale260Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale260Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale261Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale261Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale262Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale262Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale263Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale263Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale264Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale264Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale265Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale265Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale266Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale266Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale267Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale267Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale268Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale268Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale269Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale269Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale270Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale270Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale271Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale271Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale272Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale272Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale273Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale273Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale274Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale274Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale275Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale275Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale276Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale276Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale277Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale277Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale278Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale278Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale279Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale279Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale280Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale280Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale281Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale281Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale282Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale282Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale283Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale283Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale284Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale284Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale285Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale285Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale286Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale286Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale287Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale287Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale288Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale288Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale289Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale289Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale290Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale290Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale291Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale291Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale292Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale292Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale293Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale293Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale294Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale294Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale295Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale295Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale296Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale296Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale297Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale297Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale298Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale298Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale299Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale299Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale300Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale300Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale301Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale301Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale302Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale302Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale303Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale303Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale304Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale304Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale305Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale305Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale306Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale306Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale307Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale307Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale308Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale308Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale309Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale309Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale310Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale310Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale311Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale311Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale312Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale312Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale313Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale313Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale314Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale314Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale315Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale315Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale316Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale316Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale317Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale317Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale318Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale318Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale319Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale319Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale320Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale320Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale321Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale321Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale322Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale322Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale323Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale323Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale324Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale324Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale325Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale325Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale326Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale326Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale327Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale327Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale328Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale328Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale329Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale329Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale330Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale330Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale331Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale331Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale332Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale332Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale333Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale333Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale334Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale334Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale335Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale335Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale336Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale336Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale337Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale337Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale338Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale338Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale339Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale339Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale340Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale340Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale341Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale341Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale342Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale342Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale343Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale343Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale344Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale344Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale345Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale345Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale346Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale346Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale347Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale347Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale348Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale348Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale349Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale349Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale350Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale350Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale351Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale351Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale352Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale352Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale353Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale353Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale354Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale354Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale355Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale355Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale356Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale356Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale357Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale357Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale358Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale358Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale359Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale359Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale360Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale360Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale361Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale361Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale362Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale362Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale363Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale363Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale364Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale364Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale365Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale365Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale366Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale366Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale367Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale367Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale368Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale368Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale369Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale369Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale370Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale370Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale371Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale371Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale372Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale372Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale373Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale373Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale374Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale374Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale375Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale375Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale376Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale376Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale377Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale377Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale378Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale378Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale379Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale379Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale380Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale380Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale381Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale381Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale382Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale382Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale383Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale383Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale384Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale384Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale385Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale385Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale386Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale386Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale387Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale387Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale388Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale388Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale389Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale389Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale390Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale390Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale391Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale391Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale392Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale392Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale393Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale393Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale394Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale394Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale395Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale395Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale396Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale396Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale397Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale397Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale398Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale398Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale399Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale399Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale400Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale400Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale401Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale401Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale402Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale402Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale403Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale403Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale404Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale404Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale405Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale405Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale406Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale406Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale407Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale407Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale408Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale408Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale409Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale409Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale410Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale410Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale411Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale411Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale412Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale412Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale413Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale413Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale414Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale414Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale415Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale415Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale416Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale416Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale417Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale417Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale418Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale418Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale419Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale419Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale420Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale420Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale421Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale421Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale422Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale422Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale423Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale423Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale424Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale424Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale425Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale425Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale426Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale426Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale427Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale427Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale428Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale428Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale429Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale429Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale430Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale430Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale431Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale431Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale432Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale432Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale433Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale433Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale434Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale434Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale435Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale435Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale436Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale436Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale437Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale437Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale438Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale438Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale439Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale439Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale440Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale440Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale441Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale441Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale442Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale442Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale443Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale443Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale444Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale444Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale445Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale445Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale446Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale446Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale447Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale447Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale448Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale448Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale449Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale449Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale450Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale450Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale451Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale451Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale452Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale452Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale453Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale453Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale454Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale454Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale455Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale455Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale456Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale456Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale457Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale457Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale458Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale458Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale459Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale459Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale460Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale460Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale461Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale461Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale462Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale462Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale463Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale463Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale464Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale464Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale465Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale465Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale466Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale466Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale467Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale467Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale468Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale468Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale469Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale469Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale470Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale470Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale471Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale471Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale472Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale472Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale473Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale473Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale474Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale474Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale475Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale475Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale476Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale476Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale477Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale477Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale478Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale478Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale479Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale479Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale480Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale480Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale481Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale481Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale482Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale482Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale483Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale483Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale484Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale484Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale485Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale485Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale486Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale486Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale487Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale487Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale488Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale488Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale489Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale489Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale490Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale490Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale491Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale491Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale492Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale492Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale493Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale493Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale494Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale494Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale495Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale495Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale496Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale496Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale497Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale497Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale498Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale498Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale499Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale499Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale500Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale500Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale501Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale501Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale502Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale502Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale503Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale503Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale504Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale504Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale505Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale505Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale506Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale506Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale507Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale507Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale508Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale508Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale509Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale509Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale510Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale510Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale511Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale511Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale512Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale512Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale513Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale513Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale514Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale514Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale515Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale515Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale516Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale516Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale517Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale517Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale518Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale518Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale519Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale519Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale520Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale520Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale521Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale521Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale522Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale522Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale523Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale523Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale524Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale524Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale525Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale525Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale526Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale526Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale527Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale527Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale528Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale528Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale529Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale529Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale530Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale530Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale531Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale531Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale532Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale532Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale533Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale533Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale534Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale534Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale535Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale535Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale536Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale536Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale537Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale537Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale538Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale538Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale539Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale539Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale540Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale540Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale541Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale541Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale542Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale542Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale543Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale543Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale544Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale544Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale545Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale545Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale546Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale546Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale547Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale547Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale548Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale548Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale549Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale549Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale550Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale550Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale551Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale551Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale552Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale552Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale553Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale553Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale554Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale554Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale555Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale555Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale556Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale556Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale557Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale557Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale558Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale558Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale559Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale559Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale560Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale560Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale561Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale561Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale562Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale562Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale563Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale563Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale564Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale564Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale565Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale565Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale566Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale566Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale567Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale567Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale568Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale568Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale569Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale569Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale570Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale570Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale571Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale571Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale572Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale572Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale573Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale573Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale574Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale574Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale575Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale575Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale576Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale576Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale577Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale577Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale578Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale578Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale579Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale579Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale580Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale580Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale581Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale581Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale582Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale582Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale583Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale583Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale584Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale584Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale585Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale585Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale586Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale586Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale587Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale587Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale588Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale588Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale589Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale589Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale590Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale590Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale591Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale591Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale592Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale592Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale593Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale593Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale594Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale594Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale595Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale595Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale596Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale596Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale597Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale597Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale598Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale598Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale599Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale599Premium,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale600Free,
+	EventPassTierSettingsTemplateIDEventPassGofest2026Finale600Premium,
 }

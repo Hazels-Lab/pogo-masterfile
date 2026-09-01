@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 27 entries (structural types).
+// Generated from Pokémon GO masterfile — group "featureGate", 28 entries (structural types).
 
 import type { W } from "../_utils";
 

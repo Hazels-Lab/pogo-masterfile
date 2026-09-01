@@ -53,6 +53,8 @@ import type {
 	ItemSettingsItemEventTicketGrayToGift,
 	ItemSettingsItemEventTicketPink,
 	ItemSettingsItemEventTicketPinkToGift,
+	ItemSettingsItemEventTicketS24Sep12Community,
+	ItemSettingsItemEventTicketS24Sep12CommunityToGift,
 	ItemSettingsItemEventTicketS23202601,
 	ItemSettingsItemEventTicketS23202601ToGift,
 	ItemSettingsItemEventTicketS23202602,
@@ -235,6 +237,8 @@ export interface ItemSettingsLookup {
 	ITEM_EVENT_TICKET_S23_2026_10_TO_GIFT: ItemSettingsItemEventTicketS23202610ToGift;
 	ITEM_EVENT_TICKET_S23_2026_12: ItemSettingsItemEventTicketS23202612;
 	ITEM_EVENT_TICKET_S23_2026_12_TO_GIFT: ItemSettingsItemEventTicketS23202612ToGift;
+	ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY: ItemSettingsItemEventTicketS24Sep12Community;
+	ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY_TO_GIFT: ItemSettingsItemEventTicketS24Sep12CommunityToGift;
 	ITEM_EVERGREEN_TICKET: ItemSettingsItemEvergreenTicket;
 	ITEM_EVERGREEN_TICKET_TO_GIFT: ItemSettingsItemEvergreenTicketToGift;
 	ITEM_FREE_RAID_TICKET: ItemSettingsItemFreeRaidTicket;

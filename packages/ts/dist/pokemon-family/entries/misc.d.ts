@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonFamily", split "misc", 484 entries.
+// Generated from Pokémon GO masterfile — group "pokemonFamily", split "misc", 483 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonFamily } from "../types";
@@ -1272,14 +1272,6 @@ export type PokemonFamilyV0393FamilyPiplup = S<
 		"V0393_FAMILY_PIPLUP",
 		{
 			familyId: "FAMILY_PIPLUP";
-		}
-	>
->;
-export type PokemonFamilyV0396FamilyStarly = S<
-	PokemonFamily<
-		"V0396_FAMILY_STARLY",
-		{
-			familyId: "FAMILY_STARLY";
 		}
 	>
 >;
@@ -4036,7 +4028,6 @@ export type PokemonFamilyMiscMasterfileEntry =
 	| PokemonFamilyV0387FamilyTurtwig
 	| PokemonFamilyV0390FamilyChimchar
 	| PokemonFamilyV0393FamilyPiplup
-	| PokemonFamilyV0396FamilyStarly
 	| PokemonFamilyV0399FamilyBidoof
 	| PokemonFamilyV0401FamilyKricketot
 	| PokemonFamilyV0403FamilyShinx

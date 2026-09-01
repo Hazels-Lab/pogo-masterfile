@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "temporaryEvolutionSettings", 59 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "temporaryEvolutionSettings", 60 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { TemporaryEvolutionSettings } from "../types";
@@ -659,6 +659,20 @@ export type TemporaryEvolutionSettingsV0384PokemonRayquaza = S<
 		}
 	>
 >;
+export type TemporaryEvolutionSettingsV0398PokemonStaraptor = S<
+	TemporaryEvolutionSettings<
+		"TEMPORARY_EVOLUTION_V0398_POKEMON_STARAPTOR",
+		{
+			pokemonId: "STARAPTOR";
+			temporaryEvolutions: [
+				{
+					assetBundleValue: 51;
+					temporaryEvolutionId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+		}
+	>
+>;
 export type TemporaryEvolutionSettingsV0428PokemonGarchomp = S<
 	TemporaryEvolutionSettings<
 		"TEMPORARY_EVOLUTION_V0428_POKEMON_GARCHOMP",
@@ -889,6 +903,7 @@ export type TemporaryEvolutionSettingsMasterfileEntry =
 	| TemporaryEvolutionSettingsV0382PokemonKyogre
 	| TemporaryEvolutionSettingsV0383PokemonGroudon
 	| TemporaryEvolutionSettingsV0384PokemonRayquaza
+	| TemporaryEvolutionSettingsV0398PokemonStaraptor
 	| TemporaryEvolutionSettingsV0428PokemonGarchomp
 	| TemporaryEvolutionSettingsV0428PokemonLopunny
 	| TemporaryEvolutionSettingsV0445PokemonGarchomp

@@ -75,6 +75,8 @@ pub enum CombatLeagueTemplateId {
     CombatLeagueSafariZoneTaipei2022Test,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_COLOR_GREAT")]
     CombatLeagueVsSeekerColorGreat,
+    #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_COLOR_GREAT_MEGAS")]
+    CombatLeagueVsSeekerColorGreatMegas,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_ELEMENT_REMIX")]
     CombatLeagueVsSeekerElementRemix,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_EVOLUTION")]
@@ -111,6 +113,8 @@ pub enum CombatLeagueTemplateId {
     CombatLeagueVsSeekerGreatCatchS20,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S22")]
     CombatLeagueVsSeekerGreatCatchS22,
+    #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S24_MEGAS")]
+    CombatLeagueVsSeekerGreatCatchS24Megas,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_SEASON11")]
     CombatLeagueVsSeekerGreatCatchSeason11,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_NAIC")]
@@ -137,6 +141,8 @@ pub enum CombatLeagueTemplateId {
     CombatLeagueVsSeekerGreatHalloween,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_HALLOWEEN_LITTLE")]
     CombatLeagueVsSeekerGreatHalloweenLittle,
+    #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_HALLOWEEN_MEGAS")]
+    CombatLeagueVsSeekerGreatHalloweenMegas,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_HISUI")]
     CombatLeagueVsSeekerGreatHisui,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_HOENN")]
