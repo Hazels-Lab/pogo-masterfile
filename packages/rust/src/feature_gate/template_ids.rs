@@ -61,4 +61,6 @@ pub enum FeatureGateTemplateId {
     UpdatedPreloadedMegaAnimationFeatureGate,
     #[serde(rename = "VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE")]
     VnextPreResponseInputBlockingBehaviorFeatureGate,
+    #[serde(rename = "WAYFARER_SUBMIT_LINKOUT_FEATURE_GATE")]
+    WayfarerSubmitLinkoutFeatureGate,
 }

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatLeague", 110 entries (structural types).
+// Generated from Pokémon GO masterfile — group "combatLeague", 113 entries (structural types).
 
 import type { W } from "../_utils";
 import type { TypeEffectiveTemplateID } from "../type-effective/entries";
@@ -25,9 +25,12 @@ export interface CombatLeagueData {
 		| "COMBAT_LEAGUE_DEFAULT_ULTRA"
 		| "COMBAT_LEAGUE_VS_SEEKER_GREAT";
 	iconUrl:
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F03c91055_MegaHalloweenCup_icon.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F34c7dd20_pogo_mega_ultra_league.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F58ea0c64_pogo_mega_great_league.png"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fb5bc1551_MegaCatchCup_icon.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe00ac85c_GblMasterLeague_icon.png"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe5891216_MegaColorCup_icon.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FGBL_Pokemon_GO_Championship_Series_Logo.png"
 		| "https://prodholoholo-public-images.nianticlabs.com/LeagueIcons/gofestCatch2022_icon.png"
 		| "https://storage.googleapis.com/prod-public-images/colorCup_Icon.png"
@@ -115,7 +118,8 @@ export interface CombatLeagueData {
 				| "1741082400000"
 				| "1748980800000"
 				| "1756843200000"
-				| "1772571600000";
+				| "1772571600000"
+				| "1788897600000";
 			beforeTimestamp:
 				| "1652457600000"
 				| "1652544000000"
@@ -152,7 +156,8 @@ export interface CombatLeagueData {
 				| "1748944800000"
 				| "1756843200000"
 				| "1764709200000"
-				| "1780430400000";
+				| "1780430400000"
+				| "1796158800000";
 		};
 		pokemonLevelRange?: {
 			maxLevel: number;

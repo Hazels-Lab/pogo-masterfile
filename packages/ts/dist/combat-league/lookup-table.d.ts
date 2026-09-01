@@ -35,6 +35,7 @@ import type {
 	CombatLeagueSafariZoneTaipei202202,
 	CombatLeagueSafariZoneTaipei202203,
 	CombatLeagueVsSeekerColorGreat,
+	CombatLeagueVsSeekerColorGreatMegas,
 	CombatLeagueVsSeekerElementRemix,
 	CombatLeagueVsSeekerEvolution,
 	CombatLeagueVsSeekerFantasyUltra,
@@ -53,6 +54,7 @@ import type {
 	CombatLeagueVsSeekerGreatCatchS19,
 	CombatLeagueVsSeekerGreatCatchS20,
 	CombatLeagueVsSeekerGreatCatchS22,
+	CombatLeagueVsSeekerGreatCatchS24Megas,
 	CombatLeagueVsSeekerGreatCatchSeason11,
 	CombatLeagueVsSeekerGreatChampionshipNaic,
 	CombatLeagueVsSeekerGreatChampionshipSeries,
@@ -66,6 +68,7 @@ import type {
 	CombatLeagueVsSeekerGreatFossil,
 	CombatLeagueVsSeekerGreatHalloween,
 	CombatLeagueVsSeekerGreatHalloweenLittle,
+	CombatLeagueVsSeekerGreatHalloweenMegas,
 	CombatLeagueVsSeekerGreatHisui,
 	CombatLeagueVsSeekerGreatHoenn,
 	CombatLeagueVsSeekerGreatHoliday,
@@ -148,6 +151,7 @@ export interface CombatLeagueLookup {
 	COMBAT_LEAGUE_SAFARI_ZONE_TAIPEI_2022_POST: CombatLeagueSafariZoneTaipei2022Post;
 	COMBAT_LEAGUE_SAFARI_ZONE_TAIPEI_2022_TEST: CombatLeagueSafariZoneTaipei2022Test;
 	COMBAT_LEAGUE_VS_SEEKER_COLOR_GREAT: CombatLeagueVsSeekerColorGreat;
+	COMBAT_LEAGUE_VS_SEEKER_COLOR_GREAT_MEGAS: CombatLeagueVsSeekerColorGreatMegas;
 	COMBAT_LEAGUE_VS_SEEKER_ELEMENT_REMIX: CombatLeagueVsSeekerElementRemix;
 	COMBAT_LEAGUE_VS_SEEKER_EVOLUTION: CombatLeagueVsSeekerEvolution;
 	COMBAT_LEAGUE_VS_SEEKER_FANTASY_ULTRA: CombatLeagueVsSeekerFantasyUltra;
@@ -166,6 +170,7 @@ export interface CombatLeagueLookup {
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S19: CombatLeagueVsSeekerGreatCatchS19;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S20: CombatLeagueVsSeekerGreatCatchS20;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S22: CombatLeagueVsSeekerGreatCatchS22;
+	COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S24_MEGAS: CombatLeagueVsSeekerGreatCatchS24Megas;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_SEASON11: CombatLeagueVsSeekerGreatCatchSeason11;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_NAIC: CombatLeagueVsSeekerGreatChampionshipNaic;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_SERIES: CombatLeagueVsSeekerGreatChampionshipSeries;
@@ -179,6 +184,7 @@ export interface CombatLeagueLookup {
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_FOSSIL: CombatLeagueVsSeekerGreatFossil;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_HALLOWEEN: CombatLeagueVsSeekerGreatHalloween;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_HALLOWEEN_LITTLE: CombatLeagueVsSeekerGreatHalloweenLittle;
+	COMBAT_LEAGUE_VS_SEEKER_GREAT_HALLOWEEN_MEGAS: CombatLeagueVsSeekerGreatHalloweenMegas;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_HISUI: CombatLeagueVsSeekerGreatHisui;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_HOENN: CombatLeagueVsSeekerGreatHoenn;
 	COMBAT_LEAGUE_VS_SEEKER_GREAT_HOLIDAY: CombatLeagueVsSeekerGreatHoliday;

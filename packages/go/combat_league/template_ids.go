@@ -39,6 +39,7 @@ const (
 	CombatLeagueTemplateIDCombatLeagueSafariZoneTaipei2022Post         CombatLeagueTemplateID = "COMBAT_LEAGUE_SAFARI_ZONE_TAIPEI_2022_POST"
 	CombatLeagueTemplateIDCombatLeagueSafariZoneTaipei2022Test         CombatLeagueTemplateID = "COMBAT_LEAGUE_SAFARI_ZONE_TAIPEI_2022_TEST"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerColorGreat               CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_COLOR_GREAT"
+	CombatLeagueTemplateIDCombatLeagueVsSeekerColorGreatMegas          CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_COLOR_GREAT_MEGAS"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerElementRemix             CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_ELEMENT_REMIX"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerEvolution                CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_EVOLUTION"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerFantasyUltra             CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_FANTASY_ULTRA"
@@ -57,6 +58,7 @@ const (
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS19            CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S19"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS20            CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S20"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS22            CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S22"
+	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS24Megas       CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S24_MEGAS"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchSeason11       CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_SEASON11"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatChampionshipNaic    CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_NAIC"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatChampionshipSeries  CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_SERIES"
@@ -70,6 +72,7 @@ const (
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatFossil              CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_FOSSIL"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatHalloween           CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_HALLOWEEN"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatHalloweenLittle     CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_HALLOWEEN_LITTLE"
+	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatHalloweenMegas      CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_HALLOWEEN_MEGAS"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatHisui               CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_HISUI"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatHoenn               CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_HOENN"
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatHoliday             CombatLeagueTemplateID = "COMBAT_LEAGUE_VS_SEEKER_GREAT_HOLIDAY"
@@ -152,6 +155,7 @@ var CombatLeagueTemplateIDValues = [...]CombatLeagueTemplateID{
 	CombatLeagueTemplateIDCombatLeagueSafariZoneTaipei2022Post,
 	CombatLeagueTemplateIDCombatLeagueSafariZoneTaipei2022Test,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerColorGreat,
+	CombatLeagueTemplateIDCombatLeagueVsSeekerColorGreatMegas,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerElementRemix,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerEvolution,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerFantasyUltra,
@@ -170,6 +174,7 @@ var CombatLeagueTemplateIDValues = [...]CombatLeagueTemplateID{
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS19,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS20,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS22,
+	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchS24Megas,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatCatchSeason11,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatChampionshipNaic,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatChampionshipSeries,
@@ -183,6 +188,7 @@ var CombatLeagueTemplateIDValues = [...]CombatLeagueTemplateID{
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatFossil,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatHalloween,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatHalloweenLittle,
+	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatHalloweenMegas,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatHisui,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatHoenn,
 	CombatLeagueTemplateIDCombatLeagueVsSeekerGreatHoliday,

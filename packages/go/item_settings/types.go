@@ -2,6 +2,8 @@
 
 package item_settings
 
+import "encoding/json"
+
 type ItemSettingsExpiredIncubatorReplacement struct {
 	IncubatorReplacement string `json:"incubatorReplacement"`
 	UsesCountOverride    uint64 `json:"usesCountOverride"`
@@ -79,12 +81,12 @@ type ItemSettingsGlobalEventTicket struct {
 	EventEndTime                 string                    `json:"eventEndTime"`
 	EventStartTime               string                    `json:"eventStartTime"`
 	Giftable                     *bool                     `json:"giftable,omitempty"`
-	GiftItem                     *string                   `json:"giftItem,omitempty"`
+	GiftItem                     json.RawMessage           `json:"giftItem,omitempty"`
 	GrantBadgeBeforeEventStartMs *string                   `json:"grantBadgeBeforeEventStartMs,omitempty"`
 	IconRewards                  []ItemSettingsIconRewards `json:"iconRewards,omitempty"`
 	ItemBagDescriptionKey        string                    `json:"itemBagDescriptionKey"`
 	TextRewardsKey               *string                   `json:"textRewardsKey,omitempty"`
-	TicketItem                   *string                   `json:"ticketItem,omitempty"`
+	TicketItem                   json.RawMessage           `json:"ticketItem,omitempty"`
 	TitleImageUrl                *string                   `json:"titleImageUrl,omitempty"`
 }
 
@@ -153,7 +155,7 @@ type ItemSettings struct {
 	IncidentTicket       *ItemSettingsIncidentTicket     `json:"incidentTicket,omitempty"`
 	InventoryUpgrade     *ItemSettingsInventoryUpgrade   `json:"inventoryUpgrade,omitempty"`
 	ItemCap              *uint64                         `json:"itemCap,omitempty"`
-	ItemId               string                          `json:"itemId"`
+	ItemId               json.RawMessage                 `json:"itemId"`
 	ItemType             string                          `json:"itemType"`
 	NameOverride         *string                         `json:"nameOverride,omitempty"`
 	Potion               *ItemSettingsPotion             `json:"potion,omitempty"`

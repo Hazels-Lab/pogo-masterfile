@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", split "2", 32 entries.
+// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", split "2", 33 entries.
 
 import type { S } from "../../_utils";
 import type { MegaEvoLevelSettings } from "../types";
@@ -552,6 +552,28 @@ export type MegaEvoLevelSettings2V0384PokemonRayquaza = S<
 		}
 	>
 >;
+export type MegaEvoLevelSettings2V0398PokemonStaraptor = S<
+	MegaEvoLevelSettings<
+		"MEGA_EVOLUTION_LEVEL_2_V0398_POKEMON_STARAPTOR",
+		{
+			cooldown: {
+				bypassCostInitial: 30;
+				durationMs: "432000000";
+			};
+			effects: {
+				sameTypeExtraCatchCandy: 1;
+				sameTypeExtraCatchCandyXlChance: 0.1;
+				sameTypeExtraCatchXp: 50;
+			};
+			level: 2;
+			megaEnergyCostPerPoint: 160;
+			pokemonId: "STARAPTOR";
+			progression: {
+				pointsRequired: 7;
+			};
+		}
+	>
+>;
 export type MegaEvoLevelSettings2V0445PokemonGarchomp = S<
 	MegaEvoLevelSettings<
 		"MEGA_EVOLUTION_LEVEL_2_V0445_POKEMON_GARCHOMP",
@@ -733,6 +755,7 @@ export type MegaEvoLevelSettings2MasterfileEntry =
 	| MegaEvoLevelSettings2V0382PokemonKyogre
 	| MegaEvoLevelSettings2V0383PokemonGroudon
 	| MegaEvoLevelSettings2V0384PokemonRayquaza
+	| MegaEvoLevelSettings2V0398PokemonStaraptor
 	| MegaEvoLevelSettings2V0445PokemonGarchomp
 	| MegaEvoLevelSettings2V0652PokemonChesnaught
 	| MegaEvoLevelSettings2V0655PokemonDelphox

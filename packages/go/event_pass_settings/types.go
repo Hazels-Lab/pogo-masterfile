@@ -2,6 +2,8 @@
 
 package event_pass_settings
 
+import "encoding/json"
+
 type EventPassSettingsBonusBoxes struct {
 	IconType string `json:"iconType"`
 	Quantity uint64 `json:"quantity"`
@@ -26,13 +28,13 @@ type EventPassSettingsEventPassDisplaySettings struct {
 	EventPassTitleKey                 string                                                `json:"eventPassTitleKey"`
 	EventPassTrackUpgradeDescriptions [1]EventPassSettingsEventPassTrackUpgradeDescriptions `json:"eventPassTrackUpgradeDescriptions"`
 	HeaderIconUrl                     string                                                `json:"headerIconUrl"`
-	PremiumRewardBannerBottom         string                                                `json:"premiumRewardBannerBottom"`
-	PremiumRewardBannerImageUrl       string                                                `json:"premiumRewardBannerImageUrl"`
-	PremiumRewardBannerMiddle         string                                                `json:"premiumRewardBannerMiddle"`
-	PremiumRewardBannerTop            string                                                `json:"premiumRewardBannerTop"`
-	PremiumRewardsDescription         string                                                `json:"premiumRewardsDescription"`
-	SectionDisplayPriority            uint64                                                `json:"sectionDisplayPriority"`
-	TodayViewSection                  string                                                `json:"todayViewSection"`
+	PremiumRewardBannerBottom         *string                                               `json:"premiumRewardBannerBottom,omitempty"`
+	PremiumRewardBannerImageUrl       *string                                               `json:"premiumRewardBannerImageUrl,omitempty"`
+	PremiumRewardBannerMiddle         *string                                               `json:"premiumRewardBannerMiddle,omitempty"`
+	PremiumRewardBannerTop            *string                                               `json:"premiumRewardBannerTop,omitempty"`
+	PremiumRewardsDescription         *string                                               `json:"premiumRewardsDescription,omitempty"`
+	SectionDisplayPriority            *uint64                                               `json:"sectionDisplayPriority,omitempty"`
+	TodayViewSection                  json.RawMessage                                       `json:"todayViewSection"`
 }
 
 type EventPassSettingsTrackConditions struct {
@@ -41,9 +43,9 @@ type EventPassSettingsTrackConditions struct {
 }
 
 type EventPassSettingsTrackConditionsV2 struct {
-	Badge         string `json:"badge"`
-	Track         string `json:"track"`
-	TrackTitleKey string `json:"trackTitleKey"`
+	Badge         json.RawMessage `json:"badge"`
+	Track         string          `json:"track"`
+	TrackTitleKey string          `json:"trackTitleKey"`
 }
 
 type EventPassSettings struct {

@@ -9,6 +9,7 @@ export type ItemSettingsItemFriendGiftBox = S<
 		{
 			category: "ITEM_CATEGORY_FRIEND_GIFT_BOX";
 			dropTrainerLevel: 100;
+			itemId: "ITEM_FRIEND_GIFT_BOX";
 			itemType: "ITEM_TYPE_FRIEND_GIFT_BOX";
 		}
 	>

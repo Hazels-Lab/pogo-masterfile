@@ -10088,6 +10088,7 @@ export type PokemonSettingsV0396PokemonStarly = S<
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 25;
 			camera: {
 				cylinderHeightM: 0.3;
 				cylinderRadiusM: 0.18;
@@ -10169,6 +10170,7 @@ export type PokemonSettingsV0396PokemonStarlyNormal = S<
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 25;
 			camera: {
 				cylinderHeightM: 0.3;
 				cylinderRadiusM: 0.18;
@@ -10252,6 +10254,7 @@ export type PokemonSettingsV0397PokemonStaravia = S<
 			buddyOffsetMale: [9.5, 0, 79.5];
 			buddyScale: 19;
 			buddySize: "BUDDY_FLYING";
+			buddyWalkedMegaEnergyAward: 25;
 			camera: {
 				cylinderGroundM: 0.4;
 				cylinderHeightM: 0.5;
@@ -10341,6 +10344,7 @@ export type PokemonSettingsV0397PokemonStaraviaNormal = S<
 			buddyOffsetMale: [9.5, 0, 79.5];
 			buddyScale: 19;
 			buddySize: "BUDDY_FLYING";
+			buddyWalkedMegaEnergyAward: 25;
 			camera: {
 				cylinderGroundM: 0.4;
 				cylinderHeightM: 0.5;
@@ -10431,6 +10435,7 @@ export type PokemonSettingsV0398PokemonStaraptor = S<
 			buddyOffsetMale: [4.3, 0, 16.62];
 			buddyScale: 16;
 			buddySize: "BUDDY_FLYING";
+			buddyWalkedMegaEnergyAward: 25;
 			camera: {
 				cylinderGroundM: 1.2;
 				cylinderHeightM: 1.3;
@@ -10463,6 +10468,13 @@ export type PokemonSettingsV0398PokemonStaraptor = S<
 				shadowBaseCaptureRate: 0.125;
 				shadowDodgeProbability: 0.2;
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 60;
+				},
+			];
 			evolutionPips: 1;
 			familyId: "FAMILY_STARLY";
 			heightStdDev: 0.15;
@@ -10491,6 +10503,20 @@ export type PokemonSettingsV0398PokemonStaraptor = S<
 				baseDefense: 140;
 				baseStamina: 198;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 1.9;
+					averageWeightKg: 50;
+					stats: {
+						baseAttack: 278;
+						baseDefense: 207;
+						baseStamina: 198;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+					typeOverride1: "POKEMON_TYPE_FIGHTING";
+					typeOverride2: "POKEMON_TYPE_FLYING";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 25;
 				stardustToUnlock: 10000;
@@ -10513,6 +10539,7 @@ export type PokemonSettingsV0398PokemonStaraptorNormal = S<
 			buddyOffsetMale: [4.3, 0, 16.62];
 			buddyScale: 16;
 			buddySize: "BUDDY_FLYING";
+			buddyWalkedMegaEnergyAward: 25;
 			camera: {
 				cylinderGroundM: 1.2;
 				cylinderHeightM: 1.3;
@@ -10545,6 +10572,13 @@ export type PokemonSettingsV0398PokemonStaraptorNormal = S<
 				shadowBaseCaptureRate: 0.125;
 				shadowDodgeProbability: 0.2;
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 60;
+				},
+			];
 			evolutionPips: 1;
 			familyId: "FAMILY_STARLY";
 			form: "STARAPTOR_NORMAL";
@@ -10574,6 +10608,20 @@ export type PokemonSettingsV0398PokemonStaraptorNormal = S<
 				baseDefense: 140;
 				baseStamina: 198;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 1.9;
+					averageWeightKg: 50;
+					stats: {
+						baseAttack: 278;
+						baseDefense: 207;
+						baseStamina: 198;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+					typeOverride1: "POKEMON_TYPE_FIGHTING";
+					typeOverride2: "POKEMON_TYPE_FLYING";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 25;
 				stardustToUnlock: 10000;

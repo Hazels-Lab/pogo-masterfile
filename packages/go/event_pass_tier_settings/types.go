@@ -2,9 +2,11 @@
 
 package event_pass_tier_settings
 
+import "encoding/json"
+
 type EventPassTierSettingsBonusBoxes struct {
-	IconType string `json:"iconType"`
-	Text     string `json:"text"`
+	IconType json.RawMessage `json:"iconType"`
+	Text     string          `json:"text"`
 }
 
 type EventPassTierSettingsActiveBonusDisplaySettings struct {
@@ -32,20 +34,19 @@ type EventPassTierSettingsPlayerAttribute struct {
 	Key          string `json:"key"`
 }
 
+type EventPassTierSettingsLocationCard struct {
+	LocationCard string `json:"locationCard"`
+}
+
 type EventPassTierSettingsPokemonDisplay struct {
-	BreadModeEnum *string `json:"breadModeEnum,omitempty"`
-	Form          string  `json:"form"`
+	BreadModeEnum *string                            `json:"breadModeEnum,omitempty"`
+	Form          string                             `json:"form"`
+	LocationCard  *EventPassTierSettingsLocationCard `json:"locationCard,omitempty"`
 }
 
 type EventPassTierSettingsStatsLimitsOverride struct {
-	MaxAttack       *uint64 `json:"maxAttack,omitempty"`
-	MaxDefense      *uint64 `json:"maxDefense,omitempty"`
-	MaxHp           *uint64 `json:"maxHp,omitempty"`
-	MaxPokemonLevel uint64  `json:"maxPokemonLevel"`
-	MinAttack       *int64  `json:"minAttack,omitempty"`
-	MinDefense      *int64  `json:"minDefense,omitempty"`
-	MinHp           *int64  `json:"minHp,omitempty"`
-	MinPokemonLevel uint64  `json:"minPokemonLevel"`
+	MaxPokemonLevel uint64 `json:"maxPokemonLevel"`
+	MinPokemonLevel uint64 `json:"minPokemonLevel"`
 }
 
 type EventPassTierSettingsPokemonEncounter struct {
@@ -59,11 +60,12 @@ type EventPassTierSettingsRewards struct {
 	Candy                     *EventPassTierSettingsCandy                     `json:"candy,omitempty"`
 	Exp                       *uint64                                         `json:"exp,omitempty"`
 	Item                      *EventPassTierSettingsItem                      `json:"item,omitempty"`
+	MegaResource              *EventPassTierSettingsCandy                     `json:"megaResource,omitempty"`
 	NeutralAvatarItemTemplate *EventPassTierSettingsNeutralAvatarItemTemplate `json:"neutralAvatarItemTemplate,omitempty"`
 	PlayerAttribute           *EventPassTierSettingsPlayerAttribute           `json:"playerAttribute,omitempty"`
 	PokemonEncounter          *EventPassTierSettingsPokemonEncounter          `json:"pokemonEncounter,omitempty"`
 	Stardust                  *uint64                                         `json:"stardust,omitempty"`
-	Type                      string                                          `json:"type"`
+	Type                      json.RawMessage                                 `json:"type"`
 	XlCandy                   *EventPassTierSettingsCandy                     `json:"xlCandy,omitempty"`
 }
 

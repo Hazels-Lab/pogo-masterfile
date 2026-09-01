@@ -1,9 +1,16 @@
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(untagged)]
+pub enum IconTypeValue {
+    Uint(u64),
+    String(String),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct BonusBoxes {
-    pub icon_type: String,
+    pub icon_type: IconTypeValue,
     pub text: String,
 }
 
@@ -44,21 +51,22 @@ pub struct PlayerAttribute {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct LocationCard {
+    pub location_card: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct PokemonDisplay {
     pub bread_mode_enum: Option<String>,
     pub form: String,
+    pub location_card: Option<LocationCard>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct StatsLimitsOverride {
-    pub max_attack: Option<u64>,
-    pub max_defense: Option<u64>,
-    pub max_hp: Option<u64>,
     pub max_pokemon_level: u64,
-    pub min_attack: Option<i64>,
-    pub min_defense: Option<i64>,
-    pub min_hp: Option<i64>,
     pub min_pokemon_level: u64,
 }
 
@@ -77,11 +85,12 @@ pub struct Rewards {
     pub candy: Option<Candy>,
     pub exp: Option<u64>,
     pub item: Option<Item>,
+    pub mega_resource: Option<Candy>,
     pub neutral_avatar_item_template: Option<NeutralAvatarItemTemplate>,
     pub player_attribute: Option<PlayerAttribute>,
     pub pokemon_encounter: Option<PokemonEncounter>,
     pub stardust: Option<u64>,
-    pub r#type: String,
+    pub r#type: IconTypeValue,
     pub xl_candy: Option<Candy>,
 }
 

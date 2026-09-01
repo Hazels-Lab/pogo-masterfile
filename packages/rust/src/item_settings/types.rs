@@ -39,6 +39,13 @@ pub struct Food {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(untagged)]
+pub enum GiftItemValue {
+    Uint(u64),
+    String(String),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct Candy {
     pub amount: u64,
@@ -99,12 +106,12 @@ pub struct GlobalEventTicket {
     pub event_end_time: String,
     pub event_start_time: String,
     pub giftable: Option<bool>,
-    pub gift_item: Option<String>,
+    pub gift_item: Option<GiftItemValue>,
     pub grant_badge_before_event_start_ms: Option<String>,
     pub icon_rewards: Option<Vec<IconRewards>>,
     pub item_bag_description_key: String,
     pub text_rewards_key: Option<String>,
-    pub ticket_item: Option<String>,
+    pub ticket_item: Option<GiftItemValue>,
     pub title_image_url: Option<String>,
 }
 
@@ -197,7 +204,7 @@ pub struct ItemSettings {
     pub incident_ticket: Option<IncidentTicket>,
     pub inventory_upgrade: Option<InventoryUpgrade>,
     pub item_cap: Option<u64>,
-    pub item_id: String,
+    pub item_id: GiftItemValue,
     pub item_type: String,
     pub name_override: Option<String>,
     pub potion: Option<Potion>,

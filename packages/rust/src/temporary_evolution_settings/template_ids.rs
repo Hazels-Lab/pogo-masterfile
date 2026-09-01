@@ -99,6 +99,8 @@ pub enum TemporaryEvolutionSettingsTemplateId {
     TemporaryEvolutionV0383PokemonGroudon,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0384_POKEMON_RAYQUAZA")]
     TemporaryEvolutionV0384PokemonRayquaza,
+    #[serde(rename = "TEMPORARY_EVOLUTION_V0398_POKEMON_STARAPTOR")]
+    TemporaryEvolutionV0398PokemonStaraptor,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0428_POKEMON_GARCHOMP")]
     TemporaryEvolutionV0428PokemonGarchomp,
     #[serde(rename = "TEMPORARY_EVOLUTION_V0428_POKEMON_LOPUNNY")]

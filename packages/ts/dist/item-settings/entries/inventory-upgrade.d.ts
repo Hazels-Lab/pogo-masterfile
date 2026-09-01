@@ -13,6 +13,7 @@ export type ItemSettingsItemItemStorageUpgrade = S<
 				additionalStorage: 50;
 				upgradeType: "INCREASE_ITEM_STORAGE";
 			};
+			itemId: "ITEM_ITEM_STORAGE_UPGRADE";
 			itemType: "ITEM_TYPE_INVENTORY_UPGRADE";
 		}
 	>
@@ -27,6 +28,7 @@ export type ItemSettingsItemPokemonStorageUpgrade = S<
 				additionalStorage: 50;
 				upgradeType: "INCREASE_POKEMON_STORAGE";
 			};
+			itemId: "ITEM_POKEMON_STORAGE_UPGRADE";
 			itemType: "ITEM_TYPE_INVENTORY_UPGRADE";
 		}
 	>
@@ -41,6 +43,7 @@ export type ItemSettingsItemPostcardStorageUpgrade = S<
 				additionalStorage: 50;
 				upgradeType: "INCREASE_POSTCARD_STORAGE";
 			};
+			itemId: "ITEM_POSTCARD_STORAGE_UPGRADE";
 			itemType: "ITEM_TYPE_INVENTORY_UPGRADE";
 		}
 	>
