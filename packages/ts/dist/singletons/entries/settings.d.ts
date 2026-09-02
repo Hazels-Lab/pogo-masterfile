@@ -3590,6 +3590,13 @@ export interface LanguageSelectorSettings {
 	};
 }
 
+export interface LocationCardFeatureSettings {
+	templateId: "LOCATION_CARD_FEATURE_SETTINGS";
+	data: {
+		templateId: "LOCATION_CARD_FEATURE_SETTINGS";
+	};
+}
+
 export interface LuckyPokemonSettings {
 	templateId: "LUCKY_POKEMON_SETTINGS";
 	data: {
@@ -6342,6 +6349,7 @@ export type SingletonsSettingsMasterfileEntry =
 	| ItemInventoryUpdateSettings
 	| JoinRaidViaFriendListSettings
 	| LanguageSelectorSettings
+	| LocationCardFeatureSettings
 	| LuckyPokemonSettings
 	| MapDisplaySettings
 	| MapObjectsInteractionRangeSettings

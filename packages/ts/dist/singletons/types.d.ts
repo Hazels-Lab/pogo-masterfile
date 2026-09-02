@@ -74,6 +74,7 @@ import type {
 	ItemInventoryUpdateSettings,
 	JoinRaidViaFriendListSettings,
 	LanguageSelectorSettings,
+	LocationCardFeatureSettings,
 	LuckyPokemonSettings,
 	MainMenuChanges,
 	MapDisplaySettings,
@@ -220,6 +221,7 @@ export type ItemCurrencyValuesType = W<ItemCurrencyValues>;
 export type ItemInventoryUpdateSettingsType = W<ItemInventoryUpdateSettings>;
 export type JoinRaidViaFriendListSettingsType = W<JoinRaidViaFriendListSettings>;
 export type LanguageSelectorSettingsType = W<LanguageSelectorSettings>;
+export type LocationCardFeatureSettingsType = W<LocationCardFeatureSettings>;
 export type LuckyPokemonSettingsType = W<LuckyPokemonSettings>;
 export type MainMenuChangesType = W<MainMenuChanges>;
 export type MapDisplaySettingsType = W<MapDisplaySettings>;
@@ -366,6 +368,7 @@ export type Singletons =
 	| ItemInventoryUpdateSettingsType
 	| JoinRaidViaFriendListSettingsType
 	| LanguageSelectorSettingsType
+	| LocationCardFeatureSettingsType
 	| LuckyPokemonSettingsType
 	| MainMenuChangesType
 	| MapDisplaySettingsType

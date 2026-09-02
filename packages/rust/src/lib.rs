@@ -316,6 +316,7 @@ pub enum MasterfileEntry {
     ItemInventoryUpdateSettings(singletons::ItemInventoryUpdateSettingsEntry),
     JoinRaidViaFriendListSettings(singletons::JoinRaidViaFriendListSettingsEntry),
     LanguageSelectorSettings(singletons::LanguageSelectorSettingsEntry),
+    LocationCardFeatureSettings(singletons::LocationCardFeatureSettingsEntry),
     LuckyPokemonSettings(singletons::LuckyPokemonSettingsEntry),
     MainMenuChanges(singletons::MainMenuChangesEntry),
     MapDisplaySettings(singletons::MapDisplaySettingsEntry),
@@ -881,6 +882,9 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
             match template_id.as_deref() {
                 Some("AR_BACKEND_SETTINGS") => {
                     serde_json::from_value(value).map(Self::ArBackendSettings)
+                }
+                Some("LOCATION_CARD_FEATURE_SETTINGS") => {
+                    serde_json::from_value(value).map(Self::LocationCardFeatureSettings)
                 }
                 Some(other) => Err(serde_json::Error::custom(format!(
                     "unknown stub templateId: {}",

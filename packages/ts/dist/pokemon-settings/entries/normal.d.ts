@@ -10507,6 +10507,12 @@ export type PokemonSettingsV0398PokemonStaraptor = S<
 				{
 					averageHeightM: 1.9;
 					averageWeightKg: 50;
+					buddyPortraitOffset: [0, 0, 300];
+					camera: {
+						cylinderGroundM: 0.3;
+						cylinderHeightM: 3.6;
+						cylinderRadiusM: 1;
+					};
 					stats: {
 						baseAttack: 278;
 						baseDefense: 207;
@@ -10612,6 +10618,12 @@ export type PokemonSettingsV0398PokemonStaraptorNormal = S<
 				{
 					averageHeightM: 1.9;
 					averageWeightKg: 50;
+					buddyPortraitOffset: [0, 0, 300];
+					camera: {
+						cylinderGroundM: 0.3;
+						cylinderHeightM: 3.6;
+						cylinderRadiusM: 1;
+					};
 					stats: {
 						baseAttack: 278;
 						baseDefense: 207;

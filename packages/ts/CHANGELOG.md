@@ -2,6 +2,14 @@
 
 All notable changes to `pogo-masterfile-types` (npm) are recorded here. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.51] - 2026-09-02
+
+Automated regeneration from upstream masterfile commit `47e77226b87bf2218da12ac2930d6af19e4f3d2b`.
+
+### Added template IDs (1)
+
+- LOCATION_CARD_FEATURE_SETTINGS
+
 ## [0.1.50] - 2026-09-01
 
 Automated regeneration from upstream masterfile commit `c0a59b646b57fa36ff3edf842ba7234f3c56a20f`.
