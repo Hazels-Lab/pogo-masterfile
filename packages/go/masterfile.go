@@ -1339,6 +1339,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 				return nil, err
 			}
 			return e, nil
+		case "LOCATION_CARD_FEATURE_SETTINGS":
+			var e singletons.LocationCardFeatureSettingsEntry
+			if err := json.Unmarshal(data, &e); err != nil {
+				return nil, err
+			}
+			return e, nil
 		default:
 			return nil, fmt.Errorf("unknown stub templateId: %s", probe.TemplateID)
 		}

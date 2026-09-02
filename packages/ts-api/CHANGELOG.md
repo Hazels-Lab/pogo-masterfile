@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.53] - 2026-09-02
+
+Automated regeneration from upstream masterfile commit `47e77226b87bf2218da12ac2930d6af19e4f3d2b`.
+
+### Added template IDs (1)
+
+- LOCATION_CARD_FEATURE_SETTINGS
+
 ## [0.1.52] - 2026-09-01
 
 Automated regeneration from upstream masterfile commit `c0a59b646b57fa36ff3edf842ba7234f3c56a20f`.

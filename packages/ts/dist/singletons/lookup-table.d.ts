@@ -73,6 +73,7 @@ import type {
 	ItemInventoryUpdateSettings,
 	JoinRaidViaFriendListSettings,
 	LanguageSelectorSettings,
+	LocationCardFeatureSettings,
 	LuckyPokemonSettings,
 	MainMenuChanges,
 	MapDisplaySettings,
@@ -220,6 +221,7 @@ export interface SingletonsLookup {
 	ITEM_INVENTORY_UPDATE_SETTINGS: ItemInventoryUpdateSettings;
 	JOIN_RAID_VIA_FRIEND_LIST_SETTINGS: JoinRaidViaFriendListSettings;
 	LANGUAGE_SELECTOR_SETTINGS: LanguageSelectorSettings;
+	LOCATION_CARD_FEATURE_SETTINGS: LocationCardFeatureSettings;
 	LUCKY_POKEMON_SETTINGS: LuckyPokemonSettings;
 	MAIN_MENU_CAMERA_BUTTON_SETTINGS: MainMenuChanges;
 	MAP_DISPLAY_SETTINGS: MapDisplaySettings;

@@ -3020,6 +3020,17 @@ type LanguageSelectorSettingsEntryData struct {
 	LanguageSelectorSettings LanguageSelectorSettings `json:"languageSelectorSettings"`
 }
 
+type LocationCardFeatureSettingsEntry struct {
+	TemplateID string                               `json:"templateId"`
+	Data       LocationCardFeatureSettingsEntryData `json:"data"`
+}
+
+func (LocationCardFeatureSettingsEntry) MasterfileEntry() {}
+
+type LocationCardFeatureSettingsEntryData struct {
+	TemplateID string `json:"templateId"`
+}
+
 type LuckyPokemonSettingsEntry struct {
 	TemplateID string                        `json:"templateId"`
 	Data       LuckyPokemonSettingsEntryData `json:"data"`

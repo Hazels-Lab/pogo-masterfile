@@ -151,6 +151,8 @@ pub enum SingletonsTemplateId {
     JoinRaidViaFriendListSettings,
     #[serde(rename = "LANGUAGE_SELECTOR_SETTINGS")]
     LanguageSelectorSettings,
+    #[serde(rename = "LOCATION_CARD_FEATURE_SETTINGS")]
+    LocationCardFeatureSettings,
     #[serde(rename = "LUCKY_POKEMON_SETTINGS")]
     LuckyPokemonSettings,
     #[serde(rename = "MAIN_MENU_CAMERA_BUTTON_SETTINGS")]

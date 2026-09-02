@@ -9372,6 +9372,7 @@ LEVEL_80_CAP_SUB_0
 LEVEL_80_CAP_SUB_1
 LEVEL_80_CAP_SUB_2
 LEVEL_80_CAP_SUB_3
+LOCATION_CARD_FEATURE_SETTINGS
 LPSKU_bundle.flair.firsttime.1
 LPSKU_bundle.general1.free.1
 LPSKU_bundle.general1.medium.1

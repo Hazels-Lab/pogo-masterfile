@@ -3156,6 +3156,11 @@ crate::masterfile_entry!(JoinRaidViaFriendListSettingsEntry, JoinRaidViaFriendLi
 
 crate::masterfile_entry!(LanguageSelectorSettingsEntry, LanguageSelectorSettingsEntryData, language_selector_settings: LanguageSelectorSettings);
 
+crate::masterfile_stub_entry!(
+    LocationCardFeatureSettingsEntry,
+    LocationCardFeatureSettingsEntryData
+);
+
 crate::masterfile_entry!(LuckyPokemonSettingsEntry, LuckyPokemonSettingsEntryData, lucky_pokemon_settings: LuckyPokemonSettings);
 
 crate::masterfile_entry!(MainMenuChangesEntry, MainMenuChangesEntryData, main_menu_changes: MainMenuChanges);

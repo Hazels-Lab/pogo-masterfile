@@ -77,6 +77,7 @@ const (
 	SingletonsTemplateIDItemInventoryUpdateSettings             SingletonsTemplateID = "ITEM_INVENTORY_UPDATE_SETTINGS"
 	SingletonsTemplateIDJoinRaidViaFriendListSettings           SingletonsTemplateID = "JOIN_RAID_VIA_FRIEND_LIST_SETTINGS"
 	SingletonsTemplateIDLanguageSelectorSettings                SingletonsTemplateID = "LANGUAGE_SELECTOR_SETTINGS"
+	SingletonsTemplateIDLocationCardFeatureSettings             SingletonsTemplateID = "LOCATION_CARD_FEATURE_SETTINGS"
 	SingletonsTemplateIDLuckyPokemonSettings                    SingletonsTemplateID = "LUCKY_POKEMON_SETTINGS"
 	SingletonsTemplateIDMainMenuCameraButtonSettings            SingletonsTemplateID = "MAIN_MENU_CAMERA_BUTTON_SETTINGS"
 	SingletonsTemplateIDMapDisplaySettings                      SingletonsTemplateID = "MAP_DISPLAY_SETTINGS"
@@ -224,6 +225,7 @@ var SingletonsTemplateIDValues = [...]SingletonsTemplateID{
 	SingletonsTemplateIDItemInventoryUpdateSettings,
 	SingletonsTemplateIDJoinRaidViaFriendListSettings,
 	SingletonsTemplateIDLanguageSelectorSettings,
+	SingletonsTemplateIDLocationCardFeatureSettings,
 	SingletonsTemplateIDLuckyPokemonSettings,
 	SingletonsTemplateIDMainMenuCameraButtonSettings,
 	SingletonsTemplateIDMapDisplaySettings,
