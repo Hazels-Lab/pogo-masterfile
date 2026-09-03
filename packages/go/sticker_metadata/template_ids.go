@@ -433,6 +433,9 @@ const (
 	StickerMetadataTemplateIDStickerPikachuJol                   StickerMetadataTemplateID = "STICKER_PIKACHU_JOL"
 	StickerMetadataTemplateIDStickerPokemonchatpals204           StickerMetadataTemplateID = "STICKER_POKEMONCHATPALS2_04"
 	StickerMetadataTemplateIDStickerPokemonchatpals240           StickerMetadataTemplateID = "STICKER_POKEMONCHATPALS2_40"
+	StickerMetadataTemplateIDStickerPokexcitingBlue              StickerMetadataTemplateID = "STICKER_POKEXCITING_BLUE"
+	StickerMetadataTemplateIDStickerPokexcitingPink              StickerMetadataTemplateID = "STICKER_POKEXCITING_PINK"
+	StickerMetadataTemplateIDStickerPokexcitingRed               StickerMetadataTemplateID = "STICKER_POKEXCITING_RED"
 	StickerMetadataTemplateIDStickerPokexcitingTurqoise          StickerMetadataTemplateID = "STICKER_POKEXCITING_TURQOISE"
 	StickerMetadataTemplateIDStickerPokopiaBulbasaur             StickerMetadataTemplateID = "STICKER_POKOPIA_BULBASAUR"
 	StickerMetadataTemplateIDStickerPokopiaPikachu               StickerMetadataTemplateID = "STICKER_POKOPIA_PIKACHU"
@@ -1060,6 +1063,9 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDStickerPikachuJol,
 	StickerMetadataTemplateIDStickerPokemonchatpals204,
 	StickerMetadataTemplateIDStickerPokemonchatpals240,
+	StickerMetadataTemplateIDStickerPokexcitingBlue,
+	StickerMetadataTemplateIDStickerPokexcitingPink,
+	StickerMetadataTemplateIDStickerPokexcitingRed,
 	StickerMetadataTemplateIDStickerPokexcitingTurqoise,
 	StickerMetadataTemplateIDStickerPokopiaBulbasaur,
 	StickerMetadataTemplateIDStickerPokopiaPikachu,

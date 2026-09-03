@@ -149,6 +149,8 @@ pub enum ItemSettingsTemplateId {
     ItemEventTicketS24Sep12Community,
     #[serde(rename = "ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY_TO_GIFT")]
     ItemEventTicketS24Sep12CommunityToGift,
+    #[serde(rename = "ITEM_EVENT_TICKET_S24_SEP_19_MEGARAID")]
+    ItemEventTicketS24Sep19Megaraid,
     #[serde(rename = "ITEM_EVERGREEN_TICKET")]
     ItemEvergreenTicket,
     #[serde(rename = "ITEM_EVERGREEN_TICKET_TO_GIFT")]

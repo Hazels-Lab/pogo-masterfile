@@ -2,6 +2,22 @@
 
 All notable changes to `pogo-masterfile-types` (npm) are recorded here. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.52] - 2026-09-03
+
+Automated regeneration from upstream masterfile commit `ad1c9943786a6081ac90645e94756cd10e61205a`.
+
+### Added template IDs (9)
+
+- ITEM_EVENT_TICKET_S24_SEP_19_MEGARAID
+- LC_SPECIALBACKGROUND_MIDAUTUMN_2026
+- LC_TPC30_MY
+- LC_TPC30_PH
+- LC_TPC30_SG
+- LC_TPC30_TW
+- STICKER_POKEXCITING_BLUE
+- STICKER_POKEXCITING_PINK
+- STICKER_POKEXCITING_RED
+
 ## [0.1.51] - 2026-09-02
 
 Automated regeneration from upstream masterfile commit `47e77226b87bf2218da12ac2930d6af19e4f3d2b`.

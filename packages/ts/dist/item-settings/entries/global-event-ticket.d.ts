@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 50 entries.
+// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 51 entries.
 
 import type { S } from "../../_utils";
 import type { ItemSettings } from "../types";
@@ -1409,7 +1409,7 @@ export type ItemSettingsItemEventTicketS24Sep12Community = S<
 			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
 			descriptionOverride: "item_event_ticket_pink_details_CDC_Gible26";
 			globalEventTicket: {
-				backgroundImageUrl: "https://storage.googleapis.com/prod-public-images/pink-ticket-generic1024x512.jpg";
+				backgroundImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fdaa6a9dd_PGO_MCS_CD_Classic_KeyArt_Gible_v1-1024x576.jpg";
 				clientEventEndTimeUtcMs: "1789232400000";
 				clientEventStartTimeUtcMs: "1789221600000";
 				detailsLinkKey: "details_link_key";
@@ -1447,7 +1447,6 @@ export type ItemSettingsItemEventTicketS24Sep12Community = S<
 				];
 				itemBagDescriptionKey: "item_event_ticket_pink_desc_CDC_Gible26";
 				textRewardsKey: "text_rewards_key_CDC_Gible26";
-				titleImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fdaa6a9dd_PGO_MCS_CD_Classic_KeyArt_Gible_v1-1024x576.jpg";
 			};
 			itemId: 2253;
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
@@ -1474,6 +1473,48 @@ export type ItemSettingsItemEventTicketS24Sep12CommunityToGift = S<
 			itemId: 2254;
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general1.ticket_CDC_Gible26_title";
+		}
+	>
+>;
+export type ItemSettingsItemEventTicketS24Sep19Megaraid = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S24_SEP_19_MEGARAID",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "item_event_ticket_gray_desc_MegaStaraptorRaidDay";
+			globalEventTicket: {
+				backgroundImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fc397eb56_PGO-MCS_Staraptor_Super_Mega_Raid_Day_v1-1024x576.jpg";
+				clientEventEndTimeUtcMs: "1789837200000";
+				clientEventStartTimeUtcMs: "1789826400000";
+				detailsLinkKey: "details_link_key_mega_staraptor_raid_day";
+				displayV2Enabled: true;
+				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fc397eb56_PGO-MCS_Staraptor_Super_Mega_Raid_Day_v1-1024x576.jpg";
+				eventDatetimeRangeKey: "event_datetime_range_key_MegaStaraptorRaidDay";
+				eventEndTime: "2026-09-19T17:00:00";
+				eventStartTime: "2026-09-19T14:00:00";
+				giftable: true;
+				giftItem: 2256;
+				iconRewards: [
+					{
+						item: {
+							amount: 8;
+							item: "ITEM_FREE_RAID_TICKET";
+						};
+						type: "ITEM";
+					},
+					{
+						item: {
+							item: "ITEM_XL_RARE_CANDY";
+						};
+						type: "ITEM";
+					},
+				];
+				itemBagDescriptionKey: "item_event_ticket_gray_desc_MegaStaraptorRaidDay";
+				textRewardsKey: "text_rewards_key_MegaStaraptorRaidDay";
+			};
+			itemId: 2255;
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general1.ticket.5_MegaStaraptorRaidDay";
 		}
 	>
 >;
@@ -1738,6 +1779,7 @@ export type ItemSettingsGlobalEventTicketMasterfileEntry =
 	| ItemSettingsItemEventTicketS23202612ToGift
 	| ItemSettingsItemEventTicketS24Sep12Community
 	| ItemSettingsItemEventTicketS24Sep12CommunityToGift
+	| ItemSettingsItemEventTicketS24Sep19Megaraid
 	| ItemSettingsItemEvergreenTicket
 	| ItemSettingsItemEvergreenTicketToGift
 	| ItemSettingsItemGlobalEventTicket

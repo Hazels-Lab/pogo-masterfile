@@ -14,6 +14,7 @@ import type { LocationCardSettingsPokelidMasterfileEntry } from "./pokelid";
 import type { LocationCardSettingsSpecialMasterfileEntry } from "./special";
 import type { LocationCardSettingsSpecialbackgroundMasterfileEntry } from "./specialbackground";
 import type { LocationCardSettingsTokmunMasterfileEntry } from "./tokmun";
+import type { LocationCardSettingsTpc30MasterfileEntry } from "./tpc30";
 
 export type * from "./2023";
 export type * from "./2024";
@@ -29,6 +30,7 @@ export type * from "./pokelid";
 export type * from "./special";
 export type * from "./specialbackground";
 export type * from "./tokmun";
+export type * from "./tpc30";
 
 export type LocationCardSettingsMasterfileEntry =
 	| LocationCardSettings2023MasterfileEntry
@@ -44,6 +46,7 @@ export type LocationCardSettingsMasterfileEntry =
 	| LocationCardSettingsPokelidMasterfileEntry
 	| LocationCardSettingsSpecialMasterfileEntry
 	| LocationCardSettingsSpecialbackgroundMasterfileEntry
-	| LocationCardSettingsTokmunMasterfileEntry;
+	| LocationCardSettingsTokmunMasterfileEntry
+	| LocationCardSettingsTpc30MasterfileEntry;
 
 export type LocationCardSettingsTemplateID = LocationCardSettingsMasterfileEntry["templateId"];

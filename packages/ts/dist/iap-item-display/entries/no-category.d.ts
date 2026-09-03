@@ -541,7 +541,7 @@ export type IapItemDisplayEventPassSeptember1EventStoreRedirect = S<
 			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
 			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F13d4dacd_PGO-MCS_Avatar_Maschiff_Top_v2-1024x576%20no%20logo.png";
-			sku: "pgorelease.september1_2026_deluxe_event_pass_track_redirect";
+			sku: "pgorelease.september1_2026_deluxe_event_pass_track_unlock_redirect";
 			skuDisableTime: "2025-09-16T20:00:00";
 			skuDisableTimeUtcMs: "1758052800000";
 			skuEnableTime: "2025-09-08T10:00:00";

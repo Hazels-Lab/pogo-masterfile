@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-release-date", 116 entries.
+// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-release-date", 120 entries.
 
 import type { S } from "../../_utils";
 import type { StickerMetadata } from "../types";
@@ -863,6 +863,46 @@ export type StickerMetadataPikaairtaiwanSnorlax = S<
 		}
 	>
 >;
+export type StickerMetadataPokexcitingBlue = S<
+	StickerMetadata<
+		"STICKER_POKEXCITING_BLUE",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PIKACHU";
+			releaseDate: 20260902;
+		}
+	>
+>;
+export type StickerMetadataPokexcitingPink = S<
+	StickerMetadata<
+		"STICKER_POKEXCITING_PINK",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PIKACHU";
+			releaseDate: 20260902;
+		}
+	>
+>;
+export type StickerMetadataPokexcitingRed = S<
+	StickerMetadata<
+		"STICKER_POKEXCITING_RED",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PIKACHU";
+			releaseDate: 20260902;
+		}
+	>
+>;
+export type StickerMetadataPokexcitingTurqoise = S<
+	StickerMetadata<
+		"STICKER_POKEXCITING_TURQOISE",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PIKACHU";
+			releaseDate: 20260902;
+		}
+	>
+>;
 export type StickerMetadataPokopiaBulbasaur = S<
 	StickerMetadata<
 		"STICKER_POKOPIA_BULBASAUR",
@@ -1251,6 +1291,10 @@ export type StickerMetadataPokemonIdReleaseDateMasterfileEntry =
 	| StickerMetadataPikaairsingaporePikachu
 	| StickerMetadataPikaairtaiwanPikachu
 	| StickerMetadataPikaairtaiwanSnorlax
+	| StickerMetadataPokexcitingBlue
+	| StickerMetadataPokexcitingPink
+	| StickerMetadataPokexcitingRed
+	| StickerMetadataPokexcitingTurqoise
 	| StickerMetadataPokopiaBulbasaur
 	| StickerMetadataPokopiaPikachu
 	| StickerMetadataPokopiaSnorlax

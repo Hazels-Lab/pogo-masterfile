@@ -191,8 +191,8 @@ pub enum MasterfileEntry {
     MoveSettings(move_settings::MoveSettingsEntry),
     CombatMove(combat_move::CombatMoveEntry),
     MoveSequenceSettings(move_sequence_settings::MoveSequenceSettingsEntry),
-    SettingsOverrideRule(settings_override_rule::SettingsOverrideRuleEntry),
     LocationCardSettings(location_card_settings::LocationCardSettingsEntry),
+    SettingsOverrideRule(settings_override_rule::SettingsOverrideRuleEntry),
     ItemSettings(item_settings::ItemSettingsEntry),
     MegaEvoLevelSettings(mega_evo_level_settings::MegaEvoLevelSettingsEntry),
     CombatLeague(combat_league::CombatLeagueEntry),
@@ -439,11 +439,11 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "moveSequenceSettings" => {
                     serde_json::from_value(value).map(Self::MoveSequenceSettings)
                 }
-                "settingsOverrideRule" => {
-                    serde_json::from_value(value).map(Self::SettingsOverrideRule)
-                }
                 "locationCardSettings" => {
                     serde_json::from_value(value).map(Self::LocationCardSettings)
+                }
+                "settingsOverrideRule" => {
+                    serde_json::from_value(value).map(Self::SettingsOverrideRule)
                 }
                 "itemSettings" => serde_json::from_value(value).map(Self::ItemSettings),
                 "megaEvoLevelSettings" => {

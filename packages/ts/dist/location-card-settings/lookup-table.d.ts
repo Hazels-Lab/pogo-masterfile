@@ -239,6 +239,7 @@ import type {
 	LocationCardSettingsSpecialbackgroundGg2026,
 	LocationCardSettingsSpecialbackgroundKr2025Lotte01,
 	LocationCardSettingsSpecialbackgroundLego202601,
+	LocationCardSettingsSpecialbackgroundMidautumn2026,
 	LocationCardSettingsSpecialbackgroundObservatoryExhibitionTour,
 	LocationCardSettingsSpecialbackgroundPok2026,
 	LocationCardSettingsSpecialbackgroundTeamBlue,
@@ -247,6 +248,10 @@ import type {
 	LocationCardSettingsTokmunStamp01,
 	LocationCardSettingsTokmunStamp02,
 	LocationCardSettingsTokmunStamp03,
+	LocationCardSettingsTpc30My,
+	LocationCardSettingsTpc30Ph,
+	LocationCardSettingsTpc30Sg,
+	LocationCardSettingsTpc30Tw,
 } from "./entries";
 
 export interface LocationCardSettingsLookup {
@@ -488,6 +493,7 @@ export interface LocationCardSettingsLookup {
 	LC_SPECIALBACKGROUND_GG2026: LocationCardSettingsSpecialbackgroundGg2026;
 	LC_SPECIALBACKGROUND_KR2025_LOTTE_01: LocationCardSettingsSpecialbackgroundKr2025Lotte01;
 	LC_SPECIALBACKGROUND_LEGO_2026_01: LocationCardSettingsSpecialbackgroundLego202601;
+	LC_SPECIALBACKGROUND_MIDAUTUMN_2026: LocationCardSettingsSpecialbackgroundMidautumn2026;
 	LC_SPECIALBACKGROUND_OBSERVATORY_EXHIBITION_TOUR: LocationCardSettingsSpecialbackgroundObservatoryExhibitionTour;
 	LC_SPECIALBACKGROUND_POK2026: LocationCardSettingsSpecialbackgroundPok2026;
 	LC_SPECIALBACKGROUND_TEAM_BLUE: LocationCardSettingsSpecialbackgroundTeamBlue;
@@ -496,4 +502,8 @@ export interface LocationCardSettingsLookup {
 	LC_TOKMUN_STAMP_01: LocationCardSettingsTokmunStamp01;
 	LC_TOKMUN_STAMP_02: LocationCardSettingsTokmunStamp02;
 	LC_TOKMUN_STAMP_03: LocationCardSettingsTokmunStamp03;
+	LC_TPC30_MY: LocationCardSettingsTpc30My;
+	LC_TPC30_PH: LocationCardSettingsTpc30Ph;
+	LC_TPC30_SG: LocationCardSettingsTpc30Sg;
+	LC_TPC30_TW: LocationCardSettingsTpc30Tw;
 }

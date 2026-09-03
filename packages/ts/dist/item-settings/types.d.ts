@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", 164 entries (structural types).
+// Generated from Pokémon GO masterfile — group "itemSettings", 165 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -64,6 +64,7 @@ export interface ItemSettingsData {
 		| "item_event_ticket_gray_desc_MegaFalinksRaidDay"
 		| "item_event_ticket_gray_desc_MegaRaichuRaidDay"
 		| "item_event_ticket_gray_desc_MegaSkarmoryRaidDay"
+		| "item_event_ticket_gray_desc_MegaStaraptorRaidDay"
 		| "item_event_ticket_gray_desc_shayminmasterworkrerun"
 		| "item_event_ticket_pink_details_CD_Frigibax26"
 		| "item_event_ticket_pink_details_CD_Nickit26"
@@ -131,6 +132,8 @@ export interface ItemSettingsData {
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F97c2eaee_PGO-MCS_Raichu_Super_Mega_Raid_Day_v3-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fc397eb56_PGO-MCS_Staraptor_Super_Mega_Raid_Day_v1-1024x576.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fdaa6a9dd_PGO_MCS_CD_Classic_KeyArt_Gible_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512_logoless.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO_MCS_CD_KeyArt_Frigibax_v1-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-deino-community-day-classic-2026-nologo.jpg"
@@ -178,6 +181,7 @@ export interface ItemSettingsData {
 			| "1786899600000"
 			| "1787418000000"
 			| "1789232400000"
+			| "1789837200000"
 			| "1790071200000";
 		clientEventStartTimeUtcMs:
 			| "1696845600000"
@@ -208,7 +212,8 @@ export interface ItemSettingsData {
 			| "1786888800000"
 			| "1787396400000"
 			| "1788872400000"
-			| "1789221600000";
+			| "1789221600000"
+			| "1789826400000";
 		conflictStoryQuestIds?: ["RERUN_MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER", "MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER"];
 		detailsLinkKey?:
 			| "details_link_key"
@@ -217,6 +222,7 @@ export interface ItemSettingsData {
 			| "details_link_key_fashion_raid_day"
 			| "details_link_key_mega_falinks_raid_day"
 			| "details_link_key_mega_skarmory_raid_day"
+			| "details_link_key_mega_staraptor_raid_day"
 			| "details_link_key_MegaRaichuRaidDay"
 			| "details_link_key_MegaStarmieRaidDay"
 			| "details_link_key_ORICORIO_MASTERY_FEB2026"
@@ -234,6 +240,7 @@ export interface ItemSettingsData {
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F97c2eaee_PGO-MCS_Raichu_Super_Mega_Raid_Day_v3-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fc397eb56_PGO-MCS_Staraptor_Super_Mega_Raid_Day_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO_MCS_CD_KeyArt_Frigibax_v1-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO_MCS_MasterBall_KeyArt_TK_GP_V2_S14_1024x512_nologo.jpg"
@@ -270,6 +277,7 @@ export interface ItemSettingsData {
 			| "event_datetime_range_key_MegaRaichuRaidDay"
 			| "event_datetime_range_key_MegaRayquaza26"
 			| "event_datetime_range_key_MegaSkarmoryRaidDay"
+			| "event_datetime_range_key_MegaStaraptorRaidDay"
 			| "event_datetime_range_key_PawPrint_20250620"
 			| "event_datetime_range_key_REPLAY_GO_BIGGER"
 			| "event_datetime_range_key_Riolu0426"
@@ -304,6 +312,7 @@ export interface ItemSettingsData {
 			| "2026-08-16T17:00:00"
 			| "2026-08-22T17:00:00"
 			| "2026-09-12T17:00:00"
+			| "2026-09-19T17:00:00"
 			| "2026-09-22T10:00:00";
 		eventStartTime:
 			| "2023-10-09T10:00:00"
@@ -334,7 +343,8 @@ export interface ItemSettingsData {
 			| "2026-08-16T14:00:00"
 			| "2026-08-22T11:00:00"
 			| "2026-09-08T13:00:00"
-			| "2026-09-12T14:00:00";
+			| "2026-09-12T14:00:00"
+			| "2026-09-19T14:00:00";
 		giftable?: boolean;
 		giftItem?:
 			| number
@@ -456,6 +466,7 @@ export interface ItemSettingsData {
 			| "item_event_ticket_gray_desc_FinalJustice2025"
 			| "item_event_ticket_gray_desc_MegaFalinksRaidDay"
 			| "item_event_ticket_gray_desc_MegaRaichuRaidDay"
+			| "item_event_ticket_gray_desc_MegaStaraptorRaidDay"
 			| "item_event_ticket_gray_details_ENTEI_SHADOW_RAID_DAY"
 			| "item_event_ticket_gray_details_MegaRaichuRaidDay"
 			| "item_event_ticket_gray_details_MegaSkarmoryRaidDay"
@@ -490,6 +501,7 @@ export interface ItemSettingsData {
 			| "text_rewards_key_MegaFalinksRaidDay"
 			| "text_rewards_key_MegaRayquaza26"
 			| "text_rewards_key_MegaSkarmoryRaidDay"
+			| "text_rewards_key_MegaStaraptorRaidDay"
 			| "text_rewards_key_PawPrint_20250620"
 			| "text_rewards_key_RaichuRaidDay"
 			| "text_rewards_key_REPLAY_GO_BIGGER"
@@ -519,9 +531,7 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S23_2026_12"
 			| "ITEM_EVERGREEN_TICKET"
 			| "ITEM_GLOBAL_EVENT_TICKET";
-		titleImageUrl?:
-			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fdaa6a9dd_PGO_MCS_CD_Classic_KeyArt_Gible_v1-1024x576.jpg"
-			| "https://storage.googleapis.com/prod-public-images/gotourlogo_1914247967.png";
+		titleImageUrl?: "https://storage.googleapis.com/prod-public-images/gotourlogo_1914247967.png";
 	};
 	hideItemInInventory?: boolean;
 	ignoreInventorySpace?: boolean;
@@ -586,6 +596,7 @@ export interface ItemSettingsData {
 		| "general1.ticket.4_gmaxRillaboom26_title"
 		| "general1.ticket.4_Riolu0426_title"
 		| "general1.ticket.5_IntoTDepths26_title"
+		| "general1.ticket.5_MegaStaraptorRaidDay"
 		| "general1.ticket.5.ENTEI_SHADOW_RAID_DAY"
 		| "general2.ticket.5_MegaFalinksRaidDay"
 		| "general2.ticket.5_MegaRaichuRaidDay"

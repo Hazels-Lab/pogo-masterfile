@@ -4,6 +4,22 @@ All notable changes to the Go module are recorded here. The format is based on [
 
 > Note: Go module releases for this package are tagged as `packages/go/vX.Y.Z` (subdirectory-prefixed), per Go's monorepo tagging rules.
 
+## [0.1.47] - 2026-09-03
+
+Automated regeneration from upstream masterfile commit `ad1c9943786a6081ac90645e94756cd10e61205a`.
+
+### Added template IDs (9)
+
+- ITEM_EVENT_TICKET_S24_SEP_19_MEGARAID
+- LC_SPECIALBACKGROUND_MIDAUTUMN_2026
+- LC_TPC30_MY
+- LC_TPC30_PH
+- LC_TPC30_SG
+- LC_TPC30_TW
+- STICKER_POKEXCITING_BLUE
+- STICKER_POKEXCITING_PINK
+- STICKER_POKEXCITING_RED
+
 ## [0.1.46] - 2026-09-02
 
 Automated regeneration from upstream masterfile commit `47e77226b87bf2218da12ac2930d6af19e4f3d2b`.
