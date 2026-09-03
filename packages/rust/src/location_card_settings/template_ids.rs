@@ -483,6 +483,8 @@ pub enum LocationCardSettingsTemplateId {
     LcSpecialbackgroundKr2025Lotte01,
     #[serde(rename = "LC_SPECIALBACKGROUND_LEGO_2026_01")]
     LcSpecialbackgroundLego202601,
+    #[serde(rename = "LC_SPECIALBACKGROUND_MIDAUTUMN_2026")]
+    LcSpecialbackgroundMidautumn2026,
     #[serde(rename = "LC_SPECIALBACKGROUND_OBSERVATORY_EXHIBITION_TOUR")]
     LcSpecialbackgroundObservatoryExhibitionTour,
     #[serde(rename = "LC_SPECIALBACKGROUND_POK2026")]
@@ -499,4 +501,12 @@ pub enum LocationCardSettingsTemplateId {
     LcTokmunStamp02,
     #[serde(rename = "LC_TOKMUN_STAMP_03")]
     LcTokmunStamp03,
+    #[serde(rename = "LC_TPC30_MY")]
+    LcTpc30My,
+    #[serde(rename = "LC_TPC30_PH")]
+    LcTpc30Ph,
+    #[serde(rename = "LC_TPC30_SG")]
+    LcTpc30Sg,
+    #[serde(rename = "LC_TPC30_TW")]
+    LcTpc30Tw,
 }

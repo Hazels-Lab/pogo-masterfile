@@ -243,6 +243,7 @@ const (
 	LocationCardSettingsTemplateIDLcSpecialbackgroundGg2026                               LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_GG2026"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundKr2025Lotte01                        LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_KR2025_LOTTE_01"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundLego202601                           LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_LEGO_2026_01"
+	LocationCardSettingsTemplateIDLcSpecialbackgroundMidautumn2026                        LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_MIDAUTUMN_2026"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundObservatoryExhibitionTour            LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_OBSERVATORY_EXHIBITION_TOUR"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundPok2026                              LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_POK2026"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundTeamBlue                             LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_TEAM_BLUE"
@@ -251,6 +252,10 @@ const (
 	LocationCardSettingsTemplateIDLcTokmunStamp01                                         LocationCardSettingsTemplateID = "LC_TOKMUN_STAMP_01"
 	LocationCardSettingsTemplateIDLcTokmunStamp02                                         LocationCardSettingsTemplateID = "LC_TOKMUN_STAMP_02"
 	LocationCardSettingsTemplateIDLcTokmunStamp03                                         LocationCardSettingsTemplateID = "LC_TOKMUN_STAMP_03"
+	LocationCardSettingsTemplateIDLcTpc30My                                               LocationCardSettingsTemplateID = "LC_TPC30_MY"
+	LocationCardSettingsTemplateIDLcTpc30Ph                                               LocationCardSettingsTemplateID = "LC_TPC30_PH"
+	LocationCardSettingsTemplateIDLcTpc30Sg                                               LocationCardSettingsTemplateID = "LC_TPC30_SG"
+	LocationCardSettingsTemplateIDLcTpc30Tw                                               LocationCardSettingsTemplateID = "LC_TPC30_TW"
 )
 
 var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
@@ -492,6 +497,7 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLcSpecialbackgroundGg2026,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundKr2025Lotte01,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundLego202601,
+	LocationCardSettingsTemplateIDLcSpecialbackgroundMidautumn2026,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundObservatoryExhibitionTour,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundPok2026,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundTeamBlue,
@@ -500,4 +506,8 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLcTokmunStamp01,
 	LocationCardSettingsTemplateIDLcTokmunStamp02,
 	LocationCardSettingsTemplateIDLcTokmunStamp03,
+	LocationCardSettingsTemplateIDLcTpc30My,
+	LocationCardSettingsTemplateIDLcTpc30Ph,
+	LocationCardSettingsTemplateIDLcTpc30Sg,
+	LocationCardSettingsTemplateIDLcTpc30Tw,
 }

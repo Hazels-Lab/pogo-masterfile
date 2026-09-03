@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "stickerMetadata", 624 entries (structural types).
+// Generated from Pokémon GO masterfile — group "stickerMetadata", 627 entries (structural types).
 
 import type { W } from "../_utils";
 

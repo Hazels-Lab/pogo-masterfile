@@ -170,49 +170,9 @@ export type FeatureGateMega2026 = S<
 			status: 216426293;
 			subFeatureGateList: [
 				{
-					name: "MEGA_LEVELS_TUTORIAL_SUB_FEATURE_GATE";
-					rolloutPercentage: 100;
-					status: 817843414;
-				},
-				{
-					name: "MEGA_EVOLVE_BUTTON_SUB_FEATURE_GATE";
-					rolloutPercentage: 100;
-					status: 466713653;
-				},
-				{
-					name: "MEGA_HUD_SUB_FEATURE_GATE";
-					rolloutPercentage: 100;
-					status: 292744512;
-				},
-				{
-					name: "MEGA_HUD_TIMER_SUB_FEATURE_GATE";
-					rolloutPercentage: 100;
-					status: 991283745;
-				},
-				{
-					name: "MEGA_2026_FTUE_SUB_FEATURE_GATE";
-					rolloutPercentage: 100;
-					status: 382901475;
-				},
-				{
-					name: "MEGA_LEVEL_4_ENABLED_SUB_FEATURE_GATE";
-					rolloutPercentage: 100;
-					status: 311989544;
-				},
-				{
-					name: "REMOTE_NC_HELP_TEXT_SUB_FEATURE_GATE";
-					rolloutPercentage: 100;
-					status: 222;
-				},
-				{
 					name: "MEGA_LEVEL_SPEEDUP_SUB_FEATURE_GATE";
 					rolloutPercentage: 100;
 					status: 344171892;
-				},
-				{
-					name: "THIRD_CHARGE_MOVE_SUB_FEATURE_GATE";
-					rolloutPercentage: 100;
-					status: 755488416;
 				},
 				{
 					name: "MEGA_COMBAT_BUTTONS_SUB_FEATURE_GATE";

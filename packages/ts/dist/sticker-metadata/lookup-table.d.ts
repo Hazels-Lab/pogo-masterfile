@@ -429,6 +429,9 @@ import type {
 	StickerMetadataPikachuJol,
 	StickerMetadataPokemonchatpals204,
 	StickerMetadataPokemonchatpals240,
+	StickerMetadataPokexcitingBlue,
+	StickerMetadataPokexcitingPink,
+	StickerMetadataPokexcitingRed,
 	StickerMetadataPokexcitingTurqoise,
 	StickerMetadataPokopiaBulbasaur,
 	StickerMetadataPokopiaPikachu,
@@ -1056,6 +1059,9 @@ export interface StickerMetadataLookup {
 	STICKER_PIKACHU_JOL: StickerMetadataPikachuJol;
 	STICKER_POKEMONCHATPALS2_04: StickerMetadataPokemonchatpals204;
 	STICKER_POKEMONCHATPALS2_40: StickerMetadataPokemonchatpals240;
+	STICKER_POKEXCITING_BLUE: StickerMetadataPokexcitingBlue;
+	STICKER_POKEXCITING_PINK: StickerMetadataPokexcitingPink;
+	STICKER_POKEXCITING_RED: StickerMetadataPokexcitingRed;
 	STICKER_POKEXCITING_TURQOISE: StickerMetadataPokexcitingTurqoise;
 	STICKER_POKOPIA_BULBASAUR: StickerMetadataPokopiaBulbasaur;
 	STICKER_POKOPIA_PIKACHU: StickerMetadataPokopiaPikachu;

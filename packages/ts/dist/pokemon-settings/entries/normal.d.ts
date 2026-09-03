@@ -10088,7 +10088,7 @@ export type PokemonSettingsV0396PokemonStarly = S<
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 19;
-			buddyWalkedMegaEnergyAward: 25;
+			buddyWalkedMegaEnergyAward: 5;
 			camera: {
 				cylinderHeightM: 0.3;
 				cylinderRadiusM: 0.18;
@@ -10170,7 +10170,7 @@ export type PokemonSettingsV0396PokemonStarlyNormal = S<
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 19;
-			buddyWalkedMegaEnergyAward: 25;
+			buddyWalkedMegaEnergyAward: 5;
 			camera: {
 				cylinderHeightM: 0.3;
 				cylinderRadiusM: 0.18;
@@ -10254,7 +10254,7 @@ export type PokemonSettingsV0397PokemonStaravia = S<
 			buddyOffsetMale: [9.5, 0, 79.5];
 			buddyScale: 19;
 			buddySize: "BUDDY_FLYING";
-			buddyWalkedMegaEnergyAward: 25;
+			buddyWalkedMegaEnergyAward: 5;
 			camera: {
 				cylinderGroundM: 0.4;
 				cylinderHeightM: 0.5;
@@ -10344,7 +10344,7 @@ export type PokemonSettingsV0397PokemonStaraviaNormal = S<
 			buddyOffsetMale: [9.5, 0, 79.5];
 			buddyScale: 19;
 			buddySize: "BUDDY_FLYING";
-			buddyWalkedMegaEnergyAward: 25;
+			buddyWalkedMegaEnergyAward: 5;
 			camera: {
 				cylinderGroundM: 0.4;
 				cylinderHeightM: 0.5;
@@ -10435,7 +10435,7 @@ export type PokemonSettingsV0398PokemonStaraptor = S<
 			buddyOffsetMale: [4.3, 0, 16.62];
 			buddyScale: 16;
 			buddySize: "BUDDY_FLYING";
-			buddyWalkedMegaEnergyAward: 25;
+			buddyWalkedMegaEnergyAward: 5;
 			camera: {
 				cylinderGroundM: 1.2;
 				cylinderHeightM: 1.3;
@@ -10545,7 +10545,7 @@ export type PokemonSettingsV0398PokemonStaraptorNormal = S<
 			buddyOffsetMale: [4.3, 0, 16.62];
 			buddyScale: 16;
 			buddySize: "BUDDY_FLYING";
-			buddyWalkedMegaEnergyAward: 25;
+			buddyWalkedMegaEnergyAward: 5;
 			camera: {
 				cylinderGroundM: 1.2;
 				cylinderHeightM: 1.3;

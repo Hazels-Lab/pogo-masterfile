@@ -203,14 +203,14 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "settingsOverrideRule":
-		var e settings_override_rule.SettingsOverrideRuleEntry
+	case "locationCardSettings":
+		var e location_card_settings.LocationCardSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
 		return e, nil
-	case "locationCardSettings":
-		var e location_card_settings.LocationCardSettingsEntry
+	case "settingsOverrideRule":
+		var e settings_override_rule.SettingsOverrideRuleEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
