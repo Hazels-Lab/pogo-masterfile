@@ -489,6 +489,8 @@ pub enum LocationCardSettingsTemplateId {
     LcSpecialbackgroundObservatoryExhibitionTour,
     #[serde(rename = "LC_SPECIALBACKGROUND_POK2026")]
     LcSpecialbackgroundPok2026,
+    #[serde(rename = "LC_SPECIALBACKGROUND_S24_SEP_2026")]
+    LcSpecialbackgroundS24Sep2026,
     #[serde(rename = "LC_SPECIALBACKGROUND_TEAM_BLUE")]
     LcSpecialbackgroundTeamBlue,
     #[serde(rename = "LC_SPECIALBACKGROUND_TEAM_RED")]

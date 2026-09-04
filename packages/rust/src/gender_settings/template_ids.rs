@@ -27,16 +27,22 @@ pub enum GenderSettingsTemplateId {
     SpawnV0004PokemonCharmander,
     #[serde(rename = "SPAWN_V0004_POKEMON_CHARMANDER_FALL_2019")]
     SpawnV0004PokemonCharmanderFall2019,
+    #[serde(rename = "SPAWN_V0004_POKEMON_CHARMANDER_GOGGLES_2026")]
+    SpawnV0004PokemonCharmanderGoggles2026,
     #[serde(rename = "SPAWN_V0004_POKEMON_CHARMANDER_NORMAL")]
     SpawnV0004PokemonCharmanderNormal,
     #[serde(rename = "SPAWN_V0005_POKEMON_CHARMELEON")]
     SpawnV0005PokemonCharmeleon,
+    #[serde(rename = "SPAWN_V0005_POKEMON_CHARMELEON_GOGGLES_2026")]
+    SpawnV0005PokemonCharmeleonGoggles2026,
     #[serde(rename = "SPAWN_V0005_POKEMON_CHARMELEON_NORMAL")]
     SpawnV0005PokemonCharmeleonNormal,
     #[serde(rename = "SPAWN_V0006_POKEMON_CHARIZARD")]
     SpawnV0006PokemonCharizard,
     #[serde(rename = "SPAWN_V0006_POKEMON_CHARIZARD_COPY_2019")]
     SpawnV0006PokemonCharizardCopy2019,
+    #[serde(rename = "SPAWN_V0006_POKEMON_CHARIZARD_GOGGLES_2026")]
+    SpawnV0006PokemonCharizardGoggles2026,
     #[serde(rename = "SPAWN_V0006_POKEMON_CHARIZARD_NORMAL")]
     SpawnV0006PokemonCharizardNormal,
     #[serde(rename = "SPAWN_V0007_POKEMON_SQUIRTLE")]

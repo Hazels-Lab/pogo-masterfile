@@ -27,16 +27,22 @@ pub enum PokemonExtendedSettingsTemplateId {
     ExtendedV0004PokemonCharmander,
     #[serde(rename = "EXTENDED_V0004_POKEMON_CHARMANDER_FALL_2019")]
     ExtendedV0004PokemonCharmanderFall2019,
+    #[serde(rename = "EXTENDED_V0004_POKEMON_CHARMANDER_GOGGLES_2026")]
+    ExtendedV0004PokemonCharmanderGoggles2026,
     #[serde(rename = "EXTENDED_V0004_POKEMON_CHARMANDER_NORMAL")]
     ExtendedV0004PokemonCharmanderNormal,
     #[serde(rename = "EXTENDED_V0005_POKEMON_CHARMELEON")]
     ExtendedV0005PokemonCharmeleon,
+    #[serde(rename = "EXTENDED_V0005_POKEMON_CHARMELEON_GOGGLES_2026")]
+    ExtendedV0005PokemonCharmeleonGoggles2026,
     #[serde(rename = "EXTENDED_V0005_POKEMON_CHARMELEON_NORMAL")]
     ExtendedV0005PokemonCharmeleonNormal,
     #[serde(rename = "EXTENDED_V0006_POKEMON_CHARIZARD")]
     ExtendedV0006PokemonCharizard,
     #[serde(rename = "EXTENDED_V0006_POKEMON_CHARIZARD_COPY_2019")]
     ExtendedV0006PokemonCharizardCopy2019,
+    #[serde(rename = "EXTENDED_V0006_POKEMON_CHARIZARD_GOGGLES_2026")]
+    ExtendedV0006PokemonCharizardGoggles2026,
     #[serde(rename = "EXTENDED_V0006_POKEMON_CHARIZARD_NORMAL")]
     ExtendedV0006PokemonCharizardNormal,
     #[serde(rename = "EXTENDED_V0007_POKEMON_SQUIRTLE")]

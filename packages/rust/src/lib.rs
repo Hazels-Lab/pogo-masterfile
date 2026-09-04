@@ -221,12 +221,12 @@ pub enum MasterfileEntry {
     ),
     BreadMoveLevelSettings(bread_move_level_settings::BreadMoveLevelSettingsEntry),
     BuddyEmotionLevelSettings(buddy_emotion_level_settings::BuddyEmotionLevelSettingsEntry),
-    CodeGateProto(code_gate_proto::CodeGateProtoEntry),
     PokemonHomeFormReversions(pokemon_home_form_reversions::PokemonHomeFormReversionsEntry),
     PokestopInvasionAvailabilitySettings(
         pokestop_invasion_availability_settings::PokestopInvasionAvailabilitySettingsEntry,
     ),
     WeatherAffinities(weather_affinities::WeatherAffinitiesEntry),
+    CodeGateProto(code_gate_proto::CodeGateProtoEntry),
     FriendshipMilestoneSettings(friendship_milestone_settings::FriendshipMilestoneSettingsEntry),
     PokemonScaleSettings(pokemon_scale_settings::PokemonScaleSettingsEntry),
     BuddyLevelSettings(buddy_level_settings::BuddyLevelSettingsEntry),
@@ -499,7 +499,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "buddyEmotionLevelSettings" => {
                     serde_json::from_value(value).map(Self::BuddyEmotionLevelSettings)
                 }
-                "codeGateProto" => serde_json::from_value(value).map(Self::CodeGateProto),
                 "pokemonHomeFormReversions" => {
                     serde_json::from_value(value).map(Self::PokemonHomeFormReversions)
                 }
@@ -507,6 +506,7 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::PokestopInvasionAvailabilitySettings)
                 }
                 "weatherAffinities" => serde_json::from_value(value).map(Self::WeatherAffinities),
+                "codeGateProto" => serde_json::from_value(value).map(Self::CodeGateProto),
                 "friendshipMilestoneSettings" => {
                     serde_json::from_value(value).map(Self::FriendshipMilestoneSettings)
                 }

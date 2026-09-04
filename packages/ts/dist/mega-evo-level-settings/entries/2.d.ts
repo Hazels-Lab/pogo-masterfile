@@ -15,6 +15,7 @@ export type MegaEvoLevelSettings2 = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 80;
@@ -36,6 +37,7 @@ export type MegaEvoLevelSettings2V0015PokemonBeedrill = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 80;
@@ -58,6 +60,7 @@ export type MegaEvoLevelSettings2V0018PokemonPidgeot = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 80;
@@ -80,6 +83,7 @@ export type MegaEvoLevelSettings2V0026PokemonRaichu = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -102,6 +106,7 @@ export type MegaEvoLevelSettings2V0071PokemonVictreebel = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -124,6 +129,7 @@ export type MegaEvoLevelSettings2V0080PokemonSlowbro = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 80;
@@ -146,6 +152,7 @@ export type MegaEvoLevelSettings2V0121PokemonStarmie = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -168,6 +175,7 @@ export type MegaEvoLevelSettings2V0130PokemonGyarados = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -190,6 +198,7 @@ export type MegaEvoLevelSettings2V0149PokemonDragonite = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -212,6 +221,7 @@ export type MegaEvoLevelSettings2V0150PokemonMewtwo = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -234,6 +244,7 @@ export type MegaEvoLevelSettings2V0227PokemonSkarmory = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -256,6 +267,7 @@ export type MegaEvoLevelSettings2V0229PokemonHoundoom = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 80;
@@ -278,6 +290,7 @@ export type MegaEvoLevelSettings2V0248PokemonTyranitar = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -300,6 +313,7 @@ export type MegaEvoLevelSettings2V0302PokemonSableye = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 80;
@@ -322,6 +336,7 @@ export type MegaEvoLevelSettings2V0308PokemonMedicham = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 80;
@@ -344,6 +359,7 @@ export type MegaEvoLevelSettings2V0310PokemonManectric = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 80;
@@ -366,6 +382,7 @@ export type MegaEvoLevelSettings2V0334PokemonAltaria = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -388,6 +405,7 @@ export type MegaEvoLevelSettings2V0354PokemonBanette = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 80;
@@ -410,6 +428,7 @@ export type MegaEvoLevelSettings2V0373PokemonSalamence = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -432,6 +451,7 @@ export type MegaEvoLevelSettings2V0376PokemonMetagross = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -454,6 +474,7 @@ export type MegaEvoLevelSettings2V0380PokemonLatias = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -476,6 +497,7 @@ export type MegaEvoLevelSettings2V0381PokemonLatios = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -498,6 +520,7 @@ export type MegaEvoLevelSettings2V0382PokemonKyogre = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -520,6 +543,7 @@ export type MegaEvoLevelSettings2V0383PokemonGroudon = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -542,6 +566,7 @@ export type MegaEvoLevelSettings2V0384PokemonRayquaza = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -586,6 +611,7 @@ export type MegaEvoLevelSettings2V0445PokemonGarchomp = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -608,6 +634,7 @@ export type MegaEvoLevelSettings2V0652PokemonChesnaught = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -630,6 +657,7 @@ export type MegaEvoLevelSettings2V0655PokemonDelphox = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -652,6 +680,7 @@ export type MegaEvoLevelSettings2V0658PokemonGreninja = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -674,6 +703,7 @@ export type MegaEvoLevelSettings2V0687PokemonMalamar = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -696,6 +726,7 @@ export type MegaEvoLevelSettings2V0719PokemonDiancie = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;
@@ -718,6 +749,7 @@ export type MegaEvoLevelSettings2V0870PokemonFalinks = S<
 				sameTypeExtraCatchCandy: 1;
 				sameTypeExtraCatchCandyXlChance: 0.1;
 				sameTypeExtraCatchXp: 50;
+				selfCpBoostAdditionalLevel: 4;
 			};
 			level: 2;
 			megaEnergyCostPerPoint: 160;

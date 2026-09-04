@@ -1,7 +1,6 @@
 // Generated from Pokémon GO masterfile — "codeGateProto" lookup table.
 
 import type {
-	CodeGateProtoArPhotoMultipleConcurrentCampaignCodeGate,
 	CodeGateProtoCombatVnextCodeGate,
 	CodeGateProtoInputTrackerCodeGate,
 	CodeGateProtoIsSkuAvailableNoAppIdCodeGate,
@@ -11,7 +10,6 @@ import type {
 } from "./entries";
 
 export interface CodeGateProtoLookup {
-	AR_PHOTO_MULTIPLE_CONCURRENT_CAMPAIGN_CODE_GATE: CodeGateProtoArPhotoMultipleConcurrentCampaignCodeGate;
 	COMBAT_VNEXT_CODE_GATE: CodeGateProtoCombatVnextCodeGate;
 	INPUT_TRACKER_CODE_GATE: CodeGateProtoInputTrackerCodeGate;
 	IS_SKU_AVAILABLE_NO_APP_ID_CODE_GATE: CodeGateProtoIsSkuAvailableNoAppIdCodeGate;

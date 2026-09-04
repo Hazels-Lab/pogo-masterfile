@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "genderSettings", split "misc", 2382 entries.
+// Generated from Pokémon GO masterfile — group "genderSettings", split "misc", 2385 entries.
 
 import type { S } from "../../_utils";
 import type { GenderSettings } from "../types";
@@ -123,6 +123,18 @@ export type GenderSettingsV0004PokemonCharmanderFall2019 = S<
 		}
 	>
 >;
+export type GenderSettingsV0004PokemonCharmanderGoggles2026 = S<
+	GenderSettings<
+		"SPAWN_V0004_POKEMON_CHARMANDER_GOGGLES_2026",
+		{
+			gender: {
+				femalePercent: 0.125;
+				malePercent: 0.875;
+			};
+			pokemon: "CHARMANDER";
+		}
+	>
+>;
 export type GenderSettingsV0004PokemonCharmanderNormal = S<
 	GenderSettings<
 		"SPAWN_V0004_POKEMON_CHARMANDER_NORMAL",
@@ -138,6 +150,18 @@ export type GenderSettingsV0004PokemonCharmanderNormal = S<
 export type GenderSettingsV0005PokemonCharmeleon = S<
 	GenderSettings<
 		"SPAWN_V0005_POKEMON_CHARMELEON",
+		{
+			gender: {
+				femalePercent: 0.125;
+				malePercent: 0.875;
+			};
+			pokemon: "CHARMELEON";
+		}
+	>
+>;
+export type GenderSettingsV0005PokemonCharmeleonGoggles2026 = S<
+	GenderSettings<
+		"SPAWN_V0005_POKEMON_CHARMELEON_GOGGLES_2026",
 		{
 			gender: {
 				femalePercent: 0.125;
@@ -174,6 +198,18 @@ export type GenderSettingsV0006PokemonCharizard = S<
 export type GenderSettingsV0006PokemonCharizardCopy2019 = S<
 	GenderSettings<
 		"SPAWN_V0006_POKEMON_CHARIZARD_COPY_2019",
+		{
+			gender: {
+				femalePercent: 0.125;
+				malePercent: 0.875;
+			};
+			pokemon: "CHARIZARD";
+		}
+	>
+>;
+export type GenderSettingsV0006PokemonCharizardGoggles2026 = S<
+	GenderSettings<
+		"SPAWN_V0006_POKEMON_CHARIZARD_GOGGLES_2026",
 		{
 			gender: {
 				femalePercent: 0.125;
@@ -28027,11 +28063,14 @@ export type GenderSettingsMiscMasterfileEntry =
 	| GenderSettingsV0003PokemonVenusaurNormal
 	| GenderSettingsV0004PokemonCharmander
 	| GenderSettingsV0004PokemonCharmanderFall2019
+	| GenderSettingsV0004PokemonCharmanderGoggles2026
 	| GenderSettingsV0004PokemonCharmanderNormal
 	| GenderSettingsV0005PokemonCharmeleon
+	| GenderSettingsV0005PokemonCharmeleonGoggles2026
 	| GenderSettingsV0005PokemonCharmeleonNormal
 	| GenderSettingsV0006PokemonCharizard
 	| GenderSettingsV0006PokemonCharizardCopy2019
+	| GenderSettingsV0006PokemonCharizardGoggles2026
 	| GenderSettingsV0006PokemonCharizardNormal
 	| GenderSettingsV0007PokemonSquirtle
 	| GenderSettingsV0007PokemonSquirtleFall2019

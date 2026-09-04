@@ -2387,7 +2387,6 @@ pub struct RaidSettings {
     pub boot_solo_ms: u64,
     pub can_invite_friends_in_person: bool,
     pub can_invite_friends_remotely: bool,
-    pub failed_friend_invite_info_enabled: bool,
     pub fetch_profile_from_social_enabled: bool,
     pub friend_invite_cutoff_time_sec: u64,
     pub friend_requests_enabled: bool,
@@ -2704,7 +2703,6 @@ pub struct SponsoredGeofenceGiftSettings {
 #[serde(rename_all = "camelCase")]
 pub struct SquashSettings {
     pub daily_squash_limit: u64,
-    pub enabled: bool,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2839,7 +2837,6 @@ pub struct VerboseLogCombatSettings {
     pub enable_combat_challenge_setup: bool,
     pub enable_combat_vs_seeker_setup: bool,
     pub enable_core_combat: bool,
-    pub enabled: bool,
     pub enable_exception_caught: bool,
     pub enable_on_application_focus: bool,
     pub enable_on_application_pause: bool,

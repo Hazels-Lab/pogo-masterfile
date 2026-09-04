@@ -2,6 +2,29 @@
 
 All notable changes to `pogo-masterfile-types` (npm) are recorded here. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.53] - 2026-09-04
+
+Automated regeneration from upstream masterfile commit `859dfff254ff35d004560a76a2c488d135bff403`.
+
+### Added template IDs (12)
+
+- BADGE_EVENT_0240
+- EXTENDED_V0004_POKEMON_CHARMANDER_GOGGLES_2026
+- EXTENDED_V0005_POKEMON_CHARMELEON_GOGGLES_2026
+- EXTENDED_V0006_POKEMON_CHARIZARD_GOGGLES_2026
+- LC_SPECIALBACKGROUND_S24_SEP_2026
+- SPAWN_V0004_POKEMON_CHARMANDER_GOGGLES_2026
+- SPAWN_V0005_POKEMON_CHARMELEON_GOGGLES_2026
+- SPAWN_V0006_POKEMON_CHARIZARD_GOGGLES_2026
+- STICKER_HANBOK_PIKACHU
+- V0004_POKEMON_CHARMANDER_GOGGLES_2026
+- V0005_POKEMON_CHARMELEON_GOGGLES_2026
+- V0006_POKEMON_CHARIZARD_GOGGLES_2026
+
+### Removed template IDs (1)
+
+- AR_PHOTO_MULTIPLE_CONCURRENT_CAMPAIGN_CODE_GATE
+
 ## [0.1.52] - 2026-09-03
 
 Automated regeneration from upstream masterfile commit `ad1c9943786a6081ac90645e94756cd10e61205a`.

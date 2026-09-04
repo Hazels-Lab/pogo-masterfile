@@ -15,11 +15,14 @@ const (
 	GenderSettingsTemplateIDSpawnV0003PokemonVenusaurNormal                     GenderSettingsTemplateID = "SPAWN_V0003_POKEMON_VENUSAUR_NORMAL"
 	GenderSettingsTemplateIDSpawnV0004PokemonCharmander                         GenderSettingsTemplateID = "SPAWN_V0004_POKEMON_CHARMANDER"
 	GenderSettingsTemplateIDSpawnV0004PokemonCharmanderFall2019                 GenderSettingsTemplateID = "SPAWN_V0004_POKEMON_CHARMANDER_FALL_2019"
+	GenderSettingsTemplateIDSpawnV0004PokemonCharmanderGoggles2026              GenderSettingsTemplateID = "SPAWN_V0004_POKEMON_CHARMANDER_GOGGLES_2026"
 	GenderSettingsTemplateIDSpawnV0004PokemonCharmanderNormal                   GenderSettingsTemplateID = "SPAWN_V0004_POKEMON_CHARMANDER_NORMAL"
 	GenderSettingsTemplateIDSpawnV0005PokemonCharmeleon                         GenderSettingsTemplateID = "SPAWN_V0005_POKEMON_CHARMELEON"
+	GenderSettingsTemplateIDSpawnV0005PokemonCharmeleonGoggles2026              GenderSettingsTemplateID = "SPAWN_V0005_POKEMON_CHARMELEON_GOGGLES_2026"
 	GenderSettingsTemplateIDSpawnV0005PokemonCharmeleonNormal                   GenderSettingsTemplateID = "SPAWN_V0005_POKEMON_CHARMELEON_NORMAL"
 	GenderSettingsTemplateIDSpawnV0006PokemonCharizard                          GenderSettingsTemplateID = "SPAWN_V0006_POKEMON_CHARIZARD"
 	GenderSettingsTemplateIDSpawnV0006PokemonCharizardCopy2019                  GenderSettingsTemplateID = "SPAWN_V0006_POKEMON_CHARIZARD_COPY_2019"
+	GenderSettingsTemplateIDSpawnV0006PokemonCharizardGoggles2026               GenderSettingsTemplateID = "SPAWN_V0006_POKEMON_CHARIZARD_GOGGLES_2026"
 	GenderSettingsTemplateIDSpawnV0006PokemonCharizardNormal                    GenderSettingsTemplateID = "SPAWN_V0006_POKEMON_CHARIZARD_NORMAL"
 	GenderSettingsTemplateIDSpawnV0007PokemonSquirtle                           GenderSettingsTemplateID = "SPAWN_V0007_POKEMON_SQUIRTLE"
 	GenderSettingsTemplateIDSpawnV0007PokemonSquirtleFall2019                   GenderSettingsTemplateID = "SPAWN_V0007_POKEMON_SQUIRTLE_FALL_2019"
@@ -2494,11 +2497,14 @@ var GenderSettingsTemplateIDValues = [...]GenderSettingsTemplateID{
 	GenderSettingsTemplateIDSpawnV0003PokemonVenusaurNormal,
 	GenderSettingsTemplateIDSpawnV0004PokemonCharmander,
 	GenderSettingsTemplateIDSpawnV0004PokemonCharmanderFall2019,
+	GenderSettingsTemplateIDSpawnV0004PokemonCharmanderGoggles2026,
 	GenderSettingsTemplateIDSpawnV0004PokemonCharmanderNormal,
 	GenderSettingsTemplateIDSpawnV0005PokemonCharmeleon,
+	GenderSettingsTemplateIDSpawnV0005PokemonCharmeleonGoggles2026,
 	GenderSettingsTemplateIDSpawnV0005PokemonCharmeleonNormal,
 	GenderSettingsTemplateIDSpawnV0006PokemonCharizard,
 	GenderSettingsTemplateIDSpawnV0006PokemonCharizardCopy2019,
+	GenderSettingsTemplateIDSpawnV0006PokemonCharizardGoggles2026,
 	GenderSettingsTemplateIDSpawnV0006PokemonCharizardNormal,
 	GenderSettingsTemplateIDSpawnV0007PokemonSquirtle,
 	GenderSettingsTemplateIDSpawnV0007PokemonSquirtleFall2019,

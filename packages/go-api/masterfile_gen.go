@@ -78,7 +78,6 @@ type Masterfile struct {
 	FeatureGate                          *accessor.FeatureGateAccessor
 	EvolutionQuestTemplate               *accessor.EvolutionQuestTemplateAccessor
 	IapItemDisplay                       *accessor.IapItemDisplayAccessor
-	CodeGateProto                        *accessor.CodeGateProtoAccessor
 	AvatarGroupOrderSettings             *accessor.AvatarGroupOrderSettingsAccessor
 	AvatarCustomization                  *accessor.AvatarCustomizationAccessor
 	LevelUpRewards                       *accessor.LevelUpRewardsAccessor
@@ -92,6 +91,7 @@ type Masterfile struct {
 	CombatType                           *accessor.CombatTypeAccessor
 	CombatRankingProtoSettings           *accessor.CombatRankingProtoSettingsAccessor
 	CombatMove                           *accessor.CombatMoveAccessor
+	CodeGateProto                        *accessor.CodeGateProtoAccessor
 	PokemonHomeEnergyCosts               *accessor.PokemonHomeEnergyCostsAccessor
 	EventPassSettings                    *accessor.EventPassSettingsAccessor
 	EventPassTierSettings                *accessor.EventPassTierSettingsAccessor
@@ -143,7 +143,6 @@ var GroupNames = []string{
 	"featureGate",
 	"evolutionQuestTemplate",
 	"iapItemDisplay",
-	"codeGateProto",
 	"avatarGroupOrderSettings",
 	"avatarCustomization",
 	"levelUpRewards",
@@ -157,6 +156,7 @@ var GroupNames = []string{
 	"combatType",
 	"combatRankingProtoSettings",
 	"combatMove",
+	"codeGateProto",
 	"pokemonHomeEnergyCosts",
 	"eventPassSettings",
 	"eventPassTierSettings",
@@ -210,7 +210,6 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 	featureGateBucket := []feature_gate.FeatureGateEntry{}
 	evolutionQuestTemplateBucket := []evolution_quest_template.EvolutionQuestTemplateEntry{}
 	iapItemDisplayBucket := []iap_item_display.IapItemDisplayEntry{}
-	codeGateProtoBucket := []code_gate_proto.CodeGateProtoEntry{}
 	avatarGroupOrderSettingsBucket := []avatar_group_order_settings.AvatarGroupOrderSettingsEntry{}
 	avatarCustomizationBucket := []avatar_customization.AvatarCustomizationEntry{}
 	levelUpRewardsBucket := []level_up_rewards.LevelUpRewardsEntry{}
@@ -224,6 +223,7 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 	combatTypeBucket := []combat_type.CombatTypeEntry{}
 	combatRankingProtoSettingsBucket := []combat_ranking_proto_settings.CombatRankingProtoSettingsEntry{}
 	combatMoveBucket := []combat_move.CombatMoveEntry{}
+	codeGateProtoBucket := []code_gate_proto.CodeGateProtoEntry{}
 	pokemonHomeEnergyCostsBucket := []pokemon_home_energy_costs.PokemonHomeEnergyCostsEntry{}
 	eventPassSettingsBucket := []event_pass_settings.EventPassSettingsEntry{}
 	eventPassTierSettingsBucket := []event_pass_tier_settings.EventPassTierSettingsEntry{}
@@ -280,9 +280,6 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 		case iap_item_display.IapItemDisplayEntry:
 			m.byID[v.TemplateID] = i
 			iapItemDisplayBucket = append(iapItemDisplayBucket, v)
-		case code_gate_proto.CodeGateProtoEntry:
-			m.byID[v.TemplateID] = i
-			codeGateProtoBucket = append(codeGateProtoBucket, v)
 		case avatar_group_order_settings.AvatarGroupOrderSettingsEntry:
 			m.byID[v.TemplateID] = i
 			avatarGroupOrderSettingsBucket = append(avatarGroupOrderSettingsBucket, v)
@@ -322,6 +319,9 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 		case combat_move.CombatMoveEntry:
 			m.byID[v.TemplateID] = i
 			combatMoveBucket = append(combatMoveBucket, v)
+		case code_gate_proto.CodeGateProtoEntry:
+			m.byID[v.TemplateID] = i
+			codeGateProtoBucket = append(codeGateProtoBucket, v)
 		case pokemon_home_energy_costs.PokemonHomeEnergyCostsEntry:
 			m.byID[v.TemplateID] = i
 			pokemonHomeEnergyCostsBucket = append(pokemonHomeEnergyCostsBucket, v)
@@ -461,7 +461,6 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 	m.FeatureGate = accessor.NewFeatureGateAccessor(featureGateBucket)
 	m.EvolutionQuestTemplate = accessor.NewEvolutionQuestTemplateAccessor(evolutionQuestTemplateBucket)
 	m.IapItemDisplay = accessor.NewIapItemDisplayAccessor(iapItemDisplayBucket)
-	m.CodeGateProto = accessor.NewCodeGateProtoAccessor(codeGateProtoBucket)
 	m.AvatarGroupOrderSettings = accessor.NewAvatarGroupOrderSettingsAccessor(avatarGroupOrderSettingsBucket)
 	m.AvatarCustomization = accessor.NewAvatarCustomizationAccessor(avatarCustomizationBucket)
 	m.LevelUpRewards = accessor.NewLevelUpRewardsAccessor(levelUpRewardsBucket)
@@ -475,6 +474,7 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 	m.CombatType = accessor.NewCombatTypeAccessor(combatTypeBucket)
 	m.CombatRankingProtoSettings = accessor.NewCombatRankingProtoSettingsAccessor(combatRankingProtoSettingsBucket)
 	m.CombatMove = accessor.NewCombatMoveAccessor(combatMoveBucket)
+	m.CodeGateProto = accessor.NewCodeGateProtoAccessor(codeGateProtoBucket)
 	m.PokemonHomeEnergyCosts = accessor.NewPokemonHomeEnergyCostsAccessor(pokemonHomeEnergyCostsBucket)
 	m.EventPassSettings = accessor.NewEventPassSettingsAccessor(eventPassSettingsBucket)
 	m.EventPassTierSettings = accessor.NewEventPassTierSettingsAccessor(eventPassTierSettingsBucket)

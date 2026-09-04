@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonSettings", split "fire", 145 entries.
+// Generated from Pokémon GO masterfile — group "pokemonSettings", split "fire", 148 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonSettings } from "../types";
@@ -149,6 +149,99 @@ export type PokemonSettingsV0004PokemonCharmanderFall2019 = S<
 			evolutionPips: 1;
 			familyId: "FAMILY_CHARMANDER";
 			form: "CHARMANDER_FALL_2019";
+			heightStdDev: 0.075;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 3;
+			modelHeight: 0.6;
+			modelScale: 1.25;
+			modelScaleV2: 1;
+			pokedexHeightM: 0.6;
+			pokedexWeightKg: 8.5;
+			pokemonId: "CHARMANDER";
+			quickMoves: ["EMBER_FAST", "SCRATCH_FAST"];
+			shadow: {
+				purificationCandyNeeded: 3;
+				purificationStardustNeeded: 3000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
+			stats: {
+				baseAttack: 116;
+				baseDefense: 93;
+				baseStamina: 118;
+			};
+			thirdMove: {
+				candyToUnlock: 25;
+				stardustToUnlock: 10000;
+			};
+			type: "POKEMON_TYPE_FIRE";
+			weightStdDev: 1.0625;
+		}
+	>
+>;
+export type PokemonSettingsV0004PokemonCharmanderGoggles2026 = S<
+	PokemonSettings<
+		"V0004_POKEMON_CHARMANDER_GOGGLES_2026",
+		{
+			animationTime: [2.1333, 0.6667, 1.6667, 1.8333, 0, 2.1333, 1.1667, 1.333333];
+			breadTierGroup: "GROUP_1";
+			buddyGroupNumber: 2;
+			buddyOffsetFemale: [0, 0, 0];
+			buddyOffsetMale: [0, 0, 0];
+			buddyScale: 19;
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
+				},
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
+				},
+			];
+			camera: {
+				cylinderHeightM: 0.65;
+				cylinderRadiusM: 0.3125;
+				diskRadiusM: 0.4688;
+				shoulderModeScale: 0.5;
+			};
+			cinematicMoves: ["FLAME_CHARGE", "FLAME_BURST", "FLAMETHROWER"];
+			disableTransferToPokemonHome: true;
+			encounter: {
+				attackProbability: 0.1;
+				attackTimerS: 10;
+				cameraDistance: 2.8125;
+				collisionHeadRadiusM: 0.15625;
+				collisionHeightM: 0.46875;
+				collisionRadiusM: 0.15625;
+				dodgeDistance: 1;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.15;
+				jumpTimeS: 1.25;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementTimerS: 29;
+				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.2;
+				shadowDodgeProbability: 0.2;
+			};
+			evolutionBranch: [
+				{
+					candyCost: 25;
+					candyCostPurified: 22;
+					evolution: "CHARMELEON";
+					form: "CHARMELEON_GOGGLES_2026";
+				},
+			];
+			evolutionPips: 1;
+			familyId: "FAMILY_CHARMANDER";
+			form: "CHARMANDER_GOGGLES_2026";
 			heightStdDev: 0.075;
 			ibfc: object;
 			isDeployable: true;
@@ -342,6 +435,106 @@ export type PokemonSettingsV0005PokemonCharmeleon = S<
 			evolutionIds: ["CHARIZARD"];
 			evolutionPips: 1;
 			familyId: "FAMILY_CHARMANDER";
+			heightStdDev: 0.1375;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 3;
+			modelHeight: 1.03;
+			modelScale: 1.03;
+			modelScaleV2: 1.07;
+			parentPokemonId: "CHARMANDER";
+			pokedexHeightM: 1.1;
+			pokedexWeightKg: 19;
+			pokemonId: "CHARMELEON";
+			quickMoves: ["EMBER_FAST", "FIRE_FANG_FAST"];
+			shadow: {
+				purificationCandyNeeded: 3;
+				purificationStardustNeeded: 3000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
+			stats: {
+				baseAttack: 158;
+				baseDefense: 126;
+				baseStamina: 151;
+			};
+			thirdMove: {
+				candyToUnlock: 25;
+				stardustToUnlock: 10000;
+			};
+			type: "POKEMON_TYPE_FIRE";
+			weightStdDev: 2.375;
+		}
+	>
+>;
+export type PokemonSettingsV0005PokemonCharmeleonGoggles2026 = S<
+	PokemonSettings<
+		"V0005_POKEMON_CHARMELEON_GOGGLES_2026",
+		{
+			animationTime: [1.8667, 0.6667, 1.8333, 1.5, 6.666667, 2.3333, 2, 2.533334];
+			breadTierGroup: "GROUP_1";
+			buddyGroupNumber: 2;
+			buddyOffsetFemale: [8.8, 0, 0.3];
+			buddyOffsetMale: [8.8, 0, 0.3];
+			buddyScale: 19;
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
+				},
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
+				},
+			];
+			camera: {
+				cylinderHeightM: 1.133;
+				cylinderRadiusM: 0.4635;
+				diskRadiusM: 0.6953;
+				shoulderModeScale: 0.5;
+			};
+			candyToEvolve: 100;
+			cinematicMoves: ["FIRE_PUNCH", "FLAME_BURST", "FLAMETHROWER"];
+			disableTransferToPokemonHome: true;
+			eliteQuickMove: ["SCRATCH_FAST"];
+			encounter: {
+				attackProbability: 0.1;
+				attackTimerS: 8;
+				bonusCandyCaptureReward: 2;
+				bonusStardustCaptureReward: 200;
+				bonusXlCandyCaptureReward: 1;
+				cameraDistance: 4.24875;
+				collisionHeadRadiusM: 0.23175;
+				collisionHeightM: 0.7725;
+				collisionRadiusM: 0.2575;
+				dodgeDistance: 1;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.15;
+				jumpTimeS: 1;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementTimerS: 23;
+				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.1;
+				shadowDodgeProbability: 0.2;
+			};
+			evolutionBranch: [
+				{
+					candyCost: 100;
+					candyCostPurified: 90;
+					evolution: "CHARIZARD";
+					form: "CHARIZARD_GOGGLES_2026";
+				},
+			];
+			evolutionIds: ["CHARIZARD"];
+			evolutionPips: 1;
+			familyId: "FAMILY_CHARMANDER";
+			form: "CHARMELEON_GOGGLES_2026";
 			heightStdDev: 0.1375;
 			ibfc: object;
 			isDeployable: true;
@@ -709,6 +902,140 @@ export type PokemonSettingsV0006PokemonCharizardCopy2019 = S<
 				baseDefense: 173;
 				baseStamina: 186;
 			};
+			thirdMove: {
+				candyToUnlock: 25;
+				stardustToUnlock: 10000;
+			};
+			type: "POKEMON_TYPE_FIRE";
+			type2: "POKEMON_TYPE_FLYING";
+			useIrisFlyingPlacement: true;
+			weightStdDev: 11.3125;
+		}
+	>
+>;
+export type PokemonSettingsV0006PokemonCharizardGoggles2026 = S<
+	PokemonSettings<
+		"V0006_POKEMON_CHARIZARD_GOGGLES_2026",
+		{
+			animationTime: [2.2, 0.6667, 1.6667, 0.8667, 6.666667, 2, 1.6, 2];
+			breadTierGroup: "GROUP_1";
+			buddyGroupNumber: 3;
+			buddyOffsetFemale: [1.9, -11.4, 36.04];
+			buddyOffsetMale: [1.8, -11.4, 36.04];
+			buddyScale: 19;
+			buddySize: "BUDDY_BIG";
+			buddyWalkedMegaEnergyAwards: [
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
+				},
+				{
+					megaEnergyAwardAmount: 15;
+					megaPokemonId: "CHARIZARD";
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
+				},
+			];
+			camera: {
+				cylinderGroundM: 0.5;
+				cylinderHeightM: 1.5;
+				cylinderRadiusM: 1.25;
+				diskRadiusM: 1.215;
+				shoulderModeScale: 0.5;
+			};
+			cinematicMoves: ["FIRE_BLAST", "DRAGON_CLAW", "OVERHEAT", "AIR_CUTTER"];
+			disableTransferToPokemonHome: true;
+			eliteCinematicMove: ["BLAST_BURN", "FLAMETHROWER"];
+			eliteQuickMove: ["EMBER_FAST", "WING_ATTACK_FAST", "DRAGON_BREATH_FAST"];
+			encounter: {
+				attackProbability: 0.2;
+				attackTimerS: 4;
+				bonusCandyCaptureReward: 7;
+				bonusStardustCaptureReward: 400;
+				bonusXlCandyCaptureReward: 2;
+				cameraDistance: 5;
+				collisionHeadRadiusM: 0.2025;
+				collisionHeightM: 1.0125;
+				collisionRadiusM: 0.405;
+				dodgeDistance: 1;
+				dodgeDurationS: 0.7;
+				dodgeProbability: 0.15;
+				jumpTimeS: 1;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementTimerS: 11;
+				movementType: "MOVEMENT_FLYING";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.05;
+				shadowDodgeProbability: 0.2;
+			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA_X";
+					temporaryEvolutionEnergyCost: 200;
+					temporaryEvolutionEnergyCostSubsequent: 40;
+				},
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA_Y";
+					temporaryEvolutionEnergyCost: 200;
+					temporaryEvolutionEnergyCostSubsequent: 40;
+				},
+			];
+			evolutionPips: 1;
+			familyId: "FAMILY_CHARMANDER";
+			form: "CHARIZARD_GOGGLES_2026";
+			heightStdDev: 0.2125;
+			ibfc: object;
+			irisPhotoEmote1: "PhysicalAttack";
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 3;
+			modelHeight: 1.91;
+			modelScale: 0.81;
+			modelScaleV2: 1.1;
+			parentPokemonId: "CHARMELEON";
+			pokedexHeightM: 1.7;
+			pokedexWeightKg: 90.5;
+			pokemonId: "CHARIZARD";
+			quickMoves: ["FIRE_SPIN_FAST", "AIR_SLASH_FAST"];
+			shadow: {
+				purificationCandyNeeded: 3;
+				purificationStardustNeeded: 3000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
+			stats: {
+				baseAttack: 223;
+				baseDefense: 173;
+				baseStamina: 186;
+			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 1.7;
+					averageWeightKg: 110.5;
+					stats: {
+						baseAttack: 273;
+						baseDefense: 213;
+						baseStamina: 186;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA_X";
+					typeOverride1: "POKEMON_TYPE_FIRE";
+					typeOverride2: "POKEMON_TYPE_DRAGON";
+				},
+				{
+					averageHeightM: 1.7;
+					averageWeightKg: 100.5;
+					stats: {
+						baseAttack: 319;
+						baseDefense: 212;
+						baseStamina: 186;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
+					typeOverride1: "POKEMON_TYPE_FIRE";
+					typeOverride2: "POKEMON_TYPE_FLYING";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 25;
 				stardustToUnlock: 10000;
@@ -10901,11 +11228,14 @@ export type PokemonSettingsV1020PokemonGougingfireNormal = S<
 export type PokemonSettingsFireMasterfileEntry =
 	| PokemonSettingsV0004PokemonCharmander
 	| PokemonSettingsV0004PokemonCharmanderFall2019
+	| PokemonSettingsV0004PokemonCharmanderGoggles2026
 	| PokemonSettingsV0004PokemonCharmanderNormal
 	| PokemonSettingsV0005PokemonCharmeleon
+	| PokemonSettingsV0005PokemonCharmeleonGoggles2026
 	| PokemonSettingsV0005PokemonCharmeleonNormal
 	| PokemonSettingsV0006PokemonCharizard
 	| PokemonSettingsV0006PokemonCharizardCopy2019
+	| PokemonSettingsV0006PokemonCharizardGoggles2026
 	| PokemonSettingsV0006PokemonCharizardNormal
 	| PokemonSettingsV0037PokemonVulpix
 	| PokemonSettingsV0037PokemonVulpixNormal
