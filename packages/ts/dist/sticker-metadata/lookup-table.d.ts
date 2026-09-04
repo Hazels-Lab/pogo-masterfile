@@ -234,6 +234,7 @@ import type {
 	StickerMetadataHalloweenPika,
 	StickerMetadataHalloweenSableyemd,
 	StickerMetadataHalloweenSqu,
+	StickerMetadataHanbokPikachu,
 	StickerMetadataHaruCherrim,
 	StickerMetadataHaruDredearpika,
 	StickerMetadataHaruKireihana,
@@ -864,6 +865,7 @@ export interface StickerMetadataLookup {
 	STICKER_HALLOWEEN2022_VULPIX: StickerMetadataHalloween2022Vulpix;
 	STICKER_HALLOWEEN2025_NOIBAT: StickerMetadataHalloween2025Noibat;
 	STICKER_HALLOWEEN2025_TEDDIURSA: StickerMetadataHalloween2025Teddiursa;
+	STICKER_HANBOK_PIKACHU: StickerMetadataHanbokPikachu;
 	STICKER_HARU_CHERRIM: StickerMetadataHaruCherrim;
 	STICKER_HARU_DREDEARPIKA: StickerMetadataHaruDredearpika;
 	STICKER_HARU_KIREIHANA: StickerMetadataHaruKireihana;

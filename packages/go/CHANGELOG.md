@@ -4,6 +4,29 @@ All notable changes to the Go module are recorded here. The format is based on [
 
 > Note: Go module releases for this package are tagged as `packages/go/vX.Y.Z` (subdirectory-prefixed), per Go's monorepo tagging rules.
 
+## [0.1.48] - 2026-09-04
+
+Automated regeneration from upstream masterfile commit `859dfff254ff35d004560a76a2c488d135bff403`.
+
+### Added template IDs (12)
+
+- BADGE_EVENT_0240
+- EXTENDED_V0004_POKEMON_CHARMANDER_GOGGLES_2026
+- EXTENDED_V0005_POKEMON_CHARMELEON_GOGGLES_2026
+- EXTENDED_V0006_POKEMON_CHARIZARD_GOGGLES_2026
+- LC_SPECIALBACKGROUND_S24_SEP_2026
+- SPAWN_V0004_POKEMON_CHARMANDER_GOGGLES_2026
+- SPAWN_V0005_POKEMON_CHARMELEON_GOGGLES_2026
+- SPAWN_V0006_POKEMON_CHARIZARD_GOGGLES_2026
+- STICKER_HANBOK_PIKACHU
+- V0004_POKEMON_CHARMANDER_GOGGLES_2026
+- V0005_POKEMON_CHARMELEON_GOGGLES_2026
+- V0006_POKEMON_CHARIZARD_GOGGLES_2026
+
+### Removed template IDs (1)
+
+- AR_PHOTO_MULTIPLE_CONCURRENT_CAMPAIGN_CODE_GATE
+
 ## [0.1.47] - 2026-09-03
 
 Automated regeneration from upstream masterfile commit `ad1c9943786a6081ac90645e94756cd10e61205a`.

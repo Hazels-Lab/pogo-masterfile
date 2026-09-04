@@ -283,7 +283,7 @@ export interface BreadBattleClientSettings {
 			maxPlayersPerBreadDoughLobby: 100;
 			maxPlayersPerBreadLobby: 4;
 			maxPlayersToPrepareBreadDoughLobby: 98;
-			maxRemoteBreadBattlePassesAllowed: 30;
+			maxRemoteBreadBattlePassesAllowed: 999999;
 			maxRemotePlayersPerBreadDoughLobby: 100;
 			maxRemotePlayersPerBreadLobby: 4;
 			minPlayersToPrepareBreadLobby: 1;
@@ -5007,7 +5007,6 @@ export interface RaidSettings {
 			bootSoloMs: 30000;
 			canInviteFriendsInPerson: true;
 			canInviteFriendsRemotely: true;
-			failedFriendInviteInfoEnabled: true;
 			fetchProfileFromSocialEnabled: true;
 			friendInviteCutoffTimeSec: 20;
 			friendRequestsEnabled: true;
@@ -5744,8 +5743,7 @@ export interface SquashSettings {
 	data: {
 		templateId: "REMOTE_RAID_LIMIT_SETTINGS";
 		squashSettings: {
-			dailySquashLimit: 30;
-			enabled: true;
+			dailySquashLimit: 999999;
 		};
 	};
 }
@@ -6010,7 +6008,6 @@ export interface VerboseLogCombatSettings {
 			enableCombatChallengeSetup: true;
 			enableCombatVsSeekerSetup: true;
 			enableCoreCombat: true;
-			enabled: true;
 			enableExceptionCaught: true;
 			enableOnApplicationFocus: true;
 			enableOnApplicationPause: true;

@@ -15,11 +15,14 @@ const (
 	PokemonExtendedSettingsTemplateIDExtendedV0003PokemonVenusaurNormal                  PokemonExtendedSettingsTemplateID = "EXTENDED_V0003_POKEMON_VENUSAUR_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV0004PokemonCharmander                      PokemonExtendedSettingsTemplateID = "EXTENDED_V0004_POKEMON_CHARMANDER"
 	PokemonExtendedSettingsTemplateIDExtendedV0004PokemonCharmanderFall2019              PokemonExtendedSettingsTemplateID = "EXTENDED_V0004_POKEMON_CHARMANDER_FALL_2019"
+	PokemonExtendedSettingsTemplateIDExtendedV0004PokemonCharmanderGoggles2026           PokemonExtendedSettingsTemplateID = "EXTENDED_V0004_POKEMON_CHARMANDER_GOGGLES_2026"
 	PokemonExtendedSettingsTemplateIDExtendedV0004PokemonCharmanderNormal                PokemonExtendedSettingsTemplateID = "EXTENDED_V0004_POKEMON_CHARMANDER_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV0005PokemonCharmeleon                      PokemonExtendedSettingsTemplateID = "EXTENDED_V0005_POKEMON_CHARMELEON"
+	PokemonExtendedSettingsTemplateIDExtendedV0005PokemonCharmeleonGoggles2026           PokemonExtendedSettingsTemplateID = "EXTENDED_V0005_POKEMON_CHARMELEON_GOGGLES_2026"
 	PokemonExtendedSettingsTemplateIDExtendedV0005PokemonCharmeleonNormal                PokemonExtendedSettingsTemplateID = "EXTENDED_V0005_POKEMON_CHARMELEON_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV0006PokemonCharizard                       PokemonExtendedSettingsTemplateID = "EXTENDED_V0006_POKEMON_CHARIZARD"
 	PokemonExtendedSettingsTemplateIDExtendedV0006PokemonCharizardCopy2019               PokemonExtendedSettingsTemplateID = "EXTENDED_V0006_POKEMON_CHARIZARD_COPY_2019"
+	PokemonExtendedSettingsTemplateIDExtendedV0006PokemonCharizardGoggles2026            PokemonExtendedSettingsTemplateID = "EXTENDED_V0006_POKEMON_CHARIZARD_GOGGLES_2026"
 	PokemonExtendedSettingsTemplateIDExtendedV0006PokemonCharizardNormal                 PokemonExtendedSettingsTemplateID = "EXTENDED_V0006_POKEMON_CHARIZARD_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV0007PokemonSquirtle                        PokemonExtendedSettingsTemplateID = "EXTENDED_V0007_POKEMON_SQUIRTLE"
 	PokemonExtendedSettingsTemplateIDExtendedV0007PokemonSquirtleFall2019                PokemonExtendedSettingsTemplateID = "EXTENDED_V0007_POKEMON_SQUIRTLE_FALL_2019"
@@ -2495,11 +2498,14 @@ var PokemonExtendedSettingsTemplateIDValues = [...]PokemonExtendedSettingsTempla
 	PokemonExtendedSettingsTemplateIDExtendedV0003PokemonVenusaurNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV0004PokemonCharmander,
 	PokemonExtendedSettingsTemplateIDExtendedV0004PokemonCharmanderFall2019,
+	PokemonExtendedSettingsTemplateIDExtendedV0004PokemonCharmanderGoggles2026,
 	PokemonExtendedSettingsTemplateIDExtendedV0004PokemonCharmanderNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV0005PokemonCharmeleon,
+	PokemonExtendedSettingsTemplateIDExtendedV0005PokemonCharmeleonGoggles2026,
 	PokemonExtendedSettingsTemplateIDExtendedV0005PokemonCharmeleonNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV0006PokemonCharizard,
 	PokemonExtendedSettingsTemplateIDExtendedV0006PokemonCharizardCopy2019,
+	PokemonExtendedSettingsTemplateIDExtendedV0006PokemonCharizardGoggles2026,
 	PokemonExtendedSettingsTemplateIDExtendedV0006PokemonCharizardNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV0007PokemonSquirtle,
 	PokemonExtendedSettingsTemplateIDExtendedV0007PokemonSquirtleFall2019,

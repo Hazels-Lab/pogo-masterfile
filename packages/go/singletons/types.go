@@ -1688,7 +1688,6 @@ type RaidSettings struct {
 	BootSoloMs                            uint64                                   `json:"bootSoloMs"`
 	CanInviteFriendsInPerson              bool                                     `json:"canInviteFriendsInPerson"`
 	CanInviteFriendsRemotely              bool                                     `json:"canInviteFriendsRemotely"`
-	FailedFriendInviteInfoEnabled         bool                                     `json:"failedFriendInviteInfoEnabled"`
 	FetchProfileFromSocialEnabled         bool                                     `json:"fetchProfileFromSocialEnabled"`
 	FriendInviteCutoffTimeSec             uint64                                   `json:"friendInviteCutoffTimeSec"`
 	FriendRequestsEnabled                 bool                                     `json:"friendRequestsEnabled"`
@@ -1937,7 +1936,6 @@ type SponsoredGeofenceGiftSettings struct {
 
 type SquashSettings struct {
 	DailySquashLimit uint64 `json:"dailySquashLimit"`
-	Enabled          bool   `json:"enabled"`
 }
 
 type StampCollectionSettings struct {
@@ -2034,7 +2032,6 @@ type VerboseLogCombatSettings struct {
 	EnableCombatChallengeSetup bool   `json:"enableCombatChallengeSetup"`
 	EnableCombatVsSeekerSetup  bool   `json:"enableCombatVsSeekerSetup"`
 	EnableCoreCombat           bool   `json:"enableCoreCombat"`
-	Enabled                    bool   `json:"enabled"`
 	EnableExceptionCaught      bool   `json:"enableExceptionCaught"`
 	EnableOnApplicationFocus   bool   `json:"enableOnApplicationFocus"`
 	EnableOnApplicationPause   bool   `json:"enableOnApplicationPause"`

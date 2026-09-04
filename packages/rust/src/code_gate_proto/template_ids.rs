@@ -7,8 +7,6 @@ use serde::{Deserialize, Serialize};
     Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum,
 )]
 pub enum CodeGateProtoTemplateId {
-    #[serde(rename = "AR_PHOTO_MULTIPLE_CONCURRENT_CAMPAIGN_CODE_GATE")]
-    ArPhotoMultipleConcurrentCampaignCodeGate,
     #[serde(rename = "COMBAT_VNEXT_CODE_GATE")]
     CombatVnextCodeGate,
     #[serde(rename = "INPUT_TRACKER_CODE_GATE")]

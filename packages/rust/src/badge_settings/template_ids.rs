@@ -377,6 +377,8 @@ pub enum BadgeSettingsTemplateId {
     BadgeEvent0234,
     #[serde(rename = "BADGE_EVENT_0236")]
     BadgeEvent0236,
+    #[serde(rename = "BADGE_EVENT_0240")]
+    BadgeEvent0240,
     #[serde(rename = "BADGE_EVENT_0241")]
     BadgeEvent0241,
     #[serde(rename = "BADGE_EVENT_0253")]

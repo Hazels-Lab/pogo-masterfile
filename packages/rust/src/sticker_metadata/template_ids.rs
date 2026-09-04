@@ -473,6 +473,8 @@ pub enum StickerMetadataTemplateId {
     StickerHalloween2025Noibat,
     #[serde(rename = "STICKER_HALLOWEEN2025_TEDDIURSA")]
     StickerHalloween2025Teddiursa,
+    #[serde(rename = "STICKER_HANBOK_PIKACHU")]
+    StickerHanbokPikachu,
     #[serde(rename = "STICKER_HARU_CHERRIM")]
     StickerHaruCherrim,
     #[serde(rename = "STICKER_HARU_DREDEARPIKA")]

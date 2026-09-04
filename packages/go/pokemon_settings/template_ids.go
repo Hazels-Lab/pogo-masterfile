@@ -15,11 +15,14 @@ const (
 	PokemonSettingsTemplateIDV0003PokemonVenusaurNormal                     PokemonSettingsTemplateID = "V0003_POKEMON_VENUSAUR_NORMAL"
 	PokemonSettingsTemplateIDV0004PokemonCharmander                         PokemonSettingsTemplateID = "V0004_POKEMON_CHARMANDER"
 	PokemonSettingsTemplateIDV0004PokemonCharmanderFall2019                 PokemonSettingsTemplateID = "V0004_POKEMON_CHARMANDER_FALL_2019"
+	PokemonSettingsTemplateIDV0004PokemonCharmanderGoggles2026              PokemonSettingsTemplateID = "V0004_POKEMON_CHARMANDER_GOGGLES_2026"
 	PokemonSettingsTemplateIDV0004PokemonCharmanderNormal                   PokemonSettingsTemplateID = "V0004_POKEMON_CHARMANDER_NORMAL"
 	PokemonSettingsTemplateIDV0005PokemonCharmeleon                         PokemonSettingsTemplateID = "V0005_POKEMON_CHARMELEON"
+	PokemonSettingsTemplateIDV0005PokemonCharmeleonGoggles2026              PokemonSettingsTemplateID = "V0005_POKEMON_CHARMELEON_GOGGLES_2026"
 	PokemonSettingsTemplateIDV0005PokemonCharmeleonNormal                   PokemonSettingsTemplateID = "V0005_POKEMON_CHARMELEON_NORMAL"
 	PokemonSettingsTemplateIDV0006PokemonCharizard                          PokemonSettingsTemplateID = "V0006_POKEMON_CHARIZARD"
 	PokemonSettingsTemplateIDV0006PokemonCharizardCopy2019                  PokemonSettingsTemplateID = "V0006_POKEMON_CHARIZARD_COPY_2019"
+	PokemonSettingsTemplateIDV0006PokemonCharizardGoggles2026               PokemonSettingsTemplateID = "V0006_POKEMON_CHARIZARD_GOGGLES_2026"
 	PokemonSettingsTemplateIDV0006PokemonCharizardNormal                    PokemonSettingsTemplateID = "V0006_POKEMON_CHARIZARD_NORMAL"
 	PokemonSettingsTemplateIDV0007PokemonSquirtle                           PokemonSettingsTemplateID = "V0007_POKEMON_SQUIRTLE"
 	PokemonSettingsTemplateIDV0007PokemonSquirtleFall2019                   PokemonSettingsTemplateID = "V0007_POKEMON_SQUIRTLE_FALL_2019"
@@ -2491,11 +2494,14 @@ var PokemonSettingsTemplateIDValues = [...]PokemonSettingsTemplateID{
 	PokemonSettingsTemplateIDV0003PokemonVenusaurNormal,
 	PokemonSettingsTemplateIDV0004PokemonCharmander,
 	PokemonSettingsTemplateIDV0004PokemonCharmanderFall2019,
+	PokemonSettingsTemplateIDV0004PokemonCharmanderGoggles2026,
 	PokemonSettingsTemplateIDV0004PokemonCharmanderNormal,
 	PokemonSettingsTemplateIDV0005PokemonCharmeleon,
+	PokemonSettingsTemplateIDV0005PokemonCharmeleonGoggles2026,
 	PokemonSettingsTemplateIDV0005PokemonCharmeleonNormal,
 	PokemonSettingsTemplateIDV0006PokemonCharizard,
 	PokemonSettingsTemplateIDV0006PokemonCharizardCopy2019,
+	PokemonSettingsTemplateIDV0006PokemonCharizardGoggles2026,
 	PokemonSettingsTemplateIDV0006PokemonCharizardNormal,
 	PokemonSettingsTemplateIDV0007PokemonSquirtle,
 	PokemonSettingsTemplateIDV0007PokemonSquirtleFall2019,

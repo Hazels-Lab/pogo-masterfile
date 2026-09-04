@@ -238,6 +238,7 @@ const (
 	StickerMetadataTemplateIDStickerHalloween2022Vulpix          StickerMetadataTemplateID = "STICKER_HALLOWEEN2022_VULPIX"
 	StickerMetadataTemplateIDStickerHalloween2025Noibat          StickerMetadataTemplateID = "STICKER_HALLOWEEN2025_NOIBAT"
 	StickerMetadataTemplateIDStickerHalloween2025Teddiursa       StickerMetadataTemplateID = "STICKER_HALLOWEEN2025_TEDDIURSA"
+	StickerMetadataTemplateIDStickerHanbokPikachu                StickerMetadataTemplateID = "STICKER_HANBOK_PIKACHU"
 	StickerMetadataTemplateIDStickerHaruCherrim                  StickerMetadataTemplateID = "STICKER_HARU_CHERRIM"
 	StickerMetadataTemplateIDStickerHaruDredearpika              StickerMetadataTemplateID = "STICKER_HARU_DREDEARPIKA"
 	StickerMetadataTemplateIDStickerHaruKireihana                StickerMetadataTemplateID = "STICKER_HARU_KIREIHANA"
@@ -868,6 +869,7 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDStickerHalloween2022Vulpix,
 	StickerMetadataTemplateIDStickerHalloween2025Noibat,
 	StickerMetadataTemplateIDStickerHalloween2025Teddiursa,
+	StickerMetadataTemplateIDStickerHanbokPikachu,
 	StickerMetadataTemplateIDStickerHaruCherrim,
 	StickerMetadataTemplateIDStickerHaruDredearpika,
 	StickerMetadataTemplateIDStickerHaruKireihana,

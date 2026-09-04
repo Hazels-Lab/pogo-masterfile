@@ -3867,7 +3867,6 @@ export type PokemonSettingsV0025PokemonPikachuK2026A01 = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			candyToEvolve: 50;
 			cinematicMoves: ["DISCHARGE", "THUNDERBOLT", "WILD_CHARGE"];
 			disableTransferToPokemonHome: true;
 			eliteCinematicMove: ["SURF", "THUNDER"];

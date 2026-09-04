@@ -435,9 +435,10 @@ type DeprecatedClientQuestTemplateIds =
 	| "LEVEL_50_CAP_SUB_2"
 	| "LEVEL_50_CAP_SUB_3";
 
-/** @deprecated lastSeen 2026-08-13 — 39 entries */
+/** @deprecated lastSeen 2026-09-04 — 40 entries */
 type DeprecatedCodeGateProtoIds =
 	| "AGE_CONFIRM_CODE_GATE"
+	| "AR_PHOTO_MULTIPLE_CONCURRENT_CAMPAIGN_CODE_GATE"
 	| "BATTLE_ACCESSIBILITY_CODE_GATE"
 	| "BATTLE_REWARDS_CODE_GATE"
 	| "BF_PLUS_ROLLOUT_CODE_GATE"

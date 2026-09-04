@@ -13,6 +13,7 @@ export type MegaEvoLevelSettings1 = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			progression: {
@@ -31,6 +32,7 @@ export type MegaEvoLevelSettings1V0015PokemonBeedrill = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "BEEDRILL";
@@ -50,6 +52,7 @@ export type MegaEvoLevelSettings1V0018PokemonPidgeot = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "PIDGEOT";
@@ -69,6 +72,7 @@ export type MegaEvoLevelSettings1V0026PokemonRaichu = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "RAICHU";
@@ -88,6 +92,7 @@ export type MegaEvoLevelSettings1V0071PokemonVictreebel = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "VICTREEBEL";
@@ -107,6 +112,7 @@ export type MegaEvoLevelSettings1V0080PokemonSlowbro = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "SLOWBRO";
@@ -126,6 +132,7 @@ export type MegaEvoLevelSettings1V0121PokemonStarmie = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "STARMIE";
@@ -145,6 +152,7 @@ export type MegaEvoLevelSettings1V0130PokemonGyarados = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "GYARADOS";
@@ -164,6 +172,7 @@ export type MegaEvoLevelSettings1V0149PokemonDragonite = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "DRAGONITE";
@@ -183,6 +192,7 @@ export type MegaEvoLevelSettings1V0150PokemonMewtwo = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "MEWTWO";
@@ -202,6 +212,7 @@ export type MegaEvoLevelSettings1V0227PokemonSkarmory = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "SKARMORY";
@@ -221,6 +232,7 @@ export type MegaEvoLevelSettings1V0229PokemonHoundoom = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "HOUNDOOM";
@@ -240,6 +252,7 @@ export type MegaEvoLevelSettings1V0248PokemonTyranitar = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "TYRANITAR";
@@ -259,6 +272,7 @@ export type MegaEvoLevelSettings1V0302PokemonSableye = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "SABLEYE";
@@ -278,6 +292,7 @@ export type MegaEvoLevelSettings1V0308PokemonMedicham = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "MEDICHAM";
@@ -297,6 +312,7 @@ export type MegaEvoLevelSettings1V0310PokemonManectric = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "MANECTRIC";
@@ -316,6 +332,7 @@ export type MegaEvoLevelSettings1V0334PokemonAltaria = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "ALTARIA";
@@ -335,6 +352,7 @@ export type MegaEvoLevelSettings1V0354PokemonBanette = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "BANETTE";
@@ -354,6 +372,7 @@ export type MegaEvoLevelSettings1V0373PokemonSalamence = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "SALAMENCE";
@@ -373,6 +392,7 @@ export type MegaEvoLevelSettings1V0376PokemonMetagross = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "METAGROSS";
@@ -392,6 +412,7 @@ export type MegaEvoLevelSettings1V0380PokemonLatias = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "LATIAS";
@@ -411,6 +432,7 @@ export type MegaEvoLevelSettings1V0381PokemonLatios = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "LATIOS";
@@ -430,6 +452,7 @@ export type MegaEvoLevelSettings1V0382PokemonKyogre = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "KYOGRE";
@@ -449,6 +472,7 @@ export type MegaEvoLevelSettings1V0383PokemonGroudon = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "GROUDON";
@@ -468,6 +492,7 @@ export type MegaEvoLevelSettings1V0384PokemonRayquaza = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "RAYQUAZA";
@@ -506,6 +531,7 @@ export type MegaEvoLevelSettings1V0445PokemonGarchomp = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "GARCHOMP";
@@ -525,6 +551,7 @@ export type MegaEvoLevelSettings1V0652PokemonChesnaught = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "CHESNAUGHT";
@@ -544,6 +571,7 @@ export type MegaEvoLevelSettings1V0655PokemonDelphox = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "DELPHOX";
@@ -563,6 +591,7 @@ export type MegaEvoLevelSettings1V0658PokemonGreninja = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "GRENINJA";
@@ -582,6 +611,7 @@ export type MegaEvoLevelSettings1V0687PokemonMalamar = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "MALAMAR";
@@ -601,6 +631,7 @@ export type MegaEvoLevelSettings1V0719PokemonDiancie = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "DIANCIE";
@@ -620,6 +651,7 @@ export type MegaEvoLevelSettings1V0870PokemonFalinks = S<
 			};
 			effects: {
 				sameTypeExtraCatchCandy: 1;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			level: 1;
 			pokemonId: "FALINKS";

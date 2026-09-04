@@ -64,6 +64,9 @@ export type FormSettingsV0004PokemonCharmander = S<
 					form: "CHARMANDER_FALL_2019";
 					isCostume: true;
 				},
+				{
+					form: "CHARMANDER_GOGGLES_2026";
+				},
 			];
 			pokemon: "CHARMANDER";
 		}
@@ -76,6 +79,9 @@ export type FormSettingsV0005PokemonCharmeleon = S<
 			forms: [
 				{
 					form: "CHARMELEON_NORMAL";
+				},
+				{
+					form: "CHARMELEON_GOGGLES_2026";
 				},
 			];
 			pokemon: "CHARMELEON";
@@ -93,6 +99,9 @@ export type FormSettingsV0006PokemonCharizard = S<
 				{
 					assetBundleSuffix: "pm0006_00_pgo_copy2019";
 					form: "CHARIZARD_COPY_2019";
+				},
+				{
+					form: "CHARIZARD_GOGGLES_2026";
 				},
 			];
 			pokemon: "CHARIZARD";

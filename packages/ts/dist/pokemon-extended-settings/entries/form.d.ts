@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1168 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1171 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -54,11 +54,62 @@ export type PokemonExtendedSettingsV0004PokemonCharmanderFall2019 = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0004PokemonCharmanderGoggles2026 = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0004_POKEMON_CHARMANDER_GOGGLES_2026",
+		{
+			form: "CHARMANDER_GOGGLES_2026";
+			sizeSettings: {
+				mLowerBound: 0.45;
+				mUpperBound: 0.75;
+				xlUpperBound: 0.9;
+				xsLowerBound: 0.3;
+				xxlUpperBound: 1.05;
+				xxsLowerBound: 0.294;
+			};
+			uniqueId: "CHARMANDER";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0005PokemonCharmeleonGoggles2026 = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0005_POKEMON_CHARMELEON_GOGGLES_2026",
+		{
+			form: "CHARMELEON_GOGGLES_2026";
+			sizeSettings: {
+				mLowerBound: 0.825;
+				mUpperBound: 1.375;
+				xlUpperBound: 1.65;
+				xsLowerBound: 0.55;
+				xxlUpperBound: 1.925;
+				xxsLowerBound: 0.539;
+			};
+			uniqueId: "CHARMELEON";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0006PokemonCharizardCopy2019 = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0006_POKEMON_CHARIZARD_COPY_2019",
 		{
 			form: "CHARIZARD_COPY_2019";
+			sizeSettings: {
+				mLowerBound: 1.275;
+				mUpperBound: 2.125;
+				xlUpperBound: 2.55;
+				xsLowerBound: 0.85;
+				xxlUpperBound: 2.975;
+				xxsLowerBound: 0.833;
+			};
+			uniqueId: "CHARIZARD";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0006PokemonCharizardGoggles2026 = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0006_POKEMON_CHARIZARD_GOGGLES_2026",
+		{
+			form: "CHARIZARD_GOGGLES_2026";
 			sizeSettings: {
 				mLowerBound: 1.275;
 				mUpperBound: 2.125;
@@ -20014,7 +20065,10 @@ export type PokemonExtendedSettingsFormMasterfileEntry =
 	| PokemonExtendedSettingsV0001PokemonBulbasaurFall2019
 	| PokemonExtendedSettingsV0003PokemonVenusaurCopy2019
 	| PokemonExtendedSettingsV0004PokemonCharmanderFall2019
+	| PokemonExtendedSettingsV0004PokemonCharmanderGoggles2026
+	| PokemonExtendedSettingsV0005PokemonCharmeleonGoggles2026
 	| PokemonExtendedSettingsV0006PokemonCharizardCopy2019
+	| PokemonExtendedSettingsV0006PokemonCharizardGoggles2026
 	| PokemonExtendedSettingsV0007PokemonSquirtleFall2019
 	| PokemonExtendedSettingsV0009PokemonBlastoiseCopy2019
 	| PokemonExtendedSettingsV0013PokemonWeedleNormal
