@@ -75,17 +75,17 @@ export type EventPassSettingsGofest2026Finale = S<
 				bonusBoxes: [
 					{
 						iconType: "SPAWN_UNKNOWN";
-						quantity: 5;
+						quantity: 25;
 						text: "quest_catch_pokemon_singular";
 					},
 					{
 						iconType: "RAID";
-						quantity: 100;
+						quantity: 250;
 						text: "quest_win_raid_singular";
 					},
 					{
 						iconType: "EGG";
-						quantity: 250;
+						quantity: 500;
 						text: "quest_hatch_egg_singular";
 					},
 				];

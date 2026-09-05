@@ -92,7 +92,6 @@ export interface ItemSettingsData {
 			| "EVENT_PASS_AFTERPARTY2026_EVENT"
 			| "EVENT_PASS_AMER2026_EVENT"
 			| "EVENT_PASS_AUGUST2026_SEASON"
-			| "EVENT_PASS_BLANCHE2026_EVENT"
 			| "EVENT_PASS_EMEA2026_EVENT"
 			| "EVENT_PASS_FLYINGTAXI2026_EVENT"
 			| "EVENT_PASS_GOFEST2025_GLOBAL"
@@ -100,6 +99,7 @@ export interface ItemSettingsData {
 			| "EVENT_PASS_GOTOUR2026_GLOBAL"
 			| "EVENT_PASS_GOTOUR2026_IRL"
 			| "EVENT_PASS_GOWA_2025"
+			| "EVENT_PASS_HORIZONS_FALL_2026_EVENT"
 			| "EVENT_PASS_JULY2026_SEASON"
 			| "EVENT_PASS_MEGASQUADS2026_EVENT"
 			| "EVENT_PASS_SEPTEMBER2026_SEASON"
@@ -629,7 +629,7 @@ export interface ItemSettingsData {
 	};
 	timePeriodCounters?: {
 		playerActivity: {
-			limit: number;
+			limit?: number;
 		};
 	};
 	xpBoost?: {

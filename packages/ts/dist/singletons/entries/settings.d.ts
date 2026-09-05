@@ -2790,7 +2790,7 @@ export interface EventMapRefreshSettings {
 	data: {
 		templateId: "EVENT_SERVER_SETTINGS";
 		eventMapRefreshSettings: {
-			eventServerSettingsHash: "484769a62f4e0466590d0664cf05f427914e6cdaba72145abdf07651bba66698";
+			eventServerSettingsHash: "ae31e2a8c2b1befc04cf16c7f07b5b61939bab5d414efd053eaa060dc9673361";
 		};
 	};
 }
