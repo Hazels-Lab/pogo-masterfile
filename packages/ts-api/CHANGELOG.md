@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.56] - 2026-09-05
+
+Automated regeneration from upstream masterfile commit `be51f47e8c81a159c5846082bc3eb85ab531aed2`.
+
+### Added template IDs (1)
+
+- BADGE_EVENT_0242
+
 ## [0.1.55] - 2026-09-04
 
 Automated regeneration from upstream masterfile commit `859dfff254ff35d004560a76a2c488d135bff403`.
