@@ -271,6 +271,8 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel3V0719PokemonDiancie,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0870_POKEMON_FALINKS")]
     MegaEvolutionLevel3V0870PokemonFalinks,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0015_POKEMON_BEEDRILL")]
+    MegaEvolutionLevel4V0015PokemonBeedrill,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0026_POKEMON_RAICHU")]
     MegaEvolutionLevel4V0026PokemonRaichu,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0071_POKEMON_VICTREEBEL")]

@@ -12,7 +12,6 @@ export type ItemSettingsItemGiovanniMap = S<
 			incidentTicket: {
 				ignoreFullInventory: true;
 			};
-			itemId: "ITEM_GIOVANNI_MAP";
 			itemType: "ITEM_TYPE_INCIDENT_TICKET";
 		}
 	>
@@ -26,7 +25,6 @@ export type ItemSettingsItemLeaderMap = S<
 			incidentTicket: {
 				ignoreFullInventory: true;
 			};
-			itemId: "ITEM_LEADER_MAP";
 			itemType: "ITEM_TYPE_INCIDENT_TICKET";
 		}
 	>
@@ -41,7 +39,6 @@ export type ItemSettingsItemLeaderMapFragment = S<
 				upgradedItem: "ITEM_LEADER_MAP";
 				upgradeRequirementCount: 6;
 			};
-			itemId: "ITEM_LEADER_MAP_FRAGMENT";
 			itemType: "ITEM_TYPE_INCIDENT_TICKET";
 		}
 	>
@@ -55,7 +52,6 @@ export type ItemSettingsItemShadowGem = S<
 			incidentTicket: {
 				ignoreFullInventory: true;
 			};
-			itemId: "ITEM_SHADOW_GEM";
 			itemType: "ITEM_TYPE_INCIDENT_TICKET";
 		}
 	>
@@ -70,7 +66,6 @@ export type ItemSettingsItemShadowGemFragment = S<
 				upgradedItem: "ITEM_SHADOW_GEM";
 				upgradeRequirementCount: 4;
 			};
-			itemId: "ITEM_SHADOW_GEM_FRAGMENT";
 			itemType: "ITEM_TYPE_INCIDENT_TICKET";
 		}
 	>

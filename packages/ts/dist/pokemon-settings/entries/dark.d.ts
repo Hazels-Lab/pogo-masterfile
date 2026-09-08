@@ -5095,6 +5095,7 @@ export type PokemonSettingsV0687PokemonMalamar = S<
 					};
 					modelHeight: 2.9;
 					modelScaleV2: 0.8;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0687_POKEMON_MALAMAR";
 					stats: {
 						baseAttack: 208;
 						baseDefense: 222;
@@ -5196,6 +5197,7 @@ export type PokemonSettingsV0687PokemonMalamarNormal = S<
 					};
 					modelHeight: 2.9;
 					modelScaleV2: 0.8;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0687_POKEMON_MALAMAR";
 					stats: {
 						baseAttack: 208;
 						baseDefense: 222;

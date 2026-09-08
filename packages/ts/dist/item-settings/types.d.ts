@@ -6,7 +6,9 @@ export interface ItemSettings<TemplateID extends string = string, TData extends 
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;
-		itemSettings: TData;
+		itemSettings: TData & {
+			itemId: TemplateID;
+		};
 	};
 }
 export type ItemSettingsType = W<ItemSettings>;
@@ -347,7 +349,6 @@ export interface ItemSettingsData {
 			| "2026-09-19T14:00:00";
 		giftable?: boolean;
 		giftItem?:
-			| number
 			| "ITEM_EVENT_TICKET_02_TO_GIFT"
 			| "ITEM_EVENT_TICKET_03_TO_GIFT"
 			| "ITEM_EVENT_TICKET_04_TO_GIFT"
@@ -369,6 +370,8 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S23_2026_09_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S23_2026_10_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S23_2026_12_TO_GIFT"
+			| "ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY_TO_GIFT"
+			| "ITEM_EVENT_TICKET_S24_SEP_19_MEGARAID_TO_GIFT"
 			| "ITEM_EVERGREEN_TICKET_TO_GIFT"
 			| "ITEM_GLOBAL_EVENT_TICKET_TO_GIFT";
 		grantBadgeBeforeEventStartMs?: "1769904000000";
@@ -510,7 +513,6 @@ export interface ItemSettingsData {
 			| "text_rewards_key_StarmieRaidDay"
 			| "text_rewards_key_WaterRRD26";
 		ticketItem?:
-			| number
 			| "ITEM_EVENT_TICKET_02"
 			| "ITEM_EVENT_TICKET_03"
 			| "ITEM_EVENT_TICKET_04"
@@ -529,6 +531,7 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S23_2026_08"
 			| "ITEM_EVENT_TICKET_S23_2026_10"
 			| "ITEM_EVENT_TICKET_S23_2026_12"
+			| "ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY"
 			| "ITEM_EVERGREEN_TICKET"
 			| "ITEM_GLOBAL_EVENT_TICKET";
 		titleImageUrl?: "https://storage.googleapis.com/prod-public-images/gotourlogo_1914247967.png";
@@ -549,7 +552,6 @@ export interface ItemSettingsData {
 		upgradeType: "INCREASE_ITEM_STORAGE" | "INCREASE_POKEMON_STORAGE" | "INCREASE_POSTCARD_STORAGE";
 	};
 	itemCap?: number;
-	itemId: number | string;
 	itemType:
 		| "ITEM_TYPE_BATTLE"
 		| "ITEM_TYPE_BREAKFAST"
@@ -610,6 +612,7 @@ export interface ItemSettingsData {
 		| "GOTour_2026_ticket_title"
 		| "ITEM_EVENT_PASS_POINT_GO_TOUR_01_name"
 		| "item_postcard_inventory_name_stamp";
+	namePluralOverride?: "ITEM_EVENT_PASS_POINT_GO_TOUR_01_name";
 	potion?: {
 		staAmount?: number;
 		staPercent?: number;
@@ -629,7 +632,7 @@ export interface ItemSettingsData {
 	};
 	timePeriodCounters?: {
 		playerActivity: {
-			limit?: number;
+			limit: number;
 		};
 	};
 	xpBoost?: {

@@ -786,6 +786,7 @@ export type EventPassTierSettingsGofest2026Finale40Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_GOFEST2026_FINALE_40_FREE",
 		{
+			isMilestoneRank: true;
 			minPointsRequired: 3900;
 			rank: 40;
 			rewards: [
@@ -1015,6 +1016,13 @@ export type EventPassTierSettingsGofest2026Finale52Free = S<
 			rank: 52;
 			rewards: [
 				{
+					tempEvoResource: {
+						amount: 25;
+						tempEvoPokemonBranch: {
+							pokedexId: "RAICHU";
+							tempEvoId: "TEMP_EVOLUTION_MEGA_X";
+						};
+					};
 					type: 20;
 				},
 			];
@@ -1331,6 +1339,7 @@ export type EventPassTierSettingsGofest2026Finale70Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_GOFEST2026_FINALE_70_FREE",
 		{
+			isMilestoneRank: true;
 			minPointsRequired: 6900;
 			rank: 70;
 			rewards: [
@@ -1784,6 +1793,13 @@ export type EventPassTierSettingsGofest2026Finale93Free = S<
 			rank: 93;
 			rewards: [
 				{
+					tempEvoResource: {
+						amount: 25;
+						tempEvoPokemonBranch: {
+							pokedexId: "RAICHU";
+							tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
+						};
+					};
 					type: 20;
 				},
 			];
@@ -1909,6 +1925,7 @@ export type EventPassTierSettingsGofest2026Finale100Free = S<
 	EventPassTierSettings<
 		"EVENT_PASS_GOFEST2026_FINALE_100_FREE",
 		{
+			isMilestoneRank: true;
 			minPointsRequired: 9900;
 			rank: 100;
 			rewards: [

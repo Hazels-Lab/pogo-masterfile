@@ -24,15 +24,9 @@ pub struct EventPassTrackUpgradeDescriptions {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(untagged)]
-pub enum TodayViewSectionValue {
-    Uint(u64),
-    String(String),
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct EventPassDisplaySettings {
+    pub background_configuration: Option<String>,
     pub bonus_boxes: [BonusBoxes; 3],
     pub event_pass_title_key: String,
     pub event_pass_track_upgrade_descriptions: [EventPassTrackUpgradeDescriptions; 1],
@@ -43,7 +37,7 @@ pub struct EventPassDisplaySettings {
     pub premium_reward_banner_top: Option<String>,
     pub premium_rewards_description: Option<String>,
     pub section_display_priority: Option<u64>,
-    pub today_view_section: TodayViewSectionValue,
+    pub today_view_section: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -56,7 +50,7 @@ pub struct TrackConditions {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct TrackConditionsV2 {
-    pub badge: TodayViewSectionValue,
+    pub badge: String,
     pub track: String,
     pub track_title_key: String,
 }

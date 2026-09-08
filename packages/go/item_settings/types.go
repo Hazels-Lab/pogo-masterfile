@@ -2,8 +2,6 @@
 
 package item_settings
 
-import "encoding/json"
-
 type ItemSettingsExpiredIncubatorReplacement struct {
 	IncubatorReplacement string `json:"incubatorReplacement"`
 	UsesCountOverride    uint64 `json:"usesCountOverride"`
@@ -81,12 +79,12 @@ type ItemSettingsGlobalEventTicket struct {
 	EventEndTime                 string                    `json:"eventEndTime"`
 	EventStartTime               string                    `json:"eventStartTime"`
 	Giftable                     *bool                     `json:"giftable,omitempty"`
-	GiftItem                     json.RawMessage           `json:"giftItem,omitempty"`
+	GiftItem                     *string                   `json:"giftItem,omitempty"`
 	GrantBadgeBeforeEventStartMs *string                   `json:"grantBadgeBeforeEventStartMs,omitempty"`
 	IconRewards                  []ItemSettingsIconRewards `json:"iconRewards,omitempty"`
 	ItemBagDescriptionKey        string                    `json:"itemBagDescriptionKey"`
 	TextRewardsKey               *string                   `json:"textRewardsKey,omitempty"`
-	TicketItem                   json.RawMessage           `json:"ticketItem,omitempty"`
+	TicketItem                   *string                   `json:"ticketItem,omitempty"`
 	TitleImageUrl                *string                   `json:"titleImageUrl,omitempty"`
 }
 
@@ -129,7 +127,7 @@ type ItemSettingsStatIncrease struct {
 }
 
 type ItemSettingsPlayerActivity struct {
-	Limit *uint64 `json:"limit,omitempty"`
+	Limit uint64 `json:"limit"`
 }
 
 type ItemSettingsTimePeriodCounters struct {
@@ -155,9 +153,10 @@ type ItemSettings struct {
 	IncidentTicket       *ItemSettingsIncidentTicket     `json:"incidentTicket,omitempty"`
 	InventoryUpgrade     *ItemSettingsInventoryUpgrade   `json:"inventoryUpgrade,omitempty"`
 	ItemCap              *uint64                         `json:"itemCap,omitempty"`
-	ItemId               json.RawMessage                 `json:"itemId"`
+	ItemId               string                          `json:"itemId"`
 	ItemType             string                          `json:"itemType"`
 	NameOverride         *string                         `json:"nameOverride,omitempty"`
+	NamePluralOverride   *string                         `json:"namePluralOverride,omitempty"`
 	Potion               *ItemSettingsPotion             `json:"potion,omitempty"`
 	ReplenishMp          *ItemSettingsReplenishMp        `json:"replenishMp,omitempty"`
 	Revive               *ItemSettingsRevive             `json:"revive,omitempty"`

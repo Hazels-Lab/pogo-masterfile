@@ -205,12 +205,28 @@ export type NonCombatMoveSettingsVmMoveTempEvolutionMegaXV0150PokemonMewtwo = S<
 	NonCombatMoveSettings<
 		"NON_COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO",
 		{
-			bonusEffect: object;
+			bonusEffect: {
+				megaMoveBonus: {
+					attackMultiplier: 1.15;
+					extraMegaRaidShieldBreak: 1;
+					specialMove: "TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO";
+				};
+			};
 			bonusType: 10;
 			cost: {
 				candyCost: 5;
+				tempEvoResourceCost: {
+					megaEnergyCost: 75;
+					tempEvoPokemonBranch: {
+						pokedexId: "MEWTWO";
+						tempEvoId: "TEMP_EVOLUTION_MEGA_X";
+					};
+				};
 			};
 			durationMs: "600000";
+			innLobbyActivationSettings: {
+				enableActivationInMegaRaidLobby: true;
+			};
 			uniqueId: "TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO";
 		}
 	>
@@ -219,12 +235,28 @@ export type NonCombatMoveSettingsVmMoveTempEvolutionMegaYV0150PokemonMewtwo = S<
 	NonCombatMoveSettings<
 		"NON_COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_Y_V0150_POKEMON_MEWTWO",
 		{
-			bonusEffect: object;
+			bonusEffect: {
+				megaMoveBonus: {
+					specialMove: "TEMP_EVOLUTION_MEGA_Y_V0150_POKEMON_MEWTWO";
+					visibleAppraisalStarTiers: [3, 4];
+				};
+			};
 			bonusType: 11;
 			cost: {
 				candyCost: 5;
+				tempEvoResourceCost: {
+					megaEnergyCost: 75;
+					tempEvoPokemonBranch: {
+						pokedexId: "MEWTWO";
+						tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
+					};
+				};
 			};
 			durationMs: "720000";
+			innLobbyActivationSettings: {
+				enableActivationInMaxLobby: true;
+				enableActivationInRaidLobby: true;
+			};
 			uniqueId: "TEMP_EVOLUTION_MEGA_Y_V0150_POKEMON_MEWTWO";
 		}
 	>

@@ -796,6 +796,7 @@ export type EventPassTierSettingsGofest2026Finale40Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_GOFEST2026_FINALE_40_PREMIUM",
 		{
+			isMilestoneRank: true;
 			rank: 40;
 			rewards: [
 				{
@@ -1006,6 +1007,13 @@ export type EventPassTierSettingsGofest2026Finale52Premium = S<
 			rank: 52;
 			rewards: [
 				{
+					tempEvoResource: {
+						amount: 100;
+						tempEvoPokemonBranch: {
+							pokedexId: "RAICHU";
+							tempEvoId: "TEMP_EVOLUTION_MEGA_X";
+						};
+					};
 					type: 20;
 				},
 			];
@@ -1339,6 +1347,7 @@ export type EventPassTierSettingsGofest2026Finale70Premium = S<
 				];
 				eventName: "short_event_pass_gofest2026_finale_weekend_wild_shiny_bonus";
 			};
+			isMilestoneRank: true;
 			rank: 70;
 			rewards: [
 				{
@@ -1762,6 +1771,13 @@ export type EventPassTierSettingsGofest2026Finale93Premium = S<
 			rank: 93;
 			rewards: [
 				{
+					tempEvoResource: {
+						amount: 100;
+						tempEvoPokemonBranch: {
+							pokedexId: "RAICHU";
+							tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
+						};
+					};
 					type: 20;
 				},
 			];
@@ -1881,6 +1897,7 @@ export type EventPassTierSettingsGofest2026Finale100Premium = S<
 	EventPassTierSettings<
 		"EVENT_PASS_GOFEST2026_FINALE_100_PREMIUM",
 		{
+			isMilestoneRank: true;
 			rank: 100;
 			rewards: [
 				{

@@ -5329,6 +5329,7 @@ export type PokemonSettingsV0870PokemonFalinks = S<
 					};
 					modelHeight: 2.9;
 					modelScaleV2: 0.8;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0870_POKEMON_FALINKS";
 					stats: {
 						baseAttack: 267;
 						baseDefense: 229;
@@ -5416,6 +5417,7 @@ export type PokemonSettingsV0870PokemonFalinksGofest2025TrainConductor = S<
 					};
 					modelHeight: 2.9;
 					modelScaleV2: 0.8;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0870_POKEMON_FALINKS";
 					stats: {
 						baseAttack: 267;
 						baseDefense: 229;
@@ -5502,6 +5504,7 @@ export type PokemonSettingsV0870PokemonFalinksNormal = S<
 					};
 					modelHeight: 2.9;
 					modelScaleV2: 0.8;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0870_POKEMON_FALINKS";
 					stats: {
 						baseAttack: 267;
 						baseDefense: 229;

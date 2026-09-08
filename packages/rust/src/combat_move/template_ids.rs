@@ -655,6 +655,8 @@ pub enum CombatMoveTemplateId {
     CombatV0594MoveGulpMissileGulping,
     #[serde(rename = "COMBAT_V0595_MOVE_GULP_MISSILE_GORGING")]
     CombatV0595MoveGulpMissileGorging,
+    #[serde(rename = "COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0015_POKEMON_BEEDRILL")]
+    CombatVmMoveTempEvolutionMegaV0015PokemonBeedrill,
     #[serde(rename = "COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0071_POKEMON_VICTREEBEL")]
     CombatVmMoveTempEvolutionMegaV0071PokemonVictreebel,
     #[serde(rename = "COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0121_POKEMON_STARMIE")]

@@ -9,7 +9,6 @@ export type ItemSettingsItemSingleStatIncrease = S<
 		{
 			category: "ITEM_CATEGORY_STAT_INCREASE";
 			ignoreInventorySpace: true;
-			itemId: "ITEM_SINGLE_STAT_INCREASE";
 			itemType: "ITEM_TYPE_STAT_INCREASE";
 			statIncrease: {
 				statsToIncreaseLimit: 1;
@@ -23,7 +22,6 @@ export type ItemSettingsItemTripleStatIncrease = S<
 		{
 			category: "ITEM_CATEGORY_STAT_INCREASE";
 			ignoreInventorySpace: true;
-			itemId: "ITEM_TRIPLE_STAT_INCREASE";
 			itemType: "ITEM_TYPE_STAT_INCREASE";
 			statIncrease: {
 				statsToIncreaseLimit: 3;

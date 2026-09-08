@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 47 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 49 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -20,6 +20,23 @@ export type IapItemDisplayEventPassGofest2025FinaleStoreRedirect = S<
 		}
 	>
 >;
+export type IapItemDisplayEventPassMonth1SeasonStoreRedirect = S<
+	IapItemDisplay<
+		"EVENT_PASS_MONTH1_SEASON_STORE_REDIRECT",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			description: "deluxe_event_pass_track_unlock_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fb8786503_PGO-MCS_GO_Pass_September_2026_TICKET_v1-1024x576.jpg";
+			sku: "pgorelease.month1_deluxe_event_pass_track_redirect";
+			skuDisableTime: "2026-10-08T10:00:00";
+			skuDisableTimeUtcMs: "1791453600000";
+			skuEnableTime: "2025-06-02T10:00:00";
+			skuEnableTimeUtcMs: "1748858400000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_sep";
+		}
+	>
+>;
 export type IapItemDisplayEventPassMonth3SeasonStoreRedirect = S<
 	IapItemDisplay<
 		"EVENT_PASS_MONTH3_SEASON_STORE_REDIRECT",
@@ -34,6 +51,23 @@ export type IapItemDisplayEventPassMonth3SeasonStoreRedirect = S<
 			skuEnableTimeUtcMs: "1754301600000";
 			sortOrder: 1;
 			title: "season_pass_premium_track_title_aug";
+		}
+	>
+>;
+export type IapItemDisplayEventPassSeptember1EventStoreRedirect = S<
+	IapItemDisplay<
+		"EVENT_PASS_SEPTEMBER1_EVENT_STORE_REDIRECT",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F13d4dacd_PGO-MCS_Avatar_Maschiff_Top_v2-1024x576%20no%20logo.png";
+			sku: "pgorelease.september1_2026_deluxe_event_pass_track_unlock_redirect";
+			skuDisableTime: "2026-09-16T20:00:00";
+			skuDisableTimeUtcMs: "1789588800000";
+			skuEnableTime: "2025-09-08T10:00:00";
+			skuEnableTimeUtcMs: "1757325600000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_mega_squads_2026";
 		}
 	>
 >;
@@ -890,7 +924,9 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket10Giftable = S<
 
 export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayEventPassGofest2025FinaleStoreRedirect
+	| IapItemDisplayEventPassMonth1SeasonStoreRedirect
 	| IapItemDisplayEventPassMonth3SeasonStoreRedirect
+	| IapItemDisplayEventPassSeptember1EventStoreRedirect
 	| IapItemDisplayEvergreenticket1
 	| IapItemDisplayEvergreenticket1Giftable
 	| IapItemDisplayGeneral1Ticket1

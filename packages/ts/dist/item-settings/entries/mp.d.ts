@@ -10,7 +10,6 @@ export type ItemSettingsItemMp = S<
 			category: "ITEM_CATEGORY_MP";
 			dropTrainerLevel: 1;
 			ignoreInventorySpace: true;
-			itemId: "ITEM_MP";
 			itemType: "ITEM_TYPE_MP";
 		}
 	>

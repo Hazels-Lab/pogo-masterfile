@@ -38,6 +38,12 @@ export interface NonCombatMoveSettingsData {
 			excludedPokedexIds: ["ZACIAN", "ZAMAZENTA"];
 			numAllMaxMoveLevelIncrease: number;
 		};
+		megaMoveBonus?: {
+			attackMultiplier?: number;
+			extraMegaRaidShieldBreak?: number;
+			specialMove: "TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO" | "TEMP_EVOLUTION_MEGA_Y_V0150_POKEMON_MEWTWO";
+			visibleAppraisalStarTiers?: [number, number];
+		};
 		slowFreezeBonus?: {
 			catchCircleOuterTimeScaleOverride: number;
 			catchCircleSpeedChangeThreshold: number;
@@ -67,8 +73,20 @@ export interface NonCombatMoveSettingsData {
 	cost: {
 		candyCost: number;
 		stardustCost?: number;
+		tempEvoResourceCost?: {
+			megaEnergyCost: number;
+			tempEvoPokemonBranch: {
+				pokedexId: "MEWTWO";
+				tempEvoId: "TEMP_EVOLUTION_MEGA_X" | "TEMP_EVOLUTION_MEGA_Y";
+			};
+		};
 	};
 	durationMs: "360000" | "600000" | "720000";
+	innLobbyActivationSettings?: {
+		enableActivationInMaxLobby?: boolean;
+		enableActivationInMegaRaidLobby?: boolean;
+		enableActivationInRaidLobby?: boolean;
+	};
 	uniqueId:
 		| "BEHEMOTH_BASH"
 		| "BEHEMOTH_BLADE"

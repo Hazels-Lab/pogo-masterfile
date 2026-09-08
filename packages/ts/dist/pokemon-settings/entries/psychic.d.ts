@@ -1452,6 +1452,7 @@ export type PokemonSettingsV0150PokemonMewtwo = S<
 					};
 					modelHeight: 2.3;
 					modelScaleV2: 0.86;
+					specialMove: "TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO";
 					stats: {
 						baseAttack: 399;
 						baseDefense: 215;
@@ -1470,6 +1471,7 @@ export type PokemonSettingsV0150PokemonMewtwo = S<
 					};
 					modelHeight: 1.7;
 					modelScaleV2: 1.2;
+					specialMove: "TEMP_EVOLUTION_MEGA_Y_V0150_POKEMON_MEWTWO";
 					stats: {
 						baseAttack: 413;
 						baseDefense: 223;
@@ -1677,6 +1679,7 @@ export type PokemonSettingsV0150PokemonMewtwoNormal = S<
 					};
 					modelHeight: 2.3;
 					modelScaleV2: 0.86;
+					specialMove: "TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO";
 					stats: {
 						baseAttack: 399;
 						baseDefense: 215;
@@ -1695,6 +1698,7 @@ export type PokemonSettingsV0150PokemonMewtwoNormal = S<
 					};
 					modelHeight: 1.7;
 					modelScaleV2: 1.2;
+					specialMove: "TEMP_EVOLUTION_MEGA_Y_V0150_POKEMON_MEWTWO";
 					stats: {
 						baseAttack: 413;
 						baseDefense: 223;

@@ -10513,6 +10513,7 @@ export type PokemonSettingsV0398PokemonStaraptor = S<
 						cylinderHeightM: 3.6;
 						cylinderRadiusM: 1;
 					};
+					specialMove: "TEMP_EVOLUTION_MEGA_V0398_POKEMON_STARAPTOR";
 					stats: {
 						baseAttack: 278;
 						baseDefense: 207;
@@ -10624,6 +10625,7 @@ export type PokemonSettingsV0398PokemonStaraptorNormal = S<
 						cylinderHeightM: 3.6;
 						cylinderRadiusM: 1;
 					};
+					specialMove: "TEMP_EVOLUTION_MEGA_V0398_POKEMON_STARAPTOR";
 					stats: {
 						baseAttack: 278;
 						baseDefense: 207;

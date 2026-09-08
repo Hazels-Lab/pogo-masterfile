@@ -434,6 +434,7 @@ export type PokemonSettingsV0149PokemonDragonite = S<
 					};
 					modelHeight: 2.2;
 					modelScaleV2: 0.9;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0149_POKEMON_DRAGONITE";
 					stats: {
 						baseAttack: 299;
 						baseDefense: 255;
@@ -547,6 +548,7 @@ export type PokemonSettingsV0149PokemonDragoniteNormal = S<
 					};
 					modelHeight: 2.2;
 					modelScaleV2: 0.9;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0149_POKEMON_DRAGONITE";
 					stats: {
 						baseAttack: 299;
 						baseDefense: 255;

@@ -9,7 +9,6 @@ export type ItemSettingsItemTroyDisk = S<
 		{
 			category: "ITEM_CATEGORY_DISK";
 			dropTrainerLevel: 1;
-			itemId: "ITEM_TROY_DISK";
 			itemType: "ITEM_TYPE_DISK";
 		}
 	>
@@ -20,7 +19,6 @@ export type ItemSettingsItemTroyDiskGlacial = S<
 		{
 			category: "ITEM_CATEGORY_DISK";
 			dropTrainerLevel: 1;
-			itemId: "ITEM_TROY_DISK_GLACIAL";
 			itemType: "ITEM_TYPE_DISK";
 		}
 	>
@@ -31,7 +29,6 @@ export type ItemSettingsItemTroyDiskMagnetic = S<
 		{
 			category: "ITEM_CATEGORY_DISK";
 			dropTrainerLevel: 1;
-			itemId: "ITEM_TROY_DISK_MAGNETIC";
 			itemType: "ITEM_TYPE_DISK";
 		}
 	>
@@ -42,7 +39,6 @@ export type ItemSettingsItemTroyDiskMossy = S<
 		{
 			category: "ITEM_CATEGORY_DISK";
 			dropTrainerLevel: 1;
-			itemId: "ITEM_TROY_DISK_MOSSY";
 			itemType: "ITEM_TYPE_DISK";
 		}
 	>
@@ -53,7 +49,6 @@ export type ItemSettingsItemTroyDiskRainy = S<
 		{
 			category: "ITEM_CATEGORY_DISK";
 			dropTrainerLevel: 1;
-			itemId: "ITEM_TROY_DISK_RAINY";
 			itemType: "ITEM_TYPE_DISK";
 		}
 	>
@@ -65,7 +60,6 @@ export type ItemSettingsItemTroyDiskSparkly = S<
 			category: "ITEM_CATEGORY_DISK";
 			dropTrainerLevel: 1;
 			itemCap: 1;
-			itemId: "ITEM_TROY_DISK_SPARKLY";
 			itemType: "ITEM_TYPE_DISK";
 		}
 	>

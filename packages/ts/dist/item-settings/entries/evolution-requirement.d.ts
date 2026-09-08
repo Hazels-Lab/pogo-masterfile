@@ -11,7 +11,6 @@ export type ItemSettingsFusionResourceBlackKyurem = S<
 			dropTrainerLevel: 1;
 			ignoreInventorySpace: true;
 			itemCap: 10000;
-			itemId: "FUSION_RESOURCE_BLACK_KYUREM";
 			itemType: "ITEM_TYPE_EVOLUTION_REQUIREMENT";
 		}
 	>
@@ -24,7 +23,6 @@ export type ItemSettingsFusionResourceDawnwingsNecrozma = S<
 			dropTrainerLevel: 1;
 			ignoreInventorySpace: true;
 			itemCap: 10000;
-			itemId: "FUSION_RESOURCE_DAWNWINGS_NECROZMA";
 			itemType: "ITEM_TYPE_EVOLUTION_REQUIREMENT";
 		}
 	>
@@ -37,7 +35,6 @@ export type ItemSettingsFusionResourceDuskmaneNecrozma = S<
 			dropTrainerLevel: 1;
 			ignoreInventorySpace: true;
 			itemCap: 10000;
-			itemId: "FUSION_RESOURCE_DUSKMANE_NECROZMA";
 			itemType: "ITEM_TYPE_EVOLUTION_REQUIREMENT";
 		}
 	>
@@ -50,7 +47,6 @@ export type ItemSettingsFusionResourceWhiteKyurem = S<
 			dropTrainerLevel: 1;
 			ignoreInventorySpace: true;
 			itemCap: 10000;
-			itemId: "FUSION_RESOURCE_WHITE_KYUREM";
 			itemType: "ITEM_TYPE_EVOLUTION_REQUIREMENT";
 		}
 	>
@@ -63,7 +59,6 @@ export type ItemSettingsItemBeans = S<
 			dropTrainerLevel: 1;
 			ignoreInventorySpace: true;
 			itemCap: 300;
-			itemId: "ITEM_BEANS";
 			itemType: "ITEM_TYPE_EVOLUTION_REQUIREMENT";
 		}
 	>
@@ -74,7 +69,6 @@ export type ItemSettingsItemDragonScale = S<
 		{
 			category: "ITEM_CATEGORY_EVOLUTION_REQUIREMENT";
 			dropTrainerLevel: 10;
-			itemId: "ITEM_DRAGON_SCALE";
 			itemType: "ITEM_TYPE_EVOLUTION_REQUIREMENT";
 		}
 	>
@@ -85,7 +79,6 @@ export type ItemSettingsItemGen4EvolutionStone = S<
 		{
 			category: "ITEM_CATEGORY_EVOLUTION_REQUIREMENT";
 			dropTrainerLevel: 10;
-			itemId: "ITEM_GEN4_EVOLUTION_STONE";
 			itemType: "ITEM_TYPE_EVOLUTION_REQUIREMENT";
 		}
 	>
@@ -96,7 +89,6 @@ export type ItemSettingsItemGen5EvolutionStone = S<
 		{
 			category: "ITEM_CATEGORY_EVOLUTION_REQUIREMENT";
 			dropTrainerLevel: 10;
-			itemId: "ITEM_GEN5_EVOLUTION_STONE";
 			itemType: "ITEM_TYPE_EVOLUTION_REQUIREMENT";
 		}
 	>
@@ -107,7 +99,6 @@ export type ItemSettingsItemKingsRock = S<
 		{
 			category: "ITEM_CATEGORY_EVOLUTION_REQUIREMENT";
 			dropTrainerLevel: 10;
-			itemId: "ITEM_KINGS_ROCK";
 			itemType: "ITEM_TYPE_EVOLUTION_REQUIREMENT";
 		}
 	>
@@ -118,7 +109,6 @@ export type ItemSettingsItemMetalCoat = S<
 		{
 			category: "ITEM_CATEGORY_EVOLUTION_REQUIREMENT";
 			dropTrainerLevel: 10;
-			itemId: "ITEM_METAL_COAT";
 			itemType: "ITEM_TYPE_EVOLUTION_REQUIREMENT";
 		}
 	>
@@ -131,7 +121,6 @@ export type ItemSettingsItemOtherEvolutionStoneA = S<
 			dropTrainerLevel: 10;
 			ignoreInventorySpace: true;
 			itemCap: 9999;
-			itemId: "ITEM_OTHER_EVOLUTION_STONE_A";
 			itemType: "ITEM_TYPE_EVOLUTION_REQUIREMENT";
 		}
 	>
@@ -144,7 +133,6 @@ export type ItemSettingsItemOtherEvolutionStoneMapleA = S<
 			dropTrainerLevel: 10;
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
-			itemId: "ITEM_OTHER_EVOLUTION_STONE_MAPLE_A";
 			itemType: "ITEM_TYPE_EVOLUTION_REQUIREMENT";
 		}
 	>
@@ -157,7 +145,6 @@ export type ItemSettingsItemOtherEvolutionStoneMapleB = S<
 			dropTrainerLevel: 10;
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
-			itemId: "ITEM_OTHER_EVOLUTION_STONE_MAPLE_B";
 			itemType: "ITEM_TYPE_EVOLUTION_REQUIREMENT";
 		}
 	>
@@ -170,7 +157,6 @@ export type ItemSettingsItemOtherEvolutionStoneMapleC = S<
 			dropTrainerLevel: 10;
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
-			itemId: "ITEM_OTHER_EVOLUTION_STONE_MAPLE_C";
 			itemType: "ITEM_TYPE_EVOLUTION_REQUIREMENT";
 		}
 	>
@@ -184,7 +170,6 @@ export type ItemSettingsItemResourceCrownedZacian = S<
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
 			itemCap: 10000;
-			itemId: "ITEM_RESOURCE_CROWNED_ZACIAN";
 			itemType: "ITEM_TYPE_EVOLUTION_REQUIREMENT";
 		}
 	>
@@ -198,7 +183,6 @@ export type ItemSettingsItemResourceCrownedZamazenta = S<
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
 			itemCap: 10000;
-			itemId: "ITEM_RESOURCE_CROWNED_ZAMAZENTA";
 			itemType: "ITEM_TYPE_EVOLUTION_REQUIREMENT";
 		}
 	>
@@ -209,7 +193,6 @@ export type ItemSettingsItemSunStone = S<
 		{
 			category: "ITEM_CATEGORY_EVOLUTION_REQUIREMENT";
 			dropTrainerLevel: 10;
-			itemId: "ITEM_SUN_STONE";
 			itemType: "ITEM_TYPE_EVOLUTION_REQUIREMENT";
 		}
 	>
@@ -220,7 +203,6 @@ export type ItemSettingsItemUpGrade = S<
 		{
 			category: "ITEM_CATEGORY_EVOLUTION_REQUIREMENT";
 			dropTrainerLevel: 10;
-			itemId: "ITEM_UP_GRADE";
 			itemType: "ITEM_TYPE_EVOLUTION_REQUIREMENT";
 		}
 	>

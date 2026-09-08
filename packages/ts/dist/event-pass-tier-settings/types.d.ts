@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 1620 entries (structural types).
+// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 2140 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -14,26 +14,7 @@ export type EventPassTierSettingsType = W<EventPassTierSettings>;
 export interface EventPassTierSettingsData {
 	activeBonusDisplaySettings?: {
 		bonusBoxes: Array<{
-			iconType: number | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "RAID" | "SPAWN_UNKNOWN" | "TRADE";
-			text:
-				| "bonus_link_charge_cap_2000"
-				| "dai_duration_double"
-				| "daily_free_single_incubator"
-				| "event_pass_gofest2026_finale_chosen_starter_shiny_bonus"
-				| "event_pass_gofest2026_finale_mega_raid_rewards_bonus"
-				| "event_pass_gofest2026_finale_t4_mega_raid_shiny_bonus"
-				| "event_pass_gofest2026_finale_weekend_wild_shiny_bonus"
-				| "gift_open_more_daily"
-				| "gift_storage_more"
-				| "season_pass_bonus_hatch_xp_stardust"
-				| "trade_extra_candy"
-				| "trade_guaranteed_candyxl";
-		}>;
-		eventName: "active_bonuses_label" | "go_pass_cumulative_bonuses_header";
-	};
-	bonusSettings?: {
-		bonusBoxes: Array<{
-			iconType: number | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "RAID" | "SPAWN_UNKNOWN" | "TRADE";
+			iconType: number | "EGG" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "RAID" | "SPAWN_UNKNOWN" | "TRADE";
 			text:
 				| "bonus_link_charge_cap_2000"
 				| "dai_duration_double"
@@ -45,6 +26,32 @@ export interface EventPassTierSettingsData {
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
 				| "gift_storage_more"
+				| "hatch_stardust_double"
+				| "incubator_distance_half"
+				| "mega_energy_weedle_pidgey_houndour_carvanha"
+				| "season_pass_bonus_hatch_xp_stardust"
+				| "trade_extra_candy"
+				| "trade_guaranteed_candyxl";
+		}>;
+		eventName: "active_bonuses_label" | "go_pass_cumulative_bonuses_header";
+	};
+	bonusSettings?: {
+		bonusBoxes: Array<{
+			iconType: number | "EGG" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "RAID" | "SPAWN_UNKNOWN" | "TRADE";
+			text:
+				| "bonus_link_charge_cap_2000"
+				| "dai_duration_double"
+				| "daily_free_single_incubator"
+				| "event_pass_gofest2026_finale_chosen_starter_shiny_bonus"
+				| "event_pass_gofest2026_finale_mega_raid_rewards_bonus"
+				| "event_pass_gofest2026_finale_t4_mega_raid_shiny_bonus"
+				| "event_pass_gofest2026_finale_weekend_wild_shiny_bonus"
+				| "gift_open_more_daily"
+				| "gift_send_more_daily"
+				| "gift_storage_more"
+				| "hatch_stardust_double"
+				| "incubator_distance_half"
+				| "mega_energy_weedle_pidgey_houndour_carvanha"
 				| "season_pass_bonus_hatch_xp_stardust"
 				| "trade_extra_candy"
 				| "trade_guaranteed_candyxl";
@@ -60,65 +67,13 @@ export interface EventPassTierSettingsData {
 			| "short_event_pass_gofest2026_finale_t4_mega_raid_shiny_bonus"
 			| "short_event_pass_gofest2026_finale_weekend_wild_shiny_bonus";
 	};
+	isMilestoneRank?: boolean;
 	minPointsRequired?: number;
 	rank: number;
 	rewards?: Array<{
 		candy?: {
 			amount: number;
-			pokemonId:
-				| "ABRA"
-				| "AERODACTYL"
-				| "ARON"
-				| "AUDINO"
-				| "BELLSPROUT"
-				| "BUNEARY"
-				| "CARVANHA"
-				| "CHIMECHO"
-				| "CLAMPERL"
-				| "DEINO"
-				| "DONDOZO"
-				| "DRATINI"
-				| "EEVEE"
-				| "ELECTRIKE"
-				| "FALINKS"
-				| "FENNEKIN"
-				| "FRILLISH"
-				| "GASTLY"
-				| "GLIMMET"
-				| "GROWLITHE"
-				| "HOUNDOUR"
-				| "INKAY"
-				| "JANGMO_O"
-				| "LATIAS"
-				| "MAGIKARP"
-				| "MAREEP"
-				| "MAWILE"
-				| "MEDITITE"
-				| "MEOWTH"
-				| "MUDKIP"
-				| "NUMEL"
-				| "ONIX"
-				| "ORTHWORM"
-				| "PIKACHU"
-				| "PINSIR"
-				| "POLTCHAGEIST"
-				| "ROCKRUFF"
-				| "SABLEYE"
-				| "SHUPPET"
-				| "SINISTEA"
-				| "SKARMORY"
-				| "SLOWPOKE"
-				| "SNOM"
-				| "SNORUNT"
-				| "SNOVER"
-				| "SOBBLE"
-				| "STANTLER"
-				| "STARYU"
-				| "SWABLU"
-				| "SWINUB"
-				| "TOGEDEMARU"
-				| "TYROGUE"
-				| "WEEDLE";
+			pokemonId: string;
 		};
 		exp?: number;
 		item?: {
@@ -129,6 +84,9 @@ export interface EventPassTierSettingsData {
 				| "ITEM_GOLDEN_RAZZ_BERRY"
 				| "ITEM_GREAT_BALL"
 				| "ITEM_INCENSE_ORDINARY"
+				| "ITEM_INCUBATOR_BASIC"
+				| "ITEM_INCUBATOR_SUPER"
+				| "ITEM_INCUBATOR_TIMED"
 				| "ITEM_LEADER_MAP_FRAGMENT"
 				| "ITEM_LUCKY_EGG"
 				| "ITEM_LUCKY_FRIEND_APPLICATOR"
@@ -181,8 +139,8 @@ export interface EventPassTierSettingsData {
 				| "VICTREEBEL";
 		};
 		neutralAvatarItemTemplate?: {
-			displayTemplateId: "N_DISPLAY_n_shirt_gofest2026finred";
-			itemTemplateId: "N_AVATAR_n_shirt_gofest2026finred";
+			displayTemplateId: "N_DISPLAY_n_shirt_gofest2026finred" | "N_DISPLAY_n_shirt_maschiff";
+			itemTemplateId: "N_AVATAR_n_shirt_gofest2026finred" | "N_AVATAR_n_shirt_maschiff";
 		};
 		playerAttribute?: {
 			durationMins: number;
@@ -197,78 +155,41 @@ export interface EventPassTierSettingsData {
 				| "EVENT_PASS_GOFEST2026_FINALE_LINK_CHARGE"
 				| "EVENT_PASS_GOFEST2026_FINALE_RAID_REWARDS"
 				| "EVENT_PASS_GOFEST2026_FINALE_RAID_SHINY"
-				| "EVENT_PASS_GOFEST2026_FINALE_WEEKEND_WILD_SHINY";
+				| "EVENT_PASS_GOFEST2026_FINALE_WEEKEND_WILD_SHINY"
+				| "megasquads2026_season_pass_entitlement"
+				| "megasquads2026_season_pass_rank_01"
+				| "megasquads2026_season_pass_rank_01_paid_not_used"
+				| "megasquads2026_season_pass_rank_02"
+				| "megasquads2026_season_pass_rank_02_paid"
+				| "september2026_season_pass_entitlement"
+				| "september2026_season_pass_rank_01"
+				| "september2026_season_pass_rank_02"
+				| "september2026_season_pass_rank_03"
+				| "september2026_season_pass_rank_04";
 		};
 		pokemonEncounter?: {
-			isFeaturedPokemon: boolean;
+			isFeaturedPokemon?: boolean;
 			pokemonDisplay?: {
 				breadModeEnum?: "BREAD_MODE";
-				form:
-					| "AERODACTYL_NORMAL"
-					| "ALAKAZAM_NORMAL"
-					| "AUDINO_NORMAL"
-					| "CHIMECHO_NORMAL"
-					| "CLAMPERL_NORMAL"
-					| "DELPHOX_NORMAL"
-					| "DONDOZO_NORMAL"
-					| "EEVEE_NORMAL"
-					| "FENNEKIN_NORMAL"
-					| "FRILLISH_NORMAL"
-					| "GLIMMET_NORMAL"
-					| "GROWLITHE_HISUIAN"
-					| "GROWLITHE_NORMAL"
-					| "HITMONCHAN_NORMAL"
-					| "JANGMO_O_NORMAL"
-					| "LATIAS_NORMAL"
-					| "MEOWTH_ALOLA"
-					| "MEOWTH_NORMAL"
-					| "MUDKIP_NORMAL"
-					| "ORTHWORM_NORMAL"
-					| "ROCKRUFF_NORMAL"
-					| "SNOM_NORMAL"
-					| "SOBBLE_NORMAL"
-					| "SWINUB_NORMAL"
-					| "TOGEDEMARU_NORMAL"
-					| "WYRDEER_NORMAL"
-					| "ZWEILOUS_NORMAL";
+				form: string;
 				locationCard?: {
 					locationCard: "LC_SPECIALBACKGROUND_2026_GLOBAL_MEGA_001";
 				};
 			};
-			pokemonId:
-				| "AERODACTYL"
-				| "ALAKAZAM"
-				| "AUDINO"
-				| "CHIMECHO"
-				| "CLAMPERL"
-				| "DELPHOX"
-				| "DONDOZO"
-				| "EEVEE"
-				| "FENNEKIN"
-				| "FRILLISH"
-				| "GLIMMET"
-				| "GROWLITHE"
-				| "HITMONCHAN"
-				| "JANGMO_O"
-				| "LATIAS"
-				| "MEOWTH"
-				| "MUDKIP"
-				| "ORTHWORM"
-				| "POLTCHAGEIST"
-				| "ROCKRUFF"
-				| "SINISTEA"
-				| "SNOM"
-				| "SOBBLE"
-				| "SWINUB"
-				| "TOGEDEMARU"
-				| "WYRDEER"
-				| "ZWEILOUS";
+			pokemonId: string;
 			statsLimitsOverride?: {
 				maxPokemonLevel: number;
 				minPokemonLevel: number;
 			};
 		};
 		stardust?: number;
+		tempEvoResource?: {
+			amount: number;
+			tempEvoPokemonBranch: {
+				pokedexId: "RAICHU";
+				tempEvoId: "TEMP_EVOLUTION_MEGA_X" | "TEMP_EVOLUTION_MEGA_Y";
+			};
+		};
 		type: number | "AVATAR_CLOTHING" | "CANDY" | "EXPERIENCE" | "ITEM" | "MEGA_RESOURCE" | "PLAYER_ATTRIBUTE" | "POKEMON_ENCOUNTER" | "STARDUST" | "XL_CANDY";
 		xlCandy?: {
 			amount: number;
@@ -277,36 +198,49 @@ export interface EventPassTierSettingsData {
 				| "AERODACTYL"
 				| "ARON"
 				| "AUDINO"
+				| "BAGON"
 				| "BELLSPROUT"
+				| "BLIPBUG"
 				| "BUNEARY"
 				| "CARVANHA"
 				| "CHIMECHO"
 				| "CLAMPERL"
 				| "DEINO"
 				| "DRATINI"
+				| "DRILBUR"
 				| "EEVEE"
 				| "ELECTRIKE"
+				| "ESPURR"
 				| "FALINKS"
 				| "FENNEKIN"
+				| "FERROSEED"
+				| "FIDOUGH"
 				| "GASTLY"
 				| "GLIMMET"
+				| "GOSSIFLEUR"
 				| "GROWLITHE"
 				| "HOUNDOUR"
 				| "INKAY"
 				| "JANGMO_O"
 				| "LATIAS"
+				| "LATIOS"
+				| "LILLIPUP"
 				| "MAGIKARP"
 				| "MAREEP"
 				| "MAWILE"
 				| "MEDITITE"
 				| "MEOWTH"
+				| "NICKIT"
 				| "NUMEL"
 				| "ONIX"
 				| "PIKACHU"
 				| "PINSIR"
+				| "ROGGENROLA"
 				| "SABLEYE"
+				| "SCYTHER"
 				| "SHUPPET"
 				| "SINISTEA"
+				| "SIZZLIPEDE"
 				| "SKARMORY"
 				| "SLOWPOKE"
 				| "SNOM"
@@ -319,7 +253,10 @@ export interface EventPassTierSettingsData {
 				| "SWINUB"
 				| "TOGEDEMARU"
 				| "TYROGUE"
-				| "WEEDLE";
+				| "VOLTORB"
+				| "WEEDLE"
+				| "WIMPOD"
+				| "YAMPER";
 		};
 	}>;
 	track: "FREE" | "PREMIUM";

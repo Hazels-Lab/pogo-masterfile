@@ -663,6 +663,8 @@ pub enum MoveSettingsTemplateId {
     V0594MoveGulpMissileGulping,
     #[serde(rename = "V0595_MOVE_GULP_MISSILE_GORGING")]
     V0595MoveGulpMissileGorging,
+    #[serde(rename = "VM_MOVE_TEMP_EVOLUTION_MEGA_V0015_POKEMON_BEEDRILL")]
+    VmMoveTempEvolutionMegaV0015PokemonBeedrill,
     #[serde(rename = "VM_MOVE_TEMP_EVOLUTION_MEGA_V0071_POKEMON_VICTREEBEL")]
     VmMoveTempEvolutionMegaV0071PokemonVictreebel,
     #[serde(rename = "VM_MOVE_TEMP_EVOLUTION_MEGA_V0121_POKEMON_STARMIE")]
