@@ -51,6 +51,7 @@ export interface IapItemDisplayData {
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F07b0cffa_PGO-MCS_2026_Ultra_Unlock_01_v6-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F13d4dacd_PGO-MCS_Avatar_Maschiff_Top_v2-1024x576%20no%20logo.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20ad29e8_PGO-MCS_Water_Festival_2026_TICKET_v3-1024x576.jpg"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F035aa0ae_PGO-MCS_S24_GBL_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F68bf81f3_PGO-MCS_GO_Pass_Special_Anniversary_Pikachu_Celebration_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F84f00147_PGO-MCS_GO_Pass_August_2026_TICKET_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
@@ -88,7 +89,6 @@ export interface IapItemDisplayData {
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F3b085206_PGO-MCS_10th_Anniversary_Celebration_TICKET_v2-1024x576.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F9398cb22_PGO-MCS_Skarmory_Super_Mega_Raid_Day_v4-1024x576.jpg"
 		| "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fe2400534_20260511_pgo_s23_ShinyShaymin_1024x576_nologo.jpg"
-		| "https://storage.googleapis.com/prod-public-images/GBL_SharedSkies_2024.jpeg"
 		| "https://storage.googleapis.com/prod-public-images/gf20.jpg"
 		| "https://storage.googleapis.com/prod-public-images/Safari_ticket_banner.png";
 	maxLevel?: number;
@@ -101,7 +101,6 @@ export interface IapItemDisplayData {
 		| "2022-06-02T13:00:00"
 		| "2023-08-27T23:59:00"
 		| "2023-11-24T18:15:00"
-		| "2024-06-15T13:00:00"
 		| "2024-10-10T22:00:00"
 		| "2024-10-14T22:00:00"
 		| "2024-11-04T10:00:00"
@@ -150,13 +149,13 @@ export interface IapItemDisplayData {
 		| "2026-09-10T10:00:00"
 		| "2026-09-12T17:00:00"
 		| "2026-09-16T20:00:00"
+		| "2026-09-22T13:00:00"
 		| "2026-10-08T10:00:00";
 	skuDisableTimeUtcMs?:
 		| "1595786400000"
 		| "1654174800000"
 		| "1693180740000"
 		| "1700849700000"
-		| "1718456400000"
 		| "1728597600000"
 		| "1728943200000"
 		| "1730714400000"
@@ -205,6 +204,7 @@ export interface IapItemDisplayData {
 		| "1789034400000"
 		| "1789232400000"
 		| "1789588800000"
+		| "1790082000000"
 		| "1791453600000";
 	skuEnableTime?:
 		| "2019-03-14T08:00:00"
@@ -254,7 +254,8 @@ export interface IapItemDisplayData {
 		| "2026-03-03T13:00:00"
 		| "2026-07-06T00:00:00"
 		| "2026-08-07T10:00:00"
-		| "2026-08-31T10:00:00";
+		| "2026-08-31T10:00:00"
+		| "2026-09-08T13:00:00";
 	skuEnableTimeUtcMs?:
 		| "1552550400000"
 		| "1572555600000"
@@ -303,7 +304,8 @@ export interface IapItemDisplayData {
 		| "1772542800000"
 		| "1783296000000"
 		| "1786096800000"
-		| "1788170400000";
+		| "1788170400000"
+		| "1788872400000";
 	sortOrder?: number;
 	spriteId?: string;
 	title?: string;

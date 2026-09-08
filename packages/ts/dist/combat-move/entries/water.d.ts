@@ -11,8 +11,8 @@ export type CombatMoveV0053MoveBubbleBeam = S<
 				buffActivationChance: 1;
 				targetAttackStatStageChange: -1;
 			};
-			energyDelta: -40;
-			power: 25;
+			energyDelta: -50;
+			power: 50;
 			type: "POKEMON_TYPE_WATER";
 			uniqueId: "BUBBLE_BEAM";
 			vfxName: "bubble_beam";
@@ -47,8 +47,8 @@ export type CombatMoveV0104MoveBrine = S<
 	CombatMove<
 		"COMBAT_V0104_MOVE_BRINE",
 		{
-			energyDelta: -50;
-			power: 60;
+			energyDelta: -60;
+			power: 100;
 			type: "POKEMON_TYPE_WATER";
 			uniqueId: "BRINE";
 			vfxName: "brine";

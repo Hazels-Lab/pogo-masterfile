@@ -32,7 +32,7 @@ pub struct Pokemon {
 #[serde(rename_all = "camelCase")]
 pub struct GuaranteedLimitedPokemonReward {
     pub identifier: String,
-    pub per_competitive_combat_season_max_count: u64,
+    pub lifetime_max_count: u64,
     pub pokemon: Pokemon,
 }
 
@@ -48,20 +48,20 @@ pub struct AvailablePokemon {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct GuaranteedLimitedPokemonRewardV2 {
-    pub identifier: String,
-    pub lifetime_max_count: u64,
+pub struct AvailablePokemonV2 {
+    pub attack_iv_override: AttackIvOverride,
+    pub defense_iv_override: AttackIvOverride,
     pub pokemon: Pokemon,
+    pub stamina_iv_override: AttackIvOverride,
+    pub unlocked_at_rank: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct AvailablePokemonV2 {
-    pub attack_iv_override: AttackIvOverride,
-    pub defense_iv_override: AttackIvOverride,
-    pub guaranteed_limited_pokemon_reward: GuaranteedLimitedPokemonRewardV2,
-    pub stamina_iv_override: AttackIvOverride,
-    pub unlocked_at_rank: u64,
+pub struct PokemonV2 {
+    pub pokemon_display: PokemonDisplay,
+    pub pokemon_id: String,
+    pub shiny_probability: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -69,7 +69,25 @@ pub struct AvailablePokemonV2 {
 pub struct AvailablePokemonV3 {
     pub attack_iv_override: AttackIvOverride,
     pub defense_iv_override: AttackIvOverride,
+    pub pokemon: PokemonV2,
+    pub stamina_iv_override: AttackIvOverride,
+    pub unlocked_at_rank: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct GuaranteedLimitedPokemonRewardV2 {
+    pub identifier: String,
+    pub per_competitive_combat_season_max_count: u64,
     pub pokemon: Pokemon,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct AvailablePokemonV4 {
+    pub attack_iv_override: AttackIvOverride,
+    pub defense_iv_override: AttackIvOverride,
+    pub guaranteed_limited_pokemon_reward: GuaranteedLimitedPokemonRewardV2,
     pub stamina_iv_override: AttackIvOverride,
     pub unlocked_at_rank: u64,
 }
@@ -85,11 +103,19 @@ pub struct GuaranteedLimitedPokemonRewardV3 {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct AvailablePokemonV4 {
+pub struct PokemonV3 {
+    pub pokemon_display: PokemonDisplay,
+    pub pokemon_id: String,
+    pub shiny_probability: Option<f64>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct AvailablePokemonV5 {
     pub attack_iv_override: AttackIvOverride,
     pub defense_iv_override: AttackIvOverride,
     pub guaranteed_limited_pokemon_reward: Option<GuaranteedLimitedPokemonRewardV3>,
-    pub pokemon: Option<Pokemon>,
+    pub pokemon: Option<PokemonV3>,
     pub stamina_iv_override: AttackIvOverride,
     pub unlocked_at_rank: u64,
 }
@@ -97,13 +123,13 @@ pub struct AvailablePokemonV4 {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct Misc {
-    pub available_pokemon: Vec<AvailablePokemonV4>,
+    pub available_pokemon: Vec<AvailablePokemonV5>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct RewardTrack {
-    pub available_pokemon: Vec<AvailablePokemonV4>,
+    pub available_pokemon: Vec<AvailablePokemonV5>,
     pub reward_track: String,
 }
 

@@ -3734,7 +3734,7 @@ export type PokemonSettingsV0143PokemonSnorlax = S<
 			pokedexHeightM: 2.1;
 			pokedexWeightKg: 460;
 			pokemonId: "SNORLAX";
-			quickMoves: ["ZEN_HEADBUTT_FAST", "LICK_FAST"];
+			quickMoves: ["ZEN_HEADBUTT_FAST", "LICK_FAST", "PSYWAVE_FAST"];
 			shadow: {
 				purificationCandyNeeded: 5;
 				purificationStardustNeeded: 5000;
@@ -3811,7 +3811,7 @@ export type PokemonSettingsV0143PokemonSnorlaxNormal = S<
 			pokedexHeightM: 2.1;
 			pokedexWeightKg: 460;
 			pokemonId: "SNORLAX";
-			quickMoves: ["ZEN_HEADBUTT_FAST", "LICK_FAST"];
+			quickMoves: ["ZEN_HEADBUTT_FAST", "LICK_FAST", "PSYWAVE_FAST"];
 			shadow: {
 				purificationCandyNeeded: 5;
 				purificationStardustNeeded: 5000;
@@ -5912,7 +5912,7 @@ export type PokemonSettingsV0241PokemonMiltank = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["STOMP", "BODY_SLAM", "GYRO_BALL", "THUNDERBOLT", "ICE_BEAM"];
+			cinematicMoves: ["STOMP", "BODY_SLAM", "GYRO_BALL", "THUNDERBOLT", "ICE_BEAM", "HIGH_HORSEPOWER"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 20;
@@ -5975,7 +5975,7 @@ export type PokemonSettingsV0241PokemonMiltankNormal = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["STOMP", "BODY_SLAM", "GYRO_BALL", "THUNDERBOLT", "ICE_BEAM"];
+			cinematicMoves: ["STOMP", "BODY_SLAM", "GYRO_BALL", "THUNDERBOLT", "ICE_BEAM", "HIGH_HORSEPOWER"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 20;
@@ -14052,7 +14052,7 @@ export type PokemonSettingsV0531PokemonAudino = S<
 			pokedexHeightM: 1.1;
 			pokedexWeightKg: 31;
 			pokemonId: "AUDINO";
-			quickMoves: ["POUND_FAST", "ZEN_HEADBUTT_FAST"];
+			quickMoves: ["POUND_FAST", "ZEN_HEADBUTT_FAST", "CHARGE_BEAM_FAST"];
 			stats: {
 				baseAttack: 114;
 				baseDefense: 163;
@@ -14139,7 +14139,7 @@ export type PokemonSettingsV0531PokemonAudinoNormal = S<
 			pokedexHeightM: 1.1;
 			pokedexWeightKg: 31;
 			pokemonId: "AUDINO";
-			quickMoves: ["POUND_FAST", "ZEN_HEADBUTT_FAST"];
+			quickMoves: ["POUND_FAST", "ZEN_HEADBUTT_FAST", "CHARGE_BEAM_FAST"];
 			stats: {
 				baseAttack: 114;
 				baseDefense: 163;
@@ -14262,7 +14262,7 @@ export type PokemonSettingsV0571PokemonZoroarkHisuian = S<
 				shoulderModeScale: 0.5;
 			};
 			candyToEvolve: 25;
-			cinematicMoves: ["FOUL_PLAY", "SLUDGE_BOMB", "FLAMETHROWER", "SHADOW_BALL"];
+			cinematicMoves: ["FOUL_PLAY", "SLUDGE_BOMB", "FLAMETHROWER", "SHADOW_BALL", "SWIFT"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 29;

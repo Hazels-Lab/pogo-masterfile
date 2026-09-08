@@ -185,7 +185,7 @@ export type PokemonSettingsV0024PokemonArbok = S<
 				diskRadiusM: 0.9225;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["DARK_PULSE", "SLUDGE_WAVE", "GUNK_SHOT", "ACID_SPRAY"];
+			cinematicMoves: ["DARK_PULSE", "SLUDGE_WAVE", "GUNK_SHOT", "ACID_SPRAY", "WRAP", "BRUTAL_SWING"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 8;
@@ -261,7 +261,7 @@ export type PokemonSettingsV0024PokemonArbokNormal = S<
 				diskRadiusM: 0.9225;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["DARK_PULSE", "SLUDGE_WAVE", "GUNK_SHOT", "ACID_SPRAY"];
+			cinematicMoves: ["DARK_PULSE", "SLUDGE_WAVE", "GUNK_SHOT", "ACID_SPRAY", "WRAP", "BRUTAL_SWING"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 8;
@@ -1163,7 +1163,7 @@ export type PokemonSettingsV0034PokemonNidoking = S<
 				diskRadiusM: 0.8222;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["EARTHQUAKE", "SLUDGE_WAVE", "MEGAHORN", "EARTH_POWER", "SAND_TOMB"];
+			cinematicMoves: ["EARTHQUAKE", "SLUDGE_WAVE", "MEGAHORN", "EARTH_POWER", "SAND_TOMB", "AVALANCHE"];
 			eliteQuickMove: ["FURY_CUTTER_FAST"];
 			encounter: {
 				attackProbability: 0.1;
@@ -1241,7 +1241,7 @@ export type PokemonSettingsV0034PokemonNidokingNormal = S<
 				diskRadiusM: 0.8222;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["EARTHQUAKE", "SLUDGE_WAVE", "MEGAHORN", "EARTH_POWER", "SAND_TOMB"];
+			cinematicMoves: ["EARTHQUAKE", "SLUDGE_WAVE", "MEGAHORN", "EARTH_POWER", "SAND_TOMB", "AVALANCHE"];
 			eliteQuickMove: ["FURY_CUTTER_FAST"];
 			encounter: {
 				attackProbability: 0.1;
@@ -2075,7 +2075,7 @@ export type PokemonSettingsV0089PokemonMukAlola = S<
 				diskRadiusM: 1.14;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["DARK_PULSE", "GUNK_SHOT", "SLUDGE_WAVE", "ACID_SPRAY"];
+			cinematicMoves: ["DARK_PULSE", "GUNK_SHOT", "SLUDGE_WAVE", "ACID_SPRAY", "ICE_PUNCH", "BRUTAL_SWING"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 3;
@@ -2681,7 +2681,7 @@ export type PokemonSettingsV0169PokemonCrobat = S<
 			pokedexHeightM: 1.8;
 			pokedexWeightKg: 75;
 			pokemonId: "CROBAT";
-			quickMoves: ["AIR_SLASH_FAST", "BITE_FAST"];
+			quickMoves: ["AIR_SLASH_FAST", "BITE_FAST", "GUST_FAST"];
 			shadow: {
 				purificationCandyNeeded: 1;
 				purificationStardustNeeded: 1000;
@@ -2761,7 +2761,7 @@ export type PokemonSettingsV0169PokemonCrobatNormal = S<
 			pokedexHeightM: 1.8;
 			pokedexWeightKg: 75;
 			pokemonId: "CROBAT";
-			quickMoves: ["AIR_SLASH_FAST", "BITE_FAST"];
+			quickMoves: ["AIR_SLASH_FAST", "BITE_FAST", "GUST_FAST"];
 			shadow: {
 				purificationCandyNeeded: 1;
 				purificationStardustNeeded: 1000;
@@ -6064,7 +6064,7 @@ export type PokemonSettingsV0945PokemonGrafaiai = S<
 				cylinderHeightM: 0.7;
 				cylinderRadiusM: 0.5;
 			};
-			cinematicMoves: ["ACID_SPRAY", "POISON_FANG", "SLUDGE_BOMB"];
+			cinematicMoves: ["ACID_SPRAY", "POISON_FANG", "SLUDGE_BOMB", "FOUL_PLAY"];
 			encounter: {
 				attackProbability: 0.1;
 				bonusCandyCaptureReward: 2;
@@ -6094,7 +6094,7 @@ export type PokemonSettingsV0945PokemonGrafaiai = S<
 			pokedexHeightM: 0.7;
 			pokedexWeightKg: 27.2;
 			pokemonId: "GRAFAIAI";
-			quickMoves: ["MUD_SLAP_FAST", "POISON_JAB_FAST"];
+			quickMoves: ["MUD_SLAP_FAST", "POISON_JAB_FAST", "SCRATCH_FAST"];
 			stats: {
 				baseAttack: 199;
 				baseDefense: 149;
@@ -6121,7 +6121,7 @@ export type PokemonSettingsV0945PokemonGrafaiaiNormal = S<
 				cylinderHeightM: 0.7;
 				cylinderRadiusM: 0.5;
 			};
-			cinematicMoves: ["ACID_SPRAY", "POISON_FANG", "SLUDGE_BOMB"];
+			cinematicMoves: ["ACID_SPRAY", "POISON_FANG", "SLUDGE_BOMB", "FOUL_PLAY"];
 			encounter: {
 				attackProbability: 0.1;
 				bonusCandyCaptureReward: 2;
@@ -6152,7 +6152,7 @@ export type PokemonSettingsV0945PokemonGrafaiaiNormal = S<
 			pokedexHeightM: 0.7;
 			pokedexWeightKg: 27.2;
 			pokemonId: "GRAFAIAI";
-			quickMoves: ["MUD_SLAP_FAST", "POISON_JAB_FAST"];
+			quickMoves: ["MUD_SLAP_FAST", "POISON_JAB_FAST", "SCRATCH_FAST"];
 			stats: {
 				baseAttack: 199;
 				baseDefense: 149;

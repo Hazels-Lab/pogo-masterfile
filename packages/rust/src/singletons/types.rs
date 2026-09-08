@@ -2943,7 +2943,7 @@ pub struct VsSeekerClientSettings {
 pub struct VsSeekerSchedules {
     pub end_time_ms: String,
     pub start_time_ms: String,
-    pub vs_seeker_league_tempalte_id: [String; 2],
+    pub vs_seeker_league_tempalte_id: [String; 3],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2951,23 +2951,29 @@ pub struct VsSeekerSchedules {
 pub struct VsSeekerSchedulesV2 {
     pub end_time_ms: String,
     pub start_time_ms: String,
-    pub vs_seeker_league_tempalte_id: [String; 3],
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct VsSeekerSchedulesV3 {
-    pub end_time_ms: String,
-    pub start_time_ms: String,
-    pub vs_seeker_league_tempalte_id: Vec<String>,
+    pub vs_seeker_league_tempalte_id: [String; 2],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct SeasonSchedules {
+    pub blog_url: String,
     pub description_key: String,
     pub season_title: String,
-    pub vs_seeker_schedules: Vec<VsSeekerSchedulesV3>,
+    pub vs_seeker_schedules: (
+        VsSeekerSchedules,
+        VsSeekerSchedules,
+        VsSeekerSchedules,
+        VsSeekerSchedulesV2,
+        VsSeekerSchedules,
+        VsSeekerSchedules,
+        VsSeekerSchedules,
+        VsSeekerSchedulesV2,
+        VsSeekerSchedules,
+        VsSeekerSchedules,
+        VsSeekerSchedules,
+        VsSeekerSchedulesV2,
+    ),
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

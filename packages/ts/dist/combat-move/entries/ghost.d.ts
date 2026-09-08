@@ -49,7 +49,7 @@ export type CombatMoveV0070MoveShadowBall = S<
 		"COMBAT_V0070_MOVE_SHADOW_BALL",
 		{
 			energyDelta: -50;
-			power: 100;
+			power: 90;
 			type: "POKEMON_TYPE_GHOST";
 			uniqueId: "SHADOW_BALL";
 			vfxName: "shadow_ball";
@@ -139,7 +139,7 @@ export type CombatMoveV0371MoveShadowForce = S<
 	CombatMove<
 		"COMBAT_V0371_MOVE_SHADOW_FORCE",
 		{
-			energyDelta: -90;
+			energyDelta: -65;
 			power: 120;
 			type: "POKEMON_TYPE_GHOST";
 			uniqueId: "SHADOW_FORCE";
@@ -195,8 +195,8 @@ export type CombatMoveV0464MoveRageFist = S<
 				attackerAttackStatStageChange: 1;
 				buffActivationChance: 1;
 			};
-			energyDelta: -35;
-			power: 50;
+			energyDelta: -40;
+			power: 55;
 			type: "POKEMON_TYPE_GHOST";
 			uniqueId: "RAGE_FIST";
 			vfxName: "rage_fist";

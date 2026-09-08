@@ -95,8 +95,8 @@ export type CombatMoveV0131MoveBodySlam = S<
 	CombatMove<
 		"COMBAT_V0131_MOVE_BODY_SLAM",
 		{
-			energyDelta: -35;
-			power: 55;
+			energyDelta: -40;
+			power: 65;
 			type: "POKEMON_TYPE_NORMAL";
 			uniqueId: "BODY_SLAM";
 			vfxName: "body_slam";
@@ -168,8 +168,8 @@ export type CombatMoveV0220MoveScratchFast = S<
 	CombatMove<
 		"COMBAT_V0220_MOVE_SCRATCH_FAST",
 		{
-			energyDelta: 2;
-			power: 4;
+			energyDelta: 4;
+			power: 3;
 			type: "POKEMON_TYPE_NORMAL";
 			uniqueId: "SCRATCH_FAST";
 			vfxName: "scratch_fast";
@@ -242,8 +242,8 @@ export type CombatMoveV0282MoveTakeDownFast = S<
 		"COMBAT_V0282_MOVE_TAKE_DOWN_FAST",
 		{
 			durationTurns: 2;
-			energyDelta: 8;
-			power: 5;
+			energyDelta: 9;
+			power: 14;
 			type: "POKEMON_TYPE_NORMAL";
 			uniqueId: "TAKE_DOWN_FAST";
 			vfxName: "take_down_fast";

@@ -6098,78 +6098,77 @@ export interface VsSeekerScheduleSettings {
 			enableTodayView: true;
 			seasonSchedules: [
 				{
-					descriptionKey: "23";
-					seasonTitle: "23";
+					blogUrl: "https://pokemongo.com/news/go-battle-league-twilight-trails";
+					descriptionKey: "24";
+					seasonTitle: "24";
 					vsSeekerSchedules: [
 						{
-							endTimeMs: "1781035200000";
-							startTimeMs: "1780430400000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_NAIC"];
-						},
-						{
-							endTimeMs: "1781640000000";
-							startTimeMs: "1781035200000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_NAIC"];
-						},
-						{
-							endTimeMs: "1782244800000";
-							startTimeMs: "1781640000000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_MASTER_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_SUNSHINE_GREAT"];
-						},
-						{
-							endTimeMs: "1782849600000";
-							startTimeMs: "1782244800000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_MASTER"];
-						},
-						{
-							endTimeMs: "1783454400000";
-							startTimeMs: "1782849600000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_GREAT_SUMMER"];
-						},
-						{
-							endTimeMs: "1784059200000";
-							startTimeMs: "1783454400000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_FANTASY_ULTRA"];
-						},
-						{
-							endTimeMs: "1784664000000";
-							startTimeMs: "1784059200000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_MASTER", "COMBAT_LEAGUE_VS_SEEKER_GREAT_RETRO"];
-						},
-						{
-							endTimeMs: "1785268800000";
-							startTimeMs: "1784664000000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_MASTER"];
-						},
-						{
-							endTimeMs: "1785873600000";
-							startTimeMs: "1785268800000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_MASTER_PREMIER"];
-						},
-						{
-							endTimeMs: "1786478400000";
-							startTimeMs: "1785873600000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_GREAT_WEATHER"];
-						},
-						{
-							endTimeMs: "1787083200000";
-							startTimeMs: "1786478400000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_MASTER", "COMBAT_LEAGUE_VS_SEEKER_EVOLUTION"];
-						},
-						{
-							endTimeMs: "1787688000000";
-							startTimeMs: "1787083200000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_GREAT_SCROLL"];
-						},
-						{
-							endTimeMs: "1788292800000";
-							startTimeMs: "1787688000000";
-							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_MASTER"];
-						},
-						{
-							endTimeMs: "1788897600000";
-							startTimeMs: "1788292800000";
+							endTimeMs: "1789502400000";
+							startTimeMs: "1788897600000";
 							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_ULTRA_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_MASTER_MEGAS"];
+						},
+						{
+							endTimeMs: "1790107200000";
+							startTimeMs: "1789502400000";
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_ULTRA_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_WILLPOWER"];
+						},
+						{
+							endTimeMs: "1790712000000";
+							startTimeMs: "1790107200000";
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_MASTER_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_GREAT_RETRO"];
+						},
+						{
+							endTimeMs: "1791316800000";
+							startTimeMs: "1790712000000";
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_MASTER", "COMBAT_LEAGUE_VS_SEEKER_COLOR_GREAT_MEGAS"];
+						},
+						{
+							endTimeMs: "1791921600000";
+							startTimeMs: "1791316800000";
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_ULTRA_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_MASTER_MEGAS"];
+						},
+						{
+							endTimeMs: "1792526400000";
+							startTimeMs: "1791921600000";
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_ULTRA_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_GREAT_LITTLE"];
+						},
+						{
+							endTimeMs: "1793131200000";
+							startTimeMs: "1792526400000";
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_MASTER_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_GREAT_FANTASY"];
+						},
+						{
+							endTimeMs: "1793739600000";
+							startTimeMs: "1793131200000";
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_MASTER", "COMBAT_LEAGUE_VS_SEEKER_GREAT_HALLOWEEN_MEGAS"];
+						},
+						{
+							endTimeMs: "1794344400000";
+							startTimeMs: "1793739600000";
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_ULTRA_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_MASTER_MEGAS"];
+						},
+						{
+							endTimeMs: "1794949200000";
+							startTimeMs: "1794344400000";
+							vsSeekerLeagueTempalteId: [
+								"COMBAT_LEAGUE_VS_SEEKER_GREAT",
+								"COMBAT_LEAGUE_VS_SEEKER_ULTRA_MEGAS",
+								"COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_SERIES",
+							];
+						},
+						{
+							endTimeMs: "1795554000000";
+							startTimeMs: "1794949200000";
+							vsSeekerLeagueTempalteId: [
+								"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
+								"COMBAT_LEAGUE_VS_SEEKER_MASTER_MEGAS",
+								"COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_SERIES",
+							];
+						},
+						{
+							endTimeMs: "1796158800000";
+							startTimeMs: "1795554000000";
+							vsSeekerLeagueTempalteId: ["COMBAT_LEAGUE_VS_SEEKER_MASTER", "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S24_MEGAS"];
 						},
 					];
 				},

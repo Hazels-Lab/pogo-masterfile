@@ -56,11 +56,11 @@ export type CombatMoveV0095MoveBulldoze = S<
 		"COMBAT_V0095_MOVE_BULLDOZE",
 		{
 			buffs: {
-				buffActivationChance: 0.5;
+				buffActivationChance: 1;
 				targetDefenseStatStageChange: -1;
 			};
-			energyDelta: -45;
-			power: 45;
+			energyDelta: -55;
+			power: 80;
 			type: "POKEMON_TYPE_GROUND";
 			uniqueId: "BULLDOZE";
 			vfxName: "bulldoze";
@@ -113,8 +113,8 @@ export type CombatMoveV0258MoveSandTomb = S<
 				buffActivationChance: 1;
 				targetDefenseStatStageChange: -1;
 			};
-			energyDelta: -40;
-			power: 40;
+			energyDelta: -45;
+			power: 55;
 			type: "POKEMON_TYPE_GROUND";
 			uniqueId: "SAND_TOMB";
 			vfxName: "sand_tomb";
@@ -153,7 +153,7 @@ export type CombatMoveV0377MoveHighHorsepower = S<
 	CombatMove<
 		"COMBAT_V0377_MOVE_HIGH_HORSEPOWER",
 		{
-			energyDelta: -60;
+			energyDelta: -55;
 			power: 100;
 			type: "POKEMON_TYPE_GROUND";
 			uniqueId: "HIGH_HORSEPOWER";

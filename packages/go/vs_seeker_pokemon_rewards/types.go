@@ -21,9 +21,9 @@ type VsSeekerPokemonRewardsPokemon struct {
 }
 
 type VsSeekerPokemonRewardsGuaranteedLimitedPokemonReward struct {
-	Identifier                         string                        `json:"identifier"`
-	PerCompetitiveCombatSeasonMaxCount uint64                        `json:"perCompetitiveCombatSeasonMaxCount"`
-	Pokemon                            VsSeekerPokemonRewardsPokemon `json:"pokemon"`
+	Identifier       string                        `json:"identifier"`
+	LifetimeMaxCount uint64                        `json:"lifetimeMaxCount"`
+	Pokemon          VsSeekerPokemonRewardsPokemon `json:"pokemon"`
 }
 
 type VsSeekerPokemonRewardsAvailablePokemon struct {
@@ -34,26 +34,40 @@ type VsSeekerPokemonRewardsAvailablePokemon struct {
 	UnlockedAtRank                 uint64                                               `json:"unlockedAtRank"`
 }
 
-type VsSeekerPokemonRewardsGuaranteedLimitedPokemonRewardV2 struct {
-	Identifier       string                        `json:"identifier"`
-	LifetimeMaxCount uint64                        `json:"lifetimeMaxCount"`
-	Pokemon          VsSeekerPokemonRewardsPokemon `json:"pokemon"`
-}
-
 type VsSeekerPokemonRewardsAvailablePokemonV2 struct {
-	AttackIvOverride               VsSeekerPokemonRewardsAttackIvOverride                 `json:"attackIvOverride"`
-	DefenseIvOverride              VsSeekerPokemonRewardsAttackIvOverride                 `json:"defenseIvOverride"`
-	GuaranteedLimitedPokemonReward VsSeekerPokemonRewardsGuaranteedLimitedPokemonRewardV2 `json:"guaranteedLimitedPokemonReward"`
-	StaminaIvOverride              VsSeekerPokemonRewardsAttackIvOverride                 `json:"staminaIvOverride"`
-	UnlockedAtRank                 uint64                                                 `json:"unlockedAtRank"`
-}
-
-type VsSeekerPokemonRewardsAvailablePokemonV3 struct {
 	AttackIvOverride  VsSeekerPokemonRewardsAttackIvOverride `json:"attackIvOverride"`
 	DefenseIvOverride VsSeekerPokemonRewardsAttackIvOverride `json:"defenseIvOverride"`
 	Pokemon           VsSeekerPokemonRewardsPokemon          `json:"pokemon"`
 	StaminaIvOverride VsSeekerPokemonRewardsAttackIvOverride `json:"staminaIvOverride"`
 	UnlockedAtRank    uint64                                 `json:"unlockedAtRank"`
+}
+
+type VsSeekerPokemonRewardsPokemonV2 struct {
+	PokemonDisplay   VsSeekerPokemonRewardsPokemonDisplay `json:"pokemonDisplay"`
+	PokemonId        string                               `json:"pokemonId"`
+	ShinyProbability float64                              `json:"shinyProbability"`
+}
+
+type VsSeekerPokemonRewardsAvailablePokemonV3 struct {
+	AttackIvOverride  VsSeekerPokemonRewardsAttackIvOverride `json:"attackIvOverride"`
+	DefenseIvOverride VsSeekerPokemonRewardsAttackIvOverride `json:"defenseIvOverride"`
+	Pokemon           VsSeekerPokemonRewardsPokemonV2        `json:"pokemon"`
+	StaminaIvOverride VsSeekerPokemonRewardsAttackIvOverride `json:"staminaIvOverride"`
+	UnlockedAtRank    uint64                                 `json:"unlockedAtRank"`
+}
+
+type VsSeekerPokemonRewardsGuaranteedLimitedPokemonRewardV2 struct {
+	Identifier                         string                        `json:"identifier"`
+	PerCompetitiveCombatSeasonMaxCount uint64                        `json:"perCompetitiveCombatSeasonMaxCount"`
+	Pokemon                            VsSeekerPokemonRewardsPokemon `json:"pokemon"`
+}
+
+type VsSeekerPokemonRewardsAvailablePokemonV4 struct {
+	AttackIvOverride               VsSeekerPokemonRewardsAttackIvOverride                 `json:"attackIvOverride"`
+	DefenseIvOverride              VsSeekerPokemonRewardsAttackIvOverride                 `json:"defenseIvOverride"`
+	GuaranteedLimitedPokemonReward VsSeekerPokemonRewardsGuaranteedLimitedPokemonRewardV2 `json:"guaranteedLimitedPokemonReward"`
+	StaminaIvOverride              VsSeekerPokemonRewardsAttackIvOverride                 `json:"staminaIvOverride"`
+	UnlockedAtRank                 uint64                                                 `json:"unlockedAtRank"`
 }
 
 type VsSeekerPokemonRewards struct {

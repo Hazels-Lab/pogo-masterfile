@@ -19,8 +19,12 @@ export type CombatMoveV0085MoveDrainingKiss = S<
 	CombatMove<
 		"COMBAT_V0085_MOVE_DRAINING_KISS",
 		{
+			buffs: {
+				attackerDefenseStatStageChange: 1;
+				buffActivationChance: 1;
+			};
 			energyDelta: -55;
-			power: 60;
+			power: 80;
 			type: "POKEMON_TYPE_FAIRY";
 			uniqueId: "DRAINING_KISS";
 			vfxName: "draining_kiss";
@@ -47,8 +51,8 @@ export type CombatMoveV0087MoveMoonblast = S<
 				buffActivationChance: 0.1;
 				targetAttackStatStageChange: -1;
 			};
-			energyDelta: -60;
-			power: 110;
+			energyDelta: -50;
+			power: 90;
 			type: "POKEMON_TYPE_FAIRY";
 			uniqueId: "MOONBLAST";
 			vfxName: "moonblast";

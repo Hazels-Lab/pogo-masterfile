@@ -308,7 +308,7 @@ export type PokemonSettingsV0227PokemonSkarmory = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["BRAVE_BIRD", "SKY_ATTACK", "FLASH_CANNON"];
+			cinematicMoves: ["BRAVE_BIRD", "SKY_ATTACK", "FLASH_CANNON", "DRILL_RUN"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 20;
@@ -414,7 +414,7 @@ export type PokemonSettingsV0227PokemonSkarmoryNormal = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["BRAVE_BIRD", "SKY_ATTACK", "FLASH_CANNON"];
+			cinematicMoves: ["BRAVE_BIRD", "SKY_ATTACK", "FLASH_CANNON", "DRILL_RUN"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 20;
@@ -1061,7 +1061,7 @@ export type PokemonSettingsV0306PokemonAggron = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["THUNDER", "STONE_EDGE", "HEAVY_SLAM", "ROCK_TOMB", "METEOR_BEAM"];
+			cinematicMoves: ["THUNDER", "STONE_EDGE", "HEAVY_SLAM", "ROCK_TOMB", "METEOR_BEAM", "BRICK_BREAK"];
 			encounter: {
 				attackProbability: 0.3;
 				attackTimerS: 20;
@@ -1170,7 +1170,7 @@ export type PokemonSettingsV0306PokemonAggronNormal = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["THUNDER", "STONE_EDGE", "HEAVY_SLAM", "ROCK_TOMB", "METEOR_BEAM"];
+			cinematicMoves: ["THUNDER", "STONE_EDGE", "HEAVY_SLAM", "ROCK_TOMB", "METEOR_BEAM", "BRICK_BREAK"];
 			encounter: {
 				attackProbability: 0.3;
 				attackTimerS: 20;

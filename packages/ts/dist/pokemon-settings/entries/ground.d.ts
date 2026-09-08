@@ -6038,7 +6038,7 @@ export type PokemonSettingsV0901PokemonUrsaluna = S<
 			pokedexHeightM: 2.4;
 			pokedexWeightKg: 290;
 			pokemonId: "URSALUNA";
-			quickMoves: ["TACKLE_FAST", "ROCK_SMASH_FAST", "SMACK_DOWN_FAST"];
+			quickMoves: ["TACKLE_FAST", "ROCK_SMASH_FAST", "SMACK_DOWN_FAST", "SCRATCH_FAST"];
 			raidBossDistanceOffset: 8;
 			shadow: {
 				purificationCandyNeeded: 3;
@@ -6120,7 +6120,7 @@ export type PokemonSettingsV0901PokemonUrsalunaNormal = S<
 			pokedexHeightM: 2.4;
 			pokedexWeightKg: 290;
 			pokemonId: "URSALUNA";
-			quickMoves: ["TACKLE_FAST", "ROCK_SMASH_FAST", "SMACK_DOWN_FAST"];
+			quickMoves: ["TACKLE_FAST", "ROCK_SMASH_FAST", "SMACK_DOWN_FAST", "SCRATCH_FAST"];
 			raidBossDistanceOffset: 8;
 			shadow: {
 				purificationCandyNeeded: 3;

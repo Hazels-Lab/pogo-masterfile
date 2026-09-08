@@ -239,10 +239,10 @@ export type MoveSettingsV0288MovePsychoBoost = S<
 			damageWindowEndMs: 4000;
 			damageWindowStartMs: 3500;
 			durationMs: 4000;
-			energyDelta: -50;
+			energyDelta: -33;
 			movementId: "PSYCHO_BOOST";
 			pokemonType: "POKEMON_TYPE_PSYCHIC";
-			power: 70;
+			power: 130;
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
 			trainerLevelMin: 1;

@@ -2595,7 +2595,7 @@ export type PokemonSettingsV0168PokemonAriados = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["SHADOW_SNEAK", "MEGAHORN", "CROSS_POISON", "LUNGE", "TRAILBLAZE"];
+			cinematicMoves: ["SHADOW_SNEAK", "MEGAHORN", "CROSS_POISON", "LUNGE", "TRAILBLAZE", "FOUL_PLAY"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 20;
@@ -2662,7 +2662,7 @@ export type PokemonSettingsV0168PokemonAriadosNormal = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["SHADOW_SNEAK", "MEGAHORN", "CROSS_POISON", "LUNGE", "TRAILBLAZE"];
+			cinematicMoves: ["SHADOW_SNEAK", "MEGAHORN", "CROSS_POISON", "LUNGE", "TRAILBLAZE", "FOUL_PLAY"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 20;
@@ -5180,7 +5180,7 @@ export type PokemonSettingsV0313PokemonVolbeat = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["SIGNAL_BEAM", "BUG_BUZZ", "THUNDERBOLT"];
+			cinematicMoves: ["SIGNAL_BEAM", "BUG_BUZZ", "THUNDERBOLT", "LUNGE"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 20;
@@ -5211,7 +5211,7 @@ export type PokemonSettingsV0313PokemonVolbeat = S<
 			pokedexHeightM: 0.71;
 			pokedexWeightKg: 17.7;
 			pokemonId: "VOLBEAT";
-			quickMoves: ["STRUGGLE_BUG_FAST", "TACKLE_FAST"];
+			quickMoves: ["STRUGGLE_BUG_FAST", "TACKLE_FAST", "INFESTATION_FAST"];
 			stats: {
 				baseAttack: 143;
 				baseDefense: 166;
@@ -5243,7 +5243,7 @@ export type PokemonSettingsV0313PokemonVolbeatNormal = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["SIGNAL_BEAM", "BUG_BUZZ", "THUNDERBOLT"];
+			cinematicMoves: ["SIGNAL_BEAM", "BUG_BUZZ", "THUNDERBOLT", "LUNGE"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 20;
@@ -5275,7 +5275,7 @@ export type PokemonSettingsV0313PokemonVolbeatNormal = S<
 			pokedexHeightM: 0.71;
 			pokedexWeightKg: 17.7;
 			pokemonId: "VOLBEAT";
-			quickMoves: ["STRUGGLE_BUG_FAST", "TACKLE_FAST"];
+			quickMoves: ["STRUGGLE_BUG_FAST", "TACKLE_FAST", "INFESTATION_FAST"];
 			stats: {
 				baseAttack: 143;
 				baseDefense: 166;
@@ -5307,7 +5307,7 @@ export type PokemonSettingsV0314PokemonIllumise = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["SILVER_WIND", "BUG_BUZZ", "DAZZLING_GLEAM"];
+			cinematicMoves: ["SILVER_WIND", "BUG_BUZZ", "DAZZLING_GLEAM", "SHADOW_BALL"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 20;
@@ -5338,7 +5338,7 @@ export type PokemonSettingsV0314PokemonIllumise = S<
 			pokedexHeightM: 0.61;
 			pokedexWeightKg: 17.7;
 			pokemonId: "ILLUMISE";
-			quickMoves: ["STRUGGLE_BUG_FAST", "TACKLE_FAST"];
+			quickMoves: ["STRUGGLE_BUG_FAST", "TACKLE_FAST", "INFESTATION_FAST"];
 			stats: {
 				baseAttack: 143;
 				baseDefense: 166;
@@ -5370,7 +5370,7 @@ export type PokemonSettingsV0314PokemonIllumiseNormal = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["SILVER_WIND", "BUG_BUZZ", "DAZZLING_GLEAM"];
+			cinematicMoves: ["SILVER_WIND", "BUG_BUZZ", "DAZZLING_GLEAM", "SHADOW_BALL"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 20;
@@ -5402,7 +5402,7 @@ export type PokemonSettingsV0314PokemonIllumiseNormal = S<
 			pokedexHeightM: 0.61;
 			pokedexWeightKg: 17.7;
 			pokemonId: "ILLUMISE";
-			quickMoves: ["STRUGGLE_BUG_FAST", "TACKLE_FAST"];
+			quickMoves: ["STRUGGLE_BUG_FAST", "TACKLE_FAST", "INFESTATION_FAST"];
 			stats: {
 				baseAttack: 143;
 				baseDefense: 166;

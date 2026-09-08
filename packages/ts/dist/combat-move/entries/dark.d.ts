@@ -7,7 +7,7 @@ export type CombatMoveV0016MoveDarkPulse = S<
 	CombatMove<
 		"COMBAT_V0016_MOVE_DARK_PULSE",
 		{
-			energyDelta: -50;
+			energyDelta: -45;
 			power: 80;
 			type: "POKEMON_TYPE_DARK";
 			uniqueId: "DARK_PULSE";
@@ -35,8 +35,8 @@ export type CombatMoveV0202MoveBiteFast = S<
 	CombatMove<
 		"COMBAT_V0202_MOVE_BITE_FAST",
 		{
-			energyDelta: 2;
-			power: 4;
+			energyDelta: 4;
+			power: 2;
 			type: "POKEMON_TYPE_DARK";
 			uniqueId: "BITE_FAST";
 			vfxName: "bite_fast";

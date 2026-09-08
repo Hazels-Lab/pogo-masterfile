@@ -90,7 +90,7 @@ export type CombatMoveV0260MoveInfestationFast = S<
 		{
 			durationTurns: 2;
 			energyDelta: 12;
-			power: 6;
+			power: 10;
 			type: "POKEMON_TYPE_BUG";
 			uniqueId: "INFESTATION_FAST";
 			vfxName: "infestation_fast";
@@ -136,7 +136,7 @@ export type CombatMoveV0306MoveLunge = S<
 				targetAttackStatStageChange: -1;
 			};
 			energyDelta: -45;
-			power: 60;
+			power: 70;
 			type: "POKEMON_TYPE_BUG";
 			uniqueId: "LUNGE";
 			vfxName: "lunge";
