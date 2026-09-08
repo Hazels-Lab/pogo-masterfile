@@ -11,7 +11,6 @@ export type ItemSettingsItemBreakfast = S<
 			dropTrainerLevel: 1;
 			ignoreInventorySpace: true;
 			itemCap: 1;
-			itemId: "ITEM_BREAKFAST";
 			itemType: "ITEM_TYPE_BREAKFAST";
 		}
 	>
@@ -23,7 +22,6 @@ export type ItemSettingsItemSoftSfida = S<
 			category: "ITEM_CATEGORY_UTILITES";
 			dropTrainerLevel: 99;
 			ignoreInventorySpace: true;
-			itemId: "ITEM_SOFT_SFIDA";
 			itemType: "ITEM_TYPE_SOFT_SFIDA";
 		}
 	>

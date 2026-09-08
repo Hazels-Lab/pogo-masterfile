@@ -641,23 +641,23 @@ export type FormSettingsV0025PokemonPikachu = S<
 					isCostume: true;
 				},
 				{
-					form: 3358;
+					form: "PIKACHU_ANNIVERSARY_2026_MALAYSIA_01";
 					isCostume: true;
 				},
 				{
-					form: 3359;
+					form: "PIKACHU_ANNIVERSARY_2026_SINGAPORE_01";
 					isCostume: true;
 				},
 				{
-					form: 3360;
+					form: "PIKACHU_ANNIVERSARY_2026_TAIWAN_01";
 					isCostume: true;
 				},
 				{
-					form: 3375;
+					form: "PIKACHU_ANNIVERSARY_2026_PHILIPPINE_01";
 					isCostume: true;
 				},
 				{
-					form: 3361;
+					form: "PIKACHU_K_2026_A_01";
 					isCostume: true;
 				},
 			];

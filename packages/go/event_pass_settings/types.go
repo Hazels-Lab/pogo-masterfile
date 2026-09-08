@@ -2,8 +2,6 @@
 
 package event_pass_settings
 
-import "encoding/json"
-
 type EventPassSettingsBonusBoxes struct {
 	IconType string `json:"iconType"`
 	Quantity uint64 `json:"quantity"`
@@ -24,6 +22,7 @@ type EventPassSettingsEventPassTrackUpgradeDescriptions struct {
 }
 
 type EventPassSettingsEventPassDisplaySettings struct {
+	BackgroundConfiguration           *string                                               `json:"backgroundConfiguration,omitempty"`
 	BonusBoxes                        [3]EventPassSettingsBonusBoxes                        `json:"bonusBoxes"`
 	EventPassTitleKey                 string                                                `json:"eventPassTitleKey"`
 	EventPassTrackUpgradeDescriptions [1]EventPassSettingsEventPassTrackUpgradeDescriptions `json:"eventPassTrackUpgradeDescriptions"`
@@ -34,7 +33,7 @@ type EventPassSettingsEventPassDisplaySettings struct {
 	PremiumRewardBannerTop            *string                                               `json:"premiumRewardBannerTop,omitempty"`
 	PremiumRewardsDescription         *string                                               `json:"premiumRewardsDescription,omitempty"`
 	SectionDisplayPriority            *uint64                                               `json:"sectionDisplayPriority,omitempty"`
-	TodayViewSection                  json.RawMessage                                       `json:"todayViewSection"`
+	TodayViewSection                  string                                                `json:"todayViewSection"`
 }
 
 type EventPassSettingsTrackConditions struct {
@@ -43,9 +42,9 @@ type EventPassSettingsTrackConditions struct {
 }
 
 type EventPassSettingsTrackConditionsV2 struct {
-	Badge         json.RawMessage `json:"badge"`
-	Track         string          `json:"track"`
-	TrackTitleKey string          `json:"trackTitleKey"`
+	Badge         string `json:"badge"`
+	Track         string `json:"track"`
+	TrackTitleKey string `json:"trackTitleKey"`
 }
 
 type EventPassSettings struct {

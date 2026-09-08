@@ -1,8 +1,32 @@
-// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", split "4", 12 entries.
+// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", split "4", 13 entries.
 
 import type { S } from "../../_utils";
 import type { MegaEvoLevelSettings } from "../types";
 
+export type MegaEvoLevelSettings4V0015PokemonBeedrill = S<
+	MegaEvoLevelSettings<
+		"MEGA_EVOLUTION_LEVEL_4_V0015_POKEMON_BEEDRILL",
+		{
+			cooldown: {
+				bypassCostInitial: 5;
+				durationMs: "86400000";
+			};
+			effects: {
+				sameTypeExtraCatchCandy: 3;
+				sameTypeExtraCatchCandyXlChance: 0.3;
+				sameTypeExtraCatchXp: 200;
+				selfCpBoostAdditionalLevel: 2;
+			};
+			ftueExpirationTimestamp: "1775001600000";
+			level: 4;
+			megaEnergyCostToUnlock: 5000;
+			pokemonId: "BEEDRILL";
+			progression: {
+				pointsRequired: 30;
+			};
+		}
+	>
+>;
 export type MegaEvoLevelSettings4V0026PokemonRaichu = S<
 	MegaEvoLevelSettings<
 		"MEGA_EVOLUTION_LEVEL_4_V0026_POKEMON_RAICHU",
@@ -15,7 +39,7 @@ export type MegaEvoLevelSettings4V0026PokemonRaichu = S<
 				sameTypeExtraCatchCandy: 3;
 				sameTypeExtraCatchCandyXlChance: 0.3;
 				sameTypeExtraCatchXp: 200;
-				selfCpBoostAdditionalLevel: 8;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			ftueExpirationTimestamp: "1775001600000";
 			level: 4;
@@ -39,7 +63,7 @@ export type MegaEvoLevelSettings4V0071PokemonVictreebel = S<
 				sameTypeExtraCatchCandy: 3;
 				sameTypeExtraCatchCandyXlChance: 0.3;
 				sameTypeExtraCatchXp: 200;
-				selfCpBoostAdditionalLevel: 8;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			ftueExpirationTimestamp: "1775001600000";
 			level: 4;
@@ -63,7 +87,7 @@ export type MegaEvoLevelSettings4V0121PokemonStarmie = S<
 				sameTypeExtraCatchCandy: 3;
 				sameTypeExtraCatchCandyXlChance: 0.3;
 				sameTypeExtraCatchXp: 200;
-				selfCpBoostAdditionalLevel: 8;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			ftueExpirationTimestamp: "1775001600000";
 			level: 4;
@@ -87,7 +111,7 @@ export type MegaEvoLevelSettings4V0149PokemonDragonite = S<
 				sameTypeExtraCatchCandy: 3;
 				sameTypeExtraCatchCandyXlChance: 0.3;
 				sameTypeExtraCatchXp: 200;
-				selfCpBoostAdditionalLevel: 8;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			ftueExpirationTimestamp: "1775001600000";
 			level: 4;
@@ -111,7 +135,7 @@ export type MegaEvoLevelSettings4V0150PokemonMewtwo = S<
 				sameTypeExtraCatchCandy: 3;
 				sameTypeExtraCatchCandyXlChance: 0.3;
 				sameTypeExtraCatchXp: 200;
-				selfCpBoostAdditionalLevel: 8;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			ftueExpirationTimestamp: "4083189477000";
 			level: 4;
@@ -135,7 +159,7 @@ export type MegaEvoLevelSettings4V0227PokemonSkarmory = S<
 				sameTypeExtraCatchCandy: 3;
 				sameTypeExtraCatchCandyXlChance: 0.3;
 				sameTypeExtraCatchXp: 200;
-				selfCpBoostAdditionalLevel: 8;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			ftueExpirationTimestamp: "1775001600000";
 			level: 4;
@@ -183,7 +207,7 @@ export type MegaEvoLevelSettings4V0652PokemonChesnaught = S<
 				sameTypeExtraCatchCandy: 3;
 				sameTypeExtraCatchCandyXlChance: 0.3;
 				sameTypeExtraCatchXp: 200;
-				selfCpBoostAdditionalLevel: 8;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			ftueExpirationTimestamp: "1775001600000";
 			level: 4;
@@ -207,7 +231,7 @@ export type MegaEvoLevelSettings4V0655PokemonDelphox = S<
 				sameTypeExtraCatchCandy: 3;
 				sameTypeExtraCatchCandyXlChance: 0.3;
 				sameTypeExtraCatchXp: 200;
-				selfCpBoostAdditionalLevel: 8;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			ftueExpirationTimestamp: "1775001600000";
 			level: 4;
@@ -231,7 +255,7 @@ export type MegaEvoLevelSettings4V0658PokemonGreninja = S<
 				sameTypeExtraCatchCandy: 3;
 				sameTypeExtraCatchCandyXlChance: 0.3;
 				sameTypeExtraCatchXp: 200;
-				selfCpBoostAdditionalLevel: 8;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			ftueExpirationTimestamp: "1775001600000";
 			level: 4;
@@ -255,7 +279,7 @@ export type MegaEvoLevelSettings4V0687PokemonMalamar = S<
 				sameTypeExtraCatchCandy: 3;
 				sameTypeExtraCatchCandyXlChance: 0.3;
 				sameTypeExtraCatchXp: 200;
-				selfCpBoostAdditionalLevel: 8;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			ftueExpirationTimestamp: "1775001600000";
 			level: 4;
@@ -279,7 +303,7 @@ export type MegaEvoLevelSettings4V0870PokemonFalinks = S<
 				sameTypeExtraCatchCandy: 3;
 				sameTypeExtraCatchCandyXlChance: 0.3;
 				sameTypeExtraCatchXp: 200;
-				selfCpBoostAdditionalLevel: 8;
+				selfCpBoostAdditionalLevel: 2;
 			};
 			ftueExpirationTimestamp: "1775001600000";
 			level: 4;
@@ -293,6 +317,7 @@ export type MegaEvoLevelSettings4V0870PokemonFalinks = S<
 >;
 
 export type MegaEvoLevelSettings4MasterfileEntry =
+	| MegaEvoLevelSettings4V0015PokemonBeedrill
 	| MegaEvoLevelSettings4V0026PokemonRaichu
 	| MegaEvoLevelSettings4V0071PokemonVictreebel
 	| MegaEvoLevelSettings4V0121PokemonStarmie

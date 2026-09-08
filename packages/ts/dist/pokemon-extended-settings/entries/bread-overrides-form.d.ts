@@ -426,7 +426,7 @@ export type PokemonExtendedSettingsV0025PikachuAnniversary2026Malaysia01 = S<
 					modelScaleV2: 0.86;
 				},
 			];
-			form: 3358;
+			form: "PIKACHU_ANNIVERSARY_2026_MALAYSIA_01";
 			sizeSettings: {
 				mLowerBound: 0.3;
 				mUpperBound: 0.5;
@@ -489,7 +489,7 @@ export type PokemonExtendedSettingsV0025PikachuAnniversary2026Philippine01 = S<
 					modelScaleV2: 0.86;
 				},
 			];
-			form: 3375;
+			form: "PIKACHU_ANNIVERSARY_2026_PHILIPPINE_01";
 			sizeSettings: {
 				mLowerBound: 0.3;
 				mUpperBound: 0.5;
@@ -552,7 +552,7 @@ export type PokemonExtendedSettingsV0025PikachuAnniversary2026Singapore01 = S<
 					modelScaleV2: 0.86;
 				},
 			];
-			form: 3359;
+			form: "PIKACHU_ANNIVERSARY_2026_SINGAPORE_01";
 			sizeSettings: {
 				mLowerBound: 0.3;
 				mUpperBound: 0.5;
@@ -615,7 +615,7 @@ export type PokemonExtendedSettingsV0025PikachuAnniversary2026Taiwan01 = S<
 					modelScaleV2: 0.86;
 				},
 			];
-			form: 3360;
+			form: "PIKACHU_ANNIVERSARY_2026_TAIWAN_01";
 			sizeSettings: {
 				mLowerBound: 0.3;
 				mUpperBound: 0.5;
@@ -3387,7 +3387,7 @@ export type PokemonExtendedSettingsV0025PokemonPikachuK2026A01 = S<
 					modelScaleV2: 0.86;
 				},
 			];
-			form: 3361;
+			form: "PIKACHU_K_2026_A_01";
 			sizeSettings: {
 				mLowerBound: 0.3;
 				mUpperBound: 0.5;

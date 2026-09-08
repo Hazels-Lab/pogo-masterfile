@@ -38,6 +38,30 @@ pub struct AdvancedSettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct FeatureBackendConfigs {
+    pub ar_feature: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct FeatureBackendConfigsV2 {
+    pub ar_backend: String,
+    pub ar_feature: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct ArBackendSettings {
+    pub feature_backend_configs: (
+        FeatureBackendConfigs,
+        FeatureBackendConfigs,
+        FeatureBackendConfigs,
+        FeatureBackendConfigsV2,
+    ),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct CaptureSettings {
     pub contextual_check_interval_seconds: f64,
     pub countdown_seconds: u64,
@@ -1104,6 +1128,7 @@ pub struct DailyAdventureIncenseSettings {
     pub enabled: bool,
     pub enable_push_notification: bool,
     pub local_delivery_time: String,
+    pub map_icon_disabled: bool,
     pub pokeball_grant: PokeballGrant,
     pub pokeball_grant_threshold: u64,
     pub push_notification_hour_of_day: u64,
@@ -1573,8 +1598,10 @@ pub struct MegaEvoSettings {
     pub enable_mega_evolve_in_lobby: bool,
     pub enable_mega_level: bool,
     pub enable_mega_level_legacy_award: bool,
+    pub enable_special_move: bool,
     pub evolution_length_ms: String,
     pub max_candy_hoard_size: u64,
+    pub min_level_for_special_move: u64,
     pub num_mega_levels: u64,
     pub separated_temp_evo_branches: [SeparatedTempEvoBranches; 6],
 }
@@ -2387,6 +2414,7 @@ pub struct RaidSettings {
     pub boot_solo_ms: u64,
     pub can_invite_friends_in_person: bool,
     pub can_invite_friends_remotely: bool,
+    pub failed_friend_invite_info_enabled: bool,
     pub fetch_profile_from_social_enabled: bool,
     pub friend_invite_cutoff_time_sec: u64,
     pub friend_requests_enabled: bool,
@@ -2607,6 +2635,7 @@ pub struct SharedMoveSettings {
 #[serde(rename_all = "camelCase")]
 pub struct SoftSfidaSettings {
     pub catch_action_delay_ms: u64,
+    pub enable: bool,
     pub geofence_size_m: f64,
     pub min_player_level: u64,
     pub reserved_geofence_count: u64,
@@ -2703,6 +2732,7 @@ pub struct SponsoredGeofenceGiftSettings {
 #[serde(rename_all = "camelCase")]
 pub struct SquashSettings {
     pub daily_squash_limit: u64,
+    pub enabled: bool,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -3007,6 +3037,7 @@ pub struct CarouselDisplaySettings {
 pub struct WelcomeBackRewardsSettings {
     pub carousel_display_settings: CarouselDisplaySettings,
     pub enable_multi_day_rewards: bool,
+    pub enable_welcome_back_rewards: bool,
 }
 
 crate::masterfile_entry!(AccessibilitySettingsEntry, AccessibilitySettingsEntryData, accessibility_settings: AccessibilitySettings);
@@ -3019,7 +3050,7 @@ crate::masterfile_entry!(AddressBookImportSettingsEntry, AddressBookImportSettin
 
 crate::masterfile_entry!(AdvancedSettingsEntry, AdvancedSettingsEntryData, advanced_settings: AdvancedSettings);
 
-crate::masterfile_stub_entry!(ArBackendSettingsEntry, ArBackendSettingsEntryData);
+crate::masterfile_entry!(ArBackendSettingsEntry, ArBackendSettingsEntryData, ar_backend_settings: ArBackendSettings);
 
 crate::masterfile_entry!(ArPhotoFeatureFlagsEntry, ArPhotoFeatureFlagsEntryData, ar_photo_feature_flags: ArPhotoFeatureFlags);
 

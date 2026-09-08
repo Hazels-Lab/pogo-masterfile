@@ -470,12 +470,16 @@ const (
 	IapItemDisplayTemplateIDPgoreleaseJuly1DeluxeEventPassTrackRedirect                    IapItemDisplayTemplateID = "pgorelease.july1_deluxe_event_pass_track_redirect"
 	IapItemDisplayTemplateIDPgoreleaseMay12026DeluxeEventPassTrackRedirect                 IapItemDisplayTemplateID = "pgorelease.may1_2026_deluxe_event_pass_track_redirect"
 	IapItemDisplayTemplateIDPgoreleaseMay12026DeluxeEventPassTrackUnlockRedirect           IapItemDisplayTemplateID = "pgorelease.may1_2026_deluxe_event_pass_track_unlock_redirect"
+	IapItemDisplayTemplateIDPgoreleaseMonth1DeluxeEventPassTrackUnlock                     IapItemDisplayTemplateID = "pgorelease.month1_deluxe_event_pass_track_unlock"
+	IapItemDisplayTemplateIDPgoreleaseMonth1DeluxeEventPassTrackUnlockPlusPoints           IapItemDisplayTemplateID = "pgorelease.month1_deluxe_event_pass_track_unlock_plus_points"
 	IapItemDisplayTemplateIDPgoreleaseMonth3DeluxeEventPassTrackUnlock                     IapItemDisplayTemplateID = "pgorelease.month3_deluxe_event_pass_track_unlock"
 	IapItemDisplayTemplateIDPgoreleaseMonth3DeluxeEventPassTrackUnlockPlusPoints           IapItemDisplayTemplateID = "pgorelease.month3_deluxe_event_pass_track_unlock_plus_points"
 	IapItemDisplayTemplateIDPgoreleasePokecoin2750                                         IapItemDisplayTemplateID = "pgorelease.pokecoin.2750"
 	IapItemDisplayTemplateIDPgoreleasePokecoin5720                                         IapItemDisplayTemplateID = "pgorelease.pokecoin.5720"
 	IapItemDisplayTemplateIDPgoreleasePokecoin15950                                        IapItemDisplayTemplateID = "pgorelease.pokecoin.15950"
 	IapItemDisplayTemplateIDPgoreleasePokecoin21375                                        IapItemDisplayTemplateID = "pgorelease.pokecoin.21375"
+	IapItemDisplayTemplateIDPgoreleaseSeptember12026DeluxeEventPassTrackUnlock             IapItemDisplayTemplateID = "pgorelease.september1_2026_deluxe_event_pass_track_unlock"
+	IapItemDisplayTemplateIDPgoreleaseSeptember12026DeluxeEventPassTrackUnlockPlusPoints   IapItemDisplayTemplateID = "pgorelease.september1_2026_deluxe_event_pass_track_unlock_plus_points"
 	IapItemDisplayTemplateIDPoffin                                                         IapItemDisplayTemplateID = "poffin"
 	IapItemDisplayTemplateIDPokeball20                                                     IapItemDisplayTemplateID = "pokeball.20"
 	IapItemDisplayTemplateIDPokeball100                                                    IapItemDisplayTemplateID = "pokeball.100"
@@ -1667,12 +1671,16 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDPgoreleaseJuly1DeluxeEventPassTrackRedirect,
 	IapItemDisplayTemplateIDPgoreleaseMay12026DeluxeEventPassTrackRedirect,
 	IapItemDisplayTemplateIDPgoreleaseMay12026DeluxeEventPassTrackUnlockRedirect,
+	IapItemDisplayTemplateIDPgoreleaseMonth1DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDPgoreleaseMonth1DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDPgoreleaseMonth3DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDPgoreleaseMonth3DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDPgoreleasePokecoin2750,
 	IapItemDisplayTemplateIDPgoreleasePokecoin5720,
 	IapItemDisplayTemplateIDPgoreleasePokecoin15950,
 	IapItemDisplayTemplateIDPgoreleasePokecoin21375,
+	IapItemDisplayTemplateIDPgoreleaseSeptember12026DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDPgoreleaseSeptember12026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDPoffin,
 	IapItemDisplayTemplateIDPokeball20,
 	IapItemDisplayTemplateIDPokeball100,

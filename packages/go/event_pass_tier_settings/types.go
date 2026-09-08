@@ -50,10 +50,20 @@ type EventPassTierSettingsStatsLimitsOverride struct {
 }
 
 type EventPassTierSettingsPokemonEncounter struct {
-	IsFeaturedPokemon   bool                                      `json:"isFeaturedPokemon"`
+	IsFeaturedPokemon   *bool                                     `json:"isFeaturedPokemon,omitempty"`
 	PokemonDisplay      *EventPassTierSettingsPokemonDisplay      `json:"pokemonDisplay,omitempty"`
 	PokemonId           string                                    `json:"pokemonId"`
 	StatsLimitsOverride *EventPassTierSettingsStatsLimitsOverride `json:"statsLimitsOverride,omitempty"`
+}
+
+type EventPassTierSettingsTempEvoPokemonBranch struct {
+	PokedexId string `json:"pokedexId"`
+	TempEvoId string `json:"tempEvoId"`
+}
+
+type EventPassTierSettingsTempEvoResource struct {
+	Amount               uint64                                    `json:"amount"`
+	TempEvoPokemonBranch EventPassTierSettingsTempEvoPokemonBranch `json:"tempEvoPokemonBranch"`
 }
 
 type EventPassTierSettingsRewards struct {
@@ -65,6 +75,7 @@ type EventPassTierSettingsRewards struct {
 	PlayerAttribute           *EventPassTierSettingsPlayerAttribute           `json:"playerAttribute,omitempty"`
 	PokemonEncounter          *EventPassTierSettingsPokemonEncounter          `json:"pokemonEncounter,omitempty"`
 	Stardust                  *uint64                                         `json:"stardust,omitempty"`
+	TempEvoResource           *EventPassTierSettingsTempEvoResource           `json:"tempEvoResource,omitempty"`
 	Type                      json.RawMessage                                 `json:"type"`
 	XlCandy                   *EventPassTierSettingsCandy                     `json:"xlCandy,omitempty"`
 }
@@ -72,6 +83,7 @@ type EventPassTierSettingsRewards struct {
 type EventPassTierSettings struct {
 	ActiveBonusDisplaySettings *EventPassTierSettingsActiveBonusDisplaySettings `json:"activeBonusDisplaySettings,omitempty"`
 	BonusSettings              *EventPassTierSettingsActiveBonusDisplaySettings `json:"bonusSettings,omitempty"`
+	IsMilestoneRank            *bool                                            `json:"isMilestoneRank,omitempty"`
 	MinPointsRequired          *uint64                                          `json:"minPointsRequired,omitempty"`
 	Rank                       uint64                                           `json:"rank"`
 	Rewards                    []EventPassTierSettingsRewards                   `json:"rewards,omitempty"`

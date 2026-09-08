@@ -1680,6 +1680,7 @@ export type PokemonSettingsV0071PokemonVictreebel = S<
 					modelHeight: 4.5;
 					modelScaleV2: 0.7;
 					raidBossDistanceOffset: 4.5;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0071_POKEMON_VICTREEBEL";
 					stats: {
 						baseAttack: 265;
 						baseDefense: 181;
@@ -1789,6 +1790,7 @@ export type PokemonSettingsV0071PokemonVictreebelNormal = S<
 					modelHeight: 4.5;
 					modelScaleV2: 0.7;
 					raidBossDistanceOffset: 4.5;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0071_POKEMON_VICTREEBEL";
 					stats: {
 						baseAttack: 265;
 						baseDefense: 181;
@@ -10221,6 +10223,7 @@ export type PokemonSettingsV0650PokemonChespin = S<
 			buddyOffsetFemale: [5.9, 0, -13];
 			buddyOffsetMale: [5.9, 0, -13];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 0.53;
 				cylinderRadiusM: 0.21;
@@ -10296,6 +10299,7 @@ export type PokemonSettingsV0650PokemonChespinNormal = S<
 			buddyOffsetFemale: [5.9, 0, -13];
 			buddyOffsetMale: [5.9, 0, -13];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 0.53;
 				cylinderRadiusM: 0.21;
@@ -10373,6 +10377,7 @@ export type PokemonSettingsV0651PokemonQuilladin = S<
 			buddyOffsetFemale: [-0.6, 0, -25.2];
 			buddyOffsetMale: [-0.6, 0, -25.2];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 0.8;
 				cylinderRadiusM: 0.45;
@@ -10452,6 +10457,7 @@ export type PokemonSettingsV0651PokemonQuilladinNormal = S<
 			buddyOffsetFemale: [-0.6, 0, -25.2];
 			buddyOffsetMale: [-0.6, 0, -25.2];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 0.8;
 				cylinderRadiusM: 0.45;
@@ -10600,6 +10606,7 @@ export type PokemonSettingsV0652PokemonChesnaught = S<
 				{
 					averageHeightM: 1.6;
 					averageWeightKg: 90;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0652_POKEMON_CHESNAUGHT";
 					stats: {
 						baseAttack: 242;
 						baseDefense: 282;
@@ -10698,6 +10705,7 @@ export type PokemonSettingsV0652PokemonChesnaughtNormal = S<
 				{
 					averageHeightM: 1.6;
 					averageWeightKg: 90;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0652_POKEMON_CHESNAUGHT";
 					stats: {
 						baseAttack: 242;
 						baseDefense: 282;

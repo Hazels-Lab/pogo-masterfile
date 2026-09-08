@@ -989,6 +989,7 @@ export type PokemonSettingsV0015PokemonBeedrill = S<
 					};
 					modelHeight: 1.28;
 					modelScaleV2: 0.77;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0015_POKEMON_BEEDRILL";
 					stats: {
 						baseAttack: 303;
 						baseDefense: 148;
@@ -1100,6 +1101,7 @@ export type PokemonSettingsV0015PokemonBeedrillNormal = S<
 					};
 					modelHeight: 1.28;
 					modelScaleV2: 0.77;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0015_POKEMON_BEEDRILL";
 					stats: {
 						baseAttack: 303;
 						baseDefense: 148;

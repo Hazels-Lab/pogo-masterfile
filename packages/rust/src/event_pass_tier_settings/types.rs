@@ -73,10 +73,24 @@ pub struct StatsLimitsOverride {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PokemonEncounter {
-    pub is_featured_pokemon: bool,
+    pub is_featured_pokemon: Option<bool>,
     pub pokemon_display: Option<PokemonDisplay>,
     pub pokemon_id: String,
     pub stats_limits_override: Option<StatsLimitsOverride>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct TempEvoPokemonBranch {
+    pub pokedex_id: String,
+    pub temp_evo_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct TempEvoResource {
+    pub amount: u64,
+    pub temp_evo_pokemon_branch: TempEvoPokemonBranch,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -90,6 +104,7 @@ pub struct Rewards {
     pub player_attribute: Option<PlayerAttribute>,
     pub pokemon_encounter: Option<PokemonEncounter>,
     pub stardust: Option<u64>,
+    pub temp_evo_resource: Option<TempEvoResource>,
     pub r#type: IconTypeValue,
     pub xl_candy: Option<Candy>,
 }
@@ -99,6 +114,7 @@ pub struct Rewards {
 pub struct EventPassTierSettings {
     pub active_bonus_display_settings: Option<ActiveBonusDisplaySettings>,
     pub bonus_settings: Option<ActiveBonusDisplaySettings>,
+    pub is_milestone_rank: Option<bool>,
     pub min_points_required: Option<u64>,
     pub rank: u64,
     pub rewards: Option<Vec<Rewards>>,

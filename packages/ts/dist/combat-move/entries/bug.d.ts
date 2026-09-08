@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatMove", split "bug", 11 entries.
+// Generated from Pokémon GO masterfile — group "combatMove", split "bug", 12 entries.
 
 import type { S } from "../../_utils";
 import type { CombatMove } from "../types";
@@ -159,6 +159,22 @@ export type CombatMoveV0311MoveFellStinger = S<
 		}
 	>
 >;
+export type CombatMoveVmMoveTempEvolutionMegaV0015PokemonBeedrill = S<
+	CombatMove<
+		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0015_POKEMON_BEEDRILL",
+		{
+			buffs: {
+				attackerAttackStatStageChange: 1;
+				buffActivationChance: 1;
+			};
+			energyDelta: -35;
+			power: 40;
+			type: "POKEMON_TYPE_BUG";
+			uniqueId: "TEMP_EVOLUTION_MEGA_V0015_POKEMON_BEEDRILL";
+			vfxName: "fell_stinger";
+		}
+	>
+>;
 
 export type CombatMoveBugMasterfileEntry =
 	| CombatMoveV0022MoveMegahorn
@@ -171,4 +187,5 @@ export type CombatMoveBugMasterfileEntry =
 	| CombatMoveV0261MoveStruggleBugFast
 	| CombatMoveV0262MoveSilverWind
 	| CombatMoveV0306MoveLunge
-	| CombatMoveV0311MoveFellStinger;
+	| CombatMoveV0311MoveFellStinger
+	| CombatMoveVmMoveTempEvolutionMegaV0015PokemonBeedrill;

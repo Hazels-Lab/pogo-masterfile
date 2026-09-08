@@ -7580,6 +7580,7 @@ export type PokemonSettingsV0653PokemonFennekin = S<
 			buddyOffsetFemale: [8, 0, 0];
 			buddyOffsetMale: [8, 0, 0];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 0.55;
 				cylinderRadiusM: 0.28;
@@ -7655,6 +7656,7 @@ export type PokemonSettingsV0653PokemonFennekinNormal = S<
 			buddyOffsetFemale: [8, 0, 0];
 			buddyOffsetMale: [8, 0, 0];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 0.55;
 				cylinderRadiusM: 0.28;
@@ -7732,6 +7734,7 @@ export type PokemonSettingsV0654PokemonBraixen = S<
 			buddyOffsetFemale: [20, 0, 0];
 			buddyOffsetMale: [20, 0, 0];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 1.21;
 				cylinderRadiusM: 0.65;
@@ -7809,6 +7812,7 @@ export type PokemonSettingsV0654PokemonBraixenNormal = S<
 			buddyOffsetFemale: [20, 0, 0];
 			buddyOffsetMale: [20, 0, 0];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 1.21;
 				cylinderRadiusM: 0.65;
@@ -7960,6 +7964,7 @@ export type PokemonSettingsV0655PokemonDelphox = S<
 						cylinderHeightM: 3;
 						cylinderRadiusM: 1.6;
 					};
+					specialMove: "TEMP_EVOLUTION_MEGA_V0655_POKEMON_DELPHOX";
 					stats: {
 						baseAttack: 331;
 						baseDefense: 235;
@@ -8063,6 +8068,7 @@ export type PokemonSettingsV0655PokemonDelphoxNormal = S<
 						cylinderHeightM: 3;
 						cylinderRadiusM: 1.6;
 					};
+					specialMove: "TEMP_EVOLUTION_MEGA_V0655_POKEMON_DELPHOX";
 					stats: {
 						baseAttack: 331;
 						baseDefense: 235;

@@ -4382,6 +4382,7 @@ export type PokemonSettingsV0121PokemonStarmie = S<
 					};
 					modelHeight: 1;
 					modelScaleV2: 1.08;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0121_POKEMON_STARMIE";
 					stats: {
 						baseAttack: 276;
 						baseDefense: 229;
@@ -4490,6 +4491,7 @@ export type PokemonSettingsV0121PokemonStarmieNormal = S<
 					};
 					modelHeight: 1;
 					modelScaleV2: 1.08;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0121_POKEMON_STARMIE";
 					stats: {
 						baseAttack: 276;
 						baseDefense: 229;
@@ -17081,6 +17083,7 @@ export type PokemonSettingsV0656PokemonFroakie = S<
 			buddyOffsetMale: [3.9, 0, -11.8];
 			buddyPortraitOffset: [-10, -80, 130];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 0.42;
 				cylinderRadiusM: 0.19;
@@ -17157,6 +17160,7 @@ export type PokemonSettingsV0656PokemonFroakieNormal = S<
 			buddyOffsetMale: [3.9, 0, -11.8];
 			buddyPortraitOffset: [-10, -80, 130];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 0.42;
 				cylinderRadiusM: 0.19;
@@ -17234,6 +17238,7 @@ export type PokemonSettingsV0657PokemonFrogadier = S<
 			buddyOffsetFemale: [4.9, 0, -29.4];
 			buddyOffsetMale: [4.9, 0, -29.4];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 0.69;
 				cylinderRadiusM: 0.59;
@@ -17313,6 +17318,7 @@ export type PokemonSettingsV0657PokemonFrogadierNormal = S<
 			buddyOffsetFemale: [4.9, 0, -29.4];
 			buddyOffsetMale: [4.9, 0, -29.4];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 0.69;
 				cylinderRadiusM: 0.59;
@@ -17469,6 +17475,7 @@ export type PokemonSettingsV0658PokemonGreninja = S<
 					};
 					modelHeight: 2.8;
 					modelScaleV2: 0.7;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0658_POKEMON_GRENINJA";
 					stats: {
 						baseAttack: 299;
 						baseDefense: 180;
@@ -17575,6 +17582,7 @@ export type PokemonSettingsV0658PokemonGreninjaNormal = S<
 					};
 					modelHeight: 2.8;
 					modelScaleV2: 0.7;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0658_POKEMON_GRENINJA";
 					stats: {
 						baseAttack: 299;
 						baseDefense: 180;

@@ -28,6 +28,19 @@ type AdvancedSettings struct {
 	MaxDeviceMemoryForStandardQualityModeMb uint64 `json:"maxDeviceMemoryForStandardQualityModeMb"`
 }
 
+type ArBackendSettingsFeatureBackendConfigs struct {
+	ArFeature string `json:"arFeature"`
+}
+
+type ArBackendSettingsFeatureBackendConfigsV2 struct {
+	ArBackend string `json:"arBackend"`
+	ArFeature string `json:"arFeature"`
+}
+
+type ArBackendSettings struct {
+	FeatureBackendConfigs []any `json:"featureBackendConfigs"`
+}
+
 type ArPhotoFeatureFlagsCaptureSettings struct {
 	ContextualCheckIntervalSeconds float64 `json:"contextualCheckIntervalSeconds"`
 	CountdownSeconds               uint64  `json:"countdownSeconds"`
@@ -768,6 +781,7 @@ type DailyAdventureIncenseSettings struct {
 	Enabled                   bool                                       `json:"enabled"`
 	EnablePushNotification    bool                                       `json:"enablePushNotification"`
 	LocalDeliveryTime         string                                     `json:"localDeliveryTime"`
+	MapIconDisabled           bool                                       `json:"mapIconDisabled"`
 	PokeballGrant             DailyAdventureIncenseSettingsPokeballGrant `json:"pokeballGrant"`
 	PokeballGrantThreshold    uint64                                     `json:"pokeballGrantThreshold"`
 	PushNotificationHourOfDay uint64                                     `json:"pushNotificationHourOfDay"`
@@ -1081,8 +1095,10 @@ type MegaEvoSettings struct {
 	EnableMegaEvolveInLobby           bool                                       `json:"enableMegaEvolveInLobby"`
 	EnableMegaLevel                   bool                                       `json:"enableMegaLevel"`
 	EnableMegaLevelLegacyAward        bool                                       `json:"enableMegaLevelLegacyAward"`
+	EnableSpecialMove                 bool                                       `json:"enableSpecialMove"`
 	EvolutionLengthMs                 string                                     `json:"evolutionLengthMs"`
 	MaxCandyHoardSize                 uint64                                     `json:"maxCandyHoardSize"`
+	MinLevelForSpecialMove            uint64                                     `json:"minLevelForSpecialMove"`
 	NumMegaLevels                     uint64                                     `json:"numMegaLevels"`
 	SeparatedTempEvoBranches          [6]MegaEvoSettingsSeparatedTempEvoBranches `json:"separatedTempEvoBranches"`
 }
@@ -1688,6 +1704,7 @@ type RaidSettings struct {
 	BootSoloMs                            uint64                                   `json:"bootSoloMs"`
 	CanInviteFriendsInPerson              bool                                     `json:"canInviteFriendsInPerson"`
 	CanInviteFriendsRemotely              bool                                     `json:"canInviteFriendsRemotely"`
+	FailedFriendInviteInfoEnabled         bool                                     `json:"failedFriendInviteInfoEnabled"`
 	FetchProfileFromSocialEnabled         bool                                     `json:"fetchProfileFromSocialEnabled"`
 	FriendInviteCutoffTimeSec             uint64                                   `json:"friendInviteCutoffTimeSec"`
 	FriendRequestsEnabled                 bool                                     `json:"friendRequestsEnabled"`
@@ -1870,6 +1887,7 @@ type SharedMoveSettings struct {
 
 type SoftSfidaSettings struct {
 	CatchActionDelayMs    uint64  `json:"catchActionDelayMs"`
+	Enable                bool    `json:"enable"`
 	GeofenceSizeM         float64 `json:"geofenceSizeM"`
 	MinPlayerLevel        uint64  `json:"minPlayerLevel"`
 	ReservedGeofenceCount uint64  `json:"reservedGeofenceCount"`
@@ -1936,6 +1954,7 @@ type SponsoredGeofenceGiftSettings struct {
 
 type SquashSettings struct {
 	DailySquashLimit uint64 `json:"dailySquashLimit"`
+	Enabled          bool   `json:"enabled"`
 }
 
 type StampCollectionSettings struct {
@@ -2150,8 +2169,9 @@ type WelcomeBackRewardsSettingsCarouselDisplaySettings struct {
 }
 
 type WelcomeBackRewardsSettings struct {
-	CarouselDisplaySettings WelcomeBackRewardsSettingsCarouselDisplaySettings `json:"carouselDisplaySettings"`
-	EnableMultiDayRewards   bool                                              `json:"enableMultiDayRewards"`
+	CarouselDisplaySettings  WelcomeBackRewardsSettingsCarouselDisplaySettings `json:"carouselDisplaySettings"`
+	EnableMultiDayRewards    bool                                              `json:"enableMultiDayRewards"`
+	EnableWelcomeBackRewards bool                                              `json:"enableWelcomeBackRewards"`
 }
 
 type AccessibilitySettingsEntry struct {
@@ -2222,7 +2242,8 @@ type ArBackendSettingsEntry struct {
 func (ArBackendSettingsEntry) MasterfileEntry() {}
 
 type ArBackendSettingsEntryData struct {
-	TemplateID string `json:"templateId"`
+	TemplateID        string            `json:"templateId"`
+	ArBackendSettings ArBackendSettings `json:"arBackendSettings"`
 }
 
 type ArPhotoFeatureFlagsEntry struct {

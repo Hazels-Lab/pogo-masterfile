@@ -1143,11 +1143,12 @@ export type IapItemDisplayBundleGofest2026finale1 = S<
 		"bundle.GOFest2026Finale.1",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
 			showDiscountTag: true;
 			showStrikethroughPrice: true;
 			sku: "bundle.GOFest2026Finale.1";
-			skuDisableTime: "2026-09-06T22:00:00";
-			skuDisableTimeUtcMs: "1788732000000";
+			skuDisableTime: "2026-01-02T22:00:00";
+			skuDisableTimeUtcMs: "1767391200000";
 			skuEnableTime: "2026-01-02T20:00:00";
 			skuEnableTimeUtcMs: "1767384000000";
 			sortOrder: 1;
@@ -1161,11 +1162,12 @@ export type IapItemDisplayBundleGofest2026finale2 = S<
 		"bundle.GOFest2026Finale.2",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
 			showDiscountTag: true;
 			showStrikethroughPrice: true;
 			sku: "bundle.GOFest2026Finale.2";
-			skuDisableTime: "2026-09-06T22:00:00";
-			skuDisableTimeUtcMs: "1788732000000";
+			skuDisableTime: "2026-01-02T22:00:00";
+			skuDisableTimeUtcMs: "1767391200000";
 			skuEnableTime: "2026-01-02T20:00:00";
 			skuEnableTimeUtcMs: "1767384000000";
 			sortOrder: 2;
@@ -1179,9 +1181,10 @@ export type IapItemDisplayBundleGofest2026finale3 = S<
 		"bundle.GOFest2026Finale.3",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
 			sku: "bundle.GOFest2026Finale.3";
-			skuDisableTime: "2026-09-06T22:00:00";
-			skuDisableTimeUtcMs: "1788732000000";
+			skuDisableTime: "2026-01-02T22:00:00";
+			skuDisableTimeUtcMs: "1767391200000";
 			skuEnableTime: "2026-01-02T20:00:00";
 			skuEnableTimeUtcMs: "1767384000000";
 			sortOrder: 3;
@@ -1195,11 +1198,12 @@ export type IapItemDisplayBundleGofest2026finale4 = S<
 		"bundle.GOFest2026Finale.4",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
 			showDiscountTag: true;
 			showStrikethroughPrice: true;
 			sku: "bundle.GOFest2026Finale.4";
-			skuDisableTime: "2026-09-06T22:00:00";
-			skuDisableTimeUtcMs: "1788732000000";
+			skuDisableTime: "2026-01-02T22:00:00";
+			skuDisableTimeUtcMs: "1767391200000";
 			skuEnableTime: "2026-01-02T20:00:00";
 			skuEnableTimeUtcMs: "1767384000000";
 			sortOrder: 4;

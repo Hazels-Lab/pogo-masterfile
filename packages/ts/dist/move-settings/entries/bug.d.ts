@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSettings", split "bug", 14 entries.
+// Generated from Pokémon GO masterfile — group "moveSettings", split "bug", 15 entries.
 
 import type { S } from "../../_utils";
 import type { MoveSettings } from "../types";
@@ -246,6 +246,27 @@ export type MoveSettingsV0313MoveLeechLife = S<
 		}
 	>
 >;
+export type MoveSettingsVmMoveTempEvolutionMegaV0015PokemonBeedrill = S<
+	MoveSettings<
+		"VM_MOVE_TEMP_EVOLUTION_MEGA_V0015_POKEMON_BEEDRILL",
+		{
+			accuracyChance: 1;
+			animationId: 5;
+			damageWindowEndMs: 1800;
+			damageWindowStartMs: 1600;
+			durationMs: 2000;
+			energyDelta: -100;
+			isLocked: true;
+			movementId: "TEMP_EVOLUTION_MEGA_V0015_POKEMON_BEEDRILL";
+			pokemonType: "POKEMON_TYPE_BUG";
+			power: 140;
+			staminaLossScalar: 0.01;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "fell_stinger";
+		}
+	>
+>;
 export type MoveSettingsVnBm002 = S<
 	MoveSettings<
 		"VN_BM_002",
@@ -298,5 +319,6 @@ export type MoveSettingsBugMasterfileEntry =
 	| MoveSettingsV0306MoveLunge
 	| MoveSettingsV0311MoveFellStinger
 	| MoveSettingsV0313MoveLeechLife
+	| MoveSettingsVmMoveTempEvolutionMegaV0015PokemonBeedrill
 	| MoveSettingsVnBm002
 	| MoveSettingsVnBm020;

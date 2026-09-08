@@ -11,4 +11,8 @@ pub enum EventPassSettingsTemplateId {
     EventPassAugust2026Season,
     #[serde(rename = "EVENT_PASS_GOFEST2026_FINALE")]
     EventPassGofest2026Finale,
+    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT")]
+    EventPassMegasquads2026Event,
+    #[serde(rename = "EVENT_PASS_SEPTEMBER2026_SEASON")]
+    EventPassSeptember2026Season,
 }

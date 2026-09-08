@@ -373,6 +373,7 @@ export type PokemonSettingsV0227PokemonSkarmory = S<
 					};
 					modelHeight: 1.1;
 					modelScaleV2: 1;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0227_POKEMON_SKARMORY";
 					stats: {
 						baseAttack: 273;
 						baseDefense: 228;
@@ -479,6 +480,7 @@ export type PokemonSettingsV0227PokemonSkarmoryNormal = S<
 					};
 					modelHeight: 1.1;
 					modelScaleV2: 1;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0227_POKEMON_SKARMORY";
 					stats: {
 						baseAttack: 273;
 						baseDefense: 228;

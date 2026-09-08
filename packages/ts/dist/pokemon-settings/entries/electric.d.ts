@@ -304,7 +304,7 @@ export type PokemonSettingsV0025PokemonPikachuAnniversary2026Malaysia01 = S<
 			evolutionIds: ["RAICHU"];
 			evolutionPips: 1;
 			familyId: "FAMILY_PIKACHU";
-			form: 3358;
+			form: "PIKACHU_ANNIVERSARY_2026_MALAYSIA_01";
 			heightStdDev: 0.05;
 			ibfc: object;
 			isDeployable: true;
@@ -386,7 +386,7 @@ export type PokemonSettingsV0025PokemonPikachuAnniversary2026Philippine01 = S<
 			evolutionIds: ["RAICHU"];
 			evolutionPips: 1;
 			familyId: "FAMILY_PIKACHU";
-			form: 3375;
+			form: "PIKACHU_ANNIVERSARY_2026_PHILIPPINE_01";
 			heightStdDev: 0.05;
 			ibfc: object;
 			isDeployable: true;
@@ -468,7 +468,7 @@ export type PokemonSettingsV0025PokemonPikachuAnniversary2026Singapore01 = S<
 			evolutionIds: ["RAICHU"];
 			evolutionPips: 1;
 			familyId: "FAMILY_PIKACHU";
-			form: 3359;
+			form: "PIKACHU_ANNIVERSARY_2026_SINGAPORE_01";
 			heightStdDev: 0.05;
 			ibfc: object;
 			isDeployable: true;
@@ -550,7 +550,7 @@ export type PokemonSettingsV0025PokemonPikachuAnniversary2026Taiwan01 = S<
 			evolutionIds: ["RAICHU"];
 			evolutionPips: 1;
 			familyId: "FAMILY_PIKACHU";
-			form: 3360;
+			form: "PIKACHU_ANNIVERSARY_2026_TAIWAN_01";
 			heightStdDev: 0.05;
 			ibfc: object;
 			isDeployable: true;
@@ -3889,7 +3889,7 @@ export type PokemonSettingsV0025PokemonPikachuK2026A01 = S<
 			};
 			evolutionPips: 1;
 			familyId: "FAMILY_PIKACHU";
-			form: 3361;
+			form: "PIKACHU_K_2026_A_01";
 			heightStdDev: 0.05;
 			ibfc: object;
 			isDeployable: true;
@@ -5765,6 +5765,7 @@ export type PokemonSettingsV0026PokemonRaichu = S<
 						cylinderHeightM: 1;
 						cylinderRadiusM: 1;
 					};
+					specialMove: "TEMP_EVOLUTION_MEGA_X_V0026_POKEMON_RAICHU";
 					stats: {
 						baseAttack: 277;
 						baseDefense: 203;
@@ -5776,6 +5777,7 @@ export type PokemonSettingsV0026PokemonRaichu = S<
 				{
 					averageHeightM: 1;
 					averageWeightKg: 26;
+					specialMove: "TEMP_EVOLUTION_MEGA_Y_V0026_POKEMON_RAICHU";
 					stats: {
 						baseAttack: 339;
 						baseDefense: 157;
@@ -5966,6 +5968,7 @@ export type PokemonSettingsV0026PokemonRaichuNormal = S<
 						cylinderHeightM: 1;
 						cylinderRadiusM: 1;
 					};
+					specialMove: "TEMP_EVOLUTION_MEGA_X_V0026_POKEMON_RAICHU";
 					stats: {
 						baseAttack: 277;
 						baseDefense: 203;
@@ -5977,6 +5980,7 @@ export type PokemonSettingsV0026PokemonRaichuNormal = S<
 				{
 					averageHeightM: 1;
 					averageWeightKg: 26;
+					specialMove: "TEMP_EVOLUTION_MEGA_Y_V0026_POKEMON_RAICHU";
 					stats: {
 						baseAttack: 339;
 						baseDefense: 157;

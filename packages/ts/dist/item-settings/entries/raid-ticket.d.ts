@@ -9,7 +9,6 @@ export type ItemSettingsItemFreeRaidTicket = S<
 		{
 			category: "ITEM_CATEGORY_RAID_TICKET";
 			dropTrainerLevel: 100;
-			itemId: "ITEM_FREE_RAID_TICKET";
 			itemType: "ITEM_TYPE_RAID_TICKET";
 		}
 	>
@@ -20,7 +19,6 @@ export type ItemSettingsItemPaidRaidTicket = S<
 		{
 			category: "ITEM_CATEGORY_RAID_TICKET";
 			dropTrainerLevel: 1;
-			itemId: "ITEM_PAID_RAID_TICKET";
 			itemType: "ITEM_TYPE_RAID_TICKET";
 		}
 	>
@@ -31,7 +29,6 @@ export type ItemSettingsItemRemoteRaidTicket = S<
 		{
 			category: "ITEM_CATEGORY_RAID_TICKET";
 			dropTrainerLevel: 5;
-			itemId: "ITEM_REMOTE_RAID_TICKET";
 			itemType: "ITEM_TYPE_RAID_TICKET";
 		}
 	>

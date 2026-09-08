@@ -29,6 +29,13 @@ type NonCombatMoveSettingsMaxMoveBonus struct {
 	NumAllMaxMoveLevelIncrease uint64    `json:"numAllMaxMoveLevelIncrease"`
 }
 
+type NonCombatMoveSettingsMegaMoveBonus struct {
+	AttackMultiplier          *float64   `json:"attackMultiplier,omitempty"`
+	ExtraMegaRaidShieldBreak  *uint64    `json:"extraMegaRaidShieldBreak,omitempty"`
+	SpecialMove               string     `json:"specialMove"`
+	VisibleAppraisalStarTiers *[2]uint64 `json:"visibleAppraisalStarTiers,omitempty"`
+}
+
 type NonCombatMoveSettingsSlowFreezeBonus struct {
 	CatchCircleOuterTimeScaleOverride float64 `json:"catchCircleOuterTimeScaleOverride"`
 	CatchCircleSpeedChangeThreshold   float64 `json:"catchCircleSpeedChangeThreshold"`
@@ -50,25 +57,44 @@ type NonCombatMoveSettingsBonusEffect struct {
 	AttackDefenseBonus *NonCombatMoveSettingsAttackDefenseBonus `json:"attackDefenseBonus,omitempty"`
 	DayNightBonus      *NonCombatMoveSettingsDayNightBonus      `json:"dayNightBonus,omitempty"`
 	MaxMoveBonus       *NonCombatMoveSettingsMaxMoveBonus       `json:"maxMoveBonus,omitempty"`
+	MegaMoveBonus      *NonCombatMoveSettingsMegaMoveBonus      `json:"megaMoveBonus,omitempty"`
 	SlowFreezeBonus    *NonCombatMoveSettingsSlowFreezeBonus    `json:"slowFreezeBonus,omitempty"`
 	SpaceBonus         *NonCombatMoveSettingsSpaceBonus         `json:"spaceBonus,omitempty"`
 	TimeBonus          *NonCombatMoveSettingsTimeBonus          `json:"timeBonus,omitempty"`
 }
 
+type NonCombatMoveSettingsTempEvoPokemonBranch struct {
+	PokedexId string `json:"pokedexId"`
+	TempEvoId string `json:"tempEvoId"`
+}
+
+type NonCombatMoveSettingsTempEvoResourceCost struct {
+	MegaEnergyCost       uint64                                    `json:"megaEnergyCost"`
+	TempEvoPokemonBranch NonCombatMoveSettingsTempEvoPokemonBranch `json:"tempEvoPokemonBranch"`
+}
+
 type NonCombatMoveSettingsCost struct {
-	CandyCost    uint64  `json:"candyCost"`
-	StardustCost *uint64 `json:"stardustCost,omitempty"`
+	CandyCost           uint64                                    `json:"candyCost"`
+	StardustCost        *uint64                                   `json:"stardustCost,omitempty"`
+	TempEvoResourceCost *NonCombatMoveSettingsTempEvoResourceCost `json:"tempEvoResourceCost,omitempty"`
+}
+
+type NonCombatMoveSettingsInnLobbyActivationSettings struct {
+	EnableActivationInMaxLobby      *bool `json:"enableActivationInMaxLobby,omitempty"`
+	EnableActivationInMegaRaidLobby *bool `json:"enableActivationInMegaRaidLobby,omitempty"`
+	EnableActivationInRaidLobby     *bool `json:"enableActivationInRaidLobby,omitempty"`
 }
 
 type NonCombatMoveSettings struct {
-	BonusEffect         NonCombatMoveSettingsBonusEffect `json:"bonusEffect"`
-	BonusType           json.RawMessage                  `json:"bonusType"`
-	Cost                NonCombatMoveSettingsCost        `json:"cost"`
-	DurationMs          string                           `json:"durationMs"`
-	EnableMultiUse      bool                             `json:"enableMultiUse"`
-	EnableNonCombatMove bool                             `json:"enableNonCombatMove"`
-	ExtraDurationMs     string                           `json:"extraDurationMs"`
-	UniqueId            string                           `json:"uniqueId"`
+	BonusEffect                NonCombatMoveSettingsBonusEffect                 `json:"bonusEffect"`
+	BonusType                  json.RawMessage                                  `json:"bonusType"`
+	Cost                       NonCombatMoveSettingsCost                        `json:"cost"`
+	DurationMs                 string                                           `json:"durationMs"`
+	EnableMultiUse             bool                                             `json:"enableMultiUse"`
+	EnableNonCombatMove        bool                                             `json:"enableNonCombatMove"`
+	ExtraDurationMs            string                                           `json:"extraDurationMs"`
+	InnLobbyActivationSettings *NonCombatMoveSettingsInnLobbyActivationSettings `json:"innLobbyActivationSettings,omitempty"`
+	UniqueId                   string                                           `json:"uniqueId"`
 }
 
 type NonCombatMoveSettingsEntry struct {

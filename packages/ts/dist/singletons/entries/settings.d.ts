@@ -60,6 +60,23 @@ export interface ArBackendSettings {
 	templateId: "AR_BACKEND_SETTINGS";
 	data: {
 		templateId: "AR_BACKEND_SETTINGS";
+		arBackendSettings: {
+			featureBackendConfigs: [
+				{
+					arFeature: "ENCOUNTER";
+				},
+				{
+					arFeature: "BUDDY";
+				},
+				{
+					arFeature: "IRIS";
+				},
+				{
+					arBackend: "CUSTOM";
+					arFeature: "AR_PHOTO_SOCIAL";
+				},
+			];
+		};
 	};
 }
 
@@ -283,7 +300,7 @@ export interface BreadBattleClientSettings {
 			maxPlayersPerBreadDoughLobby: 100;
 			maxPlayersPerBreadLobby: 4;
 			maxPlayersToPrepareBreadDoughLobby: 98;
-			maxRemoteBreadBattlePassesAllowed: 999999;
+			maxRemoteBreadBattlePassesAllowed: 10;
 			maxRemotePlayersPerBreadDoughLobby: 100;
 			maxRemotePlayersPerBreadLobby: 4;
 			minPlayersToPrepareBreadLobby: 1;
@@ -2712,6 +2729,7 @@ export interface DailyAdventureIncenseSettings {
 			enabled: true;
 			enablePushNotification: true;
 			localDeliveryTime: "0:00:00";
+			mapIconDisabled: true;
 			pokeballGrant: {
 				lootItem: [
 					{
@@ -2790,7 +2808,7 @@ export interface EventMapRefreshSettings {
 	data: {
 		templateId: "EVENT_SERVER_SETTINGS";
 		eventMapRefreshSettings: {
-			eventServerSettingsHash: "ae31e2a8c2b1befc04cf16c7f07b5b61939bab5d414efd053eaa060dc9673361";
+			eventServerSettingsHash: "484769a62f4e0466590d0664cf05f427914e6cdaba72145abdf07651bba66698";
 		};
 	};
 }
@@ -3643,8 +3661,10 @@ export interface MegaEvoSettings {
 			enableMegaEvolveInLobby: true;
 			enableMegaLevel: true;
 			enableMegaLevelLegacyAward: true;
+			enableSpecialMove: true;
 			evolutionLengthMs: "28800000";
 			maxCandyHoardSize: 50000;
+			minLevelForSpecialMove: 1;
 			numMegaLevels: 4;
 			separatedTempEvoBranches: [
 				{
@@ -5007,6 +5027,7 @@ export interface RaidSettings {
 			bootSoloMs: 30000;
 			canInviteFriendsInPerson: true;
 			canInviteFriendsRemotely: true;
+			failedFriendInviteInfoEnabled: true;
 			fetchProfileFromSocialEnabled: true;
 			friendInviteCutoffTimeSec: 20;
 			friendRequestsEnabled: true;
@@ -5383,6 +5404,7 @@ export interface SoftSfidaSettings {
 		templateId: "SOFT_SFIDA_SETTINGS";
 		softSfidaSettings: {
 			catchActionDelayMs: 8000;
+			enable: true;
 			geofenceSizeM: 50;
 			minPlayerLevel: 20;
 			reservedGeofenceCount: 4;
@@ -5743,7 +5765,8 @@ export interface SquashSettings {
 	data: {
 		templateId: "REMOTE_RAID_LIMIT_SETTINGS";
 		squashSettings: {
-			dailySquashLimit: 999999;
+			dailySquashLimit: 10;
+			enabled: true;
 		};
 	};
 }
@@ -6278,6 +6301,7 @@ export interface WelcomeBackRewardsSettings {
 				];
 			};
 			enableMultiDayRewards: true;
+			enableWelcomeBackRewards: true;
 		};
 	};
 }

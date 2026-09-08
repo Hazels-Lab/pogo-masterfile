@@ -94,13 +94,6 @@ pub struct ExclusiveKeyItem {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(untagged)]
-pub enum FormValue {
-    Uint(u64),
-    String(String),
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct LocationCardSettings {
     pub base_pokemon_location_card: String,
@@ -259,6 +252,7 @@ pub struct TempEvoOverrides {
     pub model_height: Option<f64>,
     pub model_scale_v2: Option<f64>,
     pub raid_boss_distance_offset: Option<f64>,
+    pub special_move: Option<String>,
     pub stats: Option<Stats>,
     pub temp_evo_id: Option<String>,
     pub type_override1: Option<String>,
@@ -305,7 +299,7 @@ pub struct PokemonSettings {
     pub evolution_pips: Option<u64>,
     pub exclusive_key_item: Option<ExclusiveKeyItem>,
     pub family_id: String,
-    pub form: Option<FormValue>,
+    pub form: Option<String>,
     pub form_change: Option<Vec<FormChange>>,
     pub height_std_dev: f64,
     pub ibfc: Ibfc,

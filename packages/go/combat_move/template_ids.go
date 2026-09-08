@@ -329,6 +329,7 @@ const (
 	CombatMoveTemplateIDCombatV0593MoveDive                                 CombatMoveTemplateID = "COMBAT_V0593_MOVE_DIVE"
 	CombatMoveTemplateIDCombatV0594MoveGulpMissileGulping                   CombatMoveTemplateID = "COMBAT_V0594_MOVE_GULP_MISSILE_GULPING"
 	CombatMoveTemplateIDCombatV0595MoveGulpMissileGorging                   CombatMoveTemplateID = "COMBAT_V0595_MOVE_GULP_MISSILE_GORGING"
+	CombatMoveTemplateIDCombatVmMoveTempEvolutionMegaV0015PokemonBeedrill   CombatMoveTemplateID = "COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0015_POKEMON_BEEDRILL"
 	CombatMoveTemplateIDCombatVmMoveTempEvolutionMegaV0071PokemonVictreebel CombatMoveTemplateID = "COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0071_POKEMON_VICTREEBEL"
 	CombatMoveTemplateIDCombatVmMoveTempEvolutionMegaV0121PokemonStarmie    CombatMoveTemplateID = "COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0121_POKEMON_STARMIE"
 	CombatMoveTemplateIDCombatVmMoveTempEvolutionMegaV0149PokemonDragonite  CombatMoveTemplateID = "COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0149_POKEMON_DRAGONITE"
@@ -669,6 +670,7 @@ var CombatMoveTemplateIDValues = [...]CombatMoveTemplateID{
 	CombatMoveTemplateIDCombatV0593MoveDive,
 	CombatMoveTemplateIDCombatV0594MoveGulpMissileGulping,
 	CombatMoveTemplateIDCombatV0595MoveGulpMissileGorging,
+	CombatMoveTemplateIDCombatVmMoveTempEvolutionMegaV0015PokemonBeedrill,
 	CombatMoveTemplateIDCombatVmMoveTempEvolutionMegaV0071PokemonVictreebel,
 	CombatMoveTemplateIDCombatVmMoveTempEvolutionMegaV0121PokemonStarmie,
 	CombatMoveTemplateIDCombatVmMoveTempEvolutionMegaV0149PokemonDragonite,
