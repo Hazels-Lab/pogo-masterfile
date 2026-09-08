@@ -5702,7 +5702,7 @@ export type PokemonSettingsV0026PokemonRaichu = S<
 				diskRadiusM: 0.729;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["BRICK_BREAK", "THUNDER_PUNCH", "WILD_CHARGE", "SKULL_BASH", "TRAILBLAZE", "SURF"];
+			cinematicMoves: ["BRICK_BREAK", "THUNDER_PUNCH", "WILD_CHARGE", "SKULL_BASH", "TRAILBLAZE", "SURF", "VOLT_TACKLE"];
 			eliteCinematicMove: ["THUNDER"];
 			encounter: {
 				attackProbability: 0.1;
@@ -5824,7 +5824,7 @@ export type PokemonSettingsV0026PokemonRaichuAlola = S<
 				diskRadiusM: 0.729;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["PSYCHIC", "THUNDER_PUNCH", "WILD_CHARGE", "GRASS_KNOT", "TRAILBLAZE", "SURF", "PSYSHOCK"];
+			cinematicMoves: ["PSYCHIC", "THUNDER_PUNCH", "WILD_CHARGE", "GRASS_KNOT", "TRAILBLAZE", "SURF", "PSYSHOCK", "VOLT_TACKLE"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 17;
@@ -5904,7 +5904,7 @@ export type PokemonSettingsV0026PokemonRaichuNormal = S<
 				diskRadiusM: 0.729;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["BRICK_BREAK", "THUNDER_PUNCH", "WILD_CHARGE", "SKULL_BASH", "TRAILBLAZE", "SURF"];
+			cinematicMoves: ["BRICK_BREAK", "THUNDER_PUNCH", "WILD_CHARGE", "SKULL_BASH", "TRAILBLAZE", "SURF", "VOLT_TACKLE"];
 			eliteCinematicMove: ["THUNDER"];
 			encounter: {
 				attackProbability: 0.1;
@@ -12418,7 +12418,7 @@ export type PokemonSettingsV0807PokemonZeraora = S<
 				cylinderHeightM: 0.75;
 				cylinderRadiusM: 0.7;
 			};
-			cinematicMoves: ["THUNDER_PUNCH", "DISCHARGE", "WILD_CHARGE", "PLASMA_FISTS"];
+			cinematicMoves: ["THUNDER_PUNCH", "DISCHARGE", "WILD_CHARGE", "PLASMA_FISTS", "DYNAMIC_PUNCH"];
 			encounter: {
 				attackProbability: 0.1;
 				bonusXlCandyCaptureReward: 3;
@@ -12472,7 +12472,7 @@ export type PokemonSettingsV0807PokemonZeraoraNormal = S<
 				cylinderHeightM: 0.75;
 				cylinderRadiusM: 0.7;
 			};
-			cinematicMoves: ["THUNDER_PUNCH", "DISCHARGE", "WILD_CHARGE", "PLASMA_FISTS"];
+			cinematicMoves: ["THUNDER_PUNCH", "DISCHARGE", "WILD_CHARGE", "PLASMA_FISTS", "DYNAMIC_PUNCH"];
 			encounter: {
 				attackProbability: 0.1;
 				bonusXlCandyCaptureReward: 3;
@@ -12969,7 +12969,7 @@ export type PokemonSettingsV0849PokemonToxtricityAmped = S<
 				cylinderHeightM: 1.7;
 				cylinderRadiusM: 0.98;
 			};
-			cinematicMoves: ["ACID_SPRAY", "DISCHARGE", "WILD_CHARGE", "POWER_UP_PUNCH"];
+			cinematicMoves: ["ACID_SPRAY", "DISCHARGE", "WILD_CHARGE", "POWER_UP_PUNCH", "SWIFT"];
 			encounter: {
 				attackProbability: 0.1;
 				bonusCandyCaptureReward: 2;
@@ -13031,7 +13031,7 @@ export type PokemonSettingsV0849PokemonToxtricityLowKey = S<
 				cylinderHeightM: 1.7;
 				cylinderRadiusM: 0.98;
 			};
-			cinematicMoves: ["ACID_SPRAY", "DISCHARGE", "WILD_CHARGE", "POWER_UP_PUNCH"];
+			cinematicMoves: ["ACID_SPRAY", "DISCHARGE", "WILD_CHARGE", "POWER_UP_PUNCH", "SWIFT"];
 			encounter: {
 				attackProbability: 0.1;
 				bonusCandyCaptureReward: 2;
@@ -13207,7 +13207,7 @@ export type PokemonSettingsV0877PokemonMorpeko = S<
 			ibfc: {
 				alternateForm: "MORPEKO_HANGRY";
 				alternateToDefaultIbfcSettings: {
-					animationDurationTurns: 5;
+					animationDurationTurns: 4;
 					animationPlayPoint: "AFTER_CM_ATTACKER";
 					currentMove: "AURA_WHEEL_DARK";
 					ibfcVfxKey: "ALTERNATE_TO_DEFAULT";
@@ -13216,7 +13216,7 @@ export type PokemonSettingsV0877PokemonMorpeko = S<
 				combatEnable: true;
 				defaultForm: "MORPEKO_FULL_BELLY";
 				defaultToAlternateIbfcSettings: {
-					animationDurationTurns: 5;
+					animationDurationTurns: 4;
 					animationPlayPoint: "AFTER_CM_ATTACKER";
 					currentMove: "AURA_WHEEL_ELECTRIC";
 					ibfcVfxKey: "DEFAULT_TO_ALTERNATE";

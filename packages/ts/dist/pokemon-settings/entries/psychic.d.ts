@@ -4477,7 +4477,7 @@ export type PokemonSettingsV0249PokemonLugia = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["SKY_ATTACK", "HYDRO_PUMP", "FUTURESIGHT", "FLY"];
+			cinematicMoves: ["SKY_ATTACK", "HYDRO_PUMP", "FUTURESIGHT", "FLY", "EARTH_POWER"];
 			eliteCinematicMove: ["AEROBLAST"];
 			encounter: {
 				attackProbability: 0.1;
@@ -4555,7 +4555,7 @@ export type PokemonSettingsV0249PokemonLugiaNormal = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["SKY_ATTACK", "HYDRO_PUMP", "FUTURESIGHT", "FLY"];
+			cinematicMoves: ["SKY_ATTACK", "HYDRO_PUMP", "FUTURESIGHT", "FLY", "EARTH_POWER"];
 			eliteCinematicMove: ["AEROBLAST"];
 			encounter: {
 				attackProbability: 0.1;
@@ -6200,7 +6200,7 @@ export type PokemonSettingsV0386PokemonDeoxysDefense = S<
 			pokedexWeightKg: 60.8;
 			pokemonClass: "POKEMON_CLASS_MYTHIC";
 			pokemonId: "DEOXYS";
-			quickMoves: ["ZEN_HEADBUTT_FAST", "COUNTER_FAST"];
+			quickMoves: ["ZEN_HEADBUTT_FAST", "COUNTER_FAST", "LOW_KICK_FAST"];
 			stats: {
 				baseAttack: 144;
 				baseDefense: 330;
@@ -6673,7 +6673,7 @@ export type PokemonSettingsV0475PokemonGallade = S<
 				shoulderModeScale: 0.5;
 			};
 			candyToEvolve: 25;
-			cinematicMoves: ["CLOSE_COMBAT", "PSYCHIC", "LEAF_BLADE"];
+			cinematicMoves: ["CLOSE_COMBAT", "PSYCHIC", "LEAF_BLADE", "SACRED_SWORD"];
 			eliteCinematicMove: ["SYNCHRONOISE"];
 			encounter: {
 				attackProbability: 0.2;
@@ -6789,7 +6789,7 @@ export type PokemonSettingsV0475PokemonGalladeNormal = S<
 				shoulderModeScale: 0.5;
 			};
 			candyToEvolve: 25;
-			cinematicMoves: ["CLOSE_COMBAT", "PSYCHIC", "LEAF_BLADE"];
+			cinematicMoves: ["CLOSE_COMBAT", "PSYCHIC", "LEAF_BLADE", "SACRED_SWORD"];
 			eliteCinematicMove: ["SYNCHRONOISE"];
 			encounter: {
 				attackProbability: 0.2;

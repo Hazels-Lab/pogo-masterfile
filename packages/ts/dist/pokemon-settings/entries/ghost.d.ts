@@ -2073,7 +2073,7 @@ export type PokemonSettingsV0429PokemonMismagius = S<
 				shoulderModeScale: 0.5;
 			};
 			candyToEvolve: 25;
-			cinematicMoves: ["SHADOW_BALL", "DARK_PULSE", "DAZZLING_GLEAM"];
+			cinematicMoves: ["SHADOW_BALL", "DARK_PULSE", "DAZZLING_GLEAM", "MYSTICAL_FIRE"];
 			encounter: {
 				attackProbability: 0.2;
 				attackTimerS: 29;
@@ -2152,7 +2152,7 @@ export type PokemonSettingsV0429PokemonMismagiusNormal = S<
 				shoulderModeScale: 0.5;
 			};
 			candyToEvolve: 25;
-			cinematicMoves: ["SHADOW_BALL", "DARK_PULSE", "DAZZLING_GLEAM"];
+			cinematicMoves: ["SHADOW_BALL", "DARK_PULSE", "DAZZLING_GLEAM", "MYSTICAL_FIRE"];
 			encounter: {
 				attackProbability: 0.2;
 				attackTimerS: 29;
@@ -2992,7 +2992,7 @@ export type PokemonSettingsV0563PokemonCofagrigus = S<
 				shoulderModeScale: 0.5;
 			};
 			candyToEvolve: 25;
-			cinematicMoves: ["SHADOW_BALL", "DARK_PULSE", "PSYCHIC"];
+			cinematicMoves: ["SHADOW_BALL", "DARK_PULSE", "PSYCHIC", "ENERGY_BALL"];
 			encounter: {
 				attackProbability: 0.2;
 				attackTimerS: 29;
@@ -3069,7 +3069,7 @@ export type PokemonSettingsV0563PokemonCofagrigusNormal = S<
 				shoulderModeScale: 0.5;
 			};
 			candyToEvolve: 25;
-			cinematicMoves: ["SHADOW_BALL", "DARK_PULSE", "PSYCHIC"];
+			cinematicMoves: ["SHADOW_BALL", "DARK_PULSE", "PSYCHIC", "ENERGY_BALL"];
 			encounter: {
 				attackProbability: 0.2;
 				attackTimerS: 29;
@@ -3527,7 +3527,7 @@ export type PokemonSettingsV0609PokemonChandelure = S<
 			pokedexHeightM: 1;
 			pokedexWeightKg: 34.3;
 			pokemonId: "CHANDELURE";
-			quickMoves: ["HEX_FAST", "FIRE_SPIN_FAST", "INCINERATE_FAST"];
+			quickMoves: ["HEX_FAST", "FIRE_SPIN_FAST", "INCINERATE_FAST", "ASTONISH_FAST"];
 			shadow: {
 				purificationCandyNeeded: 5;
 				purificationStardustNeeded: 5000;
@@ -3610,7 +3610,7 @@ export type PokemonSettingsV0609PokemonChandelureNormal = S<
 			pokedexHeightM: 1;
 			pokedexWeightKg: 34.3;
 			pokemonId: "CHANDELURE";
-			quickMoves: ["HEX_FAST", "FIRE_SPIN_FAST", "INCINERATE_FAST"];
+			quickMoves: ["HEX_FAST", "FIRE_SPIN_FAST", "INCINERATE_FAST", "ASTONISH_FAST"];
 			shadow: {
 				purificationCandyNeeded: 5;
 				purificationStardustNeeded: 5000;
@@ -5094,14 +5094,14 @@ export type PokemonSettingsV0778PokemonMimikyu = S<
 			ibfc: {
 				alternateForm: "MIMIKYU_BUSTED";
 				alternateToDefaultIbfcSettings: {
-					animationDurationTurns: 5;
+					animationDurationTurns: 4;
 					animationPlayPoint: "BEFORE_CM_ATTACKER";
 					ibfcVfxKey: "ALTERNATE_TO_DEFAULT";
 				};
 				combatEnable: true;
 				defaultForm: "MIMIKYU_DISGUISED";
 				defaultToAlternateIbfcSettings: {
-					animationDurationTurns: 5;
+					animationDurationTurns: 4;
 					animationPlayPoint: "BEFORE_CM_ATTACKER";
 					ibfcVfxKey: "DEFAULT_TO_ALTERNATE";
 				};

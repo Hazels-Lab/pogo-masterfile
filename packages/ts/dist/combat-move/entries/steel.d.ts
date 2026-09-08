@@ -19,7 +19,7 @@ export type CombatMoveV0072MoveMagnetBomb = S<
 	CombatMove<
 		"COMBAT_V0072_MOVE_MAGNET_BOMB",
 		{
-			energyDelta: -45;
+			energyDelta: -40;
 			power: 70;
 			type: "POKEMON_TYPE_STEEL";
 			uniqueId: "MAGNET_BOMB";
@@ -32,7 +32,7 @@ export type CombatMoveV0074MoveIronHead = S<
 		"COMBAT_V0074_MOVE_IRON_HEAD",
 		{
 			energyDelta: -50;
-			power: 70;
+			power: 85;
 			type: "POKEMON_TYPE_STEEL";
 			uniqueId: "IRON_HEAD";
 			vfxName: "iron_head";
@@ -160,7 +160,7 @@ export type CombatMoveV0381MoveDoubleIronBash = S<
 		"COMBAT_V0381_MOVE_DOUBLE_IRON_BASH",
 		{
 			energyDelta: -35;
-			power: 55;
+			power: 70;
 			type: "POKEMON_TYPE_STEEL";
 			uniqueId: "DOUBLE_IRON_BASH";
 			vfxName: "double_iron_bash";

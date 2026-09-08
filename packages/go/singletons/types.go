@@ -2113,16 +2113,17 @@ type VsSeekerClientSettings struct {
 type VsSeekerScheduleSettingsVsSeekerSchedules struct {
 	EndTimeMs                string    `json:"endTimeMs"`
 	StartTimeMs              string    `json:"startTimeMs"`
-	VsSeekerLeagueTempalteId [2]string `json:"vsSeekerLeagueTempalteId"`
+	VsSeekerLeagueTempalteId [3]string `json:"vsSeekerLeagueTempalteId"`
 }
 
 type VsSeekerScheduleSettingsVsSeekerSchedulesV2 struct {
 	EndTimeMs                string    `json:"endTimeMs"`
 	StartTimeMs              string    `json:"startTimeMs"`
-	VsSeekerLeagueTempalteId [3]string `json:"vsSeekerLeagueTempalteId"`
+	VsSeekerLeagueTempalteId [2]string `json:"vsSeekerLeagueTempalteId"`
 }
 
 type VsSeekerScheduleSettingsSeasonSchedules struct {
+	BlogUrl           string `json:"blogUrl"`
 	DescriptionKey    string `json:"descriptionKey"`
 	SeasonTitle       string `json:"seasonTitle"`
 	VsSeekerSchedules []any  `json:"vsSeekerSchedules"`

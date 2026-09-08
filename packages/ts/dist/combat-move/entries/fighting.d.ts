@@ -61,7 +61,7 @@ export type CombatMoveV0207MoveLowKickFast = S<
 		{
 			durationTurns: 1;
 			energyDelta: 8;
-			power: 5;
+			power: 6;
 			type: "POKEMON_TYPE_FIGHTING";
 			uniqueId: "LOW_KICK_FAST";
 			vfxName: "low_kick_fast";

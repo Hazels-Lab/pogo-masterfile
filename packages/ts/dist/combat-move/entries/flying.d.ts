@@ -33,10 +33,10 @@ export type CombatMoveV0121MoveAirCutter = S<
 		{
 			buffs: {
 				attackerAttackStatStageChange: 1;
-				buffActivationChance: 0.3;
+				buffActivationChance: 0.125;
 			};
-			energyDelta: -35;
-			power: 45;
+			energyDelta: -40;
+			power: 60;
 			type: "POKEMON_TYPE_FLYING";
 			uniqueId: "AIR_CUTTER";
 			vfxName: "air_cutter";

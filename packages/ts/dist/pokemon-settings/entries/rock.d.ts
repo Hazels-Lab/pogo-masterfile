@@ -1588,7 +1588,7 @@ export type PokemonSettingsV0142PokemonAerodactyl = S<
 				diskRadiusM: 0.5985;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["ANCIENT_POWER", "IRON_HEAD", "HYPER_BEAM", "ROCK_SLIDE", "EARTH_POWER"];
+			cinematicMoves: ["ANCIENT_POWER", "IRON_HEAD", "HYPER_BEAM", "ROCK_SLIDE", "EARTH_POWER", "BRUTAL_SWING"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 14;
@@ -1689,7 +1689,7 @@ export type PokemonSettingsV0142PokemonAerodactylNormal = S<
 				diskRadiusM: 0.5985;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["ANCIENT_POWER", "IRON_HEAD", "HYPER_BEAM", "ROCK_SLIDE", "EARTH_POWER"];
+			cinematicMoves: ["ANCIENT_POWER", "IRON_HEAD", "HYPER_BEAM", "ROCK_SLIDE", "EARTH_POWER", "BRUTAL_SWING"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 14;

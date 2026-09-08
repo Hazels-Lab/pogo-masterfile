@@ -24,7 +24,7 @@ export type CombatMoveV0050MovePoisonFang = S<
 				targetDefenseStatStageChange: -1;
 			};
 			energyDelta: -40;
-			power: 45;
+			power: 50;
 			type: "POKEMON_TYPE_POISON";
 			uniqueId: "POISON_FANG";
 			vfxName: "poison_fang";

@@ -1381,7 +1381,7 @@ export type PokemonSettingsV0962PokemonBombirdier = S<
 				cylinderHeightM: 1.5;
 				cylinderRadiusM: 1;
 			};
-			cinematicMoves: ["PAYBACK", "AERIAL_ACE", "FLY", "ROCK_TOMB"];
+			cinematicMoves: ["PAYBACK", "AERIAL_ACE", "FLY", "ROCK_TOMB", "DRILL_RUN"];
 			encounter: {
 				attackProbability: 0.2;
 				cameraDistance: 6;
@@ -1441,7 +1441,7 @@ export type PokemonSettingsV0962PokemonBombirdierNormal = S<
 				cylinderHeightM: 1.5;
 				cylinderRadiusM: 1;
 			};
-			cinematicMoves: ["PAYBACK", "AERIAL_ACE", "FLY", "ROCK_TOMB"];
+			cinematicMoves: ["PAYBACK", "AERIAL_ACE", "FLY", "ROCK_TOMB", "DRILL_RUN"];
 			encounter: {
 				attackProbability: 0.2;
 				cameraDistance: 6;
@@ -1524,7 +1524,7 @@ export type PokemonSettingsV0973PokemonFlamigo = S<
 			pokedexHeightM: 1.6;
 			pokedexWeightKg: 37;
 			pokemonId: "FLAMIGO";
-			quickMoves: ["WING_ATTACK_FAST", "DOUBLE_KICK_FAST"];
+			quickMoves: ["WING_ATTACK_FAST", "DOUBLE_KICK_FAST", "PECK_FAST"];
 			stats: {
 				baseAttack: 227;
 				baseDefense: 145;
@@ -1577,7 +1577,7 @@ export type PokemonSettingsV0973PokemonFlamigoNormal = S<
 			pokedexHeightM: 1.6;
 			pokedexWeightKg: 37;
 			pokemonId: "FLAMIGO";
-			quickMoves: ["WING_ATTACK_FAST", "DOUBLE_KICK_FAST"];
+			quickMoves: ["WING_ATTACK_FAST", "DOUBLE_KICK_FAST", "PECK_FAST"];
 			stats: {
 				baseAttack: 227;
 				baseDefense: 145;

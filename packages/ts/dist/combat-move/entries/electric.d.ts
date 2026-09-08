@@ -99,7 +99,7 @@ export type CombatMoveV0249MoveChargeBeamFast = S<
 		{
 			durationTurns: 2;
 			energyDelta: 11;
-			power: 5;
+			power: 6;
 			type: "POKEMON_TYPE_ELECTRIC";
 			uniqueId: "CHARGE_BEAM_FAST";
 			vfxName: "charge_beam_fast";

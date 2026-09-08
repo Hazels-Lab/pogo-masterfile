@@ -1206,7 +1206,7 @@ export type PokemonSettingsV0229PokemonHoundoom = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["CRUNCH", "FIRE_BLAST", "FOUL_PLAY", "FLAMETHROWER"];
+			cinematicMoves: ["CRUNCH", "FIRE_BLAST", "FOUL_PLAY", "FLAMETHROWER", "TRAILBLAZE"];
 			encounter: {
 				attackProbability: 0.2;
 				attackTimerS: 20;
@@ -1251,7 +1251,7 @@ export type PokemonSettingsV0229PokemonHoundoom = S<
 			pokedexHeightM: 1.4;
 			pokedexWeightKg: 35;
 			pokemonId: "HOUNDOOM";
-			quickMoves: ["SNARL_FAST", "FIRE_FANG_FAST"];
+			quickMoves: ["SNARL_FAST", "FIRE_FANG_FAST", "INCINERATE_FAST"];
 			shadow: {
 				purificationCandyNeeded: 3;
 				purificationStardustNeeded: 3000;
@@ -1312,7 +1312,7 @@ export type PokemonSettingsV0229PokemonHoundoomNormal = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["CRUNCH", "FIRE_BLAST", "FOUL_PLAY", "FLAMETHROWER"];
+			cinematicMoves: ["CRUNCH", "FIRE_BLAST", "FOUL_PLAY", "FLAMETHROWER", "TRAILBLAZE"];
 			encounter: {
 				attackProbability: 0.2;
 				attackTimerS: 20;
@@ -1358,7 +1358,7 @@ export type PokemonSettingsV0229PokemonHoundoomNormal = S<
 			pokedexHeightM: 1.4;
 			pokedexWeightKg: 35;
 			pokemonId: "HOUNDOOM";
-			quickMoves: ["SNARL_FAST", "FIRE_FANG_FAST"];
+			quickMoves: ["SNARL_FAST", "FIRE_FANG_FAST", "INCINERATE_FAST"];
 			shadow: {
 				purificationCandyNeeded: 3;
 				purificationStardustNeeded: 3000;
@@ -2716,7 +2716,7 @@ export type PokemonSettingsV0491PokemonDarkrai = S<
 				shoulderModeScale: 0.5;
 			};
 			candyToEvolve: 25;
-			cinematicMoves: ["FOCUS_BLAST", "SHADOW_BALL", "DARK_PULSE"];
+			cinematicMoves: ["FOCUS_BLAST", "SHADOW_BALL", "DARK_PULSE", "FOUL_PLAY"];
 			eliteCinematicMove: ["SLUDGE_BOMB"];
 			encounter: {
 				attackProbability: 0.1;
@@ -2751,7 +2751,7 @@ export type PokemonSettingsV0491PokemonDarkrai = S<
 			pokedexWeightKg: 50.5;
 			pokemonClass: "POKEMON_CLASS_MYTHIC";
 			pokemonId: "DARKRAI";
-			quickMoves: ["SNARL_FAST", "FEINT_ATTACK_FAST"];
+			quickMoves: ["SNARL_FAST", "FEINT_ATTACK_FAST", "SUCKER_PUNCH_FAST"];
 			shadow: {
 				purificationCandyNeeded: 20;
 				purificationStardustNeeded: 20000;
@@ -2791,7 +2791,7 @@ export type PokemonSettingsV0491PokemonDarkraiNormal = S<
 				shoulderModeScale: 0.5;
 			};
 			candyToEvolve: 25;
-			cinematicMoves: ["FOCUS_BLAST", "SHADOW_BALL", "DARK_PULSE"];
+			cinematicMoves: ["FOCUS_BLAST", "SHADOW_BALL", "DARK_PULSE", "FOUL_PLAY"];
 			eliteCinematicMove: ["SLUDGE_BOMB"];
 			encounter: {
 				attackProbability: 0.1;
@@ -2827,7 +2827,7 @@ export type PokemonSettingsV0491PokemonDarkraiNormal = S<
 			pokedexWeightKg: 50.5;
 			pokemonClass: "POKEMON_CLASS_MYTHIC";
 			pokemonId: "DARKRAI";
-			quickMoves: ["SNARL_FAST", "FEINT_ATTACK_FAST"];
+			quickMoves: ["SNARL_FAST", "FEINT_ATTACK_FAST", "SUCKER_PUNCH_FAST"];
 			shadow: {
 				purificationCandyNeeded: 20;
 				purificationStardustNeeded: 20000;
@@ -3698,7 +3698,7 @@ export type PokemonSettingsV0571PokemonZoroark = S<
 			pokedexHeightM: 1.6;
 			pokedexWeightKg: 81.1;
 			pokemonId: "ZOROARK";
-			quickMoves: ["SHADOW_CLAW_FAST", "SNARL_FAST"];
+			quickMoves: ["SHADOW_CLAW_FAST", "SNARL_FAST", "SUCKER_PUNCH_FAST"];
 			stats: {
 				baseAttack: 250;
 				baseDefense: 127;
@@ -3766,7 +3766,7 @@ export type PokemonSettingsV0571PokemonZoroarkNormal = S<
 			pokedexHeightM: 1.6;
 			pokedexWeightKg: 81.1;
 			pokemonId: "ZOROARK";
-			quickMoves: ["SHADOW_CLAW_FAST", "SNARL_FAST"];
+			quickMoves: ["SHADOW_CLAW_FAST", "SNARL_FAST", "SUCKER_PUNCH_FAST"];
 			stats: {
 				baseAttack: 250;
 				baseDefense: 127;
@@ -6047,7 +6047,7 @@ export type PokemonSettingsV0861PokemonGrimmsnarl = S<
 				cylinderHeightM: 1.48;
 				cylinderRadiusM: 1;
 			};
-			cinematicMoves: ["FOUL_PLAY", "DARK_PULSE", "PLAY_ROUGH", "POWER_UP_PUNCH"];
+			cinematicMoves: ["FOUL_PLAY", "DARK_PULSE", "PLAY_ROUGH", "POWER_UP_PUNCH", "DRAINING_KISS"];
 			encounter: {
 				attackProbability: 0.3;
 				bonusCandyCaptureReward: 7;
@@ -6107,7 +6107,7 @@ export type PokemonSettingsV0861PokemonGrimmsnarlNormal = S<
 				cylinderHeightM: 1.48;
 				cylinderRadiusM: 1;
 			};
-			cinematicMoves: ["FOUL_PLAY", "DARK_PULSE", "PLAY_ROUGH", "POWER_UP_PUNCH"];
+			cinematicMoves: ["FOUL_PLAY", "DARK_PULSE", "PLAY_ROUGH", "POWER_UP_PUNCH", "DRAINING_KISS"];
 			encounter: {
 				attackProbability: 0.3;
 				bonusCandyCaptureReward: 7;
@@ -6858,7 +6858,7 @@ export type PokemonSettingsV0983PokemonKingambit = S<
 			pokedexHeightM: 2;
 			pokedexWeightKg: 120;
 			pokemonId: "KINGAMBIT";
-			quickMoves: ["SNARL_FAST", "METAL_CLAW_FAST", "METAL_SOUND_FAST"];
+			quickMoves: ["SNARL_FAST", "METAL_CLAW_FAST", "METAL_SOUND_FAST", "LOW_KICK_FAST"];
 			raidBossDistanceOffset: 4;
 			stats: {
 				baseAttack: 238;
@@ -6916,7 +6916,7 @@ export type PokemonSettingsV0983PokemonKingambitNormal = S<
 			pokedexHeightM: 2;
 			pokedexWeightKg: 120;
 			pokemonId: "KINGAMBIT";
-			quickMoves: ["SNARL_FAST", "METAL_CLAW_FAST", "METAL_SOUND_FAST"];
+			quickMoves: ["SNARL_FAST", "METAL_CLAW_FAST", "METAL_SOUND_FAST", "LOW_KICK_FAST"];
 			raidBossDistanceOffset: 4;
 			stats: {
 				baseAttack: 238;

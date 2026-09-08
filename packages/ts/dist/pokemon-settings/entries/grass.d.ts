@@ -1657,7 +1657,7 @@ export type PokemonSettingsV0071PokemonVictreebel = S<
 			pokedexHeightM: 1.7;
 			pokedexWeightKg: 15.5;
 			pokemonId: "VICTREEBEL";
-			quickMoves: ["RAZOR_LEAF_FAST", "ACID_FAST"];
+			quickMoves: ["RAZOR_LEAF_FAST", "ACID_FAST", "SUCKER_PUNCH_FAST"];
 			shadow: {
 				purificationCandyNeeded: 3;
 				purificationStardustNeeded: 3000;
@@ -1767,7 +1767,7 @@ export type PokemonSettingsV0071PokemonVictreebelNormal = S<
 			pokedexHeightM: 1.7;
 			pokedexWeightKg: 15.5;
 			pokemonId: "VICTREEBEL";
-			quickMoves: ["RAZOR_LEAF_FAST", "ACID_FAST"];
+			quickMoves: ["RAZOR_LEAF_FAST", "ACID_FAST", "SUCKER_PUNCH_FAST"];
 			shadow: {
 				purificationCandyNeeded: 3;
 				purificationStardustNeeded: 3000;

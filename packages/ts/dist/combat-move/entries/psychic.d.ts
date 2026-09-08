@@ -135,8 +135,8 @@ export type CombatMoveV0276MoveMirrorCoat = S<
 	CombatMove<
 		"COMBAT_V0276_MOVE_MIRROR_COAT",
 		{
-			energyDelta: -55;
-			power: 60;
+			energyDelta: -45;
+			power: 75;
 			type: "POKEMON_TYPE_PSYCHIC";
 			uniqueId: "MIRROR_COAT";
 			vfxName: "mirror_coat";
@@ -152,7 +152,7 @@ export type CombatMoveV0288MovePsychoBoost = S<
 				buffActivationChance: 1;
 			};
 			energyDelta: -35;
-			power: 70;
+			power: 85;
 			type: "POKEMON_TYPE_PSYCHIC";
 			uniqueId: "PSYCHO_BOOST";
 			vfxName: "psycho_boost";

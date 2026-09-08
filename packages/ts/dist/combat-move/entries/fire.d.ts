@@ -174,7 +174,7 @@ export type CombatMoveV0317MoveBlazeKick = S<
 	CombatMove<
 		"COMBAT_V0317_MOVE_BLAZE_KICK",
 		{
-			energyDelta: -40;
+			energyDelta: -35;
 			power: 60;
 			type: "POKEMON_TYPE_FIRE";
 			uniqueId: "BLAZE_KICK";
