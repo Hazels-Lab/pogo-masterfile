@@ -1,16 +1,9 @@
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(untagged)]
-pub enum IconTypeValue {
-    Uint(u64),
-    String(String),
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct BonusBoxes {
-    pub icon_type: IconTypeValue,
+    pub icon_type: String,
     pub text: String,
 }
 
@@ -51,16 +44,9 @@ pub struct PlayerAttribute {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct LocationCard {
-    pub location_card: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
 pub struct PokemonDisplay {
     pub bread_mode_enum: Option<String>,
     pub form: String,
-    pub location_card: Option<LocationCard>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -81,20 +67,6 @@ pub struct PokemonEncounter {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct TempEvoPokemonBranch {
-    pub pokedex_id: String,
-    pub temp_evo_id: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct TempEvoResource {
-    pub amount: u64,
-    pub temp_evo_pokemon_branch: TempEvoPokemonBranch,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
 pub struct Rewards {
     pub candy: Option<Candy>,
     pub exp: Option<u64>,
@@ -104,8 +76,7 @@ pub struct Rewards {
     pub player_attribute: Option<PlayerAttribute>,
     pub pokemon_encounter: Option<PokemonEncounter>,
     pub stardust: Option<u64>,
-    pub temp_evo_resource: Option<TempEvoResource>,
-    pub r#type: IconTypeValue,
+    pub r#type: String,
     pub xl_candy: Option<Candy>,
 }
 

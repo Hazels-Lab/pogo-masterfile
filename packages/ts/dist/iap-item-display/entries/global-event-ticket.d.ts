@@ -1,25 +1,8 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 49 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 50 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
 
-export type IapItemDisplayEventPassGofest2025FinaleStoreRedirect = S<
-	IapItemDisplay<
-		"EVENT_PASS_GOFEST2025_FINALE_STORE_REDIRECT",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			description: "deluxe_event_pass_track_unlock_description";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff26f8d69_PGO-MCS_GO_Pass_Mega_Finale_Deluxe_v2-720x360-nologo.jpg";
-			sku: "pgorelease.gofest_finale_2025_deluxe_event_pass_track_redirect";
-			skuDisableTime: "2026-09-08T23:59:59";
-			skuDisableTimeUtcMs: "1788911999000";
-			skuEnableTime: "2026-08-31T10:00:00";
-			skuEnableTimeUtcMs: "1788170400000";
-			sortOrder: 1;
-			title: "event_pass_gofest2026_finale_base_track_title";
-		}
-	>
->;
 export type IapItemDisplayEventPassMonth1SeasonStoreRedirect = S<
 	IapItemDisplay<
 		"EVENT_PASS_MONTH1_SEASON_STORE_REDIRECT",
@@ -524,6 +507,43 @@ export type IapItemDisplayGeneral2Ticket10Giftable = S<
 		}
 	>
 >;
+export type IapItemDisplayGeneral2Ticket11 = S<
+	IapItemDisplay<
+		"general2.ticket.11",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			hidden: true;
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png";
+			sku: "general2.ticket.11";
+			skuDisableTime: "2026-11-15T20:00:00";
+			skuDisableTimeUtcMs: "1794772800000";
+			skuEnableTime: "2020-01-01T00:00:00";
+			skuEnableTimeUtcMs: "1577836800000";
+			sortOrder: 1;
+			title: "general2.ticket._GOWA26_title";
+			webstoreSkuId: "web-gowa-global-2026-ticket";
+			webstoreSkuPriceE6: 11990000;
+		}
+	>
+>;
+export type IapItemDisplayGeneral2Ticket11Giftable = S<
+	IapItemDisplay<
+		"general2.ticket.11.giftable",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			hidden: true;
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png";
+			sku: "general2.ticket.11.giftable";
+			skuDisableTime: "2026-11-15T20:00:00";
+			skuDisableTimeUtcMs: "1794772800000";
+			skuEnableTime: "2020-01-01T00:00:00";
+			skuEnableTimeUtcMs: "1577836800000";
+			sortOrder: 1;
+			title: "general2.ticket._GOWA26_title";
+			webstoreSkuPriceE6: 11990000;
+		}
+	>
+>;
 export type IapItemDisplayPgoreleaseCitysafariticket01 = S<
 	IapItemDisplay<
 		"pgorelease.citysafariticket0.1",
@@ -923,7 +943,6 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket10Giftable = S<
 >;
 
 export type IapItemDisplayGlobalEventTicketMasterfileEntry =
-	| IapItemDisplayEventPassGofest2025FinaleStoreRedirect
 	| IapItemDisplayEventPassMonth1SeasonStoreRedirect
 	| IapItemDisplayEventPassMonth3SeasonStoreRedirect
 	| IapItemDisplayEventPassSeptember1EventStoreRedirect
@@ -951,6 +970,8 @@ export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayGeneral2Ticket9
 	| IapItemDisplayGeneral2Ticket10
 	| IapItemDisplayGeneral2Ticket10Giftable
+	| IapItemDisplayGeneral2Ticket11
+	| IapItemDisplayGeneral2Ticket11Giftable
 	| IapItemDisplayPgoreleaseCitysafariticket01
 	| IapItemDisplayPgoreleaseCitysafariticket11
 	| IapItemDisplayPgoreleaseCitysafariticket21

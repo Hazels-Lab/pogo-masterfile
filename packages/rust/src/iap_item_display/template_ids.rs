@@ -631,6 +631,10 @@ pub enum IapItemDisplayTemplateId {
     General2Ticket10,
     #[serde(rename = "general2.ticket.10.giftable")]
     General2Ticket10Giftable,
+    #[serde(rename = "general2.ticket.11")]
+    General2Ticket11,
+    #[serde(rename = "general2.ticket.11.giftable")]
+    General2Ticket11Giftable,
     #[serde(rename = "general4.medium.1")]
     General4Medium1,
     #[serde(rename = "general6.small.1")]
@@ -923,14 +927,6 @@ pub enum IapItemDisplayTemplateId {
     PgoreleaseGeneral2Ticket10Giftable,
     #[serde(rename = "pgorelease.gofest_2025_deluxe_event_pass_track_redirect")]
     PgoreleaseGofest2025DeluxeEventPassTrackRedirect,
-    #[serde(rename = "pgorelease.gofest_deluxe_event_pass_track_unlock")]
-    PgoreleaseGofestDeluxeEventPassTrackUnlock,
-    #[serde(rename = "pgorelease.gofest_deluxe_event_pass_track_unlock_plus_points")]
-    PgoreleaseGofestDeluxeEventPassTrackUnlockPlusPoints,
-    #[serde(rename = "pgorelease.gofest_finale_2025_deluxe_event_pass_track_unlock")]
-    PgoreleaseGofestFinale2025DeluxeEventPassTrackUnlock,
-    #[serde(rename = "pgorelease.gofest_finale_2025_deluxe_event_pass_track_unlock_plus_points")]
-    PgoreleaseGofestFinale2025DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "pgorelease.july1_deluxe_event_pass_track_redirect")]
     PgoreleaseJuly1DeluxeEventPassTrackRedirect,
     #[serde(rename = "pgorelease.may1_2026_deluxe_event_pass_track_redirect")]

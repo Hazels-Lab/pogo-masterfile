@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 2140 entries (structural types).
+// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 940 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -14,15 +14,10 @@ export type EventPassTierSettingsType = W<EventPassTierSettings>;
 export interface EventPassTierSettingsData {
 	activeBonusDisplaySettings?: {
 		bonusBoxes: Array<{
-			iconType: number | "EGG" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "RAID" | "SPAWN_UNKNOWN" | "TRADE";
+			iconType: "EGG" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "SPAWN_UNKNOWN" | "TRADE";
 			text:
-				| "bonus_link_charge_cap_2000"
 				| "dai_duration_double"
 				| "daily_free_single_incubator"
-				| "event_pass_gofest2026_finale_chosen_starter_shiny_bonus"
-				| "event_pass_gofest2026_finale_mega_raid_rewards_bonus"
-				| "event_pass_gofest2026_finale_t4_mega_raid_shiny_bonus"
-				| "event_pass_gofest2026_finale_weekend_wild_shiny_bonus"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
 				| "gift_storage_more"
@@ -33,19 +28,14 @@ export interface EventPassTierSettingsData {
 				| "trade_extra_candy"
 				| "trade_guaranteed_candyxl";
 		}>;
-		eventName: "active_bonuses_label" | "go_pass_cumulative_bonuses_header";
+		eventName: "go_pass_cumulative_bonuses_header";
 	};
 	bonusSettings?: {
 		bonusBoxes: Array<{
-			iconType: number | "EGG" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "RAID" | "SPAWN_UNKNOWN" | "TRADE";
+			iconType: "EGG" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "SPAWN_UNKNOWN" | "TRADE";
 			text:
-				| "bonus_link_charge_cap_2000"
 				| "dai_duration_double"
 				| "daily_free_single_incubator"
-				| "event_pass_gofest2026_finale_chosen_starter_shiny_bonus"
-				| "event_pass_gofest2026_finale_mega_raid_rewards_bonus"
-				| "event_pass_gofest2026_finale_t4_mega_raid_shiny_bonus"
-				| "event_pass_gofest2026_finale_weekend_wild_shiny_bonus"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
 				| "gift_storage_more"
@@ -60,12 +50,7 @@ export interface EventPassTierSettingsData {
 			| "season_pass_milestone_bonus_title_01"
 			| "season_pass_milestone_bonus_title_02"
 			| "season_pass_milestone_bonus_title_03"
-			| "season_pass_milestone_bonus_title_04"
-			| "short_bonus_link_charge_cap_2000"
-			| "short_event_pass_gofest2026_finale_chosen_starter_shiny_bonus"
-			| "short_event_pass_gofest2026_finale_mega_raid_rewards_bonus"
-			| "short_event_pass_gofest2026_finale_t4_mega_raid_shiny_bonus"
-			| "short_event_pass_gofest2026_finale_weekend_wild_shiny_bonus";
+			| "season_pass_milestone_bonus_title_04";
 	};
 	isMilestoneRank?: boolean;
 	minPointsRequired?: number;
@@ -73,13 +58,62 @@ export interface EventPassTierSettingsData {
 	rewards?: Array<{
 		candy?: {
 			amount: number;
-			pokemonId: string;
+			pokemonId:
+				| "ABRA"
+				| "AERODACTYL"
+				| "ARROKUDA"
+				| "AUDINO"
+				| "BAGON"
+				| "BLIPBUG"
+				| "CHIMECHO"
+				| "CLAMPERL"
+				| "DEINO"
+				| "DONDOZO"
+				| "DRATINI"
+				| "DRILBUR"
+				| "EEVEE"
+				| "ESPURR"
+				| "FERROSEED"
+				| "FIDOUGH"
+				| "FLITTLE"
+				| "FRILLISH"
+				| "GLIMMET"
+				| "GOSSIFLEUR"
+				| "GROWLITHE"
+				| "HONEDGE"
+				| "INKAY"
+				| "JANGMO_O"
+				| "LATIAS"
+				| "LATIOS"
+				| "LILLIPUP"
+				| "MEOWTH"
+				| "MINCCINO"
+				| "MUDKIP"
+				| "NACLI"
+				| "NICKIT"
+				| "NUMEL"
+				| "ORTHWORM"
+				| "POLTCHAGEIST"
+				| "ROCKRUFF"
+				| "ROGGENROLA"
+				| "SCYTHER"
+				| "SINISTEA"
+				| "SIZZLIPEDE"
+				| "SNOM"
+				| "SOBBLE"
+				| "STANTLER"
+				| "STARYU"
+				| "SWINUB"
+				| "TOGEDEMARU"
+				| "TYROGUE"
+				| "VOLTORB"
+				| "WIMPOD"
+				| "YAMPER";
 		};
 		exp?: number;
 		item?: {
 			amount: number;
 			item:
-				| "ITEM_ENHANCED_CURRENCY"
 				| "ITEM_GOLDEN_PINAP_BERRY"
 				| "ITEM_GOLDEN_RAZZ_BERRY"
 				| "ITEM_GREAT_BALL"
@@ -106,41 +140,11 @@ export interface EventPassTierSettingsData {
 		};
 		megaResource?: {
 			amount: number;
-			pokemonId:
-				| "ABOMASNOW"
-				| "AERODACTYL"
-				| "AGGRON"
-				| "ALAKAZAM"
-				| "ALTARIA"
-				| "AMPHAROS"
-				| "AUDINO"
-				| "BANETTE"
-				| "BEEDRILL"
-				| "CAMERUPT"
-				| "DELPHOX"
-				| "DRAGONITE"
-				| "FALINKS"
-				| "GENGAR"
-				| "GLALIE"
-				| "GYARADOS"
-				| "HOUNDOOM"
-				| "LOPUNNY"
-				| "MALAMAR"
-				| "MANECTRIC"
-				| "MAWILE"
-				| "MEDICHAM"
-				| "PINSIR"
-				| "SABLEYE"
-				| "SHARPEDO"
-				| "SKARMORY"
-				| "SLOWBRO"
-				| "STARMIE"
-				| "STEELIX"
-				| "VICTREEBEL";
+			pokemonId: "BEEDRILL" | "HOUNDOOM";
 		};
 		neutralAvatarItemTemplate?: {
-			displayTemplateId: "N_DISPLAY_n_shirt_gofest2026finred" | "N_DISPLAY_n_shirt_maschiff";
-			itemTemplateId: "N_AVATAR_n_shirt_gofest2026finred" | "N_AVATAR_n_shirt_maschiff";
+			displayTemplateId: "N_DISPLAY_n_shirt_maschiff";
+			itemTemplateId: "N_AVATAR_n_shirt_maschiff";
 		};
 		playerAttribute?: {
 			durationMins: number;
@@ -151,11 +155,6 @@ export interface EventPassTierSettingsData {
 				| "august2026_season_pass_rank_02"
 				| "august2026_season_pass_rank_03"
 				| "august2026_season_pass_rank_04"
-				| "EVENT_PASS_GOFEST2026_FINALE_FENNEKIN_SHINY"
-				| "EVENT_PASS_GOFEST2026_FINALE_LINK_CHARGE"
-				| "EVENT_PASS_GOFEST2026_FINALE_RAID_REWARDS"
-				| "EVENT_PASS_GOFEST2026_FINALE_RAID_SHINY"
-				| "EVENT_PASS_GOFEST2026_FINALE_WEEKEND_WILD_SHINY"
 				| "megasquads2026_season_pass_entitlement"
 				| "megasquads2026_season_pass_rank_01"
 				| "megasquads2026_season_pass_rank_01_paid_not_used"
@@ -171,90 +170,181 @@ export interface EventPassTierSettingsData {
 			isFeaturedPokemon?: boolean;
 			pokemonDisplay?: {
 				breadModeEnum?: "BREAD_MODE";
-				form: string;
-				locationCard?: {
-					locationCard: "LC_SPECIALBACKGROUND_2026_GLOBAL_MEGA_001";
-				};
+				form:
+					| "AERODACTYL_NORMAL"
+					| "ALAKAZAM_NORMAL"
+					| "ARROKUDA_NORMAL"
+					| "AUDINO_NORMAL"
+					| "BEEDRILL_NORMAL"
+					| "BLIPBUG_NORMAL"
+					| "CAMERUPT_NORMAL"
+					| "CARVANHA_NORMAL"
+					| "CHIMECHO_NORMAL"
+					| "CINCCINO_NORMAL"
+					| "CLAMPERL_NORMAL"
+					| "CORVISQUIRE_NORMAL"
+					| "DONDOZO_NORMAL"
+					| "DRATINI_NORMAL"
+					| "DRILBUR_NORMAL"
+					| "EEVEE_NORMAL"
+					| "ESPURR_NORMAL"
+					| "FERROTHORN_NORMAL"
+					| "FIDOUGH_NORMAL"
+					| "FLAMIGO_NORMAL"
+					| "FLETCHINDER_NORMAL"
+					| "FLETCHLING_NORMAL"
+					| "FLITTLE_NORMAL"
+					| "FRILLISH_NORMAL"
+					| "GLIMMET_NORMAL"
+					| "GOSSIFLEUR_NORMAL"
+					| "GROWLITHE_HISUIAN"
+					| "GROWLITHE_NORMAL"
+					| "HITMONCHAN_NORMAL"
+					| "HONEDGE_NORMAL"
+					| "HOUNDOOM_NORMAL"
+					| "HOUNDOUR_NORMAL"
+					| "INKAY_NORMAL"
+					| "JANGMO_O_NORMAL"
+					| "KLEAVOR_NORMAL"
+					| "LATIAS_NORMAL"
+					| "LATIOS_NORMAL"
+					| "LILLIPUP_NORMAL"
+					| "MASCHIFF_NORMAL"
+					| "MEOWTH_ALOLA"
+					| "MEOWTH_NORMAL"
+					| "MUDKIP_NORMAL"
+					| "NACLI_NORMAL"
+					| "NICKIT_NORMAL"
+					| "ORTHWORM_NORMAL"
+					| "PIDGEOTTO_NORMAL"
+					| "PIDGEY_NORMAL"
+					| "ROCKRUFF_NORMAL"
+					| "ROGGENROLA_NORMAL"
+					| "ROOKIDEE_NORMAL"
+					| "SHELGON_NORMAL"
+					| "SIZZLIPEDE_NORMAL"
+					| "SNOM_NORMAL"
+					| "SOBBLE_NORMAL"
+					| "STARYU_NORMAL"
+					| "SWINUB_NORMAL"
+					| "TOGEDEMARU_NORMAL"
+					| "VOLTORB_HISUIAN"
+					| "WEEDLE_NORMAL"
+					| "WIMPOD_NORMAL"
+					| "WYRDEER_NORMAL"
+					| "YAMPER_NORMAL"
+					| "ZWEILOUS_NORMAL";
 			};
-			pokemonId: string;
+			pokemonId:
+				| "AERODACTYL"
+				| "ALAKAZAM"
+				| "ARROKUDA"
+				| "AUDINO"
+				| "BEEDRILL"
+				| "BLIPBUG"
+				| "CAMERUPT"
+				| "CARVANHA"
+				| "CHIMECHO"
+				| "CINCCINO"
+				| "CLAMPERL"
+				| "CORVISQUIRE"
+				| "DONDOZO"
+				| "DRATINI"
+				| "DRILBUR"
+				| "EEVEE"
+				| "ESPURR"
+				| "FERROTHORN"
+				| "FIDOUGH"
+				| "FLAMIGO"
+				| "FLETCHINDER"
+				| "FLETCHLING"
+				| "FLITTLE"
+				| "FRILLISH"
+				| "GLIMMET"
+				| "GOSSIFLEUR"
+				| "GROWLITHE"
+				| "HITMONCHAN"
+				| "HONEDGE"
+				| "HOUNDOOM"
+				| "HOUNDOUR"
+				| "INKAY"
+				| "JANGMO_O"
+				| "KLEAVOR"
+				| "LATIAS"
+				| "LATIOS"
+				| "LILLIPUP"
+				| "MASCHIFF"
+				| "MEOWTH"
+				| "MUDKIP"
+				| "NACLI"
+				| "NICKIT"
+				| "ORTHWORM"
+				| "PIDGEOTTO"
+				| "PIDGEY"
+				| "POLTCHAGEIST"
+				| "ROCKRUFF"
+				| "ROGGENROLA"
+				| "ROOKIDEE"
+				| "SHELGON"
+				| "SINISTEA"
+				| "SIZZLIPEDE"
+				| "SNOM"
+				| "SOBBLE"
+				| "STARYU"
+				| "SWINUB"
+				| "TOGEDEMARU"
+				| "VOLTORB"
+				| "WEEDLE"
+				| "WIMPOD"
+				| "WYRDEER"
+				| "YAMPER"
+				| "ZWEILOUS";
 			statsLimitsOverride?: {
 				maxPokemonLevel: number;
 				minPokemonLevel: number;
 			};
 		};
 		stardust?: number;
-		tempEvoResource?: {
-			amount: number;
-			tempEvoPokemonBranch: {
-				pokedexId: "RAICHU";
-				tempEvoId: "TEMP_EVOLUTION_MEGA_X" | "TEMP_EVOLUTION_MEGA_Y";
-			};
-		};
-		type: number | "AVATAR_CLOTHING" | "CANDY" | "EXPERIENCE" | "ITEM" | "MEGA_RESOURCE" | "PLAYER_ATTRIBUTE" | "POKEMON_ENCOUNTER" | "STARDUST" | "XL_CANDY";
+		type: "AVATAR_CLOTHING" | "CANDY" | "EXPERIENCE" | "ITEM" | "MEGA_RESOURCE" | "PLAYER_ATTRIBUTE" | "POKEMON_ENCOUNTER" | "STARDUST" | "XL_CANDY";
 		xlCandy?: {
 			amount: number;
 			pokemonId:
-				| "ABRA"
 				| "AERODACTYL"
-				| "ARON"
 				| "AUDINO"
 				| "BAGON"
-				| "BELLSPROUT"
 				| "BLIPBUG"
-				| "BUNEARY"
-				| "CARVANHA"
 				| "CHIMECHO"
 				| "CLAMPERL"
 				| "DEINO"
 				| "DRATINI"
 				| "DRILBUR"
 				| "EEVEE"
-				| "ELECTRIKE"
 				| "ESPURR"
-				| "FALINKS"
-				| "FENNEKIN"
 				| "FERROSEED"
 				| "FIDOUGH"
-				| "GASTLY"
 				| "GLIMMET"
 				| "GOSSIFLEUR"
 				| "GROWLITHE"
-				| "HOUNDOUR"
 				| "INKAY"
 				| "JANGMO_O"
 				| "LATIAS"
 				| "LATIOS"
 				| "LILLIPUP"
-				| "MAGIKARP"
-				| "MAREEP"
-				| "MAWILE"
-				| "MEDITITE"
 				| "MEOWTH"
 				| "NICKIT"
 				| "NUMEL"
-				| "ONIX"
-				| "PIKACHU"
-				| "PINSIR"
 				| "ROGGENROLA"
-				| "SABLEYE"
 				| "SCYTHER"
-				| "SHUPPET"
 				| "SINISTEA"
 				| "SIZZLIPEDE"
-				| "SKARMORY"
-				| "SLOWPOKE"
 				| "SNOM"
-				| "SNORUNT"
-				| "SNOVER"
 				| "SOBBLE"
 				| "STANTLER"
 				| "STARYU"
-				| "SWABLU"
 				| "SWINUB"
 				| "TOGEDEMARU"
 				| "TYROGUE"
 				| "VOLTORB"
-				| "WEEDLE"
 				| "WIMPOD"
 				| "YAMPER";
 		};

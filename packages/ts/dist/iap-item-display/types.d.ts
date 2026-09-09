@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1198 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1196 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -54,6 +54,7 @@ export interface IapItemDisplayData {
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F035aa0ae_PGO-MCS_S24_GBL_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F68bf81f3_PGO-MCS_GO_Pass_Special_Anniversary_Pikachu_Celebration_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F84f00147_PGO-MCS_GO_Pass_August_2026_TICKET_v1-1024x576.jpg"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F53190080_PGO-MCS_Flying_Taxi_TICKET_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Faab1ed22_PGO-MCS_Summer_Marathon_Fire_Ice_v3b-1024x576.jpg"
@@ -65,7 +66,6 @@ export interface IapItemDisplayData {
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff2c7f843_PGO-MCS_GO_Pass_July_2026_ticket_v1-1024x576_nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff6da0ab4_PGO-MCS_GO_Fest_2026_APAC_Global_LiveOp_v2-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff9eaebcb_PGO-WCS_2026_Backpack_v2-1024x512-nologo.jpg"
-		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff26f8d69_PGO-MCS_GO_Pass_Mega_Finale_Deluxe_v2-720x360-nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FGO_Wild_Area_2025_Global_1024x512_logo.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FGOWA_GO_Pass_Ticket_1024x512.png"
@@ -143,14 +143,13 @@ export interface IapItemDisplayData {
 		| "2026-07-06T20:00:00"
 		| "2026-07-14T23:59:59"
 		| "2026-07-27T20:00:00"
-		| "2026-08-15T23:59:59"
 		| "2026-08-26T20:00:00"
-		| "2026-09-08T23:59:59"
 		| "2026-09-10T10:00:00"
 		| "2026-09-12T17:00:00"
 		| "2026-09-16T20:00:00"
 		| "2026-09-22T13:00:00"
-		| "2026-10-08T10:00:00";
+		| "2026-10-08T10:00:00"
+		| "2026-11-15T20:00:00";
 	skuDisableTimeUtcMs?:
 		| "1595786400000"
 		| "1654174800000"
@@ -198,14 +197,13 @@ export interface IapItemDisplayData {
 		| "1783368000000"
 		| "1784073599000"
 		| "1785182400000"
-		| "1786838399000"
 		| "1787774400000"
-		| "1788911999000"
 		| "1789034400000"
 		| "1789232400000"
 		| "1789588800000"
 		| "1790082000000"
-		| "1791453600000";
+		| "1791453600000"
+		| "1794772800000";
 	skuEnableTime?:
 		| "2019-03-14T08:00:00"
 		| "2019-10-31T21:00:00"
@@ -252,10 +250,7 @@ export interface IapItemDisplayData {
 		| "2025-09-08T10:00:00"
 		| "2026-01-02T20:00:00"
 		| "2026-03-03T13:00:00"
-		| "2026-07-06T00:00:00"
-		| "2026-08-07T10:00:00"
-		| "2026-08-31T10:00:00"
-		| "2026-09-08T13:00:00";
+		| "2026-07-06T00:00:00";
 	skuEnableTimeUtcMs?:
 		| "1552550400000"
 		| "1572555600000"
@@ -302,10 +297,7 @@ export interface IapItemDisplayData {
 		| "1757325600000"
 		| "1767384000000"
 		| "1772542800000"
-		| "1783296000000"
-		| "1786096800000"
-		| "1788170400000"
-		| "1788872400000";
+		| "1783296000000";
 	sortOrder?: number;
 	spriteId?: string;
 	title?: string;
@@ -317,6 +309,7 @@ export interface IapItemDisplayData {
 		| "web-catch-mastery-feb-26-ticket-box"
 		| "web-encounter-jan-26-ticket-box"
 		| "web-gotour-26-ticket-box"
+		| "web-gowa-global-2026-ticket"
 		| "web-masterball-25-ticket-box"
 		| "web-shadow-entei-raid-box-ultra"
 		| "web-water-research-day-ticket-box";

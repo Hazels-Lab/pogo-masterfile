@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 90 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 87 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -310,6 +310,23 @@ export type IapItemDisplayEventPassAugust2Redirect = S<
 			skuEnableTimeUtcMs: "1755511200000";
 			sortOrder: 1;
 			title: "season_pass_premium_track_title_uu_water_festival_2026";
+		}
+	>
+>;
+export type IapItemDisplayEventPassGofest2025FinaleStoreRedirect = S<
+	IapItemDisplay<
+		"EVENT_PASS_GOFEST2025_FINALE_STORE_REDIRECT",
+		{
+			description: "gofest_2025_finale_deluxe_event_pass_track_unlock_description";
+			hidden: true;
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Eternatus_Adventure_Effect_v2-1024x576.jpg";
+			sku: "pgorelease.gofest_finale_2025_deluxe_event_pass_track_redirect";
+			skuDisableTime: "2025-08-26T21:00:00";
+			skuDisableTimeUtcMs: "1756242000000";
+			skuEnableTime: "2024-08-18T10:00:00";
+			skuEnableTimeUtcMs: "1723975200000";
+			sortOrder: 1;
+			title: "gofest_2025_finale_deluxe_event_pass_track_unlock_title";
 		}
 	>
 >;
@@ -1209,66 +1226,6 @@ export type IapItemDisplayPgoreleaseGofest2025DeluxeEventPassTrackRedirect = S<
 		}
 	>
 >;
-export type IapItemDisplayPgoreleaseGofestDeluxeEventPassTrackUnlock = S<
-	IapItemDisplay<
-		"pgorelease.gofest_deluxe_event_pass_track_unlock",
-		{
-			description: "deluxe_event_pass_track_unlock_description";
-			sku: "pgorelease.gofest_deluxe_event_pass_track_unlock";
-			skuDisableTime: "2026-08-15T23:59:59";
-			skuDisableTimeUtcMs: "1786838399000";
-			skuEnableTime: "2026-08-07T10:00:00";
-			skuEnableTimeUtcMs: "1786096800000";
-			sortOrder: 1;
-			title: "event_pass_gofest2026_finale_base_track_title";
-		}
-	>
->;
-export type IapItemDisplayPgoreleaseGofestDeluxeEventPassTrackUnlockPlusPoints = S<
-	IapItemDisplay<
-		"pgorelease.gofest_deluxe_event_pass_track_unlock_plus_points",
-		{
-			description: "deluxe_event_pass_track_unlock_plus_points_description";
-			sku: "pgorelease.gofest_deluxe_event_pass_track_unlock_plus_points";
-			skuDisableTime: "2026-08-15T23:59:59";
-			skuDisableTimeUtcMs: "1786838399000";
-			skuEnableTime: "2026-08-07T10:00:00";
-			skuEnableTimeUtcMs: "1786096800000";
-			sortOrder: 1;
-			title: "event_pass_gofest2026_finale_premium_track_title";
-		}
-	>
->;
-export type IapItemDisplayPgoreleaseGofestFinale2025DeluxeEventPassTrackUnlock = S<
-	IapItemDisplay<
-		"pgorelease.gofest_finale_2025_deluxe_event_pass_track_unlock",
-		{
-			description: "deluxe_event_pass_track_unlock_description";
-			sku: "pgorelease.gofest_finale_2025_deluxe_event_pass_track_unlock";
-			skuDisableTime: "2026-09-08T23:59:59";
-			skuDisableTimeUtcMs: "1788911999000";
-			skuEnableTime: "2026-08-31T10:00:00";
-			skuEnableTimeUtcMs: "1788170400000";
-			sortOrder: 1;
-			title: "event_pass_gofest2026_finale_base_track_title";
-		}
-	>
->;
-export type IapItemDisplayPgoreleaseGofestFinale2025DeluxeEventPassTrackUnlockPlusPoints = S<
-	IapItemDisplay<
-		"pgorelease.gofest_finale_2025_deluxe_event_pass_track_unlock_plus_points",
-		{
-			description: "deluxe_event_pass_track_unlock_plus_points_description";
-			sku: "pgorelease.gofest_finale_2025_deluxe_event_pass_track_unlock_plus_points";
-			skuDisableTime: "2026-09-08T23:59:59";
-			skuDisableTimeUtcMs: "1788911999000";
-			skuEnableTime: "2026-08-31T10:00:00";
-			skuEnableTimeUtcMs: "1788170400000";
-			sortOrder: 1;
-			title: "event_pass_gofest2026_finale_premium_track_title";
-		}
-	>
->;
 export type IapItemDisplayPgoreleaseJuly1DeluxeEventPassTrackRedirect = S<
 	IapItemDisplay<
 		"pgorelease.july1_deluxe_event_pass_track_redirect",
@@ -1501,6 +1458,7 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayEventPassApril1SeasonStoreRedirect
 	| IapItemDisplayEventPassApril3EventStoreRedirect
 	| IapItemDisplayEventPassAugust2Redirect
+	| IapItemDisplayEventPassGofest2025FinaleStoreRedirect
 	| IapItemDisplayEventPassGofest2025GlobalStoreRedirect
 	| IapItemDisplayEventPassGotour2025GlobalStoreRedirect
 	| IapItemDisplayEventPassGowild2025GlobalStoreRedirect
@@ -1555,10 +1513,6 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayPgoreleaseApril22026DeluxeEventPassTrackRedirect
 	| IapItemDisplayPgoreleaseAugust3DeluxeEventPassTrackUnlockRedirect
 	| IapItemDisplayPgoreleaseGofest2025DeluxeEventPassTrackRedirect
-	| IapItemDisplayPgoreleaseGofestDeluxeEventPassTrackUnlock
-	| IapItemDisplayPgoreleaseGofestDeluxeEventPassTrackUnlockPlusPoints
-	| IapItemDisplayPgoreleaseGofestFinale2025DeluxeEventPassTrackUnlock
-	| IapItemDisplayPgoreleaseGofestFinale2025DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayPgoreleaseJuly1DeluxeEventPassTrackRedirect
 	| IapItemDisplayPgoreleaseMay12026DeluxeEventPassTrackRedirect
 	| IapItemDisplayPgoreleaseMay12026DeluxeEventPassTrackUnlockRedirect

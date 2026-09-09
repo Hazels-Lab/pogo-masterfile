@@ -952,7 +952,7 @@ export type AvatarItemDisplayNShoesRyme = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_shoes_ryme",
 		{
-			displayStringId: "avatar_shoes_ryme";
+			displayStringId: "avatar_shoes_s24ryme";
 			iconAddress: "n_shoes_ryme_icon";
 		}
 	>

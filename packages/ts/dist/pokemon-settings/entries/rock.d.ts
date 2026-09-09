@@ -1791,7 +1791,7 @@ export type PokemonSettingsV0142PokemonAerodactylSummer2023 = S<
 				diskRadiusM: 0.5985;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["ANCIENT_POWER", "IRON_HEAD", "HYPER_BEAM", "ROCK_SLIDE", "EARTH_POWER"];
+			cinematicMoves: ["ANCIENT_POWER", "IRON_HEAD", "HYPER_BEAM", "ROCK_SLIDE", "EARTH_POWER", "BRUTAL_SWING"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 14;

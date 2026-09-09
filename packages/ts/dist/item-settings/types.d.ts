@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", 165 entries (structural types).
+// Generated from Pokémon GO masterfile — group "itemSettings", 167 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -76,6 +76,7 @@ export interface ItemSettingsData {
 		| "item_event_ticket_pink_details_MegaRayquaza26"
 		| "item_event_ticket_pink_details_WaterRRD26"
 		| "item_global_event_ticket_details_GOTour2026"
+		| "item_global_event_ticket_details_GOWA26"
 		| "item_postcard_inventory_desc_stamp";
 	dropTrainerLevel?: number;
 	eggIncubator?: {
@@ -132,6 +133,7 @@ export interface ItemSettingsData {
 		backgroundImageUrl?:
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F0ba8ff0a_20260508_pgo_s23_megarayquaza_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F97c2eaee_PGO-MCS_Raichu_Super_Mega_Raid_Day_v3-1024x576-nologo.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fc397eb56_PGO-MCS_Staraptor_Super_Mega_Raid_Day_v1-1024x576.jpg"
@@ -184,7 +186,8 @@ export interface ItemSettingsData {
 			| "1787418000000"
 			| "1789232400000"
 			| "1789837200000"
-			| "1790071200000";
+			| "1790071200000"
+			| "1794765600000";
 		clientEventStartTimeUtcMs:
 			| "1696845600000"
 			| "1697364000000"
@@ -215,7 +218,8 @@ export interface ItemSettingsData {
 			| "1787396400000"
 			| "1788872400000"
 			| "1789221600000"
-			| "1789826400000";
+			| "1789826400000"
+			| "1794650400000";
 		conflictStoryQuestIds?: ["RERUN_MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER", "MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER"];
 		detailsLinkKey?:
 			| "details_link_key"
@@ -231,6 +235,7 @@ export interface ItemSettingsData {
 			| "details_link_key_REPLAY_GO_BIGGER_MAX_BATTLE"
 			| "details_link_key_Riolu_Hatch0426"
 			| "details_link_key_shayminmasterworkrerun"
+			| "gowa_2026_global_ticket_details_link"
 			| "item_event_ticket_evergreen_details_PawPrint_20250620"
 			| "item_global_event_ticket_details_GOTour2026"
 			| "nickit_website_link";
@@ -240,6 +245,7 @@ export interface ItemSettingsData {
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F0ba8ff0a_20260508_pgo_s23_megarayquaza_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F035aa0ae_PGO-MCS_S24_GBL_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F97c2eaee_PGO-MCS_Raichu_Super_Mega_Raid_Day_v3-1024x576-nologo.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fc397eb56_PGO-MCS_Staraptor_Super_Mega_Raid_Day_v1-1024x576.jpg"
@@ -274,6 +280,7 @@ export interface ItemSettingsData {
 			| "event_datetime_range_key_FinalJustice2025"
 			| "event_datetime_range_key_gmaxRillaboom26"
 			| "event_datetime_range_key_GOTour2026"
+			| "event_datetime_range_key_GOWA26"
 			| "event_datetime_range_key_IntoTDepths26"
 			| "event_datetime_range_key_MegaFalinksRaidDay"
 			| "event_datetime_range_key_MegaRaichuRaidDay"
@@ -315,7 +322,8 @@ export interface ItemSettingsData {
 			| "2026-08-22T17:00:00"
 			| "2026-09-12T17:00:00"
 			| "2026-09-19T17:00:00"
-			| "2026-09-22T10:00:00";
+			| "2026-09-22T10:00:00"
+			| "2026-11-15T18:00:00";
 		eventStartTime:
 			| "2023-10-09T10:00:00"
 			| "2023-10-15T10:00:00"
@@ -346,7 +354,8 @@ export interface ItemSettingsData {
 			| "2026-08-22T11:00:00"
 			| "2026-09-08T13:00:00"
 			| "2026-09-12T14:00:00"
-			| "2026-09-19T14:00:00";
+			| "2026-09-19T14:00:00"
+			| "2026-11-14T10:00:00";
 		giftable?: boolean;
 		giftItem?:
 			| "ITEM_EVENT_TICKET_02_TO_GIFT"
@@ -370,6 +379,7 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S23_2026_09_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S23_2026_10_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S23_2026_12_TO_GIFT"
+			| "ITEM_EVENT_TICKET_S24_NOV9_GOWAOL_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_SEP_19_MEGARAID_TO_GIFT"
 			| "ITEM_EVERGREEN_TICKET_TO_GIFT"
@@ -483,6 +493,7 @@ export interface ItemSettingsData {
 			| "item_event_ticket_pink_desc_WaterRRD26"
 			| "item_event_ticket_pink_details_MegaRayquaza26"
 			| "item_global_event_ticket_details_GOTour2026"
+			| "item_global_event_ticket_details_GOWA26"
 			| "item_ticket_city_safari_00_desc"
 			| "item_ticket_city_safari_01_desc"
 			| "item_ticket_city_safari_02_desc";
@@ -499,6 +510,7 @@ export interface ItemSettingsData {
 			| "text_rewards_key_FinalJustice2025"
 			| "text_rewards_key_gmaxRillaboom26"
 			| "text_rewards_key_GOTour2026"
+			| "text_rewards_key_GOWA26"
 			| "text_rewards_key_IntoTDepths26"
 			| "text_rewards_key_masterball25"
 			| "text_rewards_key_MegaFalinksRaidDay"
@@ -531,6 +543,7 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S23_2026_08"
 			| "ITEM_EVENT_TICKET_S23_2026_10"
 			| "ITEM_EVENT_TICKET_S23_2026_12"
+			| "ITEM_EVENT_TICKET_S24_NOV9_GOWAOL"
 			| "ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY"
 			| "ITEM_EVERGREEN_TICKET"
 			| "ITEM_GLOBAL_EVENT_TICKET";
@@ -600,6 +613,7 @@ export interface ItemSettingsData {
 		| "general1.ticket.5_IntoTDepths26_title"
 		| "general1.ticket.5_MegaStaraptorRaidDay"
 		| "general1.ticket.5.ENTEI_SHADOW_RAID_DAY"
+		| "general2.ticket._GOWA26_title"
 		| "general2.ticket.5_MegaFalinksRaidDay"
 		| "general2.ticket.5_MegaRaichuRaidDay"
 		| "general2.ticket.5_MegaSkarmoryRaidDay"

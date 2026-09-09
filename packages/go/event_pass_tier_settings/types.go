@@ -2,11 +2,9 @@
 
 package event_pass_tier_settings
 
-import "encoding/json"
-
 type EventPassTierSettingsBonusBoxes struct {
-	IconType json.RawMessage `json:"iconType"`
-	Text     string          `json:"text"`
+	IconType string `json:"iconType"`
+	Text     string `json:"text"`
 }
 
 type EventPassTierSettingsActiveBonusDisplaySettings struct {
@@ -34,14 +32,9 @@ type EventPassTierSettingsPlayerAttribute struct {
 	Key          string `json:"key"`
 }
 
-type EventPassTierSettingsLocationCard struct {
-	LocationCard string `json:"locationCard"`
-}
-
 type EventPassTierSettingsPokemonDisplay struct {
-	BreadModeEnum *string                            `json:"breadModeEnum,omitempty"`
-	Form          string                             `json:"form"`
-	LocationCard  *EventPassTierSettingsLocationCard `json:"locationCard,omitempty"`
+	BreadModeEnum *string `json:"breadModeEnum,omitempty"`
+	Form          string  `json:"form"`
 }
 
 type EventPassTierSettingsStatsLimitsOverride struct {
@@ -56,16 +49,6 @@ type EventPassTierSettingsPokemonEncounter struct {
 	StatsLimitsOverride *EventPassTierSettingsStatsLimitsOverride `json:"statsLimitsOverride,omitempty"`
 }
 
-type EventPassTierSettingsTempEvoPokemonBranch struct {
-	PokedexId string `json:"pokedexId"`
-	TempEvoId string `json:"tempEvoId"`
-}
-
-type EventPassTierSettingsTempEvoResource struct {
-	Amount               uint64                                    `json:"amount"`
-	TempEvoPokemonBranch EventPassTierSettingsTempEvoPokemonBranch `json:"tempEvoPokemonBranch"`
-}
-
 type EventPassTierSettingsRewards struct {
 	Candy                     *EventPassTierSettingsCandy                     `json:"candy,omitempty"`
 	Exp                       *uint64                                         `json:"exp,omitempty"`
@@ -75,8 +58,7 @@ type EventPassTierSettingsRewards struct {
 	PlayerAttribute           *EventPassTierSettingsPlayerAttribute           `json:"playerAttribute,omitempty"`
 	PokemonEncounter          *EventPassTierSettingsPokemonEncounter          `json:"pokemonEncounter,omitempty"`
 	Stardust                  *uint64                                         `json:"stardust,omitempty"`
-	TempEvoResource           *EventPassTierSettingsTempEvoResource           `json:"tempEvoResource,omitempty"`
-	Type                      json.RawMessage                                 `json:"type"`
+	Type                      string                                          `json:"type"`
 	XlCandy                   *EventPassTierSettingsCandy                     `json:"xlCandy,omitempty"`
 }
 

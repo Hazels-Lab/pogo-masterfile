@@ -2653,7 +2653,7 @@ export type AvatarItemDisplayNShirtRyme = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_shirt_ryme",
 		{
-			displayStringId: "avatar_shirt_ryme";
+			displayStringId: "avatar_dress_s24ryme";
 			iconAddress: "n_shirt_ryme_icon";
 		}
 	>

@@ -180,12 +180,12 @@ pub enum MasterfileEntry {
     PokemonExtendedSettings(pokemon_extended_settings::PokemonExtendedSettingsEntry),
     GenderSettings(gender_settings::GenderSettingsEntry),
     PokemonSettings(pokemon_settings::PokemonSettingsEntry),
-    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     AvatarCustomization(avatar_customization::AvatarCustomizationEntry),
     AvatarItemDisplay(avatar_item_display::AvatarItemDisplayEntry),
     IapItemDisplay(iap_item_display::IapItemDisplayEntry),
     FormSettings(form_settings::FormSettingsEntry),
     BadgeSettings(badge_settings::BadgeSettingsEntry),
+    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     StickerMetadata(sticker_metadata::StickerMetadataEntry),
     PokemonFamily(pokemon_family::PokemonFamilyEntry),
     MoveSettings(move_settings::MoveSettingsEntry),
@@ -231,11 +231,11 @@ pub enum MasterfileEntry {
     PokemonScaleSettings(pokemon_scale_settings::PokemonScaleSettingsEntry),
     BuddyLevelSettings(buddy_level_settings::BuddyLevelSettingsEntry),
     TappableSettings(tappable_settings::TappableSettingsEntry),
-    EventPassSettings(event_pass_settings::EventPassSettingsEntry),
     FortPowerUpLevelSettings(fort_power_up_level_settings::FortPowerUpLevelSettingsEntry),
     PokemonHomeEnergyCosts(pokemon_home_energy_costs::PokemonHomeEnergyCostsEntry),
     RollBack(roll_back::RollBackEntry),
     CombatNpcPersonality(combat_npc_personality::CombatNpcPersonalityEntry),
+    EventPassSettings(event_pass_settings::EventPassSettingsEntry),
     LanguageSettings(language_settings::LanguageSettingsEntry),
     QuestSettings(quest_settings::QuestSettingsEntry),
     AvatarGroupOrderSettings(avatar_group_order_settings::AvatarGroupOrderSettingsEntry),
@@ -422,9 +422,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 }
                 "genderSettings" => serde_json::from_value(value).map(Self::GenderSettings),
                 "pokemonSettings" => serde_json::from_value(value).map(Self::PokemonSettings),
-                "eventPassTierSettings" => {
-                    serde_json::from_value(value).map(Self::EventPassTierSettings)
-                }
                 "avatarCustomization" => {
                     serde_json::from_value(value).map(Self::AvatarCustomization)
                 }
@@ -432,6 +429,9 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "iapItemDisplay" => serde_json::from_value(value).map(Self::IapItemDisplay),
                 "formSettings" => serde_json::from_value(value).map(Self::FormSettings),
                 "badgeSettings" => serde_json::from_value(value).map(Self::BadgeSettings),
+                "eventPassTierSettings" => {
+                    serde_json::from_value(value).map(Self::EventPassTierSettings)
+                }
                 "stickerMetadata" => serde_json::from_value(value).map(Self::StickerMetadata),
                 "pokemonFamily" => serde_json::from_value(value).map(Self::PokemonFamily),
                 "moveSettings" => serde_json::from_value(value).map(Self::MoveSettings),
@@ -515,7 +515,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 }
                 "buddyLevelSettings" => serde_json::from_value(value).map(Self::BuddyLevelSettings),
                 "tappableSettings" => serde_json::from_value(value).map(Self::TappableSettings),
-                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "fortPowerUpLevelSettings" => {
                     serde_json::from_value(value).map(Self::FortPowerUpLevelSettings)
                 }
@@ -526,6 +525,7 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "combatNpcPersonality" => {
                     serde_json::from_value(value).map(Self::CombatNpcPersonality)
                 }
+                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "languageSettings" => serde_json::from_value(value).map(Self::LanguageSettings),
                 "questSettings" => serde_json::from_value(value).map(Self::QuestSettings),
                 "avatarGroupOrderSettings" => {
