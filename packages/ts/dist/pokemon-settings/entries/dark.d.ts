@@ -3698,7 +3698,7 @@ export type PokemonSettingsV0571PokemonZoroark = S<
 			pokedexHeightM: 1.6;
 			pokedexWeightKg: 81.1;
 			pokemonId: "ZOROARK";
-			quickMoves: ["SHADOW_CLAW_FAST", "SNARL_FAST", "SUCKER_PUNCH_FAST"];
+			quickMoves: ["SHADOW_CLAW_FAST", "SNARL_FAST"];
 			stats: {
 				baseAttack: 250;
 				baseDefense: 127;
@@ -3766,7 +3766,7 @@ export type PokemonSettingsV0571PokemonZoroarkNormal = S<
 			pokedexHeightM: 1.6;
 			pokedexWeightKg: 81.1;
 			pokemonId: "ZOROARK";
-			quickMoves: ["SHADOW_CLAW_FAST", "SNARL_FAST", "SUCKER_PUNCH_FAST"];
+			quickMoves: ["SHADOW_CLAW_FAST", "SNARL_FAST"];
 			stats: {
 				baseAttack: 250;
 				baseDefense: 127;

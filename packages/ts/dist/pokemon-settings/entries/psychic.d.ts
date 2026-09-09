@@ -4634,7 +4634,7 @@ export type PokemonSettingsV0249PokemonLugiaS = S<
 				diskRadiusM: 0.555;
 				shoulderModeScale: 0.5;
 			};
-			cinematicMoves: ["SKY_ATTACK", "HYDRO_PUMP", "FUTURESIGHT", "FLY"];
+			cinematicMoves: ["SKY_ATTACK", "HYDRO_PUMP", "FUTURESIGHT", "FLY", "EARTH_POWER"];
 			disableTransferToPokemonHome: true;
 			eliteCinematicMove: ["AEROBLAST"];
 			encounter: {

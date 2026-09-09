@@ -74,6 +74,8 @@ const (
 	ItemSettingsTemplateIDItemEventTicketS23202610ToGift         ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_10_TO_GIFT"
 	ItemSettingsTemplateIDItemEventTicketS23202612               ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_12"
 	ItemSettingsTemplateIDItemEventTicketS23202612ToGift         ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_12_TO_GIFT"
+	ItemSettingsTemplateIDItemEventTicketS24Nov9Gowaol           ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S24_NOV9_GOWAOL"
+	ItemSettingsTemplateIDItemEventTicketS24Nov9GowaolToGift     ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S24_NOV9_GOWAOL_TO_GIFT"
 	ItemSettingsTemplateIDItemEventTicketS24Sep12Community       ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY"
 	ItemSettingsTemplateIDItemEventTicketS24Sep12CommunityToGift ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY_TO_GIFT"
 	ItemSettingsTemplateIDItemEventTicketS24Sep19Megaraid        ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S24_SEP_19_MEGARAID"
@@ -242,6 +244,8 @@ var ItemSettingsTemplateIDValues = [...]ItemSettingsTemplateID{
 	ItemSettingsTemplateIDItemEventTicketS23202610ToGift,
 	ItemSettingsTemplateIDItemEventTicketS23202612,
 	ItemSettingsTemplateIDItemEventTicketS23202612ToGift,
+	ItemSettingsTemplateIDItemEventTicketS24Nov9Gowaol,
+	ItemSettingsTemplateIDItemEventTicketS24Nov9GowaolToGift,
 	ItemSettingsTemplateIDItemEventTicketS24Sep12Community,
 	ItemSettingsTemplateIDItemEventTicketS24Sep12CommunityToGift,
 	ItemSettingsTemplateIDItemEventTicketS24Sep19Megaraid,

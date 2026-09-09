@@ -13,8 +13,8 @@ export type IapItemDisplayBattlepassticket1 = S<
 			sku: "battlepassticket.1";
 			skuDisableTime: "2026-09-22T13:00:00";
 			skuDisableTimeUtcMs: "1790082000000";
-			skuEnableTime: "2026-09-08T13:00:00";
-			skuEnableTimeUtcMs: "1788872400000";
+			skuEnableTime: "2023-02-27T20:00:00";
+			skuEnableTimeUtcMs: "1677528000000";
 			sortOrder: 1;
 			spriteId: "battlepassticket.1";
 			title: "iap_battle_pass_ticket_name";

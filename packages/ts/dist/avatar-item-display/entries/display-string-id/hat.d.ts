@@ -1555,7 +1555,7 @@ export type AvatarItemDisplayNHatRyme = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_hat_ryme",
 		{
-			displayStringId: "avatar_hat_ryme";
+			displayStringId: "avatar_hat_s24ryme";
 			iconAddress: "n_hat_ryme_icon";
 		}
 	>

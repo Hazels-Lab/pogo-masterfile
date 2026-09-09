@@ -17406,7 +17406,7 @@ export type PokemonSettingsV0658PokemonGreninja = S<
 				cylinderHeightM: 1.02;
 				cylinderRadiusM: 1.12;
 			};
-			cinematicMoves: ["NIGHT_SLASH", "AERIAL_ACE", "SURF", "HYDRO_PUMP"];
+			cinematicMoves: ["NIGHT_SLASH", "AERIAL_ACE", "SURF", "HYDRO_PUMP", "BRUTAL_SWING"];
 			eliteCinematicMove: ["HYDRO_CANNON"];
 			encounter: {
 				attackProbability: 0.2;
@@ -17512,7 +17512,7 @@ export type PokemonSettingsV0658PokemonGreninjaNormal = S<
 				cylinderHeightM: 1.02;
 				cylinderRadiusM: 1.12;
 			};
-			cinematicMoves: ["NIGHT_SLASH", "AERIAL_ACE", "SURF", "HYDRO_PUMP"];
+			cinematicMoves: ["NIGHT_SLASH", "AERIAL_ACE", "SURF", "HYDRO_PUMP", "BRUTAL_SWING"];
 			eliteCinematicMove: ["HYDRO_CANNON"];
 			encounter: {
 				attackProbability: 0.2;

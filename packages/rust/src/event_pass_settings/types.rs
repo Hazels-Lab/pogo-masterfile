@@ -26,17 +26,16 @@ pub struct EventPassTrackUpgradeDescriptions {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct EventPassDisplaySettings {
-    pub background_configuration: Option<String>,
     pub bonus_boxes: [BonusBoxes; 3],
     pub event_pass_title_key: String,
     pub event_pass_track_upgrade_descriptions: [EventPassTrackUpgradeDescriptions; 1],
     pub header_icon_url: String,
-    pub premium_reward_banner_bottom: Option<String>,
-    pub premium_reward_banner_image_url: Option<String>,
-    pub premium_reward_banner_middle: Option<String>,
-    pub premium_reward_banner_top: Option<String>,
-    pub premium_rewards_description: Option<String>,
-    pub section_display_priority: Option<u64>,
+    pub premium_reward_banner_bottom: String,
+    pub premium_reward_banner_image_url: String,
+    pub premium_reward_banner_middle: String,
+    pub premium_reward_banner_top: String,
+    pub premium_rewards_description: String,
+    pub section_display_priority: u64,
     pub today_view_section: String,
 }
 

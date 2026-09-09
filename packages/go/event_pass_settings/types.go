@@ -22,17 +22,16 @@ type EventPassSettingsEventPassTrackUpgradeDescriptions struct {
 }
 
 type EventPassSettingsEventPassDisplaySettings struct {
-	BackgroundConfiguration           *string                                               `json:"backgroundConfiguration,omitempty"`
 	BonusBoxes                        [3]EventPassSettingsBonusBoxes                        `json:"bonusBoxes"`
 	EventPassTitleKey                 string                                                `json:"eventPassTitleKey"`
 	EventPassTrackUpgradeDescriptions [1]EventPassSettingsEventPassTrackUpgradeDescriptions `json:"eventPassTrackUpgradeDescriptions"`
 	HeaderIconUrl                     string                                                `json:"headerIconUrl"`
-	PremiumRewardBannerBottom         *string                                               `json:"premiumRewardBannerBottom,omitempty"`
-	PremiumRewardBannerImageUrl       *string                                               `json:"premiumRewardBannerImageUrl,omitempty"`
-	PremiumRewardBannerMiddle         *string                                               `json:"premiumRewardBannerMiddle,omitempty"`
-	PremiumRewardBannerTop            *string                                               `json:"premiumRewardBannerTop,omitempty"`
-	PremiumRewardsDescription         *string                                               `json:"premiumRewardsDescription,omitempty"`
-	SectionDisplayPriority            *uint64                                               `json:"sectionDisplayPriority,omitempty"`
+	PremiumRewardBannerBottom         string                                                `json:"premiumRewardBannerBottom"`
+	PremiumRewardBannerImageUrl       string                                                `json:"premiumRewardBannerImageUrl"`
+	PremiumRewardBannerMiddle         string                                                `json:"premiumRewardBannerMiddle"`
+	PremiumRewardBannerTop            string                                                `json:"premiumRewardBannerTop"`
+	PremiumRewardsDescription         string                                                `json:"premiumRewardsDescription"`
+	SectionDisplayPriority            uint64                                                `json:"sectionDisplayPriority"`
 	TodayViewSection                  string                                                `json:"todayViewSection"`
 }
 

@@ -3888,7 +3888,7 @@ export type PokemonSettingsV0143PokemonSnorlaxWildarea2024 = S<
 			pokedexHeightM: 2.1;
 			pokedexWeightKg: 460;
 			pokemonId: "SNORLAX";
-			quickMoves: ["ZEN_HEADBUTT_FAST", "LICK_FAST"];
+			quickMoves: ["ZEN_HEADBUTT_FAST", "LICK_FAST", "PSYWAVE_FAST"];
 			shadow: {
 				purificationCandyNeeded: 5;
 				purificationStardustNeeded: 5000;

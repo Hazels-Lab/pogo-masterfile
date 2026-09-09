@@ -32,7 +32,7 @@ export type ItemSettingsItemEventPassPointGoFest02 = S<
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
-					limit: 1000;
+					limit: 50;
 				};
 			};
 		}

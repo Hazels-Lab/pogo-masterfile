@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 51 entries.
+// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 53 entries.
 
 import type { S } from "../../_utils";
 import type { ItemSettings } from "../types";
@@ -1362,6 +1362,63 @@ export type ItemSettingsItemEventTicketS23202612ToGift = S<
 		}
 	>
 >;
+export type ItemSettingsItemEventTicketS24Nov9Gowaol = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S24_NOV9_GOWAOL",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "item_global_event_ticket_details_GOWA26";
+			globalEventTicket: {
+				backgroundImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png";
+				clientEventEndTimeUtcMs: "1794765600000";
+				clientEventStartTimeUtcMs: "1794650400000";
+				displayV2Enabled: true;
+				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png";
+				eventDatetimeRangeKey: "event_datetime_range_key_GOWA26";
+				eventEndTime: "2026-11-15T18:00:00";
+				eventStartTime: "2026-11-14T10:00:00";
+				giftable: true;
+				giftItem: "ITEM_EVENT_TICKET_S24_NOV9_GOWAOL_TO_GIFT";
+				iconRewards: [
+					{
+						item: {
+							amount: 6;
+							item: "ITEM_FREE_RAID_TICKET";
+						};
+						type: "ITEM";
+					},
+				];
+				itemBagDescriptionKey: "item_global_event_ticket_details_GOWA26";
+				textRewardsKey: "text_rewards_key_GOWA26";
+			};
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general2.ticket._GOWA26_title";
+		}
+	>
+>;
+export type ItemSettingsItemEventTicketS24Nov9GowaolToGift = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S24_NOV9_GOWAOL_TO_GIFT",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "item_global_event_ticket_details_GOWA26";
+			globalEventTicket: {
+				backgroundImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png";
+				clientEventEndTimeUtcMs: "1794765600000";
+				clientEventStartTimeUtcMs: "1794650400000";
+				detailsLinkKey: "gowa_2026_global_ticket_details_link";
+				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png";
+				eventEndTime: "2026-11-15T18:00:00";
+				eventStartTime: "2026-11-14T10:00:00";
+				itemBagDescriptionKey: "item_global_event_ticket_details_GOWA26";
+				ticketItem: "ITEM_EVENT_TICKET_S24_NOV9_GOWAOL";
+			};
+			ignoreInventorySpace: true;
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general2.ticket._GOWA26_title";
+		}
+	>
+>;
 export type ItemSettingsItemEventTicketS24Sep12Community = S<
 	ItemSettings<
 		"ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY",
@@ -1726,6 +1783,8 @@ export type ItemSettingsGlobalEventTicketMasterfileEntry =
 	| ItemSettingsItemEventTicketS23202610ToGift
 	| ItemSettingsItemEventTicketS23202612
 	| ItemSettingsItemEventTicketS23202612ToGift
+	| ItemSettingsItemEventTicketS24Nov9Gowaol
+	| ItemSettingsItemEventTicketS24Nov9GowaolToGift
 	| ItemSettingsItemEventTicketS24Sep12Community
 	| ItemSettingsItemEventTicketS24Sep12CommunityToGift
 	| ItemSettingsItemEventTicketS24Sep19Megaraid
