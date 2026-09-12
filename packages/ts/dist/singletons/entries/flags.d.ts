@@ -116,7 +116,7 @@ export interface ArPhotoFeatureFlags {
 					pokemonId: "VENUSAUR";
 				},
 				{
-					excludedForms: ["CHARIZARD_COPY_2019"];
+					excludedForms: ["CHARIZARD_COPY_2019", "CHARIZARD_GOGGLES_2026"];
 					pokemonId: "CHARIZARD";
 				},
 				{
@@ -379,6 +379,14 @@ export interface ArPhotoFeatureFlags {
 				{
 					excludedForms: ["GIMMIGHOUL_NORMAL"];
 					pokemonId: "GIMMIGHOUL";
+				},
+				{
+					excludedForms: ["CHARMANDER_GOGGLES_2026"];
+					pokemonId: "CHARMANDER";
+				},
+				{
+					excludedForms: ["CHARMELEON_GOGGLES_2026"];
+					pokemonId: "CHARMELEON";
 				},
 			];
 			preLoginDeviceAllowList: [

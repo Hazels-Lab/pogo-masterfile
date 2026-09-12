@@ -44,20 +44,8 @@ pub struct FeatureBackendConfigs {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct FeatureBackendConfigsV2 {
-    pub ar_backend: String,
-    pub ar_feature: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
 pub struct ArBackendSettings {
-    pub feature_backend_configs: (
-        FeatureBackendConfigs,
-        FeatureBackendConfigs,
-        FeatureBackendConfigs,
-        FeatureBackendConfigsV2,
-    ),
+    pub feature_backend_configs: [FeatureBackendConfigs; 4],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -94,21 +82,21 @@ pub struct PokemonWithExcludedForms {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PokemonWithExcludedFormsV2 {
-    pub excluded_forms: [String; 19],
+    pub excluded_forms: [String; 2],
     pub pokemon_id: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PokemonWithExcludedFormsV3 {
-    pub excluded_forms: [String; 18],
+    pub excluded_forms: [String; 19],
     pub pokemon_id: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PokemonWithExcludedFormsV4 {
-    pub excluded_forms: [String; 2],
+    pub excluded_forms: [String; 18],
     pub pokemon_id: String,
 }
 

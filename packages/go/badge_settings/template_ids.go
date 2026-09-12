@@ -906,6 +906,48 @@ const (
 	BadgeSettingsTemplateIDBadgeSafari2025VancouverSaturday                 BadgeSettingsTemplateID = "BADGE_SAFARI_2025_VANCOUVER_SATURDAY"
 	BadgeSettingsTemplateIDBadgeSafari2025VancouverSunday                   BadgeSettingsTemplateID = "BADGE_SAFARI_2025_VANCOUVER_SUNDAY"
 	BadgeSettingsTemplateIDBadgeSafari2025VancouverTest                     BadgeSettingsTemplateID = "BADGE_SAFARI_2025_VANCOUVER_TEST"
+	BadgeSettingsTemplateIDBadgeSafari2026BostonAddOnHatch                  BadgeSettingsTemplateID = "BADGE_SAFARI_2026_BOSTON_ADD_ON_HATCH"
+	BadgeSettingsTemplateIDBadgeSafari2026BostonAddOnHatchTest              BadgeSettingsTemplateID = "BADGE_SAFARI_2026_BOSTON_ADD_ON_HATCH_TEST"
+	BadgeSettingsTemplateIDBadgeSafari2026BostonAddOnRaid                   BadgeSettingsTemplateID = "BADGE_SAFARI_2026_BOSTON_ADD_ON_RAID"
+	BadgeSettingsTemplateIDBadgeSafari2026BostonAddOnRaidTest               BadgeSettingsTemplateID = "BADGE_SAFARI_2026_BOSTON_ADD_ON_RAID_TEST"
+	BadgeSettingsTemplateIDBadgeSafari2026BostonDay00                       BadgeSettingsTemplateID = "BADGE_SAFARI_2026_BOSTON_DAY_00"
+	BadgeSettingsTemplateIDBadgeSafari2026BostonDay01                       BadgeSettingsTemplateID = "BADGE_SAFARI_2026_BOSTON_DAY_01"
+	BadgeSettingsTemplateIDBadgeSafari2026BostonDay02                       BadgeSettingsTemplateID = "BADGE_SAFARI_2026_BOSTON_DAY_02"
+	BadgeSettingsTemplateIDBadgeSafari2026BrisbaneAddOnHatch                BadgeSettingsTemplateID = "BADGE_SAFARI_2026_BRISBANE_ADD_ON_HATCH"
+	BadgeSettingsTemplateIDBadgeSafari2026BrisbaneAddOnHatchTest            BadgeSettingsTemplateID = "BADGE_SAFARI_2026_BRISBANE_ADD_ON_HATCH_TEST"
+	BadgeSettingsTemplateIDBadgeSafari2026BrisbaneAddOnRaid                 BadgeSettingsTemplateID = "BADGE_SAFARI_2026_BRISBANE_ADD_ON_RAID"
+	BadgeSettingsTemplateIDBadgeSafari2026BrisbaneAddOnRaidTest             BadgeSettingsTemplateID = "BADGE_SAFARI_2026_BRISBANE_ADD_ON_RAID_TEST"
+	BadgeSettingsTemplateIDBadgeSafari2026BrisbaneDay00                     BadgeSettingsTemplateID = "BADGE_SAFARI_2026_BRISBANE_DAY_00"
+	BadgeSettingsTemplateIDBadgeSafari2026BrisbaneDay01                     BadgeSettingsTemplateID = "BADGE_SAFARI_2026_BRISBANE_DAY_01"
+	BadgeSettingsTemplateIDBadgeSafari2026BrisbaneDay02                     BadgeSettingsTemplateID = "BADGE_SAFARI_2026_BRISBANE_DAY_02"
+	BadgeSettingsTemplateIDBadgeSafari2026LisbonAddOnHatch                  BadgeSettingsTemplateID = "BADGE_SAFARI_2026_LISBON_ADD_ON_HATCH"
+	BadgeSettingsTemplateIDBadgeSafari2026LisbonAddOnHatchTest              BadgeSettingsTemplateID = "BADGE_SAFARI_2026_LISBON_ADD_ON_HATCH_TEST"
+	BadgeSettingsTemplateIDBadgeSafari2026LisbonAddOnRaid                   BadgeSettingsTemplateID = "BADGE_SAFARI_2026_LISBON_ADD_ON_RAID"
+	BadgeSettingsTemplateIDBadgeSafari2026LisbonAddOnRaidTest               BadgeSettingsTemplateID = "BADGE_SAFARI_2026_LISBON_ADD_ON_RAID_TEST"
+	BadgeSettingsTemplateIDBadgeSafari2026LisbonDay00                       BadgeSettingsTemplateID = "BADGE_SAFARI_2026_LISBON_DAY_00"
+	BadgeSettingsTemplateIDBadgeSafari2026LisbonDay01                       BadgeSettingsTemplateID = "BADGE_SAFARI_2026_LISBON_DAY_01"
+	BadgeSettingsTemplateIDBadgeSafari2026LisbonDay02                       BadgeSettingsTemplateID = "BADGE_SAFARI_2026_LISBON_DAY_02"
+	BadgeSettingsTemplateIDBadgeSafari2026MarseilleAddOnHatch               BadgeSettingsTemplateID = "BADGE_SAFARI_2026_MARSEILLE_ADD_ON_HATCH"
+	BadgeSettingsTemplateIDBadgeSafari2026MarseilleAddOnHatchTest           BadgeSettingsTemplateID = "BADGE_SAFARI_2026_MARSEILLE_ADD_ON_HATCH_TEST"
+	BadgeSettingsTemplateIDBadgeSafari2026MarseilleAddOnRaid                BadgeSettingsTemplateID = "BADGE_SAFARI_2026_MARSEILLE_ADD_ON_RAID"
+	BadgeSettingsTemplateIDBadgeSafari2026MarseilleAddOnRaidTest            BadgeSettingsTemplateID = "BADGE_SAFARI_2026_MARSEILLE_ADD_ON_RAID_TEST"
+	BadgeSettingsTemplateIDBadgeSafari2026MarseilleDay00                    BadgeSettingsTemplateID = "BADGE_SAFARI_2026_MARSEILLE_DAY_00"
+	BadgeSettingsTemplateIDBadgeSafari2026MarseilleDay01                    BadgeSettingsTemplateID = "BADGE_SAFARI_2026_MARSEILLE_DAY_01"
+	BadgeSettingsTemplateIDBadgeSafari2026MarseilleDay02                    BadgeSettingsTemplateID = "BADGE_SAFARI_2026_MARSEILLE_DAY_02"
+	BadgeSettingsTemplateIDBadgeSafari2026MunichAddOnHatch                  BadgeSettingsTemplateID = "BADGE_SAFARI_2026_MUNICH_ADD_ON_HATCH"
+	BadgeSettingsTemplateIDBadgeSafari2026MunichAddOnHatchTest              BadgeSettingsTemplateID = "BADGE_SAFARI_2026_MUNICH_ADD_ON_HATCH_TEST"
+	BadgeSettingsTemplateIDBadgeSafari2026MunichAddOnRaid                   BadgeSettingsTemplateID = "BADGE_SAFARI_2026_MUNICH_ADD_ON_RAID"
+	BadgeSettingsTemplateIDBadgeSafari2026MunichAddOnRaidTest               BadgeSettingsTemplateID = "BADGE_SAFARI_2026_MUNICH_ADD_ON_RAID_TEST"
+	BadgeSettingsTemplateIDBadgeSafari2026MunichDay00                       BadgeSettingsTemplateID = "BADGE_SAFARI_2026_MUNICH_DAY_00"
+	BadgeSettingsTemplateIDBadgeSafari2026MunichDay01                       BadgeSettingsTemplateID = "BADGE_SAFARI_2026_MUNICH_DAY_01"
+	BadgeSettingsTemplateIDBadgeSafari2026MunichDay02                       BadgeSettingsTemplateID = "BADGE_SAFARI_2026_MUNICH_DAY_02"
+	BadgeSettingsTemplateIDBadgeSafari2026RdjAddOnHatch                     BadgeSettingsTemplateID = "BADGE_SAFARI_2026_RDJ_ADD_ON_HATCH"
+	BadgeSettingsTemplateIDBadgeSafari2026RdjAddOnHatchTest                 BadgeSettingsTemplateID = "BADGE_SAFARI_2026_RDJ_ADD_ON_HATCH_TEST"
+	BadgeSettingsTemplateIDBadgeSafari2026RdjAddOnRaid                      BadgeSettingsTemplateID = "BADGE_SAFARI_2026_RDJ_ADD_ON_RAID"
+	BadgeSettingsTemplateIDBadgeSafari2026RdjAddOnRaidTest                  BadgeSettingsTemplateID = "BADGE_SAFARI_2026_RDJ_ADD_ON_RAID_TEST"
+	BadgeSettingsTemplateIDBadgeSafari2026RdjDay00                          BadgeSettingsTemplateID = "BADGE_SAFARI_2026_RDJ_DAY_00"
+	BadgeSettingsTemplateIDBadgeSafari2026RdjDay01                          BadgeSettingsTemplateID = "BADGE_SAFARI_2026_RDJ_DAY_01"
+	BadgeSettingsTemplateIDBadgeSafari2026RdjDay02                          BadgeSettingsTemplateID = "BADGE_SAFARI_2026_RDJ_DAY_02"
 	BadgeSettingsTemplateIDBadgeSafariZoneEurope2017                        BadgeSettingsTemplateID = "BADGE_SAFARI_ZONE_EUROPE_2017"
 	BadgeSettingsTemplateIDBadgeSafariZoneEurope20171007                    BadgeSettingsTemplateID = "BADGE_SAFARI_ZONE_EUROPE_2017_10_07"
 	BadgeSettingsTemplateIDBadgeSafariZoneEurope20171014                    BadgeSettingsTemplateID = "BADGE_SAFARI_ZONE_EUROPE_2017_10_14"
@@ -1917,6 +1959,48 @@ var BadgeSettingsTemplateIDValues = [...]BadgeSettingsTemplateID{
 	BadgeSettingsTemplateIDBadgeSafari2025VancouverSaturday,
 	BadgeSettingsTemplateIDBadgeSafari2025VancouverSunday,
 	BadgeSettingsTemplateIDBadgeSafari2025VancouverTest,
+	BadgeSettingsTemplateIDBadgeSafari2026BostonAddOnHatch,
+	BadgeSettingsTemplateIDBadgeSafari2026BostonAddOnHatchTest,
+	BadgeSettingsTemplateIDBadgeSafari2026BostonAddOnRaid,
+	BadgeSettingsTemplateIDBadgeSafari2026BostonAddOnRaidTest,
+	BadgeSettingsTemplateIDBadgeSafari2026BostonDay00,
+	BadgeSettingsTemplateIDBadgeSafari2026BostonDay01,
+	BadgeSettingsTemplateIDBadgeSafari2026BostonDay02,
+	BadgeSettingsTemplateIDBadgeSafari2026BrisbaneAddOnHatch,
+	BadgeSettingsTemplateIDBadgeSafari2026BrisbaneAddOnHatchTest,
+	BadgeSettingsTemplateIDBadgeSafari2026BrisbaneAddOnRaid,
+	BadgeSettingsTemplateIDBadgeSafari2026BrisbaneAddOnRaidTest,
+	BadgeSettingsTemplateIDBadgeSafari2026BrisbaneDay00,
+	BadgeSettingsTemplateIDBadgeSafari2026BrisbaneDay01,
+	BadgeSettingsTemplateIDBadgeSafari2026BrisbaneDay02,
+	BadgeSettingsTemplateIDBadgeSafari2026LisbonAddOnHatch,
+	BadgeSettingsTemplateIDBadgeSafari2026LisbonAddOnHatchTest,
+	BadgeSettingsTemplateIDBadgeSafari2026LisbonAddOnRaid,
+	BadgeSettingsTemplateIDBadgeSafari2026LisbonAddOnRaidTest,
+	BadgeSettingsTemplateIDBadgeSafari2026LisbonDay00,
+	BadgeSettingsTemplateIDBadgeSafari2026LisbonDay01,
+	BadgeSettingsTemplateIDBadgeSafari2026LisbonDay02,
+	BadgeSettingsTemplateIDBadgeSafari2026MarseilleAddOnHatch,
+	BadgeSettingsTemplateIDBadgeSafari2026MarseilleAddOnHatchTest,
+	BadgeSettingsTemplateIDBadgeSafari2026MarseilleAddOnRaid,
+	BadgeSettingsTemplateIDBadgeSafari2026MarseilleAddOnRaidTest,
+	BadgeSettingsTemplateIDBadgeSafari2026MarseilleDay00,
+	BadgeSettingsTemplateIDBadgeSafari2026MarseilleDay01,
+	BadgeSettingsTemplateIDBadgeSafari2026MarseilleDay02,
+	BadgeSettingsTemplateIDBadgeSafari2026MunichAddOnHatch,
+	BadgeSettingsTemplateIDBadgeSafari2026MunichAddOnHatchTest,
+	BadgeSettingsTemplateIDBadgeSafari2026MunichAddOnRaid,
+	BadgeSettingsTemplateIDBadgeSafari2026MunichAddOnRaidTest,
+	BadgeSettingsTemplateIDBadgeSafari2026MunichDay00,
+	BadgeSettingsTemplateIDBadgeSafari2026MunichDay01,
+	BadgeSettingsTemplateIDBadgeSafari2026MunichDay02,
+	BadgeSettingsTemplateIDBadgeSafari2026RdjAddOnHatch,
+	BadgeSettingsTemplateIDBadgeSafari2026RdjAddOnHatchTest,
+	BadgeSettingsTemplateIDBadgeSafari2026RdjAddOnRaid,
+	BadgeSettingsTemplateIDBadgeSafari2026RdjAddOnRaidTest,
+	BadgeSettingsTemplateIDBadgeSafari2026RdjDay00,
+	BadgeSettingsTemplateIDBadgeSafari2026RdjDay01,
+	BadgeSettingsTemplateIDBadgeSafari2026RdjDay02,
 	BadgeSettingsTemplateIDBadgeSafariZoneEurope2017,
 	BadgeSettingsTemplateIDBadgeSafariZoneEurope20171007,
 	BadgeSettingsTemplateIDBadgeSafariZoneEurope20171014,

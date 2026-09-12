@@ -153,6 +153,8 @@ pub enum LocationCardSettingsTemplateId {
     Lc2026CologneCarnival001,
     #[serde(rename = "LC_2026_COPENHAGEN_GOFEST_001")]
     Lc2026CopenhagenGofest001,
+    #[serde(rename = "LC_2026_JP_GREEN")]
+    Lc2026JpGreen,
     #[serde(rename = "LC_2026_JP_RED")]
     Lc2026JpRed,
     #[serde(rename = "LC_2026_LOSANGELES_GOTOUR_001")]
@@ -379,6 +381,18 @@ pub enum LocationCardSettingsTemplateId {
     LcPokelidYamagata,
     #[serde(rename = "LC_POKELID_YAMAGUCHI")]
     LcPokelidYamaguchi,
+    #[serde(rename = "LC_SAFARI_2026_BOSTON")]
+    LcSafari2026Boston,
+    #[serde(rename = "LC_SAFARI_2026_BRISBANE")]
+    LcSafari2026Brisbane,
+    #[serde(rename = "LC_SAFARI_2026_LISBON")]
+    LcSafari2026Lisbon,
+    #[serde(rename = "LC_SAFARI_2026_MARSEILLE")]
+    LcSafari2026Marseille,
+    #[serde(rename = "LC_SAFARI_2026_MUNICH")]
+    LcSafari2026Munich,
+    #[serde(rename = "LC_SAFARI_2026_RDJ")]
+    LcSafari2026Rdj,
     #[serde(rename = "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_MOON_ULTRA_WORMHOLE_001")]
     LcSpecialBackground2024GlobalGofestMoonUltraWormhole001,
     #[serde(rename = "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_SUN_ULTRA_WORMHOLE_001")]

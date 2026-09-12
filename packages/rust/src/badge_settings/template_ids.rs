@@ -1809,6 +1809,90 @@ pub enum BadgeSettingsTemplateId {
     BadgeSafari2025VancouverSunday,
     #[serde(rename = "BADGE_SAFARI_2025_VANCOUVER_TEST")]
     BadgeSafari2025VancouverTest,
+    #[serde(rename = "BADGE_SAFARI_2026_BOSTON_ADD_ON_HATCH")]
+    BadgeSafari2026BostonAddOnHatch,
+    #[serde(rename = "BADGE_SAFARI_2026_BOSTON_ADD_ON_HATCH_TEST")]
+    BadgeSafari2026BostonAddOnHatchTest,
+    #[serde(rename = "BADGE_SAFARI_2026_BOSTON_ADD_ON_RAID")]
+    BadgeSafari2026BostonAddOnRaid,
+    #[serde(rename = "BADGE_SAFARI_2026_BOSTON_ADD_ON_RAID_TEST")]
+    BadgeSafari2026BostonAddOnRaidTest,
+    #[serde(rename = "BADGE_SAFARI_2026_BOSTON_DAY_00")]
+    BadgeSafari2026BostonDay00,
+    #[serde(rename = "BADGE_SAFARI_2026_BOSTON_DAY_01")]
+    BadgeSafari2026BostonDay01,
+    #[serde(rename = "BADGE_SAFARI_2026_BOSTON_DAY_02")]
+    BadgeSafari2026BostonDay02,
+    #[serde(rename = "BADGE_SAFARI_2026_BRISBANE_ADD_ON_HATCH")]
+    BadgeSafari2026BrisbaneAddOnHatch,
+    #[serde(rename = "BADGE_SAFARI_2026_BRISBANE_ADD_ON_HATCH_TEST")]
+    BadgeSafari2026BrisbaneAddOnHatchTest,
+    #[serde(rename = "BADGE_SAFARI_2026_BRISBANE_ADD_ON_RAID")]
+    BadgeSafari2026BrisbaneAddOnRaid,
+    #[serde(rename = "BADGE_SAFARI_2026_BRISBANE_ADD_ON_RAID_TEST")]
+    BadgeSafari2026BrisbaneAddOnRaidTest,
+    #[serde(rename = "BADGE_SAFARI_2026_BRISBANE_DAY_00")]
+    BadgeSafari2026BrisbaneDay00,
+    #[serde(rename = "BADGE_SAFARI_2026_BRISBANE_DAY_01")]
+    BadgeSafari2026BrisbaneDay01,
+    #[serde(rename = "BADGE_SAFARI_2026_BRISBANE_DAY_02")]
+    BadgeSafari2026BrisbaneDay02,
+    #[serde(rename = "BADGE_SAFARI_2026_LISBON_ADD_ON_HATCH")]
+    BadgeSafari2026LisbonAddOnHatch,
+    #[serde(rename = "BADGE_SAFARI_2026_LISBON_ADD_ON_HATCH_TEST")]
+    BadgeSafari2026LisbonAddOnHatchTest,
+    #[serde(rename = "BADGE_SAFARI_2026_LISBON_ADD_ON_RAID")]
+    BadgeSafari2026LisbonAddOnRaid,
+    #[serde(rename = "BADGE_SAFARI_2026_LISBON_ADD_ON_RAID_TEST")]
+    BadgeSafari2026LisbonAddOnRaidTest,
+    #[serde(rename = "BADGE_SAFARI_2026_LISBON_DAY_00")]
+    BadgeSafari2026LisbonDay00,
+    #[serde(rename = "BADGE_SAFARI_2026_LISBON_DAY_01")]
+    BadgeSafari2026LisbonDay01,
+    #[serde(rename = "BADGE_SAFARI_2026_LISBON_DAY_02")]
+    BadgeSafari2026LisbonDay02,
+    #[serde(rename = "BADGE_SAFARI_2026_MARSEILLE_ADD_ON_HATCH")]
+    BadgeSafari2026MarseilleAddOnHatch,
+    #[serde(rename = "BADGE_SAFARI_2026_MARSEILLE_ADD_ON_HATCH_TEST")]
+    BadgeSafari2026MarseilleAddOnHatchTest,
+    #[serde(rename = "BADGE_SAFARI_2026_MARSEILLE_ADD_ON_RAID")]
+    BadgeSafari2026MarseilleAddOnRaid,
+    #[serde(rename = "BADGE_SAFARI_2026_MARSEILLE_ADD_ON_RAID_TEST")]
+    BadgeSafari2026MarseilleAddOnRaidTest,
+    #[serde(rename = "BADGE_SAFARI_2026_MARSEILLE_DAY_00")]
+    BadgeSafari2026MarseilleDay00,
+    #[serde(rename = "BADGE_SAFARI_2026_MARSEILLE_DAY_01")]
+    BadgeSafari2026MarseilleDay01,
+    #[serde(rename = "BADGE_SAFARI_2026_MARSEILLE_DAY_02")]
+    BadgeSafari2026MarseilleDay02,
+    #[serde(rename = "BADGE_SAFARI_2026_MUNICH_ADD_ON_HATCH")]
+    BadgeSafari2026MunichAddOnHatch,
+    #[serde(rename = "BADGE_SAFARI_2026_MUNICH_ADD_ON_HATCH_TEST")]
+    BadgeSafari2026MunichAddOnHatchTest,
+    #[serde(rename = "BADGE_SAFARI_2026_MUNICH_ADD_ON_RAID")]
+    BadgeSafari2026MunichAddOnRaid,
+    #[serde(rename = "BADGE_SAFARI_2026_MUNICH_ADD_ON_RAID_TEST")]
+    BadgeSafari2026MunichAddOnRaidTest,
+    #[serde(rename = "BADGE_SAFARI_2026_MUNICH_DAY_00")]
+    BadgeSafari2026MunichDay00,
+    #[serde(rename = "BADGE_SAFARI_2026_MUNICH_DAY_01")]
+    BadgeSafari2026MunichDay01,
+    #[serde(rename = "BADGE_SAFARI_2026_MUNICH_DAY_02")]
+    BadgeSafari2026MunichDay02,
+    #[serde(rename = "BADGE_SAFARI_2026_RDJ_ADD_ON_HATCH")]
+    BadgeSafari2026RdjAddOnHatch,
+    #[serde(rename = "BADGE_SAFARI_2026_RDJ_ADD_ON_HATCH_TEST")]
+    BadgeSafari2026RdjAddOnHatchTest,
+    #[serde(rename = "BADGE_SAFARI_2026_RDJ_ADD_ON_RAID")]
+    BadgeSafari2026RdjAddOnRaid,
+    #[serde(rename = "BADGE_SAFARI_2026_RDJ_ADD_ON_RAID_TEST")]
+    BadgeSafari2026RdjAddOnRaidTest,
+    #[serde(rename = "BADGE_SAFARI_2026_RDJ_DAY_00")]
+    BadgeSafari2026RdjDay00,
+    #[serde(rename = "BADGE_SAFARI_2026_RDJ_DAY_01")]
+    BadgeSafari2026RdjDay01,
+    #[serde(rename = "BADGE_SAFARI_2026_RDJ_DAY_02")]
+    BadgeSafari2026RdjDay02,
     #[serde(rename = "BADGE_SAFARI_ZONE_EUROPE_2017")]
     BadgeSafariZoneEurope2017,
     #[serde(rename = "BADGE_SAFARI_ZONE_EUROPE_2017_10_07")]

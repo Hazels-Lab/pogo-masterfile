@@ -74,6 +74,7 @@ import type {
 	LocationCardSettings2026ChicagoGofest001,
 	LocationCardSettings2026CologneCarnival001,
 	LocationCardSettings2026CopenhagenGofest001,
+	LocationCardSettings2026JpGreen,
 	LocationCardSettings2026JpRed,
 	LocationCardSettings2026LosangelesGotour001,
 	LocationCardSettings2026MlbTbrays,
@@ -187,6 +188,12 @@ import type {
 	LocationCardSettingsPokelidWakayama,
 	LocationCardSettingsPokelidYamagata,
 	LocationCardSettingsPokelidYamaguchi,
+	LocationCardSettingsSafari2026Boston,
+	LocationCardSettingsSafari2026Brisbane,
+	LocationCardSettingsSafari2026Lisbon,
+	LocationCardSettingsSafari2026Marseille,
+	LocationCardSettingsSafari2026Munich,
+	LocationCardSettingsSafari2026Rdj,
 	LocationCardSettingsSpecialBackground2024GlobalGofestMoonUltraWormhole001,
 	LocationCardSettingsSpecialBackground2024GlobalGofestSunUltraWormhole001,
 	LocationCardSettingsSpecialBackground2024GlobalGofestUltraWormhole001,
@@ -329,6 +336,7 @@ export interface LocationCardSettingsLookup {
 	LC_2026_CHICAGO_GOFEST_001: LocationCardSettings2026ChicagoGofest001;
 	LC_2026_COLOGNE_CARNIVAL_001: LocationCardSettings2026CologneCarnival001;
 	LC_2026_COPENHAGEN_GOFEST_001: LocationCardSettings2026CopenhagenGofest001;
+	LC_2026_JP_GREEN: LocationCardSettings2026JpGreen;
 	LC_2026_JP_RED: LocationCardSettings2026JpRed;
 	LC_2026_LOSANGELES_GOTOUR_001: LocationCardSettings2026LosangelesGotour001;
 	LC_2026_MLB_TBRAYS: LocationCardSettings2026MlbTbrays;
@@ -442,6 +450,12 @@ export interface LocationCardSettingsLookup {
 	LC_POKELID_WAKAYAMA: LocationCardSettingsPokelidWakayama;
 	LC_POKELID_YAMAGATA: LocationCardSettingsPokelidYamagata;
 	LC_POKELID_YAMAGUCHI: LocationCardSettingsPokelidYamaguchi;
+	LC_SAFARI_2026_BOSTON: LocationCardSettingsSafari2026Boston;
+	LC_SAFARI_2026_BRISBANE: LocationCardSettingsSafari2026Brisbane;
+	LC_SAFARI_2026_LISBON: LocationCardSettingsSafari2026Lisbon;
+	LC_SAFARI_2026_MARSEILLE: LocationCardSettingsSafari2026Marseille;
+	LC_SAFARI_2026_MUNICH: LocationCardSettingsSafari2026Munich;
+	LC_SAFARI_2026_RDJ: LocationCardSettingsSafari2026Rdj;
 	LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_MOON_ULTRA_WORMHOLE_001: LocationCardSettingsSpecialBackground2024GlobalGofestMoonUltraWormhole001;
 	LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_SUN_ULTRA_WORMHOLE_001: LocationCardSettingsSpecialBackground2024GlobalGofestSunUltraWormhole001;
 	LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_ULTRA_WORMHOLE_001: LocationCardSettingsSpecialBackground2024GlobalGofestUltraWormhole001;

@@ -46,6 +46,7 @@ export interface ItemSettingsData {
 		| "ITEM_CATEGORY_UTILITES"
 		| "ITEM_CATEGORY_XP_BOOST";
 	descriptionOverride?:
+		| "item_event_ticket_02_desc_catch_mastery_Phantump"
 		| "item_event_ticket_02_details_CATCH_MASTERY_ORICORIO"
 		| "ITEM_EVENT_TICKET_05_details_gmaxRillaboom26"
 		| "item_event_ticket_06_desc_ENTEI_SHADOW_RAID_DAY"
@@ -138,6 +139,7 @@ export interface ItemSettingsData {
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fc397eb56_PGO-MCS_Staraptor_Super_Mega_Raid_Day_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fdaa6a9dd_PGO_MCS_CD_Classic_KeyArt_Gible_v1-1024x576.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe4d25391_PGO-MCS_Phantump_Catch_Mastery_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512_logoless.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO_MCS_CD_KeyArt_Frigibax_v1-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-deino-community-day-classic-2026-nologo.jpg"
@@ -187,6 +189,7 @@ export interface ItemSettingsData {
 			| "1789232400000"
 			| "1789837200000"
 			| "1790071200000"
+			| "1790452800000"
 			| "1794765600000";
 		clientEventStartTimeUtcMs:
 			| "1696845600000"
@@ -219,6 +222,7 @@ export interface ItemSettingsData {
 			| "1788872400000"
 			| "1789221600000"
 			| "1789826400000"
+			| "1790416800000"
 			| "1794650400000";
 		conflictStoryQuestIds?: ["RERUN_MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER", "MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER"];
 		detailsLinkKey?:
@@ -232,10 +236,10 @@ export interface ItemSettingsData {
 			| "details_link_key_MegaRaichuRaidDay"
 			| "details_link_key_MegaStarmieRaidDay"
 			| "details_link_key_ORICORIO_MASTERY_FEB2026"
+			| "details_link_key_Phantump_MASTERY_SEP2026"
 			| "details_link_key_REPLAY_GO_BIGGER_MAX_BATTLE"
 			| "details_link_key_Riolu_Hatch0426"
 			| "details_link_key_shayminmasterworkrerun"
-			| "gowa_2026_global_ticket_details_link"
 			| "item_event_ticket_evergreen_details_PawPrint_20250620"
 			| "item_global_event_ticket_details_GOTour2026"
 			| "nickit_website_link";
@@ -249,6 +253,7 @@ export interface ItemSettingsData {
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fc397eb56_PGO-MCS_Staraptor_Super_Mega_Raid_Day_v1-1024x576.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe4d25391_PGO-MCS_Phantump_Catch_Mastery_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO_MCS_CD_KeyArt_Frigibax_v1-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO_MCS_MasterBall_KeyArt_TK_GP_V2_S14_1024x512_nologo.jpg"
@@ -270,6 +275,7 @@ export interface ItemSettingsData {
 		eventDatetimeRangeKey?:
 			| "event_datetime_range_key_10THPARTY0726"
 			| "event_datetime_range_key_CATCH_MASTERY_ORICORIO"
+			| "event_datetime_range_key_catch_mastery_Phantump"
 			| "event_datetime_range_key_CD_Frigibax26"
 			| "event_datetime_range_key_CD_Nickit26"
 			| "event_datetime_range_key_CD_Sobble26"
@@ -323,6 +329,7 @@ export interface ItemSettingsData {
 			| "2026-09-12T17:00:00"
 			| "2026-09-19T17:00:00"
 			| "2026-09-22T10:00:00"
+			| "2026-09-26T20:00:00"
 			| "2026-11-15T18:00:00";
 		eventStartTime:
 			| "2023-10-09T10:00:00"
@@ -355,6 +362,7 @@ export interface ItemSettingsData {
 			| "2026-09-08T13:00:00"
 			| "2026-09-12T14:00:00"
 			| "2026-09-19T14:00:00"
+			| "2026-09-26T10:00:00"
 			| "2026-11-14T10:00:00";
 		giftable?: boolean;
 		giftItem?:
@@ -382,6 +390,7 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S24_NOV9_GOWAOL_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_SEP_19_MEGARAID_TO_GIFT"
+			| "ITEM_EVENT_TICKET_S24_SEP_26_CATCH_TO_GIFT"
 			| "ITEM_EVERGREEN_TICKET_TO_GIFT"
 			| "ITEM_GLOBAL_EVENT_TICKET_TO_GIFT";
 		grantBadgeBeforeEventStartMs?: "1769904000000";
@@ -428,6 +437,7 @@ export interface ItemSettingsData {
 						| "LATIAS_NORMAL"
 						| "LATIOS_NORMAL"
 						| "LOTAD_NORMAL"
+						| "PHANTUMP_NORMAL"
 						| "ROCKRUFF_NORMAL"
 						| "SHAYMIN_LAND"
 						| "THIEVUL_NORMAL"
@@ -449,6 +459,7 @@ export interface ItemSettingsData {
 					| "LATIAS"
 					| "LATIOS"
 					| "LOTAD"
+					| "PHANTUMP"
 					| "RAYQUAZA"
 					| "ROCKRUFF"
 					| "SHAYMIN"
@@ -462,6 +473,7 @@ export interface ItemSettingsData {
 		itemBagDescriptionKey:
 			| "item_battle_pass_ticket_desc"
 			| "item_event_ticket_02_desc_CATCH_MASTERY_ORICORIO"
+			| "item_event_ticket_02_desc_catch_mastery_Phantump"
 			| "ITEM_EVENT_TICKET_05_desc_gmaxRillaboom26"
 			| "item_event_ticket_06_details_REPLAY_GO_BIGGER"
 			| "item_event_ticket_07_desc_masterball25"
@@ -500,6 +512,7 @@ export interface ItemSettingsData {
 		textRewardsKey?:
 			| "text_rewards_key_10THPARTY0726"
 			| "text_rewards_key_CATCH_MASTERY_ORICORIO"
+			| "text_rewards_key_catch_mastery_Phantump"
 			| "text_rewards_key_CD_Frigibax26"
 			| "text_rewards_key_CD_Nickit26"
 			| "text_rewards_key_CD_Sobble26"
@@ -543,7 +556,6 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S23_2026_08"
 			| "ITEM_EVENT_TICKET_S23_2026_10"
 			| "ITEM_EVENT_TICKET_S23_2026_12"
-			| "ITEM_EVENT_TICKET_S24_NOV9_GOWAOL"
 			| "ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY"
 			| "ITEM_EVERGREEN_TICKET"
 			| "ITEM_GLOBAL_EVENT_TICKET";
@@ -623,6 +635,7 @@ export interface ItemSettingsData {
 		| "general2.ticket.7_masterball25_title"
 		| "general2.ticket.9_fashionRaidDay26_title"
 		| "general2.ticket2.CATCH_MASTERY_ORICORIO"
+		| "general2.ticket4.catch_mastery_Phantump"
 		| "GOTour_2026_ticket_title"
 		| "ITEM_EVENT_PASS_POINT_GO_TOUR_01_name"
 		| "item_postcard_inventory_name_stamp";
@@ -646,7 +659,7 @@ export interface ItemSettingsData {
 	};
 	timePeriodCounters?: {
 		playerActivity: {
-			limit: number;
+			limit?: number;
 		};
 	};
 	xpBoost?: {

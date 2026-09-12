@@ -13,12 +13,14 @@ const (
 	FeatureGateTemplateIDEnhancedCurrencyOverflowStardustFeatureGate        FeatureGateTemplateID = "ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE"
 	FeatureGateTemplateIDEnhancedMegaRaidReadyCheckFeatureGate              FeatureGateTemplateID = "ENHANCED_MEGA_RAID_READY_CHECK_FEATURE_GATE"
 	FeatureGateTemplateIDEventListFeatureGate                               FeatureGateTemplateID = "EVENT_LIST_FEATURE_GATE"
+	FeatureGateTemplateIDEventPassBonusMilestoneSeparationFeatureGate       FeatureGateTemplateID = "EVENT_PASS_BONUS_MILESTONE_SEPARATION_FEATURE_GATE"
 	FeatureGateTemplateIDEventPassBonusRanksFeatureGate                     FeatureGateTemplateID = "EVENT_PASS_BONUS_RANKS_FEATURE_GATE"
 	FeatureGateTemplateIDEventPassClaimableRewardToggleFeatureGate          FeatureGateTemplateID = "EVENT_PASS_CLAIMABLE_REWARD_TOGGLE_FEATURE_GATE"
 	FeatureGateTemplateIDEventPassMilestoneRewardsFeatureGate               FeatureGateTemplateID = "EVENT_PASS_MILESTONE_REWARDS_FEATURE_GATE"
 	FeatureGateTemplateIDEventTicketDatetimeRangeFeatureGate                FeatureGateTemplateID = "EVENT_TICKET_DATETIME_RANGE_FEATURE_GATE"
 	FeatureGateTemplateIDFriendshipResyncOnReadFeatureGate                  FeatureGateTemplateID = "FRIENDSHIP_RESYNC_ON_READ_FEATURE_GATE"
 	FeatureGateTemplateIDGamesiteWebviewNearbyButtonsFeatureGate            FeatureGateTemplateID = "GAMESITE_WEBVIEW_NEARBY_BUTTONS_FEATURE_GATE"
+	FeatureGateTemplateIDGetGmtAnalysisForPlayerFeatureGate                 FeatureGateTemplateID = "GET_GMT_ANALYSIS_FOR_PLAYER_FEATURE_GATE"
 	FeatureGateTemplateIDHideCampfireMapButtonsFeatureGate                  FeatureGateTemplateID = "HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE"
 	FeatureGateTemplateIDLuckyTradeNewStringsFeatureGate                    FeatureGateTemplateID = "LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE"
 	FeatureGateTemplateIDMeetupReminderNotificationsFeatureGate             FeatureGateTemplateID = "MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE"
@@ -44,12 +46,14 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDEnhancedCurrencyOverflowStardustFeatureGate,
 	FeatureGateTemplateIDEnhancedMegaRaidReadyCheckFeatureGate,
 	FeatureGateTemplateIDEventListFeatureGate,
+	FeatureGateTemplateIDEventPassBonusMilestoneSeparationFeatureGate,
 	FeatureGateTemplateIDEventPassBonusRanksFeatureGate,
 	FeatureGateTemplateIDEventPassClaimableRewardToggleFeatureGate,
 	FeatureGateTemplateIDEventPassMilestoneRewardsFeatureGate,
 	FeatureGateTemplateIDEventTicketDatetimeRangeFeatureGate,
 	FeatureGateTemplateIDFriendshipResyncOnReadFeatureGate,
 	FeatureGateTemplateIDGamesiteWebviewNearbyButtonsFeatureGate,
+	FeatureGateTemplateIDGetGmtAnalysisForPlayerFeatureGate,
 	FeatureGateTemplateIDHideCampfireMapButtonsFeatureGate,
 	FeatureGateTemplateIDLuckyTradeNewStringsFeatureGate,
 	FeatureGateTemplateIDMeetupReminderNotificationsFeatureGate,

@@ -32,13 +32,8 @@ type ArBackendSettingsFeatureBackendConfigs struct {
 	ArFeature string `json:"arFeature"`
 }
 
-type ArBackendSettingsFeatureBackendConfigsV2 struct {
-	ArBackend string `json:"arBackend"`
-	ArFeature string `json:"arFeature"`
-}
-
 type ArBackendSettings struct {
-	FeatureBackendConfigs []any `json:"featureBackendConfigs"`
+	FeatureBackendConfigs [4]ArBackendSettingsFeatureBackendConfigs `json:"featureBackendConfigs"`
 }
 
 type ArPhotoFeatureFlagsCaptureSettings struct {
@@ -65,18 +60,18 @@ type ArPhotoFeatureFlagsPokemonWithExcludedForms struct {
 }
 
 type ArPhotoFeatureFlagsPokemonWithExcludedFormsV2 struct {
+	ExcludedForms [2]string `json:"excludedForms"`
+	PokemonId     string    `json:"pokemonId"`
+}
+
+type ArPhotoFeatureFlagsPokemonWithExcludedFormsV3 struct {
 	ExcludedForms [19]string `json:"excludedForms"`
 	PokemonId     string     `json:"pokemonId"`
 }
 
-type ArPhotoFeatureFlagsPokemonWithExcludedFormsV3 struct {
+type ArPhotoFeatureFlagsPokemonWithExcludedFormsV4 struct {
 	ExcludedForms [18]string `json:"excludedForms"`
 	PokemonId     string     `json:"pokemonId"`
-}
-
-type ArPhotoFeatureFlagsPokemonWithExcludedFormsV4 struct {
-	ExcludedForms [2]string `json:"excludedForms"`
-	PokemonId     string    `json:"pokemonId"`
 }
 
 type ArPhotoFeatureFlagsPokemonWithExcludedFormsV5 struct {

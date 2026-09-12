@@ -245,6 +245,7 @@ const (
 	SettingsOverrideRuleTemplateIDSettingsRulesAndroid                     SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ANDROID"
 	SettingsOverrideRuleTemplateIDSettingsRulesAndroid14Onward             SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ANDROID_14_ONWARD"
 	SettingsOverrideRuleTemplateIDSettingsRulesBase                        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_BASE"
+	SettingsOverrideRuleTemplateIDSettingsRulesDenyAndroid14               SettingsOverrideRuleTemplateID = "SETTINGS_RULES_DENY_ANDROID14"
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10           SettingsOverrideRuleTemplateID = "SETTINGS_RULES_DENY_GOOGLEPIXEL10"
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10pro        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_DENY_GOOGLEPIXEL10PRO"
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10profold    SettingsOverrideRuleTemplateID = "SETTINGS_RULES_DENY_GOOGLEPIXEL10PROFOLD"
@@ -498,6 +499,7 @@ var SettingsOverrideRuleTemplateIDValues = [...]SettingsOverrideRuleTemplateID{
 	SettingsOverrideRuleTemplateIDSettingsRulesAndroid,
 	SettingsOverrideRuleTemplateIDSettingsRulesAndroid14Onward,
 	SettingsOverrideRuleTemplateIDSettingsRulesBase,
+	SettingsOverrideRuleTemplateIDSettingsRulesDenyAndroid14,
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10,
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10pro,
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10profold,

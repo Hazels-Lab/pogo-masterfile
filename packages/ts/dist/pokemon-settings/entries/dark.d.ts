@@ -1275,6 +1275,7 @@ export type PokemonSettingsV0229PokemonHoundoom = S<
 					};
 					modelHeight: 2;
 					modelScaleV2: 1;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0229_POKEMON_HOUNDOOM";
 					stats: {
 						baseAttack: 289;
 						baseDefense: 194;
@@ -1382,6 +1383,7 @@ export type PokemonSettingsV0229PokemonHoundoomNormal = S<
 					};
 					modelHeight: 2;
 					modelScaleV2: 1;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0229_POKEMON_HOUNDOOM";
 					stats: {
 						baseAttack: 289;
 						baseDefense: 194;

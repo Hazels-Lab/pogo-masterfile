@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "bundle", 286 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "bundle", 288 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -235,12 +235,15 @@ export type IapItemDisplayBundleCd20221 = S<
 		"bundle.cd2022.1",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
 			sale: true;
 			sku: "bundle.cd2022.1";
+			skuDisableTime: "2026-09-13T23:59:59";
+			skuDisableTimeUtcMs: "1789343999000";
+			skuEnableTime: "2022-10-13T12:00:00";
+			skuEnableTimeUtcMs: "1665662400000";
 			sortOrder: 1;
-			spriteId: "bundle.halloween.small.1";
-			title: "bundle.halloween.small.1_title";
+			spriteId: "bundle.general4.small.1";
+			title: "bundle.general4.small.1_title";
 		}
 	>
 >;
@@ -249,12 +252,15 @@ export type IapItemDisplayBundleCd20222 = S<
 		"bundle.cd2022.2",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
 			sale: true;
 			sku: "bundle.cd2022.2";
+			skuDisableTime: "2026-09-13T23:59:59";
+			skuDisableTimeUtcMs: "1789343999000";
+			skuEnableTime: "2022-10-13T12:00:00";
+			skuEnableTimeUtcMs: "1665662400000";
 			sortOrder: 2;
-			spriteId: "bundle.halloween.adventure.1";
-			title: "bundle.halloween.adventure.1_title";
+			spriteId: "bundle.general1.medium.1";
+			title: "bundle.general1.medium.1_title";
 		}
 	>
 >;
@@ -1209,6 +1215,32 @@ export type IapItemDisplayBundleGofest2026finale4 = S<
 			sortOrder: 4;
 			spriteId: "bundle.general.adventure.1";
 			title: "box_gosticker";
+		}
+	>
+>;
+export type IapItemDisplayBundleGooglefeatured20261 = S<
+	IapItemDisplay<
+		"bundle.googlefeatured2026.1",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			sku: "bundle.googlefeatured2026.1";
+			sortOrder: 1;
+			spriteId: "bundle.latam.small.1";
+			title: "bundle.wicker.box.1_title";
+		}
+	>
+>;
+export type IapItemDisplayBundleGooglefeatured20262 = S<
+	IapItemDisplay<
+		"bundle.googlefeatured2026.2",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			sku: "bundle.googlefeatured2026.2";
+			sortOrder: 1;
+			spriteId: "bundle.latam.small.1";
+			title: "bundle.wicker.box.1_title";
 		}
 	>
 >;
@@ -4068,6 +4100,8 @@ export type IapItemDisplayBundleMasterfileEntry =
 	| IapItemDisplayBundleGofest2026finale2
 	| IapItemDisplayBundleGofest2026finale3
 	| IapItemDisplayBundleGofest2026finale4
+	| IapItemDisplayBundleGooglefeatured20261
+	| IapItemDisplayBundleGooglefeatured20262
 	| IapItemDisplayBundleGotour20241
 	| IapItemDisplayBundleGotour20242
 	| IapItemDisplayBundleGotour20243

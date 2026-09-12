@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "settingsOverrideRule", split "meshing-enabled-rule-value-vps-enabled", 248 entries.
+// Generated from Pokémon GO masterfile — group "settingsOverrideRule", split "meshing-enabled-rule-value-vps-enabled", 249 entries.
 
 import type { S } from "../../_utils";
 import type { SettingsOverrideRule } from "../types";
@@ -3335,17 +3335,31 @@ export type SettingsOverrideRuleAndroid = S<
 		}
 	>
 >;
+export type SettingsOverrideRuleDenyAndroid14 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_DENY_ANDROID14",
+		{
+			meshingEnabled: "FALSE";
+			occlusionEnabled: "FALSE";
+			ruleType: 12;
+			ruleValue: "34";
+			semanticsEnabled: "FALSE";
+			sortOrder: 100;
+			vpsEnabled: "FALSE";
+		}
+	>
+>;
 export type SettingsOverrideRuleDenyGooglepixel10 = S<
 	SettingsOverrideRule<
 		"SETTINGS_RULES_DENY_GOOGLEPIXEL10",
 		{
-			meshingEnabled: "FALSE";
-			occlusionEnabled: "FALSE";
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
 			ruleType: "DEVICE_MODEL";
 			ruleValue: "Google Pixel 10";
-			semanticsEnabled: "FALSE";
+			semanticsEnabled: "TRUE";
 			sortOrder: 50;
-			vpsEnabled: "FALSE";
+			vpsEnabled: "TRUE";
 		}
 	>
 >;
@@ -3353,13 +3367,13 @@ export type SettingsOverrideRuleDenyGooglepixel10pro = S<
 	SettingsOverrideRule<
 		"SETTINGS_RULES_DENY_GOOGLEPIXEL10PRO",
 		{
-			meshingEnabled: "FALSE";
-			occlusionEnabled: "FALSE";
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
 			ruleType: "DEVICE_MODEL";
 			ruleValue: "Google Pixel 10 Pro";
-			semanticsEnabled: "FALSE";
+			semanticsEnabled: "TRUE";
 			sortOrder: 50;
-			vpsEnabled: "FALSE";
+			vpsEnabled: "TRUE";
 		}
 	>
 >;
@@ -3367,13 +3381,13 @@ export type SettingsOverrideRuleDenyGooglepixel10profold = S<
 	SettingsOverrideRule<
 		"SETTINGS_RULES_DENY_GOOGLEPIXEL10PROFOLD",
 		{
-			meshingEnabled: "FALSE";
-			occlusionEnabled: "FALSE";
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
 			ruleType: "DEVICE_MODEL";
 			ruleValue: "Google Pixel 10 Pro Fold";
-			semanticsEnabled: "FALSE";
+			semanticsEnabled: "TRUE";
 			sortOrder: 50;
-			vpsEnabled: "FALSE";
+			vpsEnabled: "TRUE";
 		}
 	>
 >;
@@ -3381,13 +3395,13 @@ export type SettingsOverrideRuleDenyGooglepixel10proxl = S<
 	SettingsOverrideRule<
 		"SETTINGS_RULES_DENY_GOOGLEPIXEL10PROXL",
 		{
-			meshingEnabled: "FALSE";
-			occlusionEnabled: "FALSE";
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
 			ruleType: "DEVICE_MODEL";
 			ruleValue: "Google Pixel 10 Pro XL";
-			semanticsEnabled: "FALSE";
+			semanticsEnabled: "TRUE";
 			sortOrder: 50;
-			vpsEnabled: "FALSE";
+			vpsEnabled: "TRUE";
 		}
 	>
 >;
@@ -3715,6 +3729,7 @@ export type SettingsOverrideRuleMeshingEnabledRuleValueVpsEnabledMasterfileEntry
 	| SettingsOverrideRuleAllowXiaomim2012k11ag
 	| SettingsOverrideRuleAllowXiaomim2102k1ac
 	| SettingsOverrideRuleAndroid
+	| SettingsOverrideRuleDenyAndroid14
 	| SettingsOverrideRuleDenyGooglepixel10
 	| SettingsOverrideRuleDenyGooglepixel10pro
 	| SettingsOverrideRuleDenyGooglepixel10profold

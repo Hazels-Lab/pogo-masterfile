@@ -243,6 +243,10 @@ pub enum IapItemDisplayTemplateId {
     BundleGofestmakegoodprep2,
     #[serde(rename = "bundle.gofestmakegoodprep.3")]
     BundleGofestmakegoodprep3,
+    #[serde(rename = "bundle.googlefeatured2026.1")]
+    BundleGooglefeatured20261,
+    #[serde(rename = "bundle.googlefeatured2026.2")]
+    BundleGooglefeatured20262,
     #[serde(rename = "bundle.GOTour2024.1")]
     BundleGotour20241,
     #[serde(rename = "bundle.GOTour2024.2")]
@@ -611,10 +615,6 @@ pub enum IapItemDisplayTemplateId {
     General2Ticket2Giftable,
     #[serde(rename = "general2.ticket.3")]
     General2Ticket3,
-    #[serde(rename = "general2.ticket.4")]
-    General2Ticket4,
-    #[serde(rename = "general2.ticket.4.giftable")]
-    General2Ticket4Giftable,
     #[serde(rename = "general2.ticket.6")]
     General2Ticket6,
     #[serde(rename = "general2.ticket.7")]
@@ -633,8 +633,6 @@ pub enum IapItemDisplayTemplateId {
     General2Ticket10Giftable,
     #[serde(rename = "general2.ticket.11")]
     General2Ticket11,
-    #[serde(rename = "general2.ticket.11.giftable")]
-    General2Ticket11Giftable,
     #[serde(rename = "general4.medium.1")]
     General4Medium1,
     #[serde(rename = "general6.small.1")]
@@ -909,10 +907,6 @@ pub enum IapItemDisplayTemplateId {
     PgoreleaseGeneral2Ticket2,
     #[serde(rename = "pgorelease.general2.ticket.2.giftable")]
     PgoreleaseGeneral2Ticket2Giftable,
-    #[serde(rename = "pgorelease.general2.ticket.4")]
-    PgoreleaseGeneral2Ticket4,
-    #[serde(rename = "pgorelease.general2.ticket.4.giftable")]
-    PgoreleaseGeneral2Ticket4Giftable,
     #[serde(rename = "pgorelease.general2.ticket.7")]
     PgoreleaseGeneral2Ticket7,
     #[serde(rename = "pgorelease.general2.ticket.7.giftable")]
@@ -937,10 +931,6 @@ pub enum IapItemDisplayTemplateId {
     PgoreleaseMonth1DeluxeEventPassTrackUnlock,
     #[serde(rename = "pgorelease.month1_deluxe_event_pass_track_unlock_plus_points")]
     PgoreleaseMonth1DeluxeEventPassTrackUnlockPlusPoints,
-    #[serde(rename = "pgorelease.month3_deluxe_event_pass_track_unlock")]
-    PgoreleaseMonth3DeluxeEventPassTrackUnlock,
-    #[serde(rename = "pgorelease.month3_deluxe_event_pass_track_unlock_plus_points")]
-    PgoreleaseMonth3DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "pgorelease.pokecoin.2750")]
     PgoreleasePokecoin2750,
     #[serde(rename = "pgorelease.pokecoin.5720")]
@@ -953,6 +943,8 @@ pub enum IapItemDisplayTemplateId {
     PgoreleaseSeptember12026DeluxeEventPassTrackUnlock,
     #[serde(rename = "pgorelease.september1_2026_deluxe_event_pass_track_unlock_plus_points")]
     PgoreleaseSeptember12026DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "pgorelease.september2_2026_deluxe_event_pass_track_unlock_redirect")]
+    PgoreleaseSeptember22026DeluxeEventPassTrackUnlockRedirect,
     #[serde(rename = "poffin")]
     Poffin,
     #[serde(rename = "pokeball.20")]
@@ -971,6 +963,10 @@ pub enum IapItemDisplayTemplateId {
     September12026DeluxeEventPassTrackUnlock,
     #[serde(rename = "SEPTEMBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
     September12026DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "SEPTEMBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
+    September22026DeluxeEventPassTrackUnlock,
+    #[serde(rename = "SEPTEMBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
+    September22026DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "starpiece.1")]
     Starpiece1,
     #[serde(rename = "starpiece.8")]

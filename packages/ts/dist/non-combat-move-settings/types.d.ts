@@ -60,12 +60,13 @@ export interface NonCombatMoveSettingsData {
 		};
 	};
 	bonusType:
-		| number
 		| "ATTACK_BONUS"
 		| "DAY_BONUS"
 		| "DEFENSE_BONUS"
 		| "FREEZE_BONUS"
 		| "MAX_MOVE_BONUS"
+		| "MEGA_X_BONUS"
+		| "MEGA_Y_BONUS"
 		| "NIGHT_BONUS"
 		| "SLOW_BONUS"
 		| "SPACE_BONUS"

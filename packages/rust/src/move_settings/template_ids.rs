@@ -673,6 +673,8 @@ pub enum MoveSettingsTemplateId {
     VmMoveTempEvolutionMegaV0149PokemonDragonite,
     #[serde(rename = "VM_MOVE_TEMP_EVOLUTION_MEGA_V0227_POKEMON_SKARMORY")]
     VmMoveTempEvolutionMegaV0227PokemonSkarmory,
+    #[serde(rename = "VM_MOVE_TEMP_EVOLUTION_MEGA_V0229_POKEMON_HOUNDOOM")]
+    VmMoveTempEvolutionMegaV0229PokemonHoundoom,
     #[serde(rename = "VM_MOVE_TEMP_EVOLUTION_MEGA_V0652_POKEMON_CHESNAUGHT")]
     VmMoveTempEvolutionMegaV0652PokemonChesnaught,
     #[serde(rename = "VM_MOVE_TEMP_EVOLUTION_MEGA_V0655_POKEMON_DELPHOX")]
