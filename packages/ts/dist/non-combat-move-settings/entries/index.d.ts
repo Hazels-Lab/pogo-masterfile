@@ -212,7 +212,7 @@ export type NonCombatMoveSettingsVmMoveTempEvolutionMegaXV0150PokemonMewtwo = S<
 					specialMove: "TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO";
 				};
 			};
-			bonusType: 10;
+			bonusType: "MEGA_X_BONUS";
 			cost: {
 				candyCost: 5;
 				tempEvoResourceCost: {
@@ -241,7 +241,7 @@ export type NonCombatMoveSettingsVmMoveTempEvolutionMegaYV0150PokemonMewtwo = S<
 					visibleAppraisalStarTiers: [3, 4];
 				};
 			};
-			bonusType: 11;
+			bonusType: "MEGA_Y_BONUS";
 			cost: {
 				candyCost: 5;
 				tempEvoResourceCost: {

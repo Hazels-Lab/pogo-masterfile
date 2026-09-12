@@ -119,6 +119,8 @@ import type {
 	IapItemDisplayBundleGofestmakegoodprep1,
 	IapItemDisplayBundleGofestmakegoodprep2,
 	IapItemDisplayBundleGofestmakegoodprep3,
+	IapItemDisplayBundleGooglefeatured20261,
+	IapItemDisplayBundleGooglefeatured20262,
 	IapItemDisplayBundleGotour20241,
 	IapItemDisplayBundleGotour20242,
 	IapItemDisplayBundleGotour20243,
@@ -303,8 +305,6 @@ import type {
 	IapItemDisplayGeneral2Ticket2,
 	IapItemDisplayGeneral2Ticket2Giftable,
 	IapItemDisplayGeneral2Ticket3,
-	IapItemDisplayGeneral2Ticket4,
-	IapItemDisplayGeneral2Ticket4Giftable,
 	IapItemDisplayGeneral2Ticket6,
 	IapItemDisplayGeneral2Ticket7,
 	IapItemDisplayGeneral2Ticket7Giftable,
@@ -314,7 +314,6 @@ import type {
 	IapItemDisplayGeneral2Ticket10,
 	IapItemDisplayGeneral2Ticket10Giftable,
 	IapItemDisplayGeneral2Ticket11,
-	IapItemDisplayGeneral2Ticket11Giftable,
 	IapItemDisplayGeneral4Medium1,
 	IapItemDisplayGeneral6Small1,
 	IapItemDisplayGofest2025DeluxeEventPassTrackUnlock,
@@ -452,8 +451,6 @@ import type {
 	IapItemDisplayPgoreleaseGeneral2Ticket1Giftable,
 	IapItemDisplayPgoreleaseGeneral2Ticket2,
 	IapItemDisplayPgoreleaseGeneral2Ticket2Giftable,
-	IapItemDisplayPgoreleaseGeneral2Ticket4,
-	IapItemDisplayPgoreleaseGeneral2Ticket4Giftable,
 	IapItemDisplayPgoreleaseGeneral2Ticket7,
 	IapItemDisplayPgoreleaseGeneral2Ticket7Giftable,
 	IapItemDisplayPgoreleaseGeneral2Ticket8,
@@ -466,14 +463,13 @@ import type {
 	IapItemDisplayPgoreleaseMay12026DeluxeEventPassTrackUnlockRedirect,
 	IapItemDisplayPgoreleaseMonth1DeluxeEventPassTrackUnlock,
 	IapItemDisplayPgoreleaseMonth1DeluxeEventPassTrackUnlockPlusPoints,
-	IapItemDisplayPgoreleaseMonth3DeluxeEventPassTrackUnlock,
-	IapItemDisplayPgoreleaseMonth3DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayPgoreleasePokecoin2750,
 	IapItemDisplayPgoreleasePokecoin5720,
 	IapItemDisplayPgoreleasePokecoin15950,
 	IapItemDisplayPgoreleasePokecoin21375,
 	IapItemDisplayPgoreleaseSeptember12026DeluxeEventPassTrackUnlock,
 	IapItemDisplayPgoreleaseSeptember12026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlockRedirect,
 	IapItemDisplayPoffin,
 	IapItemDisplayPokeball20,
 	IapItemDisplayPokeball100,
@@ -483,6 +479,8 @@ import type {
 	IapItemDisplayRemoteraidticket3,
 	IapItemDisplaySeptember12026DeluxeEventPassTrackUnlock,
 	IapItemDisplaySeptember12026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplaySeptember22026DeluxeEventPassTrackUnlock,
+	IapItemDisplaySeptember22026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayStarpiece1,
 	IapItemDisplayStarpiece8,
 	IapItemDisplaySticker8anniv13,
@@ -1318,6 +1316,8 @@ export interface IapItemDisplayLookup {
 	"bundle.gofestmakegoodprep.1": IapItemDisplayBundleGofestmakegoodprep1;
 	"bundle.gofestmakegoodprep.2": IapItemDisplayBundleGofestmakegoodprep2;
 	"bundle.gofestmakegoodprep.3": IapItemDisplayBundleGofestmakegoodprep3;
+	"bundle.googlefeatured2026.1": IapItemDisplayBundleGooglefeatured20261;
+	"bundle.googlefeatured2026.2": IapItemDisplayBundleGooglefeatured20262;
 	"bundle.GOTour2024.1": IapItemDisplayBundleGotour20241;
 	"bundle.GOTour2024.2": IapItemDisplayBundleGotour20242;
 	"bundle.GOTour2024.3": IapItemDisplayBundleGotour20243;
@@ -1502,8 +1502,6 @@ export interface IapItemDisplayLookup {
 	"general2.ticket.2": IapItemDisplayGeneral2Ticket2;
 	"general2.ticket.2.giftable": IapItemDisplayGeneral2Ticket2Giftable;
 	"general2.ticket.3": IapItemDisplayGeneral2Ticket3;
-	"general2.ticket.4": IapItemDisplayGeneral2Ticket4;
-	"general2.ticket.4.giftable": IapItemDisplayGeneral2Ticket4Giftable;
 	"general2.ticket.6": IapItemDisplayGeneral2Ticket6;
 	"general2.ticket.7": IapItemDisplayGeneral2Ticket7;
 	"general2.ticket.7.giftable": IapItemDisplayGeneral2Ticket7Giftable;
@@ -1513,7 +1511,6 @@ export interface IapItemDisplayLookup {
 	"general2.ticket.10": IapItemDisplayGeneral2Ticket10;
 	"general2.ticket.10.giftable": IapItemDisplayGeneral2Ticket10Giftable;
 	"general2.ticket.11": IapItemDisplayGeneral2Ticket11;
-	"general2.ticket.11.giftable": IapItemDisplayGeneral2Ticket11Giftable;
 	"general4.medium.1": IapItemDisplayGeneral4Medium1;
 	"general6.small.1": IapItemDisplayGeneral6Small1;
 	GO_SAFARI_BALL_IAP_10: IapItemDisplayGoSafariBallIap10;
@@ -1651,8 +1648,6 @@ export interface IapItemDisplayLookup {
 	"pgorelease.general2.ticket.1.giftable": IapItemDisplayPgoreleaseGeneral2Ticket1Giftable;
 	"pgorelease.general2.ticket.2": IapItemDisplayPgoreleaseGeneral2Ticket2;
 	"pgorelease.general2.ticket.2.giftable": IapItemDisplayPgoreleaseGeneral2Ticket2Giftable;
-	"pgorelease.general2.ticket.4": IapItemDisplayPgoreleaseGeneral2Ticket4;
-	"pgorelease.general2.ticket.4.giftable": IapItemDisplayPgoreleaseGeneral2Ticket4Giftable;
 	"pgorelease.general2.ticket.7": IapItemDisplayPgoreleaseGeneral2Ticket7;
 	"pgorelease.general2.ticket.7.giftable": IapItemDisplayPgoreleaseGeneral2Ticket7Giftable;
 	"pgorelease.general2.ticket.8": IapItemDisplayPgoreleaseGeneral2Ticket8;
@@ -1665,14 +1660,13 @@ export interface IapItemDisplayLookup {
 	"pgorelease.may1_2026_deluxe_event_pass_track_unlock_redirect": IapItemDisplayPgoreleaseMay12026DeluxeEventPassTrackUnlockRedirect;
 	"pgorelease.month1_deluxe_event_pass_track_unlock": IapItemDisplayPgoreleaseMonth1DeluxeEventPassTrackUnlock;
 	"pgorelease.month1_deluxe_event_pass_track_unlock_plus_points": IapItemDisplayPgoreleaseMonth1DeluxeEventPassTrackUnlockPlusPoints;
-	"pgorelease.month3_deluxe_event_pass_track_unlock": IapItemDisplayPgoreleaseMonth3DeluxeEventPassTrackUnlock;
-	"pgorelease.month3_deluxe_event_pass_track_unlock_plus_points": IapItemDisplayPgoreleaseMonth3DeluxeEventPassTrackUnlockPlusPoints;
 	"pgorelease.pokecoin.2750": IapItemDisplayPgoreleasePokecoin2750;
 	"pgorelease.pokecoin.5720": IapItemDisplayPgoreleasePokecoin5720;
 	"pgorelease.pokecoin.15950": IapItemDisplayPgoreleasePokecoin15950;
 	"pgorelease.pokecoin.21375": IapItemDisplayPgoreleasePokecoin21375;
 	"pgorelease.september1_2026_deluxe_event_pass_track_unlock": IapItemDisplayPgoreleaseSeptember12026DeluxeEventPassTrackUnlock;
 	"pgorelease.september1_2026_deluxe_event_pass_track_unlock_plus_points": IapItemDisplayPgoreleaseSeptember12026DeluxeEventPassTrackUnlockPlusPoints;
+	"pgorelease.september2_2026_deluxe_event_pass_track_unlock_redirect": IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlockRedirect;
 	poffin: IapItemDisplayPoffin;
 	"pokeball.20": IapItemDisplayPokeball20;
 	"pokeball.100": IapItemDisplayPokeball100;
@@ -1682,6 +1676,8 @@ export interface IapItemDisplayLookup {
 	"remoteraidticket.3": IapItemDisplayRemoteraidticket3;
 	SEPTEMBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplaySeptember12026DeluxeEventPassTrackUnlock;
 	SEPTEMBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplaySeptember12026DeluxeEventPassTrackUnlockPlusPoints;
+	SEPTEMBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplaySeptember22026DeluxeEventPassTrackUnlock;
+	SEPTEMBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplaySeptember22026DeluxeEventPassTrackUnlockPlusPoints;
 	"starpiece.1": IapItemDisplayStarpiece1;
 	"starpiece.8": IapItemDisplayStarpiece8;
 	"STICKER_8ANNIV_1.3": IapItemDisplaySticker8anniv13;

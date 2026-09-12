@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "settingsOverrideRule", 250 entries (structural types).
+// Generated from Pokémon GO masterfile — group "settingsOverrideRule", 251 entries (structural types).
 
 import type { W } from "../_utils";
 

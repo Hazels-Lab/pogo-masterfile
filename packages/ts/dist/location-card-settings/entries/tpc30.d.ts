@@ -7,7 +7,7 @@ export type LocationCardSettingsTpc30My = S<
 	LocationCardSettings<
 		"LC_TPC30_MY",
 		{
-			imageUrl: "lc_tpc30_my";
+			imageUrl: "lc_tpc30th_malaysia";
 		}
 	>
 >;
@@ -15,7 +15,7 @@ export type LocationCardSettingsTpc30Ph = S<
 	LocationCardSettings<
 		"LC_TPC30_PH",
 		{
-			imageUrl: "lc_tpc30_ph";
+			imageUrl: "lc_tpc30th_philippines";
 		}
 	>
 >;
@@ -23,7 +23,7 @@ export type LocationCardSettingsTpc30Sg = S<
 	LocationCardSettings<
 		"LC_TPC30_SG",
 		{
-			imageUrl: "lc_tpc30_sg";
+			imageUrl: "lc_tpc30th_singapore";
 		}
 	>
 >;
@@ -31,7 +31,7 @@ export type LocationCardSettingsTpc30Tw = S<
 	LocationCardSettings<
 		"LC_TPC30_TW",
 		{
-			imageUrl: "lc_tpc30_tw";
+			imageUrl: "lc_tpc30th_taiwan";
 		}
 	>
 >;

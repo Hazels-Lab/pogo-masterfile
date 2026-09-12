@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "badgeSettings", split "event-badge", 801 entries.
+// Generated from Pokémon GO masterfile — group "badgeSettings", split "event-badge", 843 entries.
 
 import type { S } from "../../_utils";
 import type { BadgeSettings } from "../types";
@@ -7283,6 +7283,426 @@ export type BadgeSettingsSafari2025VancouverTest = S<
 		}
 	>
 >;
+export type BadgeSettingsSafari2026BostonAddOnHatch = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_BOSTON_ADD_ON_HATCH",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026BostonAddOnHatchTest = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_BOSTON_ADD_ON_HATCH_TEST",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026BostonAddOnRaid = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_BOSTON_ADD_ON_RAID",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026BostonAddOnRaidTest = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_BOSTON_ADD_ON_RAID_TEST",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026BostonDay00 = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_BOSTON_DAY_00",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026BostonDay01 = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_BOSTON_DAY_01",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026BostonDay02 = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_BOSTON_DAY_02",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026BrisbaneAddOnHatch = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_BRISBANE_ADD_ON_HATCH",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026BrisbaneAddOnHatchTest = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_BRISBANE_ADD_ON_HATCH_TEST",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026BrisbaneAddOnRaid = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_BRISBANE_ADD_ON_RAID",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026BrisbaneAddOnRaidTest = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_BRISBANE_ADD_ON_RAID_TEST",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026BrisbaneDay00 = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_BRISBANE_DAY_00",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026BrisbaneDay01 = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_BRISBANE_DAY_01",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026BrisbaneDay02 = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_BRISBANE_DAY_02",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026LisbonAddOnHatch = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_LISBON_ADD_ON_HATCH",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026LisbonAddOnHatchTest = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_LISBON_ADD_ON_HATCH_TEST",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026LisbonAddOnRaid = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_LISBON_ADD_ON_RAID",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026LisbonAddOnRaidTest = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_LISBON_ADD_ON_RAID_TEST",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026LisbonDay00 = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_LISBON_DAY_00",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026LisbonDay01 = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_LISBON_DAY_01",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026LisbonDay02 = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_LISBON_DAY_02",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026MarseilleAddOnHatch = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_MARSEILLE_ADD_ON_HATCH",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026MarseilleAddOnHatchTest = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_MARSEILLE_ADD_ON_HATCH_TEST",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026MarseilleAddOnRaid = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_MARSEILLE_ADD_ON_RAID",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026MarseilleAddOnRaidTest = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_MARSEILLE_ADD_ON_RAID_TEST",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026MarseilleDay00 = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_MARSEILLE_DAY_00",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026MarseilleDay01 = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_MARSEILLE_DAY_01",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026MarseilleDay02 = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_MARSEILLE_DAY_02",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026MunichAddOnHatch = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_MUNICH_ADD_ON_HATCH",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026MunichAddOnHatchTest = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_MUNICH_ADD_ON_HATCH_TEST",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026MunichAddOnRaid = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_MUNICH_ADD_ON_RAID",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026MunichAddOnRaidTest = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_MUNICH_ADD_ON_RAID_TEST",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026MunichDay00 = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_MUNICH_DAY_00",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026MunichDay01 = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_MUNICH_DAY_01",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026MunichDay02 = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_MUNICH_DAY_02",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026RdjAddOnHatch = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_RDJ_ADD_ON_HATCH",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026RdjAddOnHatchTest = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_RDJ_ADD_ON_HATCH_TEST",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026RdjAddOnRaid = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_RDJ_ADD_ON_RAID",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026RdjAddOnRaidTest = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_RDJ_ADD_ON_RAID_TEST",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026RdjDay00 = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_RDJ_DAY_00",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026RdjDay01 = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_RDJ_DAY_01",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsSafari2026RdjDay02 = S<
+	BadgeSettings<
+		"BADGE_SAFARI_2026_RDJ_DAY_02",
+		{
+			badgeRank: 2;
+			eventBadge: true;
+			targets: [100];
+		}
+	>
+>;
 export type BadgeSettingsSafariZoneEurope2017 = S<
 	BadgeSettings<
 		"BADGE_SAFARI_ZONE_EUROPE_2017",
@@ -8743,6 +9163,48 @@ export type BadgeSettingsEventBadgeMasterfileEntry =
 	| BadgeSettingsSafari2025VancouverSaturday
 	| BadgeSettingsSafari2025VancouverSunday
 	| BadgeSettingsSafari2025VancouverTest
+	| BadgeSettingsSafari2026BostonAddOnHatch
+	| BadgeSettingsSafari2026BostonAddOnHatchTest
+	| BadgeSettingsSafari2026BostonAddOnRaid
+	| BadgeSettingsSafari2026BostonAddOnRaidTest
+	| BadgeSettingsSafari2026BostonDay00
+	| BadgeSettingsSafari2026BostonDay01
+	| BadgeSettingsSafari2026BostonDay02
+	| BadgeSettingsSafari2026BrisbaneAddOnHatch
+	| BadgeSettingsSafari2026BrisbaneAddOnHatchTest
+	| BadgeSettingsSafari2026BrisbaneAddOnRaid
+	| BadgeSettingsSafari2026BrisbaneAddOnRaidTest
+	| BadgeSettingsSafari2026BrisbaneDay00
+	| BadgeSettingsSafari2026BrisbaneDay01
+	| BadgeSettingsSafari2026BrisbaneDay02
+	| BadgeSettingsSafari2026LisbonAddOnHatch
+	| BadgeSettingsSafari2026LisbonAddOnHatchTest
+	| BadgeSettingsSafari2026LisbonAddOnRaid
+	| BadgeSettingsSafari2026LisbonAddOnRaidTest
+	| BadgeSettingsSafari2026LisbonDay00
+	| BadgeSettingsSafari2026LisbonDay01
+	| BadgeSettingsSafari2026LisbonDay02
+	| BadgeSettingsSafari2026MarseilleAddOnHatch
+	| BadgeSettingsSafari2026MarseilleAddOnHatchTest
+	| BadgeSettingsSafari2026MarseilleAddOnRaid
+	| BadgeSettingsSafari2026MarseilleAddOnRaidTest
+	| BadgeSettingsSafari2026MarseilleDay00
+	| BadgeSettingsSafari2026MarseilleDay01
+	| BadgeSettingsSafari2026MarseilleDay02
+	| BadgeSettingsSafari2026MunichAddOnHatch
+	| BadgeSettingsSafari2026MunichAddOnHatchTest
+	| BadgeSettingsSafari2026MunichAddOnRaid
+	| BadgeSettingsSafari2026MunichAddOnRaidTest
+	| BadgeSettingsSafari2026MunichDay00
+	| BadgeSettingsSafari2026MunichDay01
+	| BadgeSettingsSafari2026MunichDay02
+	| BadgeSettingsSafari2026RdjAddOnHatch
+	| BadgeSettingsSafari2026RdjAddOnHatchTest
+	| BadgeSettingsSafari2026RdjAddOnRaid
+	| BadgeSettingsSafari2026RdjAddOnRaidTest
+	| BadgeSettingsSafari2026RdjDay00
+	| BadgeSettingsSafari2026RdjDay01
+	| BadgeSettingsSafari2026RdjDay02
 	| BadgeSettingsSafariZoneEurope2017
 	| BadgeSettingsSafariZoneEurope20171007
 	| BadgeSettingsSafariZoneEurope20171014

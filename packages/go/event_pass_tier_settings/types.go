@@ -44,7 +44,7 @@ type EventPassTierSettingsStatsLimitsOverride struct {
 
 type EventPassTierSettingsPokemonEncounter struct {
 	IsFeaturedPokemon   *bool                                     `json:"isFeaturedPokemon,omitempty"`
-	PokemonDisplay      *EventPassTierSettingsPokemonDisplay      `json:"pokemonDisplay,omitempty"`
+	PokemonDisplay      EventPassTierSettingsPokemonDisplay       `json:"pokemonDisplay"`
 	PokemonId           string                                    `json:"pokemonId"`
 	StatsLimitsOverride *EventPassTierSettingsStatsLimitsOverride `json:"statsLimitsOverride,omitempty"`
 }

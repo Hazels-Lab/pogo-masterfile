@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 50 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 44 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -17,23 +17,6 @@ export type IapItemDisplayEventPassMonth1SeasonStoreRedirect = S<
 			skuEnableTimeUtcMs: "1748858400000";
 			sortOrder: 1;
 			title: "season_pass_premium_track_title_sep";
-		}
-	>
->;
-export type IapItemDisplayEventPassMonth3SeasonStoreRedirect = S<
-	IapItemDisplay<
-		"EVENT_PASS_MONTH3_SEASON_STORE_REDIRECT",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F84f00147_PGO-MCS_GO_Pass_August_2026_TICKET_v1-1024x576.jpg";
-			sku: "pgorelease.month3_deluxe_event_pass_track_redirect";
-			skuDisableTime: "2026-09-10T10:00:00";
-			skuDisableTimeUtcMs: "1789034400000";
-			skuEnableTime: "2025-08-04T10:00:00";
-			skuEnableTimeUtcMs: "1754301600000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_title_aug";
 		}
 	>
 >;
@@ -317,44 +300,6 @@ export type IapItemDisplayGeneral2Ticket3 = S<
 		}
 	>
 >;
-export type IapItemDisplayGeneral2Ticket4 = S<
-	IapItemDisplay<
-		"general2.ticket.4",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-replay-water-research-day-2026-nologo.jpg";
-			sku: "general2.ticket.4";
-			skuDisableTime: "2026-03-21T17:00:00";
-			skuDisableTimeUtcMs: "1774112400000";
-			skuEnableTime: "2023-01-01T11:00:01";
-			skuEnableTimeUtcMs: "1672570801000";
-			sortOrder: 1;
-			spriteId: "general2.ticket.2";
-			title: "general1.ticket.2_WaterRRD26_title";
-			webstoreSkuId: "web-water-research-day-ticket-box";
-			webstoreSkuPriceE6: 1990000;
-		}
-	>
->;
-export type IapItemDisplayGeneral2Ticket4Giftable = S<
-	IapItemDisplay<
-		"general2.ticket.4.giftable",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-replay-water-research-day-2026-nologo.jpg";
-			sku: "general2.ticket.4.giftable";
-			skuDisableTime: "2026-03-21T17:00:00";
-			skuDisableTimeUtcMs: "1774112400000";
-			skuEnableTime: "2023-01-01T11:00:01";
-			skuEnableTimeUtcMs: "1672570801000";
-			sortOrder: 1;
-			spriteId: "general2.ticket.2";
-			title: "general1.ticket.2_WaterRRD26_title";
-		}
-	>
->;
 export type IapItemDisplayGeneral2Ticket6 = S<
 	IapItemDisplay<
 		"general2.ticket.6",
@@ -512,7 +457,6 @@ export type IapItemDisplayGeneral2Ticket11 = S<
 		"general2.ticket.11",
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png";
 			sku: "general2.ticket.11";
 			skuDisableTime: "2026-11-15T20:00:00";
@@ -520,26 +464,9 @@ export type IapItemDisplayGeneral2Ticket11 = S<
 			skuEnableTime: "2020-01-01T00:00:00";
 			skuEnableTimeUtcMs: "1577836800000";
 			sortOrder: 1;
+			spriteId: "general1.ticket.4";
 			title: "general2.ticket._GOWA26_title";
 			webstoreSkuId: "web-gowa-global-2026-ticket";
-			webstoreSkuPriceE6: 11990000;
-		}
-	>
->;
-export type IapItemDisplayGeneral2Ticket11Giftable = S<
-	IapItemDisplay<
-		"general2.ticket.11.giftable",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png";
-			sku: "general2.ticket.11.giftable";
-			skuDisableTime: "2026-11-15T20:00:00";
-			skuDisableTimeUtcMs: "1794772800000";
-			skuEnableTime: "2020-01-01T00:00:00";
-			skuEnableTimeUtcMs: "1577836800000";
-			sortOrder: 1;
-			title: "general2.ticket._GOWA26_title";
 			webstoreSkuPriceE6: 11990000;
 		}
 	>
@@ -789,44 +716,6 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket2Giftable = S<
 		}
 	>
 >;
-export type IapItemDisplayPgoreleaseGeneral2Ticket4 = S<
-	IapItemDisplay<
-		"pgorelease.general2.ticket.4",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-replay-water-research-day-2026-nologo.jpg";
-			sku: "pgorelease.general2.ticket.4";
-			skuDisableTime: "2026-03-21T17:00:00";
-			skuDisableTimeUtcMs: "1774112400000";
-			skuEnableTime: "2023-01-01T11:00:01";
-			skuEnableTimeUtcMs: "1672570801000";
-			sortOrder: 1;
-			spriteId: "general2.ticket.2";
-			title: "general1.ticket.2_WaterRRD26_title";
-			webstoreSkuId: "web-water-research-day-ticket-box";
-			webstoreSkuPriceE6: 1990000;
-		}
-	>
->;
-export type IapItemDisplayPgoreleaseGeneral2Ticket4Giftable = S<
-	IapItemDisplay<
-		"pgorelease.general2.ticket.4.giftable",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-replay-water-research-day-2026-nologo.jpg";
-			sku: "pgorelease.general2.ticket.4.giftable";
-			skuDisableTime: "2026-03-21T17:00:00";
-			skuDisableTimeUtcMs: "1774112400000";
-			skuEnableTime: "2023-01-01T11:00:01";
-			skuEnableTimeUtcMs: "1672570801000";
-			sortOrder: 1;
-			spriteId: "general2.ticket.2";
-			title: "general1.ticket.2_WaterRRD26_title";
-		}
-	>
->;
 export type IapItemDisplayPgoreleaseGeneral2Ticket7 = S<
 	IapItemDisplay<
 		"pgorelease.general2.ticket.7",
@@ -944,7 +833,6 @@ export type IapItemDisplayPgoreleaseGeneral2Ticket10Giftable = S<
 
 export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayEventPassMonth1SeasonStoreRedirect
-	| IapItemDisplayEventPassMonth3SeasonStoreRedirect
 	| IapItemDisplayEventPassSeptember1EventStoreRedirect
 	| IapItemDisplayEvergreenticket1
 	| IapItemDisplayEvergreenticket1Giftable
@@ -960,8 +848,6 @@ export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayGeneral2Ticket2
 	| IapItemDisplayGeneral2Ticket2Giftable
 	| IapItemDisplayGeneral2Ticket3
-	| IapItemDisplayGeneral2Ticket4
-	| IapItemDisplayGeneral2Ticket4Giftable
 	| IapItemDisplayGeneral2Ticket6
 	| IapItemDisplayGeneral2Ticket7
 	| IapItemDisplayGeneral2Ticket7Giftable
@@ -971,7 +857,6 @@ export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayGeneral2Ticket10
 	| IapItemDisplayGeneral2Ticket10Giftable
 	| IapItemDisplayGeneral2Ticket11
-	| IapItemDisplayGeneral2Ticket11Giftable
 	| IapItemDisplayPgoreleaseCitysafariticket01
 	| IapItemDisplayPgoreleaseCitysafariticket11
 	| IapItemDisplayPgoreleaseCitysafariticket21
@@ -985,8 +870,6 @@ export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayPgoreleaseGeneral2Ticket1Giftable
 	| IapItemDisplayPgoreleaseGeneral2Ticket2
 	| IapItemDisplayPgoreleaseGeneral2Ticket2Giftable
-	| IapItemDisplayPgoreleaseGeneral2Ticket4
-	| IapItemDisplayPgoreleaseGeneral2Ticket4Giftable
 	| IapItemDisplayPgoreleaseGeneral2Ticket7
 	| IapItemDisplayPgoreleaseGeneral2Ticket7Giftable
 	| IapItemDisplayPgoreleaseGeneral2Ticket8

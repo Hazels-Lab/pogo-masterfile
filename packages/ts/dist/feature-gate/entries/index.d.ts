@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 28 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 30 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -62,6 +62,14 @@ export type FeatureGateEnhancedMegaRaidReadyCheck = S<
 export type FeatureGateEventList = S<
 	FeatureGate<
 		"EVENT_LIST_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateEventPassBonusMilestoneSeparation = S<
+	FeatureGate<
+		"EVENT_PASS_BONUS_MILESTONE_SEPARATION_FEATURE_GATE",
 		{
 			status: 1;
 		}
@@ -136,6 +144,14 @@ export type FeatureGateGamesiteWebviewNearbyButtons = S<
 					status: 1;
 				},
 			];
+		}
+	>
+>;
+export type FeatureGateGetGmtAnalysisForPlayer = S<
+	FeatureGate<
+		"GET_GMT_ANALYSIS_FOR_PLAYER_FEATURE_GATE",
+		{
+			status: 1;
 		}
 	>
 >;
@@ -280,12 +296,14 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateEnhancedCurrencyOverflowStardust
 	| FeatureGateEnhancedMegaRaidReadyCheck
 	| FeatureGateEventList
+	| FeatureGateEventPassBonusMilestoneSeparation
 	| FeatureGateEventPassBonusRanks
 	| FeatureGateEventPassClaimableRewardToggle
 	| FeatureGateEventPassMilestoneRewards
 	| FeatureGateEventTicketDatetimeRange
 	| FeatureGateFriendshipResyncOnRead
 	| FeatureGateGamesiteWebviewNearbyButtons
+	| FeatureGateGetGmtAnalysisForPlayer
 	| FeatureGateHideCampfireMapButtons
 	| FeatureGateLuckyTradeNewStrings
 	| FeatureGateMeetupReminderNotifications

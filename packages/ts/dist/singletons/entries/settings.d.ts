@@ -72,7 +72,6 @@ export interface ArBackendSettings {
 					arFeature: "IRIS";
 				},
 				{
-					arBackend: "CUSTOM";
 					arFeature: "AR_PHOTO_SOCIAL";
 				},
 			];

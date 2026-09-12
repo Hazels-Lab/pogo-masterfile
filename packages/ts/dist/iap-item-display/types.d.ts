@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1196 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1194 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -62,6 +62,7 @@ export interface IapItemDisplayData {
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fd07cba0c_PGO-MCS_GOFest_2026_GOPass_v3-16x9.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fdaa6a9dd_PGO_MCS_CD_Classic_KeyArt_Gible_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe3025fe6_PGO-MCS_GO_Fest_2026_AMER_Global_LiveOp_v2-1024x576.jpg"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fec63551c_PGO-MCS_Horizon_Celebration_2026_TICKET_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FEvent%20Pass%20Placeholder.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff2c7f843_PGO-MCS_GO_Pass_July_2026_ticket_v1-1024x576_nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff6da0ab4_PGO-MCS_GO_Fest_2026_APAC_Global_LiveOp_v2-1024x576.jpg"
@@ -82,7 +83,6 @@ export interface IapItemDisplayData {
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Winter_Holiday_2025_EventPass_v2-1024x576-nologo%20(1).jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-paid-shockingly-good-time-2026-nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-paid-sustainability-week-2026-nologo.jpg"
-		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-replay-water-research-day-2026-nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-shiny-jirachi-masterwork-ticket-nologo-2025.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-yampers-paw-prints-ticket-nologo-2025.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FTourPass2026.jpg"
@@ -126,6 +126,7 @@ export interface IapItemDisplayData {
 		| "2025-08-12T20:00:00"
 		| "2025-08-26T21:00:00"
 		| "2025-09-01T20:00:00"
+		| "2025-09-10T10:00:00"
 		| "2025-11-16T18:00:00"
 		| "2025-11-30T20:00:00"
 		| "2025-12-29T23:59:00"
@@ -137,17 +138,17 @@ export interface IapItemDisplayData {
 		| "2026-02-07T20:00:00"
 		| "2026-03-01T18:00:00"
 		| "2026-03-15T20:00:00"
-		| "2026-03-21T17:00:00"
 		| "2026-05-02T17:00:00"
 		| "2026-06-27T17:00:00"
 		| "2026-07-06T20:00:00"
 		| "2026-07-14T23:59:59"
 		| "2026-07-27T20:00:00"
 		| "2026-08-26T20:00:00"
-		| "2026-09-10T10:00:00"
 		| "2026-09-12T17:00:00"
+		| "2026-09-13T23:59:59"
 		| "2026-09-16T20:00:00"
 		| "2026-09-22T13:00:00"
+		| "2026-09-24T20:00:00"
 		| "2026-10-08T10:00:00"
 		| "2026-11-15T20:00:00";
 	skuDisableTimeUtcMs?:
@@ -180,6 +181,7 @@ export interface IapItemDisplayData {
 		| "1755028800000"
 		| "1756242000000"
 		| "1756756800000"
+		| "1757498400000"
 		| "1763316000000"
 		| "1764532800000"
 		| "1767052740000"
@@ -191,17 +193,17 @@ export interface IapItemDisplayData {
 		| "1770494400000"
 		| "1772388000000"
 		| "1773604800000"
-		| "1774112400000"
 		| "1777741200000"
 		| "1782579600000"
 		| "1783368000000"
 		| "1784073599000"
 		| "1785182400000"
 		| "1787774400000"
-		| "1789034400000"
 		| "1789232400000"
+		| "1789343999000"
 		| "1789588800000"
 		| "1790082000000"
+		| "1790280000000"
 		| "1791453600000"
 		| "1794772800000";
 	skuEnableTime?:
@@ -210,6 +212,7 @@ export interface IapItemDisplayData {
 		| "2020-01-01T00:00:00"
 		| "2020-06-02T08:00:00"
 		| "2022-03-01T00:00:00"
+		| "2022-10-13T12:00:00"
 		| "2023-01-01T11:00:01"
 		| "2023-01-01T11:00:03"
 		| "2023-02-27T20:00:00"
@@ -241,13 +244,13 @@ export interface IapItemDisplayData {
 		| "2025-07-07T10:00:00"
 		| "2025-07-13T10:00:00"
 		| "2025-07-21T10:00:00"
-		| "2025-07-28T10:00:00"
 		| "2025-08-04T10:00:00"
 		| "2025-08-18T10:00:00"
 		| "2025-08-18T10:00:02"
 		| "2025-08-18T10:00:04"
 		| "2025-08-25T10:00:00"
 		| "2025-09-08T10:00:00"
+		| "2025-09-16T10:00:00"
 		| "2026-01-02T20:00:00"
 		| "2026-03-03T13:00:00"
 		| "2026-07-06T00:00:00";
@@ -257,6 +260,7 @@ export interface IapItemDisplayData {
 		| "1577836800000"
 		| "1591084800000"
 		| "1646092800000"
+		| "1665662400000"
 		| "1672570801000"
 		| "1672570803000"
 		| "1677528000000"
@@ -288,13 +292,13 @@ export interface IapItemDisplayData {
 		| "1751882400000"
 		| "1752400800000"
 		| "1753092000000"
-		| "1753696800000"
 		| "1754301600000"
 		| "1755511200000"
 		| "1755511202000"
 		| "1755511204000"
 		| "1756116000000"
 		| "1757325600000"
+		| "1758016800000"
 		| "1767384000000"
 		| "1772542800000"
 		| "1783296000000";
@@ -311,7 +315,6 @@ export interface IapItemDisplayData {
 		| "web-gotour-26-ticket-box"
 		| "web-gowa-global-2026-ticket"
 		| "web-masterball-25-ticket-box"
-		| "web-shadow-entei-raid-box-ultra"
-		| "web-water-research-day-ticket-box";
+		| "web-shadow-entei-raid-box-ultra";
 	webstoreSkuPriceE6?: number;
 }

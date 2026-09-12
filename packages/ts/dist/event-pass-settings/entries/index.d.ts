@@ -1,53 +1,8 @@
-// Generated from Pokémon GO masterfile — group "eventPassSettings", 3 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "eventPassSettings", 2 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { EventPassSettings } from "../types";
 
-export type EventPassSettingsAugust2026Season = S<
-	EventPassSettings<
-		"EVENT_PASS_AUGUST2026_SEASON",
-		{
-			additionalBonusTiersLevel: 101;
-			eventPassDisplaySettings: {
-				eventPassTitleKey: "season_pass_base_track_title_aug";
-				eventPassTrackUpgradeDescriptions: [
-					{
-						detailsLinkKey: "season_pass_details_link_august2026";
-						eventDurationKey: "season_pass_august2026_event_duration";
-						eventPassTrackToUpgradeTo: "PREMIUM";
-						passTrackUpgradeHeaderDescription: "season_pass_august2026_track_upgrade_header_description";
-						ranksToHighlightRewards: [94, 80, 100];
-						trackUnlockImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe.png";
-						trackUnlockPlusPointsImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe_plus.png";
-						trackUnlockPlusPointsSkuId: "pgorelease.month3_deluxe_event_pass_track_unlock_plus_points";
-						trackUnlockSkuId: "pgorelease.month3_deluxe_event_pass_track_unlock";
-						upgradeDescriptionKey: "season_pass_august2026_upgrade_description";
-					},
-				];
-				headerIconUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2Fd99f7e15_Logo_256x256.png";
-				premiumRewardBannerBottom: "event_pass_premium_reward_banner_bottom_text";
-				premiumRewardBannerImageUrl: "https://storage.googleapis.com/prod-public-images/lucky_trinket_small.png";
-				premiumRewardBannerMiddle: "event_pass_premium_reward_banner_middle_text";
-				sectionDisplayPriority: 14;
-			};
-			expirationTime: "2026-09-08T10:00:00";
-			gracePeriodEndTime: "2026-09-10T10:00:00";
-			maxTierLevel: 200;
-			pointsItemId: "ITEM_EVENT_PASS_POINT_MONTHLY_03";
-			trackConditions: [
-				{
-					track: "FREE";
-					trackTitleKey: "season_pass_base_track_title_aug";
-				},
-				{
-					badge: "BADGE_EVENT_0192";
-					track: "PREMIUM";
-					trackTitleKey: "season_pass_premium_track_title_aug";
-				},
-			];
-		}
-	>
->;
 export type EventPassSettingsMegasquads2026Event = S<
 	EventPassSettings<
 		"EVENT_PASS_MEGASQUADS2026_EVENT",
@@ -69,7 +24,6 @@ export type EventPassSettingsMegasquads2026Event = S<
 						upgradeDescriptionKey: "season_pass_mega_squads_2026_upgrade_description";
 					},
 				];
-				headerIconUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7150419b_s24-logo-512x512.png";
 				premiumRewardBannerBottom: "event_pass_premium_reward_banner_bottom_text_25";
 				premiumRewardBannerImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7150419b_s24-logo-512x512.png";
 				premiumRewardBannerMiddle: "avatar_shirt_maschiff";
@@ -114,7 +68,6 @@ export type EventPassSettingsSeptember2026Season = S<
 						upgradeDescriptionKey: "season_pass_sep2026_upgrade_description";
 					},
 				];
-				headerIconUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7150419b_s24-logo-512x512.png";
 				premiumRewardBannerBottom: "event_pass_premium_reward_banner_bottom_text_timed_incubator";
 				premiumRewardBannerImageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2FIncubator_green128x128.png";
 				premiumRewardBannerMiddle: "item_incubator_timed_name";
@@ -139,6 +92,6 @@ export type EventPassSettingsSeptember2026Season = S<
 	>
 >;
 
-export type EventPassSettingsMasterfileEntry = EventPassSettingsAugust2026Season | EventPassSettingsMegasquads2026Event | EventPassSettingsSeptember2026Season;
+export type EventPassSettingsMasterfileEntry = EventPassSettingsMegasquads2026Event | EventPassSettingsSeptember2026Season;
 
 export type EventPassSettingsTemplateID = EventPassSettingsMasterfileEntry["templateId"];

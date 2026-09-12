@@ -23,6 +23,8 @@ pub enum FeatureGateTemplateId {
     EnhancedMegaRaidReadyCheckFeatureGate,
     #[serde(rename = "EVENT_LIST_FEATURE_GATE")]
     EventListFeatureGate,
+    #[serde(rename = "EVENT_PASS_BONUS_MILESTONE_SEPARATION_FEATURE_GATE")]
+    EventPassBonusMilestoneSeparationFeatureGate,
     #[serde(rename = "EVENT_PASS_BONUS_RANKS_FEATURE_GATE")]
     EventPassBonusRanksFeatureGate,
     #[serde(rename = "EVENT_PASS_CLAIMABLE_REWARD_TOGGLE_FEATURE_GATE")]
@@ -35,6 +37,8 @@ pub enum FeatureGateTemplateId {
     FriendshipResyncOnReadFeatureGate,
     #[serde(rename = "GAMESITE_WEBVIEW_NEARBY_BUTTONS_FEATURE_GATE")]
     GamesiteWebviewNearbyButtonsFeatureGate,
+    #[serde(rename = "GET_GMT_ANALYSIS_FOR_PLAYER_FEATURE_GATE")]
+    GetGmtAnalysisForPlayerFeatureGate,
     #[serde(rename = "HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE")]
     HideCampfireMapButtonsFeatureGate,
     #[serde(rename = "LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE")]

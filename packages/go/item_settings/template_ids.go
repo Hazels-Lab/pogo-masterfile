@@ -75,10 +75,10 @@ const (
 	ItemSettingsTemplateIDItemEventTicketS23202612               ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_12"
 	ItemSettingsTemplateIDItemEventTicketS23202612ToGift         ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S23_2026_12_TO_GIFT"
 	ItemSettingsTemplateIDItemEventTicketS24Nov9Gowaol           ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S24_NOV9_GOWAOL"
-	ItemSettingsTemplateIDItemEventTicketS24Nov9GowaolToGift     ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S24_NOV9_GOWAOL_TO_GIFT"
 	ItemSettingsTemplateIDItemEventTicketS24Sep12Community       ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY"
 	ItemSettingsTemplateIDItemEventTicketS24Sep12CommunityToGift ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY_TO_GIFT"
 	ItemSettingsTemplateIDItemEventTicketS24Sep19Megaraid        ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S24_SEP_19_MEGARAID"
+	ItemSettingsTemplateIDItemEventTicketS24Sep26Catch           ItemSettingsTemplateID = "ITEM_EVENT_TICKET_S24_SEP_26_CATCH"
 	ItemSettingsTemplateIDItemEvergreenTicket                    ItemSettingsTemplateID = "ITEM_EVERGREEN_TICKET"
 	ItemSettingsTemplateIDItemEvergreenTicketToGift              ItemSettingsTemplateID = "ITEM_EVERGREEN_TICKET_TO_GIFT"
 	ItemSettingsTemplateIDItemFreeRaidTicket                     ItemSettingsTemplateID = "ITEM_FREE_RAID_TICKET"
@@ -245,10 +245,10 @@ var ItemSettingsTemplateIDValues = [...]ItemSettingsTemplateID{
 	ItemSettingsTemplateIDItemEventTicketS23202612,
 	ItemSettingsTemplateIDItemEventTicketS23202612ToGift,
 	ItemSettingsTemplateIDItemEventTicketS24Nov9Gowaol,
-	ItemSettingsTemplateIDItemEventTicketS24Nov9GowaolToGift,
 	ItemSettingsTemplateIDItemEventTicketS24Sep12Community,
 	ItemSettingsTemplateIDItemEventTicketS24Sep12CommunityToGift,
 	ItemSettingsTemplateIDItemEventTicketS24Sep19Megaraid,
+	ItemSettingsTemplateIDItemEventTicketS24Sep26Catch,
 	ItemSettingsTemplateIDItemEvergreenTicket,
 	ItemSettingsTemplateIDItemEvergreenTicketToGift,
 	ItemSettingsTemplateIDItemFreeRaidTicket,

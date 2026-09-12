@@ -60,7 +60,7 @@ pub struct StatsLimitsOverride {
 #[serde(rename_all = "camelCase")]
 pub struct PokemonEncounter {
     pub is_featured_pokemon: Option<bool>,
-    pub pokemon_display: Option<PokemonDisplay>,
+    pub pokemon_display: PokemonDisplay,
     pub pokemon_id: String,
     pub stats_limits_override: Option<StatsLimitsOverride>,
 }

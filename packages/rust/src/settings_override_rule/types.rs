@@ -3,11 +3,18 @@
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(untagged)]
+pub enum RuleTypeValue {
+    Uint(u64),
+    String(String),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct MeshingEnabledRuleValueVpsEnabled {
     pub meshing_enabled: String,
     pub occlusion_enabled: String,
-    pub rule_type: String,
+    pub rule_type: RuleTypeValue,
     pub rule_value: String,
     pub semantics_enabled: String,
     pub sort_order: u64,

@@ -139,7 +139,7 @@ pub struct InnLobbyActivationSettingsV2 {
 #[serde(rename_all = "camelCase")]
 pub struct InnLobbyActivationSettings {
     pub bonus_effect: BonusEffectV2,
-    pub bonus_type: u64,
+    pub bonus_type: String,
     pub cost: CostV2,
     pub duration_ms: String,
     pub enable_multi_use: bool,

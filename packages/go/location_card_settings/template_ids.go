@@ -78,6 +78,7 @@ const (
 	LocationCardSettingsTemplateIDLc2026ChicagoGofest001                                  LocationCardSettingsTemplateID = "LC_2026_CHICAGO_GOFEST_001"
 	LocationCardSettingsTemplateIDLc2026CologneCarnival001                                LocationCardSettingsTemplateID = "LC_2026_COLOGNE_CARNIVAL_001"
 	LocationCardSettingsTemplateIDLc2026CopenhagenGofest001                               LocationCardSettingsTemplateID = "LC_2026_COPENHAGEN_GOFEST_001"
+	LocationCardSettingsTemplateIDLc2026JpGreen                                           LocationCardSettingsTemplateID = "LC_2026_JP_GREEN"
 	LocationCardSettingsTemplateIDLc2026JpRed                                             LocationCardSettingsTemplateID = "LC_2026_JP_RED"
 	LocationCardSettingsTemplateIDLc2026LosangelesGotour001                               LocationCardSettingsTemplateID = "LC_2026_LOSANGELES_GOTOUR_001"
 	LocationCardSettingsTemplateIDLc2026MlbTbrays                                         LocationCardSettingsTemplateID = "LC_2026_MLB_TBRAYS"
@@ -191,6 +192,12 @@ const (
 	LocationCardSettingsTemplateIDLcPokelidWakayama                                       LocationCardSettingsTemplateID = "LC_POKELID_WAKAYAMA"
 	LocationCardSettingsTemplateIDLcPokelidYamagata                                       LocationCardSettingsTemplateID = "LC_POKELID_YAMAGATA"
 	LocationCardSettingsTemplateIDLcPokelidYamaguchi                                      LocationCardSettingsTemplateID = "LC_POKELID_YAMAGUCHI"
+	LocationCardSettingsTemplateIDLcSafari2026Boston                                      LocationCardSettingsTemplateID = "LC_SAFARI_2026_BOSTON"
+	LocationCardSettingsTemplateIDLcSafari2026Brisbane                                    LocationCardSettingsTemplateID = "LC_SAFARI_2026_BRISBANE"
+	LocationCardSettingsTemplateIDLcSafari2026Lisbon                                      LocationCardSettingsTemplateID = "LC_SAFARI_2026_LISBON"
+	LocationCardSettingsTemplateIDLcSafari2026Marseille                                   LocationCardSettingsTemplateID = "LC_SAFARI_2026_MARSEILLE"
+	LocationCardSettingsTemplateIDLcSafari2026Munich                                      LocationCardSettingsTemplateID = "LC_SAFARI_2026_MUNICH"
+	LocationCardSettingsTemplateIDLcSafari2026Rdj                                         LocationCardSettingsTemplateID = "LC_SAFARI_2026_RDJ"
 	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestMoonUltraWormhole001 LocationCardSettingsTemplateID = "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_MOON_ULTRA_WORMHOLE_001"
 	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestSunUltraWormhole001  LocationCardSettingsTemplateID = "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_SUN_ULTRA_WORMHOLE_001"
 	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestUltraWormhole001     LocationCardSettingsTemplateID = "LC_SPECIAL_BACKGROUND_2024_GLOBAL_GOFEST_ULTRA_WORMHOLE_001"
@@ -333,6 +340,7 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLc2026ChicagoGofest001,
 	LocationCardSettingsTemplateIDLc2026CologneCarnival001,
 	LocationCardSettingsTemplateIDLc2026CopenhagenGofest001,
+	LocationCardSettingsTemplateIDLc2026JpGreen,
 	LocationCardSettingsTemplateIDLc2026JpRed,
 	LocationCardSettingsTemplateIDLc2026LosangelesGotour001,
 	LocationCardSettingsTemplateIDLc2026MlbTbrays,
@@ -446,6 +454,12 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLcPokelidWakayama,
 	LocationCardSettingsTemplateIDLcPokelidYamagata,
 	LocationCardSettingsTemplateIDLcPokelidYamaguchi,
+	LocationCardSettingsTemplateIDLcSafari2026Boston,
+	LocationCardSettingsTemplateIDLcSafari2026Brisbane,
+	LocationCardSettingsTemplateIDLcSafari2026Lisbon,
+	LocationCardSettingsTemplateIDLcSafari2026Marseille,
+	LocationCardSettingsTemplateIDLcSafari2026Munich,
+	LocationCardSettingsTemplateIDLcSafari2026Rdj,
 	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestMoonUltraWormhole001,
 	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestSunUltraWormhole001,
 	LocationCardSettingsTemplateIDLcSpecialBackground2024GlobalGofestUltraWormhole001,

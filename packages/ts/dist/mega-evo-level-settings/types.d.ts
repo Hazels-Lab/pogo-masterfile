@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", 145 entries (structural types).
+// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", 146 entries (structural types).
 
 import type { W } from "../_utils";
 
