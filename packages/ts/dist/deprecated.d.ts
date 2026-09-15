@@ -435,7 +435,7 @@ type DeprecatedClientQuestTemplateIds =
 	| "LEVEL_50_CAP_SUB_2"
 	| "LEVEL_50_CAP_SUB_3";
 
-/** @deprecated lastSeen 2026-09-04 — 40 entries */
+/** @deprecated lastSeen 2026-09-15 — 41 entries */
 type DeprecatedCodeGateProtoIds =
 	| "AGE_CONFIRM_CODE_GATE"
 	| "AR_PHOTO_MULTIPLE_CONCURRENT_CAMPAIGN_CODE_GATE"
@@ -453,6 +453,7 @@ type DeprecatedCodeGateProtoIds =
 	| "IBFC_LWS_CODE_GATE"
 	| "LEAVE_PARTY_REFACTOR_CODE_GATE"
 	| "MAP_THEME_LOW_PERF_CODE_GATE"
+	| "MEMORY_CLEANUP_CODE_GATE"
 	| "OLD_EMAIL_TICKET_FIX_CODE_GATE"
 	| "PARTY_CREATION_REFACTOR_CODE_GATE"
 	| "PARTY_GET_REFACTOR_CODE_GATE"

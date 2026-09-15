@@ -14,7 +14,6 @@ export type LevelUpRewardsType = W<LevelUpRewards>;
 export interface LevelUpRewardsData {
 	clientOverrideDisplayOrder?: boolean;
 	featuresUnlocked?: Array<
-		| number
 		| "FEATURE_CANDY_XL"
 		| "FEATURE_COMBAT_LEAGUE"
 		| "FEATURE_EGG_HATCHING"
