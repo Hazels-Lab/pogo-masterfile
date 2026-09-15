@@ -1,13 +1,6 @@
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(untagged)]
-pub enum FeaturesUnlockedValue {
-    Uint(u64),
-    String(String),
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct NeutralAvatarItemTemplates {
     pub display_template_id: String,
@@ -18,7 +11,7 @@ pub struct NeutralAvatarItemTemplates {
 #[serde(rename_all = "camelCase")]
 pub struct LevelUpRewards {
     pub client_override_display_order: Option<bool>,
-    pub features_unlocked: Option<Vec<FeaturesUnlockedValue>>,
+    pub features_unlocked: Option<Vec<String>>,
     pub is_backfill: Option<bool>,
     pub items: Vec<String>,
     pub items_count: Vec<u64>,

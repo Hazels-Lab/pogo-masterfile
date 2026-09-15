@@ -2,8 +2,6 @@
 
 package level_up_rewards
 
-import "encoding/json"
-
 type LevelUpRewardsNeutralAvatarItemTemplates struct {
 	DisplayTemplateId string `json:"displayTemplateId"`
 	ItemTemplateId    string `json:"itemTemplateId"`
@@ -11,7 +9,7 @@ type LevelUpRewardsNeutralAvatarItemTemplates struct {
 
 type LevelUpRewards struct {
 	ClientOverrideDisplayOrder *bool                                     `json:"clientOverrideDisplayOrder,omitempty"`
-	FeaturesUnlocked           []json.RawMessage                         `json:"featuresUnlocked,omitempty"`
+	FeaturesUnlocked           []string                                  `json:"featuresUnlocked,omitempty"`
 	IsBackfill                 *bool                                     `json:"isBackfill,omitempty"`
 	Items                      []string                                  `json:"items"`
 	ItemsCount                 []uint64                                  `json:"itemsCount"`

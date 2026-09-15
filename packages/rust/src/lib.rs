@@ -226,10 +226,10 @@ pub enum MasterfileEntry {
         pokestop_invasion_availability_settings::PokestopInvasionAvailabilitySettingsEntry,
     ),
     WeatherAffinities(weather_affinities::WeatherAffinitiesEntry),
-    CodeGateProto(code_gate_proto::CodeGateProtoEntry),
     FriendshipMilestoneSettings(friendship_milestone_settings::FriendshipMilestoneSettingsEntry),
     PokemonScaleSettings(pokemon_scale_settings::PokemonScaleSettingsEntry),
     BuddyLevelSettings(buddy_level_settings::BuddyLevelSettingsEntry),
+    CodeGateProto(code_gate_proto::CodeGateProtoEntry),
     TappableSettings(tappable_settings::TappableSettingsEntry),
     FortPowerUpLevelSettings(fort_power_up_level_settings::FortPowerUpLevelSettingsEntry),
     PokemonHomeEnergyCosts(pokemon_home_energy_costs::PokemonHomeEnergyCostsEntry),
@@ -506,7 +506,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::PokestopInvasionAvailabilitySettings)
                 }
                 "weatherAffinities" => serde_json::from_value(value).map(Self::WeatherAffinities),
-                "codeGateProto" => serde_json::from_value(value).map(Self::CodeGateProto),
                 "friendshipMilestoneSettings" => {
                     serde_json::from_value(value).map(Self::FriendshipMilestoneSettings)
                 }
@@ -514,6 +513,7 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::PokemonScaleSettings)
                 }
                 "buddyLevelSettings" => serde_json::from_value(value).map(Self::BuddyLevelSettings),
+                "codeGateProto" => serde_json::from_value(value).map(Self::CodeGateProto),
                 "tappableSettings" => serde_json::from_value(value).map(Self::TappableSettings),
                 "fortPowerUpLevelSettings" => {
                     serde_json::from_value(value).map(Self::FortPowerUpLevelSettings)

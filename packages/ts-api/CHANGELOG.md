@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.61] - 2026-09-15
+
+Automated regeneration from upstream masterfile commit `7a4fdca6f011f73c5f35b68f565e727f7fdbf4fc`.
+
+### Removed template IDs (1)
+
+- MEMORY_CLEANUP_CODE_GATE
+
 ## [0.1.60] - 2026-09-12
 
 Automated regeneration from upstream masterfile commit `a6bb3e22eb441d4c34dcf81e269c651a8dc8ccf6`.
