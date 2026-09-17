@@ -2866,6 +2866,17 @@ type GymBadgeSettingsEntryData struct {
 	GymBadgeSettings GymBadgeSettings `json:"gymBadgeSettings"`
 }
 
+type GymTopperDistanceSettingsEntry struct {
+	TemplateID string                             `json:"templateId"`
+	Data       GymTopperDistanceSettingsEntryData `json:"data"`
+}
+
+func (GymTopperDistanceSettingsEntry) MasterfileEntry() {}
+
+type GymTopperDistanceSettingsEntryData struct {
+	TemplateID string `json:"templateId"`
+}
+
 type HapticsSettingsEntry struct {
 	TemplateID string                   `json:"templateId"`
 	Data       HapticsSettingsEntryData `json:"data"`

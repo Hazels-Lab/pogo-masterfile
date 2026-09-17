@@ -2933,6 +2933,13 @@ export interface GymBadgeSettings {
 	};
 }
 
+export interface GymTopperDistanceSettings {
+	templateId: "GYM_TOPPER_DISTANCE_SETTINGS";
+	data: {
+		templateId: "GYM_TOPPER_DISTANCE_SETTINGS";
+	};
+}
+
 export interface HapticsSettings {
 	templateId: "HAPTICS_SETTINGS";
 	data: {
@@ -6082,7 +6089,7 @@ export interface VsSeekerClientSettings {
 	data: {
 		templateId: "VS_SEEKER_CLIENT_SETTINGS";
 		vsSeekerClientSettings: {
-			allowedVsSeekerLeagueTemplateId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_ULTRA_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_MASTER_MEGAS"];
+			allowedVsSeekerLeagueTemplateId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_ULTRA_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_WILLPOWER"];
 		};
 	};
 }
@@ -6355,6 +6362,7 @@ export type SingletonsSettingsMasterfileEntry =
 	| GiftingSettings
 	| GuiSearchSettings
 	| GymBadgeSettings
+	| GymTopperDistanceSettings
 	| HapticsSettings
 	| IapSettings
 	| IbfcLightweightSettings

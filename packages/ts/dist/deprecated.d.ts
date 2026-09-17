@@ -435,7 +435,7 @@ type DeprecatedClientQuestTemplateIds =
 	| "LEVEL_50_CAP_SUB_2"
 	| "LEVEL_50_CAP_SUB_3";
 
-/** @deprecated lastSeen 2026-09-15 — 41 entries */
+/** @deprecated lastSeen 2026-09-17 — 42 entries */
 type DeprecatedCodeGateProtoIds =
 	| "AGE_CONFIRM_CODE_GATE"
 	| "AR_PHOTO_MULTIPLE_CONCURRENT_CAMPAIGN_CODE_GATE"
@@ -451,6 +451,7 @@ type DeprecatedCodeGateProtoIds =
 	| "FUSION_CODE_GATE"
 	| "HOLD_ONTO_SPECIAL_TRADE_CODE_GATE"
 	| "IBFC_LWS_CODE_GATE"
+	| "INPUT_TRACKER_CODE_GATE"
 	| "LEAVE_PARTY_REFACTOR_CODE_GATE"
 	| "MAP_THEME_LOW_PERF_CODE_GATE"
 	| "MEMORY_CLEANUP_CODE_GATE"
@@ -482,7 +483,7 @@ type DeprecatedCodeGateProtoIds =
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedEggTransparencySettingsIds = "EGG_TRANSPARENCY_SETTINGS";
 
-/** @deprecated lastSeen 2026-09-12 — 37 entries */
+/** @deprecated lastSeen 2026-09-17 — 38 entries */
 type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_30ANNIV2026_EVENT"
 	| "EVENT_PASS_AFTERPARTY2026_EVENT"
@@ -509,6 +510,7 @@ type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_MARCH2026_SEASON"
 	| "EVENT_PASS_MAY2025_SEASON"
 	| "EVENT_PASS_MAY2026_SEASON"
+	| "EVENT_PASS_MEGASQUADS2026_EVENT"
 	| "EVENT_PASS_NOVEMBER2025_SEASON"
 	| "EVENT_PASS_OCTOBER2025_SEASON"
 	| "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT"
@@ -12427,8 +12429,14 @@ type DeprecatedExRaidSettingsIds = "EX_RAID_SETTINGS";
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedExtendedPrimalSettingsIds = "EXTENDED_PRIMAL_SETTINGS";
 
-/** @deprecated lastSeen 2026-08-05 — 4 entries */
-type DeprecatedFeatureGateIds = "DAY_NIGHT_POI_FEATURE_GATE" | "HEAL_TOAST_FEATURE_GATE" | "STORE_REFRESH_FEATURE_GATE" | "WEB_STORE_LINK_OUT_FEATURE_GATE";
+/** @deprecated lastSeen 2026-09-17 — 6 entries */
+type DeprecatedFeatureGateIds =
+	| "DAY_NIGHT_POI_FEATURE_GATE"
+	| "EVENT_LIST_FEATURE_GATE"
+	| "HEAL_TOAST_FEATURE_GATE"
+	| "STORE_REFRESH_FEATURE_GATE"
+	| "UPDATE_TICKETS_STRING_FEATURE_GATE"
+	| "WEB_STORE_LINK_OUT_FEATURE_GATE";
 
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedFormsRefactorSettingsIds = "FORMS_REFACTOR_SETTINGS";

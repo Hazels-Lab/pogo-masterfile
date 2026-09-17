@@ -14,15 +14,16 @@ export type EventPassTierSettingsType = W<EventPassTierSettings>;
 export interface EventPassTierSettingsData {
 	activeBonusDisplaySettings?: {
 		bonusBoxes: Array<{
-			iconType: "EGG" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "SPAWN_UNKNOWN" | "TRADE";
+			iconType: "CANDY_GENERAL" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "LURE_MODULE" | "STARDUST" | "TRADE";
 			text:
+				| "catch_candy_double"
+				| "catch_candy_triple"
 				| "dai_duration_double"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
 				| "gift_storage_more"
-				| "hatch_stardust_double"
-				| "incubator_distance_half"
-				| "mega_energy_weedle_pidgey_houndour_carvanha"
+				| "hatenna_wattrel_stardust_catch"
+				| "lure_duration_double"
 				| "season_pass_bonus_hatch_xp_stardust"
 				| "trade_extra_candy"
 				| "trade_guaranteed_candyxl";
@@ -31,15 +32,16 @@ export interface EventPassTierSettingsData {
 	};
 	bonusSettings?: {
 		bonusBoxes: Array<{
-			iconType: "EGG" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "SPAWN_UNKNOWN" | "TRADE";
+			iconType: "CANDY_GENERAL" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "LURE_MODULE" | "STARDUST" | "TRADE";
 			text:
+				| "catch_candy_double"
+				| "catch_candy_triple"
 				| "dai_duration_double"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
 				| "gift_storage_more"
-				| "hatch_stardust_double"
-				| "incubator_distance_half"
-				| "mega_energy_weedle_pidgey_houndour_carvanha"
+				| "hatenna_wattrel_stardust_catch"
+				| "lure_duration_double"
 				| "season_pass_bonus_hatch_xp_stardust"
 				| "trade_extra_candy"
 				| "trade_guaranteed_candyxl";
@@ -67,6 +69,7 @@ export interface EventPassTierSettingsData {
 				| "FIDOUGH"
 				| "FLITTLE"
 				| "GOSSIFLEUR"
+				| "HATENNA"
 				| "HONEDGE"
 				| "INKAY"
 				| "LATIOS"
@@ -82,6 +85,7 @@ export interface EventPassTierSettingsData {
 				| "SNOM"
 				| "STARYU"
 				| "VOLTORB"
+				| "WATTREL"
 				| "WIMPOD"
 				| "YAMPER";
 		};
@@ -103,6 +107,7 @@ export interface EventPassTierSettingsData {
 				| "ITEM_MP"
 				| "ITEM_NANAB_BERRY"
 				| "ITEM_PAID_RAID_TICKET"
+				| "ITEM_PINAP_BERRY"
 				| "ITEM_POFFIN"
 				| "ITEM_POKE_BALL"
 				| "ITEM_RARE_CANDY"
@@ -112,22 +117,14 @@ export interface EventPassTierSettingsData {
 				| "ITEM_ULTRA_BALL"
 				| "ITEM_XL_RARE_CANDY";
 		};
-		megaResource?: {
-			amount: number;
-			pokemonId: "BEEDRILL" | "HOUNDOOM";
-		};
-		neutralAvatarItemTemplate?: {
-			displayTemplateId: "N_DISPLAY_n_shirt_maschiff";
-			itemTemplateId: "N_AVATAR_n_shirt_maschiff";
-		};
 		playerAttribute?: {
 			durationMins: number;
 			key:
-				| "megasquads2026_season_pass_entitlement"
-				| "megasquads2026_season_pass_rank_01"
-				| "megasquads2026_season_pass_rank_01_paid_not_used"
-				| "megasquads2026_season_pass_rank_02"
-				| "megasquads2026_season_pass_rank_02_paid"
+				| "horizonsfall2026_season_pass_entitlement"
+				| "horizonsfall2026_season_pass_rank_01"
+				| "horizonsfall2026_season_pass_rank_01_paid"
+				| "horizonsfall2026_season_pass_rank_02"
+				| "horizonsfall2026_season_pass_rank_03"
 				| "september2026_season_pass_entitlement"
 				| "september2026_season_pass_rank_01"
 				| "september2026_season_pass_rank_02"
@@ -136,89 +133,86 @@ export interface EventPassTierSettingsData {
 		};
 		pokemonEncounter?: {
 			isFeaturedPokemon?: boolean;
-			pokemonDisplay: {
+			pokemonDisplay?: {
 				breadModeEnum?: "BREAD_MODE";
 				form:
 					| "ARROKUDA_NORMAL"
-					| "BEEDRILL_NORMAL"
 					| "BLIPBUG_NORMAL"
 					| "CAMERUPT_NORMAL"
-					| "CARVANHA_NORMAL"
+					| "CHARMANDER_GOGGLES_2026"
 					| "CINCCINO_NORMAL"
-					| "CORVISQUIRE_NORMAL"
+					| "CROCALOR_NORMAL"
 					| "DRATINI_NORMAL"
 					| "DRILBUR_NORMAL"
+					| "EEVEE_NORMAL"
 					| "ESPURR_NORMAL"
 					| "FERROTHORN_NORMAL"
 					| "FIDOUGH_NORMAL"
-					| "FLAMIGO_NORMAL"
-					| "FLETCHINDER_NORMAL"
-					| "FLETCHLING_NORMAL"
 					| "FLITTLE_NORMAL"
+					| "FLORAGATO_NORMAL"
+					| "FUECOCO_NORMAL"
 					| "GOSSIFLEUR_NORMAL"
+					| "HATENNA_NORMAL"
 					| "HONEDGE_NORMAL"
-					| "HOUNDOOM_NORMAL"
-					| "HOUNDOUR_NORMAL"
 					| "INKAY_NORMAL"
 					| "KLEAVOR_NORMAL"
 					| "LATIOS_NORMAL"
 					| "LILLIPUP_NORMAL"
-					| "MASCHIFF_NORMAL"
 					| "NACLI_NORMAL"
 					| "NICKIT_NORMAL"
 					| "ORTHWORM_NORMAL"
-					| "PIDGEOTTO_NORMAL"
-					| "PIDGEY_NORMAL"
+					| "PIKACHU_HORIZONS"
+					| "QUAXLY_NORMAL"
+					| "QUAXWELL_NORMAL"
 					| "ROGGENROLA_NORMAL"
-					| "ROOKIDEE_NORMAL"
 					| "SHELGON_NORMAL"
 					| "SIZZLIPEDE_NORMAL"
 					| "SNOM_NORMAL"
+					| "SPRIGATITO_NORMAL"
 					| "STARYU_NORMAL"
 					| "VOLTORB_HISUIAN"
-					| "WEEDLE_NORMAL"
+					| "WATTREL_NORMAL"
 					| "WIMPOD_NORMAL"
 					| "YAMPER_NORMAL";
 			};
 			pokemonId:
 				| "ARROKUDA"
-				| "BEEDRILL"
 				| "BLIPBUG"
 				| "CAMERUPT"
-				| "CARVANHA"
+				| "CHARMANDER"
 				| "CINCCINO"
-				| "CORVISQUIRE"
+				| "CROCALOR"
 				| "DRATINI"
 				| "DRILBUR"
+				| "EEVEE"
 				| "ESPURR"
 				| "FERROTHORN"
 				| "FIDOUGH"
-				| "FLAMIGO"
-				| "FLETCHINDER"
-				| "FLETCHLING"
 				| "FLITTLE"
+				| "FLORAGATO"
+				| "FUECOCO"
 				| "GOSSIFLEUR"
+				| "HATENNA"
 				| "HONEDGE"
-				| "HOUNDOOM"
-				| "HOUNDOUR"
 				| "INKAY"
 				| "KLEAVOR"
 				| "LATIOS"
 				| "LILLIPUP"
-				| "MASCHIFF"
 				| "NACLI"
 				| "NICKIT"
 				| "ORTHWORM"
-				| "PIDGEOTTO"
-				| "PIDGEY"
+				| "PIKACHU"
+				| "QUAXLY"
+				| "QUAXWELL"
+				| "ROCKRUFF"
 				| "ROGGENROLA"
-				| "ROOKIDEE"
 				| "SHELGON"
 				| "SIZZLIPEDE"
 				| "SNOM"
+				| "SPRIGATITO"
 				| "STARYU"
 				| "VOLTORB"
-				| "WEEDLE"
+				| "WATTREL"
 				| "WIMPOD"
 				| "YAMPER";
 			statsLimitsOverride?: {
@@ -227,7 +221,7 @@ export interface EventPassTierSettingsData {
 			};
 		};
 		stardust?: number;
-		type: "AVATAR_CLOTHING" | "CANDY" | "EXPERIENCE" | "ITEM" | "MEGA_RESOURCE" | "PLAYER_ATTRIBUTE" | "POKEMON_ENCOUNTER" | "STARDUST" | "XL_CANDY";
+		type: "CANDY" | "EXPERIENCE" | "ITEM" | "PLAYER_ATTRIBUTE" | "POKEMON_ENCOUNTER" | "STARDUST" | "XL_CANDY";
 		xlCandy?: {
 			amount: number;
 			pokemonId:

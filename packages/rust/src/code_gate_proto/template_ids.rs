@@ -9,8 +9,6 @@ use serde::{Deserialize, Serialize};
 pub enum CodeGateProtoTemplateId {
     #[serde(rename = "COMBAT_VNEXT_CODE_GATE")]
     CombatVnextCodeGate,
-    #[serde(rename = "INPUT_TRACKER_CODE_GATE")]
-    InputTrackerCodeGate,
     #[serde(rename = "IS_SKU_AVAILABLE_NO_APP_ID_CODE_GATE")]
     IsSkuAvailableNoAppIdCodeGate,
     #[serde(rename = "TODAY_VIEW_V3_CODE_GATE")]

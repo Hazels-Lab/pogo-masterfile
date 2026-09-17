@@ -77,7 +77,6 @@ type Masterfile struct {
 
 	FeatureGate                          *accessor.FeatureGateAccessor
 	EvolutionQuestTemplate               *accessor.EvolutionQuestTemplateAccessor
-	IapItemDisplay                       *accessor.IapItemDisplayAccessor
 	AvatarGroupOrderSettings             *accessor.AvatarGroupOrderSettingsAccessor
 	AvatarCustomization                  *accessor.AvatarCustomizationAccessor
 	LevelUpRewards                       *accessor.LevelUpRewardsAccessor
@@ -86,6 +85,7 @@ type Masterfile struct {
 	BuddyActivityCategorySettings        *accessor.BuddyActivityCategorySettingsAccessor
 	BuddyEmotionLevelSettings            *accessor.BuddyEmotionLevelSettingsAccessor
 	BuddyLevelSettings                   *accessor.BuddyLevelSettingsAccessor
+	IapItemDisplay                       *accessor.IapItemDisplayAccessor
 	InvasionNpcDisplaySettings           *accessor.InvasionNpcDisplaySettingsAccessor
 	CombatLeague                         *accessor.CombatLeagueAccessor
 	CombatType                           *accessor.CombatTypeAccessor
@@ -142,7 +142,6 @@ type Masterfile struct {
 var GroupNames = []string{
 	"featureGate",
 	"evolutionQuestTemplate",
-	"iapItemDisplay",
 	"avatarGroupOrderSettings",
 	"avatarCustomization",
 	"levelUpRewards",
@@ -151,6 +150,7 @@ var GroupNames = []string{
 	"buddyActivityCategorySettings",
 	"buddyEmotionLevelSettings",
 	"buddyLevelSettings",
+	"iapItemDisplay",
 	"invasionNpcDisplaySettings",
 	"combatLeague",
 	"combatType",
@@ -209,7 +209,6 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 
 	featureGateBucket := []feature_gate.FeatureGateEntry{}
 	evolutionQuestTemplateBucket := []evolution_quest_template.EvolutionQuestTemplateEntry{}
-	iapItemDisplayBucket := []iap_item_display.IapItemDisplayEntry{}
 	avatarGroupOrderSettingsBucket := []avatar_group_order_settings.AvatarGroupOrderSettingsEntry{}
 	avatarCustomizationBucket := []avatar_customization.AvatarCustomizationEntry{}
 	levelUpRewardsBucket := []level_up_rewards.LevelUpRewardsEntry{}
@@ -218,6 +217,7 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 	buddyActivityCategorySettingsBucket := []buddy_activity_category_settings.BuddyActivityCategorySettingsEntry{}
 	buddyEmotionLevelSettingsBucket := []buddy_emotion_level_settings.BuddyEmotionLevelSettingsEntry{}
 	buddyLevelSettingsBucket := []buddy_level_settings.BuddyLevelSettingsEntry{}
+	iapItemDisplayBucket := []iap_item_display.IapItemDisplayEntry{}
 	invasionNpcDisplaySettingsBucket := []invasion_npc_display_settings.InvasionNpcDisplaySettingsEntry{}
 	combatLeagueBucket := []combat_league.CombatLeagueEntry{}
 	combatTypeBucket := []combat_type.CombatTypeEntry{}
@@ -277,9 +277,6 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 		case evolution_quest_template.EvolutionQuestTemplateEntry:
 			m.byID[v.TemplateID] = i
 			evolutionQuestTemplateBucket = append(evolutionQuestTemplateBucket, v)
-		case iap_item_display.IapItemDisplayEntry:
-			m.byID[v.TemplateID] = i
-			iapItemDisplayBucket = append(iapItemDisplayBucket, v)
 		case avatar_group_order_settings.AvatarGroupOrderSettingsEntry:
 			m.byID[v.TemplateID] = i
 			avatarGroupOrderSettingsBucket = append(avatarGroupOrderSettingsBucket, v)
@@ -304,6 +301,9 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 		case buddy_level_settings.BuddyLevelSettingsEntry:
 			m.byID[v.TemplateID] = i
 			buddyLevelSettingsBucket = append(buddyLevelSettingsBucket, v)
+		case iap_item_display.IapItemDisplayEntry:
+			m.byID[v.TemplateID] = i
+			iapItemDisplayBucket = append(iapItemDisplayBucket, v)
 		case invasion_npc_display_settings.InvasionNpcDisplaySettingsEntry:
 			m.byID[v.TemplateID] = i
 			invasionNpcDisplaySettingsBucket = append(invasionNpcDisplaySettingsBucket, v)
@@ -460,7 +460,6 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 
 	m.FeatureGate = accessor.NewFeatureGateAccessor(featureGateBucket)
 	m.EvolutionQuestTemplate = accessor.NewEvolutionQuestTemplateAccessor(evolutionQuestTemplateBucket)
-	m.IapItemDisplay = accessor.NewIapItemDisplayAccessor(iapItemDisplayBucket)
 	m.AvatarGroupOrderSettings = accessor.NewAvatarGroupOrderSettingsAccessor(avatarGroupOrderSettingsBucket)
 	m.AvatarCustomization = accessor.NewAvatarCustomizationAccessor(avatarCustomizationBucket)
 	m.LevelUpRewards = accessor.NewLevelUpRewardsAccessor(levelUpRewardsBucket)
@@ -469,6 +468,7 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 	m.BuddyActivityCategorySettings = accessor.NewBuddyActivityCategorySettingsAccessor(buddyActivityCategorySettingsBucket)
 	m.BuddyEmotionLevelSettings = accessor.NewBuddyEmotionLevelSettingsAccessor(buddyEmotionLevelSettingsBucket)
 	m.BuddyLevelSettings = accessor.NewBuddyLevelSettingsAccessor(buddyLevelSettingsBucket)
+	m.IapItemDisplay = accessor.NewIapItemDisplayAccessor(iapItemDisplayBucket)
 	m.InvasionNpcDisplaySettings = accessor.NewInvasionNpcDisplaySettingsAccessor(invasionNpcDisplaySettingsBucket)
 	m.CombatLeague = accessor.NewCombatLeagueAccessor(combatLeagueBucket)
 	m.CombatType = accessor.NewCombatTypeAccessor(combatTypeBucket)

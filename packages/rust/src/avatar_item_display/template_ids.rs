@@ -607,6 +607,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNHatAcetrainersmB0,
     #[serde(rename = "N_DISPLAY_n_hat_acorn")]
     NDisplayNHatAcorn,
+    #[serde(rename = "N_DISPLAY_n_hat_adidas")]
+    NDisplayNHatAdidas,
     #[serde(rename = "N_DISPLAY_n_hat_adventure_0")]
     NDisplayNHatAdventure0,
     #[serde(rename = "N_DISPLAY_n_hat_alolanexeggutorhat_0")]
@@ -1589,6 +1591,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNShirtAcetrainersmB0,
     #[serde(rename = "N_DISPLAY_n_shirt_acorn")]
     NDisplayNShirtAcorn,
+    #[serde(rename = "N_DISPLAY_n_shirt_adidasjacket")]
+    NDisplayNShirtAdidasjacket,
     #[serde(rename = "N_DISPLAY_n_shirt_allister_0")]
     NDisplayNShirtAllister0,
     #[serde(rename = "N_DISPLAY_n_shirt_alolacomfey_0")]
@@ -2501,6 +2505,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNShoesAcetrainersmA0,
     #[serde(rename = "N_DISPLAY_n_shoes_acetrainersm_b_0")]
     NDisplayNShoesAcetrainersmB0,
+    #[serde(rename = "N_DISPLAY_n_shoes_adidas")]
+    NDisplayNShoesAdidas,
     #[serde(rename = "N_DISPLAY_n_shoes_allister_0")]
     NDisplayNShoesAllister0,
     #[serde(rename = "N_DISPLAY_n_shoes_animegou_0")]

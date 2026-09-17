@@ -1,9 +1,9 @@
 {
-	"packages/ts": "0.1.59",
-	"packages/ts-api": "0.1.61",
+	"packages/ts": "0.1.60",
+	"packages/ts-api": "0.1.62",
 	"packages/rust-macros": "0.1.0",
-	"packages/rust": "0.1.54",
-	"packages/rust-api": "0.1.54",
-	"packages/go": "0.1.54",
-	"packages/go-api": "0.1.54"
+	"packages/rust": "0.1.55",
+	"packages/rust-api": "0.1.55",
+	"packages/go": "0.1.55",
+	"packages/go-api": "0.1.55"
 }

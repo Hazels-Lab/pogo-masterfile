@@ -125,6 +125,8 @@ pub enum SingletonsTemplateId {
     GuiSearchSettings,
     #[serde(rename = "GYM_BADGE_SETTINGS")]
     GymBadgeSettings,
+    #[serde(rename = "GYM_TOPPER_DISTANCE_SETTINGS")]
+    GymTopperDistanceSettings,
     #[serde(rename = "HAPTICS_SETTINGS")]
     HapticsSettings,
     #[serde(rename = "IAP_SETTINGS")]

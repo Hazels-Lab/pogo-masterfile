@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "bundle", 288 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "bundle", 279 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -1138,80 +1138,6 @@ export type IapItemDisplayBundleGofest20267 = S<
 		}
 	>
 >;
-export type IapItemDisplayBundleGofest2026finale1 = S<
-	IapItemDisplay<
-		"bundle.GOFest2026Finale.1",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			showDiscountTag: true;
-			showStrikethroughPrice: true;
-			sku: "bundle.GOFest2026Finale.1";
-			skuDisableTime: "2026-01-02T22:00:00";
-			skuDisableTimeUtcMs: "1767391200000";
-			skuEnableTime: "2026-01-02T20:00:00";
-			skuEnableTimeUtcMs: "1767384000000";
-			sortOrder: 1;
-			spriteId: "bundle.general.remotebox.small.1";
-			title: "box_goraid";
-		}
-	>
->;
-export type IapItemDisplayBundleGofest2026finale2 = S<
-	IapItemDisplay<
-		"bundle.GOFest2026Finale.2",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			showDiscountTag: true;
-			showStrikethroughPrice: true;
-			sku: "bundle.GOFest2026Finale.2";
-			skuDisableTime: "2026-01-02T22:00:00";
-			skuDisableTimeUtcMs: "1767391200000";
-			skuEnableTime: "2026-01-02T20:00:00";
-			skuEnableTimeUtcMs: "1767384000000";
-			sortOrder: 2;
-			spriteId: "bundle.general1.small.2";
-			title: "box_gocatch";
-		}
-	>
->;
-export type IapItemDisplayBundleGofest2026finale3 = S<
-	IapItemDisplay<
-		"bundle.GOFest2026Finale.3",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sku: "bundle.GOFest2026Finale.3";
-			skuDisableTime: "2026-01-02T22:00:00";
-			skuDisableTimeUtcMs: "1767391200000";
-			skuEnableTime: "2026-01-02T20:00:00";
-			skuEnableTimeUtcMs: "1767384000000";
-			sortOrder: 3;
-			spriteId: "bundle.general.premiumbox.large.1";
-			title: "box_gomaster";
-		}
-	>
->;
-export type IapItemDisplayBundleGofest2026finale4 = S<
-	IapItemDisplay<
-		"bundle.GOFest2026Finale.4",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			showDiscountTag: true;
-			showStrikethroughPrice: true;
-			sku: "bundle.GOFest2026Finale.4";
-			skuDisableTime: "2026-01-02T22:00:00";
-			skuDisableTimeUtcMs: "1767391200000";
-			skuEnableTime: "2026-01-02T20:00:00";
-			skuEnableTimeUtcMs: "1767384000000";
-			sortOrder: 4;
-			spriteId: "bundle.general.adventure.1";
-			title: "box_gosticker";
-		}
-	>
->;
 export type IapItemDisplayBundleGooglefeatured20261 = S<
 	IapItemDisplay<
 		"bundle.googlefeatured2026.1",
@@ -2116,8 +2042,13 @@ export type IapItemDisplayBundleMheracrossraidday20241 = S<
 		"bundle.mheracrossraidday2024.1",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
+			showDiscountTag: true;
+			showStrikethroughPrice: true;
 			sku: "bundle.mheracrossraidday2024.1";
+			skuDisableTime: "2026-09-20T17:00:00";
+			skuDisableTimeUtcMs: "1789923600000";
+			skuEnableTime: "2022-10-13T12:00:00";
+			skuEnableTimeUtcMs: "1665662400000";
 			sortOrder: 1;
 			spriteId: "bundle.general.premiumbox.small.1";
 			title: "raiding_box";
@@ -3556,23 +3487,6 @@ export type IapItemDisplayPgoreleaseBundleGeneralThirdpartySmall12 = S<
 		}
 	>
 >;
-export type IapItemDisplayPgoreleaseBundleGeneralThirdpartySmall2 = S<
-	IapItemDisplay<
-		"pgorelease.bundle.general.thirdparty.small.2",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
-			sku: "pgorelease.bundle.general.thirdparty.small.2";
-			skuDisableTime: "2026-01-08T20:00:00";
-			skuDisableTimeUtcMs: "1767902400000";
-			skuEnableTime: "2019-10-31T21:00:00";
-			skuEnableTimeUtcMs: "1572555600000";
-			sortOrder: 1;
-			spriteId: "bundle.general2.small.1";
-			title: "holiday_box";
-		}
-	>
->;
 export type IapItemDisplayPgoreleaseBundleGeneral1Tiny4 = S<
 	IapItemDisplay<
 		"pgorelease.bundle.general1.tiny.4",
@@ -3933,51 +3847,6 @@ export type IapItemDisplayWebCommunityAmbassadorBonusBundle2025 = S<
 		}
 	>
 >;
-export type IapItemDisplayWebGoFestHatchBox2023 = S<
-	IapItemDisplay<
-		"web-go-fest-hatch-box-2023",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			sale: true;
-			sku: "web-go-fest-hatch-box-2023";
-			skuDisableTime: "2023-08-27T23:59:00";
-			skuDisableTimeUtcMs: "1693180740000";
-			skuEnableTime: "2023-07-31T00:00:00";
-			skuEnableTimeUtcMs: "1690761600000";
-			sortOrder: 4;
-		}
-	>
->;
-export type IapItemDisplayWebGoFestRaidBox2023 = S<
-	IapItemDisplay<
-		"web-go-fest-raid-box-2023",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			sale: true;
-			sku: "web-go-fest-raid-box-2023";
-			skuDisableTime: "2023-08-27T23:59:00";
-			skuDisableTimeUtcMs: "1693180740000";
-			skuEnableTime: "2023-07-31T00:00:00";
-			skuEnableTimeUtcMs: "1690761600000";
-			sortOrder: 5;
-		}
-	>
->;
-export type IapItemDisplayWebRaidBox071323 = S<
-	IapItemDisplay<
-		"web-raid-box-071323",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			sale: true;
-			sku: "web-raid-box-071323";
-			skuDisableTime: "2023-08-27T23:59:00";
-			skuDisableTimeUtcMs: "1693180740000";
-			skuEnableTime: "2023-07-31T00:00:00";
-			skuEnableTimeUtcMs: "1690761600000";
-			sortOrder: 6;
-		}
-	>
->;
 export type IapItemDisplayWebSeasonalDelights2024Box = S<
 	IapItemDisplay<
 		"web-seasonal-delights-2024-box",
@@ -3986,21 +3855,6 @@ export type IapItemDisplayWebSeasonalDelights2024Box = S<
 			sku: "web-seasonal-delights-2024-box";
 			sortOrder: 1;
 			spriteId: "bundle.general1.large.2";
-		}
-	>
->;
-export type IapItemDisplayWebVoyagerBox071323 = S<
-	IapItemDisplay<
-		"web-voyager-box-071323",
-		{
-			category: "IAP_CATEGORY_BUNDLE";
-			sale: true;
-			sku: "web-voyager-box-071323";
-			skuDisableTime: "2023-08-27T23:59:00";
-			skuDisableTimeUtcMs: "1693180740000";
-			skuEnableTime: "2023-07-31T00:00:00";
-			skuEnableTimeUtcMs: "1690761600000";
-			sortOrder: 7;
 		}
 	>
 >;
@@ -4090,10 +3944,6 @@ export type IapItemDisplayBundleMasterfileEntry =
 	| IapItemDisplayBundleGofest20265
 	| IapItemDisplayBundleGofest20266
 	| IapItemDisplayBundleGofest20267
-	| IapItemDisplayBundleGofest2026finale1
-	| IapItemDisplayBundleGofest2026finale2
-	| IapItemDisplayBundleGofest2026finale3
-	| IapItemDisplayBundleGofest2026finale4
 	| IapItemDisplayBundleGooglefeatured20261
 	| IapItemDisplayBundleGooglefeatured20262
 	| IapItemDisplayBundleGotour20241
@@ -4262,7 +4112,6 @@ export type IapItemDisplayBundleMasterfileEntry =
 	| IapItemDisplayPgoreleaseBundleGeneralThirdpartyMedium1
 	| IapItemDisplayPgoreleaseBundleGeneralThirdpartySmall1
 	| IapItemDisplayPgoreleaseBundleGeneralThirdpartySmall12
-	| IapItemDisplayPgoreleaseBundleGeneralThirdpartySmall2
 	| IapItemDisplayPgoreleaseBundleGeneral1Tiny4
 	| IapItemDisplayPgoreleaseBundleGeneral11Small1331
 	| IapItemDisplayPgoreleaseBundleGotour20231
@@ -4289,8 +4138,4 @@ export type IapItemDisplayBundleMasterfileEntry =
 	| IapItemDisplayPgoreleaseBundleWalkeratlantic20221
 	| IapItemDisplayPgoreleaseBundleWalkeratlantic20222
 	| IapItemDisplayWebCommunityAmbassadorBonusBundle2025
-	| IapItemDisplayWebGoFestHatchBox2023
-	| IapItemDisplayWebGoFestRaidBox2023
-	| IapItemDisplayWebRaidBox071323
-	| IapItemDisplayWebSeasonalDelights2024Box
-	| IapItemDisplayWebVoyagerBox071323;
+	| IapItemDisplayWebSeasonalDelights2024Box;

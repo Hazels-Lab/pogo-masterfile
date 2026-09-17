@@ -30,13 +30,6 @@ pub struct Item {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct NeutralAvatarItemTemplate {
-    pub display_template_id: String,
-    pub item_template_id: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
 pub struct PlayerAttribute {
     pub duration_mins: u64,
     pub key: String,
@@ -60,7 +53,7 @@ pub struct StatsLimitsOverride {
 #[serde(rename_all = "camelCase")]
 pub struct PokemonEncounter {
     pub is_featured_pokemon: Option<bool>,
-    pub pokemon_display: PokemonDisplay,
+    pub pokemon_display: Option<PokemonDisplay>,
     pub pokemon_id: String,
     pub stats_limits_override: Option<StatsLimitsOverride>,
 }
@@ -71,8 +64,6 @@ pub struct Rewards {
     pub candy: Option<Candy>,
     pub exp: Option<u64>,
     pub item: Option<Item>,
-    pub mega_resource: Option<Candy>,
-    pub neutral_avatar_item_template: Option<NeutralAvatarItemTemplate>,
     pub player_attribute: Option<PlayerAttribute>,
     pub pokemon_encounter: Option<PokemonEncounter>,
     pub stardust: Option<u64>,

@@ -59,6 +59,7 @@ import type {
 	GiftingSettings,
 	GuiSearchSettings,
 	GymBadgeSettings,
+	GymTopperDistanceSettings,
 	HapticsSettings,
 	IapSettings,
 	IbfcLightweightSettings,
@@ -208,6 +209,7 @@ export interface SingletonsLookup {
 	GIFTING_SETTINGS: GiftingSettings;
 	GUI_SEARCH_SETTINGS: GuiSearchSettings;
 	GYM_BADGE_SETTINGS: GymBadgeSettings;
+	GYM_TOPPER_DISTANCE_SETTINGS: GymTopperDistanceSettings;
 	HAPTICS_SETTINGS: HapticsSettings;
 	IAP_SETTINGS: IapSettings;
 	IBFC_LIGHTWEIGHT_SETTINGS: IbfcLightweightSettings;

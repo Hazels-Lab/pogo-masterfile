@@ -7,246 +7,246 @@ use serde::{Deserialize, Serialize};
     Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum,
 )]
 pub enum EventPassTierSettingsTemplateId {
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_1_FREE")]
-    EventPassMegasquads2026Event1Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_1_PREMIUM")]
-    EventPassMegasquads2026Event1Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_2_FREE")]
-    EventPassMegasquads2026Event2Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_2_PREMIUM")]
-    EventPassMegasquads2026Event2Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_3_FREE")]
-    EventPassMegasquads2026Event3Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_3_PREMIUM")]
-    EventPassMegasquads2026Event3Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_4_FREE")]
-    EventPassMegasquads2026Event4Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_4_PREMIUM")]
-    EventPassMegasquads2026Event4Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_5_FREE")]
-    EventPassMegasquads2026Event5Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_5_PREMIUM")]
-    EventPassMegasquads2026Event5Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_6_FREE")]
-    EventPassMegasquads2026Event6Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_6_PREMIUM")]
-    EventPassMegasquads2026Event6Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_7_FREE")]
-    EventPassMegasquads2026Event7Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_7_PREMIUM")]
-    EventPassMegasquads2026Event7Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_8_FREE")]
-    EventPassMegasquads2026Event8Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_8_PREMIUM")]
-    EventPassMegasquads2026Event8Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_9_FREE")]
-    EventPassMegasquads2026Event9Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_9_PREMIUM")]
-    EventPassMegasquads2026Event9Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_10_FREE")]
-    EventPassMegasquads2026Event10Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_10_PREMIUM")]
-    EventPassMegasquads2026Event10Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_11_FREE")]
-    EventPassMegasquads2026Event11Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_11_PREMIUM")]
-    EventPassMegasquads2026Event11Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_12_FREE")]
-    EventPassMegasquads2026Event12Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_12_PREMIUM")]
-    EventPassMegasquads2026Event12Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_13_FREE")]
-    EventPassMegasquads2026Event13Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_13_PREMIUM")]
-    EventPassMegasquads2026Event13Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_14_FREE")]
-    EventPassMegasquads2026Event14Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_14_PREMIUM")]
-    EventPassMegasquads2026Event14Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_15_FREE")]
-    EventPassMegasquads2026Event15Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_15_PREMIUM")]
-    EventPassMegasquads2026Event15Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_16_FREE")]
-    EventPassMegasquads2026Event16Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_16_PREMIUM")]
-    EventPassMegasquads2026Event16Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_17_FREE")]
-    EventPassMegasquads2026Event17Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_17_PREMIUM")]
-    EventPassMegasquads2026Event17Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_18_FREE")]
-    EventPassMegasquads2026Event18Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_18_PREMIUM")]
-    EventPassMegasquads2026Event18Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_19_FREE")]
-    EventPassMegasquads2026Event19Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_19_PREMIUM")]
-    EventPassMegasquads2026Event19Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_20_FREE")]
-    EventPassMegasquads2026Event20Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_20_PREMIUM")]
-    EventPassMegasquads2026Event20Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_21_FREE")]
-    EventPassMegasquads2026Event21Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_21_PREMIUM")]
-    EventPassMegasquads2026Event21Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_22_FREE")]
-    EventPassMegasquads2026Event22Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_22_PREMIUM")]
-    EventPassMegasquads2026Event22Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_23_FREE")]
-    EventPassMegasquads2026Event23Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_23_PREMIUM")]
-    EventPassMegasquads2026Event23Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_24_FREE")]
-    EventPassMegasquads2026Event24Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_24_PREMIUM")]
-    EventPassMegasquads2026Event24Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_25_FREE")]
-    EventPassMegasquads2026Event25Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_25_PREMIUM")]
-    EventPassMegasquads2026Event25Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_26_FREE")]
-    EventPassMegasquads2026Event26Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_26_PREMIUM")]
-    EventPassMegasquads2026Event26Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_27_FREE")]
-    EventPassMegasquads2026Event27Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_27_PREMIUM")]
-    EventPassMegasquads2026Event27Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_28_FREE")]
-    EventPassMegasquads2026Event28Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_28_PREMIUM")]
-    EventPassMegasquads2026Event28Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_29_FREE")]
-    EventPassMegasquads2026Event29Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_29_PREMIUM")]
-    EventPassMegasquads2026Event29Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_30_FREE")]
-    EventPassMegasquads2026Event30Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_30_PREMIUM")]
-    EventPassMegasquads2026Event30Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_31_FREE")]
-    EventPassMegasquads2026Event31Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_31_PREMIUM")]
-    EventPassMegasquads2026Event31Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_32_FREE")]
-    EventPassMegasquads2026Event32Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_32_PREMIUM")]
-    EventPassMegasquads2026Event32Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_33_FREE")]
-    EventPassMegasquads2026Event33Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_33_PREMIUM")]
-    EventPassMegasquads2026Event33Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_34_FREE")]
-    EventPassMegasquads2026Event34Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_34_PREMIUM")]
-    EventPassMegasquads2026Event34Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_35_FREE")]
-    EventPassMegasquads2026Event35Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_35_PREMIUM")]
-    EventPassMegasquads2026Event35Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_36_FREE")]
-    EventPassMegasquads2026Event36Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_36_PREMIUM")]
-    EventPassMegasquads2026Event36Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_37_FREE")]
-    EventPassMegasquads2026Event37Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_37_PREMIUM")]
-    EventPassMegasquads2026Event37Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_38_FREE")]
-    EventPassMegasquads2026Event38Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_38_PREMIUM")]
-    EventPassMegasquads2026Event38Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_39_FREE")]
-    EventPassMegasquads2026Event39Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_39_PREMIUM")]
-    EventPassMegasquads2026Event39Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_40_FREE")]
-    EventPassMegasquads2026Event40Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_40_PREMIUM")]
-    EventPassMegasquads2026Event40Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_41_FREE")]
-    EventPassMegasquads2026Event41Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_41_PREMIUM")]
-    EventPassMegasquads2026Event41Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_42_FREE")]
-    EventPassMegasquads2026Event42Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_42_PREMIUM")]
-    EventPassMegasquads2026Event42Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_43_FREE")]
-    EventPassMegasquads2026Event43Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_43_PREMIUM")]
-    EventPassMegasquads2026Event43Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_44_FREE")]
-    EventPassMegasquads2026Event44Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_44_PREMIUM")]
-    EventPassMegasquads2026Event44Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_45_FREE")]
-    EventPassMegasquads2026Event45Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_45_PREMIUM")]
-    EventPassMegasquads2026Event45Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_46_FREE")]
-    EventPassMegasquads2026Event46Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_46_PREMIUM")]
-    EventPassMegasquads2026Event46Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_47_FREE")]
-    EventPassMegasquads2026Event47Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_47_PREMIUM")]
-    EventPassMegasquads2026Event47Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_48_FREE")]
-    EventPassMegasquads2026Event48Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_48_PREMIUM")]
-    EventPassMegasquads2026Event48Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_49_FREE")]
-    EventPassMegasquads2026Event49Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_49_PREMIUM")]
-    EventPassMegasquads2026Event49Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_50_FREE")]
-    EventPassMegasquads2026Event50Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_50_PREMIUM")]
-    EventPassMegasquads2026Event50Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_51_FREE")]
-    EventPassMegasquads2026Event51Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_51_PREMIUM")]
-    EventPassMegasquads2026Event51Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_52_FREE")]
-    EventPassMegasquads2026Event52Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_52_PREMIUM")]
-    EventPassMegasquads2026Event52Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_53_FREE")]
-    EventPassMegasquads2026Event53Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_53_PREMIUM")]
-    EventPassMegasquads2026Event53Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_54_FREE")]
-    EventPassMegasquads2026Event54Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_54_PREMIUM")]
-    EventPassMegasquads2026Event54Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_55_FREE")]
-    EventPassMegasquads2026Event55Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_55_PREMIUM")]
-    EventPassMegasquads2026Event55Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_56_FREE")]
-    EventPassMegasquads2026Event56Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_56_PREMIUM")]
-    EventPassMegasquads2026Event56Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_57_FREE")]
-    EventPassMegasquads2026Event57Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_57_PREMIUM")]
-    EventPassMegasquads2026Event57Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_58_FREE")]
-    EventPassMegasquads2026Event58Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_58_PREMIUM")]
-    EventPassMegasquads2026Event58Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_59_FREE")]
-    EventPassMegasquads2026Event59Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_59_PREMIUM")]
-    EventPassMegasquads2026Event59Premium,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_60_FREE")]
-    EventPassMegasquads2026Event60Free,
-    #[serde(rename = "EVENT_PASS_MEGASQUADS2026_EVENT_60_PREMIUM")]
-    EventPassMegasquads2026Event60Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_1_FREE")]
+    EventPassHorizonsFall2026Event1Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_1_PREMIUM")]
+    EventPassHorizonsFall2026Event1Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_2_FREE")]
+    EventPassHorizonsFall2026Event2Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_2_PREMIUM")]
+    EventPassHorizonsFall2026Event2Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_3_FREE")]
+    EventPassHorizonsFall2026Event3Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_3_PREMIUM")]
+    EventPassHorizonsFall2026Event3Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_4_FREE")]
+    EventPassHorizonsFall2026Event4Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_4_PREMIUM")]
+    EventPassHorizonsFall2026Event4Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_5_FREE")]
+    EventPassHorizonsFall2026Event5Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_5_PREMIUM")]
+    EventPassHorizonsFall2026Event5Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_6_FREE")]
+    EventPassHorizonsFall2026Event6Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_6_PREMIUM")]
+    EventPassHorizonsFall2026Event6Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_7_FREE")]
+    EventPassHorizonsFall2026Event7Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_7_PREMIUM")]
+    EventPassHorizonsFall2026Event7Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_8_FREE")]
+    EventPassHorizonsFall2026Event8Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_8_PREMIUM")]
+    EventPassHorizonsFall2026Event8Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_9_FREE")]
+    EventPassHorizonsFall2026Event9Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_9_PREMIUM")]
+    EventPassHorizonsFall2026Event9Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_10_FREE")]
+    EventPassHorizonsFall2026Event10Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_10_PREMIUM")]
+    EventPassHorizonsFall2026Event10Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_11_FREE")]
+    EventPassHorizonsFall2026Event11Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_11_PREMIUM")]
+    EventPassHorizonsFall2026Event11Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_12_FREE")]
+    EventPassHorizonsFall2026Event12Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_12_PREMIUM")]
+    EventPassHorizonsFall2026Event12Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_13_FREE")]
+    EventPassHorizonsFall2026Event13Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_13_PREMIUM")]
+    EventPassHorizonsFall2026Event13Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_14_FREE")]
+    EventPassHorizonsFall2026Event14Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_14_PREMIUM")]
+    EventPassHorizonsFall2026Event14Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_15_FREE")]
+    EventPassHorizonsFall2026Event15Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_15_PREMIUM")]
+    EventPassHorizonsFall2026Event15Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_16_FREE")]
+    EventPassHorizonsFall2026Event16Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_16_PREMIUM")]
+    EventPassHorizonsFall2026Event16Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_17_FREE")]
+    EventPassHorizonsFall2026Event17Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_17_PREMIUM")]
+    EventPassHorizonsFall2026Event17Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_18_FREE")]
+    EventPassHorizonsFall2026Event18Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_18_PREMIUM")]
+    EventPassHorizonsFall2026Event18Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_19_FREE")]
+    EventPassHorizonsFall2026Event19Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_19_PREMIUM")]
+    EventPassHorizonsFall2026Event19Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_20_FREE")]
+    EventPassHorizonsFall2026Event20Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_20_PREMIUM")]
+    EventPassHorizonsFall2026Event20Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_21_FREE")]
+    EventPassHorizonsFall2026Event21Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_21_PREMIUM")]
+    EventPassHorizonsFall2026Event21Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_22_FREE")]
+    EventPassHorizonsFall2026Event22Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_22_PREMIUM")]
+    EventPassHorizonsFall2026Event22Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_23_FREE")]
+    EventPassHorizonsFall2026Event23Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_23_PREMIUM")]
+    EventPassHorizonsFall2026Event23Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_24_FREE")]
+    EventPassHorizonsFall2026Event24Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_24_PREMIUM")]
+    EventPassHorizonsFall2026Event24Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_25_FREE")]
+    EventPassHorizonsFall2026Event25Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_25_PREMIUM")]
+    EventPassHorizonsFall2026Event25Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_26_FREE")]
+    EventPassHorizonsFall2026Event26Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_26_PREMIUM")]
+    EventPassHorizonsFall2026Event26Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_27_FREE")]
+    EventPassHorizonsFall2026Event27Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_27_PREMIUM")]
+    EventPassHorizonsFall2026Event27Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_28_FREE")]
+    EventPassHorizonsFall2026Event28Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_28_PREMIUM")]
+    EventPassHorizonsFall2026Event28Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_29_FREE")]
+    EventPassHorizonsFall2026Event29Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_29_PREMIUM")]
+    EventPassHorizonsFall2026Event29Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_30_FREE")]
+    EventPassHorizonsFall2026Event30Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_30_PREMIUM")]
+    EventPassHorizonsFall2026Event30Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_31_FREE")]
+    EventPassHorizonsFall2026Event31Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_31_PREMIUM")]
+    EventPassHorizonsFall2026Event31Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_32_FREE")]
+    EventPassHorizonsFall2026Event32Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_32_PREMIUM")]
+    EventPassHorizonsFall2026Event32Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_33_FREE")]
+    EventPassHorizonsFall2026Event33Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_33_PREMIUM")]
+    EventPassHorizonsFall2026Event33Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_34_FREE")]
+    EventPassHorizonsFall2026Event34Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_34_PREMIUM")]
+    EventPassHorizonsFall2026Event34Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_35_FREE")]
+    EventPassHorizonsFall2026Event35Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_35_PREMIUM")]
+    EventPassHorizonsFall2026Event35Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_36_FREE")]
+    EventPassHorizonsFall2026Event36Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_36_PREMIUM")]
+    EventPassHorizonsFall2026Event36Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_37_FREE")]
+    EventPassHorizonsFall2026Event37Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_37_PREMIUM")]
+    EventPassHorizonsFall2026Event37Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_38_FREE")]
+    EventPassHorizonsFall2026Event38Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_38_PREMIUM")]
+    EventPassHorizonsFall2026Event38Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_39_FREE")]
+    EventPassHorizonsFall2026Event39Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_39_PREMIUM")]
+    EventPassHorizonsFall2026Event39Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_40_FREE")]
+    EventPassHorizonsFall2026Event40Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_40_PREMIUM")]
+    EventPassHorizonsFall2026Event40Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_41_FREE")]
+    EventPassHorizonsFall2026Event41Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_41_PREMIUM")]
+    EventPassHorizonsFall2026Event41Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_42_FREE")]
+    EventPassHorizonsFall2026Event42Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_42_PREMIUM")]
+    EventPassHorizonsFall2026Event42Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_43_FREE")]
+    EventPassHorizonsFall2026Event43Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_43_PREMIUM")]
+    EventPassHorizonsFall2026Event43Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_44_FREE")]
+    EventPassHorizonsFall2026Event44Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_44_PREMIUM")]
+    EventPassHorizonsFall2026Event44Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_45_FREE")]
+    EventPassHorizonsFall2026Event45Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_45_PREMIUM")]
+    EventPassHorizonsFall2026Event45Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_46_FREE")]
+    EventPassHorizonsFall2026Event46Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_46_PREMIUM")]
+    EventPassHorizonsFall2026Event46Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_47_FREE")]
+    EventPassHorizonsFall2026Event47Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_47_PREMIUM")]
+    EventPassHorizonsFall2026Event47Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_48_FREE")]
+    EventPassHorizonsFall2026Event48Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_48_PREMIUM")]
+    EventPassHorizonsFall2026Event48Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_49_FREE")]
+    EventPassHorizonsFall2026Event49Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_49_PREMIUM")]
+    EventPassHorizonsFall2026Event49Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_50_FREE")]
+    EventPassHorizonsFall2026Event50Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_50_PREMIUM")]
+    EventPassHorizonsFall2026Event50Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_51_FREE")]
+    EventPassHorizonsFall2026Event51Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_51_PREMIUM")]
+    EventPassHorizonsFall2026Event51Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_52_FREE")]
+    EventPassHorizonsFall2026Event52Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_52_PREMIUM")]
+    EventPassHorizonsFall2026Event52Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_53_FREE")]
+    EventPassHorizonsFall2026Event53Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_53_PREMIUM")]
+    EventPassHorizonsFall2026Event53Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_54_FREE")]
+    EventPassHorizonsFall2026Event54Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_54_PREMIUM")]
+    EventPassHorizonsFall2026Event54Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_55_FREE")]
+    EventPassHorizonsFall2026Event55Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_55_PREMIUM")]
+    EventPassHorizonsFall2026Event55Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_56_FREE")]
+    EventPassHorizonsFall2026Event56Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_56_PREMIUM")]
+    EventPassHorizonsFall2026Event56Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_57_FREE")]
+    EventPassHorizonsFall2026Event57Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_57_PREMIUM")]
+    EventPassHorizonsFall2026Event57Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_58_FREE")]
+    EventPassHorizonsFall2026Event58Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_58_PREMIUM")]
+    EventPassHorizonsFall2026Event58Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_59_FREE")]
+    EventPassHorizonsFall2026Event59Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_59_PREMIUM")]
+    EventPassHorizonsFall2026Event59Premium,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_60_FREE")]
+    EventPassHorizonsFall2026Event60Free,
+    #[serde(rename = "EVENT_PASS_HORIZONS_FALL_2026_EVENT_60_PREMIUM")]
+    EventPassHorizonsFall2026Event60Premium,
     #[serde(rename = "EVENT_PASS_SEPTEMBER2026_SEASON_1_FREE")]
     EventPassSeptember2026Season1Free,
     #[serde(rename = "EVENT_PASS_SEPTEMBER2026_SEASON_1_PREMIUM")]

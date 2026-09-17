@@ -3,45 +3,45 @@
 import type { S } from "../../_utils";
 import type { EventPassSettings } from "../types";
 
-export type EventPassSettingsMegasquads2026Event = S<
+export type EventPassSettingsHorizonsFall2026Event = S<
 	EventPassSettings<
-		"EVENT_PASS_MEGASQUADS2026_EVENT",
+		"EVENT_PASS_HORIZONS_FALL_2026_EVENT",
 		{
 			additionalBonusTiersLevel: 31;
 			eventPassDisplaySettings: {
-				eventPassTitleKey: "season_pass_base_track_title_mega_squads_2026";
+				eventPassTitleKey: "season_pass_base_track_title_horizons_fall_2026";
 				eventPassTrackUpgradeDescriptions: [
 					{
-						detailsLinkKey: "details_link_key_mega_squads";
-						eventDurationKey: "season_pass_mega_squads_2026_event_duration";
+						detailsLinkKey: "season_pass_details_link_horizons_fall_2026";
+						eventDurationKey: "season_pass_horizons_fall_2026_event_duration";
 						eventPassTrackToUpgradeTo: "PREMIUM";
 						passTrackUpgradeHeaderDescription: "deluxe_event_pass_track_unlock_description";
-						ranksToHighlightRewards: [6, 13, 25];
+						ranksToHighlightRewards: [6, 13, 30];
 						trackUnlockImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe.png";
 						trackUnlockPlusPointsImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe_plus.png";
-						trackUnlockPlusPointsSkuId: "pgorelease.september1_2026_deluxe_event_pass_track_unlock_plus_points";
-						trackUnlockSkuId: "pgorelease.september1_2026_deluxe_event_pass_track_unlock";
-						upgradeDescriptionKey: "season_pass_mega_squads_2026_upgrade_description";
+						trackUnlockPlusPointsSkuId: "pgorelease.september2_2026_deluxe_event_pass_track_unlock_plus_points";
+						trackUnlockSkuId: "pgorelease.september2_2026_deluxe_event_pass_track_unlock";
+						upgradeDescriptionKey: "season_pass_horizons_fall_2026_upgrade_description";
 					},
 				];
 				premiumRewardBannerBottom: "event_pass_premium_reward_banner_bottom_text_25";
 				premiumRewardBannerImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7150419b_s24-logo-512x512.png";
-				premiumRewardBannerMiddle: "avatar_shirt_maschiff";
-				sectionDisplayPriority: 6;
+				premiumRewardBannerMiddle: "item_paid_raid_ticket_name";
+				sectionDisplayPriority: 50;
 			};
-			expirationTime: "2026-09-14T20:00:00";
-			gracePeriodEndTime: "2026-09-16T20:00:00";
+			expirationTime: "2026-09-22T20:00:00";
+			gracePeriodEndTime: "2026-09-24T20:00:00";
 			maxTierLevel: 60;
-			pointsItemId: "ITEM_EVENT_PASS_POINT_LIVE_OPS_01";
+			pointsItemId: "ITEM_EVENT_PASS_POINT_LIVE_OPS_02";
 			trackConditions: [
 				{
 					track: "FREE";
-					trackTitleKey: "season_pass_base_track_title_mega_squads_2026";
+					trackTitleKey: "season_pass_base_track_title_horizons_fall_2026";
 				},
 				{
-					badge: "BADGE_EVENT_0241";
+					badge: "BADGE_EVENT_0242";
 					track: "PREMIUM";
-					trackTitleKey: "season_pass_premium_track_title_mega_squads_2026";
+					trackTitleKey: "season_pass_premium_track_title_horizons_fall_2026";
 				},
 			];
 		}
@@ -92,6 +92,6 @@ export type EventPassSettingsSeptember2026Season = S<
 	>
 >;
 
-export type EventPassSettingsMasterfileEntry = EventPassSettingsMegasquads2026Event | EventPassSettingsSeptember2026Season;
+export type EventPassSettingsMasterfileEntry = EventPassSettingsHorizonsFall2026Event | EventPassSettingsSeptember2026Season;
 
 export type EventPassSettingsTemplateID = EventPassSettingsMasterfileEntry["templateId"];

@@ -301,6 +301,7 @@ import type {
 	AvatarItemDisplayNHatAcetrainersmA0,
 	AvatarItemDisplayNHatAcetrainersmB0,
 	AvatarItemDisplayNHatAcorn,
+	AvatarItemDisplayNHatAdidas,
 	AvatarItemDisplayNHatAdventure0,
 	AvatarItemDisplayNHatAlolanexeggutorhat0,
 	AvatarItemDisplayNHatApplinitems0,
@@ -792,6 +793,7 @@ import type {
 	AvatarItemDisplayNShirtAcetrainersmA0,
 	AvatarItemDisplayNShirtAcetrainersmB0,
 	AvatarItemDisplayNShirtAcorn,
+	AvatarItemDisplayNShirtAdidasjacket,
 	AvatarItemDisplayNShirtAllister0,
 	AvatarItemDisplayNShirtAlolacomfey0,
 	AvatarItemDisplayNShirtAnimegou0,
@@ -1248,6 +1250,7 @@ import type {
 	AvatarItemDisplayNShoesAcetrainerbwB0,
 	AvatarItemDisplayNShoesAcetrainersmA0,
 	AvatarItemDisplayNShoesAcetrainersmB0,
+	AvatarItemDisplayNShoesAdidas,
 	AvatarItemDisplayNShoesAllister0,
 	AvatarItemDisplayNShoesAnimegou0,
 	AvatarItemDisplayNShoesBackpackerA0,
@@ -1994,6 +1997,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_hat_acetrainersm_a_0: AvatarItemDisplayNHatAcetrainersmA0;
 	N_DISPLAY_n_hat_acetrainersm_b_0: AvatarItemDisplayNHatAcetrainersmB0;
 	N_DISPLAY_n_hat_acorn: AvatarItemDisplayNHatAcorn;
+	N_DISPLAY_n_hat_adidas: AvatarItemDisplayNHatAdidas;
 	N_DISPLAY_n_hat_adventure_0: AvatarItemDisplayNHatAdventure0;
 	N_DISPLAY_n_hat_alolanexeggutorhat_0: AvatarItemDisplayNHatAlolanexeggutorhat0;
 	N_DISPLAY_n_hat_applinitems_0: AvatarItemDisplayNHatApplinitems0;
@@ -2485,6 +2489,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_acetrainersm_a_0: AvatarItemDisplayNShirtAcetrainersmA0;
 	N_DISPLAY_n_shirt_acetrainersm_b_0: AvatarItemDisplayNShirtAcetrainersmB0;
 	N_DISPLAY_n_shirt_acorn: AvatarItemDisplayNShirtAcorn;
+	N_DISPLAY_n_shirt_adidasjacket: AvatarItemDisplayNShirtAdidasjacket;
 	N_DISPLAY_n_shirt_allister_0: AvatarItemDisplayNShirtAllister0;
 	N_DISPLAY_n_shirt_alolacomfey_0: AvatarItemDisplayNShirtAlolacomfey0;
 	N_DISPLAY_n_shirt_animegou_0: AvatarItemDisplayNShirtAnimegou0;
@@ -2941,6 +2946,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shoes_acetrainerbw_b_0: AvatarItemDisplayNShoesAcetrainerbwB0;
 	N_DISPLAY_n_shoes_acetrainersm_a_0: AvatarItemDisplayNShoesAcetrainersmA0;
 	N_DISPLAY_n_shoes_acetrainersm_b_0: AvatarItemDisplayNShoesAcetrainersmB0;
+	N_DISPLAY_n_shoes_adidas: AvatarItemDisplayNShoesAdidas;
 	N_DISPLAY_n_shoes_allister_0: AvatarItemDisplayNShoesAllister0;
 	N_DISPLAY_n_shoes_animegou_0: AvatarItemDisplayNShoesAnimegou0;
 	N_DISPLAY_n_shoes_backpacker_a_0: AvatarItemDisplayNShoesBackpackerA0;

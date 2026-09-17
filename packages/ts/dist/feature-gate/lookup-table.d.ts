@@ -8,7 +8,6 @@ import type {
 	FeatureGateEnablePvpChallengeSpanner,
 	FeatureGateEnhancedCurrencyOverflowStardust,
 	FeatureGateEnhancedMegaRaidReadyCheck,
-	FeatureGateEventList,
 	FeatureGateEventPassBonusMilestoneSeparation,
 	FeatureGateEventPassBonusRanks,
 	FeatureGateEventPassClaimableRewardToggle,
@@ -28,7 +27,6 @@ import type {
 	FeatureGateSeafGetMapObjectsRateLimiter,
 	FeatureGateShieldBreakPowerDisplay,
 	FeatureGateUpdatedPreloadedMegaAnimation,
-	FeatureGateUpdateTicketsString,
 	FeatureGateVnextPreResponseInputBlockingBehavior,
 	FeatureGateWayfarerSubmitLinkout,
 } from "./entries";
@@ -41,7 +39,6 @@ export interface FeatureGateLookup {
 	ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE: FeatureGateEnablePvpChallengeSpanner;
 	ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE: FeatureGateEnhancedCurrencyOverflowStardust;
 	ENHANCED_MEGA_RAID_READY_CHECK_FEATURE_GATE: FeatureGateEnhancedMegaRaidReadyCheck;
-	EVENT_LIST_FEATURE_GATE: FeatureGateEventList;
 	EVENT_PASS_BONUS_MILESTONE_SEPARATION_FEATURE_GATE: FeatureGateEventPassBonusMilestoneSeparation;
 	EVENT_PASS_BONUS_RANKS_FEATURE_GATE: FeatureGateEventPassBonusRanks;
 	EVENT_PASS_CLAIMABLE_REWARD_TOGGLE_FEATURE_GATE: FeatureGateEventPassClaimableRewardToggle;
@@ -60,7 +57,6 @@ export interface FeatureGateLookup {
 	REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE: FeatureGateRemoteTradeImprovements;
 	SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE: FeatureGateSeafGetMapObjectsRateLimiter;
 	SHIELD_BREAK_POWER_DISPLAY_FEATURE_GATE: FeatureGateShieldBreakPowerDisplay;
-	UPDATE_TICKETS_STRING_FEATURE_GATE: FeatureGateUpdateTicketsString;
 	UPDATED_PRELOADED_MEGA_ANIMATION_FEATURE_GATE: FeatureGateUpdatedPreloadedMegaAnimation;
 	VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE: FeatureGateVnextPreResponseInputBlockingBehavior;
 	WAYFARER_SUBMIT_LINKOUT_FEATURE_GATE: FeatureGateWayfarerSubmitLinkout;

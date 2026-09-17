@@ -395,14 +395,14 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "codeGateProto":
-		var e code_gate_proto.CodeGateProtoEntry
+	case "tappableSettings":
+		var e tappable_settings.TappableSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
 		return e, nil
-	case "tappableSettings":
-		var e tappable_settings.TappableSettingsEntry
+	case "codeGateProto":
+		var e code_gate_proto.CodeGateProtoEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -1339,6 +1339,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "":
 		switch probe.TemplateID {
+		case "GYM_TOPPER_DISTANCE_SETTINGS":
+			var e singletons.GymTopperDistanceSettingsEntry
+			if err := json.Unmarshal(data, &e); err != nil {
+				return nil, err
+			}
+			return e, nil
 		case "LOCATION_CARD_FEATURE_SETTINGS":
 			var e singletons.LocationCardFeatureSettingsEntry
 			if err := json.Unmarshal(data, &e); err != nil {

@@ -21,8 +21,6 @@ pub enum FeatureGateTemplateId {
     EnhancedCurrencyOverflowStardustFeatureGate,
     #[serde(rename = "ENHANCED_MEGA_RAID_READY_CHECK_FEATURE_GATE")]
     EnhancedMegaRaidReadyCheckFeatureGate,
-    #[serde(rename = "EVENT_LIST_FEATURE_GATE")]
-    EventListFeatureGate,
     #[serde(rename = "EVENT_PASS_BONUS_MILESTONE_SEPARATION_FEATURE_GATE")]
     EventPassBonusMilestoneSeparationFeatureGate,
     #[serde(rename = "EVENT_PASS_BONUS_RANKS_FEATURE_GATE")]
@@ -59,8 +57,6 @@ pub enum FeatureGateTemplateId {
     SeafGetMapObjectsRateLimiterFeatureGate,
     #[serde(rename = "SHIELD_BREAK_POWER_DISPLAY_FEATURE_GATE")]
     ShieldBreakPowerDisplayFeatureGate,
-    #[serde(rename = "UPDATE_TICKETS_STRING_FEATURE_GATE")]
-    UpdateTicketsStringFeatureGate,
     #[serde(rename = "UPDATED_PRELOADED_MEGA_ANIMATION_FEATURE_GATE")]
     UpdatedPreloadedMegaAnimationFeatureGate,
     #[serde(rename = "VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE")]
