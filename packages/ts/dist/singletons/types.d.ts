@@ -60,6 +60,7 @@ import type {
 	GiftingSettings,
 	GuiSearchSettings,
 	GymBadgeSettings,
+	GymTopperDistanceSettings,
 	HapticsSettings,
 	IapSettings,
 	IbfcLightweightSettings,
@@ -207,6 +208,7 @@ export type GeotargetedQuestSettingsType = W<GeotargetedQuestSettings>;
 export type GiftingSettingsType = W<GiftingSettings>;
 export type GuiSearchSettingsType = W<GuiSearchSettings>;
 export type GymBadgeSettingsType = W<GymBadgeSettings>;
+export type GymTopperDistanceSettingsType = W<GymTopperDistanceSettings>;
 export type HapticsSettingsType = W<HapticsSettings>;
 export type IapSettingsType = W<IapSettings>;
 export type IbfcLightweightSettingsType = W<IbfcLightweightSettings>;
@@ -354,6 +356,7 @@ export type Singletons =
 	| GiftingSettingsType
 	| GuiSearchSettingsType
 	| GymBadgeSettingsType
+	| GymTopperDistanceSettingsType
 	| HapticsSettingsType
 	| IapSettingsType
 	| IbfcLightweightSettingsType

@@ -12,7 +12,6 @@ const (
 	FeatureGateTemplateIDEnablePvpChallengeSpannerFeatureGate               FeatureGateTemplateID = "ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE"
 	FeatureGateTemplateIDEnhancedCurrencyOverflowStardustFeatureGate        FeatureGateTemplateID = "ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE"
 	FeatureGateTemplateIDEnhancedMegaRaidReadyCheckFeatureGate              FeatureGateTemplateID = "ENHANCED_MEGA_RAID_READY_CHECK_FEATURE_GATE"
-	FeatureGateTemplateIDEventListFeatureGate                               FeatureGateTemplateID = "EVENT_LIST_FEATURE_GATE"
 	FeatureGateTemplateIDEventPassBonusMilestoneSeparationFeatureGate       FeatureGateTemplateID = "EVENT_PASS_BONUS_MILESTONE_SEPARATION_FEATURE_GATE"
 	FeatureGateTemplateIDEventPassBonusRanksFeatureGate                     FeatureGateTemplateID = "EVENT_PASS_BONUS_RANKS_FEATURE_GATE"
 	FeatureGateTemplateIDEventPassClaimableRewardToggleFeatureGate          FeatureGateTemplateID = "EVENT_PASS_CLAIMABLE_REWARD_TOGGLE_FEATURE_GATE"
@@ -31,7 +30,6 @@ const (
 	FeatureGateTemplateIDRemoteTradeImprovementsFeatureGate                 FeatureGateTemplateID = "REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE"
 	FeatureGateTemplateIDSeafGetMapObjectsRateLimiterFeatureGate            FeatureGateTemplateID = "SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE"
 	FeatureGateTemplateIDShieldBreakPowerDisplayFeatureGate                 FeatureGateTemplateID = "SHIELD_BREAK_POWER_DISPLAY_FEATURE_GATE"
-	FeatureGateTemplateIDUpdateTicketsStringFeatureGate                     FeatureGateTemplateID = "UPDATE_TICKETS_STRING_FEATURE_GATE"
 	FeatureGateTemplateIDUpdatedPreloadedMegaAnimationFeatureGate           FeatureGateTemplateID = "UPDATED_PRELOADED_MEGA_ANIMATION_FEATURE_GATE"
 	FeatureGateTemplateIDVnextPreResponseInputBlockingBehaviorFeatureGate   FeatureGateTemplateID = "VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE"
 	FeatureGateTemplateIDWayfarerSubmitLinkoutFeatureGate                   FeatureGateTemplateID = "WAYFARER_SUBMIT_LINKOUT_FEATURE_GATE"
@@ -45,7 +43,6 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDEnablePvpChallengeSpannerFeatureGate,
 	FeatureGateTemplateIDEnhancedCurrencyOverflowStardustFeatureGate,
 	FeatureGateTemplateIDEnhancedMegaRaidReadyCheckFeatureGate,
-	FeatureGateTemplateIDEventListFeatureGate,
 	FeatureGateTemplateIDEventPassBonusMilestoneSeparationFeatureGate,
 	FeatureGateTemplateIDEventPassBonusRanksFeatureGate,
 	FeatureGateTemplateIDEventPassClaimableRewardToggleFeatureGate,
@@ -64,7 +61,6 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDRemoteTradeImprovementsFeatureGate,
 	FeatureGateTemplateIDSeafGetMapObjectsRateLimiterFeatureGate,
 	FeatureGateTemplateIDShieldBreakPowerDisplayFeatureGate,
-	FeatureGateTemplateIDUpdateTicketsStringFeatureGate,
 	FeatureGateTemplateIDUpdatedPreloadedMegaAnimationFeatureGate,
 	FeatureGateTemplateIDVnextPreResponseInputBlockingBehaviorFeatureGate,
 	FeatureGateTemplateIDWayfarerSubmitLinkoutFeatureGate,

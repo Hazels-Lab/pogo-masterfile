@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", 167 entries (structural types).
+// Generated from Pokémon GO masterfile — group "itemSettings", 168 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -76,6 +76,7 @@ export interface ItemSettingsData {
 		| "item_event_ticket_pink_details_CDC_Gible26"
 		| "item_event_ticket_pink_details_MegaRayquaza26"
 		| "item_event_ticket_pink_details_WaterRRD26"
+		| "ITEM_EVENT_TICKET_S24_OCT_3_MAXBATTLE_desc_gmaxCinderace26"
 		| "item_global_event_ticket_details_GOTour2026"
 		| "item_global_event_ticket_details_GOWA26"
 		| "item_postcard_inventory_desc_stamp";
@@ -190,6 +191,7 @@ export interface ItemSettingsData {
 			| "1789837200000"
 			| "1790071200000"
 			| "1790452800000"
+			| "1791046800000"
 			| "1794765600000";
 		clientEventStartTimeUtcMs:
 			| "1696845600000"
@@ -223,6 +225,7 @@ export interface ItemSettingsData {
 			| "1789221600000"
 			| "1789826400000"
 			| "1790416800000"
+			| "1791036000000"
 			| "1794650400000";
 		conflictStoryQuestIds?: ["RERUN_MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER", "MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER"];
 		detailsLinkKey?:
@@ -284,6 +287,7 @@ export interface ItemSettingsData {
 			| "event_datetime_range_key_ENTEI_SHADOW_RAID_DAY"
 			| "event_datetime_range_key_fashionRaidDay_s22"
 			| "event_datetime_range_key_FinalJustice2025"
+			| "event_datetime_range_key_gmaxCinderace26"
 			| "event_datetime_range_key_gmaxRillaboom26"
 			| "event_datetime_range_key_GOTour2026"
 			| "event_datetime_range_key_GOWA26"
@@ -330,6 +334,7 @@ export interface ItemSettingsData {
 			| "2026-09-19T17:00:00"
 			| "2026-09-22T10:00:00"
 			| "2026-09-26T20:00:00"
+			| "2026-10-03T17:00:00"
 			| "2026-11-15T18:00:00";
 		eventStartTime:
 			| "2023-10-09T10:00:00"
@@ -363,6 +368,7 @@ export interface ItemSettingsData {
 			| "2026-09-12T14:00:00"
 			| "2026-09-19T14:00:00"
 			| "2026-09-26T10:00:00"
+			| "2026-10-03T14:00:00"
 			| "2026-11-14T10:00:00";
 		giftable?: boolean;
 		giftItem?:
@@ -388,6 +394,7 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S23_2026_10_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S23_2026_12_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_NOV9_GOWAOL_TO_GIFT"
+			| "ITEM_EVENT_TICKET_S24_OCT_3_MAXBATTLE_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_SEP_19_MEGARAID_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_SEP_26_CATCH_TO_GIFT"
@@ -504,6 +511,7 @@ export interface ItemSettingsData {
 			| "item_event_ticket_pink_desc_MegaRayquaza26"
 			| "item_event_ticket_pink_desc_WaterRRD26"
 			| "item_event_ticket_pink_details_MegaRayquaza26"
+			| "ITEM_EVENT_TICKET_S24_OCT_3_MAXBATTLE_desc_gmaxCinderace26"
 			| "item_global_event_ticket_details_GOTour2026"
 			| "item_global_event_ticket_details_GOWA26"
 			| "item_ticket_city_safari_00_desc"
@@ -521,6 +529,7 @@ export interface ItemSettingsData {
 			| "text_rewards_key_ENTEI_SHADOW_RAID_DAY"
 			| "text_rewards_key_fashionRaidDay26"
 			| "text_rewards_key_FinalJustice2025"
+			| "text_rewards_key_gmaxCinderace26"
 			| "text_rewards_key_gmaxRillaboom26"
 			| "text_rewards_key_GOTour2026"
 			| "text_rewards_key_GOWA26"
@@ -620,6 +629,7 @@ export interface ItemSettingsData {
 		| "general1.ticket.1_10THPARTY0726_title"
 		| "general1.ticket.2_MegaRayquaza_title"
 		| "general1.ticket.2_WaterRRD26_title"
+		| "general1.ticket.4_gmaxCinderace26_title"
 		| "general1.ticket.4_gmaxRillaboom26_title"
 		| "general1.ticket.4_Riolu0426_title"
 		| "general1.ticket.5_IntoTDepths26_title"

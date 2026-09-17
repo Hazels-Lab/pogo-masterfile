@@ -229,8 +229,8 @@ pub enum MasterfileEntry {
     FriendshipMilestoneSettings(friendship_milestone_settings::FriendshipMilestoneSettingsEntry),
     PokemonScaleSettings(pokemon_scale_settings::PokemonScaleSettingsEntry),
     BuddyLevelSettings(buddy_level_settings::BuddyLevelSettingsEntry),
-    CodeGateProto(code_gate_proto::CodeGateProtoEntry),
     TappableSettings(tappable_settings::TappableSettingsEntry),
+    CodeGateProto(code_gate_proto::CodeGateProtoEntry),
     FortPowerUpLevelSettings(fort_power_up_level_settings::FortPowerUpLevelSettingsEntry),
     PokemonHomeEnergyCosts(pokemon_home_energy_costs::PokemonHomeEnergyCostsEntry),
     RollBack(roll_back::RollBackEntry),
@@ -302,6 +302,7 @@ pub enum MasterfileEntry {
     GiftingSettings(singletons::GiftingSettingsEntry),
     GuiSearchSettings(singletons::GuiSearchSettingsEntry),
     GymBadgeSettings(singletons::GymBadgeSettingsEntry),
+    GymTopperDistanceSettings(singletons::GymTopperDistanceSettingsEntry),
     HapticsSettings(singletons::HapticsSettingsEntry),
     IapSettings(singletons::IapSettingsEntry),
     IbfcLightweightSettings(singletons::IbfcLightweightSettingsEntry),
@@ -513,8 +514,8 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::PokemonScaleSettings)
                 }
                 "buddyLevelSettings" => serde_json::from_value(value).map(Self::BuddyLevelSettings),
-                "codeGateProto" => serde_json::from_value(value).map(Self::CodeGateProto),
                 "tappableSettings" => serde_json::from_value(value).map(Self::TappableSettings),
+                "codeGateProto" => serde_json::from_value(value).map(Self::CodeGateProto),
                 "fortPowerUpLevelSettings" => {
                     serde_json::from_value(value).map(Self::FortPowerUpLevelSettings)
                 }
@@ -881,6 +882,9 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 .and_then(|t| t.as_str())
                 .map(String::from);
             match template_id.as_deref() {
+                Some("GYM_TOPPER_DISTANCE_SETTINGS") => {
+                    serde_json::from_value(value).map(Self::GymTopperDistanceSettings)
+                }
                 Some("LOCATION_CARD_FEATURE_SETTINGS") => {
                     serde_json::from_value(value).map(Self::LocationCardFeatureSettings)
                 }

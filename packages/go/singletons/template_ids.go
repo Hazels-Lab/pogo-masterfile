@@ -64,6 +64,7 @@ const (
 	SingletonsTemplateIDGiftingSettings                         SingletonsTemplateID = "GIFTING_SETTINGS"
 	SingletonsTemplateIDGuiSearchSettings                       SingletonsTemplateID = "GUI_SEARCH_SETTINGS"
 	SingletonsTemplateIDGymBadgeSettings                        SingletonsTemplateID = "GYM_BADGE_SETTINGS"
+	SingletonsTemplateIDGymTopperDistanceSettings               SingletonsTemplateID = "GYM_TOPPER_DISTANCE_SETTINGS"
 	SingletonsTemplateIDHapticsSettings                         SingletonsTemplateID = "HAPTICS_SETTINGS"
 	SingletonsTemplateIDIapSettings                             SingletonsTemplateID = "IAP_SETTINGS"
 	SingletonsTemplateIDIbfcLightweightSettings                 SingletonsTemplateID = "IBFC_LIGHTWEIGHT_SETTINGS"
@@ -212,6 +213,7 @@ var SingletonsTemplateIDValues = [...]SingletonsTemplateID{
 	SingletonsTemplateIDGiftingSettings,
 	SingletonsTemplateIDGuiSearchSettings,
 	SingletonsTemplateIDGymBadgeSettings,
+	SingletonsTemplateIDGymTopperDistanceSettings,
 	SingletonsTemplateIDHapticsSettings,
 	SingletonsTemplateIDIapSettings,
 	SingletonsTemplateIDIbfcLightweightSettings,

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "free", 34 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "free", 32 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -241,40 +241,6 @@ export type IapItemDisplayBundleZoruamakegood2022 = S<
 		}
 	>
 >;
-export type IapItemDisplayGeneral1Ticket6 = S<
-	IapItemDisplay<
-		"general1.ticket.6",
-		{
-			category: "IAP_CATEGORY_FREE";
-			description: "first_time_gym_team_intro|2";
-			hidden: true;
-			sku: "general1.ticket.6";
-			skuDisableTime: "2022-06-02T13:00:00";
-			skuDisableTimeUtcMs: "1654174800000";
-			skuEnableTime: "2022-03-01T00:00:00";
-			skuEnableTimeUtcMs: "1646092800000";
-			sortOrder: 33;
-			spriteId: "general1.ticket.4";
-			title: "combat_battle";
-		}
-	>
->;
-export type IapItemDisplayGowaticketfree1 = S<
-	IapItemDisplay<
-		"gowaticketfree.1",
-		{
-			category: "IAP_CATEGORY_FREE";
-			hidden: true;
-			sku: "gowaticketfree.1";
-			skuDisableTime: "2023-11-24T18:15:00";
-			skuDisableTimeUtcMs: "1700849700000";
-			skuEnableTime: "2023-02-27T20:00:00";
-			skuEnableTimeUtcMs: "1677528000000";
-			sortOrder: 1;
-			spriteId: "general1.ticket.1";
-		}
-	>
->;
 export type IapItemDisplayPgoreleaseBundleCitysafaribarcelona1 = S<
 	IapItemDisplay<
 		"pgorelease.bundle.citysafaribarcelona1",
@@ -484,8 +450,6 @@ export type IapItemDisplayFreeMasterfileEntry =
 	| IapItemDisplayBundleIndonesialaunch1
 	| IapItemDisplayBundleShadowlugia1
 	| IapItemDisplayBundleZoruamakegood2022
-	| IapItemDisplayGeneral1Ticket6
-	| IapItemDisplayGowaticketfree1
 	| IapItemDisplayPgoreleaseBundleCitysafaribarcelona1
 	| IapItemDisplayPgoreleaseBundleCitysafaribarcelona2
 	| IapItemDisplayPgoreleaseBundleCitysafarimexico1

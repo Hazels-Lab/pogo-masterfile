@@ -305,6 +305,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNHatAcetrainersmA0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_acetrainersm_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatAcetrainersmB0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_acetrainersm_b_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatAcorn                            AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_acorn"
+	AvatarItemDisplayTemplateIDNDisplayNHatAdidas                           AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_adidas"
 	AvatarItemDisplayTemplateIDNDisplayNHatAdventure0                       AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_adventure_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatAlolanexeggutorhat0              AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_alolanexeggutorhat_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatApplinitems0                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_applinitems_0"
@@ -796,6 +797,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShirtAcetrainersmA0                 AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_acetrainersm_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtAcetrainersmB0                 AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_acetrainersm_b_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtAcorn                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_acorn"
+	AvatarItemDisplayTemplateIDNDisplayNShirtAdidasjacket                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_adidasjacket"
 	AvatarItemDisplayTemplateIDNDisplayNShirtAllister0                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_allister_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtAlolacomfey0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_alolacomfey_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtAnimegou0                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_animegou_0"
@@ -1252,6 +1254,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShoesAcetrainerbwB0                 AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_acetrainerbw_b_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesAcetrainersmA0                 AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_acetrainersm_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesAcetrainersmB0                 AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_acetrainersm_b_0"
+	AvatarItemDisplayTemplateIDNDisplayNShoesAdidas                         AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_adidas"
 	AvatarItemDisplayTemplateIDNDisplayNShoesAllister0                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_allister_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesAnimegou0                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_animegou_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesBackpackerA0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_backpacker_a_0"
@@ -1998,6 +2001,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNHatAcetrainersmA0,
 	AvatarItemDisplayTemplateIDNDisplayNHatAcetrainersmB0,
 	AvatarItemDisplayTemplateIDNDisplayNHatAcorn,
+	AvatarItemDisplayTemplateIDNDisplayNHatAdidas,
 	AvatarItemDisplayTemplateIDNDisplayNHatAdventure0,
 	AvatarItemDisplayTemplateIDNDisplayNHatAlolanexeggutorhat0,
 	AvatarItemDisplayTemplateIDNDisplayNHatApplinitems0,
@@ -2489,6 +2493,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShirtAcetrainersmA0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtAcetrainersmB0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtAcorn,
+	AvatarItemDisplayTemplateIDNDisplayNShirtAdidasjacket,
 	AvatarItemDisplayTemplateIDNDisplayNShirtAllister0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtAlolacomfey0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtAnimegou0,
@@ -2945,6 +2950,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShoesAcetrainerbwB0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesAcetrainersmA0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesAcetrainersmB0,
+	AvatarItemDisplayTemplateIDNDisplayNShoesAdidas,
 	AvatarItemDisplayTemplateIDNDisplayNShoesAllister0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesAnimegou0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesBackpackerA0,

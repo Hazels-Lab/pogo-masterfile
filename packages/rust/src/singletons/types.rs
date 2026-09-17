@@ -3150,6 +3150,11 @@ crate::masterfile_entry!(GuiSearchSettingsEntry, GuiSearchSettingsEntryData, gui
 
 crate::masterfile_entry!(GymBadgeSettingsEntry, GymBadgeSettingsEntryData, gym_badge_settings: GymBadgeSettings);
 
+crate::masterfile_stub_entry!(
+    GymTopperDistanceSettingsEntry,
+    GymTopperDistanceSettingsEntryData
+);
+
 crate::masterfile_entry!(HapticsSettingsEntry, HapticsSettingsEntryData, haptics_settings: HapticsSettings);
 
 crate::masterfile_entry!(IapSettingsEntry, IapSettingsEntryData, iap_settings: IapSettings);

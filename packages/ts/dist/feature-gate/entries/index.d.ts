@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 30 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 28 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -56,14 +56,6 @@ export type FeatureGateEnhancedMegaRaidReadyCheck = S<
 		"ENHANCED_MEGA_RAID_READY_CHECK_FEATURE_GATE",
 		{
 			status: 195735672;
-		}
-	>
->;
-export type FeatureGateEventList = S<
-	FeatureGate<
-		"EVENT_LIST_FEATURE_GATE",
-		{
-			status: 1;
 		}
 	>
 >;
@@ -247,14 +239,6 @@ export type FeatureGateShieldBreakPowerDisplay = S<
 		}
 	>
 >;
-export type FeatureGateUpdateTicketsString = S<
-	FeatureGate<
-		"UPDATE_TICKETS_STRING_FEATURE_GATE",
-		{
-			status: 29825861;
-		}
-	>
->;
 export type FeatureGateUpdatedPreloadedMegaAnimation = S<
 	FeatureGate<
 		"UPDATED_PRELOADED_MEGA_ANIMATION_FEATURE_GATE",
@@ -295,7 +279,6 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateEnablePvpChallengeSpanner
 	| FeatureGateEnhancedCurrencyOverflowStardust
 	| FeatureGateEnhancedMegaRaidReadyCheck
-	| FeatureGateEventList
 	| FeatureGateEventPassBonusMilestoneSeparation
 	| FeatureGateEventPassBonusRanks
 	| FeatureGateEventPassClaimableRewardToggle
@@ -314,7 +297,6 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateRemoteTradeImprovements
 	| FeatureGateSeafGetMapObjectsRateLimiter
 	| FeatureGateShieldBreakPowerDisplay
-	| FeatureGateUpdateTicketsString
 	| FeatureGateUpdatedPreloadedMegaAnimation
 	| FeatureGateVnextPreResponseInputBlockingBehavior
 	| FeatureGateWayfarerSubmitLinkout;

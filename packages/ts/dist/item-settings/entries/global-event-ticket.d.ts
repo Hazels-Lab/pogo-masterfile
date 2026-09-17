@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 53 entries.
+// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 54 entries.
 
 import type { S } from "../../_utils";
 import type { ItemSettings } from "../types";
@@ -1396,6 +1396,50 @@ export type ItemSettingsItemEventTicketS24Nov9Gowaol = S<
 		}
 	>
 >;
+export type ItemSettingsItemEventTicketS24Oct3Maxbattle = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S24_OCT_3_MAXBATTLE",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "ITEM_EVENT_TICKET_S24_OCT_3_MAXBATTLE_desc_gmaxCinderace26";
+			globalEventTicket: {
+				clientEventEndTimeUtcMs: "1791046800000";
+				clientEventStartTimeUtcMs: "1791036000000";
+				detailsLinkKey: "details_link_key";
+				displayV2Enabled: true;
+				eventDatetimeRangeKey: "event_datetime_range_key_gmaxCinderace26";
+				eventEndTime: "2026-10-03T17:00:00";
+				eventStartTime: "2026-10-03T14:00:00";
+				giftable: true;
+				giftItem: "ITEM_EVENT_TICKET_S24_OCT_3_MAXBATTLE_TO_GIFT";
+				iconRewards: [
+					{
+						item: {
+							amount: 1;
+							item: "ITEM_MAX_BOOST";
+						};
+						type: "ITEM";
+					},
+					{
+						exp: 25000;
+						type: "EXPERIENCE";
+					},
+					{
+						item: {
+							amount: 6400;
+							item: "ITEM_MP";
+						};
+						type: "ITEM";
+					},
+				];
+				itemBagDescriptionKey: "ITEM_EVENT_TICKET_S24_OCT_3_MAXBATTLE_desc_gmaxCinderace26";
+				textRewardsKey: "text_rewards_key_gmaxCinderace26";
+			};
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general1.ticket.4_gmaxCinderace26_title";
+		}
+	>
+>;
 export type ItemSettingsItemEventTicketS24Sep12Community = S<
 	ItemSettings<
 		"ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY",
@@ -1806,6 +1850,7 @@ export type ItemSettingsGlobalEventTicketMasterfileEntry =
 	| ItemSettingsItemEventTicketS23202612
 	| ItemSettingsItemEventTicketS23202612ToGift
 	| ItemSettingsItemEventTicketS24Nov9Gowaol
+	| ItemSettingsItemEventTicketS24Oct3Maxbattle
 	| ItemSettingsItemEventTicketS24Sep12Community
 	| ItemSettingsItemEventTicketS24Sep12CommunityToGift
 	| ItemSettingsItemEventTicketS24Sep19Megaraid

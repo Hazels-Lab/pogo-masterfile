@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSettings", split "flying", 23 entries.
+// Generated from Pokémon GO masterfile — group "moveSettings", split "flying", 24 entries.
 
 import type { S } from "../../_utils";
 import type { MoveSettings } from "../types";
@@ -431,6 +431,28 @@ export type MoveSettingsVmMoveTempEvolutionMegaV0227PokemonSkarmory = S<
 		}
 	>
 >;
+export type MoveSettingsVmMoveTempEvolutionMegaV0398PokemonStaraptor = S<
+	MoveSettings<
+		"VM_MOVE_TEMP_EVOLUTION_MEGA_V0398_POKEMON_STARAPTOR",
+		{
+			accuracyChance: 1;
+			animationId: 5;
+			criticalChance: 0.05;
+			damageWindowEndMs: 1600;
+			damageWindowStartMs: 1000;
+			durationMs: 2000;
+			energyDelta: -100;
+			isLocked: true;
+			movementId: "TEMP_EVOLUTION_MEGA_V0398_POKEMON_STARAPTOR";
+			pokemonType: "POKEMON_TYPE_FLYING";
+			power: 150;
+			staminaLossScalar: 0.04;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "brave_bird";
+		}
+	>
+>;
 export type MoveSettingsVnBm010 = S<
 	MoveSettings<
 		"VN_BM_010",
@@ -492,5 +514,6 @@ export type MoveSettingsFlyingMasterfileEntry =
 	| MoveSettingsV0395MoveBleakwindStorm
 	| MoveSettingsV0490MoveBeakBlast
 	| MoveSettingsVmMoveTempEvolutionMegaV0227PokemonSkarmory
+	| MoveSettingsVmMoveTempEvolutionMegaV0398PokemonStaraptor
 	| MoveSettingsVnBm010
 	| MoveSettingsVnBm031;

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatMove", split "flying", 21 entries.
+// Generated from Pokémon GO masterfile — group "combatMove", split "flying", 22 entries.
 
 import type { S } from "../../_utils";
 import type { CombatMove } from "../types";
@@ -299,6 +299,22 @@ export type CombatMoveVmMoveTempEvolutionMegaV0227PokemonSkarmory = S<
 		}
 	>
 >;
+export type CombatMoveVmMoveTempEvolutionMegaV0398PokemonStaraptor = S<
+	CombatMove<
+		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0398_POKEMON_STARAPTOR",
+		{
+			buffs: {
+				attackerDefenseStatStageChange: -3;
+				buffActivationChance: 1;
+			};
+			energyDelta: -40;
+			power: 70;
+			type: "POKEMON_TYPE_FLYING";
+			uniqueId: "TEMP_EVOLUTION_MEGA_V0398_POKEMON_STARAPTOR";
+			vfxName: "brave_bird";
+		}
+	>
+>;
 
 export type CombatMoveFlyingMasterfileEntry =
 	| CombatMoveV0038MoveDrillPeck
@@ -321,4 +337,5 @@ export type CombatMoveFlyingMasterfileEntry =
 	| CombatMoveV0389MoveOblivionWing
 	| CombatMoveV0395MoveBleakwindStorm
 	| CombatMoveV0490MoveBeakBlast
-	| CombatMoveVmMoveTempEvolutionMegaV0227PokemonSkarmory;
+	| CombatMoveVmMoveTempEvolutionMegaV0227PokemonSkarmory
+	| CombatMoveVmMoveTempEvolutionMegaV0398PokemonStaraptor;
