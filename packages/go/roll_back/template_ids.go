@@ -7,6 +7,7 @@ type RollBackTemplateID string
 const (
 	RollBackTemplateIDFriendsAndSocialLazyLoadRollBack  RollBackTemplateID = "FRIENDS_AND_SOCIAL_LAZY_LOAD_ROLL_BACK"
 	RollBackTemplateIDGetFriendDetailsPaginatedRollBack RollBackTemplateID = "GET_FRIEND_DETAILS_PAGINATED_ROLL_BACK"
+	RollBackTemplateIDIosKeyboardAppearanceFixRollBack  RollBackTemplateID = "IOS_KEYBOARD_APPEARANCE_FIX_ROLL_BACK"
 	RollBackTemplateIDMapRadiusEnhanceGraphicsRollBack  RollBackTemplateID = "MAP_RADIUS_ENHANCE_GRAPHICS_ROLL_BACK"
 	RollBackTemplateIDPeriodicMapUnloadRollBack         RollBackTemplateID = "PERIODIC_MAP_UNLOAD_ROLL_BACK"
 )
@@ -14,6 +15,7 @@ const (
 var RollBackTemplateIDValues = [...]RollBackTemplateID{
 	RollBackTemplateIDFriendsAndSocialLazyLoadRollBack,
 	RollBackTemplateIDGetFriendDetailsPaginatedRollBack,
+	RollBackTemplateIDIosKeyboardAppearanceFixRollBack,
 	RollBackTemplateIDMapRadiusEnhanceGraphicsRollBack,
 	RollBackTemplateIDPeriodicMapUnloadRollBack,
 }

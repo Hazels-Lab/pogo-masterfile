@@ -2,6 +2,20 @@
 
 All notable changes to `pogo-masterfile-types` (npm) are recorded here. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.61] - 2026-09-19
+
+Automated regeneration from upstream masterfile commit `b556048300368feddac6a66b1511f0e760037b2f`.
+
+### Added template IDs (7)
+
+- BADGE_EVENT_0243
+- COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE
+- EVENT_PASS_SEPTEMBER3_EVENT_STORE_REDIRECT
+- IOS_KEYBOARD_APPEARANCE_FIX_ROLL_BACK
+- REGISTER_DEVICE_FEATURE_GATE
+- SEPTEMBER3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK
+- SEPTEMBER3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS
+
 ## [0.1.60] - 2026-09-17
 
 Automated regeneration from upstream masterfile commit `4f6b425832df2bc1f334ab6c4d8db96ab5bd7c0d`.

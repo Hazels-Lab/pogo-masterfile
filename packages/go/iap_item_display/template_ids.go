@@ -257,6 +257,7 @@ const (
 	IapItemDisplayTemplateIDDiademuertos                                                 IapItemDisplayTemplateID = "diademuertos"
 	IapItemDisplayTemplateIDEventPassMonth1SeasonStoreRedirect                           IapItemDisplayTemplateID = "EVENT_PASS_MONTH1_SEASON_STORE_REDIRECT"
 	IapItemDisplayTemplateIDEventPassSeptember1EventStoreRedirect                        IapItemDisplayTemplateID = "EVENT_PASS_SEPTEMBER1_EVENT_STORE_REDIRECT"
+	IapItemDisplayTemplateIDEventPassSeptember3EventStoreRedirect                        IapItemDisplayTemplateID = "EVENT_PASS_SEPTEMBER3_EVENT_STORE_REDIRECT"
 	IapItemDisplayTemplateIDFlairFreeBundle0                                             IapItemDisplayTemplateID = "FLAIR_FREE_BUNDLE_0"
 	IapItemDisplayTemplateIDGeneral1Ticket5                                              IapItemDisplayTemplateID = "general1.ticket.5"
 	IapItemDisplayTemplateIDGeneral2Ticket3                                              IapItemDisplayTemplateID = "general2.ticket.3"
@@ -367,6 +368,8 @@ const (
 	IapItemDisplayTemplateIDSeptember12026DeluxeEventPassTrackUnlockPlusPoints           IapItemDisplayTemplateID = "SEPTEMBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
 	IapItemDisplayTemplateIDSeptember22026DeluxeEventPassTrackUnlock                     IapItemDisplayTemplateID = "SEPTEMBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK"
 	IapItemDisplayTemplateIDSeptember22026DeluxeEventPassTrackUnlockPlusPoints           IapItemDisplayTemplateID = "SEPTEMBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
+	IapItemDisplayTemplateIDSeptember32026DeluxeEventPassTrackUnlock                     IapItemDisplayTemplateID = "SEPTEMBER3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK"
+	IapItemDisplayTemplateIDSeptember32026DeluxeEventPassTrackUnlockPlusPoints           IapItemDisplayTemplateID = "SEPTEMBER3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
 	IapItemDisplayTemplateIDStarpiece1                                                   IapItemDisplayTemplateID = "starpiece.1"
 	IapItemDisplayTemplateIDStarpiece8                                                   IapItemDisplayTemplateID = "starpiece.8"
 	IapItemDisplayTemplateIDSticker8anniv13                                              IapItemDisplayTemplateID = "STICKER_8ANNIV_1.3"
@@ -1330,6 +1333,7 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDDiademuertos,
 	IapItemDisplayTemplateIDEventPassMonth1SeasonStoreRedirect,
 	IapItemDisplayTemplateIDEventPassSeptember1EventStoreRedirect,
+	IapItemDisplayTemplateIDEventPassSeptember3EventStoreRedirect,
 	IapItemDisplayTemplateIDFlairFreeBundle0,
 	IapItemDisplayTemplateIDGeneral1Ticket5,
 	IapItemDisplayTemplateIDGeneral2Ticket3,
@@ -1440,6 +1444,8 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDSeptember12026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDSeptember22026DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDSeptember22026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDSeptember32026DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDSeptember32026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDStarpiece1,
 	IapItemDisplayTemplateIDStarpiece8,
 	IapItemDisplayTemplateIDSticker8anniv13,

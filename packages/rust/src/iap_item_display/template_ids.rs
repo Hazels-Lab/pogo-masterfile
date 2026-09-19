@@ -511,6 +511,8 @@ pub enum IapItemDisplayTemplateId {
     EventPassMonth1SeasonStoreRedirect,
     #[serde(rename = "EVENT_PASS_SEPTEMBER1_EVENT_STORE_REDIRECT")]
     EventPassSeptember1EventStoreRedirect,
+    #[serde(rename = "EVENT_PASS_SEPTEMBER3_EVENT_STORE_REDIRECT")]
+    EventPassSeptember3EventStoreRedirect,
     #[serde(rename = "FLAIR_FREE_BUNDLE_0")]
     FlairFreeBundle0,
     #[serde(rename = "general1.ticket.5")]
@@ -731,6 +733,10 @@ pub enum IapItemDisplayTemplateId {
     September22026DeluxeEventPassTrackUnlock,
     #[serde(rename = "SEPTEMBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
     September22026DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "SEPTEMBER3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
+    September32026DeluxeEventPassTrackUnlock,
+    #[serde(rename = "SEPTEMBER3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
+    September32026DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "starpiece.1")]
     Starpiece1,
     #[serde(rename = "starpiece.8")]

@@ -9,6 +9,7 @@ const (
 	FeatureGateTemplateIDAmsFeatureGate                                     FeatureGateTemplateID = "AMS_FEATURE_GATE"
 	FeatureGateTemplateIDAmsFrontendFeatureGate                             FeatureGateTemplateID = "AMS_FRONTEND_FEATURE_GATE"
 	FeatureGateTemplateIDCombatSuppressFastMovePredictionsOnSwapFeatureGate FeatureGateTemplateID = "COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE"
+	FeatureGateTemplateIDCombatVnextInitializeBdLastFeatureGate             FeatureGateTemplateID = "COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE"
 	FeatureGateTemplateIDEnablePvpChallengeSpannerFeatureGate               FeatureGateTemplateID = "ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE"
 	FeatureGateTemplateIDEnhancedCurrencyOverflowStardustFeatureGate        FeatureGateTemplateID = "ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE"
 	FeatureGateTemplateIDEnhancedMegaRaidReadyCheckFeatureGate              FeatureGateTemplateID = "ENHANCED_MEGA_RAID_READY_CHECK_FEATURE_GATE"
@@ -27,6 +28,7 @@ const (
 	FeatureGateTemplateIDMepEggReadMigrationFeatureGate                     FeatureGateTemplateID = "MEP_EGG_READ_MIGRATION_FEATURE_GATE"
 	FeatureGateTemplateIDMepEggWriteMigrationFeatureGate                    FeatureGateTemplateID = "MEP_EGG_WRITE_MIGRATION_FEATURE_GATE"
 	FeatureGateTemplateIDPreloadedMegaStatusStringFeatureGate               FeatureGateTemplateID = "PRELOADED_MEGA_STATUS_STRING_FEATURE_GATE"
+	FeatureGateTemplateIDRegisterDeviceFeatureGate                          FeatureGateTemplateID = "REGISTER_DEVICE_FEATURE_GATE"
 	FeatureGateTemplateIDRemoteTradeImprovementsFeatureGate                 FeatureGateTemplateID = "REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE"
 	FeatureGateTemplateIDSeafGetMapObjectsRateLimiterFeatureGate            FeatureGateTemplateID = "SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE"
 	FeatureGateTemplateIDShieldBreakPowerDisplayFeatureGate                 FeatureGateTemplateID = "SHIELD_BREAK_POWER_DISPLAY_FEATURE_GATE"
@@ -40,6 +42,7 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDAmsFeatureGate,
 	FeatureGateTemplateIDAmsFrontendFeatureGate,
 	FeatureGateTemplateIDCombatSuppressFastMovePredictionsOnSwapFeatureGate,
+	FeatureGateTemplateIDCombatVnextInitializeBdLastFeatureGate,
 	FeatureGateTemplateIDEnablePvpChallengeSpannerFeatureGate,
 	FeatureGateTemplateIDEnhancedCurrencyOverflowStardustFeatureGate,
 	FeatureGateTemplateIDEnhancedMegaRaidReadyCheckFeatureGate,
@@ -58,6 +61,7 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDMepEggReadMigrationFeatureGate,
 	FeatureGateTemplateIDMepEggWriteMigrationFeatureGate,
 	FeatureGateTemplateIDPreloadedMegaStatusStringFeatureGate,
+	FeatureGateTemplateIDRegisterDeviceFeatureGate,
 	FeatureGateTemplateIDRemoteTradeImprovementsFeatureGate,
 	FeatureGateTemplateIDSeafGetMapObjectsRateLimiterFeatureGate,
 	FeatureGateTemplateIDShieldBreakPowerDisplayFeatureGate,

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 28 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 30 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -7,6 +7,7 @@ export type FeatureGateAdminGmNiaOpsOnlyFilterAms = S<
 	FeatureGate<
 		"ADMIN_GM_NIA_OPS_ONLY_FILTER_AMS_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -15,6 +16,7 @@ export type FeatureGateAms = S<
 	FeatureGate<
 		"AMS_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 24;
 		}
 	>
@@ -23,6 +25,7 @@ export type FeatureGateAmsFrontend = S<
 	FeatureGate<
 		"AMS_FRONTEND_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -31,7 +34,17 @@ export type FeatureGateCombatSuppressFastMovePredictionsOnSwap = S<
 	FeatureGate<
 		"COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 2;
+		}
+	>
+>;
+export type FeatureGateCombatVnextInitializeBdLast = S<
+	FeatureGate<
+		"COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE",
+		{
+			rolloutPercentage: 100;
+			status: 1;
 		}
 	>
 >;
@@ -39,6 +52,7 @@ export type FeatureGateEnablePvpChallengeSpanner = S<
 	FeatureGate<
 		"ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -47,6 +61,7 @@ export type FeatureGateEnhancedCurrencyOverflowStardust = S<
 	FeatureGate<
 		"ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -55,6 +70,7 @@ export type FeatureGateEnhancedMegaRaidReadyCheck = S<
 	FeatureGate<
 		"ENHANCED_MEGA_RAID_READY_CHECK_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 195735672;
 		}
 	>
@@ -63,6 +79,7 @@ export type FeatureGateEventPassBonusMilestoneSeparation = S<
 	FeatureGate<
 		"EVENT_PASS_BONUS_MILESTONE_SEPARATION_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -71,6 +88,7 @@ export type FeatureGateEventPassBonusRanks = S<
 	FeatureGate<
 		"EVENT_PASS_BONUS_RANKS_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -79,6 +97,7 @@ export type FeatureGateEventPassClaimableRewardToggle = S<
 	FeatureGate<
 		"EVENT_PASS_CLAIMABLE_REWARD_TOGGLE_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -87,6 +106,7 @@ export type FeatureGateEventPassMilestoneRewards = S<
 	FeatureGate<
 		"EVENT_PASS_MILESTONE_REWARDS_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -95,6 +115,7 @@ export type FeatureGateEventTicketDatetimeRange = S<
 	FeatureGate<
 		"EVENT_TICKET_DATETIME_RANGE_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 			subFeatureGateList: [
 				{
@@ -110,6 +131,7 @@ export type FeatureGateFriendshipResyncOnRead = S<
 	FeatureGate<
 		"FRIENDSHIP_RESYNC_ON_READ_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -118,6 +140,7 @@ export type FeatureGateGamesiteWebviewNearbyButtons = S<
 	FeatureGate<
 		"GAMESITE_WEBVIEW_NEARBY_BUTTONS_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 			subFeatureGateList: [
 				{
@@ -143,6 +166,7 @@ export type FeatureGateGetGmtAnalysisForPlayer = S<
 	FeatureGate<
 		"GET_GMT_ANALYSIS_FOR_PLAYER_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -151,6 +175,7 @@ export type FeatureGateHideCampfireMapButtons = S<
 	FeatureGate<
 		"HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -159,6 +184,7 @@ export type FeatureGateLuckyTradeNewStrings = S<
 	FeatureGate<
 		"LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1284637195;
 		}
 	>
@@ -167,6 +193,7 @@ export type FeatureGateMeetupReminderNotifications = S<
 	FeatureGate<
 		"MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 2084830192;
 		}
 	>
@@ -175,6 +202,7 @@ export type FeatureGateMega2026 = S<
 	FeatureGate<
 		"MEGA_2026_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 216426293;
 			subFeatureGateList: [
 				{
@@ -195,6 +223,7 @@ export type FeatureGateMepEggReadMigration = S<
 	FeatureGate<
 		"MEP_EGG_READ_MIGRATION_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 13;
 		}
 	>
@@ -203,6 +232,7 @@ export type FeatureGateMepEggWriteMigration = S<
 	FeatureGate<
 		"MEP_EGG_WRITE_MIGRATION_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 11;
 		}
 	>
@@ -211,6 +241,16 @@ export type FeatureGatePreloadedMegaStatusString = S<
 	FeatureGate<
 		"PRELOADED_MEGA_STATUS_STRING_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateRegisterDevice = S<
+	FeatureGate<
+		"REGISTER_DEVICE_FEATURE_GATE",
+		{
+			rolloutPercentage: 30;
 			status: 1;
 		}
 	>
@@ -219,6 +259,7 @@ export type FeatureGateRemoteTradeImprovements = S<
 	FeatureGate<
 		"REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1284637195;
 		}
 	>
@@ -227,6 +268,7 @@ export type FeatureGateSeafGetMapObjectsRateLimiter = S<
 	FeatureGate<
 		"SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -235,6 +277,7 @@ export type FeatureGateShieldBreakPowerDisplay = S<
 	FeatureGate<
 		"SHIELD_BREAK_POWER_DISPLAY_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -243,6 +286,7 @@ export type FeatureGateUpdatedPreloadedMegaAnimation = S<
 	FeatureGate<
 		"UPDATED_PRELOADED_MEGA_ANIMATION_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -251,6 +295,7 @@ export type FeatureGateVnextPreResponseInputBlockingBehavior = S<
 	FeatureGate<
 		"VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 			subFeatureGateList: [
 				{
@@ -266,6 +311,7 @@ export type FeatureGateWayfarerSubmitLinkout = S<
 	FeatureGate<
 		"WAYFARER_SUBMIT_LINKOUT_FEATURE_GATE",
 		{
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -276,6 +322,7 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateAms
 	| FeatureGateAmsFrontend
 	| FeatureGateCombatSuppressFastMovePredictionsOnSwap
+	| FeatureGateCombatVnextInitializeBdLast
 	| FeatureGateEnablePvpChallengeSpanner
 	| FeatureGateEnhancedCurrencyOverflowStardust
 	| FeatureGateEnhancedMegaRaidReadyCheck
@@ -294,6 +341,7 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateMepEggReadMigration
 	| FeatureGateMepEggWriteMigration
 	| FeatureGatePreloadedMegaStatusString
+	| FeatureGateRegisterDevice
 	| FeatureGateRemoteTradeImprovements
 	| FeatureGateSeafGetMapObjectsRateLimiter
 	| FeatureGateShieldBreakPowerDisplay

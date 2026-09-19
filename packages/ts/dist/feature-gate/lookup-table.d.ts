@@ -5,6 +5,7 @@ import type {
 	FeatureGateAms,
 	FeatureGateAmsFrontend,
 	FeatureGateCombatSuppressFastMovePredictionsOnSwap,
+	FeatureGateCombatVnextInitializeBdLast,
 	FeatureGateEnablePvpChallengeSpanner,
 	FeatureGateEnhancedCurrencyOverflowStardust,
 	FeatureGateEnhancedMegaRaidReadyCheck,
@@ -23,6 +24,7 @@ import type {
 	FeatureGateMepEggReadMigration,
 	FeatureGateMepEggWriteMigration,
 	FeatureGatePreloadedMegaStatusString,
+	FeatureGateRegisterDevice,
 	FeatureGateRemoteTradeImprovements,
 	FeatureGateSeafGetMapObjectsRateLimiter,
 	FeatureGateShieldBreakPowerDisplay,
@@ -36,6 +38,7 @@ export interface FeatureGateLookup {
 	AMS_FEATURE_GATE: FeatureGateAms;
 	AMS_FRONTEND_FEATURE_GATE: FeatureGateAmsFrontend;
 	COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE: FeatureGateCombatSuppressFastMovePredictionsOnSwap;
+	COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE: FeatureGateCombatVnextInitializeBdLast;
 	ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE: FeatureGateEnablePvpChallengeSpanner;
 	ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE: FeatureGateEnhancedCurrencyOverflowStardust;
 	ENHANCED_MEGA_RAID_READY_CHECK_FEATURE_GATE: FeatureGateEnhancedMegaRaidReadyCheck;
@@ -54,6 +57,7 @@ export interface FeatureGateLookup {
 	MEP_EGG_READ_MIGRATION_FEATURE_GATE: FeatureGateMepEggReadMigration;
 	MEP_EGG_WRITE_MIGRATION_FEATURE_GATE: FeatureGateMepEggWriteMigration;
 	PRELOADED_MEGA_STATUS_STRING_FEATURE_GATE: FeatureGatePreloadedMegaStatusString;
+	REGISTER_DEVICE_FEATURE_GATE: FeatureGateRegisterDevice;
 	REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE: FeatureGateRemoteTradeImprovements;
 	SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE: FeatureGateSeafGetMapObjectsRateLimiter;
 	SHIELD_BREAK_POWER_DISPLAY_FEATURE_GATE: FeatureGateShieldBreakPowerDisplay;

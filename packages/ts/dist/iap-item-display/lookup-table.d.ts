@@ -253,6 +253,7 @@ import type {
 	IapItemDisplayDiademuertos,
 	IapItemDisplayEventPassMonth1SeasonStoreRedirect,
 	IapItemDisplayEventPassSeptember1EventStoreRedirect,
+	IapItemDisplayEventPassSeptember3EventStoreRedirect,
 	IapItemDisplayFlairFreeBundle0,
 	IapItemDisplayGeneral1Ticket5,
 	IapItemDisplayGeneral2Ticket3,
@@ -363,6 +364,8 @@ import type {
 	IapItemDisplaySeptember12026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplaySeptember22026DeluxeEventPassTrackUnlock,
 	IapItemDisplaySeptember22026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplaySeptember32026DeluxeEventPassTrackUnlock,
+	IapItemDisplaySeptember32026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayStarpiece1,
 	IapItemDisplayStarpiece8,
 	IapItemDisplaySticker8anniv13,
@@ -1326,6 +1329,7 @@ export interface IapItemDisplayLookup {
 	diademuertos: IapItemDisplayDiademuertos;
 	EVENT_PASS_MONTH1_SEASON_STORE_REDIRECT: IapItemDisplayEventPassMonth1SeasonStoreRedirect;
 	EVENT_PASS_SEPTEMBER1_EVENT_STORE_REDIRECT: IapItemDisplayEventPassSeptember1EventStoreRedirect;
+	EVENT_PASS_SEPTEMBER3_EVENT_STORE_REDIRECT: IapItemDisplayEventPassSeptember3EventStoreRedirect;
 	FLAIR_FREE_BUNDLE_0: IapItemDisplayFlairFreeBundle0;
 	"general1.ticket.5": IapItemDisplayGeneral1Ticket5;
 	"general2.ticket.3": IapItemDisplayGeneral2Ticket3;
@@ -1436,6 +1440,8 @@ export interface IapItemDisplayLookup {
 	SEPTEMBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplaySeptember12026DeluxeEventPassTrackUnlockPlusPoints;
 	SEPTEMBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplaySeptember22026DeluxeEventPassTrackUnlock;
 	SEPTEMBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplaySeptember22026DeluxeEventPassTrackUnlockPlusPoints;
+	SEPTEMBER3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplaySeptember32026DeluxeEventPassTrackUnlock;
+	SEPTEMBER3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplaySeptember32026DeluxeEventPassTrackUnlockPlusPoints;
 	"starpiece.1": IapItemDisplayStarpiece1;
 	"starpiece.8": IapItemDisplayStarpiece8;
 	"STICKER_8ANNIV_1.3": IapItemDisplaySticker8anniv13;

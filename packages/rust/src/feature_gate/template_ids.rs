@@ -15,6 +15,8 @@ pub enum FeatureGateTemplateId {
     AmsFrontendFeatureGate,
     #[serde(rename = "COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE")]
     CombatSuppressFastMovePredictionsOnSwapFeatureGate,
+    #[serde(rename = "COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE")]
+    CombatVnextInitializeBdLastFeatureGate,
     #[serde(rename = "ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE")]
     EnablePvpChallengeSpannerFeatureGate,
     #[serde(rename = "ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE")]
@@ -51,6 +53,8 @@ pub enum FeatureGateTemplateId {
     MepEggWriteMigrationFeatureGate,
     #[serde(rename = "PRELOADED_MEGA_STATUS_STRING_FEATURE_GATE")]
     PreloadedMegaStatusStringFeatureGate,
+    #[serde(rename = "REGISTER_DEVICE_FEATURE_GATE")]
+    RegisterDeviceFeatureGate,
     #[serde(rename = "REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE")]
     RemoteTradeImprovementsFeatureGate,
     #[serde(rename = "SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE")]

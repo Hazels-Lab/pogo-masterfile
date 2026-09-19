@@ -4,6 +4,20 @@ All notable changes to the Go module are recorded here. The format is based on [
 
 > Note: Go module releases for this package are tagged as `packages/go/vX.Y.Z` (subdirectory-prefixed), per Go's monorepo tagging rules.
 
+## [0.1.56] - 2026-09-19
+
+Automated regeneration from upstream masterfile commit `b556048300368feddac6a66b1511f0e760037b2f`.
+
+### Added template IDs (7)
+
+- BADGE_EVENT_0243
+- COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE
+- EVENT_PASS_SEPTEMBER3_EVENT_STORE_REDIRECT
+- IOS_KEYBOARD_APPEARANCE_FIX_ROLL_BACK
+- REGISTER_DEVICE_FEATURE_GATE
+- SEPTEMBER3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK
+- SEPTEMBER3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS
+
 ## [0.1.55] - 2026-09-17
 
 Automated regeneration from upstream masterfile commit `4f6b425832df2bc1f334ab6c4d8db96ab5bd7c0d`.
