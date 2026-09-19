@@ -32,7 +32,7 @@ export type IapItemDisplayGeneral1Ticket5 = S<
 			skuEnableTime: "2019-03-14T08:00:00";
 			skuEnableTimeUtcMs: "1552550400000";
 			sortOrder: 2;
-			spriteId: "general1.ticket.5";
+			spriteId: "general1.ticket.4";
 			title: "general1.ticket.5_MegaStaraptorRaidDay";
 			useEnvironmentPrefix: true;
 		}

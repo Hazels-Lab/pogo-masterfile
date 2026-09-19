@@ -11,6 +11,8 @@ pub enum RollBackTemplateId {
     FriendsAndSocialLazyLoadRollBack,
     #[serde(rename = "GET_FRIEND_DETAILS_PAGINATED_ROLL_BACK")]
     GetFriendDetailsPaginatedRollBack,
+    #[serde(rename = "IOS_KEYBOARD_APPEARANCE_FIX_ROLL_BACK")]
+    IosKeyboardAppearanceFixRollBack,
     #[serde(rename = "MAP_RADIUS_ENHANCE_GRAPHICS_ROLL_BACK")]
     MapRadiusEnhanceGraphicsRollBack,
     #[serde(rename = "PERIODIC_MAP_UNLOAD_ROLL_BACK")]

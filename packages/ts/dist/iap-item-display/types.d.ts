@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1070 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1073 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -37,6 +37,7 @@ export interface IapItemDisplayData {
 		| "POSTCARD_EXPANSION_1_description";
 	hidden?: boolean;
 	imageUrl?:
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F3cd7734c_PGO-MCS_Harvest_Festival_2026_TICKET_v1-1024x512_nologo.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F13d4dacd_PGO-MCS_Avatar_Maschiff_Top_v2-1024x576%20no%20logo.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F035aa0ae_PGO-MCS_S24_GBL_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png"
@@ -52,6 +53,7 @@ export interface IapItemDisplayData {
 	skuDisableTime?:
 		| "2024-11-30T20:00:00"
 		| "2025-09-16T20:00:00"
+		| "2025-10-07T20:00:00"
 		| "2026-01-25T23:59:00"
 		| "2026-09-12T17:00:00"
 		| "2026-09-19T17:00:00"
@@ -63,6 +65,7 @@ export interface IapItemDisplayData {
 	skuDisableTimeUtcMs?:
 		| "1732996800000"
 		| "1758052800000"
+		| "1759867200000"
 		| "1769385540000"
 		| "1789232400000"
 		| "1789837200000"
@@ -80,7 +83,8 @@ export interface IapItemDisplayData {
 		| "2023-10-10T11:00:00"
 		| "2025-06-02T10:00:00"
 		| "2025-09-08T10:00:00"
-		| "2025-09-16T10:00:00";
+		| "2025-09-16T10:00:00"
+		| "2025-09-29T10:00:00";
 	skuEnableTimeUtcMs?:
 		| "1552550400000"
 		| "1572555600000"
@@ -90,7 +94,8 @@ export interface IapItemDisplayData {
 		| "1696935600000"
 		| "1748858400000"
 		| "1757325600000"
-		| "1758016800000";
+		| "1758016800000"
+		| "1759140000000";
 	sortOrder?: number;
 	spriteId?: string;
 	title?: string;
