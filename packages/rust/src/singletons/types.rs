@@ -1916,7 +1916,6 @@ pub struct NeutralAvatarSettings {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct OnboardingSettings {
-    pub adventure_sync_prompt_step: u64,
     pub ar_prompt_player_level: u64,
     pub disable_initial_ar_prompt: bool,
 }
@@ -2287,13 +2286,6 @@ pub struct QuestDialogueTriggers {
 pub struct QuestDialogueInboxSettings {
     pub cooldown_duration_ms: String,
     pub quest_dialogue_triggers: [QuestDialogueTriggers; 8],
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct QuickInviteSettings {
-    pub enabled: bool,
-    pub suggested_players_variation: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -3255,8 +3247,6 @@ crate::masterfile_entry!(PrimalEvoSettingsEntry, PrimalEvoSettingsEntryData, pri
 crate::masterfile_entry!(PtcOauthSettingsEntry, PtcOauthSettingsEntryData, ptc_oauth_settings: PtcOauthSettings);
 
 crate::masterfile_entry!(QuestDialogueInboxSettingsEntry, QuestDialogueInboxSettingsEntryData, quest_dialogue_inbox_settings: QuestDialogueInboxSettings);
-
-crate::masterfile_entry!(QuickInviteSettingsEntry, QuickInviteSettingsEntryData, quick_invite_settings: QuickInviteSettings);
 
 crate::masterfile_entry!(RaidEntryCostSettingsEntry, RaidEntryCostSettingsEntryData, raid_entry_cost_settings: RaidEntryCostSettings);
 

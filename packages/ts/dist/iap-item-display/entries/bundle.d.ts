@@ -2042,13 +2042,8 @@ export type IapItemDisplayBundleMheracrossraidday20241 = S<
 		"bundle.mheracrossraidday2024.1",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
-			showDiscountTag: true;
-			showStrikethroughPrice: true;
+			hidden: true;
 			sku: "bundle.mheracrossraidday2024.1";
-			skuDisableTime: "2026-09-20T17:00:00";
-			skuDisableTimeUtcMs: "1789923600000";
-			skuEnableTime: "2022-10-13T12:00:00";
-			skuEnableTimeUtcMs: "1665662400000";
 			sortOrder: 1;
 			spriteId: "bundle.general.premiumbox.small.1";
 			title: "raiding_box";

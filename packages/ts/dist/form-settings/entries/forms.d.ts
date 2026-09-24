@@ -660,6 +660,10 @@ export type FormSettingsV0025PokemonPikachu = S<
 					form: "PIKACHU_K_2026_A_01";
 					isCostume: true;
 				},
+				{
+					form: "PIKACHU_GLASS_HELMET_2026";
+					isCostume: true;
+				},
 			];
 			pokemon: "PIKACHU";
 		}

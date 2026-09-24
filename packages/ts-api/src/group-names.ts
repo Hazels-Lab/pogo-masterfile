@@ -50,6 +50,7 @@ export const GROUP_NAMES = [
 	"pokemonUpgrades",
 	"pokestopInvasionAvailabilitySettings",
 	"questSettings",
+	"quickInviteSettings",
 	"recommendedSearchSettings",
 	"rollBack",
 	"settingsOverrideRule",

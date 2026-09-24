@@ -80,6 +80,7 @@ mod template_ids {
     pub use pogo_masterfile_types::pokemon_upgrades::PokemonUpgradesTemplateId;
     pub use pogo_masterfile_types::pokestop_invasion_availability_settings::PokestopInvasionAvailabilitySettingsTemplateId;
     pub use pogo_masterfile_types::quest_settings::QuestSettingsTemplateId;
+    pub use pogo_masterfile_types::quick_invite_settings::QuickInviteSettingsTemplateId;
     pub use pogo_masterfile_types::recommended_search_settings::RecommendedSearchSettingsTemplateId;
     pub use pogo_masterfile_types::roll_back::RollBackTemplateId;
     pub use pogo_masterfile_types::settings_override_rule::SettingsOverrideRuleTemplateId;
@@ -208,6 +209,8 @@ pub(crate) struct GroupIndexes {
     pub(crate) pokestop_invasion_availability_settings_order: Vec<usize>,
     pub(crate) quest_settings_index: HashMap<QuestSettingsTemplateId, usize>,
     pub(crate) quest_settings_order: Vec<usize>,
+    pub(crate) quick_invite_settings_index: HashMap<QuickInviteSettingsTemplateId, usize>,
+    pub(crate) quick_invite_settings_order: Vec<usize>,
     pub(crate) recommended_search_settings_index:
         HashMap<RecommendedSearchSettingsTemplateId, usize>,
     pub(crate) recommended_search_settings_order: Vec<usize>,
@@ -392,6 +395,9 @@ impl GroupIndexes {
         let mut pokestop_invasion_availability_settings_order: Vec<usize> = Vec::new();
         let mut quest_settings_index: HashMap<QuestSettingsTemplateId, usize> = HashMap::new();
         let mut quest_settings_order: Vec<usize> = Vec::new();
+        let mut quick_invite_settings_index: HashMap<QuickInviteSettingsTemplateId, usize> =
+            HashMap::new();
+        let mut quick_invite_settings_order: Vec<usize> = Vec::new();
         let mut recommended_search_settings_index: HashMap<
             RecommendedSearchSettingsTemplateId,
             usize,
@@ -796,6 +802,13 @@ impl GroupIndexes {
                         quest_settings_order.push(idx);
                     }
                 }
+                MasterfileEntry::QuickInviteSettings(_) => {
+                    if let Ok(typed) = entry.template_id().parse::<QuickInviteSettingsTemplateId>()
+                    {
+                        quick_invite_settings_index.insert(typed, idx);
+                        quick_invite_settings_order.push(idx);
+                    }
+                }
                 MasterfileEntry::RecommendedSearchSettings(_) => {
                     if let Ok(typed) = entry
                         .template_id()
@@ -971,6 +984,8 @@ impl GroupIndexes {
             pokestop_invasion_availability_settings_order,
             quest_settings_index,
             quest_settings_order,
+            quick_invite_settings_index,
+            quick_invite_settings_order,
             recommended_search_settings_index,
             recommended_search_settings_order,
             roll_back_index,
@@ -1399,6 +1414,14 @@ impl Masterfile {
             entries: &self.entries,
             index: &self.groups.quest_settings_index,
             order: &self.groups.quest_settings_order,
+        }
+    }
+
+    pub fn quick_invite_settings(&self) -> accessor::QuickInviteSettingsAccessor<'_> {
+        accessor::QuickInviteSettingsAccessor {
+            entries: &self.entries,
+            index: &self.groups.quick_invite_settings_index,
+            order: &self.groups.quick_invite_settings_order,
         }
     }
 
@@ -1888,6 +1911,14 @@ impl blocking::Masterfile {
             entries: &self.entries,
             index: &self.groups.quest_settings_index,
             order: &self.groups.quest_settings_order,
+        }
+    }
+
+    pub fn quick_invite_settings(&self) -> accessor::QuickInviteSettingsAccessor<'_> {
+        accessor::QuickInviteSettingsAccessor {
+            entries: &self.entries,
+            index: &self.groups.quick_invite_settings_index,
+            order: &self.groups.quick_invite_settings_order,
         }
     }
 

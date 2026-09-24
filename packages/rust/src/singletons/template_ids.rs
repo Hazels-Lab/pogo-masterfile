@@ -221,8 +221,6 @@ pub enum SingletonsTemplateId {
     PtcOauthSettings,
     #[serde(rename = "QUEST_DIALOGUE_INBOX_SETTINGS")]
     QuestDialogueInboxSettings,
-    #[serde(rename = "QUICK_INVITE_SETTINGS_RAID")]
-    QuickInviteSettingsRaid,
     #[serde(rename = "RAID_CLIENT_SETTINGS")]
     RaidClientSettings,
     #[serde(rename = "RAID_ENTRY_COST_SETTINGS")]

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonFamily", split "mega-evolvable-pokemon-id", 53 entries.
+// Generated from Pokémon GO masterfile — group "pokemonFamily", split "mega-evolvable-pokemon-id", 54 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonFamily } from "../types";
@@ -381,6 +381,15 @@ export type PokemonFamilyV0384FamilyRayquaza = S<
 		}
 	>
 >;
+export type PokemonFamilyV0396FamilyStarly = S<
+	PokemonFamily<
+		"V0396_FAMILY_STARLY",
+		{
+			familyId: "FAMILY_STARLY";
+			megaEvolvablePokemonId: "STARAPTOR";
+		}
+	>
+>;
 export type PokemonFamilyV0427FamilyBuneary = S<
 	PokemonFamily<
 		"V0427_FAMILY_BUNEARY",
@@ -524,6 +533,7 @@ export type PokemonFamilyMegaEvolvablePokemonIdMasterfileEntry =
 	| PokemonFamilyV0382FamilyKyogre
 	| PokemonFamilyV0383FamilyGroudon
 	| PokemonFamilyV0384FamilyRayquaza
+	| PokemonFamilyV0396FamilyStarly
 	| PokemonFamilyV0427FamilyBuneary
 	| PokemonFamilyV0443FamilyGible
 	| PokemonFamilyV0448FamilyLucario

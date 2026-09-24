@@ -49,6 +49,7 @@ import type { PokemonSettings, PokemonSettingsType } from "./pokemon-settings/ty
 import type { PokemonUpgrades, PokemonUpgradesType } from "./pokemon-upgrades/types";
 import type { PokestopInvasionAvailabilitySettings, PokestopInvasionAvailabilitySettingsType } from "./pokestop-invasion-availability-settings/types";
 import type { QuestSettings, QuestSettingsType } from "./quest-settings/types";
+import type { QuickInviteSettings, QuickInviteSettingsType } from "./quick-invite-settings/types";
 import type { RecommendedSearchSettings, RecommendedSearchSettingsType } from "./recommended-search-settings/types";
 import type { RollBack, RollBackType } from "./roll-back/types";
 import type { SettingsOverrideRule, SettingsOverrideRuleType } from "./settings-override-rule/types";
@@ -110,6 +111,7 @@ export type * from "./pokemon-settings/types";
 export type * from "./pokemon-upgrades/types";
 export type * from "./pokestop-invasion-availability-settings/types";
 export type * from "./quest-settings/types";
+export type * from "./quick-invite-settings/types";
 export type * from "./recommended-search-settings/types";
 export type * from "./roll-back/types";
 export type * from "./settings-override-rule/types";
@@ -172,6 +174,7 @@ export type MasterfileEntryType =
 	| PokemonUpgrades
 	| PokestopInvasionAvailabilitySettings
 	| QuestSettings
+	| QuickInviteSettings
 	| RecommendedSearchSettings
 	| RollBack
 	| SettingsOverrideRule
@@ -234,6 +237,7 @@ export type MasterfileType =
 	| PokemonUpgradesType
 	| PokestopInvasionAvailabilitySettingsType
 	| QuestSettingsType
+	| QuickInviteSettingsType
 	| RecommendedSearchSettingsType
 	| RollBackType
 	| SettingsOverrideRuleType

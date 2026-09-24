@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 30 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 34 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -42,6 +42,24 @@ export type FeatureGateCombatSuppressFastMovePredictionsOnSwap = S<
 export type FeatureGateCombatVnextInitializeBdLast = S<
 	FeatureGate<
 		"COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE",
+		{
+			rolloutPercentage: 100;
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateDisableLegacyNearbyPokemon = S<
+	FeatureGate<
+		"DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE",
+		{
+			rolloutPercentage: 100;
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateEnableNearbyPokemonSnapshot = S<
+	FeatureGate<
+		"ENABLE_NEARBY_POKEMON_SNAPSHOT_FEATURE_GATE",
 		{
 			rolloutPercentage: 100;
 			status: 1;
@@ -171,6 +189,24 @@ export type FeatureGateGetGmtAnalysisForPlayer = S<
 		}
 	>
 >;
+export type FeatureGateGmoWildPokemonS2Location = S<
+	FeatureGate<
+		"GMO_WILD_POKEMON_S2_LOCATION_FEATURE_GATE",
+		{
+			rolloutPercentage: 100;
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateGmoWildPokemonS2LocationServer = S<
+	FeatureGate<
+		"GMO_WILD_POKEMON_S2_LOCATION_SERVER_FEATURE_GATE",
+		{
+			rolloutPercentage: 100;
+			status: 1;
+		}
+	>
+>;
 export type FeatureGateHideCampfireMapButtons = S<
 	FeatureGate<
 		"HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE",
@@ -233,7 +269,7 @@ export type FeatureGateMepEggWriteMigration = S<
 		"MEP_EGG_WRITE_MIGRATION_FEATURE_GATE",
 		{
 			rolloutPercentage: 100;
-			status: 11;
+			status: 12;
 		}
 	>
 >;
@@ -250,7 +286,7 @@ export type FeatureGateRegisterDevice = S<
 	FeatureGate<
 		"REGISTER_DEVICE_FEATURE_GATE",
 		{
-			rolloutPercentage: 30;
+			rolloutPercentage: 60;
 			status: 1;
 		}
 	>
@@ -323,6 +359,8 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateAmsFrontend
 	| FeatureGateCombatSuppressFastMovePredictionsOnSwap
 	| FeatureGateCombatVnextInitializeBdLast
+	| FeatureGateDisableLegacyNearbyPokemon
+	| FeatureGateEnableNearbyPokemonSnapshot
 	| FeatureGateEnablePvpChallengeSpanner
 	| FeatureGateEnhancedCurrencyOverflowStardust
 	| FeatureGateEnhancedMegaRaidReadyCheck
@@ -334,6 +372,8 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateFriendshipResyncOnRead
 	| FeatureGateGamesiteWebviewNearbyButtons
 	| FeatureGateGetGmtAnalysisForPlayer
+	| FeatureGateGmoWildPokemonS2Location
+	| FeatureGateGmoWildPokemonS2LocationServer
 	| FeatureGateHideCampfireMapButtons
 	| FeatureGateLuckyTradeNewStrings
 	| FeatureGateMeetupReminderNotifications

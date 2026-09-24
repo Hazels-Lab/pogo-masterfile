@@ -112,7 +112,6 @@ const (
 	SingletonsTemplateIDPrimalEvoSettings                       SingletonsTemplateID = "PRIMAL_EVO_SETTINGS"
 	SingletonsTemplateIDPtcOauthSettings                        SingletonsTemplateID = "PTC_OAUTH_SETTINGS"
 	SingletonsTemplateIDQuestDialogueInboxSettings              SingletonsTemplateID = "QUEST_DIALOGUE_INBOX_SETTINGS"
-	SingletonsTemplateIDQuickInviteSettingsRaid                 SingletonsTemplateID = "QUICK_INVITE_SETTINGS_RAID"
 	SingletonsTemplateIDRaidClientSettings                      SingletonsTemplateID = "RAID_CLIENT_SETTINGS"
 	SingletonsTemplateIDRaidEntryCostSettings                   SingletonsTemplateID = "RAID_ENTRY_COST_SETTINGS"
 	SingletonsTemplateIDRaidLobbyCounterSettings                SingletonsTemplateID = "RAID_LOBBY_COUNTER_SETTINGS"
@@ -261,7 +260,6 @@ var SingletonsTemplateIDValues = [...]SingletonsTemplateID{
 	SingletonsTemplateIDPrimalEvoSettings,
 	SingletonsTemplateIDPtcOauthSettings,
 	SingletonsTemplateIDQuestDialogueInboxSettings,
-	SingletonsTemplateIDQuickInviteSettingsRaid,
 	SingletonsTemplateIDRaidClientSettings,
 	SingletonsTemplateIDRaidEntryCostSettings,
 	SingletonsTemplateIDRaidLobbyCounterSettings,

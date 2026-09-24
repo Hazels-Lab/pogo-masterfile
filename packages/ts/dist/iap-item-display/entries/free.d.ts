@@ -9,10 +9,11 @@ export type IapItemDisplayBattlepassticket1 = S<
 		{
 			category: "IAP_CATEGORY_FREE";
 			description: "battle_pass_ticket_IAP_description";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F035aa0ae_PGO-MCS_S24_GBL_v1-1024x576.jpg";
+			hidden: true;
+			imageUrl: "https://storage.googleapis.com/prod-public-images/GBL_SharedSkies_2024.jpeg";
 			sku: "battlepassticket.1";
-			skuDisableTime: "2026-09-22T13:00:00";
-			skuDisableTimeUtcMs: "1790082000000";
+			skuDisableTime: "2024-06-15T13:00:00";
+			skuDisableTimeUtcMs: "1718456400000";
 			skuEnableTime: "2023-02-27T20:00:00";
 			skuEnableTimeUtcMs: "1677528000000";
 			sortOrder: 1;

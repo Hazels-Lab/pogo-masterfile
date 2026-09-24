@@ -120,6 +120,8 @@ import type {
 	PokestopInvasionAvailabilitySettingsTemplateID,
 	QuestSettingsMasterfileEntry,
 	QuestSettingsTemplateID,
+	QuickInviteSettingsMasterfileEntry,
+	QuickInviteSettingsTemplateID,
 	RecommendedSearchSettingsMasterfileEntry,
 	RecommendedSearchSettingsTemplateID,
 	RollBackMasterfileEntry,
@@ -176,6 +178,7 @@ import type { PokemonSettingsLookup } from "./pokemon-settings/lookup-table";
 import type { PokemonUpgradesLookup } from "./pokemon-upgrades/lookup-table";
 import type { PokestopInvasionAvailabilitySettingsLookup } from "./pokestop-invasion-availability-settings/lookup-table";
 import type { QuestSettingsLookup } from "./quest-settings/lookup-table";
+import type { QuickInviteSettingsLookup } from "./quick-invite-settings/lookup-table";
 import type { RecommendedSearchSettingsLookup } from "./recommended-search-settings/lookup-table";
 import type { RollBackLookup } from "./roll-back/lookup-table";
 import type { SettingsOverrideRuleLookup } from "./settings-override-rule/lookup-table";
@@ -237,6 +240,7 @@ export type { PokemonSettingsLookup } from "./pokemon-settings/lookup-table";
 export type { PokemonUpgradesLookup } from "./pokemon-upgrades/lookup-table";
 export type { PokestopInvasionAvailabilitySettingsLookup } from "./pokestop-invasion-availability-settings/lookup-table";
 export type { QuestSettingsLookup } from "./quest-settings/lookup-table";
+export type { QuickInviteSettingsLookup } from "./quick-invite-settings/lookup-table";
 export type { RecommendedSearchSettingsLookup } from "./recommended-search-settings/lookup-table";
 export type { RollBackLookup } from "./roll-back/lookup-table";
 export type { SettingsOverrideRuleLookup } from "./settings-override-rule/lookup-table";
@@ -299,6 +303,7 @@ export type GroupName =
 	| "pokemonUpgrades"
 	| "pokestopInvasionAvailabilitySettings"
 	| "questSettings"
+	| "quickInviteSettings"
 	| "recommendedSearchSettings"
 	| "rollBack"
 	| "settingsOverrideRule"
@@ -365,6 +370,7 @@ export interface LookupByGroup {
 	pokemonUpgrades: PokemonUpgradesLookup;
 	pokestopInvasionAvailabilitySettings: PokestopInvasionAvailabilitySettingsLookup;
 	questSettings: QuestSettingsLookup;
+	quickInviteSettings: QuickInviteSettingsLookup;
 	recommendedSearchSettings: RecommendedSearchSettingsLookup;
 	rollBack: RollBackLookup;
 	settingsOverrideRule: SettingsOverrideRuleLookup;
@@ -428,6 +434,7 @@ export interface EntriesByGroup {
 	pokemonUpgrades: PokemonUpgradesMasterfileEntry;
 	pokestopInvasionAvailabilitySettings: PokestopInvasionAvailabilitySettingsMasterfileEntry;
 	questSettings: QuestSettingsMasterfileEntry;
+	quickInviteSettings: QuickInviteSettingsMasterfileEntry;
 	recommendedSearchSettings: RecommendedSearchSettingsMasterfileEntry;
 	rollBack: RollBackMasterfileEntry;
 	settingsOverrideRule: SettingsOverrideRuleMasterfileEntry;
@@ -491,6 +498,7 @@ export interface TemplateIDsByGroup {
 	pokemonUpgrades: PokemonUpgradesTemplateID;
 	pokestopInvasionAvailabilitySettings: PokestopInvasionAvailabilitySettingsTemplateID;
 	questSettings: QuestSettingsTemplateID;
+	quickInviteSettings: QuickInviteSettingsTemplateID;
 	recommendedSearchSettings: RecommendedSearchSettingsTemplateID;
 	rollBack: RollBackTemplateID;
 	settingsOverrideRule: SettingsOverrideRuleTemplateID;
@@ -558,6 +566,7 @@ export interface EntryByTemplateID
 		PokemonUpgradesLookup,
 		PokestopInvasionAvailabilitySettingsLookup,
 		QuestSettingsLookup,
+		QuickInviteSettingsLookup,
 		RecommendedSearchSettingsLookup,
 		RollBackLookup,
 		SettingsOverrideRuleLookup,

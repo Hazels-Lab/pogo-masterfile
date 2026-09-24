@@ -299,7 +299,7 @@ export interface BreadBattleClientSettings {
 			maxPlayersPerBreadDoughLobby: 100;
 			maxPlayersPerBreadLobby: 4;
 			maxPlayersToPrepareBreadDoughLobby: 98;
-			maxRemoteBreadBattlePassesAllowed: 20;
+			maxRemoteBreadBattlePassesAllowed: 10;
 			maxRemotePlayersPerBreadDoughLobby: 100;
 			maxRemotePlayersPerBreadLobby: 4;
 			minPlayersToPrepareBreadLobby: 1;
@@ -4353,7 +4353,6 @@ export interface OnboardingSettings {
 	data: {
 		templateId: "ONBOARDING_SETTINGS";
 		onboardingSettings: {
-			adventureSyncPromptStep: 1;
 			arPromptPlayerLevel: 55;
 			disableInitialArPrompt: true;
 		};
@@ -4843,17 +4842,6 @@ export interface QuestDialogueInboxSettings {
 					trigger: "POWER_SPOT";
 				},
 			];
-		};
-	};
-}
-
-export interface QuickInviteSettings {
-	templateId: "QUICK_INVITE_SETTINGS_RAID";
-	data: {
-		templateId: "QUICK_INVITE_SETTINGS_RAID";
-		quickInviteSettings: {
-			enabled: true;
-			suggestedPlayersVariation: "PGO_RAID_A_TEST_0611";
 		};
 	};
 }
@@ -5409,12 +5397,12 @@ export interface SoftSfidaSettings {
 	data: {
 		templateId: "SOFT_SFIDA_SETTINGS";
 		softSfidaSettings: {
-			catchActionDelayMs: 8000;
+			catchActionDelayMs: 3000;
 			enable: true;
 			geofenceSizeM: 50;
 			minPlayerLevel: 20;
 			reservedGeofenceCount: 4;
-			spinActionDelayMs: 8000;
+			spinActionDelayMs: 3000;
 		};
 	};
 }
@@ -5771,7 +5759,7 @@ export interface SquashSettings {
 	data: {
 		templateId: "REMOTE_RAID_LIMIT_SETTINGS";
 		squashSettings: {
-			dailySquashLimit: 20;
+			dailySquashLimit: 10;
 			enabled: true;
 		};
 	};
@@ -6089,7 +6077,7 @@ export interface VsSeekerClientSettings {
 	data: {
 		templateId: "VS_SEEKER_CLIENT_SETTINGS";
 		vsSeekerClientSettings: {
-			allowedVsSeekerLeagueTemplateId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT", "COMBAT_LEAGUE_VS_SEEKER_ULTRA_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_WILLPOWER"];
+			allowedVsSeekerLeagueTemplateId: ["COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_MASTER_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_GREAT_RETRO"];
 		};
 	};
 }
@@ -6406,7 +6394,6 @@ export type SingletonsSettingsMasterfileEntry =
 	| PrimalEvoSettings
 	| PtcOauthSettings
 	| QuestDialogueInboxSettings
-	| QuickInviteSettings
 	| RaidEntryCostSettings
 	| RaidLobbyCounterSettings
 	| RaidSettings

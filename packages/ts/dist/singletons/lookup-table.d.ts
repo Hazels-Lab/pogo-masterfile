@@ -109,7 +109,6 @@ import type {
 	PrimalEvoSettings,
 	PtcOauthSettings,
 	QuestDialogueInboxSettings,
-	QuickInviteSettings,
 	RaidEntryCostSettings,
 	RaidLobbyCounterSettings,
 	RaidSettings,
@@ -257,7 +256,6 @@ export interface SingletonsLookup {
 	PRIMAL_EVO_SETTINGS: PrimalEvoSettings;
 	PTC_OAUTH_SETTINGS: PtcOauthSettings;
 	QUEST_DIALOGUE_INBOX_SETTINGS: QuestDialogueInboxSettings;
-	QUICK_INVITE_SETTINGS_RAID: QuickInviteSettings;
 	RAID_CLIENT_SETTINGS: RaidSettings;
 	RAID_ENTRY_COST_SETTINGS: RaidEntryCostSettings;
 	RAID_LOBBY_COUNTER_SETTINGS: RaidLobbyCounterSettings;

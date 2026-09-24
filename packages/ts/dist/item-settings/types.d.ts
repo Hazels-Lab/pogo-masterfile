@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", 168 entries (structural types).
+// Generated from Pokémon GO masterfile — group "itemSettings", 170 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -72,6 +72,7 @@ export interface ItemSettingsData {
 		| "item_event_ticket_pink_details_CD_Frigibax26"
 		| "item_event_ticket_pink_details_CD_Nickit26"
 		| "item_event_ticket_pink_details_CD_Sobble26"
+		| "item_event_ticket_pink_details_CD_Zorua26"
 		| "item_event_ticket_pink_details_CDC_Deino26"
 		| "item_event_ticket_pink_details_CDC_Gible26"
 		| "item_event_ticket_pink_details_MegaRayquaza26"
@@ -97,6 +98,7 @@ export interface ItemSettingsData {
 			| "EVENT_PASS_AFTERPARTY2026_EVENT"
 			| "EVENT_PASS_AUGUST2026_SEASON"
 			| "EVENT_PASS_EMEA2026_EVENT"
+			| "EVENT_PASS_FALLMARATHON2026_EVENT"
 			| "EVENT_PASS_FLYINGTAXI2026_EVENT"
 			| "EVENT_PASS_GOFEST2025_GLOBAL"
 			| "EVENT_PASS_GOFEST2026_FINALE"
@@ -105,10 +107,9 @@ export interface ItemSettingsData {
 			| "EVENT_PASS_GOWA_2025"
 			| "EVENT_PASS_HARVESTFESTIVAL2026_EVENT"
 			| "EVENT_PASS_HORIZONS_FALL_2026_EVENT"
-			| "EVENT_PASS_JULY2026_SEASON"
 			| "EVENT_PASS_MEGASQUADS2026_EVENT"
+			| "EVENT_PASS_OCTOBER2026_SEASON"
 			| "EVENT_PASS_SEPTEMBER2026_SEASON"
-			| "EVENT_PASS_STEELEDRESOLVE2026_EVENT"
 			| "EVENT_PASS_SUMMER_MARATHON_2026_EVENT"
 			| "EVENT_PASS_UU_WATER_FESTIVAL_2026_EVENT"
 			| "EVENT_PASS_WCS2026_EVENT";
@@ -137,6 +138,7 @@ export interface ItemSettingsData {
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F97c2eaee_PGO-MCS_Raichu_Super_Mega_Raid_Day_v3-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fc397eb56_PGO-MCS_Staraptor_Super_Mega_Raid_Day_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fdaa6a9dd_PGO_MCS_CD_Classic_KeyArt_Gible_v1-1024x576.jpg"
@@ -192,6 +194,7 @@ export interface ItemSettingsData {
 			| "1790071200000"
 			| "1790452800000"
 			| "1791046800000"
+			| "1791651600000"
 			| "1794765600000";
 		clientEventStartTimeUtcMs:
 			| "1696845600000"
@@ -226,6 +229,7 @@ export interface ItemSettingsData {
 			| "1789826400000"
 			| "1790416800000"
 			| "1791036000000"
+			| "1791640800000"
 			| "1794650400000";
 		conflictStoryQuestIds?: ["RERUN_MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER", "MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER"];
 		detailsLinkKey?:
@@ -254,6 +258,7 @@ export interface ItemSettingsData {
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F97c2eaee_PGO-MCS_Raichu_Super_Mega_Raid_Day_v3-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fc397eb56_PGO-MCS_Staraptor_Super_Mega_Raid_Day_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe4d25391_PGO-MCS_Phantump_Catch_Mastery_v1-1024x576.jpg"
@@ -282,6 +287,7 @@ export interface ItemSettingsData {
 			| "event_datetime_range_key_CD_Frigibax26"
 			| "event_datetime_range_key_CD_Nickit26"
 			| "event_datetime_range_key_CD_Sobble26"
+			| "event_datetime_range_key_CD_Zorua26"
 			| "event_datetime_range_key_CDC_Deino26"
 			| "event_datetime_range_key_CDC_Gible26"
 			| "event_datetime_range_key_ENTEI_SHADOW_RAID_DAY"
@@ -335,6 +341,7 @@ export interface ItemSettingsData {
 			| "2026-09-22T10:00:00"
 			| "2026-09-26T20:00:00"
 			| "2026-10-03T17:00:00"
+			| "2026-10-10T17:00:00"
 			| "2026-11-15T18:00:00";
 		eventStartTime:
 			| "2023-10-09T10:00:00"
@@ -369,6 +376,7 @@ export interface ItemSettingsData {
 			| "2026-09-19T14:00:00"
 			| "2026-09-26T10:00:00"
 			| "2026-10-03T14:00:00"
+			| "2026-10-10T14:00:00"
 			| "2026-11-14T10:00:00";
 		giftable?: boolean;
 		giftItem?:
@@ -395,6 +403,7 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S23_2026_12_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_NOV9_GOWAOL_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_OCT_3_MAXBATTLE_TO_GIFT"
+			| "ITEM_EVENT_TICKET_S24_OCT_10_COMMUNITY_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_SEP_19_MEGARAID_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_SEP_26_CATCH_TO_GIFT"
@@ -448,7 +457,8 @@ export interface ItemSettingsData {
 						| "ROCKRUFF_NORMAL"
 						| "SHAYMIN_LAND"
 						| "THIEVUL_NORMAL"
-						| "YUNGOOS_NORMAL";
+						| "YUNGOOS_NORMAL"
+						| "ZOROARK_NORMAL";
 					shiny?: boolean;
 				};
 				pokemonId:
@@ -472,7 +482,8 @@ export interface ItemSettingsData {
 					| "SHAYMIN"
 					| "THIEVUL"
 					| "YAMPER"
-					| "YUNGOOS";
+					| "YUNGOOS"
+					| "ZOROARK";
 			};
 			stardust?: number;
 			type: "AVATAR_CLOTHING" | "CANDY" | "EXPERIENCE" | "ITEM" | "POKEMON_ENCOUNTER" | "STARDUST";
@@ -506,6 +517,7 @@ export interface ItemSettingsData {
 			| "item_event_ticket_pink_desc_CD_Frigibax26"
 			| "item_event_ticket_pink_desc_CD_Nickit26"
 			| "item_event_ticket_pink_desc_CD_Sobble26"
+			| "item_event_ticket_pink_desc_CD_Zorua26"
 			| "item_event_ticket_pink_desc_CDC_Deino26"
 			| "item_event_ticket_pink_desc_CDC_Gible26"
 			| "item_event_ticket_pink_desc_MegaRayquaza26"
@@ -524,6 +536,7 @@ export interface ItemSettingsData {
 			| "text_rewards_key_CD_Frigibax26"
 			| "text_rewards_key_CD_Nickit26"
 			| "text_rewards_key_CD_Sobble26"
+			| "text_rewards_key_CD_Zorua26"
 			| "text_rewards_key_CDC_Deino26"
 			| "text_rewards_key_CDC_Gible26"
 			| "text_rewards_key_ENTEI_SHADOW_RAID_DAY"
@@ -565,6 +578,7 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S23_2026_08"
 			| "ITEM_EVENT_TICKET_S23_2026_10"
 			| "ITEM_EVENT_TICKET_S23_2026_12"
+			| "ITEM_EVENT_TICKET_S24_OCT_10_COMMUNITY"
 			| "ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY"
 			| "ITEM_EVERGREEN_TICKET"
 			| "ITEM_GLOBAL_EVENT_TICKET";
@@ -623,6 +637,7 @@ export interface ItemSettingsData {
 		| "general1.ticket_CD_Frigibax26_title"
 		| "general1.ticket_CD_Nickit26_title"
 		| "general1.ticket_CD_Sobble26_title"
+		| "general1.ticket_CD_Zorua26_title"
 		| "general1.ticket_CDC_Deino26_title"
 		| "general1.ticket_CDC_Gible26_title"
 		| "general1.ticket._GOWA2024GSBEA_title"
