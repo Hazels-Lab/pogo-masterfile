@@ -159,7 +159,7 @@ export type ItemSettingsItemEventPassPointLiveOps04 = S<
 		{
 			category: "ITEM_CATEGORY_EVENT_PASS_POINT";
 			eventPassPoint: {
-				eventPassId: "EVENT_PASS_STEELEDRESOLVE2026_EVENT";
+				eventPassId: "EVENT_PASS_FALLMARATHON2026_EVENT";
 			};
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
@@ -323,7 +323,7 @@ export type ItemSettingsItemEventPassPointMonthly02 = S<
 		{
 			category: "ITEM_CATEGORY_EVENT_PASS_POINT";
 			eventPassPoint: {
-				eventPassId: "EVENT_PASS_JULY2026_SEASON";
+				eventPassId: "EVENT_PASS_OCTOBER2026_SEASON";
 			};
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
@@ -331,7 +331,7 @@ export type ItemSettingsItemEventPassPointMonthly02 = S<
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
-					limit: 300;
+					limit: 250;
 				};
 			};
 		}

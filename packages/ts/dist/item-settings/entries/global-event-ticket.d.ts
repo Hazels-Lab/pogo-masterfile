@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 54 entries.
+// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 56 entries.
 
 import type { S } from "../../_utils";
 import type { ItemSettings } from "../types";
@@ -1440,6 +1440,78 @@ export type ItemSettingsItemEventTicketS24Oct3Maxbattle = S<
 		}
 	>
 >;
+export type ItemSettingsItemEventTicketS24Oct10Community = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S24_OCT_10_COMMUNITY",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "item_event_ticket_pink_details_CD_Zorua26";
+			globalEventTicket: {
+				backgroundImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg";
+				clientEventEndTimeUtcMs: "1791651600000";
+				clientEventStartTimeUtcMs: "1791640800000";
+				detailsLinkKey: "details_link_key";
+				displayV2Enabled: true;
+				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg";
+				eventDatetimeRangeKey: "event_datetime_range_key_CD_Zorua26";
+				eventEndTime: "2026-10-10T17:00:00";
+				eventStartTime: "2026-10-10T14:00:00";
+				giftable: true;
+				giftItem: "ITEM_EVENT_TICKET_S24_OCT_10_COMMUNITY_TO_GIFT";
+				iconRewards: [
+					{
+						pokemonEncounter: {
+							pokemonDisplay: {
+								form: "ZOROARK_NORMAL";
+							};
+							pokemonId: "ZOROARK";
+						};
+						type: "POKEMON_ENCOUNTER";
+					},
+					{
+						item: {
+							amount: 1;
+							item: "ITEM_LUCKY_EGG";
+						};
+						type: "ITEM";
+					},
+					{
+						item: {
+							amount: 1;
+							item: "ITEM_XL_RARE_CANDY";
+						};
+						type: "ITEM";
+					},
+				];
+				itemBagDescriptionKey: "item_event_ticket_pink_desc_CD_Zorua26";
+				textRewardsKey: "text_rewards_key_CD_Zorua26";
+			};
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general1.ticket_CD_Zorua26_title";
+		}
+	>
+>;
+export type ItemSettingsItemEventTicketS24Oct10CommunityToGift = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S24_OCT_10_COMMUNITY_TO_GIFT",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "item_event_ticket_pink_details_CD_Zorua26";
+			globalEventTicket: {
+				clientEventEndTimeUtcMs: "1791651600000";
+				clientEventStartTimeUtcMs: "1791640800000";
+				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg";
+				eventEndTime: "2026-10-10T17:00:00";
+				eventStartTime: "2026-10-10T14:00:00";
+				itemBagDescriptionKey: "item_event_ticket_pink_desc_CD_Zorua26";
+				ticketItem: "ITEM_EVENT_TICKET_S24_OCT_10_COMMUNITY";
+			};
+			ignoreInventorySpace: true;
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general1.ticket_CD_Zorua26_title";
+		}
+	>
+>;
 export type ItemSettingsItemEventTicketS24Sep12Community = S<
 	ItemSettings<
 		"ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY",
@@ -1851,6 +1923,8 @@ export type ItemSettingsGlobalEventTicketMasterfileEntry =
 	| ItemSettingsItemEventTicketS23202612ToGift
 	| ItemSettingsItemEventTicketS24Nov9Gowaol
 	| ItemSettingsItemEventTicketS24Oct3Maxbattle
+	| ItemSettingsItemEventTicketS24Oct10Community
+	| ItemSettingsItemEventTicketS24Oct10CommunityToGift
 	| ItemSettingsItemEventTicketS24Sep12Community
 	| ItemSettingsItemEventTicketS24Sep12CommunityToGift
 	| ItemSettingsItemEventTicketS24Sep19Megaraid

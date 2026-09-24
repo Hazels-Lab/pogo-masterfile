@@ -150,6 +150,7 @@ pub mod pokemon_settings;
 pub mod pokemon_upgrades;
 pub mod pokestop_invasion_availability_settings;
 pub mod quest_settings;
+pub mod quick_invite_settings;
 pub mod recommended_search_settings;
 pub mod roll_back;
 pub mod settings_override_rule;
@@ -206,8 +207,8 @@ pub enum MasterfileEntry {
     VsSeekerLoot(vs_seeker_loot::VsSeekerLootEntry),
     PhotoSetsSettingsProto(photo_sets_settings_proto::PhotoSetsSettingsProtoEntry),
     EvolutionQuestTemplate(evolution_quest_template::EvolutionQuestTemplateEntry),
-    LimitedPurchaseSkuSettings(limited_purchase_sku_settings::LimitedPurchaseSkuSettingsEntry),
     FeatureGate(feature_gate::FeatureGateEntry),
+    LimitedPurchaseSkuSettings(limited_purchase_sku_settings::LimitedPurchaseSkuSettingsEntry),
     ItemExpirationSettings(item_expiration_settings::ItemExpirationSettingsEntry),
     CombatRankingProtoSettings(combat_ranking_proto_settings::CombatRankingProtoSettingsEntry),
     CombatType(combat_type::CombatTypeEntry),
@@ -228,10 +229,11 @@ pub enum MasterfileEntry {
     WeatherAffinities(weather_affinities::WeatherAffinitiesEntry),
     FriendshipMilestoneSettings(friendship_milestone_settings::FriendshipMilestoneSettingsEntry),
     PokemonScaleSettings(pokemon_scale_settings::PokemonScaleSettingsEntry),
+    QuickInviteSettings(quick_invite_settings::QuickInviteSettingsEntry),
     BuddyLevelSettings(buddy_level_settings::BuddyLevelSettingsEntry),
+    CodeGateProto(code_gate_proto::CodeGateProtoEntry),
     RollBack(roll_back::RollBackEntry),
     TappableSettings(tappable_settings::TappableSettingsEntry),
-    CodeGateProto(code_gate_proto::CodeGateProtoEntry),
     FortPowerUpLevelSettings(fort_power_up_level_settings::FortPowerUpLevelSettingsEntry),
     PokemonHomeEnergyCosts(pokemon_home_energy_costs::PokemonHomeEnergyCostsEntry),
     CombatNpcPersonality(combat_npc_personality::CombatNpcPersonalityEntry),
@@ -352,7 +354,6 @@ pub enum MasterfileEntry {
     PrimalEvoSettings(singletons::PrimalEvoSettingsEntry),
     PtcOauthSettings(singletons::PtcOauthSettingsEntry),
     QuestDialogueInboxSettings(singletons::QuestDialogueInboxSettingsEntry),
-    QuickInviteSettings(singletons::QuickInviteSettingsEntry),
     RaidEntryCostSettings(singletons::RaidEntryCostSettingsEntry),
     RaidLobbyCounterSettings(singletons::RaidLobbyCounterSettingsEntry),
     RaidSettings(singletons::RaidSettingsEntry),
@@ -471,10 +472,10 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "evolutionQuestTemplate" => {
                     serde_json::from_value(value).map(Self::EvolutionQuestTemplate)
                 }
+                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
                 "limitedPurchaseSkuSettings" => {
                     serde_json::from_value(value).map(Self::LimitedPurchaseSkuSettings)
                 }
-                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
                 "itemExpirationSettings" => {
                     serde_json::from_value(value).map(Self::ItemExpirationSettings)
                 }
@@ -513,10 +514,13 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "pokemonScaleSettings" => {
                     serde_json::from_value(value).map(Self::PokemonScaleSettings)
                 }
+                "quickInviteSettings" => {
+                    serde_json::from_value(value).map(Self::QuickInviteSettings)
+                }
                 "buddyLevelSettings" => serde_json::from_value(value).map(Self::BuddyLevelSettings),
+                "codeGateProto" => serde_json::from_value(value).map(Self::CodeGateProto),
                 "rollBack" => serde_json::from_value(value).map(Self::RollBack),
                 "tappableSettings" => serde_json::from_value(value).map(Self::TappableSettings),
-                "codeGateProto" => serde_json::from_value(value).map(Self::CodeGateProto),
                 "fortPowerUpLevelSettings" => {
                     serde_json::from_value(value).map(Self::FortPowerUpLevelSettings)
                 }
@@ -782,9 +786,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "ptcOauthSettings" => serde_json::from_value(value).map(Self::PtcOauthSettings),
                 "questDialogueInboxSettings" => {
                     serde_json::from_value(value).map(Self::QuestDialogueInboxSettings)
-                }
-                "quickInviteSettings" => {
-                    serde_json::from_value(value).map(Self::QuickInviteSettings)
                 }
                 "raidEntryCostSettings" => {
                     serde_json::from_value(value).map(Self::RaidEntryCostSettings)

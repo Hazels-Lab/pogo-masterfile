@@ -69,6 +69,7 @@ const (
 	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuAnniversary2026Philippine01     PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_PHILIPPINE_01"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuAnniversary2026Singapore01      PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_SINGAPORE_01"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuAnniversary2026Taiwan01         PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_TAIWAN_01"
+	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuGlassHelmet2026                 PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_PIKACHU_GLASS_HELMET_2026"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachu                         PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuAdventureHat2020         PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_ADVENTURE_HAT_2020"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuAnniversary2026          PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026"
@@ -2552,6 +2553,7 @@ var PokemonExtendedSettingsTemplateIDValues = [...]PokemonExtendedSettingsTempla
 	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuAnniversary2026Philippine01,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuAnniversary2026Singapore01,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuAnniversary2026Taiwan01,
+	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuGlassHelmet2026,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachu,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuAdventureHat2020,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuAnniversary2026,

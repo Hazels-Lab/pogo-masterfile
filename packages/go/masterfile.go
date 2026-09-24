@@ -56,6 +56,7 @@ import (
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/pokemon_upgrades"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/pokestop_invasion_availability_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/quest_settings"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/quick_invite_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/recommended_search_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/roll_back"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/settings_override_rule"
@@ -281,14 +282,14 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "limitedPurchaseSkuSettings":
-		var e limited_purchase_sku_settings.LimitedPurchaseSkuSettingsEntry
+	case "featureGate":
+		var e feature_gate.FeatureGateEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
 		return e, nil
-	case "featureGate":
-		var e feature_gate.FeatureGateEntry
+	case "limitedPurchaseSkuSettings":
+		var e limited_purchase_sku_settings.LimitedPurchaseSkuSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -389,8 +390,20 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
+	case "quickInviteSettings":
+		var e quick_invite_settings.QuickInviteSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
 	case "buddyLevelSettings":
 		var e buddy_level_settings.BuddyLevelSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
+	case "codeGateProto":
+		var e code_gate_proto.CodeGateProtoEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -403,12 +416,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "tappableSettings":
 		var e tappable_settings.TappableSettingsEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
-	case "codeGateProto":
-		var e code_gate_proto.CodeGateProtoEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -1105,12 +1112,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "questDialogueInboxSettings":
 		var e singletons.QuestDialogueInboxSettingsEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
-	case "quickInviteSettings":
-		var e singletons.QuickInviteSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}

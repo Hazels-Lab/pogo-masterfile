@@ -6,6 +6,8 @@ import type {
 	FeatureGateAmsFrontend,
 	FeatureGateCombatSuppressFastMovePredictionsOnSwap,
 	FeatureGateCombatVnextInitializeBdLast,
+	FeatureGateDisableLegacyNearbyPokemon,
+	FeatureGateEnableNearbyPokemonSnapshot,
 	FeatureGateEnablePvpChallengeSpanner,
 	FeatureGateEnhancedCurrencyOverflowStardust,
 	FeatureGateEnhancedMegaRaidReadyCheck,
@@ -17,6 +19,8 @@ import type {
 	FeatureGateFriendshipResyncOnRead,
 	FeatureGateGamesiteWebviewNearbyButtons,
 	FeatureGateGetGmtAnalysisForPlayer,
+	FeatureGateGmoWildPokemonS2Location,
+	FeatureGateGmoWildPokemonS2LocationServer,
 	FeatureGateHideCampfireMapButtons,
 	FeatureGateLuckyTradeNewStrings,
 	FeatureGateMeetupReminderNotifications,
@@ -39,6 +43,8 @@ export interface FeatureGateLookup {
 	AMS_FRONTEND_FEATURE_GATE: FeatureGateAmsFrontend;
 	COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE: FeatureGateCombatSuppressFastMovePredictionsOnSwap;
 	COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE: FeatureGateCombatVnextInitializeBdLast;
+	DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE: FeatureGateDisableLegacyNearbyPokemon;
+	ENABLE_NEARBY_POKEMON_SNAPSHOT_FEATURE_GATE: FeatureGateEnableNearbyPokemonSnapshot;
 	ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE: FeatureGateEnablePvpChallengeSpanner;
 	ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE: FeatureGateEnhancedCurrencyOverflowStardust;
 	ENHANCED_MEGA_RAID_READY_CHECK_FEATURE_GATE: FeatureGateEnhancedMegaRaidReadyCheck;
@@ -50,6 +56,8 @@ export interface FeatureGateLookup {
 	FRIENDSHIP_RESYNC_ON_READ_FEATURE_GATE: FeatureGateFriendshipResyncOnRead;
 	GAMESITE_WEBVIEW_NEARBY_BUTTONS_FEATURE_GATE: FeatureGateGamesiteWebviewNearbyButtons;
 	GET_GMT_ANALYSIS_FOR_PLAYER_FEATURE_GATE: FeatureGateGetGmtAnalysisForPlayer;
+	GMO_WILD_POKEMON_S2_LOCATION_FEATURE_GATE: FeatureGateGmoWildPokemonS2Location;
+	GMO_WILD_POKEMON_S2_LOCATION_SERVER_FEATURE_GATE: FeatureGateGmoWildPokemonS2LocationServer;
 	HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE: FeatureGateHideCampfireMapButtons;
 	LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE: FeatureGateLuckyTradeNewStrings;
 	MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE: FeatureGateMeetupReminderNotifications;

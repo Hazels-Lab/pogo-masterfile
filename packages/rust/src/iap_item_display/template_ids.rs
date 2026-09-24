@@ -519,6 +519,8 @@ pub enum IapItemDisplayTemplateId {
     General1Ticket5,
     #[serde(rename = "general2.ticket.3")]
     General2Ticket3,
+    #[serde(rename = "general2.ticket.4")]
+    General2Ticket4,
     #[serde(rename = "general2.ticket.11")]
     General2Ticket11,
     #[serde(rename = "general4.medium.1")]
@@ -575,6 +577,12 @@ pub enum IapItemDisplayTemplateId {
     MpReplenish1,
     #[serde(rename = "mp_replenish.3")]
     MpReplenish3,
+    #[serde(rename = "OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
+    October12026DeluxeEventPassTrackUnlock,
+    #[serde(rename = "OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
+    October12026DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_REDIRECT")]
+    October12026DeluxeEventPassTrackUnlockRedirect,
     #[serde(rename = "paidraidticket.1")]
     Paidraidticket1,
     #[serde(rename = "paidraidticket.3")]

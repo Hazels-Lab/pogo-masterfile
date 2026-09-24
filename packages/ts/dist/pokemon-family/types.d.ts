@@ -63,11 +63,12 @@ export interface PokemonFamilyData {
 		| "SHARPEDO"
 		| "SKARMORY"
 		| "SLOWBRO"
+		| "STARAPTOR"
 		| "STARMIE"
 		| "STEELIX"
 		| "SWAMPERT"
 		| "TYRANITAR"
 		| "VENUSAUR"
 		| "VICTREEBEL";
-	megaEvolvablePokemonIds?: Array<"CHARIZARD" | "GALLADE" | "GARDEVOIR" | "MEWTWO" | "RAICHU" | "STARAPTOR">;
+	megaEvolvablePokemonIds?: Array<"CHARIZARD" | "GALLADE" | "GARDEVOIR" | "MEWTWO" | "RAICHU">;
 }

@@ -135,6 +135,8 @@ pub enum PokemonExtendedSettingsTemplateId {
     ExtendedV0025PikachuAnniversary2026Singapore01,
     #[serde(rename = "EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_TAIWAN_01")]
     ExtendedV0025PikachuAnniversary2026Taiwan01,
+    #[serde(rename = "EXTENDED_V0025_PIKACHU_GLASS_HELMET_2026")]
+    ExtendedV0025PikachuGlassHelmet2026,
     #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU")]
     ExtendedV0025PokemonPikachu,
     #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_ADVENTURE_HAT_2020")]

@@ -56,6 +56,7 @@ import (
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/pokemon_upgrades"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/pokestop_invasion_availability_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/quest_settings"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/quick_invite_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/recommended_search_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/roll_back"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/settings_override_rule"
@@ -118,6 +119,7 @@ type Masterfile struct {
 	TypeEffective                        *accessor.TypeEffectiveAccessor
 	PokemonUpgrades                      *accessor.PokemonUpgradesAccessor
 	QuestSettings                        *accessor.QuestSettingsAccessor
+	QuickInviteSettings                  *accessor.QuickInviteSettingsAccessor
 	RecommendedSearchSettings            *accessor.RecommendedSearchSettingsAccessor
 	SettingsOverrideRule                 *accessor.SettingsOverrideRuleAccessor
 	GenderSettings                       *accessor.GenderSettingsAccessor
@@ -183,6 +185,7 @@ var GroupNames = []string{
 	"typeEffective",
 	"pokemonUpgrades",
 	"questSettings",
+	"quickInviteSettings",
 	"recommendedSearchSettings",
 	"settingsOverrideRule",
 	"genderSettings",
@@ -250,6 +253,7 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 	typeEffectiveBucket := []type_effective.TypeEffectiveEntry{}
 	pokemonUpgradesBucket := []pokemon_upgrades.PokemonUpgradesEntry{}
 	questSettingsBucket := []quest_settings.QuestSettingsEntry{}
+	quickInviteSettingsBucket := []quick_invite_settings.QuickInviteSettingsEntry{}
 	recommendedSearchSettingsBucket := []recommended_search_settings.RecommendedSearchSettingsEntry{}
 	settingsOverrideRuleBucket := []settings_override_rule.SettingsOverrideRuleEntry{}
 	genderSettingsBucket := []gender_settings.GenderSettingsEntry{}
@@ -400,6 +404,9 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 		case quest_settings.QuestSettingsEntry:
 			m.byID[v.TemplateID] = i
 			questSettingsBucket = append(questSettingsBucket, v)
+		case quick_invite_settings.QuickInviteSettingsEntry:
+			m.byID[v.TemplateID] = i
+			quickInviteSettingsBucket = append(quickInviteSettingsBucket, v)
 		case recommended_search_settings.RecommendedSearchSettingsEntry:
 			m.byID[v.TemplateID] = i
 			recommendedSearchSettingsBucket = append(recommendedSearchSettingsBucket, v)
@@ -501,6 +508,7 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 	m.TypeEffective = accessor.NewTypeEffectiveAccessor(typeEffectiveBucket)
 	m.PokemonUpgrades = accessor.NewPokemonUpgradesAccessor(pokemonUpgradesBucket)
 	m.QuestSettings = accessor.NewQuestSettingsAccessor(questSettingsBucket)
+	m.QuickInviteSettings = accessor.NewQuickInviteSettingsAccessor(quickInviteSettingsBucket)
 	m.RecommendedSearchSettings = accessor.NewRecommendedSearchSettingsAccessor(recommendedSearchSettingsBucket)
 	m.SettingsOverrideRule = accessor.NewSettingsOverrideRuleAccessor(settingsOverrideRuleBucket)
 	m.GenderSettings = accessor.NewGenderSettingsAccessor(genderSettingsBucket)

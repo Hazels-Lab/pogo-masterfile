@@ -110,7 +110,6 @@ import type {
 	PrimalEvoSettings,
 	PtcOauthSettings,
 	QuestDialogueInboxSettings,
-	QuickInviteSettings,
 	RaidEntryCostSettings,
 	RaidLobbyCounterSettings,
 	RaidSettings,
@@ -258,7 +257,6 @@ export type PowerUpPokestopsSettingsType = W<PowerUpPokestopsSettings>;
 export type PrimalEvoSettingsType = W<PrimalEvoSettings>;
 export type PtcOauthSettingsType = W<PtcOauthSettings>;
 export type QuestDialogueInboxSettingsType = W<QuestDialogueInboxSettings>;
-export type QuickInviteSettingsType = W<QuickInviteSettings>;
 export type RaidEntryCostSettingsType = W<RaidEntryCostSettings>;
 export type RaidLobbyCounterSettingsType = W<RaidLobbyCounterSettings>;
 export type RaidSettingsType = W<RaidSettings>;
@@ -406,7 +404,6 @@ export type Singletons =
 	| PrimalEvoSettingsType
 	| PtcOauthSettingsType
 	| QuestDialogueInboxSettingsType
-	| QuickInviteSettingsType
 	| RaidEntryCostSettingsType
 	| RaidLobbyCounterSettingsType
 	| RaidSettingsType

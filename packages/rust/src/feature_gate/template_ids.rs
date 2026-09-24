@@ -17,6 +17,10 @@ pub enum FeatureGateTemplateId {
     CombatSuppressFastMovePredictionsOnSwapFeatureGate,
     #[serde(rename = "COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE")]
     CombatVnextInitializeBdLastFeatureGate,
+    #[serde(rename = "DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE")]
+    DisableLegacyNearbyPokemonFeatureGate,
+    #[serde(rename = "ENABLE_NEARBY_POKEMON_SNAPSHOT_FEATURE_GATE")]
+    EnableNearbyPokemonSnapshotFeatureGate,
     #[serde(rename = "ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE")]
     EnablePvpChallengeSpannerFeatureGate,
     #[serde(rename = "ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE")]
@@ -39,6 +43,10 @@ pub enum FeatureGateTemplateId {
     GamesiteWebviewNearbyButtonsFeatureGate,
     #[serde(rename = "GET_GMT_ANALYSIS_FOR_PLAYER_FEATURE_GATE")]
     GetGmtAnalysisForPlayerFeatureGate,
+    #[serde(rename = "GMO_WILD_POKEMON_S2_LOCATION_FEATURE_GATE")]
+    GmoWildPokemonS2LocationFeatureGate,
+    #[serde(rename = "GMO_WILD_POKEMON_S2_LOCATION_SERVER_FEATURE_GATE")]
+    GmoWildPokemonS2LocationServerFeatureGate,
     #[serde(rename = "HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE")]
     HideCampfireMapButtonsFeatureGate,
     #[serde(rename = "LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE")]

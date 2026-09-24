@@ -1342,9 +1342,8 @@ type NeutralAvatarSettings struct {
 }
 
 type OnboardingSettings struct {
-	AdventureSyncPromptStep uint64 `json:"adventureSyncPromptStep"`
-	ArPromptPlayerLevel     uint64 `json:"arPromptPlayerLevel"`
-	DisableInitialArPrompt  bool   `json:"disableInitialArPrompt"`
+	ArPromptPlayerLevel    uint64 `json:"arPromptPlayerLevel"`
+	DisableInitialArPrompt bool   `json:"disableInitialArPrompt"`
 }
 
 type OptimizationsProto struct {
@@ -1618,11 +1617,6 @@ type QuestDialogueInboxSettingsQuestDialogueTriggers struct {
 type QuestDialogueInboxSettings struct {
 	CooldownDurationMs    string                                             `json:"cooldownDurationMs"`
 	QuestDialogueTriggers [8]QuestDialogueInboxSettingsQuestDialogueTriggers `json:"QuestDialogueTriggers"`
-}
-
-type QuickInviteSettings struct {
-	Enabled                   bool   `json:"enabled"`
-	SuggestedPlayersVariation string `json:"suggestedPlayersVariation"`
 }
 
 type RaidEntryCostSettingsRaidEntryCost struct {
@@ -3462,18 +3456,6 @@ func (QuestDialogueInboxSettingsEntry) MasterfileEntry() {}
 type QuestDialogueInboxSettingsEntryData struct {
 	TemplateID                 string                     `json:"templateId"`
 	QuestDialogueInboxSettings QuestDialogueInboxSettings `json:"questDialogueInboxSettings"`
-}
-
-type QuickInviteSettingsEntry struct {
-	TemplateID string                       `json:"templateId"`
-	Data       QuickInviteSettingsEntryData `json:"data"`
-}
-
-func (QuickInviteSettingsEntry) MasterfileEntry() {}
-
-type QuickInviteSettingsEntryData struct {
-	TemplateID          string              `json:"templateId"`
-	QuickInviteSettings QuickInviteSettings `json:"quickInviteSettings"`
 }
 
 type RaidEntryCostSettingsEntry struct {

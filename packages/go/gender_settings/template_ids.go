@@ -85,6 +85,7 @@ const (
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuFlying5thAnniv              GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_FLYING_5TH_ANNIV"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuFlyingOkinawa               GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_FLYING_OKINAWA"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuFossil2026                  GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_FOSSIL_2026"
+	GenderSettingsTemplateIDSpawnV0025PokemonPikachuGlassHelmet2026             GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_GLASS_HELMET_2026"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuGofest2022                  GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2022"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuGofest2024Mtiara            GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2024_MTIARA"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuGofest2024Stiara            GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_GOFEST_2024_STIARA"
@@ -2567,6 +2568,7 @@ var GenderSettingsTemplateIDValues = [...]GenderSettingsTemplateID{
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuFlying5thAnniv,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuFlyingOkinawa,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuFossil2026,
+	GenderSettingsTemplateIDSpawnV0025PokemonPikachuGlassHelmet2026,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuGofest2022,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuGofest2024Mtiara,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuGofest2024Stiara,
