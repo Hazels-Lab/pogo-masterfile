@@ -257,7 +257,6 @@ import type {
 	IapItemDisplayFlairFreeBundle0,
 	IapItemDisplayGeneral1Ticket5,
 	IapItemDisplayGeneral2Ticket3,
-	IapItemDisplayGeneral2Ticket4,
 	IapItemDisplayGeneral2Ticket11,
 	IapItemDisplayGeneral4Medium1,
 	IapItemDisplayGeneral6Small1,
@@ -354,8 +353,6 @@ import type {
 	IapItemDisplayPgoreleasePokecoin5720,
 	IapItemDisplayPgoreleasePokecoin15950,
 	IapItemDisplayPgoreleasePokecoin21375,
-	IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlock,
-	IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlockRedirect,
 	IapItemDisplayPoffin,
 	IapItemDisplayPokeball20,
@@ -1337,7 +1334,6 @@ export interface IapItemDisplayLookup {
 	FLAIR_FREE_BUNDLE_0: IapItemDisplayFlairFreeBundle0;
 	"general1.ticket.5": IapItemDisplayGeneral1Ticket5;
 	"general2.ticket.3": IapItemDisplayGeneral2Ticket3;
-	"general2.ticket.4": IapItemDisplayGeneral2Ticket4;
 	"general2.ticket.11": IapItemDisplayGeneral2Ticket11;
 	"general4.medium.1": IapItemDisplayGeneral4Medium1;
 	"general6.small.1": IapItemDisplayGeneral6Small1;
@@ -1434,8 +1430,6 @@ export interface IapItemDisplayLookup {
 	"pgorelease.pokecoin.5720": IapItemDisplayPgoreleasePokecoin5720;
 	"pgorelease.pokecoin.15950": IapItemDisplayPgoreleasePokecoin15950;
 	"pgorelease.pokecoin.21375": IapItemDisplayPgoreleasePokecoin21375;
-	"pgorelease.september2_2026_deluxe_event_pass_track_unlock": IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlock;
-	"pgorelease.september2_2026_deluxe_event_pass_track_unlock_plus_points": IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlockPlusPoints;
 	"pgorelease.september2_2026_deluxe_event_pass_track_unlock_redirect": IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlockRedirect;
 	poffin: IapItemDisplayPoffin;
 	"pokeball.20": IapItemDisplayPokeball20;

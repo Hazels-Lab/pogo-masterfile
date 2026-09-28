@@ -31,6 +31,7 @@ const (
 	FeatureGateTemplateIDMega2026FeatureGate                                FeatureGateTemplateID = "MEGA_2026_FEATURE_GATE"
 	FeatureGateTemplateIDMepEggReadMigrationFeatureGate                     FeatureGateTemplateID = "MEP_EGG_READ_MIGRATION_FEATURE_GATE"
 	FeatureGateTemplateIDMepEggWriteMigrationFeatureGate                    FeatureGateTemplateID = "MEP_EGG_WRITE_MIGRATION_FEATURE_GATE"
+	FeatureGateTemplateIDPokemonSpawnAvoidanceReworkFeatureGate             FeatureGateTemplateID = "POKEMON_SPAWN_AVOIDANCE_REWORK_FEATURE_GATE"
 	FeatureGateTemplateIDPreloadedMegaStatusStringFeatureGate               FeatureGateTemplateID = "PRELOADED_MEGA_STATUS_STRING_FEATURE_GATE"
 	FeatureGateTemplateIDRegisterDeviceFeatureGate                          FeatureGateTemplateID = "REGISTER_DEVICE_FEATURE_GATE"
 	FeatureGateTemplateIDRemoteTradeImprovementsFeatureGate                 FeatureGateTemplateID = "REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE"
@@ -68,6 +69,7 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDMega2026FeatureGate,
 	FeatureGateTemplateIDMepEggReadMigrationFeatureGate,
 	FeatureGateTemplateIDMepEggWriteMigrationFeatureGate,
+	FeatureGateTemplateIDPokemonSpawnAvoidanceReworkFeatureGate,
 	FeatureGateTemplateIDPreloadedMegaStatusStringFeatureGate,
 	FeatureGateTemplateIDRegisterDeviceFeatureGate,
 	FeatureGateTemplateIDRemoteTradeImprovementsFeatureGate,

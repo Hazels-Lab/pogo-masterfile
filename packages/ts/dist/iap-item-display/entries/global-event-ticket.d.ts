@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 6 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 4 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -60,24 +60,6 @@ export type IapItemDisplayGeneral2Ticket3 = S<
 		}
 	>
 >;
-export type IapItemDisplayGeneral2Ticket4 = S<
-	IapItemDisplay<
-		"general2.ticket.4",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe4d25391_PGO-MCS_Phantump_Catch_Mastery_v1-1024x576.jpg";
-			sku: "pgorelease.general2.ticket.4";
-			skuDisableTime: "2026-09-26T20:00:00";
-			skuDisableTimeUtcMs: "1790452800000";
-			skuEnableTime: "2019-03-14T08:00:00";
-			skuEnableTimeUtcMs: "1552550400000";
-			sortOrder: 2;
-			spriteId: "general2.ticket.4";
-			title: "general2.ticket4.catch_mastery_Phantump";
-			useEnvironmentPrefix: true;
-		}
-	>
->;
 export type IapItemDisplayGeneral2Ticket11 = S<
 	IapItemDisplay<
 		"general2.ticket.11",
@@ -97,28 +79,9 @@ export type IapItemDisplayGeneral2Ticket11 = S<
 		}
 	>
 >;
-export type IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlockRedirect = S<
-	IapItemDisplay<
-		"pgorelease.september2_2026_deluxe_event_pass_track_unlock_redirect",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fec63551c_PGO-MCS_Horizon_Celebration_2026_TICKET_v1-1024x576.jpg";
-			sku: "pgorelease.september2_2026_deluxe_event_pass_track_unlock_redirect";
-			skuDisableTime: "2026-09-24T20:00:00";
-			skuDisableTimeUtcMs: "1790280000000";
-			skuEnableTime: "2025-09-16T10:00:00";
-			skuEnableTimeUtcMs: "1758016800000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_title_horizons_fall_2026";
-		}
-	>
->;
 
 export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayEventPassMonth1SeasonStoreRedirect
 	| IapItemDisplayGeneral1Ticket5
 	| IapItemDisplayGeneral2Ticket3
-	| IapItemDisplayGeneral2Ticket4
-	| IapItemDisplayGeneral2Ticket11
-	| IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlockRedirect;
+	| IapItemDisplayGeneral2Ticket11;

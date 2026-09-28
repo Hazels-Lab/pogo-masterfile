@@ -59,6 +59,8 @@ pub enum FeatureGateTemplateId {
     MepEggReadMigrationFeatureGate,
     #[serde(rename = "MEP_EGG_WRITE_MIGRATION_FEATURE_GATE")]
     MepEggWriteMigrationFeatureGate,
+    #[serde(rename = "POKEMON_SPAWN_AVOIDANCE_REWORK_FEATURE_GATE")]
+    PokemonSpawnAvoidanceReworkFeatureGate,
     #[serde(rename = "PRELOADED_MEGA_STATUS_STRING_FEATURE_GATE")]
     PreloadedMegaStatusStringFeatureGate,
     #[serde(rename = "REGISTER_DEVICE_FEATURE_GATE")]

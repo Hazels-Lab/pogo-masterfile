@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 21 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 20 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -189,35 +189,20 @@ export type IapItemDisplayPgoreleaseMonth1DeluxeEventPassTrackUnlockPlusPoints =
 		}
 	>
 >;
-export type IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlock = S<
+export type IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlockRedirect = S<
 	IapItemDisplay<
-		"pgorelease.september2_2026_deluxe_event_pass_track_unlock",
+		"pgorelease.september2_2026_deluxe_event_pass_track_unlock_redirect",
 		{
 			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
+			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fec63551c_PGO-MCS_Horizon_Celebration_2026_TICKET_v1-1024x576.jpg";
-			sku: "pgorelease.september2_2026_deluxe_event_pass_track_unlock";
+			sku: "pgorelease.september2_2026_deluxe_event_pass_track_unlock_redirect";
 			skuDisableTime: "2026-09-24T20:00:00";
 			skuDisableTimeUtcMs: "1790280000000";
 			skuEnableTime: "2025-09-16T10:00:00";
 			skuEnableTimeUtcMs: "1758016800000";
 			sortOrder: 1;
 			title: "season_pass_premium_track_title_horizons_fall_2026";
-		}
-	>
->;
-export type IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlockPlusPoints = S<
-	IapItemDisplay<
-		"pgorelease.september2_2026_deluxe_event_pass_track_unlock_plus_points",
-		{
-			description: "event_pass_plus_points_6_ranks_description";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fec63551c_PGO-MCS_Horizon_Celebration_2026_TICKET_v1-1024x576.jpg";
-			sku: "pgorelease.september2_2026_deluxe_event_pass_track_unlock_plus_points";
-			skuDisableTime: "2026-09-24T20:00:00";
-			skuDisableTimeUtcMs: "1790280000000";
-			skuEnableTime: "2025-09-16T10:00:00";
-			skuEnableTimeUtcMs: "1758016800000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_plus_six_ranks_title_horizons_fall_2026";
 		}
 	>
 >;
@@ -260,6 +245,7 @@ export type IapItemDisplaySeptember22026DeluxeEventPassTrackUnlock = S<
 		"SEPTEMBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK",
 		{
 			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
+			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fec63551c_PGO-MCS_Horizon_Celebration_2026_TICKET_v1-1024x576.jpg";
 			sku: "pgorelease.september2_2026_deluxe_event_pass_track_unlock";
 			skuDisableTime: "2026-09-24T20:00:00";
@@ -276,6 +262,7 @@ export type IapItemDisplaySeptember22026DeluxeEventPassTrackUnlockPlusPoints = S
 		"SEPTEMBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS",
 		{
 			description: "event_pass_plus_points_6_ranks_description";
+			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fec63551c_PGO-MCS_Horizon_Celebration_2026_TICKET_v1-1024x576.jpg";
 			sku: "pgorelease.september2_2026_deluxe_event_pass_track_unlock_plus_points";
 			skuDisableTime: "2026-09-24T20:00:00";
@@ -336,8 +323,7 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayOctober12026DeluxeEventPassTrackUnlockRedirect
 	| IapItemDisplayPgoreleaseMonth1DeluxeEventPassTrackUnlock
 	| IapItemDisplayPgoreleaseMonth1DeluxeEventPassTrackUnlockPlusPoints
-	| IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlock
-	| IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlockPlusPoints
+	| IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlockRedirect
 	| IapItemDisplaySeptember12026DeluxeEventPassTrackUnlock
 	| IapItemDisplaySeptember12026DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplaySeptember22026DeluxeEventPassTrackUnlock

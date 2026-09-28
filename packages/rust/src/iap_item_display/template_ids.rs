@@ -519,8 +519,6 @@ pub enum IapItemDisplayTemplateId {
     General1Ticket5,
     #[serde(rename = "general2.ticket.3")]
     General2Ticket3,
-    #[serde(rename = "general2.ticket.4")]
-    General2Ticket4,
     #[serde(rename = "general2.ticket.11")]
     General2Ticket11,
     #[serde(rename = "general4.medium.1")]
@@ -713,10 +711,6 @@ pub enum IapItemDisplayTemplateId {
     PgoreleasePokecoin15950,
     #[serde(rename = "pgorelease.pokecoin.21375")]
     PgoreleasePokecoin21375,
-    #[serde(rename = "pgorelease.september2_2026_deluxe_event_pass_track_unlock")]
-    PgoreleaseSeptember22026DeluxeEventPassTrackUnlock,
-    #[serde(rename = "pgorelease.september2_2026_deluxe_event_pass_track_unlock_plus_points")]
-    PgoreleaseSeptember22026DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "pgorelease.september2_2026_deluxe_event_pass_track_unlock_redirect")]
     PgoreleaseSeptember22026DeluxeEventPassTrackUnlockRedirect,
     #[serde(rename = "poffin")]

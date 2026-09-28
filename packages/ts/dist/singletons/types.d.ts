@@ -53,6 +53,7 @@ import type {
 	EncounterSettings,
 	ErrorReportingSettings,
 	EventMapRefreshSettings,
+	EventPassSettings,
 	EventPlannerPopularNotificationSettings,
 	ExternalAddressableAssetsSettings,
 	FeatureUnlockLevelSettings,
@@ -200,6 +201,7 @@ export type EggHatchImprovementsSettingsType = W<EggHatchImprovementsSettings>;
 export type EncounterSettingsType = W<EncounterSettings>;
 export type ErrorReportingSettingsType = W<ErrorReportingSettings>;
 export type EventMapRefreshSettingsType = W<EventMapRefreshSettings>;
+export type EventPassSettingsType = W<EventPassSettings>;
 export type EventPlannerPopularNotificationSettingsType = W<EventPlannerPopularNotificationSettings>;
 export type ExternalAddressableAssetsSettingsType = W<ExternalAddressableAssetsSettings>;
 export type FeatureUnlockLevelSettingsType = W<FeatureUnlockLevelSettings>;
@@ -347,6 +349,7 @@ export type Singletons =
 	| EncounterSettingsType
 	| ErrorReportingSettingsType
 	| EventMapRefreshSettingsType
+	| EventPassSettingsType
 	| EventPlannerPopularNotificationSettingsType
 	| ExternalAddressableAssetsSettingsType
 	| FeatureUnlockLevelSettingsType

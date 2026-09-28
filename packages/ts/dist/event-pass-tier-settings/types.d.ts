@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 520 entries (structural types).
+// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 400 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -14,16 +14,12 @@ export type EventPassTierSettingsType = W<EventPassTierSettings>;
 export interface EventPassTierSettingsData {
 	activeBonusDisplaySettings?: {
 		bonusBoxes: Array<{
-			iconType: "CANDY_GENERAL" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "LURE_MODULE" | "STARDUST" | "TRADE";
+			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "TRADE";
 			text:
-				| "catch_candy_double"
-				| "catch_candy_triple"
 				| "dai_duration_double"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
 				| "gift_storage_more"
-				| "hatenna_wattrel_stardust_catch"
-				| "lure_duration_double"
 				| "season_pass_bonus_hatch_xp_stardust"
 				| "trade_extra_candy"
 				| "trade_guaranteed_candyxl";
@@ -32,16 +28,12 @@ export interface EventPassTierSettingsData {
 	};
 	bonusSettings?: {
 		bonusBoxes: Array<{
-			iconType: "CANDY_GENERAL" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "LURE_MODULE" | "STARDUST" | "TRADE";
+			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "TRADE";
 			text:
-				| "catch_candy_double"
-				| "catch_candy_triple"
 				| "dai_duration_double"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
 				| "gift_storage_more"
-				| "hatenna_wattrel_stardust_catch"
-				| "lure_duration_double"
 				| "season_pass_bonus_hatch_xp_stardust"
 				| "trade_extra_candy"
 				| "trade_guaranteed_candyxl";
@@ -69,7 +61,6 @@ export interface EventPassTierSettingsData {
 				| "FIDOUGH"
 				| "FLITTLE"
 				| "GOSSIFLEUR"
-				| "HATENNA"
 				| "HONEDGE"
 				| "INKAY"
 				| "LATIOS"
@@ -85,7 +76,6 @@ export interface EventPassTierSettingsData {
 				| "SNOM"
 				| "STARYU"
 				| "VOLTORB"
-				| "WATTREL"
 				| "WIMPOD"
 				| "YAMPER";
 		};
@@ -107,7 +97,6 @@ export interface EventPassTierSettingsData {
 				| "ITEM_MP"
 				| "ITEM_NANAB_BERRY"
 				| "ITEM_PAID_RAID_TICKET"
-				| "ITEM_PINAP_BERRY"
 				| "ITEM_POFFIN"
 				| "ITEM_POKE_BALL"
 				| "ITEM_RARE_CANDY"
@@ -120,11 +109,6 @@ export interface EventPassTierSettingsData {
 		playerAttribute?: {
 			durationMins: number;
 			key:
-				| "horizonsfall2026_season_pass_entitlement"
-				| "horizonsfall2026_season_pass_rank_01"
-				| "horizonsfall2026_season_pass_rank_01_paid"
-				| "horizonsfall2026_season_pass_rank_02"
-				| "horizonsfall2026_season_pass_rank_03"
 				| "september2026_season_pass_entitlement"
 				| "september2026_season_pass_rank_01"
 				| "september2026_season_pass_rank_02"
@@ -133,26 +117,20 @@ export interface EventPassTierSettingsData {
 		};
 		pokemonEncounter?: {
 			isFeaturedPokemon?: boolean;
-			pokemonDisplay?: {
+			pokemonDisplay: {
 				breadModeEnum?: "BREAD_MODE";
 				form:
 					| "ARROKUDA_NORMAL"
 					| "BLIPBUG_NORMAL"
 					| "CAMERUPT_NORMAL"
-					| "CHARMANDER_GOGGLES_2026"
 					| "CINCCINO_NORMAL"
-					| "CROCALOR_NORMAL"
 					| "DRATINI_NORMAL"
 					| "DRILBUR_NORMAL"
-					| "EEVEE_NORMAL"
 					| "ESPURR_NORMAL"
 					| "FERROTHORN_NORMAL"
 					| "FIDOUGH_NORMAL"
 					| "FLITTLE_NORMAL"
-					| "FLORAGATO_NORMAL"
-					| "FUECOCO_NORMAL"
 					| "GOSSIFLEUR_NORMAL"
-					| "HATENNA_NORMAL"
 					| "HONEDGE_NORMAL"
 					| "INKAY_NORMAL"
 					| "KLEAVOR_NORMAL"
@@ -161,17 +139,12 @@ export interface EventPassTierSettingsData {
 					| "NACLI_NORMAL"
 					| "NICKIT_NORMAL"
 					| "ORTHWORM_NORMAL"
-					| "PIKACHU_HORIZONS"
-					| "QUAXLY_NORMAL"
-					| "QUAXWELL_NORMAL"
 					| "ROGGENROLA_NORMAL"
 					| "SHELGON_NORMAL"
 					| "SIZZLIPEDE_NORMAL"
 					| "SNOM_NORMAL"
-					| "SPRIGATITO_NORMAL"
 					| "STARYU_NORMAL"
 					| "VOLTORB_HISUIAN"
-					| "WATTREL_NORMAL"
 					| "WIMPOD_NORMAL"
 					| "YAMPER_NORMAL";
 			};
@@ -179,20 +152,14 @@ export interface EventPassTierSettingsData {
 				| "ARROKUDA"
 				| "BLIPBUG"
 				| "CAMERUPT"
-				| "CHARMANDER"
 				| "CINCCINO"
-				| "CROCALOR"
 				| "DRATINI"
 				| "DRILBUR"
-				| "EEVEE"
 				| "ESPURR"
 				| "FERROTHORN"
 				| "FIDOUGH"
 				| "FLITTLE"
-				| "FLORAGATO"
-				| "FUECOCO"
 				| "GOSSIFLEUR"
-				| "HATENNA"
 				| "HONEDGE"
 				| "INKAY"
 				| "KLEAVOR"
@@ -201,18 +168,12 @@ export interface EventPassTierSettingsData {
 				| "NACLI"
 				| "NICKIT"
 				| "ORTHWORM"
-				| "PIKACHU"
-				| "QUAXLY"
-				| "QUAXWELL"
-				| "ROCKRUFF"
 				| "ROGGENROLA"
 				| "SHELGON"
 				| "SIZZLIPEDE"
 				| "SNOM"
-				| "SPRIGATITO"
 				| "STARYU"
 				| "VOLTORB"
-				| "WATTREL"
 				| "WIMPOD"
 				| "YAMPER";
 			statsLimitsOverride?: {
