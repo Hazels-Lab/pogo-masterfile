@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 34 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 35 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -273,6 +273,15 @@ export type FeatureGateMepEggWriteMigration = S<
 		}
 	>
 >;
+export type FeatureGatePokemonSpawnAvoidanceRework = S<
+	FeatureGate<
+		"POKEMON_SPAWN_AVOIDANCE_REWORK_FEATURE_GATE",
+		{
+			rolloutPercentage: 10;
+			status: 67485911;
+		}
+	>
+>;
 export type FeatureGatePreloadedMegaStatusString = S<
 	FeatureGate<
 		"PRELOADED_MEGA_STATUS_STRING_FEATURE_GATE",
@@ -380,6 +389,7 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateMega2026
 	| FeatureGateMepEggReadMigration
 	| FeatureGateMepEggWriteMigration
+	| FeatureGatePokemonSpawnAvoidanceRework
 	| FeatureGatePreloadedMegaStatusString
 	| FeatureGateRegisterDevice
 	| FeatureGateRemoteTradeImprovements

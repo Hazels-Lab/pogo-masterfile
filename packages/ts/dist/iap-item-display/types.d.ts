@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1077 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1074 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -43,7 +43,6 @@ export interface IapItemDisplayData {
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F9272deab_PGO-MCS_Fall_Marathon_Buddy_Trek_TICKET_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fb8786503_PGO-MCS_GO_Pass_September_2026_TICKET_v1-1024x576.jpg"
-		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe4d25391_PGO-MCS_Phantump_Catch_Mastery_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fec63551c_PGO-MCS_Horizon_Celebration_2026_TICKET_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-entei-shadow-raid-day-2026-nologo.jpg"
 		| "https://storage.googleapis.com/prod-public-images/GBL_SharedSkies_2024.jpeg";
@@ -61,7 +60,6 @@ export interface IapItemDisplayData {
 		| "2026-01-25T23:59:00"
 		| "2026-05-02T17:00:00"
 		| "2026-09-24T20:00:00"
-		| "2026-09-26T20:00:00"
 		| "2026-10-08T10:00:00"
 		| "2026-10-10T17:00:00"
 		| "2026-11-15T20:00:00";
@@ -74,7 +72,6 @@ export interface IapItemDisplayData {
 		| "1769385540000"
 		| "1777741200000"
 		| "1790280000000"
-		| "1790452800000"
 		| "1791453600000"
 		| "1791651600000"
 		| "1794772800000";

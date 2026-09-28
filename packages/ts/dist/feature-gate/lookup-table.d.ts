@@ -27,6 +27,7 @@ import type {
 	FeatureGateMega2026,
 	FeatureGateMepEggReadMigration,
 	FeatureGateMepEggWriteMigration,
+	FeatureGatePokemonSpawnAvoidanceRework,
 	FeatureGatePreloadedMegaStatusString,
 	FeatureGateRegisterDevice,
 	FeatureGateRemoteTradeImprovements,
@@ -64,6 +65,7 @@ export interface FeatureGateLookup {
 	MEGA_2026_FEATURE_GATE: FeatureGateMega2026;
 	MEP_EGG_READ_MIGRATION_FEATURE_GATE: FeatureGateMepEggReadMigration;
 	MEP_EGG_WRITE_MIGRATION_FEATURE_GATE: FeatureGateMepEggWriteMigration;
+	POKEMON_SPAWN_AVOIDANCE_REWORK_FEATURE_GATE: FeatureGatePokemonSpawnAvoidanceRework;
 	PRELOADED_MEGA_STATUS_STRING_FEATURE_GATE: FeatureGatePreloadedMegaStatusString;
 	REGISTER_DEVICE_FEATURE_GATE: FeatureGateRegisterDevice;
 	REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE: FeatureGateRemoteTradeImprovements;

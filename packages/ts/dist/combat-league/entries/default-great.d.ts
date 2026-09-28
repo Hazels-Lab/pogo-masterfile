@@ -16210,10 +16210,6 @@ export type CombatLeagueVsSeekerGreatLittle = S<
 								id: "JANGMO_O";
 							},
 							{
-								forms: ["FORM_UNSET", "MELTAN_NORMAL"];
-								id: "MELTAN";
-							},
-							{
 								forms: ["FORM_UNSET", "SKWOVET_NORMAL"];
 								id: "SKWOVET";
 							},
@@ -16240,9 +16236,6 @@ export type CombatLeagueVsSeekerGreatLittle = S<
 								id: "WIMPOD";
 							},
 							{
-								id: "COSMOG";
-							},
-							{
 								id: "SCATTERBUG";
 							},
 							{
@@ -16261,6 +16254,189 @@ export type CombatLeagueVsSeekerGreatLittle = S<
 							},
 							{
 								id: "CUTIEFLY";
+							},
+							{
+								id: "DUNSPARCE";
+							},
+							{
+								id: "LARVESTA";
+							},
+							{
+								id: "SKIDDO";
+							},
+							{
+								id: "HONEDGE";
+							},
+							{
+								id: "MUDBRAY";
+							},
+							{
+								id: "BOUNSWEET";
+							},
+							{
+								id: "SANDYGAST";
+							},
+							{
+								id: "GROOKEY";
+							},
+							{
+								id: "SCORBUNNY";
+							},
+							{
+								id: "SOBBLE";
+							},
+							{
+								id: "ROOKIDEE";
+							},
+							{
+								id: "BLIPBUG";
+							},
+							{
+								id: "NICKIT";
+							},
+							{
+								id: "GOSSIFLEUR";
+							},
+							{
+								id: "CHEWTLE";
+							},
+							{
+								id: "YAMPER";
+							},
+							{
+								id: "ROLYCOLY";
+							},
+							{
+								id: "APPLIN";
+							},
+							{
+								id: "SILICOBRA";
+							},
+							{
+								id: "ARROKUDA";
+							},
+							{
+								id: "TOXEL";
+							},
+							{
+								id: "SIZZLIPEDE";
+							},
+							{
+								id: "CLOBBOPUS";
+							},
+							{
+								id: "SINISTEA";
+							},
+							{
+								id: "HATENNA";
+							},
+							{
+								id: "IMPIDIMP";
+							},
+							{
+								id: "MILCERY";
+							},
+							{
+								id: "SNOM";
+							},
+							{
+								id: "CUFANT";
+							},
+							{
+								id: "DREEPY";
+							},
+							{
+								id: "SPRIGATITO";
+							},
+							{
+								id: "FUECOCO";
+							},
+							{
+								id: "QUAXLY";
+							},
+							{
+								id: "LECHONK";
+							},
+							{
+								id: "TAROUNTULA";
+							},
+							{
+								id: "NYMBLE";
+							},
+							{
+								id: "PAWMI";
+							},
+							{
+								id: "TANDEMAUS";
+							},
+							{
+								id: "FIDOUGH";
+							},
+							{
+								id: "SMOLIV";
+							},
+							{
+								id: "NACLI";
+							},
+							{
+								id: "CHARCADET";
+							},
+							{
+								id: "TADBULB";
+							},
+							{
+								id: "WATTREL";
+							},
+							{
+								id: "MASCHIFF";
+							},
+							{
+								id: "SHROODLE";
+							},
+							{
+								id: "BRAMBLIN";
+							},
+							{
+								id: "TOEDSCOOL";
+							},
+							{
+								id: "CAPSAKID";
+							},
+							{
+								id: "RELLOR";
+							},
+							{
+								id: "FLITTLE";
+							},
+							{
+								id: "TINKATINK";
+							},
+							{
+								id: "WIGLETT";
+							},
+							{
+								id: "FINIZEN";
+							},
+							{
+								id: "VAROOM";
+							},
+							{
+								id: "GLIMMET";
+							},
+							{
+								id: "GREAVARD";
+							},
+							{
+								id: "CETODDLE";
+							},
+							{
+								id: "FRIGIBAX";
+							},
+							{
+								id: "GIMMIGHOUL";
+							},
+							{
+								id: "POLTCHAGEIST";
 							},
 						];
 					};
