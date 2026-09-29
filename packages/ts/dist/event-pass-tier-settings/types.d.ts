@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 400 entries (structural types).
+// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 520 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -14,12 +14,15 @@ export type EventPassTierSettingsType = W<EventPassTierSettings>;
 export interface EventPassTierSettingsData {
 	activeBonusDisplaySettings?: {
 		bonusBoxes: Array<{
-			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "TRADE";
+			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "LURE_MODULE" | "SPAWN_UNKNOWN" | "TEAM_ROCKET" | "TRADE";
 			text:
+				| "applin_apple_drop_bonus"
+				| "bonus_tgr_stardust"
 				| "dai_duration_double"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
 				| "gift_storage_more"
+				| "mossy_lure_duration_double"
 				| "season_pass_bonus_hatch_xp_stardust"
 				| "trade_extra_candy"
 				| "trade_guaranteed_candyxl";
@@ -28,12 +31,15 @@ export interface EventPassTierSettingsData {
 	};
 	bonusSettings?: {
 		bonusBoxes: Array<{
-			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "TRADE";
+			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "LURE_MODULE" | "SPAWN_UNKNOWN" | "TEAM_ROCKET" | "TRADE";
 			text:
+				| "applin_apple_drop_bonus"
+				| "bonus_tgr_stardust"
 				| "dai_duration_double"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
 				| "gift_storage_more"
+				| "mossy_lure_duration_double"
 				| "season_pass_bonus_hatch_xp_stardust"
 				| "trade_extra_candy"
 				| "trade_guaranteed_candyxl";
@@ -51,6 +57,7 @@ export interface EventPassTierSettingsData {
 		candy?: {
 			amount: number;
 			pokemonId:
+				| "APPLIN"
 				| "ARROKUDA"
 				| "BAGON"
 				| "BLIPBUG"
@@ -83,6 +90,7 @@ export interface EventPassTierSettingsData {
 		item?: {
 			amount: number;
 			item:
+				| "ITEM_GIOVANNI_MAP"
 				| "ITEM_GOLDEN_PINAP_BERRY"
 				| "ITEM_GOLDEN_RAZZ_BERRY"
 				| "ITEM_GREAT_BALL"
@@ -96,6 +104,9 @@ export interface EventPassTierSettingsData {
 				| "ITEM_MOVE_REROLL_SPECIAL_ATTACK"
 				| "ITEM_MP"
 				| "ITEM_NANAB_BERRY"
+				| "ITEM_OTHER_EVOLUTION_STONE_MAPLE_A"
+				| "ITEM_OTHER_EVOLUTION_STONE_MAPLE_B"
+				| "ITEM_OTHER_EVOLUTION_STONE_MAPLE_C"
 				| "ITEM_PAID_RAID_TICKET"
 				| "ITEM_POFFIN"
 				| "ITEM_POKE_BALL"
@@ -103,12 +114,17 @@ export interface EventPassTierSettingsData {
 				| "ITEM_RAZZ_BERRY"
 				| "ITEM_STAR_PIECE"
 				| "ITEM_TROY_DISK"
+				| "ITEM_TROY_DISK_MOSSY"
 				| "ITEM_ULTRA_BALL"
 				| "ITEM_XL_RARE_CANDY";
 		};
 		playerAttribute?: {
 			durationMins: number;
 			key:
+				| "harvestfestival2026_season_pass_entitlement"
+				| "harvestfestival2026_season_pass_rank_01"
+				| "harvestfestival2026_season_pass_rank_02"
+				| "harvestfestival2026_season_pass_rank_03"
 				| "september2026_season_pass_entitlement"
 				| "september2026_season_pass_rank_01"
 				| "september2026_season_pass_rank_02"
@@ -119,59 +135,76 @@ export interface EventPassTierSettingsData {
 			isFeaturedPokemon?: boolean;
 			pokemonDisplay: {
 				breadModeEnum?: "BREAD_MODE";
+				costume?: "SPRING_2024";
 				form:
+					| "APPLIN_NORMAL"
 					| "ARROKUDA_NORMAL"
 					| "BLIPBUG_NORMAL"
 					| "CAMERUPT_NORMAL"
 					| "CINCCINO_NORMAL"
+					| "COTTONEE_NORMAL"
 					| "DRATINI_NORMAL"
 					| "DRILBUR_NORMAL"
 					| "ESPURR_NORMAL"
 					| "FERROTHORN_NORMAL"
 					| "FIDOUGH_NORMAL"
 					| "FLITTLE_NORMAL"
+					| "FOONGUS_NORMAL"
 					| "GOSSIFLEUR_NORMAL"
 					| "HONEDGE_NORMAL"
 					| "INKAY_NORMAL"
 					| "KLEAVOR_NORMAL"
 					| "LATIOS_NORMAL"
+					| "LECHONK_NORMAL"
 					| "LILLIPUP_NORMAL"
 					| "NACLI_NORMAL"
 					| "NICKIT_NORMAL"
 					| "ORTHWORM_NORMAL"
 					| "ROGGENROLA_NORMAL"
 					| "SHELGON_NORMAL"
+					| "SHROOMISH_NORMAL"
 					| "SIZZLIPEDE_NORMAL"
+					| "SKIDDO_NORMAL"
+					| "SMOLIV_NORMAL"
 					| "SNOM_NORMAL"
+					| "SNORLAX_NORMAL"
 					| "STARYU_NORMAL"
 					| "VOLTORB_HISUIAN"
 					| "WIMPOD_NORMAL"
 					| "YAMPER_NORMAL";
 			};
 			pokemonId:
+				| "APPLIN"
 				| "ARROKUDA"
 				| "BLIPBUG"
 				| "CAMERUPT"
 				| "CINCCINO"
+				| "COTTONEE"
 				| "DRATINI"
 				| "DRILBUR"
 				| "ESPURR"
 				| "FERROTHORN"
 				| "FIDOUGH"
 				| "FLITTLE"
+				| "FOONGUS"
 				| "GOSSIFLEUR"
 				| "HONEDGE"
 				| "INKAY"
 				| "KLEAVOR"
 				| "LATIOS"
+				| "LECHONK"
 				| "LILLIPUP"
 				| "NACLI"
 				| "NICKIT"
 				| "ORTHWORM"
 				| "ROGGENROLA"
 				| "SHELGON"
+				| "SHROOMISH"
 				| "SIZZLIPEDE"
+				| "SKIDDO"
+				| "SMOLIV"
 				| "SNOM"
+				| "SNORLAX"
 				| "STARYU"
 				| "VOLTORB"
 				| "WIMPOD"

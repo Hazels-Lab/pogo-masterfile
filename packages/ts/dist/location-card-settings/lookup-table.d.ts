@@ -169,6 +169,7 @@ import type {
 	LocationCardSettingsPokelidMie,
 	LocationCardSettingsPokelidMiyagi,
 	LocationCardSettingsPokelidMiyazaki,
+	LocationCardSettingsPokelidNagano,
 	LocationCardSettingsPokelidNagasaki,
 	LocationCardSettingsPokelidNara,
 	LocationCardSettingsPokelidNiigata,
@@ -432,6 +433,7 @@ export interface LocationCardSettingsLookup {
 	LC_POKELID_MIE: LocationCardSettingsPokelidMie;
 	LC_POKELID_MIYAGI: LocationCardSettingsPokelidMiyagi;
 	LC_POKELID_MIYAZAKI: LocationCardSettingsPokelidMiyazaki;
+	LC_POKELID_NAGANO: LocationCardSettingsPokelidNagano;
 	LC_POKELID_NAGASAKI: LocationCardSettingsPokelidNagasaki;
 	LC_POKELID_NARA: LocationCardSettingsPokelidNara;
 	LC_POKELID_NIIGATA: LocationCardSettingsPokelidNiigata;

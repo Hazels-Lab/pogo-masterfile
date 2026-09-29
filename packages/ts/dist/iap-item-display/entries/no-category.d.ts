@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 20 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 21 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -38,23 +38,6 @@ export type IapItemDisplayEventPassSeptember1EventStoreRedirect = S<
 			skuEnableTimeUtcMs: "1757325600000";
 			sortOrder: 1;
 			title: "season_pass_premium_track_title_mega_squads_2026";
-		}
-	>
->;
-export type IapItemDisplayEventPassSeptember3EventStoreRedirect = S<
-	IapItemDisplay<
-		"EVENT_PASS_SEPTEMBER3_EVENT_STORE_REDIRECT",
-		{
-			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
-			hidden: true;
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F3cd7734c_PGO-MCS_Harvest_Festival_2026_TICKET_v1-1024x512_nologo.png";
-			sku: "pgorelease.september3_2026_deluxe_event_pass_track_unlock_redirect";
-			skuDisableTime: "2025-10-07T20:00:00";
-			skuDisableTimeUtcMs: "1759867200000";
-			skuEnableTime: "2025-09-29T10:00:00";
-			skuEnableTimeUtcMs: "1759140000000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_title_harvest_festival_2026";
 		}
 	>
 >;
@@ -206,6 +189,38 @@ export type IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlockRedi
 		}
 	>
 >;
+export type IapItemDisplayPgoreleaseSeptember32026DeluxeEventPassTrackUnlock = S<
+	IapItemDisplay<
+		"pgorelease.september3_2026_deluxe_event_pass_track_unlock",
+		{
+			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F3cd7734c_PGO-MCS_Harvest_Festival_2026_TICKET_v1-1024x512_nologo.png";
+			sku: "pgorelease.september3_2026_deluxe_event_pass_track_unlock";
+			skuDisableTime: "2026-10-07T20:00:00";
+			skuDisableTimeUtcMs: "1791403200000";
+			skuEnableTime: "2025-09-29T10:00:00";
+			skuEnableTimeUtcMs: "1759140000000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_harvest_festival_2026";
+		}
+	>
+>;
+export type IapItemDisplayPgoreleaseSeptember32026DeluxeEventPassTrackUnlockPlusPoints = S<
+	IapItemDisplay<
+		"pgorelease.september3_2026_deluxe_event_pass_track_unlock_plus_points",
+		{
+			description: "event_pass_plus_points_6_ranks_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F3cd7734c_PGO-MCS_Harvest_Festival_2026_TICKET_v1-1024x512_nologo.png";
+			sku: "pgorelease.september3_2026_deluxe_event_pass_track_unlock_plus_points";
+			skuDisableTime: "2026-10-07T20:00:00";
+			skuDisableTimeUtcMs: "1791403200000";
+			skuEnableTime: "2025-09-29T10:00:00";
+			skuEnableTimeUtcMs: "1759140000000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_plus_six_ranks_title_harvest_festival_2026";
+		}
+	>
+>;
 export type IapItemDisplaySeptember12026DeluxeEventPassTrackUnlock = S<
 	IapItemDisplay<
 		"SEPTEMBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK",
@@ -279,11 +294,10 @@ export type IapItemDisplaySeptember32026DeluxeEventPassTrackUnlock = S<
 		"SEPTEMBER3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK",
 		{
 			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
-			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F3cd7734c_PGO-MCS_Harvest_Festival_2026_TICKET_v1-1024x512_nologo.png";
 			sku: "pgorelease.september3_2026_deluxe_event_pass_track_unlock";
-			skuDisableTime: "2025-10-07T20:00:00";
-			skuDisableTimeUtcMs: "1759867200000";
+			skuDisableTime: "2026-10-07T20:00:00";
+			skuDisableTimeUtcMs: "1791403200000";
 			skuEnableTime: "2025-09-29T10:00:00";
 			skuEnableTimeUtcMs: "1759140000000";
 			sortOrder: 1;
@@ -296,11 +310,10 @@ export type IapItemDisplaySeptember32026DeluxeEventPassTrackUnlockPlusPoints = S
 		"SEPTEMBER3_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS",
 		{
 			description: "event_pass_plus_points_6_ranks_description";
-			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F3cd7734c_PGO-MCS_Harvest_Festival_2026_TICKET_v1-1024x512_nologo.png";
 			sku: "pgorelease.september3_2026_deluxe_event_pass_track_unlock_plus_points";
-			skuDisableTime: "2025-10-07T20:00:00";
-			skuDisableTimeUtcMs: "1759867200000";
+			skuDisableTime: "2026-10-07T20:00:00";
+			skuDisableTimeUtcMs: "1791403200000";
 			skuEnableTime: "2025-09-29T10:00:00";
 			skuEnableTimeUtcMs: "1759140000000";
 			sortOrder: 1;
@@ -313,7 +326,6 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayBundleEc200Rpp1
 	| IapItemDisplayBundleEc600Rpp3
 	| IapItemDisplayEventPassSeptember1EventStoreRedirect
-	| IapItemDisplayEventPassSeptember3EventStoreRedirect
 	| IapItemDisplayMonth1DeluxeEventPassTrackUnlock
 	| IapItemDisplayMonth1DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayMpReplenishRrp1
@@ -324,6 +336,8 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayPgoreleaseMonth1DeluxeEventPassTrackUnlock
 	| IapItemDisplayPgoreleaseMonth1DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlockRedirect
+	| IapItemDisplayPgoreleaseSeptember32026DeluxeEventPassTrackUnlock
+	| IapItemDisplayPgoreleaseSeptember32026DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplaySeptember12026DeluxeEventPassTrackUnlock
 	| IapItemDisplaySeptember12026DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplaySeptember22026DeluxeEventPassTrackUnlock

@@ -9,6 +9,8 @@ use serde::{Deserialize, Serialize};
 pub enum FeatureGateTemplateId {
     #[serde(rename = "ADMIN_GM_NIA_OPS_ONLY_FILTER_AMS_FEATURE_GATE")]
     AdminGmNiaOpsOnlyFilterAmsFeatureGate,
+    #[serde(rename = "ADV_SYNC_TWO_FEATURE_GATE")]
+    AdvSyncTwoFeatureGate,
     #[serde(rename = "AMS_FEATURE_GATE")]
     AmsFeatureGate,
     #[serde(rename = "AMS_FRONTEND_FEATURE_GATE")]
@@ -17,10 +19,6 @@ pub enum FeatureGateTemplateId {
     CombatSuppressFastMovePredictionsOnSwapFeatureGate,
     #[serde(rename = "COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE")]
     CombatVnextInitializeBdLastFeatureGate,
-    #[serde(rename = "DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE")]
-    DisableLegacyNearbyPokemonFeatureGate,
-    #[serde(rename = "ENABLE_NEARBY_POKEMON_SNAPSHOT_FEATURE_GATE")]
-    EnableNearbyPokemonSnapshotFeatureGate,
     #[serde(rename = "ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE")]
     EnablePvpChallengeSpannerFeatureGate,
     #[serde(rename = "ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE")]

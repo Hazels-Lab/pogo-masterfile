@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 4 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 5 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -17,6 +17,23 @@ export type IapItemDisplayEventPassMonth1SeasonStoreRedirect = S<
 			skuEnableTimeUtcMs: "1748858400000";
 			sortOrder: 1;
 			title: "season_pass_premium_track_title_sep";
+		}
+	>
+>;
+export type IapItemDisplayEventPassSeptember3EventStoreRedirect = S<
+	IapItemDisplay<
+		"EVENT_PASS_SEPTEMBER3_EVENT_STORE_REDIRECT",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F3cd7734c_PGO-MCS_Harvest_Festival_2026_TICKET_v1-1024x512_nologo.png";
+			sku: "pgorelease.september3_2026_deluxe_event_pass_track_unlock_redirect";
+			skuDisableTime: "2026-10-07T20:00:00";
+			skuDisableTimeUtcMs: "1791403200000";
+			skuEnableTime: "2025-09-29T10:00:00";
+			skuEnableTimeUtcMs: "1759140000000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_harvest_festival_2026";
 		}
 	>
 >;
@@ -82,6 +99,7 @@ export type IapItemDisplayGeneral2Ticket11 = S<
 
 export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayEventPassMonth1SeasonStoreRedirect
+	| IapItemDisplayEventPassSeptember3EventStoreRedirect
 	| IapItemDisplayGeneral1Ticket5
 	| IapItemDisplayGeneral2Ticket3
 	| IapItemDisplayGeneral2Ticket11;

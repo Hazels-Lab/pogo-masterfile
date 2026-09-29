@@ -713,6 +713,10 @@ pub enum IapItemDisplayTemplateId {
     PgoreleasePokecoin21375,
     #[serde(rename = "pgorelease.september2_2026_deluxe_event_pass_track_unlock_redirect")]
     PgoreleaseSeptember22026DeluxeEventPassTrackUnlockRedirect,
+    #[serde(rename = "pgorelease.september3_2026_deluxe_event_pass_track_unlock")]
+    PgoreleaseSeptember32026DeluxeEventPassTrackUnlock,
+    #[serde(rename = "pgorelease.september3_2026_deluxe_event_pass_track_unlock_plus_points")]
+    PgoreleaseSeptember32026DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "poffin")]
     Poffin,
     #[serde(rename = "pokeball.20")]

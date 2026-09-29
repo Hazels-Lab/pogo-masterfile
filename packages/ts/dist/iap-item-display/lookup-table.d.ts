@@ -354,6 +354,8 @@ import type {
 	IapItemDisplayPgoreleasePokecoin15950,
 	IapItemDisplayPgoreleasePokecoin21375,
 	IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlockRedirect,
+	IapItemDisplayPgoreleaseSeptember32026DeluxeEventPassTrackUnlock,
+	IapItemDisplayPgoreleaseSeptember32026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayPoffin,
 	IapItemDisplayPokeball20,
 	IapItemDisplayPokeball100,
@@ -1431,6 +1433,8 @@ export interface IapItemDisplayLookup {
 	"pgorelease.pokecoin.15950": IapItemDisplayPgoreleasePokecoin15950;
 	"pgorelease.pokecoin.21375": IapItemDisplayPgoreleasePokecoin21375;
 	"pgorelease.september2_2026_deluxe_event_pass_track_unlock_redirect": IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlockRedirect;
+	"pgorelease.september3_2026_deluxe_event_pass_track_unlock": IapItemDisplayPgoreleaseSeptember32026DeluxeEventPassTrackUnlock;
+	"pgorelease.september3_2026_deluxe_event_pass_track_unlock_plus_points": IapItemDisplayPgoreleaseSeptember32026DeluxeEventPassTrackUnlockPlusPoints;
 	poffin: IapItemDisplayPoffin;
 	"pokeball.20": IapItemDisplayPokeball20;
 	"pokeball.100": IapItemDisplayPokeball100;

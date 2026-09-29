@@ -6,12 +6,11 @@ type FeatureGateTemplateID string
 
 const (
 	FeatureGateTemplateIDAdminGmNiaOpsOnlyFilterAmsFeatureGate              FeatureGateTemplateID = "ADMIN_GM_NIA_OPS_ONLY_FILTER_AMS_FEATURE_GATE"
+	FeatureGateTemplateIDAdvSyncTwoFeatureGate                              FeatureGateTemplateID = "ADV_SYNC_TWO_FEATURE_GATE"
 	FeatureGateTemplateIDAmsFeatureGate                                     FeatureGateTemplateID = "AMS_FEATURE_GATE"
 	FeatureGateTemplateIDAmsFrontendFeatureGate                             FeatureGateTemplateID = "AMS_FRONTEND_FEATURE_GATE"
 	FeatureGateTemplateIDCombatSuppressFastMovePredictionsOnSwapFeatureGate FeatureGateTemplateID = "COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE"
 	FeatureGateTemplateIDCombatVnextInitializeBdLastFeatureGate             FeatureGateTemplateID = "COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE"
-	FeatureGateTemplateIDDisableLegacyNearbyPokemonFeatureGate              FeatureGateTemplateID = "DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE"
-	FeatureGateTemplateIDEnableNearbyPokemonSnapshotFeatureGate             FeatureGateTemplateID = "ENABLE_NEARBY_POKEMON_SNAPSHOT_FEATURE_GATE"
 	FeatureGateTemplateIDEnablePvpChallengeSpannerFeatureGate               FeatureGateTemplateID = "ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE"
 	FeatureGateTemplateIDEnhancedCurrencyOverflowStardustFeatureGate        FeatureGateTemplateID = "ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE"
 	FeatureGateTemplateIDEnhancedMegaRaidReadyCheckFeatureGate              FeatureGateTemplateID = "ENHANCED_MEGA_RAID_READY_CHECK_FEATURE_GATE"
@@ -44,12 +43,11 @@ const (
 
 var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDAdminGmNiaOpsOnlyFilterAmsFeatureGate,
+	FeatureGateTemplateIDAdvSyncTwoFeatureGate,
 	FeatureGateTemplateIDAmsFeatureGate,
 	FeatureGateTemplateIDAmsFrontendFeatureGate,
 	FeatureGateTemplateIDCombatSuppressFastMovePredictionsOnSwapFeatureGate,
 	FeatureGateTemplateIDCombatVnextInitializeBdLastFeatureGate,
-	FeatureGateTemplateIDDisableLegacyNearbyPokemonFeatureGate,
-	FeatureGateTemplateIDEnableNearbyPokemonSnapshotFeatureGate,
 	FeatureGateTemplateIDEnablePvpChallengeSpannerFeatureGate,
 	FeatureGateTemplateIDEnhancedCurrencyOverflowStardustFeatureGate,
 	FeatureGateTemplateIDEnhancedMegaRaidReadyCheckFeatureGate,

@@ -52,7 +52,6 @@ import type {
 	EncounterSettings,
 	ErrorReportingSettings,
 	EventMapRefreshSettings,
-	EventPassSettings,
 	EventPlannerPopularNotificationSettings,
 	ExternalAddressableAssetsSettings,
 	FeatureUnlockLevelSettings,
@@ -79,6 +78,7 @@ import type {
 	LuckyPokemonSettings,
 	MainMenuChanges,
 	MapDisplaySettings,
+	MapObjectCollisionAvoidanceSettings,
 	MapObjectsInteractionRangeSettings,
 	MegaEvoSettings,
 	MonodepthSettings,
@@ -200,7 +200,6 @@ export interface SingletonsLookup {
 	EGG_HATCH_IMPROVEMENTS_SETTINGS: EggHatchImprovementsSettings;
 	ENCOUNTER_SETTINGS: EncounterSettings;
 	ERROR_REPORTING_SETTINGS_PRE_LOGIN: ErrorReportingSettings;
-	EVENT_PASS_SEPTEMBER2026_SEASON: EventPassSettings;
 	EVENT_PLANNER_POPULAR_RAID_RSVP_SETTINGS: EventPlannerPopularNotificationSettings;
 	EVENT_PLANNER_SETTINGS: PlannerSettings;
 	EVENT_SERVER_SETTINGS: EventMapRefreshSettings;
@@ -228,6 +227,7 @@ export interface SingletonsLookup {
 	LUCKY_POKEMON_SETTINGS: LuckyPokemonSettings;
 	MAIN_MENU_CAMERA_BUTTON_SETTINGS: MainMenuChanges;
 	MAP_DISPLAY_SETTINGS: MapDisplaySettings;
+	MAP_OBJECT_COLLISION_AVOIDANCE_SETTINGS: MapObjectCollisionAvoidanceSettings;
 	MAP_OBJECTS_INTERACTION_RANGE_SETTINGS: MapObjectsInteractionRangeSettings;
 	MEGA_EVO_SETTINGS: MegaEvoSettings;
 	MONODEPTH_SETTINGS: MonodepthSettings;
