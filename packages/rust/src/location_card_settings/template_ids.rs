@@ -343,6 +343,8 @@ pub enum LocationCardSettingsTemplateId {
     LcPokelidMiyagi,
     #[serde(rename = "LC_POKELID_MIYAZAKI")]
     LcPokelidMiyazaki,
+    #[serde(rename = "LC_POKELID_NAGANO")]
+    LcPokelidNagano,
     #[serde(rename = "LC_POKELID_NAGASAKI")]
     LcPokelidNagasaki,
     #[serde(rename = "LC_POKELID_NARA")]

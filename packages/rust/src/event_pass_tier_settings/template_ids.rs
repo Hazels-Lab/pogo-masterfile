@@ -7,6 +7,246 @@ use serde::{Deserialize, Serialize};
     Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum,
 )]
 pub enum EventPassTierSettingsTemplateId {
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_1_FREE")]
+    EventPassHarvestfestival2026Event1Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_1_PREMIUM")]
+    EventPassHarvestfestival2026Event1Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_2_FREE")]
+    EventPassHarvestfestival2026Event2Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_2_PREMIUM")]
+    EventPassHarvestfestival2026Event2Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_3_FREE")]
+    EventPassHarvestfestival2026Event3Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_3_PREMIUM")]
+    EventPassHarvestfestival2026Event3Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_4_FREE")]
+    EventPassHarvestfestival2026Event4Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_4_PREMIUM")]
+    EventPassHarvestfestival2026Event4Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_5_FREE")]
+    EventPassHarvestfestival2026Event5Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_5_PREMIUM")]
+    EventPassHarvestfestival2026Event5Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_6_FREE")]
+    EventPassHarvestfestival2026Event6Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_6_PREMIUM")]
+    EventPassHarvestfestival2026Event6Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_7_FREE")]
+    EventPassHarvestfestival2026Event7Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_7_PREMIUM")]
+    EventPassHarvestfestival2026Event7Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_8_FREE")]
+    EventPassHarvestfestival2026Event8Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_8_PREMIUM")]
+    EventPassHarvestfestival2026Event8Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_9_FREE")]
+    EventPassHarvestfestival2026Event9Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_9_PREMIUM")]
+    EventPassHarvestfestival2026Event9Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_10_FREE")]
+    EventPassHarvestfestival2026Event10Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_10_PREMIUM")]
+    EventPassHarvestfestival2026Event10Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_11_FREE")]
+    EventPassHarvestfestival2026Event11Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_11_PREMIUM")]
+    EventPassHarvestfestival2026Event11Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_12_FREE")]
+    EventPassHarvestfestival2026Event12Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_12_PREMIUM")]
+    EventPassHarvestfestival2026Event12Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_13_FREE")]
+    EventPassHarvestfestival2026Event13Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_13_PREMIUM")]
+    EventPassHarvestfestival2026Event13Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_14_FREE")]
+    EventPassHarvestfestival2026Event14Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_14_PREMIUM")]
+    EventPassHarvestfestival2026Event14Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_15_FREE")]
+    EventPassHarvestfestival2026Event15Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_15_PREMIUM")]
+    EventPassHarvestfestival2026Event15Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_16_FREE")]
+    EventPassHarvestfestival2026Event16Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_16_PREMIUM")]
+    EventPassHarvestfestival2026Event16Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_17_FREE")]
+    EventPassHarvestfestival2026Event17Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_17_PREMIUM")]
+    EventPassHarvestfestival2026Event17Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_18_FREE")]
+    EventPassHarvestfestival2026Event18Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_18_PREMIUM")]
+    EventPassHarvestfestival2026Event18Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_19_FREE")]
+    EventPassHarvestfestival2026Event19Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_19_PREMIUM")]
+    EventPassHarvestfestival2026Event19Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_20_FREE")]
+    EventPassHarvestfestival2026Event20Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_20_PREMIUM")]
+    EventPassHarvestfestival2026Event20Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_21_FREE")]
+    EventPassHarvestfestival2026Event21Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_21_PREMIUM")]
+    EventPassHarvestfestival2026Event21Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_22_FREE")]
+    EventPassHarvestfestival2026Event22Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_22_PREMIUM")]
+    EventPassHarvestfestival2026Event22Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_23_FREE")]
+    EventPassHarvestfestival2026Event23Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_23_PREMIUM")]
+    EventPassHarvestfestival2026Event23Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_24_FREE")]
+    EventPassHarvestfestival2026Event24Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_24_PREMIUM")]
+    EventPassHarvestfestival2026Event24Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_25_FREE")]
+    EventPassHarvestfestival2026Event25Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_25_PREMIUM")]
+    EventPassHarvestfestival2026Event25Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_26_FREE")]
+    EventPassHarvestfestival2026Event26Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_26_PREMIUM")]
+    EventPassHarvestfestival2026Event26Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_27_FREE")]
+    EventPassHarvestfestival2026Event27Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_27_PREMIUM")]
+    EventPassHarvestfestival2026Event27Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_28_FREE")]
+    EventPassHarvestfestival2026Event28Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_28_PREMIUM")]
+    EventPassHarvestfestival2026Event28Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_29_FREE")]
+    EventPassHarvestfestival2026Event29Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_29_PREMIUM")]
+    EventPassHarvestfestival2026Event29Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_30_FREE")]
+    EventPassHarvestfestival2026Event30Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_30_PREMIUM")]
+    EventPassHarvestfestival2026Event30Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_31_FREE")]
+    EventPassHarvestfestival2026Event31Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_31_PREMIUM")]
+    EventPassHarvestfestival2026Event31Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_32_FREE")]
+    EventPassHarvestfestival2026Event32Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_32_PREMIUM")]
+    EventPassHarvestfestival2026Event32Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_33_FREE")]
+    EventPassHarvestfestival2026Event33Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_33_PREMIUM")]
+    EventPassHarvestfestival2026Event33Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_34_FREE")]
+    EventPassHarvestfestival2026Event34Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_34_PREMIUM")]
+    EventPassHarvestfestival2026Event34Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_35_FREE")]
+    EventPassHarvestfestival2026Event35Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_35_PREMIUM")]
+    EventPassHarvestfestival2026Event35Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_36_FREE")]
+    EventPassHarvestfestival2026Event36Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_36_PREMIUM")]
+    EventPassHarvestfestival2026Event36Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_37_FREE")]
+    EventPassHarvestfestival2026Event37Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_37_PREMIUM")]
+    EventPassHarvestfestival2026Event37Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_38_FREE")]
+    EventPassHarvestfestival2026Event38Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_38_PREMIUM")]
+    EventPassHarvestfestival2026Event38Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_39_FREE")]
+    EventPassHarvestfestival2026Event39Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_39_PREMIUM")]
+    EventPassHarvestfestival2026Event39Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_40_FREE")]
+    EventPassHarvestfestival2026Event40Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_40_PREMIUM")]
+    EventPassHarvestfestival2026Event40Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_41_FREE")]
+    EventPassHarvestfestival2026Event41Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_41_PREMIUM")]
+    EventPassHarvestfestival2026Event41Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_42_FREE")]
+    EventPassHarvestfestival2026Event42Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_42_PREMIUM")]
+    EventPassHarvestfestival2026Event42Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_43_FREE")]
+    EventPassHarvestfestival2026Event43Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_43_PREMIUM")]
+    EventPassHarvestfestival2026Event43Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_44_FREE")]
+    EventPassHarvestfestival2026Event44Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_44_PREMIUM")]
+    EventPassHarvestfestival2026Event44Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_45_FREE")]
+    EventPassHarvestfestival2026Event45Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_45_PREMIUM")]
+    EventPassHarvestfestival2026Event45Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_46_FREE")]
+    EventPassHarvestfestival2026Event46Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_46_PREMIUM")]
+    EventPassHarvestfestival2026Event46Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_47_FREE")]
+    EventPassHarvestfestival2026Event47Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_47_PREMIUM")]
+    EventPassHarvestfestival2026Event47Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_48_FREE")]
+    EventPassHarvestfestival2026Event48Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_48_PREMIUM")]
+    EventPassHarvestfestival2026Event48Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_49_FREE")]
+    EventPassHarvestfestival2026Event49Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_49_PREMIUM")]
+    EventPassHarvestfestival2026Event49Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_50_FREE")]
+    EventPassHarvestfestival2026Event50Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_50_PREMIUM")]
+    EventPassHarvestfestival2026Event50Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_51_FREE")]
+    EventPassHarvestfestival2026Event51Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_51_PREMIUM")]
+    EventPassHarvestfestival2026Event51Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_52_FREE")]
+    EventPassHarvestfestival2026Event52Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_52_PREMIUM")]
+    EventPassHarvestfestival2026Event52Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_53_FREE")]
+    EventPassHarvestfestival2026Event53Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_53_PREMIUM")]
+    EventPassHarvestfestival2026Event53Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_54_FREE")]
+    EventPassHarvestfestival2026Event54Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_54_PREMIUM")]
+    EventPassHarvestfestival2026Event54Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_55_FREE")]
+    EventPassHarvestfestival2026Event55Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_55_PREMIUM")]
+    EventPassHarvestfestival2026Event55Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_56_FREE")]
+    EventPassHarvestfestival2026Event56Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_56_PREMIUM")]
+    EventPassHarvestfestival2026Event56Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_57_FREE")]
+    EventPassHarvestfestival2026Event57Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_57_PREMIUM")]
+    EventPassHarvestfestival2026Event57Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_58_FREE")]
+    EventPassHarvestfestival2026Event58Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_58_PREMIUM")]
+    EventPassHarvestfestival2026Event58Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_59_FREE")]
+    EventPassHarvestfestival2026Event59Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_59_PREMIUM")]
+    EventPassHarvestfestival2026Event59Premium,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_60_FREE")]
+    EventPassHarvestfestival2026Event60Free,
+    #[serde(rename = "EVENT_PASS_HARVESTFESTIVAL2026_EVENT_60_PREMIUM")]
+    EventPassHarvestfestival2026Event60Premium,
     #[serde(rename = "EVENT_PASS_SEPTEMBER2026_SEASON_1_FREE")]
     EventPassSeptember2026Season1Free,
     #[serde(rename = "EVENT_PASS_SEPTEMBER2026_SEASON_1_PREMIUM")]

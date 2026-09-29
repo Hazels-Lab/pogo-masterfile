@@ -53,7 +53,6 @@ import type {
 	EncounterSettings,
 	ErrorReportingSettings,
 	EventMapRefreshSettings,
-	EventPassSettings,
 	EventPlannerPopularNotificationSettings,
 	ExternalAddressableAssetsSettings,
 	FeatureUnlockLevelSettings,
@@ -80,6 +79,7 @@ import type {
 	LuckyPokemonSettings,
 	MainMenuChanges,
 	MapDisplaySettings,
+	MapObjectCollisionAvoidanceSettings,
 	MapObjectsInteractionRangeSettings,
 	MegaEvoSettings,
 	MonodepthSettings,
@@ -201,7 +201,6 @@ export type EggHatchImprovementsSettingsType = W<EggHatchImprovementsSettings>;
 export type EncounterSettingsType = W<EncounterSettings>;
 export type ErrorReportingSettingsType = W<ErrorReportingSettings>;
 export type EventMapRefreshSettingsType = W<EventMapRefreshSettings>;
-export type EventPassSettingsType = W<EventPassSettings>;
 export type EventPlannerPopularNotificationSettingsType = W<EventPlannerPopularNotificationSettings>;
 export type ExternalAddressableAssetsSettingsType = W<ExternalAddressableAssetsSettings>;
 export type FeatureUnlockLevelSettingsType = W<FeatureUnlockLevelSettings>;
@@ -228,6 +227,7 @@ export type LocationCardFeatureSettingsType = W<LocationCardFeatureSettings>;
 export type LuckyPokemonSettingsType = W<LuckyPokemonSettings>;
 export type MainMenuChangesType = W<MainMenuChanges>;
 export type MapDisplaySettingsType = W<MapDisplaySettings>;
+export type MapObjectCollisionAvoidanceSettingsType = W<MapObjectCollisionAvoidanceSettings>;
 export type MapObjectsInteractionRangeSettingsType = W<MapObjectsInteractionRangeSettings>;
 export type MegaEvoSettingsType = W<MegaEvoSettings>;
 export type MonodepthSettingsType = W<MonodepthSettings>;
@@ -349,7 +349,6 @@ export type Singletons =
 	| EncounterSettingsType
 	| ErrorReportingSettingsType
 	| EventMapRefreshSettingsType
-	| EventPassSettingsType
 	| EventPlannerPopularNotificationSettingsType
 	| ExternalAddressableAssetsSettingsType
 	| FeatureUnlockLevelSettingsType
@@ -376,6 +375,7 @@ export type Singletons =
 	| LuckyPokemonSettingsType
 	| MainMenuChangesType
 	| MapDisplaySettingsType
+	| MapObjectCollisionAvoidanceSettingsType
 	| MapObjectsInteractionRangeSettingsType
 	| MegaEvoSettingsType
 	| MonodepthSettingsType

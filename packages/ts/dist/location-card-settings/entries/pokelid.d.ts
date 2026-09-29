@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "locationCardSettings", split "pokelid", 41 entries.
+// Generated from Pokémon GO masterfile — group "locationCardSettings", split "pokelid", 42 entries.
 
 import type { S } from "../../_utils";
 import type { LocationCardSettings } from "../types";
@@ -179,6 +179,14 @@ export type LocationCardSettingsPokelidMiyazaki = S<
 		}
 	>
 >;
+export type LocationCardSettingsPokelidNagano = S<
+	LocationCardSettings<
+		"LC_POKELID_NAGANO",
+		{
+			imageUrl: "lc_pokelid_nagano";
+		}
+	>
+>;
 export type LocationCardSettingsPokelidNagasaki = S<
 	LocationCardSettings<
 		"LC_POKELID_NAGASAKI",
@@ -355,6 +363,7 @@ export type LocationCardSettingsPokelidMasterfileEntry =
 	| LocationCardSettingsPokelidMie
 	| LocationCardSettingsPokelidMiyagi
 	| LocationCardSettingsPokelidMiyazaki
+	| LocationCardSettingsPokelidNagano
 	| LocationCardSettingsPokelidNagasaki
 	| LocationCardSettingsPokelidNara
 	| LocationCardSettingsPokelidNiigata

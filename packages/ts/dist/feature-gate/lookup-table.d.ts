@@ -2,12 +2,11 @@
 
 import type {
 	FeatureGateAdminGmNiaOpsOnlyFilterAms,
+	FeatureGateAdvSyncTwo,
 	FeatureGateAms,
 	FeatureGateAmsFrontend,
 	FeatureGateCombatSuppressFastMovePredictionsOnSwap,
 	FeatureGateCombatVnextInitializeBdLast,
-	FeatureGateDisableLegacyNearbyPokemon,
-	FeatureGateEnableNearbyPokemonSnapshot,
 	FeatureGateEnablePvpChallengeSpanner,
 	FeatureGateEnhancedCurrencyOverflowStardust,
 	FeatureGateEnhancedMegaRaidReadyCheck,
@@ -40,12 +39,11 @@ import type {
 
 export interface FeatureGateLookup {
 	ADMIN_GM_NIA_OPS_ONLY_FILTER_AMS_FEATURE_GATE: FeatureGateAdminGmNiaOpsOnlyFilterAms;
+	ADV_SYNC_TWO_FEATURE_GATE: FeatureGateAdvSyncTwo;
 	AMS_FEATURE_GATE: FeatureGateAms;
 	AMS_FRONTEND_FEATURE_GATE: FeatureGateAmsFrontend;
 	COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE: FeatureGateCombatSuppressFastMovePredictionsOnSwap;
 	COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE: FeatureGateCombatVnextInitializeBdLast;
-	DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE: FeatureGateDisableLegacyNearbyPokemon;
-	ENABLE_NEARBY_POKEMON_SNAPSHOT_FEATURE_GATE: FeatureGateEnableNearbyPokemonSnapshot;
 	ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE: FeatureGateEnablePvpChallengeSpanner;
 	ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE: FeatureGateEnhancedCurrencyOverflowStardust;
 	ENHANCED_MEGA_RAID_READY_CHECK_FEATURE_GATE: FeatureGateEnhancedMegaRaidReadyCheck;

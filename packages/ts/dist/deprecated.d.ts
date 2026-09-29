@@ -483,7 +483,7 @@ type DeprecatedCodeGateProtoIds =
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedEggTransparencySettingsIds = "EGG_TRANSPARENCY_SETTINGS";
 
-/** @deprecated lastSeen 2026-09-28 — 40 entries */
+/** @deprecated lastSeen 2026-09-28 — 39 entries */
 type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_30ANNIV2026_EVENT"
 	| "EVENT_PASS_AFTERPARTY2026_EVENT"
@@ -516,7 +516,6 @@ type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_OCTOBER2025_SEASON"
 	| "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT"
 	| "EVENT_PASS_SEPTEMBER2025_SEASON"
-	| "EVENT_PASS_SEPTEMBER2026_SEASON"
 	| "EVENT_PASS_SHOCKINGLYGOOD2026_EVENT"
 	| "EVENT_PASS_SPRINGMARATHON2026_EVENT"
 	| "EVENT_PASS_STEELEDRESOLVE2026_EVENT"
@@ -12431,9 +12430,11 @@ type DeprecatedExRaidSettingsIds = "EX_RAID_SETTINGS";
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedExtendedPrimalSettingsIds = "EXTENDED_PRIMAL_SETTINGS";
 
-/** @deprecated lastSeen 2026-09-17 — 6 entries */
+/** @deprecated lastSeen 2026-09-29 — 8 entries */
 type DeprecatedFeatureGateIds =
 	| "DAY_NIGHT_POI_FEATURE_GATE"
+	| "DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE"
+	| "ENABLE_NEARBY_POKEMON_SNAPSHOT_FEATURE_GATE"
 	| "EVENT_LIST_FEATURE_GATE"
 	| "HEAL_TOAST_FEATURE_GATE"
 	| "STORE_REFRESH_FEATURE_GATE"

@@ -107,8 +107,6 @@ pub enum SingletonsTemplateId {
     EncounterSettings,
     #[serde(rename = "ERROR_REPORTING_SETTINGS_PRE_LOGIN")]
     ErrorReportingSettingsPreLogin,
-    #[serde(rename = "EVENT_PASS_SEPTEMBER2026_SEASON")]
-    EventPassSeptember2026Season,
     #[serde(rename = "EVENT_PLANNER_POPULAR_RAID_RSVP_SETTINGS")]
     EventPlannerPopularRaidRsvpSettings,
     #[serde(rename = "EVENT_PLANNER_SETTINGS")]
@@ -163,6 +161,8 @@ pub enum SingletonsTemplateId {
     MainMenuCameraButtonSettings,
     #[serde(rename = "MAP_DISPLAY_SETTINGS")]
     MapDisplaySettings,
+    #[serde(rename = "MAP_OBJECT_COLLISION_AVOIDANCE_SETTINGS")]
+    MapObjectCollisionAvoidanceSettings,
     #[serde(rename = "MAP_OBJECTS_INTERACTION_RANGE_SETTINGS")]
     MapObjectsInteractionRangeSettings,
     #[serde(rename = "MEGA_EVO_SETTINGS")]

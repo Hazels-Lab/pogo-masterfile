@@ -173,6 +173,7 @@ const (
 	LocationCardSettingsTemplateIDLcPokelidMie                                            LocationCardSettingsTemplateID = "LC_POKELID_MIE"
 	LocationCardSettingsTemplateIDLcPokelidMiyagi                                         LocationCardSettingsTemplateID = "LC_POKELID_MIYAGI"
 	LocationCardSettingsTemplateIDLcPokelidMiyazaki                                       LocationCardSettingsTemplateID = "LC_POKELID_MIYAZAKI"
+	LocationCardSettingsTemplateIDLcPokelidNagano                                         LocationCardSettingsTemplateID = "LC_POKELID_NAGANO"
 	LocationCardSettingsTemplateIDLcPokelidNagasaki                                       LocationCardSettingsTemplateID = "LC_POKELID_NAGASAKI"
 	LocationCardSettingsTemplateIDLcPokelidNara                                           LocationCardSettingsTemplateID = "LC_POKELID_NARA"
 	LocationCardSettingsTemplateIDLcPokelidNiigata                                        LocationCardSettingsTemplateID = "LC_POKELID_NIIGATA"
@@ -436,6 +437,7 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLcPokelidMie,
 	LocationCardSettingsTemplateIDLcPokelidMiyagi,
 	LocationCardSettingsTemplateIDLcPokelidMiyazaki,
+	LocationCardSettingsTemplateIDLcPokelidNagano,
 	LocationCardSettingsTemplateIDLcPokelidNagasaki,
 	LocationCardSettingsTemplateIDLcPokelidNara,
 	LocationCardSettingsTemplateIDLcPokelidNiigata,

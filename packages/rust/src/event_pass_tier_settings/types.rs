@@ -39,6 +39,7 @@ pub struct PlayerAttribute {
 #[serde(rename_all = "camelCase")]
 pub struct PokemonDisplay {
     pub bread_mode_enum: Option<String>,
+    pub costume: Option<String>,
     pub form: String,
 }
 

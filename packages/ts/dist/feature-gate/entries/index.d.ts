@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 35 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 34 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -9,6 +9,15 @@ export type FeatureGateAdminGmNiaOpsOnlyFilterAms = S<
 		{
 			rolloutPercentage: 100;
 			status: 1;
+		}
+	>
+>;
+export type FeatureGateAdvSyncTwo = S<
+	FeatureGate<
+		"ADV_SYNC_TWO_FEATURE_GATE",
+		{
+			rolloutPercentage: 100;
+			status: 952347117;
 		}
 	>
 >;
@@ -42,24 +51,6 @@ export type FeatureGateCombatSuppressFastMovePredictionsOnSwap = S<
 export type FeatureGateCombatVnextInitializeBdLast = S<
 	FeatureGate<
 		"COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE",
-		{
-			rolloutPercentage: 100;
-			status: 1;
-		}
-	>
->;
-export type FeatureGateDisableLegacyNearbyPokemon = S<
-	FeatureGate<
-		"DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE",
-		{
-			rolloutPercentage: 100;
-			status: 1;
-		}
-	>
->;
-export type FeatureGateEnableNearbyPokemonSnapshot = S<
-	FeatureGate<
-		"ENABLE_NEARBY_POKEMON_SNAPSHOT_FEATURE_GATE",
 		{
 			rolloutPercentage: 100;
 			status: 1;
@@ -295,7 +286,7 @@ export type FeatureGateRegisterDevice = S<
 	FeatureGate<
 		"REGISTER_DEVICE_FEATURE_GATE",
 		{
-			rolloutPercentage: 60;
+			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -364,12 +355,11 @@ export type FeatureGateWayfarerSubmitLinkout = S<
 
 export type FeatureGateMasterfileEntry =
 	| FeatureGateAdminGmNiaOpsOnlyFilterAms
+	| FeatureGateAdvSyncTwo
 	| FeatureGateAms
 	| FeatureGateAmsFrontend
 	| FeatureGateCombatSuppressFastMovePredictionsOnSwap
 	| FeatureGateCombatVnextInitializeBdLast
-	| FeatureGateDisableLegacyNearbyPokemon
-	| FeatureGateEnableNearbyPokemonSnapshot
 	| FeatureGateEnablePvpChallengeSpanner
 	| FeatureGateEnhancedCurrencyOverflowStardust
 	| FeatureGateEnhancedMegaRaidReadyCheck
