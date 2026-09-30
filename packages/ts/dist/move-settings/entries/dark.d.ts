@@ -299,7 +299,6 @@ export type MoveSettingsVnBm016 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_016";
-			obMoveSettingsNumber18: [250, 300, 350, 450];
 			pokemonType: "POKEMON_TYPE_DARK";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -318,7 +317,6 @@ export type MoveSettingsVnBm041 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_041";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_DARK";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -337,7 +335,6 @@ export type MoveSettingsVnBm050 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_050";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_DARK";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;

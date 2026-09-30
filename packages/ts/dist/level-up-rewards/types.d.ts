@@ -121,5 +121,4 @@ export interface LevelUpRewardsData {
 			| "N_AVATAR_n_shoes_pokeballitems-great_0"
 			| "N_AVATAR_n_shoes_pokeballitems-ultra_0";
 	};
-	obLevelUpRewardsNumber9?: number;
 }

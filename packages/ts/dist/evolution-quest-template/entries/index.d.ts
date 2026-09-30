@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "evolutionQuestTemplate", 37 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "evolutionQuestTemplate", 38 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { EvolutionQuestTemplate } from "../types";
@@ -85,6 +85,23 @@ export type EvolutionQuestTemplateBisharpKingambitEvolutionQuest = S<
 				},
 			];
 			questType: "QUEST_COMPLETE_BATTLE";
+		}
+	>
+>;
+export type EvolutionQuestTemplateBrambleghastEvolutionQuest = S<
+	EvolutionQuestTemplate<
+		"BRAMBLEGHAST_EVOLUTION_QUEST",
+		{
+			display: {
+				description: "quest_buddy_walk_km_plural";
+				title: "quest_buddy_walk_km_plural";
+			};
+			goals: [
+				{
+					target: 20;
+				},
+			];
+			questType: "QUEST_BUDDY_EVOLUTION_WALK";
 		}
 	>
 >;
@@ -789,6 +806,7 @@ export type EvolutionQuestTemplateMasterfileEntry =
 	| EvolutionQuestTemplateAnnihilapeCdEvolutionQuest
 	| EvolutionQuestTemplateAnnihilapeEvolutionQuest
 	| EvolutionQuestTemplateBisharpKingambitEvolutionQuest
+	| EvolutionQuestTemplateBrambleghastEvolutionQuest
 	| EvolutionQuestTemplateChanseyEvolutionQuest
 	| EvolutionQuestTemplateCharcadetArmarougeEvolutionQuest
 	| EvolutionQuestTemplateCharcadetCeruledgeEvolutionQuest

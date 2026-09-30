@@ -2,6 +2,17 @@
 
 All notable changes to `pogo-masterfile-types` (npm) are recorded here. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.65] - 2026-09-30
+
+Automated regeneration from upstream masterfile commit `02b5e3510368af7eb2411a77aab4eecb3eff0f05`.
+
+### Added template IDs (4)
+
+- BADGE_EVENT_0273
+- BRAMBLEGHAST_EVOLUTION_QUEST
+- ITEM_EVENT_TICKET_S24_OCT_17_HATCH
+- LC_2026_COMICCON_MALAGA
+
 ## [0.1.64] - 2026-09-29
 
 Automated regeneration from upstream masterfile commit `e8da77d1d29f6bbbb64281bb8fbf37c9b15235b7`.

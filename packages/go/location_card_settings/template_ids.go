@@ -77,6 +77,7 @@ const (
 	LocationCardSettingsTemplateIDLc2026Br001                                             LocationCardSettingsTemplateID = "LC_2026_BR_001"
 	LocationCardSettingsTemplateIDLc2026ChicagoGofest001                                  LocationCardSettingsTemplateID = "LC_2026_CHICAGO_GOFEST_001"
 	LocationCardSettingsTemplateIDLc2026CologneCarnival001                                LocationCardSettingsTemplateID = "LC_2026_COLOGNE_CARNIVAL_001"
+	LocationCardSettingsTemplateIDLc2026ComicconMalaga                                    LocationCardSettingsTemplateID = "LC_2026_COMICCON_MALAGA"
 	LocationCardSettingsTemplateIDLc2026CopenhagenGofest001                               LocationCardSettingsTemplateID = "LC_2026_COPENHAGEN_GOFEST_001"
 	LocationCardSettingsTemplateIDLc2026JpGreen                                           LocationCardSettingsTemplateID = "LC_2026_JP_GREEN"
 	LocationCardSettingsTemplateIDLc2026JpRed                                             LocationCardSettingsTemplateID = "LC_2026_JP_RED"
@@ -341,6 +342,7 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLc2026Br001,
 	LocationCardSettingsTemplateIDLc2026ChicagoGofest001,
 	LocationCardSettingsTemplateIDLc2026CologneCarnival001,
+	LocationCardSettingsTemplateIDLc2026ComicconMalaga,
 	LocationCardSettingsTemplateIDLc2026CopenhagenGofest001,
 	LocationCardSettingsTemplateIDLc2026JpGreen,
 	LocationCardSettingsTemplateIDLc2026JpRed,

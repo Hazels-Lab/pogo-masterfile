@@ -11503,10 +11503,14 @@ export type PokemonSettingsV0753PokemonFomantis = S<
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.2;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 50;
+					candyCostPurified: 45;
 					evolution: "LURANTIS";
 					onlyDaytime: true;
 				},
@@ -11524,6 +11528,12 @@ export type PokemonSettingsV0753PokemonFomantis = S<
 			pokedexWeightKg: 1.5;
 			pokemonId: "FOMANTIS";
 			quickMoves: ["RAZOR_LEAF_FAST", "FURY_CUTTER_FAST", "LEAFAGE_FAST"];
+			shadow: {
+				purificationCandyNeeded: 3;
+				purificationStardustNeeded: 3000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 100;
 				baseDefense: 64;
@@ -11571,10 +11581,14 @@ export type PokemonSettingsV0753PokemonFomantisNormal = S<
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.2;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 50;
+					candyCostPurified: 45;
 					evolution: "LURANTIS";
 					form: "LURANTIS_NORMAL";
 					onlyDaytime: true;
@@ -11594,6 +11608,12 @@ export type PokemonSettingsV0753PokemonFomantisNormal = S<
 			pokedexWeightKg: 1.5;
 			pokemonId: "FOMANTIS";
 			quickMoves: ["RAZOR_LEAF_FAST", "FURY_CUTTER_FAST", "LEAFAGE_FAST"];
+			shadow: {
+				purificationCandyNeeded: 3;
+				purificationStardustNeeded: 3000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 100;
 				baseDefense: 64;
@@ -11639,6 +11659,9 @@ export type PokemonSettingsV0754PokemonLurantis = S<
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.2;
+				shadowDodgeProbability: 0.2;
 			};
 			familyId: "FAMILY_FOMANTIS";
 			heightStdDev: 0.1125;
@@ -11655,6 +11678,12 @@ export type PokemonSettingsV0754PokemonLurantis = S<
 			pokemonId: "LURANTIS";
 			quickMoves: ["RAZOR_LEAF_FAST", "FURY_CUTTER_FAST", "LEAFAGE_FAST"];
 			raidBossDistanceOffset: 2;
+			shadow: {
+				purificationCandyNeeded: 3;
+				purificationStardustNeeded: 3000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 192;
 				baseDefense: 169;
@@ -11700,6 +11729,9 @@ export type PokemonSettingsV0754PokemonLurantisNormal = S<
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.2;
+				shadowDodgeProbability: 0.2;
 			};
 			familyId: "FAMILY_FOMANTIS";
 			form: "LURANTIS_NORMAL";
@@ -11717,6 +11749,12 @@ export type PokemonSettingsV0754PokemonLurantisNormal = S<
 			pokemonId: "LURANTIS";
 			quickMoves: ["RAZOR_LEAF_FAST", "FURY_CUTTER_FAST", "LEAFAGE_FAST"];
 			raidBossDistanceOffset: 2;
+			shadow: {
+				purificationCandyNeeded: 3;
+				purificationStardustNeeded: 3000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 192;
 				baseDefense: 169;
@@ -14502,6 +14540,12 @@ export type PokemonSettingsV0946PokemonBramblin = S<
 				{
 					candyCost: 50;
 					evolution: "BRAMBLEGHAST";
+					kmBuddyDistanceRequirement: 20;
+					questDisplay: [
+						{
+							questRequirementTemplateId: "BRAMBLEGHAST_EVOLUTION_QUEST";
+						},
+					];
 				},
 			];
 			familyId: "FAMILY_BRAMBLIN";
@@ -14551,6 +14595,12 @@ export type PokemonSettingsV0946PokemonBramblinNormal = S<
 					candyCost: 50;
 					evolution: "BRAMBLEGHAST";
 					form: "BRAMBLEGHAST_NORMAL";
+					kmBuddyDistanceRequirement: 20;
+					questDisplay: [
+						{
+							questRequirementTemplateId: "BRAMBLEGHAST_EVOLUTION_QUEST";
+						},
+					];
 				},
 			];
 			familyId: "FAMILY_BRAMBLIN";

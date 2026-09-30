@@ -14859,10 +14859,14 @@ export type PokemonSettingsV0767PokemonWimpod = S<
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.5;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 400;
+					candyCostPurified: 360;
 					evolution: "GOLISOPOD";
 				},
 			];
@@ -14880,6 +14884,12 @@ export type PokemonSettingsV0767PokemonWimpod = S<
 			pokemonId: "WIMPOD";
 			quickMoves: ["STRUGGLE_BUG_FAST"];
 			raidBossDistanceOffset: 3;
+			shadow: {
+				purificationCandyNeeded: 1;
+				purificationStardustNeeded: 1000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 67;
 				baseDefense: 74;
@@ -14923,10 +14933,14 @@ export type PokemonSettingsV0767PokemonWimpodNormal = S<
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.5;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 400;
+					candyCostPurified: 360;
 					evolution: "GOLISOPOD";
 					form: "GOLISOPOD_NORMAL";
 				},
@@ -14946,6 +14960,12 @@ export type PokemonSettingsV0767PokemonWimpodNormal = S<
 			pokemonId: "WIMPOD";
 			quickMoves: ["STRUGGLE_BUG_FAST"];
 			raidBossDistanceOffset: 3;
+			shadow: {
+				purificationCandyNeeded: 1;
+				purificationStardustNeeded: 1000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 67;
 				baseDefense: 74;
@@ -14993,6 +15013,9 @@ export type PokemonSettingsV0768PokemonGolisopod = S<
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.2;
+				shadowDodgeProbability: 0.2;
 			};
 			familyId: "FAMILY_WIMPOD";
 			heightStdDev: 0.25;
@@ -15009,6 +15032,12 @@ export type PokemonSettingsV0768PokemonGolisopod = S<
 			pokemonId: "GOLISOPOD";
 			quickMoves: ["FURY_CUTTER_FAST", "METAL_CLAW_FAST", "WATERFALL_FAST", "SHADOW_CLAW_FAST"];
 			raidBossDistanceOffset: 1.7;
+			shadow: {
+				purificationCandyNeeded: 1;
+				purificationStardustNeeded: 1000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 218;
 				baseDefense: 226;
@@ -15056,6 +15085,9 @@ export type PokemonSettingsV0768PokemonGolisopodNormal = S<
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.2;
+				shadowDodgeProbability: 0.2;
 			};
 			familyId: "FAMILY_WIMPOD";
 			form: "GOLISOPOD_NORMAL";
@@ -15073,6 +15105,12 @@ export type PokemonSettingsV0768PokemonGolisopodNormal = S<
 			pokemonId: "GOLISOPOD";
 			quickMoves: ["FURY_CUTTER_FAST", "METAL_CLAW_FAST", "WATERFALL_FAST", "SHADOW_CLAW_FAST"];
 			raidBossDistanceOffset: 1.7;
+			shadow: {
+				purificationCandyNeeded: 1;
+				purificationStardustNeeded: 1000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 218;
 				baseDefense: 226;

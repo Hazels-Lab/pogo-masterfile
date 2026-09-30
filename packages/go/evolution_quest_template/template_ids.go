@@ -8,6 +8,7 @@ const (
 	EvolutionQuestTemplateTemplateIDAnnihilapeCdEvolutionQuest       EvolutionQuestTemplateTemplateID = "ANNIHILAPE_CD_EVOLUTION_QUEST"
 	EvolutionQuestTemplateTemplateIDAnnihilapeEvolutionQuest         EvolutionQuestTemplateTemplateID = "ANNIHILAPE_EVOLUTION_QUEST"
 	EvolutionQuestTemplateTemplateIDBisharpKingambitEvolutionQuest   EvolutionQuestTemplateTemplateID = "BISHARP_KINGAMBIT_EVOLUTION_QUEST"
+	EvolutionQuestTemplateTemplateIDBrambleghastEvolutionQuest       EvolutionQuestTemplateTemplateID = "BRAMBLEGHAST_EVOLUTION_QUEST"
 	EvolutionQuestTemplateTemplateIDChanseyEvolutionQuest            EvolutionQuestTemplateTemplateID = "CHANSEY_EVOLUTION_QUEST"
 	EvolutionQuestTemplateTemplateIDCharcadetArmarougeEvolutionQuest EvolutionQuestTemplateTemplateID = "CHARCADET_ARMAROUGE_EVOLUTION_QUEST"
 	EvolutionQuestTemplateTemplateIDCharcadetCeruledgeEvolutionQuest EvolutionQuestTemplateTemplateID = "CHARCADET_CERULEDGE_EVOLUTION_QUEST"
@@ -48,6 +49,7 @@ var EvolutionQuestTemplateTemplateIDValues = [...]EvolutionQuestTemplateTemplate
 	EvolutionQuestTemplateTemplateIDAnnihilapeCdEvolutionQuest,
 	EvolutionQuestTemplateTemplateIDAnnihilapeEvolutionQuest,
 	EvolutionQuestTemplateTemplateIDBisharpKingambitEvolutionQuest,
+	EvolutionQuestTemplateTemplateIDBrambleghastEvolutionQuest,
 	EvolutionQuestTemplateTemplateIDChanseyEvolutionQuest,
 	EvolutionQuestTemplateTemplateIDCharcadetArmarougeEvolutionQuest,
 	EvolutionQuestTemplateTemplateIDCharcadetCeruledgeEvolutionQuest,

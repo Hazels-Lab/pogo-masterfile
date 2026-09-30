@@ -404,7 +404,6 @@ export type MoveSettingsVnBm013 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_013";
-			obMoveSettingsNumber18: [250, 300, 350, 450];
 			pokemonType: "POKEMON_TYPE_PSYCHIC";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -423,7 +422,6 @@ export type MoveSettingsVnBm032 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_032";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_PSYCHIC";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;

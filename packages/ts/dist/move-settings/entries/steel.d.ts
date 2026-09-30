@@ -381,7 +381,6 @@ export type MoveSettingsVnBm018 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_018";
-			obMoveSettingsNumber18: [250, 300, 350, 450];
 			pokemonType: "POKEMON_TYPE_STEEL";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -400,7 +399,6 @@ export type MoveSettingsVnBm030 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_030";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_STEEL";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -419,7 +417,6 @@ export type MoveSettingsVnBm043 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_043";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_STEEL";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -438,7 +435,6 @@ export type MoveSettingsVnBm060 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_060";
-			obMoveSettingsNumber18: [250, 300, 350, 450];
 			pokemonType: "POKEMON_TYPE_STEEL";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -457,7 +453,6 @@ export type MoveSettingsVnBm061 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_061";
-			obMoveSettingsNumber18: [250, 300, 350, 450];
 			pokemonType: "POKEMON_TYPE_STEEL";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;

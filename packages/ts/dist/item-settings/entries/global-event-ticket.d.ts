@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 56 entries.
+// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 57 entries.
 
 import type { S } from "../../_utils";
 import type { ItemSettings } from "../types";
@@ -1512,6 +1512,52 @@ export type ItemSettingsItemEventTicketS24Oct10CommunityToGift = S<
 		}
 	>
 >;
+export type ItemSettingsItemEventTicketS24Oct17Hatch = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S24_OCT_17_HATCH",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "item_event_ticket_gray_details_SandileHatchDay26";
+			globalEventTicket: {
+				backgroundImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F440cb25d_PGO-MCS_Sandile_Hatch_Day_v1-1024x576%20No%20Logo.png";
+				clientEventEndTimeUtcMs: "1792256400000";
+				clientEventStartTimeUtcMs: "1792234800000";
+				detailsLinkKey: "details_link_key";
+				displayV2Enabled: true;
+				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F440cb25d_PGO-MCS_Sandile_Hatch_Day_v1-1024x576%20No%20Logo.png";
+				eventDatetimeRangeKey: "event_datetime_range_key_SandileHatchDay26";
+				eventEndTime: "2026-10-17T17:00:00";
+				eventStartTime: "2026-10-17T11:00:00";
+				giftable: true;
+				giftItem: "ITEM_EVENT_TICKET_S24_OCT_17_HATCH_TO_GIFT";
+				iconRewards: [
+					{
+						item: {
+							amount: 2;
+							item: "ITEM_INCUBATOR_SUPER";
+						};
+						type: "ITEM";
+					},
+					{
+						item: {
+							amount: 1;
+							item: "ITEM_STAR_PIECE";
+						};
+						type: "ITEM";
+					},
+					{
+						exp: 10000;
+						type: "EXPERIENCE";
+					},
+				];
+				itemBagDescriptionKey: "item_event_ticket_gray_desc_SandileHatchDay26";
+				textRewardsKey: "text_rewards_key_SandileHatchDay26";
+			};
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general2.ticket.2_SandileHatchDay26_title";
+		}
+	>
+>;
 export type ItemSettingsItemEventTicketS24Sep12Community = S<
 	ItemSettings<
 		"ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY",
@@ -1925,6 +1971,7 @@ export type ItemSettingsGlobalEventTicketMasterfileEntry =
 	| ItemSettingsItemEventTicketS24Oct3Maxbattle
 	| ItemSettingsItemEventTicketS24Oct10Community
 	| ItemSettingsItemEventTicketS24Oct10CommunityToGift
+	| ItemSettingsItemEventTicketS24Oct17Hatch
 	| ItemSettingsItemEventTicketS24Sep12Community
 	| ItemSettingsItemEventTicketS24Sep12CommunityToGift
 	| ItemSettingsItemEventTicketS24Sep19Megaraid

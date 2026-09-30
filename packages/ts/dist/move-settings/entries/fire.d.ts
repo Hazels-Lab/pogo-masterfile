@@ -559,7 +559,6 @@ export type MoveSettingsVnBm001 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_001";
-			obMoveSettingsNumber18: [250, 300, 350, 450];
 			pokemonType: "POKEMON_TYPE_FIRE";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -578,7 +577,6 @@ export type MoveSettingsVnBm019 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_019";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_FIRE";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -597,7 +595,6 @@ export type MoveSettingsVnBm039 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_039";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_FIRE";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -616,7 +613,6 @@ export type MoveSettingsVnBm048 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_048";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_FIRE";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;

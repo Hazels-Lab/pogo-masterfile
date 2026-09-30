@@ -356,7 +356,6 @@ export type MoveSettingsVnBm007 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_007";
-			obMoveSettingsNumber18: [250, 300, 350, 450];
 			pokemonType: "POKEMON_TYPE_ICE";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -375,7 +374,6 @@ export type MoveSettingsVnBm026 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_026";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_ICE";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;

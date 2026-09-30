@@ -674,7 +674,6 @@ type CombatSettings struct {
 	MinigameSubmitScoreDurationSeconds      float64                          `json:"minigameSubmitScoreDurationSeconds"`
 	NormalEffectiveFlyoutDurationTurns      uint64                           `json:"normalEffectiveFlyoutDurationTurns"`
 	NotVeryEffectiveFlyoutDurationTurns     uint64                           `json:"notVeryEffectiveFlyoutDurationTurns"`
-	ObCombatSettingsNotPushedBool2          bool                             `json:"obCombatSettingsNotPushedBool2"`
 	PurifiedPokemonAttackMultiplierVsShadow float64                          `json:"purifiedPokemonAttackMultiplierVsShadow"`
 	QuickSwapCooldownDurationSeconds        float64                          `json:"quickSwapCooldownDurationSeconds"`
 	RoundDurationSeconds                    float64                          `json:"roundDurationSeconds"`
@@ -1830,10 +1829,6 @@ type RoutePlaySettings struct {
 	MarginMinimumMeters                uint64  `json:"marginMinimumMeters"`
 	MarginPercentage                   float64 `json:"marginPercentage"`
 	MinPlayerLevel                     uint64  `json:"minPlayerLevel"`
-	ObRoutePlaySettingsNumber29        uint64  `json:"obRoutePlaySettingsNumber29"`
-	ObRoutePlaySettingsNumber30        float64 `json:"obRoutePlaySettingsNumber30"`
-	ObRoutePlaySettingsNumber33        float64 `json:"obRoutePlaySettingsNumber33"`
-	ObRoutePlaySettingsNumber45        uint64  `json:"obRoutePlaySettingsNumber45"`
 	ResumeRangeMeters                  uint64  `json:"resumeRangeMeters"`
 	RouteEngagementStatsShardCount     uint64  `json:"routeEngagementStatsShardCount"`
 	RouteExpirationMinutes             uint64  `json:"routeExpirationMinutes"`
@@ -2096,7 +2091,7 @@ type VnextBattleConfig struct {
 }
 
 type VsSeekerClientSettings struct {
-	AllowedVsSeekerLeagueTemplateId [3]string `json:"allowedVsSeekerLeagueTemplateId"`
+	AllowedVsSeekerLeagueTemplateId [2]string `json:"allowedVsSeekerLeagueTemplateId"`
 }
 
 type VsSeekerScheduleSettingsVsSeekerSchedules struct {

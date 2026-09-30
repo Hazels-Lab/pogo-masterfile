@@ -931,7 +931,6 @@ export type LevelUpRewardsAwardsLevel70 = S<
 			];
 			itemsCount: [30, 3, 20, 10, 6, 3, 6, 1, 75];
 			level: 70;
-			obLevelUpRewardsNumber9: 0.01;
 		}
 	>
 >;
@@ -1337,7 +1336,6 @@ export type LevelUpRewardsBackfillAwardsLevel70 = S<
 			items: ["ITEM_ITEM_STORAGE_UPGRADE_EARNED"];
 			itemsCount: [75];
 			level: 70;
-			obLevelUpRewardsNumber9: 0.01;
 		}
 	>
 >;

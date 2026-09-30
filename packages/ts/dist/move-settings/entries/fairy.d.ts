@@ -199,7 +199,6 @@ export type MoveSettingsVnBm011 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_011";
-			obMoveSettingsNumber18: [250, 300, 350, 450];
 			pokemonType: "POKEMON_TYPE_FAIRY";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -218,7 +217,6 @@ export type MoveSettingsVnBm040 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_040";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_FAIRY";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -237,7 +235,6 @@ export type MoveSettingsVnBm042 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_042";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_FAIRY";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
