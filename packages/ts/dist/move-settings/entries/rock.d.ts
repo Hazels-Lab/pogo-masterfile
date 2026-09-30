@@ -259,7 +259,6 @@ export type MoveSettingsVnBm014 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_014";
-			obMoveSettingsNumber18: [250, 300, 350, 450];
 			pokemonType: "POKEMON_TYPE_ROCK";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -278,7 +277,6 @@ export type MoveSettingsVnBm034 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_034";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_ROCK";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;

@@ -3620,6 +3620,9 @@ export type PokemonSettingsV0644PokemonZekrom = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 10;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.02;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionPips: 1;
 			familyId: "FAMILY_ZEKROM";
@@ -3636,6 +3639,12 @@ export type PokemonSettingsV0644PokemonZekrom = S<
 			pokemonClass: "POKEMON_CLASS_LEGENDARY";
 			pokemonId: "ZEKROM";
 			quickMoves: ["DRAGON_BREATH_FAST", "CHARGE_BEAM_FAST"];
+			shadow: {
+				purificationCandyNeeded: 20;
+				purificationStardustNeeded: 20000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 275;
 				baseDefense: 211;
@@ -3687,6 +3696,9 @@ export type PokemonSettingsV0644PokemonZekromNormal = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 10;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.02;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionPips: 1;
 			familyId: "FAMILY_ZEKROM";
@@ -3704,6 +3716,12 @@ export type PokemonSettingsV0644PokemonZekromNormal = S<
 			pokemonClass: "POKEMON_CLASS_LEGENDARY";
 			pokemonId: "ZEKROM";
 			quickMoves: ["DRAGON_BREATH_FAST", "CHARGE_BEAM_FAST"];
+			shadow: {
+				purificationCandyNeeded: 20;
+				purificationStardustNeeded: 20000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 275;
 				baseDefense: 211;

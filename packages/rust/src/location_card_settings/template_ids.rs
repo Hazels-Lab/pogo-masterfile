@@ -151,6 +151,8 @@ pub enum LocationCardSettingsTemplateId {
     Lc2026ChicagoGofest001,
     #[serde(rename = "LC_2026_COLOGNE_CARNIVAL_001")]
     Lc2026CologneCarnival001,
+    #[serde(rename = "LC_2026_COMICCON_MALAGA")]
+    Lc2026ComicconMalaga,
     #[serde(rename = "LC_2026_COPENHAGEN_GOFEST_001")]
     Lc2026CopenhagenGofest001,
     #[serde(rename = "LC_2026_JP_GREEN")]

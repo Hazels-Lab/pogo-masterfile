@@ -13,6 +13,8 @@ pub enum EvolutionQuestTemplateTemplateId {
     AnnihilapeEvolutionQuest,
     #[serde(rename = "BISHARP_KINGAMBIT_EVOLUTION_QUEST")]
     BisharpKingambitEvolutionQuest,
+    #[serde(rename = "BRAMBLEGHAST_EVOLUTION_QUEST")]
+    BrambleghastEvolutionQuest,
     #[serde(rename = "CHANSEY_EVOLUTION_QUEST")]
     ChanseyEvolutionQuest,
     #[serde(rename = "CHARCADET_ARMAROUGE_EVOLUTION_QUEST")]

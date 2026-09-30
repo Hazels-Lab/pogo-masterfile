@@ -2552,7 +2552,6 @@ export interface CombatSettings {
 			minigameSubmitScoreDurationSeconds: 6.5;
 			normalEffectiveFlyoutDurationTurns: 5;
 			notVeryEffectiveFlyoutDurationTurns: 5;
-			obCombatSettingsNotPushedBool2: true;
 			purifiedPokemonAttackMultiplierVsShadow: 1;
 			quickSwapCooldownDurationSeconds: 45;
 			roundDurationSeconds: 270;
@@ -5325,10 +5324,6 @@ export interface RoutePlaySettings {
 			marginMinimumMeters: 80;
 			marginPercentage: 0.94;
 			minPlayerLevel: 7;
-			obRoutePlaySettingsNumber29: 1;
-			obRoutePlaySettingsNumber30: 27;
-			obRoutePlaySettingsNumber33: 7;
-			obRoutePlaySettingsNumber45: 1;
 			resumeRangeMeters: 40;
 			routeEngagementStatsShardCount: 3;
 			routeExpirationMinutes: 185;
@@ -6084,7 +6079,7 @@ export interface VsSeekerClientSettings {
 	data: {
 		templateId: "VS_SEEKER_CLIENT_SETTINGS";
 		vsSeekerClientSettings: {
-			allowedVsSeekerLeagueTemplateId: ["COMBAT_LEAGUE_VS_SEEKER_ULTRA", "COMBAT_LEAGUE_VS_SEEKER_MASTER_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_GREAT_RETRO"];
+			allowedVsSeekerLeagueTemplateId: ["COMBAT_LEAGUE_VS_SEEKER_MASTER", "COMBAT_LEAGUE_VS_SEEKER_COLOR_GREAT_MEGAS"];
 		};
 	};
 }

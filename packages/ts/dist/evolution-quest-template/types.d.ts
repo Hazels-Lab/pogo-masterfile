@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "evolutionQuestTemplate", 37 entries (structural types).
+// Generated from Pokémon GO masterfile — group "evolutionQuestTemplate", 38 entries (structural types).
 
 import type { W } from "../_utils";
 

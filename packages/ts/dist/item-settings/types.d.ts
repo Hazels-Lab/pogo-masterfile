@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", 170 entries (structural types).
+// Generated from Pokémon GO masterfile — group "itemSettings", 171 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -69,6 +69,7 @@ export interface ItemSettingsData {
 		| "item_event_ticket_gray_desc_MegaSkarmoryRaidDay"
 		| "item_event_ticket_gray_desc_MegaStaraptorRaidDay"
 		| "item_event_ticket_gray_desc_shayminmasterworkrerun"
+		| "item_event_ticket_gray_details_SandileHatchDay26"
 		| "item_event_ticket_pink_details_CD_Frigibax26"
 		| "item_event_ticket_pink_details_CD_Nickit26"
 		| "item_event_ticket_pink_details_CD_Sobble26"
@@ -136,6 +137,7 @@ export interface ItemSettingsData {
 		backgroundImageUrl?:
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F0ba8ff0a_20260508_pgo_s23_megarayquaza_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F97c2eaee_PGO-MCS_Raichu_Super_Mega_Raid_Day_v3-1024x576-nologo.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F440cb25d_PGO-MCS_Sandile_Hatch_Day_v1-1024x576%20No%20Logo.png"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg"
@@ -195,6 +197,7 @@ export interface ItemSettingsData {
 			| "1790452800000"
 			| "1791046800000"
 			| "1791651600000"
+			| "1792256400000"
 			| "1794765600000";
 		clientEventStartTimeUtcMs:
 			| "1696845600000"
@@ -230,6 +233,7 @@ export interface ItemSettingsData {
 			| "1790416800000"
 			| "1791036000000"
 			| "1791640800000"
+			| "1792234800000"
 			| "1794650400000";
 		conflictStoryQuestIds?: ["RERUN_MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER", "MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER"];
 		detailsLinkKey?:
@@ -256,6 +260,7 @@ export interface ItemSettingsData {
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F0ba8ff0a_20260508_pgo_s23_megarayquaza_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F035aa0ae_PGO-MCS_S24_GBL_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F97c2eaee_PGO-MCS_Raichu_Super_Mega_Raid_Day_v3-1024x576-nologo.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F440cb25d_PGO-MCS_Sandile_Hatch_Day_v1-1024x576%20No%20Logo.png"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg"
@@ -306,6 +311,7 @@ export interface ItemSettingsData {
 			| "event_datetime_range_key_PawPrint_20250620"
 			| "event_datetime_range_key_REPLAY_GO_BIGGER"
 			| "event_datetime_range_key_Riolu0426"
+			| "event_datetime_range_key_SandileHatchDay26"
 			| "event_datetime_range_key_shayminmasterworkrerun"
 			| "event_datetime_range_key_WaterRRD26";
 		eventEndTime:
@@ -342,6 +348,7 @@ export interface ItemSettingsData {
 			| "2026-09-26T20:00:00"
 			| "2026-10-03T17:00:00"
 			| "2026-10-10T17:00:00"
+			| "2026-10-17T17:00:00"
 			| "2026-11-15T18:00:00";
 		eventStartTime:
 			| "2023-10-09T10:00:00"
@@ -377,6 +384,7 @@ export interface ItemSettingsData {
 			| "2026-09-26T10:00:00"
 			| "2026-10-03T14:00:00"
 			| "2026-10-10T14:00:00"
+			| "2026-10-17T11:00:00"
 			| "2026-11-14T10:00:00";
 		giftable?: boolean;
 		giftItem?:
@@ -404,6 +412,7 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S24_NOV9_GOWAOL_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_OCT_3_MAXBATTLE_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_OCT_10_COMMUNITY_TO_GIFT"
+			| "ITEM_EVENT_TICKET_S24_OCT_17_HATCH_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_SEP_19_MEGARAID_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_SEP_26_CATCH_TO_GIFT"
@@ -510,6 +519,7 @@ export interface ItemSettingsData {
 			| "item_event_ticket_gray_desc_MegaFalinksRaidDay"
 			| "item_event_ticket_gray_desc_MegaRaichuRaidDay"
 			| "item_event_ticket_gray_desc_MegaStaraptorRaidDay"
+			| "item_event_ticket_gray_desc_SandileHatchDay26"
 			| "item_event_ticket_gray_details_ENTEI_SHADOW_RAID_DAY"
 			| "item_event_ticket_gray_details_MegaRaichuRaidDay"
 			| "item_event_ticket_gray_details_MegaSkarmoryRaidDay"
@@ -556,6 +566,7 @@ export interface ItemSettingsData {
 			| "text_rewards_key_RaichuRaidDay"
 			| "text_rewards_key_REPLAY_GO_BIGGER"
 			| "text_rewards_key_Riolu0426"
+			| "text_rewards_key_SandileHatchDay26"
 			| "text_rewards_key_shayminmasterworkrerun"
 			| "text_rewards_key_StarmieRaidDay"
 			| "text_rewards_key_WaterRRD26";
@@ -651,6 +662,7 @@ export interface ItemSettingsData {
 		| "general1.ticket.5_MegaStaraptorRaidDay"
 		| "general1.ticket.5.ENTEI_SHADOW_RAID_DAY"
 		| "general2.ticket._GOWA26_title"
+		| "general2.ticket.2_SandileHatchDay26_title"
 		| "general2.ticket.5_MegaFalinksRaidDay"
 		| "general2.ticket.5_MegaRaichuRaidDay"
 		| "general2.ticket.5_MegaSkarmoryRaidDay"

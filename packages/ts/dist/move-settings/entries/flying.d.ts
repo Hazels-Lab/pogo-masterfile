@@ -463,7 +463,6 @@ export type MoveSettingsVnBm010 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_010";
-			obMoveSettingsNumber18: [250, 300, 350, 450];
 			pokemonType: "POKEMON_TYPE_FLYING";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -482,7 +481,6 @@ export type MoveSettingsVnBm031 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_031";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_FLYING";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;

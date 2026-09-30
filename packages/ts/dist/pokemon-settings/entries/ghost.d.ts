@@ -4789,10 +4789,14 @@ export type PokemonSettingsV0769PokemonSandygast = S<
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.2;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 50;
+					candyCostPurified: 45;
 					evolution: "PALOSSAND";
 				},
 			];
@@ -4809,6 +4813,12 @@ export type PokemonSettingsV0769PokemonSandygast = S<
 			pokedexWeightKg: 70;
 			pokemonId: "SANDYGAST";
 			quickMoves: ["ASTONISH_FAST", "MUD_SHOT_FAST", "SAND_ATTACK_FAST"];
+			shadow: {
+				purificationCandyNeeded: 3;
+				purificationStardustNeeded: 3000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 120;
 				baseDefense: 118;
@@ -4850,10 +4860,14 @@ export type PokemonSettingsV0769PokemonSandygastNormal = S<
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.2;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 50;
+					candyCostPurified: 45;
 					evolution: "PALOSSAND";
 					form: "PALOSSAND_NORMAL";
 				},
@@ -4872,6 +4886,12 @@ export type PokemonSettingsV0769PokemonSandygastNormal = S<
 			pokedexWeightKg: 70;
 			pokemonId: "SANDYGAST";
 			quickMoves: ["ASTONISH_FAST", "MUD_SHOT_FAST", "SAND_ATTACK_FAST"];
+			shadow: {
+				purificationCandyNeeded: 3;
+				purificationStardustNeeded: 3000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 120;
 				baseDefense: 118;
@@ -4917,6 +4937,9 @@ export type PokemonSettingsV0770PokemonPalossand = S<
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.2;
+				shadowDodgeProbability: 0.2;
 			};
 			familyId: "FAMILY_SANDYGAST";
 			heightStdDev: 0.1625;
@@ -4932,6 +4955,12 @@ export type PokemonSettingsV0770PokemonPalossand = S<
 			pokedexWeightKg: 250;
 			pokemonId: "PALOSSAND";
 			quickMoves: ["ASTONISH_FAST", "MUD_SHOT_FAST", "SAND_ATTACK_FAST"];
+			shadow: {
+				purificationCandyNeeded: 3;
+				purificationStardustNeeded: 3000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 178;
 				baseDefense: 178;
@@ -4977,6 +5006,9 @@ export type PokemonSettingsV0770PokemonPalossandNormal = S<
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.2;
+				shadowDodgeProbability: 0.2;
 			};
 			familyId: "FAMILY_SANDYGAST";
 			form: "PALOSSAND_NORMAL";
@@ -4993,6 +5025,12 @@ export type PokemonSettingsV0770PokemonPalossandNormal = S<
 			pokedexWeightKg: 250;
 			pokemonId: "PALOSSAND";
 			quickMoves: ["ASTONISH_FAST", "MUD_SHOT_FAST", "SAND_ATTACK_FAST"];
+			shadow: {
+				purificationCandyNeeded: 3;
+				purificationStardustNeeded: 3000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 178;
 				baseDefense: 178;

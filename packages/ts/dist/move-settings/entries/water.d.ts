@@ -658,7 +658,6 @@ export type MoveSettingsVnBm009 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_009";
-			obMoveSettingsNumber18: [250, 300, 350, 450];
 			pokemonType: "POKEMON_TYPE_WATER";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -677,7 +676,6 @@ export type MoveSettingsVnBm025 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_025";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_WATER";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -696,7 +694,6 @@ export type MoveSettingsVnBm033 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_033";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_WATER";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -715,7 +712,6 @@ export type MoveSettingsVnBm046 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_046";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_WATER";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -734,7 +730,6 @@ export type MoveSettingsVnBm049 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_049";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_WATER";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -753,7 +748,6 @@ export type MoveSettingsVnBm051 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_051";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_WATER";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;

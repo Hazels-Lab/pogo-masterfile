@@ -986,7 +986,6 @@ pub struct CombatSettings {
     pub minigame_submit_score_duration_seconds: f64,
     pub normal_effective_flyout_duration_turns: u64,
     pub not_very_effective_flyout_duration_turns: u64,
-    pub ob_combat_settings_not_pushed_bool2: bool,
     pub purified_pokemon_attack_multiplier_vs_shadow: f64,
     pub quick_swap_cooldown_duration_seconds: f64,
     pub round_duration_seconds: f64,
@@ -2555,10 +2554,6 @@ pub struct RoutePlaySettings {
     pub margin_minimum_meters: u64,
     pub margin_percentage: f64,
     pub min_player_level: u64,
-    pub ob_route_play_settings_number29: u64,
-    pub ob_route_play_settings_number30: f64,
-    pub ob_route_play_settings_number33: f64,
-    pub ob_route_play_settings_number45: u64,
     pub resume_range_meters: u64,
     pub route_engagement_stats_shard_count: u64,
     pub route_expiration_minutes: u64,
@@ -2915,7 +2910,7 @@ pub struct VnextBattleConfig {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct VsSeekerClientSettings {
-    pub allowed_vs_seeker_league_template_id: [String; 3],
+    pub allowed_vs_seeker_league_template_id: [String; 2],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

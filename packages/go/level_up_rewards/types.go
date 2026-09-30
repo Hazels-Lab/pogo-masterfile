@@ -16,7 +16,6 @@ type LevelUpRewards struct {
 	ItemsUnlocked              []string                                  `json:"itemsUnlocked,omitempty"`
 	Level                      uint64                                    `json:"level"`
 	NeutralAvatarItemTemplates *LevelUpRewardsNeutralAvatarItemTemplates `json:"neutralAvatarItemTemplates,omitempty"`
-	ObLevelUpRewardsNumber9    *float64                                  `json:"obLevelUpRewardsNumber9,omitempty"`
 }
 
 type LevelUpRewardsEntry struct {

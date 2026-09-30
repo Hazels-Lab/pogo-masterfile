@@ -465,7 +465,6 @@ export type MoveSettingsVnBm017 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_017";
-			obMoveSettingsNumber18: [250, 300, 350, 450];
 			pokemonType: "POKEMON_TYPE_GRASS";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -484,7 +483,6 @@ export type MoveSettingsVnBm035 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_035";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_GRASS";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -503,7 +501,6 @@ export type MoveSettingsVnBm036 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_036";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_GRASS";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -522,7 +519,6 @@ export type MoveSettingsVnBm045 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_045";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_GRASS";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -541,7 +537,6 @@ export type MoveSettingsVnBm047 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_047";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_GRASS";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;

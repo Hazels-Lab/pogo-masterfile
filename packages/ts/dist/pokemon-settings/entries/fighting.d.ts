@@ -4018,10 +4018,14 @@ export type PokemonSettingsV0674PokemonPancham = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 10;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.3;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 50;
+					candyCostPurified: 45;
 					evolution: "PANGORO";
 					questDisplay: [
 						{
@@ -4044,6 +4048,12 @@ export type PokemonSettingsV0674PokemonPancham = S<
 			pokedexWeightKg: 8;
 			pokemonId: "PANCHAM";
 			quickMoves: ["LOW_KICK_FAST", "TACKLE_FAST"];
+			shadow: {
+				purificationCandyNeeded: 5;
+				purificationStardustNeeded: 5000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 145;
 				baseDefense: 107;
@@ -4083,10 +4093,14 @@ export type PokemonSettingsV0674PokemonPanchamNormal = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 10;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.3;
+				shadowDodgeProbability: 0.2;
 			};
 			evolutionBranch: [
 				{
 					candyCost: 50;
+					candyCostPurified: 45;
 					evolution: "PANGORO";
 					form: "PANGORO_NORMAL";
 					questDisplay: [
@@ -4111,6 +4125,12 @@ export type PokemonSettingsV0674PokemonPanchamNormal = S<
 			pokedexWeightKg: 8;
 			pokemonId: "PANCHAM";
 			quickMoves: ["LOW_KICK_FAST", "TACKLE_FAST"];
+			shadow: {
+				purificationCandyNeeded: 5;
+				purificationStardustNeeded: 5000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 145;
 				baseDefense: 107;
@@ -4153,6 +4173,9 @@ export type PokemonSettingsV0675PokemonPangoro = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 10;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.1;
+				shadowDodgeProbability: 0.2;
 			};
 			familyId: "FAMILY_PANCHAM";
 			heightStdDev: 0.2625;
@@ -4169,6 +4192,12 @@ export type PokemonSettingsV0675PokemonPangoro = S<
 			pokedexWeightKg: 136;
 			pokemonId: "PANGORO";
 			quickMoves: ["LOW_KICK_FAST", "SNARL_FAST", "BULLET_PUNCH_FAST", "KARATE_CHOP_FAST"];
+			shadow: {
+				purificationCandyNeeded: 5;
+				purificationStardustNeeded: 5000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 226;
 				baseDefense: 146;
@@ -4212,6 +4241,9 @@ export type PokemonSettingsV0675PokemonPangoroNormal = S<
 				minPokemonActionFrequencyS: 0.2;
 				movementTimerS: 10;
 				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.1;
+				shadowDodgeProbability: 0.2;
 			};
 			familyId: "FAMILY_PANCHAM";
 			form: "PANGORO_NORMAL";
@@ -4229,6 +4261,12 @@ export type PokemonSettingsV0675PokemonPangoroNormal = S<
 			pokedexWeightKg: 136;
 			pokemonId: "PANGORO";
 			quickMoves: ["LOW_KICK_FAST", "SNARL_FAST", "BULLET_PUNCH_FAST", "KARATE_CHOP_FAST"];
+			shadow: {
+				purificationCandyNeeded: 5;
+				purificationStardustNeeded: 5000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
 			stats: {
 				baseAttack: 226;
 				baseDefense: 146;

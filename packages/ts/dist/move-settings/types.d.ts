@@ -23,7 +23,6 @@ export interface MoveSettingsData {
 	healScalar?: number;
 	isLocked?: boolean;
 	movementId: string;
-	obMoveSettingsNumber18?: [number, number, number, number];
 	pokemonType: TypeEffectiveTemplateID;
 	power?: number;
 	staminaLossScalar?: number;

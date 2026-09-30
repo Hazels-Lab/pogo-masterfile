@@ -441,7 +441,6 @@ export type MoveSettingsVnBm003 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_003";
-			obMoveSettingsNumber18: [250, 300, 350, 450];
 			pokemonType: "POKEMON_TYPE_ELECTRIC";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -460,7 +459,6 @@ export type MoveSettingsVnBm021 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_021";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_ELECTRIC";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
@@ -479,7 +477,6 @@ export type MoveSettingsVnBm038 = S<
 			damageWindowStartMs: 2000;
 			durationMs: 2500;
 			movementId: "VN_BM_038";
-			obMoveSettingsNumber18: [350, 400, 450, 550];
 			pokemonType: "POKEMON_TYPE_ELECTRIC";
 			staminaLossScalar: 0.01;
 			trainerLevelMax: 100;
