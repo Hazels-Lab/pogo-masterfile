@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1076 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1077 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -37,6 +37,7 @@ export interface IapItemDisplayData {
 		| "POSTCARD_EXPANSION_1_description";
 	hidden?: boolean;
 	imageUrl?:
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F2ba1ef76_PGO-MCS_GMAX_Cinderance_Max-Battle_v2-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F3cd7734c_PGO-MCS_Harvest_Festival_2026_TICKET_v1-1024x512_nologo.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F13d4dacd_PGO-MCS_Avatar_Maschiff_Top_v2-1024x576%20no%20logo.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png"
@@ -59,6 +60,7 @@ export interface IapItemDisplayData {
 		| "2026-01-25T23:59:00"
 		| "2026-05-02T17:00:00"
 		| "2026-09-24T20:00:00"
+		| "2026-10-03T17:00:00"
 		| "2026-10-07T20:00:00"
 		| "2026-10-08T10:00:00"
 		| "2026-10-10T17:00:00"
@@ -71,6 +73,7 @@ export interface IapItemDisplayData {
 		| "1769385540000"
 		| "1777741200000"
 		| "1790280000000"
+		| "1791046800000"
 		| "1791403200000"
 		| "1791453600000"
 		| "1791651600000"
