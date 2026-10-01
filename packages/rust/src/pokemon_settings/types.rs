@@ -191,8 +191,8 @@ pub struct AlternateToDefaultIbfcSettings {
 #[serde(rename_all = "camelCase")]
 pub struct Ibfc {
     pub alternate_form: Option<String>,
+    pub alternate_forms: Option<[String; 2]>,
     pub alternate_to_default_ibfc_settings: Option<AlternateToDefaultIbfcSettings>,
-    pub aternate_forms: Option<[String; 2]>,
     pub combat_enable: Option<bool>,
     pub default_form: Option<String>,
     pub default_to_alternate_ibfc_settings: Option<AlternateToDefaultIbfcSettings>,

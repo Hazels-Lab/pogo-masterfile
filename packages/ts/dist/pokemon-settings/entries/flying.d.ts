@@ -1165,7 +1165,7 @@ export type PokemonSettingsV0845PokemonCramorant = S<
 			familyId: "FAMILY_CRAMORANT";
 			heightStdDev: 0.1;
 			ibfc: {
-				aternateForms: ["CRAMORANT_GULPING", "CRAMORANT_GORGING"];
+				AlternateForms: ["CRAMORANT_GULPING", "CRAMORANT_GORGING"];
 				combatEnable: true;
 				defaultForm: "CRAMORANT_NORMAL";
 			};

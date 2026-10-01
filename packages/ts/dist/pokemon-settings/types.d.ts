@@ -326,6 +326,7 @@ export interface PokemonSettingsData {
 	heightStdDev: number;
 	ibfc: {
 		alternateForm?: "AEGISLASH_BLADE" | "MIMIKYU_BUSTED" | "MORPEKO_HANGRY";
+		AlternateForms?: ["CRAMORANT_GULPING", "CRAMORANT_GORGING"];
 		alternateToDefaultIbfcSettings?: {
 			animationDurationTurns: number;
 			animationPlayPoint: "AFTER_CM_ATTACKER" | "BEFORE_CM_ATTACKER";
@@ -333,7 +334,6 @@ export interface PokemonSettingsData {
 			ibfcVfxKey: "ALTERNATE_TO_DEFAULT";
 			replacementMove?: "AURA_WHEEL_ELECTRIC";
 		};
-		aternateForms?: ["CRAMORANT_GULPING", "CRAMORANT_GORGING"];
 		combatEnable?: boolean;
 		defaultForm?: "AEGISLASH_SHIELD" | "CRAMORANT_NORMAL" | "MIMIKYU_DISGUISED" | "MORPEKO_FULL_BELLY";
 		defaultToAlternateIbfcSettings?: {

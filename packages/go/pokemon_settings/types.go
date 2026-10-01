@@ -155,8 +155,8 @@ type PokemonSettingsAlternateToDefaultIbfcSettings struct {
 
 type PokemonSettingsIbfc struct {
 	AlternateForm                  *string                                        `json:"alternateForm,omitempty"`
+	AlternateForms                 *[2]string                                     `json:"AlternateForms,omitempty"`
 	AlternateToDefaultIbfcSettings *PokemonSettingsAlternateToDefaultIbfcSettings `json:"alternateToDefaultIbfcSettings,omitempty"`
-	AternateForms                  *[2]string                                     `json:"aternateForms,omitempty"`
 	CombatEnable                   *bool                                          `json:"combatEnable,omitempty"`
 	DefaultForm                    *string                                        `json:"defaultForm,omitempty"`
 	DefaultToAlternateIbfcSettings *PokemonSettingsAlternateToDefaultIbfcSettings `json:"defaultToAlternateIbfcSettings,omitempty"`

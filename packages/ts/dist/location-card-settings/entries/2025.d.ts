@@ -8,7 +8,6 @@ export type LocationCardSettings2025AmsterdamCitysafari001 = S<
 		"LC_2025_AMSTERDAM_CITYSAFARI_001",
 		{
 			imageUrl: "lc_citysafari2025_amsterdam";
-			locationCard: "LC_2025_AMSTERDAM_CITYSAFARI_001";
 		}
 	>
 >;
@@ -17,7 +16,6 @@ export type LocationCardSettings2025AnaheimWorldChampionships001 = S<
 		"LC_2025_ANAHEIM_WORLD_CHAMPIONSHIPS_001",
 		{
 			imageUrl: "lc_Wcs2025_anaheim";
-			locationCard: "LC_2025_ANAHEIM_WORLD_CHAMPIONSHIPS_001";
 		}
 	>
 >;
@@ -26,7 +24,6 @@ export type LocationCardSettings2025BangkokCitysafari001 = S<
 		"LC_2025_BANGKOK_CITYSAFARI_001",
 		{
 			imageUrl: "lc_citysafari2025_bangkok";
-			locationCard: "LC_2025_BANGKOK_CITYSAFARI_001";
 		}
 	>
 >;
@@ -35,7 +32,6 @@ export type LocationCardSettings2025BerlinRoadtrip001 = S<
 		"LC_2025_BERLIN_ROADTRIP_001",
 		{
 			imageUrl: "lc_roadtrip2025_berlin";
-			locationCard: "LC_2025_BERLIN_ROADTRIP_001";
 		}
 	>
 >;
@@ -44,7 +40,6 @@ export type LocationCardSettings2025CancunCitysafari001 = S<
 		"LC_2025_CANCUN_CITYSAFARI_001",
 		{
 			imageUrl: "lc_citysafari2025_cancun";
-			locationCard: "LC_2025_CANCUN_CITYSAFARI_001";
 		}
 	>
 >;
@@ -53,7 +48,6 @@ export type LocationCardSettings2025CherryBlossomFestival = S<
 		"LC_2025_CHERRY_BLOSSOM_FESTIVAL",
 		{
 			imageUrl: "lc_CherryBlossomFest2025_yeouido";
-			locationCard: "LC_2025_CHERRY_BLOSSOM_FESTIVAL";
 		}
 	>
 >;
@@ -62,7 +56,6 @@ export type LocationCardSettings2025CologneRoadtrip001 = S<
 		"LC_2025_COLOGNE_ROADTRIP_001",
 		{
 			imageUrl: "lc_roadtrip2025_cologne";
-			locationCard: "LC_2025_COLOGNE_ROADTRIP_001";
 		}
 	>
 >;
@@ -71,7 +64,6 @@ export type LocationCardSettings2025GowaNagasaki = S<
 		"LC_2025_GOWA_NAGASAKI",
 		{
 			imageUrl: "lc_nagasaki2025";
-			locationCard: "LC_2025_GOWA_NAGASAKI";
 		}
 	>
 >;
@@ -80,7 +72,6 @@ export type LocationCardSettings2025HagueRoadtrip001 = S<
 		"LC_2025_HAGUE_ROADTRIP_001",
 		{
 			imageUrl: "lc_roadtrip2025_hague";
-			locationCard: "LC_2025_HAGUE_ROADTRIP_001";
 		}
 	>
 >;
@@ -89,7 +80,6 @@ export type LocationCardSettings2025JangheungSummerFestival = S<
 		"LC_2025_JANGHEUNG_SUMMER_FESTIVAL",
 		{
 			imageUrl: "lc_Jangheung_Water_Festival_2025";
-			locationCard: "LC_2025_JANGHEUNG_SUMMER_FESTIVAL";
 		}
 	>
 >;
@@ -99,7 +89,6 @@ export type LocationCardSettings2025JerseycityGofest001 = S<
 		{
 			cardType: "LOCATION_CARD";
 			imageUrl: "lc_GoFest2025_jerseycity";
-			locationCard: "LC_2025_JERSEYCITY_GOFEST_001";
 		}
 	>
 >;
@@ -108,7 +97,6 @@ export type LocationCardSettings2025KrPyeongchangWinterFestival = S<
 		"LC_2025_KR_PYEONGCHANG_WINTER_FESTIVAL",
 		{
 			imageUrl: "lc_2025_kr_pyeongchangWinterFestival";
-			locationCard: "LC_2025_KR_PYEONGCHANG_WINTER_FESTIVAL";
 		}
 	>
 >;
@@ -117,7 +105,6 @@ export type LocationCardSettings2025LondonRoadtrip001 = S<
 		"LC_2025_LONDON_ROADTRIP_001",
 		{
 			imageUrl: "lc_roadtrip2025_london";
-			locationCard: "LC_2025_LONDON_ROADTRIP_001";
 		}
 	>
 >;
@@ -127,7 +114,6 @@ export type LocationCardSettings2025LosangelesGotour001 = S<
 		{
 			cardType: "LOCATION_CARD";
 			imageUrl: "lc_GoTour2025_losAngeles";
-			locationCard: "LC_2025_LOSANGELES_GOTOUR_001";
 		}
 	>
 >;
@@ -136,7 +122,6 @@ export type LocationCardSettings2025ManchesterRoadtrip001 = S<
 		"LC_2025_MANCHESTER_ROADTRIP_001",
 		{
 			imageUrl: "lc_roadtrip2025_manchester";
-			locationCard: "LC_2025_MANCHESTER_ROADTRIP_001";
 		}
 	>
 >;
@@ -146,7 +131,6 @@ export type LocationCardSettings2025NewtaipeicityGotour001 = S<
 		{
 			cardType: "LOCATION_CARD";
 			imageUrl: "lc_GoTour2025_newTaipeiCity";
-			locationCard: "LC_2025_NEWTAIPEICITY_GOTOUR_001";
 		}
 	>
 >;
@@ -155,7 +139,6 @@ export type LocationCardSettings2025Nfl001 = S<
 		"LC_2025_NFL_001",
 		{
 			imageUrl: "lc_NFL_cardinals";
-			locationCard: "LC_2025_NFL_001";
 		}
 	>
 >;
@@ -164,7 +147,6 @@ export type LocationCardSettings2025OsakaEvent001 = S<
 		"LC_2025_OSAKA_EVENT_001",
 		{
 			imageUrl: "lc_OsakaEvent2025_01";
-			locationCard: "LC_2025_OSAKA_EVENT_001";
 		}
 	>
 >;
@@ -173,7 +155,6 @@ export type LocationCardSettings2025OsakaEvent002 = S<
 		"LC_2025_OSAKA_EVENT_002",
 		{
 			imageUrl: "lc_OsakaEvent2025_02";
-			locationCard: "LC_2025_OSAKA_EVENT_002";
 		}
 	>
 >;
@@ -182,7 +163,6 @@ export type LocationCardSettings2025OsakaEvent003 = S<
 		"LC_2025_OSAKA_EVENT_003",
 		{
 			imageUrl: "lc_OsakaEvent2025_03";
-			locationCard: "LC_2025_OSAKA_EVENT_003";
 		}
 	>
 >;
@@ -192,7 +172,6 @@ export type LocationCardSettings2025OsakaGofest001 = S<
 		{
 			cardType: "LOCATION_CARD";
 			imageUrl: "lc_GoFest2025_osaka";
-			locationCard: "LC_2025_OSAKA_GOFEST_001";
 		}
 	>
 >;
@@ -201,7 +180,6 @@ export type LocationCardSettings2025Paris001 = S<
 		"LC_2025_PARIS_001",
 		{
 			imageUrl: "lc_Paris2025_01";
-			locationCard: "LC_2025_PARIS_001";
 		}
 	>
 >;
@@ -210,7 +188,6 @@ export type LocationCardSettings2025Paris002 = S<
 		"LC_2025_PARIS_002",
 		{
 			imageUrl: "lc_Paris2025_02";
-			locationCard: "LC_2025_PARIS_002";
 		}
 	>
 >;
@@ -220,7 +197,6 @@ export type LocationCardSettings2025ParisGofest001 = S<
 		{
 			cardType: "LOCATION_CARD";
 			imageUrl: "lc_GoFest2025_paris";
-			locationCard: "LC_2025_PARIS_GOFEST_001";
 		}
 	>
 >;
@@ -229,7 +205,6 @@ export type LocationCardSettings2025ParisRoadtrip001 = S<
 		"LC_2025_PARIS_ROADTRIP_001",
 		{
 			imageUrl: "lc_roadtrip2025_paris";
-			locationCard: "LC_2025_PARIS_ROADTRIP_001";
 		}
 	>
 >;
@@ -238,7 +213,6 @@ export type LocationCardSettings2025TaipeicityAmusementPark = S<
 		"LC_2025_TAIPEICITY_AMUSEMENT_PARK",
 		{
 			imageUrl: "lc_taipeiAmusementPark_2025";
-			locationCard: "LC_2025_TAIPEICITY_AMUSEMENT_PARK";
 		}
 	>
 >;
@@ -247,7 +221,6 @@ export type LocationCardSettings2025ValenciaCitysafari001 = S<
 		"LC_2025_VALENCIA_CITYSAFARI_001",
 		{
 			imageUrl: "lc_citysafari2025_valencia";
-			locationCard: "LC_2025_VALENCIA_CITYSAFARI_001";
 		}
 	>
 >;
@@ -256,7 +229,6 @@ export type LocationCardSettings2025ValenciaRoadtrip001 = S<
 		"LC_2025_VALENCIA_ROADTRIP_001",
 		{
 			imageUrl: "lc_roadtrip2025_valencia";
-			locationCard: "LC_2025_VALENCIA_ROADTRIP_001";
 		}
 	>
 >;
@@ -265,7 +237,6 @@ export type LocationCardSettings2025VancouverCitysafari001 = S<
 		"LC_2025_VANCOUVER_CITYSAFARI_001",
 		{
 			imageUrl: "lc_citysafari2025_vancouver";
-			locationCard: "LC_2025_VANCOUVER_CITYSAFARI_001";
 		}
 	>
 >;
