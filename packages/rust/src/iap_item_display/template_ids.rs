@@ -519,6 +519,8 @@ pub enum IapItemDisplayTemplateId {
     General1Ticket5,
     #[serde(rename = "general2.ticket.3")]
     General2Ticket3,
+    #[serde(rename = "general2.ticket.9")]
+    General2Ticket9,
     #[serde(rename = "general2.ticket.11")]
     General2Ticket11,
     #[serde(rename = "general4.medium.1")]

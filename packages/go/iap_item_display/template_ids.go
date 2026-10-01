@@ -261,6 +261,7 @@ const (
 	IapItemDisplayTemplateIDFlairFreeBundle0                                             IapItemDisplayTemplateID = "FLAIR_FREE_BUNDLE_0"
 	IapItemDisplayTemplateIDGeneral1Ticket5                                              IapItemDisplayTemplateID = "general1.ticket.5"
 	IapItemDisplayTemplateIDGeneral2Ticket3                                              IapItemDisplayTemplateID = "general2.ticket.3"
+	IapItemDisplayTemplateIDGeneral2Ticket9                                              IapItemDisplayTemplateID = "general2.ticket.9"
 	IapItemDisplayTemplateIDGeneral2Ticket11                                             IapItemDisplayTemplateID = "general2.ticket.11"
 	IapItemDisplayTemplateIDGeneral4Medium1                                              IapItemDisplayTemplateID = "general4.medium.1"
 	IapItemDisplayTemplateIDGeneral6Small1                                               IapItemDisplayTemplateID = "general6.small.1"
@@ -1340,6 +1341,7 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDFlairFreeBundle0,
 	IapItemDisplayTemplateIDGeneral1Ticket5,
 	IapItemDisplayTemplateIDGeneral2Ticket3,
+	IapItemDisplayTemplateIDGeneral2Ticket9,
 	IapItemDisplayTemplateIDGeneral2Ticket11,
 	IapItemDisplayTemplateIDGeneral4Medium1,
 	IapItemDisplayTemplateIDGeneral6Small1,
