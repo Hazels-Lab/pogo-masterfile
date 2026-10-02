@@ -150,14 +150,14 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "iapItemDisplay":
-		var e iap_item_display.IapItemDisplayEntry
+	case "badgeSettings":
+		var e badge_settings.BadgeSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
 		return e, nil
-	case "badgeSettings":
-		var e badge_settings.BadgeSettingsEntry
+	case "iapItemDisplay":
+		var e iap_item_display.IapItemDisplayEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}

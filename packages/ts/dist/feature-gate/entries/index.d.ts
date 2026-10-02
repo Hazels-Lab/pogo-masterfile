@@ -1,8 +1,35 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 34 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 37 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
 
+export type FeatureGateAcForegroundCatchEncounter = S<
+	FeatureGate<
+		"AC_FOREGROUND_CATCH_ENCOUNTER_FEATURE_GATE",
+		{
+			rolloutPercentage: 100;
+			status: 1284637195;
+		}
+	>
+>;
+export type FeatureGateAcForegroundCatchMapFocus = S<
+	FeatureGate<
+		"AC_FOREGROUND_CATCH_MAP_FOCUS_FEATURE_GATE",
+		{
+			rolloutPercentage: 100;
+			status: 471823352;
+		}
+	>
+>;
+export type FeatureGateAcForegroundCatchPoiFocus = S<
+	FeatureGate<
+		"AC_FOREGROUND_CATCH_POI_FOCUS_FEATURE_GATE",
+		{
+			rolloutPercentage: 100;
+			status: 812739461;
+		}
+	>
+>;
 export type FeatureGateAdminGmNiaOpsOnlyFilterAms = S<
 	FeatureGate<
 		"ADMIN_GM_NIA_OPS_ONLY_FILTER_AMS_FEATURE_GATE",
@@ -354,6 +381,9 @@ export type FeatureGateWayfarerSubmitLinkout = S<
 >;
 
 export type FeatureGateMasterfileEntry =
+	| FeatureGateAcForegroundCatchEncounter
+	| FeatureGateAcForegroundCatchMapFocus
+	| FeatureGateAcForegroundCatchPoiFocus
 	| FeatureGateAdminGmNiaOpsOnlyFilterAms
 	| FeatureGateAdvSyncTwo
 	| FeatureGateAms

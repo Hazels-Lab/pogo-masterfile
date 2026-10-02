@@ -101,6 +101,12 @@ import type {
 	LocationCardSettingsCitysafari2025Miami,
 	LocationCardSettingsCitysafari2025Sydney,
 	LocationCardSettingsCr2026001,
+	LocationCardSettingsEmeaMuseum01,
+	LocationCardSettingsEmeaMuseum02,
+	LocationCardSettingsEmeaMuseum03,
+	LocationCardSettingsEmeaMuseum04,
+	LocationCardSettingsEmeaMuseum05,
+	LocationCardSettingsEmeaMuseum06,
 	LocationCardSettingsIdCarFreeDay,
 	LocationCardSettingsJapanStampRally1,
 	LocationCardSettingsJapanStampRally2,
@@ -366,6 +372,12 @@ export interface LocationCardSettingsLookup {
 	LC_CITYSAFARI2025_MIAMI: LocationCardSettingsCitysafari2025Miami;
 	LC_CITYSAFARI2025_SYDNEY: LocationCardSettingsCitysafari2025Sydney;
 	LC_CR_2026_001: LocationCardSettingsCr2026001;
+	LC_EMEA_MUSEUM_01: LocationCardSettingsEmeaMuseum01;
+	LC_EMEA_MUSEUM_02: LocationCardSettingsEmeaMuseum02;
+	LC_EMEA_MUSEUM_03: LocationCardSettingsEmeaMuseum03;
+	LC_EMEA_MUSEUM_04: LocationCardSettingsEmeaMuseum04;
+	LC_EMEA_MUSEUM_05: LocationCardSettingsEmeaMuseum05;
+	LC_EMEA_MUSEUM_06: LocationCardSettingsEmeaMuseum06;
 	LC_ID_CAR_FREE_DAY: LocationCardSettingsIdCarFreeDay;
 	LC_JAPAN_STAMP_RALLY_1: LocationCardSettingsJapanStampRally1;
 	LC_JAPAN_STAMP_RALLY_2: LocationCardSettingsJapanStampRally2;

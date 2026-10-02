@@ -10,6 +10,7 @@ pub struct Pokemon {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PokemonBanList {
+    pub lgdbihdlhod: Option<String>,
     pub pokemon: Vec<Pokemon>,
 }
 

@@ -5,6 +5,9 @@ package feature_gate
 type FeatureGateTemplateID string
 
 const (
+	FeatureGateTemplateIDAcForegroundCatchEncounterFeatureGate              FeatureGateTemplateID = "AC_FOREGROUND_CATCH_ENCOUNTER_FEATURE_GATE"
+	FeatureGateTemplateIDAcForegroundCatchMapFocusFeatureGate               FeatureGateTemplateID = "AC_FOREGROUND_CATCH_MAP_FOCUS_FEATURE_GATE"
+	FeatureGateTemplateIDAcForegroundCatchPoiFocusFeatureGate               FeatureGateTemplateID = "AC_FOREGROUND_CATCH_POI_FOCUS_FEATURE_GATE"
 	FeatureGateTemplateIDAdminGmNiaOpsOnlyFilterAmsFeatureGate              FeatureGateTemplateID = "ADMIN_GM_NIA_OPS_ONLY_FILTER_AMS_FEATURE_GATE"
 	FeatureGateTemplateIDAdvSyncTwoFeatureGate                              FeatureGateTemplateID = "ADV_SYNC_TWO_FEATURE_GATE"
 	FeatureGateTemplateIDAmsFeatureGate                                     FeatureGateTemplateID = "AMS_FEATURE_GATE"
@@ -42,6 +45,9 @@ const (
 )
 
 var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
+	FeatureGateTemplateIDAcForegroundCatchEncounterFeatureGate,
+	FeatureGateTemplateIDAcForegroundCatchMapFocusFeatureGate,
+	FeatureGateTemplateIDAcForegroundCatchPoiFocusFeatureGate,
 	FeatureGateTemplateIDAdminGmNiaOpsOnlyFilterAmsFeatureGate,
 	FeatureGateTemplateIDAdvSyncTwoFeatureGate,
 	FeatureGateTemplateIDAmsFeatureGate,

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 218 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 219 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -5244,6 +5244,69 @@ export type PokemonExtendedSettingsV0068PokemonMachampNormal = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0068PokemonMachampWildarea202601 = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0068_POKEMON_MACHAMP_WILDAREA_2026_01",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 24.122;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 32.5;
+						maxReticleSize: 14;
+						scale: 12.06;
+					};
+					maxStationVisualSettings: {
+						scale: 1.64;
+					};
+				},
+				{
+					averageHeightM: 25;
+					breadMode: "BREAD_DOUGH_MODE";
+					camera: {
+						cylinderHeightM: 2.55;
+						cylinderRadiusM: 1.5;
+					};
+					catchOverrideSettings: {
+						collisionHeadRadiusM: 0.1335;
+						collisionHeightM: 1.246;
+						collisionRadiusM: 1;
+					};
+					maxBattleVisualSettings: {
+						scale: 17.5;
+						yOffset: -6;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 24;
+						maxReticleSize: 10;
+						scale: 5.672;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 0.68;
+					};
+					maxStationVisualSettings: {
+						scale: 1;
+					};
+					modelHeight: 2.57;
+					modelScaleV2: 0.86;
+				},
+			];
+			form: 3369;
+			sizeSettings: {
+				mLowerBound: 1.2;
+				mUpperBound: 2;
+				xlUpperBound: 2.4;
+				xsLowerBound: 0.8;
+				xxlUpperBound: 2.8;
+				xxsLowerBound: 0.784;
+			};
+			uniqueId: "MACHAMP";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0092PokemonGastlyNormal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0092_POKEMON_GASTLY_NORMAL",
@@ -10135,6 +10198,7 @@ export type PokemonExtendedSettingsBreadOverridesFormMasterfileEntry =
 	| PokemonExtendedSettingsV0066PokemonMachopNormal
 	| PokemonExtendedSettingsV0067PokemonMachokeNormal
 	| PokemonExtendedSettingsV0068PokemonMachampNormal
+	| PokemonExtendedSettingsV0068PokemonMachampWildarea202601
 	| PokemonExtendedSettingsV0092PokemonGastlyNormal
 	| PokemonExtendedSettingsV0093PokemonHaunterNormal
 	| PokemonExtendedSettingsV0098PokemonKrabbyNormal

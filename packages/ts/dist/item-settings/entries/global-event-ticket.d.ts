@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 57 entries.
+// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 58 entries.
 
 import type { S } from "../../_utils";
 import type { ItemSettings } from "../types";
@@ -1558,6 +1558,42 @@ export type ItemSettingsItemEventTicketS24Oct17Hatch = S<
 		}
 	>
 >;
+export type ItemSettingsItemEventTicketS24Oct24Maxbattle = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S24_OCT_24_MAXBATTLE",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "ITEM_EVENT_TICKET_S24_OCT_24_MAXBATTLE_desc";
+			globalEventTicket: {
+				backgroundImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fafa245c1_PGO-MCS_Lake_Guardians_Max_Battle_Day_v1-1025x576.jpg";
+				clientEventEndTimeUtcMs: "1792861200000";
+				clientEventStartTimeUtcMs: "1792850400000";
+				detailsLinkKey: "details_link_key_dmax_sinnoh_lake_max_battle";
+				displayV2Enabled: true;
+				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fafa245c1_PGO-MCS_Lake_Guardians_Max_Battle_Day_v1-1025x576.jpg";
+				eventEndTime: "2026-10-24T17:00:00";
+				eventStartTime: "2026-10-24T14:00:00";
+				iconRewards: [
+					{
+						item: {
+							amount: 1;
+							item: "ITEM_MAX_BOOST";
+						};
+						type: "ITEM";
+					},
+					{
+						exp: 25000;
+						type: "EXPERIENCE";
+					},
+				];
+				itemBagDescriptionKey: "ITEM_EVENT_TICKET_S24_OCT_24_MAXBATTLE_details";
+				textRewardsKey: "text_rewards_key_dmaxSinnohLakeMaxBattle26";
+			};
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general2.ticket.6.DMAX_SINNOH_LAKE_MAX_BATTLE";
+		}
+	>
+>;
 export type ItemSettingsItemEventTicketS24Sep12Community = S<
 	ItemSettings<
 		"ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY",
@@ -1972,6 +2008,7 @@ export type ItemSettingsGlobalEventTicketMasterfileEntry =
 	| ItemSettingsItemEventTicketS24Oct10Community
 	| ItemSettingsItemEventTicketS24Oct10CommunityToGift
 	| ItemSettingsItemEventTicketS24Oct17Hatch
+	| ItemSettingsItemEventTicketS24Oct24Maxbattle
 	| ItemSettingsItemEventTicketS24Sep12Community
 	| ItemSettingsItemEventTicketS24Sep12CommunityToGift
 	| ItemSettingsItemEventTicketS24Sep19Megaraid

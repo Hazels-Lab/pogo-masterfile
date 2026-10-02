@@ -17,7 +17,6 @@ export type CombatLeagueDefaultGreat = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",

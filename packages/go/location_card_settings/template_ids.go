@@ -105,6 +105,12 @@ const (
 	LocationCardSettingsTemplateIDLcCitysafari2025Miami                                   LocationCardSettingsTemplateID = "LC_CITYSAFARI2025_MIAMI"
 	LocationCardSettingsTemplateIDLcCitysafari2025Sydney                                  LocationCardSettingsTemplateID = "LC_CITYSAFARI2025_SYDNEY"
 	LocationCardSettingsTemplateIDLcCr2026001                                             LocationCardSettingsTemplateID = "LC_CR_2026_001"
+	LocationCardSettingsTemplateIDLcEmeaMuseum01                                          LocationCardSettingsTemplateID = "LC_EMEA_MUSEUM_01"
+	LocationCardSettingsTemplateIDLcEmeaMuseum02                                          LocationCardSettingsTemplateID = "LC_EMEA_MUSEUM_02"
+	LocationCardSettingsTemplateIDLcEmeaMuseum03                                          LocationCardSettingsTemplateID = "LC_EMEA_MUSEUM_03"
+	LocationCardSettingsTemplateIDLcEmeaMuseum04                                          LocationCardSettingsTemplateID = "LC_EMEA_MUSEUM_04"
+	LocationCardSettingsTemplateIDLcEmeaMuseum05                                          LocationCardSettingsTemplateID = "LC_EMEA_MUSEUM_05"
+	LocationCardSettingsTemplateIDLcEmeaMuseum06                                          LocationCardSettingsTemplateID = "LC_EMEA_MUSEUM_06"
 	LocationCardSettingsTemplateIDLcIdCarFreeDay                                          LocationCardSettingsTemplateID = "LC_ID_CAR_FREE_DAY"
 	LocationCardSettingsTemplateIDLcJapanStampRally1                                      LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_1"
 	LocationCardSettingsTemplateIDLcJapanStampRally2                                      LocationCardSettingsTemplateID = "LC_JAPAN_STAMP_RALLY_2"
@@ -370,6 +376,12 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLcCitysafari2025Miami,
 	LocationCardSettingsTemplateIDLcCitysafari2025Sydney,
 	LocationCardSettingsTemplateIDLcCr2026001,
+	LocationCardSettingsTemplateIDLcEmeaMuseum01,
+	LocationCardSettingsTemplateIDLcEmeaMuseum02,
+	LocationCardSettingsTemplateIDLcEmeaMuseum03,
+	LocationCardSettingsTemplateIDLcEmeaMuseum04,
+	LocationCardSettingsTemplateIDLcEmeaMuseum05,
+	LocationCardSettingsTemplateIDLcEmeaMuseum06,
 	LocationCardSettingsTemplateIDLcIdCarFreeDay,
 	LocationCardSettingsTemplateIDLcJapanStampRally1,
 	LocationCardSettingsTemplateIDLcJapanStampRally2,

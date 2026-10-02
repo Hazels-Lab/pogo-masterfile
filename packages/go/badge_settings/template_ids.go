@@ -739,6 +739,46 @@ const (
 	BadgeSettingsTemplateIDBadgeGowa2025IrlSundayTicketedCity               BadgeSettingsTemplateID = "BADGE_GOWA_2025_IRL_SUNDAY_TICKETED_CITY"
 	BadgeSettingsTemplateIDBadgeGowa2025SpecialResearchA                    BadgeSettingsTemplateID = "BADGE_GOWA_2025_SPECIAL_RESEARCH_A"
 	BadgeSettingsTemplateIDBadgeGowa2025SpecialResearchB                    BadgeSettingsTemplateID = "BADGE_GOWA_2025_SPECIAL_RESEARCH_B"
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxAddonBattle                     BadgeSettingsTemplateID = "BADGE_GOWA_2026_CDMX_ADDON_BATTLE"
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxAddonFriday                     BadgeSettingsTemplateID = "BADGE_GOWA_2026_CDMX_ADDON_FRIDAY"
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxAddonHatch                      BadgeSettingsTemplateID = "BADGE_GOWA_2026_CDMX_ADDON_HATCH"
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxAddonSaturday                   BadgeSettingsTemplateID = "BADGE_GOWA_2026_CDMX_ADDON_SATURDAY"
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxAddonSunday                     BadgeSettingsTemplateID = "BADGE_GOWA_2026_CDMX_ADDON_SUNDAY"
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxFriday                          BadgeSettingsTemplateID = "BADGE_GOWA_2026_CDMX_FRIDAY"
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxFridayEssential                 BadgeSettingsTemplateID = "BADGE_GOWA_2026_CDMX_FRIDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxSaturday                        BadgeSettingsTemplateID = "BADGE_GOWA_2026_CDMX_SATURDAY"
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxSaturdayEssential               BadgeSettingsTemplateID = "BADGE_GOWA_2026_CDMX_SATURDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxSunday                          BadgeSettingsTemplateID = "BADGE_GOWA_2026_CDMX_SUNDAY"
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxSundayEssential                 BadgeSettingsTemplateID = "BADGE_GOWA_2026_CDMX_SUNDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxTest                            BadgeSettingsTemplateID = "BADGE_GOWA_2026_CDMX_TEST"
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxTestAddonBattle                 BadgeSettingsTemplateID = "BADGE_GOWA_2026_CDMX_TEST_ADDON_BATTLE"
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxTestAddonExtraDay               BadgeSettingsTemplateID = "BADGE_GOWA_2026_CDMX_TEST_ADDON_EXTRA_DAY"
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxTestAddonHatch                  BadgeSettingsTemplateID = "BADGE_GOWA_2026_CDMX_TEST_ADDON_HATCH"
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxTestEssential                   BadgeSettingsTemplateID = "BADGE_GOWA_2026_CDMX_TEST_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxVip                             BadgeSettingsTemplateID = "BADGE_GOWA_2026_CDMX_VIP"
+	BadgeSettingsTemplateIDBadgeGowa2026Event01                             BadgeSettingsTemplateID = "BADGE_GOWA_2026_EVENT_01"
+	BadgeSettingsTemplateIDBadgeGowa2026Event02                             BadgeSettingsTemplateID = "BADGE_GOWA_2026_EVENT_02"
+	BadgeSettingsTemplateIDBadgeGowa2026Global                              BadgeSettingsTemplateID = "BADGE_GOWA_2026_GLOBAL"
+	BadgeSettingsTemplateIDBadgeGowa2026GlobalTest                          BadgeSettingsTemplateID = "BADGE_GOWA_2026_GLOBAL_TEST"
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiAddonBattle                   BadgeSettingsTemplateID = "BADGE_GOWA_2026_SENDAI_ADDON_BATTLE"
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiAddonFriday                   BadgeSettingsTemplateID = "BADGE_GOWA_2026_SENDAI_ADDON_FRIDAY"
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiAddonHatch                    BadgeSettingsTemplateID = "BADGE_GOWA_2026_SENDAI_ADDON_HATCH"
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiAddonSaturday                 BadgeSettingsTemplateID = "BADGE_GOWA_2026_SENDAI_ADDON_SATURDAY"
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiAddonSunday                   BadgeSettingsTemplateID = "BADGE_GOWA_2026_SENDAI_ADDON_SUNDAY"
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiFriday                        BadgeSettingsTemplateID = "BADGE_GOWA_2026_SENDAI_FRIDAY"
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiFridayEssential               BadgeSettingsTemplateID = "BADGE_GOWA_2026_SENDAI_FRIDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiSaturday                      BadgeSettingsTemplateID = "BADGE_GOWA_2026_SENDAI_SATURDAY"
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiSaturdayEssential             BadgeSettingsTemplateID = "BADGE_GOWA_2026_SENDAI_SATURDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiSunday                        BadgeSettingsTemplateID = "BADGE_GOWA_2026_SENDAI_SUNDAY"
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiSundayEssential               BadgeSettingsTemplateID = "BADGE_GOWA_2026_SENDAI_SUNDAY_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiTest                          BadgeSettingsTemplateID = "BADGE_GOWA_2026_SENDAI_TEST"
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiTestAddonBattle               BadgeSettingsTemplateID = "BADGE_GOWA_2026_SENDAI_TEST_ADDON_BATTLE"
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiTestAddonExtraDay             BadgeSettingsTemplateID = "BADGE_GOWA_2026_SENDAI_TEST_ADDON_EXTRA_DAY"
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiTestAddonHatch                BadgeSettingsTemplateID = "BADGE_GOWA_2026_SENDAI_TEST_ADDON_HATCH"
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiTestEssential                 BadgeSettingsTemplateID = "BADGE_GOWA_2026_SENDAI_TEST_ESSENTIAL"
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiVip                           BadgeSettingsTemplateID = "BADGE_GOWA_2026_SENDAI_VIP"
+	BadgeSettingsTemplateIDBadgeGowa2026SpecialResearchA                    BadgeSettingsTemplateID = "BADGE_GOWA_2026_SPECIAL_RESEARCH_A"
+	BadgeSettingsTemplateIDBadgeGowa2026SpecialResearchB                    BadgeSettingsTemplateID = "BADGE_GOWA_2026_SPECIAL_RESEARCH_B"
 	BadgeSettingsTemplateIDBadgeGreatLeague                                 BadgeSettingsTemplateID = "BADGE_GREAT_LEAGUE"
 	BadgeSettingsTemplateIDBadgeHatchedTotal                                BadgeSettingsTemplateID = "BADGE_HATCHED_TOTAL"
 	BadgeSettingsTemplateIDBadgeHoursDefended                               BadgeSettingsTemplateID = "BADGE_HOURS_DEFENDED"
@@ -1797,6 +1837,46 @@ var BadgeSettingsTemplateIDValues = [...]BadgeSettingsTemplateID{
 	BadgeSettingsTemplateIDBadgeGowa2025IrlSundayTicketedCity,
 	BadgeSettingsTemplateIDBadgeGowa2025SpecialResearchA,
 	BadgeSettingsTemplateIDBadgeGowa2025SpecialResearchB,
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxAddonBattle,
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxAddonFriday,
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxAddonHatch,
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxAddonSaturday,
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxAddonSunday,
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxFriday,
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxFridayEssential,
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxSaturday,
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxSaturdayEssential,
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxSunday,
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxSundayEssential,
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxTest,
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxTestAddonBattle,
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxTestAddonExtraDay,
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxTestAddonHatch,
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxTestEssential,
+	BadgeSettingsTemplateIDBadgeGowa2026CdmxVip,
+	BadgeSettingsTemplateIDBadgeGowa2026Event01,
+	BadgeSettingsTemplateIDBadgeGowa2026Event02,
+	BadgeSettingsTemplateIDBadgeGowa2026Global,
+	BadgeSettingsTemplateIDBadgeGowa2026GlobalTest,
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiAddonBattle,
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiAddonFriday,
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiAddonHatch,
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiAddonSaturday,
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiAddonSunday,
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiFriday,
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiFridayEssential,
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiSaturday,
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiSaturdayEssential,
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiSunday,
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiSundayEssential,
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiTest,
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiTestAddonBattle,
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiTestAddonExtraDay,
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiTestAddonHatch,
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiTestEssential,
+	BadgeSettingsTemplateIDBadgeGowa2026SendaiVip,
+	BadgeSettingsTemplateIDBadgeGowa2026SpecialResearchA,
+	BadgeSettingsTemplateIDBadgeGowa2026SpecialResearchB,
 	BadgeSettingsTemplateIDBadgeGreatLeague,
 	BadgeSettingsTemplateIDBadgeHatchedTotal,
 	BadgeSettingsTemplateIDBadgeHoursDefended,

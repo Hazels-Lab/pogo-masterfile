@@ -39,7 +39,7 @@ export interface FormSettingsData {
 			| "pm0613_00_pgo_winter2020"
 			| "pm0614_00_pgo_winter2020";
 		assetBundleValue?: number;
-		form: string;
+		form: number | string;
 		isCostume?: boolean;
 		sillouetteObfuscationGroup?: {
 			groupNumber: number;

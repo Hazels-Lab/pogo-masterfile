@@ -236,6 +236,7 @@ const (
 	PokemonSettingsTemplateIDV0067PokemonMachokeNormal                      PokemonSettingsTemplateID = "V0067_POKEMON_MACHOKE_NORMAL"
 	PokemonSettingsTemplateIDV0068PokemonMachamp                            PokemonSettingsTemplateID = "V0068_POKEMON_MACHAMP"
 	PokemonSettingsTemplateIDV0068PokemonMachampNormal                      PokemonSettingsTemplateID = "V0068_POKEMON_MACHAMP_NORMAL"
+	PokemonSettingsTemplateIDV0068PokemonMachampWildarea202601              PokemonSettingsTemplateID = "V0068_POKEMON_MACHAMP_WILDAREA_2026_01"
 	PokemonSettingsTemplateIDV0069PokemonBellsprout                         PokemonSettingsTemplateID = "V0069_POKEMON_BELLSPROUT"
 	PokemonSettingsTemplateIDV0069PokemonBellsproutNormal                   PokemonSettingsTemplateID = "V0069_POKEMON_BELLSPROUT_NORMAL"
 	PokemonSettingsTemplateIDV0070PokemonWeepinbell                         PokemonSettingsTemplateID = "V0070_POKEMON_WEEPINBELL"
@@ -2716,6 +2717,7 @@ var PokemonSettingsTemplateIDValues = [...]PokemonSettingsTemplateID{
 	PokemonSettingsTemplateIDV0067PokemonMachokeNormal,
 	PokemonSettingsTemplateIDV0068PokemonMachamp,
 	PokemonSettingsTemplateIDV0068PokemonMachampNormal,
+	PokemonSettingsTemplateIDV0068PokemonMachampWildarea202601,
 	PokemonSettingsTemplateIDV0069PokemonBellsprout,
 	PokemonSettingsTemplateIDV0069PokemonBellsproutNormal,
 	PokemonSettingsTemplateIDV0070PokemonWeepinbell,

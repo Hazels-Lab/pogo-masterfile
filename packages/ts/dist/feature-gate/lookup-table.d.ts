@@ -1,6 +1,9 @@
 // Generated from Pokémon GO masterfile — "featureGate" lookup table.
 
 import type {
+	FeatureGateAcForegroundCatchEncounter,
+	FeatureGateAcForegroundCatchMapFocus,
+	FeatureGateAcForegroundCatchPoiFocus,
 	FeatureGateAdminGmNiaOpsOnlyFilterAms,
 	FeatureGateAdvSyncTwo,
 	FeatureGateAms,
@@ -38,6 +41,9 @@ import type {
 } from "./entries";
 
 export interface FeatureGateLookup {
+	AC_FOREGROUND_CATCH_ENCOUNTER_FEATURE_GATE: FeatureGateAcForegroundCatchEncounter;
+	AC_FOREGROUND_CATCH_MAP_FOCUS_FEATURE_GATE: FeatureGateAcForegroundCatchMapFocus;
+	AC_FOREGROUND_CATCH_POI_FOCUS_FEATURE_GATE: FeatureGateAcForegroundCatchPoiFocus;
 	ADMIN_GM_NIA_OPS_ONLY_FILTER_AMS_FEATURE_GATE: FeatureGateAdminGmNiaOpsOnlyFilterAms;
 	ADV_SYNC_TWO_FEATURE_GATE: FeatureGateAdvSyncTwo;
 	AMS_FEATURE_GATE: FeatureGateAms;

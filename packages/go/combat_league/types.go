@@ -8,7 +8,8 @@ type CombatLeaguePokemon struct {
 }
 
 type CombatLeaguePokemonBanList struct {
-	Pokemon []CombatLeaguePokemon `json:"pokemon"`
+	Lgdbihdlhod *string               `json:"lgdbihdlhod,omitempty"`
+	Pokemon     []CombatLeaguePokemon `json:"pokemon"`
 }
 
 type CombatLeaguePokemonCaughtTimestamp struct {
