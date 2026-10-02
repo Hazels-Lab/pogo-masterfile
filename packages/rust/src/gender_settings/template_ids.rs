@@ -469,6 +469,8 @@ pub enum GenderSettingsTemplateId {
     SpawnV0068PokemonMachamp,
     #[serde(rename = "SPAWN_V0068_POKEMON_MACHAMP_NORMAL")]
     SpawnV0068PokemonMachampNormal,
+    #[serde(rename = "SPAWN_V0068_POKEMON_MACHAMP_WILDAREA_2026_01")]
+    SpawnV0068PokemonMachampWildarea202601,
     #[serde(rename = "SPAWN_V0069_POKEMON_BELLSPROUT")]
     SpawnV0069PokemonBellsprout,
     #[serde(rename = "SPAWN_V0069_POKEMON_BELLSPROUT_NORMAL")]

@@ -1475,6 +1475,86 @@ pub enum BadgeSettingsTemplateId {
     BadgeGowa2025SpecialResearchA,
     #[serde(rename = "BADGE_GOWA_2025_SPECIAL_RESEARCH_B")]
     BadgeGowa2025SpecialResearchB,
+    #[serde(rename = "BADGE_GOWA_2026_CDMX_ADDON_BATTLE")]
+    BadgeGowa2026CdmxAddonBattle,
+    #[serde(rename = "BADGE_GOWA_2026_CDMX_ADDON_FRIDAY")]
+    BadgeGowa2026CdmxAddonFriday,
+    #[serde(rename = "BADGE_GOWA_2026_CDMX_ADDON_HATCH")]
+    BadgeGowa2026CdmxAddonHatch,
+    #[serde(rename = "BADGE_GOWA_2026_CDMX_ADDON_SATURDAY")]
+    BadgeGowa2026CdmxAddonSaturday,
+    #[serde(rename = "BADGE_GOWA_2026_CDMX_ADDON_SUNDAY")]
+    BadgeGowa2026CdmxAddonSunday,
+    #[serde(rename = "BADGE_GOWA_2026_CDMX_FRIDAY")]
+    BadgeGowa2026CdmxFriday,
+    #[serde(rename = "BADGE_GOWA_2026_CDMX_FRIDAY_ESSENTIAL")]
+    BadgeGowa2026CdmxFridayEssential,
+    #[serde(rename = "BADGE_GOWA_2026_CDMX_SATURDAY")]
+    BadgeGowa2026CdmxSaturday,
+    #[serde(rename = "BADGE_GOWA_2026_CDMX_SATURDAY_ESSENTIAL")]
+    BadgeGowa2026CdmxSaturdayEssential,
+    #[serde(rename = "BADGE_GOWA_2026_CDMX_SUNDAY")]
+    BadgeGowa2026CdmxSunday,
+    #[serde(rename = "BADGE_GOWA_2026_CDMX_SUNDAY_ESSENTIAL")]
+    BadgeGowa2026CdmxSundayEssential,
+    #[serde(rename = "BADGE_GOWA_2026_CDMX_TEST")]
+    BadgeGowa2026CdmxTest,
+    #[serde(rename = "BADGE_GOWA_2026_CDMX_TEST_ADDON_BATTLE")]
+    BadgeGowa2026CdmxTestAddonBattle,
+    #[serde(rename = "BADGE_GOWA_2026_CDMX_TEST_ADDON_EXTRA_DAY")]
+    BadgeGowa2026CdmxTestAddonExtraDay,
+    #[serde(rename = "BADGE_GOWA_2026_CDMX_TEST_ADDON_HATCH")]
+    BadgeGowa2026CdmxTestAddonHatch,
+    #[serde(rename = "BADGE_GOWA_2026_CDMX_TEST_ESSENTIAL")]
+    BadgeGowa2026CdmxTestEssential,
+    #[serde(rename = "BADGE_GOWA_2026_CDMX_VIP")]
+    BadgeGowa2026CdmxVip,
+    #[serde(rename = "BADGE_GOWA_2026_EVENT_01")]
+    BadgeGowa2026Event01,
+    #[serde(rename = "BADGE_GOWA_2026_EVENT_02")]
+    BadgeGowa2026Event02,
+    #[serde(rename = "BADGE_GOWA_2026_GLOBAL")]
+    BadgeGowa2026Global,
+    #[serde(rename = "BADGE_GOWA_2026_GLOBAL_TEST")]
+    BadgeGowa2026GlobalTest,
+    #[serde(rename = "BADGE_GOWA_2026_SENDAI_ADDON_BATTLE")]
+    BadgeGowa2026SendaiAddonBattle,
+    #[serde(rename = "BADGE_GOWA_2026_SENDAI_ADDON_FRIDAY")]
+    BadgeGowa2026SendaiAddonFriday,
+    #[serde(rename = "BADGE_GOWA_2026_SENDAI_ADDON_HATCH")]
+    BadgeGowa2026SendaiAddonHatch,
+    #[serde(rename = "BADGE_GOWA_2026_SENDAI_ADDON_SATURDAY")]
+    BadgeGowa2026SendaiAddonSaturday,
+    #[serde(rename = "BADGE_GOWA_2026_SENDAI_ADDON_SUNDAY")]
+    BadgeGowa2026SendaiAddonSunday,
+    #[serde(rename = "BADGE_GOWA_2026_SENDAI_FRIDAY")]
+    BadgeGowa2026SendaiFriday,
+    #[serde(rename = "BADGE_GOWA_2026_SENDAI_FRIDAY_ESSENTIAL")]
+    BadgeGowa2026SendaiFridayEssential,
+    #[serde(rename = "BADGE_GOWA_2026_SENDAI_SATURDAY")]
+    BadgeGowa2026SendaiSaturday,
+    #[serde(rename = "BADGE_GOWA_2026_SENDAI_SATURDAY_ESSENTIAL")]
+    BadgeGowa2026SendaiSaturdayEssential,
+    #[serde(rename = "BADGE_GOWA_2026_SENDAI_SUNDAY")]
+    BadgeGowa2026SendaiSunday,
+    #[serde(rename = "BADGE_GOWA_2026_SENDAI_SUNDAY_ESSENTIAL")]
+    BadgeGowa2026SendaiSundayEssential,
+    #[serde(rename = "BADGE_GOWA_2026_SENDAI_TEST")]
+    BadgeGowa2026SendaiTest,
+    #[serde(rename = "BADGE_GOWA_2026_SENDAI_TEST_ADDON_BATTLE")]
+    BadgeGowa2026SendaiTestAddonBattle,
+    #[serde(rename = "BADGE_GOWA_2026_SENDAI_TEST_ADDON_EXTRA_DAY")]
+    BadgeGowa2026SendaiTestAddonExtraDay,
+    #[serde(rename = "BADGE_GOWA_2026_SENDAI_TEST_ADDON_HATCH")]
+    BadgeGowa2026SendaiTestAddonHatch,
+    #[serde(rename = "BADGE_GOWA_2026_SENDAI_TEST_ESSENTIAL")]
+    BadgeGowa2026SendaiTestEssential,
+    #[serde(rename = "BADGE_GOWA_2026_SENDAI_VIP")]
+    BadgeGowa2026SendaiVip,
+    #[serde(rename = "BADGE_GOWA_2026_SPECIAL_RESEARCH_A")]
+    BadgeGowa2026SpecialResearchA,
+    #[serde(rename = "BADGE_GOWA_2026_SPECIAL_RESEARCH_B")]
+    BadgeGowa2026SpecialResearchB,
     #[serde(rename = "BADGE_GREAT_LEAGUE")]
     BadgeGreatLeague,
     #[serde(rename = "BADGE_HATCHED_TOTAL")]

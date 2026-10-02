@@ -207,6 +207,18 @@ pub enum LocationCardSettingsTemplateId {
     LcCitysafari2025Sydney,
     #[serde(rename = "LC_CR_2026_001")]
     LcCr2026001,
+    #[serde(rename = "LC_EMEA_MUSEUM_01")]
+    LcEmeaMuseum01,
+    #[serde(rename = "LC_EMEA_MUSEUM_02")]
+    LcEmeaMuseum02,
+    #[serde(rename = "LC_EMEA_MUSEUM_03")]
+    LcEmeaMuseum03,
+    #[serde(rename = "LC_EMEA_MUSEUM_04")]
+    LcEmeaMuseum04,
+    #[serde(rename = "LC_EMEA_MUSEUM_05")]
+    LcEmeaMuseum05,
+    #[serde(rename = "LC_EMEA_MUSEUM_06")]
+    LcEmeaMuseum06,
     #[serde(rename = "LC_ID_CAR_FREE_DAY")]
     LcIdCarFreeDay,
     #[serde(rename = "LC_JAPAN_STAMP_RALLY_1")]

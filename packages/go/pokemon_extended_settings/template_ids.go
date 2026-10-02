@@ -236,6 +236,7 @@ const (
 	PokemonExtendedSettingsTemplateIDExtendedV0067PokemonMachokeNormal                   PokemonExtendedSettingsTemplateID = "EXTENDED_V0067_POKEMON_MACHOKE_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV0068PokemonMachamp                         PokemonExtendedSettingsTemplateID = "EXTENDED_V0068_POKEMON_MACHAMP"
 	PokemonExtendedSettingsTemplateIDExtendedV0068PokemonMachampNormal                   PokemonExtendedSettingsTemplateID = "EXTENDED_V0068_POKEMON_MACHAMP_NORMAL"
+	PokemonExtendedSettingsTemplateIDExtendedV0068PokemonMachampWildarea202601           PokemonExtendedSettingsTemplateID = "EXTENDED_V0068_POKEMON_MACHAMP_WILDAREA_2026_01"
 	PokemonExtendedSettingsTemplateIDExtendedV0069PokemonBellsprout                      PokemonExtendedSettingsTemplateID = "EXTENDED_V0069_POKEMON_BELLSPROUT"
 	PokemonExtendedSettingsTemplateIDExtendedV0069PokemonBellsproutNormal                PokemonExtendedSettingsTemplateID = "EXTENDED_V0069_POKEMON_BELLSPROUT_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV0070PokemonWeepinbell                      PokemonExtendedSettingsTemplateID = "EXTENDED_V0070_POKEMON_WEEPINBELL"
@@ -2720,6 +2721,7 @@ var PokemonExtendedSettingsTemplateIDValues = [...]PokemonExtendedSettingsTempla
 	PokemonExtendedSettingsTemplateIDExtendedV0067PokemonMachokeNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV0068PokemonMachamp,
 	PokemonExtendedSettingsTemplateIDExtendedV0068PokemonMachampNormal,
+	PokemonExtendedSettingsTemplateIDExtendedV0068PokemonMachampWildarea202601,
 	PokemonExtendedSettingsTemplateIDExtendedV0069PokemonBellsprout,
 	PokemonExtendedSettingsTemplateIDExtendedV0069PokemonBellsproutNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV0070PokemonWeepinbell,

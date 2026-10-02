@@ -6,6 +6,7 @@ import type { LocationCardSettings2025MasterfileEntry } from "./2025";
 import type { LocationCardSettings2026MasterfileEntry } from "./2026";
 import type { LocationCardSettingsCitysafari2025MasterfileEntry } from "./citysafari2025";
 import type { LocationCardSettingsCrMasterfileEntry } from "./cr";
+import type { LocationCardSettingsEmeaMasterfileEntry } from "./emea";
 import type { LocationCardSettingsIdMasterfileEntry } from "./id";
 import type { LocationCardSettingsJapanMasterfileEntry } from "./japan";
 import type { LocationCardSettingsJejuMasterfileEntry } from "./jeju";
@@ -23,6 +24,7 @@ export type * from "./2025";
 export type * from "./2026";
 export type * from "./citysafari2025";
 export type * from "./cr";
+export type * from "./emea";
 export type * from "./id";
 export type * from "./japan";
 export type * from "./jeju";
@@ -41,6 +43,7 @@ export type LocationCardSettingsMasterfileEntry =
 	| LocationCardSettings2026MasterfileEntry
 	| LocationCardSettingsCitysafari2025MasterfileEntry
 	| LocationCardSettingsCrMasterfileEntry
+	| LocationCardSettingsEmeaMasterfileEntry
 	| LocationCardSettingsIdMasterfileEntry
 	| LocationCardSettingsJapanMasterfileEntry
 	| LocationCardSettingsJejuMasterfileEntry

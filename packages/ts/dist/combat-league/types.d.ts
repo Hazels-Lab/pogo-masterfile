@@ -76,6 +76,7 @@ export interface CombatLeagueData {
 	leagueType: "PREMIER" | "STANDARD";
 	pokemonCondition: Array<{
 		pokemonBanList?: {
+			lgdbihdlhod?: "s24_laic_prohibited_pokemon_and_classes";
 			pokemon: Array<{
 				forms?: Array<string>;
 				id: string;

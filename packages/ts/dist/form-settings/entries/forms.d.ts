@@ -1272,6 +1272,10 @@ export type FormSettingsV0068PokemonMachamp = S<
 				{
 					form: "MACHAMP_NORMAL";
 				},
+				{
+					form: 3369;
+					isCostume: true;
+				},
 			];
 			pokemon: "MACHAMP";
 		}

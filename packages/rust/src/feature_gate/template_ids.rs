@@ -7,6 +7,12 @@ use serde::{Deserialize, Serialize};
     Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum,
 )]
 pub enum FeatureGateTemplateId {
+    #[serde(rename = "AC_FOREGROUND_CATCH_ENCOUNTER_FEATURE_GATE")]
+    AcForegroundCatchEncounterFeatureGate,
+    #[serde(rename = "AC_FOREGROUND_CATCH_MAP_FOCUS_FEATURE_GATE")]
+    AcForegroundCatchMapFocusFeatureGate,
+    #[serde(rename = "AC_FOREGROUND_CATCH_POI_FOCUS_FEATURE_GATE")]
+    AcForegroundCatchPoiFocusFeatureGate,
     #[serde(rename = "ADMIN_GM_NIA_OPS_ONLY_FILTER_AMS_FEATURE_GATE")]
     AdminGmNiaOpsOnlyFilterAmsFeatureGate,
     #[serde(rename = "ADV_SYNC_TWO_FEATURE_GATE")]

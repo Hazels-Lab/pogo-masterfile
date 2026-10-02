@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", 171 entries (structural types).
+// Generated from Pokémon GO masterfile — group "itemSettings", 172 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -79,6 +79,7 @@ export interface ItemSettingsData {
 		| "item_event_ticket_pink_details_MegaRayquaza26"
 		| "item_event_ticket_pink_details_WaterRRD26"
 		| "ITEM_EVENT_TICKET_S24_OCT_3_MAXBATTLE_desc_gmaxCinderace26"
+		| "ITEM_EVENT_TICKET_S24_OCT_24_MAXBATTLE_desc"
 		| "item_global_event_ticket_details_GOTour2026"
 		| "item_global_event_ticket_details_GOWA26"
 		| "item_postcard_inventory_desc_stamp";
@@ -142,6 +143,7 @@ export interface ItemSettingsData {
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fafa245c1_PGO-MCS_Lake_Guardians_Max_Battle_Day_v1-1025x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fc397eb56_PGO-MCS_Staraptor_Super_Mega_Raid_Day_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fdaa6a9dd_PGO_MCS_CD_Classic_KeyArt_Gible_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe4d25391_PGO-MCS_Phantump_Catch_Mastery_v1-1024x576.jpg"
@@ -198,6 +200,7 @@ export interface ItemSettingsData {
 			| "1791046800000"
 			| "1791651600000"
 			| "1792256400000"
+			| "1792861200000"
 			| "1794765600000";
 		clientEventStartTimeUtcMs:
 			| "1696845600000"
@@ -234,11 +237,13 @@ export interface ItemSettingsData {
 			| "1791036000000"
 			| "1791640800000"
 			| "1792234800000"
+			| "1792850400000"
 			| "1794650400000";
 		conflictStoryQuestIds?: ["RERUN_MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER", "MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER"];
 		detailsLinkKey?:
 			| "details_link_key"
 			| "details_link_key_10th_anniversary"
+			| "details_link_key_dmax_sinnoh_lake_max_battle"
 			| "details_link_key_ENTEI_SHADOW_RAID_DAY"
 			| "details_link_key_fashion_raid_day"
 			| "details_link_key_mega_falinks_raid_day"
@@ -265,6 +270,7 @@ export interface ItemSettingsData {
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fafa245c1_PGO-MCS_Lake_Guardians_Max_Battle_Day_v1-1025x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fc397eb56_PGO-MCS_Staraptor_Super_Mega_Raid_Day_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe4d25391_PGO-MCS_Phantump_Catch_Mastery_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg"
@@ -349,6 +355,7 @@ export interface ItemSettingsData {
 			| "2026-10-03T17:00:00"
 			| "2026-10-10T17:00:00"
 			| "2026-10-17T17:00:00"
+			| "2026-10-24T17:00:00"
 			| "2026-11-15T18:00:00";
 		eventStartTime:
 			| "2023-10-09T10:00:00"
@@ -385,6 +392,7 @@ export interface ItemSettingsData {
 			| "2026-10-03T14:00:00"
 			| "2026-10-10T14:00:00"
 			| "2026-10-17T11:00:00"
+			| "2026-10-24T14:00:00"
 			| "2026-11-14T10:00:00";
 		giftable?: boolean;
 		giftItem?:
@@ -534,6 +542,7 @@ export interface ItemSettingsData {
 			| "item_event_ticket_pink_desc_WaterRRD26"
 			| "item_event_ticket_pink_details_MegaRayquaza26"
 			| "ITEM_EVENT_TICKET_S24_OCT_3_MAXBATTLE_desc_gmaxCinderace26"
+			| "ITEM_EVENT_TICKET_S24_OCT_24_MAXBATTLE_details"
 			| "item_global_event_ticket_details_GOTour2026"
 			| "item_global_event_ticket_details_GOWA26"
 			| "item_ticket_city_safari_00_desc"
@@ -549,6 +558,7 @@ export interface ItemSettingsData {
 			| "text_rewards_key_CD_Zorua26"
 			| "text_rewards_key_CDC_Deino26"
 			| "text_rewards_key_CDC_Gible26"
+			| "text_rewards_key_dmaxSinnohLakeMaxBattle26"
 			| "text_rewards_key_ENTEI_SHADOW_RAID_DAY"
 			| "text_rewards_key_fashionRaidDay26"
 			| "text_rewards_key_FinalJustice2025"
@@ -668,6 +678,7 @@ export interface ItemSettingsData {
 		| "general2.ticket.5_MegaSkarmoryRaidDay"
 		| "general2.ticket.5_MegaStarmieRaidDay"
 		| "general2.ticket.5_shayminmasterworkrerun"
+		| "general2.ticket.6.DMAX_SINNOH_LAKE_MAX_BATTLE"
 		| "general2.ticket.6.REPLAY_GO_BIGGER"
 		| "general2.ticket.7_masterball25_title"
 		| "general2.ticket.9_fashionRaidDay26_title"

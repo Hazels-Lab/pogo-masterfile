@@ -183,8 +183,8 @@ pub enum MasterfileEntry {
     PokemonSettings(pokemon_settings::PokemonSettingsEntry),
     AvatarCustomization(avatar_customization::AvatarCustomizationEntry),
     AvatarItemDisplay(avatar_item_display::AvatarItemDisplayEntry),
-    IapItemDisplay(iap_item_display::IapItemDisplayEntry),
     BadgeSettings(badge_settings::BadgeSettingsEntry),
+    IapItemDisplay(iap_item_display::IapItemDisplayEntry),
     FormSettings(form_settings::FormSettingsEntry),
     StickerMetadata(sticker_metadata::StickerMetadataEntry),
     PokemonFamily(pokemon_family::PokemonFamilyEntry),
@@ -429,8 +429,8 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::AvatarCustomization)
                 }
                 "avatarItemDisplay" => serde_json::from_value(value).map(Self::AvatarItemDisplay),
-                "iapItemDisplay" => serde_json::from_value(value).map(Self::IapItemDisplay),
                 "badgeSettings" => serde_json::from_value(value).map(Self::BadgeSettings),
+                "iapItemDisplay" => serde_json::from_value(value).map(Self::IapItemDisplay),
                 "formSettings" => serde_json::from_value(value).map(Self::FormSettings),
                 "stickerMetadata" => serde_json::from_value(value).map(Self::StickerMetadata),
                 "pokemonFamily" => serde_json::from_value(value).map(Self::PokemonFamily),

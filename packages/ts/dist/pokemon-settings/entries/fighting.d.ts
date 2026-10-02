@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonSettings", split "fighting", 91 entries.
+// Generated from Pokémon GO masterfile — group "pokemonSettings", split "fighting", 92 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonSettings } from "../types";
@@ -814,6 +814,85 @@ export type PokemonSettingsV0068PokemonMachampNormal = S<
 			evolutionPips: 1;
 			familyId: "FAMILY_MACHOP";
 			form: "MACHAMP_NORMAL";
+			heightStdDev: 0.2;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 3;
+			modelHeight: 1.5;
+			modelScale: 0.89;
+			modelScaleV2: 1.1;
+			parentPokemonId: "MACHOKE";
+			pokedexHeightM: 1.6;
+			pokedexWeightKg: 130;
+			pokemonId: "MACHAMP";
+			quickMoves: ["BULLET_PUNCH_FAST", "COUNTER_FAST"];
+			shadow: {
+				purificationCandyNeeded: 3;
+				purificationStardustNeeded: 3000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
+			stats: {
+				baseAttack: 234;
+				baseDefense: 159;
+				baseStamina: 207;
+			};
+			thirdMove: {
+				candyToUnlock: 50;
+				stardustToUnlock: 50000;
+			};
+			type: "POKEMON_TYPE_FIGHTING";
+			weightStdDev: 16.25;
+		}
+	>
+>;
+export type PokemonSettingsV0068PokemonMachampWildarea202601 = S<
+	PokemonSettings<
+		"V0068_POKEMON_MACHAMP_WILDAREA_2026_01",
+		{
+			animationTime: [1.6667, 0.6667, 1.6667, 1.6667, 0, 1.6667, 1.3333, 1.333333];
+			breadTierGroup: "GROUP_2";
+			buddyGroupNumber: 3;
+			buddyOffsetFemale: [20, 0, 30];
+			buddyOffsetMale: [20, 0, 30];
+			buddyScale: 19;
+			buddySize: "BUDDY_BIG";
+			camera: {
+				cylinderHeightM: 1.5;
+				cylinderRadiusM: 0.75;
+				diskRadiusM: 0.8678;
+				shoulderModeScale: 0.5;
+			};
+			cinematicMoves: ["HEAVY_SLAM", "DYNAMIC_PUNCH", "CLOSE_COMBAT", "ROCK_SLIDE", "CROSS_CHOP"];
+			eliteCinematicMove: ["STONE_EDGE", "SUBMISSION", "PAYBACK"];
+			eliteQuickMove: ["KARATE_CHOP_FAST"];
+			encounter: {
+				attackProbability: 0.1;
+				attackTimerS: 3;
+				bonusCandyCaptureReward: 7;
+				bonusStardustCaptureReward: 400;
+				bonusXlCandyCaptureReward: 2;
+				cameraDistance: 4.7;
+				collisionHeadRadiusM: 0.1335;
+				collisionHeightM: 1.246;
+				collisionRadiusM: 0.5785;
+				dodgeDistance: 1;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.15;
+				jumpTimeS: 1;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementTimerS: 8;
+				movementType: "MOVEMENT_JUMP";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.1;
+				shadowDodgeProbability: 0.2;
+			};
+			evolutionPips: 1;
+			familyId: "FAMILY_MACHOP";
+			form: 3369;
 			heightStdDev: 0.2;
 			ibfc: object;
 			isDeployable: true;
@@ -6745,6 +6824,7 @@ export type PokemonSettingsFightingMasterfileEntry =
 	| PokemonSettingsV0067PokemonMachokeNormal
 	| PokemonSettingsV0068PokemonMachamp
 	| PokemonSettingsV0068PokemonMachampNormal
+	| PokemonSettingsV0068PokemonMachampWildarea202601
 	| PokemonSettingsV0083PokemonFarfetchdGalarian
 	| PokemonSettingsV0106PokemonHitmonlee
 	| PokemonSettingsV0106PokemonHitmonleeNormal

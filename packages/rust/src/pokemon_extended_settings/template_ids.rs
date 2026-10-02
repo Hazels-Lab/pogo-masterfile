@@ -469,6 +469,8 @@ pub enum PokemonExtendedSettingsTemplateId {
     ExtendedV0068PokemonMachamp,
     #[serde(rename = "EXTENDED_V0068_POKEMON_MACHAMP_NORMAL")]
     ExtendedV0068PokemonMachampNormal,
+    #[serde(rename = "EXTENDED_V0068_POKEMON_MACHAMP_WILDAREA_2026_01")]
+    ExtendedV0068PokemonMachampWildarea202601,
     #[serde(rename = "EXTENDED_V0069_POKEMON_BELLSPROUT")]
     ExtendedV0069PokemonBellsprout,
     #[serde(rename = "EXTENDED_V0069_POKEMON_BELLSPROUT_NORMAL")]

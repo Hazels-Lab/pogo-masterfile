@@ -232,6 +232,7 @@ import type {
 	GenderSettingsV0067PokemonMachokeNormal,
 	GenderSettingsV0068PokemonMachamp,
 	GenderSettingsV0068PokemonMachampNormal,
+	GenderSettingsV0068PokemonMachampWildarea202601,
 	GenderSettingsV0069PokemonBellsprout,
 	GenderSettingsV0069PokemonBellsproutNormal,
 	GenderSettingsV0070PokemonWeepinbell,
@@ -2715,6 +2716,7 @@ export interface GenderSettingsLookup {
 	SPAWN_V0067_POKEMON_MACHOKE_NORMAL: GenderSettingsV0067PokemonMachokeNormal;
 	SPAWN_V0068_POKEMON_MACHAMP: GenderSettingsV0068PokemonMachamp;
 	SPAWN_V0068_POKEMON_MACHAMP_NORMAL: GenderSettingsV0068PokemonMachampNormal;
+	SPAWN_V0068_POKEMON_MACHAMP_WILDAREA_2026_01: GenderSettingsV0068PokemonMachampWildarea202601;
 	SPAWN_V0069_POKEMON_BELLSPROUT: GenderSettingsV0069PokemonBellsprout;
 	SPAWN_V0069_POKEMON_BELLSPROUT_NORMAL: GenderSettingsV0069PokemonBellsproutNormal;
 	SPAWN_V0070_POKEMON_WEEPINBELL: GenderSettingsV0070PokemonWeepinbell;

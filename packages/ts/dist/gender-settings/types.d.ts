@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "genderSettings", 2480 entries (structural types).
+// Generated from Pokémon GO masterfile — group "genderSettings", 2481 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -12,7 +12,7 @@ export interface GenderSettings<TemplateID extends string = string, TData extend
 export type GenderSettingsType = W<GenderSettings>;
 
 export interface GenderSettingsData {
-	form?: string;
+	form?: number | string;
 	gender: {
 		femalePercent?: number;
 		genderlessPercent?: number;

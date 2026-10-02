@@ -5035,7 +5035,6 @@ export type CombatLeagueVsSeekerColorGreat = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -5090,7 +5089,6 @@ export type CombatLeagueVsSeekerColorGreatMegas = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -5560,7 +5558,6 @@ export type CombatLeagueVsSeekerEvolution = S<
 				"TERRAKION",
 				"VIRIZION",
 				"RESHIRAM",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -6030,7 +6027,6 @@ export type CombatLeagueVsSeekerGalarGreat = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -9123,7 +9119,6 @@ export type CombatLeagueVsSeekerGreat = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -9805,7 +9800,6 @@ export type CombatLeagueVsSeekerGreatCatchS24Megas = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -11067,26 +11061,6 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 		"COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_SERIES",
 		{
 			badgeType: "BADGE_GREAT_LEAGUE";
-			bannedPokemon: [
-				"DITTO",
-				"SHEDINJA",
-				"COBALION",
-				"TERRAKION",
-				"VIRIZION",
-				"ZEKROM",
-				"KYUREM",
-				"TAPU_KOKO",
-				"TAPU_LELE",
-				"TAPU_BULU",
-				"SOLGALEO",
-				"LUNALA",
-				"ZACIAN",
-				"ZAMAZENTA",
-				"ENAMORUS",
-				"XERNEAS",
-				"YVELTAL",
-				"MIMIKYU",
-			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FGBL_Pokemon_GO_Championship_Series_Logo.png";
 			leagueType: "STANDARD";
@@ -11125,9 +11099,6 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 								id: "RATICATE";
 							},
 							{
-								id: "JIGGLYPUFF";
-							},
-							{
 								id: "PARAS";
 							},
 							{
@@ -11140,20 +11111,12 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 								id: "VENOMOTH";
 							},
 							{
-								forms: ["FORM_UNSET", "MEOWTH_ALOLA", "MEOWTH_NORMAL"];
+								forms: ["FORM_UNSET", "MEOWTH_NORMAL"];
 								id: "MEOWTH";
 							},
 							{
-								forms: ["FORM_UNSET", "PERSIAN_ALOLA", "PERSIAN_NORMAL"];
+								forms: ["FORM_UNSET", "PERSIAN_NORMAL"];
 								id: "PERSIAN";
-							},
-							{
-								forms: ["GRIMER_ALOLA"];
-								id: "GRIMER";
-							},
-							{
-								forms: ["MUK_ALOLA"];
-								id: "MUK";
 							},
 							{
 								forms: ["EXEGGUTOR_ALOLA"];
@@ -11176,16 +11139,10 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 								id: "TAUROS";
 							},
 							{
-								id: "DITTO";
-							},
-							{
 								id: "EEVEE";
 							},
 							{
 								id: "PORYGON";
-							},
-							{
-								id: "SNORLAX";
 							},
 							{
 								id: "DRATINI";
@@ -11197,25 +11154,16 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 								id: "SENTRET";
 							},
 							{
-								id: "FURRET";
-							},
-							{
 								id: "SPINARAK";
 							},
 							{
 								id: "ARIADOS";
 							},
 							{
-								id: "IGGLYBUFF";
-							},
-							{
 								id: "POLITOED";
 							},
 							{
 								id: "AIPOM";
-							},
-							{
-								id: "UMBREON";
 							},
 							{
 								id: "GIRAFARIG";
@@ -11227,30 +11175,13 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 								id: "DUNSPARCE";
 							},
 							{
-								forms: ["QWILFISH_HISUIAN"];
-								id: "QWILFISH";
-							},
-							{
 								id: "SHUCKLE";
-							},
-							{
-								forms: ["FORM_UNSET", "SNEASEL_NORMAL"];
-								id: "SNEASEL";
 							},
 							{
 								id: "TEDDIURSA";
 							},
 							{
 								id: "URSARING";
-							},
-							{
-								id: "HOUNDOUR";
-							},
-							{
-								id: "HOUNDOOM";
-							},
-							{
-								id: "KINGDRA";
 							},
 							{
 								id: "PORYGON2";
@@ -11266,15 +11197,6 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 							},
 							{
 								id: "BLISSEY";
-							},
-							{
-								id: "TYRANITAR";
-							},
-							{
-								id: "POOCHYENA";
-							},
-							{
-								id: "MIGHTYENA";
 							},
 							{
 								id: "ZIGZAGOON";
@@ -11295,12 +11217,6 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 								id: "DUSTOX";
 							},
 							{
-								id: "NUZLEAF";
-							},
-							{
-								id: "SHIFTRY";
-							},
-							{
 								id: "SURSKIT";
 							},
 							{
@@ -11316,9 +11232,6 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 								id: "NINCADA";
 							},
 							{
-								id: "SHEDINJA";
-							},
-							{
 								id: "WHISMUR";
 							},
 							{
@@ -11328,28 +11241,16 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 								id: "EXPLOUD";
 							},
 							{
-								id: "AZURILL";
-							},
-							{
 								id: "SKITTY";
 							},
 							{
 								id: "DELCATTY";
 							},
 							{
-								id: "SABLEYE";
-							},
-							{
 								id: "VOLBEAT";
 							},
 							{
 								id: "ILLUMISE";
-							},
-							{
-								id: "CARVANHA";
-							},
-							{
-								id: "SHARPEDO";
 							},
 							{
 								id: "SPINDA";
@@ -11361,13 +11262,7 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 								id: "FLYGON";
 							},
 							{
-								id: "CACTURNE";
-							},
-							{
 								id: "ZANGOOSE";
-							},
-							{
-								id: "CRAWDAUNT";
 							},
 							{
 								id: "ANORITH";
@@ -11384,9 +11279,6 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 							},
 							{
 								id: "KECLEON";
-							},
-							{
-								id: "ABSOL";
 							},
 							{
 								id: "BAGON";
@@ -11429,16 +11321,7 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 								id: "PURUGLY";
 							},
 							{
-								id: "STUNKY";
-							},
-							{
-								id: "SKUNTANK";
-							},
-							{
 								id: "HAPPINY";
-							},
-							{
-								id: "SPIRITOMB";
 							},
 							{
 								id: "GIBLE";
@@ -11456,12 +11339,6 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 								id: "SKORUPI";
 							},
 							{
-								id: "DRAPION";
-							},
-							{
-								id: "WEAVILE";
-							},
-							{
 								id: "LICKILICKY";
 							},
 							{
@@ -11469,10 +11346,6 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 							},
 							{
 								id: "FROSLASS";
-							},
-							{
-								forms: ["SAMUROTT_HISUIAN"];
-								id: "SAMUROTT";
 							},
 							{
 								id: "PATRAT";
@@ -11488,12 +11361,6 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 							},
 							{
 								id: "STOUTLAND";
-							},
-							{
-								id: "PURRLOIN";
-							},
-							{
-								id: "LIEPARD";
 							},
 							{
 								id: "AUDINO";
@@ -11517,22 +11384,7 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 								id: "SCOLIPEDE";
 							},
 							{
-								id: "SANDILE";
-							},
-							{
-								id: "KROKOROK";
-							},
-							{
-								id: "KROOKODILE";
-							},
-							{
 								id: "DWEBBLE";
-							},
-							{
-								id: "ZORUA";
-							},
-							{
-								id: "ZOROARK";
 							},
 							{
 								id: "MINCCINO";
@@ -11577,24 +11429,6 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 								id: "BOUFFALANT";
 							},
 							{
-								id: "DEINO";
-							},
-							{
-								id: "ZWEILOUS";
-							},
-							{
-								id: "HYDREIGON";
-							},
-							{
-								id: "LARVESTA";
-							},
-							{
-								id: "VOLCARONA";
-							},
-							{
-								id: "GRENINJA";
-							},
-							{
 								id: "BUNNELBY";
 							},
 							{
@@ -11604,19 +11438,7 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 								id: "SPEWPA";
 							},
 							{
-								id: "LITLEO";
-							},
-							{
-								id: "PYROAR";
-							},
-							{
 								id: "FURFROU";
-							},
-							{
-								id: "INKAY";
-							},
-							{
-								id: "MALAMAR";
 							},
 							{
 								id: "DRAGALGE";
@@ -11643,9 +11465,6 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 								id: "GOODRA";
 							},
 							{
-								id: "INCINEROAR";
-							},
-							{
 								id: "YUNGOOS";
 							},
 							{
@@ -11661,13 +11480,7 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 								id: "VIKAVOLT";
 							},
 							{
-								id: "CUTIEFLY";
-							},
-							{
 								id: "DEWPIDER";
-							},
-							{
-								id: "ORANGURU";
 							},
 							{
 								id: "WIMPOD";
@@ -11700,12 +11513,6 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 								id: "ORBEETLE";
 							},
 							{
-								id: "NICKIT";
-							},
-							{
-								id: "THIEVUL";
-							},
-							{
 								id: "WOOLOO";
 							},
 							{
@@ -11719,21 +11526,6 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 							},
 							{
 								id: "APPLETUN";
-							},
-							{
-								id: "SIZZLIPEDE";
-							},
-							{
-								id: "CENTISKORCH";
-							},
-							{
-								id: "IMPIDIMP";
-							},
-							{
-								id: "GRIMMSNARL";
-							},
-							{
-								id: "OBSTAGOON";
 							},
 							{
 								id: "SNOM";
@@ -11769,12 +11561,6 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 								id: "URSALUNA";
 							},
 							{
-								id: "OVERQWIL";
-							},
-							{
-								id: "MEOWSCARADA";
-							},
-							{
 								id: "LECHONK";
 							},
 							{
@@ -11790,9 +11576,6 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 								id: "NYMBLE";
 							},
 							{
-								id: "LOKIX";
-							},
-							{
 								id: "TANDEMAUS";
 							},
 							{
@@ -11806,9 +11589,6 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 							},
 							{
 								id: "ARBOLIVA";
-							},
-							{
-								id: "MASCHIFF";
 							},
 							{
 								id: "SHROODLE";
@@ -11849,15 +11629,72 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 							{
 								id: "HYDRAPPLE";
 							},
-							{
-								id: "MABOSSTIFF";
-							},
 						];
 					};
 					type: "POKEMON_WHITELIST";
 				},
+				{
+					pokemonBanList: {
+						lgdbihdlhod: "s24_laic_prohibited_pokemon_and_classes";
+						pokemon: [
+							{
+								id: "DITTO";
+							},
+							{
+								id: "SHEDINJA";
+							},
+							{
+								id: "CHANSEY";
+							},
+							{
+								id: "SNORLAX";
+							},
+							{
+								id: "FURRET";
+							},
+							{
+								id: "WOBBUFFET";
+							},
+							{
+								id: "KINGDRA";
+							},
+							{
+								id: "MEDICHAM";
+							},
+							{
+								id: "ALTARIA";
+							},
+							{
+								id: "DUSCLOPS";
+							},
+							{
+								id: "JELLICENT";
+							},
+							{
+								id: "ARAQUANID";
+							},
+							{
+								id: "ORANGURU";
+							},
+							{
+								id: "MINIOR";
+							},
+							{
+								id: "ANNIHILAPE";
+							},
+							{
+								id: "CLODSIRE";
+							},
+							{
+								forms: ["CORSOLA_GALARIAN"];
+								id: "CORSOLA";
+							},
+						];
+					};
+					type: "POKEMON_BANLIST";
+				},
 			];
-			title: "great_league_championship_series_2026";
+			title: "mega_championship_cup_great_title";
 			unlockCondition: [
 				{
 					minPokemonCount: 3;
@@ -11880,7 +11717,6 @@ export type CombatLeagueVsSeekerGreatChampionshipsLegacy = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -11930,7 +11766,6 @@ export type CombatLeagueVsSeekerGreatElectric = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -11984,7 +11819,6 @@ export type CombatLeagueVsSeekerGreatElement = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -12483,7 +12317,6 @@ export type CombatLeagueVsSeekerGreatFantasy = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -12655,7 +12488,6 @@ export type CombatLeagueVsSeekerGreatFlying = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -12769,7 +12601,6 @@ export type CombatLeagueVsSeekerGreatHalloween = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -12968,7 +12799,6 @@ export type CombatLeagueVsSeekerGreatHalloweenMegas = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -13020,7 +12850,6 @@ export type CombatLeagueVsSeekerGreatHisui = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -13517,7 +13346,6 @@ export type CombatLeagueVsSeekerGreatHoenn = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -14055,7 +13883,6 @@ export type CombatLeagueVsSeekerGreatHoliday = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -14114,7 +13941,6 @@ export type CombatLeagueVsSeekerGreatJohto = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -14511,7 +14337,6 @@ export type CombatLeagueVsSeekerGreatJungle = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -17535,7 +17360,6 @@ export type CombatLeagueVsSeekerGreatLove = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -18219,7 +18043,6 @@ export type CombatLeagueVsSeekerGreatRemix = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -18350,7 +18173,6 @@ export type CombatLeagueVsSeekerGreatRetro = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -19204,7 +19026,6 @@ export type CombatLeagueVsSeekerGreatScroll = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -19258,7 +19079,6 @@ export type CombatLeagueVsSeekerGreatSingleType = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -21035,7 +20855,6 @@ export type CombatLeagueVsSeekerGreatSinnoh = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -21456,7 +21275,6 @@ export type CombatLeagueVsSeekerGreatSummer = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -21510,7 +21328,6 @@ export type CombatLeagueVsSeekerGreatWeather = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -22316,7 +22133,6 @@ export type CombatLeagueVsSeekerMountainGreat = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -22371,8 +22187,6 @@ export type CombatLeagueVsSeekerPsychic = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -22429,7 +22243,6 @@ export type CombatLeagueVsSeekerSpringGreat = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -22484,7 +22297,6 @@ export type CombatLeagueVsSeekerSunshineGreat = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -22541,8 +22353,6 @@ export type CombatLeagueVsSeekerWillpower = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
-				"RESHIRAM",
-				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",

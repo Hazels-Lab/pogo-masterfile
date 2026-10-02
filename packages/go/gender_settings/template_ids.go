@@ -236,6 +236,7 @@ const (
 	GenderSettingsTemplateIDSpawnV0067PokemonMachokeNormal                      GenderSettingsTemplateID = "SPAWN_V0067_POKEMON_MACHOKE_NORMAL"
 	GenderSettingsTemplateIDSpawnV0068PokemonMachamp                            GenderSettingsTemplateID = "SPAWN_V0068_POKEMON_MACHAMP"
 	GenderSettingsTemplateIDSpawnV0068PokemonMachampNormal                      GenderSettingsTemplateID = "SPAWN_V0068_POKEMON_MACHAMP_NORMAL"
+	GenderSettingsTemplateIDSpawnV0068PokemonMachampWildarea202601              GenderSettingsTemplateID = "SPAWN_V0068_POKEMON_MACHAMP_WILDAREA_2026_01"
 	GenderSettingsTemplateIDSpawnV0069PokemonBellsprout                         GenderSettingsTemplateID = "SPAWN_V0069_POKEMON_BELLSPROUT"
 	GenderSettingsTemplateIDSpawnV0069PokemonBellsproutNormal                   GenderSettingsTemplateID = "SPAWN_V0069_POKEMON_BELLSPROUT_NORMAL"
 	GenderSettingsTemplateIDSpawnV0070PokemonWeepinbell                         GenderSettingsTemplateID = "SPAWN_V0070_POKEMON_WEEPINBELL"
@@ -2719,6 +2720,7 @@ var GenderSettingsTemplateIDValues = [...]GenderSettingsTemplateID{
 	GenderSettingsTemplateIDSpawnV0067PokemonMachokeNormal,
 	GenderSettingsTemplateIDSpawnV0068PokemonMachamp,
 	GenderSettingsTemplateIDSpawnV0068PokemonMachampNormal,
+	GenderSettingsTemplateIDSpawnV0068PokemonMachampWildarea202601,
 	GenderSettingsTemplateIDSpawnV0069PokemonBellsprout,
 	GenderSettingsTemplateIDSpawnV0069PokemonBellsproutNormal,
 	GenderSettingsTemplateIDSpawnV0070PokemonWeepinbell,

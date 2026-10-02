@@ -232,6 +232,7 @@ import type {
 	PokemonSettingsV0067PokemonMachokeNormal,
 	PokemonSettingsV0068PokemonMachamp,
 	PokemonSettingsV0068PokemonMachampNormal,
+	PokemonSettingsV0068PokemonMachampWildarea202601,
 	PokemonSettingsV0069PokemonBellsprout,
 	PokemonSettingsV0069PokemonBellsproutNormal,
 	PokemonSettingsV0070PokemonWeepinbell,
@@ -2712,6 +2713,7 @@ export interface PokemonSettingsLookup {
 	V0067_POKEMON_MACHOKE_NORMAL: PokemonSettingsV0067PokemonMachokeNormal;
 	V0068_POKEMON_MACHAMP: PokemonSettingsV0068PokemonMachamp;
 	V0068_POKEMON_MACHAMP_NORMAL: PokemonSettingsV0068PokemonMachampNormal;
+	V0068_POKEMON_MACHAMP_WILDAREA_2026_01: PokemonSettingsV0068PokemonMachampWildarea202601;
 	V0069_POKEMON_BELLSPROUT: PokemonSettingsV0069PokemonBellsprout;
 	V0069_POKEMON_BELLSPROUT_NORMAL: PokemonSettingsV0069PokemonBellsproutNormal;
 	V0070_POKEMON_WEEPINBELL: PokemonSettingsV0070PokemonWeepinbell;

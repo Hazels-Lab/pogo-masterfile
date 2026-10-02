@@ -2,6 +2,8 @@
 
 package pokemon_extended_settings
 
+import "encoding/json"
+
 type PokemonExtendedSettingsCamera struct {
 	CylinderGroundM *float64 `json:"cylinderGroundM,omitempty"`
 	CylinderHeightM float64  `json:"cylinderHeightM"`
@@ -101,7 +103,7 @@ type PokemonExtendedSettingsTempEvoOverrides struct {
 
 type PokemonExtendedSettings struct {
 	BreadOverrides   []PokemonExtendedSettingsBreadOverrides   `json:"breadOverrides,omitempty"`
-	Form             *string                                   `json:"form,omitempty"`
+	Form             json.RawMessage                           `json:"form,omitempty"`
 	SizeSettings     PokemonExtendedSettingsSizeSettingsV2     `json:"sizeSettings"`
 	TempEvoOverrides []PokemonExtendedSettingsTempEvoOverrides `json:"tempEvoOverrides,omitempty"`
 	UniqueId         string                                    `json:"uniqueId"`
