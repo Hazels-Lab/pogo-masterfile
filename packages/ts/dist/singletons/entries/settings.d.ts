@@ -3770,9 +3770,9 @@ export interface MpSettings {
 			mpCapacity: 1500;
 			mpClaimParticleSpeedMultiplier: 1;
 			numExtraMpFromFirstLootStation: 20;
-			numMetersGoal: 500;
+			numMetersGoal: 2000;
 			numMpFromLootStation: 100;
-			numMpFromWalkQuest: 600;
+			numMpFromWalkQuest: 300;
 		};
 	};
 }

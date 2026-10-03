@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.65] - 2026-10-03
+
+Automated regeneration from upstream masterfile commit `6886afc4a3ab218f5867d4c764878e1e33706529`.
+
+### Removed template IDs (1)
+
+- general2.ticket.9
+
 ## [0.1.64] - 2026-10-03
 
 Automated regeneration from upstream masterfile commit `7e9e436029228c4294ede3517521808de7830acb`.

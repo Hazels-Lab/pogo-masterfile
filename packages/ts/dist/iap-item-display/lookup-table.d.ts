@@ -257,7 +257,6 @@ import type {
 	IapItemDisplayFlairFreeBundle0,
 	IapItemDisplayGeneral1Ticket5,
 	IapItemDisplayGeneral2Ticket3,
-	IapItemDisplayGeneral2Ticket9,
 	IapItemDisplayGeneral2Ticket11,
 	IapItemDisplayGeneral4Medium1,
 	IapItemDisplayGeneral6Small1,
@@ -1337,7 +1336,6 @@ export interface IapItemDisplayLookup {
 	FLAIR_FREE_BUNDLE_0: IapItemDisplayFlairFreeBundle0;
 	"general1.ticket.5": IapItemDisplayGeneral1Ticket5;
 	"general2.ticket.3": IapItemDisplayGeneral2Ticket3;
-	"general2.ticket.9": IapItemDisplayGeneral2Ticket9;
 	"general2.ticket.11": IapItemDisplayGeneral2Ticket11;
 	"general4.medium.1": IapItemDisplayGeneral4Medium1;
 	"general6.small.1": IapItemDisplayGeneral6Small1;

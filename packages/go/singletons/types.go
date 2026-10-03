@@ -1453,15 +1453,17 @@ type PlayerLevelXpRewardV2thresholds struct {
 }
 
 type PlayerLevel struct {
-	CpMultiplier                 []float64                       `json:"cpMultiplier"`
-	MaxEggPlayerLevel            uint64                          `json:"maxEggPlayerLevel"`
-	MaxEncounterPlayerLevel      uint64                          `json:"maxEncounterPlayerLevel"`
-	MaxQuestEncounterPlayerLevel uint64                          `json:"maxQuestEncounterPlayerLevel"`
-	MilestoneLevels              [8]uint64                       `json:"milestoneLevels"`
-	RankNum                      []uint64                        `json:"rankNum"`
-	RequiredExperience           []uint64                        `json:"requiredExperience"`
-	SmoreFtueImageUrl            string                          `json:"smoreFtueImageUrl"`
-	XpRewardV2thresholds         PlayerLevelXpRewardV2thresholds `json:"xpRewardV2Thresholds"`
+	CpMultiplier                 []float64                           `json:"cpMultiplier"`
+	DefaultLevelCap              uint64                              `json:"defaultLevelCap"`
+	MaxEggPlayerLevel            uint64                              `json:"maxEggPlayerLevel"`
+	MaxEncounterPlayerLevel      uint64                              `json:"maxEncounterPlayerLevel"`
+	MaxQuestEncounterPlayerLevel uint64                              `json:"maxQuestEncounterPlayerLevel"`
+	MilestoneLevels              [8]uint64                           `json:"milestoneLevels"`
+	NextLevelPreviewIntervalS    uint64                              `json:"nextLevelPreviewIntervalS"`
+	RankNum                      []uint64                            `json:"rankNum"`
+	RequiredExperience           []uint64                            `json:"requiredExperience"`
+	SmoreFtueImageUrl            string                              `json:"smoreFtueImageUrl"`
+	XpRewardV2thresholds         [11]PlayerLevelXpRewardV2thresholds `json:"xpRewardV2Thresholds"`
 }
 
 type PokeballThrowPropertySettingsCurveballModifier struct {
