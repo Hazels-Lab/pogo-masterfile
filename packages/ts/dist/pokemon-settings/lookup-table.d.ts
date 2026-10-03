@@ -1761,8 +1761,10 @@ import type {
 	PokemonSettingsV0704PokemonGoomy,
 	PokemonSettingsV0704PokemonGoomyNormal,
 	PokemonSettingsV0705PokemonSliggoo,
+	PokemonSettingsV0705PokemonSliggooHisuian,
 	PokemonSettingsV0705PokemonSliggooNormal,
 	PokemonSettingsV0706PokemonGoodra,
+	PokemonSettingsV0706PokemonGoodraHisuian,
 	PokemonSettingsV0706PokemonGoodraNormal,
 	PokemonSettingsV0707PokemonKlefki,
 	PokemonSettingsV0707PokemonKlefkiNormal,
@@ -4242,8 +4244,10 @@ export interface PokemonSettingsLookup {
 	V0704_POKEMON_GOOMY: PokemonSettingsV0704PokemonGoomy;
 	V0704_POKEMON_GOOMY_NORMAL: PokemonSettingsV0704PokemonGoomyNormal;
 	V0705_POKEMON_SLIGGOO: PokemonSettingsV0705PokemonSliggoo;
+	V0705_POKEMON_SLIGGOO_HISUIAN: PokemonSettingsV0705PokemonSliggooHisuian;
 	V0705_POKEMON_SLIGGOO_NORMAL: PokemonSettingsV0705PokemonSliggooNormal;
 	V0706_POKEMON_GOODRA: PokemonSettingsV0706PokemonGoodra;
+	V0706_POKEMON_GOODRA_HISUIAN: PokemonSettingsV0706PokemonGoodraHisuian;
 	V0706_POKEMON_GOODRA_NORMAL: PokemonSettingsV0706PokemonGoodraNormal;
 	V0707_POKEMON_KLEFKI: PokemonSettingsV0707PokemonKlefki;
 	V0707_POKEMON_KLEFKI_NORMAL: PokemonSettingsV0707PokemonKlefkiNormal;

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonSettings", split "steel", 78 entries.
+// Generated from Pokémon GO masterfile — group "pokemonSettings", split "steel", 80 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonSettings } from "../types";
@@ -3707,6 +3707,139 @@ export type PokemonSettingsV0681PokemonAegislashShield = S<
 		}
 	>
 >;
+export type PokemonSettingsV0705PokemonSliggooHisuian = S<
+	PokemonSettings<
+		"V0705_POKEMON_SLIGGOO_HISUIAN",
+		{
+			animationTime: [1.9, 0.6666, 1.7666, 0, 2.4, 0.08667, 0];
+			breadTierGroup: "GROUP_3";
+			buddyGroupNumber: 1;
+			buddyScale: 11;
+			camera: {
+				cylinderHeightM: 1.2;
+				cylinderRadiusM: 0.8;
+			};
+			cinematicMoves: ["HEAVY_SLAM", "DRAGON_PULSE", "SLUDGE_WAVE", "WATER_PULSE"];
+			encounter: {
+				attackProbability: 0.3;
+				attackTimerS: 29;
+				bonusCandyCaptureReward: 2;
+				bonusStardustCaptureReward: 200;
+				bonusXlCandyCaptureReward: 1;
+				cameraDistance: 4;
+				collisionHeadRadiusM: 0.126;
+				collisionHeightM: 0.1;
+				collisionRadiusM: 0.1;
+				dodgeProbability: 0.05;
+				jumpTimeS: 0.9;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementTimerS: 10;
+				movementType: "MOVEMENT_JUMP";
+			};
+			evolutionBranch: [
+				{
+					candyCost: 100;
+					evolution: "GOODRA";
+					form: "GOODRA_HISUIAN";
+					lureItemRequirement: "ITEM_TROY_DISK_RAINY";
+				},
+			];
+			familyId: "FAMILY_GOOMY";
+			form: "SLIGGOO_HISUIAN";
+			heightStdDev: 0.1;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 5;
+			modelHeight: 1.17;
+			modelScale: 0.91;
+			modelScaleV2: 1;
+			parentPokemonId: "GOOMY";
+			pokedexHeightM: 0.8;
+			pokedexWeightKg: 17.5;
+			pokemonId: "SLIGGOO";
+			quickMoves: ["TACKLE_FAST", "WATER_GUN_FAST"];
+			raidBossDistanceOffset: 2;
+			stats: {
+				baseAttack: 153;
+				baseDefense: 190;
+				baseStamina: 151;
+			};
+			thirdMove: {
+				candyToUnlock: 75;
+				stardustToUnlock: 75000;
+			};
+			type: "POKEMON_TYPE_STEEL";
+			type2: "POKEMON_TYPE_DRAGON";
+			weightStdDev: 2.1875;
+		}
+	>
+>;
+export type PokemonSettingsV0706PokemonGoodraHisuian = S<
+	PokemonSettings<
+		"V0706_POKEMON_GOODRA_HISUIAN",
+		{
+			animationTime: [1.9, 0.6666, 1.7666, 0, 2.4, 0.08667, 0];
+			breadTierGroup: "GROUP_3";
+			buddyGroupNumber: 3;
+			buddyScale: 19;
+			buddySize: "BUDDY_BIG";
+			camera: {
+				cylinderHeightM: 2.4;
+				cylinderRadiusM: 1.4;
+			};
+			cinematicMoves: ["HEAVY_SLAM", "DRACO_METEOR", "SLUDGE_WAVE", "HYDRO_PUMP"];
+			encounter: {
+				attackProbability: 0.3;
+				attackTimerS: 29;
+				bonusCandyCaptureReward: 7;
+				bonusStardustCaptureReward: 400;
+				bonusXlCandyCaptureReward: 2;
+				cameraDistance: 5;
+				collisionHeadRadiusM: 0.126;
+				collisionHeightM: 0.1;
+				collisionRadiusM: 0.1;
+				dodgeProbability: 0.15;
+				jumpTimeS: 0.9;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementTimerS: 10;
+				movementType: "MOVEMENT_JUMP";
+			};
+			familyId: "FAMILY_GOOMY";
+			form: "GOODRA_HISUIAN";
+			heightStdDev: 0.25;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 5;
+			modelHeight: 2.15;
+			modelScale: 0.72;
+			modelScaleV2: 0.98;
+			parentPokemonId: "SLIGGOO";
+			pokedexHeightM: 2;
+			pokedexWeightKg: 150.5;
+			pokemonId: "GOODRA";
+			quickMoves: ["DRAGON_TAIL_FAST", "IRON_TAIL_FAST", "WATER_GUN_FAST"];
+			raidBossDistanceOffset: 6;
+			stats: {
+				baseAttack: 211;
+				baseDefense: 255;
+				baseStamina: 190;
+			};
+			thirdMove: {
+				candyToUnlock: 75;
+				stardustToUnlock: 75000;
+			};
+			type: "POKEMON_TYPE_STEEL";
+			type2: "POKEMON_TYPE_DRAGON";
+			weightStdDev: 18.8125;
+		}
+	>
+>;
 export type PokemonSettingsV0707PokemonKlefki = S<
 	PokemonSettings<
 		"V0707_POKEMON_KLEFKI",
@@ -5590,6 +5723,8 @@ export type PokemonSettingsSteelMasterfileEntry =
 	| PokemonSettingsV0681PokemonAegislash
 	| PokemonSettingsV0681PokemonAegislashBlade
 	| PokemonSettingsV0681PokemonAegislashShield
+	| PokemonSettingsV0705PokemonSliggooHisuian
+	| PokemonSettingsV0706PokemonGoodraHisuian
 	| PokemonSettingsV0707PokemonKlefki
 	| PokemonSettingsV0707PokemonKlefkiNormal
 	| PokemonSettingsV0773PokemonSilvallySteel

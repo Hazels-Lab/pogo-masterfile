@@ -8,7 +8,6 @@ export type LocationCardSettingsIdCarFreeDay = S<
 		"LC_ID_CAR_FREE_DAY",
 		{
 			imageUrl: "lc_ID_CarFreeDay";
-			locationCard: "LC_ID_CAR_FREE_DAY";
 		}
 	>
 >;

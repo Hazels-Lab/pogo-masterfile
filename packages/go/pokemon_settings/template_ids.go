@@ -1765,8 +1765,10 @@ const (
 	PokemonSettingsTemplateIDV0704PokemonGoomy                              PokemonSettingsTemplateID = "V0704_POKEMON_GOOMY"
 	PokemonSettingsTemplateIDV0704PokemonGoomyNormal                        PokemonSettingsTemplateID = "V0704_POKEMON_GOOMY_NORMAL"
 	PokemonSettingsTemplateIDV0705PokemonSliggoo                            PokemonSettingsTemplateID = "V0705_POKEMON_SLIGGOO"
+	PokemonSettingsTemplateIDV0705PokemonSliggooHisuian                     PokemonSettingsTemplateID = "V0705_POKEMON_SLIGGOO_HISUIAN"
 	PokemonSettingsTemplateIDV0705PokemonSliggooNormal                      PokemonSettingsTemplateID = "V0705_POKEMON_SLIGGOO_NORMAL"
 	PokemonSettingsTemplateIDV0706PokemonGoodra                             PokemonSettingsTemplateID = "V0706_POKEMON_GOODRA"
+	PokemonSettingsTemplateIDV0706PokemonGoodraHisuian                      PokemonSettingsTemplateID = "V0706_POKEMON_GOODRA_HISUIAN"
 	PokemonSettingsTemplateIDV0706PokemonGoodraNormal                       PokemonSettingsTemplateID = "V0706_POKEMON_GOODRA_NORMAL"
 	PokemonSettingsTemplateIDV0707PokemonKlefki                             PokemonSettingsTemplateID = "V0707_POKEMON_KLEFKI"
 	PokemonSettingsTemplateIDV0707PokemonKlefkiNormal                       PokemonSettingsTemplateID = "V0707_POKEMON_KLEFKI_NORMAL"
@@ -4246,8 +4248,10 @@ var PokemonSettingsTemplateIDValues = [...]PokemonSettingsTemplateID{
 	PokemonSettingsTemplateIDV0704PokemonGoomy,
 	PokemonSettingsTemplateIDV0704PokemonGoomyNormal,
 	PokemonSettingsTemplateIDV0705PokemonSliggoo,
+	PokemonSettingsTemplateIDV0705PokemonSliggooHisuian,
 	PokemonSettingsTemplateIDV0705PokemonSliggooNormal,
 	PokemonSettingsTemplateIDV0706PokemonGoodra,
+	PokemonSettingsTemplateIDV0706PokemonGoodraHisuian,
 	PokemonSettingsTemplateIDV0706PokemonGoodraNormal,
 	PokemonSettingsTemplateIDV0707PokemonKlefki,
 	PokemonSettingsTemplateIDV0707PokemonKlefkiNormal,

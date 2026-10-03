@@ -1761,8 +1761,10 @@ import type {
 	GenderSettingsV0704PokemonGoomy,
 	GenderSettingsV0704PokemonGoomyNormal,
 	GenderSettingsV0705PokemonSliggoo,
+	GenderSettingsV0705PokemonSliggooHisuian,
 	GenderSettingsV0705PokemonSliggooNormal,
 	GenderSettingsV0706PokemonGoodra,
+	GenderSettingsV0706PokemonGoodraHisuian,
 	GenderSettingsV0706PokemonGoodraNormal,
 	GenderSettingsV0707PokemonKlefki,
 	GenderSettingsV0707PokemonKlefkiNormal,
@@ -4245,8 +4247,10 @@ export interface GenderSettingsLookup {
 	SPAWN_V0704_POKEMON_GOOMY: GenderSettingsV0704PokemonGoomy;
 	SPAWN_V0704_POKEMON_GOOMY_NORMAL: GenderSettingsV0704PokemonGoomyNormal;
 	SPAWN_V0705_POKEMON_SLIGGOO: GenderSettingsV0705PokemonSliggoo;
+	SPAWN_V0705_POKEMON_SLIGGOO_HISUIAN: GenderSettingsV0705PokemonSliggooHisuian;
 	SPAWN_V0705_POKEMON_SLIGGOO_NORMAL: GenderSettingsV0705PokemonSliggooNormal;
 	SPAWN_V0706_POKEMON_GOODRA: GenderSettingsV0706PokemonGoodra;
+	SPAWN_V0706_POKEMON_GOODRA_HISUIAN: GenderSettingsV0706PokemonGoodraHisuian;
 	SPAWN_V0706_POKEMON_GOODRA_NORMAL: GenderSettingsV0706PokemonGoodraNormal;
 	SPAWN_V0707_POKEMON_KLEFKI: GenderSettingsV0707PokemonKlefki;
 	SPAWN_V0707_POKEMON_KLEFKI_NORMAL: GenderSettingsV0707PokemonKlefkiNormal;

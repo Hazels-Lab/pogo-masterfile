@@ -8,7 +8,6 @@ export type LocationCardSettingsJejuStampRally = S<
 		"LC_JEJU_STAMP_RALLY",
 		{
 			imageUrl: "lc_stampRally2025_Jeju";
-			locationCard: "LC_JEJU_STAMP_RALLY";
 		}
 	>
 >;

@@ -3527,10 +3527,14 @@ pub enum PokemonExtendedSettingsTemplateId {
     ExtendedV0704PokemonGoomyNormal,
     #[serde(rename = "EXTENDED_V0705_POKEMON_SLIGGOO")]
     ExtendedV0705PokemonSliggoo,
+    #[serde(rename = "EXTENDED_V0705_POKEMON_SLIGGOO_HISUIAN")]
+    ExtendedV0705PokemonSliggooHisuian,
     #[serde(rename = "EXTENDED_V0705_POKEMON_SLIGGOO_NORMAL")]
     ExtendedV0705PokemonSliggooNormal,
     #[serde(rename = "EXTENDED_V0706_POKEMON_GOODRA")]
     ExtendedV0706PokemonGoodra,
+    #[serde(rename = "EXTENDED_V0706_POKEMON_GOODRA_HISUIAN")]
+    ExtendedV0706PokemonGoodraHisuian,
     #[serde(rename = "EXTENDED_V0706_POKEMON_GOODRA_NORMAL")]
     ExtendedV0706PokemonGoodraNormal,
     #[serde(rename = "EXTENDED_V0707_POKEMON_KLEFKI")]

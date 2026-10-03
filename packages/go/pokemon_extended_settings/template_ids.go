@@ -1765,8 +1765,10 @@ const (
 	PokemonExtendedSettingsTemplateIDExtendedV0704PokemonGoomy                           PokemonExtendedSettingsTemplateID = "EXTENDED_V0704_POKEMON_GOOMY"
 	PokemonExtendedSettingsTemplateIDExtendedV0704PokemonGoomyNormal                     PokemonExtendedSettingsTemplateID = "EXTENDED_V0704_POKEMON_GOOMY_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV0705PokemonSliggoo                         PokemonExtendedSettingsTemplateID = "EXTENDED_V0705_POKEMON_SLIGGOO"
+	PokemonExtendedSettingsTemplateIDExtendedV0705PokemonSliggooHisuian                  PokemonExtendedSettingsTemplateID = "EXTENDED_V0705_POKEMON_SLIGGOO_HISUIAN"
 	PokemonExtendedSettingsTemplateIDExtendedV0705PokemonSliggooNormal                   PokemonExtendedSettingsTemplateID = "EXTENDED_V0705_POKEMON_SLIGGOO_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV0706PokemonGoodra                          PokemonExtendedSettingsTemplateID = "EXTENDED_V0706_POKEMON_GOODRA"
+	PokemonExtendedSettingsTemplateIDExtendedV0706PokemonGoodraHisuian                   PokemonExtendedSettingsTemplateID = "EXTENDED_V0706_POKEMON_GOODRA_HISUIAN"
 	PokemonExtendedSettingsTemplateIDExtendedV0706PokemonGoodraNormal                    PokemonExtendedSettingsTemplateID = "EXTENDED_V0706_POKEMON_GOODRA_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV0707PokemonKlefki                          PokemonExtendedSettingsTemplateID = "EXTENDED_V0707_POKEMON_KLEFKI"
 	PokemonExtendedSettingsTemplateIDExtendedV0707PokemonKlefkiNormal                    PokemonExtendedSettingsTemplateID = "EXTENDED_V0707_POKEMON_KLEFKI_NORMAL"
@@ -4250,8 +4252,10 @@ var PokemonExtendedSettingsTemplateIDValues = [...]PokemonExtendedSettingsTempla
 	PokemonExtendedSettingsTemplateIDExtendedV0704PokemonGoomy,
 	PokemonExtendedSettingsTemplateIDExtendedV0704PokemonGoomyNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV0705PokemonSliggoo,
+	PokemonExtendedSettingsTemplateIDExtendedV0705PokemonSliggooHisuian,
 	PokemonExtendedSettingsTemplateIDExtendedV0705PokemonSliggooNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV0706PokemonGoodra,
+	PokemonExtendedSettingsTemplateIDExtendedV0706PokemonGoodraHisuian,
 	PokemonExtendedSettingsTemplateIDExtendedV0706PokemonGoodraNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV0707PokemonKlefki,
 	PokemonExtendedSettingsTemplateIDExtendedV0707PokemonKlefkiNormal,

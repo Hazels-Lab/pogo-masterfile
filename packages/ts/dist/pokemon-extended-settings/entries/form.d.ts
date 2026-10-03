@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1171 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1173 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -13847,6 +13847,23 @@ export type PokemonExtendedSettingsV0704PokemonGoomyNormal = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0705PokemonSliggooHisuian = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0705_POKEMON_SLIGGOO_HISUIAN",
+		{
+			form: "SLIGGOO_HISUIAN";
+			sizeSettings: {
+				mLowerBound: 0.6;
+				mUpperBound: 1;
+				xlUpperBound: 1.2;
+				xsLowerBound: 0.4;
+				xxlUpperBound: 1.4;
+				xxsLowerBound: 0.392;
+			};
+			uniqueId: "SLIGGOO";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0705PokemonSliggooNormal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0705_POKEMON_SLIGGOO_NORMAL",
@@ -13861,6 +13878,23 @@ export type PokemonExtendedSettingsV0705PokemonSliggooNormal = S<
 				xxsLowerBound: 0.392;
 			};
 			uniqueId: "SLIGGOO";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0706PokemonGoodraHisuian = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0706_POKEMON_GOODRA_HISUIAN",
+		{
+			form: "GOODRA_HISUIAN";
+			sizeSettings: {
+				mLowerBound: 1.5;
+				mUpperBound: 2.5;
+				xlUpperBound: 3;
+				xsLowerBound: 1;
+				xxlUpperBound: 3.1;
+				xxsLowerBound: 0.98;
+			};
+			uniqueId: "GOODRA";
 		}
 	>
 >;
@@ -20870,7 +20904,9 @@ export type PokemonExtendedSettingsFormMasterfileEntry =
 	| PokemonExtendedSettingsV0702PokemonDedenneNormal
 	| PokemonExtendedSettingsV0703PokemonCarbinkNormal
 	| PokemonExtendedSettingsV0704PokemonGoomyNormal
+	| PokemonExtendedSettingsV0705PokemonSliggooHisuian
 	| PokemonExtendedSettingsV0705PokemonSliggooNormal
+	| PokemonExtendedSettingsV0706PokemonGoodraHisuian
 	| PokemonExtendedSettingsV0706PokemonGoodraNormal
 	| PokemonExtendedSettingsV0707PokemonKlefkiNormal
 	| PokemonExtendedSettingsV0708PokemonPhantumpNormal

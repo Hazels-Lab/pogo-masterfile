@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemExpirationSettings", 24 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "itemExpirationSettings", 23 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { ItemExpirationSettings } from "../types";
@@ -213,38 +213,17 @@ export type ItemExpirationSettingsWildBall = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_WILD_BALL",
 		{
-			emergencyExpirationTime: "2025-11-16T18:00:00";
-			expirationTime: "2025-11-16T18:00:00";
+			emergencyExpirationTime: "2026-11-15T18:00:00";
+			expirationTime: "2026-11-15T18:00:00";
 			itemEnablementSettings: {
 				enabledTimePeriods: [
 					{
-						enabledEndTime: "2025-11-15T18:00:00";
-						enabledStartTime: "2025-11-15T10:00:00";
+						enabledEndTime: "2026-11-14T18:00:00";
+						enabledStartTime: "2026-11-14T10:00:00";
 					},
 					{
-						enabledEndTime: "2025-11-16T18:00:00";
-						enabledStartTime: "2025-11-16T10:00:00";
-					},
-				];
-			};
-		}
-	>
->;
-export type ItemExpirationSettingsWildBallPremier = S<
-	ItemExpirationSettings<
-		"ITEM_EXPIRATION_ITEM_WILD_BALL_PREMIER",
-		{
-			emergencyExpirationTime: "2025-11-16T18:00:00";
-			expirationTime: "2025-11-16T18:00:00";
-			itemEnablementSettings: {
-				enabledTimePeriods: [
-					{
-						enabledEndTime: "2025-11-15T18:00:00";
-						enabledStartTime: "2025-11-15T10:00:00";
-					},
-					{
-						enabledEndTime: "2025-11-16T18:00:00";
-						enabledStartTime: "2025-11-16T10:00:00";
+						enabledEndTime: "2026-11-15T18:00:00";
+						enabledStartTime: "2026-11-15T10:00:00";
 					},
 				];
 			};
@@ -275,7 +254,6 @@ export type ItemExpirationSettingsMasterfileEntry =
 	| ItemExpirationSettingsLuckyFriendApplicator
 	| ItemExpirationSettingsSingleStatIncrease
 	| ItemExpirationSettingsTripleStatIncrease
-	| ItemExpirationSettingsWildBall
-	| ItemExpirationSettingsWildBallPremier;
+	| ItemExpirationSettingsWildBall;
 
 export type ItemExpirationSettingsTemplateID = ItemExpirationSettingsMasterfileEntry["templateId"];

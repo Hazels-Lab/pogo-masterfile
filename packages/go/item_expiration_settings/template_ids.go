@@ -28,7 +28,6 @@ const (
 	ItemExpirationSettingsTemplateIDItemExpirationItemSingleStatIncrease         ItemExpirationSettingsTemplateID = "ITEM_EXPIRATION_ITEM_SINGLE_STAT_INCREASE"
 	ItemExpirationSettingsTemplateIDItemExpirationItemTripleStatIncrease         ItemExpirationSettingsTemplateID = "ITEM_EXPIRATION_ITEM_TRIPLE_STAT_INCREASE"
 	ItemExpirationSettingsTemplateIDItemExpirationItemWildBall                   ItemExpirationSettingsTemplateID = "ITEM_EXPIRATION_ITEM_WILD_BALL"
-	ItemExpirationSettingsTemplateIDItemExpirationItemWildBallPremier            ItemExpirationSettingsTemplateID = "ITEM_EXPIRATION_ITEM_WILD_BALL_PREMIER"
 )
 
 var ItemExpirationSettingsTemplateIDValues = [...]ItemExpirationSettingsTemplateID{
@@ -55,5 +54,4 @@ var ItemExpirationSettingsTemplateIDValues = [...]ItemExpirationSettingsTemplate
 	ItemExpirationSettingsTemplateIDItemExpirationItemSingleStatIncrease,
 	ItemExpirationSettingsTemplateIDItemExpirationItemTripleStatIncrease,
 	ItemExpirationSettingsTemplateIDItemExpirationItemWildBall,
-	ItemExpirationSettingsTemplateIDItemExpirationItemWildBallPremier,
 }
