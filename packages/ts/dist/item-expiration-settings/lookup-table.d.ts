@@ -24,7 +24,6 @@ import type {
 	ItemExpirationSettingsSingleStatIncrease,
 	ItemExpirationSettingsTripleStatIncrease,
 	ItemExpirationSettingsWildBall,
-	ItemExpirationSettingsWildBallPremier,
 } from "./entries";
 
 export interface ItemExpirationSettingsLookup {
@@ -51,5 +50,4 @@ export interface ItemExpirationSettingsLookup {
 	ITEM_EXPIRATION_ITEM_SINGLE_STAT_INCREASE: ItemExpirationSettingsSingleStatIncrease;
 	ITEM_EXPIRATION_ITEM_TRIPLE_STAT_INCREASE: ItemExpirationSettingsTripleStatIncrease;
 	ITEM_EXPIRATION_ITEM_WILD_BALL: ItemExpirationSettingsWildBall;
-	ITEM_EXPIRATION_ITEM_WILD_BALL_PREMIER: ItemExpirationSettingsWildBallPremier;
 }

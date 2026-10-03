@@ -892,7 +892,7 @@ export type PokemonSettingsV0068PokemonMachampWildarea202601 = S<
 			};
 			evolutionPips: 1;
 			familyId: "FAMILY_MACHOP";
-			form: 3369;
+			form: "MACHAMP_WILDAREA_2026_01";
 			heightStdDev: 0.2;
 			ibfc: object;
 			isDeployable: true;

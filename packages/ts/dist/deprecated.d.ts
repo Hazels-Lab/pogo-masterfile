@@ -12577,6 +12577,9 @@ type DeprecatedInvasionNpcDisplaySettingsIds =
 	| "CHARACTER_WILLOW"
 	| "CHARACTER_WILLOWB";
 
+/** @deprecated lastSeen 2026-10-03 — 1 entries */
+type DeprecatedItemExpirationSettingsIds = "ITEM_EXPIRATION_ITEM_WILD_BALL_PREMIER";
+
 /** @deprecated lastSeen 2023-12-25 — 1 entries */
 type DeprecatedItemSettingsIds = "ITEM_LEGENDARY_RAID_TICKET";
 
@@ -12733,6 +12736,7 @@ export type DeprecatedTemplateId =
 	| DeprecatedIbfcLightweightSettingsIds
 	| DeprecatedIncubatorFlowSettingsIds
 	| DeprecatedInvasionNpcDisplaySettingsIds
+	| DeprecatedItemExpirationSettingsIds
 	| DeprecatedItemSettingsIds
 	| DeprecatedLanguageSettingsIds
 	| DeprecatedLoadingScreenSettingsIds

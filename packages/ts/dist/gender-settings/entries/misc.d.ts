@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "genderSettings", split "misc", 2386 entries.
+// Generated from Pokémon GO masterfile — group "genderSettings", split "misc", 2388 entries.
 
 import type { S } from "../../_utils";
 import type { GenderSettings } from "../types";
@@ -19754,6 +19754,18 @@ export type GenderSettingsV0705PokemonSliggoo = S<
 		}
 	>
 >;
+export type GenderSettingsV0705PokemonSliggooHisuian = S<
+	GenderSettings<
+		"SPAWN_V0705_POKEMON_SLIGGOO_HISUIAN",
+		{
+			gender: {
+				femalePercent: 0.5;
+				malePercent: 0.5;
+			};
+			pokemon: "SLIGGOO";
+		}
+	>
+>;
 export type GenderSettingsV0705PokemonSliggooNormal = S<
 	GenderSettings<
 		"SPAWN_V0705_POKEMON_SLIGGOO_NORMAL",
@@ -19769,6 +19781,18 @@ export type GenderSettingsV0705PokemonSliggooNormal = S<
 export type GenderSettingsV0706PokemonGoodra = S<
 	GenderSettings<
 		"SPAWN_V0706_POKEMON_GOODRA",
+		{
+			gender: {
+				femalePercent: 0.5;
+				malePercent: 0.5;
+			};
+			pokemon: "GOODRA";
+		}
+	>
+>;
+export type GenderSettingsV0706PokemonGoodraHisuian = S<
+	GenderSettings<
+		"SPAWN_V0706_POKEMON_GOODRA_HISUIAN",
 		{
 			gender: {
 				femalePercent: 0.5;
@@ -29736,8 +29760,10 @@ export type GenderSettingsMiscMasterfileEntry =
 	| GenderSettingsV0704PokemonGoomy
 	| GenderSettingsV0704PokemonGoomyNormal
 	| GenderSettingsV0705PokemonSliggoo
+	| GenderSettingsV0705PokemonSliggooHisuian
 	| GenderSettingsV0705PokemonSliggooNormal
 	| GenderSettingsV0706PokemonGoodra
+	| GenderSettingsV0706PokemonGoodraHisuian
 	| GenderSettingsV0706PokemonGoodraNormal
 	| GenderSettingsV0707PokemonKlefki
 	| GenderSettingsV0707PokemonKlefkiNormal

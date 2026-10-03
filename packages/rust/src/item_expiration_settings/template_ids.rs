@@ -53,6 +53,4 @@ pub enum ItemExpirationSettingsTemplateId {
     ItemExpirationItemTripleStatIncrease,
     #[serde(rename = "ITEM_EXPIRATION_ITEM_WILD_BALL")]
     ItemExpirationItemWildBall,
-    #[serde(rename = "ITEM_EXPIRATION_ITEM_WILD_BALL_PREMIER")]
-    ItemExpirationItemWildBallPremier,
 }

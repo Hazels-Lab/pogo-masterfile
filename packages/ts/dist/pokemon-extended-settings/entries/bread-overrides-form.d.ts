@@ -5294,7 +5294,7 @@ export type PokemonExtendedSettingsV0068PokemonMachampWildarea202601 = S<
 					modelScaleV2: 0.86;
 				},
 			];
-			form: 3369;
+			form: "MACHAMP_WILDAREA_2026_01";
 			sizeSettings: {
 				mLowerBound: 1.2;
 				mUpperBound: 2;

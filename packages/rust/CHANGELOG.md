@@ -2,6 +2,23 @@
 
 All notable changes to `pogo-masterfile-types` (crates.io) are recorded here. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.64] - 2026-10-03
+
+Automated regeneration from upstream masterfile commit `7e9e436029228c4294ede3517521808de7830acb`.
+
+### Added template IDs (6)
+
+- EXTENDED_V0705_POKEMON_SLIGGOO_HISUIAN
+- EXTENDED_V0706_POKEMON_GOODRA_HISUIAN
+- SPAWN_V0705_POKEMON_SLIGGOO_HISUIAN
+- SPAWN_V0706_POKEMON_GOODRA_HISUIAN
+- V0705_POKEMON_SLIGGOO_HISUIAN
+- V0706_POKEMON_GOODRA_HISUIAN
+
+### Removed template IDs (1)
+
+- ITEM_EXPIRATION_ITEM_WILD_BALL_PREMIER
+
 ## [0.1.63] - 2026-10-02
 
 Automated regeneration from upstream masterfile commit `3ff9e6417f4dadeefe2636ef829d08be29520ef0`.

@@ -1273,7 +1273,7 @@ export type FormSettingsV0068PokemonMachamp = S<
 					form: "MACHAMP_NORMAL";
 				},
 				{
-					form: 3369;
+					form: "MACHAMP_WILDAREA_2026_01";
 					isCostume: true;
 				},
 			];
@@ -10520,6 +10520,9 @@ export type FormSettingsV0705PokemonSliggoo = S<
 				{
 					form: "SLIGGOO_NORMAL";
 				},
+				{
+					form: "SLIGGOO_HISUIAN";
+				},
 			];
 			pokemon: "SLIGGOO";
 		}
@@ -10532,6 +10535,9 @@ export type FormSettingsV0706PokemonGoodra = S<
 			forms: [
 				{
 					form: "GOODRA_NORMAL";
+				},
+				{
+					form: "GOODRA_HISUIAN";
 				},
 			];
 			pokemon: "GOODRA";

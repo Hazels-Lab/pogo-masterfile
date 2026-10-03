@@ -1765,8 +1765,10 @@ const (
 	GenderSettingsTemplateIDSpawnV0704PokemonGoomy                              GenderSettingsTemplateID = "SPAWN_V0704_POKEMON_GOOMY"
 	GenderSettingsTemplateIDSpawnV0704PokemonGoomyNormal                        GenderSettingsTemplateID = "SPAWN_V0704_POKEMON_GOOMY_NORMAL"
 	GenderSettingsTemplateIDSpawnV0705PokemonSliggoo                            GenderSettingsTemplateID = "SPAWN_V0705_POKEMON_SLIGGOO"
+	GenderSettingsTemplateIDSpawnV0705PokemonSliggooHisuian                     GenderSettingsTemplateID = "SPAWN_V0705_POKEMON_SLIGGOO_HISUIAN"
 	GenderSettingsTemplateIDSpawnV0705PokemonSliggooNormal                      GenderSettingsTemplateID = "SPAWN_V0705_POKEMON_SLIGGOO_NORMAL"
 	GenderSettingsTemplateIDSpawnV0706PokemonGoodra                             GenderSettingsTemplateID = "SPAWN_V0706_POKEMON_GOODRA"
+	GenderSettingsTemplateIDSpawnV0706PokemonGoodraHisuian                      GenderSettingsTemplateID = "SPAWN_V0706_POKEMON_GOODRA_HISUIAN"
 	GenderSettingsTemplateIDSpawnV0706PokemonGoodraNormal                       GenderSettingsTemplateID = "SPAWN_V0706_POKEMON_GOODRA_NORMAL"
 	GenderSettingsTemplateIDSpawnV0707PokemonKlefki                             GenderSettingsTemplateID = "SPAWN_V0707_POKEMON_KLEFKI"
 	GenderSettingsTemplateIDSpawnV0707PokemonKlefkiNormal                       GenderSettingsTemplateID = "SPAWN_V0707_POKEMON_KLEFKI_NORMAL"
@@ -4249,8 +4251,10 @@ var GenderSettingsTemplateIDValues = [...]GenderSettingsTemplateID{
 	GenderSettingsTemplateIDSpawnV0704PokemonGoomy,
 	GenderSettingsTemplateIDSpawnV0704PokemonGoomyNormal,
 	GenderSettingsTemplateIDSpawnV0705PokemonSliggoo,
+	GenderSettingsTemplateIDSpawnV0705PokemonSliggooHisuian,
 	GenderSettingsTemplateIDSpawnV0705PokemonSliggooNormal,
 	GenderSettingsTemplateIDSpawnV0706PokemonGoodra,
+	GenderSettingsTemplateIDSpawnV0706PokemonGoodraHisuian,
 	GenderSettingsTemplateIDSpawnV0706PokemonGoodraNormal,
 	GenderSettingsTemplateIDSpawnV0707PokemonKlefki,
 	GenderSettingsTemplateIDSpawnV0707PokemonKlefkiNormal,

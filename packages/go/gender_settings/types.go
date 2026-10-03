@@ -2,8 +2,6 @@
 
 package gender_settings
 
-import "encoding/json"
-
 type GenderSettingsGender struct {
 	FemalePercent     *float64 `json:"femalePercent,omitempty"`
 	GenderlessPercent *float64 `json:"genderlessPercent,omitempty"`
@@ -11,7 +9,7 @@ type GenderSettingsGender struct {
 }
 
 type GenderSettings struct {
-	Form    json.RawMessage      `json:"form,omitempty"`
+	Form    *string              `json:"form,omitempty"`
 	Gender  GenderSettingsGender `json:"gender"`
 	Pokemon string               `json:"pokemon"`
 }

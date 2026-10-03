@@ -317,7 +317,7 @@ export type GenderSettingsV0068PokemonMachampWildarea202601 = S<
 	GenderSettings<
 		"SPAWN_V0068_POKEMON_MACHAMP_WILDAREA_2026_01",
 		{
-			form: 3369;
+			form: "MACHAMP_WILDAREA_2026_01";
 			gender: {
 				femalePercent: 0.25;
 				malePercent: 0.75;

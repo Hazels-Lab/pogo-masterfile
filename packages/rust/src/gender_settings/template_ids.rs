@@ -3527,10 +3527,14 @@ pub enum GenderSettingsTemplateId {
     SpawnV0704PokemonGoomyNormal,
     #[serde(rename = "SPAWN_V0705_POKEMON_SLIGGOO")]
     SpawnV0705PokemonSliggoo,
+    #[serde(rename = "SPAWN_V0705_POKEMON_SLIGGOO_HISUIAN")]
+    SpawnV0705PokemonSliggooHisuian,
     #[serde(rename = "SPAWN_V0705_POKEMON_SLIGGOO_NORMAL")]
     SpawnV0705PokemonSliggooNormal,
     #[serde(rename = "SPAWN_V0706_POKEMON_GOODRA")]
     SpawnV0706PokemonGoodra,
+    #[serde(rename = "SPAWN_V0706_POKEMON_GOODRA_HISUIAN")]
+    SpawnV0706PokemonGoodraHisuian,
     #[serde(rename = "SPAWN_V0706_POKEMON_GOODRA_NORMAL")]
     SpawnV0706PokemonGoodraNormal,
     #[serde(rename = "SPAWN_V0707_POKEMON_KLEFKI")]
