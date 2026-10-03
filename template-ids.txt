@@ -18348,7 +18348,6 @@ diademuertos
 general1.ticket.5
 general2.ticket.11
 general2.ticket.3
-general2.ticket.9
 general4.medium.1
 general6.small.1
 hometransport.1

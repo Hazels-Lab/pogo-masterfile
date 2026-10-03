@@ -2060,14 +2060,16 @@ pub struct XpRewardV2thresholds {
 #[serde(rename_all = "camelCase")]
 pub struct PlayerLevel {
     pub cp_multiplier: Vec<f64>,
+    pub default_level_cap: u64,
     pub max_egg_player_level: u64,
     pub max_encounter_player_level: u64,
     pub max_quest_encounter_player_level: u64,
     pub milestone_levels: [u64; 8],
+    pub next_level_preview_interval_s: u64,
     pub rank_num: Vec<u64>,
     pub required_experience: Vec<u64>,
     pub smore_ftue_image_url: String,
-    pub xp_reward_v2_thresholds: XpRewardV2thresholds,
+    pub xp_reward_v2_thresholds: [XpRewardV2thresholds; 11],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

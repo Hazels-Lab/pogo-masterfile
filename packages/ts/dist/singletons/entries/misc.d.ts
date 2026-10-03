@@ -295,10 +295,12 @@ export interface PlayerLevel {
 				0.8653,
 				0.8653,
 			];
+			defaultLevelCap: 70;
 			maxEggPlayerLevel: 20;
 			maxEncounterPlayerLevel: 30;
 			maxQuestEncounterPlayerLevel: 15;
 			milestoneLevels: [10, 20, 30, 40, 50, 60, 70, 80];
+			nextLevelPreviewIntervalS: 2592000;
 			rankNum: [
 				1,
 				1,
@@ -464,10 +466,52 @@ export interface PlayerLevel {
 				203353000,
 			];
 			smoreFtueImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO-MCS_Smores_Launch_KeyArt_v8_1024x512_ingame.jpg";
-			xpRewardV2Thresholds: {
-				source: "EVENT_PASS";
-				threshold: 1000000;
-			};
+			xpRewardV2Thresholds: [
+				{
+					source: "RAID";
+					threshold: 1000000;
+				},
+				{
+					source: "MAX_BATTLE";
+					threshold: 1000000;
+				},
+				{
+					source: "UNLOCK_MAX_MOVE";
+					threshold: 1000000;
+				},
+				{
+					source: "CATCH_POKEMON";
+					threshold: 1000000;
+				},
+				{
+					source: "HATCH_EGG";
+					threshold: 1000000;
+				},
+				{
+					source: "FRIENDSHIP_MILESTONE";
+					threshold: 10000;
+				},
+				{
+					source: "QUEST_PAGE";
+					threshold: 1000000;
+				},
+				{
+					source: "QUEST_STAMPS";
+					threshold: 1000000;
+				},
+				{
+					source: "COMPLETE_ROUTE";
+					threshold: 1000000;
+				},
+				{
+					source: "FORT_SEARCH";
+					threshold: 1000000;
+				},
+				{
+					source: "EVENT_PASS";
+					threshold: 1000000;
+				},
+			];
 		};
 	};
 }
