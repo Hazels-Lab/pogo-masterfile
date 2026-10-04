@@ -1,6 +1,6 @@
 {
-	"packages/ts": "0.1.70",
-	"packages/ts-api": "0.1.72",
+	"packages/ts": "0.1.71",
+	"packages/ts-api": "0.1.73",
 	"packages/rust-macros": "0.1.0",
 	"packages/rust": "0.1.65",
 	"packages/rust-api": "0.1.65",
