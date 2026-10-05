@@ -2,6 +2,10 @@
 
 All notable changes to `pogo-masterfile-types` (npm) are recorded here. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.72] - 2026-10-05
+
+Automated regeneration from upstream masterfile commit `44b2fbc2ce49f1ce74d21ce091e9b29ed844b856`.
+
 ## [0.1.71] - 2026-10-04
 
 Automated regeneration from upstream masterfile commit `2c5bdafba10644d4e9da8030c82443e32ff63ee9`.
