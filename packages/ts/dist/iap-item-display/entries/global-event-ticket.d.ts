@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 5 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 6 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -96,10 +96,29 @@ export type IapItemDisplayGeneral2Ticket11 = S<
 		}
 	>
 >;
+export type IapItemDisplayMonth2DeluxeEventPassTrackRedirect = S<
+	IapItemDisplay<
+		"month2_deluxe_event_pass_track_redirect",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			description: "deluxe_event_pass_track_unlock_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F918345fc_PGO-MCS_S24_GO_Pass_TICKET_v1-1024x576.jpg";
+			sku: "pgorelease.month2_deluxe_event_pass_track_redirect";
+			skuDisableTime: "2026-11-05T10:00:00";
+			skuDisableTimeUtcMs: "1793872800000";
+			skuEnableTime: "2025-10-06T10:00:00";
+			skuEnableTimeUtcMs: "1759744800000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_oct";
+			useEnvironmentPrefix: true;
+		}
+	>
+>;
 
 export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayEventPassMonth1SeasonStoreRedirect
 	| IapItemDisplayEventPassSeptember3EventStoreRedirect
 	| IapItemDisplayGeneral1Ticket5
 	| IapItemDisplayGeneral2Ticket3
-	| IapItemDisplayGeneral2Ticket11;
+	| IapItemDisplayGeneral2Ticket11
+	| IapItemDisplayMonth2DeluxeEventPassTrackRedirect;

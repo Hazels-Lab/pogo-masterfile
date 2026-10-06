@@ -877,6 +877,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNHatNewyearhat20210,
     #[serde(rename = "N_DISPLAY_n_hat_newyearhat2023_0")]
     NDisplayNHatNewyearhat20230,
+    #[serde(rename = "N_DISPLAY_n_hat_nflhelmet-arizonacardinals")]
+    NDisplayNHatNflhelmetArizonacardinals,
     #[serde(rename = "N_DISPLAY_n_hat_nihilegoitems_0")]
     NDisplayNHatNihilegoitems0,
     #[serde(rename = "N_DISPLAY_n_hat_noibat_0")]
@@ -1117,6 +1119,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNPantsDpA0,
     #[serde(rename = "N_DISPLAY_n_pants_dp_b_0")]
     NDisplayNPantsDpB0,
+    #[serde(rename = "N_DISPLAY_n_pants_duraludon")]
+    NDisplayNPantsDuraludon,
     #[serde(rename = "N_DISPLAY_n_pants_elesa_0")]
     NDisplayNPantsElesa0,
     #[serde(rename = "N_DISPLAY_n_pants_eternatussuit_0")]
@@ -1543,6 +1547,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNPoseLegacy50,
     #[serde(rename = "N_DISPLAY_n_pose_lvl77")]
     NDisplayNPoseLvl77,
+    #[serde(rename = "N_DISPLAY_n_pose_machamp")]
+    NDisplayNPoseMachamp,
     #[serde(rename = "N_DISPLAY_n_pose_mustard")]
     NDisplayNPoseMustard,
     #[serde(rename = "N_DISPLAY_n_pose_penpal")]
@@ -1875,6 +1881,10 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNShirtGowa20250,
     #[serde(rename = "N_DISPLAY_n_shirt_gowa2025_1")]
     NDisplayNShirtGowa20251,
+    #[serde(rename = "N_DISPLAY_n_shirt_gowa2026-maroon")]
+    NDisplayNShirtGowa2026Maroon,
+    #[serde(rename = "N_DISPLAY_n_shirt_gowa2026-navy")]
+    NDisplayNShirtGowa2026Navy,
     #[serde(rename = "N_DISPLAY_n_shirt_greedentsweater_0")]
     NDisplayNShirtGreedentsweater0,
     #[serde(rename = "N_DISPLAY_n_shirt_green_0")]
@@ -2059,6 +2069,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNShirtNaganadelaitems0,
     #[serde(rename = "N_DISPLAY_n_shirt_necrozmaitems_0")]
     NDisplayNShirtNecrozmaitems0,
+    #[serde(rename = "N_DISPLAY_n_shirt_nightout")]
+    NDisplayNShirtNightout,
     #[serde(rename = "N_DISPLAY_n_shirt_nike2021_0")]
     NDisplayNShirtNike20210,
     #[serde(rename = "N_DISPLAY_n_shirt_ocshirt-045_a_0")]

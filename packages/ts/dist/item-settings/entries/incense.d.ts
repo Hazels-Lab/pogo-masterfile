@@ -9,6 +9,7 @@ export type ItemSettingsItemIncenseBelugaBox = S<
 		{
 			category: "ITEM_CATEGORY_INCENSE";
 			dropTrainerLevel: 1;
+			ignoreInventorySpace: true;
 			incense: {
 				incenseLifetimeSeconds: 3600;
 				spawnTableProbability: 1;
@@ -25,7 +26,7 @@ export type ItemSettingsItemIncenseDailyAdventure = S<
 			dropTrainerLevel: 6;
 			ignoreInventorySpace: true;
 			incense: {
-				incenseLifetimeSeconds: 1800;
+				incenseLifetimeSeconds: 900;
 				spawnTableProbability: 0.25;
 			};
 			itemType: "ITEM_TYPE_INCENSE";
@@ -81,6 +82,7 @@ export type ItemSettingsItemIncenseSparkly = S<
 		{
 			category: "ITEM_CATEGORY_INCENSE";
 			dropTrainerLevel: 1;
+			ignoreInventorySpace: true;
 			incense: {
 				incenseLifetimeSeconds: 1800;
 				spawnTableProbability: 1;

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/pants", 158 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/pants", 159 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -270,6 +270,15 @@ export type AvatarItemDisplayNPantsDpB0 = S<
 		{
 			displayStringId: "n_pants_dp_b_0_display_name";
 			iconAddress: "n_pants_dp_b_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNPantsDuraludon = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_pants_duraludon",
+		{
+			displayStringId: "avatar_pants_duraludon";
+			iconAddress: "n_pants_duraludon_icon";
 		}
 	>
 >;
@@ -1457,6 +1466,7 @@ export type AvatarItemDisplayDisplayStringIdPantsMasterfileEntry =
 	| AvatarItemDisplayNPantsDenimfashionweek20230
 	| AvatarItemDisplayNPantsDpA0
 	| AvatarItemDisplayNPantsDpB0
+	| AvatarItemDisplayNPantsDuraludon
 	| AvatarItemDisplayNPantsElesa0
 	| AvatarItemDisplayNPantsEternatussuit0
 	| AvatarItemDisplayNPantsFashionweek20220

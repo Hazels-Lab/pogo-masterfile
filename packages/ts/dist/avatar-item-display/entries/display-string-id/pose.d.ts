@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/pose", 99 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/pose", 100 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -768,6 +768,15 @@ export type AvatarItemDisplayNPoseLvl77 = S<
 		}
 	>
 >;
+export type AvatarItemDisplayNPoseMachamp = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_pose_machamp",
+		{
+			displayStringId: "avatar_pose_machamp";
+			iconAddress: "n_pose_machamp_icon";
+		}
+	>
+>;
 export type AvatarItemDisplayNPoseMustard = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_pose_mustard",
@@ -981,6 +990,7 @@ export type AvatarItemDisplayDisplayStringIdPoseMasterfileEntry =
 	| AvatarItemDisplayNPoseIdleB
 	| AvatarItemDisplayNPoseLegacy50
 	| AvatarItemDisplayNPoseLvl77
+	| AvatarItemDisplayNPoseMachamp
 	| AvatarItemDisplayNPoseMustard
 	| AvatarItemDisplayNPosePenpal
 	| AvatarItemDisplayNPoseS16finale

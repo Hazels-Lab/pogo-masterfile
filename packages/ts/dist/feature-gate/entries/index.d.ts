@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 37 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 35 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -84,6 +84,24 @@ export type FeatureGateCombatVnextInitializeBdLast = S<
 		}
 	>
 >;
+export type FeatureGateDisableLegacyNearbyPokemon = S<
+	FeatureGate<
+		"DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE",
+		{
+			rolloutPercentage: 100;
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateEnableNearbyPokemonSnapshot = S<
+	FeatureGate<
+		"ENABLE_NEARBY_POKEMON_SNAPSHOT_FEATURE_GATE",
+		{
+			rolloutPercentage: 100;
+			status: 1;
+		}
+	>
+>;
 export type FeatureGateEnablePvpChallengeSpanner = S<
 	FeatureGate<
 		"ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE",
@@ -99,15 +117,6 @@ export type FeatureGateEnhancedCurrencyOverflowStardust = S<
 		{
 			rolloutPercentage: 100;
 			status: 1;
-		}
-	>
->;
-export type FeatureGateEnhancedMegaRaidReadyCheck = S<
-	FeatureGate<
-		"ENHANCED_MEGA_RAID_READY_CHECK_FEATURE_GATE",
-		{
-			rolloutPercentage: 100;
-			status: 195735672;
 		}
 	>
 >;
@@ -160,6 +169,15 @@ export type FeatureGateEventTicketDatetimeRange = S<
 					status: 1;
 				},
 			];
+		}
+	>
+>;
+export type FeatureGateFortStableDataDiffing = S<
+	FeatureGate<
+		"FORT_STABLE_DATA_DIFFING_FEATURE_GATE",
+		{
+			rolloutPercentage: 100;
+			status: 1;
 		}
 	>
 >;
@@ -252,27 +270,6 @@ export type FeatureGateMeetupReminderNotifications = S<
 		}
 	>
 >;
-export type FeatureGateMega2026 = S<
-	FeatureGate<
-		"MEGA_2026_FEATURE_GATE",
-		{
-			rolloutPercentage: 100;
-			status: 216426293;
-			subFeatureGateList: [
-				{
-					name: "MEGA_LEVEL_SPEEDUP_SUB_FEATURE_GATE";
-					rolloutPercentage: 100;
-					status: 344171892;
-				},
-				{
-					name: "MEGA_COMBAT_BUTTONS_SUB_FEATURE_GATE";
-					rolloutPercentage: 100;
-					status: 276593972;
-				},
-			];
-		}
-	>
->;
 export type FeatureGateMepEggReadMigration = S<
 	FeatureGate<
 		"MEP_EGG_READ_MIGRATION_FEATURE_GATE",
@@ -295,17 +292,8 @@ export type FeatureGatePokemonSpawnAvoidanceRework = S<
 	FeatureGate<
 		"POKEMON_SPAWN_AVOIDANCE_REWORK_FEATURE_GATE",
 		{
-			rolloutPercentage: 10;
+			rolloutPercentage: 30;
 			status: 67485911;
-		}
-	>
->;
-export type FeatureGatePreloadedMegaStatusString = S<
-	FeatureGate<
-		"PRELOADED_MEGA_STATUS_STRING_FEATURE_GATE",
-		{
-			rolloutPercentage: 100;
-			status: 1;
 		}
 	>
 >;
@@ -330,24 +318,6 @@ export type FeatureGateRemoteTradeImprovements = S<
 export type FeatureGateSeafGetMapObjectsRateLimiter = S<
 	FeatureGate<
 		"SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE",
-		{
-			rolloutPercentage: 100;
-			status: 1;
-		}
-	>
->;
-export type FeatureGateShieldBreakPowerDisplay = S<
-	FeatureGate<
-		"SHIELD_BREAK_POWER_DISPLAY_FEATURE_GATE",
-		{
-			rolloutPercentage: 100;
-			status: 1;
-		}
-	>
->;
-export type FeatureGateUpdatedPreloadedMegaAnimation = S<
-	FeatureGate<
-		"UPDATED_PRELOADED_MEGA_ANIMATION_FEATURE_GATE",
 		{
 			rolloutPercentage: 100;
 			status: 1;
@@ -390,14 +360,16 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateAmsFrontend
 	| FeatureGateCombatSuppressFastMovePredictionsOnSwap
 	| FeatureGateCombatVnextInitializeBdLast
+	| FeatureGateDisableLegacyNearbyPokemon
+	| FeatureGateEnableNearbyPokemonSnapshot
 	| FeatureGateEnablePvpChallengeSpanner
 	| FeatureGateEnhancedCurrencyOverflowStardust
-	| FeatureGateEnhancedMegaRaidReadyCheck
 	| FeatureGateEventPassBonusMilestoneSeparation
 	| FeatureGateEventPassBonusRanks
 	| FeatureGateEventPassClaimableRewardToggle
 	| FeatureGateEventPassMilestoneRewards
 	| FeatureGateEventTicketDatetimeRange
+	| FeatureGateFortStableDataDiffing
 	| FeatureGateFriendshipResyncOnRead
 	| FeatureGateGamesiteWebviewNearbyButtons
 	| FeatureGateGetGmtAnalysisForPlayer
@@ -406,16 +378,12 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateHideCampfireMapButtons
 	| FeatureGateLuckyTradeNewStrings
 	| FeatureGateMeetupReminderNotifications
-	| FeatureGateMega2026
 	| FeatureGateMepEggReadMigration
 	| FeatureGateMepEggWriteMigration
 	| FeatureGatePokemonSpawnAvoidanceRework
-	| FeatureGatePreloadedMegaStatusString
 	| FeatureGateRegisterDevice
 	| FeatureGateRemoteTradeImprovements
 	| FeatureGateSeafGetMapObjectsRateLimiter
-	| FeatureGateShieldBreakPowerDisplay
-	| FeatureGateUpdatedPreloadedMegaAnimation
 	| FeatureGateVnextPreResponseInputBlockingBehavior
 	| FeatureGateWayfarerSubmitLinkout;
 

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/hat", 224 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/hat", 225 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -1263,6 +1263,15 @@ export type AvatarItemDisplayNHatNewyearhat20230 = S<
 		}
 	>
 >;
+export type AvatarItemDisplayNHatNflhelmetArizonacardinals = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_hat_nflhelmet-arizonacardinals",
+		{
+			displayStringId: "avatar_hat_nflhelmet-arizonacardinals";
+			iconAddress: "n_hat_nflhelmet-arizonacardinals_icon";
+		}
+	>
+>;
 export type AvatarItemDisplayNHatNihilegoitems0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_hat_nihilegoitems_0",
@@ -2161,6 +2170,7 @@ export type AvatarItemDisplayDisplayStringIdHatMasterfileEntry =
 	| AvatarItemDisplayNHatNewyear20220
 	| AvatarItemDisplayNHatNewyearhat20210
 	| AvatarItemDisplayNHatNewyearhat20230
+	| AvatarItemDisplayNHatNflhelmetArizonacardinals
 	| AvatarItemDisplayNHatNihilegoitems0
 	| AvatarItemDisplayNHatNoibat0
 	| AvatarItemDisplayNHatObstagoonitems0
