@@ -567,6 +567,12 @@ pub enum IapItemDisplayTemplateId {
     Month1DeluxeEventPassTrackUnlock,
     #[serde(rename = "MONTH1_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
     Month1DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "month2_deluxe_event_pass_track_redirect")]
+    Month2DeluxeEventPassTrackRedirect,
+    #[serde(rename = "month2_deluxe_event_pass_track_unlock")]
+    Month2DeluxeEventPassTrackUnlock,
+    #[serde(rename = "month2_deluxe_event_pass_track_unlock_plus_points")]
+    Month2DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "mp_replenish_rrp.1")]
     MpReplenishRrp1,
     #[serde(rename = "mp_replenish_rrp.3")]

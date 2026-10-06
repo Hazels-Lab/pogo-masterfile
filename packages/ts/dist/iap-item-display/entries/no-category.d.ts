@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 21 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 23 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -70,6 +70,40 @@ export type IapItemDisplayMonth1DeluxeEventPassTrackUnlockPlusPoints = S<
 			skuEnableTimeUtcMs: "1748858400000";
 			sortOrder: 1;
 			title: "season_pass_premium_track_plus_ten_ranks_title_sep";
+		}
+	>
+>;
+export type IapItemDisplayMonth2DeluxeEventPassTrackUnlock = S<
+	IapItemDisplay<
+		"month2_deluxe_event_pass_track_unlock",
+		{
+			description: "deluxe_event_pass_track_unlock_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F918345fc_PGO-MCS_S24_GO_Pass_TICKET_v1-1024x576.jpg";
+			sku: "pgorelease.month2_deluxe_event_pass_track_unlock";
+			skuDisableTime: "2026-11-05T10:00:00";
+			skuDisableTimeUtcMs: "1793872800000";
+			skuEnableTime: "2025-10-06T10:00:00";
+			skuEnableTimeUtcMs: "1759744800000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_oct";
+			useEnvironmentPrefix: true;
+		}
+	>
+>;
+export type IapItemDisplayMonth2DeluxeEventPassTrackUnlockPlusPoints = S<
+	IapItemDisplay<
+		"month2_deluxe_event_pass_track_unlock_plus_points",
+		{
+			description: "deluxe_event_pass_track_unlock_plus_points_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F918345fc_PGO-MCS_S24_GO_Pass_TICKET_v1-1024x576.jpg";
+			sku: "pgorelease.month2_deluxe_event_pass_track_unlock_plus_points";
+			skuDisableTime: "2026-11-05T10:00:00";
+			skuDisableTimeUtcMs: "1793872800000";
+			skuEnableTime: "2025-10-06T10:00:00";
+			skuEnableTimeUtcMs: "1759744800000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_plus_ten_ranks_title_oct";
+			useEnvironmentPrefix: true;
 		}
 	>
 >;
@@ -328,6 +362,8 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayEventPassSeptember1EventStoreRedirect
 	| IapItemDisplayMonth1DeluxeEventPassTrackUnlock
 	| IapItemDisplayMonth1DeluxeEventPassTrackUnlockPlusPoints
+	| IapItemDisplayMonth2DeluxeEventPassTrackUnlock
+	| IapItemDisplayMonth2DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayMpReplenishRrp1
 	| IapItemDisplayMpReplenishRrp3
 	| IapItemDisplayOctober12026DeluxeEventPassTrackUnlock

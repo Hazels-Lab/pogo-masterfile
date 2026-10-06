@@ -281,6 +281,9 @@ import type {
 	IapItemDisplayMaxrevive6,
 	IapItemDisplayMonth1DeluxeEventPassTrackUnlock,
 	IapItemDisplayMonth1DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayMonth2DeluxeEventPassTrackRedirect,
+	IapItemDisplayMonth2DeluxeEventPassTrackUnlock,
+	IapItemDisplayMonth2DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayMpReplenish1,
 	IapItemDisplayMpReplenish3,
 	IapItemDisplayMpReplenishRrp1,
@@ -1360,6 +1363,9 @@ export interface IapItemDisplayLookup {
 	"maxrevive.6": IapItemDisplayMaxrevive6;
 	MONTH1_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayMonth1DeluxeEventPassTrackUnlock;
 	MONTH1_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayMonth1DeluxeEventPassTrackUnlockPlusPoints;
+	month2_deluxe_event_pass_track_redirect: IapItemDisplayMonth2DeluxeEventPassTrackRedirect;
+	month2_deluxe_event_pass_track_unlock: IapItemDisplayMonth2DeluxeEventPassTrackUnlock;
+	month2_deluxe_event_pass_track_unlock_plus_points: IapItemDisplayMonth2DeluxeEventPassTrackUnlockPlusPoints;
 	"mp_replenish_rrp.1": IapItemDisplayMpReplenishRrp1;
 	"mp_replenish_rrp.3": IapItemDisplayMpReplenishRrp3;
 	"mp_replenish.1": IapItemDisplayMpReplenish1;

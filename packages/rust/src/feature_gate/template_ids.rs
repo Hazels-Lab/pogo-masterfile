@@ -25,12 +25,14 @@ pub enum FeatureGateTemplateId {
     CombatSuppressFastMovePredictionsOnSwapFeatureGate,
     #[serde(rename = "COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE")]
     CombatVnextInitializeBdLastFeatureGate,
+    #[serde(rename = "DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE")]
+    DisableLegacyNearbyPokemonFeatureGate,
+    #[serde(rename = "ENABLE_NEARBY_POKEMON_SNAPSHOT_FEATURE_GATE")]
+    EnableNearbyPokemonSnapshotFeatureGate,
     #[serde(rename = "ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE")]
     EnablePvpChallengeSpannerFeatureGate,
     #[serde(rename = "ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE")]
     EnhancedCurrencyOverflowStardustFeatureGate,
-    #[serde(rename = "ENHANCED_MEGA_RAID_READY_CHECK_FEATURE_GATE")]
-    EnhancedMegaRaidReadyCheckFeatureGate,
     #[serde(rename = "EVENT_PASS_BONUS_MILESTONE_SEPARATION_FEATURE_GATE")]
     EventPassBonusMilestoneSeparationFeatureGate,
     #[serde(rename = "EVENT_PASS_BONUS_RANKS_FEATURE_GATE")]
@@ -41,6 +43,8 @@ pub enum FeatureGateTemplateId {
     EventPassMilestoneRewardsFeatureGate,
     #[serde(rename = "EVENT_TICKET_DATETIME_RANGE_FEATURE_GATE")]
     EventTicketDatetimeRangeFeatureGate,
+    #[serde(rename = "FORT_STABLE_DATA_DIFFING_FEATURE_GATE")]
+    FortStableDataDiffingFeatureGate,
     #[serde(rename = "FRIENDSHIP_RESYNC_ON_READ_FEATURE_GATE")]
     FriendshipResyncOnReadFeatureGate,
     #[serde(rename = "GAMESITE_WEBVIEW_NEARBY_BUTTONS_FEATURE_GATE")]
@@ -57,26 +61,18 @@ pub enum FeatureGateTemplateId {
     LuckyTradeNewStringsFeatureGate,
     #[serde(rename = "MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE")]
     MeetupReminderNotificationsFeatureGate,
-    #[serde(rename = "MEGA_2026_FEATURE_GATE")]
-    Mega2026FeatureGate,
     #[serde(rename = "MEP_EGG_READ_MIGRATION_FEATURE_GATE")]
     MepEggReadMigrationFeatureGate,
     #[serde(rename = "MEP_EGG_WRITE_MIGRATION_FEATURE_GATE")]
     MepEggWriteMigrationFeatureGate,
     #[serde(rename = "POKEMON_SPAWN_AVOIDANCE_REWORK_FEATURE_GATE")]
     PokemonSpawnAvoidanceReworkFeatureGate,
-    #[serde(rename = "PRELOADED_MEGA_STATUS_STRING_FEATURE_GATE")]
-    PreloadedMegaStatusStringFeatureGate,
     #[serde(rename = "REGISTER_DEVICE_FEATURE_GATE")]
     RegisterDeviceFeatureGate,
     #[serde(rename = "REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE")]
     RemoteTradeImprovementsFeatureGate,
     #[serde(rename = "SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE")]
     SeafGetMapObjectsRateLimiterFeatureGate,
-    #[serde(rename = "SHIELD_BREAK_POWER_DISPLAY_FEATURE_GATE")]
-    ShieldBreakPowerDisplayFeatureGate,
-    #[serde(rename = "UPDATED_PRELOADED_MEGA_ANIMATION_FEATURE_GATE")]
-    UpdatedPreloadedMegaAnimationFeatureGate,
     #[serde(rename = "VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE")]
     VnextPreResponseInputBlockingBehaviorFeatureGate,
     #[serde(rename = "WAYFARER_SUBMIT_LINKOUT_FEATURE_GATE")]

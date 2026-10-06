@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shirt", 461 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shirt", 464 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -1371,6 +1371,24 @@ export type AvatarItemDisplayNShirtGowa20251 = S<
 		}
 	>
 >;
+export type AvatarItemDisplayNShirtGowa2026Maroon = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_gowa2026-maroon",
+		{
+			displayStringId: "avatar_shirt_gowa2026-maroon";
+			iconAddress: "n_shirt_gowa2026-maroon_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtGowa2026Navy = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_gowa2026-navy",
+		{
+			displayStringId: "avatar_shirt_gowa2026-navy";
+			iconAddress: "n_shirt_gowa2026-navy_icon";
+		}
+	>
+>;
 export type AvatarItemDisplayNShirtGreedentsweater0 = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_shirt_greedentsweater_0",
@@ -2196,6 +2214,15 @@ export type AvatarItemDisplayNShirtNecrozmaitems0 = S<
 		{
 			displayStringId: "AVATAR_NecrozmaJacket";
 			iconAddress: "n_shirt_necrozmaitems_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtNightout = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_nightout",
+		{
+			displayStringId: "avatar_shirt_nightout";
+			iconAddress: "n_shirt_nightout_icon";
 		}
 	>
 >;
@@ -4306,6 +4333,8 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirtGowa20240
 	| AvatarItemDisplayNShirtGowa20250
 	| AvatarItemDisplayNShirtGowa20251
+	| AvatarItemDisplayNShirtGowa2026Maroon
+	| AvatarItemDisplayNShirtGowa2026Navy
 	| AvatarItemDisplayNShirtGreedentsweater0
 	| AvatarItemDisplayNShirtGreen0
 	| AvatarItemDisplayNShirtGreencoat0
@@ -4398,6 +4427,7 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirtMustard0
 	| AvatarItemDisplayNShirtNaganadelaitems0
 	| AvatarItemDisplayNShirtNecrozmaitems0
+	| AvatarItemDisplayNShirtNightout
 	| AvatarItemDisplayNShirtNike20210
 	| AvatarItemDisplayNShirtOcshirt045A0
 	| AvatarItemDisplayNShirtOcshirt045B0

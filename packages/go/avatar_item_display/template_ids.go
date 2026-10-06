@@ -440,6 +440,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNHatNewyear20220                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_newyear2022_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatNewyearhat20210                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_newyearhat2021_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatNewyearhat20230                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_newyearhat2023_0"
+	AvatarItemDisplayTemplateIDNDisplayNHatNflhelmetArizonacardinals        AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_nflhelmet-arizonacardinals"
 	AvatarItemDisplayTemplateIDNDisplayNHatNihilegoitems0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_nihilegoitems_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatNoibat0                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_noibat_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatObstagoonitems0                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_obstagoonitems_0"
@@ -560,6 +561,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNPantsDenimfashionweek20230          AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_denimfashionweek2023_0"
 	AvatarItemDisplayTemplateIDNDisplayNPantsDpA0                           AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_dp_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNPantsDpB0                           AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_dp_b_0"
+	AvatarItemDisplayTemplateIDNDisplayNPantsDuraludon                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_duraludon"
 	AvatarItemDisplayTemplateIDNDisplayNPantsElesa0                         AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_elesa_0"
 	AvatarItemDisplayTemplateIDNDisplayNPantsEternatussuit0                 AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_eternatussuit_0"
 	AvatarItemDisplayTemplateIDNDisplayNPantsFashionweek20220               AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_fashionweek2022_0"
@@ -773,6 +775,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNPoseIdleB                           AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_idle_b"
 	AvatarItemDisplayTemplateIDNDisplayNPoseLegacy50                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_legacy50"
 	AvatarItemDisplayTemplateIDNDisplayNPoseLvl77                           AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_lvl77"
+	AvatarItemDisplayTemplateIDNDisplayNPoseMachamp                         AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_machamp"
 	AvatarItemDisplayTemplateIDNDisplayNPoseMustard                         AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_mustard"
 	AvatarItemDisplayTemplateIDNDisplayNPosePenpal                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_penpal"
 	AvatarItemDisplayTemplateIDNDisplayNPoseS16finale                       AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_s16finale"
@@ -939,6 +942,8 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShirtGowa20240                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gowa2024_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGowa20250                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gowa2025_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGowa20251                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gowa2025_1"
+	AvatarItemDisplayTemplateIDNDisplayNShirtGowa2026Maroon                 AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gowa2026-maroon"
+	AvatarItemDisplayTemplateIDNDisplayNShirtGowa2026Navy                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gowa2026-navy"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGreedentsweater0               AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_greedentsweater_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGreen0                         AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_green_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGreencoat0                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_greencoat_0"
@@ -1031,6 +1036,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShirtMustard0                       AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_mustard_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtNaganadelaitems0               AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_naganadelaitems_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtNecrozmaitems0                 AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_necrozmaitems_0"
+	AvatarItemDisplayTemplateIDNDisplayNShirtNightout                       AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_nightout"
 	AvatarItemDisplayTemplateIDNDisplayNShirtNike20210                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_nike2021_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtOcshirt045A0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_ocshirt-045_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtOcshirt045B0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_ocshirt-045_b_0"
@@ -2136,6 +2142,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNHatNewyear20220,
 	AvatarItemDisplayTemplateIDNDisplayNHatNewyearhat20210,
 	AvatarItemDisplayTemplateIDNDisplayNHatNewyearhat20230,
+	AvatarItemDisplayTemplateIDNDisplayNHatNflhelmetArizonacardinals,
 	AvatarItemDisplayTemplateIDNDisplayNHatNihilegoitems0,
 	AvatarItemDisplayTemplateIDNDisplayNHatNoibat0,
 	AvatarItemDisplayTemplateIDNDisplayNHatObstagoonitems0,
@@ -2256,6 +2263,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNPantsDenimfashionweek20230,
 	AvatarItemDisplayTemplateIDNDisplayNPantsDpA0,
 	AvatarItemDisplayTemplateIDNDisplayNPantsDpB0,
+	AvatarItemDisplayTemplateIDNDisplayNPantsDuraludon,
 	AvatarItemDisplayTemplateIDNDisplayNPantsElesa0,
 	AvatarItemDisplayTemplateIDNDisplayNPantsEternatussuit0,
 	AvatarItemDisplayTemplateIDNDisplayNPantsFashionweek20220,
@@ -2469,6 +2477,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNPoseIdleB,
 	AvatarItemDisplayTemplateIDNDisplayNPoseLegacy50,
 	AvatarItemDisplayTemplateIDNDisplayNPoseLvl77,
+	AvatarItemDisplayTemplateIDNDisplayNPoseMachamp,
 	AvatarItemDisplayTemplateIDNDisplayNPoseMustard,
 	AvatarItemDisplayTemplateIDNDisplayNPosePenpal,
 	AvatarItemDisplayTemplateIDNDisplayNPoseS16finale,
@@ -2635,6 +2644,8 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShirtGowa20240,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGowa20250,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGowa20251,
+	AvatarItemDisplayTemplateIDNDisplayNShirtGowa2026Maroon,
+	AvatarItemDisplayTemplateIDNDisplayNShirtGowa2026Navy,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGreedentsweater0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGreen0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGreencoat0,
@@ -2727,6 +2738,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShirtMustard0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtNaganadelaitems0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtNecrozmaitems0,
+	AvatarItemDisplayTemplateIDNDisplayNShirtNightout,
 	AvatarItemDisplayTemplateIDNDisplayNShirtNike20210,
 	AvatarItemDisplayTemplateIDNDisplayNShirtOcshirt045A0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtOcshirt045B0,

@@ -436,6 +436,7 @@ import type {
 	AvatarItemDisplayNHatNewyear20220,
 	AvatarItemDisplayNHatNewyearhat20210,
 	AvatarItemDisplayNHatNewyearhat20230,
+	AvatarItemDisplayNHatNflhelmetArizonacardinals,
 	AvatarItemDisplayNHatNihilegoitems0,
 	AvatarItemDisplayNHatNoibat0,
 	AvatarItemDisplayNHatObstagoonitems0,
@@ -556,6 +557,7 @@ import type {
 	AvatarItemDisplayNPantsDenimfashionweek20230,
 	AvatarItemDisplayNPantsDpA0,
 	AvatarItemDisplayNPantsDpB0,
+	AvatarItemDisplayNPantsDuraludon,
 	AvatarItemDisplayNPantsElesa0,
 	AvatarItemDisplayNPantsEternatussuit0,
 	AvatarItemDisplayNPantsFashionweek20220,
@@ -769,6 +771,7 @@ import type {
 	AvatarItemDisplayNPoseIdleB,
 	AvatarItemDisplayNPoseLegacy50,
 	AvatarItemDisplayNPoseLvl77,
+	AvatarItemDisplayNPoseMachamp,
 	AvatarItemDisplayNPoseMustard,
 	AvatarItemDisplayNPosePenpal,
 	AvatarItemDisplayNPoseS16finale,
@@ -932,6 +935,8 @@ import type {
 	AvatarItemDisplayNShirtGotour20250,
 	AvatarItemDisplayNShirtGotour20251,
 	AvatarItemDisplayNShirtGotour20252,
+	AvatarItemDisplayNShirtGowa2026Maroon,
+	AvatarItemDisplayNShirtGowa2026Navy,
 	AvatarItemDisplayNShirtGowa20240,
 	AvatarItemDisplayNShirtGowa20250,
 	AvatarItemDisplayNShirtGowa20251,
@@ -1027,6 +1032,7 @@ import type {
 	AvatarItemDisplayNShirtMustard0,
 	AvatarItemDisplayNShirtNaganadelaitems0,
 	AvatarItemDisplayNShirtNecrozmaitems0,
+	AvatarItemDisplayNShirtNightout,
 	AvatarItemDisplayNShirtNike20210,
 	AvatarItemDisplayNShirtOcshirt045A0,
 	AvatarItemDisplayNShirtOcshirt045B0,
@@ -2132,6 +2138,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_hat_newyear2022_0: AvatarItemDisplayNHatNewyear20220;
 	N_DISPLAY_n_hat_newyearhat2021_0: AvatarItemDisplayNHatNewyearhat20210;
 	N_DISPLAY_n_hat_newyearhat2023_0: AvatarItemDisplayNHatNewyearhat20230;
+	"N_DISPLAY_n_hat_nflhelmet-arizonacardinals": AvatarItemDisplayNHatNflhelmetArizonacardinals;
 	N_DISPLAY_n_hat_nihilegoitems_0: AvatarItemDisplayNHatNihilegoitems0;
 	N_DISPLAY_n_hat_noibat_0: AvatarItemDisplayNHatNoibat0;
 	N_DISPLAY_n_hat_obstagoonitems_0: AvatarItemDisplayNHatObstagoonitems0;
@@ -2252,6 +2259,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_pants_denimfashionweek2023_0: AvatarItemDisplayNPantsDenimfashionweek20230;
 	N_DISPLAY_n_pants_dp_a_0: AvatarItemDisplayNPantsDpA0;
 	N_DISPLAY_n_pants_dp_b_0: AvatarItemDisplayNPantsDpB0;
+	N_DISPLAY_n_pants_duraludon: AvatarItemDisplayNPantsDuraludon;
 	N_DISPLAY_n_pants_elesa_0: AvatarItemDisplayNPantsElesa0;
 	N_DISPLAY_n_pants_eternatussuit_0: AvatarItemDisplayNPantsEternatussuit0;
 	N_DISPLAY_n_pants_fashionweek2022_0: AvatarItemDisplayNPantsFashionweek20220;
@@ -2465,6 +2473,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_pose_idle_b: AvatarItemDisplayNPoseIdleB;
 	N_DISPLAY_n_pose_legacy50: AvatarItemDisplayNPoseLegacy50;
 	N_DISPLAY_n_pose_lvl77: AvatarItemDisplayNPoseLvl77;
+	N_DISPLAY_n_pose_machamp: AvatarItemDisplayNPoseMachamp;
 	N_DISPLAY_n_pose_mustard: AvatarItemDisplayNPoseMustard;
 	N_DISPLAY_n_pose_penpal: AvatarItemDisplayNPosePenpal;
 	N_DISPLAY_n_pose_s16finale: AvatarItemDisplayNPoseS16finale;
@@ -2631,6 +2640,8 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_gowa2024_0: AvatarItemDisplayNShirtGowa20240;
 	N_DISPLAY_n_shirt_gowa2025_0: AvatarItemDisplayNShirtGowa20250;
 	N_DISPLAY_n_shirt_gowa2025_1: AvatarItemDisplayNShirtGowa20251;
+	"N_DISPLAY_n_shirt_gowa2026-maroon": AvatarItemDisplayNShirtGowa2026Maroon;
+	"N_DISPLAY_n_shirt_gowa2026-navy": AvatarItemDisplayNShirtGowa2026Navy;
 	N_DISPLAY_n_shirt_greedentsweater_0: AvatarItemDisplayNShirtGreedentsweater0;
 	N_DISPLAY_n_shirt_green_0: AvatarItemDisplayNShirtGreen0;
 	N_DISPLAY_n_shirt_greencoat_0: AvatarItemDisplayNShirtGreencoat0;
@@ -2723,6 +2734,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_mustard_0: AvatarItemDisplayNShirtMustard0;
 	N_DISPLAY_n_shirt_naganadelaitems_0: AvatarItemDisplayNShirtNaganadelaitems0;
 	N_DISPLAY_n_shirt_necrozmaitems_0: AvatarItemDisplayNShirtNecrozmaitems0;
+	N_DISPLAY_n_shirt_nightout: AvatarItemDisplayNShirtNightout;
 	N_DISPLAY_n_shirt_nike2021_0: AvatarItemDisplayNShirtNike20210;
 	"N_DISPLAY_n_shirt_ocshirt-045_a_0": AvatarItemDisplayNShirtOcshirt045A0;
 	"N_DISPLAY_n_shirt_ocshirt-045_b_0": AvatarItemDisplayNShirtOcshirt045B0;
