@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "genderSettings", split "misc", 2388 entries.
+// Generated from Pokémon GO masterfile — group "genderSettings", split "misc", 2395 entries.
 
 import type { S } from "../../_utils";
 import type { GenderSettings } from "../types";
@@ -21852,6 +21852,83 @@ export type GenderSettingsV0774PokemonMiniorIndigo = S<
 		}
 	>
 >;
+export type GenderSettingsV0774PokemonMiniorMeteorBlue = S<
+	GenderSettings<
+		"SPAWN_V0774_POKEMON_MINIOR_METEOR_BLUE",
+		{
+			gender: {
+				genderlessPercent: 1;
+			};
+			pokemon: "MINIOR";
+		}
+	>
+>;
+export type GenderSettingsV0774PokemonMiniorMeteorGreen = S<
+	GenderSettings<
+		"SPAWN_V0774_POKEMON_MINIOR_METEOR_GREEN",
+		{
+			gender: {
+				genderlessPercent: 1;
+			};
+			pokemon: "MINIOR";
+		}
+	>
+>;
+export type GenderSettingsV0774PokemonMiniorMeteorIndigo = S<
+	GenderSettings<
+		"SPAWN_V0774_POKEMON_MINIOR_METEOR_INDIGO",
+		{
+			gender: {
+				genderlessPercent: 1;
+			};
+			pokemon: "MINIOR";
+		}
+	>
+>;
+export type GenderSettingsV0774PokemonMiniorMeteorOrange = S<
+	GenderSettings<
+		"SPAWN_V0774_POKEMON_MINIOR_METEOR_ORANGE",
+		{
+			gender: {
+				genderlessPercent: 1;
+			};
+			pokemon: "MINIOR";
+		}
+	>
+>;
+export type GenderSettingsV0774PokemonMiniorMeteorRed = S<
+	GenderSettings<
+		"SPAWN_V0774_POKEMON_MINIOR_METEOR_RED",
+		{
+			gender: {
+				genderlessPercent: 1;
+			};
+			pokemon: "MINIOR";
+		}
+	>
+>;
+export type GenderSettingsV0774PokemonMiniorMeteorViolet = S<
+	GenderSettings<
+		"SPAWN_V0774_POKEMON_MINIOR_METEOR_VIOLET",
+		{
+			gender: {
+				genderlessPercent: 1;
+			};
+			pokemon: "MINIOR";
+		}
+	>
+>;
+export type GenderSettingsV0774PokemonMiniorMeteorYellow = S<
+	GenderSettings<
+		"SPAWN_V0774_POKEMON_MINIOR_METEOR_YELLOW",
+		{
+			gender: {
+				genderlessPercent: 1;
+			};
+			pokemon: "MINIOR";
+		}
+	>
+>;
 export type GenderSettingsV0774PokemonMiniorOrange = S<
 	GenderSettings<
 		"SPAWN_V0774_POKEMON_MINIOR_ORANGE",
@@ -29939,6 +30016,13 @@ export type GenderSettingsMiscMasterfileEntry =
 	| GenderSettingsV0774PokemonMiniorBlue
 	| GenderSettingsV0774PokemonMiniorGreen
 	| GenderSettingsV0774PokemonMiniorIndigo
+	| GenderSettingsV0774PokemonMiniorMeteorBlue
+	| GenderSettingsV0774PokemonMiniorMeteorGreen
+	| GenderSettingsV0774PokemonMiniorMeteorIndigo
+	| GenderSettingsV0774PokemonMiniorMeteorOrange
+	| GenderSettingsV0774PokemonMiniorMeteorRed
+	| GenderSettingsV0774PokemonMiniorMeteorViolet
+	| GenderSettingsV0774PokemonMiniorMeteorYellow
 	| GenderSettingsV0774PokemonMiniorOrange
 	| GenderSettingsV0774PokemonMiniorRed
 	| GenderSettingsV0774PokemonMiniorViolet

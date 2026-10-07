@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonSettings", split "rock", 132 entries.
+// Generated from Pokémon GO masterfile — group "pokemonSettings", split "rock", 140 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonSettings } from "../types";
@@ -7467,34 +7467,55 @@ export type PokemonSettingsV0774PokemonMinior = S<
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 19;
-			camera: object;
+			camera: {
+				cylinderGroundM: 0.2;
+				cylinderHeightM: 0.32;
+				cylinderRadiusM: 0.2;
+			};
 			cinematicMoves: ["POWER_GEM", "ANCIENT_POWER", "ACROBATICS"];
 			encounter: {
 				attackProbability: 0.1;
-				cameraDistance: 4;
+				bonusStardustCaptureReward: 900;
+				cameraDistance: 3;
+				collisionHeadRadiusM: 0.18;
+				collisionHeightM: 0.18;
+				collisionRadiusM: 0.18;
 				dodgeDistance: 0.5;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
-				movementType: "MOVEMENT_JUMP";
+				movementType: "MOVEMENT_HOVERING";
 			};
 			familyId: "FAMILY_MINIOR";
 			heightStdDev: 0.0375;
-			ibfc: object;
+			ibfc: {
+				alternateForm: "MINIOR_METEOR";
+				alternateToDefaultIbfcSettings: {
+					animationDurationTurns: 5;
+					animationPlayPoint: "BEFORE_CM_ATTACKER";
+					ibfcVfxKey: "ALTERNATE_TO_DEFAULT";
+				};
+				combatEnable: true;
+				defaultToAlternateIbfcSettings: {
+					animationDurationTurns: 5;
+					animationPlayPoint: "BEFORE_CM_ATTACKER";
+					ibfcVfxKey: "DEFAULT_TO_ALTERNATE";
+				};
+			};
 			isDeployable: true;
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
-			modelHeight: 1;
-			modelScaleV2: 1;
+			modelHeight: 0.3;
+			modelScaleV2: 1.27;
 			pokedexHeightM: 0.3;
 			pokedexWeightKg: 40;
 			pokemonId: "MINIOR";
 			quickMoves: ["ROLLOUT_FAST", "TAKE_DOWN_FAST"];
 			stats: {
-				baseAttack: 116;
-				baseDefense: 194;
+				baseAttack: 218;
+				baseDefense: 131;
 				baseStamina: 155;
 			};
 			thirdMove: {
@@ -7516,17 +7537,25 @@ export type PokemonSettingsV0774PokemonMiniorBlue = S<
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 19;
-			camera: object;
+			camera: {
+				cylinderGroundM: 0.2;
+				cylinderHeightM: 0.32;
+				cylinderRadiusM: 0.2;
+			};
 			cinematicMoves: ["POWER_GEM", "ANCIENT_POWER", "ACROBATICS"];
 			encounter: {
 				attackProbability: 0.1;
-				cameraDistance: 4;
+				bonusStardustCaptureReward: 900;
+				cameraDistance: 3;
+				collisionHeadRadiusM: 0.18;
+				collisionHeightM: 0.18;
+				collisionRadiusM: 0.18;
 				dodgeDistance: 0.5;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
-				movementType: "MOVEMENT_JUMP";
+				movementType: "MOVEMENT_HOVERING";
 			};
 			familyId: "FAMILY_MINIOR";
 			form: "MINIOR_BLUE";
@@ -7536,8 +7565,8 @@ export type PokemonSettingsV0774PokemonMiniorBlue = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
-			modelHeight: 1;
-			modelScaleV2: 1;
+			modelHeight: 0.3;
+			modelScaleV2: 1.27;
 			pokedexHeightM: 0.3;
 			pokedexWeightKg: 0.3;
 			pokemonId: "MINIOR";
@@ -7566,17 +7595,25 @@ export type PokemonSettingsV0774PokemonMiniorGreen = S<
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 19;
-			camera: object;
+			camera: {
+				cylinderGroundM: 0.2;
+				cylinderHeightM: 0.32;
+				cylinderRadiusM: 0.2;
+			};
 			cinematicMoves: ["POWER_GEM", "ANCIENT_POWER", "ACROBATICS"];
 			encounter: {
 				attackProbability: 0.1;
-				cameraDistance: 4;
+				bonusStardustCaptureReward: 900;
+				cameraDistance: 3;
+				collisionHeadRadiusM: 0.18;
+				collisionHeightM: 0.18;
+				collisionRadiusM: 0.18;
 				dodgeDistance: 0.5;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
-				movementType: "MOVEMENT_JUMP";
+				movementType: "MOVEMENT_HOVERING";
 			};
 			familyId: "FAMILY_MINIOR";
 			form: "MINIOR_GREEN";
@@ -7586,8 +7623,8 @@ export type PokemonSettingsV0774PokemonMiniorGreen = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
-			modelHeight: 1;
-			modelScaleV2: 1;
+			modelHeight: 0.3;
+			modelScaleV2: 1.27;
 			pokedexHeightM: 0.3;
 			pokedexWeightKg: 0.3;
 			pokemonId: "MINIOR";
@@ -7616,17 +7653,25 @@ export type PokemonSettingsV0774PokemonMiniorIndigo = S<
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 19;
-			camera: object;
+			camera: {
+				cylinderGroundM: 0.2;
+				cylinderHeightM: 0.32;
+				cylinderRadiusM: 0.2;
+			};
 			cinematicMoves: ["POWER_GEM", "ANCIENT_POWER", "ACROBATICS"];
 			encounter: {
 				attackProbability: 0.1;
-				cameraDistance: 4;
+				bonusStardustCaptureReward: 900;
+				cameraDistance: 3;
+				collisionHeadRadiusM: 0.18;
+				collisionHeightM: 0.18;
+				collisionRadiusM: 0.18;
 				dodgeDistance: 0.5;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
-				movementType: "MOVEMENT_JUMP";
+				movementType: "MOVEMENT_HOVERING";
 			};
 			familyId: "FAMILY_MINIOR";
 			form: "MINIOR_INDIGO";
@@ -7636,8 +7681,8 @@ export type PokemonSettingsV0774PokemonMiniorIndigo = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
-			modelHeight: 1;
-			modelScaleV2: 1;
+			modelHeight: 0.3;
+			modelScaleV2: 1.27;
 			pokedexHeightM: 0.3;
 			pokedexWeightKg: 0.3;
 			pokemonId: "MINIOR";
@@ -7645,6 +7690,470 @@ export type PokemonSettingsV0774PokemonMiniorIndigo = S<
 			stats: {
 				baseAttack: 218;
 				baseDefense: 131;
+				baseStamina: 155;
+			};
+			thirdMove: {
+				candyToUnlock: 50;
+				stardustToUnlock: 50000;
+			};
+			type: "POKEMON_TYPE_ROCK";
+			type2: "POKEMON_TYPE_FLYING";
+			weightStdDev: 0.0375;
+		}
+	>
+>;
+export type PokemonSettingsV0774PokemonMiniorMeteor = S<
+	PokemonSettings<
+		"V0774_POKEMON_MINIOR_METEOR",
+		{
+			breadTierGroup: "GROUP_2";
+			buddyGroupNumber: 2;
+			buddyOffsetFemale: [0, 0, 0];
+			buddyOffsetMale: [0, 0, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderGroundM: 0.2;
+				cylinderHeightM: 0.32;
+				cylinderRadiusM: 0.2;
+			};
+			cinematicMoves: ["POWER_GEM", "ANCIENT_POWER", "ACROBATICS"];
+			encounter: {
+				attackProbability: 0.1;
+				bonusStardustCaptureReward: 900;
+				cameraDistance: 3;
+				collisionHeadRadiusM: 0.18;
+				collisionHeightM: 0.18;
+				collisionRadiusM: 0.18;
+				dodgeDistance: 0.5;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.15;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementType: "MOVEMENT_HOVERING";
+			};
+			familyId: "FAMILY_MINIOR";
+			form: "MINIOR_METEOR";
+			heightStdDev: 0.0375;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 3;
+			modelHeight: 0.3;
+			modelScaleV2: 1.27;
+			pokedexHeightM: 0.3;
+			pokedexWeightKg: 0.3;
+			pokemonId: "MINIOR";
+			quickMoves: ["ROLLOUT_FAST", "TAKE_DOWN_FAST"];
+			stats: {
+				baseAttack: 116;
+				baseDefense: 194;
+				baseStamina: 155;
+			};
+			thirdMove: {
+				candyToUnlock: 50;
+				stardustToUnlock: 50000;
+			};
+			type: "POKEMON_TYPE_ROCK";
+			type2: "POKEMON_TYPE_FLYING";
+			weightStdDev: 0.0375;
+		}
+	>
+>;
+export type PokemonSettingsV0774PokemonMiniorMeteorBlue = S<
+	PokemonSettings<
+		"V0774_POKEMON_MINIOR_METEOR_BLUE",
+		{
+			breadTierGroup: "GROUP_2";
+			buddyGroupNumber: 2;
+			buddyOffsetFemale: [0, 0, 0];
+			buddyOffsetMale: [0, 0, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderGroundM: 0.2;
+				cylinderHeightM: 0.32;
+				cylinderRadiusM: 0.2;
+			};
+			cinematicMoves: ["POWER_GEM", "ANCIENT_POWER", "ACROBATICS"];
+			encounter: {
+				attackProbability: 0.1;
+				bonusStardustCaptureReward: 900;
+				cameraDistance: 3;
+				collisionHeadRadiusM: 0.18;
+				collisionHeightM: 0.18;
+				collisionRadiusM: 0.18;
+				dodgeDistance: 0.5;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.15;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementType: "MOVEMENT_HOVERING";
+			};
+			familyId: "FAMILY_MINIOR";
+			form: "MINIOR_METEOR_BLUE";
+			heightStdDev: 0.0375;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 3;
+			modelHeight: 0.3;
+			modelScaleV2: 1.27;
+			pokedexHeightM: 0.3;
+			pokedexWeightKg: 0.3;
+			pokemonId: "MINIOR";
+			quickMoves: ["ROLLOUT_FAST", "TAKE_DOWN_FAST"];
+			stats: {
+				baseAttack: 116;
+				baseDefense: 194;
+				baseStamina: 155;
+			};
+			thirdMove: {
+				candyToUnlock: 50;
+				stardustToUnlock: 50000;
+			};
+			type: "POKEMON_TYPE_ROCK";
+			type2: "POKEMON_TYPE_FLYING";
+			weightStdDev: 0.0375;
+		}
+	>
+>;
+export type PokemonSettingsV0774PokemonMiniorMeteorGreen = S<
+	PokemonSettings<
+		"V0774_POKEMON_MINIOR_METEOR_GREEN",
+		{
+			breadTierGroup: "GROUP_2";
+			buddyGroupNumber: 2;
+			buddyOffsetFemale: [0, 0, 0];
+			buddyOffsetMale: [0, 0, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderGroundM: 0.2;
+				cylinderHeightM: 0.32;
+				cylinderRadiusM: 0.2;
+			};
+			cinematicMoves: ["POWER_GEM", "ANCIENT_POWER", "ACROBATICS"];
+			encounter: {
+				attackProbability: 0.1;
+				bonusStardustCaptureReward: 900;
+				cameraDistance: 3;
+				collisionHeadRadiusM: 0.18;
+				collisionHeightM: 0.18;
+				collisionRadiusM: 0.18;
+				dodgeDistance: 0.5;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.15;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementType: "MOVEMENT_HOVERING";
+			};
+			familyId: "FAMILY_MINIOR";
+			form: "MINIOR_METEOR_GREEN";
+			heightStdDev: 0.0375;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 3;
+			modelHeight: 0.3;
+			modelScaleV2: 1.27;
+			pokedexHeightM: 0.3;
+			pokedexWeightKg: 0.3;
+			pokemonId: "MINIOR";
+			quickMoves: ["ROLLOUT_FAST", "TAKE_DOWN_FAST"];
+			stats: {
+				baseAttack: 116;
+				baseDefense: 194;
+				baseStamina: 155;
+			};
+			thirdMove: {
+				candyToUnlock: 50;
+				stardustToUnlock: 50000;
+			};
+			type: "POKEMON_TYPE_ROCK";
+			type2: "POKEMON_TYPE_FLYING";
+			weightStdDev: 0.0375;
+		}
+	>
+>;
+export type PokemonSettingsV0774PokemonMiniorMeteorIndigo = S<
+	PokemonSettings<
+		"V0774_POKEMON_MINIOR_METEOR_INDIGO",
+		{
+			breadTierGroup: "GROUP_2";
+			buddyGroupNumber: 2;
+			buddyOffsetFemale: [0, 0, 0];
+			buddyOffsetMale: [0, 0, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderGroundM: 0.2;
+				cylinderHeightM: 0.32;
+				cylinderRadiusM: 0.2;
+			};
+			cinematicMoves: ["POWER_GEM", "ANCIENT_POWER", "ACROBATICS"];
+			encounter: {
+				attackProbability: 0.1;
+				bonusStardustCaptureReward: 900;
+				cameraDistance: 3;
+				collisionHeadRadiusM: 0.18;
+				collisionHeightM: 0.18;
+				collisionRadiusM: 0.18;
+				dodgeDistance: 0.5;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.15;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementType: "MOVEMENT_HOVERING";
+			};
+			familyId: "FAMILY_MINIOR";
+			form: "MINIOR_METEOR_INDIGO";
+			heightStdDev: 0.0375;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 3;
+			modelHeight: 0.3;
+			modelScaleV2: 1.27;
+			pokedexHeightM: 0.3;
+			pokedexWeightKg: 0.3;
+			pokemonId: "MINIOR";
+			quickMoves: ["ROLLOUT_FAST", "TAKE_DOWN_FAST"];
+			stats: {
+				baseAttack: 116;
+				baseDefense: 194;
+				baseStamina: 155;
+			};
+			thirdMove: {
+				candyToUnlock: 50;
+				stardustToUnlock: 50000;
+			};
+			type: "POKEMON_TYPE_ROCK";
+			type2: "POKEMON_TYPE_FLYING";
+			weightStdDev: 0.0375;
+		}
+	>
+>;
+export type PokemonSettingsV0774PokemonMiniorMeteorOrange = S<
+	PokemonSettings<
+		"V0774_POKEMON_MINIOR_METEOR_ORANGE",
+		{
+			breadTierGroup: "GROUP_2";
+			buddyGroupNumber: 2;
+			buddyOffsetFemale: [0, 0, 0];
+			buddyOffsetMale: [0, 0, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderGroundM: 0.2;
+				cylinderHeightM: 0.32;
+				cylinderRadiusM: 0.2;
+			};
+			cinematicMoves: ["POWER_GEM", "ANCIENT_POWER", "ACROBATICS"];
+			encounter: {
+				attackProbability: 0.1;
+				bonusStardustCaptureReward: 900;
+				cameraDistance: 3;
+				collisionHeadRadiusM: 0.18;
+				collisionHeightM: 0.18;
+				collisionRadiusM: 0.18;
+				dodgeDistance: 0.5;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.15;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementType: "MOVEMENT_HOVERING";
+			};
+			familyId: "FAMILY_MINIOR";
+			form: "MINIOR_METEOR_ORANGE";
+			heightStdDev: 0.0375;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 3;
+			modelHeight: 0.3;
+			modelScaleV2: 1.27;
+			pokedexHeightM: 0.3;
+			pokedexWeightKg: 0.3;
+			pokemonId: "MINIOR";
+			quickMoves: ["ROLLOUT_FAST", "TAKE_DOWN_FAST"];
+			stats: {
+				baseAttack: 116;
+				baseDefense: 194;
+				baseStamina: 155;
+			};
+			thirdMove: {
+				candyToUnlock: 50;
+				stardustToUnlock: 50000;
+			};
+			type: "POKEMON_TYPE_ROCK";
+			type2: "POKEMON_TYPE_FLYING";
+			weightStdDev: 0.0375;
+		}
+	>
+>;
+export type PokemonSettingsV0774PokemonMiniorMeteorRed = S<
+	PokemonSettings<
+		"V0774_POKEMON_MINIOR_METEOR_RED",
+		{
+			breadTierGroup: "GROUP_2";
+			buddyGroupNumber: 2;
+			buddyOffsetFemale: [0, 0, 0];
+			buddyOffsetMale: [0, 0, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderGroundM: 0.2;
+				cylinderHeightM: 0.32;
+				cylinderRadiusM: 0.2;
+			};
+			cinematicMoves: ["POWER_GEM", "ANCIENT_POWER", "ACROBATICS"];
+			encounter: {
+				attackProbability: 0.1;
+				bonusStardustCaptureReward: 900;
+				cameraDistance: 3;
+				collisionHeadRadiusM: 0.18;
+				collisionHeightM: 0.18;
+				collisionRadiusM: 0.18;
+				dodgeDistance: 0.5;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.15;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementType: "MOVEMENT_HOVERING";
+			};
+			familyId: "FAMILY_MINIOR";
+			form: "MINIOR_METEOR_RED";
+			heightStdDev: 0.0375;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 3;
+			modelHeight: 0.3;
+			modelScaleV2: 1.27;
+			pokedexHeightM: 0.3;
+			pokedexWeightKg: 0.3;
+			pokemonId: "MINIOR";
+			quickMoves: ["ROLLOUT_FAST", "TAKE_DOWN_FAST"];
+			stats: {
+				baseAttack: 116;
+				baseDefense: 194;
+				baseStamina: 155;
+			};
+			thirdMove: {
+				candyToUnlock: 50;
+				stardustToUnlock: 50000;
+			};
+			type: "POKEMON_TYPE_ROCK";
+			type2: "POKEMON_TYPE_FLYING";
+			weightStdDev: 0.0375;
+		}
+	>
+>;
+export type PokemonSettingsV0774PokemonMiniorMeteorViolet = S<
+	PokemonSettings<
+		"V0774_POKEMON_MINIOR_METEOR_VIOLET",
+		{
+			breadTierGroup: "GROUP_2";
+			buddyGroupNumber: 2;
+			buddyOffsetFemale: [0, 0, 0];
+			buddyOffsetMale: [0, 0, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderGroundM: 0.2;
+				cylinderHeightM: 0.32;
+				cylinderRadiusM: 0.2;
+			};
+			cinematicMoves: ["POWER_GEM", "ANCIENT_POWER", "ACROBATICS"];
+			encounter: {
+				attackProbability: 0.1;
+				bonusStardustCaptureReward: 900;
+				cameraDistance: 3;
+				collisionHeadRadiusM: 0.18;
+				collisionHeightM: 0.18;
+				collisionRadiusM: 0.18;
+				dodgeDistance: 0.5;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.15;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementType: "MOVEMENT_HOVERING";
+			};
+			familyId: "FAMILY_MINIOR";
+			form: "MINIOR_METEOR_VIOLET";
+			heightStdDev: 0.0375;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 3;
+			modelHeight: 0.3;
+			modelScaleV2: 1.27;
+			pokedexHeightM: 0.3;
+			pokedexWeightKg: 0.3;
+			pokemonId: "MINIOR";
+			quickMoves: ["ROLLOUT_FAST", "TAKE_DOWN_FAST"];
+			stats: {
+				baseAttack: 116;
+				baseDefense: 194;
+				baseStamina: 155;
+			};
+			thirdMove: {
+				candyToUnlock: 50;
+				stardustToUnlock: 50000;
+			};
+			type: "POKEMON_TYPE_ROCK";
+			type2: "POKEMON_TYPE_FLYING";
+			weightStdDev: 0.0375;
+		}
+	>
+>;
+export type PokemonSettingsV0774PokemonMiniorMeteorYellow = S<
+	PokemonSettings<
+		"V0774_POKEMON_MINIOR_METEOR_YELLOW",
+		{
+			breadTierGroup: "GROUP_2";
+			buddyGroupNumber: 2;
+			buddyOffsetFemale: [0, 0, 0];
+			buddyOffsetMale: [0, 0, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderGroundM: 0.2;
+				cylinderHeightM: 0.32;
+				cylinderRadiusM: 0.2;
+			};
+			cinematicMoves: ["POWER_GEM", "ANCIENT_POWER", "ACROBATICS"];
+			encounter: {
+				attackProbability: 0.1;
+				bonusStardustCaptureReward: 900;
+				cameraDistance: 3;
+				collisionHeadRadiusM: 0.18;
+				collisionHeightM: 0.18;
+				collisionRadiusM: 0.18;
+				dodgeDistance: 0.5;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.15;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementType: "MOVEMENT_HOVERING";
+			};
+			familyId: "FAMILY_MINIOR";
+			form: "MINIOR_METEOR_YELLOW";
+			heightStdDev: 0.0375;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 3;
+			modelHeight: 0.3;
+			modelScaleV2: 1.27;
+			pokedexHeightM: 0.3;
+			pokedexWeightKg: 0.3;
+			pokemonId: "MINIOR";
+			quickMoves: ["ROLLOUT_FAST", "TAKE_DOWN_FAST"];
+			stats: {
+				baseAttack: 116;
+				baseDefense: 194;
 				baseStamina: 155;
 			};
 			thirdMove: {
@@ -7666,17 +8175,25 @@ export type PokemonSettingsV0774PokemonMiniorOrange = S<
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 19;
-			camera: object;
+			camera: {
+				cylinderGroundM: 0.2;
+				cylinderHeightM: 0.32;
+				cylinderRadiusM: 0.2;
+			};
 			cinematicMoves: ["POWER_GEM", "ANCIENT_POWER", "ACROBATICS"];
 			encounter: {
 				attackProbability: 0.1;
-				cameraDistance: 4;
+				bonusStardustCaptureReward: 900;
+				cameraDistance: 3;
+				collisionHeadRadiusM: 0.18;
+				collisionHeightM: 0.18;
+				collisionRadiusM: 0.18;
 				dodgeDistance: 0.5;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
-				movementType: "MOVEMENT_JUMP";
+				movementType: "MOVEMENT_HOVERING";
 			};
 			familyId: "FAMILY_MINIOR";
 			form: "MINIOR_ORANGE";
@@ -7686,8 +8203,8 @@ export type PokemonSettingsV0774PokemonMiniorOrange = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
-			modelHeight: 1;
-			modelScaleV2: 1;
+			modelHeight: 0.3;
+			modelScaleV2: 1.27;
 			pokedexHeightM: 0.3;
 			pokedexWeightKg: 0.3;
 			pokemonId: "MINIOR";
@@ -7716,17 +8233,25 @@ export type PokemonSettingsV0774PokemonMiniorRed = S<
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 19;
-			camera: object;
+			camera: {
+				cylinderGroundM: 0.2;
+				cylinderHeightM: 0.32;
+				cylinderRadiusM: 0.2;
+			};
 			cinematicMoves: ["POWER_GEM", "ANCIENT_POWER", "ACROBATICS"];
 			encounter: {
 				attackProbability: 0.1;
-				cameraDistance: 4;
+				bonusStardustCaptureReward: 900;
+				cameraDistance: 3;
+				collisionHeadRadiusM: 0.18;
+				collisionHeightM: 0.18;
+				collisionRadiusM: 0.18;
 				dodgeDistance: 0.5;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
-				movementType: "MOVEMENT_JUMP";
+				movementType: "MOVEMENT_HOVERING";
 			};
 			familyId: "FAMILY_MINIOR";
 			form: "MINIOR_RED";
@@ -7736,8 +8261,8 @@ export type PokemonSettingsV0774PokemonMiniorRed = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
-			modelHeight: 1;
-			modelScaleV2: 1;
+			modelHeight: 0.3;
+			modelScaleV2: 1.27;
 			pokedexHeightM: 0.3;
 			pokedexWeightKg: 0.3;
 			pokemonId: "MINIOR";
@@ -7766,17 +8291,25 @@ export type PokemonSettingsV0774PokemonMiniorViolet = S<
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 19;
-			camera: object;
+			camera: {
+				cylinderGroundM: 0.2;
+				cylinderHeightM: 0.32;
+				cylinderRadiusM: 0.2;
+			};
 			cinematicMoves: ["POWER_GEM", "ANCIENT_POWER", "ACROBATICS"];
 			encounter: {
 				attackProbability: 0.1;
-				cameraDistance: 4;
+				bonusStardustCaptureReward: 900;
+				cameraDistance: 3;
+				collisionHeadRadiusM: 0.18;
+				collisionHeightM: 0.18;
+				collisionRadiusM: 0.18;
 				dodgeDistance: 0.5;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
-				movementType: "MOVEMENT_JUMP";
+				movementType: "MOVEMENT_HOVERING";
 			};
 			familyId: "FAMILY_MINIOR";
 			form: "MINIOR_VIOLET";
@@ -7786,8 +8319,8 @@ export type PokemonSettingsV0774PokemonMiniorViolet = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
-			modelHeight: 1;
-			modelScaleV2: 1;
+			modelHeight: 0.3;
+			modelScaleV2: 1.27;
 			pokedexHeightM: 0.3;
 			pokedexWeightKg: 0.3;
 			pokemonId: "MINIOR";
@@ -7816,17 +8349,25 @@ export type PokemonSettingsV0774PokemonMiniorYellow = S<
 			buddyOffsetFemale: [0, 0, 0];
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 19;
-			camera: object;
+			camera: {
+				cylinderGroundM: 0.2;
+				cylinderHeightM: 0.32;
+				cylinderRadiusM: 0.2;
+			};
 			cinematicMoves: ["POWER_GEM", "ANCIENT_POWER", "ACROBATICS"];
 			encounter: {
 				attackProbability: 0.1;
-				cameraDistance: 4;
+				bonusStardustCaptureReward: 900;
+				cameraDistance: 3;
+				collisionHeadRadiusM: 0.18;
+				collisionHeightM: 0.18;
+				collisionRadiusM: 0.18;
 				dodgeDistance: 0.5;
 				dodgeDurationS: 1;
 				dodgeProbability: 0.15;
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
-				movementType: "MOVEMENT_JUMP";
+				movementType: "MOVEMENT_HOVERING";
 			};
 			familyId: "FAMILY_MINIOR";
 			form: "MINIOR_YELLOW";
@@ -7836,8 +8377,8 @@ export type PokemonSettingsV0774PokemonMiniorYellow = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 3;
-			modelHeight: 1;
-			modelScaleV2: 1;
+			modelHeight: 0.3;
+			modelScaleV2: 1.27;
 			pokedexHeightM: 0.3;
 			pokedexWeightKg: 0.3;
 			pokemonId: "MINIOR";
@@ -9582,6 +10123,14 @@ export type PokemonSettingsRockMasterfileEntry =
 	| PokemonSettingsV0774PokemonMiniorBlue
 	| PokemonSettingsV0774PokemonMiniorGreen
 	| PokemonSettingsV0774PokemonMiniorIndigo
+	| PokemonSettingsV0774PokemonMiniorMeteor
+	| PokemonSettingsV0774PokemonMiniorMeteorBlue
+	| PokemonSettingsV0774PokemonMiniorMeteorGreen
+	| PokemonSettingsV0774PokemonMiniorMeteorIndigo
+	| PokemonSettingsV0774PokemonMiniorMeteorOrange
+	| PokemonSettingsV0774PokemonMiniorMeteorRed
+	| PokemonSettingsV0774PokemonMiniorMeteorViolet
+	| PokemonSettingsV0774PokemonMiniorMeteorYellow
 	| PokemonSettingsV0774PokemonMiniorOrange
 	| PokemonSettingsV0774PokemonMiniorRed
 	| PokemonSettingsV0774PokemonMiniorViolet

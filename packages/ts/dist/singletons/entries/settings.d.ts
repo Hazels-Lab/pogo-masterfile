@@ -6079,7 +6079,7 @@ export interface VsSeekerClientSettings {
 	data: {
 		templateId: "VS_SEEKER_CLIENT_SETTINGS";
 		vsSeekerClientSettings: {
-			allowedVsSeekerLeagueTemplateId: ["COMBAT_LEAGUE_VS_SEEKER_MASTER", "COMBAT_LEAGUE_VS_SEEKER_COLOR_GREAT_MEGAS"];
+			allowedVsSeekerLeagueTemplateId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_ULTRA_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_MASTER_MEGAS"];
 		};
 	};
 }

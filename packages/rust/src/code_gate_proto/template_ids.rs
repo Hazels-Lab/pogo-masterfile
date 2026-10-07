@@ -13,8 +13,6 @@ pub enum CodeGateProtoTemplateId {
     IsSkuAvailableNoAppIdCodeGate,
     #[serde(rename = "SOFT_SFIDA_FOREGROUND_DESCRIPTION_TEXT_CODE_GATE")]
     SoftSfidaForegroundDescriptionTextCodeGate,
-    #[serde(rename = "TODAY_VIEW_V3_CODE_GATE")]
-    TodayViewV3CodeGate,
     #[serde(rename = "USE_GMT_SKU_DATA_CODE_GATE")]
     UseGmtSkuDataCodeGate,
 }

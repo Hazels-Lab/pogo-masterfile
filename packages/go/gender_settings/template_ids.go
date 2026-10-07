@@ -1948,6 +1948,14 @@ const (
 	GenderSettingsTemplateIDSpawnV0774PokemonMiniorBlue                         GenderSettingsTemplateID = "SPAWN_V0774_POKEMON_MINIOR_BLUE"
 	GenderSettingsTemplateIDSpawnV0774PokemonMiniorGreen                        GenderSettingsTemplateID = "SPAWN_V0774_POKEMON_MINIOR_GREEN"
 	GenderSettingsTemplateIDSpawnV0774PokemonMiniorIndigo                       GenderSettingsTemplateID = "SPAWN_V0774_POKEMON_MINIOR_INDIGO"
+	GenderSettingsTemplateIDSpawnV0774PokemonMiniorMeteor                       GenderSettingsTemplateID = "SPAWN_V0774_POKEMON_MINIOR_METEOR"
+	GenderSettingsTemplateIDSpawnV0774PokemonMiniorMeteorBlue                   GenderSettingsTemplateID = "SPAWN_V0774_POKEMON_MINIOR_METEOR_BLUE"
+	GenderSettingsTemplateIDSpawnV0774PokemonMiniorMeteorGreen                  GenderSettingsTemplateID = "SPAWN_V0774_POKEMON_MINIOR_METEOR_GREEN"
+	GenderSettingsTemplateIDSpawnV0774PokemonMiniorMeteorIndigo                 GenderSettingsTemplateID = "SPAWN_V0774_POKEMON_MINIOR_METEOR_INDIGO"
+	GenderSettingsTemplateIDSpawnV0774PokemonMiniorMeteorOrange                 GenderSettingsTemplateID = "SPAWN_V0774_POKEMON_MINIOR_METEOR_ORANGE"
+	GenderSettingsTemplateIDSpawnV0774PokemonMiniorMeteorRed                    GenderSettingsTemplateID = "SPAWN_V0774_POKEMON_MINIOR_METEOR_RED"
+	GenderSettingsTemplateIDSpawnV0774PokemonMiniorMeteorViolet                 GenderSettingsTemplateID = "SPAWN_V0774_POKEMON_MINIOR_METEOR_VIOLET"
+	GenderSettingsTemplateIDSpawnV0774PokemonMiniorMeteorYellow                 GenderSettingsTemplateID = "SPAWN_V0774_POKEMON_MINIOR_METEOR_YELLOW"
 	GenderSettingsTemplateIDSpawnV0774PokemonMiniorOrange                       GenderSettingsTemplateID = "SPAWN_V0774_POKEMON_MINIOR_ORANGE"
 	GenderSettingsTemplateIDSpawnV0774PokemonMiniorRed                          GenderSettingsTemplateID = "SPAWN_V0774_POKEMON_MINIOR_RED"
 	GenderSettingsTemplateIDSpawnV0774PokemonMiniorViolet                       GenderSettingsTemplateID = "SPAWN_V0774_POKEMON_MINIOR_VIOLET"
@@ -4434,6 +4442,14 @@ var GenderSettingsTemplateIDValues = [...]GenderSettingsTemplateID{
 	GenderSettingsTemplateIDSpawnV0774PokemonMiniorBlue,
 	GenderSettingsTemplateIDSpawnV0774PokemonMiniorGreen,
 	GenderSettingsTemplateIDSpawnV0774PokemonMiniorIndigo,
+	GenderSettingsTemplateIDSpawnV0774PokemonMiniorMeteor,
+	GenderSettingsTemplateIDSpawnV0774PokemonMiniorMeteorBlue,
+	GenderSettingsTemplateIDSpawnV0774PokemonMiniorMeteorGreen,
+	GenderSettingsTemplateIDSpawnV0774PokemonMiniorMeteorIndigo,
+	GenderSettingsTemplateIDSpawnV0774PokemonMiniorMeteorOrange,
+	GenderSettingsTemplateIDSpawnV0774PokemonMiniorMeteorRed,
+	GenderSettingsTemplateIDSpawnV0774PokemonMiniorMeteorViolet,
+	GenderSettingsTemplateIDSpawnV0774PokemonMiniorMeteorYellow,
 	GenderSettingsTemplateIDSpawnV0774PokemonMiniorOrange,
 	GenderSettingsTemplateIDSpawnV0774PokemonMiniorRed,
 	GenderSettingsTemplateIDSpawnV0774PokemonMiniorViolet,

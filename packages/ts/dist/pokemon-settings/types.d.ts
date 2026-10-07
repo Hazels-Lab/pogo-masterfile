@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonSettings", 2480 entries (structural types).
+// Generated from Pokémon GO masterfile — group "pokemonSettings", 2488 entries (structural types).
 
 import type { W } from "../_utils";
 import type { TypeEffectiveTemplateID } from "../type-effective/entries";
@@ -325,7 +325,7 @@ export interface PokemonSettingsData {
 	}>;
 	heightStdDev: number;
 	ibfc: {
-		alternateForm?: "AEGISLASH_BLADE" | "MIMIKYU_BUSTED" | "MORPEKO_HANGRY";
+		alternateForm?: "AEGISLASH_BLADE" | "MIMIKYU_BUSTED" | "MINIOR_METEOR" | "MORPEKO_HANGRY";
 		AlternateForms?: ["CRAMORANT_GULPING", "CRAMORANT_GORGING"];
 		alternateToDefaultIbfcSettings?: {
 			animationDurationTurns: number;

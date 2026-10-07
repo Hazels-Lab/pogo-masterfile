@@ -3893,6 +3893,22 @@ pub enum GenderSettingsTemplateId {
     SpawnV0774PokemonMiniorGreen,
     #[serde(rename = "SPAWN_V0774_POKEMON_MINIOR_INDIGO")]
     SpawnV0774PokemonMiniorIndigo,
+    #[serde(rename = "SPAWN_V0774_POKEMON_MINIOR_METEOR")]
+    SpawnV0774PokemonMiniorMeteor,
+    #[serde(rename = "SPAWN_V0774_POKEMON_MINIOR_METEOR_BLUE")]
+    SpawnV0774PokemonMiniorMeteorBlue,
+    #[serde(rename = "SPAWN_V0774_POKEMON_MINIOR_METEOR_GREEN")]
+    SpawnV0774PokemonMiniorMeteorGreen,
+    #[serde(rename = "SPAWN_V0774_POKEMON_MINIOR_METEOR_INDIGO")]
+    SpawnV0774PokemonMiniorMeteorIndigo,
+    #[serde(rename = "SPAWN_V0774_POKEMON_MINIOR_METEOR_ORANGE")]
+    SpawnV0774PokemonMiniorMeteorOrange,
+    #[serde(rename = "SPAWN_V0774_POKEMON_MINIOR_METEOR_RED")]
+    SpawnV0774PokemonMiniorMeteorRed,
+    #[serde(rename = "SPAWN_V0774_POKEMON_MINIOR_METEOR_VIOLET")]
+    SpawnV0774PokemonMiniorMeteorViolet,
+    #[serde(rename = "SPAWN_V0774_POKEMON_MINIOR_METEOR_YELLOW")]
+    SpawnV0774PokemonMiniorMeteorYellow,
     #[serde(rename = "SPAWN_V0774_POKEMON_MINIOR_ORANGE")]
     SpawnV0774PokemonMiniorOrange,
     #[serde(rename = "SPAWN_V0774_POKEMON_MINIOR_RED")]

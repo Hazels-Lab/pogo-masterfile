@@ -178,9 +178,9 @@ pub mod weather_affinities;
 #[derive(Debug, Clone, Serialize, TemplateId)]
 #[serde(untagged)]
 pub enum MasterfileEntry {
-    PokemonExtendedSettings(pokemon_extended_settings::PokemonExtendedSettingsEntry),
     GenderSettings(gender_settings::GenderSettingsEntry),
     PokemonSettings(pokemon_settings::PokemonSettingsEntry),
+    PokemonExtendedSettings(pokemon_extended_settings::PokemonExtendedSettingsEntry),
     AvatarCustomization(avatar_customization::AvatarCustomizationEntry),
     AvatarItemDisplay(avatar_item_display::AvatarItemDisplayEntry),
     BadgeSettings(badge_settings::BadgeSettingsEntry),
@@ -231,9 +231,9 @@ pub enum MasterfileEntry {
     PokemonScaleSettings(pokemon_scale_settings::PokemonScaleSettingsEntry),
     QuickInviteSettings(quick_invite_settings::QuickInviteSettingsEntry),
     BuddyLevelSettings(buddy_level_settings::BuddyLevelSettingsEntry),
-    CodeGateProto(code_gate_proto::CodeGateProtoEntry),
     RollBack(roll_back::RollBackEntry),
     TappableSettings(tappable_settings::TappableSettingsEntry),
+    CodeGateProto(code_gate_proto::CodeGateProtoEntry),
     FortPowerUpLevelSettings(fort_power_up_level_settings::FortPowerUpLevelSettingsEntry),
     PokemonHomeEnergyCosts(pokemon_home_energy_costs::PokemonHomeEnergyCostsEntry),
     CombatNpcPersonality(combat_npc_personality::CombatNpcPersonalityEntry),
@@ -420,11 +420,11 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
 
         let result: serde_json::Result<Self> = if let Some(disc) = discriminator.as_deref() {
             match disc {
+                "genderSettings" => serde_json::from_value(value).map(Self::GenderSettings),
+                "pokemonSettings" => serde_json::from_value(value).map(Self::PokemonSettings),
                 "pokemonExtendedSettings" => {
                     serde_json::from_value(value).map(Self::PokemonExtendedSettings)
                 }
-                "genderSettings" => serde_json::from_value(value).map(Self::GenderSettings),
-                "pokemonSettings" => serde_json::from_value(value).map(Self::PokemonSettings),
                 "avatarCustomization" => {
                     serde_json::from_value(value).map(Self::AvatarCustomization)
                 }
@@ -519,9 +519,9 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::QuickInviteSettings)
                 }
                 "buddyLevelSettings" => serde_json::from_value(value).map(Self::BuddyLevelSettings),
-                "codeGateProto" => serde_json::from_value(value).map(Self::CodeGateProto),
                 "rollBack" => serde_json::from_value(value).map(Self::RollBack),
                 "tappableSettings" => serde_json::from_value(value).map(Self::TappableSettings),
+                "codeGateProto" => serde_json::from_value(value).map(Self::CodeGateProto),
                 "fortPowerUpLevelSettings" => {
                     serde_json::from_value(value).map(Self::FortPowerUpLevelSettings)
                 }
