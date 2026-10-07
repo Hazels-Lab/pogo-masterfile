@@ -2093,7 +2093,7 @@ type VnextBattleConfig struct {
 }
 
 type VsSeekerClientSettings struct {
-	AllowedVsSeekerLeagueTemplateId [2]string `json:"allowedVsSeekerLeagueTemplateId"`
+	AllowedVsSeekerLeagueTemplateId [3]string `json:"allowedVsSeekerLeagueTemplateId"`
 }
 
 type VsSeekerScheduleSettingsVsSeekerSchedules struct {

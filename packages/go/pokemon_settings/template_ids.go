@@ -1948,6 +1948,14 @@ const (
 	PokemonSettingsTemplateIDV0774PokemonMiniorBlue                         PokemonSettingsTemplateID = "V0774_POKEMON_MINIOR_BLUE"
 	PokemonSettingsTemplateIDV0774PokemonMiniorGreen                        PokemonSettingsTemplateID = "V0774_POKEMON_MINIOR_GREEN"
 	PokemonSettingsTemplateIDV0774PokemonMiniorIndigo                       PokemonSettingsTemplateID = "V0774_POKEMON_MINIOR_INDIGO"
+	PokemonSettingsTemplateIDV0774PokemonMiniorMeteor                       PokemonSettingsTemplateID = "V0774_POKEMON_MINIOR_METEOR"
+	PokemonSettingsTemplateIDV0774PokemonMiniorMeteorBlue                   PokemonSettingsTemplateID = "V0774_POKEMON_MINIOR_METEOR_BLUE"
+	PokemonSettingsTemplateIDV0774PokemonMiniorMeteorGreen                  PokemonSettingsTemplateID = "V0774_POKEMON_MINIOR_METEOR_GREEN"
+	PokemonSettingsTemplateIDV0774PokemonMiniorMeteorIndigo                 PokemonSettingsTemplateID = "V0774_POKEMON_MINIOR_METEOR_INDIGO"
+	PokemonSettingsTemplateIDV0774PokemonMiniorMeteorOrange                 PokemonSettingsTemplateID = "V0774_POKEMON_MINIOR_METEOR_ORANGE"
+	PokemonSettingsTemplateIDV0774PokemonMiniorMeteorRed                    PokemonSettingsTemplateID = "V0774_POKEMON_MINIOR_METEOR_RED"
+	PokemonSettingsTemplateIDV0774PokemonMiniorMeteorViolet                 PokemonSettingsTemplateID = "V0774_POKEMON_MINIOR_METEOR_VIOLET"
+	PokemonSettingsTemplateIDV0774PokemonMiniorMeteorYellow                 PokemonSettingsTemplateID = "V0774_POKEMON_MINIOR_METEOR_YELLOW"
 	PokemonSettingsTemplateIDV0774PokemonMiniorOrange                       PokemonSettingsTemplateID = "V0774_POKEMON_MINIOR_ORANGE"
 	PokemonSettingsTemplateIDV0774PokemonMiniorRed                          PokemonSettingsTemplateID = "V0774_POKEMON_MINIOR_RED"
 	PokemonSettingsTemplateIDV0774PokemonMiniorViolet                       PokemonSettingsTemplateID = "V0774_POKEMON_MINIOR_VIOLET"
@@ -4431,6 +4439,14 @@ var PokemonSettingsTemplateIDValues = [...]PokemonSettingsTemplateID{
 	PokemonSettingsTemplateIDV0774PokemonMiniorBlue,
 	PokemonSettingsTemplateIDV0774PokemonMiniorGreen,
 	PokemonSettingsTemplateIDV0774PokemonMiniorIndigo,
+	PokemonSettingsTemplateIDV0774PokemonMiniorMeteor,
+	PokemonSettingsTemplateIDV0774PokemonMiniorMeteorBlue,
+	PokemonSettingsTemplateIDV0774PokemonMiniorMeteorGreen,
+	PokemonSettingsTemplateIDV0774PokemonMiniorMeteorIndigo,
+	PokemonSettingsTemplateIDV0774PokemonMiniorMeteorOrange,
+	PokemonSettingsTemplateIDV0774PokemonMiniorMeteorRed,
+	PokemonSettingsTemplateIDV0774PokemonMiniorMeteorViolet,
+	PokemonSettingsTemplateIDV0774PokemonMiniorMeteorYellow,
 	PokemonSettingsTemplateIDV0774PokemonMiniorOrange,
 	PokemonSettingsTemplateIDV0774PokemonMiniorRed,
 	PokemonSettingsTemplateIDV0774PokemonMiniorViolet,

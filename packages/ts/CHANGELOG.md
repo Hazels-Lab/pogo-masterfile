@@ -2,6 +2,33 @@
 
 All notable changes to `pogo-masterfile-types` (npm) are recorded here. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.74] - 2026-10-07
+
+Automated regeneration from upstream masterfile commit `aba048a96f6a899fb672bb8f1bf8b78b94c65d01`.
+
+### Added template IDs (16)
+
+- SPAWN_V0774_POKEMON_MINIOR_METEOR
+- SPAWN_V0774_POKEMON_MINIOR_METEOR_BLUE
+- SPAWN_V0774_POKEMON_MINIOR_METEOR_GREEN
+- SPAWN_V0774_POKEMON_MINIOR_METEOR_INDIGO
+- SPAWN_V0774_POKEMON_MINIOR_METEOR_ORANGE
+- SPAWN_V0774_POKEMON_MINIOR_METEOR_RED
+- SPAWN_V0774_POKEMON_MINIOR_METEOR_VIOLET
+- SPAWN_V0774_POKEMON_MINIOR_METEOR_YELLOW
+- V0774_POKEMON_MINIOR_METEOR
+- V0774_POKEMON_MINIOR_METEOR_BLUE
+- V0774_POKEMON_MINIOR_METEOR_GREEN
+- V0774_POKEMON_MINIOR_METEOR_INDIGO
+- V0774_POKEMON_MINIOR_METEOR_ORANGE
+- V0774_POKEMON_MINIOR_METEOR_RED
+- V0774_POKEMON_MINIOR_METEOR_VIOLET
+- V0774_POKEMON_MINIOR_METEOR_YELLOW
+
+### Removed template IDs (1)
+
+- TODAY_VIEW_V3_CODE_GATE
+
 ## [0.1.73] - 2026-10-06
 
 Automated regeneration from upstream masterfile commit `9b9cca190d80dd23055292709a622d2c48e18112`.

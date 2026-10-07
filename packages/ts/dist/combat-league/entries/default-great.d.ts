@@ -11728,6 +11728,7 @@ export type CombatLeagueVsSeekerGreatChampionshipsLegacy = S<
 				"ENAMORUS",
 				"MIMIKYU",
 				"CRAMORANT",
+				"MINIOR",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/pogo_great_league.png";

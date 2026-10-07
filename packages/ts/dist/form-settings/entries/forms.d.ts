@@ -11574,10 +11574,13 @@ export type FormSettingsV0774PokemonMinior = S<
 		{
 			forms: [
 				{
-					form: "MINIOR_BLUE";
+					form: "MINIOR_RED";
 				},
 				{
 					form: "MINIOR_GREEN";
+				},
+				{
+					form: "MINIOR_BLUE";
 				},
 				{
 					form: "MINIOR_INDIGO";
@@ -11586,13 +11589,34 @@ export type FormSettingsV0774PokemonMinior = S<
 					form: "MINIOR_ORANGE";
 				},
 				{
-					form: "MINIOR_RED";
-				},
-				{
 					form: "MINIOR_VIOLET";
 				},
 				{
 					form: "MINIOR_YELLOW";
+				},
+				{
+					form: "MINIOR_METEOR_BLUE";
+				},
+				{
+					form: "MINIOR_METEOR_GREEN";
+				},
+				{
+					form: "MINIOR_METEOR_INDIGO";
+				},
+				{
+					form: "MINIOR_METEOR_ORANGE";
+				},
+				{
+					form: "MINIOR_METEOR_RED";
+				},
+				{
+					form: "MINIOR_METEOR_VIOLET";
+				},
+				{
+					form: "MINIOR_METEOR_YELLOW";
+				},
+				{
+					form: "MINIOR_METEOR";
 				},
 			];
 			pokemon: "MINIOR";

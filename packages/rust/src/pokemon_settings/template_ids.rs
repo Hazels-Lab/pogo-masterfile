@@ -3893,6 +3893,22 @@ pub enum PokemonSettingsTemplateId {
     V0774PokemonMiniorGreen,
     #[serde(rename = "V0774_POKEMON_MINIOR_INDIGO")]
     V0774PokemonMiniorIndigo,
+    #[serde(rename = "V0774_POKEMON_MINIOR_METEOR")]
+    V0774PokemonMiniorMeteor,
+    #[serde(rename = "V0774_POKEMON_MINIOR_METEOR_BLUE")]
+    V0774PokemonMiniorMeteorBlue,
+    #[serde(rename = "V0774_POKEMON_MINIOR_METEOR_GREEN")]
+    V0774PokemonMiniorMeteorGreen,
+    #[serde(rename = "V0774_POKEMON_MINIOR_METEOR_INDIGO")]
+    V0774PokemonMiniorMeteorIndigo,
+    #[serde(rename = "V0774_POKEMON_MINIOR_METEOR_ORANGE")]
+    V0774PokemonMiniorMeteorOrange,
+    #[serde(rename = "V0774_POKEMON_MINIOR_METEOR_RED")]
+    V0774PokemonMiniorMeteorRed,
+    #[serde(rename = "V0774_POKEMON_MINIOR_METEOR_VIOLET")]
+    V0774PokemonMiniorMeteorViolet,
+    #[serde(rename = "V0774_POKEMON_MINIOR_METEOR_YELLOW")]
+    V0774PokemonMiniorMeteorYellow,
     #[serde(rename = "V0774_POKEMON_MINIOR_ORANGE")]
     V0774PokemonMiniorOrange,
     #[serde(rename = "V0774_POKEMON_MINIOR_RED")]

@@ -120,12 +120,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 	}
 
 	switch disc {
-	case "pokemonExtendedSettings":
-		var e pokemon_extended_settings.PokemonExtendedSettingsEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
 	case "genderSettings":
 		var e gender_settings.GenderSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -134,6 +128,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "pokemonSettings":
 		var e pokemon_settings.PokemonSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
+	case "pokemonExtendedSettings":
+		var e pokemon_extended_settings.PokemonExtendedSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -402,12 +402,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "codeGateProto":
-		var e code_gate_proto.CodeGateProtoEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
 	case "rollBack":
 		var e roll_back.RollBackEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -416,6 +410,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "tappableSettings":
 		var e tappable_settings.TappableSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
+	case "codeGateProto":
+		var e code_gate_proto.CodeGateProtoEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
