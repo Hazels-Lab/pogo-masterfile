@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 219 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 223 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -679,6 +679,69 @@ export type PokemonExtendedSettingsV0025PikachuGlassHelmet2026 = S<
 				},
 			];
 			form: "PIKACHU_GLASS_HELMET_2026";
+			sizeSettings: {
+				mLowerBound: 0.3;
+				mUpperBound: 0.5;
+				xlUpperBound: 0.6;
+				xsLowerBound: 0.2;
+				xxlUpperBound: 0.7;
+				xxsLowerBound: 0.196;
+			};
+			uniqueId: "PIKACHU";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0025PikachuHalloween2026 = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0025_PIKACHU_HALLOWEEN_2026",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 62;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 27.5;
+						maxReticleSize: 14;
+						scale: 31;
+					};
+					maxStationVisualSettings: {
+						scale: 4.22;
+					};
+				},
+				{
+					averageHeightM: 21;
+					breadMode: "BREAD_DOUGH_MODE";
+					camera: {
+						cylinderHeightM: 1.1;
+						cylinderRadiusM: 1.3;
+					};
+					catchOverrideSettings: {
+						collisionHeadRadiusM: 0.25;
+						collisionRadiusM: 0.25;
+					};
+					maxBattleTrainerVisualSettings: {
+						xOffset: -5;
+						yOffset: -5;
+					};
+					maxBattleVisualSettings: {
+						scale: 20;
+						xOffset: 3;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 32.5;
+						maxReticleSize: 14;
+						scale: 10.5;
+					};
+					maxStationVisualSettings: {
+						scale: 1.25;
+					};
+					modelHeight: 2.57;
+					modelScaleV2: 0.86;
+				},
+			];
+			form: "PIKACHU_HALLOWEEN_2026";
 			sizeSettings: {
 				mLowerBound: 0.3;
 				mUpperBound: 0.5;
@@ -7763,6 +7826,120 @@ export type PokemonExtendedSettingsV0471PokemonGlaceonNormal = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0480PokemonUxieNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0480_POKEMON_UXIE_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						xOffset: -8;
+					};
+					maxBattleVisualSettings: {
+						scale: 78.4;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 39.2;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 0.72;
+					};
+					maxStationVisualSettings: {
+						scale: 5.33;
+					};
+				},
+			];
+			form: "UXIE_NORMAL";
+			sizeSettings: {
+				mLowerBound: 0.225;
+				mUpperBound: 0.375;
+				xlUpperBound: 0.45;
+				xsLowerBound: 0.15;
+				xxlUpperBound: 0.525;
+				xxsLowerBound: 0.147;
+			};
+			uniqueId: "UXIE";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0481PokemonMespritNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0481_POKEMON_MESPRIT_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						xOffset: -10;
+					};
+					maxBattleVisualSettings: {
+						scale: 78.4;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 28;
+						maxReticleSize: 14;
+						scale: 39.2;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 0.75;
+					};
+					maxStationVisualSettings: {
+						scale: 5.33;
+					};
+				},
+			];
+			form: "MESPRIT_NORMAL";
+			sizeSettings: {
+				mLowerBound: 0.225;
+				mUpperBound: 0.375;
+				xlUpperBound: 0.45;
+				xsLowerBound: 0.15;
+				xxlUpperBound: 0.525;
+				xxsLowerBound: 0.147;
+			};
+			uniqueId: "MESPRIT";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0482PokemonAzelfNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0482_POKEMON_AZELF_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						yOffset: 7;
+					};
+					maxBattleVisualSettings: {
+						scale: 78.4;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 30;
+						maxReticleSize: 12;
+						scale: 39.2;
+					};
+					maxStationVisualSettings: {
+						scale: 5.33;
+					};
+				},
+			];
+			form: "AZELF_NORMAL";
+			sizeSettings: {
+				mLowerBound: 0.225;
+				mUpperBound: 0.375;
+				xlUpperBound: 0.45;
+				xsLowerBound: 0.15;
+				xxlUpperBound: 0.525;
+				xxsLowerBound: 0.147;
+			};
+			uniqueId: "AZELF";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0519PokemonPidoveNormal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0519_POKEMON_PIDOVE_NORMAL",
@@ -10122,6 +10299,7 @@ export type PokemonExtendedSettingsBreadOverridesFormMasterfileEntry =
 	| PokemonExtendedSettingsV0025PikachuAnniversary2026Singapore01
 	| PokemonExtendedSettingsV0025PikachuAnniversary2026Taiwan01
 	| PokemonExtendedSettingsV0025PikachuGlassHelmet2026
+	| PokemonExtendedSettingsV0025PikachuHalloween2026
 	| PokemonExtendedSettingsV0025PokemonPikachuAdventureHat2020
 	| PokemonExtendedSettingsV0025PokemonPikachuAnniversary2026
 	| PokemonExtendedSettingsV0025PokemonPikachuBb2026
@@ -10266,6 +10444,9 @@ export type PokemonExtendedSettingsBreadOverridesFormMasterfileEntry =
 	| PokemonExtendedSettingsV0467PokemonMagmortarNormal
 	| PokemonExtendedSettingsV0470PokemonLeafeonNormal
 	| PokemonExtendedSettingsV0471PokemonGlaceonNormal
+	| PokemonExtendedSettingsV0480PokemonUxieNormal
+	| PokemonExtendedSettingsV0481PokemonMespritNormal
+	| PokemonExtendedSettingsV0482PokemonAzelfNormal
 	| PokemonExtendedSettingsV0519PokemonPidoveNormal
 	| PokemonExtendedSettingsV0520PokemonTranquillNormal
 	| PokemonExtendedSettingsV0521PokemonUnfezantNormal

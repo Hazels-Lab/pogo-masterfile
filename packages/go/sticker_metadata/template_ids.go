@@ -213,6 +213,9 @@ const (
 	StickerMetadataTemplateIDStickerGowa202503                   StickerMetadataTemplateID = "STICKER_GOWA2025_03"
 	StickerMetadataTemplateIDStickerGowa202504                   StickerMetadataTemplateID = "STICKER_GOWA2025_04"
 	StickerMetadataTemplateIDStickerGowa202505                   StickerMetadataTemplateID = "STICKER_GOWA2025_05"
+	StickerMetadataTemplateIDStickerGowa20261                    StickerMetadataTemplateID = "STICKER_GOWA2026_1"
+	StickerMetadataTemplateIDStickerGowa20262                    StickerMetadataTemplateID = "STICKER_GOWA2026_2"
+	StickerMetadataTemplateIDStickerGowa20263                    StickerMetadataTemplateID = "STICKER_GOWA2026_3"
 	StickerMetadataTemplateIDStickerGrubbin1                     StickerMetadataTemplateID = "STICKER_GRUBBIN_1"
 	StickerMetadataTemplateIDStickerGrubbin2                     StickerMetadataTemplateID = "STICKER_GRUBBIN_2"
 	StickerMetadataTemplateIDStickerGrubbin3                     StickerMetadataTemplateID = "STICKER_GRUBBIN_3"
@@ -844,6 +847,9 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDStickerGowa202503,
 	StickerMetadataTemplateIDStickerGowa202504,
 	StickerMetadataTemplateIDStickerGowa202505,
+	StickerMetadataTemplateIDStickerGowa20261,
+	StickerMetadataTemplateIDStickerGowa20262,
+	StickerMetadataTemplateIDStickerGowa20263,
 	StickerMetadataTemplateIDStickerGrubbin1,
 	StickerMetadataTemplateIDStickerGrubbin2,
 	StickerMetadataTemplateIDStickerGrubbin3,

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides", 140 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides", 143 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -3061,6 +3061,117 @@ export type PokemonExtendedSettingsV0471PokemonGlaceon = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0480PokemonUxie = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0480_POKEMON_UXIE",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						xOffset: -8;
+					};
+					maxBattleVisualSettings: {
+						scale: 78.4;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 39.2;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 0.72;
+					};
+					maxStationVisualSettings: {
+						scale: 5.33;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 0.225;
+				mUpperBound: 0.375;
+				xlUpperBound: 0.45;
+				xsLowerBound: 0.15;
+				xxlUpperBound: 0.525;
+				xxsLowerBound: 0.147;
+			};
+			uniqueId: "UXIE";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0481PokemonMesprit = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0481_POKEMON_MESPRIT",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						xOffset: -10;
+					};
+					maxBattleVisualSettings: {
+						scale: 78.4;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 28;
+						maxReticleSize: 14;
+						scale: 39.2;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 0.75;
+					};
+					maxStationVisualSettings: {
+						scale: 5.33;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 0.225;
+				mUpperBound: 0.375;
+				xlUpperBound: 0.45;
+				xsLowerBound: 0.15;
+				xxlUpperBound: 0.525;
+				xxsLowerBound: 0.147;
+			};
+			uniqueId: "MESPRIT";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0482PokemonAzelf = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0482_POKEMON_AZELF",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						yOffset: 7;
+					};
+					maxBattleVisualSettings: {
+						scale: 78.4;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 30;
+						maxReticleSize: 12;
+						scale: 39.2;
+					};
+					maxStationVisualSettings: {
+						scale: 5.33;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 0.225;
+				mUpperBound: 0.375;
+				xlUpperBound: 0.45;
+				xsLowerBound: 0.15;
+				xxlUpperBound: 0.525;
+				xxsLowerBound: 0.147;
+			};
+			uniqueId: "AZELF";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0519PokemonPidove = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0519_POKEMON_PIDOVE",
@@ -5230,6 +5341,9 @@ export type PokemonExtendedSettingsBreadOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0467PokemonMagmortar
 	| PokemonExtendedSettingsV0470PokemonLeafeon
 	| PokemonExtendedSettingsV0471PokemonGlaceon
+	| PokemonExtendedSettingsV0480PokemonUxie
+	| PokemonExtendedSettingsV0481PokemonMesprit
+	| PokemonExtendedSettingsV0482PokemonAzelf
 	| PokemonExtendedSettingsV0519PokemonPidove
 	| PokemonExtendedSettingsV0520PokemonTranquill
 	| PokemonExtendedSettingsV0521PokemonUnfezant

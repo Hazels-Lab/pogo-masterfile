@@ -10,6 +10,8 @@ import type {
 	FeatureGateAmsFrontend,
 	FeatureGateCombatSuppressFastMovePredictionsOnSwap,
 	FeatureGateCombatVnextInitializeBdLast,
+	FeatureGateCombineCompassAndWeather,
+	FeatureGateDailyEncounterGenerationContext,
 	FeatureGateDisableLegacyNearbyPokemon,
 	FeatureGateEnableNearbyPokemonSnapshot,
 	FeatureGateEnablePvpChallengeSpanner,
@@ -30,10 +32,14 @@ import type {
 	FeatureGateMeetupReminderNotifications,
 	FeatureGateMepEggReadMigration,
 	FeatureGateMepEggWriteMigration,
+	FeatureGateMichelinMapLureBottomRingRemoval,
+	FeatureGateMichelinMapZygardeCellReward,
 	FeatureGatePokemonSpawnAvoidanceRework,
 	FeatureGateRegisterDevice,
 	FeatureGateRemoteTradeImprovements,
 	FeatureGateSeafGetMapObjectsRateLimiter,
+	FeatureGateTransfer,
+	FeatureGateVnextFastAttackInputType,
 	FeatureGateVnextPreResponseInputBlockingBehavior,
 	FeatureGateWayfarerSubmitLinkout,
 } from "./entries";
@@ -48,6 +54,8 @@ export interface FeatureGateLookup {
 	AMS_FRONTEND_FEATURE_GATE: FeatureGateAmsFrontend;
 	COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE: FeatureGateCombatSuppressFastMovePredictionsOnSwap;
 	COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE: FeatureGateCombatVnextInitializeBdLast;
+	COMBINE_COMPASS_AND_WEATHER_FEATURE_GATE: FeatureGateCombineCompassAndWeather;
+	DAILY_ENCOUNTER_GENERATION_CONTEXT_FEATURE_GATE: FeatureGateDailyEncounterGenerationContext;
 	DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE: FeatureGateDisableLegacyNearbyPokemon;
 	ENABLE_NEARBY_POKEMON_SNAPSHOT_FEATURE_GATE: FeatureGateEnableNearbyPokemonSnapshot;
 	ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE: FeatureGateEnablePvpChallengeSpanner;
@@ -68,10 +76,14 @@ export interface FeatureGateLookup {
 	MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE: FeatureGateMeetupReminderNotifications;
 	MEP_EGG_READ_MIGRATION_FEATURE_GATE: FeatureGateMepEggReadMigration;
 	MEP_EGG_WRITE_MIGRATION_FEATURE_GATE: FeatureGateMepEggWriteMigration;
+	MICHELIN_MAP_LURE_BOTTOM_RING_REMOVAL_FEATURE_GATE: FeatureGateMichelinMapLureBottomRingRemoval;
+	MICHELIN_MAP_ZYGARDE_CELL_REWARD_FEATURE_GATE: FeatureGateMichelinMapZygardeCellReward;
 	POKEMON_SPAWN_AVOIDANCE_REWORK_FEATURE_GATE: FeatureGatePokemonSpawnAvoidanceRework;
 	REGISTER_DEVICE_FEATURE_GATE: FeatureGateRegisterDevice;
 	REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE: FeatureGateRemoteTradeImprovements;
 	SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE: FeatureGateSeafGetMapObjectsRateLimiter;
+	TRANSFER_FEATURE_GATE: FeatureGateTransfer;
+	VNEXT_FAST_ATTACK_INPUT_TYPE_FEATURE_GATE: FeatureGateVnextFastAttackInputType;
 	VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE: FeatureGateVnextPreResponseInputBlockingBehavior;
 	WAYFARER_SUBMIT_LINKOUT_FEATURE_GATE: FeatureGateWayfarerSubmitLinkout;
 }

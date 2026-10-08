@@ -1179,6 +1179,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNPantsGymleaderB2,
     #[serde(rename = "N_DISPLAY_n_pants_hala_0")]
     NDisplayNPantsHala0,
+    #[serde(rename = "N_DISPLAY_n_pants_halloween2026")]
+    NDisplayNPantsHalloween2026,
     #[serde(rename = "N_DISPLAY_n_pants_hgss_a_0")]
     NDisplayNPantsHgssA0,
     #[serde(rename = "N_DISPLAY_n_pants_hgss_b_0")]
@@ -1921,6 +1923,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNShirtHala0,
     #[serde(rename = "N_DISPLAY_n_shirt_halloween2024_0")]
     NDisplayNShirtHalloween20240,
+    #[serde(rename = "N_DISPLAY_n_shirt_halloween2026")]
+    NDisplayNShirtHalloween2026,
     #[serde(rename = "N_DISPLAY_n_shirt_happi_0")]
     NDisplayNShirtHappi0,
     #[serde(rename = "N_DISPLAY_n_shirt_happi_1")]

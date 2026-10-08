@@ -121,6 +121,8 @@ pub enum LocationCardSettingsTemplateId {
     Lc2025NewtaipeicityGotour001,
     #[serde(rename = "LC_2025_NFL_001")]
     Lc2025Nfl001,
+    #[serde(rename = "LC_2025_NFL_002")]
+    Lc2025Nfl002,
     #[serde(rename = "LC_2025_OSAKA_EVENT_001")]
     Lc2025OsakaEvent001,
     #[serde(rename = "LC_2025_OSAKA_EVENT_002")]
@@ -155,6 +157,10 @@ pub enum LocationCardSettingsTemplateId {
     Lc2026ComicconMalaga,
     #[serde(rename = "LC_2026_COPENHAGEN_GOFEST_001")]
     Lc2026CopenhagenGofest001,
+    #[serde(rename = "LC_2026_GOWA_MEXICOCITY")]
+    Lc2026GowaMexicocity,
+    #[serde(rename = "LC_2026_GOWA_SENDAI")]
+    Lc2026GowaSendai,
     #[serde(rename = "LC_2026_JP_GREEN")]
     Lc2026JpGreen,
     #[serde(rename = "LC_2026_JP_RED")]
@@ -495,6 +501,8 @@ pub enum LocationCardSettingsTemplateId {
     LcSpecialbackground2026GlobalX001,
     #[serde(rename = "LC_SPECIALBACKGROUND_2026_GLOBAL_Y_001")]
     LcSpecialbackground2026GlobalY001,
+    #[serde(rename = "LC_SPECIALBACKGROUND_2026_GOWA")]
+    LcSpecialbackground2026Gowa,
     #[serde(rename = "LC_SPECIALBACKGROUND_2026_MEWTWO_001")]
     LcSpecialbackground2026Mewtwo001,
     #[serde(rename = "LC_SPECIALBACKGROUND_2026_MEWTWO_002")]

@@ -62,6 +62,7 @@ const (
 	LocationCardSettingsTemplateIDLc2025ManchesterRoadtrip001                             LocationCardSettingsTemplateID = "LC_2025_MANCHESTER_ROADTRIP_001"
 	LocationCardSettingsTemplateIDLc2025NewtaipeicityGotour001                            LocationCardSettingsTemplateID = "LC_2025_NEWTAIPEICITY_GOTOUR_001"
 	LocationCardSettingsTemplateIDLc2025Nfl001                                            LocationCardSettingsTemplateID = "LC_2025_NFL_001"
+	LocationCardSettingsTemplateIDLc2025Nfl002                                            LocationCardSettingsTemplateID = "LC_2025_NFL_002"
 	LocationCardSettingsTemplateIDLc2025OsakaEvent001                                     LocationCardSettingsTemplateID = "LC_2025_OSAKA_EVENT_001"
 	LocationCardSettingsTemplateIDLc2025OsakaEvent002                                     LocationCardSettingsTemplateID = "LC_2025_OSAKA_EVENT_002"
 	LocationCardSettingsTemplateIDLc2025OsakaEvent003                                     LocationCardSettingsTemplateID = "LC_2025_OSAKA_EVENT_003"
@@ -79,6 +80,8 @@ const (
 	LocationCardSettingsTemplateIDLc2026CologneCarnival001                                LocationCardSettingsTemplateID = "LC_2026_COLOGNE_CARNIVAL_001"
 	LocationCardSettingsTemplateIDLc2026ComicconMalaga                                    LocationCardSettingsTemplateID = "LC_2026_COMICCON_MALAGA"
 	LocationCardSettingsTemplateIDLc2026CopenhagenGofest001                               LocationCardSettingsTemplateID = "LC_2026_COPENHAGEN_GOFEST_001"
+	LocationCardSettingsTemplateIDLc2026GowaMexicocity                                    LocationCardSettingsTemplateID = "LC_2026_GOWA_MEXICOCITY"
+	LocationCardSettingsTemplateIDLc2026GowaSendai                                        LocationCardSettingsTemplateID = "LC_2026_GOWA_SENDAI"
 	LocationCardSettingsTemplateIDLc2026JpGreen                                           LocationCardSettingsTemplateID = "LC_2026_JP_GREEN"
 	LocationCardSettingsTemplateIDLc2026JpRed                                             LocationCardSettingsTemplateID = "LC_2026_JP_RED"
 	LocationCardSettingsTemplateIDLc2026LosangelesGotour001                               LocationCardSettingsTemplateID = "LC_2026_LOSANGELES_GOTOUR_001"
@@ -249,6 +252,7 @@ const (
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalSilver001                  LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_GLOBAL_SILVER_001"
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalX001                       LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_GLOBAL_X_001"
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalY001                       LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_GLOBAL_Y_001"
+	LocationCardSettingsTemplateIDLcSpecialbackground2026Gowa                             LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_GOWA"
 	LocationCardSettingsTemplateIDLcSpecialbackground2026Mewtwo001                        LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_MEWTWO_001"
 	LocationCardSettingsTemplateIDLcSpecialbackground2026Mewtwo002                        LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_MEWTWO_002"
 	LocationCardSettingsTemplateIDLcSpecialbackground2026Wcs                              LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_WCS"
@@ -333,6 +337,7 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLc2025ManchesterRoadtrip001,
 	LocationCardSettingsTemplateIDLc2025NewtaipeicityGotour001,
 	LocationCardSettingsTemplateIDLc2025Nfl001,
+	LocationCardSettingsTemplateIDLc2025Nfl002,
 	LocationCardSettingsTemplateIDLc2025OsakaEvent001,
 	LocationCardSettingsTemplateIDLc2025OsakaEvent002,
 	LocationCardSettingsTemplateIDLc2025OsakaEvent003,
@@ -350,6 +355,8 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLc2026CologneCarnival001,
 	LocationCardSettingsTemplateIDLc2026ComicconMalaga,
 	LocationCardSettingsTemplateIDLc2026CopenhagenGofest001,
+	LocationCardSettingsTemplateIDLc2026GowaMexicocity,
+	LocationCardSettingsTemplateIDLc2026GowaSendai,
 	LocationCardSettingsTemplateIDLc2026JpGreen,
 	LocationCardSettingsTemplateIDLc2026JpRed,
 	LocationCardSettingsTemplateIDLc2026LosangelesGotour001,
@@ -520,6 +527,7 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalSilver001,
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalX001,
 	LocationCardSettingsTemplateIDLcSpecialbackground2026GlobalY001,
+	LocationCardSettingsTemplateIDLcSpecialbackground2026Gowa,
 	LocationCardSettingsTemplateIDLcSpecialbackground2026Mewtwo001,
 	LocationCardSettingsTemplateIDLcSpecialbackground2026Mewtwo002,
 	LocationCardSettingsTemplateIDLcSpecialbackground2026Wcs,

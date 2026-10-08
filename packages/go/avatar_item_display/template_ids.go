@@ -591,6 +591,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNPantsGymleaderB1                    AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_gymleader_b_1"
 	AvatarItemDisplayTemplateIDNDisplayNPantsGymleaderB2                    AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_gymleader_b_2"
 	AvatarItemDisplayTemplateIDNDisplayNPantsHala0                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_hala_0"
+	AvatarItemDisplayTemplateIDNDisplayNPantsHalloween2026                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_halloween2026"
 	AvatarItemDisplayTemplateIDNDisplayNPantsHgssA0                         AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_hgss_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNPantsHgssB0                         AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_hgss_b_0"
 	AvatarItemDisplayTemplateIDNDisplayNPantsIngo0                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_pants_ingo_0"
@@ -962,6 +963,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShirtGymleaderB2                    AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gymleader_b_2"
 	AvatarItemDisplayTemplateIDNDisplayNShirtHala0                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_hala_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtHalloween20240                 AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_halloween2024_0"
+	AvatarItemDisplayTemplateIDNDisplayNShirtHalloween2026                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_halloween2026"
 	AvatarItemDisplayTemplateIDNDisplayNShirtHappi0                         AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_happi_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtHappi1                         AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_happi_1"
 	AvatarItemDisplayTemplateIDNDisplayNShirtHappi2                         AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_happi_2"
@@ -2293,6 +2295,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNPantsGymleaderB1,
 	AvatarItemDisplayTemplateIDNDisplayNPantsGymleaderB2,
 	AvatarItemDisplayTemplateIDNDisplayNPantsHala0,
+	AvatarItemDisplayTemplateIDNDisplayNPantsHalloween2026,
 	AvatarItemDisplayTemplateIDNDisplayNPantsHgssA0,
 	AvatarItemDisplayTemplateIDNDisplayNPantsHgssB0,
 	AvatarItemDisplayTemplateIDNDisplayNPantsIngo0,
@@ -2664,6 +2667,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShirtGymleaderB2,
 	AvatarItemDisplayTemplateIDNDisplayNShirtHala0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtHalloween20240,
+	AvatarItemDisplayTemplateIDNDisplayNShirtHalloween2026,
 	AvatarItemDisplayTemplateIDNDisplayNShirtHappi0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtHappi1,
 	AvatarItemDisplayTemplateIDNDisplayNShirtHappi2,

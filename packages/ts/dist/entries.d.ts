@@ -16,7 +16,6 @@ import type { CombatNpcPersonalityMasterfileEntry } from "./combat-npc-personali
 import type { CombatNpcTrainerMasterfileEntry } from "./combat-npc-trainer/entries";
 import type { CombatRankingProtoSettingsMasterfileEntry } from "./combat-ranking-proto-settings/entries";
 import type { CombatTypeMasterfileEntry } from "./combat-type/entries";
-import type { EventPassSettingsMasterfileEntry } from "./event-pass-settings/entries";
 import type { EventPassTierSettingsMasterfileEntry } from "./event-pass-tier-settings/entries";
 import type { EvolutionChainDisplaySettingsMasterfileEntry } from "./evolution-chain-display-settings/entries";
 import type { EvolutionQuestTemplateMasterfileEntry } from "./evolution-quest-template/entries";
@@ -78,7 +77,6 @@ export type * from "./combat-npc-personality/entries";
 export type * from "./combat-npc-trainer/entries";
 export type * from "./combat-ranking-proto-settings/entries";
 export type * from "./combat-type/entries";
-export type * from "./event-pass-settings/entries";
 export type * from "./event-pass-tier-settings/entries";
 export type * from "./evolution-chain-display-settings/entries";
 export type * from "./evolution-quest-template/entries";
@@ -141,7 +139,6 @@ export type MasterfileEntry =
 	| CombatNpcTrainerMasterfileEntry
 	| CombatRankingProtoSettingsMasterfileEntry
 	| CombatTypeMasterfileEntry
-	| EventPassSettingsMasterfileEntry
 	| EventPassTierSettingsMasterfileEntry
 	| EvolutionChainDisplaySettingsMasterfileEntry
 	| EvolutionQuestTemplateMasterfileEntry

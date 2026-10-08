@@ -221,6 +221,8 @@ pub enum GenderSettingsTemplateId {
     SpawnV0025PokemonPikachuGotour2026C,
     #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_C_02")]
     SpawnV0025PokemonPikachuGotour2026C02,
+    #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_HALLOWEEN_2026")]
+    SpawnV0025PokemonPikachuHalloween2026,
     #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_HORIZONS")]
     SpawnV0025PokemonPikachuHorizons,
     #[serde(rename = "SPAWN_V0025_POKEMON_PIKACHU_JEJU")]
@@ -343,10 +345,14 @@ pub enum GenderSettingsTemplateId {
     SpawnV0040PokemonWigglytuffNormal,
     #[serde(rename = "SPAWN_V0041_POKEMON_ZUBAT")]
     SpawnV0041PokemonZubat,
+    #[serde(rename = "SPAWN_V0041_POKEMON_ZUBAT_HALLOWEEN_2026_01")]
+    SpawnV0041PokemonZubatHalloween202601,
     #[serde(rename = "SPAWN_V0041_POKEMON_ZUBAT_NORMAL")]
     SpawnV0041PokemonZubatNormal,
     #[serde(rename = "SPAWN_V0042_POKEMON_GOLBAT")]
     SpawnV0042PokemonGolbat,
+    #[serde(rename = "SPAWN_V0042_POKEMON_GOLBAT_HALLOWEEN_2026_01")]
+    SpawnV0042PokemonGolbatHalloween202601,
     #[serde(rename = "SPAWN_V0042_POKEMON_GOLBAT_NORMAL")]
     SpawnV0042PokemonGolbatNormal,
     #[serde(rename = "SPAWN_V0043_POKEMON_ODDISH")]
@@ -941,6 +947,8 @@ pub enum GenderSettingsTemplateId {
     SpawnV0168PokemonAriadosNormal,
     #[serde(rename = "SPAWN_V0169_POKEMON_CROBAT")]
     SpawnV0169PokemonCrobat,
+    #[serde(rename = "SPAWN_V0169_POKEMON_CROBAT_HALLOWEEN_2026_01")]
+    SpawnV0169PokemonCrobatHalloween202601,
     #[serde(rename = "SPAWN_V0169_POKEMON_CROBAT_NORMAL")]
     SpawnV0169PokemonCrobatNormal,
     #[serde(rename = "SPAWN_V0170_POKEMON_CHINCHOU")]
@@ -4251,14 +4259,22 @@ pub enum GenderSettingsTemplateId {
     SpawnV0853PokemonGrapploctNormal,
     #[serde(rename = "SPAWN_V0854_POKEMON_SINISTEA")]
     SpawnV0854PokemonSinistea,
+    #[serde(rename = "SPAWN_V0854_POKEMON_SINISTEA_A_HALLOWEEN_2026_01")]
+    SpawnV0854PokemonSinisteaAHalloween202601,
     #[serde(rename = "SPAWN_V0854_POKEMON_SINISTEA_ANTIQUE")]
     SpawnV0854PokemonSinisteaAntique,
+    #[serde(rename = "SPAWN_V0854_POKEMON_SINISTEA_P_HALLOWEEN_2026_01")]
+    SpawnV0854PokemonSinisteaPHalloween202601,
     #[serde(rename = "SPAWN_V0854_POKEMON_SINISTEA_PHONY")]
     SpawnV0854PokemonSinisteaPhony,
     #[serde(rename = "SPAWN_V0855_POKEMON_POLTEAGEIST")]
     SpawnV0855PokemonPolteageist,
+    #[serde(rename = "SPAWN_V0855_POKEMON_POLTEAGEIST_A_HALLOWEEN_2026_01")]
+    SpawnV0855PokemonPolteageistAHalloween202601,
     #[serde(rename = "SPAWN_V0855_POKEMON_POLTEAGEIST_ANTIQUE")]
     SpawnV0855PokemonPolteageistAntique,
+    #[serde(rename = "SPAWN_V0855_POKEMON_POLTEAGEIST_P_HALLOWEEN_2026_01")]
+    SpawnV0855PokemonPolteageistPHalloween202601,
     #[serde(rename = "SPAWN_V0855_POKEMON_POLTEAGEIST_PHONY")]
     SpawnV0855PokemonPolteageistPhony,
     #[serde(rename = "SPAWN_V0856_POKEMON_HATENNA")]

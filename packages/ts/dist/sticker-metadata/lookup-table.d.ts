@@ -204,6 +204,9 @@ import type {
 	StickerMetadataGotourhoenn4,
 	StickerMetadataGotourhoenn5,
 	StickerMetadataGotourhoenn6,
+	StickerMetadataGowa20261,
+	StickerMetadataGowa20262,
+	StickerMetadataGowa20263,
 	StickerMetadataGowa202501,
 	StickerMetadataGowa202502,
 	StickerMetadataGowa202503,
@@ -840,6 +843,9 @@ export interface StickerMetadataLookup {
 	STICKER_GOWA2025_03: StickerMetadataGowa202503;
 	STICKER_GOWA2025_04: StickerMetadataGowa202504;
 	STICKER_GOWA2025_05: StickerMetadataGowa202505;
+	STICKER_GOWA2026_1: StickerMetadataGowa20261;
+	STICKER_GOWA2026_2: StickerMetadataGowa20262;
+	STICKER_GOWA2026_3: StickerMetadataGowa20263;
 	STICKER_GRUBBIN_1: StickerMetadataGrubbin1;
 	STICKER_GRUBBIN_2: StickerMetadataGrubbin2;
 	STICKER_GRUBBIN_3: StickerMetadataGrubbin3;

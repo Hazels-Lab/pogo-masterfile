@@ -8,6 +8,7 @@ export type LocationCardSettingsSafari2026Boston = S<
 		"LC_SAFARI_2026_BOSTON",
 		{
 			imageUrl: "lc_CitySafari2026_boston";
+			locationCard: "LC_SAFARI_2026_BOSTON";
 		}
 	>
 >;
@@ -16,6 +17,7 @@ export type LocationCardSettingsSafari2026Brisbane = S<
 		"LC_SAFARI_2026_BRISBANE",
 		{
 			imageUrl: "lc_CitySafari2026_brisbane";
+			locationCard: "LC_SAFARI_2026_BRISBANE";
 		}
 	>
 >;
@@ -24,6 +26,7 @@ export type LocationCardSettingsSafari2026Lisbon = S<
 		"LC_SAFARI_2026_LISBON",
 		{
 			imageUrl: "lc_CitySafari2026_lisbon";
+			locationCard: "LC_SAFARI_2026_LISBON";
 		}
 	>
 >;
@@ -32,6 +35,7 @@ export type LocationCardSettingsSafari2026Marseille = S<
 		"LC_SAFARI_2026_MARSEILLE",
 		{
 			imageUrl: "lc_CitySafari2026_marseille";
+			locationCard: "LC_SAFARI_2026_MARSEILLE";
 		}
 	>
 >;
@@ -40,6 +44,7 @@ export type LocationCardSettingsSafari2026Munich = S<
 		"LC_SAFARI_2026_MUNICH",
 		{
 			imageUrl: "lc_CitySafari2026_munich";
+			locationCard: "LC_SAFARI_2026_MUNICH";
 		}
 	>
 >;
@@ -48,6 +53,7 @@ export type LocationCardSettingsSafari2026Rdj = S<
 		"LC_SAFARI_2026_RDJ",
 		{
 			imageUrl: "lc_CitySafari2026_rio";
+			locationCard: "LC_SAFARI_2026_RDJ";
 		}
 	>
 >;

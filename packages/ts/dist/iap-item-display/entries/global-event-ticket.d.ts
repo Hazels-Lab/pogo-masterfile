@@ -1,42 +1,8 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 6 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 4 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
 
-export type IapItemDisplayEventPassMonth1SeasonStoreRedirect = S<
-	IapItemDisplay<
-		"EVENT_PASS_MONTH1_SEASON_STORE_REDIRECT",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			description: "deluxe_event_pass_track_unlock_description";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fb8786503_PGO-MCS_GO_Pass_September_2026_TICKET_v1-1024x576.jpg";
-			sku: "pgorelease.month1_deluxe_event_pass_track_redirect";
-			skuDisableTime: "2026-10-08T10:00:00";
-			skuDisableTimeUtcMs: "1791453600000";
-			skuEnableTime: "2025-06-02T10:00:00";
-			skuEnableTimeUtcMs: "1748858400000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_title_sep";
-		}
-	>
->;
-export type IapItemDisplayEventPassSeptember3EventStoreRedirect = S<
-	IapItemDisplay<
-		"EVENT_PASS_SEPTEMBER3_EVENT_STORE_REDIRECT",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F3cd7734c_PGO-MCS_Harvest_Festival_2026_TICKET_v1-1024x512_nologo.png";
-			sku: "pgorelease.september3_2026_deluxe_event_pass_track_unlock_redirect";
-			skuDisableTime: "2026-10-07T20:00:00";
-			skuDisableTimeUtcMs: "1791403200000";
-			skuEnableTime: "2025-09-29T10:00:00";
-			skuEnableTimeUtcMs: "1759140000000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_title_harvest_festival_2026";
-		}
-	>
->;
 export type IapItemDisplayGeneral1Ticket5 = S<
 	IapItemDisplay<
 		"general1.ticket.5",
@@ -63,7 +29,6 @@ export type IapItemDisplayGeneral2Ticket3 = S<
 		"general2.ticket.3",
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg";
 			sku: "pgorelease.general2.ticket.3";
 			skuDisableTime: "2026-10-10T17:00:00";
@@ -116,8 +81,6 @@ export type IapItemDisplayMonth2DeluxeEventPassTrackRedirect = S<
 >;
 
 export type IapItemDisplayGlobalEventTicketMasterfileEntry =
-	| IapItemDisplayEventPassMonth1SeasonStoreRedirect
-	| IapItemDisplayEventPassSeptember3EventStoreRedirect
 	| IapItemDisplayGeneral1Ticket5
 	| IapItemDisplayGeneral2Ticket3
 	| IapItemDisplayGeneral2Ticket11

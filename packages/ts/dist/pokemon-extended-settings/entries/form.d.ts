@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1173 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1177 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -683,6 +683,23 @@ export type PokemonExtendedSettingsV0040PokemonWigglytuffNormal = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0041PokemonZubatHalloween202601 = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0041_POKEMON_ZUBAT_HALLOWEEN_2026_01",
+		{
+			form: 3362;
+			sizeSettings: {
+				mLowerBound: 0.6;
+				mUpperBound: 1;
+				xlUpperBound: 1.2;
+				xsLowerBound: 0.4;
+				xxlUpperBound: 1.4;
+				xxsLowerBound: 0.392;
+			};
+			uniqueId: "ZUBAT";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0041PokemonZubatNormal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0041_POKEMON_ZUBAT_NORMAL",
@@ -697,6 +714,23 @@ export type PokemonExtendedSettingsV0041PokemonZubatNormal = S<
 				xxsLowerBound: 0.392;
 			};
 			uniqueId: "ZUBAT";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0042PokemonGolbatHalloween202601 = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0042_POKEMON_GOLBAT_HALLOWEEN_2026_01",
+		{
+			form: 3363;
+			sizeSettings: {
+				mLowerBound: 1.2;
+				mUpperBound: 2;
+				xlUpperBound: 2.4;
+				xsLowerBound: 0.8;
+				xxlUpperBound: 2.8;
+				xxsLowerBound: 0.784;
+			};
+			uniqueId: "GOLBAT";
 		}
 	>
 >;
@@ -2703,6 +2737,23 @@ export type PokemonExtendedSettingsV0168PokemonAriadosNormal = S<
 				xxsLowerBound: 0.5341;
 			};
 			uniqueId: "ARIADOS";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0169PokemonCrobatHalloween202601 = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0169_POKEMON_CROBAT_HALLOWEEN_2026_01",
+		{
+			form: 3364;
+			sizeSettings: {
+				mLowerBound: 1.35;
+				mUpperBound: 2.25;
+				xlUpperBound: 2.7;
+				xsLowerBound: 0.9;
+				xxlUpperBound: 3.15;
+				xxsLowerBound: 0.882;
+			};
+			uniqueId: "CROBAT";
 		}
 	>
 >;
@@ -8191,57 +8242,6 @@ export type PokemonExtendedSettingsV0479PokemonRotomWash = S<
 				xxsLowerBound: 0.147;
 			};
 			uniqueId: "ROTOM";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0480PokemonUxieNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0480_POKEMON_UXIE_NORMAL",
-		{
-			form: "UXIE_NORMAL";
-			sizeSettings: {
-				mLowerBound: 0.225;
-				mUpperBound: 0.375;
-				xlUpperBound: 0.45;
-				xsLowerBound: 0.15;
-				xxlUpperBound: 0.525;
-				xxsLowerBound: 0.147;
-			};
-			uniqueId: "UXIE";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0481PokemonMespritNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0481_POKEMON_MESPRIT_NORMAL",
-		{
-			form: "MESPRIT_NORMAL";
-			sizeSettings: {
-				mLowerBound: 0.225;
-				mUpperBound: 0.375;
-				xlUpperBound: 0.45;
-				xsLowerBound: 0.15;
-				xxlUpperBound: 0.525;
-				xxsLowerBound: 0.147;
-			};
-			uniqueId: "MESPRIT";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0482PokemonAzelfNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0482_POKEMON_AZELF_NORMAL",
-		{
-			form: "AZELF_NORMAL";
-			sizeSettings: {
-				mLowerBound: 0.225;
-				mUpperBound: 0.375;
-				xlUpperBound: 0.45;
-				xsLowerBound: 0.15;
-				xxlUpperBound: 0.525;
-				xxsLowerBound: 0.147;
-			};
-			uniqueId: "AZELF";
 		}
 	>
 >;
@@ -16915,11 +16915,45 @@ export type PokemonExtendedSettingsV0853PokemonGrapploctNormal = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0854PokemonSinisteaAHalloween202601 = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0854_POKEMON_SINISTEA_A_HALLOWEEN_2026_01",
+		{
+			form: 3366;
+			sizeSettings: {
+				mLowerBound: 0.075;
+				mUpperBound: 0.125;
+				xlUpperBound: 0.15;
+				xsLowerBound: 0.05;
+				xxlUpperBound: 0.175;
+				xxsLowerBound: 0.049;
+			};
+			uniqueId: "SINISTEA";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0854PokemonSinisteaAntique = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0854_POKEMON_SINISTEA_ANTIQUE",
 		{
 			form: "SINISTEA_ANTIQUE";
+			sizeSettings: {
+				mLowerBound: 0.075;
+				mUpperBound: 0.125;
+				xlUpperBound: 0.15;
+				xsLowerBound: 0.05;
+				xxlUpperBound: 0.175;
+				xxsLowerBound: 0.049;
+			};
+			uniqueId: "SINISTEA";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0854PokemonSinisteaPHalloween202601 = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0854_POKEMON_SINISTEA_P_HALLOWEEN_2026_01",
+		{
+			form: 3365;
 			sizeSettings: {
 				mLowerBound: 0.075;
 				mUpperBound: 0.125;
@@ -16949,11 +16983,45 @@ export type PokemonExtendedSettingsV0854PokemonSinisteaPhony = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0855PokemonPolteageistAHalloween202601 = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0855_POKEMON_POLTEAGEIST_A_HALLOWEEN_2026_01",
+		{
+			form: 3368;
+			sizeSettings: {
+				mLowerBound: 0.15;
+				mUpperBound: 0.25;
+				xlUpperBound: 0.3;
+				xsLowerBound: 0.1;
+				xxlUpperBound: 0.35;
+				xxsLowerBound: 0.098;
+			};
+			uniqueId: "POLTEAGEIST";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0855PokemonPolteageistAntique = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0855_POKEMON_POLTEAGEIST_ANTIQUE",
 		{
 			form: "POLTEAGEIST_ANTIQUE";
+			sizeSettings: {
+				mLowerBound: 0.15;
+				mUpperBound: 0.25;
+				xlUpperBound: 0.3;
+				xsLowerBound: 0.1;
+				xxlUpperBound: 0.35;
+				xxsLowerBound: 0.098;
+			};
+			uniqueId: "POLTEAGEIST";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0855PokemonPolteageistPHalloween202601 = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0855_POKEMON_POLTEAGEIST_P_HALLOWEEN_2026_01",
+		{
+			form: 3367;
 			sizeSettings: {
 				mLowerBound: 0.15;
 				mUpperBound: 0.25;
@@ -20136,7 +20204,9 @@ export type PokemonExtendedSettingsFormMasterfileEntry =
 	| PokemonExtendedSettingsV0038PokemonNinetalesNormal
 	| PokemonExtendedSettingsV0039PokemonJigglypuffNormal
 	| PokemonExtendedSettingsV0040PokemonWigglytuffNormal
+	| PokemonExtendedSettingsV0041PokemonZubatHalloween202601
 	| PokemonExtendedSettingsV0041PokemonZubatNormal
+	| PokemonExtendedSettingsV0042PokemonGolbatHalloween202601
 	| PokemonExtendedSettingsV0042PokemonGolbatNormal
 	| PokemonExtendedSettingsV0043PokemonOddishNormal
 	| PokemonExtendedSettingsV0044PokemonGloomNormal
@@ -20255,6 +20325,7 @@ export type PokemonExtendedSettingsFormMasterfileEntry =
 	| PokemonExtendedSettingsV0166PokemonLedianNormal
 	| PokemonExtendedSettingsV0167PokemonSpinarakNormal
 	| PokemonExtendedSettingsV0168PokemonAriadosNormal
+	| PokemonExtendedSettingsV0169PokemonCrobatHalloween202601
 	| PokemonExtendedSettingsV0169PokemonCrobatNormal
 	| PokemonExtendedSettingsV0170PokemonChinchouNormal
 	| PokemonExtendedSettingsV0171PokemonLanturnNormal
@@ -20575,9 +20646,6 @@ export type PokemonExtendedSettingsFormMasterfileEntry =
 	| PokemonExtendedSettingsV0479PokemonRotomMow
 	| PokemonExtendedSettingsV0479PokemonRotomNormal
 	| PokemonExtendedSettingsV0479PokemonRotomWash
-	| PokemonExtendedSettingsV0480PokemonUxieNormal
-	| PokemonExtendedSettingsV0481PokemonMespritNormal
-	| PokemonExtendedSettingsV0482PokemonAzelfNormal
 	| PokemonExtendedSettingsV0483PokemonDialgaNormal
 	| PokemonExtendedSettingsV0483PokemonDialgaOrigin
 	| PokemonExtendedSettingsV0484PokemonPalkiaNormal
@@ -21082,9 +21150,13 @@ export type PokemonExtendedSettingsFormMasterfileEntry =
 	| PokemonExtendedSettingsV0847PokemonBarraskewdaNormal
 	| PokemonExtendedSettingsV0852PokemonClobbopusNormal
 	| PokemonExtendedSettingsV0853PokemonGrapploctNormal
+	| PokemonExtendedSettingsV0854PokemonSinisteaAHalloween202601
 	| PokemonExtendedSettingsV0854PokemonSinisteaAntique
+	| PokemonExtendedSettingsV0854PokemonSinisteaPHalloween202601
 	| PokemonExtendedSettingsV0854PokemonSinisteaPhony
+	| PokemonExtendedSettingsV0855PokemonPolteageistAHalloween202601
 	| PokemonExtendedSettingsV0855PokemonPolteageistAntique
+	| PokemonExtendedSettingsV0855PokemonPolteageistPHalloween202601
 	| PokemonExtendedSettingsV0855PokemonPolteageistPhony
 	| PokemonExtendedSettingsV0859PokemonImpidimpNormal
 	| PokemonExtendedSettingsV0860PokemonMorgremNormal

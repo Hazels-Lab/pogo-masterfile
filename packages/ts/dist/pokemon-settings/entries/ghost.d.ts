@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonSettings", split "ghost", 88 entries.
+// Generated from Pokémon GO masterfile — group "pokemonSettings", split "ghost", 92 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonSettings } from "../types";
@@ -5465,6 +5465,70 @@ export type PokemonSettingsV0854PokemonSinistea = S<
 		}
 	>
 >;
+export type PokemonSettingsV0854PokemonSinisteaAHalloween202601 = S<
+	PokemonSettings<
+		"V0854_POKEMON_SINISTEA_A_HALLOWEEN_2026_01",
+		{
+			breadTierGroup: "GROUP_2";
+			buddyGroupNumber: 2;
+			buddyOffsetFemale: [0, 0, 0];
+			buddyOffsetMale: [0, 0, 0];
+			buddyPortraitOffset: [0, 100, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderGroundM: 0.1;
+				cylinderHeightM: 0.2;
+				cylinderRadiusM: 0.2;
+			};
+			cinematicMoves: ["SHADOW_BALL", "DARK_PULSE", "PSYCHIC"];
+			encounter: {
+				attackProbability: 0.3;
+				cameraDistance: 4;
+				collisionHeadRadiusM: 0.1;
+				collisionHeightM: 0.1;
+				collisionRadiusM: 0.15;
+				dodgeDistance: 0.5;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.15;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementType: "MOVEMENT_HOVERING";
+			};
+			evolutionBranch: [
+				{
+					candyCost: 400;
+					evolution: "POLTEAGEIST";
+					form: 3368;
+				},
+			];
+			familyId: "FAMILY_SINISTEA";
+			form: 3366;
+			heightStdDev: 0.0125;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 3;
+			modelHeight: 1.38;
+			modelScaleV2: 2.45;
+			pokedexHeightM: 0.1;
+			pokedexWeightKg: 0.2;
+			pokemonId: "SINISTEA";
+			quickMoves: ["ASTONISH_FAST", "SUCKER_PUNCH_FAST"];
+			stats: {
+				baseAttack: 134;
+				baseDefense: 96;
+				baseStamina: 120;
+			};
+			thirdMove: {
+				candyToUnlock: 50;
+				stardustToUnlock: 50000;
+			};
+			type: "POKEMON_TYPE_GHOST";
+			weightStdDev: 0.025;
+		}
+	>
+>;
 export type PokemonSettingsV0854PokemonSinisteaAntique = S<
 	PokemonSettings<
 		"V0854_POKEMON_SINISTEA_ANTIQUE",
@@ -5502,6 +5566,70 @@ export type PokemonSettingsV0854PokemonSinisteaAntique = S<
 			];
 			familyId: "FAMILY_SINISTEA";
 			form: "SINISTEA_ANTIQUE";
+			heightStdDev: 0.0125;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 3;
+			modelHeight: 1.38;
+			modelScaleV2: 2.45;
+			pokedexHeightM: 0.1;
+			pokedexWeightKg: 0.2;
+			pokemonId: "SINISTEA";
+			quickMoves: ["ASTONISH_FAST", "SUCKER_PUNCH_FAST"];
+			stats: {
+				baseAttack: 134;
+				baseDefense: 96;
+				baseStamina: 120;
+			};
+			thirdMove: {
+				candyToUnlock: 50;
+				stardustToUnlock: 50000;
+			};
+			type: "POKEMON_TYPE_GHOST";
+			weightStdDev: 0.025;
+		}
+	>
+>;
+export type PokemonSettingsV0854PokemonSinisteaPHalloween202601 = S<
+	PokemonSettings<
+		"V0854_POKEMON_SINISTEA_P_HALLOWEEN_2026_01",
+		{
+			breadTierGroup: "GROUP_2";
+			buddyGroupNumber: 2;
+			buddyOffsetFemale: [0, 0, 0];
+			buddyOffsetMale: [0, 0, 0];
+			buddyPortraitOffset: [0, 100, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderGroundM: 0.1;
+				cylinderHeightM: 0.2;
+				cylinderRadiusM: 0.2;
+			};
+			cinematicMoves: ["SHADOW_BALL", "DARK_PULSE", "PSYCHIC"];
+			encounter: {
+				attackProbability: 0.3;
+				cameraDistance: 4;
+				collisionHeadRadiusM: 0.1;
+				collisionHeightM: 0.1;
+				collisionRadiusM: 0.15;
+				dodgeDistance: 0.5;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.15;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementType: "MOVEMENT_HOVERING";
+			};
+			evolutionBranch: [
+				{
+					candyCost: 50;
+					evolution: "POLTEAGEIST";
+					form: 3367;
+				},
+			];
+			familyId: "FAMILY_SINISTEA";
+			form: 3365;
 			heightStdDev: 0.0125;
 			ibfc: object;
 			isDeployable: true;
@@ -5650,6 +5778,66 @@ export type PokemonSettingsV0855PokemonPolteageist = S<
 		}
 	>
 >;
+export type PokemonSettingsV0855PokemonPolteageistAHalloween202601 = S<
+	PokemonSettings<
+		"V0855_POKEMON_POLTEAGEIST_A_HALLOWEEN_2026_01",
+		{
+			breadTierGroup: "GROUP_2";
+			buddyGroupNumber: 2;
+			buddyOffsetFemale: [0, 0, 0];
+			buddyOffsetMale: [0, 0, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderGroundM: 0.1;
+				cylinderHeightM: 0.4;
+				cylinderRadiusM: 0.3;
+			};
+			cinematicMoves: ["SHADOW_BALL", "DARK_PULSE", "PSYCHIC"];
+			encounter: {
+				attackProbability: 0.1;
+				bonusCandyCaptureReward: 2;
+				bonusStardustCaptureReward: 200;
+				bonusXlCandyCaptureReward: 1;
+				cameraDistance: 4;
+				collisionHeadRadiusM: 0.1;
+				collisionHeightM: 0.2;
+				collisionRadiusM: 0.2;
+				dodgeDistance: 0.5;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.15;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementType: "MOVEMENT_HOVERING";
+			};
+			familyId: "FAMILY_SINISTEA";
+			form: 3368;
+			heightStdDev: 0.025;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 3;
+			modelHeight: 1;
+			modelScaleV2: 1.22;
+			parentPokemonId: "SINISTEA";
+			pokedexHeightM: 0.2;
+			pokedexWeightKg: 0.4;
+			pokemonId: "POLTEAGEIST";
+			quickMoves: ["ASTONISH_FAST", "SUCKER_PUNCH_FAST", "HEX_FAST"];
+			stats: {
+				baseAttack: 248;
+				baseDefense: 189;
+				baseStamina: 155;
+			};
+			thirdMove: {
+				candyToUnlock: 50;
+				stardustToUnlock: 50000;
+			};
+			type: "POKEMON_TYPE_GHOST";
+			weightStdDev: 0.05;
+		}
+	>
+>;
 export type PokemonSettingsV0855PokemonPolteageistAntique = S<
 	PokemonSettings<
 		"V0855_POKEMON_POLTEAGEIST_ANTIQUE",
@@ -5683,6 +5871,66 @@ export type PokemonSettingsV0855PokemonPolteageistAntique = S<
 			};
 			familyId: "FAMILY_SINISTEA";
 			form: "POLTEAGEIST_ANTIQUE";
+			heightStdDev: 0.025;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 3;
+			modelHeight: 1;
+			modelScaleV2: 1.22;
+			parentPokemonId: "SINISTEA";
+			pokedexHeightM: 0.2;
+			pokedexWeightKg: 0.4;
+			pokemonId: "POLTEAGEIST";
+			quickMoves: ["ASTONISH_FAST", "SUCKER_PUNCH_FAST", "HEX_FAST"];
+			stats: {
+				baseAttack: 248;
+				baseDefense: 189;
+				baseStamina: 155;
+			};
+			thirdMove: {
+				candyToUnlock: 50;
+				stardustToUnlock: 50000;
+			};
+			type: "POKEMON_TYPE_GHOST";
+			weightStdDev: 0.05;
+		}
+	>
+>;
+export type PokemonSettingsV0855PokemonPolteageistPHalloween202601 = S<
+	PokemonSettings<
+		"V0855_POKEMON_POLTEAGEIST_P_HALLOWEEN_2026_01",
+		{
+			breadTierGroup: "GROUP_2";
+			buddyGroupNumber: 2;
+			buddyOffsetFemale: [0, 0, 0];
+			buddyOffsetMale: [0, 0, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderGroundM: 0.1;
+				cylinderHeightM: 0.4;
+				cylinderRadiusM: 0.3;
+			};
+			cinematicMoves: ["SHADOW_BALL", "DARK_PULSE", "PSYCHIC"];
+			encounter: {
+				attackProbability: 0.1;
+				bonusCandyCaptureReward: 2;
+				bonusStardustCaptureReward: 200;
+				bonusXlCandyCaptureReward: 1;
+				cameraDistance: 4;
+				collisionHeadRadiusM: 0.1;
+				collisionHeightM: 0.2;
+				collisionRadiusM: 0.2;
+				dodgeDistance: 0.5;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.15;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementType: "MOVEMENT_HOVERING";
+			};
+			familyId: "FAMILY_SINISTEA";
+			form: 3367;
 			heightStdDev: 0.025;
 			ibfc: object;
 			isDeployable: true;
@@ -6672,10 +6920,14 @@ export type PokemonSettingsGhostMasterfileEntry =
 	| PokemonSettingsV0781PokemonDhelmise
 	| PokemonSettingsV0781PokemonDhelmiseNormal
 	| PokemonSettingsV0854PokemonSinistea
+	| PokemonSettingsV0854PokemonSinisteaAHalloween202601
 	| PokemonSettingsV0854PokemonSinisteaAntique
+	| PokemonSettingsV0854PokemonSinisteaPHalloween202601
 	| PokemonSettingsV0854PokemonSinisteaPhony
 	| PokemonSettingsV0855PokemonPolteageist
+	| PokemonSettingsV0855PokemonPolteageistAHalloween202601
 	| PokemonSettingsV0855PokemonPolteageistAntique
+	| PokemonSettingsV0855PokemonPolteageistPHalloween202601
 	| PokemonSettingsV0855PokemonPolteageistPhony
 	| PokemonSettingsV0864PokemonCursola
 	| PokemonSettingsV0864PokemonCursolaNormal

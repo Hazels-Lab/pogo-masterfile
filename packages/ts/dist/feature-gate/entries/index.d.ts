@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 35 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 41 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -7,7 +7,6 @@ export type FeatureGateAcForegroundCatchEncounter = S<
 	FeatureGate<
 		"AC_FOREGROUND_CATCH_ENCOUNTER_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1284637195;
 		}
 	>
@@ -16,7 +15,6 @@ export type FeatureGateAcForegroundCatchMapFocus = S<
 	FeatureGate<
 		"AC_FOREGROUND_CATCH_MAP_FOCUS_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 471823352;
 		}
 	>
@@ -25,7 +23,6 @@ export type FeatureGateAcForegroundCatchPoiFocus = S<
 	FeatureGate<
 		"AC_FOREGROUND_CATCH_POI_FOCUS_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 812739461;
 		}
 	>
@@ -34,7 +31,6 @@ export type FeatureGateAdminGmNiaOpsOnlyFilterAms = S<
 	FeatureGate<
 		"ADMIN_GM_NIA_OPS_ONLY_FILTER_AMS_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -43,7 +39,6 @@ export type FeatureGateAdvSyncTwo = S<
 	FeatureGate<
 		"ADV_SYNC_TWO_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 952347117;
 		}
 	>
@@ -52,7 +47,6 @@ export type FeatureGateAms = S<
 	FeatureGate<
 		"AMS_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 24;
 		}
 	>
@@ -61,7 +55,6 @@ export type FeatureGateAmsFrontend = S<
 	FeatureGate<
 		"AMS_FRONTEND_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -70,7 +63,6 @@ export type FeatureGateCombatSuppressFastMovePredictionsOnSwap = S<
 	FeatureGate<
 		"COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 2;
 		}
 	>
@@ -79,8 +71,23 @@ export type FeatureGateCombatVnextInitializeBdLast = S<
 	FeatureGate<
 		"COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
+		}
+	>
+>;
+export type FeatureGateCombineCompassAndWeather = S<
+	FeatureGate<
+		"COMBINE_COMPASS_AND_WEATHER_FEATURE_GATE",
+		{
+			status: 2059828614;
+		}
+	>
+>;
+export type FeatureGateDailyEncounterGenerationContext = S<
+	FeatureGate<
+		"DAILY_ENCOUNTER_GENERATION_CONTEXT_FEATURE_GATE",
+		{
+			status: 2;
 		}
 	>
 >;
@@ -88,7 +95,6 @@ export type FeatureGateDisableLegacyNearbyPokemon = S<
 	FeatureGate<
 		"DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -97,7 +103,6 @@ export type FeatureGateEnableNearbyPokemonSnapshot = S<
 	FeatureGate<
 		"ENABLE_NEARBY_POKEMON_SNAPSHOT_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -106,7 +111,6 @@ export type FeatureGateEnablePvpChallengeSpanner = S<
 	FeatureGate<
 		"ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -115,7 +119,6 @@ export type FeatureGateEnhancedCurrencyOverflowStardust = S<
 	FeatureGate<
 		"ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -124,7 +127,6 @@ export type FeatureGateEventPassBonusMilestoneSeparation = S<
 	FeatureGate<
 		"EVENT_PASS_BONUS_MILESTONE_SEPARATION_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -133,7 +135,6 @@ export type FeatureGateEventPassBonusRanks = S<
 	FeatureGate<
 		"EVENT_PASS_BONUS_RANKS_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -142,7 +143,6 @@ export type FeatureGateEventPassClaimableRewardToggle = S<
 	FeatureGate<
 		"EVENT_PASS_CLAIMABLE_REWARD_TOGGLE_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -151,7 +151,6 @@ export type FeatureGateEventPassMilestoneRewards = S<
 	FeatureGate<
 		"EVENT_PASS_MILESTONE_REWARDS_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -160,7 +159,6 @@ export type FeatureGateEventTicketDatetimeRange = S<
 	FeatureGate<
 		"EVENT_TICKET_DATETIME_RANGE_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
 			subFeatureGateList: [
 				{
@@ -176,7 +174,6 @@ export type FeatureGateFortStableDataDiffing = S<
 	FeatureGate<
 		"FORT_STABLE_DATA_DIFFING_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -185,7 +182,6 @@ export type FeatureGateFriendshipResyncOnRead = S<
 	FeatureGate<
 		"FRIENDSHIP_RESYNC_ON_READ_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -194,7 +190,6 @@ export type FeatureGateGamesiteWebviewNearbyButtons = S<
 	FeatureGate<
 		"GAMESITE_WEBVIEW_NEARBY_BUTTONS_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
 			subFeatureGateList: [
 				{
@@ -220,7 +215,6 @@ export type FeatureGateGetGmtAnalysisForPlayer = S<
 	FeatureGate<
 		"GET_GMT_ANALYSIS_FOR_PLAYER_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -229,7 +223,6 @@ export type FeatureGateGmoWildPokemonS2Location = S<
 	FeatureGate<
 		"GMO_WILD_POKEMON_S2_LOCATION_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -238,7 +231,6 @@ export type FeatureGateGmoWildPokemonS2LocationServer = S<
 	FeatureGate<
 		"GMO_WILD_POKEMON_S2_LOCATION_SERVER_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -247,7 +239,6 @@ export type FeatureGateHideCampfireMapButtons = S<
 	FeatureGate<
 		"HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -256,7 +247,6 @@ export type FeatureGateLuckyTradeNewStrings = S<
 	FeatureGate<
 		"LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1284637195;
 		}
 	>
@@ -265,7 +255,6 @@ export type FeatureGateMeetupReminderNotifications = S<
 	FeatureGate<
 		"MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 2084830192;
 		}
 	>
@@ -274,7 +263,6 @@ export type FeatureGateMepEggReadMigration = S<
 	FeatureGate<
 		"MEP_EGG_READ_MIGRATION_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 13;
 		}
 	>
@@ -283,8 +271,23 @@ export type FeatureGateMepEggWriteMigration = S<
 	FeatureGate<
 		"MEP_EGG_WRITE_MIGRATION_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 12;
+		}
+	>
+>;
+export type FeatureGateMichelinMapLureBottomRingRemoval = S<
+	FeatureGate<
+		"MICHELIN_MAP_LURE_BOTTOM_RING_REMOVAL_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateMichelinMapZygardeCellReward = S<
+	FeatureGate<
+		"MICHELIN_MAP_ZYGARDE_CELL_REWARD_FEATURE_GATE",
+		{
+			status: 58439049;
 		}
 	>
 >;
@@ -292,7 +295,6 @@ export type FeatureGatePokemonSpawnAvoidanceRework = S<
 	FeatureGate<
 		"POKEMON_SPAWN_AVOIDANCE_REWORK_FEATURE_GATE",
 		{
-			rolloutPercentage: 30;
 			status: 67485911;
 		}
 	>
@@ -301,7 +303,6 @@ export type FeatureGateRegisterDevice = S<
 	FeatureGate<
 		"REGISTER_DEVICE_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -310,7 +311,6 @@ export type FeatureGateRemoteTradeImprovements = S<
 	FeatureGate<
 		"REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1284637195;
 		}
 	>
@@ -319,8 +319,30 @@ export type FeatureGateSeafGetMapObjectsRateLimiter = S<
 	FeatureGate<
 		"SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
+		}
+	>
+>;
+export type FeatureGateTransfer = S<
+	FeatureGate<
+		"TRANSFER_FEATURE_GATE",
+		{
+			status: 899172904;
+		}
+	>
+>;
+export type FeatureGateVnextFastAttackInputType = S<
+	FeatureGate<
+		"VNEXT_FAST_ATTACK_INPUT_TYPE_FEATURE_GATE",
+		{
+			status: 1;
+			subFeatureGateList: [
+				{
+					name: "COMBAT";
+					rolloutPercentage: 100;
+					status: 2;
+				},
+			];
 		}
 	>
 >;
@@ -328,7 +350,6 @@ export type FeatureGateVnextPreResponseInputBlockingBehavior = S<
 	FeatureGate<
 		"VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
 			subFeatureGateList: [
 				{
@@ -344,7 +365,6 @@ export type FeatureGateWayfarerSubmitLinkout = S<
 	FeatureGate<
 		"WAYFARER_SUBMIT_LINKOUT_FEATURE_GATE",
 		{
-			rolloutPercentage: 100;
 			status: 1;
 		}
 	>
@@ -360,6 +380,8 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateAmsFrontend
 	| FeatureGateCombatSuppressFastMovePredictionsOnSwap
 	| FeatureGateCombatVnextInitializeBdLast
+	| FeatureGateCombineCompassAndWeather
+	| FeatureGateDailyEncounterGenerationContext
 	| FeatureGateDisableLegacyNearbyPokemon
 	| FeatureGateEnableNearbyPokemonSnapshot
 	| FeatureGateEnablePvpChallengeSpanner
@@ -380,10 +402,14 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateMeetupReminderNotifications
 	| FeatureGateMepEggReadMigration
 	| FeatureGateMepEggWriteMigration
+	| FeatureGateMichelinMapLureBottomRingRemoval
+	| FeatureGateMichelinMapZygardeCellReward
 	| FeatureGatePokemonSpawnAvoidanceRework
 	| FeatureGateRegisterDevice
 	| FeatureGateRemoteTradeImprovements
 	| FeatureGateSeafGetMapObjectsRateLimiter
+	| FeatureGateTransfer
+	| FeatureGateVnextFastAttackInputType
 	| FeatureGateVnextPreResponseInputBlockingBehavior
 	| FeatureGateWayfarerSubmitLinkout;
 
