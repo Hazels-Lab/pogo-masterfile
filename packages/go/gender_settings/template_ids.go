@@ -112,6 +112,7 @@ const (
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuGotour2026B02               GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_B_02"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuGotour2026C                 GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_C"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuGotour2026C02               GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_GOTOUR_2026_C_02"
+	GenderSettingsTemplateIDSpawnV0025PokemonPikachuHalloween2026               GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_HALLOWEEN_2026"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuHorizons                    GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_HORIZONS"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuJeju                        GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_JEJU"
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuK2026A01                    GenderSettingsTemplateID = "SPAWN_V0025_POKEMON_PIKACHU_K_2026_A_01"
@@ -173,8 +174,10 @@ const (
 	GenderSettingsTemplateIDSpawnV0040PokemonWigglytuff                         GenderSettingsTemplateID = "SPAWN_V0040_POKEMON_WIGGLYTUFF"
 	GenderSettingsTemplateIDSpawnV0040PokemonWigglytuffNormal                   GenderSettingsTemplateID = "SPAWN_V0040_POKEMON_WIGGLYTUFF_NORMAL"
 	GenderSettingsTemplateIDSpawnV0041PokemonZubat                              GenderSettingsTemplateID = "SPAWN_V0041_POKEMON_ZUBAT"
+	GenderSettingsTemplateIDSpawnV0041PokemonZubatHalloween202601               GenderSettingsTemplateID = "SPAWN_V0041_POKEMON_ZUBAT_HALLOWEEN_2026_01"
 	GenderSettingsTemplateIDSpawnV0041PokemonZubatNormal                        GenderSettingsTemplateID = "SPAWN_V0041_POKEMON_ZUBAT_NORMAL"
 	GenderSettingsTemplateIDSpawnV0042PokemonGolbat                             GenderSettingsTemplateID = "SPAWN_V0042_POKEMON_GOLBAT"
+	GenderSettingsTemplateIDSpawnV0042PokemonGolbatHalloween202601              GenderSettingsTemplateID = "SPAWN_V0042_POKEMON_GOLBAT_HALLOWEEN_2026_01"
 	GenderSettingsTemplateIDSpawnV0042PokemonGolbatNormal                       GenderSettingsTemplateID = "SPAWN_V0042_POKEMON_GOLBAT_NORMAL"
 	GenderSettingsTemplateIDSpawnV0043PokemonOddish                             GenderSettingsTemplateID = "SPAWN_V0043_POKEMON_ODDISH"
 	GenderSettingsTemplateIDSpawnV0043PokemonOddishNormal                       GenderSettingsTemplateID = "SPAWN_V0043_POKEMON_ODDISH_NORMAL"
@@ -472,6 +475,7 @@ const (
 	GenderSettingsTemplateIDSpawnV0168PokemonAriados                            GenderSettingsTemplateID = "SPAWN_V0168_POKEMON_ARIADOS"
 	GenderSettingsTemplateIDSpawnV0168PokemonAriadosNormal                      GenderSettingsTemplateID = "SPAWN_V0168_POKEMON_ARIADOS_NORMAL"
 	GenderSettingsTemplateIDSpawnV0169PokemonCrobat                             GenderSettingsTemplateID = "SPAWN_V0169_POKEMON_CROBAT"
+	GenderSettingsTemplateIDSpawnV0169PokemonCrobatHalloween202601              GenderSettingsTemplateID = "SPAWN_V0169_POKEMON_CROBAT_HALLOWEEN_2026_01"
 	GenderSettingsTemplateIDSpawnV0169PokemonCrobatNormal                       GenderSettingsTemplateID = "SPAWN_V0169_POKEMON_CROBAT_NORMAL"
 	GenderSettingsTemplateIDSpawnV0170PokemonChinchou                           GenderSettingsTemplateID = "SPAWN_V0170_POKEMON_CHINCHOU"
 	GenderSettingsTemplateIDSpawnV0170PokemonChinchouNormal                     GenderSettingsTemplateID = "SPAWN_V0170_POKEMON_CHINCHOU_NORMAL"
@@ -2127,10 +2131,14 @@ const (
 	GenderSettingsTemplateIDSpawnV0853PokemonGrapploct                          GenderSettingsTemplateID = "SPAWN_V0853_POKEMON_GRAPPLOCT"
 	GenderSettingsTemplateIDSpawnV0853PokemonGrapploctNormal                    GenderSettingsTemplateID = "SPAWN_V0853_POKEMON_GRAPPLOCT_NORMAL"
 	GenderSettingsTemplateIDSpawnV0854PokemonSinistea                           GenderSettingsTemplateID = "SPAWN_V0854_POKEMON_SINISTEA"
+	GenderSettingsTemplateIDSpawnV0854PokemonSinisteaAHalloween202601           GenderSettingsTemplateID = "SPAWN_V0854_POKEMON_SINISTEA_A_HALLOWEEN_2026_01"
 	GenderSettingsTemplateIDSpawnV0854PokemonSinisteaAntique                    GenderSettingsTemplateID = "SPAWN_V0854_POKEMON_SINISTEA_ANTIQUE"
+	GenderSettingsTemplateIDSpawnV0854PokemonSinisteaPHalloween202601           GenderSettingsTemplateID = "SPAWN_V0854_POKEMON_SINISTEA_P_HALLOWEEN_2026_01"
 	GenderSettingsTemplateIDSpawnV0854PokemonSinisteaPhony                      GenderSettingsTemplateID = "SPAWN_V0854_POKEMON_SINISTEA_PHONY"
 	GenderSettingsTemplateIDSpawnV0855PokemonPolteageist                        GenderSettingsTemplateID = "SPAWN_V0855_POKEMON_POLTEAGEIST"
+	GenderSettingsTemplateIDSpawnV0855PokemonPolteageistAHalloween202601        GenderSettingsTemplateID = "SPAWN_V0855_POKEMON_POLTEAGEIST_A_HALLOWEEN_2026_01"
 	GenderSettingsTemplateIDSpawnV0855PokemonPolteageistAntique                 GenderSettingsTemplateID = "SPAWN_V0855_POKEMON_POLTEAGEIST_ANTIQUE"
+	GenderSettingsTemplateIDSpawnV0855PokemonPolteageistPHalloween202601        GenderSettingsTemplateID = "SPAWN_V0855_POKEMON_POLTEAGEIST_P_HALLOWEEN_2026_01"
 	GenderSettingsTemplateIDSpawnV0855PokemonPolteageistPhony                   GenderSettingsTemplateID = "SPAWN_V0855_POKEMON_POLTEAGEIST_PHONY"
 	GenderSettingsTemplateIDSpawnV0856PokemonHatenna                            GenderSettingsTemplateID = "SPAWN_V0856_POKEMON_HATENNA"
 	GenderSettingsTemplateIDSpawnV0856PokemonHatennaNormal                      GenderSettingsTemplateID = "SPAWN_V0856_POKEMON_HATENNA_NORMAL"
@@ -2606,6 +2614,7 @@ var GenderSettingsTemplateIDValues = [...]GenderSettingsTemplateID{
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuGotour2026B02,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuGotour2026C,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuGotour2026C02,
+	GenderSettingsTemplateIDSpawnV0025PokemonPikachuHalloween2026,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuHorizons,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuJeju,
 	GenderSettingsTemplateIDSpawnV0025PokemonPikachuK2026A01,
@@ -2667,8 +2676,10 @@ var GenderSettingsTemplateIDValues = [...]GenderSettingsTemplateID{
 	GenderSettingsTemplateIDSpawnV0040PokemonWigglytuff,
 	GenderSettingsTemplateIDSpawnV0040PokemonWigglytuffNormal,
 	GenderSettingsTemplateIDSpawnV0041PokemonZubat,
+	GenderSettingsTemplateIDSpawnV0041PokemonZubatHalloween202601,
 	GenderSettingsTemplateIDSpawnV0041PokemonZubatNormal,
 	GenderSettingsTemplateIDSpawnV0042PokemonGolbat,
+	GenderSettingsTemplateIDSpawnV0042PokemonGolbatHalloween202601,
 	GenderSettingsTemplateIDSpawnV0042PokemonGolbatNormal,
 	GenderSettingsTemplateIDSpawnV0043PokemonOddish,
 	GenderSettingsTemplateIDSpawnV0043PokemonOddishNormal,
@@ -2966,6 +2977,7 @@ var GenderSettingsTemplateIDValues = [...]GenderSettingsTemplateID{
 	GenderSettingsTemplateIDSpawnV0168PokemonAriados,
 	GenderSettingsTemplateIDSpawnV0168PokemonAriadosNormal,
 	GenderSettingsTemplateIDSpawnV0169PokemonCrobat,
+	GenderSettingsTemplateIDSpawnV0169PokemonCrobatHalloween202601,
 	GenderSettingsTemplateIDSpawnV0169PokemonCrobatNormal,
 	GenderSettingsTemplateIDSpawnV0170PokemonChinchou,
 	GenderSettingsTemplateIDSpawnV0170PokemonChinchouNormal,
@@ -4621,10 +4633,14 @@ var GenderSettingsTemplateIDValues = [...]GenderSettingsTemplateID{
 	GenderSettingsTemplateIDSpawnV0853PokemonGrapploct,
 	GenderSettingsTemplateIDSpawnV0853PokemonGrapploctNormal,
 	GenderSettingsTemplateIDSpawnV0854PokemonSinistea,
+	GenderSettingsTemplateIDSpawnV0854PokemonSinisteaAHalloween202601,
 	GenderSettingsTemplateIDSpawnV0854PokemonSinisteaAntique,
+	GenderSettingsTemplateIDSpawnV0854PokemonSinisteaPHalloween202601,
 	GenderSettingsTemplateIDSpawnV0854PokemonSinisteaPhony,
 	GenderSettingsTemplateIDSpawnV0855PokemonPolteageist,
+	GenderSettingsTemplateIDSpawnV0855PokemonPolteageistAHalloween202601,
 	GenderSettingsTemplateIDSpawnV0855PokemonPolteageistAntique,
+	GenderSettingsTemplateIDSpawnV0855PokemonPolteageistPHalloween202601,
 	GenderSettingsTemplateIDSpawnV0855PokemonPolteageistPhony,
 	GenderSettingsTemplateIDSpawnV0856PokemonHatenna,
 	GenderSettingsTemplateIDSpawnV0856PokemonHatennaNormal,

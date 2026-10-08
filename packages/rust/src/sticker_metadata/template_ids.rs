@@ -423,6 +423,12 @@ pub enum StickerMetadataTemplateId {
     StickerGowa202504,
     #[serde(rename = "STICKER_GOWA2025_05")]
     StickerGowa202505,
+    #[serde(rename = "STICKER_GOWA2026_1")]
+    StickerGowa20261,
+    #[serde(rename = "STICKER_GOWA2026_2")]
+    StickerGowa20262,
+    #[serde(rename = "STICKER_GOWA2026_3")]
+    StickerGowa20263,
     #[serde(rename = "STICKER_GRUBBIN_1")]
     StickerGrubbin1,
     #[serde(rename = "STICKER_GRUBBIN_2")]

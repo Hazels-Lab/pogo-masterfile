@@ -137,6 +137,8 @@ pub enum PokemonExtendedSettingsTemplateId {
     ExtendedV0025PikachuAnniversary2026Taiwan01,
     #[serde(rename = "EXTENDED_V0025_PIKACHU_GLASS_HELMET_2026")]
     ExtendedV0025PikachuGlassHelmet2026,
+    #[serde(rename = "EXTENDED_V0025_PIKACHU_HALLOWEEN_2026")]
+    ExtendedV0025PikachuHalloween2026,
     #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU")]
     ExtendedV0025PokemonPikachu,
     #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_ADVENTURE_HAT_2020")]
@@ -343,10 +345,14 @@ pub enum PokemonExtendedSettingsTemplateId {
     ExtendedV0040PokemonWigglytuffNormal,
     #[serde(rename = "EXTENDED_V0041_POKEMON_ZUBAT")]
     ExtendedV0041PokemonZubat,
+    #[serde(rename = "EXTENDED_V0041_POKEMON_ZUBAT_HALLOWEEN_2026_01")]
+    ExtendedV0041PokemonZubatHalloween202601,
     #[serde(rename = "EXTENDED_V0041_POKEMON_ZUBAT_NORMAL")]
     ExtendedV0041PokemonZubatNormal,
     #[serde(rename = "EXTENDED_V0042_POKEMON_GOLBAT")]
     ExtendedV0042PokemonGolbat,
+    #[serde(rename = "EXTENDED_V0042_POKEMON_GOLBAT_HALLOWEEN_2026_01")]
+    ExtendedV0042PokemonGolbatHalloween202601,
     #[serde(rename = "EXTENDED_V0042_POKEMON_GOLBAT_NORMAL")]
     ExtendedV0042PokemonGolbatNormal,
     #[serde(rename = "EXTENDED_V0043_POKEMON_ODDISH")]
@@ -941,6 +947,8 @@ pub enum PokemonExtendedSettingsTemplateId {
     ExtendedV0168PokemonAriadosNormal,
     #[serde(rename = "EXTENDED_V0169_POKEMON_CROBAT")]
     ExtendedV0169PokemonCrobat,
+    #[serde(rename = "EXTENDED_V0169_POKEMON_CROBAT_HALLOWEEN_2026_01")]
+    ExtendedV0169PokemonCrobatHalloween202601,
     #[serde(rename = "EXTENDED_V0169_POKEMON_CROBAT_NORMAL")]
     ExtendedV0169PokemonCrobatNormal,
     #[serde(rename = "EXTENDED_V0170_POKEMON_CHINCHOU")]
@@ -4235,14 +4243,22 @@ pub enum PokemonExtendedSettingsTemplateId {
     ExtendedV0853PokemonGrapploctNormal,
     #[serde(rename = "EXTENDED_V0854_POKEMON_SINISTEA")]
     ExtendedV0854PokemonSinistea,
+    #[serde(rename = "EXTENDED_V0854_POKEMON_SINISTEA_A_HALLOWEEN_2026_01")]
+    ExtendedV0854PokemonSinisteaAHalloween202601,
     #[serde(rename = "EXTENDED_V0854_POKEMON_SINISTEA_ANTIQUE")]
     ExtendedV0854PokemonSinisteaAntique,
+    #[serde(rename = "EXTENDED_V0854_POKEMON_SINISTEA_P_HALLOWEEN_2026_01")]
+    ExtendedV0854PokemonSinisteaPHalloween202601,
     #[serde(rename = "EXTENDED_V0854_POKEMON_SINISTEA_PHONY")]
     ExtendedV0854PokemonSinisteaPhony,
     #[serde(rename = "EXTENDED_V0855_POKEMON_POLTEAGEIST")]
     ExtendedV0855PokemonPolteageist,
+    #[serde(rename = "EXTENDED_V0855_POKEMON_POLTEAGEIST_A_HALLOWEEN_2026_01")]
+    ExtendedV0855PokemonPolteageistAHalloween202601,
     #[serde(rename = "EXTENDED_V0855_POKEMON_POLTEAGEIST_ANTIQUE")]
     ExtendedV0855PokemonPolteageistAntique,
+    #[serde(rename = "EXTENDED_V0855_POKEMON_POLTEAGEIST_P_HALLOWEEN_2026_01")]
+    ExtendedV0855PokemonPolteageistPHalloween202601,
     #[serde(rename = "EXTENDED_V0855_POKEMON_POLTEAGEIST_PHONY")]
     ExtendedV0855PokemonPolteageistPhony,
     #[serde(rename = "EXTENDED_V0856_POKEMON_HATENNA")]

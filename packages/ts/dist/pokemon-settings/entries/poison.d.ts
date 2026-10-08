@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonSettings", split "poison", 93 entries.
+// Generated from Pokémon GO masterfile — group "pokemonSettings", split "poison", 96 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonSettings } from "../types";
@@ -1389,6 +1389,93 @@ export type PokemonSettingsV0041PokemonZubat = S<
 		}
 	>
 >;
+export type PokemonSettingsV0041PokemonZubatHalloween202601 = S<
+	PokemonSettings<
+		"V0041_POKEMON_ZUBAT_HALLOWEEN_2026_01",
+		{
+			animationTime: [1.3333, 0.6667, 1.3333, 0.6667, 0, 1.5, 1.3333, 0];
+			breadTierGroup: "GROUP_1";
+			buddyGroupNumber: 4;
+			buddyOffsetFemale: [6.13, 31.63, 32.8];
+			buddyOffsetMale: [6.13, 31.63, 32.8];
+			buddyScale: 19;
+			buddySize: "BUDDY_FLYING";
+			camera: {
+				cylinderGroundM: 0.5;
+				cylinderHeightM: 0.6955;
+				cylinderRadiusM: 0.642;
+				diskRadiusM: 0.963;
+				shoulderModeScale: 0.5;
+			};
+			candyToEvolve: 50;
+			cinematicMoves: ["POISON_FANG", "AIR_CUTTER", "SWIFT"];
+			eliteCinematicMove: ["SLUDGE_BOMB"];
+			encounter: {
+				attackProbability: 0.1;
+				attackTimerS: 29;
+				cameraDistance: 4.8150005;
+				collisionHeadRadiusM: 0.1605;
+				collisionHeightM: 0.0535;
+				collisionRadiusM: 0.0535;
+				dodgeDistance: 0.125;
+				dodgeDurationS: 0.7;
+				dodgeProbability: 0.2;
+				jumpTimeS: 1;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementTimerS: 10;
+				movementType: "MOVEMENT_ELECTRIC";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.5;
+				shadowDodgeProbability: 0.2;
+			};
+			evolutionBranch: [
+				{
+					candyCost: 25;
+					candyCostPurified: 22;
+					evolution: "GOLBAT";
+					form: 3363;
+				},
+			];
+			evolutionIds: ["GOLBAT"];
+			evolutionPips: 1;
+			familyId: "FAMILY_ZUBAT";
+			form: 3362;
+			heightStdDev: 0.1;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 1;
+			modelHeight: 0.85;
+			modelScale: 1.07;
+			modelScaleV2: 1;
+			pokedexHeightM: 0.8;
+			pokedexWeightKg: 7.5;
+			pokemonId: "ZUBAT";
+			quickMoves: ["QUICK_ATTACK_FAST", "BITE_FAST"];
+			shadow: {
+				purificationCandyNeeded: 1;
+				purificationStardustNeeded: 1000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
+			stats: {
+				baseAttack: 83;
+				baseDefense: 73;
+				baseStamina: 120;
+			};
+			thirdMove: {
+				candyToUnlock: 25;
+				stardustToUnlock: 10000;
+			};
+			type: "POKEMON_TYPE_POISON";
+			type2: "POKEMON_TYPE_FLYING";
+			useIrisFlyingPlacement: true;
+			weightStdDev: 0.9375;
+		}
+	>
+>;
 export type PokemonSettingsV0041PokemonZubatNormal = S<
 	PokemonSettings<
 		"V0041_POKEMON_ZUBAT_NORMAL",
@@ -1528,6 +1615,96 @@ export type PokemonSettingsV0042PokemonGolbat = S<
 			];
 			evolutionPips: 1;
 			familyId: "FAMILY_ZUBAT";
+			heightStdDev: 0.2;
+			ibfc: object;
+			irisPhotoEmote1: "PhysicalAttack";
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 1;
+			modelHeight: 1.95;
+			modelScale: 0.71;
+			modelScaleV2: 0.9;
+			parentPokemonId: "ZUBAT";
+			pokedexHeightM: 1.6;
+			pokedexWeightKg: 55;
+			pokemonId: "GOLBAT";
+			quickMoves: ["WING_ATTACK_FAST", "BITE_FAST"];
+			shadow: {
+				purificationCandyNeeded: 1;
+				purificationStardustNeeded: 1000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
+			stats: {
+				baseAttack: 161;
+				baseDefense: 150;
+				baseStamina: 181;
+			};
+			thirdMove: {
+				candyToUnlock: 25;
+				stardustToUnlock: 10000;
+			};
+			type: "POKEMON_TYPE_POISON";
+			type2: "POKEMON_TYPE_FLYING";
+			useIrisFlyingPlacement: true;
+			weightStdDev: 6.875;
+		}
+	>
+>;
+export type PokemonSettingsV0042PokemonGolbatHalloween202601 = S<
+	PokemonSettings<
+		"V0042_POKEMON_GOLBAT_HALLOWEEN_2026_01",
+		{
+			animationTime: [1.5, 0.6667, 1.3333, 0.6667, 0, 2, 2, 0];
+			breadTierGroup: "GROUP_1";
+			buddyGroupNumber: 5;
+			buddyOffsetFemale: [45, -40, -70];
+			buddyOffsetMale: [45, -40, -70];
+			buddyScale: 19;
+			buddySize: "BUDDY_FLYING";
+			camera: {
+				cylinderGroundM: 1.6;
+				cylinderHeightM: 1.2425;
+				cylinderRadiusM: 1.7;
+				diskRadiusM: 1.5975;
+				shoulderModeScale: 0.5;
+			};
+			cinematicMoves: ["SHADOW_BALL", "AIR_CUTTER", "POISON_FANG"];
+			eliteCinematicMove: ["OMINOUS_WIND"];
+			encounter: {
+				attackProbability: 0.1;
+				attackTimerS: 17;
+				bonusCandyCaptureReward: 2;
+				bonusStardustCaptureReward: 200;
+				bonusXlCandyCaptureReward: 1;
+				cameraDistance: 5;
+				collisionHeadRadiusM: 0.355;
+				collisionHeightM: 0.0355;
+				collisionRadiusM: 0.0355;
+				dodgeDistance: 1;
+				dodgeDurationS: 0.7;
+				dodgeProbability: 0.15;
+				jumpTimeS: 1;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementTimerS: 6;
+				movementType: "MOVEMENT_FLYING";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.2;
+				shadowDodgeProbability: 0.2;
+			};
+			evolutionBranch: [
+				{
+					candyCost: 100;
+					candyCostPurified: 90;
+					evolution: "CROBAT";
+					form: 3364;
+				},
+			];
+			evolutionPips: 1;
+			familyId: "FAMILY_ZUBAT";
+			form: 3363;
 			heightStdDev: 0.2;
 			ibfc: object;
 			irisPhotoEmote1: "PhysicalAttack";
@@ -2682,6 +2859,86 @@ export type PokemonSettingsV0169PokemonCrobat = S<
 			pokedexWeightKg: 75;
 			pokemonId: "CROBAT";
 			quickMoves: ["AIR_SLASH_FAST", "BITE_FAST", "GUST_FAST"];
+			shadow: {
+				purificationCandyNeeded: 1;
+				purificationStardustNeeded: 1000;
+				purifiedChargeMove: "RETURN";
+				shadowChargeMove: "FRUSTRATION";
+			};
+			stats: {
+				baseAttack: 194;
+				baseDefense: 178;
+				baseStamina: 198;
+			};
+			thirdMove: {
+				candyToUnlock: 25;
+				stardustToUnlock: 10000;
+			};
+			type: "POKEMON_TYPE_POISON";
+			type2: "POKEMON_TYPE_FLYING";
+			useIrisFlyingPlacement: true;
+			weightStdDev: 9.375;
+		}
+	>
+>;
+export type PokemonSettingsV0169PokemonCrobatHalloween202601 = S<
+	PokemonSettings<
+		"V0169_POKEMON_CROBAT_HALLOWEEN_2026_01",
+		{
+			animationTime: [1.3333, 0.6667, 1.6667, 2, 0, 2, 3, 3];
+			breadTierGroup: "GROUP_1";
+			buddyGroupNumber: 5;
+			buddyOffsetFemale: [40, -20, -40];
+			buddyOffsetMale: [40, -20, -40];
+			buddyScale: 19;
+			buddySize: "BUDDY_FLYING";
+			camera: {
+				cylinderGroundM: 1.1363636;
+				cylinderHeightM: 1.5105;
+				cylinderRadiusM: 2;
+				diskRadiusM: 0.555;
+				shoulderModeScale: 0.5;
+			};
+			cinematicMoves: ["SHADOW_BALL", "AIR_CUTTER", "SLUDGE_BOMB", "POISON_FANG", "CROSS_POISON"];
+			encounter: {
+				attackProbability: 0.1;
+				attackTimerS: 20;
+				bonusCandyCaptureReward: 7;
+				bonusStardustCaptureReward: 400;
+				bonusXlCandyCaptureReward: 2;
+				cameraDistance: 5;
+				collisionHeadRadiusM: 0.5;
+				collisionHeightM: 1.5;
+				collisionRadiusM: 0.364;
+				dodgeDistance: 1;
+				dodgeDurationS: 1;
+				dodgeProbability: 0.2;
+				jumpTimeS: 1.3;
+				maxPokemonActionFrequencyS: 1.6;
+				minPokemonActionFrequencyS: 0.2;
+				movementTimerS: 11;
+				movementType: "MOVEMENT_FLYING";
+				shadowAttackProbability: 0.7;
+				shadowBaseCaptureRate: 0.1;
+				shadowDodgeProbability: 0.2;
+			};
+			evolutionPips: 1;
+			familyId: "FAMILY_ZUBAT";
+			form: 3364;
+			heightStdDev: 0.225;
+			ibfc: object;
+			isDeployable: true;
+			isTradable: true;
+			isTransferable: true;
+			kmBuddyDistance: 1;
+			modelHeight: 2.65;
+			modelScale: 0.66;
+			modelScaleV2: 0.9;
+			parentPokemonId: "GOLBAT";
+			pokedexHeightM: 1.8;
+			pokedexWeightKg: 75;
+			pokemonId: "CROBAT";
+			quickMoves: ["AIR_SLASH_FAST", "BITE_FAST"];
 			shadow: {
 				purificationCandyNeeded: 1;
 				purificationStardustNeeded: 1000;
@@ -6604,8 +6861,10 @@ export type PokemonSettingsPoisonMasterfileEntry =
 	| PokemonSettingsV0034PokemonNidoking
 	| PokemonSettingsV0034PokemonNidokingNormal
 	| PokemonSettingsV0041PokemonZubat
+	| PokemonSettingsV0041PokemonZubatHalloween202601
 	| PokemonSettingsV0041PokemonZubatNormal
 	| PokemonSettingsV0042PokemonGolbat
+	| PokemonSettingsV0042PokemonGolbatHalloween202601
 	| PokemonSettingsV0042PokemonGolbatNormal
 	| PokemonSettingsV0080PokemonSlowbroGalarian
 	| PokemonSettingsV0088PokemonGrimer
@@ -6620,6 +6879,7 @@ export type PokemonSettingsPoisonMasterfileEntry =
 	| PokemonSettingsV0110PokemonWeezingGalarian
 	| PokemonSettingsV0110PokemonWeezingNormal
 	| PokemonSettingsV0169PokemonCrobat
+	| PokemonSettingsV0169PokemonCrobatHalloween202601
 	| PokemonSettingsV0169PokemonCrobatNormal
 	| PokemonSettingsV0194PokemonWooperPaldea
 	| PokemonSettingsV0199PokemonSlowkingGalarian

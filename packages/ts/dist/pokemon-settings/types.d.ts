@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonSettings", 2488 entries (structural types).
+// Generated from Pokémon GO masterfile — group "pokemonSettings", 2496 entries (structural types).
 
 import type { W } from "../_utils";
 import type { TypeEffectiveTemplateID } from "../type-effective/entries";
@@ -143,7 +143,7 @@ export interface PokemonSettingsData {
 		evolutionItemRequirementCost?: number;
 		evolutionLikelihoodWeight?: number;
 		evolutionMoveRequirement?: "DRAGON_ASCENT";
-		form?: string;
+		form?: number | string;
 		genderRequirement?: "FEMALE" | "MALE";
 		kmBuddyDistanceRequirement?: number;
 		lureItemRequirement?: "ITEM_TROY_DISK_GLACIAL" | "ITEM_TROY_DISK_MAGNETIC" | "ITEM_TROY_DISK_MOSSY" | "ITEM_TROY_DISK_RAINY";
@@ -200,7 +200,7 @@ export interface PokemonSettingsData {
 		item: "ITEM_BEANS" | "ITEM_MOVE_REROLL_OTHER_SPECIAL_ATTACK_A";
 	};
 	familyId: string;
-	form?: string;
+	form?: number | string;
 	formChange?: Array<{
 		availableForm: Array<
 			| "FURFROU_DANDY"

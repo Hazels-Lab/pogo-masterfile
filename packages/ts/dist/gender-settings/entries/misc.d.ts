@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "genderSettings", split "misc", 2395 entries.
+// Generated from Pokémon GO masterfile — group "genderSettings", split "misc", 2403 entries.
 
 import type { S } from "../../_utils";
 import type { GenderSettings } from "../types";
@@ -1018,6 +1018,18 @@ export type GenderSettingsV0025PokemonPikachuGofest2025MonocleYellow = S<
 		}
 	>
 >;
+export type GenderSettingsV0025PokemonPikachuHalloween2026 = S<
+	GenderSettings<
+		"SPAWN_V0025_POKEMON_PIKACHU_HALLOWEEN_2026",
+		{
+			gender: {
+				femalePercent: 0.5;
+				malePercent: 0.5;
+			};
+			pokemon: "PIKACHU";
+		}
+	>
+>;
 export type GenderSettingsV0025PokemonPikachuHorizons = S<
 	GenderSettings<
 		"SPAWN_V0025_POKEMON_PIKACHU_HORIZONS",
@@ -1709,6 +1721,18 @@ export type GenderSettingsV0041PokemonZubat = S<
 		}
 	>
 >;
+export type GenderSettingsV0041PokemonZubatHalloween202601 = S<
+	GenderSettings<
+		"SPAWN_V0041_POKEMON_ZUBAT_HALLOWEEN_2026_01",
+		{
+			gender: {
+				femalePercent: 0.5;
+				malePercent: 0.5;
+			};
+			pokemon: "ZUBAT";
+		}
+	>
+>;
 export type GenderSettingsV0041PokemonZubatNormal = S<
 	GenderSettings<
 		"SPAWN_V0041_POKEMON_ZUBAT_NORMAL",
@@ -1724,6 +1748,18 @@ export type GenderSettingsV0041PokemonZubatNormal = S<
 export type GenderSettingsV0042PokemonGolbat = S<
 	GenderSettings<
 		"SPAWN_V0042_POKEMON_GOLBAT",
+		{
+			gender: {
+				femalePercent: 0.5;
+				malePercent: 0.5;
+			};
+			pokemon: "GOLBAT";
+		}
+	>
+>;
+export type GenderSettingsV0042PokemonGolbatHalloween202601 = S<
+	GenderSettings<
+		"SPAWN_V0042_POKEMON_GOLBAT_HALLOWEEN_2026_01",
 		{
 			gender: {
 				femalePercent: 0.5;
@@ -5136,6 +5172,18 @@ export type GenderSettingsV0168PokemonAriadosNormal = S<
 export type GenderSettingsV0169PokemonCrobat = S<
 	GenderSettings<
 		"SPAWN_V0169_POKEMON_CROBAT",
+		{
+			gender: {
+				femalePercent: 0.5;
+				malePercent: 0.5;
+			};
+			pokemon: "CROBAT";
+		}
+	>
+>;
+export type GenderSettingsV0169PokemonCrobatHalloween202601 = S<
+	GenderSettings<
+		"SPAWN_V0169_POKEMON_CROBAT_HALLOWEEN_2026_01",
 		{
 			gender: {
 				femalePercent: 0.5;
@@ -23920,9 +23968,31 @@ export type GenderSettingsV0854PokemonSinistea = S<
 		}
 	>
 >;
+export type GenderSettingsV0854PokemonSinisteaAHalloween202601 = S<
+	GenderSettings<
+		"SPAWN_V0854_POKEMON_SINISTEA_A_HALLOWEEN_2026_01",
+		{
+			gender: {
+				genderlessPercent: 1;
+			};
+			pokemon: "SINISTEA";
+		}
+	>
+>;
 export type GenderSettingsV0854PokemonSinisteaAntique = S<
 	GenderSettings<
 		"SPAWN_V0854_POKEMON_SINISTEA_ANTIQUE",
+		{
+			gender: {
+				genderlessPercent: 1;
+			};
+			pokemon: "SINISTEA";
+		}
+	>
+>;
+export type GenderSettingsV0854PokemonSinisteaPHalloween202601 = S<
+	GenderSettings<
+		"SPAWN_V0854_POKEMON_SINISTEA_P_HALLOWEEN_2026_01",
 		{
 			gender: {
 				genderlessPercent: 1;
@@ -23953,9 +24023,31 @@ export type GenderSettingsV0855PokemonPolteageist = S<
 		}
 	>
 >;
+export type GenderSettingsV0855PokemonPolteageistAHalloween202601 = S<
+	GenderSettings<
+		"SPAWN_V0855_POKEMON_POLTEAGEIST_A_HALLOWEEN_2026_01",
+		{
+			gender: {
+				genderlessPercent: 1;
+			};
+			pokemon: "POLTEAGEIST";
+		}
+	>
+>;
 export type GenderSettingsV0855PokemonPolteageistAntique = S<
 	GenderSettings<
 		"SPAWN_V0855_POKEMON_POLTEAGEIST_ANTIQUE",
+		{
+			gender: {
+				genderlessPercent: 1;
+			};
+			pokemon: "POLTEAGEIST";
+		}
+	>
+>;
+export type GenderSettingsV0855PokemonPolteageistPHalloween202601 = S<
+	GenderSettings<
+		"SPAWN_V0855_POKEMON_POLTEAGEIST_P_HALLOWEEN_2026_01",
 		{
 			gender: {
 				genderlessPercent: 1;
@@ -28250,6 +28342,7 @@ export type GenderSettingsMiscMasterfileEntry =
 	| GenderSettingsV0025PokemonPikachuGofest2025MonocleBlue
 	| GenderSettingsV0025PokemonPikachuGofest2025MonocleRed
 	| GenderSettingsV0025PokemonPikachuGofest2025MonocleYellow
+	| GenderSettingsV0025PokemonPikachuHalloween2026
 	| GenderSettingsV0025PokemonPikachuHorizons
 	| GenderSettingsV0025PokemonPikachuJeju
 	| GenderSettingsV0025PokemonPikachuK2026A01
@@ -28309,8 +28402,10 @@ export type GenderSettingsMiscMasterfileEntry =
 	| GenderSettingsV0040PokemonWigglytuff
 	| GenderSettingsV0040PokemonWigglytuffNormal
 	| GenderSettingsV0041PokemonZubat
+	| GenderSettingsV0041PokemonZubatHalloween202601
 	| GenderSettingsV0041PokemonZubatNormal
 	| GenderSettingsV0042PokemonGolbat
+	| GenderSettingsV0042PokemonGolbatHalloween202601
 	| GenderSettingsV0042PokemonGolbatNormal
 	| GenderSettingsV0043PokemonOddish
 	| GenderSettingsV0043PokemonOddishNormal
@@ -28599,6 +28694,7 @@ export type GenderSettingsMiscMasterfileEntry =
 	| GenderSettingsV0168PokemonAriados
 	| GenderSettingsV0168PokemonAriadosNormal
 	| GenderSettingsV0169PokemonCrobat
+	| GenderSettingsV0169PokemonCrobatHalloween202601
 	| GenderSettingsV0169PokemonCrobatNormal
 	| GenderSettingsV0170PokemonChinchou
 	| GenderSettingsV0170PokemonChinchouNormal
@@ -30194,10 +30290,14 @@ export type GenderSettingsMiscMasterfileEntry =
 	| GenderSettingsV0853PokemonGrapploct
 	| GenderSettingsV0853PokemonGrapploctNormal
 	| GenderSettingsV0854PokemonSinistea
+	| GenderSettingsV0854PokemonSinisteaAHalloween202601
 	| GenderSettingsV0854PokemonSinisteaAntique
+	| GenderSettingsV0854PokemonSinisteaPHalloween202601
 	| GenderSettingsV0854PokemonSinisteaPhony
 	| GenderSettingsV0855PokemonPolteageist
+	| GenderSettingsV0855PokemonPolteageistAHalloween202601
 	| GenderSettingsV0855PokemonPolteageistAntique
+	| GenderSettingsV0855PokemonPolteageistPHalloween202601
 	| GenderSettingsV0855PokemonPolteageistPhony
 	| GenderSettingsV0856PokemonHatenna
 	| GenderSettingsV0856PokemonHatennaNormal

@@ -117,7 +117,6 @@ pub mod combat_npc_personality;
 pub mod combat_npc_trainer;
 pub mod combat_ranking_proto_settings;
 pub mod combat_type;
-pub mod event_pass_settings;
 pub mod event_pass_tier_settings;
 pub mod evolution_chain_display_settings;
 pub mod evolution_quest_template;
@@ -186,10 +185,10 @@ pub enum MasterfileEntry {
     BadgeSettings(badge_settings::BadgeSettingsEntry),
     IapItemDisplay(iap_item_display::IapItemDisplayEntry),
     FormSettings(form_settings::FormSettingsEntry),
-    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     StickerMetadata(sticker_metadata::StickerMetadataEntry),
     PokemonFamily(pokemon_family::PokemonFamilyEntry),
     MoveSettings(move_settings::MoveSettingsEntry),
+    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     CombatMove(combat_move::CombatMoveEntry),
     MoveSequenceSettings(move_sequence_settings::MoveSequenceSettingsEntry),
     LocationCardSettings(location_card_settings::LocationCardSettingsEntry),
@@ -206,8 +205,8 @@ pub enum MasterfileEntry {
     ClientQuestTemplate(client_quest_template::ClientQuestTemplateEntry),
     VsSeekerLoot(vs_seeker_loot::VsSeekerLootEntry),
     PhotoSetsSettingsProto(photo_sets_settings_proto::PhotoSetsSettingsProtoEntry),
-    EvolutionQuestTemplate(evolution_quest_template::EvolutionQuestTemplateEntry),
     FeatureGate(feature_gate::FeatureGateEntry),
+    EvolutionQuestTemplate(evolution_quest_template::EvolutionQuestTemplateEntry),
     LimitedPurchaseSkuSettings(limited_purchase_sku_settings::LimitedPurchaseSkuSettingsEntry),
     ItemExpirationSettings(item_expiration_settings::ItemExpirationSettingsEntry),
     CombatRankingProtoSettings(combat_ranking_proto_settings::CombatRankingProtoSettingsEntry),
@@ -237,7 +236,6 @@ pub enum MasterfileEntry {
     FortPowerUpLevelSettings(fort_power_up_level_settings::FortPowerUpLevelSettingsEntry),
     PokemonHomeEnergyCosts(pokemon_home_energy_costs::PokemonHomeEnergyCostsEntry),
     CombatNpcPersonality(combat_npc_personality::CombatNpcPersonalityEntry),
-    EventPassSettings(event_pass_settings::EventPassSettingsEntry),
     LanguageSettings(language_settings::LanguageSettingsEntry),
     QuestSettings(quest_settings::QuestSettingsEntry),
     AvatarGroupOrderSettings(avatar_group_order_settings::AvatarGroupOrderSettingsEntry),
@@ -295,6 +293,7 @@ pub enum MasterfileEntry {
     EncounterSettings(singletons::EncounterSettingsEntry),
     ErrorReportingSettings(singletons::ErrorReportingSettingsEntry),
     EventMapRefreshSettings(singletons::EventMapRefreshSettingsEntry),
+    EventPassSettings(singletons::EventPassSettingsEntry),
     EventPlannerPopularNotificationSettings(
         singletons::EventPlannerPopularNotificationSettingsEntry,
     ),
@@ -432,12 +431,12 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "badgeSettings" => serde_json::from_value(value).map(Self::BadgeSettings),
                 "iapItemDisplay" => serde_json::from_value(value).map(Self::IapItemDisplay),
                 "formSettings" => serde_json::from_value(value).map(Self::FormSettings),
-                "eventPassTierSettings" => {
-                    serde_json::from_value(value).map(Self::EventPassTierSettings)
-                }
                 "stickerMetadata" => serde_json::from_value(value).map(Self::StickerMetadata),
                 "pokemonFamily" => serde_json::from_value(value).map(Self::PokemonFamily),
                 "moveSettings" => serde_json::from_value(value).map(Self::MoveSettings),
+                "eventPassTierSettings" => {
+                    serde_json::from_value(value).map(Self::EventPassTierSettings)
+                }
                 "combatMove" => serde_json::from_value(value).map(Self::CombatMove),
                 "moveSequenceSettings" => {
                     serde_json::from_value(value).map(Self::MoveSequenceSettings)
@@ -470,10 +469,10 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "photoSetsSettingsProto" => {
                     serde_json::from_value(value).map(Self::PhotoSetsSettingsProto)
                 }
+                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
                 "evolutionQuestTemplate" => {
                     serde_json::from_value(value).map(Self::EvolutionQuestTemplate)
                 }
-                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
                 "limitedPurchaseSkuSettings" => {
                     serde_json::from_value(value).map(Self::LimitedPurchaseSkuSettings)
                 }
@@ -531,7 +530,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "combatNpcPersonality" => {
                     serde_json::from_value(value).map(Self::CombatNpcPersonality)
                 }
-                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "languageSettings" => serde_json::from_value(value).map(Self::LanguageSettings),
                 "questSettings" => serde_json::from_value(value).map(Self::QuestSettings),
                 "avatarGroupOrderSettings" => {
@@ -669,6 +667,7 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "eventMapRefreshSettings" => {
                     serde_json::from_value(value).map(Self::EventMapRefreshSettings)
                 }
+                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "eventPlannerPopularNotificationSettings" => {
                     serde_json::from_value(value).map(Self::EventPlannerPopularNotificationSettings)
                 }

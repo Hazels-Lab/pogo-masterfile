@@ -14525,16 +14525,23 @@ export type PokemonSettingsV0946PokemonBramblin = S<
 		"V0946_POKEMON_BRAMBLIN",
 		{
 			breadTierGroup: "GROUP_3";
-			camera: object;
+			buddyGroupNumber: 2;
+			buddyPortraitOffset: [0, 100, 50];
+			buddyPortraitRotation: [0, 15, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderHeightM: 0.6;
+				cylinderRadiusM: 0.5;
+			};
 			cinematicMoves: ["SHADOW_SNEAK", "NIGHT_SHADE", "POWER_WHIP"];
 			encounter: {
 				attackProbability: 0.1;
+				cameraDistance: 3.5;
+				collisionHeadRadiusM: 0.325;
 				dodgeDurationS: 1;
-				dodgeProbability: 0.15;
 				jumpTimeS: 1;
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
-				movementType: "MOVEMENT_HOVERING";
 			};
 			evolutionBranch: [
 				{
@@ -14555,10 +14562,13 @@ export type PokemonSettingsV0946PokemonBramblin = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 5;
+			modelHeight: 0.6;
+			modelScaleV2: 1;
 			pokedexHeightM: 0.6;
 			pokedexWeightKg: 0.6;
 			pokemonId: "BRAMBLIN";
 			quickMoves: ["ASTONISH_FAST", "BULLET_SEED_FAST"];
+			raidBossDistanceOffset: 2;
 			stats: {
 				baseAttack: 121;
 				baseDefense: 64;
@@ -14579,16 +14589,23 @@ export type PokemonSettingsV0946PokemonBramblinNormal = S<
 		"V0946_POKEMON_BRAMBLIN_NORMAL",
 		{
 			breadTierGroup: "GROUP_3";
-			camera: object;
+			buddyGroupNumber: 2;
+			buddyPortraitOffset: [0, 100, 50];
+			buddyPortraitRotation: [0, 15, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderHeightM: 0.6;
+				cylinderRadiusM: 0.5;
+			};
 			cinematicMoves: ["SHADOW_SNEAK", "NIGHT_SHADE", "POWER_WHIP"];
 			encounter: {
 				attackProbability: 0.1;
+				cameraDistance: 3.5;
+				collisionHeadRadiusM: 0.325;
 				dodgeDurationS: 1;
-				dodgeProbability: 0.15;
 				jumpTimeS: 1;
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
-				movementType: "MOVEMENT_HOVERING";
 			};
 			evolutionBranch: [
 				{
@@ -14611,10 +14628,13 @@ export type PokemonSettingsV0946PokemonBramblinNormal = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 5;
+			modelHeight: 0.6;
+			modelScaleV2: 1;
 			pokedexHeightM: 0.6;
 			pokedexWeightKg: 0.6;
 			pokemonId: "BRAMBLIN";
 			quickMoves: ["ASTONISH_FAST", "BULLET_SEED_FAST"];
+			raidBossDistanceOffset: 2;
 			stats: {
 				baseAttack: 121;
 				baseDefense: 64;
@@ -14635,19 +14655,26 @@ export type PokemonSettingsV0947PokemonBrambleghast = S<
 		"V0947_POKEMON_BRAMBLEGHAST",
 		{
 			breadTierGroup: "GROUP_3";
-			camera: object;
+			buddyGroupNumber: 2;
+			buddyPortraitOffset: [0, 180, 125];
+			buddyPortraitRotation: [0, 15, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderHeightM: 1.2;
+				cylinderRadiusM: 1;
+			};
 			cinematicMoves: ["SHADOW_SNEAK", "NIGHT_SHADE", "POWER_WHIP"];
 			encounter: {
 				attackProbability: 0.1;
 				bonusCandyCaptureReward: 2;
 				bonusStardustCaptureReward: 200;
 				bonusXlCandyCaptureReward: 1;
+				cameraDistance: 4;
+				collisionHeadRadiusM: 0.625;
 				dodgeDurationS: 1;
-				dodgeProbability: 0.15;
 				jumpTimeS: 1;
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
-				movementType: "MOVEMENT_HOVERING";
 			};
 			familyId: "FAMILY_BRAMBLIN";
 			heightStdDev: 0.15;
@@ -14656,11 +14683,14 @@ export type PokemonSettingsV0947PokemonBrambleghast = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 5;
+			modelHeight: 1.2;
+			modelScaleV2: 1;
 			parentPokemonId: "BRAMBLIN";
 			pokedexHeightM: 1.2;
 			pokedexWeightKg: 6;
 			pokemonId: "BRAMBLEGHAST";
 			quickMoves: ["HEX_FAST", "BULLET_SEED_FAST"];
+			raidBossDistanceOffset: 2;
 			stats: {
 				baseAttack: 228;
 				baseDefense: 144;
@@ -14681,19 +14711,26 @@ export type PokemonSettingsV0947PokemonBrambleghastNormal = S<
 		"V0947_POKEMON_BRAMBLEGHAST_NORMAL",
 		{
 			breadTierGroup: "GROUP_3";
-			camera: object;
+			buddyGroupNumber: 2;
+			buddyPortraitOffset: [0, 180, 125];
+			buddyPortraitRotation: [0, 15, 0];
+			buddyScale: 19;
+			camera: {
+				cylinderHeightM: 1.2;
+				cylinderRadiusM: 1;
+			};
 			cinematicMoves: ["SHADOW_SNEAK", "NIGHT_SHADE", "POWER_WHIP"];
 			encounter: {
 				attackProbability: 0.1;
 				bonusCandyCaptureReward: 2;
 				bonusStardustCaptureReward: 200;
 				bonusXlCandyCaptureReward: 1;
+				cameraDistance: 4;
+				collisionHeadRadiusM: 0.625;
 				dodgeDurationS: 1;
-				dodgeProbability: 0.15;
 				jumpTimeS: 1;
 				maxPokemonActionFrequencyS: 1.6;
 				minPokemonActionFrequencyS: 0.2;
-				movementType: "MOVEMENT_HOVERING";
 			};
 			familyId: "FAMILY_BRAMBLIN";
 			form: "BRAMBLEGHAST_NORMAL";
@@ -14703,11 +14740,14 @@ export type PokemonSettingsV0947PokemonBrambleghastNormal = S<
 			isTradable: true;
 			isTransferable: true;
 			kmBuddyDistance: 5;
+			modelHeight: 1.2;
+			modelScaleV2: 1;
 			parentPokemonId: "BRAMBLIN";
 			pokedexHeightM: 1.2;
 			pokedexWeightKg: 6;
 			pokemonId: "BRAMBLEGHAST";
 			quickMoves: ["HEX_FAST", "BULLET_SEED_FAST"];
+			raidBossDistanceOffset: 2;
 			stats: {
 				baseAttack: 228;
 				baseDefense: 144;

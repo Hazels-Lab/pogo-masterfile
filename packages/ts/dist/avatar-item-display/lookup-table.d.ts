@@ -587,6 +587,7 @@ import type {
 	AvatarItemDisplayNPantsGymleaderB1,
 	AvatarItemDisplayNPantsGymleaderB2,
 	AvatarItemDisplayNPantsHala0,
+	AvatarItemDisplayNPantsHalloween2026,
 	AvatarItemDisplayNPantsHgssA0,
 	AvatarItemDisplayNPantsHgssB0,
 	AvatarItemDisplayNPantsIngo0,
@@ -957,6 +958,7 @@ import type {
 	AvatarItemDisplayNShirtGymleaderB1,
 	AvatarItemDisplayNShirtGymleaderB2,
 	AvatarItemDisplayNShirtHala0,
+	AvatarItemDisplayNShirtHalloween2026,
 	AvatarItemDisplayNShirtHalloween20240,
 	AvatarItemDisplayNShirtHappi0,
 	AvatarItemDisplayNShirtHappi1,
@@ -2289,6 +2291,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_pants_gymleader_b_1: AvatarItemDisplayNPantsGymleaderB1;
 	N_DISPLAY_n_pants_gymleader_b_2: AvatarItemDisplayNPantsGymleaderB2;
 	N_DISPLAY_n_pants_hala_0: AvatarItemDisplayNPantsHala0;
+	N_DISPLAY_n_pants_halloween2026: AvatarItemDisplayNPantsHalloween2026;
 	N_DISPLAY_n_pants_hgss_a_0: AvatarItemDisplayNPantsHgssA0;
 	N_DISPLAY_n_pants_hgss_b_0: AvatarItemDisplayNPantsHgssB0;
 	N_DISPLAY_n_pants_ingo_0: AvatarItemDisplayNPantsIngo0;
@@ -2660,6 +2663,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_gymleader_b_2: AvatarItemDisplayNShirtGymleaderB2;
 	N_DISPLAY_n_shirt_hala_0: AvatarItemDisplayNShirtHala0;
 	N_DISPLAY_n_shirt_halloween2024_0: AvatarItemDisplayNShirtHalloween20240;
+	N_DISPLAY_n_shirt_halloween2026: AvatarItemDisplayNShirtHalloween2026;
 	N_DISPLAY_n_shirt_happi_0: AvatarItemDisplayNShirtHappi0;
 	N_DISPLAY_n_shirt_happi_1: AvatarItemDisplayNShirtHappi1;
 	N_DISPLAY_n_shirt_happi_2: AvatarItemDisplayNShirtHappi2;

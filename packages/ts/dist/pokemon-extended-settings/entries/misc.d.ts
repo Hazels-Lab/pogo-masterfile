@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 831 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 828 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -5522,54 +5522,6 @@ export type PokemonExtendedSettingsV0479PokemonRotom = S<
 				xxsLowerBound: 0.147;
 			};
 			uniqueId: "ROTOM";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0480PokemonUxie = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0480_POKEMON_UXIE",
-		{
-			sizeSettings: {
-				mLowerBound: 0.225;
-				mUpperBound: 0.375;
-				xlUpperBound: 0.45;
-				xsLowerBound: 0.15;
-				xxlUpperBound: 0.525;
-				xxsLowerBound: 0.147;
-			};
-			uniqueId: "UXIE";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0481PokemonMesprit = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0481_POKEMON_MESPRIT",
-		{
-			sizeSettings: {
-				mLowerBound: 0.225;
-				mUpperBound: 0.375;
-				xlUpperBound: 0.45;
-				xsLowerBound: 0.15;
-				xxlUpperBound: 0.525;
-				xxsLowerBound: 0.147;
-			};
-			uniqueId: "MESPRIT";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0482PokemonAzelf = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0482_POKEMON_AZELF",
-		{
-			sizeSettings: {
-				mLowerBound: 0.225;
-				mUpperBound: 0.375;
-				xlUpperBound: 0.45;
-				xsLowerBound: 0.15;
-				xxlUpperBound: 0.525;
-				xxsLowerBound: 0.147;
-			};
-			uniqueId: "AZELF";
 		}
 	>
 >;
@@ -13661,9 +13613,6 @@ export type PokemonExtendedSettingsMiscMasterfileEntry =
 	| PokemonExtendedSettingsV0477PokemonDusknoir
 	| PokemonExtendedSettingsV0478PokemonFroslass
 	| PokemonExtendedSettingsV0479PokemonRotom
-	| PokemonExtendedSettingsV0480PokemonUxie
-	| PokemonExtendedSettingsV0481PokemonMesprit
-	| PokemonExtendedSettingsV0482PokemonAzelf
 	| PokemonExtendedSettingsV0483PokemonDialga
 	| PokemonExtendedSettingsV0484PokemonPalkia
 	| PokemonExtendedSettingsV0485PokemonHeatran

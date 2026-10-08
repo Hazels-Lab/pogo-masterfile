@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shirt", 464 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shirt", 465 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -1548,6 +1548,15 @@ export type AvatarItemDisplayNShirtHalloween20240 = S<
 		{
 			displayStringId: "avatar_shirt_halloween2024";
 			iconAddress: "n_shirt_halloween2024_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtHalloween2026 = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_halloween2026",
+		{
+			displayStringId: "avatar_shirt_halloween2026";
+			iconAddress: "n_shirt_halloween2026_icon";
 		}
 	>
 >;
@@ -4353,6 +4362,7 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirtGymleaderB2
 	| AvatarItemDisplayNShirtHala0
 	| AvatarItemDisplayNShirtHalloween20240
+	| AvatarItemDisplayNShirtHalloween2026
 	| AvatarItemDisplayNShirtHappi0
 	| AvatarItemDisplayNShirtHappi1
 	| AvatarItemDisplayNShirtHappi2

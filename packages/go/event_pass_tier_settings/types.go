@@ -29,7 +29,6 @@ type EventPassTierSettingsPlayerAttribute struct {
 
 type EventPassTierSettingsPokemonDisplay struct {
 	BreadModeEnum *string `json:"breadModeEnum,omitempty"`
-	Costume       *string `json:"costume,omitempty"`
 	Form          string  `json:"form"`
 }
 

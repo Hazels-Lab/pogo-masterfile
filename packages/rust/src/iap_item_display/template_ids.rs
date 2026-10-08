@@ -705,10 +705,6 @@ pub enum IapItemDisplayTemplateId {
     PgoreleaseBundleWalkeratlantic20221,
     #[serde(rename = "pgorelease.bundle.walkeratlantic2022.2")]
     PgoreleaseBundleWalkeratlantic20222,
-    #[serde(rename = "pgorelease.month1_deluxe_event_pass_track_unlock")]
-    PgoreleaseMonth1DeluxeEventPassTrackUnlock,
-    #[serde(rename = "pgorelease.month1_deluxe_event_pass_track_unlock_plus_points")]
-    PgoreleaseMonth1DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "pgorelease.pokecoin.2750")]
     PgoreleasePokecoin2750,
     #[serde(rename = "pgorelease.pokecoin.5720")]
@@ -719,10 +715,6 @@ pub enum IapItemDisplayTemplateId {
     PgoreleasePokecoin21375,
     #[serde(rename = "pgorelease.september2_2026_deluxe_event_pass_track_unlock_redirect")]
     PgoreleaseSeptember22026DeluxeEventPassTrackUnlockRedirect,
-    #[serde(rename = "pgorelease.september3_2026_deluxe_event_pass_track_unlock")]
-    PgoreleaseSeptember32026DeluxeEventPassTrackUnlock,
-    #[serde(rename = "pgorelease.september3_2026_deluxe_event_pass_track_unlock_plus_points")]
-    PgoreleaseSeptember32026DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "poffin")]
     Poffin,
     #[serde(rename = "pokeball.20")]

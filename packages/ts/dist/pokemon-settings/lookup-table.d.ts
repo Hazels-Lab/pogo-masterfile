@@ -108,6 +108,7 @@ import type {
 	PokemonSettingsV0025PokemonPikachuGotour2026B02,
 	PokemonSettingsV0025PokemonPikachuGotour2026C,
 	PokemonSettingsV0025PokemonPikachuGotour2026C02,
+	PokemonSettingsV0025PokemonPikachuHalloween2026,
 	PokemonSettingsV0025PokemonPikachuHorizons,
 	PokemonSettingsV0025PokemonPikachuJeju,
 	PokemonSettingsV0025PokemonPikachuK2026A01,
@@ -169,8 +170,10 @@ import type {
 	PokemonSettingsV0040PokemonWigglytuff,
 	PokemonSettingsV0040PokemonWigglytuffNormal,
 	PokemonSettingsV0041PokemonZubat,
+	PokemonSettingsV0041PokemonZubatHalloween202601,
 	PokemonSettingsV0041PokemonZubatNormal,
 	PokemonSettingsV0042PokemonGolbat,
+	PokemonSettingsV0042PokemonGolbatHalloween202601,
 	PokemonSettingsV0042PokemonGolbatNormal,
 	PokemonSettingsV0043PokemonOddish,
 	PokemonSettingsV0043PokemonOddishNormal,
@@ -468,6 +471,7 @@ import type {
 	PokemonSettingsV0168PokemonAriados,
 	PokemonSettingsV0168PokemonAriadosNormal,
 	PokemonSettingsV0169PokemonCrobat,
+	PokemonSettingsV0169PokemonCrobatHalloween202601,
 	PokemonSettingsV0169PokemonCrobatNormal,
 	PokemonSettingsV0170PokemonChinchou,
 	PokemonSettingsV0170PokemonChinchouNormal,
@@ -2123,10 +2127,14 @@ import type {
 	PokemonSettingsV0853PokemonGrapploct,
 	PokemonSettingsV0853PokemonGrapploctNormal,
 	PokemonSettingsV0854PokemonSinistea,
+	PokemonSettingsV0854PokemonSinisteaAHalloween202601,
 	PokemonSettingsV0854PokemonSinisteaAntique,
+	PokemonSettingsV0854PokemonSinisteaPHalloween202601,
 	PokemonSettingsV0854PokemonSinisteaPhony,
 	PokemonSettingsV0855PokemonPolteageist,
+	PokemonSettingsV0855PokemonPolteageistAHalloween202601,
 	PokemonSettingsV0855PokemonPolteageistAntique,
+	PokemonSettingsV0855PokemonPolteageistPHalloween202601,
 	PokemonSettingsV0855PokemonPolteageistPhony,
 	PokemonSettingsV0856PokemonHatenna,
 	PokemonSettingsV0856PokemonHatennaNormal,
@@ -2599,6 +2607,7 @@ export interface PokemonSettingsLookup {
 	V0025_POKEMON_PIKACHU_GOTOUR_2026_B_02: PokemonSettingsV0025PokemonPikachuGotour2026B02;
 	V0025_POKEMON_PIKACHU_GOTOUR_2026_C: PokemonSettingsV0025PokemonPikachuGotour2026C;
 	V0025_POKEMON_PIKACHU_GOTOUR_2026_C_02: PokemonSettingsV0025PokemonPikachuGotour2026C02;
+	V0025_POKEMON_PIKACHU_HALLOWEEN_2026: PokemonSettingsV0025PokemonPikachuHalloween2026;
 	V0025_POKEMON_PIKACHU_HORIZONS: PokemonSettingsV0025PokemonPikachuHorizons;
 	V0025_POKEMON_PIKACHU_JEJU: PokemonSettingsV0025PokemonPikachuJeju;
 	V0025_POKEMON_PIKACHU_K_2026_A_01: PokemonSettingsV0025PokemonPikachuK2026A01;
@@ -2660,8 +2669,10 @@ export interface PokemonSettingsLookup {
 	V0040_POKEMON_WIGGLYTUFF: PokemonSettingsV0040PokemonWigglytuff;
 	V0040_POKEMON_WIGGLYTUFF_NORMAL: PokemonSettingsV0040PokemonWigglytuffNormal;
 	V0041_POKEMON_ZUBAT: PokemonSettingsV0041PokemonZubat;
+	V0041_POKEMON_ZUBAT_HALLOWEEN_2026_01: PokemonSettingsV0041PokemonZubatHalloween202601;
 	V0041_POKEMON_ZUBAT_NORMAL: PokemonSettingsV0041PokemonZubatNormal;
 	V0042_POKEMON_GOLBAT: PokemonSettingsV0042PokemonGolbat;
+	V0042_POKEMON_GOLBAT_HALLOWEEN_2026_01: PokemonSettingsV0042PokemonGolbatHalloween202601;
 	V0042_POKEMON_GOLBAT_NORMAL: PokemonSettingsV0042PokemonGolbatNormal;
 	V0043_POKEMON_ODDISH: PokemonSettingsV0043PokemonOddish;
 	V0043_POKEMON_ODDISH_NORMAL: PokemonSettingsV0043PokemonOddishNormal;
@@ -2959,6 +2970,7 @@ export interface PokemonSettingsLookup {
 	V0168_POKEMON_ARIADOS: PokemonSettingsV0168PokemonAriados;
 	V0168_POKEMON_ARIADOS_NORMAL: PokemonSettingsV0168PokemonAriadosNormal;
 	V0169_POKEMON_CROBAT: PokemonSettingsV0169PokemonCrobat;
+	V0169_POKEMON_CROBAT_HALLOWEEN_2026_01: PokemonSettingsV0169PokemonCrobatHalloween202601;
 	V0169_POKEMON_CROBAT_NORMAL: PokemonSettingsV0169PokemonCrobatNormal;
 	V0170_POKEMON_CHINCHOU: PokemonSettingsV0170PokemonChinchou;
 	V0170_POKEMON_CHINCHOU_NORMAL: PokemonSettingsV0170PokemonChinchouNormal;
@@ -4614,10 +4626,14 @@ export interface PokemonSettingsLookup {
 	V0853_POKEMON_GRAPPLOCT: PokemonSettingsV0853PokemonGrapploct;
 	V0853_POKEMON_GRAPPLOCT_NORMAL: PokemonSettingsV0853PokemonGrapploctNormal;
 	V0854_POKEMON_SINISTEA: PokemonSettingsV0854PokemonSinistea;
+	V0854_POKEMON_SINISTEA_A_HALLOWEEN_2026_01: PokemonSettingsV0854PokemonSinisteaAHalloween202601;
 	V0854_POKEMON_SINISTEA_ANTIQUE: PokemonSettingsV0854PokemonSinisteaAntique;
+	V0854_POKEMON_SINISTEA_P_HALLOWEEN_2026_01: PokemonSettingsV0854PokemonSinisteaPHalloween202601;
 	V0854_POKEMON_SINISTEA_PHONY: PokemonSettingsV0854PokemonSinisteaPhony;
 	V0855_POKEMON_POLTEAGEIST: PokemonSettingsV0855PokemonPolteageist;
+	V0855_POKEMON_POLTEAGEIST_A_HALLOWEEN_2026_01: PokemonSettingsV0855PokemonPolteageistAHalloween202601;
 	V0855_POKEMON_POLTEAGEIST_ANTIQUE: PokemonSettingsV0855PokemonPolteageistAntique;
+	V0855_POKEMON_POLTEAGEIST_P_HALLOWEEN_2026_01: PokemonSettingsV0855PokemonPolteageistPHalloween202601;
 	V0855_POKEMON_POLTEAGEIST_PHONY: PokemonSettingsV0855PokemonPolteageistPhony;
 	V0856_POKEMON_HATENNA: PokemonSettingsV0856PokemonHatenna;
 	V0856_POKEMON_HATENNA_NORMAL: PokemonSettingsV0856PokemonHatennaNormal;

@@ -25,6 +25,10 @@ pub enum FeatureGateTemplateId {
     CombatSuppressFastMovePredictionsOnSwapFeatureGate,
     #[serde(rename = "COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE")]
     CombatVnextInitializeBdLastFeatureGate,
+    #[serde(rename = "COMBINE_COMPASS_AND_WEATHER_FEATURE_GATE")]
+    CombineCompassAndWeatherFeatureGate,
+    #[serde(rename = "DAILY_ENCOUNTER_GENERATION_CONTEXT_FEATURE_GATE")]
+    DailyEncounterGenerationContextFeatureGate,
     #[serde(rename = "DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE")]
     DisableLegacyNearbyPokemonFeatureGate,
     #[serde(rename = "ENABLE_NEARBY_POKEMON_SNAPSHOT_FEATURE_GATE")]
@@ -65,6 +69,10 @@ pub enum FeatureGateTemplateId {
     MepEggReadMigrationFeatureGate,
     #[serde(rename = "MEP_EGG_WRITE_MIGRATION_FEATURE_GATE")]
     MepEggWriteMigrationFeatureGate,
+    #[serde(rename = "MICHELIN_MAP_LURE_BOTTOM_RING_REMOVAL_FEATURE_GATE")]
+    MichelinMapLureBottomRingRemovalFeatureGate,
+    #[serde(rename = "MICHELIN_MAP_ZYGARDE_CELL_REWARD_FEATURE_GATE")]
+    MichelinMapZygardeCellRewardFeatureGate,
     #[serde(rename = "POKEMON_SPAWN_AVOIDANCE_REWORK_FEATURE_GATE")]
     PokemonSpawnAvoidanceReworkFeatureGate,
     #[serde(rename = "REGISTER_DEVICE_FEATURE_GATE")]
@@ -73,6 +81,10 @@ pub enum FeatureGateTemplateId {
     RemoteTradeImprovementsFeatureGate,
     #[serde(rename = "SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE")]
     SeafGetMapObjectsRateLimiterFeatureGate,
+    #[serde(rename = "TRANSFER_FEATURE_GATE")]
+    TransferFeatureGate,
+    #[serde(rename = "VNEXT_FAST_ATTACK_INPUT_TYPE_FEATURE_GATE")]
+    VnextFastAttackInputTypeFeatureGate,
     #[serde(rename = "VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE")]
     VnextPreResponseInputBlockingBehaviorFeatureGate,
     #[serde(rename = "WAYFARER_SUBMIT_LINKOUT_FEATURE_GATE")]

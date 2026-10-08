@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-release-date-sticker-url", 64 entries.
+// Generated from Pokémon GO masterfile — group "stickerMetadata", split "category-pokemon-id-release-date-sticker-url", 64 entries.
 
 import type { S } from "../../_utils";
 import type { StickerMetadata } from "../types";
@@ -708,7 +708,7 @@ export type StickerMetadataYurutto37 = S<
 	>
 >;
 
-export type StickerMetadataPokemonIdReleaseDateStickerUrlMasterfileEntry =
+export type StickerMetadataCategoryPokemonIdReleaseDateStickerUrlMasterfileEntry =
 	| StickerMetadataDitto1
 	| StickerMetadataDitto2
 	| StickerMetadataDitto3

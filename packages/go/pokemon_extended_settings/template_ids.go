@@ -70,6 +70,7 @@ const (
 	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuAnniversary2026Singapore01      PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_SINGAPORE_01"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuAnniversary2026Taiwan01         PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_TAIWAN_01"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuGlassHelmet2026                 PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_PIKACHU_GLASS_HELMET_2026"
+	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuHalloween2026                   PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_PIKACHU_HALLOWEEN_2026"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachu                         PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuAdventureHat2020         PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_ADVENTURE_HAT_2020"
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuAnniversary2026          PokemonExtendedSettingsTemplateID = "EXTENDED_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026"
@@ -173,8 +174,10 @@ const (
 	PokemonExtendedSettingsTemplateIDExtendedV0040PokemonWigglytuff                      PokemonExtendedSettingsTemplateID = "EXTENDED_V0040_POKEMON_WIGGLYTUFF"
 	PokemonExtendedSettingsTemplateIDExtendedV0040PokemonWigglytuffNormal                PokemonExtendedSettingsTemplateID = "EXTENDED_V0040_POKEMON_WIGGLYTUFF_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV0041PokemonZubat                           PokemonExtendedSettingsTemplateID = "EXTENDED_V0041_POKEMON_ZUBAT"
+	PokemonExtendedSettingsTemplateIDExtendedV0041PokemonZubatHalloween202601            PokemonExtendedSettingsTemplateID = "EXTENDED_V0041_POKEMON_ZUBAT_HALLOWEEN_2026_01"
 	PokemonExtendedSettingsTemplateIDExtendedV0041PokemonZubatNormal                     PokemonExtendedSettingsTemplateID = "EXTENDED_V0041_POKEMON_ZUBAT_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV0042PokemonGolbat                          PokemonExtendedSettingsTemplateID = "EXTENDED_V0042_POKEMON_GOLBAT"
+	PokemonExtendedSettingsTemplateIDExtendedV0042PokemonGolbatHalloween202601           PokemonExtendedSettingsTemplateID = "EXTENDED_V0042_POKEMON_GOLBAT_HALLOWEEN_2026_01"
 	PokemonExtendedSettingsTemplateIDExtendedV0042PokemonGolbatNormal                    PokemonExtendedSettingsTemplateID = "EXTENDED_V0042_POKEMON_GOLBAT_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV0043PokemonOddish                          PokemonExtendedSettingsTemplateID = "EXTENDED_V0043_POKEMON_ODDISH"
 	PokemonExtendedSettingsTemplateIDExtendedV0043PokemonOddishNormal                    PokemonExtendedSettingsTemplateID = "EXTENDED_V0043_POKEMON_ODDISH_NORMAL"
@@ -472,6 +475,7 @@ const (
 	PokemonExtendedSettingsTemplateIDExtendedV0168PokemonAriados                         PokemonExtendedSettingsTemplateID = "EXTENDED_V0168_POKEMON_ARIADOS"
 	PokemonExtendedSettingsTemplateIDExtendedV0168PokemonAriadosNormal                   PokemonExtendedSettingsTemplateID = "EXTENDED_V0168_POKEMON_ARIADOS_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV0169PokemonCrobat                          PokemonExtendedSettingsTemplateID = "EXTENDED_V0169_POKEMON_CROBAT"
+	PokemonExtendedSettingsTemplateIDExtendedV0169PokemonCrobatHalloween202601           PokemonExtendedSettingsTemplateID = "EXTENDED_V0169_POKEMON_CROBAT_HALLOWEEN_2026_01"
 	PokemonExtendedSettingsTemplateIDExtendedV0169PokemonCrobatNormal                    PokemonExtendedSettingsTemplateID = "EXTENDED_V0169_POKEMON_CROBAT_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV0170PokemonChinchou                        PokemonExtendedSettingsTemplateID = "EXTENDED_V0170_POKEMON_CHINCHOU"
 	PokemonExtendedSettingsTemplateIDExtendedV0170PokemonChinchouNormal                  PokemonExtendedSettingsTemplateID = "EXTENDED_V0170_POKEMON_CHINCHOU_NORMAL"
@@ -2119,10 +2123,14 @@ const (
 	PokemonExtendedSettingsTemplateIDExtendedV0853PokemonGrapploct                       PokemonExtendedSettingsTemplateID = "EXTENDED_V0853_POKEMON_GRAPPLOCT"
 	PokemonExtendedSettingsTemplateIDExtendedV0853PokemonGrapploctNormal                 PokemonExtendedSettingsTemplateID = "EXTENDED_V0853_POKEMON_GRAPPLOCT_NORMAL"
 	PokemonExtendedSettingsTemplateIDExtendedV0854PokemonSinistea                        PokemonExtendedSettingsTemplateID = "EXTENDED_V0854_POKEMON_SINISTEA"
+	PokemonExtendedSettingsTemplateIDExtendedV0854PokemonSinisteaAHalloween202601        PokemonExtendedSettingsTemplateID = "EXTENDED_V0854_POKEMON_SINISTEA_A_HALLOWEEN_2026_01"
 	PokemonExtendedSettingsTemplateIDExtendedV0854PokemonSinisteaAntique                 PokemonExtendedSettingsTemplateID = "EXTENDED_V0854_POKEMON_SINISTEA_ANTIQUE"
+	PokemonExtendedSettingsTemplateIDExtendedV0854PokemonSinisteaPHalloween202601        PokemonExtendedSettingsTemplateID = "EXTENDED_V0854_POKEMON_SINISTEA_P_HALLOWEEN_2026_01"
 	PokemonExtendedSettingsTemplateIDExtendedV0854PokemonSinisteaPhony                   PokemonExtendedSettingsTemplateID = "EXTENDED_V0854_POKEMON_SINISTEA_PHONY"
 	PokemonExtendedSettingsTemplateIDExtendedV0855PokemonPolteageist                     PokemonExtendedSettingsTemplateID = "EXTENDED_V0855_POKEMON_POLTEAGEIST"
+	PokemonExtendedSettingsTemplateIDExtendedV0855PokemonPolteageistAHalloween202601     PokemonExtendedSettingsTemplateID = "EXTENDED_V0855_POKEMON_POLTEAGEIST_A_HALLOWEEN_2026_01"
 	PokemonExtendedSettingsTemplateIDExtendedV0855PokemonPolteageistAntique              PokemonExtendedSettingsTemplateID = "EXTENDED_V0855_POKEMON_POLTEAGEIST_ANTIQUE"
+	PokemonExtendedSettingsTemplateIDExtendedV0855PokemonPolteageistPHalloween202601     PokemonExtendedSettingsTemplateID = "EXTENDED_V0855_POKEMON_POLTEAGEIST_P_HALLOWEEN_2026_01"
 	PokemonExtendedSettingsTemplateIDExtendedV0855PokemonPolteageistPhony                PokemonExtendedSettingsTemplateID = "EXTENDED_V0855_POKEMON_POLTEAGEIST_PHONY"
 	PokemonExtendedSettingsTemplateIDExtendedV0856PokemonHatenna                         PokemonExtendedSettingsTemplateID = "EXTENDED_V0856_POKEMON_HATENNA"
 	PokemonExtendedSettingsTemplateIDExtendedV0856PokemonHatennaNormal                   PokemonExtendedSettingsTemplateID = "EXTENDED_V0856_POKEMON_HATENNA_NORMAL"
@@ -2557,6 +2565,7 @@ var PokemonExtendedSettingsTemplateIDValues = [...]PokemonExtendedSettingsTempla
 	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuAnniversary2026Singapore01,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuAnniversary2026Taiwan01,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuGlassHelmet2026,
+	PokemonExtendedSettingsTemplateIDExtendedV0025PikachuHalloween2026,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachu,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuAdventureHat2020,
 	PokemonExtendedSettingsTemplateIDExtendedV0025PokemonPikachuAnniversary2026,
@@ -2660,8 +2669,10 @@ var PokemonExtendedSettingsTemplateIDValues = [...]PokemonExtendedSettingsTempla
 	PokemonExtendedSettingsTemplateIDExtendedV0040PokemonWigglytuff,
 	PokemonExtendedSettingsTemplateIDExtendedV0040PokemonWigglytuffNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV0041PokemonZubat,
+	PokemonExtendedSettingsTemplateIDExtendedV0041PokemonZubatHalloween202601,
 	PokemonExtendedSettingsTemplateIDExtendedV0041PokemonZubatNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV0042PokemonGolbat,
+	PokemonExtendedSettingsTemplateIDExtendedV0042PokemonGolbatHalloween202601,
 	PokemonExtendedSettingsTemplateIDExtendedV0042PokemonGolbatNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV0043PokemonOddish,
 	PokemonExtendedSettingsTemplateIDExtendedV0043PokemonOddishNormal,
@@ -2959,6 +2970,7 @@ var PokemonExtendedSettingsTemplateIDValues = [...]PokemonExtendedSettingsTempla
 	PokemonExtendedSettingsTemplateIDExtendedV0168PokemonAriados,
 	PokemonExtendedSettingsTemplateIDExtendedV0168PokemonAriadosNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV0169PokemonCrobat,
+	PokemonExtendedSettingsTemplateIDExtendedV0169PokemonCrobatHalloween202601,
 	PokemonExtendedSettingsTemplateIDExtendedV0169PokemonCrobatNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV0170PokemonChinchou,
 	PokemonExtendedSettingsTemplateIDExtendedV0170PokemonChinchouNormal,
@@ -4606,10 +4618,14 @@ var PokemonExtendedSettingsTemplateIDValues = [...]PokemonExtendedSettingsTempla
 	PokemonExtendedSettingsTemplateIDExtendedV0853PokemonGrapploct,
 	PokemonExtendedSettingsTemplateIDExtendedV0853PokemonGrapploctNormal,
 	PokemonExtendedSettingsTemplateIDExtendedV0854PokemonSinistea,
+	PokemonExtendedSettingsTemplateIDExtendedV0854PokemonSinisteaAHalloween202601,
 	PokemonExtendedSettingsTemplateIDExtendedV0854PokemonSinisteaAntique,
+	PokemonExtendedSettingsTemplateIDExtendedV0854PokemonSinisteaPHalloween202601,
 	PokemonExtendedSettingsTemplateIDExtendedV0854PokemonSinisteaPhony,
 	PokemonExtendedSettingsTemplateIDExtendedV0855PokemonPolteageist,
+	PokemonExtendedSettingsTemplateIDExtendedV0855PokemonPolteageistAHalloween202601,
 	PokemonExtendedSettingsTemplateIDExtendedV0855PokemonPolteageistAntique,
+	PokemonExtendedSettingsTemplateIDExtendedV0855PokemonPolteageistPHalloween202601,
 	PokemonExtendedSettingsTemplateIDExtendedV0855PokemonPolteageistPhony,
 	PokemonExtendedSettingsTemplateIDExtendedV0856PokemonHatenna,
 	PokemonExtendedSettingsTemplateIDExtendedV0856PokemonHatennaNormal,

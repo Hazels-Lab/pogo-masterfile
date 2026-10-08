@@ -664,6 +664,10 @@ export type FormSettingsV0025PokemonPikachu = S<
 					form: "PIKACHU_GLASS_HELMET_2026";
 					isCostume: true;
 				},
+				{
+					form: "PIKACHU_HALLOWEEN_2026";
+					isCostume: true;
+				},
 			];
 			pokemon: "PIKACHU";
 		}
@@ -892,6 +896,10 @@ export type FormSettingsV0041PokemonZubat = S<
 				{
 					form: "ZUBAT_NORMAL";
 				},
+				{
+					form: 3362;
+					isCostume: true;
+				},
 			];
 			pokemon: "ZUBAT";
 		}
@@ -904,6 +912,10 @@ export type FormSettingsV0042PokemonGolbat = S<
 			forms: [
 				{
 					form: "GOLBAT_NORMAL";
+				},
+				{
+					form: 3363;
+					isCostume: true;
 				},
 			];
 			pokemon: "GOLBAT";
@@ -2722,6 +2734,10 @@ export type FormSettingsV0169PokemonCrobat = S<
 			forms: [
 				{
 					form: "CROBAT_NORMAL";
+				},
+				{
+					form: 3364;
+					isCostume: true;
 				},
 			];
 			pokemon: "CROBAT";
@@ -12693,6 +12709,14 @@ export type FormSettingsV0854PokemonSinistea = S<
 						overrideDisplayForm: "SINISTEA_PHONY";
 					};
 				},
+				{
+					form: 3365;
+					isCostume: true;
+				},
+				{
+					form: 3366;
+					isCostume: true;
+				},
 			];
 			pokemon: "SINISTEA";
 		}
@@ -12708,6 +12732,14 @@ export type FormSettingsV0855PokemonPolteageist = S<
 				},
 				{
 					form: "POLTEAGEIST_ANTIQUE";
+				},
+				{
+					form: 3367;
+					isCostume: true;
+				},
+				{
+					form: 3368;
+					isCostume: true;
 				},
 			];
 			pokemon: "POLTEAGEIST";

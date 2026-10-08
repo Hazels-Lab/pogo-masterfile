@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-region-id-release-date", 264 entries.
+// Generated from Pokémon GO masterfile — group "stickerMetadata", split "category-pokemon-id-region-id-release-date", 266 entries.
 
 import type { S } from "../../_utils";
 import type { StickerMetadata } from "../types";
@@ -858,6 +858,28 @@ export type StickerMetadataGowa202505 = S<
 			pokemonId: "IMPIDIMP";
 			regionId: 7;
 			releaseDate: 20251027;
+		}
+	>
+>;
+export type StickerMetadataGowa20261 = S<
+	StickerMetadata<
+		"STICKER_GOWA2026_1",
+		{
+			category: ["Pokemon"];
+			pokemonId: "DURALUDON";
+			regionId: 7;
+			releaseDate: 20261105;
+		}
+	>
+>;
+export type StickerMetadataGowa20263 = S<
+	StickerMetadata<
+		"STICKER_GOWA2026_3",
+		{
+			category: ["Pokemon"];
+			pokemonId: "DURALUDON";
+			regionId: 7;
+			releaseDate: 20261105;
 		}
 	>
 >;
@@ -2908,7 +2930,7 @@ export type StickerMetadataWoopercd20234 = S<
 	>
 >;
 
-export type StickerMetadataPokemonIdRegionIdReleaseDateMasterfileEntry =
+export type StickerMetadataCategoryPokemonIdRegionIdReleaseDateMasterfileEntry =
 	| StickerMetadata7anniv5
 	| StickerMetadata8anniv3
 	| StickerMetadata8anniv4
@@ -2987,6 +3009,8 @@ export type StickerMetadataPokemonIdRegionIdReleaseDateMasterfileEntry =
 	| StickerMetadataGowa202503
 	| StickerMetadataGowa202504
 	| StickerMetadataGowa202505
+	| StickerMetadataGowa20261
+	| StickerMetadataGowa20263
 	| StickerMetadataGrubbin1
 	| StickerMetadataGrubbin2
 	| StickerMetadataGrubbin3
