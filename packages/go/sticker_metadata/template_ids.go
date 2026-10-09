@@ -222,8 +222,11 @@ const (
 	StickerMetadataTemplateIDStickerGrubbin4                     StickerMetadataTemplateID = "STICKER_GRUBBIN_4"
 	StickerMetadataTemplateIDStickerHalloweenBulb                StickerMetadataTemplateID = "STICKER_HALLOWEEN_BULB"
 	StickerMetadataTemplateIDStickerHalloweenCharm               StickerMetadataTemplateID = "STICKER_HALLOWEEN_CHARM"
+	StickerMetadataTemplateIDStickerHalloweenCrobat              StickerMetadataTemplateID = "STICKER_HALLOWEEN_CROBAT"
 	StickerMetadataTemplateIDStickerHalloweenGengarmd            StickerMetadataTemplateID = "STICKER_HALLOWEEN_GENGARMD"
 	StickerMetadataTemplateIDStickerHalloweenPika                StickerMetadataTemplateID = "STICKER_HALLOWEEN_PIKA"
+	StickerMetadataTemplateIDStickerHalloweenPikachuPancake      StickerMetadataTemplateID = "STICKER_HALLOWEEN_PIKACHU_PANCAKE"
+	StickerMetadataTemplateIDStickerHalloweenPolteageist         StickerMetadataTemplateID = "STICKER_HALLOWEEN_POLTEAGEIST"
 	StickerMetadataTemplateIDStickerHalloweenSableyemd           StickerMetadataTemplateID = "STICKER_HALLOWEEN_SABLEYEMD"
 	StickerMetadataTemplateIDStickerHalloweenSqu                 StickerMetadataTemplateID = "STICKER_HALLOWEEN_SQU"
 	StickerMetadataTemplateIDStickerHalloween21Fuwaraid          StickerMetadataTemplateID = "STICKER_HALLOWEEN21_FUWARAID"
@@ -856,8 +859,11 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDStickerGrubbin4,
 	StickerMetadataTemplateIDStickerHalloweenBulb,
 	StickerMetadataTemplateIDStickerHalloweenCharm,
+	StickerMetadataTemplateIDStickerHalloweenCrobat,
 	StickerMetadataTemplateIDStickerHalloweenGengarmd,
 	StickerMetadataTemplateIDStickerHalloweenPika,
+	StickerMetadataTemplateIDStickerHalloweenPikachuPancake,
+	StickerMetadataTemplateIDStickerHalloweenPolteageist,
 	StickerMetadataTemplateIDStickerHalloweenSableyemd,
 	StickerMetadataTemplateIDStickerHalloweenSqu,
 	StickerMetadataTemplateIDStickerHalloween21Fuwaraid,

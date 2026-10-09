@@ -3,7 +3,7 @@ use serde::{Deserialize, Serialize};
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct StickerMetadata {
-    pub category: Option<Vec<String>>,
+    pub category: Vec<String>,
     pub max_count: u64,
     pub pokemon_id: Option<String>,
     pub region_id: Option<u64>,

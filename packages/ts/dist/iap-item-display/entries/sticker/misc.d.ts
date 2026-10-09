@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "sticker/misc", 380 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "sticker/misc", 392 entries.
 
 import type { S } from "../../../_utils";
 import type { IapItemDisplay } from "../../types";
@@ -1003,6 +1003,66 @@ export type IapItemDisplayStickerGowa2025055 = S<
 		}
 	>
 >;
+export type IapItemDisplayStickerGowa202613 = S<
+	IapItemDisplay<
+		"STICKER_GOWA2026_1.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_GOWA2026_1.3";
+			sortOrder: 6;
+		}
+	>
+>;
+export type IapItemDisplayStickerGowa202615 = S<
+	IapItemDisplay<
+		"STICKER_GOWA2026_1.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_GOWA2026_1.5";
+			sortOrder: 5;
+		}
+	>
+>;
+export type IapItemDisplayStickerGowa202623 = S<
+	IapItemDisplay<
+		"STICKER_GOWA2026_2.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_GOWA2026_2.3";
+			sortOrder: 4;
+		}
+	>
+>;
+export type IapItemDisplayStickerGowa202625 = S<
+	IapItemDisplay<
+		"STICKER_GOWA2026_2.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_GOWA2026_2.5";
+			sortOrder: 3;
+		}
+	>
+>;
+export type IapItemDisplayStickerGowa202633 = S<
+	IapItemDisplay<
+		"STICKER_GOWA2026_3.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_GOWA2026_3.3";
+			sortOrder: 2;
+		}
+	>
+>;
+export type IapItemDisplayStickerGowa202635 = S<
+	IapItemDisplay<
+		"STICKER_GOWA2026_3.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_GOWA2026_3.5";
+			sortOrder: 1;
+		}
+	>
+>;
 export type IapItemDisplayStickerHalloweenBulb3 = S<
 	IapItemDisplay<
 		"STICKER_HALLOWEEN_BULB.3",
@@ -1043,6 +1103,26 @@ export type IapItemDisplayStickerHalloweenCharm5 = S<
 		}
 	>
 >;
+export type IapItemDisplayStickerHalloweenCrobat13 = S<
+	IapItemDisplay<
+		"STICKER_HALLOWEEN_CROBAT_1.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_HALLOWEEN_CROBAT_1.3";
+			sortOrder: 10;
+		}
+	>
+>;
+export type IapItemDisplayStickerHalloweenCrobat15 = S<
+	IapItemDisplay<
+		"STICKER_HALLOWEEN_CROBAT_1.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_HALLOWEEN_CROBAT_1.5";
+			sortOrder: 9;
+		}
+	>
+>;
 export type IapItemDisplayStickerHalloweenGengarmd3 = S<
 	IapItemDisplay<
 		"STICKER_HALLOWEEN_GENGARMD.3",
@@ -1080,6 +1160,46 @@ export type IapItemDisplayStickerHalloweenPika5 = S<
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_HALLOWEEN_PIKA.5";
 			sortOrder: 1;
+		}
+	>
+>;
+export type IapItemDisplayStickerHalloweenPikachuPancake13 = S<
+	IapItemDisplay<
+		"STICKER_HALLOWEEN_PIKACHU_PANCAKE_1.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_HALLOWEEN_PIKACHU_PANCAKE_1.3";
+			sortOrder: 12;
+		}
+	>
+>;
+export type IapItemDisplayStickerHalloweenPikachuPancake15 = S<
+	IapItemDisplay<
+		"STICKER_HALLOWEEN_PIKACHU_PANCAKE_1.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_HALLOWEEN_PIKACHU_PANCAKE_1.5";
+			sortOrder: 11;
+		}
+	>
+>;
+export type IapItemDisplayStickerHalloweenPolteageist13 = S<
+	IapItemDisplay<
+		"STICKER_HALLOWEEN_POLTEAGEIST_1.3",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_HALLOWEEN_POLTEAGEIST_1.3";
+			sortOrder: 8;
+		}
+	>
+>;
+export type IapItemDisplayStickerHalloweenPolteageist15 = S<
+	IapItemDisplay<
+		"STICKER_HALLOWEEN_POLTEAGEIST_1.5",
+		{
+			category: "IAP_CATEGORY_STICKER";
+			sku: "STICKER_HALLOWEEN_POLTEAGEIST_1.5";
+			sortOrder: 7;
 		}
 	>
 >;
@@ -3905,14 +4025,26 @@ export type IapItemDisplayStickerMiscMasterfileEntry =
 	| IapItemDisplayStickerGowa2025045
 	| IapItemDisplayStickerGowa2025053
 	| IapItemDisplayStickerGowa2025055
+	| IapItemDisplayStickerGowa202613
+	| IapItemDisplayStickerGowa202615
+	| IapItemDisplayStickerGowa202623
+	| IapItemDisplayStickerGowa202625
+	| IapItemDisplayStickerGowa202633
+	| IapItemDisplayStickerGowa202635
 	| IapItemDisplayStickerHalloweenBulb3
 	| IapItemDisplayStickerHalloweenBulb5
 	| IapItemDisplayStickerHalloweenCharm3
 	| IapItemDisplayStickerHalloweenCharm5
+	| IapItemDisplayStickerHalloweenCrobat13
+	| IapItemDisplayStickerHalloweenCrobat15
 	| IapItemDisplayStickerHalloweenGengarmd3
 	| IapItemDisplayStickerHalloweenGengarmd5
 	| IapItemDisplayStickerHalloweenPika3
 	| IapItemDisplayStickerHalloweenPika5
+	| IapItemDisplayStickerHalloweenPikachuPancake13
+	| IapItemDisplayStickerHalloweenPikachuPancake15
+	| IapItemDisplayStickerHalloweenPolteageist13
+	| IapItemDisplayStickerHalloweenPolteageist15
 	| IapItemDisplayStickerHalloweenSqu3
 	| IapItemDisplayStickerHalloweenSqu5
 	| IapItemDisplayStickerHalloween21Fuwaraid3

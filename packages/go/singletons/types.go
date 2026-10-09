@@ -94,6 +94,11 @@ type ArPhotoFeatureFlagsPokemonWithExcludedFormsV8 struct {
 	PokemonId     string    `json:"pokemonId"`
 }
 
+type ArPhotoFeatureFlagsPokemonWithExcludedFormsV9 struct {
+	ExcludedForms []string `json:"excludedForms"`
+	PokemonId     string   `json:"pokemonId"`
+}
+
 type ArPhotoFeatureFlags struct {
 	ArMenuEntryEnabled        int64                                     `json:"arMenuEntryEnabled"`
 	CaptureSettings           ArPhotoFeatureFlagsCaptureSettings        `json:"captureSettings"`

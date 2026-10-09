@@ -233,8 +233,11 @@ import type {
 	StickerMetadataHalloween2025Teddiursa,
 	StickerMetadataHalloweenBulb,
 	StickerMetadataHalloweenCharm,
+	StickerMetadataHalloweenCrobat,
 	StickerMetadataHalloweenGengarmd,
 	StickerMetadataHalloweenPika,
+	StickerMetadataHalloweenPikachuPancake,
+	StickerMetadataHalloweenPolteageist,
 	StickerMetadataHalloweenSableyemd,
 	StickerMetadataHalloweenSqu,
 	StickerMetadataHanbokPikachu,
@@ -852,8 +855,11 @@ export interface StickerMetadataLookup {
 	STICKER_GRUBBIN_4: StickerMetadataGrubbin4;
 	STICKER_HALLOWEEN_BULB: StickerMetadataHalloweenBulb;
 	STICKER_HALLOWEEN_CHARM: StickerMetadataHalloweenCharm;
+	STICKER_HALLOWEEN_CROBAT: StickerMetadataHalloweenCrobat;
 	STICKER_HALLOWEEN_GENGARMD: StickerMetadataHalloweenGengarmd;
 	STICKER_HALLOWEEN_PIKA: StickerMetadataHalloweenPika;
+	STICKER_HALLOWEEN_PIKACHU_PANCAKE: StickerMetadataHalloweenPikachuPancake;
+	STICKER_HALLOWEEN_POLTEAGEIST: StickerMetadataHalloweenPolteageist;
 	STICKER_HALLOWEEN_SABLEYEMD: StickerMetadataHalloweenSableyemd;
 	STICKER_HALLOWEEN_SQU: StickerMetadataHalloweenSqu;
 	STICKER_HALLOWEEN21_FUWARAID: StickerMetadataHalloween21Fuwaraid;

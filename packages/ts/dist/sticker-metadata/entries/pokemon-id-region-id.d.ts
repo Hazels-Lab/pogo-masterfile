@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "stickerMetadata", split "category-pokemon-id-region-id", 5 entries.
+// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-region-id", 5 entries.
 
 import type { S } from "../../_utils";
 import type { StickerMetadata } from "../types";
@@ -54,7 +54,7 @@ export type StickerMetadataMankey4 = S<
 	>
 >;
 
-export type StickerMetadataCategoryPokemonIdRegionIdMasterfileEntry =
+export type StickerMetadataPokemonIdRegionIdMasterfileEntry =
 	| StickerMetadataLittencd1
 	| StickerMetadataLittencd2
 	| StickerMetadataLittencd3

@@ -578,6 +578,12 @@ import type {
 	IapItemDisplayStickerGotour2025Rz5,
 	IapItemDisplayStickerGotour2025Zekrom3,
 	IapItemDisplayStickerGotour2025Zekrom5,
+	IapItemDisplayStickerGowa202613,
+	IapItemDisplayStickerGowa202615,
+	IapItemDisplayStickerGowa202623,
+	IapItemDisplayStickerGowa202625,
+	IapItemDisplayStickerGowa202633,
+	IapItemDisplayStickerGowa202635,
 	IapItemDisplayStickerGowa2025013,
 	IapItemDisplayStickerGowa2025015,
 	IapItemDisplayStickerGowa2025023,
@@ -608,10 +614,16 @@ import type {
 	IapItemDisplayStickerHalloweenBulb5,
 	IapItemDisplayStickerHalloweenCharm3,
 	IapItemDisplayStickerHalloweenCharm5,
+	IapItemDisplayStickerHalloweenCrobat13,
+	IapItemDisplayStickerHalloweenCrobat15,
 	IapItemDisplayStickerHalloweenGengarmd3,
 	IapItemDisplayStickerHalloweenGengarmd5,
 	IapItemDisplayStickerHalloweenPika3,
 	IapItemDisplayStickerHalloweenPika5,
+	IapItemDisplayStickerHalloweenPikachuPancake13,
+	IapItemDisplayStickerHalloweenPikachuPancake15,
+	IapItemDisplayStickerHalloweenPolteageist13,
+	IapItemDisplayStickerHalloweenPolteageist15,
 	IapItemDisplayStickerHalloweenSqu3,
 	IapItemDisplayStickerHalloweenSqu5,
 	IapItemDisplayStickerHaruCherrim3,
@@ -1666,14 +1678,26 @@ export interface IapItemDisplayLookup {
 	"STICKER_GOWA2025_04.5": IapItemDisplayStickerGowa2025045;
 	"STICKER_GOWA2025_05.3": IapItemDisplayStickerGowa2025053;
 	"STICKER_GOWA2025_05.5": IapItemDisplayStickerGowa2025055;
+	"STICKER_GOWA2026_1.3": IapItemDisplayStickerGowa202613;
+	"STICKER_GOWA2026_1.5": IapItemDisplayStickerGowa202615;
+	"STICKER_GOWA2026_2.3": IapItemDisplayStickerGowa202623;
+	"STICKER_GOWA2026_2.5": IapItemDisplayStickerGowa202625;
+	"STICKER_GOWA2026_3.3": IapItemDisplayStickerGowa202633;
+	"STICKER_GOWA2026_3.5": IapItemDisplayStickerGowa202635;
 	"STICKER_HALLOWEEN_BULB.3": IapItemDisplayStickerHalloweenBulb3;
 	"STICKER_HALLOWEEN_BULB.5": IapItemDisplayStickerHalloweenBulb5;
 	"STICKER_HALLOWEEN_CHARM.3": IapItemDisplayStickerHalloweenCharm3;
 	"STICKER_HALLOWEEN_CHARM.5": IapItemDisplayStickerHalloweenCharm5;
+	"STICKER_HALLOWEEN_CROBAT_1.3": IapItemDisplayStickerHalloweenCrobat13;
+	"STICKER_HALLOWEEN_CROBAT_1.5": IapItemDisplayStickerHalloweenCrobat15;
 	"STICKER_HALLOWEEN_GENGARMD.3": IapItemDisplayStickerHalloweenGengarmd3;
 	"STICKER_HALLOWEEN_GENGARMD.5": IapItemDisplayStickerHalloweenGengarmd5;
 	"STICKER_HALLOWEEN_PIKA.3": IapItemDisplayStickerHalloweenPika3;
 	"STICKER_HALLOWEEN_PIKA.5": IapItemDisplayStickerHalloweenPika5;
+	"STICKER_HALLOWEEN_PIKACHU_PANCAKE_1.3": IapItemDisplayStickerHalloweenPikachuPancake13;
+	"STICKER_HALLOWEEN_PIKACHU_PANCAKE_1.5": IapItemDisplayStickerHalloweenPikachuPancake15;
+	"STICKER_HALLOWEEN_POLTEAGEIST_1.3": IapItemDisplayStickerHalloweenPolteageist13;
+	"STICKER_HALLOWEEN_POLTEAGEIST_1.5": IapItemDisplayStickerHalloweenPolteageist15;
 	"STICKER_HALLOWEEN_SQU.3": IapItemDisplayStickerHalloweenSqu3;
 	"STICKER_HALLOWEEN_SQU.5": IapItemDisplayStickerHalloweenSqu5;
 	"STICKER_HALLOWEEN21_FUWARAID.3": IapItemDisplayStickerHalloween21Fuwaraid3;

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "stickerMetadata", split "category-pokemon-id-region-id-release-date", 266 entries.
+// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-region-id-release-date", 268 entries.
 
 import type { S } from "../../_utils";
 import type { StickerMetadata } from "../types";
@@ -924,6 +924,28 @@ export type StickerMetadataGrubbin4 = S<
 			pokemonId: "GRUBBIN";
 			regionId: 6;
 			releaseDate: 20230923;
+		}
+	>
+>;
+export type StickerMetadataHalloweenCrobat = S<
+	StickerMetadata<
+		"STICKER_HALLOWEEN_CROBAT",
+		{
+			category: ["Pokemon"];
+			pokemonId: "CROBAT";
+			regionId: 1;
+			releaseDate: 20261027;
+		}
+	>
+>;
+export type StickerMetadataHalloweenPolteageist = S<
+	StickerMetadata<
+		"STICKER_HALLOWEEN_POLTEAGEIST",
+		{
+			category: ["Pokemon"];
+			pokemonId: "POLTEAGEIST";
+			regionId: 7;
+			releaseDate: 20261027;
 		}
 	>
 >;
@@ -2930,7 +2952,7 @@ export type StickerMetadataWoopercd20234 = S<
 	>
 >;
 
-export type StickerMetadataCategoryPokemonIdRegionIdReleaseDateMasterfileEntry =
+export type StickerMetadataPokemonIdRegionIdReleaseDateMasterfileEntry =
 	| StickerMetadata7anniv5
 	| StickerMetadata8anniv3
 	| StickerMetadata8anniv4
@@ -3015,6 +3037,8 @@ export type StickerMetadataCategoryPokemonIdRegionIdReleaseDateMasterfileEntry =
 	| StickerMetadataGrubbin2
 	| StickerMetadataGrubbin3
 	| StickerMetadataGrubbin4
+	| StickerMetadataHalloweenCrobat
+	| StickerMetadataHalloweenPolteageist
 	| StickerMetadataHalloween23Greavard
 	| StickerMetadataHalloween23Misdreavus
 	| StickerMetadataHalloween23Phantump

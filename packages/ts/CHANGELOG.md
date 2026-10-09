@@ -2,6 +2,28 @@
 
 All notable changes to `pogo-masterfile-types` (npm) are recorded here. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.76] - 2026-10-09
+
+Automated regeneration from upstream masterfile commit `9edbdce71cf2f463384044bf9c6fa10673949937`.
+
+### Added template IDs (15)
+
+- STICKER_GOWA2026_1.3
+- STICKER_GOWA2026_1.5
+- STICKER_GOWA2026_2.3
+- STICKER_GOWA2026_2.5
+- STICKER_GOWA2026_3.3
+- STICKER_GOWA2026_3.5
+- STICKER_HALLOWEEN_CROBAT
+- STICKER_HALLOWEEN_CROBAT_1.3
+- STICKER_HALLOWEEN_CROBAT_1.5
+- STICKER_HALLOWEEN_PIKACHU_PANCAKE
+- STICKER_HALLOWEEN_PIKACHU_PANCAKE_1.3
+- STICKER_HALLOWEEN_PIKACHU_PANCAKE_1.5
+- STICKER_HALLOWEEN_POLTEAGEIST
+- STICKER_HALLOWEEN_POLTEAGEIST_1.3
+- STICKER_HALLOWEEN_POLTEAGEIST_1.5
+
 ## [0.1.75] - 2026-10-08
 
 Automated regeneration from upstream masterfile commit `4cf16374a700d4f71c835574b3f11f8681f70be8`.

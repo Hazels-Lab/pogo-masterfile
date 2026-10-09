@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "stickerMetadata", 631 entries (structural types).
+// Generated from Pokémon GO masterfile — group "stickerMetadata", 634 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -15,7 +15,7 @@ export interface StickerMetadata<TemplateID extends string = string, TData exten
 export type StickerMetadataType = W<StickerMetadata>;
 
 export interface StickerMetadataData {
-	category?: Array<"24_7" | "Characters" | "Decoration" | "Messages" | "Misc" | "Pokemon">;
+	category: Array<"24_7" | "Characters" | "Decoration" | "Messages" | "Misc" | "Pokemon">;
 	pokemonId?: string;
 	regionId?: number;
 	releaseDate?: number;
