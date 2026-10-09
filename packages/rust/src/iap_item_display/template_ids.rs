@@ -1181,6 +1181,18 @@ pub enum IapItemDisplayTemplateId {
     StickerGowa2025053,
     #[serde(rename = "STICKER_GOWA2025_05.5")]
     StickerGowa2025055,
+    #[serde(rename = "STICKER_GOWA2026_1.3")]
+    StickerGowa202613,
+    #[serde(rename = "STICKER_GOWA2026_1.5")]
+    StickerGowa202615,
+    #[serde(rename = "STICKER_GOWA2026_2.3")]
+    StickerGowa202623,
+    #[serde(rename = "STICKER_GOWA2026_2.5")]
+    StickerGowa202625,
+    #[serde(rename = "STICKER_GOWA2026_3.3")]
+    StickerGowa202633,
+    #[serde(rename = "STICKER_GOWA2026_3.5")]
+    StickerGowa202635,
     #[serde(rename = "STICKER_HALLOWEEN_BULB.3")]
     StickerHalloweenBulb3,
     #[serde(rename = "STICKER_HALLOWEEN_BULB.5")]
@@ -1189,6 +1201,10 @@ pub enum IapItemDisplayTemplateId {
     StickerHalloweenCharm3,
     #[serde(rename = "STICKER_HALLOWEEN_CHARM.5")]
     StickerHalloweenCharm5,
+    #[serde(rename = "STICKER_HALLOWEEN_CROBAT_1.3")]
+    StickerHalloweenCrobat13,
+    #[serde(rename = "STICKER_HALLOWEEN_CROBAT_1.5")]
+    StickerHalloweenCrobat15,
     #[serde(rename = "STICKER_HALLOWEEN_GENGARMD.3")]
     StickerHalloweenGengarmd3,
     #[serde(rename = "STICKER_HALLOWEEN_GENGARMD.5")]
@@ -1197,6 +1213,14 @@ pub enum IapItemDisplayTemplateId {
     StickerHalloweenPika3,
     #[serde(rename = "STICKER_HALLOWEEN_PIKA.5")]
     StickerHalloweenPika5,
+    #[serde(rename = "STICKER_HALLOWEEN_PIKACHU_PANCAKE_1.3")]
+    StickerHalloweenPikachuPancake13,
+    #[serde(rename = "STICKER_HALLOWEEN_PIKACHU_PANCAKE_1.5")]
+    StickerHalloweenPikachuPancake15,
+    #[serde(rename = "STICKER_HALLOWEEN_POLTEAGEIST_1.3")]
+    StickerHalloweenPolteageist13,
+    #[serde(rename = "STICKER_HALLOWEEN_POLTEAGEIST_1.5")]
+    StickerHalloweenPolteageist15,
     #[serde(rename = "STICKER_HALLOWEEN_SQU.3")]
     StickerHalloweenSqu3,
     #[serde(rename = "STICKER_HALLOWEEN_SQU.5")]

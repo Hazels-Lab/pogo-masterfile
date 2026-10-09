@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "stickerMetadata", split "category-pokemon-id-release-date", 121 entries.
+// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-release-date", 122 entries.
 
 import type { S } from "../../_utils";
 import type { StickerMetadata } from "../types";
@@ -450,6 +450,16 @@ export type StickerMetadataFossilmuseum2 = S<
 			category: ["Pokemon"];
 			pokemonId: "PIKACHU";
 			releaseDate: 20250308;
+		}
+	>
+>;
+export type StickerMetadataHalloweenPikachuPancake = S<
+	StickerMetadata<
+		"STICKER_HALLOWEEN_PIKACHU_PANCAKE",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PIKACHU";
+			releaseDate: 20261027;
 		}
 	>
 >;
@@ -1214,7 +1224,7 @@ export type StickerMetadataWinter20254 = S<
 	>
 >;
 
-export type StickerMetadataCategoryPokemonIdReleaseDateMasterfileEntry =
+export type StickerMetadataPokemonIdReleaseDateMasterfileEntry =
 	| StickerMetadata6anniv2
 	| StickerMetadata6anniv3
 	| StickerMetadata6anniv4
@@ -1260,6 +1270,7 @@ export type StickerMetadataCategoryPokemonIdReleaseDateMasterfileEntry =
 	| StickerMetadataFormulaekoreaPikachu
 	| StickerMetadataFossilmuseum1
 	| StickerMetadataFossilmuseum2
+	| StickerMetadataHalloweenPikachuPancake
 	| StickerMetadataHalloween23Gengar
 	| StickerMetadataHalloween2022Gengar
 	| StickerMetadataHalloween2022Vulpix

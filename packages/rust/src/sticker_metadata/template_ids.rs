@@ -441,10 +441,16 @@ pub enum StickerMetadataTemplateId {
     StickerHalloweenBulb,
     #[serde(rename = "STICKER_HALLOWEEN_CHARM")]
     StickerHalloweenCharm,
+    #[serde(rename = "STICKER_HALLOWEEN_CROBAT")]
+    StickerHalloweenCrobat,
     #[serde(rename = "STICKER_HALLOWEEN_GENGARMD")]
     StickerHalloweenGengarmd,
     #[serde(rename = "STICKER_HALLOWEEN_PIKA")]
     StickerHalloweenPika,
+    #[serde(rename = "STICKER_HALLOWEEN_PIKACHU_PANCAKE")]
+    StickerHalloweenPikachuPancake,
+    #[serde(rename = "STICKER_HALLOWEEN_POLTEAGEIST")]
+    StickerHalloweenPolteageist,
     #[serde(rename = "STICKER_HALLOWEEN_SABLEYEMD")]
     StickerHalloweenSableyemd,
     #[serde(rename = "STICKER_HALLOWEEN_SQU")]

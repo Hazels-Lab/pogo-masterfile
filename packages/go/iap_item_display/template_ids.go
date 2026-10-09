@@ -592,14 +592,26 @@ const (
 	IapItemDisplayTemplateIDStickerGowa2025045                                         IapItemDisplayTemplateID = "STICKER_GOWA2025_04.5"
 	IapItemDisplayTemplateIDStickerGowa2025053                                         IapItemDisplayTemplateID = "STICKER_GOWA2025_05.3"
 	IapItemDisplayTemplateIDStickerGowa2025055                                         IapItemDisplayTemplateID = "STICKER_GOWA2025_05.5"
+	IapItemDisplayTemplateIDStickerGowa202613                                          IapItemDisplayTemplateID = "STICKER_GOWA2026_1.3"
+	IapItemDisplayTemplateIDStickerGowa202615                                          IapItemDisplayTemplateID = "STICKER_GOWA2026_1.5"
+	IapItemDisplayTemplateIDStickerGowa202623                                          IapItemDisplayTemplateID = "STICKER_GOWA2026_2.3"
+	IapItemDisplayTemplateIDStickerGowa202625                                          IapItemDisplayTemplateID = "STICKER_GOWA2026_2.5"
+	IapItemDisplayTemplateIDStickerGowa202633                                          IapItemDisplayTemplateID = "STICKER_GOWA2026_3.3"
+	IapItemDisplayTemplateIDStickerGowa202635                                          IapItemDisplayTemplateID = "STICKER_GOWA2026_3.5"
 	IapItemDisplayTemplateIDStickerHalloweenBulb3                                      IapItemDisplayTemplateID = "STICKER_HALLOWEEN_BULB.3"
 	IapItemDisplayTemplateIDStickerHalloweenBulb5                                      IapItemDisplayTemplateID = "STICKER_HALLOWEEN_BULB.5"
 	IapItemDisplayTemplateIDStickerHalloweenCharm3                                     IapItemDisplayTemplateID = "STICKER_HALLOWEEN_CHARM.3"
 	IapItemDisplayTemplateIDStickerHalloweenCharm5                                     IapItemDisplayTemplateID = "STICKER_HALLOWEEN_CHARM.5"
+	IapItemDisplayTemplateIDStickerHalloweenCrobat13                                   IapItemDisplayTemplateID = "STICKER_HALLOWEEN_CROBAT_1.3"
+	IapItemDisplayTemplateIDStickerHalloweenCrobat15                                   IapItemDisplayTemplateID = "STICKER_HALLOWEEN_CROBAT_1.5"
 	IapItemDisplayTemplateIDStickerHalloweenGengarmd3                                  IapItemDisplayTemplateID = "STICKER_HALLOWEEN_GENGARMD.3"
 	IapItemDisplayTemplateIDStickerHalloweenGengarmd5                                  IapItemDisplayTemplateID = "STICKER_HALLOWEEN_GENGARMD.5"
 	IapItemDisplayTemplateIDStickerHalloweenPika3                                      IapItemDisplayTemplateID = "STICKER_HALLOWEEN_PIKA.3"
 	IapItemDisplayTemplateIDStickerHalloweenPika5                                      IapItemDisplayTemplateID = "STICKER_HALLOWEEN_PIKA.5"
+	IapItemDisplayTemplateIDStickerHalloweenPikachuPancake13                           IapItemDisplayTemplateID = "STICKER_HALLOWEEN_PIKACHU_PANCAKE_1.3"
+	IapItemDisplayTemplateIDStickerHalloweenPikachuPancake15                           IapItemDisplayTemplateID = "STICKER_HALLOWEEN_PIKACHU_PANCAKE_1.5"
+	IapItemDisplayTemplateIDStickerHalloweenPolteageist13                              IapItemDisplayTemplateID = "STICKER_HALLOWEEN_POLTEAGEIST_1.3"
+	IapItemDisplayTemplateIDStickerHalloweenPolteageist15                              IapItemDisplayTemplateID = "STICKER_HALLOWEEN_POLTEAGEIST_1.5"
 	IapItemDisplayTemplateIDStickerHalloweenSqu3                                       IapItemDisplayTemplateID = "STICKER_HALLOWEEN_SQU.3"
 	IapItemDisplayTemplateIDStickerHalloweenSqu5                                       IapItemDisplayTemplateID = "STICKER_HALLOWEEN_SQU.5"
 	IapItemDisplayTemplateIDStickerHalloween21Fuwaraid3                                IapItemDisplayTemplateID = "STICKER_HALLOWEEN21_FUWARAID.3"
@@ -1670,14 +1682,26 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDStickerGowa2025045,
 	IapItemDisplayTemplateIDStickerGowa2025053,
 	IapItemDisplayTemplateIDStickerGowa2025055,
+	IapItemDisplayTemplateIDStickerGowa202613,
+	IapItemDisplayTemplateIDStickerGowa202615,
+	IapItemDisplayTemplateIDStickerGowa202623,
+	IapItemDisplayTemplateIDStickerGowa202625,
+	IapItemDisplayTemplateIDStickerGowa202633,
+	IapItemDisplayTemplateIDStickerGowa202635,
 	IapItemDisplayTemplateIDStickerHalloweenBulb3,
 	IapItemDisplayTemplateIDStickerHalloweenBulb5,
 	IapItemDisplayTemplateIDStickerHalloweenCharm3,
 	IapItemDisplayTemplateIDStickerHalloweenCharm5,
+	IapItemDisplayTemplateIDStickerHalloweenCrobat13,
+	IapItemDisplayTemplateIDStickerHalloweenCrobat15,
 	IapItemDisplayTemplateIDStickerHalloweenGengarmd3,
 	IapItemDisplayTemplateIDStickerHalloweenGengarmd5,
 	IapItemDisplayTemplateIDStickerHalloweenPika3,
 	IapItemDisplayTemplateIDStickerHalloweenPika5,
+	IapItemDisplayTemplateIDStickerHalloweenPikachuPancake13,
+	IapItemDisplayTemplateIDStickerHalloweenPikachuPancake15,
+	IapItemDisplayTemplateIDStickerHalloweenPolteageist13,
+	IapItemDisplayTemplateIDStickerHalloweenPolteageist15,
 	IapItemDisplayTemplateIDStickerHalloweenSqu3,
 	IapItemDisplayTemplateIDStickerHalloweenSqu5,
 	IapItemDisplayTemplateIDStickerHalloween21Fuwaraid3,

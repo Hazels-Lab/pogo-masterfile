@@ -27,9 +27,6 @@ export interface ArPhotoFeatureFlags {
 				"MAGEARNA",
 				"CHEWTLE",
 				"DREDNAW",
-				"CRAMORANT",
-				"ARROKUDA",
-				"BARRASKEWDA",
 				"MILCERY",
 				"ALCREMIE",
 				"PINCURCHIN",
@@ -44,21 +41,15 @@ export interface ArPhotoFeatureFlags {
 				"SPECTRIER",
 				"CALYREX",
 				"BASCULEGION",
-				"SQUAWKABILLY",
-				"MASCHIFF",
-				"MABOSSTIFF",
 				"BRAMBLIN",
 				"BRAMBLEGHAST",
 				"CAPSAKID",
 				"SCOVILLAIN",
 				"RELLOR",
 				"RABSCA",
-				"FLITTLE",
-				"ESPATHRA",
 				"FINIZEN",
 				"PALAFIN",
 				"CYCLIZAR",
-				"ORTHWORM",
 				"VELUZA",
 				"FARIGIRAF",
 				"GREATTUSK",
@@ -122,10 +113,6 @@ export interface ArPhotoFeatureFlags {
 				{
 					excludedForms: ["BLASTOISE_COPY_2019"];
 					pokemonId: "BLASTOISE";
-				},
-				{
-					excludedForms: ["PIKACHU_COPY_2019"];
-					pokemonId: "PIKACHU";
 				},
 				{
 					excludedForms: ["PSYDUCK_SWIM_2025"];
@@ -381,12 +368,94 @@ export interface ArPhotoFeatureFlags {
 					pokemonId: "GIMMIGHOUL";
 				},
 				{
+					excludedForms: ["CORSOLA_SPRING_2026"];
+					pokemonId: "CORSOLA";
+				},
+				{
+					excludedForms: [
+						"PIKACHU_VISOR_2026",
+						"PIKACHU_ADVENTURE_HAT_2020",
+						"PIKACHU_COPY_2019",
+						"PIKACHU_COSTUME_2020",
+						"PIKACHU_DIWALI_2024",
+						"PIKACHU_DOCTOR",
+						"PIKACHU_FALL_2019",
+						"PIKACHU_FLYING_01",
+						"PIKACHU_FLYING_02",
+						"PIKACHU_FLYING_03",
+						"PIKACHU_FLYING_04",
+						"PIKACHU_FLYING_5TH_ANNIV",
+						"PIKACHU_FLYING_OKINAWA",
+						"PIKACHU_GOFEST_2022",
+						"PIKACHU_GOFEST_2024_MTIARA",
+						"PIKACHU_GOFEST_2024_STIARA",
+						"PIKACHU_GOFEST_2025_GOGGLES_BLUE",
+						"PIKACHU_GOFEST_2025_GOGGLES_RED",
+						"PIKACHU_GOFEST_2025_GOGGLES_YELLOW",
+						"PIKACHU_GOFEST_2025_MONOCLE_BLUE",
+						"PIKACHU_GOFEST_2025_MONOCLE_RED",
+						"PIKACHU_GOFEST_2025_MONOCLE_YELLOW",
+						"PIKACHU_GOTOUR_2024_A",
+						"PIKACHU_GOTOUR_2024_A_02",
+						"PIKACHU_GOTOUR_2024_B",
+						"PIKACHU_GOTOUR_2024_B_02",
+						"PIKACHU_GOTOUR_2025_A",
+						"PIKACHU_GOTOUR_2025_A_02",
+						"PIKACHU_GOTOUR_2025_B",
+						"PIKACHU_GOTOUR_2025_B_02",
+						"PIKACHU_GOTOUR_2026_A",
+						"PIKACHU_GOTOUR_2026_A_02",
+						"PIKACHU_GOTOUR_2026_B",
+						"PIKACHU_GOTOUR_2026_B_02",
+						"PIKACHU_GOTOUR_2026_C",
+						"PIKACHU_GOTOUR_2026_C_02",
+						"PIKACHU_HORIZONS",
+						"PIKACHU_JEJU",
+						"PIKACHU_KARIYUSHI",
+						"PIKACHU_KURTA",
+						"PIKACHU_NORMAL",
+						"PIKACHU_POP_STAR",
+						"PIKACHU_ROCK_STAR",
+						"PIKACHU_SUMMER_2023_A",
+						"PIKACHU_SUMMER_2023_B",
+						"PIKACHU_SUMMER_2023_C",
+						"PIKACHU_SUMMER_2023_D",
+						"PIKACHU_SUMMER_2023_E",
+						"PIKACHU_TSHIRT_01",
+						"PIKACHU_TSHIRT_02",
+						"PIKACHU_TSHIRT_03",
+						"PIKACHU_VS_2019",
+						"PIKACHU_WCS_2022",
+						"PIKACHU_WCS_2023",
+						"PIKACHU_WCS_2024",
+						"PIKACHU_WCS_2025",
+						"PIKACHU_WINTER_2020",
+						"PIKACHU_BB_2026",
+						"PIKACHU_GOFEST_2026_CAP_RED",
+						"PIKACHU_GOFEST_2026_CAP_BLUE",
+						"PIKACHU_GOFEST_2026_CAP_YELLOW",
+					];
+					pokemonId: "PIKACHU";
+				},
+				{
+					excludedForms: ["DITTO_SPRING_2026_A", "DITTO_SPRING_2026_B"];
+					pokemonId: "DITTO";
+				},
+				{
+					excludedForms: ["CATERPIE_GOFEST_2026"];
+					pokemonId: "CATERPIE";
+				},
+				{
 					excludedForms: ["CHARMANDER_GOGGLES_2026"];
 					pokemonId: "CHARMANDER";
 				},
 				{
 					excludedForms: ["CHARMELEON_GOGGLES_2026"];
 					pokemonId: "CHARMELEON";
+				},
+				{
+					excludedForms: ["CRAMORANT_GORGING", "CRAMORANT_GULPING"];
+					pokemonId: "CRAMORANT";
 				},
 			];
 			preLoginDeviceAllowList: [
