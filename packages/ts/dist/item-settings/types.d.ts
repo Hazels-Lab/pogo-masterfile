@@ -258,7 +258,8 @@ export interface ItemSettingsData {
 			| "details_link_key_shayminmasterworkrerun"
 			| "item_event_ticket_evergreen_details_PawPrint_20250620"
 			| "item_global_event_ticket_details_GOTour2026"
-			| "nickit_website_link";
+			| "nickit_website_link"
+			| "zorua_website_link";
 		displayV2Enabled?: boolean;
 		eventBadge?: "BADGE_GO_TOUR_2026_GLOBAL";
 		eventBannerUrl?:

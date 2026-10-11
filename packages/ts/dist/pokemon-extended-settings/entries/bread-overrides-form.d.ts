@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 223 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 225 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -7940,6 +7940,82 @@ export type PokemonExtendedSettingsV0482PokemonAzelfNormal = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0483PokemonDialgaNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0483_POKEMON_DIALGA_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 8.81;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 35;
+						maxReticleSize: 11;
+						scale: 4.41;
+					};
+					maxLobbyVisualSettings: {
+						yOffset: -0.55;
+					};
+					maxStationVisualSettings: {
+						scale: 0.6;
+						yOffset: -0.55;
+					};
+				},
+			];
+			form: "DIALGA_NORMAL";
+			sizeSettings: {
+				mLowerBound: 4.05;
+				mUpperBound: 6.75;
+				xlUpperBound: 8.1;
+				xsLowerBound: 2.7;
+				xxlUpperBound: 8.37;
+				xxsLowerBound: 2.646;
+			};
+			uniqueId: "DIALGA";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0484PokemonPalkiaNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0484_POKEMON_PALKIA_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 9.5;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 39.2;
+						maxReticleSize: 14;
+						scale: 5;
+					};
+					maxLobbyVisualSettings: {
+						scale: 12;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 0.6;
+					};
+					maxStationVisualSettings: {
+						scale: 0.65;
+					};
+				},
+			];
+			form: "PALKIA_NORMAL";
+			sizeSettings: {
+				mLowerBound: 3.15;
+				mUpperBound: 5.25;
+				xlUpperBound: 6.3;
+				xsLowerBound: 2.1;
+				xxlUpperBound: 6.51;
+				xxsLowerBound: 2.058;
+			};
+			uniqueId: "PALKIA";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0519PokemonPidoveNormal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0519_POKEMON_PIDOVE_NORMAL",
@@ -10098,6 +10174,29 @@ export type PokemonExtendedSettingsV0884PokemonDuraludonNormal = S<
 						scale: 1.37;
 					};
 				},
+				{
+					averageHeightM: 43;
+					breadMode: "BREAD_DOUGH_MODE";
+					camera: {
+						cylinderHeightM: 1.8;
+						cylinderRadiusM: 1.25;
+					};
+					maxBattleVisualSettings: {
+						scale: 17;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 36;
+						maxReticleSize: 17;
+						scale: 10;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 0.7;
+					};
+					maxStationVisualSettings: {
+						scale: 1.2;
+					};
+					modelScaleV2: 1;
+				},
 			];
 			form: "DURALUDON_NORMAL";
 			sizeSettings: {
@@ -10447,6 +10546,8 @@ export type PokemonExtendedSettingsBreadOverridesFormMasterfileEntry =
 	| PokemonExtendedSettingsV0480PokemonUxieNormal
 	| PokemonExtendedSettingsV0481PokemonMespritNormal
 	| PokemonExtendedSettingsV0482PokemonAzelfNormal
+	| PokemonExtendedSettingsV0483PokemonDialgaNormal
+	| PokemonExtendedSettingsV0484PokemonPalkiaNormal
 	| PokemonExtendedSettingsV0519PokemonPidoveNormal
 	| PokemonExtendedSettingsV0520PokemonTranquillNormal
 	| PokemonExtendedSettingsV0521PokemonUnfezantNormal

@@ -1450,7 +1450,7 @@ export type ItemSettingsItemEventTicketS24Oct10Community = S<
 				backgroundImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg";
 				clientEventEndTimeUtcMs: "1791651600000";
 				clientEventStartTimeUtcMs: "1791640800000";
-				detailsLinkKey: "details_link_key";
+				detailsLinkKey: "zorua_website_link";
 				displayV2Enabled: true;
 				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg";
 				eventDatetimeRangeKey: "event_datetime_range_key_CD_Zorua26";

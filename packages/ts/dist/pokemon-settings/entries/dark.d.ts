@@ -3666,6 +3666,7 @@ export type PokemonSettingsV0571PokemonZoroark = S<
 			};
 			candyToEvolve: 25;
 			cinematicMoves: ["FOUL_PLAY", "SLUDGE_BOMB", "FLAMETHROWER", "NIGHT_SHADE"];
+			eliteQuickMove: ["SUCKER_PUNCH_FAST"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 29;
@@ -3733,6 +3734,7 @@ export type PokemonSettingsV0571PokemonZoroarkNormal = S<
 			};
 			candyToEvolve: 25;
 			cinematicMoves: ["FOUL_PLAY", "SLUDGE_BOMB", "FLAMETHROWER", "NIGHT_SHADE"];
+			eliteQuickMove: ["SUCKER_PUNCH_FAST"];
 			encounter: {
 				attackProbability: 0.1;
 				attackTimerS: 29;

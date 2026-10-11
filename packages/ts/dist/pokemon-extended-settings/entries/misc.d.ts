@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 828 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 826 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -5522,38 +5522,6 @@ export type PokemonExtendedSettingsV0479PokemonRotom = S<
 				xxsLowerBound: 0.147;
 			};
 			uniqueId: "ROTOM";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0483PokemonDialga = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0483_POKEMON_DIALGA",
-		{
-			sizeSettings: {
-				mLowerBound: 4.05;
-				mUpperBound: 6.75;
-				xlUpperBound: 8.1;
-				xsLowerBound: 2.7;
-				xxlUpperBound: 8.37;
-				xxsLowerBound: 2.646;
-			};
-			uniqueId: "DIALGA";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0484PokemonPalkia = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0484_POKEMON_PALKIA",
-		{
-			sizeSettings: {
-				mLowerBound: 3.15;
-				mUpperBound: 5.25;
-				xlUpperBound: 6.3;
-				xsLowerBound: 2.1;
-				xxlUpperBound: 6.51;
-				xxsLowerBound: 2.058;
-			};
-			uniqueId: "PALKIA";
 		}
 	>
 >;
@@ -13613,8 +13581,6 @@ export type PokemonExtendedSettingsMiscMasterfileEntry =
 	| PokemonExtendedSettingsV0477PokemonDusknoir
 	| PokemonExtendedSettingsV0478PokemonFroslass
 	| PokemonExtendedSettingsV0479PokemonRotom
-	| PokemonExtendedSettingsV0483PokemonDialga
-	| PokemonExtendedSettingsV0484PokemonPalkia
 	| PokemonExtendedSettingsV0485PokemonHeatran
 	| PokemonExtendedSettingsV0486PokemonRegigigas
 	| PokemonExtendedSettingsV0487PokemonGiratina

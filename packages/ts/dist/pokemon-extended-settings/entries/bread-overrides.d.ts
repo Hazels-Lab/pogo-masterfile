@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides", 143 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides", 145 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -3172,6 +3172,80 @@ export type PokemonExtendedSettingsV0482PokemonAzelf = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0483PokemonDialga = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0483_POKEMON_DIALGA",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 8.81;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 35;
+						maxReticleSize: 11;
+						scale: 4.41;
+					};
+					maxLobbyVisualSettings: {
+						yOffset: -0.55;
+					};
+					maxStationVisualSettings: {
+						scale: 0.6;
+						yOffset: -0.55;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 4.05;
+				mUpperBound: 6.75;
+				xlUpperBound: 8.1;
+				xsLowerBound: 2.7;
+				xxlUpperBound: 8.37;
+				xxsLowerBound: 2.646;
+			};
+			uniqueId: "DIALGA";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0484PokemonPalkia = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0484_POKEMON_PALKIA",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 9.5;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 39.2;
+						maxReticleSize: 14;
+						scale: 5;
+					};
+					maxLobbyVisualSettings: {
+						scale: 12;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 0.6;
+					};
+					maxStationVisualSettings: {
+						scale: 0.65;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 3.15;
+				mUpperBound: 5.25;
+				xlUpperBound: 6.3;
+				xsLowerBound: 2.1;
+				xxlUpperBound: 6.51;
+				xxsLowerBound: 2.058;
+			};
+			uniqueId: "PALKIA";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0519PokemonPidove = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0519_POKEMON_PIDOVE",
@@ -5172,6 +5246,29 @@ export type PokemonExtendedSettingsV0884PokemonDuraludon = S<
 						scale: 1.37;
 					};
 				},
+				{
+					averageHeightM: 43;
+					breadMode: "BREAD_DOUGH_MODE";
+					camera: {
+						cylinderHeightM: 1.8;
+						cylinderRadiusM: 1.25;
+					};
+					maxBattleVisualSettings: {
+						scale: 17;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 36;
+						maxReticleSize: 17;
+						scale: 10;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 0.7;
+					};
+					maxStationVisualSettings: {
+						scale: 1.2;
+					};
+					modelScaleV2: 1;
+				},
 			];
 			sizeSettings: {
 				mLowerBound: 1.35;
@@ -5344,6 +5441,8 @@ export type PokemonExtendedSettingsBreadOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0480PokemonUxie
 	| PokemonExtendedSettingsV0481PokemonMesprit
 	| PokemonExtendedSettingsV0482PokemonAzelf
+	| PokemonExtendedSettingsV0483PokemonDialga
+	| PokemonExtendedSettingsV0484PokemonPalkia
 	| PokemonExtendedSettingsV0519PokemonPidove
 	| PokemonExtendedSettingsV0520PokemonTranquill
 	| PokemonExtendedSettingsV0521PokemonUnfezant
