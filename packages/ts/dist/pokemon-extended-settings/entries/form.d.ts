@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1177 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1175 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -8245,23 +8245,6 @@ export type PokemonExtendedSettingsV0479PokemonRotomWash = S<
 		}
 	>
 >;
-export type PokemonExtendedSettingsV0483PokemonDialgaNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0483_POKEMON_DIALGA_NORMAL",
-		{
-			form: "DIALGA_NORMAL";
-			sizeSettings: {
-				mLowerBound: 4.05;
-				mUpperBound: 6.75;
-				xlUpperBound: 8.1;
-				xsLowerBound: 2.7;
-				xxlUpperBound: 8.37;
-				xxsLowerBound: 2.646;
-			};
-			uniqueId: "DIALGA";
-		}
-	>
->;
 export type PokemonExtendedSettingsV0483PokemonDialgaOrigin = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0483_POKEMON_DIALGA_ORIGIN",
@@ -8276,23 +8259,6 @@ export type PokemonExtendedSettingsV0483PokemonDialgaOrigin = S<
 				xxsLowerBound: 3.43;
 			};
 			uniqueId: "DIALGA";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0484PokemonPalkiaNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0484_POKEMON_PALKIA_NORMAL",
-		{
-			form: "PALKIA_NORMAL";
-			sizeSettings: {
-				mLowerBound: 3.15;
-				mUpperBound: 5.25;
-				xlUpperBound: 6.3;
-				xsLowerBound: 2.1;
-				xxlUpperBound: 6.51;
-				xxsLowerBound: 2.058;
-			};
-			uniqueId: "PALKIA";
 		}
 	>
 >;
@@ -20646,9 +20612,7 @@ export type PokemonExtendedSettingsFormMasterfileEntry =
 	| PokemonExtendedSettingsV0479PokemonRotomMow
 	| PokemonExtendedSettingsV0479PokemonRotomNormal
 	| PokemonExtendedSettingsV0479PokemonRotomWash
-	| PokemonExtendedSettingsV0483PokemonDialgaNormal
 	| PokemonExtendedSettingsV0483PokemonDialgaOrigin
-	| PokemonExtendedSettingsV0484PokemonPalkiaNormal
 	| PokemonExtendedSettingsV0484PokemonPalkiaOrigin
 	| PokemonExtendedSettingsV0485PokemonHeatranNormal
 	| PokemonExtendedSettingsV0486PokemonRegigigasNormal

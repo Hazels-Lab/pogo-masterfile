@@ -14,6 +14,7 @@ const (
 	FeatureGateTemplateIDAmsFrontendFeatureGate                             FeatureGateTemplateID = "AMS_FRONTEND_FEATURE_GATE"
 	FeatureGateTemplateIDCombatSuppressFastMovePredictionsOnSwapFeatureGate FeatureGateTemplateID = "COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE"
 	FeatureGateTemplateIDCombatVnextInitializeBdLastFeatureGate             FeatureGateTemplateID = "COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE"
+	FeatureGateTemplateIDCombatVnextShowMiniorIbfcToastsFeatureGate         FeatureGateTemplateID = "COMBAT_VNEXT_SHOW_MINIOR_IBFC_TOASTS_FEATURE_GATE"
 	FeatureGateTemplateIDCombineCompassAndWeatherFeatureGate                FeatureGateTemplateID = "COMBINE_COMPASS_AND_WEATHER_FEATURE_GATE"
 	FeatureGateTemplateIDDailyEncounterGenerationContextFeatureGate         FeatureGateTemplateID = "DAILY_ENCOUNTER_GENERATION_CONTEXT_FEATURE_GATE"
 	FeatureGateTemplateIDDisableLegacyNearbyPokemonFeatureGate              FeatureGateTemplateID = "DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE"
@@ -32,6 +33,7 @@ const (
 	FeatureGateTemplateIDGmoWildPokemonS2LocationFeatureGate                FeatureGateTemplateID = "GMO_WILD_POKEMON_S2_LOCATION_FEATURE_GATE"
 	FeatureGateTemplateIDGmoWildPokemonS2LocationServerFeatureGate          FeatureGateTemplateID = "GMO_WILD_POKEMON_S2_LOCATION_SERVER_FEATURE_GATE"
 	FeatureGateTemplateIDHideCampfireMapButtonsFeatureGate                  FeatureGateTemplateID = "HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE"
+	FeatureGateTemplateIDHideUiInMiniorIbfcFeatureGate                      FeatureGateTemplateID = "HIDE_UI_IN_MINIOR_IBFC_FEATURE_GATE"
 	FeatureGateTemplateIDLuckyTradeNewStringsFeatureGate                    FeatureGateTemplateID = "LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE"
 	FeatureGateTemplateIDMeetupReminderNotificationsFeatureGate             FeatureGateTemplateID = "MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE"
 	FeatureGateTemplateIDMepEggReadMigrationFeatureGate                     FeatureGateTemplateID = "MEP_EGG_READ_MIGRATION_FEATURE_GATE"
@@ -58,6 +60,7 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDAmsFrontendFeatureGate,
 	FeatureGateTemplateIDCombatSuppressFastMovePredictionsOnSwapFeatureGate,
 	FeatureGateTemplateIDCombatVnextInitializeBdLastFeatureGate,
+	FeatureGateTemplateIDCombatVnextShowMiniorIbfcToastsFeatureGate,
 	FeatureGateTemplateIDCombineCompassAndWeatherFeatureGate,
 	FeatureGateTemplateIDDailyEncounterGenerationContextFeatureGate,
 	FeatureGateTemplateIDDisableLegacyNearbyPokemonFeatureGate,
@@ -76,6 +79,7 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDGmoWildPokemonS2LocationFeatureGate,
 	FeatureGateTemplateIDGmoWildPokemonS2LocationServerFeatureGate,
 	FeatureGateTemplateIDHideCampfireMapButtonsFeatureGate,
+	FeatureGateTemplateIDHideUiInMiniorIbfcFeatureGate,
 	FeatureGateTemplateIDLuckyTradeNewStringsFeatureGate,
 	FeatureGateTemplateIDMeetupReminderNotificationsFeatureGate,
 	FeatureGateTemplateIDMepEggReadMigrationFeatureGate,

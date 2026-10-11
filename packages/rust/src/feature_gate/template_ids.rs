@@ -25,6 +25,8 @@ pub enum FeatureGateTemplateId {
     CombatSuppressFastMovePredictionsOnSwapFeatureGate,
     #[serde(rename = "COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE")]
     CombatVnextInitializeBdLastFeatureGate,
+    #[serde(rename = "COMBAT_VNEXT_SHOW_MINIOR_IBFC_TOASTS_FEATURE_GATE")]
+    CombatVnextShowMiniorIbfcToastsFeatureGate,
     #[serde(rename = "COMBINE_COMPASS_AND_WEATHER_FEATURE_GATE")]
     CombineCompassAndWeatherFeatureGate,
     #[serde(rename = "DAILY_ENCOUNTER_GENERATION_CONTEXT_FEATURE_GATE")]
@@ -61,6 +63,8 @@ pub enum FeatureGateTemplateId {
     GmoWildPokemonS2LocationServerFeatureGate,
     #[serde(rename = "HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE")]
     HideCampfireMapButtonsFeatureGate,
+    #[serde(rename = "HIDE_UI_IN_MINIOR_IBFC_FEATURE_GATE")]
+    HideUiInMiniorIbfcFeatureGate,
     #[serde(rename = "LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE")]
     LuckyTradeNewStringsFeatureGate,
     #[serde(rename = "MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE")]

@@ -29,6 +29,7 @@ export type IapItemDisplayGeneral2Ticket3 = S<
 		"general2.ticket.3",
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg";
 			sku: "pgorelease.general2.ticket.3";
 			skuDisableTime: "2026-10-10T17:00:00";

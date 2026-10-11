@@ -10,6 +10,7 @@ import type {
 	FeatureGateAmsFrontend,
 	FeatureGateCombatSuppressFastMovePredictionsOnSwap,
 	FeatureGateCombatVnextInitializeBdLast,
+	FeatureGateCombatVnextShowMiniorIbfcToasts,
 	FeatureGateCombineCompassAndWeather,
 	FeatureGateDailyEncounterGenerationContext,
 	FeatureGateDisableLegacyNearbyPokemon,
@@ -28,6 +29,7 @@ import type {
 	FeatureGateGmoWildPokemonS2Location,
 	FeatureGateGmoWildPokemonS2LocationServer,
 	FeatureGateHideCampfireMapButtons,
+	FeatureGateHideUiInMiniorIbfc,
 	FeatureGateLuckyTradeNewStrings,
 	FeatureGateMeetupReminderNotifications,
 	FeatureGateMepEggReadMigration,
@@ -54,6 +56,7 @@ export interface FeatureGateLookup {
 	AMS_FRONTEND_FEATURE_GATE: FeatureGateAmsFrontend;
 	COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE: FeatureGateCombatSuppressFastMovePredictionsOnSwap;
 	COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE: FeatureGateCombatVnextInitializeBdLast;
+	COMBAT_VNEXT_SHOW_MINIOR_IBFC_TOASTS_FEATURE_GATE: FeatureGateCombatVnextShowMiniorIbfcToasts;
 	COMBINE_COMPASS_AND_WEATHER_FEATURE_GATE: FeatureGateCombineCompassAndWeather;
 	DAILY_ENCOUNTER_GENERATION_CONTEXT_FEATURE_GATE: FeatureGateDailyEncounterGenerationContext;
 	DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE: FeatureGateDisableLegacyNearbyPokemon;
@@ -72,6 +75,7 @@ export interface FeatureGateLookup {
 	GMO_WILD_POKEMON_S2_LOCATION_FEATURE_GATE: FeatureGateGmoWildPokemonS2Location;
 	GMO_WILD_POKEMON_S2_LOCATION_SERVER_FEATURE_GATE: FeatureGateGmoWildPokemonS2LocationServer;
 	HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE: FeatureGateHideCampfireMapButtons;
+	HIDE_UI_IN_MINIOR_IBFC_FEATURE_GATE: FeatureGateHideUiInMiniorIbfc;
 	LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE: FeatureGateLuckyTradeNewStrings;
 	MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE: FeatureGateMeetupReminderNotifications;
 	MEP_EGG_READ_MIGRATION_FEATURE_GATE: FeatureGateMepEggReadMigration;

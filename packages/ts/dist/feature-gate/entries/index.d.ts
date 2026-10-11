@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 41 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 43 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -70,6 +70,14 @@ export type FeatureGateCombatSuppressFastMovePredictionsOnSwap = S<
 export type FeatureGateCombatVnextInitializeBdLast = S<
 	FeatureGate<
 		"COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateCombatVnextShowMiniorIbfcToasts = S<
+	FeatureGate<
+		"COMBAT_VNEXT_SHOW_MINIOR_IBFC_TOASTS_FEATURE_GATE",
 		{
 			status: 1;
 		}
@@ -243,6 +251,14 @@ export type FeatureGateHideCampfireMapButtons = S<
 		}
 	>
 >;
+export type FeatureGateHideUiInMiniorIbfc = S<
+	FeatureGate<
+		"HIDE_UI_IN_MINIOR_IBFC_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
 export type FeatureGateLuckyTradeNewStrings = S<
 	FeatureGate<
 		"LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE",
@@ -380,6 +396,7 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateAmsFrontend
 	| FeatureGateCombatSuppressFastMovePredictionsOnSwap
 	| FeatureGateCombatVnextInitializeBdLast
+	| FeatureGateCombatVnextShowMiniorIbfcToasts
 	| FeatureGateCombineCompassAndWeather
 	| FeatureGateDailyEncounterGenerationContext
 	| FeatureGateDisableLegacyNearbyPokemon
@@ -398,6 +415,7 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateGmoWildPokemonS2Location
 	| FeatureGateGmoWildPokemonS2LocationServer
 	| FeatureGateHideCampfireMapButtons
+	| FeatureGateHideUiInMiniorIbfc
 	| FeatureGateLuckyTradeNewStrings
 	| FeatureGateMeetupReminderNotifications
 	| FeatureGateMepEggReadMigration
