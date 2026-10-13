@@ -163,8 +163,7 @@ export type ItemExpirationSettingsIncubatorTimed = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_INCUBATOR_TIMED",
 		{
-			emergencyExpirationTime: "2026-10-13T10:00:00";
-			expirationTime: "2026-10-13T10:00:00";
+			expirationTime: "2026-01-13T10:00:00";
 		}
 	>
 >;

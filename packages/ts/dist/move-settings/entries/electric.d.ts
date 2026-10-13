@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSettings", split "electric", 24 entries.
+// Generated from Pokémon GO masterfile — group "moveSettings", split "electric", 25 entries.
 
 import type { S } from "../../_utils";
 import type { MoveSettings } from "../types";
@@ -388,6 +388,28 @@ export type MoveSettingsV0497MovePlasmaFists = S<
 		}
 	>
 >;
+export type MoveSettingsVmMoveTempEvolutionMegaV0310PokemonManectric = S<
+	MoveSettings<
+		"VM_MOVE_TEMP_EVOLUTION_MEGA_V0310_POKEMON_MANECTRIC",
+		{
+			accuracyChance: 1;
+			animationId: 5;
+			criticalChance: 0.05;
+			damageWindowEndMs: 2100;
+			damageWindowStartMs: 1700;
+			durationMs: 2500;
+			energyDelta: -100;
+			isLocked: true;
+			movementId: "TEMP_EVOLUTION_MEGA_V0310_POKEMON_MANECTRIC";
+			pokemonType: "POKEMON_TYPE_ELECTRIC";
+			power: 150;
+			staminaLossScalar: 0.08;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "discharge";
+		}
+	>
+>;
 export type MoveSettingsVmMoveTempEvolutionMegaXV0026PokemonRaichu = S<
 	MoveSettings<
 		"VM_MOVE_TEMP_EVOLUTION_MEGA_X_V0026_POKEMON_RAICHU",
@@ -506,6 +528,7 @@ export type MoveSettingsElectricMasterfileEntry =
 	| MoveSettingsV0406MoveAuraWheelElectric
 	| MoveSettingsV0472MoveThunderCage
 	| MoveSettingsV0497MovePlasmaFists
+	| MoveSettingsVmMoveTempEvolutionMegaV0310PokemonManectric
 	| MoveSettingsVmMoveTempEvolutionMegaXV0026PokemonRaichu
 	| MoveSettingsVmMoveTempEvolutionMegaYV0026PokemonRaichu
 	| MoveSettingsVnBm003

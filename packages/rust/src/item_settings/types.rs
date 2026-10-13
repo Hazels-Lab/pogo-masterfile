@@ -112,7 +112,7 @@ pub struct GlobalEventTicket {
 #[serde(rename_all = "camelCase")]
 pub struct Incense {
     pub incense_lifetime_seconds: u64,
-    pub spawn_table_probability: Option<f64>,
+    pub spawn_table_probability: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

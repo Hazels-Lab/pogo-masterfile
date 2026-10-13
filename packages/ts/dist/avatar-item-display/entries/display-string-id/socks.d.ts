@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/socks", 18 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/socks", 19 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -81,6 +81,15 @@ export type AvatarItemDisplayNSocksFw2022B0 = S<
 		{
 			displayStringId: "n_socks_fw2022_b_0_display_name";
 			iconAddress: "n_socks_fw2022_b_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNSocksGothiclolita = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_socks_gothiclolita",
+		{
+			displayStringId: "avatar_socks_gothiclolita";
+			iconAddress: "n_socks_gothiclolita_icon";
 		}
 	>
 >;
@@ -176,6 +185,7 @@ export type AvatarItemDisplayDisplayStringIdSocksMasterfileEntry =
 	| AvatarItemDisplayNSocksDefaultB3
 	| AvatarItemDisplayNSocksFw2022A0
 	| AvatarItemDisplayNSocksFw2022B0
+	| AvatarItemDisplayNSocksGothiclolita
 	| AvatarItemDisplayNSocksHgss0
 	| AvatarItemDisplayNSocksSneakersocks0
 	| AvatarItemDisplayNSocksSneakersocks1

@@ -1861,6 +1861,10 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNShirtGoteamrocketsierraA0,
     #[serde(rename = "N_DISPLAY_n_shirt_goteamrocketsierra_b_0")]
     NDisplayNShirtGoteamrocketsierraB0,
+    #[serde(rename = "N_DISPLAY_n_shirt_gothiclolita-shorts")]
+    NDisplayNShirtGothiclolitaShorts,
+    #[serde(rename = "N_DISPLAY_n_shirt_gothiclolita-skirt")]
+    NDisplayNShirtGothiclolitaSkirt,
     #[serde(rename = "N_DISPLAY_n_shirt_gothitelleitems_0")]
     NDisplayNShirtGothitelleitems0,
     #[serde(rename = "N_DISPLAY_n_shirt_gotour2023_0")]
@@ -2611,6 +2615,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNShoesGiovanniB0,
     #[serde(rename = "N_DISPLAY_n_shoes_gladion_0")]
     NDisplayNShoesGladion0,
+    #[serde(rename = "N_DISPLAY_n_shoes_gothiclolita")]
+    NDisplayNShoesGothiclolita,
     #[serde(rename = "N_DISPLAY_n_shoes_gothitelleitems_0")]
     NDisplayNShoesGothitelleitems0,
     #[serde(rename = "N_DISPLAY_n_shoes_green_a_0")]
@@ -2851,6 +2857,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNSocksFw2022A0,
     #[serde(rename = "N_DISPLAY_n_socks_fw2022_b_0")]
     NDisplayNSocksFw2022B0,
+    #[serde(rename = "N_DISPLAY_n_socks_gothiclolita")]
+    NDisplayNSocksGothiclolita,
     #[serde(rename = "N_DISPLAY_n_socks_hgss_0")]
     NDisplayNSocksHgss0,
     #[serde(rename = "N_DISPLAY_n_socks_sneakersocks_0")]

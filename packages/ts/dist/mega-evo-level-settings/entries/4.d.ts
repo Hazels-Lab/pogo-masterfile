@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", split "4", 14 entries.
+// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", split "4", 15 entries.
 
 import type { S } from "../../_utils";
 import type { MegaEvoLevelSettings } from "../types";
@@ -195,6 +195,30 @@ export type MegaEvoLevelSettings4V0229PokemonHoundoom = S<
 		}
 	>
 >;
+export type MegaEvoLevelSettings4V0310PokemonManectric = S<
+	MegaEvoLevelSettings<
+		"MEGA_EVOLUTION_LEVEL_4_V0310_POKEMON_MANECTRIC",
+		{
+			cooldown: {
+				bypassCostInitial: 5;
+				durationMs: "86400000";
+			};
+			effects: {
+				sameTypeExtraCatchCandy: 3;
+				sameTypeExtraCatchCandyXlChance: 0.3;
+				sameTypeExtraCatchXp: 200;
+				selfCpBoostAdditionalLevel: 2;
+			};
+			ftueExpirationTimestamp: "1775001600000";
+			level: 4;
+			megaEnergyCostToUnlock: 5000;
+			pokemonId: "MANECTRIC";
+			progression: {
+				pointsRequired: 30;
+			};
+		}
+	>
+>;
 export type MegaEvoLevelSettings4V0398PokemonStaraptor = S<
 	MegaEvoLevelSettings<
 		"MEGA_EVOLUTION_LEVEL_4_V0398_POKEMON_STARAPTOR",
@@ -349,6 +373,7 @@ export type MegaEvoLevelSettings4MasterfileEntry =
 	| MegaEvoLevelSettings4V0150PokemonMewtwo
 	| MegaEvoLevelSettings4V0227PokemonSkarmory
 	| MegaEvoLevelSettings4V0229PokemonHoundoom
+	| MegaEvoLevelSettings4V0310PokemonManectric
 	| MegaEvoLevelSettings4V0398PokemonStaraptor
 	| MegaEvoLevelSettings4V0652PokemonChesnaught
 	| MegaEvoLevelSettings4V0655PokemonDelphox
