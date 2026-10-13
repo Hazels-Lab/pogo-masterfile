@@ -8769,6 +8769,7 @@ export type PokemonSettingsV0310PokemonManectric = S<
 					averageHeightM: 1.8;
 					averageWeightKg: 44;
 					raidBossDistanceOffset: 9;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0310_POKEMON_MANECTRIC";
 					stats: {
 						baseAttack: 286;
 						baseDefense: 179;
@@ -8869,6 +8870,7 @@ export type PokemonSettingsV0310PokemonManectricNormal = S<
 					averageHeightM: 1.8;
 					averageWeightKg: 44;
 					raidBossDistanceOffset: 9;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0310_POKEMON_MANECTRIC";
 					stats: {
 						baseAttack: 286;
 						baseDefense: 179;

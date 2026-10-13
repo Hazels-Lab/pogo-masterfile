@@ -287,6 +287,8 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel4V0227PokemonSkarmory,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0229_POKEMON_HOUNDOOM")]
     MegaEvolutionLevel4V0229PokemonHoundoom,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0310_POKEMON_MANECTRIC")]
+    MegaEvolutionLevel4V0310PokemonManectric,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0398_POKEMON_STARAPTOR")]
     MegaEvolutionLevel4V0398PokemonStaraptor,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0652_POKEMON_CHESNAUGHT")]

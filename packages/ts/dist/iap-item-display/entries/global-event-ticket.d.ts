@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 4 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 5 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -80,9 +80,27 @@ export type IapItemDisplayMonth2DeluxeEventPassTrackRedirect = S<
 		}
 	>
 >;
+export type IapItemDisplayOctober12026DeluxeEventPassTrackUnlockRedirect = S<
+	IapItemDisplay<
+		"OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_REDIRECT",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F9272deab_PGO-MCS_Fall_Marathon_Buddy_Trek_TICKET_v1-1024x576.jpg";
+			sku: "pgorelease.october1_2026_deluxe_event_pass_track_unlock_redirect";
+			skuDisableTime: "2026-10-21T20:00:00";
+			skuDisableTimeUtcMs: "1792612800000";
+			skuEnableTime: "2025-10-13T10:00:00";
+			skuEnableTimeUtcMs: "1760349600000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_fall_marathon_2026";
+		}
+	>
+>;
 
 export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayGeneral1Ticket5
 	| IapItemDisplayGeneral2Ticket3
 	| IapItemDisplayGeneral2Ticket11
-	| IapItemDisplayMonth2DeluxeEventPassTrackRedirect;
+	| IapItemDisplayMonth2DeluxeEventPassTrackRedirect
+	| IapItemDisplayOctober12026DeluxeEventPassTrackUnlockRedirect;

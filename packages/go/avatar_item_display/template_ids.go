@@ -932,6 +932,8 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShirtGoteamrocketcliffB0            AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_goteamrocketcliff_b_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGoteamrocketsierraA0           AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_goteamrocketsierra_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGoteamrocketsierraB0           AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_goteamrocketsierra_b_0"
+	AvatarItemDisplayTemplateIDNDisplayNShirtGothiclolitaShorts             AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gothiclolita-shorts"
+	AvatarItemDisplayTemplateIDNDisplayNShirtGothiclolitaSkirt              AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gothiclolita-skirt"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGothitelleitems0               AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gothitelleitems_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGotour20230                    AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gotour2023_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGotour20240                    AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gotour2024_0"
@@ -1307,6 +1309,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShoesGiovanniA0                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_giovanni_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesGiovanniB0                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_giovanni_b_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesGladion0                       AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_gladion_0"
+	AvatarItemDisplayTemplateIDNDisplayNShoesGothiclolita                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_gothiclolita"
 	AvatarItemDisplayTemplateIDNDisplayNShoesGothitelleitems0               AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_gothitelleitems_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesGreenA0                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_green_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesGreenB0                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_green_b_0"
@@ -1427,6 +1430,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNSocksDefaultB3                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_socks_default_b_3"
 	AvatarItemDisplayTemplateIDNDisplayNSocksFw2022A0                       AvatarItemDisplayTemplateID = "N_DISPLAY_n_socks_fw2022_a_0"
 	AvatarItemDisplayTemplateIDNDisplayNSocksFw2022B0                       AvatarItemDisplayTemplateID = "N_DISPLAY_n_socks_fw2022_b_0"
+	AvatarItemDisplayTemplateIDNDisplayNSocksGothiclolita                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_socks_gothiclolita"
 	AvatarItemDisplayTemplateIDNDisplayNSocksHgss0                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_socks_hgss_0"
 	AvatarItemDisplayTemplateIDNDisplayNSocksSneakersocks0                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_socks_sneakersocks_0"
 	AvatarItemDisplayTemplateIDNDisplayNSocksSneakersocks1                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_socks_sneakersocks_1"
@@ -2636,6 +2640,8 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShirtGoteamrocketcliffB0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGoteamrocketsierraA0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGoteamrocketsierraB0,
+	AvatarItemDisplayTemplateIDNDisplayNShirtGothiclolitaShorts,
+	AvatarItemDisplayTemplateIDNDisplayNShirtGothiclolitaSkirt,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGothitelleitems0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGotour20230,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGotour20240,
@@ -3011,6 +3017,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShoesGiovanniA0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesGiovanniB0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesGladion0,
+	AvatarItemDisplayTemplateIDNDisplayNShoesGothiclolita,
 	AvatarItemDisplayTemplateIDNDisplayNShoesGothitelleitems0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesGreenA0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesGreenB0,
@@ -3131,6 +3138,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNSocksDefaultB3,
 	AvatarItemDisplayTemplateIDNDisplayNSocksFw2022A0,
 	AvatarItemDisplayTemplateIDNDisplayNSocksFw2022B0,
+	AvatarItemDisplayTemplateIDNDisplayNSocksGothiclolita,
 	AvatarItemDisplayTemplateIDNDisplayNSocksHgss0,
 	AvatarItemDisplayTemplateIDNDisplayNSocksSneakersocks0,
 	AvatarItemDisplayTemplateIDNDisplayNSocksSneakersocks1,

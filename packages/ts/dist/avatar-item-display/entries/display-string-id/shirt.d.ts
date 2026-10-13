@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shirt", 465 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shirt", 467 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -1269,6 +1269,24 @@ export type AvatarItemDisplayNShirtGoteamrocketsierraB0 = S<
 		{
 			displayStringId: "n_shirt_goteamrocketsierra_b_0_display_name";
 			iconAddress: "n_shirt_goteamrocketsierra_b_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtGothiclolitaShorts = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_gothiclolita-shorts",
+		{
+			displayStringId: "avatar_shirt_gothiclolitashorts";
+			iconAddress: "n_shirt_gothiclolita-shorts_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShirtGothiclolitaSkirt = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shirt_gothiclolita-skirt",
+		{
+			displayStringId: "avatar_shirt_gothiclolitaskirt";
+			iconAddress: "n_shirt_gothiclolita-skirt_icon";
 		}
 	>
 >;
@@ -4331,6 +4349,8 @@ export type AvatarItemDisplayDisplayStringIdShirtMasterfileEntry =
 	| AvatarItemDisplayNShirtGoteamrocketcliffB0
 	| AvatarItemDisplayNShirtGoteamrocketsierraA0
 	| AvatarItemDisplayNShirtGoteamrocketsierraB0
+	| AvatarItemDisplayNShirtGothiclolitaShorts
+	| AvatarItemDisplayNShirtGothiclolitaSkirt
 	| AvatarItemDisplayNShirtGothitelleitems0
 	| AvatarItemDisplayNShirtGotour20230
 	| AvatarItemDisplayNShirtGotour20240

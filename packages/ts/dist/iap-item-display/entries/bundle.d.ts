@@ -235,15 +235,12 @@ export type IapItemDisplayBundleCd20221 = S<
 		"bundle.cd2022.1",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
 			sale: true;
 			sku: "bundle.cd2022.1";
-			skuDisableTime: "2026-10-11T23:59:59";
-			skuDisableTimeUtcMs: "1791763199000";
-			skuEnableTime: "2022-10-13T12:00:00";
-			skuEnableTimeUtcMs: "1665662400000";
 			sortOrder: 1;
-			spriteId: "bundle.general4.small.1";
-			title: "bundle.general4.small.1_title";
+			spriteId: "bundle.halloween.small.1";
+			title: "bundle.halloween.small.1_title";
 		}
 	>
 >;
@@ -252,15 +249,12 @@ export type IapItemDisplayBundleCd20222 = S<
 		"bundle.cd2022.2",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
 			sale: true;
 			sku: "bundle.cd2022.2";
-			skuDisableTime: "2026-10-11T23:59:59";
-			skuDisableTimeUtcMs: "1791763199000";
-			skuEnableTime: "2022-10-13T12:00:00";
-			skuEnableTimeUtcMs: "1665662400000";
 			sortOrder: 2;
-			spriteId: "bundle.general1.medium.1";
-			title: "bundle.general1.medium.1_title";
+			spriteId: "bundle.halloween.adventure.1";
+			title: "bundle.halloween.adventure.1_title";
 		}
 	>
 >;
@@ -1600,8 +1594,13 @@ export type IapItemDisplayBundleHatchbox20241 = S<
 		"bundle.hatchbox2024.1",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
+			showDiscountTag: true;
+			showStrikethroughPrice: true;
 			sku: "bundle.hatchbox2024.1";
+			skuDisableTime: "2026-10-19T20:00:00";
+			skuDisableTimeUtcMs: "1792440000000";
+			skuEnableTime: "2022-10-13T12:00:00";
+			skuEnableTimeUtcMs: "1665662400000";
 			sortOrder: 1;
 			spriteId: "bundle.general.adventure.1";
 			title: "bundle.xmas.large.1_title";

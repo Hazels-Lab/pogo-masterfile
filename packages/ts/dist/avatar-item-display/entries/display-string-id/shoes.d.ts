@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shoes", 162 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shoes", 163 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -459,6 +459,15 @@ export type AvatarItemDisplayNShoesGladion0 = S<
 		{
 			displayStringId: "n_shoes_gladion_0_display_name";
 			iconAddress: "n_shoes_gladion_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShoesGothiclolita = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shoes_gothiclolita",
+		{
+			displayStringId: "avatar_shoes_gothiclolita";
+			iconAddress: "n_shoes_gothiclolita_icon";
 		}
 	>
 >;
@@ -1514,6 +1523,7 @@ export type AvatarItemDisplayDisplayStringIdShoesMasterfileEntry =
 	| AvatarItemDisplayNShoesGiovanniA0
 	| AvatarItemDisplayNShoesGiovanniB0
 	| AvatarItemDisplayNShoesGladion0
+	| AvatarItemDisplayNShoesGothiclolita
 	| AvatarItemDisplayNShoesGothitelleitems0
 	| AvatarItemDisplayNShoesGreenA0
 	| AvatarItemDisplayNShoesGreenB0

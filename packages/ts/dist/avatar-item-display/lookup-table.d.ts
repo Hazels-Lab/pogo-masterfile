@@ -928,6 +928,8 @@ import type {
 	AvatarItemDisplayNShirtGoteamrocketcliffB0,
 	AvatarItemDisplayNShirtGoteamrocketsierraA0,
 	AvatarItemDisplayNShirtGoteamrocketsierraB0,
+	AvatarItemDisplayNShirtGothiclolitaShorts,
+	AvatarItemDisplayNShirtGothiclolitaSkirt,
 	AvatarItemDisplayNShirtGothitelleitems0,
 	AvatarItemDisplayNShirtGotour2026Black0,
 	AvatarItemDisplayNShirtGotour2026Gray0,
@@ -1303,6 +1305,7 @@ import type {
 	AvatarItemDisplayNShoesGiovanniA0,
 	AvatarItemDisplayNShoesGiovanniB0,
 	AvatarItemDisplayNShoesGladion0,
+	AvatarItemDisplayNShoesGothiclolita,
 	AvatarItemDisplayNShoesGothitelleitems0,
 	AvatarItemDisplayNShoesGreenA0,
 	AvatarItemDisplayNShoesGreenB0,
@@ -1423,6 +1426,7 @@ import type {
 	AvatarItemDisplayNSocksDefaultB3,
 	AvatarItemDisplayNSocksFw2022A0,
 	AvatarItemDisplayNSocksFw2022B0,
+	AvatarItemDisplayNSocksGothiclolita,
 	AvatarItemDisplayNSocksHgss0,
 	AvatarItemDisplayNSocksSneakersocks0,
 	AvatarItemDisplayNSocksSneakersocks1,
@@ -2632,6 +2636,8 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_goteamrocketcliff_b_0: AvatarItemDisplayNShirtGoteamrocketcliffB0;
 	N_DISPLAY_n_shirt_goteamrocketsierra_a_0: AvatarItemDisplayNShirtGoteamrocketsierraA0;
 	N_DISPLAY_n_shirt_goteamrocketsierra_b_0: AvatarItemDisplayNShirtGoteamrocketsierraB0;
+	"N_DISPLAY_n_shirt_gothiclolita-shorts": AvatarItemDisplayNShirtGothiclolitaShorts;
+	"N_DISPLAY_n_shirt_gothiclolita-skirt": AvatarItemDisplayNShirtGothiclolitaSkirt;
 	N_DISPLAY_n_shirt_gothitelleitems_0: AvatarItemDisplayNShirtGothitelleitems0;
 	N_DISPLAY_n_shirt_gotour2023_0: AvatarItemDisplayNShirtGotour20230;
 	N_DISPLAY_n_shirt_gotour2024_0: AvatarItemDisplayNShirtGotour20240;
@@ -3007,6 +3013,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shoes_giovanni_a_0: AvatarItemDisplayNShoesGiovanniA0;
 	N_DISPLAY_n_shoes_giovanni_b_0: AvatarItemDisplayNShoesGiovanniB0;
 	N_DISPLAY_n_shoes_gladion_0: AvatarItemDisplayNShoesGladion0;
+	N_DISPLAY_n_shoes_gothiclolita: AvatarItemDisplayNShoesGothiclolita;
 	N_DISPLAY_n_shoes_gothitelleitems_0: AvatarItemDisplayNShoesGothitelleitems0;
 	N_DISPLAY_n_shoes_green_a_0: AvatarItemDisplayNShoesGreenA0;
 	N_DISPLAY_n_shoes_green_b_0: AvatarItemDisplayNShoesGreenB0;
@@ -3127,6 +3134,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_socks_default_b_3: AvatarItemDisplayNSocksDefaultB3;
 	N_DISPLAY_n_socks_fw2022_a_0: AvatarItemDisplayNSocksFw2022A0;
 	N_DISPLAY_n_socks_fw2022_b_0: AvatarItemDisplayNSocksFw2022B0;
+	N_DISPLAY_n_socks_gothiclolita: AvatarItemDisplayNSocksGothiclolita;
 	N_DISPLAY_n_socks_hgss_0: AvatarItemDisplayNSocksHgss0;
 	N_DISPLAY_n_socks_sneakersocks_0: AvatarItemDisplayNSocksSneakersocks0;
 	N_DISPLAY_n_socks_sneakersocks_1: AvatarItemDisplayNSocksSneakersocks1;

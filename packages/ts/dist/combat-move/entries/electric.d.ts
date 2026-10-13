@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatMove", split "electric", 21 entries.
+// Generated from Pokémon GO masterfile — group "combatMove", split "electric", 22 entries.
 
 import type { S } from "../../_utils";
 import type { CombatMove } from "../types";
@@ -264,6 +264,18 @@ export type CombatMoveV0497MovePlasmaFists = S<
 		}
 	>
 >;
+export type CombatMoveVmMoveTempEvolutionMegaV0310PokemonManectric = S<
+	CombatMove<
+		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0310_POKEMON_MANECTRIC",
+		{
+			energyDelta: -35;
+			power: 50;
+			type: "POKEMON_TYPE_ELECTRIC";
+			uniqueId: "TEMP_EVOLUTION_MEGA_V0310_POKEMON_MANECTRIC";
+			vfxName: "discharge";
+		}
+	>
+>;
 export type CombatMoveVmMoveTempEvolutionMegaXV0026PokemonRaichu = S<
 	CombatMove<
 		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_X_V0026_POKEMON_RAICHU",
@@ -317,5 +329,6 @@ export type CombatMoveElectricMasterfileEntry =
 	| CombatMoveV0406MoveAuraWheelElectric
 	| CombatMoveV0472MoveThunderCage
 	| CombatMoveV0497MovePlasmaFists
+	| CombatMoveVmMoveTempEvolutionMegaV0310PokemonManectric
 	| CombatMoveVmMoveTempEvolutionMegaXV0026PokemonRaichu
 	| CombatMoveVmMoveTempEvolutionMegaYV0026PokemonRaichu;
