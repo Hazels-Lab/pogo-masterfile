@@ -2,6 +2,24 @@
 
 All notable changes to `pogo-masterfile-types` (crates.io) are recorded here. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.72] - 2026-10-14
+
+Automated regeneration from upstream masterfile commit `4f3862789321d6d47b9efaeb852175613cece793`.
+
+### Added template IDs (11)
+
+- BADGE_EVENT_0271
+- COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0609_POKEMON_CHANDELURE
+- COMBAT_VNEXT_PLAY_MISSED_FM_FEATURE_GATE
+- ITEM_EVENT_TICKET_S24_OCT31_MEGARAID
+- MEGA_EVOLUTION_LEVEL_0_V0609_POKEMON_CHANDELURE
+- MEGA_EVOLUTION_LEVEL_1_V0609_POKEMON_CHANDELURE
+- MEGA_EVOLUTION_LEVEL_2_V0609_POKEMON_CHANDELURE
+- MEGA_EVOLUTION_LEVEL_3_V0609_POKEMON_CHANDELURE
+- MEGA_EVOLUTION_LEVEL_4_V0609_POKEMON_CHANDELURE
+- TEMPORARY_EVOLUTION_V0609_POKEMON_CHANDELURE
+- VM_MOVE_TEMP_EVOLUTION_MEGA_V0609_POKEMON_CHANDELURE
+
 ## [0.1.71] - 2026-10-13
 
 Automated regeneration from upstream masterfile commit `699f22f2f7f482467008545afbbff46ddb27770d`.

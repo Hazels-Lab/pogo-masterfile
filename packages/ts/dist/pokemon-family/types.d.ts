@@ -29,6 +29,7 @@ export interface PokemonFamilyData {
 		| "BLASTOISE"
 		| "BLAZIKEN"
 		| "CAMERUPT"
+		| "CHANDELURE"
 		| "CHESNAUGHT"
 		| "DELPHOX"
 		| "DIANCIE"

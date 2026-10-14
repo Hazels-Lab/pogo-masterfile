@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSettings", split "ghost", 17 entries.
+// Generated from Pokémon GO masterfile — group "moveSettings", split "ghost", 18 entries.
 
 import type { S } from "../../_utils";
 import type { MoveSettings } from "../types";
@@ -308,6 +308,28 @@ export type MoveSettingsV0464MoveRageFist = S<
 		}
 	>
 >;
+export type MoveSettingsVmMoveTempEvolutionMegaV0609PokemonChandelure = S<
+	MoveSettings<
+		"VM_MOVE_TEMP_EVOLUTION_MEGA_V0609_POKEMON_CHANDELURE",
+		{
+			accuracyChance: 1;
+			animationId: 5;
+			criticalChance: 0.05;
+			damageWindowEndMs: 2300;
+			damageWindowStartMs: 2050;
+			durationMs: 2500;
+			energyDelta: -100;
+			isLocked: true;
+			movementId: "TEMP_EVOLUTION_MEGA_V0609_POKEMON_CHANDELURE";
+			pokemonType: "POKEMON_TYPE_GHOST";
+			power: 145;
+			staminaLossScalar: 0.06;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "ominous_wind";
+		}
+	>
+>;
 export type MoveSettingsVnBm006 = S<
 	MoveSettings<
 		"VN_BM_006",
@@ -361,5 +383,6 @@ export type MoveSettingsGhostMasterfileEntry =
 	| MoveSettingsV0398MoveSpiritShackle
 	| MoveSettingsV0405MoveMoongeistBeam
 	| MoveSettingsV0464MoveRageFist
+	| MoveSettingsVmMoveTempEvolutionMegaV0609PokemonChandelure
 	| MoveSettingsVnBm006
 	| MoveSettingsVnBm024;

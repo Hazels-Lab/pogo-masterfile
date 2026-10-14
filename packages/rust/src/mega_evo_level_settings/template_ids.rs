@@ -61,6 +61,8 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel0V0398PokemonStaraptor,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0445_POKEMON_GARCHOMP")]
     MegaEvolutionLevel0V0445PokemonGarchomp,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0609_POKEMON_CHANDELURE")]
+    MegaEvolutionLevel0V0609PokemonChandelure,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0652_POKEMON_CHESNAUGHT")]
     MegaEvolutionLevel0V0652PokemonChesnaught,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_0_V0655_POKEMON_DELPHOX")]
@@ -127,6 +129,8 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel1V0398PokemonStaraptor,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0445_POKEMON_GARCHOMP")]
     MegaEvolutionLevel1V0445PokemonGarchomp,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0609_POKEMON_CHANDELURE")]
+    MegaEvolutionLevel1V0609PokemonChandelure,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0652_POKEMON_CHESNAUGHT")]
     MegaEvolutionLevel1V0652PokemonChesnaught,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_1_V0655_POKEMON_DELPHOX")]
@@ -193,6 +197,8 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel2V0398PokemonStaraptor,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0445_POKEMON_GARCHOMP")]
     MegaEvolutionLevel2V0445PokemonGarchomp,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0609_POKEMON_CHANDELURE")]
+    MegaEvolutionLevel2V0609PokemonChandelure,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0652_POKEMON_CHESNAUGHT")]
     MegaEvolutionLevel2V0652PokemonChesnaught,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_2_V0655_POKEMON_DELPHOX")]
@@ -259,6 +265,8 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel3V0398PokemonStaraptor,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0445_POKEMON_GARCHOMP")]
     MegaEvolutionLevel3V0445PokemonGarchomp,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0609_POKEMON_CHANDELURE")]
+    MegaEvolutionLevel3V0609PokemonChandelure,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0652_POKEMON_CHESNAUGHT")]
     MegaEvolutionLevel3V0652PokemonChesnaught,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_3_V0655_POKEMON_DELPHOX")]
@@ -291,6 +299,8 @@ pub enum MegaEvoLevelSettingsTemplateId {
     MegaEvolutionLevel4V0310PokemonManectric,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0398_POKEMON_STARAPTOR")]
     MegaEvolutionLevel4V0398PokemonStaraptor,
+    #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0609_POKEMON_CHANDELURE")]
+    MegaEvolutionLevel4V0609PokemonChandelure,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0652_POKEMON_CHESNAUGHT")]
     MegaEvolutionLevel4V0652PokemonChesnaught,
     #[serde(rename = "MEGA_EVOLUTION_LEVEL_4_V0655_POKEMON_DELPHOX")]

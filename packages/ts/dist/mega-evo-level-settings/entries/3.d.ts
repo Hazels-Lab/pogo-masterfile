@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", split "3", 33 entries.
+// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", split "3", 34 entries.
 
 import type { S } from "../../_utils";
 import type { MegaEvoLevelSettings } from "../types";
@@ -596,6 +596,28 @@ export type MegaEvoLevelSettings3V0445PokemonGarchomp = S<
 		}
 	>
 >;
+export type MegaEvoLevelSettings3V0609PokemonChandelure = S<
+	MegaEvoLevelSettings<
+		"MEGA_EVOLUTION_LEVEL_3_V0609_POKEMON_CHANDELURE",
+		{
+			cooldown: {
+				bypassCostInitial: 15;
+				durationMs: "259200000";
+			};
+			effects: {
+				sameTypeExtraCatchCandy: 2;
+				sameTypeExtraCatchCandyXlChance: 0.25;
+				sameTypeExtraCatchXp: 100;
+			};
+			level: 3;
+			megaEnergyCostPerPoint: 80;
+			pokemonId: "CHANDELURE";
+			progression: {
+				pointsRequired: 30;
+			};
+		}
+	>
+>;
 export type MegaEvoLevelSettings3V0652PokemonChesnaught = S<
 	MegaEvoLevelSettings<
 		"MEGA_EVOLUTION_LEVEL_3_V0652_POKEMON_CHESNAUGHT",
@@ -757,6 +779,7 @@ export type MegaEvoLevelSettings3MasterfileEntry =
 	| MegaEvoLevelSettings3V0384PokemonRayquaza
 	| MegaEvoLevelSettings3V0398PokemonStaraptor
 	| MegaEvoLevelSettings3V0445PokemonGarchomp
+	| MegaEvoLevelSettings3V0609PokemonChandelure
 	| MegaEvoLevelSettings3V0652PokemonChesnaught
 	| MegaEvoLevelSettings3V0655PokemonDelphox
 	| MegaEvoLevelSettings3V0658PokemonGreninja

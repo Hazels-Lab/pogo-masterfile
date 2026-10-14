@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", 147 entries (structural types).
+// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", 152 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -42,6 +42,7 @@ export interface MegaEvoLevelSettingsData {
 		| "ALTARIA"
 		| "BANETTE"
 		| "BEEDRILL"
+		| "CHANDELURE"
 		| "CHESNAUGHT"
 		| "DELPHOX"
 		| "DIANCIE"

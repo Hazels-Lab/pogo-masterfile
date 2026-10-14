@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "temporaryEvolutionSettings", 60 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "temporaryEvolutionSettings", 61 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { TemporaryEvolutionSettings } from "../types";
@@ -771,6 +771,20 @@ export type TemporaryEvolutionSettingsV0531PokemonAudino = S<
 		}
 	>
 >;
+export type TemporaryEvolutionSettingsV0609PokemonChandelure = S<
+	TemporaryEvolutionSettings<
+		"TEMPORARY_EVOLUTION_V0609_POKEMON_CHANDELURE",
+		{
+			pokemonId: "CHANDELURE";
+			temporaryEvolutions: [
+				{
+					assetBundleValue: 51;
+					temporaryEvolutionId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+		}
+	>
+>;
 export type TemporaryEvolutionSettingsV0652PokemonChesnaught = S<
 	TemporaryEvolutionSettings<
 		"TEMPORARY_EVOLUTION_V0652_POKEMON_CHESNAUGHT",
@@ -911,6 +925,7 @@ export type TemporaryEvolutionSettingsMasterfileEntry =
 	| TemporaryEvolutionSettingsV0460PokemonAbomasnow
 	| TemporaryEvolutionSettingsV0475PokemonGallade
 	| TemporaryEvolutionSettingsV0531PokemonAudino
+	| TemporaryEvolutionSettingsV0609PokemonChandelure
 	| TemporaryEvolutionSettingsV0652PokemonChesnaught
 	| TemporaryEvolutionSettingsV0655PokemonDelphox
 	| TemporaryEvolutionSettingsV0658PokemonGreninja

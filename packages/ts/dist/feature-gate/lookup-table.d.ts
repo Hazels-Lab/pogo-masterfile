@@ -10,6 +10,7 @@ import type {
 	FeatureGateAmsFrontend,
 	FeatureGateCombatSuppressFastMovePredictionsOnSwap,
 	FeatureGateCombatVnextInitializeBdLast,
+	FeatureGateCombatVnextPlayMissedFm,
 	FeatureGateCombatVnextShowMiniorIbfcToasts,
 	FeatureGateCombineCompassAndWeather,
 	FeatureGateDailyEncounterGenerationContext,
@@ -56,6 +57,7 @@ export interface FeatureGateLookup {
 	AMS_FRONTEND_FEATURE_GATE: FeatureGateAmsFrontend;
 	COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE: FeatureGateCombatSuppressFastMovePredictionsOnSwap;
 	COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE: FeatureGateCombatVnextInitializeBdLast;
+	COMBAT_VNEXT_PLAY_MISSED_FM_FEATURE_GATE: FeatureGateCombatVnextPlayMissedFm;
 	COMBAT_VNEXT_SHOW_MINIOR_IBFC_TOASTS_FEATURE_GATE: FeatureGateCombatVnextShowMiniorIbfcToasts;
 	COMBINE_COMPASS_AND_WEATHER_FEATURE_GATE: FeatureGateCombineCompassAndWeather;
 	DAILY_ENCOUNTER_GENERATION_CONTEXT_FEATURE_GATE: FeatureGateDailyEncounterGenerationContext;
