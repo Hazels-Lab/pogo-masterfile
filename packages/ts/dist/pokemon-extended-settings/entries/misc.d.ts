@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 826 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 825 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -7269,22 +7269,6 @@ export type PokemonExtendedSettingsV0608PokemonLampent = S<
 		}
 	>
 >;
-export type PokemonExtendedSettingsV0609PokemonChandelure = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0609_POKEMON_CHANDELURE",
-		{
-			sizeSettings: {
-				mLowerBound: 0.75;
-				mUpperBound: 1.25;
-				xlUpperBound: 1.5;
-				xsLowerBound: 0.5;
-				xxlUpperBound: 2;
-				xxsLowerBound: 0.49;
-			};
-			uniqueId: "CHANDELURE";
-		}
-	>
->;
 export type PokemonExtendedSettingsV0610PokemonAxew = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0610_POKEMON_AXEW",
@@ -13690,7 +13674,6 @@ export type PokemonExtendedSettingsMiscMasterfileEntry =
 	| PokemonExtendedSettingsV0606PokemonBeheeyem
 	| PokemonExtendedSettingsV0607PokemonLitwick
 	| PokemonExtendedSettingsV0608PokemonLampent
-	| PokemonExtendedSettingsV0609PokemonChandelure
 	| PokemonExtendedSettingsV0610PokemonAxew
 	| PokemonExtendedSettingsV0611PokemonFraxure
 	| PokemonExtendedSettingsV0612PokemonHaxorus

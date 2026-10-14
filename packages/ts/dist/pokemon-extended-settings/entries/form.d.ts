@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1175 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1174 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -10710,23 +10710,6 @@ export type PokemonExtendedSettingsV0608PokemonLampentNormal = S<
 		}
 	>
 >;
-export type PokemonExtendedSettingsV0609PokemonChandelureNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0609_POKEMON_CHANDELURE_NORMAL",
-		{
-			form: "CHANDELURE_NORMAL";
-			sizeSettings: {
-				mLowerBound: 0.75;
-				mUpperBound: 1.25;
-				xlUpperBound: 1.5;
-				xsLowerBound: 0.5;
-				xxlUpperBound: 2;
-				xxsLowerBound: 0.49;
-			};
-			uniqueId: "CHANDELURE";
-		}
-	>
->;
 export type PokemonExtendedSettingsV0610PokemonAxewNormal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0610_POKEMON_AXEW_NORMAL",
@@ -20757,7 +20740,6 @@ export type PokemonExtendedSettingsFormMasterfileEntry =
 	| PokemonExtendedSettingsV0606PokemonBeheeyemNormal
 	| PokemonExtendedSettingsV0607PokemonLitwickNormal
 	| PokemonExtendedSettingsV0608PokemonLampentNormal
-	| PokemonExtendedSettingsV0609PokemonChandelureNormal
 	| PokemonExtendedSettingsV0610PokemonAxewNormal
 	| PokemonExtendedSettingsV0611PokemonFraxureNormal
 	| PokemonExtendedSettingsV0612PokemonHaxorusNormal

@@ -25,6 +25,8 @@ pub enum FeatureGateTemplateId {
     CombatSuppressFastMovePredictionsOnSwapFeatureGate,
     #[serde(rename = "COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE")]
     CombatVnextInitializeBdLastFeatureGate,
+    #[serde(rename = "COMBAT_VNEXT_PLAY_MISSED_FM_FEATURE_GATE")]
+    CombatVnextPlayMissedFmFeatureGate,
     #[serde(rename = "COMBAT_VNEXT_SHOW_MINIOR_IBFC_TOASTS_FEATURE_GATE")]
     CombatVnextShowMiniorIbfcToastsFeatureGate,
     #[serde(rename = "COMBINE_COMPASS_AND_WEATHER_FEATURE_GATE")]

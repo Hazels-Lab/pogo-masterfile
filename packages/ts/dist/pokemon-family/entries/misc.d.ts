@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonFamily", split "misc", 483 entries.
+// Generated from Pokémon GO masterfile — group "pokemonFamily", split "misc", 482 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonFamily } from "../types";
@@ -1984,14 +1984,6 @@ export type PokemonFamilyV0605FamilyElgyem = S<
 		"V0605_FAMILY_ELGYEM",
 		{
 			familyId: "FAMILY_ELGYEM";
-		}
-	>
->;
-export type PokemonFamilyV0607FamilyLitwick = S<
-	PokemonFamily<
-		"V0607_FAMILY_LITWICK",
-		{
-			familyId: "FAMILY_LITWICK";
 		}
 	>
 >;
@@ -4117,7 +4109,6 @@ export type PokemonFamilyMiscMasterfileEntry =
 	| PokemonFamilyV0599FamilyKlink
 	| PokemonFamilyV0602FamilyTynamo
 	| PokemonFamilyV0605FamilyElgyem
-	| PokemonFamilyV0607FamilyLitwick
 	| PokemonFamilyV0610FamilyAxew
 	| PokemonFamilyV0613FamilyCubchoo
 	| PokemonFamilyV0615FamilyCryogonal

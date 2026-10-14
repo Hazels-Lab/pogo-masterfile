@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonFamily", split "mega-evolvable-pokemon-id", 54 entries.
+// Generated from Pokémon GO masterfile — group "pokemonFamily", split "mega-evolvable-pokemon-id", 55 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonFamily } from "../types";
@@ -435,6 +435,15 @@ export type PokemonFamilyV0531FamilyAudino = S<
 		}
 	>
 >;
+export type PokemonFamilyV0607FamilyLitwick = S<
+	PokemonFamily<
+		"V0607_FAMILY_LITWICK",
+		{
+			familyId: "FAMILY_LITWICK";
+			megaEvolvablePokemonId: "CHANDELURE";
+		}
+	>
+>;
 export type PokemonFamilyV0650FamilyChespin = S<
 	PokemonFamily<
 		"V0650_FAMILY_CHESPIN",
@@ -539,6 +548,7 @@ export type PokemonFamilyMegaEvolvablePokemonIdMasterfileEntry =
 	| PokemonFamilyV0448FamilyLucario
 	| PokemonFamilyV0459FamilySnover
 	| PokemonFamilyV0531FamilyAudino
+	| PokemonFamilyV0607FamilyLitwick
 	| PokemonFamilyV0650FamilyChespin
 	| PokemonFamilyV0653FamilyFennekin
 	| PokemonFamilyV0656FamilyFroakie

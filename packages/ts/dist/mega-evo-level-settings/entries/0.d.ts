@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", split "0", 33 entries.
+// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", split "0", 34 entries.
 
 import type { S } from "../../_utils";
 import type { MegaEvoLevelSettings } from "../types";
@@ -434,6 +434,22 @@ export type MegaEvoLevelSettings0V0445PokemonGarchomp = S<
 		}
 	>
 >;
+export type MegaEvoLevelSettings0V0609PokemonChandelure = S<
+	MegaEvoLevelSettings<
+		"MEGA_EVOLUTION_LEVEL_0_V0609_POKEMON_CHANDELURE",
+		{
+			cooldown: {
+				bypassCostInitial: 300;
+				durationMs: "1209600000";
+			};
+			effects: {
+				sameTypeExtraCatchCandy: 1;
+			};
+			pokemonId: "CHANDELURE";
+			progression: object;
+		}
+	>
+>;
 export type MegaEvoLevelSettings0V0652PokemonChesnaught = S<
 	MegaEvoLevelSettings<
 		"MEGA_EVOLUTION_LEVEL_0_V0652_POKEMON_CHESNAUGHT",
@@ -559,6 +575,7 @@ export type MegaEvoLevelSettings0MasterfileEntry =
 	| MegaEvoLevelSettings0V0384PokemonRayquaza
 	| MegaEvoLevelSettings0V0398PokemonStaraptor
 	| MegaEvoLevelSettings0V0445PokemonGarchomp
+	| MegaEvoLevelSettings0V0609PokemonChandelure
 	| MegaEvoLevelSettings0V0652PokemonChesnaught
 	| MegaEvoLevelSettings0V0655PokemonDelphox
 	| MegaEvoLevelSettings0V0658PokemonGreninja

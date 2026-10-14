@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "temp-evo-overrides", 41 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "temp-evo-overrides", 42 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -1087,6 +1087,35 @@ export type PokemonExtendedSettingsV0531PokemonAudino = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0609PokemonChandelure = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0609_POKEMON_CHANDELURE",
+		{
+			sizeSettings: {
+				mLowerBound: 0.75;
+				mUpperBound: 1.25;
+				xlUpperBound: 1.5;
+				xsLowerBound: 0.5;
+				xxlUpperBound: 2;
+				xxsLowerBound: 0.49;
+			};
+			tempEvoOverrides: [
+				{
+					sizeSettings: {
+						mLowerBound: 1.875;
+						mUpperBound: 3.125;
+						xlUpperBound: 3.75;
+						xsLowerBound: 1.25;
+						xxlUpperBound: 3.875;
+						xxsLowerBound: 0.7;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+			uniqueId: "CHANDELURE";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0652PokemonChesnaught = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0652_POKEMON_CHESNAUGHT",
@@ -1242,6 +1271,7 @@ export type PokemonExtendedSettingsTempEvoOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0448PokemonLucario
 	| PokemonExtendedSettingsV0460PokemonAbomasnow
 	| PokemonExtendedSettingsV0531PokemonAudino
+	| PokemonExtendedSettingsV0609PokemonChandelure
 	| PokemonExtendedSettingsV0652PokemonChesnaught
 	| PokemonExtendedSettingsV0655PokemonDelphox
 	| PokemonExtendedSettingsV0658PokemonGreninja

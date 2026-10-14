@@ -3138,6 +3138,7 @@ export type PokemonSettingsV0607PokemonLitwick = S<
 			buddyOffsetFemale: [7.5, 0, 0];
 			buddyOffsetMale: [7.5, 0, 0];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 25;
 			camera: {
 				cylinderHeightM: 0.45;
 				cylinderRadiusM: 0.15;
@@ -3218,6 +3219,7 @@ export type PokemonSettingsV0607PokemonLitwickNormal = S<
 			buddyOffsetFemale: [7.5, 0, 0];
 			buddyOffsetMale: [7.5, 0, 0];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 25;
 			camera: {
 				cylinderHeightM: 0.45;
 				cylinderRadiusM: 0.15;
@@ -3300,6 +3302,7 @@ export type PokemonSettingsV0608PokemonLampent = S<
 			buddyOffsetFemale: [4.2, 0, -36.8];
 			buddyOffsetMale: [4.2, 0, -36.8];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 25;
 			camera: {
 				cylinderGroundM: 0.05;
 				cylinderHeightM: 0.83;
@@ -3388,6 +3391,7 @@ export type PokemonSettingsV0608PokemonLampentNormal = S<
 			buddyOffsetFemale: [4.2, 0, -36.8];
 			buddyOffsetMale: [4.2, 0, -36.8];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 25;
 			camera: {
 				cylinderGroundM: 0.05;
 				cylinderHeightM: 0.83;
@@ -3479,6 +3483,7 @@ export type PokemonSettingsV0609PokemonChandelure = S<
 			buddyOffsetMale: [70.1, 0, -71.7];
 			buddyScale: 18;
 			buddySize: "BUDDY_FLYING";
+			buddyWalkedMegaEnergyAward: 25;
 			camera: {
 				cylinderGroundM: 0.81;
 				cylinderHeightM: 2.38;
@@ -3511,6 +3516,13 @@ export type PokemonSettingsV0609PokemonChandelure = S<
 				shadowBaseCaptureRate: 0.05;
 				shadowDodgeProbability: 0.2;
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 60;
+				},
+			];
 			evolutionPips: 1;
 			familyId: "FAMILY_LITWICK";
 			heightStdDev: 0.125;
@@ -3539,6 +3551,28 @@ export type PokemonSettingsV0609PokemonChandelure = S<
 				baseDefense: 182;
 				baseStamina: 155;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 2.5;
+					averageWeightKg: 69.6;
+					camera: {
+						cylinderGroundM: 1.2;
+						cylinderHeightM: 3;
+						cylinderRadiusM: 1.7;
+					};
+					modelHeight: 2.5;
+					modelScaleV2: 0.8;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0609_POKEMON_CHANDELURE";
+					stats: {
+						baseAttack: 335;
+						baseDefense: 227;
+						baseStamina: 155;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+					typeOverride1: "POKEMON_TYPE_GHOST";
+					typeOverride2: "POKEMON_TYPE_FIRE";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 75;
 				stardustToUnlock: 75000;
@@ -3561,6 +3595,7 @@ export type PokemonSettingsV0609PokemonChandelureNormal = S<
 			buddyOffsetMale: [70.1, 0, -71.7];
 			buddyScale: 18;
 			buddySize: "BUDDY_FLYING";
+			buddyWalkedMegaEnergyAward: 25;
 			camera: {
 				cylinderGroundM: 0.81;
 				cylinderHeightM: 2.38;
@@ -3593,6 +3628,13 @@ export type PokemonSettingsV0609PokemonChandelureNormal = S<
 				shadowBaseCaptureRate: 0.05;
 				shadowDodgeProbability: 0.2;
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 60;
+				},
+			];
 			evolutionPips: 1;
 			familyId: "FAMILY_LITWICK";
 			form: "CHANDELURE_NORMAL";
@@ -3622,6 +3664,28 @@ export type PokemonSettingsV0609PokemonChandelureNormal = S<
 				baseDefense: 182;
 				baseStamina: 155;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 2.5;
+					averageWeightKg: 69.6;
+					camera: {
+						cylinderGroundM: 1.2;
+						cylinderHeightM: 3;
+						cylinderRadiusM: 1.7;
+					};
+					modelHeight: 2.5;
+					modelScaleV2: 0.8;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0609_POKEMON_CHANDELURE";
+					stats: {
+						baseAttack: 335;
+						baseDefense: 227;
+						baseStamina: 155;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+					typeOverride1: "POKEMON_TYPE_GHOST";
+					typeOverride2: "POKEMON_TYPE_FIRE";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 75;
 				stardustToUnlock: 75000;

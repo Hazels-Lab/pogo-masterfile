@@ -14,6 +14,7 @@ const (
 	FeatureGateTemplateIDAmsFrontendFeatureGate                             FeatureGateTemplateID = "AMS_FRONTEND_FEATURE_GATE"
 	FeatureGateTemplateIDCombatSuppressFastMovePredictionsOnSwapFeatureGate FeatureGateTemplateID = "COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE"
 	FeatureGateTemplateIDCombatVnextInitializeBdLastFeatureGate             FeatureGateTemplateID = "COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE"
+	FeatureGateTemplateIDCombatVnextPlayMissedFmFeatureGate                 FeatureGateTemplateID = "COMBAT_VNEXT_PLAY_MISSED_FM_FEATURE_GATE"
 	FeatureGateTemplateIDCombatVnextShowMiniorIbfcToastsFeatureGate         FeatureGateTemplateID = "COMBAT_VNEXT_SHOW_MINIOR_IBFC_TOASTS_FEATURE_GATE"
 	FeatureGateTemplateIDCombineCompassAndWeatherFeatureGate                FeatureGateTemplateID = "COMBINE_COMPASS_AND_WEATHER_FEATURE_GATE"
 	FeatureGateTemplateIDDailyEncounterGenerationContextFeatureGate         FeatureGateTemplateID = "DAILY_ENCOUNTER_GENERATION_CONTEXT_FEATURE_GATE"
@@ -60,6 +61,7 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDAmsFrontendFeatureGate,
 	FeatureGateTemplateIDCombatSuppressFastMovePredictionsOnSwapFeatureGate,
 	FeatureGateTemplateIDCombatVnextInitializeBdLastFeatureGate,
+	FeatureGateTemplateIDCombatVnextPlayMissedFmFeatureGate,
 	FeatureGateTemplateIDCombatVnextShowMiniorIbfcToastsFeatureGate,
 	FeatureGateTemplateIDCombineCompassAndWeatherFeatureGate,
 	FeatureGateTemplateIDDailyEncounterGenerationContextFeatureGate,

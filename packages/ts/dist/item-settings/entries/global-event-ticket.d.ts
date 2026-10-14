@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 58 entries.
+// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 59 entries.
 
 import type { S } from "../../_utils";
 import type { ItemSettings } from "../types";
@@ -1573,6 +1573,8 @@ export type ItemSettingsItemEventTicketS24Oct24Maxbattle = S<
 				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fafa245c1_PGO-MCS_Lake_Guardians_Max_Battle_Day_v1-1025x576.jpg";
 				eventEndTime: "2026-10-24T17:00:00";
 				eventStartTime: "2026-10-24T14:00:00";
+				giftable: true;
+				giftItem: "ITEM_EVENT_TICKET_S24_OCT_24_MAXBATTLE_TO_GIFT";
 				iconRewards: [
 					{
 						item: {
@@ -1591,6 +1593,47 @@ export type ItemSettingsItemEventTicketS24Oct24Maxbattle = S<
 			};
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
 			nameOverride: "general2.ticket.6.DMAX_SINNOH_LAKE_MAX_BATTLE";
+		}
+	>
+>;
+export type ItemSettingsItemEventTicketS24Oct31Megaraid = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S24_OCT31_MEGARAID",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "item_event_ticket_gray_desc_MegaChandelureRaidDay";
+			globalEventTicket: {
+				backgroundImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F452fd1a0_PGO-MCS_Chandelure_Super_Mega_Raid_Day_v3_1024x576.jpg";
+				clientEventEndTimeUtcMs: "1793466000000";
+				clientEventStartTimeUtcMs: "1793455200000";
+				detailsLinkKey: "details_link_key_MegaChandelureRaidDay";
+				displayV2Enabled: true;
+				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F452fd1a0_PGO-MCS_Chandelure_Super_Mega_Raid_Day_v3_1024x576.jpg";
+				eventDatetimeRangeKey: "event_datetime_range_key_MegaChandelureRaidDay";
+				eventEndTime: "2026-10-31T17:00:00";
+				eventStartTime: "2026-10-31T14:00:00";
+				giftable: true;
+				giftItem: "ITEM_EVENT_TICKET_S24_OCT31_MEGARAID";
+				iconRewards: [
+					{
+						item: {
+							amount: 8;
+							item: "ITEM_FREE_RAID_TICKET";
+						};
+						type: "ITEM";
+					},
+					{
+						item: {
+							item: "ITEM_XL_RARE_CANDY";
+						};
+						type: "ITEM";
+					},
+				];
+				itemBagDescriptionKey: "item_event_ticket_gray_desc_MegaChandelureRaidDay";
+				textRewardsKey: "text_rewards_key_ChandelureRaidDay";
+			};
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general2.ticket.5_MegaChandelureRaidDay";
 		}
 	>
 >;
@@ -2009,6 +2052,7 @@ export type ItemSettingsGlobalEventTicketMasterfileEntry =
 	| ItemSettingsItemEventTicketS24Oct10CommunityToGift
 	| ItemSettingsItemEventTicketS24Oct17Hatch
 	| ItemSettingsItemEventTicketS24Oct24Maxbattle
+	| ItemSettingsItemEventTicketS24Oct31Megaraid
 	| ItemSettingsItemEventTicketS24Sep12Community
 	| ItemSettingsItemEventTicketS24Sep12CommunityToGift
 	| ItemSettingsItemEventTicketS24Sep19Megaraid

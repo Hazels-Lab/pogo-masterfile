@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 43 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 44 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -70,6 +70,14 @@ export type FeatureGateCombatSuppressFastMovePredictionsOnSwap = S<
 export type FeatureGateCombatVnextInitializeBdLast = S<
 	FeatureGate<
 		"COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateCombatVnextPlayMissedFm = S<
+	FeatureGate<
+		"COMBAT_VNEXT_PLAY_MISSED_FM_FEATURE_GATE",
 		{
 			status: 1;
 		}
@@ -396,6 +404,7 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateAmsFrontend
 	| FeatureGateCombatSuppressFastMovePredictionsOnSwap
 	| FeatureGateCombatVnextInitializeBdLast
+	| FeatureGateCombatVnextPlayMissedFm
 	| FeatureGateCombatVnextShowMiniorIbfcToasts
 	| FeatureGateCombineCompassAndWeather
 	| FeatureGateDailyEncounterGenerationContext
