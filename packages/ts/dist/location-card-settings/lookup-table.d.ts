@@ -76,11 +76,14 @@ import type {
 	LocationCardSettings2026CologneCarnival001,
 	LocationCardSettings2026ComicconMalaga,
 	LocationCardSettings2026CopenhagenGofest001,
+	LocationCardSettings2026FcSeoul,
 	LocationCardSettings2026GowaMexicocity,
 	LocationCardSettings2026GowaSendai,
 	LocationCardSettings2026JpGreen,
 	LocationCardSettings2026JpRed,
+	LocationCardSettings2026LondonNo001,
 	LocationCardSettings2026LosangelesGotour001,
+	LocationCardSettings2026LosangelesNo001,
 	LocationCardSettings2026MlbTbrays,
 	LocationCardSettings2026Npb001,
 	LocationCardSettings2026Npb002,
@@ -351,11 +354,14 @@ export interface LocationCardSettingsLookup {
 	LC_2026_COLOGNE_CARNIVAL_001: LocationCardSettings2026CologneCarnival001;
 	LC_2026_COMICCON_MALAGA: LocationCardSettings2026ComicconMalaga;
 	LC_2026_COPENHAGEN_GOFEST_001: LocationCardSettings2026CopenhagenGofest001;
+	LC_2026_FC_SEOUL: LocationCardSettings2026FcSeoul;
 	LC_2026_GOWA_MEXICOCITY: LocationCardSettings2026GowaMexicocity;
 	LC_2026_GOWA_SENDAI: LocationCardSettings2026GowaSendai;
 	LC_2026_JP_GREEN: LocationCardSettings2026JpGreen;
 	LC_2026_JP_RED: LocationCardSettings2026JpRed;
+	LC_2026_LONDON_NO_001: LocationCardSettings2026LondonNo001;
 	LC_2026_LOSANGELES_GOTOUR_001: LocationCardSettings2026LosangelesGotour001;
+	LC_2026_LOSANGELES_NO_001: LocationCardSettings2026LosangelesNo001;
 	LC_2026_MLB_TBRAYS: LocationCardSettings2026MlbTbrays;
 	LC_2026_NPB_001: LocationCardSettings2026Npb001;
 	LC_2026_NPB_002: LocationCardSettings2026Npb002;

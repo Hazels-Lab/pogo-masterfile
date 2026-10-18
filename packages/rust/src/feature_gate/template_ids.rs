@@ -21,6 +21,8 @@ pub enum FeatureGateTemplateId {
     AmsFeatureGate,
     #[serde(rename = "AMS_FRONTEND_FEATURE_GATE")]
     AmsFrontendFeatureGate,
+    #[serde(rename = "BADGE_SERVICE_FEATURE_GATE")]
+    BadgeServiceFeatureGate,
     #[serde(rename = "COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE")]
     CombatSuppressFastMovePredictionsOnSwapFeatureGate,
     #[serde(rename = "COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE")]
@@ -95,4 +97,6 @@ pub enum FeatureGateTemplateId {
     VnextPreResponseInputBlockingBehaviorFeatureGate,
     #[serde(rename = "WAYFARER_SUBMIT_LINKOUT_FEATURE_GATE")]
     WayfarerSubmitLinkoutFeatureGate,
+    #[serde(rename = "ZYGARDE_CELL_REWARD_QUEST_FIX_FEATURE_GATE_SR")]
+    ZygardeCellRewardQuestFixFeatureGateSr,
 }

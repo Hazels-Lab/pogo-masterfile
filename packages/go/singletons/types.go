@@ -758,8 +758,15 @@ type ConversationSettingsPokemonFormAppraisalOverrides struct {
 	Id           string `json:"id"`
 }
 
+type ConversationSettingsPokemonFormAppraisalOverridesV2 struct {
+	AddToStart   bool   `json:"addToStart"`
+	AppraisalKey string `json:"appraisalKey"`
+	Form         uint64 `json:"form"`
+	Id           string `json:"id"`
+}
+
 type ConversationSettings struct {
-	PokemonFormAppraisalOverrides [8]ConversationSettingsPokemonFormAppraisalOverrides `json:"pokemonFormAppraisalOverrides"`
+	PokemonFormAppraisalOverrides []any `json:"pokemonFormAppraisalOverrides"`
 }
 
 type CrossGameSocialSettings struct {
@@ -3781,6 +3788,17 @@ func (TicketGiftingSettingsEntry) MasterfileEntry() {}
 type TicketGiftingSettingsEntryData struct {
 	TemplateID            string                `json:"templateId"`
 	TicketGiftingSettings TicketGiftingSettings `json:"ticketGiftingSettings"`
+}
+
+type TimeBoxedSpawnEventSettingsEntry struct {
+	TemplateID string                               `json:"templateId"`
+	Data       TimeBoxedSpawnEventSettingsEntryData `json:"data"`
+}
+
+func (TimeBoxedSpawnEventSettingsEntry) MasterfileEntry() {}
+
+type TimeBoxedSpawnEventSettingsEntryData struct {
+	TemplateID string `json:"templateId"`
 }
 
 type TodayViewSettingsEntry struct {

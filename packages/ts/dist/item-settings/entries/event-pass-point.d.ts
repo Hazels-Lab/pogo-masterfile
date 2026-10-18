@@ -166,9 +166,7 @@ export type ItemSettingsItemEventPassPointLiveOps04 = S<
 			itemCap: 999999;
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
-				playerActivity: {
-					limit: 500;
-				};
+				playerActivity: object;
 			};
 		}
 	>
@@ -179,7 +177,7 @@ export type ItemSettingsItemEventPassPointLiveOps05 = S<
 		{
 			category: "ITEM_CATEGORY_EVENT_PASS_POINT";
 			eventPassPoint: {
-				eventPassId: "EVENT_PASS_EMEA2026_EVENT";
+				eventPassId: "EVENT_PASS_HALLOWEEN_2026_EVENT";
 			};
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
@@ -343,7 +341,7 @@ export type ItemSettingsItemEventPassPointMonthly03 = S<
 		{
 			category: "ITEM_CATEGORY_EVENT_PASS_POINT";
 			eventPassPoint: {
-				eventPassId: "EVENT_PASS_AUGUST2026_SEASON";
+				eventPassId: "EVENT_PASS_NOVEMBER2026_SEASON";
 			};
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
@@ -351,7 +349,7 @@ export type ItemSettingsItemEventPassPointMonthly03 = S<
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
-					limit: 300;
+					limit: 250;
 				};
 			};
 		}

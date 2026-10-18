@@ -47,8 +47,9 @@ type ItemSettingsNeutralAvatarItemTemplate struct {
 }
 
 type ItemSettingsPokemonDisplay struct {
-	Form  string `json:"form"`
-	Shiny *bool  `json:"shiny,omitempty"`
+	BreadModeEnum *string `json:"breadModeEnum,omitempty"`
+	Form          string  `json:"form"`
+	Shiny         *bool   `json:"shiny,omitempty"`
 }
 
 type ItemSettingsPokemonEncounter struct {
@@ -127,7 +128,7 @@ type ItemSettingsStatIncrease struct {
 }
 
 type ItemSettingsPlayerActivity struct {
-	Limit uint64 `json:"limit"`
+	Limit *uint64 `json:"limit,omitempty"`
 }
 
 type ItemSettingsTimePeriodCounters struct {

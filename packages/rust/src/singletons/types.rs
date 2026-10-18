@@ -1085,8 +1085,30 @@ pub struct PokemonFormAppraisalOverrides {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct PokemonFormAppraisalOverridesV2 {
+    pub add_to_start: bool,
+    pub appraisal_key: String,
+    pub form: u64,
+    pub id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct ConversationSettings {
-    pub pokemon_form_appraisal_overrides: [PokemonFormAppraisalOverrides; 8],
+    pub pokemon_form_appraisal_overrides: (
+        PokemonFormAppraisalOverrides,
+        PokemonFormAppraisalOverrides,
+        PokemonFormAppraisalOverrides,
+        PokemonFormAppraisalOverrides,
+        PokemonFormAppraisalOverrides,
+        PokemonFormAppraisalOverrides,
+        PokemonFormAppraisalOverrides,
+        PokemonFormAppraisalOverrides,
+        PokemonFormAppraisalOverridesV2,
+        PokemonFormAppraisalOverridesV2,
+        PokemonFormAppraisalOverridesV2,
+        PokemonFormAppraisalOverridesV2,
+    ),
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -3301,6 +3323,11 @@ crate::masterfile_entry!(StickerCategorySettingsEntry, StickerCategorySettingsEn
 crate::masterfile_entry!(StyleShopSettingsEntry, StyleShopSettingsEntryData, style_shop_settings: StyleShopSettings);
 
 crate::masterfile_entry!(TicketGiftingSettingsEntry, TicketGiftingSettingsEntryData, ticket_gifting_settings: TicketGiftingSettings);
+
+crate::masterfile_stub_entry!(
+    TimeBoxedSpawnEventSettingsEntry,
+    TimeBoxedSpawnEventSettingsEntryData
+);
 
 crate::masterfile_entry!(TodayViewSettingsEntry, TodayViewSettingsEntryData, today_view_settings: TodayViewSettings);
 

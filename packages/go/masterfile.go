@@ -270,14 +270,14 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "photoSetsSettingsProto":
-		var e photo_sets_settings_proto.PhotoSetsSettingsProtoEntry
+	case "featureGate":
+		var e feature_gate.FeatureGateEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
 		return e, nil
-	case "featureGate":
-		var e feature_gate.FeatureGateEntry
+	case "photoSetsSettingsProto":
+		var e photo_sets_settings_proto.PhotoSetsSettingsProtoEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -1354,6 +1354,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return e, nil
 		case "MAP_OBJECT_COLLISION_AVOIDANCE_SETTINGS":
 			var e singletons.MapObjectCollisionAvoidanceSettingsEntry
+			if err := json.Unmarshal(data, &e); err != nil {
+				return nil, err
+			}
+			return e, nil
+		case "TIME_BOXED_SPAWN_EVENT_SETTINGS":
+			var e singletons.TimeBoxedSpawnEventSettingsEntry
 			if err := json.Unmarshal(data, &e); err != nil {
 				return nil, err
 			}

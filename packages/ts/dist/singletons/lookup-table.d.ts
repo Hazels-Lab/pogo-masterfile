@@ -136,6 +136,7 @@ import type {
 	StickerCategorySettings,
 	StyleShopSettings,
 	TicketGiftingSettings,
+	TimeBoxedSpawnEventSettings,
 	TodayViewSettings,
 	TutorialSettings,
 	UsernameSuggestionSettings,
@@ -285,6 +286,7 @@ export interface SingletonsLookup {
 	STYLE_SHOP_SETTINGS: StyleShopSettings;
 	SURVEY_SETTINGS: InAppSurveySettings;
 	TICKET_GIFTING_SETTINGS: TicketGiftingSettings;
+	TIME_BOXED_SPAWN_EVENT_SETTINGS: TimeBoxedSpawnEventSettings;
 	TODAY_VIEW_SETTINGS_V2: TodayViewSettings;
 	TUTORIALS_SETTINGS: TutorialSettings;
 	username_suggestion_settings: UsernameSuggestionSettings;

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 825 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 824 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -11106,22 +11106,6 @@ export type PokemonExtendedSettingsV0894PokemonRegieleki = S<
 		}
 	>
 >;
-export type PokemonExtendedSettingsV0895PokemonRegidrago = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0895_POKEMON_REGIDRAGO",
-		{
-			sizeSettings: {
-				mLowerBound: 1.575;
-				mUpperBound: 2.625;
-				xlUpperBound: 3.15;
-				xsLowerBound: 1.05;
-				xxlUpperBound: 3.255;
-				xxsLowerBound: 1.029;
-			};
-			uniqueId: "REGIDRAGO";
-		}
-	>
->;
 export type PokemonExtendedSettingsV0896PokemonGlastrier = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0896_POKEMON_GLASTRIER",
@@ -13913,7 +13897,6 @@ export type PokemonExtendedSettingsMiscMasterfileEntry =
 	| PokemonExtendedSettingsV0890PokemonEternatus
 	| PokemonExtendedSettingsV0893PokemonZarude
 	| PokemonExtendedSettingsV0894PokemonRegieleki
-	| PokemonExtendedSettingsV0895PokemonRegidrago
 	| PokemonExtendedSettingsV0896PokemonGlastrier
 	| PokemonExtendedSettingsV0897PokemonSpectrier
 	| PokemonExtendedSettingsV0898PokemonCalyrex

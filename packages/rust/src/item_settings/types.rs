@@ -61,6 +61,7 @@ pub struct NeutralAvatarItemTemplate {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PokemonDisplay {
+    pub bread_mode_enum: Option<String>,
     pub form: String,
     pub shiny: Option<bool>,
 }
@@ -165,7 +166,7 @@ pub struct StatIncrease {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PlayerActivity {
-    pub limit: u64,
+    pub limit: Option<u64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

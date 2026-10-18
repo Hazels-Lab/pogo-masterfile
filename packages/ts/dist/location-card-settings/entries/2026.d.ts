@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "locationCardSettings", split "2026", 29 entries.
+// Generated from Pokémon GO masterfile — group "locationCardSettings", split "2026", 32 entries.
 
 import type { S } from "../../_utils";
 import type { LocationCardSettings } from "../types";
@@ -50,6 +50,15 @@ export type LocationCardSettings2026CopenhagenGofest001 = S<
 		}
 	>
 >;
+export type LocationCardSettings2026FcSeoul = S<
+	LocationCardSettings<
+		"LC_2026_FC_SEOUL",
+		{
+			imageUrl: "lc_fc2026_seoul";
+			locationCard: 417;
+		}
+	>
+>;
 export type LocationCardSettings2026GowaMexicocity = S<
 	LocationCardSettings<
 		"LC_2026_GOWA_MEXICOCITY",
@@ -88,6 +97,15 @@ export type LocationCardSettings2026JpRed = S<
 		}
 	>
 >;
+export type LocationCardSettings2026LondonNo001 = S<
+	LocationCardSettings<
+		"LC_2026_LONDON_NO_001",
+		{
+			imageUrl: "lc_nightOut2026_London";
+			locationCard: 422;
+		}
+	>
+>;
 export type LocationCardSettings2026LosangelesGotour001 = S<
 	LocationCardSettings<
 		"LC_2026_LOSANGELES_GOTOUR_001",
@@ -95,6 +113,15 @@ export type LocationCardSettings2026LosangelesGotour001 = S<
 			cardType: "LOCATION_CARD";
 			imageUrl: "lc_GoTour2026_losAngeles";
 			locationCard: "LC_2026_LOSANGELES_GOTOUR_001";
+		}
+	>
+>;
+export type LocationCardSettings2026LosangelesNo001 = S<
+	LocationCardSettings<
+		"LC_2026_LOSANGELES_NO_001",
+		{
+			imageUrl: "lc_nightOut2026_LA";
+			locationCard: 421;
 		}
 	>
 >;
@@ -278,11 +305,14 @@ export type LocationCardSettings2026MasterfileEntry =
 	| LocationCardSettings2026CologneCarnival001
 	| LocationCardSettings2026ComicconMalaga
 	| LocationCardSettings2026CopenhagenGofest001
+	| LocationCardSettings2026FcSeoul
 	| LocationCardSettings2026GowaMexicocity
 	| LocationCardSettings2026GowaSendai
 	| LocationCardSettings2026JpGreen
 	| LocationCardSettings2026JpRed
+	| LocationCardSettings2026LondonNo001
 	| LocationCardSettings2026LosangelesGotour001
+	| LocationCardSettings2026LosangelesNo001
 	| LocationCardSettings2026MlbTbrays
 	| LocationCardSettings2026Npb001
 	| LocationCardSettings2026Npb002

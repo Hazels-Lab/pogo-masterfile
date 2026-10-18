@@ -8,6 +8,7 @@ import type {
 	FeatureGateAdvSyncTwo,
 	FeatureGateAms,
 	FeatureGateAmsFrontend,
+	FeatureGateBadgeService,
 	FeatureGateCombatSuppressFastMovePredictionsOnSwap,
 	FeatureGateCombatVnextInitializeBdLast,
 	FeatureGateCombatVnextPlayMissedFm,
@@ -45,6 +46,7 @@ import type {
 	FeatureGateVnextFastAttackInputType,
 	FeatureGateVnextPreResponseInputBlockingBehavior,
 	FeatureGateWayfarerSubmitLinkout,
+	FeatureGateZygardeCellRewardQuestFixFeatureGateSr,
 } from "./entries";
 
 export interface FeatureGateLookup {
@@ -55,6 +57,7 @@ export interface FeatureGateLookup {
 	ADV_SYNC_TWO_FEATURE_GATE: FeatureGateAdvSyncTwo;
 	AMS_FEATURE_GATE: FeatureGateAms;
 	AMS_FRONTEND_FEATURE_GATE: FeatureGateAmsFrontend;
+	BADGE_SERVICE_FEATURE_GATE: FeatureGateBadgeService;
 	COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE: FeatureGateCombatSuppressFastMovePredictionsOnSwap;
 	COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE: FeatureGateCombatVnextInitializeBdLast;
 	COMBAT_VNEXT_PLAY_MISSED_FM_FEATURE_GATE: FeatureGateCombatVnextPlayMissedFm;
@@ -92,4 +95,5 @@ export interface FeatureGateLookup {
 	VNEXT_FAST_ATTACK_INPUT_TYPE_FEATURE_GATE: FeatureGateVnextFastAttackInputType;
 	VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE: FeatureGateVnextPreResponseInputBlockingBehavior;
 	WAYFARER_SUBMIT_LINKOUT_FEATURE_GATE: FeatureGateWayfarerSubmitLinkout;
+	ZYGARDE_CELL_REWARD_QUEST_FIX_FEATURE_GATE_SR: FeatureGateZygardeCellRewardQuestFixFeatureGateSr;
 }

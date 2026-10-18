@@ -12,6 +12,7 @@ const (
 	FeatureGateTemplateIDAdvSyncTwoFeatureGate                              FeatureGateTemplateID = "ADV_SYNC_TWO_FEATURE_GATE"
 	FeatureGateTemplateIDAmsFeatureGate                                     FeatureGateTemplateID = "AMS_FEATURE_GATE"
 	FeatureGateTemplateIDAmsFrontendFeatureGate                             FeatureGateTemplateID = "AMS_FRONTEND_FEATURE_GATE"
+	FeatureGateTemplateIDBadgeServiceFeatureGate                            FeatureGateTemplateID = "BADGE_SERVICE_FEATURE_GATE"
 	FeatureGateTemplateIDCombatSuppressFastMovePredictionsOnSwapFeatureGate FeatureGateTemplateID = "COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE"
 	FeatureGateTemplateIDCombatVnextInitializeBdLastFeatureGate             FeatureGateTemplateID = "COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE"
 	FeatureGateTemplateIDCombatVnextPlayMissedFmFeatureGate                 FeatureGateTemplateID = "COMBAT_VNEXT_PLAY_MISSED_FM_FEATURE_GATE"
@@ -49,6 +50,7 @@ const (
 	FeatureGateTemplateIDVnextFastAttackInputTypeFeatureGate                FeatureGateTemplateID = "VNEXT_FAST_ATTACK_INPUT_TYPE_FEATURE_GATE"
 	FeatureGateTemplateIDVnextPreResponseInputBlockingBehaviorFeatureGate   FeatureGateTemplateID = "VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE"
 	FeatureGateTemplateIDWayfarerSubmitLinkoutFeatureGate                   FeatureGateTemplateID = "WAYFARER_SUBMIT_LINKOUT_FEATURE_GATE"
+	FeatureGateTemplateIDZygardeCellRewardQuestFixFeatureGateSr             FeatureGateTemplateID = "ZYGARDE_CELL_REWARD_QUEST_FIX_FEATURE_GATE_SR"
 )
 
 var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
@@ -59,6 +61,7 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDAdvSyncTwoFeatureGate,
 	FeatureGateTemplateIDAmsFeatureGate,
 	FeatureGateTemplateIDAmsFrontendFeatureGate,
+	FeatureGateTemplateIDBadgeServiceFeatureGate,
 	FeatureGateTemplateIDCombatSuppressFastMovePredictionsOnSwapFeatureGate,
 	FeatureGateTemplateIDCombatVnextInitializeBdLastFeatureGate,
 	FeatureGateTemplateIDCombatVnextPlayMissedFmFeatureGate,
@@ -96,4 +99,5 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDVnextFastAttackInputTypeFeatureGate,
 	FeatureGateTemplateIDVnextPreResponseInputBlockingBehaviorFeatureGate,
 	FeatureGateTemplateIDWayfarerSubmitLinkoutFeatureGate,
+	FeatureGateTemplateIDZygardeCellRewardQuestFixFeatureGateSr,
 }

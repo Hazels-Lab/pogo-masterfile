@@ -2703,6 +2703,30 @@ export interface ConversationSettings {
 					form: "SINISTCHA_UNREMARKABLE";
 					id: "SINISTCHA";
 				},
+				{
+					addToStart: true;
+					appraisalKey: "appraise_sinistea_phony";
+					form: 3365;
+					id: "SINISTEA";
+				},
+				{
+					addToStart: true;
+					appraisalKey: "appraise_sinistea_antique";
+					form: 3366;
+					id: "SINISTEA";
+				},
+				{
+					addToStart: true;
+					appraisalKey: "appraise_polteageist_phony";
+					form: 3367;
+					id: "POLTEAGEIST";
+				},
+				{
+					addToStart: true;
+					appraisalKey: "appraise_polteageist_antique";
+					form: 3368;
+					id: "POLTEAGEIST";
+				},
 			];
 		};
 	};
@@ -5956,6 +5980,13 @@ export interface TicketGiftingSettings {
 	};
 }
 
+export interface TimeBoxedSpawnEventSettings {
+	templateId: "TIME_BOXED_SPAWN_EVENT_SETTINGS";
+	data: {
+		templateId: "TIME_BOXED_SPAWN_EVENT_SETTINGS";
+	};
+}
+
 export interface TodayViewSettings {
 	templateId: "TODAY_VIEW_SETTINGS_V2";
 	data: {
@@ -6423,6 +6454,7 @@ export type SingletonsSettingsMasterfileEntry =
 	| StickerCategorySettings
 	| StyleShopSettings
 	| TicketGiftingSettings
+	| TimeBoxedSpawnEventSettings
 	| TodayViewSettings
 	| TutorialSettings
 	| UsernameSuggestionSettings
