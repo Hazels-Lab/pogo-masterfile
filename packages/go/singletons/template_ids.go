@@ -140,6 +140,7 @@ const (
 	SingletonsTemplateIDStyleShopSettings                       SingletonsTemplateID = "STYLE_SHOP_SETTINGS"
 	SingletonsTemplateIDSurveySettings                          SingletonsTemplateID = "SURVEY_SETTINGS"
 	SingletonsTemplateIDTicketGiftingSettings                   SingletonsTemplateID = "TICKET_GIFTING_SETTINGS"
+	SingletonsTemplateIDTimeBoxedSpawnEventSettings             SingletonsTemplateID = "TIME_BOXED_SPAWN_EVENT_SETTINGS"
 	SingletonsTemplateIDTodayViewSettingsV2                     SingletonsTemplateID = "TODAY_VIEW_SETTINGS_V2"
 	SingletonsTemplateIDTutorialsSettings                       SingletonsTemplateID = "TUTORIALS_SETTINGS"
 	SingletonsTemplateIDUsernameSuggestionSettings              SingletonsTemplateID = "username_suggestion_settings"
@@ -289,6 +290,7 @@ var SingletonsTemplateIDValues = [...]SingletonsTemplateID{
 	SingletonsTemplateIDStyleShopSettings,
 	SingletonsTemplateIDSurveySettings,
 	SingletonsTemplateIDTicketGiftingSettings,
+	SingletonsTemplateIDTimeBoxedSpawnEventSettings,
 	SingletonsTemplateIDTodayViewSettingsV2,
 	SingletonsTemplateIDTutorialsSettings,
 	SingletonsTemplateIDUsernameSuggestionSettings,

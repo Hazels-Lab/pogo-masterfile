@@ -2,6 +2,21 @@
 
 All notable changes to `pogo-masterfile-types` (npm) are recorded here. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.80] - 2026-10-18
+
+Automated regeneration from upstream masterfile commit `173d527b71c2c97191a259e06382f79c894b71c9`.
+
+### Added template IDs (8)
+
+- BADGE_EVENT_0238
+- BADGE_EVENT_0245
+- BADGE_SERVICE_FEATURE_GATE
+- LC_2026_FC_SEOUL
+- LC_2026_LONDON_NO_001
+- LC_2026_LOSANGELES_NO_001
+- TIME_BOXED_SPAWN_EVENT_SETTINGS
+- ZYGARDE_CELL_REWARD_QUEST_FIX_FEATURE_GATE_SR
+
 ## [0.1.79] - 2026-10-14
 
 Automated regeneration from upstream masterfile commit `4f3862789321d6d47b9efaeb852175613cece793`.

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 225 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 226 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -7949,11 +7949,12 @@ export type PokemonExtendedSettingsV0483PokemonDialgaNormal = S<
 					breadMode: "BREAD_MODE";
 					maxBattleVisualSettings: {
 						scale: 8.81;
+						yOffset: -5.5;
 					};
 					maxEncounterVisualSettings: {
-						cameraDistance: 35;
-						maxReticleSize: 11;
-						scale: 4.41;
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 3.7;
 					};
 					maxLobbyVisualSettings: {
 						yOffset: -0.55;
@@ -10185,9 +10186,9 @@ export type PokemonExtendedSettingsV0884PokemonDuraludonNormal = S<
 						scale: 17;
 					};
 					maxEncounterVisualSettings: {
-						cameraDistance: 36;
-						maxReticleSize: 17;
-						scale: 10;
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 8;
 					};
 					maxPowerspotTopperVisualSettings: {
 						scale: 0.7;
@@ -10378,6 +10379,43 @@ export type PokemonExtendedSettingsV0892PokemonUrshifuSingleStrike = S<
 				xxsLowerBound: 0.931;
 			};
 			uniqueId: "URSHIFU";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0895PokemonRegidragoNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0895_POKEMON_REGIDRAGO_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 18.13;
+						xOffset: -2.7;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 9.07;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 0.7;
+					};
+					maxStationVisualSettings: {
+						scale: 1.23;
+					};
+				},
+			];
+			form: "REGIDRAGO_NORMAL";
+			sizeSettings: {
+				mLowerBound: 1.575;
+				mUpperBound: 2.625;
+				xlUpperBound: 3.15;
+				xsLowerBound: 1.05;
+				xxlUpperBound: 3.255;
+				xxsLowerBound: 1.029;
+			};
+			uniqueId: "REGIDRAGO";
 		}
 	>
 >;
@@ -10607,4 +10645,5 @@ export type PokemonExtendedSettingsBreadOverridesFormMasterfileEntry =
 	| PokemonExtendedSettingsV0890PokemonEternatusEternamax
 	| PokemonExtendedSettingsV0891PokemonKubfuNormal
 	| PokemonExtendedSettingsV0892PokemonUrshifuRapidStrike
-	| PokemonExtendedSettingsV0892PokemonUrshifuSingleStrike;
+	| PokemonExtendedSettingsV0892PokemonUrshifuSingleStrike
+	| PokemonExtendedSettingsV0895PokemonRegidragoNormal;

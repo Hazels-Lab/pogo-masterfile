@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 44 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 46 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -56,6 +56,14 @@ export type FeatureGateAmsFrontend = S<
 		"AMS_FRONTEND_FEATURE_GATE",
 		{
 			status: 1;
+		}
+	>
+>;
+export type FeatureGateBadgeService = S<
+	FeatureGate<
+		"BADGE_SERVICE_FEATURE_GATE",
+		{
+			status: 1439520738;
 		}
 	>
 >;
@@ -393,6 +401,14 @@ export type FeatureGateWayfarerSubmitLinkout = S<
 		}
 	>
 >;
+export type FeatureGateZygardeCellRewardQuestFixFeatureGateSr = S<
+	FeatureGate<
+		"ZYGARDE_CELL_REWARD_QUEST_FIX_FEATURE_GATE_SR",
+		{
+			status: 1;
+		}
+	>
+>;
 
 export type FeatureGateMasterfileEntry =
 	| FeatureGateAcForegroundCatchEncounter
@@ -402,6 +418,7 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateAdvSyncTwo
 	| FeatureGateAms
 	| FeatureGateAmsFrontend
+	| FeatureGateBadgeService
 	| FeatureGateCombatSuppressFastMovePredictionsOnSwap
 	| FeatureGateCombatVnextInitializeBdLast
 	| FeatureGateCombatVnextPlayMissedFm
@@ -438,6 +455,7 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateTransfer
 	| FeatureGateVnextFastAttackInputType
 	| FeatureGateVnextPreResponseInputBlockingBehavior
-	| FeatureGateWayfarerSubmitLinkout;
+	| FeatureGateWayfarerSubmitLinkout
+	| FeatureGateZygardeCellRewardQuestFixFeatureGateSr;
 
 export type FeatureGateTemplateID = FeatureGateMasterfileEntry["templateId"];

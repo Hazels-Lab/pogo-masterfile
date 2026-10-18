@@ -205,8 +205,8 @@ pub enum MasterfileEntry {
     TemporaryEvolutionSettings(temporary_evolution_settings::TemporaryEvolutionSettingsEntry),
     ClientQuestTemplate(client_quest_template::ClientQuestTemplateEntry),
     VsSeekerLoot(vs_seeker_loot::VsSeekerLootEntry),
-    PhotoSetsSettingsProto(photo_sets_settings_proto::PhotoSetsSettingsProtoEntry),
     FeatureGate(feature_gate::FeatureGateEntry),
+    PhotoSetsSettingsProto(photo_sets_settings_proto::PhotoSetsSettingsProtoEntry),
     EvolutionQuestTemplate(evolution_quest_template::EvolutionQuestTemplateEntry),
     LimitedPurchaseSkuSettings(limited_purchase_sku_settings::LimitedPurchaseSkuSettingsEntry),
     ItemExpirationSettings(item_expiration_settings::ItemExpirationSettingsEntry),
@@ -381,6 +381,7 @@ pub enum MasterfileEntry {
     StickerCategorySettings(singletons::StickerCategorySettingsEntry),
     StyleShopSettings(singletons::StyleShopSettingsEntry),
     TicketGiftingSettings(singletons::TicketGiftingSettingsEntry),
+    TimeBoxedSpawnEventSettings(singletons::TimeBoxedSpawnEventSettingsEntry),
     TodayViewSettings(singletons::TodayViewSettingsEntry),
     TutorialSettings(singletons::TutorialSettingsEntry),
     UsernameSuggestionSettings(singletons::UsernameSuggestionSettingsEntry),
@@ -467,10 +468,10 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::ClientQuestTemplate)
                 }
                 "vsSeekerLoot" => serde_json::from_value(value).map(Self::VsSeekerLoot),
+                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
                 "photoSetsSettingsProto" => {
                     serde_json::from_value(value).map(Self::PhotoSetsSettingsProto)
                 }
-                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
                 "evolutionQuestTemplate" => {
                     serde_json::from_value(value).map(Self::EvolutionQuestTemplate)
                 }
@@ -892,6 +893,9 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 }
                 Some("MAP_OBJECT_COLLISION_AVOIDANCE_SETTINGS") => {
                     serde_json::from_value(value).map(Self::MapObjectCollisionAvoidanceSettings)
+                }
+                Some("TIME_BOXED_SPAWN_EVENT_SETTINGS") => {
+                    serde_json::from_value(value).map(Self::TimeBoxedSpawnEventSettings)
                 }
                 Some(other) => Err(serde_json::Error::custom(format!(
                     "unknown stub templateId: {}",

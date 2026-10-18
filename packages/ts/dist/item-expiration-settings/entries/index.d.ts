@@ -83,8 +83,8 @@ export type ItemExpirationSettingsEventPassPointLiveOps05 = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_LIVE_OPS_05",
 		{
-			emergencyExpirationTime: "2026-06-20T10:00:00";
-			expirationTime: "2026-06-19T20:00:00";
+			emergencyExpirationTime: "2026-11-10T10:00:00";
+			expirationTime: "2026-11-09T20:00:00";
 		}
 	>
 >;
@@ -154,8 +154,8 @@ export type ItemExpirationSettingsEventPassPointMonthly03 = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_MONTHLY_03",
 		{
-			emergencyExpirationTime: "2026-09-12T10:00:00";
-			expirationTime: "2026-09-10T10:00:00";
+			emergencyExpirationTime: "2026-12-05T10:00:00";
+			expirationTime: "2026-12-03T10:00:00";
 		}
 	>
 >;

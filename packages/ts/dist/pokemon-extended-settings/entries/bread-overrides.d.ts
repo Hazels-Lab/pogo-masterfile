@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides", 145 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides", 146 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -3181,11 +3181,12 @@ export type PokemonExtendedSettingsV0483PokemonDialga = S<
 					breadMode: "BREAD_MODE";
 					maxBattleVisualSettings: {
 						scale: 8.81;
+						yOffset: -5.5;
 					};
 					maxEncounterVisualSettings: {
-						cameraDistance: 35;
-						maxReticleSize: 11;
-						scale: 4.41;
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 3.7;
 					};
 					maxLobbyVisualSettings: {
 						yOffset: -0.55;
@@ -5257,9 +5258,9 @@ export type PokemonExtendedSettingsV0884PokemonDuraludon = S<
 						scale: 17;
 					};
 					maxEncounterVisualSettings: {
-						cameraDistance: 36;
-						maxReticleSize: 17;
-						scale: 10;
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 8;
 					};
 					maxPowerspotTopperVisualSettings: {
 						scale: 0.7;
@@ -5349,6 +5350,42 @@ export type PokemonExtendedSettingsV0892PokemonUrshifu = S<
 				xxsLowerBound: 0.931;
 			};
 			uniqueId: "URSHIFU";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0895PokemonRegidrago = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0895_POKEMON_REGIDRAGO",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 18.13;
+						xOffset: -2.7;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 30;
+						maxReticleSize: 14;
+						scale: 9.07;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 0.7;
+					};
+					maxStationVisualSettings: {
+						scale: 1.23;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 1.575;
+				mUpperBound: 2.625;
+				xlUpperBound: 3.15;
+				xsLowerBound: 1.05;
+				xxlUpperBound: 3.255;
+				xxsLowerBound: 1.029;
+			};
+			uniqueId: "REGIDRAGO";
 		}
 	>
 >;
@@ -5498,4 +5535,5 @@ export type PokemonExtendedSettingsBreadOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0861PokemonGrimmsnarl
 	| PokemonExtendedSettingsV0884PokemonDuraludon
 	| PokemonExtendedSettingsV0891PokemonKubfu
-	| PokemonExtendedSettingsV0892PokemonUrshifu;
+	| PokemonExtendedSettingsV0892PokemonUrshifu
+	| PokemonExtendedSettingsV0895PokemonRegidrago;

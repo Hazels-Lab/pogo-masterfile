@@ -277,6 +277,8 @@ pub enum SingletonsTemplateId {
     SurveySettings,
     #[serde(rename = "TICKET_GIFTING_SETTINGS")]
     TicketGiftingSettings,
+    #[serde(rename = "TIME_BOXED_SPAWN_EVENT_SETTINGS")]
+    TimeBoxedSpawnEventSettings,
     #[serde(rename = "TODAY_VIEW_SETTINGS_V2")]
     TodayViewSettingsV2,
     #[serde(rename = "TUTORIALS_SETTINGS")]

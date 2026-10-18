@@ -99,8 +99,6 @@ export interface ItemSettingsData {
 	eventPassPoint?: {
 		eventPassId:
 			| "EVENT_PASS_AFTERPARTY2026_EVENT"
-			| "EVENT_PASS_AUGUST2026_SEASON"
-			| "EVENT_PASS_EMEA2026_EVENT"
 			| "EVENT_PASS_FALLMARATHON2026_EVENT"
 			| "EVENT_PASS_FLYINGTAXI2026_EVENT"
 			| "EVENT_PASS_GOFEST2025_GLOBAL"
@@ -108,9 +106,11 @@ export interface ItemSettingsData {
 			| "EVENT_PASS_GOTOUR2026_GLOBAL"
 			| "EVENT_PASS_GOTOUR2026_IRL"
 			| "EVENT_PASS_GOWA_2025"
+			| "EVENT_PASS_HALLOWEEN_2026_EVENT"
 			| "EVENT_PASS_HARVESTFESTIVAL2026_EVENT"
 			| "EVENT_PASS_HORIZONS_FALL_2026_EVENT"
 			| "EVENT_PASS_MEGASQUADS2026_EVENT"
+			| "EVENT_PASS_NOVEMBER2026_SEASON"
 			| "EVENT_PASS_OCTOBER2026_SEASON"
 			| "EVENT_PASS_SEPTEMBER2026_SEASON"
 			| "EVENT_PASS_SUMMER_MARATHON_2026_EVENT"
@@ -432,7 +432,7 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S24_OCT_10_COMMUNITY_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_OCT_17_HATCH_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_OCT_24_MAXBATTLE_TO_GIFT"
-			| "ITEM_EVENT_TICKET_S24_OCT31_MEGARAID"
+			| "ITEM_EVENT_TICKET_S24_OCT31_MEGARAID_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_SEP_19_MEGARAID_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_SEP_26_CATCH_TO_GIFT"
@@ -467,11 +467,13 @@ export interface ItemSettingsData {
 			};
 			pokemonEncounter?: {
 				pokemonDisplay?: {
+					breadModeEnum?: "BREAD_DOUGH_MODE";
 					form:
 						| "BAXCALIBUR_NORMAL"
 						| "CLAMPERL_NORMAL"
 						| "DIANCIE_NORMAL"
 						| "DIGLETT_NORMAL"
+						| "DURALUDON_NORMAL"
 						| "FEEBAS_NORMAL"
 						| "GARCHOMP_NORMAL"
 						| "GIMMIGHOUL_COIN_A2_2026"
@@ -482,6 +484,7 @@ export interface ItemSettingsData {
 						| "LATIAS_NORMAL"
 						| "LATIOS_NORMAL"
 						| "LOTAD_NORMAL"
+						| "MACHAMP_WILDAREA_2026_01"
 						| "PHANTUMP_NORMAL"
 						| "ROCKRUFF_NORMAL"
 						| "SHAYMIN_LAND"
@@ -495,6 +498,7 @@ export interface ItemSettingsData {
 					| "CLAMPERL"
 					| "DIANCIE"
 					| "DIGLETT"
+					| "DURALUDON"
 					| "FEEBAS"
 					| "GARCHOMP"
 					| "GIMMIGHOUL"
@@ -505,6 +509,7 @@ export interface ItemSettingsData {
 					| "LATIAS"
 					| "LATIOS"
 					| "LOTAD"
+					| "MACHAMP"
 					| "PHANTUMP"
 					| "RAYQUAZA"
 					| "ROCKRUFF"
@@ -722,7 +727,7 @@ export interface ItemSettingsData {
 	};
 	timePeriodCounters?: {
 		playerActivity: {
-			limit: number;
+			limit?: number;
 		};
 	};
 	xpBoost?: {

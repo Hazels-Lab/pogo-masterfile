@@ -1387,6 +1387,25 @@ export type ItemSettingsItemEventTicketS24Nov9Gowaol = S<
 						};
 						type: "ITEM";
 					},
+					{
+						pokemonEncounter: {
+							pokemonDisplay: {
+								breadModeEnum: "BREAD_DOUGH_MODE";
+								form: "DURALUDON_NORMAL";
+							};
+							pokemonId: "DURALUDON";
+						};
+						type: "POKEMON_ENCOUNTER";
+					},
+					{
+						pokemonEncounter: {
+							pokemonDisplay: {
+								form: "MACHAMP_WILDAREA_2026_01";
+							};
+							pokemonId: "MACHAMP";
+						};
+						type: "POKEMON_ENCOUNTER";
+					},
 				];
 				itemBagDescriptionKey: "item_global_event_ticket_details_GOWA26";
 				textRewardsKey: "text_rewards_key_GOWA26";
@@ -1522,7 +1541,6 @@ export type ItemSettingsItemEventTicketS24Oct17Hatch = S<
 				backgroundImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F440cb25d_PGO-MCS_Sandile_Hatch_Day_v1-1024x576%20No%20Logo.png";
 				clientEventEndTimeUtcMs: "1792256400000";
 				clientEventStartTimeUtcMs: "1792234800000";
-				detailsLinkKey: "details_link_key";
 				displayV2Enabled: true;
 				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F440cb25d_PGO-MCS_Sandile_Hatch_Day_v1-1024x576%20No%20Logo.png";
 				eventDatetimeRangeKey: "event_datetime_range_key_SandileHatchDay26";
@@ -1613,7 +1631,7 @@ export type ItemSettingsItemEventTicketS24Oct31Megaraid = S<
 				eventEndTime: "2026-10-31T17:00:00";
 				eventStartTime: "2026-10-31T14:00:00";
 				giftable: true;
-				giftItem: "ITEM_EVENT_TICKET_S24_OCT31_MEGARAID";
+				giftItem: "ITEM_EVENT_TICKET_S24_OCT31_MEGARAID_TO_GIFT";
 				iconRewards: [
 					{
 						item: {

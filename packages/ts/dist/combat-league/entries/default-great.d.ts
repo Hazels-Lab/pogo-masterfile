@@ -17962,7 +17962,24 @@ export type CombatLeagueVsSeekerGreatMegas = S<
 		{
 			allowTempEvos: true;
 			badgeType: "BADGE_GREAT_LEAGUE";
-			bannedPokemon: ["DITTO", "SHEDINJA"];
+			bannedPokemon: [
+				"DITTO",
+				"SHEDINJA",
+				"XERNEAS",
+				"YVELTAL",
+				"COBALION",
+				"TERRAKION",
+				"VIRIZION",
+				"KYUREM",
+				"TAPU_KOKO",
+				"TAPU_LELE",
+				"TAPU_BULU",
+				"SOLGALEO",
+				"LUNALA",
+				"ZACIAN",
+				"ZAMAZENTA",
+				"ENAMORUS",
+			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F58ea0c64_pogo_mega_great_league.png";
 			leagueType: "STANDARD";

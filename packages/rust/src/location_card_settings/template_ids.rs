@@ -157,6 +157,8 @@ pub enum LocationCardSettingsTemplateId {
     Lc2026ComicconMalaga,
     #[serde(rename = "LC_2026_COPENHAGEN_GOFEST_001")]
     Lc2026CopenhagenGofest001,
+    #[serde(rename = "LC_2026_FC_SEOUL")]
+    Lc2026FcSeoul,
     #[serde(rename = "LC_2026_GOWA_MEXICOCITY")]
     Lc2026GowaMexicocity,
     #[serde(rename = "LC_2026_GOWA_SENDAI")]
@@ -165,8 +167,12 @@ pub enum LocationCardSettingsTemplateId {
     Lc2026JpGreen,
     #[serde(rename = "LC_2026_JP_RED")]
     Lc2026JpRed,
+    #[serde(rename = "LC_2026_LONDON_NO_001")]
+    Lc2026LondonNo001,
     #[serde(rename = "LC_2026_LOSANGELES_GOTOUR_001")]
     Lc2026LosangelesGotour001,
+    #[serde(rename = "LC_2026_LOSANGELES_NO_001")]
+    Lc2026LosangelesNo001,
     #[serde(rename = "LC_2026_MLB_TBRAYS")]
     Lc2026MlbTbrays,
     #[serde(rename = "LC_2026_NPB_001")]
