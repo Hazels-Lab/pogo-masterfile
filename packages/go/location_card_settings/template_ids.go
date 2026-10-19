@@ -263,6 +263,7 @@ const (
 	LocationCardSettingsTemplateIDLcSpecialbackgroundCon2025                              LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_CON2025"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundExtra202501                          LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_EXTRA_2025_01"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundExtra202502                          LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_EXTRA_2025_02"
+	LocationCardSettingsTemplateIDLcSpecialbackgroundFol2026                              LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_FOL_2026"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundGg2026                               LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_GG2026"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundKr2025Lotte01                        LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_KR2025_LOTTE_01"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundLego202601                           LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_LEGO_2026_01"
@@ -541,6 +542,7 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLcSpecialbackgroundCon2025,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundExtra202501,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundExtra202502,
+	LocationCardSettingsTemplateIDLcSpecialbackgroundFol2026,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundGg2026,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundKr2025Lotte01,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundLego202601,

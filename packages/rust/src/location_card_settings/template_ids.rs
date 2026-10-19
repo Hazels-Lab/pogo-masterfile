@@ -523,6 +523,8 @@ pub enum LocationCardSettingsTemplateId {
     LcSpecialbackgroundExtra202501,
     #[serde(rename = "LC_SPECIALBACKGROUND_EXTRA_2025_02")]
     LcSpecialbackgroundExtra202502,
+    #[serde(rename = "LC_SPECIALBACKGROUND_FOL_2026")]
+    LcSpecialbackgroundFol2026,
     #[serde(rename = "LC_SPECIALBACKGROUND_GG2026")]
     LcSpecialbackgroundGg2026,
     #[serde(rename = "LC_SPECIALBACKGROUND_KR2025_LOTTE_01")]
