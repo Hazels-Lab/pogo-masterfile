@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.75] - 2026-10-20
+
+Automated regeneration from upstream masterfile commit `92dd4004629a14404e31bd7e84a49d5883b25b95`.
+
+### Added template IDs (1)
+
+- bundle.festival.of.lights.2026.1
+
 ## [0.1.74] - 2026-10-19
 
 Automated regeneration from upstream masterfile commit `d520a453f74892e1b1ad58f87006914f8c43a365`.

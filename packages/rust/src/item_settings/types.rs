@@ -113,7 +113,7 @@ pub struct GlobalEventTicket {
 #[serde(rename_all = "camelCase")]
 pub struct Incense {
     pub incense_lifetime_seconds: u64,
-    pub spawn_table_probability: f64,
+    pub spawn_table_probability: Option<f64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -166,7 +166,7 @@ pub struct StatIncrease {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PlayerActivity {
-    pub limit: Option<u64>,
+    pub limit: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

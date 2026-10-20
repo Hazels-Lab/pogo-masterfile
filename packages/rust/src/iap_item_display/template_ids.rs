@@ -103,6 +103,8 @@ pub enum IapItemDisplayTemplateId {
     BundleEvolve20225,
     #[serde(rename = "bundle.evolve2022.6")]
     BundleEvolve20226,
+    #[serde(rename = "bundle.festival.of.lights.2026.1")]
+    BundleFestivalOfLights20261,
     #[serde(rename = "bundle.fol2022.1")]
     BundleFol20221,
     #[serde(rename = "bundle.fol2022.2")]

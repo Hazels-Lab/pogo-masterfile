@@ -628,7 +628,7 @@ export interface ItemSettingsData {
 	ignoreInventorySpace?: boolean;
 	incense?: {
 		incenseLifetimeSeconds: number;
-		spawnTableProbability: number;
+		spawnTableProbability?: number;
 	};
 	incidentTicket?: {
 		ignoreFullInventory?: boolean;
@@ -727,7 +727,7 @@ export interface ItemSettingsData {
 	};
 	timePeriodCounters?: {
 		playerActivity: {
-			limit?: number;
+			limit: number;
 		};
 	};
 	xpBoost?: {

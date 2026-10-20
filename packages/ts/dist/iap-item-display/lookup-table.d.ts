@@ -49,6 +49,7 @@ import type {
 	IapItemDisplayBundleEvolve20224,
 	IapItemDisplayBundleEvolve20225,
 	IapItemDisplayBundleEvolve20226,
+	IapItemDisplayBundleFestivalOfLights20261,
 	IapItemDisplayBundleFol20221,
 	IapItemDisplayBundleFol20222,
 	IapItemDisplayBundleFol20223,
@@ -1141,6 +1142,7 @@ export interface IapItemDisplayLookup {
 	"bundle.evolve2022.4": IapItemDisplayBundleEvolve20224;
 	"bundle.evolve2022.5": IapItemDisplayBundleEvolve20225;
 	"bundle.evolve2022.6": IapItemDisplayBundleEvolve20226;
+	"bundle.festival.of.lights.2026.1": IapItemDisplayBundleFestivalOfLights20261;
 	"bundle.fol2022.1": IapItemDisplayBundleFol20221;
 	"bundle.fol2022.2": IapItemDisplayBundleFol20222;
 	"bundle.fol2022.3": IapItemDisplayBundleFol20223;

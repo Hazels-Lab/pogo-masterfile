@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "bundle", 279 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "bundle", 280 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -567,6 +567,22 @@ export type IapItemDisplayBundleEvolve20226 = S<
 			sortOrder: 6;
 			spriteId: "bundle.xmas.large.1";
 			title: "ultra_raid_box_title";
+		}
+	>
+>;
+export type IapItemDisplayBundleFestivalOfLights20261 = S<
+	IapItemDisplay<
+		"bundle.festival.of.lights.2026.1",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			showDiscountTag: true;
+			showStrikethroughPrice: true;
+			sku: "bundle.festival.of.lights.2026.1";
+			sortOrder: 1;
+			spriteId: "bundle2.sprite.a";
+			title: "in.fol.2026.bundle_title";
+			totalValue: 500;
 		}
 	>
 >;
@@ -1594,13 +1610,8 @@ export type IapItemDisplayBundleHatchbox20241 = S<
 		"bundle.hatchbox2024.1",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
-			showDiscountTag: true;
-			showStrikethroughPrice: true;
+			hidden: true;
 			sku: "bundle.hatchbox2024.1";
-			skuDisableTime: "2026-10-19T20:00:00";
-			skuDisableTimeUtcMs: "1792440000000";
-			skuEnableTime: "2022-10-13T12:00:00";
-			skuEnableTimeUtcMs: "1665662400000";
 			sortOrder: 1;
 			spriteId: "bundle.general.adventure.1";
 			title: "bundle.xmas.large.1_title";
@@ -3902,6 +3913,7 @@ export type IapItemDisplayBundleMasterfileEntry =
 	| IapItemDisplayBundleEvolve20224
 	| IapItemDisplayBundleEvolve20225
 	| IapItemDisplayBundleEvolve20226
+	| IapItemDisplayBundleFestivalOfLights20261
 	| IapItemDisplayBundleFol20221
 	| IapItemDisplayBundleFol20222
 	| IapItemDisplayBundleFol20223
