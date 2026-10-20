@@ -8536,7 +8536,7 @@ export type PokemonSettingsV0309PokemonElectrike = S<
 			buddyOffsetMale: [10, 0, 70];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
-			buddyWalkedMegaEnergyAward: 75;
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 0.75;
 				cylinderRadiusM: 0.75;
@@ -8617,7 +8617,7 @@ export type PokemonSettingsV0309PokemonElectrikeNormal = S<
 			buddyOffsetMale: [10, 0, 70];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
-			buddyWalkedMegaEnergyAward: 75;
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 0.75;
 				cylinderRadiusM: 0.75;
@@ -8699,7 +8699,7 @@ export type PokemonSettingsV0310PokemonManectric = S<
 			buddyOffsetMale: [20, 0, 40];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
-			buddyWalkedMegaEnergyAward: 75;
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 1.2;
 				cylinderRadiusM: 1;
@@ -8799,7 +8799,7 @@ export type PokemonSettingsV0310PokemonManectricNormal = S<
 			buddyOffsetMale: [20, 0, 40];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
-			buddyWalkedMegaEnergyAward: 75;
+			buddyWalkedMegaEnergyAward: 15;
 			camera: {
 				cylinderHeightM: 1.2;
 				cylinderRadiusM: 1;

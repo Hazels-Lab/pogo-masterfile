@@ -53,6 +53,7 @@ const (
 	IapItemDisplayTemplateIDBundleEvolve20224                                          IapItemDisplayTemplateID = "bundle.evolve2022.4"
 	IapItemDisplayTemplateIDBundleEvolve20225                                          IapItemDisplayTemplateID = "bundle.evolve2022.5"
 	IapItemDisplayTemplateIDBundleEvolve20226                                          IapItemDisplayTemplateID = "bundle.evolve2022.6"
+	IapItemDisplayTemplateIDBundleFestivalOfLights20261                                IapItemDisplayTemplateID = "bundle.festival.of.lights.2026.1"
 	IapItemDisplayTemplateIDBundleFol20221                                             IapItemDisplayTemplateID = "bundle.fol2022.1"
 	IapItemDisplayTemplateIDBundleFol20222                                             IapItemDisplayTemplateID = "bundle.fol2022.2"
 	IapItemDisplayTemplateIDBundleFol20223                                             IapItemDisplayTemplateID = "bundle.fol2022.3"
@@ -1145,6 +1146,7 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDBundleEvolve20224,
 	IapItemDisplayTemplateIDBundleEvolve20225,
 	IapItemDisplayTemplateIDBundleEvolve20226,
+	IapItemDisplayTemplateIDBundleFestivalOfLights20261,
 	IapItemDisplayTemplateIDBundleFol20221,
 	IapItemDisplayTemplateIDBundleFol20222,
 	IapItemDisplayTemplateIDBundleFol20223,
